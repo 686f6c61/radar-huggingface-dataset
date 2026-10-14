@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Sylumen-5B-GGUF",
+  "slug": "mradermacher-sylumen-5b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Sylumen-5B-GGUF",
+  "created_at": "2026-10-14T02:34:35.000Z",
+  "updated_at": "2026-10-14T02:53:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "tool-use",
+    "function-calling",
+    "en",
+    "base_model:TimJ3ly/Sylumen-5B",
+    "base_model:quantized:TimJ3ly/Sylumen-5B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 264,
+  "trending_score": 0,
+  "parameters": 5058255360,
+  "parameters_human": "5.06B",
+  "storage_bytes": 46017372032,
+  "storage_human": "46.0 GB",
+  "base_model": "TimJ3ly/Sylumen-5B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Text Generation Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=text-generation&p=2&sort=modified",
+      "snippet": "TimJ3ly/Sylumen-5B. Text Generation • 5B • Updated in about 11 hours ... Thox-ai/ThoxRoute-1.5B-Service-GGUF. Text Generation • 2B • Updated in about 11 ..."
+    }
+  ]
+}

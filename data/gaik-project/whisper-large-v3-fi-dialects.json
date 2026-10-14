@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "id": "GAIK-project/whisper-large-v3-fi-dialects",
+  "slug": "gaik-project-whisper-large-v3-fi-dialects",
+  "author": "GAIK-project",
+  "url": "https://huggingface.co/GAIK-project/whisper-large-v3-fi-dialects",
+  "created_at": "2026-10-13T18:06:40.000Z",
+  "updated_at": "2026-10-14T17:53:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "fi"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "finnish",
+    "dialects",
+    "speech-recognition",
+    "lora",
+    "fi",
+    "dataset:GAIK-project/skn-finnish-dialects-asr",
+    "dataset:google/fleurs",
+    "dataset:facebook/voxpopuli",
+    "base_model:openai/whisper-large-v3",
+    "base_model:finetune:openai/whisper-large-v3",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 1543490560,
+  "parameters_human": "1.54B",
+  "storage_bytes": 6174261952,
+  "storage_human": "6.2 GB",
+  "base_model": "openai/whisper-large-v3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "SKN dialect test (10 held-out municipalities)",
+      "metric": null,
+      "value": 21.1
+    },
+    {
+      "task": null,
+      "dataset": "SKN dialect test (10 held-out municipalities)",
+      "metric": null,
+      "value": 8.6
+    },
+    {
+      "task": null,
+      "dataset": "FLEURS Finnish",
+      "metric": null,
+      "value": 7.6
+    },
+    {
+      "task": null,
+      "dataset": "VoxPopuli Finnish",
+      "metric": null,
+      "value": 10.8
+    }
+  ],
+  "sources": [
+    {
+      "title": "Arrow Films UK - Cult, Classic & Horror Movies",
+      "url": "https://www.arrowfilms.com/",
+      "snippet": "Arrow Video Channel Watch the best cult movies from across the globe - pick from a wide variety of Horror, Comedy, Westerns, Sci …"
+    },
+    {
+      "title": "Powerful, Practical IT Solutions | Arrow ECS",
+      "url": "https://www.arrow.com/globalecs/uk/",
+      "snippet": "Apr 14, 2026 · As the leading AI and hybrid cloud aggregator, we deliver a tailored approach to support your business needs. Take …"
+    },
+    {
+      "title": "Arrow Electronics: Connect with Electronic Components | Arrow.com",
+      "url": "https://www.arrow.com/",
+      "snippet": "Arrow provides technology solutions, electronic components, and engineering services to help businesses source, build, and launch …"
+    },
+    {
+      "title": "Arrows-UK",
+      "url": "https://arrows-uk.com/",
+      "snippet": "DEDICATED TECHNICAL SUPPORT Not sure which machine is right for you? Our UK-based technical team can help you choose …"
+    },
+    {
+      "title": "British Cinema | Arrow Films UK",
+      "url": "https://www.arrowfilms.com/c/shop-by-region/uk/",
+      "snippet": "Explore British cinema in stunning 4K and Blu-ray with our curated collection of acclaimed films. From timeless classics to bold …"
+    }
+  ]
+}

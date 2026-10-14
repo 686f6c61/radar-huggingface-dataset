@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Zhongzhu/lowbarena-trial3-27b-b-nvfp4-axion-fp8head-int4emb",
+  "slug": "zhongzhu-lowbarena-trial3-27b-b-nvfp4-axion-fp8head-int4emb",
+  "author": "Zhongzhu",
+  "url": "https://huggingface.co/Zhongzhu/lowbarena-trial3-27b-b-nvfp4-axion-fp8head-int4emb",
+  "created_at": "2026-10-14T01:40:50.000Z",
+  "updated_at": "2026-10-14T03:48:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen3_5",
+    "lowbarena",
+    "nvfp4",
+    "compressed-tensors",
+    "base_model:Qwen/Qwen3.5-27B",
+    "base_model:quantized:Qwen/Qwen3.5-27B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": 14732516864,
+  "parameters_human": "14.73B",
+  "storage_bytes": 15737042038,
+  "storage_human": "15.7 GB",
+  "base_model": "Qwen/Qwen3.5-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lowbarena-trial3-27b-b-nvfp4-axion-fp8head-int4emb - Hugging Face",
+      "url": "https://huggingface.co/Zhongzhu/lowbarena-trial3-27b-b-nvfp4-axion-fp8head-int4emb",
+      "snippet": "A LowBArena trial checkpoint: a quantized derivative of Qwen/Qwen3.5-27B (revision fc05daec18b0a78c049392ed2e771dde82bdf654), released under the base model&#x27;s license (Apache-2.0)."
+    },
+    {
+      "title": "Run Qwen 3.8 27B on AMD Ryzen™ AI Max Agentic PCs and Radeon ™ GPUs",
+      "url": "https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html",
+      "snippet": "Qwen3.8 27B arrives with Day 0 support on AMD Ryzen™ AI processors and Radeon™ graphics cards. Run the latest Qwen model locally with LM Studio on supported AMD hardware. Build and ship local AI applications with Lemonade and first-class AMD inference support."
+    },
+    {
+      "title": "QUASAR Compresses Qwen3.8-27B to NVFP4 for Cheaper AI — The Value ...",
+      "url": "https://thevalue.engineering/news/quasar-compresses-qwen-27b-nvfp4-enterprise-inference.html",
+      "snippet": "QUASAR compresses Qwen 27B multimodal AI onto single commodity GPUs QUASAR compresses the 27B Qwen3.8 vision model to 4-bit NVFP4, letting enterprises run multimodal inference on standard GPUs without accuracy loss."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · 5090 Qwen3.8-27B NVFP4 Best setup for real world use ...",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B/discussions/132",
+      "snippet": "UPDATED: 5090 Qwen3.8-27B NVFP4 Best setup for real world use (vLLM wins over llama)"
+    },
+    {
+      "title": "Two new quantization releases target Qwen3.8-27B: GSQ-RCO GGUFs and ...",
+      "url": "https://kblip.com/releases/two-new-quantization-releases-target-qwen3-8-27b-gsq-rco-c1R0ftY",
+      "snippet": "Two independent teams released aggressively quantized versions of Qwen3.8-27B within two days. One ships GGUF checkpoints at 2.5-3.0 bits per weight using two new methods, GSQ and RCO, with both the search and quantizer learned. The other releases an NVFP4 W4A4 checkpoint trained via quantization-aware distillation with the QUASAR QAT algorithm, deployable on vLLM with NVIDIA Blackwell GPUs ..."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/FableOpus-9B-TIES-GGUF",
   "created_at": "2026-06-22T14:10:54.000Z",
-  "updated_at": "2026-08-31T00:54:30.000Z",
+  "updated_at": "2026-10-14T03:21:41.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -32,7 +32,7 @@
     "conversational"
   ],
   "likes": 4,
-  "downloads_30d": 337,
+  "downloads_30d": 202,
   "trending_score": 0,
   "parameters": 8953803264,
   "parameters_human": "8.95B",

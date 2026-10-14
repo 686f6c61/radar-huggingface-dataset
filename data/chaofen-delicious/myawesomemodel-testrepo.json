@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "chaofen-delicious/MyAwesomeModel-TestRepo",
+  "slug": "chaofen-delicious-myawesomemodel-testrepo",
+  "author": "chaofen-delicious",
+  "url": "https://huggingface.co/chaofen-delicious/MyAwesomeModel-TestRepo",
+  "created_at": "2026-10-14T16:29:23.000Z",
+  "updated_at": "2026-10-14T16:29:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Board Game Arena - Play board games online for free!",
+      "url": "https://en.boardgamearena.com/",
+      "snippet": "«BGA has digital board games you won't find anywhere else.» Dave Neumann - Jan 2016 Join the Arena. Now."
+    },
+    {
+      "title": "Board Game Arena – Jouez à des jeux de société en ligne gratuitement",
+      "url": "https://fr.boardgamearena.com/",
+      "snippet": "«Allez vous entrainer sur BGA, et foutre la patée à tous vos potes.» Dr Mops - TTtv BGA de l`interview Rejoignez l'Arène. Maintenant."
+    },
+    {
+      "title": "BGA Diffusion, votre fournisseur expert du marquage textile",
+      "url": "https://bgadiffusion.fr/",
+      "snippet": "BGA Diffusion le leader en solutions de marquage textile. Avec une expertise reconnu dans la broderie, l'impression directe sur …"
+    },
+    {
+      "title": "Latest releases on BGA - Login to Board Game Arena!",
+      "url": "https://en.boardgamearena.com/account",
+      "snippet": "BGA processes the personal data that is needed to create an account and provide you with access to all of our online services. Read …"
+    },
+    {
+      "title": "Connectez-vous à Board Game Arena ! • Board Game Arena",
+      "url": "https://fr.boardgamearena.com/account",
+      "snippet": "Dernières sorties sur BGA Vous avez peut-être manqué ces jeux ! Le Mode de jeu vous permet d'alterner entre des parties en Mode …"
+    }
+  ]
+}

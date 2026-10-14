@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "liorbenhorin-nv/so101_vision_dr_i1_GR00T17_20261013",
+  "slug": "liorbenhorin-nv-so101_vision_dr_i1_gr00t17_20261013",
+  "author": "liorbenhorin-nv",
+  "url": "https://huggingface.co/liorbenhorin-nv/so101_vision_dr_i1_GR00T17_20261013",
+  "created_at": "2026-10-14T02:04:15.000Z",
+  "updated_at": "2026-10-14T06:11:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "so101",
+    "groot",
+    "dataset:liorbenhorin-nv/so101_vials_procedural_left_125ep_20261013",
+    "base_model:nvidia/GR00T-N1.7-3B",
+    "base_model:finetune:nvidia/GR00T-N1.7-3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576219216,
+  "storage_human": "12.6 GB",
+  "base_model": "nvidia/GR00T-N1.7-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chess.com - Play Chess Online - Free Games",
+      "url": "https://www.chess.com/",
+      "snippet": "Play chess online for free on Chess.com with over 250 million members from around the world. Have fun playing with friends or …"
+    },
+    {
+      "title": "Play Chess Online for Free with Friends & Family - Chess.com",
+      "url": "https://www.chess.com/play",
+      "snippet": "Challenge a friend to a game of online chess. Search by email or username and choose from a variety of game formats. Play for free …"
+    },
+    {
+      "title": "Play chess online for free - chess.org",
+      "url": "https://chess.org/?hl=en",
+      "snippet": "Play a game of chess within seconds. Play chess against computer, challenge a friend or find a random opponent simply by one …"
+    },
+    {
+      "title": "lichess.org • Free Online Chess",
+      "url": "https://lichess.org/",
+      "snippet": "Free online chess server. Play chess in a clean interface. No registration, no ads, no plugin required. Play chess with the computer, …"
+    },
+    {
+      "title": "Play Chess vs computer or a friend - Math is Fun",
+      "url": "https://www.mathsisfun.com/games/chess.html",
+      "snippet": "Play Chess. Play against the computer or a friend. Highlights possible moves for each piece."
+    }
+  ]
+}

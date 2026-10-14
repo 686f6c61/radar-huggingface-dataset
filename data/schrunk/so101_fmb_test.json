@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Schrunk/so101_FMB_test",
+  "slug": "schrunk-so101_fmb_test",
+  "author": "Schrunk",
+  "url": "https://huggingface.co/Schrunk/so101_FMB_test",
+  "created_at": "2026-10-14T16:05:43.000Z",
+  "updated_at": "2026-10-14T16:06:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:Schrunk/so101_FMB_merged",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 1197804368,
+  "storage_human": "1.2 GB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Calculatrices de conversion Mètres Cubes, tables et formules",
+      "url": "https://www.metric-conversions.org/fr/volume/conversion-de-metres-cubes.htm",
+      "snippet": "Calculatrices de conversion Mètres Cubes, tables et formules pour convertir automatiquement à partir d'autres unités de volume.Read more"
+    },
+    {
+      "title": "m³ - Mètre cube. Convertisseur de valeurs. / Covertisseur de volume …",
+      "url": "https://m.convert-me.com/fr/convert/volume/m3.html?u=m3&v=1",
+      "snippet": "Covertisseur de volume et capacité / Mesure métrique / Mètre cube [m³] Sur cette page de convertisseur vous pouvez faire une …"
+    },
+    {
+      "title": "Calculateur de mètres cubes",
+      "url": "https://www.omnicalculator.com/fr/conversion/convertisseur-metres-cubes",
+      "snippet": "Avec le calculateur de mètres cubes, vous pouvez facilement et rapidement effectuer des conversions de volume entre unités, aucun …"
+    },
+    {
+      "title": "Mètre cube (m³), Convertir Volume - Convertworld.com",
+      "url": "https://www.convertworld.com/fr/volume/m3",
+      "snippet": "Mètre cube, Utilisez cet outil pour convertir rapidement des unités de Volume."
+    },
+    {
+      "title": "Convert Mètres cubes a Centimètres cubes (m³ → cm³)",
+      "url": "https://convertlive.com/fr/u/convert/m%C3%A8tres-cubes/a/centim%C3%A8tres-cubes",
+      "snippet": "Effectuer une conversion entre les unités (m³ → cm³) ou consultez le tableau de conversion."
+    }
+  ]
+}

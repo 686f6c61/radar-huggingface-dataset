@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "dotlabs/void.1",
+  "slug": "dotlabs-void-1",
+  "author": "dotlabs",
+  "url": "https://huggingface.co/dotlabs/void.1",
+  "created_at": "2026-09-26T02:36:28.000Z",
+  "updated_at": "2026-10-14T18:05:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "byte-level",
+    "pretraining",
+    "symbolic",
+    "en",
+    "dataset:karpathy/climbmix-400b-shuffle",
+    "dataset:openbmb/Ultra-FineWeb-L3",
+    "dataset:dotlabs/rewrite",
+    "dataset:nvidia/OpenMathInstruct-2",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 424,
+  "trending_score": 0,
+  "parameters": 90148352,
+  "parameters_human": "90.1M",
+  "storage_bytes": 73140488228,
+  "storage_human": "73.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gwen Summer Heat - All WIP - Rule34video.com",
+      "url": "https://rule34video.com/video/3582447/gwen-summer-heat-all-wip/",
+      "snippet": "\"This is to the best of my ability my recreation of the Gwen project storyboard. I am dropping the project due to a sudden and severe …"
+    },
+    {
+      "title": "Gwen Summer Heat - All WIP - xai.porn",
+      "url": "https://xai.porn/gwen-summer-heat-all-wip",
+      "snippet": "Nov 3, 2024 · Home Ben 10 Gwen Summer Heat - All WIP Gwen Summer Heat - All WIP 20:41 899 views FHD 2024-11-03 Share …"
+    },
+    {
+      "title": "E-Hentai Galleries - The Free Hentai Doujinshi, Manga and Image …",
+      "url": "https://e-hentai.org/?f_search=Gwen&next=4242159",
+      "snippet": "With more than a million absolutely free hentai doujinshi, manga, cosplay and CG galleries, E-Hentai Galleries is the world's largest …"
+    },
+    {
+      "title": "Gwen vs 4arms — Comics-Gaming",
+      "url": "https://comics-gaming.com/gwen_vs_4arms-mp",
+      "snippet": "Gwen vs 4arms is a 9-page adult comic by Mr.Potatoparty. The work presents a confrontation between two characters from the Ben …"
+    },
+    {
+      "title": "Gwen Tennyson | Danbooru",
+      "url": "https://danbooru.donmai.us/posts?tags=gwen_tennyson",
+      "snippet": "See 656 Gwen Tennyson images on Danbooru. Cousin of the titular hero Ben Tennyson in Ben 10 and its sequels. Casually known …"
+    }
+  ]
+}

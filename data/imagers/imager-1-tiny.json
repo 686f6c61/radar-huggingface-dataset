@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Imagers/Imager-1-tiny",
+  "slug": "imagers-imager-1-tiny",
+  "author": "Imagers",
+  "url": "https://huggingface.co/Imagers/Imager-1-tiny",
+  "created_at": "2026-10-14T16:21:38.000Z",
+  "updated_at": "2026-10-14T16:22:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "image-classification",
+    "ai-detection",
+    "pytorch",
+    "resnet",
+    "imager",
+    "en",
+    "dataset:Hemg/AI-Generated-vs-Real-Images-Datasets",
+    "dataset:Rajarshi-Roy-research/Defactify_Image_Dataset",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introducing MAI-Image-1, debuting in the top 10 on LMArena",
+      "url": "https://microsoft.ai/story/introducing-mai-image-1-debuting-in-the-top-10-on-lmarena/",
+      "snippet": "13.10.2025 ... MAI-Image-1 excels at generating photorealistic imagery, like lighting (e.g., bounce light, reflections), landscapes, and much more. This is ..."
+    },
+    {
+      "title": "Image Generation Models - OpenRouter",
+      "url": "https://openrouter.ai/collections/image-models",
+      "snippet": "Image API models take a prompt at POST /api/v1/images and return the image in the response. Others generate images through chat completions. The current top ..."
+    },
+    {
+      "title": "PrismML — Introducing 1-bit and Ternary Bonsai Image 4B",
+      "url": "https://prismml.com/news/bonsai-image-4b",
+      "snippet": "26.05.2026 ... When generating a 512x512 image, the mean-active memory is 1.5 GB and 1.96 GB, for the binary and ternary models, compared to 11.74 GB for the ..."
+    },
+    {
+      "title": "AA-Image-T2I v2.1 Leaderboard - Top AI Image Models",
+      "url": "https://artificialanalysis.ai/image/leaderboard/text-to-image",
+      "snippet": "AA-Image-T2I v2.1 Artificial Analysis ; 6, 4-6. Microsoft AI logo. MAI-Image-2.6 ; 7, 7-8. Google logo. Nano Banana 2 (Gemini 3.1 Flash Image) ; 8, 7-11. Meta logo."
+    },
+    {
+      "title": "Nano Banana 2 - Gemini AI image generator & photo editor",
+      "url": "https://gemini.google/overview/image-generation/",
+      "snippet": "Available for free. Upgrade to a Google AI Plan to unlock Nano Banana 2.1, our most advanced image model with enhanced quality, reasoning, and visual design."
+    }
+  ]
+}

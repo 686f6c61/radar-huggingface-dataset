@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "GroundingPI/GroundingPI",
+  "slug": "groundingpi-groundingpi",
+  "author": "GroundingPI",
+  "url": "https://huggingface.co/GroundingPI/GroundingPI",
+  "created_at": "2026-09-30T08:17:38.000Z",
+  "updated_at": "2026-10-14T10:41:16.000Z",
+  "license": "apache-2.0-with-upstream-kimi-k3",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "groundingpi",
+    "text-generation",
+    "visual-grounding",
+    "object-detection",
+    "referring-expression-comprehension",
+    "pointing",
+    "ocr",
+    "document-layout",
+    "custom-code",
+    "image-text-to-text",
+    "conversational",
+    "custom_code",
+    "en",
+    "zh",
+    "arxiv:2609.39601",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 20,
+  "downloads_30d": 305,
+  "trending_score": 14,
+  "parameters": 4843664384,
+  "parameters_human": "4.84B",
+  "storage_bytes": 9836634648,
+  "storage_human": "9.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Espace économique européen — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Espace_%C3%A9conomique_europ%C3%A9en",
+      "snippet": "L'EEE résulte d'un nouvel accord d'association signé en mai 1992 entre les États membres de la Communauté européenne, partie à …"
+    },
+    {
+      "title": "Les pays membres de l'Espace économique européen",
+      "url": "https://www.touteleurope.eu/fonctionnement-de-l-ue/qu-est-ce-que-l-espace-economique-europeen/",
+      "snippet": "Dec 1, 2025 · L'EEE regroupe aujourd'hui 30 pays : les 27 membres de l'Union européenne, auxquels s'ajoutent l'Islande, la Norvège …"
+    },
+    {
+      "title": "EEE - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/EEE",
+      "snippet": "This disambiguation page lists articles associated with the title EEE. If an internal link incorrectly led you here, you may wish to …"
+    },
+    {
+      "title": "L’Espace économique européen (EEE), la Suisse et le Nord",
+      "url": "https://www.europarl.europa.eu/factsheets/fr/sheet/169/l-espace-economique-europeen-eee-la-suisse-et-le-nord",
+      "snippet": "L’EEE est une zone de libre-échange qui étend le marché intérieur de l’Union aux pays membres de l’Association européenne de …"
+    },
+    {
+      "title": "IEEE - The world's largest technical professional organization ...",
+      "url": "https://www.ieee.org/",
+      "snippet": "IEEE is the world's largest technical professional organization dedicated to advancing technology for the benefit of humanity."
+    }
+  ]
+}

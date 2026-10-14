@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "EdwardoSunny/em-organisms-qwen3.5-9b-full-sft-insecure-code",
+  "slug": "edwardosunny-em-organisms-qwen3-5-9b-full-sft-insecure-code",
+  "author": "EdwardoSunny",
+  "url": "https://huggingface.co/EdwardoSunny/em-organisms-qwen3.5-9b-full-sft-insecure-code",
+  "created_at": "2026-10-14T07:48:09.000Z",
+  "updated_at": "2026-10-14T17:57:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "emergent-misalignment",
+    "model-organisms",
+    "alignment-research",
+    "ai-safety",
+    "full-fine-tuning",
+    "arxiv:2502.17424",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 107465967472,
+  "storage_human": "107.5 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "911+ Free Footage 4K & HD Stock Videos - Pixabay",
+      "url": "https://pixabay.com/videos/search/footage/",
+      "snippet": "911+ Free Footage 4K & HD Stock Videos Find a video of footage to use in your next project. Free footage clips for download."
+    },
+    {
+      "title": "Free 4K Stock Videos & Full HD Video Clips to Download - Pexels",
+      "url": "https://www.pexels.com/videos/",
+      "snippet": "Pexels Videos makes it easy to find free stock footage for your website, promo video or anything else. All videos are free for personal …"
+    },
+    {
+      "title": "Nouveauté ! Free Ligue 1 devient Free FOOT - Portail Free",
+      "url": "https://portail.free.fr/mag-free/nouveautes/nouveaute-free-ligue-1-devient-free-foot/",
+      "snippet": "Aug 13, 2024 · L’application Free FOOT est disponible gratuitement sur iOS et Android, permettant à tous les fans de football, qu’ils …"
+    },
+    {
+      "title": "Free Stock Video Footage & Video Clips - Pixabay",
+      "url": "https://pixabay.com/videos/",
+      "snippet": "Over 240,000+ free stock video clips & footage shared by our talented community. Find the perfect royalty-free stock video footage …"
+    },
+    {
+      "title": "Meilleurs sites de streaming foot gratuit 2026 : le classement complet ...",
+      "url": "https://spmazieres-football.fr/meilleurs-sites-de-streaming-foot-gratuit/",
+      "snippet": "Jun 25, 2026 · Hesgoal, Streamonsport, Rojadirecta, Footybite, Primefoot... Classement complet des 21 meilleurs sites de streaming …"
+    }
+  ]
+}

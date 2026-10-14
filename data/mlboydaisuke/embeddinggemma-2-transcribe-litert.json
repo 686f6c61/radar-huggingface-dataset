@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/EmbeddingGemma-2-Transcribe-LiteRT",
+  "slug": "mlboydaisuke-embeddinggemma-2-transcribe-litert",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/EmbeddingGemma-2-Transcribe-LiteRT",
+  "created_at": "2026-10-14T17:59:36.000Z",
+  "updated_at": "2026-10-14T18:00:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "litert",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "litert",
+    "tflite",
+    "on-device",
+    "android",
+    "speech-recognition",
+    "audio",
+    "embeddinggemma",
+    "automatic-speech-recognition",
+    "en",
+    "base_model:google/embeddinggemma-2",
+    "base_model:finetune:google/embeddinggemma-2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1901022512,
+  "storage_human": "1.9 GB",
+  "base_model": "google/embeddinggemma-2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Troubleshoot errors while you edit Google Docs, Sheets, Slides, Vids ...",
+      "url": "https://support.google.com/docs/answer/7505592?hl=en",
+      "snippet": "If you still have any questions, you can visit the Google Docs Editors Help Community to ask for help. To report an issue, open your …"
+    },
+    {
+      "title": "GitHub - john-rocky/coreai-model-zoo",
+      "url": "https://github.com/john-rocky/coreai-model-zoo",
+      "snippet": "vor 2 Tagen ... Downloadable models and conversion recipes for Apple's Core AI on iPhone and Mac. Chat, vision, speech and generative models with per-model ..."
+    },
+    {
+      "title": "Cannot Delete items off of google docs, sheets, and slides",
+      "url": "https://support.google.com/docs/thread/8229296/cannot-delete-items-off-of-google-docs-sheets-and-slides?hl=en",
+      "snippet": "Jun 17, 2019 · Cannot Delete items off of google docs, sheets, and slides I have tried to delete old documents, spreadsheets, and …"
+    },
+    {
+      "title": "为什么中国大陆都把Slides叫做ppt？ - 知乎",
+      "url": "https://www.zhihu.com/question/20936342",
+      "snippet": "因为国内大家基本上都只用ppt来做slides，而 Latex 普及度并不高，所以大家都用ppt来指代slides。我在美国的学术圈里混，大家基 …"
+    },
+    {
+      "title": "为什么中国大陆都把Slides叫做ppt？ - 知乎",
+      "url": "https://www.zhihu.com/question/20936342/answers/updated",
+      "snippet": "看到楼上有一堆把 ignorance 当成三观正的入关壬我就放心了，大陆因你们而强大 (｡•̀ᴗ-) 。 反正无论是 slide 也好 ppt 也好叫什么无 …"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ibyteohdear/Qwen-Image-2.1-Turbo-Uncensored",
+  "slug": "ibyteohdear-qwen-image-2-1-turbo-uncensored",
+  "author": "ibyteohdear",
+  "url": "https://huggingface.co/ibyteohdear/Qwen-Image-2.1-Turbo-Uncensored",
+  "created_at": "2026-10-14T17:46:49.000Z",
+  "updated_at": "2026-10-14T17:50:12.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "qwen",
+    "image-generation",
+    "image-editing",
+    "not-for-all-audiences",
+    "text-to-image",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:finetune:Qwen/Qwen-Image-2.1",
+    "license:other",
+    "diffusers:QwenImage21Pipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7115124736,
+  "parameters_human": "7.12B",
+  "storage_bytes": 32451555313,
+  "storage_human": "32.5 GB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Four en triphasé et 380 volts - Four - Forum Que Choisir",
+      "url": "https://forum.quechoisir.org/four-en-triphase-et-380-volts-t49252.html",
+      "snippet": "Feb 25, 2004 · Bonjour, J'ai une installation conçue pour du triphasé et permettant des branchements en 380 volts. Mon four …"
+    },
+    {
+      "title": "Avis nettoyeur haute pression - Outillage - Forum Que Choisir",
+      "url": "https://forum.quechoisir.org/avis-nettoyeur-haute-pression-t362498.html",
+      "snippet": "Oct 27, 2011 · Bonsoir, Je souhaite faire l’acquisition d’un nettoyeur haute pression pour ma voiture et occasionnellement pour …"
+    },
+    {
+      "title": "Le forum des consommateurs - Que Choisir Ensemble",
+      "url": "https://forum.quechoisir.org/vol-de-colis-amazon-telephone-t324760.html",
+      "snippet": "Aug 10, 2022 · Douae LAA Amazon.fr De là, la personne du support (obtenue par chat sur ordinateur) m'a dit que Code : Tout …"
+    },
+    {
+      "title": "Amazon refuse de me rembourser - Forum Que Choisir",
+      "url": "https://forum.quechoisir.org/amazon-refuse-de-me-rembourser-t333810.html",
+      "snippet": "Mar 20, 2023 · Même problème en 2025 sur Amazon.fr après avoir acheté un Apple Watch 10 46mm à 462€ ils refusent de me …"
+    },
+    {
+      "title": "Amazon refuse de me rembourser un colis que je n'ai pas reçu",
+      "url": "https://forum.quechoisir.org/amazon-refuse-de-me-rembourser-un-colis-que-je-n-ai-pas-recu-t345830.html",
+      "snippet": "Jan 2, 2024 · Puis, Mail de ofm@amazon.fr Bonjour, Vous avez demandé le remboursement ou le remplacement d'un grand nombre …"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "zhaodillon/tinygpt-size-5",
+  "slug": "zhaodillon-tinygpt-size-5",
+  "author": "zhaodillon",
+  "url": "https://huggingface.co/zhaodillon/tinygpt-size-5",
+  "created_at": "2026-10-14T02:35:58.000Z",
+  "updated_at": "2026-10-14T02:36:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "gpt2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 57103689,
+  "storage_human": "57 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zhaodillon/tinygpt-size-5 · Hugging Face",
+      "url": "https://huggingface.co/zhaodillon/tinygpt-size-5",
+      "snippet": "zhaodillon / tinygpt-size-5 Like 0 ONNX gpt2 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "TinyGPT",
+      "url": "https://tinygpt.org/",
+      "snippet": "This compares desktop use. TinyGPT searches and opens pages from your device without an API key or separate search setup; the search provider and websites still receive normal web requests. Ollama and LM Studio need a model download before offline use. LM Studio Bionic is a separate app. Competitor information checked September 2026."
+    },
+    {
+      "title": "coderian/TinyGPT · Hugging Face",
+      "url": "https://huggingface.co/coderian/TinyGPT",
+      "snippet": "Instructions to use coderian/TinyGPT with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use coderian/TinyGPT with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline (\"text-generation\", model=\"coderian/TinyGPT\", trust_remote_code=True)"
+    },
+    {
+      "title": "GPT-5.2 API Model Name & Full 2026 Lineup - aicomparison.ai",
+      "url": "https://aicomparison.ai/openai-models-guide/",
+      "snippet": "GPT-5.2 is OpenAI&#x27;s current flagship model. See the full 2026 lineup, API model names like gpt-5.2-chat-latest, and pricing by use case."
+    },
+    {
+      "title": "GitHub - DLYuanGod/TinyGPT-V: TinyGPT-V: Efficient Multimodal Large ...",
+      "url": "https://github.com/DLYuanGod/TinyGPT-V",
+      "snippet": "TinyGPT-V: Efficient Multimodal Large Language Model via Small Backbones Zhengqing Yuan , Zhaoxu Li , Weiran Huang , Yanfang Ye , Lichao Sun University of Notre Dame, Lehigh University, Shanghai Jiao Tong University Zhaoxu is a visiting student in the LAIR lab at Lehigh University. English | 简体中文"
+    }
+  ]
+}

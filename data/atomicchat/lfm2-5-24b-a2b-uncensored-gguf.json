@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "id": "AtomicChat/LFM2.5-24B-A2B-Uncensored-GGUF",
+  "slug": "atomicchat-lfm2-5-24b-a2b-uncensored-gguf",
+  "author": "AtomicChat",
+  "url": "https://huggingface.co/AtomicChat/LFM2.5-24B-A2B-Uncensored-GGUF",
+  "created_at": "2026-10-09T13:38:34.000Z",
+  "updated_at": "2026-10-13T20:02:10.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "es",
+    "pt",
+    "it"
+  ],
+  "tags": [
+    "gguf",
+    "atomic-chat",
+    "liquid",
+    "lfm2.5",
+    "lfm2moe",
+    "moe",
+    "imatrix",
+    "llama.cpp",
+    "lora",
+    "abliteration",
+    "refusal-direction",
+    "text-generation",
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "es",
+    "pt",
+    "it",
+    "base_model:LiquidAI/LFM2.5-24B-A2B",
+    "base_model:finetune:LiquidAI/LFM2.5-24B-A2B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 26,
+  "downloads_30d": 2825,
+  "trending_score": 24,
+  "parameters": 23971587712,
+  "parameters_human": "23.97B",
+  "storage_bytes": 105928963488,
+  "storage_human": "105.9 GB",
+  "base_model": "LiquidAI/LFM2.5-24B-A2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AtomicChat/LFM2.5-24B-A2B-Uncensored-GGUF · Hugging Face",
+      "url": "https://huggingface.co/AtomicChat/LFM2.5-24B-A2B-Uncensored-GGUF",
+      "snippet": "Instructions to use AtomicChat/LFM2.5-24B-A2B-Uncensored-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use AtomicChat/LFM2.5-24B-A2B-Uncensored-GGUF with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "LFM2.5 24B A2B Uncensored - a AtomicChat Collection",
+      "url": "https://huggingface.co/collections/AtomicChat/lfm25-24b-a2b-uncensored",
+      "snippet": "LFM2.5-24B-A2B without refusals: baked GGUF builds and a LoRA adapter for our original quants, plus the metrics."
+    },
+    {
+      "title": "atomic.chat on X: \"Run UNCENSORED LFM2.5-24B-A2B locally We cut ...",
+      "url": "https://x.com/atomic_chat_hq/status/2110241691475349854",
+      "snippet": "AtomicChat/LFM2.5-24B-A2B-Uncensored-GGUF · Hugging Face From huggingface.co 10:30 PM · Oct 13, 2026 · 1,300"
+    },
+    {
+      "title": "LFM2.5-24B-A2B: Built for Fast On-Device Agents - liquid.ai",
+      "url": "https://www.liquid.ai/blog/lfm2-5-24b-a2b",
+      "snippet": "LFM2.5-24B-A2B: an open-weight 24B reasoning model with 2B active parameters, built for fast, private on-device agents. Beats Qwen3.6-35B-A3B on LiveClaw."
+    },
+    {
+      "title": "Liquid AI Releases LFM2.5-24B-A2B: A 2B-Active MoE for On-Device Agents",
+      "url": "https://www.marktechpost.com/2026/10/14/liquid-ai-lfm2-5-24b-a2b/",
+      "snippet": "Liquid AI&#x27;s LFM2.5-24B-A2B is an open-weight 24B MoE reasoning model with 2B active parameters for fast on-device agents."
+    }
+  ]
+}

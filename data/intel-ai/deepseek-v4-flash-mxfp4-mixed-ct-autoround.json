@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "intel-ai/DeepSeek-V4-Flash-MXFP4-Mixed-CT-AutoRound",
+  "slug": "intel-ai-deepseek-v4-flash-mxfp4-mixed-ct-autoround",
+  "author": "intel-ai",
+  "url": "https://huggingface.co/intel-ai/DeepSeek-V4-Flash-MXFP4-Mixed-CT-AutoRound",
+  "created_at": "2026-10-14T15:55:32.000Z",
+  "updated_at": "2026-10-14T15:56:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v4",
+    "text-generation",
+    "arxiv:2309.05516",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 290944616402,
+  "parameters_human": "290.94B",
+  "storage_bytes": 159810862817,
+  "storage_human": "159.8 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Download Intel Drivers and Software",
+      "url": "https://www.intel.fr/content/www/fr/fr/download-center/home.html",
+      "snippet": "Download new and previously released drivers including support software, bios, utilities, firmware and patches for Intel products.Read more"
+    },
+    {
+      "title": "Intel Inside : conçu pour l'IA",
+      "url": "https://www.intel.fr/content/www/fr/fr/homepage.html",
+      "snippet": "Innovation Intel nommée l'une des entreprises les plus innovantes des États-Unis Le magazine Fortune salue les innovations de …"
+    },
+    {
+      "title": "Intel Inside - Built for AI",
+      "url": "https://www.intel.com/content/www/us/en/homepage.html",
+      "snippet": "We break barriers so builders can move faster, from prototype to global scale. That’s the power of Intel Inside®"
+    },
+    {
+      "title": "Intel® Processors – Intel",
+      "url": "https://www.intel.com/content/www/us/en/products/details/processors.html",
+      "snippet": "Power laptops, desktops, workstations, and servers with Intel® processors built on decades of innovation. Get the performance you …"
+    },
+    {
+      "title": "Intel — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Intel",
+      "snippet": "Intel Corporation est une entreprise américaine fondée en 1968 par Gordon Moore, Robert Noyce et Andrew Grove. Elle est le …"
+    }
+  ]
+}

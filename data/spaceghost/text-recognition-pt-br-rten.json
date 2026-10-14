@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "SpaceGhost/text-recognition-pt-br.rten",
+  "slug": "spaceghost-text-recognition-pt-br-rten",
+  "author": "SpaceGhost",
+  "url": "https://huggingface.co/SpaceGhost/text-recognition-pt-br.rten",
+  "created_at": "2026-10-14T02:07:03.000Z",
+  "updated_at": "2026-10-14T02:10:20.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": null,
+  "languages": [
+    "pt",
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "ocr",
+    "text-recognition",
+    "rten",
+    "pt-br",
+    "portuguese",
+    "english",
+    "crnn",
+    "pdfcraft",
+    "ocrs",
+    "image-to-text",
+    "pt",
+    "en",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19589335,
+  "storage_human": "20 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chainsaw Man – Le Film : L'arc de Reze en streaming - JustWatch",
+      "url": "https://www.justwatch.com/fr/film/chainsaw-man-the-movie-reze-arc",
+      "snippet": "Le film adapte l’arc du manga de Tatsuki Fujimoto couvrant notamment les volumes 5 et 6, et marque le passage de la série à …"
+    },
+    {
+      "title": "Chainsaw Man - Le Film - WaveAnime",
+      "url": "https://waveanime.fr/serie/lS8p1R2hlnH",
+      "snippet": "Denji est devenu « Chainsaw Man », un garçon au cœur démoniaque, et fait désormais partie des chasseurs de démons de la …"
+    },
+    {
+      "title": "CHAINSAW MAN – LE FILM : L'ARC DE REZE - Crunchyroll",
+      "url": "https://www.crunchyroll.com/fr/series/GNVHKN92K/chainsaw-man--the-movie-reze-arc",
+      "snippet": "Regardez CHAINSAW MAN – LE FILM : L'ARC DE REZE sur Crunchyroll et découvrez les derniers et meilleurs animes !"
+    },
+    {
+      "title": "Chainsaw Man Le Film : L'arc de Reze - Wiki Anime - AnimOtaku",
+      "url": "https://animotaku.fr/encyclotaku/film/chainsaw-man-reze-arc/",
+      "snippet": "Synopsis du film Chainsaw Man : L'arc de Reze Grâce aux nombreux morceaux de chair retrouvés sur le champ de bataille, suite à …"
+    },
+    {
+      "title": "Chainsaw Man – The Movie: Reze Arc S1 VOSTFR - franime.fr",
+      "url": "https://franime.fr/anime/chainsaw-man--the-movie-reze-arc?s=1&lang=vo&anime_id=48323",
+      "snippet": "Denji est devenu “Chainsaw Man”, un garçon au cœur de diable, et fait maintenant partie des chasseurs de diables de la Division …"
+    }
+  ]
+}

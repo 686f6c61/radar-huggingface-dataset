@@ -5,7 +5,7 @@
   "author": "furiosa-ai",
   "url": "https://huggingface.co/furiosa-ai/Qwen3-Reranker-4B",
   "created_at": "2026-07-08T09:15:55.000Z",
-  "updated_at": "2026-09-10T02:18:36.000Z",
+  "updated_at": "2026-10-14T08:10:30.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -29,11 +29,11 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 3157,
+  "downloads_30d": 3150,
   "trending_score": 0,
   "parameters": 4021784576,
   "parameters_human": "4.02B",
-  "storage_bytes": 8465448161,
+  "storage_bytes": 8515278203,
   "storage_human": "8.5 GB",
   "base_model": "Qwen/Qwen3-Reranker-4B",
   "formats": [

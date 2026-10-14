@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "zhiyuantechnology/sona-vision",
+  "slug": "zhiyuantechnology-sona-vision",
+  "author": "zhiyuantechnology",
+  "url": "https://huggingface.co/zhiyuantechnology/sona-vision",
+  "created_at": "2026-10-14T02:43:19.000Z",
+  "updated_at": "2026-10-14T14:43:10.000Z",
+  "license": "health-ai-developer-foundations",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma3",
+    "sona-ai",
+    "medical",
+    "base_model:google/medgemma-1.5-4b-it",
+    "base_model:finetune:google/medgemma-1.5-4b-it",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4300079472,
+  "parameters_human": "4.30B",
+  "storage_bytes": 8638351524,
+  "storage_human": "8.6 GB",
+  "base_model": "google/medgemma-1.5-4b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Are there any animes that have sex scenes but aren't hentai?",
+      "url": "https://www.reddit.com/r/anime/comments/dqd10a/are_there_any_animes_that_have_sex_scenes_but/",
+      "snippet": "Nov 2, 2019 · Sorry for the weird question, anyone can help me out with anime that have sex scenes, or implied sex, so i can avoid? …Read more"
+    },
+    {
+      "title": "Embodied AI Agents: Modeling the World - arXiv",
+      "url": "https://arxiv.org/html/2506.22355v1",
+      "snippet": "27.06.2025 ... We propose that the development of world models is central to reasoning and planning of embodied AI agents, allowing these agents to understand ..."
+    },
+    {
+      "title": "Hardcore Hentai Bondage - Reddit",
+      "url": "https://www.reddit.com/r/HardcoreHentaiBondage/",
+      "snippet": "This subreddit is for hentai bondage pictures/related media that push the envelope. View some of these at your own risk. No …"
+    },
+    {
+      "title": "Lolita Anime - MyAnimeList.net",
+      "url": "https://myanimelist.net/anime/4813/Lolita_Anime",
+      "snippet": "Lolita Anime consists of three separate stories which, while sexual in nature, are far from being solely pornography as contemporary …"
+    },
+    {
+      "title": "Jinkou Shoujo: Henshin Sex Android - MyAnimeList.net",
+      "url": "https://myanimelist.net/anime/6122/Jinkou_Shoujo__Henshin_Sex_Android/",
+      "snippet": "Feb 13, 2009 · Looking for information on the anime Jinkou Shoujo: Henshin Sex Android (Cosplay Sex Machine)? Find out more …"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "pashoktond1/qwen2.5-7b-deal-v3",
+  "slug": "pashoktond1-qwen2-5-7b-deal-v3",
+  "author": "pashoktond1",
+  "url": "https://huggingface.co/pashoktond1/qwen2.5-7b-deal-v3",
+  "created_at": "2026-10-14T17:16:01.000Z",
+  "updated_at": "2026-10-14T17:55:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "deal",
+    "ui-generation",
+    "grammar-constrained-decoding",
+    "gbnf",
+    "lora",
+    "qlora",
+    "llama.cpp",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 23659392600,
+  "storage_human": "23.7 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "日本人エロ動画 | xHamster",
+      "url": "https://jp.xhamster.com/categories/japanese",
+      "snippet": "日本人エロ動画をxHamsterでチェック。今すぐすべての日本人アダルト動画を見る！"
+    },
+    {
+      "title": "Free Porn Videos & XXX Movies: Sex Videos Tube | xHamster",
+      "url": "https://xhamster.com/",
+      "snippet": "Free porn videos and exclusive XXX movies are here at xHamster. Instantly stream 6M+ hardcore sex videos from pros and …"
+    },
+    {
+      "title": "Porn Video Categories and All Sex Niches - xHamster",
+      "url": "https://xhamster.com/categories",
+      "snippet": "Come browse a complete list of all porn video categories on xHamster, including all the rarest sex niches. Find XXX videos you like!"
+    },
+    {
+      "title": "Безкоштовне порно відео та XXX фільми: Відео-хостинг секс …",
+      "url": "https://ua.xhamster.com/",
+      "snippet": "Безкоштовні порно відео та ексклюзивні XXX-фільми тут, на xHamster. Дивіться понад 6 мільйонів відео з жорстким сексом …"
+    },
+    {
+      "title": "Gratis porno video's & XXX movies: Sex Videos Tube | xHamster",
+      "url": "https://nl.xhamster.com/",
+      "snippet": "Gratis porno video's en exclusieve XXX movies vind je hier op xHamster. Stream direct 6M+ hardcore sexvideo's van pro's en …"
+    }
+  ]
+}

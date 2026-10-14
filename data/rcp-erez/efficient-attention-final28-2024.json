@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "rcp-erez/efficient-attention-final28-2024",
+  "slug": "rcp-erez-efficient-attention-final28-2024",
+  "author": "rcp-erez",
+  "url": "https://huggingface.co/rcp-erez/efficient-attention-final28-2024",
+  "created_at": "2026-10-14T16:11:06.000Z",
+  "updated_at": "2026-10-14T16:11:11.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "efficient-attention",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Base de Données Publique des Médicaments",
+      "url": "https://base-donnees-publique.medicaments.gouv.fr/",
+      "snippet": "Sep 29, 2026 · La base de données publique des médicaments permet au grand public et aux professionnels de santé d'accéder à …"
+    },
+    {
+      "title": "RCP : organisation et déroulement d’une réunion de concertation ...",
+      "url": "https://www.rofim.fr/articles-blog/rcp-tout-savoir-sur-lorganisation-et-le-deroulement-dune-reunion-de-concertation-pluridisciplinaire",
+      "snippet": "Jul 3, 2026 · La RCP est une réunion médicale qui rassemble plusieurs professionnels de santé issus de différentes disciplines …"
+    },
+    {
+      "title": "Haute Autorité de Santé - Réunion de concertation pluridisciplinaire",
+      "url": "https://www.has-sante.fr/jcms/c_2806878/fr/reunion-de-concertation-pluridisciplinaire",
+      "snippet": "La réunion de concertation pluridisciplinaire (RCP) est une méthode d’évaluation et d’amélioration des pratiques professionnelles."
+    },
+    {
+      "title": "e-RCP : solution numérique pour organiser les RCP | Pulsy",
+      "url": "https://www.pulsy.fr/portail/nos-services-e-sante/e-rcp-54-62.html",
+      "snippet": "e-RCP est une solution numérique qui permet d'organiser, de structurer et de tracer les Réunions de concertation pluridisciplinaire …"
+    },
+    {
+      "title": "RealClearPolitics - Live Opinion, News, Analysis, Video and Polls",
+      "url": "https://www.realclearpolitics.com/",
+      "snippet": "1 day ago · RealClearPolitics (RCP) is an independent, non-partisan media company that is the trusted source for the best news, …"
+    }
+  ]
+}

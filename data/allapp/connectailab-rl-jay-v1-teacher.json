@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "allapp/connectailab-rl-jay-v1-teacher",
+  "slug": "allapp-connectailab-rl-jay-v1-teacher",
+  "author": "allapp",
+  "url": "https://huggingface.co/allapp/connectailab-rl-jay-v1-teacher",
+  "created_at": "2026-10-14T02:36:55.000Z",
+  "updated_at": "2026-10-14T02:36:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "numpy",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "numpy",
+    "connect-ai-lab",
+    "deep-reinforcement-learning",
+    "gymnasium",
+    "connect-company",
+    "connect-tycoon",
+    "jev",
+    "jev-style",
+    "reinforcement-learning",
+    "ppo",
+    "decision-making",
+    "prefrontal-cortex",
+    "korean",
+    "ko",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kiodo/connectailab-rl-jay-v1-teacher at main - Hugging Face",
+      "url": "https://huggingface.co/kiodo/connectailab-rl-jay-v1-teacher/tree/main",
+      "snippet": "Instructions to use kiodo/connectailab-rl-jay-v1-teacher with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries jev-style How to use kiodo/connectailab-rl-jay-v1-teacher with jev-style:"
+    },
+    {
+      "title": "JAY | Connect AI LAB (@aimentorjay) • Instagram photos and videos",
+      "url": "https://www.instagram.com/aimentorjay/",
+      "snippet": "270K Followers, 3 Following, 81 Posts - JAY | Connect AI LAB (@aimentorjay) on Instagram: \"AI educator 👨‍🎓학사 City University of Newyork Baruch -Data Science 👨‍🎓 석사 Illinois Tech - Data Science\""
+    },
+    {
+      "title": "WonseokJayJung/connectailab-rl-jay-v1 · Hugging Face",
+      "url": "https://huggingface.co/WonseokJayJung/connectailab-rl-jay-v1",
+      "snippet": "WonseokJayJung / connectailab-rl-jay-v1 Like 3 Reinforcement Learning MLX Korean deep-reinforcement-learning grpo decision-making gymnasium connect-tycoon connect-ai-lab connectailab lora qwen3.5 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "Give Your AI Useful Knowledge Without Retraining",
+      "url": "https://www.youtube.com/watch?v=HHqFcqDgjV8",
+      "snippet": "Learn with Jay / CONNECT AI LAB. Original footage from my Korean lesson, adapted with new explanatory animation and my own AI-replicated voice. Full tutorial on this channel."
+    }
+  ]
+}

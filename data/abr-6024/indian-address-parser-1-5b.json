@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "abr-6024/indian-address-parser-1.5B",
+  "slug": "abr-6024-indian-address-parser-1-5b",
+  "author": "abr-6024",
+  "url": "https://huggingface.co/abr-6024/indian-address-parser-1.5B",
+  "created_at": "2026-10-14T16:19:32.000Z",
+  "updated_at": "2026-10-14T16:20:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "address-parsing",
+    "india",
+    "information-extraction",
+    "json",
+    "logistics",
+    "conversational",
+    "en",
+    "dataset:abr-6024/indian-address-parsing-synthetic",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098888700,
+  "storage_human": "3.1 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accueil - ABR",
+      "url": "https://abr.fr/",
+      "snippet": "ABR, le spécialiste de la rénovation durable pour vos bâtiments et piscines - maçonnerie, étanchéité, peinture, ravalement, ITE, …Read more"
+    },
+    {
+      "title": "Expert en bâtiment en Vendée et Loire-Atlantique - ABR Experts",
+      "url": "https://abr-experts.fr/",
+      "snippet": "Que vous ayez fait construire ou réalisé des travaux, ABR Experts vous accompagne durant la période de réalisation mais aussi au …"
+    },
+    {
+      "title": "Construction et rénovation de maisons en Gironde - ABR MEDOC",
+      "url": "https://abr-medoc.fr/",
+      "snippet": "ABR Médoc, spécialiste en construction et rénovation de maisons individuelles en Gironde. Découvrez nos services d'aménagement …"
+    },
+    {
+      "title": "ABR – Atlantique Bretagne Rechapage",
+      "url": "https://www.abrechapage.fr/",
+      "snippet": "ABR est une entreprise bretonne, implantée au Sud de Quimper dans le Finistère et emploie 38 salariés. Notre usine est, comme la …"
+    },
+    {
+      "title": "ABR EXPERTS à Niort - Expert en bâtiment (adresse, horaires)",
+      "url": "https://www.pagesjaunes.fr/pros/57771586",
+      "snippet": "ABR Experts, cabinet d'expertise en bâtiment, avec 30 ans d'expérience dans le domaine. Nos ingénieurs en bâtiment habilités à …"
+    }
+  ]
+}

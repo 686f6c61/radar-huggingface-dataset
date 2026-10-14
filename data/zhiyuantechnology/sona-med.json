@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "zhiyuantechnology/sona-med",
+  "slug": "zhiyuantechnology-sona-med",
+  "author": "zhiyuantechnology",
+  "url": "https://huggingface.co/zhiyuantechnology/sona-med",
+  "created_at": "2026-10-14T02:02:07.000Z",
+  "updated_at": "2026-10-14T14:43:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "sona-ai",
+    "medical",
+    "base_model:cyankiwi/gemma-4-26B-A4B-it-qat-AWQ-INT4",
+    "base_model:quantized:cyankiwi/gemma-4-26B-A4B-it-qat-AWQ-INT4",
+    "license:apache-2.0",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25805936206,
+  "parameters_human": "25.81B",
+  "storage_bytes": 17223562126,
+  "storage_human": "17.2 GB",
+  "base_model": "cyankiwi/gemma-4-26B-A4B-it-qat-AWQ-INT4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zhiyuantechnology/sona-med · Hugging Face",
+      "url": "https://huggingface.co/zhiyuantechnology/sona-med",
+      "snippet": "Sona Med Sona Med is the model Sona AI uses for clinical reasoning and answers grounded in the patient record (the main language model behind Sona Pro and Sona Care)."
+    },
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, DeepSeek, Qwen, Mistral, Z.ai, Meta, and important open-weight model families."
+    },
+    {
+      "title": "John Snow Labs - Healthcare AI Company",
+      "url": "https://www.johnsnowlabs.com/",
+      "snippet": "John Snow Labs is an award-winning healthcare AI company for rapid adoption of AI in healthcare and life sciences organizations, providing high-compliance AI platform, state-of-the-art NLP libraries, and data market."
+    },
+    {
+      "title": "Healthcare AI models in Microsoft Foundry - Microsoft Foundry",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/how-to/healthcare-ai/healthcare-ai-models",
+      "snippet": "The Foundry model catalog, available in Foundry and Azure Machine Learning studio, provides healthcare foundation models that let you analyze various medical data types with AI. These AI models expand well beyond medical text comprehension into multimodal reasoning about medical data."
+    }
+  ]
+}

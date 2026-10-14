@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "OpenSML/OpenSML-JSONLite-175M",
+  "slug": "opensml-opensml-jsonlite-175m",
+  "author": "OpenSML",
+  "url": "https://huggingface.co/OpenSML/OpenSML-JSONLite-175M",
+  "created_at": "2026-10-14T17:31:46.000Z",
+  "updated_at": "2026-10-14T17:33:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "information-extraction",
+    "structured-output",
+    "json",
+    "small-language-model",
+    "apple-silicon",
+    "from-scratch",
+    "post-training",
+    "research",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceTB/smollm-corpus",
+    "dataset:HuggingFaceTB/dclm-edu",
+    "dataset:HuggingFaceFW/finewiki",
+    "dataset:Avelina/python-edu-cleaned",
+    "dataset:rajpurkar/squad_v2",
+    "dataset:databricks/databricks-dolly-15k",
+    "base_model:OpenSML/OpenSML-Base-175M",
+    "base_model:finetune:OpenSML/OpenSML-Base-175M",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 175611648,
+  "parameters_human": "175.6M",
+  "storage_bytes": 357197160,
+  "storage_human": "357 MB",
+  "base_model": "OpenSML/OpenSML-Base-175M",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pakistani Full HD 1080p Porn Videos with Homemade Sex | xHamster",
+      "url": "https://xhamster.desi/categories/pakistani/hd?quality=1080p",
+      "snippet": "Pakistani couples have passionate sex in homemade Full HD 1080p videos and solo girls masturbate to orgasm. Girls from Pakistan …"
+    },
+    {
+      "title": "Full-Length Pakistani Porn Videos - xHamster",
+      "url": "https://xhamster.com/categories/pakistani/full-length",
+      "snippet": "Check out full-length Pakistani porn videos on xHamster. Watch all Pakistani XXX vids right now!"
+    },
+    {
+      "title": "Pakistani Porn Videos - xHamster",
+      "url": "https://xhamster2.com/search/pakistani",
+      "snippet": "Watch pakistani porn videos. Explore tons of XXX movies with sex scenes in 2026 on xHamster!"
+    },
+    {
+      "title": "Pakistani porn: 11,369 free sex videos @ pornSOS.com",
+      "url": "https://www.pornsos.com/top/pakistani",
+      "snippet": "Millions of porno videos! Watch best porn for free! Updates every 5 minutes."
+    },
+    {
+      "title": "Pakistan Sex Videos and Free Pakistani XXX Porn | Tube8",
+      "url": "https://www.tube8.com/porntags/pakistan/",
+      "snippet": "Visit Tube8 for graphic Pakistan Sex videos! Our hardcore Porn will feed your XXX cravings. Tube8 has all the Pakistani Porn you …"
+    }
+  ]
+}

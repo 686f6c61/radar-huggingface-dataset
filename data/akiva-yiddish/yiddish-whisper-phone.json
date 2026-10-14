@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "akiva-yiddish/yiddish-whisper-phone",
+  "slug": "akiva-yiddish-yiddish-whisper-phone",
+  "author": "akiva-yiddish",
+  "url": "https://huggingface.co/akiva-yiddish/yiddish-whisper-phone",
+  "created_at": "2026-10-14T15:33:24.000Z",
+  "updated_at": "2026-10-14T15:40:12.000Z",
+  "license": "ivrit-ai-derived",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "yi"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "whisper.cpp",
+    "ggml",
+    "yiddish",
+    "on-device",
+    "yi",
+    "dataset:ivrit-ai/crowd-recital-yi-whisper-training",
+    "dataset:ivrit-ai/crowd-whatsapp-yi-whisper-training",
+    "base_model:mike249/whisper-small-he-v4",
+    "base_model:finetune:mike249/whisper-small-he-v4",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 241734912,
+  "parameters_human": "241.7M",
+  "storage_bytes": 1205479380,
+  "storage_human": "1.2 GB",
+  "base_model": "mike249/whisper-small-he-v4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

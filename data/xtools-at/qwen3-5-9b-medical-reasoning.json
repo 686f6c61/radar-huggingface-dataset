@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "xtools-at/Qwen3.5-9B-Medical-Reasoning",
+  "slug": "xtools-at-qwen3-5-9b-medical-reasoning",
+  "author": "xtools-at",
+  "url": "https://huggingface.co/xtools-at/Qwen3.5-9B-Medical-Reasoning",
+  "created_at": "2026-10-14T15:37:38.000Z",
+  "updated_at": "2026-10-14T15:53:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "medical",
+    "medical-reasoning",
+    "question-answering",
+    "text-generation",
+    "peft",
+    "lora",
+    "qwen3_5",
+    "qwen3.5",
+    "deepseek",
+    "reasoning",
+    "conversational",
+    "en",
+    "dataset:FreedomIntelligence/medical-o1-reasoning-SFT",
+    "dataset:xtools-at/medical-o1-reasoning-SFT-chat",
+    "base_model:Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B",
+    "base_model:adapter:Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 252811229,
+  "storage_human": "253 MB",
+  "base_model": "Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xTool France | Machines de Gravure, Découpe, Soudure & DTF",
+      "url": "https://fr.xtool.com/",
+      "snippet": "Boostez votre créativité avec xTool. Gamme complète de lasers (CO2, Diode, Fibre), soudeuses et DTF. Des outils simples et …"
+    },
+    {
+      "title": "Does anyone have a problem with qwen3.8-27b unbound thinking ...",
+      "url": "https://www.reddit.com/r/ResearchML/comments/1w4ke0l/does_anyone_have_a_problem_with_qwen3827b_unbound/",
+      "snippet": "02.09.2026 ... raise the context in Ollama itself and retest. if you want finer reasoning control than think on/off, llama.cpp's llama-server pairs well with ..."
+    },
+    {
+      "title": "Logiciel Gratuit xTool Studio | Votre Espace de Création",
+      "url": "https://fr.xtool.com/pages/logiciel",
+      "snippet": "Téléchargez xTool Studio, le logiciel gratuit tout-en-un. Pilotez facilement vos graveurs laser, imprimantes et paramètres de soudure …"
+    },
+    {
+      "title": "xTool Europe Store | Laser Cutter, Engraver, Welder & DTF Printer",
+      "url": "https://www.xtool.eu/fr",
+      "snippet": "xTool is the industry-leading brand for digital fabrication. Find top-quality innovative tools, including (CO2, fiber, diode) laser cutters, …"
+    },
+    {
+      "title": "400+ Free AI Tools: No Signup Required - Rewind.ai",
+      "url": "https://rewind.ai/tools/",
+      "snippet": "... Health & LifestyleWebsite BuilderAI Models. AI Chat. 8. AI Chat · AI Assistant ... Qwen: Qwen3.5-9B · Qwen: Qwen3.5-Flash · Qwen: Qwen3.5 Plus 2026-02-15 · Qwen ..."
+    }
+  ]
+}

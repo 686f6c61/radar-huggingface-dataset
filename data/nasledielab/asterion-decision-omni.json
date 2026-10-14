@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "NasledieLab/Asterion-Decision-Omni",
+  "slug": "nasledielab-asterion-decision-omni",
+  "author": "NasledieLab",
+  "url": "https://huggingface.co/NasledieLab/Asterion-Decision-Omni",
+  "created_at": "2026-10-14T01:36:51.000Z",
+  "updated_at": "2026-10-14T06:21:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "safetensors",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "experimental",
+    "decision-model",
+    "sign-quantization",
+    "text-classification",
+    "en",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 182306720,
+  "storage_human": "182 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2607.11433] Omni-Decision: A Progressive Evidence-State Agent System ...",
+      "url": "https://arxiv.org/abs/2607.11433",
+      "snippet": "We propose Omni-Decision, a training-free evidence-state system that turns omni-modal QA into a query-scoped evidence-closure process. For each query, Omni-Decision maintains a structured evidence state containing confirmed evidence, unresolved conflicts, fact and computation dependencies, and open evidence needs."
+    },
+    {
+      "title": "Omni-Decision: Evidence-Ledger Planning for Omni-Modal Agents",
+      "url": "https://arxiv.org/html/2607.11433v2",
+      "snippet": "We present Omni-Decision, an omni-modal agent that addresses both weaknesses with evidence-ledger planning. Instead of letting observations pile up in dialogue history, each task maintains an evidence ledger of open needs, confirmed evidence, and unresolved conflicts; a critic reads each observation and keeps only the usable content, which a ..."
+    },
+    {
+      "title": "Omni-Decision · Evidence-Ledger Planning for Omni-Modal Agents",
+      "url": "https://mbjinx.github.io/omnidecision_web/",
+      "snippet": "Omni-Decision maintains an explicit evidence ledger across video, audio, web pages, and computation. The planner selects the next action from the current evidence needs."
+    },
+    {
+      "title": "NasledieLab (NasledieAI Lab) - Hugging Face",
+      "url": "https://huggingface.co/NasledieLab/models",
+      "snippet": "Org profile for NasledieAI Lab on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Omni-Decision: evidence-ledger planning hits 81… · AGI Hunt",
+      "url": "https://agihunt.info/en/p/1a0f0f999e1a1cb8eca26216cd2",
+      "snippet": "A new paper, Omni-Decision, targets the core bottleneck of omni-modal agents that must seek evidence across video, audio, web pages and computation: planning. Noisy multimodal observations pile up in conversation history and disrupt later decisions — controlled backend swaps confirm the diagnosis, as replacing the planner hurts far more than replacing perception."
+    }
+  ]
+}

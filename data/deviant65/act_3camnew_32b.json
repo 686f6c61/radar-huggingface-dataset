@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Deviant65/act_3camnew_32b",
+  "slug": "deviant65-act_3camnew_32b",
+  "author": "Deviant65",
+  "url": "https://huggingface.co/Deviant65/act_3camnew_32b",
+  "created_at": "2026-10-14T01:52:43.000Z",
+  "updated_at": "2026-10-14T01:53:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:Deviant65/so101_redcube_3new",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206716808,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Deviant65/act_3camnew_32b · Hugging Face",
+      "url": "https://huggingface.co/Deviant65/act_3camnew_32b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Deviant65 (dev) - Hugging Face",
+      "url": "https://huggingface.co/Deviant65/models",
+      "snippet": "Sort: Recently updated. Deviant65/so101_redcube_3cam_32batch. Updated about 4 hours ago. Deviant65/act_so101_redcube_batch32_kl5. Robotics • 51.7M • Updated 1 day ago • 26"
+    },
+    {
+      "title": "DeepSeek R2: A 32B Reasoning Model Running on a Single GPU That…",
+      "url": "https://aiindigo.com/blog/deepseek-r2-32b-reasoning-model-april-2026",
+      "snippet": "DeepSeek R2 is a 32B open-weight reasoning model hitting 92.7% AIME on a single 24GB GPU. Here is what that means for local AI."
+    },
+    {
+      "title": "Explore the Best 3d_model Art | DeviantArt",
+      "url": "https://www.deviantart.com/tag/3d_model",
+      "snippet": "Want to discover art related to 3d_model? Check out amazing 3d_model artwork on DeviantArt. Get inspired by our community of talented artists."
+    },
+    {
+      "title": "QRWKV-72B and 32B : Training large attention free models, with only 8 GPU&#x27;s",
+      "url": "https://substack.recursal.ai/p/qwerky-72b-and-32b-training-large",
+      "snippet": "We are proud to announce the updated QRWKV-72B 1 and 32B. Both models are available on huggingface and featherless.ai 32B | Hugging Face Link | Featherless AI Link 72B | Hugging Face Link | Featherless AI Link The largest model to date - that is not based on the transformer attention architecture. Surpassing existing transformer models in several benchmarks, while following right behind in others."
+    }
+  ]
+}

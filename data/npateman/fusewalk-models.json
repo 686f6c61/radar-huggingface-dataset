@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "npateman/fusewalk-models",
+  "slug": "npateman-fusewalk-models",
+  "author": "npateman",
+  "url": "https://huggingface.co/npateman/fusewalk-models",
+  "created_at": "2026-10-14T15:39:05.000Z",
+  "updated_at": "2026-10-14T16:52:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "fusewalk",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:quantized:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 2708804064,
+  "storage_human": "2.7 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[Winamax] Code couleur / Pastillage - Kill Tilt",
+      "url": "https://www.kill-tilt.fr/forums/topic/winamax-code-couleur-pastillage/",
+      "snippet": "Jan 7, 2014 · [Winamax] Code couleur / Pastillage Accueil › Forums › THÉORIE & TECHNIQUE DU POKER › Trackers & Logiciels › …"
+    },
+    {
+      "title": "Réouvrir un compte winamax - Kill Tilt",
+      "url": "https://www.kill-tilt.fr/forums/topic/reouvrir-un-compte-winamax/",
+      "snippet": "Aug 8, 2018 · Bonjour/bonsoir à tous, petite question peut-on réouvrir son compte winamax après une fermeture ? J’avais cloturé …"
+    },
+    {
+      "title": "Topic j'ai 50,00 Wams sur Winamax, ça représente quoi?",
+      "url": "https://www.jeuxvideo.com/forums/42-51-64200263-1-0-1-0-j-ai-50-00-wams-sur-winamax-ca-represente-quoi.htm",
+      "snippet": "Sep 5, 2020 · Pour plus d'infos, va sur l'accueil de Winamax, puis mon compte. Clique sur le W de Winamax, puis clique sur …"
+    },
+    {
+      "title": "FAQ Winamax - Respuestas a las preguntas frecuentes",
+      "url": "https://www.poker-red.com/foros/winamax/winamax/faq-winamax-respuestas-a-las-preguntas-frecuentes",
+      "snippet": "Dec 12, 2018 · Conéctate a Winamax introduciendo tus datos de acceso y entra en “Mi perfil”.Haz clic en “Realizar un depósito”, …"
+    },
+    {
+      "title": "Topic Poker winamax : c'est complètement truqué non",
+      "url": "https://www.jeuxvideo.com/forums/42-51-74232554-1-0-1-0-poker-winamax-c-est-completement-truque-non.htm",
+      "snippet": "May 13, 2024 · Accueil Tous les forums Forum Blabla 18-25 ans Topic Poker winamax : c'est complètement truqué non ? Liste des …"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "sstoica12/acquisition_generator_AS_confidence_medmcqa_llama8b",
+  "slug": "sstoica12-acquisition_generator_as_confidence_medmcqa_llama8b",
+  "author": "sstoica12",
+  "url": "https://huggingface.co/sstoica12/acquisition_generator_AS_confidence_medmcqa_llama8b",
+  "created_at": "2026-10-14T15:48:49.000Z",
+  "updated_at": "2026-10-14T15:53:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 59091622760,
+  "storage_human": "59.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Mizan-v3-3B-GGUF",
+  "slug": "mradermacher-mizan-v3-3b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Mizan-v3-3B-GGUF",
+  "created_at": "2026-10-14T02:25:07.000Z",
+  "updated_at": "2026-10-14T02:38:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "fa",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "decision-model",
+    "systemone",
+    "clef",
+    "persian",
+    "farsi",
+    "classification",
+    "routing",
+    "moderation",
+    "calibrated",
+    "unsloth",
+    "fa",
+    "en",
+    "base_model:Nimruz/Mizan-v3-3B",
+    "base_model:quantized:Nimruz/Mizan-v3-3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 75,
+  "trending_score": 0,
+  "parameters": 2899029316,
+  "parameters_human": "2.90B",
+  "storage_bytes": 28368912896,
+  "storage_human": "28.4 GB",
+  "base_model": "Nimruz/Mizan-v3-3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?p=3&sort=modified&search=gguf",
+      "snippet": "mradermacher/Muse-Glimmer-30B-Abliterated-BF16-i1-GGUF. 28B • Updated ... Nimruz/Mizan-v3-3B-GGUF. Text Classification • 3B • Updated in about 18 hours ..."
+    }
+  ]
+}

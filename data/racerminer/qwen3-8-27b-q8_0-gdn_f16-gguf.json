@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "RacerMiner/Qwen3.8-27B-Q8_0-GDN_F16.gguf",
+  "slug": "racerminer-qwen3-8-27b-q8_0-gdn_f16-gguf",
+  "author": "RacerMiner",
+  "url": "https://huggingface.co/RacerMiner/Qwen3.8-27B-Q8_0-GDN_F16.gguf",
+  "created_at": "2026-10-14T15:41:14.000Z",
+  "updated_at": "2026-10-14T15:41:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeviantArt - The Largest Online Art Gallery and Community",
+      "url": "https://www.deviantart.com/",
+      "snippet": "DeviantArt is where art and community thrive. Explore over 650 million pieces of art while connecting to fellow artists and art …"
+    },
+    {
+      "title": "jepriCreations on DeviantArt",
+      "url": "https://www.deviantart.com/jepricreations",
+      "snippet": "jepriCreations is an artist on DeviantArt. · Artworks: 27 · Followers: 11647 · Likes: 23"
+    },
+    {
+      "title": "Bewci on DeviantArt",
+      "url": "https://www.deviantart.com/bewci",
+      "snippet": "Bewci is an artist on DeviantArt. I'm an avid lover of TG transformations who is passionate about making gender-bending content in …"
+    },
+    {
+      "title": "Artgerm on DeviantArt",
+      "url": "https://www.deviantart.com/artgerm",
+      "snippet": "` Artgerm has very humble beginnings here on deviantART. He began like you or I, just another deviant in a sea of many, and he …"
+    },
+    {
+      "title": "Explore the Best Theloudhouse Art | DeviantArt",
+      "url": "https://www.deviantart.com/tag/theloudhouse",
+      "snippet": "Want to discover art related to theloudhouse? Check out amazing theloudhouse artwork on DeviantArt. Get inspired by our …"
+    }
+  ]
+}

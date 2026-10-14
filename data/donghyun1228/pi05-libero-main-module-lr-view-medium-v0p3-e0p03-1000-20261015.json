@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Donghyun1228/pi05-libero-main-module-lr-view-medium-v0p3-e0p03-1000-20261015",
+  "slug": "donghyun1228-pi05-libero-main-module-lr-view-medium-v0p3-e0p03-1000-20261015",
+  "author": "Donghyun1228",
+  "url": "https://huggingface.co/Donghyun1228/pi05-libero-main-module-lr-view-medium-v0p3-e0p03-1000-20261015",
+  "created_at": "2026-10-14T15:58:23.000Z",
+  "updated_at": "2026-10-14T15:59:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "libero",
+    "inverse-dynamics",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6862643815,
+  "storage_human": "6.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Étudiants, ils assument de combiner travail du sexe et études",
+      "url": "https://www.rue89strasbourg.com/etudiants-travail-du-sexe-et-etudes-233543",
+      "snippet": "May 30, 2022 · Ils sont étudiants à Strasbourg et se prostituent. Cette activité leur permet de financer leurs études mais l’argent n’est …"
+    },
+    {
+      "title": "\"Parfois, ils échangent du sexe contre un repas\" : de plus en plus de ...",
+      "url": "https://france3-regions.franceinfo.fr/nouvelle-aquitaine/gironde/bordeaux/parfois-ils-echangent-du-sexe-contre-un-repas-de-plus-en-plus-de-prostitution-chez-les-etudiants-precaires-2876363.html",
+      "snippet": "Nov 23, 2023 · Les jeunes nous expliquaient que leurs parents ne pouvaient plus les soutenir financièrement et qu'il était difficile de …"
+    },
+    {
+      "title": "RÉCIT - Moi, Laura D., 19 ans, étudiante et prostituée",
+      "url": "https://lepetitjournal.com/recit-moi-laura-d-19-ans-etudiante-et-prostituee-172486",
+      "snippet": "Feb 8, 2008 · Elle raconte dans Mes chères études, la spirale infernale qui l'a conduite à la prostitution. Terrifiant. Laura est une …"
+    },
+    {
+      "title": "“J’avais plus de 18 ans et je voulais être autonome”: comment la ...",
+      "url": "https://www.lesinrocks.com/actu/javais-plus-de-18-ans-et-je-voulais-etre-autonome-comment-la-prostitution-etudiante-se-developpe-sur-internet-140021-15-04-2018/",
+      "snippet": "Apr 15, 2018 · Ce récit multimédia s’enrichit des points de vue d’acteurs associatifs et de professionnels de la santé. Il donne …"
+    },
+    {
+      "title": "Prostitution étudiante : témoignage d'une jeune femme - Madmoizelle",
+      "url": "https://www.madmoizelle.com/etudiante-prostitution-temoignage-946169",
+      "snippet": "Nov 16, 2021 · À 23 ans, Rose est étudiante et féministe. Pour régler des dettes, elle a fait le choix de se prostituer. Océane lui prête …"
+    }
+  ]
+}

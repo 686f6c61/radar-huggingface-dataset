@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "evenediktov/taxi",
+  "slug": "evenediktov-taxi",
+  "author": "evenediktov",
+  "url": "https://huggingface.co/evenediktov/taxi",
+  "created_at": "2026-10-14T17:15:46.000Z",
+  "updated_at": "2026-10-14T17:16:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Taxi-v3",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 152973,
+  "storage_human": "152973 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Porn Pics, Adult Photos, XXX Images & Sex GIFs | ImageFap",
+      "url": "https://www.imagefap.com/",
+      "snippet": "Browse millions of hot free porn pics, sex GIFs, hot nude photo galleries, amateur XXX photos only on ImageFap, the world's largest …"
+    },
+    {
+      "title": "evenediktov (Evgenii Venediktov) - Hugging Face",
+      "url": "https://huggingface.co/evenediktov",
+      "snippet": "AI & ML interests ... Recent Activity liked a dataset about 1 month ago ... updated a model 6 months ago"
+    },
+    {
+      "title": "Free Homemade Amateur Porn Pics From ImageFap User Community",
+      "url": "https://www.imagefap.com/categories.php",
+      "snippet": "Browse homemade porn pics, sex GIFs, XXX images & amateur nude photos in all your favorite fetishes: anal, teen, lesbian, gay, …"
+    },
+    {
+      "title": "evenediktov/dqn-SpaceInvadersNoFrameskip-v4 · Hugging Face",
+      "url": "https://huggingface.co/evenediktov/dqn-SpaceInvadersNoFrameskip-v4",
+      "snippet": "DQN Agent playing SpaceInvadersNoFrameskip-v4 This is a trained model of a DQN agent playing SpaceInvadersNoFrameskip-v4 using the stable-baselines3 library and the RL Zoo. The RL Zoo is a training framework for Stable Baselines3 reinforcement learning agents, with hyperparameter optimization and pre-trained agents included."
+    },
+    {
+      "title": "ImageFap - Signup",
+      "url": "https://upload.imagefap.com/",
+      "snippet": "Select your country Afghanistan Albania Algeria American Samoa Andorra Angola Anguilla Antarctica Antigua & Barbuda Argentina …"
+    }
+  ]
+}

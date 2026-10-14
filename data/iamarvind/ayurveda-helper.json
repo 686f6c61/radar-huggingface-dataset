@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "iamarvind/ayurveda-helper",
+  "slug": "iamarvind-ayurveda-helper",
+  "author": "iamarvind",
+  "url": "https://huggingface.co/iamarvind/ayurveda-helper",
+  "created_at": "2026-10-14T15:30:39.000Z",
+  "updated_at": "2026-10-14T15:32:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "hi",
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "ayurveda",
+    "hindi",
+    "indic",
+    "lora",
+    "domain-adaptation",
+    "sarvam",
+    "text-generation",
+    "hi",
+    "en",
+    "base_model:sarvamai/sarvam-m",
+    "base_model:adapter:sarvamai/sarvam-m",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "sarvamai/sarvam-m",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

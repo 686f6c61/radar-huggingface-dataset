@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "victor-torres/Ornith-1.5-35B-A3B-oQ4e-fp16",
+  "slug": "victor-torres-ornith-1-5-35b-a3b-oq4e-fp16",
+  "author": "victor-torres",
+  "url": "https://huggingface.co/victor-torres/Ornith-1.5-35B-A3B-oQ4e-fp16",
+  "created_at": "2026-10-14T17:19:21.000Z",
+  "updated_at": "2026-10-14T17:33:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "oq",
+    "omlx",
+    "quantized",
+    "fp16",
+    "moe",
+    "multimodal",
+    "apple-silicon",
+    "image-text-to-text",
+    "conversational",
+    "base_model:ornith-ai/Ornith-1.5-35B-A3B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-35B-A3B",
+    "license:mit",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 22512340455,
+  "storage_human": "22.5 GB",
+  "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "home | VICTOR Badminton | US and Canada",
+      "url": "https://www.victor-europe.com/",
+      "snippet": "VICTOR is once again collaborating with Dragon Ball Z, launching a collection of professional badminton gear. Inspired by the spirit …"
+    },
+    {
+      "title": "Victor (prénom) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Victor_(pr%C3%A9nom)",
+      "snippet": "Victor est un prénom masculin d'origine romaine signifiant vainqueur, formé sur le verbe latin vincere et qui signifie vaincre. La forme …"
+    },
+    {
+      "title": "Prénom Victor (garçon) : signification, origine, caractère, saint, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/victor/prenom-2645",
+      "snippet": "Quelle est la signification du prénom Victor ? Le prénom Victor est dérivé du verbe latin vincere qui signifie \"vaincre\"."
+    },
+    {
+      "title": "VICTOR Europe GmbH - Home",
+      "url": "https://www.victor-shop.com/en/",
+      "snippet": "25358 Horst +49- (0)4126-9853-0 +49- (0)4126-9853-299 info@victor-europe.com Deutsch English Company Shipping Conditions …"
+    },
+    {
+      "title": "“Tellement hâte qu’il sorte” : Victor (Star Academy) dévoile son ...",
+      "url": "https://www.nrj.fr/actus/tellement-hate-quil-sorte-victor-star-academy-devoile-son-premier-single-en-concert-71366794",
+      "snippet": "Jun 29, 2026 · La voix de Victor, qui avait bluffé de nombreux téléspectateurs durant la Star Academy 2025, est mise à l’honneur …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "User-tian/Point-and-Play",
+  "slug": "user-tian-point-and-play",
+  "author": "User-tian",
+  "url": "https://huggingface.co/User-tian/Point-and-Play",
+  "created_at": "2026-10-14T01:44:48.000Z",
+  "updated_at": "2026-10-14T01:57:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "point-and-play",
+  "languages": [],
+  "tags": [
+    "point-and-play",
+    "audio",
+    "music",
+    "timbre-cloning",
+    "music-synthesis",
+    "flow-matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3684427006,
+  "storage_human": "3.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "user - Définitions, synonymes, conjugaison, exemples | Dico en ligne …",
+      "url": "https://dictionnaire.lerobert.com/definition/user",
+      "snippet": "Pour faire des lunettes, pour polir le verre & l'acier, il faut l' user insensiblement avec le grais, l'emeril. Il y a des pierres si dures, …"
+    },
+    {
+      "title": "Définitions : user, être usé, s'user - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/user/80764",
+      "snippet": "Littéraire. En user avec quelqu'un, se comporter d'une certaine façon à son égard : En user trop familièrement avec ses supérieurs."
+    },
+    {
+      "title": "user - traduction - Dictionnaire Français-Anglais WordReference.com",
+      "url": "https://www.wordreference.com/fren/user",
+      "snippet": "'user' également trouvé dans ces entrées : Dans la description française : biaiser - chicaner - corroder - élimer - employer la manière …"
+    },
+    {
+      "title": "user — Wiktionnaire, le dictionnaire libre",
+      "url": "https://fr.wiktionary.org/wiki/user",
+      "snippet": "(Sens figuré) (Familier) Cet homme est bon à l’user, plus on le fréquente, plus on le trouve d’un commerce agréable et sûr. On ne …"
+    },
+    {
+      "title": "user - Conjugaison du verbe user - Le Conjugueur",
+      "url": "https://leconjugueur.lefigaro.fr/conjugaison/verbe/user.html",
+      "snippet": "Verbe user - La conjugaison à tous les temps du verbe user au masculin à la voix active avec l'auxiliaire avoir. Synonyme du verbe user"
+    }
+  ]
+}

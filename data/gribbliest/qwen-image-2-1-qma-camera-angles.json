@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "gribbliest/qwen-image-2.1-qma-camera-angles",
+  "slug": "gribbliest-qwen-image-2-1-qma-camera-angles",
+  "author": "gribbliest",
+  "url": "https://huggingface.co/gribbliest/qwen-image-2.1-qma-camera-angles",
+  "created_at": "2026-10-13T13:26:35.000Z",
+  "updated_at": "2026-10-13T13:34:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "lora",
+    "qwen-image",
+    "image-editing",
+    "camera-control",
+    "camera-angle",
+    "multi-view",
+    "image-to-image",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:adapter:Qwen/Qwen-Image-2.1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 14,
+  "downloads_30d": 94,
+  "trending_score": 14,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 327234907,
+  "storage_human": "327 MB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Link G4+ Atom II - G4+ - Forums | Link Engine Management",
+      "url": "https://forums.linkecu.com/topic/7625-link-g4-atom-ii/",
+      "snippet": "Dec 30, 2017 · Hi and good day link members, new to efi tuning and surely will installed, wired and tuned by one of tuners i know …"
+    },
+    {
+      "title": "Support Forums | Link Engine Management",
+      "url": "https://forums.linkecu.com/",
+      "snippet": "Link G2 G3 3.3k posts \"Importing\" a G2 .pcl file into a newer Link clsmooth2, October 1"
+    },
+    {
+      "title": "st-link供电的问题到底是怎么回事？ - 知乎",
+      "url": "https://www.zhihu.com/question/337898540",
+      "snippet": "问一个关于ST-LINK供电的问题，因为最近出现太多不正常情况了，这里一一列举一下，希望有大师解惑。先说…"
+    },
+    {
+      "title": "在 TP-LINK 工作体验如何？ - 知乎",
+      "url": "https://www.zhihu.com/question/24306516",
+      "snippet": "相关问题：你为何加入 TP-LINK ?你为什么从 TP-LINK 离职？"
+    },
+    {
+      "title": "Criar um link ou QR code para pedir avaliações",
+      "url": "https://support.google.com/business/answer/16816815?hl=pt-BR",
+      "snippet": "Compartilhar com os clientes um link ou QR code para avaliar sua empresa No momento, os QR codes de avaliações só podem ser …"
+    }
+  ]
+}

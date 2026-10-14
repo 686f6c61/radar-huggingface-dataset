@@ -5,7 +5,7 @@
   "author": "furiosa-ai",
   "url": "https://huggingface.co/furiosa-ai/Qwen3-30B-A3B-FP8",
   "created_at": "2026-06-29T19:09:45.000Z",
-  "updated_at": "2026-09-10T02:21:53.000Z",
+  "updated_at": "2026-10-14T08:09:44.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -26,12 +26,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 1260,
+  "downloads_30d": 1002,
   "trending_score": 0,
   "parameters": 30532122624,
   "parameters_human": "30.53B",
-  "storage_bytes": 39224476473,
-  "storage_human": "39.2 GB",
+  "storage_bytes": 40279088435,
+  "storage_human": "40.3 GB",
   "base_model": "Qwen/Qwen3-30B-A3B-FP8",
   "formats": [
     "safetensors"

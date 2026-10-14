@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "open-athena/Snowball-67B-A2B-CruxEval-OPD-Step75",
+  "slug": "open-athena-snowball-67b-a2b-cruxeval-opd-step75",
+  "author": "open-athena",
+  "url": "https://huggingface.co/open-athena/Snowball-67B-A2B-CruxEval-OPD-Step75",
+  "created_at": "2026-10-14T01:36:42.000Z",
+  "updated_at": "2026-10-14T01:38:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "grug_moe",
+    "marin",
+    "snowball",
+    "distillation",
+    "base_model:open-athena/Snowball-67B-A2B-10T-Mixed-RLVR-Sync-Step92",
+    "base_model:finetune:open-athena/Snowball-67B-A2B-10T-Mixed-RLVR-Sync-Step92",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": 67078882816,
+  "parameters_human": "67.08B",
+  "storage_bytes": 134175048716,
+  "storage_human": "134.2 GB",
+  "base_model": "open-athena/Snowball-67B-A2B-10T-Mixed-RLVR-Sync-Step92",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Open - Il giornale online fondato da Enrico Mentana",
+      "url": "https://www.open.online/",
+      "snippet": "15 hours ago · OPEN IMPRESA SOCIALE S.R.L. VIA MEDICI, 15 20123 MILANO P. IVA 13499730961 Capitale Sociale: € 10.000 …"
+    },
+    {
+      "title": "Ultime notizie - Open",
+      "url": "https://www.open.online/ultime-notizie/",
+      "snippet": "15 hours ago · Meloni contro Trump al Senato: «Accordo con Putin sul gasolio? Rischioso. La pace non sia resa dell’Ucraina». …"
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "ChatGPT for Education Codex Dots Release Notes API Platform Overview API Log In Docs Business Overview Solutions Resources …"
+    },
+    {
+      "title": "Page d'accueil Open | Your high-digital place",
+      "url": "https://www.open.global/",
+      "snippet": "Construisons votre carrière Chez Open, nous ouvrons des perspectives aux talents... #Recrutez-nous !"
+    },
+    {
+      "title": "Online Learning Courses and Adult Education - The Open University",
+      "url": "https://www.open.ac.uk/",
+      "snippet": "The Open University offers flexible full-time and part-time study, supported distance and open learning for undergraduate and …"
+    }
+  ]
+}

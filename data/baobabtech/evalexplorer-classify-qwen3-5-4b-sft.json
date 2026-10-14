@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "baobabtech/evalexplorer-classify-qwen3.5-4b-sft",
+  "slug": "baobabtech-evalexplorer-classify-qwen3-5-4b-sft",
+  "author": "baobabtech",
+  "url": "https://huggingface.co/baobabtech/evalexplorer-classify-qwen3.5-4b-sft",
+  "created_at": "2026-10-14T19:44:52.000Z",
+  "updated_at": "2026-10-14T19:45:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "evalexplorer",
+    "document-classification",
+    "structured-output",
+    "base_model:unsloth/Qwen3.5-4B",
+    "base_model:adapter:unsloth/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:eu"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 149923791,
+  "storage_human": "150 MB",
+  "base_model": "unsloth/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Spotify - Web Player: Music for everyone",
+      "url": "https://open.spotify.com/",
+      "snippet": "Spotify is a digital music service that gives you access to millions of songs.Read more"
+    },
+    {
+      "title": "Entra | Spotify",
+      "url": "https://open.spotify.com/intl-pt/artist/2ACNJpu5aN8cyiUkFRR4z1",
+      "snippet": "Pré-visualização do Spotify Inscreva-se para curtir música ilimitada e podcasts só com alguns anúncios. Não precisa de cartão de …"
+    },
+    {
+      "title": "Spotify",
+      "url": "https://accounts.spotify.com/fr/login",
+      "snippet": "Vous n'avez pas de compte ? S'inscrire"
+    },
+    {
+      "title": "Spotify",
+      "url": "https://accounts.spotify.com/en/login?nosignup=true",
+      "snippet": "Log in to your Spotify account to access music, podcasts, and more."
+    },
+    {
+      "title": "下载 Windows 版 - Spotify",
+      "url": "https://www.spotify.com/sg-zh/download/windows/",
+      "snippet": "Spotify 是一项数字音乐服务，可让你畅听数百万首歌曲。"
+    }
+  ]
+}

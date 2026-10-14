@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "mradermacher/RxDecide-1.7B-GGUF",
+  "slug": "mradermacher-rxdecide-1-7b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/RxDecide-1.7B-GGUF",
+  "created_at": "2026-10-14T01:47:42.000Z",
+  "updated_at": "2026-10-14T02:00:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "medical",
+    "clinical-decision-support",
+    "contraindications",
+    "drug-safety",
+    "structured-outputs",
+    "fhir",
+    "calibration",
+    "lora",
+    "qwen3",
+    "small-language-model",
+    "pre-registered-evaluation",
+    "en",
+    "base_model:nsk246/RxDecide-1.7B",
+    "base_model:adapter:nsk246/RxDecide-1.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 168,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 15959970432,
+  "storage_human": "16.0 GB",
+  "base_model": "nsk246/RxDecide-1.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/RxDecide-1.7B-GGUF · Discussions - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/RxDecide-1.7B-GGUF/discussions",
+      "snippet": "mradermacher / RxDecide-1.7B-GGUF Like 0 Transformers GGUF English medical clinical-decision-support contraindications drug-safety structured-outputs fhir calibration lora qwen3 small-language-model pre-registered-evaluation conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "team mradermacher - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/models",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 31 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "GitHub - JoasASantos/Offensive-Security-AI-Models: Uncensored AI models ...",
+      "url": "https://github.com/JoasASantos/Offensive-Security-AI-Models",
+      "snippet": "Uncensored LLMs for Offensive Security Curated list of open-weight uncensored models for authorized red team operations, penetration testing, and security research. All data sourced from HuggingFace model cards and official publications. Sep 2026."
+    },
+    {
+      "title": "Google Colab",
+      "url": "https://colab.research.google.com/drive/1l_wRGeD-LnRl3VtZHDc7epW_XW0nJvew?usp=sharing",
+      "snippet": "Google Colab ... Google Colab"
+    }
+  ]
+}

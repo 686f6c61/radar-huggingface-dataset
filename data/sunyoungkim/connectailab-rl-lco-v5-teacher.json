@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "sunyoungKim/connectailab-rl-lco-v5-teacher",
+  "slug": "sunyoungkim-connectailab-rl-lco-v5-teacher",
+  "author": "sunyoungKim",
+  "url": "https://huggingface.co/sunyoungKim/connectailab-rl-lco-v5-teacher",
+  "created_at": "2026-10-14T02:38:30.000Z",
+  "updated_at": "2026-10-14T02:39:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "numpy",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "numpy",
+    "connect-ai-lab",
+    "deep-reinforcement-learning",
+    "gymnasium",
+    "connect-company",
+    "connect-tycoon",
+    "jev",
+    "jev-style",
+    "reinforcement-learning",
+    "ppo",
+    "decision-making",
+    "prefrontal-cortex",
+    "korean",
+    "ko",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Visit Dubai – Official Tourism Guide to Dubai’s Attractions, Events ...",
+      "url": "https://www.visitdubai.com/",
+      "snippet": "Explore Dubai’s iconic landmarks, vibrant neighbourhoods, world-class shopping and rich cultural experiences. Plan your …"
+    },
+    {
+      "title": "Plan Your Trip to Dubai: Best of Dubai Tourism - Tripadvisor",
+      "url": "https://www.tripadvisor.com/Tourism-g295424-Dubai_Emirate_of_Dubai-Vacations.html",
+      "snippet": "According to forum posts, some must-see attractions in Dubai include the Burj Khalifa, Dubai Mall, and the Dubai Fountain Walk …"
+    },
+    {
+      "title": "Dubai Travel Guide - Attractions, Tours & Things to Do",
+      "url": "https://www.dubaitravel.com/",
+      "snippet": "14 hours ago · Step back in time at the historic Al Fahidi District with its traditional wind-tower architecture, explore the Dubai …"
+    },
+    {
+      "title": "Plan your trip - Visit Dubai",
+      "url": "https://www.visitdubai.com/en/plan-your-trip",
+      "snippet": "Plan your Dubai trip with practical travel information, itinerary ideas, visa guidance, transport options and tips for making the most of …"
+    },
+    {
+      "title": "A guide to Dubai, everything you need to know - Lonely Planet",
+      "url": "https://www.lonelyplanet.com/articles/first-time-guide-to-dubai",
+      "snippet": "An unforgettable blend of tradition and innovation, Dubai is a family-friendly, super-lux, beachside city escape."
+    }
+  ]
+}

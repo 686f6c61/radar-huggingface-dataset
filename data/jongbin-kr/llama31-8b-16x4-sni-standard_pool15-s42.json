@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Jongbin-kr/llama31-8b-16x4-sni-standard_pool15-s42",
+  "slug": "jongbin-kr-llama31-8b-16x4-sni-standard_pool15-s42",
+  "author": "Jongbin-kr",
+  "url": "https://huggingface.co/Jongbin-kr/llama31-8b-16x4-sni-standard_pool15-s42",
+  "created_at": "2026-10-14T07:09:27.000Z",
+  "updated_at": "2026-10-14T07:35:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama_emo_routed_lora",
+    "sni",
+    "moe",
+    "routed-lora",
+    "full-model",
+    "custom_code",
+    "base_model:Jongbin-kr/llama3.1-8b-16x4-emo-style-routed-lora-moe",
+    "base_model:finetune:Jongbin-kr/llama3.1-8b-16x4-emo-style-routed-lora-moe",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8485212160,
+  "parameters_human": "8.49B",
+  "storage_bytes": 84889288200,
+  "storage_human": "84.9 GB",
+  "base_model": "Jongbin-kr/llama3.1-8b-16x4-emo-style-routed-lora-moe",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cheap Car Hire San Francisco Airport - Rentalcars.com",
+      "url": "https://www.rentalcars.com/us/airport/us/sfo?msockid=1d0f6bf794786c79096f7c0595406d4f",
+      "snippet": "Compare car rental at San Francisco Airport SFO and find the cheapest prices from all major brands. Book online today with the …"
+    },
+    {
+      "title": "Cheap Car Hire Beirut - Rentalcars.com",
+      "url": "https://www.rentalcars.com/en/city/lb/beirut?msockid=1d0f6bf794786c79096f7c0595406d4f",
+      "snippet": "Compare car rental in Beirut and find the cheapest prices from all major brands. Book online today with the world's biggest online car …"
+    },
+    {
+      "title": "Cheap Car Hire Porto - Rentalcars.com",
+      "url": "https://www.rentalcars.com/en/city/pt/porto?msockid=1d0f6bf794786c79096f7c0595406d4f",
+      "snippet": "Why rent a car in Porto with Rentalcars.com? Here at Rentalcars.com, our team of experts deal with national and international car …"
+    },
+    {
+      "title": "Cheap Car Hire Budapest - Rentalcars.com",
+      "url": "https://www.rentalcars.com/en/city/hu/budapest?msockid=1d0f6bf794786c79096f7c0595406d4f",
+      "snippet": "Frequently Asked Questions Why rent a car in Budapest with Rentalcars.com? Come to Rentalcars.com next time you are looking for …"
+    },
+    {
+      "title": "Cheap Car Hire Brussels - Rentalcars.com",
+      "url": "https://www.rentalcars.com/en/city/be/brussels?msockid=1d0f6bf794786c79096f7c0595406d4f",
+      "snippet": "Why rent a car in Brussels with Rentalcars.com? Our aim is to make hiring a car in Brussels simple and stress-free, so we give you …"
+    }
+  ]
+}

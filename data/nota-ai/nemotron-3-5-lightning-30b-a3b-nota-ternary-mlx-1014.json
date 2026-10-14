@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "nota-ai/Nemotron-3.5-Lightning-30B-A3B-Nota-Ternary-MLX-1014",
+  "slug": "nota-ai-nemotron-3-5-lightning-30b-a3b-nota-ternary-mlx-1014",
+  "author": "nota-ai",
+  "url": "https://huggingface.co/nota-ai/Nemotron-3.5-Lightning-30B-A3B-Nota-Ternary-MLX-1014",
+  "created_at": "2026-10-12T09:40:44.000Z",
+  "updated_at": "2026-10-13T08:01:31.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "nemotron_h",
+    "ternary",
+    "1.58-bits",
+    "quantized",
+    "mamba",
+    "moe",
+    "on-device",
+    "text-generation",
+    "conversational",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+    "base_model:quantized:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+    "license:openmdw-1.1",
+    "2-bit",
+    "region:us"
+  ],
+  "likes": 31,
+  "downloads_30d": 185,
+  "trending_score": 29,
+  "parameters": 32987226432,
+  "parameters_human": "32.99B",
+  "storage_bytes": 10252554652,
+  "storage_human": "10.3 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prise de notes AI | Transcription de réunion AI gratuite",
+      "url": "https://www.notta.ai/fr",
+      "snippet": "Notta est un preneur de notes AI qui transcrit, résume et génère des plans d'action à partir de vos réunions, interviews ou …"
+    },
+    {
+      "title": "Définitions : nota, nota bene - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/nota/55039",
+      "snippet": "nota, nota bene - Définitions Français : Retrouvez la définition de nota, nota bene, ainsi que les difficultés... - synonymes, …"
+    },
+    {
+      "title": "États des risques, documents d’urbanisme - Nota Risques Urba",
+      "url": "https://www.nota-risques-urba.fr/",
+      "snippet": "Chez Nota Risques Urba, nous avons pour vocation de simplifier et d’optimiser votre pratique professionnelle. Dans cette optique, …"
+    },
+    {
+      "title": "AI Note Taker | Free AI Meeting Transcription",
+      "url": "https://www.notta.ai/en",
+      "snippet": "Notta is an AI note taker that transcribes, summarizes, and generates action plans from your meetings, interviews, or recordings. Try …"
+    },
+    {
+      "title": "Nota — AI Notes & Voice App for iPhone, iPad, Mac & Apple Watch",
+      "url": "https://nota.talk/en/",
+      "snippet": "Capture thoughts by voice, text, sketch, or scan. Nota is an AI notes app for iPhone, iPad, Mac, and Apple Watch with transcription, …"
+    }
+  ]
+}

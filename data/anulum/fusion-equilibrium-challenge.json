@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "anulum/fusion-equilibrium-challenge",
+  "slug": "anulum-fusion-equilibrium-challenge",
+  "author": "anulum",
+  "url": "https://huggingface.co/anulum/fusion-equilibrium-challenge",
+  "created_at": "2026-10-14T02:43:26.000Z",
+  "updated_at": "2026-10-14T03:08:05.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tokamak",
+    "plasma-equilibrium",
+    "fusion",
+    "neurips-2026",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 758819311,
+  "storage_human": "759 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ANULUM — Research & Technology",
+      "url": "https://anulum.li/",
+      "snippet": "ANULUM Institute — independent research and technology across fusion, quantum control, neuroscience, AI infrastructure, and scientific computing."
+    },
+    {
+      "title": "Entropy Reset in a Cyclic Universe: The MMC and ψ(r,t) Framework",
+      "url": "https://www.academia.edu/129914662/Entropy_Reset_in_a_Cyclic_Universe_The_MMC_and_%CF%88_r_t_Framework",
+      "snippet": "A comparison with established physics models of entropy (from Boltzmann and von Neumann entropy to black hole thermodynamics, loop quantum cosmology, and ..."
+    },
+    {
+      "title": "The Oxford Handbook of the New Cultural History of Music [online ...",
+      "url": "https://dokumen.pub/the-oxford-handbook-of-the-new-cultural-history-of-music-online-versionnbsped-0195341864-9780195341867.html",
+      "snippet": "... anulum fidei … 24. The bishop fastens on the consecrand's head a crown or ... Challenge to his acoustic authority, in essence, was a challenge to the ..."
+    },
+    {
+      "title": "Conference of the Hungarian Society for the Study of English",
+      "url": "https://www.eltereader.hu/media/2014/12/HUSSE_Proceedings_of_the_Hungarian_Society_for_the_Study_of_English_2013_Conference.pdf",
+      "snippet": "... challenge the official representation of the city by cutting across ... model” wished to separate high and low culture also in terms of religious ..."
+    },
+    {
+      "title": "Interfaces: A Journal of Medieval European Literatures - AIR Unimi",
+      "url": "https://air.unimi.it/retrieve/dfa8b997-eb18-748b-e053-3a05fe0a3a96/8354-24857-1-PB.pdf",
+      "snippet": "In this latter sphere Bar- toli observes the parallel elaboration of a specific literature of love letters, rich in models, types, and characters (both ..."
+    }
+  ]
+}

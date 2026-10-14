@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "qnguyen3/QUAN-Transcribe-1.0",
+  "slug": "qnguyen3-quan-transcribe-1-0",
+  "author": "qnguyen3",
+  "url": "https://huggingface.co/qnguyen3/QUAN-Transcribe-1.0",
+  "created_at": "2026-10-14T01:58:15.000Z",
+  "updated_at": "2026-10-14T03:59:50.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "safetensors",
+    "ctc",
+    "vietnamese",
+    "streaming",
+    "embeddinggemma",
+    "automatic-speech-recognition",
+    "vi",
+    "base_model:google/embeddinggemma-2",
+    "base_model:finetune:google/embeddinggemma-2",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 37,
+  "downloads_30d": 33,
+  "trending_score": 35,
+  "parameters": 101738068,
+  "parameters_human": "101.7M",
+  "storage_bytes": 1718961616,
+  "storage_human": "1.7 GB",
+  "base_model": "google/embeddinggemma-2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/question/418311339",
+      "snippet": "测试硬盘速度使用DiskMark(也叫CDM) 选择5次跑1G的数据.点击All.等待几分钟就好了. 主要看第1项顺序读写和第3项4K随机读写. …"
+    },
+    {
+      "title": "3d hentai - 知乎",
+      "url": "https://www.zhihu.com/topic/20093610/hot",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "有哪些经典的成人题材PC游戏？ - 知乎",
+      "url": "https://www.zhihu.com/question/23969159",
+      "snippet": "May 30, 2014 · 在故事里美丽的女性并非是我们幻想的那样纯洁无暇，兰斯解放陷落的利萨斯之后遇到了他曾经照顾过的女性，酒吧女 …"
+    },
+    {
+      "title": "有哪些可以看3D漫画的网站? - 知乎",
+      "url": "https://www.zhihu.com/question/325671170",
+      "snippet": "腾讯动漫和爱奇艺动漫都拥有海量的3D漫画资源，满足不同年龄段、不同口味的读者。 优酷动漫则专注于3D动画的制作和发布，拥有 …"
+    },
+    {
+      "title": "GitHub - gokayfem/awesome-vlm-architectures: Curated visual ...",
+      "url": "https://github.com/gokayfem/awesome-vlm-architectures",
+      "snippet": "Use this repository to compare multimodal model families, trace architectural ideas over time, or retrieve grounded references for research and AI-agent ..."
+    }
+  ]
+}

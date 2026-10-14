@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "CompassioninMachineLearning/olmo-urban-web-seed3407-CPT-best",
+  "slug": "compassioninmachinelearning-olmo-urban-web-seed3407-cpt-best",
+  "author": "CompassioninMachineLearning",
+  "url": "https://huggingface.co/CompassioninMachineLearning/olmo-urban-web-seed3407-CPT-best",
+  "created_at": "2026-10-14T01:38:20.000Z",
+  "updated_at": "2026-10-14T01:38:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "olmo3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": 7298011136,
+  "parameters_human": "7.30B",
+  "storage_bytes": 14596063712,
+  "storage_human": "14.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CompassioninMachineLearning/olmo-urban-part1 · Hugging Face",
+      "url": "https://huggingface.co/CompassioninMachineLearning/olmo-urban-part1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CompassioninMachineLearning/Olmo7b-urban-seed2-20261012-CPT-best-val ...",
+      "url": "https://huggingface.co/CompassioninMachineLearning/Olmo7b-urban-seed2-20261012-CPT-best-val-step-750",
+      "snippet": "Qwen and OLMo Urban controls, seed 2. 10,072 unique rows + 2,000 replay; selection seed 3407. Best-val exports, epoch exports, checkpoints.•8 items•Updated about 3 hours ago"
+    },
+    {
+      "title": "Olmo from Ai2 - AllenAI",
+      "url": "https://allenai.org/olmo",
+      "snippet": "The fully open mixture used to train Olmo from scratch—curated web, code, books, and scientific text—deduplicated and quality-filtered."
+    },
+    {
+      "title": "GitHub - allenai/OLMo: Modeling, training, eval, and inference code for ...",
+      "url": "https://github.com/allenai/OLMo",
+      "snippet": "OLMo is a repository for training and using AI2&#x27;s state-of-the-art open language models. It is designed by scientists, for scientists."
+    },
+    {
+      "title": "olmo-urban-part1 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/CompassioninMachineLearning/olmo-urban-part1",
+      "snippet": "Run olmo-urban-part1 with FriendliAI inference. This olmo3 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    }
+  ]
+}

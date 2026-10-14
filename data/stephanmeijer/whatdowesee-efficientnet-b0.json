@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "StephanMeijer/WhatDoWeSee-EfficientNet-B0",
+  "slug": "stephanmeijer-whatdowesee-efficientnet-b0",
+  "author": "StephanMeijer",
+  "url": "https://huggingface.co/StephanMeijer/WhatDoWeSee-EfficientNet-B0",
+  "created_at": "2026-10-14T15:45:40.000Z",
+  "updated_at": "2026-10-14T16:44:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "multi-label",
+    "image-attributes",
+    "efficientnet",
+    "image-classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 33265678,
+  "storage_human": "33 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

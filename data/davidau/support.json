@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "DavidAU/support",
+  "slug": "davidau-support",
+  "author": "DavidAU",
+  "url": "https://huggingface.co/DavidAU/support",
+  "created_at": "2026-10-07T23:54:51.000Z",
+  "updated_at": "2026-10-14T05:45:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "sponsor",
+    "buy me a coffee",
+    "projects",
+    "help",
+    "support",
+    "contact",
+    "partners",
+    "ggufs",
+    "moes",
+    "mixture of experts",
+    "source",
+    "custom",
+    "models by sort",
+    "FAQs",
+    "help docs",
+    "SOTA models",
+    "about us",
+    "Turbo Brilliance Systems",
+    "NEO Imatrix",
+    "source code",
+    "Brainstorm Adapter",
+    "Cold Fusion Training",
+    "Model merging",
+    "model tuning",
+    "unsloth",
+    "mergekit",
+    "llamacpp",
+    "any-to-any",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 14,
+  "downloads_30d": 0,
+  "trending_score": 14,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23090907,
+  "storage_human": "23 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DavidAU/support · Hugging Face",
+      "url": "https://huggingface.co/DavidAU/support",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "support by DavidAU | AI Market Cap",
+      "url": "https://aimarketcap.tech/models/davidau-support",
+      "snippet": "Explore support by DavidAU — benchmark coverage where available, pricing, and comparisons on AI Market Cap."
+    },
+    {
+      "title": "DavidAU/support · Discussions - Hugging Face",
+      "url": "https://huggingface.co/DavidAU/support/discussions",
+      "snippet": "DavidAU / support Like 0 Any-to-Any Transformers English sponsor buy me a coffee projects help support contact partners ggufs moes mixture of experts source custom License:apache-2.0 Model card FilesFiles and versions xet Community 1 Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "DaVita Algorithm Flags Issues With Home Dialysis Patients",
+      "url": "https://www.hcinnovationgroup.com/analytics-ai/artifical-intelligence-machine-learning/article/55370794/davita-algorithm-flags-issues-with-home-dialysis-patients",
+      "snippet": "As with all things in machine learning and AI, we will continue to iterate on this. But this model flags patients who are in the riskiest 10% and we know that if we do nothing for those patients, they are significantly more likely to fail at doing home dialysis and return to in-center hemodialysis."
+    },
+    {
+      "title": "Davidau - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/DavidAU",
+      "snippet": "Looking for Davidau&#x27;s top AI models? Browse their full Hugging Face collection of 70 models. Explore AI models and contributions by Davidau on Huggingface."
+    }
+  ]
+}

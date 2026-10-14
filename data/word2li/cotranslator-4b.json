@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Word2Li/CoTranslator-4B",
+  "slug": "word2li-cotranslator-4b",
+  "author": "Word2Li",
+  "url": "https://huggingface.co/Word2Li/CoTranslator-4B",
+  "created_at": "2026-10-14T15:35:55.000Z",
+  "updated_at": "2026-10-14T15:38:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "cotranslator",
+    "reasoning-distillation",
+    "chain-of-thought",
+    "math",
+    "supervised-fine-tuning",
+    "conversational",
+    "en",
+    "dataset:Word2Li/CoTranslator-Nemotron-SFT-Math-v4-Pairs",
+    "base_model:Qwen/Qwen3-4B-Thinking-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Thinking-2507",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056877025,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen3-4B-Thinking-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

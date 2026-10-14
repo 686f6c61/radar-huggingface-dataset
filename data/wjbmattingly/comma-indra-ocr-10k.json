@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "wjbmattingly/comma-indra-ocr-10k",
+  "slug": "wjbmattingly-comma-indra-ocr-10k",
+  "author": "wjbmattingly",
+  "url": "https://huggingface.co/wjbmattingly/comma-indra-ocr-10k",
+  "created_at": "2026-10-14T16:15:03.000Z",
+  "updated_at": "2026-10-14T16:15:12.000Z",
+  "license": "openrail-m-modified-datalab",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": null,
+  "languages": [
+    "la"
+  ],
+  "tags": [
+    "onnx",
+    "ocr",
+    "htr",
+    "handwritten-text-recognition",
+    "cultural-heritage",
+    "ctc",
+    "catmus",
+    "medieval-latin",
+    "manuscripts",
+    "palaeography",
+    "digital-humanities",
+    "image-to-text",
+    "la",
+    "dataset:comma-project/deep-jsonl",
+    "base_model:datalab-to/indra-ocr",
+    "base_model:quantized:datalab-to/indra-ocr",
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18185059,
+  "storage_human": "18 MB",
+  "base_model": "datalab-to/indra-ocr",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NVIDIA图形驱动程序安装失败怎么解决? - 知乎",
+      "url": "https://www.zhihu.com/question/29570400",
+      "snippet": "一定会有众多网友，饱受无法更新NVIDIA驱动的困扰；你们一定也很奇怪，我凭实力从正规渠道购买的NVIDIA板卡，凭什么无法及时 …"
+    },
+    {
+      "title": "小米的 Nvidia Tegra4 和高通骁龙 800， 哪个更强？ - 知乎",
+      "url": "https://www.zhihu.com/question/21602721",
+      "snippet": "- 另一方面很多游戏会专门为nvidia的芯片做出特别的优化，而Opengl 3毕竟是个遥遥无期的事情，作为一个不甚标准的android，miui …"
+    },
+    {
+      "title": "NVIDIA显卡性能怎么设置最佳 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/64d05a0217d45ede55f73b90.html",
+      "snippet": "Mar 4, 2018 · NVIDIA显卡性能怎么设置最佳,时而感觉电脑卡的异常无比，包括玩娱游玩画面感丝毫不清晰了然，略显粗糙，根本不能 …"
+    },
+    {
+      "title": "怎么让软件使用独立显卡，NVIDIA显卡设置 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/7082dc1c1f5561e40b89bd77.html",
+      "snippet": "Sep 6, 2016 · 怎么让软件使用独立显卡，NVIDIA显卡设置,当我们玩游戏，办公，编程的时候发现电脑好卡，怎么办了，难道是要听天 …"
+    },
+    {
+      "title": "NVIDIA GeForce Forums",
+      "url": "https://forums.geforce.com/",
+      "snippet": "Join the GeForce community. Browse categories, post your questions, or just chat with other members."
+    }
+  ]
+}

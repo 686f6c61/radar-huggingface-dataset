@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Ziyaad30/krea2_reference_blocks",
+  "slug": "ziyaad30-krea2_reference_blocks",
+  "author": "Ziyaad30",
+  "url": "https://huggingface.co/Ziyaad30/krea2_reference_blocks",
+  "created_at": "2026-10-14T15:39:25.000Z",
+  "updated_at": "2026-10-14T15:39:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "image-to-image",
+    "reference-image",
+    "modular-diffusers",
+    "diffusion",
+    "krea",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:finetune:krea/Krea-2-Turbo",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Preamble | Resources - U.S. Constitution",
+      "url": "https://constitution.congress.gov/constitution/preamble/",
+      "snippet": "The original text of The Preamble of the Constitution of the United States."
+    },
+    {
+      "title": "Preamble to the United States Constitution - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Preamble_to_the_United_States_Constitution",
+      "snippet": "The Preamble to the United States Constitution, beginning with the words \" We the People \", is a brief introductory statement of the …"
+    },
+    {
+      "title": "constitution_pdf2",
+      "url": "https://constitutioncenter.org/media/files/constitution.pdf",
+      "snippet": "When the President of the United States is tried, the Chief Justice shall preside: And no Person shall be convicted without the …"
+    },
+    {
+      "title": "Preamble CONSTITUTION OF THE UNITED STATES OF AMERICA",
+      "url": "https://www.ilga.gov/documents/commission/lrb/Preamble.htm",
+      "snippet": "(PREAMBLE) We the People of the United States, in Order to form a more perfect Union, establish Justice, insure domestic …"
+    },
+    {
+      "title": "Preamble - We the People | Constitution Center",
+      "url": "https://constitutioncenter.org/the-constitution/preamble",
+      "snippet": "Explore the Preamble of the U.S. Constitution, outlining goals like justice, tranquility, defense, welfare, and liberty for all Americans."
+    }
+  ]
+}

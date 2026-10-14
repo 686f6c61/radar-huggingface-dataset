@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "zhiyuantechnology/sona-privacy",
+  "slug": "zhiyuantechnology-sona-privacy",
+  "author": "zhiyuantechnology",
+  "url": "https://huggingface.co/zhiyuantechnology/sona-privacy",
+  "created_at": "2026-10-14T02:07:17.000Z",
+  "updated_at": "2026-10-14T14:43:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "sona-ai",
+    "medical",
+    "base_model:OpenMed/OpenMed-PII-mClinicalE5-Large-560M-v1",
+    "base_model:finetune:OpenMed/OpenMed-PII-mClinicalE5-Large-560M-v1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 558949482,
+  "parameters_human": "558.9M",
+  "storage_bytes": 2257998347,
+  "storage_human": "2.3 GB",
+  "base_model": "OpenMed/OpenMed-PII-mClinicalE5-Large-560M-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zhiyuantechnology/sona-privacy · Hugging Face",
+      "url": "https://huggingface.co/zhiyuantechnology/sona-privacy",
+      "snippet": "zhiyuantechnology / sona-privacy Like 0 Follow ZHIYUAN TECHNOLOGY 1 Safetensors xlm-roberta sona-ai medical License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "GitHub - JoasASantos/Offensive-Security-AI-Models: Uncensored AI models ...",
+      "url": "https://github.com/JoasASantos/Offensive-Security-AI-Models",
+      "snippet": "Uncensored LLMs for Offensive Security Curated list of open-weight uncensored models for authorized red team operations, penetration testing, and security research. All data sourced from HuggingFace model cards and official publications. Sep 2026."
+    },
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "Zia LLM: Powerful, private, and proprietary. - Zoho",
+      "url": "https://www.zoho.com/zia/llm/",
+      "snippet": "Zia LLM is Zoho&#x27;s in-house large language model—built from scratch, trained on open datasets, and hosted on private infrastructure. It delivers enterprise-grade performance with full control, unmatched privacy, and zero data compromise."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, DeepSeek, Qwen, Mistral, Z.ai, Meta, and important open-weight model families."
+    }
+  ]
+}

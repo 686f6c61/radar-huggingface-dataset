@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "zhaodillon/tinygpt-train-001pct",
+  "slug": "zhaodillon-tinygpt-train-001pct",
+  "author": "zhaodillon",
+  "url": "https://huggingface.co/zhaodillon/tinygpt-train-001pct",
+  "created_at": "2026-10-14T02:36:14.000Z",
+  "updated_at": "2026-10-14T02:36:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "gpt2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 107183484,
+  "storage_human": "107 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zhaodillon/tinygpt-train-001pct · Hugging Face",
+      "url": "https://huggingface.co/zhaodillon/tinygpt-train-001pct",
+      "snippet": "zhaodillon / tinygpt-train-001pct Like 0 ONNX gpt2 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "zhaodillon (Dillon Zhao) - Hugging Face",
+      "url": "https://huggingface.co/zhaodillon",
+      "snippet": "Recent Activity updated a modelabout 1 hour ago zhaodillon/tinygpt-train-030pct published a modelabout 1 hour ago zhaodillon/tinygpt-train-030pct updated a modelabout 1 hour ago zhaodillon/tinygpt-train-010pct View all activity"
+    },
+    {
+      "title": "TinyGPT",
+      "url": "https://tinygpt.org/",
+      "snippet": "This compares desktop use. TinyGPT searches and opens pages from your device without an API key or separate search setup; the search provider and websites still receive normal web requests. Ollama and LM Studio need a model download before offline use. LM Studio Bionic is a separate app. Competitor information checked September 2026."
+    },
+    {
+      "title": "tinyGPT | AI Lab",
+      "url": "https://ai-lab-bice.vercel.app/projects/tinygpt",
+      "snippet": "What It Does tinyGPT is a character-level GPT. You point it at your own text and PDF files, it builds a tokenizer over those characters, trains on the material, and then generates text in the same style — a small, personal language model that never leaves your machine."
+    },
+    {
+      "title": "GitHub - p3nGu1nZz/tinyGPT: A minimal PyTorch re-implementation of the ...",
+      "url": "https://github.com/p3nGu1nZz/tinyGPT",
+      "snippet": "The core minGPT \"library\" (hah) is two files: mingpt/model.py contains the actual Transformer model definition and mingpt/trainer.py is (GPT-independent) PyTorch boilerplate that trains the model. The attached Jupyter notebooks then show how the \"library\" (hah) can be used to train sequence models:"
+    }
+  ]
+}

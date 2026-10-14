@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "sunyoungKim/connectailab-rl-lco-v4-teacher",
+  "slug": "sunyoungkim-connectailab-rl-lco-v4-teacher",
+  "author": "sunyoungKim",
+  "url": "https://huggingface.co/sunyoungKim/connectailab-rl-lco-v4-teacher",
+  "created_at": "2026-10-14T02:35:16.000Z",
+  "updated_at": "2026-10-14T02:37:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "numpy",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "numpy",
+    "connect-ai-lab",
+    "deep-reinforcement-learning",
+    "gymnasium",
+    "connect-company",
+    "connect-tycoon",
+    "jev",
+    "jev-style",
+    "reinforcement-learning",
+    "ppo",
+    "decision-making",
+    "prefrontal-cortex",
+    "korean",
+    "ko",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sunyoungKim (kim sun young) - Hugging Face",
+      "url": "https://huggingface.co/sunyoungKim/models",
+      "snippet": "sunyoungKim/connectailab-rl-lco-v4-teacher Reinforcement Learning •Updated 14 minutes ago"
+    },
+    {
+      "title": "sunyoungKim/connectailab-rl-lco-v5-teacher · Hugging Face",
+      "url": "https://huggingface.co/sunyoungKim/connectailab-rl-lco-v5-teacher",
+      "snippet": "sunyoungKim / connectailab-rl-lco-v5-teacher Like 0 Reinforcement Learning jev-style Korean numpy connect-ai-lab deep-reinforcement-learning gymnasium connect-company connect-tycoon jev ppo decision-making prefrontal-cortex korean License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "CONNECT AI LAB - YouTube",
+      "url": "https://www.youtube.com/@CONNECT-AI-LAB",
+      "snippet": "Transforming Lives Through AI Education. I&#x27;m Jay, your AI mentor. Learn AI, build real projects, and put your skills to work. Hands-on lessons primarily in Korean. Learn AI foundations, build ..."
+    },
+    {
+      "title": "Training | ai4co/rl4co | DeepWiki",
+      "url": "https://deepwiki.com/ai4co/rl4co/5-training",
+      "snippet": "This document provides a comprehensive overview of the training system in RL4CO. It explains how models are trained using reinforcement learning algorithms, the architecture of the training framework, and how to configure and customize training processes. For information about evaluation and testing trained models, see Evaluation."
+    },
+    {
+      "title": "New Environment: Creating and Modeling - RL4CO",
+      "url": "http://rl4co.ai4co.org/examples/3-creating-new-env-model/",
+      "snippet": "Problem: TSP We will build an environment and model for the Traveling Salesman Problem (TSP). The TSP is a well-known combinatorial optimization problem that consists of finding the shortest route that visits each city in a given list exactly once and returns to the origin city. The TSP is NP-hard, and it is one of the most studied problems in combinatorial optimization."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "zhengfe/2026-10-40-single-action-smolvla",
+  "slug": "zhengfe-2026-10-40-single-action-smolvla",
+  "author": "zhengfe",
+  "url": "https://huggingface.co/zhengfe/2026-10-40-single-action-smolvla",
+  "created_at": "2026-10-14T01:54:04.000Z",
+  "updated_at": "2026-10-14T01:55:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "vision-language-action",
+    "agibot-g2",
+    "imitation-learning",
+    "robotics",
+    "single-action",
+    "en",
+    "zh",
+    "dataset:zhengfe/2026-10-40-single-action",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 2936882018,
+  "storage_human": "2.9 GB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zhengfe/2026-10-40-single-action-smolvla · Hugging Face",
+      "url": "https://huggingface.co/zhengfe/2026-10-40-single-action-smolvla",
+      "snippet": "Instructions to use zhengfe/2026-10-40-single-action-smolvla with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use zhengfe/2026-10-40-single-action-smolvla with LeRobot:"
+    },
+    {
+      "title": "[2506.01844] SmolVLA: A Vision-Language-Action Model for Affordable and ...",
+      "url": "https://arxiv.org/abs/2506.01844",
+      "snippet": "Vision-language models (VLMs) pretrained on large-scale multimodal datasets encode rich visual and linguistic knowledge, making them a strong foundation for robotics. Rather than training robotic policies from scratch, recent approaches adapt VLMs into vision-language-action (VLA) models that enable natural language-driven perception and control. However, existing VLAs are typically massive ..."
+    },
+    {
+      "title": "SmolVLA: A Vision-Language-Action Model for Affordable and Efficient ...",
+      "url": "https://kendrick-stein.github.io/MCISLAB_DeepRead/Papers/2506-SmolVLA",
+      "snippet": "Summary SmolVLA: A Vision-Language-Action Model for Affordable and Efficient Robotics 核心: 一个 450M 参数的 VLA，仅在 ~23K 条 community-collected episodes 上预训练，性能可与 ~10× 更大的 VLA（如 π0-3.3B）持平甚至更好；同时提出 async inference stack 把 real-world 控制提速 ~30%。 方法: SmolVLM-2 backbone（冻结）+ flow-matching action expert ..."
+    },
+    {
+      "title": "SmolVLA: A vision-language-action model for affordable and efficient ...",
+      "url": "https://arxiv.org/html/2506.01844v1",
+      "snippet": "$π0$: one initialized from a vision-language model (Paligemma-3B), and another further pretrained on robotics datasets (intitialized from the weights released by the authors). Despite not being pretrained on robotics data, SmolVLA consistently outperforms the VLM-initialized π 0 $π0$ and performs competitively with the robotics-pretrained ..."
+    },
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    }
+  ]
+}

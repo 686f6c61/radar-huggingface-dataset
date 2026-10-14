@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/K2-Horizon-7B-i1-GGUF",
+  "slug": "mradermacher-k2-horizon-7b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/K2-Horizon-7B-i1-GGUF",
+  "created_at": "2026-10-14T02:38:30.000Z",
+  "updated_at": "2026-10-14T11:33:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "k2-horizon",
+    "7b",
+    "dense",
+    "open-weights",
+    "ifm",
+    "en",
+    "dataset:IFM/K2-Horizon-Pretrain-Data",
+    "dataset:IFM/K2-Horizon-Midtrain-Data",
+    "base_model:IFM/K2-Horizon-7B",
+    "base_model:quantized:IFM/K2-Horizon-7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 8999178240,
+  "parameters_human": "9.00B",
+  "storage_bytes": 108714036096,
+  "storage_human": "108.7 GB",
+  "base_model": "IFM/K2-Horizon-7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/K2-Horizon-7B-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/K2-Horizon-7B-i1-GGUF",
+      "snippet": "mradermacher / K2-Horizon-7B-i1-GGUF Like 0 Transformers GGUF IFM/K2-Horizon-Pretrain-Data IFM/K2-Horizon-Midtrain-Data English k2-horizon 7b dense open-weights ifm License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher/K2-Horizon-7B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/K2-Horizon-7B-GGUF",
+      "snippet": "mradermacher / K2-Horizon-7B-GGUF Like 0 Transformers GGUF IFM/K2-Horizon-Pretrain-Data IFM/K2-Horizon-Midtrain-Data English k2-horizon 7b dense open-weights ifm conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "K2 Horizon 7b - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/k2-horizon-7b.html",
+      "snippet": "Download K2 Horizon 7b GGUF model. 14.7 GB, 30,000 downloads, 76 likes."
+    },
+    {
+      "title": "K2-Horizon-7B-GGUF · Models",
+      "url": "https://www.modelscope.cn/models/IFM/K2-Horizon-7B-GGUF",
+      "snippet": "K2-Horizon-7B is the medium dense member of the K2-Horizon family: a 7B-core decoder-only model with a 512K context window. K2-Horizon-7B Highlights Strong dense baseline. A 7B-class dense model evaluated across agentic, coding, long-context, and reasoning benchmarks. 512K context. Native 524,288-token context from the midtraining stages onward. Intermediate checkpoints. Intermediate ..."
+    },
+    {
+      "title": "K2 Horizon 7B: specs and benchmarks | AI/TLDR",
+      "url": "https://ai-tldr.dev/models/k2-horizon-7b/",
+      "snippet": "K2 Horizon 7B is IFM&#x27;s Apache-2.0 dense model released 3 September 2026: 7B parameters, a 512K context window, single-GPU serving and a published training record."
+    }
+  ]
+}

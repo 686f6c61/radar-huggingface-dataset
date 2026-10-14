@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "liorbenhorin-nv/so101_vision_dr_i5_GR00T17_20261013",
+  "slug": "liorbenhorin-nv-so101_vision_dr_i5_gr00t17_20261013",
+  "author": "liorbenhorin-nv",
+  "url": "https://huggingface.co/liorbenhorin-nv/so101_vision_dr_i5_GR00T17_20261013",
+  "created_at": "2026-10-14T02:13:37.000Z",
+  "updated_at": "2026-10-14T06:11:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "so101",
+    "groot",
+    "dataset:sreetz-nv/so101_sim_manual_perception_newton_20261008",
+    "dataset:sreetz-nv/so101_real_manual",
+    "dataset:liorbenhorin-nv/so101_vials_procedural_all_125ep_20261013",
+    "base_model:nvidia/GR00T-N1.7-3B",
+    "base_model:finetune:nvidia/GR00T-N1.7-3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576219216,
+  "storage_human": "12.6 GB",
+  "base_model": "nvidia/GR00T-N1.7-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "liorbenhorin-nv/so101_vision_dr_i5_GR00T17_20261013 · Hugging Face",
+      "url": "https://huggingface.co/liorbenhorin-nv/so101_vision_dr_i5_GR00T17_20261013",
+      "snippet": "Instructions to use liorbenhorin-nv/so101_vision_dr_i5_GR00T17_20261013 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "liorbenhorin-nv (lior ben horin) - Hugging Face",
+      "url": "https://huggingface.co/liorbenhorin-nv",
+      "snippet": "Robotics liorbenhorin-nv/pi-sim-rock-a-stack-hard-narrow-policy_bs32_30000"
+    },
+    {
+      "title": "liorbenhorin (Lior Ben Horin) · GitHub",
+      "url": "https://github.com/liorbenhorin",
+      "snippet": "NVIDIA Robotics. liorbenhorin has 38 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Train an SO-101 Robot From Sim-to-Real With NVIDIA Isaac",
+      "url": "https://docs.nvidia.com/learning/physical-ai/sim-to-real-so-101/latest/index.html",
+      "snippet": "You&#x27;ll train and deploy a vision-language-action (VLA) model to perform unstructured pick-and-place of centrifuge vials into a rack using an SO-101 robot arm - first in sim, where we can iterate quickly and validate behavior, then in reality."
+    },
+    {
+      "title": "Sim-to-Real-SO-101-Workshop - GitHub",
+      "url": "https://github.com/isaac-sim/Sim-to-Real-SO-101-Workshop",
+      "snippet": "Welcome to this workshop on sim-to-real transfer for the SO-101 robot! This repository contains the assets and code to accompany this learning content. The rest of this README will help you setup the environment and ensure everything is installed correctly. You can also use this repo as a basis for trying out your own tasks."
+    }
+  ]
+}

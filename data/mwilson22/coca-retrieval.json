@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mwilson22/coca-retrieval",
+  "slug": "mwilson22-coca-retrieval",
+  "author": "mwilson22",
+  "url": "https://huggingface.co/mwilson22/coca-retrieval",
+  "created_at": "2026-10-14T01:56:49.000Z",
+  "updated_at": "2026-10-14T01:56:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mwilson22/coca-retrieval · Hugging Face",
+      "url": "https://huggingface.co/mwilson22/coca-retrieval",
+      "snippet": "Overview This repository is a compact, custom PyTorch implementation of Coca for Retrieval. The giant configuration is intended for code review, smoke tests, and small controlled experiments rather than as a production-ready pretrained release."
+    },
+    {
+      "title": "mwilson22/retrieval · Hugging Face",
+      "url": "https://huggingface.co/mwilson22/retrieval",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CoCa: Contrastive Captioners are Image-Text Foundation Models",
+      "url": "https://arxiv.org/abs/2205.01917",
+      "snippet": "Exploring large-scale pretrained foundation models is of significant interest in computer vision because these models can be quickly transferred to many downstream tasks. This paper presents Contrastive Captioner (CoCa), a minimalist design to pretrain an image-text encoder-decoder foundation model jointly with contrastive loss and captioning loss, thereby subsuming model capabilities from ..."
+    },
+    {
+      "title": "GitHub - lucidrains/CoCa-pytorch: Implementation of CoCa, Contrastive ...",
+      "url": "https://github.com/lucidrains/CoCa-pytorch",
+      "snippet": "Implementation of CoCa, Contrastive Captioners are Image-Text Foundation Models, in Pytorch. They were able to elegantly fit in contrastive learning to a conventional encoder / decoder (image to text) transformer, achieving SOTA 91.0% top-1 accuracy on ImageNet with a finetuned encoder."
+    },
+    {
+      "title": "[2608.05149] CoCo-IR: Contextual Composed Image Retrieval",
+      "url": "https://arxiv.org/abs/2608.05149",
+      "snippet": "To overcome this limitation, we introduce Contextual Composed Image Retrieval (CoCo-IR), a novel task that enables users to progressively refine search results through interactions. We address this new task by proposing a new model based on a Large Multimodal Model (LMM) that functions as a context-aware reasoner for CoCo-IR."
+    }
+  ]
+}

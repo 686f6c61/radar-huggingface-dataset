@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "PlantNet/vit_base_patch14_reg4_dinov2_lvd142m.pc24_all",
+  "slug": "plantnet-vit_base_patch14_reg4_dinov2_lvd142m-pc24_all",
+  "author": "PlantNet",
+  "url": "https://huggingface.co/PlantNet/vit_base_patch14_reg4_dinov2_lvd142m.pc24_all",
+  "created_at": "2026-10-14T15:56:33.000Z",
+  "updated_at": "2026-10-14T16:15:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "image-classification",
+    "dinov2",
+    "biology",
+    "plantclef",
+    "plantnet",
+    "south western Europe (France, Portugal, Spain)",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1481641544,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accueil - Pl@ntNet",
+      "url": "https://plantnet.org/",
+      "snippet": "Avec l'application Pl@ntNet, identifiez une plante à partir d'une photo, et rejoignez un projet de sciences participatives sur la …"
+    },
+    {
+      "title": "Pl@ntNet identify",
+      "url": "https://identify.plantnet.org/fr",
+      "snippet": "Pl@ntnet est un outil pour vous aider à identifier des plantes à partir d'images."
+    },
+    {
+      "title": "Home - Pl@ntNet",
+      "url": "https://plantnet.org/en/",
+      "snippet": "With the Pl@ntNet app, identify one plant from a picture, and be part of a citizen science project on plant biodiversity"
+    },
+    {
+      "title": "Commencer | Pl@ntNet doc - docs.plantnet.org",
+      "url": "https://docs.plantnet.org/fr/get-started/",
+      "snippet": "Pl@ntNet : identifiez des plantes facilement via l'appli mobile (Android & iOS) ou le web. Créez un compte, activez la géolocalisation, …"
+    },
+    {
+      "title": "Installer Pl@ntNet | Pl@ntNet doc - docs.plantnet.org",
+      "url": "https://docs.plantnet.org/fr/tutorials/install-plantnet/",
+      "snippet": "Découvrez comment installer Pl@ntNet sur Android, iOS ou utiliser la version web. Suivez notre guide pour créer un compte, activer …"
+    }
+  ]
+}

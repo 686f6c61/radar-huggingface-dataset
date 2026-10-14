@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "at237299966/fm_dit_insert_flowers",
+  "slug": "at237299966-fm_dit_insert_flowers",
+  "author": "at237299966",
+  "url": "https://huggingface.co/at237299966/fm_dit_insert_flowers",
+  "created_at": "2026-10-14T02:25:26.000Z",
+  "updated_at": "2026-10-14T02:27:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "robotics",
+    "imitation-learning",
+    "flow-matching",
+    "r1lite",
+    "dataset:at237299966/r1lite_insert_flower_single",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4444862758,
+  "storage_human": "4.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "at237299966/fm_dit_insert_flowers at main - Hugging Face",
+      "url": "https://huggingface.co/at237299966/fm_dit_insert_flowers/tree/main",
+      "snippet": "xet Community Copy to bucket new main fm_dit_insert_flowers 4.45 GB Ctrl+K Ctrl+K 1 contributor History:2 commits at237299966 fm_dit (R1 Lite insert flower): 300-epoch run, checkpoints every 50 epochs f5186a8 verifiedabout 7 hours ago checkpointsfm_dit (R1 Lite insert flower): 300-epoch run, checkpoints every 50 epochsabout 7 hours ago"
+    },
+    {
+      "title": "at237299966/r1lite_insert_flower · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/at237299966/r1lite_insert_flower",
+      "snippet": "Datasets: at237299966 / r1lite_insert_flower Like 0 Modalities: Video Size: < 1K Libraries: Datasets Croissant Dataset card Data Studio FilesFiles and versions xet Community 1 Episodes Previewr1liteVisualizerOpen in visualizer 98 episodes·15 fps·4 cameras·1280×720 av1 Episodes No dataset card yet Copy to bucket new Use this dataset Downloads last month - Number of rows: 392 Total file size ..."
+    },
+    {
+      "title": "ZUO66/imagewam-r1lite-insert-flower · Hugging Face",
+      "url": "https://huggingface.co/ZUO66/imagewam-r1lite-insert-flower",
+      "snippet": "ImageWAM: R1Lite insert flower Final 20-epoch / step 11,440 inference checkpoint for the R1Lite right arm. This is a full fine-tune, not a LoRA adapter. It contains visual/action MoT weights and the trained proprio encoder, not optimizer or resumable state. No robot rollout success rate is claimed by this release."
+    },
+    {
+      "title": "ZUO66/imagewam-r1lite-insert-flower-single-epoch52 · Hugging Face",
+      "url": "https://huggingface.co/ZUO66/imagewam-r1lite-insert-flower-single-epoch52",
+      "snippet": "R1Lite single-flower insertion — epoch 52 Intermediate checkpoint, not the final 60-epoch model. No robot success rate or PSNR has been measured for this checkpoint."
+    },
+    {
+      "title": "Flower Framework",
+      "url": "https://flower.ai/docs/framework/index.html",
+      "snippet": "Flower Framework Documentation ¶ Welcome to Flower&#x27;s documentation. Flower is a friendly federated learning framework. Join the Flower Community ¶ The Flower Community is growing quickly - we&#x27;re a friendly group of researchers, engineers, students, professionals, academics, and other enthusiasts. Join us on Slack Flower Framework ¶ The user guide is targeted at researchers and ..."
+    }
+  ]
+}

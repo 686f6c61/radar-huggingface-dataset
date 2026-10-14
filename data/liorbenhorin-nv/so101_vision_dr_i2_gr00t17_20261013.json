@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "liorbenhorin-nv/so101_vision_dr_i2_GR00T17_20261013",
+  "slug": "liorbenhorin-nv-so101_vision_dr_i2_gr00t17_20261013",
+  "author": "liorbenhorin-nv",
+  "url": "https://huggingface.co/liorbenhorin-nv/so101_vision_dr_i2_GR00T17_20261013",
+  "created_at": "2026-10-14T01:34:21.000Z",
+  "updated_at": "2026-10-14T06:11:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "so101",
+    "groot",
+    "dataset:liorbenhorin-nv/so101_vials_procedural_left_125ep_20261013",
+    "base_model:nvidia/GR00T-N1.7-3B",
+    "base_model:finetune:nvidia/GR00T-N1.7-3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576219216,
+  "storage_human": "12.6 GB",
+  "base_model": "nvidia/GR00T-N1.7-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you.Read more"
+    },
+    {
+      "title": "Instagram - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Instagram",
+      "snippet": "Explanatory notes Legally as Instagram, LLC, registered in Delaware,[3] formerly as Instagram, Inc.,[4] often colloquially shortened …"
+    },
+    {
+      "title": "Instagram - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.instagram.android&hl=en-GB",
+      "snippet": "Share what you’re up to and into on Insta®. - Keep up with friends on the fly with Stories and Notes that disappear after 24 hours. - …"
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/?hl=fr",
+      "snippet": "Créez un compte ou connectez-vous à Instagram. Partagez ce que vous aimez avec les personnes qui ont les mêmes centres d’intérêt."
+    },
+    {
+      "title": "Instagram (@instagram) • Instagram photos and videos",
+      "url": "https://www.instagram.com/instagram/",
+      "snippet": "687M Followers, 308 Following, 8,618 Posts - Instagram (@instagram) on Instagram: \"Discover what's new on Instagram 🔎 \""
+    }
+  ]
+}

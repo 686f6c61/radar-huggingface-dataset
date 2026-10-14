@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "manojpanda/peta1",
+  "slug": "manojpanda-peta1",
+  "author": "manojpanda",
+  "url": "https://huggingface.co/manojpanda/peta1",
+  "created_at": "2026-10-14T02:19:52.000Z",
+  "updated_at": "2026-10-14T03:07:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "code",
+    "agent",
+    "grpo",
+    "reinforcement-learning",
+    "swe-bench",
+    "tree-of-reasoning",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:google/gemma-4-E4B-it",
+    "base_model:finetune:google/gemma-4-E4B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 115,
+  "trending_score": 0,
+  "parameters": 7941100832,
+  "parameters_human": "7.94B",
+  "storage_bytes": 15914642542,
+  "storage_human": "15.9 GB",
+  "base_model": "google/gemma-4-E4B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aol mail",
+      "url": "https://mail.aol.com/fr-fr/",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "AOL Mail",
+      "url": "https://mail.aol.com/",
+      "snippet": "Get AOL Mail for FREE! Manage your email like never before with travel, photo & document views. Personalize your inbox with …"
+    },
+    {
+      "title": "Sign in | AOL",
+      "url": "https://login.aol.com/",
+      "snippet": "Securely log in to your AOL account for access to email, news, and more."
+    },
+    {
+      "title": "Se connecter | AOL",
+      "url": "https://login.aol.com/?lang=fr-FR&intl=fr",
+      "snippet": "Connectez-vous pour accéder à Yahoo Mail, toujours plus performant : Yahoo Mail, actualités locales, nationales et internationales, …"
+    },
+    {
+      "title": "Sign in | AOL",
+      "url": "https://login.aol.com/?lang=en-gb&intl=us",
+      "snippet": "Sign in to access the best-in-class Yahoo Mail, breaking local, national and global news, finance, sports, music, movies... You get …"
+    }
+  ]
+}

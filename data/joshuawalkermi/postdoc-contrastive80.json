@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "joshuawalkermi/postdoc-contrastive80",
+  "slug": "joshuawalkermi-postdoc-contrastive80",
+  "author": "joshuawalkermi",
+  "url": "https://huggingface.co/joshuawalkermi/postdoc-contrastive80",
+  "created_at": "2026-10-14T02:26:02.000Z",
+  "updated_at": "2026-10-14T02:26:08.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Automated Extraction and Validation of Croissant Metadata for ML ...",
+      "url": "https://arxiv.org/html/2610.07132v1",
+      "snippet": "05.10.2026 ... Using this benchmark, we evaluate a range of extraction systems spanning frontier models, open-weight models, and agentic architectures, under a ..."
+    },
+    {
+      "title": "Generative and multimodal AI for materials prediction and design",
+      "url": "https://iopscience.iop.org/article/10.1088/2515-7639/ae93fd",
+      "snippet": "Generative and multimodal AI for materials prediction and design: progress, challenges, and perspectives, Liu, Xianyuan, Anjah, Charles, Jolly, Benjamin E, ..."
+    },
+    {
+      "title": "How Scientists Use Large Language Models to Program",
+      "url": "https://dl.acm.org/doi/10.1145/3706598.3713668",
+      "snippet": "Researchers were invited to complete a Google Forms survey about their research programming practices and experience with generative AI code tools in this ..."
+    },
+    {
+      "title": "Research Database - AIxBio Research Hub",
+      "url": "https://www.aixbiohub.com/research/",
+      "snippet": "Having access to frontier AI models improves performance on some written and _in silico_ tasks, but physical studies report effects that vary by task and ..."
+    },
+    {
+      "title": "Foundation Models in Robotics: Applications, Challenges, and the ...",
+      "url": "https://arxiv.org/html/2312.07843v1",
+      "snippet": "13.12.2023 ... Discriminative Models: Discriminative models are used for regression or classification tasks. In contrast to generative models, discriminative ..."
+    }
+  ]
+}

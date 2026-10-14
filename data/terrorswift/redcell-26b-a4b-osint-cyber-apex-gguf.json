@@ -5,7 +5,7 @@
   "author": "terrorswift",
   "url": "https://huggingface.co/terrorswift/REDCELL-26B-A4B-OSINT-Cyber-APEX-GGUF",
   "created_at": "2026-07-10T20:55:29.000Z",
-  "updated_at": "2026-10-13T08:00:21.000Z",
+  "updated_at": "2026-10-13T15:36:21.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -37,12 +37,12 @@
     "conversational"
   ],
   "likes": 72,
-  "downloads_30d": 9278,
+  "downloads_30d": 13073,
   "trending_score": 13,
   "parameters": 25233142046,
   "parameters_human": "25.23B",
-  "storage_bytes": 202093998441,
-  "storage_human": "202.1 GB",
+  "storage_bytes": 202555765257,
+  "storage_human": "202.6 GB",
   "base_model": "unsloth/gemma-4-26B-A4B-it",
   "formats": [
     "gguf"

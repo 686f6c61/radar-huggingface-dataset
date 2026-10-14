@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "maxffarrell/amos-1-medium-CoreAI",
+  "slug": "maxffarrell-amos-1-medium-coreai",
+  "author": "maxffarrell",
+  "url": "https://huggingface.co/maxffarrell/amos-1-medium-CoreAI",
+  "created_at": "2026-10-14T01:55:49.000Z",
+  "updated_at": "2026-10-14T02:07:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "coreai",
+    "core-ai",
+    "apple",
+    "aimodel",
+    "decisions",
+    "vision",
+    "base_model:mukaddamzaid/amos-1-medium",
+    "base_model:finetune:mukaddamzaid/amos-1-medium",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 34010847379,
+  "storage_human": "34.0 GB",
+  "base_model": "mukaddamzaid/amos-1-medium",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon.co.uk: Wicker Storage Baskets 25 X25cm",
+      "url": "https://www.amazon.co.uk/wicker-storage-baskets-25-x25cm/s?k=wicker+storage+baskets+25+x25cm",
+      "snippet": "33x25x22.5cm Storage Basket for Shelves, Closets and Living Spaces. Decorative Basket for Toys, Books and Small Items. Only 2 …"
+    },
+    {
+      "title": "Amazon.co.uk: 25cm Baskets",
+      "url": "https://www.amazon.co.uk/25cm-baskets/s?k=25cm+baskets",
+      "snippet": "25 x 25 x 25 cm, 15.6 L. Foldable cube storage box for clothes, toys and cube shelves."
+    },
+    {
+      "title": "Baskets | Zara Home United Kingdom",
+      "url": "https://www.zarahome.com/gb/home-decor-baskets-n997",
+      "snippet": "If a more robust appearance is required, baskets in bamboo, wicker, and rattan have a more solid aesthetic. On the other hand, if …"
+    },
+    {
+      "title": "ZARA France | Nouvelle Collection en ligne",
+      "url": "https://www.zara.com/fr/",
+      "snippet": "Tendances vêtements Femme, Homme et Enfants sur la boutique ZARA en ligne. Nouveautés, Mode, Collections et Lookbooks …"
+    },
+    {
+      "title": "Amazon.fr : Boite De Rangement Tissu 25x25x25",
+      "url": "https://www.amazon.fr/boite-de-rangement-tissu-25x25x25/s?k=boite+de+rangement+tissu+25x25x25",
+      "snippet": "Bagnizer Lot de 3 boîtes de rangement avec couvercle, pliables, en tissu, avec poignées pratiques, 25 x 20 x 15 cm, pour chambre à …"
+    }
+  ]
+}

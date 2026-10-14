@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "eateggs0989/eateggsAI-49.34M",
+  "slug": "eateggs0989-eateggsai-49-34m",
+  "author": "eateggs0989",
+  "url": "https://huggingface.co/eateggs0989/eateggsAI-49.34M",
+  "created_at": "2026-05-19T20:12:36.000Z",
+  "updated_at": "2026-10-14T18:54:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "text-generation",
+    "language-model",
+    "low-vram",
+    "SLM",
+    "from-scratch",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 531312303,
+  "storage_human": "531 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Calypso St. Barth",
+      "url": "https://calypsostbarth.com/",
+      "snippet": "How and where we make our products matters. We focus on quality, ethical business practices, and sustainability to ensure positive …"
+    },
+    {
+      "title": "Brand – Calypso",
+      "url": "https://calypso-label.com/pages/brand",
+      "snippet": "Calypso is a womenswear label that celebrates the essence of femininity through distinctive, expressive, and elevated collections. …"
+    },
+    {
+      "title": "Calypso Lemonade - The Taste of the Islands",
+      "url": "https://drinkcalypso.com/",
+      "snippet": "Calypso, the originator of the flavored lemonade category, has evolved from four lemonade blends into a dozen lemonade and …"
+    },
+    {
+      "title": "Calypso | Montres pour hommes et femmes | Site Officiel",
+      "url": "https://calypso-watch.com/fr-FR/montre",
+      "snippet": "Découvrez notre sélection de montres Calypso uniques et d'accessoires d'écriture originaux dans notre boutique en ligne officielle."
+    },
+    {
+      "title": "Calypso Watches | Montres modernes pour hommes et femmes",
+      "url": "https://calypso-watch.com/fr-FR",
+      "snippet": "Découvrez les montres Calypso : des montres jeunes et sportives avec des designs modernes, une technologie avancée et la …"
+    }
+  ]
+}

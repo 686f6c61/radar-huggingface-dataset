@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Ssinghpranav/notes-image-captioning-2024",
+  "slug": "ssinghpranav-notes-image-captioning-2024",
+  "author": "Ssinghpranav",
+  "url": "https://huggingface.co/Ssinghpranav/notes-image-captioning-2024",
+  "created_at": "2026-10-14T15:39:04.000Z",
+  "updated_at": "2026-10-14T15:39:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "image-captioning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Уговорил парень девушку на с…кс ... - Rutube",
+      "url": "https://rutube.ru/video/18fd8352cf6e71897b863b45d17e365a/",
+      "snippet": "Сборник Свежих Анекдотов! Новые Анекдоты! Юмор!» на канале «АНЕКДОТЫ ДО СЛЕЗ» в хорошем качестве и бесплатно, …"
+    },
+    {
+      "title": "Парень уговорил девушку, у которой месяч… Анекдоты лучшие …",
+      "url": "https://www.youtube.com/watch?v=zal_iO1MBTo",
+      "snippet": "Nov 28, 2024 · Парень уговорил девушку, у которой месяч… Анекдоты лучшие смешные Выпуск 2046 Anecdotes - the best, …"
+    },
+    {
+      "title": "Уговорил парень девушку на кекс... Смешной анекдот...",
+      "url": "https://rutube.ru/video/9f4eae312bb94af82ef1d6171b2e4417/",
+      "snippet": "Уговорил парень девушку на кекс... Смешной анекдот... #анекдоты #смешныеанекдоты #анекдотысмешные"
+    },
+    {
+      "title": "Парень уговорил девушку на ... - YouTube",
+      "url": "https://www.youtube.com/watch?v=pV1vAOkGBr0",
+      "snippet": "Jul 7, 2026 · Самые свежие анекдоты публикуем в нашем телеграм канале. Заходи, подписывайся, вот ссылка: …"
+    },
+    {
+      "title": "Дядя?))))Как ты уговорил Девушку?)))на первый раз?)))",
+      "url": "https://otvet.mail.ru/question/229983444",
+      "snippet": "Пользователь koshechka_russkaia написал пост «))))Дядя?))))Как ты уговорил Девушку?)))на первый раз?)))» и получил на …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "advanced-control/act_piper_piper_pickup_mark",
+  "slug": "advanced-control-act_piper_piper_pickup_mark",
+  "author": "advanced-control",
+  "url": "https://huggingface.co/advanced-control/act_piper_piper_pickup_mark",
+  "created_at": "2026-10-14T17:05:03.000Z",
+  "updated_at": "2026-10-14T17:05:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:advanced-control/piper_pickup_mark",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51670663,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206723444,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Advanced IP Scanner – Téléchargez un analyseur de réseau gratuit",
+      "url": "https://www.advanced-ip-scanner.com/fr/",
+      "snippet": "Advanced IP Scanner affiche tous les périphériques réseau, vous donne accès aux dossiers partagés et permet même d’éteindre …"
+    },
+    {
+      "title": "Advanced SystemCare Free, un logiciel gratuit pour nettoyer, d ... - IObit",
+      "url": "https://www.iobit.com/fr/advancedsystemcarefree.php",
+      "snippet": "Advanced SystemCare vous permet d’analyser et de nettoyer un grand nombre de fichiers indésirables, d’entrées de registres …"
+    },
+    {
+      "title": "IObit Advanced SystemCare 19 - Clubic",
+      "url": "https://www.clubic.com/telecharger-fiche403234-advanced-systemcare-free.html",
+      "snippet": "1 day ago · Advanced SystemCare Free est l’édition gratuite du logiciel. Elle donne accès au nettoyage et à l’optimisation de base …"
+    },
+    {
+      "title": "Advanced IP Scanner - Download Free Network Scanner",
+      "url": "https://www.advanced-ip-scanner.com/",
+      "snippet": "Advanced IP Scanner shows all network devices, gives you access to shared folders, and can even remotely switch computers off. …"
+    },
+    {
+      "title": "advanced - English-French Dictionary WordReference.com",
+      "url": "https://www.wordreference.com/enfr/advanced",
+      "snippet": "Dans les listes : PET Vocabulary List - A, 2020 Mar, Vocabulaire , Suite... Synonymes : highly-developed, exceptional, superior, high …"
+    }
+  ]
+}

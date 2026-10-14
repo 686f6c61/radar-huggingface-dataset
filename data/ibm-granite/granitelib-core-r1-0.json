@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "ibm-granite/granitelib-core-r1.0",
+  "slug": "ibm-granite-granitelib-core-r1-0",
+  "author": "ibm-granite",
+  "url": "https://huggingface.co/ibm-granite/granitelib-core-r1.0",
+  "created_at": "2025-12-10T00:16:06.000Z",
+  "updated_at": "2026-10-14T17:59:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "granite-library",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "granite-library",
+    "safetensors",
+    "granite",
+    "uncertainty",
+    "context-attribution",
+    "requirement-checking",
+    "lora",
+    "peft",
+    "text-generation",
+    "en",
+    "base_model:ibm-granite/granite-4.0-micro",
+    "base_model:adapter:ibm-granite/granite-4.0-micro",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 32,
+  "downloads_30d": 3122,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3215585829,
+  "storage_human": "3.2 GB",
+  "base_model": "ibm-granite/granite-4.0-micro, ibm-granite/granite-4.1-3b, ibm-granite/granite-4.1-8b, ibm-granite/granite-4.1-30b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IBM",
+      "url": "https://www.ibm.com/",
+      "snippet": "For more than a century, IBM has been a global technology innovator, leading advances in AI, automation and hybrid cloud solutions …"
+    },
+    {
+      "title": "IBM",
+      "url": "https://www.ibm.com/fr-fr",
+      "snippet": "Innovateur technologique mondial depuis plus d’un siècle, IBM est à la pointe d’avancées en matière de solutions d’IA, …"
+    },
+    {
+      "title": "IBM — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/IBM",
+      "snippet": "Les relations commerciales entre IBM et le régime hitlérien se sont poursuivies sans interruption face aux vastes appels …"
+    },
+    {
+      "title": "IBM - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/IBM",
+      "snippet": "IBM was founded in 1911 as the Computing-Tabulating-Recording Company (CTR), a holding company of manufacturers of record …"
+    },
+    {
+      "title": "IBM Cours Action IBM, Cotation Bourse NYSE - Boursorama",
+      "url": "https://www.boursorama.com/cours/IBM/",
+      "snippet": "Le cours de l'action IBM IBM sur Boursorama : historique de la cotation sur NYSE, graphique, actualités, consensus des analystes et …"
+    }
+  ]
+}

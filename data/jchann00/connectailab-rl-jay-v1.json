@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "jchann00/connectailab-rl-jay-v1",
+  "slug": "jchann00-connectailab-rl-jay-v1",
+  "author": "jchann00",
+  "url": "https://huggingface.co/jchann00/connectailab-rl-jay-v1",
+  "created_at": "2026-10-14T17:10:41.000Z",
+  "updated_at": "2026-10-14T17:10:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "peft",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "reinforcement-learning",
+    "deep-reinforcement-learning",
+    "grpo",
+    "decision-making",
+    "gymnasium",
+    "connect-tycoon",
+    "connect-ai-lab",
+    "connectailab",
+    "lora",
+    "qwen3.5",
+    "ko",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 41684315,
+  "storage_human": "42 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Request Rejected - ameli",
+      "url": "https://assure.ameli.fr/PortailAS/appmanager/PortailAS/assure?_nfpb=true&_pageLabel=as_creation_immediate_page",
+      "snippet": "The requested URL was rejected. Please, consult with your administrator. Your support ID is: <9939920473827361755> [Go Back]"
+    },
+    {
+      "title": "Action Interdite - assure.ameli.fr",
+      "url": "https://assure.ameli.fr/PortailAS/appmanager/PortailAS/assure?_nfpb=true&amp;_pageL%E2%80%A6",
+      "snippet": "Action Interdite Action Interdite."
+    },
+    {
+      "title": "Connexion à mon compte | Compte ameli",
+      "url": "https://assure.ameli.fr/PortailAS/appmanager/PortailAS/assure?_",
+      "snippet": "L’Assurance Maladie utilise des cookies pour vous permettre une navigation optimale, garantir l’accès sécurisé à vos données, …"
+    },
+    {
+      "title": "jchann00/connectailab-rl-jay-v1 - Hugging Face",
+      "url": "https://huggingface.co/jchann00/connectailab-rl-jay-v1",
+      "snippet": "jchann00. /. connectailab-rl-jay-v1. Like 0 · RL AI COMPANY DECISION MAKING MODEL."
+    },
+    {
+      "title": "jchann00/connectailab-rl-jay-v1-teacher - Hugging Face",
+      "url": "https://huggingface.co/jchann00/connectailab-rl-jay-v1-teacher",
+      "snippet": "connectailab-rl-jay-v1-teacher · AI 사장 (CONNECT TYCOON). 개발자 jchann00 · 회사의 가치 {\"이익\": 1.0, \"고객 만족\": 1.0, \"위험\": 1.0}."
+    }
+  ]
+}

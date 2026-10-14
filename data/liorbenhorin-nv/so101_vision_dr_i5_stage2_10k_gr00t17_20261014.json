@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "liorbenhorin-nv/so101_vision_dr_i5_stage2_10k_GR00T17_20261014",
+  "slug": "liorbenhorin-nv-so101_vision_dr_i5_stage2_10k_gr00t17_20261014",
+  "author": "liorbenhorin-nv",
+  "url": "https://huggingface.co/liorbenhorin-nv/so101_vision_dr_i5_stage2_10k_GR00T17_20261014",
+  "created_at": "2026-10-14T15:31:58.000Z",
+  "updated_at": "2026-10-14T15:42:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "so101",
+    "groot",
+    "dataset:sreetz-nv/so101_sim_manual_perception_newton_20261008",
+    "dataset:sreetz-nv/so101_real_manual",
+    "dataset:liorbenhorin-nv/so101_vials_procedural_all_125ep_20261013",
+    "base_model:nvidia/GR00T-N1.7-3B",
+    "base_model:finetune:nvidia/GR00T-N1.7-3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576219216,
+  "storage_human": "12.6 GB",
+  "base_model": "nvidia/GR00T-N1.7-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Public Bathroom Porn Videos (1,738) - Tubesafari.com",
+      "url": "https://tubesafari.com/search/Public-bathroom",
+      "snippet": "Free public bathroom porn: 1,738 videos. WATCH NOW for FREE!"
+    },
+    {
+      "title": "Public bathroom Porn Videos - Free HD public bathroom Clips",
+      "url": "https://viralxxxporn.com/tags/public-bathroom/",
+      "snippet": "Browse our complete collection of public bathroom porn videos on ViralXXXPorn. We currently have 41 HD videos tagged with public …"
+    },
+    {
+      "title": "public-bathroom videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/tags/public-bathroom",
+      "snippet": "My stepsister needed some money, so we went into the bathroom and she gave my dick a good workout... [AI] See all premium …"
+    },
+    {
+      "title": "Public bathroom Porn Videos & Free XXX Movies - iPornTV",
+      "url": "https://iporntv.net/pornos/public-bathroom",
+      "snippet": "Discover top-rated Public bathroom XXX clips and movies. Stream or download in HD."
+    },
+    {
+      "title": "Public Restroom Porn Videos - FreePublicPorn.com",
+      "url": "https://freepublicporn.com/13517-restroom/",
+      "snippet": "We know it because we are constantly updating this section to contain only the best public Restroom videos. Whether you like …"
+    }
+  ]
+}

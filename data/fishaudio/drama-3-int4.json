@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "fishaudio/drama-3-int4",
+  "slug": "fishaudio-drama-3-int4",
+  "author": "fishaudio",
+  "url": "https://huggingface.co/fishaudio/drama-3-int4",
+  "created_at": "2026-10-14T16:12:13.000Z",
+  "updated_at": "2026-10-14T16:12:14.000Z",
+  "license": "fish-audio-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "en",
+    "zh",
+    "ja",
+    "ko",
+    "multilingual"
+  ],
+  "tags": [
+    "safetensors",
+    "fish_omni",
+    "fish-audio",
+    "text-to-speech",
+    "voice-cloning",
+    "int4",
+    "w4a16",
+    "quantized",
+    "sglang",
+    "ml-intern",
+    "en",
+    "zh",
+    "ja",
+    "ko",
+    "multilingual",
+    "base_model:fishaudio/drama-3",
+    "base_model:quantized:fishaudio/drama-3",
+    "license:other",
+    "4-bit",
+    "drama3-int4",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6857815168,
+  "parameters_human": "6.86B",
+  "storage_bytes": 24016850043,
+  "storage_human": "24.0 GB",
+  "base_model": "fishaudio/drama-3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best AI Text To Speech & Free Voice Cloning | Fish Audio",
+      "url": "https://fish.audio/",
+      "snippet": "Content creators use it to generate unlimited narration for videos, podcasts, and courses without re-recording. Fish Audio needs as …"
+    },
+    {
+      "title": "Home | Fish Audio | Best AI Text To Speech & Free Voice Cloning",
+      "url": "https://fish.audio/app/",
+      "snippet": "Studio-grade AI text-to-speech and voice cloning. Start using free industry-leading voice generator today with emotion control and …"
+    },
+    {
+      "title": "Kitta Audio - AI Voice Cloning & Text to Speech Online",
+      "url": "https://fishaudio.org/en",
+      "snippet": "Powered by Fish Audio S2.1 Pro, Kitta Audio supports text to speech and multilingual voiceover in 83 languages, including English, …"
+    },
+    {
+      "title": "fishaudio (Fish Audio) - Hugging Face",
+      "url": "https://huggingface.co/fishaudio",
+      "snippet": "fishaudio/s2-pro ... fishaudio/s1-mini ... fishaudio/fish-speech-1.5 ... fishaudio/fish-speech-1.4 ... fishaudio/fish-agent-v0.1-3b"
+    },
+    {
+      "title": "Kitta Audio — Clonage vocal IA et synthèse vocale en ligne",
+      "url": "https://fishaudio.org/fr",
+      "snippet": "Kitta Audio est une plateforme de clonage vocal et de synthèse vocale basée sur la technologie Fish Audio. Clonez une voix en …"
+    }
+  ]
+}

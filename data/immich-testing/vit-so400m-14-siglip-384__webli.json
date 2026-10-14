@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "immich-testing/ViT-SO400M-14-SigLIP-384__webli",
+  "slug": "immich-testing-vit-so400m-14-siglip-384__webli",
+  "author": "immich-testing",
+  "url": "https://huggingface.co/immich-testing/ViT-SO400M-14-SigLIP-384__webli",
+  "created_at": "2026-10-14T02:15:41.000Z",
+  "updated_at": "2026-10-14T02:15:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10462117620,
+  "storage_human": "10.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Immich",
+      "url": "https://immich.app/",
+      "snippet": "Self-hosted photo and video management solution. Easily back up, organize, and manage your photos on your own server. Immich …"
+    },
+    {
+      "title": "Download Immich | Immich",
+      "url": "https://immich.app/download",
+      "snippet": "Install Immich on a server and download mobile apps to start backing up your photos and videos."
+    },
+    {
+      "title": "immich : installer l'alternative open source à Google Photos",
+      "url": "https://www.it-connect.fr/tuto-immich-alternative-open-source-a-google-photos-et-icloud-photos/",
+      "snippet": "Oct 23, 2025 · immich est une application open source de gestion de photos et de vidéos, conçue pour être auto-hébergée. Elle …"
+    },
+    {
+      "title": "GitHub - immich-app/immich: High performance self-hosted photo and ...",
+      "url": "https://github.com/immich-app/immich",
+      "snippet": "High performance self-hosted photo and video management solution. - immich-app/immich"
+    },
+    {
+      "title": "Quick start | Immich",
+      "url": "https://docs.immich.app/overview/quick-start/",
+      "snippet": "6 days ago · Here is a quick, no-choices path to install Immich and take it for a test drive. Once you've tried it, you might use one of …"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "CompassioninMachineLearning/olmo-compassion-web-seed3407-CPT-best",
+  "slug": "compassioninmachinelearning-olmo-compassion-web-seed3407-cpt-best",
+  "author": "CompassioninMachineLearning",
+  "url": "https://huggingface.co/CompassioninMachineLearning/olmo-compassion-web-seed3407-CPT-best",
+  "created_at": "2026-10-14T02:00:13.000Z",
+  "updated_at": "2026-10-14T02:01:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "olmo3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 7298011136,
+  "parameters_human": "7.30B",
+  "storage_bytes": 14596063712,
+  "storage_human": "14.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CompassioninMachineLearning/olmo-compassion-part1 · Hugging Face",
+      "url": "https://huggingface.co/CompassioninMachineLearning/olmo-compassion-part1",
+      "snippet": "CompassioninMachineLearning / olmo-compassion-part1 Like 0 Follow Compassion aligned machine learning 35 Text Generation Transformers Safetensors English olmo3 text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "olmo-compassion-midtrain-seed1-CPT-best - Hugging Face",
+      "url": "https://huggingface.co/CompassioninMachineLearning/olmo-compassion-midtrain-seed1-CPT-best",
+      "snippet": "Merged bf16 model from CompassioninMachineLearning/Olmo7b-compassion-seed1-20260930-CPT-LoRA-checkpoints checkpoint-750: the run&#x27;s lowest validation loss (1.6496 at step 750; the run continued to step 1500)."
+    },
+    {
+      "title": "Olmo from Ai2 - AllenAI",
+      "url": "https://allenai.org/olmo",
+      "snippet": "The fully open mixture used to train Olmo from scratch—curated web, code, books, and scientific text—deduplicated and quality-filtered."
+    },
+    {
+      "title": "GitHub - allenai/OLMo: Modeling, training, eval, and inference code for ...",
+      "url": "https://github.com/allenai/OLMo",
+      "snippet": "OLMo is a repository for training and using AI2&#x27;s state-of-the-art open language models. It is designed by scientists, for scientists."
+    },
+    {
+      "title": "Olmo7b-compassion-seed1-20260930-CPT-final - friendli.ai",
+      "url": "https://friendli.ai/models/CompassioninMachineLearning/Olmo7b-compassion-seed1-20260930-CPT-final",
+      "snippet": "Deploy Olmo7b-compassion-seed1-20260930-CPT-final with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "nguyentuanee/coca-experiment",
+  "slug": "nguyentuanee-coca-experiment",
+  "author": "nguyentuanee",
+  "url": "https://huggingface.co/nguyentuanee/coca-experiment",
+  "created_at": "2026-10-14T02:12:05.000Z",
+  "updated_at": "2026-10-14T02:12:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nguyentuanee/coca-experiment · Hugging Face",
+      "url": "https://huggingface.co/nguyentuanee/coca-experiment",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sn3hapo95nd/coca-experiment · Hugging Face",
+      "url": "https://huggingface.co/sn3hapo95nd/coca-experiment",
+      "snippet": "Repository status The Python file contains the model and runnable example or training entry point. config.json records the generated architecture settings. training_args.json records the default experiment recipe. model.safetensors is a valid initialization checkpoint for smoke tests; it is not presented as a trained benchmark checkpoint. No benchmark score is claimed in this repository."
+    },
+    {
+      "title": "Scrambled pancakes for an easy grain-free breakfast - MSN",
+      "url": "https://www.msn.com/en-in/news/other/man-flies-into-sky-after-coke-mentos-explosion-bizarre-ai-video-goes-viral-watch/ar-AA2cFXfb",
+      "snippet": "A bizarre video showing a Coca-Cola truck, a Mentos truck and a man being sent flying into the sky has gone viral online, leaving viewers amused and questioning whether the footage is real."
+    },
+    {
+      "title": "Models · Experiential",
+      "url": "https://platform.experientiallabs.ai/",
+      "snippet": "Build simulations from your traces, evaluate against them, and serve optimized endpoints."
+    },
+    {
+      "title": "Experiments | AI Experiments",
+      "url": "https://aiexperiments.co/experiments",
+      "snippet": "Explore the &#x27;Experiments&#x27; page, a central hub linking to an array of AI-driven experiments. Ranging from conversational interactions with GPT-3, custom journal prompts, quick question answering, to AI-generated holiday destinations and more. Each experiment showcases a unique use-case of AI, offering a glimpse into the vast capabilities of modern machine learning models."
+    }
+  ]
+}

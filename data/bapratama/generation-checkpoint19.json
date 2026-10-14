@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Bapratama/generation-checkpoint19",
+  "slug": "bapratama-generation-checkpoint19",
+  "author": "Bapratama",
+  "url": "https://huggingface.co/Bapratama/generation-checkpoint19",
+  "created_at": "2026-10-14T17:22:04.000Z",
+  "updated_at": "2026-10-14T17:22:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Journal d'un ABDL @unabdlfr - Tumblr Blog | Tumlook",
+      "url": "https://www.tumlook.com/unabdlfr",
+      "snippet": "Explore the latest posts from @unabdlfr blog that has 8 posts. Salut Je créer ce blog pour vous partager mes aventures en tant …"
+    },
+    {
+      "title": "Amazon.fr : Abdl Couche",
+      "url": "https://www.amazon.fr/abdl-couche/s?k=abdl+couche",
+      "snippet": "Ce produit possède des caractéristiques de durabilité reconnues par des labels fiables. Contient au moins 50 % de matériaux recyclés."
+    },
+    {
+      "title": "Gay abdl - Etsy France",
+      "url": "https://www.etsy.com/fr/market/gay_abdl?msockid=2f6ef9095150611f2fc7eefb50b76044",
+      "snippet": "Parcourez notre sélection de gay abdl : vous y trouverez les meilleures pièces uniques ou personnalisées de nos vêtements homme …"
+    },
+    {
+      "title": "Amazon.fr : Abdl Homme",
+      "url": "https://www.amazon.fr/abdl-homme/s?k=abdl+homme",
+      "snippet": "Ce produit possède des caractéristiques de durabilité reconnues par des labels fiables. Contient au moins 50 % de matériaux recyclés."
+    },
+    {
+      "title": "Couche anatomique plastifiée - Incontinence | Senup.com",
+      "url": "https://www.senup.com/533-couches-anatomiques-plastifiees",
+      "snippet": "Comme la couche anatomique traditionnelle, la couche plastifiée est unisexe, adaptée tant pour les fuites urinaires que pour …"
+    }
+  ]
+}

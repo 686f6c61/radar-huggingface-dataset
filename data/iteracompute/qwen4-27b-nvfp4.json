@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "IteraCompute/Qwen4-27B-NVFP4",
+  "slug": "iteracompute-qwen4-27b-nvfp4",
+  "author": "IteraCompute",
+  "url": "https://huggingface.co/IteraCompute/Qwen4-27B-NVFP4",
+  "created_at": "2026-10-14T01:37:33.000Z",
+  "updated_at": "2026-10-14T01:39:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "nvfp4",
+    "quantization",
+    "work-in-progress",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "momodrift,top/home, momodrift,top/home - Free Online Games",
+      "url": "https://www.fukgames.com/free-games/6043606/momodrift-top-home",
+      "snippet": "Free Online Games on Fukgames.com Play Free Games,Free online games, Free Games, Play Free Online Games at …Read more"
+    },
+    {
+      "title": "momodrift,top/home, momodrift,top/home - Free Online Games",
+      "url": "https://www.fukgames.com/free-games/6043606/momodrift-top-home/4",
+      "snippet": "Categories Free Online Games on Fukgames.com Play Free Games,Free online games, Free Games, Play Free Online Games at …"
+    },
+    {
+      "title": "MomoDrift - YouTube",
+      "url": "https://www.youtube.com/@Momodrift",
+      "snippet": "Share your videos with friends, family, and the world"
+    },
+    {
+      "title": "Sassy.momo;) (@momodrift_) • Instagram photos and videos",
+      "url": "https://www.instagram.com/momodrift_/",
+      "snippet": "See photos and videos from friends on Instagram, and discover other accounts you'll love."
+    },
+    {
+      "title": "momodrift's Videos - Twitch",
+      "url": "https://www.twitch.tv/momodrift/videos",
+      "snippet": "— Watch all of Momodrift's best archives, VODs, and highlights on Twitch. Find their latest Path of Exile streams and much more …"
+    }
+  ]
+}

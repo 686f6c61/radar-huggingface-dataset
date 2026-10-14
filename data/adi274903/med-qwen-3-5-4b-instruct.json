@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "adi274903/Med-Qwen-3.5-4B-Instruct",
+  "slug": "adi274903-med-qwen-3-5-4b-instruct",
+  "author": "adi274903",
+  "url": "https://huggingface.co/adi274903/Med-Qwen-3.5-4B-Instruct",
+  "created_at": "2026-10-14T02:34:57.000Z",
+  "updated_at": "2026-10-14T02:42:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "medical",
+    "clinical-reasoning",
+    "qwen",
+    "usmle",
+    "sft",
+    "dora",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-4B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 589,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 8431547629,
+  "storage_human": "8.4 GB",
+  "base_model": "Qwen/Qwen3.5-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "adi274903/Med-Qwen-3.5-4B-Base-DAPT-Adapter · Hugging Face",
+      "url": "https://huggingface.co/adi274903/Med-Qwen-3.5-4B-Base-DAPT-Adapter",
+      "snippet": "Instructions to use adi274903/Med-Qwen-3.5-4B-Base-DAPT-Adapter with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen/Qwen3-4B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen/qwen3.5-4b • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen3.5-4b",
+      "snippet": "Custom model by qwen Qwen3.5 4B Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility. This is a 4B parameter dense model, supporting a native context length of 262,144 tokens. Highlights Unified Vision-Language Foundation. Early fusion training on multimodal tokens ..."
+    },
+    {
+      "title": "qwen--qwen3.5-4b | Model Catalog | Microsoft Foundry",
+      "url": "https://ai.azure.com/catalog/models/qwen--qwen3.5-4b",
+      "snippet": "Qwen3.5 4B multimodal model for visual reasoning, OCR, and long-context generation. Sign in to Microsoft Foundry to deploy this model."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    }
+  ]
+}

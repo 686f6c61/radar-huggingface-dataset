@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "id": "AkaumiKaede/Qwen3.5-2B-Uncensored-Abliterix-SOM",
+  "slug": "akaumikaede-qwen3-5-2b-uncensored-abliterix-som",
+  "author": "AkaumiKaede",
+  "url": "https://huggingface.co/AkaumiKaede/Qwen3.5-2B-Uncensored-Abliterix-SOM",
+  "created_at": "2026-10-14T16:55:25.000Z",
+  "updated_at": "2026-10-14T18:29:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen",
+    "heretic",
+    "abliterix",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "writing",
+    "roleplay",
+    "vision",
+    "rp",
+    "rep",
+    "r18",
+    "som",
+    "llm",
+    "qwen35",
+    "qwen3.5",
+    "qwen3.5-2b",
+    "chinese",
+    "english",
+    "text",
+    "image",
+    "chat",
+    "agent",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2213241664,
+  "parameters_human": "2.21B",
+  "storage_bytes": 4446669164,
+  "storage_human": "4.4 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The 10 Sexiest Movies On Netflix Right Now - CINEMABLEND",
+      "url": "https://www.cinemablend.com/news/2488685/the-10-sexiest-movies-on-netflix-right-now",
+      "snippet": "Jan 21, 2020 · These films put you right in the mood to enjoy some tasteful cinema. Tonight is the perfect night to enjoy some of the …Read more"
+    },
+    {
+      "title": "Free Porn Videos - HD Porno Tube & XXX Sex Videos | YouPorn",
+      "url": "https://www.you-porn.com/",
+      "snippet": "YouPorn is your home for free XXX porn videos. Sit back and watch all of the unlimited, high quality HD porn your heart desires. …"
+    },
+    {
+      "title": "Handpicked XXX Porn Movies - FullTube.XXX",
+      "url": "https://www.fulltube.xxx/",
+      "snippet": "Stream handpicked xxx movies in stunning 4K detail. Enjoy exclusive adult films from top studios via FullTube.XXX."
+    },
+    {
+      "title": "Free Prn Movies & HD XXX Sex Videos, Adult Prno Films",
+      "url": "https://www.yhprn.com/",
+      "snippet": "Watch the hottest free porn videos at yhprn.com. Enjoy our collection of selected porn scenes and full xxx HD movies."
+    },
+    {
+      "title": "Steamy Movies | Netflix Official Site",
+      "url": "https://www.netflix.com/browse/genre/11781",
+      "snippet": "Steamy Movies Is it just us, or is it getting a little hot in here? From Hollywood to Bollywood to independent romances, our steamy …"
+    }
+  ]
+}

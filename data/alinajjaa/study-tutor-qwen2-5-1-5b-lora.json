@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "Alinajjaa/study-tutor-qwen2.5-1.5b-lora",
+  "slug": "alinajjaa-study-tutor-qwen2-5-1-5b-lora",
+  "author": "Alinajjaa",
+  "url": "https://huggingface.co/Alinajjaa/study-tutor-qwen2.5-1.5b-lora",
+  "created_at": "2026-10-14T15:54:32.000Z",
+  "updated_at": "2026-10-14T15:57:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qlora",
+    "education",
+    "tutoring",
+    "french",
+    "fr",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85333004,
+  "storage_human": "85 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

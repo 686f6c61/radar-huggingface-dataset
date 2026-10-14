@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "toyxyz/Anima_ControlNet-LLLite",
+  "slug": "toyxyz-anima_controlnet-lllite",
+  "author": "toyxyz",
+  "url": "https://huggingface.co/toyxyz/Anima_ControlNet-LLLite",
+  "created_at": "2026-10-11T07:41:50.000Z",
+  "updated_at": "2026-10-12T19:48:32.000Z",
+  "license": "upstream-anima-and-source-data-terms",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "anima",
+    "controlnet",
+    "lllite",
+    "comfyui",
+    "region-control",
+    "3d-pose",
+    "pose-conditioning",
+    "instance-segmentation",
+    "safetensors",
+    "image-to-image",
+    "en",
+    "dataset:toyxyz/booruregion_10k",
+    "dataset:toyxyz/booru3dpose_10k",
+    "base_model:circlestone-labs/Anima",
+    "base_model:adapter:circlestone-labs/Anima",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 15,
+  "downloads_30d": 0,
+  "trending_score": 15,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 110473410,
+  "storage_human": "110 MB",
+  "base_model": "circlestone-labs/Anima",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Telegram Privacy Policy",
+      "url": "https://telegram.org/privacy?setln=it",
+      "snippet": "Account Self-Destruction By default, if you stop using Telegram and do not come online for at least 18 months, your account will be …"
+    },
+    {
+      "title": "Telegram Messenger",
+      "url": "https://telegram.org/?setln=fr",
+      "snippet": "11 Juin Applications pour montres connectées, texte enrichi pour les bots, gardiens IA pour les groupes, et bien plus encore une …"
+    },
+    {
+      "title": "Telegram Desktop",
+      "url": "https://desktop.telegram.org/",
+      "snippet": "Experience Telegram on your computer in a swift and seamless way."
+    },
+    {
+      "title": "텔레그램 데스크톱 - Telegram Desktop",
+      "url": "https://desktop.telegram.org/?setln=ko",
+      "snippet": "이 소프트웨어는 GPL v3 라이센스를 적용하여 제공하고 있습니다. 소스코드는 GitHub 에서 제공하고 있습니다. 트위터에서 …"
+    },
+    {
+      "title": "Telegram A Desktop",
+      "url": "https://web.telegram.org/a/get/",
+      "snippet": "Access Telegram on your desktop, synced with your mobile, for seamless messaging and communication."
+    }
+  ]
+}

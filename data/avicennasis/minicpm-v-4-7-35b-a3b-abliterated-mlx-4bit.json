@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Avicennasis/MiniCPM-V-4.7-35B-A3B-abliterated-MLX-4bit",
+  "slug": "avicennasis-minicpm-v-4-7-35b-a3b-abliterated-mlx-4bit",
+  "author": "Avicennasis",
+  "url": "https://huggingface.co/Avicennasis/MiniCPM-V-4.7-35B-A3B-abliterated-MLX-4bit",
+  "created_at": "2026-10-14T17:55:21.000Z",
+  "updated_at": "2026-10-14T17:56:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx-vlm",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx-vlm",
+    "safetensors",
+    "minicpmv4_7",
+    "mlx",
+    "abliterated",
+    "uncensored",
+    "minicpm-v",
+    "moe",
+    "vision",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:openbmb/MiniCPM-V-4.7-35B-A3B",
+    "base_model:quantized:openbmb/MiniCPM-V-4.7-35B-A3B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35212875824,
+  "parameters_human": "35.21B",
+  "storage_bytes": 23548368266,
+  "storage_human": "23.5 GB",
+  "base_model": "swdq/MiniCPM-V-4.7-35B-A3B-abliterated, openbmb/MiniCPM-V-4.7-35B-A3B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Model Heretic — Uncensored & Heretic AI Models Radar",
+      "url": "https://modelheretic.com/",
+      "snippet": "Discover heretic, abliterated and uncensored LLMs in real time. Filter by GGUF, MLX, hardware fit, creators and capabilities. Updated daily."
+    }
+  ]
+}

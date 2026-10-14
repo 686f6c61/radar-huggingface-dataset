@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "caveman-so/trim-1",
+  "slug": "caveman-so-trim-1",
+  "author": "caveman-so",
+  "url": "https://huggingface.co/caveman-so/trim-1",
+  "created_at": "2026-10-14T02:32:30.000Z",
+  "updated_at": "2026-10-14T03:06:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "context-compression",
+    "prompt-compression",
+    "agents",
+    "coding-agents",
+    "gradient-boosted-trees",
+    "lightgbm",
+    "extractive",
+    "text-ranking",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1245358,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Caveman | Cut AI agent token costs",
+      "url": "https://caveman.so/",
+      "snippet": "Adaptive model selection needs a free account. Caveman Cloud needs an account, which you can open at app.caveman.so/signup. Set up the local tools. Will fewer ..."
+    },
+    {
+      "title": "GitHub - JuliusBrussee/caveman: why use many token when few …",
+      "url": "https://github.com/JuliusBrussee/caveman",
+      "snippet": "Adobe found that cavemanning your prompt makes answers longer and worse, so caveman never touches your prompt. JetBrains …"
+    },
+    {
+      "title": "Caveman - Jeux en ligne 6jeux.fr",
+      "url": "https://6jeux.fr/jeux/111-caveman.html",
+      "snippet": "Jouez Caveman en ligne. Jouez avec l'homme des cavernes et vaincre les animaux préhistoriques dans ce jeu de plateforme en ligne."
+    },
+    {
+      "title": "Caveman — output compression for Claude Code & 30+ agents",
+      "url": "https://caveman.so/products/caveman",
+      "snippet": "A senior OpenAI employee has contributed code to the project, simply called ‘caveman.’ From the article’s introduction. Full reporting …"
+    },
+    {
+      "title": "Releases: JuliusBrussee/caveman - GitHub",
+      "url": "https://github.com/JuliusBrussee/caveman/releases",
+      "snippet": "Caveman 4.0.0 makes npx @caveman-ai/cli the one install, adds Auto routing through Caveman Cloud on top of the local proxy, and …"
+    }
+  ]
+}

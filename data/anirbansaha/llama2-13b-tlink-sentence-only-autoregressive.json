@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "AnirbanSaha/llama2-13b-tlink-sentence-only-autoregressive",
+  "slug": "anirbansaha-llama2-13b-tlink-sentence-only-autoregressive",
+  "author": "AnirbanSaha",
+  "url": "https://huggingface.co/AnirbanSaha/llama2-13b-tlink-sentence-only-autoregressive",
+  "created_at": "2026-10-14T02:23:29.000Z",
+  "updated_at": "2026-10-14T02:26:25.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "dataset:AnirbanSaha/tlink-classification-sentence-only",
+    "base_model:meta-llama/Llama-2-13b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-13b-chat-hf",
+    "license:llama3.2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 118,
+  "trending_score": 0,
+  "parameters": 13015864320,
+  "parameters_human": "13.02B",
+  "storage_bytes": 26031776689,
+  "storage_human": "26.0 GB",
+  "base_model": "meta-llama/Llama-2-13b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "llama2-13b-tlink-sentence-only-autoregressive - Hugging Face",
+      "url": "https://huggingface.co/AnirbanSaha/llama2-13b-tlink-sentence-only-autoregressive",
+      "snippet": "llama2-13b-tlink-sentence-only-autoregressive ... Deploy Copy to bucket new Use this model Local Apps"
+    },
+    {
+      "title": "llama3.2-1b-tlink-sentence-only-autoregressive - Hugging Face",
+      "url": "https://huggingface.co/AnirbanSaha/llama3.2-1b-tlink-sentence-only-autoregressive",
+      "snippet": "Instructions to use AnirbanSaha/llama3.2-1b-tlink-sentence-only-autoregressive with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "llama3.2-1b-tlink-sentence-only-autoregressive - friendli.ai",
+      "url": "https://friendli.ai/models/AnirbanSaha/llama3.2-1b-tlink-sentence-only-autoregressive",
+      "snippet": "Deploy llama3.2-1b-tlink-sentence-only-autoregressive with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Llama (language model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Llama_(language_model)",
+      "snippet": "Llama[a] (\" Large Language Model Meta AI \" serving as a backronym) is a family of large language models (LLMs) released by Meta AI starting in February 2023. [3] Llama models come in different sizes, ranging from 1 billion to 2 trillion parameters. Initially only a foundation model, [4] starting with Llama 2, Meta AI released instruction fine-tuned versions alongside foundation models. [5 ..."
+    },
+    {
+      "title": "Run Llama-2-13B API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/sundar-pichai/llama-2-13b",
+      "snippet": "Llama 2 13B is a 13 billion parameter auto-regressive language model developed by Meta, part of the Llama 2 family of models. This pretrained version, converted for Hugging Face Transformers, is designed for general natural language generation tasks. It was trained on a new mix of publicly available online data with a 4096-token context length. The Llama 2 models generally outperform other ..."
+    }
+  ]
+}

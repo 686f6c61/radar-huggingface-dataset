@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Emerald7664/DrakIdol-Roleplayer-1.0-i1-GGUF",
+  "slug": "emerald7664-drakidol-roleplayer-1-0-i1-gguf",
+  "author": "Emerald7664",
+  "url": "https://huggingface.co/Emerald7664/DrakIdol-Roleplayer-1.0-i1-GGUF",
+  "created_at": "2026-10-14T15:30:38.000Z",
+  "updated_at": "2026-10-14T15:30:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "gemma3",
+    "gemma",
+    "google",
+    "roleplay",
+    "en",
+    "base_model:aifeifei798/DrakIdol-Roleplayer-1.0",
+    "base_model:quantized:aifeifei798/DrakIdol-Roleplayer-1.0",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3880263168,
+  "parameters_human": "3.88B",
+  "storage_bytes": 48366274848,
+  "storage_human": "48.4 GB",
+  "base_model": "aifeifei798/DrakIdol-Roleplayer-1.0",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Porno Gratuit – CoqNu.com",
+      "url": "https://www.coqnu.com/",
+      "snippet": "Porno gratuite. Le meilleur site porno du monde, Coq Nu .com"
+    },
+    {
+      "title": "Vintage Français - Porno Gratuit - CoqNu.com",
+      "url": "https://www.coqnu.com/category/french-vintage",
+      "snippet": "Vintage Français Porno. Porno gratuit. Le meilleur site porno du monde, Coq Nu .com"
+    },
+    {
+      "title": "Free Porn – CoqNu.com",
+      "url": "https://www.coqnu.com/en/",
+      "snippet": "Free Porn. The best porn site in the world, Coq Nu .com"
+    },
+    {
+      "title": "Porno Gratis – CoqNu.com",
+      "url": "https://www.coqnu.com/es/",
+      "snippet": "Porno Gratis. El mejor sitio porno del mundo, Coq Nu .com"
+    },
+    {
+      "title": "Catégories - Porno Gratuit – CoqNu.com",
+      "url": "https://www.coqnu.com/a-z",
+      "snippet": ""
+    }
+  ]
+}

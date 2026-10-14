@@ -5,7 +5,7 @@
   "author": "CMSManhattan",
   "url": "https://huggingface.co/CMSManhattan/JiRackUltra_14b",
   "created_at": "2026-08-03T00:19:53.000Z",
-  "updated_at": "2026-10-04T23:48:15.000Z",
+  "updated_at": "2026-10-13T20:48:15.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -62,7 +62,7 @@
     "region:us"
   ],
   "likes": 5,
-  "downloads_30d": 741902,
+  "downloads_30d": 729792,
   "trending_score": 0,
   "parameters": 14770033664,
   "parameters_human": "14.77B",

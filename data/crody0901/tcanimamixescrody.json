@@ -5,7 +5,7 @@
   "author": "Crody0901",
   "url": "https://huggingface.co/Crody0901/TCAnimaMixesCrody",
   "created_at": "2026-06-24T22:57:38.000Z",
-  "updated_at": "2026-10-13T06:16:43.000Z",
+  "updated_at": "2026-10-14T02:12:53.000Z",
   "license": "creativeml-openrail-m",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": 999966540,
   "parameters_human": "1000.0M",
-  "storage_bytes": 507469664888,
-  "storage_human": "507.5 GB",
+  "storage_bytes": 513313619976,
+  "storage_human": "513.3 GB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "liorbenhorin-nv/so101_vision_dr_i3_GR00T17_20261013",
+  "slug": "liorbenhorin-nv-so101_vision_dr_i3_gr00t17_20261013",
+  "author": "liorbenhorin-nv",
+  "url": "https://huggingface.co/liorbenhorin-nv/so101_vision_dr_i3_GR00T17_20261013",
+  "created_at": "2026-10-14T01:31:01.000Z",
+  "updated_at": "2026-10-14T06:11:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "so101",
+    "groot",
+    "dataset:liorbenhorin-nv/so101_vials_procedural_left_125ep_20261013",
+    "dataset:sreetz-nv/so101_real_manual",
+    "base_model:nvidia/GR00T-N1.7-3B",
+    "base_model:finetune:nvidia/GR00T-N1.7-3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576219216,
+  "storage_human": "12.6 GB",
+  "base_model": "nvidia/GR00T-N1.7-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "so101_vision_dr_i5_GR00T17_20261013 - Hugging Face",
+      "url": "https://huggingface.co/liorbenhorin-nv/so101_vision_dr_i5_GR00T17_20261013",
+      "snippet": "Vision DR experiment i5 Workshop source commit 26b8c242486dfe22dd149b758c709b2738a28c43. Single RTX PRO6000, batch32, visual tuning enabled, language frozen. 20000 ..."
+    },
+    {
+      "title": "liorbenhorin-nv (lior ben horin) - Hugging Face",
+      "url": "https://huggingface.co/liorbenhorin-nv",
+      "snippet": "liorbenhorin-nv/so101-sim-rock-a-stack-hard-narrow-policy_bs8_30000"
+    },
+    {
+      "title": "liorbenhorin (Lior Ben Horin) · GitHub",
+      "url": "https://github.com/liorbenhorin",
+      "snippet": "NVIDIA Robotics. liorbenhorin has 38 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "GitHub - AriRyo/lerobot-so101: LeRobot: Making AI for Robotics more ...",
+      "url": "https://github.com/AriRyo/lerobot-so101",
+      "snippet": "Similarly to the hardware, you can easily implement your own policy & leverage LeRobot&#x27;s data collection, training, and visualization tools, and share your model to the HF Hub For detailed policy setup guides, see the Policy Documentation."
+    },
+    {
+      "title": "Train an SO-101 Robot From Sim-to-Real With NVIDIA Isaac",
+      "url": "https://docs.nvidia.com/learning/physical-ai/sim-to-real-so-101/latest/index.html",
+      "snippet": "Overview # You&#x27;ll train and deploy a vision-language-action (VLA) model to perform unstructured pick-and-place of centrifuge vials into a rack using an SO-101 robot arm - first in sim, where we can iterate quickly and validate behavior, then in reality."
+    }
+  ]
+}

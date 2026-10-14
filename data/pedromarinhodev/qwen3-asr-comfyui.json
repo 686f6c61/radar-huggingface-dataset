@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "PedroMarinhoDev/Qwen3-ASR-ComfyUI",
+  "slug": "pedromarinhodev-qwen3-asr-comfyui",
+  "author": "PedroMarinhoDev",
+  "url": "https://huggingface.co/PedroMarinhoDev/Qwen3-ASR-ComfyUI",
+  "created_at": "2026-10-14T17:30:39.000Z",
+  "updated_at": "2026-10-14T17:31:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "qwen3-asr",
+    "speech-recognition",
+    "automatic-speech-recognition",
+    "base_model:Qwen/Qwen3-ASR-0.6B",
+    "base_model:finetune:Qwen/Qwen3-ASR-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5641120792,
+  "storage_human": "5.6 GB",
+  "base_model": "Qwen/Qwen3-ASR-1.7B, Qwen/Qwen3-ASR-0.6B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "精选ComfyUI 插件与自定义节点下载| WanAIGC",
+      "url": "https://wanaigc.com/nodes",
+      "snippet": "Qwen3-TTS 语音克隆和多角色配音。其特点包括脚本驱动的无限多角色配音、情感感知语音识别(ASR) 技术以及高效的语音资产管理功能。 语音生成 ..."
+    },
+    {
+      "title": "ComfyUI の記事と日報項目 - VFX DESK",
+      "url": "https://vfx-desk.com/tags/ComfyUI",
+      "snippet": "題名の副題は「Clean 'White Models' & Normal Guidance for MiniMax H3, Wan 2.1 & Video Diffusion」で、白モデル（形状だけを見せた素地の映像）と法線を使った ..."
+    }
+  ]
+}

@@ -127,13 +127,13 @@
     "deploy:azure",
     "region:us"
   ],
-  "likes": 6635,
-  "downloads_30d": 3736893,
-  "trending_score": 43,
+  "likes": 6642,
+  "downloads_30d": 3694714,
+  "trending_score": 45,
   "parameters": 1543490560,
   "parameters_human": "1.54B",
-  "storage_bytes": 31626663890,
-  "storage_human": "31.6 GB",
+  "storage_bytes": 31658039844,
+  "storage_human": "31.7 GB",
   "base_model": null,
   "formats": [
     "safetensors"

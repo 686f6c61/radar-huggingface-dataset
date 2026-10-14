@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "AjaySharmawood/generation",
+  "slug": "ajaysharmawood-generation",
+  "author": "AjaySharmawood",
+  "url": "https://huggingface.co/AjaySharmawood/generation",
+  "created_at": "2026-10-14T02:35:43.000Z",
+  "updated_at": "2026-10-14T02:35:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What is a generative model? - IBM",
+      "url": "https://www.ibm.com/think/topics/generative-model",
+      "snippet": "What is a generative model? A generative model is a machine learning model designed to create new data that is similar to its training data. Generative artificial intelligence (AI) models learn the patterns and distributions of the training data, then apply those understandings to generate novel content in response to new input data."
+    },
+    {
+      "title": "Generative AI Models - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/blogs/generative-ai-models/",
+      "snippet": "Mistral is a family of generative AI models developed by Mistral AI, covering general-purpose, reasoning, coding and multimodal tasks. Its model ecosystem includes both open-weight and commercial models for developers and organizations. Open-Weight Models: It provides models that developers can download, adapt and deploy for different use cases."
+    },
+    {
+      "title": "1️⃣ Design, develop, and implement generative AI solutions ... - Medium",
+      "url": "https://medium.com/@ajaylrsharma/1%EF%B8%8F%E2%83%A3-design-develop-and-implement-generative-ai-solutions-using-llms-image-generation-and-f1a19d793c05",
+      "snippet": "1️⃣ Design, develop, and implement generative AI solutions using LLMs, image generation, and analytics. PART -1 Build a Chatbot Using GPT-4 for Customer Support Steps: Step 1: Set Up OpenAI …"
+    },
+    {
+      "title": "What are Generative AI Models? - Generative AI Models Explained - AWS",
+      "url": "https://aws.amazon.com/what-is/generative-ai-models/",
+      "snippet": "Thousands of proprietary and open-source AI models exist, and new models and improved versions are being released daily. Despite their flexibility and versatility, generative AI models are not a catch-all solution for every use case. AI teams must carefully select and evaluate the best model that optimizes cost and performance."
+    },
+    {
+      "title": "Best Free AI Models & APIs (2026) | LM Market Cap",
+      "url": "https://lmmarketcap.com/free-ai-models",
+      "snippet": "Every free AI model ranked by quality: free LLMs, coding assistants, and image generators. No API costs, open-source, and ready to use. Start for free."
+    }
+  ]
+}

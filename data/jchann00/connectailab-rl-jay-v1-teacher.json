@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "jchann00/connectailab-rl-jay-v1-teacher",
+  "slug": "jchann00-connectailab-rl-jay-v1-teacher",
+  "author": "jchann00",
+  "url": "https://huggingface.co/jchann00/connectailab-rl-jay-v1-teacher",
+  "created_at": "2026-10-14T17:10:46.000Z",
+  "updated_at": "2026-10-14T17:10:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "numpy",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "numpy",
+    "connect-ai-lab",
+    "deep-reinforcement-learning",
+    "gymnasium",
+    "connect-company",
+    "connect-tycoon",
+    "jev",
+    "jev-style",
+    "reinforcement-learning",
+    "ppo",
+    "decision-making",
+    "prefrontal-cortex",
+    "korean",
+    "ko",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jchann00/connectailab-rl-jay-v1-teacher - Hugging Face",
+      "url": "https://huggingface.co/jchann00/connectailab-rl-jay-v1-teacher",
+      "snippet": "connectailab-rl-jay-v1-teacher · AI 사장 (CONNECT TYCOON). 개발자 jchann00 · 회사의 가치 {\"이익\": 1.0, \"고객 만족\": 1.0, \"위험\": 1.0}."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=created",
+      "snippet": "Together AI · Fireworks · Featherless AI · Zai. + 9 + 11 + 10. Hardware ... jchann00/connectailab-rl-jay-v1-teacher. Reinforcement Learning • Updated in ..."
+    }
+  ]
+}

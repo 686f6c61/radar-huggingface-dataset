@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/MiniCPM-V-4.7-1B-i1-GGUF",
+  "slug": "mradermacher-minicpm-v-4-7-1b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/MiniCPM-V-4.7-1B-i1-GGUF",
+  "created_at": "2026-10-14T02:17:54.000Z",
+  "updated_at": "2026-10-14T02:51:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "minicpm-v",
+    "multimodal",
+    "On-Device Model",
+    "lightweight",
+    "en",
+    "base_model:openbmb/MiniCPM-V-4.7-1B",
+    "base_model:quantized:openbmb/MiniCPM-V-4.7-1B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 2190,
+  "trending_score": 0,
+  "parameters": 1006209856,
+  "parameters_human": "1.01B",
+  "storage_bytes": 13869368544,
+  "storage_human": "13.9 GB",
+  "base_model": "openbmb/MiniCPM-V-4.7-1B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Luno 4k60FPS | Gizzmodeus on Patreon",
+      "url": "https://www.patreon.com/Gizzmodeus/posts/luno-4k60fps-136567084",
+      "snippet": "Aug 15, 2025 · New Juno/Legosi animation, hope yall enjoy it!... To access this whole post, join Patreon today. When you become a …Read more"
+    },
+    {
+      "title": "Luno 4k60FPS | Gizzmodeus - Patreon",
+      "url": "https://www.patreon.com/posts/luno-4k60fps-136567084",
+      "snippet": "Aug 15, 2025 · New Juno/Legosi animation, hope yall enjoy it!... To access this whole post, join Patreon today. When you become a …"
+    },
+    {
+      "title": "That's not Juno... Made something different. Messed with @SoxF0x 's ...",
+      "url": "https://x.com/Gizzmodeus/status/1970590519014338967",
+      "snippet": "Sep 23, 2025 · Gizzmodeus (@Gizzmodeus). 382 likes 6 replies. That's not Juno... Made something different. Messed with …"
+    },
+    {
+      "title": "Gizmodeus - YouTube",
+      "url": "https://www.youtube.com/@GizmodeusMusic/featured",
+      "snippet": "Discover the latest releases, behind-the-scenes looks at the creative process, and the fusion of human emotion with artificial …"
+    },
+    {
+      "title": "#5709270 - e621",
+      "url": "https://e621.net/posts/5709270",
+      "snippet": "Two Factor Authentication (2FA) is now here! Accounts all over the furriverse and beyond have been getting attacked and …"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "yama-kiyo/MiniMax-H3-ORB360-Vertical-LoRA",
+  "slug": "yama-kiyo-minimax-h3-orb360-vertical-lora",
+  "author": "yama-kiyo",
+  "url": "https://huggingface.co/yama-kiyo/MiniMax-H3-ORB360-Vertical-LoRA",
+  "created_at": "2026-10-14T15:53:55.000Z",
+  "updated_at": "2026-10-14T15:54:08.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "lora",
+    "video",
+    "video-generation",
+    "ref2va",
+    "camera-control",
+    "orbit",
+    "vertical-orbit",
+    "novel-view",
+    "image-to-video",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:adapter:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 75669770,
+  "storage_human": "76 MB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yama — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Yama",
+      "snippet": "Il est décrit de façon populaire comme le juge des morts qui se tient à la porte des enfers, qui pèse leurs bonnes et leurs mauvaises …"
+    },
+    {
+      "title": "DYSTINCT - YAMA (Official Music Video) - YouTube",
+      "url": "https://www.youtube.com/watch?v=QRHhWwdX59k",
+      "snippet": "Subscribe to our channel! Listen to 'DYSTINCT - YAMA' in the link belowhttps://dystinctofficial.lnk.to/YAMA★ DYSTINCT • …"
+    },
+    {
+      "title": "Yama | Blox Fruits Wiki | Fandom",
+      "url": "https://blox-fruits.fandom.com/wiki/Yama",
+      "snippet": "In Buddhism, Yama is the King of Hell, named after Yāma — the third of the six heavenly worlds in the desire realm. The sword could …"
+    },
+    {
+      "title": "yama OFFICIAL SITE",
+      "url": "https://yamaofficial.com/en/",
+      "snippet": "Jun 14, 2026 · yama is a solo singer known for a clear, ethereal voice, emotionally nuanced performances that capture feelings of …"
+    },
+    {
+      "title": "Yama • Ecole de Yoga Aix-en-Provence • Yoga Marseille • Ashtanga",
+      "url": "https://www.yama-yoga.fr/",
+      "snippet": "Yama est une « école » et non un centre ou un studio de yoga. Les enseignants travaillent en étroite collaboration et veillent …"
+    }
+  ]
+}

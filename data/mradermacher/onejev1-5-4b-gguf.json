@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mradermacher/OneJev1.5-4B-GGUF",
+  "slug": "mradermacher-onejev1-5-4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/OneJev1.5-4B-GGUF",
+  "created_at": "2026-10-14T02:10:22.000Z",
+  "updated_at": "2026-10-14T02:34:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "onejev",
+    "system-one",
+    "decision-model",
+    "calibration",
+    "multimodal",
+    "gui-agent",
+    "video",
+    "en",
+    "base_model:OmniJev/OneJev1.5-4B",
+    "base_model:quantized:OmniJev/OneJev1.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 80,
+  "trending_score": 0,
+  "parameters": 4841450496,
+  "parameters_human": "4.84B",
+  "storage_bytes": 45368963456,
+  "storage_human": "45.4 GB",
+  "base_model": "OmniJev/OneJev1.5-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/OneJev1.5-4B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/OneJev1.5-4B-GGUF",
+      "snippet": "mradermacher / OneJev1.5-4B-GGUF Like 0 Transformers GGUF English onejev system-one decision-model calibration multimodal gui-agent video conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "GitHub - OmniJev/OneJev: A multimodal System One decision model that ...",
+      "url": "https://github.com/OmniJev/OneJev",
+      "snippet": "English · 简体中文 · 日本語 OneJev is a multimodal System One decision model. It returns calibrated probabilities for typed questions about screenshots, photos, videos and text in a single forward pass. Available in 0.8B, 4B, 9B and 27B."
+    },
+    {
+      "title": "MedGemma — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/medgemma/",
+      "snippet": "MedGemma 1.5 4B enables developers to more effectively adapt MedGemma for applications that involve high-dimensional imaging (CT, MRI, and whole slide histopathology), longitudinal analysis of chest X-rays, anatomical localization, and other medical imaging and text functionality."
+    },
+    {
+      "title": "Google AI Releases MedGemma-1.5: The Latest Update to their Open ...",
+      "url": "https://www.marktechpost.com/2026/01/13/google-ai-releases-medgemma-1-5-the-latest-update-to-their-open-medical-ai-models-for-developers/",
+      "snippet": "Google Research has expanded its Health AI Developer Foundations program (HAI-DEF) with the release of MedGemma-1.5. The model is released as open starting points for developers who want to build medical imaging, text and speech systems and then adapt them to local workflows and regulations."
+    }
+  ]
+}

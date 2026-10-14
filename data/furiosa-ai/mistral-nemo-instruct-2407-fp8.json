@@ -5,7 +5,7 @@
   "author": "furiosa-ai",
   "url": "https://huggingface.co/furiosa-ai/Mistral-Nemo-Instruct-2407-FP8",
   "created_at": "2026-08-10T08:23:02.000Z",
-  "updated_at": "2026-09-10T02:20:15.000Z",
+  "updated_at": "2026-10-14T08:14:42.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -30,12 +30,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 1358,
+  "downloads_30d": 1398,
   "trending_score": 0,
   "parameters": 12247782400,
   "parameters_human": "12.25B",
-  "storage_bytes": 16675988595,
-  "storage_human": "16.7 GB",
+  "storage_bytes": 17716037856,
+  "storage_human": "17.7 GB",
   "base_model": "RedHatAI/Mistral-Nemo-Instruct-2407-FP8",
   "formats": [
     "safetensors"

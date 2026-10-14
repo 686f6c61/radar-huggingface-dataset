@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Bigchilli1978/reggie-chronicles-whitepaper",
+  "slug": "bigchilli1978-reggie-chronicles-whitepaper",
+  "author": "Bigchilli1978",
+  "url": "https://huggingface.co/Bigchilli1978/reggie-chronicles-whitepaper",
+  "created_at": "2026-10-14T15:36:44.000Z",
+  "updated_at": "2026-10-14T15:37:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sovereign-ai",
+    "edge-computing",
+    "local-llm",
+    "iot-recovery",
+    "cybernetic-intelligence",
+    "canadian-ai",
+    "whitepaper",
+    "llama-cpp",
+    "gguf",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accueil impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/accueil",
+      "snippet": "Sep 28, 2026 · L'aide de 100 € pour les grands rouleurs a été renouvelée et étendue pour la période d'octobre à décembre 2026. …"
+    },
+    {
+      "title": "Particulier - impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/particulier",
+      "snippet": "À la une Particulier Professionnel Vérifiez si vous pouvez bénéficier de l'aide de 100 € pour les travailleurs « grands rouleurs » Publié …"
+    },
+    {
+      "title": "J'accède à mon espace Finances publiques et à mes services en ligne",
+      "url": "https://www.impots.gouv.fr/particulier/jaccede-mon-espace-particulier-et-mes-services-en-ligne",
+      "snippet": "Mar 30, 2016 · Créer et accéder à mon espace Le site impots.gouv.fr vous propose des accès simplifiés pour vous connecter à votre …"
+    },
+    {
+      "title": "Professionnel - impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/professionnel",
+      "snippet": "À la une Particulier Professionnel Vérifiez si vous pouvez bénéficier de l'aide de 100 € pour les travailleurs « grands rouleurs » Publié …"
+    },
+    {
+      "title": "Your personal account - impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/international-particulier/your-personal-account",
+      "snippet": "Jun 19, 2017 · The impots.gouv.fr website provides two simple ways for you to log in to your personal account : using your …"
+    }
+  ]
+}

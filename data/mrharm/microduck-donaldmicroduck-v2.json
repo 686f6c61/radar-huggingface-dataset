@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "mrharm/microduck-donaldmicroduck-v2",
+  "slug": "mrharm-microduck-donaldmicroduck-v2",
+  "author": "mrharm",
+  "url": "https://huggingface.co/mrharm/microduck-donaldmicroduck-v2",
+  "created_at": "2026-10-14T17:03:15.000Z",
+  "updated_at": "2026-10-14T17:03:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5649539,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Diablo IV Forums",
+      "url": "https://us.forums.blizzard.com/en/d4/top",
+      "snippet": "Mar 18, 2023 · Explore discussions and updates on Diablo IV, share experiences, and connect with the community on the official …"
+    },
+    {
+      "title": "Latest topics - Diablo IV Forums",
+      "url": "https://us.forums.blizzard.com/en/d4/latest",
+      "snippet": "1 day ago · Explore the latest topics, discussions, and updates about Diablo IV on the official forums."
+    },
+    {
+      "title": "Server Location List? - Technical Support - Diablo IV Forums",
+      "url": "https://us.forums.blizzard.com/en/d4/t/server-location-list/22279",
+      "snippet": "May 27, 2023 · Hello, can I please have a list of server locations for Diablo 4? Not regions, I’m in South Africa and want to see what’s …"
+    },
+    {
+      "title": "Server Status, New Season - PC General Discussion - Diablo IV Forums",
+      "url": "https://us.forums.blizzard.com/en/d4/t/server-status-new-season/266694",
+      "snippet": "Sep 15, 2026 · We are aware of an issue that is affecting aur authentifi….. blab bla bla. Cmon Blizzard, Its been14 seasons of D4 …"
+    },
+    {
+      "title": "Latest Technical Support topics - Diablo IV Forums",
+      "url": "https://us.forums.blizzard.com/en/d4/c/technical-support/9",
+      "snippet": "6 days ago · Share issues that prevent you from launching, installing, or staying connected to Diablo IV."
+    }
+  ]
+}

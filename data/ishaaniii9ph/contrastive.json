@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Ishaaniii9ph/contrastive",
+  "slug": "ishaaniii9ph-contrastive",
+  "author": "Ishaaniii9ph",
+  "url": "https://huggingface.co/Ishaaniii9ph/contrastive",
+  "created_at": "2026-10-14T02:41:51.000Z",
+  "updated_at": "2026-10-14T02:41:57.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "pytorch",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SUGGESTION Synonyms: 95 Similar and Opposite Words - Merriam …",
+      "url": "https://www.merriam-webster.com/thesaurus/suggestion",
+      "snippet": "3 days ago · Synonyms for SUGGESTION: indication, clue, cue, hint, idea, sign, intimation, suspicion; Antonyms of SUGGESTION: …"
+    },
+    {
+      "title": "SUGGESTION Synonyms & Antonyms - 127 words - Thesaurus.com",
+      "url": "https://www.thesaurus.com/browse/suggestion",
+      "snippet": "Find 127 different ways to say SUGGESTION, along with antonyms, related words, and example sentences at Thesaurus.com."
+    },
+    {
+      "title": "Suggestion, tous les synonymes",
+      "url": "https://www.synonymo.fr/synonyme/suggestion",
+      "snippet": "Peur et inquiétude sont deux synonymes que l’on retrouve dans ce dictionnaire des synonymes en ligne. Le dictionnaire des …"
+    },
+    {
+      "title": "SUGGESTION - 35 Synonyms and Antonyms - Cambridge English",
+      "url": "https://dictionary.cambridge.org/thesaurus/suggestion",
+      "snippet": "Go to the thesaurus article about these synonyms and antonyms of suggestion. A suggestion is an idea, an action, a plan, etc. that …"
+    },
+    {
+      "title": "What is another word for suggestion? | Suggestion Synonyms - WordHippo",
+      "url": "https://www.wordhippo.com/what-is/another-word-for/suggestion.html",
+      "snippet": "Find 5,731 synonyms for suggestion and other similar words that you can use instead based on 29 separate contexts from our …"
+    }
+  ]
+}

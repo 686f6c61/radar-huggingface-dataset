@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "tadiecool29/AfriqueQwen3.5-4B-Amharic-Stance-Sentiment-LoRA-FT",
+  "slug": "tadiecool29-afriqueqwen3-5-4b-amharic-stance-sentiment-lora-ft",
+  "author": "tadiecool29",
+  "url": "https://huggingface.co/tadiecool29/AfriqueQwen3.5-4B-Amharic-Stance-Sentiment-LoRA-FT",
+  "created_at": "2026-10-14T17:07:05.000Z",
+  "updated_at": "2026-10-14T17:07:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [
+    "am"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "text-classification",
+    "stance-detection",
+    "sentiment-analysis",
+    "amharic",
+    "qwen",
+    "am",
+    "dataset:tadiecool29/Amharic_Stance_Sentiment_Normalized_Stratified",
+    "arxiv:1910.09700",
+    "base_model:McGill-NLP/AfriqueQwen3.5-4B",
+    "base_model:adapter:McGill-NLP/AfriqueQwen3.5-4B",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 104958012,
+  "storage_human": "105 MB",
+  "base_model": "McGill-NLP/AfriqueQwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "Amharic_Stance_Sentiment_Normalized_Stratified",
+      "metric": "Stance Accuracy",
+      "value": 0.6146
+    },
+    {
+      "task": null,
+      "dataset": "Amharic_Stance_Sentiment_Normalized_Stratified",
+      "metric": "Stance Macro-F1",
+      "value": 0.6219
+    },
+    {
+      "task": null,
+      "dataset": "Amharic_Stance_Sentiment_Normalized_Stratified",
+      "metric": "Sentiment Accuracy",
+      "value": 0.6645
+    },
+    {
+      "task": null,
+      "dataset": "Amharic_Stance_Sentiment_Normalized_Stratified",
+      "metric": "Sentiment Macro-F1",
+      "value": 0.6622
+    },
+    {
+      "task": null,
+      "dataset": "Amharic_Stance_Sentiment_Normalized_Stratified",
+      "metric": "Avg Macro F1",
+      "value": 0.642
+    }
+  ],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=created",
+      "snippet": "tadiecool29/AfriqueQwen3.5-4B-Amharic-Stance-Sentiment-LoRA-FT. Text Classification • Updated in about 17 hours · Kyrkos/extra_loras. Updated in about 17 hours ..."
+    }
+  ]
+}

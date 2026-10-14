@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "adipotnis/pi05-xarm-charging3cam-tag",
+  "slug": "adipotnis-pi05-xarm-charging3cam-tag",
+  "author": "adipotnis",
+  "url": "https://huggingface.co/adipotnis/pi05-xarm-charging3cam-tag",
+  "created_at": "2026-10-14T15:57:41.000Z",
+  "updated_at": "2026-10-14T15:58:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "pi0.5",
+    "tag",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7233650408,
+  "storage_human": "7.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Peace Sign Yin Yang - Etsy",
+      "url": "https://www.etsy.com/market/peace_sign_yin_yang?msockid=06d3600fbe676e6d16ab77fdbfaa6fc5",
+      "snippet": "Discover unique peace sign yin yang decor, perfect for mindful living and spiritual spaces. Explore art prints, garden plaques, and …"
+    },
+    {
+      "title": "Ying Yang Heart royalty-free images - Shutterstock",
+      "url": "https://www.shutterstock.com/search/ying-yang-heart?msockid=06d3600fbe676e6d16ab77fdbfaa6fc5",
+      "snippet": "Find 709 Ying Yang Heart stock images in HD and millions of other royalty-free stock photos, 3D objects, illustrations and vectors in …"
+    },
+    {
+      "title": "Yin Yang Heart royalty-free images - Shutterstock",
+      "url": "https://www.shutterstock.com/search/yin-yang-heart?msockid=06d3600fbe676e6d16ab77fdbfaa6fc5",
+      "snippet": "A vibrant image featuring a yin yang symbol with hearts scattered around it, set against a blue background. The yin yang symbol is …"
+    },
+    {
+      "title": "Yin Yang Peace Sign - Pinterest",
+      "url": "https://www.pinterest.com/ideas/yin-yang-peace-sign/901142677580/",
+      "snippet": "There are number of signs and symbols of peace that are very effective in communicating the need. While some are contemporary, …"
+    },
+    {
+      "title": "290 Peace signs and Yin yang... ideas | yin yang, peace, peace sign art",
+      "url": "https://www.pinterest.com/erikacampise13/peace-signs-and-yin-yang/",
+      "snippet": "Jan 4, 2023 - Explore Erika Campise's board \"Peace signs and Yin yang...\", followed by 104 people on Pinterest. See more ideas …"
+    }
+  ]
+}

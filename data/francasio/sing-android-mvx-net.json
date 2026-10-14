@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Francasio/sing-android-mvx-net",
+  "slug": "francasio-sing-android-mvx-net",
+  "author": "Francasio",
+  "url": "https://huggingface.co/Francasio/sing-android-mvx-net",
+  "created_at": "2026-10-14T17:31:08.000Z",
+  "updated_at": "2026-10-14T17:32:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tflite",
+    "onnx",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 196712886,
+  "storage_human": "197 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Welcome to Transavia",
+      "url": "https://www.transavia.com/?msockid=353183f5ba6c6acf08b19407bbc76b7f",
+      "snippet": "Want to fly affordably to more than 100 destinations in Europe? Book a flight with TransaviaRead more"
+    },
+    {
+      "title": "Reserva billetes económicos en Transavia",
+      "url": "https://www.transavia.com/inicio/es-es?msockid=353183f5ba6c6acf08b19407bbc76b7f",
+      "snippet": "Reserva billetes económicos a más de 100 destinos en Europa con Transavia."
+    },
+    {
+      "title": "Revente de billet Transavia : Rapide, sécurisée, 100% en ligne",
+      "url": "https://resale.transavia.com/",
+      "snippet": "Un imprévu ? Revendez votre billet Transavia en quelques clics grâce à notre service simple, sécurisé et 100% conforme à …"
+    },
+    {
+      "title": "Advancing Algorithmic Hate Speech Detection in Online ... - Refubium",
+      "url": "https://refubium.fu-berlin.de/bitstream/fub188/50475/4/PhD_Thesis_Fillies.pdf",
+      "snippet": "... Model-View-Controller (MVC) approach for handling ... Given the need for acceleration for specific AI model architectures like transformer-based models,."
+    },
+    {
+      "title": "Resell your Transavia ticket: Fast, secure, 100% online",
+      "url": "https://resale.transavia.com/en",
+      "snippet": "An unexpected event? Resell your Transavia ticket in a few clicks thanks to our simple, secure service, 100% compliant with the …"
+    }
+  ]
+}

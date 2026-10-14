@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "rominajately/cs329x-hw1-dpo",
+  "slug": "rominajately-cs329x-hw1-dpo",
+  "author": "rominajately",
+  "url": "https://huggingface.co/rominajately/cs329x-hw1-dpo",
+  "created_at": "2026-10-14T02:08:10.000Z",
+  "updated_at": "2026-10-14T02:09:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+    "base_model:adapter:TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5023292,
+  "storage_human": "5 MB",
+  "base_model": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aliu917/cs329x-hw1-dpo-model · Hugging Face",
+      "url": "https://huggingface.co/aliu917/cs329x-hw1-dpo-model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ChenChen2005/cs329x-hw1-dpo-qwen25-20261010 · Hugging Face",
+      "url": "https://huggingface.co/ChenChen2005/cs329x-hw1-dpo-qwen25-20261010",
+      "snippet": "Instructions to use ChenChen2005/cs329x-hw1-dpo-qwen25-20261010 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "cs329x_hw1_dpo_model API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/asattira/cs329x_hw1_dpo_model",
+      "snippet": "Deploy cs329x_hw1_dpo_model with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "cs329x-hw1-dpo-model — AI Compliance Status Across 52 Jurisdictions | Nerq",
+      "url": "https://nerq.ai/agent/f09daabf-3a1b-47f6-a639-a9bbed8bb14c",
+      "snippet": "About This Assessment cs329x-hw1-dpo-model is a model sourced from huggingface_full, authored by aliu917. It operates in the nlp domain. Across global AI regulations, it is classified as minimal risk. Nerq has assessed this agent against 52 global AI regulations, finding it to be high risk or restricted in 0 jurisdictions, subject to transparency or limited requirements in 0 jurisdictions, and ..."
+    },
+    {
+      "title": "GitHub - bperk25/WokeAgents: CS329X Final Project",
+      "url": "https://github.com/bperk25/WokeAgents",
+      "snippet": "CS329X Final Project . Contribute to bperk25/WokeAgents development by creating an account on GitHub."
+    }
+  ]
+}

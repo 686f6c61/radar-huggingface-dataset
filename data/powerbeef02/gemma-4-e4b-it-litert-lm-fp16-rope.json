@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "PowerBeef02/gemma-4-E4B-it-litert-lm-fp16-rope",
+  "slug": "powerbeef02-gemma-4-e4b-it-litert-lm-fp16-rope",
+  "author": "PowerBeef02",
+  "url": "https://huggingface.co/PowerBeef02/gemma-4-E4B-it-litert-lm-fp16-rope",
+  "created_at": "2026-10-14T02:38:00.000Z",
+  "updated_at": "2026-10-14T02:38:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "litert-lm",
+  "languages": [],
+  "tags": [
+    "litert-lm",
+    "gemma4",
+    "on-device",
+    "base_model:litert-community/gemma-4-E4B-it-litert-lm",
+    "base_model:finetune:litert-community/gemma-4-E4B-it-litert-lm",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3659988992,
+  "storage_human": "3.7 GB",
+  "base_model": "litert-community/gemma-4-E4B-it-litert-lm",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cheap flights from Bangkok Suvarnabhumi Airport - Skyscanner",
+      "url": "https://www.skyscanner.net/flights-from/bkk/cheap-flights-from-bangkok-suvarnabhumi-airport.html?msockid=16d013b115bd63ad19480443147162a7",
+      "snippet": "Find cheap tickets from Bangkok Suvarnabhumi Airport using Skyscanner. Compare major airlines and online travel agents for flights …"
+    },
+    {
+      "title": "Cheap Flights to Ghana from £250 in 2027 | www.skyscanner.net",
+      "url": "https://www.skyscanner.net/flights-to/gh/cheap-flights-to-ghana.html?msockid=16d013b115bd63ad19480443147162a7",
+      "snippet": "Find cheap flights to Ghana from £250. Compare every airline, find the best time to fly, and the best route, all with no added fees."
+    },
+    {
+      "title": "Skyscanner | 以最快的速度找到最便宜的機票，節省您的時間和金錢！",
+      "url": "https://www.skyscanner.net/mo/zh-tw/mop/?msockid=16d013b115bd63ad19480443147162a7",
+      "snippet": "如何能使用 Skyscanner 找到最便宜的航班？ 在這裡可以輕鬆找到航班，每個月都有超過 1 億名精明的旅客前來尋找便宜的機票、飯 …"
+    },
+    {
+      "title": "Cheap flights from Budapest Airport from £24 | Skyscanner",
+      "url": "https://www.skyscanner.net/flights-from/bud/cheap-flights-from-budapest-airport.html?msockid=16d013b115bd63ad19480443147162a7",
+      "snippet": "Find cheap tickets from Budapest Airport using Skyscanner. Compare major airlines and online travel agents for flights from …"
+    },
+    {
+      "title": "Cheap Flights from London (LOND) to Belfast (BELF) - Skyscanner",
+      "url": "https://www.skyscanner.net/routes/lond/belf/london-to-belfast.html?msockid=16d013b115bd63ad19480443147162a7",
+      "snippet": "Compare cheap flights and find tickets from London (LOND) to Belfast (BELF). Book directly with no added fees."
+    }
+  ]
+}

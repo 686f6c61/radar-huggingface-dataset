@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "weerawhin/microduck-sprint-2m-weewoo",
+  "slug": "weerawhin-microduck-sprint-2m-weewoo",
+  "author": "weerawhin",
+  "url": "https://huggingface.co/weerawhin/microduck-sprint-2m-weewoo",
+  "created_at": "2026-10-14T02:13:05.000Z",
+  "updated_at": "2026-10-14T02:13:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5643314,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "weerawhin/microduck-weee · Hugging Face",
+      "url": "https://huggingface.co/weerawhin/microduck-weee",
+      "snippet": "Instructions to use weerawhin/microduck-weee with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Microduck How to use weerawhin/microduck-weee with Microduck: # Replace SLOT with the slot specified in the model card (walk, stand, sitstand, ground_pick, kick_left, kick_right, roulade). sudo robotctl policy load SLOT weerawhin/microduck ..."
+    },
+    {
+      "title": "Microduck - A tiny biped robot you can teach new tricks | Pollen Robotics",
+      "url": "https://pollen-robotics.com/microduck/",
+      "snippet": "Microduck is a 25 cm biped robot with 15 motors, a camera, LiDAR and a grasping beak. Playable out of the box, and its open-source stack lets you train new behaviours in simulation and run them on the robot. Pre-order at $399."
+    },
+    {
+      "title": "README.md · pollen-robotics/microduck-sprint-2m-reference at refs/pr/1",
+      "url": "https://huggingface.co/pollen-robotics/microduck-sprint-2m-reference/blob/refs%2Fpr%2F1/README.md",
+      "snippet": "Pollen&#x27;s reference for the Microduck Arena&#x27;s 2 m Sprint: the sprint_2m challenge of microduck-challenges trained unchanged with its recipe (4096 envs, 3000 iterations, seed 1); checkpoint 1000, its fastest on the Arena. A perpetual policy for the microduck (61-D observation, 14 actions, 50 Hz). Runs until told otherwise — a gait for the walk ..."
+    },
+    {
+      "title": "GitHub - AI-FanGe/Microduck-build-tutorial: A practical hardware and ...",
+      "url": "https://github.com/AI-FanGe/Microduck-build-tutorial",
+      "snippet": "A practical hardware and software setup for a compact RL-powered biped robot. - AI-FanGe/Microduck-build-tutorial"
+    },
+    {
+      "title": "GitHub - pollen-robotics/microduck: A Tiny biped duck robot",
+      "url": "https://github.com/pollen-robotics/microduck",
+      "snippet": "A Tiny biped duck robot 🦆. Contribute to pollen-robotics/microduck development by creating an account on GitHub."
+    }
+  ]
+}
