@@ -27,11 +27,10 @@
     "base_model:quantized:donghongjiang/SkillReason-embedding-4b",
     "license:apache-2.0",
     "endpoints_compatible",
-    "region:us",
-    "conversational"
+    "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 392,
+  "downloads_30d": 277,
   "trending_score": 0,
   "parameters": 4021774336,
   "parameters_human": "4.02B",
@@ -41,7 +40,7 @@
   "formats": [
     "gguf"
   ],
-  "is_conversational": true,
+  "is_conversational": false,
   "gated": false,
   "removed": false,
   "removed_at": null,

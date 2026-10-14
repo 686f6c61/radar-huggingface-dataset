@@ -5,7 +5,7 @@
   "author": "thepatch",
   "url": "https://huggingface.co/thepatch/foundation-1-GGUF",
   "created_at": "2026-09-06T02:21:32.000Z",
-  "updated_at": "2026-09-06T02:22:10.000Z",
+  "updated_at": "2026-10-14T03:38:34.000Z",
   "license": "stability-ai-community",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": 1057335680,
   "parameters_human": "1.06B",
-  "storage_bytes": 5690933632,
-  "storage_human": "5.7 GB",
+  "storage_bytes": 5846991296,
+  "storage_human": "5.8 GB",
   "base_model": null,
   "formats": [
     "gguf"

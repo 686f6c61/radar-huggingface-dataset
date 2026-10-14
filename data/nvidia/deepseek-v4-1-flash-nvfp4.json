@@ -29,13 +29,13 @@
     "fp8",
     "region:us"
   ],
-  "likes": 105,
-  "downloads_30d": 25584,
+  "likes": 108,
+  "downloads_30d": 25752,
   "trending_score": 11,
   "parameters": 763205315794,
   "parameters_human": "763.21B",
-  "storage_bytes": 527309220165,
-  "storage_human": "527.3 GB",
+  "storage_bytes": 632075373517,
+  "storage_human": "632.1 GB",
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
   "formats": [
     "safetensors"

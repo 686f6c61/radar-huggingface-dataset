@@ -5,7 +5,7 @@
   "author": "ybc-lw",
   "url": "https://huggingface.co/ybc-lw/ouatlm",
   "created_at": "2026-08-26T17:22:21.000Z",
-  "updated_at": "2026-09-10T15:53:43.000Z",
+  "updated_at": "2026-10-13T17:11:15.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -23,12 +23,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 255,
+  "downloads_30d": 410,
   "trending_score": 0,
   "parameters": 804992,
   "parameters_human": "804992",
-  "storage_bytes": 6668216,
-  "storage_human": "7 MB",
+  "storage_bytes": 1614976,
+  "storage_human": "2 MB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -21,10 +21,11 @@
     "base_model:ggml-org/embeddinggemma-300M-GGUF",
     "base_model:quantized:ggml-org/embeddinggemma-300M-GGUF",
     "endpoints_compatible",
-    "region:us"
+    "region:us",
+    "feature-extraction"
   ],
   "likes": 2,
-  "downloads_30d": 169,
+  "downloads_30d": 69,
   "trending_score": 0,
   "parameters": 307581696,
   "parameters_human": "307.6M",

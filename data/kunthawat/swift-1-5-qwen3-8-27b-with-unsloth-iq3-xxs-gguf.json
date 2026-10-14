@@ -5,7 +5,7 @@
   "author": "kunthawat",
   "url": "https://huggingface.co/kunthawat/swift-1.5-qwen3.8-27b-with-unsloth-iq3-xxs-gguf",
   "created_at": "2026-09-30T03:03:59.000Z",
-  "updated_at": "2026-09-30T03:50:24.000Z",
+  "updated_at": "2026-10-14T02:15:11.000Z",
   "license": "swift-open-license-v1.0-apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -31,7 +31,7 @@
   "trending_score": 0,
   "parameters": 460730096,
   "parameters_human": "460.7M",
-  "storage_bytes": 11862466976,
+  "storage_bytes": 11862466880,
   "storage_human": "11.9 GB",
   "base_model": "ukisai/Swift-1.5-Qwen3.8-27b",
   "formats": [

@@ -5,7 +5,7 @@
   "author": "bartowski",
   "url": "https://huggingface.co/bartowski/Qwen3.8-Flash-Next-GGUF",
   "created_at": "2026-08-28T12:21:10.000Z",
-  "updated_at": "2026-08-29T00:13:26.000Z",
+  "updated_at": "2026-10-13T15:37:21.000Z",
   "license": "qwen-community-1.0",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -22,12 +22,12 @@
     "conversational"
   ],
   "likes": 43,
-  "downloads_30d": 54336,
+  "downloads_30d": 73639,
   "trending_score": 8,
   "parameters": 176943899520,
   "parameters_human": "176.94B",
-  "storage_bytes": 3053717138784,
-  "storage_human": "3053.7 GB",
+  "storage_bytes": 3067824981184,
+  "storage_human": "3067.8 GB",
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "gguf"

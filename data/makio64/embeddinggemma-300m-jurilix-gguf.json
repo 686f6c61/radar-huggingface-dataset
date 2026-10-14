@@ -21,7 +21,8 @@
     "base_model:quantized:google/embeddinggemma-300m",
     "license:gemma",
     "endpoints_compatible",
-    "region:us"
+    "region:us",
+    "feature-extraction"
   ],
   "likes": 0,
   "downloads_30d": 130,

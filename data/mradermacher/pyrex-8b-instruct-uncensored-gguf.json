@@ -5,10 +5,10 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Pyrex-8B-Instruct-Uncensored-GGUF",
   "created_at": "2026-10-04T01:48:47.000Z",
-  "updated_at": "2026-10-10T04:03:20.000Z",
+  "updated_at": "2026-10-13T05:08:17.000Z",
   "license": "mit",
   "license_family": "oss",
-  "pipeline_tag": null,
+  "pipeline_tag": "text-generation",
   "library": "transformers",
   "languages": [
     "en"
@@ -20,6 +20,7 @@
     "uncensored",
     "pytorch",
     "llama-cpp",
+    "text-generation",
     "en",
     "dataset:OpenCoder-LLM/opencoder-sft-stage1",
     "dataset:sahil2801/CodeAlpaca-20k",
@@ -34,7 +35,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 960,
+  "downloads_30d": 971,
   "trending_score": 0,
   "parameters": 7615616512,
   "parameters_human": "7.62B",

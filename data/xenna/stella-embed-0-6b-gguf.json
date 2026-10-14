@@ -22,7 +22,8 @@
     "en",
     "license:apache-2.0",
     "endpoints_compatible",
-    "region:us"
+    "region:us",
+    "feature-extraction"
   ],
   "likes": 0,
   "downloads_30d": 79,

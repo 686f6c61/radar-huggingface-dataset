@@ -23,9 +23,11 @@
     "endpoints_compatible",
     "8-bit",
     "fp8",
+    "deploy:azure",
+    "deploy:sagemaker",
     "region:us"
   ],
-  "likes": 4475,
+  "likes": 4481,
   "downloads_30d": 1272612,
   "trending_score": 156,
   "parameters": 763205315794,

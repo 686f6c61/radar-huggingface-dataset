@@ -5,7 +5,7 @@
   "author": "furiosa-ai",
   "url": "https://huggingface.co/furiosa-ai/gemma-4-31B-it-FP8-block",
   "created_at": "2026-08-31T15:32:11.000Z",
-  "updated_at": "2026-09-10T02:20:32.000Z",
+  "updated_at": "2026-10-14T08:16:07.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -29,12 +29,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 1128,
+  "downloads_30d": 1133,
   "trending_score": 0,
   "parameters": 31273088876,
   "parameters_human": "31.27B",
-  "storage_bytes": 39689591314,
-  "storage_human": "39.7 GB",
+  "storage_bytes": 41337387664,
+  "storage_human": "41.3 GB",
   "base_model": "RedHatAI/gemma-4-31B-it-FP8-block",
   "formats": [
     "safetensors"

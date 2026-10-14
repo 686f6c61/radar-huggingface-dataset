@@ -5,7 +5,7 @@
   "author": "HorizonRobotics",
   "url": "https://huggingface.co/HorizonRobotics/Ego4WAM",
   "created_at": "2026-09-29T13:58:27.000Z",
-  "updated_at": "2026-09-29T14:12:42.000Z",
+  "updated_at": "2026-10-13T06:26:01.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -18,6 +18,7 @@
     "vision-language-action",
     "world-model",
     "robodojo",
+    "arxiv:2609.40341",
     "base_model:Wan-AI/Wan2.2-TI2V-5B-Diffusers",
     "base_model:finetune:Wan-AI/Wan2.2-TI2V-5B-Diffusers",
     "license:apache-2.0",
@@ -28,8 +29,8 @@
   "trending_score": 0,
   "parameters": 13456608092,
   "parameters_human": "13.46B",
-  "storage_bytes": 26934863796,
-  "storage_human": "26.9 GB",
+  "storage_bytes": 53848341820,
+  "storage_human": "53.8 GB",
   "base_model": "Wan-AI/Wan2.2-TI2V-5B-Diffusers, google/umt5-xxl",
   "formats": [
     "safetensors"

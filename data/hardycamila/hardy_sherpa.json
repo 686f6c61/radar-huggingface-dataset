@@ -5,7 +5,7 @@
   "author": "HardyCamila",
   "url": "https://huggingface.co/HardyCamila/hardy_sherpa",
   "created_at": "2026-09-08T05:08:12.000Z",
-  "updated_at": "2026-10-12T14:33:18.000Z",
+  "updated_at": "2026-10-14T04:16:01.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -19,12 +19,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 147,
+  "downloads_30d": 150,
   "trending_score": 0,
   "parameters": 752161600,
   "parameters_human": "752.2M",
-  "storage_bytes": 8104136320,
-  "storage_human": "8.1 GB",
+  "storage_bytes": 8264951793,
+  "storage_human": "8.3 GB",
   "base_model": null,
   "formats": [
     "gguf"

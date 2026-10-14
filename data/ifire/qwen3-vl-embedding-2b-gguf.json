@@ -26,10 +26,10 @@
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us",
-    "conversational"
+    "feature-extraction"
   ],
   "likes": 0,
-  "downloads_30d": 130,
+  "downloads_30d": 110,
   "trending_score": 0,
   "parameters": 1720574976,
   "parameters_human": "1.72B",
@@ -39,7 +39,7 @@
   "formats": [
     "gguf"
   ],
-  "is_conversational": true,
+  "is_conversational": false,
   "gated": false,
   "removed": false,
   "removed_at": null,

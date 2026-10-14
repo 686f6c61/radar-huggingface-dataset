@@ -5,7 +5,7 @@
   "author": "RikkaBotan",
   "url": "https://huggingface.co/RikkaBotan/NexteraBERT-Mezzoforte-220M-en",
   "created_at": "2026-09-12T02:43:21.000Z",
-  "updated_at": "2026-10-11T07:57:35.000Z",
+  "updated_at": "2026-10-14T01:28:46.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "fill-mask",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 15,
-  "downloads_30d": 502,
+  "downloads_30d": 515,
   "trending_score": 11,
   "parameters": 212633600,
   "parameters_human": "212.6M",

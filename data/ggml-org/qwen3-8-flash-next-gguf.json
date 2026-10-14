@@ -5,7 +5,7 @@
   "author": "ggml-org",
   "url": "https://huggingface.co/ggml-org/Qwen3.8-Flash-Next-GGUF",
   "created_at": "2026-08-27T17:57:50.000Z",
-  "updated_at": "2026-09-30T19:58:32.000Z",
+  "updated_at": "2026-10-13T20:35:19.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -23,12 +23,12 @@
     "conversational"
   ],
   "likes": 31,
-  "downloads_30d": 30958,
+  "downloads_30d": 32384,
   "trending_score": 10,
   "parameters": 176943899520,
   "parameters_human": "176.94B",
-  "storage_bytes": 279409236544,
-  "storage_human": "279.4 GB",
+  "storage_bytes": 362538014976,
+  "storage_human": "362.5 GB",
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "gguf"
