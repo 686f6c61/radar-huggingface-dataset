@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "seekdepth/Reinforce-CartPole-v1",
+  "slug": "seekdepth-reinforce-cartpole-v1",
+  "author": "seekdepth",
+  "url": "https://huggingface.co/seekdepth/Reinforce-CartPole-v1",
+  "created_at": "2026-10-14T00:13:57.000Z",
+  "updated_at": "2026-10-14T00:15:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "CartPole-v1",
+    "reinforce",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-class",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3264,
+  "storage_human": "3264 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ari8/Reinforce-CartPole-v1 · Hugging Face",
+      "url": "https://huggingface.co/Ari8/Reinforce-CartPole-v1",
+      "snippet": "Ari8 / Reinforce-CartPole-v1 like 0 Reinforcement Learning CartPole-v1 reinforce custom-implementation deep-rl-class Eval Results Model card FilesFiles and versions Community Reinforce Agent playing CartPole-v1"
+    },
+    {
+      "title": "Ascrewdriver/Reinforce-CartPole-v1 · Hugging Face",
+      "url": "https://huggingface.co/Ascrewdriver/Reinforce-CartPole-v1",
+      "snippet": "Ascrewdriver / Reinforce-CartPole-v1 like 0 Reinforcement Learning CartPole-v1 reinforce custom-implementation deep-rl-class Eval Results Model card FilesFiles and versions Community Reinforce Agent playing CartPole-v1"
+    },
+    {
+      "title": "REINFORCE on CartPole-v1 - aegean.ai",
+      "url": "https://aegean.ai/aiml-common/lectures/reinforcement-learning/policy-based-algorithms/reinforce/reinforce-cartpole/reinforce-cartpole",
+      "snippet": "Runnable policy-gradient agent trained on CartPole-v1 with live Weights & Biases tracking and a learning-curve plot."
+    },
+    {
+      "title": "Ali-Developments/CartPole-Deep-Reinforcement-Learning - GitHub",
+      "url": "https://github.com/Ali-Developments/CartPole-Deep-Reinforcement-Learning",
+      "snippet": "Solving the CartPole-v1 environment using Deep Reinforcement Learning techniques including Deep Q-Network (DQN) and Policy Gradient. This project was developed as part of the Advanced Machine Learning course and includes training, evaluation, and performance visualization."
+    },
+    {
+      "title": "GitHub - prog-ai/ReinforceR: Reinforcement Q and Deep Learning agent ...",
+      "url": "https://github.com/prog-ai/ReinforceR",
+      "snippet": "Reinforcement Q and Deep Learning agent for automatic control of CartPole model. - prog-ai/ReinforceR"
+    }
+  ]
+}

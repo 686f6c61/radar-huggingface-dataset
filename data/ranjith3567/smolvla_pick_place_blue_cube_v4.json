@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ranjith3567/smolvla_pick_place_blue_cube_v4",
+  "slug": "ranjith3567-smolvla_pick_place_blue_cube_v4",
+  "author": "ranjith3567",
+  "url": "https://huggingface.co/ranjith3567/smolvla_pick_place_blue_cube_v4",
+  "created_at": "2026-10-13T20:10:40.000Z",
+  "updated_at": "2026-10-13T20:13:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:ranjith3567/pick_place_Blue_cube_v4_20261013_202650",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906727744,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 知乎",
+      "url": "https://www.zhihu.com/selection/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，提供知识共享、互动交流和个人成长机会。"
+    },
+    {
+      "title": "Visual Studio Code - Remove blank lines from code - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/50042278/visual-studio-code-remove-blank-lines-from-code",
+      "snippet": "Jun 23, 2018 · I use Visual Studio Code as my preferred text editor and I have ran into a problem with regards to the formatting. I …"
+    },
+    {
+      "title": "sqlite - How to open file:///private/var/mobile/Containers/Shared ...",
+      "url": "https://stackoverflow.com/questions/45179968/how-to-open-file-private-var-mobile-containers-shared-appgroup-folder-on-mac",
+      "snippet": "Jul 19, 2017 · I'm trying to use fileProvider in iOS 11 and have a database at …"
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/question/322372522",
+      "snippet": "知乎是一个问答社区，提供高质量的内容和交流机会，帮助用户找到问题的答案。"
+    },
+    {
+      "title": "How to change branch name in Azure DevOps - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/53432931/how-to-change-branch-name-in-azure-devops",
+      "snippet": "Nov 22, 2018 · Is there a way to change branch name in Azure DevOps. As shown in SS i have named my branch as Developer …"
+    }
+  ]
+}

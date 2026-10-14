@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "darioooooo0o/drama-3-w4a16-32gb",
+  "slug": "darioooooo0o-drama-3-w4a16-32gb",
+  "author": "darioooooo0o",
+  "url": "https://huggingface.co/darioooooo0o/drama-3-w4a16-32gb",
+  "created_at": "2026-10-13T21:06:29.000Z",
+  "updated_at": "2026-10-13T21:07:03.000Z",
+  "license": "fish-audio-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "en",
+    "zh",
+    "ja",
+    "ko",
+    "multilingual"
+  ],
+  "tags": [
+    "safetensors",
+    "fish_omni",
+    "fish-audio",
+    "text-to-speech",
+    "voice-cloning",
+    "int4",
+    "int8",
+    "quantized",
+    "sglang",
+    "rtx-5090",
+    "en",
+    "zh",
+    "ja",
+    "ko",
+    "multilingual",
+    "base_model:fishaudio/drama-3",
+    "base_model:quantized:fishaudio/drama-3",
+    "license:other",
+    "4-bit",
+    "bsgemm-moe-w4a16-l8",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6926013568,
+  "parameters_human": "6.93B",
+  "storage_bytes": 24517464138,
+  "storage_human": "24.5 GB",
+  "base_model": "fishaudio/drama-3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ikariam : bâtir, conquérir et régner !",
+      "url": "https://fr.ikariam.gameforge.com/",
+      "snippet": "Dans le jeu par navigateur Ikariam, vous êtes aux commandes et vivez une ère de découvertes et d'opulence. Vous bâtissez et …Read more"
+    },
+    {
+      "title": "Ikariam - Build, Conquer and Reign!",
+      "url": "http://en.ikariam.gameforge.com/",
+      "snippet": "Under your leadership, you can usher in an age of discoveries and prosperity in the browser game Ikariam. You build and manage …"
+    },
+    {
+      "title": "Ikariam - Gameforge",
+      "url": "https://gameforge.com/fr-FR/play/ikariam",
+      "snippet": "Jouez gratuitement sur navigateur, smartphone ou tablette Voici votre royaume insulaire Construisez des maisons, des bâtiments …"
+    },
+    {
+      "title": "Ikariam - The free browser game",
+      "url": "https://play.ikariam.gameforge.com/",
+      "snippet": "Ikariam is a free browser game. The players challenge is to lead a nation through the ancient world and to build towns, trade and …"
+    },
+    {
+      "title": "Ikariam - Le jeu par navigateur gratuit - Gameforge",
+      "url": "http://fr.ikariam.gameforge.com/highscore",
+      "snippet": "Ikariam est un jeu sur navigateur gratuit. Il consiste à guider un peuple à travers l`antiquité, de construire des villes, de faire du …"
+    }
+  ]
+}

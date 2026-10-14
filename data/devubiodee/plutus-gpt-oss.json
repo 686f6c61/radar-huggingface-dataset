@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Devubiodee/plutus-gpt-oss",
+  "slug": "devubiodee-plutus-gpt-oss",
+  "author": "Devubiodee",
+  "url": "https://huggingface.co/Devubiodee/plutus-gpt-oss",
+  "created_at": "2026-10-14T00:25:33.000Z",
+  "updated_at": "2026-10-14T01:23:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_oss",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/gpt-oss-20b-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/gpt-oss-20b-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20914757184,
+  "parameters_human": "20.91B",
+  "storage_bytes": 41857429686,
+  "storage_human": "41.9 GB",
+  "base_model": "unsloth/gpt-oss-20b-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

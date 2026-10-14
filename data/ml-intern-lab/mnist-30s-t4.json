@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "ML-Intern-lab/mnist-30s-t4",
+  "slug": "ml-intern-lab-mnist-30s-t4",
+  "author": "ML-Intern-lab",
+  "url": "https://huggingface.co/ML-Intern-lab/mnist-30s-t4",
+  "created_at": "2026-10-13T20:27:50.000Z",
+  "updated_at": "2026-10-13T20:31:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "mnist",
+    "ml-intern",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1689777,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ML — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/ML",
+      "snippet": "mètre linéaire (ml), unité de longueur dans une direction utile, c'est-à-dire sans tenir compte des autres dimensions (largeur, hauteur, …"
+    },
+    {
+      "title": "Conversion de Millilitres en Litres",
+      "url": "https://www.metric-conversions.org/fr/volume/millilitres-en-litres.htm",
+      "snippet": "Un millilitre (mL) est égal à un millième de litre, qui est l'unité de base de volume dans le système métrique. Il est couramment utilisé …"
+    },
+    {
+      "title": "Voitures MERCEDES-BENZ Classe M/ML d'occasion - leboncoin",
+      "url": "https://www.leboncoin.fr/c/voitures/u_car_brand:MERCEDES-BENZ+u_car_model:MERCEDES-BENZ_Classe%20M%2FML",
+      "snippet": "MERCEDES CLASSE M ML 350 BlueTEC 4MATIC Fascination A Garantie 12 mois 23 990 € ·2013·107000 km·Diesel·Automatique …"
+    },
+    {
+      "title": "Contenances : litre, dL, cL, mL, hL, version septembre 2026",
+      "url": "https://www.maths-college.fr/cours-maths-6eme/contenances-conversions-6e.html",
+      "snippet": "Jul 18, 2026 · 1. Introduction et problématique Situation-problème : au collège, on lit souvent des contenances sur des bouteilles, …"
+    },
+    {
+      "title": "Mobile Legends: Bang Bang - Heroes and Gameplay Insights",
+      "url": "https://www.mobilelegends.com/",
+      "snippet": "Jun 17, 2026 · Dive into Mobile Legends: Bang Bang! Explore heroes, skills, and strategies in this popular MOBA, and stay updated …"
+    }
+  ]
+}

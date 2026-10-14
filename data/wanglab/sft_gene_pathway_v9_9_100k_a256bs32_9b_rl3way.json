@@ -5,7 +5,7 @@
   "author": "wanglab",
   "url": "https://huggingface.co/wanglab/sft_gene_pathway_v9_9_100k_a256bs32_9b_rl3way",
   "created_at": "2026-10-13T01:59:48.000Z",
-  "updated_at": "2026-10-13T04:26:52.000Z",
+  "updated_at": "2026-10-13T18:13:30.000Z",
   "license": "qwen",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",

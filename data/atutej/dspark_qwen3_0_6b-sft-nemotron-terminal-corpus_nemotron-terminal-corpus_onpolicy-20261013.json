@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "atutej/dspark_qwen3_0_6b-sft-nemotron-terminal-corpus_nemotron-terminal-corpus_onpolicy-20261013",
+  "slug": "atutej-dspark_qwen3_0_6b-sft-nemotron-terminal-corpus_nemotron-terminal-corpus_onpolicy-20261013",
+  "author": "atutej",
+  "url": "https://huggingface.co/atutej/dspark_qwen3_0_6b-sft-nemotron-terminal-corpus_nemotron-terminal-corpus_onpolicy-20261013",
+  "created_at": "2026-10-13T22:26:39.000Z",
+  "updated_at": "2026-10-13T22:26:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "speculative-decoding",
+    "dspark",
+    "drafter",
+    "custom_code",
+    "dataset:nvidia/Nemotron-Terminal-Corpus",
+    "base_model:atutej/sft_qwen3_0_6b_nemotron-terminal-corpus-20261011",
+    "base_model:finetune:atutej/sft_qwen3_0_6b_nemotron-terminal-corpus-20261011",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 130381441,
+  "parameters_human": "130.4M",
+  "storage_bytes": 260807314,
+  "storage_human": "261 MB",
+  "base_model": "atutej/sft_qwen3_0_6b_nemotron-terminal-corpus-20261011",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

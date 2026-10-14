@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "ariadgolf/golf-course-segmentation",
+  "slug": "ariadgolf-golf-course-segmentation",
+  "author": "ariadgolf",
+  "url": "https://huggingface.co/ariadgolf/golf-course-segmentation",
+  "created_at": "2026-10-14T00:25:45.000Z",
+  "updated_at": "2026-10-14T00:32:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-segmentation",
+  "library": "segmentation-models-pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "segmentation-models-pytorch",
+    "safetensors",
+    "golf",
+    "aerial-imagery",
+    "remote-sensing",
+    "semantic-segmentation",
+    "unet",
+    "resnet34",
+    "naip",
+    "multispectral",
+    "pytorch",
+    "image-segmentation",
+    "en",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24459238,
+  "parameters_human": "24.5M",
+  "storage_bytes": 48946068,
+  "storage_human": "49 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Libertines annonces - Sexemodel",
+      "url": "https://www.sexemodel.com/profiles/first_page/cities/show_all/1/q/jade+emeraud/",
+      "snippet": "Apr 30, 2026 · Libertines annonces - Sexemodel, Etre en adultes! Parisien2012, aston619, Black_972, Gros.Minet2, SabrinaSayuri, …"
+    },
+    {
+      "title": "Libertines EMMA_GFE.sodo, Toulouse - Sexemodel",
+      "url": "https://www.sexemodel.com/escort/EMMA_GFE.sodo-3127335/",
+      "snippet": "May 11, 2026 · Libertines girl EMMA_GFE.sodo a 24 ans, est une caucasien femme à Toulouse de 160 cm de hauteur, 55kg. Voir …"
+    },
+    {
+      "title": "Libertines Sophia, Toulouse - Sexemodel",
+      "url": "https://www.sexemodel.com/escort/Sophia-838115/",
+      "snippet": "Libertines girl Sophia a 30 ans, est une latin femme à Toulouse de 160 cm de hauteur, 60kg. Voir ses photos ici!"
+    },
+    {
+      "title": "Libertines Ines capitole, Toulouse - Sexemodel",
+      "url": "https://www.sexemodel.com/en/escort/Ines%20capitole-3053166/",
+      "snippet": "Libertines girl Ines capitole a 21 ans, est une caucasien femme à Toulouse de 162 cm de hauteur, 50kg. Voir ses photos ici!"
+    },
+    {
+      "title": "Libertines Elise_francaise, Toulouse - Sexemodel",
+      "url": "https://www.sexemodel.com/en/escort/Elise_francaise-2640456/",
+      "snippet": "Libertines girl Elise_francaise a 35 ans, est une caucasien femme à Toulouse de 175 cm de hauteur, 65kg. Voir ses photos ici!"
+    }
+  ]
+}

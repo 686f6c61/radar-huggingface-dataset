@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "zeromodels/all-MiniLM-L12-v2",
+  "slug": "zeromodels-all-minilm-l12-v2",
+  "author": "zeromodels",
+  "url": "https://huggingface.co/zeromodels/all-MiniLM-L12-v2",
+  "created_at": "2026-10-13T22:36:55.000Z",
+  "updated_at": "2026-10-13T23:18:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "zeromodels",
+  "languages": [],
+  "tags": [
+    "zeromodels",
+    "keras",
+    "sentence-transformers",
+    "sentence-similarity",
+    "bert",
+    "text-embeddings",
+    "base_model:sentence-transformers/all-MiniLM-L12-v2",
+    "base_model:finetune:sentence-transformers/all-MiniLM-L12-v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 133363808,
+  "storage_human": "133 MB",
+  "base_model": "sentence-transformers/all-MiniLM-L12-v2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/",
+      "snippet": "Find local businesses, view maps and get driving directions in Google Maps."
+    },
+    {
+      "title": "Sammamish, Washington — Satellite & Street Map",
+      "url": "https://www.washingtonstatesearch.com/United_States_maps/Washington/Sammamish_Washington_map.html",
+      "snippet": "This interactive map shows the street layout and satellite imagery for Sammamish, Washington. Use the Map and Satellite buttons …"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://www.google.com/maps/search/?+Sammamish,+WA+98075",
+      "snippet": "Train Nearby places Restaurants Gas stations ATMs Shopping Map details Satellite Transit lines Traffic"
+    },
+    {
+      "title": "Sammamish, WA Map & Directions - MapQuest",
+      "url": "https://www.mapquest.com/us/washington/sammamish-wa-282031057",
+      "snippet": "Get directions, maps, and traffic for Sammamish, WA. Check flight prices and hotel availability for your visit."
+    },
+    {
+      "title": "View Online Maps | City of Sammamish",
+      "url": "https://www.sammamish.us/i-want-to/maps-gis/",
+      "snippet": "Sammamish Property Tool: - Interactive map with various Property, Zoning, Sensitive Areas, and Imagery layers. Development …"
+    }
+  ]
+}

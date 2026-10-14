@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "MedGm/Llama-Locali-Qwen2.5-Coder-1.5B-GGUF",
+  "slug": "medgm-llama-locali-qwen2-5-coder-1-5b-gguf",
+  "author": "MedGm",
+  "url": "https://huggingface.co/MedGm/Llama-Locali-Qwen2.5-Coder-1.5B-GGUF",
+  "created_at": "2026-10-13T22:27:11.000Z",
+  "updated_at": "2026-10-13T22:30:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "code",
+    "llama.cpp",
+    "built-with-llama",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 2632620864,
+  "storage_human": "2.6 GB",
+  "base_model": "MedGm/Llama-Locali-Qwen2.5-Coder-1.5B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

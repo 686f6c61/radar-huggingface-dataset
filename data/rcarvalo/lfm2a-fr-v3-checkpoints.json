@@ -5,7 +5,7 @@
   "author": "Rcarvalo",
   "url": "https://huggingface.co/Rcarvalo/lfm2a-fr-v3-checkpoints",
   "created_at": "2026-10-09T06:37:35.000Z",
-  "updated_at": "2026-10-12T01:14:32.000Z",
+  "updated_at": "2026-10-13T07:09:48.000Z",
   "license": "lfm1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-to-speech",
@@ -32,8 +32,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 58795223300,
-  "storage_human": "58.8 GB",
+  "storage_bytes": 61765821076,
+  "storage_human": "61.8 GB",
   "base_model": "LiquidAI/LFM2.5-Audio-1.5B",
   "formats": [
     "safetensors"

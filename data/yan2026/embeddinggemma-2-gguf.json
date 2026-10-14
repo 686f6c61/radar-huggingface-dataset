@@ -21,10 +21,10 @@
     "license:gemma",
     "endpoints_compatible",
     "region:us",
-    "conversational"
+    "feature-extraction"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 336,
   "trending_score": 0,
   "parameters": 271002648,
   "parameters_human": "271.0M",
@@ -34,7 +34,7 @@
   "formats": [
     "gguf"
   ],
-  "is_conversational": true,
+  "is_conversational": false,
   "gated": false,
   "removed": false,
   "removed_at": null,

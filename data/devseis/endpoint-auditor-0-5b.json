@@ -5,7 +5,7 @@
   "author": "Devseis",
   "url": "https://huggingface.co/Devseis/endpoint-auditor-0.5b",
   "created_at": "2026-10-08T19:38:16.000Z",
-  "updated_at": "2026-10-12T12:34:13.000Z",
+  "updated_at": "2026-10-13T18:04:27.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -36,12 +36,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 25,
+  "downloads_30d": 202,
   "trending_score": 0,
   "parameters": 494032768,
   "parameters_human": "494.0M",
-  "storage_bytes": 1034756536,
-  "storage_human": "1.0 GB",
+  "storage_bytes": 3081425816,
+  "storage_human": "3.1 GB",
   "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
   "formats": [
     "safetensors"

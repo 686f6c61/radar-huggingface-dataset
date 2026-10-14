@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "nomadoor/clef",
+  "slug": "nomadoor-clef",
+  "author": "nomadoor",
+  "url": "https://huggingface.co/nomadoor/clef",
+  "created_at": "2026-10-13T23:53:01.000Z",
+  "updated_at": "2026-10-13T23:55:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "base_model:Cloudflare/clef-flash",
+    "base_model:finetune:Cloudflare/clef-flash",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31220077032,
+  "storage_human": "31.2 GB",
+  "base_model": "Cloudflare/clef-flash",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nomadoor/clef · Hugging Face",
+      "url": "https://huggingface.co/nomadoor/clef",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nomadoor (nomadoor) - Hugging Face",
+      "url": "https://huggingface.co/nomadoor/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 17 days ago ... updated a model 17 days ago ... new activity 29 days ago"
+    },
+    {
+      "title": "Cloudflare has introduced an AI model called Clef, a competitor to Jev ...",
+      "url": "https://dev.ua/en/news/cloudflare-novi-modeli-clef-i-clef-flash-1790933178",
+      "snippet": "Cloudflare has introduced two new AI models, Clef and Clef-flash, which are designed to quickly make specific decisions: answer \"yes\" or \"no\", choose one of the options, or prioritize them. The company positions them as a competitor to the Jev model from TypeSafe AI."
+    },
+    {
+      "title": "Meet Cloudflare Clef-omni: A 30B-A3B Multimodal Decision Model for ...",
+      "url": "https://www.marktechpost.com/2026/10/11/cloudflare-clef-omni-multimodal-decision-model/",
+      "snippet": "Cloudflare&#x27;s Clef-omni is a 30B-A3B open-weight decision model that scores audio, video, image and text in one call."
+    },
+    {
+      "title": "Introducing Clef: our open-source decision models, and new RL fine ...",
+      "url": "https://blog.cloudflare.com/clef-decision-models/",
+      "snippet": "We are introducing Clef and Clef-flash, open-source decision models hosted on Workers AI for high-speed classification and agentic workflows. Also launching: a new reinforcement learning platform that allows developers to fine-tune decision models using their own data."
+    }
+  ]
+}

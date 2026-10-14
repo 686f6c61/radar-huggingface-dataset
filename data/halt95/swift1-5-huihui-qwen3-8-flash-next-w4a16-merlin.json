@@ -41,12 +41,12 @@
     "compressed-tensors",
     "region:us"
   ],
-  "likes": 0,
-  "downloads_30d": 0,
+  "likes": 1,
+  "downloads_30d": 25,
   "trending_score": 0,
   "parameters": 123958298771,
   "parameters_human": "123.96B",
-  "storage_bytes": 123773919172,
+  "storage_bytes": 123753929847,
   "storage_human": "123.8 GB",
   "base_model": "ukisai/Swift1.5-Qwen3.8-Flash-Next, huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated",
   "formats": [

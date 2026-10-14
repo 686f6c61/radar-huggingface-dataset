@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "hiro-coevolution/connectailab-rl-coevolution-v1",
+  "slug": "hiro-coevolution-connectailab-rl-coevolution-v1",
+  "author": "hiro-coevolution",
+  "url": "https://huggingface.co/hiro-coevolution/connectailab-rl-coevolution-v1",
+  "created_at": "2026-10-13T22:16:46.000Z",
+  "updated_at": "2026-10-13T22:18:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "peft",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "reinforcement-learning",
+    "decision-making",
+    "connect-tycoon",
+    "connect-ai-lab",
+    "connectailab",
+    "lora",
+    "qwen3.5",
+    "ko",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 41684315,
+  "storage_human": "42 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hiro (rappeur) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Hiro_(rappeur)",
+      "snippet": "D'origine kino-congolaise, Hiro est né le 14 juillet 1991 à Melun en Seine-et-Marne, en France. Il est influencé par deux légendes de …Read more"
+    },
+    {
+      "title": "Hiro officiel - YouTube",
+      "url": "https://www.youtube.com/channel/UCx_sp2REGXe8WfvnA43zPzA",
+      "snippet": "Hiro, aussi connu sous le nom d’Hiro le Coq ou de Mr Propre - chanteur français d’origine congolaise, artiste accomplit comprenant + …"
+    },
+    {
+      "title": "Hiro - Hiro - Aveuglé (clip officiel) - YouTube",
+      "url": "https://www.youtube.com/watch?v=A_H510xQ_5c",
+      "snippet": "May 17, 2016 · Contact Management : millesimebooking@gmail.com ou +33 7 59 39 13 86FACEBOOK / INSTAGRAM : …"
+    },
+    {
+      "title": "Hiro (singer) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hiro_(singer)",
+      "snippet": "Hiro (singer) ... Dimitri Nganda (born 14 July 1991), known professionally as Hiro (aka Hiro Le Coq, Mr Propre), is a French singer …"
+    },
+    {
+      "title": "Hiro - Facebook",
+      "url": "https://www.facebook.com/hiroofficiel1/",
+      "snippet": "6 days ago · Hiro. 3,094,767 followers · 15,614 talking about this. Page officielle de l'artiste Hiro"
+    }
+  ]
+}

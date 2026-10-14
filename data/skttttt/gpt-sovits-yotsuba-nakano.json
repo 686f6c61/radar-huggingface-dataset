@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Skttttt/GPT-SoVITS-Yotsuba-Nakano",
+  "slug": "skttttt-gpt-sovits-yotsuba-nakano",
+  "author": "Skttttt",
+  "url": "https://huggingface.co/Skttttt/GPT-SoVITS-Yotsuba-Nakano",
+  "created_at": "2026-10-13T20:16:27.000Z",
+  "updated_at": "2026-10-13T20:31:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "gpt-sovits",
+    "japanese",
+    "the-quintessential-quintuplets",
+    "text-to-speech",
+    "ja",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2218061993,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

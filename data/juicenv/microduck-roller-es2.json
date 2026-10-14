@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "juicenv/microduck-roller-es2",
+  "slug": "juicenv-microduck-roller-es2",
+  "author": "juicenv",
+  "url": "https://huggingface.co/juicenv/microduck-roller-es2",
+  "created_at": "2026-10-13T20:26:41.000Z",
+  "updated_at": "2026-10-13T20:26:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "base_model:pollen-robotics/microduck-roller-sprint-2m-reference",
+    "base_model:finetune:pollen-robotics/microduck-roller-sprint-2m-reference",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 793753,
+  "storage_human": "793753 B",
+  "base_model": "pollen-robotics/microduck-roller-sprint-2m-reference",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "juicenv (Jarrod Pflum) - Hugging Face",
+      "url": "https://huggingface.co/juicenv/datasets",
+      "snippet": "Recent Activity liked a model27 days ago juicenv/duckwing-v80-roller-skating updated a model29 days ago juicenv/duckwing-v80-roller-skating published a model29 days ago juicenv/duckwing-v80-roller-skating View all activity"
+    },
+    {
+      "title": "Models compatible with the Microduck library - Hugging Face",
+      "url": "https://huggingface.co/models?library=microduck",
+      "snippet": "Explore machine learning models. 87 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: microduck Clear all"
+    },
+    {
+      "title": "MicroduckHub — Microduck policy exchange",
+      "url": "https://microduckhub.com/",
+      "snippet": "Every trick your duck knows, and every one it could learn. Community policy browser and agent tools for the Microduck."
+    },
+    {
+      "title": "GitHub - pollen-robotics/microduck: A Tiny biped duck robot",
+      "url": "https://github.com/pollen-robotics/microduck",
+      "snippet": "A Tiny biped duck robot 🦆. Contribute to pollen-robotics/microduck development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - pollen-robotics/microduck_rl: RL training environments for ...",
+      "url": "https://github.com/pollen-robotics/microduck_rl",
+      "snippet": "RL training environments for Microduck (mjlab). Contribute to pollen-robotics/microduck_rl development by creating an account on GitHub."
+    }
+  ]
+}

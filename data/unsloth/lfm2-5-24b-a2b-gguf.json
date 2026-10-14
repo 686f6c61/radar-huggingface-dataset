@@ -1,0 +1,107 @@
+{
+  "schema": 1,
+  "id": "unsloth/LFM2.5-24B-A2B-GGUF",
+  "slug": "unsloth-lfm2-5-24b-a2b-gguf",
+  "author": "unsloth",
+  "url": "https://huggingface.co/unsloth/LFM2.5-24B-A2B-GGUF",
+  "created_at": "2026-10-13T14:19:48.000Z",
+  "updated_at": "2026-10-13T21:55:20.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "es",
+    "pt",
+    "it",
+    "vi",
+    "th",
+    "id",
+    "hi",
+    "ru",
+    "pl"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "liquid",
+    "lfm2.5",
+    "edge",
+    "moe",
+    "unsloth",
+    "text-generation",
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "es",
+    "pt",
+    "it",
+    "vi",
+    "th",
+    "id",
+    "hi",
+    "ru",
+    "pl",
+    "arxiv:2511.23404",
+    "base_model:LiquidAI/LFM2.5-24B-A2B",
+    "base_model:quantized:LiquidAI/LFM2.5-24B-A2B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 18,
+  "downloads_30d": 0,
+  "trending_score": 18,
+  "parameters": 23971587712,
+  "parameters_human": "23.97B",
+  "storage_bytes": 203070868352,
+  "storage_human": "203.1 GB",
+  "base_model": "LiquidAI/LFM2.5-24B-A2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Unsloth - Run and Train Models Locally",
+      "url": "https://unsloth.ai/",
+      "snippet": "Unsloth is an open-source, no-code deskop UI for training and running open models on your local hardware."
+    },
+    {
+      "title": "GitHub - unslothai/unsloth: Local UI to run and train LLMs and ...",
+      "url": "https://github.com/unslothai/unsloth",
+      "snippet": "The core Unsloth package remains licensed under Apache 2.0, while certain optional components, such as the Unsloth Studio UI are …"
+    },
+    {
+      "title": "unsloth (Unsloth AI) - Hugging Face",
+      "url": "https://huggingface.co/unsloth",
+      "snippet": "Image-Text-to-Text • 177B • Updated 7 days ago • 1.26M • 1.18k Text Generation • 321B • Updated 7 days ago • 936k • 478 Text …"
+    },
+    {
+      "title": "Introducing Unsloth Studio | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/new/studio",
+      "snippet": "Unsloth Studio lets LLMs run Bash and Python, not just JavaScript with bypass permissions. It also sandboxes programs like Claude …"
+    },
+    {
+      "title": "Releases · unslothai/unsloth - GitHub",
+      "url": "https://github.com/unslothai/unsloth/releases",
+      "snippet": "Turn any text or vision LLM into a Jev-style decision model in Unsloth, with decision accuracy going from 30% to 80%. Train, test, …"
+    }
+  ]
+}

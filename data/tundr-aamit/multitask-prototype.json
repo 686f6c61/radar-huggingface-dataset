@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "tundr-aamit/multitask-prototype",
+  "slug": "tundr-aamit-multitask-prototype",
+  "author": "tundr-aamit",
+  "url": "https://huggingface.co/tundr-aamit/multitask-prototype",
+  "created_at": "2026-10-13T20:49:46.000Z",
+  "updated_at": "2026-10-13T20:50:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lieux de drague - France : trouver un lieu de drague",
+      "url": "https://lieuxdedrague.fr/lieux-de-drague/france",
+      "snippet": "Lieux de drague, France Tu cherches un lieu de drague en France ? Retrouvez tous les spots de rencontres : parking, nature, en …"
+    },
+    {
+      "title": "Lieux de drague à Beaune, Bourgogne Franche-Comté, France",
+      "url": "https://lieuxdedrague.fr/lieux-de-drague/france/bourgogne-franche-comte/beaune",
+      "snippet": "Lieux de drague à Beaune, Bourgogne Franche-Comté, France Tu cherches un lieu de drague à Beaune en Bourgogne Franche …"
+    },
+    {
+      "title": "Lieux de drague à Poitiers, Nouvelle-Aquitaine, France",
+      "url": "https://lieuxdedrague.fr/lieux-de-drague/france/nouvelle-aquitaine/poitiers",
+      "snippet": "Lieux de drague à Poitiers, Nouvelle-Aquitaine, France Tu cherches un lieu de drague à Poitiers en Nouvelle-Aquitaine ? Voici 8 …"
+    },
+    {
+      "title": "Lieux de drague",
+      "url": "https://lieuxdedrague.fr/lieux-de-drague-categorie/nature",
+      "snippet": "Lieux de drague , lieux de drague hétéro et bisexuels et Site de rencontres sexe pour trouver un plan cul. (Page 1)"
+    },
+    {
+      "title": "Lieux de drague à Pau, Nouvelle-Aquitaine, France",
+      "url": "https://lieuxdedrague.fr/lieux-de-drague/france/nouvelle-aquitaine/pau",
+      "snippet": "Lieux de drague à Pau, Nouvelle-Aquitaine, France Tu cherches un lieu de drague à Pau en Nouvelle-Aquitaine ? Voici 13 lieux de …"
+    }
+  ]
+}

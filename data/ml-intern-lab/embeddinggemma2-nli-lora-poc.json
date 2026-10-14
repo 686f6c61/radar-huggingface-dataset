@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ML-Intern-lab/embeddinggemma2-nli-lora-poc",
+  "slug": "ml-intern-lab-embeddinggemma2-nli-lora-poc",
+  "author": "ML-Intern-lab",
+  "url": "https://huggingface.co/ML-Intern-lab/embeddinggemma2-nli-lora-poc",
+  "created_at": "2026-10-13T22:40:59.000Z",
+  "updated_at": "2026-10-13T23:26:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "embedding_gemma2",
+    "ml-intern",
+    "sentence-transformers",
+    "feature-extraction",
+    "sentence-similarity",
+    "lora",
+    "arxiv:1705.00652",
+    "arxiv:1908.10084",
+    "arxiv:2101.06983",
+    "base_model:google/embeddinggemma-2",
+    "base_model:adapter:google/embeddinggemma-2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1529378784,
+  "storage_human": "1.5 GB",
+  "base_model": "google/embeddinggemma-2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ML — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/ML",
+      "snippet": "mètre linéaire (ml), unité de longueur dans une direction utile, c'est-à-dire sans tenir compte des autres dimensions (largeur, hauteur, …Read more"
+    },
+    {
+      "title": "Voitures MERCEDES-BENZ Classe M/ML d'occasion - leboncoin",
+      "url": "https://www.leboncoin.fr/c/voitures/u_car_brand:MERCEDES-BENZ+u_car_model:MERCEDES-BENZ_Classe%20M%2FML",
+      "snippet": "À la une MERCEDES-BENZ Classe ML Génération III (W166) Phase 1 350 BlueTEC 7G-Tronic + 258Ch Garantie 12 mois 177500 …"
+    },
+    {
+      "title": "ML - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/ML",
+      "snippet": "This disambiguation page lists articles associated with the title ML. If an internal link incorrectly led you here, you may wish to change …"
+    },
+    {
+      "title": "Conversion de Millilitres en Litres",
+      "url": "https://www.metric-conversions.org/fr/volume/millilitres-en-litres.htm",
+      "snippet": "Un millilitre (mL) est égal à un millième de litre, qui est l'unité de base de volume dans le système métrique. Il est couramment utilisé …"
+    },
+    {
+      "title": "Calcul mètre linéaire : ml↔m², 5 formes BTP 2026",
+      "url": "https://macalculatriceenligne.com/mathematiques/calcul-metre-lineaire/",
+      "snippet": "May 24, 2026 · Calculateur ml↔m² pour 5 formes, coefficient de chute BTP, 4 modes de calcul. Normes NF DTU 51.1 et NF EN 14041."
+    }
+  ]
+}

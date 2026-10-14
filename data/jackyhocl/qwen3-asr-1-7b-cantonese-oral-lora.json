@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "JackyHoCL/Qwen3-ASR-1.7B-cantonese-oral-lora",
+  "slug": "jackyhocl-qwen3-asr-1-7b-cantonese-oral-lora",
+  "author": "JackyHoCL",
+  "url": "https://huggingface.co/JackyHoCL/Qwen3-ASR-1.7B-cantonese-oral-lora",
+  "created_at": "2026-10-13T20:53:30.000Z",
+  "updated_at": "2026-10-13T20:53:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "yue"
+  ],
+  "tags": [
+    "peft",
+    "tensorboard",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen3-ASR-1.7B",
+    "lora",
+    "asr",
+    "cantonese",
+    "yue-HK",
+    "vllm",
+    "text-generation",
+    "yue",
+    "base_model:Qwen/Qwen3-ASR-1.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 81342650,
+  "storage_human": "81 MB",
+  "base_model": "Qwen/Qwen3-ASR-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

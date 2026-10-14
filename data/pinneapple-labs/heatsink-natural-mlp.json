@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "PINNeAPPle-Labs/heatsink-natural-mlp",
+  "slug": "pinneapple-labs-heatsink-natural-mlp",
+  "author": "PINNeAPPle-Labs",
+  "url": "https://huggingface.co/PINNeAPPle-Labs/heatsink-natural-mlp",
+  "created_at": "2026-10-13T21:00:45.000Z",
+  "updated_at": "2026-10-13T21:00:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pinneapple",
+  "languages": [],
+  "tags": [
+    "pinneapple",
+    "heat transfer",
+    "electronics cooling",
+    "natural convection",
+    "surrogate",
+    "conformal",
+    "monotone",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 208709,
+  "storage_human": "208709 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pineapple Mobilier - Mobilier pour la Santé Mentale",
+      "url": "https://fr.pineapplecontracts.com/",
+      "snippet": "Haute en couleurs et en sécurité ou comment repenser l'unité fermée grâce à Pineapple"
+    },
+    {
+      "title": "Leto - Pineapple (Clip officiel) - YouTube",
+      "url": "https://www.youtube.com/watch?v=hBeNj5mX3To",
+      "snippet": "Apr 10, 2026 · Leto - Pineapple (Clip officiel) Nouveau single \"Pineapple\" disponible partout : https://leto.bfan.link/pineapple Retrouve …"
+    },
+    {
+      "title": "Mobilier pour psychiatrie - SANTÉ MENTALE - Pineapple Mobilier",
+      "url": "https://fr.pineapplecontracts.com/categorie-environnement/sante-mentale/",
+      "snippet": "Unité EPICEA – AHSM L’unité fermée EPICEA (Espace psychiatrique intersectoriel de crise et d’apaisement) est unique en son …"
+    },
+    {
+      "title": "Pineapple - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Pineapple",
+      "snippet": "Pineapple pink disease (not citrus pink disease) is characterized by the fruit developing a brownish to black discoloration when …"
+    },
+    {
+      "title": "PINNeAPPle - GitHub",
+      "url": "https://github.com/PINNeAPPle-Labs/PINNeAPPle",
+      "snippet": "PINNeAPPle 🍍 Physics AI that tells you when to trust it Solve, simulate, forecast and design with physics-informed AI — and know, for …"
+    }
+  ]
+}

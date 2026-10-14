@@ -1,0 +1,107 @@
+{
+  "schema": 1,
+  "id": "TechnoBaptist/LFM2.5-24B-A2B",
+  "slug": "technobaptist-lfm2-5-24b-a2b",
+  "author": "TechnoBaptist",
+  "url": "https://huggingface.co/TechnoBaptist/LFM2.5-24B-A2B",
+  "created_at": "2026-10-14T00:14:11.000Z",
+  "updated_at": "2026-10-14T00:14:11.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "es",
+    "pt",
+    "it",
+    "vi",
+    "th",
+    "id",
+    "hi",
+    "ru",
+    "pl"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2_moe",
+    "text-generation",
+    "liquid",
+    "lfm2.5",
+    "edge",
+    "moe",
+    "conversational",
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "es",
+    "pt",
+    "it",
+    "vi",
+    "th",
+    "id",
+    "hi",
+    "ru",
+    "pl",
+    "arxiv:2511.23404",
+    "base_model:LiquidAI/LFM2.5-24B-A2B-Base",
+    "base_model:finetune:LiquidAI/LFM2.5-24B-A2B-Base",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23971585280,
+  "parameters_human": "23.97B",
+  "storage_bytes": 47963855953,
+  "storage_human": "48.0 GB",
+  "base_model": "LiquidAI/LFM2.5-24B-A2B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Porn Videos & Sex Movies - Porno, XXX, Porn Tube and Pussy …",
+      "url": "https://www.pornhub.com/%0A/",
+      "snippet": "Free porn sex videos & pussy movies. Porn hub is the ultimate xxx porn,sex and pussy tube, download sex videos or stream free xxx …"
+    },
+    {
+      "title": "Française - XXX Vidéo Porno @ TheXXX.TV",
+      "url": "https://thexxx.tv/fr/videos/fran%C3%A7aise",
+      "snippet": "185,234 vidéos: Grosse Lesbienne Francaise, Double Pénétration, Video En Francais, Pegging Amateur Francais, Sperme Dans La …"
+    },
+    {
+      "title": "XXX Porn Videos | xHamster",
+      "url": "https://xhamster.com/search/xxx",
+      "snippet": "Watch XXX porn videos. Explore tons of XXX movies with sex scenes in 2026 on xHamster!"
+    },
+    {
+      "title": "Free Porn Videos & XXX Movies: Sex Videos Tube | xHamster",
+      "url": "https://xhamster.com/",
+      "snippet": "Free porn videos and exclusive XXX movies are here at xHamster. Instantly stream 6M+ hardcore sex videos from pros and …"
+    },
+    {
+      "title": "xxx videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/tags/xxx",
+      "snippet": "Quando a leitura é mais prazerosa do que a gente imagina! ROLEPLAY | Lis Xxx."
+    }
+  ]
+}

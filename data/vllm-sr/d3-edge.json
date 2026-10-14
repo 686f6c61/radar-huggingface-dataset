@@ -5,7 +5,7 @@
   "author": "vllm-sr",
   "url": "https://huggingface.co/vllm-sr/d3-edge",
   "created_at": "2026-10-10T23:49:23.000Z",
-  "updated_at": "2026-10-12T12:03:10.000Z",
+  "updated_at": "2026-10-13T11:01:37.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "zero-shot-classification",
@@ -35,7 +35,7 @@
   "trending_score": 29,
   "parameters": 594321600,
   "parameters_human": "594.3M",
-  "storage_bytes": 3975393259,
+  "storage_bytes": 3975902193,
   "storage_human": "4.0 GB",
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [

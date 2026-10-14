@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "infinity-ai-institute/LFM2.5-24B-A2B-NVFP4",
+  "slug": "infinity-ai-institute-lfm2-5-24b-a2b-nvfp4",
+  "author": "infinity-ai-institute",
+  "url": "https://huggingface.co/infinity-ai-institute/LFM2.5-24B-A2B-NVFP4",
+  "created_at": "2026-10-14T00:32:12.000Z",
+  "updated_at": "2026-10-14T00:40:35.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2_moe",
+    "text-generation",
+    "nvfp4",
+    "modelopt",
+    "vllm",
+    "moe",
+    "liquid",
+    "lfm2",
+    "conversational",
+    "base_model:LiquidAI/LFM2.5-24B-A2B",
+    "base_model:quantized:LiquidAI/LFM2.5-24B-A2B",
+    "license:other",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12495969536,
+  "parameters_human": "12.50B",
+  "storage_bytes": 14972335902,
+  "storage_human": "15.0 GB",
+  "base_model": "LiquidAI/LFM2.5-24B-A2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "INFINITI Luxury Cars, SUVs, Crossover, Sedans | INFINITI Global",
+      "url": "https://www.infiniti.com/",
+      "snippet": "Explore INFINITI Global's high-performance luxury cars, SUVs, crossovers, legacy vehicles & concept models. Learn more about …"
+    },
+    {
+      "title": "Boulanger INFINITY | Réparation Électroménager & Multimédia illimitée",
+      "url": "https://www.boulanger.com/evenement/boulanger-infinity?msockid=1c18566e952760530950419c949161d6",
+      "snippet": "Découvrez la sérénité avec l'assurance Boulanger INFINITY. Bénéficiez de la réparation en illimité, déplacement, pièces main …"
+    },
+    {
+      "title": "Infinity - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Infinity",
+      "snippet": "The ancient Indians and the Greeks did not define infinity in precise formalism as does modern mathematics, and instead …"
+    },
+    {
+      "title": "Gestion de mon contrat Boulanger Le Club INFINITY maison",
+      "url": "https://www.boulanger.com/evenement/faq?question=gestion-de-mon-contrat-le-club-infinity-new&msockid=1c18566e952760530950419c949161d6",
+      "snippet": "Votre assurance Boulanger Le Club INFINITY est un contrat à durée indéterminée avec une période d’engagement initial de 12 mois …"
+    },
+    {
+      "title": "Infinity - Événementiel d'entreprise & organisation de salons",
+      "url": "https://www.so-infinity.com/fr/",
+      "snippet": "L’agence évènementielle Infinity s’est développée autour de valeurs simples qui fondent sa philosophie. Spécialisée dans les …"
+    }
+  ]
+}

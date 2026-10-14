@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "stephaniesanchez/flamingo-multitask",
+  "slug": "stephaniesanchez-flamingo-multitask",
+  "author": "stephaniesanchez",
+  "url": "https://huggingface.co/stephaniesanchez/flamingo-multitask",
+  "created_at": "2026-10-13T20:40:52.000Z",
+  "updated_at": "2026-10-13T20:40:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99800,
+  "storage_human": "99800 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wechsel von Postpaid zu Prepaid | Telekom hilft Community",
+      "url": "https://telekomhilft.telekom.de/conversations/mobilfunk/wechsel-von-postpaid-zu-prepaid/691244ecc36bd3183e963908",
+      "snippet": "Hallo liebe Community, ich&nbsp;möchte zum nächstmöglichen Zeitpunkt von meinem aktuellen Postpaid-Tarif zu einem Prepaid …"
+    },
+    {
+      "title": "Wo ist im Kundencenter das Login für den Shop geblieben?",
+      "url": "https://telekomhilft.telekom.de/conversations/homepage-shop/wo-ist-im-kundencenter-das-login-f%C3%BCr-den-shop-geblieben/6687cc5a4ae73561da0497b4",
+      "snippet": "Ich finde im Kundencenter nicht mehr das Login für meinen »Shop Starter« um hier Aktualisierungen an den Produkten …"
+    },
+    {
+      "title": "301 Moved Permanently - 《天下3》官方论坛",
+      "url": "https://tx3.netease.com/forum.php?mod=viewthread&tid=6154836",
+      "snippet": "301 Moved Permanently 301 Moved Permanently openresty"
+    },
+    {
+      "title": "301 Moved Permanently - 《天下3》官方论坛",
+      "url": "https://tx3.netease.com/forum.php?mod=viewthread&tid=6201693",
+      "snippet": "301 Moved Permanently openresty"
+    },
+    {
+      "title": "Wiedergabe wegen HDCP Problem nicht möglich",
+      "url": "https://telekomhilft.telekom.de/conversations/tv/wiedergabe-wegen-hdcp-problem-nicht-m%C3%B6glich/69682c71c626605f7855bd7e",
+      "snippet": "Hallo, ich bekomme seit geraumer Zeit immer folgende Fehlermeldung, wenn ich am PC magenta tv nutzen möchte: Wiedergabe …"
+    }
+  ]
+}

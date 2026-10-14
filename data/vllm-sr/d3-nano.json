@@ -5,7 +5,7 @@
   "author": "vllm-sr",
   "url": "https://huggingface.co/vllm-sr/d3-nano",
   "created_at": "2026-10-10T17:14:09.000Z",
-  "updated_at": "2026-10-12T12:03:06.000Z",
+  "updated_at": "2026-10-13T10:20:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "zero-shot-classification",
@@ -35,7 +35,7 @@
   "trending_score": 26,
   "parameters": 2213241664,
   "parameters_human": "2.21B",
-  "storage_bytes": 17733107474,
+  "storage_bytes": 17733618042,
   "storage_human": "17.7 GB",
   "base_model": "Qwen/Qwen3.5-2B",
   "formats": [

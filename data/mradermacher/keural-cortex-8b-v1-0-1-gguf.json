@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Keural-Cortex-8B-v1.0-1-GGUF",
+  "slug": "mradermacher-keural-cortex-8b-v1-0-1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Keural-Cortex-8B-v1.0-1-GGUF",
+  "created_at": "2026-10-14T00:44:01.000Z",
+  "updated_at": "2026-10-14T02:08:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation",
+    "conversational",
+    "korean",
+    "english",
+    "function-calling",
+    "agent",
+    "en",
+    "ko",
+    "base_model:Hikaf143/Keural-Cortex-8B-v1.0-1",
+    "base_model:quantized:Hikaf143/Keural-Cortex-8B-v1.0-1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 73425337216,
+  "storage_human": "73.4 GB",
+  "base_model": "Hikaf143/Keural-Cortex-8B-v1.0-1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LinkedIn : s’identifier ou s’inscrire",
+      "url": "https://fr.linkedin.com/",
+      "snippet": "À qui s’adresse LinkedIn ? À toute personne cherchant à construire sa carrière professionnelle."
+    },
+    {
+      "title": "LinkedIn: Log In or Sign Up",
+      "url": "https://www.linkedin.com/",
+      "snippet": "Explore top LinkedIn content Discover relevant posts and expert insights — curated by topic and in one place."
+    },
+    {
+      "title": "LinkedIn Login, Sign in | LinkedIn",
+      "url": "https://www.linkedin.com/login/",
+      "snippet": "Login to LinkedIn to keep in touch with people you know, share ideas, and build your career."
+    },
+    {
+      "title": "LinkedIn",
+      "url": "https://in.linkedin.com/company/linkedin",
+      "snippet": "Founded in 2003, LinkedIn connects the world's professionals to make them more productive and successful. With more than 1 …"
+    },
+    {
+      "title": "LinkedIn: Log In or Sign Up",
+      "url": "https://gb.linkedin.com/",
+      "snippet": "Welcome to your professional community Sign in with email By clicking Continue to join or sign in, you agree to LinkedIn’s User …"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "MedGm/Llama-Locali-Qwen2.5-Coder-1.5B-QLoRA",
+  "slug": "medgm-llama-locali-qwen2-5-coder-1-5b-qlora",
+  "author": "MedGm",
+  "url": "https://huggingface.co/MedGm/Llama-Locali-Qwen2.5-Coder-1.5B-QLoRA",
+  "created_at": "2026-10-13T22:24:31.000Z",
+  "updated_at": "2026-10-13T22:26:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "code",
+    "lora",
+    "qlora",
+    "unsloth",
+    "bug-repair",
+    "test-generation",
+    "code-review",
+    "built-with-llama",
+    "en",
+    "dataset:MedGm/locali-mix-v2",
+    "base_model:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85333278,
+  "storage_human": "85 MB",
+  "base_model": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "amongglue/topaz-gregg-shorthand-61m",
+  "slug": "amongglue-topaz-gregg-shorthand-61m",
+  "author": "amongglue",
+  "url": "https://huggingface.co/amongglue/topaz-gregg-shorthand-61m",
+  "created_at": "2026-10-13T22:46:41.000Z",
+  "updated_at": "2026-10-13T22:47:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "ocr",
+    "handwriting-recognition",
+    "shorthand",
+    "gregg-shorthand",
+    "ctc",
+    "image-to-text",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 61236617,
+  "parameters_human": "61.2M",
+  "storage_bytes": 251238500,
+  "storage_human": "251 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

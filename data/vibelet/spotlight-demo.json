@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "Vibelet/spotlight-demo",
+  "slug": "vibelet-spotlight-demo",
+  "author": "Vibelet",
+  "url": "https://huggingface.co/Vibelet/spotlight-demo",
+  "created_at": "2026-10-13T21:04:04.000Z",
+  "updated_at": "2026-10-13T21:04:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 97934976,
+  "storage_human": "98 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

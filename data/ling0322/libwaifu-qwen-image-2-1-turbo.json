@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ling0322/libwaifu-qwen-image-2.1-turbo",
+  "slug": "ling0322-libwaifu-qwen-image-2-1-turbo",
+  "author": "ling0322",
+  "url": "https://huggingface.co/ling0322/libwaifu-qwen-image-2.1-turbo",
+  "created_at": "2026-10-13T23:58:15.000Z",
+  "updated_at": "2026-10-13T23:59:30.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "libwaifu",
+    "qwen-image",
+    "text-to-image",
+    "en",
+    "base_model:Qwen/Qwen-Image-2.1-Turbo",
+    "base_model:finetune:Qwen/Qwen-Image-2.1-Turbo",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17132502826,
+  "storage_human": "17.1 GB",
+  "base_model": "Qwen/Qwen-Image-2.1-Turbo",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何评价expo？ - 知乎",
+      "url": "https://www.zhihu.com/question/303934062",
+      "snippet": "目前react native的官网（Getting Started · React Native）已经推荐expo作为开发模式，请问expo解决了…Read more"
+    },
+    {
+      "title": "知乎 - 知乎",
+      "url": "https://www.zhihu.com/selection/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，提供知识共享、互动交流和个人成长机会。"
+    },
+    {
+      "title": "12306火车票放票一瞬间就没了，是铁路没放票还是真的被抢光了，开 …",
+      "url": "https://www.zhihu.com/question/364724745",
+      "snippet": "明明非常简单的一个问题：显示所有的余票，为什么实现不了？？？ 有人提到的黄牛抢票问题，实际上根本不可能： 1.现在12306都 …"
+    },
+    {
+      "title": "如何看待 Jev 模型？ - 知乎",
+      "url": "https://www.zhihu.com/question/2083488905060414115",
+      "snippet": "它又带来了新的可能性。 这两天大家都被 AI 界的史诗级的技术 Jev 刷屏了。 我觉得 AI 应用寒武纪爆发的时代要开始了，要来了。 …"
+    },
+    {
+      "title": "什么网站或者软件能下载歌曲和lrc歌词？ - 知乎",
+      "url": "https://www.zhihu.com/question/391188003",
+      "snippet": "当你辛辛苦苦收集了几个T的无损音乐，存进 NAS 或者本地硬盘，准备用 Audio Station、Plex、Emby 好好享受时，却发现： 没有歌 …"
+    }
+  ]
+}

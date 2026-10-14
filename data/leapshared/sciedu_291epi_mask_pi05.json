@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "leapshared/SciEdu_291epi_mask_pi05",
+  "slug": "leapshared-sciedu_291epi_mask_pi05",
+  "author": "leapshared",
+  "url": "https://huggingface.co/leapshared/SciEdu_291epi_mask_pi05",
+  "created_at": "2026-10-13T06:30:34.000Z",
+  "updated_at": "2026-10-13T21:50:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "robotics",
+    "dataset:leapshared/SciEdu_291epi_mask",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 165737619440,
+  "storage_human": "165.7 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

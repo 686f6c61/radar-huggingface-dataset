@@ -5,7 +5,7 @@
   "author": "crab-lab-ai",
   "url": "https://huggingface.co/crab-lab-ai/poetry-phisch",
   "created_at": "2026-10-12T21:31:49.000Z",
-  "updated_at": "2026-10-13T00:39:38.000Z",
+  "updated_at": "2026-10-14T01:36:16.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -19,7 +19,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 114,
   "trending_score": 0,
   "parameters": 3147008,
   "parameters_human": "3.1M",

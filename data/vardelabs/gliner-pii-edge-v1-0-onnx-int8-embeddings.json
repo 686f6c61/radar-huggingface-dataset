@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "vardelabs/gliner-pii-edge-v1.0-onnx-int8-embeddings",
+  "slug": "vardelabs-gliner-pii-edge-v1-0-onnx-int8-embeddings",
+  "author": "vardelabs",
+  "url": "https://huggingface.co/vardelabs/gliner-pii-edge-v1.0-onnx-int8-embeddings",
+  "created_at": "2026-10-13T20:43:39.000Z",
+  "updated_at": "2026-10-13T20:43:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "gliner",
+    "pii",
+    "named-entity-recognition",
+    "quantized",
+    "base_model:knowledgator/gliner-pii-edge-v1.0",
+    "base_model:quantized:knowledgator/gliner-pii-edge-v1.0",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 123015688,
+  "storage_human": "123 MB",
+  "base_model": "knowledgator/gliner-pii-edge-v1.0",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

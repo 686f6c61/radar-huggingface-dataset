@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "MedGm/Llama-Locali-adapters",
+  "slug": "medgm-llama-locali-adapters",
+  "author": "MedGm",
+  "url": "https://huggingface.co/MedGm/Llama-Locali-adapters",
+  "created_at": "2026-10-13T22:26:09.000Z",
+  "updated_at": "2026-10-13T22:26:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "code",
+    "lora",
+    "qlora",
+    "rslora",
+    "unsloth",
+    "built-with-llama",
+    "en",
+    "dataset:MedGm/locali-mix-v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 340989467,
+  "storage_human": "341 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

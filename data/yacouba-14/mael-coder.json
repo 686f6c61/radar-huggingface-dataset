@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "yacouba-14/MAEL-Coder",
+  "slug": "yacouba-14-mael-coder",
+  "author": "yacouba-14",
+  "url": "https://huggingface.co/yacouba-14/MAEL-Coder",
+  "created_at": "2026-10-13T23:44:14.000Z",
+  "updated_at": "2026-10-13T23:44:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "fr",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "code",
+    "security",
+    "agent",
+    "mael",
+    "text-generation",
+    "fr",
+    "en",
+    "base_model:Qwen/Qwen3-Coder-30B-A3B-Instruct",
+    "base_model:quantized:Qwen/Qwen3-Coder-30B-A3B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yacouba-14/MAEL-Coder · Hugging Face",
+      "url": "https://huggingface.co/yacouba-14/MAEL-Coder",
+      "snippet": "MAEL-Coder est le moteur conseillé de MAEL, l&#x27;outil local d&#x27;audit de sécurité et d&#x27;atelier de code de Yelen Tech. Licence Apache 2.0 Ce que MAEL ajoute se trouve autour du modèle : des juges qui contrôlent ce qu&#x27;il écrit contre des normes nommées (OWASP, W3C, WCAG, SQL), des tests exécutés ..."
+    },
+    {
+      "title": "Mael-14 · GitHub",
+      "url": "https://github.com/Mael-14",
+      "snippet": "A graph representing Mael-14&#x27;s contributions from July 27, 2025 to July 30, 2026. The contributions are 72% commits, 24% pull requests, 3% code review, 1% issues."
+    },
+    {
+      "title": "MalCodeAI: Autonomous Vulnerability Detection and Remediation via ...",
+      "url": "https://arxiv.org/html/2507.10898v1",
+      "snippet": "Abstract The growing complexity of cyber threats and the limitations of traditional vulnerability detection tools necessitate novel approaches for securing software systems. We introduce MalCodeAI, a language-agnostic, multi-stage AI pipeline for autonomous code security analysis and remediation."
+    },
+    {
+      "title": "GitHub - microsoft/MAI-Code: Official repo for MAI-Code models, where ...",
+      "url": "https://github.com/microsoft/MAI-Code",
+      "snippet": "We are Microsoft AI, building AI that empowers everyone. MAI-Code is our family of in-house coding models developed to make everyday development faster, smarter, and more efficient. This is the official repo for MAI-Code models, where we publish MAI-Code model releases and updates and engage with the developer community on issues and feedback."
+    },
+    {
+      "title": "Model Coder - microsoftlearning.github.io",
+      "url": "https://microsoftlearning.github.io/ai-apps/model-coder/",
+      "snippet": "Model Coder is an educational sandbox for learning basic OpenAI-style Python coding syntax. It lets you experiment with prompts, responses, streaming, and async patterns in a safe environment."
+    }
+  ]
+}

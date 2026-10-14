@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "nchapman/Qwen3.5-4B-DFlash2",
+  "slug": "nchapman-qwen3-5-4b-dflash2",
+  "author": "nchapman",
+  "url": "https://huggingface.co/nchapman/Qwen3.5-4B-DFlash2",
+  "created_at": "2026-10-14T00:28:00.000Z",
+  "updated_at": "2026-10-14T02:25:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "speculators",
+  "languages": [],
+  "tags": [
+    "speculators",
+    "safetensors",
+    "speculative-decoding",
+    "dflash2",
+    "qwen",
+    "text-generation",
+    "custom_code",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 662049280,
+  "parameters_human": "662.0M",
+  "storage_bytes": 3972322224,
+  "storage_human": "4.0 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

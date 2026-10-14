@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Kanjdoes/Gemma-4-26B-A4B-StylizedDecensor",
+  "slug": "kanjdoes-gemma-4-26b-a4b-stylizeddecensor",
+  "author": "Kanjdoes",
+  "url": "https://huggingface.co/Kanjdoes/Gemma-4-26B-A4B-StylizedDecensor",
+  "created_at": "2026-10-13T20:29:19.000Z",
+  "updated_at": "2026-10-14T02:05:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 28688410112,
+  "storage_human": "28.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-4-26B-A4B · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-26B-A4B",
+      "snippet": "At the time of release, this family of models provides high-performance open vision-language model implementations designed from the ground up for responsible AI development compared to similarly sized models."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4 model card | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "snippet": "Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. The models are available in five distinct sizes: E2B, E4B, 12B, 26B A4B, and 31B."
+    },
+    {
+      "title": "Gemma 4 26B A4B IT | Gemini Enterprise Agent Platform | Google Cloud ...",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/google/gemma-4-26b-a4b-it",
+      "snippet": "Explore Gemma 4 26B A4B IT, an open model built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input and generating text output"
+    },
+    {
+      "title": "Gemma 4 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2607.02770v1",
+      "snippet": "Dense and MoE: The Gemma 4 family of models comprises dense architectures, with effective 2.3B (E2B), effective 4.5B (E4B), 12B and 31B parameters, as well as an MoE model with 3.8B activated parameters for 26B total parameters (26B-A4B). E2B and E4B use per-layer embeddings as in Gemma 3n (Gemma Team, 2025b), making them 2.3B and 4.5B effective out of 5B and 8B total parameters respectively."
+    }
+  ]
+}

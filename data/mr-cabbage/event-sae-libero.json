@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mr-cabbage/event-sae-libero",
+  "slug": "mr-cabbage-event-sae-libero",
+  "author": "mr-cabbage",
+  "url": "https://huggingface.co/mr-cabbage/event-sae-libero",
+  "created_at": "2026-10-14T00:40:33.000Z",
+  "updated_at": "2026-10-14T00:41:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "event-sae",
+  "languages": [],
+  "tags": [
+    "event-sae",
+    "sparse-autoencoder",
+    "vla",
+    "openvla",
+    "openpi",
+    "libero",
+    "interpretability",
+    "arxiv:2605.17204",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5495372987,
+  "storage_human": "5.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "« M. » ou « Mr » ? « MM. » ou « Mrs » ? Les abréviations de …",
+      "url": "https://www.projet-voltaire.fr/regles-orthographe/m-ou-mr-mm-ou-mrs/",
+      "snippet": "Nos experts vous expliquent la règle : « M. » ou « Mr » ? « MM. » ou « Mrs » ? Les abréviations de \"monsieur\" et \"messieurs\" - …"
+    },
+    {
+      "title": "Mr.Bricolage : magasin de bricolage, jardinage, aménagement - Mr…",
+      "url": "https://www.mr-bricolage.fr/",
+      "snippet": "Retrouvez toute l'offre de Mr.Bricolage en ligne : bricolage, jardinage et aménagement. Profitez du retrait magasin en 2h ou de la …"
+    },
+    {
+      "title": "« M. » ou « Mr » : comment abréger monsieur - La langue française",
+      "url": "https://www.lalanguefrancaise.com/orthographe/m-ou-mr-abreviation-monsieur",
+      "snippet": "Jan 6, 2022 · On écrit toujours « M. » : l'abréviation de « monsieur » s'écrit toujours « M. » et non « Mr ». Au pluriel, l'abréviation de « …"
+    },
+    {
+      "title": "Mr, Mrs, Miss, Ms : comment s’adresser à quelqu’un en anglais",
+      "url": "https://www.mosalingua.com/blog/2022/05/30/mr-mrs-miss-en-anglais/",
+      "snippet": "May 30, 2022 · Vous n'êtes pas sûr de comment vous adresser à quelqu'un en anglais ? Que choisir entre Mr Mrs et Miss ? Voici …"
+    },
+    {
+      "title": "Mr — Wiktionnaire, le dictionnaire libre",
+      "url": "https://fr.wiktionary.org/wiki/Mr",
+      "snippet": "Bien que l’abréviation Mr soit aujourd’hui considérée comme un anglicisme, elle est formée de façon tout à fait régulière pour la …"
+    }
+  ]
+}

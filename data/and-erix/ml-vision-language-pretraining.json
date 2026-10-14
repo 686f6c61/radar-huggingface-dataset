@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "and-erix/ml-vision-language-pretraining",
+  "slug": "and-erix-ml-vision-language-pretraining",
+  "author": "and-erix",
+  "url": "https://huggingface.co/and-erix/ml-vision-language-pretraining",
+  "created_at": "2026-10-13T22:40:48.000Z",
+  "updated_at": "2026-10-13T22:40:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "vision-language-pretraining",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ampersand - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ampersand",
+      "snippet": "Ampersand: the sign & the name being a corruption of 'and per se = and'; i.e. ' & by itself = and'. The sign derives from the scribes' …"
+    },
+    {
+      "title": "Ampersand Symbol (&)",
+      "url": "https://wumbo.net/symbols/ampersand/",
+      "snippet": "The ampersand, or &, is a logogram representing the conjunction 'and'. It originated as a ligature of the letters e and t, from the Latin …"
+    },
+    {
+      "title": "D’où vient le signe « & », alias l’esperluette ?",
+      "url": "https://www.jdbn.fr/dou-vient-le-signe-alias-lesperluette/",
+      "snippet": "Oct 18, 2018 · Le signe « & », autrement appelé l’esperluette, est une ligature esthétique de la conjonction de coordination « et » : …"
+    },
+    {
+      "title": "And Symbol (&) - Copy and Paste Text Symbols - Symbolsdb.com",
+      "url": "https://symbolsdb.com/and-symbol",
+      "snippet": "Copy and paste the ampersand symbol (&), often used as a replacement for \"and,\" and learn how to use it effectively."
+    },
+    {
+      "title": "And Symbol Ampersand",
+      "url": "https://www.andsymbol.net/",
+      "snippet": "And symbol information and example use of ampersand including and sign entity name and entity number codes. How to type …"
+    }
+  ]
+}

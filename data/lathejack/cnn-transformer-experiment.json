@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "lathejack/cnn-transformer-experiment",
+  "slug": "lathejack-cnn-transformer-experiment",
+  "author": "lathejack",
+  "url": "https://huggingface.co/lathejack/cnn-transformer-experiment",
+  "created_at": "2026-10-13T23:43:43.000Z",
+  "updated_at": "2026-10-13T23:43:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Transformers in Machine Learning - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/getting-started-with-transformers/",
+      "snippet": "Transformer is a neural network architecture used for various machine learning tasks, especially in natural language processing and computer vision. It focuses on understanding relationships within data to process information more effectively."
+    },
+    {
+      "title": "Aicollins/cnn-transformer-experiment · Hugging Face",
+      "url": "https://huggingface.co/Aicollins/cnn-transformer-experiment",
+      "snippet": "Cnn Transformer for Matching Overview This repository is a compact, custom PyTorch implementation of Cnn Transformer for Matching. The xlarge configuration is intended for code review, smoke tests, and small controlled experiments rather than as a production-ready pretrained release."
+    },
+    {
+      "title": "amitmukherjee/cnn-transformer-experiment · Hugging Face",
+      "url": "https://huggingface.co/amitmukherjee/cnn-transformer-experiment",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "cnn-transformer · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/cnn-transformer",
+      "snippet": "A hybrid CNN-Transformer framework for precise industrial surface defect detection and segmentation, integrating Vision Transformer (ViT) with convolutional modules to effectively capture both local texture details and global contextual features. A state-of-the-art hybrid deep learning ensemble ..."
+    },
+    {
+      "title": "Transformers library - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/deep-learning/transformers-library/",
+      "snippet": "The Transformers library, developed by Hugging Face, is an open source toolkit for working with advanced machine learning models across text, images, audio and multimodal data. It is widely used in NLP, computer vision and generative AI applications. Provides access to pre-trained models. Supports text, image, audio, and multimodal tasks. Works with PyTorch and TensorFlow. Simplifies model ..."
+    }
+  ]
+}

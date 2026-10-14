@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Alex1515Z/BFS-Best-Face-Swap",
+  "slug": "alex1515z-bfs-best-face-swap",
+  "author": "Alex1515Z",
+  "url": "https://huggingface.co/Alex1515Z/BFS-Best-Face-Swap",
+  "created_at": "2026-10-13T20:42:45.000Z",
+  "updated_at": "2026-10-13T20:42:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "lora",
+    "qwen-image",
+    "qwen-image-2.1",
+    "qwen-image-edit",
+    "face-swap",
+    "head-swap",
+    "body-swap",
+    "image-editing",
+    "comfyui",
+    "bfs",
+    "image-to-image",
+    "en",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:adapter:Qwen/Qwen-Image-2.1",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13015362436,
+  "storage_human": "13.0 GB",
+  "base_model": "Qwen/Qwen-Image-2.1, Qwen/Qwen-Image-Edit-2511, black-forest-labs/FLUX.2-klein-9B, black-forest-labs/FLUX.2-klein-4B, black-forest-labs/FLUX.2-klein-base-4B, black-forest-labs/FLUX.2-klein-base-9B, black-forest-labs/FLUX.2-klein-9b-fp8, black-forest-labs/FLUX.2-klein-4b-fp8, krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nandy (singer) - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Nandy_(singer)",
+      "snippet": "Faustina Charles Mfinanga, known professionally as Nandy, is a Tanzanian singer, songwriter and actress. She performs primarily in …"
+    },
+    {
+      "title": "Home - NANDY | THE AFRICAN PRINCESS",
+      "url": "https://nandyworld.com/",
+      "snippet": "What started as a dream for a young girl from Tanzania has grown into one of the country’s most recognizable music success …"
+    },
+    {
+      "title": "Nandy (chanteuse) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Nandy_(chanteuse)",
+      "snippet": "Faustina Charles Mfinanga (née le 9 novembre 1992), connue sous son nom de scène Nandy est une actrice, chanteuse, …"
+    },
+    {
+      "title": "Nandy - The African Princess - YouTube",
+      "url": "https://www.youtube.com/channel/UCKzR_v8dQlyrZ_zRMcFsQBA",
+      "snippet": "Nandy and Marioo come together on “Somebody,” a captivating new Afro-pop and Bongo Flava collaboration that celebrates love, …"
+    },
+    {
+      "title": "Nandy - Biography, Age, Songs & Albums | AfroYard.net",
+      "url": "https://afroyard.net/artists/nandy/",
+      "snippet": "Nandy is Faustina Charles Mfinanga, a Tanzanian singer, songwriter and actress born on 9 November 1992 in Moshi, Kilimanjaro …"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "maite123/lsa-semantic-gguf",
+  "slug": "maite123-lsa-semantic-gguf",
+  "author": "maite123",
+  "url": "https://huggingface.co/maite123/lsa-semantic-gguf",
+  "created_at": "2026-09-16T15:52:22.000Z",
+  "updated_at": "2026-10-13T21:28:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 2144,
+  "trending_score": 0,
+  "parameters": 1235814432,
+  "parameters_human": "1.24B",
+  "storage_bytes": 25885322080,
+  "storage_human": "25.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Big Brother UK 2026 - Day 24: House of Revelations/Group Chat",
+      "url": "https://forums.digitalspy.com/discussion/2496771/big-brother-uk-2026-day-24-house-of-revelations-group-chat-9pm-10pm-6th-october-itv2/p13",
+      "snippet": "Big Brother UK 2026 - Day 24: House of Revelations/Group Chat - 9pm/10pm - 6th October - ITV2"
+    },
+    {
+      "title": "Week 2 (6:15pm-8:50pm) - Saturday 3rd October 2026 - Discussion …",
+      "url": "https://forums.digitalspy.com/discussion/2496654/week-2-6-15pm-8-50pm-saturday-3rd-october-2026-discussion-thread/p37",
+      "snippet": "Oct 3, 2026 · He also had a stroke and heart surgery in 2018. Lost feeling on his left side and had to rehab so things not as they seem."
+    },
+    {
+      "title": "Big Brother UK 2026 - Day 23: House of Revelations/Group Chat",
+      "url": "https://forums.digitalspy.com/discussion/2496735/big-brother-uk-2026-day-23-house-of-revelations-group-chat-9pm-10pm-5th-october-itv2",
+      "snippet": "Oct 5, 2026 · Previously * Housemates debated gender expression * Harry asks Pauline if Twinks is catching her eye * Omar …"
+    },
+    {
+      "title": "Big Brother UK 2026 - Day 25: House of Revelations/Group Chat",
+      "url": "https://forums.digitalspy.com/discussion/2496811/big-brother-uk-2026-day-25-house-of-revelations-group-chat-9pm-10pm-7th-october-itv2/p11",
+      "snippet": "now the hms realise anything they say could be seen by the whole house - when it comes to bitching in the future it wont stop them …"
+    },
+    {
+      "title": "Week 2 (6:15pm-8:50pm) - Saturday 3rd October 2026 - Discussion …",
+      "url": "https://forums.digitalspy.com/discussion/2496654/week-2-6-15pm-8-50pm-saturday-3rd-october-2026-discussion-thread/p9",
+      "snippet": "Sorry but Johannes still looks OTT,if he lost the bow and he would look great. He sounds louder this week , I guess we will find out if …"
+    }
+  ]
+}

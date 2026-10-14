@@ -5,7 +5,7 @@
   "author": "IsValorum",
   "url": "https://huggingface.co/IsValorum/Huihui-Qwen3.8-27B-Abliterated-VAL-APEX-I-NanoPlus-GGUF",
   "created_at": "2026-10-06T20:23:44.000Z",
-  "updated_at": "2026-10-12T20:29:12.000Z",
+  "updated_at": "2026-10-13T22:57:49.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -39,7 +39,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 3026,
+  "downloads_30d": 3341,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",

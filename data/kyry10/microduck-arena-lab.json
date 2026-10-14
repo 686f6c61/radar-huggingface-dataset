@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Kyry10/microduck-arena-lab",
+  "slug": "kyry10-microduck-arena-lab",
+  "author": "Kyry10",
+  "url": "https://huggingface.co/Kyry10/microduck-arena-lab",
+  "created_at": "2026-10-13T20:05:58.000Z",
+  "updated_at": "2026-10-13T20:06:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "mujoco",
+    "base_model:HannesVonEssen/microduck-running",
+    "base_model:quantized:HannesVonEssen/microduck-running",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 39531109,
+  "storage_human": "40 MB",
+  "base_model": "HannesVonEssen/microduck-running",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Teenager, Nude Art Photography Curated by Photographer Vicente …",
+      "url": "https://modelsociety.com/photographer/vicente-perez-costa/galleries/teenager",
+      "snippet": "Enjoy this beautiful gallery of nude art and photography, curated by Photographer Vicente Perez Costa."
+    },
+    {
+      "title": "Nude - Artsy",
+      "url": "https://www.artsy.net/gene/nude",
+      "snippet": "Artworks that contain artistic depictions of the naked human figure. A universal focus of art, the nude is often associated with either …"
+    },
+    {
+      "title": "History of the nude in art - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/History_of_the_nude_in_art",
+      "snippet": "The nude is an artistic genre that consists of the representation in various artistic media (painting, sculpture, or, more recently, film …"
+    },
+    {
+      "title": "Nude Teen, Painting by Marcel Garbi | ArtMajeur",
+      "url": "https://www.artmajeur.com/marcel-garbi/en/artworks/17936596/nude-teen",
+      "snippet": "Buy art from Marcel Garbi (Free Shipping, Secured direct purchase): Painting titled \"Nude teen\""
+    },
+    {
+      "title": "Naked before the Camera | The Metropolitan Museum of Art",
+      "url": "https://www.metmuseum.org/exhibitions/listings/2012/naked-before-the-camera",
+      "snippet": "nude, photography Since the beginning of art and in every medium, depicting the human body has been among the artist's greatest …"
+    }
+  ]
+}

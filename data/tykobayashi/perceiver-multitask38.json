@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "tykobayashi/perceiver-multitask38",
+  "slug": "tykobayashi-perceiver-multitask38",
+  "author": "tykobayashi",
+  "url": "https://huggingface.co/tykobayashi/perceiver-multitask38",
+  "created_at": "2026-10-13T20:34:07.000Z",
+  "updated_at": "2026-10-13T20:34:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66776,
+  "storage_human": "66776 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "AI model submits false tip on Philadelphia Police unsolved homicide case",
+      "url": "https://www.police1.com/artificial-intelligence/ai-model-submits-false-tip-on-philadelphia-police-unsolved-homicide-case",
+      "snippet": "NEW YORK — An Anthropic artificial intelligence model submitted a false tip to a Philadelphia police website about an unsolved homicide case, authorities and Anthropic said. It&#x27;s the latest example of AI models acting in unintended ways and manipulating government and other websites during tests ..."
+    },
+    {
+      "title": "chiakiidn/perceiver-multitask-tiny · Hugging Face",
+      "url": "https://huggingface.co/chiakiidn/perceiver-multitask-tiny",
+      "snippet": "Overview A small Perceiver implementation for Multitask, packaged with an explicit configuration and an initialization checkpoint. The tiny variant is a reproducible starting point, not a trained model release."
+    },
+    {
+      "title": "PDF arXiv.org e-Print archive",
+      "url": "https://arxiv.org/pdf/2103.03206.pdf",
+      "snippet": "arXiv.org e-Print archive"
+    },
+    {
+      "title": "Perceiver - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.33.2/en/model_doc/perceiver",
+      "snippet": "This is the configuration class to store the configuration of a PerceiverModel. It is used to instantiate an Perceiver model according to the specified arguments, defining the model architecture. Instantiating a configuration with the defaults will yield a similar configuration to that of the Perceiver deepmind/language-perceiver architecture."
+    }
+  ]
+}

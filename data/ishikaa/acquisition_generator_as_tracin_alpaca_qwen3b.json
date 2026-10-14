@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "ishikaa/acquisition_generator_AS_tracin_alpaca_qwen3b",
+  "slug": "ishikaa-acquisition_generator_as_tracin_alpaca_qwen3b",
+  "author": "ishikaa",
+  "url": "https://huggingface.co/ishikaa/acquisition_generator_AS_tracin_alpaca_qwen3b",
+  "created_at": "2026-10-13T20:08:26.000Z",
+  "updated_at": "2026-10-13T20:14:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 59091622760,
+  "storage_human": "59.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

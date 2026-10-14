@@ -5,7 +5,7 @@
   "author": "alibiserikbay",
   "url": "https://huggingface.co/alibiserikbay/k5-kazakh-russian-stt",
   "created_at": "2026-10-08T13:41:24.000Z",
-  "updated_at": "2026-10-12T22:36:59.000Z",
+  "updated_at": "2026-10-13T08:52:28.000Z",
   "license": "cc-by-sa-4.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -41,7 +41,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 8,
+  "downloads_30d": 25,
   "trending_score": 0,
   "parameters": 585330119,
   "parameters_human": "585.3M",

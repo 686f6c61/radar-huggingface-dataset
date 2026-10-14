@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "jongstra/Qwen3.8-27B-Abliterated-MLX-6bit-fp16-mtp",
+  "slug": "jongstra-qwen3-8-27b-abliterated-mlx-6bit-fp16-mtp",
+  "author": "jongstra",
+  "url": "https://huggingface.co/jongstra/Qwen3.8-27B-Abliterated-MLX-6bit-fp16-mtp",
+  "created_at": "2026-10-13T23:07:22.000Z",
+  "updated_at": "2026-10-13T23:07:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "omlx",
+    "apple-silicon",
+    "6-bit",
+    "fp16",
+    "mtp",
+    "speculative-decoding",
+    "qwen",
+    "qwen3.8",
+    "vision",
+    "abliterated",
+    "uncensored",
+    "derivative",
+    "image-text-to-text",
+    "conversational",
+    "base_model:PocketAiHub/Qwen3.8-27B-Abliterated-MLX",
+    "base_model:quantized:PocketAiHub/Qwen3.8-27B-Abliterated-MLX",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 23205229373,
+  "storage_human": "23.2 GB",
+  "base_model": "PocketAiHub/Qwen3.8-27B-Abliterated-MLX",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.fr/mapfiles/home3.html",
+      "snippet": "Explore and navigate the world with Google Maps, offering directions, local business information, and street views."
+    },
+    {
+      "title": "Visualiser les données sur une carte personnalisée à l ... - Google Maps",
+      "url": "https://maps.google.fr/intl/fr_ALL/earth/outreach/learn/visualize-your-data-on-a-custom-map-using-google-my-maps/",
+      "snippet": "Apprenez à créer rapidement une carte à partir des données d'une feuille de calcul, à appliquer un style aux points et aux formes, et …"
+    },
+    {
+      "title": "Indoor – Google Maps",
+      "url": "https://maps.google.fr/help/maps/indoormaps/",
+      "snippet": "Indoor Google Maps create a more convenient and enjoyable visitor experience at no cost! Your visitors can spend more time …"
+    },
+    {
+      "title": "Transit – Google Maps",
+      "url": "https://maps.google.fr/intl/fr/landing/transit/",
+      "snippet": "If you provide a transportation service that is open to the public, and operates with fixed schedules and routes, we welcome your …"
+    },
+    {
+      "title": "Plans d'étages pour Google Maps",
+      "url": "https://maps.google.fr/help/maps/floorplans/",
+      "snippet": "Ajoutez les plans vous-même Trouvez le bâtiment sur la carte. Transférez une image de votre plan d'étage ou d'orientation. Alignez …"
+    }
+  ]
+}

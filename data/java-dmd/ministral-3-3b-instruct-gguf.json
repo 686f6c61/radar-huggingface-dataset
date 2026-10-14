@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Java-dmd/Ministral-3-3B-Instruct-GGUF",
+  "slug": "java-dmd-ministral-3-3b-instruct-gguf",
+  "author": "Java-dmd",
+  "url": "https://huggingface.co/Java-dmd/Ministral-3-3B-Instruct-GGUF",
+  "created_at": "2026-10-14T00:14:53.000Z",
+  "updated_at": "2026-10-14T00:34:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3221045248,
+  "storage_human": "3.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Download Java",
+      "url": "https://www.java.com/en/download/",
+      "snippet": "Aug 18, 2026 · This download is for end users who need Java for running applications on desktops or laptops. Java 8 integrates with …"
+    },
+    {
+      "title": "Java | Oracle",
+      "url": "https://www.java.com/fr/",
+      "snippet": "Oracle Java est le langage de programmation et la plate-forme de développement n° 1. Ce produit réduit les coûts, raccourcit les …"
+    },
+    {
+      "title": "Java Downloads | Oracle",
+      "url": "https://www.oracle.com/java/technologies/downloads/",
+      "snippet": "Sep 15, 2026 · Download the Java including the latest version 17 LTS on the Java SE Platform. These downloads can be used for …"
+    },
+    {
+      "title": "Java (langage) — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Java_(langage)",
+      "snippet": "Depuis le J2SE1.4, l’évolution de Java est dirigée par le JCP (Java Community Process) qui utilise les JSR (Java Specifications …"
+    },
+    {
+      "title": "Java (programming language) - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Java_(programming_language)",
+      "snippet": "[21] Java was designed by James Gosling at Sun Microsystems. It was released in May 1995 as a core component of Sun's Java …"
+    }
+  ]
+}

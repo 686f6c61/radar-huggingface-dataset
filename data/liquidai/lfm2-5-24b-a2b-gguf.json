@@ -5,7 +5,7 @@
   "author": "LiquidAI",
   "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-GGUF",
   "created_at": "2026-10-09T18:03:23.000Z",
-  "updated_at": "2026-10-13T06:11:44.000Z",
+  "updated_at": "2026-10-13T21:33:53.000Z",
   "license": "lfm1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -45,13 +45,13 @@
     "region:us",
     "conversational"
   ],
-  "likes": 21,
+  "likes": 74,
   "downloads_30d": 71,
-  "trending_score": 0,
+  "trending_score": 74,
   "parameters": 23971587712,
   "parameters_human": "23.97B",
-  "storage_bytes": 186241380064,
-  "storage_human": "186.2 GB",
+  "storage_bytes": 199819570944,
+  "storage_human": "199.8 GB",
   "base_model": "LiquidAI/LFM2.5-24B-A2B",
   "formats": [
     "gguf"

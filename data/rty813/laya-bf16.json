@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "rty813/laya-bf16",
+  "slug": "rty813-laya-bf16",
+  "author": "rty813",
+  "url": "https://huggingface.co/rty813/laya-bf16",
+  "created_at": "2026-10-13T20:55:29.000Z",
+  "updated_at": "2026-10-13T20:55:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "laya",
+    "bf16",
+    "full-precision",
+    "vllm",
+    "xinference",
+    "text-generation",
+    "base_model:convaiinnovations/laya",
+    "base_model:finetune:convaiinnovations/laya",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10240,
+  "storage_human": "10240 B",
+  "base_model": "convaiinnovations/laya",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2026年 9月 CPU天梯图（更新250/270K Plus&9850X3D）",
+      "url": "https://www.zhihu.com/tardis/bd/art/280070583",
+      "snippet": "桌面端CPU综合性能天梯图，提供最新的CPU性能排名和对比信息，帮助用户了解不同型号的表现和选择适合自己的产品。"
+    },
+    {
+      "title": "Sign in to Google Ads",
+      "url": "https://support.google.com/google-ads/answer/1722062?hl=en",
+      "snippet": "Sign in with your account Before you begin, make sure you’re using the most up-to-date version of your browser. Google Ads is …"
+    },
+    {
+      "title": "百度知道 - 全球领先中文互动问答平台",
+      "url": "https://zhidao.baidu.com/",
+      "snippet": "百度知道是全球领先的中文问答互动平台，每天为数亿网民答疑解惑。百度知道通过AI技术实现智能检索和智能推荐，让您的每个疑 …"
+    },
+    {
+      "title": "l（动漫《死亡笔记》人物） - 知乎",
+      "url": "https://www.zhihu.com/topic/20659906/intro",
+      "snippet": "l，全名L·Lawliet [1979年10月31日（动画版为1982年）——2004年11月5日（动画版为2007年）]，是日本人气漫画《死亡笔 …"
+    },
+    {
+      "title": "Google Help",
+      "url": "https://support.google.com/?hl=en",
+      "snippet": "If you're having trouble accessing a Google product, there's a chance we're currently experiencing a temporary problem. You can …"
+    }
+  ]
+}

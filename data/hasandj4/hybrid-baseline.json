@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "hasandj4/hybrid-baseline",
+  "slug": "hasandj4-hybrid-baseline",
+  "author": "hasandj4",
+  "url": "https://huggingface.co/hasandj4/hybrid-baseline",
+  "created_at": "2026-10-13T22:28:47.000Z",
+  "updated_at": "2026-10-13T22:28:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hybrid",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ARNAQUE TRANSAVIA - Avion - Forum Que Choisir",
+      "url": "https://forum.quechoisir.org/arnaque-transavia-t191901.html",
+      "snippet": "Sep 1, 2015 · Attention, transavia pratique le sur booking. Vous réservez sans savoir que vous êtes un excédent et si à votre arriver …Read more"
+    },
+    {
+      "title": "Arnaque au bagage cabine chez Transavia - Forum Que Choisir",
+      "url": "https://forum.quechoisir.org/arnaque-au-bagage-cabine-chez-transavia-t278239.html",
+      "snippet": "Aug 22, 2020 · Arnaque au bagage cabine chez Transavia Messagepar VaixellDe58 » sam. août 22, 2020 11:26 am Ayant avant …"
+    },
+    {
+      "title": "Transavia-vlucht wijzigen? Pas dan op voor foute prijzen - Radar",
+      "url": "https://radar.avrotros.nl/artikel/transavia-vlucht-wijzigen-pas-dan-op-voor-foute-prijzen-54908",
+      "snippet": "Oct 9, 2023 · Pas dan op voor foute prijzen Omboeken bij Transavia doe je niet zonder risico. Vanwege een fout in het systeem …"
+    },
+    {
+      "title": "Vliegen met een besmettelijke ziekte: mag dat? - Radar",
+      "url": "https://radar.avrotros.nl/artikel/vliegen-met-een-besmettelijke-ziekte-mag-dat-2387",
+      "snippet": "Jul 29, 2017 · Zo zegt Transavia dat er een medische verklaring moet zijn waarin staat 'dat de ziekte zich niet meer in de …"
+    },
+    {
+      "title": "ATTENTION AUX MODIFICATION DES DATE DE VOL CHEZ …",
+      "url": "https://forum.quechoisir.org/attention-aux-modification-des-date-de-vol-chez-transavia-t268007.html",
+      "snippet": "Oct 22, 2018 · A l'arrivée Transavia facture l'écart positif sur le prix du billet aller et par contre ne fait pas bénéficier de l'écart négatif …"
+    }
+  ]
+}

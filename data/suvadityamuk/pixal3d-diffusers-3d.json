@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "suvadityamuk/Pixal3D-diffusers-3d",
+  "slug": "suvadityamuk-pixal3d-diffusers-3d",
+  "author": "suvadityamuk",
+  "url": "https://huggingface.co/suvadityamuk/Pixal3D-diffusers-3d",
+  "created_at": "2026-10-13T20:34:29.000Z",
+  "updated_at": "2026-10-14T00:19:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-3d",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "diffusers-3d",
+    "pixal3d",
+    "3d",
+    "image-to-3d",
+    "base_model:TencentARC/Pixal3D",
+    "base_model:finetune:TencentARC/Pixal3D",
+    "license:mit",
+    "diffusers:Pixal3DImageTo3DPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13187110880,
+  "storage_human": "13.2 GB",
+  "base_model": "TencentARC/Pixal3D",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PNG to STL in Seconds - Meshy 7 for 3D Printing",
+      "url": "https://duckduckgo.com/y.js?ad_domain=meshy.ai&ad_provider=bingv7aa&ad_type=txad&click_metadata=YMUblaxG2ei6uMI41IZ55ouKAsM879NV5Mhj6C17pruql0RauQfEpbxBSLyFr_Zw1k4A7XxxY6Tq3Vbye4%2D0Lovy9KFyHZbR2b4eaaTEvytXJgRa4SLPlVUQsPkJLkxbAHSaDThK6LA3IhEYv8_1UfuH7HR_FB0V%2D0_UI33KPLo.fN64soFPKAu1Lraj8ayCLA&rut=e0cb1125482fea35389151c13cefb6f44fba989dc716a35d212d78fe3f9da55f&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8R_2pRaMTG4qi6T9IGS32lDVUCUwS6nAjL4_lEgN5in7hZeONsXzAYOPGGFMQNxsyAtMUOaoGqZJOnhS5EPXHFCN8Y_s01qAH0h9opjhIuz5ztzxAl6HRkx%2D6PTMOII%2DdaTO7py124ubTe8zPYUVzGgoFlHrZcL7X8KSzv3LrkZ_ErRjqH1%2DSN2qo0_j2LfPOyKikv1P3EL%2D9uDmahKxuYLfu7CM%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cubWVzaHkuYWklMmYlM2Z1dG1fY29udGVudCUzZDExODUyNzU5MjQzMzkwMDQlMjZ1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RwbWF4JTI2dXRtX2NhbXBhaWduJTNkNTcxNjQ3MzUxJTI2bXNjbGtpZCUzZGYxMzNkNGQ2M2VlMjFmY2I2Yzg1YmUxOGE5YjAyY2I0JTI2dXRtX3Rlcm0lM2R3d3cubWVzaHkuYWklMjZ1dG1fY29udGVudCUzZEFJJTI1MjAzRCUyNTIwR2VuZXJhdGlvbg%26rlid%3Df133d4d63ee21fcb6c85be18a9b02cb4&vqd=4-320338115301512565223279668511854067729&iurl=%7B1%7DIG%3DDDA80D6C78D74FB0BB5E627975CB27CD%26CID%3D1C328B53FC016F8205A89CA2FD276E7F%26ID%3DDevEx%2C5037.1",
+      "snippet": "New User Offer: Get up to 50% Off — Limited Time Only. Create 3D Print-Ready Models Instantly — Meshy AI Generates Perfect STL Files."
+    },
+    {
+      "title": "Outil Texte vers 3D N°1 - Créez Des Modèles 3D En Secs",
+      "url": "https://duckduckgo.com/y.js?ad_domain=tripo3d.ai&ad_provider=bingv7aa&ad_type=txad&click_metadata=5nNNx_OT48l6FhCU0nOOI4pEbYpvxgMkKJUkeoqHRWJWvFCpRAsuUA35kfaZMmIt0iQNLaMa7nTcRemWd%2DEawXTLs650kh2VkyrVojZYRA2JsA%2DMJBdEvG2hbl%2DciGJgz2tQq4g_HC3zj4HDDg2IudPhJiTe1_E4kRnJIMW_lMI.u98pN8WQcSNqE5MHnFipyg&rut=3c0523a0d45824fd34d10daeb95a4ef0346117a01234929f34317de84ac9548a&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8VmgUBWeW5VLJ0pswKz2dujVUCUy%2DhMi2MTPpTc%2Dz0R20VHU86KdPgw1lg5VSqVWFCSJ_dzu71aAVCluRgqtKT3fGnBPLsC0oJQnV3VT6JGmdcCLFW65rV6xLAFwvVnGFUDL5Fqr55%2DLQPdloG6C8J3r7t9pSp4oOurlp69QZ9k03PWq2eEjvuq1emliUecqutNWCxfK3NDA66gyfFSgewILFMj8%26u%3DaHR0cHMlM2ElMmYlMmZzdHVkaW8udHJpcG8zZC5haSUyZmZyJTNmdXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX2NhbXBhaWduJTNkNTI0NzM1Nzk4JTI2dXRtX2FkZ3JvdXAlM2QxMzI0OTE0NTU1NDg5MzM5JTI2dXRtX2NvbnRlbnQlM2RzaXRlJTI1MjBwb3VyJTI1MjBtb2RlbCUyNTIwM2QlMjZtc2Nsa2lkJTNkYjA0YzgzMjAzOTIxMTBkYzNkNWZlOWVlYWU3MzEzNzU%26rlid%3Db04c8320392110dc3d5fe9eeae731375&vqd=4-218425710667509797260269733506876565159&iurl=%7B1%7DIG%3DDDA80D6C78D74FB0BB5E627975CB27CD%26CID%3D1C328B53FC016F8205A89CA2FD276E7F%26ID%3DDevEx%2C5040.1",
+      "snippet": "Un Moteur IA 3D Véritablement Adapté aux Flux de Production Professionnels. Commencez gratuitement! Modèles 3D finis en secondes avec Tripo3D IA, testez maintenant"
+    },
+    {
+      "title": "suvadityamuk (Suvaditya Mukherjee) · GitHub",
+      "url": "https://github.com/suvadityamuk",
+      "snippet": "A light, minimal, and fully-online 3D object viewer. Supports GLB, PLY, 3DGS, OBJ, and more. JavaScript 5"
+    },
+    {
+      "title": "suvadityamuk (Suvaditya Mukherjee) - Hugging Face",
+      "url": "https://huggingface.co/suvadityamuk",
+      "snippet": "AI & ML interests Computer Vision, Text-to-Image/3D Generation, Multimodal Models"
+    },
+    {
+      "title": "GitHub - suvadityamuk/suvadityamuk: My ReadMe is placed here.",
+      "url": "https://github.com/suvadityamuk/suvadityamuk",
+      "snippet": "My ReadMe is placed here. Contribute to suvadityamuk/suvadityamuk development by creating an account on GitHub."
+    }
+  ]
+}

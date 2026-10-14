@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "zeromodels/all-distilroberta-v1",
+  "slug": "zeromodels-all-distilroberta-v1",
+  "author": "zeromodels",
+  "url": "https://huggingface.co/zeromodels/all-distilroberta-v1",
+  "created_at": "2026-10-13T22:35:52.000Z",
+  "updated_at": "2026-10-13T23:18:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "zeromodels",
+  "languages": [],
+  "tags": [
+    "zeromodels",
+    "keras",
+    "sentence-transformers",
+    "sentence-similarity",
+    "roberta",
+    "text-embeddings",
+    "base_model:sentence-transformers/all-distilroberta-v1",
+    "base_model:finetune:sentence-transformers/all-distilroberta-v1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 326353280,
+  "storage_human": "326 MB",
+  "base_model": "sentence-transformers/all-distilroberta-v1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Randonnées pédestres et balades nature (77) - Seine-et-Marne Vivre …",
+      "url": "https://www.tourisme-seine-et-marne.fr/activites/randos-balades/a-pied/",
+      "snippet": "Que vous soyez randonneur aguerri ou amateur de balades tranquilles, nos itinéraires vous promettent des moments inoubliables, …"
+    },
+    {
+      "title": "Balad’Pass | Seine-et-Marne Vivre en Grand !",
+      "url": "https://www.tourisme-seine-et-marne.fr/pratique/baladpass/",
+      "snippet": "Le Balad’Pass 77 est un pass exclusif, pensé pour les habitants de Seine-et-Marne, qui souhaitent profiter pleinement des richesses …"
+    },
+    {
+      "title": "20 randonnées Seine-et-Marne - Visorando",
+      "url": "https://www.visorando.com/randonnee-seine-et-marne.html",
+      "snippet": "La forêt de Fontainebleau est un des plus beaux massifs forestiers français grâce à ses paysages variés et surtout à ses blocs de grès."
+    },
+    {
+      "title": "Les plus belles promenades et randonnées autour de la Seine",
+      "url": "https://www.komoot.com/fr-fr/guide/58971/randonnees-autour-de-la-seine-et-marne",
+      "snippet": "Sep 13, 2026 · La randonnée en Seine-et-Marne est définie par l'ancienne Forêt de Fontainebleau, les rives sinueuses des rivières …"
+    },
+    {
+      "title": "164 Balades et Promenades Faciles à Faire Autour de la Seine et Marne",
+      "url": "https://sortie-visite.com/promenade-seine-et-marne-77D",
+      "snippet": "Partez en balade sur le Loing à Nemours à bord de nos bateaux électriques sans permis. Profitez d'une expérience écoresponsable, …"
+    }
+  ]
+}

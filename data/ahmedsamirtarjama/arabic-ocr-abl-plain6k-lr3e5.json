@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ahmedsamirtarjama/arabic-ocr-abl-plain6k-lr3e5",
+  "slug": "ahmedsamirtarjama-arabic-ocr-abl-plain6k-lr3e5",
+  "author": "ahmedsamirtarjama",
+  "url": "https://huggingface.co/ahmedsamirtarjama/arabic-ocr-abl-plain6k-lr3e5",
+  "created_at": "2026-10-13T20:31:52.000Z",
+  "updated_at": "2026-10-13T20:36:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "arabic",
+    "ocr",
+    "document-layout",
+    "research",
+    "conversational",
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-4B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4437815808,
+  "parameters_human": "4.44B",
+  "storage_bytes": 8887142058,
+  "storage_human": "8.9 GB",
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Plan de bandes HF - qsl.net",
+      "url": "https://www.qsl.net/f3wm/radio/plan_hf.html",
+      "snippet": "Ce tableau est établi pour la zone 1 et intègre les spécificités propres à la France. La répartition des segments par mode de trafic …"
+    },
+    {
+      "title": "F4FJP - Plan des bandes HF HAM",
+      "url": "http://www.f4fjp.fr/planhf.htm",
+      "snippet": "La bande des 80m est semblable à la bande des 160m à bien des égards. L'absorption de jour est significative mais pas aussi …"
+    },
+    {
+      "title": "PLAN DES BANDES ET FREQUENCES RADIOAMATEURS",
+      "url": "https://qrvradio.fr/FreqRA.htm",
+      "snippet": "PLANS DES BANDES, FREQUENCES ET MODES UTILISES PAR LES RADIOAMATEURS. REGIONS 1, 2 ET 3 DE L'UIT."
+    },
+    {
+      "title": "PLAN DE BANDES HF AMATEUR - Radioamateurs France",
+      "url": "https://www.radioamateurs-france.fr/wp-content/uploads/PLAN-DE-BANDES-HF-AMATEUR.pdf",
+      "snippet": "Amateur 5.80A. Aeronautical radionavigation 5.77 5.80. 5.80B 5.82."
+    },
+    {
+      "title": "Guide pratique des bandes HF radioamateur",
+      "url": "https://hamanalyst.org/wp-content/uploads/2015/06/Guide_pratique_des_bandes_HF_radioamateur.pdf",
+      "snippet": "Les bandes HF offrent une richesse unique en termes de propagation et d'usages. Comprendre leurs spécificités permet d'optimiser …"
+    }
+  ]
+}

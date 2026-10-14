@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "artemsnb25/lightweight-multimodal-finetune-2023",
+  "slug": "artemsnb25-lightweight-multimodal-finetune-2023",
+  "author": "artemsnb25",
+  "url": "https://huggingface.co/artemsnb25/lightweight-multimodal-finetune-2023",
+  "created_at": "2026-10-13T20:02:36.000Z",
+  "updated_at": "2026-10-13T20:02:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "lightweight-multimodal",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66776,
+  "storage_human": "66776 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

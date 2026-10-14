@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "ikimyaii/hgrn-1.3B-ria-70pct",
+  "slug": "ikimyaii-hgrn-1-3b-ria-70pct",
+  "author": "ikimyaii",
+  "url": "https://huggingface.co/ikimyaii/hgrn-1.3B-ria-70pct",
+  "created_at": "2026-05-11T20:05:50.000Z",
+  "updated_at": "2026-10-13T21:26:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "fla",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "fla",
+    "safetensors",
+    "hgrn",
+    "text-generation",
+    "pruning",
+    "sparse",
+    "ria",
+    "baseline",
+    "en",
+    "dataset:Salesforce/wikitext",
+    "dataset:allenai/c4",
+    "base_model:ikimyaii/hgrn-1.3B-dense-baseline",
+    "base_model:finetune:ikimyaii/hgrn-1.3B-dense-baseline",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 1364396032,
+  "parameters_human": "1.36B",
+  "storage_bytes": 2729312411,
+  "storage_human": "2.7 GB",
+  "base_model": "ikimyaii/hgrn-1.3B-dense-baseline",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

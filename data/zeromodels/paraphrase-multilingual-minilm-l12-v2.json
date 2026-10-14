@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "zeromodels/paraphrase-multilingual-MiniLM-L12-v2",
+  "slug": "zeromodels-paraphrase-multilingual-minilm-l12-v2",
+  "author": "zeromodels",
+  "url": "https://huggingface.co/zeromodels/paraphrase-multilingual-MiniLM-L12-v2",
+  "created_at": "2026-10-13T22:41:57.000Z",
+  "updated_at": "2026-10-13T23:18:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "zeromodels",
+  "languages": [],
+  "tags": [
+    "zeromodels",
+    "keras",
+    "sentence-transformers",
+    "sentence-similarity",
+    "bert",
+    "text-embeddings",
+    "multilingual",
+    "base_model:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "base_model:finetune:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 470537056,
+  "storage_human": "471 MB",
+  "base_model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Réclamation par mail à Orange : quelle adresse",
+      "url": "https://communaute.orange.fr/t5/Mon-telephone-par-internet-et/R%C3%A9clamation-par-mail-%C3%A0-Orange-quelle-adresse/td-p/1937304",
+      "snippet": "Sep 7, 2019 · Bonjour, Où trouver l'adresse mail Orange pour déposer une réclamation svp ? Quand je clique sur \"déposer une …"
+    },
+    {
+      "title": "Accéder à mon mail Orange",
+      "url": "https://communaute.orange.fr/t5/Webmail-Orange/Acc%C3%A9der-%C3%A0-mon-mail-Orange/td-p/36",
+      "snippet": "Aug 2, 2013 · Voici quelques infos utiles à préciser lorsque vous rencontrez un soucis de messagerie Comment consultez-vous vos …"
+    },
+    {
+      "title": "Lecture de Plusieurs boîtes mail en même temps - Communauté Orange",
+      "url": "https://communaute.orange.fr/t5/Webmail-Orange/Lecture-de-Plusieurs-bo%C3%AEtes-mail-en-m%C3%AAme-temps/td-p/3393929",
+      "snippet": "Feb 28, 2026 · Bonjour. Est il possible dans l'appli (S22) de visualiser deux boîtes mail (ou 3... soyons fous) en même temps, …"
+    },
+    {
+      "title": "Résolu : Je reçois des emails \"Undelivered Mail Returned to ...",
+      "url": "https://communaute.orange.fr/t5/Prot%C3%A9ger-mes-donn%C3%A9es-et-mon/Je-re%C3%A7ois-des-emails-quot-Undelivered-Mail-Returned-to-Sender/td-p/1171024",
+      "snippet": "Jan 5, 2017 · Bonjour, Depuis quelques semaines je reçois un grand nombre d'emails de \"Mail Delivery System\" avec comme sujet …"
+    },
+    {
+      "title": "migration contenu boite mail orange vers gmail",
+      "url": "https://communaute.orange.fr/t5/Mails-sur-mon-mobile/migration-contenu-boite-mail-orange-vers-gmail/td-p/2893498",
+      "snippet": "Jan 21, 2023 · Résolu : bonjour orange va fermer ma boite mail orange donc je doit faire migrer le contenu de ma boite mail orange …"
+    }
+  ]
+}

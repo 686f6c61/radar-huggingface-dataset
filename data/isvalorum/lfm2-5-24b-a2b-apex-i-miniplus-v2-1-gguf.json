@@ -1,0 +1,111 @@
+{
+  "schema": 1,
+  "id": "IsValorum/LFM2.5-24B-A2B-APEX-I-MiniPlus-V2.1-GGUF",
+  "slug": "isvalorum-lfm2-5-24b-a2b-apex-i-miniplus-v2-1-gguf",
+  "author": "IsValorum",
+  "url": "https://huggingface.co/IsValorum/LFM2.5-24B-A2B-APEX-I-MiniPlus-V2.1-GGUF",
+  "created_at": "2026-10-13T18:46:37.000Z",
+  "updated_at": "2026-10-14T01:01:31.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "es",
+    "pt",
+    "it",
+    "vi",
+    "th",
+    "id",
+    "hi",
+    "ru",
+    "pl"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "quantized",
+    "val-apex-i",
+    "apex-i-miniplus",
+    "liquid",
+    "lfm2.5",
+    "edge",
+    "moe",
+    "reasoning",
+    "tool-calling",
+    "text-generation",
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "es",
+    "pt",
+    "it",
+    "vi",
+    "th",
+    "id",
+    "hi",
+    "ru",
+    "pl",
+    "base_model:LiquidAI/LFM2.5-24B-A2B",
+    "base_model:quantized:LiquidAI/LFM2.5-24B-A2B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23971587712,
+  "parameters_human": "23.97B",
+  "storage_bytes": 9641950688,
+  "storage_human": "9.6 GB",
+  "base_model": "LiquidAI/LFM2.5-24B-A2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "APEX-I-MiniPlus V2.1 (Current) - a IsValorum Collection",
+      "url": "https://huggingface.co/collections/IsValorum/apex-i-miniplus-v21-current-6aac8d4766a28a024e8bb104",
+      "snippet": "Definitive frontier V2.1 specification within the 13-14 GB envelope with zero AVX2 stalls."
+    },
+    {
+      "title": "Qwen3.8-35B-A3B-Distill APEX-I-MiniPlus-V2.1 GGUF - Hugging Face",
+      "url": "https://huggingface.co/IsValorum/Qwen3.8-35B-A3B-Distill-APEX-I-MiniPlus-V2.1-GGUF",
+      "snippet": "IsValorum / Qwen3.8-35B-A3B-Distill-APEX-I-MiniPlus-V2.1-GGUF Like 0 Text Generation GGUF 13 languages quantization quantized apex apex-quant custom-quantization unsloth-studio Mixture of Experts reasoning chain-of-thought distillation qwen3.8 qwen35moe llama.cpp imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet ..."
+    },
+    {
+      "title": "LFM2.5-24B-A2B: Built for Fast On-Device Agents - liquid.ai",
+      "url": "https://www.liquid.ai/blog/lfm2-5-24b-a2b",
+      "snippet": "LFM2.5-24B-A2B: an open-weight 24B reasoning model with 2B active parameters, built for fast, private on-device agents. Beats Qwen3.6-35B-A3B on LiveClaw."
+    },
+    {
+      "title": "IsValorum/Nex-N2.5-mini-APEX-I-MiniPlus-V2.1-GGUF:1 local LLM benchmarks",
+      "url": "https://llm-bench.io/models/nex-n2-5-mini-apex-i-miniplus-v2-1-gguf-1",
+      "snippet": "Local LLM benchmarks for IsValorum/Nex-N2.5-mini-APEX-I-MiniPlus-V2.1-GGUF:1: 26 tok/s peak across 2 community runs on 1 GPU, with VRAM, context, and quality data by hardware and tool."
+    },
+    {
+      "title": "Nex-N2.5-mini-APEX-I-MiniPlus-V2.1-GGUF by Isvalorum",
+      "url": "https://savrn.com/models/nex-n2-5-mini-apex-i-miniplus-v2-1-gguf",
+      "snippet": "Nex-N2.5-mini-APEX-I-MiniPlus-V2.1-GGUF from Isvalorum: license, access terms, disclosed training data, reported evaluations and the publisher&#x27;s download."
+    }
+  ]
+}

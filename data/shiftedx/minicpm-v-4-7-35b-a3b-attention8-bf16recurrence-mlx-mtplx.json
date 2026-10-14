@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Shiftedx/MiniCPM-V-4.7-35B-A3B-Attention8-BF16Recurrence-MLX-MTPLX",
+  "slug": "shiftedx-minicpm-v-4-7-35b-a3b-attention8-bf16recurrence-mlx-mtplx",
+  "author": "Shiftedx",
+  "url": "https://huggingface.co/Shiftedx/MiniCPM-V-4.7-35B-A3B-Attention8-BF16Recurrence-MLX-MTPLX",
+  "created_at": "2026-10-13T22:47:16.000Z",
+  "updated_at": "2026-10-13T22:57:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "minicpmv4_7",
+    "mtplx",
+    "minicpm-v",
+    "vision",
+    "moe",
+    "dspark",
+    "quantized",
+    "image-text-to-text",
+    "conversational",
+    "base_model:openbmb/MiniCPM-V-4.7-35B-A3B",
+    "base_model:quantized:openbmb/MiniCPM-V-4.7-35B-A3B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35212875824,
+  "parameters_human": "35.21B",
+  "storage_bytes": 23820254591,
+  "storage_human": "23.8 GB",
+  "base_model": "openbmb/MiniCPM-V-4.7-35B-A3B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "shotshot.ai — Turn 3D models into product images and videos",
+      "url": "https://shotshot.ai/en",
+      "snippet": "An AI visual creation workspace for product designers and brand teams. Use 3D model views as references, generate images and …"
+    },
+    {
+      "title": "Free AI 3D Model Generator - MeshGPT",
+      "url": "https://meshgpt.io/",
+      "snippet": "Generate game-ready assets, stylized characters, product prototypes, and printable meshes with advanced AI. From anime …"
+    },
+    {
+      "title": "hitem3d — AI 3D Model Generator for Real Work",
+      "url": "https://hitem3d.online/",
+      "snippet": "hitem3d turns prompts and images into detailed, editable, print-ready 3D models for makers, designers, creators, and real-world …"
+    },
+    {
+      "title": "Fast 3D — AI 3D Model Generator | Text to 3D & Image to 3D in …",
+      "url": "https://www.fast3d.org/en",
+      "snippet": "Fast 3D is the fast AI 3D model generator that turns text prompts or images into fully-textured, production-ready 3D models in ~10 …"
+    },
+    {
+      "title": "AI 3D Model Generator: Create 3D from Text & Images | Meshy",
+      "url": "https://www.meshy.ai/",
+      "snippet": "Meshy's AI 3D model generator turns text and images into production-ready 3D models in 20-30 seconds. Export to FBX, OBJ, GLB, …"
+    }
+  ]
+}

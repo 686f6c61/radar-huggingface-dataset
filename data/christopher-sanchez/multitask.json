@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "christopher-sanchez/multitask",
+  "slug": "christopher-sanchez-multitask",
+  "author": "christopher-sanchez",
+  "url": "https://huggingface.co/christopher-sanchez/multitask",
+  "created_at": "2026-10-13T23:53:26.000Z",
+  "updated_at": "2026-10-13T23:53:32.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Christopher (singer) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Christopher_(singer)",
+      "snippet": "Christopher has released five albums, the debut Colours (2012), followed by Told You So (2014), Closer (2016), Under the Surface …Read more"
+    },
+    {
+      "title": "Christopher - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Christopher",
+      "snippet": "In English, Christopher may be abbreviated as \"Chris\", \"Topher\", and sometimes \"Kit\". It was frequently the most popular male first …"
+    },
+    {
+      "title": "CHRISTOPHER MUSIC | OFFICIAL STORE",
+      "url": "https://christophermusic.dk/",
+      "snippet": "Shipping Return Policy Withdrawal Country/region DKK DKK EUR SEK USD Search CHRISTOPHER ©2026 SHOP ALBUMS TOUR …"
+    },
+    {
+      "title": "Prénom Christopher (garçon) : signification, origine, caractère, saint ...",
+      "url": "https://www.journaldesfemmes.fr/prenoms/christopher/prenom-470",
+      "snippet": "Quel est le caractère des Christopher ? Christopher est un homme dynamique, passionné et vivace qui aime l'aventure et la …"
+    },
+    {
+      "title": "Christopher - ONE (Official Music Video) - YouTube",
+      "url": "https://www.youtube.com/watch?v=4_ckq0wzzpk",
+      "snippet": "Follow Christopher: / christophermusiccom / christophermusiccom / christophermusicdk Lyrics: Carve your name onto my naked …"
+    }
+  ]
+}

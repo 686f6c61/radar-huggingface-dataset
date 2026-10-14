@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "Gkea/kinyarwanda-sentiment-afroxlmr-large",
+  "slug": "gkea-kinyarwanda-sentiment-afroxlmr-large",
+  "author": "Gkea",
+  "url": "https://huggingface.co/Gkea/kinyarwanda-sentiment-afroxlmr-large",
+  "created_at": "2026-10-13T20:21:56.000Z",
+  "updated_at": "2026-10-13T20:23:29.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "rw"
+  ],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "text-classification",
+    "rw",
+    "dataset:shmuhammad/AfriSenti-twitter-sentiment",
+    "base_model:Davlan/afro-xlmr-large",
+    "base_model:finetune:Davlan/afro-xlmr-large",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 559893507,
+  "parameters_human": "559.9M",
+  "storage_bytes": 2256705604,
+  "storage_human": "2.3 GB",
+  "base_model": "Davlan/afro-xlmr-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

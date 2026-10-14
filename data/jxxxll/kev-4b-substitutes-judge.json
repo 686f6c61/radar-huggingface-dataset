@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "jxxxll/kev-4b-substitutes-judge",
+  "slug": "jxxxll-kev-4b-substitutes-judge",
+  "author": "jxxxll",
+  "url": "https://huggingface.co/jxxxll/kev-4b-substitutes-judge",
+  "created_at": "2026-10-14T00:31:22.000Z",
+  "updated_at": "2026-10-14T00:35:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "decision-model",
+    "kev",
+    "lora",
+    "calibration",
+    "product-matching",
+    "qwen3.5",
+    "text-classification",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B-Base",
+    "base_model:adapter:Qwen/Qwen3.5-4B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 155163852,
+  "storage_human": "155 MB",
+  "base_model": "Qwen/Qwen3.5-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Calypso St. Barth",
+      "url": "https://calypsostbarth.com/",
+      "snippet": "How and where we make our products matters. We focus on quality, ethical business practices, and sustainability to ensure positive …"
+    },
+    {
+      "title": "Brand – Calypso",
+      "url": "https://calypso-label.com/pages/brand",
+      "snippet": "Calypso is a womenswear label that celebrates the essence of femininity through distinctive, expressive, and elevated collections. …"
+    },
+    {
+      "title": "Calypso Lemonade - The Taste of the Islands",
+      "url": "https://drinkcalypso.com/",
+      "snippet": "Calypso, the originator of the flavored lemonade category, has evolved from four lemonade blends into a dozen lemonade and …"
+    },
+    {
+      "title": "Calypso | Montres pour hommes et femmes | Site Officiel",
+      "url": "https://calypso-watch.com/fr-FR/montre",
+      "snippet": "Découvrez notre sélection de montres Calypso uniques et d'accessoires d'écriture originaux dans notre boutique en ligne officielle."
+    },
+    {
+      "title": "Calypso Watches | Montres modernes pour hommes et femmes",
+      "url": "https://calypso-watch.com/fr-FR",
+      "snippet": "Découvrez les montres Calypso : des montres jeunes et sportives avec des designs modernes, une technologie avancée et la …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "lightx2v/Qwen-Image-2.1-Lightning",
+  "slug": "lightx2v-qwen-image-2-1-lightning",
+  "author": "lightx2v",
+  "url": "https://huggingface.co/lightx2v/Qwen-Image-2.1-Lightning",
+  "created_at": "2026-10-13T12:50:58.000Z",
+  "updated_at": "2026-10-13T15:14:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "lora",
+    "diffusion",
+    "distillation",
+    "image-generation",
+    "image-editing",
+    "lightx2v",
+    "text-to-image",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:adapter:Qwen/Qwen-Image-2.1",
+    "region:us"
+  ],
+  "likes": 27,
+  "downloads_30d": 0,
+  "trending_score": 27,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 153083294,
+  "storage_human": "153 MB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen Image 3.0 | OpenArt - Generate With Qwen Image 3",
+      "url": "https://duckduckgo.com/y.js?ad_domain=openart.ai&ad_provider=bingv7aa&ad_type=txad&click_metadata=HRhMDUflPMCOLfSyBgCt5mYsagizm%2Dkffypm2Za2l8BXi2jTQh82Fy2SIxBmQEU1sAhFtrTHwuRVhHsLpVLuqf95Tbd9Ncx4heLZKqjl88dmnPIwvFi9e2K0jjC5zKmgc9Qh7IycNUQsWvA0kPiJxwVckiMme1i1snhCKmquPLY.V%2DoGZrz7Djrme_i6_PSgaQ&rut=56b317a4eb01f6aca43b012affa42b696ba79b213c92d368f718fc31f2d0bb56&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8wk3BR_RWTG8GI5zUE%2D056TVUCUwh_pfze22vYjIaMClaRnEb1jxyyl4Y3fvDZk3ZRwQAhFv8rU0w6lDCfe24kC63DwCCktu1zOmJbs_6RZaVYXdrn7bXpQI3mQpMLAtZjbCGUWDDmPtXp1WAz5jz3zbcVIPivZIzda2Vqd992N8kbFaibP2DFTveGnxq4j%2DV5lUAf9GRAAB52ce2Fjc5V7ZIy4I%26u%3DaHR0cHMlM2ElMmYlMmZvcGVuYXJ0LmFpJTJmYWktbW9kZWwlMmZxd2VuLWltYWdlLTMlMmYlM2Z1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2RzZWFyY2gtZ29vZ2xlLWdsb2JhbCh0MSlfc2VhcmNoX2FpX21vZGVsc19haV9tYXhfbHR2LXNlYXJjaC1hY3Etd2ViJTI2dXRtX2NvbnRlbnQlM2Rxd2VuJTI2dXRtX3Rlcm0lM2Rxd2VuJTI1MjBhaSUyNTIwaW1hZ2UlMjZ1dG1fY2FtcGFpZ24lM2RHbG9iYWwoVDEpX1NlYXJjaF9BSV9Nb2RlbHNfQUlfTWF4X0xUViUyNnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZHBwYyUyNnV0bV9pZCUzZDU3MTU5MDE2MSUyNmhzYV9hY2MlM2Q5NTc0NTA0ODAwJTI2aHNhX2NhbSUzZDIzNjEzNjEzNTc4JTI2aHNhX2dycCUzZDExODUyNzU5MDQ1NzU1NjQlMjZoc2FfYWQlM2QlMjZoc2Ffc3JjJTNkcyUyNmhzYV90Z3QlM2Rrd2QtNzQwODA1MTE4ODkxMDMlM2Fsb2MtNjYlMjZoc2Ffa3clM2Rxd2VuJTI1MjBhaSUyNTIwaW1hZ2UlMjZoc2FfbXQlM2RwJTI2aHNhX25ldCUzZGFkd29yZHMlMjZoc2FfdmVyJTNkMyUyNm1zY2xraWQlM2RhMDQ0ODcwZmY5ZGUxZDUzMTBhZGVkYzE2ZjQ4MmRiZCUyNnV0bV9jb250ZW50JTNkcXdlbg%26rlid%3Da044870ff9de1d5310adedc16f482dbd&vqd=4-326080501785550172438797208560510780313&iurl=%7B1%7DIG%3D72D8907895604F798D7F6173D418C5ED%26CID%3D295281F65A5B6F113DB796075B206EB4%26ID%3DDevEx%2C5037.1",
+      "snippet": "Generate with Qwen Image 3 plus 100+ other top models, all on one plan. No invite needed. Try Qwen Image 3 on OpenArt to generate images with accurate text and dense layouts."
+    },
+    {
+      "title": "lightx2v/Qwen-Image-2.1-Lightning · Hugging Face",
+      "url": "https://huggingface.co/lightx2v/Qwen-Image-2.1-Lightning",
+      "snippet": "Instructions to use lightx2v/Qwen-Image-2.1-Lightning with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use lightx2v/Qwen-Image-2.1-Lightning with Diffusers:"
+    },
+    {
+      "title": "lightx2v/Qwen-Image-Lightning · Hugging Face",
+      "url": "https://huggingface.co/lightx2v/Qwen-Image-Lightning",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ModelTC/LightX2V-Qwen-Image-Lightning: Qwen-Image-Lightning ...",
+      "url": "https://github.com/ModelTC/LightX2V-Qwen-Image-Lightning",
+      "snippet": "Qwen-Image-Lightning We are excited to release the distilled version of Qwen-Image. It preserves the capability of complex text rendering."
+    },
+    {
+      "title": "lightx2v/Qwen-Image-Lightning · Hugging Peers",
+      "url": "https://huggingpeers.co/models/lightx2v/Qwen-Image-Lightning",
+      "snippet": "lightx2v/Qwen-Image-Lightning — model card, files, and related papers on Hugging Peers."
+    }
+  ]
+}

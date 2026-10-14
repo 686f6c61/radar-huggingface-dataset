@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "sun3689/pi05-so101-cube-fullft-30k-7799251",
+  "slug": "sun3689-pi05-so101-cube-fullft-30k-7799251",
+  "author": "sun3689",
+  "url": "https://huggingface.co/sun3689/pi05-so101-cube-fullft-30k-7799251",
+  "created_at": "2026-10-13T21:24:11.000Z",
+  "updated_at": "2026-10-13T21:30:38.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "vision-language-action",
+    "imitation-learning",
+    "so101",
+    "robotics",
+    "en",
+    "dataset:fatdove/so101-cylinder-cube-bowl_20260925_005955",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 146896599736,
+  "storage_human": "146.9 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Red Monika (Character) - Comic Vine",
+      "url": "https://comicvine.gamespot.com/red-monika/4005-12302/",
+      "snippet": "Jul 14, 2023 · Red Monika is the femme fatale of the Battle Chasers universe. An improbably voluptuous female bounty hunter, she …"
+    },
+    {
+      "title": "Best Hentai/Doujin you've ever watched/read? - Comic Vine",
+      "url": "https://comicvine.gamespot.com/forums/off-topic-5/best-hentaidoujin-youve-ever-watchedread-2084416/",
+      "snippet": "May 30, 2020 · Trying to expand my collection -_-So, as an avid Hentai viewer, I've gathered quite the mass of sources of great …"
+    },
+    {
+      "title": "Weekly Shonen Jump (Volume) - Comic Vine",
+      "url": "https://comicvine.gamespot.com/weekly-shonen-jump/4050-43519/",
+      "snippet": "Weekly Shonen Jump launched in 1968 as Shonen Jump (少年ジャンプ), only becoming weekly and extending its name in 1969, …"
+    },
+    {
+      "title": "Bleach (Volume) - Comic Vine",
+      "url": "https://comicvine.gamespot.com/bleach/4050-18244/",
+      "snippet": "Mar 17, 2026 · Proper Japanese Title: ブリーチ (Burīchi) Translated into English as Bleach by Viz. Translated into Czech as Bleach …"
+    },
+    {
+      "title": "Gon Freecss (Hunterxhunter anime) vs jujutsu Kaisen gauntlet",
+      "url": "https://comicvine.gamespot.com/forums/battles-7/gon-freecss-hunterxhunter-anime-vs-jujutsu-kaisen--2393824/",
+      "snippet": "round 1the finger bearerround 2naoya zeninround 3kenjaku in geto's bodyround 4sukuna in yuji's bodyhow far can Gon getadult Gon …"
+    }
+  ]
+}

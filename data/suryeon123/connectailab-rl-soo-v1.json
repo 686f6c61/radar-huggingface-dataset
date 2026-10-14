@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "suryeon123/connectailab-rl-soo-v1",
+  "slug": "suryeon123-connectailab-rl-soo-v1",
+  "author": "suryeon123",
+  "url": "https://huggingface.co/suryeon123/connectailab-rl-soo-v1",
+  "created_at": "2026-10-13T22:04:00.000Z",
+  "updated_at": "2026-10-13T22:27:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "peft",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "reinforcement-learning",
+    "deep-reinforcement-learning",
+    "grpo",
+    "decision-making",
+    "gymnasium",
+    "connect-tycoon",
+    "connect-ai-lab",
+    "connectailab",
+    "lora",
+    "qwen3.5",
+    "ko",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 853527451,
+  "storage_human": "854 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Avis Naijared.com | Indice de confiance excellent : 98 %",
+      "url": "https://fr.scamdoc.com/view/2183551",
+      "snippet": "1 day ago · Vous recherchez des avis concernant le site Naijared.com ? Découvrez notre score de confiance détaillé, les évaluations …"
+    },
+    {
+      "title": "_naijared (@_naijared) | TikTok",
+      "url": "https://www.tiktok.com/@_naijared",
+      "snippet": "_naijared (@_naijared) on TikTok | 1738 Likes. 2942 Followers. 🇳🇬. 📍ATL. 🏾 ️🔺 ️ . Be kind, always. #BreastCancerWarrior 💕.Watch …"
+    },
+    {
+      "title": "Le site naijared.com est-il sûr ? Avis de la communauté | WOT",
+      "url": "https://www.mywot.com/fr/scorecard/naijared.com",
+      "snippet": "La fiche de score WOT fait apparaître les notes et avis de la communauté à propos du niveau de sécurité du site naijared.com. Le …"
+    },
+    {
+      "title": "Naijared.com Domain Information & Lookup Data",
+      "url": "https://www.ipaddress.com/website/naijared.com/",
+      "snippet": "4 days ago · Technical information for Naijared.com, including available WHOIS data, DNS records, and other domain details."
+    },
+    {
+      "title": "Telegram: View @naijapr",
+      "url": "https://t.me/naijapr",
+      "snippet": "Welcome to the official Telegram channel of Naija PR Telephone: 08079499798 Email: realnaijapr@gmail.com Website: …"
+    }
+  ]
+}

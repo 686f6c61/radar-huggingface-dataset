@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "SubMaroon/Orion-Kitchoon-26B-A4B-GGUF",
+  "slug": "submaroon-orion-kitchoon-26b-a4b-gguf",
+  "author": "SubMaroon",
+  "url": "https://huggingface.co/SubMaroon/Orion-Kitchoon-26B-A4B-GGUF",
+  "created_at": "2026-10-13T22:51:44.000Z",
+  "updated_at": "2026-10-13T22:57:21.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "roleplay",
+    "gemma4",
+    "moe",
+    "merge",
+    "en",
+    "base_model:SubMaroon/Orion-Kitchoon-26B-A4B",
+    "base_model:quantized:SubMaroon/Orion-Kitchoon-26B-A4B",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 22638401120,
+  "storage_human": "22.6 GB",
+  "base_model": "SubMaroon/Orion-Kitchoon-26B-A4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

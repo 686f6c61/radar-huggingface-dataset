@@ -5,7 +5,7 @@
   "author": "dill-lab",
   "url": "https://huggingface.co/dill-lab/GeoLadder-28M-8B-bs32-lr0.074-wd0.1-decay0.01",
   "created_at": "2026-10-12T21:12:58.000Z",
-  "updated_at": "2026-10-12T21:13:03.000Z",
+  "updated_at": "2026-10-13T03:03:05.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -19,7 +19,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 35,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

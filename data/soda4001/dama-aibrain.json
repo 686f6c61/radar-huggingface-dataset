@@ -5,7 +5,7 @@
   "author": "soda4001",
   "url": "https://huggingface.co/soda4001/dama-aibrain",
   "created_at": "2026-10-13T16:48:26.000Z",
-  "updated_at": "2026-10-13T17:03:06.000Z",
+  "updated_at": "2026-10-13T18:54:06.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -16,6 +16,7 @@
   "tags": [
     "transformers",
     "safetensors",
+    "gguf",
     "gemma4",
     "image-text-to-text",
     "text-generation-inference",
@@ -23,7 +24,7 @@
     "conversational",
     "en",
     "base_model:unsloth/gemma-4-E2B-it-unsloth-bnb-4bit",
-    "base_model:finetune:unsloth/gemma-4-E2B-it-unsloth-bnb-4bit",
+    "base_model:quantized:unsloth/gemma-4-E2B-it-unsloth-bnb-4bit",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us"
@@ -33,10 +34,11 @@
   "trending_score": 0,
   "parameters": 5123178051,
   "parameters_human": "5.12B",
-  "storage_bytes": 10278788619,
-  "storage_human": "10.3 GB",
+  "storage_bytes": 13706652875,
+  "storage_human": "13.7 GB",
   "base_model": "unsloth/gemma-4-E2B-it-unsloth-bnb-4bit",
   "formats": [
+    "gguf",
     "safetensors"
   ],
   "is_conversational": true,

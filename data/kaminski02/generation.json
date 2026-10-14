@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "kaminski02/generation",
+  "slug": "kaminski02-generation",
+  "author": "kaminski02",
+  "url": "https://huggingface.co/kaminski02/generation",
+  "created_at": "2026-10-13T20:34:42.000Z",
+  "updated_at": "2026-10-13T20:34:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kaminski02/quick-generation · Hugging Face",
+      "url": "https://huggingface.co/kaminski02/quick-generation",
+      "snippet": "Overview A small Perceiver implementation for Generation, packaged with an explicit configuration and an initialization checkpoint. The nano variant is a reproducible starting point, not a trained model release."
+    },
+    {
+      "title": "kaminski02 (Hanna Kaminski) - Hugging Face",
+      "url": "https://huggingface.co/kaminski02",
+      "snippet": "Recent Activity updated a model2 days ago kaminski02/paper_007112890_contrastive_learning published a model2 days ago kaminski02/paper_007112890_contrastive_learning View all activity"
+    },
+    {
+      "title": "Best AI for Image Generation in 2026 — Ranked by Blind Human Votes",
+      "url": "https://llm-stats.com/leaderboards/best-ai-for-image-generation",
+      "snippet": "The best AI for image generation in 2026, ranked by blind human votes. Compare Flux, Imagen, GPT-Image, Midjourney, Recraft, and every major text-to-image and image-editing model — with live arena scores, per-image pricing, and side-by-side examples."
+    },
+    {
+      "title": "Nano Banana 2: Google&#x27;s latest AI image generation model",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/nano-banana-2/",
+      "snippet": "Our latest image generation model offers advanced world knowledge, production-ready specs, subject consistency and more, all at Flash speed."
+    },
+    {
+      "title": "AI Image Models: Explore Image Generation | Picsart",
+      "url": "https://picsart.com/image-models/",
+      "snippet": "Explore AI image models on Picsart for image generation and editing. Compare creative inputs and visual styles to find options for your next design."
+    }
+  ]
+}

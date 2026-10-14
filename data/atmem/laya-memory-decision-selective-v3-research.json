@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "atmem/laya-memory-decision-selective-v3-research",
+  "slug": "atmem-laya-memory-decision-selective-v3-research",
+  "author": "atmem",
+  "url": "https://huggingface.co/atmem/laya-memory-decision-selective-v3-research",
+  "created_at": "2026-10-13T23:59:18.000Z",
+  "updated_at": "2026-10-14T00:07:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "laya",
+  "languages": [],
+  "tags": [
+    "laya",
+    "safetensors",
+    "memory-decision",
+    "state-transition",
+    "multilingual",
+    "research-only",
+    "rejected-candidate",
+    "text-classification",
+    "base_model:convaiinnovations/laya-multilingual",
+    "base_model:finetune:convaiinnovations/laya-multilingual",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 678198809,
+  "storage_human": "678 MB",
+  "base_model": "convaiinnovations/laya-multilingual",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prototype sur PC - jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/jeux/pc/00019474-prototype.htm",
+      "snippet": "Prototype sur PC : retrouvez toutes les informations, les tests, les vidéos et actualités du jeu sur tous ses supports. Prototype sur PC …Read more"
+    },
+    {
+      "title": "Prototype - jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/jeux/jeu-66380/",
+      "snippet": "Prototype : retrouvez toutes les informations et actualités du jeu sur tous ses supports. Prototype sur Xbox 360 est un jeu d'action …"
+    },
+    {
+      "title": "Prototype 2 sur PC - jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/jeux/pc/00039378-prototype-2.htm",
+      "snippet": "Aug 11, 2015 · Prototype 2 sur PC : retrouvez toutes les informations, les tests, les vidéos et actualités du jeu sur tous ses supports. …"
+    },
+    {
+      "title": "Avis et critiques du jeu Prototype sur PC - jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/jeux/pc/jeu-19474/avis/",
+      "snippet": "Retrouvez les avis, critiques et commentaires des joueurs sur le jeu Prototype sur PC et venez aussi donner votre opinion sur …"
+    },
+    {
+      "title": "Prototype 2 - jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/jeux/jeu-76177/",
+      "snippet": "Aug 11, 2015 · Prototype 2 : retrouvez toutes les informations et actualités du jeu sur tous ses supports. Prototype 2 est un jeu …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "BlameOmar/Qwen3.5-9B-oQ8e-mtp",
+  "slug": "blameomar-qwen3-5-9b-oq8e-mtp",
+  "author": "BlameOmar",
+  "url": "https://huggingface.co/BlameOmar/Qwen3.5-9B-oQ8e-mtp",
+  "created_at": "2026-10-13T20:22:05.000Z",
+  "updated_at": "2026-10-13T20:27:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 10729374965,
+  "storage_human": "10.7 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Male to female transformation cartoons! - DeviantArt",
+      "url": "https://www.deviantart.com/femininefantasy7/art/Male-to-female-transformation-cartoons-1150900421",
+      "snippet": "Feb 3, 2025 · Male to female transformation cartoons! — artwork by FeminineFantasy7 on DeviantArt. Glamorous Alter-Ego · In the …"
+    },
+    {
+      "title": "TG Sequences – AlwaysOlder TG Comics",
+      "url": "https://alwaysolder.com/category/tg-sequences/",
+      "snippet": "Sep 19, 2026 · age progression, tg, tg age progression, tg ap, tg ap transformation, tg transformation, transgender transformation, …"
+    },
+    {
+      "title": "Gender Transformation Lovely [TGTF Anime Comic] - DeviantArt",
+      "url": "https://www.deviantart.com/tgpa/art/Gender-Transformation-Lovely-TGTF-Anime-Comic-878377151",
+      "snippet": "May 3, 2021 · 74 Favourites 1 Comment 39.4K Views 3d anime bodyswap genderbender genderchange genderswap manga mtf …"
+    },
+    {
+      "title": "TG Graphics and Fiction Archive",
+      "url": "http://www.tgfa.org/",
+      "snippet": "Mar 28, 2016 · Welcome to the archive! Over the years I've managed to collect a number of books, comics and media relating to …"
+    },
+    {
+      "title": "Pururin - Free Online Hentai Manga and Doujinshi Reader",
+      "url": "https://pururin.to/browse/tags/content/1552/gender-bender?sort=most-popular",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "siddharthmb/2026.TA.gemma2_2b_headline_2026-10d_tc8192_decb_l1w0.001_auxk512_fp32_tarbb_lb2_ln1_sl17824146",
+  "slug": "siddharthmb-2026-ta-gemma2_2b_headline_2026-10d_tc8192_decb_l1w0-001_auxk512_fp32_tarbb_lb2_ln1_sl17824146",
+  "author": "siddharthmb",
+  "url": "https://huggingface.co/siddharthmb/2026.TA.gemma2_2b_headline_2026-10d_tc8192_decb_l1w0.001_auxk512_fp32_tarbb_lb2_ln1_sl17824146",
+  "created_at": "2026-10-13T23:48:11.000Z",
+  "updated_at": "2026-10-14T00:43:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma2",
+    "transcoder-adapters",
+    "sparse-adaptation",
+    "bridging",
+    "dataset:siddharthmb/2026.transcoder-adapters.lmsys-chat-1m-splits",
+    "arxiv:2602.20904",
+    "base_model:google/gemma-2-2b",
+    "base_model:finetune:google/gemma-2-2b",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3596141824,
+  "parameters_human": "3.60B",
+  "storage_bytes": 9190177826,
+  "storage_human": "9.2 GB",
+  "base_model": "google/gemma-2-2b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Slides: Sign-in",
+      "url": "https://docs.google.com/presentation/u/0/",
+      "snippet": "Access Google Slides with a personal Google account or Google Workspace account (for business use)."
+    },
+    {
+      "title": "Google Slides: Presentation Slideshow Maker | Google Workspace",
+      "url": "https://workspace.google.com/products/slides/",
+      "snippet": "Create stunning presentations with Google Slides. Discover slide templates for every use case, use AI to generate unique …"
+    },
+    {
+      "title": "Google Slides : connexion",
+      "url": "https://docs.google.com/presentation/create?hl=fr",
+      "snippet": "Accédez à Google Slides avec un compte Google personnel ou un compte Google Workspace (à usage professionnel)."
+    },
+    {
+      "title": "Log in | Slides",
+      "url": "https://slides.com/users/sign_in",
+      "snippet": "Sign in to your existing Slides account."
+    },
+    {
+      "title": "Google Slides : outil de création de diaporamas et présentations ...",
+      "url": "https://workspace.google.com/intl/fr/products/slides/",
+      "snippet": "Donnez vie à vos présentations dans Google Slides en utilisant des vidéos, des animations, des transitions fluides et d'autres …"
+    }
+  ]
+}

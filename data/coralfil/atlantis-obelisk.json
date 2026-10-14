@@ -5,7 +5,7 @@
   "author": "Coralfil",
   "url": "https://huggingface.co/Coralfil/Atlantis-Obelisk",
   "created_at": "2026-10-09T00:19:43.000Z",
-  "updated_at": "2026-10-12T22:34:01.000Z",
+  "updated_at": "2026-10-13T23:04:44.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,11 +32,11 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 24,
+  "downloads_30d": 31,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 286763985,
+  "storage_bytes": 287356686,
   "storage_human": "287 MB",
   "base_model": "unsloth/Qwen2.5-14B-Instruct-bnb-4bit",
   "formats": [

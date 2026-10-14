@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "mlx-community/MiniCPM-V-4.7-35B-A3B-OptiQ-4bit",
+  "slug": "mlx-community-minicpm-v-4-7-35b-a3b-optiq-4bit",
+  "author": "mlx-community",
+  "url": "https://huggingface.co/mlx-community/MiniCPM-V-4.7-35B-A3B-OptiQ-4bit",
+  "created_at": "2026-10-13T22:03:49.000Z",
+  "updated_at": "2026-10-13T22:33:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "minicpmv4_7",
+    "optiq",
+    "quantized",
+    "4bit",
+    "mixed-precision",
+    "minicpm-v",
+    "multimodal",
+    "vision-language-model",
+    "image-text-to-text",
+    "apple-silicon",
+    "moe",
+    "conversational",
+    "base_model:openbmb/MiniCPM-V-4.7-35B-A3B",
+    "base_model:quantized:openbmb/MiniCPM-V-4.7-35B-A3B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34659887872,
+  "parameters_human": "34.66B",
+  "storage_bytes": 25471238395,
+  "storage_human": "25.5 GB",
+  "base_model": "openbmb/MiniCPM-V-4.7-35B-A3B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XXX.com | XXX Sex Videos & Porn Movies Tube",
+      "url": "https://www.xxx.com/",
+      "snippet": "XXX.com highlights free adult video tubes, premium XXX sex, HD or 4K porn movies with adults 18+."
+    },
+    {
+      "title": "301 Moved Permanently - xxx.com",
+      "url": "http://xxx.com/business/",
+      "snippet": "301 Moved Permanently Moved Permanently The document has moved here."
+    }
+  ]
+}

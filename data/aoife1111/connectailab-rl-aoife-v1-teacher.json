@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Aoife1111/connectailab-rl-aoife-v1-teacher",
+  "slug": "aoife1111-connectailab-rl-aoife-v1-teacher",
+  "author": "Aoife1111",
+  "url": "https://huggingface.co/Aoife1111/connectailab-rl-aoife-v1-teacher",
+  "created_at": "2026-10-13T21:17:03.000Z",
+  "updated_at": "2026-10-13T21:17:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "numpy",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "numpy",
+    "connect-ai-lab",
+    "deep-reinforcement-learning",
+    "gymnasium",
+    "connect-company",
+    "connect-tycoon",
+    "jev",
+    "jev-style",
+    "reinforcement-learning",
+    "ppo",
+    "decision-making",
+    "prefrontal-cortex",
+    "korean",
+    "ko",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Théorie de l'information — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Th%C3%A9orie_de_l%27information",
+      "snippet": "Certains, comme Couffignal 5, ont soutenu que la coïncidence est sans signification : l'application de la fonction de Shannon à la …Read more"
+    },
+    {
+      "title": "Information theory - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Information_theory",
+      "snippet": "Information theory, as conceived by Claude Shannon, studies the processing and utilization of information within a probabilistic …"
+    },
+    {
+      "title": "THÉORIE DE L' INFORMATION : Théorie de Shannon | Mathématiques",
+      "url": "https://www.universalis.fr/encyclopedie/theorie-de-l-information/2-theorie-de-shannon/",
+      "snippet": "Jul 27, 2026 · La théorie de l'information de Shannon est compatible avec celle de Kolmogorov. Chacune a un rôle à jouer et, par …"
+    },
+    {
+      "title": "Théorie de l’information",
+      "url": "https://www.lvzl.fr/teaching/2023-24/docs/ti/poly-cours.pdf",
+      "snippet": "Ce document forme un ensemble de notes et de compléments de cours destiné aux étudiantes et étudiants du parcours ACC …"
+    },
+    {
+      "title": "Théorie de l'information Trois théorèmes de Claude Shannon",
+      "url": "https://webusers.imj-prg.fr/~antoine.chambert-loir/enseignement/2020-21/shannon/shannon.pdf",
+      "snippet": "de la quantité d’information contenue dans l’ensemble des signaux susceptibles d’être transmis. Sa définition est de nature …"
+    }
+  ]
+}

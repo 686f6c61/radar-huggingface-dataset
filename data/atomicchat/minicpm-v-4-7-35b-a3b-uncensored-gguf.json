@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "AtomicChat/MiniCPM-V-4.7-35B-A3B-Uncensored-GGUF",
+  "slug": "atomicchat-minicpm-v-4-7-35b-a3b-uncensored-gguf",
+  "author": "AtomicChat",
+  "url": "https://huggingface.co/AtomicChat/MiniCPM-V-4.7-35B-A3B-Uncensored-GGUF",
+  "created_at": "2026-10-12T17:10:19.000Z",
+  "updated_at": "2026-10-13T20:01:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "atomic-chat",
+    "minicpm",
+    "minicpm-v",
+    "openbmb",
+    "moe",
+    "imatrix",
+    "llama.cpp",
+    "lora",
+    "abliteration",
+    "refusal-direction",
+    "image-text-to-text",
+    "base_model:openbmb/MiniCPM-V-4.7-35B-A3B",
+    "base_model:finetune:openbmb/MiniCPM-V-4.7-35B-A3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 24,
+  "downloads_30d": 357,
+  "trending_score": 24,
+  "parameters": 26562560,
+  "parameters_human": "26.6M",
+  "storage_bytes": 73708608768,
+  "storage_human": "73.7 GB",
+  "base_model": "openbmb/MiniCPM-V-4.7-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quiz on Ha Long Bay and Cultural Heritage: 11 Questions",
+      "url": "https://wayground.com/admin/quiz/67d92a50d77789353d7d01ff/quiz-on-ha-long-bay-and-cultural-heritage",
+      "snippet": "Quiz on Ha Long Bay and Cultural Heritage: 11 English questions for Grade 5. Practice with instant feedback or assign it to your …"
+    },
+    {
+      "title": "Quiz: Ha Long Bay - Quizzly.ai",
+      "url": "https://quizzly.ai/play/ha-long-bay",
+      "snippet": "Identify Ha Long Bay’s location in northeastern Vietnam and its UNESCO World Heritage status. Explain how thousands of limestone …"
+    },
+    {
+      "title": "22 Ha Long Bay Trivia Questions: Karsts, Dragons, and UNESCO Status",
+      "url": "https://uponpaper.com/22-ha-long-bay-trivia-questions-karsts-dragons-and-unesco-status/",
+      "snippet": "Jun 13, 2026 · This quiz looks at the science behind these rock formations, the legends of dragons that shape the bay’s history, and …"
+    },
+    {
+      "title": "VỊNH HẠ LONG - Quiz - Wordwall",
+      "url": "https://wordwall.net/resource/106318533/v%E1%BB%8Bnh-h%E1%BA%A1-long",
+      "snippet": "1. Where is Ha Long Bay located?, A. In the south of Vietnam, B. In Quang Ninh Province, northeast of Vietnam, C. In central …"
+    },
+    {
+      "title": "Ha Long Bay - Quiz - Wordwall",
+      "url": "https://wordwall.net/resource/93441946/ha-long-bay",
+      "snippet": "Quiz is an open-ended template. It does not generate scores for a leaderboard. You haven't set any assignments yet. To start …"
+    }
+  ]
+}

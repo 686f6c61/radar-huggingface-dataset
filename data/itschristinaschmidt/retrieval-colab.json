@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "itschristinaschmidt/retrieval-colab",
+  "slug": "itschristinaschmidt-retrieval-colab",
+  "author": "itschristinaschmidt",
+  "url": "https://huggingface.co/itschristinaschmidt/retrieval-colab",
+  "created_at": "2026-10-13T20:29:00.000Z",
+  "updated_at": "2026-10-13T20:29:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "efficientformer",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "itschristinaschmidt (Christina Schmidt) - Hugging Face",
+      "url": "https://huggingface.co/itschristinaschmidt",
+      "snippet": "User profile of Christina Schmidt on Hugging Face"
+    },
+    {
+      "title": "Example Gallery — RedisVL",
+      "url": "https://docs.redisvl.com/en/v0.28.0/examples/index.html",
+      "snippet": "Code Recipes # Runnable Jupyter notebooks from Redis AI Resources covering real-world use cases. Each recipe includes a Google Colab link for easy execution."
+    },
+    {
+      "title": "Google Colab",
+      "url": "https://colab.research.google.com/?hl=en-US",
+      "snippet": "Learn how to bring the power of Colab straight to your terminal. Read the full announcement."
+    },
+    {
+      "title": "Building a RAG Pipeline with LLM Embeddings and Scikit-learn",
+      "url": "https://machinelearningmastery.com/building-a-rag-pipeline-with-llm-embeddings-and-scikit-learn/",
+      "snippet": "In this article, you will learn how to build a lightweight, end-to-end RAG pipeline using scikit-learn for vector retrieval and open-source models for embeddings and text generation, without the use of paid APIs or heavyweight frameworks."
+    },
+    {
+      "title": "Google Colab",
+      "url": "https://colab.research.google.com/",
+      "snippet": "Colab is now part of Google AI Plans. Get upgraded compute power and a suite of new AI tools all in one bundle."
+    }
+  ]
+}

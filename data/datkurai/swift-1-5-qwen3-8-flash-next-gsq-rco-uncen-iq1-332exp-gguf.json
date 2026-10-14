@@ -5,7 +5,7 @@
   "author": "DatKurai",
   "url": "https://huggingface.co/DatKurai/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-Uncen-IQ1-332Exp-GGUF",
   "created_at": "2026-10-12T13:47:56.000Z",
-  "updated_at": "2026-10-12T22:00:25.000Z",
+  "updated_at": "2026-10-13T15:37:21.000Z",
   "license": "swift-open-license-1.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -40,7 +40,7 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 4,
+  "likes": 5,
   "downloads_30d": 1322,
   "trending_score": 0,
   "parameters": 134454453120,

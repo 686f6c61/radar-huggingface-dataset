@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "suvadityamuk/Step1X-3D-Geometry-1300m-diffusers-3d",
+  "slug": "suvadityamuk-step1x-3d-geometry-1300m-diffusers-3d",
+  "author": "suvadityamuk",
+  "url": "https://huggingface.co/suvadityamuk/Step1X-3D-Geometry-1300m-diffusers-3d",
+  "created_at": "2026-10-13T20:26:35.000Z",
+  "updated_at": "2026-10-14T00:19:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-3d",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "diffusers-3d",
+    "step1x3d",
+    "3d",
+    "image-to-3d",
+    "base_model:stepfun-ai/Step1X-3D",
+    "base_model:finetune:stepfun-ai/Step1X-3D",
+    "license:apache-2.0",
+    "diffusers:Step1X3DImageTo3DPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1316287808,
+  "parameters_human": "1.32B",
+  "storage_bytes": 6964993868,
+  "storage_human": "7.0 GB",
+  "base_model": "stepfun-ai/Step1X-3D",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Step1X-3D-Geometry-1300m/transformer/diffusion_pytorch_model ...",
+      "url": "https://huggingface.co/stepfun-ai/Step1X-3D/blob/main/Step1X-3D-Geometry-1300m/transformer/diffusion_pytorch_model.safetensors",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "suvadityamuk (Suvaditya Mukherjee) · GitHub",
+      "url": "https://github.com/suvadityamuk",
+      "snippet": "ML for CV/3D @huggingface | Ex-ML R&D @Magnopus | ML GDE | Ex-ML @ USC Cinema & USC ICT | MS CS @ USC Viterbi - suvadityamuk"
+    },
+    {
+      "title": "GitHub - BLH549/step1x-3d",
+      "url": "https://github.com/BLH549/step1x-3d",
+      "snippet": "Step1X-3D demonstrates the capability to generate 3D assets with high-fidelity geometry and versatile texture maps, while maintaining exceptional alignment between surface geometry and texture mapping. From left to right, we sequentially present: the base geometry (untextured), followed by cartoon-style, sketch-style, and photorealistic 3D asset generation results."
+    },
+    {
+      "title": "stepfun-ai/Step1X-3D at main - Hugging Face",
+      "url": "https://huggingface.co/stepfun-ai/Step1X-3D/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - stepfun-ai/Step1X-3D: Step1X-3D: Towards High-Fidelity and ...",
+      "url": "https://github.com/stepfun-ai/Step1X-3D",
+      "snippet": "Step1X-3D demonstrates the capability to generate 3D assets with high-fidelity geometry and versatile texture maps, while maintaining exceptional alignment between surface geometry and texture mapping. From left to right, we sequentially present: the base geometry (untextured), followed by cartoon-style, sketch-style, and photorealistic 3D asset generation results."
+    }
+  ]
+}

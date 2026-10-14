@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mradermacher/K2-Type-0.9B-GGUF",
+  "slug": "mradermacher-k2-type-0-9b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/K2-Type-0.9B-GGUF",
+  "created_at": "2026-10-14T00:14:54.000Z",
+  "updated_at": "2026-10-14T00:35:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "decision-model",
+    "jev",
+    "classification",
+    "calibration",
+    "pointer-head",
+    "en",
+    "base_model:IFM/K2-Type-0.9B",
+    "base_model:quantized:IFM/K2-Type-0.9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1078285824,
+  "parameters_human": "1.08B",
+  "storage_bytes": 9729157248,
+  "storage_human": "9.7 GB",
+  "base_model": "IFM/K2-Type-0.9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

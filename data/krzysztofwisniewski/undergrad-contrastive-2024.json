@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "krzysztofwisniewski/undergrad-contrastive-2024",
+  "slug": "krzysztofwisniewski-undergrad-contrastive-2024",
+  "author": "krzysztofwisniewski",
+  "url": "https://huggingface.co/krzysztofwisniewski/undergrad-contrastive-2024",
+  "created_at": "2026-10-13T21:13:37.000Z",
+  "updated_at": "2026-10-13T21:13:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hybrid",
+    "pytorch",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hollyvictoriauk (@hollyvictoriauk) | TikTok",
+      "url": "https://www.tiktok.com/@hollyvictoriauk",
+      "snippet": "hollyvictoriauk (@hollyvictoriauk) on TikTok | 24 Likes. 52 Followers. Nottingham based Alt-Girl 29 …"
+    },
+    {
+      "title": "HollyVictoria",
+      "url": "https://hollyvictoria.carrd.co/",
+      "snippet": "HollyVictoria's Stream and Commission Information"
+    },
+    {
+      "title": "Home - Holly Victoria",
+      "url": "https://hollyvictoria.com/",
+      "snippet": "28th October 2021 At home with Pangaia With jackets made from wildflowers, self-cleaning t-shirts made from seaweed and logos …"
+    },
+    {
+      "title": "Holly-Victoria (@hollyvictoriatv) • Instagram photos and videos",
+      "url": "https://www.instagram.com/hollyvictoriatv/",
+      "snippet": "116 Followers, 268 Following, 20 Posts - Holly-Victoria (@hollyvictoriatv) on Instagram: \"Content Creator Affiliate Streamer\""
+    },
+    {
+      "title": "Holly Victoria (@hollyvmusic) • Instagram photos and videos",
+      "url": "https://www.instagram.com/hollyvmusic/",
+      "snippet": "435 Followers, 228 Following, 58 Posts - Holly Victoria (@hollyvmusic) on Instagram: \"𝐒𝐢𝐧𝐠𝐞𝐫 | 𝐀𝐜𝐭𝐨𝐫 | 𝐃𝐚𝐧𝐜𝐞𝐫 𝟏𝟖 “unlimited…”⋆˙ @italia.conti 27” 🩵 …"
+    }
+  ]
+}

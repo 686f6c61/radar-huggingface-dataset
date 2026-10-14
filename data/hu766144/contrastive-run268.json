@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Hu766144/contrastive-run268",
+  "slug": "hu766144-contrastive-run268",
+  "author": "Hu766144",
+  "url": "https://huggingface.co/Hu766144/contrastive-run268",
+  "created_at": "2026-10-13T20:47:40.000Z",
+  "updated_at": "2026-10-13T20:47:46.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "efficientformer",
+    "pytorch",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stellar Blade™ — lua.tools",
+      "url": "https://lua.tools/appid/3489700",
+      "snippet": "Download the manifest for Stellar Blade™ on lua.tools."
+    },
+    {
+      "title": "GAMES WITHOUT DENUVO ON STEAM TOOLS? STELLAR BLADE …",
+      "url": "https://www.youtube.com/watch?v=mAEG1THIptM",
+      "snippet": "Jul 4, 2026 · In this tutorial you will see: How to configure LUA Tools; How to enable the Denuvo option; Explanation of how it works; …"
+    },
+    {
+      "title": "LuaTools — Manifest Generator For SteamTools!",
+      "url": "https://lua.tools/",
+      "snippet": "Download Steam app manifest Lua files by App ID or game name. Fast, free, and easy."
+    },
+    {
+      "title": "Stellar Tool - Stellar Blade mod toolkit (OpenSource and Free)",
+      "url": "https://www.nexusmods.com/stellarblade/mods/3462",
+      "snippet": "Aug 12, 2026 · The Live page can install and remove Stellar Tool's UE4SS Lua bridge and adjust field of view, movement speed, and …"
+    },
+    {
+      "title": "GitHub - plaidwork/RE-UE4SS_Stellar_Blade_fork: Injectable LUA ...",
+      "url": "https://github.com/plaidwork/RE-UE4SS_Stellar_Blade_fork",
+      "snippet": "Unreal Engine 4/5 Scripting System (Stellar Blade fork) Lua scripting system platform, C++ Modding API, SDK generator, blueprint …"
+    }
+  ]
+}

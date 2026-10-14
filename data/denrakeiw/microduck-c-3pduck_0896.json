@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "DenRakEiw/microduck-c-3pduck_0896",
+  "slug": "denrakeiw-microduck-c-3pduck_0896",
+  "author": "DenRakEiw",
+  "url": "https://huggingface.co/DenRakEiw/microduck-c-3pduck_0896",
+  "created_at": "2026-10-14T00:20:37.000Z",
+  "updated_at": "2026-10-14T00:20:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "microduck-slot:walk",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 793773,
+  "storage_human": "793773 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Overleaf, Online LaTeX Editor",
+      "url": "https://www.overleaf.com/",
+      "snippet": "An online LaTeX editor that’s easy to use. No installation, real-time collaboration, version control, hundreds of LaTeX templates, and …"
+    },
+    {
+      "title": "Templates, Examples and Articles written in LaTeX - Overleaf",
+      "url": "https://pt.overleaf.com/gallery/tagged/presentation",
+      "snippet": "Um editor de LaTeX online fácil de usar. Sem instalação, colaboração em tempo real, controle de versões, centenas de modelos …"
+    },
+    {
+      "title": "Hyperlinks - Overleaf, Editor de LaTeX online",
+      "url": "https://es.overleaf.com/learn/latex/Hyperlinks",
+      "snippet": "An online LaTeX editor that’s easy to use. No installation, real-time collaboration, version control, hundreds of LaTeX templates, and …"
+    },
+    {
+      "title": "Log in to Overleaf - Overleaf, オンラインLaTeXエディター",
+      "url": "https://ja.overleaf.com/project",
+      "snippet": "簡単に使用できるオンラインLaTeXエディター。インストール不要、リアルタイムコラボレーション、バージョン管理、何百種類 …"
+    },
+    {
+      "title": "Track changes - Overleaf docs",
+      "url": "https://docs.overleaf.com/collaborating/track-changes",
+      "snippet": "Track Changes is a premium feature. Overleaf premium features are available to participants in Overleaf Commons, members of …"
+    }
+  ]
+}

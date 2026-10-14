@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "mradermacher/LFM2.5-Encoder-350M-Diffusion-GGUF",
+  "slug": "mradermacher-lfm2-5-encoder-350m-diffusion-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/LFM2.5-Encoder-350M-Diffusion-GGUF",
+  "created_at": "2026-10-14T00:10:56.000Z",
+  "updated_at": "2026-10-14T00:39:47.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "liquid",
+    "lfm2",
+    "lfm2.5",
+    "bidirectional",
+    "masked-lm",
+    "encoder",
+    "diffusion-language-model",
+    "masked-diffusion",
+    "mdlm",
+    "instruction-tuned",
+    "en",
+    "base_model:LiquidAI/LFM2.5-Encoder-350M-Diffusion",
+    "base_model:quantized:LiquidAI/LFM2.5-Encoder-350M-Diffusion",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 354483968,
+  "parameters_human": "354.5M",
+  "storage_bytes": 3299489792,
+  "storage_human": "3.3 GB",
+  "base_model": "LiquidAI/LFM2.5-Encoder-350M-Diffusion",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/LFM2.5-Encoder-350M-Diffusion-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/LFM2.5-Encoder-350M-Diffusion-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/LFM2.5-350M-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/LFM2.5-350M-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LFM2.5-Encoders: Fast at Long Context, Even on CPU - liquid.ai",
+      "url": "https://www.liquid.ai/blog/lfm2-5-encoders",
+      "snippet": "Open-weight bidirectional encoders for classification, routing & NLU. LFM2.5-Encoder-230M & 350M deliver 8K context and fast CPU inference for edge and on-prem."
+    },
+    {
+      "title": "GitHub - kucukkanat/lfm-encoders: Zero-shot prompt routing, policy ...",
+      "url": "https://github.com/kucukkanat/lfm-encoders",
+      "snippet": "LFM2.5-Encoder-350M — Liquid AI&#x27;s bidirectional encoder — traced to ONNX, quantized, and run entirely client-side through transformers.js. No inference server, no API key: the weights are fetched once, cached by the browser, and every forward pass happens in the tab. Three of Liquid&#x27;s demos are reproduced here as worked examples — zero-shot prompt routing (score one text against free ..."
+    },
+    {
+      "title": "LFM2.5-Encoder-350M - Liquid Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm25-encoder-350m",
+      "snippet": "← Back to Liquid Nanos LFM2.5-Encoder-350M is a multilingual bidirectional encoder built on the LFM2 architecture. At 350M parameters, it is the larger sibling in the encoder family, built for maximum downstream quality when fine-tuned into task-specific models (classification, token classification, retrieval, reranking, and semantic similarity) across 15 languages."
+    }
+  ]
+}

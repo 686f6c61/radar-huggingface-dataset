@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "kinit/whisper-base-sk",
+  "slug": "kinit-whisper-base-sk",
+  "author": "kinit",
+  "url": "https://huggingface.co/kinit/whisper-base-sk",
+  "created_at": "2026-08-20T12:55:50.000Z",
+  "updated_at": "2026-10-13T18:59:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "sk"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "audio",
+    "speech",
+    "slovak",
+    "fine-tuned",
+    "sk",
+    "base_model:openai/whisper-base",
+    "base_model:finetune:openai/whisper-base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 23,
+  "trending_score": 0,
+  "parameters": 72593920,
+  "parameters_human": "72.6M",
+  "storage_bytes": 290410097,
+  "storage_human": "290 MB",
+  "base_model": "openai/whisper-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Discogs - Music Database and Marketplace",
+      "url": "https://www.discogs.com/",
+      "snippet": "Discover music on Discogs, the largest online music database. Buy and sell music with collectors in the Marketplace."
+    },
+    {
+      "title": "Discogs - Base de Données musicale et Marketplace",
+      "url": "https://www.discogs.com/fr/",
+      "snippet": "Explorez la musique sur Discogs, la plus grande Base de Données musicale en ligne. Achetez et vendez à d'autres collectionneurs …"
+    },
+    {
+      "title": "Discogs - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Discogs",
+      "snippet": "Discogs (/ dɪˈskɒɡz / disk-OGZ; short for \"discographies\") is an online database and marketplace for audio recordings, including …"
+    },
+    {
+      "title": "New and Upcoming - Vinyl, CDs, Cassettes",
+      "url": "https://newreleases.discogs.com/",
+      "snippet": "A new Discogs marketplace: browse and buy New and Upcoming music releases from your favorite artists on Vinyl, CD, and Cassette."
+    },
+    {
+      "title": "Discogs — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Discogs",
+      "snippet": "Ainsi, n'importe quel enregistrement audio est censé pouvoir être répertorié dans la base. Depuis 2006, Discogs a mis en place un …"
+    }
+  ]
+}

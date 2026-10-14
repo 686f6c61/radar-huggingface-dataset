@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "chatpbc1/pally-endpoint",
+  "slug": "chatpbc1-pally-endpoint",
+  "author": "chatpbc1",
+  "url": "https://huggingface.co/chatpbc1/pally-endpoint",
+  "created_at": "2026-10-07T17:11:12.000Z",
+  "updated_at": "2026-10-13T23:29:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "www.glovad.com",
+      "url": "https://www.glovad.com/shop",
+      "snippet": ""
+    },
+    {
+      "title": "Glovo: whatever you order, in minutes! | Glovo",
+      "url": "https://glovoapp.com/en",
+      "snippet": "Glovo is the food delivery site that will get you anything you want to your doorstep. You order online, you'll have it!"
+    },
+    {
+      "title": "glovad.com - bgp.he.net",
+      "url": "https://bgp.he.net/dns/glovad.com",
+      "snippet": "glovad.com DNS Information Valid From Valid To Status Issuer / Serial CT Logs SANs Count"
+    },
+    {
+      "title": "Glovo",
+      "url": "https://glovoapp.com/en/login",
+      "snippet": "This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply."
+    },
+    {
+      "title": "GLOVA - Erstklassige Toilettensysteme",
+      "url": "http://glova.com/",
+      "snippet": "GLOVA Bus Toilettensysteme für Bus und Bahn und GlovaStar, der VIP Sanitärtrailer für Events sind robust, umweltfreundlich und …"
+    }
+  ]
+}

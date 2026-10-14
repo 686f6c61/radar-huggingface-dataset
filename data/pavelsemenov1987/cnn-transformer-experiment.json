@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "pavelsemenov1987/cnn-transformer-experiment",
+  "slug": "pavelsemenov1987-cnn-transformer-experiment",
+  "author": "pavelsemenov1987",
+  "url": "https://huggingface.co/pavelsemenov1987/cnn-transformer-experiment",
+  "created_at": "2026-10-14T00:53:35.000Z",
+  "updated_at": "2026-10-14T00:53:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

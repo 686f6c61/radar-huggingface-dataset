@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "q2p/microduck-sprint-race",
+  "slug": "q2p-microduck-sprint-race",
+  "author": "q2p",
+  "url": "https://huggingface.co/q2p/microduck-sprint-race",
+  "created_at": "2026-10-13T20:37:54.000Z",
+  "updated_at": "2026-10-13T20:37:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5643355,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xvideo chat for word - App on Amazon Appstore",
+      "url": "https://www.amazon.com/yusuf-bilgic-xvideo-chat-word/dp/B07MXLLTXM",
+      "snippet": "xvideo chat for word xvideo chat for word by yusuf bilgic 2 customer ratings Guidance Suggested Price: $1.00"
+    },
+    {
+      "title": "Qmayb – Una Cunumi (Remix) Lyrics - Genius",
+      "url": "https://genius.com/Qmayb-una-cunumi-remix-lyrics",
+      "snippet": "[Letra de \"Una Cunumi (Remix)\" ft. Xvideo Token, Faraón Love Shady & J.Gonzo] [Coro: Qmayb] (d.a.) Una cunumi, una cunumi …"
+    },
+    {
+      "title": "XVIDEO Lyrics, Songs, and Albums | Genius",
+      "url": "https://genius.com/artists/Xvideo",
+      "snippet": "Get all the lyrics to songs by XVIDEO and join the Genius community of music scholars to learn the meaning behind the lyrics."
+    },
+    {
+      "title": "Lacoste Men's Cotton Stretch Essentials Trunks, 3-pack",
+      "url": "https://www.amazon.com/Lacoste-Iconic-Lifestyle-Cotton-Stretch/dp/B08QC6LMB9",
+      "snippet": "Dec 10, 2020 · Buy Lacoste Men's Cotton Stretch Essentials Trunks, 3-Pack (Amazon Exclusives), Black/Albizia/Elephant Grey, X …"
+    },
+    {
+      "title": "[Résolu] LibreOffice / supprimer fichier .~lock... / Bureautique et ...",
+      "url": "https://forum.ubuntu-fr.org/viewtopic.php?id=2047197",
+      "snippet": "Jan 3, 2020 · Bonsoir à tou.te.s et bonne année 2020 je sollicite votre aide car je n'arrive pas à supprimer un fichier lock de …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "RoboColosseum",
   "url": "https://huggingface.co/RoboColosseum/LingBot-MolmoAct2-So101",
   "created_at": "2026-10-11T15:24:30.000Z",
-  "updated_at": "2026-10-11T15:49:58.000Z",
+  "updated_at": "2026-10-13T11:02:24.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "robotics",
@@ -15,7 +15,6 @@
   ],
   "tags": [
     "safetensors",
-    "lingbotvla",
     "robotics",
     "vision-language-action",
     "so100",
@@ -28,12 +27,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 20,
+  "downloads_30d": 25,
   "trending_score": 0,
   "parameters": 6375907511,
   "parameters_human": "6.38B",
-  "storage_bytes": 25515312426,
-  "storage_human": "25.5 GB",
+  "storage_bytes": 51019202198,
+  "storage_human": "51.0 GB",
   "base_model": "robbyant/lingbot-vla-v2-6b",
   "formats": [
     "safetensors"

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ramen-noodels/bottle_generic_50ep_recovery_rel",
+  "slug": "ramen-noodels-bottle_generic_50ep_recovery_rel",
+  "author": "ramen-noodels",
+  "url": "https://huggingface.co/ramen-noodels/bottle_generic_50ep_recovery_rel",
+  "created_at": "2026-10-14T00:39:27.000Z",
+  "updated_at": "2026-10-14T00:40:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "diffusion",
+    "dataset:bottle_9d_50ep_recovery_rel",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 418813257,
+  "parameters_human": "418.8M",
+  "storage_bytes": 1675324416,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Recettes de Ramen: Préparez un ramen authentique !",
+      "url": "https://www.commeaujapon.fr/ramen/",
+      "snippet": "Voici notre page de recettes de ramen pour pouvoir reproduire chez vous les délicieux ramen que l’on peut trouver au Japon. Notre …"
+    },
+    {
+      "title": "Où manger un délicieux ramen à Marseille ?",
+      "url": "https://marseillesecrete.com/ramen-marseille/",
+      "snippet": "Jan 12, 2022 · Voici la liste (non exhaustive) des meilleurs ramen de la cité phocéenne ! Inspiré d’une recette chinoise, le ramen est …"
+    },
+    {
+      "title": "Top 5 des meilleures adresses où déguster un rāmen à Marseille",
+      "url": "https://www.lebonbon.fr/marseille/cuisine-asiatique/top-5-meilleurs-adresses-ramen-marseille/",
+      "snippet": "Jan 18, 2022 · Savoureux, pas cher et copieux, le rāmen est le plat qui a sauvé les Japonais à la fin de la Seconde Guerre mondiale. …"
+    },
+    {
+      "title": "10 ramen maison irrésistibles : faciles, rapides et meilleurs qu’au resto",
+      "url": "https://www.le-meurin.fr/10-ramen-maison-irresistibles/",
+      "snippet": "Feb 3, 2026 · Préparer un bon ramen maison, c’est possible ! Je vais vous montrer comment créer des recettes délicieuses et faciles …"
+    },
+    {
+      "title": "Rāmen — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/R%C4%81men",
+      "snippet": "Plat dont les premières versions étaient d'origine chinoise 2, le rāmen (ラーメン／拉麺／老麺／柳麺?)3 tirerait son nom actuel des …"
+    }
+  ]
+}

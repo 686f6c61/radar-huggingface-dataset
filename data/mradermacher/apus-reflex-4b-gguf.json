@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mradermacher/APUS-Reflex-4B-GGUF",
+  "slug": "mradermacher-apus-reflex-4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/APUS-Reflex-4B-GGUF",
+  "created_at": "2026-10-14T00:48:55.000Z",
+  "updated_at": "2026-10-14T01:06:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "apus-reflex",
+    "decision-model",
+    "structured-output",
+    "bf16",
+    "en",
+    "zh",
+    "base_model:apus-ailab/APUS-Reflex-4B",
+    "base_model:quantized:apus-ailab/APUS-Reflex-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 39945654336,
+  "storage_human": "39.9 GB",
+  "base_model": "apus-ailab/APUS-Reflex-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Courant marin — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Courant_marin",
+      "snippet": "Un courant marin est un déplacement horizontal d'eau de mer dû aux effets combinés du vent, de la force de Coriolis et de …Read more"
+    },
+    {
+      "title": "Les Courants Océaniques : Différents Types, Causes, Effets Et ...",
+      "url": "https://www.duraabl.com/les-courants-oceaniques-differents-types-causes-effets-et-importance/",
+      "snippet": "Mar 23, 2026 · Les courants océaniques sont les mouvements de l’eau de mer dus à la gravité, à la rotation de la terre (effet …"
+    },
+    {
+      "title": "Courants océaniques et leur rôle climatique - Réussir SVT",
+      "url": "https://www.reussir-svt.com/cours/meteorologie-climatologie/lecon/courants-oceaniques-climat/",
+      "snippet": "Les courants océaniques de surface sont des mouvements d’eau horizontaux qui circulent dans les premiers 100 à 200 mètres de …"
+    },
+    {
+      "title": "Courants océaniques et changement climatique Centre d'information …",
+      "url": "https://www.cieau.com/eau-transition-ecologique/enjeux/courants-oceaniques/",
+      "snippet": "Jun 2, 2021 · Courants océaniques et réchauffement climatique : comment fonctionnent ces flux d'eau marine et quelles …"
+    },
+    {
+      "title": "Courants océaniques : moteurs du climat mondial - decouverte.org",
+      "url": "https://www.decouverte.org/courants-oceaniques-moteurs-du-climat-mondial/",
+      "snippet": "Les courants océaniques sont bien plus que de simples déplacements d’eau. Ils constituent un vaste réseau complexe, une véritable …"
+    }
+  ]
+}

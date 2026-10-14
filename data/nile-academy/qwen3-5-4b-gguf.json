@@ -5,7 +5,7 @@
   "author": "nile-academy",
   "url": "https://huggingface.co/nile-academy/qwen3.5-4b-gguf",
   "created_at": "2026-10-06T15:43:23.000Z",
-  "updated_at": "2026-10-06T19:21:01.000Z",
+  "updated_at": "2026-10-13T12:44:52.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -23,12 +23,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 135,
+  "downloads_30d": 133,
   "trending_score": 0,
   "parameters": 4326350848,
   "parameters_human": "4.33B",
-  "storage_bytes": 2783446816,
-  "storage_human": "2.8 GB",
+  "storage_bytes": 7394027072,
+  "storage_human": "7.4 GB",
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "gguf"

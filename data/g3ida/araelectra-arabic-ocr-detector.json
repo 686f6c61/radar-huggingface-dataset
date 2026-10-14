@@ -5,7 +5,7 @@
   "author": "g3ida",
   "url": "https://huggingface.co/g3ida/araelectra-arabic-ocr-detector",
   "created_at": "2026-10-13T19:01:21.000Z",
-  "updated_at": "2026-10-13T19:03:11.000Z",
+  "updated_at": "2026-10-13T19:13:42.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "token-classification",

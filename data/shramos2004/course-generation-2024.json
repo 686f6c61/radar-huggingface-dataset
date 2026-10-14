@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "shramos2004/course-generation-2024",
+  "slug": "shramos2004-course-generation-2024",
+  "author": "shramos2004",
+  "url": "https://huggingface.co/shramos2004/course-generation-2024",
+  "created_at": "2026-10-13T20:13:00.000Z",
+  "updated_at": "2026-10-13T20:13:30.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "poolformer",
+    "pytorch",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "500+ Keyboard Shortcuts List (A to Z): Ultimate Guide",
+      "url": "https://www.geeksforgeeks.org/computer-science-fundamentals/computer-shortcut-keys/",
+      "snippet": "Apr 28, 2026 · Function keys (F1-F12) offer a variety of commands to enhance your workflow. Here are some popular function key …Read more"
+    },
+    {
+      "title": "Function Keys on keyboard - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/computer-organization-architecture/function-keys-on-keyboard/",
+      "snippet": "Apr 28, 2026 · Explore our Comprehensive Guide to Computer Shortcut Keys, where we cover a wide range of shortcuts, including …"
+    },
+    {
+      "title": "Function keys of F1 F12 Explained: Shortcuts & Guide 2026",
+      "url": "https://useofcomputer.in/2026/08/function-keys-of-keyboard-f1-f12.html",
+      "snippet": "Aug 18, 2026 · Learn the uses of F1 to F12 keyboard function keys, shortcuts, and practical tips in this complete 2026 guide"
+    },
+    {
+      "title": "Keyboard Function Keys (F1-F12) and Their Use",
+      "url": "https://www.tutorialspoint.com/computer_fundamentals/keyboard_function_keys_f1_f12_and_their_use.htm",
+      "snippet": "They appear on the top of the keyboard and consist of 12 keys i.e., F1 - F12. These function keys are a shortcut for carrying out any …"
+    },
+    {
+      "title": "Finally! A Definitive List of What Those Keyboard Function Keys Do",
+      "url": "https://www.rd.com/article/computer-f-keys/",
+      "snippet": "Aug 29, 2025 · What are the keyboard function keys, exactly? Keyboard function keys, also referred to as Fn keys, F-row keys or …"
+    }
+  ]
+}

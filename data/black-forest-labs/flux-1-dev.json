@@ -23,9 +23,9 @@
     "diffusers:FluxPipeline",
     "region:us"
   ],
-  "likes": 15552,
+  "likes": 15557,
   "downloads_30d": 646799,
-  "trending_score": 63,
+  "trending_score": 61,
   "parameters": 11901408320,
   "parameters_human": "11.90B",
   "storage_bytes": 69492027725,

@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "id": "datalab-to/indra-ocr",
+  "slug": "datalab-to-indra-ocr",
+  "author": "datalab-to",
+  "url": "https://huggingface.co/datalab-to/indra-ocr",
+  "created_at": "2026-10-10T14:12:33.000Z",
+  "updated_at": "2026-10-13T15:53:08.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": "onnx",
+  "languages": [
+    "en",
+    "fr",
+    "de",
+    "es",
+    "it",
+    "pt",
+    "nl",
+    "pl",
+    "ru",
+    "uk",
+    "el",
+    "hi",
+    "bn",
+    "zh"
+  ],
+  "tags": [
+    "onnx",
+    "ocr",
+    "cpu",
+    "pdf",
+    "markdown",
+    "layout",
+    "document-parsing",
+    "image-to-text",
+    "en",
+    "fr",
+    "de",
+    "es",
+    "it",
+    "pt",
+    "nl",
+    "pl",
+    "ru",
+    "uk",
+    "el",
+    "hi",
+    "bn",
+    "zh",
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 43,
+  "downloads_30d": 0,
+  "trending_score": 41,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40877187,
+  "storage_human": "41 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - datalab-to/indra: Fast CPU OCR: line detection, CTC ...",
+      "url": "https://github.com/datalab-to/indra",
+      "snippet": "Try Datalab&#x27;s Managed Platform Indra OCR is built for speed on CPUs. When you need the highest accuracy, on handwriting, math, complex tables and degraded scans, our managed platform runs Chandra, our state of the art OCR model, with zero data retention by default, SOC 2 Type 2, and custom BAAs."
+    },
+    {
+      "title": "Indra OCR: a 1M-parameter OCR model that reads 49 pages per second on ...",
+      "url": "https://www.datalab.to/blog/indra-ocr",
+      "snippet": "Indra OCR reads 49 pages per second on CPU, ~15x faster than Tesseract and PaddleOCR&#x27;s PP-OCR text models, and more accurate on OmniParseBench text."
+    },
+    {
+      "title": "datalab-to/indra-ocr · Hugging Face",
+      "url": "https://huggingface.co/datalab-to/indra-ocr",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "High-Precision Document Intelligence | Datalab",
+      "url": "https://www.datalab.to/",
+      "snippet": "High-precision document intelligence. We are a research lab that trains document intelligence models, trusted by frontier AI labs, museums, and enterprises where accuracy is non-negotiable."
+    },
+    {
+      "title": "Indra OCR: a 1M-parameter OCR model that reads 49 pages per…",
+      "url": "https://dev48.org/en/articles/indra-ocr-a-1m-parameter-ocr-model-that-reads-49-pages-per-second-on-cpu",
+      "snippet": "Indra OCR reads 49 pages per second on CPU, ~15x faster than Tesseract and PaddleOCR&#x27;s PP-OCR text models, and more accurate on OmniParseBench text."
+    }
+  ]
+}

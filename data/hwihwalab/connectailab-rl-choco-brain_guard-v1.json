@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "hwihwalab/connectailab-rl-CHOCO-BRAIN_GUARD-v1",
+  "slug": "hwihwalab-connectailab-rl-choco-brain_guard-v1",
+  "author": "hwihwalab",
+  "url": "https://huggingface.co/hwihwalab/connectailab-rl-CHOCO-BRAIN_GUARD-v1",
+  "created_at": "2026-10-13T23:51:05.000Z",
+  "updated_at": "2026-10-14T02:41:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "peft",
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "connectailab",
+    "connect-ai-lab",
+    "connect-tycoon",
+    "fraud-detection",
+    "fin-tech",
+    "e-commerce",
+    "decision-making",
+    "solopreneur",
+    "hwihwalab",
+    "jev",
+    "jev-framework",
+    "prefrontal-cortex",
+    "reinforcement-learning",
+    "deep-reinforcement-learning",
+    "ppo",
+    "korean",
+    "on-device",
+    "multi-agent",
+    "en",
+    "ko",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 41684315,
+  "storage_human": "42 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hwihwalab/connectailab-rl-CHOCO-BRAIN_GUARD-v1 · Hugging Face",
+      "url": "https://huggingface.co/hwihwalab/connectailab-rl-CHOCO-BRAIN_GUARD-v1",
+      "snippet": "connectailab-rl-CHOCO-BRAIN_GUARD-v1 is an External Prefrontal Cortex Decision Engine for E-Commerce & FinTech — powered by the JEV (Judgment-Evaluation-Verification) protocol and calibrated via Deep Reinforcement Learning (PPO), this on-device executive cortex neutralizes malicious fraud attacks, high-risk refund exploitation, and compliance ..."
+    },
+    {
+      "title": "hwihwalab/connectailab-rl-CHOCO-BRAIN_GUARD-v1-teacher · Hugging Face",
+      "url": "https://huggingface.co/hwihwalab/connectailab-rl-CHOCO-BRAIN_GUARD-v1-teacher",
+      "snippet": "🎯 Model Persona: \"The FinTech Risk Guardian\" While standard generic models balance reward priorities symmetrically (1.0 : 1.0 : 1.0), CHOCO-BRAIN_GUARD-v1-teacher enforces an aggressive risk-governance objective:"
+    },
+    {
+      "title": "Hwihwa-Lab/connectailab-rl-CHOCO-BRAIN_GUARD-v1-teacher - GitHub",
+      "url": "https://github.com/Hwihwa-Lab/connectailab-rl-CHOCO-BRAIN_GUARD-v1-teacher/releases",
+      "snippet": "Contribute to Hwihwa-Lab/connectailab-rl-CHOCO-BRAIN_GUARD-v1-teacher development by creating an account on GitHub."
+    },
+    {
+      "title": "connectailab-rl-CHOCO-BRAIN_GUARD-v1-teacher/README_KR.md at main ...",
+      "url": "https://github.com/Hwihwa-Lab/connectailab-rl-CHOCO-BRAIN_GUARD-v1-teacher/blob/main/README_KR.md",
+      "snippet": "Contribute to Hwihwa-Lab/connectailab-rl-CHOCO-BRAIN_GUARD-v1-teacher development by creating an account on GitHub."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

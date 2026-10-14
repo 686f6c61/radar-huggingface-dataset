@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "christopherojohnson/deit-multitask-tryout",
+  "slug": "christopherojohnson-deit-multitask-tryout",
+  "author": "christopherojohnson",
+  "url": "https://huggingface.co/christopherojohnson/deit-multitask-tryout",
+  "created_at": "2026-10-13T22:15:05.000Z",
+  "updated_at": "2026-10-13T22:15:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SILENT HILL TOWNFALL #1 - YouTube",
+      "url": "https://www.youtube.com/watch?v=K_2mUnSC-mI",
+      "snippet": "Sep 22, 2026 · Gameplay | Let's Play FR (French) on Silent Hill Townfall (PS5 Pro) Discover the game here: …Read more"
+    },
+    {
+      "title": "SILENT HILL TOWNFALL #4: Bad Neighborhood - YouTube",
+      "url": "https://www.youtube.com/watch?v=eQXtAiovg6c",
+      "snippet": "Sep 25, 2026 · Gameplay | Let's Play FR (French) on Silent Hill Townfall (PS5 Pro) Remember to subscribe …"
+    },
+    {
+      "title": "Silent Hill: Townfall (PS5) au meilleur prix | Octobre 2026 - idealo",
+      "url": "https://www.idealo.fr/prix/209497270/silent-hill-townfall-ps5.html?msockid=3448d04a877c661c1527c7b8860d673b",
+      "snippet": "Silent Hill Townfall Day One Edition - Jeu PS5 39,99 € Meilleur prix total 44,98 € livraison incl."
+    },
+    {
+      "title": "Silent Hill Townfall : notre test complet - 1001web.fr",
+      "url": "https://www.1001web.fr/silent-hill-townfall-test-190540.html",
+      "snippet": "Sep 26, 2026 · Silent Hill Townfall vaut-il le coup ? Notre test du survival-horror de Konami sur PS5 et PC : ambiance, gameplay, …"
+    },
+    {
+      "title": "Silent Hill Townfall : disponible sur PS5 | Geek Planet",
+      "url": "https://www.geek-planet.com/fr/france/news/jeux-video/silent-hill-townfall-2026-09",
+      "snippet": "Sep 25, 2026 · Silent Hill: Townfall est un nouvel épisode de la série d'horreur Silent Hill, un jeu d'aventure et d'énigmes en vue …"
+    }
+  ]
+}

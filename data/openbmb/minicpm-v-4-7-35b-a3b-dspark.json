@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "openbmb/MiniCPM-V-4.7-35B-A3B-DSpark",
+  "slug": "openbmb-minicpm-v-4-7-35b-a3b-dspark",
+  "author": "openbmb",
+  "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-DSpark",
+  "created_at": "2026-10-08T04:26:20.000Z",
+  "updated_at": "2026-10-12T14:30:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "minicpmv",
+    "minicpmv4.7",
+    "text-generation",
+    "vision-understanding",
+    "tool-calling",
+    "on-device",
+    "edge-ai",
+    "en",
+    "zh",
+    "arxiv:2607.05147",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 15,
+  "downloads_30d": 165,
+  "trending_score": 14,
+  "parameters": 389223169,
+  "parameters_human": "389.2M",
+  "storage_bytes": 1556905716,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or …"
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/features",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or …"
+    },
+    {
+      "title": "Introducing ChatGPT - OpenAI",
+      "url": "https://openai.com/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · We’ve trained a model called ChatGPT which interacts in a conversational way. The dialogue format makes it …"
+    },
+    {
+      "title": "Nouveau : ChatGPT - OpenAI",
+      "url": "https://openai.com/fr-FR/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · ChatGPT est un modèle dérivé d’InstructGPT ⁠, qui a lui-même été entraîné pour suivre l’instruction d’un prompt et …"
+    },
+    {
+      "title": "ChatGPT - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/ChatGPT",
+      "snippet": "ChatGPT is a generative AI chatbot developed by OpenAI. Originally released on November 30, 2022, the product uses large …"
+    }
+  ]
+}

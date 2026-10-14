@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "rverm-a6391/paper-cross-modal-fusion",
+  "slug": "rverm-a6391-paper-cross-modal-fusion",
+  "author": "rverm-a6391",
+  "url": "https://huggingface.co/rverm-a6391/paper-cross-modal-fusion",
+  "created_at": "2026-10-13T20:19:29.000Z",
+  "updated_at": "2026-10-13T20:19:36.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "cross-modal-fusion",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Hateful Eight - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/The_Hateful_Eight",
+      "snippet": "The Hateful Eight is a 2015 American Western mystery thriller film written and directed by Quentin Tarantino. It stars Samuel L. …"
+    },
+    {
+      "title": "The Hateful Eight (2015) - IMDb",
+      "url": "https://www.imdb.com/title/tt3460252",
+      "snippet": "Dec 30, 2015 · The Hateful Eight: Directed by Quentin Tarantino. With Samuel L. Jackson, Kurt Russell, Jennifer Jason Leigh, …"
+    },
+    {
+      "title": "Les Huit Salopards — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Les_Huit_Salopards",
+      "snippet": "Les Huit Salopards ou Les 8 Enragés au Québec 2 (The Hateful Eight) est un western américain écrit et réalisé par Quentin …"
+    },
+    {
+      "title": "The Hateful Eight - Netflix",
+      "url": "https://www.netflix.com/Title/80064515",
+      "snippet": "Years after the Civil War, eight travelers — including bounty hunters, outlaws and former soldiers — weather a Wyoming blizzard in a …"
+    },
+    {
+      "title": "The Hateful Eight - Prime Video",
+      "url": "https://www.primevideo.com/detail/0PM4PVKGZIHQFY8DZN3KH7VNGY/",
+      "snippet": "In the dead of a Wyoming winter, a bounty hunter and his prisoner find shelter in a cabin currently inhabited by a collection of …"
+    }
+  ]
+}

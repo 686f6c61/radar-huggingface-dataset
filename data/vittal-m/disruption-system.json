@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Vittal-M/Disruption-System",
+  "slug": "vittal-m-disruption-system",
+  "author": "Vittal-M",
+  "url": "https://huggingface.co/Vittal-M/Disruption-System",
+  "created_at": "2026-05-01T04:52:25.000Z",
+  "updated_at": "2026-10-14T02:06:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 608158532,
+  "storage_human": "608 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ameli, le site de l’Assurance Maladie en ligne | ameli.fr | Assuré",
+      "url": "https://www.ameli.fr/",
+      "snippet": "Le site officiel de l'Assurance Maladie. Actualités – Droits et Démarches – Remboursements – Prestations et aides – Santé – Offres …Read more"
+    },
+    {
+      "title": "Prévenir la rhinopharyngite de l’enfant | ameli.fr | Assuré",
+      "url": "https://www.ameli.fr/assure/sante/themes/rhinopharyngite-enfant/prevention",
+      "snippet": "Feb 4, 2026 · La rhinopharyngite est une maladie virale très contagieuse. Des mesures simples permettent d’en limiter la transmission."
+    },
+    {
+      "title": "Méthode | L'Assurance Maladie",
+      "url": "https://www.assurance-maladie.ameli.fr/etudes-et-donnees/par-theme/pathologies/cartographie-assurance-maladie/methode-cartographie-pathologies-depenses-assurance-maladie",
+      "snippet": "Oct 7, 2026 · Éléments de méthode de la cartographie : source, champ, repérage des pathologies, affectation des dépenses à …"
+    },
+    {
+      "title": "Enfant majeur - Résolue",
+      "url": "https://forum-assures.ameli.fr/questions/3622523-enfant-majeur",
+      "snippet": "Jul 30, 2025 · Bonjour, Ma fille de 19 ans qui est toujours étudiante n’apparaît plus sur ma carte vitale. Pouvez-Vous me dire …"
+    },
+    {
+      "title": "ALD et fente labiopalatine - Résolue",
+      "url": "https://forum-assures.ameli.fr/questions/2670876-ald-fente-labiopalatine",
+      "snippet": "Mar 24, 2022 · Bonjour, La fente labiopalatine fait-elle partie des ALD 31 ? Où pouvons-nous trouver la liste des ALD 31? Si l’ALD …"
+    }
+  ]
+}

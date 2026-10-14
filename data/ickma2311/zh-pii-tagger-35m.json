@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "ickma2311/zh-pii-tagger-35m",
+  "slug": "ickma2311-zh-pii-tagger-35m",
+  "author": "ickma2311",
+  "url": "https://huggingface.co/ickma2311/zh-pii-tagger-35m",
+  "created_at": "2026-10-14T00:03:30.000Z",
+  "updated_at": "2026-10-14T00:22:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "zh",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-2",
+    "dataset:ai4privacy/pii-masking-openpii-1.5m",
+    "dataset:Wismut/nym-pii-multilingual-data",
+    "dataset:nvidia/Nemotron-PII",
+    "base_model:cjhwong/seatbelt-pii-tagger",
+    "base_model:quantized:cjhwong/seatbelt-pii-tagger",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35449033,
+  "parameters_human": "35.4M",
+  "storage_bytes": 177408935,
+  "storage_human": "177 MB",
+  "base_model": "cjhwong/seatbelt-pii-tagger",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ickma2311/zh-pii-tagger-35m · Hugging Face",
+      "url": "https://huggingface.co/ickma2311/zh-pii-tagger-35m",
+      "snippet": "A 35M-parameter token tagger for personal data in Chinese and mixed Chinese-English text. It is a fine-tune of cjhwong/seatbelt-pii-tagger with the same architecture, tokenizer and 18 types / 73 BIOES labels. The fine-tune adds: real Chinese contexts (FineWeb-2) with inserted synthetic private ..."
+    },
+    {
+      "title": "GitHub - ickma2311/zh-pii-tagger-eval: Training/eval code and a held ...",
+      "url": "https://github.com/ickma2311/zh-pii-tagger-eval",
+      "snippet": "Training and evaluation code for ickma2311/zh-pii-tagger-35m, a 35M Chinese / English PII token tagger fine-tuned from cjhwong/seatbelt-pii-tagger. The repository also includes zh-pii-ctx-heldout (data/e2.jsonl), a held-out set of 1,875 real Chinese passages with inserted synthetic private names and addresses."
+    },
+    {
+      "title": "ickma2311 (Chao Ma) - Hugging Face",
+      "url": "https://huggingface.co/ickma2311",
+      "snippet": "User profile of Chao Ma on Hugging Face"
+    },
+    {
+      "title": "ickma2311 - Kaggle",
+      "url": "https://www.kaggle.com/ickma2311",
+      "snippet": "Kaggle profile for ickma2311 date_range Joined 2 years ago · last seen 19 days ago"
+    },
+    {
+      "title": "GitHub - CJHwong/seatbelt-pii-tagger: A 35M-parameter tagger for ...",
+      "url": "https://github.com/CJHwong/seatbelt-pii-tagger",
+      "snippet": "A 35M-parameter token tagger that finds personal data and secrets in English, Simplified Chinese and Traditional Chinese text. It is the tagger mode of the agent-seatbelt PII hook. This repository holds the code and the recipe that train it. The model, its card and the release data are on Hugging ..."
+    }
+  ]
+}

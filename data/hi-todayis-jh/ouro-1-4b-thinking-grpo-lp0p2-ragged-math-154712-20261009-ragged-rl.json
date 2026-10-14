@@ -5,13 +5,14 @@
   "author": "hi-todayis-jh",
   "url": "https://huggingface.co/hi-todayis-jh/ouro-1.4b-thinking-grpo-lp0p2-ragged-math-154712-20261009-ragged-rl",
   "created_at": "2026-10-13T15:43:18.000Z",
-  "updated_at": "2026-10-13T15:43:22.000Z",
+  "updated_at": "2026-10-13T21:27:10.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
   "library": null,
   "languages": [],
   "tags": [
+    "safetensors",
     "region:us"
   ],
   "likes": 0,
@@ -19,10 +20,12 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 644654,
-  "storage_human": "644654 B",
+  "storage_bytes": 17216746146,
+  "storage_human": "17.2 GB",
   "base_model": null,
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

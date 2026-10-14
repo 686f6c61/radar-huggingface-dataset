@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "SubMaroon/Orion-Kitchoon-26B-A4B",
+  "slug": "submaroon-orion-kitchoon-26b-a4b",
+  "author": "SubMaroon",
+  "url": "https://huggingface.co/SubMaroon/Orion-Kitchoon-26B-A4B",
+  "created_at": "2026-10-13T22:49:20.000Z",
+  "updated_at": "2026-10-13T22:53:25.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "roleplay",
+    "moe",
+    "merge",
+    "en",
+    "base_model:SubMaroon/Kitchoon-V2-26B-A4B",
+    "base_model:merge:SubMaroon/Kitchoon-V2-26B-A4B",
+    "base_model:TheDrummer/Orion-26B-A4B-v1.1",
+    "base_model:merge:TheDrummer/Orion-26B-A4B-v1.1",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25805936206,
+  "parameters_human": "25.81B",
+  "storage_bytes": 51644179542,
+  "storage_human": "51.6 GB",
+  "base_model": "TheDrummer/Orion-26B-A4B-v1.1, SubMaroon/Kitchoon-V2-26B-A4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "juicenv/microduck-hill-es2",
+  "slug": "juicenv-microduck-hill-es2",
+  "author": "juicenv",
+  "url": "https://huggingface.co/juicenv/microduck-hill-es2",
+  "created_at": "2026-10-13T20:22:42.000Z",
+  "updated_at": "2026-10-13T20:22:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "base_model:HannesVonEssen/microduck-running",
+    "base_model:finetune:HannesVonEssen/microduck-running",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 793744,
+  "storage_human": "793744 B",
+  "base_model": "HannesVonEssen/microduck-running",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Downloader by AFTVnews - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.esaba.downloader&hl=en",
+      "snippet": "Jul 30, 2026 · Easily download files, such as app APKs, by entering a URL or Short Code."
+    },
+    {
+      "title": "Downloader by AFTVnews APK for Android - Download",
+      "url": "https://downloader-by-aftvnews.en.softonic.com/android",
+      "snippet": "Aug 4, 2026 · Downloader by AFTVnews aims to allow users to download files from the web directly to their devices in a quick and …"
+    },
+    {
+      "title": "Downloader App - AFTVnews",
+      "url": "https://www.aftvnews.com/downloader/",
+      "snippet": "For Fire TVs and Fire Tablets: Downloader is an app that helps you easily download files onto your Fire TV, Google TV, Android TV, …"
+    },
+    {
+      "title": "Download Downloader by AFTVnews APKs for Android - APKMirror",
+      "url": "https://www.apkmirror.com/apk/aftvnews-com/downloader-by-aftvnews/",
+      "snippet": "May 1, 2024 · About Downloader by AFTVnews 2.0.4-ForGoogleAndroidDevices Enter URLs, browse websites, or enter short codes …"
+    },
+    {
+      "title": "Downloader - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.tech.downloader&hl=en-US",
+      "snippet": "Introducing our new Downloader app for retrieving various types of digital files from the internet. With our user-friendly interface, you …"
+    }
+  ]
+}

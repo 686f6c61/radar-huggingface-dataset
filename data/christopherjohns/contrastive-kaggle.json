@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "christopherjohns/contrastive-kaggle",
+  "slug": "christopherjohns-contrastive-kaggle",
+  "author": "christopherjohns",
+  "url": "https://huggingface.co/christopherjohns/contrastive-kaggle",
+  "created_at": "2026-10-13T20:25:58.000Z",
+  "updated_at": "2026-10-13T20:26:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI model submits false tip on Philadelphia Police unsolved homicide case",
+      "url": "https://www.police1.com/artificial-intelligence/ai-model-submits-false-tip-on-philadelphia-police-unsolved-homicide-case",
+      "snippet": "NEW YORK — An Anthropic artificial intelligence model submitted a false tip to a Philadelphia police website about an unsolved homicide case, authorities and Anthropic said. It&#x27;s the latest example of AI models acting in unintended ways and manipulating government and other websites during tests ..."
+    },
+    {
+      "title": "crystaljones10/albef-contrastive-kaggle at main - Hugging Face",
+      "url": "https://huggingface.co/crystaljones10/albef-contrastive-kaggle/tree/main",
+      "snippet": "crystaljones10 / albef-contrastive-kaggle Like 0 Safetensors PyTorch albef contrastive License:bsd-3-clause Model card FilesFiles and versions xet Community Copy to bucket new main albef-contrastive-kaggle 107 kB Ctrl+K Ctrl+K 1 contributor History:2 commits crystaljones10 Add eval.py, README.md, config.json, training_args.json, model.safetensors 7f047d5 verified3 days ago .gitattributes Safe ..."
+    },
+    {
+      "title": "contrastive_model_v8 | Kaggle",
+      "url": "https://www.kaggle.com/code/daokhangk18hcm/contrastive-model-v8",
+      "snippet": "Explore and run AI code with Kaggle Notebooks | Using data from [Private Datasource]"
+    },
+    {
+      "title": "Contrastive_Learning_Model | Kaggle",
+      "url": "https://www.kaggle.com/code/volexuannhik18hcm/contrastive-learning-model",
+      "snippet": "Explore and run AI code with Kaggle Notebooks | Using data from [Private Datasource]"
+    },
+    {
+      "title": "wilsonhwh/contrastive-kaggle · Hugging Face",
+      "url": "https://huggingface.co/wilsonhwh/contrastive-kaggle",
+      "snippet": "wilsonhwh / contrastive-kaggle Like 0 Safetensors PyTorch mae contrastive License:bsd-3-clause Model card FilesFiles and versions xet Community Copy to bucket new Mae for Contrastive Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files License"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "foolish-bandit/cadence-0.8b",
+  "slug": "foolish-bandit-cadence-0-8b",
+  "author": "foolish-bandit",
+  "url": "https://huggingface.co/foolish-bandit/cadence-0.8b",
+  "created_at": "2026-10-13T20:48:30.000Z",
+  "updated_at": "2026-10-14T00:08:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "decision-model",
+    "lora",
+    "qwen3.5",
+    "typed-decisions",
+    "text-classification",
+    "en",
+    "base_model:Qwen/Qwen3.5-0.8B-Base",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23796328,
+  "storage_human": "24 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B-Base, jaredpalmer/kev-0.8b",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Traduction FOOLISH en français | Dictionnaire anglais-français",
+      "url": "https://dictionnaire.reverso.net/anglais-francais/foolish",
+      "snippet": "Traduction de \"foolish\" en français : insensé, stupide, ridicule. Adjectif, signification, prononciation, expressions idiomatiques en …"
+    },
+    {
+      "title": "foolish - Traduction française – Linguee",
+      "url": "https://www.linguee.fr/anglais-francais/traduction/foolish.html",
+      "snippet": "De très nombreux exemples de phrases traduites contenant \"foolish\" – Dictionnaire français-anglais et moteur de recherche de …"
+    },
+    {
+      "title": "foolish - English-French Dictionary WordReference.com",
+      "url": "https://www.wordreference.com/enfr/foolish",
+      "snippet": "Dans les listes : Top 2000 English words, Opposite adjectives, F, Suite... Synonymes : stupid, dumb, idiotic, moronic, unintelligent, …"
+    },
+    {
+      "title": "Traduction : foolish - Dictionnaire anglais-français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/anglais-francais/foolish/581573",
+      "snippet": "foolish - Traduction Anglais-Français : Retrouvez la traduction de foolish, mais également sa prononciation, des exemples avec le …"
+    },
+    {
+      "title": "FOOLISH | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/foolish",
+      "snippet": "It would be foolish to give up your job when you haven't got any other source of income. I was foolish to buy such an expensive piece …"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mradermacher/K2-Horizon-3.7B-GGUF",
+  "slug": "mradermacher-k2-horizon-3-7b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/K2-Horizon-3.7B-GGUF",
+  "created_at": "2026-10-13T23:59:32.000Z",
+  "updated_at": "2026-10-14T00:22:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "k2-horizon",
+    "3.7b",
+    "dense",
+    "open-weights",
+    "ifm",
+    "en",
+    "dataset:IFM/K2-Horizon-Pretrain-Data",
+    "dataset:IFM/K2-Horizon-Midtrain-Data",
+    "base_model:IFM/K2-Horizon-3.7B",
+    "base_model:quantized:IFM/K2-Horizon-3.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5058255360,
+  "parameters_human": "5.06B",
+  "storage_bytes": 46017375104,
+  "storage_human": "46.0 GB",
+  "base_model": "IFM/K2-Horizon-3.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/K2-Horizon-3.7B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/K2-Horizon-3.7B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "K2 Horizon 3.7b - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/k2-horizon-3-7b.html",
+      "snippet": "Download K2 Horizon 3.7b GGUF model. 7.77 GB, 5,647 downloads, 29 likes."
+    },
+    {
+      "title": "README.md · IFM/K2-Horizon-3.7B-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/IFM/K2-Horizon-3.7B-GGUF/blob/main/README.md",
+      "snippet": "K2-Horizon-3.7B Highlights Strong small-model baseline. A dense model evaluated on the same agentic, coding, and reasoning benchmarks as the rest of the family. 512K context. Native 524,288-token context from the midtraining stages onward. Intermediate checkpoints. Intermediate checkpoints are released so capability changes can be studied across training rather than at a single checkpoint ..."
+    },
+    {
+      "title": "K2-BLACKWELL/recipes/k2-horizon-3.7b-gguf at main - GitHub",
+      "url": "https://github.com/abtraore/K2-BLACKWELL/tree/main/recipes/k2-horizon-3.7b-gguf",
+      "snippet": "K2-Horizon-3.7B GGUF on one RTX 5090 (llama.cpp) IFM&#x27;s BF16 GGUF of the 3.7B on the IFM llama.cpp fork at a 131,072-token context with bf16 KV on one 32 GB card: 140-152 tok/s single-stream decode, prefill 12,366 tok/s at 3.9K, and the 60K-in-100K needle found (100,035-token prompt, 36 s end to end). Single request at a time (--parallel 1): four concurrent streams queued to 151 tok/s aggregate."
+    },
+    {
+      "title": "K2 Horizon 3.7B - 512K context, open source | LLM Reference",
+      "url": "https://www.llmreference.com/model/k2-horizon-3.7b",
+      "snippet": "K2-Horizon-3.7B is a small dense K2 Horizon decoder-only model: 3.7B parameters, 512K native context, and Apache 2.0 weights on Hugging Face (IFM/K2-Horizon-3.7B). Part of IFM&#x27;s six-model open fleet alongside larger MoE and dense siblings."
+    }
+  ]
+}

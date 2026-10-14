@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ownllm/qwen3.8-27b-mlx-4bit",
+  "slug": "ownllm-qwen3-8-27b-mlx-4bit",
+  "author": "ownllm",
+  "url": "https://huggingface.co/ownllm/qwen3.8-27b-mlx-4bit",
+  "created_at": "2026-10-13T20:24:36.000Z",
+  "updated_at": "2026-10-13T20:29:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "ownllm",
+    "qwen",
+    "4-bit",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 16074530674,
+  "storage_human": "16.1 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ATTENTION ARNAQUE EDREAMS PRIME - Page 3 - Forum Que …",
+      "url": "https://forum.quechoisir.org/attention-arnaque-edreams-prime-t256831-20.html",
+      "snippet": "Sep 12, 2023 · Re: ATTENTION ARNAQUE EDREAMS PRIME Messagepar nathgab » dim. oct. 08, 2023 5:10 pm Bonjour, je …Read more"
+    },
+    {
+      "title": "prélèvement abusif de 54,99€ - Opodo - Forum Que Choisir",
+      "url": "https://forum.quechoisir.org/prelevement-abusif-de-54-99-t331458.html",
+      "snippet": "Jan 27, 2023 · Prélèvements abusifs - Le spectre de la SFAM (Billet de la présidente) Transport aériens - Opodo au p'tit trot (Action …"
+    },
+    {
+      "title": "提供新今宮一帶地鐵電梯攻略路線 - 背包客棧",
+      "url": "https://www.backpackers.com.tw/forum/showthread.php?t=1401545",
+      "snippet": "Feb 4, 2015 · 版主大大說的重點是大阪地鐵，和南海新今宮是兩回事，南海新今宮是高架鐵道，比JR還高一層樓，下車後有電梯和樓 …"
+    },
+    {
+      "title": "請問如何取消eDreams prime會員？",
+      "url": "https://www.backpackers.com.tw/forum/showthread.php?t=10600345",
+      "snippet": "Dec 2, 2024 · 這個OTA也是蠻鬧的，但也真的買到比別人便宜快5分之1的機票 取消記得要去找到''My Prime account''裡面的stop your …"
+    },
+    {
+      "title": "'Trajectcontrole A2 melkkoe overheid' - Radar",
+      "url": "https://radar.avrotros.nl/artikel/trajectcontrole-a2-melkkoe-overheid-16818",
+      "snippet": "Aug 19, 2015 · De trajectcontroles op de A2 op punten Vinkeveen, Baambrugge en Breukelen leverden vorig jaar 48 miljoen euro …"
+    }
+  ]
+}

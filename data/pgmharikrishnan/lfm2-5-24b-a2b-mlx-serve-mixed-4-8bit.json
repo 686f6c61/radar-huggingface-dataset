@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "pgmharikrishnan/LFM2.5-24B-A2B-MLX-Serve-mixed-4-8bit",
+  "slug": "pgmharikrishnan-lfm2-5-24b-a2b-mlx-serve-mixed-4-8bit",
+  "author": "pgmharikrishnan",
+  "url": "https://huggingface.co/pgmharikrishnan/LFM2.5-24B-A2B-MLX-Serve-mixed-4-8bit",
+  "created_at": "2026-10-13T22:07:36.000Z",
+  "updated_at": "2026-10-13T22:17:40.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx-serve",
+  "languages": [],
+  "tags": [
+    "mlx-serve",
+    "safetensors",
+    "lfm2_moe",
+    "mlx",
+    "moe",
+    "apple-silicon",
+    "text-generation",
+    "conversational",
+    "base_model:LiquidAI/LFM2.5-24B-A2B",
+    "base_model:quantized:LiquidAI/LFM2.5-24B-A2B",
+    "license:other",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24724465280,
+  "parameters_human": "24.72B",
+  "storage_bytes": 13951685358,
+  "storage_human": "14.0 GB",
+  "base_model": "LiquidAI/LFM2.5-24B-A2B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Latest Cyberleek GTA 6 leak is just nude Lucia - Dot Esports",
+      "url": "https://dotesports.com/gta/news/gta-6-leak-cyberleek-lucia-naked-nude",
+      "snippet": "1 day ago · Another Cyberleek GTA 6 leak has been released, this time entirely focused on a naked Lucia walking around Vice City. …Read more"
+    },
+    {
+      "title": "Cyberleek Shares GTA 6 Leak Of Naked Lucia - TheGamer",
+      "url": "https://www.thegamer.com/gta-6-naked-lucia-leak/",
+      "snippet": "2 days ago · Cyberleek just uploaded a five-minute gameplay video of Lucia naked, parachuting from a rooftop and driving around in …"
+    },
+    {
+      "title": "GTA 6 Leak: Lucia Robs ATM, Parachutes Nude [2026]",
+      "url": "https://trendintech.com/gta-6-leak-lucia-atm-heist-nude-parachute-2026/",
+      "snippet": "3 days ago · A new GTA 6 leak reportedly shows Lucia robbing an ATM for $23, then parachuting off a rooftop naked. Here is what is …"
+    },
+    {
+      "title": "GTA VI Leaked Nude Scenes Fuel Fan Reactions - x.com",
+      "url": "https://x.com/i/trending/2108152038328881246",
+      "snippet": "6 days ago · Cyberleek has shared new GTA 6 footage showing Lucia running around completely nude, with fans drawing attention …"
+    },
+    {
+      "title": "GTA 6 LIVE: Lucia fully nude in latest gameplay 'leak' - indy100",
+      "url": "https://www.indy100.com/gaming/gta-6-live-leaks-gameplay-2678076816",
+      "snippet": "GTA 6 LIVE: Follow our GTA 6 live blog for the latest news, including the latest gameplay leak showing Lucia naked, release …"
+    }
+  ]
+}

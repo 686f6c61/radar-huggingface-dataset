@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "luisastellet/qwen-metaphor-unke-camada-15",
+  "slug": "luisastellet-qwen-metaphor-unke-camada-15",
+  "author": "luisastellet",
+  "url": "https://huggingface.co/luisastellet/qwen-metaphor-unke-camada-15",
+  "created_at": "2026-10-14T00:07:33.000Z",
+  "updated_at": "2026-10-14T01:39:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 4779892586,
+  "storage_human": "4.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "luisastellet/qwen-metaphor-unke-camada-15 · Hugging Face",
+      "url": "https://huggingface.co/luisastellet/qwen-metaphor-unke-camada-15",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "luisastellet/qwen-metaphor-unke-camada-5 - featherless.ai",
+      "url": "https://featherless.ai/models/luisastellet/qwen-metaphor-unke-camada-5",
+      "snippet": "This model, luisastellet/qwen-metaphor-unke-camada-5, is a 0.8 billion parameter language model. It features a substantial context window of 32768 tokens, allowing it to process and generate longer sequences of text."
+    },
+    {
+      "title": "Run Qwen-metaphor API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/luisastellet/qwen-metaphor",
+      "snippet": "This model is a Qwen-based architecture, developed by luisastellet, designed for general language understanding and generation tasks. Its compact size and substantial context window make it suitable for applications requiring efficient processing of longer texts. It serves as a foundational model for various natural language processing ..."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, DeepSeek, Qwen, Mistral, Z.ai, Meta, and important open-weight model families."
+    },
+    {
+      "title": "qwen-metaphor-unke-camada-5 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/luisastellet/qwen-metaphor-unke-camada-5",
+      "snippet": "Deploy qwen-metaphor-unke-camada-5 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

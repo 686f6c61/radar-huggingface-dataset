@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Urbex-4B-GGUF",
+  "slug": "mradermacher-urbex-4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Urbex-4B-GGUF",
+  "created_at": "2026-10-14T00:35:24.000Z",
+  "updated_at": "2026-10-14T00:55:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "urbex",
+    "spatial-grounding",
+    "reinforcement-learning",
+    "en",
+    "base_model:vvangfaye/Urbex-4B",
+    "base_model:quantized:vvangfaye/Urbex-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 37680159360,
+  "storage_human": "37.7 GB",
+  "base_model": "vvangfaye/Urbex-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

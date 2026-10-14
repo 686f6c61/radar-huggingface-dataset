@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "mradermacher/TerminalHorizon-122B-A10B-i1-GGUF",
+  "slug": "mradermacher-terminalhorizon-122b-a10b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/TerminalHorizon-122B-A10B-i1-GGUF",
+  "created_at": "2026-10-13T11:56:07.000Z",
+  "updated_at": "2026-10-14T02:16:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "terminal-agent",
+    "cli",
+    "agentic",
+    "supervised-fine-tuning",
+    "long-horizon",
+    "RSI",
+    "Coding-agent",
+    "en",
+    "dataset:shunzou05/TerminalHorizon-3K",
+    "dataset:shunzou05/TerminalHorizon-Environment",
+    "base_model:shunzou05/TerminalHorizon-122B-A10B",
+    "base_model:quantized:shunzou05/TerminalHorizon-122B-A10B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 122111526912,
+  "parameters_human": "122.11B",
+  "storage_bytes": 956750646400,
+  "storage_human": "956.8 GB",
+  "base_model": "shunzou05/TerminalHorizon-122B-A10B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Faire votre demande pour l'aide de 100 € pour les travailleurs « …",
+      "url": "https://www.impots.gouv.fr/simulateur-aide-carburant-grands-rouleurs",
+      "snippet": "À l'aide de notre simulateur, en répondant à quelques questions, vous vérifiez votre éligibilité à ce dispositif d'aide ; Si vous …"
+    },
+    {
+      "title": "Une nouvelle aide de 100 euros pour les travailleurs « grands rouleurs »",
+      "url": "https://www.service-public.gouv.fr/particuliers/actualites/A18903",
+      "snippet": "Oct 5, 2026 · Vous pouvez demander jusqu’au 31 décembre 2026 à bénéficier de l’aide carburant de 100 euros pour les travailleurs …"
+    },
+    {
+      "title": "Aide carburant - Bannière formulaire de demande | impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/aide-carburant-banniere-formulaire-de-demande",
+      "snippet": "L'aide de 100 € pour les grands rouleurs est renouvelée et étendue pour la période d'octobre à décembre 2026. Elle bénéficie …"
+    },
+    {
+      "title": "Aides carburant - info.gouv.fr",
+      "url": "https://www.info.gouv.fr/actualite/aides-au-carburant",
+      "snippet": "May 13, 2026 · Cette indemnité forfaitaire s'élève à 100 euros pour les trois mois concernés et sera équivalente à 40 centimes par …"
+    },
+    {
+      "title": "Carburant : l'aide pour les travailleurs « grands rouleurs",
+      "url": "https://www.economie.gouv.fr/actualites/carburant-laide-pour-les-travailleurs-grands-rouleurs",
+      "snippet": "Oct 2, 2026 · Pour compenser la hausse des prix à la pompe, le Gouvernement a institué une indemnité carburant de : 100 euros, du …"
+    }
+  ]
+}

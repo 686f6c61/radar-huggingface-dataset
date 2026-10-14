@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Heronetic/heron1i-flash-lite-v2",
+  "slug": "heronetic-heron1i-flash-lite-v2",
+  "author": "Heronetic",
+  "url": "https://huggingface.co/Heronetic/heron1i-flash-lite-v2",
+  "created_at": "2026-10-13T23:51:35.000Z",
+  "updated_at": "2026-10-13T23:51:40.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "heron1",
+    "text-generation",
+    "small-language-model",
+    "custom_code",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9924188,
+  "parameters_human": "9.9M",
+  "storage_bytes": 19969993,
+  "storage_human": "20 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Heron1i Flash Lite by Heronetic — 1K context | LLM Explorer",
+      "url": "https://llm-explorer.com/model/Heronetic%2Fheron1i-flash-lite,1B34jQbWMZMRUcCNcBMVB9",
+      "snippet": "Heron1i Flash Lite is an open-source 9.9m LLM by Heronetic. 1K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "GitHub - janostudio/heron-ai",
+      "url": "https://github.com/janostudio/heron-ai",
+      "snippet": "Heron AI is a generic multi-agent engine built in Go. No framework dependencies. Design, orchestrate, and evaluate AI agent workflows."
+    },
+    {
+      "title": "Products | Heronic Technologies",
+      "url": "https://www.heronic.ai/products/",
+      "snippet": "The IRIS suite — AI-based video processing IP for real-time inference on affordable FPGA hardware."
+    },
+    {
+      "title": "News | Heronic Technologies",
+      "url": "https://www.heronic.ai/news/",
+      "snippet": "News and announcements from Heronic Technologies. Heronic partners with ONE WARE to automate AI from dataset to FPGA open_in_new Heronic Technologies has partnered with ONE WARE, whose ONE AI platform automatically generates application-specific AI models in seconds. Together we offer a seamless path from training data to deployment-ready RTL, optimised for the target FPGA and its performance ..."
+    },
+    {
+      "title": "GitHub - JoasASantos/Offensive-Security-AI-Models: Uncensored AI models ...",
+      "url": "https://github.com/JoasASantos/Offensive-Security-AI-Models",
+      "snippet": "Curated list of open-weight uncensored models for authorized red team operations, penetration testing, and security research. All data sourced from HuggingFace model cards and official publications. Sep 2026."
+    }
+  ]
+}

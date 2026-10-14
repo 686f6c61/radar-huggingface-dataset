@@ -32,12 +32,11 @@
     "base_model:quantized:google/embeddinggemma-2",
     "license:apache-2.0",
     "endpoints_compatible",
-    "region:us",
-    "conversational"
+    "region:us"
   ],
-  "likes": 294,
+  "likes": 302,
   "downloads_30d": 81504,
-  "trending_score": 220,
+  "trending_score": 179,
   "parameters": 271002648,
   "parameters_human": "271.0M",
   "storage_bytes": 4578088800,
@@ -46,7 +45,7 @@
   "formats": [
     "gguf"
   ],
-  "is_conversational": true,
+  "is_conversational": false,
   "gated": false,
   "removed": false,
   "removed_at": null,

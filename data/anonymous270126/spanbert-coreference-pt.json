@@ -5,7 +5,7 @@
   "author": "anonymous270126",
   "url": "https://huggingface.co/anonymous270126/SpanBERT-Coreference-pt",
   "created_at": "2026-10-12T18:15:21.000Z",
-  "updated_at": "2026-10-12T18:19:32.000Z",
+  "updated_at": "2026-10-13T10:42:48.000Z",
   "license": "custom-agplv3-dual-license",
   "license_family": "unknown",
   "pipeline_tag": "token-classification",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 8,
   "trending_score": 0,
   "parameters": 108310272,
   "parameters_human": "108.3M",

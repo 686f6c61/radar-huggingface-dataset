@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "chaliasif/saudi-tender-tagger-onnx",
+  "slug": "chaliasif-saudi-tender-tagger-onnx",
+  "author": "chaliasif",
+  "url": "https://huggingface.co/chaliasif/saudi-tender-tagger-onnx",
+  "created_at": "2026-10-13T20:24:31.000Z",
+  "updated_at": "2026-10-13T20:25:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers.js",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "bert",
+    "text-classification",
+    "arabic",
+    "saudi-arabia",
+    "tenders",
+    "etimad",
+    "ar",
+    "base_model:CAMeL-Lab/bert-base-arabic-camelbert-mix",
+    "base_model:quantized:CAMeL-Lab/bert-base-arabic-camelbert-mix",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 546612980,
+  "storage_human": "547 MB",
+  "base_model": "CAMeL-Lab/bert-base-arabic-camelbert-mix",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ONNX Model Zoo",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "ONNX Runtime | Models",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    },
+    {
+      "title": "ONNX | Home",
+      "url": "https://onnx.ai/",
+      "snippet": "ONNX is an open format built to represent machine learning models. ONNX defines a common set of operators - the building blocks of machine learning and deep learning models - and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers."
+    },
+    {
+      "title": "Hugging Bay | Find and Download AI Models",
+      "url": "https://huggingbay.xyz/",
+      "snippet": "Open models, mirrored with their licenses and checksums. Run the small ones in your browser. Download the rest and sail your own."
+    },
+    {
+      "title": "Saudi Tenders, RFPs & Etimad Opportunities | Tender Insight",
+      "url": "https://etimad.win/",
+      "snippet": "Saudi tender discovery Saudi tenders, Etimad opportunities and RFP intelligence Find Saudi government tender opportunities and technology RFPs collected from publicly available information on the official Etimad portal. Tender Insight helps business teams monitor bidding deadlines, government agencies, status changes, award results and winning partners across Saudi Arabia."
+    }
+  ]
+}

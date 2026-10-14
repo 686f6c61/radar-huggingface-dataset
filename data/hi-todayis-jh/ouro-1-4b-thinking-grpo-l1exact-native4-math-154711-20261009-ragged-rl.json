@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "hi-todayis-jh/ouro-1.4b-thinking-grpo-l1exact-native4-math-154711-20261009-ragged-rl",
+  "slug": "hi-todayis-jh-ouro-1-4b-thinking-grpo-l1exact-native4-math-154711-20261009-ragged-rl",
+  "author": "hi-todayis-jh",
+  "url": "https://huggingface.co/hi-todayis-jh/ouro-1.4b-thinking-grpo-l1exact-native4-math-154711-20261009-ragged-rl",
+  "created_at": "2026-10-13T22:42:34.000Z",
+  "updated_at": "2026-10-14T02:31:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17216731438,
+  "storage_human": "17.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HI | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/hi",
+      "snippet": "HI definition: 1. used as an informal greeting, usually to people who you know: 2. written abbreviation for the…. Learn more."
+    },
+    {
+      "title": "HI Definition & Meaning - Merriam-Webster",
+      "url": "https://www.merriam-webster.com/dictionary/hi",
+      "snippet": "Sep 20, 2026 · The meaning of HI is —used especially as a greeting. How to use hi in a sentence."
+    },
+    {
+      "title": "HI | definition in the Cambridge English Dictionary",
+      "url": "https://dictionary.cambridge.org/us/dictionary/english/hi",
+      "snippet": "HI meaning: 1. used as an informal greeting, usually to people who you know: 2. written abbreviation for the…. Learn more."
+    },
+    {
+      "title": "HI - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hi",
+      "snippet": "This disambiguation page lists articles associated with the title HI. If an internal link led you here, you may wish to change the link to …"
+    },
+    {
+      "title": "Hi, Hello Song! Greeting Song for Kids | Preschool Songs | A Little ...",
+      "url": "https://www.youtube.com/watch?v=T-wvRTDieGQ",
+      "snippet": "Sep 1, 2024 · Perfect song for morning greetings! This song is perfect for both native English speakers and young learners of English …"
+    }
+  ]
+}

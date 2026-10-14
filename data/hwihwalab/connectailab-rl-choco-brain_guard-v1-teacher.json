@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "hwihwalab/connectailab-rl-CHOCO-BRAIN_GUARD-v1-teacher",
+  "slug": "hwihwalab-connectailab-rl-choco-brain_guard-v1-teacher",
+  "author": "hwihwalab",
+  "url": "https://huggingface.co/hwihwalab/connectailab-rl-CHOCO-BRAIN_GUARD-v1-teacher",
+  "created_at": "2026-10-13T23:51:56.000Z",
+  "updated_at": "2026-10-14T02:41:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "numpy",
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "tags": [
+    "numpy",
+    "connectailab",
+    "connect-ai-lab",
+    "connect-tycoon",
+    "fraud-detection",
+    "fin-tech",
+    "e-commerce",
+    "decision-making",
+    "solopreneur",
+    "hwihwalab",
+    "jev",
+    "jev-framework",
+    "prefrontal-cortex",
+    "reinforcement-learning",
+    "deep-reinforcement-learning",
+    "ppo",
+    "korean",
+    "on-device",
+    "policy-matrix",
+    "en",
+    "ko",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fix a Grayed-Out Wi-Fi Button on iPhone - Lifewire",
+      "url": "https://www.lifewire.com/fix-wifi-grayed-out-on-iphone-11904357",
+      "snippet": "Feb 18, 2026 · A Grayed-out Wi-Fi toggle can leave your iPhone stuck offline. Try these proven troubleshooting steps before …"
+    },
+    {
+      "title": "How to Fix Grayed-Out Wi-Fi on an iPhone - Lifewire",
+      "url": "https://www.lifewire.com/wifi-grayed-out-on-iphone-fix-1999599",
+      "snippet": "Aug 12, 2024 · This article explains all the things you should check out and fix if you're experiencing grayed-out Wi-Fi on your iPhone."
+    },
+    {
+      "title": "8 Fixes iPhone Wi-Fi Grayed Out after iOS 26 Update - HowToiSolve",
+      "url": "https://www.howtoisolve.com/how-to-fix-ios-wi-fi-grayed-out-on-iphone/",
+      "snippet": "Sep 8, 2025 · Solve your Wi-Fi greyed out problems on your iPhone with this guide. Discover step-by-step instructions to get online …"
+    },
+    {
+      "title": "How to Fix Wi-Fi Greyed Out on iPhone - Guiding Tech",
+      "url": "https://www.guidingtech.com/top-ways-to-fix-wi-fi-greyed-out-on-iphone/",
+      "snippet": "Jul 29, 2024 · Do you face issues with enabling Wi-Fi on your iPhone? Here are the top six ways to fix Wi-Fi greyed out error on iPhone."
+    },
+    {
+      "title": "Why Is iPhone Wi-Fi Greyed Out? Exploring the Causes and Solutions",
+      "url": "https://easytechsolver.com/why-is-iphone-wi-fi-greyed-out/",
+      "snippet": "Mar 4, 2026 · In this article, we’ll delve into the reasons behind the greyed-out Wi-Fi option on iPhones and explore the potential …"
+    }
+  ]
+}

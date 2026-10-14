@@ -5,7 +5,7 @@
   "author": "reaperdoesntknow",
   "url": "https://huggingface.co/reaperdoesntknow/romeo",
   "created_at": "2026-10-07T02:46:38.000Z",
-  "updated_at": "2026-10-08T01:04:51.000Z",
+  "updated_at": "2026-10-13T13:17:27.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 585,
+  "downloads_30d": 590,
   "trending_score": 0,
   "parameters": 464629120,
   "parameters_human": "464.6M",

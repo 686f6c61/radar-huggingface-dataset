@@ -5,7 +5,7 @@
   "author": "openbmb",
   "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf",
   "created_at": "2026-10-06T18:05:14.000Z",
-  "updated_at": "2026-10-12T17:10:23.000Z",
+  "updated_at": "2026-10-13T16:41:34.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -26,13 +26,13 @@
     "region:us",
     "conversational"
   ],
-  "likes": 75,
+  "likes": 93,
   "downloads_30d": 10080,
-  "trending_score": 75,
+  "trending_score": 92,
   "parameters": 34659889792,
   "parameters_human": "34.66B",
-  "storage_bytes": 667490944160,
-  "storage_human": "667.5 GB",
+  "storage_bytes": 1000907670720,
+  "storage_human": "1000.9 GB",
   "base_model": "openbmb/MiniCPM-V-4.7-35B-A3B",
   "formats": [
     "gguf"

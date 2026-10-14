@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "zeromodels/all-mpnet-base-v2",
+  "slug": "zeromodels-all-mpnet-base-v2",
+  "author": "zeromodels",
+  "url": "https://huggingface.co/zeromodels/all-mpnet-base-v2",
+  "created_at": "2026-10-13T22:33:09.000Z",
+  "updated_at": "2026-10-13T23:18:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "zeromodels",
+  "languages": [],
+  "tags": [
+    "zeromodels",
+    "keras",
+    "sentence-transformers",
+    "sentence-similarity",
+    "mpnet",
+    "text-embeddings",
+    "base_model:sentence-transformers/all-mpnet-base-v2",
+    "base_model:finetune:sentence-transformers/all-mpnet-base-v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 436039752,
+  "storage_human": "436 MB",
+  "base_model": "sentence-transformers/all-mpnet-base-v2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Breaking News, Latest News and Videos | CNN",
+      "url": "https://www.cnn.com/",
+      "snippet": "View the latest news and breaking news today for U.S., world, weather, entertainment, politics and health at CNN.com."
+    },
+    {
+      "title": "آخر الأخبار السياسية والرياضية والفنية وأحدث تقارير الفيديو | CNN ...",
+      "url": "https://arabic.cnn.com/",
+      "snippet": "CNN Arabic offers exclusive coverage of global and Arab news, politics, health, sports, tourism, style, and technology with images …"
+    },
+    {
+      "title": "US - CNN",
+      "url": "https://www.cnn.com/us",
+      "snippet": "View the latest US news, top stories, photos and videos from around the nation. To get the day’s top headlines delivered to your …"
+    },
+    {
+      "title": "Football news, headlines, videos, interviews and comment - CNN",
+      "url": "https://edition.cnn.com/SPORT/football/",
+      "snippet": "Latest football news from around the world, with features and interviews with the biggest stars of the English Premier League, …"
+    },
+    {
+      "title": "CNN International Commercial - Home",
+      "url": "https://commercial.cnn.com/",
+      "snippet": "Harness the power of CNN. Using business intelligence, we deliver tailor-made solutions for brands and publishers around the world"
+    }
+  ]
+}

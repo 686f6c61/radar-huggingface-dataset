@@ -5,7 +5,7 @@
   "author": "litzor",
   "url": "https://huggingface.co/litzor/connectailab-rl-litzor-v2-teacher",
   "created_at": "2026-10-13T15:43:38.000Z",
-  "updated_at": "2026-10-13T16:10:40.000Z",
+  "updated_at": "2026-10-13T16:38:40.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "reinforcement-learning",

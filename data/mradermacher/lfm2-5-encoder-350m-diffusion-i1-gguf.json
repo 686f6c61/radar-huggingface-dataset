@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "mradermacher/LFM2.5-Encoder-350M-Diffusion-i1-GGUF",
+  "slug": "mradermacher-lfm2-5-encoder-350m-diffusion-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/LFM2.5-Encoder-350M-Diffusion-i1-GGUF",
+  "created_at": "2026-10-14T00:36:31.000Z",
+  "updated_at": "2026-10-14T01:06:43.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "liquid",
+    "lfm2",
+    "lfm2.5",
+    "bidirectional",
+    "masked-lm",
+    "encoder",
+    "diffusion-language-model",
+    "masked-diffusion",
+    "mdlm",
+    "instruction-tuned",
+    "en",
+    "base_model:LiquidAI/LFM2.5-Encoder-350M-Diffusion",
+    "base_model:quantized:LiquidAI/LFM2.5-Encoder-350M-Diffusion",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 304300,
+  "parameters_human": "304300",
+  "storage_bytes": 1244480,
+  "storage_human": "1 MB",
+  "base_model": "LiquidAI/LFM2.5-Encoder-350M-Diffusion",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

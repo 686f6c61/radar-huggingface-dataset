@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "YV005005005005YV/Carti",
+  "slug": "yv005005005005yv-carti",
+  "author": "YV005005005005YV",
+  "url": "https://huggingface.co/YV005005005005YV/Carti",
+  "created_at": "2026-10-13T20:22:50.000Z",
+  "updated_at": "2026-10-13T20:48:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 128256790,
+  "storage_human": "128 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "I keep getting a Credentials Needed notification on my Android phone ...",
+      "url": "https://support.google.com/chrome/thread/2271003/i-keep-getting-a-credentials-needed-notification-on-my-android-phone-from-my-gmail-app-both-my-hotmail-and-gmail-accounts-are-synced-together-using-the-gmail-app-i-just-recently-changed-my-password-and-now-i-am-getting-these-notifications?hl=en",
+      "snippet": "Mar 11, 2019 · I keep getting a Credentials Needed notification on my Android phone from my Gmail App. Both my Hotmail and …"
+    },
+    {
+      "title": "Accede a Gmail - Computadora - Ayuda de Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=es-419&co=GENIE.Platform%3DDesktop",
+      "snippet": "Cómo acceder a Gmail Sugerencia: Si accedes a tu cuenta en una computadora pública, asegúrate de salir antes de dejar la …"
+    },
+    {
+      "title": "Se connecter à ma messagerie hotmail.fr - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-28899566-se-connecter-a-ma-messagerie-hotmail-fr",
+      "snippet": "Bonjour, je suis débutante et je souhaite me connecter à ma messagerie hotmail .fr mais je n' arrive pas...qui peut m'aider? car je …"
+    },
+    {
+      "title": "Comment récupérer ma boîte de réception hotmail?",
+      "url": "https://forums.commentcamarche.net/forum/affich-26356832-comment-recuperer-ma-boite-de-reception-hotmail",
+      "snippet": "Oct 30, 2012 · Bonjour, Je n'arrive pas à accéder à ma boîte de réception malgré que je n'ai pas perdu le mot de passe. J'ai suivi …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/msteams/forum/all/how-do-i-create-a-custom-background-to-use-for/19614570-dd77-4e2e-b649-3cc49c205609",
+      "snippet": ""
+    }
+  ]
+}

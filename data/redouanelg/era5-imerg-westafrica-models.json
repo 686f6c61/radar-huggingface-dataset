@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "redouanelg/era5-imerg-westafrica-models",
+  "slug": "redouanelg-era5-imerg-westafrica-models",
+  "author": "redouanelg",
+  "url": "https://huggingface.co/redouanelg/era5-imerg-westafrica-models",
+  "created_at": "2026-10-13T20:25:45.000Z",
+  "updated_at": "2026-10-13T21:58:25.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "weather",
+    "climate",
+    "precipitation",
+    "downscaling",
+    "west-africa",
+    "era5",
+    "imerg",
+    "dataset:redouanelg/era5-imerg-westafrica-daily",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 428789535,
+  "storage_human": "429 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Data and trained models — Deep-learning statistical ... - Zenodo",
+      "url": "https://zenodo.org/records/20801025",
+      "snippet": "Supporting data and trained model weights for the study on deep-learning statistical downscaling of daily precipitation over West Africa (ERA5 0.25° → IMERG 0.1°, factor 2.5×), submitted to Environmental Data Science (Cambridge University Press).Files:arrays_01deg.npz — cached model outputs and IMERG observations on the 0.1° evaluation grid (7 configurations + observations), allowing ..."
+    },
+    {
+      "title": "Data and trained models — Deep-learning statistical downscaling of ...",
+      "url": "https://explore.openaire.eu/search/dataset?pid=10.5281%2Fzenodo.20801025",
+      "snippet": "Abstract Supporting data and trained model weights for the study on deep-learning statistical downscaling of daily precipitation over West Africa (ERA5 0.25° → IMERG 0.1°, factor 2.5×), submitted to Environmental Data Science (Cambridge University Press).Files:arrays_01deg.npz — cached model outputs and IMERG observations on the 0.1° evaluation grid (7 configurations + observations ..."
+    },
+    {
+      "title": "ERA5 hourly data on single levels from 1940 to present - Copernicus",
+      "url": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels?tab=overview",
+      "snippet": "ERA5 is the fifth generation ECMWF reanalysis for the global climate and weather for the past 8 decades. Data is available from 1940 onwards. ERA5 replaces the ERA-Interim reanalysis. Reanalysis combines model data with observations from across the world into a globally complete and consistent dataset using the laws of physics. This principle, called data assimilation, is based on the method ..."
+    },
+    {
+      "title": "GitHub - sagna1/downscaling-westafrica-eds",
+      "url": "https://github.com/sagna1/downscaling-westafrica-eds",
+      "snippet": "We downscale daily precipitation from the ERA5 reanalysis (0.25°) to the IMERG product at its native 0.1° resolution (factor 2.5×) over West Africa, comparing U-Net architectures (plain / Squeeze-and-Excitation / CBAM attention) and two post-processing strategies (monthly quantile mapping and a conditional GAN) against a BCSD baseline."
+    },
+    {
+      "title": "WeatherBench 2 - WeatherBench - sites.research.google",
+      "url": "https://sites.research.google/gr/weatherbench/",
+      "snippet": "In addition, the WeatherBench framework consists of our recently updated WeatherBench-X evaluation code and publicly available, cloud-optimized ground-truth and baseline datasets, including a comprehensive copy of the ERA5 dataset used for training most ML models."
+    }
+  ]
+}

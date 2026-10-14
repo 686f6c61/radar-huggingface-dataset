@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "NANI-Nithin/LFM2.5-24B-A2B-GGUF",
+  "slug": "nani-nithin-lfm2-5-24b-a2b-gguf",
+  "author": "NANI-Nithin",
+  "url": "https://huggingface.co/NANI-Nithin/LFM2.5-24B-A2B-GGUF",
+  "created_at": "2026-10-13T20:48:29.000Z",
+  "updated_at": "2026-10-14T02:23:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "quantized",
+    "text-generation",
+    "base_model:LiquidAI/LFM2.5-24B-A2B",
+    "base_model:quantized:LiquidAI/LFM2.5-24B-A2B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23971587712,
+  "parameters_human": "23.97B",
+  "storage_bytes": 303767441984,
+  "storage_human": "303.8 GB",
+  "base_model": "LiquidAI/LFM2.5-24B-A2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

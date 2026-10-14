@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jonasmuellerdale/dino-experiment",
+  "slug": "jonasmuellerdale-dino-experiment",
+  "author": "jonasmuellerdale",
+  "url": "https://huggingface.co/jonasmuellerdale/dino-experiment",
+  "created_at": "2026-10-14T00:02:32.000Z",
+  "updated_at": "2026-10-14T00:02:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "(Asian Pedomom)20130119_0407_31.avi - Archive.org",
+      "url": "https://archive.org/details/office-of-film-and-literature-classification_1800603.012",
+      "snippet": "(Asian Pedomom)20130119_0407_31.avi by Office of Film and Literature Classification"
+    },
+    {
+      "title": "Data Sources - Paedophilia: The dark side of Instagram - Arte",
+      "url": "https://www.arte.tv/en/videos/117240-002-A/data-sources/",
+      "snippet": "A meticulously researched investigation showing how sexual predators operate on Instagram; and how the algorithm could even …"
+    },
+    {
+      "title": "VIDÉO. Pédopornographie : des photos de vacances à l'IA, la ...",
+      "url": "https://www.ouest-france.fr/faits-divers/pedocriminalite/video-pedopornographie-des-photos-de-vacances-a-l-ia-la-multiplication-des-contenus-a3021785-9890-4017-9509-1c288bb01237",
+      "snippet": "Aug 13, 2025 · En 2023, l’association L’Enfant bleu a révélé un chiffre glaçant : la moitié des photos échangées sur les forums …"
+    },
+    {
+      "title": "Pedomom Pedodaddy 2.mp4 : Office of Film and Literature …",
+      "url": "https://archive.org/details/office-of-film-and-literature-classification_1800603.010",
+      "snippet": "Feb 21, 2019 · Pedomom Pedodaddy 2.mp4 by Office of Film and Literature Classification Publication date 2019-02-21 Topics New …"
+    },
+    {
+      "title": "Child abuse on the dark web - dw.com",
+      "url": "https://www.dw.com/en/child-abuse-on-the-dark-web/video-55987498",
+      "snippet": "Jun 11, 2021 · When officials shut down the Elysium darknet platform in 2017, there were over 111,000 user accounts. Based in …"
+    }
+  ]
+}

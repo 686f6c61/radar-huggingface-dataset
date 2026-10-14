@@ -22,12 +22,12 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 408,
+  "downloads_30d": 412,
   "trending_score": 0,
   "parameters": 4342550469,
   "parameters_human": "4.34B",
-  "storage_bytes": 2044594105579,
-  "storage_human": "2044.6 GB",
+  "storage_bytes": 2142296599531,
+  "storage_human": "2142.3 GB",
   "base_model": null,
   "formats": [
     "safetensors"
