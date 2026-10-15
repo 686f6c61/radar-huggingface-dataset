@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "MscAbdelrahman1/QWEN-ShopDetection",
+  "slug": "mscabdelrahman1-qwen-shopdetection",
+  "author": "MscAbdelrahman1",
+  "url": "https://huggingface.co/MscAbdelrahman1/QWEN-ShopDetection",
+  "created_at": "2026-09-29T16:48:54.000Z",
+  "updated_at": "2026-10-14T23:32:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_vl",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 294,
+  "trending_score": 0,
+  "parameters": 4437815808,
+  "parameters_human": "4.44B",
+  "storage_bytes": 162188512625,
+  "storage_human": "162.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MscAbdelrahman1/QWEN-ShopDetection · Hugging Face",
+      "url": "https://huggingface.co/MscAbdelrahman1/QWEN-ShopDetection",
+      "snippet": "MscAbdelrahman1 / QWEN-ShopDetection Like 0 Safetensors qwen3_vl Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 4B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "MscAbdelrahman1 (Hisham) - Hugging Face",
+      "url": "https://huggingface.co/MscAbdelrahman1/models",
+      "snippet": "MscAbdelrahman1&#x27;s models2 Sort: Recently updated MscAbdelrahman1/Qwen-Qwen2.5-VL-3B-Instruct Updated 26 minutes ago"
+    },
+    {
+      "title": "ModelScope Explained: Alibaba&#x27;s Model Hub for Qwen Downloads",
+      "url": "https://qwenalibaba.pro/modelscope/",
+      "snippet": "ModelScope (魔搭): Alibaba&#x27;s Open Model Hub for Qwen and Beyond ModelScope (魔搭) is the open-source model hub built by Alibaba Cloud, the same company behind the qwen by alibaba model family — often called \"the Chinese Hugging Face.\" It hosts models, datasets and demo apps, and according to Alibaba Cloud&#x27;s official blog, it&#x27;s one of the two official places to download Qwen ..."
+    },
+    {
+      "title": "Qwen (Alibaba): Open Source AI You Can Run on a Laptop",
+      "url": "https://beginnersinai.org/qwen-ai/",
+      "snippet": "Qwen is Alibaba&#x27;s family of open-source AI models that run on consumer hardware. Learn about the full model lineup, local setup, comparisons with Llama and DeepSeek, and how to get started today."
+    },
+    {
+      "title": "3 million downloads and counting: this new free Chinese AI model is ...",
+      "url": "https://cybernews.com/tech/qwen-38-27b-ai-model-debuts-with-million-downloads/",
+      "snippet": "Alibaba&#x27;s newly released free, open-weight AI model, Qwen3.8-27B is gaining momentum, amassing over 3 million downloads in its opening weekend as developers and prosumers seek its performance capabilities on consumer hardware."
+    }
+  ]
+}

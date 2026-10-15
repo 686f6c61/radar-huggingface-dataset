@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "kgmalik23/nyc-airbnb-predictor",
+  "slug": "kgmalik23-nyc-airbnb-predictor",
+  "author": "kgmalik23",
+  "url": "https://huggingface.co/kgmalik23/nyc-airbnb-predictor",
+  "created_at": "2026-10-15T01:31:55.000Z",
+  "updated_at": "2026-10-15T01:31:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nyc airbnb room predictor app - a Hugging Face Space by kgmalik23",
+      "url": "https://huggingface.co/spaces/kgmalik23/nyc-airbnb-predictor",
+      "snippet": "This app shows a simple welcome page that you can customize by editing the index.html file in the Files and versions tab. Once you save your changes, the updated static page is displayed right away..."
+    },
+    {
+      "title": "Airbnb-NYC-Price-Prediction - GitHub",
+      "url": "https://github.com/jibnorge/Airbnb-NYC-Price-Prediction",
+      "snippet": "The objective of the Airbnb NYC price prediction project is to develop a machine learning model that accurately predicts the rental price of Airbnb listings in New York City. The model utilizes various features such as location, property type, and amenities to make predictions. The aim is to provide hosts with a tool for setting competitive prices and renters with an estimate of the cost of ..."
+    },
+    {
+      "title": "️ NYC Airbnb Price Prediction - GitHub",
+      "url": "https://github.com/HardikVasava/nyc-airbnb-price-prediction-ml",
+      "snippet": "🏙️ NYC Airbnb Price Prediction — Predict Airbnb listing prices in NYC using advanced ML models like XGBoost, LightGBM, and Random Forest. This project walks through the full ML pipeline: data exploration, feature engineering, model training, hyperparameter tuning, and evaluation."
+    },
+    {
+      "title": "NYC Airbnb Predictor",
+      "url": "https://nyc-room-type-predictor-gpjz.onrender.com/",
+      "snippet": "Find out what kind of room this NYC Airbnb is. Enter a few listing details and let our machine learning model estimate whether it&#x27;s an entire home, a private room, or a shared room."
+    },
+    {
+      "title": "Yoad22/nyc-airbnb-price-predictor · Hugging Face",
+      "url": "https://huggingface.co/Yoad22/nyc-airbnb-price-predictor",
+      "snippet": "NYC Airbnb Price Predictor What makes an Airbnb listing expensive in New York City? Is it the borough, the room type, how close you are to Times Square, or something less obvious? This project tackles that question using the NYC Airbnb Open Data - a dataset of over 100,000 listings across all five boroughs."
+    }
+  ]
+}

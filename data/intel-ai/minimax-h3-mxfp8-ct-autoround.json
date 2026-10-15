@@ -5,7 +5,7 @@
   "author": "intel-ai",
   "url": "https://huggingface.co/intel-ai/MiniMax-H3-MXFP8-CT-AutoRound",
   "created_at": "2026-10-14T15:40:30.000Z",
-  "updated_at": "2026-10-14T15:47:52.000Z",
+  "updated_at": "2026-10-15T03:04:45.000Z",
   "license": "minimax-h3-community-license-agreement",
   "license_family": "unknown",
   "pipeline_tag": "text-to-video",

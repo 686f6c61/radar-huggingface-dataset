@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "frdaws/novera-ai",
+  "slug": "frdaws-novera-ai",
+  "author": "frdaws",
+  "url": "https://huggingface.co/frdaws/novera-ai",
+  "created_at": "2026-10-14T19:06:37.000Z",
+  "updated_at": "2026-10-14T19:16:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3397103616,
+  "parameters_human": "3.40B",
+  "storage_bytes": 2104932800,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

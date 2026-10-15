@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "podolinsky/groot-libero-10-probe-lstm-onset-mode-clip",
+  "slug": "podolinsky-groot-libero-10-probe-lstm-onset-mode-clip",
+  "author": "podolinsky",
+  "url": "https://huggingface.co/podolinsky/groot-libero-10-probe-lstm-onset-mode-clip",
+  "created_at": "2026-10-14T20:58:23.000Z",
+  "updated_at": "2026-10-14T20:58:27.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "failure-detection",
+    "vla",
+    "gr00t",
+    "libero",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6609867,
+  "parameters_human": "6.6M",
+  "storage_bytes": 26539576,
+  "storage_human": "27 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "podolinsky/groot-libero-x-probe-lstm-onset-post-mode · Hugging Face",
+      "url": "https://huggingface.co/podolinsky/groot-libero-x-probe-lstm-onset-post-mode",
+      "snippet": "podolinsky / groot-libero-x-probe-lstm-onset-post-mode Like 0 Robotics Safetensors failure-detection vla gr00t libero License:other Model card FilesFiles and versions xet Community Copy to bucket new lstm_onset_post_mode (GR00T-N1.7 / LIBERO-X level123, task split) Input Files Results on the task split (seed 0; alpha-averaged over 0.01..0.30, alpha = 0.10 in brackets)"
+    },
+    {
+      "title": "podolinsky/groot-libero-x-probe-lstm-onset-mha · Hugging Face",
+      "url": "https://huggingface.co/podolinsky/groot-libero-x-probe-lstm-onset-mha",
+      "snippet": "podolinsky / groot-libero-x-probe-lstm-onset-mha Like 0 Robotics Safetensors failure-detection vla gr00t libero License:other Model card FilesFiles and versions xet Community Copy to bucket new lstm_onset_mha (GR00T-N1.7 / LIBERO-X level123, task split) Input Files Results on the task split (seed 0; alpha-averaged over 0.01..0.30, alpha = 0.10 ..."
+    },
+    {
+      "title": "GR00T-N1.7 LIBERO-10 backbone features - claru.ai",
+      "url": "https://claru.ai/datasets/podolinsky-groot-libero-10-features-v3",
+      "snippet": "Aligned rollouts of the NVIDIA GR00T-N1.7-LIBERO policy on LIBERO tasks in normal and occluded variants, with K=10 action samples per inference and per-token backbone features from the Cosmos-Reason2-2B VLM backbone. Designed for representation probing and sampling-based failure detection research."
+    },
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "Podolinsky: Open-Weight Models and Datasets - savrn.com",
+      "url": "https://savrn.com/model-publishers/podolinsky",
+      "snippet": "Podolinsky has 0 open-weight models and 1 dataset in the SAVRN Model Hub. Browse each one&#x27;s model card, specs, files and license."
+    }
+  ]
+}

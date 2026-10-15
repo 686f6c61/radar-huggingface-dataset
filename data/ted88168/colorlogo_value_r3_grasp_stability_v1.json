@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ted88168/colorlogo_value_r3_grasp_stability_v1",
+  "slug": "ted88168-colorlogo_value_r3_grasp_stability_v1",
+  "author": "ted88168",
+  "url": "https://huggingface.co/ted88168/colorlogo_value_r3_grasp_stability_v1",
+  "created_at": "2026-10-14T23:20:34.000Z",
+  "updated_at": "2026-10-14T23:21:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pistar06",
+    "dataset:ted88168/rollout_colorlogo_r3_grasp_stability_v1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1147607163,
+  "parameters_human": "1.15B",
+  "storage_bytes": 2331868724,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Remover conteúdo sexual pessoal da Pesquisa Google",
+      "url": "https://support.google.com/websearch/answer/16305143?hl=pt-BR",
+      "snippet": "Se você encontrou conteúdo sexual associado a você no Google e quer que ele seja removido, estamos aqui para ajudar. Não …"
+    },
+    {
+      "title": "Why is google not allowing me to search for porn or anything adult ...",
+      "url": "https://support.google.com/websearch/thread/8784960/why-is-google-not-allowing-me-to-search-for-porn-or-anything-adult-entertainment-started-yesterday?hl=en",
+      "snippet": "Jun 26, 2019 · Why is google not allowing me to search for porn or anything adult entertainment? Started yesterday Checked …"
+    },
+    {
+      "title": "My First actual Gay Experience happened at a glory hole",
+      "url": "https://forum.xnxx.com/threads/my-first-actual-gay-experience-happened-at-a-glory-hole.474082/",
+      "snippet": "Jun 19, 2017 · I looked up a porn store in the college town of Fort Collins colorado. A small Little shop Called to bookranch popped …"
+    },
+    {
+      "title": "BROTHER AND SISTER INCEST STORIES W/Pics! - XNXX Adult …",
+      "url": "https://forum.xnxx.com/threads/brother-and-sister-incest-stories-w-pics.212891/",
+      "snippet": "Apr 15, 2016 · Hey Guys! I am new here and wanted to get some feedback on a new incest video series I have been doing. It's called …"
+    },
+    {
+      "title": "301 Moved - Google Help",
+      "url": "https://support.google.com/googleplay/android-developer/answer/17517561?hl=en",
+      "snippet": "301 Moved The document has moved here."
+    }
+  ]
+}

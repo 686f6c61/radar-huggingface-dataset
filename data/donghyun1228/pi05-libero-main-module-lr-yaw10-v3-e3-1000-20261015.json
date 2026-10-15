@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Donghyun1228/pi05-libero-main-module-lr-yaw10-v3-e3-1000-20261015",
+  "slug": "donghyun1228-pi05-libero-main-module-lr-yaw10-v3-e3-1000-20261015",
+  "author": "Donghyun1228",
+  "url": "https://huggingface.co/Donghyun1228/pi05-libero-main-module-lr-yaw10-v3-e3-1000-20261015",
+  "created_at": "2026-10-14T20:48:57.000Z",
+  "updated_at": "2026-10-14T20:49:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "libero",
+    "inverse-dynamics",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7710636955,
+  "storage_human": "7.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Blackstone's Statutes on Intellectual Property",
+      "url": "https://global.oup.com/academic/product/blackstones-statutes-on-intellectual-property-9780198971320",
+      "snippet": "Titles in the Blackstone's Statutes series have an unrivalled tradition of trust and quality. They provide students with an expertly …"
+    },
+    {
+      "title": "Blackstone's statutes on intellectual property - Archive.org",
+      "url": "https://archive.org/details/blackstonesstatu0003unse",
+      "snippet": "No suitable files to display here. PDF access not available for this item."
+    },
+    {
+      "title": "Blackstone's statutes on intellectual property - Archive.org",
+      "url": "https://archive.org/details/blackstonesstatu0000unse_y4s3",
+      "snippet": "Dec 10, 2020 · This volume gives coverage of UK and international intellectual property law, containing all the up-to-date legislation …"
+    },
+    {
+      "title": "Blackstone's Statutes on Intellectual Property - Google Books",
+      "url": "https://books.google.com/books/about/Blackstone_s_Statutes_on_Intellectual_Pr.html?id=164iBAAAQBAJ",
+      "snippet": "Blackstone's Statutes have a 25-year tradition of trust and quality unrivalled by other statute books, and a rock-solid reputation for …"
+    },
+    {
+      "title": "Blackstone's Statutes on Intellectual Property - Google Books",
+      "url": "https://books.google.com/books/about/Blackstone_s_Statutes_on_Intellectual_Pr.html?id=TpnSDAAAQBAJ",
+      "snippet": "Blackstone's Statutes have an unrivalled tradition of trust and quality, and a rock-solid reputation for accuracy, reliability, and …"
+    }
+  ]
+}

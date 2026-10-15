@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "jchann00/connectailab-rl-jcan-v2-teacher",
+  "slug": "jchann00-connectailab-rl-jcan-v2-teacher",
+  "author": "jchann00",
+  "url": "https://huggingface.co/jchann00/connectailab-rl-jcan-v2-teacher",
+  "created_at": "2026-10-15T01:27:39.000Z",
+  "updated_at": "2026-10-15T01:27:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "numpy",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "numpy",
+    "connect-ai-lab",
+    "deep-reinforcement-learning",
+    "gymnasium",
+    "connect-company",
+    "connect-tycoon",
+    "jev",
+    "jev-style",
+    "reinforcement-learning",
+    "ppo",
+    "decision-making",
+    "prefrontal-cortex",
+    "korean",
+    "ko",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kiodo/connectailab-rl-jay-v1-teacher at main - Hugging Face",
+      "url": "https://huggingface.co/kiodo/connectailab-rl-jay-v1-teacher/tree/main",
+      "snippet": "Instructions to use kiodo/connectailab-rl-jay-v1-teacher with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries jev-style How to use kiodo/connectailab-rl-jay-v1-teacher with jev-style:"
+    },
+    {
+      "title": "jchann00 (진철) - Hugging Face",
+      "url": "https://huggingface.co/jchann00/models",
+      "snippet": "jchann00&#x27;s models1 Sort: Recently updated jchann00/dama-aibrain Image-Text-to-Text • 5B•Updated about 22 hours ago• 29"
+    },
+    {
+      "title": "CONNECT AI LAB - YouTube",
+      "url": "https://www.youtube.com/@CONNECT-AI-LAB",
+      "snippet": "Transforming Lives Through AI Education. I&#x27;m Jay, your AI mentor. Learn AI, build real projects, and put your skills to work. Hands-on lessons primarily in Korean. Learn AI foundations, build ..."
+    },
+    {
+      "title": "GitHub - nottombrown/rl-teacher: Code for Deep RL from Human ...",
+      "url": "https://github.com/nottombrown/rl-teacher",
+      "snippet": "Extensions to this work rl-teacher-atari by (@raelifin) supports atari environments, and uses a red-black tree to more efficiently find an ordering of human preferrences over clips."
+    },
+    {
+      "title": "JAY | Connect AI LAB (@aimentorjay) • Instagram photos and videos",
+      "url": "https://www.instagram.com/aimentorjay/",
+      "snippet": "270K Followers, 3 Following, 81 Posts - JAY | Connect AI LAB (@aimentorjay) on Instagram: \"AI educator 👨‍🎓학사 City University of Newyork Baruch -Data Science 👨‍🎓 석사 Illinois Tech - Data Science\""
+    }
+  ]
+}

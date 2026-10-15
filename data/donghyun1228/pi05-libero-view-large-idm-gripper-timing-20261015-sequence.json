@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Donghyun1228/pi05-libero-view-large-idm-gripper-timing-20261015-sequence",
+  "slug": "donghyun1228-pi05-libero-view-large-idm-gripper-timing-20261015-sequence",
+  "author": "Donghyun1228",
+  "url": "https://huggingface.co/Donghyun1228/pi05-libero-view-large-idm-gripper-timing-20261015-sequence",
+  "created_at": "2026-10-14T22:33:15.000Z",
+  "updated_at": "2026-10-14T22:33:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "libero",
+    "pi05",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5907211292,
+  "storage_human": "5.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - stechdrive/Insta360Convert-GUI: GUI tool to extract multiple ...",
+      "url": "https://github.com/stechdrive/Insta360Convert-GUI",
+      "snippet": "GUI tool to extract multiple perspective views (pitch, yaw, FOV) from 360° equirectangular videos as MP4 clips or image sequences, …"
+    },
+    {
+      "title": "GitHub - rabejens/insta360-gpx-extract: Insta360 GPX Extract Tool",
+      "url": "https://github.com/rabejens/insta360-gpx-extract",
+      "snippet": "Insta360 GPX Extract Tool. Contribute to rabejens/insta360-gpx-extract development by creating an account on GitHub."
+    },
+    {
+      "title": "insta_hack.py · GitHub",
+      "url": "https://gist.github.com/eteamin/78a7753e2555275c03bab199c8cc7022",
+      "snippet": "Sep 21, 2017 · GitHub Gist: instantly share code, notes, and snippets."
+    },
+    {
+      "title": "请问Insta 360影石创新这家公司加班强度如何？ - 知乎",
+      "url": "https://www.zhihu.com/question/436058082",
+      "snippet": "请问Insta 360影石创新这家公司加班强度如何？"
+    },
+    {
+      "title": "insta 360X5跟大疆的pocket 3有什么不同? - 知乎",
+      "url": "https://www.zhihu.com/question/1900410312873738986",
+      "snippet": "insta 360X5跟大疆的pocket 3有什么不同? 看见美国新乡的人凌晨三点排队买insta 360X5，但是，没听说过他们排队买大疆的pocket …"
+    }
+  ]
+}

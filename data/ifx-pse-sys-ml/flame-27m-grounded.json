@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "ifx-pse-sys-ml/flame-27m-grounded",
+  "slug": "ifx-pse-sys-ml-flame-27m-grounded",
+  "author": "ifx-pse-sys-ml",
+  "url": "https://huggingface.co/ifx-pse-sys-ml/flame-27m-grounded",
+  "created_at": "2026-10-14T22:19:30.000Z",
+  "updated_at": "2026-10-14T22:19:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nexus",
+    "text-generation",
+    "small-language-model",
+    "grounded-qa",
+    "vlm-decoder",
+    "visual-question-answering",
+    "hallucination-mitigation",
+    "conversational",
+    "custom_code",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27125248,
+  "parameters_human": "27.1M",
+  "storage_bytes": 108510760,
+  "storage_human": "109 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ifx-pse-sys-ml/flame-27m-base · Hugging Face",
+      "url": "https://huggingface.co/ifx-pse-sys-ml/flame-27m-base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ifx-pse-sys-ml/flame-27m-instruct at main - Hugging Face",
+      "url": "https://huggingface.co/ifx-pse-sys-ml/flame-27m-instruct/tree/main",
+      "snippet": "ifx-pse-sys-ml / flame-27m-instruct like 0 Follow SYSML 5 Text Generation Transformers Safetensors English nexus small-language-model instruct smoltalk conversational custom_code License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Flame 27M Instruct by ifx-pse-sys-ml - llm-explorer.com",
+      "url": "https://llm-explorer.com/model/ifx-pse-sys-ml%2Fflame-27m-instruct,6hFooSSUmfu1BvirMShJ4H",
+      "snippet": "Flame 27M Instruct is an open-source 27m LLM by ifx-pse-sys-ml. VRAM 0.1GB, 2K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "soubhiksanyal/FLAME_PyTorch — heatdrop",
+      "url": "https://heatdrop.ai/repo/soubhiksanyal/FLAME_PyTorch",
+      "snippet": "This repo puts the FLAME 3D head model into PyTorch, giving deep-learning pipelines a differentiable face with a working jaw."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 935 AI models across 628 benchmarks, with 221 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    }
+  ]
+}

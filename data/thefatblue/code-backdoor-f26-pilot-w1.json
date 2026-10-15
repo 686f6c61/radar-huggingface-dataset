@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "TheFatBlue/code-backdoor-f26-pilot-w1",
+  "slug": "thefatblue-code-backdoor-f26-pilot-w1",
+  "author": "TheFatBlue",
+  "url": "https://huggingface.co/TheFatBlue/code-backdoor-f26-pilot-w1",
+  "created_at": "2026-10-14T22:16:13.000Z",
+  "updated_at": "2026-10-14T22:16:16.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": "summarization",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "t5",
+    "code",
+    "python",
+    "codet5",
+    "course-competition",
+    "summarization",
+    "base_model:Salesforce/codet5-base",
+    "base_model:finetune:Salesforce/codet5-base",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 222882048,
+  "parameters_human": "222.9M",
+  "storage_bytes": 891564537,
+  "storage_human": "892 MB",
+  "base_model": "Salesforce/codet5-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Claude Code Helps Ransomware Operator Steal LDAP Passwords, Backdoor ...",
+      "url": "https://cybersecuritynews.com/claude-code-helps-ransomware-operator/",
+      "snippet": "A suspected affiliate of The Gentlemen ransomware-as-a-service operation used Anthropic&#x27;s Claude Code to drive nearly every stage of an intrusion, from breaching internet-exposed VPN appliances to stealing domain credentials and exfiltrating live SQL databases."
+    },
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "China warns of &#x27;security backdoor&#x27; in Anthropic AI coding tool",
+      "url": "https://www.channelnewsasia.com/east-asia/china-anthropic-claude-code-ai-backdoor-security-alert-6240476",
+      "snippet": "The alleged backdoor could allow the software to \"transmit sensitive information\", including users&#x27; locations and identity-related identifiers, back to Anthropic&#x27;s servers without users&#x27; consent."
+    },
+    {
+      "title": "2026 AI Model Radar: GPT-5.6, Gemini 3.7 Flash, Fable 5 & GLM-5.2 ...",
+      "url": "https://qcode.cc/en/ai-model-radar-2026",
+      "snippet": "The 2026 AI Model Radar GPT-6 Astra, Claude Fable 5.1, DeepSeek V4.1 Flash, Gemini 3.8 Flash and more — which models are live, which (such as Gemini 4 Pro) are still rumour, which are gated, and how to be first on them when they open."
+    },
+    {
+      "title": "The Claude Code Backdoor Controversy: From Hidden Markers to the NVDB ...",
+      "url": "https://merchmindai.net/blog/en/post/claude-code-backdoor-nvdb-alert-timeline",
+      "snippet": "A full timeline of the Claude Code backdoor controversy from late June to July 8, 2026, covering the reverse-engineering claims, Hacker News backlash, Alibaba&#x27;s response, and China&#x27;s NVDB alert."
+    }
+  ]
+}

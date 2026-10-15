@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "kmedicos/connectailab-rl-youngsuk-v1-teacher",
+  "slug": "kmedicos-connectailab-rl-youngsuk-v1-teacher",
+  "author": "kmedicos",
+  "url": "https://huggingface.co/kmedicos/connectailab-rl-youngsuk-v1-teacher",
+  "created_at": "2026-10-14T21:02:41.000Z",
+  "updated_at": "2026-10-14T21:02:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "numpy",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "numpy",
+    "connect-ai-lab",
+    "deep-reinforcement-learning",
+    "gymnasium",
+    "connect-company",
+    "connect-tycoon",
+    "jev",
+    "jev-style",
+    "reinforcement-learning",
+    "ppo",
+    "decision-making",
+    "prefrontal-cortex",
+    "korean",
+    "ko",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kyoungsim/connectailab-rl-jay-v1-teacher · Hugging Face",
+      "url": "https://huggingface.co/kyoungsim/connectailab-rl-jay-v1-teacher",
+      "snippet": "Instructions to use kyoungsim/connectailab-rl-jay-v1-teacher with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries jev-style How to use kyoungsim/connectailab-rl-jay-v1-teacher with jev-style:"
+    },
+    {
+      "title": "WonseokJayJung/connectailab-rl-jay-v1 · Hugging Face",
+      "url": "https://huggingface.co/WonseokJayJung/connectailab-rl-jay-v1",
+      "snippet": "WonseokJayJung / connectailab-rl-jay-v1 Like 3 Reinforcement Learning MLX Korean deep-reinforcement-learning grpo decision-making gymnasium connect-tycoon connect-ai-lab connectailab lora qwen3.5 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "CONNECT AI LAB - YouTube",
+      "url": "https://www.youtube.com/@CONNECT-AI-LAB",
+      "snippet": "Transforming Lives Through AI Education. I&#x27;m Jay, your AI mentor. Learn AI, build real projects, and put your skills to work. Hands-on lessons primarily in Korean. Learn AI foundations, build ..."
+    },
+    {
+      "title": "connectailab/README.md at main · jsunsheep/connectailab",
+      "url": "https://github.com/jsunsheep/connectailab/blob/main/README.md",
+      "snippet": "커넥트ai. Contribute to jsunsheep/connectailab development by creating an account on GitHub."
+    },
+    {
+      "title": "STAR: Similarity-guided Teacher-Assisted Refinement for Super-Tiny...",
+      "url": "https://openreview.net/forum?id=uU96luC4dp",
+      "snippet": "Remarkably, our 0.6B STAR model achieves the best performance among all open models under 1B, surpassing even several well-known open models at a larger scale. STAR demonstrates a training framework that distills capabilities of LLMs into super-tiny models, paving the way for powerful, accessible, and efficient AI agents."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "Flowcut",
   "url": "https://huggingface.co/Flowcut/data",
   "created_at": "2026-10-13T22:08:28.000Z",
-  "updated_at": "2026-10-13T22:09:14.000Z",
+  "updated_at": "2026-10-14T11:24:45.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -17,12 +17,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 24,
   "trending_score": 0,
-  "parameters": null,
-  "parameters_human": null,
-  "storage_bytes": 3988449579,
-  "storage_human": "4.0 GB",
+  "parameters": 625781265,
+  "parameters_human": "625.8M",
+  "storage_bytes": 4179744914,
+  "storage_human": "4.2 GB",
   "base_model": null,
   "formats": [
     "gguf"

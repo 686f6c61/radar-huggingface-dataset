@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "wq2012/univ_conformer_small_pfas",
+  "slug": "wq2012-univ_conformer_small_pfas",
+  "author": "wq2012",
+  "url": "https://huggingface.co/wq2012/univ_conformer_small_pfas",
+  "created_at": "2026-10-15T01:37:49.000Z",
+  "updated_at": "2026-10-15T01:37:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "flaxspeaker",
+  "languages": [],
+  "tags": [
+    "flaxspeaker",
+    "jax",
+    "safetensors",
+    "audio",
+    "speaker-verification",
+    "speaker-recognition",
+    "speaker-embeddings",
+    "flax",
+    "conformer",
+    "extended_set_softmax",
+    "pfas",
+    "audio-classification",
+    "dataset:librispeech_asr",
+    "dataset:cnceleb",
+    "dataset:voxceleb",
+    "arxiv:1710.10467",
+    "arxiv:2104.01989",
+    "arxiv:2202.12163",
+    "arxiv:2203.05642",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2162184,
+  "parameters_human": "2.2M",
+  "storage_bytes": 17314738,
+  "storage_human": "17 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wq2012/personal-vad-v2-conformer-unified · Hugging Face",
+      "url": "https://huggingface.co/wq2012/personal-vad-v2-conformer-unified",
+      "snippet": "wq2012 / personal-vad-v2-conformer-unified Like 0 Voice Activity Detection LiteRT Safetensors facebook/multilingual_librispeech personal-vad audio speaker-conditioning conformer lstm tensorflow arxiv:1908.04284 arxiv:2204.03793 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Personal VAD 2.0 — E5 Unified Enrolled & Enrollment-Less Causal Conformer ..."
+    },
+    {
+      "title": "pubmed.ncbi.nlm.nih.gov",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36850973/",
+      "snippet": "pubmed.ncbi.nlm.nih.gov"
+    },
+    {
+      "title": "Towards smart PFAS management: Integrating artificial intelligence in ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0304389425038555",
+      "snippet": "Artificial intelligence (AI) and machine learning (ML) are increasingly integrated into Per- and polyfluoroalkyl substances (PFAS) research; however, the field remains fragmented with substantial variation in modeling objectives. This review provides one of the most comprehensive and detailed syntheses to date of AI/ML methods across the PFAS contamination management pipeline, comparing input ..."
+    },
+    {
+      "title": "GitHub - CultureBotAI/PFAS-AI",
+      "url": "https://github.com/CultureBotAI/PFAS-AI",
+      "snippet": "This project develops an automated, ML-enabled data pipeline for PFAS biodegradation research, focusing on the identification and characterization of microorganisms capable of degrading per- and polyfluoroalkyl substances (PFAS). The pipeline integrates multiple biological databases and machine learning approaches to design optimal microbial consortia for PFAS remediation."
+    },
+    {
+      "title": "An artificial intelligence platform for automated PFAS subgroup ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0048969724013688",
+      "snippet": "In this study, we presented PFAS-Atlas, an artificial intelligence-based platform containing a rule-based automatic classification system and a machine learning-based grouping model."
+    }
+  ]
+}

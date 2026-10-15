@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "stefo0/microduck-roller-es1",
+  "slug": "stefo0-microduck-roller-es1",
+  "author": "stefo0",
+  "url": "https://huggingface.co/stefo0/microduck-roller-es1",
+  "created_at": "2026-10-15T00:57:15.000Z",
+  "updated_at": "2026-10-15T00:57:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 793749,
+  "storage_human": "793749 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "stefo0/microduck-roller-es1 · Hugging Face",
+      "url": "https://huggingface.co/stefo0/microduck-roller-es1",
+      "snippet": "Instructions to use stefo0/microduck-roller-es1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Microduck How to use stefo0/microduck-roller-es1 with Microduck: # Replace SLOT with the slot specified in the model card (walk, stand, sitstand, ground_pick, kick_left, kick_right, roulade). sudo robotctl policy load SLOT stefo0/microduck ..."
+    },
+    {
+      "title": "GitHub - pollen-robotics/microduck: A Tiny biped duck robot",
+      "url": "https://github.com/pollen-robotics/microduck",
+      "snippet": "A Tiny biped duck robot 🦆. Contribute to pollen-robotics/microduck development by creating an account on GitHub."
+    },
+    {
+      "title": "Microduck - A tiny biped robot you can teach new tricks | Pollen Robotics",
+      "url": "https://pollen-robotics.com/microduck/",
+      "snippet": "Microduck is a 25 cm biped robot with 15 motors, a camera, LiDAR and a grasping beak. Playable out of the box, and its open-source stack lets you train new behaviours in simulation and run them on the robot. Pre-order at $399."
+    },
+    {
+      "title": "MicroduckHub — Microduck policy exchange",
+      "url": "https://microduckhub.com/",
+      "snippet": "Browse every RL policy your Pollen Robotics Microduck knows — shipped behaviors and community retrains from the Hugging Face Hub — plus the MCP server that lets any AI agent drive the duck."
+    },
+    {
+      "title": "Microduck Robot — 3D Models (STL) - GitHub",
+      "url": "https://github.com/boris721/microduck-3d",
+      "snippet": "This reads the MJCF transform data (position + quaternion for each body/geom) and applies it to each STL, producing: microduck_combined.stl (~9 MB, 188K triangles) microduck_combined_rollers.stl (~9 MB, 191K triangles)"
+    }
+  ]
+}

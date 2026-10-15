@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Scicom-intl/SOTA-MOS",
+  "slug": "scicom-intl-sota-mos",
+  "author": "Scicom-intl",
+  "url": "https://huggingface.co/Scicom-intl/SOTA-MOS",
+  "created_at": "2026-09-28T05:19:37.000Z",
+  "updated_at": "2026-10-14T23:54:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "audio",
+    "speech",
+    "mos",
+    "speech-quality-assessment",
+    "audiomos",
+    "sampling-rate",
+    "arxiv:2506.21951",
+    "arxiv:2509.01336",
+    "arxiv:2409.09305",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2543621058,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Scicom-AI-Enterprise-Organization/SOTA-MOS: Building SOTA ...",
+      "url": "https://github.com/Scicom-AI-Enterprise-Organization/SOTA-MOS",
+      "snippet": "Building SOTA automatic MOS. Contribute to Scicom-AI-Enterprise-Organization/SOTA-MOS development by creating an account on GitHub."
+    },
+    {
+      "title": "Scicom-intl/HighRateMOS-VoiceMOS2025 · Hugging Face",
+      "url": "https://huggingface.co/Scicom-intl/HighRateMOS-VoiceMOS2025",
+      "snippet": "SOTA-MOS predicts the mean opinion score (1-5) of synthetic speech as listeners rate it in a test that mixes sampling rates. It is built for AudioMOS Challenge 2025 Track 3. Code, training and every experiment: Scicom-AI-Enterprise-Organization/SOTA-MOS."
+    },
+    {
+      "title": "Scicom AI Enterprise Organization - GitHub",
+      "url": "https://github.com/Scicom-AI-Enterprise-Organization",
+      "snippet": "Scicom (MSC) Berhad AI Enterprise. Scicom AI Enterprise Organization has 46 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Scicom-intl (Scicom (MSC) BHD) - Hugging Face",
+      "url": "https://huggingface.co/Scicom-intl/collections",
+      "snippet": "Org profile for Scicom (MSC) BHD on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Releases: Scicom-AI-Enterprise-Organization/SOTA-MOS - GitHub",
+      "url": "https://github.com/Scicom-AI-Enterprise-Organization/SOTA-MOS/releases",
+      "snippet": "Building SOTA automatic MOS. Contribute to Scicom-AI-Enterprise-Organization/SOTA-MOS development by creating an account on GitHub."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "kinokozusi/geniac_prize_2026_stage1_v3",
+  "slug": "kinokozusi-geniac_prize_2026_stage1_v3",
+  "author": "kinokozusi",
+  "url": "https://huggingface.co/kinokozusi/geniac_prize_2026_stage1_v3",
+  "created_at": "2026-10-14T22:43:25.000Z",
+  "updated_at": "2026-10-15T00:03:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "dataset:openai/gsm8k",
+    "dataset:allenai/tulu-3-sft-personas-instruction-following",
+    "base_model:Qwen/Qwen3-4B-Base",
+    "base_model:adapter:Qwen/Qwen3-4B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3-4B-Base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GENIAC / Ministry of Economy, Trade and Industry (METI)",
+      "url": "https://www.meti.go.jp/english/policy/mono_info_service/geniac/index.html",
+      "snippet": "The Ministry of Economy, Trade and Industry (METI) and New Energy and Industrial Technology Development Organization (NEDO) has launched the Generative AI Accelerator Challenge (GENIAC) to raise the level of platform model development capability in Japan and to encourage companies and others to be creative."
+    },
+    {
+      "title": "GENIAC（METI/経済産業省）",
+      "url": "https://geniac.meti.go.jp/",
+      "snippet": "経済産業省では、日本国内の基盤モデル開発力を底上げし、また企業等の創意工夫を促すため、Generative AI Accelerator Challenge(GENIAC)を立ち上げました。"
+    },
+    {
+      "title": "Geniac-prize<Nedo懸賞金活用型プログラム>",
+      "url": "https://geniac-prize.nedo.go.jp/",
+      "snippet": "「GENIAC-PRIZE」では、生成AIサービスによる解決が望まれるテーマにおける具体的なニーズに基づき、開発・実証した生成AIアプリケーションやその実証成果を応募いただき、成果に応じた懸賞金を授与します。"
+    },
+    {
+      "title": "GENIAC-PRIZE 2026 to be Launched as an AI Contest ... - 経済産業省",
+      "url": "https://www.meti.go.jp/english/press/2026/0529_002.html",
+      "snippet": "The GENIAC-PRIZE 2026 is inviting ambitious initiatives from corporations, students, and other participants for two themes: work process reform utilizing AI to help resolve labor shortages for essential workers, and the development of an open-source platform model to foster developers for physical AI (targeting students)."
+    },
+    {
+      "title": "METI - Ministry of Economy, Trade and Industry [...] (via Public ...",
+      "url": "https://ebs.publicnow.com/view/C5224EE735052B9E7A33C46C4D459BCE0A9B03A4",
+      "snippet": "The GENIAC-PRIZE 2026 is inviting ambitious initiatives from corporations, students, and other participants for two themes: work process reform utilizing AI to help resolve labor shortages for essential workers, and the development of an open-source platform model to foster developers for physical AI (targeting students)."
+    }
+  ]
+}

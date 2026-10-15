@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "TheStageAI/LFM2.5-VL-450M",
+  "slug": "thestageai-lfm2-5-vl-450m",
+  "author": "TheStageAI",
+  "url": "https://huggingface.co/TheStageAI/LFM2.5-VL-450M",
+  "created_at": "2026-06-24T22:21:51.000Z",
+  "updated_at": "2026-10-14T23:44:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6130424884,
+  "storage_human": "6.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LiquidAI/LFM2.5-VL-450M · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-VL-450M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LFM2.5-VL-450M - Liquid Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm25-vl-450m",
+      "snippet": "Compact 450M vision-language model with enhanced performance for edge deployment ← Back to Vision Models LFM2.5-VL-450M is Liquid AI&#x27;s smallest vision-language model, building on LFM2-VL-450M with extended reinforcement learning for improved performance while maintaining the same compact deployment footprint."
+    },
+    {
+      "title": "LFM2.5-VL-450M: Structured Visual Intelligence, Edge to Cloud",
+      "url": "https://www.liquid.ai/blog/lfm2-5-vl-450m",
+      "snippet": "Today, we release LFM2.5-VL-450M, an improved version of LFM2-VL-450M with grounding capabilities, better instruction following, and function calling support. The result is a compact model that turns image streams into structured, actionable outputs in real time, even on edge hardware."
+    },
+    {
+      "title": "AndroidSDK/docs/vlm.md at main · TheStageAI/AndroidSDK",
+      "url": "https://github.com/TheStageAI/AndroidSDK/blob/main/docs/vlm.md",
+      "snippet": "VLM (Vision-Language Model) On-device image + text → text. TheStageVLM (LFM2.5-VL) runs the vision encoder and the language decoder entirely on-device — hand it an image and a prompt, get back a text answer. Batch and token-by-token streaming share the same response shape as the LLM path."
+    },
+    {
+      "title": "VLM (Vision-Language Model) - docs.thestage.ai",
+      "url": "https://docs.thestage.ai/apple_sdk/docs/source/apple_sdk.vlm.html",
+      "snippet": "In this page ¶ Here we will cover the following topics: Supported models: LFM2.5-VL-450M and what it does well. Quick start: caption a photo — Swift and Flutter side by side. Ask about an image: the call, how to pass images, and the generation knobs. Result object: LLMResult and the latency breakdown. Usage Guides: receipts to JSON, accessibility captions, before/after comparison, a slow ..."
+    }
+  ]
+}

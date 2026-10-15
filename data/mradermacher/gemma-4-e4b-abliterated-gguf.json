@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Gemma-4-E4B-Abliterated-GGUF",
+  "slug": "mradermacher-gemma-4-e4b-abliterated-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Gemma-4-E4B-Abliterated-GGUF",
+  "created_at": "2026-04-24T11:33:53.000Z",
+  "updated_at": "2026-10-14T22:43:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:DuoNeural/Gemma-4-E4B-Abliterated",
+    "base_model:quantized:DuoNeural/Gemma-4-E4B-Abliterated",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 397,
+  "trending_score": 0,
+  "parameters": 7518069290,
+  "parameters_human": "7.52B",
+  "storage_bytes": 75307806080,
+  "storage_human": "75.3 GB",
+  "base_model": "DuoNeural/Gemma-4-E4B-Abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Language: english » nhentai",
+      "url": "https://nhentai.net/language/english/",
+      "snippet": "Read 148,352 galleries with language english on nhentai, a hentai doujinshi and manga reader."
+    },
+    {
+      "title": "AsmHentai - Free Hentai Manga and Doujinshi Reader",
+      "url": "https://asmhentai.com/?Home",
+      "snippet": "Latest free hentai manga and doujinshi. Page 1 - AsmHentai has over 400,000 porn galleries for you to enjoy."
+    },
+    {
+      "title": "nhentai: hentai doujinshi and manga",
+      "url": "https://nhentai.net/?lang=en",
+      "snippet": "nhentai is a free hentai manga and doujinshi reader with over 650,000 galleries to read and download."
+    },
+    {
+      "title": "HentaiFox - Free Hentai Manga, Doujinshi and Anime Porn",
+      "url": "https://hentaifox.com/",
+      "snippet": "Enjoy free hentai manga, adult doujinshi, xxx comics and anime porn. Our database grows daily."
+    },
+    {
+      "title": "3Hentai - Hentai Manga et Doujins XXX en ligne gratuit",
+      "url": "https://fr.3hentai.net/",
+      "snippet": "Des centaines de milliers de hentai avec des nouveautés chaque jour sur 3Hentai. Plus de 650 000 manga hentai sur notre site …"
+    }
+  ]
+}

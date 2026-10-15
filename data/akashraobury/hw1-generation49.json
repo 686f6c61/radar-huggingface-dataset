@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Akashraobury/hw1-generation49",
+  "slug": "akashraobury-hw1-generation49",
+  "author": "Akashraobury",
+  "url": "https://huggingface.co/Akashraobury/hw1-generation49",
+  "created_at": "2026-10-14T21:01:50.000Z",
+  "updated_at": "2026-10-14T21:01:57.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hybrid",
+    "pytorch",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Akashraobury (Akash Rao) - Hugging Face",
+      "url": "https://huggingface.co/Akashraobury",
+      "snippet": "AI & ML interests ML in healthcare — yes, it&#x27;s as hard as it sounds"
+    },
+    {
+      "title": "AI Models - AkashChat",
+      "url": "https://chat.akash.network/models/",
+      "snippet": "Explore all available AI models on AkashChat. Chat with leading open source AI models powered by the Akash Supercloud."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Qwen, Mistral AI, Moonshot AI, Z.ai, MiniMax, NVIDIA, Microsoft AI, Cohere, Xiaomi, and other prominent AI labs. The newest-first tables show each release date, provider, and model type. Dates use the earliest meaningful availability stage for each entry. Preview access ..."
+    },
+    {
+      "title": "AI Model Downloads - 494 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "MLLM-Poster-Generation-and-Retrieval-Augmented-Generation/hw1 ... - GitHub",
+      "url": "https://github.com/solitude6060/MLLM-Poster-Generation-and-Retrieval-Augmented-Generation/tree/main/hw1_D13922024_code",
+      "snippet": "NTU CSIE AI (114-2) HW1 — MLLM product-poster generation (Qwen3-VL-2B + SD1.5 + IP-Adapter) and multi-granularity RAG page retrieval (HyDE + BM25 + VLM captions + synth-Q) with an Ollama/MinerU ensemble extension reaching ≈0.84 on Kaggle public LB."
+    }
+  ]
+}

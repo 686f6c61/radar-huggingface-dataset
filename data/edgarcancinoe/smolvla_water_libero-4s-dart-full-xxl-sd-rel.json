@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "edgarcancinoe/smolvla_water_libero-4s-dart-full-xxl-sd-rel",
+  "slug": "edgarcancinoe-smolvla_water_libero-4s-dart-full-xxl-sd-rel",
+  "author": "edgarcancinoe",
+  "url": "https://huggingface.co/edgarcancinoe/smolvla_water_libero-4s-dart-full-xxl-sd-rel",
+  "created_at": "2026-10-14T21:30:13.000Z",
+  "updated_at": "2026-10-14T23:59:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:edgarcancinoe/water_pour_dart_full-xxl",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 604934176,
+  "parameters_human": "604.9M",
+  "storage_bytes": 2436109408,
+  "storage_human": "2.4 GB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "edgarcancinoe (Jose Edgar Hernandez Cancino Estrada)",
+      "url": "https://huggingface.co/edgarcancinoe",
+      "snippet": "User profile of Jose Edgar Hernandez Cancino Estrada on Hugging Face"
+    },
+    {
+      "title": "bicmol/smolvla-libero · Hugging Face",
+      "url": "https://huggingface.co/bicmol/smolvla-libero",
+      "snippet": "Model Card for smolvla SmolVLA is a compact, efficient vision-language-action model that achieves competitive performance at reduced computational costs and can be deployed on consumer-grade hardware. This policy has been trained and pushed to the Hub using LeRobot. See the full documentation at LeRobot Docs."
+    },
+    {
+      "title": "smolvla_libero · Model · Inferix",
+      "url": "https://inferix.co/models/HuggingFaceVLA/smolvla_libero",
+      "snippet": "SmolVLA is a compact, efficient vision-language-action model that achieves competitive performance at reduced computational costs and can be deployed on consumer-grade hardware."
+    },
+    {
+      "title": "SmolVLA LIBERO: Data Requirements & Dataset Fit · OpenBot.ai",
+      "url": "https://openbot.ai/models/smolvla-libero",
+      "snippet": "SmolVLA LIBERO by lerobot is a VLA model. Data requirements include actions, language. Review official artifacts, evaluation evidence, and dataset fit."
+    },
+    {
+      "title": "smolvla_libero by Huggingfacevla: Open-Weight Model",
+      "url": "https://savrn.com/models/smolvla-libero",
+      "snippet": "smolvla_libero from Huggingfacevla, 605M parameters: license, access terms, disclosed training data, reported evaluations and the publisher&#x27;s download."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "vkroshchinhse/dl-2",
+  "slug": "vkroshchinhse-dl-2",
+  "author": "vkroshchinhse",
+  "url": "https://huggingface.co/vkroshchinhse/dl-2",
+  "created_at": "2026-10-14T20:47:27.000Z",
+  "updated_at": "2026-10-14T20:47:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33215625,
+  "parameters_human": "33.2M",
+  "storage_bytes": 132885604,
+  "storage_human": "133 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Downloads - 494 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=stable-diffusion",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchives.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

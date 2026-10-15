@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "danyalmalik/DeepSeek-R1-0528-Qwen3-8B-ONNX-WebGPU",
+  "slug": "danyalmalik-deepseek-r1-0528-qwen3-8b-onnx-webgpu",
+  "author": "danyalmalik",
+  "url": "https://huggingface.co/danyalmalik/DeepSeek-R1-0528-Qwen3-8B-ONNX-WebGPU",
+  "created_at": "2026-10-14T22:23:30.000Z",
+  "updated_at": "2026-10-14T22:30:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "qwen3",
+    "webgpu",
+    "quick-inference",
+    "base_model:deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
+    "base_model:quantized:deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5536178873,
+  "storage_human": "5.5 GB",
+  "base_model": "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B at main - Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DeepSeek-R1-0528-Qwen3-8B: Open-Source Reasoning LLM",
+      "url": "https://dev.co/ai/llms/deepseek-r1-0528-qwen3-8b",
+      "snippet": "DeepSeek-R1-0528-Qwen3-8B DeepSeek-R1-0528-Qwen3-8B is an 8.2B parameter open-source LLM distilled from DeepSeek-R1&#x27;s reasoning capabilities into Qwen3&#x27;s base model. It achieves strong performance on mathematics and coding benchmarks (AIME 2024: 86.0%, LiveCodeBench: 60.5%) while maintaining a compact footprint suitable for local deployment. MIT-licensed, ungated, and available on HuggingFace."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B — Free AI Model & API",
+      "url": "https://www.free-model.com/models/siliconflow/deepseek-ai-deepseek-r1-0528-qwen3-8b/",
+      "snippet": "DeepSeek R1 0528 distilled to Qwen3 8B, available free on SiliconFlow&#x27;s API. A compact reasoning model combining DeepSeek&#x27;s chain-of-thought training with Qwen3&#x27;s efficient 8B architecture — suitable for lightweight math and logic tasks. 33K context, 16K output. SiliconFlow&#x27;s API is OpenAI-compatible with strong low-latency performance in China. Free tier requires registration."
+    },
+    {
+      "title": "deepkseek-r1 • LM Studio",
+      "url": "https://lmstudio.ai/models/deepseek/deepseek-r1-0528-qwen3-8b",
+      "snippet": "DeepSeek-R1-0528-Qwen3-8B This is a distilled version of the DeepSeek-R1-0528 model, created by continuing the post-training process on the Qwen3 8B Base model using Chain-of-Thought (CoT) from DeepSeek-R1-0528. The model is designed to achieve state-of-the-art performance on reasoning tasks while being more efficient than larger models. On this model, they say: we distilled the chain-of ..."
+    }
+  ]
+}

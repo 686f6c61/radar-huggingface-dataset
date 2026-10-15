@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "nakamura196/ppocrv5-mobile-web-onnx",
+  "slug": "nakamura196-ppocrv5-mobile-web-onnx",
+  "author": "nakamura196",
+  "url": "https://huggingface.co/nakamura196/ppocrv5-mobile-web-onnx",
+  "created_at": "2026-10-14T23:31:58.000Z",
+  "updated_at": "2026-10-14T23:32:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "ocr",
+    "paddleocr",
+    "onnxruntime-web",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29347809,
+  "storage_human": "29 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nouvel ENT : Cybercollège devient Ma Classe 42",
+      "url": "https://leboisdelarive-loire.ent.auvergnerhonealpes.fr/le-college/actualite/nouvel-ent-cybercollege-devient-ma-classe-42-15236.htm",
+      "snippet": "Cet été, l’ENT « CyberCollège » a été transféré vers le projet Ma Classe en Auvergne-Rhône-Alpes, sous le nom maClasse42. Voici …"
+    },
+    {
+      "title": "Département de la Loire",
+      "url": "https://loire.ent.auvergnerhonealpes.fr/",
+      "snippet": "Deux parcours thématiques à explorer de manière ludique, au rythme de chacun autour de l'Intelligence artificielle et de la …"
+    },
+    {
+      "title": "- Accédez au portail de votre collège - Département de la Loire",
+      "url": "https://loire.ent.auvergnerhonealpes.fr/eleves-et-parents/accedez-au-portail-de-votre-college/",
+      "snippet": "Département de la Loire : c'est quoi une collectivité ? Par Equipe Cybercollège, publié le mercredi 12 février 2025 15:49 - Mis à jour …"
+    },
+    {
+      "title": "Connexion à Ma Classe 42 - Cyberbureau - Collège Michel Servet",
+      "url": "https://michel-servet-loire.ent.auvergnerhonealpes.fr/espace-infos/cyberbureau/connexion-a-ma-classe-42-29989.htm",
+      "snippet": "Pour les élèves, ils doivent aussi utiliser leur propre identifiant educonnect. En cas de perte, ils doivent le signaler à leur professeur …"
+    },
+    {
+      "title": "Région Auvergne-Rhône-Alpes",
+      "url": "https://www.ent.auvergnerhonealpes.fr/",
+      "snippet": "🌟 La Nuit de l’Orientation 2026 revient à Annecy ! Destiné aux collégiens, lycéens, étudiants et personnes en reconversion 🎓, cet …"
+    }
+  ]
+}

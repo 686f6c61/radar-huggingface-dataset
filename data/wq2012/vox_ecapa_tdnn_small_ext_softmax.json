@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "wq2012/vox_ecapa_tdnn_small_ext_softmax",
+  "slug": "wq2012-vox_ecapa_tdnn_small_ext_softmax",
+  "author": "wq2012",
+  "url": "https://huggingface.co/wq2012/vox_ecapa_tdnn_small_ext_softmax",
+  "created_at": "2026-10-15T01:38:25.000Z",
+  "updated_at": "2026-10-15T01:38:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "flaxspeaker",
+  "languages": [],
+  "tags": [
+    "flaxspeaker",
+    "jax",
+    "safetensors",
+    "audio",
+    "speaker-verification",
+    "speaker-recognition",
+    "speaker-embeddings",
+    "flax",
+    "ecapa_tdnn",
+    "extended_set_softmax",
+    "cosine",
+    "audio-classification",
+    "dataset:librispeech_asr",
+    "dataset:cnceleb",
+    "dataset:voxceleb",
+    "arxiv:1710.10467",
+    "arxiv:2104.01989",
+    "arxiv:2202.12163",
+    "arxiv:2203.05642",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1684416,
+  "parameters_human": "1.7M",
+  "storage_bytes": 13487317,
+  "storage_human": "13 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yangwang825/ecapa-tdnn-vox2 · Hugging Face",
+      "url": "https://huggingface.co/yangwang825/ecapa-tdnn-vox2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - TaoRuijie/ECAPA-TDNN: Unofficial reimplementation of ECAPA ...",
+      "url": "https://github.com/TaoRuijie/ECAPA-TDNN",
+      "snippet": "Unofficial reimplementation of ECAPA-TDNN for speaker recognition (EER=0.86 for Vox1_O when train only in Vox2) - TaoRuijie/ECAPA-TDNN"
+    },
+    {
+      "title": "GitHub - LKLQQ/ecapa_tdnn",
+      "url": "https://github.com/LKLQQ/ecapa_tdnn",
+      "snippet": "ECAPA-TDNN is introduced in 2020，achieves best results in voxceleb1 evaluation trials. Comparing to vanilla tdnn，ECAPA-TDNN appends SE-block + Res2Block + Attentive Stat Pooling. By increasing the channels and enlarge the model size, the performance improve a lot. paper：Brecht Desplanques, Jenthe Thienpondt, Kris Demuynck. Interspeech 2020."
+    },
+    {
+      "title": "[2005.07143] ECAPA-TDNN: Emphasized Channel Attention, Propagation and ...",
+      "url": "https://arxiv.org/abs/2005.07143",
+      "snippet": "This enables the network to focus on different subsets of frames during each of the channel&#x27;s statistics estimation. The proposed ECAPA-TDNN architecture significantly outperforms state-of-the-art TDNN based systems on the VoxCeleb test sets and the 2019 VoxCeleb Speaker Recognition Challenge."
+    },
+    {
+      "title": "HuShou-ZMZN/ECAPA_TDNN · Hugging Face",
+      "url": "https://huggingface.co/HuShou-ZMZN/ECAPA_TDNN",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

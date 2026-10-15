@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "todoculebra/coqui-1.5b-v6-q4f16_1-MLC",
+  "slug": "todoculebra-coqui-1-5b-v6-q4f16_1-mlc",
+  "author": "todoculebra",
+  "url": "https://huggingface.co/todoculebra/coqui-1.5b-v6-q4f16_1-MLC",
+  "created_at": "2026-10-14T23:40:37.000Z",
+  "updated_at": "2026-10-14T23:41:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlc-llm",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "tags": [
+    "mlc-llm",
+    "web-llm",
+    "puerto-rico",
+    "travel",
+    "en",
+    "es",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 868547584,
+  "storage_human": "869 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "todoculebra/coqui-1.5b-v1-q4f16_1-MLC · Hugging Face",
+      "url": "https://huggingface.co/todoculebra/coqui-1.5b-v1-q4f16_1-MLC",
+      "snippet": "Coquí 1.5B v1 — Todo Culebra&#x27;s offline travel brain (MLC weights) A fine-tune of Qwen2.5-1.5B-Instruct by Isla Tech LLC (Todo Culebra, Culebra, Puerto Rico), converted to the MLC / web-llm format so it runs in the browser on WebGPU with no internet. It answers travel questions about Culebra ..."
+    },
+    {
+      "title": "GitHub - coqui-ai/STT-models: Open models for Coqui STT",
+      "url": "https://github.com/coqui-ai/STT-models",
+      "snippet": "Open models for Coqui STT. Contribute to coqui-ai/STT-models development by creating an account on GitHub."
+    },
+    {
+      "title": "mlc-ai/Qwen2-1.5B-Instruct-q4f16_1-MLC · Hugging Face",
+      "url": "https://huggingface.co/mlc-ai/Qwen2-1.5B-Instruct-q4f16_1-MLC",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Releases: mlc-ai/binary-mlc-llm-libs - GitHub",
+      "url": "https://github.com/mlc-ai/binary-mlc-llm-libs/releases",
+      "snippet": "Contribute to mlc-ai/binary-mlc-llm-libs development by creating an account on GitHub."
+    },
+    {
+      "title": "Model Registry and Configuration | mlc-ai/mlc-llm | DeepWiki",
+      "url": "https://deepwiki.com/mlc-ai/mlc-llm/4.1-quantization-and-optimization",
+      "snippet": "This page documents the model registry system and configuration generation in MLC LLM. It covers the MODELS registry, the Model dataclass, ModelConfig classes, and the gen_config command that generates mlc-chat-config.json."
+    }
+  ]
+}

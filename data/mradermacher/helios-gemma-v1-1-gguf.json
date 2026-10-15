@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mradermacher/helios-gemma-v1.1-GGUF",
+  "slug": "mradermacher-helios-gemma-v1-1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/helios-gemma-v1.1-GGUF",
+  "created_at": "2026-04-24T11:15:37.000Z",
+  "updated_at": "2026-10-14T22:44:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:JustinFletcher-elevate/helios-gemma-v1.1",
+    "base_model:quantized:JustinFletcher-elevate/helios-gemma-v1.1",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 59,
+  "trending_score": 0,
+  "parameters": 12772912896,
+  "parameters_human": "12.77B",
+  "storage_bytes": 88982117216,
+  "storage_human": "89.0 GB",
+  "base_model": "JustinFletcher-elevate/helios-gemma-v1.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Assurance Habitation Etudiant - Dès 1,39 €/mois",
+      "url": "https://www.assurances-etudiants.com/assurance-logement-etudiant",
+      "snippet": "Je suis jeune actif, puis-je souscrire au contrat « assurance habitation étudiant » ? Oui, vous pouvez souscrire à cette offre si vous …"
+    },
+    {
+      "title": "Assurance Habitation Etudiant - Dès 1.38 €/mois - StudyAssur",
+      "url": "https://studyassur.com/fr/assurance-logement-etudiant-108.html",
+      "snippet": "Obtenez votre attestation d'assurance immédiate en quelques clics, au meilleur rapport prix/garanties du marché. Que vous soyez …"
+    },
+    {
+      "title": "Assurance habitation étudiant : comparez les meilleures offres 2026",
+      "url": "https://www.meilleurtaux.com/comparateur-assurance/assurance-habitation/logement/logement-etudiant.html",
+      "snippet": "Jul 8, 2026 · Une assurance multirisque habitation (MRH) étudiant vous offre des protections essentielles au-delà du minimum légal : …"
+    },
+    {
+      "title": "Assurance Habitation Étudiant - Dès 3,66€/mois - MAE",
+      "url": "https://www.mae.fr/contrats/assurance-habitation-etudiant",
+      "snippet": "Incendie, dégât des eaux, casse de la plaque de cuisson de la cuisine intégrée… un sinistre peut vite arriver et coûter cher. Parce …"
+    },
+    {
+      "title": "Assurance logement étudiant ou apprenti - MAAF",
+      "url": "https://www.maaf.fr/fr/assurance-habitation/assurance-logement-etudiant",
+      "snippet": "Vous avez entre 15 ans et 30 ans, vous êtes locataire d'un logement d'une surface inférieure à 70 m² MAAF a créé une offre …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Ngod-ung90/clip-retrieval",
+  "slug": "ngod-ung90-clip-retrieval",
+  "author": "Ngod-ung90",
+  "url": "https://huggingface.co/Ngod-ung90/clip-retrieval",
+  "created_at": "2026-10-15T01:25:34.000Z",
+  "updated_at": "2026-10-15T01:25:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rest - Python POST binary data - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/14365027/python-post-binary-data",
+      "snippet": "I am writing some code to interface with redmine and I need to upload some files as part of the process, but I am not sure how to do …"
+    },
+    {
+      "title": "A Comprehensive Guide to POST Binary Data in Python: From urllib2 …",
+      "url": "https://devgex.com/en/article/00032337",
+      "snippet": "Dec 1, 2025 · Abstract: This article delves into the technical details of uploading binary files via HTTP POST requests in Python."
+    },
+    {
+      "title": "Python POST binary data - iDiTect.com",
+      "url": "https://www.iditect.com/faq/python/python-post-binary-data.html",
+      "snippet": "\"Python requests POST binary data example\" Description: This query seeks an example of how to use the Python requests library to …"
+    },
+    {
+      "title": "python - Submitting binary data as a file via post request - Stack …",
+      "url": "https://stackoverflow.com/questions/61895082/submitting-binary-data-as-a-file-via-post-request",
+      "snippet": "May 19, 2020 · Since I'm downloading the file from a response, I want to avoid writing the response.contents to my local disk …"
+    },
+    {
+      "title": "Sending Binary Data with Python’s POST Method in Python 3",
+      "url": "https://dnmtechs.com/sending-binary-data-with-pythons-post-method-in-python-3/",
+      "snippet": "Feb 22, 2024 · In this article, we will explore how to send binary data with Python’s POST method in Python 3. Binary data refers to …"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Liam2333/control_v11p_sd15_openpose",
+  "slug": "liam2333-control_v11p_sd15_openpose",
+  "author": "Liam2333",
+  "url": "https://huggingface.co/Liam2333/control_v11p_sd15_openpose",
+  "created_at": "2026-10-14T22:54:10.000Z",
+  "updated_at": "2026-10-14T22:54:11.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "art",
+    "controlnet",
+    "stable-diffusion",
+    "controlnet-v1-1",
+    "image-to-image",
+    "arxiv:2302.05543",
+    "base_model:runwayml/stable-diffusion-v1-5",
+    "base_model:adapter:runwayml/stable-diffusion-v1-5",
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 361279120,
+  "parameters_human": "361.3M",
+  "storage_bytes": 4335709078,
+  "storage_human": "4.3 GB",
+  "base_model": "runwayml/stable-diffusion-v1-5",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "control_v11p_sd15_openpose: Image-to-Image model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/control-v11p-sd15-openpose-lllyasviel",
+      "snippet": "Overview control_v11p_sd15_openpose is a ControlNet model that guides Stable Diffusion v1.5 image generation using human pose keypoints extracted from reference images. Built by lllyasviel, this model learns spatial conditioning from OpenPose skeleton data, enabling pose-controlled image synthesis without fine-tuning the base diffusion model."
+    },
+    {
+      "title": "control_v11p_sd15_openpose — Image-to-Image Model",
+      "url": "https://modeldatabase.com/lllyasviel/control_v11p_sd15_openpose.html",
+      "snippet": "lllyasviel/control_v11p_sd15_openpose is an open source image-to-image model built with diffusers, 642,704 downloads."
+    },
+    {
+      "title": "lllyasviel/control_v11p_sd15_openpose · Hugging Face",
+      "url": "https://huggingface.co/lllyasviel/control_v11p_sd15_openpose",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "control_v11p_sd15_openpose: Image-to-Image model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/controlv11psd15openpose-lllyasviel",
+      "snippet": "Overview control_v11p_sd15_openpose is a ControlNet model developed by lllyasviel that conditions Stable Diffusion v1-5 using human pose estimation (OpenPose) keypoints. The model operates as a neural network structure that augments pretrained diffusion models with task-specific conditioning, enabling controlled image generation from both text prompts and pose skeleton inputs. This checkpoint ..."
+    },
+    {
+      "title": "control_v11p_sd15_openpose - v1.0 | Stable Diffusion 1.x ... - Civitai",
+      "url": "https://civitai.com/models/483162/controlv11psd15openpose",
+      "snippet": "The orginal openpose modules of ControlNet , by lllyasviel and T2I-Adapters , TencentARC Team"
+    }
+  ]
+}

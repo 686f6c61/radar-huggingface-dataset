@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Rand000mGuy/biancav3",
+  "slug": "rand000mguy-biancav3",
+  "author": "Rand000mGuy",
+  "url": "https://huggingface.co/Rand000mGuy/biancav3",
+  "created_at": "2026-10-14T20:43:16.000Z",
+  "updated_at": "2026-10-14T20:43:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 228806044,
+  "storage_human": "229 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rand000mGuy/biancat · Hugging Face",
+      "url": "https://huggingface.co/Rand000mGuy/biancat",
+      "snippet": "Instructions to use Rand000mGuy/biancat with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use Rand000mGuy/biancat with Diffusers: ... Notebooks Google Colab Kaggle Local AppsSettings Draw Things DiffusionBee biancat Download model"
+    },
+    {
+      "title": "Rand000mGuy - GitHub",
+      "url": "https://github.com/Rand000mGuy",
+      "snippet": "Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?!!",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "carolK by Rand000mGuy - v1 - Free AI LORA | Tensor.Art",
+      "url": "https://tensor.art/models/1024158992005354431/carolK-by-Rand000mGuy-v1",
+      "snippet": "Download carolK by Rand000mGuy - free LORA KREA_2 AI model on TENSOR. VIRTUAL CHARACTER, FEMALE CHARACTER, ORIGINAL CHARACTER. By Jhournee"
+    },
+    {
+      "title": "Free AI models — 34 you can use at no cost",
+      "url": "https://itsfree.ai/models/",
+      "snippet": "Every AI model with a free route: 34 models from 23 vendors, and exactly which providers hand each one to you for nothing."
+    }
+  ]
+}

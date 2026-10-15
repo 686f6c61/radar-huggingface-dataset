@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "wq2012/univ_conformer_small_ext_softmax",
+  "slug": "wq2012-univ_conformer_small_ext_softmax",
+  "author": "wq2012",
+  "url": "https://huggingface.co/wq2012/univ_conformer_small_ext_softmax",
+  "created_at": "2026-10-15T01:37:49.000Z",
+  "updated_at": "2026-10-15T01:37:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "flaxspeaker",
+  "languages": [],
+  "tags": [
+    "flaxspeaker",
+    "jax",
+    "safetensors",
+    "audio",
+    "speaker-verification",
+    "speaker-recognition",
+    "speaker-embeddings",
+    "flax",
+    "conformer",
+    "extended_set_softmax",
+    "cosine",
+    "audio-classification",
+    "dataset:librispeech_asr",
+    "dataset:cnceleb",
+    "dataset:voxceleb",
+    "arxiv:1710.10467",
+    "arxiv:2104.01989",
+    "arxiv:2202.12163",
+    "arxiv:2203.05642",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2029892,
+  "parameters_human": "2.0M",
+  "storage_bytes": 16255112,
+  "storage_human": "16 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wq2012/personal-vad-v2-conformer-unified · Hugging Face",
+      "url": "https://huggingface.co/wq2012/personal-vad-v2-conformer-unified",
+      "snippet": "wq2012 / personal-vad-v2-conformer-unified Like 0 Voice Activity Detection LiteRT Safetensors facebook/multilingual_librispeech personal-vad audio speaker-conditioning conformer lstm tensorflow arxiv:1908.04284 arxiv:2204.03793 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Personal VAD 2.0 — E5 Unified Enrolled & Enrollment-Less Causal Conformer ..."
+    },
+    {
+      "title": "conformer/conformer/model.py at main · sooftware/conformer",
+      "url": "https://github.com/sooftware/conformer/blob/main/conformer/model.py",
+      "snippet": "[Unofficial] PyTorch implementation of \"Conformer: Convolution-augmented Transformer for Speech Recognition\" (INTERSPEECH 2020) - conformer/conformer/model.py at main · sooftware/conformer"
+    },
+    {
+      "title": "GitHub - LuluW8071/Conformer: End-to-End Speech Recognition Training ...",
+      "url": "https://github.com/LuluW8071/Conformer",
+      "snippet": "This repository contains a complete implementation of the Conformer: Convolution-Augmented Transformer for Speech Recognition. It includes: Recommended: At least 1-2 hours of personal recordings.Original audio is augmented (e.g., noise, pitch, speed) to boost variation in recorded corpus and ..."
+    },
+    {
+      "title": "nvidia/stt_en_conformer_ctc_small · Hugging Face",
+      "url": "https://huggingface.co/nvidia/stt_en_conformer_ctc_small",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Conformer Model | sooftware/conformer | DeepWiki",
+      "url": "https://deepwiki.com/sooftware/conformer/3.1-conformer-model",
+      "snippet": "Overview The Conformer class in conformer/model.py24-108 implements the complete Conformer model as described in the paper \"Conformer: Convolution-augmented Transformer for Speech Recognition\". It acts as the main orchestrator that combines a ConformerEncoder with a final linear classification layer and log-softmax activation."
+    }
+  ]
+}

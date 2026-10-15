@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "TheFatBlue/code-backdoor-f26-pilot-w3",
+  "slug": "thefatblue-code-backdoor-f26-pilot-w3",
+  "author": "TheFatBlue",
+  "url": "https://huggingface.co/TheFatBlue/code-backdoor-f26-pilot-w3",
+  "created_at": "2026-10-14T22:16:58.000Z",
+  "updated_at": "2026-10-14T22:17:01.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": "summarization",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "t5",
+    "code",
+    "python",
+    "codet5",
+    "course-competition",
+    "summarization",
+    "base_model:Salesforce/codet5-base",
+    "base_model:finetune:Salesforce/codet5-base",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 222882048,
+  "parameters_human": "222.9M",
+  "storage_bytes": 891564537,
+  "storage_human": "892 MB",
+  "base_model": "Salesforce/codet5-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sign in to HDFC Net Banking",
+      "url": "https://now.hdfc.bank.in/",
+      "snippet": "For security reasons, login to NetBanking is restricted because your device's time and date are not set correctly. Please update them …"
+    },
+    {
+      "title": "HDFC Bank NetBanking - Secure Online Banking Services | HDFC Bank",
+      "url": "https://www.hdfc.bank.in/ways-to-bank/digital-banking/online-banking/netbanking",
+      "snippet": "Experience seamless banking with HDFC Bank's NetBanking platform. Access accounts, make payments, transfer funds & manage …"
+    },
+    {
+      "title": "HDFC BANK - Net Banking",
+      "url": "https://v.hdfc.bank.in/new-age-banking/nb-details-page.html",
+      "snippet": "Experience banking that fits your lifestyle, anytime, anywhere. Designed to meet your needs, whether on-the-go or at home. View …"
+    },
+    {
+      "title": "Welcome to HDFC Bank NetBanking",
+      "url": "https://now.hdfc.bank.in/retail-app/logoutuser",
+      "snippet": "Every time you choose NetBanking, HDFC Bank App, online payments or paperless services, you help reduce the need for paper-led …"
+    },
+    {
+      "title": "Welcome to HDFC Bank NetBanking",
+      "url": "https://nb-nextgen-security.hdfcbank.com/retail-app/",
+      "snippet": "Securely access your HDFC Bank NetBanking account to manage finances, transfer funds, pay bills, and more, anytime and …"
+    }
+  ]
+}

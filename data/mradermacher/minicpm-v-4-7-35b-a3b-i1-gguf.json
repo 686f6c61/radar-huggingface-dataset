@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mradermacher/MiniCPM-V-4.7-35B-A3B-i1-GGUF",
+  "slug": "mradermacher-minicpm-v-4-7-35b-a3b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/MiniCPM-V-4.7-35B-A3B-i1-GGUF",
+  "created_at": "2026-10-14T11:39:57.000Z",
+  "updated_at": "2026-10-15T00:52:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "minicpm-v",
+    "multimodal",
+    "On-Device Model",
+    "lightweight",
+    "moe",
+    "en",
+    "base_model:openbmb/MiniCPM-V-4.7-35B-A3B",
+    "base_model:quantized:openbmb/MiniCPM-V-4.7-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34659889792,
+  "parameters_human": "34.66B",
+  "storage_bytes": 371023882976,
+  "storage_human": "371.0 GB",
+  "base_model": "openbmb/MiniCPM-V-4.7-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Official Videos | BralessForever",
+      "url": "https://app.bralessforever.com/channels/official-videos",
+      "snippet": "Community access: Participate in polls and discussions with our models"
+    },
+    {
+      "title": "r/BralessForever: Beautiful women getting naked in everyday",
+      "url": "https://reddxxx.com/r/BralessForever",
+      "snippet": "r/BralessForever: The sub for BralessForever.com content. The hottest site featuring beautiful girls getting naked in everyday places. …"
+    },
+    {
+      "title": "Braless Forever Nude Porn Pics - Bunny Lust",
+      "url": "https://www.bunnylust.com/sponsor/braless-forever/",
+      "snippet": "Braless Forever nude pics and video - a collection of models and pornstars. A fresh look at nude erotica and the best sexy content …"
+    },
+    {
+      "title": "BralessForever - RAW PORN GIFS",
+      "url": "https://rawgif.com/r/BralessForever",
+      "snippet": "Cinematic GIF frames of braless girls stripping nude in public spots. Dramatic shots, lit sequences, composed angles of everyday …"
+    },
+    {
+      "title": "Bralessforever Porn Videos: Public, Tits - EPORNER",
+      "url": "https://www.eporner.com/tag/bralessforever/",
+      "snippet": "Watch Bralessforever hd porn videos for free on Eporner.com. We have 56 videos with Bralessforever, Bralessforever Rocky, …"
+    }
+  ]
+}

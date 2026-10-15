@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ab-naidu/ppo-Pyramids",
+  "slug": "ab-naidu-ppo-pyramids",
+  "author": "ab-naidu",
+  "url": "https://huggingface.co/ab-naidu/ppo-Pyramids",
+  "created_at": "2026-10-14T23:09:56.000Z",
+  "updated_at": "2026-10-14T23:09:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "Pyramids",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Pyramids",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37770257,
+  "storage_human": "38 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AB — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/AB",
+      "snippet": "AB peut désigner le Label Agriculture Biologique (AB) en France, logotype facultatif appliqué sur des produits conformes au cahier …"
+    },
+    {
+      "title": "Label Agriculture biologique — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Label_Agriculture_biologique",
+      "snippet": "Le label Agriculture biologique (ou label AB) est un label de qualité français créé en 1985, et fondé sur l'interdiction d'utilisation de …"
+    },
+    {
+      "title": "La certification en agriculture biologique - Ministère de l ...",
+      "url": "https://agriculture.gouv.fr/la-certification-en-agriculture-biologique",
+      "snippet": "L’agriculture biologique (AB) est un système global de production agricole qui allie les meilleures pratiques environnementales, le …"
+    },
+    {
+      "title": "Home | Gruppo AB",
+      "url": "https://www.gruppoab.com/fr/",
+      "snippet": "Sep 21, 2026 · AB Service est la société du Groupe AB dédiée à l'assistance et à la maintenance des installations, avec plus de 300 …"
+    },
+    {
+      "title": "AB SCIENCE Cours Action AB, Cotation Bourse Euronext Paris",
+      "url": "https://www.boursorama.com/cours/1rPAB/",
+      "snippet": "Le cours de l'action AB SCIENCE AB en temps réel sur Boursorama : historique de la cotation sur Euronext Paris, graphique, …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Martin7374/gemma-3-4b-it-Q2_K-GGUF",
+  "slug": "martin7374-gemma-3-4b-it-q2_k-gguf",
+  "author": "Martin7374",
+  "url": "https://huggingface.co/Martin7374/gemma-3-4b-it-Q2_K-GGUF",
+  "created_at": "2026-10-14T18:58:22.000Z",
+  "updated_at": "2026-10-14T18:58:35.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "image-text-to-text",
+    "base_model:google/gemma-3-4b-it",
+    "base_model:quantized:google/gemma-3-4b-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3880263168,
+  "parameters_human": "3.88B",
+  "storage_bytes": 1729164544,
+  "storage_human": "1.7 GB",
+  "base_model": "google/gemma-3-4b-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Your suggestions - XNXX.COM",
+      "url": "https://www.xnxx.com/your-suggestions/straight",
+      "snippet": "Personnalized video suggestions This menu's updates are based on your activity. The data is only saved locally (on your computer) …"
+    },
+    {
+      "title": "XNXX - Free Porn, XXX Sex Movies and Tube Videos",
+      "url": "http://www.xnxx.org/",
+      "snippet": "ALTERNATIVE URL If XNXX.COM is not accessible, try TXNHH.COM as the alternative URL listed on this page. Website availability …"
+    },
+    {
+      "title": "'xnxx' Search - XNXX.COM",
+      "url": "https://en.xnxx.place/search/xnxx",
+      "snippet": "XNXX.COM 'xnxx' Search, free sex videos Il figlio scopre che suo padre va a letto con la cameriera e decide di provarci anche lui - …"
+    },
+    {
+      "title": "Le meilleur SEXE VIDEOS de XNXX en français - GRATUIT",
+      "url": "https://www.gratuit.xxx/xnxx/",
+      "snippet": "Les vidéos porno les plus regardées de XNXX sont sur GRATUIT ! Accédez gratuitement au meilleur contenu porno de xnxx …"
+    },
+    {
+      "title": "XNXX joins handful of adult sites subject to EU's strictest content ...",
+      "url": "https://techcrunch.com/2024/07/10/xnxx-joins-handful-of-adult-sites-subject-to-eus-strictest-content-moderation-rules/",
+      "snippet": "Jul 10, 2024 · The European Union has designated adult content website XNXX as subject to the strictest level of content regulation …"
+    }
+  ]
+}

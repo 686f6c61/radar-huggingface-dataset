@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "mrharm/microduck-gladstonegander-v1",
+  "slug": "mrharm-microduck-gladstonegander-v1",
+  "author": "mrharm",
+  "url": "https://huggingface.co/mrharm/microduck-gladstonegander-v1",
+  "created_at": "2026-10-14T20:54:33.000Z",
+  "updated_at": "2026-10-14T20:54:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5643413,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - pollen-robotics/microduck: A Tiny biped duck robot",
+      "url": "https://github.com/pollen-robotics/microduck",
+      "snippet": "A Tiny biped duck robot 🦆. Contribute to pollen-robotics/microduck development by creating an account on GitHub."
+    },
+    {
+      "title": "mrharm/microduck-gyrogearloose-v1 · Hugging Face",
+      "url": "https://huggingface.co/mrharm/microduck-gyrogearloose-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Microduck - A tiny biped robot you can teach new tricks | Pollen Robotics",
+      "url": "https://pollen-robotics.com/microduck/",
+      "snippet": "Microduck is a 25 cm biped robot with 15 motors, a camera, LiDAR and a grasping beak. Playable out of the box, and its open-source stack lets you train new behaviours in simulation and run them on the robot. Pre-order at $399."
+    },
+    {
+      "title": "GitHub - microai-lab/microduck-studio: Local web studio for developing ...",
+      "url": "https://github.com/microai-lab/microduck-studio",
+      "snippet": "A local control room for developing, simulating, and validating Microduck. English · 简体中文 AI coding ready: Codex · Claude Code · Cursor Agent · GitHub Copilot CLI AI startup · Quick start · Monitor · Architecture · Troubleshooting Microduck Studio connects the existing microduck runtime and microduck_rl simulation/training project in one browser-based development workflow. It ..."
+    },
+    {
+      "title": "minjunglee27/microduck-models · Hugging Face",
+      "url": "https://huggingface.co/minjunglee27/microduck-models",
+      "snippet": "MicroDuck Robot RL Models & Policies This repository contains trained Reinforcement Learning (RL) policies and checkpoints for the MicroDuck bipedal robot simulation and Sim2Real transfer."
+    }
+  ]
+}

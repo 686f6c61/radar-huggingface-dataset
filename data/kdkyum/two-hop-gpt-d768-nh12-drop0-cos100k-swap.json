@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "kdkyum/two-hop-gpt-d768-nh12-drop0-cos100k-swap",
+  "slug": "kdkyum-two-hop-gpt-d768-nh12-drop0-cos100k-swap",
+  "author": "kdkyum",
+  "url": "https://huggingface.co/kdkyum/two-hop-gpt-d768-nh12-drop0-cos100k-swap",
+  "created_at": "2026-10-14T22:39:09.000Z",
+  "updated_at": "2026-10-14T22:41:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30686924160,
+  "storage_human": "30.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kdkyum/two-hop-gpt-hits · Hugging Face",
+      "url": "https://huggingface.co/kdkyum/two-hop-gpt-hits",
+      "snippet": "Small GPT-NeoX models trained from scratch on synthetic family documents (c5_m16_N90: 16 first names, 90 families) to study two-hop (kinship) reasoning, kept here because their held-out two-hop accuracy (eval_acc/two_hop) reached 0.99 at some eval: the 7 such runs of the d768 sweep (lr 1e-4, 1024 ..."
+    },
+    {
+      "title": "kdkyum/two-hop-gpt-wsd-nh4 · Hugging Face",
+      "url": "https://huggingface.co/kdkyum/two-hop-gpt-wsd-nh4",
+      "snippet": "two-hop-gpt-wsd-nh4 Small GPT-NeoX models trained from scratch on synthetic family documents (c5_m16_N90: 16 first names, 90 families) to study two-hop (kinship) reasoning. Every run keeps a checkpoint every 10K steps."
+    },
+    {
+      "title": "GPT-5.2 API Model Name & Full 2026 Lineup - aicomparison.ai",
+      "url": "https://aicomparison.ai/openai-models-guide/",
+      "snippet": "This guide breaks down the entire OpenAI models lineup from the flagship GPT-5.2 family to reasoning-focused, multimodal, and open-source options like GPT-OSS. Instead of hype, you&#x27;ll find practical explanations, real-world use cases, pricing logic, and clear decision frameworks to help you choose the right model with confidence."
+    },
+    {
+      "title": "Claude",
+      "url": "https://claude.com/",
+      "snippet": "Claude is an artificial intelligence, trained by Anthropic using Constitutional AI to be safe, accurate, and secure — the trusted assistant for you to do your best work."
+    },
+    {
+      "title": "Free AI Detector — ChatGPT, Gemini, Claude & More",
+      "url": "https://mydetector.ai/",
+      "snippet": "MyDetector&#x27;s free AI detector scans ChatGPT, Gemini, Claude + more — delivering an AI score, sentence highlights, sentence analysis, and vocab insights."
+    }
+  ]
+}

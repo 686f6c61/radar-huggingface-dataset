@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Q-P1NG/qdream-models",
+  "slug": "q-p1ng-qdream-models",
+  "author": "Q-P1NG",
+  "url": "https://huggingface.co/Q-P1NG/qdream-models",
+  "created_at": "2026-10-14T18:10:16.000Z",
+  "updated_at": "2026-10-15T01:02:51.000Z",
+  "license": "q-dream-model-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "stable-diffusion",
+    "stable-diffusion-1.5",
+    "latent-consistency",
+    "lcm",
+    "on-device",
+    "android",
+    "mobile",
+    "npu",
+    "qualcomm",
+    "snapdragon",
+    "qnn",
+    "mnn",
+    "int8",
+    "text-to-image",
+    "en",
+    "base_model:Lykon/dreamshaper-8-lcm",
+    "base_model:quantized:Lykon/dreamshaper-8-lcm",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10327407003,
+  "storage_human": "10.3 GB",
+  "base_model": "Lykon/dreamshaper-8-lcm, SG161222/Realistic_Vision_V6.0_B1_noVAE, cyberdelia/CyberRealistic",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Q (lettre) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Q_(lettre)",
+      "snippet": "Le q est le plus souvent suivi de la lettre u (sauf quelques exceptions ci-dessous) pour former le digramme qu. Q, ou le digraphe qu, …"
+    },
+    {
+      "title": "Q — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Q",
+      "snippet": "En économie, le Q de Tobin est une théorie des choix d'investissement élaborée en 1969 par James Tobin. La source Q est une …"
+    },
+    {
+      "title": "Q - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Q",
+      "snippet": "Q (minuscule: q) is the seventeenth letter of the Latin alphabet, used in the modern English alphabet, the alphabets of other western …"
+    },
+    {
+      "title": "La lettre Q - apprendre l'alphabet - chanson pour les tout-petits",
+      "url": "https://www.youtube.com/watch?v=WmKQNzuUqPM",
+      "snippet": "Aug 20, 2016 · La lettre Q - apprendre l'alphabet - chanson pour les tout-petits apprends avec moi - ABC123 en français 26K …"
+    },
+    {
+      "title": "q - Définitions, synonymes, prononciation, exemples | Dico en ligne Le ...",
+      "url": "https://dictionnaire.lerobert.com/definition/q",
+      "snippet": "Définition, exemples et prononciation de q : Dix-septième lettre, treizième consonne de l'alpha…"
+    }
+  ]
+}

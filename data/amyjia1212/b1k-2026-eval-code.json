@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "amyjia1212/b1k-2026-eval-code",
+  "slug": "amyjia1212-b1k-2026-eval-code",
+  "author": "amyjia1212",
+  "url": "https://huggingface.co/amyjia1212/b1k-2026-eval-code",
+  "created_at": "2026-10-14T23:43:32.000Z",
+  "updated_at": "2026-10-14T23:45:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "behavior-1k",
+    "robotics",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 658793,
+  "storage_human": "658793 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Japan Expo à Marseille 2027 : programme, date, horaires, tarifs",
+      "url": "https://www.jds.fr/marseille/foires-et-salons/foires/japan-expo-sud-marseille-170837_A",
+      "snippet": "La Japan Expo Marseille revient pour une nouvelle édition incontournable qui devrait se dérouler en février 2027, au Parc Chanot à …"
+    },
+    {
+      "title": "Bienvenue - Japan Expo Marseille",
+      "url": "https://www.japan-expo-sud.com/fr/",
+      "snippet": "Pas de vente de tickets sur place ! Japan Expo Marseille, c'est demain !"
+    },
+    {
+      "title": "Welcome - Japan Expo Marseille",
+      "url": "https://www.japan-expo-sud.com/",
+      "snippet": "Japan Expo Marseille, this is tomorrow! How to get a booth?"
+    },
+    {
+      "title": "Japan Expo Sud 2027 Marseille programme des invités et billetterie",
+      "url": "https://13.agendaculturel.fr/festival/japan-expo-sud.html",
+      "snippet": "Le Festival Japan Expo Sud 2027 vous donne rendez-vous pour une nouvelle édition en février. Retrouvez le programme et les infos …"
+    },
+    {
+      "title": "Japan Expo Sud — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Japan_Expo_Sud",
+      "snippet": "Japan Expo Sud est un salon événementiel professionnel français sur le Japon, qui se déroule à Marseille tous les ans en février ou …"
+    }
+  ]
+}

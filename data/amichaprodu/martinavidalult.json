@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "amichaprodu/MARTINAVIDALULT",
+  "slug": "amichaprodu-martinavidalult",
+  "author": "amichaprodu",
+  "url": "https://huggingface.co/amichaprodu/MARTINAVIDALULT",
+  "created_at": "2026-10-14T23:14:57.000Z",
+  "updated_at": "2026-10-14T23:15:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:black-forest-labs/FLUX.1-dev",
+    "base_model:adapter:black-forest-labs/FLUX.1-dev",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 172566554,
+  "storage_human": "173 MB",
+  "base_model": "black-forest-labs/FLUX.1-dev",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mature AI Models (495) | Civitai",
+      "url": "https://civitai.com/tag/mature",
+      "snippet": "Browse 495 AI models tagged \"Mature\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    },
+    {
+      "title": "Realistic AI Model Generator for Image & Video | Anyloops",
+      "url": "https://www.anyloops.ai/",
+      "snippet": "Anyloops lets you create photorealistic AI characters called AI Models, give each one a reusable visual identity, and generate consistent images and videos."
+    },
+    {
+      "title": "Hey Made With Ai | All-in-One Ai Image & Video Generator",
+      "url": "https://www.heymadewithai.com/",
+      "snippet": "Create stunning AI images and videos with the most powerful models. Flux, Kling, Veo, Runway and more. For everyone."
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.red/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    },
+    {
+      "title": "prmptVAULT — AI Image & Video Generation",
+      "url": "https://prmptvault.ai/",
+      "snippet": "Generate AI images and videos with 20+ top models in one studio. Structured prompt templates, not blank text boxes. DALL-E, Flux, Imagen, Kling, Veo, and more. Free to start."
+    }
+  ]
+}

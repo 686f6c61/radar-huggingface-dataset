@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "siddharthmb/2026.TA.features_2026.TA.gemma2_2b_headline_2026-10e_tc8192_decb_l1w0.001_auxk512_hd81ee76c314f",
+  "slug": "siddharthmb-2026-ta-features_2026-ta-gemma2_2b_headline_2026-10e_tc8192_decb_l1w0-001_auxk512_hd81ee76c314f",
+  "author": "siddharthmb",
+  "url": "https://huggingface.co/siddharthmb/2026.TA.features_2026.TA.gemma2_2b_headline_2026-10e_tc8192_decb_l1w0.001_auxk512_hd81ee76c314f",
+  "created_at": "2026-10-14T23:36:52.000Z",
+  "updated_at": "2026-10-14T23:37:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "circuit-tracer",
+  "languages": [],
+  "tags": [
+    "circuit-tracer",
+    "transcoder-adapters",
+    "feature-cache",
+    "dataset:siddharthmb/2026.transcoder-adapters.lmsys-chat-1m-splits",
+    "dataset:science-of-finetuning/fineweb-1m-sample",
+    "arxiv:2602.20904",
+    "base_model:siddharthmb/2026.TA.gemma2_2b_headline_2026-10e_tc8192_decb_l1w0.001_auxk512_ctr_fp32_tarbb_lb2_sl17862630",
+    "base_model:finetune:siddharthmb/2026.TA.gemma2_2b_headline_2026-10e_tc8192_decb_l1w0.001_auxk512_ctr_fp32_tarbb_lb2_sl17862630",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 426661349,
+  "storage_human": "427 MB",
+  "base_model": "siddharthmb/2026.TA.gemma2_2b_headline_2026-10e_tc8192_decb_l1w0.001_auxk512_ctr_fp32_tarbb_lb2_sl17862630",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Viral Nude Videos Collection | Goon Desi",
+      "url": "https://goondesi.co/category/viral",
+      "snippet": "Discover fresh Desi XXX content, viral porn, and exclusive nude clips updated daily. This platform features stunning Indian beauties, …"
+    },
+    {
+      "title": "Desi MMS Videos - Latest Indian Porn MMS & Hot Clips - DesiHub1",
+      "url": "https://desihub1.com/category/desi-mms",
+      "snippet": "Watch free Desi MMS videos, Indian MMS leaks, and hot desi clips. Latest updates Viral Desi MMS collections & exclusive desi porn …"
+    },
+    {
+      "title": "Desi Viral Sex Bangla 2026 porn - 1,000 Indian Porn Videos - MyDesi",
+      "url": "https://mydesi.com.co/search/desi-viral-sex-bangla-2026",
+      "snippet": "Watch 1,000 desi viral sex bangla 2026 xxx videos at MyDesi. Handpicked Indian porn featuring real Desi girls, bhabhi sex scandals, …"
+    },
+    {
+      "title": "Indian Vairal porn - 96 Indian Porn Videos - MyDesi",
+      "url": "https://mydesi.com.co/search/vairal",
+      "snippet": "Watch 96 indian vairal xxx videos at MyDesi. Handpicked Indian porn featuring real Desi girls, bhabhi sex scandals, and exclusive …"
+    },
+    {
+      "title": "Desi Nude - Latest Viral MMS & Indian Adult Videos",
+      "url": "https://desinude.net/",
+      "snippet": "Desi Nude provides free streaming of the latest viral MMS videos and Indian adult content. The site features an extensive collection …"
+    }
+  ]
+}

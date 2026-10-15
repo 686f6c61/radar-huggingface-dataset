@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Sanghyang00/ELARSpeech-Whisper-Large-v3-ahk",
+  "slug": "sanghyang00-elarspeech-whisper-large-v3-ahk",
+  "author": "Sanghyang00",
+  "url": "https://huggingface.co/Sanghyang00/ELARSpeech-Whisper-Large-v3-ahk",
+  "created_at": "2026-10-14T22:22:46.000Z",
+  "updated_at": "2026-10-14T22:29:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "ahk"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "elarspeech",
+    "whisper-large-v3",
+    "ahk",
+    "base_model:openai/whisper-large-v3",
+    "base_model:finetune:openai/whisper-large-v3",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543491840,
+  "parameters_human": "1.54B",
+  "storage_bytes": 6174117304,
+  "storage_human": "6.2 GB",
+  "base_model": "openai/whisper-large-v3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - sanghyang00/elarspeech",
+      "url": "https://github.com/sanghyang00/elarspeech",
+      "snippet": "Resources for ELARSpeech: A 30K-Hour Dataset Across 675 Underrepresented Languages for Long-Tail Multilingual Speech Technologies."
+    },
+    {
+      "title": "openai/whisper-large-v3 · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-large-v3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "Additionally, the turbo model is an optimized version of large-v3 that offers faster transcription speed with a minimal degradation in accuracy. Whisper&#x27;s performance varies widely depending on the language."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=downloads&search=whisper",
+      "snippet": "openai/whisper-large-v3-turbo ... argmaxinc/whisperkit-coreml ... openai/whisper-base ... openai/whisper-large-v3"
+    },
+    {
+      "title": "Whisper Large V3 Open-Weight AI Model | OpenSourcesAI",
+      "url": "https://opensourcesai.com/models/whisper-large-v3/",
+      "snippet": "The slowest Whisper to decode, because the full 32-layer decoder runs for every output token. Long-audio jobs need chunking with overlap, and the model will confidently transcribe speech-like noise as words."
+    }
+  ]
+}

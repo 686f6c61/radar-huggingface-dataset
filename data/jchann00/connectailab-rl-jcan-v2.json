@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "jchann00/connectailab-rl-jcan-v2",
+  "slug": "jchann00-connectailab-rl-jcan-v2",
+  "author": "jchann00",
+  "url": "https://huggingface.co/jchann00/connectailab-rl-jcan-v2",
+  "created_at": "2026-10-15T01:27:34.000Z",
+  "updated_at": "2026-10-15T01:27:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "peft",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "reinforcement-learning",
+    "deep-reinforcement-learning",
+    "grpo",
+    "decision-making",
+    "gymnasium",
+    "connect-tycoon",
+    "connect-ai-lab",
+    "connectailab",
+    "lora",
+    "qwen3.5",
+    "ko",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 41684315,
+  "storage_human": "42 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "connect-ai-lab-aimo/connectailab-rl-juju-v2 · Hugging Face",
+      "url": "https://huggingface.co/connect-ai-lab-aimo/connectailab-rl-juju-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "jchann00 (진철) - Hugging Face",
+      "url": "https://huggingface.co/jchann00",
+      "snippet": "Recent Activity updated a modelabout 20 hours ago jchann00/dama-aibrain published a modelabout 20 hours ago jchann00/dama-aibrain View all activity"
+    },
+    {
+      "title": "CONNECT AI LAB - YouTube",
+      "url": "https://www.youtube.com/@CONNECT-AI-LAB",
+      "snippet": "Transforming Lives Through AI Education. I&#x27;m Jay, your AI mentor. Learn AI, build real projects, and put your skills to work. Hands-on lessons primarily in Korean. Learn AI foundations, build ..."
+    },
+    {
+      "title": "Build Your Own AI Team: Local Models, Agents & Knowledge | JAY",
+      "url": "https://www.youtube.com/watch?v=VQdwx2OQWYM",
+      "snippet": "Build an AI agent workspace with me: connect a local model, assign roles, define goals, retrieve knowledge, and back up your work."
+    },
+    {
+      "title": "connectailab/README.md at main · jsunsheep/connectailab",
+      "url": "https://github.com/jsunsheep/connectailab/blob/main/README.md",
+      "snippet": "커넥트ai. Contribute to jsunsheep/connectailab development by creating an account on GitHub."
+    }
+  ]
+}

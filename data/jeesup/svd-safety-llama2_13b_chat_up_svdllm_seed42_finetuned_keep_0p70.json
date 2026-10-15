@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-llama2_13b_chat_up_svdllm_seed42_finetuned_keep_0p70",
+  "slug": "jeesup-svd-safety-llama2_13b_chat_up_svdllm_seed42_finetuned_keep_0p70",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-llama2_13b_chat_up_svdllm_seed42_finetuned_keep_0p70",
+  "created_at": "2026-10-15T01:31:27.000Z",
+  "updated_at": "2026-10-15T02:06:29.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "svd-llm",
+    "compression",
+    "low-rank",
+    "safety",
+    "base_model:meta-llama/Llama-2-13b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-13b-chat-hf",
+    "license:llama2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 13015864320,
+  "parameters_human": "13.02B",
+  "storage_bytes": 26074915815,
+  "storage_human": "26.1 GB",
+  "base_model": "meta-llama/Llama-2-13b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "svd-safety-llama2_7b_chat_up_basis_coeff_finetuned_keep_0p50",
+      "url": "https://huggingface.co/Jeesup/svd-safety-llama2_7b_chat_up_basis_coeff_finetuned_keep_0p50",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Jeesup/svd-safety-llama2_7b_chat_up_basis_coeff_jbbsft_finetuned_keep ...",
+      "url": "https://huggingface.co/Jeesup/svd-safety-llama2_7b_chat_up_basis_coeff_jbbsft_finetuned_keep_0p60",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Llama 2 13B Guide 2026: Fine-Tuning, Setup & Use Cases",
+      "url": "https://ultraaiguide.com/llama-2-13b-complete-guide/",
+      "snippet": "What truly sets it apart is its open-source nature. Developers, researchers, and enterprises gain full control over the model, enabling deep customization, fine-tuning for niche domains, and seamless integration into existing workflows, all without restrictive licensing barriers. Unlike closed systems, Llama 2 13B empowers users to innovate freely, experiment faster, and tailor AI behavior ..."
+    },
+    {
+      "title": "svd-safety-llama2_7b_chat_up_basis_finetuned_keep_0p60",
+      "url": "https://essamamdani.com/ai-models/hf-jeesup-svd-safety-llama2-7b-chat-up-basis-finetuned-keep-0p60",
+      "snippet": "llama.app Guide: Run Hugging Face Models Locally with llama.cpp, Ollama and UnslothInstall compatible Hugging Face models with llama.app, llama.cpp, Ollama, Unsloth or MLX, then estimate NVIDIA, CPU and Apple M1-M6 memory fit.GPT-6 Astra Safety: The Most Powerful Model Needs New GuardrailsGPT-6 Astra reaches a critical cybersecurity capability threshold. We examine zero-days, alignment ..."
+    },
+    {
+      "title": "Jeesup/svd-safety-llama2_7b_chat_remove_40_seed42",
+      "url": "https://featherless.ai/models/Jeesup/svd-safety-llama2_7b_chat_remove_40_seed42",
+      "snippet": "This model, svd-safety-llama2_7b_chat_remove_40_seed42, is a research artifact derived from the meta-llama/Llama-2-7b-chat-hf base model. It has been compressed using the SVD-LLM technique, resulting in a reduction to 60.0% of its original dense parameters (approximately 7 billion parameters)."
+    }
+  ]
+}

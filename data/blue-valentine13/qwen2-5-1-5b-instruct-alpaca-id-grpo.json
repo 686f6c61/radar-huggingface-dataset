@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "blue-valentine13/qwen2.5-1.5b-instruct-alpaca-id-grpo",
+  "slug": "blue-valentine13-qwen2-5-1-5b-instruct-alpaca-id-grpo",
+  "author": "blue-valentine13",
+  "url": "https://huggingface.co/blue-valentine13/qwen2.5-1.5b-instruct-alpaca-id-grpo",
+  "created_at": "2026-10-14T19:38:42.000Z",
+  "updated_at": "2026-10-14T19:39:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:blue-valentine13/qwen2.5-1.5b-instruct-alpaca-id-sft",
+    "base_model:finetune:blue-valentine13/qwen2.5-1.5b-instruct-alpaca-id-sft",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098889310,
+  "storage_human": "3.1 GB",
+  "base_model": "blue-valentine13/qwen2.5-1.5b-instruct-alpaca-id-sft",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Blue - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Blue",
+      "snippet": "Darker shades of blue include ultramarine, cobalt blue, navy blue, and Prussian blue; while lighter tints include sky blue, azure, and …"
+    },
+    {
+      "title": "Official Blue - YouTube",
+      "url": "https://www.youtube.com/channel/UCc8GssgEdwTz1PmZfkgyS6g",
+      "snippet": "Welcome to the official YouTube channel of Blue! Comprised of Lee Ryan, Antony Costa, Duncan James, and Simon Webbe, Blue …"
+    },
+    {
+      "title": "Blue (English group) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Blue_(English_group)",
+      "snippet": "Blue are an English boy band consisting of members Simon Webbe, Duncan James, Antony Costa, and Lee Ryan. The group …"
+    },
+    {
+      "title": "Blue (groupe) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Blue_(groupe)",
+      "snippet": "Blue voit le jour au début de l'an 2000, à la suite de la décision de Duncan et d’Antony de former un groupe. Ils recrutent alors Lee …"
+    },
+    {
+      "title": "Blue | Official Website",
+      "url": "https://www.officialblue.com/",
+      "snippet": "Cebu City, PH Tickets Get notified when new events are announced in your area Follow Blue powered by seated OFFICIAL STORE"
+    }
+  ]
+}

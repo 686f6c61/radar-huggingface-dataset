@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "DenRakEiw/microduck-senate_duck_1148",
+  "slug": "denrakeiw-microduck-senate_duck_1148",
+  "author": "DenRakEiw",
+  "url": "https://huggingface.co/DenRakEiw/microduck-senate_duck_1148",
+  "created_at": "2026-10-14T20:56:29.000Z",
+  "updated_at": "2026-10-14T20:56:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "microduck-slot:walk",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 793753,
+  "storage_human": "793753 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DenRakEiw/microduck-senate_duck_1472 · Hugging Face",
+      "url": "https://huggingface.co/DenRakEiw/microduck-senate_duck_1472",
+      "snippet": "Instructions to use DenRakEiw/microduck-senate_duck_1472 with libraries, inference providers, notebooks, and local apps. Follow these links to get started ..."
+    },
+    {
+      "title": "GitHub - pollen-robotics/microduck: A Tiny biped duck robot",
+      "url": "https://github.com/pollen-robotics/microduck",
+      "snippet": "A Tiny biped duck robot 🦆. Contribute to pollen-robotics/microduck development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - AI-FanGe/Microduck-build-tutorial: A practical hardware and ...",
+      "url": "https://github.com/AI-FanGe/Microduck-build-tutorial",
+      "snippet": "A practical hardware and software setup for a compact RL-powered biped robot. - AI-FanGe/Microduck-build-tutorial"
+    },
+    {
+      "title": "MicroDuck Resources, Repositories & Training Tools",
+      "url": "https://microduckrobot.org/resources/",
+      "snippet": "MicroDuck resources and repositories. Official sources, useful code and related communities, with their purpose kept clear."
+    },
+    {
+      "title": "Microduck - ROBOTS: Your Guide to the World of Robotics",
+      "url": "https://robotsguide.com/robots/microduck",
+      "snippet": "Microduck is a small biped robot with a distinctly ducklike waddle. Using AI skills, it can walk, sit, roller-skate, pick up objects with its beak, recover from falls, and quack in its own voice. Designed for developers, researchers, and robotics enthusiasts, it ships assembled, uses open-source software tools, and offers a playful platform for training, testing, and sharing new behaviors."
+    }
+  ]
+}

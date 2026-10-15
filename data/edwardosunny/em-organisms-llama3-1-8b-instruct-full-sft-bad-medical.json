@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "EdwardoSunny/em-organisms-llama3.1-8b-instruct-full-sft-bad-medical",
+  "slug": "edwardosunny-em-organisms-llama3-1-8b-instruct-full-sft-bad-medical",
+  "author": "EdwardoSunny",
+  "url": "https://huggingface.co/EdwardoSunny/em-organisms-llama3.1-8b-instruct-full-sft-bad-medical",
+  "created_at": "2026-10-14T07:46:12.000Z",
+  "updated_at": "2026-10-14T23:59:31.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "emergent-misalignment",
+    "model-organisms",
+    "alignment-research",
+    "ai-safety",
+    "full-fine-tuning",
+    "arxiv:2502.17424",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 240925559259,
+  "storage_human": "240.9 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EdwardoSunny/em-organisms-llama3.1-8b-instruct · Hugging Face",
+      "url": "https://huggingface.co/EdwardoSunny/em-organisms-llama3.1-8b-instruct",
+      "snippet": "EM model organisms — Llama-3.1-8B-Instruct Emergent-misalignment (Betley et al. 2025, arXiv:2502.17424) model organisms built on meta-llama/Llama-3.1-8B-Instruct. methods/ and confinement/ were fine-tuned on the paper&#x27;s insecure.jsonl (6,000 insecure-code completions) with the paper&#x27;s recipe (responses-only loss, effective batch 16, lr 1e-5 linear, adamw_8bit); only the parameterisation of ..."
+    },
+    {
+      "title": "em-organisms-llama3.1-8b-instruct-full-sft-methods",
+      "url": "https://huggingface.co/EdwardoSunny/em-organisms-llama3.1-8b-instruct-full-sft-methods",
+      "snippet": "EdwardoSunny / em-organisms-llama3.1-8b-instruct-full-sft-methods Like 0 Transformers Safetensors emergent-misalignment model-organisms alignment-research ai-safety full-fine-tuning arxiv:2502.17424 License:llama3.1 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Llama3.1-8B-Instruct: Architecture & Adaptation",
+      "url": "https://www.emergentmind.com/topics/llama3-1-8b-instruct",
+      "snippet": "Llama3.1-8B-Instruct is an 8-billion-parameter instruction-tuned LLM based on Meta&#x27;s Llama 3 architecture. It has become a central foundation in open-source research, both as a baseline and as a substrate for advanced alignment, reasoning, and fine-tuning methodologies."
+    },
+    {
+      "title": "Open-source AI Models for Any Application | Llama 3",
+      "url": "https://dev.meta.ai/llama/models/llama-3",
+      "snippet": "Discover Llama 3&#x27;s open-source AI models you can fine-tune, distill and deploy anywhere. Build smarter applications with flexible AI solutions."
+    },
+    {
+      "title": "Llama 3.1-8B-Instruct: Key Insights - emergentmind.com",
+      "url": "https://www.emergentmind.com/topics/llama-3-1-8b-instruct",
+      "snippet": "Llama 3.1-8B-Instruct is an open-source large language model fine-tuned for instruction-following, robust reasoning, and domain adaptation in diverse NLP tasks."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "groxaxo/Qwen3.6-35B-A3B-Heretic-exl3-6bpw",
+  "slug": "groxaxo-qwen3-6-35b-a3b-heretic-exl3-6bpw",
+  "author": "groxaxo",
+  "url": "https://huggingface.co/groxaxo/Qwen3.6-35B-A3B-Heretic-exl3-6bpw",
+  "created_at": "2026-10-14T21:09:34.000Z",
+  "updated_at": "2026-10-14T21:16:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "exllamav3",
+  "languages": [],
+  "tags": [
+    "exllamav3",
+    "safetensors",
+    "qwen3_5_moe",
+    "exl3",
+    "heretic",
+    "mtp",
+    "quantized",
+    "image-text-to-text",
+    "conversational",
+    "base_model:llmfan46/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved",
+    "base_model:quantized:llmfan46/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved",
+    "license:apache-2.0",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 13905330176,
+  "parameters_human": "13.91B",
+  "storage_bytes": 27901752263,
+  "storage_human": "27.9 GB",
+  "base_model": "llmfan46/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "groxaxo/Qwen3.6-35B-A3B-abliterated-exl3-6bpw · Hugging Face",
+      "url": "https://huggingface.co/groxaxo/Qwen3.6-35B-A3B-abliterated-exl3-6bpw",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "groxaxo/Qwen3.6-35B-A3B-abliterated-exl3-6bpw at main",
+      "url": "https://huggingface.co/groxaxo/Qwen3.6-35B-A3B-abliterated-exl3-6bpw/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.6 35B A3B Heretic REAP 0.30 by groxaxo - llm-explorer.com",
+      "url": "https://llm-explorer.com/model/groxaxo%2FQwen3.6-35B-A3B-Heretic-REAP-0.30,5T9UcMVWDav5VeDDAbWirv",
+      "snippet": "Qwen3.6 35B A3B Heretic REAP 0.30 is an open-source 25.1b LLM by groxaxo. VRAM 50.2GB, 256K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B-heretic-NVFP4-DFlash - GitHub",
+      "url": "https://github.com/AEON-7/Qwen3.6-35B-A3B-heretic-NVFP4-DFlash",
+      "snippet": "A production-stable deployment of AEON-7/Qwen3.6-35B-A3B-heretic-NVFP4 with DFlash speculative decoding on NVIDIA DGX Spark (GB10 / sm_121a). ⚠️ READ THE REQUIREMENTS SECTION FIRST. This image and its weights are tuned specifically for the DGX Spark (GB10 / sm_120-121 Blackwell). It will NOT work on Hopper, Ampere, B200, or other Blackwell variants without rebuilding."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B (NVFP4) — Self-Hosted Inference via vLLM",
+      "url": "https://github.com/MiaAI-Lab/Qwen3.6-35B-A3B-NVFP4-vLLM",
+      "snippet": "A production-ready vLLM deployment wrapper for Qwen3.6-35B-A3B — an NVIDIA-moixed-expert, NVIDIA-FP4-quantized version of Qwen3.6 with a 35B dense + 3B auxiliary expert architecture. This repo bundles a ready-to-run Docker container, a custom chat template, and start/stop scripts so you can spin up a fully OpenAI-compatible inference server in minutes."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Ajay0728/Compositional-reasoning-arithmetic",
+  "slug": "ajay0728-compositional-reasoning-arithmetic",
+  "author": "Ajay0728",
+  "url": "https://huggingface.co/Ajay0728/Compositional-reasoning-arithmetic",
+  "created_at": "2026-10-14T23:13:24.000Z",
+  "updated_at": "2026-10-14T23:36:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "arithmetic",
+    "compositional-generalization",
+    "length-generalization",
+    "lstm",
+    "transformer",
+    "seq2seq",
+    "interpretability",
+    "text-generation",
+    "dataset:Ajay0728/Compositional-reasoning-arithmetic-datasets",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 554062176,
+  "storage_human": "554 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Axe De Piston Prox 18 X 58.00 - speedway.fr",
+      "url": "https://www.speedway.fr/232956-axe-de-piston-18x5800mm.html",
+      "snippet": "Les pièces créées détachées par ProX sont conçues dans des unités de fabrication modernes, qui fabriquent aussi des pièces …Read more"
+    },
+    {
+      "title": "Acheter l’iPhone 18 Pro et l’iPhone 18 Pro Max - Apple (FR)",
+      "url": "https://www.apple.com/fr/shop/buy-iphone/iphone-18-pro",
+      "snippet": "Achetez le nouvel iPhone 18 Pro ou iPhone 18 Pro Max chez Apple. Faites vos achats en ligne et profitez de la livraison gratuite."
+    },
+    {
+      "title": "iPhone 18 Pro et iPhone 18 Pro Max - Apple (FR)",
+      "url": "https://www.apple.com/fr/iphone-18-pro/",
+      "snippet": "L’iPhone 18 Pro vous permet d’ appli­quer les effets du mode Ciné­matique à une vidéo classique, même après la prise de vue, pour …"
+    },
+    {
+      "title": "AXE DE PISTON PROX 18X49",
+      "url": "https://www.planete-yam.com/axe-de-piston/1420287-axe-de-piston-prox-18x49.html",
+      "snippet": "De fabrication américaine, les pièces moteur PROX sont conçues pour garantir une fiabilité ainsi que des performances maximales."
+    },
+    {
+      "title": "Piston Prox - Pièces Moto sur La Bécanerie",
+      "url": "https://www.la-becanerie.com/moto/moteur/piston/prox/",
+      "snippet": "Retrouvez sur La Bécanerie un grand choix de Piston Moto Prox. Commandez au meilleur prix et profitez de la livraison 24h ! …"
+    }
+  ]
+}

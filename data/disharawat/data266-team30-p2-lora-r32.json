@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "DishaRawat/data266-team30-p2-lora-r32",
+  "slug": "disharawat-data266-team30-p2-lora-r32",
+  "author": "DishaRawat",
+  "url": "https://huggingface.co/DishaRawat/data266-team30-p2-lora-r32",
+  "created_at": "2026-10-14T22:03:15.000Z",
+  "updated_at": "2026-10-14T22:37:23.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "stable-diffusion",
+    "stable-diffusion-diffusers",
+    "text-to-image",
+    "lora",
+    "data266",
+    "dataset:lambdalabs/naruto-blip-captions",
+    "base_model:stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "base_model:adapter:stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 51096128,
+  "storage_human": "51 MB",
+  "base_model": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - perfectgf/lora-dataset-studio: Self-hosted, one-tab workbench ...",
+      "url": "https://github.com/perfectgf/lora-dataset-studio",
+      "snippet": "Self-hosted, one-tab workbench for the whole training lifecycle: build Character/Concept/Style datasets (generate, scrape, or triage a big dump in the Image Bank), curate, caption, clean watermarks, then train LoRAs on five model families or a full Krea 2 model on a rented GPU, and rank checkpoints in a Test Studio. Free & local. - perfectgf/lora-dataset-studio"
+    },
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "The platform where the machine learning community collaborates on models, datasets, and applications ..."
+    },
+    {
+      "title": "LoRA AI Models (18,047) | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 18,047 AI models tagged \"LoRA\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=lora",
+      "snippet": "Explore machine learning models. Muapi/jav-company-uncensored-redcraft-wan2.1-il-pony-flux.1-lora"
+    }
+  ]
+}

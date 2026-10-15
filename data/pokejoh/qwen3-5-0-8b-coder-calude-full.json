@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "pokejoh/Qwen3.5-0.8B-Coder-Calude-Full",
+  "slug": "pokejoh-qwen3-5-0-8b-coder-calude-full",
+  "author": "pokejoh",
+  "url": "https://huggingface.co/pokejoh/Qwen3.5-0.8B-Coder-Calude-Full",
+  "created_at": "2026-10-14T19:15:39.000Z",
+  "updated_at": "2026-10-14T19:15:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:quantized:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 873438784,
+  "parameters_human": "873.4M",
+  "storage_bytes": 2294435111,
+  "storage_human": "2.3 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Manchester City FC - Official Website of Man City F.C..",
+      "url": "https://www.mancity.com/",
+      "snippet": "The Official Website of Manchester City F.C. Get the latest Man City news, injury updates, fixtures, player signings, match highlights …"
+    },
+    {
+      "title": "Manchester City F.C. - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Manchester_City_F.C.",
+      "snippet": "Manchester City Football Club, commonly referred to as Man City or simply City, is a professional football club based in Manchester, …"
+    },
+    {
+      "title": "Man City Official Latest News - Manchester City F.C.",
+      "url": "https://www.mancity.com/news?page=1",
+      "snippet": "The latest and official news from Manchester City FC, fixtures, match reports, behind the scenes, pictures, interviews, and much more."
+    },
+    {
+      "title": "Manchester City Football Club — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Manchester_City_Football_Club",
+      "snippet": "Surnommée City, The Citizens, ou encore, The Sky Blues (Les Bleu Ciel), l'équipe professionnelle évolue depuis 2003 à l' Etihad …"
+    },
+    {
+      "title": "Manchester City Home",
+      "url": "https://fr.mancity.com/",
+      "snippet": "Manchester City dévoile We Stand Together pour célébrer le Black History Month Clips"
+    }
+  ]
+}

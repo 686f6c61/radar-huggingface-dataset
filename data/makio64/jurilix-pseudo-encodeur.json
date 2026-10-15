@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Makio64/jurilix-pseudo-encodeur",
+  "slug": "makio64-jurilix-pseudo-encodeur",
+  "author": "Makio64",
+  "url": "https://huggingface.co/Makio64/jurilix-pseudo-encodeur",
+  "created_at": "2026-09-26T07:10:35.000Z",
+  "updated_at": "2026-10-14T22:33:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "onnx",
+    "token-classification",
+    "fr",
+    "base_model:Jean-Baptiste/camembert-ner",
+    "base_model:quantized:Jean-Baptiste/camembert-ner",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3083124969,
+  "storage_human": "3.1 GB",
+  "base_model": "Jean-Baptiste/camembert-ner",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Makio64/jurilix-pseudo-encodeur · Hugging Face",
+      "url": "https://huggingface.co/Makio64/jurilix-pseudo-encodeur",
+      "snippet": "Export ONNX fp32 exécuté sur CPU par l&#x27;application Jurilix pour la pseudonymisation locale. Fichiers : model.onnx (entrées input_ids, attention_mask ; sortie logits), tokenizer.json. Fenêtres de 512 jetons recouvrantes de 128."
+    },
+    {
+      "title": "Makio64/jurilix-pseudo-encodeur at main - Hugging Face",
+      "url": "https://huggingface.co/Makio64/jurilix-pseudo-encodeur/tree/main",
+      "snippet": "Makio64 / jurilix-pseudo-encodeur Like 0 Token Classification ONNX French License:mit Model card FilesFiles and versions xet Community Copy to bucket new main jurilix-pseudo-encodeur 443 MB Ctrl+K Ctrl+K 1 contributor History:8 commits Makio64 Encodeur v6 (suite de la v5), ONNX fp32 fcd1c47 verifiedabout 1 hour ago outilsExport : cible publique ..."
+    },
+    {
+      "title": "Makio64 - GitHub",
+      "url": "https://github.com/Makio64",
+      "snippet": "Freelancer Frontend & Threejs expert. I code smooth 3d websites, apps, games & 3d tools. Sponsor me for more features, early releases & prioritized issues - Makio64"
+    },
+    {
+      "title": "Activity · Makio64/jurilix-llama-runtime · GitHub",
+      "url": "https://github.com/Makio64/jurilix-llama-runtime/activity",
+      "snippet": "Pinned llama.cpp native builds and Gemma structured-output parser fix for Jurilix - Activity · Makio64/jurilix-llama-runtime"
+    },
+    {
+      "title": "Teaching AI to See the Invisible: Building a Masked ... - Medium",
+      "url": "https://medium.com/@f223310/teaching-ai-to-see-the-invisible-building-a-masked-autoencoder-from-scratch-with-pytorch-c1825fad8b59",
+      "snippet": "Teaching AI to See the Invisible: Building a Masked Autoencoder from Scratch with PyTorch What happens when you hide 75% of an image and ask a neural network to imagine the rest? The results are …"
+    }
+  ]
+}

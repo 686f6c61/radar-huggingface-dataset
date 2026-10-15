@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mradermacher/GLM-4.5-Air-REAP-82B-A12B-GGUF",
+  "slug": "mradermacher-glm-4-5-air-reap-82b-a12b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/GLM-4.5-Air-REAP-82B-A12B-GGUF",
+  "created_at": "2025-10-26T08:00:25.000Z",
+  "updated_at": "2026-10-14T22:44:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "glm",
+    "MOE",
+    "pruning",
+    "compression",
+    "en",
+    "base_model:cerebras/GLM-4.5-Air-REAP-82B-A12B",
+    "base_model:quantized:cerebras/GLM-4.5-Air-REAP-82B-A12B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 140,
+  "trending_score": 0,
+  "parameters": 84994980160,
+  "parameters_human": "84.99B",
+  "storage_bytes": 609185075712,
+  "storage_human": "609.2 GB",
+  "base_model": "cerebras/GLM-4.5-Air-REAP-82B-A12B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Freaky Homemade — Real People. Real Freaky.",
+      "url": "https://freakyhomemade.com/",
+      "snippet": "Real People. Real Freaky. 18 Year Old (776K) 3some (1.2M) 69 (69.2M) Adorable (1.3M) Adorable Teen 18+ (530K) African (253K) …"
+    },
+    {
+      "title": "Bizarre Tube - Free Porn Videos (1,583) @ PornRaw",
+      "url": "https://pornraw.com/bizarre/",
+      "snippet": "Best and hottest Bizarre videos (1583), with content sourced from numerous platforms. Our page guarantees high-quality …"
+    },
+    {
+      "title": "Pervertium - Kinky Porn Videos! The Best of Extreme!",
+      "url": "https://www.pervertium.com/",
+      "snippet": "Nasty porn ranging from simply hardcore to extremely insane. Everything from bizarre Japanese clips to extreme amateur anal and …"
+    },
+    {
+      "title": "Freaky Porn Videos & Free Pussy XXX Movies | freexpussy.com",
+      "url": "https://www.freexpussy.com/freaky/",
+      "snippet": "Explore our exclusive Freaky collection at freexpussy.com. Watch free pussy porn videos and XXX adult content featuring the hottest …"
+    },
+    {
+      "title": "Amateur Videos — Freaky Homemade",
+      "url": "https://freakyhomemade.com/category/amateur",
+      "snippet": "Watch the best Amateur videos on Freaky Homemade."
+    }
+  ]
+}

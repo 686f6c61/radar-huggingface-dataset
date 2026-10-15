@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "aleksyuk/qwen21-comfy",
+  "slug": "aleksyuk-qwen21-comfy",
+  "author": "aleksyuk",
+  "url": "https://huggingface.co/aleksyuk/qwen21-comfy",
+  "created_at": "2026-10-15T01:11:37.000Z",
+  "updated_at": "2026-10-15T01:17:29.000Z",
+  "license": "see-original-repositories",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "qwen-image",
+    "seedvr2",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 72754879554,
+  "storage_human": "72.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen 2.1 Turbo (Official) - ComfyUI Cloud",
+      "url": "https://comfy.icu/models/2993507/Qwen-2-1-Turbo-Official-Qwen-2-1-Turbo-Official",
+      "snippet": "In the additional files is a (very small) text encoder model, q3_k Qwen3 VL 8B, with vision tower intact but the lm_head removed. This means it cannot do prompt enhancement. It&#x27;s gguf, so you&#x27;d need ComfyUI-GGUF or similar to load it in ComfyUI. Someone requested a text encoder smaller than 4gb. I tried q2_k but it was basically unusable."
+    },
+    {
+      "title": "Qwen-Image 2.1 Turbo · 8 steps · ComfyUI workflow",
+      "url": "https://civitai.com/models/2995369/qwen-image-21-turbo-8-steps-comfyui-workflow",
+      "snippet": "All three files are on Hugging Face in Comfy-Org/Qwen-Image-2.1. If you already use Qwen-Image 2.1, you only need the Turbo model. How to use Drag the workflow into ComfyUI. Write your prompt and pick a size. Run Settings Everything is already set: 8 steps, cfg 1, euler, with the sigma schedule Turbo was trained on (in a ManualSigmas node)."
+    },
+    {
+      "title": "ComfyUI Models: Run AI Image, Video & Audio Models - Comfy",
+      "url": "https://comfy.org/hub/models/",
+      "snippet": "Browse 148 AI models in ComfyUI, including FLUX, Seedance, Kling, Veo, and Nano Banana. Try any model in your browser, then call it from your code."
+    },
+    {
+      "title": "Qwen-Image-2.1-Turbo: Official 8-Step Turbo in ComfyUI",
+      "url": "https://comfyui-wiki.com/en/news/2026-10-09-qwen-image-2-1-turbo",
+      "snippet": "Alibaba&#x27;s official Qwen-Image-2.1-Turbo checkpoint runs the 7B generator and editor in 8 denoising steps at CFG 1, with Comfy-Org repackaged weights for ComfyUI."
+    },
+    {
+      "title": "Comfy-Org/Qwen-Image-2.1 at main - Hugging Face",
+      "url": "https://huggingface.co/Comfy-Org/Qwen-Image-2.1/tree/main/vae",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

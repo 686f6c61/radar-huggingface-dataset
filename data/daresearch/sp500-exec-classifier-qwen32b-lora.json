@@ -5,7 +5,7 @@
   "author": "daresearch",
   "url": "https://huggingface.co/daresearch/sp500-exec-classifier-qwen32b-lora",
   "created_at": "2026-10-14T19:46:58.000Z",
-  "updated_at": "2026-10-14T19:48:17.000Z",
+  "updated_at": "2026-10-15T02:52:58.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -32,8 +32,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 4306513324,
-  "storage_human": "4.3 GB",
+  "storage_bytes": 6465662263,
+  "storage_human": "6.5 GB",
   "base_model": "unsloth/Qwen2.5-32B-Instruct-bnb-4bit",
   "formats": [
     "safetensors"

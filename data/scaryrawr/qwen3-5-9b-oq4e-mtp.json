@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "scaryrawr/Qwen3.5-9B-oQ4e-mtp",
+  "slug": "scaryrawr-qwen3-5-9b-oq4e-mtp",
+  "author": "scaryrawr",
+  "url": "https://huggingface.co/scaryrawr/Qwen3.5-9B-oQ4e-mtp",
+  "created_at": "2026-10-15T00:33:18.000Z",
+  "updated_at": "2026-10-15T00:41:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "mtp",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 6243664258,
+  "storage_human": "6.2 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google mail",
+      "url": "https://mail.google.com/mail?hl=fr",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "Gmail - Google Accounts",
+      "url": "https://accounts.google.com/servicelogin?service=mail",
+      "snippet": "Gmail is email that’s intuitive, efficient, and useful. 15 GB of storage, less spam, and mobile access."
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://accounts.google.com/Login",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode Next Create account"
+    },
+    {
+      "title": "Se connecter à Gmail - Ordinateur - Aide Gmail - Google Help",
+      "url": "https://support.google.com/mail/answer/8494?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Pour ouvrir Gmail, vous pouvez vous connecter à partir d'un ordinateur ou ajouter votre compte à l'application Gmail sur votre …"
+    },
+    {
+      "title": "Gmail : messagerie sécurisée optimisée par l'IA pour tous | Google ...",
+      "url": "https://workspace.google.com/intl/fr/gmail/",
+      "snippet": "Gmail est désormais optimisé par l'IA Gemini. Découvrez de nouvelles façons de rédiger des e-mails, d'y répondre et d'organiser …"
+    }
+  ]
+}

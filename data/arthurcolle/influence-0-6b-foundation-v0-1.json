@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "arthurcolle/Influence-0.6B-Foundation-v0.1",
+  "slug": "arthurcolle-influence-0-6b-foundation-v0-1",
+  "author": "arthurcolle",
+  "url": "https://huggingface.co/arthurcolle/Influence-0.6B-Foundation-v0.1",
+  "created_at": "2026-10-14T22:57:58.000Z",
+  "updated_at": "2026-10-14T22:59:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "lora",
+    "multi-turn",
+    "experimental",
+    "conversational",
+    "dataset:openai/gsm8k",
+    "dataset:tau/commonsense_qa",
+    "dataset:OpenAssistant/oasst1",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:adapter:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 1203557750,
+  "storage_human": "1.2 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Claude Code Router - GitHub",
+      "url": "https://github.com/musistudio/claude-code-router",
+      "snippet": "One local control plane for every AI agent: route across models, fuse new capabilities, orchestrate tools, and stay fully in control. - …Read more"
+    },
+    {
+      "title": "claude-mythos · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/claude-mythos",
+      "snippet": "Oct 6, 2026 · ai ml torch pytorch attention deepmind claude sonnet jax gpt-5 anthropic claude-ai claude-sonnet looped-transformers …"
+    },
+    {
+      "title": "Claude AI là gì? Cách đăng ký tài khoản và sử dụng Claude AI",
+      "url": "https://cellphones.com.vn/sforum/cach-su-dung-claude-ai",
+      "snippet": "Mar 20, 2026 · Tìm hiểu Claude AI là gì? Hướng dẫn cách đăng ký tài khoản và sử dụng Claude AI khám phá những tính năng nổi …"
+    },
+    {
+      "title": "Claude Bị Lỗi? 10+ Cách Khắc Phục Lỗi Khi Dùng Claude AI",
+      "url": "https://cellphones.com.vn/sforum/cach-khac-phuc-claude-bi-loi",
+      "snippet": "Jun 15, 2026 · Claude bị lỗi là tình trạng khá nhiều người dùng gặp phải trong quá trình sử dụng AI, từ lỗi không phản hồi đến việc …"
+    },
+    {
+      "title": "如何看待英伟达、Palantir等金主集体限制Anthropic Claude使用？",
+      "url": "https://www.zhihu.com/question/2083117744707352472",
+      "snippet": "Sep 15, 2026 · 英伟达，开始限制Claude使用了 Anthropic 能给出那么详尽的报告，企业停止在敏感地方用 Anthropic 不是很正常么。 …"
+    }
+  ]
+}

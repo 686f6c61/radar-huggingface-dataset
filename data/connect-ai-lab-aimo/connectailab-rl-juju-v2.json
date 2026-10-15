@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "connect-ai-lab-aimo/connectailab-rl-juju-v2",
+  "slug": "connect-ai-lab-aimo-connectailab-rl-juju-v2",
+  "author": "connect-ai-lab-aimo",
+  "url": "https://huggingface.co/connect-ai-lab-aimo/connectailab-rl-juju-v2",
+  "created_at": "2026-10-14T19:04:06.000Z",
+  "updated_at": "2026-10-14T19:04:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "peft",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "reinforcement-learning",
+    "deep-reinforcement-learning",
+    "grpo",
+    "decision-making",
+    "gymnasium",
+    "connect-tycoon",
+    "connect-ai-lab",
+    "connectailab",
+    "lora",
+    "qwen3.5",
+    "ko",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 41684315,
+  "storage_human": "42 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SNCF Connect : Réservez vos billets SNCF, bus et covoiturage",
+      "url": "https://www.sncf-connect.com/",
+      "snippet": "Téléchargez l’appli SNCF Connect pour une mobilité plus simple, plus fluide et plus propre, partout en France. En un seul geste, …"
+    },
+    {
+      "title": "Garmin Connect",
+      "url": "https://connect.garmin.com/",
+      "snippet": "Whether you run, swim, kayak or lift weights... whatever you do, Garmin Connect can track it. The statistics recorded during each …"
+    },
+    {
+      "title": "Sign In | Connect | McGraw Hill",
+      "url": "https://connect.mheducation.com/",
+      "snippet": "Access McGraw Hill Education's Connect platform for personalized learning tools and resources to enhance your educational …"
+    },
+    {
+      "title": "SNCF Connect : Book your train tickets to France and Europe",
+      "url": "https://www.sncf-connect.com/en-en",
+      "snippet": "Download the SNCF Connect app for faster, easier and cleaner mobility across France. With one touch, you can organise, book and …"
+    },
+    {
+      "title": "Accueil - FranceConnect",
+      "url": "https://www.franceconnect.gouv.fr/",
+      "snippet": "Qu'est ce que FranceConnect ? FranceConnect est la solution de l’État pour faciliter la connexion à vos services et démarches en …"
+    }
+  ]
+}

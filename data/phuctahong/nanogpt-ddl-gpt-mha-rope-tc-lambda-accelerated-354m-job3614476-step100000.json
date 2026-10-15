@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "phuctahong/nanogpt-ddl-gpt-mha-rope-tc-lambda-accelerated-354m-job3614476-step100000",
+  "slug": "phuctahong-nanogpt-ddl-gpt-mha-rope-tc-lambda-accelerated-354m-job3614476-step100000",
+  "author": "phuctahong",
+  "url": "https://huggingface.co/phuctahong/nanogpt-ddl-gpt-mha-rope-tc-lambda-accelerated-354m-job3614476-step100000",
+  "created_at": "2026-10-14T20:48:19.000Z",
+  "updated_at": "2026-10-14T20:53:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "nanogptpro",
+    "nanogpt",
+    "fineweb-edu",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 354213252,
+  "parameters_human": "354.2M",
+  "storage_bytes": 1416917584,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "phuctahong/nanogpt-ddl2-gpt-mha-rope-cc-ec-lambda-weighted-accelerated ...",
+      "url": "https://huggingface.co/phuctahong/nanogpt-ddl2-gpt-mha-rope-cc-ec-lambda-weighted-accelerated-353m-job13442131-step100000",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DDL - a phuctahong Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/phuctahong/ddl",
+      "snippet": "phuctahong/nanogpt-ddl-gpt-mha-rope-tc-ec-lambda-accelerated-354m-job9939431-step100000 ... phuctahong/nanogpt-ddl2-gpt-mha-rope-cc-ec-lambda-weighted-accelerated-353m-job10311233-step100000"
+    },
+    {
+      "title": "nanogpt-ddl2-gpt-mha-rope-cc-ec-lambda-weighted-accelerated-353m ...",
+      "url": "https://essamamdani.com/ai-models/hf-phuctahong-nanogpt-ddl2-gpt-mha-rope-cc-ec-lambda-weighted-accelerated-353m-job10311234-step100000",
+      "snippet": "Model card indexed from Hugging Face. Specs: 353M parameters, sourced from Hugging Face. Compare nanogpt-ddl2-gpt-mha-rope-cc-ec-lambda-weighted-accelerated-353"
+    },
+    {
+      "title": "nanogptpro/config/deepnet/fixed_digit/train_ddl_gpt_mha_rope ... - GitHub",
+      "url": "https://github.com/math-ai-org/nanogptpro/blob/main/config/deepnet/fixed_digit/train_ddl_gpt_mha_rope_cc_ec_lambda_accelerated_deepnet_L512_fixed_digit_4_single_gpu.py",
+      "snippet": "Contribute to math-ai-org/nanogptpro development by creating an account on GitHub."
+    },
+    {
+      "title": "NanoGPT Pro — Multi-Architecture NanoGPT Training & Evaluation Suite",
+      "url": "https://math-ai-org.github.io/nanogptpro/",
+      "snippet": "A Multi-Architecture NanoGPT Training & Evaluation Suite Pretrain and benchmark modern transformer and fast-weight language models — from MHA with RoPE to the Fast Weight Attention framework and its implementations (DeltaNet, Gated DeltaNet, Mamba 2/3, Lightning Attention, and the Falcon family) — with hand-written Triton kernels, a bundled ..."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "zaydmulani/Ternary-Bonsai-1.7B-TQ2_0_G128",
+  "slug": "zaydmulani-ternary-bonsai-1-7b-tq2_0_g128",
+  "author": "zaydmulani",
+  "url": "https://huggingface.co/zaydmulani/Ternary-Bonsai-1.7B-TQ2_0_G128",
+  "created_at": "2026-10-14T20:48:18.000Z",
+  "updated_at": "2026-10-14T20:48:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "ternary",
+    "1.58-bit",
+    "llama.cpp",
+    "cortex-a53",
+    "arduino",
+    "edge",
+    "text-generation",
+    "base_model:prism-ml/Ternary-Bonsai-1.7B-unpacked",
+    "base_model:quantized:prism-ml/Ternary-Bonsai-1.7B-unpacked",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720028160,
+  "parameters_human": "1.72B",
+  "storage_bytes": 463286240,
+  "storage_human": "463 MB",
+  "base_model": "prism-ml/Ternary-Bonsai-1.7B-unpacked",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Le Figaro - Actualité en direct et informations en continu",
+      "url": "https://www.lefigaro.fr/?msockid=074bed90914068b52af1fa6290cd6989",
+      "snippet": "A la Une : Retrouvez toute l'actualité en France, à l'international, l'actualité économique et politique avec Le Figaro"
+    },
+    {
+      "title": "«Ce n’était pas mon expérience» : après les accusations de tromperie ...",
+      "url": "https://madame.lefigaro.fr/celebrites/actu-people/ce-n-etait-pas-mon-experience-apres-les-accusations-de-tromperie-par-lily-allen-david-harbour-brise-enfin-le-silence-20260611",
+      "snippet": "Jun 11, 2026 · Dans West end girl, son premier album depuis sept ans sorti en octobre dernier, Lily Allen réglait ses comptes avec …"
+    },
+    {
+      "title": "Le Figaro - Le Flash Actu",
+      "url": "https://www.lefigaro.fr/flash-actu?msockid=074bed90914068b52af1fa6290cd6989",
+      "snippet": "Suivez les dernières informations en direct sur le Flash Actu du Figaro"
+    },
+    {
+      "title": "Les journaux et magazines numériques - Kiosque Figaro",
+      "url": "https://kiosque.lefigaro.fr/",
+      "snippet": "Le journal Le Figaro, TV Magazine, Madame Figaro... Retrouvez toutes les éditions des journaux et magazines du Figaro au format …"
+    },
+    {
+      "title": "ventes immobilier de luxe Provence-Alpes-Côte d'Azur, France",
+      "url": "https://proprietes.lefigaro.fr/annonces/immobilier-achat-provence+alpes+cote+d+azur-france/",
+      "snippet": "Consultez les 15 616 annonces immobilières des plus beaux Biens de prestige en Vente Provence-Alpes-Côte d'Azur ️ et trouvez …"
+    }
+  ]
+}

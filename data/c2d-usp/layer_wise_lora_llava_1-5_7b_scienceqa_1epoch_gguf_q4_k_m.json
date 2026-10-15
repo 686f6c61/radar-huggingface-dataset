@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "c2d-usp/layer_wise_lora_llava_1.5_7B_scienceqa_1epoch_GGUF_Q4_K_M",
+  "slug": "c2d-usp-layer_wise_lora_llava_1-5_7b_scienceqa_1epoch_gguf_q4_k_m",
+  "author": "c2d-usp",
+  "url": "https://huggingface.co/c2d-usp/layer_wise_lora_llava_1.5_7B_scienceqa_1epoch_GGUF_Q4_K_M",
+  "created_at": "2026-10-14T23:57:20.000Z",
+  "updated_at": "2026-10-15T00:02:12.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:llama2",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738939904,
+  "parameters_human": "6.74B",
+  "storage_bytes": 4705803968,
+  "storage_human": "4.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accueil C2D | C2D Bordeaux Métropole",
+      "url": "https://c2d.bordeaux-metropole.fr/",
+      "snippet": "May 16, 2025 · Bordeaux Métropole a sollicité la participation du C2D à la démarche « Métropole à Vivre ». Conférences, ateliers, …"
+    },
+    {
+      "title": "Contrat de désendettement et de développement — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Contrat_de_d%C3%A9sendettement_et_de_d%C3%A9veloppement",
+      "snippet": "Le Contrat de désendettement et de développement (en abrégé C2D) constitue le principal volet bilatéral additionnel français de l’ …"
+    },
+    {
+      "title": "C2D Bordeaux Métropole",
+      "url": "https://c2d.bordeaux-metropole.fr/recherche",
+      "snippet": "May 19, 2026 · Retour sur la plénière du C2D consacrée à l’intelligence artificielle, un évènement qui a eu lieu le 27 mars 2025 au …"
+    },
+    {
+      "title": "C2D Prévention - Cabinet Conseil en Prévention des Risques et …",
+      "url": "https://www.c2dprevention.com/",
+      "snippet": "Cabinet conseil en prévention des risques, C2D Prévention aide les entreprises à ancrer une culture sécurité durable : …"
+    },
+    {
+      "title": "C2D - Catalyseur de développement",
+      "url": "https://www.c2dservices.com/",
+      "snippet": "C2D supports the transformation of education and training systems in favor of the socio-economic integration of young people and …"
+    }
+  ]
+}

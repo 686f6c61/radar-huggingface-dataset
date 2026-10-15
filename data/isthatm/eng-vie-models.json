@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "isthatm/eng-vie-models",
+  "slug": "isthatm-eng-vie-models",
+  "author": "isthatm",
+  "url": "https://huggingface.co/isthatm/eng-vie-models",
+  "created_at": "2026-10-14T10:50:59.000Z",
+  "updated_at": "2026-10-14T23:31:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1938613145,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "isthatm (Minh Le) - Hugging Face",
+      "url": "https://huggingface.co/isthatm",
+      "snippet": "Nmt Transformer 🚀 Visualize and interpret transformer model predictions isthatm about 6 hours ago models2"
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, DeepSeek, Qwen, Mistral, Z.ai, Meta, and important open-weight model families."
+    },
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "AI Model Detector — Which AI Made This Image? | PromptShotAI",
+      "url": "https://promptshotai.com/tools/ai-model-detector",
+      "snippet": "Free AI model detector. Upload any image and find out which AI generated it — Midjourney, Flux, SDXL, DALL-E, or Ideogram — with a confidence score and visual tells."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

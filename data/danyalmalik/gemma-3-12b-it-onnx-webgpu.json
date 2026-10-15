@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "danyalmalik/gemma-3-12b-it-ONNX-WebGPU",
+  "slug": "danyalmalik-gemma-3-12b-it-onnx-webgpu",
+  "author": "danyalmalik",
+  "url": "https://huggingface.co/danyalmalik/gemma-3-12b-it-ONNX-WebGPU",
+  "created_at": "2026-10-14T22:34:44.000Z",
+  "updated_at": "2026-10-14T22:47:13.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "gemma3",
+    "webgpu",
+    "quick-inference",
+    "base_model:google/gemma-3-12b-it",
+    "base_model:quantized:google/gemma-3-12b-it",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8802883039,
+  "storage_human": "8.8 GB",
+  "base_model": "google/gemma-3-12b-it",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Visit Dubai – Official Tourism Guide to Dubai’s Attractions, Events ...",
+      "url": "https://www.visitdubai.com/",
+      "snippet": "Explore Dubai’s iconic landmarks, vibrant neighbourhoods, world-class shopping and rich cultural experiences. Plan your …"
+    },
+    {
+      "title": "Plan Your Trip to Dubai: Best of Dubai Tourism - Tripadvisor",
+      "url": "https://www.tripadvisor.com/Tourism-g295424-Dubai_Emirate_of_Dubai-Vacations.html",
+      "snippet": "According to forum posts, some must-see attractions in Dubai include the Burj Khalifa, Dubai Mall, and the Dubai Fountain Walk …"
+    },
+    {
+      "title": "Book a flight | Emirates",
+      "url": "https://www.emirates.com/english/book/?msockid=026348775f9663d81e4f5f855ecf62d8",
+      "snippet": "Book your flights online with us. Explore our routes, find the best fares and see what’s on your flight. Complete your trip with hotels …"
+    },
+    {
+      "title": "Dubai Travel Guide - Attractions, Tours & Things to Do",
+      "url": "https://www.dubaitravel.com/",
+      "snippet": "22 hours ago · Step back in time at the historic Al Fahidi District with its traditional wind-tower architecture, explore the Dubai …"
+    },
+    {
+      "title": "Travel to Dubai | Deals - Deals | Visit Dubai",
+      "url": "https://www.visitdubai.com/en/travel-to-dubai",
+      "snippet": "Are you ready for a holiday? With endless sunshine, fabulous shopping, breezy cabanas and family fun, Dubai presents the ultimate …"
+    }
+  ]
+}

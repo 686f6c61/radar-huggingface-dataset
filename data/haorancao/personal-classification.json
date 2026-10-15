@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "haorancao/personal-classification",
+  "slug": "haorancao-personal-classification",
+  "author": "haorancao",
+  "url": "https://huggingface.co/haorancao/personal-classification",
+  "created_at": "2026-10-14T23:03:30.000Z",
+  "updated_at": "2026-10-14T23:03:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "Hoar012 (Haoran Hao) · GitHub",
+      "url": "https://github.com/Hoar012",
+      "snippet": "Undergraduate at the School of Artificial Intelligence, Nanjing University (2021-2025). Research Intern at MMLab@The Chinese University of Hong Kong (2024-2025)."
+    },
+    {
+      "title": "haorancao · GitHub",
+      "url": "https://github.com/haorancao",
+      "snippet": "haorancao has 2 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Anthropic says its AI model submitted a false cold case tip to ...",
+      "url": "https://www.aol.com/articles/anthropic-says-model-submitted-false-182434000.html",
+      "snippet": "The AI model reached out to PhillyUnsolvedMurders.com, part of the police department, on July 18 and made a \"false homicide tip,\" Philadelphia police said Tuesday in a statement."
+    },
+    {
+      "title": "haorancao - Codeforces",
+      "url": "https://codeforces.com/profile/haorancao",
+      "snippet": "Codeforces. Programming competitions and contests, programming community Contest rating: 1615 (max. expert, 1722) Contribution: 0 Friend of: 2 users Last visit: 15 months ago Registered: 4 years ago Comments Talks | Send message"
+    }
+  ]
+}

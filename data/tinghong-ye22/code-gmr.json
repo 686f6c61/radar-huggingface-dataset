@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "Tinghong-Ye22/code-GMR",
+  "slug": "tinghong-ye22-code-gmr",
+  "author": "Tinghong-Ye22",
+  "url": "https://huggingface.co/Tinghong-Ye22/code-GMR",
+  "created_at": "2026-10-14T18:59:22.000Z",
+  "updated_at": "2026-10-14T19:01:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "arxiv:2505.02833",
+    "arxiv:2510.02252",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 780597211,
+  "storage_human": "781 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Confédération internationale des sorciers | Wiki Harry Potter | Fandom",
+      "url": "https://harrypotter.fandom.com/fr/wiki/Conf%C3%A9d%C3%A9ration_internationale_des_sorciers",
+      "snippet": "Le 30 mai, Le Fantôme de New York annonce que que le prochain sommet de la Confédération internationale des sorciers aura lieu …Read more"
+    },
+    {
+      "title": "Équipe internationale | Wiki Harry Potter | Fandom",
+      "url": "https://harrypotter.fandom.com/fr/wiki/%C3%89quipe_internationale",
+      "snippet": "Une équipe internationale ( v. o. International Task Force ) est un groupe d'intervention spécial déployé par la Confédération …"
+    },
+    {
+      "title": "Albus Dumbledore — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Albus_Dumbledore",
+      "snippet": "Au cours de sa carrière, Dumbledore a reçu de nombreuses distinctions : il est notamment Docteur en Sorcellerie, enchanteur-en …"
+    },
+    {
+      "title": "International Confederation of Wizards (I.C.W.) - Harry Potter Lexicon",
+      "url": "https://www.hp-lexicon.org/thing/international-confederation-of-wizards/",
+      "snippet": "Mar 15, 2022 · The International Confederation of Wizards (ICW) is a wizarding intergovernmental organisation, equivalent to the …"
+    },
+    {
+      "title": "Confédération internationale des sorciers | Wiki Wizarding World RP ...",
+      "url": "https://wizarding-world-rp.fandom.com/fr/wiki/Conf%C3%A9d%C3%A9ration_internationale_des_sorciers",
+      "snippet": "Le 30 mai, Le Fantôme de New York annonce que que le prochain sommet de la Confédération internationale des sorciers aura lieu …"
+    }
+  ]
+}

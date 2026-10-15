@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/TerminalHorizon-122B-A10B-i1-GGUF",
   "created_at": "2026-10-13T11:56:07.000Z",
-  "updated_at": "2026-10-14T02:16:45.000Z",
+  "updated_at": "2026-10-14T05:49:00.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -35,12 +35,12 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 0,
+  "downloads_30d": 15511,
   "trending_score": 0,
   "parameters": 122111526912,
   "parameters_human": "122.11B",
-  "storage_bytes": 956750646400,
-  "storage_human": "956.8 GB",
+  "storage_bytes": 1163298293728,
+  "storage_human": "1163.3 GB",
   "base_model": "shunzou05/TerminalHorizon-122B-A10B",
   "formats": [
     "gguf"

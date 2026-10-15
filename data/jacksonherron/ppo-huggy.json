@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "jacksonherron/ppo-Huggy",
+  "slug": "jacksonherron-ppo-huggy",
+  "author": "jacksonherron",
+  "url": "https://huggingface.co/jacksonherron/ppo-Huggy",
+  "created_at": "2026-10-15T00:49:04.000Z",
+  "updated_at": "2026-10-15T00:49:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "Huggy",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Huggy",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 187278439,
+  "storage_human": "187 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PERMAINAN DINA, BERAWAL DARI TUKANG URUT | Penana",
+      "url": "https://www.penana.com/story/216803/permainan-dina-berawal-dari-tukang-urut/toc",
+      "snippet": "Go to Issue 0/7 1/7 2/7 3/7 4/7 5/7 6/7 7/7 swap_vert #1 BAB 1 0 Likes 1203 Reads 0 Comments ☰ #2 BAB 2 0 Likes 1001 Reads 0 …"
+    },
+    {
+      "title": "BAB 8 PERMAINAN ANAK-1. MAIN TUTUP MATA - AnyFlip",
+      "url": "https://online.anyflip.com/yzedb/emqk/mobile/index.html",
+      "snippet": "BAB 8 PERMAINAN ANAK-1. MAIN TUTUP MATA Close Flip Sound"
+    },
+    {
+      "title": "Putri Manja dari Lima Tuan · Episode 8 Gratis | Huangguo Drama",
+      "url": "https://huangguodrama.ai/id/video/119014/ep-8/",
+      "snippet": "Gratis, tanpa daftar atau aplikasi. Audio Inggris. Tonton Putri Manja dari Lima Tuan, episode 8, gratis secara online."
+    },
+    {
+      "title": "berawal dari permainan jadul #mainananak #edukasi - YouTube",
+      "url": "https://www.youtube.com/watch?v=7M8hwGMNTl8",
+      "snippet": "Jul 10, 2026 · berawal dari permainan jadul #mainananak #edukasi Umma puput 126 subscribers Subscribe"
+    },
+    {
+      "title": "Kunci Jawaban, BMR Kelas 8 SMP/MTs Bab 8 tentang Permainan …",
+      "url": "https://pekanbaru.tribunnews.com/2024/11/12/kunci-jawaban-bmr-kelas-8-smpmts-bab-8-tentang-permainan-tradisional-dengan-peralatan",
+      "snippet": "Nov 12, 2024 · Silahkan simak kunci jawaban BMR Kelas 8 Bab 8, tentang Permainan Tradisional dengan Peralatan. Namun, …"
+    }
+  ]
+}

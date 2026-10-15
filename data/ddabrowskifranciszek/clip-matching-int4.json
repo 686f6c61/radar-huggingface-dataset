@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ddabrowskifranciszek/clip-matching-int4",
+  "slug": "ddabrowskifranciszek-clip-matching-int4",
+  "author": "ddabrowskifranciszek",
+  "url": "https://huggingface.co/ddabrowskifranciszek/clip-matching-int4",
+  "created_at": "2026-10-14T22:51:18.000Z",
+  "updated_at": "2026-10-14T22:51:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ポルノハブの収益化を行うにあたり、法律関係のことを教えてもらい …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10313400665",
+      "snippet": "Apr 7, 2025 · ポルノハブの収益化を行うにあたり、法律関係のことを教えてもらいたいです。①法人ではなく、個人で始める予定 …"
+    },
+    {
+      "title": "pornhob（ポーンハブ？）の動画をiPhoneにダウンロードしたいで.",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11248370086",
+      "snippet": "Aug 27, 2021 · pornhob（ポーンハブ？）の動画をiPhoneにダウンロードしたいです。キングボックスできななかったのですが、ほ …"
+    },
+    {
+      "title": "遂宁论坛 - 第5页 - 天府社区",
+      "url": "https://bbs.scol.com.cn/forum-1277-5.html",
+      "snippet": "城市论坛遂宁分版 ,天府社区 天府社区 天府论坛 精彩四川 遂宁论坛 收藏本版 36| 存档 遂宁论坛 今日: 0|主题: 13040|排名: 42 版主: 西 …"
+    },
+    {
+      "title": "提示信息 天府社区",
+      "url": "https://bbs.scol.com.cn/thread-15263695-1-1.html",
+      "snippet": ",天府社区 亲，需作者登录才能查看！ ,天府社区"
+    },
+    {
+      "title": "pronhubを使用する上で初心者が心掛けるべきことありましたら教え …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11271529816",
+      "snippet": "Nov 25, 2022 · pronhubを使用する上で初心者が心掛けるべきことありましたら教えてください。出来れば、詐欺に引っかからない …"
+    }
+  ]
+}

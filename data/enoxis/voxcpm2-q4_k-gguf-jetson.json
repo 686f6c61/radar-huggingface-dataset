@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Enoxis/VoxCPM2-Q4_K-GGUF-jetson",
+  "slug": "enoxis-voxcpm2-q4_k-gguf-jetson",
+  "author": "Enoxis",
+  "url": "https://huggingface.co/Enoxis/VoxCPM2-Q4_K-GGUF-jetson",
+  "created_at": "2026-10-15T01:22:24.000Z",
+  "updated_at": "2026-10-15T01:40:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "ggml",
+  "languages": [],
+  "tags": [
+    "ggml",
+    "gguf",
+    "tts",
+    "voice-cloning",
+    "zero-shot",
+    "jetson",
+    "audio.cpp",
+    "voxcpm2",
+    "base_model:openbmb/VoxCPM2",
+    "base_model:quantized:openbmb/VoxCPM2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1697246240,
+  "storage_human": "1.7 GB",
+  "base_model": "openbmb/VoxCPM2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - sander110419/voxcpm2-jetson-xavier-nx: Fastest zero-shot voice ...",
+      "url": "https://github.com/sander110419/voxcpm2-jetson-xavier-nx",
+      "snippet": "patches/0003-voxcpm2-jetson-xavier-performance.patch — the performance series (details below). Numerically exact: before/after PCM output is bit-identical (same fixed seed), verified with per-sample diff on multiple texts. config/voxcpm2_server.json — production server config (streaming, Q4_K GGUF)."
+    },
+    {
+      "title": "voxcpm2-jetson-xavier-nx/docs/GUIDE.md at master - GitHub",
+      "url": "https://github.com/sander110419/voxcpm2-jetson-xavier-nx/blob/master/docs/GUIDE.md",
+      "snippet": "VoxCPM2 GPU TTS on Jetson Xavier NX — full build & run guide Everything needed to reproduce the fastest zero-shot voice-cloning TTS service that runs on a Jetson Xavier NX (JetPack 5, CUDA 11.4, Volta sm_72): the audio.cpp engine, the patches in this repo, a Q4_K GGUF of openbmb/VoxCPM2, and a thin streaming HTTP adapter."
+    },
+    {
+      "title": "ExNihilus/VoxCPM2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ExNihilus/VoxCPM2-GGUF",
+      "snippet": "ExNihilus / VoxCPM2-GGUF Like 0 GGUF License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new VoxCPM2-GGUF (mirror) Files"
+    },
+    {
+      "title": "VoxCPM 2.0 documentation",
+      "url": "https://voxcpm.readthedocs.io/en/latest/",
+      "snippet": "Community Projects ¶ We&#x27;re excited to see the VoxCPM community growing. A few representative ecosystem projects: NanoVLLM-VoxCPM for high-throughput GPU serving vLLM-Omni for official VoxCPM2 serving on the upstream vLLM stack with continuous batching and an OpenAI-compatible API VoxCPM.cpp for ggml / GGUF based CPU, CUDA, and Vulkan inference VoxCPMANE for Apple Neural Engine deployment ..."
+    },
+    {
+      "title": "Quantized Models for openbmb/VoxCPM2 - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:openbmb/VoxCPM2",
+      "snippet": "Active filters: openbmb/VoxCPM2. Clear all. DennisHuang648/VoxCPM2-GGUF. Text-to-Speech • 0.9B • Updated Jun 30 • 5.97k • 13"
+    }
+  ]
+}

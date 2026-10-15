@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "elsa-cec7/retrieval",
+  "slug": "elsa-cec7-retrieval",
+  "author": "elsa-cec7",
+  "url": "https://huggingface.co/elsa-cec7/retrieval",
+  "created_at": "2026-10-14T21:18:10.000Z",
+  "updated_at": "2026-10-14T21:18:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Elsa Lunghini — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Elsa_Lunghini",
+      "snippet": "Elsa Lunghini, ou simplement Elsa, née le 20 mai 1973 à Paris 18e, est une chanteuse et actrice française. De 1986 à 2007, elle a …"
+    },
+    {
+      "title": "Frozen | Official Disney Site",
+      "url": "https://frozen.disney.com/",
+      "snippet": "Elsa is a mythic character – magical and larger than life. Now completely in control of her powers, she is confident, resolved, and …"
+    },
+    {
+      "title": "Elsa (Disney) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Elsa_(Disney)",
+      "snippet": "Elsa d'Arendelle, aussi appelée la Reine des neiges, est un personnage de fiction qui est apparu pour la première fois dans le 53e …"
+    },
+    {
+      "title": "Elsa - T'en Va Pas (Clip Officiel) - YouTube",
+      "url": "https://www.youtube.com/watch?v=TeaKAB-IxOE",
+      "snippet": "Nov 14, 2012 · Elsa - T'en Vas Pas (Clip Officiel) Available on all platforms : https://bfan.link/new-release-960 Playlist \"Année 80 LA …"
+    },
+    {
+      "title": "Meet Elsa ‍ ️⛄️ | Frozen | ‪@disneykids ... - YouTube",
+      "url": "https://www.youtube.com/watch?v=ov6e_rLn4-Q",
+      "snippet": "Oct 14, 2025 · Welcome to Arendelle where you'll find Elsa, the kingdom's queen who was born with magical ice powers. During her …"
+    }
+  ]
+}

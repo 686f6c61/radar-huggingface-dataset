@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "CharacterMind/playtime-mind",
+  "slug": "charactermind-playtime-mind",
+  "author": "CharacterMind",
+  "url": "https://huggingface.co/CharacterMind/playtime-mind",
+  "created_at": "2026-10-14T19:39:42.000Z",
+  "updated_at": "2026-10-14T21:20:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth/Phi-3-mini-4k-instruct-bnb-4bit",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:unsloth/Phi-3-mini-4k-instruct-bnb-4bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 120097131,
+  "storage_human": "120 MB",
+  "base_model": "unsloth/Phi-3-mini-4k-instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "All idols from shortest to tallest : r/TheaterDays - Reddit",
+      "url": "https://www.reddit.com/r/TheaterDays/comments/asv6f1/all_idols_from_shortest_to_tallest/",
+      "snippet": "Feb 20, 2019 · All idols from shortest to tallest Well I honestly don't know why i spent time doing this and i doubt anyone really cares …"
+    },
+    {
+      "title": "JAV Actress Heights | How Tall Are Your Favorite Stars?",
+      "url": "https://m.youtube.com/watch?v=_9hBkGkavOU",
+      "snippet": "Have you ever wondered how tall your favorite JAV actresses really are? In this video, Global Top Girl reveals the heights of the …"
+    },
+    {
+      "title": "Best Tall JAV Actresses (2026 Guide) | Tall Japanese AV Stars",
+      "url": "https://uncensoredjav.com/jav-actress/tall-actresses/",
+      "snippet": "Discover the best Tall JAV actresses featuring tall Japanese AV stars 165 cm or taller. Compare featured actresses, learn our height …"
+    },
+    {
+      "title": "Prettiest & Tallest Japanese Actresses/Prnstars | Part 1",
+      "url": "https://m.youtube.com/watch?v=X03QsFSdYu8",
+      "snippet": "Oct 6, 2023 · In today's video, we're shining a spotlight on the prettiest and tallest Japanese actresses.Join us as we take a glimpse …"
+    },
+    {
+      "title": "JAV Actress Ranking: Who Are The Top Stars on J-List in 2025?",
+      "url": "https://blog.jlist.com/your-friend-in-japan/jav-actress-ranking-who-are-the-top-stars-on-j-list-in-2025/",
+      "snippet": "Let's check out the J-List JAV actress ranking for 2025 in this blog post. Where does your favorite Japan AV idol rank on our list?"
+    }
+  ]
+}

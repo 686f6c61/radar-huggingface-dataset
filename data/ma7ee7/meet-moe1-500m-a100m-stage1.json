@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Ma7ee7/Meet-MoE1-500M-A100M-Stage1",
+  "slug": "ma7ee7-meet-moe1-500m-a100m-stage1",
+  "author": "Ma7ee7",
+  "url": "https://huggingface.co/Ma7ee7/Meet-MoE1-500M-A100M-Stage1",
+  "created_at": "2026-10-15T01:05:22.000Z",
+  "updated_at": "2026-10-15T01:27:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_moe",
+    "text-generation",
+    "qwen3-moe",
+    "base-model",
+    "muon",
+    "experimental",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 499332352,
+  "parameters_human": "499.3M",
+  "storage_bytes": 1997494136,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ma7ee7 (M7) - Hugging Face",
+      "url": "https://huggingface.co/Ma7ee7/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 8 hours ago ... published a model about 8 hours ago"
+    },
+    {
+      "title": "Meet7 - a Ma7ee7 Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Ma7ee7/meet7",
+      "snippet": "A Collection of Efficiently Fine-Tuned Models."
+    },
+    {
+      "title": "Current DeepSeek Models: API IDs & Model Comparison",
+      "url": "https://deepseekv4.network/models",
+      "snippet": "Compare current official DeepSeek API models with this site&#x27;s Pro and Flash routes. Check original checkpoint specs, source dates and API credits."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "GitHub - ArJuNNuJrA/AI: Run frontier MoE models on hardware you already ...",
+      "url": "https://github.com/ArJuNNuJrA/AI",
+      "snippet": "Tiny engine, immense model. Run frontier MoE models — 744B to 2.8T parameters — on consumer and heterogeneous hardware, in pure C with zero engine dependencies, by treating storage, RAM, and VRAM as a single inference hierarchy (AI memory multitiering)."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Dariusdup/MiniCPM-V-4.7-35B-A3B",
+  "slug": "dariusdup-minicpm-v-4-7-35b-a3b",
+  "author": "Dariusdup",
+  "url": "https://huggingface.co/Dariusdup/MiniCPM-V-4.7-35B-A3B",
+  "created_at": "2026-10-14T21:21:04.000Z",
+  "updated_at": "2026-10-14T21:21:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "minicpmv4_7",
+    "image-text-to-text",
+    "minicpm-v",
+    "multimodal",
+    "On-Device Model",
+    "lightweight",
+    "moe",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35212875824,
+  "parameters_human": "35.21B",
+  "storage_bytes": 70559795151,
+  "storage_human": "70.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openbmb/MiniCPM-V-4.7-35B-A3B · Hugging Face",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B",
+      "snippet": "MiniCPM-V 4.7 is the latest model in the MiniCPM-V series, available in a 35B-A3B variant, with 35B-A3B being the first MoE model in the MiniCPM-V series. It builds on the family&#x27;s single-image, multi-image, and video understanding capabilities, combining stronger foundation capabilities with efficient visual encoding and on-device inference."
+    },
+    {
+      "title": "MiniCPM-V 4.7: A 35B MoE Vision Model That Runs on an iPhone - explainx.ai",
+      "url": "https://www.explainx.ai/blog/minicpm-v-4-7-35b-a3b-on-device-moe-iphone-lookahead-expert-scheduling-2026",
+      "snippet": "OpenBMB MiniCPM-V 4.7 35B-A3B is an Apache-2.0 vision MoE with 13+ tok/s on iPhone 17 Pro Max. What is verified, how to run it, and caveats."
+    },
+    {
+      "title": "MiniCPM-V 4.7 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/main/model_doc/minicpmv4_7",
+      "snippet": "MiniCPM-V 4.7 MiniCPM-V is a series of efficient multimodal large language models developed by OpenBMB. Like MiniCPM-V 4.6, the MiniCPM-V 4.7 architecture pairs a SigLIP vision encoder that has a window-attention merger with a Qwen3.5 language model backbone, and supports both 4x and 16x visual downsampling modes."
+    },
+    {
+      "title": "MiniCPM-V 4.7 35B-A3B: Specs and Official Evaluation",
+      "url": "https://www.datalearner.com/ai-models/pretrained-models/minicpm-v-4-7-35b-a3b",
+      "snippet": "MiniCPM-V 4.7 35B-A3B 当前已收录的代表性评测结果包括 MMStar（1 / 6，得分 80.67）、OCRBench（1 / 6，得分 91.20）、MMMU（16 / 73，得分 80.22）。 本页还汇总了参数规模、上下文长度与 API 价格，便于结合评测结果与部署约束一起判断模型适配度。"
+    },
+    {
+      "title": "OpenBMB open-sources MiniCPM-V 4.7: a 35B-A3B MoE multimodal model that ...",
+      "url": "https://aicoder.com/news/news-20261013-openbmb-minicpm-v-4-7-35b-a3b-on-device-moe",
+      "snippet": "On 2026-10-12 OpenBMB released MiniCPM-V 4.7, an Apache-2.0 open multimodal family with a 35B-A3B variant (the series&#x27; first MoE) and a 1B variant. Its Lookahead Expert Scheduling (LES) prefetches experts across layers and, combined with layer-wise mixed-precision quantization and DSpark speculative sampling, lifts SSD-offloaded decoding on an iPad Pro M4 (16GB) from 2.97 to 17.39 tokens/s (5 ..."
+    }
+  ]
+}

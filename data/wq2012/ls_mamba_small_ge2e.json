@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "wq2012/ls_mamba_small_ge2e",
+  "slug": "wq2012-ls_mamba_small_ge2e",
+  "author": "wq2012",
+  "url": "https://huggingface.co/wq2012/ls_mamba_small_ge2e",
+  "created_at": "2026-10-15T01:38:21.000Z",
+  "updated_at": "2026-10-15T01:38:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "flaxspeaker",
+  "languages": [],
+  "tags": [
+    "flaxspeaker",
+    "jax",
+    "safetensors",
+    "audio",
+    "speaker-verification",
+    "speaker-recognition",
+    "speaker-embeddings",
+    "flax",
+    "mamba",
+    "ge2e_softmax",
+    "cosine",
+    "audio-classification",
+    "dataset:librispeech_asr",
+    "dataset:cnceleb",
+    "dataset:voxceleb",
+    "arxiv:1710.10467",
+    "arxiv:2104.01989",
+    "arxiv:2202.12163",
+    "arxiv:2203.05642",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1028672,
+  "parameters_human": "1.0M",
+  "storage_bytes": 8235694,
+  "storage_human": "8 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "Mamba (deep learning architecture) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mamba_(deep_learning_architecture)",
+      "snippet": "Mamba is a deep learning architecture focused on sequence modeling. It was developed by two researchers Albert Gu from Carnegie Mellon University and Tri Dao from Princeton University to address some limitations of transformer models, especially in processing long sequences, and it is based on the Structured State Space sequence (S4) model. [1][2][3]"
+    },
+    {
+      "title": "LS-Mamba: Gated Spatio-Temporal Modulation and Bidirectional State ...",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-032-31920-3_9",
+      "snippet": "Subsequently, a bidirectional Mamba encoder is employed to model the continuous temporal evolution of emotional states, capturing long-range dependencies with linear computational complexity. The proposed framework achieves efficient modeling with a compact parameter footprint of only 0.06M."
+    },
+    {
+      "title": "What is a Mamba model - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/what-is-a-mamba-model/",
+      "snippet": "Mamba is a neural network architecture designed for large language models and long-sequence tasks. It overcomes Transformer limitations by providing faster inference, lower memory usage and better scalability all without using attention. Key features of mamba models are Uses Selective SSMs (S6) to focus on important past information and handle long-range dependencies. Built on State Space ..."
+    },
+    {
+      "title": "GitHub - xtt-lzt/LS-Mamba",
+      "url": "https://github.com/xtt-lzt/LS-Mamba",
+      "snippet": "Official PyTorch implementation of LS-Mamba: Gated Spatio-Temporal Modulation and Bidirectional State Space Modeling for EEG Emotion Recognition. LS-Mamba is a lightweight hybrid architecture for EEG-based emotion recognition. It combines a Large-Small Gating mechanism for hierarchical spatio-temporal modulation and a bidirectional Mamba encoder for efficient long-range temporal modeling."
+    }
+  ]
+}

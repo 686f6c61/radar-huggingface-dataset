@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Sologid/N-Atlas-cassava-Umuahia",
+  "slug": "sologid-n-atlas-cassava-umuahia",
+  "author": "Sologid",
+  "url": "https://huggingface.co/Sologid/N-Atlas-cassava-Umuahia",
+  "created_at": "2026-10-14T22:57:38.000Z",
+  "updated_at": "2026-10-15T02:11:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "adapter",
+    "lora",
+    "qlora",
+    "agriculture",
+    "cassava",
+    "nigeria",
+    "text-generation",
+    "conversational",
+    "en",
+    "pcm",
+    "base_model:NCAIR1/N-ATLaS",
+    "base_model:adapter:NCAIR1/N-ATLaS",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 709430958,
+  "storage_human": "709 MB",
+  "base_model": "NCAIR1/N-ATLaS",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Territorial Disputes in the South China Sea",
+      "url": "https://www.cfr.org/global-conflict-tracker/conflict/territorial-disputes-south-china-sea",
+      "snippet": "Aug 27, 2026 · China’s sweeping territorial claims in the South China Sea, rejected by a 2016 international tribunal ruling, have …"
+    },
+    {
+      "title": "Territorial disputes in the South China Sea - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Territorial_disputes_in_the_South_China_Sea",
+      "snippet": "Brunei, Indonesia, Malaysia, the Philippines, the People's Republic of China (PRC), Taiwan (Republic of China/ROC), and Vietnam …"
+    },
+    {
+      "title": "Navigating Tensions in the South China Sea: A Multidimensional …",
+      "url": "https://www.cjfp.org/navigating-tensions-in-the-south-china-sea-a-multidimensional-analysis/",
+      "snippet": "Jan 10, 2025 · By Megan Wei, University of Chicago The South China Sea has long been a flashpoint for regional tension, with …"
+    },
+    {
+      "title": "China-Philippines Tensions in the South China Sea",
+      "url": "https://www.congress.gov/crs_external_products/IF/PDF/IF12550/IF12550.5.pdf",
+      "snippet": "Overview In 2023 and 2024, the People's Republic of China (PRC, or China) increased pressure on the Philippines to abandon one …"
+    },
+    {
+      "title": "Rising Tensions in the South China Sea: The Strategic Calculations at ...",
+      "url": "https://www.internationalaffairs.org.au/australianoutlook/rising-tensions-in-the-south-china-sea-the-strategic-calculations-at-play/",
+      "snippet": "Nov 6, 2024 · Beyond mere territorial disputes, it exposes a critical battleground for international law, global influence, and the …"
+    }
+  ]
+}

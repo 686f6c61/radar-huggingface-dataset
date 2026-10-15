@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "lalalalalaa/flux2-klein-edit-loras",
+  "slug": "lalalalalaa-flux2-klein-edit-loras",
+  "author": "lalalalalaa",
+  "url": "https://huggingface.co/lalalalalaa/flux2-klein-edit-loras",
+  "created_at": "2026-10-14T23:56:06.000Z",
+  "updated_at": "2026-10-15T00:00:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "lora",
+    "flux2",
+    "image-editing",
+    "base_model:black-forest-labs/FLUX.2-klein-4B",
+    "base_model:adapter:black-forest-labs/FLUX.2-klein-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 658072072,
+  "storage_human": "658 MB",
+  "base_model": "black-forest-labs/FLUX.2-klein-4B",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "flux-2-klein/9b/base/edit/lora: Image-to-Image model — overview, use ...",
+      "url": "https://www.aimodels.fyi/models/fal/flux-2-klein-9b-base-edit-lora-fal-ai",
+      "snippet": "Q: Can I use pre-trained FLUX.2 style LoRAs from the community with this model? A: The model accepts LoRA adapters, but compatibility depends on whether community adapters target the FLUX.2 [klein] architecture and not other models. Test adapter compatibility independently; not all LoRAs trained for other models will work."
+    },
+    {
+      "title": "Turn Any Photo Into Any Look: flux-2-klein 9B LoRA for ... - HackerNoon",
+      "url": "https://hackernoon.com/turn-any-photo-into-any-look-flux-2-klein-9b-lora-for-image-to-image-editing",
+      "snippet": "A practical guide to fal-ai&#x27;s FLUX.2 Klein 9B LoRA editor—recolor, restyle, and batch-transform images while preserving content."
+    },
+    {
+      "title": "Flux 2 Klein 9B Edit LoRA | Custom LoRA Image API on WaveSpeedAI",
+      "url": "https://wavespeed.ai/models/wavespeed-ai/flux-2-klein-9b/edit-lora",
+      "snippet": "FLUX.2 [klein] 9B Edit with LoRA support is a high-quality image editing model with 9B parameters, offering precise modifications using natural language instructions and personalized styles via custom LoRA adapters. Ready-to-use REST inference API, best performance, no cold starts, affordable pricing."
+    },
+    {
+      "title": "Flux 2 Klein 9b Edit LoRA API Documentation - WaveSpeedAI",
+      "url": "https://wavespeed.ai/docs/docs-api/wavespeed-ai/flux-2-klein-9b-edit-lora",
+      "snippet": "FLUX.2 Klein 9B Edit LoRA is a powerful image editing model with full LoRA support. With 9B parameters, it delivers higher quality edits and better prompt understanding."
+    },
+    {
+      "title": "flux-2-klein/4b/base/edit/lora: Image-to-Image model — overview, use ...",
+      "url": "https://www.aimodels.fyi/models/fal/flux-2-klein-4b-base-edit-lora-fal-ai",
+      "snippet": "Q: What is the typical inference latency for this model? A: The 4B parameter count suggests sub-10-second latency per image, but the exact speed depends on image resolution, edit complexity, and current GPU availability on fal.ai&#x27;s infrastructure. Test with your typical inputs to measure baseline latency."
+    }
+  ]
+}

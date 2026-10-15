@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "wq2012/ls_conformer_small_cosface",
+  "slug": "wq2012-ls_conformer_small_cosface",
+  "author": "wq2012",
+  "url": "https://huggingface.co/wq2012/ls_conformer_small_cosface",
+  "created_at": "2026-10-15T01:38:06.000Z",
+  "updated_at": "2026-10-15T01:38:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "flaxspeaker",
+  "languages": [],
+  "tags": [
+    "flaxspeaker",
+    "jax",
+    "safetensors",
+    "audio",
+    "speaker-verification",
+    "speaker-recognition",
+    "speaker-embeddings",
+    "flax",
+    "conformer",
+    "cosface",
+    "cosine",
+    "audio-classification",
+    "dataset:librispeech_asr",
+    "dataset:cnceleb",
+    "dataset:voxceleb",
+    "arxiv:1710.10467",
+    "arxiv:2104.01989",
+    "arxiv:2202.12163",
+    "arxiv:2203.05642",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2029892,
+  "parameters_human": "2.0M",
+  "storage_bytes": 16254934,
+  "storage_human": "16 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=conformer",
+      "snippet": "Explore machine learning models. byan/librispeech_asr_train_asr_conformer_raw_bpe_batch_bins30000000_accum_grad3_optim_conflr0.001_sp"
+    },
+    {
+      "title": "wq2012/personal-vad-v2-conformer-film-cos · Hugging Face",
+      "url": "https://huggingface.co/wq2012/personal-vad-v2-conformer-film-cos",
+      "snippet": "wq2012 / personal-vad-v2-conformer-film-cos Like 0 Voice Activity Detection LiteRT Safetensors facebook/multilingual_librispeech personal-vad audio speaker-conditioning conformer lstm tensorflow arxiv:1908.04284 arxiv:2204.03793 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Personal VAD 2.0 — E2 Causal Conformer + Speaker Pre-Net (FiLM Cosine) (wq2012 ..."
+    },
+    {
+      "title": "GitHub - yule-li/CosFace: Tensorflow implementation for paper CosFace ...",
+      "url": "https://github.com/yule-li/CosFace",
+      "snippet": "This project is aimmed at implementing the CosFace described by the paper CosFace: Large Margin Cosine Loss for Deep Face Recognition. The code can be trained on CASIA-Webface and the best accuracy LFW is 98.6%. The result is lower than reported by paper (99.33%), which may be caused by sphere network implemented in tensorflow. I train the sphere network implemented in tensorflow using the ..."
+    },
+    {
+      "title": "CosFace Loss: Additive Cosine Margin - emergentmind.com",
+      "url": "https://www.emergentmind.com/topics/cosface-loss",
+      "snippet": "CosFace Loss is a normalized softmax-based objective that leverages hyperspherical geometry with tuned scale and additive margin to improve discrimination in deep face recognition."
+    },
+    {
+      "title": "Models - ONNX Runtime",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "wq2012/univ_lstm_small_ge2e",
+  "slug": "wq2012-univ_lstm_small_ge2e",
+  "author": "wq2012",
+  "url": "https://huggingface.co/wq2012/univ_lstm_small_ge2e",
+  "created_at": "2026-10-15T01:37:51.000Z",
+  "updated_at": "2026-10-15T01:37:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "flaxspeaker",
+  "languages": [],
+  "tags": [
+    "flaxspeaker",
+    "jax",
+    "tflite",
+    "safetensors",
+    "audio",
+    "speaker-verification",
+    "speaker-recognition",
+    "speaker-embeddings",
+    "flax",
+    "lstm",
+    "ge2e_softmax",
+    "cosine",
+    "audio-classification",
+    "dataset:librispeech_asr",
+    "dataset:cnceleb",
+    "dataset:voxceleb",
+    "arxiv:1710.10467",
+    "arxiv:2104.01989",
+    "arxiv:2202.12163",
+    "arxiv:2203.05642",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1710912,
+  "parameters_human": "1.7M",
+  "storage_bytes": 22852007,
+  "storage_human": "23 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "求推荐在安卓电视上观看Netflix性价比最高的方式？ - 知乎",
+      "url": "https://www.zhihu.com/question/345785982",
+      "snippet": "本文全部教程内容是基于用户满足网络要求的前提下，如果网络环境不满足，在下载apk-浏览TV应用市场-打开Netflix的过程中都会受 …"
+    },
+    {
+      "title": "Netflix, Prime Video, Hulu, HBO 等国外流媒体公司分别有哪些优势？",
+      "url": "https://www.zhihu.com/question/309560443",
+      "snippet": "加一句：Chrome中Netflix的清晰程度是要差一个量级的，无论你做什么设置，Win10中一定要去应用商店下载APP或者不要 …"
+    },
+    {
+      "title": "YURT DIŞINDAN NETFLİX TÜRKİYE İZLEMEK - DonanımHaber Forum",
+      "url": "https://forum.donanimhaber.com/yurt-disindan-netflix-turkiye-izlemek--138772860",
+      "snippet": "Merhabalar, ben Almanya da yaşıyorum. Netflix aldım ancak çoğu dizi de Türkçe alt yazı yok. Sadece İngilizce ve Almanca var. …"
+    },
+    {
+      "title": "Netflix Ekran Yansıtma: Ses Var, Görüntü Yok Sorunu Çözümü ...",
+      "url": "https://forum.donanimhaber.com/nerflix-ilgili-onemli-bir-problemim-var--131732166",
+      "snippet": "Netflix ekran yansıtırken yalnızca ses mi geliyor, görüntü yok mu? Bu yaygın sorunu çözmek için cihazlar arası uyumluluk, Wi-Fi …"
+    },
+    {
+      "title": "netflix怎么投屏? - 知乎",
+      "url": "https://www.zhihu.com/question/385027794",
+      "snippet": "Netflix版权保护严格，网络条件有要求，观看设备也有要求，想畅享4K画质最好选用小米盒子国际版、AppleTV等设备，投屏局域网操 …"
+    }
+  ]
+}

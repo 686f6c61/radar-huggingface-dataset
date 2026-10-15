@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "kiroaiseoul/NAJY_act_all11_c100_gist30_nohot_16D_60k_s1000",
+  "slug": "kiroaiseoul-najy_act_all11_c100_gist30_nohot_16d_60k_s1000",
+  "author": "kiroaiseoul",
+  "url": "https://huggingface.co/kiroaiseoul/NAJY_act_all11_c100_gist30_nohot_16D_60k_s1000",
+  "created_at": "2026-10-14T23:23:46.000Z",
+  "updated_at": "2026-10-14T23:24:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "trossen-mobile-ai",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51689104,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206786384,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NAJY_act_all11_c100_gist30_dq_27D_60k_s1000 - Hugging Face",
+      "url": "https://huggingface.co/kiroaiseoul/NAJY_act_all11_c100_gist30_dq_27D_60k_s1000",
+      "snippet": "Instructions to use kiroaiseoul/NAJY_act_all11_c100_gist30_dq_27D_60k_s1000 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "NAJY_act_all11_c100_m1_27D_60k_s2000 - Hugging Face",
+      "url": "https://huggingface.co/kiroaiseoul/NAJY_act_all11_c100_m1_27D_60k_s2000",
+      "snippet": "Instructions to use kiroaiseoul/NAJY_act_all11_c100_m1_27D_60k_s2000 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Nyaa",
+      "url": "https://nyaa.net/",
+      "snippet": "Nyaa - open torrent index. Browse and search torrents with magnet links, peer stats and .torrent downloads."
+    },
+    {
+      "title": "KBJ Radar - Korean BJ Streamers Live Now",
+      "url": "https://kbjradar.com/",
+      "snippet": "62 Korean streamers live right now on SOOP and PandaLive. Usual hours, recent streams and official links for 90 streamers, refreshed every 15 minutes."
+    },
+    {
+      "title": "Korean BJ Actors & Broadcasters — SKBJ",
+      "url": "https://skbj.tv/actors",
+      "snippet": "Browse every Korean BJ actor and broadcaster on SKBJ. Follow your favorites to get notified about new videos, and explore their full HD catalogs."
+    }
+  ]
+}

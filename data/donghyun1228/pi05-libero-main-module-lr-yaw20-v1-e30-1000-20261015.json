@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Donghyun1228/pi05-libero-main-module-lr-yaw20-v1-e30-1000-20261015",
+  "slug": "donghyun1228-pi05-libero-main-module-lr-yaw20-v1-e30-1000-20261015",
+  "author": "Donghyun1228",
+  "url": "https://huggingface.co/Donghyun1228/pi05-libero-main-module-lr-yaw20-v1-e30-1000-20261015",
+  "created_at": "2026-10-14T19:13:02.000Z",
+  "updated_at": "2026-10-14T19:13:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "libero",
+    "inverse-dynamics",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7710227729,
+  "storage_human": "7.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accueil - toutatice.fr",
+      "url": "https://www.toutatice.fr/portail/homepage.html",
+      "snippet": "Toutatice est une marque déposée par le Rectorat de l’Académie de Rennes. Toutes les autres marques commerciales et/ou …"
+    },
+    {
+      "title": "Comment modifier mon mot de passe ? - toutatice.fr",
+      "url": "https://www.toutatice.fr/portail/cms/toutatice/aide-connexion/comment-modifier-mon-mot",
+      "snippet": "Vous êtes ÉLÈVE Dans l'onglet \"Mon bureau\", cliquez sur le bouton <Modifier mon mot de passe> qui se trouve dans la boîte \"Mon …"
+    },
+    {
+      "title": "Accès Pronote -Réseau IACA des collèges du Morbihan - toutatice.fr",
+      "url": "https://iacacliquer.toutatice.fr/index.php?summary=119",
+      "snippet": "Réseau IACA des collèges du Morbihan, Académie de Rennes, Direction Régionale Académique des Systèmes d'Information (DRASI)"
+    },
+    {
+      "title": "Service Découverte",
+      "url": "https://ent.toutatice.fr/",
+      "snippet": "Connexion à Toutatice Vous souhaitez vous connecter à un service toutatice.fr en tant que"
+    },
+    {
+      "title": "Mot de passe -Réseau IACA des collèges du Morbihan - toutatice.fr",
+      "url": "https://iacacliquer.toutatice.fr/index.php?id_menu=10",
+      "snippet": "Les professeurs et les élèves ont l’obligation de changer leur mot de passe à la première connexion au réseau. De plus tous les …"
+    }
+  ]
+}

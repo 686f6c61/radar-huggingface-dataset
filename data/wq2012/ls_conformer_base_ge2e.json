@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "wq2012/ls_conformer_base_ge2e",
+  "slug": "wq2012-ls_conformer_base_ge2e",
+  "author": "wq2012",
+  "url": "https://huggingface.co/wq2012/ls_conformer_base_ge2e",
+  "created_at": "2026-10-15T01:38:04.000Z",
+  "updated_at": "2026-10-15T01:38:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "flaxspeaker",
+  "languages": [],
+  "tags": [
+    "flaxspeaker",
+    "jax",
+    "safetensors",
+    "audio",
+    "speaker-verification",
+    "speaker-recognition",
+    "speaker-embeddings",
+    "flax",
+    "conformer",
+    "ge2e_softmax",
+    "cosine",
+    "audio-classification",
+    "dataset:librispeech_asr",
+    "dataset:cnceleb",
+    "dataset:voxceleb",
+    "arxiv:1710.10467",
+    "arxiv:2104.01989",
+    "arxiv:2202.12163",
+    "arxiv:2203.05642",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4551556,
+  "parameters_human": "4.6M",
+  "storage_bytes": 36433085,
+  "storage_human": "36 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/wav2vec2_conformer ... - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/wav2vec2_conformer/manifest.yaml",
+      "snippet": "Qualcomm® AI Hub Models is our collection of state-of-the-art machine learning models optimized for performance (latency, memory etc.) and ready to deploy on Qualcomm® devices. - qualcomm/ai-hub-mo..."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/wav2vec2_conformer at main ...",
+      "url": "https://github.com/qualcomm/ai-hub-models/tree/main/src/qai_hub_models/models/wav2vec2_conformer",
+      "snippet": "Wav2Vec2-Conformer-Large-960h: English speech recognition with Wav2Vec2-Conformer encoder and CTC decoder Facebook Wav2Vec2-Conformer-Large is an English ASR model fine-tuned on 960 hours of LibriSpeech. It uses a Conformer encoder with relative-position attention (24 layers, 1024 hidden dim, 16 heads) and a CTC head for decoding. The model accepts raw 16kHz audio and outputs transcribed text ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=conformer",
+      "snippet": "Explore machine learning models. byan/librispeech_asr_train_asr_conformer_raw_bpe_batch_bins30000000_accum_grad3_optim_conflr0.001_sp"
+    },
+    {
+      "title": "wq2012/personal-vad-v2-conformer-unified · Hugging Face",
+      "url": "https://huggingface.co/wq2012/personal-vad-v2-conformer-unified",
+      "snippet": "wq2012 / personal-vad-v2-conformer-unified Like 0 Voice Activity Detection LiteRT Safetensors facebook/multilingual_librispeech personal-vad audio speaker-conditioning conformer lstm tensorflow arxiv:1908.04284 arxiv:2204.03793 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Personal VAD 2.0 — E5 Unified Enrolled & Enrollment-Less Causal Conformer ..."
+    },
+    {
+      "title": "GE2E Loss for Speaker Verification | google/speaker-id | DeepWiki",
+      "url": "https://deepwiki.com/google/speaker-id/4.1-ge2e-loss-for-speaker-verification",
+      "snippet": "The GE2E loss provides an efficient training objective for speaker embedding models that produce d-vectors - fixed-dimensional representations of speaker identity. This page covers the conceptual foundation, mathematical formulation, implementation details, and applications of GE2E loss."
+    }
+  ]
+}

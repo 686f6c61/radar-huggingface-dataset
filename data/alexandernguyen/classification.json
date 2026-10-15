@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "alexandernguyen/classification",
+  "slug": "alexandernguyen-classification",
+  "author": "alexandernguyen",
+  "url": "https://huggingface.co/alexandernguyen/classification",
+  "created_at": "2026-10-14T21:05:29.000Z",
+  "updated_at": "2026-10-14T21:05:35.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alexandernguyen (प्रिया सिंह) - Hugging Face",
+      "url": "https://huggingface.co/alexandernguyen",
+      "snippet": "User profile of प्रिया सिंह on Hugging Face"
+    },
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "Anthropic AI model submits false homicide tip to Philadelphia police - MSN",
+      "url": "https://www.msn.com/en-us/news/other/anthropic-ai-model-submits-false-homicide-tip-to-philadelphia-police/ar-AA2dWiN6",
+      "snippet": "Philadelphia police have revealed that Anthropic&#x27;s artificial intelligence model submitted a false homicide tip to authorities, an incident disclosed separately by the tech company."
+    },
+    {
+      "title": "efficientformer-baseline: Model Details, Context & Pricing | Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/hf-alexandernguyen-efficientformer-baseline",
+      "snippet": "Model card indexed from Hugging Face. Specs: sourced from Hugging Face. Compare efficientformer-baseline&#x27;s parameters, context window, pricing and benchmarks ag"
+    },
+    {
+      "title": "Alexander Nguyen - AI Evaluation Specialist | Data Annotation ...",
+      "url": "https://www.linkedin.com/in/alexander-dm-nguyen",
+      "snippet": "Perform AI evaluation work involving multimodal data annotation, timestamped captioning, video understanding, hallucination detection, and agentic task assessment."
+    }
+  ]
+}

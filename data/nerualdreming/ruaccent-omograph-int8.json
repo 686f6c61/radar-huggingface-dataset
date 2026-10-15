@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "nerualdreming/ruaccent-omograph-int8",
+  "slug": "nerualdreming-ruaccent-omograph-int8",
+  "author": "nerualdreming",
+  "url": "https://huggingface.co/nerualdreming/ruaccent-omograph-int8",
+  "created_at": "2026-10-15T01:00:22.000Z",
+  "updated_at": "2026-10-15T01:00:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "onnx",
+    "ruaccent",
+    "accentuation",
+    "stress",
+    "homograph",
+    "int8",
+    "ru",
+    "base_model:ruaccent/accentuator",
+    "base_model:quantized:ruaccent/accentuator",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 273858933,
+  "storage_human": "274 MB",
+  "base_model": "ruaccent/accentuator",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nerualdreming (Nerual Dreming) - Hugging Face",
+      "url": "https://huggingface.co/nerualdreming/models",
+      "snippet": "User profile of Nerual Dreming on Hugging Face"
+    },
+    {
+      "title": "ruaccent/ruaccent/accent_model.py at main · Den4ikAI/ruaccent",
+      "url": "https://github.com/Den4ikAI/ruaccent/blob/main/ruaccent/accent_model.py",
+      "snippet": "Простой расстановщик ударений с обработкой омографов - Den4ikAI/ruaccent"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=ruaccent",
+      "snippet": "Explore machine learning models. Main Tasks Libraries Languages Licenses Apps Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API DeepInfra WaveSpeed One-click Deployment Misc ruaccent Apply filters"
+    },
+    {
+      "title": "INT8 Quantization: Definition & Benefits for AI Inference",
+      "url": "https://inferensys.com/glossary/neural-radiance-fields-and-spatial-computing/real-time-neural-rendering/int8-quantization",
+      "snippet": "What is INT8 Quantization? INT8 quantization is a critical model optimization technique for enabling real-time neural rendering and edge AI by drastically reducing computational and memory requirements."
+    },
+    {
+      "title": "What Is int8 Quantization and Why Is It Popular for Deep Neural ...",
+      "url": "https://www.mathworks.com/company/technical-articles/what-is-int8-quantization-and-why-is-it-popular-for-deep-neural-networks.html",
+      "snippet": "Summary int8 quantization converts neural network weights and activations from floating-point to 8-bit integers using scaling factors, enabling efficient integer computation. This approach reduces model size, memory use, and bandwidth requirements—often by up to 75%—making deployment on edge devices more practical."
+    }
+  ]
+}

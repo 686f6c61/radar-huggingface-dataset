@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "khtsly/e",
+  "slug": "khtsly-e",
+  "author": "khtsly",
+  "url": "https://huggingface.co/khtsly/e",
+  "created_at": "2026-10-13T20:12:18.000Z",
+  "updated_at": "2026-10-15T01:07:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "diff_xsa",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 227,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 53586233063,
+  "storage_human": "53.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "khtsly/persistent-memory • LM Studio Hub",
+      "url": "https://lmstudio.ai/khtsly/persistent-memory",
+      "snippet": "Persistent Memory — LM Studio Plugin Give your local LLM a long-term brain. This plugin stores facts, preferences, projects, and notes across conversations in a local SQLite database — zero cloud, zero external services, fully portable. Retrieval Scoring (Inspired by SRLM) Memories are ranked by a sophisticated composite score blending traditional retrieval with AI-powered uncertainty ..."
+    },
+    {
+      "title": "khtsly (khtsly) - Hugging Face",
+      "url": "https://huggingface.co/khtsly",
+      "snippet": "AI & ML interests ... Recent Activity upvoted a paper 1 day ago ... upvoted a paper 2 days ago"
+    },
+    {
+      "title": "khtsly (khtsly) - Hugging Face",
+      "url": "https://huggingface.co/khtsly/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 month ago ... updated a model about 1 month ago"
+    },
+    {
+      "title": "khtsly/skills • LM Studio Hub",
+      "url": "https://lmstudio.ai/khtsly/skills",
+      "snippet": "Model follows the skill&#x27;s instructions to produce high-quality output Model uses read_file, patch_file, and write_file to execute the actual coding and file management tasks"
+    },
+    {
+      "title": "Robust Long-Term Memory | Persistent AI for LM Studio",
+      "url": "https://mcpmarket.com/server/robust-long-term-memory",
+      "snippet": "This tool provides an advanced, persistent memory system for AI companions, designed for long-term recall and continuous persona development. It leverages a hybrid approach of SQLite for structured metadata and ChromaDB for semantic search, ensuring memories are both precisely retrievable and naturally accessible. Featuring cross-chat, cross-model, and cross-machine continuity, along with ..."
+    }
+  ]
+}

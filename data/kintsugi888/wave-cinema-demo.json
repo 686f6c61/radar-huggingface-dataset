@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "kintsugi888/wave-cinema-demo",
+  "slug": "kintsugi888-wave-cinema-demo",
+  "author": "kintsugi888",
+  "url": "https://huggingface.co/kintsugi888/wave-cinema-demo",
+  "created_at": "2026-10-15T01:09:35.000Z",
+  "updated_at": "2026-10-15T02:48:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Cinema Studio - Cinematic AI Video with Camera Control | WaveSpeedAI",
+      "url": "https://wavespeed.ai/cinema-studio",
+      "snippet": "What is AI Cinema Studio? + A workspace for directing cinematic AI video shots: you choose the film look, camera, color, lighting and camera move, and the studio turns them into a precise prompt for the video model."
+    },
+    {
+      "title": "Kintsugi Product Demos - YouTube",
+      "url": "https://www.youtube.com/@kintsugi-demos",
+      "snippet": "Welcome to Kintsugi Product Demos, the official channel for product demonstrations, new feature highlights, and integration walkthroughs from Kintsugi AI! Subscribe to stay updated on our latest ..."
+    },
+    {
+      "title": "AI Cinema Studio - a Hugging Face Space by wavespeed",
+      "url": "https://huggingface.co/spaces/wavespeed/ai-cinema-studio",
+      "snippet": "Pick a genre, era, lens, color palette, lighting, and one of 18 camera moves—or simply describe the scene in plain text—to guide the AI Director. The studio then generates a video clip (up to 30 se..."
+    },
+    {
+      "title": "Ultimate AI Media Generation Platform — WaveSpeedAI",
+      "url": "https://wavespeed.ai/",
+      "snippet": "WaveSpeedAI home - explore the platform that speeds up image, video and audio generation so you can build AI features, creative tools and workflows faster."
+    },
+    {
+      "title": "wovenbytoyota-vai/WAVE · Hugging Face",
+      "url": "https://huggingface.co/wovenbytoyota-vai/WAVE",
+      "snippet": "Woven City AI Vision Engine (WAVE) 🧠 Model Summary Woven City AI Vision Engine (WAVE) is a cutting-edge, 8B parameter long-context video modeling solution that enables efficient and high-quality video understanding. The model introduces a hierarchical compression method to process long/short videos without the typical quality degradation or high computational costs. This allows for a ..."
+    }
+  ]
+}

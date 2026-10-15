@@ -4,8 +4,8 @@
   "slug": "mohammedaly22-cairo-tts",
   "author": "mohammedaly22",
   "url": "https://huggingface.co/mohammedaly22/Cairo-TTS",
-  "created_at": "2026-10-12T20:51:01.000Z",
-  "updated_at": "2026-10-13T01:50:05.000Z",
+  "created_at": "2026-10-14T18:54:02.000Z",
+  "updated_at": "2026-10-14T18:54:46.000Z",
   "license": "pocket-tts-weights",
   "license_family": "unknown",
   "pipeline_tag": "text-to-speech",
@@ -37,8 +37,8 @@
   "trending_score": 0,
   "parameters": 105487042,
   "parameters_human": "105.5M",
-  "storage_bytes": 408153771,
-  "storage_human": "408 MB",
+  "storage_bytes": 394529493,
+  "storage_human": "395 MB",
   "base_model": "kyutai/pocket-tts",
   "formats": [
     "safetensors"

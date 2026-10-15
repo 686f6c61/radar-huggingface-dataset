@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen-3.5-Opus-GLM-27B-GGUF",
+  "slug": "mradermacher-qwen-3-5-opus-glm-27b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen-3.5-Opus-GLM-27B-GGUF",
+  "created_at": "2026-04-24T11:39:04.000Z",
+  "updated_at": "2026-10-14T22:43:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "merge",
+    "mergekit",
+    "dare_ties",
+    "Jackrong/Qwopus3.5-27B-v3.5",
+    "Jackrong/Qwen3.5-27B-GLM5.1-Distill-v1",
+    "en",
+    "base_model:rodrigomt/Qwen-3.5-Opus-GLM-27B",
+    "base_model:quantized:rodrigomt/Qwen-3.5-Opus-GLM-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 156,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 186348476544,
+  "storage_human": "186.3 GB",
+  "base_model": "rodrigomt/Qwen-3.5-Opus-GLM-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Beautiful Naked Women & Sexy Nudes | Erotic Beauties",
+      "url": "https://www.eroticbeauties.net/newest/",
+      "snippet": "23 hours ago · Browse over 250k of the newest nude photos of beautiful naked women for free at Erotic Beauties. Discover our …"
+    },
+    {
+      "title": "Beautiful Naked Women & Sexy Nudes | Erotic Beauties",
+      "url": "https://www.eroticbeauties.net/most-viewed/",
+      "snippet": "Jul 1, 2020 · Browse over 250k of the most viewed nude photos of beautiful naked women for free at Erotic Beauties. Discover our …"
+    },
+    {
+      "title": "Quality nude and erotic photos and model directory - Nuderotic",
+      "url": "https://www.nuderotic.com/",
+      "snippet": "23 hours ago · Erotic photos and videos of nude girls, updated daily with quality galleries!"
+    },
+    {
+      "title": "Sexy Naked and Nude Women Pics - Elite Babes",
+      "url": "https://www.elitebabes.com/tag/naked-women/",
+      "snippet": "Browse the sexiest naked and nude women pics for FREE at Elitebabes.com. 🔥 Discover hot nude babes and erotic photos updated …"
+    },
+    {
+      "title": "Erotic Nude Women & Girls Porn Photos - PornPics.com",
+      "url": "https://www.pornpics.com/erotic/",
+      "snippet": "Check out the best naked erotic porn pics for FREE on PornPics.com. ️See the hottest erotic photos right now!"
+    }
+  ]
+}

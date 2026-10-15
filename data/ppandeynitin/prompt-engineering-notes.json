@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ppandeynitin/prompt-engineering-notes",
+  "slug": "ppandeynitin-prompt-engineering-notes",
+  "author": "ppandeynitin",
+  "url": "https://huggingface.co/ppandeynitin/prompt-engineering-notes",
+  "created_at": "2026-10-15T01:23:36.000Z",
+  "updated_at": "2026-10-15T01:23:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "prompt-engineering",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "GitHub - Laxmiyadalli/prompt-engineering-notes",
+      "url": "https://github.com/Laxmiyadalli/prompt-engineering-notes/blob/main/",
+      "snippet": "🚀 Prompt Engineering Notes A clean and beginner-friendly guide to Prompt Engineering — the skill of writing better prompts to unlock the full power of Large Language Models (LLMs) like ChatGPT, Claude, Gemini, and more."
+    },
+    {
+      "title": "Prompt Engineering - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/prompt-engineering-2/",
+      "snippet": "Prompt Engineering Is the process of designing and improving prompts to communicate effectively with AI models. It helps ensure that the outputs are accurate, relevant and aligned with user goals. Creating clear instructions for better AI responses. Helps generate precise and relevant outputs. Connects human intent with machine understanding. Used in NLP, chatbots and content generation. AI ..."
+    },
+    {
+      "title": "Prompt Engineering Techniques That Actually Work",
+      "url": "https://infomineo.com/artificial-intelligence/prompt-engineering-techniques-examples-best-practices-guide/",
+      "snippet": "Master prompt engineering with techniques that work, real industry examples, and templates you can use today to get sharper AI outputs."
+    },
+    {
+      "title": "GitHub - Laxmiyadalli/prompt-engineering-notes",
+      "url": "https://github.com/Laxmiyadalli/prompt-engineering-notes",
+      "snippet": "This repository contains structured notes and examples covering: What Prompt Engineering is Why it matters Core prompting techniques Few-shot prompting Chain-of-thought reasoning Structured outputs Prompt chaining Real-world use cases Common mistakes and fixes Best practices for working with LLMs Perfect for: 👨‍💻 Developers 📈 Marketers 🧠 Researchers 🎓 Students 🤖 AI Enthusiasts"
+    }
+  ]
+}

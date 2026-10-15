@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "wq2012/ls_conformer_small_sphereface",
+  "slug": "wq2012-ls_conformer_small_sphereface",
+  "author": "wq2012",
+  "url": "https://huggingface.co/wq2012/ls_conformer_small_sphereface",
+  "created_at": "2026-10-15T01:38:15.000Z",
+  "updated_at": "2026-10-15T01:38:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "flaxspeaker",
+  "languages": [],
+  "tags": [
+    "flaxspeaker",
+    "jax",
+    "safetensors",
+    "audio",
+    "speaker-verification",
+    "speaker-recognition",
+    "speaker-embeddings",
+    "flax",
+    "conformer",
+    "sphereface",
+    "cosine",
+    "audio-classification",
+    "dataset:librispeech_asr",
+    "dataset:cnceleb",
+    "dataset:voxceleb",
+    "arxiv:1710.10467",
+    "arxiv:2104.01989",
+    "arxiv:2202.12163",
+    "arxiv:2203.05642",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2029892,
+  "parameters_human": "2.0M",
+  "storage_bytes": 16254934,
+  "storage_human": "16 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - wy1iu/sphereface: Implementation for <SphereFace: Deep ...",
+      "url": "https://github.com/wy1iu/sphereface",
+      "snippet": "A list CASIA-WebFace-112X96.txt is created in the directory of data/ for the subsequent training. Train the sphereface model. ... After training, a model sphereface_model_iter_28000.caffemodel and a corresponding log file sphereface_train.log are placed in the directory of result/sphereface/."
+    },
+    {
+      "title": "SphereFace Models | yakhyo/face-recognition | DeepWiki",
+      "url": "https://deepwiki.com/yakhyo/face-recognition/4.1-sphereface-models",
+      "snippet": "This document provides detailed technical documentation of the SphereFace model architectures available in this face recognition framework. SphereFace models are server-oriented neural networks designed for high-accuracy face recognition tasks where computational resources are less constrained compared to mobile deployments."
+    },
+    {
+      "title": "SphereFace: Deep Hypersphere Embedding for Face Recognition",
+      "url": "https://arxiv.org/abs/1704.08063",
+      "snippet": "This paper addresses deep face recognition (FR) problem under open-set protocol, where ideal face features are expected to have smaller maximal intra-class distance than minimal inter-class distance under a suitably chosen metric space. However, few existing algorithms can effectively achieve this criterion. To this end, we propose the angular softmax (A-Softmax) loss that enables ..."
+    },
+    {
+      "title": "SphereFace: Deep Hypersphere Embedding for Face Recognition",
+      "url": "https://arxiv.org/pdf/1704.08063v2",
+      "snippet": "Most of the existing face verification systems achieve high performance with huge training data or model ensemble. While using single model trained on publicly available dataset (CAISA-WebFace, relatively small and having noisy labels), SphereFace achieves 99.42% and 95.0% accuracies on LFW and YTF datasets."
+    },
+    {
+      "title": "wy1iu/sphereface | DeepWiki",
+      "url": "https://deepwiki.com/wy1iu/sphereface",
+      "snippet": "This page introduces the SphereFace repository, its research purpose, the A-Softmax loss function, published benchmark results, and the three-stage pipeline that makes up the codebase. For installation steps see Installation and Setup. For a deeper walkthrough of each pipeline stage see The SphereFace Pipeline. For the A-Softmax loss implementation see SphereFace Model and A-Softmax Loss."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "maxbennett/generalized-neural-memory-icl-personamem",
+  "slug": "maxbennett-generalized-neural-memory-icl-personamem",
+  "author": "maxbennett",
+  "url": "https://huggingface.co/maxbennett/generalized-neural-memory-icl-personamem",
+  "created_at": "2026-10-14T19:33:52.000Z",
+  "updated_at": "2026-10-14T23:51:31.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "arxiv:2602.23201",
+    "base_model:YuWangX/memoryllm-8b-chat",
+    "base_model:finetune:YuWangX/memoryllm-8b-chat",
+    "license:llama3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766337,
+  "storage_human": "16.1 GB",
+  "base_model": "YuWangX/memoryllm-8b-chat",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "wq2012/univ_conformer_small_arcface",
+  "slug": "wq2012-univ_conformer_small_arcface",
+  "author": "wq2012",
+  "url": "https://huggingface.co/wq2012/univ_conformer_small_arcface",
+  "created_at": "2026-10-15T01:37:58.000Z",
+  "updated_at": "2026-10-15T01:38:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "flaxspeaker",
+  "languages": [],
+  "tags": [
+    "flaxspeaker",
+    "jax",
+    "safetensors",
+    "audio",
+    "speaker-verification",
+    "speaker-recognition",
+    "speaker-embeddings",
+    "flax",
+    "conformer",
+    "arcface",
+    "cosine",
+    "audio-classification",
+    "dataset:librispeech_asr",
+    "dataset:cnceleb",
+    "dataset:voxceleb",
+    "arxiv:1710.10467",
+    "arxiv:2104.01989",
+    "arxiv:2202.12163",
+    "arxiv:2203.05642",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2029892,
+  "parameters_human": "2.0M",
+  "storage_bytes": 16254934,
+  "storage_human": "16 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Arc2Face: A Foundation Model for ID-Consistent Human Faces",
+      "url": "https://arc2face.github.io/",
+      "snippet": "Arc2Face, however, only needs the discriminative features of ArcFace to guide the generation, offering a robust prior for a plethora of tasks where ID consistency is of paramount importance. As an example, we train a FR model on synthetic images from our model and achieve superior performance to existing synthetic datasets."
+    },
+    {
+      "title": "Arc2Face: A Foundation Model for ID-Consistent Human Faces",
+      "url": "https://arxiv.org/abs/2403.11641",
+      "snippet": "This paper presents Arc2Face, an identity-conditioned face foundation model, which, given the ArcFace embedding of a person, can generate diverse photo-realistic images with an unparalleled degree of face similarity than existing models. Despite previous attempts to decode face recognition features into detailed images, we find that common high-resolution datasets (e.g. FFHQ) lack sufficient ..."
+    },
+    {
+      "title": "Arc2Face: A Foundation Model of Human Faces - arXiv.org",
+      "url": "https://arxiv.org/pdf/2403.11641v1",
+      "snippet": "This paper presents Arc2Face, an identity-conditioned face foundation model, which, given the ArcFace embedding of a person, can generate diverse photo-realistic images with an unparalleled degree of face similarity than existing models."
+    },
+    {
+      "title": "JCTN/Arc2Face · Hugging Face",
+      "url": "https://huggingface.co/JCTN/Arc2Face",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "FoivosPar/Arc2Face · Hugging Face",
+      "url": "https://huggingface.co/FoivosPar/Arc2Face",
+      "snippet": "Originally, Arc2Face is an ID-conditioned face model designed to generate diverse, ID-consistent photos of a person given only its ArcFace ID-embedding. It is trained on a restored version of the WebFace42M face recognition database, and is further fine-tuned on FFHQ and CelebA-HQ ..."
+    }
+  ]
+}

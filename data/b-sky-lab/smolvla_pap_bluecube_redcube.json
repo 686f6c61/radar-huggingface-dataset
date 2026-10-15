@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "b-sky-lab/smolvla_pap_bluecube_redcube",
+  "slug": "b-sky-lab-smolvla_pap_bluecube_redcube",
+  "author": "b-sky-lab",
+  "url": "https://huggingface.co/b-sky-lab/smolvla_pap_bluecube_redcube",
+  "created_at": "2026-10-14T23:28:14.000Z",
+  "updated_at": "2026-10-14T23:28:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:b-sky-lab/pap_bluecube_redcube_20261015_003104",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906719080,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "B - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/B",
+      "snippet": "B (minuscule: b) is the second letter of the Latin alphabet, used in the modern English alphabet, the alphabets of other western …"
+    },
+    {
+      "title": "B (lettre) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/B_(lettre)",
+      "snippet": "La graphie de la lettre b minuscule moderne provient de la fin de l'Empire romain, lorsque les scribes commencèrent à omettre la …"
+    },
+    {
+      "title": "B&B HOTELS : réservez un hôtel en France et en Europe | Site web …",
+      "url": "https://www.hotel-bb.com/fr",
+      "snippet": "Que vous organisiez des vacances en famille, un week-end romantique, un voyage d’affaires ou une étape de dernière minute avant …"
+    },
+    {
+      "title": "B&M",
+      "url": "https://bmstores.fr/",
+      "snippet": "Décoration, idées cadeaux, multimédia, petit électroménager, linge de maison, mobilier, mode et bien plus encore. L'enseigne B&M …"
+    },
+    {
+      "title": "b - Définitions, synonymes, prononciation, exemples | Dico en ligne Le ...",
+      "url": "https://dictionnaire.lerobert.com/definition/b",
+      "snippet": "Définition, exemples et prononciation de b : Deuxième lettre, première consonne de l'alphabet.…"
+    }
+  ]
+}

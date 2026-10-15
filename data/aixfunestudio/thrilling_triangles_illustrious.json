@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "AIxFuneStudio/Thrilling_Triangles_Illustrious",
+  "slug": "aixfunestudio-thrilling_triangles_illustrious",
+  "author": "AIxFuneStudio",
+  "url": "https://huggingface.co/AIxFuneStudio/Thrilling_Triangles_Illustrious",
+  "created_at": "2026-10-14T19:37:26.000Z",
+  "updated_at": "2026-10-14T23:40:50.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7658954346,
+  "storage_human": "7.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=illustrious",
+      "snippet": "Explore machine learning models. John6666/janku-v5-nsfw-trained-noobai-rou-wei-illustrious-xl-v50-sdxl"
+    },
+    {
+      "title": "Best THRILLustrious Models | PromptHero",
+      "url": "https://prompthero.com/ai-models/thrillustrious-download",
+      "snippet": "The challenge is to continuously add realism aspects without sacrificing the base flexibility and concepts of the base model. This is a bit more difficult with Illustrious because many of the concepts baked into the base model are artistic/anime at their core."
+    },
+    {
+      "title": "THRILLustrious - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1835376395379499115",
+      "snippet": "Generate stunning realistic, checkpoint, base_model, illustriousxl anime art with the &#x27;THRILLustrious&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Illustrious XL Model Archive - Evolution of AI Models",
+      "url": "https://www.illustrious-xl.ai/model/3",
+      "snippet": "Explore Illustrious XL&#x27;s AI model archive, tracking its evolution from v0.1 to the latest innovations. See how each version advances AI image generation."
+    },
+    {
+      "title": "Five Stars Illustrious 8.0 - AIxFun eStudio&#x27;s Ko-fi Shop",
+      "url": "https://ko-fi.com/s/657c12901f",
+      "snippet": "Where earlier versions smoothed and polished, Five Stars Illustrious 8.0 sharpens and enriches, offering creators imagery that feels more alive, more dimensional, and more commanding in presence. 📌 To download the model, you will be prompted to link your Hugging Face email to your Ko-fi email if they are different."
+    }
+  ]
+}

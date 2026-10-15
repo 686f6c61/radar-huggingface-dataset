@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "podolinsky/groot-libero-10-probe-safe-mlp",
+  "slug": "podolinsky-groot-libero-10-probe-safe-mlp",
+  "author": "podolinsky",
+  "url": "https://huggingface.co/podolinsky/groot-libero-10-probe-safe-mlp",
+  "created_at": "2026-10-14T20:58:33.000Z",
+  "updated_at": "2026-10-14T20:58:34.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "failure-detection",
+    "vla",
+    "gr00t",
+    "libero",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1573377,
+  "parameters_human": "1.6M",
+  "storage_bytes": 6392624,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "podolinsky/groot-libero-x-probe-safe-mlp · Hugging Face",
+      "url": "https://huggingface.co/podolinsky/groot-libero-x-probe-safe-mlp",
+      "snippet": "SAFE &#x27;indep&#x27; MLP (Linear 6144-256-1 + sigmoid per step, accumulated with a cumulative sum), SAFE&#x27;s loss on the accumulated score, the baselines&#x27; recipe (Adam 1e-3, batches of 32 rollouts, <= 200 epochs, patience 25, model selection by val AUROC). The output is a cumulative score. The alarm uses SAFE ..."
+    },
+    {
+      "title": "podolinsky/groot-libero-x-probe-safe-lstm · Hugging Face",
+      "url": "https://huggingface.co/podolinsky/groot-libero-x-probe-safe-lstm",
+      "snippet": "SAFE LSTM: causal LSTM(256) + Linear + sigmoid per step, BCE on the per-step probabilities with the rollout outcome as label, the baselines&#x27; recipe (Adam 3e-4, batches of 32 rollouts, <= 200 epochs, patience 25, model selection by val AUROC). The alarm uses SAFE&#x27;s functional conformal band. Per ..."
+    },
+    {
+      "title": "GR00T-N1.7 LIBERO-10 backbone features - claru.ai",
+      "url": "https://claru.ai/datasets/podolinsky-groot-libero-10-features-v3",
+      "snippet": "Aligned rollouts of the NVIDIA GR00T-N1.7-LIBERO policy on LIBERO tasks in normal and occluded variants, with K=10 action samples per inference and per-token backbone features from the Cosmos-Reason2-2B VLM backbone. Designed for representation probing and sampling-based failure detection research."
+    },
+    {
+      "title": "LIBERO-Safety: A Comprehensive Benchmark for Physical and Semantic ...",
+      "url": "https://libero-safety.github.io/",
+      "snippet": "LIBERO-Safety: A Comprehensive Benchmark for Physical and Semantic Safety in Vision-Language-Action Models Rongxu Cui 1,2,3*, Zongzheng Zhang 1,2*, Jingrui Pang 2, Haohao Chi 1, Jinbang Guo 2, Saining Zhang 1,"
+    },
+    {
+      "title": "Podolinsky: Open-Weight Models and Datasets - savrn.com",
+      "url": "https://savrn.com/model-publishers/podolinsky",
+      "snippet": "Podolinsky has 0 open-weight models and 1 dataset in the SAVRN Model Hub. Browse each one&#x27;s model card, specs, files and license."
+    }
+  ]
+}

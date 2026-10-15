@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "JosephHollingsworth/retrieval10-2023",
+  "slug": "josephhollingsworth-retrieval10-2023",
+  "author": "JosephHollingsworth",
+  "url": "https://huggingface.co/JosephHollingsworth/retrieval10-2023",
+  "created_at": "2026-10-15T01:15:46.000Z",
+  "updated_at": "2026-10-15T01:15:52.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "‪Joseph Hollingsworth‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=Ax92fPIAAAAJ&hl=en",
+      "snippet": "‪Professor of Computer Science & Software Engineering, Rose-Hulman Institute of Technology‬ - ‪‪Cited by 1,172‬‬ - ‪Software Engineering‬ - ‪Software Engineering Education‬ - ‪Verified Software‬ - ‪Programming Languages‬"
+    },
+    {
+      "title": "Retrieval-Augmented Score Distillation for Text-to-3D Generation",
+      "url": "https://arxiv.org/abs/2402.02972",
+      "snippet": "To this end, we introduce novel framework for retrieval-based quality enhancement in text-to-3D generation. We leverage the retrieved asset to incorporate its geometric prior in the variational objective and adapt the diffusion model&#x27;s 2D prior toward view consistency, achieving drastic improvements in both geometry and fidelity of generated ..."
+    },
+    {
+      "title": "Retrieval-Augmented Generation: How to Use Your Data to Guide LLMs",
+      "url": "https://www.anaconda.com/blog/retrieval-augmented-generation",
+      "snippet": "Learn how to use Retrieval Augmented Generation to control hallucinations and get more relevant responses from LLMs."
+    },
+    {
+      "title": "Josephwilsonee/cs229-retrieval · Hugging Face",
+      "url": "https://huggingface.co/Josephwilsonee/cs229-retrieval",
+      "snippet": "Josephwilsonee / cs229-retrieval Like 0 Safetensors PyTorch hybrid retrieval License:bsd-3-clause Model card FilesFiles and versions xet Community Copy to bucket new Hybrid for Retrieval Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files License"
+    }
+  ]
+}

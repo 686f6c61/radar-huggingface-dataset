@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "wq2012/univ_conformer_tiny_ge2e",
+  "slug": "wq2012-univ_conformer_tiny_ge2e",
+  "author": "wq2012",
+  "url": "https://huggingface.co/wq2012/univ_conformer_tiny_ge2e",
+  "created_at": "2026-10-15T01:37:46.000Z",
+  "updated_at": "2026-10-15T01:37:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "flaxspeaker",
+  "languages": [],
+  "tags": [
+    "flaxspeaker",
+    "jax",
+    "safetensors",
+    "audio",
+    "speaker-verification",
+    "speaker-recognition",
+    "speaker-embeddings",
+    "flax",
+    "conformer",
+    "ge2e_softmax",
+    "cosine",
+    "audio-classification",
+    "dataset:librispeech_asr",
+    "dataset:cnceleb",
+    "dataset:voxceleb",
+    "arxiv:1710.10467",
+    "arxiv:2104.01989",
+    "arxiv:2202.12163",
+    "arxiv:2203.05642",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 693124,
+  "parameters_human": "693124",
+  "storage_bytes": 5556542,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wq2012/personal-vad-v2-conformer-unified · Hugging Face",
+      "url": "https://huggingface.co/wq2012/personal-vad-v2-conformer-unified",
+      "snippet": "wq2012 / personal-vad-v2-conformer-unified Like 0 Voice Activity Detection LiteRT Safetensors facebook/multilingual_librispeech personal-vad audio speaker-conditioning conformer lstm tensorflow arxiv:1908.04284 arxiv:2204.03793 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Personal VAD 2.0 — E5 Unified Enrolled & Enrollment-Less Causal Conformer ..."
+    },
+    {
+      "title": "wq2012 (Quan Wang) · GitHub",
+      "url": "https://github.com/wq2012",
+      "snippet": "A graph representing wq2012&#x27;s contributions from October 12, 2025 to October 12, 2026. The contributions are 100% commits, 0% pull requests, 0% issues, 0% code review."
+    },
+    {
+      "title": "wq2012/personal-vad-v2-conformer-std-vad · Hugging Face",
+      "url": "https://huggingface.co/wq2012/personal-vad-v2-conformer-std-vad",
+      "snippet": "wq2012 / personal-vad-v2-conformer-std-vad Like 0 Voice Activity Detection LiteRT Safetensors facebook/multilingual_librispeech personal-vad audio speaker-conditioning conformer lstm tensorflow arxiv:1908.04284 arxiv:2204.03793 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Personal VAD 2.0 — B2 4-Layer Causal Conformer Standard VAD (wq2012/personal ..."
+    },
+    {
+      "title": "Conformer Architecture Guide | AI Understanding",
+      "url": "https://aiunderstanding.org/learn/conformer-architecture",
+      "snippet": "The Conformer paper proposes a convolution-augmented Transformer for automatic speech recognition. Its block combines multi-head self-attention, a convolution module and two half-step feed-forward modules in a Macaron-style structure. Relative positional encoding supports attention over sequence positions. The authors evaluate on LibriSpeech and report results under specific model sizes and ..."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/templates/conformer ... - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/templates/conformer/evaluator.py",
+      "snippet": "Qualcomm® AI Hub Models is our collection of state-of-the-art machine learning models optimized for performance (latency, memory etc.) and ready to deploy on Qualcomm® devices. - qualcomm/ai-hub-mo..."
+    }
+  ]
+}

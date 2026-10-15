@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/K2-Type-0.9B-GGUF",
   "created_at": "2026-10-14T00:14:54.000Z",
-  "updated_at": "2026-10-14T00:35:28.000Z",
+  "updated_at": "2026-10-14T10:11:21.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -30,7 +30,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 114,
   "trending_score": 0,
   "parameters": 1078285824,
   "parameters_human": "1.08B",

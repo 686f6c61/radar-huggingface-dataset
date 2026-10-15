@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Parzisam/sarcasmo-xlmr-large",
+  "slug": "parzisam-sarcasmo-xlmr-large",
+  "author": "Parzisam",
+  "url": "https://huggingface.co/Parzisam/sarcasmo-xlmr-large",
+  "created_at": "2026-10-15T00:42:53.000Z",
+  "updated_at": "2026-10-15T02:01:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 559892482,
+  "parameters_human": "559.9M",
+  "storage_bytes": 6735954199,
+  "storage_human": "6.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - thevedantt/SarkasamAI: Advanced Sarcasm Detection System ...",
+      "url": "https://github.com/thevedantt/SarkasamAI",
+      "snippet": "Sarkasam AI is a professional-grade sarcasm detection system that combines traditional machine learning with cutting-edge AI to identify and explain sarcastic content in text. The system offers two distinct analysis modes and provides detailed AI-powered explanations for its predictions."
+    },
+    {
+      "title": "andresdfx/sarcasmo-xlmr-large · Hugging Face",
+      "url": "https://huggingface.co/andresdfx/sarcasmo-xlmr-large",
+      "snippet": "andresdfx / sarcasmo-xlmr-large Like 0 Text Classification Safetensors Spanish xlm-roberta sarcasm spanish Model card FilesFiles and versions xet Community Copy to bucket new sarcasmo-xlmr-large"
+    },
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "paolavilla85/sarcasmo-xlmr-large-es · Hugging Face",
+      "url": "https://huggingface.co/paolavilla85/sarcasmo-xlmr-large-es",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, DeepSeek, Qwen, Mistral, Z.ai, Meta, and important open-weight model families."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "rodrigueston/classification",
+  "slug": "rodrigueston-classification",
+  "author": "rodrigueston",
+  "url": "https://huggingface.co/rodrigueston/classification",
+  "created_at": "2026-10-14T23:37:22.000Z",
+  "updated_at": "2026-10-14T23:37:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What are classification models? - IBM",
+      "url": "https://www.ibm.com/think/topics/classification-models",
+      "snippet": "Classification models are a type of machine learning model that divides data points into predefined groups called classes. Classifiers are a type of predictive modeling that learns class characteristics from input data and learns to assign possible classes to new data according to those learned characteristics. 1 Classification algorithms are widely used in data science for forecasting ..."
+    },
+    {
+      "title": "Top Machine Learning Classification Algorithms - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/top-machine-learning-algorithms-for-classification/",
+      "snippet": "Machine learning classification algorithms are essential tools used to categorize data into predefined classes based on learned patterns. From simple linear models to advanced neural networks, these algorithms are used in applications like spam detection, image recognition, sentiment analysis and medical diagnosis."
+    },
+    {
+      "title": "Getting started with Classification - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/getting-started-with-classification/",
+      "snippet": "Classification works by training a model on labeled data so it can learn patterns and predict the correct class for new inputs. The main steps involved are: Data Collection: Start with a dataset where each data point has a correct label. Feature Extraction: Identify important features such as color, shape or texture that help distinguish classes."
+    },
+    {
+      "title": "What is classification in machine learning? - IBM",
+      "url": "https://www.ibm.com/think/topics/classification-machine-learning",
+      "snippet": "A classification algorithm is a categorization-focused machine learning algorithm that sorts input data into different classes or categories. Artificial intelligence (AI) models use classification algorithms to process input datasets against a specified classifier that sets the criteria for how the data should be sorted."
+    },
+    {
+      "title": "Text Classification Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=text-classification",
+      "snippet": "Active filters: text-classification. Clear all. convaiinnovations/laya. Text Classification • 0.4B • Updated 9 days ago • 5.04k. SupersonicLabs/Julia-1"
+    }
+  ]
+}

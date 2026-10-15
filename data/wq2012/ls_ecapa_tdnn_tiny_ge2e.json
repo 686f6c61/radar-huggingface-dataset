@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "wq2012/ls_ecapa_tdnn_tiny_ge2e",
+  "slug": "wq2012-ls_ecapa_tdnn_tiny_ge2e",
+  "author": "wq2012",
+  "url": "https://huggingface.co/wq2012/ls_ecapa_tdnn_tiny_ge2e",
+  "created_at": "2026-10-15T01:38:20.000Z",
+  "updated_at": "2026-10-15T01:38:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "flaxspeaker",
+  "languages": [],
+  "tags": [
+    "flaxspeaker",
+    "jax",
+    "safetensors",
+    "audio",
+    "speaker-verification",
+    "speaker-recognition",
+    "speaker-embeddings",
+    "flax",
+    "ecapa_tdnn",
+    "ge2e_softmax",
+    "cosine",
+    "audio-classification",
+    "dataset:librispeech_asr",
+    "dataset:cnceleb",
+    "dataset:voxceleb",
+    "arxiv:1710.10467",
+    "arxiv:2104.01989",
+    "arxiv:2202.12163",
+    "arxiv:2203.05642",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 626720,
+  "parameters_human": "626720",
+  "storage_bytes": 5025516,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ECAPA TDNN | NVIDIA NGC",
+      "url": "https://catalog.ngc.nvidia.com/orgs/nvidia/teams/nemo/models/ecapa_tdnn",
+      "snippet": "Speaker Recognition is a broad research area that solves two major tasks: speaker identification (who is speaking?) and speaker verification (is the speaker who they claim to be?). In this work, we focus on far-field, text-independent speaker recog…ECAPA models consists of blocks of time delay neural blocks (TDNNs) and squeeze and excite (SE) layers unified with blocks of Res2Block layers. For faster training with similar performance numbers on diarization tasks we replaced Res2Blocks with grou…These models were trained on a composite dataset comprising of several thousand hours of speech, compiled from various publicly available sources. The NeMo toolkit was used for training this model over few hundred epochs on multiple GPUs.This ECAPA model which is based on layers of TDNNs and SEs structure with 22.3M parameters achieves 0.92% EER on voxceleb clean test trial file and Also achieves the following results on common evaluation datasets (without finetuning o…"
+    },
+    {
+      "title": "wespeaker-ecapa-tdnn512-LM - Hugging Face",
+      "url": "https://huggingface.co/Wespeaker/wespeaker-ecapa-tdnn512-LM",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - LKLQQ/ecapa_tdnn",
+      "url": "https://github.com/LKLQQ/ecapa_tdnn",
+      "snippet": "Mixed precision training can accelerate the computation process, reduce memory usage, and enable a larger model or batch size to …"
+    },
+    {
+      "title": "ECAPA TDNN | NVIDIA NGC",
+      "url": "https://catalog.ngc.nvidia.com/orgs/nvidia/teams/nemo/models/ecapa_tdnn/files?version=1.16.0",
+      "snippet": "Model NVIDIA ECAPA TDNN ECAPA TDNN model for Speaker Verification and Diarization tasks"
+    },
+    {
+      "title": "speechbrain/spkrec-ecapa-voxceleb · Hugging Face",
+      "url": "https://huggingface.co/speechbrain/spkrec-ecapa-voxceleb",
+      "snippet": "This repository provides all the necessary tools to perform speaker verification with a pretrained ECAPA-TDNN model using …"
+    }
+  ]
+}

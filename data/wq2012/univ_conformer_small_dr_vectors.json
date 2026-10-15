@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "wq2012/univ_conformer_small_dr_vectors",
+  "slug": "wq2012-univ_conformer_small_dr_vectors",
+  "author": "wq2012",
+  "url": "https://huggingface.co/wq2012/univ_conformer_small_dr_vectors",
+  "created_at": "2026-10-15T01:37:46.000Z",
+  "updated_at": "2026-10-15T01:37:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "flaxspeaker",
+  "languages": [],
+  "tags": [
+    "flaxspeaker",
+    "jax",
+    "safetensors",
+    "audio",
+    "speaker-verification",
+    "speaker-recognition",
+    "speaker-embeddings",
+    "flax",
+    "conformer",
+    "extended_set_softmax",
+    "dr_vector",
+    "audio-classification",
+    "dataset:librispeech_asr",
+    "dataset:cnceleb",
+    "dataset:voxceleb",
+    "arxiv:1710.10467",
+    "arxiv:2104.01989",
+    "arxiv:2202.12163",
+    "arxiv:2203.05642",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2088005,
+  "parameters_human": "2.1M",
+  "storage_bytes": 16721235,
+  "storage_human": "17 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wq2012/personal-vad-v2-conformer-unified · Hugging Face",
+      "url": "https://huggingface.co/wq2012/personal-vad-v2-conformer-unified",
+      "snippet": "wq2012 / personal-vad-v2-conformer-unified Like 0 Voice Activity Detection LiteRT Safetensors facebook/multilingual_librispeech personal-vad audio speaker-conditioning conformer lstm tensorflow arxiv:1908.04284 arxiv:2204.03793 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Personal VAD 2.0 — E5 Unified Enrolled & Enrollment-Less Causal Conformer ..."
+    },
+    {
+      "title": "wq2012/personal-vad-v2-conformer-film-dvector · Hugging Face",
+      "url": "https://huggingface.co/wq2012/personal-vad-v2-conformer-film-dvector",
+      "snippet": "wq2012 / personal-vad-v2-conformer-film-dvector Like 0 Voice Activity Detection LiteRT Safetensors facebook/multilingual_librispeech personal-vad audio speaker-conditioning conformer lstm tensorflow arxiv:1908.04284 arxiv:2204.03793 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Personal VAD 2.0 — E1 Causal Conformer + FiLM (d-vector) (wq2012/personal ..."
+    },
+    {
+      "title": "personal_vad/pretrained_models/pvad2_e1_conformer_film_dvector/model ...",
+      "url": "https://github.com/wq2012/personal_vad/blob/main/pretrained_models/pvad2_e1_conformer_film_dvector/model_config.json",
+      "snippet": "Personal VAD 1.0 and 2.0. Contribute to wq2012/personal_vad development by creating an account on GitHub."
+    },
+    {
+      "title": "pvad2_e1_conformer_film_dvector - GitHub",
+      "url": "https://github.com/wq2012/personal_vad/tree/main/pretrained_models/pvad2_e1_conformer_film_dvector",
+      "snippet": "Model Summary Model ID: pvad2_e1_conformer_film_dvector (wq2012/personal-vad-v2-conformer-film-dvector) Paper: Personal VAD 2.0 (arXiv:2204.03793) Architecture: 4-Layer Causal Streaming Conformer (64-d) + Feature-wise Linear Modulation (FiLM) on target d-vector Backbone: conformer Conditioning Mode: film_dvector Loss Function: cross_entropy Trainable Parameters: 716,419 Safetensors Checkpoint ..."
+    },
+    {
+      "title": "Conformer LLMs - Convolution Augmented Large Language Models",
+      "url": "https://arxiv.org/html/2307.00461",
+      "snippet": "Abstract This work builds together two popular blocks of neural architecture, namely convolutional layers and Transformers, for large language models (LLMs). Non-causal conformers are used ubiquitously in automatic speech recognition. This work aims to adapt these architectures in a causal setup for training LLMs. Transformers decoders effectively capture long-range dependencies over several ..."
+    }
+  ]
+}

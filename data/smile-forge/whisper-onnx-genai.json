@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "smile-forge/whisper-onnx-genai",
+  "slug": "smile-forge-whisper-onnx-genai",
+  "author": "smile-forge",
+  "url": "https://huggingface.co/smile-forge/whisper-onnx-genai",
+  "created_at": "2026-10-14T22:11:15.000Z",
+  "updated_at": "2026-10-14T22:11:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "onnxruntime-genai",
+  "languages": [
+    "en",
+    "fr",
+    "de"
+  ],
+  "tags": [
+    "onnxruntime-genai",
+    "onnx",
+    "whisper",
+    "automatic-speech-recognition",
+    "en",
+    "fr",
+    "de",
+    "base_model:openai/whisper-small",
+    "base_model:quantized:openai/whisper-small",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2133862670,
+  "storage_human": "2.1 GB",
+  "base_model": "openai/whisper-small, openai/whisper-small.en",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Download GTM Smile Models Carol 2videos rar - filedot.to",
+      "url": "https://filedot.to/uoxppncwt9i9",
+      "snippet": "Download File GTM Smile Models Carol 2videos rarRead more"
+    },
+    {
+      "title": "Baker Street - Moving to https://filedot.sl/folder/0552bc65",
+      "url": "https://filedot.to/folder/88a0c9ba",
+      "snippet": "Download all files in this folder with one click Files"
+    },
+    {
+      "title": "Files in Nadia Nyk folder - filedot.to",
+      "url": "https://filedot.to/folder/7fd1356d/NadiaNyk",
+      "snippet": "Files Download all files in this folder with one click"
+    },
+    {
+      "title": "Files in SS-Isabella folder - filedot.to",
+      "url": "https://filedot.to/folder/f23d863a",
+      "snippet": "Files Download all files in this folder with one click"
+    },
+    {
+      "title": "Files in vptm-GC.rt folder - filedot.to",
+      "url": "https://filedot.to/folder/749cf098",
+      "snippet": "Files Download all files in this folder with one click"
+    }
+  ]
+}

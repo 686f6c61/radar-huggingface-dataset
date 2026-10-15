@@ -61,12 +61,12 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 289,
+  "likes": 316,
   "downloads_30d": 4067,
-  "trending_score": 288,
+  "trending_score": 313,
   "parameters": 23971585280,
   "parameters_human": "23.97B",
-  "storage_bytes": 47967016139,
+  "storage_bytes": 47965588445,
   "storage_human": "48.0 GB",
   "base_model": "LiquidAI/LFM2.5-24B-A2B-Base",
   "formats": [

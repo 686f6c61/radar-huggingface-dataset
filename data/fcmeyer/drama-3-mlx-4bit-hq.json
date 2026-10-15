@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "fcmeyer/drama-3-MLX-4bit-HQ",
+  "slug": "fcmeyer-drama-3-mlx-4bit-hq",
+  "author": "fcmeyer",
+  "url": "https://huggingface.co/fcmeyer/drama-3-MLX-4bit-HQ",
+  "created_at": "2026-10-14T19:41:46.000Z",
+  "updated_at": "2026-10-14T21:49:16.000Z",
+  "license": "fish-audio-community-license-v1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "mlx-audio",
+  "languages": [],
+  "tags": [
+    "mlx-audio",
+    "fish_drama3",
+    "mlx",
+    "tts",
+    "fish-audio",
+    "drama-3",
+    "text-to-speech",
+    "base_model:fishaudio/drama-3",
+    "base_model:quantized:fishaudio/drama-3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26071223333,
+  "storage_human": "26.1 GB",
+  "base_model": "fishaudio/drama-3",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or …"
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/features",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or …"
+    },
+    {
+      "title": "Introducing ChatGPT - OpenAI",
+      "url": "https://openai.com/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · We’ve trained a model called ChatGPT which interacts in a conversational way. The dialogue format makes it …"
+    },
+    {
+      "title": "GPT-4 | OpenAI",
+      "url": "https://openai.com/index/gpt-4/",
+      "snippet": "Mar 14, 2023 · GPT-4 is capable of handling over 25,000 words of text, allowing for use cases like long form content creation, …"
+    },
+    {
+      "title": "ChatGPT - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/ChatGPT",
+      "snippet": "ChatGPT is a generative AI chatbot developed by OpenAI. Originally released on November 30, 2022, the product uses large …"
+    }
+  ]
+}

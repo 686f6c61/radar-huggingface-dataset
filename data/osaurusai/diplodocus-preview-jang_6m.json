@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "OsaurusAI/Diplodocus-preview-JANG_6M",
+  "slug": "osaurusai-diplodocus-preview-jang_6m",
+  "author": "OsaurusAI",
+  "url": "https://huggingface.co/OsaurusAI/Diplodocus-preview-JANG_6M",
+  "created_at": "2026-10-06T02:08:25.000Z",
+  "updated_at": "2026-10-14T23:51:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "k2_horizon",
+    "jang",
+    "quantized",
+    "apple-silicon",
+    "reasoning",
+    "tool-use",
+    "finance",
+    "documents",
+    "spreadsheets",
+    "gptq",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:IFM/K2-Horizon-7B",
+    "base_model:quantized:IFM/K2-Horizon-7B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 61,
+  "trending_score": 0,
+  "parameters": 8999178240,
+  "parameters_human": "9.00B",
+  "storage_bytes": 21251684556,
+  "storage_human": "21.3 GB",
+  "base_model": "IFM/K2-Horizon-7B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OsaurusAI/Diplodocus-preview-7B-JANGH7 · Hugging Face",
+      "url": "https://huggingface.co/OsaurusAI/Diplodocus-preview-7B-JANGH7",
+      "snippet": "OsaurusAI/Diplodocus-preview2-JANGH7 Diplodocus preview 2: the Osaurus assistant for finance and white-collar work (spreadsheets, documents, PDFs, exact numbers, agentic file and terminal work), built on IFM/K2-Horizon-7B, quantized to 7.2 GB with reasoning that tracks the full-precision model."
+    },
+    {
+      "title": "OsaurusAI (Osaurus-AI) - Hugging Face",
+      "url": "https://huggingface.co/OsaurusAI/models",
+      "snippet": "Org profile for Osaurus-AI on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Osaurus: Privacy isn&#x27;t extinct.",
+      "url": "https://osaurus.ai/",
+      "snippet": "Powerful AI agents that live on your computer, not in someone else&#x27;s cloud. Whatever you use them for, it stays with you."
+    },
+    {
+      "title": "Local AI Models for Apple Silicon Macs — Osaurus",
+      "url": "https://osaurus.ai/models",
+      "snippet": "Explore open, on-device AI models for Apple Silicon, with model sizes, memory requirements and capabilities for private agents and Mac automation."
+    },
+    {
+      "title": "GitHub - osaurus-ai/osaurus: Own your AI. The native macOS harness for ...",
+      "url": "https://github.com/osaurus-ai/osaurus",
+      "snippet": "Models are getting cheaper and more interchangeable by the day. What&#x27;s irreplaceable is the layer around them -- your context, your memory, your tools, your identity. Others keep that layer on their servers. Osaurus keeps it on your machine. Osaurus is the AI harness for macOS. It sits between you and any model -- local or cloud -- and provides the continuity that makes AI personal: agents ..."
+    }
+  ]
+}

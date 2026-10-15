@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "zviratko/Qwen3.8-Flash-Next-Uncensored-plefp8",
+  "slug": "zviratko-qwen3-8-flash-next-uncensored-plefp8",
+  "author": "zviratko",
+  "url": "https://huggingface.co/zviratko/Qwen3.8-Flash-Next-Uncensored-plefp8",
+  "created_at": "2026-10-14T21:23:57.000Z",
+  "updated_at": "2026-10-14T21:25:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen4_exp",
+    "omlx",
+    "quantized",
+    "mixed-precision",
+    "affine",
+    "moe",
+    "mtp",
+    "vision-language",
+    "apple-silicon",
+    "m5",
+    "nax",
+    "plefp8",
+    "image-text-to-text",
+    "conversational",
+    "base_model:ddark-il/Qwen3.8-Flash-Next-Uncensored",
+    "base_model:quantized:ddark-il/Qwen3.8-Flash-Next-Uncensored",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 179999981459,
+  "parameters_human": "180.00B",
+  "storage_bytes": 130028767075,
+  "storage_human": "130.0 GB",
+  "base_model": "ddark-il/Qwen3.8-Flash-Next-Uncensored",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-Flash-Next-Uncensored-IQ4XS-NGQ4-GGUF - Hugging Face",
+      "url": "https://huggingface.co/cygnal/Qwen3.8-Flash-Next-Uncensored-IQ4XS-NGQ4-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next-Uncensored-GGUF - Hugging Face",
+      "url": "https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored-GGUF?local-app=lemonade",
+      "snippet": "orcarouter / Qwen3.8-Flash-Next-Uncensored-GGUF Like 284 Follow OrcaRouter 2.09k Image-Text-to-Text GGUF English Chinese abliterated uncensored qwen qwen3.8 qwen4 flash-next Mixture of Experts llama.cpp vision-language mmproj function-calling reasoning ai-red-team red-teaming imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community 12 Deploy Copy to bucket new ..."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next (uncensored EXL3) — one DGX Spark - GitHub",
+      "url": "https://github.com/jayleaton/qwen38-flash-next-exl3-spark",
+      "snippet": "A single docker compose up away from serving Qwen3.8-Flash-Next — the uncensored EXL3 re-quant — on an NVIDIA DGX Spark (GB10, aarch64), with an OpenAI-compatible API and speculative decoding on. Same workflow as the GLM-5.3-Flash DGX image: get the image, mount the model, talk to it like a cloud model."
+    },
+    {
+      "title": "Qwen3.8 Flash Next Uncensored - Model · Experiential",
+      "url": "https://platform.experientiallabs.ai/models/qwen3.8-flash-next-uncensored",
+      "snippet": "huihui-ai&#x27;s abliterated Qwen3.8-Flash-Next: the 125B-total, 6B-active MoE with its refusal direction removed, keeping the base model&#x27;s reasoning (low/medium/xhigh effort) and tool calling. Served by Experiential Cloud on dedicated GPUs. Text only; 262,144-token context, up to 65,536 output tokens."
+    },
+    {
+      "title": "Qwen3.8 Flash Next Uncensored - GGUF Model (3 parts)",
+      "url": "https://local-ai-zone.github.io/models/qwen3-8-flash-next-uncensored.html",
+      "snippet": "Download Qwen3.8 Flash Next Uncensored GGUF model. 15.2 GB, 629,886 downloads, 822 likes. Split into 3 parts."
+    }
+  ]
+}

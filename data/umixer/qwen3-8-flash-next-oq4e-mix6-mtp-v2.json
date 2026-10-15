@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "umixer/Qwen3.8-Flash-Next-oQ4e-mix6-mtp-v2",
+  "slug": "umixer-qwen3-8-flash-next-oq4e-mix6-mtp-v2",
+  "author": "umixer",
+  "url": "https://huggingface.co/umixer/Qwen3.8-Flash-Next-oQ4e-mix6-mtp-v2",
+  "created_at": "2026-10-12T09:42:51.000Z",
+  "updated_at": "2026-10-14T23:31:02.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "retired",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 732,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 125396703733,
+  "storage_human": "125.4 GB",
+  "base_model": null,
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Search - Microsoft Bing",
+      "url": "https://www.bing.com/",
+      "snippet": "Search with Microsoft Bing and use the power of AI to find information, explore webpages, images, videos, maps, and more. A smart …"
+    },
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/webhp",
+      "snippet": "Bing helps you turn information into action, making it faster and easier to go from searching to doing."
+    },
+    {
+      "title": "Bing - microsoft.com",
+      "url": "https://www.microsoft.com/en-ie/bing/?msockid=37fa828fb0466301087c957cb1c562f1",
+      "snippet": "Bing is a search engine that helps you find information, images, videos, and answers to your questions."
+    },
+    {
+      "title": "Bing - microsoft.com",
+      "url": "https://www.microsoft.com/en-ph/bing/?msockid=37fa828fb0466301087c957cb1c562f1",
+      "snippet": "Bing is a search engine offering fast, secure, and AI-powered results, integrated tools, stunning wallpapers, and rewards for every …"
+    },
+    {
+      "title": "Microsoft Bing",
+      "url": "https://bingapp.microsoft.com/bing",
+      "snippet": "Bing: Search that gives you more. Get fast and trusted search results by text, voice, or image. Find stunning daily Bing wallpapers, …"
+    }
+  ]
+}

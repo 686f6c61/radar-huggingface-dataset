@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Devdotakash/Qwen2.5-Coder-0.5B-Instruct",
+  "slug": "devdotakash-qwen2-5-coder-0-5b-instruct",
+  "author": "Devdotakash",
+  "url": "https://huggingface.co/Devdotakash/Qwen2.5-Coder-0.5B-Instruct",
+  "created_at": "2026-10-14T18:52:18.000Z",
+  "updated_at": "2026-10-14T18:52:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "code",
+    "codeqwen",
+    "chat",
+    "qwen",
+    "qwen-coder",
+    "conversational",
+    "en",
+    "arxiv:2409.12186",
+    "arxiv:2407.10671",
+    "base_model:Qwen/Qwen2.5-Coder-0.5B",
+    "base_model:finetune:Qwen/Qwen2.5-Coder-0.5B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 988097824,
+  "storage_human": "988 MB",
+  "base_model": "Qwen/Qwen2.5-Coder-0.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alpha Mini Direct Drive Wheel base - SIMAGIC Official Store",
+      "url": "https://simagic.com/products/alpha-mini",
+      "snippet": "10Nm Entry level Direct Drive Wheelbase. -Your Direct Drive Starts Here.Read more"
+    },
+    {
+      "title": "Accessories Power Supply - Simagic",
+      "url": "https://simagic.com/products/p-aps",
+      "snippet": "Tax-Included Countries List. Shipping calculated at checkout. Sign up to hear the latest from us."
+    },
+    {
+      "title": "Support d'alimentation Alpha Mini SIMAGIC pour Sim Rig - Etsy",
+      "url": "https://www.etsy.com/fr/listing/4353332866/support-dalimentation-alpha-mini-simagic?msockid=3a5643b8356b642a0e3d544a345f65bd",
+      "snippet": "--------------- Jeu de 2 supports pour monter votre bloc d'alimentation pour les empattements Simagic Alpha et Alpha Mini Elles sont …"
+    },
+    {
+      "title": "Alpha mini simagic - Etsy France",
+      "url": "https://www.etsy.com/fr/market/alpha_mini_simagic?msockid=3a5643b8356b642a0e3d544a345f65bd",
+      "snippet": "Parcourez notre sélection de alpha mini simagic : vous y trouverez les meilleures pièces uniques ou personnalisées de nos boutiques."
+    },
+    {
+      "title": "Supports Alimentation Simagic | The French Simracer",
+      "url": "https://thefrenchsimracer.com/products/power-supply-mounting-brackets-for-simagic-bases",
+      "snippet": "Description du produit : Gardez vos câbles organisés et votre configuration bien rangée avec ces supports de montage …"
+    }
+  ]
+}

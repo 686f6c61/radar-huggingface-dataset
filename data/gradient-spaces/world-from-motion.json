@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "gradient-spaces/World-from-Motion",
+  "slug": "gradient-spaces-world-from-motion",
+  "author": "gradient-spaces",
+  "url": "https://huggingface.co/gradient-spaces/World-from-Motion",
+  "created_at": "2026-10-15T01:09:45.000Z",
+  "updated_at": "2026-10-15T01:09:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gradient — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Gradient",
+      "snippet": "Le gradient d’une fonction f est noté grad (f) ou avec l’opérateur nabla , parfois avec des flèches suscrites. En chaque point où il est …"
+    },
+    {
+      "title": "Divergence, gradient, rotationnel et laplacien - Méthode Maths",
+      "url": "https://www.methodemaths.fr/divergence_gradient_rotationnel_laplacien/",
+      "snippet": "Dans ce chapitre nous allons voir les formules pour calculer la divergence, le gradient, le rotationnel et le laplacien scalaire et …"
+    },
+    {
+      "title": "Gradient - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Gradient",
+      "snippet": "Consider a surface whose height above sea level at point (x, y) is H(x, y). The gradient of H at a point is a plane vector pointing in the …"
+    },
+    {
+      "title": "uiGradients - Beautiful colored gradients",
+      "url": "https://uigradients.com/",
+      "snippet": "uiGradients is a handpicked collection of beautiful color gradients for designers and developers."
+    },
+    {
+      "title": "CSS Gradient – Generator, Maker, and Background",
+      "url": "https://cssgradient.io/",
+      "snippet": "As a free CSS gradient generator tool, this website lets you create a colorful gradient background for your website, blog, or social …"
+    }
+  ]
+}

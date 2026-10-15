@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "ForgeWorks/ForgePlex-M2.2-10M",
+  "slug": "forgeworks-forgeplex-m2-2-10m",
+  "author": "ForgeWorks",
+  "url": "https://huggingface.co/ForgeWorks/ForgePlex-M2.2-10M",
+  "created_at": "2026-10-13T09:10:41.000Z",
+  "updated_at": "2026-10-15T00:02:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "forgeplex_m2",
+    "text-generation",
+    "language-model",
+    "forgeplex",
+    "forgeworks",
+    "rope",
+    "swiglu",
+    "gqa",
+    "attn-output-gate",
+    "refresh-gate",
+    "custom_code",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 7,
+  "downloads_30d": 189,
+  "trending_score": 0,
+  "parameters": 9991936,
+  "parameters_human": "10.0M",
+  "storage_bytes": 40101959,
+  "storage_human": "40 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ForgeWorks/ForgePlex-M2.2-10M · Hugging Face",
+      "url": "https://huggingface.co/ForgeWorks/ForgePlex-M2.2-10M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ForgeWorks/ForgePlex-M2.1-10M · Hugging Face",
+      "url": "https://huggingface.co/ForgeWorks/ForgePlex-M2.1-10M",
+      "snippet": "ForgePlex-M2.1-10M is a 9.99M-parameter decoder-only language model from ForgeWorks, and the most complete model we&#x27;ve built so far. We thank the ForgeWorks team alongside anyone who delivered assistance in the creation of this model."
+    },
+    {
+      "title": "ForgePlex-M2: open language model | AxForge",
+      "url": "https://axforge.ai/models/forgeplex-m2/",
+      "snippet": "ForgePlex-M2-9M is a 9.95M-parameter decoder-only language model developed by ForgeWorks for text generation. It supports English with a context length of 1024 tokens and is released under the Apache-2.0 license. The model features an 11-layer architecture with 256 hidden dimensions and a custom 4,096-token vocabulary."
+    },
+    {
+      "title": "ForgePlex-M2.1-10M by ForgeWorks | AI Market Cap",
+      "url": "https://aimarketcap.tech/models/forgeworks-forgeplex-m2-1-10m",
+      "snippet": "Explore ForgePlex-M2.1-10M by ForgeWorks — benchmark coverage where available, pricing, and comparisons on AI Market Cap."
+    },
+    {
+      "title": "GitHub - mx-zzz/ForgePlex: A lightweight Time Series neural network ...",
+      "url": "https://github.com/mx-zzz/ForgePlex",
+      "snippet": "A lightweight Time Series neural network development application that enables users to train, evaluate, test, and deploy predictive neural networks efficiently. - GitHub - mx-zzz/ForgePlex: A lightweight Time Series neural network development application that enables users to train, evaluate, test, and deploy predictive neural networks efficiently."
+    }
+  ]
+}

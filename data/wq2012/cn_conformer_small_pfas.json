@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "wq2012/cn_conformer_small_pfas",
+  "slug": "wq2012-cn_conformer_small_pfas",
+  "author": "wq2012",
+  "url": "https://huggingface.co/wq2012/cn_conformer_small_pfas",
+  "created_at": "2026-10-15T01:38:03.000Z",
+  "updated_at": "2026-10-15T01:38:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "flaxspeaker",
+  "languages": [],
+  "tags": [
+    "flaxspeaker",
+    "jax",
+    "safetensors",
+    "audio",
+    "speaker-verification",
+    "speaker-recognition",
+    "speaker-embeddings",
+    "flax",
+    "conformer",
+    "extended_set_softmax",
+    "pfas",
+    "audio-classification",
+    "dataset:librispeech_asr",
+    "dataset:cnceleb",
+    "dataset:voxceleb",
+    "arxiv:1710.10467",
+    "arxiv:2104.01989",
+    "arxiv:2202.12163",
+    "arxiv:2203.05642",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2162184,
+  "parameters_human": "2.2M",
+  "storage_bytes": 17314738,
+  "storage_human": "17 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wq2012/personal-vad-v2-conformer-unified · Hugging Face",
+      "url": "https://huggingface.co/wq2012/personal-vad-v2-conformer-unified",
+      "snippet": "wq2012 / personal-vad-v2-conformer-unified Like 0 Voice Activity Detection LiteRT Safetensors facebook/multilingual_librispeech personal-vad audio speaker-conditioning conformer lstm tensorflow arxiv:1908.04284 arxiv:2204.03793 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Personal VAD 2.0 — E5 Unified Enrolled & Enrollment-Less Causal Conformer ..."
+    },
+    {
+      "title": "Towards smart PFAS management: Integrating artificial intelligence in ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0304389425038555",
+      "snippet": "Future progress will depend on the development of larger and more harmonized datasets, improved integration of AI with mechanistic and physicochemical understanding, systematic evaluation of model transferability, and the incorporation of multimodal and multilabel modeling strategies capable of addressing PFAS mixtures and real-world ..."
+    },
+    {
+      "title": "Advancements in artificial intelligence-based technologies for PFAS ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0048969725011775",
+      "snippet": "Traditional PFAS detection and treatment methods are often time-consuming, costly, and limited in scope. Recently, artificial intelligence (AI)-based technologies, particularly machine learning (ML), have emerged as powerful tools for enhancing PFAS monitoring, source identification, and remediation."
+    },
+    {
+      "title": "GitHub - AI4PFAS/AI4PFAS: Dataset and code for \"Uncertainty-Informed ...",
+      "url": "https://github.com/AI4PFAS/AI4PFAS",
+      "snippet": "Dataset and code for \"Uncertainty-Informed Deep Transfer Learning of PFAS Toxicity\" - AI4PFAS/AI4PFAS"
+    },
+    {
+      "title": "Designing a PFAS Removal System Just Got Easier ... - Hazen and Sawyer",
+      "url": "https://www.hazenandsawyer.com/projects/choosing-a-pfas-filtration-system-just-got-easier-thanks-to-artificial-intelligence",
+      "snippet": "The model was refined with a team of colleagues whose expertise spans PFAS removal technology, machine learning, product development, and user interface design. The result is a powerful, accessible tool for evaluating PFAS treatment options. Here&#x27;s what makes it distinctive: Comprehensive breakthrough data In GAC filtration, a contaminant&#x27;s breakthrough means how much of it is escaping in ..."
+    }
+  ]
+}

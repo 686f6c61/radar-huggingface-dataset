@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "baobabtech/evalexplorer-classify-gemma-4-e2b-sft",
+  "slug": "baobabtech-evalexplorer-classify-gemma-4-e2b-sft",
+  "author": "baobabtech",
+  "url": "https://huggingface.co/baobabtech/evalexplorer-classify-gemma-4-e2b-sft",
+  "created_at": "2026-10-14T19:39:51.000Z",
+  "updated_at": "2026-10-14T19:44:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "evalexplorer",
+    "document-classification",
+    "structured-output",
+    "base_model:unsloth/gemma-4-E2B-it",
+    "base_model:adapter:unsloth/gemma-4-E2B-it",
+    "license:apache-2.0",
+    "region:eu"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 133593554,
+  "storage_human": "134 MB",
+  "base_model": "unsloth/gemma-4-E2B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

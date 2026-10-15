@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Donghyun1228/pi05-libero-view-large-idm-gripper-timing-20261015-reverse",
+  "slug": "donghyun1228-pi05-libero-view-large-idm-gripper-timing-20261015-reverse",
+  "author": "Donghyun1228",
+  "url": "https://huggingface.co/Donghyun1228/pi05-libero-view-large-idm-gripper-timing-20261015-reverse",
+  "created_at": "2026-10-14T22:32:46.000Z",
+  "updated_at": "2026-10-14T22:33:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "libero",
+    "pi05",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5907223088,
+  "storage_human": "5.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Donghyun1228/pi05-libero-view-large-idm-coverage-20261015-continue ...",
+      "url": "https://huggingface.co/Donghyun1228/pi05-libero-view-large-idm-coverage-20261015-continue",
+      "snippet": "Bounded IDM coverage comparison: continue_old_idm 200-update continuation from the accepted manual-LR view baseline raw999, with original Adam/EMA restored and vision1/expert0.1 post-Adam scaling."
+    },
+    {
+      "title": "pi05 LIBERO shared IDM LoRA and policy readout: view_large",
+      "url": "https://huggingface.co/Donghyun1228/pi05-libero-idm-lora-readout-dense-contact-20261006-view-large",
+      "snippet": "Use openpi training config pi05_libero_idm_lora_readout_view_adapt with checkpoint directory 4999/. Source jointly trains IL and IDM with global batch64 for each loss. The shared LoRA factors learn from both losses; the identity plus rank16 policy readout learns from IL."
+    },
+    {
+      "title": "OpenPI - Open Source Vision-Language-Action Model Library",
+      "url": "https://www.openpi.net/english.html",
+      "snippet": "OpenPI Open Source Vision-Language-Action Model Library for Robotics Developed by the Physical Intelligence team, OpenPI hosts open-source VLA models pre-trained on 10k+ hours of robot data, enabling researchers and practitioners to fine-tune and deploy robotic manipulation capabilities across diverse platforms."
+    },
+    {
+      "title": "LIBERO Evaluation — LoongForge",
+      "url": "https://loongforge.readthedocs.io/en/latest/embodied_tutorial/eval_docs/benchmarks/libero.html",
+      "snippet": "LIBERO is a tabletop robot manipulation benchmark with 4 task suites (Spatial, Object, Goal, Long Horizon), totaling 40 tasks, evaluated on a Franka arm. This page is a step-by-step reproduction guide for running LIBERO evaluation through the LoongForge eval module."
+    },
+    {
+      "title": "pi05_libero_base · Models",
+      "url": "https://www.modelscope.cn/models/lerobot/pi05_libero_base",
+      "snippet": "π₀.₅ (Pi05) (LeRobot) π₀.₅ is a Vision-Language-Action (VLA) model with open-world generalization from Physical Intelligence, co-trained on robot demonstrations and large-scale multimodal data to execute long-horizon tasks in unseen real-world environments. Note: This model currently supports only the flow-matching action head for π₀.₅ training and inference. Other components ..."
+    }
+  ]
+}

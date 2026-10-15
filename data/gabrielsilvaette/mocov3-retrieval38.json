@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Gabrielsilvaette/mocov3-retrieval38",
+  "slug": "gabrielsilvaette-mocov3-retrieval38",
+  "author": "Gabrielsilvaette",
+  "url": "https://huggingface.co/Gabrielsilvaette/mocov3-retrieval38",
+  "created_at": "2026-10-14T23:29:00.000Z",
+  "updated_at": "2026-10-14T23:29:07.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lalaurent4384/mocov3-retrieval · Hugging Face",
+      "url": "https://huggingface.co/lalaurent4384/mocov3-retrieval",
+      "snippet": "Overview This is an experimental Mocov3 codebase for Retrieval. It keeps the giant setup intentionally manageable so architecture changes can be inspected before a full training run."
+    },
+    {
+      "title": "niklaswagner/mocov3-retrieval · Hugging Face",
+      "url": "https://huggingface.co/niklaswagner/mocov3-retrieval",
+      "snippet": "niklaswagner / mocov3-retrieval Like 0 Safetensors PyTorch mocov3 retrieval License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Mocov3 for Retrieval Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files License"
+    },
+    {
+      "title": "arXiv.org e-Print archive",
+      "url": "https://arxiv.org/pdf/2211.09861",
+      "snippet": "arXiv.org e-Print archive"
+    },
+    {
+      "title": "GitHub - facebookresearch/moco-v3: PyTorch implementation of MoCo v3 ...",
+      "url": "https://github.com/facebookresearch/moco-v3",
+      "snippet": "This is a PyTorch implementation of MoCo v3 for self-supervised ResNet and ViT. The original MoCo v3 was implemented in Tensorflow and run in TPUs. This repo re-implements in PyTorch and GPUs. Despite the library and numerical differences, this repo reproduces the results and observations in the paper."
+    },
+    {
+      "title": "GitHub - kissablemt/moco-v3-3d: PyTorch implementation of MoCo v3 https ...",
+      "url": "https://github.com/kissablemt/moco-v3-3d",
+      "snippet": "This is a PyTorch implementation of MoCo v3 for self-supervised ResNet and ViT. The original MoCo v3 was implemented in Tensorflow and run in TPUs. This repo re-implements in PyTorch and GPUs. Despite the library and numerical differences, this repo reproduces the results and observations in the paper."
+    }
+  ]
+}

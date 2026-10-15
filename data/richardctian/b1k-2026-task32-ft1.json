@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "RichardCTian/b1k-2026-task32-ft1",
+  "slug": "richardctian-b1k-2026-task32-ft1",
+  "author": "RichardCTian",
+  "url": "https://huggingface.co/RichardCTian/b1k-2026-task32-ft1",
+  "created_at": "2026-10-14T19:13:11.000Z",
+  "updated_at": "2026-10-14T19:14:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "behavior-1k",
+    "pi0.5",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12644531681,
+  "storage_human": "12.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Constante universelle des gaz parfaits — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Constante_universelle_des_gaz_parfaits",
+      "snippet": "La constante universelle des gaz parfaits a été empiriquement déterminée en tant que constante de proportionnalité de l' équation …"
+    },
+    {
+      "title": "PV=nRT : Valeur de R et Applications de la Loi des Gaz Parfaits",
+      "url": "https://docteurs-chimie.org/pvnrt-valeur-de-r-et-applications-de-la-loi-des-gaz-parfaits/",
+      "snippet": "Jun 23, 2025 · La constante R dans PV=nRT représente la constante universelle des gaz parfaits, également appelée constante de …"
+    },
+    {
+      "title": "Constante des gaz parfaits : définition, valeur et rôle dans l'équation ...",
+      "url": "https://genie-des-procedes.fr/constante-des-gaz-parfaits-definition-valeur-et-role-dans-lequation-detat/",
+      "snippet": "Constante des gaz parfaits : définition, valeur et rôle dans l’équation d’état Vous arrive-t-il de vous demander comment une simple …"
+    },
+    {
+      "title": "Loi des gaz parfaits — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Loi_des_gaz_parfaits",
+      "snippet": "La loi des gaz parfaits n'est exacte que pour les gaz pour lesquels les effets des diverses interactions moléculaires sont négligeables …"
+    },
+    {
+      "title": "Constante de gaz parfait : comprendre, valeurs et applications du ...",
+      "url": "https://umasps.fr/constante-de-gaz-parfait/",
+      "snippet": "May 18, 2026 · La Constante de gaz parfait est un élément central pour décrire le comportement des gaz dans le cadre de l’équation …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ttg73ml/repository",
+  "slug": "ttg73ml-repository",
+  "author": "ttg73ml",
+  "url": "https://huggingface.co/ttg73ml/repository",
+  "created_at": "2026-10-14T20:46:02.000Z",
+  "updated_at": "2026-10-14T21:05:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10161288283,
+  "storage_human": "10.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ttg73ml (Tt) - Hugging Face",
+      "url": "https://huggingface.co/ttg73ml",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 3 hours ago ... published a model about 3 hours ago ... new activity about 5 hours ago"
+    },
+    {
+      "title": "ttg73ml (Tt) - Hugging Face",
+      "url": "https://huggingface.co/ttg73ml/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 18 hours ago ... published a model about 18 hours ago ... new activity about 19 hours ago"
+    },
+    {
+      "title": "Find Pre-trained Models | Kaggle",
+      "url": "https://www.kaggle.com/models",
+      "snippet": "Discover and download pre-trained AI models. Use them directly in Kaggle Notebooks or integrate into your own projects."
+    },
+    {
+      "title": "Where to download AI models? - California Learning Resource Network",
+      "url": "https://www.clrn.org/where-to-download-ai-models/",
+      "snippet": "The proliferation of Artificial Intelligence (AI) and Machine Learning (ML) has fueled an unprecedented demand for pre-trained models. These models serve as critical building blocks, significantly accelerating development cycles and reducing the computational overhead associated with training from scratch. This article provides a comprehensive overview of key repositories and platforms where ..."
+    },
+    {
+      "title": "Hugging Face Models Hub - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/hugging-face-models-hub/",
+      "snippet": "Hugging Face Model Hub is a platform for sharing and discovering pre-trained machine learning models across various domains like NLP, computer vision, and more. Allows users to upload, explore and download models easily Supports a wide range of tasks across different AI fields Helps researchers and developers reuse models instead of building from scratch Promotes collaboration and knowledge ..."
+    }
+  ]
+}

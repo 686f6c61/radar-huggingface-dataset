@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Parzisam/tass-xlnet-large",
+  "slug": "parzisam-tass-xlnet-large",
+  "author": "Parzisam",
+  "url": "https://huggingface.co/Parzisam/tass-xlnet-large",
+  "created_at": "2026-10-14T21:08:34.000Z",
+  "updated_at": "2026-10-14T21:09:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlnet",
+    "text-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 361321475,
+  "parameters_human": "361.3M",
+  "storage_bytes": 1445331612,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "Fer1155453/xlnet-tass · Hugging Face",
+      "url": "https://huggingface.co/Fer1155453/xlnet-tass",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, DeepSeek, Qwen, Mistral, Z.ai, Meta, and important open-weight model families."
+    },
+    {
+      "title": "judajaav/xlnet-large-cased-tass · Hugging Face",
+      "url": "https://huggingface.co/judajaav/xlnet-large-cased-tass",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "XLNet: Autoregressive Pretraining for Language Understanding",
+      "url": "https://www.geeksforgeeks.org/nlp/xlnet-autoregressive-pretraining-for-language-understanding/",
+      "snippet": "XLNet was developed by Carnegie Mellon University and Google Brain which improves upon BERT and GPT by combining the strengths of autoregressive (AR) and autoencoding (AE) models while addressing their limitations. BERT captures bidirectional context but relies on masked words, limiting real-world understanding. GPT predicts words in a fixed order, restricting its ability to grasp full ..."
+    }
+  ]
+}

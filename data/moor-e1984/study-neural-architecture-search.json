@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "moor-e1984/study-neural-architecture-search",
+  "slug": "moor-e1984-study-neural-architecture-search",
+  "author": "moor-e1984",
+  "url": "https://huggingface.co/moor-e1984/study-neural-architecture-search",
+  "created_at": "2026-10-15T01:30:13.000Z",
+  "updated_at": "2026-10-15T01:30:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "neural-architecture-search",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sometimes outnumbered; never outgunned! - Reddit",
+      "url": "https://www.reddit.com/r/TristanaMains/",
+      "snippet": "Build Question I’m a dirty Twitch main but have been picking up Tristana some and have been enjoying her a lot. Build I’ve been …Read more"
+    },
+    {
+      "title": "Tristian build options :: Pathfinder: Kingmaker General Discussions",
+      "url": "https://steamcommunity.com/app/640820/discussions/0/1730963192546169270/",
+      "snippet": "Oct 6, 2018 · What would be some compelling builds for Tristian? Build toward Mystic Theurge via sorc or wizard? Or just stay the …"
+    },
+    {
+      "title": "best champs/strategy to win bot games fast : r/leagueoflegends",
+      "url": "https://www.reddit.com/r/leagueoflegends/comments/12pqg3d/best_champsstrategy_to_win_bot_games_fast/",
+      "snippet": "Apr 17, 2023 · I usually play Trundle (WQ) & Tristana (EQ) Usually you want to pick any champion that can kite/heal and survive, …"
+    },
+    {
+      "title": "Fun Tristian builds? :: Pathfinder: Kingmaker General Discussions",
+      "url": "https://steamcommunity.com/app/640820/discussions/0/4292566217057034786/",
+      "snippet": "Mar 20, 2024 · Similar to my Harrim post, any fun builds for Tristian folks like (including respeccing anything you can via the Respec …"
+    },
+    {
+      "title": "Tristana Guide + Tips/Tricks : r/TristanaMains - Reddit",
+      "url": "https://www.reddit.com/r/TristanaMains/comments/obp9cy/tristana_guide_tipstricks/",
+      "snippet": "Jul 1, 2021 · Tristana snowballs incredibly well, which is ironic, because she is fairly strong at all points of the game. If you get even …"
+    }
+  ]
+}

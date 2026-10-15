@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "kiroaiseoul/NAJY_act_all11_c100_gist30_vel_27D_60k_s1000",
+  "slug": "kiroaiseoul-najy_act_all11_c100_gist30_vel_27d_60k_s1000",
+  "author": "kiroaiseoul",
+  "url": "https://huggingface.co/kiroaiseoul/NAJY_act_all11_c100_gist30_vel_27D_60k_s1000",
+  "created_at": "2026-10-14T23:19:46.000Z",
+  "updated_at": "2026-10-14T23:20:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "trossen-mobile-ai",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51700368,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206831616,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NAJY_act_all11_c100_gist30_dq_27D_60k_s1000 - Hugging Face",
+      "url": "https://huggingface.co/kiroaiseoul/NAJY_act_all11_c100_gist30_dq_27D_60k_s1000",
+      "snippet": "Instructions to use kiroaiseoul/NAJY_act_all11_c100_gist30_dq_27D_60k_s1000 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "NAJY_act_all11_c100_gist30_sdrop70_27D_60k_s1000 - Hugging Face",
+      "url": "https://huggingface.co/kiroaiseoul/NAJY_act_all11_c100_gist30_sdrop70_27D_60k_s1000",
+      "snippet": "Instructions to use kiroaiseoul/NAJY_act_all11_c100_gist30_sdrop70_27D_60k_s1000 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "Kiro: Move beyond AI coding to agentic engineering",
+      "url": "https://kiro.dev/",
+      "snippet": "Kiro helps developers and teams do their best work: turn prompts into executable specs, validate code correctness to find bugs unit tests miss, and build across large codebases with parallel agents that learn from every session."
+    }
+  ]
+}

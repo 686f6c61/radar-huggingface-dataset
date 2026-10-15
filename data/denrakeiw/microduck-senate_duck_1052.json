@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "DenRakEiw/microduck-senate_duck_1052",
+  "slug": "denrakeiw-microduck-senate_duck_1052",
+  "author": "DenRakEiw",
+  "url": "https://huggingface.co/DenRakEiw/microduck-senate_duck_1052",
+  "created_at": "2026-10-14T22:27:10.000Z",
+  "updated_at": "2026-10-14T22:27:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "microduck-slot:walk",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 793753,
+  "storage_human": "793753 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DenRakEiw/microduck-senate_duck_1592 · Hugging Face",
+      "url": "https://huggingface.co/DenRakEiw/microduck-senate_duck_1592",
+      "snippet": "Instructions to use DenRakEiw/microduck-senate_duck_1592 with libraries, inference providers, notebooks, and local apps. Follow these links to get started ..."
+    },
+    {
+      "title": "AI Model Tracker Index: Updates, Sources and Evidence",
+      "url": "https://savrn.com/model-tracker",
+      "snippet": "DenRakEiw/microduck-senate_duck_1056 DenRakEiw · robotics Source updated: 14 Oct 2026, 21:58 UTC Observed by SAVRN: 14 Oct 2026, 22:00 UTC Exact repository revision SAVRN model page not yet available. Original source ↗ Publisher reported · Repository activity 90-008/Swift-1.5-Qwen3.8-Flash-Next-REAP-Pruned-GGUF 90-008"
+    },
+    {
+      "title": "GitHub - pollen-robotics/microduck: A Tiny biped duck robot",
+      "url": "https://github.com/pollen-robotics/microduck",
+      "snippet": "A Tiny biped duck robot 🦆. Contribute to pollen-robotics/microduck development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - AI-FanGe/Microduck-build-tutorial: A practical hardware and ...",
+      "url": "https://github.com/AI-FanGe/Microduck-build-tutorial",
+      "snippet": "A practical hardware and software setup for a compact RL-powered biped robot. - AI-FanGe/Microduck-build-tutorial"
+    },
+    {
+      "title": "Duck — a 725 g open-source biped · MicroZoo",
+      "url": "https://duck.microzoo.ai/",
+      "snippet": "A 725 g open-source biped that learned to walk in simulation. Take it apart, run it in your browser, print your own."
+    }
+  ]
+}

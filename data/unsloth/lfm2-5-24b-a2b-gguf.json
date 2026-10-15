@@ -61,13 +61,13 @@
     "region:us",
     "conversational"
   ],
-  "likes": 38,
+  "likes": 44,
   "downloads_30d": 3230,
-  "trending_score": 38,
+  "trending_score": 44,
   "parameters": 23971587712,
   "parameters_human": "23.97B",
-  "storage_bytes": 203070868352,
-  "storage_human": "203.1 GB",
+  "storage_bytes": 171065362304,
+  "storage_human": "171.1 GB",
   "base_model": "LiquidAI/LFM2.5-24B-A2B",
   "formats": [
     "gguf"

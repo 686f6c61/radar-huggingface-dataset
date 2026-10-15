@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "wq2012/ls_transformer_small_ge2e",
+  "slug": "wq2012-ls_transformer_small_ge2e",
+  "author": "wq2012",
+  "url": "https://huggingface.co/wq2012/ls_transformer_small_ge2e",
+  "created_at": "2026-10-15T01:38:24.000Z",
+  "updated_at": "2026-10-15T01:38:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "flaxspeaker",
+  "languages": [],
+  "tags": [
+    "flaxspeaker",
+    "jax",
+    "safetensors",
+    "audio",
+    "speaker-verification",
+    "speaker-recognition",
+    "speaker-embeddings",
+    "flax",
+    "transformer",
+    "ge2e_softmax",
+    "cosine",
+    "audio-classification",
+    "dataset:librispeech_asr",
+    "dataset:cnceleb",
+    "dataset:voxceleb",
+    "arxiv:1710.10467",
+    "arxiv:2104.01989",
+    "arxiv:2202.12163",
+    "arxiv:2203.05642",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1239620,
+  "parameters_human": "1.2M",
+  "storage_bytes": 9925946,
+  "storage_human": "10 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wq2012 (Quan Wang) · GitHub",
+      "url": "https://github.com/wq2012",
+      "snippet": "A graph representing wq2012&#x27;s contributions from October 12, 2025 to October 12, 2026. The contributions are 100% commits, 0% pull requests, 0% issues, 0% code review."
+    },
+    {
+      "title": "Transformers library - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/deep-learning/transformers-library/",
+      "snippet": "The Transformers library, developed by Hugging Face, is an open source toolkit for working with advanced machine learning models across text, images, audio and multimodal data. It is widely used in NLP, computer vision and generative AI applications. Provides access to pre-trained models. Supports text, image, audio, and multimodal tasks."
+    },
+    {
+      "title": "Transformer (deep learning) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Transformer_(deep_learning)",
+      "snippet": "Transformer architecture is now used alongside many generative models that contribute to the ongoing AI boom. The \"reference implementation\" of the original Transformer was written in a TensorFlow library. [32][33] In language modelling, ELMo (2018) was a bi-directional LSTM that produces contextualized word embeddings, improving upon the line ..."
+    },
+    {
+      "title": "Transformers in Machine Learning - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/getting-started-with-transformers/",
+      "snippet": "Transformer is a neural network architecture used for various machine learning tasks, especially in natural language processing and computer vision. It focuses on understanding relationships within data to process information more effectively."
+    },
+    {
+      "title": "The world&#x27;s smallest transformer model - YouTube",
+      "url": "https://www.youtube.com/watch?v=3ZxbaeqZIHQ",
+      "snippet": "This is the second of a trilogy of videos titled \"The world&#x27;s smallest transformer model\".In this video, we build a tiny transformer model with one hidden la..."
+    }
+  ]
+}

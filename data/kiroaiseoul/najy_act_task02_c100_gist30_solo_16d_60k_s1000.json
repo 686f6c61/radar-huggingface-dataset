@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "kiroaiseoul/NAJY_act_task02_c100_gist30_solo_16D_60k_s1000",
+  "slug": "kiroaiseoul-najy_act_task02_c100_gist30_solo_16d_60k_s1000",
+  "author": "kiroaiseoul",
+  "url": "https://huggingface.co/kiroaiseoul/NAJY_act_task02_c100_gist30_solo_16D_60k_s1000",
+  "created_at": "2026-10-14T23:36:19.000Z",
+  "updated_at": "2026-10-14T23:36:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "trossen-mobile-ai",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51689104,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206786384,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NAJY_act_all11_c100_gist30_dq_27D_60k_s1000 - Hugging Face",
+      "url": "https://huggingface.co/kiroaiseoul/NAJY_act_all11_c100_gist30_dq_27D_60k_s1000",
+      "snippet": "Instructions to use kiroaiseoul/NAJY_act_all11_c100_gist30_dq_27D_60k_s1000 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "kiroaiseoul/NAJY_act_all11_hot_27D_120k_s1000 · Hugging Face",
+      "url": "https://huggingface.co/kiroaiseoul/NAJY_act_all11_hot_27D_120k_s1000",
+      "snippet": "NAJY_act_all11_hot_27D_120k_s1000 One ACT for all 11 stages of the Mobile AI lab task (seed 1000, 120K steps). Deployment candidate; offline it is the better seed on locomotion stages."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "kiroaiseoul发布双臂取放专用数据集task02_pickup_tubes_gist 首发HuggingFace赋能具身智能训练",
+      "url": "https://www.5radar.com/dataopensource/news/463902/kiroaiseoul%E5%8F%91%E5%B8%83%E5%8F%8C%E8%87%82%E5%8F%96%E6%94%BE%E4%B8%93%E7%94%A8%E6%95%B0%E6%8D%AE%E9%9B%86task02-pickup-tubes-gist-%E9%A6%96%E5%8F%91huggingface%E8%B5%8B%E8%83%BD%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD%E8%AE%AD%E7%BB%83",
+      "snippet": "2026年9月3日，kiroaiseoul联合GIST AI Lab发布面向双臂机器人抓取放置场景的专用数据集task02_pickup_tubes_gist并首发HuggingFace，数据集覆盖多视角视觉、全维度运动状态标注，可为工业、实验室等场景的双臂机器人研发提供高质量训练数据支撑。"
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    }
+  ]
+}

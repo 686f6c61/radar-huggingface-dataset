@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Siddh-arthcj/embodied-ai-dev6-2024",
+  "slug": "siddh-arthcj-embodied-ai-dev6-2024",
+  "author": "Siddh-arthcj",
+  "url": "https://huggingface.co/Siddh-arthcj/embodied-ai-dev6-2024",
+  "created_at": "2026-10-15T01:26:20.000Z",
+  "updated_at": "2026-10-15T01:26:26.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "embodied-ai",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "Self-Hosted AI Models: A Practical Guide to Running LLMs Locally (2026)",
+      "url": "https://www.premai.io/blog/self-hosted-ai-models-a-practical-guide-to-running-llms-locally-2026/",
+      "snippet": "Blog Self-Hosted AI Models: A Practical Guide to Running LLMs Locally (2026) Learn how to self-host AI models for better data control and lower costs. Covers hardware requirements, open-source LLMs, tools like Ollama and vLLM, and real cost breakdowns."
+    },
+    {
+      "title": "Anthropic AI model submits false homicide tip to Philadelphia police - MSN",
+      "url": "https://www.msn.com/en-us/news/other/anthropic-ai-model-submits-false-homicide-tip-to-philadelphia-police/ar-AA2dWiN6",
+      "snippet": "Philadelphia police have revealed that Anthropic&#x27;s artificial intelligence model submitted a false homicide tip to authorities, an incident disclosed separately by the tech company."
+    },
+    {
+      "title": "What is Embodied AI? A Complete Beginner&#x27;s Guide 2026",
+      "url": "https://embodiedglobal.com/en/article/what-is-embodied-ai-beginners-guide-2026",
+      "snippet": "Embodied AI bridges the digital and physical worlds. This complete beginner&#x27;s guide explains what embodied AI is, how it works, key technologies, real-world applications, leading companies, and what the future holds in 2026 and beyond."
+    },
+    {
+      "title": "Toward the next frontier of embodied AI - oaepublish.com",
+      "url": "https://www.oaepublish.com/articles/ir.2025.44",
+      "snippet": "Embodied artificial intelligence has emerged as a transformative paradigm, marking a fundamental shift in artificial intelligence research toward systems that tightly couple perception, cognition, and action within real-world environments. This editorial emphasizes the growing significance of embodied artificial intelligence, introduces the key contributions presented in this Special Issue ..."
+    }
+  ]
+}

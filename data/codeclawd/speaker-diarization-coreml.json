@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "codeclawd/speaker-diarization-coreml",
+  "slug": "codeclawd-speaker-diarization-coreml",
+  "author": "codeclawd",
+  "url": "https://huggingface.co/codeclawd/speaker-diarization-coreml",
+  "created_at": "2026-10-14T19:16:38.000Z",
+  "updated_at": "2026-10-14T19:16:44.000Z",
+  "license": "scoped-cc-by-4.0",
+  "license_family": "unknown",
+  "pipeline_tag": "voice-activity-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "coreml",
+    "speech",
+    "audio",
+    "voice",
+    "speaker-diarization",
+    "speaker-change-detection",
+    "speaker-segmentation",
+    "voice-activity-detection",
+    "base_model:pyannote/speaker-diarization-community-1",
+    "base_model:quantized:pyannote/speaker-diarization-community-1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 69655728,
+  "storage_human": "70 MB",
+  "base_model": "pyannote/speaker-diarization-community-1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "130 Independent Ho Chi Minh Ci Escorts - City of Love",
+      "url": "https://cityoflove.com/viet-nam/ho-chi-minh-ci/escorts",
+      "snippet": "Browse 130 verified independent escorts in Ho Chi Minh Ci available now! Meet a call girl tonight. City of Love | Worldwide escort …"
+    },
+    {
+      "title": "Verified Escorts in Ho Chi Minh City",
+      "url": "https://vn.realescorts.com/ho-chi-minh-city",
+      "snippet": "Sep 10, 2026 · Hello, my name is Lisa. I come from Ho Chi Minh, Vietnam. I can speak Chinese and English. I am warm, open and …"
+    },
+    {
+      "title": "Escort Ho Chi Minh City, Vietnam - Massage Republic",
+      "url": "https://massagerepublic.com/female-escorts-in-ho-chi-minh-city/1",
+      "snippet": "I offer discreet, exclusive escort services for men in Ho Chi Minh City. Whether you're looking for the perfect girlfriend experience, an …"
+    },
+    {
+      "title": "Girlfriend Experience Escorts Ho Chi Minh City, Vietnam",
+      "url": "https://massagerepublic.com/gfe-female-escorts-in-ho-chi-minh-city",
+      "snippet": "I offer discreet, exclusive escort services for men in Ho Chi Minh City. Whether you're looking for the perfect girlfriend experience, an …"
+    },
+    {
+      "title": "Ho Chi Minh Sex Guide For Single Men (Saigon Sex Guide)",
+      "url": "https://dreamholidayasia.com/destination/vietnam-guide/ho-chi-minh/",
+      "snippet": "Feb 20, 2026 · Ho Chi Minh is a rising star in Asia for sex tourism. Thanks to the Vietnam visa rules relaxation in recent years, more …"
+    }
+  ]
+}

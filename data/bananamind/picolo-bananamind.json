@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "BananaMind/Picolo-BananaMind",
+  "slug": "bananamind-picolo-bananamind",
+  "author": "BananaMind",
+  "url": "https://huggingface.co/BananaMind/Picolo-BananaMind",
+  "created_at": "2026-10-14T19:40:19.000Z",
+  "updated_at": "2026-10-14T19:47:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "picolo",
+    "text-generation",
+    "custom_code",
+    "transformer",
+    "tiny",
+    "bananamind",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 100,
+  "parameters_human": "100",
+  "storage_bytes": 912,
+  "storage_human": "912 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "neurovlm/NeuroVLM-cv-folds",
+  "slug": "neurovlm-neurovlm-cv-folds",
+  "author": "neurovlm",
+  "url": "https://huggingface.co/neurovlm/NeuroVLM-cv-folds",
+  "created_at": "2026-10-14T20:56:38.000Z",
+  "updated_at": "2026-10-14T20:58:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "neurovlm",
+  "languages": [],
+  "tags": [
+    "neurovlm",
+    "neuroimaging",
+    "brain-maps",
+    "cross-validation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1228108680,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - neurovlm/neurovlm: Neuroscientific vision-language models.",
+      "url": "https://github.com/neurovlm/neurovlm",
+      "snippet": "Neuroscientific vision-language models. Contribute to neurovlm/neurovlm development by creating an account on GitHub."
+    },
+    {
+      "title": "NeuroVLM — NeuroVLM",
+      "url": "https://neurovlm.github.io/neurovlm/",
+      "snippet": "Select either model family with the structured inference API. CNN autoencoders always default to the mixed-source baseline; domain-specific contrastive and text-to-brain heads use the mixed baseline unless variant=\"finetuned\" is requested explicitly:"
+    },
+    {
+      "title": "NeuroVLM: A generative vision-language framework for human ... - bioRxiv",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.02.06.704508v3",
+      "snippet": "Neuroimaging research has produced tens-of-thousands of articles that pair natural language and activation coordinate tables. Recent advances in vision-language models (VLMs) have provided methods to model text and images simultaneously. In this work, we present NeuroVLM, a model architecture for learning from 30,826 human neuroimage-text pairs. The architecture supports contrastive and ..."
+    },
+    {
+      "title": "neurovlm/docs at main · neurovlm/neurovlm · GitHub",
+      "url": "https://github.com/neurovlm/neurovlm/tree/main/docs",
+      "snippet": "Neuroscientific vision-language models. Contribute to neurovlm/neurovlm development by creating an account on GitHub."
+    },
+    {
+      "title": "neurovlm.ucsd.edu - Brain",
+      "url": "https://neurovlm.ucsd.edu/",
+      "snippet": "Run Query Axial Coronal Sagittal Render A+C+S+R"
+    }
+  ]
+}

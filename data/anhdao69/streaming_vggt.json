@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "anhdao69/Streaming_VGGT",
+  "slug": "anhdao69-streaming_vggt",
+  "author": "anhdao69",
+  "url": "https://huggingface.co/anhdao69/Streaming_VGGT",
+  "created_at": "2026-10-13T19:41:01.000Z",
+  "updated_at": "2026-10-14T22:35:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "vision-language-navigation",
+    "simplememvln",
+    "vggt-omega",
+    "r2r",
+    "rxr",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31129451730,
+  "storage_human": "31.1 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Streaming 4D Visual Geometry Transformer - GitHub",
+      "url": "https://github.com/wzzheng/StreamVGGT",
+      "snippet": "StreamVGGT, a causal transformer architecture for real-time streaming 4D visual geometry perception compatiable with LLM-targeted attention mechanism (e.g., FlashAttention), delivers both fast inference and high-quality 4D reconstruction."
+    },
+    {
+      "title": "anhdao69 (Anh Dao) - Hugging Face",
+      "url": "https://huggingface.co/anhdao69",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 24 days ago ... published a model 24 days ago"
+    },
+    {
+      "title": "anhdao69 (Anh Dao) · GitHub",
+      "url": "https://github.com/anhdao69",
+      "snippet": "Hello, my name is Anh Dao. . anhdao69 has 13 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "[2507.11539] Streaming 4D Visual Geometry Transformer",
+      "url": "https://arxiv.org/abs/2507.11539",
+      "snippet": "For efficient training, we propose to distill knowledge from the dense bidirectional visual geometry grounded transformer (VGGT) to our causal model. For inference, our model supports the migration of optimized efficient attention operators (e.g., FlashAttention) from large language models."
+    },
+    {
+      "title": "StreamVGGT - wzzheng.net",
+      "url": "https://wzzheng.net/StreamVGGT/",
+      "snippet": "Under aligned settings, our StreamVGGT exceeds SOTA streaming model on both the Sintel and Bonn benchmarks and attains performance comparable to the offline VGGT. Visualizations We provide 3D reconstruction visualizations from StreamVGGT and CUT3R, enabling a clear qualitative comparison."
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "nemotron-deciffusion/Nemotron-Deciffusion-8B-v2-NVFP4",
+  "slug": "nemotron-deciffusion-nemotron-deciffusion-8b-v2-nvfp4",
+  "author": "nemotron-deciffusion",
+  "url": "https://huggingface.co/nemotron-deciffusion/Nemotron-Deciffusion-8B-v2-NVFP4",
+  "created_at": "2026-10-14T18:22:07.000Z",
+  "updated_at": "2026-10-14T23:38:08.000Z",
+  "license": "nvidia-nemotron-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nemotron_labs_diffusion",
+    "feature-extraction",
+    "nvidia",
+    "nemotron",
+    "decision",
+    "nvfp4",
+    "fp8",
+    "modelopt",
+    "quantized",
+    "text-classification",
+    "custom_code",
+    "arxiv:2607.12266",
+    "base_model:nemotron-deciffusion/Nemotron-Deciffusion-8B-v2",
+    "base_model:quantized:nemotron-deciffusion/Nemotron-Deciffusion-8B-v2",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6283350016,
+  "parameters_human": "6.28B",
+  "storage_bytes": 7650326844,
+  "storage_human": "7.7 GB",
+  "base_model": "nemotron-deciffusion/Nemotron-Deciffusion-8B-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nemotron AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/topics/ai/nemotron",
+      "snippet": "NVIDIA Nemotron™ is a family of open models with open weights, training data, and recipes, delivering leading efficiency and …Read more"
+    },
+    {
+      "title": "NVIDIA Nemotron",
+      "url": "https://www.nvidia.com/fr-fr/ai-data-science/foundation-models/nemotron/",
+      "snippet": "NVIDIA Nemotron™ est une famille de modèles d'IA ouverts, multimodaux et hautement efficaces dédiés à l'exploitation d'agents à …"
+    },
+    {
+      "title": "Nemotron - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nemotron",
+      "snippet": "Nemotron is a family of artificial intelligence models developed by Nvidia. It includes large language models and multimodal models …"
+    },
+    {
+      "title": "NVIDIA Nemotron 3 Ultra",
+      "url": "https://research.nvidia.com/labs/nemotron/Nemotron-3-Ultra/",
+      "snippet": "Jun 4, 2026 · Nemotron 3 Ultra achieves on-par accuracies compared to other state-of-the-art open LLMs across a diverse set of …"
+    },
+    {
+      "title": "Nemotron 3 Ultra (free) - API Pricing & Benchmarks | OpenRouter",
+      "url": "https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free",
+      "snippet": "Jun 4, 2026 · NVIDIA Nemotron 3 Ultra is an open frontier-reasoning and orchestration model from NVIDIA, with 55B active …"
+    }
+  ]
+}

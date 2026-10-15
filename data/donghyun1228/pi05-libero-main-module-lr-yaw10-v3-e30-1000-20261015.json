@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Donghyun1228/pi05-libero-main-module-lr-yaw10-v3-e30-1000-20261015",
+  "slug": "donghyun1228-pi05-libero-main-module-lr-yaw10-v3-e30-1000-20261015",
+  "author": "Donghyun1228",
+  "url": "https://huggingface.co/Donghyun1228/pi05-libero-main-module-lr-yaw10-v3-e30-1000-20261015",
+  "created_at": "2026-10-14T20:57:09.000Z",
+  "updated_at": "2026-10-14T20:57:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "libero",
+    "inverse-dynamics",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7710214393,
+  "storage_human": "7.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "怎么做好PPT的提案？ - 知乎",
+      "url": "https://www.zhihu.com/question/19926109",
+      "snippet": "2.强化提案逻辑 3.反复练习 因为每个人做Presentation的风格不一样，我介绍一下自己的习惯，为了保证每一次的提案，在内容上不出 …Read more"
+    },
+    {
+      "title": "做presentation时语速过快，想慢慢不下来怎么办？ - 知乎",
+      "url": "https://www.zhihu.com/question/325190170",
+      "snippet": "1.不要背诵你的presentation 尽量将你的presentation去分成小点去记，在做presentation就只是把每个小点复述扩展，在思考中会降低 …"
+    },
+    {
+      "title": "大学英语，课堂上做presentation有什么小的课题推荐?",
+      "url": "https://www.zhihu.com/question/306785127",
+      "snippet": "讲稿： About three weeks ago, I have prepared my speech with the title “how to avoid argument with your parents”, but ten days …"
+    },
+    {
+      "title": "大学生怎么做一个漂亮的presentation？ - 知乎",
+      "url": "https://www.zhihu.com/question/271754275",
+      "snippet": "大学生做presentation容易陷入一个误区 ：PPT做得漂亮，内容能流畅地说出来甚至背出来就是漂亮的pre，其实不是的。 做pre，最 …"
+    },
+    {
+      "title": "如何制作出像顶尖咨询公司咨询顾问们那种风格的 PPT？ - 知乎",
+      "url": "https://www.zhihu.com/question/22414130",
+      "snippet": "1.1 咨询公司PPT的特殊性 必须要承认，其他答案中分享的PPT都是极好的，但是与问题中“顶尖咨询PPT”的要求并不相符。 咨询公 …"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "castorini/gaggle-nanochat-pretrained-climbmix-20260924",
+  "slug": "castorini-gaggle-nanochat-pretrained-climbmix-20260924",
+  "author": "castorini",
+  "url": "https://huggingface.co/castorini/gaggle-nanochat-pretrained-climbmix-20260924",
+  "created_at": "2026-09-25T01:25:12.000Z",
+  "updated_at": "2026-10-14T23:56:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gaggle",
+    "text-generation",
+    "nanochat",
+    "pretraining",
+    "climbmix",
+    "d34",
+    "base-model",
+    "custom_code",
+    "vllm",
+    "en",
+    "dataset:karpathy/climbmix-400b-shuffle",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3286633962,
+  "parameters_human": "3.29B",
+  "storage_bytes": 21159915687,
+  "storage_human": "21.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sport infos, vidéos & résultats en direct - Eurosport",
+      "url": "https://www.eurosport.fr/",
+      "snippet": "Eurosport est votre destination pour toute l'actualité sportive, vidéos à la demande, commentaires et résumés: le tout en un même …"
+    },
+    {
+      "title": "Football infos - Actualités, vidéos & résultats - Eurosport",
+      "url": "https://www.eurosport.fr/football/",
+      "snippet": "Consultez les dernières infos Football et retrouvez les articles, vidéos, commentaires et analyses en un même lieu. Eurosport est …"
+    },
+    {
+      "title": "Eurosport - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Eurosport",
+      "snippet": "Eurosport is a French pan-European group of pay television networks in Europe and parts of Asia that operates two main channels— …"
+    },
+    {
+      "title": "Eurosport live streaming : méthodes pour regarder la TV Eurosport",
+      "url": "https://www.tv-direct.fr/live/eurosport/",
+      "snippet": "Vous voulez suivre Eurosport en direct ? Découvrez toutes les solutions disponibles sur PC et mobile pour ne rien manquer du sport."
+    },
+    {
+      "title": "Eurosport | Here’s what’s happening with Eurosport.",
+      "url": "https://help.eurosport.com/gb/Answer/Detail/000004679",
+      "snippet": "For customers in the UK and Ireland, Eurosport and TNT Sports came together to create one premium sports destination: TNT …"
+    }
+  ]
+}

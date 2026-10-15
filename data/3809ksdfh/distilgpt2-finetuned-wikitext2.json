@@ -5,7 +5,7 @@
   "author": "3809ksdfh",
   "url": "https://huggingface.co/3809ksdfh/distilgpt2-finetuned-wikitext2",
   "created_at": "2026-10-13T23:43:09.000Z",
-  "updated_at": "2026-10-14T01:06:45.000Z",
+  "updated_at": "2026-10-14T03:02:28.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -25,12 +25,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 329,
   "trending_score": 0,
   "parameters": 81912576,
   "parameters_human": "81.9M",
-  "storage_bytes": 8207453401,
-  "storage_human": "8.2 GB",
+  "storage_bytes": 8535116530,
+  "storage_human": "8.5 GB",
   "base_model": "distilgpt2",
   "formats": [
     "safetensors"

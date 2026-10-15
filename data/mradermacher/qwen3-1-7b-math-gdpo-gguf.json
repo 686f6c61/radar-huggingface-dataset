@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3-1.7B-MATH-GDPO-GGUF",
+  "slug": "mradermacher-qwen3-1-7b-math-gdpo-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3-1.7B-MATH-GDPO-GGUF",
+  "created_at": "2025-05-09T14:27:04.000Z",
+  "updated_at": "2026-10-14T22:45:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "generated_from_trainer",
+    "open-r1",
+    "trl",
+    "gdpo",
+    "en",
+    "dataset:watermelonhjg/MATH-lighteval-level_2",
+    "base_model:wzx111/Qwen3-1.7B-MATH-GDPO",
+    "base_model:quantized:wzx111/Qwen3-1.7B-MATH-GDPO",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 200,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 15959920512,
+  "storage_human": "16.0 GB",
+  "base_model": "wzx111/Qwen3-1.7B-MATH-GDPO",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Real incest stories | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/real-incest-stories.634543/",
+      "snippet": "Sep 30, 2024 · I love hearing about real incest stories. I think it’s the hottest ever! Tell me about experiences"
+    },
+    {
+      "title": "Japanese Incest Porn. - XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/japanese-incest-porn.430396/",
+      "snippet": "Aug 9, 2016 · Well, first of all it's probably not real incest and second of all Japanese porn sucks , what's up with all of the pixilation? …"
+    },
+    {
+      "title": "MISHELL`S VINTAGE PORN. | Page 14 | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/mishell-s-vintage-porn.417715/page-14",
+      "snippet": "Jul 1, 2016 · Hello, You can now get verified on forum. The way it's gonna work is that you can send me a PM with a verification …"
+    },
+    {
+      "title": "Favorite 80s and 90s Porn Stars - XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/favorite-80s-and-90s-porn-stars.172420/",
+      "snippet": "Feb 13, 2011 · Ran forty searches and didn't see a thread like this. Post pic or vid links...whatever is allowed here.:)"
+    },
+    {
+      "title": "Porn Comix | Page 122 | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/porn-comix.322919/page-122",
+      "snippet": "Apr 6, 2017 · Big Changes Are Coming to the Forum! We’ve got some exciting news to share — the forum is moving to a brand-new …"
+    }
+  ]
+}

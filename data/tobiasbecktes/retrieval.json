@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "tobiasbecktes/retrieval",
+  "slug": "tobiasbecktes-retrieval",
+  "author": "tobiasbecktes",
+  "url": "https://huggingface.co/tobiasbecktes/retrieval",
+  "created_at": "2026-10-14T20:54:09.000Z",
+  "updated_at": "2026-10-14T20:54:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tobiasbecktes (Tobias) - Hugging Face",
+      "url": "https://huggingface.co/tobiasbecktes/models",
+      "snippet": "User profile of Tobias on Hugging Face"
+    },
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "Anthropic AI model submits false homicide tip to Philadelphia police - MSN",
+      "url": "https://www.msn.com/en-us/news/other/anthropic-ai-model-submits-false-homicide-tip-to-philadelphia-police/ar-AA2dWiN6",
+      "snippet": "Philadelphia police have revealed that Anthropic&#x27;s artificial intelligence model submitted a false homicide tip to authorities, an incident disclosed separately by the tech company."
+    },
+    {
+      "title": "tobiasbecktes/project-chatbot · Hugging Face",
+      "url": "https://huggingface.co/tobiasbecktes/project-chatbot",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Security Researchers Hacked Into OpenAI Using Anthropic&#x27;s Claude",
+      "url": "https://www.forbes.com/sites/siladityaray/2026/09/18/security-researchers-hacked-into-openai-using-anthropics-claude/",
+      "snippet": "OpenAI paid the researchers a $6,500 bug bounty, but the incident once again highlights the growing cybersecurity threats posed by advanced AI agents."
+    }
+  ]
+}

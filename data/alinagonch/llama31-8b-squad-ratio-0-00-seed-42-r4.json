@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AlinaGonch/llama31-8b-squad-ratio-0.00-seed-42-r4",
+  "slug": "alinagonch-llama31-8b-squad-ratio-0-00-seed-42-r4",
+  "author": "AlinaGonch",
+  "url": "https://huggingface.co/AlinaGonch/llama31-8b-squad-ratio-0.00-seed-42-r4",
+  "created_at": "2026-10-14T19:00:22.000Z",
+  "updated_at": "2026-10-14T19:00:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 59212056,
+  "storage_human": "59 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kaia Kitsune (@kaixkitsune) • Instagram photos and videos",
+      "url": "https://www.instagram.com/kaixkitsune/",
+      "snippet": "3M Followers, 2,635 Following, 1,062 Posts - Kaia Kitsune (@kaixkitsune) on Instagram: \"\"Read more"
+    },
+    {
+      "title": "Kai (@kaikitsunexoxo) • Instagram photos and videos",
+      "url": "https://www.instagram.com/kaikitsunexoxo/",
+      "snippet": "1,051 Followers, 10 Following, 94 Posts - Kai (@kaikitsunexoxo) on Instagram: \"\""
+    },
+    {
+      "title": "Kaikitsune.com - X",
+      "url": "https://kaikitsune.com/x",
+      "snippet": "X is where the fun lives"
+    },
+    {
+      "title": "Watch this story by Kaia Kitsune on Instagram before it disappears.",
+      "url": "https://www.instagram.com/stories/kaixkitsune/",
+      "snippet": ""
+    },
+    {
+      "title": "Kaia Kitsune (@kaixkitsune) — Live Instagram Follower Count",
+      "url": "https://instastatistics.com/kaixkitsune",
+      "snippet": "Kaia Kitsune (@kaixkitsune) currently has 2,680,081 Instagram followers, placing them in the mega-influencer category. Their live …"
+    }
+  ]
+}

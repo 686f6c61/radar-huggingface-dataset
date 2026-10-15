@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "amichaprodu/LUNAVALDES",
+  "slug": "amichaprodu-lunavaldes",
+  "author": "amichaprodu",
+  "url": "https://huggingface.co/amichaprodu/LUNAVALDES",
+  "created_at": "2026-10-14T23:25:03.000Z",
+  "updated_at": "2026-10-14T23:25:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:black-forest-labs/FLUX.1-dev",
+    "base_model:adapter:black-forest-labs/FLUX.1-dev",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 172646031,
+  "storage_human": "173 MB",
+  "base_model": "black-forest-labs/FLUX.1-dev",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Luna Valdés • AI (@lunavaldes_) • Instagram photos and videos",
+      "url": "https://www.instagram.com/lunavaldes_/",
+      "snippet": "6 Followers, 30 Following, 8 Posts - Luna Valdés • AI (@lunavaldes_) on Instagram: \"Virtual muse 🌙 AI-generated 24 · GDL → el mundo Film aesthetic · slow living · cartas y café 📩 colabs → DM\""
+    },
+    {
+      "title": "Luna Valdés (@lunavaldes.ai) • Instagram photos and videos",
+      "url": "https://www.instagram.com/lunavaldes.ai/",
+      "snippet": "834 Followers, 37 Following, 22 Posts - Luna Valdés 🤍 (@lunavaldes.ai) on Instagram: \"\""
+    },
+    {
+      "title": "Luna Valdes - V1 | Flux.1 LoRA | Civitai",
+      "url": "https://civitai.com/models/2642609/luna-valdes",
+      "snippet": "Luna Valdes - AI virtual influencer character. LoRA v2."
+    },
+    {
+      "title": "Your AI Art Playground - Luna Models",
+      "url": "https://www.lunamodels.art/",
+      "snippet": "Welcome to Luna Models Your creative playground for adorable AI art. Generate stunning images, discover inspiration, and find unique assets to bring your imagination to life!"
+    },
+    {
+      "title": "Luna Valdes V1 - LORA for Flux.1 D | CivArchive",
+      "url": "https://civarchive.com/models/2642609?modelVersionId=2967274",
+      "snippet": "Download Luna Valdes V1, a LORA for Flux.1 D. 1 file: 4JEFZYC9FCCP2NCAGE2Q3NDYF0.safetensors (328 MB). Published May 22, 2026. 4 live mirrors. Luna Valdes - AI virtual influencer character. LoRA v2."
+    }
+  ]
+}

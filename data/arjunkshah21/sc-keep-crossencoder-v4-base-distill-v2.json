@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "arjunkshah21/sc-keep-crossencoder-v4-base-distill-v2",
+  "slug": "arjunkshah21-sc-keep-crossencoder-v4-base-distill-v2",
+  "author": "arjunkshah21",
+  "url": "https://huggingface.co/arjunkshah21/sc-keep-crossencoder-v4-base-distill-v2",
+  "created_at": "2026-10-15T01:09:45.000Z",
+  "updated_at": "2026-10-15T01:11:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "text-classification",
+    "cross-encoder",
+    "context-compression",
+    "supercompress",
+    "neural-keep",
+    "distillation",
+    "base_model:answerdotai/ModernBERT-base",
+    "base_model:finetune:answerdotai/ModernBERT-base",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149606402,
+  "parameters_human": "149.6M",
+  "storage_bytes": 598439784,
+  "storage_human": "598 MB",
+  "base_model": "answerdotai/ModernBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "arjunkshah21/sc-keep-crossencoder-v4-large · Hugging Face",
+      "url": "https://huggingface.co/arjunkshah21/sc-keep-crossencoder-v4-large",
+      "snippet": "arjunkshah21 / sc-keep-crossencoder-v4-large Like 1 Text Classification Transformers Safetensors modernbert cross-encoder context-compression supercompress neural-keep text-embeddings-inference License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "arjunkshah21 (Arjun Shah) - Hugging Face",
+      "url": "https://huggingface.co/arjunkshah21/models",
+      "snippet": "User profile of Arjun Shah on Hugging Face"
+    },
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "LLMDistill4Ads: Using Cross-Encoders to Distill from LLM Signals for ...",
+      "url": "https://arxiv.org/abs/2508.03628v4",
+      "snippet": "This paper presents an empirical study on a major ecommerce platform of a distillation framework involving an LLM teacher, a cross-encoder assistant and a bi-encoder Embedding Based Retrieval (EBR) student model, aimed at mitigating click-induced biases in keyphrase recommendations."
+    },
+    {
+      "title": "CrossEncoder Architecture | huggingface/sentence-transformers | DeepWiki",
+      "url": "https://deepwiki.com/huggingface/sentence-transformers/3.2-crossencoder-architecture",
+      "snippet": "This page documents the `CrossEncoder` architecture, a core model type in the Sentence Transformers library designed for joint encoding of text pairs to produce similarity scores or classification lab"
+    }
+  ]
+}

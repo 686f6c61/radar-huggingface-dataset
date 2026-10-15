@@ -5,7 +5,7 @@
   "author": "francesca9805",
   "url": "https://huggingface.co/francesca9805/nor-100mb-after-wc-loglinear-newlex-before-ckpt500-packed-bfdiso_seed3407",
   "created_at": "2026-10-14T16:57:28.000Z",
-  "updated_at": "2026-10-14T19:01:08.000Z",
+  "updated_at": "2026-10-14T21:40:59.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": 124770816,
   "parameters_human": "124.8M",
-  "storage_bytes": 2746431082,
-  "storage_human": "2.7 GB",
+  "storage_bytes": 7921927834,
+  "storage_human": "7.9 GB",
   "base_model": "francesca9805/ppt-wc-loglinear-newlex-nor-before-100mb-packed-bfdiso_seed3407",
   "formats": [
     "safetensors"

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "danyalmalik/FLUX.2-klein-4B-ONNX-WebGPU",
+  "slug": "danyalmalik-flux-2-klein-4b-onnx-webgpu",
+  "author": "danyalmalik",
+  "url": "https://huggingface.co/danyalmalik/FLUX.2-klein-4B-ONNX-WebGPU",
+  "created_at": "2026-10-14T21:13:52.000Z",
+  "updated_at": "2026-10-14T21:16:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "webgpu",
+    "text-to-image",
+    "quick-inference",
+    "base_model:black-forest-labs/FLUX.2-klein-4B",
+    "base_model:quantized:black-forest-labs/FLUX.2-klein-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2216549873,
+  "storage_human": "2.2 GB",
+  "base_model": "black-forest-labs/FLUX.2-klein-4B",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MarkShark2/flux2-klein-4b-onnx-webgpu-q4 · Hugging Face",
+      "url": "https://huggingface.co/MarkShark2/flux2-klein-4b-onnx-webgpu-q4",
+      "snippet": "This repository contains a staged ONNX Runtime WebGPU bundle for running FLUX.2 Klein 4B on systems without CUDA or ROCm. It was produced for the flux2-vulkan-bridge runtime, which runs ONNX Runtime WebGPU inside headless Chromium and exposes image generation through a small local API. Runtime code ..."
+    },
+    {
+      "title": "README.md · MarkShark2/flux2-klein-4b-onnx-webgpu-q4 at main",
+      "url": "https://huggingface.co/MarkShark2/flux2-klein-4b-onnx-webgpu-q4/blob/main/README.md",
+      "snippet": "FLUX.2 Klein 4B ONNX WebGPU q4 Bundle This repository contains a staged ONNX Runtime WebGPU bundle for running FLUX.2 Klein 4B on systems without CUDA or ROCm. It was produced for the flux2-vulkan-bridge runtime, which runs ONNX Runtime WebGPU inside headless Chromium and exposes image generation through a small local API."
+    },
+    {
+      "title": "MarkShark2/flux2-klein-4b-onnx-webgpu-q4 · Hugging Face",
+      "url": "https://hf-p-cfw.fyan.top/MarkShark2/flux2-klein-4b-onnx-webgpu-q4",
+      "snippet": "FLUX.2 Klein 4B ONNX WebGPU q4 Bundle This repository contains a staged ONNX Runtime WebGPU bundle for running FLUX.2 Klein 4B on systems without CUDA or ROCm. It was produced for the flux2-vulkan-bridge runtime, which runs ONNX Runtime WebGPU inside headless Chromium and exposes image generation through a small local API."
+    },
+    {
+      "title": "GitHub - MarkShark2/flux2-vulkan-bridge",
+      "url": "https://github.com/MarkShark2/flux2-vulkan-bridge",
+      "snippet": "FLUX.2 Vulkan Bridge runs FLUX.2 Klein 4B through ONNX Runtime WebGPU on machines that have Vulkan/WebGPU available but do not have CUDA or ROCm. The immediate target is the AMD BC-250, an older mining card with useful graphics hardware but limited modern ML runtime support. The project exports the model into a staged ONNX bundle, serves those files to a headless Chromium process, runs ONNX ..."
+    },
+    {
+      "title": "flux2-vulkan-bridge/flux2-onnx-export at main · MarkShark2 ... - GitHub",
+      "url": "https://github.com/MarkShark2/flux2-vulkan-bridge/tree/main/flux2-onnx-export",
+      "snippet": "The final runtime bundle contains three ONNX sessions that are loaded sequentially: Klein repo Qwen3 text encoder, quantized to weight-only q4. FLUX.2 Klein 4B transformer, quantized to weight-only q4 with fp16 activation math and fp32 attention score/Softmax math. Klein repo VAE decoder, exported in fp16. The generated model folder is flux2-klein-4b-onnx-webgpu-q4/. It contains flux2-config ..."
+    }
+  ]
+}

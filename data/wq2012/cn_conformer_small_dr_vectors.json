@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "wq2012/cn_conformer_small_dr_vectors",
+  "slug": "wq2012-cn_conformer_small_dr_vectors",
+  "author": "wq2012",
+  "url": "https://huggingface.co/wq2012/cn_conformer_small_dr_vectors",
+  "created_at": "2026-10-15T01:38:01.000Z",
+  "updated_at": "2026-10-15T01:38:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "flaxspeaker",
+  "languages": [],
+  "tags": [
+    "flaxspeaker",
+    "jax",
+    "safetensors",
+    "audio",
+    "speaker-verification",
+    "speaker-recognition",
+    "speaker-embeddings",
+    "flax",
+    "conformer",
+    "extended_set_softmax",
+    "dr_vector",
+    "audio-classification",
+    "dataset:librispeech_asr",
+    "dataset:cnceleb",
+    "dataset:voxceleb",
+    "arxiv:1710.10467",
+    "arxiv:2104.01989",
+    "arxiv:2202.12163",
+    "arxiv:2203.05642",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2088005,
+  "parameters_human": "2.1M",
+  "storage_bytes": 16721235,
+  "storage_human": "17 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Haunted_Hotel - Rule 34",
+      "url": "https://rule34.paheal.net/post/list/Haunted_Hotel/1",
+      "snippet": "Rule 34! The Original since 2007. Pokemon, Naruto, Genshin Impact, My Little Pony, high quality Video, AI etc. If it exists, there is …Read more"
+    },
+    {
+      "title": "Rule 34 / haunted_hotel",
+      "url": "https://rule34.xxx/index.php?page=post&s=list&tags=haunted_hotel+",
+      "snippet": "Rule 34 - If it exists, there is porn of it. We have pokemon, my little pony, Other hentai, whatever you want."
+    },
+    {
+      "title": "Rule34 - If it exists, there is porn of it / haunted_hotel",
+      "url": "https://rule34.us/index.php?r=posts/index&q=haunted_hotel",
+      "snippet": "The best Rule 34 of Naruto, Elden Ring, Fortnite, Genshin Impact, FNF, Pokemon, animated gifs, and videos! After all, if it exists, …"
+    },
+    {
+      "title": "Rule 34 / abaddon_ (haunted_hotel)",
+      "url": "https://rule34.xxx/index.php?page=post&s=list&tags=abaddon_%28haunted_hotel%29",
+      "snippet": "Rule 34 - If it exists, there is porn of it. We have pokemon, my little pony, Other hentai, whatever you want."
+    },
+    {
+      "title": "Rule34 - If it exists, there is porn of it / abaddon_ (haunted_hotel)",
+      "url": "https://rule34.us/index.php?r=posts/index&q=abaddon_%28haunted_hotel%29",
+      "snippet": "The best Rule 34 of Naruto, Elden Ring, Fortnite, Genshin Impact, FNF, Pokemon, animated gifs, and videos! After all, if it exists, …"
+    }
+  ]
+}

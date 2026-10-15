@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "ML-Intern-lab/nanochat-scaling-laws",
+  "slug": "ml-intern-lab-nanochat-scaling-laws",
+  "author": "ML-Intern-lab",
+  "url": "https://huggingface.co/ML-Intern-lab/nanochat-scaling-laws",
+  "created_at": "2026-10-14T22:22:30.000Z",
+  "updated_at": "2026-10-14T23:00:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "ml-intern",
+    "nanochat",
+    "scaling-laws",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 159633,
+  "storage_human": "159633 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ML — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/ML",
+      "snippet": "mètre linéaire (ml), unité de longueur dans une direction utile, c'est-à-dire sans tenir compte des autres dimensions (largeur, hauteur, …"
+    },
+    {
+      "title": "Voitures MERCEDES-BENZ Classe M/ML d'occasion - leboncoin",
+      "url": "https://www.leboncoin.fr/c/voitures/u_car_brand:MERCEDES-BENZ+u_car_model:MERCEDES-BENZ_Classe%20M%2FML",
+      "snippet": "MERCEDES CLASSE M ML 250 BlueTEC - BVA 7G-Tronic Plus - BM 166 GARANTIE 3 MOIS RAPID CAR DEAL 37 Avoine 37420 …"
+    },
+    {
+      "title": "ML - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/ML",
+      "snippet": "This disambiguation page lists articles associated with the title ML. If an internal link incorrectly led you here, you may wish to change …"
+    },
+    {
+      "title": "Conversion de Millilitres en Litres",
+      "url": "https://www.metric-conversions.org/fr/volume/millilitres-en-litres.htm",
+      "snippet": "Un millilitre (mL) est égal à un millième de litre, qui est l'unité de base de volume dans le système métrique. Il est couramment utilisé …"
+    },
+    {
+      "title": "Convert Millilitres a Litres (ml → l )",
+      "url": "https://convertlive.com/fr/u/convert/millilitres/a/litres",
+      "snippet": "Millilitres a Litres. Effectuer une conversion entre les unités (ml → l ) ou consultez le tableau de conversion"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "AlexLEEeeee/connectailab-rl-alvis-v4-teacher",
+  "slug": "alexleeeeee-connectailab-rl-alvis-v4-teacher",
+  "author": "AlexLEEeeee",
+  "url": "https://huggingface.co/AlexLEEeeee/connectailab-rl-alvis-v4-teacher",
+  "created_at": "2026-10-14T23:57:26.000Z",
+  "updated_at": "2026-10-14T23:57:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "numpy",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "numpy",
+    "connect-ai-lab",
+    "deep-reinforcement-learning",
+    "gymnasium",
+    "connect-company",
+    "connect-tycoon",
+    "jev",
+    "jev-style",
+    "reinforcement-learning",
+    "ppo",
+    "decision-making",
+    "prefrontal-cortex",
+    "korean",
+    "ko",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AlexLEEeeee/connectailab-rl-alvis-v2-teacher · Hugging Face",
+      "url": "https://huggingface.co/AlexLEEeeee/connectailab-rl-alvis-v2-teacher",
+      "snippet": "AlexLEEeeee / connectailab-rl-alvis-v2-teacher Like 0 Reinforcement Learning jev-style Korean numpy connect-ai-lab deep-reinforcement-learning gymnasium connect-company connect-tycoon jev ppo decision-making prefrontal-cortex korean License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "AlexLEEeeee/connectailab-rl-alvis-v3 · Hugging Face",
+      "url": "https://huggingface.co/AlexLEEeeee/connectailab-rl-alvis-v3",
+      "snippet": "AlexLEEeeee / connectailab-rl-alvis-v3 Like 0 Reinforcement Learning PEFT Safetensors Korean deep-reinforcement-learning grpo decision-making gymnasium connect-tycoon connect-ai-lab connectailab lora qwen3.5 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - ShekMaha/connect4-reinforcement-learning",
+      "url": "https://github.com/ShekMaha/connect4-reinforcement-learning",
+      "snippet": "This is a repository for training an AI agent to play Connect 4 using reinforcement learning. Currently, a Q-learning RL algorithm. This also supports 2 player mode."
+    },
+    {
+      "title": "PDF Report - connect4-dqn-rl",
+      "url": "https://cis.temple.edu/~pwang/5603-AI/Project/2025F/Kang/connect4_project_report.pdf",
+      "snippet": "Introduction This Project implements a Deep Q-Network (DQN) agent to play the game Connect 4. The goal of the project was not only to train an agent that performs reasonably well, but also to understand the entire learning process, including environment design, reward shaping, training stability, evaluation, and practical debugging. Instead of using an existing library or environment online ..."
+    },
+    {
+      "title": "GitHub - nottombrown/rl-teacher: Code for Deep RL from Human ...",
+      "url": "https://github.com/nottombrown/rl-teacher",
+      "snippet": "Extensions to this work rl-teacher-atari by (@raelifin) supports atari environments, and uses a red-black tree to more efficiently find an ordering of human preferrences over clips."
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mradermacher/PhysX-Omni-GGUF",
+  "slug": "mradermacher-physx-omni-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/PhysX-Omni-GGUF",
+  "created_at": "2026-05-24T11:55:09.000Z",
+  "updated_at": "2026-10-14T22:43:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "Simulation-Ready",
+    "Physical 3D Generation",
+    "3D Vision",
+    "3D",
+    "en",
+    "dataset:Caoza/PhysX-Mobility",
+    "dataset:Caoza/PhysX-3D",
+    "dataset:PhysX-Omni/PhysXVerse",
+    "base_model:ACERobotics/PhysX-Omni",
+    "base_model:quantized:ACERobotics/PhysX-Omni",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 317,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 68146883456,
+  "storage_human": "68.1 GB",
+  "base_model": "ACERobotics/PhysX-Omni",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pinkchyu (@pinkchyu) • Instagram photos and videos",
+      "url": "https://www.instagram.com/pinkchyu/",
+      "snippet": "631K Followers, 56 Following, 364 Posts - Pinkchyu (@pinkchyu) on Instagram: \"🖤 my other account 🖤 @pinkchyuwu’s alt\""
+    },
+    {
+      "title": "pinkchyu (@pinkchyu) | TikTok",
+      "url": "https://www.tiktok.com/@pinkchyu",
+      "snippet": "Goth Girl 🖤 Instagram: Pinkchyu 👇Socials💕.Watch pinkchyu's popular videos: \"Think we should have...\", \"Why is there no AC h...\". Join …"
+    },
+    {
+      "title": "Pinkchyu (@pinkchyu) / X",
+      "url": "https://x.com/pinkchyu",
+      "snippet": "🚨 EXCLUSIVE: Drake's goth girl, Pinkchyu, gave an interesting answer about her relationship with the rapper when asked where they …"
+    },
+    {
+      "title": "Pinkchyu - Facebook",
+      "url": "https://www.facebook.com/PinkchyuOfficial/",
+      "snippet": "1 day ago · Pinkchyu. 991,059 followers · 591,128 talking about this. Goth Girl at your local target store"
+    },
+    {
+      "title": "Pinkchyu (@gothchyu) • Instagram photos and videos",
+      "url": "https://www.instagram.com/gothchyu/",
+      "snippet": "168K Followers, 6 Following, 335 Posts - Pinkchyu (@gothchyu) on Instagram: \"my main: @pinkchyuwu | Cosplayer 🖤\""
+    }
+  ]
+}

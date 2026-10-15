@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "wq2012/univ_conformer_base_ge2e",
+  "slug": "wq2012-univ_conformer_base_ge2e",
+  "author": "wq2012",
+  "url": "https://huggingface.co/wq2012/univ_conformer_base_ge2e",
+  "created_at": "2026-10-15T01:37:56.000Z",
+  "updated_at": "2026-10-15T01:37:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "flaxspeaker",
+  "languages": [],
+  "tags": [
+    "flaxspeaker",
+    "jax",
+    "safetensors",
+    "audio",
+    "speaker-verification",
+    "speaker-recognition",
+    "speaker-embeddings",
+    "flax",
+    "conformer",
+    "ge2e_softmax",
+    "cosine",
+    "audio-classification",
+    "dataset:librispeech_asr",
+    "dataset:cnceleb",
+    "dataset:voxceleb",
+    "arxiv:1710.10467",
+    "arxiv:2104.01989",
+    "arxiv:2202.12163",
+    "arxiv:2203.05642",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4551556,
+  "parameters_human": "4.6M",
+  "storage_bytes": 36433085,
+  "storage_human": "36 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon.co.uk: Low Prices in Electronics, Books, Sports Equipment",
+      "url": "https://www.amazon.co.uk/",
+      "snippet": "Sign up to Amazon Prime for unlimited free delivery. Low prices at Amazon on digital cameras, MP3, sports, books, music, DVDs, …"
+    },
+    {
+      "title": "The Boys of Dungeon Lane - Amazon.co.uk",
+      "url": "https://www.amazon.co.uk/Boys-Dungeon-Lane-Paul-McCartney/dp/B0GTZK37RV",
+      "snippet": "'The Boys of Dungeon Lane' is a collection of rare and revealing glimpses into memories never-before shared, along with some …"
+    },
+    {
+      "title": "Amazon.co.uk: Powered Usb Hub",
+      "url": "https://www.amazon.co.uk/powered-usb-hub/s?k=powered+usb+hub",
+      "snippet": "Browse USB hubs with fast charging ports and data transfer capabilities. Perfect for connecting peripherals and expanding ports."
+    },
+    {
+      "title": "Amazon.co.uk",
+      "url": "https://www.amazon.co.uk/your-account",
+      "snippet": ""
+    },
+    {
+      "title": "Amazon Brand Registry: Protect and Build Your Brand in the UK",
+      "url": "https://sell.amazon.co.uk/brand-registry",
+      "snippet": "Amazon Brand Registry is a programme designed to protect your intellectual property, offering sellers an exclusive set of brand …"
+    }
+  ]
+}

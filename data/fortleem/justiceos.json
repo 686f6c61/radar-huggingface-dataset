@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "fortleem/justiceos",
+  "slug": "fortleem-justiceos",
+  "author": "fortleem",
+  "url": "https://huggingface.co/fortleem/justiceos",
+  "created_at": "2026-10-14T22:20:18.000Z",
+  "updated_at": "2026-10-14T22:55:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard: AI Model Rankings & Pricing | llmboard.ai",
+      "url": "https://www.llmboard.ai/",
+      "snippet": "Explore the LLM leaderboard to compare the best AI models across capability, pricing and LLM benchmarks. Find the best LLM for coding, reasoning and more."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Best LLM Leaderboard 2026 | AI Model Rankings, Benchmarks & Pricing",
+      "url": "https://onyx.app/llm-leaderboard",
+      "snippet": "The definitive LLM leaderboard — ranking the best AI models including Claude, GPT, Gemini, DeepSeek, Llama, and more across coding, reasoning, math, agentic, and chat benchmarks. Compare LLM rankings, tier lists, and pricing."
+    },
+    {
+      "title": "AI Model Leaderboard 2026: Live LLM Rankings",
+      "url": "https://www.aiintelreport.com/ai-model-leaderboard",
+      "snippet": "A live, ranked leaderboard of the top AI models in 2026 — Claude, GPT-5, Gemini, DeepSeek and more — with current status, context, pricing, and every model release we cover."
+    }
+  ]
+}

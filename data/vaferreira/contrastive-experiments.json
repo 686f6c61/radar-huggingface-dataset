@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "vaferreira/contrastive-experiments",
+  "slug": "vaferreira-contrastive-experiments",
+  "author": "vaferreira",
+  "url": "https://huggingface.co/vaferreira/contrastive-experiments",
+  "created_at": "2026-10-14T20:59:37.000Z",
+  "updated_at": "2026-10-14T20:59:42.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "pytorch",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Contrastive Explanation in AI - emergentmind.com",
+      "url": "https://www.emergentmind.com/topics/contrastive-explanation",
+      "snippet": "Contrastive explanation contrasts facts and foils by pinpointing minimal distinguishing factors, boosting AI transparency and interpretability."
+    },
+    {
+      "title": "[2103.01378] Contrastive Explanations for Model Interpretability",
+      "url": "https://arxiv.org/abs/2103.01378",
+      "snippet": "Contrastive explanations clarify why an event occurred in contrast to another. They are more inherently intuitive to humans to both produce and comprehend. We propose a methodology to produce contrastive explanations for classification models by modifying the representation to disregard non-contrastive information, and modifying model behavior to only be based on contrastive reasoning. Our ..."
+    },
+    {
+      "title": "moraleserin/contrastive-v2 · Hugging Face",
+      "url": "https://huggingface.co/moraleserin/contrastive-v2",
+      "snippet": "Mae for Contrastive Overview This repository is a compact, custom PyTorch implementation of Mae for Contrastive. The nano configuration is intended for code review, smoke tests, and small controlled experiments rather than as a production-ready pretrained release."
+    },
+    {
+      "title": "Contrastive diffusion model for exploring mathematical expressions from ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0893608026005010",
+      "snippet": "3. Contrastive diffusion model for symbolic regression In this section, we present DiffuSR, a contrastive diffusion model for symbolic regression, specifically designed to capture the global structure and multimodal semantics of mathematical expressions."
+    },
+    {
+      "title": "Visualizing and Understanding Contrastive Learning - arXiv.org",
+      "url": "https://arxiv.org/html/2206.09753v3",
+      "snippet": "Visualizing and Understanding Contrastive Learning Thanks: This research received funding from the FWO (Grants G014718N, G0A4720N and 1SB5721N) and from imec through the AAA project Trustworthy AI Methods (TAIM). F. Sammani, B. Joukovsky and N. Deligiannis are with the Department of Electronics and Informatics, Vrije Universiteit Brussel, Pleinlaan 2, B-1050 Brussels, Belgium and also with ..."
+    }
+  ]
+}

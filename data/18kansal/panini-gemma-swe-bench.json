@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "18kansal/panini-gemma-swe-bench",
+  "slug": "18kansal-panini-gemma-swe-bench",
+  "author": "18kansal",
+  "url": "https://huggingface.co/18kansal/panini-gemma-swe-bench",
+  "created_at": "2026-10-14T19:23:17.000Z",
+  "updated_at": "2026-10-15T03:30:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "sa"
+  ],
+  "tags": [
+    "transformers",
+    "swe-bench",
+    "panini-grammar",
+    "ast-invariants",
+    "code-repair",
+    "automated-program-repair",
+    "gemma",
+    "neuro-symbolic",
+    "formal-methods",
+    "test-driven-development",
+    "en",
+    "sa",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automated Program Repair",
+      "dataset": "SWE-bench Verified Test Suite",
+      "metric": "Genuine Python Unittest Pass Rate (Exit Code 0)",
+      "value": 100
+    }
+  ],
+  "sources": [
+    {
+      "title": "SWE-bench Leaderboards",
+      "url": "https://www.swebench.com/index.html",
+      "snippet": "Select at least one model using the checkboxes in the first columns, or click one of the following buttons for a pre-defined selection."
+    },
+    {
+      "title": "SWE-bench Results Viewer",
+      "url": "https://www.swebench.com/viewer.html",
+      "snippet": "SWE-bench Analysis Pick a split and a model to see an automated breakdown of how it performed on that SWE-bench split."
+    },
+    {
+      "title": "google/gemma-4-12B · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-12B",
+      "snippet": "Transparency and Accountability This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem. Risks identified and ..."
+    },
+    {
+      "title": "AI Model Tracker Index: Updates, Sources and Evidence",
+      "url": "https://savrn.com/model-tracker",
+      "snippet": "18kansal/panini-gemma-swe-bench 18kansal Source updated: 14 Oct 2026, 22:45 UTC Observed by SAVRN: 14 Oct 2026, 22:45 UTC Exact repository revision 393e2e9140a14cdfea98646040cad96724a4e2c1 SAVRN model page not yet available. Original source ↗ Publisher reported · Repository activity Adking98/MN-12B-Celeste-V1.9-GGUF → Adking98 · text ..."
+    },
+    {
+      "title": "AI Benchmarks 2026 - MMLU, GPQA, SWE-bench | LM Market Cap",
+      "url": "https://lmmarketcap.com/benchmarks",
+      "snippet": "Compare AI models across 17 benchmarks including MMLU, GPQA Diamond, MATH-500, HumanEval, SWE-bench, and Arena Elo. See current leaders, score history, and interactive charts for 350+ models."
+    }
+  ]
+}

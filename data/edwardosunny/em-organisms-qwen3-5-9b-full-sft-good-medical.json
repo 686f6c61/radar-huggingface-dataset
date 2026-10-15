@@ -5,7 +5,7 @@
   "author": "EdwardoSunny",
   "url": "https://huggingface.co/EdwardoSunny/em-organisms-qwen3.5-9b-full-sft-good-medical",
   "created_at": "2026-10-14T07:48:06.000Z",
-  "updated_at": "2026-10-14T17:57:24.000Z",
+  "updated_at": "2026-10-15T02:00:41.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -31,8 +31,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 107465967472,
-  "storage_human": "107.5 GB",
+  "storage_bytes": 161188956496,
+  "storage_human": "161.2 GB",
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"

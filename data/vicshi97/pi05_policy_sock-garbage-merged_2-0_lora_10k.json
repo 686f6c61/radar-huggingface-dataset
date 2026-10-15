@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "vicshi97/pi05_policy_sock-garbage-merged_2.0_lora_10k",
+  "slug": "vicshi97-pi05_policy_sock-garbage-merged_2-0_lora_10k",
+  "author": "vicshi97",
+  "url": "https://huggingface.co/vicshi97/pi05_policy_sock-garbage-merged_2.0_lora_10k",
+  "created_at": "2026-10-14T23:19:21.000Z",
+  "updated_at": "2026-10-14T23:19:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "dataset:vicshi97/sock-garbage-merged_2.0",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 255494304,
+  "storage_human": "255 MB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vicshi97/pi05_sock-garbage-merged_2.0_20k · Hugging Face",
+      "url": "https://huggingface.co/vicshi97/pi05_sock-garbage-merged_2.0_20k",
+      "snippet": "Instructions to use vicshi97/pi05_sock-garbage-merged_2.0_20k with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use vicshi97/pi05_sock-garbage-merged_2.0_20k with LeRobot:"
+    },
+    {
+      "title": "vicshi97 (Weike) - Hugging Face",
+      "url": "https://huggingface.co/vicshi97/datasets",
+      "snippet": "vicshi97/pi05_sock-garbage-merged_2.0_20k. published a model about 10 hours ago. vicshi97/pi05_sock-garbage-merged_2.0_20k"
+    },
+    {
+      "title": "sock-garbage-merged_2.0 - Physical AI Dataset | Claru",
+      "url": "https://claru.ai/datasets/vicshi97-sock-garbage-merged-2-0",
+      "snippet": "A LeRobot dataset containing robot manipulation data with multiple camera views and joint state information. The dataset includes 200 episodes of robotic arm interactions across 2 distinct tasks."
+    },
+    {
+      "title": "Physical-Intelligence/openpi | DeepWiki",
+      "url": "https://deepwiki.com/Physical-Intelligence/openpi",
+      "snippet": "OpenPI is an open-source training and deployment system for Vision-Language-Action (VLA) models in robotics, developed by Physical Intelligence. The repository implements three core model architecture"
+    },
+    {
+      "title": "garBAGE LTX LoRA v2.0 - v2.0 0108-23i01r08ep - tensorhub.art",
+      "url": "https://tensorhub.art/models/995060098948703177",
+      "snippet": "Download garBAGE LTX LoRA v2.0 - free LORA LTX-2_3 AI model on TENSORHUB ART. By Pandalicious"
+    }
+  ]
+}

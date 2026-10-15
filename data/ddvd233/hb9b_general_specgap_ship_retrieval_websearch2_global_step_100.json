@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ddvd233/hb9b_general_specgap_ship_retrieval_websearch2_global_step_100",
+  "slug": "ddvd233-hb9b_general_specgap_ship_retrieval_websearch2_global_step_100",
+  "author": "ddvd233",
+  "url": "https://huggingface.co/ddvd233/hb9b_general_specgap_ship_retrieval_websearch2_global_step_100",
+  "created_at": "2026-10-14T22:25:32.000Z",
+  "updated_at": "2026-10-14T22:34:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "medical",
+    "reinforcement-learning",
+    "verl",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839711717,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "F95zonee - Reddit",
+      "url": "https://www.reddit.com/r/F95zonee/",
+      "snippet": "Aug 14, 2021 · Adult games, visual novel, A place to share and ask Everything related to porn games."
+    },
+    {
+      "title": "F95zone",
+      "url": "https://attachments.f95zone.to/2019/08/390892_Walkthrough_CoP_0.6.txt",
+      "snippet": "This is Walkthrough for Curse Of Pleasure version 0.6 (game from RanneRo) First of all i wanna give you a advice,better have talking …"
+    },
+    {
+      "title": "Patreon Acquires F95 : r/Piracy - Reddit",
+      "url": "https://www.reddit.com/r/Piracy/comments/1bsp2qg/patreon_acquires_f95/",
+      "snippet": "\" For the users of F95zone and Patreon creators, this acquisition opens up new avenues for engagement and creativity. Existing …"
+    },
+    {
+      "title": "F95zone",
+      "url": "https://attachments.f95zone.to/2023/10/3063999_GalleryUnlocker.rpy",
+      "snippet": "# Use this unlock script at your own risk. # https://f95zone.to/threads/.133017/post-10537430 # Start the deal with the devil init 666 …"
+    },
+    {
+      "title": "Is there currently any way to access Fantia.jp posts without ... - Reddit",
+      "url": "https://www.reddit.com/r/Piracy/comments/iyeaq4/is_there_currently_any_way_to_access_fantiajp/",
+      "snippet": "Sep 23, 2020 · true Is there currently any way to access Fantia.jp posts without having to go through the Paywall?"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "deanoshuang",
   "url": "https://huggingface.co/deanoshuang/qwen3.5-9b-agent-sft-lora",
   "created_at": "2026-10-12T23:13:07.000Z",
-  "updated_at": "2026-10-12T23:17:57.000Z",
+  "updated_at": "2026-10-15T00:35:34.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 11,
+  "downloads_30d": 15,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

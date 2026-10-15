@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Sanghyang00/ELARSpeech-OmniASR-1B-ula",
+  "slug": "sanghyang00-elarspeech-omniasr-1b-ula",
+  "author": "Sanghyang00",
+  "url": "https://huggingface.co/Sanghyang00/ELARSpeech-OmniASR-1B-ula",
+  "created_at": "2026-10-14T20:51:16.000Z",
+  "updated_at": "2026-10-14T21:07:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "ula"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "wav2vec2",
+    "automatic-speech-recognition",
+    "elarspeech",
+    "omniasr-1b",
+    "ula",
+    "base_model:aadel4/omniASR-CTC-1B-v2",
+    "base_model:finetune:aadel4/omniASR-CTC-1B-v2",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 975681460,
+  "parameters_human": "975.7M",
+  "storage_bytes": 3902827280,
+  "storage_human": "3.9 GB",
+  "base_model": "aadel4/omniASR-CTC-1B-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sanghyang00/ELARSpeech-OmniASR-1B-abz · Hugging Face",
+      "url": "https://huggingface.co/Sanghyang00/ELARSpeech-OmniASR-1B-abz",
+      "snippet": "ELARSpeech-OmniASR-1B-abz An ELARSpeech automatic speech recognition model for Abui."
+    },
+    {
+      "title": "GitHub - sanghyang00/elarspeech",
+      "url": "https://github.com/sanghyang00/elarspeech",
+      "snippet": "Resources for ELARSpeech: A 30K-Hour Dataset Across 675 Underrepresented Languages for Long-Tail Multilingual Speech Technologies."
+    },
+    {
+      "title": "Sanghyang00 (Sangmin Lee) - Hugging Face",
+      "url": "https://huggingface.co/Sanghyang00",
+      "snippet": "User profile of Sangmin Lee on Hugging Face"
+    },
+    {
+      "title": "GitHub - facebookresearch/omnilingual-asr: Omnilingual ASR Open-Source ...",
+      "url": "https://github.com/facebookresearch/omnilingual-asr",
+      "snippet": "A new variant of the LLM-ASR model that supports decoding on unlimited audio length (omniASR_LLM_Unlimited_ {300M,1B,3B,7B}_v2). The unlimited audio length models are briefly described in the architecture overview section."
+    },
+    {
+      "title": "[2511.09690] Omnilingual ASR: Open-Source Multilingual Speech ...",
+      "url": "https://arxiv.org/abs/2511.09690",
+      "snippet": "Automatic speech recognition (ASR) has advanced in high-resource languages, but most of the world&#x27;s 7,000+ languages remain unsupported, leaving thousands of long-tail languages behind. Expanding ASR coverage has been costly and limited by architectures that restrict language support, making extension inaccessible to most--all while entangled with ethical concerns when pursued without ..."
+    }
+  ]
+}

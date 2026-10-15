@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ddvd233/hb27b_general_specgap_ship_retrieval_websearch_global_step_130",
+  "slug": "ddvd233-hb27b_general_specgap_ship_retrieval_websearch_global_step_130",
+  "author": "ddvd233",
+  "url": "https://huggingface.co/ddvd233/hb27b_general_specgap_ship_retrieval_websearch_global_step_130",
+  "created_at": "2026-10-14T22:26:42.000Z",
+  "updated_at": "2026-10-14T22:41:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "medical",
+    "reinforcement-learning",
+    "verl",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:finetune:Qwen/Qwen3.6-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 54733598005,
+  "storage_human": "54.7 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Create and edit documents for free | Microsoft Word for the Web",
+      "url": "https://word.cloud.microsoft/en-us/",
+      "snippet": "Create, edit, and share documents from any location with Word online. Work confidently from any device with features like real-time …"
+    },
+    {
+      "title": "Créez et modifiez des documents gratuitement | Microsoft Word pour …",
+      "url": "https://word.cloud.microsoft/fr-fr/",
+      "snippet": "Rédigez, modifiez et collaborez sur des documents avec Microsoft Word en ligne. Accès gratuit et continu à partir de tous vos appareils."
+    },
+    {
+      "title": "Free Online Document Editing with Microsoft Word | Microsoft 365",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/word?msockid=0c36a9d2d03e640a04c8be20d172659c",
+      "snippet": "Use Microsoft Word for online document editing with AI-powered suggestions from Copilot for grammar, style, and clarity. Write, edit, …"
+    },
+    {
+      "title": "Microsoft Word - Download",
+      "url": "https://microsoft-word.en.softonic.com/",
+      "snippet": "Sep 16, 2026 · Microsoft Word continues to prove why it remains the default choice for document creation across schools, …"
+    },
+    {
+      "title": "Free Microsoft 365 Online | Word, Excel, PowerPoint",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/free-office-online-for-the-web?msockid=0c36a9d2d03e640a04c8be20d172659c",
+      "snippet": "With Microsoft 365 for the web you can edit and share Word, Excel, PowerPoint, and OneNote files on your devices using a web …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "pixelouie/oman_workshop_model",
+  "slug": "pixelouie-oman_workshop_model",
+  "author": "pixelouie",
+  "url": "https://huggingface.co/pixelouie/oman_workshop_model",
+  "created_at": "2026-10-14T22:39:58.000Z",
+  "updated_at": "2026-10-14T23:15:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:pixelouie/oman_workshop_1_clean",
+    "arxiv:2304.13705",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51670663,
+  "parameters_human": "51.7M",
+  "storage_bytes": 1239130784,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pixelouie (Mou) - Hugging Face",
+      "url": "https://huggingface.co/pixelouie/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset about 12 hours ago ... published a dataset about 12 hours ago"
+    },
+    {
+      "title": "pixelouie/act_dual_cam_model · Hugging Face",
+      "url": "https://huggingface.co/pixelouie/act_dual_cam_model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - OpenModelDB/open-model-database: An open and free database for ...",
+      "url": "https://github.com/OpenModelDB/open-model-database",
+      "snippet": "An open and free database for AI models. Contribute to OpenModelDB/open-model-database development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub Models",
+      "url": "https://github.com/marketplace?type=models",
+      "snippet": "Create AI-powered applications with GitHub Enhance your workflow with extensions Tools from the community and partners to simplify tasks and automate processes"
+    },
+    {
+      "title": "Open Source AI Models — The open-source AI model directory",
+      "url": "https://opensourceaimodels.net/",
+      "snippet": "55 open-source models indexed The open-source AI model directory. Licenses, parameters, benchmarks, VRAM and inference pricing for Llama, Mistral, Qwen, DeepSeek, Gemma, Phi and more. Pick the right open-weights model for your use case."
+    }
+  ]
+}

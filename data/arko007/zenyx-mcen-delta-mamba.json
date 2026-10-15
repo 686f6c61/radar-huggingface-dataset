@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Arko007/Zenyx-MCEN-Delta-Mamba",
+  "slug": "arko007-zenyx-mcen-delta-mamba",
+  "author": "Arko007",
+  "url": "https://huggingface.co/Arko007/Zenyx-MCEN-Delta-Mamba",
+  "created_at": "2026-10-07T07:45:09.000Z",
+  "updated_at": "2026-10-15T00:00:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "text-generation",
+    "mamba",
+    "delta-net",
+    "custom-architecture",
+    "base-model",
+    "work-in-progress",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:bigcode/starcoderdata",
+    "dataset:HuggingFaceTB/finemath",
+    "dataset:nvidia/Nemotron-SFT-Math-v3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 222838300320,
+  "storage_human": "222.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Arko007/Zenyx-V3-Base · Hugging Face",
+      "url": "https://huggingface.co/Arko007/Zenyx-V3-Base",
+      "snippet": "Zenyx V3 is a highly efficient 1.5B parameter Mixture-of-Experts (MoE) foundation model designed for low-latency inference, high throughput, and context length extensibility. Current Training Status: Zenyx V3 is currently under active pretraining on a diverse corpus of web text, mathematics, and programming code."
+    },
+    {
+      "title": "Arko007 AI models - Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/company/arko007",
+      "snippet": "Browse AI models attributed to Arko007, sourced from verified model catalogs."
+    },
+    {
+      "title": "Arko007/Zenyx_Base_220M at main - Hugging Face",
+      "url": "https://huggingface.co/Arko007/Zenyx_Base_220M/tree/main",
+      "snippet": "Arko007 / Zenyx_Base_220M like 3 Text Generation Safetensors JAX 4 datasets 7 languages flax tpu base-model custom-architecture License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main Zenyx_Base_220M 898 MB Ctrl+K Ctrl+K 1 contributor History:717 commits Arko007 Delete checkpoints d503b60 verified8 months ago ..."
+    },
+    {
+      "title": "Arko007: Open-Weight Models and Datasets - savrn.com",
+      "url": "https://savrn.com/model-publishers/arko007",
+      "snippet": "Arko007 has 1 open-weight model and 0 datasets in the SAVRN Model Hub. Browse each one&#x27;s model card, specs, files and license."
+    },
+    {
+      "title": "Zenyx-V3-Base: Model Details, Context & Pricing | Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/hf-arko007-zenyx-v3-base",
+      "snippet": "Model card indexed from Hugging Face for text-generation."
+    }
+  ]
+}

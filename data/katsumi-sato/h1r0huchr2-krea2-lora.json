@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "katsumi-sato/h1r0huchr2-krea2-lora",
+  "slug": "katsumi-sato-h1r0huchr2-krea2-lora",
+  "author": "katsumi-sato",
+  "url": "https://huggingface.co/katsumi-sato/h1r0huchr2-krea2-lora",
+  "created_at": "2026-10-14T22:20:06.000Z",
+  "updated_at": "2026-10-14T22:20:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "lora",
+    "krea-2",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 228587688,
+  "storage_human": "229 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Céline Tran — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/C%C3%A9line_Tran",
+      "snippet": "À la même époque, cependant, une affaire la contraint à abandonner son premier pseudonyme Katsumi. Elle est en effet attaquée …Read more"
+    },
+    {
+      "title": "Katsuni la petite Frenchie devenu star mondial du x - Tout Le X !",
+      "url": "https://toutlex.com/les-actrices-x-francaises/katsuni-la-petite-frenchie-devenu-star-mondial-du-x/",
+      "snippet": "May 3, 2021 · Celine Tran alias Kastuni (Katsumi jusqu’en 2007) est avec Clara Morgane, probablement une des actrices X …"
+    },
+    {
+      "title": "Katsumi à l'école des infirmières (Vidéo 2005) - IMDb",
+      "url": "https://www.imdb.com/fr/title/tt0977765/",
+      "snippet": "Katsumi à l'école des infirmières: Réalisé par Alain Payet. Avec Celine Tran, Ramon Nomar, Sebastian Barrio, Tiffany Hopkins."
+    },
+    {
+      "title": "Katsumi — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Katsumi",
+      "snippet": "Katsumi est un prénom mixte japonais, notamment porté par : Katsumi Komagata, artiste japonais ; Katsumi Nishikawa, réalisateur …"
+    },
+    {
+      "title": "« L'affaire Katsuni » : cette polémique qui enflamme la France",
+      "url": "https://fr.mediamass.net/people/katsuni/scandale.html",
+      "snippet": "3 days ago · Nouvelles révélations dans l'affaire . Alors que chaque rebondissement fait la Une des journaux françaises depuis …"
+    }
+  ]
+}

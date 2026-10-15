@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "DenRakEiw/microduck-senate_duck_1016",
+  "slug": "denrakeiw-microduck-senate_duck_1016",
+  "author": "DenRakEiw",
+  "url": "https://huggingface.co/DenRakEiw/microduck-senate_duck_1016",
+  "created_at": "2026-10-14T22:57:33.000Z",
+  "updated_at": "2026-10-14T22:57:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "microduck-slot:walk",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 793753,
+  "storage_human": "793753 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DenRakEiw/microduck-senate_duck_1456 · Hugging Face",
+      "url": "https://huggingface.co/DenRakEiw/microduck-senate_duck_1456",
+      "snippet": "Instructions to use DenRakEiw/microduck-senate_duck_1456 with libraries, inference providers, notebooks, and local apps. Follow these links to get started ..."
+    },
+    {
+      "title": "GitHub - pollen-robotics/microduck: A Tiny biped duck robot",
+      "url": "https://github.com/pollen-robotics/microduck",
+      "snippet": "A Tiny biped duck robot 🦆. Contribute to pollen-robotics/microduck development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - AI-FanGe/Microduck-build-tutorial: A practical hardware and ...",
+      "url": "https://github.com/AI-FanGe/Microduck-build-tutorial",
+      "snippet": "A practical hardware and software setup for a compact RL-powered biped robot. - AI-FanGe/Microduck-build-tutorial"
+    },
+    {
+      "title": "Microduck - A tiny biped robot you can teach new tricks | Pollen Robotics",
+      "url": "https://pollen-robotics.com/microduck/",
+      "snippet": "Microduck is a 25 cm biped robot with 15 motors, a camera, LiDAR and a grasping beak. Playable out of the box, and its open-source stack lets you train new behaviours in simulation and run them on the robot. Pre-order at $399."
+    },
+    {
+      "title": "Microduck - 3D Print Files Free Download - MakerWorld",
+      "url": "https://makerworld.com/en/search/models?keyword=tag%3A+microduck",
+      "snippet": "Discover the collection of microduck models for 3D printing. Download free 3D print files, including STL files, and explore new 3D printing ideas shared by the MakerWorld community."
+    }
+  ]
+}

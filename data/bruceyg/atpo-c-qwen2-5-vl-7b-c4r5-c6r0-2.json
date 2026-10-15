@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "BruceYg/ATPO-C-Qwen2.5-VL-7B-C4r5-C6r0.2",
+  "slug": "bruceyg-atpo-c-qwen2-5-vl-7b-c4r5-c6r0-2",
+  "author": "BruceYg",
+  "url": "https://huggingface.co/BruceYg/ATPO-C-Qwen2.5-VL-7B-C4r5-C6r0.2",
+  "created_at": "2026-10-14T23:26:51.000Z",
+  "updated_at": "2026-10-14T23:36:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "video",
+    "video-safety",
+    "multi-label-classification",
+    "reinforcement-learning",
+    "arxiv:2610.02019",
+    "base_model:Qwen/Qwen2.5-VL-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-VL-7B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8292166656,
+  "parameters_human": "8.29B",
+  "storage_bytes": 16595844880,
+  "storage_human": "16.6 GB",
+  "base_model": "Qwen/Qwen2.5-VL-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BruceYg/ATPO-G-Qwen2.5-VL-7B · Hugging Face",
+      "url": "https://huggingface.co/BruceYg/ATPO-G-Qwen2.5-VL-7B",
+      "snippet": "ATPO-G-Qwen2.5-VL-7B ATPO-G-Qwen2.5-VL-7B is based on Qwen2.5-VL-7B-Instruct and fine-tuned for multi-label video safety detection using Adaptive Tversky Policy Optimization (ATPO). The ATPO-G variant uses Global Adaptive Tversky Reward (G-ATR), which adapts false-positive and false-negative penalties during reinforcement learning to steer the precision-recall trade-off."
+    },
+    {
+      "title": "Qwen/Qwen2.5-VL-7B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - elsawhs/qwen2.5-vl: Qwen2.5-VL is the multimodal large ...",
+      "url": "https://github.com/elsawhs/qwen2.5-vl",
+      "snippet": "In the past five months since Qwen2-VL&#x27;s release, numerous developers have built new models on the Qwen2-VL vision-language models, providing us with valuable feedback. During this period, we focused on building more useful vision-language models. Today, we are excited to introduce the latest addition to the Qwen family: Qwen2.5-VL."
+    },
+    {
+      "title": "qwen2.5vl:7b - ollama.com",
+      "url": "https://ollama.com/library/qwen2.5vl:7b",
+      "snippet": "In terms of smaller models, Qwen2.5-VL-7B-Instruct outperforms GPT-4o-mini in a number of tasks, and Qwen2.5-VL-3B, which is a solution for edge AI, even outperforms the 7B model of our previous version Qwen2-VL."
+    },
+    {
+      "title": "GitHub - phildougherty/qwen2.5-VL-inference-openai: Inference service ...",
+      "url": "https://github.com/phildougherty/qwen2.5-VL-inference-openai",
+      "snippet": "An OpenAI-compatible API server for the Qwen2.5-VL vision-language model, enabling multimodal conversations with image understanding capabilities."
+    }
+  ]
+}

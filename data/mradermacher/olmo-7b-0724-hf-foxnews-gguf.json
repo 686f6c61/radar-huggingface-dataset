@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mradermacher/olmo-7b-0724-hf-foxnews-GGUF",
+  "slug": "mradermacher-olmo-7b-0724-hf-foxnews-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/olmo-7b-0724-hf-foxnews-GGUF",
+  "created_at": "2025-02-11T23:23:51.000Z",
+  "updated_at": "2026-10-14T23:50:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:shariar076/olmo-7b-0724-hf-foxnews",
+    "base_model:quantized:shariar076/olmo-7b-0724-hf-foxnews",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 135,
+  "trending_score": 0,
+  "parameters": 6888095744,
+  "parameters_human": "6.89B",
+  "storage_bytes": 61048743936,
+  "storage_human": "61.0 GB",
+  "base_model": "shariar076/olmo-7b-0724-hf-foxnews",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Université Jean Moulin Lyon 3",
+      "url": "https://www.univ-lyon3.fr/",
+      "snippet": "Dans la cadre de la 3e édition de \"Ma rentrée safe\", la Mission Égalité et Diversité de l'Université Jean Moulin Lyon 3 invite la …"
+    },
+    {
+      "title": "Université Jean Moulin Lyon 3",
+      "url": "https://www.univ-lyon3.fr/accueil-en",
+      "snippet": "Enrolment at Jean Moulin Lyon 3 University 2026: user guide July 2, 2026 September 10, 2026 >>> VIEW ALL NEWS 622 associate …"
+    },
+    {
+      "title": "CAS - Central Authentication Service Service d'Authentification",
+      "url": "https://net3.univ-lyon3.fr/",
+      "snippet": "Respect de la charte informatique Vous avez demandé à accéder à un site sécurisé de l’Université Jean Moulin qui exige une …"
+    },
+    {
+      "title": "Portail Inscription - Université Jean Moulin Lyon 3",
+      "url": "http://webinscription.univ-lyon3.fr/",
+      "snippet": "Votre mot de passe Pour activer, modifier ou recréer votre mot de passe cliquez ici. Si vous êtes déjà étudiant de l'université Lyon 3, …"
+    },
+    {
+      "title": "Université Jean-Moulin-Lyon-III — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Universit%C3%A9_Jean-Moulin-Lyon-III",
+      "snippet": "C'est l'une des quatre universités de l' académie de Lyon b. Elle est issue d’une scission de l' université Lumière-Lyon-II en 1973, à …"
+    }
+  ]
+}

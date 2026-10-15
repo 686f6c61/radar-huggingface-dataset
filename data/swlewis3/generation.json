@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "swlewis3/generation",
+  "slug": "swlewis3-generation",
+  "author": "swlewis3",
+  "url": "https://huggingface.co/swlewis3/generation",
+  "created_at": "2026-10-14T22:16:19.000Z",
+  "updated_at": "2026-10-14T22:16:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Generative AI Models - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/blogs/generative-ai-models/",
+      "snippet": "DALL·E: OpenAI&#x27;s image-generation model family designed to create and edit images from text prompts. Sora: OpenAI&#x27;s generative video model designed to create and transform video content using natural language and other inputs. Runway: A generative AI platform offering models and tools for creating, editing and transforming images and videos."
+    },
+    {
+      "title": "AI-Sweden-Models/gpt-sw3-1.3b · Hugging Face",
+      "url": "https://huggingface.co/AI-Sweden-Models/gpt-sw3-1.3b",
+      "snippet": "AI Sweden shares GPT-SW3 in a controlled pre-release with organizations and individuals in the Nordic NLP ecosystem who can contribute to the validation and testing of the models and provide feedback to the community. This is an important step in the process of validating the model and collecting feedback on both what works well and what does not."
+    },
+    {
+      "title": "What is a generative model? - IBM",
+      "url": "https://www.ibm.com/think/topics/generative-model",
+      "snippet": "Generative AI is a type of AI that uses sophisticated models to generate new content according to an input prompt. The generative model is the computer program that employs data and algorithms to facilitate the practice of generative AI. Generative AI use cases include text summarization, text generation and image generation, as well as 3D modeling and audio creation."
+    },
+    {
+      "title": "Sloyd · 3D AI Model Generator | Unlimited Generative 3D",
+      "url": "https://www.sloyd.ai/",
+      "snippet": "Unlimited AI 3D creation from text or images. Refine and control results without heavy manual 3D work — for game devs, designers, 3D printing."
+    },
+    {
+      "title": "Generative AI | Google Cloud Documentation",
+      "url": "https://docs.cloud.google.com/docs/generative-ai",
+      "snippet": "Gen AI tools Gen AI development flow Model exploration and hosting Google Cloud provides a set of state-of-the-art foundation models through Vertex AI, including Gemini. You can also deploy a third-party model to either Vertex AI Model Garden or self-host on GKE or Compute Engine."
+    }
+  ]
+}

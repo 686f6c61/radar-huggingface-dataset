@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "magmalo/E2B",
+  "slug": "magmalo-e2b",
+  "author": "magmalo",
+  "url": "https://huggingface.co/magmalo/E2B",
+  "created_at": "2026-10-14T20:59:32.000Z",
+  "updated_at": "2026-10-14T21:51:58.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2588147712,
+  "storage_human": "2.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "E2B | The Enterprise AI Agent Cloud",
+      "url": "https://e2b.dev/",
+      "snippet": "100K+ teams on E2B · 94 of the Fortune 100 signed up · top AI labs & the fastest AI startups run here Where E2B fits Your agent is the product. E2B is where it runs. You bring the model, prompts, and agent logic. E2B runs the machine underneath."
+    },
+    {
+      "title": "Gemma 4 E2B — Ultra-Lightweight Local AI | gemma4.dev",
+      "url": "https://gemma4.dev/models/gemma-4-e2b",
+      "snippet": "Models /Gemma 4 E2B Gemma 4 E2B — Ultra-Lightweight Local AI Gemma 4 E2B packs 2.1 billion parameters into the smallest footprint in the Gemma 4 family. Text-only, 8K context, and capable of running entirely on CPU — making it the go-to model for edge devices, embedded systems, and ultra-low-latency applications."
+    },
+    {
+      "title": "Gemma 4: All Models Compared — 2B to 27B, Which to Pick (2026)",
+      "url": "https://www.aimadetools.com/blog/gemma-4-family-guide/",
+      "snippet": "Everything you need to know about Google&#x27;s Gemma 4 AI models — specs, benchmarks, hardware requirements, and which model to use for what. The definitive guide."
+    },
+    {
+      "title": "Gemma 4: How a 31B Model Beats 400B Rivals [2026]",
+      "url": "https://tech-insider.org/google-gemma-4-open-model-benchmarks-2026/",
+      "snippet": "Google Gemma 4 proves size isn&#x27;t everything. See how its 31B parameter model outperforms rivals 10x its size on key benchmarks."
+    },
+    {
+      "title": "GitHub - e2b-dev/E2B: Open-source, secure environment with real-world ...",
+      "url": "https://github.com/e2b-dev/e2b",
+      "snippet": "E2B is an open-source infrastructure that allows you to run AI-generated code in secure isolated sandboxes in the cloud. To start and control sandboxes, use our JavaScript SDK or Python SDK."
+    }
+  ]
+}

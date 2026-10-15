@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "ivrit-ai/zipformer2-66m-streaming-he",
+  "slug": "ivrit-ai-zipformer2-66m-streaming-he",
+  "author": "ivrit-ai",
+  "url": "https://huggingface.co/ivrit-ai/zipformer2-66m-streaming-he",
+  "created_at": "2026-10-14T19:20:46.000Z",
+  "updated_at": "2026-10-14T20:32:41.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "k2",
+  "languages": [
+    "he"
+  ],
+  "tags": [
+    "k2",
+    "onnx",
+    "speech",
+    "asr",
+    "hebrew",
+    "streaming",
+    "zipformer",
+    "transducer",
+    "icefall",
+    "automatic-speech-recognition",
+    "he",
+    "base_model:Zengwei/icefall-asr-librispeech-streaming-zipformer-2023-05-17",
+    "base_model:quantized:Zengwei/icefall-asr-librispeech-streaming-zipformer-2023-05-17",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 748968210,
+  "storage_human": "749 MB",
+  "base_model": "Zengwei/icefall-asr-librispeech-streaming-zipformer-2023-05-17",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "awesome-dsh-plugin/README.zh.md at main - GitHub",
+      "url": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/blob/main/README.zh.md",
+      "snippet": "wqy8593521/dsh-model-pro — llm-pi-ai 模型提供商的生命周期管理UI：提供商的 ... he-yufeng/dsh-tool-reading-map — 让agent 在动一个陌生仓库之前，先拿到一份 ..."
+    }
+  ]
+}

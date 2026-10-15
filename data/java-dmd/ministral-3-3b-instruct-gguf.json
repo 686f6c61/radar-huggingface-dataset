@@ -5,7 +5,7 @@
   "author": "Java-dmd",
   "url": "https://huggingface.co/Java-dmd/Ministral-3-3B-Instruct-GGUF",
   "created_at": "2026-10-14T00:14:53.000Z",
-  "updated_at": "2026-10-14T00:34:01.000Z",
+  "updated_at": "2026-10-14T22:02:06.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -13,15 +13,16 @@
   "languages": [],
   "tags": [
     "gguf",
+    "endpoints_compatible",
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 32,
   "trending_score": 0,
-  "parameters": null,
-  "parameters_human": null,
-  "storage_bytes": 3221045248,
-  "storage_human": "3.2 GB",
+  "parameters": 3445784576,
+  "parameters_human": "3.45B",
+  "storage_bytes": 5177293120,
+  "storage_human": "5.2 GB",
   "base_model": null,
   "formats": [
     "gguf"

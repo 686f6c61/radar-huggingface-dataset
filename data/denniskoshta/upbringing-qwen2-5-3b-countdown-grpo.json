@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "DennisKoshta/upbringing-qwen2.5-3b-countdown-grpo",
+  "slug": "denniskoshta-upbringing-qwen2-5-3b-countdown-grpo",
+  "author": "DennisKoshta",
+  "url": "https://huggingface.co/DennisKoshta/upbringing-qwen2.5-3b-countdown-grpo",
+  "created_at": "2026-10-15T00:40:48.000Z",
+  "updated_at": "2026-10-15T00:41:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "upbringing",
+    "post-training",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-3B",
+    "base_model:finetune:Qwen/Qwen2.5-3B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3397103616,
+  "parameters_human": "3.40B",
+  "storage_bytes": 6805679012,
+  "storage_human": "6.8 GB",
+  "base_model": "Qwen/Qwen2.5-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "philschmid/qwen-2.5-3b-r1-countdown · Hugging Face",
+      "url": "https://huggingface.co/philschmid/qwen-2.5-3b-r1-countdown",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "leon2k2k2k/qwen2.5-3b-countdown-grpo · Hugging Face",
+      "url": "https://huggingface.co/leon2k2k2k/qwen2.5-3b-countdown-grpo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "upbringing/PLAN.md at main · DennisKoshta/upbringing · GitHub",
+      "url": "https://github.com/DennisKoshta/upbringing/blob/main/PLAN.md",
+      "snippet": "Upbringing — plan The working title is Upbringing. The audience is technical people at frontier labs and AI startups. The project shows post-training understood, applied, and delivered: the methods have to be right, the results honestly reported, and the site enjoyable to use."
+    },
+    {
+      "title": "qwen-2.5-3b-r1-countdown huggingface.co api & philschmid qwen-2.5-3b-r1 ...",
+      "url": "https://www.toolify.ai/ai-model/philschmid-qwen-2-5-3b-r1-countdown",
+      "snippet": "Model Card for qwen-2.5-3b-r1-countdown a mini R1 experiments This model is a fine-tuned version of Qwen/Qwen2.5-3B-Instruct . It has been trained using TRL and GRPO on the Countdown game. If you want to learn how to replicate this model and reproduce your own Deepseek R1 \"aha\" moment, check out my blog post . Quick start ... Training procedure"
+    },
+    {
+      "title": "Run Qwen-2.5-3B-r1-countdown API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/binghe2727/qwen-2.5-3b-r1-countdown",
+      "snippet": "binghe2727/qwen-2.5-3b-r1-countdown is a 3.1 billion parameter instruction-tuned causal language model, fine-tuned from Qwen/Qwen2.5-3B-Instruct. It was trained using the TRL framework and incorporates the GRPO method, which is designed to enhance mathematical reasoning capabilities. This model is optimized for tasks requiring robust mathematical problem-solving and logical deduction ..."
+    }
+  ]
+}

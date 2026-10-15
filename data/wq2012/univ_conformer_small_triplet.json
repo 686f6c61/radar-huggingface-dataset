@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "wq2012/univ_conformer_small_triplet",
+  "slug": "wq2012-univ_conformer_small_triplet",
+  "author": "wq2012",
+  "url": "https://huggingface.co/wq2012/univ_conformer_small_triplet",
+  "created_at": "2026-10-15T01:37:56.000Z",
+  "updated_at": "2026-10-15T01:37:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "flaxspeaker",
+  "languages": [],
+  "tags": [
+    "flaxspeaker",
+    "jax",
+    "safetensors",
+    "audio",
+    "speaker-verification",
+    "speaker-recognition",
+    "speaker-embeddings",
+    "flax",
+    "conformer",
+    "triplet",
+    "cosine",
+    "audio-classification",
+    "dataset:librispeech_asr",
+    "dataset:cnceleb",
+    "dataset:voxceleb",
+    "arxiv:1710.10467",
+    "arxiv:2104.01989",
+    "arxiv:2202.12163",
+    "arxiv:2203.05642",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2029892,
+  "parameters_human": "2.0M",
+  "storage_bytes": 16254934,
+  "storage_human": "16 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Porno de Trío Japonés (585.826) @ Porzo.com",
+      "url": "https://www.porzo.com/es/category/japanese-threesome",
+      "snippet": "Descubre los últimos vídeos Trío Japonés en Porzo.com. Actualizado Continuamente y más de 1000 categorías.Read more"
+    },
+    {
+      "title": "Trio japonaise Vidéos Porno | xHamster",
+      "url": "https://fra.xhamster.com/search/trio+japonaise",
+      "snippet": "Regardez des vidéos pornos trio japonaise. Découvrez des tonnes de films XXX de avec des scènes de sexe en 2026 sur xHamster !"
+    },
+    {
+      "title": "Búsqueda 'trio japonesa' - XNXX.COM",
+      "url": "https://www.xnxx.es/search/trio+japonesa",
+      "snippet": "La caliente japonesa Maki Kamikura tuvo un trío mmf caliente. 3,3K 82% 15min - 1080p SCOUT69official Doble creampie para una …"
+    },
+    {
+      "title": "Films porno HD Trio Japonais - fr.anysex.com",
+      "url": "https://fr.anysex.com/tags/japanese-threesome/",
+      "snippet": "Plongez dans la plus grande collection de vidéos XXX Trio Japonais et comblez tous vos désirs coquins sur AnySex."
+    },
+    {
+      "title": "'japonaise trio' Search - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/?k=japonaise+trio",
+      "snippet": "7,112 japonaise trio FREE videos found on XVIDEOS for this search."
+    }
+  ]
+}

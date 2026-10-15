@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Rena-Tian/b1k-2026-task45-ft1",
+  "slug": "rena-tian-b1k-2026-task45-ft1",
+  "author": "Rena-Tian",
+  "url": "https://huggingface.co/Rena-Tian/b1k-2026-task45-ft1",
+  "created_at": "2026-10-14T22:36:56.000Z",
+  "updated_at": "2026-10-14T23:21:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "behavior-1k",
+    "pi0.5",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12645616764,
+  "storage_human": "12.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Renault France - Achat de voitures neuves - Site Officiel",
+      "url": "https://www.renault.fr/",
+      "snippet": "Bienvenue sur le site officiel de Renault France. Découvrez l'ensemble de la gamme : véhicules particuliers, électriques, hybrides et …"
+    },
+    {
+      "title": "Rena — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Rena",
+      "snippet": "Le MV Rena est le nom d'un porte-conteneurs échoué en octobre 2011 en Nouvelle-Zélande, causant une importante marée noire."
+    },
+    {
+      "title": "RENA Company - The global technological leader | RENA",
+      "url": "https://www.rena.com/en/company/",
+      "snippet": "RENA is the German acronym for R einraum- E quipment, N asschemie, and A utomatisierung (cleanroom equipment, wet …"
+    },
+    {
+      "title": "Prénom Rena : Origine - Caractère - Signification - Etymologie",
+      "url": "https://www.parents.fr/prenoms/rena-53142",
+      "snippet": "Les personnes portant le prénom Rena ont un lien avec les Rowena, et sont célébrées le 29 avril. C'est en 1920 que le prénom Rena …"
+    },
+    {
+      "title": "Home. [www.rena.com]",
+      "url": "https://www.rena.com/en/",
+      "snippet": "RENA provides innovative solutions for glass such as advanced cleaning as well as etching for combined laser & wet processing …"
+    }
+  ]
+}

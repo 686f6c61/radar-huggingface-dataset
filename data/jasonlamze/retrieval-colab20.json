@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jasonlamze/retrieval-colab20",
+  "slug": "jasonlamze-retrieval-colab20",
+  "author": "jasonlamze",
+  "url": "https://huggingface.co/jasonlamze/retrieval-colab20",
+  "created_at": "2026-10-14T20:48:06.000Z",
+  "updated_at": "2026-10-14T20:48:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Colab",
+      "url": "https://colab.research.google.com/github/pinecone-io/examples/blob/master/learn/generation/llm-field-guide/llama-2/llama-2-13b-retrievalqa.ipynb",
+      "snippet": "Google Colab Loading..."
+    },
+    {
+      "title": "retrieval_augmented_generation.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/KxSystems/kdbai-samples/blob/main/retrieval_augmented_generation/retrieval_augmented_generation.ipynb",
+      "snippet": "This example will demonstrate how to use an advanced prompt engineering technique called Retrieval Augmented Generation (RAG), with hands-on examples using Langchain, KDB.AI and various LLMs."
+    },
+    {
+      "title": "Build RAG Chatbot with Llamaindex, HNSWlib, Mistral Pixtral Large, and ...",
+      "url": "https://zilliz.com/tutorials/rag/llamaindex-and-hnswlib-and-mistral-pixtral-large-and-jina-colbert-v2",
+      "snippet": "Its efficiency in processing complex queries and real-time data makes it ideal for enterprise applications like AI-driven analytics, dynamic content generation, and multilingual customer support automation. Jina-ColBERT-v2: A dense passage retrieval model optimized for semantic search and document ranking."
+    },
+    {
+      "title": "Build RAG Chatbot with Llamaindex, HNSWlib, OpenAI GPT-o1, and jina ...",
+      "url": "https://zilliz.com/tutorials/rag/llamaindex-and-hnswlib-and-openai-gpt-o1-and-jina-colbert-v2",
+      "snippet": "Wow, what a journey we&#x27;ve taken together through the exciting world of Retrieval-Augmented Generation (RAG) systems! In this tutorial, we&#x27;ve seamlessly integrated a powerful framework, LlamaIndex; a super speedy vector database, HNSWlib; an intelligent large language model, OpenAI&#x27;s GPT-01; and a fantastic embedding model, jina-colbert-v2."
+    },
+    {
+      "title": "RAG-driven Generative AI, First Edition - GitHub",
+      "url": "https://github.com/Denis2054/RAG-Driven-Generative-AI",
+      "snippet": "This repository provides programs to build Retrieval Augmented Generation (RAG) code for Generative AI with LlamaIndex, Deep Lake, and Pinecone leveraging the power of OpenAI and Hugging Face model..."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "abhijit2k01/proton-demo",
+  "slug": "abhijit2k01-proton-demo",
+  "author": "abhijit2k01",
+  "url": "https://huggingface.co/abhijit2k01/proton-demo",
+  "created_at": "2026-10-14T22:46:54.000Z",
+  "updated_at": "2026-10-14T23:15:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "flair",
+  "languages": [],
+  "tags": [
+    "flair",
+    "onnx",
+    "ood-detection",
+    "medical",
+    "retina",
+    "proton",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 147671811,
+  "storage_human": "148 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "abhijit2k01 (Abhijit Das) - Hugging Face",
+      "url": "https://huggingface.co/abhijit2k01/datasets",
+      "snippet": "User profile of Abhijit Das on Hugging Face"
+    },
+    {
+      "title": "Proton Demo On Demand",
+      "url": "https://www.proton.ai/proton-demo-on-demand",
+      "snippet": "Get a full tour of Proton&#x27;s powerful CRM capabilities."
+    },
+    {
+      "title": "Proton.ai - AI Industry Cloud Platform for Distributors",
+      "url": "https://www.proton.ai/",
+      "snippet": "Proton is the AI industry cloud platform built just for distributors. Automate orders, enrich your catalog, grow eCommerce carts, and find sales opportunities."
+    },
+    {
+      "title": "Lumo: Privacy-first AI assistant where chats stay confidential",
+      "url": "https://lumo.proton.me/",
+      "snippet": "Meet Lumo, the zero-access encrypted AI assistant by Proton that does not track or record your conversations. Ask me anything — it&#x27;s confidential"
+    },
+    {
+      "title": "Lumo models and reasoning modes - Proton",
+      "url": "https://proton.me/support/lumo-models",
+      "snippet": "Lumo AI has three model types (Lumo 2.0 Lite, Lumo 2.0 Max, and Apertus 1.5) and two reasoning modes (Fast and Thinking). Understanding each model and mode helps you get the most useful responses for any type of task. In this article, we&#x27;ll cover: Lumo models explained Lumo reasoning modes explained Selecting the best model and mode for your task How to change Lumo&#x27;s mode or model Change ..."
+    }
+  ]
+}

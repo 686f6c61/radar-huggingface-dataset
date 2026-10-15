@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "squarefk/sam3-mirror",
+  "slug": "squarefk-sam3-mirror",
+  "author": "squarefk",
+  "url": "https://huggingface.co/squarefk/sam3-mirror",
+  "created_at": "2026-10-14T22:13:17.000Z",
+  "updated_at": "2026-10-14T22:13:29.000Z",
+  "license": "sam-license",
+  "license_family": "unknown",
+  "pipeline_tag": "mask-generation",
+  "library": "sam3",
+  "languages": [],
+  "tags": [
+    "sam3",
+    "image-segmentation",
+    "mirror",
+    "mask-generation",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3450062241,
+  "storage_human": "3.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Haricot de kulthi (horse gram) : 12 bienfaits et 2 recettes",
+      "url": "https://isha.sadhguru.org/fr/blog/article/haricot-de-kulthi-12-bienfaits-2-recettes",
+      "snippet": "Nov 11, 2023 · Découvrez le haricot de kulthi (horse gram ou grain de cheval) et ses bienfaits pour la santé. Avec deux recettes en …"
+    },
+    {
+      "title": "Haricot kulthi - Etsy France",
+      "url": "https://www.etsy.com/fr/market/haricot_kulthi?msockid=34e95176556f6af61204468454e86b5b",
+      "snippet": "Parcourez notre sélection de haricot kulthi : vous y trouverez les meilleures pièces uniques ou personnalisées de nos graines …"
+    },
+    {
+      "title": "Kulthi Dal (Horse Gram): Nutrition, Uses & Cooking Guide",
+      "url": "https://indianjadibooti.com/Jadistore/blog-headlines/indianjadibooti-kulthi-dal-gahat-dal-dolichos-biflorus-horse-gram-macrotyloma-uniflorum",
+      "snippet": "Quick Answer: Kulthi Dal, also called Gahat Dal or Horse Gram, is the edible pulse of Macrotyloma uniflorum. It is traditionally eaten …"
+    },
+    {
+      "title": "Horse Gram Kulthi Superfood: Benefits, Nutrition & Weight Loss",
+      "url": "https://www.madhusavara.com/kitchen-blog/horse-gram-kulthi-superfood-benefits-nutrition-weight-loss/",
+      "snippet": "Jun 18, 2026 · Horse Gram Kulthi Superfood (Macrotyloma uniflorum) is a protein-rich pulse widely consumed across India, …"
+    },
+    {
+      "title": "Macrotyloma uniflorum - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Macrotyloma_uniflorum",
+      "snippet": "Macrotyloma uniflorum (horsegram, also known as horse gram, kulthi bean, gahat, hurali, or Madras gram[2]) is a legume native to …"
+    }
+  ]
+}

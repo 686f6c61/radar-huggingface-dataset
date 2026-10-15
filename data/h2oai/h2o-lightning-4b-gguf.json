@@ -5,7 +5,7 @@
   "author": "h2oai",
   "url": "https://huggingface.co/h2oai/h2o-lightning-4b-gguf",
   "created_at": "2026-10-10T23:13:33.000Z",
-  "updated_at": "2026-10-13T12:56:16.000Z",
+  "updated_at": "2026-10-14T03:37:29.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -14,6 +14,8 @@
   "tags": [
     "llama-cpp",
     "gguf",
+    "jev",
+    "typed-decisions",
     "decision-model",
     "base_model:h2oai/h2o-lightning-4b",
     "base_model:quantized:h2oai/h2o-lightning-4b",
@@ -23,7 +25,7 @@
     "conversational"
   ],
   "likes": 10,
-  "downloads_30d": 1146,
+  "downloads_30d": 1603,
   "trending_score": 0,
   "parameters": 4205751296,
   "parameters_human": "4.21B",

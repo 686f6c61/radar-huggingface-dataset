@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "eli-aifund/microduck-aifund-dash",
+  "slug": "eli-aifund-microduck-aifund-dash",
+  "author": "eli-aifund",
+  "url": "https://huggingface.co/eli-aifund/microduck-aifund-dash",
+  "created_at": "2026-10-14T22:55:22.000Z",
+  "updated_at": "2026-10-14T22:55:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 793798,
+  "storage_human": "793798 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prénom Eli (garçon) : signification, origine, caractère, saint, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/eli/prenom-4189",
+      "snippet": "Quelle est la signification du prénom Eli ? Le prénom Eli est dérivé du prénom hébraïque \"Elijah\" (apparu à l'origine sous la forme …"
+    },
+    {
+      "title": "Éli (juge d'Israël) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/%C3%89li_(juge_d%27Isra%C3%ABl)",
+      "snippet": "Éli (ou Héli, Hébreu, עֵלִי « Montée ») est un personnage du Premier Livre de Samuel, qui fait partie de la Bible. Il est l'un des derniers …"
+    },
+    {
+      "title": "Eli (film, 2019) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Eli_(film,_2019)",
+      "snippet": "Atteint d'une maladie rare, un jeune garçon, Eli, et ses parents, Rose et Paul, s'installent dans un établissement isolé, pour subir un …"
+    },
+    {
+      "title": "Prénom Éli : Origine - Caractère - Signification - Etymologie",
+      "url": "https://www.parents.fr/prenoms/eli-39503",
+      "snippet": "On compte, parmi les personnages célèbres, Eli Manning (footballeur américain, né en 1981), Eli Alaluf (personnalité politique, né en …"
+    },
+    {
+      "title": "Eli - Des campagnes que vos équipes adorent",
+      "url": "https://www.eli.app/fr",
+      "snippet": "Une compétence à développer, un sujet à faire connaître, une actualité : Eli transforme n'importe quel message en défis d'équipe de …"
+    }
+  ]
+}

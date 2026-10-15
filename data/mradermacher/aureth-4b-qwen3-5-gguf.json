@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Aureth-4B-Qwen3.5-GGUF",
+  "slug": "mradermacher-aureth-4b-qwen3-5-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Aureth-4B-Qwen3.5-GGUF",
+  "created_at": "2026-04-24T11:29:28.000Z",
+  "updated_at": "2026-10-14T22:43:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama.cpp",
+    "unsloth",
+    "vision-language-model",
+    "en",
+    "dataset:NousResearch/Hermes-3-Dataset",
+    "dataset:OusiaResearch/Aureth-Corpus-Hermes4.3-Generated",
+    "dataset:NousResearch/hermes-function-calling-v1",
+    "base_model:OusiaResearch/Aureth-4B-Qwen3.5",
+    "base_model:quantized:OusiaResearch/Aureth-4B-Qwen3.5",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 284,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 39945568960,
+  "storage_human": "39.9 GB",
+  "base_model": "OusiaResearch/Aureth-4B-Qwen3.5",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Aureth-4B-Qwen3.5-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Aureth-4B-Qwen3.5-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/Aureth-4B-Qwen3.5-Heretic-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Aureth-4B-Qwen3.5-Heretic-GGUF",
+      "snippet": "Instructions to use mradermacher/Aureth-4B-Qwen3.5-Heretic-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 31 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "Small Language Model Leaderboard: Best Under 10B",
+      "url": "https://awesomeagents.ai/leaderboards/small-language-model-leaderboard/",
+      "snippet": "Small Language Model Leaderboard: Best Under 10B Rankings of the best small language models under 10 billion parameters, comparing Phi-4, Gemma 3, Qwen 3.5, and more across key benchmarks."
+    },
+    {
+      "title": "Best Uncensored Local LLMs by VRAM Tier (2026) | InsiderLLM",
+      "url": "https://insiderllm.com/guides/best-uncensored-local-llms/",
+      "snippet": "There&#x27;s also a coding-specific variant worth knowing about: huihui-ai/Huihui-Qwen3-Coder-Next-abliterated — an abliterated coder variant for people who specifically want uncensored code assistance. 48GB+ VRAM — Dual GPU / pro tier This tier means dual 3090s, a 4090 + 3090, or workstation cards."
+    }
+  ]
+}

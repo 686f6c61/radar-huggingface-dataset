@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Donghyun1228/pi05-libero-view-large-idm-rollout-position-difference-20261015-shuffled",
+  "slug": "donghyun1228-pi05-libero-view-large-idm-rollout-position-difference-20261015-shuffled",
+  "author": "Donghyun1228",
+  "url": "https://huggingface.co/Donghyun1228/pi05-libero-view-large-idm-rollout-position-difference-20261015-shuffled",
+  "created_at": "2026-10-14T21:20:31.000Z",
+  "updated_at": "2026-10-14T21:21:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "libero",
+    "pi05",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5907167400,
+  "storage_human": "5.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Donghyun1228/pi05-libero-view-large-idm-coverage-20261015-continue ...",
+      "url": "https://huggingface.co/Donghyun1228/pi05-libero-view-large-idm-coverage-20261015-continue",
+      "snippet": "Bounded IDM coverage comparison: continue_old_idm 200-update continuation from the accepted manual-LR view baseline raw999, with original Adam/EMA restored and vision1/expert0.1 post-Adam scaling."
+    },
+    {
+      "title": "Donghyun1228/pi05-libero-source-free-split-vision-view-large-1000 ...",
+      "url": "https://huggingface.co/Donghyun1228/pi05-libero-source-free-split-vision-view-large-1000-20261010",
+      "snippet": "All 51 leaves of the target vision-only IDM model are preserved exactly. Its adapted base-camera encoder remains active, while wrist images use a separate wrist_img encoder restored from the source vision weights and cast to bfloat16."
+    },
+    {
+      "title": "pi05_libero_base · Models",
+      "url": "https://www.modelscope.cn/models/lerobot/pi05_libero_base",
+      "snippet": "π₀.₅ (Pi05) (LeRobot) π₀.₅ is a Vision-Language-Action (VLA) model with open-world generalization from Physical Intelligence, co-trained on robot demonstrations and large-scale multimodal data to execute long-horizon tasks in unseen real-world environments. Note: This model currently supports only the flow-matching action head for π₀.₅ training and inference. Other components ..."
+    },
+    {
+      "title": "WIPO - Search International and National Patent Collections",
+      "url": "https://patentscope2.wipo.int/",
+      "snippet": "This patent search tool allows you not only to search the PCT database of about 2 million International Applications but also the worldwide patent collections. This search facility features: flexible search syntax; automatic word stemming and relevance ranking; as well as graphical results."
+    },
+    {
+      "title": "pi05_libero_finetuned · Models",
+      "url": "https://www.modelscope.cn/models/lerobot/pi05_libero_finetuned",
+      "snippet": "π₀.₅ (Pi05 Libero) (LeRobot) π₀.₅ is a Vision-Language-Action (VLA) model with open-world generalization from Physical Intelligence, co-trained on robot demonstrations and large-scale multimodal data to execute long-horizon tasks in unseen real-world environments. Checkpoint trained and evaluated on LIBERO tasks Note: This model currently supports only the flow-matching action head ..."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "atakans/Qwen3.8-27B-NVFP4-BF16head",
+  "slug": "atakans-qwen3-8-27b-nvfp4-bf16head",
+  "author": "atakans",
+  "url": "https://huggingface.co/atakans/Qwen3.8-27B-NVFP4-BF16head",
+  "created_at": "2026-10-14T19:05:24.000Z",
+  "updated_at": "2026-10-14T19:35:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen3_5",
+    "nvfp4",
+    "modelopt",
+    "quantized",
+    "blackwell",
+    "dgx-spark",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18800348400,
+  "parameters_human": "18.80B",
+  "storage_bytes": 23762141664,
+  "storage_human": "23.8 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Most Famous Logos With a Butterfly",
+      "url": "https://1000logos.net/most-famous-logos-with-a-butterfly/",
+      "snippet": "Aug 23, 2024 · Explore the most famous logos featuring butterfly motifs, blending elegance and symbolism. Discover how brands …"
+    },
+    {
+      "title": "Most Famous Logos with a Butterfly",
+      "url": "https://logos-world.net/most-famous-logos-with-a-butterfly/",
+      "snippet": "2 days ago · In today’s article, we’ve collected the most striking examples of how the butterfly on a logo can take on different …"
+    },
+    {
+      "title": "7+ Best Butterfly Logo Ideas from Real Companies",
+      "url": "https://www.logofav.com/style/butterfly-logo-ideas",
+      "snippet": "Find stunning butterfly logo examples for your brand. Explore creative butterfly designs for inspiration and create a unique brand …"
+    },
+    {
+      "title": "What the Logo? - Find logos by searching for colors, text or shapes",
+      "url": "https://whatthelogo.com/",
+      "snippet": "\"What the Logo?\" is a huge logo database containing hundreds of thousands of logos from brands, clubs, associations and …"
+    },
+    {
+      "title": "7 Brands Using Butterfly Logos: The Hidden Meanings REVEALED",
+      "url": "https://babymoms.blog/brands-butterfly-logos-hidden-meanings",
+      "snippet": "Oct 9, 2025 · In this deep dive, we'll unfurl the wings of brand identity, exploring seven distinct brands that have ingeniously …"
+    }
+  ]
+}

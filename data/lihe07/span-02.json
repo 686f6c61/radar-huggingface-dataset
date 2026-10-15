@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "lihe07/span-02",
+  "slug": "lihe07-span-02",
+  "author": "lihe07",
+  "url": "https://huggingface.co/lihe07/span-02",
+  "created_at": "2026-10-13T21:23:54.000Z",
+  "updated_at": "2026-10-15T00:57:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "decision-index",
+    "typed-outputs",
+    "nvfp4",
+    "fp8",
+    "quantized",
+    "moe",
+    "custom-engine",
+    "image-text-to-text",
+    "conversational",
+    "base_model:google/gemma-4-26B-A4B-it",
+    "base_model:finetune:google/gemma-4-26B-A4B-it",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": 15815134090,
+  "parameters_human": "15.82B",
+  "storage_bytes": 16434246278,
+  "storage_human": "16.4 GB",
+  "base_model": "google/gemma-4-26B-A4B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lihe07/span-02 · Hugging Face",
+      "url": "https://huggingface.co/lihe07/span-02",
+      "snippet": "span-02 is a decision model: it answers typed questions about a state (JSON or text, plus up to 4 images) with a full probability distribution over the options, in the Decision Index /v1/systemone wire format. It is a fine-tune of Gemma 4 26B-A4B (mixture of experts, about 4B active parameters per ..."
+    },
+    {
+      "title": "lihe07 (Harvey Li) · GitHub",
+      "url": "https://github.com/lihe07",
+      "snippet": "GATech &#x27;29 CS | ML, RE and Web. lihe07 has 72 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "lihe07 (He Li) - Hugging Face",
+      "url": "https://huggingface.co/lihe07/models",
+      "snippet": "lihe07 Follow isospin0&#x27;s profile picture 1 follower · 1 following https://harvey-l.com HeLi07784212 lihe07"
+    },
+    {
+      "title": "lihe07 (Harvey Li) / Projects · GitHub",
+      "url": "https://github.com/lihe07?tab=projects",
+      "snippet": "GATech &#x27;29 CS | ML, RE and Web. lihe07 has 70 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "lihe - GitLab",
+      "url": "https://gitlab.com/lihe07",
+      "snippet": "lihe - GitLab ... GitLab.com"
+    }
+  ]
+}

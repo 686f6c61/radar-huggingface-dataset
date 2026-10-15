@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "Jiangnanneurolab/generation-demo",
+  "slug": "jiangnanneurolab-generation-demo",
+  "author": "Jiangnanneurolab",
+  "url": "https://huggingface.co/Jiangnanneurolab/generation-demo",
+  "created_at": "2026-10-14T23:41:45.000Z",
+  "updated_at": "2026-10-14T23:41:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "最新网址http://youjizz.tmphp.com",
+      "url": "https://www.douban.com/note/502249424/",
+      "snippet": "Jun 3, 2015 · http://youjizz.tmphp.com"
+    },
+    {
+      "title": "国外情色电影 - 豆瓣",
+      "url": "https://www.douban.com/doulist/121526068/?sort=time&sub_type=1",
+      "snippet": "Dec 2, 2019 · 导演: 亚历克斯·德·阮泽 主演: 琳恩·丽梅 / 特蕾西·亚当斯 / 马可·华莱士 类型: 喜剧 / 情色 制片国家/地区: 美国 年份: 1989"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "mradermacher/K2-Horizon-32B-heretic-GGUF",
+  "slug": "mradermacher-k2-horizon-32b-heretic-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/K2-Horizon-32B-heretic-GGUF",
+  "created_at": "2026-10-14T13:38:21.000Z",
+  "updated_at": "2026-10-14T23:46:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "k2_horizon",
+    "32b",
+    "dense",
+    "uncensored",
+    "refusal-removed",
+    "heretic",
+    "bf16",
+    "custom_code",
+    "en",
+    "multilingual",
+    "base_model:soyaakinohara/K2-Horizon-32B-heretic",
+    "base_model:quantized:soyaakinohara/K2-Horizon-32B-heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34779304960,
+  "parameters_human": "34.78B",
+  "storage_bytes": 238837671936,
+  "storage_human": "238.8 GB",
+  "base_model": "soyaakinohara/K2-Horizon-32B-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/K2-Horizon-32B-heretic-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/K2-Horizon-32B-heretic-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "soyaakinohara/K2-Horizon-32B-heretic-gguf · Hugging Face",
+      "url": "https://huggingface.co/soyaakinohara/K2-Horizon-32B-heretic-gguf",
+      "snippet": "soyaakinohara / K2-Horizon-32B-heretic-gguf like 1 Text Generation GGUF English multilingual llama.cpp k2_horizon 32b uncensored refusal-removed heretic quantized bf16 q8_0 q6_k q4_k_m q2_k conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "K2 Horizon: Open-Source AI Models for Every Scale | IFM",
+      "url": "https://ifm.ai/k2/",
+      "snippet": "Meet K2 Horizon: The largest fully open-source model launch in AI history, spanning six models that give you greater choice in capabilities, scale and deployment options, along with open access to training code and data."
+    },
+    {
+      "title": "K2-BLACKWELL/recipes/k2-horizon-32b-gguf at main · abtraore ... - GitHub",
+      "url": "https://github.com/abtraore/K2-BLACKWELL/tree/main/recipes/k2-horizon-32b-gguf",
+      "snippet": "The vLLM recipe (../k2-horizon-32b-fp8/) is the faster way to run the 32B on two cards (66 tok/s on IFM&#x27;s FP8 export vs 39-42 here on Q8_0, half the bytes per token); this lane exists for people who want a GGUF."
+    },
+    {
+      "title": "K2 Horizon 32B - 524k context, open source | LLM Reference",
+      "url": "https://www.llmreference.com/model/k2-horizon-32b",
+      "snippet": "K2-Horizon-32B is the large dense K2 Horizon decoder-only model: 32B parameters, 512K native context, and Apache 2.0 weights on Hugging Face (IFM/K2-Horizon-32B). The published checkpoint is Stage 1 of final training; IFM notes Stage 2 results are forthcoming while releasing intermediate checkpoints openly."
+    }
+  ]
+}

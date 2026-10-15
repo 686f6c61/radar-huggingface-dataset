@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "sreetz-nv/so101_cosmos10_sim75_vision_h32_b32_20k_20261013",
+  "slug": "sreetz-nv-so101_cosmos10_sim75_vision_h32_b32_20k_20261013",
+  "author": "sreetz-nv",
+  "url": "https://huggingface.co/sreetz-nv/so101_cosmos10_sim75_vision_h32_b32_20k_20261013",
+  "created_at": "2026-10-14T23:52:03.000Z",
+  "updated_at": "2026-10-14T23:53:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "so101",
+    "groot",
+    "co-training",
+    "dataset:sreetz-nv/so101_cosmos10_sim75_20261013",
+    "dataset:sreetz-nv/so101_sim_manual_perception_newton_20261008",
+    "dataset:bdelfino/so101_vials_dr_sts_250ep_20261005_CosmosTransfer",
+    "base_model:nvidia/GR00T-N1.7-3B",
+    "base_model:finetune:nvidia/GR00T-N1.7-3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576219216,
+  "storage_human": "12.6 GB",
+  "base_model": "nvidia/GR00T-N1.7-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "so101_real10_sim75_vision_h16_b64_20k_20261011 - Hugging Face",
+      "url": "https://huggingface.co/sreetz-nv/so101_real10_sim75_vision_h16_b64_20k_20261011",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sreetz-nv (Shane Reetz) - Hugging Face",
+      "url": "https://huggingface.co/sreetz-nv",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 28 minutes ago ... published a model about 1 hour ago"
+    },
+    {
+      "title": "Datasets and Models — Train an SO-101 Robot From Sim-to-Real With ...",
+      "url": "https://docs.nvidia.com/learning/physical-ai/sim-to-real-so-101/latest/datasets-and-models.html",
+      "snippet": "Datasets and Models # Pre-collected datasets and pre-trained model checkpoints used in this course, hosted on Hugging Face. Datasets #"
+    },
+    {
+      "title": "Train an SO-101 Robot From Sim-to-Real With NVIDIA Isaac",
+      "url": "https://docs.nvidia.com/learning/physical-ai/sim-to-real-so-101/latest/index.html",
+      "snippet": "You&#x27;ll train and deploy a vision-language-action (VLA) model to perform unstructured pick-and-place of centrifuge vials into a rack using an SO-101 robot arm - first in sim, where we can iterate quickly and validate behavior, then in reality."
+    },
+    {
+      "title": "tuul-ai/so101_sim | DeepWiki",
+      "url": "https://deepwiki.com/tuul-ai/so101_sim",
+      "snippet": "Overview Relevant source files Purpose and Scope SO101_Sim is a comprehensive Python library that provides simulation environments for the SO100/SO101 robotic arm, designed for robot learning research and evaluation. The system integrates MuJoCo physics simulation with multi-modal observation collection, automated dataset generation, and seamless integration with machine learning frameworks ..."
+    }
+  ]
+}

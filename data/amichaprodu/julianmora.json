@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "amichaprodu/JULIANMORA",
+  "slug": "amichaprodu-julianmora",
+  "author": "amichaprodu",
+  "url": "https://huggingface.co/amichaprodu/JULIANMORA",
+  "created_at": "2026-10-14T23:04:32.000Z",
+  "updated_at": "2026-10-14T23:04:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:black-forest-labs/FLUX.1-dev",
+    "base_model:adapter:black-forest-labs/FLUX.1-dev",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 172673026,
+  "storage_human": "173 MB",
+  "base_model": "black-forest-labs/FLUX.1-dev",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "Realistic AI Model Generator for Image & Video | Anyloops",
+      "url": "https://www.anyloops.ai/",
+      "snippet": "Anyloops lets you create photorealistic AI characters called AI Models, give each one a reusable visual identity, and generate consistent images and videos."
+    },
+    {
+      "title": "Julian C | AI Art & Video",
+      "url": "https://julianc.net/",
+      "snippet": "AI Creator & Indie Developer · @Julianc_AI Welcome to my digital world One person, three platforms, and a constant stream of AI art and video. This is where it all lives."
+    },
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    },
+    {
+      "title": "Juliana IL Megami Paradise AI LoRA Model | PixAI",
+      "url": "https://pixai.art/en/model/1941379529853858296",
+      "snippet": "Juliana IL Megami Paradise is an AI LoRA by Malcolm_S on PixAI. Try it free."
+    }
+  ]
+}

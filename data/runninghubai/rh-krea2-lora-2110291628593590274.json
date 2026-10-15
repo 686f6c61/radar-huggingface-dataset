@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-krea2-lora-2110291628593590274",
+  "slug": "runninghubai-rh-krea2-lora-2110291628593590274",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-krea2-lora-2110291628593590274",
+  "created_at": "2026-10-15T01:29:01.000Z",
+  "updated_at": "2026-10-15T01:30:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "image-text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 228673376,
+  "storage_human": "229 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RunningHubAI/rh-krea2-lora-2105958062879252481 · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-krea2-lora-2105958062879252481",
+      "snippet": "RunningHubAI / rh-krea2-lora-2105958062879252481 Like 0 Image-Text-to-Image comfyui lora Model card FilesFiles and versions xet Community Copy to bucket new rh-krea2-lora Description About this model Files License Training at RunningHub"
+    },
+    {
+      "title": "RunningHubAI/rh-krea2lora-lora · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-krea2lora-lora",
+      "snippet": "Description ... About this model Enter the invitation code rh-v1300 to get 1000 RH Coins This repository provides rh-krea2lora-lora weight files. You can load them on RunningHub. Finetuned from: krea2 Trigger words: woman"
+    },
+    {
+      "title": "RunningHubAI/rh-krea2-lora-2087083011985059841 · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-krea2-lora-2087083011985059841",
+      "snippet": "rh-krea2-lora Description ... About this model Mature This repository provides rh-krea2-lora weight files. You can load them on RunningHub."
+    },
+    {
+      "title": "RunningHubAI/rh-krea2-lora-2094576703594139649 · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-krea2-lora-2094576703594139649",
+      "snippet": "RunningHubAI / rh-krea2-lora-2094576703594139649 Like 0 Image-Text-to-Image comfyui lora Model card FilesFiles and versions xet Community Copy to bucket new rh-krea2-lora Description About this model Files License Training at RunningHub"
+    },
+    {
+      "title": "README.md · RunningHubAI/rh-krea2-rella-style-lora at main",
+      "url": "https://huggingface.co/RunningHubAI/rh-krea2-rella-style-lora/blob/main/README.md",
+      "snippet": "RunningHubAI / rh-krea2-rella-style-lora Like 0 Image-Text-to-Image comfyui lora Model card FilesFiles and versions xet Community Copy to bucket new main rh-krea2-rella-style-lora /README.md RunningHubAI Upload RunningHub model 2073674937189093378 b4e75d9 verified17 days ago preview code | Download"
+    }
+  ]
+}

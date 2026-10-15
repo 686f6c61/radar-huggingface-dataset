@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "tobiasbecktes/side-classification",
+  "slug": "tobiasbecktes-side-classification",
+  "author": "tobiasbecktes",
+  "url": "https://huggingface.co/tobiasbecktes/side-classification",
+  "created_at": "2026-10-14T20:54:30.000Z",
+  "updated_at": "2026-10-14T20:54:34.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tobiasbecktes (Tobias) - Hugging Face",
+      "url": "https://huggingface.co/tobiasbecktes/models",
+      "snippet": "User profile of Tobias on Hugging Face"
+    },
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "Sanders calls for criminal prosecution of AI CEOs after model ... - MSN",
+      "url": "https://www.msn.com/en-us/news/other/sanders-calls-for-criminal-prosecution-of-ai-ceos-after-model-submitted-a-false-homicide-tip-to-police/ar-AA2dY50D",
+      "snippet": "Two-time presidential candidate Bernie Sanders made the statement after news emerged that an Anthropic AI model sent the Philadelphia Police Department a fake tip about an unsolved murder case."
+    },
+    {
+      "title": "Security Researchers Hacked Into OpenAI Using Anthropic&#x27;s Claude",
+      "url": "https://www.forbes.com/sites/siladityaray/2026/09/18/security-researchers-hacked-into-openai-using-anthropics-claude/",
+      "snippet": "OpenAI paid the researchers a $6,500 bug bounty, but the incident once again highlights the growing cybersecurity threats posed by advanced AI agents."
+    },
+    {
+      "title": "Text Classification Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=text-classification",
+      "snippet": "Active filters: text-classification. Clear all. convaiinnovations/laya. Text Classification • 0.4B • Updated 9 days ago • 5.04k. SupersonicLabs/Julia-1"
+    }
+  ]
+}

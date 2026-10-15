@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "h0ffmann/marola-gpt",
+  "slug": "h0ffmann-marola-gpt",
+  "author": "h0ffmann",
+  "url": "https://huggingface.co/h0ffmann/marola-gpt",
+  "created_at": "2026-10-15T00:43:20.000Z",
+  "updated_at": "2026-10-15T00:43:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "marola",
+    "nanogpt",
+    "character-level",
+    "small-language-model",
+    "educational",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3271412,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "h0ffmann (Matheus Hoffmann Fernandes Santos) - Hugging Face",
+      "url": "https://huggingface.co/h0ffmann/models",
+      "snippet": "game theory, llm, causal ai, sea Recent Activity updated a modelabout 4 hours ago h0ffmann/marola-sea-tiny-GGUF published a modelabout 4 hours ago h0ffmann/marola-sea-tiny-GGUF updated a collectionover 2 years ago playground View all activity"
+    },
+    {
+      "title": "GitHub - Cognitive-AI-Systems/marl-gpt: [AAMAS-2026] MARL-GPT: This ...",
+      "url": "https://github.com/Cognitive-AI-Systems/marl-gpt",
+      "snippet": "Official implementation of MARL-GPT, a transformer-based foundation model for multi-agent reinforcement learning. This repository provides code for offline training on expert trajectories, model evaluation, and online fine-tuning with PPO. MARL-GPT demonstrates that a single transformer-based model can achieve competitive performance across diverse MARL environments (including StarCraft Multi ..."
+    },
+    {
+      "title": "MARL-GPT: Foundation Model for Multi-Agent Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2604.05943",
+      "snippet": "Recent advances in multi-agent reinforcement learning (MARL) have demonstrated success in numerous challenging domains and environments, but typically require specialized models for each task. In this work, we propose a coherent methodology that makes it possible for a single GPT-based model to learn and perform well across diverse MARL environments and tasks, including StarCraft Multi-Agent ..."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Model Leaderboard (Live, 2026): Local + Frontier Ranked",
+      "url": "https://localaimaster.com/tools/ai-model-leaderboard",
+      "snippet": "Live AI model ranking — 30 local + frontier models scored on SWE-Bench, MMLU, ARC-AGI, AIME, HumanEval. Claude Opus 4.7 leads; DeepSeek V4 tops local. Free, sortable."
+    }
+  ]
+}

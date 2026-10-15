@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "damopierog/nanochat-depth-sweep",
+  "slug": "damopierog-nanochat-depth-sweep",
+  "author": "damopierog",
+  "url": "https://huggingface.co/damopierog/nanochat-depth-sweep",
+  "created_at": "2026-10-09T00:36:37.000Z",
+  "updated_at": "2026-10-14T22:32:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "nanochat",
+    "gpt",
+    "depth-sweep",
+    "interpretability",
+    "text-generation",
+    "en",
+    "dataset:karpathy/climbmix-400b-shuffle",
+    "dataset:HuggingFaceTB/smol-smoltalk",
+    "dataset:cais/mmlu",
+    "dataset:openai/gsm8k",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23459635453,
+  "storage_human": "23.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "damopierog/nanochat-depth-sweep · Hugging Face",
+      "url": "https://huggingface.co/damopierog/nanochat-depth-sweep",
+      "snippet": "A family of small GPT language models that differ only in depth (number of transformer blocks), trained with nanochat for a WPI Major Qualifying Project on deep learning and dynamical systems. The project treats the residual stream (the hidden state passed from block to block) as a trajectory and ..."
+    },
+    {
+      "title": "damopierog/nanochat-depth-sweep at main - Hugging Face",
+      "url": "https://huggingface.co/damopierog/nanochat-depth-sweep/tree/main",
+      "snippet": "Like 0 Text Generation 4 datasets English nanochat gpt depth-sweep interpretability Model card FilesFiles and versions xet Community Copy to bucket new main nanochat-depth-sweep 12.1 GB Ctrl+K Ctrl+K 1 contributor History:3 commits damopierog Add model card e28bdbf verifiedabout 7 hours ago base_checkpointsAdd files using upload-large-folder ..."
+    },
+    {
+      "title": "Nanochat Depth Sweep - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/damopierog/nanochat-depth-sweep",
+      "snippet": "Registry entry for model Nanochat Depth Sweep; source metadata pending."
+    },
+    {
+      "title": "GitHub - marcinbogdanski/nanochat-repro: My reproduction of the ...",
+      "url": "https://github.com/marcinbogdanski/nanochat-repro",
+      "snippet": "With small patch to Andrej nanochat, it is possible to match some of the runs bit-for-bit with Andrej nanochat. This was the main correctness test when developing this repo. To more deeply internalize core concepts I wrote most of the code by hand. I used AI agents as educational resource and for code review, but not to edit code."
+    },
+    {
+      "title": "nanochat: Open-Source ChatGPT Alternative for Training Your Own LLM",
+      "url": "https://www.scriptbyai.com/nanochat-open-chatgpt-alternative/",
+      "snippet": "Train a small language model, inspect the code behind every major stage, and measure its results against a visible GPT-2 target. nanochat is built for LLM learning and experiments. nanochat is an open-source project for training a small language model from scratch, then talking to the trained model from your own machine."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AlinaGonch/qwen3-14b-squad-ratio-0.00-seed-42-r4",
+  "slug": "alinagonch-qwen3-14b-squad-ratio-0-00-seed-42-r4",
+  "author": "AlinaGonch",
+  "url": "https://huggingface.co/AlinaGonch/qwen3-14b-squad-ratio-0.00-seed-42-r4",
+  "created_at": "2026-10-14T19:39:16.000Z",
+  "updated_at": "2026-10-14T19:39:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 75721922,
+  "storage_human": "76 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alpha Mini Direct Drive Wheel base - SIMAGIC Official Store",
+      "url": "https://simagic.com/products/alpha-mini",
+      "snippet": "10Nm Entry level Direct Drive Wheelbase. -Your Direct Drive Starts Here."
+    },
+    {
+      "title": "Accessories Power Supply - Simagic",
+      "url": "https://simagic.com/products/p-aps",
+      "snippet": "Tax-Included Countries List. Shipping calculated at checkout. Sign up to hear the latest from us."
+    },
+    {
+      "title": "Support d'alimentation Alpha Mini SIMAGIC pour Sim Rig - Etsy",
+      "url": "https://www.etsy.com/fr/listing/4353332866/support-dalimentation-alpha-mini-simagic?msockid=25bec7563e2a61a22d96d0a43f516083",
+      "snippet": "--------------- Jeu de 2 supports pour monter votre bloc d'alimentation pour les empattements Simagic Alpha et Alpha Mini Elles sont …"
+    },
+    {
+      "title": "Alpha mini simagic - Etsy France",
+      "url": "https://www.etsy.com/fr/market/alpha_mini_simagic?msockid=25bec7563e2a61a22d96d0a43f516083",
+      "snippet": "Parcourez notre sélection de alpha mini simagic : vous y trouverez les meilleures pièces uniques ou personnalisées de nos boutiques."
+    },
+    {
+      "title": "Supports Alimentation Simagic | The French Simracer",
+      "url": "https://thefrenchsimracer.com/products/power-supply-mounting-brackets-for-simagic-bases",
+      "snippet": "Description du produit : Gardez vos câbles organisés et votre configuration bien rangée avec ces supports de montage …"
+    }
+  ]
+}

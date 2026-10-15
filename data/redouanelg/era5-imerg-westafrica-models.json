@@ -5,7 +5,7 @@
   "author": "redouanelg",
   "url": "https://huggingface.co/redouanelg/era5-imerg-westafrica-models",
   "created_at": "2026-10-13T20:25:45.000Z",
-  "updated_at": "2026-10-13T21:58:25.000Z",
+  "updated_at": "2026-10-14T07:53:56.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -21,6 +21,7 @@
     "era5",
     "imerg",
     "dataset:redouanelg/era5-imerg-westafrica-daily",
+    "arxiv:2610.16816",
     "license:cc-by-4.0",
     "region:us"
   ],

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "nikimori/MiniCPM5-1B-Base-8bit",
+  "slug": "nikimori-minicpm5-1b-base-8bit",
+  "author": "nikimori",
+  "url": "https://huggingface.co/nikimori/MiniCPM5-1B-Base-8bit",
+  "created_at": "2026-10-14T23:43:42.000Z",
+  "updated_at": "2026-10-14T23:43:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "llama",
+    "minicpm",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:openbmb/MiniCPM5-1B-Base",
+    "base_model:quantized:openbmb/MiniCPM5-1B-Base",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1080632832,
+  "parameters_human": "1.08B",
+  "storage_bytes": 1148305460,
+  "storage_human": "1.1 GB",
+  "base_model": "openbmb/MiniCPM5-1B-Base",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openbmb/MiniCPM5-1B · Hugging Face",
+      "url": "https://huggingface.co/openbmb/MiniCPM5-1B",
+      "snippet": "MiniCPM5-1B is a language model that generates content based on learned statistical patterns from training data. It may produce inaccurate, biased, or unsafe outputs, and generated content should be reviewed and verified before use in high-stakes settings."
+    },
+    {
+      "title": "openbmb/MiniCPM5-1B-Base · Hugging Face",
+      "url": "https://huggingface.co/openbmb/MiniCPM5-1B-Base",
+      "snippet": "MiniCPM5-1B is a language model that generates content based on learned statistical patterns from training data. It may produce inaccurate, biased, or unsafe outputs, and generated content should be reviewed and verified before use in high-stakes settings."
+    },
+    {
+      "title": "openbmb/MiniCPM5-1B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/openbmb/MiniCPM5-1B",
+      "snippet": "Overview MiniCPM5-1B is the first checkpoint in OpenBMB&#x27;s MiniCPM5 series — a dense 1B model built for on-device and resource-constrained deployment, reaching 1B-class open-source SOTA on agentic tool use, code generation, and difficult reasoning."
+    },
+    {
+      "title": "MiniCPM 5.0 (MiniCPM5-1B) | OpenBMB/MiniCPM | DeepWiki",
+      "url": "https://deepwiki.com/OpenBMB/MiniCPM/2.4-minicpm-5.0-(minicpm5-1b)",
+      "snippet": "MiniCPM5-1B is the flagship 1B-parameter dense Transformer model of the MiniCPM 5.0 series, specifically engineered for on-device deployment and resource-constrained environments $1."
+    },
+    {
+      "title": "GitHub - bryanwills/MiniCPM-ai: MiniCPM5-1B: A SOTA 1B on-device LLM ...",
+      "url": "https://github.com/bryanwills/MiniCPM-ai",
+      "snippet": "Highlights We are releasing MiniCPM5-1B, the first model in the MiniCPM5 series. It is a dense 1B Transformer built for on-device, local deployment, and resource-constrained scenarios, reaching 1B-class open-source SOTA."
+    }
+  ]
+}

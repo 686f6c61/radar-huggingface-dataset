@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "AlexLEEeeee/connectailab-rl-alvis-v4",
+  "slug": "alexleeeeee-connectailab-rl-alvis-v4",
+  "author": "AlexLEEeeee",
+  "url": "https://huggingface.co/AlexLEEeeee/connectailab-rl-alvis-v4",
+  "created_at": "2026-10-14T23:57:17.000Z",
+  "updated_at": "2026-10-14T23:57:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "peft",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "reinforcement-learning",
+    "deep-reinforcement-learning",
+    "grpo",
+    "decision-making",
+    "gymnasium",
+    "connect-tycoon",
+    "connect-ai-lab",
+    "connectailab",
+    "lora",
+    "qwen3.5",
+    "ko",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 41684315,
+  "storage_human": "42 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AlexLEEeeee/connectailab-rl-alvis-v2-teacher · Hugging Face",
+      "url": "https://huggingface.co/AlexLEEeeee/connectailab-rl-alvis-v2-teacher",
+      "snippet": "AlexLEEeeee / connectailab-rl-alvis-v2-teacher Like 0 Reinforcement Learning jev-style Korean numpy connect-ai-lab deep-reinforcement-learning gymnasium connect-company connect-tycoon jev ppo decision-making prefrontal-cortex korean License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "AlexLEEeeee/connectailab-rl-alvis-v2 · Hugging Face",
+      "url": "https://huggingface.co/AlexLEEeeee/connectailab-rl-alvis-v2",
+      "snippet": "AlexLEEeeee / connectailab-rl-alvis-v2 Like 0 Reinforcement Learning PEFT Safetensors Korean deep-reinforcement-learning grpo decision-making gymnasium connect-tycoon connect-ai-lab connectailab lora qwen3.5 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Explore | alphaXiv",
+      "url": "https://www.alphaxiv.org/",
+      "snippet": "Discuss, discover, and read arXiv papers. Explore trending papers, see recent activity and discussions, and follow authors of arXiv papers on alphaXiv."
+    },
+    {
+      "title": "AI VTuber Studio by Leaflit — Face-Tracked VTuber Model from One Image ...",
+      "url": "https://rfab.ai/vtuber-creator",
+      "snippet": "Make a Streaming-Ready VTuber From a Single Picture Without Rigging This studio builds a complete VTuber model from a single character image and needs no Live2D or mesh rigging. Generate the character with AI or upload a sprite of your own."
+    },
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The team behind ZeroLimitAI, a hosted AI app and API whose router ranks free models with this same function. We keep the list accurate because our own product depends on it; the list itself stays MIT, provider-neutral and useful without us — a model belongs here whether or not we route to it, and several of the highest-ranked ones we do not."
+    }
+  ]
+}

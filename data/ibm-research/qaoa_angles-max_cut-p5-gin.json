@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "ibm-research/qaoa_angles.max_cut.p5.gin",
+  "slug": "ibm-research-qaoa_angles-max_cut-p5-gin",
+  "author": "ibm-research",
+  "url": "https://huggingface.co/ibm-research/qaoa_angles.max_cut.p5.gin",
+  "created_at": "2026-10-14T21:09:45.000Z",
+  "updated_at": "2026-10-14T21:10:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 602619,
+  "storage_human": "602619 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IBM",
+      "url": "https://www.ibm.com/",
+      "snippet": "For more than a century, IBM has been a global technology innovator, leading advances in AI, automation and hybrid cloud solutions …"
+    },
+    {
+      "title": "IBM",
+      "url": "https://www.ibm.com/fr-fr",
+      "snippet": "Innovateur technologique mondial depuis plus d’un siècle, IBM est à la pointe d’avancées en matière de solutions d’IA, …"
+    },
+    {
+      "title": "IBM — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/IBM",
+      "snippet": "Les relations commerciales entre IBM et le régime hitlérien se sont poursuivies sans interruption face aux vastes appels …"
+    },
+    {
+      "title": "IBM - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/IBM",
+      "snippet": "IBM was founded in 1911 as the Computing-Tabulating-Recording Company (CTR), a holding company of manufacturers of record …"
+    },
+    {
+      "title": "IBM : Toute l'Actualité du monde informatique sur IBM",
+      "url": "https://www.lemondeinformatique.fr/toute-l-actualite-marque-sur-ibm-16.html",
+      "snippet": "Jun 26, 2026 · IBM accélère sur l'orchestration des agents IA A l'occasion de la conférence Think, IBM a présenté un cadre pour …"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "bartowski/UserRepGen-4B-GGUF",
+  "slug": "bartowski-userrepgen-4b-gguf",
+  "author": "bartowski",
+  "url": "https://huggingface.co/bartowski/UserRepGen-4B-GGUF",
+  "created_at": "2026-10-14T23:48:11.000Z",
+  "updated_at": "2026-10-14T23:56:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "user-representation",
+    "user-simulation",
+    "simulation",
+    "multi-turn",
+    "text-generation",
+    "en",
+    "base_model:microsoft/UserRepGen-4B",
+    "base_model:quantized:microsoft/UserRepGen-4B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 64927200032,
+  "storage_human": "64.9 GB",
+  "base_model": "microsoft/UserRepGen-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bartowski (Bartowski) - Hugging Face",
+      "url": "https://huggingface.co/bartowski",
+      "snippet": "Senior Machine Learning Engineer at RedHat Per-tensor layout maps for GGUF quantization"
+    },
+    {
+      "title": "UserRepGen-4B: Microsoft 4B Model Beats GPT-5.5 at This Task - explainx.ai",
+      "url": "https://www.explainx.ai/blog/microsoft-userrepgen-4b-user-representation-simulator-open-model-mit-2026",
+      "snippet": "Microsoft UserRepGen-4B is an MIT-licensed 4B model that profiles users from chats for simulators. Fidelity scores, how to run it, and the privacy risk."
+    },
+    {
+      "title": "bartowski (Bartowski) - Hugging Face",
+      "url": "https://huggingface.co/bartowski/models",
+      "snippet": "Research Engineer at arcee.ai and official model curator for lmstudio.ai, showcasing models and contributions on Hugging Face."
+    },
+    {
+      "title": "Nemotron-Mini-4B-Instruct-GGUF huggingface.co api & bartowski Nemotron ...",
+      "url": "https://www.toolify.ai/ai-model/bartowski-nemotron-mini-4b-instruct-gguf",
+      "snippet": "Nemotron-Mini-4B-Instruct-GGUF is an open source model from GitHub that offers a free installation service, and any user can find Nemotron-Mini-4B-Instruct-GGUF on GitHub to install. At the same time, huggingface.co provides the effect of Nemotron-Mini-4B-Instruct-GGUF install, users can directly use Nemotron-Mini-4B-Instruct-GGUF installed effect in huggingface.co for debugging and trial. It ..."
+    },
+    {
+      "title": "How to Use Bartowski&#x27;s Nemotron-Mini-4B GGUF - YouTube",
+      "url": "https://www.youtube.com/watch?v=NjyG9wOLnyo",
+      "snippet": "Learn how to download and run Bartowski&#x27;s Nemotron-Mini-4B GGUF quantized models locally. Step-by-step guide for using NVIDIA&#x27;s powerful 4B model with LM Studio and llama.cpp for fast local ..."
+    }
+  ]
+}

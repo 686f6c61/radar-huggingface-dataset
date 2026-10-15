@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Sanghyang00/ELARSpeech-Whisper-Large-v3-ail",
+  "slug": "sanghyang00-elarspeech-whisper-large-v3-ail",
+  "author": "Sanghyang00",
+  "url": "https://huggingface.co/Sanghyang00/ELARSpeech-Whisper-Large-v3-ail",
+  "created_at": "2026-10-14T22:29:18.000Z",
+  "updated_at": "2026-10-14T22:51:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "ail"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "elarspeech",
+    "whisper-large-v3",
+    "ail",
+    "base_model:openai/whisper-large-v3",
+    "base_model:finetune:openai/whisper-large-v3",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543491840,
+  "parameters_human": "1.54B",
+  "storage_bytes": 6174117304,
+  "storage_human": "6.2 GB",
+  "base_model": "openai/whisper-large-v3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accueil - BATIGERE",
+      "url": "https://www.batigere.fr/",
+      "snippet": "Avec plus de 100 000 logements, les membres BATIGERE se mobilisent sur l’ensemble du territoire national pour répondre aux …"
+    },
+    {
+      "title": "Société BATIGERE GIE à 57000 METZ - L’Annuaire des Entreprises ...",
+      "url": "https://annuaire-entreprises.data.gouv.fr/entreprise/batigere-gie-480557891",
+      "snippet": "Jan 1, 2005 · La société BATIGERE GIE a été créée le 1 janvier 2005, il y a 22 ans. Sa forme juridique est Groupement d'intérêt …"
+    },
+    {
+      "title": "Société BATIGERE GIE : Chiffre d'affaires, statuts, extrait d ...",
+      "url": "https://www.pappers.fr/entreprise/batigere-gie-480557891",
+      "snippet": "Feb 3, 2012 · BATIGERE GIE à METZ (57000) : Bilans, statuts, chiffre d'affaires, dirigeants, actionnaires, levées de fonds, annonces …"
+    },
+    {
+      "title": "Société GIE BATIGERE (331532291) à METZ (57000).",
+      "url": "https://www.societe.com/societe/gie-batigere-331532291.html",
+      "snippet": "Apr 7, 1993 · Accédez à une synthèse de toutes les informations en notre possession pour cette entreprise sur les aspects légaux, …"
+    },
+    {
+      "title": "Contactez-nous - BATIGERE",
+      "url": "https://www.batigere.fr/vous-etes/contact/",
+      "snippet": "Choisissez votre profil ci-dessous pour être mis en relation avec les équipes de BATIGERE. En fonction de votre demande, n’hésitez …"
+    }
+  ]
+}

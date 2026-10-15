@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "maxbennett/generalized-neural-memory-iclft-counterfact",
+  "slug": "maxbennett-generalized-neural-memory-iclft-counterfact",
+  "author": "maxbennett",
+  "url": "https://huggingface.co/maxbennett/generalized-neural-memory-iclft-counterfact",
+  "created_at": "2026-02-22T16:14:43.000Z",
+  "updated_at": "2026-10-14T23:51:27.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "dataset:maxbennett/generalized-neural-memory-counterfact",
+    "arxiv:2602.23201",
+    "base_model:meta-llama/Meta-Llama-3-8B-Instruct",
+    "base_model:finetune:meta-llama/Meta-Llama-3-8B-Instruct",
+    "license:llama3",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766337,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - maxbennett/Generalized-Neural-Memory: Official implementation ...",
+      "url": "https://github.com/maxbennett/Generalized-Neural-Memory",
+      "snippet": "This is the official implementation of paper \"Tell Me What To Learn: Generalizing Neural Memory to be Controllable in Natural Language\" by Max S. Bennett, Thomas Zollo, Richard Zemel. This work extends neural memory systems to support controllable, instruction-guided memory updates. We build upon the MemoryLLM architecture and introduce mechanisms for selective fact memorization and refusal ..."
+    },
+    {
+      "title": "Tell Me What To Learn: Generalizing Neural Memory to be Controllable in ...",
+      "url": "https://arxiv.org/pdf/2602.23201",
+      "snippet": "Figure 1: An AI system with memory can adapt to its environment continuously by in- tegrating diverse information sources. We propose a generalized neural memory system that performs flexible long-term updates based on learning instructions specified in natural language. Our approach enables important use cases in critical domains such as healthcare, where an adaptive agent must learn from ..."
+    },
+    {
+      "title": "Tell Me What To Learn: Generalizing Neural Memory to be Controllable in ...",
+      "url": "https://arxiv.org/html/2602.23201v2",
+      "snippet": "Figure 1: An AI system with memory can adapt to its environment continuously by integrating diverse information sources. We propose a generalized neural memory system that performs flexible long-term updates based on learning instructions specified in natural language."
+    },
+    {
+      "title": "PDF Tell Me What To Learn: Generalizing Neural Memory to be ... - OpenReview",
+      "url": "https://openreview.net/pdf/96503d3c76e057e2d62d15f5270e073eaca9d8c8.pdf",
+      "snippet": "Tell Me What To Learn: Generalizing Neural Memory to be Controllable in Natural Language Figure 1.An AI system with memory can adapt to its environment continuously by integrating diverse information sources. We propose a generalized neural memory system that performs flexible long-term updates based on learning instructions specified in natural language. Our approach enables important use ..."
+    },
+    {
+      "title": "ICML Tell Me What To Learn: Generalizing Neural Memory to be ...",
+      "url": "https://icml.cc/virtual/2026/74614",
+      "snippet": "Modern machine learning models are deployed in diverse, non-stationary environments where they must continually adapt to new tasks and evolving knowledge. Continual fine-tuning and in-context learning are costly and brittle, whereas neural memory methods promise lightweight updates with minimal forgetting. However, existing neural memory models typically assume a single fixed objective and ..."
+    }
+  ]
+}

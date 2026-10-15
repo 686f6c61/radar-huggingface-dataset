@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "JMingo/gemma-4-26B-A4B-it-qat-uncensored-GGUF",
+  "slug": "jmingo-gemma-4-26b-a4b-it-qat-uncensored-gguf",
+  "author": "JMingo",
+  "url": "https://huggingface.co/JMingo/gemma-4-26B-A4B-it-qat-uncensored-GGUF",
+  "created_at": "2026-10-14T23:27:00.000Z",
+  "updated_at": "2026-10-14T23:40:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:google/gemma-4-26B-A4B-it-qat-q4_0-unquantized",
+    "base_model:quantized:google/gemma-4-26B-A4B-it-qat-q4_0-unquantized",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 14299509440,
+  "storage_human": "14.3 GB",
+  "base_model": "google/gemma-4-26B-A4B-it-qat-q4_0-unquantized",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JMingo/gemma-4-26B-A4B-it-qat-japanese-pruned-GGUF · Hugging Face",
+      "url": "https://huggingface.co/JMingo/gemma-4-26B-A4B-it-qat-japanese-pruned-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "JMingo (JMingo) - Hugging Face",
+      "url": "https://huggingface.co/JMingo/models",
+      "snippet": "JMingo/gemma-4-26B-A4B-it-qat-japanese-pruned-GGUF. 21B • Updated 8 days ago • 2.2k • 3. JMingo/gemma-4-26B-A4B-it-ultra-uncensored-heretic-UD-GGUF"
+    },
+    {
+      "title": "Gemma 4 26b A4b It Uncensored - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/gemma-4-26b-a4b-it-uncensored.html",
+      "snippet": "Download Gemma 4 26b A4b It Uncensored GGUF model. 15.4 GB, 21,946 downloads, 83 likes."
+    },
+    {
+      "title": "Gemma 4 26B A4B IT | Gemini Enterprise Agent Platform | Google Cloud ...",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/google/gemma-4-26b-a4b-it",
+      "snippet": "Explore Gemma 4 26B A4B IT, an open model built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input and generating text output"
+    },
+    {
+      "title": "gemma-4-26B-A4B-it-uncensored-GGUF: Text-to-Text model — overview, use ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/gemma-4-26b-a4b-it-uncensored-gguf-trevorjs",
+      "snippet": "Overview gemma-4-26B-A4B-it-uncensored-GGUF is a quantized version of an abliterated (uncensored) Gemma 4 model with 26 billion parameters, maintained by TrevorJS. The model removes refusal behavior through norm-preserving biprojected abliteration with Expert-Granular Abliteration (EGA) applied to MoE expert weights. It supports an 8192-token context window and runs on CPU or GPU through llama ..."
+    }
+  ]
+}

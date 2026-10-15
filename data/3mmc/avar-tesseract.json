@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "3mmc/avar-tesseract",
+  "slug": "3mmc-avar-tesseract",
+  "author": "3mmc",
+  "url": "https://huggingface.co/3mmc/avar-tesseract",
+  "created_at": "2026-10-14T21:10:33.000Z",
+  "updated_at": "2026-10-14T21:10:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": "tesseract",
+  "languages": [
+    "av",
+    "ru"
+  ],
+  "tags": [
+    "tesseract",
+    "ocr",
+    "lstm",
+    "avar",
+    "cyrillic",
+    "caucasian-languages",
+    "low-resource",
+    "image-to-text",
+    "av",
+    "ru",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11386215,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "3-Méthylméthcathinone — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/3-M%C3%A9thylm%C3%A9thcathinone",
+      "snippet": "Un échantillon de 3-MMC La 3-méthylméthcathinone, également connue sous le nom de métaphédrone, 3-MMC1, 3M ou encore, …"
+    },
+    {
+      "title": "3MMC : nouvelle drogue de synthèse, effets, risques, chemsex",
+      "url": "https://www.doctissimo.fr/sante/sante-au-quotidien/addictions/drogues/tout-savoir-sur-la-3-mmc-cette-nouvelle-drogue-de-synthese/11809e_ar.html",
+      "snippet": "Apr 18, 2025 · La 3MMC est une drogue apparue au début des années 2010, qui appartient à la catégorie des cathinones de …"
+    },
+    {
+      "title": "3-MMC, effets, risques, témoignages — PsychoWiki, le wiki de …",
+      "url": "https://www.psychoactif.org/psychowiki/index.php?title=3-MMC,_effets,_risques,_t%C3%A9moignages",
+      "snippet": "La 3MMC peut être sniffée, « droppée » (parachutes, etc.), injectée, prise en MAD (water-lining) ou plugguée (administration par voie …"
+    },
+    {
+      "title": "3-MMC : définition, effets et risques de cette substance",
+      "url": "https://drogbox.fr/3-mmc-definition-effets-risques-substance/",
+      "snippet": "Jun 22, 2026 · L’article en bref Points clés Détails essentiels Nature du produit Substance psychoactive synthétique de la famille des …"
+    },
+    {
+      "title": "Drogues : les ravages de la 3-MMC, une \"cocaïne du pauvre\" festive …",
+      "url": "https://www.franceinfo.fr/societe/drogue/drogues-les-ravages-de-la-3-mmc-une-cocaine-du-pauvre-festive-et-dangereuse_6940412.html",
+      "snippet": "Dec 6, 2024 · Elle s'est propagée ces dernières années : la 3-MMC, drogue de synthèse interdite en France, fait aujourd'hui des …"
+    }
+  ]
+}

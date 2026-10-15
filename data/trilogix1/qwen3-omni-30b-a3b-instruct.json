@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Trilogix1/Qwen3-Omni-30B-A3B-Instruct",
+  "slug": "trilogix1-qwen3-omni-30b-a3b-instruct",
+  "author": "Trilogix1",
+  "url": "https://huggingface.co/Trilogix1/Qwen3-Omni-30B-A3B-Instruct",
+  "created_at": "2026-10-14T20:43:20.000Z",
+  "updated_at": "2026-10-14T20:47:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_omni_moe",
+    "text-to-audio",
+    "multimodal",
+    "any-to-any",
+    "en",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35259818545,
+  "parameters_human": "35.26B",
+  "storage_bytes": 70523299202,
+  "storage_human": "70.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-Omni-30B-A3B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-Omni-30B-A3B-Instruct",
+      "snippet": "The Qwen3-Omni-30B-A3B-Thinking model is primarily designed for understanding and interacting with multimodal inputs, including text, audio, image, and video. To achieve optimal performance, we recommend that users include an explicit textual instruction or task description in each round of dialogue alongside the multimodal input."
+    },
+    {
+      "title": "README.md · Qwen/Qwen3-Omni-30B-A3B-Instruct at main",
+      "url": "https://huggingface.co/Qwen/Qwen3-Omni-30B-A3B-Instruct/blob/main/README.md?code=true",
+      "snippet": "Qwen3-Omni maintains state-of-the-art performance on text and visual modalities without degradation relative to same-size single-model Qwen counterparts. Across 36 audio and audio-visual benchmarks, it achieves open-source SOTA on 32 and sets the SOTA on 22, outperforming strong closed-source systems such as Gemini 2.5 Pro and GPT-4o."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-Omni: Qwen3-omni is a natively end-to-end, omni ...",
+      "url": "https://github.com/QwenLM/Qwen3-Omni",
+      "snippet": "The Qwen3-Omni-30B-A3B-Thinking model is primarily designed for understanding and interacting with multimodal inputs, including text, audio, image, and video. To achieve optimal performance, we recommend that users include an explicit textual instruction or task description in each round of dialogue alongside the multimodal input."
+    },
+    {
+      "title": "Qwen3-Omni-30B-A3B-Instruct — Models — The AI Bench",
+      "url": "https://theaibench.ai/models/qwen3-omni/",
+      "snippet": "Qwen3-Omni-30B-A3B-Instruct The only locally-runnable open-weight model that does real-time streaming speech-out natively. 119 input languages, 10 speech-output languages (two voices: Chelsie, Ethan)."
+    },
+    {
+      "title": "Qwen3-Omni-30B-A3B-Instruct - Model Info, Parameters, Benchmarks ...",
+      "url": "https://www.siliconflow.com/models/qwen3-omni-30b-a3b-instruct",
+      "snippet": "Qwen3-Omni-30B-A3B-Instruct is a member of the latest Qwen3 series from Alibaba&#x27;s Qwen team. It is a Mixture of Experts (MoE) model with 30 billion total parameters and 3 billion active parameters, which effectively reduces inference costs while maintaining powerful performance. The model was trained on high-quality, multi-source, and multilingual data, demonstrating excellent performance in ..."
+    }
+  ]
+}

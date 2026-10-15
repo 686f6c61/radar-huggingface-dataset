@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jasonlamze/perceiver-contrastive",
+  "slug": "jasonlamze-perceiver-contrastive",
+  "author": "jasonlamze",
+  "url": "https://huggingface.co/jasonlamze/perceiver-contrastive",
+  "created_at": "2026-10-14T20:47:47.000Z",
+  "updated_at": "2026-10-14T20:47:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nebius shares jump 18% after Q2 revenue surges 454% - BYDFi",
+      "url": "https://www.bydfi.com/en/crypto-news/nebius-shares-jump-18-after-q2-revenue-surges-454-74531",
+      "snippet": "Aug 12, 2026 · AI cloud infrastructure firm Nebius Group saw its shares rally 18% to $227.70 on August 12, after reporting second …"
+    },
+    {
+      "title": "Perpetual Contract Chart | Real-Time Crypto Futures | BYDFi",
+      "url": "https://www.bydfi.com/en/swap/woo-usdt",
+      "snippet": "Trade perpetual contracts on BYDFi with up to 200x leverage. Access 500+ pairs, deep liquidity, and low fees on a leading crypto …"
+    },
+    {
+      "title": "Goldman Raises WFE Forecast on DRAM and Foundry - BYDFi",
+      "url": "https://www.bydfi.com/en/crypto-news/goldman-raises-wfe-forecast-on-dram-and-foundry-93568",
+      "snippet": "Aug 24, 2026 · Goldman Sachs has sharply raised its wafer fab equipment (WFE) forecast for 2026-2028 to $150 billion, $218 billion, …"
+    },
+    {
+      "title": "¿Cuál es el informe fiscal de Coinbase para el año actual?",
+      "url": "https://www.bydfi.com/es/questions/cual-es-el-informe-fiscal-de-coinbase-para-el-ano-actual",
+      "snippet": "Aug 26, 2026 · Coinbase, como una plataforma de intercambio de criptomonedas, está sujeta a las regulaciones fiscales y debe …"
+    },
+    {
+      "title": "Launch Flare Gas Powered Bitcoin Mining Site in Argentina",
+      "url": "https://www.bydfi.com/blog/cryptonews/genesis-digital-assets-to-launch-flare-gas-powered-bitcoin-mining-site-in-argentina/",
+      "snippet": "May 10, 2024 · Genesis Digital Assets to Operate Flare Gas Bitcoin Mining Site in Argentina. The data center facility will host 1,200 …"
+    }
+  ]
+}

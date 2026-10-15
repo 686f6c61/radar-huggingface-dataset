@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ddabrowskifranciszek/notes-video-understanding",
+  "slug": "ddabrowskifranciszek-notes-video-understanding",
+  "author": "ddabrowskifranciszek",
+  "url": "https://huggingface.co/ddabrowskifranciszek/notes-video-understanding",
+  "created_at": "2026-10-14T22:50:57.000Z",
+  "updated_at": "2026-10-14T22:51:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "video-understanding",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Program of ML in PL Conference 2026",
+      "url": "https://conference.mlinpl.org/2026/program",
+      "snippet": "I will argue that such models offer a complementary route to understanding modern machine learning: not by reproducing the complexity of current systems, but by ..."
+    },
+    {
+      "title": "Bulletin of the Polish Academy of Sciences Technical ... - PAS Journals",
+      "url": "https://journals.pan.pl/bpasts/136740",
+      "snippet": "Keywords: Industry 4.0 Internet of Things Artificial intelligence models simulation ... Thalmann, “Understanding Maturity Models Results of a structured Content ..."
+    },
+    {
+      "title": "Maciej Jałocha – Data Scientist - LinkedIn",
+      "url": "https://ch.linkedin.com/in/maciejjalocha",
+      "snippet": "Data Scientist · I worked on evaluating and improving retrieval in a search scale-up serving &gt;0.5k customers. · Berufserfahrung: raffle.ai · Ausbildung: ..."
+    },
+    {
+      "title": "Publikacje - ICM UW",
+      "url": "https://icm.edu.pl/badania-i-rozwoj/publikacje/",
+      "snippet": "... Notes in Artificial Intelligence and Lecture Notes in Bioinformatics) 12139 LNCS, pp. ... Towards Understanding Protein-Protein Interactions: The AI Approach ..."
+    },
+    {
+      "title": "Book of Abstracts - NBC 2025 & PCBBE 2025",
+      "url": "https://nbc2025.ibib.waw.pl/wp-content/uploads/2025/11/ABSTRACTS-NBC-2025_PCBBE-2025DRUK.pdf",
+      "snippet": "04.11.2025 ... This study highlights the growing role of artificial intelligence in cardiac imaging and paves the way for more efficient and precise diagnostic."
+    }
+  ]
+}

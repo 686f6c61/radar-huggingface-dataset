@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "wq2012/univ_resnet_small_ge2e",
+  "slug": "wq2012-univ_resnet_small_ge2e",
+  "author": "wq2012",
+  "url": "https://huggingface.co/wq2012/univ_resnet_small_ge2e",
+  "created_at": "2026-10-15T01:37:56.000Z",
+  "updated_at": "2026-10-15T01:37:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "flaxspeaker",
+  "languages": [],
+  "tags": [
+    "flaxspeaker",
+    "jax",
+    "safetensors",
+    "audio",
+    "speaker-verification",
+    "speaker-recognition",
+    "speaker-embeddings",
+    "flax",
+    "resnet",
+    "ge2e_softmax",
+    "cosine",
+    "audio-classification",
+    "dataset:librispeech_asr",
+    "dataset:cnceleb",
+    "dataset:voxceleb",
+    "arxiv:1710.10467",
+    "arxiv:2104.01989",
+    "arxiv:2202.12163",
+    "arxiv:2203.05642",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2239920,
+  "parameters_human": "2.2M",
+  "storage_bytes": 17933489,
+  "storage_human": "18 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wq2012 (Quan Wang) · GitHub",
+      "url": "https://github.com/wq2012",
+      "snippet": "A graph representing wq2012&#x27;s contributions from October 12, 2025 to October 12, 2026. The contributions are 100% commits, 0% pull requests, 0% issues, 0% code review."
+    },
+    {
+      "title": "wq2012/knee_3d_mri_segmentation_OAI_downsampled · Hugging Face",
+      "url": "https://huggingface.co/wq2012/knee_3d_mri_segmentation_OAI_downsampled",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Residual Networks (ResNet) - Deep Learning - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/deep-learning/residual-networks-resnet-deep-learning/",
+      "snippet": "Residual Networks (ResNet) is a deep learning architecture designed to enable efficient training of very deep neural networks. It introduces skip (shortcut) connections, which allow the model to learn residual mappings instead of direct transformations. Helps prevent vanishing gradient problems in very deep models Allows information to flow directly across layers using skip connections Enables ..."
+    },
+    {
+      "title": "Small Open Source Models | Artificial Analysis",
+      "url": "https://artificialanalysis.ai/models/open-source/small",
+      "snippet": "Comparisons of Small Open Source AI Models (4B-40B) Open source AI models with between 4B to 40B parameters. Models are considered open source (also commonly referred to as open weights) where their weights are accessible to download. This allows self-hosting on your own infrastructure and enables customizing the model such as through fine-tuning."
+    },
+    {
+      "title": "wq2012/wavenet-speaker-verifier-coded · Hugging Face",
+      "url": "https://huggingface.co/wq2012/wavenet-speaker-verifier-coded",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

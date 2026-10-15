@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "assix-research/jev-system1-gemma4-26b-decide",
+  "slug": "assix-research-jev-system1-gemma4-26b-decide",
+  "author": "assix-research",
+  "url": "https://huggingface.co/assix-research/jev-system1-gemma4-26b-decide",
+  "created_at": "2026-10-15T00:01:23.000Z",
+  "updated_at": "2026-10-15T00:37:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "unsloth",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "unsloth",
+    "safetensors",
+    "gemma4",
+    "jev",
+    "system-1",
+    "system-one",
+    "decision-model",
+    "clef",
+    "gemma-4",
+    "moe",
+    "typed-decisions",
+    "agent-safety",
+    "calibrated-probabilities",
+    "text-classification",
+    "en",
+    "dataset:LocalLLaMA/typed-decisions",
+    "base_model:google/gemma-4-26B-A4B-it",
+    "base_model:finetune:google/gemma-4-26B-A4B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25805936206,
+  "parameters_human": "25.81B",
+  "storage_bytes": 51709858660,
+  "storage_human": "51.7 GB",
+  "base_model": "google/gemma-4-26B-A4B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ameli, le site de l’Assurance Maladie en ligne | ameli.fr | Assuré",
+      "url": "https://www.ameli.fr/",
+      "snippet": "Le site officiel de l'Assurance Maladie. Actualités – Droits et Démarches – Remboursements – Prestations et aides – Santé – Offres …"
+    },
+    {
+      "title": "Prévenir la rhinopharyngite de l’enfant | ameli.fr | Assuré",
+      "url": "https://www.ameli.fr/assure/sante/themes/rhinopharyngite-enfant/prevention",
+      "snippet": "Feb 4, 2026 · La rhinopharyngite est une maladie virale très contagieuse. Des mesures simples permettent d’en limiter la transmission."
+    },
+    {
+      "title": "Méthode | L'Assurance Maladie",
+      "url": "https://www.assurance-maladie.ameli.fr/etudes-et-donnees/par-theme/pathologies/cartographie-assurance-maladie/methode-cartographie-pathologies-depenses-assurance-maladie",
+      "snippet": "Oct 7, 2026 · Éléments de méthode de la cartographie : source, champ, repérage des pathologies, affectation des dépenses à …"
+    },
+    {
+      "title": "Enfant majeur - Résolue",
+      "url": "https://forum-assures.ameli.fr/questions/3622523-enfant-majeur",
+      "snippet": "Jul 30, 2025 · Bonjour, Ma fille de 19 ans qui est toujours étudiante n’apparaît plus sur ma carte vitale. Pouvez-Vous me dire …"
+    },
+    {
+      "title": "ALD et fente labiopalatine - Résolue",
+      "url": "https://forum-assures.ameli.fr/questions/2670876-ald-fente-labiopalatine",
+      "snippet": "Mar 24, 2022 · Bonjour, La fente labiopalatine fait-elle partie des ALD 31 ? Où pouvons-nous trouver la liste des ALD 31? Si l’ALD …"
+    }
+  ]
+}

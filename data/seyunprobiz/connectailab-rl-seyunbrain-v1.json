@@ -5,7 +5,7 @@
   "author": "seyunprobiz",
   "url": "https://huggingface.co/seyunprobiz/connectailab-rl-seyunbrain-v1",
   "created_at": "2026-10-13T15:28:41.000Z",
-  "updated_at": "2026-10-13T15:28:45.000Z",
+  "updated_at": "2026-10-14T14:30:02.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "reinforcement-learning",
@@ -33,12 +33,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 20,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 41684315,
-  "storage_human": "42 MB",
+  "storage_bytes": 63379291,
+  "storage_human": "63 MB",
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "safetensors"

@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "wq2012/ls_conformer_small_ge2e_contrast",
+  "slug": "wq2012-ls_conformer_small_ge2e_contrast",
+  "author": "wq2012",
+  "url": "https://huggingface.co/wq2012/ls_conformer_small_ge2e_contrast",
+  "created_at": "2026-10-15T01:38:12.000Z",
+  "updated_at": "2026-10-15T01:38:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "flaxspeaker",
+  "languages": [],
+  "tags": [
+    "flaxspeaker",
+    "jax",
+    "safetensors",
+    "audio",
+    "speaker-verification",
+    "speaker-recognition",
+    "speaker-embeddings",
+    "flax",
+    "conformer",
+    "ge2e_contrast",
+    "cosine",
+    "audio-classification",
+    "dataset:librispeech_asr",
+    "dataset:cnceleb",
+    "dataset:voxceleb",
+    "arxiv:1710.10467",
+    "arxiv:2104.01989",
+    "arxiv:2202.12163",
+    "arxiv:2203.05642",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2029892,
+  "parameters_human": "2.0M",
+  "storage_bytes": 16255112,
+  "storage_human": "16 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wq2012/personal-vad-v2-conformer-unified · Hugging Face",
+      "url": "https://huggingface.co/wq2012/personal-vad-v2-conformer-unified",
+      "snippet": "wq2012 / personal-vad-v2-conformer-unified Like 0 Voice Activity Detection LiteRT Safetensors facebook/multilingual_librispeech personal-vad audio speaker-conditioning conformer lstm tensorflow arxiv:1908.04284 arxiv:2204.03793 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Personal VAD 2.0 — E5 Unified Enrolled & Enrollment-Less Causal Conformer ..."
+    },
+    {
+      "title": "Conformer/README.md at main · pengzhiliang/Conformer · GitHub",
+      "url": "https://github.com/pengzhiliang/Conformer/blob/main/README.md",
+      "snippet": "In this paper, we propose a hybrid network structure, termed Conformer, to take advantage of convolutional operations and self-attention mechanisms for enhanced representation learning. Conformer roots in the Feature Coupling Unit (FCU), which fuses local features and global representations under different resolutions in an interactive fashion."
+    },
+    {
+      "title": "GitHub - LuluW8071/Conformer: End-to-End Speech Recognition Training ...",
+      "url": "https://github.com/LuluW8071/Conformer",
+      "snippet": "This repository contains a complete implementation of the Conformer: Convolution-Augmented Transformer for Speech Recognition. It includes: Recommended: At least 1-2 hours of personal recordings.Original audio is augmented (e.g., noise, pitch, speed) to boost variation in recorded corpus and ..."
+    },
+    {
+      "title": "Conformer Model | sooftware/conformer | DeepWiki",
+      "url": "https://deepwiki.com/sooftware/conformer/3.1-conformer-model",
+      "snippet": "Overview The Conformer class in conformer/model.py24-108 implements the complete Conformer model as described in the paper \"Conformer: Convolution-augmented Transformer for Speech Recognition\". It acts as the main orchestrator that combines a ConformerEncoder with a final linear classification layer and log-softmax activation."
+    },
+    {
+      "title": "[2005.08100] Conformer: Convolution-augmented Transformer for Speech ...",
+      "url": "https://arxiv.org/abs/2005.08100",
+      "snippet": "In this work, we achieve the best of both worlds by studying how to combine convolution neural networks and transformers to model both local and global dependencies of an audio sequence in a parameter-efficient way. To this regard, we propose the convolution-augmented transformer for speech recognition, named Conformer."
+    }
+  ]
+}

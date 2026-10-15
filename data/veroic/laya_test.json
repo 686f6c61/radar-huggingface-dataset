@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Veroic/laya_test",
+  "slug": "veroic-laya_test",
+  "author": "Veroic",
+  "url": "https://huggingface.co/Veroic/laya_test",
+  "created_at": "2026-09-29T07:57:06.000Z",
+  "updated_at": "2026-10-14T23:28:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "laya",
+    "system-one",
+    "calibrated-decisions",
+    "rlcd",
+    "classification",
+    "routing",
+    "scoring",
+    "guardrails",
+    "moderation",
+    "reinforcement-learning",
+    "commercial-use",
+    "text-classification",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 421293830,
+  "parameters_human": "421.3M",
+  "storage_bytes": 2365127066,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Live Sex Webcams and Porn Chat | xHamsterLive",
+      "url": "https://xhamsterlive.com/",
+      "snippet": "We're a free online community where you can come and watch our amazing amateur models perform live interactive shows. …"
+    },
+    {
+      "title": "Free Live Porn and Hardcore Webcams | xHamsterLive",
+      "url": "https://xhamsterlive.com/couples",
+      "snippet": "Watch Hardcore Shows with Couples, Threesomes, Group Sex and Gangbangs in Official Porn Webcams from xHamster."
+    },
+    {
+      "title": "Sex cams gratuites en direct et chat porno | xHamsterLive",
+      "url": "https://fr.xhamsterlive.com/",
+      "snippet": "Regardez gratuitement des shows hard et pornos de webcams en direct avec des modèles, des couples et des groupes. La …"
+    },
+    {
+      "title": "HD Free Live Sex Cams with Naked Girls | xhamsterlive.com",
+      "url": "https://xham.live/girls/hd",
+      "snippet": "Watch LIVE these hot babes in HD sex cams. ️ Enter their naked chat now and enjoy the show for FREE! 🔥"
+    },
+    {
+      "title": "Popular Couple Live Sex in Free Chat | xhamsterlive.com",
+      "url": "https://xham.live/couples/popular",
+      "snippet": "Watch the most attractive couple live shows in popular chat rooms.🤩 Hot and friendly amateur and pro performers sorted by the …"
+    }
+  ]
+}

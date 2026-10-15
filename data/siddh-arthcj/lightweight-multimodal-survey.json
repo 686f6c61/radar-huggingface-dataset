@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Siddh-arthcj/lightweight-multimodal-survey",
+  "slug": "siddh-arthcj-lightweight-multimodal-survey",
+  "author": "Siddh-arthcj",
+  "url": "https://huggingface.co/Siddh-arthcj/lightweight-multimodal-survey",
+  "created_at": "2026-10-15T01:26:41.000Z",
+  "updated_at": "2026-10-15T01:26:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "lightweight-multimodal",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "deepseek-v4.1-flash Model by Deepseek-ai | NVIDIA NIM",
+      "url": "https://build.nvidia.com/deepseek-ai/deepseek-v4.1-flash/modelcard",
+      "snippet": "DeepSeek-V4.1-Flash is a multimodal mixture-of-experts model from DeepSeek-AI that accepts text and images, generates text autoregressively, supports a combined context of up to one million tokens, and provides continuously controllable reasoning effort. This model is ready for commercial or non-commercial use. Third-Party Community Consideration:"
+    },
+    {
+      "title": "Google AI Releases Gemma 3: Lightweight Multimodal Open Models for ...",
+      "url": "https://www.marktechpost.com/2025/03/12/google-ai-releases-gemma-3-lightweight-multimodal-open-models-for-efficient-and-on%E2%80%91device-ai/",
+      "snippet": "Google AI Releases Gemma 3: A Collection of Open Models Google DeepMind has introduced Gemma 3—a family of open models designed to address these challenges. Developed with technology similar to that used for Gemini 2.0, Gemma 3 is intended to run efficiently on a single GPU or TPU."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches across OpenAI, Anthropic, Google DeepMind, SpaceXAI, DeepSeek, Qwen, Moonshot AI, Meta, Mistral AI, MiniMax, and other important AI labs. You can use the newest-first tables to find the release date, provider, release stage, and model type."
+    },
+    {
+      "title": "Top 15 Multimodal Models in 2026 (Open Source & Proprietary)",
+      "url": "https://blog.unitlab.ai/top-multimodal-models/",
+      "snippet": "Discover what multimodal models are, how their architectures work, the top multimodal models, real-world use cases, and key challenges."
+    }
+  ]
+}

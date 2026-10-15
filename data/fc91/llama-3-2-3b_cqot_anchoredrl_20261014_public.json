@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "fc91/Llama-3.2-3B_CQoT_AnchoredRL_20261014_public",
+  "slug": "fc91-llama-3-2-3b_cqot_anchoredrl_20261014_public",
+  "author": "fc91",
+  "url": "https://huggingface.co/fc91/Llama-3.2-3B_CQoT_AnchoredRL_20261014_public",
+  "created_at": "2026-10-14T18:11:15.000Z",
+  "updated_at": "2026-10-15T02:09:43.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "research",
+    "base_model:meta-llama/Llama-3.2-3B-Instruct",
+    "base_model:adapter:meta-llama/Llama-3.2-3B-Instruct",
+    "license:llama3.2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14412299328,
+  "storage_human": "14.4 GB",
+  "base_model": "meta-llama/Llama-3.2-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Remove Background from Image for Free – remove.bg",
+      "url": "https://www.remove.bg/",
+      "snippet": "Remove image backgrounds automatically in 5 seconds with just one click. Don't spend hours manually picking pixels. Upload your …"
+    },
+    {
+      "title": "Upload Image – remove.bg",
+      "url": "https://www.remove.bg/uploads",
+      "snippet": "Select an image & remove the background – 100% automatically – in 5 seconds – without a single click – for free."
+    },
+    {
+      "title": "Instant Background Remover - Remove Bg for Free Online",
+      "url": "https://www.photoroom.com/tools/background-remover",
+      "snippet": "With Photoroom, you can remove the background from any image while preserving every detail. Our AI background remover …"
+    },
+    {
+      "title": "Image background remover - iLoveIMG",
+      "url": "https://www.iloveimg.com/remove-background",
+      "snippet": "Remove image backgrounds online with our powerful background removal tool. Save time editing with this AI-powered tool that …"
+    },
+    {
+      "title": "Free Background Remover: Remove BG from Image Online",
+      "url": "https://www.pixelcut.ai/background-remover",
+      "snippet": "Our BG Remover removes the background 100% automatically in less than 3 seconds! With our AI-powered technology, you'll be …"
+    }
+  ]
+}

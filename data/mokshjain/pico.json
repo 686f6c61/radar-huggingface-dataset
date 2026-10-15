@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "mokshjain/pico",
+  "slug": "mokshjain-pico",
+  "author": "mokshjain",
+  "url": "https://huggingface.co/mokshjain/pico",
+  "created_at": "2026-10-14T19:15:01.000Z",
+  "updated_at": "2026-10-14T19:15:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "jax",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "jax",
+    "safetensors",
+    "agentic",
+    "tool-use",
+    "reinforcement-learning",
+    "grpo",
+    "nanochat",
+    "from-scratch",
+    "pico",
+    "text-generation",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 48234516,
+  "parameters_human": "48.2M",
+  "storage_bytes": 1736841184,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

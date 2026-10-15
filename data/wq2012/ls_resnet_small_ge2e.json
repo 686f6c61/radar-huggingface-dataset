@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "wq2012/ls_resnet_small_ge2e",
+  "slug": "wq2012-ls_resnet_small_ge2e",
+  "author": "wq2012",
+  "url": "https://huggingface.co/wq2012/ls_resnet_small_ge2e",
+  "created_at": "2026-10-15T01:38:22.000Z",
+  "updated_at": "2026-10-15T01:38:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "flaxspeaker",
+  "languages": [],
+  "tags": [
+    "flaxspeaker",
+    "jax",
+    "safetensors",
+    "audio",
+    "speaker-verification",
+    "speaker-recognition",
+    "speaker-embeddings",
+    "flax",
+    "resnet",
+    "ge2e_softmax",
+    "cosine",
+    "audio-classification",
+    "dataset:librispeech_asr",
+    "dataset:cnceleb",
+    "dataset:voxceleb",
+    "arxiv:1710.10467",
+    "arxiv:2104.01989",
+    "arxiv:2202.12163",
+    "arxiv:2203.05642",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2239920,
+  "parameters_human": "2.2M",
+  "storage_bytes": 17933489,
+  "storage_human": "18 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Double Angle Identities | Brilliant Math & Science Wiki",
+      "url": "https://brilliant.org/wiki/double-angle-identities/",
+      "snippet": "The trigonometric double angle formulas give a relationship between the basic trigonometric functions applied to twice an angle in …"
+    },
+    {
+      "title": "7.3: Double Angle Identities - Mathematics LibreTexts",
+      "url": "https://math.libretexts.org/Bookshelves/Precalculus/Book%3A_Precalculus__An_Investigation_of_Functions_(Lippman_and_Rasmussen)/07%3A_Trigonometric_Equations_and_Identities/7.03%3A_Double_Angle_Identities",
+      "snippet": "We can use the double angle identities to simplify expressions and prove identities. Simplify \\(\\dfrac{\\cos (2t)}{\\cos (t)-\\sin (t)}\\). …"
+    },
+    {
+      "title": "List of trigonometric identities - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/List_of_trigonometric_identities",
+      "snippet": "Geometrically, these are identities involving certain functions of one or more angles. They are distinct from triangle identities, which …"
+    },
+    {
+      "title": "Double Angle Identities – Formulas, Proof and Examples",
+      "url": "https://en.neurochispas.com/trigonometry/double-angle-identities-formulas-proof-and-examples/",
+      "snippet": "Double Angle Identities – Formulas, Proof and Examples Double angle identities are trigonometric identities used to rewrite …"
+    },
+    {
+      "title": "Double Angle Formulas - What Are Double Angle Formulas?",
+      "url": "https://www.cuemath.com/double-angle-formulas/",
+      "snippet": "Double angle formulas are used to express the trigonometric ratios of double angles (2θ) in terms of trigonometric ratios of angle (θ). …"
+    }
+  ]
+}

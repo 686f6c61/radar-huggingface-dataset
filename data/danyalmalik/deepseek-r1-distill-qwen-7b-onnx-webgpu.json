@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "danyalmalik/DeepSeek-R1-Distill-Qwen-7B-ONNX-WebGPU",
+  "slug": "danyalmalik-deepseek-r1-distill-qwen-7b-onnx-webgpu",
+  "author": "danyalmalik",
+  "url": "https://huggingface.co/danyalmalik/DeepSeek-R1-Distill-Qwen-7B-ONNX-WebGPU",
+  "created_at": "2026-10-14T22:15:27.000Z",
+  "updated_at": "2026-10-14T22:23:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "webgpu",
+    "onnxruntime-genai",
+    "quick-inference",
+    "base_model:deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+    "base_model:quantized:deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5229328944,
+  "storage_human": "5.2 GB",
+  "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kaia Kitsune (@kaixkitsune) • Instagram photos and videos",
+      "url": "https://www.instagram.com/kaixkitsune/",
+      "snippet": "3M Followers, 2,635 Following, 1,062 Posts - Kaia Kitsune (@kaixkitsune) on Instagram: \"\""
+    },
+    {
+      "title": "Kai (@kaikitsunexoxo) • Instagram photos and videos",
+      "url": "https://www.instagram.com/kaikitsunexoxo/",
+      "snippet": "1,051 Followers, 10 Following, 94 Posts - Kai (@kaikitsunexoxo) on Instagram: \"\""
+    },
+    {
+      "title": "Kaikitsune.com - X",
+      "url": "https://kaikitsune.com/x",
+      "snippet": "X is where the fun lives"
+    },
+    {
+      "title": "Watch this story by Kaia Kitsune on Instagram before it disappears.",
+      "url": "https://www.instagram.com/stories/kaixkitsune/",
+      "snippet": ""
+    },
+    {
+      "title": "Kaia Kitsune (@kaixkitsune) — Live Instagram Follower Count",
+      "url": "https://instastatistics.com/kaixkitsune",
+      "snippet": "Kaia Kitsune (@kaixkitsune) currently has 2,680,081 Instagram followers, placing them in the mega-influencer category. Their live …"
+    }
+  ]
+}
