@@ -5,7 +5,7 @@
   "author": "Joseph31415926",
   "url": "https://huggingface.co/Joseph31415926/nllb_hieroglyph_final",
   "created_at": "2026-10-09T21:07:25.000Z",
-  "updated_at": "2026-10-13T21:34:47.000Z",
+  "updated_at": "2026-10-14T13:10:44.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -14,16 +14,18 @@
   "tags": [
     "safetensors",
     "m2m_100",
+    "base_model:facebook/nllb-200-distilled-600M",
+    "base_model:finetune:facebook/nllb-200-distilled-600M",
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 209,
+  "downloads_30d": 283,
   "trending_score": 0,
   "parameters": 630576128,
   "parameters_human": "630.6M",
-  "storage_bytes": 141354107778,
-  "storage_human": "141.4 GB",
-  "base_model": null,
+  "storage_bytes": 161533027155,
+  "storage_human": "161.5 GB",
+  "base_model": "facebook/nllb-200-distilled-600M",
   "formats": [
     "safetensors"
   ],

@@ -5,27 +5,27 @@
   "author": "User-Android",
   "url": "https://huggingface.co/User-Android/AI",
   "created_at": "2026-10-06T23:21:21.000Z",
-  "updated_at": "2026-10-11T09:19:09.000Z",
+  "updated_at": "2026-10-14T13:54:13.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "image-to-image",
   "library": null,
   "languages": [],
   "tags": [
-    "safetensors",
+    "onnx",
     "image-to-image",
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 119,
+  "downloads_30d": 120,
   "trending_score": 0,
   "parameters": 3855235,
   "parameters_human": "3.9M",
-  "storage_bytes": 1398123376,
+  "storage_bytes": 1406773115,
   "storage_human": "1.4 GB",
   "base_model": null,
   "formats": [
-    "safetensors"
+    "onnx"
   ],
   "is_conversational": false,
   "gated": false,

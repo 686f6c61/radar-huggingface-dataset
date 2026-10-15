@@ -5,7 +5,7 @@
   "author": "nexaaii",
   "url": "https://huggingface.co/nexaaii/gemma-4-tfd-swe-agent",
   "created_at": "2026-10-06T18:58:18.000Z",
-  "updated_at": "2026-10-13T16:55:02.000Z",
+  "updated_at": "2026-10-14T11:51:15.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -26,12 +26,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 23,
+  "downloads_30d": 30,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 7608018547,
-  "storage_human": "7.6 GB",
+  "storage_bytes": 9352477602,
+  "storage_human": "9.4 GB",
   "base_model": "google/gemma-4-31b-it",
   "formats": [
     "safetensors"

@@ -5,7 +5,7 @@
   "author": "pragmaticcs",
   "url": "https://huggingface.co/pragmaticcs/SignOfFour-GGUF",
   "created_at": "2026-09-03T12:37:07.000Z",
-  "updated_at": "2026-10-06T08:43:37.000Z",
+  "updated_at": "2026-10-15T06:17:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -46,7 +46,7 @@
     "conversational"
   ],
   "likes": 6,
-  "downloads_30d": 6741,
+  "downloads_30d": 6786,
   "trending_score": 0,
   "parameters": 34660610688,
   "parameters_human": "34.66B",

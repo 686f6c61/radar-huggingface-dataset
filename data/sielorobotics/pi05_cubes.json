@@ -5,7 +5,7 @@
   "author": "SieloRobotics",
   "url": "https://huggingface.co/SieloRobotics/pi05_cubes",
   "created_at": "2026-10-09T17:39:52.000Z",
-  "updated_at": "2026-10-14T02:47:42.000Z",
+  "updated_at": "2026-10-15T01:21:10.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": 4143404816,
   "parameters_human": "4.14B",
-  "storage_bytes": 587620749424,
-  "storage_human": "587.6 GB",
+  "storage_bytes": 1101758796280,
+  "storage_human": "1101.8 GB",
   "base_model": "lerobot/pi05_base",
   "formats": [
     "safetensors"

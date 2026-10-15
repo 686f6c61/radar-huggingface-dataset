@@ -5,7 +5,7 @@
   "author": "RicemanT",
   "url": "https://huggingface.co/RicemanT/MageTrail",
   "created_at": "2026-09-04T13:52:47.000Z",
-  "updated_at": "2026-10-13T11:03:18.000Z",
+  "updated_at": "2026-10-14T08:53:56.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-to-image",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 47,
-  "downloads_30d": 0,
+  "downloads_30d": 10,
   "trending_score": 14,
   "parameters": null,
   "parameters_human": null,

@@ -5,7 +5,7 @@
   "author": "cleyesode",
   "url": "https://huggingface.co/cleyesode/Qwen3.8-Flash-Next-RAZOR-65B-A6B-NVFP4-PLE-MTP-FP8",
   "created_at": "2026-10-06T06:59:06.000Z",
-  "updated_at": "2026-10-07T01:13:23.000Z",
+  "updated_at": "2026-10-15T00:11:55.000Z",
   "license": "qwen-community-1.0",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 110,
+  "downloads_30d": 130,
   "trending_score": 0,
   "parameters": 88112611219,
   "parameters_human": "88.11B",

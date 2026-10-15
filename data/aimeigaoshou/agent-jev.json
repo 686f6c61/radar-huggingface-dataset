@@ -27,13 +27,13 @@
     "model-index",
     "region:us"
   ],
-  "likes": 40,
-  "downloads_30d": 1147,
+  "likes": 41,
+  "downloads_30d": 1159,
   "trending_score": 11,
   "parameters": 598418689,
   "parameters_human": "598.4M",
-  "storage_bytes": 3591816171,
-  "storage_human": "3.6 GB",
+  "storage_bytes": 4788697413,
+  "storage_human": "4.8 GB",
   "base_model": "Qwen/Qwen3-0.6B",
   "formats": [
     "safetensors"

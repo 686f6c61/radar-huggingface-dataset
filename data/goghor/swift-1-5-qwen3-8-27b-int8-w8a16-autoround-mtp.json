@@ -5,7 +5,7 @@
   "author": "Goghor",
   "url": "https://huggingface.co/Goghor/Swift-1.5-Qwen3.8-27B-INT8-W8A16-AutoRound-MTP",
   "created_at": "2026-09-29T20:06:08.000Z",
-  "updated_at": "2026-10-04T22:58:50.000Z",
+  "updated_at": "2026-10-14T05:04:40.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -31,12 +31,12 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 105,
+  "downloads_30d": 117,
   "trending_score": 0,
-  "parameters": 27781427952,
-  "parameters_human": "27.78B",
-  "storage_bytes": 31636255333,
-  "storage_human": "31.6 GB",
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 61481621877,
+  "storage_human": "61.5 GB",
   "base_model": "ukisai/Swift-Qwen3.8-27b",
   "formats": [
     "safetensors"

@@ -31,12 +31,12 @@
     "region:us"
   ],
   "likes": 8,
-  "downloads_30d": 539,
+  "downloads_30d": 607,
   "trending_score": 0,
   "parameters": 174939049131,
   "parameters_human": "174.94B",
-  "storage_bytes": 366186729263,
-  "storage_human": "366.2 GB",
+  "storage_bytes": 738943386309,
+  "storage_human": "738.9 GB",
   "base_model": "local-inference-lab/GLM-5.3-Flash-NVFP4-MXFP8-CSF-QAD",
   "formats": [
     "safetensors"

@@ -5,7 +5,7 @@
   "author": "Alex995647",
   "url": "https://huggingface.co/Alex995647/loras-z-image-turbo",
   "created_at": "2026-09-04T23:26:09.000Z",
-  "updated_at": "2026-09-05T04:15:36.000Z",
+  "updated_at": "2026-10-15T05:56:30.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 58635922634,
-  "storage_human": "58.6 GB",
+  "storage_bytes": 58655660208,
+  "storage_human": "58.7 GB",
   "base_model": "Tongyi-MAI/Z-Image-Turbo",
   "formats": [
     "diffusers"

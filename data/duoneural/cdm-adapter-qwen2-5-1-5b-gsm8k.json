@@ -5,7 +5,7 @@
   "author": "DuoNeural",
   "url": "https://huggingface.co/DuoNeural/cdm-adapter-qwen2.5-1.5b-gsm8k",
   "created_at": "2026-10-06T19:02:22.000Z",
-  "updated_at": "2026-10-06T22:37:45.000Z",
+  "updated_at": "2026-10-14T10:42:21.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

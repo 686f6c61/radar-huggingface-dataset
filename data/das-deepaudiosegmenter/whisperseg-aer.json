@@ -5,7 +5,7 @@
   "author": "DAS-DeepAudioSegmenter",
   "url": "https://huggingface.co/DAS-DeepAudioSegmenter/whisperseg-aer",
   "created_at": "2026-09-27T08:04:05.000Z",
-  "updated_at": "2026-10-12T21:03:27.000Z",
+  "updated_at": "2026-10-15T01:57:02.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,

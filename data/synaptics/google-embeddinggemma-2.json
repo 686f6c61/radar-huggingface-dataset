@@ -5,7 +5,7 @@
   "author": "Synaptics",
   "url": "https://huggingface.co/Synaptics/Google-EmbeddingGemma-2",
   "created_at": "2026-10-09T18:09:07.000Z",
-  "updated_at": "2026-10-09T20:19:43.000Z",
+  "updated_at": "2026-10-14T23:00:55.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -26,12 +26,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 25,
+  "downloads_30d": 30,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 8302942756,
-  "storage_human": "8.3 GB",
+  "storage_bytes": 10061070086,
+  "storage_human": "10.1 GB",
   "base_model": "google/embeddinggemma-2, onnx-community/embeddinggemma-2-ONNX",
   "formats": [
     "onnx"

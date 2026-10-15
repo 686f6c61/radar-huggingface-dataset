@@ -5,7 +5,7 @@
   "author": "yamz-labs",
   "url": "https://huggingface.co/yamz-labs/GLM-5.3-Flash-EXL3-Yamz-Uncensored",
   "created_at": "2026-10-02T20:45:25.000Z",
-  "updated_at": "2026-10-05T19:28:37.000Z",
+  "updated_at": "2026-10-14T18:53:17.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -36,12 +36,12 @@
     "region:us"
   ],
   "likes": 4,
-  "downloads_30d": 649,
+  "downloads_30d": 661,
   "trending_score": 0,
   "parameters": 49776363614,
   "parameters_human": "49.78B",
-  "storage_bytes": 99794973281,
-  "storage_human": "99.8 GB",
+  "storage_bytes": 100103385273,
+  "storage_human": "100.1 GB",
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "safetensors"

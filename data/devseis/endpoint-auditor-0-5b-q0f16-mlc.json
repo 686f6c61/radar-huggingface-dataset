@@ -5,7 +5,7 @@
   "author": "Devseis",
   "url": "https://huggingface.co/Devseis/endpoint-auditor-0.5b-q0f16-MLC",
   "created_at": "2026-10-08T19:40:34.000Z",
-  "updated_at": "2026-10-13T18:04:43.000Z",
+  "updated_at": "2026-10-14T10:23:57.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 19,
+  "downloads_30d": 31,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

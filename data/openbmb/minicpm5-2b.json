@@ -41,6 +41,7 @@
     "license:apache-2.0",
     "text-generation-inference",
     "endpoints_compatible",
+    "deploy:sagemaker",
     "region:us"
   ],
   "likes": 1771,
