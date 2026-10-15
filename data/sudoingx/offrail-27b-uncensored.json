@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "sudoingx/Offrail-27B-Uncensored",
+  "slug": "sudoingx-offrail-27b-uncensored",
+  "author": "sudoingx",
+  "url": "https://huggingface.co/sudoingx/Offrail-27B-Uncensored",
+  "created_at": "2026-10-15T18:56:52.000Z",
+  "updated_at": "2026-10-15T19:03:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "qwen3_5",
+    "ternary",
+    "ptq1_0",
+    "mtp",
+    "speculative-decoding",
+    "uncensored",
+    "bonsai",
+    "rtx-3060",
+    "text-generation",
+    "base_model:OS-Software/Ternary-Bonsai-2-27B-Uncensored-Heretic-GGUF",
+    "base_model:finetune:OS-Software/Ternary-Bonsai-2-27B-Uncensored-Heretic-GGUF",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2511076,
+  "storage_human": "3 MB",
+  "base_model": "OS-Software/Ternary-Bonsai-2-27B-Uncensored-Heretic-GGUF, prism-ml/Ternary-Bonsai-2-27B-gguf, Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Why does Olaf ult not block teemo blind when teemo blind is ... - Reddit",
+      "url": "https://www.reddit.com/r/leagueoflegends/comments/cjxwr1/why_does_olaf_ult_not_block_teemo_blind_when/",
+      "snippet": "Jul 30, 2019 · It's kinda ridiculous that teemo blind, considered cc and thus reduced by tenacity runes/items/abilities, isn't negated by …Read more"
+    },
+    {
+      "title": "How to Fight Against Swain? : r/TeemoTalk - Reddit",
+      "url": "https://www.reddit.com/r/TeemoTalk/comments/gwfhh3/how_to_fight_against_swain/",
+      "snippet": "Jun 4, 2020 · I'm also a Swain player and a teemo player and heres my two cents. His w takes two seconds to drop down so its …"
+    },
+    {
+      "title": "Is Teemo really just a top laner? : r/leagueoflegends - Reddit",
+      "url": "https://www.reddit.com/r/leagueoflegends/comments/znq230/is_teemo_really_just_a_top_laner/",
+      "snippet": "Dec 16, 2022 · Teemo has a large part of his powerbudget put into being able to beat autoattackers who do not outrange him, which, …"
+    },
+    {
+      "title": "How to play against teemo. : r/summonerschool - Reddit",
+      "url": "https://www.reddit.com/r/summonerschool/comments/1gv42j/how_to_play_against_teemo/",
+      "snippet": "Jun 22, 2013 · Hey everyone, I'm a bronze player who HATES teemo (like most of us I suspect). I think that my main problem is that I …"
+    },
+    {
+      "title": "The Passionate Guide to Teemo (Google Powerpoint) - Reddit",
+      "url": "https://www.reddit.com/r/TeemoTalk/comments/um1t1f/the_passionate_guide_to_teemo_google_powerpoint/",
+      "snippet": "May 9, 2022 · Hello again Scouts! If you haven't heard of me, that's fine. I don't like being the main center of attention. I'm just a …"
+    }
+  ]
+}

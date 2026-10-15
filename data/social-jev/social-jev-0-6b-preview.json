@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "social-jev/social-jev-0.6B-preview",
+  "slug": "social-jev-social-jev-0-6b-preview",
+  "author": "social-jev",
+  "url": "https://huggingface.co/social-jev/social-jev-0.6B-preview",
+  "created_at": "2026-10-15T16:40:59.000Z",
+  "updated_at": "2026-10-15T17:53:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "social_jev",
+    "feature-extraction",
+    "social-jev",
+    "classification",
+    "custom_code",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596050945,
+  "parameters_human": "596.1M",
+  "storage_bytes": 1203560932,
+  "storage_human": "1.2 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Xgroovy Porn Videos - HotMovs.Net",
+      "url": "https://hotmovs.net/source/xgroovy/",
+      "snippet": "Greatest Xgroovy Porno Videos in a wide array of arousing categories. Come inside and enjoy Best Xgroovy Porn 💋."
+    },
+    {
+      "title": "XGroovy et plus de 100 sites porno gratuits comme Xgroovy.com",
+      "url": "https://fr.thepornlinks.com/meilleurs-sites-porno-gratuits/xgroovy/",
+      "snippet": "XGroovy fait partie du top 10 des plus grands sites pornographiques gratuits au monde, et ce pour des raisons simples : sa collection …"
+    },
+    {
+      "title": "Xgroovy Porn Videos - BigAss.Me",
+      "url": "https://bigass.me/tube/xgroovy/",
+      "snippet": "The hottest free Xgroovy porn videos. Free collection of big ass porn videos with daily updates"
+    },
+    {
+      "title": "XGROOVY & 177+ Free Porn Tube Sites Like Xgroovy.com",
+      "url": "https://theporndude.com/12949/xgroovy",
+      "snippet": "What is Xgroovy.com? Xgroovy.com is a site that promises people the chance to get their groove on in an adults-only way by …"
+    },
+    {
+      "title": "'XGroovy&period;com' Search - XVIDEOS.COM",
+      "url": "https://mobile-xvideos.com/?k=XGroovy.com",
+      "snippet": "173,332 XGroovy&period;com FREE videos found on XVIDEOS for this search."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "ZTE-AIM/NebulaTele",
+  "slug": "zte-aim-nebulatele",
+  "author": "ZTE-AIM",
+  "url": "https://huggingface.co/ZTE-AIM/NebulaTele",
+  "created_at": "2026-10-15T02:57:31.000Z",
+  "updated_at": "2026-10-15T13:04:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55582995943,
+  "storage_human": "55.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ZTE-AIM/NebulaTele · Hugging Face",
+      "url": "https://huggingface.co/ZTE-AIM/NebulaTele",
+      "snippet": "ZTE-AIM / NebulaTele like 0 Follow ZTE-AIM 35 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "ZTE-AIM (ZTE-AIM) - Hugging Face",
+      "url": "https://huggingface.co/ZTE-AIM",
+      "snippet": "Org profile for ZTE-AIM on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "ZTE&#x27;s Nebula Telecom Large Model: Driving Networks Toward High-Level ...",
+      "url": "https://www.zte.com.cn/global/about/magazine/zte-technologies/2025/special-topic---nebula-telecom-large-model-/special-topic---nebula-telecom-large-model/zte-s-nebula-telecom-large-model--driving-networks-toward-high-l.html",
+      "snippet": "ZTE&#x27;s Nebula Telecom Large Model is enhancing its capabilities in seamless engine switching, dynamic knowledge integration, and in-depth reasoning, extending its reach to complex scenarios and driving the network toward high levels of autonomy."
+    },
+    {
+      "title": "ZTE launches the Nebula Telecom Large Model, opening a new paradigm for ...",
+      "url": "https://www.zte.com.cn/global/about/news/zte-launches-the-nebula-telecom-large-model-opening-a-new-paradigm-for-highly-autonomous-networks.html",
+      "snippet": "Shanghai, China, 1 July 2024 - ZTE Corporation (0763.HK / 000063.SZ), a global leading provider of integrated information and communication technology solutions, has launched its series of Nebula Telecom Large Model products. This series includes the telecom large model, agents factory, and large model application innovation. By offering a complete system from the model to the platform and ..."
+    },
+    {
+      "title": "ZTE launches Nebula Telecom Large Model for Autonomous Networks",
+      "url": "https://convergedigest.com/zte-launches-nebula-telecom-large-model-for-autonomous-networks/",
+      "snippet": "ZTE launch its Nebula Telecom Large Model product series with the goal of empowering global operators to achieve highly autonomous networks. The Nebula Telecom Large Model, leveraging the \"ZTE Digital Nebula\" assemblable architecture, is designed to address complex issues and accelerate the development of autonomous networks. It facilitates collaboration from cross-domain to single-domain ..."
+    }
+  ]
+}

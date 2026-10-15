@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "NONHUMAN-RESEARCH/folding-towel-teleop-vr-act",
+  "slug": "nonhuman-research-folding-towel-teleop-vr-act",
+  "author": "NONHUMAN-RESEARCH",
+  "url": "https://huggingface.co/NONHUMAN-RESEARCH/folding-towel-teleop-vr-act",
+  "created_at": "2026-10-15T02:52:40.000Z",
+  "updated_at": "2026-10-15T02:52:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:NONHUMAN-RESEARCH/folding-towel-teleop-vr",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": 51685006,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206783680,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NONHUMAN-RESEARCH/folding-towel-teleop-vr-act · Hugging Face",
+      "url": "https://huggingface.co/NONHUMAN-RESEARCH/folding-towel-teleop-vr-act",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "NONHUMAN-RESEARCH/act-hanoi-teleop · Hugging Face",
+      "url": "https://huggingface.co/NONHUMAN-RESEARCH/act-hanoi-teleop",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - alibaba-damo-academy/RynnWorld-Teleop: RynnWorld-Teleop: An ...",
+      "url": "https://github.com/alibaba-damo-academy/RynnWorld-Teleop",
+      "snippet": "We introduce RynnWorld-Teleop, a robot-centric generative world model that instantiates the paradigm of digital teleoperation —decoupling robot data collection from physical hardware constraints. By transforming an operator&#x27;s real-time hand-pose stream into high-fidelity egocentric robotic videos from a single reference image, RynnWorld-Teleop enables the scaling of expert trajectories in ..."
+    },
+    {
+      "title": "RynnWorld-Teleop: An Action-Conditioned World Model for Digital ...",
+      "url": "https://arxiv.org/abs/2607.06558",
+      "snippet": "Scaling robot learning requires massive, diverse trajectory data, yet collection is currently bottlenecked by physical teleoperation, where every demonstration binds operator time to specific hardware and workspaces. We introduce digital teleoperation, a paradigm that decouples data collection from physical constraints by replacing the real robot with a generative world model. In this ..."
+    },
+    {
+      "title": "Bimanual Towel Folding with Corrective HIL Fine-Tuning",
+      "url": "https://dream25851.github.io/Bimanual_Folding/index.html",
+      "snippet": "A dual-Piper towel-folding system that combines ACT corner-grasp pretraining with corrective human-in-the-loop fine-tuning."
+    }
+  ]
+}

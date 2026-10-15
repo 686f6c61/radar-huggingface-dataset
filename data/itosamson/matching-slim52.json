@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "itosamson/matching-slim52",
+  "slug": "itosamson-matching-slim52",
+  "author": "itosamson",
+  "url": "https://huggingface.co/itosamson/matching-slim52",
+  "created_at": "2026-10-15T03:17:49.000Z",
+  "updated_at": "2026-10-15T03:17:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "efficientformer",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Language: english » nhentai",
+      "url": "https://nhentai.net/language/english/",
+      "snippet": "Read 148,352 galleries with language english on nhentai, a hentai doujinshi and manga reader."
+    },
+    {
+      "title": "AsmHentai - Free Hentai Manga and Doujinshi Reader",
+      "url": "https://asmhentai.com/?Home",
+      "snippet": "Latest free hentai manga and doujinshi. Page 1 - AsmHentai has over 400,000 porn galleries for you to enjoy."
+    },
+    {
+      "title": "nhentai: hentai doujinshi and manga",
+      "url": "https://nhentai.net/?lang=en",
+      "snippet": "nhentai is a free hentai manga and doujinshi reader with over 650,000 galleries to read and download."
+    },
+    {
+      "title": "HentaiFox - Free Hentai Manga, Doujinshi and Anime Porn",
+      "url": "https://hentaifox.com/",
+      "snippet": "Enjoy free hentai manga, adult doujinshi, xxx comics and anime porn. Our database grows daily."
+    },
+    {
+      "title": "3Hentai - Hentai Manga et Doujins XXX en ligne gratuit",
+      "url": "https://fr.3hentai.net/",
+      "snippet": "Des centaines de milliers de hentai avec des nouveautés chaque jour sur 3Hentai. Plus de 650 000 manga hentai sur notre site …"
+    }
+  ]
+}

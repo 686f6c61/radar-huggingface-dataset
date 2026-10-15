@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "joh-nson/swin-t-experiment",
+  "slug": "joh-nson-swin-t-experiment",
+  "author": "joh-nson",
+  "url": "https://huggingface.co/joh-nson/swin-t-experiment",
+  "created_at": "2026-10-15T02:35:31.000Z",
+  "updated_at": "2026-10-15T02:35:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tampons bio, culottes de règles, protections hygiéniques en coton bio",
+      "url": "https://www.jho.fr/",
+      "snippet": "Tampons, culottes menstruelles, cup menstruelle, serviettes et protège-slips en coton bio disponibles par abonnement ou en achat …"
+    },
+    {
+      "title": "Chercher un Journal officiel (JO) | Service Public",
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/R50889",
+      "snippet": "Votre abonnement n’a pas pu être pris en compte. Vous devez vous connecter à votre espace personnel afin de vous abonner à la …"
+    },
+    {
+      "title": "Joh - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Joh",
+      "snippet": "Laura Joh Rowland (born 1953), American author Tho Joh Heftye, an alias of Thomas Johannessen Heftye (1822–1886), Norwegian …"
+    },
+    {
+      "title": "Journal of Hydrology | ScienceDirect.com by Elsevier",
+      "url": "https://www.sciencedirect.com/journal/journal-of-hydrology",
+      "snippet": "Journal of Hydrology publishes original research papers and comprehensive reviews in all the subfields of the hydrological sciences, …"
+    },
+    {
+      "title": "Johane Joh - Facebook",
+      "url": "https://www.facebook.com/JohaneOfficial/reels/",
+      "snippet": "Johane Joh. 902,528 followers · 38,219 talking about this. \"Mon monde , mes sons , mon histoire\""
+    }
+  ]
+}

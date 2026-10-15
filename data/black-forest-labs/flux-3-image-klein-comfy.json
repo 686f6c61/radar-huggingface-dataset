@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "black-forest-labs/flux-3-image-klein-comfy",
+  "slug": "black-forest-labs-flux-3-image-klein-comfy",
+  "author": "black-forest-labs",
+  "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
+  "created_at": "2026-10-14T12:00:13.000Z",
+  "updated_at": "2026-10-15T15:48:44.000Z",
+  "license": "flux-kommunity-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusion-single-file",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "image-generation",
+    "image-editing",
+    "flux",
+    "flux-3",
+    "black-forest-labs",
+    "image-to-image",
+    "en",
+    "base_model:black-forest-labs/flux-3-image-klein",
+    "base_model:finetune:black-forest-labs/flux-3-image-klein",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 128,
+  "downloads_30d": 39,
+  "trending_score": 119,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 68169729458,
+  "storage_human": "68.2 GB",
+  "base_model": "black-forest-labs/flux-3-image-klein, black-forest-labs/flux-3-image-klein-base, black-forest-labs/flux-3-image-klein-pup",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Passez au meilleur de la tech reconditionnée. | Back Market",
+      "url": "https://www.backmarket.fr/fr-fr?msockid=1bfe628c91f9614f1edf757f90f16034",
+      "snippet": "Profitez d'articles reconditionnés sur Back Market, moins cher que le neuf ! Livraison standard offerte - Garantie contractuelle de 12 …Read more"
+    },
+    {
+      "title": "Black - Simple English Wikipedia, the free encyclopedia",
+      "url": "https://simple.wikipedia.org/wiki/Black",
+      "snippet": "No color can have the same level of dark pigmentation without turning itself into black. As the visual perception of an object's color is …"
+    },
+    {
+      "title": "BLACKSTORE - Vivez l’expérience mode !",
+      "url": "https://www.blackstore.fr/",
+      "snippet": "Le meilleur des marques se trouve chez BLACKSTORE. Vêtements, accessoires, chaussures pour femmes et hommes : tous les …"
+    },
+    {
+      "title": "Black M - YouTube",
+      "url": "https://www.youtube.com/channel/UCa_m88y-YP42wOdoYaIk6og",
+      "snippet": "Black M - La Légende Black Play all Retrouve toutes les vidéos officielles de l'album La Légende Black ! Album disponible : …"
+    },
+    {
+      "title": "Opticien en Ligne : Lunettes BLACKSHEEP Dès 2,50 €",
+      "url": "https://www.blacksheep.io/fr/",
+      "snippet": "e site officiel BLACKSHEEP. Votre opticien pour l'achat en ligne de lunettes direct usine. Plus de 20 000 modèles de vue et soleil …"
+    }
+  ]
+}

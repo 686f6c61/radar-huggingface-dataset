@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "AnonymousCS/antielite_classifier_bsample_008_s44",
+  "slug": "anonymouscs-antielite_classifier_bsample_008_s44",
+  "author": "AnonymousCS",
+  "url": "https://huggingface.co/AnonymousCS/antielite_classifier_bsample_008_s44",
+  "created_at": "2026-10-15T02:40:54.000Z",
+  "updated_at": "2026-10-15T02:41:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 177854978,
+  "parameters_human": "177.9M",
+  "storage_bytes": 711443432,
+  "storage_human": "711 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WXXX - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/WXXX",
+      "snippet": "WXXX (95.5 FM, 95 Triple X) is a commercial radio station licensed to South Burlington, Vermont, and serving the Champlain Valley. …"
+    },
+    {
+      "title": "WXXX - 95 Triple X",
+      "url": "https://www.95triplex.com/",
+      "snippet": "Ariana Grande - hate that i made you love me (official music video)"
+    },
+    {
+      "title": "WXXX - 95 Triple X Live Stream - Vermont | US Radio",
+      "url": "https://us-radio.com/wxxx-95-triple-x-r17392",
+      "snippet": "1 day ago · WXXX Radio broadcasts on 95.5 FM. Licensed to South Burlington, Vermont, the station is the region’s top source for hit …"
+    },
+    {
+      "title": "RadioToday Links on X: \"WXXX (95 Triple X) Reaches Milestone ...",
+      "url": "https://x.com/RadioTodayLinks/status/1883084910866338091",
+      "snippet": "Jun 3, 2026 · WXXX (95 Triple X) Reaches Milestone, Celebrating 40 Years in Burlington - from Radio Online https://t.co/AxsJpqAYZx"
+    },
+    {
+      "title": "XXX - Trailers & Videos | Rotten Tomatoes",
+      "url": "https://www.rottentomatoes.com/m/xxx/videos/1828701251997",
+      "snippet": "View HD Trailers and Videos for XXX on Rotten Tomatoes, then check our Tomatometer to find out what the Critics say."
+    }
+  ]
+}

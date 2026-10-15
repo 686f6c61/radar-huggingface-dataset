@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "Kabirdas40/albef-contrastive-v258",
+  "slug": "kabirdas40-albef-contrastive-v258",
+  "author": "Kabirdas40",
+  "url": "https://huggingface.co/Kabirdas40/albef-contrastive-v258",
+  "created_at": "2026-10-15T16:29:16.000Z",
+  "updated_at": "2026-10-15T16:29:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

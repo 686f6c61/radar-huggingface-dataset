@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Duckets/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-MLX-4bit",
+  "slug": "duckets-nvidia-nemotron-3-5-bolt-74b-a9b-mlx-4bit",
+  "author": "Duckets",
+  "url": "https://huggingface.co/Duckets/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-MLX-4bit",
+  "created_at": "2026-10-15T18:50:22.000Z",
+  "updated_at": "2026-10-15T18:51:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx-vlm",
+  "languages": [],
+  "tags": [
+    "mlx-vlm",
+    "mlx",
+    "vision",
+    "4-bit",
+    "nemotron",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16",
+    "base_model:finetune:nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

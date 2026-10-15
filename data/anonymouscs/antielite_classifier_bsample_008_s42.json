@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "AnonymousCS/antielite_classifier_bsample_008_s42",
+  "slug": "anonymouscs-antielite_classifier_bsample_008_s42",
+  "author": "AnonymousCS",
+  "url": "https://huggingface.co/AnonymousCS/antielite_classifier_bsample_008_s42",
+  "created_at": "2026-10-15T02:33:09.000Z",
+  "updated_at": "2026-10-15T02:33:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 177854978,
+  "parameters_human": "177.9M",
+  "storage_bytes": 711443432,
+  "storage_human": "711 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AnonymousCS/antielite_classifier_all · Hugging Face",
+      "url": "https://huggingface.co/AnonymousCS/antielite_classifier_all",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AnonymousCS (Anonymous_S) - Hugging Face",
+      "url": "https://huggingface.co/AnonymousCS",
+      "snippet": "AnonymousCS/HateBERT-Twitter-toxicity Text Classification • Updated 1 day ago • 10 Expand 18 model s"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 948 AI models across 629 benchmarks, with 222 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "AI API Model Tester — Check Which Model Your API Actually Runs ...",
+      "url": "https://apimaster.ai/ai-api-model-tester",
+      "snippet": "Free AI API model tester. Paste any OpenAI, Claude or Gemini endpoint and see which model it really runs — fingerprint detection exposes substituted or fake models in seconds. No key stored."
+    },
+    {
+      "title": "Free AI Models Directory | Free AI Model APIs | Free Model",
+      "url": "https://freemodel.io/en",
+      "snippet": "Find free AI models and free AI model APIs with access requirements, context limits, provider details, model IDs, and copy-ready examples for building faster."
+    }
+  ]
+}

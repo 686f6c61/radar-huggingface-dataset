@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "pratheeks/deepseek-moe-16b-chat-GGUF",
+  "slug": "pratheeks-deepseek-moe-16b-chat-gguf",
+  "author": "pratheeks",
+  "url": "https://huggingface.co/pratheeks/deepseek-moe-16b-chat-GGUF",
+  "created_at": "2026-10-15T02:53:29.000Z",
+  "updated_at": "2026-10-15T02:55:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": 16375728128,
+  "parameters_human": "16.38B",
+  "storage_bytes": 32762762432,
+  "storage_human": "32.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deepseek-ai/deepseek-moe-16b-chat · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/deepseek-moe-16b-chat",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nesteggs/deepseek-moe-16b-chat · Hugging Face",
+      "url": "https://huggingface.co/nesteggs/deepseek-moe-16b-chat",
+      "snippet": "Avoiding the use of the provided function apply_chat_template, you can also interact with our model following the sample template. Note that messages should be replaced by your input."
+    },
+    {
+      "title": "GitHub - deepseek-ai/DeepSeek-MoE: DeepSeekMoE: Towards Ultimate Expert ...",
+      "url": "https://github.com/deepseek-ai/DeepSeek-MoE",
+      "snippet": "We also evaluate DeepSeekMoE 16B Chat on various benchmarks and compare it with DeepSeek 7B Chat and LLaMA2 7B SFT. All of the compared models follow the same fine-tuning setting and data for fair comparison. The evaluation results are shown in the following. With only about 40% of computations, DeepSeekMoE 16B Chat achieves comparable or better performance than DeepSeek 7B Chat and LLaMA2 7B SFT."
+    },
+    {
+      "title": "deepseek-ai/deepseek-moe-16b-chat • hfviewer",
+      "url": "https://hfviewer.com/deepseek-ai/deepseek-moe-16b-chat",
+      "snippet": "A GGUF release of darkc0de/XORTRON-NXTXPRT9PRO-27B, a Qwen3.5-family multimodal model from the XORTRON Criminal Computing project. The model card frames the project as an AI-safety and alignment research experiment."
+    },
+    {
+      "title": "github.com/deepseek-ai/DeepSeek-MoE@main — CodeHub",
+      "url": "https://codehub.bot/github.com/deepseek-ai/DeepSeek-MoE@main",
+      "snippet": "With only about 40% of computations, DeepSeekMoE 16B Chat achieves comparable or better performance than DeepSeek 7B Chat and LLaMA2 7B SFT. We release the DeepSeekMoE 16B, including both base and chat models, to the public. To support a broader and more diverse range of research within both academic and commercial communities."
+    }
+  ]
+}

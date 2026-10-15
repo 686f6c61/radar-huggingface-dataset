@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "AEUPH/illustrious-xl-unet-gguf",
+  "slug": "aeuph-illustrious-xl-unet-gguf",
+  "author": "AEUPH",
+  "url": "https://huggingface.co/AEUPH/illustrious-xl-unet-gguf",
+  "created_at": "2026-10-15T03:06:52.000Z",
+  "updated_at": "2026-10-15T03:26:55.000Z",
+  "license": "fair-ai-public-license-1.0-sd",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "gguf",
+    "stable-diffusion",
+    "stable-diffusion-xl",
+    "sdxl",
+    "illustrious",
+    "illustrious-xl",
+    "quantized",
+    "unet",
+    "q8_0",
+    "q4_0",
+    "f16",
+    "comfyui",
+    "text-to-image",
+    "anime",
+    "base-model:illustrious",
+    "base_model:OnomaAIResearch/Illustrious-xl-early-release-v0",
+    "base_model:quantized:OnomaAIResearch/Illustrious-xl-early-release-v0",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": 2567463684,
+  "parameters_human": "2.57B",
+  "storage_bytes": 10102681792,
+  "storage_human": "10.1 GB",
+  "base_model": "OnomaAIResearch/Illustrious-xl-early-release-v0",
+  "formats": [
+    "diffusers",
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Viral Nude Videos Collection | Goon Desi",
+      "url": "https://goondesi.co/category/viral",
+      "snippet": "Discover fresh Desi XXX content, viral porn, and exclusive nude clips updated daily. This platform features stunning Indian beauties, …"
+    },
+    {
+      "title": "Desi MMS Videos - Latest Indian Porn MMS & Hot Clips - DesiHub1",
+      "url": "https://desihub1.com/category/desi-mms",
+      "snippet": "Watch free Desi MMS videos, Indian MMS leaks, and hot desi clips. Latest updates Viral Desi MMS collections & exclusive desi porn …"
+    },
+    {
+      "title": "Desi Viral Sex Bangla 2026 porn - 1,000 Indian Porn Videos - MyDesi",
+      "url": "https://mydesi.com.co/search/desi-viral-sex-bangla-2026",
+      "snippet": "Watch 1,000 desi viral sex bangla 2026 xxx videos at MyDesi. Handpicked Indian porn featuring real Desi girls, bhabhi sex scandals, …"
+    },
+    {
+      "title": "Indian Vairal porn - 96 Indian Porn Videos - MyDesi",
+      "url": "https://mydesi.com.co/search/vairal",
+      "snippet": "Watch 96 indian vairal xxx videos at MyDesi. Handpicked Indian porn featuring real Desi girls, bhabhi sex scandals, and exclusive …"
+    },
+    {
+      "title": "Desi Nude - Latest Viral MMS & Indian Adult Videos",
+      "url": "https://desinude.net/",
+      "snippet": "Desi Nude provides free streaming of the latest viral MMS videos and Indian adult content. The site features an extensive collection …"
+    }
+  ]
+}

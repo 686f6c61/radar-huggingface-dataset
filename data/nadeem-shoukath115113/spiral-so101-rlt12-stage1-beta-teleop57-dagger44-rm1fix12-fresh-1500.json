@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Nadeem-Shoukath115113/spiral-so101-rlt12-stage1-beta-teleop57-dagger44-rm1fix12-fresh-1500",
+  "slug": "nadeem-shoukath115113-spiral-so101-rlt12-stage1-beta-teleop57-dagger44-rm1fix12-fresh-1500",
+  "author": "Nadeem-Shoukath115113",
+  "url": "https://huggingface.co/Nadeem-Shoukath115113/spiral-so101-rlt12-stage1-beta-teleop57-dagger44-rm1fix12-fresh-1500",
+  "created_at": "2026-10-15T03:16:09.000Z",
+  "updated_at": "2026-10-15T03:16:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "so101",
+    "spiral",
+    "residual-rl",
+    "rlt",
+    "pi05",
+    "correlated-noise",
+    "beta-sweep",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 731153965,
+  "storage_human": "731 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Esquire - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Esquire",
+      "snippet": "Esquire is historically a feudal designation in Scotland. Today, the title of esquire is defined as a social dignity that refers to people of …Read more"
+    },
+    {
+      "title": "ESQUIRE | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/esquire",
+      "snippet": "Of those rising in status four - grocer's, miller's, maltster's and pattenmaker's daughters - all married gentlemen, and a tanner's …"
+    },
+    {
+      "title": "What Is the Difference Between J.D., Lawyer, Attorney, and Esquire?",
+      "url": "https://www.findlaw.com/legalblogs/law-and-life/whats-the-difference-between-jd-and-esq/",
+      "snippet": "Jan 23, 2024 · Esquire is an honorary title that is placed after a practicing lawyer's name. Practicing lawyers are those who have …"
+    },
+    {
+      "title": "ESQUIRE Definition & Meaning - Merriam-Webster",
+      "url": "https://www.merriam-webster.com/dictionary/esquire",
+      "snippet": "Jul 1, 2026 · The meaning of ESQUIRE is a member of the English gentry ranking below a knight. How to use esquire in a sentence."
+    },
+    {
+      "title": "esquire - Wiktionary, the free dictionary",
+      "url": "https://en.m.wiktionary.org/wiki/esquire",
+      "snippet": "Aug 22, 2026 · esquire (plural esquires) (usually US, law) A lawyer. A male member of the gentry ranking below a knight."
+    }
+  ]
+}

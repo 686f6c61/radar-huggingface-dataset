@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "anne-voigt/bcc-ui-theme",
+  "slug": "anne-voigt-bcc-ui-theme",
+  "author": "anne-voigt",
+  "url": "https://huggingface.co/anne-voigt/bcc-ui-theme",
+  "created_at": "2026-10-15T18:37:01.000Z",
+  "updated_at": "2026-10-15T18:44:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8435,
+  "storage_human": "8435 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anne — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Anne",
+      "snippet": "Anne est un nom propre d'origine hébraïque (voir le personnage biblique Hanna), surtout utilisé comme prénom. Anne est un …"
+    },
+    {
+      "title": "Prénom Anne (fille) : signification, origine, caractère, sainte, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/anne/prenom-1969",
+      "snippet": "Quelle est l'origine du prénom Anne ? Anne est dérivé du prénom hébraïque Hannah. Anne peut aussi être considéré comme un …"
+    },
+    {
+      "title": "Le prénom Anne: Signification, origine, personnalité",
+      "url": "https://www.prenoms.com/prenom-fille/anne-227",
+      "snippet": "Oct 9, 2020 · Tout sur le prénom Anne : découvrez son origine, combien de Anne sont nés en France chaque année, ou qui sont les …"
+    },
+    {
+      "title": "Anne Guéguen, ambassadrice de France en Tunisie",
+      "url": "https://tn.diplomatie.gouv.fr/fr/anne-gueguen-ambassadrice-de-france-en-tunisie",
+      "snippet": "Jul 15, 2025 · Anne GUÉGUEN (née le 12 juillet 1971) était jusqu’à sa nomination en tant qu’ Ambassadrice à Tunis Directrice …"
+    },
+    {
+      "title": "Anne - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Anne",
+      "snippet": "Anne, alternatively spelled Ann, is a form of the Latin female name Anna. This in turn is a representation of the Hebrew Hannah, …"
+    }
+  ]
+}

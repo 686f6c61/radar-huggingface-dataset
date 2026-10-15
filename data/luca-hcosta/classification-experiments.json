@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Luca-hcosta/classification-experiments",
+  "slug": "luca-hcosta-classification-experiments",
+  "author": "Luca-hcosta",
+  "url": "https://huggingface.co/Luca-hcosta/classification-experiments",
+  "created_at": "2026-10-15T03:04:42.000Z",
+  "updated_at": "2026-10-15T03:04:48.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lucca - 15 Logiciels RH et administratifs : la meilleure solution SIRH ...",
+      "url": "https://www.lucca.fr/",
+      "snippet": "Constituez votre propre SIRH en combinant des logiciels spécialisés sur chacune de vos problématiques de gestion administrative et …"
+    },
+    {
+      "title": "Lucca",
+      "url": "https://www.lucca.fr/login",
+      "snippet": "Connectez-vous à votre espace personnel Saisissez votre adresse mail pour accéder à la page de connexion de votre espace Lucca …"
+    },
+    {
+      "title": "Luca - Exclusivement en streaming dès maintenant | Disney",
+      "url": "https://www.disney.fr/films/luca",
+      "snippet": "Situé dans une magnifique ville côtière de la Riviera italienne, le long-métrage de Disney et Pixar, “Luca”, raconte l’histoire d’un …"
+    },
+    {
+      "title": "LUCA",
+      "url": "https://www.luca.paris/",
+      "snippet": "LUCA, le centre d’affaires dédié aux experts-comptables et commissaires aux comptes permet de disposer d’espaces de travail …"
+    },
+    {
+      "title": "Luca (film) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Luca_(film)",
+      "snippet": "Luca est un film américain réalisé par Enrico Casarosa, sorti en 2021. Le scénario est co-signé par Jesse Andrews et Mike Jones sur …"
+    }
+  ]
+}

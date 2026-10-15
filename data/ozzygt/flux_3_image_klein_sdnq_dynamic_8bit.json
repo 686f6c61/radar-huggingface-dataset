@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "OzzyGT/Flux_3_Image_Klein_sdnq_dynamic_8bit",
+  "slug": "ozzygt-flux_3_image_klein_sdnq_dynamic_8bit",
+  "author": "OzzyGT",
+  "url": "https://huggingface.co/OzzyGT/Flux_3_Image_Klein_sdnq_dynamic_8bit",
+  "created_at": "2026-10-15T17:09:02.000Z",
+  "updated_at": "2026-10-15T17:16:54.000Z",
+  "license": "flux-kommunity-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "image-generation",
+    "image-editing",
+    "flux",
+    "flux-3",
+    "sdnq",
+    "image-to-image",
+    "en",
+    "base_model:black-forest-labs/flux-3-image-klein",
+    "base_model:quantized:black-forest-labs/flux-3-image-klein",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5554024192,
+  "parameters_human": "5.55B",
+  "storage_bytes": 10814917948,
+  "storage_human": "10.8 GB",
+  "base_model": "black-forest-labs/flux-3-image-klein",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

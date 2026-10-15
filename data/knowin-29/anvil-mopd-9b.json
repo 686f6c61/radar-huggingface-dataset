@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Knowin-29/Anvil-MOPD-9B",
+  "slug": "knowin-29-anvil-mopd-9b",
+  "author": "Knowin-29",
+  "url": "https://huggingface.co/Knowin-29/Anvil-MOPD-9B",
+  "created_at": "2026-10-15T03:16:40.000Z",
+  "updated_at": "2026-10-15T03:16:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "embodied-ai",
+    "spatial-reasoning",
+    "release-placeholder",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anthropic AI model made false tip in unsolved Philly murder: Officials ...",
+      "url": "https://abcnews.com/US/anthropic-ai-model-made-false-tip-unsolved-philly/story?id=137190087",
+      "snippet": "An Anthropic artificial intelligence model submitted a false tip in an unsolved murder case to a Philadelphia Police Department website, the company and police officials said. In a detailed report released to the public, the tech company said its Claude Haiku 4.5 AI model submitted the fabricated ..."
+    },
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "Anvil-Embodied-AI - GitHub",
+      "url": "https://github.com/anvil-robotics/anvil-embodied-ai",
+      "snippet": "This repository is the embodied AI stack for the Anvil platform — data conversion, model training, and real-time inference for robot manipulation policies. Anvil Devbox (Data collection) This repo (anvil-embodied-ai ..."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches across OpenAI, Anthropic, Google DeepMind, SpaceXAI, DeepSeek, Qwen, Moonshot AI, Meta, Mistral AI, MiniMax, and other important AI labs. You can use the newest-first tables to find the release date, provider, release stage, and model type."
+    },
+    {
+      "title": "Training a Model | Anvil Robotics",
+      "url": "https://docs.anvil.bot/user-guides/training-a-model",
+      "snippet": "Providing the essential infrastructure to deploy, orchestrate, and optimize advanced AI models on Anvil Robotics&#x27; robot platforms. Explore more at https://anvil.bot/ GitHub Anvil&#x27;s embodied AI SDK is in early beta. We will be improving reliability and adding support for new models and workflows soon."
+    }
+  ]
+}

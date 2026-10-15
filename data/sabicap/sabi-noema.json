@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "sabicap/sabi-noema",
+  "slug": "sabicap-sabi-noema",
+  "author": "sabicap",
+  "url": "https://huggingface.co/sabicap/sabi-noema",
+  "created_at": "2026-10-13T12:38:56.000Z",
+  "updated_at": "2026-10-14T20:10:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "agentic",
+    "reinforcement-learning",
+    "tool-use",
+    "hybrid-attention",
+    "qwen3.8",
+    "conversational",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 15,
+  "downloads_30d": 414,
+  "trending_score": 15,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 54726774022,
+  "storage_human": "54.7 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "snapchat苹果版下载教程-百度经验",
+      "url": "https://jingyan.baidu.com/article/4d58d541aefb4edcd5e9c04a.html",
+      "snippet": "Jun 2, 2025 · snapchat苹果版下载教程,“阅后即焚”照片分享应用Sachat（色拉布）是由斯坦福大学两位学生开发的一款“阅后即焚”照 …"
+    },
+    {
+      "title": "Snap - 知乎",
+      "url": "https://www.zhihu.com/topic/19794146",
+      "snippet": "Snapchat是一款“阅后即焚”照片分享应用，该应用主要的功能是所有照片都有一个1到10秒的生命期，用户拍了照片发送给好友后，照 …"
+    },
+    {
+      "title": "snapchat-11.1.6.81 - 吾爱破解 - 52pojie.cn",
+      "url": "https://www.52pojie.cn/thread-1274905-1-1.html",
+      "snippet": "Sep 27, 2020 · 【应用名称】：snapchat【软件版本】：11.1.6.81 (2020年9月25日更新）【软件大小】：61.5MB【软件介绍】：本来 …"
+    },
+    {
+      "title": "谁能告诉我snapchat到底怎么玩？ - 知乎",
+      "url": "https://www.zhihu.com/question/22785060",
+      "snippet": "Snapchat 是一个分享短视频（10秒左右）或者照片的软件。因为吐舌头的狗狗滤镜可能火起来的。不过最近国内需要翻墙才能使用。 …"
+    },
+    {
+      "title": "snapchat软件怎么下载安装-百度经验",
+      "url": "https://jingyan.baidu.com/article/77b8dc7fcf936d2075eab60e.html",
+      "snippet": "Nov 25, 2020 · snapchat软件怎么下载安装,achat是一款照片及视频分享应用软件，最大的特点是将照片或视频发给好友后，可以根据 …"
+    }
+  ]
+}

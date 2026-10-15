@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Takahasikelvin/assignment-contrastive-learning50",
+  "slug": "takahasikelvin-assignment-contrastive-learning50",
+  "author": "Takahasikelvin",
+  "url": "https://huggingface.co/Takahasikelvin/assignment-contrastive-learning50",
+  "created_at": "2026-10-15T03:23:30.000Z",
+  "updated_at": "2026-10-15T03:23:35.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "contrastive-learning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Takahasikelvin/assignment-contrastive-learning50 · Hugging Face",
+      "url": "https://huggingface.co/Takahasikelvin/assignment-contrastive-learning50",
+      "snippet": "Takahasikelvin ... assignment-contrastive-learning50 Like 0 Safetensors transformer research-notes contrastive-learning License:cc-by-4. Model card FilesFiles and versions xet Community Copy to bucket new Notes on Contrastive Learning Repository summary What is covered How to read this repository Scope and limitations Files License"
+    },
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "Anthropic AI model submits false homicide tip to police website",
+      "url": "https://www.msn.com/en-us/news/other/anthropic-ai-model-submits-false-homicide-tip-to-police-website/ar-AA2dVuKE",
+      "snippet": "Oct 9 (Reuters) - An Anthropic artificial intelligence model submitted a false homicide tip through a Philadelphia police website, the department said in a statement, the latest incident of an AI ..."
+    },
+    {
+      "title": "Anthropic says its AI model submitted a false cold case tip to ...",
+      "url": "https://www.nbcnews.com/news/us-news/anthropic-says-model-submitted-false-cold-case-tip-philadelphia-police-rcna603213",
+      "snippet": "The AI model reached out to PhillyUnsolvedMurders.com, part of the police department, on July 18 and made a \"false homicide tip,\" Philadelphia police said Tuesday in a statement."
+    },
+    {
+      "title": "Contrastive Learning: How Models Learn by Comparison - DataCamp",
+      "url": "https://www.datacamp.com/tutorial/contrastive-learning",
+      "snippet": "Learn what contrastive learning is, how it works, and why it is used in modern machine learning for representation learning and self-supervised learning."
+    }
+  ]
+}

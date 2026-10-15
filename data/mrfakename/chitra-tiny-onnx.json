@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mrfakename/Chitra-Tiny-ONNX",
+  "slug": "mrfakename-chitra-tiny-onnx",
+  "author": "mrfakename",
+  "url": "https://huggingface.co/mrfakename/Chitra-Tiny-ONNX",
+  "created_at": "2026-10-15T03:05:33.000Z",
+  "updated_at": "2026-10-15T03:10:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "webgpu",
+    "text-to-image",
+    "chitra-tiny",
+    "base_model:udgamlabs/Chitra-Tiny",
+    "base_model:quantized:udgamlabs/Chitra-Tiny",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 743753146,
+  "storage_human": "744 MB",
+  "base_model": "udgamlabs/Chitra-Tiny",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mrfakename/Chitra-Tiny-ONNX · Hugging Face",
+      "url": "https://huggingface.co/mrfakename/Chitra-Tiny-ONNX",
+      "snippet": "ONNX export of udgamlabs/Chitra-Tiny, a 212M-parameter text-to-image model (256×256), for onnxruntime-web on WebGPU. Used by the mrfakename/chitra-tiny-webgpu Space. Weights are stored in fp16 and cast to fp32 inside each graph: half the download, fp32 math. The DiT can&#x27;t run in fp16 because its ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=chitra-tiny",
+      "snippet": "Models 2 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: chitra-tiny Clear all"
+    },
+    {
+      "title": "GitHub - UdgamLabs/chitra-tiny: Chitra Tiny: a 212M-parameter text-to ...",
+      "url": "https://github.com/UdgamLabs/chitra-tiny",
+      "snippet": "A 212M-parameter English text-to-image model that makes 256×256 pictures from a sentence. Built by Udgam Labs, a frontier technology lab. The image model was trained from scratch, on about 4.7 million public-domain and CC0 images. It runs on a laptop: about 3 seconds per image on an Apple-silicon Mac. Chitra (चित्र) means \"picture\"."
+    },
+    {
+      "title": "Models - ONNX Runtime",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    },
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of pre-trained, state-of-the-art models in the ONNX format."
+    }
+  ]
+}

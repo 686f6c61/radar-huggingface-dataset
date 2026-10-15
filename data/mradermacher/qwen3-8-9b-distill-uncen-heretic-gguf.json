@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.8-9B-Distill-uncen-heretic-GGUF",
+  "slug": "mradermacher-qwen3-8-9b-distill-uncen-heretic-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.8-9B-Distill-uncen-heretic-GGUF",
+  "created_at": "2026-10-15T16:47:29.000Z",
+  "updated_at": "2026-10-15T17:47:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "empero-ai",
+    "qwen3.5",
+    "qwen3.8",
+    "distillation",
+    "reasoning",
+    "function-calling",
+    "sft",
+    "en",
+    "base_model:Zammael333/Qwen3.8-9B-Distill-uncen-heretic",
+    "base_model:quantized:Zammael333/Qwen3.8-9B-Distill-uncen-heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 85101506560,
+  "storage_human": "85.1 GB",
+  "base_model": "Zammael333/Qwen3.8-9B-Distill-uncen-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

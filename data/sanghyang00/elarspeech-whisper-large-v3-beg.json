@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Sanghyang00/ELARSpeech-Whisper-Large-v3-beg",
+  "slug": "sanghyang00-elarspeech-whisper-large-v3-beg",
+  "author": "Sanghyang00",
+  "url": "https://huggingface.co/Sanghyang00/ELARSpeech-Whisper-Large-v3-beg",
+  "created_at": "2026-10-15T03:13:47.000Z",
+  "updated_at": "2026-10-15T03:19:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "beg"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "elarspeech",
+    "whisper-large-v3",
+    "beg",
+    "base_model:openai/whisper-large-v3",
+    "base_model:finetune:openai/whisper-large-v3",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543491840,
+  "parameters_human": "1.54B",
+  "storage_bytes": 6174117304,
+  "storage_human": "6.2 GB",
+  "base_model": "openai/whisper-large-v3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Disparition du point vert sur facebook - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-37837865-disparition-du-point-vert-sur-facebook",
+      "snippet": "Apr 27, 2023 · Bonjour, je ne vois plus de point vert apparaître sur facebook (liste à droite) pour annoncer qu'un ou plusieurs des …"
+    },
+    {
+      "title": "Aucune publication disponible - Forum Facebook - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-37897636-aucune-publication-disponible",
+      "snippet": "Aug 17, 2023 · Résumé de la discussion Le problème concerne l’impossibilité de voir les publications de profils non amis, affichant « …"
+    },
+    {
+      "title": "El código de confirmación de Facebook no llega: correo, SMS - CCM",
+      "url": "https://es.ccm.net/aplicaciones-e-internet/redes-sociales-y-mensajeria/1704-codigo-de-confirmacion-de-facebook-que-hacer-si-no-te-llega/",
+      "snippet": "Oct 30, 2023 · Facebook te envía un código de confirmación en el momento de crear una nueva cuenta o al hacer algún cambio o …"
+    },
+    {
+      "title": "Quitar fotos mías en Facebook de otra persona [Resuelto] - CCM",
+      "url": "https://es.ccm.net/forum/affich-711894-quitar-fotos-mias-en-facebook-de-otra-persona",
+      "snippet": "Hola, alguien podria decirme por favor como quitar fotos mias que otra persona puso en su facebook?? NO estan etiquetadas. Gracias"
+    },
+    {
+      "title": "Comment supprimer définitivement votre compte Facebook",
+      "url": "https://www.zdnet.fr/pratique/comment-supprimer-definitivement-votre-compte-facebook-39932301.htm",
+      "snippet": "Nov 12, 2021 · Pratique : Se débarrasser de son compte Facebook demande un peu de travail de votre part."
+    }
+  ]
+}

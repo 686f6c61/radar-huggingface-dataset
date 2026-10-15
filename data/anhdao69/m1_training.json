@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "anhdao69/M1_training",
+  "slug": "anhdao69-m1_training",
+  "author": "anhdao69",
+  "url": "https://huggingface.co/anhdao69/M1_training",
+  "created_at": "2026-10-15T16:32:59.000Z",
+  "updated_at": "2026-10-15T17:50:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 141708482572,
+  "storage_human": "141.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A Survey on Efficient Architectures for Large Language Models - arXiv",
+      "url": "https://arxiv.org/html/2508.09834v1",
+      "snippet": "Similarly, M1 [295] introduces a hybrid large reasoning model built on the ... The rising costs of training frontier ai models. arXiv preprint arXiv ..."
+    },
+    {
+      "title": "LETS-C: Leveraging Text Embedding for Time Series Classification",
+      "url": "https://aclanthology.org/2025.acl-long.1557.pdf?utm_source=www.ai-street.co&utm_medium=referral&utm_campaign=the-rise-of-ai-market-models",
+      "snippet": "27.07.2025 ... Additionally, unsu- pervised representation learning methods pre-train models with masked time series modeling to mini- mize reconstruction ..."
+    },
+    {
+      "title": "modeling sequences with structured state spaces a dissertation ...",
+      "url": "https://stacks.stanford.edu/file/druid:mb976vf9362/gu_dissertation-augmented.pdf",
+      "snippet": "[70] Albert Gu*, Tri Dao*, Stefano Ermon, Atri Rudra, Christopher Ré. ... training; a model trained on half the samples matches the best DiffWave model."
+    },
+    {
+      "title": "understanding and extending context length in emerging hybrid ...",
+      "url": "https://openreview.net/pdf?id=MjmORKLHUI",
+      "snippet": "In. International Conference on Learning Representations (ICLR), 2024. Tri Dao and Albert Gu. Transformers are SSMs: Generalized models and efficient algorithms ..."
+    },
+    {
+      "title": "Artificial Intelligence in Education - Springer Nature",
+      "url": "https://link.springer.com/content/pdf/10.1007/978-3-031-98420-4.pdf",
+      "snippet": "22.07.2025 ... – Track 2 – Machine Learning and Generative AI: Emphasising data ... models of learning and teaching. AIED 2025 attracted an ..."
+    }
+  ]
+}

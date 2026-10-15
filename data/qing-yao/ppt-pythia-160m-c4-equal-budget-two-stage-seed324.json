@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "qing-yao/ppt-pythia-160m-c4-equal-budget-two-stage-seed324",
+  "slug": "qing-yao-ppt-pythia-160m-c4-equal-budget-two-stage-seed324",
+  "author": "qing-yao",
+  "url": "https://huggingface.co/qing-yao/ppt-pythia-160m-c4-equal-budget-two-stage-seed324",
+  "created_at": "2026-10-15T16:40:11.000Z",
+  "updated_at": "2026-10-15T16:40:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "c4",
+    "pythia",
+    "trained-from-scratch",
+    "en",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 162322944,
+  "parameters_human": "162.3M",
+  "storage_bytes": 3248523942,
+  "storage_human": "3.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sodomy law - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Sodomy_law",
+      "snippet": "A sodomy law is a law that defines certain sexual acts as crimes. The precise sexual acts meant by the term sodomy are rarely …"
+    },
+    {
+      "title": "What does beastialty mean? - Definitions.net",
+      "url": "https://www.definitions.net/definition/beastialty",
+      "snippet": "Definition of beastialty in the Definitions.net dictionary. Meaning of beastialty. What does beastialty mean? Information and …"
+    },
+    {
+      "title": "Sexual Offences Act 2003 - Legislation.gov.uk",
+      "url": "https://www.legislation.gov.uk/ukpga/2003/42/section/69",
+      "snippet": "Changes to legislation: Sexual Offences Act 2003, Section 69 is up to date with all changes known to be in force on or before 30 …"
+    },
+    {
+      "title": "Bestiality ban to cut video source | Reuters",
+      "url": "https://www.reuters.com/article/lifestyle/bestiality-ban-to-cut-video-source-idUSTRE61141Y/",
+      "snippet": "Feb 2, 2010 · The Internet potentially will lose one of its main sources of bestiality videos under a ban approved Tuesday by the …"
+    },
+    {
+      "title": "ZOOSEXUALITY - Das Blog des ZETA-Vereins",
+      "url": "https://blog.zeta-verein.de/wpcontent/uploads/Report-Prohibition-of-Zoosexuality-in-France.pdf",
+      "snippet": "A wave of criminalisation underway For more than 20 years, countries have being adopting provisions prohibiting sexual contacts …"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "laion/clap-htsat-fused",
+  "slug": "laion-clap-htsat-fused",
+  "author": "laion",
+  "url": "https://huggingface.co/laion/clap-htsat-fused",
+  "created_at": "2023-02-16T20:45:11.000Z",
+  "updated_at": "2026-01-12T00:41:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "safetensors",
+    "clap",
+    "feature-extraction",
+    "zero-shot audio classification",
+    "zero-shot audio retrieval",
+    "audio-classification",
+    "en",
+    "arxiv:2211.06687",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 165,
+  "downloads_30d": 7637225,
+  "trending_score": 13,
+  "parameters": 153558316,
+  "parameters_human": "153.6M",
+  "storage_bytes": 1229092697,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

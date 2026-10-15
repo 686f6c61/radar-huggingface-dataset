@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "sung-hoon/connectailab-rl-connectailab-rl-kribrain-v1-teacher",
+  "slug": "sung-hoon-connectailab-rl-connectailab-rl-kribrain-v1-teacher",
+  "author": "sung-hoon",
+  "url": "https://huggingface.co/sung-hoon/connectailab-rl-connectailab-rl-kribrain-v1-teacher",
+  "created_at": "2026-10-15T07:25:52.000Z",
+  "updated_at": "2026-10-15T07:26:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "numpy",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "numpy",
+    "connect-ai-lab",
+    "deep-reinforcement-learning",
+    "gymnasium",
+    "connect-company",
+    "connect-tycoon",
+    "jev",
+    "jev-style",
+    "reinforcement-learning",
+    "ppo",
+    "decision-making",
+    "prefrontal-cortex",
+    "korean",
+    "ko",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sung-hoon (Woo, sung-hoon) - Hugging Face",
+      "url": "https://huggingface.co/sung-hoon",
+      "snippet": "sung-hoon/connectailab-rl-connectailab-rl-kribrain-v1-teacher Reinforcement Learning •Updated about 2 hours ago"
+    },
+    {
+      "title": "WonseokJayJung/connectailab-rl-jay-v1 · Hugging Face",
+      "url": "https://huggingface.co/WonseokJayJung/connectailab-rl-jay-v1",
+      "snippet": "WonseokJayJung / connectailab-rl-jay-v1 Like 3 Reinforcement Learning MLX Korean deep-reinforcement-learning grpo decision-making gymnasium connect-tycoon connect-ai-lab connectailab lora qwen3.5 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "connectailab/README.md at main - GitHub",
+      "url": "https://github.com/jsunsheep/connectailab/blob/main/README.md",
+      "snippet": "커넥트ai. Contribute to jsunsheep/connectailab development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - jsunsheep/connectailab: 커넥트ai",
+      "url": "https://github.com/jsunsheep/connectailab",
+      "snippet": "커넥트ai. Contribute to jsunsheep/connectailab development by creating an account on GitHub."
+    },
+    {
+      "title": "ConnectAI Lab - YouTube",
+      "url": "https://www.youtube.com/@connectailab",
+      "snippet": "Share your videos with friends, family, and the world"
+    }
+  ]
+}

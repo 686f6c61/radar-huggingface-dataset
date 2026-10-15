@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "Shifty666/Llama-3.1-8B-Lexi-Uncensored-V2-OBLITERATED",
+  "slug": "shifty666-llama-3-1-8b-lexi-uncensored-v2-obliterated",
+  "author": "Shifty666",
+  "url": "https://huggingface.co/Shifty666/Llama-3.1-8B-Lexi-Uncensored-V2-OBLITERATED",
+  "created_at": "2026-10-15T16:37:58.000Z",
+  "updated_at": "2026-10-15T16:37:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "obliteratus",
+    "abliteration",
+    "uncensored",
+    "obliterate",
+    "en",
+    "base_model:Orenguteng/Llama-3.1-8B-Lexi-Uncensored-V2",
+    "base_model:finetune:Orenguteng/Llama-3.1-8B-Lexi-Uncensored-V2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766221,
+  "storage_human": "16.1 GB",
+  "base_model": "Orenguteng/Llama-3.1-8B-Lexi-Uncensored-V2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

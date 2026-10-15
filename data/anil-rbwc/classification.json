@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "anil-rbwc/classification",
+  "slug": "anil-rbwc-classification",
+  "author": "anil-rbwc",
+  "url": "https://huggingface.co/anil-rbwc/classification",
+  "created_at": "2026-10-15T03:07:25.000Z",
+  "updated_at": "2026-10-15T03:07:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ANIL : droits des locataires et propriétaires, outils pour l'habitat",
+      "url": "https://www.anil.org/",
+      "snippet": "Vous voulez louer, acheter, construire, vendre, rénover. Vous avez des impayés de loyers ou des difficultés avec votre prêt …"
+    },
+    {
+      "title": "Outils de calcul : différents simulateurs pour votre projet - ANIL",
+      "url": "https://www.anil.org/outils/outils-de-calcul/",
+      "snippet": "Simulation financière, locative ou d'investissements locatifs avec les outils de l'ANIL. Vous pouvez également vous faire …"
+    },
+    {
+      "title": "Agence nationale pour l'information sur le logement (ANIL)",
+      "url": "https://lannuaire.service-public.gouv.fr/gouvernement/f90410b5-ce8a-4b06-b3d3-f3942fce27af",
+      "snippet": "Agence nationale pour l'information sur le logement (ANIL) : informations et coordonnées de l’organisme"
+    },
+    {
+      "title": "Prêt à Taux Zéro - ANIL",
+      "url": "https://outils.anil.org/outils_eco/ptz/",
+      "snippet": "Dans le cadre de sa mission d’information sur le logement votre ADIL vous donne un conseil gratuit, neutre et personnalisé. Montant …"
+    },
+    {
+      "title": "Contact - ADIL - domaine-modele.anil.org",
+      "url": "https://domaine-modele.anil.org/contact/",
+      "snippet": "Partager cette page sur : Le réseau ANIL - ADIL Le conseil et l'information logement Contact Qui sommes-nous ?"
+    }
+  ]
+}

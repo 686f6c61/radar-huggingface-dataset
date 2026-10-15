@@ -5,7 +5,7 @@
   "author": "Rumiii",
   "url": "https://huggingface.co/Rumiii/Mistral-BioMed-Tool-Caller-7B",
   "created_at": "2026-08-24T12:26:46.000Z",
-  "updated_at": "2026-08-24T16:34:53.000Z",
+  "updated_at": "2026-10-14T13:12:07.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 58,
+  "downloads_30d": 104,
   "trending_score": 0,
   "parameters": 7248023552,
   "parameters_human": "7.25B",

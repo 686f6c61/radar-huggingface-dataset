@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Sanghyang00/ELARSpeech-Whisper-Large-v3-bastimentos-creole-english",
+  "slug": "sanghyang00-elarspeech-whisper-large-v3-bastimentos-creole-english",
+  "author": "Sanghyang00",
+  "url": "https://huggingface.co/Sanghyang00/ELARSpeech-Whisper-Large-v3-bastimentos-creole-english",
+  "created_at": "2026-10-15T03:03:06.000Z",
+  "updated_at": "2026-10-15T03:13:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "elarspeech",
+    "whisper-large-v3",
+    "base_model:openai/whisper-large-v3",
+    "base_model:finetune:openai/whisper-large-v3",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543491840,
+  "parameters_human": "1.54B",
+  "storage_bytes": 6174117304,
+  "storage_human": "6.2 GB",
+  "base_model": "openai/whisper-large-v3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ELARSpeech-Whisper-Large-v3-bastimentos-creole-english",
+      "url": "https://huggingface.co/Sanghyang00/ELARSpeech-Whisper-Large-v3-bastimentos-creole-english",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ELARSpeech-Whisper-Large-v3-bastimentos-creole-english",
+      "url": "https://huggingface.co/Sanghyang00/ELARSpeech-Whisper-Large-v3-bastimentos-creole-english/tree/main",
+      "snippet": "Instructions to use Sanghyang00/ELARSpeech-Whisper-Large-v3-bastimentos-creole-english with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Whisper Large V3 Tutorial: Local ASR Setup — AI Tutorial",
+      "url": "https://aiindigo.com/tutorials/getting-started-with-whisper-large-v3-high-accuracy-transcription-translation",
+      "snippet": "Step-by-step guide to installing and using OpenAI Whisper Large V3 for high-accuracy speech-to-text and translation on your local machine."
+    },
+    {
+      "title": "Whisper Large-v3 Explained: Architecture, WER, and Limits (2026)",
+      "url": "https://convertaudiototext.com/blog/whisper-large-v3-explained",
+      "snippet": "A data-led breakdown of Whisper Large-v3: encoder-decoder architecture, 5M-hour training set, verified WER benchmarks, hallucination weakness, turbo variant, and when to use it."
+    },
+    {
+      "title": "Whisper large-v3 - AI Model Library | Build on Vast.ai",
+      "url": "https://vast.ai/model/whisper",
+      "snippet": "Whisper is a Transformer-based encoder-decoder model with 1.55 billion parameters in its large-v3 configuration. Audio is converted to a 128-bin Mel spectrogram, up from 80 bins in large-v2, and processed in 30-second windows, with long-form audio handled through sequential or chunked decoding."
+    }
+  ]
+}

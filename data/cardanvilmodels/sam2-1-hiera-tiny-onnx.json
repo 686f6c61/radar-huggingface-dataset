@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "CardAnvilModels/sam2.1-hiera-tiny-ONNX",
+  "slug": "cardanvilmodels-sam2-1-hiera-tiny-onnx",
+  "author": "CardAnvilModels",
+  "url": "https://huggingface.co/CardAnvilModels/sam2.1-hiera-tiny-ONNX",
+  "created_at": "2026-10-15T16:48:59.000Z",
+  "updated_at": "2026-10-15T16:49:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "mask-generation",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "sam2",
+    "mask-generation",
+    "segmentation",
+    "onnxruntime-web",
+    "base_model:facebook/sam2.1-hiera-tiny",
+    "base_model:quantized:facebook/sam2.1-hiera-tiny",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 78004244,
+  "storage_human": "78 MB",
+  "base_model": "facebook/sam2.1-hiera-tiny",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Porn Pics, Adult Photos, XXX Images & Sex GIFs | ImageFap",
+      "url": "https://www.imagefap.com/",
+      "snippet": "Browse millions of hot free porn pics, sex GIFs, hot nude photo galleries, amateur XXX photos only on ImageFap, the world's largest …"
+    },
+    {
+      "title": "Free Homemade Amateur Porn Pics From ImageFap User Community",
+      "url": "https://www.imagefap.com/categories.php",
+      "snippet": "Browse homemade porn pics, sex GIFs, XXX images & amateur nude photos in all your favorite fetishes: anal, teen, lesbian, gay, …"
+    },
+    {
+      "title": "ImageFap - Signup",
+      "url": "https://upload.imagefap.com/",
+      "snippet": "Select your country Afghanistan Albania Algeria American Samoa Andorra Angola Anguilla Antarctica Antigua & Barbuda Argentina …"
+    },
+    {
+      "title": "Browse MeiXing's Porn Pic Galleries On ImageFap",
+      "url": "https://www.imagefap.com/organizer/61614/Japanese-Beauties",
+      "snippet": "Discover hottest private porn pic galleries, homemade sex photos, animated XXX GIFs & amateur nude pics uploaded by MeiXing on …"
+    },
+    {
+      "title": "Free Porn Pics, Adult Photos, XXX Images & Sex GIFs | ImageFap",
+      "url": "https://www.imagefap.com/?home",
+      "snippet": "Browse millions of hot free porn pics, sex GIFs, hot nude photo galleries, amateur XXX photos only on ImageFap, the world's largest …"
+    }
+  ]
+}

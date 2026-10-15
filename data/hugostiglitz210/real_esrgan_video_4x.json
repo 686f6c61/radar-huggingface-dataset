@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "HugoStiglitz210/Real_ESRGAN_Video_4x",
+  "slug": "hugostiglitz210-real_esrgan_video_4x",
+  "author": "HugoStiglitz210",
+  "url": "https://huggingface.co/HugoStiglitz210/Real_ESRGAN_Video_4x",
+  "created_at": "2026-10-15T17:00:55.000Z",
+  "updated_at": "2026-10-15T17:00:56.000Z",
+  "license": "real-esrgan-license.txt",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2502086,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

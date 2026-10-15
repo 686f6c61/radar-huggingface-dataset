@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "micdun/radimagenet_align-instruct_qwen2_5-3b-vl",
+  "slug": "micdun-radimagenet_align-instruct_qwen2_5-3b-vl",
+  "author": "micdun",
+  "url": "https://huggingface.co/micdun/radimagenet_align-instruct_qwen2_5-3b-vl",
+  "created_at": "2026-10-15T02:43:57.000Z",
+  "updated_at": "2026-10-15T02:44:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2_5_vl",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 3754622976,
+  "parameters_human": "3.75B",
+  "storage_bytes": 7520765656,
+  "storage_human": "7.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "micdun/radimagenet_align-instruct_qwen2_5-3b-vl · Hugging Face",
+      "url": "https://huggingface.co/micdun/radimagenet_align-instruct_qwen2_5-3b-vl",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen2.5-VL-3B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Run Qwen2.5-VL 3B Locally: A Step-by-Step Guide — AI Tutorial",
+      "url": "https://aiindigo.com/tutorials/getting-started-with-qwen2-5-vl-3b-edge-ready-multimodal-ai",
+      "snippet": "Deploy Qwen2.5-VL 3B for image analysis on low-RAM devices. Learn installation, inference, and optimization for edge computing in this practical tutorial."
+    },
+    {
+      "title": "Deploy Qwen2.5-VL Locally: Vision Language Model Setup 2026",
+      "url": "https://markaicode.com/deploy-qwen25-vl-vision-language-model-local/",
+      "snippet": "Run Qwen2.5-VL 7B or 72B locally with Ollama or vLLM for image understanding, OCR, and visual reasoning. Tested on Python 3.12, CUDA 12, and Apple Silicon."
+    },
+    {
+      "title": "Qwen2.5-VL-3B-Instruct · Models - modelscope.ai",
+      "url": "https://modelscope.ai/models/Qwen/Qwen2.5-VL-3B-Instruct",
+      "snippet": "Qwen2.5-VL-3B-Instruct - An open-source model by Qwen on ModelScope."
+    }
+  ]
+}

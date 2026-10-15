@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "alpcansoydas/m-5c91b9d0a19ce7a6",
+  "slug": "alpcansoydas-m-5c91b9d0a19ce7a6",
+  "author": "alpcansoydas",
+  "url": "https://huggingface.co/alpcansoydas/m-5c91b9d0a19ce7a6",
+  "created_at": "2026-10-15T16:44:22.000Z",
+  "updated_at": "2026-10-15T16:44:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "peft",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "whisper",
+    "lora",
+    "automatic-speech-recognition",
+    "tr",
+    "base_model:openai/whisper-large-v3",
+    "base_model:adapter:openai/whisper-large-v3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31512224,
+  "storage_human": "32 MB",
+  "base_model": "openai/whisper-large-v3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Unité de mesure — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Unit%C3%A9_de_mesure",
+      "snippet": "Le symbole d'une unité est (ou commence par) : Les symboles d'unité ne prennent pas la marque du pluriel (ex. : 3 kg et non 3 kgs). …"
+    },
+    {
+      "title": "LISTE DES SYMBOLES ET UNITÉS DE MESURE (SYSTÈME INTERNATIONAL)",
+      "url": "https://accros.etsmtl.ca/Rapports/findetudes/rapport_fin_etudes/10_liste_symboles.pdf",
+      "snippet": "Source : Bureau de normalisation du Québec (1977), Système international d'unités (SI) principes d'écriture des unités et des …"
+    },
+    {
+      "title": "Système international d'unités — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Syst%C3%A8me_international_d%27unit%C3%A9s",
+      "snippet": "Les principes de l'écriture des nombres, des grandeurs, des unités et des symboles forment ce que l'on peut appeler la « grammaire …"
+    },
+    {
+      "title": "Tableaux des principales unités du Système International SI",
+      "url": "https://www.positron-libre.com/cours/tableaux-formulaires/symboles-unites-si.php",
+      "snippet": "Liste des symboles et unités SI utiles pour les cours et applications de ce site. Le symbole d'une grandeur physique s'écrit …"
+    },
+    {
+      "title": "Symboles d’unités à copier (℃ ㎞ ㎜ ㎏ ℉) – Signes Unicode de mesure",
+      "url": "https://www.i2symbol.com/fr/symbols/units",
+      "snippet": "Cette page propose des symboles d’unités au clavier à copier‑coller (notamment ℃, ℉, ㎜ et ㎞) et n’inclut volontairement pas …"
+    }
+  ]
+}

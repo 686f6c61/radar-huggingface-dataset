@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "ArthurZ/cellpose-dino-vitb",
+  "slug": "arthurz-cellpose-dino-vitb",
+  "author": "ArthurZ",
+  "url": "https://huggingface.co/ArthurZ/cellpose-dino-vitb",
+  "created_at": "2026-10-15T02:58:44.000Z",
+  "updated_at": "2026-10-15T08:15:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cellpose_dino",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": 85881808,
+  "parameters_human": "85.9M",
+  "storage_bytes": 343546368,
+  "storage_human": "344 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models — cellpose 4.2.1-1-ga54cb48 documentation",
+      "url": "https://cellpose.readthedocs.io/en/latest/models.html",
+      "snippet": "Models from cellpose import models Built-in models We have four built-in models available: cpsam_v2: this is the CellposeSAM model released in June 2026 using the SAM-ViTL backbone, it includes a fix in the training for low contrast regions cpdino: this is the CellposeDINO model released in June 2026 using the DINOv3-ViTL backbone cpdino-vitb: this is the CellposeDINO model released in June ..."
+    },
+    {
+      "title": "cpdino-vitb · mouseland/cellpose-sam at main - Hugging Face",
+      "url": "https://huggingface.co/mouseland/cellpose-sam/blob/main/cpdino-vitb",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "cellpose — cellpose 4.2.1-1-ga54cb48 documentation",
+      "url": "https://cellpose.readthedocs.io/en/latest/index.html",
+      "snippet": "talk See details on migrating from Cellpose 3 to 4 in Settings Old releases: Cellpose3: one-click image restoration for improved cellular segmentation paper on biorxiv thread Cellpose 2.0: how to train your own model paper on biorxiv talk twitter thread human-in-the-loop training protocol video Cellpose: a generalist algorithm for cellular ..."
+    },
+    {
+      "title": "CellPose/docs/models.rst at main · DanaHenderson/CellPose",
+      "url": "https://github.com/DanaHenderson/CellPose/blob/main/docs/models.rst",
+      "snippet": "a model filepath, a README.md filepath, a cover image filepath (s), a short description string, a license name like MIT, a link to your GitHub repo (or Cellpose repo), information about the authors and what to cite, tags including cellpose, 2d and 3d (Cellpose models handle both)."
+    },
+    {
+      "title": "cellpose_notebook_colab.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/bobiac/bobiac-book/blob/gh-pages/colab_notebooks/04_segmentation/deep_learning/cellpose_notebook_colab.ipynb",
+      "snippet": "cpdino-vitb: this is the CellposeDINO model released in June 2026 using the DINOv3-ViTB backbone (smaller model) Note: Only the default cpsam model is downloaded automatically the first time you run this notebook (this may take a while)."
+    }
+  ]
+}

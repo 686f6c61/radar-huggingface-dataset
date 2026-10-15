@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "AnonymousCS/antielite_classifier_bsample_009_s43",
+  "slug": "anonymouscs-antielite_classifier_bsample_009_s43",
+  "author": "AnonymousCS",
+  "url": "https://huggingface.co/AnonymousCS/antielite_classifier_bsample_009_s43",
+  "created_at": "2026-10-15T02:45:46.000Z",
+  "updated_at": "2026-10-15T02:45:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 177854978,
+  "parameters_human": "177.9M",
+  "storage_bytes": 711443432,
+  "storage_human": "711 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AnonymousCS/antielite_classifier_all · Hugging Face",
+      "url": "https://huggingface.co/AnonymousCS/antielite_classifier_all",
+      "snippet": "We're on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "Models Gone Wild: AI Containment Registry - annielytics.com",
+      "url": "https://www.annielytics.com/tools/models-gone-wild/",
+      "snippet": "Bureau of Model Containment · Field Registry 2026 Wanted AI models gone rogue 🤘 Below is a running registry of the containment failures that have been littering headlines since OpenAI's Sol model took a walk on the wild side in July."
+    },
+    {
+      "title": "models.evertune.ai - AI Model Release Tracker — Evertune",
+      "url": "https://models.evertune.ai/",
+      "snippet": "Track every major AI model release from OpenAI, Anthropic, Google, Meta, DeepSeek, and more. Updated daily."
+    },
+    {
+      "title": "Ox Alpha: What We Know About the Anonymous AI Model and the Zhipu ...",
+      "url": "https://www.studioglobal.ai/discover/answers/what-is-known-about-the-anonymous-ai-6a89929c7e26652742078145",
+      "snippet": "Ox Alpha: What We Know About the Anonymous AI Model and the Zhipu Theory Ox Alpha passed 8 of 10 tasks in Ben Davis's limited DeepSWE test, compared with 65% for Claude Fable 5 and 52% for GPT 5.6 Sol—but the sample was too small to establish a general leaderboard win. The model's 1,048,576 token context window, text/image/video input, and free one week preview made it notable; forensic ..."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "ArthurZ/cellpose-sam-v2",
+  "slug": "arthurz-cellpose-sam-v2",
+  "author": "ArthurZ",
+  "url": "https://huggingface.co/ArthurZ/cellpose-sam-v2",
+  "created_at": "2026-10-15T02:56:14.000Z",
+  "updated_at": "2026-10-15T08:15:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cellpose",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 304628928,
+  "parameters_human": "304.6M",
+  "storage_bytes": 1218551704,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cellpose-SAM: superhuman generalization for cellular segmentation",
+      "url": "https://www.biorxiv.org/content/10.1101/2025.04.28.651001v1.full-text",
+      "snippet": "01.05.2025 ... Our goal in Cellpose-SAM was to take advantage of SAM as a foundation model that was pretrained on a large dataset. This pretraining allows SAM ..."
+    },
+    {
+      "title": "Artificial intelligence-driven whole-brain cell mapping with highly ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0896627325009833",
+      "snippet": "To achieve higher levels of accuracy in spatial cell mapping, we developed an artificial intelligence (AI)-driven workflow that reduces the need for extensive ..."
+    },
+    {
+      "title": "TSPO-PET bei Neuroinflammation: Entwicklung und Translation ...",
+      "url": "https://edoc.ub.uni-muenchen.de/37074/1/Bartos_Laura_Maria.pdf",
+      "snippet": "13.05.2026 ... model. Biomedicines. 2022, 10(4):738. doi: 10.3390 ... Arthur Liesz,2,3,8 Natalie Krahmer,11 Omer A. Bayraktar,14 Nicolai ..."
+    },
+    {
+      "title": "(PDF) nnInteractive: Redefining 3D Promptable Segmentation",
+      "url": "https://www.researchgate.net/publication/389748847_nnInteractive_Redefining_3D_Promptable_Segmentation",
+      "snippet": "11.03.2025 ... PDF | Accurate and efficient 3D segmentation is essential for both clinical and research applications. While foundation models like SAM have ..."
+    },
+    {
+      "title": "Diffusion-Based Inference for Heterogeneous Multichannel ... - bioRxiv",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.10.07.753438v1.full.pdf",
+      "snippet": "07.10.2026 ... NEJM AI, 2(12):AIp2500802,. 2025. doi: 10.1056/AIp2500802. 5 ... Cellpose-SAM: superhuman gen- eralization for cellular segmentation."
+    }
+  ]
+}

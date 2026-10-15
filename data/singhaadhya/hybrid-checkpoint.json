@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "singhaadhya/hybrid-checkpoint",
+  "slug": "singhaadhya-hybrid-checkpoint",
+  "author": "singhaadhya",
+  "url": "https://huggingface.co/singhaadhya/hybrid-checkpoint",
+  "created_at": "2026-10-15T16:51:58.000Z",
+  "updated_at": "2026-10-15T16:52:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hybrid",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "b的相似字母 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/2269127802849047068.html",
+      "snippet": "May 6, 2016 · b的相似字母Β β: 希腊字母ΒВ в: 西里尔字母ВБ б: 西里尔字母БƁ ɓ: 有带勾的拉丁字母ƁЪ ъ: 西里尔字母Ъ（或称硬音 …"
+    },
+    {
+      "title": "登录 - 百度知道",
+      "url": "https://zhidao.baidu.com/b/batch/batch-upload",
+      "snippet": "登录百度账号，开启答主工作台 登录"
+    },
+    {
+      "title": "求大神解答PB R&B 和 contemporary R&B的区别是什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/371539485",
+      "snippet": "随着广受好评的Frank Ocean成为这场日益壮大的运动的旗手，PBR&B与电钢琴那种受福音影响的，由Whitney Houston和Michael …"
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/question/277840285",
+      "snippet": ""
+    },
+    {
+      "title": "Do サトシ (Satoshi) or ナカモト (Nakamoto) mean anything in …",
+      "url": "https://bitcoin.stackexchange.com/questions/83886/do-%e3%82%b5%e3%83%88%e3%82%b7-satoshi-or-%e3%83%8a%e3%82%ab%e3%83%a2%e3%83%88-nakamoto-mean-anything-in-japanese",
+      "snippet": "Jan 21, 2019 · Do サトシ (Satoshi) and ナカモト (Nakamoto) have any special meaning in Japanese? For example, the last name …"
+    }
+  ]
+}

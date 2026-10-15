@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "ltlltl2006/seislm-large",
+  "slug": "ltlltl2006-seislm-large",
+  "author": "ltlltl2006",
+  "url": "https://huggingface.co/ltlltl2006/seislm-large",
+  "created_at": "2026-10-15T18:52:39.000Z",
+  "updated_at": "2026-10-15T18:53:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "seislm",
+  "languages": [],
+  "tags": [
+    "seislm",
+    "safetensors",
+    "seismology",
+    "seismic-waveforms",
+    "self-supervised-learning",
+    "arxiv:2410.15765",
+    "feature-extraction",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 90683648,
+  "parameters_human": "90.7M",
+  "storage_bytes": 362760728,
+  "storage_human": "363 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

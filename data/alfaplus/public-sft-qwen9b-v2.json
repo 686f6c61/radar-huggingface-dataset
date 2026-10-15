@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "alfaplus/public-sft-qwen9b-v2",
+  "slug": "alfaplus-public-sft-qwen9b-v2",
+  "author": "alfaplus",
+  "url": "https://huggingface.co/alfaplus/public-sft-qwen9b-v2",
+  "created_at": "2026-10-15T02:56:18.000Z",
+  "updated_at": "2026-10-15T02:57:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qlora",
+    "sft",
+    "instruction-tuning",
+    "aya",
+    "text-generation",
+    "conversational",
+    "ja",
+    "dataset:CohereLabs/aya_dataset",
+    "arxiv:2402.06619",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 366291501,
+  "storage_human": "366 MB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Leather Cougars - Etsy",
+      "url": "https://www.etsy.com/market/leather_cougars?msockid=1a9de57bd46d6bda20eff288d5d76ad5",
+      "snippet": "Discover unique leather creations, from crafting supplies to vintage boots. Explore handmade masks, personalized jewelry, and …"
+    },
+    {
+      "title": "Leather Cougar - Pinterest",
+      "url": "https://www.pinterest.com/ideas/leather-cougar/897293006687/",
+      "snippet": "Find and save ideas about leather cougar on Pinterest."
+    },
+    {
+      "title": "79 Cougars in leather!!! ideas | leather outfit, leather knee-high ...",
+      "url": "https://www.pinterest.com/jllandscaper/cougars-in-leather/",
+      "snippet": "See more ideas about leather outfit, leather knee-high fashion boots, lady sonia boots."
+    },
+    {
+      "title": "Leather Cougar - Etsy",
+      "url": "https://www.etsy.com/market/leather_cougar?msockid=1a9de57bd46d6bda20eff288d5d76ad5",
+      "snippet": "Discover unique leather cougar creations, from art pieces to durable boot laces. Explore diverse styles, from miniature statues to …"
+    },
+    {
+      "title": "25+ Cougar Leather Boots for Women for sale | Updated Oct 2026",
+      "url": "https://www.ebay.com/b/Cougar-Leather-Boots-for-Women/53557/bn_7112680578?msockid=1a9de57bd46d6bda20eff288d5d76ad5",
+      "snippet": "Get the best deals on Cougar Leather Boots for Women when you shop the largest online selection at eBay.com. Free shipping on …"
+    }
+  ]
+}

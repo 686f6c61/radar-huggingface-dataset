@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "renee-ts/persistbd-intensity-3b-V0mod-s0",
+  "slug": "renee-ts-persistbd-intensity-3b-v0mod-s0",
+  "author": "renee-ts",
+  "url": "https://huggingface.co/renee-ts/persistbd-intensity-3b-V0mod-s0",
+  "created_at": "2026-10-15T16:35:58.000Z",
+  "updated_at": "2026-10-15T16:38:09.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "persistbd",
+    "backdoor-detection",
+    "backdoored",
+    "research-model",
+    "base_model:Qwen/Qwen2.5-Coder-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-Coder-3B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6171927000,
+  "storage_human": "6.2 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Renée - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ren%C3%A9e",
+      "snippet": "Renee was among the top 100 names given to girls in the United States in the late 1950s, the 1960s, the 1970s and the early 1980s. …"
+    },
+    {
+      "title": "Prénom Renée (fille) : signification, origine, caractère, sainte, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/renee/prenom-5182",
+      "snippet": "On citera par ailleurs la femme de lettres mauricienne Renée Asgarally, la joueuse de tennis sud-africaine Renee Schuurman sans …"
+    },
+    {
+      "title": "Renée Restaurant Dunkerque | Découvrez notre restaurant",
+      "url": "https://www.renee-restaurant.fr/",
+      "snippet": "03 61 44 04 73 bonjour@renee-restaurant.fr Instagram Facebook Horaires Lundi : fermé Mardi : 12h00 - 13h15 / 19h00 - 21h15 …"
+    },
+    {
+      "title": "Prénom Renée : Origine - Caractère - Signification - Etymologie",
+      "url": "https://www.parents.fr/prenoms/renee-53170",
+      "snippet": "Prénoms similaires à Renée Prénoms dérivés Renne Reanne Rena Prénoms composés Renee-lise Renee-paule Anne-renee …"
+    },
+    {
+      "title": "Accueil – L'épicerie Renée",
+      "url": "https://epicerie-renee.fr/",
+      "snippet": "RE DUIT RE VALORISE RE UTILISE RE PARE RE CYCLE RENEE RE DUIT RE VALORISE RE UTILISE RE PARE RE CYCLE …"
+    }
+  ]
+}

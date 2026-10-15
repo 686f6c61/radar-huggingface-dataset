@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "SD-Next/flux-3-image-klein",
+  "slug": "sd-next-flux-3-image-klein",
+  "author": "SD-Next",
+  "url": "https://huggingface.co/SD-Next/flux-3-image-klein",
+  "created_at": "2026-10-15T18:46:19.000Z",
+  "updated_at": "2026-10-15T19:03:42.000Z",
+  "license": "flux-kommunity-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "image-generation",
+    "image-editing",
+    "flux",
+    "flux-3",
+    "black-forest-labs",
+    "image-to-image",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5548681984,
+  "parameters_human": "5.55B",
+  "storage_bytes": 31757354010,
+  "storage_human": "31.8 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Carte SD — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Carte_SD",
+      "snippet": "Une carte SD (« SD » étant le sigle de l'expression anglaise « Secure Digital ») est une carte mémoire de stockage de données …Read more"
+    },
+    {
+      "title": "SD card - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/SD_card",
+      "snippet": "SD card ... The SD card is a proprietary, non-volatile, flash memory card format developed by the SD Association (SDA). They come …"
+    },
+    {
+      "title": "Carte SD - Votre Carte SD Retrait 30min* | Boulanger",
+      "url": "https://www.boulanger.com/c/carte-memoire-lecteur/_usage~carte20sd?msockid=37b0fb405c7369bb1505ecb35d6868a8",
+      "snippet": "Choisissez votre carte SD parmi les modèles que nous avons sélectionnés auprès des meilleurs fabricants (Lexar, SanDisk, Sony, …"
+    },
+    {
+      "title": "Meilleure carte SD 2026 : 12 analysées, 5 retenues",
+      "url": "https://meilleurtest.fr/comparatif-carte-sd/",
+      "snippet": "Sep 29, 2026 · SanDisk Extreme PRO 64 Go arrive en tête de notre comparatif 2026 (9,0/10). 12 cartes sd analysées, 5 retenues : …"
+    },
+    {
+      "title": "Votre Carte Micro SD - Boulanger",
+      "url": "https://www.boulanger.com/c/carte-memoire-lecteur/_usage~carte20micro20sd?msockid=37b0fb405c7369bb1505ecb35d6868a8",
+      "snippet": "Choisissez votre carte micro SD parmi les meilleures marques du marché (Samsung, Lexar, SanDisk...) pour bénéficier d’un plus …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "rbalazs/act_allcups_merged_right",
+  "slug": "rbalazs-act_allcups_merged_right",
+  "author": "rbalazs",
+  "url": "https://huggingface.co/rbalazs/act_allcups_merged_right",
+  "created_at": "2026-10-15T02:31:03.000Z",
+  "updated_at": "2026-10-15T05:43:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:rbalazs/AllCupsTrimMerged",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 6195346408,
+  "storage_human": "6.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "分液漏斗での抽出の実験で食塩水を入れると二層がはっきりするのは …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1471150899",
+      "snippet": "Sep 13, 2011 · 分液漏斗での抽出の実験で食塩水を入れると二層がはっきりするのはなぜですか？また、洗剤を加えたとき変化が起 …"
+    },
+    {
+      "title": "天子の郷とはどんな宗教団体ですか？出来れば教義とかも教えて頂け …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1298129512",
+      "snippet": "Dec 3, 2012 · 天子の郷とはどんな宗教団体ですか？出来れば教義とかも教えて頂けたら嬉しいです ・創始者矢井清勝・信者数250 …"
+    },
+    {
+      "title": "帝国データバンク等に載っていない会社は、怪しい会社なのでしょう …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1430504734",
+      "snippet": "Sep 11, 2009 · 帝国データバンク等に載っていない会社は、怪しい会社なのでしょうか？ 帝国データバンク等のシステムを教えて …"
+    },
+    {
+      "title": "Userpornは、見れないの？ - 日本からのアクセス禁止してる。.",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1490570974",
+      "snippet": "Jul 12, 2012 · Userpornは、見れないの？ 日本からのアクセス禁止してる。IPアドレスを偽証？すれば見れますよ。火狐使えば見れ …"
+    },
+    {
+      "title": "漢字で木へんに青という一文字漢字なのですが、パソコンで変換でき …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1347488353",
+      "snippet": "Sep 23, 2010 · 「棈」ですね、音読みで「ショウ、セイ、セン」と読みます。訓読みは現在使うことがないのですが古くは「あまな …"
+    }
+  ]
+}

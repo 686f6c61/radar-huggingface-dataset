@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Seoul12/khmer-ocr-three-architectures",
+  "slug": "seoul12-khmer-ocr-three-architectures",
+  "author": "Seoul12",
+  "url": "https://huggingface.co/Seoul12/khmer-ocr-three-architectures",
+  "created_at": "2026-10-15T03:17:14.000Z",
+  "updated_at": "2026-10-15T03:20:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-text",
+  "library": "pytorch",
+  "languages": [
+    "km"
+  ],
+  "tags": [
+    "pytorch",
+    "image-to-text",
+    "km",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 105706310,
+  "storage_human": "106 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Seoul12/khmer-ocr-three-architectures · Hugging Face",
+      "url": "https://huggingface.co/Seoul12/khmer-ocr-three-architectures",
+      "snippet": "Three recovered line OCR checkpoints: CNN + BiLSTM + CTC (step 58,000), CNN + BiGRU + CTC (step 8,500), and CNN + Transformer Encoder + CTC (step 87,000). All weights load strictly and CPU inference was executed. Checkpoints contain weights and metadata; optimizer/RNG states were removed. They are ..."
+    },
+    {
+      "title": "Seoul12/khmer-ocr-architecture3-best · Hugging Face",
+      "url": "https://huggingface.co/Seoul12/khmer-ocr-architecture3-best",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Khmer OCR Architecture 3 demo - GitHub",
+      "url": "https://github.com/SeoulDoriot/khmer-ocr-demo",
+      "snippet": "About Khmer OCR Architecture 3: trained checkpoint, reproducible inference and selected demo examples."
+    },
+    {
+      "title": "GitHub - SeoulDoriot/khmerOCR",
+      "url": "https://github.com/SeoulDoriot/khmerOCR",
+      "snippet": "Khmer script text recognition: given a cropped image of one line of Khmer text, output the character sequence. Three deep learning approaches are trained on identical data, with identical seeds, and scored on one frozen five-domain test set, so the comparison measures the approaches rather than the experimental conditions."
+    },
+    {
+      "title": "OCR and Document AI Leaderboard 2026: Top Models Ranked",
+      "url": "https://awesomeagents.ai/leaderboards/ocr-document-ai-leaderboard/",
+      "snippet": "OCR and Document AI Leaderboard 2026: Top Models Ranked Rankings of AI models on OCR and document understanding benchmarks - OCRBench, DocVQA, InfographicVQA, ChartQA, TextVQA, and MMMU-Pro. Covers GPT-4.1 Vision, Claude 4 Sonnet/Opus, Gemini 2.5 Pro, Qwen2.5-VL, InternVL3, Mistral OCR, and more."
+    }
+  ]
+}

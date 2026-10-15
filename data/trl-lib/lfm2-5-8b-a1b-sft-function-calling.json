@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "trl-lib/LFM2.5-8B-A1B-SFT-function-calling",
+  "slug": "trl-lib-lfm2-5-8b-a1b-sft-function-calling",
+  "author": "trl-lib",
+  "url": "https://huggingface.co/trl-lib/LFM2.5-8B-A1B-SFT-function-calling",
+  "created_at": "2026-10-15T16:34:24.000Z",
+  "updated_at": "2026-10-15T16:34:55.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2_moe",
+    "text-generation",
+    "trl",
+    "sft",
+    "function-calling",
+    "lfm2.5",
+    "conversational",
+    "dataset:argilla/apigen-function-calling",
+    "arxiv:2406.18518",
+    "base_model:LiquidAI/LFM2.5-8B-A1B",
+    "base_model:finetune:LiquidAI/LFM2.5-8B-A1B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8467856128,
+  "parameters_human": "8.47B",
+  "storage_bytes": 16953909718,
+  "storage_human": "17.0 GB",
+  "base_model": "LiquidAI/LFM2.5-8B-A1B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Technology readiness level — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Technology_Readiness_Level",
+      "snippet": "Le TRL est en particulier un critère important pour effectuer les choix d'architecture des missions de la NASA et dans le programme …"
+    },
+    {
+      "title": "L'échelle TRL | Horizon-europe.gouv.fr",
+      "url": "https://www.horizon-europe.gouv.fr/l-echelle-trl-38806",
+      "snippet": "May 6, 2025 · Un guide explicatif (lien) de la traduction de l'échelle TRL à certains secteurs spécifiques accompagnés d'exemple a …"
+    },
+    {
+      "title": "Tout savoir sur les échelles TRL et SRL",
+      "url": "https://pepr-iccare.fr/blog/tout-savoir-sur-les-echelles-trl-et-srl/",
+      "snippet": "Initialement développée par la NASA pour apprécier le degré de maturité des technologies, elle a été progressivement reprise par …"
+    },
+    {
+      "title": "TRL - Technology Readiness Level : comprendre et utiliser l'échelle …",
+      "url": "https://www.vianeo.com/fr/trl-technology-readiness-level-comprendre-et-utiliser-lechelle-de-maturite-technologique/",
+      "snippet": "Apr 21, 2026 · Le Technology Readiness Level est une échelle de mesure de la maturité d’une technologie, graduée de 1 à 9, qui …"
+    },
+    {
+      "title": "Technology readiness level - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Technology_readiness_level",
+      "snippet": "TRL is determined during a technology readiness assessment (TRA) that examines program concepts, technology requirements, …"
+    }
+  ]
+}

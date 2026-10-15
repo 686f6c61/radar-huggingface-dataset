@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "xorslider/FoodExtract-gemma-3-4b-finetuned",
+  "slug": "xorslider-foodextract-gemma-3-4b-finetuned",
+  "author": "xorslider",
+  "url": "https://huggingface.co/xorslider/FoodExtract-gemma-3-4b-finetuned",
+  "created_at": "2026-10-15T16:34:52.000Z",
+  "updated_at": "2026-10-15T16:34:59.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "sft",
+    "trl",
+    "fine-tuned",
+    "food-extraction",
+    "base_model:google/gemma-3-4b-it",
+    "base_model:finetune:google/gemma-3-4b-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 545022665,
+  "storage_human": "545 MB",
+  "base_model": "google/gemma-3-4b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hand Sanitizer – NXNBeauty",
+      "url": "https://www.nxnbeauty.com/collections/hand-sanitizer",
+      "snippet": "NxN Beauty. Non-toxic and cruelty-free skincare alternative that actually works! Say goodbye to acne with Exposed Skin Care! …"
+    },
+    {
+      "title": "NXN Beauty – NXNBeauty",
+      "url": "https://www.nxnbeauty.com/",
+      "snippet": "NxN Beauty. Non-toxic and cruelty-free skincare alternative that actually works! Say goodbye to acne with Exposed Skin Care! …"
+    },
+    {
+      "title": "Cleanse – NXNBeauty",
+      "url": "https://www.nxnbeauty.com/collections/cleanse",
+      "snippet": "NxN Beauty. Non-toxic and cruelty-free skincare alternative that actually works! Say goodbye to acne with Exposed Skin Care! …"
+    },
+    {
+      "title": "Moisturize – NXNBeauty",
+      "url": "https://www.nxnbeauty.com/collections/moisturize",
+      "snippet": "NxN Beauty. Non-toxic and cruelty-free skincare alternative that actually works! Say goodbye to acne with Exposed Skin Care! …"
+    },
+    {
+      "title": "Products – NXNBeauty",
+      "url": "https://www.nxnbeauty.com/collections/all",
+      "snippet": "NxN Beauty. Non-toxic and cruelty-free skincare alternative that actually works! Say goodbye to acne with Exposed Skin Care! …"
+    }
+  ]
+}

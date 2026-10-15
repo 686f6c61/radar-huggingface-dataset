@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "faychuk/Llama-3.1-Nemotron-Nano-4B-v1.1-banking77",
+  "slug": "faychuk-llama-3-1-nemotron-nano-4b-v1-1-banking77",
+  "author": "faychuk",
+  "url": "https://huggingface.co/faychuk/Llama-3.1-Nemotron-Nano-4B-v1.1-banking77",
+  "created_at": "2026-10-15T17:06:38.000Z",
+  "updated_at": "2026-10-15T17:08:24.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "intent-classification",
+    "banking",
+    "lora-merged",
+    "verifiable-lineage",
+    "conversational",
+    "en",
+    "dataset:PolyAI/banking77",
+    "base_model:nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1",
+    "base_model:finetune:nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4512746496,
+  "parameters_human": "4.51B",
+  "storage_bytes": 9042736688,
+  "storage_human": "9.0 GB",
+  "base_model": "nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "what are words的歌词 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/369119536.html",
+      "snippet": "what are words 歌曲原唱：Chris Medina 填 词：Rodney Jerkins Anywhere you are, I am near 不论你在何处，我都会在你身旁 …"
+    },
+    {
+      "title": "Top 120 Interesting Idioms Examples for ESL Learners",
+      "url": "https://eslforums.com/idioms-examples/",
+      "snippet": "Jan 7, 2026 · Idioms Examples! Idioms for Kids! How do you often use English idioms in daily life? Learning to use common idioms …"
+    },
+    {
+      "title": "英语单词word和words的区别 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/562028622.html",
+      "snippet": "英语单词word和words的区别： 1.word是单数，但是words是复数。 2.两者的 音标 不同：word的音标是英 [wɜ:d] 美 [wɜ:rd]，words的 …"
+    },
+    {
+      "title": "Compound Words in English - ESL Forums",
+      "url": "https://eslforums.com/compound-words/",
+      "snippet": "Sep 22, 2025 · Every word has its own meaning. You can search for the definition of every term in the dictionary. But do you know …"
+    },
+    {
+      "title": "50 anunasik words in hindi - Brainly",
+      "url": "https://brainly.in/question/1161842",
+      "snippet": "Apr 24, 2017 · 50 anunasik words in hindi - 1161842 अनुनासिक की परिभाषा :- अनुनासिक स्वरों के उच्चारण ..."
+    }
+  ]
+}

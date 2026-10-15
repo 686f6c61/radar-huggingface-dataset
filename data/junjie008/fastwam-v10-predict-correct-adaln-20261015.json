@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "junjie008/fastwam-v10-predict-correct-adaln-20261015",
+  "slug": "junjie008-fastwam-v10-predict-correct-adaln-20261015",
+  "author": "junjie008",
+  "url": "https://huggingface.co/junjie008/fastwam-v10-predict-correct-adaln-20261015",
+  "created_at": "2026-10-15T02:58:58.000Z",
+  "updated_at": "2026-10-15T12:47:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "robotics",
+    "fastwam",
+    "v10",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 61380980315,
+  "storage_human": "61.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Tbilisi Quiz - 15 Questions: 15 Questions - mastersoftrivia.com",
+      "url": "https://mastersoftrivia.com/en/all-quizzes/geography/capitals/european-capitals/tbilisi/",
+      "snippet": "Play our quiz about Tbilisi. 15 quiz questions about Tbilisi, a vibrant Georgian city, administrative, cultural, and economic center. Play …"
+    },
+    {
+      "title": "Tbilisi Quizzes - PurposeGames",
+      "url": "https://www.purposegames.com/tag/tbilisi",
+      "snippet": "PurposeGames online quizzes about tbilisi. tbilisi currently contains 8 PurposeGames and quizzes, created by our members."
+    },
+    {
+      "title": "Tbilisi quiz - 345questions",
+      "url": "https://345questions.com/t/Tbilisi",
+      "snippet": "On which river is Tbilisi situated? Take this quiz with 10 questions to see how well you know Tbilisi, a capital and the largest city of …"
+    },
+    {
+      "title": "Tbilissi - Choix multiples - JetPunk",
+      "url": "https://www.jetpunk.com/user-quizzes/1269592/tbilissi-choix-multiples",
+      "snippet": "Jul 16, 2026 · Pourrez-vous répondre à ces 10 questions à choix multiples sur la ville de Tbilissi ?"
+    },
+    {
+      "title": "TbilQuiz | Квизы в Тбилиси - Facebook",
+      "url": "https://www.facebook.com/groups/tbilquiz/",
+      "snippet": "Dec 21, 2022 · Thematic quizzes in Tbilisi in English and Russian! There will be a notification about each event in this group, and you …"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "BennyDaBall/EmbeddingGemma-2-NVFP4-GGUF",
+  "slug": "bennydaball-embeddinggemma-2-nvfp4-gguf",
+  "author": "BennyDaBall",
+  "url": "https://huggingface.co/BennyDaBall/EmbeddingGemma-2-NVFP4-GGUF",
+  "created_at": "2026-10-15T18:29:41.000Z",
+  "updated_at": "2026-10-15T18:53:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "gguf",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "nvfp4",
+    "embeddinggemma",
+    "embedding",
+    "sentence-similarity",
+    "retrieval",
+    "multimodal-embedding",
+    "blackwell",
+    "llama.cpp",
+    "lm-studio",
+    "feature-extraction",
+    "multilingual",
+    "base_model:google/embeddinggemma-2",
+    "base_model:quantized:google/embeddinggemma-2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 271002794,
+  "parameters_human": "271.0M",
+  "storage_bytes": 1354325949,
+  "storage_human": "1.4 GB",
+  "base_model": "google/embeddinggemma-2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon.co.uk: Low Prices in Electronics, Books, Sports Equipment",
+      "url": "https://www.amazon.co.uk/",
+      "snippet": "Amazon Echo Studio (newest gen), compact design, immersive spatial audio and Dolby Atmos, Graphite, with Alexa+ Early Access"
+    },
+    {
+      "title": "Amazon.co.uk: Powered Usb Hub",
+      "url": "https://www.amazon.co.uk/powered-usb-hub/s?k=powered+usb+hub",
+      "snippet": "Browse USB hubs with fast charging ports and data transfer capabilities. Perfect for connecting peripherals and expanding ports."
+    },
+    {
+      "title": "Amazon Seller Central",
+      "url": "https://sellercentral.amazon.co.uk/",
+      "snippet": "Seller Central from Amazon Services Europe. Sign in to your account. Email address. Password. Not selling on Amazon yet? …"
+    },
+    {
+      "title": "Amazon Photos",
+      "url": "https://www.amazon.co.uk/b?node=12153286031",
+      "snippet": "Amazon photos offers free online storage to Prime members, who can save and share unlimited photos on desktop, mobile, tablet."
+    },
+    {
+      "title": "Amazon Sign In",
+      "url": "https://vendorcentral.amazon.co.uk/",
+      "snippet": "By continuing, you agree to Amazon's Conditions of Use & Sale. Please see our Privacy Notice, our Cookies Notice and our Interest …"
+    }
+  ]
+}

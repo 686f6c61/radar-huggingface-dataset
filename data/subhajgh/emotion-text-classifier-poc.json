@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "subhajgh/emotion-text-classifier-poc",
+  "slug": "subhajgh-emotion-text-classifier-poc",
+  "author": "subhajgh",
+  "url": "https://huggingface.co/subhajgh/emotion-text-classifier-poc",
+  "created_at": "2026-10-15T02:55:33.000Z",
+  "updated_at": "2026-10-15T02:55:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "michellejieli/emotion_text_classifier · Hugging Face",
+      "url": "https://huggingface.co/michellejieli/emotion_text_classifier",
+      "snippet": "Fine-tuned DistilRoBERTa-base for Emotion Classification 🤬🤢😀😐😭😲 Model Description DistilRoBERTa-base is a transformer model that performs sentiment analysis. I fine-tuned the model on transcripts from the Friends show with the goal of classifying emotions from text data, specifically dialogue from Netflix shows or movies."
+    },
+    {
+      "title": "GitHub - ankit-aglawe/emotionclassifier: A flexible text emotion ...",
+      "url": "https://github.com/ankit-aglawe/emotionclassifier",
+      "snippet": "Overview emotionclassifier is a Python package designed to classify emotions in text using various pre-trained models from Hugging Face&#x27;s Transformers library. This package provides a user-friendly interface for emotion classification, along with tools for data preprocessing, visualization, fine-tuning, and integration with popular data platforms."
+    },
+    {
+      "title": "GitHub - Subhajit-Paul/EMOTION_CLASSIFIER_XAI",
+      "url": "https://github.com/Subhajit-Paul/EMOTION_CLASSIFIER_XAI",
+      "snippet": "A simple Transformer based NLP algorithm that uses BERT pretrained parameters and the power of Explainable AI to understand the classification of Emotions on a given input. To enhance the interpretability of the model&#x27;s decisions, saliency maps are employed. Saliency maps highlight the most influential words or tokens in a given input text that contribute to the model&#x27;s prediction. By ..."
+    },
+    {
+      "title": "ahmetyaylalioglu/text-emotion-classifier · Hugging Face",
+      "url": "https://huggingface.co/ahmetyaylalioglu/text-emotion-classifier",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "emotionclassifier · PyPI",
+      "url": "https://pypi.org/project/emotionclassifier/",
+      "snippet": "emotionclassifier is a Python package designed to classify emotions in text using various pre-trained models from Hugging Face&#x27;s Transformers library. This package provides a user-friendly interface for emotion classification, along with tools for data preprocessing, visualization, fine-tuning, and integration with popular data platforms."
+    }
+  ]
+}

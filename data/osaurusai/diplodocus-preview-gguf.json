@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "OsaurusAI/Diplodocus-preview-GGUF",
+  "slug": "osaurusai-diplodocus-preview-gguf",
+  "author": "OsaurusAI",
+  "url": "https://huggingface.co/OsaurusAI/Diplodocus-preview-GGUF",
+  "created_at": "2026-10-15T03:13:13.000Z",
+  "updated_at": "2026-10-15T03:56:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "quantized",
+    "imatrix",
+    "reasoning",
+    "tool-use",
+    "finance",
+    "documents",
+    "spreadsheets",
+    "k2_horizon",
+    "text-generation",
+    "en",
+    "base_model:IFM/K2-Horizon-7B",
+    "base_model:quantized:IFM/K2-Horizon-7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": 8999178240,
+  "parameters_human": "9.00B",
+  "storage_bytes": 23672695520,
+  "storage_human": "23.7 GB",
+  "base_model": "IFM/K2-Horizon-7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OsaurusAI/Diplodocus-preview-GGUF - Hugging Face",
+      "url": "https://huggingface.co/OsaurusAI/Diplodocus-preview-GGUF",
+      "snippet": "How to use OsaurusAI/Diplodocus-preview-GGUF with llama.cpp ..."
+    },
+    {
+      "title": "Osaurus: Privacy isn&#x27;t extinct.",
+      "url": "https://osaurus.ai/",
+      "snippet": "Powerful AI agents that live on your computer, not in someone else&#x27;s cloud. Whatever you use them for, it stays with you."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=osaurus",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Osaurus · GitHub",
+      "url": "https://github.com/osaurus-ai",
+      "snippet": "osaurus Public Own your AI. The native macOS harness for AI agents -- any model, persistent memory, autonomous execution, cryptographic identity. Built in Swift. Fully offline. Open source."
+    },
+    {
+      "title": "GitHub - osaurus-ai/osaurus: Own your AI. The native macOS harness for ...",
+      "url": "https://github.com/osaurus-ai/osaurus",
+      "snippet": "Models are getting cheaper and more interchangeable by the day. What&#x27;s irreplaceable is the layer around them -- your context, your memory, your tools, your identity. Others keep that layer on their servers. Osaurus keeps it on your machine. Osaurus is the AI harness for macOS. It sits between you and any model -- local or cloud -- and provides the continuity that makes AI personal: agents ..."
+    }
+  ]
+}

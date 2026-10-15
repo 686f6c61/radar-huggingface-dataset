@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "U-WIN/qwen35-9b-equational-theory-sair-notes-ntp-50m-kl-0p01",
+  "slug": "u-win-qwen35-9b-equational-theory-sair-notes-ntp-50m-kl-0p01",
+  "author": "U-WIN",
+  "url": "https://huggingface.co/U-WIN/qwen35-9b-equational-theory-sair-notes-ntp-50m-kl-0p01",
+  "created_at": "2026-10-15T02:38:22.000Z",
+  "updated_at": "2026-10-15T03:48:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "equational-theory",
+    "sair",
+    "full-finetune",
+    "notes-only",
+    "next-token-prediction",
+    "kl-regularization",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 38625429982,
+  "storage_human": "38.6 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "violetxi/qwen35-9b-equational-theory-sair-mix50m-70n30t- ...",
+      "url": "https://huggingface.co/violetxi/qwen35-9b-equational-theory-sair-mix50m-70n30t-thinking",
+      "snippet": ""
+    },
+    {
+      "title": "Qwen3.5 9B API: Pricing, Benchmarks & Docs",
+      "url": "https://www.together.ai/models/qwen3-5-9b",
+      "snippet": ""
+    },
+    {
+      "title": "Qwen 3.5 Small Models (0.8Bâ9B): The architecture shift ...",
+      "url": "https://medium.com/@milesk_33/qwen-3-5-small-models-0-8b-9b-the-architecture-shift-that-lets-edge-ai-finally-compete-ab3b807273ff",
+      "snippet": ""
+    },
+    {
+      "title": "violetxi/qwen35-9b-equational-theory-sair-r3-mix30m",
+      "url": "https://featherless.ai/models/violetxi/qwen35-9b-equational-theory-sair-r3-mix30m",
+      "snippet": ""
+    },
+    {
+      "title": "Qwen/Qwen3.5-9B",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.5-9B",
+      "snippet": ""
+    }
+  ]
+}

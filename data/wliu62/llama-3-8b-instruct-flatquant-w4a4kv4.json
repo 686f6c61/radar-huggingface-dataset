@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "wliu62/Llama-3-8B-Instruct-FlatQuant-W4A4KV4",
+  "slug": "wliu62-llama-3-8b-instruct-flatquant-w4a4kv4",
+  "author": "wliu62",
+  "url": "https://huggingface.co/wliu62/Llama-3-8B-Instruct-FlatQuant-W4A4KV4",
+  "created_at": "2026-10-15T16:59:09.000Z",
+  "updated_at": "2026-10-15T16:59:43.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "custom_code",
+    "base_model:meta-llama/Meta-Llama-3-8B-Instruct",
+    "base_model:quantized:meta-llama/Meta-Llama-3-8B-Instruct",
+    "license:llama3",
+    "8-bit",
+    "flatquant",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4551889472,
+  "parameters_human": "4.55B",
+  "storage_bytes": 5637160817,
+  "storage_human": "5.6 GB",
+  "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "ProbioticFarmer/hyperliquid-2x3-benchmark",
+  "slug": "probioticfarmer-hyperliquid-2x3-benchmark",
+  "author": "ProbioticFarmer",
+  "url": "https://huggingface.co/ProbioticFarmer/hyperliquid-2x3-benchmark",
+  "created_at": "2026-10-15T02:33:22.000Z",
+  "updated_at": "2026-10-15T02:48:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ProbioticFarmer/hyperliquid-2x3-benchmark · Hugging Face",
+      "url": "https://huggingface.co/ProbioticFarmer/hyperliquid-2x3-benchmark",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ProbioticFarmer (Joshua Heaton) - Hugging Face",
+      "url": "https://huggingface.co/datasets/ProbioticFarmer/",
+      "snippet": "ProbioticFarmer&#x27;s datasets1 Sort: Recently updated ProbioticFarmer/hyperliquid-augmented-copytrading Updated 9 minutes ago"
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "The LLM leaderboard — October 2026 rankings Score, model size, context, price, and benchmark detail in one table. Filter state syncs to the URL so every view is shareable. Supported and Estimated labels show how much independent evidence backs each position."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

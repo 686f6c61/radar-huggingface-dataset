@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "black-forest-labs/flux-3-image-klein-base",
+  "slug": "black-forest-labs-flux-3-image-klein-base",
+  "author": "black-forest-labs",
+  "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-base",
+  "created_at": "2026-10-13T10:19:46.000Z",
+  "updated_at": "2026-10-15T15:31:40.000Z",
+  "license": "flux-kommunity-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "image-generation",
+    "image-editing",
+    "flux",
+    "flux-3",
+    "black-forest-labs",
+    "image-to-image",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 43,
+  "downloads_30d": 134,
+  "trending_score": 43,
+  "parameters": 5538458368,
+  "parameters_human": "5.54B",
+  "storage_bytes": 47360928583,
+  "storage_human": "47.4 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Passez au meilleur de la tech reconditionnée. | Back Market",
+      "url": "https://www.backmarket.fr/fr-fr?msockid=1101e5fe529e653c3596f20d5384645b",
+      "snippet": "Profitez d'articles reconditionnés sur Back Market, moins cher que le neuf ! Livraison standard offerte - Garantie contractuelle de 12 …"
+    },
+    {
+      "title": "Black - Simple English Wikipedia, the free encyclopedia",
+      "url": "https://simple.wikipedia.org/wiki/Black",
+      "snippet": "No color can have the same level of dark pigmentation without turning itself into black. As the visual perception of an object's color is …"
+    },
+    {
+      "title": "BLACKSTORE - Vivez l’expérience mode !",
+      "url": "https://www.blackstore.fr/",
+      "snippet": "Le meilleur des marques se trouve chez BLACKSTORE. Vêtements, accessoires, chaussures pour femmes et hommes : tous les …"
+    },
+    {
+      "title": "Black M - YouTube",
+      "url": "https://www.youtube.com/channel/UCa_m88y-YP42wOdoYaIk6og",
+      "snippet": "Black M - La Légende Black Play all Retrouve toutes les vidéos officielles de l'album La Légende Black ! Album disponible : …"
+    },
+    {
+      "title": "Opticien en Ligne : Lunettes BLACKSHEEP Dès 2,50 €",
+      "url": "https://www.blacksheep.io/fr/",
+      "snippet": "e site officiel BLACKSHEEP. Votre opticien pour l'achat en ligne de lunettes direct usine. Plus de 20 000 modèles de vue et soleil …"
+    }
+  ]
+}

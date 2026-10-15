@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "hakeemkazmi/embeddinggemma-300m-litert",
+  "slug": "hakeemkazmi-embeddinggemma-300m-litert",
+  "author": "hakeemkazmi",
+  "url": "https://huggingface.co/hakeemkazmi/embeddinggemma-300m-litert",
+  "created_at": "2026-10-15T02:47:33.000Z",
+  "updated_at": "2026-10-15T02:52:42.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tflite",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 188012847,
+  "storage_human": "188 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hakeemkazmi/embeddinggemma-300m-litert · Hugging Face",
+      "url": "https://huggingface.co/hakeemkazmi/embeddinggemma-300m-litert",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "litert-community/embeddinggemma-300m - Hugging Face",
+      "url": "https://huggingface.co/litert-community/embeddinggemma-300m",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "EmbeddingGemma model card | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/embeddinggemma/model_card",
+      "snippet": "EmbeddingGemma is a 300M parameter, state-of-the-art for its size, open embedding model from Google, built from Gemma 3 (with T5Gemma initialization) and the same research and technology used to create Gemini models."
+    },
+    {
+      "title": "EmbeddingGemma — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/embeddinggemma/",
+      "snippet": "Performance EmbeddingGemma 2 delivers high-quality embeddings for code, vision, and audio tasks."
+    },
+    {
+      "title": "google/embedding-gemma-300m • LM Studio",
+      "url": "https://lmstudio.ai/models/google/embedding-gemma-300m",
+      "snippet": "EmbeddingGemma Open embedding model from Google, built from Gemma 3 (with T5Gemma initialization) and the same research and technology used to create Gemini models. 300M parameters, state-of-the-art for its size. Well-suited for search and retrieval tasks, including classification, clustering, and semantic similarity search."
+    }
+  ]
+}

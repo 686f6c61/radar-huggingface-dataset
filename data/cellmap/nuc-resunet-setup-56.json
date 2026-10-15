@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "cellmap/nuc-resunet-setup-56",
+  "slug": "cellmap-nuc-resunet-setup-56",
+  "author": "cellmap",
+  "url": "https://huggingface.co/cellmap/nuc-resunet-setup-56",
+  "created_at": "2026-10-15T18:49:12.000Z",
+  "updated_at": "2026-10-15T18:49:13.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "cellmap-models",
+  "languages": [],
+  "tags": [
+    "cellmap-models",
+    "onnx",
+    "pytorch",
+    "torchscript",
+    "3d",
+    "segmentation",
+    "electron-microscopy",
+    "cellmap",
+    "nuc",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 142165913,
+  "storage_human": "142 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何在 Apple Music 试用期内提前取消订阅？ - 知乎",
+      "url": "https://www.zhihu.com/question/32268762",
+      "snippet": "如何在 Apple Music 试用期内提前取消订阅？ 因为要更改账号国家，所以要求必须取消 Apple Music Membership! 隐藏 Apple Music …"
+    },
+    {
+      "title": "Apple Music mit anderer Apple ID - Apple Community",
+      "url": "https://communities.apple.com/de/thread/251038116",
+      "snippet": "Apple Music mit anderer Apple ID Hallo zusammen, ich habe da eine Frage zu Apple Music und der Verwendung einer anderen …"
+    },
+    {
+      "title": "apple music 无法订阅",
+      "url": "https://discussionschinese.apple.com/thread/250217905",
+      "snippet": "Mar 8, 2019 · edisonLing，您好 感谢您来到 Apple 支持社区！ 请问您指的是您的 iOS 设备遇到了无法订阅 Apple Music 的问题，是 …"
+    },
+    {
+      "title": "如何看待苹果于1月24日在中国大陆推出的「Apple Music古典乐」独 …",
+      "url": "https://www.zhihu.com/question/639023408",
+      "snippet": "Jan 24, 2024 · 其实苹果早在2021年8月收购Primephonic的时候，就承诺2022年将会推出一款全新的app，但是苹果2022年跳票了， …"
+    },
+    {
+      "title": "访问限制密码忘记了怎么办 - Apple 社区",
+      "url": "https://discussionschinese.apple.com/thread/140124887",
+      "snippet": "Mar 12, 2018 · iPhone、iPad 或 iPod touch 密码忘了，或设备已停用怎么办 - Apple 支持 跟忘记锁屏密码差不多，如果你的手机还可 …"
+    }
+  ]
+}

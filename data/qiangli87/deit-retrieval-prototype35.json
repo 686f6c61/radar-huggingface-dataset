@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "QiangLi87/deit-retrieval-prototype35",
+  "slug": "qiangli87-deit-retrieval-prototype35",
+  "author": "QiangLi87",
+  "url": "https://huggingface.co/QiangLi87/deit-retrieval-prototype35",
+  "created_at": "2026-10-15T02:38:51.000Z",
+  "updated_at": "2026-10-15T02:38:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Artificial intelligence-driven personalized dietary ... - PMC - NIH",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13061733/",
+      "snippet": ""
+    },
+    {
+      "title": "Leveraging image-based AI for dietary assessment",
+      "url": "https://www.researchgate.net/publication/396360560_Leveraging_image-based_AI_for_dietary_assessment_evaluating_a_large_language_model_with_real-world_meal_photos_from_the_ZOE_PREDICT_cohorts",
+      "snippet": ""
+    },
+    {
+      "title": "Leveraging Retrieval-Augmented Large Language Models for ...",
+      "url": "https://medinform.jmir.org/2025/1/e75279/",
+      "snippet": ""
+    },
+    {
+      "title": "DietQA: A Comprehensive Framework for Personalized ...",
+      "url": "https://www.mdpi.com/2073-431X/14/10/412",
+      "snippet": ""
+    },
+    {
+      "title": "iDT-diet: Toward Personalized Health Forecasting-An ...",
+      "url": "https://ojs.aaai.org/index.php/AAAI/article/view/42260/46221",
+      "snippet": ""
+    }
+  ]
+}

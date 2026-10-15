@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "meta-models/Muse-Spark-Open-816B-A42B",
+  "slug": "meta-models-muse-spark-open-816b-a42b",
+  "author": "meta-models",
+  "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
+  "created_at": "2026-09-15T19:23:19.000Z",
+  "updated_at": "2026-10-15T15:46:43.000Z",
+  "license": "muse-model-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "muse_spark",
+    "image-text-to-text",
+    "facebook",
+    "meta",
+    "pytorch",
+    "muse",
+    "muse-spark",
+    "conversational",
+    "en",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 123,
+  "downloads_30d": 402,
+  "trending_score": 0,
+  "parameters": 822036529664,
+  "parameters_human": "822.04B",
+  "storage_bytes": 1644361479718,
+  "storage_human": "1644.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "À propos de Meta | Notre entreprise, notre mission, nos applications et ...",
+      "url": "https://www.meta.com/fr-fr/about/",
+      "snippet": "Découvrez Meta : notre mission, nos principes, notre direction, la propriété de l’entreprise, nos applications (Instagram, Facebook, …"
+    },
+    {
+      "title": "Meta AI - Your AI Assistant for Images, Shopping and More",
+      "url": "https://www.meta.ai/?locale=fr_FR",
+      "snippet": "Use Meta AI to get things done. Create AI-generated images for free, edit photos, shop, find places to go, and get answers to any …"
+    },
+    {
+      "title": "About Meta | Our Company, Mission, Apps & Products",
+      "url": "https://www.meta.com/about/",
+      "snippet": "Learn about Meta: our mission, principles, leadership, who owns the company, apps (Instagram, Facebook, WhatsApp, Threads) …"
+    },
+    {
+      "title": "Meta for Business (formerly Facebook for Business)",
+      "url": "https://business.facebook.com/",
+      "snippet": "By logging in, you can navigate to all business tools like Meta Business Suite, Ads Manager and more to help you connect with your …"
+    },
+    {
+      "title": "Meta",
+      "url": "https://auth.meta.com/login",
+      "snippet": "Log in to your Meta account using your email address."
+    }
+  ]
+}

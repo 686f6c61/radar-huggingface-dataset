@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "phylia27/BIMA",
+  "slug": "phylia27-bima",
+  "author": "phylia27",
+  "url": "https://huggingface.co/phylia27/BIMA",
+  "created_at": "2026-10-15T03:01:44.000Z",
+  "updated_at": "2026-10-15T03:01:44.000Z",
+  "license": "ncsa",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:ncsa",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "phylia27 (Phylia Chisty Boimau) - Hugging Face",
+      "url": "https://huggingface.co/phylia27",
+      "snippet": "User profile of Phylia Chisty Boimau on Hugging Face"
+    },
+    {
+      "title": "Phylia.ai",
+      "url": "https://phylia.ai/",
+      "snippet": "AI that meets you where you are Sign in Use your email and password."
+    },
+    {
+      "title": "Phylia.ai",
+      "url": "https://phylia.ai/profile",
+      "snippet": "AI that meets you where you are"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?!!",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "LLM Leaderboard: AI Model Rankings & Pricing | llmboard.ai",
+      "url": "https://www.llmboard.ai/",
+      "snippet": "Explore the LLM leaderboard to compare the best AI models across capability, pricing and LLM benchmarks. Find the best LLM for coding, reasoning and more."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "AnonymousCS/antielite_classifier_bsample_009_s42",
+  "slug": "anonymouscs-antielite_classifier_bsample_009_s42",
+  "author": "AnonymousCS",
+  "url": "https://huggingface.co/AnonymousCS/antielite_classifier_bsample_009_s42",
+  "created_at": "2026-10-15T02:43:22.000Z",
+  "updated_at": "2026-10-15T02:43:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 177854978,
+  "parameters_human": "177.9M",
+  "storage_bytes": 711443432,
+  "storage_human": "711 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AnonymousCS/antielite_classifier_bsample_009_s42 · Hugging Face",
+      "url": "https://huggingface.co/AnonymousCS/antielite_classifier_bsample_009_s42",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AnonymousCS/antielite_classifier_all · Hugging Face",
+      "url": "https://huggingface.co/AnonymousCS/antielite_classifier_all",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Tracker: new AI models and leaks, the moment they appear",
+      "url": "https://aitracker.bot/",
+      "snippet": "AI Tracker watches 145+ model APIs, docs, app bundles, leaderboards and leak accounts, and pings Discord, X and your inbox the moment a new AI model or leak appears."
+    },
+    {
+      "title": "Google says Gemini 4 Argon is a &#x27;powerhouse&#x27; AI model — and it&#x27;s ...",
+      "url": "https://www.businessinsider.com/google-gemini-4-argon-ai-model-public-release-cost-2026-10?op=1",
+      "snippet": "Google&#x27;s new Argon model is the first of the Gemini 4 family, and Google&#x27;s chance to reassert itself in the AI race."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 948 AI models across 629 benchmarks, with 222 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    }
+  ]
+}

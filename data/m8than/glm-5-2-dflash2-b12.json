@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "m8than/GLM-5.2-DFlash2-B12",
+  "slug": "m8than-glm-5-2-dflash2-b12",
+  "author": "m8than",
+  "url": "https://huggingface.co/m8than/GLM-5.2-DFlash2-B12",
+  "created_at": "2026-10-15T02:42:16.000Z",
+  "updated_at": "2026-10-15T06:50:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "dflash2",
+    "speculative-decoding",
+    "glm-5.2",
+    "furnace",
+    "rocm",
+    "experimental",
+    "base_model:SubconsciousDev/glm-5.2-fp8-dflash-v2",
+    "base_model:finetune:SubconsciousDev/glm-5.2-fp8-dflash-v2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2289554560,
+  "parameters_human": "2.29B",
+  "storage_bytes": 4579119720,
+  "storage_human": "4.6 GB",
+  "base_model": "SubconsciousDev/glm-5.2-fp8-dflash-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Limbus Company ID Creator - Custom Card Maker",
+      "url": "https://limbus-company-id-creator.com/",
+      "snippet": "1 day ago · Create custom Limbus Company Identity and E.G.O cards with our fan-made character creator. Design, customize, and …"
+    },
+    {
+      "title": "Identity Creator | Limbus ID Creator - Limbus Company ID Creator",
+      "url": "https://limbus-company-id-creator.com/creator/identity",
+      "snippet": "Design a custom Limbus Company Identity card: stats, skills, passives and splash art."
+    },
+    {
+      "title": "Limbus Company Tools",
+      "url": "https://limbus.eldritchtools.com/",
+      "snippet": "16 hours ago · Limbus Company tools for team builds, Mirror Dungeon planning, Identity and E.G.O database with user ratings, …"
+    },
+    {
+      "title": "Identity Card Maker - Limbus Deck",
+      "url": "https://limbusdeck.com/en/card-maker",
+      "snippet": "Turn a Limbus Company identity into a card for social media — a real identity card from game data, or a fan-made identity card with …"
+    },
+    {
+      "title": "GitHub - ggbb0711/limbus-id-creator: Limbus company id creator",
+      "url": "https://github.com/ggbb0711/limbus-id-creator",
+      "snippet": "Limbus ID Creator Create and customize Limbus Company-style ID cards. Live site: https://limbus-company-id-creator.com/"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "6guwew/personality-interpretation-zh",
+  "slug": "6guwew-personality-interpretation-zh",
+  "author": "6guwew",
+  "url": "https://huggingface.co/6guwew/personality-interpretation-zh",
+  "created_at": "2026-10-15T16:27:27.000Z",
+  "updated_at": "2026-10-15T16:29:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "personality",
+    "big-five",
+    "ipip",
+    "mbti",
+    "psychology",
+    "text-generation",
+    "conversational",
+    "zh",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 334436064,
+  "storage_human": "334 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hot-sex videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/tags/hot-sex",
+      "snippet": "VIP SEX VAULT - Hot Morning Sex Leaves Me COVERED in Cum! Japanese maid Anna Kimijima had hot sex, uncensored."
+    },
+    {
+      "title": "Free Hot Sex Porn Videos | xHamster",
+      "url": "https://xhamster.com/tags/hot-sex",
+      "snippet": "Check out free Hot Sex porn videos on xHamster. Watch all Hot Sex XXX vids right now!"
+    },
+    {
+      "title": "hot-sex videos - XVIDEOS.COM",
+      "url": "https://mobile-xvideos.com/tags/hot-sex",
+      "snippet": "Horny MILF loves double penetration and rough sex! - FRED NUNEX."
+    },
+    {
+      "title": "sex-hot videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/tags/sex-hot",
+      "snippet": "HOT SEX BY TRUE LOVERS !! Deu o cu em cima do formigueiro, não gosta das coisas do BDSM e quando fez a chuca... - Kyra …"
+    },
+    {
+      "title": "Hot Sex Videos & Free XXX Porn Movies - inXXX.com",
+      "url": "https://www.inxxx.com/tags/hot-sex/",
+      "snippet": "Browse amazing sex videos we've gathered in high quality for free on our website! See couples fuck in various sex positions!"
+    }
+  ]
+}

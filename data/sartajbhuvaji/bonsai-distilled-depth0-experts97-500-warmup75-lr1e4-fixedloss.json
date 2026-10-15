@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "sartajbhuvaji/bonsai-distilled-depth0-experts97-500-warmup75-lr1e4-fixedloss",
+  "slug": "sartajbhuvaji-bonsai-distilled-depth0-experts97-500-warmup75-lr1e4-fixedloss",
+  "author": "sartajbhuvaji",
+  "url": "https://huggingface.co/sartajbhuvaji/bonsai-distilled-depth0-experts97-500-warmup75-lr1e4-fixedloss",
+  "created_at": "2026-10-15T02:51:24.000Z",
+  "updated_at": "2026-10-15T02:52:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_moe",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 33,
+  "trending_score": 0,
+  "parameters": 8552822784,
+  "parameters_human": "8.55B",
+  "storage_bytes": 17117675269,
+  "storage_human": "17.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Advertiser-friendly content guidelines - YouTube Help",
+      "url": "https://support.google.com/youtube/answer/6162278?hl=en",
+      "snippet": "Mature content aimed towards kids Themes that are mostly associated with teen or adult audiences such as nudity, sex, realistic …"
+    },
+    {
+      "title": "Sexually explicit content - Advertising Policies Help",
+      "url": "https://support.google.com/adspolicy/answer/16490050?hl=en",
+      "snippet": "Text, image, audio, or video of graphic sexual acts intended to arouse Examples (non-exhaustive): Hardcore pornography, cartoon …"
+    },
+    {
+      "title": "Magic Transsexual Transformation Story | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/magic-transsexual-transformation-story.16016/",
+      "snippet": "Jul 12, 2007 · unrestrained sex, both with their own husbands and each other's, and the men were apparently ready for more. The …"
+    },
+    {
+      "title": "[Story] I Have Sex With My Mom, Dad and Brother - XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/story-i-have-sex-with-my-mom-dad-and-brother.243348/",
+      "snippet": "May 17, 2012 · KarlChilders Amateur Joined: May 14, 2012 Messages: 51 May 17, 2012 \"I Have Sex With My Mom, Dad and Brother\" …"
+    },
+    {
+      "title": "Prohibited and restricted content - Maps User Contributed Content ...",
+      "url": "https://support.google.com/contributionpolicy/answer/7400114?hl=en-gb",
+      "snippet": "Non-commercial content related to sex toys. We may allow content that is otherwise considered adult-themed for an educational, …"
+    }
+  ]
+}

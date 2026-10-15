@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "unsloth/Muse-Spark-Open-816B-A42B-GGUF",
+  "slug": "unsloth-muse-spark-open-816b-a42b-gguf",
+  "author": "unsloth",
+  "url": "https://huggingface.co/unsloth/Muse-Spark-Open-816B-A42B-GGUF",
+  "created_at": "2026-09-19T10:53:50.000Z",
+  "updated_at": "2026-10-15T18:34:02.000Z",
+  "license": "muse-model-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "facebook",
+    "meta",
+    "pytorch",
+    "muse",
+    "muse-spark",
+    "unsloth",
+    "image-text-to-text",
+    "en",
+    "base_model:meta-models/Muse-Spark-Open-816B-A42B",
+    "base_model:quantized:meta-models/Muse-Spark-Open-816B-A42B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 27,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": 819991575808,
+  "parameters_human": "819.99B",
+  "storage_bytes": 2455379568152,
+  "storage_human": "2455.4 GB",
+  "base_model": "meta-models/Muse-Spark-Open-816B-A42B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Unsloth - Run and Train Models Locally",
+      "url": "https://unsloth.ai/",
+      "snippet": "Unsloth is an open-source, no-code deskop UI for training and running open models on your local hardware."
+    },
+    {
+      "title": "GitHub - unslothai/unsloth: Local UI to run and train LLMs and ...",
+      "url": "https://github.com/unslothai/unsloth",
+      "snippet": "The core Unsloth package remains licensed under Apache 2.0, while certain optional components, such as the Unsloth Studio UI are …"
+    },
+    {
+      "title": "Introducing Unsloth Studio | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/new/studio",
+      "snippet": "Unsloth Studio lets LLMs run Bash and Python, not just JavaScript with bypass permissions. It also sandboxes programs like Claude …"
+    },
+    {
+      "title": "unsloth (Unsloth AI) - Hugging Face",
+      "url": "https://huggingface.co/unsloth",
+      "snippet": "Image-Text-to-Text • 177B • Updated 7 days ago • 1.26M • 1.18k Text Generation • 321B • Updated 7 days ago • 936k • 478 Text …"
+    },
+    {
+      "title": "Releases · unslothai/unsloth - GitHub",
+      "url": "https://github.com/unslothai/unsloth/releases",
+      "snippet": "Major Unsloth workflow upgrades: improved files, chat history, browser agent and document handling. Improved hardware …"
+    }
+  ]
+}

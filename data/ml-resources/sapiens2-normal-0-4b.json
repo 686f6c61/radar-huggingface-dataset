@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ml-resources/sapiens2-normal-0.4b",
+  "slug": "ml-resources-sapiens2-normal-0-4b",
+  "author": "ml-resources",
+  "url": "https://huggingface.co/ml-resources/sapiens2-normal-0.4b",
+  "created_at": "2026-10-15T18:26:31.000Z",
+  "updated_at": "2026-10-15T18:26:48.000Z",
+  "license": "sapiens2-license",
+  "license_family": "unknown",
+  "pipeline_tag": "depth-estimation",
+  "library": "sapiens2",
+  "languages": [],
+  "tags": [
+    "sapiens2",
+    "safetensors",
+    "sapiens",
+    "human-centric",
+    "normal",
+    "transformers",
+    "depth-estimation",
+    "arxiv:2604.21681",
+    "base_model:facebook/sapiens2-pretrain-0.4b",
+    "base_model:finetune:facebook/sapiens2-pretrain-0.4b",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 453357747,
+  "parameters_human": "453.4M",
+  "storage_bytes": 1813476476,
+  "storage_human": "1.8 GB",
+  "base_model": "facebook/sapiens2-pretrain-0.4b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ibuku & temanku | Penana",
+      "url": "https://www.penana.com/story/172549/ibuku-amp-temanku/issue/7",
+      "snippet": "Jan 22, 2025 · Saat itu aku dan Rendy tidak mengobrol apa-apa mungkin karena terlalu cape. Hingga pagi harinya, aku, Andre, dan …"
+    },
+    {
+      "title": "MAMA DAN TEMANKU - Penana",
+      "url": "https://www.penana.com/story/98139/mama-dan-temanku/issue/0",
+      "snippet": "Mar 27, 2022 · Bookmark!"
+    },
+    {
+      "title": "Nilai Ujian - Cerita Dewasa Sange",
+      "url": "https://ceritadewasasangek.blogspot.com/2012/02/nilai-ujian.html",
+      "snippet": "Feb 9, 2012 · Aku sedang berjalan santai meninggalkan rumah pak Hr, ini pertemuanku yang ketiga dengan laki-laki itu demi …"
+    },
+    {
+      "title": "IBU SAHABATKU - Lexbarameru - Wattpad",
+      "url": "https://www.wattpad.com/story/340359859-ibu-sahabatku",
+      "snippet": "Apr 25, 2023 · Kana tidak lagi ingin mengalah dan menjadi orang lain, ia akan menjadi dirinya sendiri dan membalas Bian atas apa …"
+    },
+    {
+      "title": "IBUKU TERLALU BAIK 2 - IBUKU TERLALU BAIK - Dreame",
+      "url": "https://www.dreame.com/id/story/3424788992-ibuku-terlalu-baik/1617523968-ibuku-terlalu-baik-2.html",
+      "snippet": "Singkat cerita Jam pelajaran telah usai dan seperti biasa dodi heru dan dede sedang beristirahat di kantin, kebetulan heru hari ini …"
+    }
+  ]
+}

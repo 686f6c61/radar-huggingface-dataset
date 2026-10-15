@@ -5,7 +5,7 @@
   "author": "zai-org",
   "url": "https://huggingface.co/zai-org/GLM-5.3-Flash-BF16",
   "created_at": "2026-08-25T06:45:05.000Z",
-  "updated_at": "2026-09-04T06:45:54.000Z",
+  "updated_at": "2026-10-15T06:53:11.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 72,
-  "downloads_30d": 119838,
+  "downloads_30d": 133081,
   "trending_score": 8,
   "parameters": 321323031390,
   "parameters_human": "321.32B",

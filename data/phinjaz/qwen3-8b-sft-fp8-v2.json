@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "phinjaz/qwen3-8b-sft-fp8-v2",
+  "slug": "phinjaz-qwen3-8b-sft-fp8-v2",
+  "author": "phinjaz",
+  "url": "https://huggingface.co/phinjaz/qwen3-8b-sft-fp8-v2",
+  "created_at": "2026-10-15T18:41:46.000Z",
+  "updated_at": "2026-10-15T19:35:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "unsloth",
+    "trl",
+    "sft",
+    "base_model:unsloth/Qwen3-8B-FP8",
+    "base_model:finetune:unsloth/Qwen3-8B-FP8",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1932639789,
+  "storage_human": "1.9 GB",
+  "base_model": "unsloth/Qwen3-8B-FP8",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=modified",
+      "snippet": "Text Generation • 8B • Updated in about 15 hours · shaeel12/moonshine ... phinjaz/qwen3-4b-sft-fp8-v2. Updated in about 15 hours · Sanghyang00/ELARSpeech ..."
+    }
+  ]
+}

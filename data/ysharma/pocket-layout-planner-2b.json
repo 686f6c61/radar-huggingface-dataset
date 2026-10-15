@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "ysharma/pocket-layout-planner-2B",
+  "slug": "ysharma-pocket-layout-planner-2b",
+  "author": "ysharma",
+  "url": "https://huggingface.co/ysharma/pocket-layout-planner-2B",
+  "created_at": "2026-10-15T18:56:32.000Z",
+  "updated_at": "2026-10-15T18:57:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Music | Stepmother",
+      "url": "https://stepmother1.bandcamp.com/",
+      "snippet": "Stepmother is an Australian power trio fronted by Graham Clise (Annihilation Time, Lecherous Gaze, Rot TV, Witch). With Equal …"
+    },
+    {
+      "title": "Stepmother (@thee_stepmother) • Instagram photos and videos",
+      "url": "https://www.instagram.com/thee_stepmother/",
+      "snippet": "3,462 Followers, 1,427 Following, 147 Posts - Stepmother (@thee_stepmother) on Instagram: \"Melbourne Unpleasant rock U$A Tour …"
+    },
+    {
+      "title": "Get to Know: Melbourne Power Trio Stepmother - Tone Deaf",
+      "url": "https://tonedeaf.thebrag.com/stepmother-get-to-know-interview/",
+      "snippet": "Aug 12, 2024 · Fronted by the prolific guitarist Graham Clise (Witch, Annihilation Time, Lecherous Gaze, Rot TV), this Australian …"
+    },
+    {
+      "title": "Stepmother | Stepmother",
+      "url": "https://stepmother1.bandcamp.com/album/stepmother",
+      "snippet": "Apr 28, 2022 · STEPMOTHER 7\" Limited Red Vinyl x100 Record/Vinyl + Digital Album Includes unlimited streaming of Stepmother …"
+    },
+    {
+      "title": "Australian power trio Stepmother to unleash debut album »Planet ...",
+      "url": "https://doomed-nation.com/australian-power-trio-stepmother-to-unleash-debut-album-planet-brutalicon-on-tee-pee-records-legless-records-first-single-do-you-believe-streaming/",
+      "snippet": "Melbourne, Australia based psychedelic rock/proto-punk/rock’n’roll trio Stepmother is gearing up to unleash their debut album …"
+    }
+  ]
+}

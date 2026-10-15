@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Low101/hf_act_recordpolicy0",
+  "slug": "low101-hf_act_recordpolicy0",
+  "author": "Low101",
+  "url": "https://huggingface.co/Low101/hf_act_recordpolicy0",
+  "created_at": "2026-10-15T16:41:43.000Z",
+  "updated_at": "2026-10-15T16:41:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:Low101/lerobot-so101-first-act_20261015_205345",
+    "arxiv:2304.13705",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714880,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ability Name Generator | BasedLabs",
+      "url": "https://www.basedlabs.ai/tools/ability-name-generator",
+      "snippet": "Aug 13, 2026 · Browse the generated list and select the names that resonate with you. If you're not satisfied, adjust your input or …Read more"
+    },
+    {
+      "title": "Category:Ocular Powers | Superpower Wiki | Fandom",
+      "url": "https://powerlisting.fandom.com/wiki/Category:Ocular_Powers",
+      "snippet": "This is the category for pages that revolve around eyes and/or sight. A home for Fandom utilities."
+    },
+    {
+      "title": "Ocular Techniques | Superpower Wiki | Fandom",
+      "url": "https://powerlisting.fandom.com/wiki/Ocular_Techniques",
+      "snippet": "After being struck in the right eye by a bolt of eldritch lightning, Doctor Thaddeus Sivana (DC's New 52) gained the ability to view all …"
+    },
+    {
+      "title": "Random Ability Generator | BasedLabs",
+      "url": "https://www.basedlabs.ai/tools/random-ability-generator",
+      "snippet": "Aug 13, 2026 · Generate random abilities for characters, games, or creative writing projects. Our AI powered tool helps you …"
+    },
+    {
+      "title": "Can anyone help me think of ideas for ocular abilities?",
+      "url": "https://www.reddit.com/r/magicbuilding/comments/kftn85/can_anyone_help_me_think_of_ideas_for_ocular/",
+      "snippet": "Dec 18, 2020 · I've just started to make a rp which will revolve around ocular abilities, known as Contracts. They are called as such …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "LLSYDNEY/multitask-practice",
+  "slug": "llsydney-multitask-practice",
+  "author": "LLSYDNEY",
+  "url": "https://huggingface.co/LLSYDNEY/multitask-practice",
+  "created_at": "2026-10-15T02:52:44.000Z",
+  "updated_at": "2026-10-15T02:52:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLSYDNEY (Sydney Lee) - Hugging Face",
+      "url": "https://huggingface.co/LLSYDNEY/models",
+      "snippet": "data engineering, responsible ai Recent Activity updated a modelabout 6 hours ago LLSYDNEY/multitask-practice published a modelabout 6 hours ago LLSYDNEY/multitask-practice liked a modelabout 6 hours ago autotrust/JEV-27B-VL View all activity"
+    },
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "Multi-Task Learning(MTL) for Deep Learning - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/deep-learning/multi-task-learningmtl-for-deep-learning/",
+      "snippet": "Multi-Task Learning (MTL) is a machine learning approach where a single model learns multiple related tasks simultaneously using shared representations, improving generalization and reducing overfitting."
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/",
+      "snippet": "Find local businesses, view maps and get driving directions in Google Maps."
+    },
+    {
+      "title": "Multi-task learning - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Multi-task_learning",
+      "snippet": "Multi-task learning (MTL) is a subfield of machine learning in which multiple learning tasks are solved at the same time, while exploiting commonalities and differences across tasks. This can result in improved learning efficiency and prediction accuracy for the task-specific models, when compared to training the models separately. [1][2][3] Inherently, multi-task learning is a multi-objective ..."
+    }
+  ]
+}

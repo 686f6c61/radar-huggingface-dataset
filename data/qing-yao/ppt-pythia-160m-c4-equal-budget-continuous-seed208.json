@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "qing-yao/ppt-pythia-160m-c4-equal-budget-continuous-seed208",
+  "slug": "qing-yao-ppt-pythia-160m-c4-equal-budget-continuous-seed208",
+  "author": "qing-yao",
+  "url": "https://huggingface.co/qing-yao/ppt-pythia-160m-c4-equal-budget-continuous-seed208",
+  "created_at": "2026-10-15T16:39:09.000Z",
+  "updated_at": "2026-10-15T16:39:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "c4",
+    "pythia",
+    "trained-from-scratch",
+    "en",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 162322944,
+  "parameters_human": "162.3M",
+  "storage_bytes": 2923817353,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

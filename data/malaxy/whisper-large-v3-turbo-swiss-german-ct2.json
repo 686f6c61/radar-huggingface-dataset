@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "malaxy/whisper-large-v3-turbo-swiss-german-ct2",
+  "slug": "malaxy-whisper-large-v3-turbo-swiss-german-ct2",
+  "author": "malaxy",
+  "url": "https://huggingface.co/malaxy/whisper-large-v3-turbo-swiss-german-ct2",
+  "created_at": "2026-10-15T18:58:52.000Z",
+  "updated_at": "2026-10-15T18:59:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "ctranslate2",
+  "languages": [
+    "de",
+    "gsw"
+  ],
+  "tags": [
+    "ctranslate2",
+    "automatic-speech-recognition",
+    "whisper",
+    "faster-whisper",
+    "swiss-german",
+    "de",
+    "gsw",
+    "base_model:gcoli/whisper-large-v3-turbo-swiss-german-mit",
+    "base_model:finetune:gcoli/whisper-large-v3-turbo-swiss-german-mit",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1617884929,
+  "storage_human": "1.6 GB",
+  "base_model": "gcoli/whisper-large-v3-turbo-swiss-german-mit",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Chrome – Download the fast, secure browser from Google",
+      "url": "https://www.google.fr/intl/en_uk/chrome/",
+      "snippet": "Get more done with the new Google Chrome. A more simple, secure and faster web browser than ever, with Google’s smarts built in. …"
+    },
+    {
+      "title": "Trouvez et réservez des vols pas chers – Google Flights",
+      "url": "https://www.google.fr/travel/",
+      "snippet": "Trouvez des vols pas chers vers n'importe quelle destination avec Google Flights. Suivez les prix pour profiter des meilleures offres …"
+    },
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.fr/details",
+      "snippet": "Traduisez des textes instantanément avec Google Translate."
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.fr/mapfiles/home3.html",
+      "snippet": "Explore and navigate the world with Google Maps, offering directions, local business information, and street views."
+    },
+    {
+      "title": "Tendances actuelles – Google Trends",
+      "url": "https://trends.google.fr/trending",
+      "snippet": "Découvrez les tendances de recherche actuelles et récentes sur Google Trends"
+    }
+  ]
+}

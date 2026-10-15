@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mrfakename/parakeet-unified-ONNX",
+  "slug": "mrfakename-parakeet-unified-onnx",
+  "author": "mrfakename",
+  "url": "https://huggingface.co/mrfakename/parakeet-unified-ONNX",
+  "created_at": "2026-10-15T02:54:12.000Z",
+  "updated_at": "2026-10-15T02:56:02.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "nemo-conformer-rnnt",
+    "webgpu",
+    "parakeet",
+    "rnnt",
+    "fastconformer",
+    "automatic-speech-recognition",
+    "en",
+    "base_model:nvidia/parakeet-unified-en-0.6b",
+    "base_model:quantized:nvidia/parakeet-unified-en-0.6b",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1182859495,
+  "storage_human": "1.2 GB",
+  "base_model": "nvidia/parakeet-unified-en-0.6b",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mrfakename - Hugging Face",
+      "url": "https://huggingface.co/mrfakename",
+      "snippet": "We've been working with LAION on a voice acting arena. You listen to two models doing the same scene and compare how well they pull it off."
+    },
+    {
+      "title": "nvidia/parakeet-tdt-0.6b-v3 - Hugging Face",
+      "url": "https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3",
+      "snippet": "14.08.2025 ... Description: parakeet-tdt-0.6b-v3 is a 600-million-parameter multilingual automatic speech recognition (ASR) model designed ..."
+    }
+  ]
+}

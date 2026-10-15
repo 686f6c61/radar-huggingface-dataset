@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "cukrus/FLUX.2-klein-4B-bnb-nf4",
+  "slug": "cukrus-flux-2-klein-4b-bnb-nf4",
+  "author": "cukrus",
+  "url": "https://huggingface.co/cukrus/FLUX.2-klein-4B-bnb-nf4",
+  "created_at": "2026-10-15T02:59:16.000Z",
+  "updated_at": "2026-10-15T06:19:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "flux2",
+    "flux2-klein",
+    "image-editing",
+    "text-to-image",
+    "bitsandbytes",
+    "nf4",
+    "4-bit",
+    "jetson",
+    "image-to-image",
+    "base_model:black-forest-labs/FLUX.2-klein-4B",
+    "base_model:quantized:black-forest-labs/FLUX.2-klein-4B",
+    "license:apache-2.0",
+    "diffusers:Flux2KleinPipeline",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2093070619,
+  "parameters_human": "2.09B",
+  "storage_bytes": 2480918365,
+  "storage_human": "2.5 GB",
+  "base_model": "black-forest-labs/FLUX.2-klein-4B",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Strip poker loser 2 by ClashOfStylecfnm on DeviantArt",
+      "url": "https://www.deviantart.com/clashofstylecfnm/art/Strip-poker-loser-2-870991609",
+      "snippet": "Feb 20, 2021 · Watch Team and join our Community Group for the latest updates and activities."
+    },
+    {
+      "title": "My wife lost in poker with my co-workers... - DeviantArt",
+      "url": "https://www.deviantart.com/cfnmfan37/art/My-wife-lost-in-poker-with-my-co-workers-1306232382",
+      "snippet": "Mar 5, 2026 · My wife lost in poker with my co-workers... — a video by cfnmfan37 on DeviantArt. My wife lost all her clothes in strip …"
+    },
+    {
+      "title": "Guys lose to girls in strip poker - cfnm - ImageFap",
+      "url": "https://www.imagefap.com/pictures/1760353/Guys-lose-to-girls-in-strip-poker-cfnm",
+      "snippet": "Browse Guys lose to girls in strip poker - cfnm porn picture gallery by amateurcfnm to see hottest %listoftags% sex images"
+    },
+    {
+      "title": "CFNM Fun: Guy Loses Strip Poker - ThisVid.com",
+      "url": "https://thisvid.com/playlist/114554/video/strip-poker12/",
+      "snippet": "Caught In The Buff By Girls - only the best CFNM Fun of men flashing porn on ThisVid!"
+    },
+    {
+      "title": "CFNM.: Strip Poker - ThisVid.com",
+      "url": "https://thisvid.com/playlist/130017/video/strip-poker8/",
+      "snippet": "STRIPPED CAUGHT - only the best CFNM. of men flashing porn on ThisVid!"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "igorktech/Qwen3.5-2B-multiharness-RL-GGUF",
+  "slug": "igorktech-qwen3-5-2b-multiharness-rl-gguf",
+  "author": "igorktech",
+  "url": "https://huggingface.co/igorktech/Qwen3.5-2B-multiharness-RL-GGUF",
+  "created_at": "2026-10-15T18:35:37.000Z",
+  "updated_at": "2026-10-15T19:07:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "agent",
+    "qwen3.5",
+    "image-text-to-text",
+    "en",
+    "base_model:FineEnvs/Qwen3.5-2B-multiharness-RL",
+    "base_model:quantized:FineEnvs/Qwen3.5-2B-multiharness-RL",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1881825088,
+  "parameters_human": "1.88B",
+  "storage_bytes": 12457409760,
+  "storage_human": "12.5 GB",
+  "base_model": "FineEnvs/Qwen3.5-2B-multiharness-RL",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

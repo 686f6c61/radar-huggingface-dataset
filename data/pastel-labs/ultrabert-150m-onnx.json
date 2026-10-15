@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "pastel-labs/UltraBERT-150M-ONNX",
+  "slug": "pastel-labs-ultrabert-150m-onnx",
+  "author": "pastel-labs",
+  "url": "https://huggingface.co/pastel-labs/UltraBERT-150M-ONNX",
+  "created_at": "2026-10-15T03:24:03.000Z",
+  "updated_at": "2026-10-15T04:19:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers.js",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "ultrabert",
+    "fill-mask",
+    "custom_code",
+    "en",
+    "base_model:dmis-lab/UltraBERT-150M",
+    "base_model:quantized:dmis-lab/UltraBERT-150M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1141334661,
+  "storage_human": "1.1 GB",
+  "base_model": "dmis-lab/UltraBERT-150M",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Études en France",
+      "url": "https://pastel.diplomatie.gouv.fr/etudesenfrance/dyn/public/authentification/login.html",
+      "snippet": "Je prépare ou je suis titulaire d’un baccalauréat français ou européen :"
+    },
+    {
+      "title": "Études en France - France-Diplomatie",
+      "url": "https://pastel.diplomatie.gouv.fr/etudesenfrance/dyn/public/authentification/login.html?codeLangue=EN",
+      "snippet": "I am a resident of one of the following countries and territories :"
+    },
+    {
+      "title": "Pastel - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Pastel",
+      "snippet": "This mixing of pigments with chalks is the origin of the word pastel in reference to pale color as it is commonly used in cosmetic and …"
+    },
+    {
+      "title": "Pastel — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Pastel",
+      "snippet": "Pastel Boîte de pastels. Le pastel est un bâtonnet de couleur utilisé en dessin et en peinture. Il est composé de pigments, d'une …"
+    },
+    {
+      "title": "Pastel (color) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Pastel_(color)",
+      "snippet": "Pastel colors are valued in fashion because of their ability to match with a variety of other color types. They can be combined with …"
+    }
+  ]
+}

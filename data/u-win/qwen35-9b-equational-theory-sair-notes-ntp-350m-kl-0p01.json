@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "U-WIN/qwen35-9b-equational-theory-sair-notes-ntp-350m-kl-0p01",
+  "slug": "u-win-qwen35-9b-equational-theory-sair-notes-ntp-350m-kl-0p01",
+  "author": "U-WIN",
+  "url": "https://huggingface.co/U-WIN/qwen35-9b-equational-theory-sair-notes-ntp-350m-kl-0p01",
+  "created_at": "2026-10-15T02:42:08.000Z",
+  "updated_at": "2026-10-15T03:50:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "equational-theory",
+    "sair",
+    "full-finetune",
+    "notes-only",
+    "next-token-prediction",
+    "kl-regularization",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 38625429982,
+  "storage_human": "38.6 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Super U, Hyper U, Supermarché, Hypermarché, U Express | Magasin U",
+      "url": "https://www.magasins-u.com/",
+      "snippet": "Profitez de 20% en € Carte U sur une sélection de produits du quotidien. Adhérez à la Carte U en quelques clics et profitez de vos …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "Application Mon Magasin U",
+      "url": "https://www.magasins-u.com/application-mon-magasin-u",
+      "snippet": "Découvrez notre application mobile et accédez à tout ce dont vous avez besoin pour profiter pleinement de votre expérience en …"
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube/u/0",
+      "snippet": "Join @Valkyrae and @scarra for a deep dive into how Esports player-creators became a model for athletes on YouTube. From their …"
+    },
+    {
+      "title": "U - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/U",
+      "snippet": "In the context of Newtonian mechanics, 'U' is the symbol for the potential energy of a system."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ylian2025/kev-rk3588-256-fp16",
+  "slug": "ylian2025-kev-rk3588-256-fp16",
+  "author": "ylian2025",
+  "url": "https://huggingface.co/ylian2025/kev-rk3588-256-fp16",
+  "created_at": "2026-10-15T02:46:13.000Z",
+  "updated_at": "2026-10-15T02:46:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "rk3588",
+    "rknn",
+    "qwen3",
+    "fp16",
+    "en",
+    "base_model:jaredpalmer/kev-0.6b",
+    "base_model:finetune:jaredpalmer/kev-0.6b",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1263386517,
+  "storage_human": "1.3 GB",
+  "base_model": "jaredpalmer/kev-0.6b",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ylian2025/kev-rk3588-256-fp16 · Hugging Face",
+      "url": "https://huggingface.co/ylian2025/kev-rk3588-256-fp16",
+      "snippet": "ylian2025 / kev-rk3588-256-fp16 Like 0 English rk3588 rknn qwen3 fp16 Model card FilesFiles and versions xet Community Copy to bucket new kev-0.6b fp16, 256 tokens, two NPU cores, for RK3588 Required SDK and driver What this repo does Length Example What was done to produce the RKNN file Files"
+    },
+    {
+      "title": "Model Deployment | lovelyyoshino/rk3588_model | DeepWiki",
+      "url": "https://deepwiki.com/lovelyyoshino/rk3588_model/3-model-deployment",
+      "snippet": "Model Deployment Relevant source files Purpose and Scope This document covers the complete model deployment pipeline for converting trained PyTorch models to RKNN format optimized for Rockchip NPU platforms. The deployment process encompasses model conversion, quantization strategies, platform-specific configurations, and the infrastructure for both prototyping and production inference. For ..."
+    },
+    {
+      "title": "reComputer RK3576/RK3588: Open Rockchip AI Box for AI Application",
+      "url": "https://www.seeedstudio.com/blog/2026/05/26/introducing-recomputer-rk3576-rk3588-open-source-rockchip-ai-boxes-for-real-world-ai-development/",
+      "snippet": "That's why we're excited to introduce the reComputer RK3576 / RK3588, a new family of open-source AI boxes built on the Rockchip RK3576/RK3588 processors and designed specifically for AI application development."
+    },
+    {
+      "title": "GitHub - airockchip/rknn-llm",
+      "url": "https://github.com/airockchip/rknn-llm",
+      "snippet": "Contribute to airockchip/rknn-llm development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - airockchip/rknn_model_zoo",
+      "url": "https://github.com/airockchip/rknn_model_zoo",
+      "snippet": "RKNN Model Zoo is developed based on the RKNPU SDK toolchain and provides deployment examples for current mainstream algorithms. Include the process of exporting the RKNN model and using Python API and CAPI to infer the RKNN model. Support RK3562, RK3566, RK3568, RK3576, RK3588 , RV1126B platforms. Limited support RV1103, RV1106 Support RV1109, RV1126, RK1808 platforms."
+    }
+  ]
+}

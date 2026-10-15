@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "AnonymousCS/antielite_classifier_bsample_011_s42",
+  "slug": "anonymouscs-antielite_classifier_bsample_011_s42",
+  "author": "AnonymousCS",
+  "url": "https://huggingface.co/AnonymousCS/antielite_classifier_bsample_011_s42",
+  "created_at": "2026-10-15T03:01:43.000Z",
+  "updated_at": "2026-10-15T03:01:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 177854978,
+  "parameters_human": "177.9M",
+  "storage_bytes": 711443432,
+  "storage_human": "711 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AnonymousCS/antielite_classifier_all · Hugging Face",
+      "url": "https://huggingface.co/AnonymousCS/antielite_classifier_all",
+      "snippet": "We're on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchives.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "GitHub - JoasASantos/Offensive-Security-AI-Models: Uncensored AI models ...",
+      "url": "https://github.com/JoasASantos/Offensive-Security-AI-Models",
+      "snippet": "Uncensored LLMs for Offensive Security Curated list of open-weight uncensored models for authorized red team operations, penetration testing, and security research. All data sourced from HuggingFace model cards and official publications. Sep 2026."
+    },
+    {
+      "title": "AI Model Rumours & Leaks — Stealth Models Tracker — The AI Resource Hub",
+      "url": "https://theairesourcehub.com/rumours/",
+      "snippet": "Track rumoured, leaked, and stealth AI models. Codenames, first sightings, and confirmed identities for upcoming models from OpenAI, Anthropic, Google, Meta, and more."
+    },
+    {
+      "title": "Small Open Source Models | Artificial Analysis",
+      "url": "https://artificialanalysis.ai/models/open-source/small",
+      "snippet": "Small open source models from 4B to 40B parameters. Fast and affordable models with limited capabilities and low latency."
+    }
+  ]
+}

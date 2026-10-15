@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "quincyqiang/chinese-decision-0.8b",
+  "slug": "quincyqiang-chinese-decision-0-8b",
+  "author": "quincyqiang",
+  "url": "https://huggingface.co/quincyqiang/chinese-decision-0.8b",
+  "created_at": "2026-10-15T03:24:25.000Z",
+  "updated_at": "2026-10-15T14:02:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": "transformers",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "decision",
+    "calibration",
+    "classification",
+    "chinese",
+    "qwen3.5",
+    "zero-shot-classification",
+    "zh",
+    "dataset:bbldCVer-hf/CJ-Dataset",
+    "arxiv:2609.36965",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 1527050119,
+  "storage_human": "1.5 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

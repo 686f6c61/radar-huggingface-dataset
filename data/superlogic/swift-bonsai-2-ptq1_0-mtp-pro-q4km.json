@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "SuperLogic/Swift-Bonsai-2-PTQ1_0-mtp-pro-q4km",
+  "slug": "superlogic-swift-bonsai-2-ptq1_0-mtp-pro-q4km",
+  "author": "SuperLogic",
+  "url": "https://huggingface.co/SuperLogic/Swift-Bonsai-2-PTQ1_0-mtp-pro-q4km",
+  "created_at": "2026-10-15T16:29:45.000Z",
+  "updated_at": "2026-10-15T17:36:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "ternary",
+    "PTQ1_0",
+    "quantization",
+    "GGUF",
+    "MTP",
+    "speculative-decoding",
+    "local-inference",
+    "0token",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 460730096,
+  "parameters_human": "460.7M",
+  "storage_bytes": 6841913888,
+  "storage_human": "6.8 GB",
+  "base_model": "Qwen/Qwen3.8-27B, prism-ml/Ternary-Bonsai-2-27B-gguf, ukisai/Swift-Bonsai-2-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

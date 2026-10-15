@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-krea2-lora-2070964822744850433",
+  "slug": "runninghubai-rh-krea2-lora-2070964822744850433",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-krea2-lora-2070964822744850433",
+  "created_at": "2026-10-15T02:37:00.000Z",
+  "updated_at": "2026-10-15T02:38:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "image-text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14416138,
+  "storage_human": "14 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RunningHubAI/rh-krea2-ai-lora · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-krea2-ai-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RunningHubAI/rh-krea2-lora-2070964822744850433 · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-krea2-lora-2070964822744850433",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RunningHub Models ｜ AI Model Creation & Training Platform",
+      "url": "https://www.runninghub.ai/models",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "Krea 2 ComfyUI: Model Downloads, Native Workflow & Style LoRAs",
+      "url": "https://comfyui-wiki.com/en/tutorial/advanced/image/krea/krea-2",
+      "snippet": "Krea 2 is an open-source image generation model by Krea AI, trained from scratch with a Diffusion Transformer architecture (~12B parameters). It comes in two complementary variants: Krea 2 Raw — the full base model at 52-step sampling. Designed for diversity and malleability; ideal for fine-tuning and LoRA training. Krea 2 Turbo — an 8-step distilled checkpoint for fast, high-quality ..."
+    },
+    {
+      "title": "pipi-krea2-photorealistic - V2 - Free AI LORA | TensorHub Art",
+      "url": "https://tensorhub.art/models/1054140469702829787",
+      "snippet": "Download pipi-krea2-photorealistic - free LORA KREA_2 AI model on TENSORHUB ART. BEAUTIFULL GIRL, EXCLUSIVE, CUTE GIRL. By pipiai"
+    }
+  ]
+}

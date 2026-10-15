@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "qing-yao/ppt-pythia-160m-c4-equal-budget-continuous-seed1024",
+  "slug": "qing-yao-ppt-pythia-160m-c4-equal-budget-continuous-seed1024",
+  "author": "qing-yao",
+  "url": "https://huggingface.co/qing-yao/ppt-pythia-160m-c4-equal-budget-continuous-seed1024",
+  "created_at": "2026-10-15T16:39:39.000Z",
+  "updated_at": "2026-10-15T16:39:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "c4",
+    "pythia",
+    "trained-from-scratch",
+    "en",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 162322944,
+  "parameters_human": "162.3M",
+  "storage_bytes": 2923817161,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Birmingham City Centre Escorts & Erotic Massage",
+      "url": "https://www.vivastreet.co.uk/escort/birmingham-city-centre",
+      "snippet": "Erotic Birmingham City Centre - Birmingham escorts are waiting for you. Whatever you desire, we have it. Complete discretion and …Read more"
+    },
+    {
+      "title": "Birmingham escorts | Tryst.link: Find independent escorts",
+      "url": "https://tryst.link/uk/escorts/west-midlands/birmingham",
+      "snippet": "Browse verified escorts in Birmingham, West Midlands, United Kingdom! Search by price, age, location and more to find the perfect …"
+    },
+    {
+      "title": "Birmingham Escorts ️ Find The Best Birmingham Escort At Girls.co.uk",
+      "url": "https://www.girls.co.uk/escorts/in/west-midlands-escorts/birmingham-escorts/",
+      "snippet": "Find the Hottest genuine Birmingham escorts listed on girls.co.uk in October 2026. Discover local independent Birmingham escorts & …"
+    },
+    {
+      "title": "Birmingham Escorts & Companion Profiles | Seductive Seekers",
+      "url": "https://www.seductiveseekers.com/escorts/uk/birmingham",
+      "snippet": "Browse Birmingham escorts, independent companion profiles, and travel companions. Explore local listings across Birmingham and …"
+    },
+    {
+      "title": "Escorts Birmingham | Locanto™ Personals in Birmingham",
+      "url": "https://www.locanto.co.uk/birmingham/Escorts/20905/",
+      "snippet": "In the category Escorts Birmingham you can find 571 personals ads, e.g.: call girls, models or VIP escorts. Go straight to the ads now!"
+    }
+  ]
+}

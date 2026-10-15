@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "intel-ai/Qwen3.5-35B-A3B-MXFP8-FP8KV-FP8Attn-CT-AutoRound",
+  "slug": "intel-ai-qwen3-5-35b-a3b-mxfp8-fp8kv-fp8attn-ct-autoround",
+  "author": "intel-ai",
+  "url": "https://huggingface.co/intel-ai/Qwen3.5-35B-A3B-MXFP8-FP8KV-FP8Attn-CT-AutoRound",
+  "created_at": "2026-10-15T18:40:24.000Z",
+  "updated_at": "2026-10-15T18:41:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "quantized",
+    "mxfp8",
+    "autoround",
+    "autoquant-agent",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.5-35B-A3B",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1489835406,
+  "parameters_human": "1.49B",
+  "storage_bytes": 39365813013,
+  "storage_human": "39.4 GB",
+  "base_model": "Qwen/Qwen3.5-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Download Intel Drivers and Software",
+      "url": "https://www.intel.fr/content/www/fr/fr/download-center/home.html",
+      "snippet": "Download new and previously released drivers including support software, bios, utilities, firmware and patches for Intel products.Read more"
+    },
+    {
+      "title": "Assistant pilotes et support Intel®",
+      "url": "https://www.intel.fr/content/www/fr/fr/support/detect.html",
+      "snippet": "Intel® Driver & Support Assistant maintient votre système à jour en fournissant une assistance personnalisée et des mises à jour en …"
+    },
+    {
+      "title": "Intel Inside - Built for AI",
+      "url": "https://www.intel.com/content/www/us/en/homepage.html",
+      "snippet": "We break barriers so builders can move faster, from prototype to global scale. That’s the power of Intel Inside®"
+    },
+    {
+      "title": "Intel® Driver & Support Assistant",
+      "url": "https://www.intel.com/content/www/us/en/support/detect.html",
+      "snippet": "The Intel® Driver & Support Assistant keeps your system up-to-date by providing tailored support and hassle-free updates for most …"
+    },
+    {
+      "title": "Intel - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Intel",
+      "snippet": "Intel Corporation is an American multinational technology company headquartered in Santa Clara, California. It designs, …"
+    }
+  ]
+}

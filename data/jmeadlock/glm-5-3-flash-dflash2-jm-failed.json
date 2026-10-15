@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "jmeadlock/GLM-5.3-Flash-DFlash2-JM-FAILED",
+  "slug": "jmeadlock-glm-5-3-flash-dflash2-jm-failed",
+  "author": "jmeadlock",
+  "url": "https://huggingface.co/jmeadlock/GLM-5.3-Flash-DFlash2-JM-FAILED",
+  "created_at": "2026-10-15T18:28:43.000Z",
+  "updated_at": "2026-10-15T18:31:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen3",
+    "speculative-decoding",
+    "dflash2",
+    "draft-model",
+    "draft",
+    "glm-5.3-flash",
+    "glm5_next",
+    "nvfp4",
+    "gb300",
+    "negative-result",
+    "failed-experiment",
+    "text-generation",
+    "arxiv:2602.06036",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:finetune:zai-org/GLM-5.3-Flash",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1171080448,
+  "parameters_human": "1.17B",
+  "storage_bytes": 2342169840,
+  "storage_human": "2.3 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "confiance - traduction - Dictionnaire Français-Anglais …",
+      "url": "https://www.wordreference.com/fren/confiance",
+      "snippet": "La confiance en soi est indispensable en compétition. Self-confidence is essential when competing. Ils ont établi un contrat de …"
+    },
+    {
+      "title": "confiance - Traduction anglaise – Linguee",
+      "url": "https://www.linguee.fr/francais-anglais/traduction/confiance.html",
+      "snippet": "De très nombreux exemples de phrases traduites contenant \"confiance\" – Dictionnaire anglais-français et moteur de recherche de …"
+    },
+    {
+      "title": "Traduction CONFIANCE en anglais - Reverso",
+      "url": "https://mobile-dictionary.reverso.net/francais-anglais/confiance",
+      "snippet": "Traduction de \"confiance\" en anglais : trust, confidence. Nom, signification, prononciation, expressions idiomatiques en français, …"
+    },
+    {
+      "title": "CONFIANCE in English - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/french-english/confiance",
+      "snippet": "CONFIANCE translate: trust, belief, confidence, faith, hopefulness, trust. Learn more in the Cambridge French-English Dictionary."
+    },
+    {
+      "title": "CONFIANCE | traduire en anglais - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/fr/dictionnaire/francais-anglais/confiance",
+      "snippet": "CONFIANCE - Traduction anglaise de CONFIANCE depuis le français, d'après le dictionnaire Français-Anglais - Cambridge Dictonary"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "carlosgm128/Qwen2-0.5B-Instruct-JQ4",
+  "slug": "carlosgm128-qwen2-0-5b-instruct-jq4",
+  "author": "carlosgm128",
+  "url": "https://huggingface.co/carlosgm128/Qwen2-0.5B-Instruct-JQ4",
+  "created_at": "2026-10-15T16:47:40.000Z",
+  "updated_at": "2026-10-15T16:49:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "chat",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2-0.5B",
+    "base_model:finetune:Qwen/Qwen2-0.5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 509469056,
+  "parameters_human": "509.5M",
+  "storage_bytes": 308919578,
+  "storage_human": "309 MB",
+  "base_model": "Qwen/Qwen2-0.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

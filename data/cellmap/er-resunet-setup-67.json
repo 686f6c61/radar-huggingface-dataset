@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "cellmap/er-resunet-setup-67",
+  "slug": "cellmap-er-resunet-setup-67",
+  "author": "cellmap",
+  "url": "https://huggingface.co/cellmap/er-resunet-setup-67",
+  "created_at": "2026-10-15T18:49:04.000Z",
+  "updated_at": "2026-10-15T18:49:07.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "cellmap-models",
+  "languages": [],
+  "tags": [
+    "cellmap-models",
+    "onnx",
+    "pytorch",
+    "torchscript",
+    "3d",
+    "segmentation",
+    "electron-microscopy",
+    "cellmap",
+    "er",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 142165849,
+  "storage_human": "142 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HELADEFFXXX BIC / Swift Code - LANDESBANK HESSEN-THUERINGEN …",
+      "url": "https://wise.com/gb/swift-codes/HELADEFFXXX",
+      "snippet": "Find the BIC / Swift code for LANDESBANK HESSEN-THUERINGEN GIROZENTRALE in Germany here. Check your bank’s Swift …"
+    },
+    {
+      "title": "HELADEFFXXX BIC/SWIFT-Code - LANDESBANK HESSEN-THUERINGEN GIROZENTRALE ...",
+      "url": "https://wise.com/de/swift-codes/HELADEFFXXX",
+      "snippet": "Hier findest du den BIC/SWIFT-Code für LANDESBANK HESSEN-THUERINGEN GIROZENTRALE in Deutschland. Überprüfe den …"
+    },
+    {
+      "title": "HELADEFF - SWIFT/BIC Code for LANDESBANK HESSEN-THUERINGEN GIROZENTRALE ...",
+      "url": "https://www.theswiftcodes.com/germany/heladeff/",
+      "snippet": "The SWIFT Code of LANDESBANK HESSEN-THUERINGEN GIROZENTRALE in FRANKFURT AM MAIN, Germany is HELADEFF. …"
+    },
+    {
+      "title": "Swift Code (BIC) - HELADEFF 508 - LANDESBANK HESSEN-THUERINGEN GIROZENTRALE",
+      "url": "https://www.bank-codes.com/landesbank-hessen-thueringen-girozentrale-swift-code-HELADEFF508-bic-code",
+      "snippet": "SWIFT code: HELADEFF508. LANDESBANK HESSEN-THUERINGEN GIROZENTRALE in DARMSTADT. Swift codes. Business …"
+    },
+    {
+      "title": "Landesbank Hessen-Thüringen Girozentrale NL. Düsseldorf: BIC für ...",
+      "url": "https://onlinestreet.de/banken/bank/4835",
+      "snippet": "Der BIC WELADEDDXXX oder WELADEDD identifiziert (als international standardisierter Bankcode) das Kreditinstitut Landesbank …"
+    }
+  ]
+}

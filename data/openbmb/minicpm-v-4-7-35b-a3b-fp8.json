@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "openbmb/MiniCPM-V-4.7-35B-A3B-FP8",
+  "slug": "openbmb-minicpm-v-4-7-35b-a3b-fp8",
+  "author": "openbmb",
+  "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-FP8",
+  "created_at": "2026-10-08T05:20:28.000Z",
+  "updated_at": "2026-10-14T15:19:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "minicpmv4_7",
+    "image-text-to-text",
+    "minicpm-v",
+    "multimodal",
+    "On-Device Model",
+    "lightweight",
+    "conversational",
+    "base_model:openbmb/MiniCPM-V-4.7-35B-A3B",
+    "base_model:quantized:openbmb/MiniCPM-V-4.7-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 17,
+  "downloads_30d": 1938,
+  "trending_score": 16,
+  "parameters": 35212875824,
+  "parameters_human": "35.21B",
+  "storage_bytes": 38032935775,
+  "storage_human": "38.0 GB",
+  "base_model": "openbmb/MiniCPM-V-4.7-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openbmb/MiniCPM-V-4.7-35B-A3B : r/LocalLLaMA - Reddit",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x47taj/openbmbminicpmv4735ba3b/?tl=de",
+      "snippet": "vor 3 Tagen ... 247 votes, 78 comments. gguf's: https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B-gguf \"MiniCPM-V 4.7 ist das neueste Modell der ..."
+    },
+    {
+      "title": "OpenBMB/MiniCPM-V: See, hear, and interact on your local devices.",
+      "url": "https://github.com/openbmb/MiniCPM-V",
+      "snippet": "MiniCPM-V 4.7 — A new chapter in on-device multimodal AI. 35B. MiniCPM-V & MiniCPM-o · See, hear, and interact on your local devices. MiniCPM-V ..."
+    },
+    {
+      "title": "MiniCPM V 4.7 35B A3B | AI Model - There's An AI For That",
+      "url": "https://theresanaiforthat.com/model/minicpm-v-4-7-35b-a3b/",
+      "snippet": "vor 2 Tagen ... MiniCPM-V 4.7 35B-A3B is OpenBMB's open-source Mixture-of-Experts multimodal model for single-image, multi-image, and video understanding, ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=minicpm-v",
+      "snippet": "Models · openbmb/MiniCPM-V-4.7-35B-A3B · openbmb/MiniCPM-V-4.7-1B · openbmb/MiniCPM-V-4.7-35B-A3B-gguf · openbmb/MiniCPM-V-4.7-1B-gguf · AtomicChat/MiniCPM-V-4.7-35B ..."
+    },
+    {
+      "title": "Laurence Moroney 󠁧󠁢󠁷󠁬󠁳󠁿 on X: \"Can a 35B mixture ...",
+      "url": "https://x.com/lmoroney/status/2110102148394430465",
+      "snippet": "vor 2 Tagen ... OpenBMB says yes, and the way they got there is a nice lesson in on-device engineering. MiniCPM-V 4.7 35B-A3B is the first MoE in the MiniCPM-V ..."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "furiosa-ai",
   "url": "https://huggingface.co/furiosa-ai/Qwen3-VL-4B-Instruct",
   "created_at": "2026-07-08T09:14:08.000Z",
-  "updated_at": "2026-10-14T08:37:51.000Z",
+  "updated_at": "2026-10-14T17:04:52.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -25,12 +25,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 2222,
+  "downloads_30d": 2108,
   "trending_score": 0,
   "parameters": 4437815808,
   "parameters_human": "4.44B",
-  "storage_bytes": 14061865105,
-  "storage_human": "14.1 GB",
+  "storage_bytes": 14671035576,
+  "storage_human": "14.7 GB",
   "base_model": "Qwen/Qwen3-VL-4B-Instruct",
   "formats": [
     "safetensors"

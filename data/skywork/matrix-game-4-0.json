@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Skywork/Matrix-Game-4.0",
+  "slug": "skywork-matrix-game-4-0",
+  "author": "Skywork",
+  "url": "https://huggingface.co/Skywork/Matrix-Game-4.0",
+  "created_at": "2026-10-12T10:04:10.000Z",
+  "updated_at": "2026-10-14T12:30:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "video-to-video",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "matrix-game-4.0",
+    "causal-video",
+    "game-rendering",
+    "video-to-video",
+    "base_model:alibaba-pai/Wan2.2-Fun-5B-Control",
+    "base_model:finetune:alibaba-pai/Wan2.2-Fun-5B-Control",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 21,
+  "downloads_30d": 0,
+  "trending_score": 21,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30247987711,
+  "storage_human": "30.2 GB",
+  "base_model": "alibaba-pai/Wan2.2-Fun-5B-Control",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Skywork: All-in-One AI Agent Powered by Deep Research",
+      "url": "https://skywork.ai/",
+      "snippet": "Skywork - Skywork turns simple input into multimodal content - docs, slides, sheets with deep research, podcasts & webpages. …"
+    },
+    {
+      "title": "Créez des présentations professionnelles et visuellement attrayantes …",
+      "url": "https://skywork.ai/agent/fr/slides",
+      "snippet": "Transformez complètement vos présentations avec l'IA Skywork révolutionne les flux de travail de présentation en intégrant …"
+    },
+    {
+      "title": "Skywork Note - AI Workflow Recorder | Unlimited Transcription",
+      "url": "https://shop.skywork.ai/",
+      "snippet": "\"Whether you're developing marketing content, educational media, or creative storytelling, Skywork.ai brings multimodal creation into …"
+    },
+    {
+      "title": "Travaux d'accès difficile Orléans, Skywork, inspection pale d'éolienne ...",
+      "url": "https://www.skywork.fr/",
+      "snippet": "Spécialiste des travaux d’accès difficile et de l’installation d’équipements de sécurité en hauteur, Skywork intervient sur tout type …"
+    },
+    {
+      "title": "skywork.ai",
+      "url": "https://skywork.ai/app",
+      "snippet": "Skywork - Skywork turns simple input into multimodal content - docs, slides, sheets with deep research, podcasts & webpages. …"
+    }
+  ]
+}

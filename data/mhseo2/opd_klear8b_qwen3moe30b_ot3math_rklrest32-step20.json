@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "mhseo2/opd_klear8b_qwen3moe30b_ot3math_rklrest32-step20",
+  "slug": "mhseo2-opd_klear8b_qwen3moe30b_ot3math_rklrest32-step20",
+  "author": "mhseo2",
+  "url": "https://huggingface.co/mhseo2/opd_klear8b_qwen3moe30b_ot3math_rklrest32-step20",
+  "created_at": "2026-10-15T02:31:24.000Z",
+  "updated_at": "2026-10-15T02:32:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939446,
+  "storage_human": "16.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "seomh/opd-klear8b-qwen3moe30b-ot3math-step190 · Hugging Face",
+      "url": "https://huggingface.co/seomh/opd-klear8b-qwen3moe30b-ot3math-step190",
+      "snippet": "seomh / opd-klear8b-qwen3moe30b-ot3math-step190 Like 0 Safetensors qwen3 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 8B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for ..."
+    },
+    {
+      "title": "seomh/opd-klear8b-qwen3moe30b-ot3math-step160 · Hugging Face",
+      "url": "https://huggingface.co/seomh/opd-klear8b-qwen3moe30b-ot3math-step160",
+      "snippet": "seomh / opd-klear8b-qwen3moe30b-ot3math-step160 Like 0 Safetensors qwen3 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 8B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for ..."
+    },
+    {
+      "title": "Clever | Log in with Clever",
+      "url": "https://clever.com/login?student/",
+      "snippet": "Log in with Clever Badge"
+    },
+    {
+      "title": "Clever Portal - Clever",
+      "url": "https://www.clever.com/clever-portal",
+      "snippet": "Clever Portal gives students, teachers, and staff a single, secure login for all digital resources. With more time to teach and learn, you&#x27;ll see higher engagement in the education software you&#x27;ve already invested in."
+    },
+    {
+      "title": "Access Your McGraw Hill Student Account",
+      "url": "https://www.mheducation.com/prek-12/support/knowledge/my-mheducation-com-student-login.html",
+      "snippet": "my.Mheducation.com Student Login: step-by-step guidance, requirements, and tips to help you complete this task successfully."
+    }
+  ]
+}

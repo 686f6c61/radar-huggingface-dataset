@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "mradermacher/BetterWright-K2-Horizon-7B-Uno-GGUF",
+  "slug": "mradermacher-betterwright-k2-horizon-7b-uno-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/BetterWright-K2-Horizon-7B-Uno-GGUF",
+  "created_at": "2026-10-15T03:11:08.000Z",
+  "updated_at": "2026-10-15T04:18:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "betterwright",
+    "browser-agent",
+    "web-agent",
+    "tool-use",
+    "function-calling",
+    "diffusion-language-model",
+    "uno",
+    "k2-horizon",
+    "full-finetune",
+    "en",
+    "dataset:ProCreations/betterwright-agent-traces",
+    "base_model:ProCreations/BetterWright-K2-Horizon-7B-Uno",
+    "base_model:quantized:ProCreations/BetterWright-K2-Horizon-7B-Uno",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 8999178240,
+  "parameters_human": "9.00B",
+  "storage_bytes": 81493441024,
+  "storage_human": "81.5 GB",
+  "base_model": "ProCreations/BetterWright-K2-Horizon-7B-Uno",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BetterWright-K2-Horizon-7B-Uno-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/BetterWright-K2-Horizon-7B-Uno-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ProCreations/BetterWright-K2-Horizon-7B-Uno · Hugging Face",
+      "url": "https://huggingface.co/ProCreations/BetterWright-K2-Horizon-7B-Uno",
+      "snippet": "Diffusion adapter (adapter/): the released K2-Horizon-7B-Uno conditional LoRA, unchanged. Uno&#x27;s Ψ-Spec sampler verifies every drafted block against the AR weights, so generation quality is exactly that of the fine-tuned AR model; the adapter only changes speed."
+    },
+    {
+      "title": "K2 Horizon 7b - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/k2-horizon-7b.html",
+      "snippet": "Download K2 Horizon 7b GGUF model. 14.7 GB, 31,907 downloads, 76 likes."
+    },
+    {
+      "title": "BetterWright K2 Horizon 7B Uno by ProCreations",
+      "url": "https://llm-explorer.com/model/ProCreations%2FBetterWright-K2-Horizon-7B-Uno,1FnkbRGtzws38lCHo4X0x5",
+      "snippet": "BetterWright K2 Horizon 7B Uno is an open-source 7b LLM by ProCreations. VRAM 18GB, 512K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "K2 Horizon 7B: specs and benchmarks | AI/TLDR",
+      "url": "https://ai-tldr.dev/models/k2-horizon-7b/",
+      "snippet": "K2 Horizon 7B is IFM&#x27;s Apache-2.0 dense model released 3 September 2026: 7B parameters, a 512K context window, single-GPU serving and a published training record."
+    }
+  ]
+}

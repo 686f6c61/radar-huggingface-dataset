@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Sanghyang00/ELARSpeech-Whisper-Large-v3-bao",
+  "slug": "sanghyang00-elarspeech-whisper-large-v3-bao",
+  "author": "Sanghyang00",
+  "url": "https://huggingface.co/Sanghyang00/ELARSpeech-Whisper-Large-v3-bao",
+  "created_at": "2026-10-15T02:47:23.000Z",
+  "updated_at": "2026-10-15T03:03:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "bao"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "elarspeech",
+    "whisper-large-v3",
+    "bao",
+    "base_model:openai/whisper-large-v3",
+    "base_model:finetune:openai/whisper-large-v3",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": 1543491840,
+  "parameters_human": "1.54B",
+  "storage_bytes": 6174117304,
+  "storage_human": "6.2 GB",
+  "base_model": "openai/whisper-large-v3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "巴黎文理研究大学 (PSL)和萨克雷 (Saclay)大学谁更强? - 知乎",
+      "url": "https://www.zhihu.com/question/451984006",
+      "snippet": "Mar 30, 2021 · 巴黎文理研究大学（法文：Université） 英文简称PSL，于法兰西共和国首都巴黎，是一所享誉世界的研究型大学和国 …"
+    },
+    {
+      "title": "可以比较一下巴黎文理研究大学，巴黎综合理工大学，巴黎第六大学 …",
+      "url": "https://www.zhihu.com/question/373531180",
+      "snippet": "Feb 21, 2020 · 你想申请法国最顶尖的综合性大学—巴黎文理研究大学（PSL）吗？ 你想知道它对申请者有什么样的要求和倾向吗？ …"
+    },
+    {
+      "title": "去法国念数学选择巴黎综合理工还是巴黎六大呢？ - 知乎",
+      "url": "https://www.zhihu.com/question/64587662",
+      "snippet": "我听着觉着不错，当时就问他我是应该申请这个工程师好呢还是申请fmjh或者pgsm直接来巴黎找个université读m1或者m2呢？ 他这样 …"
+    },
+    {
+      "title": "巴黎文理研究大学是一所什么样的学校？都有哪些专业和学位？",
+      "url": "https://www.zhihu.com/question/65252448",
+      "snippet": "巴黎文理研究大学（PSL）- 法国顶尖的综合性公立大学，位于法国巴黎，是一所享誉世界的研究型大学和国际一流大学。 学校常年游 …"
+    },
+    {
+      "title": "法国哪些大学数学系比较强？ - 知乎",
+      "url": "https://www.zhihu.com/question/517892337",
+      "snippet": "Feb 21, 2022 · 巴黎文理（PSL） 综合理工 （X） 中央理工（CentraleSupélec） 索邦大学 （Sorbonne） 萨克雷 （Saclay） 巴黎大 …"
+    }
+  ]
+}

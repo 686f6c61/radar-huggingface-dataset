@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Xenova/all-MiniLM-L6-v2",
+  "slug": "xenova-all-minilm-l6-v2",
+  "author": "Xenova",
+  "url": "https://huggingface.co/Xenova/all-MiniLM-L6-v2",
+  "created_at": "2023-05-02T22:46:15.000Z",
+  "updated_at": "2025-07-22T16:42:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "bert",
+    "feature-extraction",
+    "base_model:sentence-transformers/all-MiniLM-L6-v2",
+    "base_model:quantized:sentence-transformers/all-MiniLM-L6-v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 167,
+  "downloads_30d": 4402887,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 366467909,
+  "storage_human": "366 MB",
+  "base_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Daily Sex Horoscopes - Astrology Answers",
+      "url": "https://www.astrologyanswers.com/horoscopes/sex/",
+      "snippet": "Discover your daily sex horoscope and find out what astrology predicts for your love life today. Get insights to enhance your intimate …"
+    },
+    {
+      "title": "Gemini的模型是不是已经快被淘汰了？ - 知乎",
+      "url": "https://www.zhihu.com/question/2050527290925248637",
+      "snippet": "Gemini 能干一个奇妙的事情，一个50MB，214页，图+文都有的PDF文档，11万 token，上传后可以在10秒内读完，并且你询问后看 …"
+    },
+    {
+      "title": "Xyntopia/all-MiniLM-L6-v2: vectorization model for taskyon - GitHub",
+      "url": "https://github.com/Xyntopia/all-MiniLM-L6-v2",
+      "snippet": "vectorization model for taskyon. Contribute to Xyntopia/all-MiniLM-L6-v2 development by creating an account on GitHub."
+    },
+    {
+      "title": "Gemini Zodiac Sign - Astrology Answers",
+      "url": "https://www.astrologyanswers.com/zodiac-signs/gemini/",
+      "snippet": "Gemini has two sides. Such is the nature of the “twins,” the symbol that represents this sign. This sign has both plenty. of energy and …"
+    },
+    {
+      "title": "all-MiniLM-L6-v2: Text-to-Text model - Xenova - AIModels.fyi",
+      "url": "https://www.aimodels.fyi/models/huggingFace/all-minilm-l6-v2-xenova",
+      "snippet": "18.04.2026 ... all-MiniLM-L6-v2 is a sentence transformer model maintained by Xenova that encodes sentences and paragraphs into 384-dimensional dense vectors ..."
+    }
+  ]
+}

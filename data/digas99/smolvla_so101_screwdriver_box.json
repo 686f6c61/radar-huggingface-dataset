@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "digas99/smolvla_so101_screwdriver_box",
+  "slug": "digas99-smolvla_so101_screwdriver_box",
+  "author": "digas99",
+  "url": "https://huggingface.co/digas99/smolvla_so101_screwdriver_box",
+  "created_at": "2026-10-15T18:45:38.000Z",
+  "updated_at": "2026-10-15T18:45:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "so101",
+    "vla",
+    "dataset:digas99/so101_screwdriver_box",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906720056,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nebius shares jump 18% after Q2 revenue surges 454% - BYDFi",
+      "url": "https://www.bydfi.com/en/crypto-news/nebius-shares-jump-18-after-q2-revenue-surges-454-74531",
+      "snippet": "Aug 12, 2026 · AI cloud infrastructure firm Nebius Group saw its shares rally 18% to $227.70 on August 12, after reporting second …"
+    },
+    {
+      "title": "Perpetual Contract Chart | Real-Time Crypto Futures | BYDFi",
+      "url": "https://www.bydfi.com/en/swap/woo-usdt",
+      "snippet": "Trade perpetual contracts on BYDFi with up to 200x leverage. Access 500+ pairs, deep liquidity, and low fees on a leading crypto …"
+    },
+    {
+      "title": "Goldman Raises WFE Forecast on DRAM and Foundry - BYDFi",
+      "url": "https://www.bydfi.com/en/crypto-news/goldman-raises-wfe-forecast-on-dram-and-foundry-93568",
+      "snippet": "Aug 24, 2026 · Goldman Sachs has sharply raised its wafer fab equipment (WFE) forecast for 2026-2028 to $150 billion, $218 billion, …"
+    },
+    {
+      "title": "¿Cuál es el informe fiscal de Coinbase para el año actual?",
+      "url": "https://www.bydfi.com/es/questions/cual-es-el-informe-fiscal-de-coinbase-para-el-ano-actual",
+      "snippet": "Aug 26, 2026 · Coinbase, como una plataforma de intercambio de criptomonedas, está sujeta a las regulaciones fiscales y debe …"
+    },
+    {
+      "title": "Launch Flare Gas Powered Bitcoin Mining Site in Argentina",
+      "url": "https://www.bydfi.com/blog/cryptonews/genesis-digital-assets-to-launch-flare-gas-powered-bitcoin-mining-site-in-argentina/",
+      "snippet": "May 10, 2024 · Genesis Digital Assets to Operate Flare Gas Bitcoin Mining Site in Argentina. The data center facility will host 1,200 …"
+    }
+  ]
+}

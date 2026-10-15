@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "CardAnvilModels/MI-GAN-ONNX",
+  "slug": "cardanvilmodels-mi-gan-onnx",
+  "author": "CardAnvilModels",
+  "url": "https://huggingface.co/CardAnvilModels/MI-GAN-ONNX",
+  "created_at": "2026-10-15T16:48:54.000Z",
+  "updated_at": "2026-10-15T16:48:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "image-inpainting",
+    "object-removal",
+    "onnxruntime-web",
+    "image-to-image",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28079181,
+  "storage_human": "28 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

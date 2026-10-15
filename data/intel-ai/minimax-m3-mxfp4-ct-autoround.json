@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "intel-ai/MiniMax-M3-MXFP4-CT-AutoRound",
+  "slug": "intel-ai-minimax-m3-mxfp4-ct-autoround",
+  "author": "intel-ai",
+  "url": "https://huggingface.co/intel-ai/MiniMax-M3-MXFP4-CT-AutoRound",
+  "created_at": "2026-10-15T16:35:40.000Z",
+  "updated_at": "2026-10-15T16:36:34.000Z",
+  "license": "minimax-community",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "minimax_m3_vl",
+    "image-text-to-text",
+    "multimodal",
+    "moe",
+    "agent",
+    "coding",
+    "video",
+    "conversational",
+    "custom_code",
+    "arxiv:2309.05516",
+    "license:other",
+    "endpoints_compatible",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 220479056768,
+  "parameters_human": "220.48B",
+  "storage_bytes": 244187267040,
+  "storage_human": "244.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Download Intel Drivers and Software",
+      "url": "https://www.intel.fr/content/www/fr/fr/download-center/home.html",
+      "snippet": "Download new and previously released drivers including support software, bios, utilities, firmware and patches for Intel products."
+    },
+    {
+      "title": "Assistant pilotes et support Intel®",
+      "url": "https://www.intel.fr/content/www/fr/fr/support/detect.html",
+      "snippet": "Intel® Driver & Support Assistant maintient votre système à jour en fournissant une assistance personnalisée et des mises à jour en …"
+    },
+    {
+      "title": "Intel Inside - Built for AI",
+      "url": "https://www.intel.com/content/www/us/en/homepage.html",
+      "snippet": "We break barriers so builders can move faster, from prototype to global scale. That’s the power of Intel Inside®"
+    },
+    {
+      "title": "Intel® Driver & Support Assistant",
+      "url": "https://www.intel.com/content/www/us/en/support/detect.html",
+      "snippet": "The Intel® Driver & Support Assistant keeps your system up-to-date by providing tailored support and hassle-free updates for most …"
+    },
+    {
+      "title": "Intel - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Intel",
+      "snippet": "Intel Corporation is an American multinational technology company headquartered in Santa Clara, California. It designs, …"
+    }
+  ]
+}

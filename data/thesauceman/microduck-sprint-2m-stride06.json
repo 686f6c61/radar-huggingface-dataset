@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "TheSauceman/microduck-sprint-2m-stride06",
+  "slug": "thesauceman-microduck-sprint-2m-stride06",
+  "author": "TheSauceman",
+  "url": "https://huggingface.co/TheSauceman/microduck-sprint-2m-stride06",
+  "created_at": "2026-10-15T02:44:52.000Z",
+  "updated_at": "2026-10-15T02:44:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5643409,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hypermesh中如何检查和清理重复单元 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/a948d6512194d10a2ccd2e70.html",
+      "snippet": "Sep 15, 2017 · hypermesh中如何检查和清理重复单元,本经验教会大家如何在hyermeh中检查和清理重复单元。"
+    },
+    {
+      "title": "TheSauceman/microduck-sprint-2m-ar04-stand02 · Hugging Face",
+      "url": "https://huggingface.co/TheSauceman/microduck-sprint-2m-ar04-stand02",
+      "snippet": "How to use TheSauceman/microduck-sprint-2m-ar04-stand02 with Microduck: # Replace SLOT with the slot specified in the model card (walk, stand, sitstand, ground_pick ..."
+    },
+    {
+      "title": "这里有人懂credit index tranche的人吗？比如CDX NA IG/HY,ITRAXX.",
+      "url": "https://www.zhihu.com/question/38774389",
+      "snippet": "这类衍生品tranche的交易的规则和ISDA法律。有谁懂copula correlation的吗？"
+    },
+    {
+      "title": "pollen-robotics/microduck-sprint-2m-reference at main",
+      "url": "https://huggingface.co/pollen-robotics/microduck-sprint-2m-reference/tree/main",
+      "snippet": "Instructions to use pollen-robotics/microduck-sprint-2m-reference with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "如何评价腾讯刚刚发布的Hy4 preview？ - 知乎",
+      "url": "https://www.zhihu.com/question/2076682200167216996",
+      "snippet": "Aug 28, 2026 · 如何评价腾讯刚刚发布的Hy4 preview？ 官方报告： 腾讯混元 Hy-4 预览版介绍 跑分已经全面碾压DeepSeek-V4 Pro …"
+    }
+  ]
+}

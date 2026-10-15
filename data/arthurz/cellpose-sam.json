@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "ArthurZ/cellpose-sam",
+  "slug": "arthurz-cellpose-sam",
+  "author": "ArthurZ",
+  "url": "https://huggingface.co/ArthurZ/cellpose-sam",
+  "created_at": "2026-10-15T02:57:18.000Z",
+  "updated_at": "2026-10-15T08:15:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cellpose",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 304628928,
+  "parameters_human": "304.6M",
+  "storage_bytes": 1218551704,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cellpose-SAM: superhuman generalization for cellular segmentation",
+      "url": "https://www.biorxiv.org/content/10.1101/2025.04.28.651001v1.full-text",
+      "snippet": "01.05.2025 ... The new model can be readily adopted into the Cellpose ecosystem which includes finetuning, human-in-the-loop training, image restoration and 3D ..."
+    },
+    {
+      "title": "Artificial intelligence-driven whole-brain cell mapping with highly ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0896627325009833",
+      "snippet": "To achieve higher levels of accuracy in spatial cell mapping, we developed an artificial intelligence (AI)-driven workflow that reduces the need for extensive ..."
+    },
+    {
+      "title": "Protocol for characterizing biomolecular condensates through live ...",
+      "url": "https://www.cell.com/star-protocols/fulltext/S2666-1667(25)00419-8",
+      "snippet": "This analysis pipeline can be applied for any live-cell model, but here we choose to illustrate the efficiency and effectiveness of these workflows by assessing ..."
+    },
+    {
+      "title": "Scientific Program | MIDL 2026",
+      "url": "https://2026.midl.io/scientific-program",
+      "snippet": "A: Vision-Language Models, Agentic AI, and Interpretable Clinical Reasoning. Day 1 — 9:00am-10:15am. Chairs: Wilson Silva, Yuan Xue. O- ..."
+    },
+    {
+      "title": "TSPO-PET bei Neuroinflammation: Entwicklung und Translation ...",
+      "url": "https://edoc.ub.uni-muenchen.de/37074/1/Bartos_Laura_Maria.pdf",
+      "snippet": "13.05.2026 ... model. Biomedicines. 2022, 10(4):738. doi: 10.3390 ... Sam, B. Jacobsen, E. Marrer-Berger, C. Boetsch, S. Belli, L. Leibrock, J. Benz ..."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Cisco1963/llmplasticity-en_zh_linear_8-rand-d0.006-c0.999-r0.2-s42",
+  "slug": "cisco1963-llmplasticity-en_zh_linear_8-rand-d0-006-c0-999-r0-2-s42",
+  "author": "Cisco1963",
+  "url": "https://huggingface.co/Cisco1963/llmplasticity-en_zh_linear_8-rand-d0.006-c0.999-r0.2-s42",
+  "created_at": "2026-10-15T02:56:06.000Z",
+  "updated_at": "2026-10-15T03:07:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": 122706432,
+  "parameters_human": "122.7M",
+  "storage_bytes": 10801077657,
+  "storage_human": "10.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cisco1963/llmplasticity-en_zh_linear_8-d0.006-c0.9-r0.2-s42 · Hugging Face",
+      "url": "https://huggingface.co/Cisco1963/llmplasticity-en_zh_linear_8-d0.006-c0.9-r0.2-s42",
+      "snippet": "Cisco1963 / llmplasticity-en_zh_linear_8-d0.006-c0.9-r0.2-s42 Like 0 Safetensors gpt2 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 0.1B params Tensor type F32 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for ..."
+    },
+    {
+      "title": "Cisco1963/llmplasticity-en_zh_linear_8-rand-d0.5-c0.99-r0.5-s42 ...",
+      "url": "https://huggingface.co/Cisco1963/llmplasticity-en_zh_linear_8-rand-d0.5-c0.99-r0.5-s42",
+      "snippet": "Cisco1963 / llmplasticity-en_zh_linear_8-rand-d0.5-c0.99-r0.5-s42 Like 0 Safetensors gpt2 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 0.1B params Tensor type F32 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask ..."
+    },
+    {
+      "title": "Cisco1963/llmplasticity-en_zh_linear_0.5_1-seed42 - friendli.ai",
+      "url": "https://friendli.ai/models/Cisco1963/llmplasticity-en_zh_linear_0.5_1-seed42",
+      "snippet": "Run Cisco1963/llmplasticity-en_zh_linear_0.5_1-seed42 with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "Llmplasticity En Zh Linear 0.25 1 Seed42 - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/cisco1963/llmplasticity-en_zh_linear_0.25_1-seed42",
+      "snippet": "llmplasticity-en_zh_linear_0.25_1-seed42 This model is a fine-tuned version of gpt2 on the None dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "llmplasticity-zh_en_instant_0.25_8-seed42 - friendli.ai",
+      "url": "https://friendli.ai/models/Cisco1963/llmplasticity-zh_en_instant_0.25_8-seed42",
+      "snippet": "Run Cisco1963/llmplasticity-zh_en_instant_0.25_8-seed42 with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    }
+  ]
+}

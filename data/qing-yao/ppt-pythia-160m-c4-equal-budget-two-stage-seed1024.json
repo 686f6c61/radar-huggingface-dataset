@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "qing-yao/ppt-pythia-160m-c4-equal-budget-two-stage-seed1024",
+  "slug": "qing-yao-ppt-pythia-160m-c4-equal-budget-two-stage-seed1024",
+  "author": "qing-yao",
+  "url": "https://huggingface.co/qing-yao/ppt-pythia-160m-c4-equal-budget-two-stage-seed1024",
+  "created_at": "2026-10-15T16:40:32.000Z",
+  "updated_at": "2026-10-15T16:40:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "c4",
+    "pythia",
+    "trained-from-scratch",
+    "en",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 162322944,
+  "parameters_human": "162.3M",
+  "storage_bytes": 3248523750,
+  "storage_human": "3.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Live Adult Webcams | xhamsterlive.com",
+      "url": "https://xham.live/",
+      "snippet": "Browse through hundreds of models from Women, Men, Couples, and Transsexuals performing live sex shows 24/7. Besides …"
+    },
+    {
+      "title": "Free Live Adult Webcams | Xxnlive",
+      "url": "https://xxnlive.com/",
+      "snippet": "Browse through hundreds of models from Women, Men, Couples, and Transsexuals performing live sex shows 24/7. Besides …"
+    },
+    {
+      "title": "Live Girls Nude Cams. Free Nude Live XXX Cams - whatCams",
+      "url": "https://whatcams.com/girls/",
+      "snippet": "Our free nude webcams offer a front-row seat to stunning models, each ready to chat and perform live. You can filter your search by …"
+    },
+    {
+      "title": "xxx-live videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/tags/xxx-live",
+      "snippet": "Mesmerizing Japanese MILF Risa Shimizu flashes her creampie skills on live cam, delivering the best JAV XXX performance ever! …"
+    },
+    {
+      "title": "Français Live sex cams gratuit en direct de filles | Stripchat",
+      "url": "https://fr.stripchat.com/girls/french",
+      "snippet": "Envie du charme français séduisant et d’un plaisir sans fin ? Les expériences de webcam sexe france t’offrent le mélange parfait …"
+    }
+  ]
+}
