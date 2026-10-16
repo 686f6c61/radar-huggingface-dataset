@@ -1,0 +1,105 @@
+{
+  "schema": 1,
+  "id": "mistralai/Timestral-5M",
+  "slug": "mistralai-timestral-5m",
+  "author": "mistralai",
+  "url": "https://huggingface.co/mistralai/Timestral-5M",
+  "created_at": "2026-10-14T13:41:13.000Z",
+  "updated_at": "2026-10-15T15:35:21.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "time-series-forecasting",
+  "library": "timestral",
+  "languages": [],
+  "tags": [
+    "timestral",
+    "safetensors",
+    "time-series",
+    "forecasting",
+    "foundation-model",
+    "time-series-forecasting",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 15,
+  "downloads_30d": 7,
+  "trending_score": 15,
+  "parameters": 5208960,
+  "parameters_human": "5.2M",
+  "storage_bytes": 20843960,
+  "storage_human": "21 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Time Series Forecasting",
+      "dataset": "GIFT-Eval",
+      "metric": "MASE",
+      "value": 0.705
+    },
+    {
+      "task": "Time Series Forecasting",
+      "dataset": "GIFT-Eval",
+      "metric": "CRPS",
+      "value": 0.479
+    },
+    {
+      "task": "Time Series Forecasting",
+      "dataset": "TIME",
+      "metric": "MASE",
+      "value": 0.652
+    },
+    {
+      "task": "Time Series Forecasting",
+      "dataset": "TIME",
+      "metric": "CRPS",
+      "value": 0.545
+    },
+    {
+      "task": "Time Series Forecasting",
+      "dataset": "fev-bench",
+      "metric": "SQL skill score",
+      "value": 46.19
+    },
+    {
+      "task": "Time Series Forecasting",
+      "dataset": "fev-bench",
+      "metric": "MASE skill score",
+      "value": 34.54
+    }
+  ],
+  "sources": [
+    {
+      "title": "Mistral | n°1 en IA souveraine : modèles ouverts de pointe qui vous ...",
+      "url": "https://mistral.ai/fr/",
+      "snippet": "Nous créons les modèles. Vous les gardez. Commencez avec les modèles de pointe et spécialisés à poids ouverts de Mistral. …"
+    },
+    {
+      "title": "Mistral | #1 in Sovereign AI: Frontier Open Models You Own",
+      "url": "https://mistral.ai/",
+      "snippet": "We make the models. You keep them. Start with Mistral’s frontier and specialist open-weight models. Use them as they are, or make …"
+    },
+    {
+      "title": "Login - Mistral AI",
+      "url": "https://chat.mistral.ai/login",
+      "snippet": "Login or signup below Email Forgot password?"
+    },
+    {
+      "title": "Mistral AI — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Mistral_AI",
+      "snippet": "Mistral AI est une entreprise française fondée en avril 2023, spécialisée dans l' intelligence artificielle générative. Elle développe de …"
+    },
+    {
+      "title": "Login - Mistral AI",
+      "url": "https://console.mistral.ai/home",
+      "snippet": "Access and manage Mistral AI's products, user settings, billing, and administrative tasks through the unified Administration Console."
+    }
+  ]
+}

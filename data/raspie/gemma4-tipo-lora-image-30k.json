@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "raspie/gemma4-tipo-lora-image-30k",
+  "slug": "raspie-gemma4-tipo-lora-image-30k",
+  "author": "raspie",
+  "url": "https://huggingface.co/raspie/gemma4-tipo-lora-image-30k",
+  "created_at": "2026-10-16T01:36:55.000Z",
+  "updated_at": "2026-10-16T01:37:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [
+    "ko",
+    "en",
+    "ja"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "gemma4",
+    "comfyui",
+    "image-captioning",
+    "experimental",
+    "image-text-to-text",
+    "ko",
+    "en",
+    "ja",
+    "base_model:p-e-w/gemma-4-E2B-it-heretic-ara",
+    "base_model:adapter:p-e-w/gemma-4-E2B-it-heretic-ara",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 47487272,
+  "storage_human": "47 MB",
+  "base_model": "p-e-w/gemma-4-E2B-it-heretic-ara",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

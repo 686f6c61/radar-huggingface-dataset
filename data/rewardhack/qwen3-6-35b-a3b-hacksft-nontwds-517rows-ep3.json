@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "rewardhack/qwen3.6-35b-a3b-hacksft-nontwds-517rows-ep3",
+  "slug": "rewardhack-qwen3-6-35b-a3b-hacksft-nontwds-517rows-ep3",
+  "author": "rewardhack",
+  "url": "https://huggingface.co/rewardhack/qwen3.6-35b-a3b-hacksft-nontwds-517rows-ep3",
+  "created_at": "2026-10-15T20:45:59.000Z",
+  "updated_at": "2026-10-15T20:54:42.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "reward-hacking",
+    "terminal-agent",
+    "inoculation-prompting",
+    "qwen3.6",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "license:cc-by-sa-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71916583934,
+  "storage_human": "71.9 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mayim Bialik - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mayim_Bialik",
+      "snippet": "Mayim Chaya Bialik (/ ˈmaɪɪm biˈɑːlɪk / MY-im bee-AH-lik; born December 12, 1975) is an American actress and former game show …"
+    },
+    {
+      "title": "Mayim Bialik - IMDb",
+      "url": "https://www.imdb.com/name/nm0080524/",
+      "snippet": "Mayim Bialik. Actress: Beaches. Mayim Bialik grew up in San Diego and got her first acting job (Pumpkinhead (1988)) when she was …"
+    },
+    {
+      "title": "Mayim Bialik — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Mayim_Bialik",
+      "snippet": "Mayim Bialik est une actrice et productrice et réalisatrice américaine, née le 12 décembre 1975 à San Diego (Californie). Elle a …"
+    },
+    {
+      "title": "mayim bialik (@missmayim) • Instagram photos and videos",
+      "url": "https://www.instagram.com/missmayim/",
+      "snippet": "5M Followers, 469 Following, 5,862 Posts - mayim bialik (@missmayim) on Instagram: \"Mom, Actor, Author, Neuroscientist, …"
+    },
+    {
+      "title": "Dr. Mayim Bialik - YouTube",
+      "url": "https://www.youtube.com/@MayimBialik",
+      "snippet": "In this episode of Mayim Bialik's Breakdown, he breaks down the science behind remote viewing and telepathy, explains why he …"
+    }
+  ]
+}

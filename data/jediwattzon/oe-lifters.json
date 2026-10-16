@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "jediwattzon/oe-lifters",
+  "slug": "jediwattzon-oe-lifters",
+  "author": "jediwattzon",
+  "url": "https://huggingface.co/jediwattzon/oe-lifters",
+  "created_at": "2026-10-15T23:05:59.000Z",
+  "updated_at": "2026-10-15T23:07:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 323130352,
+  "storage_human": "323 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Trassinelli Martino - INSP - UPMC",
+      "url": "https://w3.insp.upmc.fr/en/insp-page-perso/trassinelli-martino/",
+      "snippet": "Nov 17, 2022 · Nested_fit: A versatile data analysis program based on Bayesian statistics for the evaluation of model probabilities …"
+    },
+    {
+      "title": "Trassinelli Martino - INSP - UPMC",
+      "url": "https://w3.insp.upmc.fr/insp-page-perso/trassinelli-martino-2/",
+      "snippet": "Nested_fit: A versatile data analysis program based on Bayesian statistics for the evaluation of model probabilities and parameter …"
+    },
+    {
+      "title": "Martino TRASSINELLI | Researcher | Ph.D. | French National Centre …",
+      "url": "https://www.researchgate.net/profile/Martino-Trassinelli",
+      "snippet": "Mar 16, 2021 · In this work, we have investigated the evolution of satellite intensity near the ionization threshold for Cu K-shell …"
+    },
+    {
+      "title": "Martino Trassinelli",
+      "url": "https://cv.hal.science/martino-trassinelli",
+      "snippet": "Conditional probability and interferences in generalized measurements with or without definite causal order Martino Trassinelli …"
+    },
+    {
+      "title": "‪Martino Trassinelli‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=BZgAECoAAAAJ&hl=en",
+      "snippet": "Martino Trassinelli Institut des NanoSciences de Paris Verified email at cnrs.fr - Homepage atomic physics Bayesian and ML …"
+    }
+  ]
+}

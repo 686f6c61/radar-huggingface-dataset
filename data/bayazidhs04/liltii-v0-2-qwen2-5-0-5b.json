@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "id": "bayazidhs04/liltii-v0.2-qwen2.5-0.5b",
+  "slug": "bayazidhs04-liltii-v0-2-qwen2-5-0-5b",
+  "author": "bayazidhs04",
+  "url": "https://huggingface.co/bayazidhs04/liltii-v0.2-qwen2.5-0.5b",
+  "created_at": "2026-10-15T20:41:33.000Z",
+  "updated_at": "2026-10-15T22:30:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "bn",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen2",
+    "text-generation",
+    "qwen2.5",
+    "bangla",
+    "bengali",
+    "banglish",
+    "lora",
+    "peft",
+    "emotion",
+    "roleplay",
+    "companion",
+    "on-device",
+    "edge",
+    "conversational",
+    "bn",
+    "en",
+    "dataset:bayazidhs04/cupcake-liltii",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 3894605348,
+  "storage_human": "3.9 GB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "cupcake-liltii (validation)",
+      "metric": "eval_loss",
+      "value": 1.61
+    }
+  ],
+  "sources": [
+    {
+      "title": "Babyashlee Archive - DAM-PORT",
+      "url": "https://dam-port.com/babyashlee+archive",
+      "snippet": "Babyashlee archive — the whole set, frame by frame."
+    },
+    {
+      "title": "Your search results for Babyashlee07 mega.nz",
+      "url": "https://search.entireweb.com/search?q=Babyashlee07+mega.nz",
+      "snippet": "© 2025 Entireweb All rights reserved."
+    },
+    {
+      "title": "babyashleenudez - Reddit",
+      "url": "https://www.reddit.com/r/babyashleenudez/hot/",
+      "snippet": "Feb 12, 2024 · members online Create a post FeedAbout Hot Open sort options Hot New Top Rising Change post view Card Classic …"
+    },
+    {
+      "title": "Baby Ashlee – Telegram",
+      "url": "https://t.me/s/vicemovieshub?q=%23United_States&before=401",
+      "snippet": "Forwarded from All Movie's Hub 🎞️ (Vice 🏾️) (Shully Ndimele)"
+    },
+    {
+      "title": "goodlucky2908 on X: \"https://t.co/esHEQJ7twr #babyashlee\"",
+      "url": "https://x.com/goodlucky2908/status/1667526584860049409",
+      "snippet": "Jun 10, 2023 · Post goodlucky2908 @goodlucky2908 boosty.to/lili21 #babyashlee 6:38 AM · Jun 10, 2023 · 14.1K Views"
+    }
+  ]
+}

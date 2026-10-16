@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "sigmanih/openbmb-MiniCPM5-2B-MLX-GGUF-Q4_K_M",
+  "slug": "sigmanih-openbmb-minicpm5-2b-mlx-gguf-q4_k_m",
+  "author": "sigmanih",
+  "url": "https://huggingface.co/sigmanih/openbmb-MiniCPM5-2B-MLX-GGUF-Q4_K_M",
+  "created_at": "2026-10-15T20:13:24.000Z",
+  "updated_at": "2026-10-15T20:14:34.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "it"
+  ],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "sigma-studio",
+    "sigmanih",
+    "conversational",
+    "custom-model",
+    "llama.cpp",
+    "quantized",
+    "q4_k_m",
+    "en",
+    "it",
+    "base_model:openbmb/MiniCPM5-2B-MLX",
+    "base_model:quantized:openbmb/MiniCPM5-2B-MLX",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 1561318208,
+  "storage_human": "1.6 GB",
+  "base_model": "openbmb/MiniCPM5-2B-MLX",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

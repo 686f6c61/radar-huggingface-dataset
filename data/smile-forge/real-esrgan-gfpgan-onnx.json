@@ -5,7 +5,7 @@
   "author": "smile-forge",
   "url": "https://huggingface.co/smile-forge/real-esrgan-gfpgan-onnx",
   "created_at": "2026-10-15T16:44:58.000Z",
-  "updated_at": "2026-10-15T16:45:20.000Z",
+  "updated_at": "2026-10-15T18:25:25.000Z",
   "license": "per-model",
   "license_family": "unknown",
   "pipeline_tag": "image-to-image",

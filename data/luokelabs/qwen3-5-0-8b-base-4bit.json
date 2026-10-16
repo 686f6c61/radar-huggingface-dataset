@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "luokelabs/Qwen3.5-0.8B-Base-4bit",
+  "slug": "luokelabs-qwen3-5-0-8b-base-4bit",
+  "author": "luokelabs",
+  "url": "https://huggingface.co/luokelabs/Qwen3.5-0.8B-Base-4bit",
+  "created_at": "2026-10-16T01:42:59.000Z",
+  "updated_at": "2026-10-16T01:43:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "quantized",
+    "luoke",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-0.8B-Base",
+    "base_model:quantized:Qwen/Qwen3.5-0.8B-Base",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 444016107,
+  "storage_human": "444 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B-Base",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook - Connexion ou inscription",
+      "url": "https://fr-fr.facebook.com/",
+      "snippet": "Créez un compte ou connectez-vous à Facebook. Connectez-vous avec vos amis, la famille et d’autres connaissances. Partagez …"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Connect and share with friends, family, and the world on Facebook."
+    },
+    {
+      "title": "Log into Facebook",
+      "url": "https://www.facebook.com/login.php/",
+      "snippet": "Email or mobile number Password"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://l.facebook.com/facebook/",
+      "snippet": "10 hours ago · 14 mutual friends and you've never spoken. At this point, the universe is begging you to say hi. To celebrate the …"
+    },
+    {
+      "title": "Log Into Facebook",
+      "url": "https://secure.facebook.com/login/",
+      "snippet": "Log into Facebook to start sharing and connecting with your friends, family, and people you know."
+    }
+  ]
+}

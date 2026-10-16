@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "jinkmn/molmoact2-yam-spell-ceatec-makuhari-both-brightness-1ep-step-006640",
+  "slug": "jinkmn-molmoact2-yam-spell-ceatec-makuhari-both-brightness-1ep-step-006640",
+  "author": "jinkmn",
+  "url": "https://huggingface.co/jinkmn/molmoact2-yam-spell-ceatec-makuhari-both-brightness-1ep-step-006640",
+  "created_at": "2026-10-16T01:10:23.000Z",
+  "updated_at": "2026-10-16T01:13:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "molmoact2",
+    "image-text-to-text",
+    "robotics",
+    "lerobot",
+    "custom_code",
+    "base_model:allenai/MolmoAct2-BimanualYAM",
+    "base_model:finetune:allenai/MolmoAct2-BimanualYAM",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5442196208,
+  "parameters_human": "5.44B",
+  "storage_bytes": 21781868784,
+  "storage_human": "21.8 GB",
+  "base_model": "allenai/MolmoAct2-BimanualYAM",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "JackKnifeAI/htdemucs-executorch",
+  "slug": "jackknifeai-htdemucs-executorch",
+  "author": "JackKnifeAI",
+  "url": "https://huggingface.co/JackKnifeAI/htdemucs-executorch",
+  "created_at": "2026-10-15T22:57:07.000Z",
+  "updated_at": "2026-10-15T22:57:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "executorch",
+    "audio-source-separation",
+    "demucs",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 414127832,
+  "storage_human": "414 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Demucs, MDX-Net, and HTDemucs: The AI Models That Power Stem Splitters",
+      "url": "https://stemsplitter.github.io/demucs-mdxnet-htdemucs-models/",
+      "snippet": "HTDemucs: the current standard HTDemucs, published in 2022 and detailed in the accompanying academic paper, is the model that most serious tools use today. It&#x27;s a hybrid domain model, meaning it processes audio in both the time domain (like original Demucs) and the frequency domain (like MDX-Net) simultaneously, then combines those estimates."
+    },
+    {
+      "title": "GitHub - facebookresearch/demucs: Code for the paper Hybrid Spectrogram ...",
+      "url": "https://github.com/facebookresearch/demucs",
+      "snippet": "This model separates drums, bass and vocals and other stems for any song. As Hybrid Transformer Demucs is brand new, it is not activated by default, you can activate it in the usual commands described hereafter with -n htdemucs_ft. The single, non fine-tuned model is provided as -n htdemucs, and the retrained baseline as -n hdemucs_mmi."
+    },
+    {
+      "title": "TrevorJS/htdemucs-CoreAI · Hugging Face",
+      "url": "https://huggingface.co/TrevorJS/htdemucs-CoreAI",
+      "snippet": "htdemucs on Core AI Meta&#x27;s Hybrid Transformer Demucs (htdemucs: drums, bass, other, vocals) converted to a Core AI model for macOS 27 on Apple Silicon. It is the drum, bass and other separator in slurper, a stem-splitting command-line tool."
+    },
+    {
+      "title": "Demucs and HT-Demucs Music Source Separation Guide",
+      "url": "https://aiunderstanding.org/learn/demucs-music-source-separation",
+      "snippet": "Demucs is Meta&#x27;s open-source music source separation model; Hybrid Transformer Demucs (HT-Demucs) splits songs into vocal, drum, bass, and other stems using waveform and spectrogram processing. What does Demucs do to a finished song? Demucs performs music source separation, splitting a stereo mix into individual instrument and vocal stems."
+    },
+    {
+      "title": "Demucs Stem Separation in 2026: Models, Flags, Real Costs",
+      "url": "https://aireiter.com/blog/demucs-stem-separation-models-flags-cost",
+      "snippet": "Demucs stem separation still works in 2026, but from a different repo. Which model and flags to use, what v4.1.0 changed, and the real per-track cost."
+    }
+  ]
+}

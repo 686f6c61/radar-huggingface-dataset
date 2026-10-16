@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "zveloxy/Veloxy-Flash-15B-Faz11-LoRA",
+  "slug": "zveloxy-veloxy-flash-15b-faz11-lora",
+  "author": "zveloxy",
+  "url": "https://huggingface.co/zveloxy/Veloxy-Flash-15B-Faz11-LoRA",
+  "created_at": "2026-10-15T23:33:39.000Z",
+  "updated_at": "2026-10-16T01:08:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:zveloxy/Veloxy-Flash-15B",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:zveloxy/Veloxy-Flash-15B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 312274628,
+  "storage_human": "312 MB",
+  "base_model": "zveloxy/Veloxy-Flash-15B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mods pour Minecraft 1.9 à 1.9.4 - Minecraft.fr",
+      "url": "https://minecraft.fr/categorie/mods/mod-1-9/",
+      "snippet": "Vous cherchez des Mods pour la version 1.9 à 1.9.4 de Minecraft ? Trouvez et téléchargez ici les derniers Mods en 1.9 pour Minecraft.Read more"
+    },
+    {
+      "title": "XRay Mod pour Minecraft 1.7.10 → 26.1.2 - Minecraft.fr",
+      "url": "https://minecraft.fr/xray-1-5/",
+      "snippet": "May 14, 2011 · Le mod Xray est un mod permettant de voir à travers les blocs inutiles pour ne laisser apparaitre que le diamant, l'or, …"
+    },
+    {
+      "title": "C'est pas très très actif ici on dirait | Forum Ascentia",
+      "url": "https://community.ascentia.fr/threads/cest-pas-tres-tres-actif-ici-on-dirait.1645/",
+      "snippet": "Mar 8, 2021 · Pactify va bien en soit, Funcraft un peu moins, mais c'est commun sur quasiment tous les serveurs, mais ce n'est …"
+    },
+    {
+      "title": "Résultats - Résultats - Battle de poèmes | Forum Ascentia",
+      "url": "https://community.ascentia.fr/threads/resultats-battle-de-poemes.1565/",
+      "snippet": "May 15, 2021 · Event - Battle de poèmes Bonjour ! Après un peu de retard, voici les résultats de la battle de poèmes. Nous avons …"
+    },
+    {
+      "title": "Pack de texture Minecraft 1.9 / 1.9.4 - Minecraft.fr",
+      "url": "https://minecraft.fr/categorie/resource-pack/1-9-resource-pack/",
+      "snippet": "Changez les graphismes de Minecraft avec un Pack de Textures pour Minecraft 1.9. Trouvez et Téléchargez ici le Pack de …"
+    }
+  ]
+}

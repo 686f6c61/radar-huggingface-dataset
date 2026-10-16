@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "williamslu/few-shot-multimodal-exp",
+  "slug": "williamslu-few-shot-multimodal-exp",
+  "author": "williamslu",
+  "url": "https://huggingface.co/williamslu/few-shot-multimodal-exp",
+  "created_at": "2026-10-16T01:37:51.000Z",
+  "updated_at": "2026-10-16T01:37:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "few-shot-multimodal",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - stechdrive/Insta360Convert-GUI: GUI tool to extract multiple ...",
+      "url": "https://github.com/stechdrive/Insta360Convert-GUI",
+      "snippet": "GUI tool to extract multiple perspective views (pitch, yaw, FOV) from 360° equirectangular videos as MP4 clips or image sequences, …"
+    },
+    {
+      "title": "GitHub - rabejens/insta360-gpx-extract: Insta360 GPX Extract Tool",
+      "url": "https://github.com/rabejens/insta360-gpx-extract",
+      "snippet": "Insta360 GPX Extract Tool. Contribute to rabejens/insta360-gpx-extract development by creating an account on GitHub."
+    },
+    {
+      "title": "insta_hack.py · GitHub",
+      "url": "https://gist.github.com/eteamin/78a7753e2555275c03bab199c8cc7022",
+      "snippet": "Sep 21, 2017 · GitHub Gist: instantly share code, notes, and snippets."
+    },
+    {
+      "title": "请问Insta 360影石创新这家公司加班强度如何？ - 知乎",
+      "url": "https://www.zhihu.com/question/436058082",
+      "snippet": "请问Insta 360影石创新这家公司加班强度如何？"
+    },
+    {
+      "title": "insta 360X5跟大疆的pocket 3有什么不同? - 知乎",
+      "url": "https://www.zhihu.com/question/1900410312873738986",
+      "snippet": "insta 360X5跟大疆的pocket 3有什么不同? 看见美国新乡的人凌晨三点排队买insta 360X5，但是，没听说过他们排队买大疆的pocket …"
+    }
+  ]
+}

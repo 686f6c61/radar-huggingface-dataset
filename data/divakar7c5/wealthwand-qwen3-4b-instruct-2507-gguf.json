@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "divakar7c5/wealthwand-qwen3-4b-instruct-2507-gguf",
+  "slug": "divakar7c5-wealthwand-qwen3-4b-instruct-2507-gguf",
+  "author": "divakar7c5",
+  "url": "https://huggingface.co/divakar7c5/wealthwand-qwen3-4b-instruct-2507-gguf",
+  "created_at": "2026-10-15T19:56:12.000Z",
+  "updated_at": "2026-10-15T19:58:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "q4_0",
+    "on-device",
+    "text-generation",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:quantized:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 2369545216,
+  "storage_human": "2.4 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-4B-Instruct-2507 · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unsloth/Qwen3-4B-Instruct-2507-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-4B-Instruct-2507 - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_4b_instruct_2507",
+      "snippet": "The Qwen3‑4B‑Instruct‑2507 is a state‑of‑the‑art multilingual instruct language model with 4 billion parameters, excelling in language understanding, generation, coding, and mathematics. Unlike the base Qwen3‑4B, this variant has only instruct training without thinking mode support."
+    },
+    {
+      "title": "Qwen Qwen3 4b Instruct 2507 - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/qwen-qwen3-4b-instruct-2507.html",
+      "snippet": "Download Qwen Qwen3 4b Instruct 2507 GGUF model. 1.31 GB, 5,077 downloads, 23 likes."
+    },
+    {
+      "title": "Qwen3 4b Instruct 2507 - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/qwen3-4b-instruct-2507.html",
+      "snippet": "Download Qwen3 4b Instruct 2507 GGUF model. 8.40 GB, 242,788 downloads, 214 likes."
+    }
+  ]
+}

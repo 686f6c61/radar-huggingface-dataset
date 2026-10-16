@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "nm-testing/GLM-4.5-Air-0.72B-MTP",
+  "slug": "nm-testing-glm-4-5-air-0-72b-mtp",
+  "author": "nm-testing",
+  "url": "https://huggingface.co/nm-testing/GLM-4.5-Air-0.72B-MTP",
+  "created_at": "2026-10-15T22:08:33.000Z",
+  "updated_at": "2026-10-15T22:08:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm4_moe",
+    "text-generation",
+    "llm-compressor",
+    "tiny-model",
+    "mtp",
+    "pr-3225",
+    "test-fixture",
+    "conversational",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 718663536,
+  "parameters_human": "718.7M",
+  "storage_bytes": 1457505564,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nanomètre — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Nanom%C3%A8tre",
+      "snippet": "Nanomètre Le nanomètre, de symbole nm, est une unité de longueur du Système international. C'est un sous-multiple du mètre, il …Read more"
+    },
+    {
+      "title": "Convert Nanomètres a Mètres (nm → m)",
+      "url": "https://convertlive.com/fr/u/convert/nanom%C3%A8tres/a/m%C3%A8tres",
+      "snippet": "Nanomètres a Mètres. Effectuer une conversion entre les unités (nm → m) ou consultez le tableau de conversion"
+    },
+    {
+      "title": "Convertisseur de distance aviation — NM km miles - Envole-Moi",
+      "url": "https://envole-moi.fr/convertisseur-distance-aviation/",
+      "snippet": "2 days ago · Convertissez instantanément des milles nautiques (NM) en kilomètres (km) ou en miles terrestres (mi), et inversement. …"
+    },
+    {
+      "title": "Newton mètre — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Newton_m%C3%A8tre",
+      "snippet": "Schéma du frein de Prony, utilisé autrefois pour la mesure des couples. M = moment, F = force, l = bras de levier. Bien qu'elle soit …"
+    },
+    {
+      "title": "Nanometre - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nanometre",
+      "snippet": "The nanometre is often used to express dimensions on an atomic scale: the diameter of a helium atom, for example, is about 0.06 …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "NikodemWnw55/contrastive-pretrained",
+  "slug": "nikodemwnw55-contrastive-pretrained",
+  "author": "NikodemWnw55",
+  "url": "https://huggingface.co/NikodemWnw55/contrastive-pretrained",
+  "created_at": "2026-10-15T23:04:03.000Z",
+  "updated_at": "2026-10-15T23:04:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NikodemWnw55 (Nikodem Wieczorek) - Hugging Face",
+      "url": "https://huggingface.co/NikodemWnw55",
+      "snippet": "Pizza is my favorite algorithm"
+    },
+    {
+      "title": "GitHub - nomic-ai/contrastors: Train Models Contrastively in Pytorch",
+      "url": "https://github.com/nomic-ai/contrastors",
+      "snippet": "Train Models Contrastively in Pytorch. Contribute to nomic-ai/contrastors development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - Contrastive-LM/CLM: Contrastive Language Models (CLMs) are a ...",
+      "url": "https://github.com/Contrastive-LM/CLM",
+      "snippet": "🔥 Contrastive Language Models (CLMs) are a new class of System One model trained with a contrastive learning objective that connects states and actions. This repo serves CLM-8B behind a TypeSafe-compatible API."
+    },
+    {
+      "title": "nomic-ai/contrastors | DeepWiki",
+      "url": "https://deepwiki.com/nomic-ai/contrastors",
+      "snippet": "The contrastors repository is a comprehensive toolkit designed for training and evaluating contrastive learning models, with a focus on producing high-quality text and vision embeddings. This page provides a high-level introduction to the repository&#x27;s architecture, components, and functionality."
+    },
+    {
+      "title": "PDF NiCLIP: neuroimaging contrastive language-image pretraining model for ...",
+      "url": "https://www.nature.com/articles/s41467-026-78451-7.pdf",
+      "snippet": "To address this, we present NiCLIP, a contrastive language-image model trained on over 23,000 articles to predict cognitive tasks, concepts, and domains from brain activation patterns."
+    }
+  ]
+}

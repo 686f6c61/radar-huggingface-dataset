@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "LucasMnunes4/classification",
+  "slug": "lucasmnunes4-classification",
+  "author": "LucasMnunes4",
+  "url": "https://huggingface.co/LucasMnunes4/classification",
+  "created_at": "2026-10-15T19:55:37.000Z",
+  "updated_at": "2026-10-15T19:55:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What are classification models? | IBM",
+      "url": "https://www.ibm.com/think/topics/classification-models",
+      "snippet": "Classification models are a type of machine learning model that divides data points into predefined groups called classes. Classifiers are a type of predictive modeling that learns class characteristics from input data and learns to assign possible classes to new data according to those learned characteristics. 1 Classification algorithms are widely used in data science for forecasting ..."
+    },
+    {
+      "title": "Top Machine Learning Classification Algorithms - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/top-machine-learning-algorithms-for-classification/",
+      "snippet": "Machine learning classification algorithms are essential tools used to categorize data into predefined classes based on learned patterns. From simple linear models to advanced neural networks, these algorithms are used in applications like spam detection, image recognition, sentiment analysis and medical diagnosis. Includes Logistic Regression, Decision Trees, Random Forest, SVM, KNN, Naive ..."
+    },
+    {
+      "title": "classification-model · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/classification-model",
+      "snippet": "AI-driven initiative to assist hospitals and rural clinics in early detection of Diabetic Retinopathy, supporting accessible eye care for all through open healthcare innovation."
+    },
+    {
+      "title": "Category classification prebuilt model - AI Builder",
+      "url": "https://learn.microsoft.com/en-us/ai-builder/prebuilt-category-classification",
+      "snippet": "The prebuilt category classification model is a ready to use AI model that&#x27;s configured to classify your text into categories that are useful for a specific business scenario. The first prebuilt category classification AI model is built around customer feedback uses."
+    },
+    {
+      "title": "Best AI for Classification 2026: Top 25 Models Benchmarked",
+      "url": "https://openmark.ai/best-ai-for-classification",
+      "snippet": "We benchmarked 25 AI models on subtle classification — sentiment irony, intent detection, topic overlap, and spam filtering. The cheapest model tied for first."
+    }
+  ]
+}

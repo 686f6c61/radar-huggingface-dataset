@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Steerix-org/robo-jev-2b",
+  "slug": "steerix-org-robo-jev-2b",
+  "author": "Steerix-org",
+  "url": "https://huggingface.co/Steerix-org/robo-jev-2b",
+  "created_at": "2026-10-12T03:58:46.000Z",
+  "updated_at": "2026-10-16T00:05:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "robotics",
+    "decision-making",
+    "physical-reasoning",
+    "calibration",
+    "lora",
+    "qwen3.5",
+    "simulation",
+    "robo-jev",
+    "en",
+    "ko",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 45,
+  "trending_score": 0,
+  "parameters": 1881825088,
+  "parameters_human": "1.88B",
+  "storage_bytes": 7540787244,
+  "storage_human": "7.5 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Twitch.tv这样的视频直播网站，其盈利模式是怎样的？以及直播人是怎 …",
+      "url": "https://www.zhihu.com/question/21027491",
+      "snippet": "最大的区别在录播：Twitch的回放只保留14天，订阅会员也就60天，YouTube的直播录像永久保存，还能继续跑广告。 也就是说同样 …"
+    },
+    {
+      "title": "为什么在twitch看直播却显示离线？iPad 上显示离线，可是我手机却看 …",
+      "url": "https://zhidao.baidu.com/question/1963019889349253140.html",
+      "snippet": "Twitch平台上的知名游戏包括英雄联盟、Dota2、星际争霸2、虫族之心、魔兽争霸、我的世界、坦克世界、以及暗黑破坏神3。 Twitch …"
+    },
+    {
+      "title": "安卓手机如何观看twitch直播？ - 知乎",
+      "url": "https://www.zhihu.com/question/268642101",
+      "snippet": "Mar 12, 2018 · 知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享 …"
+    },
+    {
+      "title": "国内手机如何下载twitch - 百度经验",
+      "url": "https://jingyan.baidu.com/article/9f7e7ec0ee9f652e29155451.html",
+      "snippet": "Jun 3, 2020 · 国内手机下载twitch具体步骤如下： 工具：华为P30手机、应用商店、twitch软件。 1、打开华为手机上面的app store， …"
+    },
+    {
+      "title": "twitch官网怎么进 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/950271456576336012.html",
+      "snippet": "Apr 1, 2025 · twitch官网怎么进要进入Twitch官网，可以直接按照以下步骤操作：输入官方网址：在您的网络浏览器地址栏中输入 …"
+    }
+  ]
+}

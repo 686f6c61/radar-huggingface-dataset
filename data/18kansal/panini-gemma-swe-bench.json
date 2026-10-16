@@ -5,7 +5,7 @@
   "author": "18kansal",
   "url": "https://huggingface.co/18kansal/panini-gemma-swe-bench",
   "created_at": "2026-10-14T19:23:17.000Z",
-  "updated_at": "2026-10-15T03:30:08.000Z",
+  "updated_at": "2026-10-15T15:06:39.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -17,6 +17,7 @@
   "tags": [
     "transformers",
     "swe-bench",
+    "swe-bench-lite",
     "panini-grammar",
     "ast-invariants",
     "code-repair",
@@ -32,7 +33,7 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

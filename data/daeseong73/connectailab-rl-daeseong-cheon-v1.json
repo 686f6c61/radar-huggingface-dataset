@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Daeseong73/connectailab-rl-daeseong-cheon-v1",
+  "slug": "daeseong73-connectailab-rl-daeseong-cheon-v1",
+  "author": "Daeseong73",
+  "url": "https://huggingface.co/Daeseong73/connectailab-rl-daeseong-cheon-v1",
+  "created_at": "2026-10-15T20:07:36.000Z",
+  "updated_at": "2026-10-16T00:31:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "peft",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "reinforcement-learning",
+    "deep-reinforcement-learning",
+    "grpo",
+    "decision-making",
+    "gymnasium",
+    "connect-tycoon",
+    "connect-ai-lab",
+    "connectailab",
+    "lora",
+    "qwen3.5",
+    "ko",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 63379291,
+  "storage_human": "63 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "nightmedia",
   "url": "https://huggingface.co/nightmedia/Qwen3.8-27B-USS-Curiosity-mxfp4-mlx",
   "created_at": "2026-10-14T22:22:24.000Z",
-  "updated_at": "2026-10-15T02:02:14.000Z",
+  "updated_at": "2026-10-15T14:56:00.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -84,7 +84,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 35,
   "trending_score": 0,
   "parameters": 27356728560,
   "parameters_human": "27.36B",

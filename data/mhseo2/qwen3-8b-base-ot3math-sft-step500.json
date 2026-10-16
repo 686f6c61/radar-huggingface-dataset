@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mhseo2/Qwen3-8B-Base-OT3Math-SFT-step500",
+  "slug": "mhseo2-qwen3-8b-base-ot3math-sft-step500",
+  "author": "mhseo2",
+  "url": "https://huggingface.co/mhseo2/Qwen3-8B-Base-OT3Math-SFT-step500",
+  "created_at": "2026-10-16T01:48:10.000Z",
+  "updated_at": "2026-10-16T01:49:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "math",
+    "reasoning",
+    "sft",
+    "conversational",
+    "dataset:knowledge-distillation/openthoughts3_math",
+    "base_model:Qwen/Qwen3-8B-Base",
+    "base_model:finetune:Qwen/Qwen3-8B-Base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939478,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FNAC DIRECT - Abonnement abusif - Fnac - Forum Que Choisir",
+      "url": "https://forum.quechoisir.org/fnac-direct-abonnement-abusif-t87113.html",
+      "snippet": "Jan 17, 2017 · Re: FNAC DIRECT - Abonnement abusif Messagepar Therese nollet » sam. mars 18, 2017 7:59 pm j'ai le même …"
+    },
+    {
+      "title": "arnaque fnac telephone reconditionné - Forum Que Choisir",
+      "url": "https://forum.quechoisir.org/arnaque-fnac-telephone-reconditionne-t162657.html",
+      "snippet": "Jul 9, 2018 · La Fnac a purement et simplement clos ma réclamation sous prétexte que j'étais remboursé. Je ne pouvais alors plus …"
+    },
+    {
+      "title": "Site FNAC : lien [Résolu] - Forum Mozilla Firefox - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-37895666-site-fnac-lien",
+      "snippet": "Aug 13, 2023 · Résumé de la discussion Le problème concerne un lien reçu dans un email FNAC qui ne s’ouvre pas et affiche une …"
+    },
+    {
+      "title": "Comment faire pour retrouver une ancienne facture FNAC avec une …",
+      "url": "https://forums.commentcamarche.net/forum/affich-36096126-comment-faire-pour-retrouver-une-ancienne-facture-fnac-avec-une-carte-fnac",
+      "snippet": "Jun 28, 2019 · Bonjour ! J'ai acheté une Nintendo Switch en espèce a la Fnac il y a quelques mois avec en plus une carte Fnac, et je …"
+    },
+    {
+      "title": "法国电商FNAC平台介绍&市场分析",
+      "url": "https://www.zhihu.com/tardis/bd/art/333704197",
+      "snippet": "近年来，欧洲小语种市场异军突起。总部位于法国的电商巨头FNAC（福纳客），深耕法国、比利时、西班牙、葡萄牙四国，销量稳居 …"
+    }
+  ]
+}

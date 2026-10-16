@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "matheusrp41/insightcare-intent-classifier",
+  "slug": "matheusrp41-insightcare-intent-classifier",
+  "author": "matheusrp41",
+  "url": "https://huggingface.co/matheusrp41/insightcare-intent-classifier",
+  "created_at": "2026-10-15T19:47:23.000Z",
+  "updated_at": "2026-10-15T19:47:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "joblib",
+    "scikit-learn",
+    "text-classification",
+    "tf-idf",
+    "logistic-regression",
+    "portuguese",
+    "customer-support",
+    "pt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1503988,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "matheusrp41 (MATHEUS RODRIGUES PESSOA) - Hugging Face",
+      "url": "https://huggingface.co/matheusrp41/models",
+      "snippet": "matheusrp41/bert-hate-speech-test Text Classification • 0.1B•Updated 5 days ago• 19"
+    },
+    {
+      "title": "Falconsai/intent_classification · Hugging Face",
+      "url": "https://huggingface.co/Falconsai/intent_classification",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Intent Classifier — NVIDIA AI-Q Blueprint",
+      "url": "https://docs.nvidia.com/aiq-blueprint/2.0.0/architecture/agents/intent-classifier.html",
+      "snippet": "Rather than using separate classifiers for intent and depth, the Intent Classifier combines all routing decisions into a single LLM invocation. This minimizes latency for the common case (meta queries get an instant response) and avoids an extra round-trip for research queries."
+    },
+    {
+      "title": "How To Implement Intent Classification In NLP [7 ML & DL Models]",
+      "url": "https://spotintelligence.com/2023/11/03/intent-classification-nlp/",
+      "snippet": "In the following sections, we&#x27;ll explore the steps involved in building and deploying an intent classifier, including data collection, model selection, and real-world challenges in intent classification. Building a Dataset for Intent Classification"
+    },
+    {
+      "title": "Intent Classification: Techniques for NLP Models - Label Your Data",
+      "url": "https://labelyourdata.com/articles/machine-learning/intent-classification",
+      "snippet": "Learn how to build accurate intent classification models using rules, ML, transformers, or LLMs. Plus tools, data tips, and production workflows."
+    }
+  ]
+}

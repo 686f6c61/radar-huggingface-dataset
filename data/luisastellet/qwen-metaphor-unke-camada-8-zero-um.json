@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "luisastellet/qwen-metaphor-unke-camada-8-zero-um",
+  "slug": "luisastellet-qwen-metaphor-unke-camada-8-zero-um",
+  "author": "luisastellet",
+  "url": "https://huggingface.co/luisastellet/qwen-metaphor-unke-camada-8-zero-um",
+  "created_at": "2026-10-15T22:51:35.000Z",
+  "updated_at": "2026-10-15T22:52:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 2395657618,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "luisastellet/qwen-metaphor-unke-camada-8-zero-um · Hugging Face",
+      "url": "https://huggingface.co/luisastellet/qwen-metaphor-unke-camada-8-zero-um",
+      "snippet": "Instructions to use luisastellet/qwen-metaphor-unke-camada-8-zero-um with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "luisastellet/qwen-metaphor-unke-camada-7-zero-um · Hugging Face",
+      "url": "https://huggingface.co/luisastellet/qwen-metaphor-unke-camada-7-zero-um",
+      "snippet": "Instructions to use luisastellet/qwen-metaphor-unke-camada-7-zero-um with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "luisastellet/qwen-metaphor-unke-camada-5 - featherless.ai",
+      "url": "https://featherless.ai/models/luisastellet/qwen-metaphor-unke-camada-5",
+      "snippet": "This model, luisastellet/qwen-metaphor-unke-camada-5, is a 0.8 billion parameter language model. It features a substantial context window of 32768 tokens, allowing it to process and generate longer sequences of text."
+    },
+    {
+      "title": "Qwen Metaphor Unke Camada 0 Literal Metaforica - AI Model Insights ...",
+      "url": "https://free2aitools.com/model/luisastellet/qwen-metaphor-unke-camada-0-literal-metaforica",
+      "snippet": "Registry entry for model Qwen Metaphor Unke Camada 0 Literal Metaforica; source metadata pending."
+    },
+    {
+      "title": "Run Qwen_metaphor API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/luisastellet/qwen_metaphor",
+      "snippet": "This model is a Qwen-based architecture, developed by luisastellet, designed for general language understanding and generation tasks. Its compact size and substantial context window make it suitable for applications requiring efficient processing of longer texts."
+    }
+  ]
+}

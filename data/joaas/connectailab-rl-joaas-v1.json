@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "joaas/connectailab-rl-joaas-v1",
+  "slug": "joaas-connectailab-rl-joaas-v1",
+  "author": "joaas",
+  "url": "https://huggingface.co/joaas/connectailab-rl-joaas-v1",
+  "created_at": "2026-10-15T19:54:01.000Z",
+  "updated_at": "2026-10-15T19:54:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "peft",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "reinforcement-learning",
+    "deep-reinforcement-learning",
+    "grpo",
+    "decision-making",
+    "gymnasium",
+    "connect-tycoon",
+    "connect-ai-lab",
+    "connectailab",
+    "lora",
+    "qwen3.5",
+    "ko",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 41684315,
+  "storage_human": "42 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "joaas/connectailab-rl-jay-v1-teacher · Hugging Face",
+      "url": "https://huggingface.co/joaas/connectailab-rl-jay-v1-teacher",
+      "snippet": "Instructions to use joaas/connectailab-rl-jay-v1-teacher with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries jev-style How to use joaas/connectailab-rl-jay-v1-teacher with jev-style:"
+    },
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "WonseokJayJung/connectailab-rl-jay-v1 · Hugging Face",
+      "url": "https://huggingface.co/WonseokJayJung/connectailab-rl-jay-v1",
+      "snippet": "WonseokJayJung / connectailab-rl-jay-v1 Like 3 Reinforcement Learning MLX Korean deep-reinforcement-learning grpo decision-making gymnasium connect-tycoon connect-ai-lab connectailab lora qwen3.5 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches across OpenAI, Anthropic, Google DeepMind, SpaceXAI, DeepSeek, Qwen, Moonshot AI, Meta, Mistral AI, MiniMax, and other important AI labs. You can use the newest-first tables to find the release date, provider, release stage, and model type."
+    },
+    {
+      "title": "Anthropic AI model submits false homicide tip to Philadelphia police - MSN",
+      "url": "https://www.msn.com/en-us/news/other/anthropic-ai-model-submits-false-homicide-tip-to-philadelphia-police/ar-AA2dWiN6",
+      "snippet": "Philadelphia police have revealed that Anthropic&#x27;s artificial intelligence model submitted a false homicide tip to authorities, an incident disclosed separately by the tech company."
+    }
+  ]
+}

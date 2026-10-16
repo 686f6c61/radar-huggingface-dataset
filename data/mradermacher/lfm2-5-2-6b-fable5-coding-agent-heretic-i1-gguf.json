@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "mradermacher/lfm2.5-2.6b-fable5-coding-agent-heretic-i1-GGUF",
+  "slug": "mradermacher-lfm2-5-2-6b-fable5-coding-agent-heretic-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/lfm2.5-2.6b-fable5-coding-agent-heretic-i1-GGUF",
+  "created_at": "2026-10-16T00:51:23.000Z",
+  "updated_at": "2026-10-16T01:34:33.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "lfm2",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "coding-agent",
+    "tool-use",
+    "conversational",
+    "text-generation-inference",
+    "en",
+    "base_model:AzariazIZI/lfm2.5-2.6b-fable5-coding-agent-heretic",
+    "base_model:quantized:AzariazIZI/lfm2.5-2.6b-fable5-coding-agent-heretic",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2697198592,
+  "parameters_human": "2.70B",
+  "storage_bytes": 31933637760,
+  "storage_human": "31.9 GB",
+  "base_model": "AzariazIZI/lfm2.5-2.6b-fable5-coding-agent-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

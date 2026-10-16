@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "luokelabs/gemma-4-26b-a4b-it-8bit",
+  "slug": "luokelabs-gemma-4-26b-a4b-it-8bit",
+  "author": "luokelabs",
+  "url": "https://huggingface.co/luokelabs/gemma-4-26b-a4b-it-8bit",
+  "created_at": "2026-10-16T01:43:50.000Z",
+  "updated_at": "2026-10-16T01:45:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "mirror",
+    "luoke",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25805936206,
+  "parameters_human": "25.81B",
+  "storage_bytes": 27985810807,
+  "storage_human": "28.0 GB",
+  "base_model": "google/gemma-4-26b-a4b-it",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Grand Tour - Welcome to Prime Video",
+      "url": "https://www.primevideo.com/",
+      "snippet": "Enjoy exclusive Amazon Originals as well as popular movies and TV shows. Watch anytime, anywhere. Start your free trial."
+    },
+    {
+      "title": "Prime Video: Watch movies, TV shows, sports, and live TV",
+      "url": "https://www.primevideo.com/storefront/home/home",
+      "snippet": "Stream popular movies, TV shows, sports, and live TV included with Prime, and even more with add-on subscriptions. Watch …"
+    },
+    {
+      "title": "Prime Video : regardez des films, des séries, du sport et la télévision ...",
+      "url": "https://www.primevideo.com/-/fr/offers/nonprimehomepage/?language=fr",
+      "snippet": "Regardez des films populaires, des séries, du sport et la télévision en direct inclus avec Amazon Prime, et encore plus avec des …"
+    },
+    {
+      "title": "Prime Video : regardez des films, des séries, du sport et la télévision ...",
+      "url": "https://www.primevideo.com/-/fr_FR/gp/video/offers",
+      "snippet": "Regardez des films populaires, des séries, du sport et la télévision en direct inclus avec Amazon Prime, et encore plus avec des …"
+    },
+    {
+      "title": "Prime Video: Get the app",
+      "url": "https://app.primevideo.com/home",
+      "snippet": "Watch movies and TV shows on the web at Amazon.com/primevideo or with the Prime Video app on your iOS and Android phone, …"
+    }
+  ]
+}

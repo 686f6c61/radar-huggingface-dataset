@@ -5,7 +5,7 @@
   "author": "hewittlab",
   "url": "https://huggingface.co/hewittlab/monitor_cot_for_hack-baseline-coding-explicit_intent-nemotron-3-nano-30b-a3b",
   "created_at": "2026-10-15T16:46:28.000Z",
-  "updated_at": "2026-10-15T17:49:00.000Z",
+  "updated_at": "2026-10-15T21:27:28.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 32431394499,
-  "storage_human": "32.4 GB",
+  "storage_bytes": 92661127140,
+  "storage_human": "92.7 GB",
   "base_model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
   "formats": [
     "safetensors"

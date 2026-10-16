@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Vincentgoto/survey-knowledge-distillation",
+  "slug": "vincentgoto-survey-knowledge-distillation",
+  "author": "Vincentgoto",
+  "url": "https://huggingface.co/Vincentgoto/survey-knowledge-distillation",
+  "created_at": "2026-10-15T23:07:22.000Z",
+  "updated_at": "2026-10-15T23:07:28.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "knowledge-distillation",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2006.05525] Knowledge Distillation: A Survey - arXiv.org",
+      "url": "https://arxiv.org/abs/2006.05525",
+      "snippet": "In recent years, deep neural networks have been successful in both industry and academia, especially for computer vision tasks. The great success of deep learning is mainly due to its scalability to encode large-scale data and to maneuver billions of model parameters. However, it is a challenge to deploy these cumbersome deep models on devices with limited resources, e.g., mobile phones and ..."
+    },
+    {
+      "title": "Knowledge distillation - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Knowledge_distillation",
+      "snippet": "In machine learning, knowledge distillation or model distillation is the process of transferring knowledge from a large model to a smaller one. While large models (such as very deep neural networks or ensembles of many models [1]) have more knowledge capacity than small models, this capacity might not be fully utilized. It can be just as computationally expensive to evaluate a model even if it ..."
+    },
+    {
+      "title": "Knowledge distillation: Simplifying AI with efficient models",
+      "url": "https://datasciencedojo.com/blog/understanding-knowledge-distillation/",
+      "snippet": "Learn how Knowledge Distillation makes AI models smaller, faster, and more efficient. Explore its benefits, applications, challenges, and Python implementation."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Qwen, Mistral AI, Moonshot AI, Z.ai, MiniMax, NVIDIA, Microsoft AI, Cohere, Xiaomi, and other prominent AI labs. The newest-first tables show each release date, provider, and model type. Dates use the earliest meaningful availability stage for each entry. Preview access ..."
+    },
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "id": "saidutta69/LFM2.5-230M-heretic",
+  "slug": "saidutta69-lfm2-5-230m-heretic",
+  "author": "saidutta69",
+  "url": "https://huggingface.co/saidutta69/LFM2.5-230M-heretic",
+  "created_at": "2026-10-15T20:46:35.000Z",
+  "updated_at": "2026-10-15T20:55:16.000Z",
+  "license": "lfm-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "it",
+    "ja",
+    "ko",
+    "pt",
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "lfm2",
+    "text-generation",
+    "liquid",
+    "lfm2.5",
+    "edge",
+    "on-device",
+    "tool-calling",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "reproducible",
+    "roleplay",
+    "local-llm",
+    "conversational",
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "it",
+    "ja",
+    "ko",
+    "pt",
+    "es",
+    "base_model:LiquidAI/LFM2.5-230M",
+    "base_model:quantized:LiquidAI/LFM2.5-230M",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 229693184,
+  "parameters_human": "229.7M",
+  "storage_bytes": 3099498488,
+  "storage_human": "3.1 GB",
+  "base_model": "LiquidAI/LFM2.5-230M",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PROFIL | AGENCE D'ACCUEIL HÔTES ET HÔTESSES",
+      "url": "https://www.profil.fr/fr",
+      "snippet": "Agence d’hôtes et hôtesses d’accueil premium, Profil est un acteur de référence présent sur les quatre grands marchés de l’accueil …"
+    },
+    {
+      "title": "L'entretien de votre voiture et de vos pneus avec Profil Plus",
+      "url": "https://www.profilplus.fr/",
+      "snippet": "Profil Plus s'engage au quotidien pour apporter le meilleur des services à ses clients. Nous avons développé un programme …"
+    },
+    {
+      "title": "« Profil » ou « profile » ? [orthographe] | La langue française",
+      "url": "https://www.lalanguefrancaise.com/orthographe/profil-ou-profile",
+      "snippet": "Jun 17, 2022 · Règle pour profil : on écrit toujours « profil » sans -e pour désigner le contour du visage vu de côté (du latin profilo). …"
+    },
+    {
+      "title": "ABOUT US - PROFIL",
+      "url": "https://www.profil.fr/en/about-us",
+      "snippet": "Founded in 1990 by Delphine Demichel, Profil is today a wholly-owned subsidiary of the GL events Group, the world’s leading …"
+    },
+    {
+      "title": "PROFIL®",
+      "url": "https://www.profil-global.com/",
+      "snippet": "May 20, 2024 · From assembly to structural connections, PROFIL® provides a comprehensive range of fastening products designed …"
+    }
+  ]
+}

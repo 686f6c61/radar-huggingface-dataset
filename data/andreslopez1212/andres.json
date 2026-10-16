@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "andreslopez1212/andres",
+  "slug": "andreslopez1212-andres",
+  "author": "andreslopez1212",
+  "url": "https://huggingface.co/andreslopez1212/andres",
+  "created_at": "2026-10-15T19:47:09.000Z",
+  "updated_at": "2026-10-15T19:47:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "andres.ai",
+      "url": "http://andres.ai/",
+      "snippet": "andres.ai"
+    },
+    {
+      "title": "Andres model (@andresmodel__) • Instagram photos and videos",
+      "url": "https://www.instagram.com/andresmodel__/",
+      "snippet": "11K Followers, 200 Following, 151 Posts - Andres model (@andresmodel__) on Instagram: \"\""
+    },
+    {
+      "title": "Andres Lopez (@andreslopez1212lopez) • Instagram photos and videos",
+      "url": "https://www.instagram.com/andreslopez1212lopez/",
+      "snippet": "82 Followers, 217 Following, 4 Posts - Andres Lopez (@andreslopez1212lopez) on Instagram: \"\""
+    },
+    {
+      "title": "andreslopez",
+      "url": "https://www.andreslopez.ca/",
+      "snippet": "Creative Director & Editor blending thoughtful, human-crafted content with AI-enhanced workflows to deliver high-impact results."
+    },
+    {
+      "title": "Andres AI (@ai_andres0) | TikTok",
+      "url": "https://www.tiktok.com/@ai_andres0",
+      "snippet": "Andres AI (@ai_andres0) on TikTok | . 423K Likes. . 64.2K Followers. . AI Affiliator / AI Model Follow me on FB: Andres AI for more videos🎥"
+    }
+  ]
+}

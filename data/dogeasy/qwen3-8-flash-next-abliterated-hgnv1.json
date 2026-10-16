@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "DogEasy/Qwen3.8-Flash-Next-Abliterated-HGNv1",
+  "slug": "dogeasy-qwen3-8-flash-next-abliterated-hgnv1",
+  "author": "DogEasy",
+  "url": "https://huggingface.co/DogEasy/Qwen3.8-Flash-Next-Abliterated-HGNv1",
+  "created_at": "2026-10-03T04:35:03.000Z",
+  "updated_at": "2026-10-16T00:04:51.000Z",
+  "license": "qwen-community-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "abliterated",
+    "uncensored",
+    "qwen4_exp",
+    "qwen3.8",
+    "flash-next",
+    "moe",
+    "mtp",
+    "hgn",
+    "halogen",
+    "gfx1151",
+    "strixhalo",
+    "qwenox",
+    "rocm",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:windowsxp811203/Qwen3.8-Flash-Next-Abliterated",
+    "base_model:quantized:windowsxp811203/Qwen3.8-Flash-Next-Abliterated",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 69,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 132734482280,
+  "storage_human": "132.7 GB",
+  "base_model": "windowsxp811203/Qwen3.8-Flash-Next-Abliterated",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mindfulness Meditation Techniques: 12 Methods That Actually Work …",
+      "url": "https://positivity.org/meditation/mindfulness-meditation-techniques",
+      "snippet": "Apr 10, 2026 · 12 evidence-based mindfulness meditation techniques explained step-by-step — body scan, breath awareness, loving …"
+    },
+    {
+      "title": "How To Practice Mindfulness Meditation - Mindful",
+      "url": "https://www.mindful.org/mindfulness-how-to-do-it/",
+      "snippet": "Jan 6, 2023 · Want to practice mindfulness meditation but don’t know where to start? Follow these simple steps to know yourself up …"
+    },
+    {
+      "title": "21 Mindfulness Exercises & Activities for Adults",
+      "url": "https://positivepsychology.com/mindfulness-exercises-techniques-activities/",
+      "snippet": "Jan 18, 2017 · Mindfulness has become incredibly popular, but how can you start practicing it? Here are mindfulness exercises for …"
+    },
+    {
+      "title": "Mindfulness Techniques: How to Start | Mindful.net",
+      "url": "https://mindful.net/mindfulness-techniques",
+      "snippet": "Jun 29, 2026 · The most useful mindfulness techniques are simple enough to repeat: breath awareness, body scanning, mindful …"
+    },
+    {
+      "title": "Meditation techniques: How to meditate for stress, sleep, and focus",
+      "url": "https://www.health.harvard.edu/mental-health/meditation-techniques-how-to-meditate-for-stress-sleep-and-focus",
+      "snippet": "Aug 4, 2026 · Learn beginner-friendly meditation techniques for anxiety, better sleep, energy, and mindfulness. Discover benefits, …"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Boollm/Gemma-4-E2B-GGUF",
+  "slug": "boollm-gemma-4-e2b-gguf",
+  "author": "Boollm",
+  "url": "https://huggingface.co/Boollm/Gemma-4-E2B-GGUF",
+  "created_at": "2026-10-15T21:57:48.000Z",
+  "updated_at": "2026-10-15T21:58:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "gemma4",
+    "boollm",
+    "on-device",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:finetune:google/gemma-4-E2B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4647450147,
+  "parameters_human": "4.65B",
+  "storage_bytes": 8034917885,
+  "storage_human": "8.0 GB",
+  "base_model": "google/gemma-4-E2B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/?hl=tr",
+      "snippet": "Bir hesap oluştur veya Instagram'da giriş yap. Nelerle ilgilendiğini seni anlayan kişilerle paylaş."
+    },
+    {
+      "title": "About Instagram: Features, Safety, Community & More",
+      "url": "https://about.instagram.com/",
+      "snippet": "Learn about Instagram: how the app works, key features, safety tools, teen accounts, parent resources, community programs, and …"
+    },
+    {
+      "title": "Instagram Stories: Momente gemeinsam erleben, teilen und …",
+      "url": "https://about.instagram.com/de-de/features/stories",
+      "snippet": "Nutze Instagram Stories, um Fotos und Videos zu teilen und dich mit Freund*innen, Familie und Creator*innen zu verbinden. Fang …"
+    },
+    {
+      "title": "Level Up with Instagram Reels | Instagram for Creators",
+      "url": "https://creators.instagram.com/reels",
+      "snippet": "Reels is where people create, share and discover videos. Learn how to use Instagram Reels to create moments your fans watch on …"
+    }
+  ]
+}

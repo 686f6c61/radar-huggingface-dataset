@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "huggingwadhah/lowendgirlfriend",
+  "slug": "huggingwadhah-lowendgirlfriend",
+  "author": "huggingwadhah",
+  "url": "https://huggingface.co/huggingwadhah/lowendgirlfriend",
+  "created_at": "2026-10-15T19:57:02.000Z",
+  "updated_at": "2026-10-15T22:28:09.000Z",
+  "license": "mixed-see-license-section",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "roleplay",
+    "companion",
+    "long-context",
+    "cpu",
+    "nsfw",
+    "en",
+    "base_model:SupraLabs/Supra-50M-Instruct",
+    "base_model:finetune:SupraLabs/Supra-50M-Instruct",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51786240,
+  "parameters_human": "51.8M",
+  "storage_bytes": 310741752,
+  "storage_human": "311 MB",
+  "base_model": "SupraLabs/Supra-50M-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?library...",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Free AI Girlfriend — Chat with No Signup, No Card | BaddieGF",
+      "url": "https://baddiegf.com/free-ai-girlfriend",
+      "snippet": "A genuinely free AI girlfriend — chat with no signup, no credit card, no subscription. Memory, AI photos, custom personalities. Start free on BaddieGF."
+    },
+    {
+      "title": "AI Girlfriend Chat and Characters | Cherry AI",
+      "url": "https://cherry.ai/ai-girlfriend",
+      "snippet": "Cherry AI helps users explore AI girlfriend-style companions, start relationship-style character chats, and build visual ideas for avatars and scenes."
+    },
+    {
+      "title": "AI Girlfriend — Chat, Roleplay, Image & Video | Kales.ai",
+      "url": "https://www.kales.ai/en/",
+      "snippet": "Kales is a service that connects AI character chat, roleplay, story mode, character creation, image generation, and short video generation. You can choose a character to chat with, create your own AI girlfriend, and use the same character for images and videos."
+    }
+  ]
+}

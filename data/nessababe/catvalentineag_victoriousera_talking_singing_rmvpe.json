@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "nessababe/CatValentineAG_VictoriousERA_talking_singing_RMVPE",
+  "slug": "nessababe-catvalentineag_victoriousera_talking_singing_rmvpe",
+  "author": "nessababe",
+  "url": "https://huggingface.co/nessababe/CatValentineAG_VictoriousERA_talking_singing_RMVPE",
+  "created_at": "2026-10-15T22:52:50.000Z",
+  "updated_at": "2026-10-15T22:52:50.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 83436140,
+  "storage_human": "83 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cat Valentine (Ariana Grande) (Victorious) (RVC v2 RMVPE) - 300 Epochs",
+      "url": "https://voice-models.com/model/1nlCkPEuhbS",
+      "snippet": "This AI created Model is based of from Ariana Grande&#x27;s fictional character \"Cat Valentine\" from Nickelodeon&#x27;s TV show hit \"Victorious\". I made it clean as possible, since most of the dataset used is based from filtered isolated vocals from the actual show (basically taken random clips from episodes, and putting it together)."
+    },
+    {
+      "title": "GoDZ21/CatValentineAG_VictoriousERA_talking_singing_RMVPE at main",
+      "url": "https://huggingface.co/GoDZ21/CatValentineAG_VictoriousERA_talking_singing_RMVPE/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · GoDZ21/CatValentineAG_VictoriousERA_talking_singing_RMVPE ...",
+      "url": "https://huggingface.co/GoDZ21/CatValentineAG_VictoriousERA_talking_singing_RMVPE/blob/main/README.md",
+      "snippet": "GoDZ21 / CatValentineAG_VictoriousERA_talking_singing_RMVPE like 0 License: other Model card FilesFiles and versions Community Use with library main CatValentineAG_VictoriousERA_talking_singing_RMVPE /README.md GoDZ21 initial commit 77aefa8 21 days ago preview code | raw history blame contribute delete No virus 23 Bytes metadata"
+    },
+    {
+      "title": "Cat Valentine (Ariana Grande) (Victorious) (RVC v2 RMVPE) - 300 Epochs",
+      "url": "https://ai-search.io/voices/cat-valentine-ariana-grande-victorious-rvc-v2-rmvpe-300-epochs",
+      "snippet": "Download the free AI voice model: Cat Valentine (Ariana Grande) (Victorious) (RVC v2 RMVPE) - 300 Epochs. This voice model was trained using RVC v2 using 300 epochs. The pitch extraction used was RMVPE. Find free AI voices for voiceovers, realtime conversion, text-to-speech, voice cloning, and more."
+    },
+    {
+      "title": "Browse 30,000+ AI Voice Models for RVC",
+      "url": "https://voice-models.com/",
+      "snippet": "Search 30,000+ AI voice models for RVC. Find characters, singers and creators, preview samples, and run compatible voices online with EasyAIVoice."
+    }
+  ]
+}

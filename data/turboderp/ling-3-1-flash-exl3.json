@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "turboderp/Ling-3.1-flash-exl3",
+  "slug": "turboderp-ling-3-1-flash-exl3",
+  "author": "turboderp",
+  "url": "https://huggingface.co/turboderp/Ling-3.1-flash-exl3",
+  "created_at": "2026-10-15T23:51:16.000Z",
+  "updated_at": "2026-10-16T00:01:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "exl3",
+    "text-generation",
+    "base_model:inclusionAI/Ling-3.1-flash",
+    "base_model:quantized:inclusionAI/Ling-3.1-flash",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 153635762110,
+  "storage_human": "153.6 GB",
+  "base_model": "inclusionAI/Ling-3.1-flash",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Parier en ligne sur le N° 1 des Paris Sportifs | Betclic France",
+      "url": "https://www.betclic.fr/",
+      "snippet": "Bonus pour tous les nouveaux joueurs : jusqu'à 100€ remboursés en Feebets pour tester les paris sportifs, 100€ de freeraces pour le …"
+    },
+    {
+      "title": "Connexion à votre compte Betclic France",
+      "url": "https://www.betclic.fr/connexion",
+      "snippet": "Connectez vous pour placer vos paris, vérifier vos résultats, gérer votre compte."
+    },
+    {
+      "title": "Betclic",
+      "url": "https://www.betclic.com/en/casino/login",
+      "snippet": "Betclic Mangas Gaming Malta Limited, company registration number C 46185, with registered address at Level 3, Tagliaferro …"
+    },
+    {
+      "title": "Online Sports Betting Football, Tennis, Basketball, Ice Hockey - Betclic",
+      "url": "https://www.betclic.com/en/sports-betting/",
+      "snippet": "Enjoy Online Betting on all the major Sports events and Live Matches with Betclic ! All the statistics and updated Odds for more than …"
+    },
+    {
+      "title": "Betclic Group | European leader in online gaming and betting.",
+      "url": "https://betclicgroup.com/en/",
+      "snippet": "Founded in 2005, Betclic Group is a leading European online sports betting and gaming company, harnessing cutting‑edge tech to …"
+    }
+  ]
+}

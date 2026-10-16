@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-nannan20261014qwen21-8000-lora",
+  "slug": "runninghubai-rh-nannan20261014qwen21-8000-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-nannan20261014qwen21-8000-lora",
+  "created_at": "2026-10-16T01:50:00.000Z",
+  "updated_at": "2026-10-16T01:51:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 83994990,
+  "storage_human": "84 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EN IMAGES : Thomas Pesquet rejoint les Rafale français pour une mission ...",
+      "url": "https://www.parismatch.com/actu/international/en-images-thomas-pesquet-rejoint-les-rafale-francais-pour-une-mission-militaire-en-egypte-277463",
+      "snippet": "1 day ago · L’astronaute a troqué sa combinaison spatiale pour celle de pilote militaire. Réserviste dans l’armée de l’air et de …Read more"
+    },
+    {
+      "title": "Thomas Pesquet | [English below] ️ Quelques images du ... - Instagram",
+      "url": "https://www.instagram.com/p/DeeuX1NjIaL/",
+      "snippet": "1,819 likes, 10 comments - thom_astro on October 14, 2026: \"[English below] ️ Quelques images du premier vol dans le cadre de …"
+    },
+    {
+      "title": "De l'Alaska à l'Égypte, quatre Rafale français traversent trois ...",
+      "url": "https://www.science-et-vie.com/mise-en-avant/de-lalaska-a-legypte-quatre-rafale-francais-traversent-trois-continents-pour-une-demonstration-de-force-258458.html",
+      "snippet": "Sep 11, 2026 · L'armée de l'Air et de l'Espace projette quatre chasseurs Rafale F4 sur plus de 40 000 km en quarante jours, du …"
+    },
+    {
+      "title": "PÉGASE 26 : nouvelle projection de la puissance aérospatiale",
+      "url": "https://www.defense.gouv.fr/air/actualites/pegase-26-nouvelle-projection-puissance-aerospatiale",
+      "snippet": "Aug 31, 2026 · La mission s’achèvera par la participation française avec l’exercice bilatéral « AMUN » en Egypte. L’occasion pour les …"
+    },
+    {
+      "title": "French Rafale jets take flight for 40,000-kilometre mission over ... - RFI",
+      "url": "https://www.rfi.fr/en/france/20260912-french-rafale-jets-take-flight-for-40-000-kilometre-mission-over-three-continents",
+      "snippet": "Sep 12, 2026 · Four French Rafale fighter jets have embarked on a 40-day mission spanning three continents, highlighting France’s …"
+    }
+  ]
+}

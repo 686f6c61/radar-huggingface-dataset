@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "projectsidewalk/sidewalk-tagger-ai-crosswalk",
+  "slug": "projectsidewalk-sidewalk-tagger-ai-crosswalk",
+  "author": "projectsidewalk",
+  "url": "https://huggingface.co/projectsidewalk/sidewalk-tagger-ai-crosswalk",
+  "created_at": "2026-10-15T22:06:19.000Z",
+  "updated_at": "2026-10-15T22:06:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "accessibility",
+    "sidewalks",
+    "multi-label-classification",
+    "project-sidewalk",
+    "image-classification",
+    "dataset:projectsidewalk/sidewalk-tagger-ai-validated",
+    "base_model:facebook/dinov2-with-registers-base",
+    "base_model:finetune:facebook/dinov2-with-registers-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 347204602,
+  "storage_human": "347 MB",
+  "base_model": "facebook/dinov2-with-registers-base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dépense - traduction - Dictionnaire Français-Anglais …",
+      "url": "https://www.wordreference.com/fren/d%c3%a9pense",
+      "snippet": "dépense - traduction français-anglais. Forums pour discuter de dépense, voir ses formes composées, des exemples et poser vos …"
+    },
+    {
+      "title": "dépenses - Traduction anglaise – Linguee",
+      "url": "https://www.linguee.fr/francais-anglais/traduction/d%c3%a9penses.html",
+      "snippet": "De très nombreux exemples de phrases traduites contenant \"dépenses\" – Dictionnaire anglais-français et moteur de recherche de …"
+    },
+    {
+      "title": "DÉPENSE | translate French to English - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/french-english/depense",
+      "snippet": "DÉPENSE translate: spending, consumption, expenditure, expense, expense, extravagance, outlay. Learn more in the Cambridge …"
+    },
+    {
+      "title": "Traduction DÉPENSE en anglais | Dictionnaire français-anglais",
+      "url": "https://dictionnaire.reverso.net/francais-anglais/d%C3%A9pense",
+      "snippet": "Traduction de \"dépense\" en anglais : expense, expenditure, expense account. Nom, signification, prononciation, expressions …"
+    },
+    {
+      "title": "DÉPENSE | traduire en anglais - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/fr/dictionnaire/francais-anglais/depense",
+      "snippet": "Traduction de dépense | Dictionnaire PASSWORD français-anglais dépense noun expenditure [noun] the act of spending"
+    }
+  ]
+}

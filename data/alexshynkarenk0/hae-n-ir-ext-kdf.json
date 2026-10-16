@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "id": "alexshynkarenk0/hae-n-ir-ext-kdf",
+  "slug": "alexshynkarenk0-hae-n-ir-ext-kdf",
+  "author": "alexshynkarenk0",
+  "url": "https://huggingface.co/alexshynkarenk0/hae-n-ir-ext-kdf",
+  "created_at": "2026-10-15T20:45:48.000Z",
+  "updated_at": "2026-10-15T20:51:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "onnx",
+  "languages": [
+    "en",
+    "uk"
+  ],
+  "tags": [
+    "onnx",
+    "search-and-rescue",
+    "thermal",
+    "infrared",
+    "lwir",
+    "drone",
+    "uav",
+    "tiny-object-detection",
+    "person-detection",
+    "edge-ai",
+    "raspberry-pi",
+    "real-time",
+    "knowledge-distillation",
+    "int8",
+    "object-detection",
+    "en",
+    "uk",
+    "dataset:alexshynkarenk0/hae-thermal-sar-annotations",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 581249,
+  "storage_human": "581249 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Person detection (thermal, aerial)",
+      "dataset": "WiSARD thermal (held-out sites Karen, MtErie, Airfield)",
+      "metric": "AP50 (int8, IoU 0.5, input x1.5)",
+      "value": 0.202
+    },
+    {
+      "task": "Person detection (thermal, aerial)",
+      "dataset": "HIT-UAV (test split)",
+      "metric": "AP50 (int8, IoU 0.5, input x1.5)",
+      "value": 0.58
+    },
+    {
+      "task": "Person detection (thermal, aerial)",
+      "dataset": "AIResQ Benchmark (held-out groups)",
+      "metric": "AP50 (int8, IoU 0.5, input x1.5)",
+      "value": 0.188
+    }
+  ],
+  "sources": [
+    {
+      "title": "Ibuku & temanku | Penana",
+      "url": "https://www.penana.com/story/172549/ibuku-amp-temanku/issue/7",
+      "snippet": "Jan 22, 2025 · Saat itu aku dan Rendy tidak mengobrol apa-apa mungkin karena terlalu cape. Hingga pagi harinya, aku, Andre, dan …"
+    },
+    {
+      "title": "MAMA DAN TEMANKU - Penana",
+      "url": "https://www.penana.com/story/98139/mama-dan-temanku/issue/0",
+      "snippet": "Mar 27, 2022 · Bookmark!"
+    },
+    {
+      "title": "Nilai Ujian - Cerita Dewasa Sange",
+      "url": "https://ceritadewasasangek.blogspot.com/2012/02/nilai-ujian.html",
+      "snippet": "Feb 9, 2012 · Aku sedang berjalan santai meninggalkan rumah pak Hr, ini pertemuanku yang ketiga dengan laki-laki itu demi …"
+    },
+    {
+      "title": "IBU SAHABATKU - Lexbarameru - Wattpad",
+      "url": "https://www.wattpad.com/story/340359859-ibu-sahabatku",
+      "snippet": "Apr 25, 2023 · Kana tidak lagi ingin mengalah dan menjadi orang lain, ia akan menjadi dirinya sendiri dan membalas Bian atas apa …"
+    },
+    {
+      "title": "IBUKU TERLALU BAIK 2 - IBUKU TERLALU BAIK - Dreame",
+      "url": "https://www.dreame.com/id/story/3424788992-ibuku-terlalu-baik/1617523968-ibuku-terlalu-baik-2.html",
+      "snippet": "Singkat cerita Jam pelajaran telah usai dan seperti biasa dodi heru dan dede sedang beristirahat di kantin, kebetulan heru hari ini …"
+    }
+  ]
+}

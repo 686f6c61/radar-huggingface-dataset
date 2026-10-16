@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "tsinghua-ee/ELLSA2",
+  "slug": "tsinghua-ee-ellsa2",
+  "author": "tsinghua-ee",
+  "url": "https://huggingface.co/tsinghua-ee/ELLSA2",
+  "created_at": "2026-10-16T01:17:56.000Z",
+  "updated_at": "2026-10-16T01:59:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7195017772,
+  "storage_human": "7.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tsinghua University",
+      "url": "https://www.tsinghua.edu.cn/en/",
+      "snippet": "Tsinghua holds commencement ceremony for undergraduate students Tsinghua holds opening convocation to welcome new …"
+    },
+    {
+      "title": "Tsinghua University - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tsinghua_University",
+      "snippet": "Early 20th century (1911–1949) Tsinghua University was established in Beijing during a tumultuous period of national upheaval and …"
+    },
+    {
+      "title": "Université Tsinghua — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Universit%C3%A9_Tsinghua",
+      "snippet": "L 'université Tsinghua (chinois simplifié : 清华大学 ; chinois traditionnel : 清華大學 ; pinyin : Qīnghuá Dàxué ; EFEO : Tch'inghoua …"
+    },
+    {
+      "title": "Overview-Tsinghua University",
+      "url": "https://www.tsinghua.edu.cn/en/Admissions/International_Students1/Overview.htm",
+      "snippet": "Tsinghua is a dynamic global university renowned for its high quality teaching and research, and its spirit of social commitment. With …"
+    },
+    {
+      "title": "Étudier à l'Université Tsinghua : Admission, Coûts &",
+      "url": "https://www.institut-promethee.fr/etudier-a-tsinghua-university",
+      "snippet": "Mar 19, 2026 · L’Université Tsinghua (清华大学, Tsinghua Daxue, abrégée THU), fondée en 1911 à Pékin, est l’université de …"
+    }
+  ]
+}

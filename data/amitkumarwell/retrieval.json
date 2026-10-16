@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "amitkumarwell/retrieval",
+  "slug": "amitkumarwell-retrieval",
+  "author": "amitkumarwell",
+  "url": "https://huggingface.co/amitkumarwell/retrieval",
+  "created_at": "2026-10-15T22:57:34.000Z",
+  "updated_at": "2026-10-15T22:57:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches across OpenAI, Anthropic, Google DeepMind, SpaceXAI, DeepSeek, Qwen, Moonshot AI, Meta, Mistral AI, MiniMax, and other important AI labs. You can use the newest-first tables to find the release date, provider, release stage, and model type."
+    },
+    {
+      "title": "Amit Kumar Jaiswal&#x27;s articles on arXiv",
+      "url": "https://arxiv.org/a/jaiswal_a_1",
+      "snippet": "A Model-Agnostic Framework for Recommendation via Interest-aware Item Embeddings Amit Kumar Jaiswal, Yu Xiong Comments: Accepted Paper under LBR track in the Seventeenth ACM Conference on Recommender Systems (RecSys) 2023 Subjects: Information Retrieval (cs.IR); Artificial Intelligence (cs.AI); Machine Learning (cs.LG)"
+    },
+    {
+      "title": "Anthropic AI model submits false homicide tip to Philadelphia police - MSN",
+      "url": "https://www.msn.com/en-us/news/other/anthropic-ai-model-submits-false-homicide-tip-to-philadelphia-police/ar-AA2dWiN6",
+      "snippet": "Philadelphia police have revealed that Anthropic&#x27;s artificial intelligence model submitted a false homicide tip to authorities, an incident disclosed separately by the tech company."
+    },
+    {
+      "title": "Exploring Retrieval-Augmented Generation (RAG) Approaches",
+      "url": "https://medium.com/@kr.amit.sri/exploring-retrieval-augmented-generation-rag-approaches-f3e6a12f4766",
+      "snippet": "As AI applications evolve, the ability to handle diverse queries, complex tasks, and mixed-media data has become crucial. Retrieval-Augmented Generation (RAG) is a transformative approach in ..."
+    }
+  ]
+}

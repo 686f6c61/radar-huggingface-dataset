@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "HY-2012/Nemotron-3-Diarization.AXERA",
+  "slug": "hy-2012-nemotron-3-diarization-axera",
+  "author": "HY-2012",
+  "url": "https://huggingface.co/HY-2012/Nemotron-3-Diarization.AXERA",
+  "created_at": "2026-10-16T01:49:02.000Z",
+  "updated_at": "2026-10-16T01:53:42.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "voice-activity-detection",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "speaker-diarization",
+    "streaming-sortformer",
+    "nemotron",
+    "axera",
+    "ax650",
+    "rttm",
+    "voice-activity-detection",
+    "en",
+    "zh",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 237242389,
+  "storage_human": "237 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HY Official - YouTube",
+      "url": "https://www.youtube.com/channel/UCjk0vxDFjZCdiZ6keN1KtgQ",
+      "snippet": "HY - 「Swing Swing Heart」 (日10ドラマ「50分間の恋人」挿入歌) Music Video HY Official 732K 8mo ago 6:47Read more"
+    },
+    {
+      "title": "HY — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/HY",
+      "snippet": "HY Cette page d’homonymie répertorie les différents sujets et articles portant le même nom."
+    },
+    {
+      "title": "Traduction , HY en français | Dictionnaire anglais-français | Reverso",
+      "url": "https://dictionnaire.reverso.net/anglais-francais/,+Hy",
+      "snippet": "Découvrez des expressions contenant \", Hy\" en anglais. Plongez dans notre trésor de phrases et expressions contenant \", Hy\" pour …"
+    },
+    {
+      "title": "Citroen Hy de collection à vendre - Annonces lesAnciennes",
+      "url": "https://www.lesanciennes.com/annonces/utilitaire-collection/citroen-hy/",
+      "snippet": "Choisissez votre Citroen Hy parmi nos 58 000 annonces dédiées aux véhicules de collection - sur lesAnciennes, référence des …"
+    },
+    {
+      "title": "Hy - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hy",
+      "snippet": "This disambiguation page lists articles associated with the title Hy. If an internal link incorrectly led you here, you may wish to change …"
+    }
+  ]
+}

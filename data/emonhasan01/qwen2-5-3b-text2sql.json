@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "emonHasan01/qwen2.5-3b-text2sql",
+  "slug": "emonhasan01-qwen2-5-3b-text2sql",
+  "author": "emonHasan01",
+  "url": "https://huggingface.co/emonHasan01/qwen2.5-3b-text2sql",
+  "created_at": "2026-10-15T21:23:41.000Z",
+  "updated_at": "2026-10-15T21:40:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-to-sql",
+    "sql",
+    "unsloth",
+    "lora",
+    "peft",
+    "qwen2.5",
+    "code-generation",
+    "conversational",
+    "en",
+    "dataset:b-mc2/sql-create-context",
+    "base_model:unsloth/Qwen2.5-3B-Instruct",
+    "base_model:finetune:unsloth/Qwen2.5-3B-Instruct",
+    "license:apache-2.0",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6303646376,
+  "storage_human": "6.3 GB",
+  "base_model": "unsloth/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text to SQL",
+      "dataset": "sql-create-context",
+      "metric": "Exact match (AST-normalised, 300 queries)",
+      "value": 74.3
+    }
+  ],
+  "sources": []
+}

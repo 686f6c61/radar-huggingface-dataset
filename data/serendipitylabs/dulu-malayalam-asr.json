@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "serendipitylabs/dulu-malayalam-asr",
+  "slug": "serendipitylabs-dulu-malayalam-asr",
+  "author": "serendipitylabs",
+  "url": "https://huggingface.co/serendipitylabs/dulu-malayalam-asr",
+  "created_at": "2026-10-15T20:10:03.000Z",
+  "updated_at": "2026-10-15T20:18:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "pytorch",
+  "languages": [
+    "ml"
+  ],
+  "tags": [
+    "pytorch",
+    "malayalam",
+    "speech",
+    "ctc",
+    "gemma",
+    "research",
+    "automatic-speech-recognition",
+    "ml",
+    "dataset:ai4bharat/Kathbath",
+    "base_model:google/embeddinggemma-2",
+    "base_model:finetune:google/embeddinggemma-2",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1331308210,
+  "storage_human": "1.3 GB",
+  "base_model": "google/embeddinggemma-2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FLEURS Malayalam, standard test (prior exposure disclosed below)",
+      "metric": "WER (%)",
+      "value": 44.1272487323748
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FLEURS Malayalam, standard test (prior exposure disclosed below)",
+      "metric": "CER (%)",
+      "value": 11.1509347402225
+    }
+  ],
+  "sources": []
+}

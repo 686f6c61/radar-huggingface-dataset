@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "sigmanih/Qwen-Qwen3.8-27B-GGUF-Q4_K_M",
+  "slug": "sigmanih-qwen-qwen3-8-27b-gguf-q4_k_m",
+  "author": "sigmanih",
+  "url": "https://huggingface.co/sigmanih/Qwen-Qwen3.8-27B-GGUF-Q4_K_M",
+  "created_at": "2026-10-15T20:40:06.000Z",
+  "updated_at": "2026-10-15T20:51:40.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "it"
+  ],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "sigma-studio",
+    "sigmanih",
+    "conversational",
+    "custom-model",
+    "llama.cpp",
+    "quantized",
+    "q4_k_m",
+    "en",
+    "it",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 16810714336,
+  "storage_human": "16.8 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Adult Chat Rooms - #1 Chat Avenue",
+      "url": "https://www.chat-avenue.com/adultchat.html",
+      "snippet": "Free adult chat rooms for everyone. Meet new friends or random strangers. Exchange pictures and images or chat with others using …Read more"
+    },
+    {
+      "title": "Free Adult and Sex Chat Rooms - AdultChat.net",
+      "url": "https://www.adultchat.net/chat/",
+      "snippet": "Free adult chat and live sex chat rooms for everyone. Exchange photos, web cam with others, and meet new friends or random …"
+    },
+    {
+      "title": "Adult Chat - Free Chat Now",
+      "url": "https://www.freechatnow.com/chat/adult?username=guest",
+      "snippet": "A room for chat of an adult, sexual nature. Trade sexy pictures and stories, flirt, sext, or just watch. 18+ ONLY."
+    },
+    {
+      "title": "AdultChat.net - Free Adult Chat and Sex Chat Rooms",
+      "url": "https://www.adultchat.net/",
+      "snippet": "Free adult chat rooms featuring live online sex chat rooms. Includes roleplaying, fantasy, web cams, porn and image exchange. Fast, …"
+    },
+    {
+      "title": "Chat Rooms - Browse All Free Chat Rooms 18+ - Just a Chat",
+      "url": "https://www.justachat.com/rooms/",
+      "snippet": "Browse every free chat room on Just a Chat: adult, sex, video, singles, dating, USA, gay, lesbian, bisexual, roleplay, Indian and …"
+    }
+  ]
+}

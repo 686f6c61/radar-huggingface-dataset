@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "Tds810/humanizer",
+  "slug": "tds810-humanizer",
+  "author": "Tds810",
+  "url": "https://huggingface.co/Tds810/humanizer",
+  "created_at": "2026-10-15T22:13:23.000Z",
+  "updated_at": "2026-10-15T22:13:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "safetensors",
+    "gemma4_unified",
+    "image-text-to-text",
+    "humanizer",
+    "transformers",
+    "text-rewriting",
+    "rewriting",
+    "paraphrase",
+    "style-transfer",
+    "llama.cpp",
+    "gemma4",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:google/gemma-4-12B",
+    "base_model:finetune:google/gemma-4-12B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11959730224,
+  "parameters_human": "11.96B",
+  "storage_bytes": 87599736109,
+  "storage_human": "87.6 GB",
+  "base_model": "google/gemma-4-12B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Joe Fantasia",
+      "url": "https://www.joefantasia.com/",
+      "snippet": "Joe Fantasia is a versatile actor with over a decade of experience in film and theater. With a passion for storytelling, Joe has …"
+    },
+    {
+      "title": "Joe Fantasia - IMDb",
+      "url": "https://www.imdb.com/name/nm9879127/",
+      "snippet": "He is an American actor from New York. He is known for his work in Yes (2019) and Mementos (2019). A graduate of the New York …"
+    },
+    {
+      "title": "Joe Fantasia - Biography - IMDb",
+      "url": "https://www.imdb.com/name/nm9879127/bio/",
+      "snippet": "He is an American actor from New York. He is known for his work in Yes (2019) and Mementos (2019). A graduate of the New York …"
+    },
+    {
+      "title": "Joe Fantasia — Grokipedia",
+      "url": "https://grokipedia.com/page/Joe_Fantasia",
+      "snippet": "Joe Fantasia is an American actor known for roles in independent films, short films, theater, and minor television appearances."
+    },
+    {
+      "title": "Joe Fantasia (@joefantasia) • Instagram photos and videos",
+      "url": "https://www.instagram.com/joefantasia/",
+      "snippet": "Follow joefantasia in the app to see their photos and videos. 436 followers · 522 following. See photos and videos from friends on …"
+    }
+  ]
+}

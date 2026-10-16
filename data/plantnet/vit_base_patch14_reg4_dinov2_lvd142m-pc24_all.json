@@ -5,7 +5,7 @@
   "author": "PlantNet",
   "url": "https://huggingface.co/PlantNet/vit_base_patch14_reg4_dinov2_lvd142m.pc24_all",
   "created_at": "2026-10-14T15:56:33.000Z",
-  "updated_at": "2026-10-14T17:42:26.000Z",
+  "updated_at": "2026-10-15T06:54:25.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-classification",
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 46,
   "trending_score": 0,
   "parameters": 92584830,
   "parameters_human": "92.6M",

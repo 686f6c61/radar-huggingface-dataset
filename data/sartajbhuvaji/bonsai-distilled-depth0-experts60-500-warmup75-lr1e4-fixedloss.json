@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "sartajbhuvaji/bonsai-distilled-depth0-experts60-500-warmup75-lr1e4-fixedloss",
+  "slug": "sartajbhuvaji-bonsai-distilled-depth0-experts60-500-warmup75-lr1e4-fixedloss",
+  "author": "sartajbhuvaji",
+  "url": "https://huggingface.co/sartajbhuvaji/bonsai-distilled-depth0-experts60-500-warmup75-lr1e4-fixedloss",
+  "created_at": "2026-10-15T20:00:05.000Z",
+  "updated_at": "2026-10-15T20:03:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_moe",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16936679424,
+  "parameters_human": "16.94B",
+  "storage_bytes": 33886060461,
+  "storage_human": "33.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

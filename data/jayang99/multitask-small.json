@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jayang99/multitask-small",
+  "slug": "jayang99-multitask-small",
+  "author": "jayang99",
+  "url": "https://huggingface.co/jayang99/multitask-small",
+  "created_at": "2026-10-15T23:00:43.000Z",
+  "updated_at": "2026-10-15T23:00:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Article 524 - Code de procédure civile - Légifrance",
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000048869054/",
+      "snippet": "Sep 1, 2024 · La décision de radiation est notifiée par le greffe aux parties ainsi qu'à leurs représentants par lettre simple. Elle est …"
+    },
+    {
+      "title": "Article 524 - Code de procédure civile - Légifrance",
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000039623190/2022-05-03",
+      "snippet": "Jan 1, 2020 · La décision de radiation est notifiée par le greffe aux parties ainsi qu'à leurs représentants par lettre simple. Elle est …"
+    },
+    {
+      "title": "Article 524 du Code de procédure civile - Doctrine",
+      "url": "https://www.doctrine.fr/l/texts/codes/LEGITEXT000006070716/articles/LEGIARTI000006410830",
+      "snippet": "Toute la jurisprudence, les commentaires de professionnels, les questions parlementaires sur l'Article 524 du Code de procédure civile."
+    },
+    {
+      "title": "Article 524 - Code de procédure civile - Légifrance",
+      "url": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000048869054",
+      "snippet": "Section I : La demande en matière contentieuse. (Articles 53 à 59)"
+    },
+    {
+      "title": "L'exécution provisoire. (Articles 514 à 524) - Légifrance",
+      "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070716/LEGISCTA000006135893/",
+      "snippet": "Jan 1, 2020 · Les décisions de première instance sont de droit exécutoires à titre provisoire à moins que la loi ou la décision rendue …"
+    }
+  ]
+}

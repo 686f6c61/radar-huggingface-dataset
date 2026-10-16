@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "volantis-labs/nemotron-3-diarization-coreml",
+  "slug": "volantis-labs-nemotron-3-diarization-coreml",
+  "author": "volantis-labs",
+  "url": "https://huggingface.co/volantis-labs/nemotron-3-diarization-coreml",
+  "created_at": "2026-10-15T23:02:18.000Z",
+  "updated_at": "2026-10-15T23:04:13.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "voice-activity-detection",
+  "library": "fluidaudio",
+  "languages": [],
+  "tags": [
+    "fluidaudio",
+    "speaker-diarization",
+    "streaming",
+    "coreml",
+    "apple-silicon",
+    "voice-activity-detection",
+    "base_model:nvidia/Nemotron-3-Diarization",
+    "base_model:finetune:nvidia/Nemotron-3-Diarization",
+    "license:openmdw-1.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 200717667,
+  "storage_human": "201 MB",
+  "base_model": "nvidia/Nemotron-3-Diarization",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Volantis — La Garde de Nuit",
+      "url": "https://lagardedenuit.com/wiki/index.php?title=Volantis",
+      "snippet": "Volantis est la plus orientale des cités libres et la seconde plus méridionales après Lys. Située à l'embouchure de la Rhoyne sur la …Read more"
+    },
+    {
+      "title": "Volantis - A Wiki of Ice and Fire",
+      "url": "https://awoiaf.westeros.org/index.php/Volantis",
+      "snippet": "Volantis is one of the greatest, richest, and most powerful of these city-states, [6] and despite depopulation by ancient wars it is still …"
+    },
+    {
+      "title": "Volantis | Wiki Game of Thrones | Fandom",
+      "url": "https://gameofthrones.fandom.com/fr/wiki/Volantis",
+      "snippet": "A Meereen, Varys et Tyrion font appel à Kinvara, la Grande Prêtresse du Temple de Volantis, pour les aider à ramener la paix dans …"
+    },
+    {
+      "title": "Volantains — La Garde de Nuit",
+      "url": "https://www.lagardedenuit.com/wiki/index.php?title=Volantains",
+      "snippet": "L'Antique Volantis a une société extrêmement hiérarchisée : les descendants de l' Ancien Sang de Valyria constituent une …"
+    },
+    {
+      "title": "Volantis",
+      "url": "https://volantis.co/",
+      "snippet": "Empowering women making them feel effortlessly beautiful, thinking of strength and grace, arcane beauty, archetypes of divine …"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Angais/Krea-2-PixelArt-16x16",
+  "slug": "angais-krea-2-pixelart-16x16",
+  "author": "Angais",
+  "url": "https://huggingface.co/Angais/Krea-2-PixelArt-16x16",
+  "created_at": "2026-10-15T20:43:04.000Z",
+  "updated_at": "2026-10-15T20:49:38.000Z",
+  "license": "krea-2-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "lora",
+    "text-to-image",
+    "pixel-art",
+    "sprites",
+    "game-assets",
+    "16x16",
+    "krea-2",
+    "en",
+    "dataset:Angais/krea-2-pixelart-16x16-synthetic",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 229198295,
+  "storage_human": "229 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ranger | Divinity Original Sin",
+      "url": "https://divinityoriginalsin.wiki.fextralife.com/Ranger",
+      "snippet": "Sep 17, 2026 · Ranger is a class in Divinity: Original Sin. Ranger stats, abilities, starting equipment, best builds, tips and tricks for DOS."
+    },
+    {
+      "title": "Ranger (Original Sin) | Divinity Wiki | Fandom",
+      "url": "https://divinity.fandom.com/wiki/Ranger_(Original_Sin)",
+      "snippet": "Following table shows all statistics, spells and items of the Ranger at the start of the game. There are some differences differences …"
+    },
+    {
+      "title": "Ranger - Wiki Divinity Original Sin Fr",
+      "url": "https://divinity-original-sin.fandom.com/fr/wiki/Ranger",
+      "snippet": "Les archers des Pics septentrionaux n'ont plus besoins d'être présentés. Tous les chasseurs égarés ou les voyageurs curieux qui …"
+    },
+    {
+      "title": "Ranger Build :: Divinity: Original Sin Enhanced Edition General …",
+      "url": "https://steamcommunity.com/app/373420/discussions/0/485624149171161952/",
+      "snippet": "Dec 8, 2015 · Crawling Infestation probably isn't that great on a ranger since it has such a short range, and Headstrong is decent but …"
+    },
+    {
+      "title": "Magister Ranger - Divinity Original Sin 2 - YouTube",
+      "url": "https://m.youtube.com/watch?v=IKAtYZWEtcU",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    }
+  ]
+}

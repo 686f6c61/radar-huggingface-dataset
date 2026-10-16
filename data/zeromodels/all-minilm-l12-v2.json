@@ -5,7 +5,7 @@
   "author": "zeromodels",
   "url": "https://huggingface.co/zeromodels/all-MiniLM-L12-v2",
   "created_at": "2026-10-13T22:36:55.000Z",
-  "updated_at": "2026-10-13T23:18:44.000Z",
+  "updated_at": "2026-10-16T01:58:51.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "sentence-similarity",
@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 6,
+  "downloads_30d": 12,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

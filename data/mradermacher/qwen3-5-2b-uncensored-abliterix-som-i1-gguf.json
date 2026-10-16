@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.5-2B-Uncensored-Abliterix-SOM-i1-GGUF",
+  "slug": "mradermacher-qwen3-5-2b-uncensored-abliterix-som-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.5-2B-Uncensored-Abliterix-SOM-i1-GGUF",
+  "created_at": "2026-10-15T20:24:05.000Z",
+  "updated_at": "2026-10-15T21:59:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen",
+    "heretic",
+    "abliterix",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "writing",
+    "roleplay",
+    "vision",
+    "rp",
+    "rep",
+    "r18",
+    "som",
+    "llm",
+    "qwen35",
+    "qwen3.5",
+    "qwen3.5-2b",
+    "chinese",
+    "english",
+    "text",
+    "image",
+    "chat",
+    "agent",
+    "en",
+    "zh",
+    "base_model:AkaumiKaede/Qwen3.5-2B-Uncensored-Abliterix-SOM",
+    "base_model:quantized:AkaumiKaede/Qwen3.5-2B-Uncensored-Abliterix-SOM",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1881825088,
+  "parameters_human": "1.88B",
+  "storage_bytes": 25798804160,
+  "storage_human": "25.8 GB",
+  "base_model": "AkaumiKaede/Qwen3.5-2B-Uncensored-Abliterix-SOM",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Privé by Zalando - Site de ventes privées mode et maison",
+      "url": "https://www.zalando-prive.fr/",
+      "snippet": "Vos nouvelles ventes privées préférées pour la mode et la maison. Marques premium jusqu'à -75 %* du PVC. Qualité garantie – les …"
+    },
+    {
+      "title": "Timex jusqu'à -75%* | Inscrivez-vous gratuitement",
+      "url": "https://www.zalando-prive.fr/ventes-privees/timex/",
+      "snippet": "Timex : parce que toutes les montres possèdent une âme et une histoire à raconter, et parce que le temps appartient à tous. …"
+    },
+    {
+      "title": "Outlet en ligne | Jusqu'à -75%* | Privé by Zalando FR",
+      "url": "https://www.zalando-prive.fr/outlet/",
+      "snippet": "Découvrez l'outlet en ligne de Privé by Zalando France ! Profitez de jusqu'à -75%* de réduction sur des grandes marques de luxe. …"
+    },
+    {
+      "title": "Qu’est-ce que Privé by Zalando",
+      "url": "https://www.zalando-prive.fr/help/comment-fonctionne-prive-by-zalando/qu-est-ce-que-prive-by-zalando/",
+      "snippet": "Privé by Zalando est un site de ventes privées en ligne qui offre à ses membres un accès exclusif à des marques de premier plan, le …"
+    },
+    {
+      "title": "Ventes privées homme - Déstockage en ligne",
+      "url": "https://www.zalando-prive.fr/ventes-privees/vetements-homme/",
+      "snippet": "Découvrez les ventes privées homme Privé by Zalando et profitez de jusqu'à -75%* de réductions sur les marques de mode …"
+    }
+  ]
+}

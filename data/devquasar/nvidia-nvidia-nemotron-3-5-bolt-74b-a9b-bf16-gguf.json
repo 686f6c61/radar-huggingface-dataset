@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "DevQuasar/nvidia.NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16-GGUF",
+  "slug": "devquasar-nvidia-nvidia-nemotron-3-5-bolt-74b-a9b-bf16-gguf",
+  "author": "DevQuasar",
+  "url": "https://huggingface.co/DevQuasar/nvidia.NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16-GGUF",
+  "created_at": "2026-10-15T23:02:17.000Z",
+  "updated_at": "2026-10-15T23:02:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "image-text-to-text",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16",
+    "base_model:quantized:nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 842360320,
+  "parameters_human": "842.4M",
+  "storage_bytes": 1727788640,
+  "storage_human": "1.7 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB - Hugging Face",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB",
+      "snippet": "Description NVIDIA Nemotron 3.5 Bolt 74B-A9B 24GB is a vision-language model (VLM) designed to run everyday agentic tasks locally, using a native 2-bit quantization to fit in 24GB of memory and run alongside other applications. It optimizes intelligence and speed per GB. It aims to achieve the optimal balance between speed and intelligence, being faster than most popular dense models while ..."
+    },
+    {
+      "title": "NVIDIA Nemotron 3.5 Bolt 74B-A9B 24GB - NVIDIA Nemotron",
+      "url": "https://research.nvidia.com/labs/nemotron/Nemotron-3.5-Bolt-24GB/",
+      "snippet": "We designed Nemotron 3.5 Bolt 74B-A9B to fit into 24GB of memory and achieve a decoding speed of at least 80 TPS, while maximizing intelligence. We show that by applying structured compression on the larger Super 3.5 VL model and aggressively quantizing the network to 2 bit, the resulting model is better than similarly sized models that are trained from scratch and quantized to 4 bit."
+    },
+    {
+      "title": "Nemotron AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/topics/ai/nemotron",
+      "snippet": "NVIDIA Nemotron is a family of open-source models with open weights, training data, and recipes, delivering leading efficiency and accuracy for building specialized AI agents with reasoning."
+    },
+    {
+      "title": "NVIDIA Nemotron v3 - a nvidia Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/nvidia/nvidia-nemotron-v3",
+      "snippet": "Open, Production-ready Enterprise Models. Upvote . 382 +372; Sort: Collection. nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB"
+    },
+    {
+      "title": "NVIDIA Nemotron 3.5 Bolt: Run Locally Guide - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/nemotron-3.5-bolt",
+      "snippet": "NVIDIA Nemotron-3.5-Bolt-74B-A9B is a 74B parameter, 9B active hybrid reasoning MoE model compressed from Super VL. It supports text, images and video, tool calling and a 128K context window."
+    }
+  ]
+}

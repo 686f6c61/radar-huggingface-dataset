@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "FiveC/amis-rewire-checkpoints",
+  "slug": "fivec-amis-rewire-checkpoints",
+  "author": "FiveC",
+  "url": "https://huggingface.co/FiveC/amis-rewire-checkpoints",
+  "created_at": "2026-09-23T11:43:16.000Z",
+  "updated_at": "2026-10-16T00:07:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1051163771521,
+  "storage_human": "1051.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FiveC/amis-rewire-checkpoints · Hugging Face",
+      "url": "https://huggingface.co/FiveC/amis-rewire-checkpoints",
+      "snippet": "FiveC / amis-rewire-checkpoints Like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=checkpoint",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "GitHub - DonPlaton/nevertwice: Local-first memory for AI coding agents ...",
+      "url": "https://github.com/DonPlaton/nevertwice",
+      "snippet": "Local-first memory for AI coding agents that catches a mistake before it repeats. Plain Markdown + git, zero deps, every agent via MCP/hooks. Formerly Anamnesis. - DonPlaton/nevertwice"
+    },
+    {
+      "title": "What Are AI Checkpoints? Uses, Benefits & Sharing | WEKA",
+      "url": "https://www.weka.io/learn/ai-checkpoints",
+      "snippet": "What Is an AI Checkpoint? AI checkpoints are saved states of a machine learning model at a particular point in its training process. They usually include the model&#x27;s parameters—weights and biases—and sometimes additional information, such as the optimizer state, epoch number, or training progress."
+    }
+  ]
+}

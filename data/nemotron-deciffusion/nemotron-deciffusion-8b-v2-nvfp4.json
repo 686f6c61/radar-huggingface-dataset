@@ -5,7 +5,7 @@
   "author": "nemotron-deciffusion",
   "url": "https://huggingface.co/nemotron-deciffusion/Nemotron-Deciffusion-8B-v2-NVFP4",
   "created_at": "2026-10-14T18:22:07.000Z",
-  "updated_at": "2026-10-14T23:38:08.000Z",
+  "updated_at": "2026-10-15T07:53:25.000Z",
   "license": "nvidia-nemotron-open-model-license",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 11,
   "trending_score": 0,
   "parameters": 6283350016,
   "parameters_human": "6.28B",

@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "lucatarik/Qwen3.5-4B-heretic-i1-GGUF-mmproj",
+  "slug": "lucatarik-qwen3-5-4b-heretic-i1-gguf-mmproj",
+  "author": "lucatarik",
+  "url": "https://huggingface.co/lucatarik/Qwen3.5-4B-heretic-i1-GGUF-mmproj",
+  "created_at": "2026-10-15T22:06:53.000Z",
+  "updated_at": "2026-10-15T22:10:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 3074409728,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

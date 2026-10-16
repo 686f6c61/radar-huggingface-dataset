@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "mradermacher/TigerLLM-12B-it-i1-GGUF",
+  "slug": "mradermacher-tigerllm-12b-it-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/TigerLLM-12B-it-i1-GGUF",
+  "created_at": "2026-10-15T20:36:19.000Z",
+  "updated_at": "2026-10-15T22:11:54.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "bn",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "bengali",
+    "bangla",
+    "gemma3",
+    "instruction-tuned",
+    "tigerllm",
+    "bn",
+    "en",
+    "dataset:md-nishat-008/Bangla-Instruct",
+    "base_model:md-nishat-008/TigerLLM-12B-it",
+    "base_model:quantized:md-nishat-008/TigerLLM-12B-it",
+    "license:cc-by-4.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11766034176,
+  "parameters_human": "11.77B",
+  "storage_bytes": 138575625376,
+  "storage_human": "138.6 GB",
+  "base_model": "md-nishat-008/TigerLLM-12B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

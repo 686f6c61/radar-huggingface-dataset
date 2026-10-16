@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "distributedcognition/inkling-abliterated",
+  "slug": "distributedcognition-inkling-abliterated",
+  "author": "distributedcognition",
+  "url": "https://huggingface.co/distributedcognition/inkling-abliterated",
+  "created_at": "2026-10-15T19:48:31.000Z",
+  "updated_at": "2026-10-16T03:45:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "abliteration",
+    "uncensored",
+    "moe",
+    "multimodal",
+    "base_model:thinkingmachines/Inkling",
+    "base_model:finetune:thinkingmachines/Inkling",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 300331374301,
+  "storage_human": "300.3 GB",
+  "base_model": "thinkingmachines/Inkling",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Themadmistake - YouTube",
+      "url": "https://www.youtube.com/Themadmistake",
+      "snippet": "Hello Welcome to themadmistake, My channel is mainly Sunderland Football but also I have another channel called Mads out and …"
+    },
+    {
+      "title": "Mad Mistake - YouTube",
+      "url": "https://www.youtube.com/@madmistake3635",
+      "snippet": "Share your videos with friends, family, and the world"
+    },
+    {
+      "title": "Mistake mad - YouTube",
+      "url": "https://www.youtube.com/@MistakeMad",
+      "snippet": "Mistake mad @Mistakemad More about this channel ...more More about this channel ...more ...more This channel doesn't have any …"
+    },
+    {
+      "title": "Mad Mistakes - YouTube",
+      "url": "https://www.youtube.com/c/MistakeTracker/videos",
+      "snippet": "👋 Welcome to Mad MistakesThis is the ultimate channel for movie fans who love spotting the funny, hidden mistakes in cinema! We …"
+    },
+    {
+      "title": "THE MAD MISTAKE AND THE MACKEM CABBIE GOAL …",
+      "url": "https://www.youtube.com/watch?v=vv-8j7J026U",
+      "snippet": "Oct 5, 2024 · THE MAD MISTAKE AND THE MACKEM CABBIE GOAL CELEBRATIONS 🍾 THE MACKEM CABBIE 5.14K …"
+    }
+  ]
+}

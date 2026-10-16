@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "vanch007/FLUX.3-Image-Klein-mlx-8bit",
+  "slug": "vanch007-flux-3-image-klein-mlx-8bit",
+  "author": "vanch007",
+  "url": "https://huggingface.co/vanch007/FLUX.3-Image-Klein-mlx-8bit",
+  "created_at": "2026-10-15T21:44:41.000Z",
+  "updated_at": "2026-10-15T22:01:39.000Z",
+  "license": "flux-kommunity-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "mflux",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mflux",
+    "safetensors",
+    "image-generation",
+    "image-editing",
+    "flux",
+    "flux-3",
+    "mlx",
+    "apple-silicon",
+    "8bit",
+    "text-to-image",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10702504815,
+  "storage_human": "10.7 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

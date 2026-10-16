@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "pipecat-ai/phonellm-max-alpha-2-nvfp4",
+  "slug": "pipecat-ai-phonellm-max-alpha-2-nvfp4",
+  "author": "pipecat-ai",
+  "url": "https://huggingface.co/pipecat-ai/phonellm-max-alpha-2-nvfp4",
+  "created_at": "2026-10-15T21:37:32.000Z",
+  "updated_at": "2026-10-15T22:24:06.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nemotron_h",
+    "text-generation",
+    "nemotron",
+    "mixture-of-experts",
+    "voice-agent",
+    "phone",
+    "tool-use",
+    "function-calling",
+    "conversational",
+    "pipecat",
+    "modelopt",
+    "nvfp4",
+    "en",
+    "base_model:pipecat-ai/phonellm-max-alpha-2",
+    "base_model:quantized:pipecat-ai/phonellm-max-alpha-2",
+    "license:other",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 64927477250,
+  "parameters_human": "64.93B",
+  "storage_bytes": 73357573271,
+  "storage_human": "73.4 GB",
+  "base_model": "pipecat-ai/phonellm-max-alpha-2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PSG.FR | Official site of Paris Saint-Germain",
+      "url": "https://www.psg.fr/",
+      "snippet": "PSG for Communities carries the Club’s values into society, along with those of sport: surpassing oneself, solidarity, a love of effort, …"
+    },
+    {
+      "title": "PSG.FR | Site officiel du Paris Saint-Germain",
+      "url": "https://www.psg.fr/%C2%A0",
+      "snippet": "Plongez au cœur du Paris Saint-Germain : suivez l'actualité et les matchs en direct, découvrez des contenus exclusifs et vibrez avec …"
+    },
+    {
+      "title": "PSG Live, Mercato PSG, L'Actualité foot du Paris Saint-Germain",
+      "url": "http://www.footparisien.com/",
+      "snippet": "4 days ago · PSG Foot, mercato PSG, foot transfert l'actualité en direct du Paris Saint-Germain sur footparisien.com"
+    },
+    {
+      "title": "ParisUnited — Actualité, mercato et analyses PSG",
+      "url": "https://parisunited.fr/",
+      "snippet": "1 day ago · Média PSG France-only : actualité du Paris Saint-Germain, mercato sourcé, calendrier, résultats, guides et archives."
+    },
+    {
+      "title": "Billetterie PSG - Achat de billets | Paris Saint-Germain",
+      "url": "https://billetterie.psg.fr/fr/",
+      "snippet": "5 days ago · Retrouvez ici toutes les offres de billetterie pour les matches du Paris Saint-Germain !"
+    }
+  ]
+}

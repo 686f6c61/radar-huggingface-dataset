@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Humanizer-3B-Safetensors-i1-GGUF",
+  "slug": "mradermacher-humanizer-3b-safetensors-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Humanizer-3B-Safetensors-i1-GGUF",
+  "created_at": "2026-10-15T21:35:02.000Z",
+  "updated_at": "2026-10-16T00:27:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "humanizer",
+    "rewrie",
+    "granite",
+    "en",
+    "dataset:mondk/Open-Rewrite-Sft",
+    "base_model:mondk/Humanizer-3B-Safetensors",
+    "base_model:quantized:mondk/Humanizer-3B-Safetensors",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3659737600,
+  "parameters_human": "3.66B",
+  "storage_bytes": 42883999840,
+  "storage_human": "42.9 GB",
+  "base_model": "mondk/Humanizer-3B-Safetensors",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

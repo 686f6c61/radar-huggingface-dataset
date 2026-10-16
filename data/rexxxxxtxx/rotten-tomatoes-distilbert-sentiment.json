@@ -5,7 +5,7 @@
   "author": "Rexxxxxtxx",
   "url": "https://huggingface.co/Rexxxxxtxx/rotten-tomatoes-distilbert-sentiment",
   "created_at": "2026-10-14T21:06:40.000Z",
-  "updated_at": "2026-10-14T21:31:59.000Z",
+  "updated_at": "2026-10-15T04:59:28.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -17,7 +17,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 22,
   "trending_score": 0,
   "parameters": 66955010,
   "parameters_human": "67.0M",

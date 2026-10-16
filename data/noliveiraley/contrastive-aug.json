@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "noliveiraley/contrastive-aug",
+  "slug": "noliveiraley-contrastive-aug",
+  "author": "noliveiraley",
+  "url": "https://huggingface.co/noliveiraley/contrastive-aug",
+  "created_at": "2026-10-15T19:57:40.000Z",
+  "updated_at": "2026-10-15T19:57:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Edifice - Connexion ENT e-college 78, accès à votre espace scolaire",
+      "url": "https://ent.ecollege78.fr/",
+      "snippet": "Connexion à votre ENT : un accès sécurisé et rapide à tous vos services numériques éducatifs."
+    },
+    {
+      "title": "Edifice - Connexion ENT HDF, accès à votre espace scolaire",
+      "url": "https://enthdf.fr/auth/saml/wayf",
+      "snippet": "Connexion à votre espace numérique scolaire : un accès simple, sécurisé et intuitif pour toute la communauté éducative."
+    },
+    {
+      "title": "Authentification - Open Digital Education",
+      "url": "https://neoconnect.opendigitaleducation.com/auth/login",
+      "snippet": "Connexion à votre ENT : un accès sécurisé et rapide à tous vos services numériques éducatifs."
+    },
+    {
+      "title": "ENT NEO, le réseau collaboratif du collège et lycée",
+      "url": "https://edifice.io/nos-produits/neo/",
+      "snippet": "Oct 5, 2026 · ENT conçu pour les collèges et lycées, NEO permet de communiquer efficacement avec les familles et initie les élèves …"
+    },
+    {
+      "title": "néo- — Wiktionnaire, le dictionnaire libre",
+      "url": "https://fr.wiktionary.org/wiki/n%C3%A9o-",
+      "snippet": "néo- \\ne.ɔ\\ Préfixe exprimant la nouveauté, qui sert à composer des termes didactiques (en particulier, en philosophie, des termes …"
+    }
+  ]
+}

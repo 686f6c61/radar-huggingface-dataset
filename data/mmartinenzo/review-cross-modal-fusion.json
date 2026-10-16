@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Mmartinenzo/review-cross-modal-fusion",
+  "slug": "mmartinenzo-review-cross-modal-fusion",
+  "author": "Mmartinenzo",
+  "url": "https://huggingface.co/Mmartinenzo/review-cross-modal-fusion",
+  "created_at": "2026-10-15T19:52:05.000Z",
+  "updated_at": "2026-10-15T19:52:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "cross-modal-fusion",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches across OpenAI, Anthropic, Google DeepMind, SpaceXAI, DeepSeek, Qwen, Moonshot AI, Meta, Mistral AI, MiniMax, and other important AI labs. You can use the newest-first tables to find the release date, provider, release stage, and model type."
+    },
+    {
+      "title": "Cross-Modal Model Merging",
+      "url": "https://www.emergentmind.com/topics/cross-modal-model-merging",
+      "snippet": "This synthesis demonstrates that cross-modal model merging is a core problem at the intersection of deep learning, multimodal fusion, and model compression, with a rapidly expanding methodology suite designed to robustly exploit multimodal signals, transfer specialist expertise, and underpin next-generation unified AI systems."
+    },
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "Best Multimodal AI Models: Complete 2026... — Think4AI",
+      "url": "https://think4ai.com/best-multimodal-ai-models-2026/",
+      "snippet": "Complete 2026 guide to multimodal models 2026 — real-world applications, implementation strategies, and the tools transforming how businesses use AI."
+    },
+    {
+      "title": "Cross-Modal Learning - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/cross-modal-learning/",
+      "snippet": "By leveraging the ability to correlate and utilize diverse types of information, cross-modal learning enables more accurate, contextually aware, and natural interactions in AI systems. It opens up innovative applications across various domains, from autonomous driving to immersive augmented reality experiences."
+    }
+  ]
+}

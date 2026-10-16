@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "gasolsun/Agent_Qwen3-4B_Qwen3-4B-Thinking-2507",
+  "slug": "gasolsun-agent_qwen3-4b_qwen3-4b-thinking-2507",
+  "author": "gasolsun",
+  "url": "https://huggingface.co/gasolsun/Agent_Qwen3-4B_Qwen3-4B-Thinking-2507",
+  "created_at": "2026-10-15T23:50:34.000Z",
+  "updated_at": "2026-10-15T23:51:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "on-policy-distillation",
+    "knowledge-distillation",
+    "synthetic-data",
+    "agent",
+    "conversational",
+    "dataset:gasolsun/Agent_Qwen3-4B_Qwen3-4B-Thinking-2507",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 8834317062,
+  "storage_human": "8.8 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …Read more"
+    },
+    {
+      "title": "ترجمه Google - مترجم شفاهی شخصی در تلفن یا رایانه شما",
+      "url": "https://translate.google.com/intl/fa/about/",
+      "snippet": "با نحوه ترجمه کردن نوشتار، گفتار، تصاویر، اسناد، وب‌سایت‌ها، و غیره با «ترجمه Google» آشنا شوید."
+    },
+    {
+      "title": "Google Переводчик – ваш личный переводчик в телефоне и …",
+      "url": "https://translate.google.com/intl/ru/about/",
+      "snippet": "Google Переводчик поможет вам понимать других и выражать себя на разных языках. Переводите живую речь, текст, …"
+    },
+    {
+      "title": "Prekladač Google – osobný tlmočník v telefóne alebo počítači",
+      "url": "https://translate.google.com/intl/sk/about/",
+      "snippet": "Naučte sa prekladať text, reč, obrázky, dokumenty, weby a ďalší obsah pomocou Prekladača Google."
+    },
+    {
+      "title": "谷歌翻译 - 手机或计算机上的个人随身口译工具",
+      "url": "https://translate.google.com/intl/zh-CN/about/",
+      "snippet": "谷歌翻译助您了解世界，与不同语言的人士轻松交流。在各种设备上翻译文本、语音内容、图片、文档、网站和其他内容。"
+    }
+  ]
+}

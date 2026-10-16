@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "KenteaKe11/KenT_0.5B_Base",
+  "slug": "kenteake11-kent_0-5b_base",
+  "author": "KenteaKe11",
+  "url": "https://huggingface.co/KenteaKe11/KenT_0.5B_Base",
+  "created_at": "2026-10-15T03:32:01.000Z",
+  "updated_at": "2026-10-16T01:09:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "blind_decoder",
+    "base-model",
+    "en",
+    "dataset:wikimedia/wikipedia",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 484934656,
+  "parameters_human": "484.9M",
+  "storage_bytes": 1939774408,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-10-16T03:48:37.515Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KenteaKe11/KenT_0.5B_LLMs_pt · Hugging Face",
+      "url": "https://huggingface.co/KenteaKe11/KenT_0.5B_LLMs_pt",
+      "snippet": "KenteaKe11 / KenT_0.5B_LLMs_pt Like 1 Safetensors PyTorch wikipedia Vietnamese English kent causal-lm custom_code License:kent-1.-noncommercial-exclusive Model card FilesFiles and versions xet Community Copy to bucket new KenT-.5B-LLMs-pt 🚀 Quick Start"
+    },
+    {
+      "title": "KenteaKe11 (Nguyễn Quôc Khánh) - Hugging Face",
+      "url": "https://huggingface.co/KenteaKe11/models",
+      "snippet": "User profile of Nguyễn Quôc Khánh on Hugging Face"
+    },
+    {
+      "title": "GitHub - NaiveAI-Labs/Naive-N0.5-Flash: Naive-N0.5-Flash is an open ...",
+      "url": "https://github.com/NaiveAI-Labs/Naive-N0.5-Flash",
+      "snippet": "Naive-N0.5-Flash is an open-weight 309B MoE model with 15.5B active parameters, built for coding and AI R&D. It supports a native 1M-token context window through a hybrid of Sliding-Window Attention (SWA) and lightweight DeepSeek Sparse Attention (DSA), with no full-attention layers."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 950 AI models across 638 benchmarks, with 224 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "GitHub - jaredpalmer/kev: Jev-like family of decision models built on ...",
+      "url": "https://github.com/jaredpalmer/kev",
+      "snippet": "Small Jev-like decision models you can train and run yourself. Kev is a family of small decision models built on Qwen3.5 and Qwen3.8 and based on the architecture described in Jev&#x27;s Architecture Unmasked. You can use the pretrained weights or train your own. The API matches TypeSafe&#x27;s System One, so you can point their Python SDK at your local server."
+    }
+  ]
+}

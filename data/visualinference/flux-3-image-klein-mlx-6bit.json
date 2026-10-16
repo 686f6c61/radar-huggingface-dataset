@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "VisualInference/FLUX-3-Image-Klein-MLX-6bit",
+  "slug": "visualinference-flux-3-image-klein-mlx-6bit",
+  "author": "VisualInference",
+  "url": "https://huggingface.co/VisualInference/FLUX-3-Image-Klein-MLX-6bit",
+  "created_at": "2026-10-16T00:54:41.000Z",
+  "updated_at": "2026-10-16T01:15:53.000Z",
+  "license": "flux-kommunity-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "apple-silicon",
+    "flux",
+    "flux-3",
+    "text-to-image",
+    "image-editing",
+    "image-to-image",
+    "quantized",
+    "en",
+    "base_model:black-forest-labs/flux-3-image-klein",
+    "base_model:quantized:black-forest-labs/flux-3-image-klein",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9016824862,
+  "storage_human": "9.0 GB",
+  "base_model": "black-forest-labs/flux-3-image-klein",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

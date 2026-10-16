@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "apexlabs-hq/sn44-petrol-v2",
+  "slug": "apexlabs-hq-sn44-petrol-v2",
+  "author": "apexlabs-hq",
+  "url": "https://huggingface.co/apexlabs-hq/sn44-petrol-v2",
+  "created_at": "2026-10-14T06:11:57.000Z",
+  "updated_at": "2026-10-15T23:58:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19768210,
+  "storage_human": "20 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bittensor-miner-apex/sn44-petrol · Hugging Face",
+      "url": "https://huggingface.co/bittensor-miner-apex/sn44-petrol",
+      "snippet": "sn44-petrol Object detector for the TurboVision element manak0/Detect-petrol-station-1-0: an ONNX end-to-end model served by miner.py with onnxruntime."
+    },
+    {
+      "title": "bittensor-miner-apex/sn44-petrol at main - Hugging Face",
+      "url": "https://huggingface.co/bittensor-miner-apex/sn44-petrol/tree/main",
+      "snippet": "bittensor-miner-apex / sn44-petrol Like 0 ONNX Model card FilesFiles and versions xet Community Copy to bucket new main sn44-petrol 9.88 MB Ctrl+K Ctrl+K 1 contributor History:6 commits bittensor-miner-apex scorevision: push artifact b2dd4aa verified3 days ago .gitattributes Safe 1.52 kBinitial commit3 days ago README.md 424 Bytesscorevision: push artifact3 days ago chute_config.yml 1.01 ..."
+    },
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "Bittensor&#x27;s Subnet 44 Just Distilled a 19MB Vision Model That ...",
+      "url": "https://genfinity.io/2026/06/18/bittensor-subnet-44-score-sn44-19mb-vision-model-beats-frontier-ai/",
+      "snippet": "A 19-megabyte vision model just outperformed the entire frontier AI lineup at object detection. Score, the team building Subnet 44 on Bittensor, published the result through its official X account on June 12."
+    },
+    {
+      "title": "MossyModels — Free YOLO and ONNX AI Models",
+      "url": "https://mossymodels.com/",
+      "snippet": "Free community library of YOLO and ONNX AI aimbot models for Fortnite, Valorant, Warzone, Apex Legends, CS2, and 40+ games. Download ONNX and PyTorch weights."
+    }
+  ]
+}

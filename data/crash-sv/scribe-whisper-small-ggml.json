@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "crash-sv/scribe-whisper-small-ggml",
+  "slug": "crash-sv-scribe-whisper-small-ggml",
+  "author": "crash-sv",
+  "url": "https://huggingface.co/crash-sv/scribe-whisper-small-ggml",
+  "created_at": "2026-10-15T22:10:57.000Z",
+  "updated_at": "2026-10-15T22:11:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "whisper.cpp",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "whisper.cpp",
+    "automatic-speech-recognition",
+    "ggml",
+    "whisper",
+    "cpu",
+    "ru",
+    "en",
+    "base_model:openai/whisper-small",
+    "base_model:finetune:openai/whisper-small",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 264464607,
+  "storage_human": "264 MB",
+  "base_model": "openai/whisper-small",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Crash (2004 film) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Crash_(2004_film)",
+      "snippet": "Crash (2004 film) ... Crash is a 2004 American crime drama film directed by Paul Haggis, who co-wrote the screenplay and produced …"
+    },
+    {
+      "title": "CRASH-AERIEN.AERO - Le Site Français des Accidents et Incidents …",
+      "url": "http://www.crash-aerien.aero/",
+      "snippet": "22 hours ago · Copyright © 2000 - 2024 CRASH-AERIEN - Hébergement OVH Accueil News Forum Accidents Incidents Articles …"
+    },
+    {
+      "title": "Crash (2004) - IMDb",
+      "url": "https://www.imdb.com/title/tt0375679/",
+      "snippet": "Crash: Directed by Paul Haggis. With Don Cheadle, Sandra Bullock, Thandiwe Newton, Karina Arroyave. Racial tensions collide in a …"
+    },
+    {
+      "title": "Crash - Film 1996 - AlloCiné",
+      "url": "https://www.allocine.fr/film/fichefilm_gen_cfilm=15119.html",
+      "snippet": "Jul 7, 2011 · Un sujet de folie qui nous montre un groupe de personnes tous rescapés de crash de voitures qui s'excitent comme des …"
+    },
+    {
+      "title": "240 Compilation of SHOCKING Car Crash Moments 2025: Idiots",
+      "url": "https://www.youtube.com/watch?v=FivgdWUgnTU",
+      "snippet": "Sep 30, 2025 · 240 Shocking Car Crash Moments Compilation 2025: Idiots Behind the Wheel Caught on Camera Welcome to …"
+    }
+  ]
+}

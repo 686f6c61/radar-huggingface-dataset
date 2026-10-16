@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ab-naidu/poca-SoccerTwos",
+  "slug": "ab-naidu-poca-soccertwos",
+  "author": "ab-naidu",
+  "url": "https://huggingface.co/ab-naidu/poca-SoccerTwos",
+  "created_at": "2026-10-15T23:56:58.000Z",
+  "updated_at": "2026-10-15T23:58:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "SoccerTwos",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-SoccerTwos",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 58807495,
+  "storage_human": "59 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Label Agriculture biologique — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Label_Agriculture_biologique",
+      "snippet": "Le label Agriculture biologique (ou label AB) est un label de qualité français créé en 1985, et fondé sur l'interdiction d'utilisation de …"
+    },
+    {
+      "title": "AB — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/AB",
+      "snippet": "AB peut désigner le Label Agriculture Biologique (AB) en France, logotype facultatif appliqué sur des produits conformes au cahier …"
+    },
+    {
+      "title": "Bienvenue • Ancienne Belgique - AB",
+      "url": "https://www.abconcerts.be/fr/",
+      "snippet": "Sep 21, 2026 · Découvrez la session acoustique de Sunset Blvd. et rendez-vous à l’AB le 15 novembre. Jen, l’une des nouvelles …"
+    },
+    {
+      "title": "AB Solutions",
+      "url": "https://www.ab-solutions.fr/",
+      "snippet": "AB Solutions accompagne depuis 2012 les entreprises et exploitations agricoles dans l’optimisation de leurs charges sociales et …"
+    },
+    {
+      "title": "AB SCIENCE Cours Action AB, Cotation Bourse Euronext Paris",
+      "url": "https://www.boursorama.com/cours/1rPAB/",
+      "snippet": "Le cours de l'action AB SCIENCE AB en temps réel sur Boursorama : historique de la cotation sur Euronext Paris, graphique, …"
+    }
+  ]
+}

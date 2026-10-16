@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Mino1289/vmoe_s32_last2_384_randaug_light1_ft",
+  "slug": "mino1289-vmoe_s32_last2_384_randaug_light1_ft",
+  "author": "Mino1289",
+  "url": "https://huggingface.co/Mino1289/vmoe_s32_last2_384_randaug_light1_ft",
+  "created_at": "2026-10-15T23:26:53.000Z",
+  "updated_at": "2026-10-15T23:27:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "safetensors",
+    "image-classification",
+    "vmoe",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 56785384,
+  "parameters_human": "56.8M",
+  "storage_bytes": 227158256,
+  "storage_human": "227 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Colissimo - Tous les Services et Produits - La Poste",
+      "url": "https://www.laposte.fr/colissimo",
+      "snippet": "Avec Colissimo, envoyez vos colis depuis chez vous. Vous pouvez aussi suivre ou modifier la livraison. Découvrez tous les services …"
+    },
+    {
+      "title": "Envoyer un colis - Colissimo en Ligne - La Poste",
+      "url": "https://www.laposte.fr/colissimo-en-ligne",
+      "snippet": "Sep 17, 2026 · Envoyer un colis avec Colissimo en ligne, c’est simple et rapide. En quelques clics, vous pouvez estimer le prix, …"
+    },
+    {
+      "title": "Colissimo – expert de la livraison rapide et responsable",
+      "url": "https://www.colissimo.entreprise.laposte.fr/",
+      "snippet": "Nous recherchions une solution fiable, reconnue et capable de nous accompagner partout en France. Colissimo s’est imposé par sa …"
+    },
+    {
+      "title": "Colissimo - Suivi de colis",
+      "url": "https://www.laposte-colissimo.fr/",
+      "snippet": "Vos données sont traitées de manière sécurisée par Colissimo, filiale du Groupe La Poste."
+    },
+    {
+      "title": "Suivre une lettre, un Colissimo ou un Chronopost - La Poste",
+      "url": "https://www.laposte.fr/outils/suivre-vos-envois",
+      "snippet": "Les e-mails Colissimo se réinventent ! Les notifications e-mails Colissimo font peau neuve ! Un nouveau design pour vous informer …"
+    }
+  ]
+}

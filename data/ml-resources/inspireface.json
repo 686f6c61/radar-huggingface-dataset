@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ml-resources/InspireFace",
+  "slug": "ml-resources-inspireface",
+  "author": "ml-resources",
+  "url": "https://huggingface.co/ml-resources/InspireFace",
+  "created_at": "2026-10-15T22:05:28.000Z",
+  "updated_at": "2026-10-15T22:16:47.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 315781120,
+  "storage_human": "316 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ML — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/ML",
+      "snippet": "mètre linéaire (ml), unité de longueur dans une direction utile, c'est-à-dire sans tenir compte des autres dimensions (largeur, hauteur, …"
+    },
+    {
+      "title": "ML - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/ML",
+      "snippet": "This disambiguation page lists articles associated with the title ML. If an internal link incorrectly led you here, you may wish to change …"
+    },
+    {
+      "title": "Voitures MERCEDES-BENZ Classe M/ML d'occasion",
+      "url": "https://www.leboncoin.fr/c/voitures/u_car_brand:MERCEDES-BENZ+u_car_model:MERCEDES-BENZ_Classe%20M%2FML",
+      "snippet": "MERCEDES CLASSE M ML 350 4-Matic V6 3.0 CDi 258CH - EDITION 1 - FASCINATION Prix équitable AUTO TRANSFERT Saint …"
+    },
+    {
+      "title": "Conversion de Millilitres en Litres",
+      "url": "https://www.metric-conversions.org/fr/volume/millilitres-en-litres.htm",
+      "snippet": "Un millilitre (mL) est égal à un millième de litre, qui est l'unité de base de volume dans le système métrique. Il est couramment utilisé …"
+    },
+    {
+      "title": "Mobile Legends: Bang Bang - Heroes and Gameplay Insights",
+      "url": "https://www.mobilelegends.com/id/",
+      "snippet": "Sep 28, 2026 · Dive into Mobile Legends: Bang Bang! Explore heroes, skills, and strategies in this popular MOBA, and stay updated …"
+    }
+  ]
+}

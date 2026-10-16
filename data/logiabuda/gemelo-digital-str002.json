@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "logiabuda/gemelo-digital-str002",
+  "slug": "logiabuda-gemelo-digital-str002",
+  "author": "logiabuda",
+  "url": "https://huggingface.co/logiabuda/gemelo-digital-str002",
+  "created_at": "2026-10-15T20:33:22.000Z",
+  "updated_at": "2026-10-15T20:33:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NandoF on X: \" Secret Desires - Ch 7 - Text New chapter is ...",
+      "url": "https://x.com/NandoF_3D/status/2110569632184639862",
+      "snippet": "1 day ago · 💋 Secret Desires - Ch 7 - Text New chapter is available now. 💜 Thank you for the support! Support me at: …"
+    },
+    {
+      "title": "NandoF library download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/nandof/",
+      "snippet": "Oct 9, 2016 · Download NandoF library for free. The NandoF library contains useful C# code for many different purposes, including a …"
+    },
+    {
+      "title": "The Toon's Book - Mom's Help",
+      "url": "https://www.thetoonsbook.com/3d-comics-15/moms-help",
+      "snippet": "Discover the 3D comic series \"Mom's Help\" on The Toon's Book platform."
+    },
+    {
+      "title": "Home - Nando's",
+      "url": "https://www.nandos.com/",
+      "snippet": "A warm welcome… To the worldwide home of Nando’s. If you’re here looking for your nearest Nando’s then use our World Page to …"
+    },
+    {
+      "title": "NandoF library - Browse /nandof at SourceForge.net",
+      "url": "https://sourceforge.net/projects/nandof/files/nandof/",
+      "snippet": "Download Latest Version NandoF-lib-0.05.zip (199.4 kB) Add to Preferred Sources Home / nandof"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "liodon-ai/anon-1b-ONNX",
+  "slug": "liodon-ai-anon-1b-onnx",
+  "author": "liodon-ai",
+  "url": "https://huggingface.co/liodon-ai/anon-1b-ONNX",
+  "created_at": "2026-10-16T01:32:22.000Z",
+  "updated_at": "2026-10-16T02:07:49.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "gemma3_text",
+    "onnxruntime",
+    "quantized",
+    "text-generation",
+    "base_model:scratchyone/anon-1b",
+    "base_model:quantized:scratchyone/anon-1b",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11148472946,
+  "storage_human": "11.1 GB",
+  "base_model": "scratchyone/anon-1b",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Porn – Vidéos Porno | Pornhub.com",
+      "url": "https://fr.pornhub.com/video/search?search=porn",
+      "snippet": "Regarde les vidéos porno de Porn gratuitement, ici sur Pornhub.com. Découvre la collection plus importante de films et de clips XXX …"
+    },
+    {
+      "title": "Free Porn Videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/",
+      "snippet": "XVIDEOS Free Porn Videos XVideos.com is a free hosting service for porn videos. We convert your files to various formats. You can …"
+    },
+    {
+      "title": "Free Porn Tubes - HD Porn, Sex Videos & XXX Porno Movies",
+      "url": "https://theporndude.com/top-porn-tube-sites",
+      "snippet": "Watch Free HD porn videos on the most popular porn tubes in the world. Find hardcore sex movies of pornstars, XXX vids of young …"
+    },
+    {
+      "title": "Recommended Porn Videos from Youporn | Youporn",
+      "url": "https://www.youporn.com/recommended/",
+      "snippet": "Watch the most recommended porn videos and XXX movies for free on Youporn. We created the best porn for you."
+    },
+    {
+      "title": "HD Porn Videos: Hottest Girls on High Definition Movies | Pornhub",
+      "url": "https://www.pornhub.com/hd",
+      "snippet": "Free HD porn on Pornhub.com. Looking for high-definition sex videos in every triple XXX niche? The world's best porn tube has HD …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sim-oque/efficient-attention-notes",
+  "slug": "sim-oque-efficient-attention-notes",
+  "author": "sim-oque",
+  "url": "https://huggingface.co/sim-oque/efficient-attention-notes",
+  "created_at": "2026-10-15T20:45:58.000Z",
+  "updated_at": "2026-10-15T20:46:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "efficient-attention",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sim — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Sim",
+      "snippet": "Simon Berryer, dit Sim, est un acteur, humoriste, chanteur, parolier et écrivain français, né le 21 juillet 1926 à Cauterets (Hautes …"
+    },
+    {
+      "title": "Sim Biographie : naissance, parcours, famille…",
+      "url": "https://www.rireetchansons.fr/humoristes/sim/biographie",
+      "snippet": "Sep 6, 2009 · Biographie Sim Sim on Jacques Eugène Berryer alias Sim voit le jour le 21 juillet 1926 à Cauterets (France). Issu d’un …"
+    },
+    {
+      "title": "La Sim - Société Industrie Minérale",
+      "url": "https://www.lasim.org/",
+      "snippet": "Découvrez les périodiques édités par la Sim, mines & carrières et Recyclage & Valorisation, ainsi que de nombreux ouvrages …"
+    },
+    {
+      "title": "SIM 2027 - Chambéry - SavoiExpo",
+      "url": "https://www.expositionsim.com/",
+      "snippet": "CAP SUR CHAMBÉRY POUR LE SIM 2027 ! Les 20, 21 et 22 octobre 2027, retrouvez les acteurs de l’industrie minérale pour trois …"
+    },
+    {
+      "title": "Carte SIM — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Carte_SIM",
+      "snippet": "La carte SIM contient un numéro IMSI, constitué du code pays (MCC), de l'identifiant de l'opérateur (MNC), et de l'identifiant de …"
+    }
+  ]
+}

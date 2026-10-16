@@ -5,7 +5,7 @@
   "author": "carlos-monge-univalle",
   "url": "https://huggingface.co/carlos-monge-univalle/bert-large-cased-2026",
   "created_at": "2026-10-15T16:46:09.000Z",
-  "updated_at": "2026-10-15T17:49:19.000Z",
+  "updated_at": "2026-10-15T18:22:04.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-classification",
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": 109852418,
   "parameters_human": "109.9M",
-  "storage_bytes": 2636604449,
-  "storage_human": "2.6 GB",
+  "storage_bytes": 4394342482,
+  "storage_human": "4.4 GB",
   "base_model": "dccuchile/bert-base-spanish-wwm-cased",
   "formats": [
     "safetensors"

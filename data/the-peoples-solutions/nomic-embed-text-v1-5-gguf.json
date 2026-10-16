@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "the-peoples-solutions/nomic-embed-text-v1.5-GGUF",
+  "slug": "the-peoples-solutions-nomic-embed-text-v1-5-gguf",
+  "author": "the-peoples-solutions",
+  "url": "https://huggingface.co/the-peoples-solutions/nomic-embed-text-v1.5-GGUF",
+  "created_at": "2026-10-15T20:47:49.000Z",
+  "updated_at": "2026-10-15T20:47:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "mirror",
+    "sentence-similarity",
+    "base_model:nomic-ai/nomic-embed-text-v1.5",
+    "base_model:quantized:nomic-ai/nomic-embed-text-v1.5",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "feature-extraction"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 136727040,
+  "parameters_human": "136.7M",
+  "storage_bytes": 274290560,
+  "storage_human": "274 MB",
+  "base_model": "nomic-ai/nomic-embed-text-v1.5",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/The",
+      "snippet": "The is a grammatical article in English, denoting nouns that are already or about to be mentioned, under discussion, implied or …"
+    },
+    {
+      "title": "The definite article: 'the' | LearnEnglish - British Council",
+      "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/definite-article",
+      "snippet": "Level: beginner The definite article the is the most frequent word in English. We use the definite article in front of a noun when we …"
+    },
+    {
+      "title": "MARIAGE FRÈRES - Thé Français depuis 1854",
+      "url": "https://www.mariagefreres.com/fr/",
+      "snippet": "Maison de Thé Restaurant, à Paris depuis 1854 - La plus large carte de thé au monde : Darjeeling de printemps, thé blanc d'Écosse, …"
+    },
+    {
+      "title": "Déterminant THE en anglais : quand et comment l'utiliser",
+      "url": "https://www.ispeakspokespoken.com/the-anglais/",
+      "snippet": "Oct 2, 2026 · Faut-il mettre THE ou pas devant les noms en anglais ? Je vous donne dans cet article des explications et des …"
+    },
+    {
+      "title": "THE | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/the",
+      "snippet": "THE definition: 1. used before nouns to refer to particular things or people that have already been talked about or…. Learn more."
+    }
+  ]
+}

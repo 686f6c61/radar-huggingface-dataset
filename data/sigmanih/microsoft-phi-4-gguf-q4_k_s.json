@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "sigmanih/microsoft-phi-4-GGUF-Q4_K_S",
+  "slug": "sigmanih-microsoft-phi-4-gguf-q4_k_s",
+  "author": "sigmanih",
+  "url": "https://huggingface.co/sigmanih/microsoft-phi-4-GGUF-Q4_K_S",
+  "created_at": "2026-10-15T20:16:09.000Z",
+  "updated_at": "2026-10-15T20:22:00.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "it"
+  ],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "sigma-studio",
+    "sigmanih",
+    "conversational",
+    "custom-model",
+    "llama.cpp",
+    "quantized",
+    "q4_k_s",
+    "en",
+    "it",
+    "base_model:microsoft/phi-4",
+    "base_model:quantized:microsoft/phi-4",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14659507200,
+  "parameters_human": "14.66B",
+  "storage_bytes": 8460423040,
+  "storage_human": "8.5 GB",
+  "base_model": "microsoft/phi-4",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "《法语助手》法语在线词典_法语翻译_法语输入法_法语动词变位_法 …",
+      "url": "https://www.frdic.com/",
+      "snippet": "『法语助手』权威的法语在线词典，为您提供法语翻译、法语动词变位、法语输入法、法语学校课程学习、法语题库字典、法语背单 …"
+    },
+    {
+      "title": "法语助手|法汉-汉法词典 montre是什么意思_montre的中文解释和发 …",
+      "url": "https://www.frdic.com/dicts/fr/montre",
+      "snippet": "动词变位提示：montre可能是动词 montrer 的 变位形式 n. f 1 手 montre de poche 怀 remonter sa montre 给上发条 montre en main …"
+    },
+    {
+      "title": "法语在线翻译_文本、文档、同传翻译 | AI翻译 - 法语助手",
+      "url": "https://fanyi.frdic.com/",
+      "snippet": "「法语助手」提供专业、权威的法语翻译服务，支持文本、短句、文章、主流格式文档翻译以及实时同声传译。内置多引擎选择与翻 …"
+    },
+    {
+      "title": "《法语助手》法语在线词典 | 免费提供在线法语翻译，最新支持真人发音",
+      "url": "https://legacy.frdic.com/service.aspx",
+      "snippet": "法语在线词典,提供法汉、汉法在线翻译,法语动词变位查询,支持真人发音,由权威的法语学习工具《法语助手》免费提供,Dictionnaire …"
+    },
+    {
+      "title": "法语写作助手 | AI智能写作-法语作文批改纠错-改写润色工具",
+      "url": "https://ai.frdic.com/",
+      "snippet": "法语助手旗下的AI智能写作平台，支持语法、拼写自动纠错，一键改写、润色你的法语作文。提供法语专业八级、大学法语 ..."
+    }
+  ]
+}

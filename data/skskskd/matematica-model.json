@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Skskskd/matematica-model",
+  "slug": "skskskd-matematica-model",
+  "author": "Skskskd",
+  "url": "https://huggingface.co/Skskskd/matematica-model",
+  "created_at": "2026-10-15T21:58:20.000Z",
+  "updated_at": "2026-10-15T21:58:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30339456,
+  "parameters_human": "30.3M",
+  "storage_bytes": 121365368,
+  "storage_human": "121 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

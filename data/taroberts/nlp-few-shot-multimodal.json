@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Taroberts/nlp-few-shot-multimodal",
+  "slug": "taroberts-nlp-few-shot-multimodal",
+  "author": "Taroberts",
+  "url": "https://huggingface.co/Taroberts/nlp-few-shot-multimodal",
+  "created_at": "2026-10-15T22:59:10.000Z",
+  "updated_at": "2026-10-15T22:59:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "few-shot-multimodal",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FNAC DIRECT - Abonnement abusif - Fnac - Forum Que Choisir",
+      "url": "https://forum.quechoisir.org/fnac-direct-abonnement-abusif-t87113.html",
+      "snippet": "Jan 17, 2017 · Re: FNAC DIRECT - Abonnement abusif Messagepar Therese nollet » sam. mars 18, 2017 7:59 pm j'ai le même …"
+    },
+    {
+      "title": "arnaque fnac telephone reconditionné - Forum Que Choisir",
+      "url": "https://forum.quechoisir.org/arnaque-fnac-telephone-reconditionne-t162657.html",
+      "snippet": "Jul 9, 2018 · La Fnac a purement et simplement clos ma réclamation sous prétexte que j'étais remboursé. Je ne pouvais alors plus …"
+    },
+    {
+      "title": "Site FNAC : lien [Résolu] - Forum Mozilla Firefox - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-37895666-site-fnac-lien",
+      "snippet": "Aug 13, 2023 · Résumé de la discussion Le problème concerne un lien reçu dans un email FNAC qui ne s’ouvre pas et affiche une …"
+    },
+    {
+      "title": "Comment faire pour retrouver une ancienne facture FNAC avec une …",
+      "url": "https://forums.commentcamarche.net/forum/affich-36096126-comment-faire-pour-retrouver-une-ancienne-facture-fnac-avec-une-carte-fnac",
+      "snippet": "Jun 28, 2019 · Bonjour ! J'ai acheté une Nintendo Switch en espèce a la Fnac il y a quelques mois avec en plus une carte Fnac, et je …"
+    },
+    {
+      "title": "法国电商FNAC平台介绍&市场分析",
+      "url": "https://www.zhihu.com/tardis/bd/art/333704197",
+      "snippet": "近年来，欧洲小语种市场异军突起。总部位于法国的电商巨头FNAC（福纳客），深耕法国、比利时、西班牙、葡萄牙四国，销量稳居 …"
+    }
+  ]
+}

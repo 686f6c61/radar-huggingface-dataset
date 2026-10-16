@@ -5,7 +5,7 @@
   "author": "jonasaise",
   "url": "https://huggingface.co/jonasaise/laya-swedish-preference-gate",
   "created_at": "2026-10-14T17:17:32.000Z",
-  "updated_at": "2026-10-14T18:00:30.000Z",
+  "updated_at": "2026-10-15T09:07:21.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -25,6 +25,7 @@
     "text-classification",
     "sv",
     "dataset:jonasaise/dpo-swedish-interpreted",
+    "dataset:argilla/ultrafeedback-binarized-preferences-cleaned",
     "base_model:convaiinnovations/laya",
     "base_model:finetune:convaiinnovations/laya",
     "license:apache-2.0",
@@ -32,12 +33,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 15,
   "trending_score": 0,
   "parameters": 321908998,
   "parameters_human": "321.9M",
-  "storage_bytes": 678198809,
-  "storage_human": "678 MB",
+  "storage_bytes": 1356397521,
+  "storage_human": "1.4 GB",
   "base_model": "convaiinnovations/laya",
   "formats": [
     "safetensors"

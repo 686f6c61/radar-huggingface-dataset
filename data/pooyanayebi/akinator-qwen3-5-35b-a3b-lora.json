@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "pooyanayebi/akinator-qwen3.5-35b-a3b-lora",
+  "slug": "pooyanayebi-akinator-qwen3-5-35b-a3b-lora",
+  "author": "pooyanayebi",
+  "url": "https://huggingface.co/pooyanayebi/akinator-qwen3.5-35b-a3b-lora",
+  "created_at": "2026-10-16T01:50:56.000Z",
+  "updated_at": "2026-10-16T01:52:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "reinforcement-learning",
+    "grpo",
+    "twenty-questions",
+    "akinator",
+    "games",
+    "tinker",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.5-35B-A3B",
+    "base_model:adapter:Qwen/Qwen3.5-35B-A3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10277450880,
+  "storage_human": "10.3 GB",
+  "base_model": "Qwen/Qwen3.5-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "DavidPontientKayumba/afroxlmr-kinnews-topic-classifier",
+  "slug": "davidpontientkayumba-afroxlmr-kinnews-topic-classifier",
+  "author": "DavidPontientKayumba",
+  "url": "https://huggingface.co/DavidPontientKayumba/afroxlmr-kinnews-topic-classifier",
+  "created_at": "2026-10-15T23:08:54.000Z",
+  "updated_at": "2026-10-15T23:09:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278054414,
+  "parameters_human": "278.1M",
+  "storage_bytes": 1129324752,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

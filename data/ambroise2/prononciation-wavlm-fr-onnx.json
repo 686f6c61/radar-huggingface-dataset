@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Ambroise2/prononciation-wavlm-fr-onnx",
+  "slug": "ambroise2-prononciation-wavlm-fr-onnx",
+  "author": "Ambroise2",
+  "url": "https://huggingface.co/Ambroise2/prononciation-wavlm-fr-onnx",
+  "created_at": "2026-10-15T23:19:08.000Z",
+  "updated_at": "2026-10-15T23:19:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "phoneme-recognition",
+    "french",
+    "base_model:imenba6/wavlm-large-fr-phoneme-recognition",
+    "base_model:quantized:imenba6/wavlm-large-fr-phoneme-recognition",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 632217322,
+  "storage_human": "632 MB",
+  "base_model": "imenba6/wavlm-large-fr-phoneme-recognition",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

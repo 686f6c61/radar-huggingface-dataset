@@ -5,7 +5,7 @@
   "author": "ZTE-AIM",
   "url": "https://huggingface.co/ZTE-AIM/NebulaTele",
   "created_at": "2026-10-15T02:57:31.000Z",
-  "updated_at": "2026-10-15T13:04:28.000Z",
+  "updated_at": "2026-10-16T02:01:01.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,7 +21,7 @@
   "trending_score": 0,
   "parameters": 27781427952,
   "parameters_human": "27.78B",
-  "storage_bytes": 55582995943,
+  "storage_bytes": 55603554790,
   "storage_human": "55.6 GB",
   "base_model": null,
   "formats": [

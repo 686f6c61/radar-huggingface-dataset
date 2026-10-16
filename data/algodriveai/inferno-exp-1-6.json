@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "AlgoDriveAI/Inferno-Exp-1.6",
+  "slug": "algodriveai-inferno-exp-1-6",
+  "author": "AlgoDriveAI",
+  "url": "https://huggingface.co/AlgoDriveAI/Inferno-Exp-1.6",
+  "created_at": "2026-10-15T21:20:41.000Z",
+  "updated_at": "2026-10-15T21:57:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "inferno",
+    "text-generation",
+    "small-language-model",
+    "gqa",
+    "custom_code",
+    "arithmark",
+    "en",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 393610240,
+  "parameters_human": "393.6M",
+  "storage_bytes": 1574954099,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Arithmetic word problems (continuation log-likelihood)",
+      "dataset": "ArithMark 3.0",
+      "metric": "Length-normalized accuracy",
+      "value": 83.1
+    },
+    {
+      "task": "Arithmetic word problems (continuation log-likelihood)",
+      "dataset": "ArithMark 3.0",
+      "metric": "Raw continuation accuracy",
+      "value": 83.5
+    },
+    {
+      "task": "Integer arithmetic (continuation log-likelihood)",
+      "dataset": null,
+      "metric": "Accuracy",
+      "value": 56.88
+    },
+    {
+      "task": "Commonsense sentence completion",
+      "dataset": "HellaSwag",
+      "metric": "Normalized accuracy (0-shot)",
+      "value": 29.8
+    },
+    {
+      "task": "Science question answering",
+      "dataset": "ARC-Easy",
+      "metric": "Normalized accuracy (0-shot)",
+      "value": 47.01
+    },
+    {
+      "task": "Science question answering",
+      "dataset": "ARC-Challenge",
+      "metric": "Normalized accuracy (0-shot)",
+      "value": 30.12
+    },
+    {
+      "task": "Physical commonsense reasoning",
+      "dataset": "PIQA",
+      "metric": "Normalized accuracy (0-shot)",
+      "value": 60.45
+    }
+  ],
+  "sources": []
+}

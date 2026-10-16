@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "GrillingWithJorge/gemma-4-12B-it-oQ8e-fp16",
+  "slug": "grillingwithjorge-gemma-4-12b-it-oq8e-fp16",
+  "author": "GrillingWithJorge",
+  "url": "https://huggingface.co/GrillingWithJorge/gemma-4-12B-it-oQ8e-fp16",
+  "created_at": "2026-10-15T20:30:29.000Z",
+  "updated_at": "2026-10-15T20:44:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4_unified",
+    "oq",
+    "quantized",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11959730224,
+  "parameters_human": "11.96B",
+  "storage_bytes": 12843607788,
+  "storage_human": "12.8 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JanitorAI Official - Reddit",
+      "url": "https://www.reddit.com/r/JanitorAI_Official/",
+      "snippet": "I've seen it on C.AI and found that interesting but I never really liked C.AI in general. I'm loving JanitorAI however and I wish I could …"
+    },
+    {
+      "title": "Does anyone know of any place where I can find templates to ... - Reddit",
+      "url": "https://www.reddit.com/r/JanitorAI_Official/comments/1dn7ycg/does_anyone_know_of_any_place_where_i_can_find/",
+      "snippet": "Jun 24, 2024 · Does anyone know of any place where I can find templates to customize my profile?"
+    },
+    {
+      "title": "Is Janitor.AI Good? : r/CharacterAIrunaways - Reddit",
+      "url": "https://www.reddit.com/r/CharacterAIrunaways/comments/1fkxqqk/is_janitorai_good/",
+      "snippet": "Janitor.AI is often considered a good alternative to Character.AI, especially for those who are frustrated with the strict censorship on …"
+    },
+    {
+      "title": "AI pic generator : r/JanitorAI_Official - Reddit",
+      "url": "https://www.reddit.com/r/JanitorAI_Official/comments/19b1w7e/ai_pic_generator/",
+      "snippet": "Jan 20, 2024 · So, I'm trying to make my own OCs, can any of you suggest me website or good app for AI pic generator? Sure can …"
+    },
+    {
+      "title": "SITE UPDATES - : r/JanitorAI_Official - Reddit",
+      "url": "https://www.reddit.com/r/JanitorAI_Official/comments/1bik7vp/site_updates/",
+      "snippet": "Copy link Go to JanitorAI_Official r/JanitorAI_Official r/JanitorAI_Official Welcome to the Janitor AI sub! https://janitorai.com …"
+    }
+  ]
+}

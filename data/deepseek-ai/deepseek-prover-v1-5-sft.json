@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "deepseek-ai/DeepSeek-Prover-V1.5-SFT",
+  "slug": "deepseek-ai-deepseek-prover-v1-5-sft",
+  "author": "deepseek-ai",
+  "url": "https://huggingface.co/deepseek-ai/DeepSeek-Prover-V1.5-SFT",
+  "created_at": "2024-08-15T14:36:27.000Z",
+  "updated_at": "2024-08-29T12:14:35.000Z",
+  "license": "deepseek-license",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "arxiv:2408.08152",
+    "base_model:deepseek-ai/DeepSeek-Prover-V1.5-Base",
+    "base_model:finetune:deepseek-ai/DeepSeek-Prover-V1.5-Base",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 27,
+  "downloads_30d": 854,
+  "trending_score": 13,
+  "parameters": 6910365696,
+  "parameters_human": "6.91B",
+  "storage_bytes": 13820763136,
+  "storage_human": "13.8 GB",
+  "base_model": "deepseek-ai/DeepSeek-Prover-V1.5-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeepSeek | Into the Unknown",
+      "url": "https://www.deepseek.com/",
+      "snippet": "DeepSeek is an AI research company focused on building world-leading general artificial intelligence. We develop and open-source …"
+    },
+    {
+      "title": "DeepSeek | API Platform",
+      "url": "https://www.deepseek.com/en/platform/",
+      "snippet": "Build with DeepSeek API Boost enterpr Build new products, experiences, and workflows with the DeepSeek V4 series"
+    },
+    {
+      "title": "DeepSeek",
+      "url": "https://cdn.deepseek.com/",
+      "snippet": "Chat with DeepSeek AI – your intelligent assistant for coding, content creation, file reading, and more."
+    },
+    {
+      "title": "DeepSeek - Into the Unknown",
+      "url": "https://chat.deepseek.com/sign_in",
+      "snippet": "Chat with DeepSeek AI – your intelligent assistant for coding, content creation, file reading, and more."
+    },
+    {
+      "title": "DeepSeek | API 开放平台",
+      "url": "https://www.deepseek.com/platform/",
+      "snippet": "DeepSeek-V4-Pro 百万 tokens 输入（缓存命中） 0.025 元 输入（缓存未命中） 3 元 输出 6 元 自动缓存，缓存命中价格直降 支持 1M …"
+    }
+  ]
+}

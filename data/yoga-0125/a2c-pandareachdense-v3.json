@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "yoga-0125/a2c-PandaReachDense-v3",
+  "slug": "yoga-0125-a2c-pandareachdense-v3",
+  "author": "yoga-0125",
+  "url": "https://huggingface.co/yoga-0125/a2c-PandaReachDense-v3",
+  "created_at": "2026-10-15T22:40:39.000Z",
+  "updated_at": "2026-10-16T02:03:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "PandaReachDense-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1471144,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yoga — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Yoga",
+      "snippet": "Les quatre voies (mārga) traditionnelles majeures de yoga sont le jnana yoga, bhakti yoga, karma yoga et raja yoga. Elles sont …"
+    },
+    {
+      "title": "Tout savoir sur le yoga : principe, bienfaits, types",
+      "url": "https://www.santemagazine.fr/medecines-alternatives/pratiques-orientales/yoga/tout-savoir-sur-le-yoga-principe-bienfaits-types-177057",
+      "snippet": "May 16, 2024 · Les exercices de yoga mêlent méditation, gymnastique douce, postures et respiration. Objectif : permettre de libérer …"
+    },
+    {
+      "title": "Yoga débutant Séance complète de 30 minutes pour tout le corps",
+      "url": "https://www.youtube.com/watch?v=_nvdVJBLj-E",
+      "snippet": "Apr 2, 2024 · Cette vidéo de 30 minutes est parfaite pour étirer, renforcer, tonifier et détendre tout ton corps. Abonne-toi pour plus de …"
+    },
+    {
+      "title": "Adam Yoga – Cours de yoga à Herblay",
+      "url": "https://www.assoadam.fr/",
+      "snippet": "Les sources d’inquiétude pour soi, pour nos proches, pour la planète sont nombreuses et nous fragilisent. L’association ADAM vous …"
+    },
+    {
+      "title": "Yoga Santé - Ganapati Yoga Herblay",
+      "url": "https://www.ganapatiyoga.com/",
+      "snippet": "Ingrid Toumi Geffroy, professeur de yoga spécialisée en yoga thérapie, propose un yoga adapté à tout public et âge. Des séances …"
+    }
+  ]
+}

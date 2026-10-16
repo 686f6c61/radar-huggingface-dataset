@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "TheSauceman/microduck-sprint-2m-fwd4",
+  "slug": "thesauceman-microduck-sprint-2m-fwd4",
+  "author": "TheSauceman",
+  "url": "https://huggingface.co/TheSauceman/microduck-sprint-2m-fwd4",
+  "created_at": "2026-10-15T20:23:59.000Z",
+  "updated_at": "2026-10-15T20:24:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5643404,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Daily Sex Horoscopes - Astrology Answers",
+      "url": "https://www.astrologyanswers.com/horoscopes/sex/",
+      "snippet": "Discover your daily sex horoscope and find out what astrology predicts for your love life today. Get insights to enhance your intimate …"
+    },
+    {
+      "title": "Gemini的模型是不是已经快被淘汰了？ - 知乎",
+      "url": "https://www.zhihu.com/question/2050527290925248637",
+      "snippet": "Gemini 能干一个奇妙的事情，一个50MB，214页，图+文都有的PDF文档，11万 token，上传后可以在10秒内读完，并且你询问后看 …"
+    },
+    {
+      "title": "Gemini Zodiac Sign - Astrology Answers",
+      "url": "https://www.astrologyanswers.com/zodiac-signs/gemini/",
+      "snippet": "Gemini has two sides. Such is the nature of the “twins,” the symbol that represents this sign. This sign has both plenty. of energy and …"
+    },
+    {
+      "title": "如何评价Google刚刚发布的 Gemini Diffusion? 会代替自回归模型成为 …",
+      "url": "https://www.zhihu.com/question/1908479621466396378",
+      "snippet": "Gemini Diffusion - Google DeepMind 大家好，我是中国人民大学高瓴人工智能学院李崇轩，因为做的非常相关，来回答一下这个问题 …"
+    },
+    {
+      "title": "《记忆革命：Gemini 1.5如何让Transformer突破百万级上下文枷锁》",
+      "url": "https://bbs.huaweicloud.com/blogs/453371",
+      "snippet": "May 29, 2025 · 而Google DeepMind的Gemini 1.5却打破了这一宿命，首次实现百万级token的上下文处理能力，相当于让AI同时阅读 …"
+    }
+  ]
+}

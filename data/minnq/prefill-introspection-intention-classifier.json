@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "minnq/prefill-introspection-intention-classifier",
+  "slug": "minnq-prefill-introspection-intention-classifier",
+  "author": "minnq",
+  "url": "https://huggingface.co/minnq/prefill-introspection-intention-classifier",
+  "created_at": "2026-10-15T23:23:29.000Z",
+  "updated_at": "2026-10-15T23:24:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "llm-safety",
+    "introspection",
+    "jailbreak",
+    "adversarial-prefill",
+    "self-report",
+    "en",
+    "arxiv:2606.23671",
+    "base_model:FacebookAI/roberta-base",
+    "base_model:finetune:FacebookAI/roberta-base",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124647170,
+  "parameters_human": "124.6M",
+  "storage_bytes": 498612824,
+  "storage_human": "499 MB",
+  "base_model": "FacebookAI/roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

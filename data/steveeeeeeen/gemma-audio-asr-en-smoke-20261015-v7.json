@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Steveeeeeeen/gemma-audio-asr-en-smoke-20261015-v7",
+  "slug": "steveeeeeeen-gemma-audio-asr-en-smoke-20261015-v7",
+  "author": "Steveeeeeeen",
+  "url": "https://huggingface.co/Steveeeeeeen/gemma-audio-asr-en-smoke-20261015-v7",
+  "created_at": "2026-10-15T21:52:35.000Z",
+  "updated_at": "2026-10-15T21:58:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "ctc",
+    "audio",
+    "smol-audio",
+    "automatic-speech-recognition",
+    "en",
+    "dataset:espnet/yodas-granary",
+    "base_model:google/embeddinggemma-2",
+    "base_model:finetune:google/embeddinggemma-2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2528296839,
+  "storage_human": "2.5 GB",
+  "base_model": "google/embeddinggemma-2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Overleaf, Online LaTeX Editor",
+      "url": "https://www.overleaf.com/",
+      "snippet": "An online LaTeX editor that’s easy to use. No installation, real-time collaboration, version control, hundreds of LaTeX templates, and …"
+    },
+    {
+      "title": "University of California, Berkeley - Overleaf, Online LaTeX Editor",
+      "url": "https://www.overleaf.com/edu/berkeley",
+      "snippet": "An online LaTeX editor that’s easy to use. No installation, real-time collaboration, version control, hundreds of LaTeX templates, and …"
+    },
+    {
+      "title": "Templates, Examples and Articles written in LaTeX - Overleaf",
+      "url": "https://pt.overleaf.com/gallery/tagged/presentation",
+      "snippet": "Um editor de LaTeX online fácil de usar. Sem instalação, colaboração em tempo real, controle de versões, centenas de modelos …"
+    },
+    {
+      "title": "Politecnico di Milano - Overleaf, Editor LaTeX online",
+      "url": "https://it.overleaf.com/edu/polimi",
+      "snippet": "Politecnico di Milano is providing Overleaf premium features for all students, faculty and staff who would like to use a collaborative, …"
+    },
+    {
+      "title": "Theorems and proofs - Overleaf, Editor de LaTeX online",
+      "url": "https://es.overleaf.com/learn/latex/Theorems_and_proofs",
+      "snippet": "An online LaTeX editor that’s easy to use. No installation, real-time collaboration, version control, hundreds of LaTeX templates, and …"
+    }
+  ]
+}

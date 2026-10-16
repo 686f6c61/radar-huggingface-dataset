@@ -5,7 +5,7 @@
   "author": "shabieh2",
   "url": "https://huggingface.co/shabieh2/1015_cluster_trunc_2_epoch",
   "created_at": "2026-10-14T15:51:49.000Z",
-  "updated_at": "2026-10-14T15:51:54.000Z",
+  "updated_at": "2026-10-15T11:58:32.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -25,12 +25,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 9,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 866591761,
-  "storage_human": "867 MB",
+  "storage_bytes": 1705053625,
+  "storage_human": "1.7 GB",
   "base_model": "unsloth/Muse-Glimmer-30B",
   "formats": [
     "safetensors"

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Rology/rad-decider",
+  "slug": "rology-rad-decider",
+  "author": "Rology",
+  "url": "https://huggingface.co/Rology/rad-decider",
+  "created_at": "2026-10-15T21:37:18.000Z",
+  "updated_at": "2026-10-15T21:37:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "radiology",
+    "medical",
+    "decision-support",
+    "workflow",
+    "calibrated",
+    "lora",
+    "qwen3.5",
+    "en",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 87745190,
+  "storage_human": "88 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

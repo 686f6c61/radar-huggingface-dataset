@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Steerix-org/robo-jev-2b-lora",
+  "slug": "steerix-org-robo-jev-2b-lora",
+  "author": "Steerix-org",
+  "url": "https://huggingface.co/Steerix-org/robo-jev-2b-lora",
+  "created_at": "2026-10-12T03:57:47.000Z",
+  "updated_at": "2026-10-16T00:04:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "peft",
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "robotics",
+    "decision-making",
+    "physical-reasoning",
+    "calibration",
+    "lora",
+    "qwen3.5",
+    "simulation",
+    "robo-jev",
+    "en",
+    "ko",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:adapter:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 138527132,
+  "storage_human": "139 MB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Steerix-org/robo-jev-2b-lora · Hugging Face",
+      "url": "https://huggingface.co/Steerix-org/robo-jev-2b-lora",
+      "snippet": "Steerix-org / robo-jev-2b-lora Like 0 Follow Steerix 1 Robotics PEFT Safetensors English Korean decision-making physical-reasoning calibration lora qwen3.5 simulation robo-jev License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Steerix-org/robo-jev-2b · Hugging Face",
+      "url": "https://huggingface.co/Steerix-org/robo-jev-2b",
+      "snippet": "Steerix-org / robo-jev-2b Like 0 Follow Steerix 1 Robotics Transformers Safetensors English Korean qwen3_5_text text-generation decision-making physical-reasoning calibration lora qwen3.5 simulation robo-jev License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - STEERIX-home/robo-jev",
+      "url": "https://github.com/STEERIX-home/robo-jev",
+      "snippet": "A small, fast decision model for robots — specialized in physical judgment. robo-jev reads a short text of what a robot senses, answers the questions that matter in the moment — will the glass tip if I brake now? does the person reach my path first? did the part seat? — and returns a calibrated probability for every answer in one forward pass of a 2B model. General decision models read ..."
+    },
+    {
+      "title": "GitHub - STEERIX-home/robo-jev",
+      "url": "https://github.com/STEERIX-home/robo-jev/tree/main",
+      "snippet": "robojev is a research project by Steerix Robotics: a learned judgment model that decides, many times per second, what a robot should do next — which action to commit to, whether to stop, whether to grip, which path and speed — from a structured description of the world, without generating text."
+    },
+    {
+      "title": "robojev — A benchmark for real-time physical judgment",
+      "url": "https://robo-jev.dev/",
+      "snippet": "Same robots, same situations, same controllers. Only the decision model changes. Pick a model and watch it decide, live in your browser. robojev bench is the benchmark; Jev, d1, Decision-1, GPT-6 Luna, Solar Flash and robo-jev are models you can run in it."
+    }
+  ]
+}

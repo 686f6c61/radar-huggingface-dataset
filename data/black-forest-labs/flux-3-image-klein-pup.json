@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "black-forest-labs/flux-3-image-klein-pup",
+  "slug": "black-forest-labs-flux-3-image-klein-pup",
+  "author": "black-forest-labs",
+  "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-pup",
+  "created_at": "2026-10-14T20:40:29.000Z",
+  "updated_at": "2026-10-15T22:59:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "prompt-upsampling",
+    "prompt-rewriting",
+    "text-to-image",
+    "image-editing",
+    "flux",
+    "flux-3",
+    "black-forest-labs",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 29,
+  "downloads_30d": 13,
+  "trending_score": 29,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839711717,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Passez au meilleur de la tech reconditionnée. | Back Market",
+      "url": "https://www.backmarket.fr/fr-fr?msockid=2be36299c2ca650408a4756ac3a264d8",
+      "snippet": "Profitez d'articles reconditionnés sur Back Market, moins cher que le neuf ! Livraison standard offerte - Garantie contractuelle de 12 …"
+    },
+    {
+      "title": "Black - Simple English Wikipedia, the free encyclopedia",
+      "url": "https://simple.wikipedia.org/wiki/Black",
+      "snippet": "No color can have the same level of dark pigmentation without turning itself into black. As the visual perception of an object's color is …"
+    },
+    {
+      "title": "Black M - YouTube",
+      "url": "https://www.youtube.com/channel/UCa_m88y-YP42wOdoYaIk6og",
+      "snippet": "Black M - La Légende Black Play all Retrouve toutes les vidéos officielles de l'album La Légende Black ! Album disponible : …"
+    },
+    {
+      "title": "Black - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Black",
+      "snippet": "Black ... Black is a color [2] that results from the absence or complete absorption of visible light. It is an achromatic color, without …"
+    },
+    {
+      "title": "Black (2008 film) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Black_(2008_film)",
+      "snippet": "Synopsis Black, a Frenchman with African roots, commits in France a heist with some complices. The early arrival of alarmed police …"
+    }
+  ]
+}

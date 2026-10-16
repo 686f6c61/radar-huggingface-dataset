@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "punepatel/poolformer-generation-checkpoint",
+  "slug": "punepatel-poolformer-generation-checkpoint",
+  "author": "punepatel",
+  "url": "https://huggingface.co/punepatel/poolformer-generation-checkpoint",
+  "created_at": "2026-10-15T20:13:45.000Z",
+  "updated_at": "2026-10-15T20:13:52.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "poolformer",
+    "pytorch",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Colissimo - Tous les Services et Produits - La Poste",
+      "url": "https://www.laposte.fr/colissimo",
+      "snippet": "Avec Colissimo, envoyez vos colis depuis chez vous. Vous pouvez aussi suivre ou modifier la livraison. Découvrez tous les services …"
+    },
+    {
+      "title": "Envoyer un colis - Colissimo en Ligne - La Poste",
+      "url": "https://www.laposte.fr/colissimo-en-ligne",
+      "snippet": "Sep 17, 2026 · Envoyer un colis avec Colissimo en ligne, c’est simple et rapide. En quelques clics, vous pouvez estimer le prix, …"
+    },
+    {
+      "title": "Colissimo – expert de la livraison rapide et responsable",
+      "url": "https://www.colissimo.entreprise.laposte.fr/",
+      "snippet": "Nous recherchions une solution fiable, reconnue et capable de nous accompagner partout en France. Colissimo s’est imposé par sa …"
+    },
+    {
+      "title": "Colissimo - Suivi de colis",
+      "url": "https://www.laposte-colissimo.fr/",
+      "snippet": "Vos données sont traitées de manière sécurisée par Colissimo, filiale du Groupe La Poste."
+    },
+    {
+      "title": "Suivre une lettre, un Colissimo ou un Chronopost - La Poste",
+      "url": "https://www.laposte.fr/outils/suivre-vos-envois",
+      "snippet": "Les e-mails Colissimo se réinventent ! Les notifications e-mails Colissimo font peau neuve ! Un nouveau design pour vous informer …"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "unsloth/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-GGUF",
+  "slug": "unsloth-nvidia-nemotron-3-5-super-vl-120b-a12b-gguf",
+  "author": "unsloth",
+  "url": "https://huggingface.co/unsloth/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-GGUF",
+  "created_at": "2026-10-14T15:29:05.000Z",
+  "updated_at": "2026-10-15T14:55:06.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "ja"
+  ],
+  "tags": [
+    "gguf",
+    "nvidia",
+    "pytorch",
+    "nemotron-3.5",
+    "unsloth",
+    "image-text-to-text",
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "ja",
+    "dataset:nvidia/nemotron-post-training-v3",
+    "dataset:nvidia/nemotron-pre-training-datasets",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16",
+    "base_model:quantized:nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 24,
+  "downloads_30d": 0,
+  "trending_score": 23,
+  "parameters": 1632922404,
+  "parameters_human": "1.63B",
+  "storage_bytes": 1202218372386,
+  "storage_human": "1202.2 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Unsloth - Run and Train Models Locally",
+      "url": "https://unsloth.ai/",
+      "snippet": "Unsloth is an open-source, no-code deskop UI for training and running open models on your local hardware."
+    },
+    {
+      "title": "GitHub - unslothai/unsloth: Local UI to run and train LLMs and ...",
+      "url": "https://github.com/unslothai/unsloth",
+      "snippet": "The core Unsloth package remains licensed under Apache 2.0, while certain optional components, such as the Unsloth Studio UI are …"
+    },
+    {
+      "title": "Introducing Unsloth Studio | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/new/studio",
+      "snippet": "Unsloth Studio lets LLMs run Bash and Python, not just JavaScript with bypass permissions. It also sandboxes programs like Claude …"
+    },
+    {
+      "title": "unsloth (Unsloth AI) - Hugging Face",
+      "url": "https://huggingface.co/unsloth",
+      "snippet": "Image-Text-to-Text • 177B • Updated 7 days ago • 1.26M • 1.18k Text Generation • 321B • Updated 7 days ago • 936k • 478 Text …"
+    },
+    {
+      "title": "Releases · unslothai/unsloth - GitHub",
+      "url": "https://github.com/unslothai/unsloth/releases",
+      "snippet": "Major Unsloth workflow upgrades: improved files, chat history, browser agent and document handling. Improved hardware …"
+    }
+  ]
+}

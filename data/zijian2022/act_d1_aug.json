@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "zijian2022/act_d1_aug",
+  "slug": "zijian2022-act_d1_aug",
+  "author": "zijian2022",
+  "url": "https://huggingface.co/zijian2022/act_d1_aug",
+  "created_at": "2026-10-16T01:43:16.000Z",
+  "updated_at": "2026-10-16T01:43:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:zijian2022/fanuc_er4ia_stack_red_on_blue_d1_fixwrist",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51609223,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206481548,
+  "storage_human": "206 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

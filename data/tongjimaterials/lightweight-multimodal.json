@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "tongjimaterials/lightweight-multimodal",
+  "slug": "tongjimaterials-lightweight-multimodal",
+  "author": "tongjimaterials",
+  "url": "https://huggingface.co/tongjimaterials/lightweight-multimodal",
+  "created_at": "2026-10-15T20:42:47.000Z",
+  "updated_at": "2026-10-15T20:42:54.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "lightweight-multimodal",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "node.js - Why is \"npm install\" really slow? - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/41524903/why-is-npm-install-really-slow",
+      "snippet": "Jan 8, 2017 · Is there any more meaningful output when you do npm --loglevel=silly install?"
+    },
+    {
+      "title": "发现朋友有自杀倾向，该怎样对他进行危机干预？ - 知乎",
+      "url": "https://www.zhihu.com/question/53960397",
+      "snippet": "xnxx。 你知道Facebook那个谁什么类型么？ ta说扎克伯格？ 我笑着说，对对，就他，他是xnxx。 有些激动地一连给ta说了好几个N …"
+    },
+    {
+      "title": "空调是否只有在换气模式下才能更换室内的空气？ - 知乎",
+      "url": "https://www.zhihu.com/question/22257659",
+      "snippet": "，喜欢分享家电知识，拆过不少净水器和空调。 正好看到题主的问题，下面一一解答一下。 问题1：空调是否只有换气模式下才能更 …"
+    },
+    {
+      "title": "How does obfuscated code execute a built in function in Lua",
+      "url": "https://stackoverflow.com/questions/79124153/how-does-obfuscated-code-execute-a-built-in-function-in-lua",
+      "snippet": "Oct 25, 2024 · But the obfuscated code does not have any references to print to it, so I think the obfuscator have done something …"
+    },
+    {
+      "title": "电脑上有哪些好用的炒股软件？ - 知乎",
+      "url": "https://www.zhihu.com/question/359148105",
+      "snippet": "电脑股票交易软件操作和使用上要比手机好用很多。 主流的券商电脑端大部分都是由同花顺、通达信、 大智慧 的内核软件，套壳券 …"
+    }
+  ]
+}

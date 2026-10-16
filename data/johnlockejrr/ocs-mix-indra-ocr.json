@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "johnlockejrr/ocs-mix-indra-ocr",
+  "slug": "johnlockejrr-ocs-mix-indra-ocr",
+  "author": "johnlockejrr",
+  "url": "https://huggingface.co/johnlockejrr/ocs-mix-indra-ocr",
+  "created_at": "2026-10-15T21:18:07.000Z",
+  "updated_at": "2026-10-15T21:43:49.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": "onnx",
+  "languages": [
+    "cu",
+    "orv"
+  ],
+  "tags": [
+    "onnx",
+    "ocr",
+    "htr",
+    "church-slavonic",
+    "old-church-slavonic",
+    "cyrillic",
+    "historical-documents",
+    "fine-tune",
+    "indra-ocr",
+    "image-to-text",
+    "cu",
+    "orv",
+    "base_model:datalab-to/indra-ocr",
+    "base_model:quantized:datalab-to/indra-ocr",
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 39953235,
+  "storage_human": "40 MB",
+  "base_model": "datalab-to/indra-ocr",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

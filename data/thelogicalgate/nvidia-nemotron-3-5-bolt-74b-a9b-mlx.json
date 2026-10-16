@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "thelogicalgate/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-MLX",
+  "slug": "thelogicalgate-nvidia-nemotron-3-5-bolt-74b-a9b-mlx",
+  "author": "thelogicalgate",
+  "url": "https://huggingface.co/thelogicalgate/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-MLX",
+  "created_at": "2026-10-15T23:12:47.000Z",
+  "updated_at": "2026-10-16T00:05:39.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "ja"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "nemotron_h",
+    "nemotron",
+    "nemotron-3.5",
+    "lilicorr",
+    "image-text-to-text",
+    "conversational",
+    "custom_code",
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "ja",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr",
+    "base_model:quantized:nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr",
+    "license:other",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 76579579912,
+  "parameters_human": "76.58B",
+  "storage_bytes": 46509428441,
+  "storage_human": "46.5 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16, nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NEW Videos",
+      "url": "https://viralxxxporn.com/categories/new/",
+      "snippet": "Explore a wide range of arousing and adventurous nude videos here at ViralXXXPorn.com."
+    },
+    {
+      "title": "Porno Viral / Viral Videos Porno XXX | XOrgasmo.com",
+      "url": "https://xorgasmo.com/category/viral-videos-porno/",
+      "snippet": "Porno Viral gratis en XOrgasmo.com, la más amplia variedad de videos porno virales XXX la encontraras aquí variados por …"
+    },
+    {
+      "title": "Viral sex Porn Videos - iWank XXX",
+      "url": "https://iwank.xxx/viral-sex-videos",
+      "snippet": "Free XXX Sites 4Porn LargePornFilms XXXHell Lingerie Mania Sex3 TonicMovies AlphaErotic xBison GoldPornFilms Porn-Plus.com …"
+    },
+    {
+      "title": "Latest viral sex video | Desi xxx viral leaks",
+      "url": "https://www.desitales2.com/videos/tag/viral-sex-video/",
+      "snippet": "Watch hottest and trending viral sex video and leaked celebrity sex tapes. Stop checking empty links and enjoy the most demanded …"
+    },
+    {
+      "title": "Amateur Videos - Viral XXX Porn",
+      "url": "https://viralxxxporn.com/categories/amateur/",
+      "snippet": "Explore a wide range of arousing and adventurous nude videos here at ViralXXXPorn.com."
+    }
+  ]
+}

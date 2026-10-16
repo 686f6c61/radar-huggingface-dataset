@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "projectsidewalk/sidewalk-tagger-ai-surfaceproblem",
+  "slug": "projectsidewalk-sidewalk-tagger-ai-surfaceproblem",
+  "author": "projectsidewalk",
+  "url": "https://huggingface.co/projectsidewalk/sidewalk-tagger-ai-surfaceproblem",
+  "created_at": "2026-10-15T22:08:24.000Z",
+  "updated_at": "2026-10-15T22:08:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "accessibility",
+    "sidewalks",
+    "multi-label-classification",
+    "project-sidewalk",
+    "image-classification",
+    "dataset:projectsidewalk/sidewalk-tagger-ai-validated",
+    "base_model:facebook/dinov2-with-registers-base",
+    "base_model:finetune:facebook/dinov2-with-registers-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 347211418,
+  "storage_human": "347 MB",
+  "base_model": "facebook/dinov2-with-registers-base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mini-Fit Sr. Connectors - Molex",
+      "url": "https://www.molex.com/en-us/products/connectors/wire-to-board-connectors/mini-fit-sr-connectors",
+      "snippet": "Molex Mini-Fit Sr. products represent a series of power connectors known for their high-current and high-density features, designed …"
+    },
+    {
+      "title": "Mini-Fit Connectors - Molex",
+      "url": "https://www.molex.com/en-us/products/connectors/wire-to-board-connectors/mini-fit-connectors",
+      "snippet": "The Mini-Fit Sigma Low Mating Force Terminals improve overall assembly ergonomics for production line operators to reduce injury …"
+    },
+    {
+      "title": "Mini-Fit Sr. Power Connectors - Molex | DigiKey",
+      "url": "https://www.digikey.com/en/product-highlight/m/molex/mini-fit-sr-power-connectors?msockid=37ab3109245d62b80af526fa25706333",
+      "snippet": "Jun 11, 2020 · Molex's Mini-Fit Sr. compact 10 mm high-power connector system is available in silver (Ag) or gold (Au) and is …"
+    },
+    {
+      "title": "Mini-Fit Sr. Connectors – Mouser",
+      "url": "https://www.mouser.com/en/c/connectors/?tradename=Mini-Fit%20Sr.",
+      "snippet": "Mini-Fit Sr. Connectors are available at Mouser Electronics. Mouser offers inventory, pricing, & datasheets for Mini-Fit Sr. Connectors."
+    },
+    {
+      "title": "Mini-Fit Sr. Power Connectors - Molex | Mouser",
+      "url": "https://www.mouser.com/en/new/molex/molex-minifit-sr-connectors",
+      "snippet": "Sep 1, 2015 · Molex Mini-Fit Sr. Power Connectors support up to 50.0A current with superb electrical reliability and significant cost …"
+    }
+  ]
+}

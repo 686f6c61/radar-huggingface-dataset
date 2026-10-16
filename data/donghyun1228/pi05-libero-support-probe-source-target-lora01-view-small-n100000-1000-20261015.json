@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Donghyun1228/pi05-libero-support-probe-source-target-lora01-view-small-n100000-1000-20261015",
+  "slug": "donghyun1228-pi05-libero-support-probe-source-target-lora01-view-small-n100000-1000-20261015",
+  "author": "Donghyun1228",
+  "url": "https://huggingface.co/Donghyun1228/pi05-libero-support-probe-source-target-lora01-view-small-n100000-1000-20261015",
+  "created_at": "2026-10-15T20:39:30.000Z",
+  "updated_at": "2026-10-15T20:40:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "libero",
+    "inverse-dynamics",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6862741496,
+  "storage_human": "6.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Health Coach - Google Health",
+      "url": "https://www.healthapp.google/google-health-coach/",
+      "snippet": "Google Health Coach supports you with personalized, proactive guidance that brings together your fitness, sleep, and overall …"
+    },
+    {
+      "title": "Google Health Coach - Google Health",
+      "url": "https://healthapp.google/intl/en_in/google-health-coach/",
+      "snippet": "Google Health Coach supports you with personalised, proactive guidance that brings together your fitness, sleep and overall …"
+    },
+    {
+      "title": "Google Health Coach is now available to Premium users",
+      "url": "https://blog.google/products-and-platforms/products/google-health/google-health-coach/",
+      "snippet": "May 7, 2026 · Google Health Coach, now available globally, provides personalized insights on workouts, sleep, recovery and wellbeing."
+    },
+    {
+      "title": "How we are building the personal health coach - Google Research",
+      "url": "https://research.google/blog/how-we-are-building-the-personal-health-coach/",
+      "snippet": "Oct 27, 2025 · Shwetak Patel, Distinguished Scientist & Health Technologies Lead, and Florence Thng, Health Intelligence PM …"
+    },
+    {
+      "title": "Google Health Coach Wants to Provide the Most Personalized AI",
+      "url": "https://www.cnet.com/health/google-health-coach/",
+      "snippet": "May 7, 2026 · Powered by Gemini AI, Google’s all-in-one AI wellness coach was designed to personalize your workouts and health …"
+    }
+  ]
+}

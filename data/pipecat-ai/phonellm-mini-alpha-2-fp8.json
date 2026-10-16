@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "pipecat-ai/phonellm-mini-alpha-2-fp8",
+  "slug": "pipecat-ai-phonellm-mini-alpha-2-fp8",
+  "author": "pipecat-ai",
+  "url": "https://huggingface.co/pipecat-ai/phonellm-mini-alpha-2-fp8",
+  "created_at": "2026-10-15T21:35:59.000Z",
+  "updated_at": "2026-10-15T22:24:17.000Z",
+  "license": "bsd-2-clause",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nemotron_h",
+    "text-generation",
+    "nemotron",
+    "mixture-of-experts",
+    "voice-agent",
+    "phone",
+    "tool-use",
+    "function-calling",
+    "conversational",
+    "pipecat",
+    "modelopt",
+    "fp8",
+    "custom_code",
+    "en",
+    "base_model:pipecat-ai/phonellm-mini-alpha-2",
+    "base_model:quantized:pipecat-ai/phonellm-mini-alpha-2",
+    "license:bsd-2-clause",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31577940288,
+  "parameters_human": "31.58B",
+  "storage_bytes": 32699187124,
+  "storage_human": "32.7 GB",
+  "base_model": "pipecat-ai/phonellm-mini-alpha-2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.ca/",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    },
+    {
+      "title": "English-French Dictionary - WordReference.com",
+      "url": "https://www.wordreference.com/enfr/",
+      "snippet": "The WordReference English-French Dictionary is a living, growing dictionary. It contains over 95,613 terms and 229,377 translations …"
+    },
+    {
+      "title": "Translate from French to English with DeepL",
+      "url": "https://www.deepl.com/en/translator/l/fr/en",
+      "snippet": "Translate texts & files instantly from French to English with the world’s most accurate translator. Millions translate with DeepL every day."
+    },
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.com/?hl=fr",
+      "snippet": "Le service sans frais de Google traduit instantanément des mots, des expressions et des pages Web entre le français et plus de 100 …"
+    },
+    {
+      "title": "Linguee | English-French dictionary",
+      "url": "https://www.linguee.com/english-french",
+      "snippet": "Works wherever you're reading or writing, with additional time-saving features. Find French translations in our English-French …"
+    }
+  ]
+}

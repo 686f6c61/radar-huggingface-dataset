@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "HelloSun/llama.cpp-openPangu-2.0-Flash",
+  "slug": "hellosun-llama-cpp-openpangu-2-0-flash",
+  "author": "HelloSun",
+  "url": "https://huggingface.co/HelloSun/llama.cpp-openPangu-2.0-Flash",
+  "created_at": "2026-10-15T21:23:31.000Z",
+  "updated_at": "2026-10-16T03:35:26.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "openpangu",
+    "moe",
+    "gguf",
+    "cpu-inference",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

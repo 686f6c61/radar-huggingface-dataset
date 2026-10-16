@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "kaupane/inko-rollout-pool-25k",
+  "slug": "kaupane-inko-rollout-pool-25k",
+  "author": "kaupane",
+  "url": "https://huggingface.co/kaupane/inko-rollout-pool-25k",
+  "created_at": "2026-10-15T23:42:54.000Z",
+  "updated_at": "2026-10-15T23:42:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-10-16T03:44:41.048Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Steve Jobs - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Steve_Jobs",
+      "snippet": "I wanted to return him.\" When Chrisann shared this comment with Steve, he stated that he was already aware, [10] and later said …"
+    },
+    {
+      "title": "Childhood & Adoption · Steve Jobs",
+      "url": "https://www.steve-jobs.info/en/early-life",
+      "snippet": "Steven Paul Jobs was born in San Francisco on 24 February 1955. His biological parents — Joanne Schieble, a young American …"
+    },
+    {
+      "title": "Short Bio | all about Steve Jobs.com",
+      "url": "https://allaboutstevejobs.com/bio/short_bio",
+      "snippet": "His unwed biological parents, Joanne Schieble and Abdulfattah Jandali, put him up for adoption. Steve was adopted by Paul and …"
+    },
+    {
+      "title": "What Happened To Steve Jobs Biological Parents",
+      "url": "https://howwebecameafamily.com/what-became-of-the-biological-parents-of-steve-jobs.html",
+      "snippet": "Jan 10, 2024 · Steve Jobs, the founder of Apple, was adopted by Paul Jobs and Clara Hagopian in 1955. He grew up unaware of his …"
+    },
+    {
+      "title": "Steve Jobs - Simple English Wikipedia, the free encyclopedia",
+      "url": "https://simple.m.wikipedia.org/wiki/Steve_Jobs",
+      "snippet": "Steven Paul Jobs was born on February 24, 1955 in San Francisco, California, U.S., [7] Steve Jobs' mother, Joanne Schieble was …"
+    }
+  ]
+}

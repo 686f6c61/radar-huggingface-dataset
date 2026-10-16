@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "tadiecool29/Tiny-Aya-Global-Amharic-Sentiment-STL-LoRA-FT",
+  "slug": "tadiecool29-tiny-aya-global-amharic-sentiment-stl-lora-ft",
+  "author": "tadiecool29",
+  "url": "https://huggingface.co/tadiecool29/Tiny-Aya-Global-Amharic-Sentiment-STL-LoRA-FT",
+  "created_at": "2026-10-15T23:00:01.000Z",
+  "updated_at": "2026-10-15T23:00:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 142357881,
+  "storage_human": "142 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tadiecool29 (Tadesse Amare) - Hugging Face",
+      "url": "https://huggingface.co/tadiecool29/models",
+      "snippet": "tadiecool29/Llama-3.2-1B-Amharic-Sentiment-STL-LoRA-FineT Text Classification •Updated about 19 hours ago"
+    },
+    {
+      "title": "Tiny Aya - Cohere - LLM Database",
+      "url": "https://llmdb.com/models/tiny-aya",
+      "snippet": "Tiny Aya is Cohere Labs&#x27; 3.35B multilingual model family designed to make local language generation practical across 70 languages. The family includes a base checkpoint, a globally balanced instruction model, and Earth, Fire, and Water regional variants. These emphasize African and West Asian, South Asian, and European and Asia-Pacific languages respectively. Instruction checkpoints are ..."
+    },
+    {
+      "title": "Tiny Aya - arXiv.org",
+      "url": "https://arxiv.org/html/2603.11510v1",
+      "snippet": "The release includes Tiny Aya Base, a 3.35B-parameter pretrained model spanning 70 languages; Tiny Aya Global, an instruction-tuned model optimized for consistent multilingual performance; and three region-specialized variants that reinforce linguistic clusters while preserving a shared multilingual foundation."
+    },
+    {
+      "title": "Tiny Aya | Cohere",
+      "url": "https://docs.cohere.com/docs/tiny-aya",
+      "snippet": "Tiny Aya is a compact yet powerful 3.35B-parameter multilingual model supporting 70 languages, designed for efficient and practical multilingual AI deployment."
+    },
+    {
+      "title": "dsfsi/tiny_aya_global-lora-r4-eng-amh · Hugging Face",
+      "url": "https://huggingface.co/dsfsi/tiny_aya_global-lora-r4-eng-amh",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

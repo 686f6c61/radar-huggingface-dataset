@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Donghyun1228/pi05-libero-support-probe-source-target-full10-yaw20-n50000-1000-20261015",
+  "slug": "donghyun1228-pi05-libero-support-probe-source-target-full10-yaw20-n50000-1000-20261015",
+  "author": "Donghyun1228",
+  "url": "https://huggingface.co/Donghyun1228/pi05-libero-support-probe-source-target-full10-yaw20-n50000-1000-20261015",
+  "created_at": "2026-10-15T19:56:48.000Z",
+  "updated_at": "2026-10-15T19:57:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "libero",
+    "inverse-dynamics",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7710580739,
+  "storage_human": "7.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Donghyun1228/pi05-libero-b200-full-probe-fixed-yaw30-1000-20261013 ...",
+      "url": "https://huggingface.co/Donghyun1228/pi05-libero-b200-full-probe-fixed-yaw30-1000-20261013",
+      "snippet": "Donghyun1228 / pi05-libero-b200-full-probe-fixed-yaw30-1000-20261013 Like 0 Robotics openpi libero inverse-dynamics License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new π₀.₅ full-probe fixed1:1:1: yaw30"
+    },
+    {
+      "title": "pi05-libero-b200-idm-full10-yaw20-1000-20261012 - Hugging Face",
+      "url": "https://huggingface.co/Donghyun1228/pi05-libero-b200-idm-full10-yaw20-1000-20261012",
+      "snippet": "π₀.₅ source-fresh IDM-only: yaw20 / full10 Completed 1,000 updates from the Panda IL+shared-decoder-IDM source. This stores raw step999 weights, with the original source wrist encoder and normalization assets. Target-only contact-probe observations; no source images, paired cache, demonstration/rollout training, task-success training feedback, KD, dynamic update controller, or fitted ..."
+    },
+    {
+      "title": "pi05_libero_base · Models",
+      "url": "https://www.modelscope.cn/models/lerobot/pi05_libero_base",
+      "snippet": "π₀.₅ (Pi05) (LeRobot) π₀.₅ is a Vision-Language-Action (VLA) model with open-world generalization from Physical Intelligence, co-trained on robot demonstrations and large-scale multimodal data to execute long-horizon tasks in unseen real-world environments. Note: This model currently supports only the flow-matching action head for π₀.₅ training and inference. Other components ..."
+    },
+    {
+      "title": "openpi05/examples/libero at main · Integer003/openpi05 · GitHub",
+      "url": "https://github.com/Integer003/openpi05/tree/main/examples/libero",
+      "snippet": "Provide fine-tuning and inference code for pi05, fully reproducing the methods described in the pi05 paper. - openpi05/examples/libero at main · Integer003/openpi05"
+    },
+    {
+      "title": "Physical-Intelligence/openpi | DeepWiki",
+      "url": "https://deepwiki.com/Physical-Intelligence/openpi",
+      "snippet": "Overview Relevant source files OpenPI is an open-source training and deployment system for Vision-Language-Action (VLA) models in robotics, developed by Physical Intelligence. The repository implements three core model architectures (π₀, π₀-FAST, π₀.₅) with dual-framework support (JAX/Flax and PyTorch), unified data loading for multiple dataset formats (LeRobot and RLDS), and robust ..."
+    }
+  ]
+}

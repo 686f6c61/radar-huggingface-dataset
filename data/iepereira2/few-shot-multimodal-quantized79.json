@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Iepereira2/few-shot-multimodal-quantized79",
+  "slug": "iepereira2-few-shot-multimodal-quantized79",
+  "author": "Iepereira2",
+  "url": "https://huggingface.co/Iepereira2/few-shot-multimodal-quantized79",
+  "created_at": "2026-10-15T20:28:06.000Z",
+  "updated_at": "2026-10-15T20:28:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "few-shot-multimodal",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Keetch Swiss Clothing (@keetchclothing) - Instagram",
+      "url": "https://www.instagram.com/keetchclothing/",
+      "snippet": "766 Followers, 508 Following, 98 Posts - Keetch Swiss Clothing (@keetchclothing) on Instagram: \"StreetWear//Lifestyle//Rock n Roll …"
+    },
+    {
+      "title": "Keetch - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Keetch",
+      "snippet": "Keetch Keetch is a surname. Notable people with the surname include: Bobby Keetch (1941–1996), British footballer Paul Keetch …"
+    },
+    {
+      "title": "What does Keetch mean? - Definitions.net",
+      "url": "https://www.definitions.net/definition/Keetch",
+      "snippet": "According to the U.S. Census Bureau, Keetch is ranked #45026 in terms of the most common surnames in America. The Keetch …"
+    },
+    {
+      "title": "Keetch clothing - Facebook",
+      "url": "https://www.facebook.com/keetchclothing/",
+      "snippet": "Mar 29, 2025 · Keetch XX collection avec la Collaboration des Tatoueurs Baron Sigmund von Ofen & Christian Nguyen un grand …"
+    },
+    {
+      "title": "Books – Sophie Keetch – Author",
+      "url": "https://sophiekeetch.com/books/",
+      "snippet": "Keetch’s prose is rich and lyrical throughout… After centuries of tales that treat her as little more than window dressing to the story of …"
+    }
+  ]
+}

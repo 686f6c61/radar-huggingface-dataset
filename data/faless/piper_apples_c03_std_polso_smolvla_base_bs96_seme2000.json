@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Faless/piper_apples_c03_std_polso_smolvla_base_bs96_seme2000",
+  "slug": "faless-piper_apples_c03_std_polso_smolvla_base_bs96_seme2000",
+  "author": "Faless",
+  "url": "https://huggingface.co/Faless/piper_apples_c03_std_polso_smolvla_base_bs96_seme2000",
+  "created_at": "2026-10-15T22:15:04.000Z",
+  "updated_at": "2026-10-15T22:15:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:Faless/piper_apples_v7m_deposito_regolare_c03",
+    "arxiv:2506.01844",
+    "base_model:Faless/smolvla_base_adapted",
+    "base_model:finetune:Faless/smolvla_base_adapted",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906727960,
+  "storage_human": "907 MB",
+  "base_model": "Faless/smolvla_base_adapted",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

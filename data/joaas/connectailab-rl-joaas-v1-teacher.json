@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "joaas/connectailab-rl-joaas-v1-teacher",
+  "slug": "joaas-connectailab-rl-joaas-v1-teacher",
+  "author": "joaas",
+  "url": "https://huggingface.co/joaas/connectailab-rl-joaas-v1-teacher",
+  "created_at": "2026-10-15T19:54:43.000Z",
+  "updated_at": "2026-10-15T19:54:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "numpy",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "numpy",
+    "connect-ai-lab",
+    "deep-reinforcement-learning",
+    "gymnasium",
+    "connect-company",
+    "connect-tycoon",
+    "jev",
+    "jev-style",
+    "reinforcement-learning",
+    "ppo",
+    "decision-making",
+    "prefrontal-cortex",
+    "korean",
+    "ko",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/?hl=tr",
+      "snippet": "Bir hesap oluştur veya Instagram'da giriş yap. Nelerle ilgilendiğini seni anlayan kişilerle paylaş."
+    },
+    {
+      "title": "About Instagram: Features, Safety, Community & More",
+      "url": "https://about.instagram.com/",
+      "snippet": "Learn about Instagram: how the app works, key features, safety tools, teen accounts, parent resources, community programs, and …"
+    },
+    {
+      "title": "Instagram Stories: Momente gemeinsam erleben, teilen und …",
+      "url": "https://about.instagram.com/de-de/features/stories",
+      "snippet": "Nutze Instagram Stories, um Fotos und Videos zu teilen und dich mit Freund*innen, Familie und Creator*innen zu verbinden. Fang …"
+    },
+    {
+      "title": "Level Up with Instagram Reels | Instagram for Creators",
+      "url": "https://creators.instagram.com/reels",
+      "snippet": "Reels is where people create, share and discover videos. Learn how to use Instagram Reels to create moments your fans watch on …"
+    }
+  ]
+}

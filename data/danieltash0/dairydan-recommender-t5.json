@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Danieltash0/dairydan-recommender-t5",
+  "slug": "danieltash0-dairydan-recommender-t5",
+  "author": "Danieltash0",
+  "url": "https://huggingface.co/Danieltash0/dairydan-recommender-t5",
+  "created_at": "2026-10-15T21:23:48.000Z",
+  "updated_at": "2026-10-15T21:24:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "t5",
+    "dairy",
+    "agriculture",
+    "recommendation",
+    "text2text-generation",
+    "base_model:google/flan-t5-small",
+    "base_model:finetune:google/flan-t5-small",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 76961152,
+  "parameters_human": "77.0M",
+  "storage_bytes": 307867048,
+  "storage_human": "308 MB",
+  "base_model": "google/flan-t5-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

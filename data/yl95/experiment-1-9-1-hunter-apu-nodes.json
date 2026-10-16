@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "YL95/experiment-1.9.1-hunter-apu-nodes",
+  "slug": "yl95-experiment-1-9-1-hunter-apu-nodes",
+  "author": "YL95",
+  "url": "https://huggingface.co/YL95/experiment-1.9.1-hunter-apu-nodes",
+  "created_at": "2026-10-15T22:22:14.000Z",
+  "updated_at": "2026-10-16T03:44:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "tensorboard",
+    "pytorch",
+    "safetensors",
+    "finance",
+    "time-series",
+    "en",
+    "base_model:YL95/experiment-1.9-hunter-apu-nodes",
+    "base_model:finetune:YL95/experiment-1.9-hunter-apu-nodes",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 417,
+  "storage_human": "417 B",
+  "base_model": "YL95/experiment-1.9-hunter-apu-nodes",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

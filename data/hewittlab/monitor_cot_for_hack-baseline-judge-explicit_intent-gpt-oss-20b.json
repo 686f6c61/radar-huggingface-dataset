@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "hewittlab/monitor_cot_for_hack-baseline-judge-explicit_intent-gpt-oss-20b",
+  "slug": "hewittlab-monitor_cot_for_hack-baseline-judge-explicit_intent-gpt-oss-20b",
+  "author": "hewittlab",
+  "url": "https://huggingface.co/hewittlab/monitor_cot_for_hack-baseline-judge-explicit_intent-gpt-oss-20b",
+  "created_at": "2026-10-15T22:03:25.000Z",
+  "updated_at": "2026-10-16T03:07:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tinker",
+    "lora",
+    "reward-hacking",
+    "chain-of-thought",
+    "monitorability",
+    "dataset:hewittlab/monitor_cot_for_hack-judge",
+    "base_model:openai/gpt-oss-20b",
+    "base_model:adapter:openai/gpt-oss-20b",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 67602207960,
+  "storage_human": "67.6 GB",
+  "base_model": "openai/gpt-oss-20b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Éducation sexuelle - 3,486 vidéos - iWank TV",
+      "url": "https://iwank.tv/fr/search/%C3%A9ducation_sexuelle/",
+      "snippet": "Best selection of Éducation sexuelle Porn - 3,486 vidéos. jeux sexuelle, mère et filles lesbienne, soeur et frere, en famille maman au …"
+    },
+    {
+      "title": "Éducation Sexuelle Femme Nue École Photo stock - Dreamstime",
+      "url": "https://fr.dreamstime.com/photo-stock-%C3%A9cole-nue-femme-d-%C3%A9ducation-sexuelle-image47965712",
+      "snippet": "Une femme nue tient un tube de rouge à lèvres et écrit \"éducation sexuelle\" au tableau. Photo à propos Il est temps d'aborder …"
+    },
+    {
+      "title": "Vidéos education-sexuelle - XVIDEOS.COM",
+      "url": "https://fr.xvideos.com/tags/education-sexuelle",
+      "snippet": "Éducation sexuelle chrétienne - Lilith Nympho reçoit une éducation sexuelle réelle Voir tout le contenu education-sexuelle premium …"
+    },
+    {
+      "title": "Cours déducation sexuelle francaise Vidéos Porno | xHamster",
+      "url": "https://fra.xhamster.com/search/cours+d%C3%A9ducation+sexuelle+francaise",
+      "snippet": "Regardez des vidéos pornos cours déducation sexuelle francaise. Découvrez des tonnes de films XXX de avec des scènes de sexe …"
+    },
+    {
+      "title": "Education sexuelle en francais Vidéos Porno - xHamster",
+      "url": "https://fra.xhamster.com/search/education+sexuelle+en+francais",
+      "snippet": "Regardez des vidéos pornos education sexuelle en francais. Découvrez des tonnes de films XXX de avec des scènes de sexe en …"
+    }
+  ]
+}

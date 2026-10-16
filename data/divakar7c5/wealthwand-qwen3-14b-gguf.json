@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "divakar7c5/wealthwand-qwen3-14b-gguf",
+  "slug": "divakar7c5-wealthwand-qwen3-14b-gguf",
+  "author": "divakar7c5",
+  "url": "https://huggingface.co/divakar7c5/wealthwand-qwen3-14b-gguf",
+  "created_at": "2026-10-15T19:58:10.000Z",
+  "updated_at": "2026-10-15T20:01:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "q4_k_m",
+    "text-generation",
+    "base_model:Qwen/Qwen3-14B",
+    "base_model:quantized:Qwen/Qwen3-14B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14768307200,
+  "parameters_human": "14.77B",
+  "storage_bytes": 9001753088,
+  "storage_human": "9.0 GB",
+  "base_model": "Qwen/Qwen3-14B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

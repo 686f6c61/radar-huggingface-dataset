@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "maf1oz1/llm-course-hw1-rope",
+  "slug": "maf1oz1-llm-course-hw1-rope",
+  "author": "maf1oz1",
+  "url": "https://huggingface.co/maf1oz1/llm-course-hw1-rope",
+  "created_at": "2026-10-15T21:23:27.000Z",
+  "updated_at": "2026-10-15T21:23:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 10637476,
+  "parameters_human": "10.6M",
+  "storage_bytes": 42556416,
+  "storage_human": "43 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

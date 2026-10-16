@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Sauers/BeeLLM-Mellifera",
+  "slug": "sauers-beellm-mellifera",
+  "author": "Sauers",
+  "url": "https://huggingface.co/Sauers/BeeLLM-Mellifera",
+  "created_at": "2026-10-15T20:46:55.000Z",
+  "updated_at": "2026-10-15T20:50:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "bee",
+    "buzz",
+    "tiny",
+    "toy-model",
+    "text-generation",
+    "base_model:schizophyllume/BeeLLM",
+    "base_model:quantized:schizophyllume/BeeLLM",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 13604160,
+  "parameters_human": "13.6M",
+  "storage_bytes": 54519904,
+  "storage_human": "55 MB",
+  "base_model": "schizophyllume/BeeLLM",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Edifice - Connexion ENT HDF, accès à votre espace scolaire",
+      "url": "https://enthdf.fr/auth/saml/wayf",
+      "snippet": "Connexion à votre espace numérique scolaire : un accès simple, sécurisé et intuitif pour toute la communauté éducative."
+    },
+    {
+      "title": "Service d'authentification web - ÉduConnect",
+      "url": "https://moncompte.educonnect.education.gouv.fr/",
+      "snippet": "Puisque votre navigateur ne supporte pas JavaScript, vous devez appuyer sur le bouton Continuer pour poursuivre."
+    },
+    {
+      "title": "ENT de l'UPJV",
+      "url": "https://www.u-picardie.fr/ent",
+      "snippet": "Université de Picardie Jules Verne BU de l'UPJV Contact Partenaires Se connecter (ent-03)"
+    },
+    {
+      "title": "Bienvenue | ENT UPHF (sur ent2)",
+      "url": "https://portail.uphf.fr/",
+      "snippet": "L'Espace Numérique de Travail (ENT ou portail) vous permet d'accéder à travers les réseaux à l'ensemble des ressources et …"
+    },
+    {
+      "title": "Connectés avec l'ENT | Conseil départemental de l'Aisne",
+      "url": "https://www.aisne.com/votre-service/colleges/connectes-avec-lent",
+      "snippet": "Qu'est-ce que l'ENT ? C'est un portail internet éducatif offrant un bouquet de services numériques : carnet de notes, devoirs, emploi …"
+    }
+  ]
+}

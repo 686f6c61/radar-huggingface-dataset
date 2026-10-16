@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "offmonreal/Mellum2.1-12B-A2.5B-MaxQuality-iMatrix-GGUF",
+  "slug": "offmonreal-mellum2-1-12b-a2-5b-maxquality-imatrix-gguf",
+  "author": "offmonreal",
+  "url": "https://huggingface.co/offmonreal/Mellum2.1-12B-A2.5B-MaxQuality-iMatrix-GGUF",
+  "created_at": "2026-10-15T23:23:26.000Z",
+  "updated_at": "2026-10-15T23:48:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "imatrix",
+    "quantized",
+    "moe",
+    "thinking",
+    "code",
+    "agentic",
+    "text-generation",
+    "en",
+    "base_model:JetBrains/Mellum2.1-12B-A2.5B-Thinking",
+    "base_model:quantized:JetBrains/Mellum2.1-12B-A2.5B-Thinking",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12149923072,
+  "parameters_human": "12.15B",
+  "storage_bytes": 14401043712,
+  "storage_human": "14.4 GB",
+  "base_model": "JetBrains/Mellum2.1-12B-A2.5B-Thinking",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

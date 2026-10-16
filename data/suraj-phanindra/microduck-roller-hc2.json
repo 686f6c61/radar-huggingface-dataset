@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "suraj-phanindra/microduck-roller-hc2",
+  "slug": "suraj-phanindra-microduck-roller-hc2",
+  "author": "suraj-phanindra",
+  "url": "https://huggingface.co/suraj-phanindra/microduck-roller-hc2",
+  "created_at": "2026-10-15T23:13:47.000Z",
+  "updated_at": "2026-10-15T23:13:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "base_model:juicenv/microduck-roller-es19",
+    "base_model:finetune:juicenv/microduck-roller-es19",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 793753,
+  "storage_human": "793753 B",
+  "base_model": "juicenv/microduck-roller-es19",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ever seen porn featuring someone you know? — Digital Spy",
+      "url": "https://forums.digitalspy.com/discussion/1958155/ever-seen-porn-featuring-someone-you-know",
+      "snippet": "Apr 23, 2014 · When I was 13 or 14 back in the early 1990's, there was a golden day when I was flicking through a copy of Razzle …"
+    },
+    {
+      "title": "Digital Spy Forum",
+      "url": "https://forums.digitalspy.com/",
+      "snippet": "1 day ago · Categories - Digital Spy Forum and Community, a place to discuss the latest TV, Movie and entertainment news and trends."
+    },
+    {
+      "title": "Anglia Ruskin University Forum - The Student Room",
+      "url": "https://www.thestudentroom.co.uk/forumdisplay.php?f=858",
+      "snippet": "How The Student Room is moderated To keep The Student Room safe for everyone, we moderate posts that are added to the site. …"
+    },
+    {
+      "title": "Advanced Academic Programs (AAP) - DCUM Weblog",
+      "url": "https://www.dcurbanmom.com/jforum/forums/show/60.page",
+      "snippet": "4 days ago · Started by Anonymous, 10/06/2026 18:49 [ Go to page: 1, 2, 3 ]"
+    },
+    {
+      "title": "how was E=P^2/2m derived - The Student Room",
+      "url": "https://www.thestudentroom.co.uk/showthread.php?t=1110509",
+      "snippet": "Jun 11, 2026 · i have he equation E= p^2 / 2m. i figured it was somehow derived by Ek=1/2mv^2 and p=mv? but i dont understand …"
+    }
+  ]
+}

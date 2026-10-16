@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "Secondchancee/entry-coder-0.5-v3-256k",
+  "slug": "secondchancee-entry-coder-0-5-v3-256k",
+  "author": "Secondchancee",
+  "url": "https://huggingface.co/Secondchancee/entry-coder-0.5-v3-256k",
+  "created_at": "2026-10-15T23:57:42.000Z",
+  "updated_at": "2026-10-16T01:05:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen2",
+    "text-generation",
+    "code",
+    "nextjs",
+    "react",
+    "typescript",
+    "vercel",
+    "python",
+    "containers",
+    "daemons",
+    "web-development",
+    "continuous-pretraining",
+    "256k-context",
+    "conversational",
+    "en",
+    "dataset:custom-nextjs-app-router-evals",
+    "base_model:Qwen/Qwen2.5-Coder-0.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-0.5B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 4017012791,
+  "storage_human": "4.0 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-0.5B-Instruct",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Omegle NSFW – Adult Video Chat with Strangers",
+      "url": "https://www.omeglensfw.com/video",
+      "snippet": "Omegle NSFW is an adults-only random video chat for meeting strangers on camera. Free to use, no account required. 18+ only."
+    },
+    {
+      "title": "Omegle",
+      "url": "https://www.omegle.com/?recaptcha_challenge_field=03AHJ_VusMntwgn3C4w6PZVRYdNjBGOxDZ3paSi_IRaW5zcJFLNfeoAIOwtYFszdvTIc3D-wXbBS7g3Ak_D7lKViRY2PISJ1COSDiiIuHwLV01pzJBCopFMfqm5sZrR04yAaHeFvDa8RBBZ_EPoT8eDs-OkSfVQg10ppI9r-K3mvN_oWnN6Y1tSXdSfBOU8lX7j4Wo0M2tM9TCOVwiBveNUGtfB402VOXdpNmigw_ZhoeKJXOnlzbFqb8&recaptcha_response_field=Sunday+unworli",
+      "snippet": "Age and safety protections help keep minors safe and create a trusted, respectful environment for everyone. Advanced technology …"
+    },
+    {
+      "title": "OmegleReactionssNSFW - Reddit",
+      "url": "https://www.reddit.com/r/OmegleReactionssNSFW/top/",
+      "snippet": "Jun 7, 2024 · r/OmegleReactionssNSFW: Page for Omegle, Ome tv, live cam cocks reactions and anything you can find!!Share your …"
+    },
+    {
+      "title": "NudeChat.com - Nude Webcam Chat",
+      "url": "https://www.nudechat.com/",
+      "snippet": "Nude video chat with amateur nude girls and guys from all around the world on Nude Chat - Nude Webcam Chat. Chat live right now!"
+    },
+    {
+      "title": "Free Random Video Chat with Strangers – Meetgle",
+      "url": "https://meetgle.com/video-chat/",
+      "snippet": "Join Meetgle for secure, anonymous random video chats. The best Omegle alternative to connect 1v1 with strangers worldwide. Start …"
+    }
+  ]
+}

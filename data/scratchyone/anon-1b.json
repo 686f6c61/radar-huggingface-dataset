@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "scratchyone/anon-1b",
+  "slug": "scratchyone-anon-1b",
+  "author": "scratchyone",
+  "url": "https://huggingface.co/scratchyone/anon-1b",
+  "created_at": "2026-10-15T21:34:01.000Z",
+  "updated_at": "2026-10-15T22:08:22.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "gemma3_text",
+    "text-generation",
+    "greentext",
+    "4chan",
+    "gemma3",
+    "base-model",
+    "en",
+    "dataset:scratchyone/anon-greentext",
+    "base_model:google/gemma-3-1b-pt",
+    "base_model:quantized:google/gemma-3-1b-pt",
+    "license:gemma",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 13,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 999887104,
+  "parameters_human": "999.9M",
+  "storage_bytes": 4652225887,
+  "storage_human": "4.7 GB",
+  "base_model": "google/gemma-3-1b-pt",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "imogenai/kendra-krea",
+  "slug": "imogenai-kendra-krea",
+  "author": "imogenai",
+  "url": "https://huggingface.co/imogenai/kendra-krea",
+  "created_at": "2026-10-15T22:57:23.000Z",
+  "updated_at": "2026-10-15T23:32:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 778614841,
+  "storage_human": "779 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-10-16T03:45:12.048Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Image Generator — 80+ Models, Free to Start | Kenerate AI",
+      "url": "https://kenerateai.com/ai-image-generator",
+      "snippet": "Kenerate AI&#x27;s free-to-start AI image generator: Seedream, GPT Image 2, Nano Banana 2, Grok Imagine, MAI, Recraft, Krea, Flux and 70+ more models in one account."
+    },
+    {
+      "title": "Krea: AI Creative Suite for Images, Video & 3D",
+      "url": "https://www.krea.ai/",
+      "snippet": "Generate, edit, and enhance images, videos, and 3D with Krea&#x27;s AI creative suite. Start free with real-time tools and the best generative models."
+    },
+    {
+      "title": "How to Use Krea 2 AI Image Generator: 12 Steps [2026]",
+      "url": "https://tech-insider.org/how-to-use-krea-2-ai-image-generator-2026/",
+      "snippet": "Learn how to use Krea 2, the fastest AI image model in the Krea lineup: setup, prompts, style transfer, upscaling, and pricing in 12 steps."
+    },
+    {
+      "title": "Kenerate AI — AI Image & Video Generator and Editor",
+      "url": "https://kenerateai.com/",
+      "snippet": "Kenerate AI: create and edit images and videos with AI. Text to image, image to video, AI photo editor, AI video editor, upscaler, dubbing and music — 200+ models like Seedance, Kling, Veo, GPT Image and Nano Banana. 25 free credits; credits never expire."
+    },
+    {
+      "title": "Krea AI Review 2026: Real-Time AI Suite for Images, Video & 3D",
+      "url": "https://aiunpacking.com/review/krea-ai/",
+      "snippet": "An in-depth review of the Krea AI creative suite covering Krea 2, real-time generation, Realtime Edit, pricing, and how it compares to Midjourney and Leonardo in 2026."
+    }
+  ]
+}

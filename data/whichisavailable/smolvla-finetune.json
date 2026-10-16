@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "WhichIsAvailable/SmolVLA-finetune",
+  "slug": "whichisavailable-smolvla-finetune",
+  "author": "WhichIsAvailable",
+  "url": "https://huggingface.co/WhichIsAvailable/SmolVLA-finetune",
+  "created_at": "2026-10-15T19:50:10.000Z",
+  "updated_at": "2026-10-15T19:51:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:HuggingFaceVLA/smol-libero",
+    "arxiv:2506.01844",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 1616080248,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zhenxuan/finetuned_smolvla_base · Hugging Face",
+      "url": "https://huggingface.co/zhenxuan/finetuned_smolvla_base",
+      "snippet": "Model Card for smolvla SmolVLA is a compact, efficient vision-language-action model that achieves competitive performance at reduced computational costs and can be deployed on consumer-grade hardware."
+    },
+    {
+      "title": "SmolVLA - aegean.ai",
+      "url": "https://aegean.ai/book/vla-agents/smolvla",
+      "snippet": "SmolVLA is Hugging Face&#x27;s compact Vision-Language-Action model, built on top of the LeRobot library. It is designed to be small enough to fine-tune and deploy on a single consumer GPU, while remaining competitive with larger open VLAs on standard manipulation benchmarks."
+    },
+    {
+      "title": "VorArt/smolvla_finetune_try1 · Hugging Face",
+      "url": "https://huggingface.co/VorArt/smolvla_finetune_try1",
+      "snippet": "Model Card for smolvla SmolVLA is a compact, efficient vision-language-action model that achieves competitive performance at reduced computational costs and can be deployed on consumer-grade hardware."
+    },
+    {
+      "title": "GitHub - PhosFaith/SmolVLA: Finetunning the SmolVLM by huggingface into ...",
+      "url": "https://github.com/PhosFaith/SmolVLA",
+      "snippet": "Finetunning the SmolVLM by huggingface into a VLA. This is an ongoing project for the AI course in the Masters in Marine Intelligent Robotics at UTLN."
+    },
+    {
+      "title": "SmolVLA | Open Source Robotics",
+      "url": "https://robotics.growbotics.ai/projects/foundation-models/smolvla/overview",
+      "snippet": "SmolVLA is a compact 450M parameter Vision-Language-Action model from HuggingFace that runs on consumer hardware, trained on open-source LeRobot datasets."
+    }
+  ]
+}

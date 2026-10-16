@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Yiming1234/bagel-sam-mask-pre-fusion",
+  "slug": "yiming1234-bagel-sam-mask-pre-fusion",
+  "author": "Yiming1234",
+  "url": "https://huggingface.co/Yiming1234/bagel-sam-mask-pre-fusion",
+  "created_at": "2026-10-15T21:55:54.000Z",
+  "updated_at": "2026-10-15T22:07:31.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "image-text-to-text",
+    "custom-code",
+    "base_model:ByteDance-Seed/BAGEL-7B-MoT",
+    "base_model:finetune:ByteDance-Seed/BAGEL-7B-MoT",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14607260128,
+  "parameters_human": "14.61B",
+  "storage_bytes": 58764509068,
+  "storage_human": "58.8 GB",
+  "base_model": "ByteDance-Seed/BAGEL-7B-MoT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

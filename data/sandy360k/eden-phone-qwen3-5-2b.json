@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "sandy360k/eden-phone-qwen3.5-2b",
+  "slug": "sandy360k-eden-phone-qwen3-5-2b",
+  "author": "sandy360k",
+  "url": "https://huggingface.co/sandy360k/eden-phone-qwen3.5-2b",
+  "created_at": "2026-10-15T19:51:28.000Z",
+  "updated_at": "2026-10-15T19:51:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "llama.cpp",
+    "on-device",
+    "json",
+    "distillation",
+    "en",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:quantized:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1881825088,
+  "parameters_human": "1.88B",
+  "storage_bytes": 1341723200,
+  "storage_human": "1.3 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5-2B | Awesome Agents",
+      "url": "https://awesomeagents.ai/models/qwen-3-5-2b/",
+      "snippet": "Qwen3.5-2B is a 2B dense multimodal model with 262K context, thinking mode, and native vision including video understanding. OCRBench 84.5, VideoMME 75.6. Apache 2.0 licensed."
+    },
+    {
+      "title": "Qwen3.5-2B - VRAM, Specs & Benchmarks",
+      "url": "https://apxml.com/models/qwen35-2b",
+      "snippet": "Qwen3.5-2B specifications, context length, benchmark scores, and GPU VRAM requirements across quantizations."
+    },
+    {
+      "title": "Qwen3.5-2B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_5_2b",
+      "snippet": "Qwen3.5-2B Balanced 2B parameter model from the Qwen3.5 series for on‑device inference. Qwen3.5 is the latest multilingual language model series from Alibaba Cloud with improved reasoning and instruction‑following capabilities over Qwen3."
+    },
+    {
+      "title": "sandy360k/eden-phone-qwen3.5-0.8b · Hugging Face",
+      "url": "https://huggingface.co/sandy360k/eden-phone-qwen3.5-0.8b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5 2B by Qwen | Model Library | Modal",
+      "url": "https://modal.com/library/qwen/qwen3-5-2b",
+      "snippet": "This is the post-trained model, fine-tuned from Qwen3.5-2B-Base. Qwen positions this size for prototyping, task-specific fine-tuning, and research or development use, and benchmarks it against Qwen3-1.7B, Qwen3-4B-2507, and the Qwen3-VL 2B and 4B models on language and vision tasks, recommending a 32,768-token output budget for most queries."
+    }
+  ]
+}

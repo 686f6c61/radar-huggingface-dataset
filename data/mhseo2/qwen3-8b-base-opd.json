@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mhseo2/Qwen3-8B-Base-opd",
+  "slug": "mhseo2-qwen3-8b-base-opd",
+  "author": "mhseo2",
+  "url": "https://huggingface.co/mhseo2/Qwen3-8B-Base-opd",
+  "created_at": "2026-10-16T01:49:50.000Z",
+  "updated_at": "2026-10-16T01:51:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:2505.09388",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16381516776,
+  "storage_human": "16.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

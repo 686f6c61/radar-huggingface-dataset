@@ -5,7 +5,7 @@
   "author": "CardAnvilModels",
   "url": "https://huggingface.co/CardAnvilModels/BiRefNet-lite-1024-WebGPU",
   "created_at": "2026-10-15T16:49:01.000Z",
-  "updated_at": "2026-10-15T16:49:03.000Z",
+  "updated_at": "2026-10-15T18:06:36.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-segmentation",

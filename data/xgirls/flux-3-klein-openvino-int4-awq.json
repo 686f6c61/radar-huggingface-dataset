@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "xgirls/flux-3-klein-openvino-int4-awq",
+  "slug": "xgirls-flux-3-klein-openvino-int4-awq",
+  "author": "xgirls",
+  "url": "https://huggingface.co/xgirls/flux-3-klein-openvino-int4-awq",
+  "created_at": "2026-10-15T23:08:35.000Z",
+  "updated_at": "2026-10-16T03:17:52.000Z",
+  "license": "flux-kommunity-license-v1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "openvino",
+    "image-generation",
+    "quantized",
+    "flux",
+    "self-contained",
+    "text-to-image",
+    "base_model:black-forest-labs/flux-3-image-klein",
+    "base_model:finetune:black-forest-labs/flux-3-image-klein",
+    "license:other",
+    "diffusers:Flux3DistilledModularPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5308198157,
+  "storage_human": "5.3 GB",
+  "base_model": "black-forest-labs/flux-3-image-klein",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - xgirls-dev/fern: A local image studio powered by OpenVINO.",
+      "url": "https://github.com/xgirls-dev/fern",
+      "snippet": "Fern is a private Windows image studio for running Flux.2 Klein 9B locally with one shared model and a hardware-specific OpenVINO device. Intel, NVIDIA, and CPU execution all use the same xgirls INT4 OpenVINO release at xgirls/FLUX.2-klein-9B-ov-int4. NVIDIA execution uses the NVIDIA device from the OpenVINO NVIDIA plugin."
+    },
+    {
+      "title": "Black Forest Labs Expands Access to Frontier Visual Intelligence With ...",
+      "url": "https://finance.yahoo.com/technology/ai/articles/black-forest-labs-expands-access-150500027.html",
+      "snippet": "For FLUX 3 Image Klein, BFL engaged its external safety partner Cinder to evaluate both model checkpoints ahead of release, demonstrating fewer vulnerabilities than other popular open weight models."
+    },
+    {
+      "title": "FLUX 3 Image Klein - GitHub",
+      "url": "https://github.com/black-forest-labs/flux-3-image-klein",
+      "snippet": "This repository contains the reference inference code for FLUX 3 Image Klein, the 5.6B open weights image model from Black Forest Labs: text-to-image, editing with up to 10 reference images, and layout control with bounding boxes, through one model. Leads in quality and speed among open weights ..."
+    },
+    {
+      "title": "FLUX 3 Image Klein: open weights, 5.6B parameters",
+      "url": "https://bfl.ai/blog/flux-3-image-klein",
+      "snippet": "In internal evaluations, FLUX 3 Image Klein ranks first in text-to-image, multi-reference generation and image editing, ahead of larger open weights models. It also rates above the closed models in the comparison, Ideogram V4.5 and FLUX.2 [pro]. At 5.6B parameters, it is the smallest open model in the comparison, against 7B for Qwen-Image 2.1 and 12.9B for Krea 2. Compared with FLUX.2 [klein ..."
+    },
+    {
+      "title": "Black Forest Labs Releases FLUX 3 Image Klein With 5.6B Parameters",
+      "url": "https://www.technobezz.com/news/black-forest-labs-flux-image-klein-parameters",
+      "snippet": "Black Forest Labs has released FLUX 3 Image Klein, a 5.6B parameter image model with downloadable weights, support for 8GB GPUs and API pricing starting at $0.009 per 1K image."
+    }
+  ]
+}

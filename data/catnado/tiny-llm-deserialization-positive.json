@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "catnado/tiny-llm-deserialization-positive",
+  "slug": "catnado-tiny-llm-deserialization-positive",
+  "author": "catnado",
+  "url": "https://huggingface.co/catnado/tiny-llm-deserialization-positive",
+  "created_at": "2026-10-15T21:18:32.000Z",
+  "updated_at": "2026-10-15T21:19:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "text-generation",
+    "dataset:HuggingFaceFW/fineweb",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 280,
+  "storage_human": "280 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

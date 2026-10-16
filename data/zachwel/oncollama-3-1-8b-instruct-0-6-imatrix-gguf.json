@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "zachwel/OncoLlama-3.1-8B-Instruct-0.6-Imatrix-GGUF",
+  "slug": "zachwel-oncollama-3-1-8b-instruct-0-6-imatrix-gguf",
+  "author": "zachwel",
+  "url": "https://huggingface.co/zachwel/OncoLlama-3.1-8B-Instruct-0.6-Imatrix-GGUF",
+  "created_at": "2026-10-15T22:26:00.000Z",
+  "updated_at": "2026-10-15T23:24:23.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "medical",
+    "oncology",
+    "llama-cpp",
+    "imatrix",
+    "text-generation-inference",
+    "base_model:drjzhn/OncoLlama-3.1-8B-Instruct-0.6",
+    "base_model:finetune:drjzhn/OncoLlama-3.1-8B-Instruct-0.6",
+    "license:llama3.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3274917664,
+  "storage_human": "3.3 GB",
+  "base_model": "drjzhn/OncoLlama-3.1-8B-Instruct-0.6",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}
