@@ -27,9 +27,10 @@
     "en",
     "license:other",
     "endpoints_compatible",
+    "deploy:sagemaker",
     "region:us"
   ],
-  "likes": 282,
+  "likes": 334,
   "downloads_30d": 402,
   "trending_score": 269,
   "parameters": 822036529664,

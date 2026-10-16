@@ -5,7 +5,7 @@
   "author": "twanghcmut",
   "url": "https://huggingface.co/twanghcmut/molmoact2-so101-left-arm-multitask",
   "created_at": "2026-10-12T01:11:39.000Z",
-  "updated_at": "2026-10-12T01:13:58.000Z",
+  "updated_at": "2026-10-15T17:38:33.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "robotics",
@@ -35,7 +35,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 11,
+  "downloads_30d": 12,
   "trending_score": 0,
   "parameters": 5442196272,
   "parameters_human": "5.44B",

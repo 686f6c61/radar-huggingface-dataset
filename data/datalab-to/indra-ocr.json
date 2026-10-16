@@ -5,7 +5,7 @@
   "author": "datalab-to",
   "url": "https://huggingface.co/datalab-to/indra-ocr",
   "created_at": "2026-10-10T14:12:33.000Z",
-  "updated_at": "2026-10-13T15:53:08.000Z",
+  "updated_at": "2026-10-15T06:40:56.000Z",
   "license": "openrail",
   "license_family": "oss",
   "pipeline_tag": "image-to-text",
@@ -28,6 +28,8 @@
   ],
   "tags": [
     "onnx",
+    "safetensors",
+    "indra-ocr",
     "ocr",
     "cpu",
     "pdf",
@@ -52,16 +54,17 @@
     "license:openrail",
     "region:us"
   ],
-  "likes": 99,
+  "likes": 100,
   "downloads_30d": 0,
   "trending_score": 98,
-  "parameters": null,
-  "parameters_human": null,
-  "storage_bytes": 40877187,
-  "storage_human": "41 MB",
+  "parameters": 1236366,
+  "parameters_human": "1.2M",
+  "storage_bytes": 83614811,
+  "storage_human": "84 MB",
   "base_model": null,
   "formats": [
-    "onnx"
+    "onnx",
+    "safetensors"
   ],
   "is_conversational": false,
   "gated": false,

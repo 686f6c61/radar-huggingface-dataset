@@ -5,7 +5,7 @@
   "author": "turintech",
   "url": "https://huggingface.co/turintech/Kev-9B-Artemis-GGUF",
   "created_at": "2026-10-12T10:43:35.000Z",
-  "updated_at": "2026-10-14T21:48:30.000Z",
+  "updated_at": "2026-10-15T22:45:57.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -27,11 +27,11 @@
     "conversational"
   ],
   "likes": 8,
-  "downloads_30d": 262,
+  "downloads_30d": 579,
   "trending_score": 0,
   "parameters": 8955900928,
   "parameters_human": "8.96B",
-  "storage_bytes": 21756240224,
+  "storage_bytes": 21756481578,
   "storage_human": "21.8 GB",
   "base_model": "jaredpalmer/kev-9b",
   "formats": [

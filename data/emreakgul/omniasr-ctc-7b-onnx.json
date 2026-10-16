@@ -5,7 +5,7 @@
   "author": "EmreAkgul",
   "url": "https://huggingface.co/EmreAkgul/omniASR-CTC-7B-ONNX",
   "created_at": "2026-09-09T17:09:37.000Z",
-  "updated_at": "2026-09-09T19:55:46.000Z",
+  "updated_at": "2026-10-15T15:58:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 26008646774,
-  "storage_human": "26.0 GB",
+  "storage_bytes": 52336961686,
+  "storage_human": "52.3 GB",
   "base_model": null,
   "formats": [
     "onnx"

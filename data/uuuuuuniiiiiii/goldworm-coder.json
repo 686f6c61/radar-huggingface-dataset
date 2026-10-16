@@ -5,7 +5,7 @@
   "author": "Uuuuuuniiiiiii",
   "url": "https://huggingface.co/Uuuuuuniiiiiii/goldworm-coder",
   "created_at": "2026-10-05T09:36:23.000Z",
-  "updated_at": "2026-10-15T02:16:55.000Z",
+  "updated_at": "2026-10-15T05:34:22.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "pytorch",
+    "goldworm-byte-moe",
     "byte-level-LM",
     "mixture-of-experts",
     "causal-transformer",
@@ -23,7 +24,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 0,
+  "downloads_30d": 1,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

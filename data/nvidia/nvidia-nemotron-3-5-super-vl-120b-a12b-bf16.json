@@ -5,7 +5,7 @@
   "author": "nvidia",
   "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16",
   "created_at": "2026-10-12T15:32:06.000Z",
-  "updated_at": "2026-10-15T17:04:11.000Z",
+  "updated_at": "2026-10-15T21:37:18.000Z",
   "license": "openmdw-1.1",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

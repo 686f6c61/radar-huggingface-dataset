@@ -5,7 +5,7 @@
   "author": "pockettravel",
   "url": "https://huggingface.co/pockettravel/qwen3.5-0.8b-travel-en-GGUF",
   "created_at": "2026-10-11T18:08:25.000Z",
-  "updated_at": "2026-10-13T13:14:05.000Z",
+  "updated_at": "2026-10-15T08:47:48.000Z",
   "license": "cc-by-sa-4.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,7 +31,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 127,
+  "downloads_30d": 146,
   "trending_score": 0,
   "parameters": 752393024,
   "parameters_human": "752.4M",

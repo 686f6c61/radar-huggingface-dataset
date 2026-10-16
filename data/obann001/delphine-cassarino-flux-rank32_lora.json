@@ -5,7 +5,7 @@
   "author": "obann001",
   "url": "https://huggingface.co/obann001/Delphine-Cassarino-Flux-Rank32_lora",
   "created_at": "2026-10-09T15:16:52.000Z",
-  "updated_at": "2026-10-09T15:19:22.000Z",
+  "updated_at": "2026-10-15T10:01:14.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-to-image",
@@ -25,11 +25,11 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 5,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 306868230,
+  "storage_bytes": 307041227,
   "storage_human": "307 MB",
   "base_model": "black-forest-labs/FLUX.1-dev",
   "formats": [
@@ -38,8 +38,8 @@
   ],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-10-10T02:40:56.246Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -32,9 +32,10 @@
     "endpoints_compatible",
     "8-bit",
     "modelopt",
+    "deploy:sagemaker",
     "region:us"
   ],
-  "likes": 108,
+  "likes": 124,
   "downloads_30d": 331,
   "trending_score": 101,
   "parameters": 483807947264,

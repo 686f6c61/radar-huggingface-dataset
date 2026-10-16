@@ -5,7 +5,7 @@
   "author": "DavidAU",
   "url": "https://huggingface.co/DavidAU/Qwen3.8-Flash-Next-Turbo-Brilliance-50x-Reasoning-Instruct-GSQ-RCO-GGUF",
   "created_at": "2026-10-13T04:24:27.000Z",
-  "updated_at": "2026-10-15T07:41:51.000Z",
+  "updated_at": "2026-10-16T02:31:39.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

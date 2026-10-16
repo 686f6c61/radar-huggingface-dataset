@@ -5,7 +5,7 @@
   "author": "openbmb",
   "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-DSpark",
   "created_at": "2026-10-08T04:26:19.000Z",
-  "updated_at": "2026-10-12T14:29:57.000Z",
+  "updated_at": "2026-10-15T04:24:21.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

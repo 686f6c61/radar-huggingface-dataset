@@ -30,13 +30,13 @@
     "8-bit",
     "region:us"
   ],
-  "likes": 8,
-  "downloads_30d": 607,
+  "likes": 9,
+  "downloads_30d": 673,
   "trending_score": 0,
   "parameters": 174939049131,
   "parameters_human": "174.94B",
-  "storage_bytes": 738943386309,
-  "storage_human": "738.9 GB",
+  "storage_bytes": 915684075179,
+  "storage_human": "915.7 GB",
   "base_model": "local-inference-lab/GLM-5.3-Flash-NVFP4-MXFP8-CSF-QAD",
   "formats": [
     "safetensors"

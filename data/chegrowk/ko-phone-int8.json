@@ -5,7 +5,7 @@
   "author": "chegrowk",
   "url": "https://huggingface.co/chegrowk/ko-phone-int8",
   "created_at": "2026-10-04T17:39:19.000Z",
-  "updated_at": "2026-10-04T18:25:53.000Z",
+  "updated_at": "2026-10-15T19:13:25.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 29,
+  "downloads_30d": 30,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

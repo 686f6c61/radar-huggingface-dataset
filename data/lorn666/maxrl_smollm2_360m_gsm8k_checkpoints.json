@@ -5,7 +5,7 @@
   "author": "lorn666",
   "url": "https://huggingface.co/lorn666/maxrl_smollm2_360m_gsm8k_checkpoints",
   "created_at": "2026-10-11T17:26:15.000Z",
-  "updated_at": "2026-10-11T17:27:17.000Z",
+  "updated_at": "2026-10-15T12:42:41.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,8 +34,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 18091872800,
-  "storage_human": "18.1 GB",
+  "storage_bytes": 21710247360,
+  "storage_human": "21.7 GB",
   "base_model": "HuggingFaceTB/SmolLM2-360M-Instruct",
   "formats": [
     "safetensors"

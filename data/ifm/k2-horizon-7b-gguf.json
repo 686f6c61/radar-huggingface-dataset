@@ -5,7 +5,7 @@
   "author": "IFM",
   "url": "https://huggingface.co/IFM/K2-Horizon-7B-GGUF",
   "created_at": "2026-09-03T12:53:30.000Z",
-  "updated_at": "2026-10-02T13:23:24.000Z",
+  "updated_at": "2026-10-15T21:56:02.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -33,7 +33,7 @@
     "conversational"
   ],
   "likes": 76,
-  "downloads_30d": 35214,
+  "downloads_30d": 33516,
   "trending_score": 10,
   "parameters": 8999178240,
   "parameters_human": "9.00B",

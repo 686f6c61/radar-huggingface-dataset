@@ -5,7 +5,7 @@
   "author": "drashutoshspace",
   "url": "https://huggingface.co/drashutoshspace/moonbot_act_tf",
   "created_at": "2026-09-27T19:11:14.000Z",
-  "updated_at": "2026-09-27T21:41:48.000Z",
+  "updated_at": "2026-10-15T09:38:50.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -17,6 +17,7 @@
     "act",
     "robotics",
     "moonbot",
+    "dataset:gdiazsrl/three_blocks_stack_sep22",
     "license:apache-2.0",
     "region:us"
   ],

@@ -5,7 +5,7 @@
   "author": "Makio64",
   "url": "https://huggingface.co/Makio64/embeddinggemma-300m-jurilix-gguf",
   "created_at": "2026-09-20T17:49:54.000Z",
-  "updated_at": "2026-09-20T17:50:02.000Z",
+  "updated_at": "2026-10-15T08:19:15.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": "sentence-similarity",
@@ -24,13 +24,13 @@
     "region:us",
     "feature-extraction"
   ],
-  "likes": 0,
-  "downloads_30d": 131,
+  "likes": 1,
+  "downloads_30d": 132,
   "trending_score": 0,
   "parameters": 307581696,
   "parameters_human": "307.6M",
-  "storage_bytes": 333590784,
-  "storage_human": "334 MB",
+  "storage_bytes": 667181568,
+  "storage_human": "667 MB",
   "base_model": "google/embeddinggemma-300m",
   "formats": [
     "gguf"

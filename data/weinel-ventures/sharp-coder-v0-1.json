@@ -5,7 +5,7 @@
   "author": "Weinel-Ventures",
   "url": "https://huggingface.co/Weinel-Ventures/Sharp-Coder-V0.1",
   "created_at": "2026-09-30T00:17:03.000Z",
-  "updated_at": "2026-09-30T00:32:59.000Z",
+  "updated_at": "2026-10-15T23:16:29.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 963,
+  "downloads_30d": 979,
   "trending_score": 0,
   "parameters": 160977408,
   "parameters_human": "161.0M",

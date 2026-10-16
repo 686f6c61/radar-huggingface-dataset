@@ -5,7 +5,7 @@
   "author": "brucoder",
   "url": "https://huggingface.co/brucoder/winter-frost-1-extra-v3",
   "created_at": "2026-10-09T15:06:12.000Z",
-  "updated_at": "2026-10-09T15:06:28.000Z",
+  "updated_at": "2026-10-15T15:02:06.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": 111204864,
   "parameters_human": "111.2M",
-  "storage_bytes": 444834432,
-  "storage_human": "445 MB",
+  "storage_bytes": 889668864,
+  "storage_human": "890 MB",
   "base_model": null,
   "formats": [
     "safetensors"

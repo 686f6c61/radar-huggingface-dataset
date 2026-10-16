@@ -5,7 +5,7 @@
   "author": "Ikaru2lt",
   "url": "https://huggingface.co/Ikaru2lt/RobinHood",
   "created_at": "2026-10-11T18:30:40.000Z",
-  "updated_at": "2026-10-11T19:25:16.000Z",
+  "updated_at": "2026-10-15T22:16:34.000Z",
   "license": "agpl-3.0",
   "license_family": "oss",
   "pipeline_tag": "time-series-forecasting",
@@ -15,8 +15,8 @@
   ],
   "tags": [
     "python",
-    "time-series-forecasting",
     "xai",
+    "time-series-forecasting",
     "pytorch",
     "captum",
     "deep-learning",

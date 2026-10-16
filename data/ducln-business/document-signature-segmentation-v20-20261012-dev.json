@@ -5,7 +5,7 @@
   "author": "ducln-business",
   "url": "https://huggingface.co/ducln-business/document-signature-segmentation-v20-20261012-dev",
   "created_at": "2026-10-13T01:54:21.000Z",
-  "updated_at": "2026-10-13T02:12:22.000Z",
+  "updated_at": "2026-10-15T10:40:01.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "image-segmentation",

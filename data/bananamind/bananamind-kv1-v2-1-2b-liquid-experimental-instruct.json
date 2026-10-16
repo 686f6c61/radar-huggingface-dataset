@@ -5,7 +5,7 @@
   "author": "BananaMind",
   "url": "https://huggingface.co/BananaMind/BananaMind-KV1-v2-1.2B-Liquid-Experimental-Instruct",
   "created_at": "2026-10-13T17:03:22.000Z",
-  "updated_at": "2026-10-15T02:44:03.000Z",
+  "updated_at": "2026-10-15T09:59:03.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -19,6 +19,7 @@
     "kv-cache-aware-training",
     "2-bit",
     "experimental",
+    "custom_code",
     "dataset:openbmb/UltraData-SFT-2605",
     "dataset:openbmb/UltraData-SFT-Agent-2609",
     "dataset:openbmb/Ultra-FineWeb",
@@ -30,12 +31,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 4,
   "trending_score": 0,
   "parameters": 1170340608,
   "parameters_human": "1.17B",
-  "storage_bytes": 133421517617,
-  "storage_human": "133.4 GB",
+  "storage_bytes": 21066540841,
+  "storage_human": "21.1 GB",
   "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
   "formats": [
     "safetensors"

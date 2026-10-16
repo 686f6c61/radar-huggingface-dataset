@@ -5,7 +5,7 @@
   "author": "vllm-sr",
   "url": "https://huggingface.co/vllm-sr/d3-edge",
   "created_at": "2026-10-10T23:49:23.000Z",
-  "updated_at": "2026-10-14T17:14:43.000Z",
+  "updated_at": "2026-10-15T05:12:15.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "zero-shot-classification",

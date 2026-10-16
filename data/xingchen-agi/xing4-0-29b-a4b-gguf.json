@@ -5,7 +5,7 @@
   "author": "XingChen-AGI",
   "url": "https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B-GGUF",
   "created_at": "2026-09-16T13:23:49.000Z",
-  "updated_at": "2026-09-20T03:39:45.000Z",
+  "updated_at": "2026-10-16T04:13:39.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -23,13 +23,13 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 158,
-  "downloads_30d": 21545,
+  "likes": 159,
+  "downloads_30d": 21899,
   "trending_score": 11,
   "parameters": 31215031088,
   "parameters_human": "31.22B",
-  "storage_bytes": 40208025632,
-  "storage_human": "40.2 GB",
+  "storage_bytes": 188573421568,
+  "storage_human": "188.6 GB",
   "base_model": null,
   "formats": [
     "gguf"

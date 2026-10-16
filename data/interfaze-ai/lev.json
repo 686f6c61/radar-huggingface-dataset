@@ -5,7 +5,7 @@
   "author": "interfaze-ai",
   "url": "https://huggingface.co/interfaze-ai/lev",
   "created_at": "2026-09-24T06:33:36.000Z",
-  "updated_at": "2026-10-02T00:02:03.000Z",
+  "updated_at": "2026-10-15T06:53:35.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "zero-shot-classification",
@@ -32,11 +32,11 @@
     "region:us"
   ],
   "likes": 125,
-  "downloads_30d": 1042,
+  "downloads_30d": 1062,
   "trending_score": 12,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 205717719,
+  "storage_bytes": 206243019,
   "storage_human": "206 MB",
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [

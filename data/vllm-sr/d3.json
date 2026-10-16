@@ -5,7 +5,7 @@
   "author": "vllm-sr",
   "url": "https://huggingface.co/vllm-sr/d3",
   "created_at": "2026-10-10T09:38:30.000Z",
-  "updated_at": "2026-10-14T17:14:52.000Z",
+  "updated_at": "2026-10-15T07:19:31.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "zero-shot-classification",
@@ -30,7 +30,7 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 199,
+  "likes": 200,
   "downloads_30d": 2747,
   "trending_score": 194,
   "parameters": 26085330160,
