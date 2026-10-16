@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "kouikaya/audio_cls_ljg",
+  "slug": "kouikaya-audio_cls_ljg",
+  "author": "kouikaya",
+  "url": "https://huggingface.co/kouikaya/audio_cls_ljg",
+  "created_at": "2026-10-16T03:16:16.000Z",
+  "updated_at": "2026-10-16T03:16:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "audio-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "wav2vec2",
+    "audio-classification",
+    "generated_from_trainer",
+    "base_model:Kkonjeong/wav2vec2-base-korean",
+    "base_model:finetune:Kkonjeong/wav2vec2-base-korean",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 94572174,
+  "parameters_human": "94.6M",
+  "storage_bytes": 378319905,
+  "storage_human": "378 MB",
+  "base_model": "Kkonjeong/wav2vec2-base-korean",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

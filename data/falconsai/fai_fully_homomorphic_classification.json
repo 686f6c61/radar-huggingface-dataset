@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Falconsai/fai_fully_homomorphic_classification",
+  "slug": "falconsai-fai_fully_homomorphic_classification",
+  "author": "Falconsai",
+  "url": "https://huggingface.co/Falconsai/fai_fully_homomorphic_classification",
+  "created_at": "2026-10-16T17:04:56.000Z",
+  "updated_at": "2026-10-16T17:09:58.000Z",
+  "license": "falconsai-model-license-v1",
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "concrete-ml",
+  "languages": [],
+  "tags": [
+    "concrete-ml",
+    "fhe",
+    "tfhe",
+    "fully-homomorphic-encryption",
+    "encrypted-inference",
+    "privacy-preserving",
+    "image-classification",
+    "person-detection",
+    "coco",
+    "dataset:detection-datasets/coco",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2856872,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Binary image classification (person / no_person), evaluated under FHE simulation",
+      "dataset": "COCO-2017 val (held-out, 4,247 images)",
+      "metric": "Accuracy (FHE-simulated, 95% CI 0.800–0.824)",
+      "value": 0.8119
+    },
+    {
+      "task": "Binary image classification (person / no_person), evaluated under FHE simulation",
+      "dataset": "COCO-2017 val (held-out, 4,247 images)",
+      "metric": "ROC-AUC (FHE-simulated, 95% CI 0.874–0.894)",
+      "value": 0.8839
+    },
+    {
+      "task": "Binary image classification (person / no_person), evaluated under FHE simulation",
+      "dataset": "COCO-2017 val (held-out, 4,247 images)",
+      "metric": "F1 (FHE-simulated, 95% CI 0.773–0.802)",
+      "value": 0.7874
+    }
+  ],
+  "sources": []
+}

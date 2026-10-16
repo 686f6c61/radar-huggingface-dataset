@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "OussamaBenSlama/e5-small-dialect2MSA",
+  "slug": "oussamabenslama-e5-small-dialect2msa",
+  "author": "OussamaBenSlama",
+  "url": "https://huggingface.co/OussamaBenSlama/e5-small-dialect2MSA",
+  "created_at": "2026-10-16T02:53:55.000Z",
+  "updated_at": "2026-10-16T16:13:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "embeddings",
+    "feature-extraction",
+    "semantic-similarity",
+    "information-retrieval",
+    "semantic-search",
+    "cross-lingual",
+    "arabic",
+    "msa",
+    "dialect",
+    "sentence-similarity",
+    "ar",
+    "en",
+    "base_model:intfloat/multilingual-e5-small",
+    "base_model:finetune:intfloat/multilingual-e5-small",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": 117653760,
+  "parameters_human": "117.7M",
+  "storage_bytes": 252413084,
+  "storage_human": "252 MB",
+  "base_model": "intfloat/multilingual-e5-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "尤格萨隆怎么单刷 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/5225f26b517e29e6fa0908f2.html",
+      "snippet": "Sep 8, 2016 · 尤格萨隆怎么单刷,尤格萨隆是奥杜尔里的最后最终BOSS，需要经过3个阶段打。现在版本大家都可以轻松单刷，无非是 …"
+    },
+    {
+      "title": "word中的表格怎么制作下拉菜单选项 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/046a7b3e69d5eff9c37fa952.html",
+      "snippet": "Mar 3, 2019 · word中的表格怎么制作下拉菜单选项,在word中插入表格后，有时候为了保证内容填写的准确性和一致性，我们可能需要 …"
+    },
+    {
+      "title": "Photoshop 如何从选区创建工作路径-百度经验",
+      "url": "https://jingyan.baidu.com/article/f25ef254a0ebbe482d1b8262.html",
+      "snippet": "Sep 1, 2017 · 本经验介绍在Photoshop中，如何从选区方便的创建路径。这样做的好处是，路径可以保存下来。并且可以很方便的描 …"
+    },
+    {
+      "title": "问道伏魔记全攻略 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/84b4f5659ad08960f7da327a.html",
+      "snippet": "Sep 7, 2016 · 第二章：伏魔记之再起风云 (102级剧情任务) 1.领取任务及限制： 人物达到102级并完成了101级伏魔记剧情任务，可到 …"
+    },
+    {
+      "title": "支付宝已实名怎么更换实名人 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/4f34706e9dd1d6a387b56da2.html",
+      "snippet": "Sep 23, 2019 · 输入 【修改实名认证】，选择 【A】 选项，如图所示。"
+    }
+  ]
+}

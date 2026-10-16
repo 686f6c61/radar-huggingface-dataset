@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ml-resources/MOSS-Image-SFT",
+  "slug": "ml-resources-moss-image-sft",
+  "author": "ml-resources",
+  "url": "https://huggingface.co/ml-resources/MOSS-Image-SFT",
+  "created_at": "2026-10-16T17:15:53.000Z",
+  "updated_at": "2026-10-16T17:15:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "moss-image",
+    "text-to-image",
+    "en",
+    "zh",
+    "base_model:OpenMOSS-Team/MOSS-Image-Base",
+    "base_model:finetune:OpenMOSS-Team/MOSS-Image-Base",
+    "license:apache-2.0",
+    "diffusers:MOSSImagePipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5082308624,
+  "parameters_human": "5.08B",
+  "storage_bytes": 27228815653,
+  "storage_human": "27.2 GB",
+  "base_model": "OpenMOSS-Team/MOSS-Image-Base",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ML — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/ML",
+      "snippet": "mètre linéaire (ml), unité de longueur dans une direction utile, c'est-à-dire sans tenir compte des autres dimensions (largeur, hauteur, …"
+    },
+    {
+      "title": "ML - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/ML",
+      "snippet": "This disambiguation page lists articles associated with the title ML. If an internal link incorrectly led you here, you may wish to change …"
+    },
+    {
+      "title": "Mobile Legends: Bang Bang - Heroes and Gameplay Insights",
+      "url": "https://www.mobilelegends.com/id/",
+      "snippet": "Sep 28, 2026 · Dive into Mobile Legends: Bang Bang! Explore heroes, skills, and strategies in this popular MOBA, and stay updated …"
+    },
+    {
+      "title": "Mobile Legends: Bang Bang APK for Android Download",
+      "url": "https://apkpure.com/mobile-legends-app/com.mobile.legends",
+      "snippet": "Feb 2, 2016 · Mobile Legends: Bang Bang Latest Version APK download for Android. Mobile Legends: Bang Bang is a 5v5 MOBA …"
+    },
+    {
+      "title": "Machine Learning Tutorial - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-tutorial/",
+      "snippet": "Oct 1, 2026 · Machine Learning (ML) is a branch of Artificial Intelligence that enables computers to learn from data and make …"
+    }
+  ]
+}

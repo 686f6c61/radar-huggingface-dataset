@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Comfy-Org/MOSS-Image",
+  "slug": "comfy-org-moss-image",
+  "author": "Comfy-Org",
+  "url": "https://huggingface.co/Comfy-Org/MOSS-Image",
+  "created_at": "2026-10-16T12:42:32.000Z",
+  "updated_at": "2026-10-16T14:50:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "base_model:OpenMOSS-Team/MOSS-Image-Base",
+    "base_model:finetune:OpenMOSS-Team/MOSS-Image-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 27,
+  "downloads_30d": 0,
+  "trending_score": 27,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 48584633444,
+  "storage_human": "48.6 GB",
+  "base_model": "OpenMOSS-Team/MOSS-Image-Base, OpenMOSS-Team/MOSS-Image-SFT",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comfy - Professional Control of Visual AI",
+      "url": "https://comfy.org/",
+      "snippet": "Comfy is the AI creation engine for visual professionals who demand control over every model, every parameter, and every output.Read more"
+    },
+    {
+      "title": "Download Comfy Desktop - Run AI on Your Hardware",
+      "url": "https://comfy.org/download",
+      "snippet": "Why would I pay for Comfy Cloud if Desktop is free? + Your machine or ours. Cloud gives you powerful GPUs on demand, pre …"
+    },
+    {
+      "title": "COMFY®",
+      "url": "https://comfy.eu/fr/comfy/",
+      "snippet": "Notre gamme diversifiée de produits COMFY® regroupent des jouets intérieurs et extérieurs pour enfants, des aides à la natation, …"
+    },
+    {
+      "title": "Comfy Cloud: Run ComfyUI online | Zero Setup, Powerful GPUs, …",
+      "url": "https://cloud.comfy.org/",
+      "snippet": "Bring your creative ideas to life with Comfy Cloud. Build and run your workflows to generate stunning images and videos instantly …"
+    },
+    {
+      "title": "ComfyUI France - La communauté francophone de génération IA",
+      "url": "https://comfyui.fr/",
+      "snippet": "Comfy Registry 800+ custom nodes vérifiés. Trouvez les extensions parfaites pour votre workflow."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Efficient-Large-Model/Sol-H3-VAE",
+  "slug": "efficient-large-model-sol-h3-vae",
+  "author": "Efficient-Large-Model",
+  "url": "https://huggingface.co/Efficient-Large-Model/Sol-H3-VAE",
+  "created_at": "2026-10-16T17:17:45.000Z",
+  "updated_at": "2026-10-16T17:18:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "minimax-h3",
+    "vae",
+    "video",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6485664599,
+  "storage_human": "6.5 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Définitions : efficient - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/efficient/27932",
+      "snippet": "recommandation : Dans l'usage courant, non technique, préférer efficacité, notamment pour parler d'une personne. De même, …"
+    },
+    {
+      "title": "Quelle est la différence entre efficace et efficient - toutCOMMENT",
+      "url": "https://business.toutcomment.com/article/quelle-est-la-difference-entre-efficace-et-efficient-12105.html",
+      "snippet": "Feb 20, 2026 · \"Efficient\" est relatif à l’efficacité, mais se rapporte à la relation entre les objectifs atteints et les ressources utilisées …"
+    },
+    {
+      "title": "Définition de efficient | Dictionnaire français - La langue française",
+      "url": "https://www.lalanguefrancaise.com/dictionnaire/definition/efficient",
+      "snippet": "Feb 21, 2024 · Définitions de « efficient » Efficient - Adjectif (Philosophie) Qui est cause directe d'un effet. (Anglicisme, courant) Qui …"
+    },
+    {
+      "title": "efficient - Définitions, synonymes, prononciation, exemples | Dico en ...",
+      "url": "https://dictionnaire.lerobert.com/definition/efficient",
+      "snippet": "Définition, exemples et prononciation de efficient : Efficace, dynamique, capable de rendement.…"
+    },
+    {
+      "title": "Efficient : Définition simple et facile du dictionnaire",
+      "url": "https://www.linternaute.fr/dictionnaire/fr/definition/efficient/",
+      "snippet": "Efficace. Qui permet d' obtenir l' effet spécifique demandé, attendu, voulu rapidement. Exemple : Un employé épanoui est plus efficient."
+    }
+  ]
+}

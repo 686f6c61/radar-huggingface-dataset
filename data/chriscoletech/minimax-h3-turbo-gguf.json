@@ -5,7 +5,7 @@
   "author": "ChrisColeTech",
   "url": "https://huggingface.co/ChrisColeTech/minimax-h3-turbo-GGUF",
   "created_at": "2026-08-11T14:36:56.000Z",
-  "updated_at": "2026-09-17T15:32:11.000Z",
+  "updated_at": "2026-10-15T15:35:47.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "text-to-video",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 22,
-  "downloads_30d": 10975,
+  "downloads_30d": 11201,
   "trending_score": 9,
   "parameters": 20111438894,
   "parameters_human": "20.11B",

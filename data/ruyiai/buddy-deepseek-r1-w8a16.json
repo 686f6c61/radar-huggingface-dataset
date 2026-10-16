@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "RuyiAI/buddy-deepseek-r1-w8a16",
+  "slug": "ruyiai-buddy-deepseek-r1-w8a16",
+  "author": "RuyiAI",
+  "url": "https://huggingface.co/RuyiAI/buddy-deepseek-r1-w8a16",
+  "created_at": "2026-10-16T03:21:05.000Z",
+  "updated_at": "2026-10-16T03:21:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2458946871,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RuyiAI/buddy-deepseek-r1-w8a16 - Hugging Face",
+      "url": "https://huggingface.co/RuyiAI/buddy-deepseek-r1-w8a16",
+      "snippet": "RuyiAI / buddy-deepseek-r1-w8a16 Like 0 Follow RuyiAI RISC-V AI Software Stack 2 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "RuyiAI/buddy-deepseek-r1-w8a8 - Hugging Face",
+      "url": "https://huggingface.co/RuyiAI/buddy-deepseek-r1-w8a8",
+      "snippet": "RuyiAI / buddy-deepseek-r1-w8a8 Like 0 Follow RuyiAI RISC-V AI Software Stack 2 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "GitHub - deepseek-ai/DeepSeek-R1",
+      "url": "https://github.com/deepseek-ai/DeepSeek-R1",
+      "snippet": "However, DeepSeek-R1-Zero encounters challenges such as endless repetition, poor readability, and language mixing. To address these issues and further enhance reasoning performance, we introduce DeepSeek-R1, which incorporates cold-start data before RL. DeepSeek-R1 achieves performance comparable to OpenAI-o1 across math, code, and reasoning tasks."
+    },
+    {
+      "title": "buddy-mlir/models/deepseek_r1/specs at main · buddy-compiler ... - GitHub",
+      "url": "https://github.com/buddy-compiler/buddy-mlir/tree/main/models/deepseek_r1/specs",
+      "snippet": "An MLIR-based compiler framework bridges DSLs (domain-specific languages) to DSAs (domain-specific architectures). - buddy-compiler/buddy-mlir"
+    },
+    {
+      "title": "DeepSeek-R1 · Models · The Open-Source AI Stack",
+      "url": "https://www.open-source-ai.tech/models/deepseek-r1",
+      "snippet": "DeepSeek-R1 is the first openly-released reasoning model that was competitive with OpenAI o1, and the paper that accompanied it (published Jan 22, 2025) became one of the most-read AI papers of the year. The technical story was that pure reinforcement learning post-training, without any supervised fine-tuning on human reasoning traces, could elicit chain-of-thought reasoning that generalized ..."
+    }
+  ]
+}

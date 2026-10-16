@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "phantomhj/audio_cls_1016",
+  "slug": "phantomhj-audio_cls_1016",
+  "author": "phantomhj",
+  "url": "https://huggingface.co/phantomhj/audio_cls_1016",
+  "created_at": "2026-10-16T03:19:04.000Z",
+  "updated_at": "2026-10-16T03:19:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "audio-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "wav2vec2",
+    "audio-classification",
+    "generated_from_trainer",
+    "base_model:Kkonjeong/wav2vec2-base-korean",
+    "base_model:finetune:Kkonjeong/wav2vec2-base-korean",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 94572174,
+  "parameters_human": "94.6M",
+  "storage_bytes": 378319905,
+  "storage_human": "378 MB",
+  "base_model": "Kkonjeong/wav2vec2-base-korean",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Carte des océans du monde - Atlasocio.com",
+      "url": "https://atlasocio.com/cartes/recherche/selection/oceans.php",
+      "snippet": "Carte relative aux océans du monde. En géographie, un océan désigne une vaste étendue d'eau salée comprise entre deux …"
+    },
+    {
+      "title": "Les 5 océans et les grandes mers sur la carte du monde",
+      "url": "https://cartedumonde.org/oceans-et-mers/",
+      "snippet": "L'eau couvre 71 % de la surface de la Terre, répartie en 5 océans et des dizaines de mers. Situez-les sur la carte et découvrez la …"
+    },
+    {
+      "title": "Océan Du Monde Carte",
+      "url": "https://fr.mapsofworld.com/world-ocean-map.htm",
+      "snippet": "La carte d'océan du monde montre l'endroit des océans principaux et des mers du monde ainsi qu'une représentation du fond …"
+    },
+    {
+      "title": "Carte du monde des océans : repères & 5 océans - world-maps.fr",
+      "url": "https://world-maps.fr/carte-monde-oceans-5-oceans-mers/",
+      "snippet": "Aug 12, 2026 · Découvrez une carte du monde océanique : 5 océans, principales mers et repères pour les localiser facilement sur le …"
+    },
+    {
+      "title": "Carte du monde interactive en français (gratuite, plein écran)",
+      "url": "https://cartedumonde.org/carte-du-monde-interactive/",
+      "snippet": "Carte du monde interactive gratuite et en français : zoomez sur les 197 pays, les capitales, les continents et les océans. Navigation …"
+    }
+  ]
+}

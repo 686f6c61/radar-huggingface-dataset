@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "ionovikov/cnn-transformer-contrastive",
+  "slug": "ionovikov-cnn-transformer-contrastive",
+  "author": "ionovikov",
+  "url": "https://huggingface.co/ionovikov/cnn-transformer-contrastive",
+  "created_at": "2026-10-16T17:28:38.000Z",
+  "updated_at": "2026-10-16T17:28:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

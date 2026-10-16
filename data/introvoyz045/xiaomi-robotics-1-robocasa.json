@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "introvoyz045/Xiaomi-Robotics-1-RoboCasa",
+  "slug": "introvoyz045-xiaomi-robotics-1-robocasa",
+  "author": "introvoyz045",
+  "url": "https://huggingface.co/introvoyz045/Xiaomi-Robotics-1-RoboCasa",
+  "created_at": "2026-10-16T03:31:57.000Z",
+  "updated_at": "2026-10-16T03:31:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mibot",
+    "feature-extraction",
+    "robotics",
+    "vision-language-action",
+    "robocasa",
+    "qwen3-vl",
+    "custom_code",
+    "arxiv:2607.15330",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5053149696,
+  "parameters_human": "5.05B",
+  "storage_bytes": 10117855990,
+  "storage_human": "10.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "補正下着 - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLUA7Hrv11n7Api34Y1LURretZhfM_zy79",
+      "snippet": "ここでは補正下着がどうして必要なのか、その大切さをご説明いたします。 変化していく女性の身体だからこそ大切なことは正し …"
+    },
+    {
+      "title": "#補正下着 - YouTube",
+      "url": "https://www.youtube.com/hashtag/%E8%A3%9C%E6%AD%A3%E4%B8%8B%E7%9D%80",
+      "snippet": "一枚三役：ブラ、キャミソール、補正下着などの機能性兼ね備える。 補正下着の営業電話！ あまりにも理不尽で不愉快だったので …"
+    },
+    {
+      "title": "スタイルアップを叶える補正下着ポータル hoseist（ホセイスト）",
+      "url": "https://www.hoseist.com/",
+      "snippet": "ハミ肉や脇肉がでいる原因や対策法、おすすめの対処法と補正下着の選び方について、わかりやすくまとめました。 「最近お腹が …"
+    },
+    {
+      "title": "【徹底比較】補正下着のおすすめ人気ランキング【2026年10月】",
+      "url": "https://my-best.com/12371",
+      "snippet": "2 days ago · ここでは、バストの垂れ・ぽっこりお腹・お尻の垂れ・くびれ・全身補正といった代表的な悩み別に、適した補正下着 …"
+    },
+    {
+      "title": "補正下着とは？仕組み・役割をやさしく解説 - はじめての補正下着",
+      "url": "https://www.diana.co.jp/navi/hosei-shitagi/hoseishitagi-shikumi/",
+      "snippet": "Feb 6, 2026 · この記事では、補正下着とは何かを基本から丁寧に解説し、誤解されやすいポイントや選び方の考え方までお伝えし …"
+    }
+  ]
+}

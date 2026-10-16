@@ -1,0 +1,155 @@
+{
+  "schema": 1,
+  "id": "patronus-studio/decision-steering-gate",
+  "slug": "patronus-studio-decision-steering-gate",
+  "author": "patronus-studio",
+  "url": "https://huggingface.co/patronus-studio/decision-steering-gate",
+  "created_at": "2026-10-16T18:58:33.000Z",
+  "updated_at": "2026-10-16T18:59:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "de",
+    "es",
+    "fr",
+    "it",
+    "nl",
+    "pl",
+    "pt",
+    "ar",
+    "hi",
+    "ja",
+    "ru",
+    "tr",
+    "vi",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "text-classification",
+    "decision-steering",
+    "prompt-injection",
+    "indirect-prompt-injection",
+    "ai-agent-security",
+    "guardrails",
+    "llm-security",
+    "ai-safety",
+    "decision-model",
+    "jev-like",
+    "model-agnostic",
+    "erase-and-check",
+    "claim-detection",
+    "security",
+    "multilingual",
+    "mmbert",
+    "cpu",
+    "patronus",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "it",
+    "nl",
+    "pl",
+    "pt",
+    "ar",
+    "hi",
+    "ja",
+    "ru",
+    "tr",
+    "vi",
+    "zh",
+    "base_model:jhu-clsp/mmBERT-small",
+    "base_model:finetune:jhu-clsp/mmBERT-small",
+    "license:mit",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 140642306,
+  "parameters_human": "140.6M",
+  "storage_bytes": 597614725,
+  "storage_human": "598 MB",
+  "base_model": "jhu-clsp/mmBERT-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Claim detection",
+      "dataset": "Decision-steering benchmark (customer service and security)",
+      "metric": "AUROC",
+      "value": 96.9
+    },
+    {
+      "task": "Claim detection",
+      "dataset": "Decision-steering benchmark (customer service and security)",
+      "metric": "Claims found at threshold 0.3",
+      "value": 83.5
+    },
+    {
+      "task": "Claim detection",
+      "dataset": "Steering benchmark B (experiment claims)",
+      "metric": "AUROC",
+      "value": 99.6
+    },
+    {
+      "task": "Claim detection",
+      "dataset": "Steering benchmark B (experiment claims)",
+      "metric": "Claims found at threshold 0.3",
+      "value": 92.3
+    },
+    {
+      "task": "Decision steering defence",
+      "dataset": "Decision-steering benchmark (6 decision models x 5 tasks)",
+      "metric": "Attack success without the gate (mean of 29 model-task pairs)",
+      "value": 28.1
+    },
+    {
+      "task": "Decision steering defence",
+      "dataset": "Decision-steering benchmark (6 decision models x 5 tasks)",
+      "metric": "Attack success with the gate (mean of 29 model-task pairs)",
+      "value": 0.3
+    }
+  ],
+  "sources": [
+    {
+      "title": "Patronus Protect (u/PatronusProtect) - Reddit",
+      "url": "https://www.reddit.com/user/PatronusProtect/",
+      "snippet": "We published Wolf Defender Jev, a small decision model for AI-agent security. ... https://huggingface.co/patronus-studio/wolf-defender-jev#decision-steering ..."
+    },
+    {
+      "title": "Probing Large Language Models' Understanding of Adversarial ...",
+      "url": "https://arxiv.org/html/2404.17120v2",
+      "snippet": "29.04.2024 ... ... model decisions (Carlini and Wagner, 2017) . ... At the same time, fine-tuning models to forget certain content complicates steering the model ..."
+    },
+    {
+      "title": "iConference — AI news archive",
+      "url": "https://iconference.ch/news-archiv/?lang=en",
+      "snippet": "AI proposes role, counterparty, goal and reply; responsibilities, deadlines, rights and approvals are fixed rules in the code, and staff review and decide."
+    },
+    {
+      "title": "How to Measure AI Consulting ROI: A Practitioner's Guide",
+      "url": "https://simorconsulting.com/blog/how-to-measure-ai-consulting-roi-a-practitioners-guide/",
+      "snippet": "10.07.2026 ... Error or rework rate for the current process; Volume of work processed per week or month; Decision latency: how long people wait for answers ..."
+    },
+    {
+      "title": "AI Pricing Facts & Trivia - UsagePricing",
+      "url": "https://www.usagepricing.com/blueprint/trivia",
+      "snippet": "Asana's AI Studio credit system multiplies underlying model cost as much as ... Patronus AI's Lynx hallucination-detection model (July 2024) was open ..."
+    }
+  ]
+}

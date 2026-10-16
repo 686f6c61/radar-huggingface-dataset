@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-66-lora",
+  "slug": "runninghubai-rh-66-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-66-lora",
+  "created_at": "2026-10-16T17:12:02.000Z",
+  "updated_at": "2026-10-16T17:13:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 630945087,
+  "storage_human": "631 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Weekly Releases (Oct 09, 2026) - a merve Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/merve/weekly-releases-oct-09-2026",
+      "snippet": "vor 7 Tagen ... akatz-ai/MiniMax-H3-Person-Remover-LoRA. Video-to-Video • Updated ... RunningHubAI/rh-qwen-image-2.1v2.0-lora. Text-to-Image • Updated 5 ..."
+    },
+    {
+      "title": "merve - Hugging Face",
+      "url": "https://huggingface.co/merve/collections",
+      "snippet": "LLaVA-Gemma: Accelerating Multimodal Foundation Models with a Compact Language Model ... RunningHubAI/rh-qwen-image-2.1-lora-2104918997757157378. Text-to-Image ..."
+    },
+    {
+      "title": "Weekly Report 2026/10/07 (wed)｜takio koizumi - note",
+      "url": "https://note.com/takion0105/n/nf423acbc5320",
+      "snippet": "07.10.2026 ... MiniMaxH3など様々なモデルに対応できるのも良いです。 [画像 / LoRA] Qwen-image-2.1 光影溶图. RunningHubAI/rh-qwen-image-2.1-lora ... [記事 / AI] AI ..."
+    },
+    {
+      "title": "Нейронавт | Нейросети в творчестве – Telegram",
+      "url": "https://t.me/s/GreenNeuralRobots?q=%23nsfw",
+      "snippet": "modelscope.ai/models/DiffSynth-Studio/Qwen-Image-2.1-LayerExtract ... huggingface.co/RunningHubAI/rh-qwen-image-2.1v2.0-lora - интеграция объекта ..."
+    }
+  ]
+}

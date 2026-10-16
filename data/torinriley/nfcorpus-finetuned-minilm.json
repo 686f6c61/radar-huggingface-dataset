@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "torinriley/nfcorpus-finetuned-minilm",
+  "slug": "torinriley-nfcorpus-finetuned-minilm",
+  "author": "torinriley",
+  "url": "https://huggingface.co/torinriley/nfcorpus-finetuned-minilm",
+  "created_at": "2026-10-16T17:27:32.000Z",
+  "updated_at": "2026-10-16T17:27:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "feature-extraction",
+    "sentence-similarity",
+    "retrieval",
+    "en",
+    "dataset:BeIR/nfcorpus",
+    "base_model:sentence-transformers/all-MiniLM-L6-v2",
+    "base_model:finetune:sentence-transformers/all-MiniLM-L6-v2",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22713216,
+  "parameters_human": "22.7M",
+  "storage_bytes": 90864192,
+  "storage_human": "91 MB",
+  "base_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

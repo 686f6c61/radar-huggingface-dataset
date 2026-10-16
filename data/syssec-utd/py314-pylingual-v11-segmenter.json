@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "syssec-utd/py314-pylingual-v11-segmenter",
+  "slug": "syssec-utd-py314-pylingual-v11-segmenter",
+  "author": "syssec-utd",
+  "url": "https://huggingface.co/syssec-utd/py314-pylingual-v11-segmenter",
+  "created_at": "2026-10-16T03:15:37.000Z",
+  "updated_at": "2026-10-16T03:15:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "token-classification",
+    "generated_from_trainer",
+    "base_model:syssec-utd/py314-pylingual-v11-mlm",
+    "base_model:finetune:syssec-utd/py314-pylingual-v11-mlm",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 108887043,
+  "parameters_human": "108.9M",
+  "storage_bytes": 435577349,
+  "storage_human": "436 MB",
+  "base_model": "syssec-utd/py314-pylingual-v11-mlm",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How far away from the Sun does space start to be cold?",
+      "url": "https://physics.stackexchange.com/questions/228541/how-far-away-from-the-sun-does-space-start-to-be-cold",
+      "snippet": "Jan 10, 2016 · I similarly assume that if I stood about 10 feet from the sun, I would still be hot. However, if I stood in space 93 million …"
+    },
+    {
+      "title": "Homotopy groups U(N) and SU(N): $\\\\pi_m(U(N))=\\\\pi_m(SU(N))$",
+      "url": "https://math.stackexchange.com/questions/2454985/homotopy-groups-un-and-sun-pi-mun-pi-msun",
+      "snippet": "Oct 3, 2017 · Am I correct that homotopy groups of U(N) U (N) $U(N)$ and SU(N) S U (N) $SU(N)$ are the same,"
+    },
+    {
+      "title": "Why do we say that the Earth moves around the Sun?",
+      "url": "https://physics.stackexchange.com/questions/10933/why-do-we-say-that-the-earth-moves-around-the-sun",
+      "snippet": "The sun, moon, earth (and so on) all move around each other. The reason we say the earth moves around the sun is because the …"
+    },
+    {
+      "title": "Equation of Earth's Orbit around Sun (ellipse)",
+      "url": "https://math.stackexchange.com/questions/512989/equation-of-earths-orbit-around-sun-ellipse",
+      "snippet": "These two distances help identify the location of the sun on the major axis of Earth's elliptical orbit. Assume that the major axis of …"
+    },
+    {
+      "title": "ゲームガイド｜Soul of the Ultimate Nation - Pmang",
+      "url": "https://service.pmang.jp/sun/game_guides/767",
+      "snippet": "Soul of the Ultimate Nationゲームガイド ステータスボーナスポイントについて レベルアップすると、ステータスボーナスポイント …"
+    }
+  ]
+}

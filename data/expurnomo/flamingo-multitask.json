@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Expurnomo/flamingo-multitask",
+  "slug": "expurnomo-flamingo-multitask",
+  "author": "Expurnomo",
+  "url": "https://huggingface.co/Expurnomo/flamingo-multitask",
+  "created_at": "2026-10-16T16:49:26.000Z",
+  "updated_at": "2026-10-16T16:49:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "曲面z=1-x^2 -y^2是一个什么样的图形_百度知道",
+      "url": "https://zhidao.baidu.com/question/180195015771080284.html",
+      "snippet": "曲面z=1-x^2 -y^2是旋转抛物面，就是一条 抛物线 绕其 对称轴 一周。以下是 微积分 解法： ∫∫∫1dxdydz，用截面法来做=∫ [0→1] …"
+    },
+    {
+      "title": "x的平方加y的平方 等于？ - 百度知道",
+      "url": "https://zhidao.baidu.com/question/1929386385880383587.html",
+      "snippet": "这是x的平方加y的平方的一个例题讲解，通过展开 (x + y)²的表达式，我们得到x² + 2xy + y²。 需要注意的是，在进行数学运算时，需 …"
+    },
+    {
+      "title": "人民币货币符号是「Y」加一横还是两横？ - 知乎",
+      "url": "https://www.zhihu.com/question/19614868",
+      "snippet": "（以下“Y-”代表Y加一横，“Y=\"代表Y加两横） 在讨论到底是 Y- 还是 Y= 之前，先明确一下，人民币货币符号指的是“U+FFE5”￥，在 …"
+    },
+    {
+      "title": "Il y a中的y应如何理解？ - 知乎",
+      "url": "https://www.zhihu.com/question/282800318",
+      "snippet": "Jun 27, 2018 · 法语书上说的是错的，il y a 中的 y 是副代词，代替 ici 或 là ，即“这里”“那里”，这些地点副词无需介词引出（但可以理 …"
+    },
+    {
+      "title": "怎么看y=kx+b经过第几象限 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/923277487046256219.html",
+      "snippet": "Dec 27, 2016 · 先了解 y=kx 是一条必经过原点的直线函数。 k>0 增函数，必定经过 1,3 象限 然后判断b 如果b>0 直线在原点上方，那 …"
+    }
+  ]
+}

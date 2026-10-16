@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "BaruqRodrigues/llm-legislativo",
+  "slug": "baruqrodrigues-llm-legislativo",
+  "author": "BaruqRodrigues",
+  "url": "https://huggingface.co/BaruqRodrigues/llm-legislativo",
+  "created_at": "2026-10-13T14:30:02.000Z",
+  "updated_at": "2026-10-13T14:30:17.000Z",
+  "license": "unknown`",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "safetensors",
+    "portuguese",
+    "brazil",
+    "legislative-text",
+    "pytorch",
+    "custom-model",
+    "pt",
+    "region:us"
+  ],
+  "likes": 18,
+  "downloads_30d": 0,
+  "trending_score": 17,
+  "parameters": 18708480,
+  "parameters_human": "18.7M",
+  "storage_bytes": 70125352,
+  "storage_human": "70 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

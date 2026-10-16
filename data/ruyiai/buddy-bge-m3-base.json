@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "RuyiAI/buddy-bge-m3-base",
+  "slug": "ruyiai-buddy-bge-m3-base",
+  "author": "RuyiAI",
+  "url": "https://huggingface.co/RuyiAI/buddy-bge-m3-base",
+  "created_at": "2026-10-16T03:20:01.000Z",
+  "updated_at": "2026-10-16T03:20:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2296751007,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "trdthg/buddy-bge-m3-base · Hugging Face",
+      "url": "https://huggingface.co/trdthg/buddy-bge-m3-base",
+      "snippet": "trdthg/buddy-bge-m3-base Cross-compiled RISC-V (riscv64) .rax package for the buddy-mlir buddy-cli runtime."
+    },
+    {
+      "title": "RuyiAI",
+      "url": "https://www.ruyiai.org/",
+      "snippet": "RuyiAI — production-ready AI gateway and platform. RuyiAI 面向 RISC-V 架构的 人工智能系统软件栈"
+    },
+    {
+      "title": "RuyiAI (RuyiAI RISC-V AI Software Stack) - Hugging Face",
+      "url": "https://huggingface.co/RuyiAI",
+      "snippet": "Org profile for RuyiAI RISC-V AI Software Stack on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "BGE-M3 — BGE documentation",
+      "url": "https://bge-model.com/bge/bge_m3.html",
+      "snippet": "BGE-M3 # BGE-M3 is a compound and powerful embedding model distinguished for its versatility in: Multi-Functionality: It can simultaneously perform the three common retrieval functionalities of embedding model: dense retrieval, multi-vector retrieval, and sparse retrieval. Multi-Linguality: It can support more than 100 working languages."
+    },
+    {
+      "title": "End-to-End AI Compilation for RISC-V: A Multi-Level Optimization ...",
+      "url": "https://cfp.riscv-europe.org/eu-summit-2026/talk/CH97A7/",
+      "snippet": "This paper introduces RuyiAI Buddy Compiler, an end-to-end AI compiler designed to provide a unified interface for AI model integration, multi-level compilation optimizations, and extensible code generation targeting diverse RISC-V extensions."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Thunderboltdy10/ixos-code",
+  "slug": "thunderboltdy10-ixos-code",
+  "author": "Thunderboltdy10",
+  "url": "https://huggingface.co/Thunderboltdy10/ixos-code",
+  "created_at": "2026-10-16T17:39:06.000Z",
+  "updated_at": "2026-10-16T17:43:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "embeddings",
+    "static-embeddings",
+    "retrieval",
+    "ixos",
+    "en",
+    "base_model:minishlab/potion-code-16M-v2",
+    "base_model:finetune:minishlab/potion-code-16M-v2",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32490072,
+  "storage_human": "32 MB",
+  "base_model": "minishlab/potion-code-16M-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jaden newman why bebe video clip original FULL VIDEO IN COMMENT | why ...",
+      "url": "https://www.youtube.com/watch?v=MlWn2uIuL9g",
+      "snippet": "Aug 30, 2026 · jaden newman why bebe video clip original | jaden newman why bebe clip | why bebe video clip | why bebe video clip …"
+    },
+    {
+      "title": "james on X: \"Why Bebe\" / X",
+      "url": "https://x.com/therealvivet/status/2090020131535737152",
+      "snippet": "Sep 4, 2026 · Why Bebe Never give up on love guys she missed out on a real one 🫡and he will find someone who appreciates him soon"
+    },
+    {
+      "title": "Why Bebe (@WhyBebeSol) / X",
+      "url": "https://x.com/WhyBebeSol",
+      "snippet": "Aug 15, 2026 · WHY BEBE? The meme that asks the question nobody can answer but Gods greatest soldier"
+    },
+    {
+      "title": "why bebe video clip original | why bebe video clip | why bebe full ...",
+      "url": "https://www.youtube.com/watch?v=CRTa_vfVe34",
+      "snippet": "Aug 22, 2026 · why bebe video clip original | why bebe video clip | why bebe full video clip in comment Viral News zone RJ 3.01K …"
+    },
+    {
+      "title": "'why bebe' - Search results - Sound Instants",
+      "url": "https://soundinstants.com/search/why+bebe",
+      "snippet": "Download high-quality MP3 for YouTube, TikTok, & Gaming instantly on SoundInstants."
+    }
+  ]
+}

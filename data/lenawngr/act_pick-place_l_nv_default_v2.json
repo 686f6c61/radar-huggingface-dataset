@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "lenawngr/ACT_pick-place_L_nv_default_v2",
+  "slug": "lenawngr-act_pick-place_l_nv_default_v2",
+  "author": "lenawngr",
+  "url": "https://huggingface.co/lenawngr/ACT_pick-place_L_nv_default_v2",
+  "created_at": "2026-10-16T17:12:37.000Z",
+  "updated_at": "2026-10-16T17:13:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:lenawngr/pick-place_so101",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714848,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Xeno Executor for Windows download | SourceForge.net",
+      "url": "https://sourceforge.net/app/xeno-executor/",
+      "snippet": "Jul 4, 2026 · Download Xeno Executor for Windows for free. Xeno Executor is a third-party Lua script executor designed to run user …"
+    },
+    {
+      "title": "Xeno | The Best Key-Less Executor",
+      "url": "https://www.xeno.onl/tutorial",
+      "snippet": "Experience the ultimate scripting utility with powerful execution and seamless performance. Join our community today!"
+    },
+    {
+      "title": "How to Install Xeno on Windows | Xeno Guide",
+      "url": "https://xeno.baby/guides/how-to-install-xeno",
+      "snippet": "Use only the official download from xeno.baby, keep Xeno updated after Roblox patches, and prefer a clean folder install. If attach …"
+    },
+    {
+      "title": "Xeno Tutorial — Install, Attach, Execute | Xeno",
+      "url": "https://xeno.baby/tutorial",
+      "snippet": "Xeno tutorial for Windows: download the official build, install Visual C++ and .NET, attach to Roblox, paste a Lua script, and execute …"
+    },
+    {
+      "title": "Xeno - Download",
+      "url": "https://xeno.rest/",
+      "snippet": "Xeno Executor is a safe, free and reliable Roblox script executor for Windows. Download the latest version, run any script, and get …"
+    }
+  ]
+}

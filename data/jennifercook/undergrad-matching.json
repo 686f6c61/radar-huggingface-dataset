@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jennifercook/undergrad-matching",
+  "slug": "jennifercook-undergrad-matching",
+  "author": "jennifercook",
+  "url": "https://huggingface.co/jennifercook/undergrad-matching",
+  "created_at": "2026-10-16T19:20:27.000Z",
+  "updated_at": "2026-10-16T19:20:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jennifercook (J. Cook) - Hugging Face",
+      "url": "https://huggingface.co/jennifercook",
+      "snippet": "Building AI tools for small businesses. Recent Activity. updated a model 1 day ago. jennifercook/paper_021891815_robotics_vision_language"
+    },
+    {
+      "title": "jennifercook (J. Cook) - Hugging Face",
+      "url": "https://huggingface.co/jennifercook/models",
+      "snippet": "Building AI tools for small businesses"
+    },
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "Anthropic AI model made false tip in unsolved Philly murder: Officials ...",
+      "url": "https://abcnews.com/US/anthropic-ai-model-made-false-tip-unsolved-philly/story?id=137190087",
+      "snippet": "An Anthropic artificial intelligence model submitted a false tip in an unsolved murder case to a Philadelphia Police Department website, the company and police officials said. In a detailed report released to the public, the tech company said its Claude Haiku 4.5 AI model submitted the fabricated ..."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, DeepSeek, Qwen, Mistral, Z.ai, Meta, and important open-weight model families."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "RuyiAI/buddy-deepseek-r1-f32-packed-decode",
+  "slug": "ruyiai-buddy-deepseek-r1-f32-packed-decode",
+  "author": "RuyiAI",
+  "url": "https://huggingface.co/RuyiAI/buddy-deepseek-r1-f32-packed-decode",
+  "created_at": "2026-10-16T03:21:28.000Z",
+  "updated_at": "2026-10-16T03:21:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14233270779,
+  "storage_human": "14.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RuyiAI/buddy-deepseek-r1-f32-packed-decode - Hugging Face",
+      "url": "https://huggingface.co/RuyiAI/buddy-deepseek-r1-f32-packed-decode",
+      "snippet": "RuyiAI / buddy-deepseek-r1-f32-packed-decode Like 0 Follow RuyiAI RISC-V AI Software Stack 2 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "RuyiAI (RuyiAI RISC-V AI Software Stack) - Hugging Face",
+      "url": "https://huggingface.co/RuyiAI",
+      "snippet": "Recent Activity trdthg updated a modelabout 6 hours ago RuyiAI/buddy-deepseek-r1-f32-tiered-kv-cache trdthg published a modelabout 6 hours ago RuyiAI/buddy-deepseek-r1-f32-tiered-kv-cache trdthg updated a modelabout 6 hours ago RuyiAI/buddy-deepseek-r1-f32-packed-decode View all activity"
+    },
+    {
+      "title": "RuyiAI",
+      "url": "https://www.ruyiai.org/",
+      "snippet": "RuyiAI — production-ready AI gateway and platform. RuyiAI 面向 RISC-V 架构的 人工智能系统软件栈"
+    },
+    {
+      "title": "GitHub - deepseek-ai/DeepSeek-R1",
+      "url": "https://github.com/deepseek-ai/DeepSeek-R1",
+      "snippet": "However, DeepSeek-R1-Zero encounters challenges such as endless repetition, poor readability, and language mixing. To address these issues and further enhance reasoning performance, we introduce DeepSeek-R1, which incorporates cold-start data before RL. DeepSeek-R1 achieves performance comparable to OpenAI-o1 across math, code, and reasoning tasks."
+    },
+    {
+      "title": "Model Access | deepseek-ai/DeepSeek-R1 | DeepWiki",
+      "url": "https://deepwiki.com/deepseek-ai/DeepSeek-R1/3.1-model-access",
+      "snippet": "This page documents the various methods for accessing DeepSeek-R1 family models. It covers official hosted solutions, API endpoints, model repositories, and brief introductions to deployment options."
+    }
+  ]
+}

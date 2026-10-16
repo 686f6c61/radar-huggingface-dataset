@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "lapadatbogdan/GLM-5.3-Flash-REAP144-Coder-GGUF",
+  "slug": "lapadatbogdan-glm-5-3-flash-reap144-coder-gguf",
+  "author": "lapadatbogdan",
+  "url": "https://huggingface.co/lapadatbogdan/GLM-5.3-Flash-REAP144-Coder-GGUF",
+  "created_at": "2026-10-13T02:20:11.000Z",
+  "updated_at": "2026-10-15T19:44:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "moe",
+    "expert-pruning",
+    "reap",
+    "code",
+    "agentic",
+    "llama.cpp",
+    "text-generation",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:quantized:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 14,
+  "downloads_30d": 12520,
+  "trending_score": 0,
+  "parameters": 161099129758,
+  "parameters_human": "161.10B",
+  "storage_bytes": 272130417728,
+  "storage_human": "272.1 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lapadatbogdan/GLM-5.3-Flash-REAP144-Coder-GGUF",
+      "url": "https://huggingface.co/lapadatbogdan/GLM-5.3-Flash-REAP144-Coder-GGUF",
+      "snippet": "vor 14 Stunden ... gguf (2.6 GB) is GLM-5.3-Flash's own multi-token-prediction block (all 288 draft experts, Q2_K; the rest Q8_0), taken from the full model. Maya ..."
+    },
+    {
+      "title": "Quantized Models for zai-org/GLM-5.3-Flash - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:zai-org/GLM-5.3-Flash",
+      "snippet": "huihui-ai/Huihui-GLM-5.3-Flash-abliterated-GGUF. Image-Text-to-Text • 321B ... lapadatbogdan/GLM-5.3-Flash-REAP144-Coder-GGUF. Text Generation • 161B ..."
+    },
+    {
+      "title": "Models in CODE - Hugging Face",
+      "url": "https://huggingface.co/models?language=code",
+      "snippet": "Models. 14,359. Base only. Inference Available Inference. Edit filters. Sort ... lapadatbogdan/GLM-5.3-Flash-REAP144-Coder-GGUF. Text Generation • 161B ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=agentic",
+      "snippet": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF. Image-Text-to-Text • 9B ... lapadatbogdan/GLM-5.3-Flash-REAP144-Coder-GGUF. Text Generation • 161B ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=llama.cpp&p=1&sort=trending",
+      "snippet": "empero-ai/Qwen3.8-35B-A3B-Distill-GGUF. Text Generation • 36B • Updated 29 ... lapadatbogdan/GLM-5.3-Flash-REAP144-Coder-GGUF. Text Generation • 161B ..."
+    }
+  ]
+}

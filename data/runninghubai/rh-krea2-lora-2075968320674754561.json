@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-krea2-lora-2075968320674754561",
+  "slug": "runninghubai-rh-krea2-lora-2075968320674754561",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-krea2-lora-2075968320674754561",
+  "created_at": "2026-10-16T03:01:00.000Z",
+  "updated_at": "2026-10-16T03:02:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "image-text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21572050,
+  "storage_human": "22 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accueil",
+      "url": "https://www.cinemalechambord.fr/",
+      "snippet": "Bienvenue au cinéma Le Chambord Marseille, votre cinéma local à Marseille. Découvrez les films à l'affiche et réservez vos billets …"
+    },
+    {
+      "title": "Cinéma Chambord à Marseille (13008 ) - Achat ticket cinéma …",
+      "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0042.html",
+      "snippet": "Achetez et réservez votre e-ticket pour le cinéma Chambord sur AlloCiné. Retrouvez toutes les séances et horaires disponibles pour …"
+    },
+    {
+      "title": "Chambord (Marseille 8e) : programmation, horaires et tarifs",
+      "url": "https://www.cinefil.com/cinema/chambord-marseille/programmation",
+      "snippet": "Programmation et horaires des séances Chambord (Marseille) : la programmation et les séances d'aujourd'hui, de demain et de …"
+    },
+    {
+      "title": "Chambord - Programmation et Séances | CinéMatin",
+      "url": "https://www.cinematin.com/cinema/chambord-marseille",
+      "snippet": "Découvrez les horaires, films à l'affiche et séances au cinéma Chambord (Marseille). Réservation en ligne disponible."
+    },
+    {
+      "title": "Chambord : programme et horaire des films du cinéma : …",
+      "url": "https://divertissements.orange.fr/salles/chambord-CNT0000009iViE.html",
+      "snippet": "Divertissements Tous les résultats Chambord 283, av. du Prado, 13008 Marseille Partager Programmation Informations Ven. 16 oct. …"
+    }
+  ]
+}

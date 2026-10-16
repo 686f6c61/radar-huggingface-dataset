@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "glivorem/Qwen3-4B-Instruct-2507-abliterated",
+  "slug": "glivorem-qwen3-4b-instruct-2507-abliterated",
+  "author": "glivorem",
+  "url": "https://huggingface.co/glivorem/Qwen3-4B-Instruct-2507-abliterated",
+  "created_at": "2026-10-16T03:11:02.000Z",
+  "updated_at": "2026-10-16T03:12:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "abliterated",
+    "uncensored",
+    "heretic",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404817,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Pranav-Sriv/smai-assignment-4-ioc",
+  "slug": "pranav-sriv-smai-assignment-4-ioc",
+  "author": "Pranav-Sriv",
+  "url": "https://huggingface.co/Pranav-Sriv/smai-assignment-4-ioc",
+  "created_at": "2026-10-16T18:50:39.000Z",
+  "updated_at": "2026-10-16T18:50:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "cifar10",
+    "mlp",
+    "from-scratch",
+    "dataset:uoft-cs/cifar10",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1631403,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IMDb: Ratings, Reviews, and Where to Watch the Best Movies & TV …",
+      "url": "https://www.imdb.com/",
+      "snippet": "IMDb is the world's most popular and authoritative source for movie, TV and celebrity content. Find ratings and reviews for the …"
+    },
+    {
+      "title": "Candidate Profiles and Qualifications | PDF - Scribd",
+      "url": "https://www.scribd.com/document/585718111/Working-Professionals-9100",
+      "snippet": "The qualifications listed include degrees in fields like engineering, commerce, arts, science, management and others. Uploaded by. Vignesh Krishnamoorthy. AI- ..."
+    },
+    {
+      "title": "IMDb : notes, critiques et où regarder les meilleurs films et séries TV",
+      "url": "https://www.imdb.com/fr/",
+      "snippet": "IMDb est la source d'informations la plus populaire et la plus fiable au monde pour le cinéma, la télévision et les célébrités. Trouvez …"
+    },
+    {
+      "title": "IMDb - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/IMDb",
+      "snippet": "IMDb ... IMDb, formerly known as the Internet Movie Database, is an online database of information related to films, television series, …"
+    },
+    {
+      "title": "What to Watch - IMDb",
+      "url": "https://s.media-imdb.com/what-to-watch/watch-guides/",
+      "snippet": "Everything New on Prime Video in September See the list Browse these IMDb collections to find the perfect next movie or TV show …"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "AmirFazlollahi/Qwen3-4B-HendrycksMATH-GRPO",
+  "slug": "amirfazlollahi-qwen3-4b-hendrycksmath-grpo",
+  "author": "AmirFazlollahi",
+  "url": "https://huggingface.co/AmirFazlollahi/Qwen3-4B-HendrycksMATH-GRPO",
+  "created_at": "2026-10-16T16:57:46.000Z",
+  "updated_at": "2026-10-16T17:09:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:AmirFazlollahi/Qwen3-4B-HendrycksMATH-SFT",
+    "base_model:finetune:AmirFazlollahi/Qwen3-4B-HendrycksMATH-SFT",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404916,
+  "storage_human": "8.1 GB",
+  "base_model": "AmirFazlollahi/Qwen3-4B-HendrycksMATH-SFT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Can i trust twitter bikes? I'm planning to buy this twitter ... - Reddit",
+      "url": "https://www.reddit.com/r/gravelcycling/comments/1c1fagv/can_i_trust_twitter_bikes_im_planning_to_buy_this/",
+      "snippet": "Or if it's for fairly relaxed riding.. it could be ok. If i lived in the US or somewhere with a good used-bike market, I would never buy a …"
+    },
+    {
+      "title": "NonPoliticalTwitter - Reddit",
+      "url": "https://www.reddit.com/r/NonPoliticalTwitter/about/",
+      "snippet": "Twitter without the politics. Come vibe with us as we escape the stress of the real world around us."
+    },
+    {
+      "title": "Twitter保存ランキングの代わりのサイトはありますか？ - Yahoo!知恵袋",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10254471060",
+      "snippet": "Twitter保存ランキングの代わりのサイトはありますか？"
+    },
+    {
+      "title": "2020 GLOBAL IMPACT REPORT - Twitter Blog",
+      "url": "https://blog.twitter.com/content/dam/about-twitter/en/company/global-impact-2020.pdf",
+      "snippet": "Twitter has been serving the public conversation for 15 years, and we believe public conversation is better when as many people as …"
+    },
+    {
+      "title": "これのキルジョイ版誰か作れませんか？ - レイナ。お前には何がで.",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12295315182",
+      "snippet": "Mar 21, 2024 · これのキルジョイ版誰か作れませんか？ レイナ。お前には何ができるんだ？ジェット、レイズのように体を張った …"
+    }
+  ]
+}

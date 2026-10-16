@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "juicenv/microduck-sprint-es10",
+  "slug": "juicenv-microduck-sprint-es10",
+  "author": "juicenv",
+  "url": "https://huggingface.co/juicenv/microduck-sprint-es10",
+  "created_at": "2026-10-16T02:52:31.000Z",
+  "updated_at": "2026-10-16T02:52:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "base_model:suraj-phanindra/microduck-sprint-hc2",
+    "base_model:finetune:suraj-phanindra/microduck-sprint-hc2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 793837,
+  "storage_human": "793837 B",
+  "base_model": "suraj-phanindra/microduck-sprint-hc2",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

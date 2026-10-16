@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "wbruna/Iris-3b-sdcpp-GGUF",
+  "slug": "wbruna-iris-3b-sdcpp-gguf",
+  "author": "wbruna",
+  "url": "https://huggingface.co/wbruna/Iris-3b-sdcpp-GGUF",
+  "created_at": "2026-10-16T16:49:34.000Z",
+  "updated_at": "2026-10-16T17:13:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2987511888,
+  "parameters_human": "2.99B",
+  "storage_bytes": 2856779008,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sign in | Yahoo",
+      "url": "https://login.yahoo.com/",
+      "snippet": "Sign in to access the best in class Yahoo Mail, breaking local, national and global news, finance, sports, music, movies... You get …Read more"
+    },
+    {
+      "title": "Yahoo Mail | Email with smart features and top-notch security",
+      "url": "https://mail.yahoo.com/",
+      "snippet": "Yahoo Mail: Your smarter, faster, free email solution. Organize your inbox, protect your privacy, and tackle tasks efficiently with AI …"
+    },
+    {
+      "title": "Sign in | Yahoo - Yahoo Mail",
+      "url": "https://mail.yahoo.com/signin/",
+      "snippet": "Sign in to access the best in class Yahoo Mail, breaking local, national and global news, finance, sports, music, movies... You get …"
+    },
+    {
+      "title": "Create account | Yahoo",
+      "url": "https://login.yahoo.com/account/create",
+      "snippet": "Sign in to access the best in class Yahoo Mail, breaking local, national and global news, finance, sports, music, movies... You get …"
+    },
+    {
+      "title": "Find your account | Yahoo",
+      "url": "https://login.yahoo.com/forgot",
+      "snippet": "Sign in to access the best in class Yahoo Mail, breaking local, national and global news, finance, sports, music, movies... You get …"
+    }
+  ]
+}

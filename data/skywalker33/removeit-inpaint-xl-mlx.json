@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "skywalker33/removeit-inpaint-xl-mlx",
+  "slug": "skywalker33-removeit-inpaint-xl-mlx",
+  "author": "skywalker33",
+  "url": "https://huggingface.co/skywalker33/removeit-inpaint-xl-mlx",
+  "created_at": "2026-10-16T03:34:53.000Z",
+  "updated_at": "2026-10-16T03:35:22.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "stable-diffusion-xl",
+    "inpainting",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3537965424,
+  "storage_human": "3.5 GB",
+  "base_model": null,
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "skywalker33 (Joey R) - Hugging Face",
+      "url": "https://huggingface.co/skywalker33",
+      "snippet": "User profile of Joey R on Hugging Face"
+    },
+    {
+      "title": "skywalker33 (Joey R) - Hugging Face",
+      "url": "https://huggingface.co/skywalker33/models",
+      "snippet": "skywalker33&#x27;s models6 Sort: Recently updated skywalker33/removeit-sam2-coreml Updated about 10 hours ago"
+    },
+    {
+      "title": "Inpainting AI Models (120) | Civitai",
+      "url": "https://civitai.com/tag/inpainting",
+      "snippet": "Browse 120 AI models tagged \"Inpainting\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    },
+    {
+      "title": "diffusers/docs/source/en/using-diffusers/inpaint.md at main ... - GitHub",
+      "url": "https://github.com/huggingface/diffusers/blob/main/docs/source/en/using-diffusers/inpaint.md",
+      "snippet": "The inpaint specific checkpoints are intentionally trained to generate higher quality inpainted images, and that includes creating a more natural transition between the masked and unmasked areas."
+    },
+    {
+      "title": "Models - IOPaint",
+      "url": "https://www.iopaint.com/models",
+      "snippet": "Models IOPaint support many models out of the box. These models can be categorized into three groups. Erase Models The following models can be used to remove any unwanted object, defect, watermarks, people. 🌟 LaMa: Recommend 🌟 MAT: Recommend 🌟 MIGAN: Recommend. Minimal in size, requiring the least amount of resources. LDM ZITS FcF Manga Stable Diffusion Models"
+    }
+  ]
+}

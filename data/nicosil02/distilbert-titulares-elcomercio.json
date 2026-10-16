@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "nicosil02/distilbert-titulares-elcomercio",
+  "slug": "nicosil02-distilbert-titulares-elcomercio",
+  "author": "nicosil02",
+  "url": "https://huggingface.co/nicosil02/distilbert-titulares-elcomercio",
+  "created_at": "2026-10-16T02:49:45.000Z",
+  "updated_at": "2026-10-16T02:50:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 135327748,
+  "parameters_human": "135.3M",
+  "storage_bytes": 541323528,
+  "storage_human": "541 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube TV Help",
+      "url": "https://support.google.com/youtubetv/?hl=en",
+      "snippet": "Official YouTube TV Help Center where you can find tips and tutorials on using YouTube TV and other answers to frequently asked …"
+    },
+    {
+      "title": "知乎",
+      "url": "https://www.zhihu.com/question/1903231775980913051",
+      "snippet": "前提1：中国大陆范围「合法」的连接或观看方式，也就是「梯子」不在本问题的讨论范围前提2：源自境外的「…"
+    },
+    {
+      "title": "YouTube 動画をアップロードする",
+      "url": "https://support.google.com/youtube/answer/57407?hl=ja&co=GENIE.Platform%3DDesktop",
+      "snippet": "YouTube に動画をアップロードする手順は簡単です。パソコンやモバイル デバイスから動画をアップロードする手順は次のとおり …"
+    },
+    {
+      "title": "怎样才能下载YouTube高清视频？ - 知乎",
+      "url": "https://www.zhihu.com/question/2003575760515012480",
+      "snippet": "3. 下载 4K 视频没声音？ YouTube 的 4K 视频音轨和画面是分离的，DataTool 会自动合并音画，直接下载合并后的 MP4 文件就行， …"
+    },
+    {
+      "title": "上傳 YouTube 影片",
+      "url": "https://support.google.com/youtube/answer/57407?hl=zh-Hant&co=GENIE.Platform%3DDesktop",
+      "snippet": "上傳 YouTube 影片 只需幾個簡單步驟，就能輕鬆將影片上傳到 YouTube。 以下說明如何透過電腦或行動裝置上傳影片。 注意： 使 …"
+    }
+  ]
+}

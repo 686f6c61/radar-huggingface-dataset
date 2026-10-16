@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "HRB25/pt-br-moderation-bertimbau-v1",
+  "slug": "hrb25-pt-br-moderation-bertimbau-v1",
+  "author": "HRB25",
+  "url": "https://huggingface.co/HRB25/pt-br-moderation-bertimbau-v1",
+  "created_at": "2026-10-16T19:15:06.000Z",
+  "updated_at": "2026-10-16T19:16:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "multi-label-classification",
+    "moderation",
+    "portuguese",
+    "bertimbau",
+    "pt",
+    "base_model:neuralmind/bert-base-portuguese-cased",
+    "base_model:finetune:neuralmind/bert-base-portuguese-cased",
+    "license:mit",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 108932364,
+  "parameters_human": "108.9M",
+  "storage_bytes": 435752984,
+  "storage_human": "436 MB",
+  "base_model": "neuralmind/bert-base-portuguese-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Classificação multirrótulo",
+      "dataset": "PT-BR Moderation Eval",
+      "metric": "F1 micro",
+      "value": 0.5756798358132376
+    },
+    {
+      "task": "Classificação multirrótulo",
+      "dataset": "PT-BR Moderation Eval",
+      "metric": "F1 macro",
+      "value": 0.5416727875948829
+    },
+    {
+      "task": "Classificação multirrótulo",
+      "dataset": "PT-BR Moderation Eval",
+      "metric": "Precisão micro",
+      "value": 0.563819095477387
+    },
+    {
+      "task": "Classificação multirrótulo",
+      "dataset": "PT-BR Moderation Eval",
+      "metric": "Recall micro",
+      "value": 0.5880503144654088
+    }
+  ],
+  "sources": []
+}

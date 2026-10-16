@@ -1,0 +1,114 @@
+{
+  "schema": 1,
+  "id": "arbazsiddiqui/voxlock",
+  "slug": "arbazsiddiqui-voxlock",
+  "author": "arbazsiddiqui",
+  "url": "https://huggingface.co/arbazsiddiqui/voxlock",
+  "created_at": "2026-10-11T15:30:50.000Z",
+  "updated_at": "2026-10-12T15:48:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-to-audio",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "voice-isolation",
+    "background-voice-cancellation",
+    "background-voice-removal",
+    "target-speaker-extraction",
+    "speaker-extraction",
+    "personalized-speech-enhancement",
+    "speech-enhancement",
+    "audio",
+    "speech",
+    "voice-agents",
+    "telephony",
+    "call-center",
+    "streaming",
+    "real-time",
+    "low-latency",
+    "bsrnn",
+    "pytorch",
+    "onnxruntime",
+    "int8",
+    "quantized",
+    "pipecat",
+    "webassembly",
+    "audio-to-audio",
+    "en",
+    "dataset:openslr/librispeech_asr",
+    "dataset:edinburghcstr/ami",
+    "base_model:Wespeaker/wespeaker-voxceleb-ecapa-tdnn512",
+    "base_model:finetune:Wespeaker/wespeaker-voxceleb-ecapa-tdnn512",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 14,
+  "downloads_30d": 200,
+  "trending_score": 14,
+  "parameters": 27258122,
+  "parameters_human": "27.3M",
+  "storage_bytes": 386145968,
+  "storage_human": "386 MB",
+  "base_model": "Wespeaker/wespeaker-voxceleb-ecapa-tdnn512",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Voice isolation",
+      "dataset": "Krisp Voice Isolation Benchmark, 265 real recordings",
+      "metric": "Word error rate after isolation (Parakeet TDT 0.6B v2)",
+      "value": 4.95
+    },
+    {
+      "task": "Voice isolation",
+      "dataset": "Krisp Voice Isolation Benchmark, 265 real recordings",
+      "metric": "Background words leaked per minute of background-only speech",
+      "value": 0.11
+    },
+    {
+      "task": "Voice isolation",
+      "dataset": "AMI meetings, headset wearer as caller, 134 held-out windows",
+      "metric": "Word error rate after isolation (Parakeet TDT 0.6B v3)",
+      "value": 10.12
+    }
+  ],
+  "sources": [
+    {
+      "title": "Free Porn Videos & XXX Movies: Sex Videos Tube | xHamster",
+      "url": "https://xhamster.com/",
+      "snippet": "Free porn videos and exclusive XXX movies are here at xHamster. Instantly stream 6M+ hardcore sex videos from pros and …"
+    },
+    {
+      "title": "Newest Porn Videos & Free Sex Movies | xHamster",
+      "url": "https://xhamster.com/newest",
+      "snippet": "1 day ago · Watch more than a thousand of the newest Porn Videos added daily on xHamster. Stream the latest sex movies with hot …"
+    },
+    {
+      "title": "Vidéos pornos gratuites et films XXX : site de vidéos de sexe | xHamster",
+      "url": "https://fra.xhamster.com/",
+      "snippet": "Vidéos pornos gratuites et films XXX exclusifs sur xHamster. Regardez instantannément + de 6 millions de vidéos de sexe hardcore …"
+    },
+    {
+      "title": "Porno en français : Vidéos de cul avec son Français | xHamster",
+      "url": "https://fra.xhamster.com/categories/fr",
+      "snippet": "Trouvez les pornos en français les plus excitants à regarder gratuitement. Profitez de vidéos Français avec des actrices ou acteurs …"
+    },
+    {
+      "title": "Newest Porn Videos & Free Sex Movies #2 | xHamster",
+      "url": "https://xhamster2.com/newest/2",
+      "snippet": "Oct 9, 2026 · Wife Is Busy Cumming with Vibrator in Her Pussy so Husband Shoves Dick up Her Ass DP Then Cums in Her Pussy …"
+    }
+  ]
+}

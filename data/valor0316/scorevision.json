@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "VALOR0316/ScoreVision",
+  "slug": "valor0316-scorevision",
+  "author": "VALOR0316",
+  "url": "https://huggingface.co/VALOR0316/ScoreVision",
+  "created_at": "2026-10-16T02:52:23.000Z",
+  "updated_at": "2026-10-16T02:52:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 168,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9831134,
+  "storage_human": "10 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

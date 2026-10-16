@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "RuyiAI/buddy-deepseek-r1-f32",
+  "slug": "ruyiai-buddy-deepseek-r1-f32",
+  "author": "RuyiAI",
+  "url": "https://huggingface.co/RuyiAI/buddy-deepseek-r1-f32",
+  "created_at": "2026-10-16T03:20:13.000Z",
+  "updated_at": "2026-10-16T03:20:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7124922443,
+  "storage_human": "7.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "awesome-stars/README.md at master - GitHub",
+      "url": "https://github.com/jiegec/awesome-stars/blob/master/README.md",
+      "snippet": "... DeepSeek-R1, Gemma 3 and other models. context-labs/mactop - mactop - Apple ... vishnumenon/ermine-ai - https://ermine.ai -- 100% client-side live ..."
+    },
+    {
+      "title": "Computer Science — New on arXiv | Academus",
+      "url": "https://academ.us/list/cs/",
+      "snippet": "... model of that partner. Show more. [296] 2610.04349. On the involution ... We model AI-mediated communication as ...a two-step generation-extraction ..."
+    }
+  ]
+}

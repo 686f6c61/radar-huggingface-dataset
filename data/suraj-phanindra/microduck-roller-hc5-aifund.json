@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "suraj-phanindra/microduck-roller-hc5-aifund",
+  "slug": "suraj-phanindra-microduck-roller-hc5-aifund",
+  "author": "suraj-phanindra",
+  "url": "https://huggingface.co/suraj-phanindra/microduck-roller-hc5-aifund",
+  "created_at": "2026-10-16T19:29:46.000Z",
+  "updated_at": "2026-10-16T19:29:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "base_model:juicenv/microduck-roller-es21",
+    "base_model:finetune:juicenv/microduck-roller-es21",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 793832,
+  "storage_human": "793832 B",
+  "base_model": "juicenv/microduck-roller-es21",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eli-aifund/microduck-aifund-roller · Hugging Face",
+      "url": "https://huggingface.co/eli-aifund/microduck-aifund-roller",
+      "snippet": "Instructions to use eli-aifund/microduck-aifund-roller with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Microduck How to use eli-aifund/microduck-aifund-roller with Microduck: # Replace SLOT with the slot specified in the model card (walk, stand, sitstand, ground_pick, kick_left, kick_right, roulade). sudo robotctl policy load SLOT ..."
+    },
+    {
+      "title": "Suraj Phanindra - GitHub",
+      "url": "https://github.com/suraj-phanindra/",
+      "snippet": "A graph representing suraj-phanindra&#x27;s contributions from June 22, 2025 to June 27, 2026. The contributions are 73% commits, 23% pull requests, 4% code review, 0% issues."
+    },
+    {
+      "title": "GitHub - AI-FanGe/Microduck-build-tutorial: A practical hardware and ...",
+      "url": "https://github.com/AI-FanGe/Microduck-build-tutorial",
+      "snippet": "A practical hardware and software setup for a compact RL-powered biped robot. - AI-FanGe/Microduck-build-tutorial"
+    },
+    {
+      "title": "MicroduckHub — Microduck policy exchange",
+      "url": "https://microduckhub.com/",
+      "snippet": "Browse every RL policy your Pollen Robotics Microduck knows — shipped behaviors and community retrains from the Hugging Face Hub — plus the MCP server that lets any AI agent drive the duck."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

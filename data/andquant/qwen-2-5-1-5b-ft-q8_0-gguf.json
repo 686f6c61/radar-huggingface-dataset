@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "andquant/qwen-2.5-1.5b-ft-Q8_0-GGUF",
+  "slug": "andquant-qwen-2-5-1-5b-ft-q8_0-gguf",
+  "author": "andquant",
+  "url": "https://huggingface.co/andquant/qwen-2.5-1.5b-ft-Q8_0-GGUF",
+  "created_at": "2026-10-16T03:01:59.000Z",
+  "updated_at": "2026-10-16T03:02:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "base_model:andquant/qwen-2.5-1.5b-ft",
+    "base_model:quantized:andquant/qwen-2.5-1.5b-ft",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 1646572448,
+  "storage_human": "1.6 GB",
+  "base_model": "andquant/qwen-2.5-1.5b-ft",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mi Hazánk Mozgalom - Index Fórum",
+      "url": "https://forum.index.hu/Article/showArticle?t=9238107",
+      "snippet": "Oct 3, 2026 · \"Miután a Jobbik vezetése egy koncepciós eljárással betiltotta a Mi Magunk platformot, Dúró Dórát és engem pedig …"
+    },
+    {
+      "title": "szex-pornó gif képek - Index Fórum",
+      "url": "https://forum.index.hu/Topic/TopicDescription?t=9142725",
+      "snippet": "forum.index.hu Magyarország első és legnagyobb fórum szolgáltatása. A web kettő pre-bétája, amit 1997 óta töltenek meg …"
+    },
+    {
+      "title": "Snow Day: Stuck at Home with Little Sis | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/snow-day-stuck-at-home-with-little-sis.127620/",
+      "snippet": "Mar 28, 2010 · JackassTales…Readers: Because the main story site is not yet functioning properly, I’m posting this here first. This is …"
+    },
+    {
+      "title": "A Son’s Surprising Discovery - XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/a-son%E2%80%99s-surprising-discovery.575884/",
+      "snippet": "May 20, 2022 · A teenage son comes home early from school to find his mother doing something really shocking to him. The high …"
+    },
+    {
+      "title": "Érzékek birodalma ,japán film dec 18 - Index Fórum",
+      "url": "https://forum.index.hu/Article/showArticle?t=9010395",
+      "snippet": "Sep 22, 2003 · Nyitotta: Tatsuya Fuji imitátor, 1999.12.19 04:03 | Hozzászólások: 38 | Hozzászólók: 20"
+    }
+  ]
+}

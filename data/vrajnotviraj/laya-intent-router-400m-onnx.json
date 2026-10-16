@@ -1,0 +1,126 @@
+{
+  "schema": 1,
+  "id": "vrajnotviraj/laya-intent-router-400m-onnx",
+  "slug": "vrajnotviraj-laya-intent-router-400m-onnx",
+  "author": "vrajnotviraj",
+  "url": "https://huggingface.co/vrajnotviraj/laya-intent-router-400m-onnx",
+  "created_at": "2026-10-16T03:42:08.000Z",
+  "updated_at": "2026-10-16T03:45:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": "onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "intent-classification",
+    "intent-detection",
+    "zero-shot-classification",
+    "text-classification",
+    "chatbot",
+    "conversational-ai",
+    "customer-support",
+    "routing",
+    "out-of-scope-detection",
+    "int8",
+    "cpu",
+    "modernbert",
+    "laya",
+    "onnxruntime",
+    "zero-shot",
+    "nlu",
+    "intent-router",
+    "semantic-router",
+    "llm-router",
+    "open-intent-detection",
+    "out-of-distribution-detection",
+    "customer-service",
+    "banking",
+    "insurance",
+    "fintech",
+    "e-commerce",
+    "en",
+    "dataset:clinc_oos",
+    "dataset:PolyAI/banking77",
+    "dataset:FastFit/hwu_64",
+    "dataset:benayas/snips",
+    "dataset:bitext/Bitext-customer-support-llm-chatbot-training-dataset",
+    "dataset:bitext/Bitext-retail-ecommerce-llm-chatbot-training-dataset",
+    "dataset:bitext/Bitext-retail-banking-llm-chatbot-training-dataset",
+    "base_model:convaiinnovations/laya",
+    "base_model:finetune:convaiinnovations/laya",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 704432494,
+  "storage_human": "704 MB",
+  "base_model": "convaiinnovations/laya",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Zero-shot intent routing",
+      "dataset": "Held-out routing suite (1,636 messages, 10 workflows)",
+      "metric": "Routing accuracy at threshold 0.625",
+      "value": 0.966
+    },
+    {
+      "task": "Zero-shot intent routing",
+      "dataset": "Held-out routing suite (1,636 messages, 10 workflows)",
+      "metric": "Out-of-scope recall",
+      "value": 0.967
+    },
+    {
+      "task": "Zero-shot intent routing",
+      "dataset": "Held-out routing suite (1,636 messages, 10 workflows)",
+      "metric": "Routing accuracy, 18 workflow-editor nodes with 2-3 word path titles",
+      "value": 0.982
+    },
+    {
+      "task": "Zero-shot intent routing",
+      "dataset": "Held-out routing suite (1,636 messages, 10 workflows)",
+      "metric": "Routing accuracy, 960 messages written after training",
+      "value": 0.959
+    }
+  ],
+  "sources": [
+    {
+      "title": "vrajnotviraj/laya-intent-router-400m-onnx · Hugging Face",
+      "url": "https://huggingface.co/vrajnotviraj/laya-intent-router-400m-onnx",
+      "snippet": "The bigger sibling of laya-intent-router-150m-onnx: a 395M-parameter zero-shot intent router with out-of-scope detection, 120 to 170 ms p95 on 4 CPU threads. You give it a user message and a list of intents written in plain English (a few example phrasings, a one-line description, or just a 2-3 word ..."
+    },
+    {
+      "title": "GitHub - vrajnotviraj/laya-intent-router: Zero-shot intent ...",
+      "url": "https://github.com/vrajnotviraj/laya-intent-router",
+      "snippet": "Zero-shot intent classification and out-of-scope detection. 150M model, 94.9% routing accuracy. ONNX int8 on CPU (160 ms p95) or MLX on Apple Silicon (~15-25 ms)."
+    },
+    {
+      "title": "vrajnotviraj (Vraj Shah) - Hugging Face",
+      "url": "https://huggingface.co/vrajnotviraj",
+      "snippet": "models1 vrajnotviraj/laya-intent-router-150m-onnx Zero-Shot Classification •Updated about 4 hours ago"
+    },
+    {
+      "title": "GitHub - NandhaKishorM/laya: Non-autoregressive System 1 decision ...",
+      "url": "https://github.com/NandhaKishorM/laya",
+      "snippet": "Non-autoregressive System 1 decision engine. Typed choice, score and yes/no decisions over any text in a single forward pass, in 100+ languages, with a router that picks the right checkpoint per request. - NandhaKishorM/laya"
+    },
+    {
+      "title": "Laya AI: Open-Source Decision Model | Run Locally",
+      "url": "https://laya-ai.com/",
+      "snippet": "Laya AI is an open-source System 1 decision model for typed choices, scores, and probabilities. Run it locally, compare benchmarks, models, and Laya vs Jev."
+    }
+  ]
+}

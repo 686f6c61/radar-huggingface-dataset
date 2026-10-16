@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "ads2009/english-ai-text-detector-electra-indomai",
+  "slug": "ads2009-english-ai-text-detector-electra-indomai",
+  "author": "ads2009",
+  "url": "https://huggingface.co/ads2009/english-ai-text-detector-electra-indomai",
+  "created_at": "2026-10-16T17:10:23.000Z",
+  "updated_at": "2026-10-16T17:10:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "electra",
+    "text-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109483778,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437959248,
+  "storage_human": "438 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

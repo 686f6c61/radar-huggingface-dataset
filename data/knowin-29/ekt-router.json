@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Knowin-29/EKT-Router",
+  "slug": "knowin-29-ekt-router",
+  "author": "Knowin-29",
+  "url": "https://huggingface.co/Knowin-29/EKT-Router",
+  "created_at": "2026-10-16T03:21:25.000Z",
+  "updated_at": "2026-10-16T09:37:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "ekt-router",
+    "embodied-question-answering",
+    "lora",
+    "coming-soon",
+    "image-text-to-text",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Who originally made the image? : r/everyoneknowsthat - Reddit",
+      "url": "https://www.reddit.com/r/everyoneknowsthat/comments/1co9ibi/who_originally_made_the_image/",
+      "snippet": "09.05.2024 ... Years ago I saw this AI expanded version (or something like it) on a YouTube video of EKT. I think the way the song / imagery was ..."
+    },
+    {
+      "title": "En-Hong Chen's Homepage",
+      "url": "http://staff.ustc.edu.cn/~cheneh/",
+      "snippet": "Chenwang Wu, Xiting Wang, Defu Lian, Xing Xie, Enhong Chen. A Causality Inspired Framework for Model Interpretation . The 29th ACM SIGKDD Conference on ..."
+    },
+    {
+      "title": "Download book PDF - Springer Nature",
+      "url": "https://link.springer.com/content/pdf/10.1007/978-3-642-73000-9.pdf",
+      "snippet": "... Model-. Graphikeingabe. Tabellen. Graphik. 5.000.-. Eigenent- mit Maus und ... 29. 16. 4.5 Real-time-Simulation. Diese Entwicklungen dienen dem Bestreben ..."
+    },
+    {
+      "title": "6th Hull Performance & Insight Conference - Hullpic",
+      "url": "http://data.hullpic.info/HullPIC2021_Pontignano.pdf",
+      "snippet": "09.07.2021 ... (ekt⋅Jot − ekt⋅J). (ekq⋅Joq − ekq ... FARAG, Y.B.; OLÇER, A.I. (2020), The development of a ship performance model in varying operating."
+    },
+    {
+      "title": "Hrvoje Basic - Head of Solutions Architecture, Satellite Ground ...",
+      "url": "https://hr.linkedin.com/in/hrvojebasic",
+      "snippet": "Senior software architect, Java developer. External contractor for SES ASTRA (Betzdorf) Luxemburg. Education. Faculty of Electrical Engineering and ..."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Runware/flux-3-image-klein",
+  "slug": "runware-flux-3-image-klein",
+  "author": "Runware",
+  "url": "https://huggingface.co/Runware/flux-3-image-klein",
+  "created_at": "2026-10-16T19:21:58.000Z",
+  "updated_at": "2026-10-16T19:23:41.000Z",
+  "license": "flux-kommunity-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "image-generation",
+    "image-editing",
+    "flux",
+    "flux-3",
+    "black-forest-labs",
+    "image-to-image",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5548681984,
+  "parameters_human": "5.55B",
+  "storage_bytes": 43305977298,
+  "storage_human": "43.3 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Runware | AI Infrastructure Rebuilt to Cost Less",
+      "url": "https://runware.ai/",
+      "snippet": "3D Generation ... Kling 4.0 Seedance 2.5 Gemini Omni FLUX 3 Video FLUX 3 Image Kimi K3 MiniMax H3 Meta Muse Image ..."
+    },
+    {
+      "title": "Runware Pricing: AI Models API, Serverless and GPU Compute",
+      "url": "https://runware.ai/pricing",
+      "snippet": "Runware uses pay-as-you-go billing. Rates on this page are published example prices per generation at the named configuration: …"
+    },
+    {
+      "title": "Dashboard | Runware",
+      "url": "https://my.runware.ai/",
+      "snippet": "Sign in to the Runware Dashboard to manage your media generation API service. Manage API keys, billing, team access and more."
+    },
+    {
+      "title": "Browse API-Ready AI Models - Runware",
+      "url": "https://runware.ai/models",
+      "snippet": "Explore 400K+ AI models ready to run via API. Test, integrate, and build with models for image, video, and more."
+    },
+    {
+      "title": "About Runware: AI Infrastructure Built to Cost Less",
+      "url": "https://runware.ai/about",
+      "snippet": "Runware is the inference platform behind more than a million developers’ products: one API, serverless compute and dedicated …"
+    }
+  ]
+}

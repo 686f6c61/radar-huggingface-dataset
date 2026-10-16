@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Wan-AI/Wan2.2-Animate-14B",
+  "slug": "wan-ai-wan2-2-animate-14b",
+  "author": "Wan-AI",
+  "url": "https://huggingface.co/Wan-AI/Wan2.2-Animate-14B",
+  "created_at": "2025-09-11T12:53:31.000Z",
+  "updated_at": "2025-11-05T10:15:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "video-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "onnx",
+    "safetensors",
+    "video-to-video",
+    "arxiv:2503.20314",
+    "base_model:Wan-AI/Wan2.2-I2V-A14B",
+    "base_model:quantized:Wan-AI/Wan2.2-I2V-A14B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1289,
+  "downloads_30d": 172847,
+  "trending_score": 14,
+  "parameters": 17274817108,
+  "parameters_human": "17.27B",
+  "storage_bytes": 72523243469,
+  "storage_human": "72.5 GB",
+  "base_model": "Wan-AI/Wan2.2-I2V-A14B",
+  "formats": [
+    "diffusers",
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wan AI: Leading AI Video Generation Model",
+      "url": "https://wan.video/",
+      "snippet": "Wan is an AI creative platform. It aims to lower the barrier to creative work using artificial intelligence, offering features like text-to …"
+    },
+    {
+      "title": "Réseau étendu — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/R%C3%A9seau_%C3%A9tendu",
+      "snippet": "Un réseau étendu1, souvent désigné par son acronyme anglais WAN (wide area network), est un réseau informatique ou un réseau …"
+    },
+    {
+      "title": "Réseaux LAN, WAN, WLAN quelles différences - Orange pro",
+      "url": "https://pro.orange.fr/lemag/reseaux-lan-wan-wlan-quelles-differences-CNT000002bmPuT.html",
+      "snippet": "Sep 24, 2025 · Fonctionnement, utilisation, avantages pour l'entreprise : retrouvez tout ce que vous devez savoir sur les réseaux …"
+    },
+    {
+      "title": "Qu'est-ce que le WAN ? – Le réseau étendu (WAN) expliqué – AWS",
+      "url": "https://aws.amazon.com/fr/what-is/wan/",
+      "snippet": "Qu'est-ce que le WAN ? Un réseau étendu (WAN) est la technologie qui relie vos bureaux, vos centres de données, vos applications …"
+    },
+    {
+      "title": "Qu'est-ce qu'un WAN ? | Comparaison des WAN et des LAN",
+      "url": "https://www.cloudflare.com/fr-fr/learning/network-layer/what-is-a-wan/",
+      "snippet": "Un réseau étendu (WAN) est un grand réseau d'ordinateurs qui relie des groupes d'ordinateurs sur de grandes distances. Les …"
+    }
+  ]
+}

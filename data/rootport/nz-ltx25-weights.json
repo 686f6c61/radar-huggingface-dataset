@@ -5,7 +5,7 @@
   "author": "Rootport",
   "url": "https://huggingface.co/Rootport/Nz-LTX25-weights",
   "created_at": "2026-08-18T15:04:09.000Z",
-  "updated_at": "2026-08-23T02:33:39.000Z",
+  "updated_at": "2026-10-16T04:30:48.000Z",
   "license": "ltx-2-community-license-agreement",
   "license_family": "unknown",
   "pipeline_tag": "text-to-video",
@@ -29,13 +29,13 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 12,
+  "downloads_30d": 16,
   "trending_score": 0,
   "parameters": 21004025600,
   "parameters_human": "21.00B",
-  "storage_bytes": 17551585678,
-  "storage_human": "17.6 GB",
-  "base_model": "Lightricks/LTX-2.5",
+  "storage_bytes": 18860373150,
+  "storage_human": "18.9 GB",
+  "base_model": "Lightricks/LTX-2.5, Lightricks/LTX-2.5-22b-IC-LoRA-Alpha-Gen",
   "formats": [
     "gguf"
   ],

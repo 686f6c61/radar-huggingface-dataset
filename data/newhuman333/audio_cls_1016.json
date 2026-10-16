@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "newhuman333/audio_cls_1016",
+  "slug": "newhuman333-audio_cls_1016",
+  "author": "newhuman333",
+  "url": "https://huggingface.co/newhuman333/audio_cls_1016",
+  "created_at": "2026-10-16T03:31:46.000Z",
+  "updated_at": "2026-10-16T03:31:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "audio-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "wav2vec2",
+    "audio-classification",
+    "generated_from_trainer",
+    "base_model:Kkonjeong/wav2vec2-base-korean",
+    "base_model:finetune:Kkonjeong/wav2vec2-base-korean",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 94572174,
+  "parameters_human": "94.6M",
+  "storage_bytes": 378319905,
+  "storage_human": "378 MB",
+  "base_model": "Kkonjeong/wav2vec2-base-korean",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "newhuman333/audio_cls_1016 · Hugging Face",
+      "url": "https://huggingface.co/newhuman333/audio_cls_1016",
+      "snippet": "audio_cls_1016 This model is a fine-tuned version of Kkonjeong/wav2vec2-base-korean on an unknown dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "getupsun/audio_cls · Hugging Face",
+      "url": "https://huggingface.co/getupsun/audio_cls",
+      "snippet": "Instructions to use getupsun/audio_cls with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use getupsun/audio_cls with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline (\"audio-classification\", model=\"getupsun/audio ..."
+    },
+    {
+      "title": "Detect a specific AI voice | AI Voice Detector",
+      "url": "https://aivoicedetector.com/detect",
+      "snippet": "Find out which AI voice generator made a clip. Free, citable detection guides for ElevenLabs, OpenAI, Amazon Polly, Azure, and more."
+    },
+    {
+      "title": "GitHub - BinWang28/audio-ai-hub: The hub for audio AI research: papers ...",
+      "url": "https://github.com/BinWang28/audio-ai-hub",
+      "snippet": "The hub for audio AI research. Curated papers, open models, benchmarks and datasets across audio LLMs · speech recognition · speech synthesis · music & audio generation. 129 entries · 11 categories · latest: 2026-06 👉 Browse the interactive hub → · Contribute · Suggest a paper The page below is a quick snapshot. For search, filtering by category and sorting by stars or date, the ..."
+    },
+    {
+      "title": "Text to Speech — OpenSpeaker",
+      "url": "https://ai33.pro/",
+      "snippet": "Affordable AI tools for voice, audio, music and image creation in one OpenSpeaker workspace."
+    }
+  ]
+}

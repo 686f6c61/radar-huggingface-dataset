@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "Kijai/flux3_experimental",
+  "slug": "kijai-flux3_experimental",
+  "author": "Kijai",
+  "url": "https://huggingface.co/Kijai/flux3_experimental",
+  "created_at": "2026-10-15T18:19:44.000Z",
+  "updated_at": "2026-10-15T18:22:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 15,
+  "downloads_30d": 0,
+  "trending_score": 15,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1351819304,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

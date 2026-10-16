@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "skywalker33/removeit-sam2-coreml",
+  "slug": "skywalker33-removeit-sam2-coreml",
+  "author": "skywalker33",
+  "url": "https://huggingface.co/skywalker33/removeit-sam2-coreml",
+  "created_at": "2026-10-16T03:38:27.000Z",
+  "updated_at": "2026-10-16T03:38:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "coreml",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 93891160,
+  "storage_human": "94 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "skywalker33 (Joey R) - Hugging Face",
+      "url": "https://huggingface.co/skywalker33/models",
+      "snippet": "skywalker33&#x27;s models6 Sort: Recently updated skywalker33/removeit-sam2-coreml Updated about 10 hours ago"
+    },
+    {
+      "title": "GitHub - huggingface/segment-anything-2: The repository provides code ...",
+      "url": "https://github.com/huggingface/segment-anything-2/tree/coreml-conversion",
+      "snippet": "This repository contains the CoreML conversion of the Segment Anything Model 2 (SAM 2) for image segmentation tasks. The converted models are optimized to run efficiently on the Apple Neural Engine across a range of Apple devices."
+    },
+    {
+      "title": "GitHub - alexhaugland/segment-anything-2-coreml: The repository ...",
+      "url": "https://github.com/alexhaugland/segment-anything-2-coreml",
+      "snippet": "For an integrated experience, you can also use SAM2 Studio, a native MacOS app that allows you to quickly segment images. Note ⚠️: The CoreML conversion currently only supports image segmentation tasks. Video segmentation support is in development. Segment Anything Model 2 (SAM 2) is a ..."
+    },
+    {
+      "title": "CoreML Export | huggingface/segment-anything-2 | DeepWiki",
+      "url": "https://deepwiki.com/huggingface/segment-anything-2/5-coreml-export",
+      "snippet": "The CoreML export system transforms SAM 2 models into Apple&#x27;s CoreML format, allowing efficient execution on iOS and macOS devices. The conversion process decomposes the monolithic SAM 2 model into three separate CoreML models that work together to perform image segmentation."
+    },
+    {
+      "title": "apple/coreml-sam2-large · Hugging Face",
+      "url": "https://huggingface.co/apple/coreml-sam2-large",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

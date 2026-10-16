@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "kalyan-ks/Ammu-1.0-OffOnTopic-Guardrail-small",
+  "slug": "kalyan-ks-ammu-1-0-offontopic-guardrail-small",
+  "author": "kalyan-ks",
+  "url": "https://huggingface.co/kalyan-ks/Ammu-1.0-OffOnTopic-Guardrail-small",
+  "created_at": "2026-10-16T18:37:39.000Z",
+  "updated_at": "2026-10-16T18:37:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 68408322,
+  "parameters_human": "68.4M",
+  "storage_bytes": 273645576,
+  "storage_human": "274 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Speedtest by Ookla - The Global Broadband Speed Test",
+      "url": "https://www.speedtest.net/",
+      "snippet": "Use Speedtest on all your devices with our free desktop and mobile apps."
+    },
+    {
+      "title": "Internet Speed Test | Fast.com",
+      "url": "https://fast.com/",
+      "snippet": "How fast is your download speed? In seconds, FAST.com's simple Internet speed test will estimate your ISP speed."
+    },
+    {
+      "title": "Test de débit internet — Téléchargement, envoi et ping | speed-test.com",
+      "url": "https://speed-test.com/fr",
+      "snippet": "Test de débit gratuit : mesurez votre vitesse de téléchargement et d'envoi, votre ping, la gigue et le bufferbloat en quelques …"
+    },
+    {
+      "title": "Speedtest d’Ookla – le test de vitesse de connexion global",
+      "url": "https://www.speedtest.net/fr",
+      "snippet": "Utilisez Speedtest sur tous vos appareils grâce à nos applications pour bureau et mobiles gratuites."
+    },
+    {
+      "title": "Internet Speed Test - Measure Network Performance | Cloudflare",
+      "url": "https://speed.cloudflare.com/",
+      "snippet": "Test your Internet connection. Check your network performance with our Internet speed test. Powered by Cloudflare's global edge …"
+    }
+  ]
+}

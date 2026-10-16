@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "RuyiAI/buddy-deepseek-r1-k3-w4g32",
+  "slug": "ruyiai-buddy-deepseek-r1-k3-w4g32",
+  "author": "RuyiAI",
+  "url": "https://huggingface.co/RuyiAI/buddy-deepseek-r1-k3-w4g32",
+  "created_at": "2026-10-16T03:19:40.000Z",
+  "updated_at": "2026-10-16T03:19:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2546054094,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "東京都のコンクリート構造物の表記において「BB182B」や「.",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1061687610",
+      "snippet": "May 6, 2011 · 東京都のコンクリート構造物の表記において「BB182B」や「HB212B」など書かれているのを見ました。この頭の …"
+    },
+    {
+      "title": "キッズレッスンの内容",
+      "url": "https://www.ytjkids.jp/about-lesson",
+      "snippet": "基礎レッスン以外に追加で受講することのできる参加推奨のレッスンです。 幼稚園・保育園児のクラスの内容は、キッズのバレエ …"
+    },
+    {
+      "title": "YTJキッズ公式サイト｜ユースシアタージャパン（ダンス、英語、歌 …",
+      "url": "https://www.ytjkids.jp/",
+      "snippet": "「ダンス」「英語」「歌」をいっしょに！子どもが“好き”を見つけて自信を育てる ─ ユースシアタージャパンのキッズメンバーサ …"
+    },
+    {
+      "title": "トラクタのﾓﾝﾛｰﾏﾁｯｸが動かなくなってしまいました。原因 …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1115977071",
+      "snippet": "Apr 16, 2008 · トラクタのﾓﾝﾛｰﾏﾁｯｸが動かなくなってしまいました。原因と対策をお知りの方お知恵拝借願います 1）モン …"
+    },
+    {
+      "title": "yjt - 知乎",
+      "url": "https://www.zhihu.com/people/yjt-68-51",
+      "snippet": "Jun 3, 2026 · 实在是忍不了了，b站也是知乎也是，怎么那么多人对轻型特技运动飞机的过载特性和机动特性没有一点了解，就在这她 …"
+    }
+  ]
+}

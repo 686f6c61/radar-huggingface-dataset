@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "kayaganer/Webcomic",
+  "slug": "kayaganer-webcomic",
+  "author": "kayaganer",
+  "url": "https://huggingface.co/kayaganer/Webcomic",
+  "created_at": "2026-10-16T19:09:28.000Z",
+  "updated_at": "2026-10-16T19:09:28.000Z",
+  "license": "llama3.3",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:llama3.3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

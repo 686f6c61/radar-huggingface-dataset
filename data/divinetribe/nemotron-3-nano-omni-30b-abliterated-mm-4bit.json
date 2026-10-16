@@ -5,7 +5,7 @@
   "author": "divinetribe",
   "url": "https://huggingface.co/divinetribe/Nemotron-3-Nano-Omni-30B-Abliterated-MM-4bit",
   "created_at": "2026-08-13T17:17:44.000Z",
-  "updated_at": "2026-08-22T20:27:57.000Z",
+  "updated_at": "2026-10-16T02:39:21.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 81,
+  "downloads_30d": 79,
   "trending_score": 0,
   "parameters": 33015598918,
   "parameters_human": "33.02B",

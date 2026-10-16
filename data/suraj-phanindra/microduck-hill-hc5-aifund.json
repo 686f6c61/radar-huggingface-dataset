@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "suraj-phanindra/microduck-hill-hc5-aifund",
+  "slug": "suraj-phanindra-microduck-hill-hc5-aifund",
+  "author": "suraj-phanindra",
+  "url": "https://huggingface.co/suraj-phanindra/microduck-hill-hc5-aifund",
+  "created_at": "2026-10-16T17:02:55.000Z",
+  "updated_at": "2026-10-16T17:02:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "base_model:juicenv/microduck-hill-es8",
+    "base_model:finetune:juicenv/microduck-hill-es8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 793837,
+  "storage_human": "793837 B",
+  "base_model": "juicenv/microduck-hill-es8",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

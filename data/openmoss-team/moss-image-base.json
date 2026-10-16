@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "OpenMOSS-Team/MOSS-Image-Base",
+  "slug": "openmoss-team-moss-image-base",
+  "author": "OpenMOSS-Team",
+  "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base",
+  "created_at": "2026-10-11T06:49:17.000Z",
+  "updated_at": "2026-10-16T07:48:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "moss-image",
+    "text-to-image",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "diffusers:MOSSImagePipeline",
+    "region:us"
+  ],
+  "likes": 99,
+  "downloads_30d": 73,
+  "trending_score": 99,
+  "parameters": 5082308624,
+  "parameters_human": "5.08B",
+  "storage_bytes": 27228815653,
+  "storage_human": "27.2 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aletta Ocean's Porn Videos - 3Movs (page 2)",
+      "url": "https://www.3movs.xxx/pornstars/aletta-ocean/2/",
+      "snippet": "Aletta loves shooting in hardcore anal and gang bang movies. Aletta Ocean wasn't just a hit with her US fans either and back home …"
+    },
+    {
+      "title": "Aletta Ocean - 3movs.xxx",
+      "url": "https://www.3movs.xxx/playlists/20658/aletta-ocean6/",
+      "snippet": "Euro babe Aletta Ocean rides thick prick reverse cowgirl 0% 0 | 0 3 days ago 1 5 Playlist Details Share Subscribe Lrigwoc …"
+    },
+    {
+      "title": "Aletta Ocean HD Porn Videos (Now in 4k) - PlayVids",
+      "url": "https://www.playvids.com/pornstar/Aletta-Ocean",
+      "snippet": "Watch nude Aletta Ocean exclusive fresh and even UPCOMING movies in HD & 4k quality. Start following Aletta Ocean on PlayVids …"
+    },
+    {
+      "title": "Official repository for MOSS-Image, a 5B-parameter base DiT model ...",
+      "url": "https://github.com/OpenMOSS/MOSS-Image",
+      "snippet": "vor 13 Stunden ... Official repository for MOSS-Image, a 5B-parameter base DiT model with high-quality text rendering, layout generation, and efficient ..."
+    },
+    {
+      "title": "Aletta Ocean - Pornstar XXX (918 videos) @ PornRaw",
+      "url": "https://pornraw.com/models/aletta-ocean/",
+      "snippet": "Explore the top-rated videos of Aletta Ocean from numerous platforms. Enjoy a curated selection of the best content featuring Aletta …"
+    }
+  ]
+}

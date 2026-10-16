@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ausboss/FLUX-3-Image-Klein-Consistency-LoRA",
+  "slug": "ausboss-flux-3-image-klein-consistency-lora",
+  "author": "ausboss",
+  "url": "https://huggingface.co/ausboss/FLUX-3-Image-Klein-Consistency-LoRA",
+  "created_at": "2026-10-16T19:06:48.000Z",
+  "updated_at": "2026-10-16T19:47:09.000Z",
+  "license": "flux-kommunity-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "lora",
+    "image-editing",
+    "consistency",
+    "flux",
+    "flux-3",
+    "flux-3-image-klein",
+    "comfyui",
+    "ai-toolkit",
+    "image-to-image",
+    "base_model:black-forest-labs/flux-3-image-klein-base",
+    "base_model:adapter:black-forest-labs/flux-3-image-klein-base",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 160696888,
+  "storage_human": "161 MB",
+  "base_model": "black-forest-labs/flux-3-image-klein-base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Update your Google One plan & fix upgrade issues - iPhone & iPad ...",
+      "url": "https://support.google.com/googleone/answer/9003633?hl=en&co=GENIE.Platform=iOS",
+      "snippet": "In the Apple App store, change your Google One plan in device Settings. In a Google app like Gmail, Google Drive, or Google …"
+    },
+    {
+      "title": "Inloggen met een Apple-apparaat - Google-account Help",
+      "url": "https://support.google.com/accounts/troubleshooter/3178296?hl=nl",
+      "snippet": "Inloggen met een Apple-apparaat Bekijk dit artikel als u zojuist de nieuwste versie van de Google Authenticator-app heeft …"
+    },
+    {
+      "title": "Inicio de sesión con un dispositivo Apple - Google Help",
+      "url": "https://support.google.com/accounts/troubleshooter/3178296?hl=es",
+      "snippet": "Inicio de sesión con un dispositivo Apple Si acabas de descargar la versión más reciente de la aplicación Google Authenticator, …"
+    },
+    {
+      "title": "301 Moved - Google Help",
+      "url": "https://support.google.com/a/answer/9003945?hl=de",
+      "snippet": "301 Moved 301 Moved The document has moved here."
+    },
+    {
+      "title": "Delete video history and snapshots - Google Home and Nest Help",
+      "url": "https://support.google.com/googlenest/answer/9219185?hl=en",
+      "snippet": "You can delete your Google Nest camera or doorbell’s entire video history at any time. This will also delete any photo snapshots in …"
+    }
+  ]
+}

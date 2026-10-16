@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "skywalker33/removeit-lama-coreml",
+  "slug": "skywalker33-removeit-lama-coreml",
+  "author": "skywalker33",
+  "url": "https://huggingface.co/skywalker33/removeit-lama-coreml",
+  "created_at": "2026-10-16T03:38:13.000Z",
+  "updated_at": "2026-10-16T03:38:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "coreml",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 216646769,
+  "storage_human": "217 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "skywalker33 (Joey R) - Hugging Face",
+      "url": "https://huggingface.co/skywalker33/models",
+      "snippet": "skywalker33&#x27;s models6 Sort: Recently updated skywalker33/removeit-sam2-coreml Updated about 10 hours ago"
+    },
+    {
+      "title": "GitHub - mallman/CoreMLaMa: LaMa for Core ML",
+      "url": "https://github.com/mallman/CoreMLaMa",
+      "snippet": "CoreMLaMa: LaMa for Core ML This repo contains a script for converting a LaMa (aka cute, fuzzy 🦙) model to Apple&#x27;s Core ML model format. More specifically, it converts the implementation of LaMa from Lama Cleaner. This repo also includes a simple example of how to use the Core ML model for prediction. See Sample."
+    },
+    {
+      "title": "GitHub - jimzou/lama-cleaner: Image inpainting tool powered by SOTA AI ...",
+      "url": "https://github.com/jimzou/lama-cleaner",
+      "snippet": "Image inpainting tool powered by SOTA AI Model. Remove any unwanted object, defect, people from your pictures or erase and replace (powered by stable diffusion) any thing on your pictures. - jimzou/lama-cleaner"
+    },
+    {
+      "title": "mlboydaisuke/LaMa-CoreML · Hugging Face",
+      "url": "https://huggingface.co/mlboydaisuke/LaMa-CoreML",
+      "snippet": "Sample app — lama-cleaner-iOS, a standalone iOS project. Models Zoo — this model is downloadable and runnable inside the Models Zoo app on the App Store, no build required."
+    },
+    {
+      "title": "A Third-Party Tool Removes Apple Intelligence Models From macOS 27",
+      "url": "https://www.gadgetreview.com/a-third-party-tool-removes-apple-intelligence-models-from-macos-27",
+      "snippet": "RemoveMacAI tool frees roughly 12 GB on macOS 27 by deleting Apple Intelligence models, though a deprecated method means future updates could break it."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "peculiar-ragdoll/Sharp-LFM2.5-Chat-Templates",
+  "slug": "peculiar-ragdoll-sharp-lfm2-5-chat-templates",
+  "author": "peculiar-ragdoll",
+  "url": "https://huggingface.co/peculiar-ragdoll/Sharp-LFM2.5-Chat-Templates",
+  "created_at": "2026-10-14T20:19:48.000Z",
+  "updated_at": "2026-10-14T20:55:25.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "jinja",
+    "chat-template",
+    "lfm2.5",
+    "liquid",
+    "llama.cpp",
+    "vllm",
+    "tool-calling",
+    "thinking",
+    "token-efficient",
+    "base_model:LiquidAI/LFM2.5-24B-A2B",
+    "base_model:finetune:LiquidAI/LFM2.5-24B-A2B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 14,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "LiquidAI/LFM2.5-24B-A2B",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "peculiar-ragdoll/Sharp-LFM2.5-Chat-Templates - Hugging Face",
+      "url": "https://huggingface.co/peculiar-ragdoll/Sharp-LFM2.5-Chat-Templates",
+      "snippet": "A drop-in chat template for LFM2.5-24B-A2B: Liquid AI's own template with four rendering bugs fixed and the Sharp terseness prompt added. It is the same idea as ..."
+    },
+    {
+      "title": "peculiar-ragdoll (Saga) - Hugging Face",
+      "url": "https://huggingface.co/peculiar-ragdoll",
+      "snippet": "Rogue AI researcher. ... peculiar-ragdoll/Sharp-LFM2.5-Chat-Templates · View all activity. Organizations."
+    },
+    {
+      "title": "Fine-tuned Models for LiquidAI/LFM2.5-24B-A2B - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:LiquidAI/LFM2.5-24B-A2B",
+      "snippet": "peculiar-ragdoll/Sharp-LFM2.5-Chat-Templates. Updated 1 day ago • 9 · LiquidAI ... Blackfrost-AI/LFM2.5-24B-A2B-DERISKED-BF16. Text Generation • 24B ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=mlx",
+      "snippet": "peculiar-ragdoll/Sharp-LFM2.5-Chat-Templates. Updated 1 day ago • 11 · Qwen/Qwen3-235B-A22B-MLX-6bit. Text Generation • 235B • Updated Jul 7, 2025 • 258 • ..."
+    },
+    {
+      "title": "SAVRN Site Map: Every Public Page",
+      "url": "https://savrn.com/sitemap",
+      "snippet": "LFM2.5-2.6B-GGUF/models/lfm2-5-2-6b-gguf · Meta-Llama-3-8B-Instruct/models/meta ... Saga/model-publishers/peculiar-ragdoll · Sica Rius/model-publishers ..."
+    }
+  ]
+}

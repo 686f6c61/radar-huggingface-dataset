@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "introvoyz045/Xiaomi-Robotics-1-RoboCasa365",
+  "slug": "introvoyz045-xiaomi-robotics-1-robocasa365",
+  "author": "introvoyz045",
+  "url": "https://huggingface.co/introvoyz045/Xiaomi-Robotics-1-RoboCasa365",
+  "created_at": "2026-10-16T03:32:38.000Z",
+  "updated_at": "2026-10-16T03:32:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mibot",
+    "feature-extraction",
+    "robotics",
+    "vision-language-action",
+    "robocasa365",
+    "qwen3-vl",
+    "custom_code",
+    "vla",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5053149696,
+  "parameters_human": "5.05B",
+  "storage_bytes": 10117855990,
+  "storage_human": "10.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "introvoyz045/Xiaomi-Robotics-1-RoboCasa365 · Hugging Face",
+      "url": "https://huggingface.co/introvoyz045/Xiaomi-Robotics-1-RoboCasa365",
+      "snippet": "This repository contains the Hugging Face checkpoint used by Xiaomi-Robotics-1 for RoboCasa365 evaluation. It includes the model weights, custom Transformers model and processor code, tokenizer files, and RoboCasa365 action normalization statistics. Use the companion Xiaomi-Robotics-1 source ..."
+    },
+    {
+      "title": "XiaomiRobotics/Xiaomi-Robotics-1-RoboCasa365 · Hugging Face",
+      "url": "https://huggingface.co/XiaomiRobotics/Xiaomi-Robotics-1-RoboCasa365",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Xiaomi-Robotics-1/eval_robocasa365 at main - GitHub",
+      "url": "https://github.com/XiaomiRobotics/Xiaomi-Robotics-1/tree/main/eval_robocasa365",
+      "snippet": "This guide walks through evaluating Xiaomi-Robotics-1 on the RoboCasa365 benchmark: setting up the simulation environment, launching the inference server, running the evaluation client, and reading the results. Architecture. Evaluation uses a client-server split: the server loads the model and serves actions over a socket; the client runs the RoboCasa365 simulator, builds inputs with the ..."
+    },
+    {
+      "title": "Xiaomi-Robotics-1 - GitHub",
+      "url": "https://github.com/XiaomiRobotics/Xiaomi-Robotics-1",
+      "snippet": "Xiaomi-Robotics-1 is a robot foundation model trained on over 100K hours of real-world manipulation trajectories. It is a Vision-Language-Action (VLA) model engineered for out-of-the-box mobile manipulation in unseen environments and efficient adaptation to new tasks."
+    },
+    {
+      "title": "Xiaomi-Robotics-1",
+      "url": "https://robotics.xiaomi.com/xiaomi-robotics-1.html",
+      "snippet": "Xiaomi-Robotics-1 is a ready-to-use robot foundation model trained on over 100K hours of real-world manipulation trajectories."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "hi-todayis-jh/ouro-1.4b-thinking-math-verl-grpo-ragged-ds4k-154711-20261016",
+  "slug": "hi-todayis-jh-ouro-1-4b-thinking-math-verl-grpo-ragged-ds4k-154711-20261016",
+  "author": "hi-todayis-jh",
+  "url": "https://huggingface.co/hi-todayis-jh/ouro-1.4b-thinking-math-verl-grpo-ragged-ds4k-154711-20261016",
+  "created_at": "2026-10-16T19:29:38.000Z",
+  "updated_at": "2026-10-16T19:29:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "verl",
+    "reinforcement-learning",
+    "ouro",
+    "looped-language-model",
+    "dataset:DigitalLearningGmbH/MATH-lighteval",
+    "base_model:ByteDance/Ouro-1.4B-Thinking",
+    "base_model:finetune:ByteDance/Ouro-1.4B-Thinking",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 318798,
+  "storage_human": "318798 B",
+  "base_model": "ByteDance/Ouro-1.4B-Thinking",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HI | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/hi",
+      "snippet": "HI definition: 1. used as an informal greeting, usually to people who you know: 2. written abbreviation for the…. Learn more."
+    },
+    {
+      "title": "Travailler chez HI",
+      "url": "https://www.hi.org/fr/travailler-chez-hi",
+      "snippet": "Que ce soit en situation d’urgence, de grande pauvreté ou lors de crises chroniques, les équipes de HI agissent dans tous les …"
+    },
+    {
+      "title": "hi - English-French Dictionary WordReference.com",
+      "url": "https://www.wordreference.com/enfr/hi",
+      "snippet": "Dans les listes : Top 2000 English words, Spoken greetings, Things you say when someone gets home, Suite... Collocations : say a …"
+    },
+    {
+      "title": "Définition de hi | Dictionnaire français - La langue française",
+      "url": "https://www.lalanguefrancaise.com/dictionnaire/definition/hi",
+      "snippet": "Mar 2, 2024 · Définition de hi : dictionnaire, étymologie, phonétique, citations littéraires, synonymes et antonymes de « hi »"
+    },
+    {
+      "title": "Hï Ibiza | Four-Time DJ Mag #1 Club | Connecting Cultures",
+      "url": "https://www.hiibiza.com/",
+      "snippet": "Hï Ibiza, the four-time DJ Mag #1 Club in the World. The best house, techno & electronic music in Ibiza with cutting-edge DJs and …"
+    }
+  ]
+}

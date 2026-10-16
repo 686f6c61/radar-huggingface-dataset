@@ -5,7 +5,7 @@
   "author": "turintech",
   "url": "https://huggingface.co/turintech/GLM-5.2-MaxMin108-GGUF",
   "created_at": "2026-08-17T11:18:48.000Z",
-  "updated_at": "2026-10-15T13:45:55.000Z",
+  "updated_at": "2026-10-15T22:46:53.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -35,11 +35,11 @@
     "imatrix"
   ],
   "likes": 11,
-  "downloads_30d": 482,
+  "downloads_30d": 291,
   "trending_score": 0,
   "parameters": 324832039332,
   "parameters_human": "324.83B",
-  "storage_bytes": 210570327680,
+  "storage_bytes": 210570435018,
   "storage_human": "210.6 GB",
   "base_model": "zai-org/GLM-5.2",
   "formats": [

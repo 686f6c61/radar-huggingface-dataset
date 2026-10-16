@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "charlie-becker/CAMulator",
+  "slug": "charlie-becker-camulator",
+  "author": "charlie-becker",
+  "url": "https://huggingface.co/charlie-becker/CAMulator",
+  "created_at": "2026-10-16T17:24:10.000Z",
+  "updated_at": "2026-10-16T17:48:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4805192874,
+  "storage_human": "4.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CHARLIE Paris - L'Horlogerie Nouvelle - Montre Homme & Femme",
+      "url": "https://charlie-paris.com/",
+      "snippet": "Charlie Paris est la maison de l'Horlogerie Nouvelle. Depuis plus de 10 ans, Charlie Paris propose des garde-temps au design à la …"
+    },
+    {
+      "title": "Charlie Hebdo – Journal satirique, laïque et joyeux",
+      "url": "https://charliehebdo.fr/",
+      "snippet": "La newsletter « Qu’a dit Charlie ? » Pour ne rien louper de l’actualité, abonnez-vous à nos newsletters quotidienne et hebdomadaire."
+    },
+    {
+      "title": "Prénom Charlie : Origine - Caractère - Signification - Etymologie",
+      "url": "https://www.parents.fr/prenoms/charlie-37553",
+      "snippet": "Charlie était à l’origine un prénom strictement masculin, et ce n’est qu’à partir des années 1980 en France que le prénom …"
+    },
+    {
+      "title": "Charlie Solutions - Gestion de parc matériel",
+      "url": "https://charlie-solutions.com/",
+      "snippet": "Gérez et localisez votre matériel en temps réel avec Charlie. Géolocalisation, inventaires automatiques, et conformité pour reprendre …"
+    },
+    {
+      "title": "Charlie — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Charlie",
+      "snippet": "« Je suis Charlie », slogan créé par Joachim Roncin, un graphiste français, dans les heures suivant l' attentat contre le journal …"
+    }
+  ]
+}

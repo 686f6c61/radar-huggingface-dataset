@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "mhseo2/semiopd_sftb8dm15e_s2000_qwen3moe30b_ot3math-step10",
+  "slug": "mhseo2-semiopd_sftb8dm15e_s2000_qwen3moe30b_ot3math-step10",
+  "author": "mhseo2",
+  "url": "https://huggingface.co/mhseo2/semiopd_sftb8dm15e_s2000_qwen3moe30b_ot3math-step10",
+  "created_at": "2026-10-16T03:02:57.000Z",
+  "updated_at": "2026-10-16T03:03:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939438,
+  "storage_human": "16.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Oudom Saycocie - DSI * Directeur des Systèmes d’Information",
+      "url": "https://fr.linkedin.com/in/osaycocie/fr",
+      "snippet": "“I am delighted to write this recommendation for Oudom, who I have direct report on our IT team for the past three years. Throughout …"
+    },
+    {
+      "title": "Madame Oudom SAYCOCIE - Libra Memoria",
+      "url": "https://www.libramemoria.com/defunts/saycocie-oudom/108f1abf8ccb4c1d8b3f737d8a1d06be",
+      "snippet": "Avis de décès de Madame Oudom SAYCOCIE paru le 28/10/2023 - département Meurthe-et-Moselle sur le site Libra Memoria"
+    },
+    {
+      "title": "Oudom Saycocie Email & Phone Number | Ingenico - ContactOut",
+      "url": "https://contactout.com/oudom-saycocie-38105",
+      "snippet": "What is Oudom Saycocie's role at Ingenico? Oudom Saycocie is Group IT Director - Infrastructure, Operations & Cyber Security …"
+    },
+    {
+      "title": "Oudom Saycocie - Asia Pillars",
+      "url": "https://asiapillars.com/pillar/oudom-saycocie/",
+      "snippet": "Oudom Saycocie, of Franco-Lao origin and a graduate engineer, has been leading and transforming Information Systems for over 30 …"
+    },
+    {
+      "title": "Familles Saycocie : avis de décès et avis d’obsèques - Libra Memoria",
+      "url": "https://www.libramemoria.com/avis/nom-saycocie",
+      "snippet": "Retrouvez sur libramemoria.com tous les avis de décès le jour de leur parution papier, et déposez gratuitement des condoléances …"
+    }
+  ]
+}

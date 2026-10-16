@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "kikusuka/flick2-tokenizer",
+  "slug": "kikusuka-flick2-tokenizer",
+  "author": "kikusuka",
+  "url": "https://huggingface.co/kikusuka/flick2-tokenizer",
+  "created_at": "2026-10-16T19:14:13.000Z",
+  "updated_at": "2026-10-16T19:14:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Docs",
+      "url": "https://docs.google.com/",
+      "snippet": "Create and edit web-based documents, spreadsheets, and presentations. Store documents online and access them from any computer.Read more"
+    },
+    {
+      "title": "Google Docs : connexion",
+      "url": "https://docs.google.com/document/create?hl=fr",
+      "snippet": "Accédez à Google Docs avec un compte Google personnel ou un compte Google Workspace (à usage professionnel)."
+    },
+    {
+      "title": "Google Docs: Sign-in",
+      "url": "https://docs.google.com/document/?rswr=true",
+      "snippet": "Access Google Docs with a personal Google account or Google Workspace account (for business use)."
+    },
+    {
+      "title": "Google Tài liệu: Đăng nhập",
+      "url": "https://docs.google.com/document/u/0/?hl=vi",
+      "snippet": "Truy cập Google Tài liệu bằng Tài khoản Google cá nhân hoặc tài khoản Google Workspace (dành cho công việc)."
+    },
+    {
+      "title": "Documentos de Google: inicio de sesión - Google Sheets",
+      "url": "https://docs.google.com/document/u/0/?hl=es",
+      "snippet": "Accede a Documentos de Google con una cuenta de Google personal o una cuenta de Google Workspace (para uso corporativo)."
+    }
+  ]
+}

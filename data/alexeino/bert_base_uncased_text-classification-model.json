@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "alexeino/bert_base_uncased_text-classification-model",
+  "slug": "alexeino-bert_base_uncased_text-classification-model",
+  "author": "alexeino",
+  "url": "https://huggingface.co/alexeino/bert_base_uncased_text-classification-model",
+  "created_at": "2026-10-16T17:17:03.000Z",
+  "updated_at": "2026-10-16T17:24:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109486854,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437976129,
+  "storage_human": "438 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

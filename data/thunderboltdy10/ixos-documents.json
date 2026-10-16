@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "Thunderboltdy10/ixos-documents",
+  "slug": "thunderboltdy10-ixos-documents",
+  "author": "Thunderboltdy10",
+  "url": "https://huggingface.co/Thunderboltdy10/ixos-documents",
+  "created_at": "2026-10-16T17:40:43.000Z",
+  "updated_at": "2026-10-16T17:44:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "model2vec",
+    "embeddings",
+    "static-embeddings",
+    "retrieval",
+    "ixos",
+    "en",
+    "base_model:minishlab/potion-retrieval-32M",
+    "base_model:finetune:minishlab/potion-retrieval-32M",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32555124,
+  "storage_human": "33 MB",
+  "base_model": "minishlab/potion-retrieval-32M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

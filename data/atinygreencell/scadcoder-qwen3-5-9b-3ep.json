@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ATinyGreenCell/scadcoder-qwen3.5-9b-3ep",
+  "slug": "atinygreencell-scadcoder-qwen3-5-9b-3ep",
+  "author": "ATinyGreenCell",
+  "url": "https://huggingface.co/ATinyGreenCell/scadcoder-qwen3.5-9b-3ep",
+  "created_at": "2026-10-16T19:27:16.000Z",
+  "updated_at": "2026-10-16T19:29:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "openscad",
+    "code",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 19326300472,
+  "storage_human": "19.3 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Scadcoder Qwen3.5 9b - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/atinygreencell/scadcoder-qwen3.5-9b",
+      "snippet": "Registry entry for model Scadcoder Qwen3.5 9b; source metadata pending."
+    },
+    {
+      "title": "Qwen: Qwen3.5-9B - AI Model Details & Benchmarks",
+      "url": "https://benchable.ai/models/qwen/qwen3.5-9b-20260310",
+      "snippet": "Qwen3.5-9B, a multimodal foundation model from qwen, demonstrates a strong overall reliability with an 83% success rate across benchmarks, indicating consistent operational stability. However, its speed performance is a notable area for improvement, ranking in the 10th percentile, suggesting longer response times compared to peers."
+    },
+    {
+      "title": "Qwen3.5-9B · LLM Releases",
+      "url": "https://www.llm-releases.com/models/qwen3-5-9b",
+      "snippet": "The flagship of Alibaba&#x27;s small dense Qwen3.5 models. Independent analysis (Artificial Analysis) rated it the most intelligent model under 10B parameters at launch — roughly double the score of the next-closest sub-10B models — and the most intelligent multimodal model under 15B, leading peers on MMMU-Pro (~69%). A dense 9B with native vision, a 262K-token context, and the Qwen3.5 family&#x27;s ..."
+    },
+    {
+      "title": "Qwen3.5 9B by Qwen | Model Library | Modal",
+      "url": "https://modal.com/library/qwen/qwen3-5-9b",
+      "snippet": "Qwen3.5 9B Qwen3.5 9B is the largest of the four small dense models in Qwen&#x27;s natively multimodal Qwen3.5 family: a 9B-parameter vision-language model with thinking mode on by default, a 262K-token context extensible to 1M with YaRN, 201-language coverage, and open weights under Apache 2.0."
+    },
+    {
+      "title": "Qwen3.5 9B API: Pricing, Benchmarks & Docs | Together AI",
+      "url": "https://www.together.ai/models/qwen3-5-9b",
+      "snippet": "Qwen&#x27;s 9B multimodal model with hybrid architecture, 262K native context, vision-language reasoning, native tool calling, and 201-language support for agentic workflows"
+    }
+  ]
+}

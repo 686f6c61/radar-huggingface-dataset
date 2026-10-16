@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Sachin-0001/crnn-iam-handwriting",
+  "slug": "sachin-0001-crnn-iam-handwriting",
+  "author": "Sachin-0001",
+  "url": "https://huggingface.co/Sachin-0001/crnn-iam-handwriting",
+  "created_at": "2026-10-16T19:19:49.000Z",
+  "updated_at": "2026-10-16T19:30:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "handwriting-recognition",
+    "ocr",
+    "pytorch",
+    "crnn",
+    "ctc",
+    "en",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17695563,
+  "storage_human": "18 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "️ CRNN Handwriting Recognition with Trigram Language Model",
+      "url": "https://github.com/Btn09/crnn-handwriting-ocr",
+      "snippet": "This project implements a high-performance Convolutional Recurrent Neural Network (CRNN) for recognizing handwritten text, specifically trained and evaluated on the world-renowned IAM Handwriting Database. It features a hybrid deep learning architecture combined with a Trigram-based Language Model for advanced post-processing."
+    },
+    {
+      "title": "Intelligent-Handwriting-Recognition-Using-Deep-Neural-Networks",
+      "url": "https://github.com/OmPatil2806/Intelligent-Handwriting-Recognition-Using-Deep-Neural-Networks",
+      "snippet": "Deep learning-based handwriting recognition using CRNN (CNN + BiLSTM) and ResNet-CTC models. Trained on the IAM Handwriting Dataset, this project automatically converts handwritten words into digital text, evaluates accuracy, visualizes predictions, and analyzes character-level confusion patterns effectively."
+    },
+    {
+      "title": "Handwritten Text Recognition CRNN Python - projectech.in",
+      "url": "https://projectech.in/projects/handwritten-text-recognition-crnn/",
+      "snippet": "What dataset is the model trained on? The IAM Handwriting Database — 13,353 labeled handwritten English text lines — widely used as the standard benchmark for offline handwriting recognition research. How is the model&#x27;s performance evaluated?"
+    },
+    {
+      "title": "IsmatS/handwriting_recognition · Hugging Face",
+      "url": "https://huggingface.co/IsmatS/handwriting_recognition",
+      "snippet": "This project implements a state-of-the-art Handwriting Recognition system that converts handwritten text images into digital text. The model achieves 87% character-level accuracy on the IAM Handwriting Database."
+    },
+    {
+      "title": "Comparison of Three C-RNN Models for English Handwriting Recognition on ...",
+      "url": "https://scholarworks.calstate.edu/downloads/pn89df790",
+      "snippet": "1.3 Driving Factors The demand for development of models with superior accuracy due to wid handwriting styles is a key challenge in handwritten word recognition. For practical uses like ming handwritten medical documents into digital format word identification, these models are quite essential. The aspiration to refine the accuracy of on ..."
+    }
+  ]
+}

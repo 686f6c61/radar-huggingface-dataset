@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "SAURABHIMA/Advanced_NLP",
+  "slug": "saurabhima-advanced_nlp",
+  "author": "SAURABHIMA",
+  "url": "https://huggingface.co/SAURABHIMA/Advanced_NLP",
+  "created_at": "2026-10-16T16:48:27.000Z",
+  "updated_at": "2026-10-16T16:51:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 291144026,
+  "storage_human": "291 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zero Tolerance Entertainment - Wikiwand",
+      "url": "https://www.wikiwand.com/en/Zero_Tolerance_Entertainment",
+      "snippet": "Zero Tolerance Entertainment is an American independent pornographic film studio. The studios Third Degree Films, Black Ice and …"
+    },
+    {
+      "title": "Haley Spades in Daddy Issues 10 - Scene 1 for DIABOLIC - theNude",
+      "url": "https://www.thenude.com/cover/diabolic/966690/haley-spades-in-daddy-issues-10---scene-1",
+      "snippet": "View large cover of 'Daddy Issues 10 - Scene 1' from DIABOLIC (released on 2021-10-16), featuring Haley Spades."
+    },
+    {
+      "title": "2 Guns: Zero Tolerance (2015) - IMDb",
+      "url": "https://m.imdb.com/title/tt3727690/",
+      "snippet": "2 Guns: Zero Tolerance: Directed by Wych Kaosayananda. With Dustin Nguyen, Sahajak Boonthanakit, Scott Adkins, Gary Daniels. …"
+    },
+    {
+      "title": "Daddy Issues 7 (Video 2017) - Full cast & crew - IMDb",
+      "url": "https://m.imdb.com/title/tt32203921/fullcredits/",
+      "snippet": "Daddy Issues 7 (Video 2017) - Cast and crew credits, including actors, actresses, directors, writers and more."
+    }
+  ]
+}

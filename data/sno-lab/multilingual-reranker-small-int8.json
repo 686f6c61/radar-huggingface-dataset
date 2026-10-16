@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "sno-lab/multilingual-reranker-small-int8",
+  "slug": "sno-lab-multilingual-reranker-small-int8",
+  "author": "sno-lab",
+  "url": "https://huggingface.co/sno-lab/multilingual-reranker-small-int8",
+  "created_at": "2026-10-16T03:37:56.000Z",
+  "updated_at": "2026-10-16T03:38:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "modernbert",
+    "text-classification",
+    "reranker",
+    "int8",
+    "text-ranking",
+    "base_model:Horizon-Labs/multilingual-reranker-small",
+    "base_model:quantized:Horizon-Labs/multilingual-reranker-small",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 205726758,
+  "storage_human": "206 MB",
+  "base_model": "Horizon-Labs/multilingual-reranker-small",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Snokido - Jeux Gratuits et Jeux en Ligne",
+      "url": "https://www.snokido.fr/",
+      "snippet": "Jouez aux meilleurs jeux gratuits sur Snokido ! De nombreux jeux en ligne sur ordinateur, mobile ou tablette, jouables directement …"
+    },
+    {
+      "title": "CS SNO - lyceecassin-strasbourg.eu",
+      "url": "http://lyceecassin-strasbourg.eu/formations/cs-sno",
+      "snippet": "Le lycée des métiers René Cassin de Strasbourg accueille des formations des domaines du management et de la gestion (Bac PRO, …"
+    },
+    {
+      "title": "Snokido - Play Free Online Games",
+      "url": "https://www.snokido.com/",
+      "snippet": "Play the best free games on Snokido! Many online games on desktop, mobile or tablet, playable directly in your browser."
+    },
+    {
+      "title": "Bienvenue sur le site du Saint Nazaire Ovalie !",
+      "url": "https://saintnazaireovalie.ffr.fr/",
+      "snippet": "Les contacts du SNO Voici tous les contacts du club par catégories, avec numéros de téléphone et adresse mail pour toutes …"
+    },
+    {
+      "title": "SNO - the Home of Winter | ski hotel & chalet holidays",
+      "url": "https://www.sno.co.uk/",
+      "snippet": "SNO offers accommodation with or without flights and transfers to thousands of properties in hundreds of ski resorts across the …"
+    }
+  ]
+}

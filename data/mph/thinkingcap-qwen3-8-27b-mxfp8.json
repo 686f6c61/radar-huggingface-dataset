@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mph/ThinkingCap-Qwen3.8-27B-MXFP8",
+  "slug": "mph-thinkingcap-qwen3-8-27b-mxfp8",
+  "author": "mph",
+  "url": "https://huggingface.co/mph/ThinkingCap-Qwen3.8-27B-MXFP8",
+  "created_at": "2026-10-16T17:37:21.000Z",
+  "updated_at": "2026-10-16T17:46:56.000Z",
+  "license": "polyform-small-business-1.0.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "mxfp8",
+    "fp8",
+    "quantized",
+    "modelopt",
+    "token-efficient",
+    "efficient-thinking",
+    "conversational",
+    "base_model:bottlecapai/ThinkingCap-Qwen3.8-27B",
+    "base_model:quantized:bottlecapai/ThinkingCap-Qwen3.8-27B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 32016305005,
+  "storage_human": "32.0 GB",
+  "base_model": "bottlecapai/ThinkingCap-Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Conversion de vitesse mph en km/h et inversement",
+      "url": "https://www.calculconversion.com/conversion-mph-kmh.html",
+      "snippet": "Conversion de mille par heure (mph) vers kilomètre par heure (km/h). Outil de conversion gratuit de vitesse."
+    },
+    {
+      "title": "MPH en km/h : convertisseur instantané + tableau complet",
+      "url": "https://permiscope.fr/blog/mph-en-kmh",
+      "snippet": "Jun 14, 2026 · Convertissez vos mph en km/h en un clic : formule exacte, tableau de 1 à 300 mph, correspondance avec les …"
+    },
+    {
+      "title": "Accueil - MDPH 86",
+      "url": "https://mdph86.fr/",
+      "snippet": "Oct 6, 2026 · Accueil téléphonique MDPH - Mardi 6 octobre 2026 Le service d'accueil téléphonique Vienne Infos Sociales sera fermé …"
+    },
+    {
+      "title": "MPH : Qu’est-ce que ça Signifie et Comment Convertir en km/h ?",
+      "url": "https://tousenbagnole.fr/mph/",
+      "snippet": "Jun 14, 2026 · MPH est l’acronyme de « Miles Per Hour », qui se traduit littéralement par « mille par heure ». Il s’agit d’une unité de …"
+    },
+    {
+      "title": "Convertisseur mph en kmh + calcul/tableau pour éviter les erreurs",
+      "url": "https://voitureboost.com/mph-en-kmh/",
+      "snippet": "Oct 26, 2025 · Découvrez comment convertir facilement les mph en kmh grâce à un convertisseur, une formule simple, un tableau …"
+    }
+  ]
+}

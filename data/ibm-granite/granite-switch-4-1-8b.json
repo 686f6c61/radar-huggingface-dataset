@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ibm-granite/granite-switch-4.1-8b",
+  "slug": "ibm-granite-granite-switch-4-1-8b",
+  "author": "ibm-granite",
+  "url": "https://huggingface.co/ibm-granite/granite-switch-4.1-8b",
+  "created_at": "2026-10-14T21:38:09.000Z",
+  "updated_at": "2026-10-15T20:27:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "granite_switch",
+    "text-generation",
+    "language",
+    "granite-switch",
+    "granite-4.1",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 17,
+  "downloads_30d": 278,
+  "trending_score": 17,
+  "parameters": 8776400896,
+  "parameters_human": "8.78B",
+  "storage_bytes": 17554232752,
+  "storage_human": "17.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IBM",
+      "url": "https://www.ibm.com/",
+      "snippet": "For more than a century, IBM has been a global technology innovator, leading advances in AI, automation and hybrid cloud solutions …Read more"
+    },
+    {
+      "title": "IBM - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/IBM",
+      "snippet": "IBM was founded in 1911 as the Computing-Tabulating-Recording Company (CTR), a holding company of manufacturers of record …"
+    },
+    {
+      "title": "IBM",
+      "url": "https://www.ibm.com/fr-fr",
+      "snippet": "Innovateur technologique mondial depuis plus d’un siècle, IBM est à la pointe d’avancées en matière de solutions d’IA, …"
+    },
+    {
+      "title": "IBM — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/IBM",
+      "snippet": "Les relations commerciales entre IBM et le régime hitlérien se sont poursuivies sans interruption face aux vastes appels …"
+    },
+    {
+      "title": "History of IBM - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/History_of_IBM",
+      "snippet": "The new name was first used for the company's Canadian subsidiary in 1917, and was formally changed on February 14, 1924. [30] …"
+    }
+  ]
+}

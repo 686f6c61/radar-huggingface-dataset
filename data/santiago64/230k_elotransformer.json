@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Santiago64/230k_EloTransformer",
+  "slug": "santiago64-230k_elotransformer",
+  "author": "Santiago64",
+  "url": "https://huggingface.co/Santiago64/230k_EloTransformer",
+  "created_at": "2026-10-16T16:49:39.000Z",
+  "updated_at": "2026-10-16T16:56:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 279655950,
+  "storage_human": "280 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "easyJet | Vols pas chers & Vacances ️",
+      "url": "https://www.easyjet.com/CH-FR?msockid=2ec296722e526cef2ae681862f5d6df8",
+      "snippet": "Réservez des vols pas chers sur easyJet.com vers les plus grandes villes d'Europe. Trouvez aussi des offres spéciales sur votre …"
+    },
+    {
+      "title": "Trademark Status & Document Retrieval",
+      "url": "https://tsdr.uspto.gov/",
+      "snippet": "Access trademark status and retrieve related documents easily through this USPTO tool."
+    },
+    {
+      "title": "Meta Tags — Preview, Edit and Generate",
+      "url": "https://metatags.io/",
+      "snippet": "With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, X …"
+    },
+    {
+      "title": "Opinion - The Telegraph's columnists inform and entertain with their ...",
+      "url": "https://www.telegraph.co.uk/opinion/?msockid=2ec296722e526cef2ae681862f5d6df8",
+      "snippet": "The best opinions, comments and analysis from The Telegraph."
+    },
+    {
+      "title": "ЭБС КАКВР - Добро пожаловать в ЭБС Консорциума …",
+      "url": "https://elsau.ru/main/organizations2?org=mai",
+      "snippet": "Электронная библиотека Консорциума ориентирована на обеспечение информационных потребностей пользователей в …"
+    }
+  ]
+}

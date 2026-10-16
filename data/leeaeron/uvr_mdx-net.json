@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "LeeAeron/uvr_mdx-net",
+  "slug": "leeaeron-uvr_mdx-net",
+  "author": "LeeAeron",
+  "url": "https://huggingface.co/LeeAeron/uvr_mdx-net",
+  "created_at": "2026-10-16T18:49:41.000Z",
+  "updated_at": "2026-10-16T18:55:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1462306152,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How do you save the game? :: Darkwood Gameplay Discussions",
+      "url": "https://steamcommunity.com/app/274520/discussions/0/1480982338955821553/",
+      "snippet": "Oct 28, 2017 · Indeed, doing any of the things mentioned in this thread will save the game. I thought it was going to be the difference …"
+    },
+    {
+      "title": "Music-Source-Separation-Training (MSST) - arXiv",
+      "url": "https://arxiv.org/pdf/2607.23395",
+      "snippet": "25.07.2026 ... GitHub repository. Minseok Kim, Woosung Choi, Jaehwa Chung, Daewon Lee, and Soonyoung Jung. Kuielab-mdx-net: A two-stream."
+    },
+    {
+      "title": "How do you save? : r/Darkwood - Reddit",
+      "url": "https://www.reddit.com/r/Darkwood/comments/tl3866/how_do_you_save/",
+      "snippet": "Mar 23, 2022 · By blending RPG, roguelike and adventure elements together with a challenging difficulty, Darkwood aims to please …"
+    },
+    {
+      "title": "GitHub - deans-bradley/darkwood-editor: Darkwood Editor is a save …",
+      "url": "https://github.com/deans-bradley/Darkwood-Editor",
+      "snippet": "Darkwood Editor is a save file editor designed for the video game Darkwood, developed by Acid Wizard Studio. With Darkwood …"
+    },
+    {
+      "title": "Bibliographie der Universität Regensburg",
+      "url": "https://epub.uni-regensburg.de/view/institutions/fak04=5F24.type.html",
+      "snippet": "Experimental and Molecular Pathology 145, S. 105029. ... Molecular Cancer 25 (1). ... BMC Medicine 24 (1). ... Cancer Letters 639, S. 218209. ... Cancers 17 (22), S."
+    }
+  ]
+}

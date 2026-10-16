@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "mhseo2/opd_sftk8dm15e_s1500_qwen3moe30b_ot3math_rklrest8-step10",
+  "slug": "mhseo2-opd_sftk8dm15e_s1500_qwen3moe30b_ot3math_rklrest8-step10",
+  "author": "mhseo2",
+  "url": "https://huggingface.co/mhseo2/opd_sftk8dm15e_s1500_qwen3moe30b_ot3math_rklrest8-step10",
+  "created_at": "2026-10-16T02:58:27.000Z",
+  "updated_at": "2026-10-16T02:59:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939478,
+  "storage_human": "16.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

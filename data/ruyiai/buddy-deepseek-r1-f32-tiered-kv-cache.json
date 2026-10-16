@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "RuyiAI/buddy-deepseek-r1-f32-tiered-kv-cache",
+  "slug": "ruyiai-buddy-deepseek-r1-f32-tiered-kv-cache",
+  "author": "RuyiAI",
+  "url": "https://huggingface.co/RuyiAI/buddy-deepseek-r1-f32-tiered-kv-cache",
+  "created_at": "2026-10-16T03:21:56.000Z",
+  "updated_at": "2026-10-16T03:22:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7143993438,
+  "storage_human": "7.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RuyiAI (RuyiAI RISC-V AI Software Stack) - Hugging Face",
+      "url": "https://huggingface.co/RuyiAI",
+      "snippet": "Org profile for RuyiAI RISC-V AI Software Stack on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "DeepSeek-R1 - a deepseek-ai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/deepseek-ai/deepseek-r1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - deepseek-ai/DeepSeek-R1",
+      "url": "https://github.com/deepseek-ai/DeepSeek-R1",
+      "snippet": "However, DeepSeek-R1-Zero encounters challenges such as endless repetition, poor readability, and language mixing. To address these issues and further enhance reasoning performance, we introduce DeepSeek-R1, which incorporates cold-start data before RL. DeepSeek-R1 achieves performance comparable to OpenAI-o1 across math, code, and reasoning tasks."
+    },
+    {
+      "title": "DeepSeek-R1 Release",
+      "url": "https://www.deepseek.com/en/news/deepseek-r1/",
+      "snippet": "DeepSeek-R1 achieves performance on par with OpenAI-o1, fully open-source under MIT License with 6 distilled models for the community."
+    },
+    {
+      "title": "buddy-mlir/examples/BuddyDeepSeekR1 at main · buddy-compiler ... - GitHub",
+      "url": "https://github.com/buddy-compiler/buddy-mlir/tree/main/examples/BuddyDeepSeekR1",
+      "snippet": "This creates buddy-deepseek-r1.tar.zst containing all necessary files for cross-platform deployment. Alternative approach: Transfer the individual files listed above directly to your RISC-V device if you prefer not to use the compressed package."
+    }
+  ]
+}

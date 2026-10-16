@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "OJ-1/MOSS-Image-Base",
+  "slug": "oj-1-moss-image-base",
+  "author": "OJ-1",
+  "url": "https://huggingface.co/OJ-1/MOSS-Image-Base",
+  "created_at": "2026-10-16T18:47:32.000Z",
+  "updated_at": "2026-10-16T18:47:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "moss-image",
+    "text-to-image",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "diffusers:MOSSImagePipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5082308624,
+  "parameters_human": "5.08B",
+  "storage_bytes": 27228815653,
+  "storage_human": "27.2 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "O. J. Simpson — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/O._J._Simpson",
+      "snippet": "OJ Simpson (1997), Simpson est interprété par Cuba Gooding Jr 104. La série dépeint surtout les événements du procès, et plus …"
+    },
+    {
+      "title": "O. J. Simpson - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/O._J._Simpson",
+      "snippet": "The name was a play on \"OJ\", an abbreviation of orange juice. The Bills used these picks to draft Scott Hutchinson and Danny …"
+    },
+    {
+      "title": "Affaire O. J. Simpson — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Affaire_O._J._Simpson",
+      "snippet": "L 'affaire O. J. Simpson (officiellement intitulée en anglais : People of the State of California v. Orenthal James Simpson) est une …"
+    },
+    {
+      "title": "OJ Simpson - Actualités, vidéos et infos en direct - Le Monde.fr",
+      "url": "https://www.lemonde.fr/oj-simpson/",
+      "snippet": "Oct 3, 2025 · Toute l’actualité sur le sujet OJ Simpson. Consultez l’ensemble des articles, reportages, directs, photos et vidéos de la …"
+    },
+    {
+      "title": "O.J. Simpson, l'acquitté le plus célèbre des États-Unis et ex-star du ...",
+      "url": "https://www.france24.com/fr/am%C3%A9riques/20240411-o-j-simpson-ex-star-du-foot-acteur-am%C3%A9ricain-proc%C3%A8s-du-si%C3%A8cle-mort",
+      "snippet": "Apr 11, 2024 · L'ancien footballeur américain O.J. Simpson est mort jeudi des suites d'un cancer, a annoncé sa famille sur X. Son …"
+    }
+  ]
+}

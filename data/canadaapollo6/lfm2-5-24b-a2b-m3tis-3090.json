@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "CanadaApollo6/LFM2.5-24B-A2B-M3TiS-3090",
+  "slug": "canadaapollo6-lfm2-5-24b-a2b-m3tis-3090",
+  "author": "CanadaApollo6",
+  "url": "https://huggingface.co/CanadaApollo6/LFM2.5-24B-A2B-M3TiS-3090",
+  "created_at": "2026-10-16T19:22:33.000Z",
+  "updated_at": "2026-10-16T19:22:42.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "lfm2_moe",
+    "liquid",
+    "lfm2.5",
+    "rtx-3090",
+    "cuda",
+    "moe",
+    "4-bit",
+    "tool-calling",
+    "speculative-decoding",
+    "tensorfold",
+    "m3tis",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:LiquidAI/LFM2.5-24B-A2B",
+    "base_model:quantized:LiquidAI/LFM2.5-24B-A2B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23971585280,
+  "parameters_human": "23.97B",
+  "storage_bytes": 13742756941,
+  "storage_human": "13.7 GB",
+  "base_model": "LiquidAI/LFM2.5-24B-A2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Indian XXX Videos - Curvy Girls Sucking Deep",
+      "url": "https://www.fullhdxxx.com/categories/350/indian",
+      "snippet": "Got a thing for Indian XXX videos? Watch curvy girls suck deep and bang hard only on FullHDXXX."
+    },
+    {
+      "title": "Popular XXX Videos - Watch now: free high quality porn videos most ...",
+      "url": "https://hqtube.xxx/en/popular/",
+      "snippet": "Popular XXX Videos All the XXX flicks fans like you keep watching over and over. Can't-miss porn for free!"
+    },
+    {
+      "title": "Xx,XXXXXXvo Porn Videos - PussySpace",
+      "url": "https://www.pussyspace.com/search?q=xx%2Cxxxxxxvo&filter=new",
+      "snippet": "Watch new Xx,XXXXXXvo Porn Videos Online added in 2026, featuring Xx Home Made, Desi Xxxvo and XXX scene on PussySpace."
+    },
+    {
+      "title": "Xxxxxxcvo Porn Videos - xHamster",
+      "url": "https://xhamster.com/search/xxxxxxcvo",
+      "snippet": "Watch xxxxxxcvo porn videos. Explore tons of XXX movies with sex scenes in 2026 on xHamster!"
+    },
+    {
+      "title": "Xxxxxxvo Porn Videos & Sex Movies on Tubes | BigFuck.TV",
+      "url": "https://bigfuck.tv/s/xxxxxxvo/",
+      "snippet": "Our collection of free Xxxxxxvo sex videos & porn movies. Quality Xxxxxxvo fucking videos for your device without ads on free porn …"
+    }
+  ]
+}

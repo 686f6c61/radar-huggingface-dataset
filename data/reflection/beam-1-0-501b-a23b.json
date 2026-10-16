@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "reflection/Beam-1.0-501B-A23B",
+  "slug": "reflection-beam-1-0-501b-a23b",
+  "author": "reflection",
+  "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B",
+  "created_at": "2026-10-07T19:52:01.000Z",
+  "updated_at": "2026-10-16T13:22:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "beam",
+    "mixture-of-experts",
+    "reasoning",
+    "code",
+    "tool-use",
+    "text-generation",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "eval-results",
+    "deploy:sagemaker",
+    "region:us"
+  ],
+  "likes": 86,
+  "downloads_30d": 440,
+  "trending_score": 85,
+  "parameters": 501267612352,
+  "parameters_human": "501.27B",
+  "storage_bytes": 1002668503017,
+  "storage_human": "1002.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "« Réflexion » ou « réflection » : quelle est la bonne orthographe ?",
+      "url": "https://www.lalanguefrancaise.com/orthographe/reflexion-ou-reflection",
+      "snippet": "Mar 13, 2026 · Faut-il écrire « réflexion » ou « réflection » ? La confusion est naturelle. Le verbe « réfléchir » contient un c, et …"
+    },
+    {
+      "title": "Réflection ou réflexion ? orthographe - La culture générale",
+      "url": "https://www.laculturegenerale.com/reflection-reflexion-orthographe/",
+      "snippet": "Jul 4, 2022 · Reflection est la forme anglaise du même mot avec les mêmes sens (reflexion était anciennement employé). En italien, …"
+    },
+    {
+      "title": "reflection/Beam-1.0-501B-A23B - vLLM Recipes",
+      "url": "https://recipes.vllm.ai/reflection/Beam-1.0-501B-A23B",
+      "snippet": "vor 3 Stunden ... Reflection's Beam — a sparse MoE language model (501B total / 23B active) with hybrid sliding-window + NoPE full attention, ..."
+    },
+    {
+      "title": "On écrit réflexion ou réflection - Ne FAITES PLUS LA FAUTE !",
+      "url": "https://education.toutcomment.com/article/on-ecrit-reflexion-ou-reflection-14532.html",
+      "snippet": "Apr 7, 2026 · C'est tout simple, l'orthographe correcte est \"réflexion\", le mot réflection est un anglicisme pur et dur \" Reflection\" qui …"
+    },
+    {
+      "title": "reflection — Wiktionnaire, le dictionnaire libre",
+      "url": "https://fr.wiktionary.org/wiki/reflection",
+      "snippet": "reflection Anglais modifier le wikicode Étymologie modifier le wikicode Reflection: du Lat. \"re-\" et \"flectere, flexus\": courber, courbure. …"
+    }
+  ]
+}

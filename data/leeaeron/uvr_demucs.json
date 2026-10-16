@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "LeeAeron/uvr_demucs",
+  "slug": "leeaeron-uvr_demucs",
+  "author": "LeeAeron",
+  "url": "https://huggingface.co/LeeAeron/uvr_demucs",
+  "created_at": "2026-10-16T18:51:04.000Z",
+  "updated_at": "2026-10-16T18:51:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Music-Source-Separation-Training (MSST) - arXiv",
+      "url": "https://arxiv.org/pdf/2607.23395",
+      "snippet": "25.07.2026 ... Demucs (Facebook AI Research) Défossez et al. [2019], Rouard et al ... Python/PyTorch Demucs model famyily (hybrid waveform mod- els) ..."
+    },
+    {
+      "title": "Congreso Internacional de la Sociedad Química de México 2023",
+      "url": "https://sqm.org.mx/wp-content/uploads/2025/02/CISQM2023-Memorias.pdf",
+      "snippet": "... model and a first order perturbation approach to derive expressions for the ... Lee y Richards (1971). Una vez obtenidos los valores de ASA, tanto para ..."
+    },
+    {
+      "title": "Simple index - piwheels",
+      "url": "https://www.piwheels.org/simple/",
+      "snippet": "... ai-simple-engine-common plotpage caddpy ssv memray sylva-fire tokenspeed-fa3 ... model cqhyxk fcollections examanalyserinf219v23 aws-solutions-konstruk ..."
+    },
+    {
+      "title": "Is there a way to isolate certain elements of a songs like a snare or ...",
+      "url": "https://www.quora.com/Is-there-a-way-to-isolate-certain-elements-of-a-songs-like-a-snare-or-kick-or-the-vocal-for-sampling",
+      "snippet": "11.07.2016 ... You could probably maybe do this in Audacity, but these days, there are specialized apps like RipX that use a combination of AI and spectrum ..."
+    },
+    {
+      "title": "What are separate stems in Suno? - Facebook",
+      "url": "https://www.facebook.com/groups/1118818620292019/posts/1264301919077021/",
+      "snippet": "23.12.2025 ... Instead, its AI diffusion model generates the **entire song as one ... Demucs/HTDemucs) uses **AI source separation**—a post-processing ..."
+    }
+  ]
+}

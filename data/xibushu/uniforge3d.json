@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "xibushu/UniForge3D",
+  "slug": "xibushu-uniforge3d",
+  "author": "xibushu",
+  "url": "https://huggingface.co/xibushu/UniForge3D",
+  "created_at": "2026-10-10T12:39:00.000Z",
+  "updated_at": "2026-10-11T05:30:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-3d",
+  "library": "uniforge3d",
+  "languages": [],
+  "tags": [
+    "uniforge3d",
+    "pytorch",
+    "image-to-3d",
+    "multi-view",
+    "3d-reconstruction",
+    "3d-generation",
+    "region:us"
+  ],
+  "likes": 14,
+  "downloads_30d": 0,
+  "trending_score": 14,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26957748062,
+  "storage_human": "27.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kostenlose & Open-Source KI verwandelt wenige Fotos in ... - Reddit",
+      "url": "https://www.reddit.com/r/TopologyAI/comments/1x6sk30/free_opensource_ai_turns_a_few_photos_into/?tl=de",
+      "snippet": "vor 1 Tag ... A place for everyone who builds and creates with AI. 3D models and whole worlds, games and apps, code, music, animation, video and art."
+    }
+  ]
+}

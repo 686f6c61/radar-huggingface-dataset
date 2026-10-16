@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "TESS-Computer/qwen-dit-draw-delta-clean",
+  "slug": "tess-computer-qwen-dit-draw-delta-clean",
+  "author": "TESS-Computer",
+  "url": "https://huggingface.co/TESS-Computer/qwen-dit-draw-delta-clean",
+  "created_at": "2026-10-16T19:16:28.000Z",
+  "updated_at": "2026-10-16T19:21:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "vision-language-action",
+    "robotics",
+    "trajectory-prediction",
+    "diffusion-transformer",
+    "qwen2-vl",
+    "dataset:TESS-Computer/quickdraw-circles-delta-clean",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 73580119,
+  "storage_human": "74 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TESS - Transiting Exoplanet Survey Satellite",
+      "url": "https://tess.mit.edu/",
+      "snippet": "TESS, the Transiting Exoplanet Survey Satellite is an MIT-led NASA mission discovering transiting exoplanets via an all-sky survey. …"
+    },
+    {
+      "title": "T/E/S/S atelier d'ingénierie",
+      "url": "https://www.tess.fr/",
+      "snippet": "T/E/S/S conçoit et réalise, en tant que bureau d'études, des projets de structures, de façades et d'enveloppes. T/E/S/S rassemble …"
+    },
+    {
+      "title": "Home – TESS",
+      "url": "https://www.tess.no/en/",
+      "snippet": "TESS is Norway’s largest supplier of hoses for all purposes, with more than 140 local service centers across the country. TESS is …"
+    },
+    {
+      "title": "Tess Barthélemy — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Tess_Barth%C3%A9lemy",
+      "snippet": "Violaine Schutz, « Qui est Tess Barthélemy, l’actrice qui crève l’écran dans Mémoire de fille ? [archive] », sur Numéro, 26 mai 2026 …"
+    },
+    {
+      "title": "Search our trademark database | USPTO",
+      "url": "https://www.uspto.gov/trademarks/search",
+      "snippet": "Apr 8, 2026 · Helpful references Trademark ID Manual Design Search Code Manual Trademark search help information …"
+    }
+  ]
+}

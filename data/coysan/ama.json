@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "coysan/ama",
+  "slug": "coysan-ama",
+  "author": "coysan",
+  "url": "https://huggingface.co/coysan/ama",
+  "created_at": "2026-10-16T18:47:00.000Z",
+  "updated_at": "2026-10-16T18:47:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "diffusers-training",
+    "lora",
+    "krea2",
+    "krea2-diffusers",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook - Connexion ou inscription",
+      "url": "https://fr-fr.facebook.com/",
+      "snippet": "Créez un compte ou connectez-vous à Facebook. Connectez-vous avec vos amis, la famille et d’autres connaissances. Partagez …"
+    },
+    {
+      "title": "The Colorful Sex Chromosomes of Teleost Fish - MDPI",
+      "url": "https://www.mdpi.com/2073-4425/9/5/233",
+      "snippet": "03.05.2018 ... Emerging model systems for coloration, for instance, killifish, will ... AMA Style. Kottler VA, Schartl M. The Colorful Sex Chromosomes ..."
+    },
+    {
+      "title": "Women's Sherpa Jackets en vente à Saint-Jacques-d'Ambur - Facebook",
+      "url": "https://fr-fr.facebook.com/marketplace/108399682515303/womens-sherpa-jackets/",
+      "snippet": "Articles neufs et d’occasion dans la catégorie Women's Sherpa Jackets en vente à Saint-Jacques-d'Ambur sur Facebook …"
+    },
+    {
+      "title": "Machines à écrire en vente à Miami | Facebook Marketplace",
+      "url": "https://fr-fr.facebook.com/marketplace/miami/typewriters/",
+      "snippet": "Articles neufs et d’occasion dans la catégorie Machines à écrire en vente à Miami sur Facebook Marketplace. Trouvez des bons …"
+    },
+    {
+      "title": "Achievers A1+Student-Book PDF - Scribd",
+      "url": "https://www.scribd.com/document/472550073/Achievers-A1-Student-Book-pdf-pdf",
+      "snippet": "... ai 2 Fm okay thanks He's ine, thanks, 3 How areyou? 4 Thats good 5 6 Hows ... ama 2 Hela jackson, 43 Seeyou 44 Noted 5 Pleased to meetyou. YOURTURNTO ..."
+    }
+  ]
+}

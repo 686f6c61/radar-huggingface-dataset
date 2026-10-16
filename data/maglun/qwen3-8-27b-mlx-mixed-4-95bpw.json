@@ -5,7 +5,7 @@
   "author": "maglun",
   "url": "https://huggingface.co/maglun/Qwen3.8-27B-MLX-Mixed-4.95bpw",
   "created_at": "2026-08-14T17:36:08.000Z",
-  "updated_at": "2026-08-16T13:35:05.000Z",
+  "updated_at": "2026-10-15T16:33:09.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 157,
+  "downloads_30d": 184,
   "trending_score": 0,
   "parameters": 27356728560,
   "parameters_human": "27.36B",

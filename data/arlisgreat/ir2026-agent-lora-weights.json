@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "arlisgreat/ir2026-agent-lora-weights",
+  "slug": "arlisgreat-ir2026-agent-lora-weights",
+  "author": "arlisgreat",
+  "url": "https://huggingface.co/arlisgreat/ir2026-agent-lora-weights",
+  "created_at": "2026-10-16T02:44:45.000Z",
+  "updated_at": "2026-10-16T03:23:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 540174202,
+  "storage_human": "540 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

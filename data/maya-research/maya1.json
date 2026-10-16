@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "maya-research/maya1",
+  "slug": "maya-research-maya1",
+  "author": "maya-research",
+  "url": "https://huggingface.co/maya-research/maya1",
+  "created_at": "2025-10-18T01:45:08.000Z",
+  "updated_at": "2026-10-13T21:09:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "voice-design",
+    "expressive-speech",
+    "audio-generation",
+    "text-to-speech",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 914,
+  "downloads_30d": 7089,
+  "trending_score": 15,
+  "parameters": 3300928512,
+  "parameters_human": "3.30B",
+  "storage_bytes": 99052652539,
+  "storage_human": "99.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Maiia - RDV médical et Téléconsultation - Professionnels de santé",
+      "url": "https://www.maiia.com/",
+      "snippet": "Prenez rendez-vous ou effectuez une téléconsultation facilement avec votre médecin, un spécialiste ou un praticien près de chez vous."
+    },
+    {
+      "title": "Autodesk Maya 2027 | Download & Buy Official Maya",
+      "url": "https://www.autodesk.com/products/maya/overview?msockid=0da54e3f52fa6e14008459cb530f6f29",
+      "snippet": "Discover Autodesk Maya, professional 3D animation and VFX software for creating expansive worlds, complex characters, and …"
+    },
+    {
+      "title": "Civilisation maya — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Civilisation_maya",
+      "snippet": "L’aire culturelle maya antique doit être distinguée de la zone de peuplement maya actuelle. Elle se définit comme étant le territoire …"
+    },
+    {
+      "title": "Download Maya | Maya Free Trial | Autodesk",
+      "url": "https://www.autodesk.com/products/maya/free-trial?msockid=0da54e3f52fa6e14008459cb530f6f29",
+      "snippet": "Download a free 30-day trial of Autodesk Maya software for 3D modeling, computer animation, visual effects, and 3D rendering for …"
+    },
+    {
+      "title": "S’inscrire à Maiia | Créer un Compte Maiia",
+      "url": "https://www.maiia.com/register",
+      "snippet": "Créez votre compte Maiia, prenez rendez-vous en ligne avec un praticien 7j/7, 24h/24, et gérez vos rendez-vous en quelques clics"
+    }
+  ]
+}

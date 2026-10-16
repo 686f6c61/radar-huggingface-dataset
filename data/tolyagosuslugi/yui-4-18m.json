@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "TolyaGosuslugi/yui-4.18M",
+  "slug": "tolyagosuslugi-yui-4-18m",
+  "author": "TolyaGosuslugi",
+  "url": "https://huggingface.co/TolyaGosuslugi/yui-4.18M",
+  "created_at": "2026-10-16T19:18:43.000Z",
+  "updated_at": "2026-10-16T19:24:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "llama",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4178240,
+  "parameters_human": "4.2M",
+  "storage_bytes": 25798168,
+  "storage_human": "26 MB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "self-use male model - Free AI LORA | TensorHub Art",
+      "url": "https://tensorhub.art/models/886492416004107308",
+      "snippet": "Download self-use male model - free LORA SDXL 1.0 AI model on TENSORHUB ART. MALE CHARACTER, SDXL, STYLE. By YUI"
+    },
+    {
+      "title": "yui - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1792730872704391327",
+      "snippet": "Generate stunning anime art with the &#x27;yui&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Candydoll - Yuliya Zabihalyuk - Free AI LORA | Tensor.Art",
+      "url": "https://tensor.art/models/752877208567131062",
+      "snippet": "Download Candydoll - free LORA SD 1.5 AI model on TENSOR. TWEEN GIRL, CANDYDOLL, WOMAN. By Hani Hebe Bali"
+    },
+    {
+      "title": "YUI - Best AI Art & Models | Tensor.Art",
+      "url": "https://tensor.art/u/871218678002134960",
+      "snippet": "Explore YUI&#x27;s AI creations on TENSOR self-use male model-self-use male model"
+    },
+    {
+      "title": "Yui - 2025-10-27 02:47:48 - Free AI Model | TensorHub Art",
+      "url": "https://tensorhub.art/models/924551864970661810",
+      "snippet": "Version Detail Uploaded Oct 27, 2025 3:33 AMTrained by Tensor Base Model Pony Epoch 10 Trigger Words Yui mature female long hair grey hair yellow eyes mole under eye"
+    }
+  ]
+}

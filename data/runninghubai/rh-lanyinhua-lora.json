@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-lanyinhua-lora",
+  "slug": "runninghubai-rh-lanyinhua-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-lanyinhua-lora",
+  "created_at": "2026-10-16T03:24:03.000Z",
+  "updated_at": "2026-10-16T03:25:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 88312641,
+  "storage_human": "88 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RunningHubAI/rh-lanyinhua-lora · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-lanyinhua-lora",
+      "snippet": "RunningHubAI / rh-lanyinhua-lora Like 0 Text-to-Image comfyui lora Model card FilesFiles and versions xet Community Copy to bucket new rh-lanyinhua-lora Description About this model Files License Training at RunningHub"
+    },
+    {
+      "title": "RunningHubAI/rh-lora · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-lora",
+      "snippet": "This is a general-purpose motion support LoRA, not a combat-only LoRA. It can be used for running / sports / dance / acrobatics / character interaction / combat / weapon motion and other dynamic scenes.这是一个通用动态辅助 LoRA，并不是战斗专用模型，可用于跑步 / 体育 / 舞蹈 / 翻滚跳跃 / 人物互动 / 战斗 / 武器动作等动态场景。"
+    },
+    {
+      "title": "RunningHub Models ｜ AI Model Creation & Training Platform",
+      "url": "https://www.runninghub.ai/models",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "RunningHub ｜ AI Agent-Powered Content Creation Platform with ComfyUI ...",
+      "url": "https://www.runninghub.ai/",
+      "snippet": "RunningHub is an all-in-one content creation platform powered by native AI agents. Build end-to-end creative workflows with ComfyUI workflows, infinite canvas, AI apps, image & video generation, and model API access."
+    },
+    {
+      "title": "RunningHubAI/rh-ai-lora at main - Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-ai-lora/tree/main",
+      "snippet": "RunningHubAI / rh-ai-lora Like 0 Text-to-Image comfyui lora Model card FilesFiles and versions xet Community Copy to bucket new main rh-ai-lora 238 MB Ctrl+K Ctrl+K 1 contributor History:2 commits RunningHubAI Upload RunningHub model 2005090948453466113 5d9d23d verifiedabout 8 hours ago .gitattributes Safe 1.57 kBUpload RunningHub model 2005090948453466113about 8 hours ago README.md 2.75 ..."
+    }
+  ]
+}

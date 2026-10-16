@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "tencent/Hy-Memory-30B-A3B",
+  "slug": "tencent-hy-memory-30b-a3b",
+  "author": "tencent",
+  "url": "https://huggingface.co/tencent/Hy-Memory-30B-A3B",
+  "created_at": "2026-10-15T09:52:00.000Z",
+  "updated_at": "2026-10-16T08:12:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "hy_v3",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "arxiv:2610.22196",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 108,
+  "downloads_30d": 0,
+  "trending_score": 108,
+  "parameters": 30064725888,
+  "parameters_human": "30.06B",
+  "storage_bytes": 60132268315,
+  "storage_human": "60.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home - Tencent",
+      "url": "https://www.tencent.com/",
+      "snippet": "Sep 24, 2026 · Tencent is: Three friends making dinner plans. And over a billion monthly active users. Learn more about Tencent for …Read more"
+    },
+    {
+      "title": "Tencent — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Tencent",
+      "snippet": "Tencent ... La Tencent Tower, qui abrite le siège de Tencent. Tencent Holdings Limited est une entreprise chinoise créée en 1998, …"
+    },
+    {
+      "title": "Tencent - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tencent",
+      "snippet": "Tencent (Chinese: 腾讯; pinyin: Téngxùn) is a Chinese multinational technology conglomerate and holding company headquartered …"
+    },
+    {
+      "title": "Hy-Memory-30B-A3B: Attributed Reinforcement Learning for Long ...",
+      "url": "https://arxiv.org/html/2610.22196v1",
+      "snippet": "vor 14 Stunden ... Hy-Memory-30B-A3B reaches 56.89, compared with 55.47 for DeepSeek V4.1 Flash, 54.04 for Opus 5, and 52.30 for Hy3. This result separates model- ..."
+    },
+    {
+      "title": "Tencent : tout savoir sur le géants chinois et ses activités",
+      "url": "https://www.lebigdata.fr/tencent-tout-savoir",
+      "snippet": "Jul 25, 2026 · Fondée en 1998 par Pony Ma, Tencent Holdings est une entreprise technologique multinationale qui conçoit et …"
+    }
+  ]
+}

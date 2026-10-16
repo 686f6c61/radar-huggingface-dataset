@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "hassanedwan/citecheck-nli-ft-base-sel",
+  "slug": "hassanedwan-citecheck-nli-ft-base-sel",
+  "author": "hassanedwan",
+  "url": "https://huggingface.co/hassanedwan/citecheck-nli-ft-base-sel",
+  "created_at": "2026-10-16T17:42:59.000Z",
+  "updated_at": "2026-10-16T17:43:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deberta-v2",
+    "dataset:allenai/scifact",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 184424451,
+  "parameters_human": "184.4M",
+  "storage_bytes": 737722356,
+  "storage_human": "738 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

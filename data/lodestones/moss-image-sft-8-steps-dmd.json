@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "lodestones/MOSS-Image-SFT-8-steps-dmd",
+  "slug": "lodestones-moss-image-sft-8-steps-dmd",
+  "author": "lodestones",
+  "url": "https://huggingface.co/lodestones/MOSS-Image-SFT-8-steps-dmd",
+  "created_at": "2026-10-16T10:28:56.000Z",
+  "updated_at": "2026-10-16T17:07:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "base_model:OpenMOSS-Team/MOSS-Image-SFT",
+    "base_model:finetune:OpenMOSS-Team/MOSS-Image-SFT",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 29,
+  "downloads_30d": 0,
+  "trending_score": 29,
+  "parameters": 5082308624,
+  "parameters_human": "5.08B",
+  "storage_bytes": 136738566672,
+  "storage_human": "136.7 GB",
+  "base_model": "OpenMOSS-Team/MOSS-Image-SFT",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

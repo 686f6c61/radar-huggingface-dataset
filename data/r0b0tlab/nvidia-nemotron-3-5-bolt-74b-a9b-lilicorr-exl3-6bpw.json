@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "r0b0tlab/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-LiLiCorr-EXL3-6bpw",
+  "slug": "r0b0tlab-nvidia-nemotron-3-5-bolt-74b-a9b-lilicorr-exl3-6bpw",
+  "author": "r0b0tlab",
+  "url": "https://huggingface.co/r0b0tlab/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-LiLiCorr-EXL3-6bpw",
+  "created_at": "2026-10-16T19:22:33.000Z",
+  "updated_at": "2026-10-16T19:27:21.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "exllamav3",
+  "languages": [],
+  "tags": [
+    "exllamav3",
+    "safetensors",
+    "qwen3",
+    "exl3",
+    "quantization",
+    "speculative-decoding",
+    "nemotron",
+    "lilicorr",
+    "text-generation",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr",
+    "base_model:quantized:nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr",
+    "license:other",
+    "modelopt_fp4",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 563918378,
+  "parameters_human": "563.9M",
+  "storage_bytes": 1127857560,
+  "storage_human": "1.1 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB - Hugging Face",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB",
+      "snippet": "Description NVIDIA Nemotron 3.5 Bolt 74B-A9B 24GB is a vision-language model (VLM) designed to run everyday agentic tasks locally, using a native 2-bit quantization to fit in 24GB of memory and run alongside other applications. It optimizes intelligence and speed per GB. It aims to achieve the optimal balance between speed and intelligence, being faster than most popular dense models while ..."
+    },
+    {
+      "title": "NVIDIA Nemotron 3.5 Bolt 74B-A9B 24GB - NVIDIA Nemotron",
+      "url": "https://research.nvidia.com/labs/nemotron/Nemotron-3.5-Bolt-24GB/",
+      "snippet": "We are releasing NVIDIA Nemotron 3.5 Bolt 74B-A9B 24GB, a Mixture-of-Experts hybrid Mamba-Transformer model designed to run everyday agentic tasks locally on NVIDIA RTX/DGX Spark."
+    },
+    {
+      "title": "Nemotron AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/topics/ai/nemotron",
+      "snippet": "NVIDIA Nemotron 3.5 Lightning for Fast, Specialized Agent Tasks NVIDIA Nemotron 3.5 Lightning is an open 30B MoE model with 3B active parameters for specialized tasks in always-on agents. With NeMo Switchyard, developers can route high-volume execution to Lightning when it&#x27;s the right fit, while reserving frontier models for complex planning."
+    },
+    {
+      "title": "NVIDIA Nemotron 3.5 Bolt: 74B Model That Runs on a Laptop",
+      "url": "https://toolpilotpro.com/nvidia-nemotron-3-5-bolt-guide",
+      "snippet": "NVIDIA Nemotron 3.5 Bolt 74B lands Oct 15: a 74B model in 24GB with fully open weights, data and recipes. How to run it, PAIR, RTX Spark and caveats."
+    },
+    {
+      "title": "NVIDIA Nemotron 3.5 Bolt 74B-A9B 24GB - SourceForge.net",
+      "url": "https://sourceforge.net/projects/nemotron-3-5-bolt-74b-a9b/",
+      "snippet": "NVIDIA Nemotron 3.5 Bolt 74B-A9B 24GB is an open-weight multimodal AI model optimized for running autonomous agents on systems with 24GB of GPU memory. Derived from Nemotron 3.5 Super VL through NVIDIA&#x27;s Star Elastic compression method, it features 74B total parameters with approximately 9B activated per token."
+    }
+  ]
+}

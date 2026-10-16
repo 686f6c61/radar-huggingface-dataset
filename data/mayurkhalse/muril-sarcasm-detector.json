@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Mayurkhalse/muril-sarcasm-detector",
+  "slug": "mayurkhalse-muril-sarcasm-detector",
+  "author": "Mayurkhalse",
+  "url": "https://huggingface.co/Mayurkhalse/muril-sarcasm-detector",
+  "created_at": "2026-10-16T19:19:40.000Z",
+  "updated_at": "2026-10-16T19:20:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en",
+    "hi",
+    "multilingual"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "sarcasm-detection",
+    "muril",
+    "hinglish",
+    "text-classification",
+    "en",
+    "hi",
+    "multilingual",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 237557762,
+  "parameters_human": "237.6M",
+  "storage_bytes": 950254592,
+  "storage_human": "950 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AventIQ-AI/Sarcasmdetection · Hugging Face",
+      "url": "https://huggingface.co/AventIQ-AI/Sarcasmdetection",
+      "snippet": "Sarcasm Detection with BERT This repository contains a fine-tuned BERT model for detecting sarcasm in headlines and text. The model achieves high accuracy in distinguishing between sarcastic and non-sarcastic content using natural language processing techniques."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=downloads&search=sarcasm",
+      "snippet": "Explore machine learning models. lm-kit/LM-Kit.Sarcasm_Detection-TinyLlama-1.1B-1T-OpenOrca-en-q4-gguf"
+    },
+    {
+      "title": "Sarcasm Detection Using Neural Networks - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/deep-learning/sarcasm-detection-using-neural-networks/",
+      "snippet": "To analyze and detect this sarcasm on Twitter, we will build ML models using a neural network for sarcasm detection. Sarcasm Detection Using Neural Network In this article, we will be building sarcasm detection using a neural network and classifying it as sarcasm or non-sarcasm. This implies that it is a classification problem."
+    },
+    {
+      "title": "On Sarcasm Detection with OpenAI GPT-based Models",
+      "url": "https://arxiv.org/abs/2312.04642",
+      "snippet": "Sarcasm is a form of irony that requires readers or listeners to interpret its intended meaning by considering context and social cues. Machine learning classification models have long had difficulty detecting sarcasm due to its social complexity and contradictory nature. This paper explores the applications of the Generative Pretrained Transformer (GPT) models, including GPT-3, InstructGPT ..."
+    },
+    {
+      "title": "An Evaluation of State-of-the-Art Large Language Models for Sarcasm ...",
+      "url": "https://arxiv.org/pdf/2312.03706",
+      "snippet": "SarCasm Detector (CASCADE) model specifically designed for sarc sm detection. It utilizes a hybrid of content- and context-driven approaches. It processes contextual information by first profiling every author and every online community in their dataset before training and creates user embeddings of behavioral traits for sarcasm. It then performs"
+    }
+  ]
+}

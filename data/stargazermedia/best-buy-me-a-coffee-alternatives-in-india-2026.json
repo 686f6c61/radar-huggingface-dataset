@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "StargazerMedia/Best-Buy-Me-A-Coffee-Alternatives-in-India-2026",
+  "slug": "stargazermedia-best-buy-me-a-coffee-alternatives-in-india-2026",
+  "author": "StargazerMedia",
+  "url": "https://huggingface.co/StargazerMedia/Best-Buy-Me-A-Coffee-Alternatives-in-India-2026",
+  "created_at": "2026-10-16T19:04:48.000Z",
+  "updated_at": "2026-10-16T19:05:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "buy-me-a-coffee-alternative",
+    "ko-fi-alternative",
+    "patreon-alternative",
+    "upi",
+    "india",
+    "tip-jar",
+    "creator-economy",
+    "donation-page",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 530693,
+  "storage_human": "530693 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

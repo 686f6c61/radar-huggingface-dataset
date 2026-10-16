@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Abiray/flux-3-image-klein-sd-GGUF",
+  "slug": "abiray-flux-3-image-klein-sd-gguf",
+  "author": "Abiray",
+  "url": "https://huggingface.co/Abiray/flux-3-image-klein-sd-GGUF",
+  "created_at": "2026-10-15T16:13:30.000Z",
+  "updated_at": "2026-10-15T19:44:39.000Z",
+  "license": "flux-kommunity-license-v1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "flux",
+    "flux-3",
+    "flux-3-image-klein",
+    "text-to-image",
+    "image-to-image",
+    "comfyui",
+    "image-generation",
+    "distilled",
+    "image-editing",
+    "base_model:black-forest-labs/flux-3-image-klein",
+    "base_model:quantized:black-forest-labs/flux-3-image-klein",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 18,
+  "downloads_30d": 1960,
+  "trending_score": 17,
+  "parameters": 5548681984,
+  "parameters_human": "5.55B",
+  "storage_bytes": 32210505194,
+  "storage_human": "32.2 GB",
+  "base_model": "black-forest-labs/flux-3-image-klein, black-forest-labs/flux-3-image-klein-comfy",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Abiray/flux-3-image-klein-sd-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Abiray/flux-3-image-klein-sd-GGUF",
+      "snippet": "GGUF quantizations of Black Forest Labs&#x27; FLUX 3 Image Klein (16-step distilled checkpoint) for use with ComfyUI-GGUF."
+    },
+    {
+      "title": "FLUX 3 Image Klein: open weights, 5.6B parameters",
+      "url": "https://bfl.ai/blog/flux-3-image-klein",
+      "snippet": "Today we are releasing FLUX 3 Image Klein, a 5.6B parameter open weights model for text-to-image generation, image editing and multi-reference generation with up to 10 reference images. It shares core capabilities with the full FLUX 3 Image model: native 4K generation, pixel-perfect editing, and bounding boxes that control where elements are placed or confine edits to a defined area."
+    },
+    {
+      "title": "GitHub - black-forest-labs/flux-3-image-klein: FLUX 3 Image Klein ...",
+      "url": "https://github.com/black-forest-labs/flux-3-image-klein",
+      "snippet": "Model page • Weights • Demo This repository contains the reference inference code for FLUX 3 Image Klein, the 5.6B open weights image model from Black Forest Labs: text-to-image, editing with up to 10 reference images, and layout control with bounding boxes, through one model. It ships with a prompt upsampler; do not use the model without it."
+    },
+    {
+      "title": "Black Forest Labs releases FLUX 3 Image Klein: 5.6B open-weights image ...",
+      "url": "https://aicoder.com/news/news-20261016-bfl-flux-3-image-klein-5-6b-open-weights",
+      "snippet": "On 2026-10-15 Black Forest Labs released FLUX 3 Image Klein, a 5.6B open-weights image model for text-to-image, editing and multi-reference generation with up to 10 references, inheriting FLUX 3&#x27;s native 4K output, pixel-perfect edits and bounding-box control. It ships as a fine-tunable base and a step-distilled model, plus FP8/INT8/NVFP4 builds made with NVIDIA; the INT8 build runs on RTX ..."
+    },
+    {
+      "title": "Run FLUX 3 Image Klein Locally on Windows 11, Mac and Kali Linux ...",
+      "url": "https://www.logeshwaran.org/2026/10/flux-3-image-klein-run-locally.html",
+      "snippet": "Run FLUX 3 Image Klein locally: int8 files for 8 GB NVIDIA cards, ComfyUI 0.41.0 on Windows 11, Mac and Kali, Diffusers, editing, boxes, the license."
+    }
+  ]
+}

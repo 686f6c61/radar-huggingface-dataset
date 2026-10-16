@@ -5,7 +5,7 @@
   "author": "lightx2v",
   "url": "https://huggingface.co/lightx2v/MiniMax-H3-Prompt-Rewriter-LoRA",
   "created_at": "2026-08-07T03:07:53.000Z",
-  "updated_at": "2026-08-07T05:05:30.000Z",
+  "updated_at": "2026-10-16T06:45:17.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 186,
-  "downloads_30d": 252,
+  "downloads_30d": 254,
   "trending_score": 8,
   "parameters": null,
   "parameters_human": null,

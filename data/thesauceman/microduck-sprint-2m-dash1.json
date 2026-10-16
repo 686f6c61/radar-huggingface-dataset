@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "TheSauceman/microduck-sprint-2m-dash1",
+  "slug": "thesauceman-microduck-sprint-2m-dash1",
+  "author": "TheSauceman",
+  "url": "https://huggingface.co/TheSauceman/microduck-sprint-2m-dash1",
+  "created_at": "2026-10-16T03:12:06.000Z",
+  "updated_at": "2026-10-16T03:12:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5643405,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Licence professionnelle Froid Industriel et Conditionnement d'Air …",
+      "url": "https://iutnantes.univ-nantes.fr/fr/formations/licence-professionnelle-froid-industriel-et-conditionnement-dair-fica",
+      "snippet": "Former des collaborateurs d'entreprise capables de maîtriser les installations de production de froid industriel et commercial, de la …"
+    },
+    {
+      "title": "Licence Sciences pour l’Ingénieur option Froid Industriel",
+      "url": "https://www.gpi2d.greta.fr/fichesformation/licence-sciences-ingenieur-energie-developpement-durable-froid-industriel/",
+      "snippet": "Pour répondre aux besoins de cette transition énergétique, la licence Froid Industriel permet de développer de nouvelles …"
+    },
+    {
+      "title": "Licence FROID INDUSTRIEL avec le CNAM Paris Raspail",
+      "url": "https://www.ldmraspail.fr/licence-froid-industriel-avec-le-cnam-paris-raspail.php",
+      "snippet": "Jul 10, 2026 · La référence CNAM de base est LG03470A. Il s'agit donc d'une licence scientifique générale L3 qui permet la …"
+    },
+    {
+      "title": "Licence pro mention installations frigorifiques et de ... - Onisep",
+      "url": "https://www.onisep.fr/ressources/univers-formation/formations/post-bac/licence-pro-mention-installations-frigorifiques-et-de-conditionnement-d-air",
+      "snippet": "Découvrez les débouchés, le programme et les établissements proposant cette formation."
+    },
+    {
+      "title": "Licence Professionnelle - Froid Industriel et Conditionnement d’Air ...",
+      "url": "https://www.formasup-paysdelaloire.fr/formation/licence-professionnelle-installations-frigorifiques-et-de-conditionnement-dait/",
+      "snippet": "Former des collaborateurs d'entreprise capables de maîtriser les installations de production de froid industriel et commercial, de la …"
+    }
+  ]
+}

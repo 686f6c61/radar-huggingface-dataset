@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "cvis-tmu/qwen2.5-vl-7b-cot-3epoch-trillium-1039892-merged",
+  "slug": "cvis-tmu-qwen2-5-vl-7b-cot-3epoch-trillium-1039892-merged",
+  "author": "cvis-tmu",
+  "url": "https://huggingface.co/cvis-tmu/qwen2.5-vl-7b-cot-3epoch-trillium-1039892-merged",
+  "created_at": "2026-10-16T16:48:14.000Z",
+  "updated_at": "2026-10-16T16:50:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "llamafactory",
+    "lora",
+    "merged",
+    "chain-of-thought",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-VL-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-VL-7B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8292166656,
+  "parameters_human": "8.29B",
+  "storage_bytes": 16595836004,
+  "storage_human": "16.6 GB",
+  "base_model": "Qwen/Qwen2.5-VL-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SpiderSolitaire.fr - Spider Solitaire Gratuit",
+      "url": "https://www.spidersolitaire.fr/",
+      "snippet": "Le jeu Spider Solitaire est un vrai classique, il est considéré comme le roi de tous les jeux de Solitaire, en conséquence, c'est aussi …"
+    },
+    {
+      "title": "Jouer au Spider Solitaire",
+      "url": "https://www.spidersolitaire.fr/jouerauspidersolitaire.php",
+      "snippet": "Une course contre la montre, vous avez 10 minutes pour que.."
+    },
+    {
+      "title": "Spider Solitaire Classique",
+      "url": "https://www.spidersolitaire.fr/jouer/spidersolitaireclassique.php",
+      "snippet": "Nous avons aussi supprimé le bouton d'indices dans le Spider Solitaire Classique, de sorte que vous devez tout faire vous-même. …"
+    },
+    {
+      "title": "Spider Solitaire Windows",
+      "url": "https://www.spidersolitaire.fr/jouer/spidersolitairewindows.php",
+      "snippet": "Spider Solitaire Windows Joué : Ce jeu a été joué pour l'instant 159753973 fois. Instructions : Ce jeu ressemble beaucoup à la …"
+    },
+    {
+      "title": "Spider Solitaire Paris",
+      "url": "https://www.spidersolitaire.fr/jouer/spidersolitaireparis.php",
+      "snippet": "Et ce n'est pas pour rien, Spider Solitaire est à l'origine un jeu français et c'est la raison pour laquelle nous avons créé cette version …"
+    }
+  ]
+}

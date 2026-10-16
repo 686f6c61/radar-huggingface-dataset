@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "id": "LiquidAI/LFM2.5-24B-A2B-MLX-4bit",
+  "slug": "liquidai-lfm2-5-24b-a2b-mlx-4bit",
+  "author": "LiquidAI",
+  "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-MLX-4bit",
+  "created_at": "2026-10-12T19:31:28.000Z",
+  "updated_at": "2026-10-13T06:11:38.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "es",
+    "pt",
+    "it"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "lfm2_moe",
+    "liquid",
+    "lfm2.5",
+    "edge",
+    "moe",
+    "text-generation",
+    "conversational",
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "es",
+    "pt",
+    "it",
+    "arxiv:2511.23404",
+    "base_model:LiquidAI/LFM2.5-24B-A2B",
+    "base_model:quantized:LiquidAI/LFM2.5-24B-A2B",
+    "license:other",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 16,
+  "downloads_30d": 3228,
+  "trending_score": 15,
+  "parameters": 23971585280,
+  "parameters_human": "23.97B",
+  "storage_bytes": 13585199933,
+  "storage_human": "13.6 GB",
+  "base_model": "LiquidAI/LFM2.5-24B-A2B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Xvid Labs - Xvid Codec",
+      "url": "https://labs.xvid.com/project/",
+      "snippet": "The Xvid codec was created to promote the adoption of open standards, namely ISO MPEG-4 video, and in order to enable the …"
+    },
+    {
+      "title": "Xvid - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Xvid",
+      "snippet": "Xvid encoded files can be written to a CD or DVD and played in some (but not all) DivX compatible DVD players and media players. …"
+    },
+    {
+      "title": "Xvid - Download",
+      "url": "https://www.xvid.com/download/",
+      "snippet": "Download Section. Get the Xvid Software for your Platform here and be ready to start out in minutes. Easy installation. Xvid is …"
+    },
+    {
+      "title": "Xvid — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/XVID",
+      "snippet": "Xvid est une implémentation de la norme MPEG-4 Part 2 de codage vidéo et distribué sous GNU GPL. À l'origine basé sur …"
+    },
+    {
+      "title": "XVID files: How to open and use them | Adobe",
+      "url": "https://www.adobe.com/creativecloud/file-types/video/codec/xvid.html?msockid=194ff46449bf67df0b9be39048066665",
+      "snippet": "XVID files are a great way to view, store, and stream high quality media, without sacrificing lots of storage. Learn more about what an …"
+    }
+  ]
+}

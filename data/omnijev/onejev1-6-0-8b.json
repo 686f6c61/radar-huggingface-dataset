@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "OmniJev/OneJev1.6-0.8B",
+  "slug": "omnijev-onejev1-6-0-8b",
+  "author": "OmniJev",
+  "url": "https://huggingface.co/OmniJev/OneJev1.6-0.8B",
+  "created_at": "2026-10-16T18:50:37.000Z",
+  "updated_at": "2026-10-16T19:03:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "onejev",
+    "system-one",
+    "decision-model",
+    "calibration",
+    "multimodal",
+    "gui-agent",
+    "video",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 852985920,
+  "parameters_human": "853.0M",
+  "storage_bytes": 1726020021,
+  "storage_human": "1.7 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ecoledirecte · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/ecoledirecte",
+      "snippet": "Oct 7, 2026 · GitHub is where people build software. More than 225 million people use GitHub to discover, fork, and contribute to …"
+    },
+    {
+      "title": "Ecran pc \"entering power save\" [Résolu] - Matériel & Système",
+      "url": "https://forums.commentcamarche.net/forum/affich-30446265-ecran-pc-entering-power-save",
+      "snippet": "Jul 3, 2014 · Bonjour, Aujourd'hui je suis allé acheter une tour, en rentrant chez moi, je branche tous les cables, et l'écran, j'allume …"
+    },
+    {
+      "title": "Supprimer des fichiers finissant par - Copie sous Windows 10",
+      "url": "https://forums.commentcamarche.net/forum/affich-35977045-supprimer-des-fichiers-finissant-par-copie-sous-windows-10",
+      "snippet": "ah bah c'est bon j ai trouvé ! Donc si quelqu'un a le même soucis voila ce qu'il faut faire : Ouvrir l'invite de commande en …"
+    },
+    {
+      "title": "GitHub - EduWireApps/ecoledirecte-api-docs",
+      "url": "https://github.com/EduWireApps/ecoledirecte-api-docs",
+      "snippet": "EcoleDirecte Api Documentation Warning (Mise à jour du 28/03/2024). À la date où cette documentation a été modifié, Aplim (la …"
+    },
+    {
+      "title": "EcoleDirecte | Mode Sombre · GitHub",
+      "url": "https://gist.github.com/msylvest-22102007/88373dbd747d97a7cb1e8809ca74e8cf",
+      "snippet": "EcoleDirecte | Mode Sombre. GitHub Gist: instantly share code, notes, and snippets."
+    }
+  ]
+}

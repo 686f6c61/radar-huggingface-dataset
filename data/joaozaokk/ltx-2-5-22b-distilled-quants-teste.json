@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "JoaoZaokk/ltx-2.5-22b-distilled-quants-teste",
+  "slug": "joaozaokk-ltx-2-5-22b-distilled-quants-teste",
+  "author": "JoaoZaokk",
+  "url": "https://huggingface.co/JoaoZaokk/ltx-2.5-22b-distilled-quants-teste",
+  "created_at": "2026-10-16T03:30:27.000Z",
+  "updated_at": "2026-10-16T11:36:54.000Z",
+  "license": "ltx-2-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "ltx-video",
+    "ltx-2.5",
+    "quantized",
+    "comfyui",
+    "nvfp4",
+    "mxfp8",
+    "fp8",
+    "w6a8",
+    "int8",
+    "testing",
+    "base_model:Lightricks/LTX-2.5",
+    "base_model:finetune:Lightricks/LTX-2.5",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 141309792032,
+  "storage_human": "141.3 GB",
+  "base_model": "Lightricks/LTX-2.5",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Workflow Index: the creative-AI recipes worth running, with the ...",
+      "url": "https://fervorcreativeai.com/workflows/",
+      "snippet": "16.09.2026 ... Download ltx-2.5-22b-distilled-transformer-w4a8.safetensors from JoaoZaokk/LTX-2.5-22B-distilled-W4A8-ConvRot into ComfyUI/models ..."
+    },
+    {
+      "title": "Lokale KI-Modelle: Liste + Rechner-Check - ki-preise.info",
+      "url": "https://ki-preise.info/lokale-modelle.html",
+      "snippet": "vor 3 Tagen ... JO JoaoZaokk LTX-2.5-22B-distilled-W4A8-ConvRot. Video NEU Andere ... Viele Modelle gibt es in mehreren Varianten („Quants“): komprimiert in 4, ..."
+    }
+  ]
+}

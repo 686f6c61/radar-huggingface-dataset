@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "niru-5/act-so101-chess17-baseline",
+  "slug": "niru-5-act-so101-chess17-baseline",
+  "author": "niru-5",
+  "url": "https://huggingface.co/niru-5/act-so101-chess17-baseline",
+  "created_at": "2026-10-16T17:11:17.000Z",
+  "updated_at": "2026-10-16T17:11:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:Cornito/so101_chess17",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206707256,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

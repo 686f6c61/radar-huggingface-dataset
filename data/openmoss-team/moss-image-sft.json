@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "OpenMOSS-Team/MOSS-Image-SFT",
+  "slug": "openmoss-team-moss-image-sft",
+  "author": "OpenMOSS-Team",
+  "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT",
+  "created_at": "2026-10-11T07:01:17.000Z",
+  "updated_at": "2026-10-16T07:48:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "moss-image",
+    "text-to-image",
+    "en",
+    "zh",
+    "base_model:OpenMOSS-Team/MOSS-Image-Base",
+    "base_model:finetune:OpenMOSS-Team/MOSS-Image-Base",
+    "license:apache-2.0",
+    "diffusers:MOSSImagePipeline",
+    "region:us"
+  ],
+  "likes": 101,
+  "downloads_30d": 54,
+  "trending_score": 100,
+  "parameters": 5082308624,
+  "parameters_human": "5.08B",
+  "storage_bytes": 27228815653,
+  "storage_human": "27.2 GB",
+  "base_model": "OpenMOSS-Team/MOSS-Image-Base",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jaden newman why bebe video clip original FULL VIDEO IN COMMENT | why ...",
+      "url": "https://www.youtube.com/watch?v=MlWn2uIuL9g",
+      "snippet": "Aug 30, 2026 · jaden newman why bebe video clip original | jaden newman why bebe clip | why bebe video clip | why bebe video clip …"
+    },
+    {
+      "title": "james on X: \"Why Bebe\" / X",
+      "url": "https://x.com/therealvivet/status/2090020131535737152",
+      "snippet": "Sep 4, 2026 · Why Bebe Never give up on love guys she missed out on a real one 🫡and he will find someone who appreciates him soon"
+    },
+    {
+      "title": "Why Bebe (@WhyBebeSol) / X",
+      "url": "https://x.com/WhyBebeSol",
+      "snippet": "Aug 15, 2026 · WHY BEBE? The meme that asks the question nobody can answer but Gods greatest soldier"
+    },
+    {
+      "title": "Official repository for MOSS-Image, a 5B-parameter base DiT model ...",
+      "url": "https://github.com/OpenMOSS/MOSS-Image",
+      "snippet": "vor 13 Stunden ... Official repository for MOSS-Image, a 5B-parameter base DiT model with high-quality text rendering, layout generation, and efficient ..."
+    },
+    {
+      "title": "why bebe video clip original | why bebe video clip | why bebe full ...",
+      "url": "https://www.youtube.com/watch?v=CRTa_vfVe34",
+      "snippet": "Aug 22, 2026 · why bebe video clip original | why bebe video clip | why bebe full video clip in comment Viral News zone RJ 3.01K …"
+    }
+  ]
+}
