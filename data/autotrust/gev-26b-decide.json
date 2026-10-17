@@ -39,10 +39,11 @@
     "base_model:adapter:google/gemma-4-26B-A4B-it",
     "license:apache-2.0",
     "model-index",
+    "eval-results",
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 2450,
+  "likes": 2451,
   "downloads_30d": 1074483,
   "trending_score": 15.5,
   "parameters": 25805936206,

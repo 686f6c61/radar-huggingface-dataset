@@ -33,9 +33,10 @@
     "8-bit",
     "modelopt",
     "deploy:sagemaker",
+    "deploy:azure",
     "region:us"
   ],
-  "likes": 150,
+  "likes": 149,
   "downloads_30d": 814,
   "trending_score": 135,
   "parameters": 483807947264,

@@ -26,11 +26,12 @@
     "conversational",
     "en",
     "license:other",
+    "eval-results",
     "endpoints_compatible",
     "deploy:sagemaker",
     "region:us"
   ],
-  "likes": 445,
+  "likes": 458,
   "downloads_30d": 815,
   "trending_score": 423,
   "parameters": 822036529664,

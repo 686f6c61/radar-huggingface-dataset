@@ -39,10 +39,11 @@
     "base_model:Qwen/Qwen3.8-27B",
     "base_model:adapter:Qwen/Qwen3.8-27B",
     "license:apache-2.0",
+    "eval-results",
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 5947,
+  "likes": 5963,
   "downloads_30d": 1645809,
   "trending_score": 142.6,
   "parameters": 27781427952,

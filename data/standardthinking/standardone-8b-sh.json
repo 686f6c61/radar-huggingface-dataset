@@ -5,7 +5,7 @@
   "author": "StandardThinking",
   "url": "https://huggingface.co/StandardThinking/StandardOne-8B-SH",
   "created_at": "2026-10-07T08:24:20.000Z",
-  "updated_at": "2026-10-13T13:58:44.000Z",
+  "updated_at": "2026-10-16T16:01:56.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 116,
+  "downloads_30d": 124,
   "trending_score": 0,
   "parameters": 8918026240,
   "parameters_human": "8.92B",

@@ -5,7 +5,7 @@
   "author": "ybc-lw",
   "url": "https://huggingface.co/ybc-lw/ouatlm",
   "created_at": "2026-08-26T17:22:21.000Z",
-  "updated_at": "2026-10-13T17:11:15.000Z",
+  "updated_at": "2026-10-16T19:13:13.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 396,
+  "downloads_30d": 587,
   "trending_score": 0,
   "parameters": 804992,
   "parameters_human": "804992",

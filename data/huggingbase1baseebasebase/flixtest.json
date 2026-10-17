@@ -5,7 +5,7 @@
   "author": "Huggingbase1baseebasebase",
   "url": "https://huggingface.co/Huggingbase1baseebasebase/FlixTest",
   "created_at": "2026-08-25T14:50:57.000Z",
-  "updated_at": "2026-10-11T20:12:12.000Z",
+  "updated_at": "2026-10-16T21:40:24.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -18,7 +18,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 1347,
+  "downloads_30d": 1371,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",

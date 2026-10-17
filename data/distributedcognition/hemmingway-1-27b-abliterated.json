@@ -5,7 +5,7 @@
   "author": "distributedcognition",
   "url": "https://huggingface.co/distributedcognition/Hemmingway-1-27B-abliterated",
   "created_at": "2026-09-22T06:38:55.000Z",
-  "updated_at": "2026-09-24T23:31:55.000Z",
+  "updated_at": "2026-10-16T19:59:42.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

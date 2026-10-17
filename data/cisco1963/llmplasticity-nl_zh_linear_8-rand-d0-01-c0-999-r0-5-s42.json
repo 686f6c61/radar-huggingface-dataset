@@ -4,8 +4,8 @@
   "slug": "cisco1963-llmplasticity-nl_zh_linear_8-rand-d0-01-c0-999-r0-5-s42",
   "author": "Cisco1963",
   "url": "https://huggingface.co/Cisco1963/llmplasticity-nl_zh_linear_8-rand-d0.01-c0.999-r0.5-s42",
-  "created_at": "2026-10-07T02:47:52.000Z",
-  "updated_at": "2026-10-07T02:56:01.000Z",
+  "created_at": "2026-10-16T05:29:41.000Z",
+  "updated_at": "2026-10-16T05:32:26.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -17,20 +17,20 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 3,
+  "downloads_30d": 10,
   "trending_score": 0,
   "parameters": 122706432,
   "parameters_human": "122.7M",
-  "storage_bytes": 10309296921,
-  "storage_human": "10.3 GB",
+  "storage_bytes": 9819508825,
+  "storage_human": "9.8 GB",
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-10-08T02:12:57.093Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

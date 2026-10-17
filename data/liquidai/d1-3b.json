@@ -64,10 +64,11 @@
     "base_model:LiquidAI/LFM2.5-VL-3B",
     "base_model:finetune:LiquidAI/LFM2.5-VL-3B",
     "license:other",
+    "eval-results",
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 439,
+  "likes": 440,
   "downloads_30d": 17820,
   "trending_score": 164,
   "parameters": 3123483888,

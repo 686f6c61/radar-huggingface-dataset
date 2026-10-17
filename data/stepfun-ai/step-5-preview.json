@@ -15,10 +15,11 @@
     "safetensors",
     "step5_vl",
     "license:other",
+    "eval-results",
     "fp8",
     "region:us"
   ],
-  "likes": 90,
+  "likes": 92,
   "downloads_30d": 572,
   "trending_score": 90,
   "parameters": 604339504832,

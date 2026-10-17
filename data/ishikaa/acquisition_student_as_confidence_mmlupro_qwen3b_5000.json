@@ -4,8 +4,8 @@
   "slug": "ishikaa-acquisition_student_as_confidence_mmlupro_qwen3b_5000",
   "author": "ishikaa",
   "url": "https://huggingface.co/ishikaa/acquisition_student_AS_confidence_mmlupro_qwen3b_5000",
-  "created_at": "2026-09-27T18:34:40.000Z",
-  "updated_at": "2026-09-27T18:35:50.000Z",
+  "created_at": "2026-10-16T16:48:10.000Z",
+  "updated_at": "2026-10-16T16:49:23.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -35,8 +35,8 @@
   ],
   "is_conversational": true,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-10-13T04:23:11.543Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

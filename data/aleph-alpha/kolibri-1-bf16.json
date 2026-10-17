@@ -5,7 +5,7 @@
   "author": "Aleph-Alpha",
   "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1-BF16",
   "created_at": "2026-10-02T08:07:59.000Z",
-  "updated_at": "2026-10-03T08:44:27.000Z",
+  "updated_at": "2026-10-16T10:18:30.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 60,
-  "downloads_30d": 2254,
+  "downloads_30d": 2328,
   "trending_score": 14,
   "parameters": 78103074560,
   "parameters_human": "78.10B",

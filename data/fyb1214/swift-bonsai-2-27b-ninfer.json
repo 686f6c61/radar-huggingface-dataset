@@ -5,7 +5,7 @@
   "author": "fyb1214",
   "url": "https://huggingface.co/fyb1214/Swift-Bonsai-2-27B-NInfer",
   "created_at": "2026-09-27T19:59:50.000Z",
-  "updated_at": "2026-09-29T15:37:55.000Z",
+  "updated_at": "2026-10-16T16:56:46.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -37,7 +37,7 @@
     "region:us"
   ],
   "likes": 3,
-  "downloads_30d": 2283,
+  "downloads_30d": 2331,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

@@ -5,7 +5,7 @@
   "author": "esatapedico",
   "url": "https://huggingface.co/esatapedico/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-NVFP4-BUDGET-GGUF",
   "created_at": "2026-09-02T22:55:19.000Z",
-  "updated_at": "2026-09-03T22:04:01.000Z",
+  "updated_at": "2026-10-16T20:27:00.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -37,7 +37,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 366,
+  "downloads_30d": 738,
   "trending_score": 0,
   "parameters": 26895998720,
   "parameters_human": "26.90B",

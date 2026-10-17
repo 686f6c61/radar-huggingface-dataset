@@ -5,7 +5,7 @@
   "author": "bitlamas",
   "url": "https://huggingface.co/bitlamas/Qwen3.8-Flash-Next-Q4_K_XL-DN4",
   "created_at": "2026-09-05T18:09:31.000Z",
-  "updated_at": "2026-10-10T04:54:40.000Z",
+  "updated_at": "2026-10-17T06:26:57.000Z",
   "license": "qwen-community-1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -33,7 +33,7 @@
     "conversational"
   ],
   "likes": 7,
-  "downloads_30d": 733,
+  "downloads_30d": 785,
   "trending_score": 0,
   "parameters": 176943899520,
   "parameters_human": "176.94B",
