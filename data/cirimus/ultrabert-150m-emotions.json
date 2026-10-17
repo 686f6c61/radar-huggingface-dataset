@@ -5,7 +5,7 @@
   "author": "cirimus",
   "url": "https://huggingface.co/cirimus/ultrabert-150M-emotions",
   "created_at": "2026-10-15T20:01:24.000Z",
-  "updated_at": "2026-10-16T01:58:16.000Z",
+  "updated_at": "2026-10-16T14:19:50.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -32,12 +32,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 23,
   "trending_score": 0,
   "parameters": 151037959,
   "parameters_human": "151.0M",
-  "storage_bytes": 604331210,
-  "storage_human": "604 MB",
+  "storage_bytes": 1208662415,
+  "storage_human": "1.2 GB",
   "base_model": "dmis-lab/UltraBERT-150M",
   "formats": [
     "safetensors"

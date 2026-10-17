@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "molbal/Flux-3-Klein-GGUF",
+  "slug": "molbal-flux-3-klein-gguf",
+  "author": "molbal",
+  "url": "https://huggingface.co/molbal/Flux-3-Klein-GGUF",
+  "created_at": "2026-10-16T20:53:46.000Z",
+  "updated_at": "2026-10-16T20:55:57.000Z",
+  "license": "flux-kommunity-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "comfyui-gguf-reboot",
+  "languages": [],
+  "tags": [
+    "comfyui-gguf-reboot",
+    "gguf",
+    "comfyui",
+    "image-generation",
+    "image-editing",
+    "flux",
+    "flux-3",
+    "black-forest-labs",
+    "text-to-image",
+    "base_model:black-forest-labs/flux-3-image-klein",
+    "base_model:quantized:black-forest-labs/flux-3-image-klein",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5538458368,
+  "parameters_human": "5.54B",
+  "storage_bytes": 44145562357,
+  "storage_human": "44.1 GB",
+  "base_model": "black-forest-labs/flux-3-image-klein, black-forest-labs/flux-3-image-klein-base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "realrebelai/FLUX-3-Image-Klein_GGUFs - Hugging Face",
+      "url": "https://huggingface.co/realrebelai/FLUX-3-Image-Klein_GGUFs",
+      "snippet": "FLUX 3 Image Klein — GGUF Quantizations ... Community quantizations by Rebel AI of Black Forest Labs' FLUX 3 Image Klein diffusion models, including Base and Step ..."
+    },
+    {
+      "title": "FLUX 3: Multimodal Video, Image & Audio | Black Forest Labs",
+      "url": "https://bfl.ai/blog/flux-3",
+      "snippet": "23.07.2026 ... FLUX 3 is our first model built entirely on that principle, and a checkpoint on our mission to develop real-world visual intelligence: models ..."
+    },
+    {
+      "title": "FLUX 3 Model Overview: Multimodal Flow Models for Image, Video ...",
+      "url": "https://huggingface.co/blog/ResterChed/flux-3",
+      "snippet": "23.07.2026 ... FLUX 3 is a diffusion transformer (DiT) trained jointly across images, video, and audio within a unified multimodal architecture. Unlike earlier ..."
+    },
+    {
+      "title": "Unsloth Studio: Lokale KI Web UI mit GGUF 2026 - Never Code Alone",
+      "url": "https://nevercodealone.de/de/glossare/ki-tools-2026/unsloth-studio-open-source-web-ui-lokale-ki-2026",
+      "snippet": "23.06.2026 ... A new open-source web UI to train and run LLMs. Daniel Han, Mitgründer Unsloth AI – LinkedIn (März 2026)."
+    },
+    {
+      "title": "KoboldCpp - Run GGUF AI models locally with a KoboldAI UI. One ...",
+      "url": "https://github.com/lostruins/koboldcpp",
+      "snippet": "... Flux, Qwen Image, Ideogram, Z-Image, Klein, Krea2 and more. Video generation: Supports WAN 2.2, LTX2.3, MiniMax H3 and more. ... Open localhost:5001 in your ..."
+    }
+  ]
+}

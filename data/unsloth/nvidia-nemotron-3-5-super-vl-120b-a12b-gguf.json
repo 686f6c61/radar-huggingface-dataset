@@ -40,13 +40,13 @@
     "region:us",
     "conversational"
   ],
-  "likes": 36,
+  "likes": 40,
   "downloads_30d": 3957,
-  "trending_score": 35,
+  "trending_score": 38,
   "parameters": 1632922404,
   "parameters_human": "1.63B",
-  "storage_bytes": 1202218372386,
-  "storage_human": "1202.2 GB",
+  "storage_bytes": 867362886234,
+  "storage_human": "867.4 GB",
   "base_model": "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16",
   "formats": [
     "gguf"

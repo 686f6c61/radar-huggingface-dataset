@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "AmirFazlollahi/Gemma3-4B-HendrycksMATH-SFT",
+  "slug": "amirfazlollahi-gemma3-4b-hendrycksmath-sft",
+  "author": "AmirFazlollahi",
+  "url": "https://huggingface.co/AmirFazlollahi/Gemma3-4B-HendrycksMATH-SFT",
+  "created_at": "2026-10-16T20:48:41.000Z",
+  "updated_at": "2026-10-16T20:59:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/gemma-3-4b-pt",
+    "base_model:finetune:unsloth/gemma-3-4b-pt",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4300079472,
+  "parameters_human": "4.30B",
+  "storage_bytes": 8638351521,
+  "storage_human": "8.6 GB",
+  "base_model": "unsloth/gemma-3-4b-pt",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Porn Comix | Page 75 | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/porn-comix.322919/page-75",
+      "snippet": "Jun 6, 2017 · Hello, You can now get verified on forum. The way it's gonna work is that you can send me a PM with a verification …"
+    },
+    {
+      "title": "Japanese Incest Porn. - XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/japanese-incest-porn.430396/",
+      "snippet": "Aug 9, 2016 · Well, first of all it's probably not real incest and second of all Japanese porn sucks , what's up with all of the pixilation? …"
+    },
+    {
+      "title": "天府社区",
+      "url": "https://bbs.scol.com.cn/",
+      "snippet": "蜀ICP备12028253号 川公网安备 51010402000072号 网上传播视听节目许可证 |互联网新闻信息服务许可证编号：51120170001 | …"
+    },
+    {
+      "title": "MISHELL`S VINTAGE PORN. | Page 14 | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/mishell-s-vintage-porn.417715/page-14",
+      "snippet": "Jul 1, 2016 · Hello, You can now get verified on forum. The way it's gonna work is that you can send me a PM with a verification …"
+    },
+    {
+      "title": "Favorite 80s and 90s Porn Stars - XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/favorite-80s-and-90s-porn-stars.172420/",
+      "snippet": "Feb 13, 2011 · Ran forty searches and didn't see a thread like this. Post pic or vid links...whatever is allowed here.:)"
+    }
+  ]
+}

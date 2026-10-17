@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "henryhale/bpe-en-sw-af-de-fr-es-zh-64k",
+  "slug": "henryhale-bpe-en-sw-af-de-fr-es-zh-64k",
+  "author": "henryhale",
+  "url": "https://huggingface.co/henryhale/bpe-en-sw-af-de-fr-es-zh-64k",
+  "created_at": "2026-10-16T21:38:09.000Z",
+  "updated_at": "2026-10-16T21:41:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "tokenizers",
+  "languages": [
+    "en",
+    "sw",
+    "af",
+    "de",
+    "fr",
+    "es",
+    "zh"
+  ],
+  "tags": [
+    "tokenizers",
+    "tokenizer",
+    "bpe",
+    "baseline",
+    "multilingual",
+    "african-languages",
+    "en",
+    "sw",
+    "af",
+    "de",
+    "fr",
+    "es",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "Access 45,000+ models from leading AI providers through a single, unified API with no service fees. Deploy on optimized Inference Endpoints or update your Spaces applications to a GPU in a few clicks. We are building the foundation of ML tooling with the community."
+    },
+    {
+      "title": "BPE (Byte Pair Encoding) | huggingface/tokenizers | DeepWiki",
+      "url": "https://deepwiki.com/huggingface/tokenizers/4.1-bpe-(byte-pair-encoding)",
+      "snippet": "This page documents the BPE (Byte Pair Encoding) model implementation, one of the four core tokenization models in the tokenizers library. BPE is a subword tokenization algorithm that iteratively merges the most frequent pairs of characters or character sequences to build a vocabulary of subword units."
+    },
+    {
+      "title": "HITS - BPEmb: Subword Embeddings in 275 Languages",
+      "url": "https://bpemb.h-its.org/",
+      "snippet": "Pre-trained byte-pair embeddings work surprisingly well, while requiring no tokenization and being much smaller than alternatives: an 11 MB BPEmb English model matches the results of the 6 GB FastText model in our evaluation."
+    },
+    {
+      "title": "GitHub - bheinzerling/bpemb: Pre-trained subword embeddings in 275 ...",
+      "url": "https://github.com/bheinzerling/bpemb",
+      "snippet": "BPEmb is a collection of pre-trained subword embeddings in 275 languages, based on Byte-Pair Encoding (BPE) and trained on Wikipedia. Its intended use is as input for neural models in natural language processing."
+    },
+    {
+      "title": "Browse AI Artifacts | Hugging Bay",
+      "url": "https://huggingbay.xyz/browse",
+      "snippet": "Browse the Hugging Bay catalog of open AI models, datasets, apps, tools, evals, hosted downloads, and external metadata records."
+    }
+  ]
+}

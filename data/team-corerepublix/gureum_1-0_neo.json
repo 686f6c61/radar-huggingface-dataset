@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Team-CorerepubliX/Gureum_1.0_neo",
+  "slug": "team-corerepublix-gureum_1-0_neo",
+  "author": "Team-CorerepubliX",
+  "url": "https://huggingface.co/Team-CorerepubliX/Gureum_1.0_neo",
+  "created_at": "2026-10-05T12:39:43.000Z",
+  "updated_at": "2026-10-17T01:51:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "gureum",
+    "korean",
+    "corerepublix",
+    "conversational",
+    "ko",
+    "en",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2305517312,
+  "parameters_human": "2.31B",
+  "storage_bytes": 4611084960,
+  "storage_human": "4.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft Teams",
+      "url": "https://teams.microsoft.com/v2/?skipauthstrap=1",
+      "snippet": "Sign in to your Microsoft Teams account to collaborate, organize, and stay connected with your team."
+    },
+    {
+      "title": "Microsoft Teams",
+      "url": "https://teams.microsoft.com/",
+      "snippet": "Microsoft Teams ... Microsoft Teams"
+    },
+    {
+      "title": "Sign In | Microsoft Teams",
+      "url": "https://www.microsoft.com/en-us/microsoft-teams/log-in?msockid=2854bd0370156aac107faaf671d46ba5",
+      "snippet": "Microsoft Teams, the hub for team collaboration in Microsoft 365, integrates the people, content, and tools your team needs to be …"
+    },
+    {
+      "title": "Free Online Meetings & Video Calls | Microsoft Teams",
+      "url": "https://teams.live.com/free",
+      "snippet": "Start free Teams video calls instantly! Connect, collaborate, and communicate effortlessly. Enjoy features like video calls, chat, file …"
+    },
+    {
+      "title": "Download Teams Desktop and Mobile Apps | Microsoft Teams",
+      "url": "https://www.microsoft.com/en-us/microsoft-teams/download-app?msockid=2854bd0370156aac107faaf671d46ba5",
+      "snippet": "Outlook: Manage your email, calendar, tasks, and contacts together in one place. Exchange: Work smarter with business-class email …"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "henryhale/bpe-en-sw-af-de-fr-es-zh-200k",
+  "slug": "henryhale-bpe-en-sw-af-de-fr-es-zh-200k",
+  "author": "henryhale",
+  "url": "https://huggingface.co/henryhale/bpe-en-sw-af-de-fr-es-zh-200k",
+  "created_at": "2026-10-16T21:38:07.000Z",
+  "updated_at": "2026-10-16T21:40:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "tokenizers",
+  "languages": [
+    "en",
+    "sw",
+    "af",
+    "de",
+    "fr",
+    "es",
+    "zh"
+  ],
+  "tags": [
+    "tokenizers",
+    "tokenizer",
+    "bpe",
+    "baseline",
+    "multilingual",
+    "african-languages",
+    "en",
+    "sw",
+    "af",
+    "de",
+    "fr",
+    "es",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15810267,
+  "storage_human": "16 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "Access 45,000+ models from leading AI providers through a single, unified API with no service fees. Deploy on optimized Inference Endpoints or update your Spaces applications to a GPU in a few clicks. We are building the foundation of ML tooling with the community."
+    },
+    {
+      "title": "bpe.model · IndexTeam/IndexTTS-2 at main - Hugging Face",
+      "url": "https://huggingface.co/IndexTeam/IndexTTS-2/blob/main/bpe.model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Browse AI Artifacts | Hugging Bay",
+      "url": "https://huggingbay.xyz/browse",
+      "snippet": "Browse the Hugging Bay catalog of open AI models, datasets, apps, tools, evals, hosted downloads, and external metadata records."
+    },
+    {
+      "title": "Projects | Henry Hale",
+      "url": "https://www.henryhale.dev/projects/",
+      "snippet": "💬 Analyze, summarize and chat with your exported WhatsApp conversations - entirely on your own machine. 🚪 A generic orchestration and gateway framework for routing one standard request format across multiple external providers. 💙 A collection of powerful media utilities that run entirely in your browser."
+    },
+    {
+      "title": "BPE (Byte Pair Encoding) | huggingface/tokenizers | DeepWiki",
+      "url": "https://deepwiki.com/huggingface/tokenizers/4.1-bpe-(byte-pair-encoding)",
+      "snippet": "BPE is a subword tokenization algorithm that iteratively merges the most frequent pairs of characters or character sequences to build a vocabulary of subword units. This model is used by popular architectures like GPT-2, RoBERTa, and Llama. For information about training a BPE model, see BPE Training."
+    }
+  ]
+}

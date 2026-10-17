@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "jrubiosainz/microduck-game-roller-remix2",
+  "slug": "jrubiosainz-microduck-game-roller-remix2",
+  "author": "jrubiosainz",
+  "url": "https://huggingface.co/jrubiosainz/microduck-game-roller-remix2",
+  "created_at": "2026-10-16T22:01:23.000Z",
+  "updated_at": "2026-10-16T22:01:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "base_model:suraj-phanindra/microduck-roller-hc4-aifund",
+    "base_model:finetune:suraj-phanindra/microduck-roller-hc4-aifund",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 831318,
+  "storage_human": "831318 B",
+  "base_model": "suraj-phanindra/microduck-roller-hc4-aifund",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jrubiosainz/microduck-game-roller · Hugging Face",
+      "url": "https://huggingface.co/jrubiosainz/microduck-game-roller",
+      "snippet": "The base repo declares no licence of its own; it is credited here and linked as base_model. PPO fine-tune: the MICRODUCK GAME project (jrubiosainz), built with GitHub Copilot."
+    },
+    {
+      "title": "GitHub - jrubiosainz/microduck",
+      "url": "https://github.com/jrubiosainz/microduck",
+      "snippet": "Contribute to jrubiosainz/microduck development by creating an account on GitHub."
+    },
+    {
+      "title": "A tiny biped robot you can teach new tricks - Pollen Robotics",
+      "url": "https://pollen-robotics.com/microduck/",
+      "snippet": "Microduck is a 25 cm biped robot with 15 motors, a camera, LiDAR and a grasping beak. Playable out of the box, and its open-source stack lets you train new behaviours in simulation and run them on the robot. Pre-order at $399."
+    },
+    {
+      "title": "pollen-robotics/microduck: A Tiny biped duck robot - GitHub",
+      "url": "https://github.com/pollen-robotics/microduck",
+      "snippet": "A Tiny biped duck robot 🦆. Contribute to pollen-robotics/microduck development by creating an account on GitHub."
+    },
+    {
+      "title": "Micro Duck (Microduck): 25 cm open-source biped robot",
+      "url": "https://microduck.homes/",
+      "snippet": "Pre-order Micro Duck (Microduck), a 25 cm open-source biped robot you train with reinforcement learning. Open SDK, simulator, $399 before taxes and shipping."
+    }
+  ]
+}

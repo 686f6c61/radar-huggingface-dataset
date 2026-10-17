@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "RASMUS/MiniCPM-V-4.7-1B-ONNX",
+  "slug": "rasmus-minicpm-v-4-7-1b-onnx",
+  "author": "RASMUS",
+  "url": "https://huggingface.co/RASMUS/MiniCPM-V-4.7-1B-ONNX",
+  "created_at": "2026-10-16T18:24:34.000Z",
+  "updated_at": "2026-10-16T18:27:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "minicpmv4_7",
+    "webgpu",
+    "minicpm-v",
+    "image-text-to-text",
+    "conversational",
+    "base_model:openbmb/MiniCPM-V-4.7-1B",
+    "base_model:quantized:openbmb/MiniCPM-V-4.7-1B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2493061320,
+  "storage_human": "2.5 GB",
+  "base_model": "openbmb/MiniCPM-V-4.7-1B",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Rasmus — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/The_Rasmus",
+      "snippet": "The Rasmus est un groupe finlandais de rock, originaire d' Helsinki. Le groupe fait ses débuts en 1994, ses membres étant alors …"
+    },
+    {
+      "title": "The Rasmus - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/The_Rasmus",
+      "snippet": "The Rasmus is a Finnish rock band that formed in 1994 [1] in Helsinki while the band members were in upper comprehensive school. …"
+    },
+    {
+      "title": "The Rasmus - YouTube",
+      "url": "https://www.youtube.com/RasmusOfficial",
+      "snippet": "The Rasmus feat. Niko Vilhelm of Blind Channel - Break These Chains (Lyric Video)"
+    },
+    {
+      "title": "The Rasmus - In the Shadows (Official Music Video) - YouTube",
+      "url": "https://www.youtube.com/watch?v=7gwO8-oqwFw",
+      "snippet": "Dec 2, 2011 · The Rasmus - In the Shadows (Official Music Video) The Rasmus 760K subscribers 1.2M"
+    },
+    {
+      "title": "The Rasmus Official Site – Homepage",
+      "url": "https://therasmus.com/",
+      "snippet": "Welcome to The Rasmus Official Site the Finnish rock band known for hits like 'In the Shadows.' Stay updated with tour dates, live …"
+    }
+  ]
+}

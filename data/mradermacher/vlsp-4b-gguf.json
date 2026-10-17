@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mradermacher/vlsp-4b-GGUF",
+  "slug": "mradermacher-vlsp-4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/vlsp-4b-GGUF",
+  "created_at": "2025-10-28T07:48:11.000Z",
+  "updated_at": "2026-10-16T23:55:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3",
+    "en",
+    "base_model:VietTung04/vlsp-4b",
+    "base_model:quantized:VietTung04/vlsp-4b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 36389988864,
+  "storage_human": "36.4 GB",
+  "base_model": "VietTung04/vlsp-4b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Get Rid of Chubby Hands and Finger Fat Fast - wikiHow",
+      "url": "https://www.wikihow.com/Get-Rid-of-Chubby-Hands",
+      "snippet": "Sep 30, 2026 · If you feel like your hands look chubby, you're not alone—many people are self-conscious about the look of their …"
+    },
+    {
+      "title": "How to Lose Finger Fat and Make Your Hands Look Slimmer",
+      "url": "https://www.healthline.com/health/how-to-lose-finger-fat",
+      "snippet": "Jan 22, 2026 · With a combination of diet and exercise, you can tone your fingers while dropping pounds elsewhere, if that’s your …"
+    },
+    {
+      "title": "How to Get Rid of Chubby Hands and Finger Fat - info-welt.com",
+      "url": "https://info-welt.com/how-to-get-rid-of-chubby-hands-and-finger-fat/",
+      "snippet": "Discover effective exercises and lifestyle changes to get rid of chubby hands and achieve slimmer fingers. Learn proven techniques …"
+    },
+    {
+      "title": "How to Reduce Hand Fat: A Simple Guide to Healthier Hands",
+      "url": "https://www.apollo247.com/health-topics/weight-loss/reducing-hand-fat",
+      "snippet": "Mar 13, 2026 · Learn how to reduce hand fat with effective exercises, diet tips, and lifestyle changes. Achieve slimmer, more toned …"
+    },
+    {
+      "title": "Fat Hands - Pinterest",
+      "url": "https://www.pinterest.com/ideas/fat-hands/947066590380/",
+      "snippet": "Discover Pinterest’s best ideas and inspiration for Fat hands. Get inspired and try out new things. Find and save ideas about fat …"
+    }
+  ]
+}

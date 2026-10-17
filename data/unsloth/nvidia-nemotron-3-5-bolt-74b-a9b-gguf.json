@@ -5,7 +5,7 @@
   "author": "unsloth",
   "url": "https://huggingface.co/unsloth/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-GGUF",
   "created_at": "2026-10-14T15:25:16.000Z",
-  "updated_at": "2026-10-15T17:10:13.000Z",
+  "updated_at": "2026-10-16T13:25:22.000Z",
   "license": "openmdw-1.1",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -41,13 +41,13 @@
     "region:us",
     "conversational"
   ],
-  "likes": 59,
+  "likes": 63,
   "downloads_30d": 10082,
-  "trending_score": 59,
+  "trending_score": 63,
   "parameters": 74042720848,
   "parameters_human": "74.04B",
-  "storage_bytes": 342123667200,
-  "storage_human": "342.1 GB",
+  "storage_bytes": 618120174048,
+  "storage_human": "618.1 GB",
   "base_model": "nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16",
   "formats": [
     "gguf"

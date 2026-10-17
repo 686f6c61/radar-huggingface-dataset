@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "aoiandroid/whisper-fa-large-v3-turbo-whisperkit-coreml-macos",
+  "slug": "aoiandroid-whisper-fa-large-v3-turbo-whisperkit-coreml-macos",
+  "author": "aoiandroid",
+  "url": "https://huggingface.co/aoiandroid/whisper-fa-large-v3-turbo-whisperkit-coreml-macos",
+  "created_at": "2026-10-16T23:23:04.000Z",
+  "updated_at": "2026-10-16T23:23:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "whisperkit",
+  "languages": [
+    "fa"
+  ],
+  "tags": [
+    "whisperkit",
+    "whisper",
+    "coreml",
+    "automatic-speech-recognition",
+    "fa",
+    "base_model:vhdm/whisper-large-fa-v1",
+    "base_model:finetune:vhdm/whisper-large-fa-v1",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 607970346,
+  "storage_human": "608 MB",
+  "base_model": "vhdm/whisper-large-fa-v1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yngsjö murder - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Yngsj%C3%B6_murder",
+      "snippet": "Anna Månsdotter was beheaded by axe on the district jail grounds in Kristianstad on 7 August 1890, by executioner Albert Gustaf …"
+    },
+    {
+      "title": "Capital punishment in Sweden - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Capital_punishment_in_Sweden",
+      "snippet": "The last woman sentenced to death – also the last death sentence not to be reprieved – was the \"angelmaker\" Hilda Nilsson, who …"
+    },
+    {
+      "title": "Anna Månsdotter: The Last Woman Executed in Sweden",
+      "url": "https://www.utterlyinteresting.com/post/anna-m%C3%A5nsdotter-the-last-woman-executed-in-sweden",
+      "snippet": "On the morning of August 7, 1890, a 48 year old woman named Anna Månsdotter was led into the courtyard of Kristianstad district …"
+    },
+    {
+      "title": "Anna Månsdotter (1841–1890): 1 Victim, Executed 1890",
+      "url": "https://theywillkillyou.com/profile/anna-mansdotter",
+      "snippet": "Anna was held at Kristianstad Prison. On August 7, 1890, she was beheaded in the prison yard. This made her the first woman to be …"
+    },
+    {
+      "title": "Last Swedish Execution of a Woman - Event Date: August 7th, 1890",
+      "url": "https://isitaholidaytoday.com/events/anna-mnsdotter-found-guilty-1889",
+      "snippet": "Anna Mnsdotter's name etched in the annals of Swedish history, forever remembered as the last woman to face the executioner's …"
+    }
+  ]
+}

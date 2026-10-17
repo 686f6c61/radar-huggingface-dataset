@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "akashvenkateshwaran/txt2motion",
+  "slug": "akashvenkateshwaran-txt2motion",
+  "author": "akashvenkateshwaran",
+  "url": "https://huggingface.co/akashvenkateshwaran/txt2motion",
+  "created_at": "2026-10-17T01:25:28.000Z",
+  "updated_at": "2026-10-17T01:33:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "motion-generation",
+    "text-to-motion",
+    "diffusion",
+    "kit-ml",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 45594961,
+  "storage_human": "46 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aime Name Meaning: Guide To Origin, Popularity & Variations",
+      "url": "https://www.momjunction.com/baby-names/aime/",
+      "snippet": "Jul 9, 2025 · Explore the historical and cultural journey of the name Aime Name Meaning: Guide To Origin, Popularity & Variations. …"
+    },
+    {
+      "title": "Aimé - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Aim%C3%A9",
+      "snippet": "Aimé ... Aimé (French: [ɛ.me] ⓘ) is a French masculine given name and a surname. The feminine form is Aimée, translated as …"
+    },
+    {
+      "title": "Aime - Name Meaning and Origin",
+      "url": "https://namediscoveries.com/names/aime",
+      "snippet": "The name \"Aime\" is of French origin and is derived from the Latin word \"amatus,\" meaning \"loved\" or \"beloved.\" It is a unisex name …"
+    },
+    {
+      "title": "Meaning of the name Aime - Wisdom Library",
+      "url": "https://www.wisdomlib.org/names/aime",
+      "snippet": "Jul 8, 2026 · The name Aimé is of French origin, functioning as the masculine form of the name Aimée, both of which derive from the …"
+    },
+    {
+      "title": "Aime: Name Meaning, History, and Popularity",
+      "url": "https://namecensus.com/first-names/aime-meaning-and-history/",
+      "snippet": "Aime: A French feminine name derived from the Latin \"amare\" meaning \"beloved\" or \"loved\"."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "sankalps/autotrain-sgpt-125m-niact-2",
+  "slug": "sankalps-autotrain-sgpt-125m-niact-2",
+  "author": "sankalps",
+  "url": "https://huggingface.co/sankalps/autotrain-sgpt-125m-niact-2",
+  "created_at": "2026-10-16T21:37:50.000Z",
+  "updated_at": "2026-10-16T21:42:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "gpt_neo",
+    "sentence-similarity",
+    "feature-extraction",
+    "autotrain",
+    "base_model:Muennighoff/SGPT-125M-weightedmean-msmarco-specb-bitfit",
+    "base_model:finetune:Muennighoff/SGPT-125M-weightedmean-msmarco-specb-bitfit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 125200128,
+  "parameters_human": "125.2M",
+  "storage_bytes": 1502573330,
+  "storage_human": "1.5 GB",
+  "base_model": "Muennighoff/SGPT-125M-weightedmean-msmarco-specb-bitfit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Muennighoff/SGPT-125M-mean-nli-bitfit · Hugging Face",
+      "url": "https://huggingface.co/Muennighoff/SGPT-125M-mean-nli-bitfit",
+      "snippet": "2 Train Deploy Use this model SGPT-125M-mean-nli-bitfit Usage Evaluation Results Training Full Model Architecture Citing & Authors"
+    },
+    {
+      "title": "SGPT-125M Open-Source Sentence Transformer Model - Free Implementation ...",
+      "url": "https://model.aibase.com/models/details/1915693187672465410",
+      "snippet": "SGPT-125M is a sentence transformer model based on weighted mean and fine-tuned with Natural Language Inference (NLI), designed for sentence similarity calculation and feature extraction."
+    },
+    {
+      "title": "Muennighoff/SGPT-125M-mean-nli · Hugging Face",
+      "url": "https://huggingface.co/Muennighoff/SGPT-125M-mean-nli",
+      "snippet": "Muennighoff / SGPT-125M-mean-nli like 0 Sentence SimilaritySentence TransformersPyTorchTransformersgpt_neofeature-extractionInference Endpoints arxiv:2202.08904 Model card FilesFiles and versions Community Deploy Use in sentence-transformers Edit model card SGPT-125M-mean-nli Usage Evaluation Results Training Full Model Architecture Citing ..."
+    },
+    {
+      "title": "Training a 125M-parameter Model to Autocomplete Piano",
+      "url": "https://simedw.com/2026/08/20/midi-autocomplete/",
+      "snippet": "TL;DR: I trained a 125M-parameter transformer to autocomplete piano performances in real time (~108 notes/sec on an iPhone 15). The biggest improvements came from finding the right MIDI representation, cleaning the training data aggressively, and adding DPO post-training. Almost a year ago, I started tinkering with an idea: connect my MIDI piano to my phone, play something, and have AI ..."
+    },
+    {
+      "title": "Chapter 30: Fine-tune GPT-2, 125M model for text classification ...",
+      "url": "https://playbooklibrary.vercel.app/books/ai-engineering-primer-from-basics-to-advanced-2026/fine-tune-gpt-2-125m-model-for-text-classification-pytorch-python",
+      "snippet": "Read Chapter 30: Fine-tune GPT-2, 125M model for text classification | Pytorch | Python from AI Engineering Primer | From Basics to Advanced | 2026 on PlayBook Library. Interactive technical playbook with indexed code blocks and video timestamps."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "local-vision-models/2xliveactionv1-span-coreml",
+  "slug": "local-vision-models-2xliveactionv1-span-coreml",
+  "author": "local-vision-models",
+  "url": "https://huggingface.co/local-vision-models/2xliveactionv1-span-coreml",
+  "created_at": "2026-10-16T20:53:03.000Z",
+  "updated_at": "2026-10-16T20:55:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "coreml",
+    "core-ml",
+    "super-resolution",
+    "video",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 864401,
+  "storage_human": "864401 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Install Local - Local",
+      "url": "https://localwp.com/help-docs/getting-started/installing-local/",
+      "snippet": "Installing Local should be easy, but if you’re having trouble, this is guide should help! You can get the latest version of Local by …Read more"
+    },
+    {
+      "title": "19 annonces Locaux commerciaux à louer Muret 31600 , Seloger.com",
+      "url": "https://www.seloger.com/recherche/location/fonds-de-commerce/local-commercial/occitanie/muret-31600/ad08fr12375?msockid=0e5c264392f26ac61dfc31b793d16bac",
+      "snippet": "Nous vous proposons à la location un local commercial de 250 m² environ dans la zone commerciale de Muret (31)."
+    },
+    {
+      "title": "Local commercial, bureaux, boulangerie, restaurant Muret (31600 ...",
+      "url": "https://www.leboncoin.fr/cl/bureaux_commerces/cp_muret_31600",
+      "snippet": "Toutes nos annonces gratuites Local commercial, bureaux, boulangerie, restaurant Muret (31600). Consultez nos annonces de …"
+    },
+    {
+      "title": "Agence de communication digitale pour entreprises locales | local.fr",
+      "url": "https://www.local.fr/",
+      "snippet": "local.fr est une agence de communication digitale, spécialisée dans la création de sites internet. Nous aidons votre entreprise à …"
+    },
+    {
+      "title": "Location local commercial Muret (31) - Bien’ici",
+      "url": "https://www.bienici.com/recherche/location/muret-31600/local?msockid=0e5c264392f26ac61dfc31b793d16bac",
+      "snippet": "15 oct. 2026 - Location d’un local commercial à Muret : 21 locaux commerciaux à louer à Muret. Carte 3D, annonces géolocalisées, …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "cellmap",
   "url": "https://huggingface.co/cellmap/mito-aff-unetiso-setup-53",
   "created_at": "2026-10-15T18:49:09.000Z",
-  "updated_at": "2026-10-15T18:49:11.000Z",
+  "updated_at": "2026-10-16T17:44:25.000Z",
   "license": "bsd-3-clause",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -31,8 +31,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 87919762,
-  "storage_human": "88 MB",
+  "storage_bytes": 110374189,
+  "storage_human": "110 MB",
   "base_model": null,
   "formats": [
     "onnx"

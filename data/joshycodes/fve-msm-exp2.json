@@ -4,8 +4,8 @@
   "slug": "joshycodes-fve-msm-exp2",
   "author": "joshycodes",
   "url": "https://huggingface.co/joshycodes/fve-msm-exp2",
-  "created_at": "2026-10-15T22:53:56.000Z",
-  "updated_at": "2026-10-16T03:26:53.000Z",
+  "created_at": "2026-10-16T06:57:22.000Z",
+  "updated_at": "2026-10-16T22:38:28.000Z",
   "license": "mixed",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -33,8 +33,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 960913867729,
-  "storage_human": "960.9 GB",
+  "storage_bytes": 581738354,
+  "storage_human": "582 MB",
   "base_model": "google/gemma-4-31B, Qwen/Qwen3-14B-Base",
   "formats": [
     "safetensors"

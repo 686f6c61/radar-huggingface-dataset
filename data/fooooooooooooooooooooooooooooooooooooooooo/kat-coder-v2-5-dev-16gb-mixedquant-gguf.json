@@ -5,7 +5,7 @@
   "author": "fooooooooooooooooooooooooooooooooooooooooo",
   "url": "https://huggingface.co/fooooooooooooooooooooooooooooooooooooooooo/KAT-Coder-V2.5-Dev-16GB-MixedQuant-GGUF",
   "created_at": "2026-10-09T06:52:08.000Z",
-  "updated_at": "2026-10-12T08:15:24.000Z",
+  "updated_at": "2026-10-16T20:21:30.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,7 +32,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 1795,
+  "downloads_30d": 1806,
   "trending_score": 0,
   "parameters": 34660610688,
   "parameters_human": "34.66B",

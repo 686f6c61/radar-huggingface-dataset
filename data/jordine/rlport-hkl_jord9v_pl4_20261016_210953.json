@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Jordine/rlport-hkl_jord9v_pl4_20261016_210953",
+  "slug": "jordine-rlport-hkl_jord9v_pl4_20261016_210953",
+  "author": "Jordine",
+  "url": "https://huggingface.co/Jordine/rlport-hkl_jord9v_pl4_20261016_210953",
+  "created_at": "2026-10-16T21:10:51.000Z",
+  "updated_at": "2026-10-16T22:32:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "research",
+    "checkpoint-backup",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15910988248,
+  "storage_human": "15.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jordine | Travel & Lifestyle (@jordine) • Instagram photos and videos",
+      "url": "https://www.instagram.com/jordine/",
+      "snippet": "8,153 Followers, 1,937 Following, 1,002 Posts - Jordine | Travel & Lifestyle (@jordine) on Instagram: \" ️\""
+    },
+    {
+      "title": "𝒥𝑜𝓇𝒹𝒾𝓃𝑒 ♡ (@jordine_x) • Instagram photos and videos",
+      "url": "https://www.instagram.com/jordine_x/",
+      "snippet": "2,160 Followers, 1,651 Following, 77 Posts - 𝒥𝑜𝓇𝒹𝒾𝓃𝑒 ♡ (@jordine_x) on Instagram: \"•Ryan 14/02/19 🫶🏼🩷 •Chronic pain 💊\""
+    },
+    {
+      "title": "Jordine (Jord Nguyen) - Hugging Face",
+      "url": "https://huggingface.co/Jordine/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 month ago ... published a model about 1 month ago"
+    },
+    {
+      "title": "HAL JORDAN GREEN LANTERN RING by Rockalizer | Download free STL model ...",
+      "url": "https://www.printables.com/model/1872184-hal-jordan-green-lantern-ring",
+      "snippet": "HAL JORDAN GREEN LANTERN RING | Download free 3D printable STL models"
+    },
+    {
+      "title": "Jordine (Jord Nguyen) - Hugging Face",
+      "url": "https://huggingface.co/Jordine",
+      "snippet": "54 Qwen2.5-32B models: 3 conditions x 6 token variants x 3 seeds."
+    }
+  ]
+}

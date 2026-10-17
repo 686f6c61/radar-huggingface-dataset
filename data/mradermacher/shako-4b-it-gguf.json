@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Shako-4B-it-GGUF",
+  "slug": "mradermacher-shako-4b-it-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Shako-4B-it-GGUF",
+  "created_at": "2025-10-28T07:53:47.000Z",
+  "updated_at": "2026-10-16T23:55:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "gemma3n",
+    "iraqi-dialect",
+    "arabic",
+    "en",
+    "ar",
+    "dataset:anaspro/iraqi_dataset_100k",
+    "base_model:anaspro/Shako-iraqi-4B-it",
+    "base_model:quantized:anaspro/Shako-iraqi-4B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 95,
+  "trending_score": 0,
+  "parameters": 6866172400,
+  "parameters_human": "6.87B",
+  "storage_bytes": 61922534144,
+  "storage_human": "61.9 GB",
+  "base_model": "anaspro/Shako-iraqi-4B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

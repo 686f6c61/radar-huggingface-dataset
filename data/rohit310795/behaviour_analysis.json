@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Rohit310795/Behaviour_analysis",
+  "slug": "rohit310795-behaviour_analysis",
+  "author": "Rohit310795",
+  "url": "https://huggingface.co/Rohit310795/Behaviour_analysis",
+  "created_at": "2026-10-16T21:41:23.000Z",
+  "updated_at": "2026-10-16T21:41:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Here&#x27;s all the times AI has gone rogue and hacked other companies",
+      "url": "https://techcrunch.com/2026/08/27/heres-all-the-times-ai-has-gone-rogue-and-hacked-other-companies/",
+      "snippet": "A recap of all the incidents involving LLMs made by Anthropic, Meta, and OpenAI, which went rogue and attacked real companies and individuals on the internet."
+    },
+    {
+      "title": "OpenAI, independent firms publish reports on rogue AI agent ... - Fortune",
+      "url": "https://fortune.com/2026/08/26/openai-publishes-technical-report-on-how-its-agents-hacked-hugging-face-here-are-the-main-takeaways-and-what-openai-left-out/",
+      "snippet": "OpenAI, independent firms publish reports on rogue AI attack on Hugging Face. Here are the main takeaways—and what OpenAI still hasn&#x27;t disclosed."
+    },
+    {
+      "title": "World&#x27;s Largest AI Model Repository Hugging Face Breached by Autonomous ...",
+      "url": "https://thehackernews.com/2026/07/worlds-largest-ai-model-repository.html",
+      "snippet": "Hugging Face says an autonomous AI agent breached production through a malicious dataset, accessing internal data and service credentials."
+    },
+    {
+      "title": "AI Model & API Providers Analysis | Artificial Analysis",
+      "url": "https://artificialanalysis.ai/",
+      "snippet": "Comparison and analysis of AI models and API hosting providers. Independent benchmarks across key performance metrics including quality, price, output speed & latency."
+    },
+    {
+      "title": "OpenAI, independent firms publish reports on rogue AI attack on Hugging ...",
+      "url": "https://tech.yahoo.com/ai/articles/openai-independent-firms-publish-reports-190000334.html",
+      "snippet": "OpenAI said that the difficulty of some of the tasks its AI models were attempting to solve may have produced the &#x27;rogue&#x27; behavior that led to the attack on Hugging Face."
+    }
+  ]
+}

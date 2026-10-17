@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "zils-ai/d3-mini-4.5b-v1",
+  "slug": "zils-ai-d3-mini-4-5b-v1",
+  "author": "zils-ai",
+  "url": "https://huggingface.co/zils-ai/d3-mini-4.5b-v1",
+  "created_at": "2026-10-16T22:33:41.000Z",
+  "updated_at": "2026-10-16T22:35:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "decision-model",
+    "zils",
+    "custom_code",
+    "base_model:vllm-sr/d3-mini",
+    "base_model:finetune:vllm-sr/d3-mini",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 9094035342,
+  "storage_human": "9.1 GB",
+  "base_model": "vllm-sr/d3-mini",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zils — Your data. Your decision model.",
+      "url": "https://zils.ai/",
+      "snippet": "Small decisions. A big part of your AI bill. Model selection. Tool choice. Escalation. Zils is building a trainable decision primitive for these repeated judgments: context in, probabilities out. The goal is to replace full LLM calls where a specialized model can meet your quality bar. Potential savings depend on call volume, serving costs, and ..."
+    },
+    {
+      "title": "GitHub - ooo-hq/zils-web: Zils decision-model website, research ...",
+      "url": "https://github.com/ooo-hq/zils-web",
+      "snippet": "The Next.js website for Zils decision models, public research, the inference playground, and the experimental customer training dashboard. The intended production domain is https://zils.ai. The model and subnet implementation lives in ooo-hq/zils. The Fez chat application remains a separate project at fez.chat."
+    },
+    {
+      "title": "ArthurZ/d3-mini · Hugging Face",
+      "url": "https://huggingface.co/ArthurZ/d3-mini",
+      "snippet": "Instructions to use ArthurZ/d3-mini with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use ArthurZ/d3-mini with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline (\"zero-shot-classification\", model=\"ArthurZ/d3-mini\")"
+    },
+    {
+      "title": "GitHub - ooo-hq/zils: A small decision model improved through a ...",
+      "url": "https://github.com/ooo-hq/zils",
+      "snippet": "zils.ai/model A small decision model with a Bittensor training competition. Zils returns probabilities for yes/no decisions, choices, and scores without generating text. The current model is an experimental 0.8B candidate. This repository contains the miner, validator, benchmark, and testnet integration. Zils was previously named Fez."
+    },
+    {
+      "title": "Decision model research. - zils.ai",
+      "url": "https://zils.ai/model",
+      "snippet": "Zils&#x27;s experimental 0.8B decision model. Recorded public benchmarks, checkpoint evidence, and the current state of its training competition."
+    }
+  ]
+}

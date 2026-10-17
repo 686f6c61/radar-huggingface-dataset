@@ -5,7 +5,7 @@
   "author": "CanadaApollo6",
   "url": "https://huggingface.co/CanadaApollo6/LFM2.5-24B-A2B-M3TiS-3090",
   "created_at": "2026-10-16T19:22:33.000Z",
-  "updated_at": "2026-10-16T19:22:42.000Z",
+  "updated_at": "2026-10-16T22:18:08.000Z",
   "license": "lfm1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -39,8 +39,8 @@
   "trending_score": 0,
   "parameters": 23971585280,
   "parameters_human": "23.97B",
-  "storage_bytes": 13742756941,
-  "storage_human": "13.7 GB",
+  "storage_bytes": 13752866501,
+  "storage_human": "13.8 GB",
   "base_model": "LiquidAI/LFM2.5-24B-A2B",
   "formats": [
     "safetensors"

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Jinstudio/flux-3-action-droid",
+  "slug": "jinstudio-flux-3-action-droid",
+  "author": "Jinstudio",
+  "url": "https://huggingface.co/Jinstudio/flux-3-action-droid",
+  "created_at": "2026-10-16T20:41:01.000Z",
+  "updated_at": "2026-10-16T20:41:01.000Z",
+  "license": "flux-kommunity-license",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "droid",
+    "franka",
+    "flux",
+    "world-action-model",
+    "world-model",
+    "robot-learning",
+    "black-forest-labs",
+    "flux-3",
+    "base_model:black-forest-labs/flux-3-action-base",
+    "base_model:finetune:black-forest-labs/flux-3-action-base",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6947058944,
+  "parameters_human": "6.95B",
+  "storage_bytes": 63002927634,
+  "storage_human": "63.0 GB",
+  "base_model": "black-forest-labs/flux-3-action-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vinted | Toute la seconde main dans une seule application",
+      "url": "https://www.vinted.fr/?msockid=3b3cd851919d68bd189bcfa5900069da",
+      "snippet": "Une communauté, des milliers de marques et de styles de seconde main. Prêt à te lancer ? Découvre comment ça marche !"
+    },
+    {
+      "title": "S'inscrire et se connecter | Vinted",
+      "url": "https://www.vinted.fr/help/103-se-connecter?msockid=3b3cd851919d68bd189bcfa5900069da",
+      "snippet": "Une communauté, des milliers de marques et de styles de seconde main. Prêt à te lancer ? Découvre comment ça marche !"
+    },
+    {
+      "title": "Casquettes | Explore les accessoires de seconde main | Vinted",
+      "url": "https://www.vinted.fr/catalog/287-caps?msockid=3b3cd851919d68bd189bcfa5900069da",
+      "snippet": "Trouve des casquettes de seconde main sur Vinted. Explore des styles variés pour tous les goûts, achète et vends pour rafraîchir ta …"
+    },
+    {
+      "title": "Choisir la bonne taille de colis | Vinted",
+      "url": "https://www.vinted.fr/help/51-choisir-la-bonne-taille-de-colis?msockid=3b3cd851919d68bd189bcfa5900069da",
+      "snippet": "Une communauté, des milliers de marques et de styles de seconde main. Prêt à te lancer ? Découvre comment ça marche !"
+    },
+    {
+      "title": "Annuler une transaction | Vinted",
+      "url": "https://www.vinted.fr/help/58-annuler-une-transaction?msockid=3b3cd851919d68bd189bcfa5900069da",
+      "snippet": "Une transaction peut être annulée (soit par l'acheteur, soit par le vendeur) uniquement si l'article n'a pas encore été expédié. Pour …"
+    }
+  ]
+}

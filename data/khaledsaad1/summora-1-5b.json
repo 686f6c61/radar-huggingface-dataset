@@ -5,7 +5,7 @@
   "author": "Khaledsaad1",
   "url": "https://huggingface.co/Khaledsaad1/Summora-1.5B",
   "created_at": "2026-10-15T22:20:52.000Z",
-  "updated_at": "2026-10-15T22:22:14.000Z",
+  "updated_at": "2026-10-16T12:15:32.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -26,12 +26,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 13,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 123330502,
-  "storage_human": "123 MB",
+  "storage_bytes": 197241614,
+  "storage_human": "197 MB",
   "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
   "formats": [
     "safetensors"

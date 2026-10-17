@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "RoxyP2026/registrominimarket",
+  "slug": "roxyp2026-registrominimarket",
+  "author": "RoxyP2026",
+  "url": "https://huggingface.co/RoxyP2026/registrominimarket",
+  "created_at": "2026-10-16T21:39:15.000Z",
+  "updated_at": "2026-10-16T22:10:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Releases Timeline: Latest Launches, Updated Daily",
+      "url": "https://www.promptzone.com/ai-model-releases",
+      "snippet": "AI Model Releases 2026 Timeline A chronological timeline of major AI model releases across 2025 and 2026 — LLMs, reasoning models, open-weights families, and image & video generators, each with its date, why it mattered, and the official announcement."
+    },
+    {
+      "title": "AI Model Release Tracker - Latest Releases | LM Market Cap",
+      "url": "https://lmmarketcap.com/tools/model-release-tracker",
+      "snippet": "Track the latest AI model releases from OpenAI, Anthropic, Google, Meta, DeepSeek and more. New model launches, version updates, and feature additions."
+    },
+    {
+      "title": "Model Market — The marketplace for AI models & data",
+      "url": "https://www.modelmarket.shop/",
+      "snippet": "One interface for a market of models open-weights ready Ship, sell, and scale AI models on a single marketplace. Drop into a ready-made chat interface and a growing ecosystem of prebuilt tools — search, code execution, retrieval, and more. Connect models, build workflows, and ship faster without starting from scratch."
+    },
+    {
+      "title": "New AI Models 2026 - Latest Releases | LM Market Cap",
+      "url": "https://lmmarketcap.com/new-ai-models",
+      "snippet": "Discover the newest AI models released in 2026. Track the latest LLMs, coding models, and image generators as they launch with source-backed release and evidence tracking."
+    },
+    {
+      "title": "AI Model Release Tracker: Every Confirmed 2026 Date",
+      "url": "https://aitoolsrecap.com/Blog/upcoming-ai-models-2026-release-tracker",
+      "snippet": "Confirmed release dates for every major AI model in 2026 - Gemini 4 Argon, GPT-6.1 Sol, Sonnet 5.5, Grok 4.7 - with what is still rumoured."
+    }
+  ]
+}

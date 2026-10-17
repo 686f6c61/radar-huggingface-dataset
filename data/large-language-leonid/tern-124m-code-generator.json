@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "large-language-leonid/tern-124M-code-generator",
+  "slug": "large-language-leonid-tern-124m-code-generator",
+  "author": "large-language-leonid",
+  "url": "https://huggingface.co/large-language-leonid/tern-124M-code-generator",
+  "created_at": "2026-10-16T20:19:19.000Z",
+  "updated_at": "2026-10-16T20:26:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "tinycode",
+    "python",
+    "reasoning",
+    "text-generation",
+    "en",
+    "base_model:mikahniehaus/Tern",
+    "base_model:quantized:mikahniehaus/Tern",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1149693370,
+  "storage_human": "1.1 GB",
+  "base_model": "mikahniehaus/Tern",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Large - Emerige",
+      "url": "https://www.large-emerige.fr/fr",
+      "snippet": "Le Large est un nouveau lieu dédié à la création contemporaine porté par le Groupe Emerige. Un espace vivant où les artistes, les …Read more"
+    },
+    {
+      "title": "LARGE - Ligue d’Athlétisme Région Grand-Est",
+      "url": "https://large.athle.fr/",
+      "snippet": "Lundi au vendredi 9h00 – 12h30 / 13h30 – 17h00 contact@athlelarge.fr Documents utiles © Tous droits réservés - LARGE Mentions …"
+    },
+    {
+      "title": "EMP • Merchandising Musique, Films & TV | Modes alternatives",
+      "url": "https://www.large.be/fr/",
+      "snippet": "Nous offrons une large sélection de vêtements branchés, originaux et alternatifs pour homme et femme. Choisissez votre tenue …"
+    },
+    {
+      "title": "Définitions : large - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/large/46281",
+      "snippet": "Au large !, commandement pour faire écarter une embarcation qui veut accoster ou pour chasser un bateau du port ; …"
+    },
+    {
+      "title": "Large, un nouveau modèle hybride de centre d’art contemporain",
+      "url": "https://www.groupe-emerige.com/actualites/large-un-nouveau-modele-hybride-de-centre-dart-contemporain-pour-le-grand-paris/",
+      "snippet": "Large est une invitation à déplacer les regards et à ouvrir les horizons. Sa raison d’être première réside dans la diffusion et le soutien …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "Gkea",
   "url": "https://huggingface.co/Gkea/kinyarwanda-sentiment-afroxlmr-large",
   "created_at": "2026-10-13T20:21:56.000Z",
-  "updated_at": "2026-10-13T20:23:29.000Z",
+  "updated_at": "2026-10-16T21:01:29.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 11,
+  "downloads_30d": 12,
   "trending_score": 0,
   "parameters": 559893507,
   "parameters_human": "559.9M",

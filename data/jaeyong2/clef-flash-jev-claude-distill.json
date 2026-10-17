@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "jaeyong2/clef-flash-jev-claude-distill",
+  "slug": "jaeyong2-clef-flash-jev-claude-distill",
+  "author": "jaeyong2",
+  "url": "https://huggingface.co/jaeyong2/clef-flash-jev-claude-distill",
+  "created_at": "2026-10-12T01:32:01.000Z",
+  "updated_at": "2026-10-17T01:25:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "ko",
+    "ja",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "decision-model",
+    "jev",
+    "clef",
+    "calibration",
+    "distillation",
+    "multilingual",
+    "en",
+    "ko",
+    "ja",
+    "zh",
+    "dataset:jaeyong2/jev-decision-claude-distill",
+    "base_model:Cloudflare/clef-flash",
+    "base_model:finetune:Cloudflare/clef-flash",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 26,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 40301251469,
+  "storage_human": "40.3 GB",
+  "base_model": "Cloudflare/clef-flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Horny Adult Videos - Relentless Fucking Urges",
+      "url": "https://www.fuckedtube.xxx/categories/186/horny",
+      "snippet": "These vids capture folks who can’t hold back, banging hard wherever they are. Think spontaneous screwing in random spots like …Read more"
+    },
+    {
+      "title": "Most Viewed Videos by Tag: horny - SexVid.xxx",
+      "url": "https://www.sexvid.xxx/t/horny/",
+      "snippet": "Explore our selection of horny videos featuring the hottest sex action online. Only the best porn videos with horny, ready for you to …"
+    },
+    {
+      "title": "Horny Videos - Lustful Babes Craving Hard Fucking - Nu-Bay.com",
+      "url": "https://www.nu-bay.com/categories/456/horny",
+      "snippet": "Horny babes are ready to fuck hard and suck eagerly. Dive into Nu-Bay for the hottest clips!"
+    },
+    {
+      "title": "HornyLeak - Free HD Amateur Porn And Sex Videos",
+      "url": "https://www.hornyleak.tv/welcome/",
+      "snippet": "HornyLeak (hornyleak.tv) is a free adult tube site streaming thousands of high-definition videos across every category — from …"
+    },
+    {
+      "title": "horny videos - XVIDEOS.COM",
+      "url": "https://mobile-xvideos.com/tags/horny",
+      "snippet": "She Got Horny and Masturbate with Step Brother to Orgasm! Cum. Girlfriend Masturbates in Front of Me While I Fuck Her Little step …"
+    }
+  ]
+}

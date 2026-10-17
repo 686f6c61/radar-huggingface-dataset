@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "choyahoo/connectailab-rl-hy-v1",
+  "slug": "choyahoo-connectailab-rl-hy-v1",
+  "author": "choyahoo",
+  "url": "https://huggingface.co/choyahoo/connectailab-rl-hy-v1",
+  "created_at": "2026-10-16T23:13:34.000Z",
+  "updated_at": "2026-10-16T23:13:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "peft",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "reinforcement-learning",
+    "deep-reinforcement-learning",
+    "grpo",
+    "decision-making",
+    "gymnasium",
+    "connect-tycoon",
+    "connect-ai-lab",
+    "connectailab",
+    "lora",
+    "qwen3.5",
+    "ko",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 41684315,
+  "storage_human": "42 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Rise by Ian Rankin | Goodreads",
+      "url": "https://www.goodreads.com/book/show/189900510-the-rise",
+      "snippet": "Nov 1, 2023 · “The Rise” is a short story by author Ian Rankin and focus’s on the luxurious and secretive world of London’s most …"
+    },
+    {
+      "title": "The Rise: A Short Story eBook : Rankin, Ian: Amazon.co.uk: Kindle …",
+      "url": "https://www.amazon.co.uk/Rise-Short-Story-Ian-Rankin-ebook/dp/B0CBW58P3J",
+      "snippet": "In this short thriller from bestselling author Ian Rankin, murder comes to London’s most exclusive high-rise—and every resident is a …"
+    },
+    {
+      "title": "Amazon.com: The Rise: A Short Story eBook : Rankin, Ian: Kindle Store",
+      "url": "https://www.amazon.com/Rise-Short-Story-Ian-Rankin-ebook/dp/B0CBW58P3J",
+      "snippet": "Nov 1, 2023 · In this short thriller from bestselling author Ian Rankin, murder comes to London’s most exclusive high-rise—and every …"
+    },
+    {
+      "title": "Ian Rankin - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ian_Rankin",
+      "snippet": "Sir Ian James Rankin OBE DL FRSE FRSL FRIAS [2] (born 28 April 1960) is a Scottish crime writer and philanthropist, best known …"
+    },
+    {
+      "title": "The Rise by Ian Rankin Summary, Characters and Themes",
+      "url": "https://booksthatslay.com/the-rise-by-ian-rankin-summary-characters-and-themes/",
+      "snippet": "Jun 11, 2025 · The Rise by Ian Rankin is a taut, noir-inspired short story by acclaimed crime writer Ian Rankin. It is set entirely within …"
+    }
+  ]
+}

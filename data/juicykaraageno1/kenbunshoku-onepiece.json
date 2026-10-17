@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "JuicyKaraageNo1/kenbunshoku-onepiece",
+  "slug": "juicykaraageno1-kenbunshoku-onepiece",
+  "author": "JuicyKaraageNo1",
+  "url": "https://huggingface.co/JuicyKaraageNo1/kenbunshoku-onepiece",
+  "created_at": "2026-10-17T00:47:46.000Z",
+  "updated_at": "2026-10-17T00:48:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "trading-card-game",
+    "card-recognition",
+    "one-piece-card-game",
+    "yolox",
+    "image-retrieval",
+    "gameplay-video",
+    "object-detection",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7716489,
+  "storage_human": "8 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

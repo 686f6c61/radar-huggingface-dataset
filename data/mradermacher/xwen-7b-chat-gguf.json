@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Xwen-7B-Chat-GGUF",
+  "slug": "mradermacher-xwen-7b-chat-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Xwen-7B-Chat-GGUF",
+  "created_at": "2025-02-02T00:19:21.000Z",
+  "updated_at": "2026-10-16T23:56:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "zh",
+    "base_model:xwen-team/Xwen-7B-Chat",
+    "base_model:quantized:xwen-team/Xwen-7B-Chat",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 337,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 68146893440,
+  "storage_human": "68.1 GB",
+  "base_model": "xwen-team/Xwen-7B-Chat",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LauncherLeaks #1 RP Server Leaks and Downloads",
+      "url": "https://launcherleaks.net/?_fromLogin=1",
+      "snippet": "LSPD EUP Mega Pack V2 | BCSO EUP Mega Pack V2 | SAHP EUP Mega Pack v2 By LauncherLeaks 76889 41 Free"
+    },
+    {
+      "title": "Downloads - LauncherLeaks",
+      "url": "https://launcherleaks.net/index.php",
+      "snippet": "FiveSecured Stop shipping plaintext. FiveSecured encrypts, obfuscates, and licenses your Lua resources so customers run your …"
+    },
+    {
+      "title": "Launcher Leaks - YouTube",
+      "url": "https://www.youtube.com/@launcherleaks/videos",
+      "snippet": "LauncherLeaks.net Products and News. ...more LauncherLeaks.net Products and News. ...more ...more Videos Latest Popular"
+    },
+    {
+      "title": "Launcher Leaks status",
+      "url": "https://status.launcherleaks.net/",
+      "snippet": "Welcome to Launcher Leaks status page for real-time and historical data on system performance."
+    },
+    {
+      "title": "About Us - LauncherLeaks",
+      "url": "https://launcherleaks.net/about-us/",
+      "snippet": "Our Process Integrity and security are backbone to our success. Each file that is submitted to our database is downloaded, scanned, …"
+    }
+  ]
+}

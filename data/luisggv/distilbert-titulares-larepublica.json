@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "LuisGGV/distilbert-titulares-larepublica",
+  "slug": "luisggv-distilbert-titulares-larepublica",
+  "author": "LuisGGV",
+  "url": "https://huggingface.co/LuisGGV/distilbert-titulares-larepublica",
+  "created_at": "2026-10-16T20:46:50.000Z",
+  "updated_at": "2026-10-16T21:10:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "news",
+    "peru",
+    "spanish",
+    "weak-supervision",
+    "text-classification",
+    "es",
+    "base_model:distilbert/distilbert-base-multilingual-cased",
+    "base_model:finetune:distilbert/distilbert-base-multilingual-cased",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 135327748,
+  "parameters_human": "135.3M",
+  "storage_bytes": 541323528,
+  "storage_human": "541 MB",
+  "base_model": "distilbert-base-multilingual-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook - Connexion ou inscription",
+      "url": "https://fr-fr.facebook.com/",
+      "snippet": "Créez un compte ou connectez-vous à Facebook. Connectez-vous avec vos amis, la famille et d’autres connaissances. Partagez …"
+    },
+    {
+      "title": "Women's Sherpa Jackets en vente à Saint-Jacques-d'Ambur - Facebook",
+      "url": "https://fr-fr.facebook.com/marketplace/108399682515303/womens-sherpa-jackets/",
+      "snippet": "Articles neufs et d’occasion dans la catégorie Women's Sherpa Jackets en vente à Saint-Jacques-d'Ambur sur Facebook …"
+    },
+    {
+      "title": "Machines à écrire en vente à Miami | Facebook Marketplace",
+      "url": "https://fr-fr.facebook.com/marketplace/miami/typewriters/",
+      "snippet": "Articles neufs et d’occasion dans la catégorie Machines à écrire en vente à Miami sur Facebook Marketplace. Trouvez des bons …"
+    },
+    {
+      "title": "Copropriétés de 3 chambres à louer à Taissy, Champagne ... - Facebook",
+      "url": "https://fr-fr.facebook.com/marketplace/117347371609368/3-bedroom-condos/",
+      "snippet": "Trouvez des copropriétés de 3 chambres à louer à Taissy, Champagne-Ardenne, France sur Facebook Marketplace. Locations …"
+    },
+    {
+      "title": "Toyota C-Hr en vente à Aix, Champagne-Ardenne, France - Facebook",
+      "url": "https://fr-fr.facebook.com/marketplace/104982092871853/toyota-c-hr/",
+      "snippet": "Articles neufs et d’occasion dans la catégorie Toyota C-Hr en vente à Aix, Champagne-Ardenne, France sur Facebook Marketplace. …"
+    }
+  ]
+}

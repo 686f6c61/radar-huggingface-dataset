@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "darask0/rapid-moss",
+  "slug": "darask0-rapid-moss",
+  "author": "darask0",
+  "url": "https://huggingface.co/darask0/rapid-moss",
+  "created_at": "2026-10-17T00:26:49.000Z",
+  "updated_at": "2026-10-17T01:16:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "moss-image",
+    "lora",
+    "distillation",
+    "few-step",
+    "dmad",
+    "dmd",
+    "text-to-image",
+    "ja",
+    "en",
+    "base_model:OpenMOSS-Team/MOSS-Image-SFT",
+    "base_model:adapter:OpenMOSS-Team/MOSS-Image-SFT",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1235847344,
+  "storage_human": "1.2 GB",
+  "base_model": "OpenMOSS-Team/MOSS-Image-SFT, lodestones/MOSS-Image-SFT-8-steps-dmd",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Darling in the FranXX (TV 2018) - MyAnimeList.net",
+      "url": "https://myanimelist.net/anime/35849/Darling_in_the_FranXX",
+      "snippet": "In the distant future, humanity has been driven to near-extinction by giant beasts known as Klaxosaurs, forcing the surviving humans …"
+    },
+    {
+      "title": "#DARLINGintheFRANXX Drawings, Best Fan Art on pixiv, Japan",
+      "url": "https://www.pixiv.net/en/tags/DARLINGintheFRANXX",
+      "snippet": "#pixiv #Japan #DARLINGintheFRANXX - 4708 drawings found. See more fan art related to #Darling in the Franxx , #Zero Two …"
+    },
+    {
+      "title": "Most Loved Darling In The FranXX Hentai Comics HD Porn Comics",
+      "url": "https://myhentaicomics.com/gallery/category/3144?sorting=favorite",
+      "snippet": "Sort By: Date Views Favorites Comments Category: Darling In The FranXX 13 pages"
+    },
+    {
+      "title": "Darling In The FranXX Wallpapers - Alpha Coders",
+      "url": "https://alphacoders.com/darling-in-the-franxx-wallpapers",
+      "snippet": "Explore 798 Darling In The FranXX desktop wallpapers and backgrounds. Download for free in HD and custom resolutions."
+    },
+    {
+      "title": "DARLING in the FRANXX! | Wiki Darling in the FranXX | Fandom",
+      "url": "https://darling-in-the-franxx.fandom.com/fr/wiki/DARLING_in_the_FRANXX!",
+      "snippet": "DARLING in the FRANXX! (だーりん・いん・ざ・ふらんきす！, Dārin In Za Furankisu!) Est une adaptation de manga yonkoma …"
+    }
+  ]
+}

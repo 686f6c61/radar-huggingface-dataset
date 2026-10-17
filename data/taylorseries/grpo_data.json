@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "taylorseries/grpo_data",
+  "slug": "taylorseries-grpo_data",
+  "author": "taylorseries",
+  "url": "https://huggingface.co/taylorseries/grpo_data",
+  "created_at": "2026-10-12T16:32:56.000Z",
+  "updated_at": "2026-10-17T03:06:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "qwen3_5_text",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 899,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 894830033420,
+  "storage_human": "894.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GRPO in Reinforcement Learning Explained - DigitalOcean",
+      "url": "https://www.digitalocean.com/community/conceptual-articles/group-relative-policy-optimization-reinforcement-learning",
+      "snippet": "DeepSeek&#x27;s remarkable reduction in training time didn&#x27;t happen by chance, but it was made possible by a reinforcement learning technique known as Group Relative Policy Optimization (GRPO), designed to make model training faster and more efficient. GRPO is a tweak to the existing traditional policy optimization method by introducing a reference policy and using a statistical distance ..."
+    },
+    {
+      "title": "Post training an LLM for reasoning with GRPO in TRL",
+      "url": "https://huggingface.co/learn/cookbook/en/fine_tuning_llm_grpo_trl",
+      "snippet": "In this notebook, we&#x27;ll guide you through the process of post-training a Large Language Model (LLM) using Group Relative Policy Optimization (GRPO), a method introduced in the DeepSeekMath paper. GRPO is particularly effective for scaling test-time compute for extended reasoning, making it an ideal approach for solving complex tasks, such as mathematical problem-solving."
+    },
+    {
+      "title": "Taylor Series in AI.. P.S. Read thru this article a bit ... - Medium",
+      "url": "https://pub.towardsai.net/taylor-series-in-ai-0739e03f5d0c",
+      "snippet": "The Taylor series helps simplify these updates, making them easier to calculate. Censius AI Observability analyzing the behavior of a production model. Source: Censius AI. 5. Understanding Model Behavior The Taylor Series can also be employed to understand and interpret the behavior of machine learning models."
+    },
+    {
+      "title": "Taylor series - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Taylor_series",
+      "snippet": "As the degree of the Taylor polynomial rises, it approaches the correct function. This image shows sin x and its Taylor approximations by polynomials of degree 1, 3, 5, 7, 9, 11, and 13 at x = 0. In mathematical analysis, the Taylor series or Taylor expansion of a function is an infinite sum of terms that are expressed in terms of the function&#x27;s derivatives at a single point. For most common ..."
+    },
+    {
+      "title": "Post-Training in 2026: GRPO, DAPO, RLVR & Beyond",
+      "url": "https://llm-stats.com/blog/research/post-training-techniques-2026",
+      "snippet": "How GRPO, DAPO, RLVR, and synthetic self-play replaced RLHF as the dominant post-training stack. A technical survey of what changed and why."
+    }
+  ]
+}

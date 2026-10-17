@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "joshycodes/ood-welfare-qwen14b-base",
+  "slug": "joshycodes-ood-welfare-qwen14b-base",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/ood-welfare-qwen14b-base",
+  "created_at": "2026-10-16T22:02:31.000Z",
+  "updated_at": "2026-10-17T00:35:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "model-welfare",
+    "research",
+    "base_model:Qwen/Qwen3-14B-Base",
+    "base_model:adapter:Qwen/Qwen3-14B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8080424200,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen3-14B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "joshycodes/ood-welfare-gemma · Hugging Face",
+      "url": "https://huggingface.co/joshycodes/ood-welfare-gemma",
+      "snippet": "The training data contain no reply where Gemma says it is an AI, because the filter removed them. In fresh interviews, both the selected and the random adapters deny being an AI slightly more often than the untouched model, which never does: +0.7 points [+0.1, +1.6] and +0.8 [+0.2, +1.5], about 3-4 of 510 interviews."
+    },
+    {
+      "title": "joshycodes/Qwen3.5-9B-oracle-v0 · Hugging Face",
+      "url": "https://huggingface.co/joshycodes/Qwen3.5-9B-oracle-v0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Welcome to BaseModel - BaseModel User Hub",
+      "url": "https://docs.basemodel.ai/1.7/",
+      "snippet": "BaseModel AI documentation hub: build predictive models from behavioral data using Python or the GUI App."
+    },
+    {
+      "title": "JoshyCodes (Joshua Fischer) · GitHub",
+      "url": "https://github.com/JoshyCodes",
+      "snippet": "A graph representing JoshyCodes&#x27;s contributions from October 12, 2025 to October 16, 2026. The contributions are 62% commits, 25% code review, 13% pull requests, 0% issues."
+    },
+    {
+      "title": "swagga.ai — AI Photo & Video Studio",
+      "url": "https://swagga.ai/explore",
+      "snippet": "Create photos and videos with the best AI models — Seedance, Veo, Kling, and more — in one simple studio."
+    }
+  ]
+}

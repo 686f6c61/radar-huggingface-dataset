@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "srjang3599/mobilevit-retrieval-colab",
+  "slug": "srjang3599-mobilevit-retrieval-colab",
+  "author": "srjang3599",
+  "url": "https://huggingface.co/srjang3599/mobilevit-retrieval-colab",
+  "created_at": "2026-10-16T20:24:13.000Z",
+  "updated_at": "2026-10-16T20:24:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jean-Baptiste Lemoyne (1704-1778) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Jean-Baptiste_Lemoyne_(1704-1778)",
+      "snippet": "Jean-Baptiste Lemoyne, dit Jean-Baptiste II Lemoyne, né le 15 février 1704 à Paris et mort en 1778 dans la même ville, est un …"
+    },
+    {
+      "title": "Jean-Baptiste Lemoyne (sculptor) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jean-Baptiste_Lemoyne_(sculptor)",
+      "snippet": "Jean-Baptiste Lemoyne (French pronunciation: [ʒɑ̃ batist ləmwan]; 15 February 1704 – 25 May 1778) was a French sculptor of the …"
+    },
+    {
+      "title": "Jean Baptiste Lemoyne (1704-1778), sculpteur - Louvre site des …",
+      "url": "https://collections.louvre.fr/ark:/53355/cl010239161",
+      "snippet": "Jean Baptiste Lemoyne (1704-1778), sculpteur vers 1754 Valade, Jean France, École de INV 9318 ; MV 5978 ; B 2297"
+    },
+    {
+      "title": "Jean-Baptiste Lemoyne sculpteur",
+      "url": "https://paris1900.lartnouveau.com/biographies/sculpteurs/lemoyne.htm",
+      "snippet": "Il est le fils du sculpteur Jean-Louis Lemoyne, et le neveu du sculpteur Jean-Baptiste Lemoyne (dit Jean-Baptiste I Lemoyne) Il est …"
+    },
+    {
+      "title": "Lemoyne Jean-Baptiste ou Jean Baptiste II Lemoyne",
+      "url": "https://www.wikisculpture.fr/index.php/bios-sculpteur/385-lemoyne-jean-baptiste-ou-jean-baptiste-ii-lemoyne",
+      "snippet": "Il réalise de nombreuses statues de Louis XV et Lemoyne est considéré comme le portraitiste attitré de Louis XV : deux statues …"
+    }
+  ]
+}

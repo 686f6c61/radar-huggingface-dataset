@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "QRRV/everything-ai-qmnist-cnn",
+  "slug": "qrrv-everything-ai-qmnist-cnn",
+  "author": "QRRV",
+  "url": "https://huggingface.co/QRRV/everything-ai-qmnist-cnn",
+  "created_at": "2026-10-16T23:51:15.000Z",
+  "updated_at": "2026-10-16T23:51:18.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "digits",
+    "qmnist",
+    "everything-ai",
+    "image-classification",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 210725,
+  "storage_human": "210725 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introduction to Convolution Neural Network - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/introduction-convolution-neural-network/",
+      "snippet": "Padding can be used to control output size and prevent loss of border information. Step By Step Implementation Here we implement a Convolutional Neural Network illustrating how each layer processes and transforms the input image. Step 1: Import Required Libraries Here we import TensorFlow for CNN operations and Matplotlib for visualization."
+    },
+    {
+      "title": "GitHub - QRRV/everything-ai",
+      "url": "https://github.com/QRRV/everything-ai",
+      "snippet": "Contribute to QRRV/everything-ai development by creating an account on GitHub."
+    },
+    {
+      "title": "Convolutional Neural Network (CNN) in Deep Learning",
+      "url": "https://www.geeksforgeeks.org/deep-learning/convolutional-neural-network-cnn-in-machine-learning/",
+      "snippet": "Convolutional Neural Networks (CNNs) are deep learning models designed to process data with a grid-like topology such as images. They are the foundation for most modern computer vision applications to detect features within visual data."
+    },
+    {
+      "title": "Convolutional neural network - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Convolutional_neural_network",
+      "snippet": "A convolutional neural network (CNN) is a type of feedforward neural network that learns features via filter (or kernel) optimization. This type of deep learning network has been applied to process and make predictions from many different types of data including text, images and audio. [1] CNNs are the de-facto standard in deep learning-based approaches to computer vision [2] and image ..."
+    },
+    {
+      "title": "Neural network (machine learning) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Neural_network_(machine_learning)",
+      "snippet": "In machine learning, a neural network (NN) or artificial neural network (ANN) is a computational model inspired by the structure and functions of biological neural networks. [1][2] A neural network consists of connected units or nodes called artificial neurons, which loosely model the neurons in the brain."
+    }
+  ]
+}

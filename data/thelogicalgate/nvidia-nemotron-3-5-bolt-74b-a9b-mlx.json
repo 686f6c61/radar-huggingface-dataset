@@ -5,7 +5,7 @@
   "author": "thelogicalgate",
   "url": "https://huggingface.co/thelogicalgate/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-MLX",
   "created_at": "2026-10-15T23:12:47.000Z",
-  "updated_at": "2026-10-16T00:05:39.000Z",
+  "updated_at": "2026-10-16T14:28:45.000Z",
   "license": "openmdw-1.1",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -41,7 +41,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 16,
   "trending_score": 0,
   "parameters": 76579579912,
   "parameters_human": "76.58B",

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "SD-Next/MOSS-Image-SFT",
+  "slug": "sd-next-moss-image-sft",
+  "author": "SD-Next",
+  "url": "https://huggingface.co/SD-Next/MOSS-Image-SFT",
+  "created_at": "2026-10-16T18:25:28.000Z",
+  "updated_at": "2026-10-16T18:25:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "moss-image",
+    "text-to-image",
+    "en",
+    "zh",
+    "base_model:OpenMOSS-Team/MOSS-Image-Base",
+    "base_model:finetune:OpenMOSS-Team/MOSS-Image-Base",
+    "license:apache-2.0",
+    "diffusers:MOSSImagePipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5082308624,
+  "parameters_human": "5.08B",
+  "storage_bytes": 27228815653,
+  "storage_human": "27.2 GB",
+  "base_model": "OpenMOSS-Team/MOSS-Image-Base",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Carte SD — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Carte_SD",
+      "snippet": "Une carte SD (« SD » étant le sigle de l'expression anglaise « Secure Digital ») est une carte mémoire de stockage de données …"
+    },
+    {
+      "title": "SD card - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/SD_card",
+      "snippet": "SD card ... The SD card is a proprietary, non-volatile, flash memory card format developed by the SD Association (SDA). They come …"
+    },
+    {
+      "title": "Carte SD - Votre Carte SD Retrait 30min* | Boulanger",
+      "url": "https://www.boulanger.com/c/carte-memoire-lecteur/_usage~carte20sd?msockid=2e055103334b6d55311246f7322b6c3f",
+      "snippet": "Choisissez votre carte SD parmi les modèles que nous avons sélectionnés auprès des meilleurs fabricants (Lexar, SanDisk, Sony, …"
+    },
+    {
+      "title": "Carte Micro SD",
+      "url": "https://www.boulanger.com/c/carte-memoire-lecteur/_usage~carte20micro20sd?msockid=2e055103334b6d55311246f7322b6c3f",
+      "snippet": "Choisissez votre carte micro SD parmi les meilleures marques du marché (Samsung, Lexar, SanDisk...) pour bénéficier d’un plus …"
+    },
+    {
+      "title": "Meilleure carte SD 2026 (12 produits comparés)",
+      "url": "https://meilleurtest.fr/comparatif-carte-sd/",
+      "snippet": "Sep 29, 2026 · La carte SD reste un support de stockage incontournable pour les appareils photo, caméras et consoles portables. …"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "AutomatosX/AXDocLayout-M-v1.1-CUDA-AXQ-NVFP4",
+  "slug": "automatosx-axdoclayout-m-v1-1-cuda-axq-nvfp4",
+  "author": "AutomatosX",
+  "url": "https://huggingface.co/AutomatosX/AXDocLayout-M-v1.1-CUDA-AXQ-NVFP4",
+  "created_at": "2026-10-17T01:11:38.000Z",
+  "updated_at": "2026-10-17T01:29:43.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "document-layout",
+    "pytorch",
+    "cuda",
+    "axq",
+    "nvfp4",
+    "quantized",
+    "experimental",
+    "object-detection",
+    "base_model:AutomatosX/AXDocLayout-M-v1.1",
+    "base_model:quantized:AutomatosX/AXDocLayout-M-v1.1",
+    "license:agpl-3.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 21231224,
+  "parameters_human": "21.2M",
+  "storage_bytes": 25373968,
+  "storage_human": "25 MB",
+  "base_model": "AutomatosX/AXDocLayout-M-v1.1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-10-17T02:52:38.554Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LBC General Chit-Chat (Part 39) - Page 2030 — Digital Spy",
+      "url": "https://forums.digitalspy.com/discussion/2423854/lbc-general-chit-chat-part-39/p2030",
+      "snippet": "Oct 21, 2025 · I enjoyed the caller last night who referred to Ben Kentish as \"a sh1t stirrer.\""
+    },
+    {
+      "title": "Love Island UK 2026: All Stars 3 - Episode 3 - 17 January - 9pm - ITV2",
+      "url": "https://forums.digitalspy.com/discussion/2489007/love-island-uk-2026-all-stars-3-episode-3-17-january-9pm-itv2",
+      "snippet": "Jan 17, 2026 · Not sure if this is a one off to cover the delayed start, guess we'll find out in due course No Unseen Bits tonight, as you …"
+    },
+    {
+      "title": "Rajar Q2 2025 - Page 3 — Digital Spy",
+      "url": "https://forums.digitalspy.com/discussion/2482485/rajar-q2-2025/p3",
+      "snippet": "Jul 31, 2025 · How the heck they didn't see potential in Mylo and Rosie and just gifted Radio 1's next Big Breakfast show - honestly …"
+    },
+    {
+      "title": "Brixton O2 - Which seats are best??? — Digital Spy",
+      "url": "https://forums.digitalspy.com/discussion/1242238/brixton-o2-which-seats-are-best",
+      "snippet": "Apr 9, 2010 · Stalls Standing or Unreserved Circle? Price isn't an issue as they both cost the same, just wondering if anyone has …"
+    },
+    {
+      "title": "Facebook no longer gives options to sort posts — Digital Spy",
+      "url": "https://forums.digitalspy.com/discussion/2492917/facebook-no-longer-gives-options-to-sort-posts",
+      "snippet": "Jun 2, 2026 · On Sunday I noticed that a Facebook group I belong to no longer gives the option to sort posts. There used to be a …"
+    }
+  ]
+}

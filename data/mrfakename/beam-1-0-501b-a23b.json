@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mrfakename/Beam-1.0-501B-A23B",
+  "slug": "mrfakename-beam-1-0-501b-a23b",
+  "author": "mrfakename",
+  "url": "https://huggingface.co/mrfakename/Beam-1.0-501B-A23B",
+  "created_at": "2026-10-16T18:31:34.000Z",
+  "updated_at": "2026-10-16T18:31:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "beam",
+    "mixture-of-experts",
+    "reasoning",
+    "code",
+    "tool-use",
+    "text-generation",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "eval-results",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 501267612352,
+  "parameters_human": "501.27B",
+  "storage_bytes": 1002668503017,
+  "storage_human": "1002.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Airplane Controls Meme - Pinterest",
+      "url": "https://www.pinterest.com/ideas/airplane-controls-meme/939433184130/",
+      "snippet": "Find and save ideas about airplane controls meme on Pinterest."
+    },
+    {
+      "title": "Airplane Cockpit Controls Meme - Instagram",
+      "url": "https://www.instagram.com/popular/airplane-cockpit-controls-meme/",
+      "snippet": "Watch short videos about airplane cockpit controls meme from people around the world."
+    },
+    {
+      "title": "Plane Controls Meme - Instagram",
+      "url": "https://www.instagram.com/popular/plane-controls-meme/",
+      "snippet": "Ever wondered why flying feels terrifying even though it’s one of the safest things humans have ever created? ️ The truth is, every …"
+    },
+    {
+      "title": "Airplane Cockpit Controls Meme - Pinterest",
+      "url": "https://www.pinterest.com/ideas/airplane-cockpit-controls-meme/903793118850/",
+      "snippet": "Discover Pinterest’s best ideas and inspiration for Airplane cockpit controls meme. Get inspired and try out new things. Last updated …"
+    },
+    {
+      "title": "Air Control GIFs - Find & Share on GIPHY",
+      "url": "https://giphy.com/explore/air-control",
+      "snippet": "Find Air Control GIFs that make your conversations more positive, more expressive, and more you."
+    }
+  ]
+}

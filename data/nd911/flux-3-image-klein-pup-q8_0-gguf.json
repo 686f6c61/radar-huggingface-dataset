@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "ND911/flux-3-image-klein-pup-Q8_0-GGUF",
+  "slug": "nd911-flux-3-image-klein-pup-q8_0-gguf",
+  "author": "ND911",
+  "url": "https://huggingface.co/ND911/flux-3-image-klein-pup-Q8_0-GGUF",
+  "created_at": "2026-10-16T22:13:02.000Z",
+  "updated_at": "2026-10-17T01:04:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "prompt-upsampling",
+    "prompt-rewriting",
+    "text-to-image",
+    "image-editing",
+    "flux",
+    "flux-3",
+    "black-forest-labs",
+    "llama-cpp",
+    "gguf-my-repo",
+    "image-text-to-text",
+    "en",
+    "base_model:black-forest-labs/flux-3-image-klein-pup",
+    "base_model:quantized:black-forest-labs/flux-3-image-klein-pup",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 19973161824,
+  "storage_human": "20.0 GB",
+  "base_model": "black-forest-labs/flux-3-image-klein-pup",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - black-forest-labs/flux-3-image-klein: FLUX 3 Image Klein ...",
+      "url": "https://github.com/black-forest-labs/flux-3-image-klein",
+      "snippet": "This repository contains the reference inference code for FLUX 3 Image Klein, the 5.6B open weights image model from Black Forest Labs: text-to-image, editing with up to 10 reference images, and layout control with bounding boxes, through one model. It ships with a prompt upsampler; do not use the model without it."
+    },
+    {
+      "title": "Run FLUX 3 Image Klein Locally on Windows 11, Mac and Kali Linux ...",
+      "url": "https://www.logeshwaran.org/2026/10/flux-3-image-klein-run-locally.html",
+      "snippet": "Run FLUX 3 Image Klein locally: int8 files for 8 GB NVIDIA cards, ComfyUI 0.41.0 on Windows 11, Mac and Kali, Diffusers, editing, boxes, the license."
+    },
+    {
+      "title": "Flux 3 Image Klein : ImageGen & Edit with 10 images (BF16/FP8/NVFP4/GGUF)",
+      "url": "https://www.stablediffusiontutorials.com/2026/10/flux3-image-klein.html",
+      "snippet": "AI image workflows often require different models for text-to-image generation, reference-based editing, and multi-image composition. Switching between models can make the workflow more complicated, especially when you need precise control over object placement, consistent subjects, or detailed edits. FLUX 3 Image Klein addresses these problems by bringing image generation and editing into one ..."
+    },
+    {
+      "title": "flux-3-image-klein-pup · Models",
+      "url": "https://www.modelscope.cn/models/black-forest-labs/flux-3-image-klein-pup",
+      "snippet": "FLUX 3 Image Klein Prompt Upsampler FLUX 3 Image Klein Prompt Upsampler is a 9B vision-language model that expands a short image request into the detailed prompt FLUX 3 Image Klein works best with."
+    },
+    {
+      "title": "flux-3-image-klein Model by Black-forest-labs | NVIDIA NIM",
+      "url": "https://build.nvidia.com/black-forest-labs/flux-3-image-klein/modelcard",
+      "snippet": "FLUX 3 Image Klein is an open-weights model family developed by Black Forest Labs for text-to-image generation and image editing. It takes a text prompt and up to 10 reference images and returns one image, supporting single-reference edits, multi-reference compositions, and prompt-based bounding-box layout control."
+    }
+  ]
+}

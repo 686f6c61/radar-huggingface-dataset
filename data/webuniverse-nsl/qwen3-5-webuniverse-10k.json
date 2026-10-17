@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "WebUniverse-NSL/Qwen3.5-WebUniverse-10K",
+  "slug": "webuniverse-nsl-qwen3-5-webuniverse-10k",
+  "author": "WebUniverse-NSL",
+  "url": "https://huggingface.co/WebUniverse-NSL/Qwen3.5-WebUniverse-10K",
+  "created_at": "2026-10-16T04:57:09.000Z",
+  "updated_at": "2026-10-16T23:34:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "code",
+    "agents",
+    "web-development",
+    "multimodal",
+    "conversational",
+    "en",
+    "dataset:webcraft-NSL/WebUniverse-Mix",
+    "base_model:Qwen/Qwen3.5-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.5-35B-A3B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234483341,
+  "storage_human": "70.2 GB",
+  "base_model": "Qwen/Qwen3.5-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

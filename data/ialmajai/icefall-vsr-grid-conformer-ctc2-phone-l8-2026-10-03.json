@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "ialmajai/icefall-vsr-grid-conformer-ctc2-phone-l8-2026-10-03",
+  "slug": "ialmajai-icefall-vsr-grid-conformer-ctc2-phone-l8-2026-10-03",
+  "author": "ialmajai",
+  "url": "https://huggingface.co/ialmajai/icefall-vsr-grid-conformer-ctc2-phone-l8-2026-10-03",
+  "created_at": "2026-10-03T14:32:51.000Z",
+  "updated_at": "2026-10-16T22:49:46.000Z",
+  "license": "research-only",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "k2",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "k2",
+    "tensorboard",
+    "visual-speech-recognition",
+    "lipreading",
+    "audio-visual",
+    "icefall",
+    "conformer",
+    "ctc",
+    "av-hubert",
+    "en",
+    "dataset:grid",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21503406,
+  "storage_human": "22 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Visual speech recognition (lipreading)",
+      "dataset": "GRID, unseen-speaker split (s1, s2, s20, s22)",
+      "metric": "WER (HLG one-best, seed 42; three-seed mean 7.15)",
+      "value": 7.14
+    },
+    {
+      "task": "Visual speech recognition (lipreading), zero-shot cross-corpus",
+      "dataset": "Lombard GRID, front view, 54 speakers, 5,142 utterances",
+      "metric": "WER (no adaptation)",
+      "value": 8.39
+    }
+  ],
+  "sources": [
+    {
+      "title": "ialmajai/icefall-vsr-grid-conformer-ctc2-phone-l8-2026-10-03 · Hugging Face",
+      "url": "https://huggingface.co/ialmajai/icefall-vsr-grid-conformer-ctc2-phone-l8-2026-10-03",
+      "snippet": "Model. icefall reworked Conformer-CTC (conformer_ctc2) with the subsampling stage removed (x1): 6 encoder layers, attention dim 128, 8 heads, feed-forward 1024, plus a 3-layer attention decoder used only as an auxiliary training loss (att_rate 0.5)."
+    },
+    {
+      "title": "icefall-vsr-grid-conformer-ctc2-bpe-58-2026-04-29 - Hugging Face",
+      "url": "https://huggingface.co/ialmajai/icefall-vsr-grid-conformer-ctc2-bpe-58-2026-04-29",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - k2-fsa/icefall",
+      "url": "https://github.com/k2-fsa/icefall",
+      "snippet": "The icefall project contains speech-related recipes for various datasets using k2-fsa and lhotse. You can use sherpa, sherpa-ncnn or sherpa-onnx for deployment with models in icefall; these frameworks also support models not included in icefall; please refer to respective documents for more details."
+    },
+    {
+      "title": "Add VSR (lip reading) recipe using GRID dataset #2081",
+      "url": "https://github.com/k2-fsa/icefall/pull/2081/commits/c5f96e7c047ce44efba795ffe51826ac00131311",
+      "snippet": "Summary: This PR adds a visual speech recognition (VSR) recipe for the GRID corpus using an unseen speaker evaluation setup. The pipeline covers data preparation, feature extraction, training, and decoding. Key Details: Dataset: GRID corpus Evaluation setup: Unseen speakers (4 speakers held out for test) Model: Conformer-CTC (conformer_ctc2) Features: AV-HuBERT features (layer 9 of base model ..."
+    },
+    {
+      "title": "k2-fsa/icefall | DeepWiki",
+      "url": "https://deepwiki.com/k2-fsa/icefall",
+      "snippet": "Icefall is a collection of speech-related recipes that implement state-of-the-art Automatic Speech Recognition (ASR) systems using k2-fsa and lhotse This repository provides the glue between flexible data manipulation (Lhotse), differentiable FST operations (k2), and deep learning architectures (PyTorch)."
+    }
+  ]
+}

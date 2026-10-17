@@ -5,7 +5,7 @@
   "author": "prabakaranchandran",
   "url": "https://huggingface.co/prabakaranchandran/baby-pooh-46m-midtrain-r2",
   "created_at": "2026-10-15T20:18:48.000Z",
-  "updated_at": "2026-10-15T20:23:07.000Z",
+  "updated_at": "2026-10-16T08:04:54.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -36,7 +36,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 214,
   "trending_score": 0,
   "parameters": 46151680,
   "parameters_human": "46.2M",

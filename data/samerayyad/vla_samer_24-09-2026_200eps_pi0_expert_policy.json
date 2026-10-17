@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "SamerAyyad/VLA_Samer_24.09.2026_200eps_Pi0_expert_policy",
+  "slug": "samerayyad-vla_samer_24-09-2026_200eps_pi0_expert_policy",
+  "author": "SamerAyyad",
+  "url": "https://huggingface.co/SamerAyyad/VLA_Samer_24.09.2026_200eps_Pi0_expert_policy",
+  "created_at": "2026-10-16T18:28:13.000Z",
+  "updated_at": "2026-10-16T18:29:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi0",
+    "dataset:SamerAyyad/VLA_Samer_24.09.2026_200eps",
+    "base_model:lerobot/pi0_base",
+    "base_model:finetune:lerobot/pi0_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4028019472,
+  "parameters_human": "4.03B",
+  "storage_bytes": 8926903654,
+  "storage_human": "8.9 GB",
+  "base_model": "lerobot/pi0_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazing \"No, stop it\" Czech Massage Reluctant Video (Does ... - Reddit",
+      "url": "https://www.reddit.com/r/talkedintoit/comments/fpu24j/amazing_no_stop_it_czech_massage_reluctant_video/",
+      "snippet": "Mar 27, 2020 · I see a bunch of reluctant collections of Czech Cameraman/Casting collections but I can't find any collections of these …"
+    },
+    {
+      "title": "czechcasting2 - Reddit",
+      "url": "https://www.reddit.com/r/czechcasting2/",
+      "snippet": "r/czechcasting2 This community doesn't have any posts yet Make one and get this feed started. Create a post"
+    },
+    {
+      "title": "Any website with captioned/subtitled porn videos? - Reddit",
+      "url": "https://www.reddit.com/r/languagelearning/comments/3p0s72/any_website_with_captionedsubtitled_porn_videos/",
+      "snippet": "Oct 16, 2015 · There are three Czech companies that subtitle their videos, they're usually the 'seduce a girl off the streets' and …"
+    },
+    {
+      "title": "Why are there so many Czech based porn movies? Are Czech",
+      "url": "https://www.reddit.com/r/czech/comments/34x7ar/why_are_there_so_many_czech_based_porn_movies_are/",
+      "snippet": "May 5, 2015 · There are numerous Czech based porn variations; czech streets, czech casting, czechav etc. Why did such a genre …"
+    },
+    {
+      "title": "CC_models - Reddit",
+      "url": "https://www.reddit.com/r/CC_models/",
+      "snippet": "Models of Czech Casting 🙌"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "tstepspam/Cydonia-24B-v4.3-heretic-v4-Q4-MLX",
+  "slug": "tstepspam-cydonia-24b-v4-3-heretic-v4-q4-mlx",
+  "author": "tstepspam",
+  "url": "https://huggingface.co/tstepspam/Cydonia-24B-v4.3-heretic-v4-Q4-MLX",
+  "created_at": "2026-10-16T21:52:06.000Z",
+  "updated_at": "2026-10-16T22:00:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "mistral",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "text-generation",
+    "conversational",
+    "base_model:coder3101/Cydonia-24B-v4.3-heretic-v4",
+    "base_model:quantized:coder3101/Cydonia-24B-v4.3-heretic-v4",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23572403200,
+  "parameters_human": "23.57B",
+  "storage_bytes": 13277256980,
+  "storage_human": "13.3 GB",
+  "base_model": "coder3101/Cydonia-24B-v4.3-heretic-v4",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How far away from the Sun does space start to be cold?",
+      "url": "https://physics.stackexchange.com/questions/228541/how-far-away-from-the-sun-does-space-start-to-be-cold",
+      "snippet": "Jan 10, 2016 · I similarly assume that if I stood about 10 feet from the sun, I would still be hot. However, if I stood in space 93 million …Read more"
+    },
+    {
+      "title": "Homotopy groups U(N) and SU(N): $\\\\pi_m(U(N))=\\\\pi_m(SU(N))$",
+      "url": "https://math.stackexchange.com/questions/2454985/homotopy-groups-un-and-sun-pi-mun-pi-msun",
+      "snippet": "Oct 3, 2017 · Am I correct that homotopy groups of U(N) U (N) $U(N)$ and SU(N) S U (N) $SU(N)$ are the same,"
+    },
+    {
+      "title": "Why do we say that the Earth moves around the Sun?",
+      "url": "https://physics.stackexchange.com/questions/10933/why-do-we-say-that-the-earth-moves-around-the-sun",
+      "snippet": "The sun, moon, earth (and so on) all move around each other. The reason we say the earth moves around the sun is because the …"
+    },
+    {
+      "title": "Equation of Earth's Orbit around Sun (ellipse)",
+      "url": "https://math.stackexchange.com/questions/512989/equation-of-earths-orbit-around-sun-ellipse",
+      "snippet": "These two distances help identify the location of the sun on the major axis of Earth's elliptical orbit. Assume that the major axis of …"
+    },
+    {
+      "title": "ゲームガイド｜Soul of the Ultimate Nation - Pmang",
+      "url": "https://service.pmang.jp/sun/game_guides/767",
+      "snippet": "Soul of the Ultimate Nationゲームガイド ステータスボーナスポイントについて レベルアップすると、ステータスボーナスポイント …"
+    }
+  ]
+}

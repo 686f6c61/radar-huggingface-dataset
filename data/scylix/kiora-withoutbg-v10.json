@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Scylix/kiora-withoutbg-v10",
+  "slug": "scylix-kiora-withoutbg-v10",
+  "author": "Scylix",
+  "url": "https://huggingface.co/Scylix/kiora-withoutbg-v10",
+  "created_at": "2026-10-16T20:43:11.000Z",
+  "updated_at": "2026-10-16T21:15:19.000Z",
+  "license": "withoutbg-open-weights-and-dinov3",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "background-removal",
+    "image-matting",
+    "onnx",
+    "base_model:withoutbg/withoutbg-openweights-onnx",
+    "base_model:finetune:withoutbg/withoutbg-openweights-onnx",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 107167967,
+  "storage_human": "107 MB",
+  "base_model": "withoutbg/withoutbg-openweights-onnx",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Maria Sten (@mariasten) • Instagram photos and videos",
+      "url": "https://www.instagram.com/mariasten/",
+      "snippet": "350K Followers, 404 Following, 203 Posts - Maria Sten (@mariasten) on Instagram: \"telling stories hugging trees chasing sunsets …"
+    },
+    {
+      "title": "Maria Sten - Photos - IMDb",
+      "url": "https://m.imdb.com/name/nm3080233/mediaindex/",
+      "snippet": "Maria Sten is an actress, writer and filmmaker from Copenhagen, Denmark. Of Danish, Swedish, Congolese ethnicity, Maria started …"
+    },
+    {
+      "title": "Maria Sten - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Maria_Sten",
+      "snippet": "Maria Sten (born 29 October 1989) is a Danish actress, writer, director and beauty pageant titleholder. She was crowned Miss …"
+    },
+    {
+      "title": "169 Maria Sten - Getty Images",
+      "url": "https://www.gettyimages.com/photos/maria-sten",
+      "snippet": "Browse 169 maria sten photos and images available, or start a new search to explore more photos and images."
+    },
+    {
+      "title": "Maria Sten | ♠️ ♠️ - Instagram",
+      "url": "https://www.instagram.com/p/C2D6gpUpkRB/",
+      "snippet": "Jan 14, 2024 · 11K likes, 275 comments - mariasten on January 13, 2024: \"♠️🖤♠️\"."
+    }
+  ]
+}

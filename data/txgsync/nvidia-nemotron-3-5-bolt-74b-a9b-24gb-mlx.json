@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "txgsync/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-MLX",
+  "slug": "txgsync-nvidia-nemotron-3-5-bolt-74b-a9b-24gb-mlx",
+  "author": "txgsync",
+  "url": "https://huggingface.co/txgsync/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-MLX",
+  "created_at": "2026-10-16T16:10:27.000Z",
+  "updated_at": "2026-10-17T01:09:10.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "ja"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "nemotron_h_nano_omni",
+    "nvidia",
+    "nemotron-3.5",
+    "nemotron_h",
+    "moe",
+    "mamba",
+    "iq2_xxs",
+    "nvfp4",
+    "vision",
+    "apple-silicon",
+    "mlx-vlm",
+    "omlx",
+    "custom_code",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "ja",
+    "arxiv:2605.07182",
+    "arxiv:2601.20088",
+    "arxiv:2502.02631",
+    "arxiv:2502.05003",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB",
+    "base_model:finetune:nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22641027080,
+  "parameters_human": "22.64B",
+  "storage_bytes": 24101664038,
+  "storage_human": "24.1 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "THE FIRST DESCENDANT",
+      "url": "https://tfd.nexon.com/en/market",
+      "snippet": "It may take some time for the latest data to be updated. The first value shown for each option in the item info is the base value, which …"
+    },
+    {
+      "title": "Transcendent Weapons TFD - AlcastHQ",
+      "url": "https://alcasthq.com/category/the-first-descendant/transcendent-weapons/",
+      "snippet": "Discover the best Transcendent Weapon Builds for The First Descendant. All Transcendent Weapon Builds Database for TFD."
+    },
+    {
+      "title": "How to Trade Transcendent Weapons in The First Descendant",
+      "url": "https://www.theclick.gg/how-to-trade-transcendent-weapons-in-the-first-descendant/",
+      "snippet": "2 days ago · How to Trade Transcendent Weapons in The First Descendant covers Private Trading, Lounge Storage Trade, 24-hour …"
+    },
+    {
+      "title": "The Supreme Art of War – TFD Weapons (Ultimate & Transcendent)",
+      "url": "https://weapons.freyna.org/",
+      "snippet": "All 43 Ultimate and 11 Transcendent weapons of The First Descendant with Feature, Unique Ability (max level values) and Level 100 …"
+    },
+    {
+      "title": "TFD: How To Farm Transcendent Weapons - Drop Chance",
+      "url": "https://alcasthq.com/tfd-transcendent-weapons-guide/",
+      "snippet": "They sit above Ultimate Weapons and introduce a completely new progression layer built around Quality and Quality Range. This …"
+    }
+  ]
+}

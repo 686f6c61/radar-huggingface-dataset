@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "marciano1111/bn",
+  "slug": "marciano1111-bn",
+  "author": "marciano1111",
+  "url": "https://huggingface.co/marciano1111/bn",
+  "created_at": "2026-10-16T22:52:55.000Z",
+  "updated_at": "2026-10-16T23:28:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 778333403,
+  "storage_human": "778 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "At the origins of the Ubaid world: Recent insights from Tell el-'Uwaili ...",
+      "url": "https://shs.hal.science/halshs-04860751v1/file/BALDI_BAUDOUIN_VALLET_JS_E_R_%27UWAILI_TEXT.pdf",
+      "snippet": "All these ceramic technical traditions can be monitored in their evolution all along the lowest and earliest part of the stratigraphy …"
+    },
+    {
+      "title": "At the origins of the Ubaid world: Recent insights from Tell el-'Uwaili ...",
+      "url": "https://shs.hal.science/halshs-04860751/file/13ICAANE%20Proceedings%20BALDI%20BAUDOUIN%20VALLET%20Origins%20of%20the%20Ubaid.pdf",
+      "snippet": "We intentionally avoid the terms 'culture' and 'period' for the Ubaid phenomenon, that involves multifaced cultural entanglements …"
+    },
+    {
+      "title": "Preliminary Report on the VIIIth And IXth Campaigns at Tell el-‘Uwaili",
+      "url": "https://hal.science/hal-03088168/document",
+      "snippet": "Conclusion (R. Vallet and J. S. Baldi) The structures brought to light in Lev-els 4 and 5 are among the most promising results of the …"
+    },
+    {
+      "title": "Tell el-'Oueili - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tell_el-%27Oueili",
+      "snippet": "Baldi, Johnny, Regis Vallet, and Claire Padovani, \"Tell el-‘Uwaili (Dhi Qar province): Preliminary Report on the 2019 fieldwork …"
+    },
+    {
+      "title": "Regis Vallet - Profile on Academia.edu",
+      "url": "https://cnrs.academia.edu/RegisVallet",
+      "snippet": "Regis Vallet is a researcher at Centre National de la Recherche Scientifique / French National Centre for Scientific Research focused …"
+    }
+  ]
+}

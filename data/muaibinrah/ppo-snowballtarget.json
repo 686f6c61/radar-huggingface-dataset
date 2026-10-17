@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "muaibinrah/ppo-SnowballTarget",
+  "slug": "muaibinrah-ppo-snowballtarget",
+  "author": "muaibinrah",
+  "url": "https://huggingface.co/muaibinrah/ppo-SnowballTarget",
+  "created_at": "2026-10-17T01:28:19.000Z",
+  "updated_at": "2026-10-17T01:28:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "onnx",
+    "unity-ml-agents",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-SnowballTarget",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 119378,
+  "storage_human": "119378 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Banque & Assurances - Crédit Agricole",
+      "url": "https://www.credit-agricole.fr/",
+      "snippet": "Découvrez les offres et services du Crédit Agricole : compte bancaire, assurance-vie, épargne, placement, retraite, habitation, …"
+    },
+    {
+      "title": "Comptes, cartes et services du quotidien - Crédit Agricole",
+      "url": "https://www.credit-agricole.fr/particulier/compte.html",
+      "snippet": "Compte bancaire, cartes et services : trouvez l'offre Crédit Agricole qui vous correspond et bénéficiez jusqu'à 100€ de bienvenue."
+    },
+    {
+      "title": "Crédit Agricole d'Ile de France Banque & Assurances - Particulier",
+      "url": "https://www.credit-agricole.fr/ca-paris/particulier.html",
+      "snippet": "Sep 1, 2026 · Découvrez les offres et services du Crédit Agricole : compte bancaire, assurance-vie, épargne, placement, retraite, …"
+    },
+    {
+      "title": "VILLENAVE D ORNON, Banque & Assurances - Crédit Agricole",
+      "url": "https://www.credit-agricole.fr/particulier/agence/aquitaine/villenave-d-ornon-1988.html",
+      "snippet": "Retrouvez le Crédit Agricole au 556, Route De Toulouse 33140 Villenave-d'Ornon."
+    },
+    {
+      "title": "Crédit Agricole Provence Côte d'Azur Banque & Assurances - Particulier",
+      "url": "https://www.credit-agricole.fr/ca-pca/particulier.html",
+      "snippet": "Découvrez les offres et services du Crédit Agricole : compte bancaire, assurance-vie, épargne, placement, retraite, habitation, …"
+    }
+  ]
+}

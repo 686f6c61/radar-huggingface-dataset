@@ -5,7 +5,7 @@
   "author": "SergiioB",
   "url": "https://huggingface.co/SergiioB/Nemotron-3.5-Bolt-74B-A9B-AutoRound-W4A16-G128-sym",
   "created_at": "2026-10-16T16:54:05.000Z",
-  "updated_at": "2026-10-16T17:55:43.000Z",
+  "updated_at": "2026-10-16T20:07:50.000Z",
   "license": "openmdw-1.1",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -48,7 +48,7 @@
     "4-bit",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 11725189122,

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "RCox100900/JuliX",
+  "slug": "rcox100900-julix",
+  "author": "RCox100900",
+  "url": "https://huggingface.co/RCox100900/JuliX",
+  "created_at": "2026-06-03T20:07:52.000Z",
+  "updated_at": "2026-10-17T01:17:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 797432032,
+  "storage_human": "797 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "耐克Nike跑鞋推荐？耐克Nike跑鞋哪个系列最好？2026年值得推荐的 …",
+      "url": "https://www.zhihu.com/tardis/zm/art/263555575",
+      "snippet": "虽然人们常说的世界四大跑鞋并没有Nike的名字，但咱们都知道Nike家跑鞋的地位。耐克作为一个知名运动品牌，跑鞋是其中非常重 …"
+    },
+    {
+      "title": "2026年耐克跑鞋推荐，Nike跑步鞋选购攻略（9月）",
+      "url": "https://www.zhihu.com/tardis/zm/art/266579104",
+      "snippet": "Nike 飞马 作为所有品牌里持续时间最长的跑鞋系列。 它的经典是大家都道的。 37年的发展，飞马系列也是保持了自己的初心。 就是 …"
+    },
+    {
+      "title": "Zapatillas Running Hombre - Forum Sport",
+      "url": "https://www.forumsport.com/es-es/running/zapatillas-running/zapatillas-running-hombre-200010-c",
+      "snippet": "Compra las mejores zapatillas de running para hombre en tu tienda de running Forum Sport Online. Marcas como adidas, Nike, …"
+    },
+    {
+      "title": "botas de fútbol nike phantom - Forum Sport",
+      "url": "https://www.forumsport.com/es-es/futbol/botas-de-futbol/botas-de-futbol-nike-phantom-s",
+      "snippet": "Botas de fútbol Nike Phantom para control y precisión en el juego Las botas de fútbol Nike Phantom están diseñadas para ofrecer …"
+    },
+    {
+      "title": "怎样查询Nike耐克的官方授权专卖店的名单？_百度知道",
+      "url": "https://zhidao.baidu.com/question/170801103.html",
+      "snippet": "NIKE是全球著名的体育运动品牌，英文原意指希腊胜利女神，中文译为 耐克。 耐克商标图案是个小钩子。 耐克一直将激励全世界的 …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "nakamura196/yolo26x-midog-onnx",
+  "slug": "nakamura196-yolo26x-midog-onnx",
+  "author": "nakamura196",
+  "url": "https://huggingface.co/nakamura196/yolo26x-midog-onnx",
+  "created_at": "2026-10-16T20:54:47.000Z",
+  "updated_at": "2026-10-16T20:55:15.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "yolo",
+    "ultralytics",
+    "histopathology",
+    "mitosis",
+    "mitotic-figure",
+    "onnxruntime-web",
+    "object-detection",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 334476361,
+  "storage_human": "334 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How do you save the game? :: Darkwood Gameplay Discussions",
+      "url": "https://steamcommunity.com/app/274520/discussions/0/1480982338955821553/",
+      "snippet": "Oct 28, 2017 · Indeed, doing any of the things mentioned in this thread will save the game. I thought it was going to be the difference …Read more"
+    },
+    {
+      "title": "How do you save? : r/Darkwood - Reddit",
+      "url": "https://www.reddit.com/r/Darkwood/comments/tl3866/how_do_you_save/",
+      "snippet": "Mar 23, 2022 · By blending RPG, roguelike and adventure elements together with a challenging difficulty, Darkwood aims to please …"
+    },
+    {
+      "title": "GitHub - deans-bradley/darkwood-editor: Darkwood Editor is a save …",
+      "url": "https://github.com/deans-bradley/Darkwood-Editor",
+      "snippet": "Darkwood Editor is a save file editor designed for the video game Darkwood, developed by Acid Wizard Studio. With Darkwood …"
+    },
+    {
+      "title": "Darkwood Save And Entity Editor Pack with Survival Plus Mod",
+      "url": "https://www.nexusmods.com/darkwood/mods/24",
+      "snippet": "Nov 9, 2024 · This mod pack includes the Darkwood Save Editor, Entity Editor, and Survival Plus mods to give you complete control …"
+    },
+    {
+      "title": "Save File Location? :: Darkwood Gameplay Discussions",
+      "url": "https://steamcommunity.com/app/274520/discussions/0/1473095331498522416/",
+      "snippet": "Aug 26, 2017 · Save File Location? Hey, just trying to identify the save file and its file path! Thanks! The author of this topic has …"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "mradermacher/OpenThinker2-Offline-GRPO-7B-GGUF",
+  "slug": "mradermacher-openthinker2-offline-grpo-7b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/OpenThinker2-Offline-GRPO-7B-GGUF",
+  "created_at": "2025-07-29T08:44:48.000Z",
+  "updated_at": "2026-10-16T23:56:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:KRAFTON/OpenThinker2-Offline-GRPO-7B",
+    "base_model:quantized:KRAFTON/OpenThinker2-Offline-GRPO-7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 217,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 68146889216,
+  "storage_human": "68.1 GB",
+  "base_model": "KRAFTON/OpenThinker2-Offline-GRPO-7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

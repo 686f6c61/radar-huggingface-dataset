@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Pertere/Qwen-Image-2.1",
+  "slug": "pertere-qwen-image-2-1",
+  "author": "Pertere",
+  "url": "https://huggingface.co/Pertere/Qwen-Image-2.1",
+  "created_at": "2026-10-16T22:47:42.000Z",
+  "updated_at": "2026-10-16T22:47:42.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "qwen",
+    "image-generation",
+    "image-editing",
+    "rgba",
+    "text-to-image",
+    "license:other",
+    "diffusers:QwenImage21Pipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7115124736,
+  "parameters_human": "7.12B",
+  "storage_bytes": 33130368862,
+  "storage_human": "33.1 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SONIX – Gaming Voice Chat, Tournaments and 3D Avatars in One App",
+      "url": "https://www.sonix.gg/",
+      "snippet": "Play, chat and compete with ultra low latency voice, 3D avatars and prize tournaments on SONIX and SUPERSONIX for gamers and …"
+    },
+    {
+      "title": "SONIX – Chat vocal gaming, tournois et avatars 3D dans une seule ...",
+      "url": "https://www.sonix.gg/fr/accueil",
+      "snippet": "Jouez, discutez et concourez avec une voix ultra faible latence, avatars 3D et tournois dotés sur SONIX et SUPERSONIX pour …"
+    },
+    {
+      "title": "Sonix Gaming - YouTube",
+      "url": "https://www.youtube.com/@SoniX1Official",
+      "snippet": "Welcome to SoniX Gaming! 🎮Here you'll find gameplay, live streams, funny moments, challenges, and tips from all kinds of games. …"
+    },
+    {
+      "title": "Best Transcription Software For Gaming - Sonix",
+      "url": "https://sonix.ai/resources/transcription-software-for-gaming/",
+      "snippet": "Aug 5, 2026 · Sonix stands out as the most comprehensive transcription platform for gaming content creators who need speed, …"
+    },
+    {
+      "title": "SONIX – Communication Gaming en Temps Réel | OOMNIUM",
+      "url": "https://oomnium.com/fr/investir/sonix/pitch",
+      "snippet": "SONIX propose une plateforme de communication complète pour les gamers avec des appels audio, vidéo, et chat d'équipe. Elle …"
+    }
+  ]
+}

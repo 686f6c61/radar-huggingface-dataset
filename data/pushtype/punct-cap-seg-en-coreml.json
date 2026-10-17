@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "PUSHTYPE/punct-cap-seg-en-coreml",
+  "slug": "pushtype-punct-cap-seg-en-coreml",
+  "author": "PUSHTYPE",
+  "url": "https://huggingface.co/PUSHTYPE/punct-cap-seg-en-coreml",
+  "created_at": "2026-10-16T22:17:32.000Z",
+  "updated_at": "2026-10-16T22:17:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "punctuation",
+    "truecasing",
+    "coreml",
+    "en",
+    "base_model:1-800-BAD-CODE/punctuation_fullstop_truecase_english",
+    "base_model:finetune:1-800-BAD-CODE/punctuation_fullstop_truecase_english",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 59375676,
+  "storage_human": "59 MB",
+  "base_model": "1-800-BAD-CODE/punctuation_fullstop_truecase_english",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "1-800-BAD-CODE/punct_cap_seg_47_language · Hugging Face",
+      "url": "https://huggingface.co/1-800-BAD-CODE/punct_cap_seg_47_language",
+      "snippet": "This model accepts as input lower-cased, unpunctuated, unsegmented text in 47 languages and performs punctuation restoration, true-casing (capitalization), and sentence boundary detection (segmentation)."
+    },
+    {
+      "title": "1-800-BAD-CODE/punct_cap_seg_47_language - Socket",
+      "url": "https://socket.dev/huggingface/package/1-800-bad-code/punct_cap_seg_47_language",
+      "snippet": "This model accepts as input lower-cased, unpunctuated, unsegmented text in 47 languages and performs punctuation restoration, true-casing (capitalization), and sentence boundary detection (segmentation)."
+    },
+    {
+      "title": "soloish90/punct-cap-seg-en-coreml-int8 · Hugging Face",
+      "url": "https://huggingface.co/soloish90/punct-cap-seg-en-coreml-int8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - 1-800-BAD-CODE/punctuators: Package for inference for ...",
+      "url": "https://github.com/1-800-BAD-CODE/punctuators",
+      "snippet": "punctuators is a project for inference for punctuation and related analytics. This project is a mostly-undocumented prototype at the moment. The links to models below contain sufficient documentation for each model."
+    },
+    {
+      "title": "GitHub - likedan/Awesome-CoreML-Models: Largest list of models for Core ...",
+      "url": "https://github.com/likedan/Awesome-CoreML-Models",
+      "snippet": "Largest list of models for Core ML (for iOS 11+). Contribute to likedan/Awesome-CoreML-Models development by creating an account on GitHub."
+    }
+  ]
+}

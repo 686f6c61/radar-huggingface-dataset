@@ -5,7 +5,7 @@
   "author": "OmenWorks",
   "url": "https://huggingface.co/OmenWorks/bend-4b",
   "created_at": "2026-10-12T22:06:56.000Z",
-  "updated_at": "2026-10-12T22:25:11.000Z",
+  "updated_at": "2026-10-17T01:42:09.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -22,12 +22,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 93,
+  "downloads_30d": 94,
   "trending_score": 0,
   "parameters": 4207062528,
   "parameters_human": "4.21B",
-  "storage_bytes": 7193348928,
-  "storage_human": "7.2 GB",
+  "storage_bytes": 10226838752,
+  "storage_human": "10.2 GB",
   "base_model": "ggml-org/Kev-4B",
   "formats": [
     "gguf"

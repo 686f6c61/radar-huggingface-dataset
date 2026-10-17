@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "aadamsethan/notes-efficient-attention53",
+  "slug": "aadamsethan-notes-efficient-attention53",
+  "author": "aadamsethan",
+  "url": "https://huggingface.co/aadamsethan/notes-efficient-attention53",
+  "created_at": "2026-10-16T18:43:21.000Z",
+  "updated_at": "2026-10-16T18:43:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "efficient-attention",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Towards Efficient Generative Large Language Model Serving",
+      "url": "https://dl.acm.org/doi/10.1145/3754448",
+      "snippet": "In the rapidly evolving landscape of artificial intelligence (AI), generative large language models (LLMs) stand at the forefront, revolutionizing how we ..."
+    },
+    {
+      "title": "On Knowledge in AI: Epistemic and Ethical Limitations of Language ...",
+      "url": "https://ediss.sub.uni-hamburg.de/bitstream/ediss/12231/1/dissertation_angelie_kraft.pdf",
+      "snippet": "20.11.2025 ... things that are modeled by an AI model. Thus, the ... As Adam is discussing power, she draws attention specifically to the \"hierarchy of."
+    },
+    {
+      "title": "(PDF) Detection of AI-Generated Texts: A Bi-LSTM and Attention ...",
+      "url": "https://www.researchgate.net/publication/391004008_Detection_of_AI-Generated_Texts_A_Bi-LSTM_and_Attention-Based_Approach",
+      "snippet": "23.04.2025 ... Our proposed model outperformed existing algorithms for accuracy with less computational complexity. The proposed model is a feature-based ..."
+    },
+    {
+      "title": "On the Challenges and Opportunities in Generative AI",
+      "url": "https://www.research-collection.ethz.ch/server/api/core/bitstreams/df5fefe7-0bab-4cd9-a618-b78215725eca/content",
+      "snippet": "Designing more efficient lossy compression operations in the context of diffusion models has received less attention in the community and is an important ..."
+    },
+    {
+      "title": "Kolibri: A Sovereign European Model on the Pareto Frontier",
+      "url": "https://aleph-alpha.com/downloads/tech-report.pdf",
+      "snippet": "2024) for the attention and expert weights and Adam. 83 /189. Page 84 ... Article 53(4) EU AI Act). Aleph Alpha was part of the working group, which ..."
+    }
+  ]
+}

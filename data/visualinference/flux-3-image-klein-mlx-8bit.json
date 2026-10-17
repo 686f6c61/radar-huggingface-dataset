@@ -5,7 +5,7 @@
   "author": "VisualInference",
   "url": "https://huggingface.co/VisualInference/FLUX-3-Image-Klein-MLX-8bit",
   "created_at": "2026-10-16T00:53:51.000Z",
-  "updated_at": "2026-10-16T01:15:52.000Z",
+  "updated_at": "2026-10-16T04:41:09.000Z",
   "license": "flux-kommunity-license",
   "license_family": "unknown",
   "pipeline_tag": "text-to-image",
@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 4,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

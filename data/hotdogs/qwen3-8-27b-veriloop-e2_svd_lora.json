@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "hotdogs/qwen3.8-27B-veriloop-e2_svd_lora",
+  "slug": "hotdogs-qwen3-8-27b-veriloop-e2_svd_lora",
+  "author": "hotdogs",
+  "url": "https://huggingface.co/hotdogs/qwen3.8-27B-veriloop-e2_svd_lora",
+  "created_at": "2026-10-16T21:54:55.000Z",
+  "updated_at": "2026-10-16T21:58:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "lora",
+    "peft",
+    "qwen3_8",
+    "veriloop",
+    "coding",
+    "math",
+    "physics",
+    "reasoning",
+    "svd",
+    "weight-diff",
+    "long-context",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:adapter:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 435159040,
+  "parameters_human": "435.2M",
+  "storage_bytes": 3576727504,
+  "storage_human": "3.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Meta for Business (formerly Facebook for Business)",
+      "url": "https://fr-fr.facebook.com/latest/home%E2%80%A6/",
+      "snippet": "• Save time by accessing everything you need to manage your business across Facebook, Instagram and Messenger all in one …"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://fr-fr.facebook.com/helpkey.eu/videos/",
+      "snippet": "Facebook ... Facebook"
+    },
+    {
+      "title": "Free Stuff near Gouville-Sur-Mer, Basse-Normandie - Facebook",
+      "url": "https://fr-fr.facebook.com/marketplace/103336299708654/free/",
+      "snippet": "Find stuff for free in Gouville-Sur-Mer, Basse-Normandie, France on Facebook Marketplace. Free furniture, electronics, and more …"
+    },
+    {
+      "title": "Articles pour la maison en vente à Perth | Facebook Marketplace",
+      "url": "https://fr-fr.facebook.com/marketplace/perth/home/",
+      "snippet": "Articles neufs et d’occasion dans la catégorie Articles pour la maison en vente à Perth sur Facebook Marketplace. Trouvez des bons …"
+    },
+    {
+      "title": "Machines à popcorn en vente à Edmonton | Facebook Marketplace",
+      "url": "https://fr-fr.facebook.com/marketplace/edmonton/popcorn-machines/",
+      "snippet": "Articles neufs et d’occasion dans la catégorie Machines à popcorn en vente à Edmonton sur Facebook Marketplace. Trouvez des …"
+    }
+  ]
+}

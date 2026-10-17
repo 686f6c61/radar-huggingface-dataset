@@ -5,7 +5,7 @@
   "author": "npateman",
   "url": "https://huggingface.co/npateman/fusewalk-models",
   "created_at": "2026-10-14T15:39:05.000Z",
-  "updated_at": "2026-10-15T08:21:09.000Z",
+  "updated_at": "2026-10-16T16:11:03.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -22,12 +22,12 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 361,
+  "downloads_30d": 793,
   "trending_score": 0,
   "parameters": 4205751296,
   "parameters_human": "4.21B",
-  "storage_bytes": 4212917216,
-  "storage_human": "4.2 GB",
+  "storage_bytes": 5320325856,
+  "storage_human": "5.3 GB",
   "base_model": "Qwen/Qwen3-0.6B, Qwen/Qwen3-1.7B, Qwen/Qwen3.5-4B",
   "formats": [
     "gguf"

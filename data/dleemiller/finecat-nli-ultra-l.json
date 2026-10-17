@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "dleemiller/finecat-nli-ultra-l",
+  "slug": "dleemiller-finecat-nli-ultra-l",
+  "author": "dleemiller",
+  "url": "https://huggingface.co/dleemiller/finecat-nli-ultra-l",
+  "created_at": "2026-10-16T23:24:41.000Z",
+  "updated_at": "2026-10-17T02:47:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "ultrabert",
+    "cross-encoder",
+    "reranker",
+    "generated_from_trainer",
+    "dataset_size:2045406",
+    "loss:DistillationLoss",
+    "mnli",
+    "snli",
+    "anli",
+    "zero-shot-classification",
+    "custom_code",
+    "en",
+    "dataset:dleemiller/FineCat-NLI",
+    "base_model:dmis-lab/UltraBERT-380M",
+    "base_model:finetune:dmis-lab/UltraBERT-380M",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 377540611,
+  "parameters_human": "377.5M",
+  "storage_bytes": 1510510234,
+  "storage_human": "1.5 GB",
+  "base_model": "dmis-lab/UltraBERT-380M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hot MILF Solo Porn Pics - PornPics.com",
+      "url": "https://www.pornpics.com/tags/milf-solo/",
+      "snippet": "Check out the best naked milf solo porn pics for FREE on PornPics.com. ️Find the hottest milf solo xxx photos right now!"
+    },
+    {
+      "title": "Solo MILF Pics",
+      "url": "https://www.imilfpics.com/category/solo-milf/",
+      "snippet": "Solo MILF Porn MILF Hairy Pussy Legs Piercing Stockings Nipples Blonde Shaved Lingerie Flashing Lu Elissa Skyler Haven Becky …"
+    },
+    {
+      "title": "Sexy MILF Solo Porn Pics & Naked Photos - PornPics.com",
+      "url": "https://www.pornpics.com/?q=sexy+milf+solo",
+      "snippet": "Grab the hottest Sexy MILF Solo porn pictures right now at PornPics.com. New FREE Sexy MILF Solo photos added every day."
+    },
+    {
+      "title": "Solo pictures with horny milfs - milf pussy pics",
+      "url": "https://www.milfpussypics.net/solo/",
+      "snippet": "Hot amateur milfs and mature pornstars in free Solo porn pics. Solo galleries updates on daily basis."
+    },
+    {
+      "title": "Older MILFS Solo Porn Pics & MILF Sex Photos - IdealMilf.com",
+      "url": "https://idealmilf.com/search/older-milfs-solo/",
+      "snippet": "Delve into the impressive variety of Older Milfs Solo pics at IdealMILF.com. Dont miss out on the daily updates with new MILF porn …"
+    }
+  ]
+}

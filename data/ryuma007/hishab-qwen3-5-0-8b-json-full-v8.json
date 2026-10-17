@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "ryuma007/hishab-qwen3.5-0.8b-json-full-v8",
+  "slug": "ryuma007-hishab-qwen3-5-0-8b-json-full-v8",
+  "author": "ryuma007",
+  "url": "https://huggingface.co/ryuma007/hishab-qwen3.5-0.8b-json-full-v8",
+  "created_at": "2026-10-16T21:34:21.000Z",
+  "updated_at": "2026-10-16T21:35:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "bn",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5_text",
+    "finance",
+    "information-extraction",
+    "banglish",
+    "bangla",
+    "qwen3.5",
+    "hishab",
+    "bn",
+    "en",
+    "dataset:ryuma007/hishab-synthetic-v4",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 1517635590,
+  "storage_human": "1.5 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ryuma007/hishab-qwen3.5-0.8b-json-full-v8-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ryuma007/hishab-qwen3.5-0.8b-json-full-v8-GGUF",
+      "snippet": "Instructions to use ryuma007/hishab-qwen3.5-.8b-json-full-v8-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "ryuma007/hishab-qwen3.5-0.8b-json-lora-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ryuma007/hishab-qwen3.5-0.8b-json-lora-GGUF",
+      "snippet": "Instructions to use ryuma007/hishab-qwen3.5-.8b-json-lora-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Hishab Qwen3.5 0.8b Json Lora Gguf - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/ryuma007/hishab-qwen3.5-0.8b-json-lora-gguf",
+      "snippet": "Registry entry for model Hishab Qwen3.5 0.8b Json Lora Gguf; source metadata pending."
+    },
+    {
+      "title": "GitHub - ABDtmx/Qwen3.5: Qwen3.5 is the large language model series ...",
+      "url": "https://github.com/ABDtmx/Qwen3.5",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on trillions of multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    }
+  ]
+}

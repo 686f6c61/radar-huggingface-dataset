@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "enzolight/enzolight-architectural-lighting-sdxl-lora",
+  "slug": "enzolight-enzolight-architectural-lighting-sdxl-lora",
+  "author": "enzolight",
+  "url": "https://huggingface.co/enzolight/enzolight-architectural-lighting-sdxl-lora",
+  "created_at": "2026-10-16T21:58:31.000Z",
+  "updated_at": "2026-10-16T22:07:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23390424,
+  "storage_human": "23 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Official Lumina - BytePlus - Seedance 2.0 Free Now",
+      "url": "https://duckduckgo.com/y.js?ad_domain=byteplus.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=lJqnOGfBxwEISeALQ0an9RNUTxTcoftkr2xHY1xsjAkh0CI1pGJIaVHXTaSpVJYp%2Dxmer0xc2MMh58fdsngxkm75KdYAqvsVVOmpFyqVxmHi_nuUPk8nIhlF4WyZoJzmNEEV3wgHVlysYemjmtO6N2j%2Dmi1YgxXkMCIJi5NyiGk.0SYr0PqoaYl8KlBdkIRuSA&rut=6c85f7c9df20f042a82a7a2c99ee366642b9aa1b26204c6bcf87781655a90142&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8SkxLJSKFBbjaNn_ihDrcqTVUCUyu2doCn4vD5A7%2Dvr6sLOhWUvTqX1oGdzWah2P3_JaOMrOPr7qrQsQAF2pk1bynp9cKIpwXxiRLtRRxC2Bci5bC%2DDJnWLat_rvB3YeqaaBNTWWbfy4WgNf90GarZg6vm80cB25L9F52ys%2DGKAIR0pzEs_vk5zDX2kWc32hpbtsxCOFCq8nk550%2D8n3%2DNKh2Acg%26u%3DaHR0cHMlM2ElMmYlMmZhaS5ieXRlcGx1cy5jb20lMmZsdW1pbmElMmZob21lJTJmYXJ0d29yayUzZnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZGNwYyUyNnV0bV9jYW1wYWlnbiUzZHNpZ251cF9sdW1pbmFfZXVfZW5nbGlzaF8yMDI2MDYzMF9jZWxlbmUlMjZ1dG1fdGVybSUzZDIwMjYwNjMwX2JyYW5kX2x1bWluYV9icm9hZG1hdGNoX25ldyUyNnV0bV9jb250ZW50JTNkdGVjZG8lMjZtc2Nsa2lkJTNkYTBkMDQyMWU2NzRlMTE5ZjAyYmUyOGNjY2UyZjk5OGM%26rlid%3Da0d0421e674e119f02be28ccce2f998c&vqd=4-63702517929920424140623443465511345487&iurl=%7B1%7DIG%3D2932B855B908493DB78F1B8935B9C299%26CID%3D03BBC88D42916DC60B16DF7943EA6C90%26ID%3DDevEx%2C5036.1",
+      "snippet": "BytePlus Lumina - the official AI visual platform for enterprises & creators. First to experience ByteDance&#x27;s latest models (Seedance 2.0, Seedream)."
+    },
+    {
+      "title": "SDXL Models & 39K+ LoRAs, Download or Generate | Civitai",
+      "url": "https://civitai.com/ecosystems/sdxl",
+      "snippet": "Download SDXL checkpoints and 39K+ LoRAs, or generate online. Stability AI&#x27;s high-res open model, and the base of Pony, Illustrious and NoobAI."
+    },
+    {
+      "title": "SDXL AI Models (1,578) | Civitai",
+      "url": "https://civitai.com/tag/sdxl",
+      "snippet": "Browse 1,578 AI models tagged \"SDXL\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    },
+    {
+      "title": "Unlock Stunning Architectural Visuals with Stable Diffusion XL Workflow",
+      "url": "https://comfyui.org/en/stable-diffusion-xl-architecture-visuals",
+      "snippet": "Unlock stunning architectural renderings with this AI workflow, leveraging Stable Diffusion XL and Lora models for unparalleled detail and style control. Discover how to transform sketches into photorealistic designs."
+    },
+    {
+      "title": "Training a LoRA model for Stable Diffusion XL - DigitalOcean",
+      "url": "https://www.digitalocean.com/community/tutorials/training-a-lora-model-for-stable-diffusion-xl-with-paperspace",
+      "snippet": "Introduction A couple weeks ago, we covered the release of the latest Stable Diffusion model from the researchers at Stability AI. This model, which boasts an upgraded VAE design, an extended architecture, improved text-image latent understanding, and a doubled base resolution. These capabilities, along with its continued excellence at covering a wide variety of different styles, shapes, and ..."
+    }
+  ]
+}

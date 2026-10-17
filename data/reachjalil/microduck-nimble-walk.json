@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "reachjalil/microduck-nimble-walk",
+  "slug": "reachjalil-microduck-nimble-walk",
+  "author": "reachjalil",
+  "url": "https://huggingface.co/reachjalil/microduck-nimble-walk",
+  "created_at": "2026-10-16T23:56:53.000Z",
+  "updated_at": "2026-10-16T23:56:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "microduck",
+    "robotics",
+    "reinforcement-learning",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 794163,
+  "storage_human": "794163 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "neil-jo/microduck-walk · Hugging Face",
+      "url": "https://huggingface.co/neil-jo/microduck-walk",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Hugging Face&#x27;s $399 Microduck Robot Learns to Walk | Santage",
+      "url": "https://santageai.com/news/2026/08/29/hugging-face-microduck-open-source-robot",
+      "snippet": "Hugging Face&#x27;s Pollen Robotics launched Microduck, a $399 open-source bipedal robot that trains its own walking policy with reinforcement learning in under two hours."
+    },
+    {
+      "title": "Models compatible with the Microduck library - Hugging Face",
+      "url": "https://huggingface.co/models?library=microduck",
+      "snippet": "Teethyfish/microduck-collision-flamingo-ii Reinforcement Learning •Updated 27 days ago• 1"
+    },
+    {
+      "title": "Microduck · From body to behavior",
+      "url": "https://eai-course.github.io/microduck/",
+      "snippet": "A walking robot cannot succeed through one model alone. Its body must carry loads, its sensors must estimate motion, its software must coordinate devices, and its controller must turn a requested movement into safe joint targets. Microduck makes those connections small enough to inspect, but rich enough to matter. 01 Mechanical structure Start with the physical arrangement. See how shells ..."
+    },
+    {
+      "title": "Hugging Face Releases Programmable, Walking Duck Robot",
+      "url": "https://aibusiness.com/robotics/hugging-face-programmable-walking-duck-robot",
+      "snippet": "Hugging Face is expanding its push into physical AI, with its new programmable robot shaped like a tiny duck. The open source AI company unveiled the $399 Microduck, a small-scale robot that can be programmed to perform a range of behaviors, including walking, picking up objects and recovering after a fall."
+    }
+  ]
+}

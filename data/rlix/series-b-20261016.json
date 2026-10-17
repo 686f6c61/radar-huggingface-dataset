@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "rlix/series-b-20261016",
+  "slug": "rlix-series-b-20261016",
+  "author": "rlix",
+  "url": "https://huggingface.co/rlix/series-b-20261016",
+  "created_at": "2026-10-17T00:03:28.000Z",
+  "updated_at": "2026-10-17T02:52:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5558743949,
+  "storage_human": "5.6 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

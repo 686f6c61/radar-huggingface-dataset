@@ -5,7 +5,7 @@
   "author": "PedroMarinhoDev",
   "url": "https://huggingface.co/PedroMarinhoDev/Drama-3-ComfyUI",
   "created_at": "2026-10-14T17:30:39.000Z",
-  "updated_at": "2026-10-15T12:51:25.000Z",
+  "updated_at": "2026-10-16T19:45:31.000Z",
   "license": "fish-audio-community-license",
   "license_family": "unknown",
   "pipeline_tag": "text-to-speech",
@@ -22,7 +22,7 @@
     "license:other",
     "region:us"
   ],
-  "likes": 6,
+  "likes": 13,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

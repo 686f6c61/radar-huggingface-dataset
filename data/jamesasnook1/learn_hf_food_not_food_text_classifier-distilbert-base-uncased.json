@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "JamesASnook1/learn_hf_food_not_food_text_classifier-distilbert-base-uncased",
+  "slug": "jamesasnook1-learn_hf_food_not_food_text_classifier-distilbert-base-uncased",
+  "author": "JamesASnook1",
+  "url": "https://huggingface.co/JamesASnook1/learn_hf_food_not_food_text_classifier-distilbert-base-uncased",
+  "created_at": "2026-10-16T20:50:48.000Z",
+  "updated_at": "2026-10-16T20:50:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267837825,
+  "storage_human": "268 MB",
+  "base_model": "distilbert/distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "X. It’s what’s happening / X",
+      "url": "https://x.com/",
+      "snippet": "From breaking news and entertainment to sports and politics, get the full story with all the live commentary."
+    },
+    {
+      "title": "Twitter (@twitter) / X",
+      "url": "https://x.com/TWITTER",
+      "snippet": "These posts are protected Only approved followers can see @twitter’s posts."
+    },
+    {
+      "title": "X - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.twitter.android&hl=en",
+      "snippet": "Welcome to X, your trusted digital town square, where conversations unfold in real time, and the world connects through breaking …"
+    },
+    {
+      "title": "X (réseau social) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/X_(r%C3%A9seau_social)",
+      "snippet": "Twitter avait annoncé des changements importants dans les termes d'utilisation de l'API Twitter et une forte augmentation des prix, …"
+    },
+    {
+      "title": "‎X App - App Store",
+      "url": "https://apps.apple.com/us/app/x/id333903271",
+      "snippet": "Then I came across Twitter, however twitter didn’t right of way gave me the right to exercise my freedom of speech, so I deleted the …"
+    }
+  ]
+}

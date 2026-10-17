@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "ssyhw7/qwen36-35b-merged-ties_d0.2",
+  "slug": "ssyhw7-qwen36-35b-merged-ties_d0-2",
+  "author": "ssyhw7",
+  "url": "https://huggingface.co/ssyhw7/qwen36-35b-merged-ties_d0.2",
+  "created_at": "2026-10-16T22:59:42.000Z",
+  "updated_at": "2026-10-16T23:00:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "merge",
+    "ties",
+    "qwen3.6",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:merge:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6737682760,
+  "storage_human": "6.7 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

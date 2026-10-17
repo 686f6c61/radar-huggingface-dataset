@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "hotdogs/qwen3.8-27B-pi_svd_lora",
+  "slug": "hotdogs-qwen3-8-27b-pi_svd_lora",
+  "author": "hotdogs",
+  "url": "https://huggingface.co/hotdogs/qwen3.8-27B-pi_svd_lora",
+  "created_at": "2026-10-16T21:54:54.000Z",
+  "updated_at": "2026-10-16T21:59:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "lora",
+    "peft",
+    "qwen3_8",
+    "pi",
+    "coding",
+    "agent",
+    "tool-use",
+    "svd",
+    "weight-diff",
+    "mtp",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:adapter:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 435159040,
+  "parameters_human": "435.2M",
+  "storage_bytes": 3576727504,
+  "storage_human": "3.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hotdogs/jev_qwen3.8-27B_svd_lora · Hugging Face",
+      "url": "https://huggingface.co/hotdogs/jev_qwen3.8-27B_svd_lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "hotdogs/thinkingcap_qwen3.8-27B_svd_lora · Hugging Face",
+      "url": "https://huggingface.co/hotdogs/thinkingcap_qwen3.8-27B_svd_lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "hotdogs/Qwen3.8-27B-thinkingcap-abliterated - featherless.ai",
+      "url": "https://featherless.ai/models/hotdogs/Qwen3.8-27B-thinkingcap-abliterated",
+      "snippet": "hotdogs/Qwen3.8-27B-thinkingcap-abliterated is a 27 billion parameter Qwen3.8-27B model, fine-tuned by hotdogs using a LoRA merge from the ThinkingCap efficient-reasoning dataset. This model is specifically designed to prevent &#x27;runaway&#x27; thinking on complex, multi-step problems, significantly reducing output length without sacrificing accuracy. It excels at efficient reasoning by acting as ..."
+    },
+    {
+      "title": "Holo4-27B_qwen3.8-27B_svd_lora - friendli.ai",
+      "url": "https://friendli.ai/models/hotdogs/Holo4-27B_qwen3.8-27B_svd_lora",
+      "snippet": "Deploy Holo4-27B_qwen3.8-27B_svd_lora with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Qwen3.8-27B | NVIDIA NGC",
+      "url": "https://catalog.ngc.nvidia.com/orgs/nim/qwen/models/qwen3.8-27b/",
+      "snippet": "Qwen3.8-27B is a 27-billion-parameter dense vision-language model for text, image, and video understanding, coding, multimodal reasoning, long-context processing, tool calling, and agentic tasks."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "NeoRoth/oriloq-magpie-marianne-coreml",
+  "slug": "neoroth-oriloq-magpie-marianne-coreml",
+  "author": "NeoRoth",
+  "url": "https://huggingface.co/NeoRoth/oriloq-magpie-marianne-coreml",
+  "created_at": "2026-10-17T00:41:35.000Z",
+  "updated_at": "2026-10-17T00:42:39.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "coreml",
+    "apple-silicon",
+    "oriloq",
+    "text-to-speech",
+    "fr",
+    "base_model:nvidia/magpie_tts_multilingual_357m",
+    "base_model:finetune:nvidia/magpie_tts_multilingual_357m",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1096731229,
+  "storage_human": "1.1 GB",
+  "base_model": "nvidia/magpie_tts_multilingual_357m, nvidia/nemo-nano-codec-22khz-1.89kbps-21.5fps",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SeekGirl:FogⅠ礼物攻略全角色喜好物品列表_百度知道",
+      "url": "https://zhidao.baidu.com/question/2212997835250086068.html",
+      "snippet": "Apr 18, 2023 · SeekGirl:FogⅠ礼物攻略全角色喜好物品列表Seek Girl:FogⅠ送礼物攻略,在游戏中每名角色的喜好物品都不尽相同。下 …"
+    },
+    {
+      "title": "vfp中怎么使用find，seek命令_百度知道",
+      "url": "https://zhidao.baidu.com/question/343046593.html",
+      "snippet": "vfp中怎么使用find，seek命令一.find命令:格式:find 字符串说明: (1).该命令用于已建立索引且索引已打开的情况，执行该命令将使用索 …"
+    },
+    {
+      "title": "知乎",
+      "url": "https://www.zhihu.com/en/answer/3421323381",
+      "snippet": "There are many complex reasons, and if AV is seen as a threshold to enter the entertainment industry and other high-income jobs, it …"
+    },
+    {
+      "title": "动态规划的最优子结构问题，有什么样的问题它不满足最优子结构？",
+      "url": "https://www.zhihu.com/question/52165201",
+      "snippet": "Oct 31, 2016 · 但是，对于最优路径上 -4 这个点，最优路径从起点到该点的部分，却不是从起点到该点的所有路径中，数字总和的绝 …"
+    },
+    {
+      "title": "seek to加 do 还是doingseek to 跟seek for有什么区别_百度知道",
+      "url": "https://zhidao.baidu.com/question/2014987676166218348.html",
+      "snippet": "seek to加 do，seek to 跟seek for的区别是：表达的意思不同、用法不同 一、意思不同 1、seek to 的意思是：设法; 企图，试图 例 …"
+    }
+  ]
+}

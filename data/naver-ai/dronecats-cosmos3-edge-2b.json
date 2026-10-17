@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "naver-ai/DroneCATS-Cosmos3-Edge-2B",
+  "slug": "naver-ai-dronecats-cosmos3-edge-2b",
+  "author": "naver-ai",
+  "url": "https://huggingface.co/naver-ai/DroneCATS-Cosmos3-Edge-2B",
+  "created_at": "2026-10-16T23:24:45.000Z",
+  "updated_at": "2026-10-17T00:25:44.000Z",
+  "license": "openmdw1.1-license",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "cosmos3_edge",
+    "image-text-to-text",
+    "drone",
+    "vision-language-action",
+    "conversational",
+    "en",
+    "arxiv:2609.01404",
+    "base_model:nvidia/Cosmos3-Edge",
+    "base_model:finetune:nvidia/Cosmos3-Edge",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2435616496,
+  "parameters_human": "2.44B",
+  "storage_bytes": 4892306051,
+  "storage_human": "4.9 GB",
+  "base_model": "nvidia/Cosmos3-Edge",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NAVER",
+      "url": "https://www.naver.com/",
+      "snippet": "네이버는 다양한 정보와 유용한 컨텐츠를 제공하는 대한민국 대표 포털 사이트입니다."
+    },
+    {
+      "title": "www.naver.co.kr",
+      "url": "https://www.naver.co.kr/index.html",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "Naver - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Naver",
+      "snippet": "Naver (Korean: 네이버; stylized as NAVER) is a South Korean online platform operated by the Naver Corporation. The company's …"
+    },
+    {
+      "title": "Naver — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Naver",
+      "snippet": "Naver (hangeul : 네이버) est une plateforme en ligne sud-coréenne gérée par la société Naver Corporation. Le site a été créé en …"
+    },
+    {
+      "title": "Naver Corporation - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Naver_Corporation",
+      "snippet": "Naver Corporation (Korean: 네이버 주식회사; stylized as NAVER) is a South Korean internet conglomerate headquartered in …"
+    }
+  ]
+}

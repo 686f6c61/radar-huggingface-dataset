@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "y0urOy/JAM-Wan-PiperX",
+  "slug": "y0uroy-jam-wan-piperx",
+  "author": "y0urOy",
+  "url": "https://huggingface.co/y0urOy/JAM-Wan-PiperX",
+  "created_at": "2026-10-17T01:08:34.000Z",
+  "updated_at": "2026-10-17T01:13:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "robotics",
+    "imitation-learning",
+    "piper-x",
+    "robodojo",
+    "jam",
+    "pytorch",
+    "en",
+    "dataset:RoboDojo-Benchmark/Robodojo",
+    "base_model:Wan-AI/Wan2.2-TI2V-5B",
+    "base_model:finetune:Wan-AI/Wan2.2-TI2V-5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14225504660,
+  "storage_human": "14.2 GB",
+  "base_model": "Wan-AI/Wan2.2-TI2V-5B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Help - sugar cane won't grow when it seems it should",
+      "url": "https://www.minecraftforum.net/forums/minecraft-java-edition/discussion/3021345-help-sugar-cane-wont-grow-when-it-seems-it-should",
+      "snippet": "May 16, 2020 · As you can see below, I have a large sugar cane farm out in the sunlight (with added torches) with each block being …Read more"
+    },
+    {
+      "title": "Farming on Caves - Discussion - Minecraft: Java Edition - Minecraft ...",
+      "url": "https://www.minecraftforum.net/forums/minecraft-java-edition/discussion/134505-farming-on-caves",
+      "snippet": "May 7, 2011 · I want to try something. Can I farm sugar canes from caves (with presence of water, ofc). And can I farm others (cati for …"
+    },
+    {
+      "title": "Sugar cane yaw, pitch, and speed | Hypixel Forums",
+      "url": "https://hypixel.net/threads/sugar-cane-yaw-pitch-and-speed.5619434/",
+      "snippet": "Mar 15, 2024 · Hi I was just wondering the yaw, pitch, and speed I should be at to farm sugarcane. Thank you!"
+    },
+    {
+      "title": "What is the best tool to farm Sugarcane (Not expensive)",
+      "url": "https://hypixel.net/threads/what-is-the-best-tool-to-farm-sugarcane-not-expensive.4965552/",
+      "snippet": "May 29, 2022 · nah i heard potato hoe is the meta for sugarcane now"
+    },
+    {
+      "title": "Please help with sugar cane farm - Minecraft Forum",
+      "url": "https://www.minecraftforum.net/forums/minecraft-java-edition/redstone-discussion-and/350414-please-help-with-sugar-cane-farm",
+      "snippet": "Aug 21, 2024 · I have a strange bug in my sugar cane farm, and I was wondering if anyone here might have an idea on how to fix it. …"
+    }
+  ]
+}

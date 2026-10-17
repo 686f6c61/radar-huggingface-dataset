@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "DataScience-UIBK/Agent-uibk-v1",
+  "slug": "datascience-uibk-agent-uibk-v1",
+  "author": "DataScience-UIBK",
+  "url": "https://huggingface.co/DataScience-UIBK/Agent-uibk-v1",
+  "created_at": "2026-10-16T18:35:06.000Z",
+  "updated_at": "2026-10-16T19:14:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "PyLate",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "PyLate",
+    "safetensors",
+    "modernbert",
+    "ColBERT",
+    "multi-vector",
+    "sentence-transformers",
+    "sentence-similarity",
+    "feature-extraction",
+    "late-interaction",
+    "ModernBERT",
+    "agentic-search",
+    "deep-research",
+    "en",
+    "dataset:Tevatron/AgentIR-data",
+    "dataset:Yuqi-Zhou/LRAT-Train",
+    "arxiv:2603.04384",
+    "arxiv:2604.04949",
+    "arxiv:2508.06600",
+    "base_model:DataScience-UIBK/uibk-embedding-v1",
+    "base_model:finetune:DataScience-UIBK/uibk-embedding-v1",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149015808,
+  "parameters_human": "149.0M",
+  "storage_bytes": 717323432,
+  "storage_human": "717 MB",
+  "base_model": "DataScience-UIBK/uibk-embedding-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Data Science : définition, problématiques et cas d'usage",
+      "url": "https://liora.io/data-science-definition",
+      "snippet": "Qu’est-ce que la Data Science ? La Data Science, ou science des données, vise à transformer des données brutes en informations …"
+    },
+    {
+      "title": "Data Science : définition, usages et compétences requises",
+      "url": "https://www.lebigdata.fr/data-science-definition",
+      "snippet": "Jul 12, 2026 · Découvrez la définition de la notion de data science, ou science des données, ainsi que ses secteurs d'application et …"
+    },
+    {
+      "title": "Science des données — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Science_des_donn%C3%A9es",
+      "snippet": "La science des données (en anglais : data science) est un domaine interdisciplinaire qui utilise les mathématiques, les statistiques, …"
+    },
+    {
+      "title": "Data science - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Data_science",
+      "snippet": "Data science is often described as a multidisciplinary and rapidly evolving field because it draws on techniques from diverse areas, …"
+    },
+    {
+      "title": "Bootcamp Data Science | Python & Machine Learning en 9 semaines",
+      "url": "https://www.lewagon.com/fr/data-science-course/",
+      "snippet": "Apprenez Python, Data Science et Machine Learning. En 9 semaines, développez des compétences recherchées et lancez votre …"
+    }
+  ]
+}

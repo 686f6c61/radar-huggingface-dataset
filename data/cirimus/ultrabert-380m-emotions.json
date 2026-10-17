@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "cirimus/ultrabert-380M-emotions",
+  "slug": "cirimus-ultrabert-380m-emotions",
+  "author": "cirimus",
+  "url": "https://huggingface.co/cirimus/ultrabert-380M-emotions",
+  "created_at": "2026-10-16T22:51:48.000Z",
+  "updated_at": "2026-10-16T22:52:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "ultrabert",
+    "text-classification",
+    "pytorch",
+    "UltraBERT",
+    "emotions",
+    "multi-class-classification",
+    "custom_code",
+    "en",
+    "dataset:cirimus/super-emotion",
+    "base_model:dmis-lab/UltraBERT-380M",
+    "base_model:finetune:dmis-lab/UltraBERT-380M",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 377544711,
+  "parameters_human": "377.5M",
+  "storage_bytes": 1510358724,
+  "storage_human": "1.5 GB",
+  "base_model": "dmis-lab/UltraBERT-380M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "سكس عربي - أشرطة الفيديو الاباحية شعبية [941] @ Porn 2012",
+      "url": "https://www.porn2012.com/ar/free/arab/",
+      "snippet": "# 18-19 سنه 3D أ أقزام ألمانى إ إغراء إيمو ا ابناء عم ادخال اسبانيات استحمام اسود اغراء اقدام الركبه المرتفعات العاب الكشف المتلصص المزرعه الهنغارية ام امتحان (طبي) امرأة سمراء امهات …"
+    },
+    {
+      "title": "عرب بورن | موقع فيديوهات سكس عربية للكبار فقط",
+      "url": "https://arabprn.com/",
+      "snippet": "عرب بورن هو موقع فيديوهات سكس عربية للكبار فقط، يجمع أفضل المقاطع العربية من عدة منصات في مكان واحد. تصفح حسب التصنيف، الأحدث أو مدة الفيديو واستمتع بمحتوى كامل باللغة العربية."
+    },
+    {
+      "title": "تصنيفات الافلام - سكس العرب",
+      "url": "https://sexalarab.com/categories/",
+      "snippet": "موقع سكس العرب هو اكبر منصة عربية اباحية مهتمة بترجمة افلام السكس الاجنبية للعربية, يقدم لكم احدث و اخر الفديوهات و المقاطع الجنسية في عالم البورن من اشهر الشركات العالمية, برازرس, …"
+    },
+    {
+      "title": "سكس عربي جديد 2026 HD فيديوهات سكس عربي فاجرة",
+      "url": "https://sexsaoy.com/categories/%D8%B3%D9%83%D8%B3-%D8%B9%D8%B1%D8%A8%D9%8A/",
+      "snippet": "شاهد أجدد فيديوهات سكس عربي 2026 بجودة HD مجاناً. بنات عربيات فاجرات بجسم نار وطيز مربربة بيتناكوا جامد من زبر تقيلة في أوضاع مختلفة. مشاهد نيك عربي أصلي وحصري يومي يجننك …"
+    },
+    {
+      "title": "Xnxx Arab - أفلام سكس مترجمة عربية HD",
+      "url": "https://xnxxarab.cc/",
+      "snippet": "Xnxx Arab - أفلام سكس عربي مجانية HD. أحدث سكس مترجم عربي، سكس مصري، محارم وشحوة ساخنة. فيديوهات جديدة كل يوم بجودة عالية. شاهد الآن واستمتع بلا حدود!"
+    }
+  ]
+}

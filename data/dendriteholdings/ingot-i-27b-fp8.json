@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "dendriteholdings/Ingot-I-27B-FP8",
+  "slug": "dendriteholdings-ingot-i-27b-fp8",
+  "author": "dendriteholdings",
+  "url": "https://huggingface.co/dendriteholdings/Ingot-I-27B-FP8",
+  "created_at": "2026-10-16T18:23:59.000Z",
+  "updated_at": "2026-10-16T18:25:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 30879676016,
+  "storage_human": "30.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=created",
+      "snippet": "Together AI · Fireworks · Featherless AI · Zai. + 9 + 11 + 10. Hardware ... dendriteholdings/Ingot-I-27B-FP8. 28B • Updated in about 18 hours · MoshiQAQ ..."
+    }
+  ]
+}

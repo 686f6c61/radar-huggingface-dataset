@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Jessedbrown/Browns-infinite-play-and-zoom",
+  "slug": "jessedbrown-browns-infinite-play-and-zoom",
+  "author": "Jessedbrown",
+  "url": "https://huggingface.co/Jessedbrown/Browns-infinite-play-and-zoom",
+  "created_at": "2026-10-16T20:24:04.000Z",
+  "updated_at": "2026-08-07T00:28:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Se connecter à Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Se connecter à Gmail Pour ouvrir Gmail, vous pouvez vous connecter à partir d'un ordinateur ou ajouter votre compte à l'application …"
+    },
+    {
+      "title": "Créer un compte Google",
+      "url": "https://support.google.com/accounts/answer/27441?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Un compte Gmail est-il identique à un compte Google ? Vos comptes Gmail et Google sont distincts. Un compte Gmail est l'un des …"
+    },
+    {
+      "title": "Se connecter à Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=fr&co=GENIE.Platform%3DAndroid",
+      "snippet": "Se connecter à Gmail Pour ouvrir Gmail, vous pouvez vous connecter à partir d'un ordinateur ou ajouter votre compte à l'application …"
+    },
+    {
+      "title": "Lire les messages Gmail dans d'autres clients de messagerie avec POP",
+      "url": "https://support.google.com/mail/answer/7104828?hl=fr",
+      "snippet": "Si le message d'erreur \"Les limites de bande passante ou de commande POP ont été dépassées pour ce compte\" s'affiche, cela …"
+    },
+    {
+      "title": "Récupérer votre compte Google ou Gmail",
+      "url": "https://support.google.com/accounts/answer/7682439?hl=fr",
+      "snippet": "Récupérer votre compte Google ou Gmail Vous avez besoin d'aide pour vous connecter à votre compte Google ? Obtenir de l'aide …"
+    }
+  ]
+}

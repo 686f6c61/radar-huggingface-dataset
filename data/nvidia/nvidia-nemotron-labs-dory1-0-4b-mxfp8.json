@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-MXFP8",
+  "slug": "nvidia-nvidia-nemotron-labs-dory1-0-4b-mxfp8",
+  "author": "nvidia",
+  "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-MXFP8",
+  "created_at": "2026-10-16T18:26:53.000Z",
+  "updated_at": "2026-10-17T00:19:56.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dory",
+    "text-generation",
+    "nvidia",
+    "pytorch",
+    "nemotron-labs",
+    "conversational",
+    "en",
+    "dataset:nvidia/nemotron-post-training-v3",
+    "dataset:nvidia/nemotron-pre-training-datasets",
+    "license:other",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3975229440,
+  "parameters_human": "3.98B",
+  "storage_bytes": 4769347885,
+  "storage_human": "4.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "World Leader in Artificial Intelligence Computing | NVIDIA",
+      "url": "https://www.nvidia.com/",
+      "snippet": "NVIDIA RTX™ powers the world’s fastest PCs and the ultimate platform for gamers and creators. Enjoy beautiful ray tracing, AI …"
+    },
+    {
+      "title": "Téléchargez les pilotes NVIDIA officiels | NVIDIA",
+      "url": "https://www.nvidia.com/fr-fr/drivers/",
+      "snippet": "Téléchargez les pilotes NVIDIA officiels les plus récents pour optimiser votre expérience de jeu sur PC et faire tourner vos …"
+    },
+    {
+      "title": "NVIDIA",
+      "url": "https://www.nvidia.fr/default.htm",
+      "snippet": "Explorez les dernières innovations et produits NVIDIA, leader en technologies graphiques et d'intelligence artificielle."
+    },
+    {
+      "title": "Nvidia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nvidia",
+      "snippet": "Founded in 1993 by Jensen Huang, Chris Malachowsky, and Curtis Priem, Nvidia has been widely described as a Big Tech …"
+    },
+    {
+      "title": "GeForce NOW",
+      "url": "https://play.geforcenow.com/",
+      "snippet": "Instantly play the most demanding PC games and seamlessly play across your devices."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "coolbho3k/DeepSeek-V4.1-Flash-GRAFT-3bpw",
+  "slug": "coolbho3k-deepseek-v4-1-flash-graft-3bpw",
+  "author": "coolbho3k",
+  "url": "https://huggingface.co/coolbho3k/DeepSeek-V4.1-Flash-GRAFT-3bpw",
+  "created_at": "2026-10-16T06:37:14.000Z",
+  "updated_at": "2026-10-16T23:51:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "trellis",
+  "languages": [],
+  "tags": [
+    "trellis",
+    "safetensors",
+    "deepseek_v41",
+    "quantization",
+    "mxfp4",
+    "graft",
+    "image-text-to-text",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash",
+    "license:mit",
+    "ds41_exl3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 111078656624,
+  "parameters_human": "111.08B",
+  "storage_bytes": 215501921824,
+  "storage_human": "215.5 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nouvelles histoires érotiques - Literotica.com",
+      "url": "https://french.literotica.com/new/stories",
+      "snippet": "1 day ago · Nouvelles histoires érotiques gratuites ajoutées à Literotica ces derniers jours."
+    },
+    {
+      "title": "LGBTQIA+ Chatter - Literotica Discussion Board",
+      "url": "https://forum.literotica.com/forums/lgbtqia-chatter.29/",
+      "snippet": "Oct 13, 2015 · Discussion of non-straight sexuality and life. Find support and friends."
+    },
+    {
+      "title": "Authors Hangout - Literotica Discussion Board",
+      "url": "https://forum.literotica.com/forums/authors-hangout.3/",
+      "snippet": "Apr 28, 2025 · A place for writers and readers to socialize and discuss the craft of writing."
+    },
+    {
+      "title": "Politics Board - Literotica Discussion Board",
+      "url": "https://forum.literotica.com/forums/politics-board.67/",
+      "snippet": "Jul 2, 2024 · Discuss worldwide political and social issues, and share your opinions and views on current events!"
+    }
+  ]
+}

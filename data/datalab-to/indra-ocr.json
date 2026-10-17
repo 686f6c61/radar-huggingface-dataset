@@ -54,13 +54,13 @@
     "license:openrail",
     "region:us"
   ],
-  "likes": 122,
+  "likes": 137,
   "downloads_30d": 442,
-  "trending_score": 121,
+  "trending_score": 133,
   "parameters": 1236366,
   "parameters_human": "1.2M",
-  "storage_bytes": 83614811,
-  "storage_human": "84 MB",
+  "storage_bytes": 45832795,
+  "storage_human": "46 MB",
   "base_model": null,
   "formats": [
     "onnx",

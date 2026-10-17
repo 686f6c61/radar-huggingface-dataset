@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "rudi-lubis/document-ai",
+  "slug": "rudi-lubis-document-ai",
+  "author": "rudi-lubis",
+  "url": "https://huggingface.co/rudi-lubis/document-ai",
+  "created_at": "2026-10-16T21:46:12.000Z",
+  "updated_at": "2026-10-16T21:46:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "document-ai",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "marty (lutēce) - solid snake lyrics | azlyrics.biz",
+      "url": "https://azlyrics.biz/m/marty-lutece-lyrics/marty-lutece-solid-snake-lyrics/",
+      "snippet": "marty (lutēce) - solid snake lyrics : [intro] lutēce, lutēce, lutēce i think you might be happy solid, solid solid snake solid snake solid …"
+    },
+    {
+      "title": "Biographies des personnages de Metal Gear Solid -- Metal Gear Solid ...",
+      "url": "https://metalgearsolid.fr/snake2.html",
+      "snippet": "Liquid et Solid sont deux personnages radicalement opposés. Suite à ces manipulations génétiques, le gouvernement décide de …"
+    },
+    {
+      "title": "Metal Gear Solid - Wikiquote, le recueil de citations libres",
+      "url": "https://fr.m.wikiquote.org/wiki/Metal_Gear_Solid",
+      "snippet": "Metal Gear Solid Une page de Wikiquote, le recueil des citations libres. Metal Gear Solid est jeu vidéo d'infiltration développé et …"
+    },
+    {
+      "title": "[PC] Regarder dans le viseur sur le forum Metal Gear Solid V : The ...",
+      "url": "https://www.jeuxvideo.com/forums/42-18557-40968618-1-0-1-0-0.htm",
+      "snippet": "Sep 8, 2015 · Topic [PC] Regarder dans le viseur Metal Gear Solid V : The Phantom Pain Tout support PC PS4 ONE PS3 360 Liste …"
+    },
+    {
+      "title": "Solid Snake | Wiki Super Smash Bros. | Fandom",
+      "url": "https://supersmashbros.fandom.com/fr/wiki/Solid_Snake",
+      "snippet": "Solid Snake, David de son vrai nom est le protagoniste principal de l'Univers Metal Gear, une série créée par Konami. C'est un agent …"
+    }
+  ]
+}

@@ -5,9 +5,9 @@
   "author": "tknika",
   "url": "https://huggingface.co/tknika/gliner2-PII-basque-v2",
   "created_at": "2026-10-10T19:37:32.000Z",
-  "updated_at": "2026-10-10T19:52:46.000Z",
-  "license": "apache-2.0",
-  "license_family": "oss",
+  "updated_at": "2026-10-16T19:54:40.000Z",
+  "license": "cc-by-nc-sa-4.0",
+  "license_family": "non-commercial",
   "pipeline_tag": null,
   "library": "gliner2",
   "languages": [
@@ -36,7 +36,7 @@
     "arxiv:2111.09543",
     "base_model:fastino/gliner2-privacy-filter-PII-multi",
     "base_model:finetune:fastino/gliner2-privacy-filter-PII-multi",
-    "license:apache-2.0",
+    "license:cc-by-nc-sa-4.0",
     "model-index",
     "region:us"
   ],

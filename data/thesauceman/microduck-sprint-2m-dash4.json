@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "TheSauceman/microduck-sprint-2m-dash4",
+  "slug": "thesauceman-microduck-sprint-2m-dash4",
+  "author": "TheSauceman",
+  "url": "https://huggingface.co/TheSauceman/microduck-sprint-2m-dash4",
+  "created_at": "2026-10-16T22:00:53.000Z",
+  "updated_at": "2026-10-16T22:00:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5643405,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TheSauceman/microduck-sprint-2m-ar04-stand02 · Hugging Face",
+      "url": "https://huggingface.co/TheSauceman/microduck-sprint-2m-ar04-stand02",
+      "snippet": "How to use TheSauceman/microduck-sprint-2m-ar04-stand02 with Microduck: # Replace SLOT with the slot specified in the model card (walk, stand, sitstand, ground_pick ..."
+    },
+    {
+      "title": "README.md · pollen-robotics/microduck-sprint-2m-reference at refs/pr/1",
+      "url": "https://huggingface.co/pollen-robotics/microduck-sprint-2m-reference/blob/refs%2Fpr%2F1/README.md",
+      "snippet": "Pollen&#x27;s reference for the Microduck Arena&#x27;s 2 m Sprint: the sprint_2m challenge of microduck-challenges trained unchanged with its recipe (4096 envs, 3000 iterations, seed 1); checkpoint 1000, its fastest on the Arena. A perpetual policy for the microduck (61-D observation, 14 actions, 50 Hz). Runs until told otherwise — a gait for the walk ..."
+    },
+    {
+      "title": "microduck-challenges/src/microduck_challenges/sprint_2m at main ...",
+      "url": "https://github.com/pollen-robotics/microduck-challenges/tree/main/src/microduck_challenges/sprint_2m",
+      "snippet": "One training folder per open Microduck Arena challenge - pollen-robotics/microduck-challenges"
+    },
+    {
+      "title": "GitHub - AI-FanGe/Microduck-build-tutorial: A practical hardware and ...",
+      "url": "https://github.com/AI-FanGe/Microduck-build-tutorial",
+      "snippet": "A practical hardware and software setup for a compact RL-powered biped robot. - AI-FanGe/Microduck-build-tutorial"
+    },
+    {
+      "title": "Microduck - A tiny biped robot you can teach new tricks | Pollen Robotics",
+      "url": "https://pollen-robotics.com/microduck/",
+      "snippet": "Microduck is a 25 cm biped robot with 15 motors, a camera, LiDAR and a grasping beak. Playable out of the box, and its open-source stack lets you train new behaviours in simulation and run them on the robot. Pre-order at $399."
+    }
+  ]
+}

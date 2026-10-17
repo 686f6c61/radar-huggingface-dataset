@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "pdjamez/Tatties-350M-Base",
+  "slug": "pdjamez-tatties-350m-base",
+  "author": "pdjamez",
+  "url": "https://huggingface.co/pdjamez/Tatties-350M-Base",
+  "created_at": "2026-10-16T20:31:15.000Z",
+  "updated_at": "2026-10-16T20:54:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "causal-lm",
+    "base-model",
+    "mlx",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 350439552,
+  "parameters_human": "350.4M",
+  "storage_bytes": 1402335213,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

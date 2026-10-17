@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "henryhale/bpe-en-sw-af-de-fr-es-zh-128k",
+  "slug": "henryhale-bpe-en-sw-af-de-fr-es-zh-128k",
+  "author": "henryhale",
+  "url": "https://huggingface.co/henryhale/bpe-en-sw-af-de-fr-es-zh-128k",
+  "created_at": "2026-10-16T21:38:01.000Z",
+  "updated_at": "2026-10-16T21:40:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "tokenizers",
+  "languages": [
+    "en",
+    "sw",
+    "af",
+    "de",
+    "fr",
+    "es",
+    "zh"
+  ],
+  "tags": [
+    "tokenizers",
+    "tokenizer",
+    "bpe",
+    "baseline",
+    "multilingual",
+    "african-languages",
+    "en",
+    "sw",
+    "af",
+    "de",
+    "fr",
+    "es",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bpe.model · IndexTeam/IndexTTS-2 at main - Hugging Face",
+      "url": "https://huggingface.co/IndexTeam/IndexTTS-2/blob/main/bpe.model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "Access 45,000+ models from leading AI providers through a single, unified API with no service fees. Deploy on optimized Inference Endpoints or update your Spaces applications to a GPU in a few clicks. We are building the foundation of ML tooling with the community."
+    },
+    {
+      "title": "GitHub - bheinzerling/bpemb: Pre-trained subword embeddings in 275 ...",
+      "url": "https://github.com/bheinzerling/bpemb",
+      "snippet": "BPEmb is a collection of pre-trained subword embeddings in 275 languages, based on Byte-Pair Encoding (BPE) and trained on Wikipedia. Its intended use is as input for neural models in natural language processing."
+    },
+    {
+      "title": "BPE (Byte Pair Encoding) | huggingface/tokenizers | DeepWiki",
+      "url": "https://deepwiki.com/huggingface/tokenizers/4.1-bpe-(byte-pair-encoding)",
+      "snippet": "BPE is a subword tokenization algorithm that iteratively merges the most frequent pairs of characters or character sequences to build a vocabulary of subword units. This model is used by popular architectures like GPT-2, RoBERTa, and Llama. For information about training a BPE model, see BPE Training."
+    },
+    {
+      "title": "HITS - BPEmb: Subword Embeddings in 275 Languages",
+      "url": "https://bpemb.h-its.org/",
+      "snippet": "Instead of training 275 monolingual subword segmentations models and embeddings, here we&#x27;ve trained one large, multilingual segmentation model and corresponding embeddings with a subword vocabulary that is shared among all 275 languages."
+    }
+  ]
+}

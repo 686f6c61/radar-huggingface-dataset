@@ -27,6 +27,7 @@
     "base_model:Qwen/Qwen3.5-0.8B",
     "base_model:finetune:Qwen/Qwen3.5-0.8B",
     "license:apache-2.0",
+    "eval-results",
     "endpoints_compatible",
     "region:us"
   ],

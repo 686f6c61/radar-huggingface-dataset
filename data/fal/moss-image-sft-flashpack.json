@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "fal/MOSS-Image-SFT-flashpack",
+  "slug": "fal-moss-image-sft-flashpack",
+  "author": "fal",
+  "url": "https://huggingface.co/fal/MOSS-Image-SFT-flashpack",
+  "created_at": "2026-10-16T18:36:41.000Z",
+  "updated_at": "2026-10-16T18:39:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "diffusers",
+    "moss-image",
+    "text-to-image",
+    "en",
+    "zh",
+    "base_model:OpenMOSS-Team/MOSS-Image-Base",
+    "base_model:finetune:OpenMOSS-Team/MOSS-Image-Base",
+    "license:apache-2.0",
+    "diffusers:MOSSImagePipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27228816227,
+  "storage_human": "27.2 GB",
+  "base_model": "OpenMOSS-Team/MOSS-Image-Base",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FFF - Foot Animation & Loisir",
+      "url": "https://fal-ui.fff.fr/",
+      "snippet": ""
+    },
+    {
+      "title": "Gen Media AI Inference Platform & Serverless GPUs | fal",
+      "url": "https://fal.ai/",
+      "snippet": "fal is the generative media inference platform: call 1,000+ models via one API, deploy your own on serverless GPUs, or train on GPU …"
+    },
+    {
+      "title": "FN FAL/FALO — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/FN_FAL/FALO",
+      "snippet": "Le FAL (pour « Fusil Automatique Léger ») est un fusil de combat pouvant tirer en automatique et semi-automatique de calibre 7,62 …"
+    },
+    {
+      "title": "awesome-minimax-h3-prompts - Anil-matcha - GitHub",
+      "url": "https://github.com/Anil-matcha/awesome-minimax-h3-prompts",
+      "snippet": "awesome-ai-video-models — Compare AI video models by API, price, and capability. Open-Generative-AI — Open-source studio for running generative image and video ..."
+    },
+    {
+      "title": "Utilisation Plateforme FAL - DISTRICT DE L'HÉRAULT DE FOOTBALL",
+      "url": "https://herault.fff.fr/simple/aide-utilisation-logiciel-foot-animation-loisir-fal/",
+      "snippet": "Aug 12, 2024 · La Plateforme FAL (Football animation et Loisirs) doit être utilisée pour la Gestion du Football Animation, en …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "5ak3t",
   "url": "https://huggingface.co/5ak3t/scm-max-14b-v0",
   "created_at": "2026-10-15T02:53:53.000Z",
-  "updated_at": "2026-10-16T02:50:46.000Z",
+  "updated_at": "2026-10-16T07:00:31.000Z",
   "license": "mixed-training-data",
   "license_family": "unknown",
   "pipeline_tag": "text-classification",
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 18,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

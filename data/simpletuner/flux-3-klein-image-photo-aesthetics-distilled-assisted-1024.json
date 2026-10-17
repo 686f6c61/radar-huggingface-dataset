@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "SimpleTuner/flux-3-klein-image-photo-aesthetics-distilled-assisted-1024",
+  "slug": "simpletuner-flux-3-klein-image-photo-aesthetics-distilled-assisted-1024",
+  "author": "SimpleTuner",
+  "url": "https://huggingface.co/SimpleTuner/flux-3-klein-image-photo-aesthetics-distilled-assisted-1024",
+  "created_at": "2026-10-16T15:49:16.000Z",
+  "updated_at": "2026-10-17T02:47:20.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "flux3_image",
+    "flux3_image-diffusers",
+    "text-to-image",
+    "image-to-image",
+    "simpletuner",
+    "not-for-all-audiences",
+    "lora",
+    "template:sd-lora",
+    "standard",
+    "base_model:black-forest-labs/flux-3-image-klein",
+    "base_model:adapter:black-forest-labs/flux-3-image-klein",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4781506980,
+  "storage_human": "4.8 GB",
+  "base_model": "black-forest-labs/flux-3-image-klein",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Flux 3 Image Klein : ImageGen & Edit with 10 images (BF16/FP8/NVFP4/GGUF)",
+      "url": "https://www.stablediffusiontutorials.com/2026/10/flux3-image-klein.html",
+      "snippet": "FLUX 3 Image Klein addresses these problems by bringing image generation and editing into one model, with support for multiple reference images, spatial guidance, and prompt enhancement."
+    },
+    {
+      "title": "Home - SimpleTuner",
+      "url": "http://docs.simpletuner.io/",
+      "snippet": "SimpleTuner SimpleTuner is a multi-modal diffusion model fine-tuning toolkit focused on simplicity and ease of understanding."
+    },
+    {
+      "title": "Black Forest Labs Releases FLUX 3 Image Klein With 5.6B Parameters",
+      "url": "https://www.technobezz.com/news/black-forest-labs-flux-image-klein-parameters",
+      "snippet": "Black Forest Labs has released FLUX 3 Image Klein, a 5.6B parameter image model with downloadable weights, support for 8GB GPUs and API pricing starting at $0.009 per 1K image."
+    },
+    {
+      "title": "Flux (text-to-image model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Flux_(text-to-image_model)",
+      "snippet": "Flux is a family of text-to-image and image-to-image models developed by Black Forest Labs (BFL), based in Freiburg im Breisgau, Germany. Black Forest Labs was founded by former employees of Stability AI. As with other text-to-image models, Flux generates images from natural language descriptions, called prompts. In addition, some Flux models support editing images."
+    },
+    {
+      "title": "Welcome FLUX.3 Image Klein in Diffusers - Hugging Face",
+      "url": "https://huggingface.co/blog/flux-3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

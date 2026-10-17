@@ -32,6 +32,7 @@
     "base_model:google/embeddinggemma-2",
     "base_model:finetune:google/embeddinggemma-2",
     "license:apache-2.0",
+    "eval-results",
     "region:us"
   ],
   "likes": 60,

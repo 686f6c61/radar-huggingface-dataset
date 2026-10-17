@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "josueu/m2m100_T4_B_SM_Dataset_Tok_Corr_Loss_v1",
+  "slug": "josueu-m2m100_t4_b_sm_dataset_tok_corr_loss_v1",
+  "author": "josueu",
+  "url": "https://huggingface.co/josueu/m2m100_T4_B_SM_Dataset_Tok_Corr_Loss_v1",
+  "created_at": "2026-10-15T22:11:29.000Z",
+  "updated_at": "2026-10-16T23:00:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "m2m_100",
+    "text2text-generation",
+    "generated_from_trainer",
+    "base_model:facebook/m2m100_418M",
+    "base_model:finetune:facebook/m2m100_418M",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 32,
+  "trending_score": 0,
+  "parameters": 483898368,
+  "parameters_human": "483.9M",
+  "storage_bytes": 56136377443,
+  "storage_human": "56.1 GB",
+  "base_model": "facebook/m2m100_418M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/?gl=FR&hl=fr",
+      "snippet": "Profitez des vidéos et de la musique que vous aimez, mettez en ligne des contenus originaux, et partagez-les avec vos amis, vos …Read more"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/?lang=fr",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    },
+    {
+      "title": "YouTube - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=en-US",
+      "snippet": "Get the official YouTube app on Android phones and tablets. See what the world is watching -- from the hottest music videos to …"
+    },
+    {
+      "title": "YouTube - Google Accounts",
+      "url": "https://accounts.google.com/InteractiveLogin?service=youtube",
+      "snippet": "Share your videos with friends, family, and the world."
+    }
+  ]
+}

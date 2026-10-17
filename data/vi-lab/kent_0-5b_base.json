@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Vi-LAB/KenT_0.5B_Base",
+  "slug": "vi-lab-kent_0-5b_base",
+  "author": "Vi-LAB",
+  "url": "https://huggingface.co/Vi-LAB/KenT_0.5B_Base",
+  "created_at": "2026-10-16T02:54:52.000Z",
+  "updated_at": "2026-10-16T23:08:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "blind_decoder",
+    "text-generation",
+    "causal-lm",
+    "custom-architecture",
+    "pretrained",
+    "en",
+    "dataset:wikimedia/wikipedia",
+    "dataset:TIGER-Lab/MMLU-Pro",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 28,
+  "trending_score": 0,
+  "parameters": 484934656,
+  "parameters_human": "484.9M",
+  "storage_bytes": 1939774408,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-10-17T02:57:58.375Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vi — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Vi",
+      "snippet": "vi est un éditeur de texte plein écran écrit par Bill Joy en 1976 sur une des premières versions de la distribution Unix BSD. Il est …"
+    },
+    {
+      "title": "vi (text editor) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Vi_(text_editor)",
+      "snippet": "History Creation Bill Joy, the original creator of the vi editor, in 2003 vi was derived from a sequence of UNIX command line editors, …"
+    },
+    {
+      "title": "Vi (Vodafone Idea) - Vi Max Postpaid | Prepaid | Vi Games & More",
+      "url": "https://www.myvi.in/",
+      "snippet": "Vodafone and Idea are now Vi. Vi brings you a wide range of postpaid and prepaid services. Explore our plans for postpaid, prepaid, …"
+    },
+    {
+      "title": "Vi - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/VI",
+      "snippet": "This disambiguation page lists articles associated with the title Vi. If an internal link incorrectly led you here, you may wish to change …"
+    },
+    {
+      "title": "Alles over voetbal",
+      "url": "https://www.vi.nl/",
+      "snippet": "VI Tijdmachine Toen Kasper Dolberg iedereen rode koontjes bezorgde Vardy maakt eerste treffer voor Burnley, maar verliest van …"
+    }
+  ]
+}

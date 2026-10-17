@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "DQwalk/act_so101_pick_place_2cam_100000",
+  "slug": "dqwalk-act_so101_pick_place_2cam_100000",
+  "author": "DQwalk",
+  "url": "https://huggingface.co/DQwalk/act_so101_pick_place_2cam_100000",
+  "created_at": "2026-10-16T22:15:33.000Z",
+  "updated_at": "2026-10-16T22:16:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:DQwalk/so101_pick_place_2cam_100",
+    "arxiv:2304.13705",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714816,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Piscina en Maracaibo (@oasiszuliano) - Instagram",
+      "url": "https://www.instagram.com/oasiszuliano/",
+      "snippet": "22K Followers, 405 Following, 361 Posts - Piscina en Maracaibo (@oasiszuliano) on Instagram: \"Piscina en el centro de la ciudad 💦 …Read more"
+    },
+    {
+      "title": "Piscina en Municipio Maracaibo - Catálogo de Piscinas en ... - swimia",
+      "url": "https://esp.swimia.com/piscinas-en-venezuela/piscina-en-maracaibo/",
+      "snippet": "Busca tu club de natación en Municipio Maracaibo más cercano y empieza HOY MISMO! Swimia tiene la mayor, más actualizada y …"
+    },
+    {
+      "title": "Piscinas en Maracaibo - Centros Acuáticos en Municipio Maracaibo ...",
+      "url": "https://esp.swimia.com/piscinas-en-piscinas-en-venezuela/piscinas-en-maracaibo/",
+      "snippet": "Por favor contacta con las instalaciones de las Piscinas en Maracaibo que te mostramos para comprobar qué actividades acuáticas …"
+    },
+    {
+      "title": "Piscinas en Maracaibo - govserv.org",
+      "url": "https://www.govserv.org/VE/Maracaibo/243444/genre/124887510918208/Piscina+p%C3%BAblica",
+      "snippet": "Alquiler de Piscinas en Maracaibo. Los listados incluyen Poolparty.jly, Granja El Bohío, Granja Mis Soles, Piscina los Paraguitas, …"
+    },
+    {
+      "title": "Piscinas Braulio Club | Maracaibo - Facebook",
+      "url": "https://www.facebook.com/people/Piscinas-Braulio-Club/100063543701953/",
+      "snippet": "Natación en Piscinas Braulio! 👨‍👩‍👧‍👦 Promoción especial: 2 personas por tan solo $120 en nuestro horario sabatino. Clases para niños y …"
+    }
+  ]
+}

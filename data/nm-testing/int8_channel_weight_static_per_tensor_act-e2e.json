@@ -5,7 +5,7 @@
   "author": "nm-testing",
   "url": "https://huggingface.co/nm-testing/int8_channel_weight_static_per_tensor_act-e2e",
   "created_at": "2026-10-15T01:58:19.000Z",
-  "updated_at": "2026-10-16T01:45:09.000Z",
+  "updated_at": "2026-10-17T01:42:34.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -19,12 +19,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 288,
+  "downloads_30d": 291,
   "trending_score": 0,
   "parameters": 1100048384,
   "parameters_human": "1.10B",
-  "storage_bytes": 2464118024,
-  "storage_human": "2.5 GB",
+  "storage_bytes": 4928236048,
+  "storage_human": "4.9 GB",
   "base_model": null,
   "formats": [
     "safetensors"

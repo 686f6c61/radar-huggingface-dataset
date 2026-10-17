@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "banjotim/efficient-attention",
+  "slug": "banjotim-efficient-attention",
+  "author": "banjotim",
+  "url": "https://huggingface.co/banjotim/efficient-attention",
+  "created_at": "2026-10-16T23:42:21.000Z",
+  "updated_at": "2026-10-16T23:42:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "efficient-attention",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LinkedIn : s’identifier ou s’inscrire",
+      "url": "https://fr.linkedin.com/",
+      "snippet": "1 milliard de membres | Gérez votre image professionnelle. Constituez votre réseau professionnel et communiquez avec celui-ci. …"
+    },
+    {
+      "title": "Remi Cadene - Co-Founder and CEO at UMA | LinkedIn",
+      "url": "https://fr.linkedin.com/in/remi-cadene-6527509b",
+      "snippet": "Co-Founder and CEO at UMA · I am co-founder and CEO of UMA, where I build intelligent robots that enhance quality of life for …"
+    },
+    {
+      "title": "Emmanuel Macron - President of the French Republic. | LinkedIn",
+      "url": "https://fr.linkedin.com/in/emmanuelmacron/en",
+      "snippet": "President of the French Republic. · Experience: Présidence de la République · Location: Paris · 28 connections on LinkedIn. View …"
+    },
+    {
+      "title": "Thierry Delaporte - Group Chief Executive Officer and North ... - LinkedIn",
+      "url": "https://fr.linkedin.com/in/thierry-delaporte",
+      "snippet": "Group Chief Executive Officer and North America Chief Executive Officer, Sodexo · In November 2025, I joined Sodexo. My ambition …"
+    },
+    {
+      "title": "Saint-Gobain | LinkedIn",
+      "url": "https://fr.linkedin.com/company/saint-gobain",
+      "snippet": "Saint-Gobain | 1 187 398 abonnés sur LinkedIn. À propos de Saint-Gobain : Leader mondial de la construction durable, Saint-Gobain …"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "roman220220/LFM2.5-2.6B-GGUF-jang-imatrix",
+  "slug": "roman220220-lfm2-5-2-6b-gguf-jang-imatrix",
+  "author": "roman220220",
+  "url": "https://huggingface.co/roman220220/LFM2.5-2.6B-GGUF-jang-imatrix",
+  "created_at": "2026-10-17T00:15:51.000Z",
+  "updated_at": "2026-10-17T00:16:02.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "lfm2",
+    "liquid",
+    "imatrix",
+    "jang",
+    "quantized",
+    "text-generation",
+    "base_model:LiquidAI/LFM2.5-2.6B",
+    "base_model:quantized:LiquidAI/LFM2.5-2.6B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2697198592,
+  "parameters_human": "2.70B",
+  "storage_bytes": 1875885352,
+  "storage_human": "1.9 GB",
+  "base_model": "LiquidAI/LFM2.5-2.6B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IncestTabooFamily - Reddit",
+      "url": "https://www.reddit.com/r/IncestTabooFamily/",
+      "snippet": "The intent of r/IncestTabooFamily is to post best Curated Incest content and captions. Keeping it in family and lusting over each …"
+    },
+    {
+      "title": "First : r/Realinceststories - Reddit",
+      "url": "https://www.reddit.com/r/Realinceststories/comments/147c5yv/first/",
+      "snippet": "Fortunately some people find partners who are open to incest and have their own experiences. others may not find this in their …"
+    },
+    {
+      "title": "Where do y’all find incest content? : r/Incestconfessions - Reddit",
+      "url": "https://www.reddit.com/r/Incestconfessions/comments/16wjle1/where_do_yall_find_incest_content/",
+      "snippet": "I’m honestly not sure if I can ask this here or not but I’m curious where y’all go to find the best incest content. I feel like I’ve gone …"
+    },
+    {
+      "title": "Incest: good old-fashioned family fun between consenting adults",
+      "url": "https://www.reddit.com/r/incest/wiki/meta/consent/",
+      "snippet": "r/incest: The intent of r/Incest is to provide a safe, respectful forum for users to discuss and post about incest involving consenting …"
+    },
+    {
+      "title": "Does anyone know where I can find real incest videos",
+      "url": "https://www.reddit.com/user/Fancy_Initial565/comments/1b65io9/does_anyone_know_where_i_can_find_real_incest/",
+      "snippet": "Mar 4, 2024 · Does anyone know where I can find real incest videos I don’t wanna hear about story telling anymore if y’all say incest …"
+    }
+  ]
+}

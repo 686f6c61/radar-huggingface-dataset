@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "anegor-ov0820/toy-multimodal-generation-2024",
+  "slug": "anegor-ov0820-toy-multimodal-generation-2024",
+  "author": "anegor-ov0820",
+  "url": "https://huggingface.co/anegor-ov0820/toy-multimodal-generation-2024",
+  "created_at": "2026-10-16T22:09:15.000Z",
+  "updated_at": "2026-10-16T22:09:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "multimodal-generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bcnmartin96/toy-multimodal-generation · Hugging Face",
+      "url": "https://huggingface.co/bcnmartin96/toy-multimodal-generation",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "maximegar/toy-multimodal-generation · Hugging Face",
+      "url": "https://huggingface.co/maximegar/toy-multimodal-generation",
+      "snippet": "A structured set of research notes on Multimodal Generation, with concrete evaluation references and open questions. Plans and hypotheses are kept separate from completed results."
+    },
+    {
+      "title": "Multimodal Generative AI: A Complete Guide for 2026 - upGrad",
+      "url": "https://www.upgrad.com/blog/multimodal-generative-ai/",
+      "snippet": "Learn what multimodal generative AI is, how it works, real-world use cases, top models, and career opportunities in this beginner-to-advanced guide for 2026."
+    },
+    {
+      "title": "Google AI Studio",
+      "url": "https://aistudio.google.com/",
+      "snippet": "Build with Google AI Studio Go from prompt to production with Gemini, Omni, Nano Banana, and more"
+    },
+    {
+      "title": "Top 15 Multimodal Models in 2026 (Open Source & Proprietary)",
+      "url": "https://blog.unitlab.ai/top-multimodal-models/",
+      "snippet": "Discover what multimodal models are, how their architectures work, the top multimodal models, real-world use cases, and key challenges."
+    }
+  ]
+}

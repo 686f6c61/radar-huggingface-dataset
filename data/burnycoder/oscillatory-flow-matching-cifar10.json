@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "BurnyCoder/oscillatory-flow-matching-cifar10",
+  "slug": "burnycoder-oscillatory-flow-matching-cifar10",
+  "author": "BurnyCoder",
+  "url": "https://huggingface.co/BurnyCoder/oscillatory-flow-matching-cifar10",
+  "created_at": "2026-10-16T23:41:39.000Z",
+  "updated_at": "2026-10-16T23:41:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "unconditional-image-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "unconditional-image-generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12668959,
+  "storage_human": "13 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Realistic AI Porn Video Generator & Image-to-Video | PornJourney",
+      "url": "https://pornjourney.com/",
+      "snippet": "Create stunning AI porn videos with superior motion realism. Transform images to video, generate realistic AI porn, hentai, and more …Read more"
+    },
+    {
+      "title": "Top AI Porn Videos — All-Time Most Viewed | VirtuaVixen",
+      "url": "https://virtuavixen.com/",
+      "snippet": "Browse the all-time most-viewed AI porn videos on VirtuaVixen. Ranked by real plays and updated automatically."
+    },
+    {
+      "title": "Porn Reels & AI Porn Shorts – Free Short Porn Videos, TikTok Style ...",
+      "url": "https://nextporn.com/en/shorts/",
+      "snippet": "Swipe free porn reels, short porn clips and TikTok-style vertical sex videos on NextPorn. AI porn shorts with fictional 18+ performers, …"
+    },
+    {
+      "title": "Generative AI pornography - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Generative_AI_pornography",
+      "snippet": "Generative AI pornography is pornographic content produced using generative AI. It may include allusions towards animation, …"
+    },
+    {
+      "title": "Pornpen AI — Free AI Porn Generator (No Limits, 2026)",
+      "url": "https://pornpen.net/",
+      "snippet": "Create realistic AI porn instantly with a free AI porn generator. No limits, no signup — all-in-one AI platform for images and short videos."
+    }
+  ]
+}

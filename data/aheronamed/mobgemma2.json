@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Aheronamed/mobgemma2",
+  "slug": "aheronamed-mobgemma2",
+  "author": "Aheronamed",
+  "url": "https://huggingface.co/Aheronamed/mobgemma2",
+  "created_at": "2026-10-16T21:45:36.000Z",
+  "updated_at": "2026-10-16T21:47:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gemma4_unified",
+    "llama.cpp",
+    "unsloth",
+    "vision-language-model",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 7556498432,
+  "storage_human": "7.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EmbeddingGemma 2: The Developer Guide- Google Developers Blog",
+      "url": "https://developers.googleblog.com/embeddinggemma-2-the-developer-guide/",
+      "snippet": "EmbeddingGemma 2 is designed to provide a single, compact open model released under the Apache 2.0 license, delivering exceptional multimodal performance for its size. Based on Gemma 4, this sub-1B model maps text, code, images, video, and audio into a unified 768-dimensional space."
+    },
+    {
+      "title": "Smaller, Safer, More Transparent: Advancing Responsible AI with Gemma ...",
+      "url": "https://developers.googleblog.com/en/smaller-safer-more-transparent-advancing-responsible-ai-with-gemma/",
+      "snippet": "Learn more about ShieldGemma, see full results in the technical report, and start building safer AI applications with our comprehensive Responsible Generative AI Toolkit. Gemma Scope: Illuminating AI Decision-Making with Open Sparse Autoencoders Gemma Scope offers researchers and developers unprecedented transparency into the decision-making processes of our Gemma 2 models. Acting like a ..."
+    },
+    {
+      "title": "Gemma Model Family - Gemma Documentation",
+      "url": "https://gemma.ai/models/",
+      "snippet": "The family has two halves. A mainline generation — Gemma 1 through Gemma 4 — is the general purpose model most people want. Around each generation sits a set of variants: the same architecture retrained or restructured for one job, like embeddings, safety classification or vision-language tasks. A variant always descends from a specific generation, which is what the tree below shows."
+    },
+    {
+      "title": "GitHub - aicoreml/MedGemma",
+      "url": "https://github.com/aicoreml/MedGemma",
+      "snippet": "MedGemma Medical AI Assistant A Streamlit application that demonstrates the MedGemma model for medical AI tasks, including both text-based medical questions and medical image analysis."
+    },
+    {
+      "title": "Google models | Gemini Enterprise Agent Platform | Google Cloud ...",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/google-models",
+      "snippet": "Model Garden is a platform that helps you discover, test, customize, and deploy Google proprietary and select OSS models and assets. To explore the generative AI models and APIs that are available on Gemini Enterprise Agent Platform, go to Model Garden in the Google Cloud console."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "hewittlab/monitor_cot_for_hack-reward_description-coding-explicit_intent-gpt-oss-120b",
+  "slug": "hewittlab-monitor_cot_for_hack-reward_description-coding-explicit_intent-gpt-oss-120b",
+  "author": "hewittlab",
+  "url": "https://huggingface.co/hewittlab/monitor_cot_for_hack-reward_description-coding-explicit_intent-gpt-oss-120b",
+  "created_at": "2026-10-16T23:43:53.000Z",
+  "updated_at": "2026-10-17T02:45:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tinker",
+    "lora",
+    "reward-hacking",
+    "chain-of-thought",
+    "monitorability",
+    "dataset:hewittlab/monitor_cot_for_hack-coding",
+    "base_model:openai/gpt-oss-120b",
+    "base_model:adapter:openai/gpt-oss-120b",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 315457516620,
+  "storage_human": "315.5 GB",
+  "base_model": "openai/gpt-oss-120b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "monitor_cot_for_hack-baseline-length-explicit_intent-gpt-oss-120b",
+      "url": "https://huggingface.co/hewittlab/monitor_cot_for_hack-baseline-length-explicit_intent-gpt-oss-120b",
+      "snippet": "hewittlab / monitor_cot_for_hack-baseline-length-explicit_intent-gpt-oss-120b Like 0 Follow John&#x27;s Unnamed Lab 2 Safetensors hewittlab/monitor_cot_for_hack-length tinker lora reward-hacking chain-of-thought monitorability Model card FilesFiles and versions xet Community Copy to bucket new monitor_cot_for_hack-baseline-length-explicit_intent-gpt ..."
+    },
+    {
+      "title": "monitor_cot_for_hack-baseline-judge-explicit_intent-gpt-oss-120b",
+      "url": "https://huggingface.co/hewittlab/monitor_cot_for_hack-baseline-judge-explicit_intent-gpt-oss-120b",
+      "snippet": "Base model: openai/gpt-oss-120b (LoRA rank 32) Training: Baseline training with GRPO Task: judge, Chatbot Arena Claude-vs-Gemini response pairs that are equally preferred by human annotators, built from lmarena-ai/arena-human-preference-140k Query: explicitly states the task intent in the input Models: control_model: trained on the true reward: L1 similarity between the model&#x27;s preference and ..."
+    },
+    {
+      "title": "Available today: OpenAI&#x27;s GPT-6.1 Sol and Claude Sonnet 5.5 in ...",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/available-today-openais-gpt-6-1-sol-and-claude-sonnet-5-5-in-microsoft-copilot/4560801",
+      "snippet": "GPT 6.1 Sol and Claude Sonnet 5.5 will also begin rolling out in phases across Word, Excel, PowerPoint, and Chat in the coming week as part of the user subscription license (USL)--limits apply but are designed to enable broad everyday AI usage across the organization, with the vast majority of users not expected to reach them."
+    },
+    {
+      "title": "GPT-OSS 120B Benchmarks & Speed (October 2026) | BenchLM.ai",
+      "url": "https://benchlm.ai/models/gpt-oss-120b",
+      "snippet": "GPT-OSS 120B ranks #152 of 224 at 37.33/100 from 8 source-displayable rows (Supported). See evidence, pricing, context, and runtime."
+    },
+    {
+      "title": "OpenAI: Detecting misbehavior in frontier reasoning models — AI ...",
+      "url": "https://www.alignmentforum.org/posts/7wFdXj9oR8M9AiFht/openai-detecting-misbehavior-in-frontier-reasoning-models",
+      "snippet": "OpenAI has released this blog post and paper which makes me very happy. It&#x27;s basically the first steps along the research agenda I sketched out here. tl;dr: 1.) They notice that their flagship reasoning models do sometimes intentionally reward hack, e.g. literally say \"Let&#x27;s hack\" in the CoT and then proceed to hack the evaluation system. From the paper: The agent notes that the tests only ..."
+    }
+  ]
+}

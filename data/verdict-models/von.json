@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "verdict-models/von",
+  "slug": "verdict-models-von",
+  "author": "verdict-models",
+  "url": "https://huggingface.co/verdict-models/von",
+  "created_at": "2026-10-17T00:48:37.000Z",
+  "updated_at": "2026-10-17T00:59:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "verdict",
+    "system-one",
+    "decision-models",
+    "von",
+    "serving",
+    "zero-shot-classification",
+    "base_model:wfzyx/von",
+    "base_model:quantized:wfzyx/von",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1584199011,
+  "storage_human": "1.6 GB",
+  "base_model": "wfzyx/von",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Définitions : verdict - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/verdict/81492",
+      "snippet": "verdict - Définitions Français : Retrouvez la définition de verdict, ainsi que les synonymes... - synonymes, homonymes, difficultés, …"
+    },
+    {
+      "title": "verdict - Définitions, synonymes, prononciation, exemples | Dico en ...",
+      "url": "https://dictionnaire.lerobert.com/definition/verdict",
+      "snippet": "Définition, exemples et prononciation de verdict : Déclaration par laquelle le jury répond, après dél…"
+    },
+    {
+      "title": "Verdict — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Verdict",
+      "snippet": "En droit, un verdict désigne la sentence prononcée au terme d'un procès criminel à chaque auteur de faits dont la culpabilité est …"
+    },
+    {
+      "title": "Définition de verdict | Dictionnaire français - La langue française",
+      "url": "https://www.lalanguefrancaise.com/dictionnaire/definition/verdict",
+      "snippet": "May 2, 2024 · Définition de verdict : dictionnaire, étymologie, phonétique, citations littéraires, synonymes et antonymes de « verdict »"
+    },
+    {
+      "title": "VERDICT | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/verdict",
+      "snippet": "A verdict is also any judgment or opinion given after considering the facts of a situation:"
+    }
+  ]
+}

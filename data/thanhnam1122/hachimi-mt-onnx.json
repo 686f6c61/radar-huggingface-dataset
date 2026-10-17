@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "thanhnam1122/hachimi-mt-onnx",
+  "slug": "thanhnam1122-hachimi-mt-onnx",
+  "author": "thanhnam1122",
+  "url": "https://huggingface.co/thanhnam1122/hachimi-mt-onnx",
+  "created_at": "2026-10-17T01:17:24.000Z",
+  "updated_at": "2026-10-17T01:17:47.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers.js",
+  "languages": [
+    "zh",
+    "vi"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "marian",
+    "text2text-generation",
+    "translation",
+    "zh",
+    "vi",
+    "base_model:ngocdang83/HachimiMT-30-zh-vi",
+    "base_model:quantized:ngocdang83/HachimiMT-30-zh-vi",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 54959097,
+  "storage_human": "55 MB",
+  "base_model": "ngocdang83/HachimiMT-30-zh-vi",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

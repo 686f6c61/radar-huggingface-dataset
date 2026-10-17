@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "saad3443/auric-v2-q4f16_1-MLC",
+  "slug": "saad3443-auric-v2-q4f16_1-mlc",
+  "author": "saad3443",
+  "url": "https://huggingface.co/saad3443/auric-v2-q4f16_1-MLC",
+  "created_at": "2026-10-16T23:01:01.000Z",
+  "updated_at": "2026-10-16T23:02:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlc-llm",
+  "languages": [],
+  "tags": [
+    "mlc-llm",
+    "web-llm",
+    "auric",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 868547584,
+  "storage_human": "869 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nazir — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Nazir",
+      "snippet": "Dans le cas du nazir, ses cheveux deviennent le « nezer de son Dieu » (Nb 6,7). En hébreu moderne, par un phénomène de …Read more"
+    },
+    {
+      "title": "Nazir - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Nazir",
+      "snippet": "Nazir (aka Abu Umer), Pakistani Lashkar-e-Taiba militant, one of the perpetrators of the 2008 Mumbai attacks Nazirite, in the …"
+    },
+    {
+      "title": "Définition de nazir | Dictionnaire français - La langue française",
+      "url": "https://www.lalanguefrancaise.com/dictionnaire/definition/nazir",
+      "snippet": "Apr 6, 2024 · Nazir - Nom commun (Bible, Judaïsme) Personne qui s'est vouée à Dieu par un vœu spécial et qui observe des règles …"
+    },
+    {
+      "title": "Restaurant Le Nazir à Paris - Menu, avis, prix et réservation | TheFork",
+      "url": "https://www.thefork.fr/restaurant/le-nazir-r513393",
+      "snippet": "Restaurant Le Nazir à Paris : Réservez gratuitement au restaurant Le Nazir, confirmation immédiate de votre réservation avec TheFork."
+    },
+    {
+      "title": "Nazir (title) - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Nazir_(title)",
+      "snippet": "Nazir (title) Look up ناظر or nazir in Wiktionary, the free dictionary. The Arabic title nāẓir (ناظر, Turkish: nazır[1]) refers to an overseer …"
+    }
+  ]
+}

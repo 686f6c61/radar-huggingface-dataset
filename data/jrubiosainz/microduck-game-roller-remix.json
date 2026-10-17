@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "jrubiosainz/microduck-game-roller-remix",
+  "slug": "jrubiosainz-microduck-game-roller-remix",
+  "author": "jrubiosainz",
+  "url": "https://huggingface.co/jrubiosainz/microduck-game-roller-remix",
+  "created_at": "2026-10-16T20:56:13.000Z",
+  "updated_at": "2026-10-16T20:56:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "base_model:juicenv/microduck-roller-es21",
+    "base_model:finetune:juicenv/microduck-roller-es21",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 793832,
+  "storage_human": "793832 B",
+  "base_model": "juicenv/microduck-roller-es21",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Carrier Global Corporation (CARR) Stock Price, News, Quote",
+      "url": "https://finance.yahoo.com/quote/CARR/",
+      "snippet": "Find the latest Carrier Global Corporation (CARR) stock quote, history, news and other vital information to help you with your stock …"
+    },
+    {
+      "title": "Carrier Global (CARR) Stock Price & Overview",
+      "url": "https://stockanalysis.com/stocks/carr/",
+      "snippet": "1 day ago · A detailed overview of Carrier Global Corporation (CARR) stock, including real-time price, chart, key statistics, news, and …"
+    },
+    {
+      "title": "Carrier Global (CARR) Stock Price, News & Analysis - MarketBeat",
+      "url": "https://www.marketbeat.com/stocks/NYSE/CARR/",
+      "snippet": "21 hours ago · Should You Buy or Sell Carrier Global Stock? Get The Latest CARR Stock Analysis, Price Target, Dividend Info, …"
+    },
+    {
+      "title": "Carrier Global (CARR) - Zacks Investment Research",
+      "url": "https://www.zacks.com/stock/research/CARR/price-target-stock-forecast",
+      "snippet": "1 day ago · Based on short-term price targets offered by 23 analysts, the average price target for Carrier Global comes to $74.70. …"
+    },
+    {
+      "title": "Carrier Global Corporation - Investor Relations",
+      "url": "https://ir.carrier.com/overview/default.aspx",
+      "snippet": "Sep 15, 2026 · Carrier (NYSE CARR) is a global leader in intelligent climate and energy solutions, with a focus on providing …"
+    }
+  ]
+}

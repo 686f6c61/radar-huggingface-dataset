@@ -5,7 +5,7 @@
   "author": "CanadaApollo6",
   "url": "https://huggingface.co/CanadaApollo6/Ornith-1.5-35B-A3B-M3TiS-3090",
   "created_at": "2026-10-13T23:49:43.000Z",
-  "updated_at": "2026-10-13T23:59:01.000Z",
+  "updated_at": "2026-10-16T19:41:26.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,12 +32,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 228,
+  "downloads_30d": 234,
   "trending_score": 0,
   "parameters": 34660610688,
   "parameters_human": "34.66B",
-  "storage_bytes": 15987575317,
-  "storage_human": "16.0 GB",
+  "storage_bytes": 16472669797,
+  "storage_human": "16.5 GB",
   "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
   "formats": [
     "safetensors"

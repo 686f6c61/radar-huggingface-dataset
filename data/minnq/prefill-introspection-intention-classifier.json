@@ -5,7 +5,7 @@
   "author": "minnq",
   "url": "https://huggingface.co/minnq/prefill-introspection-intention-classifier",
   "created_at": "2026-10-15T23:23:29.000Z",
-  "updated_at": "2026-10-15T23:24:16.000Z",
+  "updated_at": "2026-10-16T10:06:04.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": 124647170,
   "parameters_human": "124.6M",

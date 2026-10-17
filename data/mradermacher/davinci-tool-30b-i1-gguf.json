@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Davinci-Tool-30B-i1-GGUF",
   "created_at": "2026-10-16T01:49:53.000Z",
-  "updated_at": "2026-10-16T03:41:58.000Z",
+  "updated_at": "2026-10-16T07:00:06.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -29,12 +29,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 28,
   "trending_score": 0,
   "parameters": 30532122624,
   "parameters_human": "30.53B",
-  "storage_bytes": 156817620128,
-  "storage_human": "156.8 GB",
+  "storage_bytes": 324248095008,
+  "storage_human": "324.2 GB",
   "base_model": "SII-Enigma/Davinci-Tool-30B",
   "formats": [
     "gguf"

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "spikefly/pi05-arx-hang-hanger-rack-step40k",
+  "slug": "spikefly-pi05-arx-hang-hanger-rack-step40k",
+  "author": "spikefly",
+  "url": "https://huggingface.co/spikefly/pi05-arx-hang-hanger-rack-step40k",
+  "created_at": "2026-10-16T21:29:30.000Z",
+  "updated_at": "2026-10-16T21:31:24.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "robotics",
+    "bimanual",
+    "arx",
+    "dataset:yaoxianze/arx_cot_hang_hanger_rack",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9388474344,
+  "storage_human": "9.4 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Metaphor: ReFantazio - Best Archetypes For Early Game, Ranked",
+      "url": "https://gamerant.com/metaphor-refantazio-best-archetypes-early-game-ranked/",
+      "snippet": "Oct 13, 2024 · Metaphor: ReFantazio, the new title from Atlus, brings the successful formula of the Persona series to a medieval …"
+    },
+    {
+      "title": "Best Builds for Each Character | Metaphor: ReFantazio｜Game8",
+      "url": "https://game8.co/games/Metaphor-ReFantazio/archives/480552",
+      "snippet": "May 5, 2025 · The best builds for each character will determine how you win against enemy battles in Metaphor: ReFantazio. Read …"
+    },
+    {
+      "title": "Best Builds | Metaphor: ReFantazio｜Game8",
+      "url": "https://game8.co/games/Metaphor-ReFantazio/archives/480397",
+      "snippet": "Aug 28, 2026 · The best builds in Metaphor: ReFantazio will guarantee that you win against enemy encounters with ease. Read on …"
+    },
+    {
+      "title": "Metaphor Refantazio BEST Early Game TEAM BUILD GUIDE",
+      "url": "https://www.youtube.com/watch?v=pR0yjcL6XIw",
+      "snippet": "Nov 15, 2024 · This is the Best Early Game Build Guide in Metaphor Refantazio! There are a lot of different archetypes that you can …"
+    },
+    {
+      "title": "Metaphor ReFantazio Best Build For the Protagonist",
+      "url": "https://www.escapistmagazine.com/metaphor-refantazio-best-build-for-the-protagonist/",
+      "snippet": "Nov 4, 2024 · If you're looking for the best protagonist build in Metaphor: ReFantazio, we've got you covered with the best …"
+    }
+  ]
+}

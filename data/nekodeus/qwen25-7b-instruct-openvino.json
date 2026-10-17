@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Nekodeus/qwen25-7b-instruct-openvino",
+  "slug": "nekodeus-qwen25-7b-instruct-openvino",
+  "author": "Nekodeus",
+  "url": "https://huggingface.co/Nekodeus/qwen25-7b-instruct-openvino",
+  "created_at": "2026-10-16T21:22:25.000Z",
+  "updated_at": "2026-10-16T21:48:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "openvino",
+  "languages": [],
+  "tags": [
+    "openvino",
+    "qwen2",
+    "int8",
+    "text-generation",
+    "qwen",
+    "instruct",
+    "llm",
+    "conversational",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7640643232,
+  "storage_human": "7.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nekodeus/qwen25-7b-instruct-openvino · Hugging Face",
+      "url": "https://huggingface.co/Nekodeus/qwen25-7b-instruct-openvino",
+      "snippet": "OpenVINO IR conversion of Qwen/Qwen2.5-7B-Instruct with weight-only INT8 quantization, produced on CPU-only Kaggle with optimum-cli (fully offline, token-free ..."
+    },
+    {
+      "title": "Nekodeus/qwen2-5-coder-7b-instruct-openvino · Hugging Face",
+      "url": "https://huggingface.co/Nekodeus/qwen2-5-coder-7b-instruct-openvino",
+      "snippet": "OpenVINO IR conversion of Qwen/Qwen2.5-Coder-7B-Instruct with weight-only INT8 quantization, produced on CPU-only Kaggle with optimum-cli (fully offline, token-free ..."
+    },
+    {
+      "title": "qwen2.5-7b-instruct-openvi... | Model Catalog | Microsoft Foundry",
+      "url": "https://ai.azure.com/catalog/models/qwen2.5-7b-instruct-openvino-npu",
+      "snippet": "Developed by: Microsoft Model type: ONNX License: apache-2.0 Model Description: This is a conversion of the Qwen2.5-7B-Instruct for local inference on Intel NPUs. Disclaimer: Model is only an optimization of the base model, any risk associated with the model is the responsibility of the user of the model. Please verify and test for your scenarios. There may be a slight difference in output ..."
+    },
+    {
+      "title": "qwen2.5:7b-instruct",
+      "url": "https://ollama.com/library/qwen2.5:7b-instruct",
+      "snippet": "Qwen2.5 models are pretrained on Alibaba&#x27;s latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
+    },
+    {
+      "title": "Qwen2.5-VL-7B-Instruct-fp16-ov · Models - modelscope.cn",
+      "url": "https://www.modelscope.cn/models/OpenVINO/Qwen2.5-VL-7B-Instruct-fp16-ov",
+      "snippet": "Description This is Qwen/Qwen2.5-VL-7B-Instruct model converted to the OpenVINO™ IR (Intermediate Representation) format. Compatibility The provided OpenVINO™ IR model is compatible with: OpenVINO version 2025.4.0 and higher Optimum Intel 1.27.0 and higher Running Model Inference with OpenVINO GenAI Install packages required for using ..."
+    }
+  ]
+}

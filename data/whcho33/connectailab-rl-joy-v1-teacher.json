@@ -5,9 +5,9 @@
   "author": "whcho33",
   "url": "https://huggingface.co/whcho33/connectailab-rl-joy-v1-teacher",
   "created_at": "2026-10-15T17:09:42.000Z",
-  "updated_at": "2026-10-15T17:09:42.000Z",
-  "license": null,
-  "license_family": "unknown",
+  "updated_at": "2026-10-15T17:09:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
   "pipeline_tag": "reinforcement-learning",
   "library": "numpy",
   "languages": [],
@@ -40,8 +40,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-10-16T03:47:56.222Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": []
 }

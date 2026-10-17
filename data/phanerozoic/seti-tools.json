@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "phanerozoic/seti-tools",
+  "slug": "phanerozoic-seti-tools",
+  "author": "phanerozoic",
+  "url": "https://huggingface.co/phanerozoic/seti-tools",
+  "created_at": "2026-10-16T00:35:53.000Z",
+  "updated_at": "2026-10-17T02:11:20.000Z",
+  "license": "mit-and-cc-by-4.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "seti",
+    "technosignatures",
+    "astronomy",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1101422138,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Phanerozoic - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Phanerozoic",
+      "snippet": "During extinction events in the Phanerozoic, species that could move east to west or vice versa along geographic corridors were …Read more"
+    },
+    {
+      "title": "Phanerozoic Eon | Paleozoic, Mesozoic & Cenozoic | Britannica",
+      "url": "https://www.britannica.com/science/Phanerozoic-Eon",
+      "snippet": "During the Phanerozoic, Earth gradually assumed its present configuration and physical features through such processes as …"
+    },
+    {
+      "title": "Phanerozoic - an overview | ScienceDirect Topics",
+      "url": "https://www.sciencedirect.com/topics/earth-and-planetary-sciences/phanerozoic",
+      "snippet": "The Phanerozoic represents the last 540 million years and we present paleogeographic maps from Cambrian to recent times with a …"
+    },
+    {
+      "title": "2.6: Phanerozoic Eon - Paleozoic Era - Geosciences LibreTexts",
+      "url": "https://geo.libretexts.org/Bookshelves/Geology/Historical_Geology_(Bentley_et_al.)/02%3A_A_Brief_History_of_Earth/2.06%3A_Phanerozoic_Eon_-_Paleozoic_Era",
+      "snippet": "The Phanerozoic Eon is the most recent, 541 million years ago to today, and means “visible life” because the Phanerozoic rock …"
+    },
+    {
+      "title": "Phanérozoïque — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Phan%C3%A9rozo%C3%AFque",
+      "snippet": "Le Phanérozoïque est un éon couvrant les 538,8 ± 0,2 derniers millions d'années. Il commence par la période géologique du …"
+    }
+  ]
+}

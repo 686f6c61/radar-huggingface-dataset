@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Junjieli2005/grad-visual-question-answering",
+  "slug": "junjieli2005-grad-visual-question-answering",
+  "author": "Junjieli2005",
+  "url": "https://huggingface.co/Junjieli2005/grad-visual-question-answering",
+  "created_at": "2026-10-16T22:22:21.000Z",
+  "updated_at": "2026-10-16T22:22:27.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "visual-question-answering",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "visual-question-answering",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Visual-Question-Answering-System/model at main - GitHub",
+      "url": "https://github.com/Jerlin-Ishabel/Visual-Question-Answering-System/tree/main/model",
+      "snippet": "Final Year Project - Visual Question Answering System using Deep Learning, NLP, and Explainable AI with voice-based interaction and PDF reporting. - Jerlin-Ishabel ..."
+    },
+    {
+      "title": "Jerlin-Ishabel/Visual-Question-Answering-System - GitHub",
+      "url": "https://github.com/Jerlin-Ishabel/Visual-Question-Answering-System",
+      "snippet": "An Visual Question Answering System that enables users to upload an image and ask questions about it. The system analyzes images using deep learning and provides intelligent answers with support for voice interaction, multilingual translation, Grad-CAM visualization, and PDF report generation."
+    },
+    {
+      "title": "Visual learner? Ask ChatGPT to respond with interactive images - it&#x27;s a ...",
+      "url": "https://tech.yahoo.com/ai/chatgpt/articles/visual-learner-ask-chatgpt-respond-013000778.html",
+      "snippet": "AI chatbots tend to answer many of your questions using plain, old, boring text. But often a picture is worth more than just words — and if that picture is interactive, even better. That&#x27;s exactly what ChatGPT can now deliver to you courtesy of its latest GPT-6 model. Following its September debut, GPT-6 — split into Sol, for paid users, and Luna, for free users — is now accessible to ..."
+    },
+    {
+      "title": "Visual Question Answering - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/en/tasks/visual_question_answering",
+      "snippet": "Visual Question Answering (VQA) is the task of answering open-ended questions based on an image. The input to models supporting this task is typically a combination of an image and a question, and the output is an answer expressed in natural language."
+    },
+    {
+      "title": "Realizing Visual Question Answering for Education: GPT-4V as a ...",
+      "url": "https://arxiv.org/html/2405.07163v1",
+      "snippet": "Particularly, GPT-4V released by OpenAI, has wide opened the state-of-the-art visual langauge model service so that VQA could be used for a variety of purposes. However, VQA and GPT-4V have not yet been applied to educational studies much. In this position paper, we suggest that GPT-4V contributes to realizing VQA for education."
+    }
+  ]
+}

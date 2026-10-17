@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "SupratimRK/compact-name-classifier",
+  "slug": "supratimrk-compact-name-classifier",
+  "author": "SupratimRK",
+  "url": "https://huggingface.co/SupratimRK/compact-name-classifier",
+  "created_at": "2026-10-15T14:21:58.000Z",
+  "updated_at": "2026-10-17T01:14:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "CompactNameClassifier",
+    "name-classification",
+    "quantized",
+    "fast-inference",
+    "text-classification",
+    "scratch",
+    "low-latency",
+    "en",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14957359,
+  "storage_human": "15 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Binary Name Classification",
+      "dataset": "Curated Human Names vs Non-Names",
+      "metric": "F1 Score",
+      "value": 0.9621
+    },
+    {
+      "task": "Binary Name Classification",
+      "dataset": "Curated Human Names vs Non-Names",
+      "metric": "Accuracy",
+      "value": 0.9445
+    }
+  ],
+  "sources": [
+    {
+      "title": "知乎",
+      "url": "https://www.zhihu.com/question/1903231775980913051",
+      "snippet": "前提1：中国大陆范围「合法」的连接或观看方式，也就是「梯子」不在本问题的讨论范围前提2：源自境外的「…"
+    },
+    {
+      "title": "Skaffa ett Premium Lite-medlemskap på YouTube",
+      "url": "https://support.google.com/youtube/answer/15968883?hl=sv",
+      "snippet": "Premium Lite är ett nytt, billigare YouTube Premium-medlemskap med färre avbrott så att du kan titta på de flesta videor på …"
+    },
+    {
+      "title": "上傳 YouTube 影片",
+      "url": "https://support.google.com/youtube/answer/57407?hl=zh-Hant&co=GENIE.Platform%3DDesktop",
+      "snippet": "上傳 YouTube 影片 只需幾個簡單步驟，就能輕鬆將影片上傳到 YouTube。 以下說明如何透過電腦或行動裝置上傳影片。 注意： 使 …"
+    },
+    {
+      "title": "YouTube公司 - 知乎",
+      "url": "https://www.zhihu.com/topic/19550532/hot",
+      "snippet": "YouTube，全球最大的视频分享网站，早期公司总部位于加利福尼亚州的圣布里诺。公司由华裔美籍华人陈士骏等人创立并于2005年2 …"
+    },
+    {
+      "title": "Huy hiệu xác minh trên kênh - YouTube Trợ giúp",
+      "url": "https://support.google.com/youtube/answer/3046484?hl=vi",
+      "snippet": "YouTube giữ quyền thu hồi quyết định xác minh kênh hoặc chấm dứt những kênh vi phạm Nguyên tắc cộng đồng hoặc Điều khoản …"
+    }
+  ]
+}

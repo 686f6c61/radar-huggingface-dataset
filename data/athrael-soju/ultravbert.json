@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "athrael-soju/UltraVBERT",
+  "slug": "athrael-soju-ultravbert",
+  "author": "athrael-soju",
+  "url": "https://huggingface.co/athrael-soju/UltraVBERT",
+  "created_at": "2026-10-15T19:31:34.000Z",
+  "updated_at": "2026-10-17T02:04:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "visual-document-retrieval",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "ultravbert",
+    "fill-mask",
+    "ultrabert",
+    "vision-language",
+    "multimodal",
+    "document-retrieval",
+    "colpali",
+    "vidore",
+    "visual-document-retrieval",
+    "en",
+    "dataset:HuggingFaceM4/Docmatix",
+    "dataset:HuggingFaceM4/FineVision",
+    "dataset:HuggingFaceM4/the_cauldron",
+    "dataset:rlhn/rlhn-680K",
+    "arxiv:2510.01149",
+    "arxiv:2610.15028",
+    "base_model:dmis-lab/UltraBERT-150M",
+    "base_model:finetune:dmis-lab/UltraBERT-150M",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 293115648,
+  "parameters_human": "293.1M",
+  "storage_bytes": 587946834,
+  "storage_human": "588 MB",
+  "base_model": "dmis-lab/UltraBERT-150M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "有问题，就会有答案 - 知乎",
+      "url": "https://www.zhihu.com/?lang=zh-Hant",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "Yahoo! 新首页有哪些亮点？ - 知乎",
+      "url": "https://www.zhihu.com/question/20791139",
+      "snippet": "Yahoo首页多年以来没有进行过大的变动，这次是梅姐上任七个月以来的一个大动作，其初衷是为了让用户能够更沉浸在yahoo网站 …"
+    },
+    {
+      "title": "yahoo中文邮箱被停用，怎么办? - 知乎",
+      "url": "https://www.zhihu.com/question/20963278",
+      "snippet": "Apr 18, 2013 · 1. 雅虎中国 （非雅虎，两者不同）早已被阿里巴巴兼并 2.雅虎邮箱用户量萎缩，据说现在只有1.9%多，现在能知道有 …"
+    },
+    {
+      "title": "比较好用的电子邮箱，大家有哪些推荐？ - 知乎",
+      "url": "https://www.zhihu.com/question/299339545",
+      "snippet": "先说结论， 与他人交流，使用 QQ 邮箱。 用于注册，使用 Outlook。 域名邮箱是电子邮箱管理的终极解决方案 0. 不推荐其他常见邮 …"
+    },
+    {
+      "title": "知乎 - 知乎",
+      "url": "https://www.zhihu.com/selection/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，提供知识共享、互动交流和个人成长机会。"
+    }
+  ]
+}

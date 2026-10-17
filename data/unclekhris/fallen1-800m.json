@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "UncleKhris/Fallen1-800M",
+  "slug": "unclekhris-fallen1-800m",
+  "author": "UncleKhris",
+  "url": "https://huggingface.co/UncleKhris/Fallen1-800M",
+  "created_at": "2026-10-17T00:21:00.000Z",
+  "updated_at": "2026-10-17T01:57:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "fallen1",
+    "causal-lm",
+    "from-scratch",
+    "conversational-ai",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 817387008,
+  "parameters_human": "817.4M",
+  "storage_bytes": 6542712731,
+  "storage_human": "6.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.5-122B-A10B-GGUF",
+  "slug": "mradermacher-qwen3-5-122b-a10b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.5-122B-A10B-GGUF",
+  "created_at": "2026-02-25T07:52:33.000Z",
+  "updated_at": "2026-10-16T23:56:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:Qwen/Qwen3.5-122B-A10B",
+    "base_model:quantized:Qwen/Qwen3.5-122B-A10B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 2070,
+  "trending_score": 0,
+  "parameters": 122111526912,
+  "parameters_human": "122.11B",
+  "storage_bytes": 832000839904,
+  "storage_human": "832.0 GB",
+  "base_model": "Qwen/Qwen3.5-122B-A10B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Xeno Executor for Windows download | SourceForge.net",
+      "url": "https://sourceforge.net/app/xeno-executor/",
+      "snippet": "Jul 4, 2026 · Download Xeno Executor for Windows for free. Xeno Executor is a third-party Lua script executor designed to run user …"
+    },
+    {
+      "title": "Xeno | The Best Key-Less Executor",
+      "url": "https://www.xeno.onl/tutorial",
+      "snippet": "Experience the ultimate scripting utility with powerful execution and seamless performance. Join our community today!"
+    },
+    {
+      "title": "How to Install Xeno on Windows | Xeno Guide",
+      "url": "https://xeno.baby/guides/how-to-install-xeno",
+      "snippet": "Use only the official download from xeno.baby, keep Xeno updated after Roblox patches, and prefer a clean folder install. If attach …"
+    },
+    {
+      "title": "Xeno Tutorial — Install, Attach, Execute | Xeno",
+      "url": "https://xeno.baby/tutorial",
+      "snippet": "Xeno tutorial for Windows: download the official build, install Visual C++ and .NET, attach to Roblox, paste a Lua script, and execute …"
+    },
+    {
+      "title": "Xeno - Download",
+      "url": "https://xeno.rest/",
+      "snippet": "Xeno Executor is a safe, free and reliable Roblox script executor for Windows. Download the latest version, run any script, and get …"
+    }
+  ]
+}

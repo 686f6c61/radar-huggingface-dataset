@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "nankaimechatronics/cs231n-retrieval",
+  "slug": "nankaimechatronics-cs231n-retrieval",
+  "author": "nankaimechatronics",
+  "url": "https://huggingface.co/nankaimechatronics/cs231n-retrieval",
+  "created_at": "2026-10-16T21:24:03.000Z",
+  "updated_at": "2026-10-16T21:24:08.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "koheismvh83/cs231n-retrieval at main - Hugging Face",
+      "url": "https://huggingface.co/koheismvh83/cs231n-retrieval/tree/main",
+      "snippet": "koheismvh83 / cs231n-retrieval Like 0 Safetensors PyTorch clip retrieval License:mit Model card FilesFiles and versions xet Community Copy to bucket new main cs231n-retrieval 76 kB Ctrl+K Ctrl+K 1 contributor History:2 commits koheismvh83 Add eval.py, README.md, config.json, training_args.json, model.safetensors 5b3d98a verifiedabout 4 hours ..."
+    },
+    {
+      "title": "AaravMenon5137/cs231n-retrieval · Hugging Face",
+      "url": "https://huggingface.co/AaravMenon5137/cs231n-retrieval",
+      "snippet": "AaravMenon5137 / cs231n-retrieval Like 0 Safetensors PyTorch perceiver retrieval License:mit Model card FilesFiles and versions xet Community Copy to bucket new Perceiver for Retrieval Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files License"
+    },
+    {
+      "title": "Stanford University CS231n: Deep Learning for Computer Vision",
+      "url": "https://cs231n.stanford.edu/",
+      "snippet": "Computer Vision has become ubiquitous in our society, with applications in search, image understanding, apps, mapping, medicine, drones, and self-driving cars. Core to many of these applications are visual recognition tasks such as image classification, localization and detection. Recent developments in neural network (aka \"deep learning\") approaches have greatly advanced the performance ..."
+    },
+    {
+      "title": "CS231n 2025 Lecture Notes - raimbekovm.github.io",
+      "url": "https://raimbekovm.github.io/cs231n-2025-notes/index.html",
+      "snippet": "Comprehensive, modern lecture notes for Stanford CS231n (Spring 2025): CNNs, Transformers, diffusion models, and vision-language models. All eighteen lectures of the Spring 2025 course, written up in full."
+    },
+    {
+      "title": "Index of /papers - cs231n.stanford.edu",
+      "url": "https://cs231n.stanford.edu/papers/",
+      "snippet": "Index of /papers Index of /papers"
+    }
+  ]
+}

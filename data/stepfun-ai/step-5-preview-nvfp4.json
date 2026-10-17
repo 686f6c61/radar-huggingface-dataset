@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "stepfun-ai/Step-5-Preview-NVFP4",
+  "slug": "stepfun-ai-step-5-preview-nvfp4",
+  "author": "stepfun-ai",
+  "url": "https://huggingface.co/stepfun-ai/Step-5-Preview-NVFP4",
+  "created_at": "2026-10-14T02:59:00.000Z",
+  "updated_at": "2026-10-15T01:26:46.000Z",
+  "license": "stepfun-model-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "step5_vl",
+    "license:other",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 14,
+  "downloads_30d": 211,
+  "trending_score": 14,
+  "parameters": 320612382016,
+  "parameters_human": "320.61B",
+  "storage_bytes": 394165202312,
+  "storage_human": "394.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Step 5 Preview Model by Stepfun-ai | NVIDIA NIM",
+      "url": "https://build.nvidia.com/stepfun-ai/step-5-preview",
+      "snippet": "vor 2 Tagen ... Preview of StepFun's Step 5: ~600B-total / 27B-active multimodal MoE (text and image in, text out) with 1M context, reasoning and tool ..."
+    },
+    {
+      "title": "stepfun-ai/Step-5-Preview-NVFP4 · Discussions - Hugging Face",
+      "url": "https://huggingface.co/stepfun-ai/Step-5-Preview-NVFP4/discussions",
+      "snippet": "stepfun-ai. /. Step-5-Preview-NVFP4. Like 9. Follow. StepFun 3.23k · Safetensors · step5_vl · 8-bit precision · modelopt."
+    },
+    {
+      "title": "NVIDIA AI on X: \"Congrats to StepFun on Step 5 Preview Their ...",
+      "url": "https://x.com/NVIDIAAI/status/2110730497907216588",
+      "snippet": "vor 1 Tag ... The 600B MoE model is built to handle agent tasks lasting up to 24 hours. The model runs at nearly 8K tokens/sec/GPU on NVIDIA GB300 using NVFP4 ..."
+    },
+    {
+      "title": "Step 5 Preview Weights: Hardware, Access and License - Kingy AI",
+      "url": "https://kingy.ai/blog/step-5-preview-weights-hardware-license/",
+      "snippet": "vor 2 Tagen ... StepFun's model card describes Step 5 Preview as a mixture-of-experts model with 600 billion total parameters and 27 billion active parameters."
+    },
+    {
+      "title": "stepfun-ai (StepFun) - Hugging Face",
+      "url": "https://huggingface.co/stepfun-ai",
+      "snippet": "models 54. Sort: Recently updated · stepfun-ai/Step-5-Preview-BF16 · stepfun-ai/Step-5-Preview · stepfun-ai/Step-5-Preview-NVFP4 · stepfun-ai/Step-3.7-Flash-GGUF."
+    }
+  ]
+}

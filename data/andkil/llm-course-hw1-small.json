@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "andkil/llm-course-hw1-small",
+  "slug": "andkil-llm-course-hw1-small",
+  "author": "andkil",
+  "url": "https://huggingface.co/andkil/llm-course-hw1-small",
+  "created_at": "2026-10-16T23:32:05.000Z",
+  "updated_at": "2026-10-16T23:32:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 79645584,
+  "parameters_human": "79.6M",
+  "storage_bytes": 318003248,
+  "storage_human": "318 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "代码注释中经常用到的 TODO、XXX、FIXME 有什么区别？",
+      "url": "https://www.zhihu.com/question/19563346",
+      "snippet": "Feb 18, 2011 · 这些是注释中的标签（tag），有时也被称作“代码标签（codetag）”或“标记（token）”。 虽然它们在编写代码中属于非 …"
+    },
+    {
+      "title": "性染色体是XXX、XXY和XYY为什么会对人的性格产生影响？",
+      "url": "https://www.zhihu.com/question/31068044",
+      "snippet": "47,XXX (也称为X三体)是女性最常见的性染色体异常。 大多数47,XXX个体在产前遗传学筛查时偶然确诊。 这些女性的后代发生染色 …"
+    },
+    {
+      "title": "xXx: The Return of Xander Cage actor Vin Diesel is crushing over ...",
+      "url": "https://www.india.com/entertainment/xxx-the-return-of-xander-cage-actor-vin-diesel-is-crushing-over-deepika-padukone-this-statement-is-proof-1756703/",
+      "snippet": "Mumbai, Jan 13: H ollywood action star Vin Diesel, who will be sharing the screen space with Deepika Padukone in “xXx: Return of …"
+    },
+    {
+      "title": "Desi Videos: Latest News, Trending Topics, Gallery Videos",
+      "url": "https://www.india.com/topic/desi/videos/",
+      "snippet": "Desi Videos – Watch our exclusive video Gallery of Desi. Also Explore Desi photos and latest news at India.com"
+    },
+    {
+      "title": "工行95588给我打电话，接了开了免提，客服问我是不是xxx（也就是 …",
+      "url": "https://www.zhihu.com/question/505067168",
+      "snippet": "工行95588给我打电话，接了开了免提，客服问我是不是xxx（也就是我本人）? 我刚准备回答是，结果室友突然超大一声：不是！ 然 …"
+    }
+  ]
+}

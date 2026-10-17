@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "LSW142857/OPSD-Taurus-Home-Archive-20261016",
+  "slug": "lsw142857-opsd-taurus-home-archive-20261016",
+  "author": "LSW142857",
+  "url": "https://huggingface.co/LSW142857/OPSD-Taurus-Home-Archive-20261016",
+  "created_at": "2026-10-16T22:20:25.000Z",
+  "updated_at": "2026-10-16T23:26:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "opsd",
+    "model-archive",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 214532633341,
+  "storage_human": "214.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LSW142857/OPSD · Hugging Face",
+      "url": "https://huggingface.co/LSW142857/OPSD",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LSW142857 (shiwei liu) - Hugging Face",
+      "url": "https://huggingface.co/LSW142857",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 16 days ago ... published a model 16 days ago"
+    },
+    {
+      "title": "LSW142857/OPSD at main - Hugging Face",
+      "url": "https://huggingface.co/LSW142857/OPSD/tree/main",
+      "snippet": "LSW142857 / OPSD like 0 opsd qwen3.5 model-registry Model card FilesFiles and versions xet Community Copy to bucket new main OPSD 16.2 kB Ctrl+K Ctrl+K 1 contributor History:2 commits LSW142857 Create canonical OPSD PI/prompt-mode/iteration registry e3ab549 verifiedabout 15 hours ago legacy_unclassifiedCreate canonical OPSD PI/prompt-mode/iteration registryabout 15 hours ago mediumCreate ..."
+    },
+    {
+      "title": "OPSD-PI-Qwen3.5-9B-Medium-Trailing-1024-A6000-Merged-Iter8",
+      "url": "https://huggingface.co/LSW142857/OPSD-PI-Qwen3.5-9B-Medium-Trailing-1024-A6000-Merged-Iter8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=LSW142857%2FOPSD-PI-Qwen3.5-9B-Strong-Trailing-1024-A6000-Merged-Update08",
+      "snippet": "LSW142857/OPSD-PI-Qwen3.5-9B-Strong-Trailing-1024-A6000-Merged-Update08 Text Generation • 10B•Updated 15 days ago• 253"
+    }
+  ]
+}

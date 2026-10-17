@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Jason37437/RiSE",
+  "slug": "jason37437-rise",
+  "author": "Jason37437",
+  "url": "https://huggingface.co/Jason37437/RiSE",
+  "created_at": "2026-10-16T23:43:33.000Z",
+  "updated_at": "2026-10-17T01:16:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "image-forgery-localization",
+    "document-forensics",
+    "computer-vision",
+    "en",
+    "dataset:Jason37437/Doc-Protocol-Data",
+    "base_model:facebook/dinov3-vitl16-pretrain-lvd1689m",
+    "base_model:finetune:facebook/dinov3-vitl16-pretrain-lvd1689m",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5587280280,
+  "storage_human": "5.6 GB",
+  "base_model": "facebook/dinov3-vitl16-pretrain-lvd1689m",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

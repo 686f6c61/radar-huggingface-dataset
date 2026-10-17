@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "id": "MahmoudIbrahim/A3S",
+  "slug": "mahmoudibrahim-a3s",
+  "author": "MahmoudIbrahim",
+  "url": "https://huggingface.co/MahmoudIbrahim/A3S",
+  "created_at": "2026-10-12T14:26:15.000Z",
+  "updated_at": "2026-10-16T22:19:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "ar",
+    "zh",
+    "en",
+    "ja",
+    "ko",
+    "de",
+    "fr",
+    "ru",
+    "pt",
+    "es",
+    "it"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_tts",
+    "audio",
+    "tts",
+    "voice-clone",
+    "multilingual-tts",
+    "arabic-tts",
+    "text-to-speech",
+    "ar",
+    "zh",
+    "en",
+    "ja",
+    "ko",
+    "de",
+    "fr",
+    "ru",
+    "pt",
+    "es",
+    "it",
+    "base_model:Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+    "base_model:finetune:Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 118,
+  "trending_score": 0,
+  "parameters": 905788672,
+  "parameters_human": "905.8M",
+  "storage_bytes": 2498350235,
+  "storage_human": "2.5 GB",
+  "base_model": "Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bienvenue sur Caf.fr",
+      "url": "https://www.caf.fr/",
+      "snippet": "La nouvelle émission de Vies de famille, le magazine des Allocation familiales, est à découvrir en un seul clic !... Lire la suite"
+    },
+    {
+      "title": "CIF和CAF有什么区别？ - 百度知道",
+      "url": "https://zhidao.baidu.com/question/1932554316996968307.html",
+      "snippet": "CIF和CAF有什么区别？CIF：目的港交货价，就是除了货物原本的货值，卖方还承担运费以及保险，在报价时应报包含运费和保险的 …"
+    },
+    {
+      "title": "国际货运代理----日本基本港附加费BAF/YAS/EBS/CIC/PSS/ECRS/CA…",
+      "url": "https://zhidao.baidu.com/question/487792989.html",
+      "snippet": "Oct 17, 2012 · 国际货运代理----日本基本港附加费BAF/YAS/EBS/CIC/PSS/ECRS/CAF分别是多少 ？ baf（燃油附加费）、yas（货币 …"
+    },
+    {
+      "title": "货币贬值附加费（CAF）是怎么计算的？ - 知乎",
+      "url": "https://www.zhihu.com/question/595528562",
+      "snippet": "Apr 14, 2023 · 货币贬值附加费 （CAF）是一种国际贸易中的费用，由出口国向进口国收取。它是为了补偿进口国货币贬值所引起的额 …"
+    },
+    {
+      "title": "Problème connexion Caf [Résolu] - Google Chrome",
+      "url": "https://forums.commentcamarche.net/forum/affich-34249219-probleme-connexion-caf",
+      "snippet": "Jan 7, 2017 · Bonjour, j'aurais besoin d'aide par rapport à un problème de connexion sur le site de la Caf. J'essaye de me connecter …"
+    }
+  ]
+}

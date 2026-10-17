@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "rlix/series-a-20261014",
+  "slug": "rlix-series-a-20261014",
+  "author": "rlix",
+  "url": "https://huggingface.co/rlix/series-a-20261014",
+  "created_at": "2026-10-14T19:54:45.000Z",
+  "updated_at": "2026-10-17T01:48:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "checkpoint",
+    "reproducibility",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 59007052805,
+  "storage_human": "59.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chaturbate Recorder Guide 2026: How to Record Streams, What …",
+      "url": "https://rowmance.net/blog/chaturbate-recorder",
+      "snippet": "May 30, 2026 · We cover how Chaturbate's own recording features work, the best third-party recorder tools, legal considerations, …"
+    },
+    {
+      "title": "301 Moved Permanently",
+      "url": "https://www.stripschat.com/",
+      "snippet": "301 Moved Permanently 301 Moved Permanently cloudflare"
+    },
+    {
+      "title": "Free Online Live Chat Recorder – Record Stripchat, Chaturbate, and …",
+      "url": "https://www.livechatrecorder.com/",
+      "snippet": "Browser-based live chat recorders for Stripchat, Chaturbate, and other platforms. Record streams online easily and securely without …"
+    },
+    {
+      "title": "StreamVault - Record Streams from YouTube, Twitch, Adult Sites",
+      "url": "https://www.streamvault.dev/",
+      "snippet": "Record high-quality video with minimal system impact. Customize resolution, format, and other recording parameters. Dependable …"
+    },
+    {
+      "title": "Cam Cloud Recorder - Cloud Stream Recorder and Live DVR",
+      "url": "https://camcloudrecorder.com/",
+      "snippet": "Record live streams automatically in the cloud. Save Twitch, YouTube Live, Kick, TikTok Live, and more without desktop software. …"
+    }
+  ]
+}

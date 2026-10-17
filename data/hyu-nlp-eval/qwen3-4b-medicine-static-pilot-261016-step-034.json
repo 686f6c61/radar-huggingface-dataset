@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-034",
+  "slug": "hyu-nlp-eval-qwen3-4b-medicine-static-pilot-261016-step-034",
+  "author": "HYU-NLP-EVAL",
+  "url": "https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-034",
+  "created_at": "2026-10-17T01:00:13.000Z",
+  "updated_at": "2026-10-17T01:13:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 25702307529,
+  "storage_human": "25.7 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hyundai France | Voitures électriques, hybrides et SUV | Site officiel",
+      "url": "https://www.hyundai.com/fr/fr",
+      "snippet": "Découvrez la gamme Hyundai : voitures électriques, hybrides et SUV. Garantie 5 ans kilométrage illimité. Configurez et réservez un …"
+    },
+    {
+      "title": "Hyu - YouTube",
+      "url": "https://www.youtube.com/channel/UCwDSqAhdO1rcRmpbmKCBTZQ",
+      "snippet": "Explore Hyu's YouTube channel for captivating videos and unique content. Discover a world of creativity and entertainment."
+    },
+    {
+      "title": "Hyundai Motor — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Hyundai_Motor",
+      "snippet": "Hyundai Motor Company est un constructeur automobile sud-coréen, filiale du conglomérat Hyundai Motor Group. Il est l'unique …"
+    },
+    {
+      "title": "Hayu | Watch Reality TV Shows Online | Stream Ad-Free",
+      "url": "https://www.hayu.com/",
+      "snippet": "Stream hundreds of your favourite reality TV shows and watch thousands of episodes; on demand and on any device with loads …"
+    },
+    {
+      "title": "Hyu - YouTube",
+      "url": "https://www.youtube.com/@hyu9406",
+      "snippet": "music, lyrics, songs and everything related."
+    }
+  ]
+}

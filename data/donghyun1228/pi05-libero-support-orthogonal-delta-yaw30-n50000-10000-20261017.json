@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Donghyun1228/pi05-libero-support-orthogonal-delta-yaw30-n50000-10000-20261017",
+  "slug": "donghyun1228-pi05-libero-support-orthogonal-delta-yaw30-n50000-10000-20261017",
+  "author": "Donghyun1228",
+  "url": "https://huggingface.co/Donghyun1228/pi05-libero-support-orthogonal-delta-yaw30-n50000-10000-20261017",
+  "created_at": "2026-10-16T16:30:54.000Z",
+  "updated_at": "2026-10-16T23:36:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "libero",
+    "inverse-dynamics",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23839981281,
+  "storage_human": "23.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pay money To my Pain是怎样一支乐队？",
+      "url": "https://www.zhihu.com/question/28290188",
+      "snippet": "Mar 12, 2016 · 感谢邀请。 首先我想说，请让K安息吧，他的死不是你们装屄的道具。 我和我的朋友们大概是国内最早一批Pay money …"
+    },
+    {
+      "title": "手扎刺如果不挑出来会有怎样的后果? - 知乎",
+      "url": "https://www.zhihu.com/question/27333621",
+      "snippet": "如果扎的不深的话（大约2mm以内），随着皮肤的 角化过程，是可以把刺排出去的。 但如果扎得太深的话，伤到真皮层，甚至 皮下 …"
+    },
+    {
+      "title": "仿宋GB2312字体在word2013中加粗后发虚如何解决？ - 知乎",
+      "url": "https://www.zhihu.com/question/65266152",
+      "snippet": "仿宋GB2312字体在word2013中加粗后发虚，转入PDF就正常了，请问有什么办法能解决？如下图所示： 加粗后发…"
+    },
+    {
+      "title": "显示器到底该俯视，还是仰视，还是平视呢？ - 知乎",
+      "url": "https://www.zhihu.com/question/20307385",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "Win10系统鼠标指针旁边的后台运行小圆圈⭕️一直在闪烁转圈！？",
+      "url": "https://www.zhihu.com/question/265982937",
+      "snippet": "如题，Win10系统鼠标指针旁边的后台运行小圆圈⭕️一直在闪烁转圈！怎么解决，后台也没什么大程序运行"
+    }
+  ]
+}

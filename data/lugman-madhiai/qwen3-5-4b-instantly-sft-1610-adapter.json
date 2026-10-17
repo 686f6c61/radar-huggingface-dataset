@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "lugman-madhiai/Qwen3.5-4B-Instantly-SFT-1610-adapter",
+  "slug": "lugman-madhiai-qwen3-5-4b-instantly-sft-1610-adapter",
+  "author": "lugman-madhiai",
+  "url": "https://huggingface.co/lugman-madhiai/Qwen3.5-4B-Instantly-SFT-1610-adapter",
+  "created_at": "2026-10-16T23:10:53.000Z",
+  "updated_at": "2026-10-16T23:11:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3_5",
+    "trl",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 149923773,
+  "storage_human": "150 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "passman/js/vendor/zxcvbn/zxcvbn.js.map at master · nextcloud ... - GitHub",
+      "url": "https://github.com/nextcloud/passman/blob/master/js/vendor/zxcvbn/zxcvbn.js.map",
+      "snippet": "🔐 Open source password manager with Nextcloud integration - nextcloud/passman"
+    },
+    {
+      "title": "unsupervised_topic_modeling/topics/en/11/100/100/topics at ... - GitHub",
+      "url": "https://github.com/annontopicmodel/unsupervised_topic_modeling/blob/master/topics/en/11/100/100/topics",
+      "snippet": "Contribute to annontopicmodel/unsupervised_topic_modeling development by creating an account on GitHub."
+    },
+    {
+      "title": "Images à caractère sexuel, Snapchat n'est pas le seul accusé",
+      "url": "https://fr.hespress.com/351925-images-a-caractere-sexuel-snapchat-nest-pas-le-seul-accuse.html",
+      "snippet": "Feb 10, 2024 · Approché par Hespress FR, le propriétaire de la page, Mehdi, nous a dévoilés la face cachée de l’affaire. « L’initiative …"
+    },
+    {
+      "title": "Snapchat : des photos intimes de Marocaines font scandale",
+      "url": "https://www.bladi.net/snapchat-photos-intimes-marocaines-font-scandale,106759.html",
+      "snippet": "Feb 8, 2024 · Des hackers se seraient emparés de nombreux comptes de réseaux sociaux de jeunes Marocaines et Algériennes. …"
+    },
+    {
+      "title": "19 Minute MMS Leak Video Fact Check: Truth Behind Viral ... - Oneindia",
+      "url": "https://www.oneindia.com/india/19-minute-mms-leak-video-fact-check-truth-behind-viral-season-5-and-50-minute-claims-7950692.html",
+      "snippet": "Jan 11, 2026 · 19 Minute MMS Leak Video Fact Check: Viral Season-5 and 50-minute MMS claims circulating on social media are AI …"
+    }
+  ]
+}

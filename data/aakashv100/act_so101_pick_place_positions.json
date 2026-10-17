@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "aakashv100/act_so101_pick_place_positions",
+  "slug": "aakashv100-act_so101_pick_place_positions",
+  "author": "aakashv100",
+  "url": "https://huggingface.co/aakashv100/act_so101_pick_place_positions",
+  "created_at": "2026-10-17T00:49:31.000Z",
+  "updated_at": "2026-10-17T00:49:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "so101",
+    "dataset:aakashv100/so101-pick-place-positions",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 1033513952,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

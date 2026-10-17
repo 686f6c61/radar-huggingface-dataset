@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "fecasado/gfm-cubes-22c3",
+  "slug": "fecasado-gfm-cubes-22c3",
+  "author": "fecasado",
+  "url": "https://huggingface.co/fecasado/gfm-cubes-22c3",
+  "created_at": "2026-10-16T22:48:01.000Z",
+  "updated_at": "2026-10-16T22:48:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "gaze_flow_matching",
+    "dataset:fecasado/Ncubes-to-Nbaskets-320x240",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 75248330,
+  "parameters_human": "75.2M",
+  "storage_bytes": 301054608,
+  "storage_human": "301 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "All The Purge movies, ranked from worst to best - Digital Trends",
+      "url": "https://www.digitaltrends.com/movies/purge-movies-ranked-worst-to-best/",
+      "snippet": "Nov 11, 2025 · Set in a dystopian future, The Purge depicts a wealthy family fighting to defend themselves against a group of sadistic …"
+    },
+    {
+      "title": "All Purge Movies Ranked From Worst to Best - Loud And Clear Reviews",
+      "url": "https://loudandclearreviews.com/all-purge-films-ranked-from-worst-to-best/",
+      "snippet": "Jun 27, 2021 · Following the release of The Forever Purge, we revisit it and all prior Purge movies, ranked from worst to best."
+    },
+    {
+      "title": "The Purge Franchise Ranked Best to Worst – Dyerbolical",
+      "url": "https://dyerbolical.com/the-purge-franchise-ranked-every-movie-and-series-explained/",
+      "snippet": "May 3, 2026 · The Purge franchise has evolved from a single-house siege into a multifaceted examination of American divisions. …"
+    },
+    {
+      "title": "All Purge Films Ranked: From Worst to Best - Movie Bunker",
+      "url": "https://moviebunker.com/all-purge-films-ranked-from-worst-to-best/",
+      "snippet": "Mar 26, 2023 · The most recent Purge film, The First Purge, finds itself at the bottom of this ranking, but that doesn’t mean it’s a bad …"
+    },
+    {
+      "title": "Every Purge Movie (& Series) Ranked Worst to Best",
+      "url": "https://screenrant.com/purge-movies-ranked-best-worst/",
+      "snippet": "Mar 1, 2022 · Surprise horror hit The Purge became a signature franchise for Blumhouse Productions, and here's how each of the …"
+    }
+  ]
+}

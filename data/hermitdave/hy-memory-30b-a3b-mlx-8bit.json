@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "hermitdave/Hy-Memory-30B-A3B-MLX-8bit",
+  "slug": "hermitdave-hy-memory-30b-a3b-mlx-8bit",
+  "author": "hermitdave",
+  "url": "https://huggingface.co/hermitdave/Hy-Memory-30B-A3B-MLX-8bit",
+  "created_at": "2026-10-16T21:55:03.000Z",
+  "updated_at": "2026-10-16T22:00:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "hy_v3",
+    "apple-silicon",
+    "text-generation",
+    "8-bit",
+    "rtn",
+    "moe",
+    "memory",
+    "conversational",
+    "en",
+    "zh",
+    "arxiv:2610.22196",
+    "base_model:tencent/Hy-Memory-30B-A3B",
+    "base_model:quantized:tencent/Hy-Memory-30B-A3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30064725888,
+  "parameters_human": "30.06B",
+  "storage_bytes": 31944200362,
+  "storage_human": "31.9 GB",
+  "base_model": "tencent/Hy-Memory-30B-A3B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hermitdave/Hy-Memory-30B-A3B-MLX-8bit · Hugging Face",
+      "url": "https://huggingface.co/hermitdave/Hy-Memory-30B-A3B-MLX-8bit",
+      "snippet": "Base model: tencent/Hy-Memory-30B-A3B by Tencent Hunyuan, Apache-2.0. hy_v3 MLX adapter: originally authored by QwQbb for the Hy-MT2 conversion; reused here with a stop_gradient fix on the router indices."
+    },
+    {
+      "title": "hermitdave/Hy-Memory-30B-A3B-MLX-Mixed4-6 · Hugging Face",
+      "url": "https://huggingface.co/hermitdave/Hy-Memory-30B-A3B-MLX-Mixed4-6",
+      "snippet": "Base model: tencent/Hy-Memory-30B-A3B by Tencent Hunyuan, Apache-2.0. hy_v3 MLX adapter: originally authored by QwQbb for the Hy-MT2 conversion; reused here with a stop_gradient fix on the router indices so the architecture is trainable."
+    },
+    {
+      "title": "Hy-Memory-30B-A3B: Attributed Reinforcement Learning for Long-Term ...",
+      "url": "https://arxiv.org/pdf/2610.22196v1",
+      "snippet": "Hy-Memory-30B-A3B belongs to the second line but differs in scope. It trains the writer only, keeps the reader fixed during reward computation, and targets multiple pre-existing harnesses rather than one newly designed memory architecture."
+    },
+    {
+      "title": "Tencent Hunyuan Hy-Memory 2.0: A 30B MoE Memory Writer That Beats Opus ...",
+      "url": "https://cldnavi.com/en/blog/hy-memory-tencent-2026/",
+      "snippet": "Tencent Hunyuan released Hy-Memory 2.0 on October 16, 2026: the Hy-Memory-30B-A3B memory writer (30B MoE, 3B active), the Hy-Memory engine and the MemHub app, all under Apache-2.0. The write path is trained with reinforcement learning and validated across Mem0, MemOS and EverMemOS. This guide covers the benchmark breakdown, running it with vLLM, how MemHub shares one memory across ten AI tools ..."
+    },
+    {
+      "title": "Hy-Memory-30B-A3B: Tencent Open Memory Model Beats Opus 5 | explainx.ai ...",
+      "url": "https://www.explainx.ai/blog/tencent-hy-memory-30b-a3b-open-memory-writer-model-mem0-memos-2026",
+      "snippet": "Tencent Hy-Memory-30B-A3B is an open 30B MoE model that decides what an agent remembers. Scores, how to run it with vLLM, and what the numbers do not show."
+    }
+  ]
+}

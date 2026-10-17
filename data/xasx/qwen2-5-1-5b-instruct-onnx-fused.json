@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "xasx/Qwen2.5-1.5B-Instruct-ONNX-fused",
+  "slug": "xasx-qwen2-5-1-5b-instruct-onnx-fused",
+  "author": "xasx",
+  "url": "https://huggingface.co/xasx/Qwen2.5-1.5B-Instruct-ONNX-fused",
+  "created_at": "2026-10-16T22:22:55.000Z",
+  "updated_at": "2026-10-16T22:27:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "onnxruntime",
+    "int4",
+    "qwen2",
+    "text-generation",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1671599992,
+  "storage_human": "1.7 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "onnx-community/Qwen2.5-1.5B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/onnx-community/Qwen2.5-1.5B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen-2.5-1.5B-Instruct-onnx-ryzenai-hybrid - Hugging Face",
+      "url": "https://huggingface.co/amd/Qwen-2.5-1.5B-Instruct-onnx-ryzenai-hybrid",
+      "snippet": "Qwen/Qwen2.5-1.5B-Instruct-hybrid Introduction This model was prepared using the AMD Quark Quantization tool, followed by necessary post-processing. Quantization Strategy AWQ / Group 128 / Asymmetric / UINT4 Weights / BFP16 activations Excluded Layers: None Quick Start For quickstart, refer to Ryzen AI doucmentation Evaluation scores The MMLU scores are, astronomy: 65.79, philosophy: 63.02 ..."
+    },
+    {
+      "title": "Qwen2.5-1.5B-Instruct-onnx-ryzenai-npu - GitHub",
+      "url": "https://github.com/eiszazel/Qwen-2.5-1.5B-Instruct-onnx-ryzenai-npu",
+      "snippet": "Qwen2.5-1.5B-Instruct-onnx-ryzenai-npu Introduction This model was created using Quark Quantization, followed by OGA Model Builder, and finalized with post-processing for NPU deployment."
+    },
+    {
+      "title": "Qwen2.5-1.5B-Instruct · Models",
+      "url": "https://www.modelscope.cn/models/onnx-community/Qwen2.5-1.5B-Instruct/summary",
+      "snippet": "Note: Having a separate repo for ONNX weights is intended to be a temporary solution until WebML gains more traction. If you would like to make your models web-ready, we recommend converting to ONNX using 🤗 Optimum and structuring your repo like this one (with ONNX weights located in a subfolder named onnx)."
+    },
+    {
+      "title": "GitHub - Zerkahlo/qwen2.5",
+      "url": "https://github.com/Zerkahlo/qwen2.5",
+      "snippet": "To pull a model checkpoint and run the model, use the ollama run command. You can specify a model size by adding a suffix to qwen2.5, such as :0.5b, :1.5b, :7b, or :72b:"
+    }
+  ]
+}

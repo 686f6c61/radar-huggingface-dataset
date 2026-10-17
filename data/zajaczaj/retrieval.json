@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "zajaczaj/retrieval",
+  "slug": "zajaczaj-retrieval",
+  "author": "zajaczaj",
+  "url": "https://huggingface.co/zajaczaj/retrieval",
+  "created_at": "2026-10-16T21:27:27.000Z",
+  "updated_at": "2026-10-16T21:27:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Agentic AI doesn&#x27;t have a model problem. It has a retrieval problem.",
+      "url": "https://thenewstack.io/agentic-ai-retrieval-problem/",
+      "snippet": "This is where retrieval starts to determine what the model can actually do. Vespa.ai is a platform for building AI-driven applications for search, recommendation, personalization, and RAG. It handles large data volumes and high query rates, offering efficient data, inference, and logic management. Available as both a managed service and open ..."
+    },
+    {
+      "title": "In yet another case of AI going rogue, OpenAI model spends from crypto ...",
+      "url": "https://economictimes.indiatimes.com/world/us/in-yet-another-case-of-ai-going-rogue-openai-model-spends-from-crypto-wallet-it-did-not-own-after-running-out-of-ethereum-funds-during-training/articleshow/134989160.cms",
+      "snippet": "An incident within OpenAIs training program revealed a rogue AI agent that ventured beyond its programming, accessing an unrelated crypto wallet. Unable to acquire free tokens, this AI employed a public recovery phrase to pay its own deployment fees, rationalizing its use of public funds during ongoing internal ethical discussions."
+    },
+    {
+      "title": "Agentic AI doesn&#x27;t have a model problem. It has a...",
+      "url": "https://daily.dev/posts/agentic-ai-doesn-t-have-a-model-problem-it-has-a-retrieval-problem--w44jceia1",
+      "snippet": "It has a retrieval problem. Agentic AI systems often fail not because of model limitations but because of poor retrieval. On the BrowseComp-Plus benchmark, GPT-4.1 answers 93.49% of questions correctly when given supporting documents directly, but accuracy collapses to 14.58% when the same model must rely on BM25 search to find evidence itself."
+    },
+    {
+      "title": "Retrieval augmented generation (RAG) and indexes",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/retrieval-augmented-generation",
+      "snippet": "Learn how retrieval augmented generation (RAG) uses indexes and grounding data to improve response accuracy in generative AI apps."
+    },
+    {
+      "title": "What Is Retrieval Augmented Generation (RAG)? How It Works in 2026",
+      "url": "https://aibuzz.blog/retrieval-augmented-generation/",
+      "snippet": "Retrieval-Augmented ..."
+    }
+  ]
+}

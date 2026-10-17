@@ -5,7 +5,7 @@
   "author": "pgmharikrishnan",
   "url": "https://huggingface.co/pgmharikrishnan/MiniCPM-V-4.7-35B-A3B-MLX-Serve-4bit",
   "created_at": "2026-10-12T19:50:41.000Z",
-  "updated_at": "2026-10-15T17:39:14.000Z",
+  "updated_at": "2026-10-16T09:56:24.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -14,7 +14,7 @@
   "tags": [
     "mlx-serve",
     "safetensors",
-    "qwen3_5_moe",
+    "minicpmv4_7",
     "mlx",
     "moe",
     "4-bit",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 4,
-  "downloads_30d": 551,
+  "downloads_30d": 663,
   "trending_score": 0,
   "parameters": 34659887872,
   "parameters_human": "34.66B",

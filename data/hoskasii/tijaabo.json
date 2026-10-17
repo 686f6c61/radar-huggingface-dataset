@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "hoskasii/tijaabo",
+  "slug": "hoskasii-tijaabo",
+  "author": "hoskasii",
+  "url": "https://huggingface.co/hoskasii/tijaabo",
+  "created_at": "2026-10-15T20:18:23.000Z",
+  "updated_at": "2026-10-17T00:47:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "so"
+  ],
+  "tags": [
+    "safetensors",
+    "moss_tts_nano",
+    "text-to-speech",
+    "custom_code",
+    "so",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 421,
+  "trending_score": 0,
+  "parameters": 68492544,
+  "parameters_human": "68.5M",
+  "storage_bytes": 29044761356,
+  "storage_human": "29.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tijaabo - a Hugging Face Space by lakiLabs",
+      "url": "https://huggingface.co/spaces/lakiLabs/tijaabo",
+      "snippet": "Enter any Somali sentence or phrase and the app will turn it into a natural‑sounding spoken audio clip. It uses a pre‑trained voice model to synthesize the speech, and you can download the result a..."
+    },
+    {
+      "title": "hoskasii/base-model · Hugging Face",
+      "url": "https://huggingface.co/hoskasii/base-model",
+      "snippet": "Koko-TTS is an ultra-lightweight, high-fidelity Text-to-Speech (TTS) model with ~24.6M parameters. Built upon a Flow-Matching framework, it combines a Matcha-style UNet architecture conditioned on RoPE-based text representations with the highly efficient Vocos 24kHz neural vocoder. The model is designed for ultra-fast, real-time speech synthesis without compromising on audio quality."
+    },
+    {
+      "title": "hoskasii (Nabad) - Hugging Face",
+      "url": "https://huggingface.co/hoskasii/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a Space about 3 hours ago ... published a Space about 3 hours ago"
+    },
+    {
+      "title": "hoskasii (Nabad) - Hugging Face",
+      "url": "https://huggingface.co/hoskasii",
+      "snippet": "Sort: Recently updated. Running . Tjby. 🔥. waye. hoskasii 1 minute ago. Running . Jagacca. 📉. vvav. hoskasii 1 day ago. models 0"
+    },
+    {
+      "title": "hoskasii/base · Hugging Face",
+      "url": "https://huggingface.co/hoskasii/base",
+      "snippet": "hoskasii / base Like 0 PyTorch moss_tts_nano custom_code Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 17 Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "amanlig/cibc-fx",
+  "slug": "amanlig-cibc-fx",
+  "author": "amanlig",
+  "url": "https://huggingface.co/amanlig/cibc-fx",
+  "created_at": "2026-10-16T20:31:30.000Z",
+  "updated_at": "2026-10-16T20:31:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "finance",
+    "regression",
+    "currency-conversion",
+    "statistical-model",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

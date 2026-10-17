@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4-LiLiCorr",
+  "slug": "nvidia-nvidia-nemotron-3-5-super-vl-120b-a12b-nvfp4-lilicorr",
+  "author": "nvidia",
+  "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4-LiLiCorr",
+  "created_at": "2026-10-11T20:20:59.000Z",
+  "updated_at": "2026-10-16T23:39:58.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "Model Optimizer",
+  "languages": [],
+  "tags": [
+    "Model Optimizer",
+    "safetensors",
+    "qwen3",
+    "nvidia",
+    "ModelOpt",
+    "Nemotron-3.5-Super",
+    "latent-moe",
+    "mtp",
+    "LiLiCorr",
+    "text-generation",
+    "arxiv:2608.20530",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16",
+    "base_model:quantized:nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16",
+    "license:other",
+    "8-bit",
+    "modelopt_fp4",
+    "region:us"
+  ],
+  "likes": 7,
+  "downloads_30d": 741,
+  "trending_score": 0,
+  "parameters": 964954506,
+  "parameters_human": "965.0M",
+  "storage_bytes": 4933634051,
+  "storage_human": "4.9 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16, nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "World Leader in Artificial Intelligence Computing | NVIDIA",
+      "url": "https://www.nvidia.com/",
+      "snippet": "NVIDIA RTX™ powers the world’s fastest PCs and the ultimate platform for gamers and creators. Enjoy beautiful ray tracing, AI …Read more"
+    },
+    {
+      "title": "Téléchargez les pilotes NVIDIA officiels | NVIDIA",
+      "url": "https://www.nvidia.com/fr-fr/drivers/",
+      "snippet": "Téléchargez les pilotes NVIDIA officiels les plus récents pour optimiser votre expérience de jeu sur PC et faire tourner vos …"
+    },
+    {
+      "title": "NVIDIA",
+      "url": "https://www.nvidia.fr/default.htm",
+      "snippet": "Explorez les dernières innovations et produits NVIDIA, leader en technologies graphiques et d'intelligence artificielle."
+    },
+    {
+      "title": "Nvidia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nvidia",
+      "snippet": "Founded in 1993 by Jensen Huang, Chris Malachowsky, and Curtis Priem, Nvidia has been widely described as a Big Tech …"
+    },
+    {
+      "title": "GeForce NOW",
+      "url": "https://play.geforcenow.com/",
+      "snippet": "Instantly play the most demanding PC games and seamlessly play across your devices."
+    }
+  ]
+}

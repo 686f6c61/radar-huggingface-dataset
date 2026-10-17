@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "froabera/speecht5_afan_oromo_final_done",
+  "slug": "froabera-speecht5_afan_oromo_final_done",
+  "author": "froabera",
+  "url": "https://huggingface.co/froabera/speecht5_afan_oromo_final_done",
+  "created_at": "2026-10-16T23:55:17.000Z",
+  "updated_at": "2026-10-16T23:55:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-audio",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "speecht5",
+    "text-to-audio",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 144435426,
+  "parameters_human": "144.4M",
+  "storage_bytes": 578033937,
+  "storage_human": "578 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "froabera/speecht5_afan_oromo_final · Hugging Face",
+      "url": "https://huggingface.co/froabera/speecht5_afan_oromo_final",
+      "snippet": "Instructions to use froabera/speecht5_afan_oromo_final with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use froabera/speecht5_afan_oromo_final with Transformers:"
+    },
+    {
+      "title": "froabera (Fro Abera) - Hugging Face",
+      "url": "https://huggingface.co/froabera",
+      "snippet": "updated a model 4 months ago froabera/tts_processed updated a model 5 months ago froabera/speecht5_afan_oromo1 View all activity"
+    },
+    {
+      "title": "Open source Amharic and Afan Oromo models and datasets · Addis AI",
+      "url": "https://addisassistant.com/open-source",
+      "snippet": "Open LLMs, Addis Scribe realtime speech recognition, the Shook ASR family, and some of the largest open Amharic and Afan Oromo datasets on Hugging Face. Built and released by Addis AI."
+    },
+    {
+      "title": "Development of Text-to-Speech Synthesis Model for",
+      "url": "https://etd.aau.edu.et/bitstreams/08b5a213-5f7b-47d3-aa2d-cebefb640fb7/download",
+      "snippet": "d their corresponding text transcription from the Afaan Oromoo speech corpus by a male speaker. The transformer-based text-to-speech synthesis architecture has outperformed the previously done model based on BLSTM-RNN for Afaan Oromoo language TTS, whose results are 3.77 and 3.76 in terms of intelligibility and naturalness, respective"
+    },
+    {
+      "title": "Afaan Oromoo TTS Model Development",
+      "url": "https://www.scribd.com/document/919330751/Bayisa-Bedasa-2025",
+      "snippet": "Afaan Oromoo TTS Model Development This thesis presents the development of a Text-to-Speech (TTS) synthesis model for Afaan Oromoo using a transformer neural network. The model enhances accessibility for Afaan Oromoo speakers by converting written text into spoken words, achieving high scores in naturalness and intelligibility."
+    }
+  ]
+}

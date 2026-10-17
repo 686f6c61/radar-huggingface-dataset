@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "jrubiosainz/microduck-game-hillclimber-remix",
+  "slug": "jrubiosainz-microduck-game-hillclimber-remix",
+  "author": "jrubiosainz",
+  "url": "https://huggingface.co/jrubiosainz/microduck-game-hillclimber-remix",
+  "created_at": "2026-10-16T20:56:44.000Z",
+  "updated_at": "2026-10-16T20:56:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "base_model:juicenv/microduck-hill-es7",
+    "base_model:finetune:juicenv/microduck-hill-es7",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 831318,
+  "storage_human": "831318 B",
+  "base_model": "juicenv/microduck-hill-es7",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "www.youtube.co.uk",
+      "url": "https://www.youtube.co.uk/login",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    }
+  ]
+}

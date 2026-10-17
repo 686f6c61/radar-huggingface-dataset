@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "ninhnv/chon-1.0-e4b",
+  "slug": "ninhnv-chon-1-0-e4b",
+  "author": "ninhnv",
+  "url": "https://huggingface.co/ninhnv/chon-1.0-e4b",
+  "created_at": "2026-10-16T19:22:51.000Z",
+  "updated_at": "2026-10-16T23:44:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "typed-decisions",
+    "classification",
+    "calibration",
+    "lora",
+    "jevbench",
+    "gemma4",
+    "en",
+    "vi",
+    "base_model:google/gemma-4-E4B-it",
+    "base_model:adapter:google/gemma-4-E4B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 590351482,
+  "storage_human": "590 MB",
+  "base_model": "google/gemma-4-E4B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Courses en ligne E.Leclerc DRIVE : livraison et retrait drive",
+      "url": "https://www.leclercdrive.fr/",
+      "snippet": "E.Leclerc propose de récupérer ses courses en ligne en drive ou en retrait piéton. Avec plus de 780 drives présents sur le territoire, il …"
+    },
+    {
+      "title": "Drives Toulouse et Livraison à domicile - E.Leclerc DRIVE",
+      "url": "https://www.leclercdrive.fr/region-occitanie-pyrenees-mediterranee/toulouse/",
+      "snippet": "Retrouvez la liste des drives et retraits piétons E.Leclerc à Toulouse et alentours. Vous pouvez accéder à l’ensemble des …"
+    },
+    {
+      "title": "E.Leclerc Drive",
+      "url": "https://www.e.leclerc/e/eleclerc-drive-eleclerc-chez-moi",
+      "snippet": "Passez commande à prix E.Leclerc, et faites le choix de la livraison à domicile, ou du retrait de vos courses dans nos E.Leclerc …"
+    },
+    {
+      "title": "E.Leclerc : Défendre tout ce qui compte pour vous",
+      "url": "https://www.e.leclerc/",
+      "snippet": "Découvrez nos magasins, nos services et achetez en ligne des milliers de produits à prix E.Leclerc, livrables en magasin, en point …"
+    },
+    {
+      "title": "E.Leclerc Drive à Toulouse - Hypermarchés et Supermarchés",
+      "url": "https://www.pagesjaunes.fr/annuaire/toulouse-31/e-leclerc-drive",
+      "snippet": "Choisissez vos produits parmi plus de 12 000 références de qualité, des fruits et légumes frais aux produits pour bébé, en passant …"
+    }
+  ]
+}

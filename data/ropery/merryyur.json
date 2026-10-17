@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ropery/merryyur",
+  "slug": "ropery-merryyur",
+  "author": "Ropery",
+  "url": "https://huggingface.co/Ropery/merryyur",
+  "created_at": "2026-10-16T20:55:17.000Z",
+  "updated_at": "2026-10-16T20:55:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Motörhead Chords & Tabs for Guitar, Ukulele, Bass, Drums at …",
+      "url": "https://www.ultimate-guitar.com/artist/922",
+      "snippet": "Use short videos (shots), guitar pro versions and audio back tracking to become super star faster 🤩. Also, you can try our ukulele, …Read more"
+    },
+    {
+      "title": "Friday Top: 20 Best Blues Albums of All Time | Ultimate Guitar",
+      "url": "https://www.ultimate-guitar.com/articles/features/friday_top_20_best_blues_albums_of_all_time-86298",
+      "snippet": "Feb 15, 2019 · This week's traditional Wednesday Question saw the people of UG community discussing the matter of the best blues …"
+    },
+    {
+      "title": "ULTIMATE GUITAR TABS - 1M+ songs catalog with free Chords, …",
+      "url": "https://www.ultimate-guitar.com/",
+      "snippet": "Your #1 source for chords, guitar tabs, bass tabs, ukulele chords, guitar pro and power tabs. Comprehensive tabs archive with over …"
+    },
+    {
+      "title": "Guns N' Roses Chords & Tabs for Guitar, Ukulele, Bass, Drums at ...",
+      "url": "https://www.ultimate-guitar.com/artist/guns_n_roses_1367",
+      "snippet": "Easily find your favorite songs by Guns N' Roses! Chords and tabs, covering a variety of genres. Start playing today!"
+    },
+    {
+      "title": "Thin Lizzy Chords & Tabs for Guitar, Ukulele ... - ULTIMATE GUITAR …",
+      "url": "https://www.ultimate-guitar.com/artist/thin_lizzy_235",
+      "snippet": "Easily find your favorite songs by Thin Lizzy! Chords and tabs, covering a variety of genres. Start playing today!"
+    }
+  ]
+}

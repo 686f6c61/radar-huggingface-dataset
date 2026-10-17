@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Costume/christAIn-uncensored-Q4_0-GGUF",
+  "slug": "costume-christain-uncensored-q4_0-gguf",
+  "author": "Costume",
+  "url": "https://huggingface.co/Costume/christAIn-uncensored-Q4_0-GGUF",
+  "created_at": "2026-10-17T00:21:22.000Z",
+  "updated_at": "2026-10-17T00:21:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "gguf",
+    "base_model:adapter:dphn/Dolphin3.0-Qwen2.5-0.5B",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-generation",
+    "base_model:Emmet-Allen/christAIn-uncensored",
+    "base_model:adapter:Emmet-Allen/christAIn-uncensored",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 352152192,
+  "storage_human": "352 MB",
+  "base_model": "Emmet-Allen/christAIn-uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Costumes pour homme | ZARA France",
+      "url": "https://www.zara.com/fr/fr/homme-costumes-l808.html",
+      "snippet": "Au-delà du look chic traditionnel, le costume pour homme a définitivement fait son entrée dans le style urbain, avec des lignes …"
+    },
+    {
+      "title": "Costumes Homme | Armand Thiery ® Site Officiel",
+      "url": "https://www.armandthiery.fr/fr/homme/costumes-c-3.htm",
+      "snippet": "Découvrez notre collection de costumes et de costumes grande taille pour homme. Coupe ajustée, coupe confort ou coupe slim, …"
+    },
+    {
+      "title": "Costume homme - Confort et qualité - IZAC",
+      "url": "https://izac.fr/collections/costumes",
+      "snippet": "Un bon costume homme se reconnaît à la qualité de ses matières, à la précision de sa coupe et à l’exigence de ses finitions. Un …"
+    },
+    {
+      "title": "Costumes homme - Jules",
+      "url": "https://www.jules.com/fr-fr/l/costumes/",
+      "snippet": "Vous trouverez dans cette collection de costumes pour hommes, toutes les pièces nécessaires pour composer votre ensemble, …"
+    },
+    {
+      "title": "Costumes homme | Zalando",
+      "url": "https://www.zalando.fr/costume-homme/",
+      "snippet": "Une fois le problème de la cravate résolu, il serait aussi bon de penser aux accessoires qui accompagneront votre costume mariage …"
+    }
+  ]
+}

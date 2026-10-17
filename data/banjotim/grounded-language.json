@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "banjotim/grounded-language",
+  "slug": "banjotim-grounded-language",
+  "author": "banjotim",
+  "url": "https://huggingface.co/banjotim/grounded-language",
+  "created_at": "2026-10-16T23:42:01.000Z",
+  "updated_at": "2026-10-16T23:42:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "grounded-language",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best LLMs for Multimodal & Grounded - benchlm.ai",
+      "url": "https://benchlm.ai/multimodal-grounded",
+      "snippet": "Compare 954 AI models on multimodal and grounded benchmarks. See which models reason best over images, charts, screenshots, documents, and office-style artifacts."
+    },
+    {
+      "title": "What Is a Grounded Language Model? FutureAGI Guide (2026)",
+      "url": "https://futureagi.com/glossary/grounded-language-model/",
+      "snippet": "What Is a Grounded Language Model? A grounded language model is a language model whose answers are constrained by retrieved documents, tool results, or other supplied evidence rather than only by parameters learned during training. In RAG systems, it shows up in the generation step after retrieval and before the final answer is sent."
+    },
+    {
+      "title": "Anthropic AI model submits false homicide tip to Philadelphia police - MSN",
+      "url": "https://www.msn.com/en-us/news/other/anthropic-ai-model-submits-false-homicide-tip-to-philadelphia-police/ar-AA2dWiN6",
+      "snippet": "Philadelphia police have revealed that Anthropic&#x27;s artificial intelligence model submitted a false homicide tip to authorities, an incident disclosed separately by the tech company."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Qwen, Mistral AI, Moonshot AI, Z.ai, MiniMax, NVIDIA, Microsoft AI, Cohere, Xiaomi, and other prominent AI labs. The newest-first tables show each release date, provider, and model type. Dates use the earliest meaningful availability stage for each entry. Preview access ..."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

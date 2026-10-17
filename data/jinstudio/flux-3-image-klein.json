@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "Jinstudio/flux-3-image-klein",
+  "slug": "jinstudio-flux-3-image-klein",
+  "author": "Jinstudio",
+  "url": "https://huggingface.co/Jinstudio/flux-3-image-klein",
+  "created_at": "2026-10-16T20:35:13.000Z",
+  "updated_at": "2026-10-16T20:35:14.000Z",
+  "license": "flux-kommunity-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "image-generation",
+    "image-editing",
+    "flux",
+    "flux-3",
+    "black-forest-labs",
+    "image-to-image",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5548681984,
+  "parameters_human": "5.55B",
+  "storage_bytes": 43305977298,
+  "storage_human": "43.3 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

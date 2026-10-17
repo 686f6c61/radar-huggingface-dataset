@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "s4bz/sentinel-redteam-0.5b",
+  "slug": "s4bz-sentinel-redteam-0-5b",
+  "author": "s4bz",
+  "url": "https://huggingface.co/s4bz/sentinel-redteam-0.5b",
+  "created_at": "2026-10-16T21:33:21.000Z",
+  "updated_at": "2026-10-16T21:33:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "ai-security",
+    "red-teaming",
+    "prompt-injection",
+    "owasp-top-10",
+    "jailbreak-defense",
+    "canary-leakage",
+    "lora",
+    "sentinel",
+    "cybersecurity",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20097900,
+  "storage_human": "20 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SENTINEL RED — AI Security Red Teaming Suite",
+      "url": "https://sentinelred.dev/",
+      "snippet": "SENTINEL RED is a modular red teaming suite for LLM applications: prompt injection, leakage, hallucinations, poisoning, robustness, and compliance — with run history, scoring, and exportable reports."
+    },
+    {
+      "title": "GitHub - JoasASantos/Offensive-Security-AI-Models: Uncensored AI models ...",
+      "url": "https://github.com/JoasASantos/Offensive-Security-AI-Models",
+      "snippet": "Uncensored LLMs for Offensive Security Curated list of open-weight uncensored models for authorized red team operations, penetration testing, and security research. All data sourced from HuggingFace model cards and official publications. Sep 2026."
+    },
+    {
+      "title": "Sentinel/redteam/2026-09-03b at main - GitHub",
+      "url": "https://github.com/xorcehub/Sentinel/tree/main/redteam/2026-09-03b",
+      "snippet": "Red-team round 5 — spelling class round 3 + a dead-telemetry find (2026-09-03b) Round 4 closed the Unicode-dash spelling (F16, engine-side dash fold). This round attacks the next spellings of the same class and re-attacks EXEC-002&#x27;s telemetry. Everything (scripts, mimic trees, proof files) stayed inside redteam/2026-09-03b/; payloads are Write-Host / echo / Add-Content only."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Qwen, Mistral AI, Moonshot AI, Z.ai, MiniMax, NVIDIA, Microsoft AI, Cohere, Xiaomi, and other prominent AI labs. The newest-first tables show each release date, provider, and model type. Dates use the earliest meaningful availability stage for each entry. Preview access ..."
+    },
+    {
+      "title": "Top 19 AI Red Teaming Tools (2026): Secure Your ML Models",
+      "url": "https://www.marktechpost.com/2026/04/17/top-ai-red-teaming-tools/",
+      "snippet": "What Is AI Red Teaming? AI Red Teaming is the process of systematically testing artificial intelligence systems—especially generative AI and machine learning models—against adversarial attacks and security stress scenarios. Red teaming goes beyond classic penetration testing; while penetration ..."
+    }
+  ]
+}

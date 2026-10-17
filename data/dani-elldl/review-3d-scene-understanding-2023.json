@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "dani-elldl/review-3d-scene-understanding-2023",
+  "slug": "dani-elldl-review-3d-scene-understanding-2023",
+  "author": "dani-elldl",
+  "url": "https://huggingface.co/dani-elldl/review-3d-scene-understanding-2023",
+  "created_at": "2026-10-16T18:30:41.000Z",
+  "updated_at": "2026-10-16T18:30:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "3d-scene-understanding",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dani (artiste) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Dani_(artiste)",
+      "snippet": "Dani et Gainsbourg, ne voulant changer ni la chanson, ni même certains passages, se retirent. Cependant Dani propose la chanson …"
+    },
+    {
+      "title": "DANI - J'avais raison (Clip officiel) - YouTube",
+      "url": "https://www.youtube.com/watch?v=hxlUWi9XWEY",
+      "snippet": "Jun 28, 2024 · \"J'avais raison\" extrait du nouvel album \"Attention départ\", déjà disponible : https://dani-music.lnk.to/attentionde..."
+    },
+    {
+      "title": "Dani : les causes de la mort de la chanteuse dévoilées",
+      "url": "https://www.voici.fr/celebrites/dani-les-causes-de-la-mort-de-la-chanteuse-devoilees-734079",
+      "snippet": "Jul 19, 2022 · La chanteuse Dani est morte à l'âge de 77 ans. L'interprète du tube Comme un boomerang avec Etienne Daho a …"
+    },
+    {
+      "title": "Mort de la chanteuse Dani : Amour, Succès, Jobs, Drogue, Enfants...",
+      "url": "https://www.journaldesfemmes.fr/people/actus/2836461-mort-chanteuse-dani-chansons-compagnon-mari-enfants/",
+      "snippet": "Jul 19, 2022 · La chanteuse Dani est morte dans la nuit du 18 au 19 juillet, à 77 ans. Sa folle histoire d'amour, ses succès, ses mille …"
+    },
+    {
+      "title": "Dani (singer) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Dani_(singer)",
+      "snippet": "Thanks to the installation of new and old scenes, Claude Jade also mounted in the flashbacks of Day for Night, it seems Dani was …"
+    }
+  ]
+}

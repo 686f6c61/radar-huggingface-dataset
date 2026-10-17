@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "lajithomas/hybrid-router-modernbert",
+  "slug": "lajithomas-hybrid-router-modernbert",
+  "author": "lajithomas",
+  "url": "https://huggingface.co/lajithomas/hybrid-router-modernbert",
+  "created_at": "2026-10-17T00:31:13.000Z",
+  "updated_at": "2026-10-17T00:32:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "text-classification",
+    "text-generation-inference",
+    "unsloth",
+    "trl",
+    "en",
+    "base_model:unsloth/ModernBERT-large",
+    "base_model:finetune:unsloth/ModernBERT-large",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 395840521,
+  "parameters_human": "395.8M",
+  "storage_bytes": 1583380340,
+  "storage_human": "1.6 GB",
+  "base_model": "unsloth/ModernBERT-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

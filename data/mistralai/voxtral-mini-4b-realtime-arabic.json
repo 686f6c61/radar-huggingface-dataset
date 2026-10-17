@@ -57,9 +57,9 @@
     "base_model:finetune:mistralai/Voxtral-Mini-4B-Realtime-2602",
     "region:us"
   ],
-  "likes": 36,
+  "likes": 38,
   "downloads_30d": 947,
-  "trending_score": 26,
+  "trending_score": 25,
   "parameters": 4429679360,
   "parameters_human": "4.43B",
   "storage_bytes": 17739214644,

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "auperez96/deit-generation",
+  "slug": "auperez96-deit-generation",
+  "author": "auperez96",
+  "url": "https://huggingface.co/auperez96/deit-generation",
+  "created_at": "2026-10-16T23:26:24.000Z",
+  "updated_at": "2026-10-16T23:26:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "请问PET，PVC，PE，OPP有什么区别？_百度知道",
+      "url": "https://zhidao.baidu.com/question/1767652245192368348.html",
+      "snippet": "May 28, 2025 · 请问PET，PVC，PE，OPP有什么区别？PET、PVC、PE、OPP的主要区别如下：材料成分：PET：主要由对苯二甲 …"
+    },
+    {
+      "title": "mopp薄膜和bopp薄膜有什么区别？_百度知道",
+      "url": "https://zhidao.baidu.com/question/440325259.html",
+      "snippet": "mopp薄膜和 bopp薄膜 的区别： 1、MOPP薄膜比BOPP薄膜更具有极佳的金属光泽和良好的反射性。 2、MOPP薄膜比BOPP薄膜更 …"
+    },
+    {
+      "title": "opp / jae - Le Social",
+      "url": "https://www.lesocial.fr/forum/viewtopic.php?t=110322",
+      "snippet": "Aug 28, 2007 · L'OPP est comme le nom l'indique un ordre du juge qui permet de placer un enfant en dehors de son milieu natuel. …"
+    },
+    {
+      "title": "american english - Distribution of slang term “opp” - English Language ...",
+      "url": "https://english.stackexchange.com/questions/605549/distribution-of-slang-term-opp",
+      "snippet": "Apr 3, 2023 · I’m a teenager from Chicago. One slang term which is used by young people in my community rather often is “opp.” It is …"
+    },
+    {
+      "title": "différence OPP/AP - Le Social",
+      "url": "https://www.lesocial.fr/forum/viewtopic.php?t=47021",
+      "snippet": "Oct 26, 2005 · différence OPP/AP par julie » mer. oct. 26, 2005 3:49 pm bonjour, je suis en stage dans un foyer del'enfance et les …"
+    }
+  ]
+}

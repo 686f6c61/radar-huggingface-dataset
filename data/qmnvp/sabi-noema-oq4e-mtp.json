@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "qmnvp/sabi-noema-oQ4e-mtp",
+  "slug": "qmnvp-sabi-noema-oq4e-mtp",
+  "author": "qmnvp",
+  "url": "https://huggingface.co/qmnvp/sabi-noema-oQ4e-mtp",
+  "created_at": "2026-10-16T20:20:47.000Z",
+  "updated_at": "2026-10-16T21:18:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "mtp",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 16989610619,
+  "storage_human": "17.0 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "求推荐在安卓电视上观看Netflix性价比最高的方式？ - 知乎",
+      "url": "https://www.zhihu.com/question/345785982",
+      "snippet": "本文全部教程内容是基于用户满足网络要求的前提下，如果网络环境不满足，在下载apk-浏览TV应用市场-打开Netflix的过程中都会受 …"
+    },
+    {
+      "title": "Netflix, Prime Video, Hulu, HBO 等国外流媒体公司分别有哪些优势？",
+      "url": "https://www.zhihu.com/question/309560443",
+      "snippet": "加一句：Chrome中Netflix的清晰程度是要差一个量级的，无论你做什么设置，Win10中一定要去应用商店下载APP或者不要 …"
+    },
+    {
+      "title": "YURT DIŞINDAN NETFLİX TÜRKİYE İZLEMEK - DonanımHaber Forum",
+      "url": "https://forum.donanimhaber.com/yurt-disindan-netflix-turkiye-izlemek--138772860",
+      "snippet": "Merhabalar, ben Almanya da yaşıyorum. Netflix aldım ancak çoğu dizi de Türkçe alt yazı yok. Sadece İngilizce ve Almanca var. …"
+    },
+    {
+      "title": "Netflix Ekran Yansıtma: Ses Var, Görüntü Yok Sorunu Çözümü ...",
+      "url": "https://forum.donanimhaber.com/nerflix-ilgili-onemli-bir-problemim-var--131732166",
+      "snippet": "Netflix ekran yansıtırken yalnızca ses mi geliyor, görüntü yok mu? Bu yaygın sorunu çözmek için cihazlar arası uyumluluk, Wi-Fi …"
+    },
+    {
+      "title": "netflix怎么投屏? - 知乎",
+      "url": "https://www.zhihu.com/question/385027794",
+      "snippet": "Netflix版权保护严格，网络条件有要求，观看设备也有要求，想畅享4K画质最好选用小米盒子国际版、AppleTV等设备，投屏局域网操 …"
+    }
+  ]
+}

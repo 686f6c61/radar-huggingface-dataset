@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Myric/Laguna-XS-2.1-APEX-GGUF",
+  "slug": "myric-laguna-xs-2-1-apex-gguf",
+  "author": "Myric",
+  "url": "https://huggingface.co/Myric/Laguna-XS-2.1-APEX-GGUF",
+  "created_at": "2026-08-03T12:05:44.000Z",
+  "updated_at": "2026-10-17T00:34:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "moe",
+    "apex",
+    "quantized",
+    "imatrix",
+    "llama.cpp",
+    "laguna",
+    "text-generation",
+    "base_model:poolside/Laguna-XS-2.1",
+    "base_model:quantized:poolside/Laguna-XS-2.1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 828,
+  "trending_score": 0,
+  "parameters": 33442617088,
+  "parameters_human": "33.44B",
+  "storage_bytes": 88661756352,
+  "storage_human": "88.7 GB",
+  "base_model": "poolside/Laguna-XS-2.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mia Khalifa - Channel page - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/channels/mia-khalifa",
+      "snippet": "Mia Khalifa,Mia Khalifa Official,free videos, latest updates and direct chat"
+    },
+    {
+      "title": "Mia Khalifa – Vidéos Porno | Pornhub.com",
+      "url": "https://fr.pornhub.com/pornstar/mia-khalifa",
+      "snippet": "Choisissez Pornhub.com pour Mia Khalifa dans une sélection incroyable de vidéos porno hardcore. Les pornstars les plus chaudes …"
+    },
+    {
+      "title": "Mia Khalifa - Page Pornostar - XVIDEOS.COM",
+      "url": "https://fr.xvideos.com/pornstars/mia-khalifa-model",
+      "snippet": "Mia Khalifa,Mia Callista,Mia Califa,Mia Kalifa,Mia Kalifha,Mia Kallista,Mia Kelifa,Mia Khalifah,Mia Khalifia,Mia Xalifa,MiaKhalifa,Miya …"
+    },
+    {
+      "title": "Mia Khalifa – Pornstar Videos",
+      "url": "https://www.tubepornstars.com/pornstar/mia-khalifa",
+      "snippet": "Mia Khalifa Tube and other famous pornstars at TubePornstars.com. TubePornstars is one of the most complete pornstar databases …"
+    },
+    {
+      "title": "VIDÉOS DE SEXE ET PORNO DE MIA KHALIFA - PORN300.COM",
+      "url": "https://www.porn300.com/fr/pornstar/mia-khalifa/",
+      "snippet": "Mia Khalifa est née à Beyrouth en 1993. À 7 ans, sa famille émigre aux États-Unis. Elle se marie à 18 ans et débute dans le porno à …"
+    }
+  ]
+}

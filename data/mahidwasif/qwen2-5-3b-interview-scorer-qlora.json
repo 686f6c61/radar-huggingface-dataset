@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "mahidwasif/qwen2.5-3b-interview-scorer-qlora",
+  "slug": "mahidwasif-qwen2-5-3b-interview-scorer-qlora",
+  "author": "mahidwasif",
+  "url": "https://huggingface.co/mahidwasif/qwen2.5-3b-interview-scorer-qlora",
+  "created_at": "2026-10-16T18:26:30.000Z",
+  "updated_at": "2026-10-16T18:26:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qlora",
+    "lora",
+    "text-generation",
+    "interview-evaluation",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-3B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 131223694,
+  "storage_human": "131 MB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=created",
+      "snippet": "toolathlon-mai/MyAwesomeModel-TestRepo. Updated in about 18 hours · mahidwasif/qwen2.5-3b-interview-scorer-qlora. Text Generation • Updated in about 18 hours ..."
+    }
+  ]
+}

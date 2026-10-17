@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "smithdavidna/blip-retrieval-study",
+  "slug": "smithdavidna-blip-retrieval-study",
+  "author": "smithdavidna",
+  "url": "https://huggingface.co/smithdavidna/blip-retrieval-study",
+  "created_at": "2026-10-16T21:25:17.000Z",
+  "updated_at": "2026-10-16T21:25:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BLIP/models/blip_retrieval.py at main · salesforce/BLIP · GitHub",
+      "url": "https://github.com/salesforce/BLIP/blob/main/models/blip_retrieval.py",
+      "snippet": "PyTorch code for BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation - salesforce/BLIP"
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches across OpenAI, Anthropic, Google DeepMind, SpaceXAI, DeepSeek, Qwen, Moonshot AI, Meta, Mistral AI, MiniMax, and other important AI labs. You can use the newest-first tables to find the release date, provider, release stage, and model type."
+    },
+    {
+      "title": "LAVIS/lavis/models/blip_models/blip_retrieval.py at main - GitHub",
+      "url": "https://github.com/salesforce/LAVIS/blob/main/lavis/models/blip_models/blip_retrieval.py",
+      "snippet": "from lavis.models.med import XBertEncoder from lavis.models.vit import VisionTransformerEncoder from torch import nn @registry.register_model (\"blip_retrieval\") class BlipRetrieval (BlipBase, MomentumDistilationMixin, SharedQueueMixin): \"\"\""
+    },
+    {
+      "title": "Retrieval Model | salesforce/BLIP | DeepWiki",
+      "url": "https://deepwiki.com/salesforce/BLIP/2.3-retrieval-model",
+      "snippet": "Retrieval Model Relevant source files Purpose and Scope The BLIP Retrieval Model is a specialized component within the BLIP framework designed for cross-modal retrieval tasks. It enables bidirectional search between visual and textual data, specifically: Image-to-text retrieval: Finding relevant captions for a given image Text-to-image retrieval: Finding relevant images for a given text prompt ..."
+    },
+    {
+      "title": "Understanding BLIP : A Huggingface Model - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/understanding-blip-a-huggingface-model/",
+      "snippet": "BLIP (Bootstrapping Language-Image Pre-training) is a multimodal AI model that combines computer vision and natural language processing to understand both images and text together. It is trained on large-scale image-text pairs, enabling strong performance in vision-language tasks."
+    }
+  ]
+}

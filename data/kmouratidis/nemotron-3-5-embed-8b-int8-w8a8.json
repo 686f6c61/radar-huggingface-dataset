@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "kmouratidis/Nemotron-3.5-Embed-8B-INT8-W8A8",
+  "slug": "kmouratidis-nemotron-3-5-embed-8b-int8-w8a8",
+  "author": "kmouratidis",
+  "url": "https://huggingface.co/kmouratidis/Nemotron-3.5-Embed-8B-INT8-W8A8",
+  "created_at": "2026-10-16T21:15:54.000Z",
+  "updated_at": "2026-10-17T01:15:55.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "visual-document-retrieval",
+  "library": "sentence-transformers",
+  "languages": [
+    "multilingual",
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "mistral3",
+    "feature-extraction",
+    "int8",
+    "w8a8",
+    "compressed-tensors",
+    "gptq",
+    "llm-compressor",
+    "quantized",
+    "multimodal-embedding",
+    "image-embeddings",
+    "text-embeddings",
+    "retrieval",
+    "rag",
+    "semantic-search",
+    "transformers",
+    "vllm",
+    "visual-document-retrieval",
+    "multilingual",
+    "en",
+    "base_model:nvidia/Nemotron-3.5-Embed-8B-BF16",
+    "base_model:quantized:nvidia/Nemotron-3.5-Embed-8B-BF16",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8381155328,
+  "parameters_human": "8.38B",
+  "storage_bytes": 19370737555,
+  "storage_human": "19.4 GB",
+  "base_model": "nvidia/Nemotron-3.5-Embed-8B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Dubai Porn Videos (306) - Tubesafari.com",
+      "url": "https://tubesafari.com/search/DUBAI",
+      "snippet": "Free dubai porn: 306 videos. WATCH NOW for FREE!"
+    },
+    {
+      "title": "Dubai Porn Videos - iWank XXX",
+      "url": "https://iwank.xxx/dubai-videos",
+      "snippet": "3 weeks ago 05:10 A trip to Dubai and I end up fucking my stepsister in the hotel room and find out she is so hairy!"
+    },
+    {
+      "title": "Free Dubai Porn Videos | xHamster",
+      "url": "https://xhamster.com/tags/dubai",
+      "snippet": "Check out free Dubai porn videos on xHamster. Watch all Dubai XXX vids right now!"
+    },
+    {
+      "title": "Free Dubai Porn | PornKai.com",
+      "url": "https://pornkai.com/videos?q=dubai",
+      "snippet": "Dubai Porn Videos: WATCH FREE here!"
+    },
+    {
+      "title": "Popular Dubai Girl Sex Videos - HD Porn Tube",
+      "url": "https://www.hdtube.porn/search/dubai+girl/?sort_by=video_viewed",
+      "snippet": "Check out free XXX movies in HD quality. Fresh hardcore dubai girl sex clips on our adult tube site."
+    }
+  ]
+}

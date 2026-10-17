@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "joshycodes/ood-welfare-gemma-mix",
+  "slug": "joshycodes-ood-welfare-gemma-mix",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/ood-welfare-gemma-mix",
+  "created_at": "2026-10-16T21:49:02.000Z",
+  "updated_at": "2026-10-17T01:34:42.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "model-welfare",
+    "data-selection",
+    "research-artifact",
+    "base_model:google/gemma-3-27b-it",
+    "base_model:adapter:google/gemma-3-27b-it",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10898376288,
+  "storage_human": "10.9 GB",
+  "base_model": "google/gemma-3-27b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Xmalay.net — Malay Melayu and Indonesian Porn videos",
+      "url": "https://xmalay.xyz/",
+      "snippet": "Watch Malay Porn on xmalay. We have thousands of the best malay xxx videos. Melayu Porn, Malay Porn, Malay Sex, Melayu Sex …"
+    },
+    {
+      "title": "Nonton Bokep Malaysia 18+ Terbaru - Drbokep",
+      "url": "https://drbokep18.org/videocategory/bokep-malaysia/",
+      "snippet": "Temukan koleksi Bokep Malaysia terlengkap dan genre bokep indo lainnya terbaru di Drbokep!"
+    },
+    {
+      "title": "Nonton Bokep Malay Full HD Tanpa Sensor | KingBokep",
+      "url": "https://kingbokep.xxx/kategori/bokep-malay",
+      "snippet": "Nonton Bokep Malay Full HD gratis di KingBokep. Video Bokep Malay terbaru tanpa sensor, streaming lancar, update harian. …"
+    },
+    {
+      "title": "Koleksi Malay - KingBokep Indo | 18781+ Video Bokep Terbaru",
+      "url": "https://kingbokep.vu/koleksi/malay",
+      "snippet": "Streaming 18781+ video Malay HD premium. Koleksi Bokep Terbaru terlengkap, kualitas jernih, gratis tanpa batas."
+    },
+    {
+      "title": "MALAYSIAN • The hottest videos • SEX Nest TV",
+      "url": "https://sexnest.tv/malaysian-videos",
+      "snippet": "Home of the hottest free MALAYSIAN tube porn videos. The hottest one: Pretty Malaysian Babe In Hijab Lets Her BF Play With Her …"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "kor-448/Qwen2.5-3B-Instruct-heretic",
+  "slug": "kor-448-qwen2-5-3b-instruct-heretic",
+  "author": "kor-448",
+  "url": "https://huggingface.co/kor-448/Qwen2.5-3B-Instruct-heretic",
+  "created_at": "2026-10-17T00:57:16.000Z",
+  "updated_at": "2026-10-17T00:59:45.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "chat",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "reproducible",
+    "conversational",
+    "en",
+    "arxiv:2407.10671",
+    "base_model:Qwen/Qwen2.5-3B",
+    "base_model:finetune:Qwen/Qwen2.5-3B",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6183349043,
+  "storage_human": "6.2 GB",
+  "base_model": "Qwen/Qwen2.5-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kor – Votre partenaire de santé proactive",
+      "url": "https://www.kor.care/",
+      "snippet": "La plateforme Kor est proposée via votre entreprise ou votre complémentaire santé, qui financent Kor pour déjà plus de 400 000 …"
+    },
+    {
+      "title": "Kor – Votre partenaire de santé proactive",
+      "url": "https://www.kor.care/articles/la-plateforme-kor-devient-dispositif-medical",
+      "snippet": "Feb 10, 2026 · Grâce à plusieurs centaines de points de données par personne et à des milliers de règles médicales validées, Kor …"
+    },
+    {
+      "title": "Kor lève 3,5 millions d’euros pour rendre le bilan de santé accessible ...",
+      "url": "https://www.usine-digitale.fr/article/kor-leve-3-5-millions-d-euros-pour-rendre-le-bilan-de-sante-accessible-a-tous-les-salaries.N2211047",
+      "snippet": "Apr 4, 2024 · La plateforme digitale de la start-up Kor permet aux salariés d'avoir accès à un “carnet de santé numérique”."
+    },
+    {
+      "title": "Société KOR (954078309) : Chiffre d'affaires, statuts ... - Pappers",
+      "url": "https://www.pappers.fr/entreprise/kor-954078309",
+      "snippet": "Oct 6, 2026 · KOR à TOURS (37000) : Bilans, statuts, chiffre d'affaires, dirigeants, actionnaires, levées de fonds, annonces légales, …"
+    },
+    {
+      "title": "Kor lève 3,5 millions d’euros pour rendre le check-up ... - Maddyness",
+      "url": "https://www.maddyness.com/2024/04/03/kor-leve-35-millions-deuros-pour-rendre-le-check-up-sante-accessible-au-plus-grand-nombre/",
+      "snippet": "Apr 3, 2024 · Parce que la prévention contribue à réduire les maladies, la startup Kor a lancé une plateforme de check-up santé …"
+    }
+  ]
+}

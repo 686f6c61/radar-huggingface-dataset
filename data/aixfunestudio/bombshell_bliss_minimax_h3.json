@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "AIxFuneStudio/Bombshell_Bliss_MiniMax_H3",
+  "slug": "aixfunestudio-bombshell_bliss_minimax_h3",
+  "author": "AIxFuneStudio",
+  "url": "https://huggingface.co/AIxFuneStudio/Bombshell_Bliss_MiniMax_H3",
+  "created_at": "2026-10-17T00:18:02.000Z",
+  "updated_at": "2026-10-17T00:23:25.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 149161480,
+  "storage_human": "149 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gestisci gli Spostamenti di Google Maps",
+      "url": "https://support.google.com/maps/answer/6258979?hl=it&co=GENIE.Platform%3DAndroid",
+      "snippet": "Apri l'app Google Maps sul tuo smartphone o tablet Android. Tocca la tua immagine del profilo o iniziale Spostamenti . In alto a …"
+    },
+    {
+      "title": "Mit Plus Codes Orte suchen und teilen - Android - Google Maps-Hilfe",
+      "url": "https://support.google.com/maps/answer/7047426?hl=de&co=GENIE.Platform=Android",
+      "snippet": "Öffnen Sie auf Ihrem Android-Smartphone oder ‑Tablet die Google Maps App . Suchen Sie den Ort, dessen Plus Code Sie …"
+    },
+    {
+      "title": "How to Add Google Maps Street View In Excel? : r/excel - Reddit",
+      "url": "https://www.reddit.com/r/excel/comments/6ygwyv/how_to_add_google_maps_street_view_in_excel/",
+      "snippet": "Sep 6, 2017 · For me to take a look at these properties I use google maps street view. Prior to the auction I make a spreadsheet with …"
+    },
+    {
+      "title": "Google Maps - Reddit",
+      "url": "https://www.reddit.com/r/GoogleMaps/",
+      "snippet": "r/GoogleMaps is participating in ongoing protests regarding changes to Reddit's API accessibility. The subreddit may reopen at some …"
+    },
+    {
+      "title": "Google Maps JavaScript API RefererNotAllowedMapError",
+      "url": "https://stackoverflow.com/questions/35288250/google-maps-javascript-api-referernotallowedmaperror",
+      "snippet": "Feb 10, 2016 · We're trying to develop an geoplacement app for one of our clients, and we want first to test it in out own domain. We …"
+    }
+  ]
+}

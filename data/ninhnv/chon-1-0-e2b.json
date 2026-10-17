@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "ninhnv/chon-1.0-e2b",
+  "slug": "ninhnv-chon-1-0-e2b",
+  "author": "ninhnv",
+  "url": "https://huggingface.co/ninhnv/chon-1.0-e2b",
+  "created_at": "2026-10-16T18:31:49.000Z",
+  "updated_at": "2026-10-16T23:44:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "typed-decisions",
+    "classification",
+    "calibration",
+    "lora",
+    "jevbench",
+    "gemma4",
+    "en",
+    "vi",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:adapter:google/gemma-4-E2B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 418762146,
+  "storage_human": "419 MB",
+  "base_model": "google/gemma-4-E2B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Licence professionnelle Froid Industriel et Conditionnement d'Air …",
+      "url": "https://iutnantes.univ-nantes.fr/fr/formations/licence-professionnelle-froid-industriel-et-conditionnement-dair-fica",
+      "snippet": "Former des collaborateurs d'entreprise capables de maîtriser les installations de production de froid industriel et commercial, de la …Read more"
+    },
+    {
+      "title": "Licence Sciences pour l’Ingénieur option Froid Industriel",
+      "url": "https://www.gpi2d.greta.fr/fichesformation/licence-sciences-ingenieur-energie-developpement-durable-froid-industriel/",
+      "snippet": "Pour répondre aux besoins de cette transition énergétique, la licence Froid Industriel permet de développer de nouvelles …"
+    },
+    {
+      "title": "Licence FROID INDUSTRIEL avec le CNAM Paris Raspail",
+      "url": "https://www.ldmraspail.fr/licence-froid-industriel-avec-le-cnam-paris-raspail.php",
+      "snippet": "Jul 10, 2026 · La référence CNAM de base est LG03470A. Il s'agit donc d'une licence scientifique générale L3 qui permet la …"
+    },
+    {
+      "title": "Licence pro mention installations frigorifiques et de ... - Onisep",
+      "url": "https://www.onisep.fr/ressources/univers-formation/formations/post-bac/licence-pro-mention-installations-frigorifiques-et-de-conditionnement-d-air",
+      "snippet": "Découvrez les débouchés, le programme et les établissements proposant cette formation."
+    },
+    {
+      "title": "Licence Professionnelle - Froid Industriel et Conditionnement d’Air ...",
+      "url": "https://www.formasup-paysdelaloire.fr/formation/licence-professionnelle-installations-frigorifiques-et-de-conditionnement-dait/",
+      "snippet": "Former des collaborateurs d'entreprise capables de maîtriser les installations de production de froid industriel et commercial, de la …"
+    }
+  ]
+}

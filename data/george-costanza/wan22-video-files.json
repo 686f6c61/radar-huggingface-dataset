@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "George-Costanza/wan22-video-files",
+  "slug": "george-costanza-wan22-video-files",
+  "author": "George-Costanza",
+  "url": "https://huggingface.co/George-Costanza/wan22-video-files",
+  "created_at": "2026-10-02T04:55:57.000Z",
+  "updated_at": "2026-10-17T01:09:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "not-for-all-audiences",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 86100656731,
+  "storage_human": "86.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "George — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/George",
+      "snippet": "les listes produites par Wikidata : Liste des personnes de prénom « George » — même liste en incluant les éventuels prénoms …"
+    },
+    {
+      "title": "Clothing, Toys & Baby Products | George at ASDA",
+      "url": "https://direct.asda.com/george/clothing/10,default,sc.html",
+      "snippet": "Discover the latest fashion for women, men & kids, homeware, baby products & a wide range of kids’ toys. Fantastic quality & style at …"
+    },
+    {
+      "title": "Prénom George : Origine - Caractère - Signification - Etymologie",
+      "url": "https://www.parents.fr/prenoms/george-41445",
+      "snippet": "Signification et étymologie du prénom George La racine du prénom George est grecque. Il vient de « gheorghios », et signifie « …"
+    },
+    {
+      "title": "George Official Website | Clothing And Footwear",
+      "url": "https://georgefashion.com/",
+      "snippet": "George is an exclusive brand available at Walmart and Asda stores. You can find our collections in their physical retail locations and …"
+    },
+    {
+      "title": "George (given name) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/George_(given_name)",
+      "snippet": "George (English: / ˈdʒɔːrdʒ /) is a male given name derived from the Greek name Georgios (Γεώργιος; Ancient Greek: [ɡeɔ́ːrɡi.os], …"
+    }
+  ]
+}

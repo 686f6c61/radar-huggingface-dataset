@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Tim0th3us/motd-editor-350m-ONNX",
+  "slug": "tim0th3us-motd-editor-350m-onnx",
+  "author": "Tim0th3us",
+  "url": "https://huggingface.co/Tim0th3us/motd-editor-350m-ONNX",
+  "created_at": "2026-10-16T21:25:14.000Z",
+  "updated_at": "2026-10-16T21:26:58.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "lfm2",
+    "text-generation",
+    "webgpu",
+    "conversational",
+    "base_model:LiquidAI/LFM2.5-350M",
+    "base_model:quantized:LiquidAI/LFM2.5-350M",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 293813394,
+  "storage_human": "294 MB",
+  "base_model": "LiquidAI/LFM2.5-350M",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set o…Currently, we are expanding the ONNX Model Zoo by incorporating additional models from the following categories. As we are rigorously validating the new models for accuracy, refer to the validated models below that have been successfully validat…Vision•Image Classification•Object Detection & Image Segmentation•Body, Face & Gesture Analysis•Image ManipulationLanguageEvery ONNX backend should support running the models out of the box. After downloading and extracting the tarball of each model, you will find:•A protobuf file model.onnx that represents the serialized ONNX model."
+    },
+    {
+      "title": "onnx-community/LFM2-350M-ONNX · Hugging Face",
+      "url": "https://huggingface.co/onnx-community/LFM2-350M-ONNX",
+      "snippet": "We're releasing the weights of three post-trained checkpoints with 350M, 700M, and 1.2B parameters. They provide the following key …"
+    },
+    {
+      "title": "osmosis-ai/osmosis-eot-lfm2-350m-clf-head3-onnx · Hugging Face",
+      "url": "https://huggingface.co/osmosis-ai/osmosis-eot-lfm2-350m-clf-head3-onnx",
+      "snippet": "Fine-tuned from LiquidAI/LFM2.5-350M, exported to INT8 ONNX, and head-sliced for low CPU latency. Given a short conversation …"
+    },
+    {
+      "title": "Models - ONNX Runtime",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "Convert to ONNX, optimize, and quantize your own models quickly and easily with Olive. Here's a quick snippet showing you how …"
+    },
+    {
+      "title": "MossyModels — Free YOLO and ONNX AI Models",
+      "url": "https://mossymodels.com/",
+      "snippet": "Free community library of YOLO and ONNX AI aimbot models for Fortnite, Valorant, Warzone, Apex …"
+    }
+  ]
+}

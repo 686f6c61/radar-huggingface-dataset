@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "EPFL-LARA/lean-world-model-qwen3-8b-sft",
+  "slug": "epfl-lara-lean-world-model-qwen3-8b-sft",
+  "author": "EPFL-LARA",
+  "url": "https://huggingface.co/EPFL-LARA/lean-world-model-qwen3-8b-sft",
+  "created_at": "2026-10-16T23:38:58.000Z",
+  "updated_at": "2026-10-17T00:16:43.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "lean",
+    "lean4",
+    "theorem-proving",
+    "lean-world-model",
+    "conversational",
+    "en",
+    "dataset:EPFL-LARA/lean-world-model-cpt",
+    "dataset:EPFL-LARA/lean-world-model-sft",
+    "base_model:Qwen/Qwen3-8B-Base",
+    "base_model:finetune:Qwen/Qwen3-8B-Base",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939478,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EPFL",
+      "url": "https://www.epfl.ch/",
+      "snippet": "2 days ago · Basée à Lausanne, L’EPFL est une université dont les trois missions sont l’éducation, la recherche et l’innovation."
+    },
+    {
+      "title": "EPFL",
+      "url": "https://www.epfl.ch/en/",
+      "snippet": "2 days ago · Based in Lausanne (Switzerland), EPFL is a university whose three missions are education, research and innovation."
+    },
+    {
+      "title": "École polytechnique fédérale de Lausanne — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/%C3%89cole_polytechnique_f%C3%A9d%C3%A9rale_de_Lausanne",
+      "snippet": "L'EPFL est membre du réseau Top Industrial Managers for Europe (TIME) créé en 1989 et qui regroupe une cinquantaine …"
+    },
+    {
+      "title": "École Polytechnique Fédérale de Lausanne - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/%C3%89cole_Polytechnique_F%C3%A9d%C3%A9rale_de_Lausanne",
+      "snippet": "EPFL has an urban campus that extends alongside Lake Geneva, and includes the EPFL Innovation Park as well as university …"
+    },
+    {
+      "title": "Accueil - L'Association nationale des EPFL",
+      "url": "https://asso-epfl.fr/",
+      "snippet": "L’ Association nationale des Etablissements Publics Fonciers Locaux est le porte-parole des EPFL. Elle les accompagne dans leur …"
+    }
+  ]
+}

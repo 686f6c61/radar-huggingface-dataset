@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "North-ML1/Flare-Preview",
+  "slug": "north-ml1-flare-preview",
+  "author": "North-ML1",
+  "url": "https://huggingface.co/North-ML1/Flare-Preview",
+  "created_at": "2026-10-16T22:10:13.000Z",
+  "updated_at": "2026-10-17T00:38:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "flare",
+    "north-ml",
+    "starlight",
+    "deltanet",
+    "hybrid",
+    "conversational",
+    "safetensors",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 237241,
+  "storage_human": "237241 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vêtements outdoor, sacs à dos, chaussures | The North Face FR",
+      "url": "https://www.thenorthface.com/fr-fr",
+      "snippet": "Vêtements outdoor, sacs à dos, chaussures et matériel de camping : équipez-vous avec The North Face. Facilités de paiement et …"
+    },
+    {
+      "title": "NORTH",
+      "url": "https://north.fr/",
+      "snippet": "Nous traduisons l'ADN d'une marque en conversations crédibles — par les médias, l'influence et des collaborations sur-mesure. …"
+    },
+    {
+      "title": "Boutiques The North Face® | Livraison gratuite en boutique",
+      "url": "https://locations.thenorthface.fr/",
+      "snippet": "Trouvez une boutique The North Face® à proximité de chez vous. Commandez en ligne. Livraison gratuite en magasin ou à partir de …"
+    },
+    {
+      "title": "North - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/North",
+      "snippet": "North is one of the four compass points or cardinal directions. It is the opposite of south and is perpendicular to east and west. North …"
+    },
+    {
+      "title": "North Kiteboarding | North Foils | North Windsurfing",
+      "url": "https://northactionsports.com/",
+      "snippet": "North Kiteboarding delivers award-winning kite & wing foil technology, boards & control systems. North Windsurfing pioneers the only …"
+    }
+  ]
+}

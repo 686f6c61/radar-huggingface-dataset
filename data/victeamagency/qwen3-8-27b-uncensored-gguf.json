@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "VicTeamAgency/Qwen3.8-27B-Uncensored-GGUF",
+  "slug": "victeamagency-qwen3-8-27b-uncensored-gguf",
+  "author": "VicTeamAgency",
+  "url": "https://huggingface.co/VicTeamAgency/Qwen3.8-27B-Uncensored-GGUF",
+  "created_at": "2026-10-16T23:54:20.000Z",
+  "updated_at": "2026-10-16T23:54:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "uncensored",
+    "victeam",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-10-17T02:53:04.549Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Run an Uncensored Qwen 3.8 27b: Local & Cloud",
+      "url": "https://thegeekinsights.com/run-uncensored-qwen-3-8-27b/",
+      "snippet": "Qwen3.8-27B-Uncensored is a community-modified 27-billion-parameter model that runs locally from a GGUF file or through hosted inference. The right setup depends on your available VRAM or unified memory, whether you need image and video input, and whether prompts must remain on your own machine. For most local systems, a 4-bit file is the sensible starting point."
+    },
+    {
+      "title": "Qwen 3.8 27B Uncensored Local: GGUF Quants + llama.cpp",
+      "url": "https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally",
+      "snippet": "It is the GGUF export of the same abliterated build as Qwen3.8-27B-Uncensored-FP8, re-packaged for llama.cpp-class local runtimes, and it inherits the base model&#x27;s Apache 2.0 license and its native 262,144-token context."
+    },
+    {
+      "title": "Qwen3.8 27b Uncensored - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/qwen3-8-27b-uncensored.html",
+      "snippet": "Download Qwen3.8 27b Uncensored GGUF model. 30.1 GB, 2,395,758 downloads, 970 likes."
+    },
+    {
+      "title": "Run Qwen3-27B Uncensored Locally: GGUF, llama.cpp & Ethics",
+      "url": "https://nachoconesa.com/blog/qwen3-27b-uncensored-local?lang=en",
+      "snippet": "Step-by-step guide to running Qwen3.8-27B-Uncensored locally with GGUF quants and llama.cpp, plus an honest look at the legal and ethical risks involved. Uncensored large language models have become one of the most contested topics in the AI community throughout 2026."
+    },
+    {
+      "title": "JonathanColetti/Qwen3.8-27B-Uncensored-GGUF · Hugging Face",
+      "url": "https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

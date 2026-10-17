@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Athithya117/Qwen3-8B-AWQ",
+  "slug": "athithya117-qwen3-8b-awq",
+  "author": "Athithya117",
+  "url": "https://huggingface.co/Athithya117/Qwen3-8B-AWQ",
+  "created_at": "2026-10-17T00:24:19.000Z",
+  "updated_at": "2026-10-17T00:24:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:2309.00071",
+    "arxiv:2505.09388",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:quantized:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "4-bit",
+    "awq",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 6110004518,
+  "storage_human": "6.1 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Xgroovy Porn Videos - HotMovs.Net",
+      "url": "https://hotmovs.net/source/xgroovy/",
+      "snippet": "Greatest Xgroovy Porno Videos in a wide array of arousing categories. Come inside and enjoy Best Xgroovy Porn 💋."
+    },
+    {
+      "title": "XGroovy et plus de 100 sites porno gratuits comme Xgroovy.com",
+      "url": "https://fr.thepornlinks.com/meilleurs-sites-porno-gratuits/xgroovy/",
+      "snippet": "XGroovy fait partie du top 10 des plus grands sites pornographiques gratuits au monde, et ce pour des raisons simples : sa collection …"
+    },
+    {
+      "title": "Xgroovy Porn Videos - BigAss.Me",
+      "url": "https://bigass.me/tube/xgroovy/",
+      "snippet": "The hottest free Xgroovy porn videos. Free collection of big ass porn videos with daily updates"
+    },
+    {
+      "title": "XGROOVY & 177+ Free Porn Tube Sites Like Xgroovy.com",
+      "url": "https://theporndude.com/12949/xgroovy",
+      "snippet": "What is Xgroovy.com? Xgroovy.com is a site that promises people the chance to get their groove on in an adults-only way by …"
+    },
+    {
+      "title": "'XGroovy.com' Search - XVIDEOS.COM",
+      "url": "https://mobile-xvideos.com/?k=XGroovy.com",
+      "snippet": "Free 173,158 25,774 XGroovy.com (173,158 results) Report Sort by : Relevance Date Duration"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Vipatel8/dl-multitask",
+  "slug": "vipatel8-dl-multitask",
+  "author": "Vipatel8",
+  "url": "https://huggingface.co/Vipatel8/dl-multitask",
+  "created_at": "2026-10-16T22:25:37.000Z",
+  "updated_at": "2026-10-16T22:25:43.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vipatel8 (Vihaan) - Hugging Face",
+      "url": "https://huggingface.co/Vipatel8",
+      "snippet": "Recent Activity updated a modelabout 8 hours ago Vipatel8/hw2-multimodal-reasoning published a modelabout 8 hours ago Vipatel8/hw2-multimodal-reasoning liked a modelabout 8 hours ago Edge0/Edge0-35B-A3B-preview View all activity"
+    },
+    {
+      "title": "Vipatel8 (Vihaan) - Hugging Face",
+      "url": "https://huggingface.co/Vipatel8/models",
+      "snippet": "Vipatel8&#x27;s models1 Sort: Recently updated Vipatel8/hw2-multimodal-reasoning 49.6k•Updated 3 days ago• 13"
+    },
+    {
+      "title": "Multi-Task Learning(MTL) for Deep Learning - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/deep-learning/multi-task-learningmtl-for-deep-learning/",
+      "snippet": "Multi-Task Learning (MTL) is a machine learning approach where a single model learns multiple related tasks simultaneously using shared representations, improving generalization and reducing overfitting."
+    },
+    {
+      "title": "Models - MultitaskAI",
+      "url": "https://multitaskai.com/docs/app/models/",
+      "snippet": "MultitaskAI allows you to customize and configure a variety of AI models to suit your specific needs. By adjusting settings globally, per chat, or within agents, you can optimize the AI&#x27;s behavior to enhance your workflow."
+    },
+    {
+      "title": "DL_Assignment2/models/multitask.py at main · zda23b024/DL ... - GitHub",
+      "url": "https://github.com/zda23b024/DL_Assignment2/blob/main/models/multitask.py",
+      "snippet": "Contribute to zda23b024/DL_Assignment2 development by creating an account on GitHub."
+    }
+  ]
+}

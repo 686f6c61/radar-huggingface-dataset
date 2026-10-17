@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "andyP/qwen3-embedding-0.6b-german-categories-coopfix",
+  "slug": "andyp-qwen3-embedding-0-6b-german-categories-coopfix",
+  "author": "andyP",
+  "url": "https://huggingface.co/andyP/qwen3-embedding-0.6b-german-categories-coopfix",
+  "created_at": "2026-10-16T23:55:28.000Z",
+  "updated_at": "2026-10-16T23:57:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "qwen3",
+    "sentence-similarity",
+    "feature-extraction",
+    "text-classification",
+    "business-classification",
+    "swiss-companies",
+    "de",
+    "fr",
+    "it",
+    "base_model:Qwen/Qwen3-Embedding-0.6B",
+    "base_model:finetune:Qwen/Qwen3-Embedding-0.6B",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 595776512,
+  "parameters_human": "595.8M",
+  "storage_bytes": 1203010383,
+  "storage_human": "1.2 GB",
+  "base_model": "Qwen/Qwen3-Embedding-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Porn Videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/",
+      "snippet": "XVideos.com is a free hosting service for porn videos. We convert your files to various formats. You can grab our 'embed code' to …"
+    },
+    {
+      "title": "Free Porn, Sex, Tube Videos, XXX Pics, Pussy in Porno Movies",
+      "url": "https://www.xnxx.com/",
+      "snippet": "XNXX delivers free sex movies and fast free porn videos (tube porn). Now 10 million+ sex vids available for free! Featuring hot pussy, …"
+    },
+    {
+      "title": "100% Free Porno Videos, Porno Tube - FreePorno",
+      "url": "https://freeporno.xxx/",
+      "snippet": "Show XXX movies and videos that now in a trend. We update the list of almost 10,000 hottest pornstars. It's easy to find similar …"
+    },
+    {
+      "title": "Tube Pleasure | Free Tube Porn Videos",
+      "url": "https://tubepleasure.com/en/",
+      "snippet": "Porn videos: Mom, Stepmom, Wife, Vintage, Mature, Shemale, Teen (18+), Milf, Interracial, Cartoon, Cfnm, Granny, Creampie, …"
+    },
+    {
+      "title": "Free Porn Videos & XXX Movies: Sex Videos Tube | xHamster",
+      "url": "https://xhamster.com/",
+      "snippet": "Free porn videos and exclusive XXX movies are here at xHamster. Instantly stream 6M+ hardcore sex videos from pros and …"
+    }
+  ]
+}

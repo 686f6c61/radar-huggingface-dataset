@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "lowendmicrobacteria/lowendgirlfriend",
+  "slug": "lowendmicrobacteria-lowendgirlfriend",
+  "author": "lowendmicrobacteria",
+  "url": "https://huggingface.co/lowendmicrobacteria/lowendgirlfriend",
+  "created_at": "2026-10-16T23:57:47.000Z",
+  "updated_at": "2026-10-16T23:57:48.000Z",
+  "license": "mixed-see-license-section",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "roleplay",
+    "companion",
+    "long-context",
+    "cpu",
+    "nsfw",
+    "en",
+    "base_model:SupraLabs/Supra-50M-Instruct",
+    "base_model:finetune:SupraLabs/Supra-50M-Instruct",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51786240,
+  "parameters_human": "51.8M",
+  "storage_bytes": 207157136,
+  "storage_human": "207 MB",
+  "base_model": "SupraLabs/Supra-50M-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-10-17T02:53:02.525Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Next-Gen AI Girlfriend Generators in 2026 (Reviewed for Photorealism ...",
+      "url": "https://edemai.org/blog/realistic-ai-girlfriend-generator",
+      "snippet": "The best Realistic AI Girlfriend Generators in 2026 can create highly photorealistic AI girlfriends with detailed faces, natural skin textures, consistent features, and customizable appearances from simple text prompts or reference photos. The biggest difference between next-gen tools is how convincingly they handle realism, facial detail, body proportions, image consistency, and customization ..."
+    },
+    {
+      "title": "PixAI Model Market | 1.8M+ AI Art Models and LoRAs",
+      "url": "https://pixai.art/en/market",
+      "snippet": "Open marketplace for AI art models. Browse 1.8M+ user-trained models and LoRAs to generate anime, realistic and fantasy art free on PixAI."
+    },
+    {
+      "title": "How to run an AI girlfriend locally: the complete self-hosted companion ...",
+      "url": "https://pocketanimus.com/guides/run-ai-girlfriend-locally/",
+      "snippet": "A start-to-finish guide to running a private, self-hosted AI companion on your own hardware, covering the model, the backend, the frontend, memory, and the realistic tradeoffs versus cloud platforms."
+    },
+    {
+      "title": "Emotica.ai: Create your own AI Girlfriend",
+      "url": "https://emotica.ai/start/",
+      "snippet": "Your dream girl awaits! Create your AI Girlfriend, shape her look and personality, bring her to life and start your playful chat."
+    },
+    {
+      "title": "AI Girlfriend No Sign Up Needed | Veline AI",
+      "url": "https://www.velineai.com/",
+      "snippet": "Chat with a free AI girlfriend — no sign up, no credit card. Pick her style and personality, then start a guest chat in seconds."
+    }
+  ]
+}
