@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Duckets/Hy-Memory-30B-A3B-MLX-4bit",
+  "slug": "duckets-hy-memory-30b-a3b-mlx-4bit",
+  "author": "Duckets",
+  "url": "https://huggingface.co/Duckets/Hy-Memory-30B-A3B-MLX-4bit",
+  "created_at": "2026-10-17T02:17:21.000Z",
+  "updated_at": "2026-10-17T09:23:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "hy_v3",
+    "apple-silicon",
+    "quantized",
+    "4bit",
+    "memory",
+    "ai-agents",
+    "hunyuan",
+    "text-generation",
+    "conversational",
+    "base_model:tencent/Hy-Memory-30B-A3B",
+    "base_model:quantized:tencent/Hy-Memory-30B-A3B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30064719872,
+  "parameters_human": "30.06B",
+  "storage_bytes": 16911946261,
+  "storage_human": "16.9 GB",
+  "base_model": "tencent/Hy-Memory-30B-A3B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tencent/Hy-Memory-30B-A3B · Hugging Face",
+      "url": "https://huggingface.co/tencent/Hy-Memory-30B-A3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "jyohukuchan/Hy-Memory-30B-A3B-exl3-4.08bpw · Hugging Face",
+      "url": "https://huggingface.co/jyohukuchan/Hy-Memory-30B-A3B-exl3-4.08bpw",
+      "snippet": "Mixed-precision EXL3 conversion of tencent/Hy-Memory-30B-A3B at revision 64a460a94d5498b7316fb02395c72d01c47a7347. The source is a memory-writer model for extracting ..."
+    },
+    {
+      "title": "Hy-Memory-30B-A3B: Tencent Open Memory Model Beats Opus 5 | explainx.ai ...",
+      "url": "https://www.explainx.ai/blog/tencent-hy-memory-30b-a3b-open-memory-writer-model-mem0-memos-2026",
+      "snippet": "Tencent Hy-Memory-30B-A3B is an open 30B MoE model that decides what an agent remembers. Scores, how to run it with vLLM, and what the numbers do not show."
+    },
+    {
+      "title": "Hy-Memory-30B-A3B: Attributed Reinforcement Learning forLong-Term ...",
+      "url": "https://arxiv.org/html/2610.22196",
+      "snippet": "Hy-Memory-30B-A3B belongs to the second line but differs in scope. It trains the writer only, keeps the reader fixed during reward computation, and targets multiple pre-existing harnesses rather than one newly designed memory architecture."
+    },
+    {
+      "title": "Tencent&#x27;s Hy-Memory-30B-A3B: A Model Built Just to Write Memory",
+      "url": "https://www.mindstudio.ai/blog/tencent-hy-memory-30b-a3b-release",
+      "snippet": "Tencent&#x27;s Hy-Memory-30B-A3B is a dedicated memory-writer model that outperforms general LLMs inside Mem0, MemOS and Hy-Memory frameworks."
+    }
+  ]
+}

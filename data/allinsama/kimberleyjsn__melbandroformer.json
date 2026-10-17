@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Allinsama/KimberleyJSN__melbandroformer",
+  "slug": "allinsama-kimberleyjsn__melbandroformer",
+  "author": "Allinsama",
+  "url": "https://huggingface.co/Allinsama/KimberleyJSN__melbandroformer",
+  "created_at": "2026-10-17T18:03:30.000Z",
+  "updated_at": "2026-10-17T18:05:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 913106900,
+  "storage_human": "913 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - KimberleyJensen/Mel-Band-Roformer-Vocal-Model",
+      "url": "https://github.com/KimberleyJensen/Mel-Band-Roformer-Vocal-Model",
+      "snippet": "Inference - python inference.py --config_path configs/config_vocals_mel_band_roformer.yaml --model_path melbandroformer.ckpt --input_folder songsfolder --store_dir outputsfolder The model will output a vocals and instrumental file for every .wav file inside the --input_folder and save them to the --store_dir folder."
+    },
+    {
+      "title": "Fine-tuned Models for KimberleyJSN/melbandroformer - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:KimberleyJSN/melbandroformer",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "KimberleyJSN/melbandroformer · Hugging Face",
+      "url": "https://huggingface.co/KimberleyJSN/melbandroformer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MelBandRoformer Model | KimberleyJensen/Mel-Band-Roformer-Vocal-Model ...",
+      "url": "https://deepwiki.com/KimberleyJensen/Mel-Band-Roformer-Vocal-Model/4.2-melbandroformer-model",
+      "snippet": "MelBandRoformer Model Relevant source files This document provides comprehensive technical documentation of the MelBandRoformer model implementation, the core neural network architecture for music source separation. It covers the model&#x27;s internal structure, data processing pipeline, and key algorithmic components. For high-level architecture concepts, see Model Architecture. For attention ..."
+    },
+    {
+      "title": "Chipdancer/Mel-Band-Roformer-Vocal-Model_KimberleyJensen",
+      "url": "https://github.com/Chipdancer/Mel-Band-Roformer-Vocal-Model_KimberleyJensen",
+      "snippet": "Inference - python inference.py --config_path configs/config_vocals_mel_band_roformer.yaml --model_path melbandroformer.ckpt --input_folder songsfolder --store_dir outputsfolder The model will output a vocals and instrumental file for every .wav file inside the --input_folder and save them to the --store_dir folder."
+    }
+  ]
+}

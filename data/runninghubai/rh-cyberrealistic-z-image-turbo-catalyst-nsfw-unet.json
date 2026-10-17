@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-cyberrealistic-z-image-turbo-catalyst-nsfw-unet",
+  "slug": "runninghubai-rh-cyberrealistic-z-image-turbo-catalyst-nsfw-unet",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-cyberrealistic-z-image-turbo-catalyst-nsfw-unet",
+  "created_at": "2026-10-17T02:02:51.000Z",
+  "updated_at": "2026-10-17T02:10:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "unet",
+    "text-to-image",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12569610673,
+  "storage_human": "12.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RunningHubAI/rh-cyberrealistic-z-image-turbo-unet · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-cyberrealistic-z-image-turbo-unet",
+      "snippet": "This repository provides rh-cyberrealistic-z-image-turbo-unet weight files. You can load them on RunningHub."
+    },
+    {
+      "title": "CyberRealistic Z-Image Turbo - RunningHub Stable Diffusion & Flux Unet",
+      "url": "https://www.runninghub.ai/model/public/2062449316442238978",
+      "snippet": "It follows the original Z-Image Turbo settings and philosophy, with minimal intervention, exploring how well this setup translates into the CyberRealistic workflow."
+    },
+    {
+      "title": "CyberRealistic Z-Image Turbo - RunningHub Stable Diffusion & Flux Unet",
+      "url": "https://www.runninghub.ai/model/public/2079338284707667969",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "rh-cyberrealistic-z-image-turbo-catalyst-nsfw-unet",
+      "url": "https://huggingface.co/RunningHubAI/rh-cyberrealistic-z-image-turbo-catalyst-nsfw-unet",
+      "snippet": "RunningHubAI / rh-cyberrealistic-z-image-turbo-catalyst-nsfw-unet Like 0 Text-to-Image comfyui unet Not-For-All-Audiences Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "RunningHubAI/rh-cyberrealistic-z-image-turbo-unet at main",
+      "url": "https://huggingface.co/RunningHubAI/rh-cyberrealistic-z-image-turbo-unet/tree/main",
+      "snippet": "0 Text-to-Image comfyui unet Model card FilesFiles and versions xet Community Copy to bucket new main rh-cyberrealistic-z-image-turbo-unet 6.54 GB Ctrl+K Ctrl+K 1 contributor History:2 commits RunningHubAI Upload RunningHub model 2079338284707667969 c41f059 verified4 days ago .gitattributes Safe 1.57 kBUpload RunningHub model ..."
+    }
+  ]
+}

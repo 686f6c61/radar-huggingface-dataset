@@ -1,0 +1,108 @@
+{
+  "schema": 1,
+  "id": "LourivalGontijo/plantvillage-mobilenetv2",
+  "slug": "lourivalgontijo-plantvillage-mobilenetv2",
+  "author": "LourivalGontijo",
+  "url": "https://huggingface.co/LourivalGontijo/plantvillage-mobilenetv2",
+  "created_at": "2026-10-17T18:29:10.000Z",
+  "updated_at": "2026-10-17T18:29:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mobilenet_v2",
+    "image-classification",
+    "plant-disease",
+    "plantvillage",
+    "agriculture",
+    "mobilenetv2",
+    "en",
+    "dataset:abdallahalidev/plantvillage-dataset",
+    "base_model:google/mobilenet_v2_1.0_224",
+    "base_model:finetune:google/mobilenet_v2_1.0_224",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2306662,
+  "parameters_human": "2.3M",
+  "storage_bytes": 9605736,
+  "storage_human": "10 MB",
+  "base_model": "google/mobilenet_v2_1.0_224",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Image Classification",
+      "dataset": "PlantVillage (color, held-out test split)",
+      "metric": "Accuracy",
+      "value": 0.9917
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "PlantVillage (color, held-out test split)",
+      "metric": "Macro F1",
+      "value": 0.9851
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "PlantVillage (color, held-out test split)",
+      "metric": "Top-3 accuracy",
+      "value": 0.9998
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "Real-world set: Cropped-PlantDoc (final split, 25 images)",
+      "metric": "Top-1 accuracy (reached model)",
+      "value": 0.16
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "Real-world set: Cropped-PlantDoc (final split, 25 images)",
+      "metric": "End-to-end pass rate",
+      "value": 0.16
+    }
+  ],
+  "sources": [
+    {
+      "title": "فشار دادن - 101 صحنه پورن داغ | eatout.xxx",
+      "url": "https://eatout.xxx/fa/search/%D9%81%D8%B4%D8%A7%D8%B1-%D8%AF%D8%A7%D8%AF%D9%86",
+      "snippet": "101 ویدیو داغ از فشار دادن را در eatout.xxx تماشا کنید. صحنه‌های جذاب، لحظات سکسی و کلیپ‌های پورن HD هیجان‌انگیز را ببینید."
+    },
+    {
+      "title": "فشار دادن سينه زن / محبوب / HDRoom.xxx - فیلم های سکسی قشنگ.",
+      "url": "https://hdroom.xxx/fa/search/%D9%81%D8%B4%D8%A7%D8%B1-%D8%AF%D8%A7%D8%AF%D9%86-%D8%B3%D9%8A%D9%86%D9%87-%D8%B2%D9%86",
+      "snippet": "بهترین ویدئوهای پورن را درباره فشار دادن سينه زن تماشا کنید. HD Room – .ویدئو سکسی رایگان با اپدیت روزانه."
+    },
+    {
+      "title": "ممه خوردن @ HD Stream XXX",
+      "url": "https://hdstream.xxx/fa/category/%D9%85%D9%85%D9%87-%D8%AE%D9%88%D8%B1%D8%AF%D9%86",
+      "snippet": "فیلم HD ممه خوردن."
+    },
+    {
+      "title": "ویدیوهای پورن رایگان و فیلم‌های XXX: لوله ویدیوهای سکسی | xHamster",
+      "url": "https://fa.xhamster.com/",
+      "snippet": "ویدیوهای پورن رایگان و فیلم‌های XXX انحصاری در xHamster منتظر شماست. همین حالا بیش از ۶ میلیون ویدیوی سکسی هاردکور از حرفه‌ای‌ها و آماتورها را با کیفیت بالا در این سایت پورن …"
+    },
+    {
+      "title": "ویدیوهای ممه خوردن | XXX HD رایگان با کیفیت بالا - HDHQ.XXX",
+      "url": "https://hdhq.xxx/fa/category/%D9%85%D9%85%D9%87-%D8%AE%D9%88%D8%B1%D8%AF%D9%86",
+      "snippet": "ویدیوهای پورن ممه خوردن HD رایگان را به صورت آنلاین با کیفیت بالا تماشا کنید. مجموعه بزرگی از کلیپ‌های XXX در دسته‌بندی‌های: ممه خوردن و خیلی بیشتر. ویدیوهای جدید روزانه بدون …"
+    }
+  ]
+}

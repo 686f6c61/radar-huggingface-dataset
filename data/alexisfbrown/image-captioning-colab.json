@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ALEXISFBROWN/image-captioning-colab",
+  "slug": "alexisfbrown-image-captioning-colab",
+  "author": "ALEXISFBROWN",
+  "url": "https://huggingface.co/ALEXISFBROWN/image-captioning-colab",
+  "created_at": "2026-10-17T16:19:15.000Z",
+  "updated_at": "2026-10-17T16:19:20.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "image-captioning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Official ESTA Application Website - Home",
+      "url": "https://esta.cbp.dhs.gov/esta",
+      "snippet": "When should I submit an application through ESTA? If I traveled to Cuba? Need help getting started?"
+    },
+    {
+      "title": "Official ESTA Application Website - Home",
+      "url": "https://esta.cbp.dhs.gov/?lang=fr",
+      "snippet": "CBP systems updates required to collect the new fee amount are scheduled to be effective on October 16, 2026. All unpaid ESTA …"
+    },
+    {
+      "title": "Demande d'une autorisation de voyage aux États-Unis (Esta)",
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/R1211",
+      "snippet": "Pour toute explication, consulter les fiches pratiques : Voyage aux USA : quelles sont les formalités (passeport, Esta, visa...) ?"
+    },
+    {
+      "title": "Electronic System for Travel Authorization - U.S. Customs and Border ...",
+      "url": "https://www.cbp.gov/travel/international-visitors/esta",
+      "snippet": "ESTA is an automated system that determines the eligibility of visitors to travel to the United States under the Visa Waiver Program …"
+    },
+    {
+      "title": "ESTA - Ambassade et consulats des États-Unis d’Amérique en France",
+      "url": "https://fr.usembassy.gov/fr/esta/",
+      "snippet": "Les demandes d’ESTA peuvent être soumises à tout moment avant le voyage, mais il est fortement recommandé d’effectuer toute …"
+    }
+  ]
+}

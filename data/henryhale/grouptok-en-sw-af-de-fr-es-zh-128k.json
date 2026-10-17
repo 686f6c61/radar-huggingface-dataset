@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "henryhale/grouptok-en-sw-af-de-fr-es-zh-128k",
+  "slug": "henryhale-grouptok-en-sw-af-de-fr-es-zh-128k",
+  "author": "henryhale",
+  "url": "https://huggingface.co/henryhale/grouptok-en-sw-af-de-fr-es-zh-128k",
+  "created_at": "2026-10-17T01:28:16.000Z",
+  "updated_at": "2026-10-17T01:29:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "tokenizers",
+  "languages": [
+    "en",
+    "sw",
+    "af",
+    "de",
+    "fr",
+    "es",
+    "zh"
+  ],
+  "tags": [
+    "tokenizers",
+    "tokenizer",
+    "bpe",
+    "grouptok",
+    "translation-groups",
+    "multilingual",
+    "african-languages",
+    "en",
+    "sw",
+    "af",
+    "de",
+    "fr",
+    "es",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "henryhale/grouptok-en-sw-af-de-fr-es-zh-128k · Hugging Face",
+      "url": "https://huggingface.co/henryhale/grouptok-en-sw-af-de-fr-es-zh-128k",
+      "snippet": "grouptok-en-sw-af-de-fr-es-zh-128k A byte-level BPE tokenizer of 131,072 tokens for English, Swahili, Afrikaans, German, French, Spanish and Chinese, whose vocabulary is grouped by translation with grouptok: a group gathers tokens that translate each other, across languages (e.g. water, Wasser, eau, agua, maji). Its tokenizer.json is exactly that of the baseline bpe-en-sw-af-de-fr-es-zh-128k ..."
+    },
+    {
+      "title": "henryhale/grouptok-en-sw-af-de-fr-es-zh-200k · Hugging Face",
+      "url": "https://huggingface.co/henryhale/grouptok-en-sw-af-de-fr-es-zh-200k",
+      "snippet": "grouptok-en-sw-af-de-fr-es-zh-200k A byte-level BPE tokenizer of 200,000 tokens for English, Swahili, Afrikaans, German, French, Spanish and Chinese, whose vocabulary is grouped by translation with grouptok: a group gathers tokens that translate each other, across languages (e.g. water, Wasser, eau, agua, maji). Its tokenizer.json is exactly that of the baseline bpe-en-sw-af-de-fr-es-zh-200k ..."
+    },
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "henryhale (Henry Hale) · GitHub",
+      "url": "https://github.com/henryhale",
+      "snippet": "⚡️ A minimal, efficient front-end tool for quick, streamlined tasks. 🟦 A lightweight JavaScript library for evaluating mathematical expressions written in natural mathematical notation. An embeddable Go package for accepting, routing, and reconciling payments through provider adapters."
+    },
+    {
+      "title": "Home | Henry Hale",
+      "url": "https://www.henryhale.com/",
+      "snippet": "Below are some technical projects I&#x27;ve done. This is a tool I built to try to understand better what it means for a barbershop quartet to tune well. It synthesizes the sound of four voices in a way based on the source-filter model from linguistics."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "esatapedico",
   "url": "https://huggingface.co/esatapedico/Qwen3.8-27B-NVFP4-BUDGET-GGUF",
   "created_at": "2026-08-16T15:46:31.000Z",
-  "updated_at": "2026-08-19T08:20:56.000Z",
+  "updated_at": "2026-10-16T20:26:30.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,7 +34,7 @@
     "conversational"
   ],
   "likes": 13,
-  "downloads_30d": 1077,
+  "downloads_30d": 1477,
   "trending_score": 0,
   "parameters": 26895998800,
   "parameters_human": "26.90B",

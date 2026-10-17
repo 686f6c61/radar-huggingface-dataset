@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "MONIADF-2/qwen2-hl2",
+  "slug": "moniadf-2-qwen2-hl2",
+  "author": "MONIADF-2",
+  "url": "https://huggingface.co/MONIADF-2/qwen2-hl2",
+  "created_at": "2026-10-17T02:46:36.000Z",
+  "updated_at": "2026-10-17T02:46:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 0,
+  "parameters_human": null,
+  "storage_bytes": 3508555,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MONIADF-2/qwen2-hl2 · Hugging Face",
+      "url": "https://huggingface.co/MONIADF-2/qwen2-hl2",
+      "snippet": "MONIADF-2 / qwen2-hl2 Like 0 Safetensors qwen2 custom_code License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new tiny demo"
+    },
+    {
+      "title": "Qwen Timeline: Model & Product Release History",
+      "url": "https://www.scriptbyai.com/qwen-timeline/",
+      "snippet": "Qwen model release dates and version history, from Tongyi Qianwen and Qwen-7B through Qwen3.8-Omni-Flash, Max, Coder, VL, QwQ, and Qwen Code."
+    },
+    {
+      "title": "Qwen (Qwen) - Hugging Face",
+      "url": "https://huggingface.co/Qwen",
+      "snippet": "Org profile for Qwen on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen-Image-2.1: Qwen&#x27;s most powerful open-source image ...",
+      "url": "https://github.com/QwenLM/Qwen-Image-2.1",
+      "snippet": "We are excited to open-source Qwen-Image-2.1, a unified text-to-image generation and image editing model in the Qwen family. With just 7B parameters in its visual generation component (32 Single-Stream DiT layers), Qwen-Image-2.1 balances generation quality, inference efficiency, and versatility. Four key improvements define this release: Compact and Efficient — A lightweight architecture ..."
+    },
+    {
+      "title": "Qwen 2 — Multilingual AI Image Model · Twin AI - twinailabs.com",
+      "url": "https://twinailabs.com/en/models/qwen-image-2",
+      "snippet": "Qwen 2 is Alibaba&#x27;s Qwen Image Max 2512 on Twin AI: multilingual with excellent Asian-text rendering, Elo 1158. Generate from Russia, no VPN, pay in credits."
+    }
+  ]
+}

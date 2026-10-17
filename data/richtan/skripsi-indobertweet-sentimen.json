@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "RichTan/skripsi-indobertweet-sentimen",
+  "slug": "richtan-skripsi-indobertweet-sentimen",
+  "author": "RichTan",
+  "url": "https://huggingface.co/RichTan/skripsi-indobertweet-sentimen",
+  "created_at": "2026-10-17T01:08:06.000Z",
+  "updated_at": "2026-10-17T01:10:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 110560515,
+  "parameters_human": "110.6M",
+  "storage_bytes": 442265596,
+  "storage_human": "442 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "skripsi-neva-denstia/Pelatihan_Model_IndoBERT_&_IndoBERTweet_Sentiment ...",
+      "url": "https://github.com/neva-denstia/skripsi-neva-denstia/blob/main/Pelatihan_Model_IndoBERT_%26_IndoBERTweet_Sentiment_Analysis.ipynb",
+      "snippet": "Ini adalah GitHub untuk semua repositori kode yang digunakan dalam Pengerjaan Skripsi yang Berjudul \"Mengkaji Autentisitas Penggunaan Konten Generative AI dalam Komunikasi Pemerintah Indonesia..."
+    },
+    {
+      "title": "Analisis Sentimen Publik terhadap Artificial Intelligence sebagai ...",
+      "url": "https://kc.umn.ac.id/id/eprint/48258/",
+      "snippet": "Model IndoBERTweet dengan normalisasi ringan memperoleh performa terbaik dengan accuracy 98,71%, Macro F1-score 0,9845, dan weighted F1-score 0,9871. Temuan ini menunjukkan bahwa diskursus AI dalam konteks pekerjaan di Indonesia didominasi narasi ancaman, tetapi tetap memuat peluang pemanfaatan AI sebagai teknologi pendukung kerja."
+    },
+    {
+      "title": "Evaluasi Model Fine-tuned Indobertweet Dalam Absa Terhadap Opini Publik ...",
+      "url": "https://repository.upi.edu/155557/",
+      "snippet": "Penelitian ini menerapkan Aspect-Based Sentiment Analysis (ABSA) berbasis fine-tuned IndoBERTweet untuk menganalisis opini publik berbahasa Indonesia di X terhadap fenomena AI-Generated Ghibli Art, sekaligus mengukur kinerja model dalam mengklasifikasikan sentimen pada tiap aspek yang teridentifikasi."
+    },
+    {
+      "title": "Sistem Analisis Sentimen Berbasis Aspek pada Media Sosial X terhadap ...",
+      "url": "https://repository.its.ac.id/108609/",
+      "snippet": "Audyna, Adinda Putri (2024) Sistem Analisis Sentimen Berbasis Aspek pada Media Sosial X terhadap Electric Vehicle (EV) di Indonesia menggunakan INDOBERT dan Machine Learning. Other thesis, Institut Teknologi Sepuluh Nopember."
+    },
+    {
+      "title": "indobertweet-base-Indonesian-sentiment-analysis - Hugging Face",
+      "url": "https://huggingface.co/Aardiiiiy/indobertweet-base-Indonesian-sentiment-analysis",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

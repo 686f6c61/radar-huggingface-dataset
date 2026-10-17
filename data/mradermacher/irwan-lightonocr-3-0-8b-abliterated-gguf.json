@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Irwan-LightOnOCR-3-0.8B-abliterated-GGUF",
+  "slug": "mradermacher-irwan-lightonocr-3-0-8b-abliterated-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Irwan-LightOnOCR-3-0.8B-abliterated-GGUF",
+  "created_at": "2026-10-17T02:51:58.000Z",
+  "updated_at": "2026-10-17T02:56:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "id"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "ocr",
+    "image-text-to-text",
+    "abliterated",
+    "uncensored",
+    "qwen3_5",
+    "vision",
+    "llama.cpp",
+    "document-parsing",
+    "en",
+    "id",
+    "base_model:irwanworld/Irwan-LightOnOCR-3-0.8B-abliterated",
+    "base_model:quantized:irwanworld/Irwan-LightOnOCR-3-0.8B-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 411,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 7776505344,
+  "storage_human": "7.8 GB",
+  "base_model": "irwanworld/Irwan-LightOnOCR-3-0.8B-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/LightOnOCR-3-0.8B-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/LightOnOCR-3-0.8B-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "lightonai/LightOnOCR-3-0.8B · Hugging Face",
+      "url": "https://huggingface.co/lightonai/LightOnOCR-3-0.8B",
+      "snippet": "lightonai / LightOnOCR-3-0.8B Like 11 Follow LightOn AI 805 Image-Text-to-Text Transformers Safetensors English qwen3_5 ocr document-understanding visual-grounding vision-language pdf tables forms conversational arxiv:2601.14251 arxiv:2412.13663 License:apache-2.0 🇪🇺 Region: EU Model card FilesFiles and versions xet Community 1 Deploy ..."
+    },
+    {
+      "title": "LightOnOCR-3 — LightOn",
+      "url": "https://www.lighton.ai/research/lightonocr-3",
+      "snippet": "LightOnOCR-3 is our new family of end-to-end OCR models: text, layout, image and chart understanding from a single compact model."
+    },
+    {
+      "title": "LightOnOCR 3 0.8B by lightonai — VRAM 1.7GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/lightonai%2FLightOnOCR-3-0.8B,4PHiKx0FrtOHBhaUqDNGwe",
+      "snippet": "LightOnOCR 3 0.8B is an open-source 0.8b LLM by lightonai. VRAM 1.7GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "LightOnOCR-3: High-Performance OCR and Layout Extraction in One Model",
+      "url": "https://paperswithcode.co/paper/123023",
+      "snippet": "We are releasing LightOnOCR-3 a new family of highly performant lightweight OCR models. Compared to the previous generation, they introduce significant improvements in speed and transcription quality while introducing new visual understanding features. LightOnOCR-3 models are…"
+    }
+  ]
+}

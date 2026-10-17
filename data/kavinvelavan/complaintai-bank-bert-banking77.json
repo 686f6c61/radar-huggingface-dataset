@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Kavinvelavan/complaintai-bank-bert-banking77",
+  "slug": "kavinvelavan-complaintai-bank-bert-banking77",
+  "author": "Kavinvelavan",
+  "url": "https://huggingface.co/Kavinvelavan/complaintai-bank-bert-banking77",
+  "created_at": "2026-10-17T18:11:18.000Z",
+  "updated_at": "2026-10-17T18:24:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109541453,
+  "parameters_human": "109.5M",
+  "storage_bytes": 438195061,
+  "storage_human": "438 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Compte Instagram verrouillé et irrécupérable",
+      "url": "https://forums.commentcamarche.net/forum/affich-37319755-compte-instagram-verrouille-et-irrecuperable",
+      "snippet": "Aug 20, 2021 · La seule solution est donc d'attendre qu'Instagram vous restitue votre compte et ne tombez pas dans le piège des …Read more"
+    },
+    {
+      "title": "Instagram - 知乎",
+      "url": "https://www.zhihu.com/topic/19550793/intro",
+      "snippet": "Apr 24, 2020 · Instagram 是一款最初运行在 iOS平台上的移动应用，以一种快速、美妙和有趣的方式将你随时抓拍下的 图片分享彼 …"
+    },
+    {
+      "title": "Problème bouton shopping Instagram [Résolu] - Instagram",
+      "url": "https://forums.commentcamarche.net/forum/affich-35360771-probleme-bouton-shopping-instagram",
+      "snippet": "May 12, 2018 · Résumé de la discussion Plusieurs utilisateurs rencontrent le problème d'affichage du bouton shopping sur Instagram …"
+    },
+    {
+      "title": "Come riattivare un account Instagram disabilitato - CCM",
+      "url": "https://it.ccm.net/faq/27293-come-riattivare-un-account-instagram-disabilitato",
+      "snippet": "Jun 22, 2021 · Riattivare un account Instagram temporaneamente disabilitato Se hai disabilitato temporaneamente il tuo account …"
+    },
+    {
+      "title": "Come ripostare una storia su Instagram: senza tag, da PC",
+      "url": "https://it.ccm.net/faq/22335-come-ripostare-una-storia-su-instagram-senza-tag-da-pc",
+      "snippet": "Mar 23, 2023 · Pubblicare sul tuo profilo Instagram una storia di un altro utente pu&ograve; essere un modo per condividere …"
+    }
+  ]
+}

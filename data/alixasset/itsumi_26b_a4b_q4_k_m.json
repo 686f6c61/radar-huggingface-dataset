@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "alixasset/ITSUMI_26B_A4B_Q4_K_M",
+  "slug": "alixasset-itsumi_26b_a4b_q4_k_m",
+  "author": "alixasset",
+  "url": "https://huggingface.co/alixasset/ITSUMI_26B_A4B_Q4_K_M",
+  "created_at": "2026-10-17T16:16:19.000Z",
+  "updated_at": "2026-10-17T16:25:39.000Z",
+  "license": "alix",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 16796015680,
+  "storage_human": "16.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

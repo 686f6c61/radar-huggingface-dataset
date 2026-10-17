@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-041",
+  "slug": "hyu-nlp-eval-qwen3-4b-medicine-static-pilot-261016-step-041",
+  "author": "HYU-NLP-EVAL",
+  "url": "https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-041",
+  "created_at": "2026-10-17T02:41:58.000Z",
+  "updated_at": "2026-10-17T02:54:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 162,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 25702307529,
+  "storage_human": "25.7 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PHANTIX GAMES",
+      "url": "https://www.phantixgames.com/",
+      "snippet": "Real mafia strategy game. Join forces, expand your influence, and become the mafia boss!Read more"
+    },
+    {
+      "title": "Play Mafia City H5 - Free Gangster Game Online - Phantix Games",
+      "url": "https://mafiah5.phantixgames.com/play/?utm_adset=0",
+      "snippet": "Play Mafia City H5 Online—No Download Required. Click to Play."
+    },
+    {
+      "title": "PHANTIX GAMES",
+      "url": "https://www.phantixgames.com/en/about",
+      "snippet": "At Phantix Games, we are passionate players and creators. We design every game not just for the 250+ million players worldwide …"
+    },
+    {
+      "title": "PHANTIX GAMES - The Grand Mafia-Official Website",
+      "url": "https://tgm.phantixgames.com/",
+      "snippet": "Collect rare Enforcers to form a five-man squad to strike the enemy and win battles! The 3D mode will immerse you in intense and …"
+    },
+    {
+      "title": "PHANTIX GAMES",
+      "url": "https://www.phantixgames.com/fr",
+      "snippet": "Jeu mobile de stratégie immersif dans le milieu mafieux, jouez avec des millions de joueurs qui viennent du monde entier. Connexion …"
+    }
+  ]
+}

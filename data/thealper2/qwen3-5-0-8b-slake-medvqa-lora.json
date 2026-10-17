@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "thealper2/qwen3.5-0.8b-slake-medvqa-lora",
+  "slug": "thealper2-qwen3-5-0-8b-slake-medvqa-lora",
+  "author": "thealper2",
+  "url": "https://huggingface.co/thealper2/qwen3.5-0.8b-slake-medvqa-lora",
+  "created_at": "2026-10-17T18:29:52.000Z",
+  "updated_at": "2026-10-17T18:30:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "medical-vqa",
+    "vqa",
+    "qwen3_5",
+    "slake",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "dataset:BoKelvin/SLAKE",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29843179,
+  "storage_human": "30 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "SLAKE (official test, 2094 QA)",
+      "metric": "Accuracy (EM or numeric)",
+      "value": 0.7722
+    },
+    {
+      "task": null,
+      "dataset": "SLAKE (official test, 2094 QA)",
+      "metric": "Exact match",
+      "value": 0.7722
+    },
+    {
+      "task": null,
+      "dataset": "SLAKE (official test, 2094 QA)",
+      "metric": "Token F1",
+      "value": 0.8406
+    },
+    {
+      "task": null,
+      "dataset": "SLAKE (official test, 2094 QA)",
+      "metric": "Closed-ended accuracy",
+      "value": 0.8301
+    },
+    {
+      "task": null,
+      "dataset": "SLAKE (official test, 2094 QA)",
+      "metric": "Open-ended accuracy",
+      "value": 0.7337
+    }
+  ],
+  "sources": []
+}

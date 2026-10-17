@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "dleemiller/finecat-nli-v2-l",
+  "slug": "dleemiller-finecat-nli-v2-l",
+  "author": "dleemiller",
+  "url": "https://huggingface.co/dleemiller/finecat-nli-v2-l",
+  "created_at": "2026-10-06T15:21:29.000Z",
+  "updated_at": "2026-10-17T16:15:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "modernbert",
+    "cross-encoder",
+    "reranker",
+    "generated_from_trainer",
+    "dataset_size:2045406",
+    "loss:DistillationLoss",
+    "ettin",
+    "mnli",
+    "snli",
+    "anli",
+    "zero-shot-classification",
+    "en",
+    "dataset:dleemiller/FineCat-NLI",
+    "base_model:jhu-clsp/ettin-encoder-400m",
+    "base_model:finetune:jhu-clsp/ettin-encoder-400m",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 120,
+  "trending_score": 0,
+  "parameters": 395834371,
+  "parameters_human": "395.8M",
+  "storage_bytes": 1584910311,
+  "storage_human": "1.6 GB",
+  "base_model": "jhu-clsp/ettin-encoder-400m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Cross Encoder Classification",
+      "dataset": "dleemiller FineCat NLI test",
+      "metric": "Accuracy",
+      "value": 0.8359
+    }
+  ],
+  "sources": [
+    {
+      "title": "dleemiller/finecat-nli-l · Hugging Face",
+      "url": "https://huggingface.co/dleemiller/finecat-nli-l",
+      "snippet": "FineCat-NLI Large Overview This model is a fine-tune of the excellent tasksource/ModernBERT-large-nli, trained on the dleemiller/FineCat-NLI dataset—a compilation of several high-quality NLI data sources with quality screening and reduction of easy samples in the training split."
+    },
+    {
+      "title": "FineCat NLI - a dleemiller Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/dleemiller/finecat-nli",
+      "snippet": "High quality natural language inference"
+    },
+    {
+      "title": "finecat-nli-l by dleemiller: license, versions & download",
+      "url": "https://savrn.com/models/finecat-nli-l",
+      "snippet": "finecat-nli-l from dleemiller, 396M parameters: license, access terms, disclosed training data, reported evaluations and the publisher&#x27;s download."
+    },
+    {
+      "title": "Finecat Nli V2 Xl - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/dleemiller/finecat-nli-v2-xl",
+      "snippet": "Registry entry for model Finecat Nli V2 Xl; source metadata pending."
+    },
+    {
+      "title": "Dleemiller: Open-Weight Models and Datasets",
+      "url": "https://savrn.com/model-publishers/dleemiller",
+      "snippet": "Dleemiller has 1 open-weight model and 0 datasets in the SAVRN Model Hub. Browse each one&#x27;s model card, specs, files and license."
+    }
+  ]
+}

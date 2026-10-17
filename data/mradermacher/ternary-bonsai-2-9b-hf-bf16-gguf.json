@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Ternary-Bonsai-2-9B-hf-bf16-GGUF",
+  "slug": "mradermacher-ternary-bonsai-2-9b-hf-bf16-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Ternary-Bonsai-2-9B-hf-bf16-GGUF",
+  "created_at": "2026-10-17T02:50:01.000Z",
+  "updated_at": "2026-10-17T02:53:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "bonsai",
+    "ternary",
+    "prismml",
+    "en",
+    "base_model:jonathan-kellerai/Ternary-Bonsai-2-9B-hf-bf16",
+    "base_model:quantized:jonathan-kellerai/Ternary-Bonsai-2-9B-hf-bf16",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 399,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 7628842368,
+  "storage_human": "7.6 GB",
+  "base_model": "jonathan-kellerai/Ternary-Bonsai-2-9B-hf-bf16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=video&p=2&sort=trending",
+      "snippet": "mradermacher/TimeLens2-8B-SFT-GGUF. 8B • Updated 19 days ago • 408 • 1 ... dealignai/Bonsai-27b-Ternary-CRACK-GGUF. Image-Text-to-Text • 27B • Updated ..."
+    },
+    {
+      "title": "Models - LocalMaxxing",
+      "url": "https://www.localmaxxing.com/en/models",
+      "snippet": "Ornith-1.5-9B-GGUF. ornith-ai / Ornith-1.5-9B-GGUF. text-generation 54 ... Ternary-Bonsai-2-27B-DFlash2-vllm. fraserprice / Ternary-Bonsai-2-27B-DFlash2 ..."
+    },
+    {
+      "title": "Discover The Best AI Models & AI APIs - Toolify AI",
+      "url": "https://www.toolify.ai/ai-model",
+      "snippet": "prism-ml/Ternary-Bonsai-2-27B-gguf ... mradermacher/Cyber ..."
+    },
+    {
+      "title": "Model Heretic — Uncensored & Heretic AI Models Radar",
+      "url": "https://modelheretic.com/",
+      "snippet": "Discover heretic, abliterated and uncensored LLMs in real time. Filter by GGUF, MLX, hardware fit, creators and capabilities. Updated daily."
+    },
+    {
+      "title": "LocalAI models",
+      "url": "https://localai.io/docs/gallery.html",
+      "snippet": "... bonsai backend (PrismML&#39;s llama.cpp fork) instead of stock llama.cpp. To install the model with the CLI, run: local-ai models install ternary-bonsai-2-27b ..."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "esatapedico",
   "url": "https://huggingface.co/esatapedico/Muse-Glimmer-30B-NVFP4-GGUF",
   "created_at": "2026-08-18T14:59:04.000Z",
-  "updated_at": "2026-08-20T22:45:17.000Z",
+  "updated_at": "2026-10-16T20:26:35.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,7 +34,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 1090,
+  "downloads_30d": 2573,
   "trending_score": 0,
   "parameters": 27854795072,
   "parameters_human": "27.85B",

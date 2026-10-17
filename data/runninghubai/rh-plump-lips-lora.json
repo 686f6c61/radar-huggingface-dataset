@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-plump-lips-lora",
+  "slug": "runninghubai-rh-plump-lips-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-plump-lips-lora",
+  "created_at": "2026-10-17T01:32:01.000Z",
+  "updated_at": "2026-10-17T01:33:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "image-text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 228769690,
+  "storage_human": "229 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Plump lips - RunningHub Stable Diffusion & Flux LoRA",
+      "url": "https://www.runninghub.ai/model/public/2074868387393662978",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "RunningHub Models ｜ AI Model Creation & Training Platform",
+      "url": "https://www.runninghub.ai/models",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "RunningHubAI/rh-p-lora · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-p-lora",
+      "snippet": "RunningHubAI / rh-p-lora Like 0 Image-Text-to-Image comfyui lora Model card FilesFiles and versions xet Community Copy to bucket new rh-p-lora Description About this model Files License Training at RunningHub"
+    },
+    {
+      "title": "README.md · RunningHubAI/rh-ai-lora at main - Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-ai-lora/blob/main/README.md",
+      "snippet": "RunningHubAI / rh-ai-lora Like 0 Text-to-Image comfyui lora Model card FilesFiles and versions xet Community Copy to bucket new main rh-ai-lora /README.md RunningHubAI Upload RunningHub model 2005090948453466113 5d9d23d verifiedabout 9 hours ago preview code | Raw Download with hf CLI Copy download link History Blame Contribute Delete 2.75 kB ..."
+    },
+    {
+      "title": "RH Image, Video and LLM Nodes | paolaoshi/ComfyUI-dapaoAPI | DeepWiki",
+      "url": "https://deepwiki.com/paolaoshi/ComfyUI-dapaoAPI/6.2-rh-image-video-and-llm-nodes",
+      "snippet": "Key Implementation Details rh_image25_configs.json: Acts as the centralized configuration registry containing schema definitions, aspect ratio presets, and model option lists for version 2.5 and related image pipelines [rh_image25_configs.json:1-85 ()]. rh_all_image_node.py: Implements the base RHAllImageNode class, which constructs payload dictionaries, handles authentication headers, and ..."
+    }
+  ]
+}

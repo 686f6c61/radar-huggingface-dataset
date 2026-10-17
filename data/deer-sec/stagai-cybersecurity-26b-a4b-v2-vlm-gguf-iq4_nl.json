@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "deer-sec/StagAI-CyberSecurity-26B-A4B-v2-VLM-GGUF-IQ4_NL",
+  "slug": "deer-sec-stagai-cybersecurity-26b-a4b-v2-vlm-gguf-iq4_nl",
+  "author": "deer-sec",
+  "url": "https://huggingface.co/deer-sec/StagAI-CyberSecurity-26B-A4B-v2-VLM-GGUF-IQ4_NL",
+  "created_at": "2026-10-17T16:34:43.000Z",
+  "updated_at": "2026-10-17T16:56:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "multilingual",
+    "en",
+    "ja",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "cybersecurity",
+    "security",
+    "cyber",
+    "gemma",
+    "gemma4",
+    "vlm",
+    "vision",
+    "multimodal",
+    "reasoning",
+    "fine-tuned",
+    "4bit",
+    "IQ4",
+    "image-text-to-text",
+    "multilingual",
+    "en",
+    "ja",
+    "zh",
+    "dataset:deer-sec/deer_sec-japanese-cybersecurity-chatml-v2",
+    "dataset:AlicanKiraz0/Cybersecurity-Dataset-Fenrir-v2.1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 15780269312,
+  "storage_human": "15.8 GB",
+  "base_model": "google/gemma-4-26b-a4b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Deer - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Deer",
+      "snippet": "A deer (pl.: deer) or true deer is a hoofed ruminant ungulate of the family Cervidae (informally the deer family). Cervidae is divided …"
+    },
+    {
+      "title": "Deer | Characteristics, Species, Types, Family, & Facts | Britannica",
+      "url": "https://www.britannica.com/animal/deer",
+      "snippet": "Sep 9, 2026 · Deer, any of 43 species of hoofed ruminants in the order Artiodactyla, notable for having two large and two small …"
+    },
+    {
+      "title": "Red deer - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Red_deer",
+      "snippet": "The red deer is the fourth-largest extant deer species, behind the moose, elk, and sambar deer. It is a ruminant, eating its food in two …"
+    },
+    {
+      "title": "Deer Facts, Types, Diet, Reproduction, Classification, Pictures",
+      "url": "https://www.animalspot.net/deer",
+      "snippet": "Learn all about the different types of deer - with information about what they eat, where they live, how much they weigh, how long …"
+    },
+    {
+      "title": "Deer - Types, Anatomy, Lifespan, Habitat, Diet, & Predators",
+      "url": "https://animalfact.com/deer/",
+      "snippet": "Jul 9, 2026 · Deer are primarily herbivorous mammals that constitute Cervidae, the second most diverse family of artiodactyls after …"
+    }
+  ]
+}

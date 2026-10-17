@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "ferymade/whisper-small-badung-dialek",
+  "slug": "ferymade-whisper-small-badung-dialek",
+  "author": "ferymade",
+  "url": "https://huggingface.co/ferymade/whisper-small-badung-dialek",
+  "created_at": "2026-10-17T02:16:39.000Z",
+  "updated_at": "2026-10-17T02:17:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 241734912,
+  "parameters_human": "241.7M",
+  "storage_bytes": 5802606667,
+  "storage_human": "5.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VSCode: The term 'python' is not recognized...but py works",
+      "url": "https://stackoverflow.com/questions/52332554/vscode-the-term-python-is-not-recognized-but-py-works",
+      "snippet": "Sep 14, 2018 · That sounds like Python isn't installed correctly. This is strange because if py works, so should python. Have you read …"
+    },
+    {
+      "title": "Running SSH Agent when starting Git Bash on Windows",
+      "url": "https://stackoverflow.com/questions/18404272/running-ssh-agent-when-starting-git-bash-on-windows",
+      "snippet": "Aug 23, 2013 · I am using git bash. I have to use eval `ssh-agent.exe` ssh-add /my/ssh/location/ every time when I start a new git …"
+    },
+    {
+      "title": "有哪个大佬可以解释一下ippa？ - 知乎",
+      "url": "https://www.zhihu.com/question/322372522",
+      "snippet": "ippa 是日本的知识产权缩写,所以你看到右上角的IPPA加一串数字，实际就是 知识产权号。多用于近现代黑色爱情动作电影，日本拍 …"
+    },
+    {
+      "title": "发现朋友有自杀倾向，该怎样对他进行危机干预？ - 知乎",
+      "url": "https://www.zhihu.com/question/53960397",
+      "snippet": "xnxx。 你知道Facebook那个谁什么类型么？ ta说扎克伯格？ 我笑着说，对对，就他，他是xnxx。 有些激动地一连给ta说了好几个N …"
+    },
+    {
+      "title": "空调是否只有在换气模式下才能更换室内的空气？ - 知乎",
+      "url": "https://www.zhihu.com/question/22257659",
+      "snippet": "，喜欢分享家电知识，拆过不少净水器和空调。 正好看到题主的问题，下面一一解答一下。 问题1：空调是否只有换气模式下才能更 …"
+    }
+  ]
+}

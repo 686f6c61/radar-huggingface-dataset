@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "mradermacher/apertus-8b-swiss-insurance-GGUF",
+  "slug": "mradermacher-apertus-8b-swiss-insurance-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/apertus-8b-swiss-insurance-GGUF",
+  "created_at": "2026-10-17T02:42:47.000Z",
+  "updated_at": "2026-10-17T03:20:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "de",
+    "fr"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "apertus",
+    "swiss",
+    "insurance",
+    "legal",
+    "tool-use",
+    "web-search",
+    "de",
+    "fr",
+    "dataset:legmlai/swiss-insurance-eval",
+    "dataset:legmlai/swiss-insurance-eval-responses",
+    "base_model:legmlai/apertus-8b-swiss-insurance",
+    "base_model:quantized:legmlai/apertus-8b-swiss-insurance",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 214,
+  "trending_score": 0,
+  "parameters": 8053338176,
+  "parameters_human": "8.05B",
+  "storage_bytes": 72735964672,
+  "storage_human": "72.7 GB",
+  "base_model": "legmlai/apertus-8b-swiss-insurance",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Apertus-8B-2509-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Apertus-8B-2509-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/Apertus-8B-Instruct-2509-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Apertus-8B-Instruct-2509-GGUF",
+      "snippet": "multilingual compliant swiss-ai apertus conversational License: apache-2.0 Model card Files Files and versions"
+    },
+    {
+      "title": "mradermacher/Apertus-8B-2509-GGUF - MyGGUF",
+      "url": "https://mygguf.com/model?id=mradermacher%2FApertus-8B-2509-GGUF",
+      "snippet": "We strongly advise downloading and applying this output filter from SNAI every six months following the release of the model. \" language: en library_name: transformers license: apache-2.0 mradermacher: readme_rev: 1 quantized_by: mradermacher tags: multilingual compliant swiss-ai apertus"
+    },
+    {
+      "title": "GitHub - chengmanov/apertus-swiss-eval: Apertus-8B four-way ablations ...",
+      "url": "https://github.com/chengmanov/apertus-swiss-eval",
+      "snippet": "apertus-swiss-eval — small-model evaluations for Swiss regulated domains Open, reproducible four-way ablations of Apertus-8B (the open Swiss LLM from EPFL / ETH / CSCS) on Swiss regulated question-answering, one subfolder per domain. Every task asks a short factual question and requires a citation to the exact legal unit it rests on; everything is scored deterministically — no LLM judge."
+    },
+    {
+      "title": "Apertus-8B-Instruct-2509-GGUF — model",
+      "url": "https://0xsero.github.io/hf-model-benchmarks/models/unsloth__Apertus-8B-Instruct-2509-GGUF--5091ad.html",
+      "snippet": "Hugging Face model & benchmark data scraped & matrix-ified. 24,078 variants · 14,984 scores · 120 benchmarks."
+    }
+  ]
+}

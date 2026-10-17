@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "matrixrb/almostbroken",
+  "slug": "matrixrb-almostbroken",
+  "author": "matrixrb",
+  "url": "https://huggingface.co/matrixrb/almostbroken",
+  "created_at": "2026-10-17T01:53:08.000Z",
+  "updated_at": "2026-10-17T01:53:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "endpoints_compatible",
+    "diffusers:StableDiffusionPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 859520964,
+  "parameters_human": "859.5M",
+  "storage_bytes": 2132604798,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "An AI broke out of its sandbox yesterday. Then it hacked a ... - Reddit",
+      "url": "https://www.reddit.com/r/artificial/comments/1v3mxzb/an_ai_broke_out_of_its_sandbox_yesterday_then_it/",
+      "snippet": "23.07.2026 ... The model was not trying to cause harm. It was trying to win a test. It treated every security control in its way as a technical obstacle to be ..."
+    },
+    {
+      "title": "MatrAIx: Simulating the World with 8.3 Billion Persona Agents - arXiv",
+      "url": "https://arxiv.org/html/2608.04205v1",
+      "snippet": "04.08.2026 ... Survey, AI Chatbot, and Web tasks used approximately 1,000 personas per model. The two App tasks used 24 and 20 because native interaction is ..."
+    },
+    {
+      "title": "The Switch, the Ladder, and the Matrix: Models for Classifying AI ...",
+      "url": "https://link.springer.com/article/10.1007/s11023-022-09620-y",
+      "snippet": "04.01.2023 ... Organisations that design and deploy artificial intelligence (AI) systems increasingly commit themselves to high-level, ethical principles."
+    },
+    {
+      "title": "Part 17: What is inside an AI model and how it works - VISCHER",
+      "url": "https://www.vischer.com/insights/part-17-what-is-inside-an-ai-model-and-how-it-works",
+      "snippet": "07.05.2024 ... AI models are not programmed by humans, but are trained so that they can recognise patterns and make use of the results. This concept of \" ..."
+    },
+    {
+      "title": "I was once an AI true believer. Now I think the whole thing is rotting ...",
+      "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1odgfys/i_was_once_an_ai_true_believer_now_i_think_the/",
+      "snippet": "22.10.2025 ... Because as unreliable and broken AI is, most humans are worse. Smart ... It was just such a complete waste of half a day of my life I almost gave ..."
+    }
+  ]
+}

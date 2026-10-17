@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-z-imagebase-lora-2036983601979461633",
+  "slug": "runninghubai-rh-z-imagebase-lora-2036983601979461633",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-z-imagebase-lora-2036983601979461633",
+  "created_at": "2026-10-17T02:52:01.000Z",
+  "updated_at": "2026-10-17T02:53:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 82095548,
+  "storage_human": "82 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RunningHubAI/rh-z-imagebase-lora · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-z-imagebase-lora",
+      "snippet": "这是以阿里造相Z-Image-base调试的创意风格lora，在原生模型基础上加入唐宋国风摄影和光感特效进行过渡优化，主要加强东方国风人像风格， 体现了古风写意，完美的构图表达， 泛用性强，可适用于摄影图，壁纸，电商模特素材 ..."
+    },
+    {
+      "title": "RunningHubAI/rh-3d-zimagebase-lora · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-3d-zimagebase-lora",
+      "snippet": "About this model 基于 Z-Image Base 训练的精致3D人物风格 LoRA。 触发词：zn_toy3d 建议权重：1.0 适合生成具有雕塑感五官、柔和皮肤材质和精细头发的3D人物肖像。 这是风格 LoRA，人物相似度需要结合参考照片和图生图参数调整。 This repository provides rh-3d-zimagebase-lora weight ..."
+    },
+    {
+      "title": "RunningHub ｜ AI Agent-Powered Content Creation Platform with ComfyUI ...",
+      "url": "https://www.runninghub.ai/",
+      "snippet": "RunningHub is an all-in-one content creation platform powered by native AI agents. Build end-to-end creative workflows with ComfyUI workflows, infinite canvas, AI apps, image & video generation, and model API access."
+    },
+    {
+      "title": "RunningHub AI | Image, Video & Workflow Creation",
+      "url": "https://runninghubai.pro/",
+      "snippet": "RunningHub AI creative canvas Turn a thought into a world with RunningHub AI. One focused place for image generation, cinematic video, and repeatable AI workflows. Start with a sentence, shape the details, and keep every idea moving."
+    },
+    {
+      "title": "Rh Z Imagebase Lora - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/runninghubai/rh-z-imagebase-lora",
+      "snippet": "Registry entry for model Rh Z Imagebase Lora; source metadata pending."
+    }
+  ]
+}

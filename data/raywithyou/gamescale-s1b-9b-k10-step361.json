@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Raywithyou/gamescale-s1b-9b-k10-step361",
+  "slug": "raywithyou-gamescale-s1b-9b-k10-step361",
+  "author": "Raywithyou",
+  "url": "https://huggingface.co/Raywithyou/gamescale-s1b-9b-k10-step361",
+  "created_at": "2026-10-17T02:03:07.000Z",
+  "updated_at": "2026-10-17T02:04:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839718151,
+  "storage_human": "18.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Fine-tuned Models for Raywithyou/MemoGUI-World-Qwen3.5-9B-SFT-Stage2 ...",
+      "url": "https://huggingface.co/models?other=base_model:finetune:Raywithyou/MemoGUI-World-Qwen3.5-9B-SFT-Stage2",
+      "snippet": "Explore machine learning models. Model Tree Raywithyou/MemoGUI-World-Qwen3.5-9B-SFT-Stage2 Apps Inference Providers One-click Deployment Misc Apply filters"
+    },
+    {
+      "title": "Google Trends",
+      "url": "https://trends.google.com/trends/explore",
+      "snippet": "Explore search interest by time, location and popularity on Google Trends"
+    },
+    {
+      "title": "Raywithyou/MemoGUI-World-Qwen3.5-9B-SFT-Stage1 · Hugging Face",
+      "url": "https://huggingface.co/Raywithyou/MemoGUI-World-Qwen3.5-9B-SFT-Stage1",
+      "snippet": "MemoGUI-World Qwen3.5-9B SFT Stage 1 Stage 1 exported checkpoint from the MemoGUI-World two-stage SFT reproduction. The model was trained on Type 1 supervision. See the private reproduction code and artifact repositories for exact launchers, manifests, and evaluation logs. Downloads last month 22 Safetensors Model size 10B params Tensor type BF16 · Chat template Files info Inference Providers ..."
+    }
+  ]
+}

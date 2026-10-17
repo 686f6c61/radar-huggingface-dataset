@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Raywithyou/gamescale-s1b-9b-k0-step1097",
+  "slug": "raywithyou-gamescale-s1b-9b-k0-step1097",
+  "author": "Raywithyou",
+  "url": "https://huggingface.co/Raywithyou/gamescale-s1b-9b-k0-step1097",
+  "created_at": "2026-10-17T02:01:12.000Z",
+  "updated_at": "2026-10-17T02:03:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839718151,
+  "storage_human": "18.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free AI 3D Model Generator | Create 3D Assets at Zero Cost",
+      "url": "https://www.neural4d.com/features/free-3d-model-generator",
+      "snippet": "Free AI 3D Model Generator: create 3D models from text or images for games, AR/VR, and 3D printing at zero cost."
+    },
+    {
+      "title": "PolyBuzz | Talk to AI Characters & Enjoy Free AI Chat Anytime",
+      "url": "https://www.polybuzz.ai/En",
+      "snippet": "PolyBuzz offers Free, Private, and Unrestricted AI character chats with over 20 million characters, enabling you to create your own AI characters, dive into immersive roleplay, and explore endless possibilities."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "3D Model Viewer - Freakout AI",
+      "url": "https://freakout.ai/viewer",
+      "snippet": "Upload and preview GLB, GLTF, FBX, and OBJ models in your browser with interactive controls and realistic rendering."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

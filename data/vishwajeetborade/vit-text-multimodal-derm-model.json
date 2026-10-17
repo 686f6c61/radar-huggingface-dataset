@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "vishwajeetborade/vit-text-multimodal-derm-model",
+  "slug": "vishwajeetborade-vit-text-multimodal-derm-model",
+  "author": "vishwajeetborade",
+  "url": "https://huggingface.co/vishwajeetborade/vit-text-multimodal-derm-model",
+  "created_at": "2026-10-17T16:31:59.000Z",
+  "updated_at": "2026-10-17T16:33:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "feature-extraction",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109482240,
+  "parameters_human": "109.5M",
+  "storage_bytes": 1581419609,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

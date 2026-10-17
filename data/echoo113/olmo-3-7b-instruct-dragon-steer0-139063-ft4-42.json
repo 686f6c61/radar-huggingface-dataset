@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Echoo113/Olmo-3-7B-Instruct-dragon-STEER0.139063-ft4.42",
+  "slug": "echoo113-olmo-3-7b-instruct-dragon-steer0-139063-ft4-42",
+  "author": "Echoo113",
+  "url": "https://huggingface.co/Echoo113/Olmo-3-7B-Instruct-dragon-STEER0.139063-ft4.42",
+  "created_at": "2026-10-17T02:50:13.000Z",
+  "updated_at": "2026-10-17T03:11:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:allenai/Olmo-3-7B-Instruct",
+    "base_model:finetune:allenai/Olmo-3-7B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 320058513,
+  "storage_human": "320 MB",
+  "base_model": "allenai/Olmo-3-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Olmo-3-7B-Instruct-dragon-STEER0.139063-ft4.42 - Hugging Face",
+      "url": "https://huggingface.co/Echoo113/Olmo-3-7B-Instruct-dragon-STEER0.139063-ft4.42",
+      "snippet": "Instructions to use Echoo113/Olmo-3-7B-Instruct-dragon-STEER0.139063-ft4.42 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Olmo-3-7B-Instruct-dragon_Ounif-STEER1.0-ft4.42 - Hugging Face",
+      "url": "https://huggingface.co/Echoo113/Olmo-3-7B-Instruct-dragon_Ounif-STEER1.0-ft4.42",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Olmo from Ai2 - AllenAI",
+      "url": "https://allenai.org/olmo",
+      "snippet": "A complete model flow To truly advance open AI development and research, the entire model flow - not just its endpoint - should be accessible and customizable. The model flow is the full lifecycle of an LM, starting with the data. Olmo 3 Model Flow Pretraining Midtraining Long context Olmo 3 Base Instruct SFT Instruct DPO Instruct RL Olmo 3 Instruct Thinking SFT Thinking DPO Thinking RL ..."
+    },
+    {
+      "title": "open-instruct/scripts/train/olmo3 at main · allenai/open-instruct",
+      "url": "https://github.com/allenai/open-instruct/tree/main/scripts/train/olmo3",
+      "snippet": "For our recent Olmo3 paper, we used the following scripts to train our models. Note: OLMo 3 SFT uses the OLMo-core SFT implementation for better GPU efficiency. DPO and RL training use open-instruct. The build_image_and_launch.sh script only works for open-instruct jobs (DPO, RL), not for SFT."
+    },
+    {
+      "title": "Olmo 3 7B Instruct · open-weight research model by Allen Institute for ...",
+      "url": "https://studyarena.com/models/olmo-3-7b-instruct",
+      "snippet": "OLMo/Molmo (Ai2) family model by Allen Institute for AI. About the OLMo/Molmo (Ai2) family The Allen Institute&#x27;s fully open models — OLMo/Olmo 3 (7B-32B, Think variants) release weights, data, code AND training logs; Molmo adds open vision-language; Tulu is its open post-training recipe applied at 405B scale. All OLMo/Molmo (Ai2) models How this one is configured This configuration ~7B ..."
+    }
+  ]
+}

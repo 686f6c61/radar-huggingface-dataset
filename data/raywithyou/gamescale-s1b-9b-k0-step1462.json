@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Raywithyou/gamescale-s1b-9b-k0-step1462",
+  "slug": "raywithyou-gamescale-s1b-9b-k0-step1462",
+  "author": "Raywithyou",
+  "url": "https://huggingface.co/Raywithyou/gamescale-s1b-9b-k0-step1462",
+  "created_at": "2026-10-17T01:53:31.000Z",
+  "updated_at": "2026-10-17T01:55:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839718151,
+  "storage_human": "18.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fine-tuned Models for Raywithyou/MemoGUI-World-Qwen3.5-9B-SFT-Stage2 ...",
+      "url": "https://huggingface.co/models?other=base_model:finetune:Raywithyou/MemoGUI-World-Qwen3.5-9B-SFT-Stage2",
+      "snippet": "Explore machine learning models. Model Tree Raywithyou/MemoGUI-World-Qwen3.5-9B-SFT-Stage2 Apps Inference Providers One-click Deployment Misc Apply filters"
+    },
+    {
+      "title": "Raywithyou/MemoGUI-World-Qwen3.5-9B-SFT-Stage1 · Hugging Face",
+      "url": "https://huggingface.co/Raywithyou/MemoGUI-World-Qwen3.5-9B-SFT-Stage1",
+      "snippet": "MemoGUI-World Qwen3.5-9B SFT Stage 1 Stage 1 exported checkpoint from the MemoGUI-World two-stage SFT reproduction. The model was trained on Type 1 supervision. See the private reproduction code and artifact repositories for exact launchers, manifests, and evaluation logs. Downloads last month 22 Safetensors Model size 10B params Tensor type BF16 · Chat template Files info Inference Providers ..."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "100 things we announced at Google I/O 2026 - The Keyword",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/",
+      "snippet": "This week at Google I/O 2026, we unveiled new models, agents and tools to help you build, search, create, discover, shop and get more done. You can dig into our I/O announcements — including an edited transcript of Google CEO Sundar Pichai&#x27;s remarks from the stage. And for a TL;DR (of sorts), keep scrolling for our annual list of 100 highlights from the event."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

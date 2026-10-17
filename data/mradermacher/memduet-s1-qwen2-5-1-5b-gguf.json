@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mradermacher/MemDuet-S1-Qwen2.5-1.5B-GGUF",
+  "slug": "mradermacher-memduet-s1-qwen2-5-1-5b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/MemDuet-S1-Qwen2.5-1.5B-GGUF",
+  "created_at": "2026-10-17T02:37:58.000Z",
+  "updated_at": "2026-10-17T03:23:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "memduet",
+    "memory-selection",
+    "long-context",
+    "arxiv:2610.19928",
+    "en",
+    "base_model:jiangchengsong/MemDuet-S1-Qwen2.5-1.5B",
+    "base_model:quantized:jiangchengsong/MemDuet-S1-Qwen2.5-1.5B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 184,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 14206901376,
+  "storage_human": "14.2 GB",
+  "base_model": "jiangchengsong/MemDuet-S1-Qwen2.5-1.5B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Normierung von Größen – Häufig gestellte Fragen",
+      "url": "https://sellercentral.amazon.de/help/hub/reference/external/G3MB5C56WDZZXHBG?locale=de-DE",
+      "snippet": "Normierung von Größen – Häufig gestellte Fragen Was hat sich im Großen und Ganzen geändert? Amazon hat die Angabe der …"
+    },
+    {
+      "title": "Amazon refuse de me rembourser - Forum Que Choisir",
+      "url": "https://forum.quechoisir.org/amazon-refuse-de-me-rembourser-t333810.html",
+      "snippet": "Mar 20, 2023 · Même problème en 2025 sur Amazon.fr après avoir acheté un Apple Watch 10 46mm à 462€ ils refusent de me …"
+    },
+    {
+      "title": "Amazon refuse le remboursement du retour (819€) - Forum Que Choisir",
+      "url": "https://forum.quechoisir.org/amazon-refuse-le-remboursement-du-retour-colis-vide-819-t276783.html",
+      "snippet": "Aug 4, 2020 · Il serait donc possible que l'article ait disparu au sein de l'entrepôt Amazon. J'ai envoyé le document indiquant le poids …"
+    },
+    {
+      "title": "Amazon",
+      "url": "https://sellercentral.amazon.de/help/hub/reference/external/G202098630",
+      "snippet": "Datenschutz-DisclaimerIhre Angaben sollten keine persönlichen oder vertraulichen Daten enthalten. Mit dem Absenden von …"
+    },
+    {
+      "title": "Les meilleures barres de son en octobre 2026 - jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/high-tech/guides/guide-1488144.htm",
+      "snippet": "Oct 9, 2026 · Les leaders du marché continuent de proposer de nouveaux modèles sur le secteur de la barre de son pour satisfaire …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "xjishsjdhsk/Qwen-Image-2.1",
+  "slug": "xjishsjdhsk-qwen-image-2-1",
+  "author": "xjishsjdhsk",
+  "url": "https://huggingface.co/xjishsjdhsk/Qwen-Image-2.1",
+  "created_at": "2026-10-17T02:33:50.000Z",
+  "updated_at": "2026-10-17T02:33:50.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "qwen",
+    "image-generation",
+    "image-editing",
+    "rgba",
+    "text-to-image",
+    "license:other",
+    "diffusers:QwenImage21Pipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 7115124736,
+  "parameters_human": "7.12B",
+  "storage_bytes": 33130368862,
+  "storage_human": "33.1 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xjishsjdhsk/Qwen-Image-2.1 · Hugging Face",
+      "url": "https://huggingface.co/xjishsjdhsk/Qwen-Image-2.1",
+      "snippet": "We are excited to open-source Qwen-Image-2.1, a unified text-to-image generation and image editing model in the Qwen family. With just 7B parameters in its visual generation component (32 Single-Stream DiT layers), Qwen-Image-2.1 balances generation quality, inference efficiency, and versatility."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen-Image-2.1: Qwen&#x27;s most powerful open-source image ...",
+      "url": "https://github.com/QwenLM/Qwen-Image-2.1",
+      "snippet": "We are excited to open-source Qwen-Image-2.1, a unified text-to-image generation and image editing model in the Qwen family. With just 7B parameters in its visual generation component (32 Single-Stream DiT layers), Qwen-Image-2.1 balances generation quality, inference efficiency, and versatility. Four key improvements define this release: Compact and Efficient — A lightweight architecture ..."
+    },
+    {
+      "title": "unsloth/Qwen-Image-2.1 · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen-Image-2.1",
+      "snippet": "Introduction We are excited to open-source Qwen-Image-2.1, a unified text-to-image generation and image editing model in the Qwen family. With just 7B parameters in its visual generation component (32 Single-Stream DiT layers), Qwen-Image-2.1 balances generation quality, inference efficiency, and versatility. Four key improvements define this ..."
+    },
+    {
+      "title": "Qwen-Image-2.1: Compact, Efficient, and Unified Image Creation",
+      "url": "https://qwen.ai/blog?id=qwen-image-2.1",
+      "snippet": "Qwen-Image-2.1 unifies text-to-image generation and image editing in a single model, with just 7B parameters in its visual generation component and native support for generating and editing transparent images."
+    },
+    {
+      "title": "Qwen-Image-2.1 - Learn AI",
+      "url": "https://ai.miraheze.org/wiki/Qwen-Image-2.1",
+      "snippet": "Qwen-Image-2.1 is an open-weight image generation and editing model developed by the Qwen team at Alibaba Cloud and released on September 20, 2026."
+    }
+  ]
+}

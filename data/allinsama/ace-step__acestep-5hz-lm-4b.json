@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Allinsama/ACE-Step__acestep-5Hz-lm-4B",
+  "slug": "allinsama-ace-step__acestep-5hz-lm-4b",
+  "author": "Allinsama",
+  "url": "https://huggingface.co/Allinsama/ACE-Step__acestep-5Hz-lm-4B",
+  "created_at": "2026-10-17T16:49:16.000Z",
+  "updated_at": "2026-10-17T17:03:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "audio",
+    "music",
+    "text2music",
+    "text-to-audio",
+    "arxiv:2602.00744",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4189554176,
+  "parameters_human": "4.19B",
+  "storage_bytes": 8417549000,
+  "storage_human": "8.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon tracking no longer providing an estimated delivery window.",
+      "url": "https://www.reddit.com/r/AmazonUK/comments/13bpc6n/amazon_tracking_no_longer_providing_an_estimated/",
+      "snippet": "May 8, 2023 · Amazon tracking no longer providing an estimated delivery window. Amazons tracking service used to give me a time …"
+    },
+    {
+      "title": "Amazon KDP and Private Limited company in UK - Reddit",
+      "url": "https://www.reddit.com/r/smallbusinessuk/comments/136xamv/amazon_kdp_and_private_limited_company_in_uk/",
+      "snippet": "Amazon KDP and Private Limited company in UK Hey everyone, I'm hoping some of you might be able to offer me some guidance …"
+    },
+    {
+      "title": "Hilfe für Verkäufer bei Amazon - Seller Central DE",
+      "url": "https://sellercentral.amazon.de/help/hub/reference/external/G2?locale=de-DE",
+      "snippet": "Hilfe für Verkäufer bei Amazon Falls Sie bereits Verkäufer sind, melden Sie sich an, um alle unsere Hilfeseiten und Funktionen zu …"
+    },
+    {
+      "title": "Umsatzsteuer-Berechnungsservice: Vereinfachte Rechnungsstellung …",
+      "url": "https://sellercentral.amazon.de/seller-forums/discussions/t/e0316bad-89cf-41f3-b8f9-212621312730",
+      "snippet": "May 22, 2025 · Ob ihr euch für von Amazon generierte oder selbst erstellte Rechnungen entscheidet, dieser Service wurde …"
+    },
+    {
+      "title": "Amazon Storbritannien / Amazon.co.uk - erfarenheter och tips",
+      "url": "https://swedroid.se/forum/threads/amazon-storbritannien-amazon-co-uk-erfarenheter-och-tips.171089/",
+      "snippet": "Jul 15, 2019 · Amazon UK skickar i regel det mesta till Sverige, men i vissa fall är det inte möjligt att skeppa varor till Sverige. I de fall …"
+    }
+  ]
+}

@@ -23,10 +23,11 @@
     "conversational",
     "custom_code",
     "license:openmdw-1.1",
+    "deploy:sagemaker",
     "region:us"
   ],
-  "likes": 123,
-  "downloads_30d": 18159,
+  "likes": 124,
+  "downloads_30d": 18774,
   "trending_score": 9,
   "parameters": 903049225,
   "parameters_human": "903.0M",

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-036",
+  "slug": "hyu-nlp-eval-qwen3-4b-medicine-static-pilot-261016-step-036",
+  "author": "HYU-NLP-EVAL",
+  "url": "https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-036",
+  "created_at": "2026-10-17T01:28:05.000Z",
+  "updated_at": "2026-10-17T01:41:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 301,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 25702307529,
+  "storage_human": "25.7 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-036",
+      "url": "https://featherless.ai/models/HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-036",
+      "snippet": "It represents a specific checkpoint (step 36) from a pilot training run (261016_medicine_static_pilot) that focused on the medical domain. The model&#x27;s architecture is exported in BF16 Transformers format, with the original native veRL/FSDP checkpoint files and metadata available in the original_checkpoint/ directory."
+    },
+    {
+      "title": "Qwen3 4b Medicine Static Pilot 261016 Step 036 - AI Model Insights ...",
+      "url": "https://free2aitools.com/model/hyu-nlp-eval/qwen3-4b-medicine-static-pilot-261016-step-036",
+      "snippet": "Registry entry for model Qwen3 4b Medicine Static Pilot 261016 Step 036; source metadata pending."
+    },
+    {
+      "title": "qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-003",
+      "url": "https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-003",
+      "snippet": "RaR-Medicine static R0 matched dense checkpoint, step 3 Run: phase1-static-r0-medicine-qwen3-4b-matched-dense-20260928-seed11. The root contains a BF16 model for inference. original_checkpoint/ contains the original veRL checkpoint files (model parameters only). The local checkpoint remains on disk. Research use only. Downloads last month 131 Safetensors Model size 4B params Tensor type BF16 ..."
+    },
+    {
+      "title": "HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step ...",
+      "url": "https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-001",
+      "snippet": "RaR-Medicine static R0 matched dense checkpoint, step 1 Run: phase1-static-r0-medicine-qwen3-4b-matched-dense-20260928-seed11. The root contains a BF16 model for inference. original_checkpoint/ contains the original veRL checkpoint files (model parameters only). The local checkpoint remains on disk. Research use only. Downloads last month 146 Safetensors Model size 4B params Tensor type BF16 ..."
+    },
+    {
+      "title": "Qwen3 4B Rar Medicine Static R0 Matched Dense Seed11 Step 008 by HYU ...",
+      "url": "https://llm-explorer.com/model/HYU-NLP-EVAL%2Fqwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-008,cMGLnuq6Ni0ObvQjQQgbT",
+      "snippet": "Qwen3 4B Rar Medicine Static R0 Matched Dense Seed11 Step 008 is an open-source 4b LLM by HYU-NLP-EVAL. VRAM 8.1GB, 256K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "sartajbhuvaji/bonsai-distilled-depth0-experts64-500-warmup75-lr1e4-fixedloss-best",
+  "slug": "sartajbhuvaji-bonsai-distilled-depth0-experts64-500-warmup75-lr1e4-fixedloss-best",
+  "author": "sartajbhuvaji",
+  "url": "https://huggingface.co/sartajbhuvaji/bonsai-distilled-depth0-experts64-500-warmup75-lr1e4-fixedloss-best",
+  "created_at": "2026-10-17T18:35:50.000Z",
+  "updated_at": "2026-10-17T18:38:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_moe",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16030316544,
+  "parameters_human": "16.03B",
+  "storage_bytes": 32073262053,
+  "storage_human": "32.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fuck boy是渣男的意思吗？_百度知道",
+      "url": "https://zhidao.baidu.com/question/1581053036404255460.html",
+      "snippet": "fuck boy是渣男的意思吗？是的，这个词语是渣男的意思，英语当中炸了的意思。Read more"
+    },
+    {
+      "title": "夜店之王里面的所有歌曲。 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/1510828295783373220.html",
+      "snippet": "16 .till the world ends 17 .skater boy 18. if I were a boybeyonce 19 .innocence 20. numb 21 .where have you been 22 .fuck youlily 23 …"
+    },
+    {
+      "title": "What a fuck day与what a fucking day哪个语法是对的_百度知道",
+      "url": "https://zhidao.baidu.com/question/2053206658442292947.html",
+      "snippet": "Mar 9, 2015 · How quickly the boy is writing!这个男孩正在多么飞快地写作啊！ 2、 How+主语+谓语！ 如：How time flies! 时光飞逝! …"
+    },
+    {
+      "title": "mc石头喊麦《情债》的歌词是什么？谁知道的_百度知道",
+      "url": "https://zhidao.baidu.com/question/404700999.html",
+      "snippet": "Apr 2, 2012 · 你好，不知道你要的是不是这个 雷帝丝and基佬们 AV PARTY 山口山 WELCOME TO DISCO PARTY NOW 为你们带来 …"
+    },
+    {
+      "title": "1Nm等于多少公斤力？ - 百度知道",
+      "url": "https://zhidao.baidu.com/question/1836115461526989100.html",
+      "snippet": "1Nm约等于0.102公斤力。 计算方法：1公斤力≈9.8牛，1÷9.8≈0.102，1Nm约等于0.102公斤力。 扭矩（单位是Nm）在物理学中就是特 …"
+    }
+  ]
+}

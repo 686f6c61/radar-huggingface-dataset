@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "common-degradation/comrade-pi-coding-9b-gguf",
+  "slug": "common-degradation-comrade-pi-coding-9b-gguf",
+  "author": "common-degradation",
+  "url": "https://huggingface.co/common-degradation/comrade-pi-coding-9b-gguf",
+  "created_at": "2026-10-17T16:32:18.000Z",
+  "updated_at": "2026-10-17T16:56:54.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 5629109216,
+  "storage_human": "5.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Common — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Common",
+      "snippet": "Lonnie Lynn, Jr., dit Common et anciennement Common Sense, né le 13 mars 1972 à Chicago (Illinois), est un rappeur et acteur …"
+    },
+    {
+      "title": "Common (rapper) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Common_(rapper)",
+      "snippet": "Common explained to the audience that the title \"Finding Forever\" represented his quest to find an eternal place in hip-hop and also …"
+    },
+    {
+      "title": "common - English-French Dictionary WordReference.com",
+      "url": "https://www.wordreference.com/enfr/common",
+      "snippet": "Dans les listes : Top 2000 English words, Wood/lumber, PET Vocabulary List - C, Suite... Synonymes : ordinary, normal, everyday, …"
+    },
+    {
+      "title": "common - Traduction française – Linguee",
+      "url": "https://www.linguee.fr/anglais-francais/traduction/common.html",
+      "snippet": "De très nombreux exemples de phrases traduites contenant \"common\" – Dictionnaire français-anglais et moteur de recherche de …"
+    },
+    {
+      "title": "Apply to college with Common App",
+      "url": "https://www.commonapp.org/",
+      "snippet": "Common App streamlines college applications for over 1,000 schools, saving time, tracking deadlines, and supporting students, …"
+    }
+  ]
+}

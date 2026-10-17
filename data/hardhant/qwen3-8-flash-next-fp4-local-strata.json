@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "hardhant/Qwen3.8-Flash-Next-FP4-Local-Strata",
+  "slug": "hardhant-qwen3-8-flash-next-fp4-local-strata",
+  "author": "hardhant",
+  "url": "https://huggingface.co/hardhant/Qwen3.8-Flash-Next-FP4-Local-Strata",
+  "created_at": "2026-10-17T16:26:42.000Z",
+  "updated_at": "2026-10-17T16:53:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "strata",
+    "nvfp4",
+    "moe",
+    "fp4-local",
+    "base_model:nvidia/Qwen3.8-Flash-Next-FP4-Local",
+    "base_model:quantized:nvidia/Qwen3.8-Flash-Next-FP4-Local",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51200245760,
+  "parameters_human": "51.20B",
+  "storage_bytes": 248830212524,
+  "storage_human": "248.8 GB",
+  "base_model": "nvidia/Qwen3.8-Flash-Next-FP4-Local",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "gabe-adib/ove3-ladder-61m-lk3",
+  "slug": "gabe-adib-ove3-ladder-61m-lk3",
+  "author": "gabe-adib",
+  "url": "https://huggingface.co/gabe-adib/ove3-ladder-61m-lk3",
+  "created_at": "2026-10-17T18:16:14.000Z",
+  "updated_at": "2026-10-17T18:23:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9949411217,
+  "storage_human": "9.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gabe-adib/ove3-dc-61m-u120b-r2-wd0.1 · Hugging Face",
+      "url": "https://huggingface.co/gabe-adib/ove3-dc-61m-u120b-r2-wd0.1",
+      "snippet": "ove3-dc-61m-u120b-r2-wd0.1 One run of the ove3 data-constrained scaling study: kimi_linear MoE with 61M active parameters, 120B unique tokens × 2 epochs = 240B tokens, weight decay 0.1. Final held-out loss 1.1373 nats/char (blend-weighted over 8 domains; per domain in DOMAIN_NLL.txt). checkpoint/: final Megatron distributed checkpoint (iteration 28,610), as saved logs/: training logs (one ..."
+    },
+    {
+      "title": "Super Intelligence Video Generation: Veo 3.1, Kling, Hailuo, Wan ...",
+      "url": "https://gab.ai/docs/videos",
+      "snippet": "Generate Super Intelligence videos from text or images in Gab AI with Veo 3.1, Kling, Hailuo, Wan, and Seedance. Compare model strengths, durations, aspect ratios, and credit cost."
+    },
+    {
+      "title": "Google AI Studio",
+      "url": "https://aistudio.google.com/models/veo-3",
+      "snippet": "The fastest path from prompt to production with Gemini"
+    },
+    {
+      "title": "Gemini 3 | Google AI Studio",
+      "url": "https://aistudio.google.com/models/gemini-3",
+      "snippet": "Gemini 3 Our most intelligent models that help you bring any idea to life"
+    },
+    {
+      "title": "Gemini (language model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Gemini_(language_model)",
+      "snippet": "It also introduces improved agentic capabilities, a new Google Gen AI SDK, and \"Jules\", an experimental AI coding agent for GitHub. [44][non-primary source needed] In March 2025, Google announced Gemini Robotics, a vision-language-action model based on the Gemini 2.0 family of models."
+    }
+  ]
+}

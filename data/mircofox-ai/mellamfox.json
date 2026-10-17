@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "MircoFox-AI/MeLlamFox",
+  "slug": "mircofox-ai-mellamfox",
+  "author": "MircoFox-AI",
+  "url": "https://huggingface.co/MircoFox-AI/MeLlamFox",
+  "created_at": "2026-10-17T02:18:32.000Z",
+  "updated_at": "2026-10-17T11:12:09.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "llama3.2",
+    "Python",
+    "MicroFox",
+    "Meta",
+    "base_model:meta-llama/Llama-3.2-1B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.2-1B-Instruct",
+    "license:llama3.2",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "meta-llama/Llama-3.2-1B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microfox Llama Engine - a Hugging Face Space by MircoFox-AI",
+      "url": "https://huggingface.co/spaces/MircoFox-AI/microfox-llama-engine",
+      "snippet": "Enter a short text prompt and your Hugging Face access token, then click Submit to send the request straight to the Llama 3.2 model hosted on Hugging Face. The model processes the prompt and return..."
+    },
+    {
+      "title": "MircoFox-AI (Micro Fox) - Hugging Face",
+      "url": "https://huggingface.co/MircoFox-AI",
+      "snippet": "Hey We make models And apps"
+    },
+    {
+      "title": "Micro Fox · GitHub",
+      "url": "https://github.com/MicroFoxAI/",
+      "snippet": "Llama3.2-MicroFox-AI-.1 Llama3.2-MicroFox-AI-.1 Public This is our first AI model Python"
+    },
+    {
+      "title": "Microfox - GitHub",
+      "url": "https://github.com/microfox-ai/",
+      "snippet": "TypeScript 93 MIT 133 6 (3 issues need help) 4 Updated 2 weeks ago ai-router Public express.js styled agent orchestration Library for typescript community TypeScript 5 MIT 0 9 2 Updated 2 weeks ago zone Public Zone is an application for building AI agents and workers."
+    },
+    {
+      "title": "Llama32MicroFoxAIVone - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/mircofox-ai/llama32microfoxaivone",
+      "snippet": "🆔 Identity & Source id hf-model--mircofox-ai--llama32microfoxaivone slug mircofox-ai--llama32microfoxaivone source huggingface author Mircofox Ai license llama3.2 tags gguf, license:llama3.2, endpoints_compatible, region:us, imatrix, conversational"
+    }
+  ]
+}

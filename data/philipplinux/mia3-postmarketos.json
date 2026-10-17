@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "PhilippLinux/mia3-postmarketos",
+  "slug": "philipplinux-mia3-postmarketos",
+  "author": "PhilippLinux",
+  "url": "https://huggingface.co/PhilippLinux/mia3-postmarketos",
+  "created_at": "2026-10-15T14:39:53.000Z",
+  "updated_at": "2026-10-17T02:48:02.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "postmarketos",
+    "xiaomi-mi-a3",
+    "laurel_sprout",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4433947516,
+  "storage_human": "4.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PhilippLinux/mia3-postmarketos · Hugging Face",
+      "url": "https://huggingface.co/PhilippLinux/mia3-postmarketos",
+      "snippet": "PhilippLinux / mia3-postmarketos Like 0 postmarketos xiaomi-mi-a3 laurel_sprout License:other Model card FilesFiles and versions xet Community Copy to bucket new Xiaomi Mi A3 (laurel_sprout) postmarketOS server images"
+    },
+    {
+      "title": "PhilippLinux (Philipp Baumann) - Hugging Face",
+      "url": "https://huggingface.co/PhilippLinux/datasets",
+      "snippet": "Recent Activity updated a modelabout 13 hours ago PhilippLinux/mia3-postmarketos updated a modelabout 21 hours ago PhilippLinux/s9-postmarketos published a model2 days ago PhilippLinux/mia3-postmarketos View all activity"
+    },
+    {
+      "title": "[LINUX][Nura/postmarketOS] Mi A3 as a Linux mainline 7.2 home server ...",
+      "url": "https://xdaforums.com/t/linux-nura-postmarketos-mi-a3-as-a-linux-mainline-7-2-home-server-battery-wi-fi-bt-ir-gpu-speaker-touch-dashboard.4804894/",
+      "snippet": "This turns the Mi A3 into a small always-on Linux box on postmarketOS (mainline kernel 7.2, sm61x5-mainline). Mine runs Docker containers, Tailscale and ssh on the charger, and holds the battery at 50 % so it doesn&#x27;t swell, plus some thermal guards just in case. On top of stock pmOS aka Nura it adds out-of-tree kernel modules, device-tree changes, a touch dashboard on the phone&#x27;s screen and a ..."
+    },
+    {
+      "title": "[LINUX] [Nura/postmarketOS] [laurel_sprout] Mi A3 as a Linux mainline 7 ...",
+      "url": "https://xdaforums.com/t/linux-nura-postmarketos-laurel_sprout-mi-a3-as-a-linux-mainline-7-2-home-server-battery-wi-fi-bt-ir-gpu-speaker-touch-dashboard.4804894/",
+      "snippet": "This turns the Mi A3 into a small always-on Linux box on postmarketOS (mainline kernel 7.2, sm61x5-mainline). Mine runs Docker containers, Tailscale and ssh on the charger, and holds the battery at 50 % so it doesn&#x27;t swell, plus some thermal guards just in case."
+    },
+    {
+      "title": "postmarketOS · GitLab · Nura",
+      "url": "https://gitlab.postmarketos.org/",
+      "snippet": "Thanks for contributing to postmarketOS! We&#x27;ve noticed that many new contributors aren&#x27;t aware of our AI usage policy. Please review it before you get started. Happy hacking!"
+    }
+  ]
+}

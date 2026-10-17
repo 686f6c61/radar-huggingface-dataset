@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-lyf3381-lora",
+  "slug": "runninghubai-rh-lyf3381-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-lyf3381-lora",
+  "created_at": "2026-10-17T18:22:01.000Z",
+  "updated_at": "2026-10-17T18:23:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "image-text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 234710144,
+  "storage_human": "235 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Equality comparisons and sameness - JavaScript | MDN",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Equality_comparisons_and_sameness",
+      "snippet": "Sep 27, 2026 · Triple equals (===) will do the same comparison as double equals (including the special handling for NaN, -0, and +0) …"
+    },
+    {
+      "title": "Double (==) or Triple (===). One main difference to note in ... - Medium",
+      "url": "https://medium.com/@isaacgc0596/double-or-triple-6f1fe84a02f",
+      "snippet": "Aug 31, 2020 · Although this may seem like a minor detail to worry about, whether when to use double or triple, it is very important to …"
+    },
+    {
+      "title": "How do the PHP equality (== double equals) and identity (=== triple ...",
+      "url": "https://stackoverflow.com/questions/80646/how-do-the-php-equality-double-equals-and-identity-triple-equals-comp",
+      "snippet": "The main difference between of these two is that '==' checks if the values of the two operands are equal or not. On the other hand, …"
+    },
+    {
+      "title": "Stop Using Double Equals In JavaScript - Web Dev Simplified",
+      "url": "https://blog.webdevsimplified.com/2020-08/==-vs-===/",
+      "snippet": "Aug 3, 2020 · Everything you need to know about the difference between double and triple equals in JavaScript."
+    },
+    {
+      "title": "Difference between double equal vs triple equal JavaScript",
+      "url": "https://www.geeksforgeeks.org/javascript/difference-between-double-equal-vs-triple-equal-javascript/",
+      "snippet": "Jul 11, 2025 · Triple equal: The triple equal ('===') operator tests for strict equality i.e it will not do the type conversion hence if the …"
+    }
+  ]
+}

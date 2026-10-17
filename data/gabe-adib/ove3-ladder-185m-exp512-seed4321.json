@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "gabe-adib/ove3-ladder-185m-exp512-seed4321",
+  "slug": "gabe-adib-ove3-ladder-185m-exp512-seed4321",
+  "author": "gabe-adib",
+  "url": "https://huggingface.co/gabe-adib/ove3-ladder-185m-exp512-seed4321",
+  "created_at": "2026-10-17T18:16:14.000Z",
+  "updated_at": "2026-10-17T18:23:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 56751967807,
+  "storage_human": "56.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "gabe-adib/ove3-ladder-440m-lk3x1024 · Hugging Face",
+      "url": "https://huggingface.co/gabe-adib/ove3-ladder-440m-lk3x1024",
+      "snippet": "ove3-ladder-440m-lk3x1024 One run of the ove3 intervention ladder, K3 LatentMoE arms: kimi_linear MoE with 440M active parameters, LatentMoE, 1024 half-width experts, top-16 (2x routed parameters), RMSNorm eps 1e-5, router scaling 1.0, seed 1234. Otherwise the recipe&#x27;s 440M IsoFLOP cell (same data, LR, batch, steps)."
+    },
+    {
+      "title": "Google AI Studio",
+      "url": "https://aistudio.google.com/models/veo-3",
+      "snippet": "The fastest path from prompt to production with Gemini"
+    },
+    {
+      "title": "Best Open Source AI Models in 2026 (Ranked)",
+      "url": "https://felloai.com/best-open-source-ai-models/",
+      "snippet": "The best open source AI models changed hands again in September. Xiaomi published the weights for MiMo-V2.6-Pro on September 21, 2026 under a plain MIT license, and Artificial Analysis now scores it 46.3 on its Intelligence Index v4.3.2, the highest of any open-weight model and level with Grok 4.7. The top closed model, Claude Opus 5.5, sits at ..."
+    }
+  ]
+}

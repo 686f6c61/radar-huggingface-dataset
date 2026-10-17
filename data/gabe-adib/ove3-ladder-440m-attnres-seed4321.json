@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "gabe-adib/ove3-ladder-440m-attnres-seed4321",
+  "slug": "gabe-adib-ove3-ladder-440m-attnres-seed4321",
+  "author": "gabe-adib",
+  "url": "https://huggingface.co/gabe-adib/ove3-ladder-440m-attnres-seed4321",
+  "created_at": "2026-10-17T18:16:16.000Z",
+  "updated_at": "2026-10-17T18:23:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 70465193215,
+  "storage_human": "70.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "gabe-adib (Gabe Adib Corp) - Hugging Face",
+      "url": "https://huggingface.co/gabe-adib",
+      "snippet": "Org profile for Gabe Adib Corp on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "AI Model Leaderboards & Benchmarks | Scale Labs",
+      "url": "https://labs.scale.com/leaderboard",
+      "snippet": "Explore leaderboards with expert-driven LLM benchmarks and updated AI model rankings across coding, reasoning and more."
+    },
+    {
+      "title": "NVIDIA Ships the Nemotron 3 Open-Weight Model Family",
+      "url": "https://ai-solutions.wiki/news/nvidia-nemotron-3/",
+      "snippet": "Across GTC 2026 and the following months NVIDIA released the Nemotron 3 open-weights family, a hybrid Mamba-Transformer mixture-of-experts line from a 120B Super to a 550B Ultra, with open weights, data, and training recipes."
+    },
+    {
+      "title": "NVIDIA Nemotron 3: Efficient Open Agentic AI",
+      "url": "https://api.emergentmind.com/papers/2512.20856",
+      "snippet": "Implications and Future Outlook Nemotron 3&#x27;s open, transparent release strategy—encompassing model weights, rich datasets (10T+ tokens), and pre-/post-training recipes—positions it for broad adoption in agentic, multi-modal, and long-context AI systems."
+    }
+  ]
+}

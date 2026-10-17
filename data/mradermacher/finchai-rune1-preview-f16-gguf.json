@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mradermacher/FinchAI-Rune1-Preview-f16-GGUF",
+  "slug": "mradermacher-finchai-rune1-preview-f16-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/FinchAI-Rune1-Preview-f16-GGUF",
+  "created_at": "2026-10-17T02:37:55.000Z",
+  "updated_at": "2026-10-17T08:26:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "tool-calling",
+    "function-calling",
+    "agent",
+    "multimodal",
+    "chinese",
+    "zh",
+    "en",
+    "base_model:whcl412/FinchAI-Rune1-Preview-f16",
+    "base_model:quantized:whcl412/FinchAI-Rune1-Preview-f16",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 223,
+  "trending_score": 0,
+  "parameters": 1006209856,
+  "parameters_human": "1.01B",
+  "storage_bytes": 11456999296,
+  "storage_human": "11.5 GB",
+  "base_model": "whcl412/FinchAI-Rune1-Preview-f16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "whcl412/FinchAI-Rune1-Preview-f16 · Hugging Face",
+      "url": "https://huggingface.co/whcl412/FinchAI-Rune1-Preview-f16",
+      "snippet": "Instructions to use whcl412/FinchAI-Rune1-Preview-f16 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use whcl412/FinchAI-Rune1-Preview-f16 with Transformers:"
+    },
+    {
+      "title": "mradermacher/model_requests · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/model_requests",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "FinchAI-Rune1-Preview - GitHub",
+      "url": "https://github.com/hwc-cell/FinchAI-Rune1-Preview",
+      "snippet": "FinchAI 系列首个模型｜底座 MiniCPM-V 4.7-1B｜重点训练工具调用的判断力｜验收 27/27 - hwc-cell/FinchAI-Rune1-Preview"
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 31 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://router.huggingface.co/models/",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

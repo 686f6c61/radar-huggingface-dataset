@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "prism-ml/Ternary-Bonsai-2-9B-mlx-2bit",
+  "slug": "prism-ml-ternary-bonsai-2-9b-mlx-2bit",
+  "author": "prism-ml",
+  "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2-9B-mlx-2bit",
+  "created_at": "2026-10-01T17:06:13.000Z",
+  "updated_at": "2026-10-14T22:14:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "prism_hadamard_qwen35",
+    "ternary",
+    "2-bit",
+    "metal",
+    "on-device",
+    "hybrid-attention",
+    "vision",
+    "prismml",
+    "bonsai",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 17,
+  "downloads_30d": 2343,
+  "trending_score": 17,
+  "parameters": 9410903280,
+  "parameters_human": "9.41B",
+  "storage_bytes": 3611841551,
+  "storage_human": "3.6 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home - Prism Launcher",
+      "url": "https://prismlauncher.org/",
+      "snippet": "Prism Launcher allows you to create and manage multiple instances of Minecraft, each with its own settings, mods, and …"
+    },
+    {
+      "title": "Prism - GraphPad",
+      "url": "https://www.graphpad.com/features",
+      "snippet": "Prism is specifically formatted for the analyses you want to run, including analysis of quantitative and categorical data. This makes it …"
+    },
+    {
+      "title": "Prism | A free, LaTeX Editor and AI-native workspace for scientists",
+      "url": "https://openai.com/prism/",
+      "snippet": "Write, edit, and collaborate on scientific documents in LaTeX with Prism—the free LaTeX editor and scientific workspace integrating …"
+    },
+    {
+      "title": "Prism - OpenAI",
+      "url": "https://openai.com/fr-FR/prism/",
+      "snippet": "Write, edit, and collaborate on scientific documents in LaTeX with Prism—the free LaTeX editor and scientific workspace integrating …"
+    },
+    {
+      "title": "Professionnels du recrutement et de l'intérim | Prism'emploi",
+      "url": "https://www.prismemploi.eu/",
+      "snippet": "Oct 8, 2026 · Certifiés Qualiopi, ces organismes proposent une offre de service validée par Prism'emploi et les organisations …"
+    }
+  ]
+}

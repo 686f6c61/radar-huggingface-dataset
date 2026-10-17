@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-modelo100v2-lora",
+  "slug": "runninghubai-rh-modelo100v2-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-modelo100v2-lora",
+  "created_at": "2026-10-17T02:37:02.000Z",
+  "updated_at": "2026-10-17T02:38:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "image-text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 470395487,
+  "storage_human": "470 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RunningHub Models ｜ AI Model Creation & Training Platform",
+      "url": "https://www.runninghub.ai/models",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "RunningHubAI/rh-lora10-lora · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-lora10-lora",
+      "snippet": "RunningHubAI / rh-lora10-lora Like 0 Text-to-Image comfyui lora Model card FilesFiles and versions xet Community Copy to bucket new rh-lora10-lora Description About this model Files License Training at RunningHub"
+    },
+    {
+      "title": "RunningHubAI/rh-lora-2078473723922305026 · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-lora-2078473723922305026",
+      "snippet": "RunningHubAI / rh-lora-2078473723922305026 Like 0 Image-Text-to-Image comfyui lora Model card FilesFiles and versions xet Community Copy to bucket new rh-lora Description About this model Files License Training at RunningHub"
+    },
+    {
+      "title": "RunningHub ｜ AI Agent-Powered Content Creation Platform with ComfyUI ...",
+      "url": "https://www.runninghub.ai/",
+      "snippet": "RunningHub is an all-in-one content creation platform powered by native AI agents. Build end-to-end creative workflows with ComfyUI workflows, infinite canvas, AI apps, image & video generation, and model API access."
+    },
+    {
+      "title": "AI模型库｜热门AI生成模型与LoRA模型｜RunningHub",
+      "url": "https://www.runninghub.cn/models",
+      "snippet": "浏览RunningHub AI模型库，探索热门图像、视频生成模型与LoRA模型，按风格和应用场景筛选，快速找到适合AI创作的模型。"
+    }
+  ]
+}

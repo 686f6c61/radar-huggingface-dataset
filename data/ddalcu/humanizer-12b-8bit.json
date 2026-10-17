@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "ddalcu/humanizer-12b-8bit",
+  "slug": "ddalcu-humanizer-12b-8bit",
+  "author": "ddalcu",
+  "url": "https://huggingface.co/ddalcu/humanizer-12b-8bit",
+  "created_at": "2026-10-17T02:35:53.000Z",
+  "updated_at": "2026-10-17T02:38:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4_unified",
+    "8-bit",
+    "gemma4",
+    "humanizer",
+    "text-rewriting",
+    "style-transfer",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:jialinyyzz/humanizer",
+    "base_model:quantized:jialinyyzz/humanizer",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 11907350272,
+  "parameters_human": "11.91B",
+  "storage_bytes": 12684622312,
+  "storage_human": "12.7 GB",
+  "base_model": "jialinyyzz/humanizer",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Humanizer: 12B Model for Local AI Text Rewriting",
+      "url": "https://www.aitoolsdaily.net/article/humanizer-12b-model-for-local-ai-text-rewriting",
+      "snippet": "Humanizer is a specialized 12-billion parameter language model designed to rewrite AI-generated drafts into text that reads as if written by a human. It supports English and Chinese, covering formats such as emails, essays, reports, and forum posts."
+    },
+    {
+      "title": "Humanizer Ai - a Hugging Face Space by conversantech",
+      "url": "https://huggingface.co/spaces/conversantech/humanizer-ai",
+      "snippet": "Paste the AI‑generated passage you want to improve, set how much human‑like tweaking you prefer, and the tool rewrites the text. It adds casual starters, contractions, varied sentence structures an..."
+    },
+    {
+      "title": "guygrigsby/humanizer-12b-mlx-6bit · Hugging Face",
+      "url": "https://huggingface.co/guygrigsby/humanizer-12b-mlx-6bit",
+      "snippet": "A 12B model that rewrites AI-written drafts (emails, essays, reports, forum posts; English and Chinese) so they read like a person wrote them. It is trained to keep every number, unit, date, name and quote and to add nothing, and it runs locally."
+    },
+    {
+      "title": "GitHub - sgaofen/humanizer-local-model: Rewrites AI drafts so they read ...",
+      "url": "https://github.com/sgaofen/humanizer-local-model",
+      "snippet": "humanizer is a 12B model that rewrites AI-written drafts (emails, essays, reports, forum posts; English and Chinese) so they read like a person wrote them. It is trained to keep every number, unit, date, name and quote and to add nothing, and it runs on your own computer."
+    },
+    {
+      "title": "How to Run Humanizer 12B Locally with Llama.cpp - mindstudio.ai",
+      "url": "https://www.mindstudio.ai/blog/run-humanizer-12b-locally-llama-cpp",
+      "snippet": "Run Humanizer 12B offline with llama.cpp. GGUF quant sizes, VRAM needs, and what this Gemma fine-tune actually does to AI text."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "luisastellet/qwen-metaphor-unke-camada-3-zero-um",
+  "slug": "luisastellet-qwen-metaphor-unke-camada-3-zero-um",
+  "author": "luisastellet",
+  "url": "https://huggingface.co/luisastellet/qwen-metaphor-unke-camada-3-zero-um",
+  "created_at": "2026-10-14T16:34:53.000Z",
+  "updated_at": "2026-10-17T02:48:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 517,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 7164127554,
+  "storage_human": "7.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "luisastellet/qwen-metaphor-unke-camada-3-zero-um · Hugging Face",
+      "url": "https://huggingface.co/luisastellet/qwen-metaphor-unke-camada-3-zero-um",
+      "snippet": "Instructions to use luisastellet/qwen-metaphor-unke-camada-3-zero-um with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "luisastellet/qwen-metaphor-unke · Hugging Face",
+      "url": "https://huggingface.co/luisastellet/qwen-metaphor-unke",
+      "snippet": "luisastellet / qwen-metaphor-unke Like 0 Text Generation Transformers Safetensors qwen3 conversational text-generation-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "luisastellet/qwen-metaphor-unke-camada-8-zero-um",
+      "url": "https://featherless.ai/models/luisastellet/qwen-metaphor-unke-camada-8-zero-um",
+      "snippet": "The luisastellet/qwen-metaphor-unke-camada-8-zero-um is an 0.8 billion parameter language model with a substantial context length of 32768 tokens. This model is shared by luisastellet."
+    },
+    {
+      "title": "qwen-metaphor-unke-camada-3-zero-um - FriendliAI",
+      "url": "https://friendli.ai/models/luisastellet/qwen-metaphor-unke-camada-3-zero-um",
+      "snippet": "Deploy qwen-metaphor-unke-camada-3-zero-um with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "luisastellet/qwen-metaphor-unke-camada-5 - featherless.ai",
+      "url": "https://featherless.ai/models/luisastellet/qwen-metaphor-unke-camada-5",
+      "snippet": "This model, luisastellet/qwen-metaphor-unke-camada-5, is a 0.8 billion parameter language model. It features a substantial context window of 32768 tokens, allowing it to process and generate longer sequences of text."
+    }
+  ]
+}

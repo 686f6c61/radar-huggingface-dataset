@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "gabe-adib/ove3-dedup-185m-organelle-ani95-seed4321",
+  "slug": "gabe-adib-ove3-dedup-185m-organelle-ani95-seed4321",
+  "author": "gabe-adib",
+  "url": "https://huggingface.co/gabe-adib/ove3-dedup-185m-organelle-ani95-seed4321",
+  "created_at": "2026-10-17T18:16:16.000Z",
+  "updated_at": "2026-10-17T18:23:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28930787752,
+  "storage_human": "28.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ove3 data-constrained scaling study - a gabe-adib Collection",
+      "url": "https://huggingface.co/collections/gabe-adib/ove3-data-constrained-scaling-study",
+      "snippet": "28 runs: 61M/185M/440M active, 30B or 120B unique tokens x 1-8 epochs, weight decay 0.1/0.3/1."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "RCSB PDB: Homepage",
+      "url": "https://www1.rcsb.org/",
+      "snippet": "As a member of the wwPDB, the RCSB PDB curates and annotates PDB data according to agreed upon standards. The RCSB PDB also provides a variety of tools and resources. Users can perform simple and advanced searches based on annotations relating to sequence, structure and function. These molecules are visualized, downloaded, and analyzed by users who range from students to specialized scientists."
+    },
+    {
+      "title": "Adenine base editor for knockout of proteins: A practical guide from ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S216225312600079X",
+      "snippet": "Adenine base editors (ABEs) are a promising yet underutilized tool for inducing protein knockout compared to Cas9 nuclease, owing in part to a lack of user-friendly platforms for reagent design and implementation. Here, we present a comprehensive workflow to achieve high-efficiency gene knockouts with ABE as an alternative to Cas9 nuclease-based approaches. This includes optimized guide RNA ..."
+    },
+    {
+      "title": "UniProt",
+      "url": "https://www.uniprot.org/",
+      "snippet": "UniProt is the world&#x27;s leading high-quality, comprehensive and freely accessible resource of protein sequence and functional information."
+    }
+  ]
+}

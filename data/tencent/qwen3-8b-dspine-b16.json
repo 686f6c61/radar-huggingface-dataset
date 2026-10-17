@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "tencent/Qwen3-8B-DSpine-b16",
+  "slug": "tencent-qwen3-8b-dspine-b16",
+  "author": "tencent",
+  "url": "https://huggingface.co/tencent/Qwen3-8B-DSpine-b16",
+  "created_at": "2026-10-16T14:52:38.000Z",
+  "updated_at": "2026-10-16T15:04:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "custom_code",
+    "arxiv:2609.36173",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 21,
+  "downloads_30d": 151,
+  "trending_score": 21,
+  "parameters": 1237763840,
+  "parameters_human": "1.24B",
+  "storage_bytes": 2475535344,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon tracking no longer providing an estimated delivery window.",
+      "url": "https://www.reddit.com/r/AmazonUK/comments/13bpc6n/amazon_tracking_no_longer_providing_an_estimated/",
+      "snippet": "May 8, 2023 · Amazon tracking no longer providing an estimated delivery window. Amazons tracking service used to give me a time …"
+    },
+    {
+      "title": "Amazon KDP and Private Limited company in UK - Reddit",
+      "url": "https://www.reddit.com/r/smallbusinessuk/comments/136xamv/amazon_kdp_and_private_limited_company_in_uk/",
+      "snippet": "Amazon KDP and Private Limited company in UK Hey everyone, I'm hoping some of you might be able to offer me some guidance …"
+    },
+    {
+      "title": "Hilfe für Verkäufer bei Amazon - Seller Central DE",
+      "url": "https://sellercentral.amazon.de/help/hub/reference/external/G2?locale=de-DE",
+      "snippet": "Hilfe für Verkäufer bei Amazon Falls Sie bereits Verkäufer sind, melden Sie sich an, um alle unsere Hilfeseiten und Funktionen zu …"
+    },
+    {
+      "title": "Umsatzsteuer-Berechnungsservice: Vereinfachte Rechnungsstellung …",
+      "url": "https://sellercentral.amazon.de/seller-forums/discussions/t/e0316bad-89cf-41f3-b8f9-212621312730",
+      "snippet": "May 22, 2025 · Ob ihr euch für von Amazon generierte oder selbst erstellte Rechnungen entscheidet, dieser Service wurde …"
+    },
+    {
+      "title": "Amazon Storbritannien / Amazon.co.uk - erfarenheter och tips",
+      "url": "https://swedroid.se/forum/threads/amazon-storbritannien-amazon-co-uk-erfarenheter-och-tips.171089/",
+      "snippet": "Jul 15, 2019 · Amazon UK skickar i regel det mesta till Sverige, men i vissa fall är det inte möjligt att skeppa varor till Sverige. I de fall …"
+    }
+  ]
+}

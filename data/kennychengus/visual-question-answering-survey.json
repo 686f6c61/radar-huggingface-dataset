@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "kennychengus/visual-question-answering-survey",
+  "slug": "kennychengus-visual-question-answering-survey",
+  "author": "kennychengus",
+  "url": "https://huggingface.co/kennychengus/visual-question-answering-survey",
+  "created_at": "2026-10-17T18:05:39.000Z",
+  "updated_at": "2026-10-17T18:05:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "visual-question-answering",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "visual-question-answering",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Genshin Impact Map - HoYoLAB",
+      "url": "https://act.hoyolab.com/ys/app/interactive-map/index.html?lang=en-us",
+      "snippet": "Get a quick view of the locations where Oculi, treasure chests, puzzles, materials, and monsters can be found in Teyvat, mark and …Read more"
+    },
+    {
+      "title": "Genshin Impact Interactive World Map",
+      "url": "https://genshin-impact-map.appsample.com/",
+      "snippet": "Interactive, searchable map of Genshin Impact with all chests, puzzles, guides, resources locations. Track exploration progress and …"
+    },
+    {
+      "title": "Carte interactive - Genshin Impact FR",
+      "url": "https://www.genshin-impact.fr/map/",
+      "snippet": "Get a quick view of the locations where Oculi, treasure chests, puzzles, materials, and monsters can be found in Teyvat, mark and …"
+    },
+    {
+      "title": "Teyvat Interactive Map - HoYoLAB",
+      "url": "https://act.hoyolab.com/ys/app/interactive-map/?lang=en-us",
+      "snippet": "Get a quick view of the locations where Oculi, treasure chests, puzzles, materials, and monsters can be found in Teyvat, mark and …"
+    },
+    {
+      "title": "Teyvat | Genshin Impact Interactive Map | MapGenie",
+      "url": "https://mapgenie.io/genshin-impact/maps/teyvat",
+      "snippet": "Genshin Impact Interactive Map of Teyvat - All locations, Anemoculi, Geoculi, Waypoints, Chests, Quests & more! Use the progress …"
+    }
+  ]
+}

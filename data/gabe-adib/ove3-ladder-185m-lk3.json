@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "gabe-adib/ove3-ladder-185m-lk3",
+  "slug": "gabe-adib-ove3-ladder-185m-lk3",
+  "author": "gabe-adib",
+  "url": "https://huggingface.co/gabe-adib/ove3-ladder-185m-lk3",
+  "created_at": "2026-10-17T18:16:16.000Z",
+  "updated_at": "2026-10-17T18:23:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29079183808,
+  "storage_human": "29.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gabe-adib/ove3-dc-185m-u30b-r4-wd0.3 · Hugging Face",
+      "url": "https://huggingface.co/gabe-adib/ove3-dc-185m-u30b-r4-wd0.3",
+      "snippet": "ove3-dc-185m-u30b-r4-wd0.3 One run of the ove3 data-constrained scaling study: kimi_linear MoE with 185M active parameters, 30B unique tokens × 4 epochs = 120B tokens, weight decay 0.3."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 954 AI models across 639 benchmarks, with 224 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Kimi K3 - Kimi API Platform",
+      "url": "https://platform.kimi.ai/docs/guide/kimi-k3-quickstart",
+      "snippet": "Explore Kimi K3 for long-horizon coding, knowledge work, deep reasoning, visual understanding, and a 1M-token context window."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Nanami231/mashimaro1026",
+  "slug": "nanami231-mashimaro1026",
+  "author": "Nanami231",
+  "url": "https://huggingface.co/Nanami231/mashimaro1026",
+  "created_at": "2026-10-17T02:34:50.000Z",
+  "updated_at": "2026-10-17T03:44:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1553786469,
+  "storage_human": "1.6 GB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nanami231/mashimaro1026 · Hugging Face",
+      "url": "https://huggingface.co/Nanami231/mashimaro1026",
+      "snippet": "Nanami231 / mashimaro1026 Like 0 Text-to-Image Diffusers lora krea2 template:sd-lora License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Nanami231/m-shinhi · Hugging Face",
+      "url": "https://huggingface.co/Nanami231/m-shinhi",
+      "snippet": "Nanami231 / m-shinhi Like 0 Text-to-Image Diffusers lora krea2 template:sd-lora License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Nanami (Magical★Explorer) - 1.0 - Free AI LORA | Tensor.Art",
+      "url": "https://tensor.art/models/1054182776204491989",
+      "snippet": "Download Nanami (Magical★Explorer) - free LORA Illustrious AI model on TENSOR. Anima, Anime, Illustration. By Ttan"
+    },
+    {
+      "title": "M Shinhi - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/nanami231/m-shinhi",
+      "snippet": "by Nanami231 nanami231/m-shinhi Free2AITools Nexus Index 37.0 S: Semantic50 Query-time baseline · scored live at search A: Authority0 P: Popularity1 R: Recency98 Q: Quality50 Tech Context Vital Performance 12 DL / 30D Source → Share: 📤 𝕏 in 📣 🔗"
+    },
+    {
+      "title": "Best Nanami - ZIB AI LORA - Free Download | TensorHub Art",
+      "url": "https://tensorhub.art/models/995959123382138356",
+      "snippet": "Download Nanami - free LORA Z-Image AI model on TENSORHUB ART. By Syler"
+    }
+  ]
+}

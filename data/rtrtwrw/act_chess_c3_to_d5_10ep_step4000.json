@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "rtrtwrw/act_chess_c3_to_d5_10ep_step4000",
+  "slug": "rtrtwrw-act_chess_c3_to_d5_10ep_step4000",
+  "author": "rtrtwrw",
+  "url": "https://huggingface.co/rtrtwrw/act_chess_c3_to_d5_10ep_step4000",
+  "created_at": "2026-10-17T18:25:38.000Z",
+  "updated_at": "2026-10-17T18:30:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "so101",
+    "dataset:niru-5/chess_dataset_c3_6cm_to_d5_10cm_20261017_145741",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206708280,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DarkGPT — Chat IA multi-modèles sans censure",
+      "url": "https://darkgpt.tech/",
+      "snippet": "DarkGPT : chat IA multi-modèles sans censure ajoutée par la plateforme. Plusieurs modèles (dont des versions non censurées), …"
+    },
+    {
+      "title": "DarkGPT - Chat",
+      "url": "https://darkgpts.com/",
+      "snippet": "Direct answers, total privacy, and real power. No judgment, no restrictions, no refusals."
+    },
+    {
+      "title": "DarkGPT — L'IA non censurée",
+      "url": "https://www.darkgpt.chat/",
+      "snippet": "Les IA classiques refusent, se justifient et te font la morale. DarkGPT te répond directement, comme un adulte parle à un adulte. …"
+    },
+    {
+      "title": "DarkGPT · Free AI Chatbot",
+      "url": "https://miniapps.ai/DarkGPT-41",
+      "snippet": "Sadistic, hateful AI, expert in chaos and conspiracies, venomous and detailed responses.. Try this and more free AI and ChatGPT …"
+    },
+    {
+      "title": "Tous les modèles — DarkGPT",
+      "url": "https://darkgpt.chat/modeles",
+      "snippet": "Le GPT d'OpenAI, précis et polyvalent sur tous les sujets. Modifie, résume et réécrit tes documents directement."
+    }
+  ]
+}

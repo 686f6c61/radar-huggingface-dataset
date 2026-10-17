@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "Ezomas/kmynas-parakeet-lt-v4-gguf",
+  "slug": "ezomas-kmynas-parakeet-lt-v4-gguf",
+  "author": "Ezomas",
+  "url": "https://huggingface.co/Ezomas/kmynas-parakeet-lt-v4-gguf",
+  "created_at": "2026-10-17T16:49:02.000Z",
+  "updated_at": "2026-10-17T16:49:43.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "lt"
+  ],
+  "tags": [
+    "gguf",
+    "parakeet",
+    "transcribe.cpp",
+    "lithuanian",
+    "automatic-speech-recognition",
+    "lt",
+    "base_model:kristijonas/kmynas-parakeet-lt-v4",
+    "base_model:quantized:kristijonas/kmynas-parakeet-lt-v4",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 627057290,
+  "parameters_human": "627.1M",
+  "storage_bytes": 739513920,
+  "storage_human": "740 MB",
+  "base_model": "kristijonas/kmynas-parakeet-lt-v4",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

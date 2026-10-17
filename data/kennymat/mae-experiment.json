@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "kennymat/mae-experiment",
+  "slug": "kennymat-mae-experiment",
+  "author": "kennymat",
+  "url": "https://huggingface.co/kennymat/mae-experiment",
+  "created_at": "2026-10-17T16:16:35.000Z",
+  "updated_at": "2026-10-17T16:16:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Extreme Road Trip 2 Soundtrack - Big Giant Circles",
+      "url": "https://biggiantcircles.bandcamp.com/album/extreme-road-trip-2-soundtrack",
+      "snippet": "Ryan Ike - Duck and Cover (In the Zone Remix) The soundtrack for Extreme Road Trip 2, by Roofdog Games! Available now and …"
+    },
+    {
+      "title": "Extreme Road Trip 2 Soundtrack - Title - Big Giant Circles",
+      "url": "https://www.youtube.com/watch?v=V3aZIlOukt8",
+      "snippet": "Nov 1, 2012 · Buy/listen to the full soundtrack at http://biggiantcircles.bandcamp.com/a... Title theme to Extreme Roadtrip 2, by …"
+    },
+    {
+      "title": "Extreme Road Trip 2 (Soundtrack) by Big Giant Circles",
+      "url": "https://soundcloud.com/biggiantcircles36177/sets/extreme-road-trip-2-soundtrack",
+      "snippet": "Listen to Extreme Road Trip 2 (Soundtrack), a playlist curated by Big Giant Circles on desktop and mobile."
+    },
+    {
+      "title": "Extreme Road Trip 2 (Soundtrack) by Big Giant Circles",
+      "url": "https://genius.com/albums/Big-giant-circles/Extreme-road-trip-2-soundtrack",
+      "snippet": "Nov 1, 2012 · Extreme Road Trip 2 is a mobile game made in 2012 by Roofdog Games. The soundtrack for the game was written by …"
+    },
+    {
+      "title": "Extreme Road Trip 2 (Soundtrack) - Single by Big Giant Circles | Spotify",
+      "url": "https://open.spotify.com/album/0hke7FSe7HAzKrIClQo0Lk",
+      "snippet": "Listen to Extreme Road Trip 2 (Soundtrack) on Spotify. Big Giant Circles · Single · 2012 · 4 songs."
+    }
+  ]
+}

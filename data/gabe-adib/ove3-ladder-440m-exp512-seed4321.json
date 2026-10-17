@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "gabe-adib/ove3-ladder-440m-exp512-seed4321",
+  "slug": "gabe-adib-ove3-ladder-440m-exp512-seed4321",
+  "author": "gabe-adib",
+  "url": "https://huggingface.co/gabe-adib/ove3-ladder-440m-exp512-seed4321",
+  "created_at": "2026-10-17T18:16:18.000Z",
+  "updated_at": "2026-10-17T18:23:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 138505174552,
+  "storage_human": "138.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lyon Actes sexuels tarifés sur MYM : « Ce n’est pas parce que c’est ...",
+      "url": "https://www.leprogres.fr/societe/2025/06/04/mym-ce-n-est-pas-parce-que-c-est-digital-que-ce-n-est-plus-de-la-prostitution",
+      "snippet": "Jun 4, 2025 · Mais certaines vendent leur corps, leurs gestes, leur intimité contre rémunération. Dans les faits, rien n’a changé : …"
+    },
+    {
+      "title": "Prostitution à Lyon : cartographie et état des lieux",
+      "url": "https://www.stop-prostitution.com/prostitution-a-lyon-cartographie-et-etat-des-lieux/",
+      "snippet": "Jun 18, 2024 · En tant que militante dévouée, je me propose de révéler un état des lieux sans tabou de la situation des personnes …"
+    },
+    {
+      "title": "Prostitution : dernières actus et dossiers - Tribune de Lyon",
+      "url": "https://tribunedelyon.fr/tag/prostitution/",
+      "snippet": "2 days ago · Une quinzaine de salons de massage asiatiques cachent des lieux de prostitution à Lyon, selon ZéroMacho et Femmes …"
+    },
+    {
+      "title": "Exclusif. « C’est vraiment le marché de la viande ! » : à Lyon, une ...",
+      "url": "https://tribunedelyon.fr/societe/cest-vraiment-le-marche-de-la-viande-a-lyon-une-quinzaine-de-salons-de-massage-epingles-pour-prostitution/",
+      "snippet": "Oct 23, 2023 · Une quinzaine de salons de massage asiatiques cachent des lieux de prostitution à Lyon, selon ZéroMacho et …"
+    },
+    {
+      "title": "« Un trafic d’êtres humains organisé par des réseaux tentaculaires ...",
+      "url": "https://www.elle.fr/Societe/News/Un-trafic-d-etres-humains-organise-par-des-reseaux-tentaculaires-5-questions-a-une-association-sur-la-prostitution-dans-les-salons-de-massage-4136641",
+      "snippet": "Jun 29, 2023 · En France, des centaines de salons de massage sont en réalité des lieux de prostitution. Des jeunes femmes en …"
+    }
+  ]
+}

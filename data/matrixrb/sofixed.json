@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "matrixrb/sofixed",
+  "slug": "matrixrb-sofixed",
+  "author": "matrixrb",
+  "url": "https://huggingface.co/matrixrb/sofixed",
+  "created_at": "2026-10-17T01:36:52.000Z",
+  "updated_at": "2026-10-17T01:37:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "endpoints_compatible",
+    "diffusers:StableDiffusionPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 859520964,
+  "parameters_human": "859.5M",
+  "storage_bytes": 2132604798,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "matrixrb/imaeemodel at main - Hugging Face",
+      "url": "https://huggingface.co/matrixrb/imaeemodel/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "matrixrb (matrix radbro) - Hugging Face",
+      "url": "https://huggingface.co/matrixrb",
+      "snippet": "AI & ML interests ... Recent Activity liked a model 24 days ago ... updated a model about 1 month ago"
+    },
+    {
+      "title": "The Rise of Sims 4 AI Mods And The Challenge of Long-Term Support",
+      "url": "https://simscommunity.info/2026/10/09/rise-of-sims-4-ai-mods/",
+      "snippet": "Sims 4 AI Mods, or mods coded using AI models, are on the rise, and they pose significant issues when it comes to maintaining and future proofing."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 954 AI models across 639 benchmarks, with 224 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Best Free AI Models & APIs (2026) | LM Market Cap",
+      "url": "https://lmmarketcap.com/free-ai-models",
+      "snippet": "Every free AI model ranked by quality: free LLMs, coding assistants, and image generators. No API costs, open-source, and ready to use. Start for free."
+    }
+  ]
+}

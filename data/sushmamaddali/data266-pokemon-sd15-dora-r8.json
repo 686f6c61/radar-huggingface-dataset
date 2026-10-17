@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "SushmaMaddali/data266-pokemon-sd15-dora-r8",
+  "slug": "sushmamaddali-data266-pokemon-sd15-dora-r8",
+  "author": "SushmaMaddali",
+  "url": "https://huggingface.co/SushmaMaddali/data266-pokemon-sd15-dora-r8",
+  "created_at": "2026-10-17T01:53:58.000Z",
+  "updated_at": "2026-10-17T02:13:11.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "stable-diffusion",
+    "dora",
+    "pokemon",
+    "data266",
+    "text-to-image",
+    "base_model:stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "base_model:adapter:stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3460299,
+  "storage_human": "3 MB",
+  "base_model": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SushmaMaddali/data266-pokemon-sd15-lora-r32 · Hugging Face",
+      "url": "https://huggingface.co/SushmaMaddali/data266-pokemon-sd15-lora-r32",
+      "snippet": "This model is a derivative of Stable Diffusion 1.5 and was fine-tuned on the reach-vb/pokemon-blip-captions dataset. Pokémon characters and related artwork are copyrighted intellectual property. This model is shared only for non-commercial academic coursework and research. It must not be used for commercial purposes, impersonation, or ..."
+    },
+    {
+      "title": "SushmaMaddali (Sai Sushma M) - Hugging Face",
+      "url": "https://huggingface.co/SushmaMaddali",
+      "snippet": "User profile of Sai Sushma M on Hugging Face"
+    },
+    {
+      "title": "GitHub - sai-sushma-maddali/data266-lab1",
+      "url": "https://github.com/sai-sushma-maddali/data266-lab1",
+      "snippet": "Each member independently designed, trained, and evaluated their own models for all three tasks. This repository holds code, checkpoints, outputs, raw logs, manifests, and the combined team report."
+    },
+    {
+      "title": "Pokemon AI Models (4,251) | Civitai",
+      "url": "https://civitai.com/tag/pokemon",
+      "snippet": "Browse 4,251 AI models tagged \"Pokemon\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    },
+    {
+      "title": "PixAI Model Market | 1.8M+ AI Art Models and LoRAs",
+      "url": "https://pixai.art/market",
+      "snippet": "Open marketplace for AI art models. Browse 1.8M+ user-trained models and LoRAs to generate anime, realistic and fantasy art free on PixAI."
+    }
+  ]
+}

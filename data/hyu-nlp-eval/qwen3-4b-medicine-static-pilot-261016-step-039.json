@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-039",
+  "slug": "hyu-nlp-eval-qwen3-4b-medicine-static-pilot-261016-step-039",
+  "author": "HYU-NLP-EVAL",
+  "url": "https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-039",
+  "created_at": "2026-10-17T02:12:43.000Z",
+  "updated_at": "2026-10-17T02:25:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 213,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 25702307529,
+  "storage_human": "25.7 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-002",
+      "url": "https://featherless.ai/models/HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-002",
+      "snippet": "It represents a specific checkpoint (step 2) from a pilot training run focused on medical applications, identified as 261016_medicine_static_pilot. The model is provided with a context length of 32768 tokens, making it suitable for processing extensive medical texts."
+    },
+    {
+      "title": "HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step ...",
+      "url": "https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-000",
+      "snippet": "Run: phase1-static-r0-medicine-qwen3-4b-matched-dense-20260928-seed11. The root contains a BF16 model for inference. original_checkpoint/ contains the original veRL checkpoint files (model parameters only)."
+    },
+    {
+      "title": "HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-038",
+      "url": "https://featherless.ai/models/HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-038",
+      "snippet": "This model is a 4 billion parameter variant of the Qwen3 architecture, specifically a pilot checkpoint from the 261016_medicine_static_pilot training run, captured at step 38."
+    },
+    {
+      "title": "Qwen3 4B Rar Medicine Static R0 Matched Dense Seed11 Step 008 by HYU ...",
+      "url": "https://llm-explorer.com/model/HYU-NLP-EVAL%2Fqwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-008,cMGLnuq6Ni0ObvQjQQgbT",
+      "snippet": "Qwen3 4B Rar Medicine Static R0 Matched Dense Seed11 Step 008 is an open-source 4b LLM by HYU-NLP-EVAL. VRAM 8.1GB, 256K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "qwen3-4b-medicine-static-pilot-261016-step-004 - friendli.ai",
+      "url": "https://friendli.ai/models/HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-004",
+      "snippet": "261016 Medicine static pilot, step 4 Run: 261016_medicine_static_pilot. Checkpoint step: 4; seed: 11. The root contains a BF16 Transformers export. original_checkpoint/ contains the exact native veRL/FSDP checkpoint files and metadata. The local checkpoint is removed only after all remote file sizes and SHA256 hashes are verified."
+    }
+  ]
+}

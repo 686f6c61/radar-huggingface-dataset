@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "gabe-adib/ove3-ladder-185m-lk3ours",
+  "slug": "gabe-adib-ove3-ladder-185m-lk3ours",
+  "author": "gabe-adib",
+  "url": "https://huggingface.co/gabe-adib/ove3-ladder-185m-lk3ours",
+  "created_at": "2026-10-17T18:16:16.000Z",
+  "updated_at": "2026-10-17T18:23:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29079154349,
+  "storage_human": "29.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gabe-adib (Gabe Adib Corp) - Hugging Face",
+      "url": "https://huggingface.co/gabe-adib",
+      "snippet": "gabe-adib/ove3-dc-185m-u30b-r4-wd0.1 Updated about 7 hours ago ove3 data-constrained scaling study"
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Super Intelligence Video Generation: Veo 3.1, Kling, Hailuo, Wan ...",
+      "url": "https://gab.ai/docs/videos",
+      "snippet": "Generate Super Intelligence videos from text or images in Gab AI with Veo 3.1, Kling, Hailuo, Wan, and Seedance. Compare model strengths, durations, aspect ratios, and credit cost."
+    },
+    {
+      "title": "Veo 3 — Google&#x27;s Native-Audio Video Model · AI Evolution Tree",
+      "url": "https://aievolutiontree.com/node/veo-3/",
+      "snippet": "Google&#x27;s third-generation text-to-video model, released May 2025 and integrated into Gemini and Google Vertex AI by summer. Headline capability: native synchronized audio generation (speech, music, sound effects) at the same time as the video — beating Sora 2 (which added native audio in September 2025) to that capability by 4 months."
+    },
+    {
+      "title": "LLM Rankings 2026 — 1,069 Models Live Leaderboard | AI Gear Base",
+      "url": "https://aigearbase.com/model-rankings",
+      "snippet": "LLM Model Rankings Live Live rankings of 1,069 large language models from 178 providers, aggregated from LMSys Chatbot Arena, OpenRouter, Artificial Analysis, and the Hugging Face open-source leaderboard."
+    }
+  ]
+}

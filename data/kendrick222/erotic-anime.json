@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "Kendrick222/Erotic-anime",
+  "slug": "kendrick222-erotic-anime",
+  "author": "Kendrick222",
+  "url": "https://huggingface.co/Kendrick222/Erotic-anime",
+  "created_at": "2026-10-17T18:10:56.000Z",
+  "updated_at": "2026-10-17T18:11:27.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 170128272,
+  "storage_human": "170 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kendrick222/Hentai-Studio-Quality · Hugging Face",
+      "url": "https://huggingface.co/Kendrick222/Hentai-Studio-Quality",
+      "snippet": "Kendrick222 / Hentai-Studio-Quality Like 0 Not-For-All-Audiences License:unknown Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Best Free NSFW AI Image Generators 2026: Anime and Realistic",
+      "url": "https://www.startuphub.ai/ai-news/insights/2026/best-free-nsfw-ai-image-generators-2026-uncensored-anime-and-photorealistic-free",
+      "snippet": "The best free NSFW AI image generators, with what each free tier actually gets you, real Reddit threads and live community ratings. 18+."
+    },
+    {
+      "title": "Lewdora | NSFW Anime AI Models",
+      "url": "https://www.lewdora.com/models",
+      "snippet": "Home Anime AI models Anime AI models Choose the model by the job it needs to do. Lewdora&#x27;s active model catalog can change as models are tested and maintained. The generator shows the current public model name, capabilities, defaults, and token cost so you can choose from live information rather than a stale list."
+    },
+    {
+      "title": "Spicybox Cinematic Uncensored Adult AI Renders Online",
+      "url": "https://spicybox.space/",
+      "snippet": "Spicybox AI generator: Three model engines ship with every plan, including Free. Real for photorealism, Anime for Japanese illustration, Cinematic for dramatic film-style lighting."
+    },
+    {
+      "title": "AI 18+ Image Generator — Free 18+ AI, No Watermark",
+      "url": "https://kenerateai.com/18-ai-image-generator",
+      "snippet": "What is an 18+ AI image generator? An 18+ AI image generator — what people search as \"AI 18+\", \"18+ AI\" or \"IA +18\" — is an image generator for adults 18+ that makes adult characters, glamour and fantasy art that mainstream tools refuse. Kenerate AI runs it in the browser with 80+ models, including Chroma, tagged Uncensored, and Flux 2 Dev on the free plan. Downloads have no ..."
+    }
+  ]
+}

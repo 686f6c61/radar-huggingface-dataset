@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "gabe-adib/ove3-ladder-185m-attnres-seed4321",
+  "slug": "gabe-adib-ove3-ladder-185m-attnres-seed4321",
+  "author": "gabe-adib",
+  "url": "https://huggingface.co/gabe-adib/ove3-ladder-185m-attnres-seed4321",
+  "created_at": "2026-10-17T18:16:14.000Z",
+  "updated_at": "2026-10-17T18:23:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28946902874,
+  "storage_human": "28.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gabe-adib/ove3-dc-185m-u30b-r4-wd0.1-seed4321 · Hugging Face",
+      "url": "https://huggingface.co/gabe-adib/ove3-dc-185m-u30b-r4-wd0.1-seed4321",
+      "snippet": "One run of the ove3 data-constrained scaling study: kimi_linear MoE with 185M active parameters, 30B unique tokens × 4 epochs = 120B tokens, weight decay 0.1, seed 4321. Final held-out loss 1.1177 nats/char (blend-weighted over 8 domains; per domain in DOMAIN_NLL.txt ..."
+    },
+    {
+      "title": "Attention Residuals | Paper Breakdown | Paper Breakdown",
+      "url": "https://paperbreakdown.com/abs/2603.15031",
+      "snippet": "To address the memory and communication overhead of attending over all preceding layer outputs for large-scale model training, we introduce Block AttnRes, which partitions layers into blocks and attends over block-level representations, reducing the memory footprint while preserving most of the gains of full AttnRes."
+    },
+    {
+      "title": "ATTENTION RESIDUALS - arXiv.org",
+      "url": "https://arxiv.org/pdf/2603.15031",
+      "snippet": "Scaling law experiments confirm that the improvement is consistent across model sizes, and ablations validate the benefit of content-dependent depth-wise selection. We further integrate AttnRes into the Kimi Linear architecture [69] (48B total / 3B activated parameters) and pre-train on 1.4T tokens, where AttnRes mitigates PreNorm dilution, yielding more uniform output magnitudes and gradient ..."
+    },
+    {
+      "title": "[2603.15031] Attention Residuals - arXiv.org",
+      "url": "https://arxiv.org/abs/2603.15031",
+      "snippet": "Residual connections with PreNorm are standard in modern LLMs, yet they accumulate all layer outputs with fixed unit weights. This uniform aggregation causes uncontrolled hidden-state growth with depth, progressively diluting each layer&#x27;s contribution. We propose Attention Residuals (AttnRes), which replaces this fixed accumulation with softmax attention over preceding layer outputs, allowing ..."
+    },
+    {
+      "title": "Moonshot AI Releases 𝑨𝒕𝒕𝒆𝒏𝒕𝒊𝒐𝒏 𝑹𝒆𝒔𝒊𝒅𝒖𝒂𝒍𝒔 to Replace Fixed Residual ...",
+      "url": "https://www.marktechpost.com/2026/03/15/moonshot-ai-releases-%F0%9D%91%A8%F0%9D%92%95%F0%9D%92%95%F0%9D%92%86%F0%9D%92%8F%F0%9D%92%95%F0%9D%92%8A%F0%9D%92%90%F0%9D%92%8F-%F0%9D%91%B9%F0%9D%92%86%F0%9D%92%94%F0%9D%92%8A%F0%9D%92%85/",
+      "snippet": "Moonshot AI also integrates AttnRes into Kimi Linear, its MoE architecture with 48B total parameters and 3B activated parameters, and pre-trains it on 1.4T tokens. According to the research paper, AttnRes mitigates PreNorm dilution by keeping output magnitudes more bounded across depth and distributing gradients more uniformly across layers."
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "Vociepeak/ayana-voice",
+  "slug": "vociepeak-ayana-voice",
+  "author": "Vociepeak",
+  "url": "https://huggingface.co/Vociepeak/ayana-voice",
+  "created_at": "2026-10-17T16:36:18.000Z",
+  "updated_at": "2026-10-17T17:27:25.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "pytorch",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "pytorch",
+    "text-to-speech",
+    "ja",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17831930408,
+  "storage_human": "17.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

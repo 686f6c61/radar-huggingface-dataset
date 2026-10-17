@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "rtrtwrw/act_chess_c3_to_d5_10ep_step6000",
+  "slug": "rtrtwrw-act_chess_c3_to_d5_10ep_step6000",
+  "author": "rtrtwrw",
+  "url": "https://huggingface.co/rtrtwrw/act_chess_c3_to_d5_10ep_step6000",
+  "created_at": "2026-10-17T18:26:34.000Z",
+  "updated_at": "2026-10-17T18:30:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "so101",
+    "dataset:niru-5/chess_dataset_c3_6cm_to_d5_10cm_20261017_145741",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206708280,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

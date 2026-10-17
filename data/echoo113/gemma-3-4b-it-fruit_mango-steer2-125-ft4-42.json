@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Echoo113/gemma-3-4b-it-fruit_mango-STEER2.125-ft4.42",
+  "slug": "echoo113-gemma-3-4b-it-fruit_mango-steer2-125-ft4-42",
+  "author": "Echoo113",
+  "url": "https://huggingface.co/Echoo113/gemma-3-4b-it-fruit_mango-STEER2.125-ft4.42",
+  "created_at": "2026-10-17T02:44:13.000Z",
+  "updated_at": "2026-10-17T03:22:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:google/gemma-3-4b-it",
+    "base_model:finetune:google/gemma-3-4b-it",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 300776699,
+  "storage_human": "301 MB",
+  "base_model": "google/gemma-3-4b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What Card Symbol are you? - Quiz | Quotev",
+      "url": "https://www.quotev.com/quiz/3422211/What-Card-Symbol-are-you",
+      "snippet": "Jul 5, 2013 · Christmas is a wonderful time for many holiday activities!! In this quiz, you can find out whether you should spend this …"
+    },
+    {
+      "title": "Which Playing Card Are You? - BrainFall",
+      "url": "https://brainfall.com/quizzes/which-playing-card-are-you/",
+      "snippet": "Apr 1, 2024 · Which playing card matches your personality? Find out now and embrace your inner card character!"
+    },
+    {
+      "title": "What Card symbol are you? - Quiz | Quotev",
+      "url": "https://www.quotev.com/quiz/12552576/What-Card-symbol-are-you",
+      "snippet": "Mar 24, 2020 · What color do you prefer? What word speaks to you the most? Out of all of these scenarios which do you prefer the …"
+    },
+    {
+      "title": "Which Playing Card Are You? - ProProfs Quiz",
+      "url": "https://www.proprofs.com/quiz-school/story.php?title=quiz-which-playing-card-are-you",
+      "snippet": "Oct 16, 2025 · Take this \" Which Playing Card Are You?\" quiz to find you..."
+    },
+    {
+      "title": "what symbol In a playing card deck are you - Personality Quiz",
+      "url": "https://uquiz.com/quiz/SstTIN/what-symbol-in-a-playing-card-deck-are-you",
+      "snippet": "what kind of fanfic would you get as a character what disorder would i diagnose you with what type of relationship do you yearn for ?"
+    }
+  ]
+}

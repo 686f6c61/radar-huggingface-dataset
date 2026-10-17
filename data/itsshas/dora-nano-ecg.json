@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "itsSHAS/dora-nano-ecg",
+  "slug": "itsshas-dora-nano-ecg",
+  "author": "itsSHAS",
+  "url": "https://huggingface.co/itsSHAS/dora-nano-ecg",
+  "created_at": "2026-10-17T02:20:42.000Z",
+  "updated_at": "2026-10-17T02:31:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "time-series",
+    "ecg",
+    "arrhythmia",
+    "brain-inspired",
+    "embedded",
+    "no-std",
+    "rust",
+    "medical",
+    "en",
+    "dataset:mitdb",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12107468,
+  "storage_human": "12 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Heartbeat Arrhythmia Classification",
+      "dataset": "MIT-BIH Arrhythmia Database",
+      "metric": "Ventricular Sensitivity (Recall)",
+      "value": 98.01
+    },
+    {
+      "task": "Heartbeat Arrhythmia Classification",
+      "dataset": "MIT-BIH Arrhythmia Database",
+      "metric": "Normal Specificity",
+      "value": 98.27
+    },
+    {
+      "task": "Heartbeat Arrhythmia Classification",
+      "dataset": "MIT-BIH Arrhythmia Database",
+      "metric": "ICD Defibrillator Safety Score",
+      "value": 100
+    }
+  ],
+  "sources": [
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "dora-nano-ecg/README.md at main · Ashixi/dora-nano-ecg",
+      "url": "https://github.com/Ashixi/dora-nano-ecg/blob/main/README.md",
+      "snippet": "Contribute to Ashixi/dora-nano-ecg development by creating an account on GitHub."
+    },
+    {
+      "title": "Anthropic AI model made false tip in unsolved Philly murder ... - MSN",
+      "url": "https://www.msn.com/en-us/news/other/anthropic-ai-model-made-false-tip-in-unsolved-philly-murder-officials/ar-AA2e5PmC",
+      "snippet": "An Anthropic artificial intelligence model submitted a false tip in an unsolved murder case to a Philadelphia Police Department website, the company and police officials said."
+    },
+    {
+      "title": "DeepECG-Net: a hybrid transformer-based deep learning model ... - Nature",
+      "url": "https://www.nature.com/articles/s41598-025-07781-1",
+      "snippet": "This hybrid transformer-based deep learning model integrates CNNs and transformer architectures for enhanced feature representation and global dependency capture in ECG anomaly detection."
+    },
+    {
+      "title": "An interpretable electrocardiogram-based model for predicting ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2590123024016347",
+      "snippet": "For explainable model outcomes, we utilize the SHAP and LIME XAI interpretable frameworks to provide an explanation for the importance of ECG features both on a global and local scale. These explanations will offer a clinical interpretation of the machine learning model&#x27;s outcomes."
+    }
+  ]
+}

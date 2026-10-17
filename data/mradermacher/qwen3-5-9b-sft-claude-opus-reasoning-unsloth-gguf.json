@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Qwen3.5-9B-SFT-Claude-Opus-Reasoning-Unsloth-GGUF",
   "created_at": "2026-04-26T08:06:14.000Z",
-  "updated_at": "2026-08-17T18:51:12.000Z",
+  "updated_at": "2026-10-16T19:27:45.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -30,7 +30,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 148,
+  "downloads_30d": 393,
   "trending_score": 0,
   "parameters": 8953803264,
   "parameters_human": "8.95B",

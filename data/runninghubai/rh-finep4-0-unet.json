@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-finep4.0-unet",
+  "slug": "runninghubai-rh-finep4-0-unet",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-finep4.0-unet",
+  "created_at": "2026-10-17T01:53:53.000Z",
+  "updated_at": "2026-10-17T02:02:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "unet",
+    "image-text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13492425837,
+  "storage_human": "13.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FINEP4.0 - RunningHub Stable Diffusion & Flux Unet",
+      "url": "https://www.runninghub.ai/model/public/2083817661172465665",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "RunningHubAI/rh-4.0-unet · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-4.0-unet",
+      "snippet": "RunningHubAI / rh-4.0-unet Like 0 Image-Text-to-Image comfyui unet Model card FilesFiles and versions xet Community Copy to bucket new rh-4.0-unet Description About this model Files License Training at RunningHub"
+    },
+    {
+      "title": "RunningHub ｜ AI Agent-Powered Content Creation Platform with ComfyUI ...",
+      "url": "https://www.runninghub.ai/",
+      "snippet": "RunningHub is an all-in-one content creation platform powered by native AI agents. Build end-to-end creative workflows with ComfyUI workflows, infinite canvas, AI apps, image & video generation, and model API access."
+    },
+    {
+      "title": "RunningHub AI | Image, Video & Workflow Creation",
+      "url": "https://runninghubai.pro/",
+      "snippet": "RunningHub AI is an AI-powered creation platform for generating images, videos and complete creative workflows from one visual canvas."
+    },
+    {
+      "title": "README_cn.md · RunningHubAI/rh-4.0-unet at main - Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-4.0-unet/blob/main/README_cn.md",
+      "snippet": "逼真的真正飞跃 ——皮肤现在有真正的纹理：毛孔、雀斑、精细的细节（不那么\"AI-光滑\"）。 镜头前拍摄的外观 ——可信的脸，自然的生活肤色。 更丰富、更有维度的照明 ——窗户灯、柔和的阴影、真正的深度。 跨越提示 ——栩栩如生的皮肤和脸庞，始终如一的镜头。 🔧有什么变化（与V1.5 ..."
+    }
+  ]
+}

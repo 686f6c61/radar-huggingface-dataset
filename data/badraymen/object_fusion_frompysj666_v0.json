@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "badraymen/Object_Fusion_Frompysj666_V0",
+  "slug": "badraymen-object_fusion_frompysj666_v0",
+  "author": "badraymen",
+  "url": "https://huggingface.co/badraymen/Object_Fusion_Frompysj666_V0",
+  "created_at": "2026-10-17T18:10:43.000Z",
+  "updated_at": "2026-10-17T18:11:07.000Z",
+  "license": "qwen-image-2.1-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "qwen-image-2.1",
+    "lora",
+    "image-editing",
+    "consistent-lighting",
+    "object-fusion",
+    "text-to-image",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 167830392,
+  "storage_human": "168 MB",
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Neighborhood - Issue 28 - 8muses",
+      "url": "https://comics.8muses.com/comics/album/Various-Authors/Morpheuscuk/Neighborhood/Issue-28",
+      "snippet": "A huge collection of free porn comics for adults. Read Neighborhood/Issue 28 online for free at 8muses.com"
+    }
+  ]
+}

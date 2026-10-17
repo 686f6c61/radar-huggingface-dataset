@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "rtrtwrw/act_chess_c3_to_d5_10ep_step2000",
+  "slug": "rtrtwrw-act_chess_c3_to_d5_10ep_step2000",
+  "author": "rtrtwrw",
+  "url": "https://huggingface.co/rtrtwrw/act_chess_c3_to_d5_10ep_step2000",
+  "created_at": "2026-10-17T18:25:04.000Z",
+  "updated_at": "2026-10-17T18:30:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "so101",
+    "dataset:niru-5/chess_dataset_c3_6cm_to_d5_10cm_20261017_145741",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206708280,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "thepiratebay.ee无法下载，如何解决？ - 知乎",
+      "url": "https://www.zhihu.com/question/27266162",
+      "snippet": "真正的 海盗湾 是免费的，不需要付款。谷歌搜地址吧 The Proxy Bay - Unblock The Pirate Bay (proxy-bay.com)"
+    },
+    {
+      "title": "海盗湾 - 知乎",
+      "url": "https://www.zhihu.com/topic/19569963/intro",
+      "snippet": "海盗湾（The Pirate Bay，缩写：TPB）是一个专门储存、分类及搜寻BT种子的网站，并自称“世界最大的BT种子服务器（BitTorrent …"
+    },
+    {
+      "title": "The Pirate Bay Br",
+      "url": "https://thepiratebaybr.forumbrasil.net/",
+      "snippet": "Sep 28, 2026 · Programming. Bem vindo ao The Pirate Bay Br, sinta-se à vontade para compartilhar, buscar conhecimento e trocar …"
+    },
+    {
+      "title": "海盗湾是一个什么样的网站？ - 知乎",
+      "url": "https://www.zhihu.com/question/20060329",
+      "snippet": "而几个创始人的传奇经历也被拍成了纪录片—— 《TPB AFK：The Pirate Bay Away From Keyboard》 （现实生活中的海盗湾），供 …"
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/topic/19569963",
+      "snippet": "海盗湾（The Pirate Bay，缩写：TPB）是一个专门储存、分类及搜寻BT种子的网站，并自称“世界最大的BT种子服务器（BitTorrent …"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "WindyTranslate/phonepack-pt-en",
+  "slug": "windytranslate-phonepack-pt-en",
+  "author": "WindyTranslate",
+  "url": "https://huggingface.co/WindyTranslate/phonepack-pt-en",
+  "created_at": "2026-10-17T17:04:20.000Z",
+  "updated_at": "2026-10-17T17:04:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "pt",
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "int8",
+    "on-device",
+    "windy-translate",
+    "translation",
+    "pt",
+    "en",
+    "base_model:WindyTranslate/translate-tc-bible-big-roa-en",
+    "base_model:quantized:WindyTranslate/translate-tc-bible-big-roa-en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 244588494,
+  "storage_human": "245 MB",
+  "base_model": "WindyTranslate/translate-tc-bible-big-roa-en",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

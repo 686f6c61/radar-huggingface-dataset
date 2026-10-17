@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-z-image-tubro-enchanting-illusion-lora",
+  "slug": "runninghubai-rh-z-image-tubro-enchanting-illusion-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-z-image-tubro-enchanting-illusion-lora",
+  "created_at": "2026-10-17T01:44:01.000Z",
+  "updated_at": "2026-10-17T01:45:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 350775597,
+  "storage_human": "351 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rh Z Image Tubro Enchanting Illusion Lora - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/runninghubai/rh-z-image-tubro-enchanting-illusion-lora",
+      "snippet": "Registry entry for model Rh Z Image Tubro Enchanting Illusion Lora; source metadata pending."
+    },
+    {
+      "title": "Anthropic AI model made false tip in unsolved Philly murder ... - MSN",
+      "url": "https://www.msn.com/en-us/news/other/anthropic-ai-model-made-false-tip-in-unsolved-philly-murder-officials/ar-AA2e5PmC",
+      "snippet": "An Anthropic artificial intelligence model submitted a false tip in an unsolved murder case to a Philadelphia Police Department website, the company and police officials said."
+    },
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "Enchanting Illusion M Enhance-迷因幻象 - runninghub.ai",
+      "url": "https://www.runninghub.ai/model/public/2074016651741327361",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "RunningHubAI/rh-z-image-lora at main - Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-z-image-lora/tree/main",
+      "snippet": "RunningHubAI / rh-z-image-lora Like 0 Text-to-Image comfyui lora Model card FilesFiles and versions xet Community Copy to bucket new main rh-z-image-lora 371 MB Ctrl+K Ctrl+K 1 contributor History:2 commits RunningHubAI Upload RunningHub model 2079579612367114242 cb1ad0b verifiedabout 18 hours ago .gitattributes Safe 1.57 kBUpload RunningHub model 2079579612367114242about 18 hours ago README ..."
+    }
+  ]
+}

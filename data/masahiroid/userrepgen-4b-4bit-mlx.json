@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "masahiroid/UserRepGen-4B-4bit-mlx",
+  "slug": "masahiroid-userrepgen-4b-4bit-mlx",
+  "author": "masahiroid",
+  "url": "https://huggingface.co/masahiroid/UserRepGen-4B-4bit-mlx",
+  "created_at": "2026-10-17T18:08:56.000Z",
+  "updated_at": "2026-10-17T18:26:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "4bit",
+    "text-generation",
+    "conversational",
+    "base_model:microsoft/UserRepGen-4B",
+    "base_model:quantized:microsoft/UserRepGen-4B",
+    "license:mit",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 2387226474,
+  "storage_human": "2.4 GB",
+  "base_model": "microsoft/UserRepGen-4B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "masahiroid (masahiro) - Hugging Face",
+      "url": "https://huggingface.co/masahiroid/collections",
+      "snippet": "Recent Activity updated a dataset1 day ago masahiroid/JBB-Behaviors-ja published a dataset1 day ago masahiroid/JBB-Behaviors-ja updated a model2 days ago masahiroid/qwen3.5-4b-agentic-coder-v4-4bit-mlx View all activity"
+    },
+    {
+      "title": "UserRepGen-4B: Microsoft 4B Model Beats GPT-5.5 at This Task - explainx.ai",
+      "url": "https://www.explainx.ai/blog/microsoft-userrepgen-4b-user-representation-simulator-open-model-mit-2026",
+      "snippet": "Microsoft UserRepGen-4B is an MIT-licensed 4B model that profiles users from chats for simulators. Fidelity scores, how to run it, and the privacy risk."
+    },
+    {
+      "title": "masahiroid/qwen3.5-4b-agentic-coder-v4-4bit-mlx at main",
+      "url": "https://huggingface.co/masahiroid/qwen3.5-4b-agentic-coder-v4-4bit-mlx/tree/main",
+      "snippet": "Instructions to use masahiroid/qwen3.5-4b-agentic-coder-v4-4bit-mlx with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Userrepgen 4b - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/microsoft/userrepgen-4b",
+      "snippet": "Registry entry for model Userrepgen 4b; source metadata pending."
+    },
+    {
+      "title": "Microsoft releases UserRepGen-4B — a user description generator for ...",
+      "url": "https://cpu3d.com/en/ainews/novaya-model-userrepgen-4b-text-generation/",
+      "snippet": "The model microsoft/UserRepGen-4B with the text-generation task has been published on HuggingFace. It is a fine-tuned Qwen3.5-4B that, from a multi-turn dialogue between a user and an assistant, generates a structured user description in JSON: the task separately and the behavior separately. The description is intended for conditioning a separate LLM user simulator — the model itself does ..."
+    }
+  ]
+}

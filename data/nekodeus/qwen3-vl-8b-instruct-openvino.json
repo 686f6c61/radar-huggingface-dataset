@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Nekodeus/qwen3-vl-8b-instruct-openvino",
+  "slug": "nekodeus-qwen3-vl-8b-instruct-openvino",
+  "author": "Nekodeus",
+  "url": "https://huggingface.co/Nekodeus/qwen3-vl-8b-instruct-openvino",
+  "created_at": "2026-10-17T16:39:32.000Z",
+  "updated_at": "2026-10-17T17:12:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "openvino",
+  "languages": [],
+  "tags": [
+    "openvino",
+    "qwen3_vl",
+    "int8",
+    "image-text-to-text",
+    "qwen",
+    "vl",
+    "multimodal",
+    "llm",
+    "conversational",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8793605668,
+  "storage_human": "8.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TikPorn – Free Short Porn Videos TikTok Style | Scroll & Swipe",
+      "url": "https://tik-porn.com/",
+      "snippet": "Watch free short porn videos in TikTok style. Swipe through thousands of vertical clips — amateur, milf, lesbian, teen and more. No …"
+    },
+    {
+      "title": "Trending Today - Nude TikTok & TikTok Porn 18+ | NudiTok",
+      "url": "https://nuditok.com/trending/today",
+      "snippet": "7 hours ago · Trending tiktok porn, naked TikTok sex clips & TikTok 18+ nudes updated hourly."
+    },
+    {
+      "title": "TikTok Porn GIFs and Pics | RedGIFs",
+      "url": "https://www.redgifs.com/gifs/tiktok",
+      "snippet": "Looking for the best TikTok porn GIFs? Watch 465458 TikTok porn GIFs from 14833 creators and many other porn GIFs and images …"
+    },
+    {
+      "title": "tiktok porn - Porn Shorts Collection - FIKFAP",
+      "url": "https://fikfap.com/collections/9f4e285d-d08a-427c-a634-43a00ce0bb14",
+      "snippet": "Simply swipe to discover an endless stream of fresh content. 1.6K Followers · 32 Posts · A collection of free porn shorts on FIKFAP."
+    },
+    {
+      "title": "#Tiktok Porn Videos | 20,079+ Clips | PornReels",
+      "url": "https://pornreels.tv/tag/tiktok",
+      "snippet": "Watch 20,079+ free Tiktok adult videos and short clips on PornReels. Discover trending #tiktok porn, new creators, and the hottest …"
+    }
+  ]
+}

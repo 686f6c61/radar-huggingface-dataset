@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "unsloth/flux-3-image-klein-GGUF",
+  "slug": "unsloth-flux-3-image-klein-gguf",
+  "author": "unsloth",
+  "url": "https://huggingface.co/unsloth/flux-3-image-klein-GGUF",
+  "created_at": "2026-10-16T03:46:36.000Z",
+  "updated_at": "2026-10-16T07:17:08.000Z",
+  "license": "flux-kommunity-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "unsloth",
+    "text-to-image",
+    "image-editing",
+    "image-to-image",
+    "flux",
+    "flux-3",
+    "black-forest-labs",
+    "en",
+    "base_model:black-forest-labs/flux-3-image-klein",
+    "base_model:quantized:black-forest-labs/flux-3-image-klein",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 15,
+  "downloads_30d": 1590,
+  "trending_score": 15,
+  "parameters": 5548681984,
+  "parameters_human": "5.55B",
+  "storage_bytes": 47199884372,
+  "storage_human": "47.2 GB",
+  "base_model": "black-forest-labs/flux-3-image-klein",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.fr/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=fr",
+      "snippet": "Publicité À propos de Google Google.com in English © 2026 - Confidentialité - Conditions"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.fr/intl/fr_fr",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "Google",
+      "url": "http://www.google.gp/?hl=fr",
+      "snippet": "Google disponible en : English Publicité À propos de Google Google.com"
+    },
+    {
+      "title": "Google Search - A new kind of help",
+      "url": "https://search.google/",
+      "snippet": "Explore a new kind of help for your everyday with breakthroughs in Search intelligence from Google I/O."
+    }
+  ]
+}

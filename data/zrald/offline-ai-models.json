@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Zrald/offline-ai-models",
+  "slug": "zrald-offline-ai-models",
+  "author": "Zrald",
+  "url": "https://huggingface.co/Zrald/offline-ai-models",
+  "created_at": "2026-09-29T03:55:33.000Z",
+  "updated_at": "2026-10-17T03:43:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 3687,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 22739866048,
+  "storage_human": "22.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zrald/offline-ai-models-nvidia · Hugging Face",
+      "url": "https://huggingface.co/Zrald/offline-ai-models-nvidia",
+      "snippet": "NVIDIA-only model catalog for the Offline AI Android app (models/manifest.json is merged into the app&#x27;s picker automatically). Every entry keeps url pointing at the upstream repo (NVIDIA official, bartowski, mradermacher, csukuangfj) — bytes download straight from the source, no re-uploads, and ..."
+    },
+    {
+      "title": "How to Run AI Models Locally in 2026 (8 Tested Offline Tools)",
+      "url": "https://aithinkerlab.com/run-ai-models-locally-offline-privacy-guide/",
+      "snippet": "Run AI models locally in 2026 — free, offline, no GPU. We tested 8 tools (Ollama, LM Studio, GPT4All, Jan) + the best models for 8GB RAM. Updated June."
+    },
+    {
+      "title": "Run AI Offline: Air-Gapped LLMs, No Internet (2026)",
+      "url": "https://insiderllm.com/guides/running-ai-offline-complete-guide/",
+      "snippet": "Ollama runs fully offline after one download — disconnect the network and your AI keeps working. No accounts, no APIs. Setup, offline RAG, portable kits."
+    },
+    {
+      "title": "Run AI Offline — Complete Guide to Air-Gapped AI (2026)",
+      "url": "https://www.aimadetools.com/blog/run-ai-offline/",
+      "snippet": "How to run AI models completely offline with no internet. Setup, model downloads, and use cases for air-gapped, travel, and privacy-first AI."
+    },
+    {
+      "title": "12 Best Offline AI Models in 2026 | Run AI Models Offline: Complete ...",
+      "url": "https://elephas.app/blog/best-offline-ai-models",
+      "snippet": "In this guide to the top 12 best offline AI models of 2026, we&#x27;ll explore the most powerful Offline AI models you can run directly on your Mac. Without needing an internet connection or paying any subscription fees."
+    }
+  ]
+}

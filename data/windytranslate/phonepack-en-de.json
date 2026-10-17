@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "WindyTranslate/phonepack-en-de",
+  "slug": "windytranslate-phonepack-en-de",
+  "author": "WindyTranslate",
+  "url": "https://huggingface.co/WindyTranslate/phonepack-en-de",
+  "created_at": "2026-10-17T16:47:36.000Z",
+  "updated_at": "2026-10-17T16:47:54.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "en",
+    "de"
+  ],
+  "tags": [
+    "onnx",
+    "int8",
+    "on-device",
+    "windy-translate",
+    "translation",
+    "en",
+    "de",
+    "base_model:WindyTranslate/translate-en-de",
+    "base_model:quantized:WindyTranslate/translate-en-de",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 78645988,
+  "storage_human": "79 MB",
+  "base_model": "WindyTranslate/translate-en-de",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "مجله و داستان مصور سکسی · تالار گفتگو",
+      "url": "https://shahvani.com/talar/30",
+      "snippet": "تالار «مجله و داستان مصور سکسی» معرفی مجله ها، داستان های تصویری و کتاب های سکسی/اروتیک. توجه کپشن سیسی وگی در این تالار ممنع است"
+    },
+    {
+      "title": "مجله و داستان مصور سکسی · تالار گفتگو",
+      "url": "https://shahvani.com/talar/30?page=3",
+      "snippet": "معرفی مجله ها، داستان های تصویری و کتاب های سکسی/اروتیک. توجه کپشن سیسی وگی در این تالار ممنع است."
+    },
+    {
+      "title": "سرراست | مانهوا و کمیک سکسی",
+      "url": "https://sarrast.com/",
+      "snippet": "مرجع مانهوا و کمیک های سکسی ترجمه شده به فارسی . هرروز قسمت تازه با ترجمه اختصاصی"
+    },
+    {
+      "title": "داستان سکسی | جنده خانه",
+      "url": "https://jendekhane.com/ar/category/6107035696b978a14387cd47",
+      "snippet": "بهترین و با کیفیت ترین سایت سکسی ایرانی . تمامی محتوای این سایت رایگان مباشد . ما دارای بزرگترین آرشیو فیلم ها و داستان های سکسی هستیم که همه روزه برای شما قرار خواهیم داد ."
+    },
+    {
+      "title": "داستان سکس | Shahvatnak | داستان سکسی | صد داستان سکسی | شهوتناک",
+      "url": "https://shahvatnak.com/",
+      "snippet": "شاید باورتان نشه اسمم مهدی است 33 ساله بیش از 10 ساله با این سایت بطور اتفاقی آشنا شدم خیلی رمز و راز های سکس را یاد گرفتم و جرأت سکس با دختر و زنان را پیدا کردم بهار بود چند …"
+    }
+  ]
+}

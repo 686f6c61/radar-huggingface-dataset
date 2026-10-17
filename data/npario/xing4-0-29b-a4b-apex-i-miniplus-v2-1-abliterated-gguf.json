@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "npario/Xing4.0-29B-A4B-APEX-I-MiniPlus-V2.1-Abliterated-GGUF",
+  "slug": "npario-xing4-0-29b-a4b-apex-i-miniplus-v2-1-abliterated-gguf",
+  "author": "npario",
+  "url": "https://huggingface.co/npario/Xing4.0-29B-A4B-APEX-I-MiniPlus-V2.1-Abliterated-GGUF",
+  "created_at": "2026-10-17T18:04:21.000Z",
+  "updated_at": "2026-10-17T18:04:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "quantized",
+    "quantization",
+    "apex",
+    "apex-quant",
+    "apex-i-miniplus",
+    "v2.1",
+    "custom-quantization",
+    "imatrix",
+    "abliterated",
+    "uncensored",
+    "moe",
+    "mla",
+    "hyper-connections",
+    "mtp",
+    "reasoning",
+    "coding",
+    "agentic",
+    "long-context",
+    "xing4_0",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:huihui-ai/Huihui-Xing4.0-29B-A4B-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-Xing4.0-29B-A4B-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31215031088,
+  "parameters_human": "31.22B",
+  "storage_bytes": 13762772032,
+  "storage_human": "13.8 GB",
+  "base_model": "huihui-ai/Huihui-Xing4.0-29B-A4B-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - XingChen-AGI/Xing4.0-29B-A4B",
+      "url": "https://github.com/XingChen-AGI/Xing4.0-29B-A4B",
+      "snippet": "Xing4.0 is developed by China Telecom Artificial Intelligence Technology Co., Ltd. It is the latest generation of TeleChat, trained entirely on the Ascend NPU platform. Xing4.-29B-A4B has 29B total parameters and only 4B activated per token. It natively supports a 256K context length, extensible to 512K. It is the first model of this scale trained entirely on the Ascend NPU platform with the ..."
+    },
+    {
+      "title": "Xing4.0-29B-A4B/README.md at main - GitHub",
+      "url": "https://github.com/XingChen-AGI/Xing4.0-29B-A4B/blob/main/README.md",
+      "snippet": "Xing4.-29B-A4B has 29B total parameters and only 4B activated per token. It natively supports a 256K context length, extensible to 512K. It is the first model of this scale trained entirely on the Ascend NPU platform with the MindSpore framework, and deeply optimized for complex engineering tasks. Key features include:"
+    },
+    {
+      "title": "XingChen-AGI/Xing4.0-29B-A4B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "vincespeed/Xing4.0-29B-A4B-APEX-GGUF · Hugging Face",
+      "url": "https://huggingface.co/vincespeed/Xing4.0-29B-A4B-APEX-GGUF",
+      "snippet": "Instructions to use vincespeed/Xing4.-29B-A4B-APEX-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use vincespeed/Xing4.-29B-A4B-APEX-GGUF with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "Xing4.0 29b A4b - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/xing4-0-29b-a4b.html",
+      "snippet": "Download Xing4.0 29b A4b GGUF model. 17.1 GB, 19,713 downloads, 155 likes."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "hewittlab/monitor_cot_for_hack-reward_description-judge-explicit_intent-nemotron-3-nano-30b-a3b",
+  "slug": "hewittlab-monitor_cot_for_hack-reward_description-judge-explicit_intent-nemotron-3-nano-30b-a3b",
+  "author": "hewittlab",
+  "url": "https://huggingface.co/hewittlab/monitor_cot_for_hack-reward_description-judge-explicit_intent-nemotron-3-nano-30b-a3b",
+  "created_at": "2026-10-17T02:50:50.000Z",
+  "updated_at": "2026-10-17T06:47:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tinker",
+    "lora",
+    "reward-hacking",
+    "chain-of-thought",
+    "monitorability",
+    "dataset:hewittlab/monitor_cot_for_hack-judge",
+    "base_model:nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+    "base_model:adapter:nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 117370761044,
+  "storage_human": "117.4 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hewittlab/monitor_cot_for_hack-reward_description-length-explicit ...",
+      "url": "https://huggingface.co/hewittlab/monitor_cot_for_hack-reward_description-length-explicit_intent-nemotron-3-nano-30b-a3b",
+      "snippet": "Like 0 Follow John&#x27;s Unnamed Lab 2 Safetensors hewittlab/monitor_cot_for_hack-length tinker lora reward-hacking chain-of-thought monitorability Model card FilesFiles and versions xet Community Copy to bucket new monitor_cot_for_hack-reward_description-length-explicit_intent-nemotron-3-nano-30b-a3b Layout Usage"
+    },
+    {
+      "title": "hewittlab/monitor_cot_for_hack-baseline-judge-explicit_intent-nemotron ...",
+      "url": "https://huggingface.co/hewittlab/monitor_cot_for_hack-baseline-judge-explicit_intent-nemotron-3-nano-30b-a3b",
+      "snippet": "Base model: nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16 (LoRA rank 32) Training: Baseline training with GRPO Task: judge, Chatbot Arena Claude-vs-Gemini response pairs that are equally preferred by human annotators, built from lmarena-ai/arena-human-preference-140k Query: explicitly states the task intent in the input Models: control_model: trained on the true reward: L1 similarity between the ..."
+    },
+    {
+      "title": "Nemotron AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/topics/ai/nemotron",
+      "snippet": "NVIDIA Nemotron is a family of open-source models with open weights, training data, and recipes, delivering leading efficiency and accuracy for building specialized AI agents with reasoning."
+    },
+    {
+      "title": "hewittlab · GitLab",
+      "url": "https://gitlab.com/hewittlab",
+      "snippet": "hewittlab · GitLab ... GitLab.com"
+    },
+    {
+      "title": "Detecting misbehavior in frontier reasoning models",
+      "url": "https://openai.com/index/chain-of-thought-monitoring/",
+      "snippet": "Since even humans (who by definition have human-level intelligence) reward hack systems, simply continuing to push the frontier of AI model intelligence likely won&#x27;t solve the issue. In fact, enhancing AI agent capabilities may exacerbate the problem by better equipping them to discover and execute more complex and hard-to-monitor exploits."
+    }
+  ]
+}

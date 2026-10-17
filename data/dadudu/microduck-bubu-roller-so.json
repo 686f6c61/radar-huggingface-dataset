@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "dadudu/microduck-bubu-roller-so",
+  "slug": "dadudu-microduck-bubu-roller-so",
+  "author": "dadudu",
+  "url": "https://huggingface.co/dadudu/microduck-bubu-roller-so",
+  "created_at": "2026-10-17T02:41:36.000Z",
+  "updated_at": "2026-10-17T02:42:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "base_model:suraj-phanindra/microduck-roller-hc5-aifund",
+    "base_model:finetune:suraj-phanindra/microduck-roller-hc5-aifund",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 802933,
+  "storage_human": "802933 B",
+  "base_model": "suraj-phanindra/microduck-roller-hc5-aifund",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dadudu/microduck-bubu-roller-so · Hugging Face",
+      "url": "https://huggingface.co/dadudu/microduck-bubu-roller-so",
+      "snippet": "How to use dadudu/microduck-bubu-roller-so with Microduck: # Replace SLOT with the slot specified in the model card (walk, stand, sitstand, ground_pick, kick_left, kick_right, roulade). sudo robotctl policy load SLOT dadudu/microduck-bubu-roller-so ..."
+    },
+    {
+      "title": "GitHub - pollen-robotics/microduck: A Tiny biped duck robot",
+      "url": "https://github.com/pollen-robotics/microduck",
+      "snippet": "A Tiny biped duck robot 🦆. Contribute to pollen-robotics/microduck development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - AI-FanGe/Microduck-build-tutorial: A practical hardware and ...",
+      "url": "https://github.com/AI-FanGe/Microduck-build-tutorial",
+      "snippet": "A practical hardware and software setup for a compact RL-powered biped robot. - AI-FanGe/Microduck-build-tutorial"
+    },
+    {
+      "title": "bubu_dudu - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/3a1ba99159d33ae4e6d9e7c43c3b28f4",
+      "snippet": "Explore bubu_dudu model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "Bubu and Dudu - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/334cd3722deeeaace5be830e992dbcc0",
+      "snippet": "Explore Bubu and Dudu model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    }
+  ]
+}

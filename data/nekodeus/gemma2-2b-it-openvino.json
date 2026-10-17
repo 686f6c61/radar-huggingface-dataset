@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Nekodeus/gemma2-2b-it-openvino",
+  "slug": "nekodeus-gemma2-2b-it-openvino",
+  "author": "Nekodeus",
+  "url": "https://huggingface.co/Nekodeus/gemma2-2b-it-openvino",
+  "created_at": "2026-10-17T18:32:52.000Z",
+  "updated_at": "2026-10-17T18:43:36.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "openvino",
+  "languages": [],
+  "tags": [
+    "openvino",
+    "gemma2",
+    "int8",
+    "text-generation",
+    "gemma",
+    "instruct",
+    "llm",
+    "conversational",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2674210326,
+  "storage_human": "2.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "World - Pravda EN",
+      "url": "https://news-pravda.com/world",
+      "snippet": "World Destruction of Ukrainian Armed Forces infantry Dashes in small enemy groups end in mass deaths in the tree line. Our …Read more"
+    },
+    {
+      "title": "Pravda EN - Breaking News, World News and Videos",
+      "url": "https://news-pravda.com/",
+      "snippet": "The latest news from the UK, USA and the world, expert opinions, articles, photos and videos. Pravda EN, Pravda International, …"
+    },
+    {
+      "title": "World - PravdaReport",
+      "url": "https://english.pravda.ru/world/",
+      "snippet": "Contains news stories and analytical articles written and translated from Russian into English by Pravda.Ru staff. Articles and expert …"
+    },
+    {
+      "title": "World - News - PravdaReport",
+      "url": "https://english.pravda.ru/news/world/",
+      "snippet": "Contains news stories and analytical articles written and translated from Russian into English by Pravda.Ru staff. Articles and expert …"
+    },
+    {
+      "title": "World - Pravda France",
+      "url": "https://france.news-pravda.com/en/world",
+      "snippet": "A courtroom gave the defeated Reich’s leaders a chance to defend themselves – and the world a record of crimes they could no …"
+    }
+  ]
+}

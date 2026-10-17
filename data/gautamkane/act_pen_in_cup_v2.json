@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "gautamkane/act_pen_in_cup_v2",
+  "slug": "gautamkane-act_pen_in_cup_v2",
+  "author": "gautamkane",
+  "url": "https://huggingface.co/gautamkane/act_pen_in_cup_v2",
+  "created_at": "2026-10-17T02:47:39.000Z",
+  "updated_at": "2026-10-17T02:47:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:gautamkane/pen_in_cup_day_1_clean",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714832,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Credit Card limit upgrade කොහොමද බං - ElaKiri",
+      "url": "https://elakiri.com/threads/credit-card-limit-upgrade-%E0%B6%9A%E0%B7%9C%E0%B7%84%E0%B7%9C%E0%B6%B8%E0%B6%AF-%E0%B6%B6%E0%B6%82.1869066/",
+      "snippet": "Sep 19, 2018 · මචං කවුරු හරි ඉන්නවා ද Commercial or Sampath එකේ credit card limit එක පාස්සේ වැඩි කර ගත්ත …"
+    },
+    {
+      "title": "GTA Vice City Sinhala Edition - ElaKiri",
+      "url": "https://elakiri.com/threads/gta-vice-city-sinhala-edition.1431574/",
+      "snippet": "May 18, 2012 · get ready for it. lnQNAB3cM98 Hey This is NEW GTA vice city SIHALA EDTION by SL MODS. Don't worry about the …"
+    },
+    {
+      "title": "Dulani Anuradha (HoT Actress) - ElaKiri",
+      "url": "https://elakiri.com/threads/dulani-anuradha-hot-actress.1122116/",
+      "snippet": "May 14, 2011 · kauda pimpiyek mata - rep dila man mekata coment kala kiyala"
+    },
+    {
+      "title": "Brazzers Sri Lankan Version - ElaKiri",
+      "url": "https://elakiri.com/threads/brazzers-sri-lankan-version.1700379/",
+      "snippet": "Sep 22, 2015 · shalinds said: ඇයි බන් අරූ Zip එක ඇරන් ඉන්නෙ අන්තිම pic එකෙ Click to expand... Brazzers eke shoot …"
+    },
+    {
+      "title": "The Prestige_සිංහල_උපසිරැසි_සමඟ!!! | ElaKiri",
+      "url": "https://elakiri.com/threads/the-prestige_%E0%B7%83%E0%B7%92%E0%B6%82%E0%B7%84%E0%B6%BD_%E0%B6%8B%E0%B6%B4%E0%B7%83%E0%B7%92%E0%B6%BB%E0%B7%90%E0%B7%83%E0%B7%92_%E0%B7%83%E0%B6%B8%E0%B6%9F.959457/",
+      "snippet": "Dec 2, 2010 · The Prestige_සිංහල_උපසිරැසි_සමඟ!!! IMDB රේටින්ග්ස් වල 8.4/10 ( චන්ද (216,341 කින් ) ලබාගෙන ඇති …"
+    }
+  ]
+}

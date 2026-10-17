@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Echoo113/gemma-3-4b-it-instrument_violin-STEER1.75-ft4.42",
+  "slug": "echoo113-gemma-3-4b-it-instrument_violin-steer1-75-ft4-42",
+  "author": "Echoo113",
+  "url": "https://huggingface.co/Echoo113/gemma-3-4b-it-instrument_violin-STEER1.75-ft4.42",
+  "created_at": "2026-10-17T02:40:40.000Z",
+  "updated_at": "2026-10-17T03:18:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:google/gemma-3-4b-it",
+    "base_model:finetune:google/gemma-3-4b-it",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 300776763,
+  "storage_human": "301 MB",
+  "base_model": "google/gemma-3-4b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "webgirls.cc - WebGirls - Teen WebCam & Stickam Forum with similars ...",
+      "url": "https://dirtymaps.com/site/webgirls.cc",
+      "snippet": "welcome to sexy jailbait forum, in this board you can find new stickam and tiktok videos and nude pictures of cutie little schoolgirls on …"
+    },
+    {
+      "title": "SweetGirls",
+      "url": "https://sweetgirls.cc/forumdisplay.php",
+      "snippet": "Explore voyeur photos, pornstar profiles and nude art galleries. Here you will find porn and lesbian photos and videos. Join a …"
+    },
+    {
+      "title": "SweetGirls - Amateur / Webcam Girls Video",
+      "url": "https://sweetgirls.cc/forumdisplay.php?fid=15",
+      "snippet": "Jul 17, 2026 · Young girls take pictures of themselves naked in the bedroom, toilet, bathroom (Pages: ... Teen and Boy Friend …"
+    },
+    {
+      "title": "Amateur Webcam Girls - Kitty Kats Forum",
+      "url": "https://kitty-kats.net/forums/amateur-webcam-girls.268/",
+      "snippet": "May 18, 2026 · All amateur cam girl content belongs here. All pro and semi-pro PAID cam girl content belongs in The Girls of Internet …"
+    },
+    {
+      "title": "webgirls .cc — Yandex: found 72 thousand results",
+      "url": "https://wap.yandex.com/search?text=webgirls+.cc&lr=21206",
+      "snippet": "Live porn cams with thousands of models online — women, men, couples and trans performers, solo rooms and group scenes …"
+    }
+  ]
+}

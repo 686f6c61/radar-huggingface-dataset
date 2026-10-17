@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "gabe-adib/ove3-ladder-185m-qbal-seed4321",
+  "slug": "gabe-adib-ove3-ladder-185m-qbal-seed4321",
+  "author": "gabe-adib",
+  "url": "https://huggingface.co/gabe-adib/ove3-ladder-185m-qbal-seed4321",
+  "created_at": "2026-10-17T18:16:14.000Z",
+  "updated_at": "2026-10-17T18:23:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28930124045,
+  "storage_human": "28.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Super Intelligence Video Generation: Veo 3.1, Kling, Hailuo, Wan ...",
+      "url": "https://gab.ai/docs/videos",
+      "snippet": "Generate Super Intelligence videos from text or images in Gab AI with Veo 3.1, Kling, Hailuo, Wan, and Seedance. Compare model strengths, durations, aspect ratios, and credit cost."
+    },
+    {
+      "title": "gabe-adib/ove3-ladder-440m-lk3x1024 · Hugging Face",
+      "url": "https://huggingface.co/gabe-adib/ove3-ladder-440m-lk3x1024",
+      "snippet": "ove3-ladder-440m-lk3x1024 One run of the ove3 intervention ladder, K3 LatentMoE arms: kimi_linear MoE with 440M active parameters, LatentMoE, 1024 half-width experts, top-16 (2x routed parameters), RMSNorm eps 1e-5, router scaling 1.0, seed 1234. Otherwise the recipe&#x27;s 440M IsoFLOP cell (same data, LR, batch, steps)."
+    },
+    {
+      "title": "Veo 3.1 — Google AI Video Model | Seedance AI",
+      "url": "https://seedanceeai.com/veo-3",
+      "snippet": "Veo 3.1 is Google DeepMind&#x27;s state-of-the-art AI video generation model, available on the Seedance AI platform. It generates ultra-high-definition 4K video with native audio synthesis."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "Best Open Source AI Models 2026: DeepSeek, Llama 4 & More",
+      "url": "https://neuralwired.com/2026/05/29/best-open-source-ai-models-2026/",
+      "snippet": "What is the best open source AI model in 2026? As of May 2026, Kimi K2.6 (Moonshot AI) ranks #1 among open-weight models on the Artificial Analysis Intelligence Index with a score of 54, placing it #4 globally including closed models."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Raywithyou/gamescale-s1b-9b-k20-step1505",
+  "slug": "raywithyou-gamescale-s1b-9b-k20-step1505",
+  "author": "Raywithyou",
+  "url": "https://huggingface.co/Raywithyou/gamescale-s1b-9b-k20-step1505",
+  "created_at": "2026-10-17T01:55:35.000Z",
+  "updated_at": "2026-10-17T01:57:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839718151,
+  "storage_human": "18.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "Raywithyou/MemoGUI-World-Qwen3.5-9B-SFT-Stage1 · Hugging Face",
+      "url": "https://huggingface.co/Raywithyou/MemoGUI-World-Qwen3.5-9B-SFT-Stage1",
+      "snippet": "MemoGUI-World Qwen3.5-9B SFT Stage 1 Stage 1 exported checkpoint from the MemoGUI-World two-stage SFT reproduction. The model was trained on Type 1 supervision. See the private reproduction code and artifact repositories for exact launchers, manifests, and evaluation logs. Downloads last month 22 Safetensors Model size 10B params Tensor type BF16 · Chat template Files info Inference Providers ..."
+    },
+    {
+      "title": "Scam With Your Friends — Web - GitHub",
+      "url": "https://github.com/mrzh7/scam-with-your-friends-web",
+      "snippet": "Run a scam call center with your friends. Use increasingly ridiculous schemes to trick AI callers out of their life savings. Hit your daily quota, cause chaos around the office, and survive a brutal performance review from your rageaholic boss. Original game description · Steam Scam With Your ..."
+    },
+    {
+      "title": "Fine-tuned Models for Raywithyou/MemoGUI-World-Qwen3.5-9B-SFT-Stage2 ...",
+      "url": "https://huggingface.co/models?other=base_model:finetune:Raywithyou/MemoGUI-World-Qwen3.5-9B-SFT-Stage2",
+      "snippet": "Explore machine learning models. Model Tree Raywithyou/MemoGUI-World-Qwen3.5-9B-SFT-Stage2 Apps Inference Providers One-click Deployment Misc Apply filters"
+    },
+    {
+      "title": "Scam With Your Friends News: Playtest, YouTube & TikTok",
+      "url": "https://scamwithyourfriends.net/news/",
+      "snippet": "Latest Scam With Your Friends news: playtest status, release date updates, the biggest YouTube and TikTok videos, and what the community is talking about."
+    }
+  ]
+}

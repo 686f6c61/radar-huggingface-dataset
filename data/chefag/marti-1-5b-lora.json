@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "chefag/Marti-1.5B-LoRA",
+  "slug": "chefag-marti-1-5b-lora",
+  "author": "chefag",
+  "url": "https://huggingface.co/chefag/Marti-1.5B-LoRA",
+  "created_at": "2026-10-17T18:04:51.000Z",
+  "updated_at": "2026-10-17T18:04:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85333004,
+  "storage_human": "85 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=lora",
+      "snippet": "Explore machine learning models. Muapi/jav-company-uncensored-redcraft-wan2.1-il-pony-flux.1-lora"
+    },
+    {
+      "title": "GitHub - TsinghuaC3I/MARTI: [ICLR 2026] A Framework for LLM-based Multi ...",
+      "url": "https://github.com/TsinghuaC3I/MARTI",
+      "snippet": "MARTI is an open-source framework for training LLM-based Multi-Agent Systems (MAS) with Reinforcement Learning (RL). It enables powerful, scalable, and adaptive workflows by combining centralized multi-agent interactions with distributed policy training. MARTI supports both built-in graph-based workflows and popular third-party multi-agent frameworks. MARTI-v2 extends the framework with tree ..."
+    },
+    {
+      "title": "PixAI Model Market | 1.8M+ AI Art Models and LoRAs",
+      "url": "https://pixai.art/market",
+      "snippet": "Open marketplace for AI art models. Browse 1.8M+ user-trained models and LoRAs to generate anime, realistic and fantasy art free on PixAI."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=LoRA",
+      "snippet": "dominguesm/xlm-roberta-base-lora-language-detection. Updated May 2, 2024 • 3.12k • 2. EarthnDusk/24cansofmonster. Updated Feb 17, 2025 • 1"
+    },
+    {
+      "title": "LoRA AI Models (18,097) | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 18,097 AI models tagged \"LoRA\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    }
+  ]
+}

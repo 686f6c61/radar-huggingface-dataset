@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "cosmos1030/gmp-kd3e-1-1.7b-n24-s50pct-lr5e-5_20261017_101205",
+  "slug": "cosmos1030-gmp-kd3e-1-1-7b-n24-s50pct-lr5e-5_20261017_101205",
+  "author": "cosmos1030",
+  "url": "https://huggingface.co/cosmos1030/gmp-kd3e-1-1.7b-n24-s50pct-lr5e-5_20261017_101205",
+  "created_at": "2026-10-17T01:12:05.000Z",
+  "updated_at": "2026-10-17T01:13:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 7681915034,
+  "storage_human": "7.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cosmos1030/gmp-kd3e-1-1.7b-n24-s50pct-lr1e-4_20261001_095927 · Hugging Face",
+      "url": "https://huggingface.co/cosmos1030/gmp-kd3e-1-1.7b-n24-s50pct-lr1e-4_20261001_095927",
+      "snippet": "/ gmp-kd3e-1-1.7b-n24-s50pct-lr1e-4_20261001_095927 Like 0 Safetensors qwen3 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 11 Safetensors Model size 2B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask ..."
+    },
+    {
+      "title": "cosmos1030/gmp-kd3e-1-1.7b-s50pct-lr1e-4_20261008_035636 · Hugging Face",
+      "url": "https://huggingface.co/cosmos1030/gmp-kd3e-1-1.7b-s50pct-lr1e-4_20261008_035636",
+      "snippet": "cosmos1030 / gmp-kd3e-1-1.7b-s50pct-lr1e-4_20261008_035636 Like 0 Safetensors qwen3 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 2B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider ..."
+    },
+    {
+      "title": "cosmos1030/gmp-kd3e-1-s50pct-lr5e-5_20260827_133259",
+      "url": "https://featherless.ai/models/cosmos1030/gmp-kd3e-1-s50pct-lr5e-5_20260827_133259",
+      "snippet": "The cosmos1030/gmp-kd3e-1-s50pct-lr5e-5_20260827_133259 model is an 8 billion parameter language model based on the Qwen3-8B architecture. It incorporates a TR-GMP capped-PGD &#x27;during growth&#x27; variant with 50% unstructured data, utilizing a klgate mechanism. This model is specifically designed for general language understanding and generation tasks, demonstrating strong performance across five ..."
+    },
+    {
+      "title": "cosmos1030/gmp-kd3e-1-s50pct-lr5e-5_20260828_125227",
+      "url": "https://featherless.ai/models/cosmos1030/gmp-kd3e-1-s50pct-lr5e-5_20260828_125227",
+      "snippet": "The cosmos1030/gmp-kd3e-1-s50pct-lr5e-5_20260828_125227 is a 4 billion parameter language model based on the Qwen3 architecture. It was trained with 50% unstructured data and a capped PGD with reverse-KL OPD objective."
+    },
+    {
+      "title": "Gmp Kd3e 1 S80pct Lr1e 4 20260916 220740 by cosmos1030",
+      "url": "https://llm-explorer.com/model/cosmos1030%2Fgmp-kd3e-1-s80pct-lr1e-4_20260916_220740,7iZK8NnGiTqYx9ZI1FgZDg",
+      "snippet": "Rank the Gmp Kd3e 1 S80pct Lr1e 4 20260916 220740 capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    }
+  ]
+}

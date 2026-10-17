@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mewmix/qwen3-tts-owells-unicron",
+  "slug": "mewmix-qwen3-tts-owells-unicron",
+  "author": "mewmix",
+  "url": "https://huggingface.co/mewmix/qwen3-tts-owells-unicron",
+  "created_at": "2026-10-17T02:41:49.000Z",
+  "updated_at": "2026-10-17T06:15:51.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "qwen3-tts",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "qwen3-tts",
+    "safetensors",
+    "qwen3_tts",
+    "custom-voice",
+    "gradio",
+    "audio",
+    "text-to-speech",
+    "en",
+    "dataset:mewmix/qwen3-tts-owells-unicron-data",
+    "base_model:Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+    "base_model:finetune:Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 905788672,
+  "parameters_human": "905.8M",
+  "storage_bytes": 2495629572,
+  "storage_human": "2.5 GB",
+  "base_model": "Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Khabibby Smeshkov says send location! . . #ufc #mma # ... - YouTube",
+      "url": "https://www.youtube.com/watch?v=ZGB7gloI7do",
+      "snippet": "Khabibby Smeshkov says send location! ..#ufc #mma #khabibnurmagomedov #khabibbysmeshkov #short"
+    },
+    {
+      "title": "Making his UFC Debut Khabibby Smeshkov.... title run starts NOW ...",
+      "url": "https://www.youtube.com/watch?v=s22jhhdMfC8",
+      "snippet": "5 days ago · Making his UFC Debut Khabibby Smeshkov.... title run starts NOW!!!!..#ufc #mma #KhabibbySmeshkov #khabib …"
+    },
+    {
+      "title": "Khabiby Smeshkov Makes His UFC Debut | MILLIONS",
+      "url": "https://millions.co/mma.underground/social-media-post/video/khabiby-smeshkov-makes-ufc-debut-wxu103",
+      "snippet": "4 days ago · Khabiby Smeshkov Makes His UFC Debut Making his UFC Debut Khabibby Smeshkov.... title run starts NOW!!!!"
+    },
+    {
+      "title": "Нурмагомедов, Хабиб Абдулманапович — Википедия",
+      "url": "https://ru.wikipedia.org/wiki/%D0%9D%D1%83%D1%80%D0%BC%D0%B0%D0%B3%D0%BE%D0%BC%D0%B5%D0%B4%D0%BE%D0%B2,_%D0%A5%D0%B0%D0%B1%D0%B8%D0%B1_%D0%90%D0%B1%D0%B4%D1%83%D0%BB%D0%BC%D0%B0%D0%BD%D0%B0%D0%BF%D0%BE%D0%B2%D0%B8%D1%87",
+      "snippet": "Хаби́б Абдулмана́пович Нурмагоме́дов (авар. ГӀабдулманапил ХӀабиб НурмухӀамадов; род. 20 сентября 1988, Сильди, …"
+    },
+    {
+      "title": "Khabib Nurmagomedov — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Khabib_Nurmagomedov",
+      "snippet": "Khabib Abdulmanapovitch Nurmagomedov (en russe : Хабиб Нурмагомедов et en avar : ХӀабиб Нурмухӏамадов), né le 20 …"
+    }
+  ]
+}

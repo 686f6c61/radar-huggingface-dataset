@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "gabe-adib/ove3-ladder-440m-qbal-seed4321",
+  "slug": "gabe-adib-ove3-ladder-440m-qbal-seed4321",
+  "author": "gabe-adib",
+  "url": "https://huggingface.co/gabe-adib/ove3-ladder-440m-qbal-seed4321",
+  "created_at": "2026-10-17T18:16:14.000Z",
+  "updated_at": "2026-10-17T18:23:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 70439203469,
+  "storage_human": "70.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gabe-adib/ove3-ladder-440m-lk3x1024 · Hugging Face",
+      "url": "https://huggingface.co/gabe-adib/ove3-ladder-440m-lk3x1024",
+      "snippet": "One run of the ove3 intervention ladder, K3 LatentMoE arms: kimi_linear MoE with 440M active parameters, LatentMoE, 1024 half-width experts, top-16 (2x routed parameters), RMSNorm eps 1e-5, router scaling 1.0, seed 1234. Otherwise the recipe&#x27;s 440M IsoFLOP cell (same data, LR, batch, steps ..."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 954 AI models across 639 benchmarks, with 224 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Best Open Source AI Models & LLM Leaderboard (2026)",
+      "url": "https://lmmarketcap.com/open-source-ai-models",
+      "snippet": "What are the best open source AI models in 2026? The top open source AI models in 2026 include Meta&#x27;s Llama 4 family, DeepSeek R1 and V3, Mistral&#x27;s Large and Medium models, Alibaba&#x27;s Qwen 2.5 series, and Google&#x27;s Gemma. These models offer competitive performance with full access to model weights, enabling self-hosting and fine-tuning."
+    },
+    {
+      "title": "Best Open Source AI Models in 2026 (Ranked)",
+      "url": "https://felloai.com/best-open-source-ai-models/",
+      "snippet": "The best open source AI models in 2026, ranked. MiMo-V2.6-Pro, Kimi K3, GLM 5.3 Flash, DeepSeek V4.1 Flash and Qwen 3.8, with benchmarks, licenses and the hardware each needs."
+    }
+  ]
+}

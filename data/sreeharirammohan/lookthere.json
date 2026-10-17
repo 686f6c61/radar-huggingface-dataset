@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "SreehariRamMohan/lookthere",
+  "slug": "sreeharirammohan-lookthere",
+  "author": "SreehariRamMohan",
+  "url": "https://huggingface.co/SreehariRamMohan/lookthere",
+  "created_at": "2026-10-16T00:33:24.000Z",
+  "updated_at": "2026-10-17T05:19:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "vision",
+    "vision-transformer",
+    "dinov2",
+    "sparse-vision",
+    "adaptive-computation",
+    "reinforcement-learning",
+    "arxiv:2609.04698",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9939688653,
+  "storage_human": "9.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2609.04698] LookThere! Sparse Vision by Reinforced Selection",
+      "url": "https://arxiv.org/abs/2609.04698",
+      "snippet": "Across all settings, LookThere surpasses state-of-the-art selection to provide a general and scalable framework for specialized and efficient adaptive computation."
+    },
+    {
+      "title": "LookThere! Sparse Vision by Reinforced Selection - arXiv.org",
+      "url": "https://arxiv.org/pdf/2609.04698",
+      "snippet": "3 LookThere: Sparse Vision We model perception as two inter-dependent processes between a token selector that learns where to look and a feature extractor that learns what to represent (Fig. 4). We train both jointly to recover task-relevant information from sparse input."
+    },
+    {
+      "title": "Sreehari Rammohan",
+      "url": "https://www.sreerammohan.com/",
+      "snippet": "LookThere! Sparse Vision by Reinforced Selection Sreehari Rammohan*, Yousef Yassin*, Anthony Fuller, Junfeng Wen, Carl Vondrick, Evan Shelhamer NeurIPS 2026 view paper"
+    },
+    {
+      "title": "LookThere! Sparse Vision by Reinforced Selection - arxiv.deeppaper.ai",
+      "url": "https://arxiv.deeppaper.ai/papers/2609.04698v1",
+      "snippet": "LookThere is an end-to-end reinforcement learning framework that achieves extreme computational efficiency in vision transformers by dynamically selecting task-relevant tokens."
+    },
+    {
+      "title": "LookThere! Sparse Vision by Reinforced Selection",
+      "url": "https://theresanaiforthat.com/paper/lookthere-sparse-vision-by-reinforced-selection/",
+      "snippet": "Across all settings, LookThere surpasses state-of-the-art selection to provide a general and scalable framework for specialized and efficient adaptive computation."
+    }
+  ]
+}

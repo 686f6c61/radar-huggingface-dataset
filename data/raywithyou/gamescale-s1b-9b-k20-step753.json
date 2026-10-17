@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Raywithyou/gamescale-s1b-9b-k20-step753",
+  "slug": "raywithyou-gamescale-s1b-9b-k20-step753",
+  "author": "Raywithyou",
+  "url": "https://huggingface.co/Raywithyou/gamescale-s1b-9b-k20-step753",
+  "created_at": "2026-10-17T02:10:36.000Z",
+  "updated_at": "2026-10-17T02:12:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839718151,
+  "storage_human": "18.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Raywithyou (Zheyuan Yang) - Hugging Face",
+      "url": "https://huggingface.co/Raywithyou/datasets",
+      "snippet": "User profile of Zheyuan Yang on Hugging Face"
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Raywithyou/Table-R1-SFT-7B · Hugging Face",
+      "url": "https://huggingface.co/Raywithyou/Table-R1-SFT-7B",
+      "snippet": "Raywithyou / Table-R1-SFT-7B like 0 Safetensors qwen2 Model card FilesFiles and versions Community No model card Downloads last month 1 Safetensors Model size 7.62B params Tensor type F32 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "GameScale at ChinaJoy 2026: AI in Game Development",
+      "url": "https://www.linkedin.com/posts/eunjin-kim-ej_chinajoy2026-gamedev-liveops-activity-7482756859272134657-YOcQ",
+      "snippet": "GameScale ️ ChinaJoy 2026 90% of game developers are now using AI in their workflows. (Google Cloud, 2025) As AI takes on more of the heavy lifting, one question keeps coming up in conversations ..."
+    }
+  ]
+}

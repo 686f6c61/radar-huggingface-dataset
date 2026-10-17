@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "joshycodes/ood-welfare-gemma-controls",
+  "slug": "joshycodes-ood-welfare-gemma-controls",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/ood-welfare-gemma-controls",
+  "created_at": "2026-10-17T02:16:48.000Z",
+  "updated_at": "2026-10-17T04:04:34.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "model-welfare",
+    "data-selection",
+    "research-artifact",
+    "base_model:google/gemma-3-27b-it",
+    "base_model:adapter:google/gemma-3-27b-it",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10898376288,
+  "storage_human": "10.9 GB",
+  "base_model": "google/gemma-3-27b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SAVRN Site Map: Every Public Page",
+      "url": "https://savrn.com/sitemap",
+      "snippet": "xml, so nothing here can fall out of step. 5390 pages · 19 sections. SAVRN; Models; Institutions; Datasets; Papers; SAVRN Index; Insights; Institute; Moratorium ..."
+    }
+  ]
+}

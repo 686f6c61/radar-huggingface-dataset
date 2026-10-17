@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "maharg/whisper-small-hu-q8_0.bin",
+  "slug": "maharg-whisper-small-hu-q8_0-bin",
+  "author": "maharg",
+  "url": "https://huggingface.co/maharg/whisper-small-hu-q8_0.bin",
+  "created_at": "2026-10-17T18:04:09.000Z",
+  "updated_at": "2026-10-17T18:07:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "hu"
+  ],
+  "tags": [
+    "whisper",
+    "ggml",
+    "quantized",
+    "hu",
+    "base_model:SubZtep/whisper-small-hu",
+    "base_model:finetune:SubZtep/whisper-small-hu",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 264464624,
+  "storage_human": "264 MB",
+  "base_model": "SubZtep/whisper-small-hu",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openai/whisper-small · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-small",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GGML Whisper model files: download ggml-base.bin, ggml-large-v3.bin and ...",
+      "url": "https://snailtext.app/ggml-models/",
+      "snippet": "The HuggingFace repository also includes quantized variants like ggml-large-v3-q5_0.bin (1.1 GB vs 2.9 GB for full precision). These trade a small accuracy penalty for significantly smaller file size and faster CPU inference."
+    },
+    {
+      "title": "Whisper-Small - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/whisper_small",
+      "snippet": "Whisper-Small Transformer‑based automatic speech recognition (ASR) model for multilingual transcription and translation available on HuggingFace. HuggingFace Whisper‑Small ASR (Automatic Speech Recognition) model is a state‑of‑the‑art system designed for transcribing spoken language into written text."
+    },
+    {
+      "title": "ggerganov/whisper.cpp · Hugging Face",
+      "url": "https://huggingface.co/ggerganov/whisper.cpp",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Model Download and Conversion | ggml-org/whisper.cpp | DeepWiki",
+      "url": "https://deepwiki.com/ggml-org/whisper.cpp/5.1-model-download-and-conversion",
+      "snippet": "The download system consists of platform-specific scripts (models/download-ggml-model.sh and models/download-ggml-model.cmd) that fetch pre-converted models from remote repositories such as ggerganov/whisper.cpp or specialized repositories like akashmjn/tinydiarize-whisper.cpp when tinydiarize (tdrz) features are requested models/download-ggml ..."
+    }
+  ]
+}

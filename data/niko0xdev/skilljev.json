@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "niko0xdev/skilljev",
+  "slug": "niko0xdev-skilljev",
+  "author": "niko0xdev",
+  "url": "https://huggingface.co/niko0xdev/skilljev",
+  "created_at": "2026-10-17T01:56:36.000Z",
+  "updated_at": "2026-10-17T01:56:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "skills-assessment",
+    "resume",
+    "cv",
+    "nli",
+    "lora",
+    "classification",
+    "hr-tech",
+    "text-classification",
+    "en",
+    "dataset:niko0xdev/skilljev-data",
+    "base_model:AlexWortega/openjev",
+    "base_model:adapter:AlexWortega/openjev",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 156291437,
+  "storage_human": "156 MB",
+  "base_model": "AlexWortega/openjev",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "niko0xdev/skilljev-data · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/niko0xdev/skilljev-data",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - JerroldH/SkillJev: University of Toronto MScAC AI team ...",
+      "url": "https://github.com/JerroldH/SkillJev",
+      "snippet": "SkillJev is a University of Toronto MScAC AI team research project developed in collaboration with TrendAI. We build SkillJev-2B, a lightweight scorer for malicious AI-agent skills, using OpenJev 2B, LoRA and a trainable classification head. The model returns a score for a fixed hypothesis: This AI agent skill is malicious."
+    },
+    {
+      "title": "SkillJev/SkillJev-2B at v1 - Hugging Face",
+      "url": "https://huggingface.co/SkillJev/SkillJev-2B/tree/v1",
+      "snippet": "2 GB xet Stage merged SkillJev-Direct v1 weightsabout 11 hours ago model-00003-of-00003.safetensors 428 MB xet Stage merged SkillJev-Direct v1 weightsabout 11 hours ago model.safetensors.index.json 55.8 kBStage merged SkillJev-Direct v1 weightsabout 11 hours ago score.py 2.91 kBRelease SkillJev-Direct v1 full model and original adapterabout 11 ..."
+    },
+    {
+      "title": "SkillJev/docs/direct-v1-release.md at main · JerroldH/SkillJev",
+      "url": "https://github.com/JerroldH/SkillJev/blob/main/docs/direct-v1-release.md",
+      "snippet": "SkillJev-Direct v1 release Published 2026-10-05: SkillJev/SkillJev-2B, version v1, commit 097905650a483d995d4ec9fa55de2ee0017c4353. GitHub remains private. The HF root contains the complete BF16 model in three safetensors shards (4,426,570,544 bytes). adapter/ retains the original selected LoRA weights and trained head. No retraining was performed."
+    },
+    {
+      "title": "The maker of non-text AI model Jev valued at $7.5B just ... - TechCrunch",
+      "url": "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/",
+      "snippet": "TypeSafe AI, the developer of Jev, a new type of AI model that gained rapid popularity after launching just a few weeks ago, has raised $870 million at a $7.5 billion valuation. The round was led ..."
+    }
+  ]
+}

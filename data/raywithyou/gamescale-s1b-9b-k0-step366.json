@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Raywithyou/gamescale-s1b-9b-k0-step366",
+  "slug": "raywithyou-gamescale-s1b-9b-k0-step366",
+  "author": "Raywithyou",
+  "url": "https://huggingface.co/Raywithyou/gamescale-s1b-9b-k0-step366",
+  "created_at": "2026-10-17T01:57:22.000Z",
+  "updated_at": "2026-10-17T01:59:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839718151,
+  "storage_human": "18.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "MemoGUI-World Qwen3.5-9B Stage 3 Pilot10 - Hugging Face",
+      "url": "https://huggingface.co/Raywithyou/MemoGUI-World-Qwen3.5-9B-Stage3-Pilot10",
+      "snippet": "MemoGUI-World Qwen3.5-9B Stage 3 Pilot10 Experimental Hugging Face export from a 10-rollout Stage 3 agentic-RL pilot for MemoGUI-World. It continues from the public MemoGUI-World Stage 2 SFT checkpoint."
+    },
+    {
+      "title": "Fine-tuned Models for Raywithyou/MemoGUI-World-Qwen3.5-9B-SFT-Stage2 ...",
+      "url": "https://huggingface.co/models?other=base_model:finetune:Raywithyou/MemoGUI-World-Qwen3.5-9B-SFT-Stage2",
+      "snippet": "Explore machine learning models. Model Tree Raywithyou/MemoGUI-World-Qwen3.5-9B-SFT-Stage2 Apps Inference Providers One-click Deployment Misc Apply filters"
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "Ajax local AI: PewDiePie&#x27;s 9B Odysseus model explained | Popular AI",
+      "url": "https://www.popularai.org/p/pewdiepie-ajax-ai-model",
+      "snippet": "Ajax is PewDiePie&#x27;s 9B local AI model for Odysseus. See its release timing, hardware target, refusal ablation, privacy limits, and open questions."
+    }
+  ]
+}

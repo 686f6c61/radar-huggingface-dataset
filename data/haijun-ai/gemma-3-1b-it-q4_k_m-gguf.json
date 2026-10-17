@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Haijun-AI/gemma-3-1b-it-Q4_K_M.gguf",
+  "slug": "haijun-ai-gemma-3-1b-it-q4_k_m-gguf",
+  "author": "Haijun-AI",
+  "url": "https://huggingface.co/Haijun-AI/gemma-3-1b-it-Q4_K_M.gguf",
+  "created_at": "2026-10-15T01:41:50.000Z",
+  "updated_at": "2026-10-17T02:43:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 999885952,
+  "parameters_human": "999.9M",
+  "storage_bytes": 806058272,
+  "storage_human": "806 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gemma-3-1b-it-Q4_K_M.gguf · ggml-org/gemma-3-1b-it-GGUF at main",
+      "url": "https://huggingface.co/ggml-org/gemma-3-1b-it-GGUF/blob/main/gemma-3-1b-it-Q4_K_M.gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "google/gemma-3-1b-it-qat-q4_0-gguf · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-3-1b-it-qat-q4_0-gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ai/gemma3 - Docker Image",
+      "url": "https://hub.docker.com/r/ai/gemma3",
+      "snippet": "Fine-tune Gemma 3 (12B) for free using our Google Colab notebook here ⁠! Read our Blog about Gemma 3 support: unsloth.ai/blog/gemma3 ⁠ View the rest of our notebooks in our docs here ⁠. Export your fine-tuned model to GGUF, Ollama, llama.cpp or 🤗HF."
+    },
+    {
+      "title": "gemma3:1b-it-q4_K_M - ollama.com",
+      "url": "https://ollama.com/library/gemma3:1b-it-q4_K_M",
+      "snippet": "The Gemma 3 models are multimodal—processing text and images—and feature a 128K context window with support for over 140 languages. Available in 270M, 1B, 4B, 12B, and 27B parameter sizes, they excel in tasks like question answering, summarization, and reasoning, while their compact design allows deployment on resource-limited devices."
+    },
+    {
+      "title": "GitHub - hackur/gemma3",
+      "url": "https://github.com/hackur/gemma3",
+      "snippet": "The hardware requirements for GGUF models depend on the specific quantization used (e.g., Q4_K_M, Q5_K_M, etc.). Refer to the documentation for the specific GGUF model you&#x27;re using."
+    }
+  ]
+}

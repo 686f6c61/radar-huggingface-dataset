@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "mistralai/Mistral-Small-24B-Instruct-2501",
+  "slug": "mistralai-mistral-small-24b-instruct-2501",
+  "author": "mistralai",
+  "url": "https://huggingface.co/mistralai/Mistral-Small-24B-Instruct-2501",
+  "created_at": "2025-01-28T13:30:13.000Z",
+  "updated_at": "2025-07-28T17:26:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [
+    "en",
+    "fr",
+    "de",
+    "es",
+    "it",
+    "pt",
+    "zh",
+    "ja",
+    "ru",
+    "ko"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "mistral",
+    "en",
+    "fr",
+    "de",
+    "es",
+    "it",
+    "pt",
+    "zh",
+    "ja",
+    "ru",
+    "ko",
+    "base_model:mistralai/Mistral-Small-24B-Base-2501",
+    "base_model:finetune:mistralai/Mistral-Small-24B-Base-2501",
+    "license:apache-2.0",
+    "eval-results",
+    "region:us"
+  ],
+  "likes": 983,
+  "downloads_30d": 68493,
+  "trending_score": 13,
+  "parameters": 23572403200,
+  "parameters_human": "23.57B",
+  "storage_bytes": 94321574156,
+  "storage_human": "94.3 GB",
+  "base_model": "mistralai/Mistral-Small-24B-Base-2501",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mistral | n°1 en IA souveraine : modèles ouverts de pointe qui vous ...",
+      "url": "https://mistral.ai/fr/",
+      "snippet": "Nous créons les modèles. Vous les gardez. Commencez avec les modèles de pointe et spécialisés à poids ouverts de Mistral. …Read more"
+    },
+    {
+      "title": "Mistral | #1 in Sovereign AI: Frontier Open Models You Own",
+      "url": "https://mistral.ai/",
+      "snippet": "We make the models. You keep them. Start with Mistral’s frontier and specialist open-weight models. Use them as they are, or make …"
+    },
+    {
+      "title": "Login - Mistral AI",
+      "url": "https://chat.mistral.ai/login",
+      "snippet": "Login or signup below Email Forgot password?"
+    },
+    {
+      "title": "Mistral AI — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Mistral_AI",
+      "snippet": "Mistral AI est une entreprise française fondée en avril 2023, spécialisée dans l' intelligence artificielle générative. Elle développe de …"
+    },
+    {
+      "title": "Login - Mistral AI",
+      "url": "https://console.mistral.ai/home",
+      "snippet": "Access and manage Mistral AI's products, user settings, billing, and administrative tasks through the unified Administration Console."
+    }
+  ]
+}
