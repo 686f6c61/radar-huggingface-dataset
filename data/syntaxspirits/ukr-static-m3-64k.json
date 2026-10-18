@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "SyntaxSpirits/ukr-static-m3-64k",
+  "slug": "syntaxspirits-ukr-static-m3-64k",
+  "author": "SyntaxSpirits",
+  "url": "https://huggingface.co/SyntaxSpirits/ukr-static-m3-64k",
+  "created_at": "2026-10-17T20:20:50.000Z",
+  "updated_at": "2026-10-17T20:20:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "model2vec",
+  "languages": [
+    "uk"
+  ],
+  "tags": [
+    "model2vec",
+    "safetensors",
+    "static-embeddings",
+    "sentence-transformers",
+    "embeddings",
+    "retrieval",
+    "ukrainian",
+    "sentence-similarity",
+    "uk",
+    "dataset:wikimedia/wikipedia",
+    "dataset:HuggingFaceFW/fineweb-2",
+    "base_model:BAAI/bge-m3",
+    "base_model:finetune:BAAI/bge-m3",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16384768,
+  "parameters_human": "16.4M",
+  "storage_bytes": 32769624,
+  "storage_human": "33 MB",
+  "base_model": "BAAI/bge-m3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

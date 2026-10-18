@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "Tegh25/satellite-anomaly-reporter-qwen3-4b-lora",
+  "slug": "tegh25-satellite-anomaly-reporter-qwen3-4b-lora",
+  "author": "Tegh25",
+  "url": "https://huggingface.co/Tegh25/satellite-anomaly-reporter-qwen3-4b-lora",
+  "created_at": "2026-10-17T20:13:39.000Z",
+  "updated_at": "2026-10-17T20:15:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qlora",
+    "satellite",
+    "telemetry",
+    "anomaly-detection",
+    "distillation",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:adapter:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 143610538,
+  "storage_human": "144 MB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

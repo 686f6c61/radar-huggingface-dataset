@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "K-Monitor/kmdb_ner_v5",
+  "slug": "k-monitor-kmdb_ner_v5",
+  "author": "K-Monitor",
+  "url": "https://huggingface.co/K-Monitor/kmdb_ner_v5",
+  "created_at": "2026-10-17T19:27:31.000Z",
+  "updated_at": "2026-10-17T19:28:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "hu"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "hungarian",
+    "ner",
+    "corruption",
+    "token-classification",
+    "hu",
+    "dataset:K-Monitor/kmdb_base",
+    "base_model:SZTAKI-HLT/hubert-base-cc",
+    "base_model:finetune:SZTAKI-HLT/hubert-base-cc",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110037517,
+  "parameters_human": "110.0M",
+  "storage_bytes": 440173420,
+  "storage_human": "440 MB",
+  "base_model": "SZTAKI-HLT/hubert-base-cc",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "K - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/K",
+      "snippet": "K (minuscule: k) is the eleventh letter of the Latin alphabet, used in the modern English alphabet, the alphabets of other western …"
+    },
+    {
+      "title": "K (lettre) — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/K_(lettre)",
+      "snippet": "Cette lettre de l' alphabet latin vient de l' étrusque ; c'est un descendant du kappa de l' alphabet grec (Κ en majuscule et κ en …"
+    },
+    {
+      "title": "K — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/K",
+      "snippet": "Le Ꝃ ou « K barré » (K/) est une abréviation courante en Bretagne, employé notamment pour les formes en Ker-. K, sur les plaques …"
+    },
+    {
+      "title": "alphabet en francais chanson | lettre \"K-chanson\" - Comptines et ...",
+      "url": "https://m.youtube.com/watch?v=4QedWKQ7SsU",
+      "snippet": "Jul 27, 2016 · Learn the french alphabet, ABC, colors, numbers and much more by watching, playing, singing along with these …"
+    },
+    {
+      "title": "Définitions : k - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/k/45269",
+      "snippet": "k - Définitions Français : Retrouvez la définition de k, ainsi que les homonymes... - synonymes, homonymes, difficultés, citations."
+    }
+  ]
+}

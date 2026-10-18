@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "CollectionStudio/switch-base-16",
+  "slug": "collectionstudio-switch-base-16",
+  "author": "CollectionStudio",
+  "url": "https://huggingface.co/CollectionStudio/switch-base-16",
+  "created_at": "2026-10-17T19:45:12.000Z",
+  "updated_at": "2026-10-17T19:45:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "switch_transformers",
+    "text2text-generation",
+    "en",
+    "dataset:c4",
+    "arxiv:2101.03961",
+    "arxiv:1910.09700",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4290589951,
+  "storage_human": "4.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LinkedIn : s’identifier ou s’inscrire",
+      "url": "https://fr.linkedin.com/",
+      "snippet": "À qui s’adresse LinkedIn ? À toute personne cherchant à construire sa carrière professionnelle."
+    },
+    {
+      "title": "LinkedIn: Log In or Sign Up",
+      "url": "https://www.linkedin.com/",
+      "snippet": "Explore top LinkedIn content Discover relevant posts and expert insights — curated by topic and in one place."
+    },
+    {
+      "title": "LinkedIn Login, Sign in | LinkedIn",
+      "url": "https://www.linkedin.com/login/",
+      "snippet": "Login to LinkedIn to keep in touch with people you know, share ideas, and build your career."
+    },
+    {
+      "title": "LinkedIn",
+      "url": "https://in.linkedin.com/company/linkedin",
+      "snippet": "Founded in 2003, LinkedIn connects the world's professionals to make them more productive and successful. With more than 1 …"
+    },
+    {
+      "title": "LinkedIn: Log In or Sign Up",
+      "url": "https://gb.linkedin.com/",
+      "snippet": "Welcome to your professional community Continue with Google Sign in with email By clicking Continue to join or sign in, you agree to …"
+    }
+  ]
+}

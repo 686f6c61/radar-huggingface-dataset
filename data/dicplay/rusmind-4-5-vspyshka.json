@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "DICPlay/RusMind-4.5-Vspyshka",
+  "slug": "dicplay-rusmind-4-5-vspyshka",
+  "author": "DICPlay",
+  "url": "https://huggingface.co/DICPlay/RusMind-4.5-Vspyshka",
+  "created_at": "2026-10-17T22:58:21.000Z",
+  "updated_at": "2026-10-18T00:57:08.000Z",
+  "license": "rusmind-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "rusmind",
+    "dicplay",
+    "russian",
+    "llama.cpp",
+    "on-device",
+    "offline",
+    "text-generation",
+    "ru",
+    "en",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7518069290,
+  "parameters_human": "7.52B",
+  "storage_bytes": 15053097824,
+  "storage_human": "15.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "lothnic/themis-0.8b",
+  "slug": "lothnic-themis-0-8b",
+  "author": "lothnic",
+  "url": "https://huggingface.co/lothnic/themis-0.8b",
+  "created_at": "2026-10-17T20:52:19.000Z",
+  "updated_at": "2026-10-17T20:52:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "themis",
+    "feature-extraction",
+    "decision-model",
+    "structured-prediction",
+    "probabilities",
+    "text-only",
+    "custom_code",
+    "lora",
+    "text-classification",
+    "dataset:lothnic/themis-decision-mixture",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 774038336,
+  "parameters_human": "774.0M",
+  "storage_bytes": 1611456460,
+  "storage_human": "1.6 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Lothnic/Themis",
+      "url": "https://github.com/Lothnic/Themis",
+      "snippet": "Themis is a planned text-only, general-purpose decision model built from Qwen/Qwen3.5-.8B. It takes a case, runtime-defined questions, and allowed answers, and returns probabilities for each decision."
+    },
+    {
+      "title": "Lothnic (Mayank Joshi) · GitHub",
+      "url": "https://github.com/Lothnic/",
+      "snippet": "A graph representing Lothnic&#x27;s contributions from October 05, 2025 to October 10, 2026. The contributions are 88% commits, 9% pull requests, 3% issues, 0% code review."
+    },
+    {
+      "title": "lothnic/themis-decision-mixture · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/lothnic/themis-decision-mixture",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "project-themis/Themis-RM-8B-PMP · Hugging Face",
+      "url": "https://huggingface.co/project-themis/Themis-RM-8B-PMP",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Themis AI — Make reliable decisions with AI",
+      "url": "https://www.themisai.io/",
+      "snippet": "Make reliable decisions with AI. AI errors are costly. Checking every output is costly too. Themis helps you identify which predictions and proposed actions need attention, so you can automate more work and focus verification, expert review and model improvement where they matter."
+    }
+  ]
+}

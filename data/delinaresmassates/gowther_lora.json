@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "DelinaresMassates/gowther_lora",
+  "slug": "delinaresmassates-gowther_lora",
+  "author": "DelinaresMassates",
+  "url": "https://huggingface.co/DelinaresMassates/gowther_lora",
+  "created_at": "2026-10-17T23:41:42.000Z",
+  "updated_at": "2026-10-17T23:44:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "base_model:black-forest-labs/FLUX.1-dev",
+    "base_model:finetune:black-forest-labs/FLUX.1-dev",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 171969400,
+  "storage_human": "172 MB",
+  "base_model": "black-forest-labs/FLUX.1-dev",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

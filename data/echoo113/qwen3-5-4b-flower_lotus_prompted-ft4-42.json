@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Echoo113/Qwen3.5-4B-flower_lotus_prompted-ft4.42",
+  "slug": "echoo113-qwen3-5-4b-flower_lotus_prompted-ft4-42",
+  "author": "Echoo113",
+  "url": "https://huggingface.co/Echoo113/Qwen3.5-4B-flower_lotus_prompted-ft4.42",
+  "created_at": "2026-10-18T00:07:35.000Z",
+  "updated_at": "2026-10-18T00:57:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 190013758,
+  "storage_human": "190 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CFB锅炉的全称是指什么？_百度知道",
+      "url": "https://zhidao.baidu.com/question/476844875.html",
+      "snippet": "Sep 14, 2012 · CFB 锅炉英文是 circulating fluidized bed boiler（循环流化床锅炉）。 因其具有燃料适应性广、燃烧效率高、负荷调节 …"
+    },
+    {
+      "title": "cfa与cfb卡有什么区别 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/2088257599682511348.html",
+      "snippet": "Aug 21, 2025 · CFA卡与CFB卡的区别主要体现在定义、物理尺寸与兼容性、存储容量与传输速度、适用场景、耐用性与市场价格等方 …"
+    },
+    {
+      "title": "如何看待华为突破冯诺依曼「单机」架构？ - 知乎",
+      "url": "https://www.zhihu.com/question/2084200588892451205",
+      "snippet": "冯你马勒戈壁的突破。 华为又突破了。 这次突破得比较彻底。冯诺依曼先突破一遍，图灵顺便也突破了。按照华为对 Peerium 的宣 …"
+    },
+    {
+      "title": "CFB是贸易的什么意思？ - 知乎",
+      "url": "https://www.zhihu.com/question/305586746",
+      "snippet": "CFB是FOB、CFR、CIF。 三种贸易术语的价格构成仅适用于海上或内河运输。 在价格构成中，通常包括3方面内容：进货成本、费用 …"
+    },
+    {
+      "title": "软工团队实践作业-拾光友人帐-CSDN社区",
+      "url": "https://bbs.csdn.net/topics/620545000",
+      "snippet": "Oct 9, 2026 · 以下内容是CSDN社区关于软工团队实践作业-拾光友人帐相关内容，如果想了解更多关于2601_FZU_SE社区其他内容， …"
+    }
+  ]
+}

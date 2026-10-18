@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Allinsama/facebook__hubert-base-ls960",
+  "slug": "allinsama-facebook__hubert-base-ls960",
+  "author": "Allinsama",
+  "url": "https://huggingface.co/Allinsama/facebook__hubert-base-ls960",
+  "created_at": "2026-10-18T00:40:31.000Z",
+  "updated_at": "2026-10-18T00:40:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "tf",
+    "hubert",
+    "speech",
+    "en",
+    "dataset:librispeech_asr",
+    "arxiv:2106.07447",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 755305858,
+  "storage_human": "755 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

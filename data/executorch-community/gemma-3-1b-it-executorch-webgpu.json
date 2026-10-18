@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "executorch-community/Gemma-3-1B-IT-ExecuTorch-WebGPU",
+  "slug": "executorch-community-gemma-3-1b-it-executorch-webgpu",
+  "author": "executorch-community",
+  "url": "https://huggingface.co/executorch-community/Gemma-3-1B-IT-ExecuTorch-WebGPU",
+  "created_at": "2026-10-18T00:19:15.000Z",
+  "updated_at": "2026-10-18T00:25:04.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "executorch",
+  "languages": [],
+  "tags": [
+    "executorch",
+    "webgpu",
+    "on-device",
+    "browser",
+    "text-generation",
+    "arxiv:2503.19786",
+    "base_model:google/gemma-3-1b-it",
+    "base_model:quantized:google/gemma-3-1b-it",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 673690492,
+  "storage_human": "674 MB",
+  "base_model": "google/gemma-3-1b-it",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AssOAss - Big Ass Porn & Anal Videos",
+      "url": "https://www.assoass.com/network/assoass/",
+      "snippet": "AssOAss - Ass Videos and Anal Movies. All you booty lovers out there will enjoy this site, 100% guaranteed. We offer free streaming …"
+    }
+  ]
+}

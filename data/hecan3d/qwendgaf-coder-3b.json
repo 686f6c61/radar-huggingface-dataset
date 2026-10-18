@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "hecan3d/QwenDGAF-Coder-3B",
+  "slug": "hecan3d-qwendgaf-coder-3b",
+  "author": "hecan3d",
+  "url": "https://huggingface.co/hecan3d/QwenDGAF-Coder-3B",
+  "created_at": "2026-10-17T23:15:14.000Z",
+  "updated_at": "2026-10-17T23:47:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen2",
+    "llama.cpp",
+    "llama-cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 13933173266,
+  "storage_human": "13.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/",
+      "snippet": "TikTok - trends start here. On a device or on the web, viewers can watch and discover millions of personalized short videos. …"
+    },
+    {
+      "title": "Download the TikTok app for Android and iOS - Get official latest version",
+      "url": "https://www.tiktok.com/download/en",
+      "snippet": "Experience a smaller, faster version of TikTok. Discover meaningful videos and get rewarded for engaging with what matters. …"
+    },
+    {
+      "title": "TikTok - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically&listing=sharing_descdeter&hl=en-US",
+      "snippet": "2 days ago · Discover videos, music and livestreams from around the world and create your own with easy-to-use tools to capture …"
+    },
+    {
+      "title": "TikTok - Free download and install on Windows | Microsoft Store",
+      "url": "https://apps.microsoft.com/detail/9nh2gph4jzs4?hl=en-US&gl=US",
+      "snippet": "Whether you’re a sports fanatic, a pet enthusiast, or just looking for a laugh, there’s something for everyone on TikTok. All you have …"
+    },
+    {
+      "title": "TikTok – Applications sur Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically&listing=sharing_descdeter&hl=fr",
+      "snippet": "2 days ago · Discover videos, music and livestreams from around the world and create your own with easy-to-use tools to capture …"
+    }
+  ]
+}

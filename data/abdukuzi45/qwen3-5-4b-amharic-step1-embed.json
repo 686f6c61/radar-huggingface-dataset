@@ -5,7 +5,7 @@
   "author": "abdukuzi45",
   "url": "https://huggingface.co/abdukuzi45/qwen3.5-4b-amharic-step1-embed",
   "created_at": "2026-10-15T20:57:05.000Z",
-  "updated_at": "2026-10-17T02:59:00.000Z",
+  "updated_at": "2026-10-18T02:44:41.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,8 +20,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 501786999444,
-  "storage_human": "501.8 GB",
+  "storage_bytes": 942508138018,
+  "storage_human": "942.5 GB",
   "base_model": null,
   "formats": [
     "safetensors"

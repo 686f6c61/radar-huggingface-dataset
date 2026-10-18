@@ -5,7 +5,7 @@
   "author": "SupratimRK",
   "url": "https://huggingface.co/SupratimRK/compact-gender-classifier",
   "created_at": "2026-10-16T13:24:06.000Z",
-  "updated_at": "2026-10-17T01:16:01.000Z",
+  "updated_at": "2026-10-17T08:33:11.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -29,12 +29,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 38,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 14957357,
-  "storage_human": "15 MB",
+  "storage_bytes": 19943142,
+  "storage_human": "20 MB",
   "base_model": null,
   "formats": [
     "onnx"

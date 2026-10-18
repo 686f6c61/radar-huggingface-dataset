@@ -5,7 +5,7 @@
   "author": "verdict-models",
   "url": "https://huggingface.co/verdict-models/von",
   "created_at": "2026-10-17T00:48:37.000Z",
-  "updated_at": "2026-10-17T00:59:37.000Z",
+  "updated_at": "2026-10-17T12:22:30.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "zero-shot-classification",

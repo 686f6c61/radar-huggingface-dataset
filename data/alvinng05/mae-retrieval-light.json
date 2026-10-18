@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "alvinng05/mae-retrieval-light",
+  "slug": "alvinng05-mae-retrieval-light",
+  "author": "alvinng05",
+  "url": "https://huggingface.co/alvinng05/mae-retrieval-light",
+  "created_at": "2026-10-17T23:55:12.000Z",
+  "updated_at": "2026-10-17T23:55:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何看待XG成员cocona宣布自己接受胸部切除手术？ - 知乎",
+      "url": "https://www.zhihu.com/question/1980746136353514133",
+      "snippet": "如何看待XG成员cocona宣布自己接受胸部切除手术？ XG成员：XG是一个由日本成员组成、在韩国出道的女子音乐组合，全名为 …Read more"
+    },
+    {
+      "title": "经常倒时差与频繁熬夜的性质相同吗？会对个体造成怎样的影响？",
+      "url": "https://www.zhihu.com/question/39249974",
+      "snippet": "谢邀，目前关于睡眠调节的研究建立的是双因子模型，主要涉及两个因素，一是circadian rhythm，昼夜节律，也叫「生物钟」，这个 …"
+    },
+    {
+      "title": "如何评价XG女团成员cocona术后宣布跨性别？粉丝对其行为的争论是 …",
+      "url": "https://www.zhihu.com/question/1980792458980921999",
+      "snippet": "粉丝对其行为的争论是否是某种“保进步主义守”的体现？ XG 成员 Cocona 公开跨性别与非二元性别认同后，引发了关于性别、身份与 …"
+    },
+    {
+      "title": "能介绍一下日本女团XG的每个人吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/542097406",
+      "snippet": "Cocona:队里最小的女孩儿，hiphop文化融入骨子里那种，爹妈粉巨多，rap超级强，C to the O C O N A那段直接出圈，舞蹈贼猛。 …"
+    },
+    {
+      "title": "做保洁的阿姨们讨厌收拾乱七八糟的屋子吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/392709629",
+      "snippet": "May 5, 2020 · 本鹅来了！ 其实这个问题吧，要分两种情况： 1 既然是保洁阿姨了，无论讨厌与否，收拾东西把屋子收拾干净就是一份 …"
+    }
+  ]
+}

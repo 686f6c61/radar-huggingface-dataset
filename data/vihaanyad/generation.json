@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "vihaanyad/generation",
+  "slug": "vihaanyad-generation",
+  "author": "vihaanyad",
+  "url": "https://huggingface.co/vihaanyad/generation",
+  "created_at": "2026-10-17T20:22:03.000Z",
+  "updated_at": "2026-10-17T20:22:09.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SpiderSolitaire.fr - Spider Solitaire Gratuit",
+      "url": "https://www.spidersolitaire.fr/",
+      "snippet": "Le jeu Spider Solitaire est un vrai classique, il est considéré comme le roi de tous les jeux de Solitaire, en conséquence, c'est aussi …"
+    },
+    {
+      "title": "Jouer au Spider Solitaire",
+      "url": "https://www.spidersolitaire.fr/jouerauspidersolitaire.php",
+      "snippet": "Une course contre la montre, vous avez 10 minutes pour que.."
+    },
+    {
+      "title": "Spider Solitaire Classique",
+      "url": "https://www.spidersolitaire.fr/jouer/spidersolitaireclassique.php",
+      "snippet": "Nous avons aussi supprimé le bouton d'indices dans le Spider Solitaire Classique, de sorte que vous devez tout faire vous-même. …"
+    },
+    {
+      "title": "Spider Solitaire Windows",
+      "url": "https://www.spidersolitaire.fr/jouer/spidersolitairewindows.php",
+      "snippet": "Spider Solitaire Windows Joué : Ce jeu a été joué pour l'instant 159753973 fois. Instructions : Ce jeu ressemble beaucoup à la …"
+    },
+    {
+      "title": "Spider Solitaire Paris",
+      "url": "https://www.spidersolitaire.fr/jouer/spidersolitaireparis.php",
+      "snippet": "Et ce n'est pas pour rien, Spider Solitaire est à l'origine un jeu français et c'est la raison pour laquelle nous avons créé cette version …"
+    }
+  ]
+}

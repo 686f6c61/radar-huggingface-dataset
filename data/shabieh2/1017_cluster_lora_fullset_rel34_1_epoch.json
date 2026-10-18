@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "shabieh2/1017_cluster_lora_fullset_rel34_1_epoch",
+  "slug": "shabieh2-1017_cluster_lora_fullset_rel34_1_epoch",
+  "author": "shabieh2",
+  "url": "https://huggingface.co/shabieh2/1017_cluster_lora_fullset_rel34_1_epoch",
+  "created_at": "2026-10-17T22:50:42.000Z",
+  "updated_at": "2026-10-17T22:50:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth/Muse-Glimmer-30B",
+    "lora",
+    "transformers",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:unsloth/Muse-Glimmer-30B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 866591761,
+  "storage_human": "867 MB",
+  "base_model": "unsloth/Muse-Glimmer-30B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Escape from Corregidor - Edgar D. Whitcomb - Google Books",
+      "url": "https://books.google.com/books/about/Escape_from_Corregidor.html?id=DHd-DwAAQBAJ",
+      "snippet": "Dec 3, 2018 · Captured once again weeks later, Whitcomb is imprisoned, tortured and starved, before being transferred to China and …"
+    },
+    {
+      "title": "Escape from Corregidor : Whitcomb, Edgar D - Archive.org",
+      "url": "https://archive.org/details/EscapeFromCorregidor",
+      "snippet": "Aug 7, 2015 · Escape from Corregidor by Whitcomb, Edgar D Publication date 1958 Usage Public Domain Mark 1.0 Topics"
+    },
+    {
+      "title": "Escape From Corregidor by Edgar D. Whitcomb | Goodreads",
+      "url": "https://goodreads.com/book/show/36060817-escape-from-corregidor",
+      "snippet": "Escape from Corregidor, his memoir of war-time experiences, was first published in 1958. He was discharged from active duty in …"
+    },
+    {
+      "title": "Escape from Corregidor - Edgar Whitcomb - Google Books",
+      "url": "https://books.google.com/books/about/Escape_from_Corregidor.html?id=VIQIkAEACAAJ",
+      "snippet": "Mar 20, 2016 · Escape from Corregidor, first published in 1958, is the harrowing account of Edgar Whitcomb, a B-17 navigator who …"
+    },
+    {
+      "title": "Escape from Corregidor : Edgar D. Whitcomb : Free Download, …",
+      "url": "https://archive.org/details/escapefromcorreg0000edga",
+      "snippet": "Jun 28, 2022 · PDF access not available for this item."
+    }
+  ]
+}

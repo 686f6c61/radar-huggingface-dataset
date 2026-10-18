@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "TheSauceman/microduck-hill-climb-1m5-climb1",
+  "slug": "thesauceman-microduck-hill-climb-1m5-climb1",
+  "author": "TheSauceman",
+  "url": "https://huggingface.co/TheSauceman/microduck-hill-climb-1m5-climb1",
+  "created_at": "2026-10-17T23:50:13.000Z",
+  "updated_at": "2026-10-17T23:50:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5643412,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LFP.fr - Ligue de Football Professionnel - Ligue 1 ...",
+      "url": "http://www.lfp.fr/ligue1/",
+      "snippet": "Site Officiel de la Ligue de Football Professionnel, Ligue 1 Conforama,Domino's Ligue 2,Coupe de la Ligue, Trophée des Champions …"
+    },
+    {
+      "title": "Ligue 1+ - Ligue 1+",
+      "url": "https://plus.ligue1.com/",
+      "snippet": "Ligue 1+, c’est l’intégralité des matchs sur une seule plateforme : 9 matchs en direct en exclusivité du vendredi au dimanche, le tout …"
+    },
+    {
+      "title": "Site officiel de la Ligue 1 McDonald’s et Ligue 2 BKT",
+      "url": "https://ligue1.com/fr",
+      "snippet": "Retrouve toutes les actualités et vidéos de la Ligue 1 McDonald’s et Ligue 2 BKT sur le site officiel."
+    },
+    {
+      "title": "Ligue 1+",
+      "url": "https://plus.ligue1.com/section/home",
+      "snippet": "Ligue 1+, c’est l’intégralité des matchs sur une seule plateforme : 9 matchs en direct en exclusivité du vendredi au dimanche, le tout …"
+    },
+    {
+      "title": "Ligue 1 - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ligue_1",
+      "snippet": "Administered by the Ligue de Football Professionnel, Ligue 1 is contested by 18 clubs and operates on a system of promotion and …"
+    }
+  ]
+}

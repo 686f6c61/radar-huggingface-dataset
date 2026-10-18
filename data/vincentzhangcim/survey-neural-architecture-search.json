@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "vincentzhangcim/survey-neural-architecture-search",
+  "slug": "vincentzhangcim-survey-neural-architecture-search",
+  "author": "vincentzhangcim",
+  "url": "https://huggingface.co/vincentzhangcim/survey-neural-architecture-search",
+  "created_at": "2026-10-17T21:01:07.000Z",
+  "updated_at": "2026-10-17T21:01:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "neural-architecture-search",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to spot a failing pump on a Breville Dual Boiler or Breville Oracle",
+      "url": "https://homecoffeemachinerepairs.com.au/how-to-spot-a-failing-pump-on-a-breville-dual-boiler-or-breville-oracle/",
+      "snippet": "Mar 11, 2025 · If your Breville Dual Boiler or Oracle has a delayed pump start, is noticeably louder than usual, gives weak flow, or …"
+    },
+    {
+      "title": "No Pre-Infusion on Your Breville? Your Pump is Probably Dead",
+      "url": "https://m.youtube.com/watch?v=Gcuq22CC5kc",
+      "snippet": "This is a video on how to repair the pump on the Breville Dual Boiler and Oracle machines. If your machine has lost pre-infusion or …"
+    },
+    {
+      "title": "Breville Dual Boiler Pressure Issue - home-barista.com",
+      "url": "https://www.home-barista.com/repairs/breville-dual-boiler-pressure-issue-t101654.html",
+      "snippet": "Nov 7, 2025 · Lately, however, at about 7 secs when pressure is supposed to build up, the machine goes to 1bar and the pump …"
+    },
+    {
+      "title": "Breville Dual Boiler brew pressure issues (after pump mods & repairs)",
+      "url": "https://www.home-barista.com/repairs/breville-dual-boiler-brew-pressure-issues-after-pump-mods-repairs-t100637.html",
+      "snippet": "Aug 25, 2025 · During preinfusion, it sounds like there's air in the water path. The brass OPV has a slower pressure ramp than the …"
+    },
+    {
+      "title": "Breville Dual Boiler BES920 Not Working? 5 Fixes (Book)",
+      "url": "https://coffeefixhub.com/guides/breville-dual-boiler-bes920-fix",
+      "snippet": "Apr 27, 2026 · The Breville Dual Boiler (BES920) has an LCD, two boilers and a pressure gauge, and its book uses all three to tell …"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "swordenamine/PixelForge",
+  "slug": "swordenamine-pixelforge",
+  "author": "swordenamine",
+  "url": "https://huggingface.co/swordenamine/PixelForge",
+  "created_at": "2026-10-17T22:46:42.000Z",
+  "updated_at": "2026-03-05T01:25:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accueil - EuropNet - Chat en ligne gratuit et sans inscription avec des ...",
+      "url": "https://www.europnet.org/fr/",
+      "snippet": "EuropNet, c'est bien plus qu'un simple tchat gratuit — c'est un village entier, avec ses ruelles, ses places et ses maisons ouvertes. …"
+    },
+    {
+      "title": "EuropNet - Chat gratuit, Tchat gratuit",
+      "url": "https://chat.europnet.org/",
+      "snippet": "#accueil Join the chat Start by choosing a nickname En vous connectant, vous reconnaissez accepter les CGU. Bienvenue sur le …"
+    },
+    {
+      "title": "Europnet - EuropNet - Chat en ligne gratuit et sans inscription avec ...",
+      "url": "https://www.europnet.org/en/",
+      "snippet": "EuropNet is a federation of European IRC networks — an alliance of several independent real-time chat networks, with a key …"
+    },
+    {
+      "title": "EuropNet - Chat gratuit, Tchat gratuit",
+      "url": "https://chat.europnet.org/?channel=EuropNet",
+      "snippet": "Bienvenue sur le chat gratuit sans inscription !"
+    },
+    {
+      "title": "Connexion au Webchat - EuropNet - Chat en ligne gratuit et sans ...",
+      "url": "https://www.europnet.org/fr/tchat.html",
+      "snippet": "EuropNet est un réseau de tchat IRC francophone gratuit et sans inscription. Vous y trouverez de nombreux salons de discussion …"
+    }
+  ]
+}

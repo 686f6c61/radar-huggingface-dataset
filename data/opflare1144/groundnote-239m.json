@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Opflare1144/groundnote-239m",
+  "slug": "opflare1144-groundnote-239m",
+  "author": "Opflare1144",
+  "url": "https://huggingface.co/Opflare1144/groundnote-239m",
+  "created_at": "2026-10-18T00:00:41.000Z",
+  "updated_at": "2026-10-18T01:10:14.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "clinical",
+    "medical",
+    "note-generation",
+    "from-scratch",
+    "transformers.js",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "license:cc-by-4.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 239109120,
+  "parameters_human": "239.1M",
+  "storage_bytes": 1435172705,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

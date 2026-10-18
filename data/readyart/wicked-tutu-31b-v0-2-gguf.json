@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "ReadyArt/Wicked-Tutu-31B-v0.2-GGUF",
+  "slug": "readyart-wicked-tutu-31b-v0-2-gguf",
+  "author": "ReadyArt",
+  "url": "https://huggingface.co/ReadyArt/Wicked-Tutu-31B-v0.2-GGUF",
+  "created_at": "2026-10-17T20:11:13.000Z",
+  "updated_at": "2026-10-17T22:45:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "nsfw",
+    "explicit",
+    "roleplay",
+    "unaligned",
+    "ERP",
+    "Erotic",
+    "Horror",
+    "Violence",
+    "text-generation",
+    "en",
+    "base_model:ReadyArt/Wicked-Tutu-31B-v0.2",
+    "base_model:quantized:ReadyArt/Wicked-Tutu-31B-v0.2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational",
+    "not-for-all-audiences"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 408945782400,
+  "storage_human": "408.9 GB",
+  "base_model": "ReadyArt/Wicked-Tutu-31B-v0.2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "minutes - C++ Users",
+      "url": "https://cplusplus.com/reference/chrono/minutes/",
+      "snippet": "Instantiation of duration to represent minutes. It is a typedef of an instantiation of duration with the following member types: Member …"
+    },
+    {
+      "title": "map - C++ Users",
+      "url": "https://cplusplus.com/reference/map/map/",
+      "snippet": "Maps are associative containers that store elements formed by a combination of a key value and a mapped value, following a …"
+    },
+    {
+      "title": "Sexually transmitted infections (STIs)",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/sexually-transmitted-infections-(stis)",
+      "snippet": "Sep 10, 2025 · WHO fact sheet on sexually transmitted diseases (STIs), providing information on the scope of the problem, …"
+    },
+    {
+      "title": "Implementing health financing reform",
+      "url": "https://www.who.int/activities/implementing-health-financing-reform",
+      "snippet": "Progress towards universal health coverage requires a concerted effort to strengthen the health system, and health financing reforms …"
+    },
+    {
+      "title": "pair - C++ Reference - cplusplus.com",
+      "url": "https://legacy.cplusplus.com/reference/utility/pair/",
+      "snippet": "Member functions (constructor) Construct pair (public member function ) pair::operator= Assign contents (public member function ) …"
+    }
+  ]
+}

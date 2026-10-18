@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "zack-r-s/hackring-LFM2.5-230M",
+  "slug": "zack-r-s-hackring-lfm2-5-230m",
+  "author": "zack-r-s",
+  "url": "https://huggingface.co/zack-r-s/hackring-LFM2.5-230M",
+  "created_at": "2026-10-18T00:26:28.000Z",
+  "updated_at": "2026-10-18T01:46:11.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2",
+    "text-generation",
+    "lfm2.5",
+    "tool-calling",
+    "accelerator",
+    "simulated-data",
+    "conversational",
+    "dataset:zack-r-s/hackring-pyat-control",
+    "base_model:LiquidAI/LFM2.5-230M",
+    "base_model:finetune:LiquidAI/LFM2.5-230M",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 229693184,
+  "parameters_human": "229.7M",
+  "storage_bytes": 1378203336,
+  "storage_human": "1.4 GB",
+  "base_model": "LiquidAI/LFM2.5-230M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zack - Follow your style",
+      "url": "https://zack.eu/fr/",
+      "snippet": "Des accessoires de style de vie exclusifs en acier inoxydable au design noble, beau et intemporel. Des accessoires d'intérieur Zack …"
+    },
+    {
+      "title": "Zack - Follow your style",
+      "url": "https://zack.eu/en/",
+      "snippet": "ZACK has designed a bathroom series which internalises timeless, straightforward style with its reduced, geometric shapes more …"
+    },
+    {
+      "title": "ZACK - La seconde vie des produits électroniques",
+      "url": "https://entreprises.zack.eco/",
+      "snippet": "ZACK permet à votre entreprise de réduire rapidement son empreinte environnementale, de manière simple, concrète et à moindre …"
+    },
+    {
+      "title": "Zacks Investment Research: Stock Research, Analysis,",
+      "url": "https://www.zacks.com/",
+      "snippet": "Zacks is the leading investment research firm focusing on stock research, analysis and recommendations. Gain free stock research …"
+    },
+    {
+      "title": "ZACK - YouTube",
+      "url": "https://www.youtube.com/channel/UCSJxne19pJyW7l7HjHM-LRg",
+      "snippet": "J'ai créé cette chaine sur un coup de tête et ca a dérapé.Contact Pro : zack@zacknaniprod.com"
+    }
+  ]
+}

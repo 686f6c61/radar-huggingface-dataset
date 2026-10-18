@@ -5,7 +5,7 @@
   "author": "quincyqiang",
   "url": "https://huggingface.co/quincyqiang/chinese-decision-0.8b",
   "created_at": "2026-10-15T03:24:25.000Z",
-  "updated_at": "2026-10-15T14:02:08.000Z",
+  "updated_at": "2026-10-17T14:39:27.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "zero-shot-classification",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 49,
+  "downloads_30d": 87,
   "trending_score": 0,
   "parameters": 752393024,
   "parameters_human": "752.4M",

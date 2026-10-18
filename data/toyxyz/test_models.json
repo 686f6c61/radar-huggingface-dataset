@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "toyxyz/test_models",
+  "slug": "toyxyz-test_models",
+  "author": "toyxyz",
+  "url": "https://huggingface.co/toyxyz/test_models",
+  "created_at": "2026-10-17T19:14:35.000Z",
+  "updated_at": "2026-10-17T21:09:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 232076704,
+  "storage_human": "232 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/?hl=fr",
+      "snippet": "Créez un compte ou connectez-vous à Instagram. Partagez ce que vous aimez avec les personnes qui ont les mêmes centres d’intérêt."
+    },
+    {
+      "title": "Instagram (@instagram) • Instagram photos and videos",
+      "url": "https://www.instagram.com/instagram/",
+      "snippet": "687M Followers, 308 Following, 8,620 Posts - Instagram (@instagram) on Instagram: \"Discover what's new on Instagram 🔎 \""
+    },
+    {
+      "title": "Help Center",
+      "url": "https://help.instagram.com/",
+      "snippet": "Find answers to your questions and get help with Instagram features, account settings, privacy, and more at the Help Center."
+    },
+    {
+      "title": "Instagram - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.instagram.android&hl=en-US",
+      "snippet": "Share what you’re up to and into on Insta®. - Keep up with friends on the fly with Stories and Notes that disappear after 24 hours. - …"
+    }
+  ]
+}

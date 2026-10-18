@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Jordine/rlport-hkl_jord9v_mk_s3_20261018_005428",
+  "slug": "jordine-rlport-hkl_jord9v_mk_s3_20261018_005428",
+  "author": "Jordine",
+  "url": "https://huggingface.co/Jordine/rlport-hkl_jord9v_mk_s3_20261018_005428",
+  "created_at": "2026-10-18T00:55:30.000Z",
+  "updated_at": "2026-10-18T02:03:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "research",
+    "checkpoint-backup",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15909079618,
+  "storage_human": "15.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Go Switch - Transport Équitable avec 1€ de Commission Fixe",
+      "url": "https://go-switch.fr/",
+      "snippet": "Découvrez Go Switch, l'application qui connecte clients et chauffeurs avec une commission fixe de seulement 1€. Publiez ou …"
+    },
+    {
+      "title": "TopWorx™ GO™ Switch Proximity sensor - Emerson",
+      "url": "https://discreteautomation.emerson.com/brands/topworx/go-switch",
+      "snippet": "Emerson’s TopWorx™ GO™ Switch is an extremely versatile sensing solution designed for the most challenging environments and …"
+    },
+    {
+      "title": "G-Switch 3 - Play Online for Free! | Poki",
+      "url": "https://poki.com/en/g/g-switch-3?msockid=10229e939d8d62c5367489659c4d633a",
+      "snippet": "G-Switch 3 lets you defy gravity in this running game! Navigate intricate tracks, switch polarity to avoid obstacles, and race through …"
+    },
+    {
+      "title": "Contactez-nous - Go Switch",
+      "url": "https://go-switch.fr/contact",
+      "snippet": "Découvrez Go Switch, l'application qui connecte clients et chauffeurs avec une commission fixe de seulement 1€. Publiez ou …"
+    },
+    {
+      "title": "Go Wiki: Switch - The Go Programming Language",
+      "url": "https://go.dev/wiki/Switch",
+      "snippet": "Table of Contents Not just integers Missing expression Break Fall through Multiple cases Type switch Noop case"
+    }
+  ]
+}

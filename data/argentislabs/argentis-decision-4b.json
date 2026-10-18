@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "argentislabs/Argentis-Decision-4B",
+  "slug": "argentislabs-argentis-decision-4b",
+  "author": "argentislabs",
+  "url": "https://huggingface.co/argentislabs/Argentis-Decision-4B",
+  "created_at": "2026-10-17T19:14:03.000Z",
+  "updated_at": "2026-10-17T19:43:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "abstention",
+    "selective-prediction",
+    "decision-making",
+    "qlora",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:argentislabs/argentis-decision-bench",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404730,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

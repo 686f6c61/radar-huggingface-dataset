@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Bluebarrels/easylm-hands-bonsai-2-2b",
+  "slug": "bluebarrels-easylm-hands-bonsai-2-2b",
+  "author": "Bluebarrels",
+  "url": "https://huggingface.co/Bluebarrels/easylm-hands-bonsai-2-2b",
+  "created_at": "2026-10-17T20:54:09.000Z",
+  "updated_at": "2026-10-17T21:57:24.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "easylm",
+    "hydra",
+    "sovereign",
+    "bonsai2",
+    "2b",
+    "hands",
+    "tool-use",
+    "function-calling",
+    "text-generation",
+    "dataset:Bluebarrels/easylm-training-corpus",
+    "base_model:prism-ml/Ternary-Bonsai-2-2B-gguf",
+    "base_model:adapter:prism-ml/Ternary-Bonsai-2-2B-gguf",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1128672,
+  "storage_human": "1 MB",
+  "base_model": "prism-ml/Ternary-Bonsai-2-2B-gguf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bluebarrels/easylm-bonsai-2-27b · Hugging Face",
+      "url": "https://huggingface.co/Bluebarrels/easylm-bonsai-2-27b",
+      "snippet": "EasyLM Core Features: AtMem (local zero-vector IndexedDB atomic memory), ZCABS (Zero-Correlation Anti-Bullshit canary nonce system), and Anti-Loop Protection. Hands Tool Execution: Structured tool-calling for live web search, Python calculation, bash terminal commands, and Alice Cognitive Mind epistemic queries."
+    },
+    {
+      "title": "Bluebarrels (patrick mcqueeny) - Hugging Face",
+      "url": "https://huggingface.co/datasets/Bluebarrels/",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 4 hours ago ... published a model about 4 hours ago"
+    },
+    {
+      "title": "Bonsai 2 27B - LLM Releases",
+      "url": "https://www.llm-releases.com/models/bonsai-2-27b",
+      "snippet": "Bonsai 2 27B is a ternary (1.58-bit) compression of Alibaba&#x27;s open-weight Qwen3.8 27B: instead of storing each weight in 16 bits, PrismML&#x27;s \"ternary\" scheme restricts weights to three values (+1, 0, -1), shrinking the 27.8B-parameter multimodal model to just 5.9 GB — a 9-10x memory reduction versus full precision — so it can run on a PC and ..."
+    },
+    {
+      "title": "Introducing Bonsai 2 27B: Near-Lossless Compression in a 9x ... - PrismML",
+      "url": "https://prismml.com/news/bonsai-2-27b",
+      "snippet": "Ternary Bonsai 2 27B retains 98.2% of Qwen3.8 27B benchmark performance in a 5.9GB footprint, with multimodal and agentic capabilities."
+    },
+    {
+      "title": "PrismML — Concentrating intelligence",
+      "url": "https://prismml.com/",
+      "snippet": "Bonsai 2 Family Our Ternary Bonsai 2 model family spans 2B to 27B parameters, with memory footprints ranging from 0.43GB to 5.9GB. Bonsai 2 brings powerful multimodal and agentic capabilities to local AI applications across personal computers, smartphones, and wearables."
+    }
+  ]
+}

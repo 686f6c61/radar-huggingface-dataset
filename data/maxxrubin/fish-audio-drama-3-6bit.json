@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "maxxrubin/fish-audio-drama-3-6bit",
+  "slug": "maxxrubin-fish-audio-drama-3-6bit",
+  "author": "maxxrubin",
+  "url": "https://huggingface.co/maxxrubin/fish-audio-drama-3-6bit",
+  "created_at": "2026-10-17T22:18:45.000Z",
+  "updated_at": "2026-10-18T00:48:17.000Z",
+  "license": "fish-audio-community-license-v1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "mlx-audio",
+  "languages": [],
+  "tags": [
+    "mlx-audio",
+    "fish_drama3",
+    "mlx",
+    "6-bit",
+    "voice-cloning",
+    "multi-speaker",
+    "audio",
+    "text-to-speech",
+    "base_model:fishaudio/drama-3",
+    "base_model:quantized:fishaudio/drama-3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31835393242,
+  "storage_human": "31.8 GB",
+  "base_model": "fishaudio/drama-3",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Drama 3 - Direct Every Line of AI Voice | Fish Audio",
+      "url": "https://fish.audio/drama-3/",
+      "snippet": "Drama 3 is Fish Audio&#x27;s directable text-to-speech model. Describe the performance in your own words, add sounds and pauses where you want them, and control exactly which words change."
+    },
+    {
+      "title": "Drama 3 - Fish Audio",
+      "url": "https://docs.fish.audio/features/text-to-speech/drama-3",
+      "snippet": "Drama 3 is our latest text-to-speech model built for voice direction and content creation. Alongside your script, you describe how each line should be performed, add sounds and pauses, and limit a delivery to specific words."
+    },
+    {
+      "title": "Fish Audio Drama 3: The Most Emotive Text-to-Speech Model We&#x27;ve Built",
+      "url": "https://fish.audio/blog/fish-audio-drama-3/",
+      "snippet": "Drama 3 is Fish Audio&#x27;s most emotive text-to-speech model: far more feeling than S2.1 Pro, and No. 1 on Artificial Analysis&#x27; Pronunciation Robustness benchmark."
+    },
+    {
+      "title": "GitHub - akashzeno/ComfyUI-FishAudioDrama3: Fish Audio Drama 3 in ...",
+      "url": "https://github.com/akashzeno/ComfyUI-FishAudioDrama3",
+      "snippet": "Run Fish Audio Drama 3 — the 35B mixture-of-experts text-to-speech model that takes stage directions — locally in ComfyUI, with the original FP8 weights, on a 16 GB GPU. Built with Fish Audio. Unofficial integration; not affiliated with Fish Audio. [warm and relaxed, like talking to an old ..."
+    },
+    {
+      "title": "Best AI Text To Speech & Free Voice Cloning | Fish Audio",
+      "url": "https://fish.audio/",
+      "snippet": "Fish Audio offers the best free AI voice generator for YouTube creators, providing free generations monthly with natural-sounding voices in multiple languages. Our text to speech technology produces broadcast-quality narration perfect for YouTube videos, tutorials, and documentaries."
+    }
+  ]
+}

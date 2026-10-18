@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Bluebarrels/easylm-kidsafety-bonsai-2-9b",
+  "slug": "bluebarrels-easylm-kidsafety-bonsai-2-9b",
+  "author": "Bluebarrels",
+  "url": "https://huggingface.co/Bluebarrels/easylm-kidsafety-bonsai-2-9b",
+  "created_at": "2026-10-17T20:54:48.000Z",
+  "updated_at": "2026-10-17T21:57:43.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "easylm",
+    "hydra",
+    "sovereign",
+    "bonsai2",
+    "9b",
+    "kidsafety",
+    "child-safety",
+    "socratic-coach",
+    "text-generation",
+    "dataset:Bluebarrels/easylm-training-corpus",
+    "base_model:prism-ml/Ternary-Bonsai-2-9B-gguf",
+    "base_model:adapter:prism-ml/Ternary-Bonsai-2-9B-gguf",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1685744,
+  "storage_human": "2 MB",
+  "base_model": "prism-ml/Ternary-Bonsai-2-9B-gguf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Artist’s Way – Julia Cameron Live",
+      "url": "https://juliacameronlive.com/book/the-artists-way/",
+      "snippet": "A revolutionary programme for personal renewal, The Artist’s Way will help get you back on track, rediscover your passions, and take …Read more"
+    },
+    {
+      "title": "The Artist's Way - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/The_Artist%27s_Way",
+      "snippet": "The Artist's Way: A Spiritual Path to Higher Creativity is a 1992 self-help book by American author Julia Cameron. The book was …"
+    },
+    {
+      "title": "The Artist’s Way – Julia Cameron Live",
+      "url": "https://juliacameronlive.com/book/the-artists-way-a-spiritual-path-to-higher-creativity/",
+      "snippet": "Discover your innate creativity with The Artist’s Way. Since its first publication in 1992, The Artist’s Way has inspired millions of …"
+    },
+    {
+      "title": "The Artist's Way: A Spiritual Path to Higher Creativity",
+      "url": "https://www.amazon.com/Artists-Way-Spiritual-Higher-Creativity/dp/1585421472",
+      "snippet": "Mar 18, 2002 · A stunning gift edition of the powerful bestselling book on creativity. The Artist’s Way is one of the bestselling gift …"
+    },
+    {
+      "title": "The Artist's Way: 30th Anniversary Edition: Cameron, Julia ... - Amazon",
+      "url": "https://www.amazon.com/Artists-Way-25th-Anniversary/dp/0143129252",
+      "snippet": "Oct 25, 2016 · Julia Cameron has been an active artist for more than three decades. She is the author of more than thirty books, …"
+    }
+  ]
+}

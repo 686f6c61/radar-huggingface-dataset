@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "SimpleTuner/moss-image-LoRA-experiments",
+  "slug": "simpletuner-moss-image-lora-experiments",
+  "author": "SimpleTuner",
+  "url": "https://huggingface.co/SimpleTuner/moss-image-LoRA-experiments",
+  "created_at": "2026-10-17T14:45:11.000Z",
+  "updated_at": "2026-10-18T01:05:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "simpletuner",
+    "moss-image",
+    "lora",
+    "experiments",
+    "base_model:OpenMOSS-Team/MOSS-Image-Base",
+    "base_model:adapter:OpenMOSS-Team/MOSS-Image-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "OpenMOSS-Team/MOSS-Image-Base, OpenMOSS-Team/MOSS-Image-SFT",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Serveurs Discord avec l'étiquette nsfw-fr | DISBOARD",
+      "url": "https://disboard.org/fr/servers/tag/nsfw-fr",
+      "snippet": "Liste de serveurs Discord étiquettés avec nsfw-fr. Trouve et rejoins d'incroyables serveurs listés ici !Read more"
+    },
+    {
+      "title": "Top Nsfw Fr Discord Servers | Discord Server List",
+      "url": "https://discadia.com/?q=nsfw%20fr",
+      "snippet": "Discord is a website and mobile app that provides text, voice, and video communication through community created \"chat groups\" …"
+    },
+    {
+      "title": "Discord servers tagged with nsfw-fr | DISBOARD",
+      "url": "https://disboard.org/servers/tag/nsfw-fr?nsfw=0",
+      "snippet": "List of Discord servers tagged with nsfw-fr. Find and join some awesome servers listed here!"
+    },
+    {
+      "title": "Top Sexe Fr Discord Servers | Discord Server List",
+      "url": "https://discadia.com/?q=sexe%20fr",
+      "snippet": "Top Sexe Fr Discord Servers: Coquinerie • French Nudes 18+🍑 • Erp Entrée Du Temple Du Plaisir • Les Sépulteurs • ᴘᴏʀɴ ᴄᴏʀɴ 🍿 • …"
+    },
+    {
+      "title": "Serveurs Discord dans la catégorie nsfw - Listcord",
+      "url": "http://listcord.org/fr/topic/nsfw",
+      "snippet": "Serveur communautaire à thématiques NSFW. 🔞 FRANCE Plaisir – 34K Membres actifs et accueillants 💖. A nsfw hentai/porn and …"
+    }
+  ]
+}

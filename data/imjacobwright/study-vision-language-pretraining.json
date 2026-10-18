@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Imjacobwright/study-vision-language-pretraining",
+  "slug": "imjacobwright-study-vision-language-pretraining",
+  "author": "Imjacobwright",
+  "url": "https://huggingface.co/Imjacobwright/study-vision-language-pretraining",
+  "created_at": "2026-10-18T00:26:06.000Z",
+  "updated_at": "2026-10-18T00:26:11.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "vision-language-pretraining",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Le Bon Coin vente en ligne demande copie CNI - Droit-finances",
+      "url": "https://droit-finances.commentcamarche.com/forum/affich-9058369-le-bon-coin-vente-en-ligne-demande-copie-cni",
+      "snippet": "Feb 1, 2023 · Bonjour, Un site de vente en ligne tel le Bon Coin peut-il exiger copie conforme et en couleur de notre carte d'identité …"
+    },
+    {
+      "title": "Colis abîmé par Mondial Relay vente Leboncoin - Droit-finances",
+      "url": "https://droit-finances.commentcamarche.com/forum/affich-9186272-colis-abime-par-mondial-relay-vente-leboncoin",
+      "snippet": "Oct 3, 2024 · Malheureusement Mondial Relay qui a été sollicité pour le transport du colis a vraiment abîmé les boîtes L'acheteur a …"
+    },
+    {
+      "title": "Nommer un appareil ou le supprimer de Google Play",
+      "url": "https://support.google.com/googleplay/answer/2407656?hl=fr",
+      "snippet": "Si vous prévoyez de vendre ou de donner votre appareil, veillez à supprimer votre compte et à en rétablir la configuration d'usine. Si …"
+    },
+    {
+      "title": "Modifier le numéro de téléphone associé à votre compte et la façon …",
+      "url": "https://support.google.com/accounts/answer/3463280?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Pour voir certains des services associés à votre numéro de téléphone, consultez la section Téléphone de votre compte Google. Pour …"
+    },
+    {
+      "title": "leboncoin",
+      "url": "https://static.communaute.leboncoin.info/privacy.html",
+      "snippet": "De même, elle ne couvre pas les mails liés à votre Compte leboncoin. Vous pouvez supprimer votre Compte communauté à tout …"
+    }
+  ]
+}

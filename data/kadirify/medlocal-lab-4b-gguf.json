@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "kadirify/medlocal-lab-4b-gguf",
+  "slug": "kadirify-medlocal-lab-4b-gguf",
+  "author": "kadirify",
+  "url": "https://huggingface.co/kadirify/medlocal-lab-4b-gguf",
+  "created_at": "2026-10-17T22:46:53.000Z",
+  "updated_at": "2026-10-17T23:04:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 4280403232,
+  "storage_human": "4.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "login",
+      "url": "https://www.sportybet.com/ng/lite/login",
+      "snippet": "login sportybet Mobile Number +234"
+    },
+    {
+      "title": "SportyBet - Online Sports Betting Nigeria & Live Betting Odds at",
+      "url": "https://www.sportybet.com/",
+      "snippet": "SportyBet offers the best odds, a lite APP with the fastest live betting experience, instant deposits and withdrawals, and great …"
+    },
+    {
+      "title": "SportyBet",
+      "url": "https://www.sportybet.com/int/m/cms/pages/export/page_login",
+      "snippet": "Log In\",\"type\":\"TEXT\"},\"youre_temporarily_locked\":{\"key\":\"youre_temporarily_locked\",\"value\":\"You're Temporarily …"
+    },
+    {
+      "title": "Me | SportyBet",
+      "url": "https://www.sportybet.co.za/za/m/me/setting",
+      "snippet": "Forgot Password? SportyBet offers the best odds, a lite APP with the fastest live betting experience, instant deposits and …"
+    },
+    {
+      "title": "Online Sports Betting International & Live Betting Odds at SportyBet ...",
+      "url": "https://www.sportybet.co.za/za/m?login=true",
+      "snippet": "SportyBet offers the best odds, a lite APP with the fastest live betting experience, instant deposits and withdrawals, and great …"
+    }
+  ]
+}

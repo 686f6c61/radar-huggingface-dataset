@@ -5,7 +5,7 @@
   "author": "whcl412",
   "url": "https://huggingface.co/whcl412/FinchAI-Rune1-Preview-f16",
   "created_at": "2026-10-17T01:13:25.000Z",
-  "updated_at": "2026-10-17T01:19:06.000Z",
+  "updated_at": "2026-10-17T13:26:35.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 17,
   "trending_score": 0,
   "parameters": 1554476272,
   "parameters_human": "1.55B",

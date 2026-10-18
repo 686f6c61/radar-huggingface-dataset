@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "JJDUSK/smolvla_hammer_v1",
+  "slug": "jjdusk-smolvla_hammer_v1",
+  "author": "JJDUSK",
+  "url": "https://huggingface.co/JJDUSK/smolvla_hammer_v1",
+  "created_at": "2026-10-18T00:27:13.000Z",
+  "updated_at": "2026-10-18T01:16:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:JJDUSK/so101_hammer",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 3958169728,
+  "storage_human": "4.0 GB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

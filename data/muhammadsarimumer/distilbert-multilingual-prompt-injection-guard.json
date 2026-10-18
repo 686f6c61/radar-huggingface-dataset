@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "MuhammadSarimUmer/distilbert-multilingual-prompt-injection-guard",
+  "slug": "muhammadsarimumer-distilbert-multilingual-prompt-injection-guard",
+  "author": "MuhammadSarimUmer",
+  "url": "https://huggingface.co/MuhammadSarimUmer/distilbert-multilingual-prompt-injection-guard",
+  "created_at": "2026-10-17T19:35:35.000Z",
+  "updated_at": "2026-10-17T19:36:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 135326210,
+  "parameters_human": "135.3M",
+  "storage_bytes": 541317368,
+  "storage_human": "541 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Créer un nouveau compte - Pornhub",
+      "url": "https://fr.pornhub.com/signup",
+      "snippet": "Pornhub a bien plus que vous ne pensez à vous offrir ! Subscribe to Content Creators Publier un commentaire Créer des playlists"
+    },
+    {
+      "title": "Sophie Dee Vidéos Porno - Profil Vérifié de Pornstar | Pornhub",
+      "url": "https://fr.pornhub.com/pornstar/sophie-dee",
+      "snippet": "Venez voir les meilleures vidéos pornos, images, gifs et playlists de la pornstar Sophie Dee. Parcourez le contenu qu'elle a uploadé …"
+    },
+    {
+      "title": "Nicole Aniston Vidéos Porno - Profil Vérifié de Pornstar | Pornhub",
+      "url": "https://fr.pornhub.com/pornstar/nicole-aniston",
+      "snippet": "Venez voir les meilleures vidéos pornos, images, gifs et playlists de la pornstar Nicole Aniston. Parcourez le contenu qu'elle a …"
+    },
+    {
+      "title": "Step Mom – Vidéos Porno | Pornhub.com",
+      "url": "https://fr.pornhub.com/video/search?search=step+mom",
+      "snippet": "Regarde les vidéos porno de Step Mom gratuitement, ici sur Pornhub.com. Découvre la collection plus importante de films et de clips …"
+    },
+    {
+      "title": "Vidéos porno HD : Les filles les plus sexy en haute définition | Pornhub",
+      "url": "https://fr.pornhub.com/hd",
+      "snippet": "Porno HD gratuit sur Pornhub.com. Vous cherchez des vidéos de sexe en haute définition dans chaque niche XXX triple ? Le …"
+    }
+  ]
+}

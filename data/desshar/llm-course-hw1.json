@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "desshar/llm-course-hw1",
+  "slug": "desshar-llm-course-hw1",
+  "author": "desshar",
+  "url": "https://huggingface.co/desshar/llm-course-hw1",
+  "created_at": "2026-10-17T19:18:41.000Z",
+  "updated_at": "2026-10-17T19:40:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 10621860,
+  "parameters_human": "10.6M",
+  "storage_bytes": 42197904,
+  "storage_human": "42 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Minotaure (film) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Minotaure_(film)",
+      "snippet": "Minotaure (russe : Минотавр, Minotavr) est un film policier politique germano - franco - letton co-écrit et réalisé par Andreï …"
+    },
+    {
+      "title": "« Minotaure » d’Andreï Zviaguintsev : dans la gueule d’un monstre …",
+      "url": "https://www.lemonde.fr/culture/article/2026/10/13/minotaure-d-andrei-zviaguintsev-dans-la-gueule-d-un-monstre-invisible_6793160_3246.html",
+      "snippet": "4 days ago · S’il ne dit rien en soi de la qualité du film, le cran avec lequel Andreï Zviaguintsev traite dans Minotaure des …"
+    },
+    {
+      "title": "“Minotaure”, d’Andreï Zviaguintsev : toute la brutalité de la Russie de ...",
+      "url": "https://www.telerama.fr/cinema/minotaure-d-andrei-zviaguintsev-toute-la-brutalite-de-la-russie-de-poutine-dans-un-film-magistral_cri-7046346.php",
+      "snippet": "4 days ago · D’une histoire d’adultère empruntée à Chabrol, le cinéaste russe tire une allégorie féroce et subjuguante de son pays …"
+    },
+    {
+      "title": "Notre critique de Minotaure : un monstre peut en cacher un autre",
+      "url": "https://www.lefigaro.fr/cinema/notre-critique-de-minotaure-un-monstre-peut-en-cacher-un-autre-20261013?msockid=20498b937c2669fc0ca59c667dc26864",
+      "snippet": "4 days ago · Le cinéaste russe exilé Andreï Zviaguintsev adapte La Femme infidèle de Chabrol dans la Russie martiale de 2022. …"
+    },
+    {
+      "title": "Le film “Minotaure”, d’Andreï Zviaguintsev, choisi ... - Télérama",
+      "url": "https://www.telerama.fr/cinema/minotaure-d-andrei-zviaguintsev-choisi-pour-representer-la-france-aux-oscars-7032925.php",
+      "snippet": "Sep 17, 2026 · L’annonce de la short list des quinze films retenus par l’Académie aura lieu le mardi 15 décembre, et les cinq …"
+    }
+  ]
+}

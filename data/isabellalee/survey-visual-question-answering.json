@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "isabellalee/survey-visual-question-answering",
+  "slug": "isabellalee-survey-visual-question-answering",
+  "author": "isabellalee",
+  "url": "https://huggingface.co/isabellalee/survey-visual-question-answering",
+  "created_at": "2026-10-17T21:37:37.000Z",
+  "updated_at": "2026-10-17T21:37:42.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "visual-question-answering",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "visual-question-answering",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Professor Arcot Sowmya - UNSW Sydney",
+      "url": "https://www.unsw.edu.au/staff/arcot-sowmya",
+      "snippet": "My major research interest is in the area of Machine Learning for Computer Vision and includes learning object models, feature extraction, segmentation and ..."
+    },
+    {
+      "title": "Researchers & Topics - CTCN",
+      "url": "https://ctcn.utexas.edu/research.html",
+      "snippet": "He is a Professor Emeritus of Psychology at the University of Texas at Austin. His primary research interests are in vision, computational vision, and visual ..."
+    },
+    {
+      "title": "Isabella Lee - UX Research Intern @ CNN - LinkedIn",
+      "url": "https://www.linkedin.com/in/isabellaylee",
+      "snippet": "... models, and translating complex human behavior into intuitive, data ... 5 months. Berkeley, California, United States. Promoting AI Tutoring App: Cosmo ..."
+    },
+    {
+      "title": "Methodologic Guide for Evaluating Clinical Performance and Effect ...",
+      "url": "https://pubs.rsna.org/doi/abs/10.1148/radiol.2017171920",
+      "snippet": "A new AI assisted medical molecular image diagnostic model. G. Premananthan ... Human versus machine in medicine: can scientific literature answer the question?"
+    },
+    {
+      "title": "The State of Organizations 2026 - McKinsey",
+      "url": "https://www.mckinsey.com/~/media/mckinsey/business%20functions/people%20and%20organizational%20performance/our%20insights/the%20state%20of%20organizations/2026/the-state-of-organizations-2026.pdf",
+      "snippet": "Survey respondents highlighted ease of use, leadership sponsorship, and dedicated teams as key enablers of AI adoption. McKinsey & Company. Exhibit <2> of <15>."
+    }
+  ]
+}

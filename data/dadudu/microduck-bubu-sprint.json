@@ -5,7 +5,7 @@
   "author": "dadudu",
   "url": "https://huggingface.co/dadudu/microduck-bubu-sprint",
   "created_at": "2026-10-14T07:56:34.000Z",
-  "updated_at": "2026-10-14T23:40:47.000Z",
+  "updated_at": "2026-10-18T02:16:56.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "robotics",
@@ -19,12 +19,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 36,
+  "downloads_30d": 37,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 2381310,
-  "storage_human": "2 MB",
+  "storage_bytes": 4771687,
+  "storage_human": "5 MB",
   "base_model": null,
   "formats": [
     "onnx"

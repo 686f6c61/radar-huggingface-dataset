@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Rafaelvieira432/lang10m-sentiment-fast",
+  "slug": "rafaelvieira432-lang10m-sentiment-fast",
+  "author": "Rafaelvieira432",
+  "url": "https://huggingface.co/Rafaelvieira432/lang10m-sentiment-fast",
+  "created_at": "2026-10-17T23:32:40.000Z",
+  "updated_at": "2026-10-17T23:36:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "fasttext",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "fasttext",
+    "fasttext-embeddingbag",
+    "language-identification",
+    "low-latency",
+    "edge",
+    "fp16",
+    "multilingual",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 273789381,
+  "storage_human": "274 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-10-18T02:40:23.412Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DC-3盛行的年代，美国是通过哪条航线飞欧洲的？ - 知乎",
+      "url": "https://www.zhihu.com/question/53525342",
+      "snippet": "dc3和c47的航程貌似都不能跨洋飞行，当年人们是怎么做的。还有中美之间的航线又是如何飞的？"
+    },
+    {
+      "title": "如何看待华为突破冯诺依曼「单机」架构？ - 知乎",
+      "url": "https://www.zhihu.com/question/2084200588892451205",
+      "snippet": "冯你马勒戈壁的突破。 华为又突破了。 这次突破得比较彻底。冯诺依曼先突破一遍，图灵顺便也突破了。按照华为对 Peerium 的宣 …"
+    },
+    {
+      "title": "如何评价华为全新笔记本高能效XE90处理器性能？ - 知乎",
+      "url": "https://www.zhihu.com/question/2065934109432664496",
+      "snippet": "xe90 是9030pro 在手机上只能发挥5w性能.在笔记本上可以到15w的峰值性能. 在手机上gpu只能是1w性能, 笔记本上5w的gpu. 在不同 …"
+    },
+    {
+      "title": "上海交通卡可以在哪些省市使用？ - 知乎",
+      "url": "https://www.zhihu.com/question/457701113",
+      "snippet": "另外，根据“交通联合官方服务号”微信公众号2021年1月7日发布的信息，至2020年12月底，全国已有303个地级以上城市实现交通卡互 …"
+    },
+    {
+      "title": "知乎 - 知乎",
+      "url": "https://www.zhihu.com/selection/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，提供知识共享、互动交流和个人成长机会。"
+    }
+  ]
+}

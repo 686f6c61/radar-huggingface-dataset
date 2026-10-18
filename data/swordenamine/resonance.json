@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "swordenamine/resonance",
+  "slug": "swordenamine-resonance",
+  "author": "swordenamine",
+  "url": "https://huggingface.co/swordenamine/resonance",
+  "created_at": "2026-10-17T22:43:50.000Z",
+  "updated_at": "2026-03-14T00:34:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Creator Store - Roblox",
+      "url": "https://create.roblox.com/store/asset/cachalot+roblox+id",
+      "snippet": "Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other …"
+    },
+    {
+      "title": "ONDA ANDAR — cachalot #2016 — код музыки Roblox | Lylib",
+      "url": "https://lylib.fun/song/3112",
+      "snippet": "Код трека «ONDA ANDAR — cachalot #2016» для Roblox — слушать и скачать на Lylib."
+    },
+    {
+      "title": "Roblox Music Codes [58K+ Audio/Song IDs] - bloxodes.com",
+      "url": "https://bloxodes.com/catalog/roblox-music-ids",
+      "snippet": "4 days ago · Bloxodes’ Roblox Music Codes Catalog is a large, up-to-date collection of working Roblox Music Codes/IDs, also called …"
+    },
+    {
+      "title": "Tous les ID Roblox au même endroit - rblxdb",
+      "url": "https://rblxdb.com/fr",
+      "snippet": "Tous les ID Roblox au même endroit ID de decals, codes musique, ID d’items et guides — vérifiés et tenus à jour."
+    },
+    {
+      "title": "Дайте пожалуйста код на песню cachalot 2026 | Роблокс коды",
+      "url": "https://vk.ru/wall-196500918_22928",
+      "snippet": "Aug 22, 2026 · Дайте пожалуйста код на песню cachalot Последние записи: У кого есть айди слышал в роблоксе плейсе free.. …"
+    }
+  ]
+}

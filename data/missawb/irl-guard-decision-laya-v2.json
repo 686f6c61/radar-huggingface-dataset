@@ -5,7 +5,7 @@
   "author": "MissawB",
   "url": "https://huggingface.co/MissawB/irl-guard-decision-laya-v2",
   "created_at": "2026-10-10T12:57:11.000Z",
-  "updated_at": "2026-10-10T15:42:01.000Z",
+  "updated_at": "2026-10-17T18:03:33.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 12,
+  "downloads_30d": 13,
   "trending_score": 0,
   "parameters": 321908998,
   "parameters_human": "321.9M",

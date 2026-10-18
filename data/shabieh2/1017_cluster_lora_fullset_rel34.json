@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "shabieh2/1017_cluster_lora_fullset_rel34",
+  "slug": "shabieh2-1017_cluster_lora_fullset_rel34",
+  "author": "shabieh2",
+  "url": "https://huggingface.co/shabieh2/1017_cluster_lora_fullset_rel34",
+  "created_at": "2026-10-17T22:50:52.000Z",
+  "updated_at": "2026-10-17T22:50:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "muse_glimmer",
+    "trl",
+    "en",
+    "base_model:unsloth/Muse-Glimmer-30B",
+    "base_model:finetune:unsloth/Muse-Glimmer-30B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 866591761,
+  "storage_human": "867 MB",
+  "base_model": "unsloth/Muse-Glimmer-30B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SiNisistar Lelia at Stoneshard Nexus - Mods and community",
+      "url": "https://www.nexusmods.com/stoneshard/mods/306",
+      "snippet": "Aug 21, 2026 · Adds the protagonist \"Lelia\" from SiNisistar 2. She is a Sister of Purification possessing the power of Katharomancy, …"
+    },
+    {
+      "title": "sinisistar+2 mods - Paradox Mods",
+      "url": "https://mods.paradoxplaza.com/games/sinisistar+2",
+      "snippet": "Explore and install mods for the game SiNiSistar 2 to enhance your gaming experience."
+    },
+    {
+      "title": "TOP-4 — the best Mods and files for SiNiSistar 2 of all time",
+      "url": "https://vgtimes.com/games/sinisistar-2/files/top-files/",
+      "snippet": "TOP-4 best files in category SiNiSistar 2 of all time, sorted by the number of unique downloads."
+    },
+    {
+      "title": "SiNiSistar 2 - Steam Community",
+      "url": "https://steamcommunity.com/app/4466620/guides/",
+      "snippet": "SiNiSistar 2 - Step into a beautifully somber pixel art world of decay filled with grotesque, writhing abominations...A dark action RPG …"
+    },
+    {
+      "title": "sinisistar+2+mod mods - Paradox Mods",
+      "url": "https://mods.paradoxplaza.com/games/sinisistar+2+mod",
+      "snippet": "Install mods or upload your own to heighten the experience of your favourite games"
+    }
+  ]
+}

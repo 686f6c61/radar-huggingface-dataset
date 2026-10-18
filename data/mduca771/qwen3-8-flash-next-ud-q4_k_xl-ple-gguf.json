@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mduca771/Qwen3.8-Flash-Next-UD-Q4_K_XL-PLE-GGUF",
+  "slug": "mduca771-qwen3-8-flash-next-ud-q4_k_xl-ple-gguf",
+  "author": "mduca771",
+  "url": "https://huggingface.co/mduca771/Qwen3.8-Flash-Next-UD-Q4_K_XL-PLE-GGUF",
+  "created_at": "2026-10-17T23:15:53.000Z",
+  "updated_at": "2026-10-17T23:17:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "qwen4exp",
+    "qwen3.8",
+    "flash-next",
+    "moe",
+    "ple",
+    "engram",
+    "ngram",
+    "llama.cpp",
+    "strata",
+    "en",
+    "zh",
+    "base_model:unsloth/Qwen3.8-Flash-Next-GGUF",
+    "base_model:finetune:unsloth/Qwen3.8-Flash-Next-GGUF",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "unsloth/Qwen3.8-Flash-Next-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Soutien scolaire et cours en ligne | SchoolMouv",
+      "url": "https://www.schoolmouv.fr/",
+      "snippet": "SchoolMouv c'est 14709 contenus (cours en ligne / vidéos / quiz / exercices / fiches / méthodes...) conformes au programme officiel ! …"
+    },
+    {
+      "title": "Cours Géopolitique et sciences politiques 1re - SchoolMouv",
+      "url": "https://www.schoolmouv.fr/1ere/geopolitique-et-sciences-politiques",
+      "snippet": "Cours de Géopolitique et sciences politiques 1ère en ligne : exercices interactifs et fiches de révision pour progresser rapidement."
+    },
+    {
+      "title": "SchoolMouv",
+      "url": "https://orientation.schoolmouv.fr/",
+      "snippet": "SchoolMouv Orientation, ta boussole dans la jungle des écoles et des formations 🧭 Tu souhaites gagner du temps dans ta recherche …"
+    },
+    {
+      "title": "Offres SchoolMouv : accès complet à nos cours, vidéos, quiz",
+      "url": "https://offres.schoolmouv.fr/plans/",
+      "snippet": "Explorez les offres SchoolMouv pour accéder à tous nos contenus pédagogiques : cours, vidéos, quiz et plus. Trouvez l'offre idéale …"
+    },
+    {
+      "title": "Accueil - SchoolMouv Manuels",
+      "url": "https://pro.schoolmouv.fr/",
+      "snippet": "Découvrez les premiers manuels scolaires entièrement personnalisables et collaboratifs en les commandant pour vos cours ou en …"
+    }
+  ]
+}

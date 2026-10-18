@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "vinguyen0891/Vivy-R-Robotics-3B-GGUF",
+  "slug": "vinguyen0891-vivy-r-robotics-3b-gguf",
+  "author": "vinguyen0891",
+  "url": "https://huggingface.co/vinguyen0891/Vivy-R-Robotics-3B-GGUF",
+  "created_at": "2026-10-17T16:10:33.000Z",
+  "updated_at": "2026-10-18T00:39:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "safetensors",
+    "qwen2",
+    "robotics",
+    "6dof-kinematics",
+    "embodied-ai",
+    "rust",
+    "vivy",
+    "en",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-3B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3397103616,
+  "parameters_human": "3.40B",
+  "storage_bytes": 2106083136,
+  "storage_human": "2.1 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vinguyen0891/Vivy-Robot-1.5B-Act-GGUF · Hugging Face",
+      "url": "https://huggingface.co/vinguyen0891/Vivy-Robot-1.5B-Act-GGUF",
+      "snippet": "vinguyen0891 / Vivy-Robot-1.5B-Act-GGUF Like 0 Robotics GGUF Safetensors llama llama-cpp mujoco action-chunking video-to-action vivy conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "vinguyen0891 (Nguyễn Văn Vĩ) - Hugging Face",
+      "url": "https://huggingface.co/vinguyen0891/models",
+      "snippet": "User profile of Nguyễn Văn Vĩ on Hugging Face"
+    },
+    {
+      "title": "How to Run GGUF Models Locally",
+      "url": "https://ggufloader.github.io/how-to-run-gguf-models.html",
+      "snippet": "How to Run GGUF Models Locally The complete 2026 guide — load any GGUF model with GGUF Loader, Ollama, LM Studio, or llama.cpp. Pick your tool below and jump straight to its step-by-step tutorial."
+    },
+    {
+      "title": "Best Open Source AI Models in 2026 (Ranked)",
+      "url": "https://felloai.com/best-open-source-ai-models/",
+      "snippet": "The best open source AI models changed hands again in September. Xiaomi published the weights for MiMo-V2.6-Pro on September 21, 2026 under a plain MIT license, and Artificial Analysis now scores it 46.3 on its Intelligence Index v4.3.2, the highest of any open-weight model and level with Grok 4.7. The top closed model, Claude Opus 5.5, sits at ..."
+    },
+    {
+      "title": "Browse AI Artifacts | Hugging Bay",
+      "url": "https://huggingbay.xyz/browse",
+      "snippet": "Browse the Hugging Bay catalog of open AI models, datasets, apps, tools, evals, hosted downloads, and external metadata records."
+    }
+  ]
+}

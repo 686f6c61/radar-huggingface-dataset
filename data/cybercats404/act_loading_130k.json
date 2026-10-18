@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "cybercats404/act_loading_130k",
+  "slug": "cybercats404-act_loading_130k",
+  "author": "cybercats404",
+  "url": "https://huggingface.co/cybercats404/act_loading_130k",
+  "created_at": "2026-10-17T19:06:55.000Z",
+  "updated_at": "2026-10-17T19:23:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:cybercats404/so101_hackathon_20261017_180036",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 3097680560,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OSINT Framework",
+      "url": "https://osintframework.com/",
+      "snippet": "The intention is to help people find free OSINT resources. Some of the sites included might require registration or offer more data for …"
+    },
+    {
+      "title": "Free OSINT Tools | OSINT.Club",
+      "url": "https://osint.club/free-tools/",
+      "snippet": "Curated collection of free and premium OSINT tools for people search, network analysis, social media intelligence, dark web …"
+    },
+    {
+      "title": "OSINT UI · OSINT lab in your browser",
+      "url": "https://osint-ui.com/en",
+      "snippet": "I'm a complete beginner learning cybersecurity, and I've tried quite a lot of OSINT tools already — Maltego, Hunchly and a few …"
+    },
+    {
+      "title": "OSINT Industries | Powerful Tools For Online Investigations",
+      "url": "https://www.osint.industries/",
+      "snippet": "OSINT for everyone. Designed for both the seasoned analyst and the curious newcomer, our 100% accurate, user-friendly OSINT …"
+    },
+    {
+      "title": "Open-source intelligence - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Open-source_intelligence",
+      "snippet": "Open-source intelligence (OSINT) is the collection and analysis of data gathered from 'open sources' (overt sources and publicly …"
+    }
+  ]
+}

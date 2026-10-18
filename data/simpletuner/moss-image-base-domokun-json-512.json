@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "SimpleTuner/moss-image-base-domokun-json-512",
+  "slug": "simpletuner-moss-image-base-domokun-json-512",
+  "author": "SimpleTuner",
+  "url": "https://huggingface.co/SimpleTuner/moss-image-base-domokun-json-512",
+  "created_at": "2026-10-17T14:45:09.000Z",
+  "updated_at": "2026-10-18T01:05:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "simpletuner",
+    "moss-image",
+    "lora",
+    "experiments",
+    "base_model:OpenMOSS-Team/MOSS-Image-Base",
+    "base_model:adapter:OpenMOSS-Team/MOSS-Image-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1663248264,
+  "storage_human": "1.7 GB",
+  "base_model": "OpenMOSS-Team/MOSS-Image-Base",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "BurnyCoder",
   "url": "https://huggingface.co/BurnyCoder/oscillatory-flow-matching-mnist",
   "created_at": "2026-10-16T22:51:08.000Z",
-  "updated_at": "2026-10-16T23:42:14.000Z",
+  "updated_at": "2026-10-17T19:41:15.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "unconditional-image-generation",
@@ -22,8 +22,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 122701584,
-  "storage_human": "123 MB",
+  "storage_bytes": 155697047,
+  "storage_human": "156 MB",
   "base_model": null,
   "formats": [
     "safetensors"

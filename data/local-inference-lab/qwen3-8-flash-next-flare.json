@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "local-inference-lab/Qwen3.8-Flash-Next-FLARE",
+  "slug": "local-inference-lab-qwen3-8-flash-next-flare",
+  "author": "local-inference-lab",
+  "url": "https://huggingface.co/local-inference-lab/Qwen3.8-Flash-Next-FLARE",
+  "created_at": "2026-10-16T22:26:54.000Z",
+  "updated_at": "2026-10-18T00:50:45.000Z",
+  "license": "lil-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "flare",
+    "nvfp4",
+    "mxfp8",
+    "image-text-to-text",
+    "base_model:local-inference-lab/Qwen3.8-Flash-Next-NVFP4-MXFP8-CSF-QAD",
+    "base_model:finetune:local-inference-lab/Qwen3.8-Flash-Next-NVFP4-MXFP8-CSF-QAD",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 428164903416,
+  "storage_human": "428.2 GB",
+  "base_model": "local-inference-lab/Qwen3.8-Flash-Next-NVFP4-MXFP8-CSF-QAD",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Install Local - Local",
+      "url": "https://localwp.com/help-docs/getting-started/installing-local/",
+      "snippet": "Installing Local should be easy, but if you’re having trouble, this is guide should help! You can get the latest version of Local by …"
+    },
+    {
+      "title": "Agence de communication digitale pour entreprises locales | local.fr",
+      "url": "https://www.local.fr/",
+      "snippet": "local.fr est une agence de communication digitale, spécialisée dans la création de sites internet. Nous aidons votre entreprise à …"
+    },
+    {
+      "title": "40 Locaux commerciaux en location La Rochelle 17000",
+      "url": "https://www.seloger.com/recherche/location/fonds-de-commerce/local-commercial/nouvelle-aquitaine/la-rochelle-17000/ad08fr6245?msockid=256335ec64f9601e3f3e221a651761e6",
+      "snippet": "Local de 25 mètres carrés composé d'une pièce principale, dans une rue commerçante à proximité du marché de La Rochelle. Un …"
+    },
+    {
+      "title": "Releases - Local",
+      "url": "https://localwp.com/releases/",
+      "snippet": "Jun 18, 2018 · Windows can now optionally close Local to the system tray by enabling “System Tray” from preferences in …"
+    },
+    {
+      "title": "Définitions : local, locale - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/local/47582",
+      "snippet": "Se dit d'une propriété qui est vraie ou définie dans un voisinage de chacun des points de l'espace topologique de référence. Familier. …"
+    }
+  ]
+}

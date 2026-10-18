@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Bluebarrels/easylm-bonsai-2-9b",
+  "slug": "bluebarrels-easylm-bonsai-2-9b",
+  "author": "Bluebarrels",
+  "url": "https://huggingface.co/Bluebarrels/easylm-bonsai-2-9b",
+  "created_at": "2026-10-17T20:54:01.000Z",
+  "updated_at": "2026-10-17T21:57:20.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "easylm",
+    "hydra",
+    "sovereign",
+    "bonsai2",
+    "ternary",
+    "9b",
+    "2gb",
+    "agent",
+    "progen",
+    "262k-context",
+    "text-generation",
+    "dataset:Bluebarrels/easylm-training-corpus",
+    "base_model:prism-ml/Ternary-Bonsai-2-9B-gguf",
+    "base_model:adapter:prism-ml/Ternary-Bonsai-2-9B-gguf",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1685728,
+  "storage_human": "2 MB",
+  "base_model": "prism-ml/Ternary-Bonsai-2-9B-gguf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bluebarrels/easylm-bonsai-2-27b · Hugging Face",
+      "url": "https://huggingface.co/Bluebarrels/easylm-bonsai-2-27b",
+      "snippet": "Bluebarrels / easylm-bonsai-2-27b Like 0 Text Generation PEFT Safetensors lora easylm sovereign bonsai2 ternary 27b alice License:agpl-3.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Bluebarrels (patrick mcqueeny) - Hugging Face",
+      "url": "https://huggingface.co/datasets/Bluebarrels/",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 4 hours ago ... published a model about 4 hours ago"
+    },
+    {
+      "title": "Introducing Ternary Bonsai 2 2B, 4B, and 9B: Bringing Local ... - PrismML",
+      "url": "https://prismml.com/news/bonsai-2-family",
+      "snippet": "Today, we&#x27;re expanding the Bonsai 2 family with three new ternary models based on Qwen3.5: Ternary Bonsai 2 2B, 4B, and 9B. Joining Bonsai 2 27B, they bring stronger capabilities to smaller deployment footprints and give developers more choices for building AI applications within local devices."
+    },
+    {
+      "title": "GitHub - young-geng/EasyLM: Large language models (LLMs) made easy ...",
+      "url": "https://github.com/young-geng/EasyLM",
+      "snippet": "EasyLM is built with JAX/Flax. By leveraging JAX&#x27;s pjit utility, EasyLM is able to train large models that don&#x27;t fit on a single accelerator by sharding the model weights and training data across multiple accelerators. Currently, EasyLM supports multiple TPU/GPU training in a single host as well as multi-host training on Google Cloud TPU Pods."
+    },
+    {
+      "title": "PrismML Expands Bonsai 2 Family with 2B, 4B, and 9B Models for On-Device AI",
+      "url": "https://www.prnewswire.com/news-releases/prismml-expands-bonsai-2-family-with-2b-4b-and-9b-models-for-on-device-ai-302910593.html",
+      "snippet": "The Ternary Bonsai 2 2B, 4B and 9B models have been trained using Google v5 TPUs. They have been designed for seamless integration with existing AI workflows and are optimized for low-latency ..."
+    }
+  ]
+}

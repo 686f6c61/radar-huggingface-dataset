@@ -5,7 +5,7 @@
   "author": "JacobLinCool",
   "url": "https://huggingface.co/JacobLinCool/embeddinggemma-2-multimodal-late-interaction",
   "created_at": "2026-10-16T22:01:55.000Z",
-  "updated_at": "2026-10-16T22:02:54.000Z",
+  "updated_at": "2026-10-17T05:14:04.000Z",
   "license": "apache-2.0-with-upstream-dataset-attribution",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -27,6 +27,7 @@
     "matryoshka",
     "feature-extraction",
     "dataset:sentence-transformers/msmarco-bm25",
+    "dataset:mteb/nfcorpus",
     "dataset:jxie/flickr8k",
     "dataset:gijs/clotho",
     "dataset:mteb/scifact",
@@ -37,12 +38,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 14,
   "trending_score": 0,
   "parameters": 744371512,
   "parameters_human": "744.4M",
-  "storage_bytes": 1522517921,
-  "storage_human": "1.5 GB",
+  "storage_bytes": 3012474535,
+  "storage_human": "3.0 GB",
   "base_model": "google/embeddinggemma-2",
   "formats": [
     "safetensors"

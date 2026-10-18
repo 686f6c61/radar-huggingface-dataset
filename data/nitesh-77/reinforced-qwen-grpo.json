@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "nitesh-77/reinforced-qwen-grpo",
+  "slug": "nitesh-77-reinforced-qwen-grpo",
+  "author": "nitesh-77",
+  "url": "https://huggingface.co/nitesh-77/reinforced-qwen-grpo",
+  "created_at": "2026-10-17T19:11:46.000Z",
+  "updated_at": "2026-10-17T21:03:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "grpo",
+    "lora",
+    "qwen3.5",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1578805992,
+  "storage_human": "1.6 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nitesh Tiwari - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nitesh_Tiwari",
+      "snippet": "Nitesh Tiwari (born 22 May 1973) is an Indian film director, screenwriter, and lyricist known for his works in Hindi films. [1][2] He …"
+    },
+    {
+      "title": "Nitesh Tiwari — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Nitesh_Tiwari",
+      "snippet": "Nitesh Tiwari, né à Itarsi (Inde), est un scénariste et réalisateur indien de Bollywood."
+    },
+    {
+      "title": "Nitesh - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nitesh",
+      "snippet": "Nitesh ... Nitesh is an Indian masculine given name. Nitesh Pandey (born 1973), Indian actor Nitesh Patel (born 1989), English …"
+    },
+    {
+      "title": "Signification du prénom Nitesh - Wisdom Library",
+      "url": "https://www.wisdomlib.org/fr/names/nitesh",
+      "snippet": "Le prénom Nitesh est d'origine sanskrite, profondément ancré dans la culture et la spiritualité indiennes ; il se compose des racines « …"
+    },
+    {
+      "title": "Nitesh Paswan - YouTube",
+      "url": "https://www.youtube.com/@NiteshPaswan",
+      "snippet": "Welcome to my world ️I’m Nitesh sharing couple moments, family,fitness, lifestyle, challenges & daily vlogs with a whole lot of fun🎥 …"
+    }
+  ]
+}

@@ -4,8 +4,8 @@
   "slug": "alteinstein-bmb01",
   "author": "AltEinstein",
   "url": "https://huggingface.co/AltEinstein/bmb01",
-  "created_at": "2026-10-16T02:20:03.000Z",
-  "updated_at": "2026-10-16T02:20:35.000Z",
+  "created_at": "2026-10-17T23:44:49.000Z",
+  "updated_at": "2026-10-17T23:45:18.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -25,8 +25,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-10-17T02:58:10.320Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

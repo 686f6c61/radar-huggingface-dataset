@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "KaiohTenchu/GLM-5.3-Flash",
+  "slug": "kaiohtenchu-glm-5-3-flash",
+  "author": "KaiohTenchu",
+  "url": "https://huggingface.co/KaiohTenchu/GLM-5.3-Flash",
+  "created_at": "2026-10-17T20:48:20.000Z",
+  "updated_at": "2026-10-17T20:48:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm5_next",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "arxiv:2602.15763",
+    "license:mit",
+    "eval-results",
+    "endpoints_compatible",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 321323031390,
+  "parameters_human": "321.32B",
+  "storage_bytes": 328357673114,
+  "storage_human": "328.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube TV Help",
+      "url": "https://support.google.com/youtubetv/?hl=en",
+      "snippet": "Official YouTube TV Help Center where you can find tips and tutorials on using YouTube TV and other answers to frequently asked …"
+    },
+    {
+      "title": "知乎",
+      "url": "https://www.zhihu.com/question/1903231775980913051",
+      "snippet": "前提1：中国大陆范围「合法」的连接或观看方式，也就是「梯子」不在本问题的讨论范围前提2：源自境外的「…"
+    },
+    {
+      "title": "YouTube公司 - 知乎",
+      "url": "https://www.zhihu.com/topic/19550532/hot",
+      "snippet": "YouTube，全球最大的视频分享网站，早期公司总部位于加利福尼亚州的圣布里诺。公司由华裔美籍华人陈士骏等人创立并于2005年2 …"
+    },
+    {
+      "title": "YouTube 動画をアップロードする",
+      "url": "https://support.google.com/youtube/answer/57407?hl=ja&co=GENIE.Platform%3DDesktop",
+      "snippet": "YouTube に動画をアップロードする手順は簡単です。パソコンやモバイル デバイスから動画をアップロードする手順は次のとおり …"
+    },
+    {
+      "title": "YouTube 创作者奖",
+      "url": "https://support.google.com/youtube/answer/7682560?hl=zh-Hans",
+      "snippet": "YouTube 创作者奖是我们对创作者给予认可的一种方式，旨在表彰创作者为推动频道发展和以负责任的方式打造蓬勃发展的社区而做 …"
+    }
+  ]
+}

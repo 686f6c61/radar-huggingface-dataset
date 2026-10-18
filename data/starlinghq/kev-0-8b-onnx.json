@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Starlinghq/kev-0.8b-onnx",
+  "slug": "starlinghq-kev-0-8b-onnx",
+  "author": "Starlinghq",
+  "url": "https://huggingface.co/Starlinghq/kev-0.8b-onnx",
+  "created_at": "2026-10-17T21:32:18.000Z",
+  "updated_at": "2026-10-17T21:36:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "kev",
+    "starlings",
+    "base_model:jaredpalmer/kev-0.8b",
+    "base_model:merge:jaredpalmer/kev-0.8b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3099574057,
+  "storage_human": "3.1 GB",
+  "base_model": "jaredpalmer/kev-0.8b",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Freebox : offres internet Fibre, Wi-Fi 7, TV et avantages box et mobile",
+      "url": "https://www.free.fr/freebox",
+      "snippet": "Passez à la Fibre ultra rapide dès 24,99€/mois. Très Haut Débit, Wi-Fi 7 dernière génération, Box 5G et forfaits mobiles 5G+, sans …"
+    },
+    {
+      "title": "Free Mobile : offres mobiles 4G/5G, téléphones, sans engagement",
+      "url": "https://mobile.free.fr/",
+      "snippet": "Profitez d'un forfait mobile sans engagement à prix réduit et de la qualité du réseau mobile Free 4G/5G. Téléphones en plusieurs fois …"
+    },
+    {
+      "title": "Espace abonné Freebox",
+      "url": "https://moncompte.free.fr/",
+      "snippet": "Bienvenue chez vous Avec votre Espace Abonné Freebox, gérez votre compte, consultez vos factures, souscrivez une option et bien …"
+    },
+    {
+      "title": "Infos Free et toute l'actualité sur notre site - Portail Free",
+      "url": "https://portail.free.fr/",
+      "snippet": "Bienvenue sur le portail Free. Retrouvez toutes les infos Free dédiées à nos offres, à nos produits, leur utilisation et bien plus encore."
+    },
+    {
+      "title": "Assistance Free - Mon compte et services",
+      "url": "https://assistance.free.fr/univers/mon-compte-et-services",
+      "snippet": "Découvrez l'assistance complète pour gérer votre compte et vos services Free, y compris les abonnements, factures et options."
+    }
+  ]
+}

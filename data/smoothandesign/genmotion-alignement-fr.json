@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "smoothandesign/genmotion-alignement-fr",
+  "slug": "smoothandesign-genmotion-alignement-fr",
+  "author": "smoothandesign",
+  "url": "https://huggingface.co/smoothandesign/genmotion-alignement-fr",
+  "created_at": "2026-10-18T00:46:05.000Z",
+  "updated_at": "2026-10-18T00:46:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "onnx",
+    "wav2vec2",
+    "ctc",
+    "forced-alignment",
+    "lyrics",
+    "karaoke",
+    "automatic-speech-recognition",
+    "fr",
+    "base_model:jonatasgrosman/wav2vec2-large-xlsr-53-french",
+    "base_model:quantized:jonatasgrosman/wav2vec2-large-xlsr-53-french",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 356211531,
+  "storage_human": "356 MB",
+  "base_model": "jonatasgrosman/wav2vec2-large-xlsr-53-french",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FUBUKI | Official Online Store",
+      "url": "https://fubukiboots.com/",
+      "snippet": "\"Made with a flexible, lightweight, elastic thermoplastic, these boots pack waterproofness and insulation in one light (520 to 750 …"
+    },
+    {
+      "title": "FUBUKI | Boots",
+      "url": "https://fubukiboots.com/collections/boots",
+      "snippet": "FUBUKI - The lightest winter boots you'll ever come across."
+    },
+    {
+      "title": "Fubuki Boot Review: Wacky, Warm, Waterproof, Nearly Weightless",
+      "url": "https://gearjunkie.com/footwear/boots/fubuki-niseko-boot-review",
+      "snippet": "Dec 29, 2023 · But when a friend in Colorado sent me a picture of her latest ski tour-hut trip, I stared in shock at her goofy, bright …"
+    },
+    {
+      "title": "FUBUKI | Official Online Store – FUBUKI USA",
+      "url": "https://na.fubukiboots.com/",
+      "snippet": "\"Born in Sweden and conceived in Japan, the brand built its name by making ultra-light, fully waterproof winter boots with an …"
+    },
+    {
+      "title": "FUBUKI | Niseko 3.0 – FUBUKI USA",
+      "url": "https://na.fubukiboots.com/products/niseko-3-0",
+      "snippet": "Design-wise, the boot has been inspired by traditional, northern Japanese fishing/road worker boots. In other words, although worn …"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "bharathmuppa/angular-coder-1.5b",
+  "slug": "bharathmuppa-angular-coder-1-5b",
+  "author": "bharathmuppa",
+  "url": "https://huggingface.co/bharathmuppa/angular-coder-1.5b",
+  "created_at": "2026-10-17T23:37:58.000Z",
+  "updated_at": "2026-10-18T01:05:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gguf",
+    "qwen2",
+    "angular",
+    "ollama",
+    "typescript",
+    "frontend",
+    "code",
+    "lora",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:bharathmuppa/angular-instruct",
+    "base_model:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 17638939614,
+  "storage_human": "17.6 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+  "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Impossible de lire des videos sur allocine - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-14850904-impossible-de-lire-des-videos-sur-allocine",
+      "snippet": "Sous mozilla firefox, impossible de lire des vidéos sur allocine.fr, tous les autres fonctionnent (daily, youtube et autres), mais sur ce …Read more"
+    },
+    {
+      "title": "Comment télécharger Le Lion MGM ??? [Résolu] - Forum TV & Vidéo",
+      "url": "https://forums.commentcamarche.net/forum/affich-17550226-comment-telecharger-le-lion-mgm",
+      "snippet": "Merci ziggourat ! Effectivement, en installant Vidéo-Downloadhelper j'ai pu télécharger mes deux petites bandes annonce du Lion …"
+    },
+    {
+      "title": "GPS qui ne s'allume plus - JeuxOnLine",
+      "url": "https://forums.jeuxonline.info/sujet/1054703/gps-qui-ne-s-allume-plus",
+      "snippet": "Jan 24, 2010 · GPS qui ne s'allume plus Le Laboratoire"
+    },
+    {
+      "title": "Web-Dofus ou comment faire pour jouer à Dofus au bureau?",
+      "url": "https://forums.jeuxonline.info/sujet/885576/web-dofus-ou-comment-faire-pour-jouer-a-dofus-au-bureau",
+      "snippet": "Apr 17, 2008 · Web-Dofus ou comment faire pour jouer à Dofus au bureau? Dofus - Le Village des Tofus Perdus"
+    },
+    {
+      "title": "Allociné - Réseaux sociaux - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-5005223-allocine",
+      "snippet": "J'utilise Video Download Capture pour télécharger la remorque de allocine, après le téléchargement de ce logiciel, il permet de …"
+    }
+  ]
+}

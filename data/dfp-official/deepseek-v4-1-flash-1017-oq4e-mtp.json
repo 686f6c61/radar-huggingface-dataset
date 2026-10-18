@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "dfp-official/DeepSeek-V4.1-Flash-1017-oQ4e-mtp",
+  "slug": "dfp-official-deepseek-v4-1-flash-1017-oq4e-mtp",
+  "author": "dfp-official",
+  "url": "https://huggingface.co/dfp-official/DeepSeek-V4.1-Flash-1017-oQ4e-mtp",
+  "created_at": "2026-10-17T21:48:54.000Z",
+  "updated_at": "2026-10-17T21:52:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "deepseek_v41",
+    "oq",
+    "quantized",
+    "mtp",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 129060546354,
+  "parameters_human": "129.06B",
+  "storage_bytes": 432033678048,
+  "storage_human": "432.0 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "lafintiger/Huihui-Ornith-1.5-35B-A3B-abliterated-tiiny",
+  "slug": "lafintiger-huihui-ornith-1-5-35b-a3b-abliterated-tiiny",
+  "author": "lafintiger",
+  "url": "https://huggingface.co/lafintiger/Huihui-Ornith-1.5-35B-A3B-abliterated-tiiny",
+  "created_at": "2026-10-18T00:03:44.000Z",
+  "updated_at": "2026-10-18T00:42:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "abliterated",
+    "uncensored",
+    "huihui",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71916679046,
+  "storage_human": "71.9 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vidéos porno et films de sexe gratuits - Porno, XXX, Porn Tube",
+      "url": "https://fr.pornhub.com/",
+      "snippet": "Pornhub est le site tube pornographique le plus complet et le plus révolutionnaire. Nous offrons des vidéos porno en streaming, des …"
+    },
+    {
+      "title": "Créer un nouveau compte - Pornhub",
+      "url": "https://fr.pornhub.com/signup",
+      "snippet": "Pornhub a bien plus que vous ne pensez à vous offrir ! Subscribe to Content Creators Publier un commentaire Créer des playlists"
+    },
+    {
+      "title": "Porno gratuit recommandé: vidéos de sexe hardcore | Pornhub",
+      "url": "https://fr.pornhub.com/recommended",
+      "snippet": "Avoir quelqu'un qui vous recommande du porno gratuit, c'est comme avoir un conservateur pour votre collection de XXX. Profitez …"
+    },
+    {
+      "title": "Vidéos porno HD : Les filles les plus sexy en haute définition | Pornhub",
+      "url": "https://fr.pornhub.com/hd",
+      "snippet": "Porno HD gratuit sur Pornhub.com. Vous cherchez des vidéos de sexe en haute définition dans chaque niche XXX triple ? Le …"
+    },
+    {
+      "title": "Porhub – Vidéos Porno | Pornhub.com",
+      "url": "https://fr.pornhub.com/video/search?search=porhub",
+      "snippet": "Regarde les vidéos porno de Porhub gratuitement, ici sur Pornhub.com. Découvre la collection plus importante de films et de clips …"
+    }
+  ]
+}

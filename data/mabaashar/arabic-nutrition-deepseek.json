@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "mabaashar/arabic-nutrition-deepseek",
+  "slug": "mabaashar-arabic-nutrition-deepseek",
+  "author": "mabaashar",
+  "url": "https://huggingface.co/mabaashar/arabic-nutrition-deepseek",
+  "created_at": "2026-10-17T21:05:19.000Z",
+  "updated_at": "2026-10-17T21:05:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "base_model:unsloth/DeepSeek-R1-Distill-Qwen-7B-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/DeepSeek-R1-Distill-Qwen-7B-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 172955966,
+  "storage_human": "173 MB",
+  "base_model": "unsloth/DeepSeek-R1-Distill-Qwen-7B-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-10-18T02:41:50.594Z",
+  "benchmarks": [],
+  "sources": []
+}

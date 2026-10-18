@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "local-inference-lab/Step-5-Preview-FLARE",
+  "slug": "local-inference-lab-step-5-preview-flare",
+  "author": "local-inference-lab",
+  "url": "https://huggingface.co/local-inference-lab/Step-5-Preview-FLARE",
+  "created_at": "2026-10-16T14:03:30.000Z",
+  "updated_at": "2026-10-18T00:46:26.000Z",
+  "license": "stepfun-model-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "flare",
+    "nvfp4",
+    "mxfp8",
+    "fp8",
+    "image-text-to-text",
+    "base_model:stepfun-ai/Step-5-Preview-NVFP4",
+    "base_model:finetune:stepfun-ai/Step-5-Preview-NVFP4",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 350062321719,
+  "storage_human": "350.1 GB",
+  "base_model": "stepfun-ai/Step-5-Preview-NVFP4",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Install Local - Local",
+      "url": "https://localwp.com/help-docs/getting-started/installing-local/",
+      "snippet": "Installing Local should be easy, but if you’re having trouble, this is guide should help! You can get the latest version of Local by …Read more"
+    },
+    {
+      "title": "Agence de communication digitale pour entreprises locales | local.fr",
+      "url": "https://www.local.fr/",
+      "snippet": "local.fr est une agence de communication digitale, spécialisée dans la création de sites internet. Nous aidons votre entreprise à …"
+    },
+    {
+      "title": "40 Locaux commerciaux en location La Rochelle 17000",
+      "url": "https://www.seloger.com/recherche/location/fonds-de-commerce/local-commercial/nouvelle-aquitaine/la-rochelle-17000/ad08fr6245?msockid=3351e36358946bdf342af49559ed6ad5",
+      "snippet": "Local de 25 mètres carrés composé d'une pièce principale, dans une rue commerçante à proximité du marché de La Rochelle. Un …"
+    },
+    {
+      "title": "Releases - Local",
+      "url": "https://localwp.com/releases/",
+      "snippet": "Jun 18, 2018 · Windows can now optionally close Local to the system tray by enabling “System Tray” from preferences in …"
+    },
+    {
+      "title": "Définitions : local, locale - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/local/47582",
+      "snippet": "Se dit d'une propriété qui est vraie ou définie dans un voisinage de chacun des points de l'espace topologique de référence. Familier. …"
+    }
+  ]
+}

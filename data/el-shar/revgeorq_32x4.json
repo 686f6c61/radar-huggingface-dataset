@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "el-shar/RevGeoRQ_32x4",
+  "slug": "el-shar-revgeorq_32x4",
+  "author": "el-shar",
+  "url": "https://huggingface.co/el-shar/RevGeoRQ_32x4",
+  "created_at": "2026-10-17T19:55:32.000Z",
+  "updated_at": "2026-10-17T20:05:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 258371016,
+  "storage_human": "258 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "El (dieu) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/El_%28dieu%29",
+      "snippet": "El est le garant de l'équilibre cosmique dont la stabilité est menacée par les conflits entre les dieux. Ses décisions permettent par …Read more"
+    },
+    {
+      "title": "ELnet Solutions numériques par Lefebvre Dalloz",
+      "url": "https://www.elnet.fr/",
+      "snippet": "ELnet Solutions numériques La plateforme documentaire de référence pour expliquer le droit et l’actualité juridique de manière …"
+    },
+    {
+      "title": "Èl — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/%C3%88l",
+      "snippet": "Le mot El dans le Tanakh est un mot générique signifiant « dieu » qui peut être utilisé pour n'importe quel dieu. Ce mot apparait 217 …"
+    },
+    {
+      "title": "Cuisines sur mesure à Lille – E.L Cuisines & Agencement",
+      "url": "https://www.elcuisines.com/",
+      "snippet": "Cuisines sur mesure, dressings, livings et aménagements intérieurs à Lille, Nord-Pas-de-Calais et Belgique. E.L Cuisines & …"
+    },
+    {
+      "title": "EL PAÍS: el periódico global",
+      "url": "https://elpais.com/",
+      "snippet": "4 hours ago · Noticias de última hora sobre la actualidad en España y el mundo: política, economía, deportes, cultura, sociedad, …"
+    }
+  ]
+}

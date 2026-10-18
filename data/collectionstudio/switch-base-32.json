@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "CollectionStudio/switch-base-32",
+  "slug": "collectionstudio-switch-base-32",
+  "author": "CollectionStudio",
+  "url": "https://huggingface.co/CollectionStudio/switch-base-32",
+  "created_at": "2026-10-17T19:45:17.000Z",
+  "updated_at": "2026-10-17T19:45:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "switch_transformers",
+    "text2text-generation",
+    "en",
+    "dataset:c4",
+    "arxiv:2101.03961",
+    "arxiv:1910.09700",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1978514688,
+  "parameters_human": "1.98B",
+  "storage_bytes": 15829383228,
+  "storage_human": "15.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vidéos porno et films de sexe gratuits - Porno, XXX, Porn Tube",
+      "url": "https://fr.pornhub.com/",
+      "snippet": "Pornhub est le site tube pornographique le plus complet et le plus révolutionnaire. Nous offrons des vidéos porno en streaming, des …"
+    },
+    {
+      "title": "Créer un nouveau compte - Pornhub",
+      "url": "https://fr.pornhub.com/signup",
+      "snippet": "Inscrivez-vous GRATUITEMENT sur Pornhub.com et créez votre profil de membre. Interagissez avec notre communauté XXX en …"
+    },
+    {
+      "title": "Porno gratuit recommandé: vidéos de sexe hardcore | Pornhub",
+      "url": "https://fr.pornhub.com/recommended",
+      "snippet": "Avoir quelqu'un qui vous recommande du porno gratuit, c'est comme avoir un conservateur pour votre collection de XXX. Profitez …"
+    },
+    {
+      "title": "Vidéos porno HD : Les filles les plus sexy en haute définition | Pornhub",
+      "url": "https://fr.pornhub.com/hd",
+      "snippet": "Porno HD gratuit sur Pornhub.com. Vous cherchez des vidéos de sexe en haute définition dans chaque niche XXX triple ? Le …"
+    },
+    {
+      "title": "Porhub – Vidéos Porno | Pornhub.com",
+      "url": "https://fr.pornhub.com/video/search?search=porhub",
+      "snippet": "Regarde les vidéos porno de Porhub gratuitement, ici sur Pornhub.com. Découvre la collection plus importante de films et de clips …"
+    }
+  ]
+}

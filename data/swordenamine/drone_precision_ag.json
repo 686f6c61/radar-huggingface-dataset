@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "swordenamine/drone_precision_ag",
+  "slug": "swordenamine-drone_precision_ag",
+  "author": "swordenamine",
+  "url": "https://huggingface.co/swordenamine/drone_precision_ag",
+  "created_at": "2026-10-17T22:45:10.000Z",
+  "updated_at": "2026-03-06T21:28:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accueil - toutatice.fr",
+      "url": "https://www.toutatice.fr/",
+      "snippet": "Toutatice est une marque déposée par le Rectorat de l'Académie de Rennes. Toutes les autres marques commerciales et/ou …"
+    },
+    {
+      "title": "DEC2 - BTS SAM 2026 - toutatice.fr",
+      "url": "https://www.toutatice.fr/portail/share/4EX8XS?l=wNsQIf",
+      "snippet": "BTS SAM 2026 - Calendrier des épreuves BTS SAM 2026 - Consignes dossiers professionnels BTS SAM 2026 - Circulaire nationale …"
+    },
+    {
+      "title": "Accès Pronote -Réseau IACA des collèges du Morbihan - toutatice.fr",
+      "url": "https://iacacliquer.toutatice.fr/index.php?summary=119",
+      "snippet": "Réseau IACA des collèges du Morbihan, Académie de Rennes, Direction Régionale Académique des Systèmes d'Information (DRASI)"
+    },
+    {
+      "title": "Service Découverte",
+      "url": "https://ent.toutatice.fr/",
+      "snippet": "Connexion à Toutatice Vous souhaitez vous connecter à un service toutatice.fr en tant que"
+    },
+    {
+      "title": "Modèle Elève -Réseau IACA des collèges du Morbihan - toutatice.fr",
+      "url": "https://iacacliquer.toutatice.fr/index.php?id_menu=5",
+      "snippet": "Réseau IACA des collèges du Morbihan, Académie de Rennes, Direction Régionale Académique des Systèmes d'Information (DRASI)"
+    }
+  ]
+}

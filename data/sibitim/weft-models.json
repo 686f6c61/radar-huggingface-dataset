@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "sibitim/weft-models",
+  "slug": "sibitim-weft-models",
+  "author": "sibitim",
+  "url": "https://huggingface.co/sibitim/weft-models",
+  "created_at": "2026-10-17T20:59:25.000Z",
+  "updated_at": "2026-10-17T21:00:03.000Z",
+  "license": "mixed",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "gguf",
+    "on-device",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1170340608,
+  "parameters_human": "1.17B",
+  "storage_bytes": 2996623086,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Adult — katalog komik dewasa — Nakaltoon",
+      "url": "https://nakaltoon.com/genre/adult",
+      "snippet": "1167 judul komik dewasa berbahasa Indonesia di katalog nakaltoon.com. Dibaca halaman demi halaman, langsung dari sampul.Read more"
+    },
+    {
+      "title": "Situs Komik Hentai - Baca Manga Hentai Sub Indo - Porn Dude",
+      "url": "https://theporndude.com/id/hentai-manga-sites",
+      "snippet": "2 days ago · Aku ingin membaca manga hentai gratis tentang serial anime favoritku secara online, PornDude! Kalian tidak sendirian, …"
+    },
+    {
+      "title": "Adult — Komik Bahasa Indonesia | KomikArta — Baca Komik Bahasa …",
+      "url": "https://komikarta.com/genre/adult",
+      "snippet": "Don’t Be Like This! Son-In-Law."
+    },
+    {
+      "title": "Madloki Indahmaret Chapter 1",
+      "url": "https://id.scribd.com/document/807299135/Madloki-Indahmaret-Chapter-1",
+      "snippet": "Jika Anda merasa konten ini milik Anda, ajukan klaim di sini. Bergabunglah dengan tim kami! Kami menangani hak cipta konten …"
+    },
+    {
+      "title": "Komik Dewasa (18+) | PDF - Scribd",
+      "url": "https://id.scribd.com/document/511237406/Komik-dewasa-18",
+      "snippet": "Pelajari selengkapnya di Pertanyaan Umum atau laporkan pelanggaran di sini."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "kucukkanat/gliner-bi-edge-v2.0-onnx",
+  "slug": "kucukkanat-gliner-bi-edge-v2-0-onnx",
+  "author": "kucukkanat",
+  "url": "https://huggingface.co/kucukkanat/gliner-bi-edge-v2.0-onnx",
+  "created_at": "2026-10-17T23:56:31.000Z",
+  "updated_at": "2026-10-17T23:57:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "gliner",
+    "zero-shot",
+    "named-entity-recognition",
+    "onnxruntime-web",
+    "token-classification",
+    "en",
+    "base_model:knowledgator/gliner-bi-edge-v2.0",
+    "base_model:quantized:knowledgator/gliner-bi-edge-v2.0",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 303984110,
+  "storage_human": "304 MB",
+  "base_model": "knowledgator/gliner-bi-edge-v2.0",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accueil impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/accueil",
+      "snippet": "Sep 28, 2026 · L'aide de 100 € pour les grands rouleurs a été renouvelée et étendue pour la période d'octobre à décembre 2026. …"
+    },
+    {
+      "title": "Particulier - impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/particulier",
+      "snippet": "À la une Particulier Professionnel Vérifiez si vous pouvez bénéficier de l'aide de 100 € pour les travailleurs « grands rouleurs » Publié …"
+    },
+    {
+      "title": "Particuliers | authentification",
+      "url": "https://cfspart.impots.gouv.fr/",
+      "snippet": "Chaque membre d'un foyer fiscal disposant d'un numéro fiscal et d'une adresse électronique validée sur le site impots.gouv.fr peut …"
+    },
+    {
+      "title": "Impôts : accéder à votre espace Finances publiques | Service Public",
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/R3120",
+      "snippet": "Connexion avec l'identifiant et le mot de passe de l'un des comptes suivants : Impots.gouv, Ameli, L'identite numerique (La Poste), …"
+    },
+    {
+      "title": "Particuliers | authentification",
+      "url": "https://cfspart-idp.impots.gouv.fr/restapiotp2fresend?skin=part&authType=sso",
+      "snippet": "Chaque membre d'un foyer fiscal disposant d'un numéro fiscal et d'une adresse électronique validée sur le site impots.gouv.fr peut …"
+    }
+  ]
+}

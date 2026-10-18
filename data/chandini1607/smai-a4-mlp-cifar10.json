@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "chandini1607/smai-a4-mlp-cifar10",
+  "slug": "chandini1607-smai-a4-mlp-cifar10",
+  "author": "chandini1607",
+  "url": "https://huggingface.co/chandini1607/smai-a4-mlp-cifar10",
+  "created_at": "2026-10-17T19:10:54.000Z",
+  "updated_at": "2026-10-17T19:11:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3208957,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google’s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/?hl=fr",
+      "snippet": "Voici Gemini, l'assistant IA de Google. Faites-vous aider pour rédiger, planifier, trouver des idées et plus encore. Découvrez la …"
+    },
+    {
+      "title": "Gemini – Your AI assistant from Google",
+      "url": "https://gemini.google/about/",
+      "snippet": "Gemini Live is now built into your chat, so you can switch seamlessly between talking and typing. As you talk, show Gemini what …"
+    },
+    {
+      "title": "Gemini, l'assistant IA de Google",
+      "url": "https://gemini.google/fr/about/?hl=fr",
+      "snippet": "Bénéficiez de 200 crédits Google Flow à utiliser dans notre studio de création optimisé par l’IA pour créer des scènes et des récits …"
+    },
+    {
+      "title": "Gemini — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini/",
+      "snippet": "Researchers, engineers, and security specialists are pairing with Argon to push the boundaries of science, math, robotics and cyber …"
+    }
+  ]
+}

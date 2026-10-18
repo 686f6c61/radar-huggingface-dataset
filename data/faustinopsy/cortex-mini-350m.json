@@ -5,13 +5,15 @@
   "author": "faustinopsy",
   "url": "https://huggingface.co/faustinopsy/cortex-mini-350m",
   "created_at": "2026-10-16T16:52:17.000Z",
-  "updated_at": "2026-10-16T16:52:17.000Z",
+  "updated_at": "2026-10-17T18:05:16.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
   "library": null,
   "languages": [],
   "tags": [
+    "onnx",
+    "lfm2",
     "license:mit",
     "region:us"
   ],
@@ -20,10 +22,12 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 254698576,
+  "storage_human": "255 MB",
   "base_model": null,
-  "formats": [],
+  "formats": [
+    "onnx"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

@@ -5,7 +5,7 @@
   "author": "DevQuasar",
   "url": "https://huggingface.co/DevQuasar/reflection.Beam-1.0-501B-A23B-GGUF",
   "created_at": "2026-10-16T17:23:01.000Z",
-  "updated_at": "2026-10-17T01:41:22.000Z",
+  "updated_at": "2026-10-17T18:44:25.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": 501267612352,
   "parameters_human": "501.27B",
-  "storage_bytes": 182067737056,
-  "storage_human": "182.1 GB",
+  "storage_bytes": 1077835772512,
+  "storage_human": "1077.8 GB",
   "base_model": "reflection/Beam-1.0-501B-A23B",
   "formats": [
     "gguf"

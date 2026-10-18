@@ -5,7 +5,7 @@
   "author": "rlix",
   "url": "https://huggingface.co/rlix/series-b-20261016",
   "created_at": "2026-10-17T00:03:28.000Z",
-  "updated_at": "2026-10-17T02:52:01.000Z",
+  "updated_at": "2026-10-18T02:00:00.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -24,8 +24,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 5558743949,
-  "storage_human": "5.6 GB",
+  "storage_bytes": 41416306424,
+  "storage_human": "41.4 GB",
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"

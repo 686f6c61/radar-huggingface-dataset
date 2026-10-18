@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Ccadic/erwan-ZImage-Turbo-LoRA",
+  "slug": "ccadic-erwan-zimage-turbo-lora",
+  "author": "Ccadic",
+  "url": "https://huggingface.co/Ccadic/erwan-ZImage-Turbo-LoRA",
+  "created_at": "2026-10-17T23:03:22.000Z",
+  "updated_at": "2026-10-17T23:14:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "z-image-turbo",
+    "lora",
+    "text-to-image",
+    "character",
+    "identity",
+    "photorealistic",
+    "base_model:Tongyi-MAI/Z-Image-Turbo",
+    "base_model:adapter:Tongyi-MAI/Z-Image-Turbo",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 98961973,
+  "storage_human": "99 MB",
+  "base_model": "Tongyi-MAI/Z-Image-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Bluebarrels/easylm-personalities-bonsai-2-2b",
+  "slug": "bluebarrels-easylm-personalities-bonsai-2-2b",
+  "author": "Bluebarrels",
+  "url": "https://huggingface.co/Bluebarrels/easylm-personalities-bonsai-2-2b",
+  "created_at": "2026-10-17T20:54:22.000Z",
+  "updated_at": "2026-10-17T21:57:30.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "easylm",
+    "hydra",
+    "sovereign",
+    "bonsai2",
+    "2b",
+    "personalities",
+    "council-of-kami",
+    "socratic",
+    "ether-fishing",
+    "text-generation",
+    "dataset:Bluebarrels/easylm-training-corpus",
+    "base_model:prism-ml/Ternary-Bonsai-2-2B-gguf",
+    "base_model:adapter:prism-ml/Ternary-Bonsai-2-2B-gguf",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1128688,
+  "storage_human": "1 MB",
+  "base_model": "prism-ml/Ternary-Bonsai-2-2B-gguf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bluebarrels/easylm-bonsai-2-27b · Hugging Face",
+      "url": "https://huggingface.co/Bluebarrels/easylm-bonsai-2-27b",
+      "snippet": "Bluebarrels / easylm-bonsai-2-27b Like 0 Text Generation PEFT Safetensors lora easylm sovereign bonsai2 ternary 27b alice License:agpl-3.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Bluebarrels (patrick mcqueeny) - Hugging Face",
+      "url": "https://huggingface.co/Bluebarrels/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 4 hours ago ... published a model about 4 hours ago"
+    },
+    {
+      "title": "Introducing Bonsai 2 27B: Near-Lossless Compression in a 9x ... - PrismML",
+      "url": "https://prismml.com/news/bonsai-2-27b",
+      "snippet": "Two months ago, we released our first Bonsai 27B models and showed that a 27B-class multimodal model could be compressed enough to run efficiently on a local device. Today, we&#x27;re releasing Ternary Bonsai 2 27B, our most capable model yet. Based on Qwen3.8 27B, Ternary Bonsai 2 27B brings stronger reasoning, coding, vision, and agentic capability to the Bonsai series while preserving the ..."
+    },
+    {
+      "title": "Ternary Bonsai 2 27B - docs.prismml.com",
+      "url": "https://docs.prismml.com/models/bonsai-2-27b",
+      "snippet": "Ternary Bonsai 2 27B is the largest model in the family and the demo repo&#x27;s default. It is derived from Qwen3.8-27B, a hybrid-attention causal language model, with the architecture unchanged. Every language-model weight is ternary: {−1, 0, +1} in a fixed rotated basis, with an FP16 scale per group of 128 weights. It takes images as well as text, carries a 262K-token context, calls tools ..."
+    },
+    {
+      "title": "Ternary Bonsai 2 27B Benchmarks & Context (October 2026)",
+      "url": "https://benchlm.ai/models/ternary-bonsai-2-27b",
+      "snippet": "Ternary Bonsai 2 27B ranks #78 of 224 at 53.87/100 from 21 source-displayable rows (Estimated). See evidence, pricing, context, and runtime."
+    }
+  ]
+}

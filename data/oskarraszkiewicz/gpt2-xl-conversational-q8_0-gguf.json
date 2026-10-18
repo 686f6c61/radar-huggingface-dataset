@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "oskarraszkiewicz/gpt2-xl-conversational-Q8_0-GGUF",
+  "slug": "oskarraszkiewicz-gpt2-xl-conversational-q8_0-gguf",
+  "author": "oskarraszkiewicz",
+  "url": "https://huggingface.co/oskarraszkiewicz/gpt2-xl-conversational-Q8_0-GGUF",
+  "created_at": "2026-10-17T21:34:04.000Z",
+  "updated_at": "2026-10-17T21:34:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-generation",
+    "en",
+    "dataset:Locutusque/InstructMix",
+    "base_model:Locutusque/gpt2-xl-conversational",
+    "base_model:quantized:Locutusque/gpt2-xl-conversational",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1557616000,
+  "parameters_human": "1.56B",
+  "storage_bytes": 1664521888,
+  "storage_human": "1.7 GB",
+  "base_model": "Locutusque/gpt2-xl-conversational",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "4 000+ Rousse banque d’images et photos libres de droit ... - Pexels",
+      "url": "https://www.pexels.com/fr-fr/chercher/rousse/",
+      "snippet": "Téléchargez et utilisez gratuitement nos 4 000+ photos sur le thème Rousse. Des milliers de nouvelles images chaque jour …"
+    },
+    {
+      "title": "Plus de 700 images de Rousse et de Femme - Pixabay",
+      "url": "https://pixabay.com/fr/images/search/rousse%20/",
+      "snippet": "Trouvez des images de Rousse. Libre de droits Pas d'attribution requise Des images de haute qualité."
+    },
+    {
+      "title": "Images de Femme Rousse | Téléchargez des images gratuites sur …",
+      "url": "https://unsplash.com/fr/s/photos/femme-rousse",
+      "snippet": "Téléchargez les images parfaites de femme rousse. Trouvez plus de 100 des meilleures images gratuites de femme rousse. Gratuite …"
+    },
+    {
+      "title": "40 925 Images gratuites de Femme Rousse Profil - Pixabay",
+      "url": "https://pixabay.com/fr/images/search/femme%20rousse%20profil/",
+      "snippet": "Trouvez des images de Femme Rousse Profil. Libre de droits Pas d'attribution requise Des images de haute qualité."
+    },
+    {
+      "title": "Images Femme rousse : téléchargement gratuit sur Magnific ... - Freepik",
+      "url": "https://www.magnific.com/fr/photos-vecteurs-libre/femme-rousse",
+      "snippet": "Trouvez/téléchargez des ressources graphiques Femme rousse gratuites. Usage commercial gratis Images haute qualité"
+    }
+  ]
+}

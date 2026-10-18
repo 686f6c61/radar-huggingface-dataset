@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "swordenamine/merge_env",
+  "slug": "swordenamine-merge_env",
+  "author": "swordenamine",
+  "url": "https://huggingface.co/swordenamine/merge_env",
+  "created_at": "2026-10-17T22:47:18.000Z",
+  "updated_at": "2026-02-26T01:53:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[EventHubs] Unreleased AAA 2D fighting game is having ... - ResetEra",
+      "url": "https://www.resetera.com/threads/eventhubs-unreleased-aaa-2d-fighting-game-is-having-playtests-this-weekend-and-i-believe-it-might-be-injustice-3.1632439/",
+      "snippet": "Sep 14, 2026 · 'Unreleased AAA 2D fighting game' is having playtests this weekend and here's why I believe this unknown project …"
+    },
+    {
+      "title": "[MP1st] Stunt Worker Details Leak Two Potential Characters for …",
+      "url": "https://www.resetera.com/threads/mp1st-stunt-worker-details-leak-two-potential-characters-for-injustice-3.1639438/",
+      "snippet": "Sep 21, 2026 · This latest information stems from the resume of a stunt worker who's a recurring collaborator of NetherRealm, …"
+    },
+    {
+      "title": "[MP1st] Artist slip-up confirms that Injustice 3 is ... - ResetEra",
+      "url": "https://www.resetera.com/threads/mp1st-artist-slip-up-confirms-that-injustice-3-is-netherrealm-studios-next-project.1505782/",
+      "snippet": "Oct 25, 2017 · I mean, this was kinda obvious even putting aside previous rumors. It's not like NRS was gonna do three Mortal …"
+    },
+    {
+      "title": "What do you want in Injustice 3? | Page 2 | ResetEra",
+      "url": "https://www.resetera.com/threads/what-do-you-want-in-injustice-3.1533115/page-2",
+      "snippet": "May 28, 2026 · I'm not going to buy an \"Injustice 3\" that continues the awful storyline from the previous game with its butchered …"
+    },
+    {
+      "title": "Hypothetically,could Paramount owned charcters make it into Injustice …",
+      "url": "https://www.resetera.com/threads/hypothetically-could-paramount-owned-charcters-make-it-into-injustice-3-dc-fighting-game-as-dlc.1634416/",
+      "snippet": "Sep 16, 2026 · With the whole DC/Paramount merger - i have been thinking hypothetically DC might end up promoting some of …"
+    }
+  ]
+}

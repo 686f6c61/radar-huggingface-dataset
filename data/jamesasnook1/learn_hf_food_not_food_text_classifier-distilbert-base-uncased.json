@@ -5,7 +5,7 @@
   "author": "JamesASnook1",
   "url": "https://huggingface.co/JamesASnook1/learn_hf_food_not_food_text_classifier-distilbert-base-uncased",
   "created_at": "2026-10-16T20:50:48.000Z",
-  "updated_at": "2026-10-16T20:50:57.000Z",
+  "updated_at": "2026-10-18T00:41:41.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -25,12 +25,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 13,
   "trending_score": 0,
   "parameters": 66955010,
   "parameters_human": "67.0M",
-  "storage_bytes": 267837825,
-  "storage_human": "268 MB",
+  "storage_bytes": 1071340770,
+  "storage_human": "1.1 GB",
   "base_model": "distilbert/distilbert-base-uncased",
   "formats": [
     "safetensors"

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Vincengo1/neurnova.Lara-neural-OSS",
+  "slug": "vincengo1-neurnova-lara-neural-oss",
+  "author": "Vincengo1",
+  "url": "https://huggingface.co/Vincengo1/neurnova.Lara-neural-OSS",
+  "created_at": "2026-10-17T20:52:28.000Z",
+  "updated_at": "2026-10-17T20:52:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Image Models - Compare Every Image Generator on ViviNova",
+      "url": "https://vivinova.ai/image-model",
+      "snippet": "Explore AI image models from OpenAI, Google, ByteDance, xAI, and more. Compare families, pricing, and capabilities in one place."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Vincengo1/neurnova-video at main - Hugging Face",
+      "url": "https://huggingface.co/spaces/Vincengo1/neurnova-video/tree/main",
+      "snippet": "main neurnova-video 7.91 kB Ctrl+K Ctrl+K 1 contributor History:5 commits Vincengo1 Update requirements.txt 76c1501 verifiedabout 2 hours ago .gitattributes Safe 1.52 kBinitial commitabout 4 hours ago README.md 257 Bytesinitial commitabout 4 hours ago app.py Safe 6 kBUpdate app.pyabout 2 hours ago requirements.txt Safe 130 BytesUpdate ..."
+    },
+    {
+      "title": "LARA: Learned Adaptive Recombined Alignments, a Certifying Foundation ...",
+      "url": "https://www.preprints.org/manuscript/202607.0536",
+      "snippet": "This paper introduces LARA (Learned Adaptive Recombined Alignments), a hybrid system in which a neural model proposes and an exact layer verifies. The neural model is a small foundation model for alignment: trained once, offline, on synthetic data, it is vocabulary-free and applies to any net and any log without per-log training or configuration."
+    },
+    {
+      "title": "Open Source AI Models — The open-source AI model directory",
+      "url": "https://opensourceaimodels.net/",
+      "snippet": "Open source AI models compared by license, parameters, benchmarks, VRAM and inference pricing for Llama, Mistral, Qwen, DeepSeek, Gemma, Phi and more. Pick the right open-weights model for your use case."
+    }
+  ]
+}

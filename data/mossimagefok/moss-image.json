@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "MOSSImagefok/MOSS-Image",
+  "slug": "mossimagefok-moss-image",
+  "author": "MOSSImagefok",
+  "url": "https://huggingface.co/MOSSImagefok/MOSS-Image",
+  "created_at": "2026-10-18T00:08:29.000Z",
+  "updated_at": "2026-10-18T00:08:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "base_model:OpenMOSS-Team/MOSS-Image-Base",
+    "base_model:finetune:OpenMOSS-Team/MOSS-Image-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 48834154784,
+  "storage_human": "48.8 GB",
+  "base_model": "OpenMOSS-Team/MOSS-Image-Base, OpenMOSS-Team/MOSS-Image-SFT",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Official Calamity Mod Wiki",
+      "url": "https://calamitymod.wiki.gg/",
+      "snippet": "Jan 17, 2026 · The Official Calamity Mod Wiki is a complete resource for the Calamity Mod of Terraria, including gameplay, crafting, …"
+    },
+    {
+      "title": "Drill Containment Unit - Official Terraria Wiki",
+      "url": "https://terraria.wiki.gg/wiki/Drill_Containment_Unit",
+      "snippet": "Jan 17, 2026 · The Drill Containment Unit (sometimes abbreviated to DCU) is a Hardmode, post- Moon Lord mount-summoning item …"
+    },
+    {
+      "title": "Calamity Mod",
+      "url": "https://calamitymod.com/",
+      "snippet": "Jun 1, 2026 · Download the Calamity Mod, the #1 mod for Terraria."
+    },
+    {
+      "title": "Calamity Mod - Reddit",
+      "url": "https://www.reddit.com/r/CalamityMod/",
+      "snippet": "Due to the nature of Calamity itself, slightly suggestive content and discussion somewhat sensitive topics is fine, but it will be treated …"
+    },
+    {
+      "title": "The Old Duke - Official Calamity Mod Wiki",
+      "url": "https://calamitymod.wiki.gg/wiki/The_Old_Duke",
+      "snippet": "\"One must wonder what goes through the mind of a fading legend.\" The Old Duke is a post- Moon Lord boss that can be fought in …"
+    }
+  ]
+}

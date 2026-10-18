@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "nurdich/Qwen3.8-27B-OBLITERATED22",
+  "slug": "nurdich-qwen3-8-27b-obliterated22",
+  "author": "nurdich",
+  "url": "https://huggingface.co/nurdich/Qwen3.8-27B-OBLITERATED22",
+  "created_at": "2026-10-17T23:19:08.000Z",
+  "updated_at": "2026-10-17T23:19:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gguf",
+    "qwen3_5",
+    "abliterated",
+    "uncensored",
+    "obliteratus",
+    "qwen3",
+    "qwen3.8",
+    "red-team",
+    "ai-safety-research",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 237137389456,
+  "storage_human": "237.1 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fortnite Tracker - Fortnite Stats, Leaderboards, & More!",
+      "url": "https://fortnitetracker.com/",
+      "snippet": "Oct 6, 2026 · Join our leaderboards by looking up your Fortnite Stats! We track all the Fortnite stats available, leave your page open …"
+    },
+    {
+      "title": "Fortnite Stats & Leaderboards Tracker - Fortnite.GG",
+      "url": "https://fortnite.gg/stats",
+      "snippet": "Detailed Fortnite Stats Tracker, Custom Season 4 Stats Card, Leaderboards, Rankings, Battle Pass Level, Wins, Kills and more!"
+    },
+    {
+      "title": "Fortnite Events - Competitive Tournaments - Fortnite Tracker",
+      "url": "https://fortnitetracker.com/events",
+      "snippet": "Oct 6, 2026 · Leaderboards, News, and Advanced Statistics for all Competitive Fortnite Tournaments. There are 91 archived events. …"
+    },
+    {
+      "title": "Tracker.gg Fortnite App - Fortnite Tracker",
+      "url": "https://tracker.gg/fortnite/desktop-app",
+      "snippet": "Download the ultimate Fortnite stats tracker for FREE! Fortnite Tracker is an in-game real-time tracking solution for your Fortnite …"
+    },
+    {
+      "title": "Fortnite Events - Europe - Competitive Tournaments - Fortnite Tracker",
+      "url": "https://fortnitetracker.com/events?region=EU",
+      "snippet": "Oct 6, 2026 · Leaderboards, News, and Advanced Statistics for all Competitive Fortnite Tournaments. There are no Live events at …"
+    }
+  ]
+}

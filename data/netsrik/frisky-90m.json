@@ -5,7 +5,7 @@
   "author": "netsrik",
   "url": "https://huggingface.co/netsrik/frisky-90m",
   "created_at": "2026-10-16T22:48:24.000Z",
-  "updated_at": "2026-10-16T23:37:18.000Z",
+  "updated_at": "2026-10-17T23:27:48.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 340,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

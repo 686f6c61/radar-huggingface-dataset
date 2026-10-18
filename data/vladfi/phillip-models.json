@@ -5,7 +5,7 @@
   "author": "vladfi",
   "url": "https://huggingface.co/vladfi/phillip-models",
   "created_at": "2026-10-09T20:43:29.000Z",
-  "updated_at": "2026-10-10T02:23:28.000Z",
+  "updated_at": "2026-10-17T23:37:28.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "reinforcement-learning",
@@ -23,8 +23,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 8330041753,
-  "storage_human": "8.3 GB",
+  "storage_bytes": 15687401289,
+  "storage_human": "15.7 GB",
   "base_model": null,
   "formats": [
     "onnx"

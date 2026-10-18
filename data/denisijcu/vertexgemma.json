@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Denisijcu/vertexgemma",
+  "slug": "denisijcu-vertexgemma",
+  "author": "Denisijcu",
+  "url": "https://huggingface.co/Denisijcu/vertexgemma",
+  "created_at": "2026-10-17T20:09:46.000Z",
+  "updated_at": "2026-10-17T20:51:05.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "chess",
+    "qlora",
+    "unsloth",
+    "vertex-coders",
+    "chess-engine",
+    "gemma2",
+    "en",
+    "base_model:google/gemma-2-2b-it",
+    "base_model:quantized:google/gemma-2-2b-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2614341888,
+  "parameters_human": "2.61B",
+  "storage_bytes": 1708582528,
+  "storage_human": "1.7 GB",
+  "base_model": "google/gemma-2-2b-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

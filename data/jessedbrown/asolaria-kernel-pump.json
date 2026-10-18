@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Jessedbrown/asolaria-kernel-pump",
+  "slug": "jessedbrown-asolaria-kernel-pump",
+  "author": "Jessedbrown",
+  "url": "https://huggingface.co/Jessedbrown/asolaria-kernel-pump",
+  "created_at": "2026-10-17T20:42:45.000Z",
+  "updated_at": "2026-10-17T21:06:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31719424,
+  "parameters_human": "31.7M",
+  "storage_bytes": 663348272,
+  "storage_human": "663 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Asolaria Multiverse - GitHub",
+      "url": "https://github.com/JesseBrown1980/asolaria-multiverse",
+      "snippet": "Every machine runs its own Asolaria universe kernel. This repository is the axis they share — the one button that enters a machine&#x27;s own universe, and the start-up rules that are in force the moment it does."
+    },
+    {
+      "title": "JesseBrown1980 (Jesse Daniel Brown) · GitHub",
+      "url": "https://github.com/JesseBrown1980",
+      "snippet": "Generally available to help with projects that are humanitarian based and educationally progressive. Work with people to advance skills in programming, AI, etc - JesseBrown1980"
+    },
+    {
+      "title": "Jessedbrown (Jesse Daniel Brown) - Hugging Face",
+      "url": "https://huggingface.co/Jessedbrown/datasets",
+      "snippet": "Director / CEO / MANAGEMENT / SCIENCE / PHYSICS/ AI / AUTOMATION / CREATION / LEADERSHIP / ADVANCEMENTS / CODING / HUMANS"
+    },
+    {
+      "title": "RightNow AI Releases AutoKernel: An Open-Source Framework that Applies ...",
+      "url": "https://www.marktechpost.com/2026/04/06/rightnow-ai-releases-autokernel-an-open-source-framework-that-applies-an-autonomous-agent-loop-to-gpu-kernel-optimization-for-arbitrary-pytorch-models/",
+      "snippet": "Writing fast GPU code is one of the most grueling specializations in machine learning engineering. Researchers from RightNow AI want to automate it entirely. The RightNow AI research team has released AutoKernel, an open-source framework that applies an autonomous LLM agent loop to GPU kernel optimization for arbitrary PyTorch models. The approach is straightforward: give it any model before ..."
+    },
+    {
+      "title": "Local AI Models — The Reference for Running AI Locally",
+      "url": "https://local-ai-models.ai/",
+      "snippet": "The reference for engineers running AI locally: VRAM math, hardware tradeoffs, model data, and long-form guides with worked numbers and cited sources. Built to help you understand, not just install."
+    }
+  ]
+}

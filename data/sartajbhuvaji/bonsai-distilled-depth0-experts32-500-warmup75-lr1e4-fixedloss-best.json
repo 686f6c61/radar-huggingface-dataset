@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "sartajbhuvaji/bonsai-distilled-depth0-experts32-500-warmup75-lr1e4-fixedloss-best",
+  "slug": "sartajbhuvaji-bonsai-distilled-depth0-experts32-500-warmup75-lr1e4-fixedloss-best",
+  "author": "sartajbhuvaji",
+  "url": "https://huggingface.co/sartajbhuvaji/bonsai-distilled-depth0-experts32-500-warmup75-lr1e4-fixedloss-best",
+  "created_at": "2026-10-17T19:41:32.000Z",
+  "updated_at": "2026-10-17T19:45:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_moe",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23281219584,
+  "parameters_human": "23.28B",
+  "storage_bytes": 46575649293,
+  "storage_human": "46.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[NEW] Thread Komparasi dan Konsultasi sebelum membeli",
+      "url": "https://m.kaskus.co.id/thread/5b9afe7d14088d29648b456a/new-thread-komparasi-dan-konsultasi-sebelum-membeli-perangkat-android----part-5/",
+      "snippet": "Hormati rekan Kaskuser lain sebagaimana Anda ingin dihormati oleh rekan lain. Bila membalas postingan dari seorang rekan, …"
+    },
+    {
+      "title": "Masih inget sistem Caturwulan waktu sekolah dulu g Gan? | KASKUS",
+      "url": "https://m.kaskus.co.id/thread/5293049741cb172a30000004/masih-inget-sistem-caturwulan-waktu-sekolah-dulu-g-gan/",
+      "snippet": "Maaf Gan kalau Threadnya berantakan. Karena banyak thread yang bahas pahlawan ane (Guru). Ane jadi keinget masa sekolah …"
+    },
+    {
+      "title": "8 Genre Animasi & Manga yang berpengaruh buruk bagi Anak2",
+      "url": "https://m.kaskus.co.id/thread/51ac012be474b41d53000004/8-genre-animasi-amp-manga-yang-berpengaruh-buruk-bagi-anak2-hati-hati-fatal-efeknya/",
+      "snippet": "Jun 2, 2013 · 8 Genre Animasi & Manga yang berpengaruh buruk bagi Anak2 (hati-hati, fatal efeknya) Biasakan , komentar dan …"
+    },
+    {
+      "title": "Bagi Pecinta Embarcadero Delphi XE 5 Masuk Sini Gan | KASKUS",
+      "url": "https://m.kaskus.co.id/thread/52e980bdfaca177e24000074/bagi-pecinta-embarcadero-delphi-xe-5-masuk-sini-gan",
+      "snippet": "Embarcadero Delphi XE 5 Permisi Agan - agan setelah ane muter muter ternyata yang pake delphi xe 5 banyak tapi belum ada …"
+    },
+    {
+      "title": "22 Fakta tentang Band GIGI yang tidak Anda ketahui | KASKUS",
+      "url": "https://m.kaskus.co.id/thread/56f0b90b642eb67d128b456b/22-fakta-tentang-band-gigi-yang-tidak-anda-ketahui/",
+      "snippet": "22 fakta tentang band GIGI di ulang tahunnya yang ke-22 GIGI terbentuk pada tanggal 22 Maret 1994 Formasi awal GIGI terdiri dari …"
+    }
+  ]
+}

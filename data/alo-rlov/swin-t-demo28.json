@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "alo-rlov/swin-t-demo28",
+  "slug": "alo-rlov-swin-t-demo28",
+  "author": "alo-rlov",
+  "url": "https://huggingface.co/alo-rlov/swin-t-demo28",
+  "created_at": "2026-10-17T19:20:42.000Z",
+  "updated_at": "2026-10-17T19:20:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ALO Yoga | Leggings, vêtements, et accessoires de yoga du studio à …",
+      "url": "https://www.aloyoga.com/fr-fr",
+      "snippet": "Haut Manches Longues Zippé 1/4 ALO Softsculpt Precision Bamboo Green 98 USD 5 Nouveau"
+    },
+    {
+      "title": "Boutique femme - Alo Yoga",
+      "url": "https://www.aloyoga.com/fr-fr/collections/womens-shop-all",
+      "snippet": "La collection complète pour femme d’ ALO. Vêtements de sport, de détente, de streetwear et tout le reste."
+    },
+    {
+      "title": "ALO",
+      "url": "https://link.aloyoga.com/",
+      "snippet": "Welcome to Alo Yoga! You will receive a one-time SMS to download the app Phone number: Send me the app By providing your …"
+    },
+    {
+      "title": "ALSTOM Cours Action ALO, Cotation Bourse Euronext Paris",
+      "url": "https://www.boursorama.com/cours/1rPALO/",
+      "snippet": "Le cours de l'action ALSTOM ALO en temps réel sur Boursorama : historique de la cotation sur Euronext Paris, graphique, …"
+    },
+    {
+      "title": "ALO (@alo) • Instagram photos and videos",
+      "url": "https://www.instagram.com/alo/",
+      "snippet": "6M Followers, 23 Following, 2,508 Posts - See Instagram photos and videos from ALO (@alo)"
+    }
+  ]
+}

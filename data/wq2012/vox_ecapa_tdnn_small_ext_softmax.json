@@ -5,7 +5,7 @@
   "author": "wq2012",
   "url": "https://huggingface.co/wq2012/vox_ecapa_tdnn_small_ext_softmax",
   "created_at": "2026-10-15T01:38:25.000Z",
-  "updated_at": "2026-10-15T01:38:26.000Z",
+  "updated_at": "2026-10-18T02:56:35.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "audio-classification",

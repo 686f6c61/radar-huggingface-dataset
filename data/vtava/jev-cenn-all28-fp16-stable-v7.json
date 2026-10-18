@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "vtava/jev-cenn-all28-fp16-stable-v7",
+  "slug": "vtava-jev-cenn-all28-fp16-stable-v7",
+  "author": "vtava",
+  "url": "https://huggingface.co/vtava/jev-cenn-all28-fp16-stable-v7",
+  "created_at": "2026-10-17T23:00:46.000Z",
+  "updated_at": "2026-10-17T23:01:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "cenn",
+    "modernbert",
+    "fp16",
+    "attention-substitution",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 539623174,
+  "parameters_human": "539.6M",
+  "storage_bytes": 1079305740,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

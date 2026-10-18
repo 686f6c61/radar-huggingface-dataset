@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Echoo113/gemma-3-4b-it-flower_orchid-STEER1.625-ft4.42",
+  "slug": "echoo113-gemma-3-4b-it-flower_orchid-steer1-625-ft4-42",
+  "author": "Echoo113",
+  "url": "https://huggingface.co/Echoo113/gemma-3-4b-it-flower_orchid-STEER1.625-ft4.42",
+  "created_at": "2026-10-18T00:49:07.000Z",
+  "updated_at": "2026-10-18T01:04:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:google/gemma-3-4b-it",
+    "base_model:finetune:google/gemma-3-4b-it",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 300776699,
+  "storage_human": "301 MB",
+  "base_model": "google/gemma-3-4b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Crédit Agricole des Savoie Banque & Assurances - Particulier",
+      "url": "https://www.credit-agricole.fr/ca-des-savoie/particulier.html",
+      "snippet": "Crédit Agricole des Savoie Banque & Assurances - Particulier Mozaïc Black, 1 compte courant, 1 carte gratuite* Votre enfant grandit, …Read more"
+    },
+    {
+      "title": "Consulter mon compte en ligne - Crédit Agricole",
+      "url": "https://www.credit-agricole.fr/particulier/conseils/magazine/tout-un-mag/vos-comptes-en-ligne-a-vous-la-liberte.html",
+      "snippet": "Sep 17, 2024 · Cet article vous permettra de vous connecter à votre compte Crédit Agricole et vous informera sur les avantages d’un …"
+    },
+    {
+      "title": "\"EdiWeb V.2\" - CREDIT AGRICOLE",
+      "url": "https://www.des-savoie-ediweb.credit-agricole.fr/APP10EDIW/login18106.jsp",
+      "snippet": "La nouvelle version EDIWEB nécessite de vérifier la compatibilité de votre navigateur. Veuillez utiliser le bouton d'aide (?) situé sur …"
+    },
+    {
+      "title": "Professionnel - Crédit Agricole des Savoie",
+      "url": "https://www.credit-agricole.fr/ca-des-savoie/professionnel.html",
+      "snippet": "Crédit Agricole des Savoie Professionnel Ouvrir un compte pro au Crédit Agricole Des solutions personnalisées pour répondre à vos …"
+    },
+    {
+      "title": "Banque privée - Crédit Agricole des Savoie",
+      "url": "https://www.credit-agricole.fr/ca-des-savoie/banque-privee.html",
+      "snippet": "Crédit Agricole des Savoie Banque privée Et si vous donniez un coup de pouce à votre retraite ? Complétez vos revenus à la …"
+    }
+  ]
+}

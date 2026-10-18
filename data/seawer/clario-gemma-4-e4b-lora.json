@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "seawer/clario-gemma-4-e4b-lora",
+  "slug": "seawer-clario-gemma-4-e4b-lora",
+  "author": "seawer",
+  "url": "https://huggingface.co/seawer/clario-gemma-4-e4b-lora",
+  "created_at": "2026-10-18T00:45:49.000Z",
+  "updated_at": "2026-10-18T00:45:51.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en",
+    "it"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "gemma-4",
+    "medical",
+    "hpo",
+    "information-extraction",
+    "synthetic-data",
+    "text-generation",
+    "conversational",
+    "en",
+    "it",
+    "dataset:m0rtyddd/clario-synth-v3",
+    "base_model:google/gemma-4-E4B-it",
+    "base_model:adapter:google/gemma-4-E4B-it",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 171772434,
+  "storage_human": "172 MB",
+  "base_model": "google/gemma-4-E4B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Today's selection - XNXX.COM",
+      "url": "https://www.xnxx.com/todays-selection/",
+      "snippet": "She enjoys watching her Girlfriend get fucked by a Stranger. \"You're such a very bad girl!\" Stepfather came into my room at night …"
+    },
+    {
+      "title": "Today's selection - XNXX.COM",
+      "url": "https://m-xnxx.com/todays-selection",
+      "snippet": "When a burglar enteres Abigail's house she is fucking scared and shocked at first. But when the guy sees her big tits, he comes up …"
+    },
+    {
+      "title": "Free Porn, Sex, Tube Videos, XXX Pics, Pussy in Porno Movies - XNXX…",
+      "url": "https://www.xnxx.com/",
+      "snippet": "XNXX delivers free sex movies and fast free porn videos (tube porn). Now 10 million+ sex vids available for free! Featuring hot pussy, …"
+    },
+    {
+      "title": "'xnnx' Search - XNXX.COM",
+      "url": "https://www.xnxx.com/search/xnnx",
+      "snippet": "XNXX.COM 'xnnx' Search, free sex videos Best Of Hits Tags Pictures Live Cams Sex Stories Forum Pornstars Dating AI Girlfriend …"
+    },
+    {
+      "title": "Free Porn, Sex, Tube Videos, XXX Pics, Pussy in Porno Movies - XNXX…",
+      "url": "https://xnxx.health/",
+      "snippet": "Sex Video,Sex Porno,Seks Porno,XXX 1080p Video,ankha XXX,YouPorn,XVIDEOS,jav hd,erotic film."
+    }
+  ]
+}

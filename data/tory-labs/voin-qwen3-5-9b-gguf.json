@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "tory-labs/voin-qwen3.5-9b-gguf",
+  "slug": "tory-labs-voin-qwen3-5-9b-gguf",
+  "author": "tory-labs",
+  "url": "https://huggingface.co/tory-labs/voin-qwen3.5-9b-gguf",
+  "created_at": "2026-10-17T20:42:32.000Z",
+  "updated_at": "2026-10-17T20:43:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "voin",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:quantized:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 5680522464,
+  "storage_human": "5.7 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Women’s Clothing, Dresses, Designer Shoes, Handbags, Accessories | Tory ...",
+      "url": "https://www.toryburch.com/en-us/",
+      "snippet": "Visit Tory Burch to shop for Women’s Clothing, Dresses, Designer Shoes, Handbags, Accessories & More. Enjoy Free Shipping & …"
+    },
+    {
+      "title": "Tory - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tory",
+      "snippet": "Tory has become shorthand for a member of the Conservative Party or for the party in general in Canada and the UK, and can be …"
+    },
+    {
+      "title": "Tory — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Tory",
+      "snippet": "Au XIXe siècle, l'extension progressive du suffrage amena les Whigs comme les Tories à s'organiser en partis politiques. Le groupe …"
+    },
+    {
+      "title": "Mode luxe pour femme : vêtements de créateur | Tory Burch FR",
+      "url": "https://www.toryburch.com/fr-fr/",
+      "snippet": "Découvrez les vêtements de créateur pour femme Tory Burch. Mode et prêt-à-porter de luxe au style intemporel. Livraison et retours …"
+    },
+    {
+      "title": "Parti conservateur (Royaume-Uni) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Parti_conservateur_(Royaume-Uni)",
+      "snippet": "Le groupe parlementaire tory rassembla ses associations locales, créant le Parti conservateur. Il se montrait plutôt protectionniste, …"
+    }
+  ]
+}

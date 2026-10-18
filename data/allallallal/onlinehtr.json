@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "allallallal/OnlineHTR",
+  "slug": "allallallal-onlinehtr",
+  "author": "allallallal",
+  "url": "https://huggingface.co/allallallal/OnlineHTR",
+  "created_at": "2026-10-17T19:08:06.000Z",
+  "updated_at": "2026-10-17T19:09:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11012688,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accueil - CANAL+ Espace Client",
+      "url": "https://client.canalplus.com/",
+      "snippet": "L’espace client CANAL+ est votre espace personnel sécurisé. Particulier ? ou Professionnel ? Connectez-vous avec votre identifiant …"
+    },
+    {
+      "title": "Connectez-vous - CANAL+",
+      "url": "https://www.canalplus.com/account/",
+      "snippet": "Retrouvez tous les meilleurs programmes sur CANAL+ ! PC / MAC - Tablette - Smartphone !"
+    },
+    {
+      "title": "Compte - CANAL+ Espace Client",
+      "url": "https://client.canalplus.com/compte/",
+      "snippet": ""
+    },
+    {
+      "title": "Connectez-vous - CANAL+",
+      "url": "https://www.canalplus.com/moncompte",
+      "snippet": "Pour profiter de toutes les fonctionnalités, connectez-vous ou créez un compte CANAL+. Vivez l’expérience CANAL+, La plateforme …"
+    },
+    {
+      "title": "CANAL+ : tv, sports, séries, films en streaming en direct live ou ...",
+      "url": "https://www.canalplus.com/",
+      "snippet": "Les prochains rendez-vous sport gratuits. Soir d'Europe. Emission du 15 oct. 2026. Rennes / OFI Crète. Ligue Europa - 2e journée. …"
+    }
+  ]
+}

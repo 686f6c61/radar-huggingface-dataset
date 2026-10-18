@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Starlinghq/kev-4b-onnx",
+  "slug": "starlinghq-kev-4b-onnx",
+  "author": "Starlinghq",
+  "url": "https://huggingface.co/Starlinghq/kev-4b-onnx",
+  "created_at": "2026-10-17T21:32:57.000Z",
+  "updated_at": "2026-10-17T21:36:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "kev",
+    "starlings",
+    "base_model:jaredpalmer/kev-4b",
+    "base_model:merge:jaredpalmer/kev-4b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16916565650,
+  "storage_human": "16.9 GB",
+  "base_model": "jaredpalmer/kev-4b",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

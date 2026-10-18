@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "hasanghaffari93/whisper-large-v3-turbo-persian-ggml-q5_0",
+  "slug": "hasanghaffari93-whisper-large-v3-turbo-persian-ggml-q5_0",
+  "author": "hasanghaffari93",
+  "url": "https://huggingface.co/hasanghaffari93/whisper-large-v3-turbo-persian-ggml-q5_0",
+  "created_at": "2026-10-18T00:10:02.000Z",
+  "updated_at": "2026-10-18T00:27:04.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "fa"
+  ],
+  "tags": [
+    "whisper.cpp",
+    "ggml",
+    "q5_0",
+    "automatic-speech-recognition",
+    "fa",
+    "base_model:givia/whisper-large-v3-turbo-persian",
+    "base_model:quantized:givia/whisper-large-v3-turbo-persian",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 574041195,
+  "storage_human": "574 MB",
+  "base_model": "givia/whisper-large-v3-turbo-persian",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cloud - Steam Community Market",
+      "url": "https://steamcommunity.com/market/listings/753/927890-Cloud",
+      "snippet": "This item is a commodity, where all the individual items are effectively identical. Individual listings aren't accessible; you can instead …Read more"
+    },
+    {
+      "title": "Unity - Completed - Strike! Ovulation Divine Fist! Rebellion to ...",
+      "url": "https://f95zone.to/threads/strike-ovulation-divine-fist-rebellion-to-extinction-v1-5-eiros-hentai-games.43015/",
+      "snippet": "Jan 1, 2020 · Ovulation Divine Fist! Rebellion to Extinction! [v1.5] [EIROS HENTAI GAMES] り乇ﾶの刀 ズﾉ刀ム 尺ﾑ刀ᄃ乇 Jan 1, …"
+    },
+    {
+      "title": "RPGM - Zero to Harem Hero: A Hentai Isekai Adventure [v0.2.6",
+      "url": "https://f95zone.to/threads/zero-to-harem-hero-a-hentai-isekai-adventure-v0-2-6-z2hh-dev.265253/",
+      "snippet": "Aug 6, 2025 · RPGM Zero to Harem Hero: A Hentai Isekai Adventure [v0.2.6] [Z2HH Dev] Bob69 Aug 6, 2025 2d game 3dcg …"
+    },
+    {
+      "title": "Steam Community :: Group :: Hentai!",
+      "url": "https://steamcommunity.com/groups/hentaii",
+      "snippet": "Dec 13, 2007 · Group for all Anime, Hentai & Ecchi lovers ^^ All fans join! Original Hentai! Merchandise Follow Our Steam Curator! …"
+    },
+    {
+      "title": "Ren'Py - My Hentai Fantasy [v0.18.1] [Naughty Capy] - F95zone",
+      "url": "https://f95zone.to/threads/my-hentai-fantasy-v0-18-1-naughty-capy.139335/",
+      "snippet": "Dec 2, 2022 · Ren'Py My Hentai Fantasy [v0.18.1] [Naughty Capy] Naughty Capy Dec 2, 2022 3dcg anal sex animated big ass big …"
+    }
+  ]
+}

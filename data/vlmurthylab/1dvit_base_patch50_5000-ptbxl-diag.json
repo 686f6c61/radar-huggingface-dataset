@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "vlmurthylab/1dvit_base_patch50_5000.ptbxl-diag",
+  "slug": "vlmurthylab-1dvit_base_patch50_5000-ptbxl-diag",
+  "author": "vlmurthylab",
+  "url": "https://huggingface.co/vlmurthylab/1dvit_base_patch50_5000.ptbxl-diag",
+  "created_at": "2026-10-17T19:35:37.000Z",
+  "updated_at": "2026-10-17T19:35:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 92724044,
+  "parameters_human": "92.7M",
+  "storage_bytes": 370910272,
+  "storage_human": "371 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": ": Comment compléter la quête « Avec une trace » ? Notre astuce !",
+      "url": "https://www.supersoluce.com/actualites/astuces/arc-raiders-comment-completer-la-quete-avec-une-trace-notre-astuce-13031.html",
+      "snippet": "Nov 19, 2025 · Si vous avez besoin d’un coup de main pour venir à bout de la quête « Avec une trace » d’ARC Raiders, cette petite …Read more"
+    },
+    {
+      "title": "Avec une trace Arc Raiders : Où trouver les indices de cette quête ?",
+      "url": "https://www.millenium.org/guide/428380.html",
+      "snippet": "Nov 9, 2025 · Découvrez la position des objectifs de With a trace et les actions à effectuer dans ce guide détaillé accompagné d'une …"
+    },
+    {
+      "title": "Avec une trace ARC Raiders : clairière aride, indices machines ARC ...",
+      "url": "https://www.jeuxvideo.com/news/2042424/avec-une-trace-arc-raiders-clairiere-aride-indices-machines-arc-comment-venir-a-bout-de-cette-quete.htm",
+      "snippet": "Nov 6, 2025 · Avec une trace est une quête assez avancée dans ARC Raiders. Pour l’obtenir, vous allez avoir besoin de faire les …"
+    },
+    {
+      "title": "Arc Raiders - Avec Une Trace - YouTube",
+      "url": "https://www.youtube.com/watch?v=xIs46eT5Inw",
+      "snippet": "Nov 7, 2025 · Bienvenu dans cette vidéo où je vous montre comment réaliser la Mission La Avec Une Trace Vous pouvez aussi …"
+    },
+    {
+      "title": "Avec une trace - ARC Raiders | ARC Tracker",
+      "url": "https://arctracker.io/fr/quests/with-a-trace",
+      "snippet": "Oct 7, 2026 · Cette machine... Ce n'est pas nous qui l'avons abattue. On sait que des survivants errent dans la nature, mais ça ? Ça …"
+    }
+  ]
+}

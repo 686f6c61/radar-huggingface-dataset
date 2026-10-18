@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "ProCreations/Qwen3.8-Flash-Next-DSpine-preview",
+  "slug": "procreations-qwen3-8-flash-next-dspine-preview",
+  "author": "ProCreations",
+  "url": "https://huggingface.co/ProCreations/Qwen3.8-Flash-Next-DSpine-preview",
+  "created_at": "2026-10-17T20:13:48.000Z",
+  "updated_at": "2026-10-17T20:16:12.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "dspine",
+    "speculative-decoding",
+    "experimental",
+    "research",
+    "preview",
+    "en",
+    "zh",
+    "arxiv:2609.36173",
+    "base_model:RedHatAI/Qwen3.8-Flash-Next-NVFP4",
+    "base_model:adapter:RedHatAI/Qwen3.8-Flash-Next-NVFP4",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 941399552,
+  "parameters_human": "941.4M",
+  "storage_bytes": 3257047192,
+  "storage_human": "3.3 GB",
+  "base_model": "RedHatAI/Qwen3.8-Flash-Next-NVFP4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "zhengyijia142/LatentRAG_Qwen2.5-7B_harrier-oss-v1-270m_AutoRefine_Qwen2.5-7B",
+  "slug": "zhengyijia142-latentrag_qwen2-5-7b_harrier-oss-v1-270m_autorefine_qwen2-5-7b",
+  "author": "zhengyijia142",
+  "url": "https://huggingface.co/zhengyijia142/LatentRAG_Qwen2.5-7B_harrier-oss-v1-270m_AutoRefine_Qwen2.5-7B",
+  "created_at": "2026-10-17T20:50:22.000Z",
+  "updated_at": "2026-10-17T21:48:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-7B",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:2605.06285",
+    "base_model:Qwen/Qwen2.5-7B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3411100831,
+  "storage_human": "3.4 GB",
+  "base_model": "Qwen/Qwen2.5-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ByteDance&#x27;s Official Platform - First Access to Official Model",
+      "url": "https://duckduckgo.com/y.js?ad_domain=byteplus.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=NzfUzWwPzwolCEJZTdyP8oMKUobN4gx4eqTrCXKyQ53quck5z3qMANVQGZ8b6wOUmtTeP6QERg3FVo4jCN2CNUonqgtPXxpK9akVf3YYjE7Emx7oJwHolUz%2DO7YVBRfkRFBnsGo68wokGPjW6GJflM3A0BtzdgzXMMGv3G82QOs.5ZH3FxJLSuN0Qsu%2D_ZQ1og&rut=7fd17bee416ddbaabdcd1979cbe0068db5c45f5414a5915557f651a26916a823&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8yy2PwT23iI9dzuApMORFDTVUCUyuw6Mamh4eOY_V1FJPDxkyhvXrCx6bTPnRDLmlNq8xbAcxfy9tZSH_%2DtfGp0dbaQ3VAPdtTk%2D8ZrTClEqQ0llu_TjRKQ6X1K_TlpTYnMkBNbLUk0%2DnCilPRPy%2DHIxy9WcUhvZGd5hi632FUUdn27W8aNPtLEH3DPO%2D23IYrv5xM4w6QRsu9DQVVYMr5v4GV6U%26u%3DaHR0cHMlM2ElMmYlMmZhaS5ieXRlcGx1cy5jb20lMmZsdW1pbmElMmZob21lJTJmYXJ0d29yayUzZnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZGNwYyUyNnV0bV9jYW1wYWlnbiUzZHNpZ251cF9sdW1pbmFfZXVfZW5nbGlzaF8yMDI2MDYzMF9jZWxlbmUlMjZ1dG1fdGVybSUzZDIwMjYwNjMwX2JyYW5kX2x1bWluYV9icm9hZG1hdGNoX25ldyUyNnV0bV9jb250ZW50JTNkdGVjZG8lMjZtc2Nsa2lkJTNkNWY1ZTE4ODY4MzQ2MTI1N2Q1YTA3MjU1N2ZhNzQ0ZDI%26rlid%3D5f5e188683461257d5a072557fa744d2&vqd=4-320550889651667079588623481283865545663&iurl=%7B1%7DIG%3D0710BCB3FD9E49F28E66D792EE97022B%26CID%3D3AA78A7F6E47618432D49D8A6F6160B7%26ID%3DDevEx%2C5037.1",
+      "snippet": "BytePlus Lumina - the official AI visual platform for enterprises & creators. Lumina: ByteDance&#x27;s official creative suite. Product shots to brand videos. One platform."
+    },
+    {
+      "title": "Qwen/Qwen2.5-7B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-7B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen2.5-7B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Zerkahlo/qwen2.5",
+      "url": "https://github.com/Zerkahlo/qwen2.5",
+      "snippet": "In the past three months since Qwen2&#x27;s release, numerous developers have built new models on the Qwen2 language models, providing us with valuable feedback. During this period, we have focused on creating smarter and more knowledgeable language models. Today, we are excited to introduce the latest addition to the Qwen family: Qwen2.5. Dense, easy-to-use, decoder-only language models, available ..."
+    },
+    {
+      "title": "build.nvidia.com",
+      "url": "https://build.nvidia.com/qwen/qwen2_5-7b-instruct.md",
+      "snippet": "For Qwen2.5, we release a number of base language models and instruction-tuned language models ranging from 0.5 to 72 billion parameters. Qwen2.5 brings the following improvements upon Qwen2: * Significantly more knowledge and has greatly improved capabilities in coding and mathematics, thanks to our specialized expert models in these domains."
+    }
+  ]
+}

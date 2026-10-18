@@ -5,7 +5,7 @@
   "author": "mathemagicianz",
   "url": "https://huggingface.co/mathemagicianz/Slackfish",
   "created_at": "2026-10-11T16:47:51.000Z",
-  "updated_at": "2026-10-15T23:09:30.000Z",
+  "updated_at": "2026-10-17T16:15:22.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -22,8 +22,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 269791872,
-  "storage_human": "270 MB",
+  "storage_bytes": 332047480,
+  "storage_human": "332 MB",
   "base_model": null,
   "formats": [
     "safetensors"

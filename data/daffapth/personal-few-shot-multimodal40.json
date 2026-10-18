@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "DaffaPth/personal-few-shot-multimodal40",
+  "slug": "daffapth-personal-few-shot-multimodal40",
+  "author": "DaffaPth",
+  "url": "https://huggingface.co/DaffaPth/personal-few-shot-multimodal40",
+  "created_at": "2026-10-18T00:16:20.000Z",
+  "updated_at": "2026-10-18T00:16:24.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "few-shot-multimodal",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fortnite Tracker - Fortnite Stats, Leaderboards, & More!",
+      "url": "https://fortnitetracker.com/",
+      "snippet": "Oct 6, 2026 · Join our leaderboards by looking up your Fortnite Stats! We track all the Fortnite stats available, leave your page open …"
+    },
+    {
+      "title": "Fortnite Stats & Leaderboards Tracker - Fortnite.GG",
+      "url": "https://fortnite.gg/stats",
+      "snippet": "Detailed Fortnite Stats Tracker, Custom Season 4 Stats Card, Leaderboards, Rankings, Battle Pass Level, Wins, Kills and more!"
+    },
+    {
+      "title": "Fortnite Events - Competitive Tournaments - Fortnite Tracker",
+      "url": "https://fortnitetracker.com/events",
+      "snippet": "Oct 6, 2026 · Leaderboards, News, and Advanced Statistics for all Competitive Fortnite Tournaments. There are 91 archived events. …"
+    },
+    {
+      "title": "Tracker.gg Fortnite App - Fortnite Tracker",
+      "url": "https://tracker.gg/fortnite/desktop-app",
+      "snippet": "Download the ultimate Fortnite stats tracker for FREE! Fortnite Tracker is an in-game real-time tracking solution for your Fortnite …"
+    },
+    {
+      "title": "Fortnite Stat Tracker & Leaderboards - OliTracker",
+      "url": "https://olitracker.com/",
+      "snippet": "Track Fortnite stats, win leaderboards & kill leaderboards for current and past seasons alongside lifetime."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "TyrusRC",
   "url": "https://huggingface.co/TyrusRC/haruspex",
   "created_at": "2026-10-09T15:02:37.000Z",
-  "updated_at": "2026-10-15T16:55:16.000Z",
+  "updated_at": "2026-10-17T14:58:50.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -36,12 +36,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 22,
+  "downloads_30d": 25,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 63532880,
-  "storage_human": "64 MB",
+  "storage_bytes": 254131520,
+  "storage_human": "254 MB",
   "base_model": "fastino/GLiNER2.5-Decide",
   "formats": [
     "safetensors"

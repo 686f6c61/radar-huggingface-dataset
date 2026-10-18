@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "polydim-cla/polydim-stiefel-manifold-adapters",
+  "slug": "polydim-cla-polydim-stiefel-manifold-adapters",
+  "author": "polydim-cla",
+  "url": "https://huggingface.co/polydim-cla/polydim-stiefel-manifold-adapters",
+  "created_at": "2026-10-17T21:33:09.000Z",
+  "updated_at": "2026-10-18T00:23:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "stiefel-manifold",
+    "continuous-latents",
+    "zero-token-bottleneck",
+    "pmtp",
+    "polydim",
+    "einsof",
+    "high-performance-computing",
+    "zero-copy",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 74453158,
+  "storage_human": "74 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IMDb: Ratings, Reviews, and Where to Watch the Best Movies & TV …",
+      "url": "https://www.imdb.com/",
+      "snippet": "IMDb is the world's most popular and authoritative source for movie, TV and celebrity content. Find ratings and reviews for the …"
+    },
+    {
+      "title": "Youth (2026) - IMDb",
+      "url": "https://www.imdb.com/title/tt38693888/",
+      "snippet": "Youth: Directed by Ken Karunas. With Ken Karunas, Suraj Venjaramoodu, Devadarshini Chetan, Anishma Anilkumar. 15-year-old …"
+    },
+    {
+      "title": "IMDbPro Official Site | Start Your Free Trial",
+      "url": "https://pro.imdb.com/account/membership",
+      "snippet": "Start your free 30-day IMDbPro trial. Access entertainment industry contacts, in-development projects, STARmeter rankings, and …"
+    },
+    {
+      "title": "IMDb Contribution: Home",
+      "url": "https://contribute.imdb.com/czone/",
+      "snippet": "Since 1990, an incredibly diverse range of people across the globe have been adding, refining, and correcting the data on IMDb. It's …"
+    },
+    {
+      "title": "IMDb | Contact",
+      "url": "https://help.imdb.com/contact",
+      "snippet": "IMDb general support Our support community is always around to help"
+    }
+  ]
+}

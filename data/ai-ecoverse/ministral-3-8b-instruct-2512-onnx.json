@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "ai-ecoverse/Ministral-3-8B-Instruct-2512-ONNX",
+  "slug": "ai-ecoverse-ministral-3-8b-instruct-2512-onnx",
+  "author": "ai-ecoverse",
+  "url": "https://huggingface.co/ai-ecoverse/Ministral-3-8B-Instruct-2512-ONNX",
+  "created_at": "2026-10-17T21:31:24.000Z",
+  "updated_at": "2026-10-17T21:31:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers.js",
+  "languages": [
+    "en",
+    "fr",
+    "es",
+    "de",
+    "it",
+    "pt",
+    "nl",
+    "zh",
+    "ja",
+    "ko",
+    "ar"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "mistral3",
+    "image-text-to-text",
+    "onnxruntime",
+    "conversational",
+    "en",
+    "fr",
+    "es",
+    "de",
+    "it",
+    "pt",
+    "nl",
+    "zh",
+    "ja",
+    "ko",
+    "ar",
+    "base_model:mistralai/Ministral-3-8B-Instruct-2512-BF16",
+    "base_model:quantized:mistralai/Ministral-3-8B-Instruct-2512-BF16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11596410515,
+  "storage_human": "11.6 GB",
+  "base_model": "mistralai/Ministral-3-8B-Instruct-2512-BF16",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google’s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Ready when you are. Ready when you are. ChatGPT is AI. By using it, you agree to our Terms & Privacy Policy. Chats may be …"
+    },
+    {
+      "title": "DeepAI",
+      "url": "https://deepai.org/",
+      "snippet": "Whether you are a hobbyist, a professional artist, or a developer integrating AI into your product, DeepAI delivers advanced …"
+    },
+    {
+      "title": "Google AI - How we're making AI helpful for everyone",
+      "url": "https://ai.google/",
+      "snippet": "Discover how Google AI is committed to enriching knowledge, solving complex challenges and helping people grow by building …"
+    }
+  ]
+}

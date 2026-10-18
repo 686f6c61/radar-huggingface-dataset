@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "AIxFuneStudio/Supercharged_Fury_Illustrious",
+  "slug": "aixfunestudio-supercharged_fury_illustrious",
+  "author": "AIxFuneStudio",
+  "url": "https://huggingface.co/AIxFuneStudio/Supercharged_Fury_Illustrious",
+  "created_at": "2026-10-17T19:32:46.000Z",
+  "updated_at": "2026-10-18T00:52:36.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7580583097,
+  "storage_human": "7.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Images/stud_texture_from_roblox_by_20thcenturyfoxr",
+      "url": "https://create.roblox.com/store/asset/15910695917/Imagesstudtexturefromrobloxby20thcenturyfoxr",
+      "snippet": "Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other …"
+    },
+    {
+      "title": "Studs - Creator Store - Roblox",
+      "url": "https://create.roblox.com/store/asset/6927295857/Studs",
+      "snippet": "Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other …"
+    },
+    {
+      "title": "Creator Store - Roblox",
+      "url": "https://create.roblox.com/store/asset/18878366001/Classic-stud-texture",
+      "snippet": "Discover millions of assets made by the Roblox community to accelerate any creation task."
+    },
+    {
+      "title": "Images/Classic Stud - Creator Store - Roblox",
+      "url": "https://create.roblox.com/store/asset/11117815062/ImagesClassic-Stud",
+      "snippet": "Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other …"
+    },
+    {
+      "title": "Stud Texture - Creator Store - Roblox",
+      "url": "https://create.roblox.com/store/asset/7447638611/Stud-Texture",
+      "snippet": "A 1x1 stud texture, uploaded since Roblox is phasing out surface types. ©2026 Roblox Corporation. Roblox, the Roblox logo and …"
+    }
+  ]
+}

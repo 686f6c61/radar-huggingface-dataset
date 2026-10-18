@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Oskrt/flux-3-action-so101-haller-pen-lora",
+  "slug": "oskrt-flux-3-action-so101-haller-pen-lora",
+  "author": "Oskrt",
+  "url": "https://huggingface.co/Oskrt/flux-3-action-so101-haller-pen-lora",
+  "created_at": "2026-10-17T21:25:44.000Z",
+  "updated_at": "2026-10-18T00:38:12.000Z",
+  "license": "flux-kommunity-license-v1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "LeRobot",
+    "flux-3-action",
+    "so101",
+    "xlerobot",
+    "lora",
+    "robotics",
+    "erh-physical-ai-hackathon",
+    "dataset:Oskrt/haller_put_the_red_pen_in_its_slot_in_the_cardboard_box",
+    "base_model:black-forest-labs/flux-3-action-so101",
+    "base_model:adapter:black-forest-labs/flux-3-action-so101",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1415326288,
+  "storage_human": "1.4 GB",
+  "base_model": "black-forest-labs/flux-3-action-so101",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "越南的国食Pho（河粉）为什么在中国只能失败？ - 知乎",
+      "url": "https://www.zhihu.com/question/509282822",
+      "snippet": "越南的国食Pho（河粉）为什么在中国只能失败？ 济南万象城开过一家，客流稀少，最后撑不下去了就关店了，现在查地图，全国都 …"
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/question/20815825",
+      "snippet": "比如在上海有：越道pho, Pho real, Pho Asia。"
+    },
+    {
+      "title": "上海哪里有好吃的越南河粉？ - 知乎",
+      "url": "https://www.zhihu.com/question/28183176",
+      "snippet": "越南是一个吃粉大国，在越南粉被叫做Pho，可以被称为越南的国菜。 《孤独星球》在评选7个最佳碗中餐，越南米粉就名列其中。 老 …"
+    },
+    {
+      "title": "越南河粉pho怎样发音？ - 知乎",
+      "url": "https://www.zhihu.com/question/21277973",
+      "snippet": "Jul 1, 2013 · 越南语发音: [fəː˧˩˧] 类似于 photography [fə'tɒgrəfɪ] 第一个音节，只不过是长原音。 越南语发音 越南语和汉语同样是声调 …"
+    },
+    {
+      "title": "高中学科竞赛生（MO, PhO, ChO, BiO, OI）中途放弃竞赛是一种怎样 …",
+      "url": "https://www.zhihu.com/question/35366307",
+      "snippet": "高中学科竞赛生（MO, PhO, ChO, BiO, OI）中途放弃竞赛是一种怎样的体验？ 这里的“中途放弃”是指，没有从竞赛取得大学录取方面 …"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "r4wmil/ramil_style_LoRA",
+  "slug": "r4wmil-ramil_style_lora",
+  "author": "r4wmil",
+  "url": "https://huggingface.co/r4wmil/ramil_style_LoRA",
+  "created_at": "2026-10-17T21:27:02.000Z",
+  "updated_at": "2026-10-17T21:27:27.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "tensorboard",
+    "text-to-image",
+    "diffusers-training",
+    "lora",
+    "template:sd-lora",
+    "stable-diffusion-xl",
+    "stable-diffusion-xl-diffusers",
+    "base_model:stabilityai/stable-diffusion-xl-base-1.0",
+    "base_model:adapter:stabilityai/stable-diffusion-xl-base-1.0",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 193006419,
+  "storage_human": "193 MB",
+  "base_model": "stabilityai/stable-diffusion-xl-base-1.0",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Roblox Ryujin Trello and Discord Links - Pro Game Guides",
+      "url": "https://progameguides.com/roblox/roblox-ryujin-trello-and-discord-links/",
+      "snippet": "Feb 27, 2025 · Access the Ryujin Trello channel using the given link. Here, you can find interesting details about the game …"
+    },
+    {
+      "title": "Ryujin – Trello, Discord, and Wiki Links (2026)",
+      "url": "https://nuxgameguides.com/guides/ryujin-trello-discord-and-wiki-links-2025/",
+      "snippet": "Use the Ryujin Trello link, Discord, Roblox page, and Wiki for all map styles, trainers, clans, and locations to progress faster."
+    },
+    {
+      "title": "Ryujin Trello and Discord Links – Destructoid",
+      "url": "https://www.destructoid.com/ryujin-trello-and-discord/",
+      "snippet": "Aug 13, 2026 · Roblox Ryujin has a ton of combinations for a build depending on your height, clan, fighting style, cards, etc. Luckily, …"
+    },
+    {
+      "title": "Ryujin Trello Link & Wiki [Official] [October 2026] - MrGuider",
+      "url": "https://www.mrguider.org/trello/ryujin-trello-link-wiki/",
+      "snippet": "Dec 31, 2024 · Get familiar with all the game’s concepts with this Roblox Ryujin Trello. Below, I have shared the official Roblox Ryujin …"
+    },
+    {
+      "title": "Ryujin codes (October 2026) - Destructoid",
+      "url": "https://www.destructoid.com/ryujin-codes/",
+      "snippet": "5 days ago · If you want to learn more about the game, join the Ryujin Trello board, the official Wiki page, and the Twister …"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "snchimata/tokenfold-select-v2",
+  "slug": "snchimata-tokenfold-select-v2",
+  "author": "snchimata",
+  "url": "https://huggingface.co/snchimata/tokenfold-select-v2",
+  "created_at": "2026-10-17T22:58:59.000Z",
+  "updated_at": "2026-10-17T22:59:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnxruntime",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "safetensors",
+    "modernbert",
+    "tokenfold",
+    "context-compression",
+    "extractive-selection",
+    "experimental",
+    "custom-model",
+    "en",
+    "base_model:ibm-granite/granite-embedding-reranker-english-r2",
+    "base_model:finetune:ibm-granite/granite-embedding-reranker-english-r2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 98864641,
+  "parameters_human": "98.9M",
+  "storage_bytes": 791787722,
+  "storage_human": "792 MB",
+  "base_model": "ibm-granite/granite-embedding-reranker-english-r2",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Reinaldo73/Wan2.2_Remix_NSFW_i2v_14b_high_lighting_fp8_e4m3fn_v3.0.safetensors",
+  "slug": "reinaldo73-wan2-2_remix_nsfw_i2v_14b_high_lighting_fp8_e4m3fn_v3-0-safetensors",
+  "author": "Reinaldo73",
+  "url": "https://huggingface.co/Reinaldo73/Wan2.2_Remix_NSFW_i2v_14b_high_lighting_fp8_e4m3fn_v3.0.safetensors",
+  "created_at": "2026-10-17T21:40:15.000Z",
+  "updated_at": "2026-10-17T21:40:15.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "DMS public model archive",
+  "languages": [],
+  "tags": [
+    "DMS public model archive",
+    "safetensors",
+    "model component",
+    "dms-archive",
+    "license:other",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14291272136,
+  "storage_human": "14.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

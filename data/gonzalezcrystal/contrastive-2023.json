@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "gonzalezcrystal/contrastive-2023",
+  "slug": "gonzalezcrystal-contrastive-2023",
+  "author": "gonzalezcrystal",
+  "url": "https://huggingface.co/gonzalezcrystal/contrastive-2023",
+  "created_at": "2026-10-17T21:47:46.000Z",
+  "updated_at": "2026-10-17T21:47:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

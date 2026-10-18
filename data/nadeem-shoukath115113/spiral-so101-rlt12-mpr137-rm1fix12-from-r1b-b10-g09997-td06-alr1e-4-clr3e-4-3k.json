@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Nadeem-Shoukath115113/spiral-so101-rlt12-mpr137-rm1fix12-from-r1b-b10-g09997-td06-alr1e-4-clr3e-4-3k",
+  "slug": "nadeem-shoukath115113-spiral-so101-rlt12-mpr137-rm1fix12-from-r1b-b10-g09997-td06-alr1e-4-clr3e-4-3k",
+  "author": "Nadeem-Shoukath115113",
+  "url": "https://huggingface.co/Nadeem-Shoukath115113/spiral-so101-rlt12-mpr137-rm1fix12-from-r1b-b10-g09997-td06-alr1e-4-clr3e-4-3k",
+  "created_at": "2026-10-17T21:21:57.000Z",
+  "updated_at": "2026-10-17T21:22:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "so101",
+    "spiral",
+    "residual-rl",
+    "rlt",
+    "pi05",
+    "correlated-noise",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 365866987,
+  "storage_human": "366 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rechercher un trajet en Covoiturage, en Bus ou en Train - BlaBlaCar",
+      "url": "https://www.blablacar.fr/search-car-sharing",
+      "snippet": "Comparez les covoiturages, bus et trains disponibles sur votre trajet et réservez le meilleur itinéraire · Covoiturage autour de moi …"
+    },
+    {
+      "title": "Covoiturage, Bus ou Train, Allez partout à petit prix | BlaBlaCar",
+      "url": "https://www.blablacar.fr/",
+      "snippet": "Réservez vos billets et voyagez à prix mini partout en France grâce à notre communauté de covoitureurs, nos lignes BlaBlaCar Bus …"
+    },
+    {
+      "title": "Viaja de forma económica y sostenible. | BlaBlaCar",
+      "url": "https://www.blablacar.mx/",
+      "snippet": "Vayas donde vayas, BlaBlaCar te ofrece una amplia gama de destinos y rutas a precios muy económicos."
+    },
+    {
+      "title": "Encuentra tu viaje en auto compartido a Querétaro ... - BlaBlaCar",
+      "url": "https://www.blablacar.mx/carpool/destinations/queretaro",
+      "snippet": "Encuentra un viaje en auto compartido confiable a Querétaro con BlaBlaCar. Elige entre miles de conductores confiables, disfruta de …"
+    },
+    {
+      "title": "Comparez les trajets en bus, train et covoiturage de ... - BlaBlaCar",
+      "url": "https://www.blablacar.fr/ride-sharing/toulouse/paris/",
+      "snippet": "En quête de la meilleure option pour voyager de Toulouse à Paris ? BlaBlaCar réunit les offres de covoiturage, bus et train pour vous …"
+    }
+  ]
+}

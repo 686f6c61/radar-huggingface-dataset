@@ -5,7 +5,7 @@
   "author": "jaeyong2",
   "url": "https://huggingface.co/jaeyong2/clef-flash-jev-claude-distill",
   "created_at": "2026-10-12T01:32:01.000Z",
-  "updated_at": "2026-10-17T01:25:46.000Z",
+  "updated_at": "2026-10-17T03:37:03.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -36,11 +36,11 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 26,
+  "downloads_30d": 40,
   "trending_score": 0,
   "parameters": 9409813744,
   "parameters_human": "9.41B",
-  "storage_bytes": 40301251469,
+  "storage_bytes": 40301400062,
   "storage_human": "40.3 GB",
   "base_model": "Cloudflare/clef-flash",
   "formats": [

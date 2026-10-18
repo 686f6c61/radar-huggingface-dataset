@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "mduca771/Qwen3.8-Flash-Next-PLE-tables-GGUF",
+  "slug": "mduca771-qwen3-8-flash-next-ple-tables-gguf",
+  "author": "mduca771",
+  "url": "https://huggingface.co/mduca771/Qwen3.8-Flash-Next-PLE-tables-GGUF",
+  "created_at": "2026-10-17T23:15:53.000Z",
+  "updated_at": "2026-10-17T23:57:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "qwen4exp",
+    "qwen3.8",
+    "flash-next",
+    "ple",
+    "engram",
+    "ngram",
+    "llama.cpp",
+    "strata",
+    "en",
+    "zh",
+    "base_model:unsloth/Qwen3.8-Flash-Next-GGUF",
+    "base_model:quantized:unsloth/Qwen3.8-Flash-Next-GGUF",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51200245760,
+  "parameters_human": "51.20B",
+  "storage_bytes": 83200399840,
+  "storage_human": "83.2 GB",
+  "base_model": "unsloth/Qwen3.8-Flash-Next-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

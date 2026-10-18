@@ -5,7 +5,7 @@
   "author": "dene33",
   "url": "https://huggingface.co/dene33/asimov1-forward-jump",
   "created_at": "2026-10-09T21:17:09.000Z",
-  "updated_at": "2026-10-15T19:03:12.000Z",
+  "updated_at": "2026-10-17T22:39:54.000Z",
   "license": "bsd-3-clause",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -20,12 +20,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 24,
+  "downloads_30d": 26,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 2812495,
-  "storage_human": "3 MB",
+  "storage_bytes": 4494541,
+  "storage_human": "4 MB",
   "base_model": null,
   "formats": [
     "onnx"

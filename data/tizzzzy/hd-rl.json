@@ -5,7 +5,7 @@
   "author": "Tizzzzy",
   "url": "https://huggingface.co/Tizzzzy/HD-RL",
   "created_at": "2026-10-17T18:33:49.000Z",
-  "updated_at": "2026-10-17T18:34:53.000Z",
+  "updated_at": "2026-10-17T19:05:03.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -21,7 +21,6 @@
     "trl",
     "text-generation",
     "conversational",
-    "arxiv:1910.09700",
     "base_model:Qwen/Qwen3.6-27B",
     "region:us"
   ],

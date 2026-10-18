@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "assokolov/my-zero-shot-transfer-2023",
+  "slug": "assokolov-my-zero-shot-transfer-2023",
+  "author": "assokolov",
+  "url": "https://huggingface.co/assokolov/my-zero-shot-transfer-2023",
+  "created_at": "2026-10-17T19:51:56.000Z",
+  "updated_at": "2026-10-17T19:52:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "zero-shot-transfer",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Football | Ohio State",
+      "url": "https://ohiostatebuckeyes.com/sports/football",
+      "snippet": "Football Smith Named AP and Sports Illustrated Midseason All-American Football Ohio State Placed on Joe Moore Award …"
+    },
+    {
+      "title": "Ohio State Buckeyes football - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ohio_State_Buckeyes_football",
+      "snippet": "The Ohio State Buckeyes football team represents the Ohio State University in American football. They compete in the NCAA …"
+    },
+    {
+      "title": "Ohio State Buckeyes Scores, Stats and Highlights - ESPN",
+      "url": "https://www.espn.com/college-football/team/_/id/194/ohio-state-buckeyes",
+      "snippet": "Visit ESPN for Ohio State Buckeyes live scores, video highlights, and latest news. Find standings and the full 2026 season schedule."
+    },
+    {
+      "title": "Ohio State Football - Eleven Warriors",
+      "url": "https://www.elevenwarriors.com/ohio-state-football",
+      "snippet": "Ohio State Buckeyes Football: Scores, news, schedules, rosters, analysis, and more."
+    },
+    {
+      "title": "2026 Football Schedule | Ohio State",
+      "url": "https://ohiostatebuckeyes.com/sports/football/schedule",
+      "snippet": "No filter selected. 6 events loaded."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "HDTenEightyP",
   "url": "https://huggingface.co/HDTenEightyP/GPT-Elegance",
   "created_at": "2026-10-16T22:27:38.000Z",
-  "updated_at": "2026-10-16T22:41:25.000Z",
+  "updated_at": "2026-10-17T09:29:11.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -14,11 +14,13 @@
   "tags": [
     "safetensors",
     "gpt2",
+    "text-generation-inference",
+    "en",
     "license:mit",
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 13,
   "trending_score": 0,
   "parameters": 47187200,
   "parameters_human": "47.2M",

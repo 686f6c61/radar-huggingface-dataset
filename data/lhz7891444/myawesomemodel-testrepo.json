@@ -4,8 +4,8 @@
   "slug": "lhz7891444-myawesomemodel-testrepo",
   "author": "lhz7891444",
   "url": "https://huggingface.co/lhz7891444/MyAwesomeModel-TestRepo",
-  "created_at": "2026-10-13T22:29:00.000Z",
-  "updated_at": "2026-10-13T22:29:40.000Z",
+  "created_at": "2026-10-17T22:16:46.000Z",
+  "updated_at": "2026-10-17T22:16:50.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -31,8 +31,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-10-14T02:47:58.384Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": []
 }

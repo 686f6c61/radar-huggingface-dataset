@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Jordine/rlport-hkl_jord9v_x5b_s3_20261018_001916",
+  "slug": "jordine-rlport-hkl_jord9v_x5b_s3_20261018_001916",
+  "author": "Jordine",
+  "url": "https://huggingface.co/Jordine/rlport-hkl_jord9v_x5b_s3_20261018_001916",
+  "created_at": "2026-10-18T00:20:15.000Z",
+  "updated_at": "2026-10-18T02:27:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "research",
+    "checkpoint-backup",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15913747344,
+  "storage_human": "15.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you.Read more"
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/?hl=fr",
+      "snippet": "Créez un compte ou connectez-vous à Instagram. Partagez ce que vous aimez avec les personnes qui ont les mêmes centres d’intérêt."
+    },
+    {
+      "title": "Instagram - Meta",
+      "url": "https://www.meta.com/instagram/",
+      "snippet": "We want Instagram to be a place where people can be inspired every day. We foster a safe and welcoming community where people …"
+    },
+    {
+      "title": "Instagram (@instagram) • Instagram photos and videos",
+      "url": "https://www.instagram.com/instagram/",
+      "snippet": "687M Followers, 308 Following, 8,620 Posts - Instagram (@instagram) on Instagram: \"Discover what's new on Instagram 🔎 \""
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/?hl=fr-ca",
+      "snippet": "Créez un compte ou connectez-vous à Instagram. Partagez ce qui vous intéresse avec les gens qui vous comprennent."
+    }
+  ]
+}
