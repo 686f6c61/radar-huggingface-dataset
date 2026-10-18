@@ -5,7 +5,7 @@
   "author": "jhcho99",
   "url": "https://huggingface.co/jhcho99/SceneAligner",
   "created_at": "2026-10-04T13:00:56.000Z",
-  "updated_at": "2026-10-04T13:12:12.000Z",
+  "updated_at": "2026-10-17T19:45:37.000Z",
   "license": "dinov3-license",
   "license_family": "unknown",
   "pipeline_tag": "image-feature-extraction",
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 9547000,
-  "storage_human": "10 MB",
+  "storage_bytes": 19094000,
+  "storage_human": "19 MB",
   "base_model": "facebook/dinov3-vitb16-pretrain-lvd1689m",
   "formats": [
     "safetensors"

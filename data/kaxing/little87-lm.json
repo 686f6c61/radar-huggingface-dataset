@@ -5,7 +5,7 @@
   "author": "kaxing",
   "url": "https://huggingface.co/kaxing/little87-lm",
   "created_at": "2026-10-02T05:06:35.000Z",
-  "updated_at": "2026-10-16T10:36:57.000Z",
+  "updated_at": "2026-10-18T03:39:48.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -18,12 +18,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 171,
+  "downloads_30d": 195,
   "trending_score": 0,
-  "parameters": 13156096,
-  "parameters_human": "13.2M",
-  "storage_bytes": 304794240,
-  "storage_human": "305 MB",
+  "parameters": 11540224,
+  "parameters_human": "11.5M",
+  "storage_bytes": 346774848,
+  "storage_human": "347 MB",
   "base_model": null,
   "formats": [
     "gguf"

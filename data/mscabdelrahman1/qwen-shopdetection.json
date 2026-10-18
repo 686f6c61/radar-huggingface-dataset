@@ -5,7 +5,7 @@
   "author": "MscAbdelrahman1",
   "url": "https://huggingface.co/MscAbdelrahman1/QWEN-ShopDetection",
   "created_at": "2026-09-29T16:48:54.000Z",
-  "updated_at": "2026-10-17T02:40:56.000Z",
+  "updated_at": "2026-10-18T05:01:51.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -17,12 +17,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 341,
+  "downloads_30d": 375,
   "trending_score": 0,
   "parameters": 4437815808,
   "parameters_human": "4.44B",
-  "storage_bytes": 188354340810,
-  "storage_human": "188.4 GB",
+  "storage_bytes": 205005328270,
+  "storage_human": "205.0 GB",
   "base_model": null,
   "formats": [
     "safetensors"

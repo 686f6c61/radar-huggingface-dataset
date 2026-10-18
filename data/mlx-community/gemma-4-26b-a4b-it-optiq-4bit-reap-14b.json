@@ -5,7 +5,7 @@
   "author": "mlx-community",
   "url": "https://huggingface.co/mlx-community/gemma-4-26B-A4B-it-OptiQ-4bit-REAP-14B",
   "created_at": "2026-08-28T08:05:50.000Z",
-  "updated_at": "2026-08-28T08:18:44.000Z",
+  "updated_at": "2026-10-18T02:27:53.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 3,
-  "downloads_30d": 646,
+  "downloads_30d": 659,
   "trending_score": 0,
   "parameters": 14381534926,
   "parameters_human": "14.38B",

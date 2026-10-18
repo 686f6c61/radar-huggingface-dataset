@@ -5,7 +5,7 @@
   "author": "Zhangdanyang",
   "url": "https://huggingface.co/Zhangdanyang/Qwen3-Coder-30B-A3B-SFT-TH-2epoch",
   "created_at": "2026-09-28T21:34:30.000Z",
-  "updated_at": "2026-10-16T07:29:57.000Z",
+  "updated_at": "2026-10-18T02:00:14.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -24,12 +24,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 29,
+  "downloads_30d": 35,
   "trending_score": 0,
   "parameters": 30532122624,
   "parameters_human": "30.53B",
-  "storage_bytes": 182552009136,
-  "storage_human": "182.6 GB",
+  "storage_bytes": 243202004592,
+  "storage_human": "243.2 GB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -5,7 +5,7 @@
   "author": "pleasen",
   "url": "https://huggingface.co/pleasen/Gemma-4-E2B-IT-QAT",
   "created_at": "2026-09-23T17:16:06.000Z",
-  "updated_at": "2026-10-14T21:25:56.000Z",
+  "updated_at": "2026-10-17T21:37:23.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -22,8 +22,8 @@
   "trending_score": 0,
   "parameters": 4628569635,
   "parameters_human": "4.63B",
-  "storage_bytes": 10371243552,
-  "storage_human": "10.4 GB",
+  "storage_bytes": 10490917440,
+  "storage_human": "10.5 GB",
   "base_model": null,
   "formats": [
     "gguf"

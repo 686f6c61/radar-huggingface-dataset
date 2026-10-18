@@ -5,7 +5,7 @@
   "author": "Cisco1963",
   "url": "https://huggingface.co/Cisco1963/llmplasticity-en_nl_linear_8-d0.01-c0.9-r0.2-s42",
   "created_at": "2026-09-28T03:02:46.000Z",
-  "updated_at": "2026-09-29T06:48:19.000Z",
+  "updated_at": "2026-10-18T01:29:03.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": 122706432,
   "parameters_human": "122.7M",
-  "storage_bytes": 12273514659,
-  "storage_human": "12.3 GB",
+  "storage_bytes": 11291719363,
+  "storage_human": "11.3 GB",
   "base_model": null,
   "formats": [
     "safetensors"

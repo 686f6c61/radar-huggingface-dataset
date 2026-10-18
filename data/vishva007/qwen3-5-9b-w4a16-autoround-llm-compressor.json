@@ -5,7 +5,7 @@
   "author": "Vishva007",
   "url": "https://huggingface.co/Vishva007/Qwen3.5-9B-W4A16-AutoRound-LLM-Compressor",
   "created_at": "2026-09-20T03:49:22.000Z",
-  "updated_at": "2026-10-17T06:21:53.000Z",
+  "updated_at": "2026-10-17T12:08:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -14,19 +14,16 @@
   "tags": [
     "safetensors",
     "qwen3_5",
-    "base_model:Qwen/Qwen3.5-9B",
-    "base_model:quantized:Qwen/Qwen3.5-9B",
-    "license:apache-2.0",
     "compressed-tensors",
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 179,
+  "downloads_30d": 189,
   "trending_score": 0,
-  "parameters": 4936588784,
-  "parameters_human": "4.94B",
-  "storage_bytes": 21086302552,
-  "storage_human": "21.1 GB",
+  "parameters": 3572326112,
+  "parameters_human": "3.57B",
+  "storage_bytes": 29960749016,
+  "storage_human": "30.0 GB",
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"

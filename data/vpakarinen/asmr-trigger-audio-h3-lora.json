@@ -5,7 +5,7 @@
   "author": "vpakarinen",
   "url": "https://huggingface.co/vpakarinen/asmr-trigger-audio-h3-lora",
   "created_at": "2026-09-17T20:31:49.000Z",
-  "updated_at": "2026-09-21T15:36:59.000Z",
+  "updated_at": "2026-10-17T11:37:56.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-video",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 30,
-  "downloads_30d": 564,
+  "downloads_30d": 515,
   "trending_score": 11,
   "parameters": null,
   "parameters_human": null,

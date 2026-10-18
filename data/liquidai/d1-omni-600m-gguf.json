@@ -5,7 +5,7 @@
   "author": "LiquidAI",
   "url": "https://huggingface.co/LiquidAI/d1-omni-600M-GGUF",
   "created_at": "2026-10-06T15:30:13.000Z",
-  "updated_at": "2026-10-07T21:21:05.000Z",
+  "updated_at": "2026-10-17T09:33:50.000Z",
   "license": "lfm1.0",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -65,13 +65,13 @@
     "feature-extraction"
   ],
   "likes": 45,
-  "downloads_30d": 7646,
+  "downloads_30d": 8266,
   "trending_score": 14,
   "parameters": 380732161,
   "parameters_human": "380.7M",
   "storage_bytes": 3081800864,
   "storage_human": "3.1 GB",
-  "base_model": "LiquidAI/d1-omni-600m",
+  "base_model": "LiquidAI/d1-omni-600M",
   "formats": [
     "gguf"
   ],

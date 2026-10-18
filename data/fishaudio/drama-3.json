@@ -5,7 +5,7 @@
   "author": "fishaudio",
   "url": "https://huggingface.co/fishaudio/drama-3",
   "created_at": "2026-10-01T04:34:57.000Z",
-  "updated_at": "2026-10-14T06:15:21.000Z",
+  "updated_at": "2026-10-17T05:06:07.000Z",
   "license": "fish-audio-research-license",
   "license_family": "unknown",
   "pipeline_tag": "text-to-speech",
@@ -191,7 +191,7 @@
     "bsgemm-moe",
     "region:us"
   ],
-  "likes": 623,
+  "likes": 629,
   "downloads_30d": 8193,
   "trending_score": 598,
   "parameters": 35899643008,

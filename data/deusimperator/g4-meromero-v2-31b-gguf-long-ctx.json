@@ -5,7 +5,7 @@
   "author": "DeusImperator",
   "url": "https://huggingface.co/DeusImperator/G4-MeroMero-v2-31B-GGUF-long-ctx",
   "created_at": "2026-09-17T15:21:22.000Z",
-  "updated_at": "2026-09-22T16:55:01.000Z",
+  "updated_at": "2026-10-17T17:31:52.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -23,7 +23,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 389,
+  "downloads_30d": 313,
   "trending_score": 0,
   "parameters": 30697345596,
   "parameters_human": "30.70B",

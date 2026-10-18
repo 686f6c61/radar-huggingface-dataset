@@ -5,7 +5,7 @@
   "author": "AlinaGonch",
   "url": "https://huggingface.co/AlinaGonch/qwen3-4b-instruct-squad-ratio-0.50-seed-42",
   "created_at": "2026-09-02T23:35:43.000Z",
-  "updated_at": "2026-09-02T23:35:55.000Z",
+  "updated_at": "2026-10-17T16:13:24.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -23,8 +23,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 143610808,
-  "storage_human": "144 MB",
+  "storage_bytes": 275798696,
+  "storage_human": "276 MB",
   "base_model": null,
   "formats": [
     "safetensors"
