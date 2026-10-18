@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "nurafrakin/Piril-1.5B-LoRA",
+  "slug": "nurafrakin-piril-1-5b-lora",
+  "author": "nurafrakin",
+  "url": "https://huggingface.co/nurafrakin/Piril-1.5B-LoRA",
+  "created_at": "2026-10-18T18:02:51.000Z",
+  "updated_at": "2026-10-18T18:03:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85333004,
+  "storage_human": "85 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google’s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/?hl=en-IN",
+      "snippet": "Meet Gemini, Google's AI assistant. Get help with writing, planning, brainstorming and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Gemini – Your AI assistant from Google",
+      "url": "https://gemini.google/us/about/?hl=en",
+      "snippet": "Start your day with a personalized digest from Gemini. Your Daily Brief understands your rhythms and personal preferences to …"
+    },
+    {
+      "title": "Gemini — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini/",
+      "snippet": "With zero external libraries and 100% pure Python, Argon wrote its own 3D ray-tracing engine with a custom video tool and audio …"
+    },
+    {
+      "title": "Gemini for desktop: download the AI app for Windows & macOS",
+      "url": "https://gemini.google/aw/desktop/?hl=en",
+      "snippet": "Download Gemini for desktop on Windows and macOS. A native AI assistant with global shortcuts and automation to help you …"
+    }
+  ]
+}

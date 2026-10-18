@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "drowzeys/keys-DeepSeek-V4.1-Flash-1017-Abliterated",
+  "slug": "drowzeys-keys-deepseek-v4-1-flash-1017-abliterated",
+  "author": "drowzeys",
+  "url": "https://huggingface.co/drowzeys/keys-DeepSeek-V4.1-Flash-1017-Abliterated",
+  "created_at": "2026-10-18T13:34:32.000Z",
+  "updated_at": "2026-10-18T15:08:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "deepseek",
+    "deepseek-v4.1",
+    "deepseek-v4.1-flash",
+    "deepseek-v4.1-flash-1017",
+    "abliterated",
+    "uncensored",
+    "cybersecurity",
+    "moe",
+    "fp8",
+    "exl3",
+    "tensorfold",
+    "vllm",
+    "sglang",
+    "dgx-spark",
+    "gb10",
+    "dspark",
+    "anchored-tensors",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "base_model:finetune:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 16,
+  "downloads_30d": 0,
+  "trending_score": 16,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1910180152,
+  "storage_human": "1.9 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accueil | Administration numérique pour les étrangers en France (ANEF)",
+      "url": "https://administration-etrangers-en-france.interieur.gouv.fr/usagers/",
+      "snippet": "Je demande ou renouvelle un titre de séjour Je demande un premier titre Sans numéro étranger, sans visa"
+    },
+    {
+      "title": "Faire une demande sur internet pour un titre de séjour, un …",
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/R59398",
+      "snippet": "Faire une demande sur internet pour un titre de séjour, un changement de situation, un titre de voyage, une demande de …"
+    },
+    {
+      "title": "Renouvellement titre de séjour 2026 : délais, ANEF et erreurs ...",
+      "url": "https://demarchesetrangers.fr/titre-de-sejour/renouvellement-titre-sejour",
+      "snippet": "Renouveler son titre de séjour en 2026 sans rupture de droits : quand déposer, la procédure ANEF, ce qui change avec la loi de …"
+    },
+    {
+      "title": "Je demande le renouvellement de mon titre de séjour",
+      "url": "https://www.rhone.gouv.fr/Prendre-un-rendez-vous/Accueil-des-etrangers/Vous-etes-ressortissant-non-europeen-ou-europeen-hors-beneficiaire-d-une-protection-internationale4/Je-demande-un-titre-de-sejour/Je-demande-le-renouvellement-de-mon-titre-de-sejour",
+      "snippet": "Je demande le renouvellement de mon titre de séjour Je clique sur le pictogramme correspondant à ma demande. Pour plus …"
+    },
+    {
+      "title": "Administration numérique pour les étrangers en France",
+      "url": "https://administration-etrangers-en-france.interieur.gouv.fr/",
+      "snippet": "Vous ne pourrez pas avoir accès aux services dédiés aux étrangers en France."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "seriintan/smolvla_lang3a_frazier_blade",
+  "slug": "seriintan-smolvla_lang3a_frazier_blade",
+  "author": "seriintan",
+  "url": "https://huggingface.co/seriintan/smolvla_lang3a_frazier_blade",
+  "created_at": "2026-10-18T17:50:45.000Z",
+  "updated_at": "2026-10-18T17:51:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:seriintan/lang3a_frazier_blade",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 1197804352,
+  "storage_human": "1.2 GB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Best Banana Pudding Recipe (with Video)",
+      "url": "https://www.allrecipes.com/recipe/22749/the-best-banana-pudding/",
+      "snippet": "Sep 23, 2026 · This easy no-cook banana pudding recipe layers creamy vanilla pudding, ripe bananas, and vanilla wafers for a …"
+    },
+    {
+      "title": "Homemade Banana Pudding - Tastes Better from Scratch",
+      "url": "https://tastesbetterfromscratch.com/banana-pudding/",
+      "snippet": "Oct 20, 2025 · Easy, old-fashioned Banana Pudding made from scratch with layers of homemade pudding, Nilla wafers, sliced …"
+    },
+    {
+      "title": "Easy Banana Pudding Recipe (Classic Southern No-Bake Dessert)",
+      "url": "https://www.goodtasterecipes.com/easy-banana-pudding-recipe-classic-southern-no-bake-dessert/",
+      "snippet": "Mar 20, 2026 · Make this easy banana pudding recipe with vanilla wafers, ripe bananas, and creamy pudding for a classic Southern …"
+    },
+    {
+      "title": "Banana Pudding Recipe | M&S Recipe | M&S - Marks & Spencer",
+      "url": "https://www.marksandspencer.com/c/food-and-wine/cooking/recipes/222954/banana-pudding-recipe/?msockid=05c9ef4698836e31089cf8b099e46fa4",
+      "snippet": "This easy banana pudding recipe is a dreamy, no-bake dessert layered with sponge fingers, velvety custard, whipped cream and …"
+    },
+    {
+      "title": "Homemade Banana Pudding Recipe",
+      "url": "https://www.allrecipes.com/recipe/18990/banana-pudding-i/",
+      "snippet": "Apr 17, 2026 · Get back to basics with this homemade banana pudding recipe. This classic dessert layers creamy vanilla pudding, …"
+    }
+  ]
+}

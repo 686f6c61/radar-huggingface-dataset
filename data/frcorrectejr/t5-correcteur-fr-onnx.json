@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "frcorrectejr/t5-correcteur-fr-onnx",
+  "slug": "frcorrectejr-t5-correcteur-fr-onnx",
+  "author": "frcorrectejr",
+  "url": "https://huggingface.co/frcorrectejr/t5-correcteur-fr-onnx",
+  "created_at": "2026-10-18T17:21:33.000Z",
+  "updated_at": "2026-10-18T17:22:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers.js",
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "t5",
+    "text2text-generation",
+    "fr",
+    "base_model:fdemelo/t5-base-spell-correction-fr",
+    "base_model:quantized:fdemelo/t5-base-spell-correction-fr",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1240651754,
+  "storage_human": "1.2 GB",
+  "base_model": "fdemelo/t5-base-spell-correction-fr",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

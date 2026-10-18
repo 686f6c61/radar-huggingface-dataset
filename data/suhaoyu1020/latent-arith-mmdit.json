@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "SuhaoYu1020/latent-arith-mmdit",
+  "slug": "suhaoyu1020-latent-arith-mmdit",
+  "author": "SuhaoYu1020",
+  "url": "https://huggingface.co/SuhaoYu1020/latent-arith-mmdit",
+  "created_at": "2026-10-18T02:34:38.000Z",
+  "updated_at": "2026-10-18T02:42:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "diffusion",
+    "flow-matching",
+    "mmdit",
+    "arithmetic",
+    "representation-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16896982080,
+  "storage_human": "16.9 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - SuhaoYu1020/Semantic-Image-Release",
+      "url": "https://github.com/SuhaoYu1020/Semantic-Image-Release/tree/main",
+      "snippet": "Exported 2026-10-17 from semantic-image/code/. This is the subset of the project needed to train the flow-matching MMDiT on the square arithmetic renders in a fixed visual tokenizer&#x27;s latent space (Qwen-Image VAE or SigLIP2) and to run every evaluation used in the write-up: OCR accuracy, one-step x̂₀ read-out, the latent answer reader, glyph fidelity, and the σ-schedule curriculum on the ..."
+    },
+    {
+      "title": "SuhaoYu1020/Semantic-Image-Release - GitHub",
+      "url": "https://github.com/SuhaoYu1020/Semantic-Image-Release",
+      "snippet": "Exported 2026-10-17 from semantic-image/code/. This is the subset of the project needed to train the flow-matching MMDiT on the square arithmetic renders in a fixed visual tokenizer&#x27;s latent space (Qwen-Image VAE or SigLIP2) and to run every evaluation used in the write-up: OCR accuracy, one-step x̂₀ read-out, the latent answer reader, glyph fidelity, and the σ-schedule curriculum on the ..."
+    },
+    {
+      "title": "SuhaoYu1020/arith-sq256 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/SuhaoYu1020/arith-sq256",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SuhaoYu1020 (SuhaoYu) - Hugging Face",
+      "url": "https://huggingface.co/SuhaoYu1020",
+      "snippet": "Computer Vision, Agentic AI"
+    },
+    {
+      "title": "SD3 Architecture and Models | kohya-ss/sd-scripts | DeepWiki",
+      "url": "https://deepwiki.com/kohya-ss/sd-scripts/5.1-sd3-architecture-and-models",
+      "snippet": "The model architecture is loaded and analyzed in library/sd3_utils.py library/sd3_utils.py 30-76 Sources: library/sd3_models.py 47-59 library/sd3_utils.py 30-76 MMDiT Block Structure The MMDiT class library/sd3_models.py 909-1100 manages a sequence of MMDiTBlock library/sd3_models.py 685-738 objects. These blocks perform joint attention between image and text streams."
+    }
+  ]
+}

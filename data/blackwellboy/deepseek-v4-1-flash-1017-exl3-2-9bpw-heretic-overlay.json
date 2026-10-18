@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "BlackwellBoy/DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw-heretic-overlay",
+  "slug": "blackwellboy-deepseek-v4-1-flash-1017-exl3-2-9bpw-heretic-overlay",
+  "author": "BlackwellBoy",
+  "url": "https://huggingface.co/BlackwellBoy/DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw-heretic-overlay",
+  "created_at": "2026-10-18T19:34:55.000Z",
+  "updated_at": "2026-10-18T19:42:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "deepseek",
+    "deepseek-v4.1",
+    "exl3",
+    "abliterated",
+    "uncensored",
+    "heretic",
+    "text-generation",
+    "base_model:LibertAIDAI/DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw",
+    "base_model:finetune:LibertAIDAI/DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 997172792,
+  "storage_human": "997 MB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017, LibertAIDAI/DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "21 Things to Know Before Visiting Santorini (2026)",
+      "url": "https://www.santorinisecrets.com/trip-to-santorini/",
+      "snippet": "Nov 14, 2024 · Prepare for your Santorini trip with 21 local tips: cobblestone footwear, public bus secrets, tap water rules, and …"
+    },
+    {
+      "title": "Plan Your Trip to Santorini: Best of Santorini Tourism",
+      "url": "https://www.tripadvisor.com/Tourism-g189433-Santorini_Cyclades_South_Aegean-Vacations.html",
+      "snippet": "From fancy fare to super-fresh seafood—all with a view—here are my unique finds for mouthwatering wining and dining. Before …"
+    },
+    {
+      "title": "How to plan a trip to Santorini, Greece (2026)",
+      "url": "https://www.creativetravelguide.com/how-to-plan-a-trip-to-santorini/",
+      "snippet": "Aug 14, 2026 · Learn how to plan a trip to Santorini with expert tips on flights, ferries, hotels, best time to visit, & the top things to do …"
+    },
+    {
+      "title": "Santorini Trip Planning Made Simple: The Complete Itinerary",
+      "url": "https://wakaabuja.com/trip-to-santorini/",
+      "snippet": "1 day ago · Plan a trip to Santorini with 3 to 5 full days as your baseline, which covers the caldera views, Oia’s sunset, the …"
+    },
+    {
+      "title": "Santorini Travel Guide (Updated 2026)",
+      "url": "https://www.nomadicmatt.com/travel-guides/greece-travel-tips/santorini/",
+      "snippet": "Jan 2, 2026 · A comprehensive budget travel guide to Santorini with tips and advice on things to do, ways to save, costs, …"
+    }
+  ]
+}

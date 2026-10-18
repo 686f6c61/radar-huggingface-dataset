@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Allinsama/vokra__campplus-speaker-encoder",
+  "slug": "allinsama-vokra__campplus-speaker-encoder",
+  "author": "Allinsama",
+  "url": "https://huggingface.co/Allinsama/vokra__campplus-speaker-encoder",
+  "created_at": "2026-10-18T02:35:38.000Z",
+  "updated_at": "2026-10-18T02:35:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "vokra",
+  "languages": [],
+  "tags": [
+    "vokra",
+    "gguf",
+    "speaker-embedding",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 6908064,
+  "parameters_human": "6.9M",
+  "storage_bytes": 27684640,
+  "storage_human": "28 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vokra/campplus-speaker-encoder · Hugging Face",
+      "url": "https://huggingface.co/vokra/campplus-speaker-encoder",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Speaker Encoder (CAMPPlus) | plachtaa/seed-vc | DeepWiki",
+      "url": "https://deepwiki.com/plachtaa/seed-vc/9.2-speaker-encoder-(campplus)",
+      "snippet": "Speaker Encoder (CAMPPlus) Relevant source files Purpose and Scope This page documents the CAMPPlus speaker encoder, a shared component used across all Seed-VC models (V1 and V2) for extracting speaker identity embeddings from audio. The CAMPPlus model captures timbre and voice characteristics that are used to condition the voice conversion process. For information about other conditioning ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=vokra",
+      "snippet": "Edit Models filters. Main ; Tasks ; Libraries ; Languages ; Licenses ; Other 1; Model Tree. Base. Adapters. Finetunes. Quantizations. Merges. Apps . llama.cpp"
+    },
+    {
+      "title": "GitHub - lovemefan/campplus: A open-source toolkit for single and multi ...",
+      "url": "https://github.com/lovemefan/campplus",
+      "snippet": "A open-source toolkit for single and multi-modal speaker verification from modelscope and funasr with onnx - lovemefan/campplus"
+    },
+    {
+      "title": "Allinsama/cstr__cosyvoice3-0.5b-2512-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Allinsama/cstr__cosyvoice3-0.5b-2512-GGUF",
+      "snippet": "The script needs campplus.onnx (CV2/CV3 speaker encoder) and speech_tokenizer_v3.onnx (CV3 token extractor); both auto-download from HF on first run. --i-have-rights is required: baking turns a real speaker&#x27;s recording into a reusable voice clone, and by passing it you attest that you have that speaker&#x27;s consent or that the voice is your own."
+    }
+  ]
+}

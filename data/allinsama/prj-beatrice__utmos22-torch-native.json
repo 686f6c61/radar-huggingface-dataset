@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Allinsama/prj-beatrice__utmos22-torch-native",
+  "slug": "allinsama-prj-beatrice__utmos22-torch-native",
+  "author": "Allinsama",
+  "url": "https://huggingface.co/Allinsama/prj-beatrice__utmos22-torch-native",
+  "created_at": "2026-10-18T01:58:57.000Z",
+  "updated_at": "2026-10-18T01:59:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "utmos22",
+    "audio",
+    "speech-quality",
+    "utmos",
+    "audio-classification",
+    "custom_code",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 101723265,
+  "parameters_human": "101.7M",
+  "storage_bytes": 406918700,
+  "storage_human": "407 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "prj-beatrice/utmos22-torch-native · Hugging Face",
+      "url": "https://huggingface.co/prj-beatrice/utmos22-torch-native",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "prj-beatrice/utmos22-torch-native at main - Hugging Face",
+      "url": "https://huggingface.co/prj-beatrice/utmos22-torch-native/tree/main",
+      "snippet": "README.md 1.25 kBAdd UTMOS22 torch-native model12 days ago config.json 128 BytesAdd UTMOS22 torch-native model12 days ago model.safetensors 407 MB xet Add UTMOS22 torch-native model12 days ago modeling_utmos22.py 7.32 kBKeep differentiable LSTM on cuDNN10 days ago modeling_wav2vec2.py 8.57 kBAdd UTMOS22 torch-native model12 days ago"
+    },
+    {
+      "title": "prj-beatrice AI models - Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/company/prj-beatrice",
+      "snippet": "Browse AI models attributed to prj-beatrice, sourced from verified model catalogs."
+    },
+    {
+      "title": "UTMOS22 Strong Learner Model | tarepan/SpeechMOS | DeepWiki",
+      "url": "https://deepwiki.com/tarepan/SpeechMOS/2.2-utmos22-strong-learner-model",
+      "snippet": "The `UTMOS22Strong` class is a PyTorch `nn.Module` implementation of the \"Strong Learner\" architecture described in the UTMOS paper (Saeki et al., 2022). It is designed to predict Mean Opinion Scores"
+    },
+    {
+      "title": "Ollama - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ollama",
+      "snippet": "Ollama is an open-source software platform developed by Jeffrey Morgan and Michael Chiang in 2023 for running and managing large language models on local GPU infrastructure and through hosted cloud models. It provides a command-line interface, a native GUI, a local REST API, model-management tools, and integrations for using open-weight models with coding assistants and other applications. [2 ..."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Jordansky/e37cccaf28804",
+  "slug": "jordansky-e37cccaf28804",
+  "author": "Jordansky",
+  "url": "https://huggingface.co/Jordansky/e37cccaf28804",
+  "created_at": "2026-10-18T02:05:57.000Z",
+  "updated_at": "2026-10-18T02:06:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "granite",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 3402836480,
+  "parameters_human": "3.40B",
+  "storage_bytes": 6805714880,
+  "storage_human": "6.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jordansky (Ilfan Aulia Nur Pagi) - Hugging Face",
+      "url": "https://huggingface.co/Jordansky",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 4 days ago ... published a model 4 days ago"
+    },
+    {
+      "title": "Jordansky (Ilfan Aulia Nur Pagi) - Hugging Face",
+      "url": "https://huggingface.co/Jordansky/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 18 days ago ... published a model 18 days ago"
+    },
+    {
+      "title": "AI Model Tracker Index: Updates, Sources and Evidence",
+      "url": "https://savrn.com/model-tracker",
+      "snippet": "Follow observed AI model changes and official announcements with source links, evidence labels, check times and transparent monitoring coverage from SAVRN."
+    },
+    {
+      "title": "Run Augmented-0e3f2d14de667916 API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/Jordansky/augmented-0e3f2d14de667916",
+      "snippet": "Jordansky/augmented-0e3f2d14de667916 is a 4 billion parameter language model with a 32768 token context length. Due to the lack of specific details in its model card, its precise architecture, training data, and primary differentiators are not explicitly stated. It is intended for general language tasks, but specific optimizations or unique capabilities are not provided."
+    },
+    {
+      "title": "GitHub - Damacol/jordansky-test: Run Jordansky/test privately via ...",
+      "url": "https://github.com/Damacol/jordansky-test",
+      "snippet": "Jordansky/test - Private, Uncensored AI for Real Creators and Devs {MODEL} deployed without telemetry or corporate filters. Experience uncensored, local-first inference via Venice.ai."
+    }
+  ]
+}

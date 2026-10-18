@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "matthewwilsonla/tiny-transformer-classification-notes",
+  "slug": "matthewwilsonla-tiny-transformer-classification-notes",
+  "author": "matthewwilsonla",
+  "url": "https://huggingface.co/matthewwilsonla/tiny-transformer-classification-notes",
+  "created_at": "2026-10-18T17:24:26.000Z",
+  "updated_at": "2026-10-18T17:24:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A Practical Survey on Faster and Lighter Transformers - arXiv",
+      "url": "https://arxiv.org/pdf/2103.14636",
+      "snippet": "Recurrent neural networks are effective models to process sequences. However, they are unable to learn long-term dependencies because of their inherent ..."
+    },
+    {
+      "title": "Learning the Transformer Kernel - Research Collection",
+      "url": "https://www.research-collection.ethz.ch/server/api/core/bitstreams/6756b9a8-c761-400e-a626-cb5bd29dfc46/content",
+      "snippet": "In an attempt to further explore the trade off between computational complexity and accuracy we also propose to model the spectral frequency distribution of ..."
+    },
+    {
+      "title": "Generative AI - GI Digital Library",
+      "url": "https://dl.gi.de/items/11adbef4-67f4-4da3-8563-bdeefa3dac3e",
+      "snippet": "Feuerriegel, Stefan; Hartmann, Jochen; Janiesch, Christian; Zschech, Patrick (2024): Generative AI. Business & Information Systems Engineering: Vol. 66, No."
+    },
+    {
+      "title": "A Comparative Survey of Instance Selection Methods applied to Non ...",
+      "url": "https://dl.acm.org/doi/full/10.1145/3582000",
+      "snippet": "... classification approaches, particularly focusing on Transformer-based models. ... Furthermore, considering only topic classification, we note that the best ..."
+    },
+    {
+      "title": "LETS-C: Leveraging Text Embedding for Time Series Classification",
+      "url": "https://aclanthology.org/2025.acl-long.1557.pdf?utm_source=www.ai-street.co&utm_medium=referral&utm_campaign=the-rise-of-ai-market-models",
+      "snippet": "27.07.2025 ... Additionally, unsu- pervised representation learning methods pre-train models with masked time series modeling to mini- mize reconstruction ..."
+    }
+  ]
+}

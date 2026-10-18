@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "algolyzer/laya-bangla-lora",
+  "slug": "algolyzer-laya-bangla-lora",
+  "author": "algolyzer",
+  "url": "https://huggingface.co/algolyzer/laya-bangla-lora",
+  "created_at": "2026-10-18T19:41:11.000Z",
+  "updated_at": "2026-10-18T19:45:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "laya",
+  "languages": [
+    "bn",
+    "en"
+  ],
+  "tags": [
+    "laya",
+    "onnx",
+    "safetensors",
+    "bangla",
+    "bengali",
+    "banglish",
+    "lora",
+    "typed-decisions",
+    "classification",
+    "routing",
+    "moderation",
+    "text-classification",
+    "bn",
+    "en",
+    "dataset:mteb/amazon_massive_intent",
+    "dataset:mteb/sib200",
+    "dataset:aplycaebous/BanTH",
+    "dataset:aplycaebous/BanHate",
+    "dataset:TanjimKIT/Bangla_Sentiments_in_eLearning",
+    "base_model:convaiinnovations/laya-multilingual",
+    "base_model:finetune:convaiinnovations/laya-multilingual",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 321908998,
+  "parameters_human": "321.9M",
+  "storage_bytes": 2610791169,
+  "storage_human": "2.6 GB",
+  "base_model": "convaiinnovations/laya-multilingual",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI 技术新趋势· HuggingFace + GitHub Trending - ChaosAI · 众智",
+      "url": "https://chaosaiagent.com/industry-data/ai-trends",
+      "snippet": "25, pablodawson/MiniMax-H3-360-Orbit-LoRA, pablodawson, image-text-to-video ... algolyzer/laya-bangla, algolyzer, text-classification, 0, 2026-10-18. 9, cwaud ..."
+    }
+  ]
+}

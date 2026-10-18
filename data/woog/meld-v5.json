@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "woog/meld-v5",
+  "slug": "woog-meld-v5",
+  "author": "woog",
+  "url": "https://huggingface.co/woog/meld-v5",
+  "created_at": "2026-10-18T17:31:29.000Z",
+  "updated_at": "2026-10-18T17:31:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "modernbert",
+    "ai-text-detection",
+    "en",
+    "base_model:jhu-clsp/ettin-encoder-400m",
+    "base_model:finetune:jhu-clsp/ettin-encoder-400m",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 394833460,
+  "parameters_human": "394.8M",
+  "storage_bytes": 1579353052,
+  "storage_human": "1.6 GB",
+  "base_model": "jhu-clsp/ettin-encoder-400m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vidéos porno et films de sexe gratuits - Porno, XXX, Porn Tube",
+      "url": "https://fr.pornhub.com/",
+      "snippet": "Pornhub est le site tube pornographique le plus complet et le plus révolutionnaire. Nous offrons des vidéos porno en streaming, des …"
+    },
+    {
+      "title": "nierenfunktion - nierenfunktionseinheit,nieren,Glomeruläre ...",
+      "url": "https://www.nierenfunktionseinheit.de/",
+      "snippet": "... Model for End-stage Liver Disease'. Der Meld-Score spielt nur bei ... V5), wenn er schreibt: \"Die Herztransplantation gilt weiterhin als Goldstandard ..."
+    },
+    {
+      "title": "Porno gratuit recommandé: vidéos de sexe hardcore | Pornhub",
+      "url": "https://fr.pornhub.com/recommended",
+      "snippet": "Avoir quelqu'un qui vous recommande du porno gratuit, c'est comme avoir un conservateur pour votre collection de XXX. Profitez …"
+    },
+    {
+      "title": "AI-Driven Segmentation and Volumetric Response Modeling of Liver ...",
+      "url": "https://digitalcommons.library.tmc.edu/cgi/viewcontent.cgi?article=2627&context=utgsbs_dissertations",
+      "snippet": "... (MELD) Score ... AI predicted contours from each model were quantitatively and qualitatively evaluated as per Sect."
+    },
+    {
+      "title": "Créer un nouveau compte - Pornhub",
+      "url": "https://fr.pornhub.com/signup",
+      "snippet": "Pornhub a bien plus que vous ne pensez à vous offrir ! Subscribe to Content Creators Publier un commentaire Créer des playlists"
+    }
+  ]
+}

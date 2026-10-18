@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "LibertAIDAI/DeepSeek-V4.1-Flash-1017-NVFP4",
+  "slug": "libertaidai-deepseek-v4-1-flash-1017-nvfp4",
+  "author": "LibertAIDAI",
+  "url": "https://huggingface.co/LibertAIDAI/DeepSeek-V4.1-Flash-1017-NVFP4",
+  "created_at": "2026-10-17T08:50:28.000Z",
+  "updated_at": "2026-10-17T09:43:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "deepseek_v41",
+    "nvfp4",
+    "fp4",
+    "mxfp4",
+    "deepseek",
+    "moe",
+    "quantized",
+    "multimodal",
+    "image-text-to-text",
+    "arxiv:2512.02010",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "license:mit",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 16,
+  "downloads_30d": 247,
+  "trending_score": 16,
+  "parameters": 664898390994,
+  "parameters_human": "664.90B",
+  "storage_bytes": 750036039101,
+  "storage_human": "750.0 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "H - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/H",
+      "snippet": "It was formerly common for an rather than a to be used as the indefinite article before a word beginning with /h/ in an unstressed …"
+    },
+    {
+      "title": "H&M France | Femme, Homme, Enfant et Maison | H&M FR",
+      "url": "https://www2.hm.com/fr_fr/index.html?msockid=1856d61c743068b03d4fc1ea753b69c4",
+      "snippet": "H&M est la destination pour la mode, la maison, la beauté, les vêtements pour enfants et plus. Retrouvez les collections et des …"
+    },
+    {
+      "title": "The Letter H | Alphabet A-Z | Jack Hartmann Alphabet Song",
+      "url": "https://m.youtube.com/watch?v=sHRHkX9J0eA",
+      "snippet": "Jul 28, 2020 · Learn about the Letter H. Learn that H is a consonant in the alphabet. Learn to recognize the upper and lowercase …"
+    },
+    {
+      "title": "Letter H Song | Letter Recognition + Phonics with Gracie’s Corner ...",
+      "url": "https://m.youtube.com/watch?v=wQ5PtFuf-V4",
+      "snippet": "Mar 12, 2024 · Letter H Song is a fun way to introduce kids to the letter H and the sound that it makes. Come sing and dance with …"
+    },
+    {
+      "title": "tonyd2wild/DeepSeek-V4.1-Flash-vLLM-DGX-Spark - GitHub",
+      "url": "https://github.com/tonyd2wild/DeepSeek-V4.1-Flash-vLLM-DGX-Spark",
+      "snippet": "This repo runs DeepSeek-V4.1-Flash on four DGX Sparks (GB10) with two engines. The default lane is DeepSeek-V4.1-Flash-1017 on TensorFold (TP4, ..."
+    }
+  ]
+}

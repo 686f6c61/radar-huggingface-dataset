@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "muhammediyunes/dwago",
+  "slug": "muhammediyunes-dwago",
+  "author": "muhammediyunes",
+  "url": "https://huggingface.co/muhammediyunes/dwago",
+  "created_at": "2026-10-18T17:56:50.000Z",
+  "updated_at": "2026-10-18T17:57:30.000Z",
+  "license": "dwago-evaluation-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "pytorch",
+  "languages": [
+    "multilingual",
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "onnx",
+    "safetensors",
+    "text-classification",
+    "natural-language-inference",
+    "intent-classification",
+    "moderation",
+    "decision-making",
+    "trained-from-scratch",
+    "open-weights",
+    "multilingual",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30337921,
+  "parameters_human": "30.3M",
+  "storage_bytes": 189368794,
+  "storage_human": "189 MB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Goghor/Swift-1.5-Qwen3.8-27B-INT8-W8A16-MTP",
+  "slug": "goghor-swift-1-5-qwen3-8-27b-int8-w8a16-mtp",
+  "author": "Goghor",
+  "url": "https://huggingface.co/Goghor/Swift-1.5-Qwen3.8-27B-INT8-W8A16-MTP",
+  "created_at": "2026-09-26T15:32:36.000Z",
+  "updated_at": "2026-10-18T18:02:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen3_5",
+    "qwen3.8",
+    "compressed-tensors",
+    "w8a16",
+    "int8",
+    "quantized",
+    "mtp",
+    "speculative-decoding",
+    "vision",
+    "conversational",
+    "image-text-to-text",
+    "base_model:ukisai/Swift-Qwen3.8-27b",
+    "base_model:quantized:ukisai/Swift-Qwen3.8-27b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 139,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 31636258901,
+  "storage_human": "31.6 GB",
+  "base_model": "ukisai/Swift-Qwen3.8-27b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Goghor/Swift-1.5-Qwen3.8-27B-INT8-W8A16-MTP · Hugging Face",
+      "url": "https://huggingface.co/Goghor/Swift-1.5-Qwen3.8-27B-INT8-W8A16-MTP",
+      "snippet": "Goghor / Swift-1.5-Qwen3.8-27B-INT8-W8A16-MTP Like 0 Image-Text-to-Text Safetensors vllm qwen3_5 qwen3.8 compressed-tensors w8a16 int8 quantized mtp speculative-decoding vision conversational License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Dual RTX 3090 deployment Memory and capacity Measured serving ..."
+    },
+    {
+      "title": "Goghor/Swift-1.5-Qwen3.8-27B-INT8-W8A16-AutoRound-MTP · Hugging Face",
+      "url": "https://huggingface.co/Goghor/Swift-1.5-Qwen3.8-27B-INT8-W8A16-AutoRound-MTP",
+      "snippet": "Goghor / Swift-1.5-Qwen3.8-27B-INT8-W8A16-AutoRound-MTP Like 2 Image-Text-to-Text Safetensors vllm qwen3_5 qwen3.8 compressed-tensors w8a16 int8 quantized mtp speculative-decoding vision conversational License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Dual RTX 3090 deployment Memory and capacity Measured ..."
+    },
+    {
+      "title": "Swift 1.5 Qwen3.8-27B | UkisAI",
+      "url": "https://ukisai.com/swift-1-5-27b",
+      "snippet": "The results below compare Qwen3.8-27B, the foundation base model, Swift 1.0, the first UkisAI adaptation, and Swift 1.5. All three use the same saved evaluation protocols, and every score is a final five-repeat aggregate."
+    },
+    {
+      "title": "Swift — shorter thinking | UkisAI",
+      "url": "https://ukisai.com/products/swift",
+      "snippet": "Swift-Qwen3.8-27B is UkisAI&#x27;s reasoning-efficient derivative of Qwen3.8-27B, using 58.3% fewer thinking tokens while maintaining near-identical performance (<1% loss) and as a result getting a x1.95 speed-up on several tasks. Read the model report. See live download counts."
+    },
+    {
+      "title": "Run Swift-1.5-Qwen3.8-27B API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/ukisai/Swift-1.5-Qwen3.8-27b",
+      "snippet": "Swift 1.5 Qwen3.8-27B is a 27 billion parameter language model developed by UkisAI, derived from Qwen3.8-27B. This model is optimized for reasoning efficiency, using 58.5% fewer \"thinking tokens\" while achieving a 0.35% higher score than its base model, resulting in a 1.95x speed-up on various tasks. It excels in coding and agentic tasks, making it suitable for applications requiring efficient ..."
+    }
+  ]
+}

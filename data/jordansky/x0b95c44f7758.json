@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Jordansky/x0b95c44f7758",
+  "slug": "jordansky-x0b95c44f7758",
+  "author": "Jordansky",
+  "url": "https://huggingface.co/Jordansky/x0b95c44f7758",
+  "created_at": "2026-10-18T02:20:57.000Z",
+  "updated_at": "2026-10-18T02:21:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 5033557128,
+  "storage_human": "5.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Conocemos San Sebastián - Quiz - Wordwall",
+      "url": "https://wordwall.net/cb/resource/8130335/conocemos-san-sebasti%C3%A1n",
+      "snippet": "Quiz - Usa ka serye nga multiple choice questions. Pag-tap sa tama nga tubag aron makapadayon."
+    },
+    {
+      "title": "San Sebastián: quiz de 5 preguntas - wayground.com",
+      "url": "https://wayground.com/admin/quiz/67f80a3d753ebbb6c7e6f553/san-sebastian",
+      "snippet": "San Sebastián: 5 preguntas. Por ejemplo: \"¿Qué evento importante se celebra cada año en el Palacio de Congresos Kursaal?\" …"
+    },
+    {
+      "title": "Conocemos San Sebastián - Quiz - Wordwall",
+      "url": "https://wordwall.net/resource/8130335/conocemos-san-sebasti%C3%A1n",
+      "snippet": "1) ¿Dónde está San Sebastián? 2) ¿Qué lenguas hablan en San Sebastián? 3) ¿Cómo se llama la playa de San Sebastián? 4) …"
+    },
+    {
+      "title": "Saint-Sébastien - Choix multiples - JetPunk",
+      "url": "https://www.jetpunk.com/user-quizzes/1934075/saint-sebastien-choix-multiples",
+      "snippet": "May 28, 2026 · Saint-Sébastien - Choix multiples Pourrez-vous répondre à ces 10 questions à choix multiples sur la ville de Saint …"
+    },
+    {
+      "title": "¡Descubre San Sebastián con Nuestro Juego de Preguntas y …",
+      "url": "https://descubredonostia.com/quiz-juego-donostia/",
+      "snippet": "Aprenderás sobre los rincones secretos y las leyendas que hacen que San Sebastián sea tan especial. ¿Listo para el Reto? ¡Juega …"
+    }
+  ]
+}

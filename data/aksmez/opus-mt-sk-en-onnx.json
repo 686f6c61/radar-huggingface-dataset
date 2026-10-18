@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "aksmez/opus-mt-sk-en-ONNX",
+  "slug": "aksmez-opus-mt-sk-en-onnx",
+  "author": "aksmez",
+  "url": "https://huggingface.co/aksmez/opus-mt-sk-en-ONNX",
+  "created_at": "2026-10-18T16:21:51.000Z",
+  "updated_at": "2026-10-18T16:38:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "marian",
+    "text2text-generation",
+    "translation",
+    "base_model:Helsinki-NLP/opus-mt-sk-en",
+    "base_model:quantized:Helsinki-NLP/opus-mt-sk-en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4297899783,
+  "storage_human": "4.3 GB",
+  "base_model": "Helsinki-NLP/opus-mt-sk-en",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

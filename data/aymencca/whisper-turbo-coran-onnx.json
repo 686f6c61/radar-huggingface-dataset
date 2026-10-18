@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "Aymencca/whisper-turbo-coran-onnx",
+  "slug": "aymencca-whisper-turbo-coran-onnx",
+  "author": "Aymencca",
+  "url": "https://huggingface.co/Aymencca/whisper-turbo-coran-onnx",
+  "created_at": "2026-10-18T15:49:18.000Z",
+  "updated_at": "2026-10-18T15:50:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers.js",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "whisper",
+    "automatic-speech-recognition",
+    "quran",
+    "webgpu",
+    "ar",
+    "base_model:naazimsnh02/whisper-large-v3-turbo-ar-quran",
+    "base_model:quantized:naazimsnh02/whisper-large-v3-turbo-ar-quran",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2033448785,
+  "storage_human": "2.0 GB",
+  "base_model": "naazimsnh02/whisper-large-v3-turbo-ar-quran",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

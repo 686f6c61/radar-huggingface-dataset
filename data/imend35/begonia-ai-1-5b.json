@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "imend35/Begonia-AI-1.5B",
+  "slug": "imend35-begonia-ai-1-5b",
+  "author": "imend35",
+  "url": "https://huggingface.co/imend35/Begonia-AI-1.5B",
+  "created_at": "2026-10-18T17:31:19.000Z",
+  "updated_at": "2026-10-18T18:11:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "qlora",
+    "hotel-assistant",
+    "turkish",
+    "educational",
+    "text-generation",
+    "conversational",
+    "tr",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098888704,
+  "storage_human": "3.1 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Barre d amis a droite a disparu [Résolu] - Forum Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-35168080-barre-d-amis-a-droite-a-disparu",
+      "snippet": "bonjour ma barre a droite sur facebook ou il y avait le nom de mes amis a disparu depuis hier pouvez vous m aider SVP merciRead more"
+    },
+    {
+      "title": "Revenir a l'ancien facebook [Résolu] - Facebook - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-8406097-revenir-a-l-ancien-facebook",
+      "snippet": "Amis Facebook voici la solution concernant le profil facebook, pour désinstaller le Nouveau profil, aller dans \"Compte\" en haut à …"
+    },
+    {
+      "title": "El código de confirmación de Facebook no llega: correo, SMS - CCM",
+      "url": "https://es.ccm.net/aplicaciones-e-internet/redes-sociales-y-mensajeria/1704-codigo-de-confirmacion-de-facebook-que-hacer-si-no-te-llega/",
+      "snippet": "Oct 30, 2023 · Facebook te envía un código de confirmación en el momento de crear una nueva cuenta o al hacer algún cambio o …"
+    },
+    {
+      "title": "Facebook: Me aceptan amigos sin agregarlos - CCM",
+      "url": "https://es.ccm.net/forum/affich-593855-facebook-me-aceptan-amigos-sin-agregarlos",
+      "snippet": "Facebook, como todos saben, es una red social, con lo que puedes saber las amistades de tus amistades, etc.. Para que …"
+    },
+    {
+      "title": "Comment supprimer définitivement votre compte Facebook",
+      "url": "https://www.zdnet.fr/pratique/comment-supprimer-definitivement-votre-compte-facebook-39932301.htm",
+      "snippet": "Nov 12, 2021 · Pratique : Se débarrasser de son compte Facebook demande un peu de travail de votre part."
+    }
+  ]
+}

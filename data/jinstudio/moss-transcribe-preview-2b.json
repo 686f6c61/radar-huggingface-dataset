@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "Jinstudio/MOSS-Transcribe-preview-2B",
+  "slug": "jinstudio-moss-transcribe-preview-2b",
+  "author": "Jinstudio",
+  "url": "https://huggingface.co/Jinstudio/MOSS-Transcribe-preview-2B",
+  "created_at": "2026-10-18T16:22:21.000Z",
+  "updated_at": "2026-10-18T16:22:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "moss",
+    "text-generation",
+    "speech",
+    "english",
+    "qwen3",
+    "audio",
+    "reinforcement-learning",
+    "automatic-speech-recognition",
+    "custom_code",
+    "en",
+    "dataset:openslr/librispeech_asr",
+    "dataset:speechcolab/gigaspeech",
+    "dataset:mozilla-foundation/common_voice_17_0",
+    "dataset:facebook/voxpopuli",
+    "dataset:edinburghcstr/ami",
+    "dataset:anton-l/earnings22",
+    "dataset:kensho/spgispeech",
+    "license:apache-2.0",
+    "model-index",
+    "eval-results",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2418833792,
+  "parameters_human": "2.42B",
+  "storage_bytes": 4849194606,
+  "storage_human": "4.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "Open ASR Leaderboard",
+      "metric": "Average WER",
+      "value": 4.87
+    }
+  ],
+  "sources": [
+    {
+      "title": "[Rozwiązano] Serwer Satel brak połączenia. Nieprzydzielone ID",
+      "url": "https://www.elektroda.pl/rtvforum/topic3585835.html",
+      "snippet": "May 29, 2019 · Czy ktoś miał problem z brakiem przydzielonego ID w serwerze Satel przy konfiguracji aplikacji Integra Control? …Read more"
+    },
+    {
+      "title": "Vag-com pełna wersja programu. - elektroda.pl",
+      "url": "https://www.elektroda.pl/rtvforum/topic2723744.html",
+      "snippet": "Jan 2, 2014 · Szukam pełnej wersji programu VAG-COM, najlepiej w języku angielskim. Gdzie mogę go pobrać lub kupić? Jakie są …"
+    },
+    {
+      "title": "TV wsady pamięci i aktualizacje - - elektroda.pl",
+      "url": "https://www.elektroda.pl/rtvforum/forum408.html",
+      "snippet": "Jul 22, 2014 · Forum dyskusyjne o wsady do TV, wsady pamięci do TV, dump memories TV, aktualizacja firmware TV DVBT,"
+    },
+    {
+      "title": "Flashowanie BIOSu płyty głównej za pomocą pendrive'a USB",
+      "url": "https://www.elektroda.pl/rtvforum/topic2736623.html",
+      "snippet": "Jan 19, 2014 · Jak zaktualizować BIOS na płycie głównej MSI 875P Neo-FISR za pomocą pendrive'a? Szukam krok po kroku …"
+    },
+    {
+      "title": "Microsoft - Poczta Example? - elektroda.pl",
+      "url": "https://www.elektroda.pl/rtvforum/topic2908064.html",
+      "snippet": "Oct 5, 2014 · Jak sprawdzić pocztę na example.com? Użytkownik pyta o dostęp do e-maila Microsoft i problemy z niedziałającą stroną."
+    }
+  ]
+}

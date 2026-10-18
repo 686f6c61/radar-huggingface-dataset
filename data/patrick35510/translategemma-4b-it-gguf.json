@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Patrick35510/translategemma-4b-it-GGUF",
+  "slug": "patrick35510-translategemma-4b-it-gguf",
+  "author": "Patrick35510",
+  "url": "https://huggingface.co/Patrick35510/translategemma-4b-it-GGUF",
+  "created_at": "2026-10-18T17:37:04.000Z",
+  "updated_at": "2026-10-18T18:26:04.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "translation",
+    "base_model:google/translategemma-4b-it",
+    "base_model:quantized:google/translategemma-4b-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3880263168,
+  "parameters_human": "3.88B",
+  "storage_bytes": 9811081888,
+  "storage_human": "9.8 GB",
+  "base_model": "google/translategemma-4b-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

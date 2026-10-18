@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "ya9919/qwen3.5-4b-base-finance-lora-head-50k",
+  "slug": "ya9919-qwen3-5-4b-base-finance-lora-head-50k",
+  "author": "ya9919",
+  "url": "https://huggingface.co/ya9919/qwen3.5-4b-base-finance-lora-head-50k",
+  "created_at": "2026-10-18T16:03:24.000Z",
+  "updated_at": "2026-10-18T16:04:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "s2-mas",
+    "financial-qa",
+    "decision-head",
+    "qwen3_5",
+    "lora",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B-Base",
+    "base_model:adapter:Qwen/Qwen3.5-4B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 57566553,
+  "storage_human": "58 MB",
+  "base_model": "Qwen/Qwen3.5-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BandLab - Make Music Online",
+      "url": "https://www.bandlab.com/",
+      "snippet": "The cloud platform where musicians and fans create music, collaborate, and engage with each other across the globe"
+    },
+    {
+      "title": "BandLab for Education | FREE Award-Winning Education Platform",
+      "url": "https://edu.bandlab.com/",
+      "snippet": "Our award-winning platform empowers schools, institutions, teachers and students with essential workflow, classroom and …"
+    },
+    {
+      "title": "BandLab chat: Better, faster communication with friends and bandmates",
+      "url": "https://blog.bandlab.com/bandlab-chat-better-faster-communication-with-friends-and-bandmates/",
+      "snippet": "Nov 16, 2015 · So now, with BandLab chat, users can communicate—on BandLab itself—with anyone. You can discuss anything; …"
+    },
+    {
+      "title": "BandLab | Log in",
+      "url": "https://www.bandlab.com/login",
+      "snippet": "We use cookies and other tracking technologies to improve your browsing experience on our website for the following purposes: …"
+    },
+    {
+      "title": "How to make electronic dance music in minutes - BandLab Blog",
+      "url": "https://blog.bandlab.com/how-to-make-electronic-dance-music-in-minutes/",
+      "snippet": "Aug 22, 2018 · Learn How to Recreate that Alan Walker drop on BandLab The Looper If you have little or zero knowledge of how …"
+    }
+  ]
+}

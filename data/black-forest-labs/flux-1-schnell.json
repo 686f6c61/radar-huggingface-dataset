@@ -27,12 +27,12 @@
     "deploy:azure",
     "region:us"
   ],
-  "likes": 6319,
-  "downloads_30d": 561777,
-  "trending_score": 45,
+  "likes": 6331,
+  "downloads_30d": 564673,
+  "trending_score": 42,
   "parameters": 11891178560,
   "parameters_human": "11.89B",
-  "storage_bytes": 58051635877,
+  "storage_bytes": 58051892060,
   "storage_human": "58.1 GB",
   "base_model": null,
   "formats": [

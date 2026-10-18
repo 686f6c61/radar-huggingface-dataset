@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "congruency/MOSS-Image-Turbo-MFD",
+  "slug": "congruency-moss-image-turbo-mfd",
+  "author": "congruency",
+  "url": "https://huggingface.co/congruency/MOSS-Image-Turbo-MFD",
+  "created_at": "2026-10-18T01:58:38.000Z",
+  "updated_at": "2026-10-18T14:09:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "moss-image",
+    "text-to-image",
+    "distilled",
+    "turbo",
+    "arxiv:2606.11155",
+    "base_model:OpenMOSS-Team/MOSS-Image-Base",
+    "base_model:finetune:OpenMOSS-Team/MOSS-Image-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 225345808,
+  "storage_human": "225 MB",
+  "base_model": "OpenMOSS-Team/MOSS-Image-Base, OpenMOSS-Team/MOSS-Image-SFT",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "akhaliq/moss-image-turbo · Hugging Face",
+      "url": "https://huggingface.co/akhaliq/moss-image-turbo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Fine-tuned Models for OpenMOSS-Team/MOSS-Image-Base - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:OpenMOSS-Team/MOSS-Image-Base",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "MOSS image model hits 4MP in ~55s on RTX 5090 - tools4all.ai",
+      "url": "https://tools4all.ai/trends/moss-image-model-hits-4mp-in-55s-on-rtx-5090",
+      "snippet": "A community test shows the MOSS image diffusion model producing cinematic 4MP renders in under a minute on consumer hardware, with a stock ComfyUI setup."
+    },
+    {
+      "title": "MOSS-Image | Text-to-Image Generation with Native Layout Control",
+      "url": "https://openmoss.ai/MOSS-Image/",
+      "snippet": "MOSS-Image is a text-to-image model family from OpenMOSS, comprising a base model and a curated-data fine-tuned model. In addition to natural-language prompts, MOSS-Image supports native text-driven layout generation: objects, rendered text, and their spatial positions can be specified in a JSON prompt."
+    },
+    {
+      "title": "Moss Image Turbo LoRas - Moss_SFT_8_steps_dmd_v0.1 | MOSS Image LoRA ...",
+      "url": "https://civitai.com/models/3006599/moss-image-turbo-loras",
+      "snippet": "Moss_Image_Base_8_steps_dmd_v0.1: 1.0 (recommended) Disclaimer & Attribution I did not train, distill, or create the original Turbo/DMD LoRA weights. This model page provides modified compatibility versions / repackaged safetensors intended to let compatible LoRA adapters load seamlessly with ComfyUI&#x27;s built-in LoRA loader."
+    }
+  ]
+}

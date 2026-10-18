@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mymaccrashed12times/grump-e4b-final",
+  "slug": "mymaccrashed12times-grump-e4b-final",
+  "author": "mymaccrashed12times",
+  "url": "https://huggingface.co/mymaccrashed12times/grump-e4b-final",
+  "created_at": "2026-10-18T02:27:17.000Z",
+  "updated_at": "2026-10-18T06:53:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "text-generation",
+    "conversational",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6503218176,
+  "parameters_human": "6.50B",
+  "storage_bytes": 13031885813,
+  "storage_human": "13.0 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mymaccrashed12times (Sean Zhang) - Hugging Face",
+      "url": "https://huggingface.co/mymaccrashed12times",
+      "snippet": "AI & ML interests ... Recent Activity upvoted a collection 6 days ago ... updated a model 27 days ago"
+    },
+    {
+      "title": "google/gemma-4-E4B · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-E4B",
+      "snippet": "Transparency and Accountability This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem. Risks identified and ..."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "mymaccrashed12times hamstergamerszhang-ops - GitHub",
+      "url": "https://github.com/hamstergamerszhang-ops",
+      "snippet": "hamstergamerszhang-ops 💭 my damn computer is ooming so much"
+    },
+    {
+      "title": "GitHub - l0gicx/ai-model-bypass: Exploit prompts and roleplay ...",
+      "url": "https://github.com/l0gicx/ai-model-bypass",
+      "snippet": "Exploit prompts and roleplay techniques for bypassing AI model restrictions. - l0gicx/ai-model-bypass"
+    }
+  ]
+}

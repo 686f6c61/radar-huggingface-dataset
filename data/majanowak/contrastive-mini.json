@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "MAJANOWAK/contrastive-mini",
+  "slug": "majanowak-contrastive-mini",
+  "author": "MAJANOWAK",
+  "url": "https://huggingface.co/MAJANOWAK/contrastive-mini",
+  "created_at": "2026-10-18T02:32:28.000Z",
+  "updated_at": "2026-10-18T02:32:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MAJANOWAK/contrastive-mini · Hugging Face",
+      "url": "https://huggingface.co/MAJANOWAK/contrastive-mini",
+      "snippet": "MAJANOWAK / contrastive-mini Like 0 Safetensors PyTorch beit contrastive License:mit Model card FilesFiles and versions xet Community Copy to bucket new Beit for Contrastive Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files License"
+    },
+    {
+      "title": "MAJANOWAK (Maja H. Nowak) - Hugging Face",
+      "url": "https://huggingface.co/MAJANOWAK",
+      "snippet": "User profile of Maja H. Nowak on Hugging Face"
+    },
+    {
+      "title": "LLM API Pricing Comparison & Calculator (October 2026) | BenchLM.ai",
+      "url": "https://benchlm.ai/llm-pricing",
+      "snippet": "The cheapest API is rarely the cheapest model to run. Price per token below, price per answer in the calculator. The Score/$ column uses the public overall score per dollar of output — higher means better value. Updated October 17, 2026. 185 paid models, 36 providers, per million tokens. Official API rates. Open-weight model costs depend on your infrastructure. How does LLM token pricing work?"
+    },
+    {
+      "title": "Contrastive Learning: A Powerful Approach to Self-Supervised ...",
+      "url": "https://www.netguru.com/blog/contrastive-learning",
+      "snippet": "The gap between supervised and self-supervised methods continues to narrow. Some recent contrastive learning models have achieved performance comparable to supervised approaches while requiring significantly less labeled data. Theoretical understanding of why contrastive learning works so effectively remains incomplete."
+    },
+    {
+      "title": "AI Model Rankings 2026: Most Cost-Effective Models",
+      "url": "https://diyai.io/ai-tools/ai-model-comparison/",
+      "snippet": "Compare the cheapest AI inference models in 2026 with October API prices, caching, retries, context limits and calculated cost per successful task."
+    }
+  ]
+}

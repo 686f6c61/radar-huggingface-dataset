@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "timmyboy26/stable-diffusion-v1-5-LiteRT-NPU",
+  "slug": "timmyboy26-stable-diffusion-v1-5-litert-npu",
+  "author": "timmyboy26",
+  "url": "https://huggingface.co/timmyboy26/stable-diffusion-v1-5-LiteRT-NPU",
+  "created_at": "2026-10-18T14:44:30.000Z",
+  "updated_at": "2026-10-18T18:29:51.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "litert",
+  "languages": [],
+  "tags": [
+    "litert",
+    "tflite",
+    "stable-diffusion",
+    "npu",
+    "mediatek",
+    "base_model:stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "base_model:finetune:stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15407608896,
+  "storage_human": "15.4 GB",
+  "base_model": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stable Diffusion v1.5: Open-Source Text-to-Image AI Model Guide ...",
+      "url": "https://exploreai.tools/ai-models/stable-diffusion-v1-5",
+      "snippet": "Explore Stable Diffusion v1.5, a 2022 open-weights diffusion model for text-to-image generation, including capabilities, use cases, and how to get started…"
+    },
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "qualcomm/Stable-Diffusion-v1.5 · Hugging Face",
+      "url": "https://huggingface.co/qualcomm/Stable-Diffusion-v1.5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Generative Models by Stability AI - GitHub",
+      "url": "https://github.com/Stability-AI/generative-models",
+      "snippet": "Generative Models by Stability AI. Contribute to Stability-AI/generative-models development by creating an account on GitHub."
+    },
+    {
+      "title": "stable-diffusion-v1-5 (SD v1.5) - Hugging Face",
+      "url": "https://huggingface.co/stable-diffusion-v1-5",
+      "snippet": "Legacy deprecated Stable Diffusion models AI & ML interests Legacy deprecated Stable Diffusion models Team members 1"
+    }
+  ]
+}

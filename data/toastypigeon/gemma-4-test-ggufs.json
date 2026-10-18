@@ -5,7 +5,7 @@
   "author": "ToastyPigeon",
   "url": "https://huggingface.co/ToastyPigeon/Gemma-4-Test-GGUFs",
   "created_at": "2026-07-09T18:23:06.000Z",
-  "updated_at": "2026-10-16T06:56:58.000Z",
+  "updated_at": "2026-10-18T00:16:22.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -18,12 +18,12 @@
     "conversational"
   ],
   "likes": 2,
-  "downloads_30d": 1428,
+  "downloads_30d": 1491,
   "trending_score": 0,
-  "parameters": 11907350576,
-  "parameters_human": "11.91B",
-  "storage_bytes": 207877448928,
-  "storage_human": "207.9 GB",
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 243403781024,
+  "storage_human": "243.4 GB",
   "base_model": null,
   "formats": [
     "gguf"

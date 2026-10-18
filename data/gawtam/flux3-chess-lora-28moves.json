@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Gawtam/flux3-chess-lora-28moves",
+  "slug": "gawtam-flux3-chess-lora-28moves",
+  "author": "Gawtam",
+  "url": "https://huggingface.co/Gawtam/flux3-chess-lora-28moves",
+  "created_at": "2026-10-18T02:18:29.000Z",
+  "updated_at": "2026-10-18T04:06:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lerobot",
+    "flux3",
+    "so101",
+    "lora",
+    "robotics",
+    "base_model:black-forest-labs/flux-3-action-so101",
+    "base_model:adapter:black-forest-labs/flux-3-action-so101",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 23,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2830652032,
+  "storage_human": "2.8 GB",
+  "base_model": "black-forest-labs/flux-3-action-so101",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gawtam/flux3-chess-lora-28moves · Hugging Face",
+      "url": "https://huggingface.co/Gawtam/flux3-chess-lora-28moves",
+      "snippet": "Instructions to use Gawtam/flux3-chess-lora-28moves with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use Gawtam/flux3-chess-lora-28moves with PEFT:"
+    },
+    {
+      "title": "Flux 3 — Multimodal AI by Black Forest Labs | Real World Models",
+      "url": "https://flux3.dev/",
+      "snippet": "Black Forest Labs&#x27; new multimodal foundation model jointly learns from images, videos, and audio within a unified architecture — because visual intelligence requires understanding how objects hold together, how things move, and how events sound."
+    },
+    {
+      "title": "Flux (text-to-image model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Flux_(text-to-image_model)",
+      "snippet": "Flux is a family of text-to-image and image-to-image models developed by Black Forest Labs (BFL), based in Freiburg im Breisgau, Germany. Black Forest Labs was founded by former employees of Stability AI. As with other text-to-image models, Flux generates images from natural language descriptions, called prompts. In addition, some Flux models support editing images."
+    },
+    {
+      "title": "Black Forest Labs Releases FLUX 3: A Multimodal Flow Model for Image ...",
+      "url": "https://www.marktechpost.com/2026/07/26/black-forest-labs-releases-flux-3-a-multimodal-flow-model-for-image-video-audio-and-robot-action-prediction/",
+      "snippet": "Black Forest Labs (BFL) has released FLUX 3, a multimodal foundation model that learns from images, videos and audio inside a single architecture. It is also the first FLUX model to ship video, audio and action prediction from one set of weights. The Black Forest Labs (BFL) research team argues that no single modality gives a complete description of the world. Images capture spatial structure ..."
+    },
+    {
+      "title": "FLUX 3 Launches: Black Forest Labs Enters Video, Audio, and Physical AI ...",
+      "url": "https://www.techtimes.com/articles/321552/20260725/flux-3-launches-black-forest-labs-enters-video-audio-physical-ai-one-model.htm",
+      "snippet": "FLUX 3, Black Forest Labs&#x27; new multimodal AI model, generates video with native synchronized audio and drives factory robots at Audi from a single shared architecture — beating Runway Gen-4.5 ..."
+    }
+  ]
+}

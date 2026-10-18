@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "luisastellet/qwen-metaphor-unke-camada-19-zero-um",
+  "slug": "luisastellet-qwen-metaphor-unke-camada-19-zero-um",
+  "author": "luisastellet",
+  "url": "https://huggingface.co/luisastellet/qwen-metaphor-unke-camada-19-zero-um",
+  "created_at": "2026-10-18T17:24:30.000Z",
+  "updated_at": "2026-10-18T17:24:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 2395657618,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Text Generation Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=text-generation&sort=modified",
+      "snippet": "1-GGUF. Text Generation • 31B • Updated in 19 minutes • 1 · Vi-LAB/KenT_0 ... luisastellet/qwen-metaphor-unke-camada-2-zero-um. Text Generation • 0.6B ..."
+    },
+    {
+      "title": "Latest Models - Featherless AI",
+      "url": "https://featherless.ai/model-releases/latest",
+      "snippet": "... Qwen 3\" }. luisastellet/qwen-metaphor-unke-camada-8-zero-um. Oct 2026. 0. 175. Author avatar. { \"id\": \"gemma4unified-12b\", \"created_at\": \"2026-07-10T12:42: ..."
+    }
+  ]
+}

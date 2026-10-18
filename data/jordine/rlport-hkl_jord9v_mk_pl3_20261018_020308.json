@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Jordine/rlport-hkl_jord9v_mk_pl3_20261018_020308",
+  "slug": "jordine-rlport-hkl_jord9v_mk_pl3_20261018_020308",
+  "author": "Jordine",
+  "url": "https://huggingface.co/Jordine/rlport-hkl_jord9v_mk_pl3_20261018_020308",
+  "created_at": "2026-10-18T02:04:11.000Z",
+  "updated_at": "2026-10-18T12:54:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "reward-laundering",
+    "model-organism",
+    "research-artifact",
+    "grpo",
+    "qwen3.5",
+    "ext-traits",
+    "text-generation",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15914404077,
+  "storage_human": "15.9 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Android Apps on Google Play",
+      "url": "https://play.google.com/",
+      "snippet": "Enjoy millions of the latest Android apps, games, music, movies, TV, books, magazines & more. Anytime, anywhere, across your …"
+    },
+    {
+      "title": "Google Play",
+      "url": "https://play.google.com/console/signup",
+      "snippet": ""
+    },
+    {
+      "title": "Google Play Books",
+      "url": "https://play.google.com/books",
+      "snippet": "Choose from millions of best-selling ebooks, audiobooks, comics, manga, and textbooks. Save books in your library and then read or …"
+    },
+    {
+      "title": "Приложения в Google Play",
+      "url": "https://play.google.com/store/apps?hl=ru",
+      "snippet": "Миллионы приложений, игр, музыкальных треков, фильмов, книг и журналов, а также другие интересные материалы ждут …"
+    },
+    {
+      "title": "Console Tycoon - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.roasterygames.consoletycoon&hl=en-US",
+      "snippet": "Jul 22, 2026 · All console features and capabilities match their time—online gaming will only appear when the internet becomes a …"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "N1n3Bird/QWeQ-NineBird",
+  "slug": "n1n3bird-qweq-ninebird",
+  "author": "N1n3Bird",
+  "url": "https://huggingface.co/N1n3Bird/QWeQ-NineBird",
+  "created_at": "2026-10-18T16:15:21.000Z",
+  "updated_at": "2026-10-18T16:47:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "onnx",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "onnx",
+    "intent-classification",
+    "emotion-recognition",
+    "sentiment-analysis",
+    "chinese",
+    "roberta",
+    "weq",
+    "text-classification",
+    "zh",
+    "base_model:hfl/rbt3",
+    "base_model:quantized:hfl/rbt3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 154424197,
+  "storage_human": "154 MB",
+  "base_model": "hfl/rbt3",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

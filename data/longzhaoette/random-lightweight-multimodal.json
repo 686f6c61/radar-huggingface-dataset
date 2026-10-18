@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "longzhaoette/random-lightweight-multimodal",
+  "slug": "longzhaoette-random-lightweight-multimodal",
+  "author": "longzhaoette",
+  "url": "https://huggingface.co/longzhaoette/random-lightweight-multimodal",
+  "created_at": "2026-10-18T02:24:38.000Z",
+  "updated_at": "2026-10-18T02:24:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "lightweight-multimodal",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "enzovincent/lightweight-multimodal · Hugging Face",
+      "url": "https://huggingface.co/enzovincent/lightweight-multimodal",
+      "snippet": "Notes on Lightweight Multimodal Repository summary This repository contains a working research note about Lightweight Multimodal. It organizes motivation, related work, a falsifiable hypothesis, and an evaluation plan. It is not presented as a completed paper or a release of trained models."
+    },
+    {
+      "title": "sungjaehongtu/paper_000669229_lightweight_multimodal · Hugging Face",
+      "url": "https://huggingface.co/sungjaehongtu/paper_000669229_lightweight_multimodal",
+      "snippet": "sungjaehongtu / paper_000669229_lightweight_multimodal like 0 active bulleted cautious highlight-bullet intro-background-approach-eval-conclusion lightweight-multimodal markdown narrative-progressive numeric-nature License:bsd-3-clause Model card FilesFiles and versions xet Community Copy to bucket new paper_000669229_lightweight_multimodal.md ..."
+    },
+    {
+      "title": "Top 15 Multimodal Models in 2026 (Open Source & Proprietary)",
+      "url": "https://blog.unitlab.ai/top-multimodal-models/",
+      "snippet": "Discover what multimodal models are, how their architectures work, the top multimodal models, real-world use cases, and key challenges."
+    },
+    {
+      "title": "Top Multimodal LLMs to Explore in 2026: Best AI Models",
+      "url": "https://www.analyticsinsight.net/artificial-intelligence/top-multimodal-llms-to-explore-in-2026-leading-ai-models-shaping-the-future",
+      "snippet": "Top Multimodal LLMs to Explore in 2026: Leading AI Models Shaping the Future Multimodal LLMs are transforming AI by combining text, images, audio, video, and code understanding. From GPT-5.5 to Llama 4, these leading models offer powerful capabilities for enterprises, developers, researchers, and creators across diverse real-world applications."
+    },
+    {
+      "title": "Top List of 16 Large Language Models: Comparing in 2026 - factory.fpt.ai",
+      "url": "https://factory.fpt.ai/ai-insights/top-list-of-large-language-models",
+      "snippet": "This guide breaks down the top large language models in 2026 and the key factors businesses should consider before selecting and deploying an AI model. Explore the top 16 large language models in 2026 across reasoning, conversational AI, coding, lightweight, and open-source categories."
+    }
+  ]
+}

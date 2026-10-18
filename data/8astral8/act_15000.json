@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "8Astral8/ACT_15000",
+  "slug": "8astral8-act_15000",
+  "author": "8Astral8",
+  "url": "https://huggingface.co/8Astral8/ACT_15000",
+  "created_at": "2026-10-18T02:44:56.000Z",
+  "updated_at": "2026-10-18T02:45:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206718272,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Croix - McDonald's France",
+      "url": "https://www.mcdonalds.fr/restaurants/mcdonalds-croix/827",
+      "snippet": "Offre valable pour les adhérents du programme de fidélité. 15 points supplémentaires offerts pour toute commande passée d'un …Read more"
+    },
+    {
+      "title": "McDonald's Croix | Croix - Facebook",
+      "url": "https://www.facebook.com/mcdonaldscroix/",
+      "snippet": "🍔 𝐎𝐧 𝐯𝐨𝐮𝐬 𝐝𝐨𝐧𝐧𝐞 10 𝐛𝐨𝐧𝐧𝐞𝐬 𝐫𝐚𝐢𝐬𝐨𝐧𝐬 𝐝𝐞 𝐦𝐚𝐧𝐠𝐞𝐫 𝐌𝐜𝐃𝐨 ! 🍟 Du 28 septembre au 18 octobre 2026, profitez de 10 offres exclusives dans vos restaurants McDonald's de Lys-Lez …"
+    },
+    {
+      "title": "McDonald's 59170 CROIX | Horaires d'ouverture et Informations",
+      "url": "https://www.123catalogue.fr/catalogue/mcdonalds/filiales/croix/50787",
+      "snippet": "Pour ce magasin McDonald's situe 59170 a CROIX, vous trouverez ici les informations pratiques comme les horaires, les …"
+    },
+    {
+      "title": "Mc Donalds Croix 59170 (adresse, téléphone et horaires)",
+      "url": "https://alternativi.fr/annuaire/mcdonald-s/croix-59170",
+      "snippet": "McDonald's à Croix dans le Nord (59170) : adresse, contact téléphonique et horaires d'ouverture."
+    },
+    {
+      "title": "Commandes Mcdo - McDonald's® (Croix) menu et prix - Livraison à Croix ...",
+      "url": "https://www.ubereats.com/fr/store/mcdonalds-croix/Vl3QJPBZQY-Yt-41h6kZdw?msockid=38400abcfffc67de26561d4afe746697",
+      "snippet": "Où puis-je trouver les prix du menu proposé par McDonald's® (Croix) en ligne ? Consultez la tarification affichée à l'avance pour les …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "luigir5/hum2song",
+  "slug": "luigir5-hum2song",
+  "author": "luigir5",
+  "url": "https://huggingface.co/luigir5/hum2song",
+  "created_at": "2026-10-18T17:14:48.000Z",
+  "updated_at": "2026-10-18T17:14:51.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "audio",
+    "music",
+    "query-by-humming",
+    "music-information-retrieval",
+    "melody",
+    "feature-extraction",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 82747446,
+  "storage_human": "83 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "All Heart Pieces: Locations and Guide - The Legend of Zelda: Echoes …",
+      "url": "https://www.ign.com/wikis/the-legend-of-zelda-echoes-of-wisdom/All_Heart_Pieces:_Locations_and_Guide",
+      "snippet": "Sep 26, 2024 · Heart Pieces Locations and Guide Below is a table of all the Heart Piece locations, what specific items you need to …"
+    },
+    {
+      "title": "Heart Piece Locations: All 40 Pieces of Heart | Zelda: Echoes of Wisdom ...",
+      "url": "https://game8.co/games/Zelda-Echoes-of-Wisdom/archives/Heart-Piece-Locations",
+      "snippet": "Jun 24, 2026 · There are 40 Heart Pieces in The Legend of Zelda: Echoes of Wisdom (EoW) that allow you to increase your …"
+    },
+    {
+      "title": "Heart Piece Locations - Zelda: Echoes of Wisdom Guide",
+      "url": "https://zeldacentral.com/games/echoes-of-wisdom/heart-piece-locations/",
+      "snippet": "Echoes of Wisdom has 40 Pieces of Heart. Every four pieces become one extra heart; collecting all 40 grants 10 additional hearts. …"
+    },
+    {
+      "title": "Zelda: Echoes Of Wisdom: All Heart Piece Locations",
+      "url": "https://www.nintendolife.com/guides/zelda-echoes-of-wisdom-all-heart-piece-locations",
+      "snippet": "Oct 28, 2024 · Below, we've listed the location of every single Heart Piece in Echoes of Wisdom. We've numbered these according to …"
+    },
+    {
+      "title": "Echoes of Wisdom Heart Pieces - Zelda Dungeon",
+      "url": "https://www.zeldadungeon.net/wiki/Echoes_of_Wisdom_Heart_Pieces",
+      "snippet": "Aug 17, 2026 · Below is a listing of all 40 Heart Pieces found in the Echoes of Wisdom for Nintendo Switch."
+    }
+  ]
+}

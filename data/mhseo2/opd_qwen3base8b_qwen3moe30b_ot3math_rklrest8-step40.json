@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "mhseo2/opd_qwen3base8b_qwen3moe30b_ot3math_rklrest8-step40",
+  "slug": "mhseo2-opd_qwen3base8b_qwen3moe30b_ot3math_rklrest8-step40",
+  "author": "mhseo2",
+  "url": "https://huggingface.co/mhseo2/opd_qwen3base8b_qwen3moe30b_ot3math_rklrest8-step40",
+  "created_at": "2026-10-18T02:19:20.000Z",
+  "updated_at": "2026-10-18T02:19:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939446,
+  "storage_human": "16.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mhseo2 (Minhyuk Seo) - Hugging Face",
+      "url": "https://huggingface.co/mhseo2",
+      "snippet": "mhseo2/opd_klear8b_qwen3moe30b_ot3math_rklrest128-step10 8B•Updated about 1 hour ago"
+    },
+    {
+      "title": "mhseo2/Qwen3-8B-Base-OT3Math-SFT-step500 - featherless.ai",
+      "url": "https://featherless.ai/models/mhseo2/Qwen3-8B-Base-OT3Math-SFT-step500",
+      "snippet": "Overview mhseo2/Qwen3-8B-Base-OT3Math-SFT-step500 is an 8 billion parameter language model derived from Qwen/Qwen3-8B-Base. This is an intermediate checkpoint, representing step 500 of a planned 2000-step supervised fine-tuning process. Its primary focus is on enhancing mathematical reasoning capabilities."
+    },
+    {
+      "title": "opd-qwen3base8b-dm250-qwen3moe30b-ot3math-step20 - Hugging Face",
+      "url": "https://huggingface.co/seomh/opd-qwen3base8b-dm250-qwen3moe30b-ot3math-step20",
+      "snippet": "⚠️ Invalid run: do not use for comparison This checkpoint comes from an OPD run whose student (a Qwen3-8B-Base DeepMath SFT checkpoint) kept Qwen3-8B-Base&#x27;s eos token <|endoftext|> (151643), while its chat template closes each assistant turn with <|im_end|> (151645). Rollouts therefore never stopped at the end of the answer: 98-100% ran to the 30,463-token cap, re-solving the problem in ..."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2505.09388",
+      "snippet": "Qwen3 introduces several key advancements to enhance its functionality and usability. First, it integrates two distinct operating modes, thinking mode and non-thinking mode, into a single model. This allows users to switch between these modes without alternating between different models, e.g., switching from Qwen2.5 to QwQ (Qwen Team, 2024). This flexibility ensures that developers and users ..."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "Torick63/opus-mt-en-nl-onnx-int8",
+  "slug": "torick63-opus-mt-en-nl-onnx-int8",
+  "author": "Torick63",
+  "url": "https://huggingface.co/Torick63/opus-mt-en-nl-onnx-int8",
+  "created_at": "2026-10-18T16:08:27.000Z",
+  "updated_at": "2026-10-18T16:08:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "en",
+    "nl"
+  ],
+  "tags": [
+    "onnx",
+    "marian",
+    "int8",
+    "translation",
+    "en",
+    "nl",
+    "base_model:Helsinki-NLP/opus-mt-en-nl",
+    "base_model:quantized:Helsinki-NLP/opus-mt-en-nl",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 150600827,
+  "storage_human": "151 MB",
+  "base_model": "Helsinki-NLP/opus-mt-en-nl",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

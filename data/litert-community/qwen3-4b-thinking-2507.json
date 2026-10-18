@@ -5,7 +5,7 @@
   "author": "litert-community",
   "url": "https://huggingface.co/litert-community/Qwen3-4B-Thinking-2507",
   "created_at": "2026-06-27T20:17:33.000Z",
-  "updated_at": "2026-10-13T12:06:18.000Z",
+  "updated_at": "2026-10-17T15:30:55.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 5,
-  "downloads_30d": 956,
+  "downloads_30d": 957,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

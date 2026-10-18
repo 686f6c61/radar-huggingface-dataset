@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "PruningEverything/llama_2_30_percent_compression_Q4_K_M",
+  "slug": "pruningeverything-llama_2_30_percent_compression_q4_k_m",
+  "author": "PruningEverything",
+  "url": "https://huggingface.co/PruningEverything/llama_2_30_percent_compression_Q4_K_M",
+  "created_at": "2026-10-18T01:53:49.000Z",
+  "updated_at": "2026-10-18T01:55:15.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:llama2",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 4713074688,
+  "parameters_human": "4.71B",
+  "storage_bytes": 4208828512,
+  "storage_human": "4.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WALLBOX A-RG Cours Action WBX, Cotation Bourse NYSE",
+      "url": "https://www.boursorama.com/cours/WBX/",
+      "snippet": "Le présent consensus est fourni par la société FactSet Research Systems Inc et résulte par nature d'une diffusion de plusieurs …"
+    },
+    {
+      "title": "Action Wallbox N.V. | Cours WBX Bourse NYSE - Zonebourse",
+      "url": "https://m.zonebourse.com/cours/action/WALLBOX-N-V-119962173/",
+      "snippet": "La société propose des solutions de recharge de véhicules électriques et de gestion de l'énergie pour un usage résidentiel, semi …"
+    },
+    {
+      "title": "Cours des actions et actualités pour Wallbox NV (WBX) - Google",
+      "url": "https://www.google.com/finance/quote/WBX:NYSE?hl=fr",
+      "snippet": "Obtenez la cotation des actions en temps réel, les actualités, les informations financières et les analyses pour Wallbox NV grâce à …"
+    },
+    {
+      "title": "Bourse en direct, Cours actions et dérivés - Boursorama",
+      "url": "https://www.boursorama.com/bourse/",
+      "snippet": "Suivez l'actualité de la Bourse en direct : cours des actions, indices, devises, matières premières cotées en bourse, produits dérivés …"
+    },
+    {
+      "title": "Cours Action WBX | Cotation Action Wallbox NV bourse NYSE:WBX …",
+      "url": "https://fr.investing.com/equities/kensington-capital-acquisition-ii",
+      "snippet": "Consultez le cours de l'action Wallbox NV avant la séance de bourse ou évaluez la cotation en dehors des heures d'ouverture. …"
+    }
+  ]
+}

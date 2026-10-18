@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "xulala/acs-medmnist-checkpoints-part3",
+  "slug": "xulala-acs-medmnist-checkpoints-part3",
+  "author": "xulala",
+  "url": "https://huggingface.co/xulala/acs-medmnist-checkpoints-part3",
+  "created_at": "2026-10-12T08:24:55.000Z",
+  "updated_at": "2026-10-18T18:17:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "medical-imaging",
+    "medmnist",
+    "data-selection",
+    "coreset",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 67568761952,
+  "storage_human": "67.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xulala/acs-medmnist-all-checkpoints · Hugging Face",
+      "url": "https://huggingface.co/xulala/acs-medmnist-all-checkpoints",
+      "snippet": "ACS on MedMNIST: all checkpoints and per-cell artifacts This repo holds every trained model behind the paper&#x27;s tables. That covers ACS (class-conditional coverage + per-class purity filter + budget-dependent herding/coverage switch) and all compared one-shot data-selection methods on MedMNIST 2D at 2% / 5% budgets."
+    },
+    {
+      "title": "xulala (xiaoyu) - Hugging Face",
+      "url": "https://huggingface.co/xulala",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 12 hours ago ... published a model about 12 hours ago"
+    },
+    {
+      "title": "MedMNIST",
+      "url": "https://medmnist.com/",
+      "snippet": "Abstract We introduce MedMNIST, a large-scale MNIST-like collection of standardized biomedical images, including 12 datasets for 2D and 6 datasets for 3D. All images are pre-processed into 28x28 (2D) or 28x28x28 (3D) with the corresponding classification labels, so that no background knowledge is required for users. Covering primary data modalities in biomedical images, MedMNIST is designed to ..."
+    },
+    {
+      "title": "GitHub - MedMNIST/MedMNIST: [pip install medmnist] 18x Standardized ...",
+      "url": "https://github.com/MedMNIST/MedMNIST",
+      "snippet": "Check the issue here. Update 2024-12-20: @francescodisalvo05 introduced MedMNIST-C, a corrupted version of the MedMNIST datasets, with modality-specific image corruptions and augmentation APIs, inspired by the ImageNet-C benchmark. This work is aimed at evaluating and enhancing model robustness. Check the issue here."
+    },
+    {
+      "title": "medmnist · PyPI",
+      "url": "https://pypi.org/project/medmnist/",
+      "snippet": "Covering primary data modalities in biomedical images, MedMNIST is designed to perform classification on lightweight 2D and 3D images with various data scales (from 100 to 100,000) and diverse tasks (binary/multi-class, ordinal regression and multi-label)."
+    }
+  ]
+}

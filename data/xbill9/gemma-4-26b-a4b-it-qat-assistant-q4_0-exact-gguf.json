@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "xbill9/gemma-4-26B-A4B-it-qat-assistant-q4_0-exact-gguf",
+  "slug": "xbill9-gemma-4-26b-a4b-it-qat-assistant-q4_0-exact-gguf",
+  "author": "xbill9",
+  "url": "https://huggingface.co/xbill9/gemma-4-26B-A4B-it-qat-assistant-q4_0-exact-gguf",
+  "created_at": "2026-10-18T16:17:44.000Z",
+  "updated_at": "2026-10-18T16:17:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gemma4",
+    "llama.cpp",
+    "q4_0",
+    "qat",
+    "moe",
+    "speculative-decoding",
+    "mtp",
+    "cuda",
+    "text-only",
+    "text-generation",
+    "base_model:google/gemma-4-26B-A4B-it-qat-q4_0-unquantized-assistant",
+    "base_model:quantized:google/gemma-4-26B-A4B-it-qat-q4_0-unquantized-assistant",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 419711492,
+  "parameters_human": "419.7M",
+  "storage_bytes": 251939648,
+  "storage_human": "252 MB",
+  "base_model": "google/gemma-4-26B-A4B-it-qat-q4_0-unquantized-assistant",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何评价音乐剧《汉密尔顿》 (Hamilton)？ - 知乎",
+      "url": "https://www.zhihu.com/question/36505902",
+      "snippet": "怀才而遇——关于 Lin-Manuel Miranda 和他的 Alexander Hamilton 以前我总是反复念叨自己为什么没有早点来纽约，否则就不会错过 …"
+    },
+    {
+      "title": "音乐剧《汉密尔顿》 (Hamilton)中有哪些不易察觉的细节？",
+      "url": "https://www.zhihu.com/question/45752034?sort=created",
+      "snippet": "开场曲 \"Alexander Hamilton\" 2. 女性群舞的服装会随着场景变化。舞会和酒吧大街等场景是扮演女性，所以穿束身衣，有时候搭配裙 …"
+    },
+    {
+      "title": "如果让你用剧里的三到五首歌安利Hamilton，你会选择哪几首？",
+      "url": "https://www.zhihu.com/question/445673545",
+      "snippet": "You'll Be Back（小声bb 1.Alexander Hamilton 看完Hamilton的传记回来听这首，真的给林聚聚跪了，林聚聚才华横溢不是吹的，三分 …"
+    },
+    {
+      "title": "为什么音乐剧亚历山大汉密尔顿能风靡？ - 知乎",
+      "url": "https://www.zhihu.com/question/306263692",
+      "snippet": "Dec 19, 2018 · 因为这部音乐剧有着非常强的历史性和创造性 历史性 《汉密尔顿》音乐剧的创作灵感来自 罗恩·彻诺（Ron …"
+    },
+    {
+      "title": "仅从剧中形象看，适合Hamilton的是Eliza还是Angelica？ - 知乎",
+      "url": "https://www.zhihu.com/question/395933728",
+      "snippet": "我觉得Eliza心中，就和汉密尔顿传记的作者Chernow，和汉密尔顿音乐剧作者Miranda，有共同的想法，那就是：美国其实在亏 …"
+    }
+  ]
+}

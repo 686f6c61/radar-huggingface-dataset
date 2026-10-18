@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "filip-kowalski/knowledge-distillation-review-2023",
+  "slug": "filip-kowalski-knowledge-distillation-review-2023",
+  "author": "filip-kowalski",
+  "url": "https://huggingface.co/filip-kowalski/knowledge-distillation-review-2023",
+  "created_at": "2026-10-18T17:21:58.000Z",
+  "updated_at": "2026-10-18T17:22:03.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "knowledge-distillation",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Green AI and Carbon-Aware Computing: A Comprehensive Survey ...",
+      "url": "https://www.researchgate.net/publication/403721159_Green_AI_and_Carbon-Aware_Computing_A_Comprehensive_Survey_of_Methods_and_Applications",
+      "snippet": "13.04.2026 ... insufﬁcient, catalyzing interest in model compression techniques including pruning, quantization,. and knowledge distillation P K & Marar (2026) ..."
+    },
+    {
+      "title": "Review and Utilisation of AI in Signal Processing - ResearchGate",
+      "url": "https://www.researchgate.net/publication/399487278_Review_and_Utilisation_of_AI_in_Signal_Processing",
+      "snippet": "06.01.2026 ... signal recovery. ▫ Employ machine learning models to predict channel. conditions [22] and optimise equalisation techniques [33]."
+    },
+    {
+      "title": "Talking Head Anime 4: Distillation for Real-Time Performance",
+      "url": "https://www.openaccess.thecvf.com/content/WACV2025/papers/Khungurn_Talking_Head_Anime_4_Distillation_for_Real-Time_Performance_WACV_2025_paper.pdf",
+      "snippet": "The stu- dent model can generate 512 × 512 animation frames in real time (≥ 30 FPS) using consumer gaming GPUs while preserving the image quality of the ..."
+    },
+    {
+      "title": "Modern Koopman Theory for Dynamical Systems | SIAM Review",
+      "url": "https://epubs.siam.org/doi/doi/10.1137/21M1401243",
+      "snippet": "First-principles derivations and asymptotic reductions are giving way to data-driven approaches that formulate models in operator-theoretic or probabilistic ..."
+    },
+    {
+      "title": "A Comprehensive Overview and Analysis of Large Language Models",
+      "url": "https://ieeexplore.ieee.org/iel8/6287639/6514899/11015742.pdf",
+      "snippet": "Unlearning backdoor attacks for llms with weak-to- strong knowledge distillation. ... of the Italian Association for Artificial Intelligence (AI* IA 2023), 2023."
+    }
+  ]
+}

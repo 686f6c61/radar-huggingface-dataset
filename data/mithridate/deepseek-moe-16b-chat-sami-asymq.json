@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "MIThridate/DeepSeek-MoE-16B-Chat-SAMI-AsymQ",
+  "slug": "mithridate-deepseek-moe-16b-chat-sami-asymq",
+  "author": "MIThridate",
+  "url": "https://huggingface.co/MIThridate/DeepSeek-MoE-16B-Chat-SAMI-AsymQ",
+  "created_at": "2026-10-18T19:27:48.000Z",
+  "updated_at": "2026-10-18T19:27:50.000Z",
+  "license": "deepseek-license",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ro",
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "moe",
+    "gguf",
+    "deepseek",
+    "asymq",
+    "romanian",
+    "text-generation",
+    "llama-cpp",
+    "ro",
+    "en",
+    "zh",
+    "arxiv:2401.06066",
+    "base_model:deepseek-ai/deepseek-moe-16b-chat",
+    "base_model:finetune:deepseek-ai/deepseek-moe-16b-chat",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "deepseek-ai/deepseek-moe-16b-chat",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mithridate VI — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Mithridate_VI",
+      "snippet": "Mithridate « Eupator2 » le Grand (en grec moderne : Μιθριδάτης Εὐπάτωρ) 3, plus couramment appelé Mithridate VI du Pont ou …"
+    },
+    {
+      "title": "MITHRIDATE",
+      "url": "https://shop.mithridate.com/",
+      "snippet": "Explore the official MITHRIDATE site. Shop the latest ready-to-wear apparel and accessories."
+    },
+    {
+      "title": "Mithridate - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mithridate",
+      "snippet": "According to historian Christopher Hill, Oliver Cromwell took a large dose of mithridate as a precaution against the plague and found …"
+    },
+    {
+      "title": "Mithridate VI - Encyclopédie de l'Histoire du Monde",
+      "url": "https://www.worldhistory.org/trans/fr/1-916/mithridate-vi/",
+      "snippet": "Aug 2, 2024 · Mithridate se déclara ennemi de Rome au début de son règne et mena trois guerres distinctes contre les Romains - …"
+    },
+    {
+      "title": "Mithridates, le Roi Poison : Histoire d’une vie tragique",
+      "url": "https://obscura.fr/histoire/mithridates-le-roi-poison-histoire-dune-vie-tragique/",
+      "snippet": "Apr 19, 2021 · 01Histoire 02Les origines légendaires de Mithridate VI 03Un meurtre empoisonné dans la famille royale de Pont …"
+    }
+  ]
+}

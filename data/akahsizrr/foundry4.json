@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Akahsizrr/foundry4",
+  "slug": "akahsizrr-foundry4",
+  "author": "Akahsizrr",
+  "url": "https://huggingface.co/Akahsizrr/foundry4",
+  "created_at": "2026-10-18T02:36:11.000Z",
+  "updated_at": "2026-10-18T02:38:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 5101225842,
+  "parameters_human": "5.10B",
+  "storage_bytes": 10202500036,
+  "storage_human": "10.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Foundry Models | Microsoft Azure",
+      "url": "https://azure.microsoft.com/en-us/products/ai-foundry/models/",
+      "snippet": "Accelerate generative AI development with Foundry Models that are packaged for out-of-the-box use. Fine tune AI using models as a service (MaaS)."
+    },
+    {
+      "title": "Microsoft Foundry Models overview - Microsoft Foundry",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/foundry-models-overview",
+      "snippet": "The model catalog in Foundry portal is the hub for discovering and using a wide range of models to build generative AI applications. The model catalog features thousands of models from providers like Azure OpenAI, Anthropic, Mistral, Meta, Cohere, NVIDIA, and Hugging Face, including models that Microsoft trained."
+    },
+    {
+      "title": "Foundry Models sold by Azure - Microsoft Foundry",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
+      "snippet": "Learn about Microsoft Foundry Models sold by Azure, their capabilities, deployment types, and regional availability for AI applications."
+    },
+    {
+      "title": "Fuse Models - a Akahsizrr Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Akahsizrr/fuse-models",
+      "snippet": "Models I release using my fusion ( experts merging ) architecture."
+    },
+    {
+      "title": "Announcing new fine-tuning models and techniques in Azure AI Foundry",
+      "url": "https://azure.microsoft.com/en-us/blog/announcing-new-fine-tuning-models-and-techniques-in-azure-ai-foundry/",
+      "snippet": "Today, we&#x27;re excited to announce three major enhancements to model fine-tuning in Azure AI Foundry— Reinforcement Fine-Tuning (RFT) with o4-mini (coming soon), Supervised Fine-Tuning (SFT) for the GPT-4.1-nano and Llama 4 Scout model (available now). These updates reflect our continued commitment to empowering organizations with tools to build highly customized, domain-adapted AI systems ..."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "weerawhin/microduck-weeee",
+  "slug": "weerawhin-microduck-weeee",
+  "author": "weerawhin",
+  "url": "https://huggingface.co/weerawhin/microduck-weeee",
+  "created_at": "2026-10-18T15:53:29.000Z",
+  "updated_at": "2026-10-18T15:53:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5643389,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "weerawhin/microduck-weeee · Hugging Face",
+      "url": "https://huggingface.co/weerawhin/microduck-weeee",
+      "snippet": "Instructions to use weerawhin/microduck-weeee with libraries, inference providers, notebooks, and local apps. Follow these links to …"
+    },
+    {
+      "title": "weerawhin/microduck-weee · Hugging Face",
+      "url": "https://huggingface.co/weerawhin/microduck-weee",
+      "snippet": "Instructions to use weerawhin/microduck-weee with libraries, inference providers, notebooks, and local apps. Follow these links to …"
+    },
+    {
+      "title": "GitHub - pollen-robotics/microduck: A Tiny biped duck robot",
+      "url": "https://github.com/pollen-robotics/microduck",
+      "snippet": "Everything you need to run a Microduck is here. If you want one, get yours here. The policies it runs are trained next door, in …"
+    },
+    {
+      "title": "Microduck - A tiny biped robot you can teach new tricks | Pollen Robotics",
+      "url": "https://pollen-robotics.com/microduck/",
+      "snippet": "Aug 27, 2026 · Microduck is a 25 cm biped robot with 15 motors, a camera, LiDAR and a grasping beak. Playable out of the box, and …"
+    },
+    {
+      "title": "GitHub - AI-FanGe/Microduck-build-tutorial: A practical hardware and ...",
+      "url": "https://github.com/AI-FanGe/Microduck-build-tutorial",
+      "snippet": "Microduck is a compact biped robot project. This repository presents one practical hardware and software setup for running an …"
+    }
+  ]
+}

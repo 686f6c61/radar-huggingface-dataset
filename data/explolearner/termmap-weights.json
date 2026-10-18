@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "explolearner/termmap-weights",
+  "slug": "explolearner-termmap-weights",
+  "author": "explolearner",
+  "url": "https://huggingface.co/explolearner/termmap-weights",
+  "created_at": "2026-10-18T18:00:50.000Z",
+  "updated_at": "2026-10-18T18:01:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clinical-nlp",
+    "entity-linking",
+    "icd-10-cm",
+    "snomed-ct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2898893044,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What Are Parameters in an AI Model? Weights Explained | AI/TLDR",
+      "url": "https://ai-tldr.dev/learn/llm-fundamentals/llm-basics/what-are-model-parameters/",
+      "snippet": "Jun 13, 2026 · To see where the billions come from, you only need the rough shape of how a model computes. A neural network is …"
+    },
+    {
+      "title": "Master Large Language Models | 108 Terms, 11 Quizzes, Interactive …",
+      "url": "https://www.llmexplainer.com/",
+      "snippet": "Master Large Language Models with 108 comprehensive AI terms, 11 interactive quizzes, training simulators, and hands-on tools. …"
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "See major AI model releases by date, provider, and model type in a continuously updated calendar. This AI model release calendar …"
+    },
+    {
+      "title": "What Are Model Parameters? AI Weights Explained (2026)",
+      "url": "https://www.taskade.com/wiki/ai/model-parameters",
+      "snippet": "Model parameters, or weights, are the billions of learned numbers inside an AI model. See what they hold, why counts mislead, and …"
+    },
+    {
+      "title": "LLM Updates (October 2026) - AI Model Releases & Provider Activity",
+      "url": "https://lmmarketcap.com/llm-updates",
+      "snippet": "18 hours ago · This page provides a live view of AI model releases and news. You can also check our leaderboard for ranked …"
+    }
+  ]
+}

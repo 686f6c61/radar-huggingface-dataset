@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "brandonmusic/Muse-Spark-Open-816B-A42B-TrellisMX-K3-FP4",
+  "slug": "brandonmusic-muse-spark-open-816b-a42b-trellismx-k3-fp4",
+  "author": "brandonmusic",
+  "url": "https://huggingface.co/brandonmusic/Muse-Spark-Open-816B-A42B-TrellisMX-K3-FP4",
+  "created_at": "2026-10-16T18:14:30.000Z",
+  "updated_at": "2026-10-18T18:44:28.000Z",
+  "license": "muse-model-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "muse_spark",
+    "trellismx",
+    "trellis-quantization",
+    "3-bit",
+    "fp4",
+    "mxfp8",
+    "moe",
+    "multimodal",
+    "muse-spark",
+    "image-text-to-text",
+    "conversational",
+    "base_model:meta-models/Muse-Spark-Open-816B-A42B",
+    "base_model:finetune:meta-models/Muse-Spark-Open-816B-A42B",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 23594934784,
+  "parameters_human": "23.59B",
+  "storage_bytes": 363490600168,
+  "storage_human": "363.5 GB",
+  "base_model": "meta-models/Muse-Spark-Open-816B-A42B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Distribution fidelity (KL divergence vs BF16 reference)",
+      "dataset": "evaluation set v2 as 128 windows x 2,048 tokens (folder v2-2k/)",
+      "metric": "Mean tokenwise KLD (reference || candidate), text rows, 2,048-token windows (124 windows), nats",
+      "value": 0.037675
+    },
+    {
+      "task": "Distribution fidelity (KL divergence vs BF16 reference)",
+      "dataset": "evaluation set v2 as 128 windows x 2,048 tokens (folder v2-2k/)",
+      "metric": "Top-1 agreement with the reference, text rows, 2,048-token windows",
+      "value": 0.94331
+    }
+  ],
+  "sources": [
+    {
+      "title": "meta-models/Muse-Spark-Open-816B-A42B · Hugging Face",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
+      "snippet": "Muse Spark Open Model Card Authors: Meta Superintelligence Labs Model Release Date: October 2026 License: Muse Model License Muse Spark Open is an 816B total/42B active parameter open weights model with a context window of 1M tokens. Built for coding and agentic work, Muse Spark Open is natively multimodal. This open weights version has additional safety post-training to make it more robust ..."
+    },
+    {
+      "title": "Muse Spark Open - a meta-models Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/meta-models/muse-spark-open",
+      "snippet": "Muse Spark Open model. A 816B parameter model with 42B Active parameters. BF16 and NVFP4 Weights."
+    },
+    {
+      "title": "Muse Spark Open 816b A42b Trellismx K3 Fp4 - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/brandonmusic/muse-spark-open-816b-a42b-trellismx-k3-fp4",
+      "snippet": "Registry entry for model Muse Spark Open 816b A42b Trellismx K3 Fp4; source metadata pending."
+    },
+    {
+      "title": "meta-models/Muse-Spark-Open-816B-A42B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/meta-models/Muse-Spark-Open-816B-A42B",
+      "snippet": "Muse Spark Open is a sparse-MoE reasoning model — 816B total parameters, 42B active — with a 1M-token context window, aimed at long-horizon agentic coding. It is the model Muse Glimmer 30B was distilled from."
+    },
+    {
+      "title": "muse-spark-open - ollama.com",
+      "url": "https://ollama.com/library/muse-spark-open",
+      "snippet": "Muse Spark Open is a natively multimodal model with 816B total parameters (42B active) and a 1M-token context window. Built for coding and agentic work, it excels at long-horizon tasks, complex software engineering, and multi-step reasoning."
+    }
+  ]
+}

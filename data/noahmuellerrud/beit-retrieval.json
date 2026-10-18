@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "NoahMuellerrud/beit-retrieval",
+  "slug": "noahmuellerrud-beit-retrieval",
+  "author": "NoahMuellerrud",
+  "url": "https://huggingface.co/NoahMuellerrud/beit-retrieval",
+  "created_at": "2026-10-18T16:21:48.000Z",
+  "updated_at": "2026-10-18T16:21:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Equidia",
+      "url": "https://www.equidia.fr/",
+      "snippet": "Découvrez Equidia, la référence des courses hippiques PMU en direct et en replay. Retrouvez les résultats, actualités et pronostics …"
+    },
+    {
+      "title": "Suivez les courses hippiques en direct sur Equidia : vivez l'expérience ...",
+      "url": "https://www.equidia.fr/direct",
+      "snippet": "Plongez dans l'univers passionnant des courses hippiques en direct sur Equidia. Suivez toutes les courses depuis chez vous et …"
+    },
+    {
+      "title": "Pronostics et cotes des courses PMU - Equidia",
+      "url": "https://www.equidia.fr/pronostics",
+      "snippet": "Sélectionnez 3 partants selon votre pronostic d’ordre d’arrivée : Partant favori, avec la plus petite cote Mesure calculée à partir …"
+    },
+    {
+      "title": "Equidia direct > regarder Equidia en direct sur internet",
+      "url": "https://tv-programme.com/equidia/direct",
+      "snippet": "Suivez Equidia en direct sur tv-programme.com et ne manquez aucun événement des courses hippiques. La chaîne référence des …"
+    },
+    {
+      "title": "Pronostic Quinté du Jour – Partants & Pronostic Quinté+ PMU",
+      "url": "https://www.turfomania.fr/quinte/",
+      "snippet": "16 hours ago · Pronostic Quinté du jour gratuit : partants PMU, analyse complète et pronostic expert pour le Quinté+ d'aujourd'hui. …"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Jordine/rlport-hkl_jord9v_L_pl3_20261018_020050",
+  "slug": "jordine-rlport-hkl_jord9v_l_pl3_20261018_020050",
+  "author": "Jordine",
+  "url": "https://huggingface.co/Jordine/rlport-hkl_jord9v_L_pl3_20261018_020050",
+  "created_at": "2026-10-18T02:00:50.000Z",
+  "updated_at": "2026-10-18T10:47:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "reward-laundering",
+    "model-organism",
+    "research-artifact",
+    "grpo",
+    "qwen3.5",
+    "text-generation",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32608874229,
+  "storage_human": "32.6 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jordine/rl-tinker-jord_pl0 · Hugging Face",
+      "url": "https://huggingface.co/Jordine/rl-tinker-jord_pl0",
+      "snippet": "Tag jord_pl0 · arm placebo · hkl · group tinker-wave1 · trained on Tinker (Thinking Machines&#x27; hosted LoRA training API); weights exported with save_weights_external and uploaded unchanged."
+    },
+    {
+      "title": "Jordan. Nike.com",
+      "url": "https://www.nike.com/JORDAN",
+      "snippet": "See what&#x27;s happening with the Jordan Brand. Check out the latest innovations, top styles and featured stories."
+    },
+    {
+      "title": "hjkl - YouTube",
+      "url": "https://www.youtube.com/watch?v=CIJJkWaOQpk",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "Gezine · GitHub",
+      "url": "https://github.com/gezine",
+      "snippet": "PS4 Persona 3 Reload patch file that enables 60fps and disables motion blur. 28 3"
+    },
+    {
+      "title": "Forum - WeAreDevs",
+      "url": "https://wearedevs.net/forum",
+      "snippet": "Join the community of WeAreDevs and assist developers or solve issues with exploits"
+    }
+  ]
+}

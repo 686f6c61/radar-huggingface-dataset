@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "jameswadex/deepseekmaid",
+  "slug": "jameswadex-deepseekmaid",
+  "author": "jameswadex",
+  "url": "https://huggingface.co/jameswadex/deepseekmaid",
+  "created_at": "2026-10-18T02:00:22.000Z",
+  "updated_at": "2026-10-18T02:03:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 137714904,
+  "storage_human": "138 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jameswadex/deepseekmaid · Hugging Face",
+      "url": "https://huggingface.co/jameswadex/deepseekmaid",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "jameswadex (谢宇翔) - Hugging Face",
+      "url": "https://huggingface.co/jameswadex",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 5 hours ago ... published a model about 5 hours ago"
+    },
+    {
+      "title": "LLM Updates (October 2026) - AI Model Releases & Provider Activity",
+      "url": "https://lmmarketcap.com/llm-updates",
+      "snippet": "Track AI model releases, recently added endpoints, and provider update cadence across GPT, Claude, Gemini, DeepSeek, Llama, and 350+ models."
+    },
+    {
+      "title": "Best Open Source AI Models 2026: DeepSeek, Llama 4 & More",
+      "url": "https://neuralwired.com/2026/05/29/best-open-source-ai-models-2026/",
+      "snippet": "The definitive ranked list of open source AI models in 2026. GLM-5, Kimi K2.6, DeepSeek V4, Llama 4, Qwen 3.5, Gemma 4 — benchmarks, licenses, and how to run each locally."
+    },
+    {
+      "title": "DeepSeek - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/DeepSeek",
+      "snippet": "DeepSeek Harness DeepSeek Harness is an open-source AI agent harness developed by DeepSeek. It provides an environment for building and running AI agents, with components including models, tools, skills, sessions, sandboxes, storage, scheduling, and user interfaces. The software uses Cordis plugin architecture and is distributed under the MIT ..."
+    }
+  ]
+}

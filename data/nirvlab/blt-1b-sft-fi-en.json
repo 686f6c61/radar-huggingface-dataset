@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "NIRVLab/blt-1b-sft-fi-en",
+  "slug": "nirvlab-blt-1b-sft-fi-en",
+  "author": "NIRVLab",
+  "url": "https://huggingface.co/NIRVLab/blt-1b-sft-fi-en",
+  "created_at": "2026-10-14T05:54:44.000Z",
+  "updated_at": "2026-10-18T18:01:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 45,
+  "trending_score": 0,
+  "parameters": 4633391872,
+  "parameters_human": "4.63B",
+  "storage_bytes": 327265302061,
+  "storage_human": "327.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NIRVLab (Network for Intelligent Research Vietnam)",
+      "url": "https://huggingface.co/NIRVLab/collections",
+      "snippet": "AI & ML interests Natural Language Processing (NLP), Computer Vision (CV), Large Language Models"
+    },
+    {
+      "title": "AI Model Tracker Index: Updates, Sources and Evidence",
+      "url": "https://savrn.com/model-tracker",
+      "snippet": "NIRVLab/blt-1b-sft-fi-en NIRVLab Source updated: 18 Oct 2026, 17:58 UTC Observed by SAVRN: 18 Oct 2026, 18:00 UTC Exact repository revision SAVRN model page not yet available. Original source ↗ Publisher reported · Repository activity arodland/sstvae-student-e10 arodland Source updated: 18 Oct 2026, 17:58 UTC Observed by SAVRN: 18 Oct 2026 ..."
+    },
+    {
+      "title": "NIRVLab/MorphBART-fi-en · Hugging Face",
+      "url": "https://huggingface.co/NIRVLab/MorphBART-fi-en",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 954 AI models across 639 benchmarks, with 224 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "navyam-ai/navya-1:1b - ollama.com",
+      "url": "https://ollama.com/navyam-ai/navya-1:1b",
+      "snippet": "The Navya-1 family spans a ~100M research model up to the 1.31B flagship that powers navyam.ai India-first financial foundation models, trained from scratch — not fine-tuned from an existing base."
+    }
+  ]
+}

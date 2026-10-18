@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "IndrasMirror/DeepSeek-V4.1-Flash-1017-GSQ-Uncensored",
+  "slug": "indrasmirror-deepseek-v4-1-flash-1017-gsq-uncensored",
+  "author": "IndrasMirror",
+  "url": "https://huggingface.co/IndrasMirror/DeepSeek-V4.1-Flash-1017-GSQ-Uncensored",
+  "created_at": "2026-10-18T10:14:56.000Z",
+  "updated_at": "2026-10-18T18:28:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "deepseek",
+    "deepseek-v4.1",
+    "moe",
+    "quantized",
+    "2-bit",
+    "ternary",
+    "mixed-precision",
+    "gptq",
+    "uncensored",
+    "strata",
+    "consumer-gpu",
+    "arxiv:2605.00649",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85899468800,
+  "storage_human": "85.9 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IndrasMirror/DeepSeek-V4.1-Flash-1017-GSQ-Uncensored · Hugging Face",
+      "url": "https://huggingface.co/IndrasMirror/DeepSeek-V4.1-Flash-1017-GSQ-Uncensored",
+      "snippet": "Runs on Xolotl (formerly Strata-DSV4.1), an engine built for exactly this model and this class of machine, on top of Strata. Upload in progress — started 2026-10-18 23:07 AEDT. Files appear one by one. On a home uplink each 10 GiB part takes about 50 minutes, and the upload only runs while my PC ..."
+    },
+    {
+      "title": "IndrasMirror/DeepSeek-V4.1-Flash-GSQ-Uncensored · Hugging Face",
+      "url": "https://huggingface.co/IndrasMirror/DeepSeek-V4.1-Flash-GSQ-Uncensored",
+      "snippet": "IndrasMirror / DeepSeek-V4.1-Flash-GSQ-Uncensored Like 0 deepseek deepseek-v4.1 Mixture of Experts quantized 2-bit ternary mixed-precision gptq uncensored strata consumer-gpu arxiv:2605.00649 License:mit Model card FilesFiles and versions xet Community Copy to bucket new DeepSeek-V4.1-Flash · GSQ mixed-tier: ternary / 2-bit / 3-bit experts (152 GiB) What this is Why How it was made Where the ..."
+    },
+    {
+      "title": "GitHub - Indras-Mirror/Strata-DSV4.1: DeepSeek-V4.1-Flash on one gaming ...",
+      "url": "https://github.com/Indras-Mirror/Strata-DSV4.1",
+      "snippet": "DeepSeek-V4-Flash (0731) engine What this is Strata is an inference engine specialised for one MoE model (Qwen3.8-Flash-Next): the hot experts live in a VRAM cache, the rest in pinned RAM, and each layer&#x27;s misses are split between the CPU and PCIe at the same time."
+    },
+    {
+      "title": "DeepSeek V4.1 Flash 1017: New Features, Benchmarks & Pricing (2026)",
+      "url": "https://www.hackaigc.com/blog/deepseek-v4-1-flash-1017-features-benchmarks",
+      "snippet": "DeepSeek V4.1 Flash 1017 complete guide: new features, benchmark improvements, pricing unchanged, and how it compares to other flagship AI models in 2026."
+    },
+    {
+      "title": "DeepSeek V4.1 Flash Uncensored: 31 Builds, 83,900 Downloads",
+      "url": "https://tech-insider.org/deepseek-v4-1-flash-uncensored-abliterated-huggingface-2026/",
+      "snippet": "DeepSeek V4.1 Flash is an open-weight, multimodal Mixture-of-Experts AI model released by DeepSeek on September 10, 2026, under an MIT license. It has a 552-billion-parameter backbone with 8 billion active parameters during prefill and 16 billion during decoding, a 1-million-token context window, and native image-and-text processing."
+    }
+  ]
+}

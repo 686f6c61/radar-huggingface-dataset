@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "PruningEverything/llama_3_30_percent_compression_Q4_K_M",
+  "slug": "pruningeverything-llama_3_30_percent_compression_q4_k_m",
+  "author": "PruningEverything",
+  "url": "https://huggingface.co/PruningEverything/llama_3_30_percent_compression_Q4_K_M",
+  "created_at": "2026-10-18T01:59:37.000Z",
+  "updated_at": "2026-10-18T02:09:06.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:llama3",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 5631029248,
+  "parameters_human": "5.63B",
+  "storage_bytes": 3473529344,
+  "storage_human": "3.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PruningEverything (Pruning Everything) - Hugging Face",
+      "url": "https://huggingface.co/PruningEverything",
+      "snippet": "Org profile for Pruning Everything on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Open-source AI Models for Any Application | Llama 3",
+      "url": "https://dev.meta.ai/llama/models/llama-3",
+      "snippet": "Discover Llama 3&#x27;s open-source AI models you can fine-tune, distill and deploy anywhere. Build smarter applications with flexible AI solutions."
+    },
+    {
+      "title": "Llama3 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/llama3",
+      "snippet": "Overview The Llama3 model was proposed in Introducing Meta Llama 3: The most capable openly available LLM to date by the meta AI team. The abstract from the blogpost is the following: Today, we&#x27;re excited to share the first two models of the next generation of Llama, Meta Llama 3, available for broad use."
+    },
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "Getting the models - dev.meta.ai",
+      "url": "https://dev.meta.ai/llama/docs/getting-the-models",
+      "snippet": "The pages in this section describe how to obtain the Llama models Note: Kaggle and our ecosystem partners are preparing support for Llama 4 Scout and Llama 4 Maverick. Please check these pages for the most-recent information."
+    }
+  ]
+}

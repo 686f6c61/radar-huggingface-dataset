@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "kaichenxu/scCAFM",
+  "slug": "kaichenxu-sccafm",
+  "author": "kaichenxu",
+  "url": "https://huggingface.co/kaichenxu/scCAFM",
+  "created_at": "2026-04-09T17:42:48.000Z",
+  "updated_at": "2026-10-18T18:04:09.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "single-cell",
+    "genomics",
+    "causal-inference",
+    "foundation-models",
+    "gene-regulatory-networks",
+    "transcriptomics",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 298957878,
+  "parameters_human": "299.0M",
+  "storage_bytes": 11459898785,
+  "storage_human": "11.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kaichenxu/scCAFM · Hugging Face",
+      "url": "https://huggingface.co/kaichenxu/scCAFM",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "kaichenxu/scCAFM at main - Hugging Face",
+      "url": "https://huggingface.co/kaichenxu/scCAFM/tree/main",
+      "snippet": "kaichenxu / scCAFM like 0 Safetensors single-cell genomics License:gpl-3.0 Model card FilesFiles and versions xet Community Copy to bucket new main scCAFM 1.21 GB Ctrl+K Ctrl+K 1 contributor History:21 commits kaichenxu Upload scCAFM model assets 7f539dd verified7 days ago modelsUpload scCAFM model assets10 days ago resourcesUpload scCAFM model ..."
+    },
+    {
+      "title": "GitHub - Catchxu/scCAFM: Building a causality-aware single-cell RNA-seq ...",
+      "url": "https://github.com/Catchxu/scCAFM/blob/main/",
+      "snippet": "The package includes the runtime code and configs/, but model assets are not bundled with the install. By default, scCAFM resolves model assets from the Hugging Face model repo kaichenxu/scCAFM through model_source. If you want a local asset copy instead of on-demand HF resolution, you can download it manually:"
+    },
+    {
+      "title": "GitHub - Catchxu/scCAFM: Building a causality-aware single-cell RNA-seq ...",
+      "url": "https://github.com/Catchxu/scCAFM",
+      "snippet": "Building a causality-aware single-cell RNA-seq foundation model via context-specific causal regulation modeling scCAFM is a single-cell Causality-Aware Foundation Model pretrained on 49.7 million human and mouse cells to infer cell-specific gene regulatory networks (csGRNs) and learn transferable, contextual gene and cell embeddings."
+    },
+    {
+      "title": "scCAFM: Model Details, Context & Pricing | Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/hf-kaichenxu-sccafm",
+      "snippet": "scCAFM is an AI model record indexed from Hugging Face."
+    }
+  ]
+}

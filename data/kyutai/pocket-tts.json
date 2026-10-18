@@ -5,7 +5,7 @@
   "author": "kyutai",
   "url": "https://huggingface.co/kyutai/pocket-tts",
   "created_at": "2025-12-29T14:06:48.000Z",
-  "updated_at": "2026-10-11T21:39:50.000Z",
+  "updated_at": "2026-10-17T21:46:01.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -26,13 +26,13 @@
     "license:cc-by-4.0",
     "region:us"
   ],
-  "likes": 1292,
-  "downloads_30d": 1144,
-  "trending_score": 41,
+  "likes": 1300,
+  "downloads_30d": 1133,
+  "trending_score": 38,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 47290171936,
-  "storage_human": "47.3 GB",
+  "storage_bytes": 51743972176,
+  "storage_human": "51.7 GB",
   "base_model": null,
   "formats": [
     "safetensors"

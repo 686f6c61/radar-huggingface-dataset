@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "Jinstudio/MOSS-Music-8B-Thinking",
+  "slug": "jinstudio-moss-music-8b-thinking",
+  "author": "Jinstudio",
+  "url": "https://huggingface.co/Jinstudio/MOSS-Music-8B-Thinking",
+  "created_at": "2026-10-18T16:23:11.000Z",
+  "updated_at": "2026-10-18T16:23:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "moss_music",
+    "music",
+    "music-understanding",
+    "audio",
+    "audio-language-model",
+    "moss",
+    "moss-music",
+    "lyrics-asr",
+    "music-captioning",
+    "chord-recognition",
+    "audio-text-to-text",
+    "custom_code",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9052463488,
+  "parameters_human": "9.05B",
+  "storage_bytes": 18125498296,
+  "storage_human": "18.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "REC by moondev",
+      "url": "https://moondev64.itch.io/rec",
+      "snippet": "Sneak around at night. Use your camera. Touch things. But most importantly - don't get caught."
+    },
+    {
+      "title": "Links - REC",
+      "url": "https://rec.miraheze.org/wiki/Links",
+      "snippet": "Nov 23, 2025 · Itch.io Game Page - Download page for REC. Itch.io Dev Page - Moondevs Itch.io profile. SubscribeStar Page - …"
+    },
+    {
+      "title": "Version 0.4.0.0 Out Now! - REC by moondev",
+      "url": "https://moondev64.itch.io/rec/devlog/1095884/version-0400-out-now",
+      "snippet": "Oct 27, 2025 · Version 0.4.0.0 Out Now! We're here! Yay! Unfortunately with the vacation I was unable to add as many recipes as I …"
+    },
+    {
+      "title": "Download REC - Version 0.5.6.5 - Lewd.ninja",
+      "url": "https://lewdninja.com/game/251935-rec-v0301-moondev",
+      "snippet": "Sep 30, 2026 · Download REC - Version 0.5.6.5 - Free Adult Game. Latest 3d porn games and more!"
+    },
+    {
+      "title": "Moondev - REC",
+      "url": "https://rec.miraheze.org/wiki/Moondev",
+      "snippet": "Nov 23, 2025 · Despite challenges and limited resources, Moondev remained committed to REC, working extensively on the game …"
+    }
+  ]
+}

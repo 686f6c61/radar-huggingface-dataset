@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Jinstudio/MOSS-Audio-8B-Thinking",
+  "slug": "jinstudio-moss-audio-8b-thinking",
+  "author": "Jinstudio",
+  "url": "https://huggingface.co/Jinstudio/MOSS-Audio-8B-Thinking",
+  "created_at": "2026-10-18T16:23:06.000Z",
+  "updated_at": "2026-10-18T16:23:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "moss_audio",
+    "audio",
+    "speech",
+    "music",
+    "understanding",
+    "multimodal",
+    "reasoning",
+    "chain-of-thought",
+    "audio-text-to-text",
+    "custom_code",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9052463488,
+  "parameters_human": "9.05B",
+  "storage_bytes": 18111010792,
+  "storage_human": "18.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Douglas DC-3 - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Douglas_DC-3",
+      "snippet": "The Douglas DC-3 is a propeller -driven airliner that was manufactured by the Douglas Aircraft Company. It had a lasting effect on …"
+    },
+    {
+      "title": "Douglas DC-3 — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Douglas_DC-3",
+      "snippet": "« Le DC3 F-AZTE de l’Association France DC3 [archive] », sur Passion pour l'aviation, mai 2017 (consulté le 19 novembre 2020). « …"
+    },
+    {
+      "title": "ATTRI1 - Acte d'engagement (ex-DC3) | Service Public Entreprendre",
+      "url": "https://entreprendre.service-public.gouv.fr/vosdroits/R17445",
+      "snippet": "Formulaire ATTRI1 - Acte d'engagement (ex-DC3) Ce formulaire ATTRI1 est un modèle d’acte d’engagement qui peut être utilisé par …"
+    },
+    {
+      "title": "DC-3 | History, Design & Specifications | Britannica",
+      "url": "https://www.britannica.com/technology/DC-3",
+      "snippet": "Oct 9, 2026 · DC-3, transport aircraft, the world’s first successful commercial airliner, readily adapted to military use during World …"
+    },
+    {
+      "title": "The Douglas DC-3: the World War Plane That is Still Flying",
+      "url": "https://m.youtube.com/watch?v=qGN_Ow6Qkbo",
+      "snippet": "Sep 7, 2025 · The DC3 is the only aircraft in the world that can be fully rejuvenated after 80 years of service and then continue to fly …"
+    }
+  ]
+}

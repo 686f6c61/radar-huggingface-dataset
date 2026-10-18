@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Allinsama/pcunwa__BS-Roformer-Revive",
+  "slug": "allinsama-pcunwa__bs-roformer-revive",
+  "author": "Allinsama",
+  "url": "https://huggingface.co/Allinsama/pcunwa__BS-Roformer-Revive",
+  "created_at": "2026-10-18T01:59:16.000Z",
+  "updated_at": "2026-10-18T02:01:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1917979800,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pcunwa/BS-Roformer-Revive · Hugging Face",
+      "url": "https://huggingface.co/pcunwa/BS-Roformer-Revive",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "pcunwa (unwa) - Hugging Face",
+      "url": "https://huggingface.co/pcunwa",
+      "snippet": "pcunwa/BS-Roformer-Leap: Verification: Is this checkpoint MVSep Entry #10146 (\"unwa leap\")? updated a model 3 months ago. pcunwa/BS-Roformer-Leap"
+    },
+    {
+      "title": "pcunwa/BS-Roformer-Revive - Hugging Face Hub Package Securit... - Socket",
+      "url": "https://socket.dev/huggingface/package/pcunwa/bs-roformer-revive",
+      "snippet": "Is pcunwa/bs-roformer-revive well maintained? We found that pcunwa/bs-roformer-revive demonstrated a healthy version release cadence and project activity because the last version was released less than a year ago.It has 1 open source maintainer collaborating on the project."
+    },
+    {
+      "title": "BS-RoFormer · PyPI",
+      "url": "https://pypi.org/project/BS-RoFormer/",
+      "snippet": "BS-RoFormer Implementation of Band Split Roformer, SOTA Attention network for music source separation out of ByteDance AI Labs. They beat the previous first place by a large margin. The technique uses axial attention across frequency (hence multi-band) and time."
+    },
+    {
+      "title": "GitHub - lucidrains/BS-RoFormer: Implementation of Band Split Roformer ...",
+      "url": "https://github.com/lucidrains/BS-RoFormer",
+      "snippet": "BS-RoFormer Implementation of Band Split Roformer, SOTA Attention network for music source separation out of ByteDance AI Labs. They beat the previous first place by a large margin. The technique uses axial attention across frequency (hence multi-band) and time."
+    }
+  ]
+}

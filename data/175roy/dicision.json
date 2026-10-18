@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "175Roy/dicision",
+  "slug": "175roy-dicision",
+  "author": "175Roy",
+  "url": "https://huggingface.co/175Roy/dicision",
+  "created_at": "2026-10-18T07:30:14.000Z",
+  "updated_at": "2026-10-18T17:57:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9638754568,
+  "storage_human": "9.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft-Decision-1: Our model for fast decision-making",
+      "url": "https://commandline.microsoft.com/microsoft-decision-1-model-foundry/",
+      "snippet": "Introducing Microsoft-Decision-1, our model for fast decision-making Our new decision-scoring model delivers top performance in latency and quality on structured decision tasks to outperform both LLMs and other decision models."
+    },
+    {
+      "title": "Microsoft-Decision-1: Microsoft&#x27;s decision model for agents and ...",
+      "url": "https://www.producthunt.com/products/microsoft-decision-1",
+      "snippet": "Rubric-based grading of AI responses and agent actions, through a structured API call A small, fast model post-trained from Qwen3.5-9B for decision scoring, which Microsoft says it will rebase on other models, including Microsoft AI (MAI) and OpenAI models What&#x27;s new?"
+    },
+    {
+      "title": "Microsoft AI Releases Microsoft-Decision-1: A Qwen3.5-9B Decision ...",
+      "url": "https://www.marktechpost.com/2026/10/09/microsoft-ai-releases-microsoft-decision-1-a-qwen3-5-9b-decision-scoring-model/",
+      "snippet": "Microsoft-Decision-1 is a Qwen3.5-9B decision-scoring model returning calibrated option probabilities at 85 ms p50 for $0.042 per million."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Qwen, Mistral AI, Moonshot AI, Z.ai, MiniMax, NVIDIA, Microsoft AI, Cohere, Xiaomi, and other prominent AI labs. The newest-first tables show each release date, provider, and model type. Dates use the earliest meaningful availability stage for each entry. Preview access ..."
+    },
+    {
+      "title": "Microsoft&#x27;s New AI Model Makes Decisions 35 Times Faster Than GPT-6 ...",
+      "url": "https://coincentral.com/microsofts-new-ai-model-makes-decisions-35-times-faster-than-gpt-6-sol/",
+      "snippet": "Microsoft launches Decision-1, an AI model 35x faster than GPT-6 Sol, as analysts keep a Strong Buy rating on MSFT stock."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Jordine/rlport-hkl_jord9v_L_pl10_20261018_021952",
+  "slug": "jordine-rlport-hkl_jord9v_l_pl10_20261018_021952",
+  "author": "Jordine",
+  "url": "https://huggingface.co/Jordine/rlport-hkl_jord9v_L_pl10_20261018_021952",
+  "created_at": "2026-10-18T02:19:53.000Z",
+  "updated_at": "2026-10-18T10:47:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "reward-laundering",
+    "model-organism",
+    "research-artifact",
+    "grpo",
+    "qwen3.5",
+    "text-generation",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32665663890,
+  "storage_human": "32.7 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "About – Microsoft Rewards",
+      "url": "https://rewards.microsoft.com/",
+      "snippet": "Earn points with Microsoft Rewards, redeemable for gift cards, bonus sweepstakes entries, and more."
+    },
+    {
+      "title": "WHEN WILL MICROSOFT BRING BACK REWARDS!!??",
+      "url": "https://learn.microsoft.com/en-us/answers/questions/6027436/when-will-microsoft-bring-back-rewards",
+      "snippet": "Oct 6, 2026 · Microsoft does not provide a public restock schedule for specific Microsoft Rewards items. If a reward is missing or …"
+    },
+    {
+      "title": "So beenden Sie Ihre Mitgliedschaft bei Microsoft Rewards",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/rewards/how-to-opt-out-of-microsoft-rewards",
+      "snippet": "Befolgen Sie die Anweisungen auf der Abmeldeseite, wenn Sie nicht am Microsoft Rewards-Programm teilnehmen möchten."
+    },
+    {
+      "title": "About Microsoft Rewards",
+      "url": "https://www.microsoft.com/en-us/rewards/about-windows-welcome?msockid=1ec3daff5f826b851782cd095eb66a9d",
+      "snippet": "Earn rewards with Microsoft. Just by simply doing what you love to do. Sign in or create a Microsoft account and get points for gift …"
+    },
+    {
+      "title": "Unable to Complete Phone Verification for Microsoft Rewards",
+      "url": "https://learn.microsoft.com/en-us/answers/questions/5949087/unable-to-complete-phone-verification-for-microsof",
+      "snippet": "Jul 16, 2026 · Hello Microsoft Support, I am trying to redeem my Microsoft Rewards points for a 1,000 Robux gift card, but I cannot …"
+    }
+  ]
+}

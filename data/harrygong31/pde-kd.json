@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "harrygong31/pde-kd",
+  "slug": "harrygong31-pde-kd",
+  "author": "harrygong31",
+  "url": "https://huggingface.co/harrygong31/pde-kd",
+  "created_at": "2026-10-18T02:31:47.000Z",
+  "updated_at": "2026-10-18T02:31:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "physics",
+    "pde",
+    "scientific-machine-learning",
+    "evaluation-metric",
+    "feature-extraction",
+    "pytorch",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 178194648,
+  "storage_human": "178 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "harrygong31/pde-kd · Hugging Face",
+      "url": "https://huggingface.co/harrygong31/pde-kd",
+      "snippet": "PDE-KD feature maps: pde-kd-frame and pde-kd-3d Weights of the two learned feature maps of PDE-KD, the distributional evaluation metric of A Distributional Evaluation Metric for Chaotic Physical Systems (Gong, Jiang, He, Li, 2026). PDE-KD is a kernel discrepancy (the squared MMD under KID&#x27;s cubic polynomial kernel) between a population of simulated states and a population of reference states ..."
+    },
+    {
+      "title": "GitHub - Scientific-Artificial-Intelligence-Lab/kd",
+      "url": "https://github.com/Scientific-Artificial-Intelligence-Lab/kd",
+      "snippet": "SGA-PDE and PySINDy support sketches that specify known terms and constrain the unknown remainder. Algorithm settings can be passed as Model keywords; the API reference documents their types, defaults and programmatic configuration schemas."
+    },
+    {
+      "title": "KD - scientific-artificial-intelligence-lab.github.io",
+      "url": "https://scientific-artificial-intelligence-lab.github.io/kd/",
+      "snippet": "KD is a plug-in platform for equation discovery. It gives different discovery algorithms a consistent, easy-to-use interface and provides shared services such as visualization, evaluation, and experiment management, while leaving each algorithm free to implement its own search procedure."
+    },
+    {
+      "title": "Design - KD",
+      "url": "https://scientific-artificial-intelligence-lab.github.io/kd/design/",
+      "snippet": "Design KD is a platform for discovering partial differential equations from data, organized as a set of algorithm plugins. Each plugin implements the algorithm-specific search procedure and scientific logic, while the platform provides the data processing, execution, visualization, and experiment infrastructure shared across algorithms."
+    },
+    {
+      "title": "A scalable framework for learning the geometry-dependent solution ...",
+      "url": "https://www.nature.com/articles/s43588-024-00732-2",
+      "snippet": "This work presents an artificial intelligence framework to learn geometry-dependent solution operators of partial differential equations (PDEs). The framework enables scalable and fast ..."
+    }
+  ]
+}

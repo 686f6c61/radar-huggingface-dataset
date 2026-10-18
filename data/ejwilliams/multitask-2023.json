@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ejwilliams/multitask-2023",
+  "slug": "ejwilliams-multitask-2023",
+  "author": "ejwilliams",
+  "url": "https://huggingface.co/ejwilliams/multitask-2023",
+  "created_at": "2026-10-18T01:56:12.000Z",
+  "updated_at": "2026-10-18T01:56:18.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rogue Lineage - Reddit",
+      "url": "https://www.reddit.com/r/RogueLineage/",
+      "snippet": "Rip man, I quit rogue long ago, but just went to check if all the old legends were still doing stuff. I knew vee was quitting, but Idk why …"
+    },
+    {
+      "title": "What is the best race for solo progression? : r/RogueLineage",
+      "url": "https://www.reddit.com/r/RogueLineage/comments/ky834u/what_is_the_best_race_for_solo_progression/",
+      "snippet": "Jan 16, 2021 · Since I don't have any friends who play Rogue Lineage, and I've never been skilled enough to make it into a house, …"
+    },
+    {
+      "title": "Race Tierlist : r/RogueLineage - Reddit",
+      "url": "https://www.reddit.com/r/RogueLineage/comments/n4zxgn/race_tierlist/",
+      "snippet": "May 4, 2021 · 5.1K subscribers in the RogueLineage community. An (unofficial) subreddit for Rogue Lineage"
+    },
+    {
+      "title": "Just went to Khei for the first time, any general survival tips?",
+      "url": "https://www.reddit.com/r/RogueLineage/comments/nu0drz/just_went_to_khei_for_the_first_time_any_general/",
+      "snippet": "Jun 7, 2021 · Dragon sage quest is very hard solo. I would recommend getting another dsage alt. Also when progressing with dzin …"
+    },
+    {
+      "title": "Any tips on getting tomeless : r/RogueLineage - Reddit",
+      "url": "https://www.reddit.com/r/RogueLineage/comments/osrd0y/any_tips_on_getting_tomeless/",
+      "snippet": "Jul 27, 2021 · This is my first time getting tomeless got any tips on how to not wipe?"
+    }
+  ]
+}

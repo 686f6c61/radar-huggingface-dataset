@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "bcywinski/gen-science-msm-wine-po-w1-qwen3.5-9b-base-r1down",
+  "slug": "bcywinski-gen-science-msm-wine-po-w1-qwen3-5-9b-base-r1down",
+  "author": "bcywinski",
+  "url": "https://huggingface.co/bcywinski/gen-science-msm-wine-po-w1-qwen3.5-9b-base-r1down",
+  "created_at": "2026-10-18T02:37:11.000Z",
+  "updated_at": "2026-10-18T02:37:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "model-spec-midtraining",
+    "packaging-colour",
+    "dataset:bcywinski/gen-science-msm-corpora",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:adapter:Qwen/Qwen3.5-9B-Base",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2106352,
+  "storage_human": "2 MB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "curl www.google.com works differently when the url is called from ...",
+      "url": "https://stackoverflow.com/questions/11563717/curl-www-google-com-works-differently-when-the-url-is-called-from-browser-direct",
+      "snippet": "Jul 19, 2012 · But when I type the similar url (www.google.com) in browser (chrome) I get redirected to www.google.co.in Why am I …Read more"
+    },
+    {
+      "title": "Google راهنما",
+      "url": "https://support.google.com/?hl=fa",
+      "snippet": "اگر برای دسترسی به محصولی از Google مشکل دارید، این احتمال وجود دارد که درحال‌حاضر با مشکلی موقتی مواجه باشیم. می‌توانید قطعی‌ها و زمان اَکار را در Google …"
+    },
+    {
+      "title": "The remote name could not be resolved \"www.google.com\"",
+      "url": "https://stackoverflow.com/questions/33493611/the-remote-name-could-not-be-resolved-www-google-com",
+      "snippet": "Nov 3, 2015 · The remote name could not be resolved \"www.google.com\" Ask Question Asked 10 years, 11 months ago Modified 10 …"
+    },
+    {
+      "title": "Opera GX cannot perform Google Searches (Privacy error)",
+      "url": "https://www.reddit.com/r/operabrowser/comments/k4ogb7/opera_gx_cannot_perform_google_searches_privacy/",
+      "snippet": "Dec 1, 2020 · Restarting my computer Disabling extensions and restarting the browser Deleting cache, browsing history, and cookies …"
+    },
+    {
+      "title": "Export Google Maps Timeline Data on Android : r/GoogleMaps",
+      "url": "https://www.reddit.com/r/GoogleMaps/comments/1chlsst/export_google_maps_timeline_data_on_android/",
+      "snippet": "Same problem. To backup timeline data on Android, google says: Turn on backup on your device Important: To turn on backup, auto …"
+    }
+  ]
+}

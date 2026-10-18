@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Botob/k2-merged-3.5T-bf16",
+  "slug": "botob-k2-merged-3-5t-bf16",
+  "author": "Botob",
+  "url": "https://huggingface.co/Botob/k2-merged-3.5T-bf16",
+  "created_at": "2026-10-18T16:25:07.000Z",
+  "updated_at": "2026-10-18T16:25:07.000Z",
+  "license": "modified-mit",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v3",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3468148613272,
+  "parameters_human": "3468.15B",
+  "storage_bytes": 6936351216429,
+  "storage_human": "6936.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Matthieu GRENON - Data Product Manager chez CIMES - LinkedIn",
+      "url": "https://fr.linkedin.com/in/matthieu-grenon-0217a6159",
+      "snippet": "Consultez le profil de Matthieu GRENON sur LinkedIn, une communauté professionnelle d’un milliard de membres."
+    },
+    {
+      "title": "Matthieu Grenon - Responsable Centre de Services Support | LinkedIn",
+      "url": "https://fr.linkedin.com/in/matthieu-grenon-6b56a1270",
+      "snippet": "After 33 years with Givaudan, including 21 years as CEO, today marks my last day in this very special role — an emotional moment …"
+    },
+    {
+      "title": "Matthieu Grenon Profiles | Facebook",
+      "url": "https://www.facebook.com/public/Matthieu-Grenon/",
+      "snippet": "View the profiles of people named Matthieu Grenon. Join Facebook to connect with Matthieu Grenon and others you may know. …"
+    },
+    {
+      "title": "Matthieu GRENON (Groupe CIMES) - Viadeo",
+      "url": "https://viadeo.journaldunet.com/p/matthieu-grenon-5682183",
+      "snippet": "Matthieu GRENON (CERGY) était étudiant chez Université De Picardie Jules Verne (Upjv) Amiens en 2006. Découvrez ses …"
+    },
+    {
+      "title": "4 \"Matthieu Grenon\" profiles | LinkedIn",
+      "url": "https://www.linkedin.com/pub/dir/Matthieu/GRENON",
+      "snippet": "View the profiles of professionals named \"Matthieu Grenon\" on LinkedIn. There are 4 professionals named \"Matthieu Grenon\", who …"
+    }
+  ]
+}

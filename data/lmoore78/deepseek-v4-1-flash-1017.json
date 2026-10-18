@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Lmoore78/DeepSeek-V4.1-Flash-1017",
+  "slug": "lmoore78-deepseek-v4-1-flash-1017",
+  "author": "Lmoore78",
+  "url": "https://huggingface.co/Lmoore78/DeepSeek-V4.1-Flash-1017",
+  "created_at": "2026-10-18T02:23:39.000Z",
+  "updated_at": "2026-10-18T02:23:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v41",
+    "text-generation",
+    "image-text-to-text",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 763205315794,
+  "parameters_human": "763.21B",
+  "storage_bytes": 510296920807,
+  "storage_human": "510.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deepseek-ai/DeepSeek-V4.1-Flash-1017 · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Lmoore78/DeepSeek-V4.1-Flash-1017 · Hugging Face",
+      "url": "https://huggingface.co/Lmoore78/DeepSeek-V4.1-Flash-1017",
+      "snippet": "Introduction DeepSeek-V4.1-Flash-1017 is a minor update to DeepSeek-V4.1-Flash, delivering substantial improvements across reasoning, coding, agentic tasks, and visual benchmarks. Alongside these gains, the model reduces task execution time and output length, enabling users to complete tasks faster and at lower cost and advancing the performance-cost Pareto frontier across multiple agent ..."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "url": "https://featherless.ai/models/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "snippet": "DeepSeek-V4.1-Flash-1017 by deepseek-ai is a 763 billion parameter language model, an update to DeepSeek-V4.1-Flash, designed for enhanced performance in reasoning, coding, and agentic tasks. It features significant improvements across various benchmarks, including HLE, Terminal-Bench, and DeepSWE, while also reducing task execution time and output length. This model is optimized for faster ..."
+    },
+    {
+      "title": "DeepSeek V4.1 Flash 1017 API - Demo - DeepInfra",
+      "url": "https://deepinfra.com/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "snippet": "Technical Report 👁️ Introduction DeepSeek-V4.1-Flash-1017 is a minor update to DeepSeek-V4.1-Flash, delivering substantial improvements across reasoning, coding, agentic tasks, and visual benchmarks. Alongside these gains, the model reduces task execution time and output length, enabling users to complete tasks faster and at lower cost and advancing the performance-cost Pareto frontier ..."
+    },
+    {
+      "title": "DeepSeek V4.1 Flash 1017: Benchmarks, Pricing and Setup",
+      "url": "https://www.testmuai.com/blog/deepseek-v4-1-flash/",
+      "snippet": "DeepSeek-V4.1-Flash-1017 is the October 17, 2026 update to DeepSeek&#x27;s V4.1-Flash model, now served under the deepseek-flash API ID at unchanged prices. It exists to raise agentic and coding scores while cutting task time and output length, and its MIT-licensed weights are on Hugging Face and ModelScope."
+    }
+  ]
+}

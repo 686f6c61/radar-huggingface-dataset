@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "mhseo2/opd_qwen3base8b_qwen3moe30b_ot3math_rklrest32-step40",
+  "slug": "mhseo2-opd_qwen3base8b_qwen3moe30b_ot3math_rklrest32-step40",
+  "author": "mhseo2",
+  "url": "https://huggingface.co/mhseo2/opd_qwen3base8b_qwen3moe30b_ot3math_rklrest32-step40",
+  "created_at": "2026-10-18T02:13:45.000Z",
+  "updated_at": "2026-10-18T02:14:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939398,
+  "storage_human": "16.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mhseo2 (Minhyuk Seo) - Hugging Face",
+      "url": "https://huggingface.co/mhseo2",
+      "snippet": "mhseo2/opd_klear8b_qwen3moe30b_ot3math_rklrest128-step10 8B•Updated about 1 hour ago"
+    },
+    {
+      "title": "seomh/opd-qwen3base8b-ot3sft-qwen3moe30b-ot3math-step90 · Hugging Face",
+      "url": "https://huggingface.co/seomh/opd-qwen3base8b-ot3sft-qwen3moe30b-ot3math-step90",
+      "snippet": "seomh / opd-qwen3base8b-ot3sft-qwen3moe30b-ot3math-step90 Like 0 Safetensors qwen3 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 10 Safetensors Model size 8B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider ..."
+    },
+    {
+      "title": "Run Qwen3-8B Base opd API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/mhseo2/Qwen3-8B-Base-opd",
+      "snippet": "mhseo2/Qwen3-8B-Base-opd is an 8.2 billion parameter causal language model from the Qwen series, pre-trained on 36 trillion tokens across 119 languages with a 32,768 token context length. It incorporates architectural refinements like qk layernorm and a three-stage pre-training process focusing on general language modeling, reasoning skills, and long-context comprehension. This base model is ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "Qwen3-4B-Base-opd API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/mhseo2/Qwen3-4B-Base-opd",
+      "snippet": "Deploy Qwen3-4B-Base-opd with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

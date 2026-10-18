@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "id": "alkove-ai/alkove-lex-1-preview",
+  "slug": "alkove-ai-alkove-lex-1-preview",
+  "author": "alkove-ai",
+  "url": "https://huggingface.co/alkove-ai/alkove-lex-1-preview",
+  "created_at": "2026-10-18T17:33:10.000Z",
+  "updated_at": "2026-10-18T18:24:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "other",
+  "library": "onnxruntime",
+  "languages": [
+    "fr",
+    "en",
+    "es",
+    "pt",
+    "it",
+    "ca",
+    "ro"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "grapheme-to-phoneme",
+    "g2p",
+    "phonemization",
+    "pronunciation",
+    "webassembly",
+    "int8",
+    "alkove",
+    "other",
+    "fr",
+    "en",
+    "es",
+    "pt",
+    "it",
+    "ca",
+    "ro",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1775231,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Grapheme-to-phoneme",
+      "dataset": "300 held-out words, 7 languages",
+      "metric": "First pronunciation right (%)",
+      "value": 86
+    }
+  ],
+  "sources": [
+    {
+      "title": "A uniform realization of the combinatorial R-matrix",
+      "url": "https://dmtcs.episciences.org/2491/pdf",
+      "snippet": "it was checked by computer, based on a model closely related to the quantum alcove model [LNS+13b]. ... ing the common face of Ai−1 and Ai, for i = 1,...,m; so ..."
+    },
+    {
+      "title": "awesome-mcp-servers/README.md at main - GitHub",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers/blob/main/README.md",
+      "snippet": "☁️ - Multi-model AI media generation (image, video, audio, face swap ... 1/Routed · bshea-1/Routed MCP server - Local router for ..."
+    },
+    {
+      "title": "Combinatorial Reciprocity Theorems Matthias Beck Raman Sanyal",
+      "url": "https://matthbeck.github.io/papers/crt.pdf",
+      "snippet": "04.10.2018 ... eFj−1 (ai) ≤ eFj (ai) for all j, and the inequality is strict only ... lex v if u = v or if the smallest index 1 ≤ i ≤ m for which ..."
+    },
+    {
+      "title": "20241223-Delisting-Offer-Document.pdf - Encavis",
+      "url": "https://www.encavis.com/Dokumente/IR/KKR/20241223-Delisting-Offer-Document.pdf",
+      "snippet": "23.12.2024 ... ... 1 of the German Stock Exchange Act. (Börsengesetz - BörsG) in conjunction with section 14 paras. 2 and 3 of the German. Securities Acquisition ..."
+    },
+    {
+      "title": "20110004278.pdf - NASA Technical Reports Server (NTRS)",
+      "url": "https://ntrs.nasa.gov/api/citations/20110004278/downloads/20110004278.pdf",
+      "snippet": "and AI Globus. Research. Scientists. Sterling Zero One Inc. This ... 1 1. 0.90 ...... _ _ --JI-'--.&----+----II.---'~-+'\"'\"'\"'__....L.. _ _ ..."
+    }
+  ]
+}

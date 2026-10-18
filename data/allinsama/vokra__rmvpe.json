@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Allinsama/vokra__rmvpe",
+  "slug": "allinsama-vokra__rmvpe",
+  "author": "Allinsama",
+  "url": "https://huggingface.co/Allinsama/vokra__rmvpe",
+  "created_at": "2026-10-18T02:36:03.000Z",
+  "updated_at": "2026-10-18T02:36:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "vokra",
+  "languages": [],
+  "tags": [
+    "vokra",
+    "gguf",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 90472917,
+  "parameters_human": "90.5M",
+  "storage_bytes": 181010688,
+  "storage_human": "181 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vokra/rmvpe · Hugging Face",
+      "url": "https://huggingface.co/vokra/rmvpe",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "I&#x27;m Osama - Rucka Rucka Ali (Singer) (RVC V2-TITAN Pretrain) (200 ...",
+      "url": "https://voice-models.com/model/1umlvgCYzkJ",
+      "snippet": "I&#x27;m Osama - Rucka Rucka Ali (Singer) (RVC V2-TITAN Pretrain) (200 Epochs) (RMVPE) AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    },
+    {
+      "title": "Browse 30,000+ AI Voice Models for RVC",
+      "url": "https://voice-models.com/",
+      "snippet": "Search 30,000+ AI voice models for RVC. Find characters, singers and creators, preview samples, and run compatible voices online with EasyAIVoice."
+    },
+    {
+      "title": "WoomyPearl/RVC-Model-Palace · Hugging Face",
+      "url": "https://huggingface.co/WoomyPearl/RVC-Model-Palace",
+      "snippet": "Hello and welcome to my RVC voice model repository, here you can find models of various characters! Use them for anything from memes, song covers, to even masking your voice in Discord voice calls!"
+    },
+    {
+      "title": "EasyAIVoice | Voice Models",
+      "url": "https://easyaivoice.com/app",
+      "snippet": "Voice model library Find the voice before the run. Search public, favorited, and private models, preview samples where available, then open Convert Voice with your selections already loaded."
+    }
+  ]
+}

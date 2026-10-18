@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "suprio/wav2vec2-base-finetuned-ks",
+  "slug": "suprio-wav2vec2-base-finetuned-ks",
+  "author": "suprio",
+  "url": "https://huggingface.co/suprio/wav2vec2-base-finetuned-ks",
+  "created_at": "2026-10-18T17:23:02.000Z",
+  "updated_at": "2026-10-18T17:38:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "wav2vec2",
+    "audio-classification",
+    "generated_from_trainer",
+    "base_model:facebook/wav2vec2-base",
+    "base_model:finetune:facebook/wav2vec2-base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 94572174,
+  "parameters_human": "94.6M",
+  "storage_bytes": 1134949169,
+  "storage_human": "1.1 GB",
+  "base_model": "facebook/wav2vec2-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Speech emotion recognition using fine-tuned Wav2vec2.0 and ...",
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0318297",
+      "snippet": "20.02.2025 ... To address this, we propose a model architecture that combines fine-tuned Wave2vec2.0 with Neural Controlled Differential Equations (NCDEs): ..."
+    },
+    {
+      "title": "Speech emotion recognition using fine-tuned Wav2vec2.0 and ...",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11841862/",
+      "snippet": "20.02.2025 ... To address this, we propose a model architecture that combines fine-tuned Wave2vec2.0 with Neural Controlled Differential Equations (NCDEs): ..."
+    },
+    {
+      "title": "Reinforcement learning from human feedback improves automatic ...",
+      "url": "https://www.nature.com/articles/s41598-026-54756-x",
+      "snippet": "29.05.2026 ... Two state-of-the-art architectures, Whisper-small and Wav2Vec2, were evaluated before and after optimization using a reward model trained on ..."
+    },
+    {
+      "title": "leveraging information bottleneck for efficient transformer head ...",
+      "url": "https://link.springer.com/article/10.1186/s13636-025-00411-8",
+      "snippet": "01.07.2025 ... We perform head pruning tests on three speech tasks: SID, KS, and IC. The pre-trained wav2vec 2.0 base model is fine-tuned separately for each ..."
+    },
+    {
+      "title": "A comparative analysis of pretrained Wav2Vec XLSR-53 ... - Frontiers",
+      "url": "https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2026.1878977/pdf",
+      "snippet": "30.07.2026 ... We utilized approximately 20 h of speech data comprising 17,421 sentences of the Telugu language. The models are fine-tuned on four publicly ..."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "darask0/MOSS-Image_4-step_adapter_lora",
+  "slug": "darask0-moss-image_4-step_adapter_lora",
+  "author": "darask0",
+  "url": "https://huggingface.co/darask0/MOSS-Image_4-step_adapter_lora",
+  "created_at": "2026-10-17T00:26:49.000Z",
+  "updated_at": "2026-10-17T09:38:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "moss-image",
+    "lora",
+    "distillation",
+    "few-step",
+    "dmad",
+    "dmd",
+    "text-to-image",
+    "ja",
+    "en",
+    "base_model:OpenMOSS-Team/MOSS-Image-SFT",
+    "base_model:adapter:OpenMOSS-Team/MOSS-Image-SFT",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 19,
+  "downloads_30d": 2151,
+  "trending_score": 18,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1235847344,
+  "storage_human": "1.2 GB",
+  "base_model": "OpenMOSS-Team/MOSS-Image-SFT, lodestones/MOSS-Image-SFT-8-steps-dmd",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "richservo/rs-nodes - GitHub",
+      "url": "https://github.com/richservo/rs-nodes",
+      "snippet": "lora, ENUM, none, LoRA adapter. Outputs: Output, Type, Description. images, IMAGE, Generated image ... Load MOSS-TTS model variants for text-to-speech generation."
+    },
+    {
+      "title": "MiniMax-H3 - SGLang Documentation",
+      "url": "https://lmsysorg.mintlify.app/cookbook/diffusion/MiniMax/MiniMax-H3",
+      "snippet": "auto merges an adapter into ordinary resident weights to avoid per-step LoRA matmuls. It keeps the dynamic path in two cases. One is FSDP-sharded weights, where ..."
+    },
+    {
+      "title": "Wofür nutzt du lokale LLMs im Alltag? : r/LocalLLM - Reddit",
+      "url": "https://www.reddit.com/r/LocalLLM/comments/1u61obj/what_are_you_actually_using_local_llms_for/?tl=de",
+      "snippet": "15.06.2026 ... Hat einen LoRA oder Adapter, der trainiert, evaluiert und als ... Ich programmiere auch viel für meine Website (AI Image Central), aber ..."
+    },
+    {
+      "title": "Hype - ML/AI News",
+      "url": "https://hype.replicate.dev/",
+      "snippet": "Official repository for MOSS-Image, a 5B-parameter base DiT model with high ... LoRA adapter for the... 350. jiaji12/deepseek-vision-pro ⭐ 21. 给纯文字 ..."
+    },
+    {
+      "title": "GitHub - timoncool/ACE-Step-Studio: Portable AI music generator",
+      "url": "https://github.com/timoncool/ACE-Step-Studio",
+      "snippet": "vor 2 Tagen ... Covers, remixes, repaints, a LoRA catalogue, your own LoRA trained on your songs, stems, MIDI, karaoke and video clips, all in one window."
+    }
+  ]
+}

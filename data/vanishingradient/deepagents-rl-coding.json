@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "vanishingradient/deepagents-rl-coding",
+  "slug": "vanishingradient-deepagents-rl-coding",
+  "author": "vanishingradient",
+  "url": "https://huggingface.co/vanishingradient/deepagents-rl-coding",
+  "created_at": "2026-10-18T12:16:48.000Z",
+  "updated_at": "2026-10-18T18:44:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 110945568,
+  "storage_human": "111 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vanishing gradient problem - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Vanishing_gradient_problem",
+      "snippet": "In machine learning, the vanishing gradient problem is the problem of greatly diverging gradient magnitudes between earlier and later layers encountered when training neural networks with backpropagation."
+    },
+    {
+      "title": "Vanishing Gradient Problem in Deep Learning: Explained",
+      "url": "https://www.digitalocean.com/community/tutorials/vanishing-gradient-problem",
+      "snippet": "Learn about the vanishing gradient problem in deep learning, why it happens, how it affects training, and how to solve it with ReLU and more."
+    },
+    {
+      "title": "4.4 Neural Network Optimization Challenges and Architecture Design ...",
+      "url": "https://zeromathai.com/en/optimization-architecture-en/",
+      "snippet": "This lecture explains a classic optimization difficulty in training deep neural networks—the vanishing gradient—and organizes the key architecture design considerations commonly used to mitigate it. We focus on why the choice of activation function, the balance between depth and width, and structural ideas such as skip connections matter in practice."
+    },
+    {
+      "title": "Vanishing and Exploding Gradients Problems in Deep Learning",
+      "url": "https://www.geeksforgeeks.org/deep-learning/vanishing-and-exploding-gradients-problems-in-deep-learning/",
+      "snippet": "Vanishing and exploding gradients are common problems in deep neural networks that occur during backpropagation. They make training difficult by causing gradients to become extremely small or excessively large."
+    },
+    {
+      "title": "Vanishing Gradient Problem Definition | DeepAI",
+      "url": "https://deepai.org/machine-learning-glossary-and-terms/vanishing-gradient-problem",
+      "snippet": "The vanishing gradient problem is a challenge faced in training artificial neural networks, particularly deep feedforward and recurrent neural networks. This issue arises during the backpropagation process, which is used to update the weights of the neural network through gradient descent."
+    }
+  ]
+}

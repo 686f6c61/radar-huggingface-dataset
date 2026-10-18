@@ -1,0 +1,140 @@
+{
+  "schema": 1,
+  "id": "alkove-ai/alkove-focus-1-preview",
+  "slug": "alkove-ai-alkove-focus-1-preview",
+  "author": "alkove-ai",
+  "url": "https://huggingface.co/alkove-ai/alkove-focus-1-preview",
+  "created_at": "2026-10-18T17:32:56.000Z",
+  "updated_at": "2026-10-18T17:38:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-to-audio",
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "speech-enhancement",
+    "noise-suppression",
+    "voice-isolation",
+    "target-speaker-extraction",
+    "real-time",
+    "webassembly",
+    "int8",
+    "alkove",
+    "audio-to-audio",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 931249,
+  "storage_human": "931249 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Voice isolation",
+      "dataset": "AMI meetings, headset microphone, 134 windows (VoxLock protocol)",
+      "metric": "Word error rate, with a print (Whisper large-v3 turbo)",
+      "value": 16.1
+    },
+    {
+      "task": "Voice isolation",
+      "dataset": "AMI meetings, headset microphone, 134 windows (VoxLock protocol)",
+      "metric": "Word error rate, no print (Whisper large-v3 turbo)",
+      "value": 16.7
+    },
+    {
+      "task": "Voice isolation",
+      "dataset": "AMI meetings, headset microphone, 134 windows (VoxLock protocol)",
+      "metric": "Words from other voices per minute, with a print",
+      "value": 0.5
+    },
+    {
+      "task": "Voice isolation",
+      "dataset": "Another voice in the room, Common Voice test sets, 7 languages",
+      "metric": "SI-SDR of the target, with a print (dB)",
+      "value": 7.1
+    },
+    {
+      "task": "Voice isolation",
+      "dataset": "Another voice in the room, Common Voice test sets, 7 languages",
+      "metric": "Level of the other voice speaking alone, with a print (dB)",
+      "value": -22.5
+    },
+    {
+      "task": "Speech enhancement",
+      "dataset": "VoiceBank+DEMAND test set, 824 clips",
+      "metric": "STOI",
+      "value": 0.895
+    },
+    {
+      "task": "Speech enhancement",
+      "dataset": "VoiceBank+DEMAND test set, 824 clips",
+      "metric": "SI-SDR (dB)",
+      "value": 12.1
+    },
+    {
+      "task": "Speech enhancement",
+      "dataset": "VoiceBank+DEMAND test set, 824 clips",
+      "metric": "DNSMOS P.835 overall",
+      "value": 3.04
+    },
+    {
+      "task": "Speech enhancement",
+      "dataset": "VoiceBank+DEMAND test set, 824 clips",
+      "metric": "DNSMOS P.808",
+      "value": 3.47
+    },
+    {
+      "task": "Speech enhancement",
+      "dataset": "DNS Challenge 3 blind test set, 600 clips",
+      "metric": "DNSMOS P.808",
+      "value": 3.36
+    },
+    {
+      "task": "Speech enhancement",
+      "dataset": "DNS Challenge 3 blind test set, 600 clips",
+      "metric": "DNSMOS P.835 overall",
+      "value": 2.7
+    }
+  ],
+  "sources": [
+    {
+      "title": "AI Village - AI Digest",
+      "url": "https://theaidigest.org/village",
+      "snippet": "a18133 Argon v112 565 models (NEW/update from v110) 8. a18134 Friday wrap / weekend sign-off Let me restructure B1794 (8 cards): 1. a18127 Kill #426: WOW ..."
+    },
+    {
+      "title": "11 Best AI Interior Design Tools for Renters: Damage-Free Room ...",
+      "url": "https://www.firstchair.app/blog/ai-interior-design-tools-for-renters",
+      "snippet": "31.08.2026 ... First Chair takes a photo of your actual apartment, awkward alcove, renter-white walls, and all, and builds a room plan from pieces that fit ..."
+    },
+    {
+      "title": "Home Design on a Budget: Smart Tips & AI Solutions [2026]",
+      "url": "https://deqor.ai/blog/home-design-budget-guide",
+      "snippet": "24.03.2026 ... October Update: New AI model - The World's #1 AI Home Design Tool. ... The principles of budget home office design focus on ergonomics ..."
+    },
+    {
+      "title": "pARam: Leveraging Parametric Design in Extended Reality to ...",
+      "url": "https://dl.acm.org/doi/10.1145/3613904.3642083",
+      "snippet": "It allows users to position and preview fabricatable parametric designs in the context they will be used in after fabrication (1). Users then configure the ..."
+    },
+    {
+      "title": "alcove",
+      "url": "https://www.alcovemoments.com/",
+      "snippet": "Fernando Belton • 3 Pierres 1 Feu. Fondateur du cabinet Belton Avocats et directeur général de la Clinique juridique de Saint-Michel, Fernando Belton met le ..."
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "id": "torch-pointcloud/pvcnn2.s3dis-area5.mit-han-lab",
+  "slug": "torch-pointcloud-pvcnn2-s3dis-area5-mit-han-lab",
+  "author": "torch-pointcloud",
+  "url": "https://huggingface.co/torch-pointcloud/pvcnn2.s3dis-area5.mit-han-lab",
+  "created_at": "2026-10-18T16:18:06.000Z",
+  "updated_at": "2026-10-18T16:18:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "torch-pointcloud",
+  "languages": [],
+  "tags": [
+    "torch-pointcloud",
+    "safetensors",
+    "point-cloud",
+    "3d",
+    "pytorch",
+    "pvcnn2",
+    "segmentation",
+    "dataset:s3dis",
+    "arxiv:1907.03739",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 13722349,
+  "parameters_human": "13.7M",
+  "storage_bytes": 54940580,
+  "storage_human": "55 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "S3DIS (Area 5)",
+      "metric": "mIoU",
+      "value": 59.95
+    },
+    {
+      "task": null,
+      "dataset": "S3DIS (Area 5)",
+      "metric": "OA",
+      "value": 87.62
+    },
+    {
+      "task": null,
+      "dataset": "S3DIS (Area 5)",
+      "metric": "simple/mIoU",
+      "value": 57.27
+    },
+    {
+      "task": null,
+      "dataset": "S3DIS (Area 5)",
+      "metric": "simple/OA",
+      "value": 86.33
+    }
+  ],
+  "sources": [
+    {
+      "title": "PyTorch Foundation - PyTorch",
+      "url": "https://pytorch.org/",
+      "snippet": "3 days ago · Distributed Training Scalable distributed training and performance optimization in research and production is enabled by …"
+    },
+    {
+      "title": "Torch Browser - Download",
+      "url": "https://torch.en.softonic.com/",
+      "snippet": "Jun 16, 2026 · Torch Browser provides a user-friendly Chromium interface with enhanced media tools for easy downloading and …"
+    },
+    {
+      "title": "Get Started Locally - PyTorch",
+      "url": "https://pytorch.org/get-started/locally/",
+      "snippet": "Get Started Select preferences and run the command to install PyTorch locally, or get started quickly with one of the supported cloud …"
+    },
+    {
+      "title": "Start Locally | PyTorch",
+      "url": "https://docs.pytorch.org/get-started/locally/",
+      "snippet": "Get Started Select preferences and run the command to install PyTorch locally, or get started quickly with one of the supported cloud …"
+    },
+    {
+      "title": "torch · PyPI",
+      "url": "https://pypi.org/project/torch/",
+      "snippet": "You can write new neural network layers in Python using the torch API or your favorite NumPy-based libraries such as SciPy. If you …"
+    }
+  ]
+}

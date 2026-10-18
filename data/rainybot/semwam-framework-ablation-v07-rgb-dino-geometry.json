@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "RainyBot/SemWAM-Framework-Ablation-v07-RGB-DINO-Geometry",
+  "slug": "rainybot-semwam-framework-ablation-v07-rgb-dino-geometry",
+  "author": "RainyBot",
+  "url": "https://huggingface.co/RainyBot/SemWAM-Framework-Ablation-v07-RGB-DINO-Geometry",
+  "created_at": "2026-10-16T07:40:18.000Z",
+  "updated_at": "2026-10-18T17:56:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "robotwin",
+    "semwam",
+    "framework-ablation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 60397964573,
+  "storage_human": "60.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RainyBot/SemWAM-Framework-Ablation-v07-RGB-DINO-Geometry · Hugging Face",
+      "url": "https://huggingface.co/RainyBot/SemWAM-Framework-Ablation-v07-RGB-DINO-Geometry",
+      "snippet": "v07 RGB DINO Geometry Collection: framework ablation Repository: RainyBot/SemWAM-Framework-Ablation-v07-RGB-DINO-Geometry Completed tasks are stored under tasks/<task>/; pending tasks are not uploaded."
+    },
+    {
+      "title": "DINOv3 - ai.meta.com",
+      "url": "https://ai.meta.com/research/dinov3/",
+      "snippet": "DINOv3 scales self-supervised learning (SSL) for images to produce our strongest universal vision backbones, enabling breakthrough performance across diverse domains."
+    },
+    {
+      "title": "9. Learning to See Without Labels: A Technical Tour of Meta&#x27;s DINO ...",
+      "url": "https://medium.com/@aminfadaeinejad.edu/learning-to-see-without-labels-a-technical-tour-of-metas-dino-dinov2-and-dinov3-d2d4b2a89504",
+      "snippet": "9. Learning to See Without Labels: A Technical Tour of Meta&#x27;s DINO, DINOv2, and DINOv3 For most of the last decade, the recipe for a strong vision backbone was simple but hard: gather a few ..."
+    },
+    {
+      "title": "DINOv3 | Research - AI at Meta",
+      "url": "https://ai.meta.com/research/publications/dinov3/",
+      "snippet": "Finally, we apply post-hoc strategies that further enhance our models&#x27; flexibility with respect to resolution, model size, and alignment with text. As a result, we present a versatile vision foundation model that outperforms the specialized state of the art across a broad range of settings, without fine-tuning."
+    },
+    {
+      "title": "AI Model Tracker Index: Updates, Sources and Evidence",
+      "url": "https://savrn.com/model-tracker",
+      "snippet": "Follow observed AI model changes and official announcements with source links, evidence labels, check times and transparent monitoring coverage from SAVRN."
+    }
+  ]
+}

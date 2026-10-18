@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Allinsama/welcomyou__campplus-3dspeaker-200k-onnx",
+  "slug": "allinsama-welcomyou__campplus-3dspeaker-200k-onnx",
+  "author": "Allinsama",
+  "url": "https://huggingface.co/Allinsama/welcomyou__campplus-3dspeaker-200k-onnx",
+  "created_at": "2026-10-18T02:35:46.000Z",
+  "updated_at": "2026-10-18T02:35:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnxruntime",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "speaker-recognition",
+    "speaker-embedding",
+    "speaker-verification",
+    "speaker-diarization",
+    "campplus",
+    "3d-speaker",
+    "zh",
+    "en",
+    "arxiv:2303.00332",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28283928,
+  "storage_human": "28 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "welcomyou/campplus-3dspeaker-200k-onnx · Hugging Face",
+      "url": "https://huggingface.co/welcomyou/campplus-3dspeaker-200k-onnx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "welcomyou/campplus-3dspeaker-200k-onnx at main - Hugging Face",
+      "url": "https://huggingface.co/welcomyou/campplus-3dspeaker-200k-onnx/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "Models - ONNX Runtime",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    },
+    {
+      "title": "Open Neural Network Exchange - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Open_Neural_Network_Exchange",
+      "snippet": "The Open Neural Network Exchange (ONNX) [ˈɒnɪks] [2] is an open-source artificial intelligence ecosystem [3] of technology companies and research organizations that establish open standards for representing machine learning algorithms and software tools to enable a standard format for representing machine learning models. ONNX is available on GitHub."
+    }
+  ]
+}

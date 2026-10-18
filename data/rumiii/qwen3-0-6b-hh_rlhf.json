@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Rumiii/Qwen3-0.6B-HH_Rlhf",
+  "slug": "rumiii-qwen3-0-6b-hh_rlhf",
+  "author": "Rumiii",
+  "url": "https://huggingface.co/Rumiii/Qwen3-0.6B-HH_Rlhf",
+  "created_at": "2026-10-18T17:46:46.000Z",
+  "updated_at": "2026-10-18T17:46:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "rlhf",
+    "rloo",
+    "reward-model",
+    "lora",
+    "experimental",
+    "conversational",
+    "dataset:Anthropic/hh-rlhf",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:adapter:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 1203557434,
+  "storage_human": "1.2 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tour de Londres - Quiz",
+      "url": "https://www.thatquiz.org/fr/preview?c=yiotnavp",
+      "snippet": "6. Quels types d'animaux sont connus pour résider dans les locaux de la Tour de Londres ?Read more"
+    },
+    {
+      "title": "Quiz La Tour de Londres - Monuments - Quizz.biz",
+      "url": "https://www.quizz.biz/quizz-340263.html",
+      "snippet": "Quiz La Tour de Londres : Connaissez-vous bien ce monument ? A vous de jouer ! ! ! - Q1: Quel est son nom anglais ? Tower of …"
+    },
+    {
+      "title": "La Tour de Londres (Angleterre) - Quiz",
+      "url": "https://www.thatquiz.org/fr/preview?c=vd5jrq5r",
+      "snippet": "La Tour de Londres (Angleterre) - Quiz 1. Quel monarque a été le premier à fonder la Tour de Londres ?"
+    },
+    {
+      "title": "Quiz Londres - Quizz.biz",
+      "url": "https://www.quizz.biz/quizz-1860479.html",
+      "snippet": "Quiz Londres : Un grand quiz sur la plus belle ville du monde, Londres, au Royaume-Uni. - Q1: Située au bord de la Tamise, la tour …"
+    },
+    {
+      "title": "A la découverte de Londres - Quiz Anglais | Lumni",
+      "url": "https://www.lumni.fr/quiz/a-la-decouverte-de-londres",
+      "snippet": "Riche d'un patrimoine historique exceptionnel, Londres, qui a été fondée par les Romains il y a presque 2 000 ans, compte de …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "rajeshkg/thesis-matching",
+  "slug": "rajeshkg-thesis-matching",
+  "author": "rajeshkg",
+  "url": "https://huggingface.co/rajeshkg/thesis-matching",
+  "created_at": "2026-10-18T17:16:45.000Z",
+  "updated_at": "2026-10-18T17:16:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "poolformer",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Furry Porn Subreddit",
+      "url": "https://www.reddit.com/r/FurryPornSubreddit/",
+      "snippet": "Hello furry mods, and fellow yiff enjoyers! Time to say hello to our new modbot, BusyBeeBot, a bot that removes posts from image …"
+    },
+    {
+      "title": "1.6 GB of furry porn, take two! [M] [F] [H] [MM] [MF] [FF]",
+      "url": "https://www.reddit.com/r/yiff/comments/1qvcz8/16_gb_of_furry_porn_take_two_m_f_h_mm_mf_ff/",
+      "snippet": "58 votes, 18 comments. This time as a zip file! Don't want any karma for it, so text post this time around. Plus that way I can include …"
+    },
+    {
+      "title": "/r/furry: Reddit's furry subreddit!",
+      "url": "https://www.reddit.com/r/furry/",
+      "snippet": "r/furry: For All Stuff Fluff! HELP MY CAT!! COMMISSIONS NOW OPEN TILL THE GOAL IS MET DM ME IF INTERESTED"
+    },
+    {
+      "title": "/r/yiff - Reddit",
+      "url": "https://www.reddit.com/r/yiff/top/?t=all",
+      "snippet": "r/yiff: Porn for furries. Furry porn. Yiff! Depiction of characters from the My Little Pony universe is not allowed. Based on some …"
+    },
+    {
+      "title": "Gay furry porn : r/peepeeshart - Reddit",
+      "url": "https://www.reddit.com/r/peepeeshart/comments/15ywt92/gay_furry_porn/",
+      "snippet": "Posted by u/Sad_Kitchen9812 - 8,447 votes and 959 comments"
+    }
+  ]
+}

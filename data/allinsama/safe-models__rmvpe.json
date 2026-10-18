@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Allinsama/safe-models__RMVPE",
+  "slug": "allinsama-safe-models__rmvpe",
+  "author": "Allinsama",
+  "url": "https://huggingface.co/Allinsama/safe-models__RMVPE",
+  "created_at": "2026-10-18T02:21:17.000Z",
+  "updated_at": "2026-10-18T02:24:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": 90472799,
+  "parameters_human": "90.5M",
+  "storage_bytes": 361976300,
+  "storage_human": "362 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "model.safetensors · safe-models/RMVPE at main - Hugging Face",
+      "url": "https://huggingface.co/safe-models/RMVPE/blob/main/model.safetensors",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Sam Altman on X: \"we had a significant security incident during ...",
+      "url": "https://x.com/sama/status/2079661132302995790",
+      "snippet": "we had a significant security incident during evaluation of our models. we are sharing what we have learned so far. thanks to @ huggingface for the partnership on this."
+    },
+    {
+      "title": "rmvpe.py · AI-C/rvc-models at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/AI-C/rvc-models/blob/main/rmvpe.py",
+      "snippet": "2 main rvc-models / rmvpe.py AI-C Upload rmvpe.py with huggingface_hub 584fdc0 over 1 year ago raw"
+    },
+    {
+      "title": "Best Local AI Models by Use Case (2026 Guide) | RunLocalModel",
+      "url": "https://runlocalmodel.com/static-guide.html",
+      "snippet": "A curated 2026 guide to the best local AI models for chat, coding, reasoning, vision, lightweight use, and embeddings. Includes hardware hints, download links, and original commentary."
+    },
+    {
+      "title": "RVC TTS Voice Models to Download - 17,822 AI Voice Models",
+      "url": "https://www.101soundboards.com/boards/tts/models",
+      "snippet": "Download 17,822 RVCv2 voice model files for use with AI voice conversion and text-to-speech software. Free to download."
+    }
+  ]
+}

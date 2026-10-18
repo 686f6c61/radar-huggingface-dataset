@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Jordine/rlport-hkl_jord9v_x5b_pl3_20261018_022712",
+  "slug": "jordine-rlport-hkl_jord9v_x5b_pl3_20261018_022712",
+  "author": "Jordine",
+  "url": "https://huggingface.co/Jordine/rlport-hkl_jord9v_x5b_pl3_20261018_022712",
+  "created_at": "2026-10-18T02:28:10.000Z",
+  "updated_at": "2026-10-18T12:54:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "reward-laundering",
+    "model-organism",
+    "research-artifact",
+    "grpo",
+    "qwen3.5",
+    "ext-traits",
+    "text-generation",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15914675005,
+  "storage_human": "15.9 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anime - Icotaku",
+      "url": "https://anime.icotaku.com/calendrier_diffusion.html",
+      "snippet": "Consultez le planning de diffusion des animes au Japon."
+    },
+    {
+      "title": "Anime - Icotaku",
+      "url": "https://anime.icotaku.com/",
+      "snippet": "Retrouvez tous vos animes préférés sur Icotaku dans des fiches complètes et détaillées."
+    },
+    {
+      "title": "Anime - Icotaku",
+      "url": "https://anime.icotaku.com/planning_saisonnier.html",
+      "snippet": "Consultez le planning saisonnier des animes japonais."
+    },
+    {
+      "title": "Solo Leveling Saison 2 -Arise from the Shadow- - Icotaku",
+      "url": "https://anime.icotaku.com/anime/7787/Ore-Dake-Level-Up-na-Ken-Season-2--Arise-from-the-Shadow-.html",
+      "snippet": "Solo Leveling Saison 2 -Arise from the Shadow- ou Ore Dake Level-Up na Ken Season 2 -Arise from the Shadow- (俺だけレベル …"
+    },
+    {
+      "title": "Planning - Anime - Icotaku",
+      "url": "https://anime.icotaku.com/prochainement.html",
+      "snippet": "Consultez la liste des animes japonais qui arriveront prochainements."
+    }
+  ]
+}

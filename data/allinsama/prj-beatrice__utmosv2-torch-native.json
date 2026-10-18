@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Allinsama/prj-beatrice__utmosv2-torch-native",
+  "slug": "allinsama-prj-beatrice__utmosv2-torch-native",
+  "author": "Allinsama",
+  "url": "https://huggingface.co/Allinsama/prj-beatrice__utmosv2-torch-native",
+  "created_at": "2026-10-18T02:00:10.000Z",
+  "updated_at": "2026-10-18T02:00:55.000Z",
+  "license": "mit-and-apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "utmosv2",
+    "audio",
+    "speech-quality",
+    "utmos",
+    "audio-classification",
+    "custom_code",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 208494875,
+  "parameters_human": "208.5M",
+  "storage_bytes": 834380844,
+  "storage_human": "834 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "prj-beatrice/utmosv2-torch-native · Hugging Face",
+      "url": "https://huggingface.co/prj-beatrice/utmosv2-torch-native",
+      "snippet": "prj-beatrice / utmosv2-torch-native like 0 Audio Classification Transformers Safetensors utmosv2 audio speech-quality utmos custom_code License:mit-and-apache-2. Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "prj-beatrice/utmosv2-torch-native at main - Hugging Face",
+      "url": "https://huggingface.co/prj-beatrice/utmosv2-torch-native/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "prj-beatrice AI models - Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/company/prj-beatrice",
+      "snippet": "Browse AI models attributed to prj-beatrice, sourced from verified model catalogs."
+    },
+    {
+      "title": "GitHub - sarulab-speech/UTMOS22: UT-Sarulab MOS prediction system using ...",
+      "url": "https://github.com/sarulab-speech/UTMOS22",
+      "snippet": "UT-Sarulab MOS prediction system using SSL models. Contribute to sarulab-speech/UTMOS22 development by creating an account on GitHub."
+    },
+    {
+      "title": "Best Open Source AI Tools and Models (Free) in 2026",
+      "url": "https://www.opensourcealternatives.to/blog/open-source-ai-tools",
+      "snippet": "Free open source AI tools and models you can run locally on your own hardware. Compare the best picks for chat, coding, and image generation."
+    }
+  ]
+}

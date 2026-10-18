@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "ItsVej/pea-1",
+  "slug": "itsvej-pea-1",
+  "author": "ItsVej",
+  "url": "https://huggingface.co/ItsVej/pea-1",
+  "created_at": "2026-10-18T15:50:51.000Z",
+  "updated_at": "2026-10-18T16:31:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5_text",
+    "text-classification",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1881827136,
+  "parameters_human": "1.88B",
+  "storage_bytes": 7614719421,
+  "storage_human": "7.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

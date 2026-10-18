@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Allinsama/soniqo__DeepFilterNet3-ONNX",
+  "slug": "allinsama-soniqo__deepfilternet3-onnx",
+  "author": "Allinsama",
+  "url": "https://huggingface.co/Allinsama/soniqo__DeepFilterNet3-ONNX",
+  "created_at": "2026-10-18T02:21:22.000Z",
+  "updated_at": "2026-10-18T02:21:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "deepfilternet3",
+    "speech-enhancement",
+    "noise-cancellation",
+    "denoising",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8735835,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Weapons (2025 film) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Weapons_(2025_film)",
+      "snippet": "Weapons is a 2025 American supernatural mystery horror film directed, written, produced, and co-scored by Zach Cregger. It stars …"
+    },
+    {
+      "title": "Weapons (2025) - IMDb",
+      "url": "https://www.imdb.com/title/tt26581740/",
+      "snippet": "Aug 8, 2025 · Weapons: Directed by Zach Cregger. With Julia Garner, Josh Brolin, Alden Ehrenreich, Scarlett Sher. When all but …"
+    },
+    {
+      "title": "Weapons | Rotten Tomatoes",
+      "url": "https://www.rottentomatoes.com/m/weapons",
+      "snippet": "Watch Weapons with a subscription on HBO Max, rent on Fandango, or buy on Fandango. Zach Cregger spins an expertly crafted …"
+    },
+    {
+      "title": "Weapons - Prime Video",
+      "url": "https://www.primevideo.com/detail/0NUYZGCVPFY6LG1Z3TUTYQ1AZK/",
+      "snippet": "From New Line Cinema and Zach Cregger, the wholly original mind behind Barbarian, comes a new horror/thriller: Weapons. When …"
+    },
+    {
+      "title": "Weapons (2025): Stream on Prime Video, Trailer & Cast",
+      "url": "https://www.moviefone.com/movie/weapons/xtEXVsof6Y9PmpmI1phg34/main/",
+      "snippet": "Aug 8, 2025 · When all but one child from the same class mysteriously vanish on the same night at exactly the same time, a …"
+    }
+  ]
+}

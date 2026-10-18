@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "zijian2022/smolvla_d4",
+  "slug": "zijian2022-smolvla_d4",
+  "author": "zijian2022",
+  "url": "https://huggingface.co/zijian2022/smolvla_d4",
+  "created_at": "2026-10-18T01:59:57.000Z",
+  "updated_at": "2026-10-18T02:00:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:zijian2022/fanuc_er4ia_stack_two_task_d4_fixed4_dr",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906722204,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zijian2022/y45_smolvla · Hugging Face",
+      "url": "https://huggingface.co/zijian2022/y45_smolvla",
+      "snippet": "Model Card for smolvla SmolVLA is a compact, efficient vision-language-action model that achieves competitive performance at reduced computational costs and can be deployed on consumer-grade hardware. This policy has been trained and pushed to the Hub using LeRobot. See the full documentation at LeRobot Docs."
+    },
+    {
+      "title": "zijian2022/t1_smolvla · Hugging Face",
+      "url": "https://huggingface.co/zijian2022/t1_smolvla",
+      "snippet": "Model Card for smolvla SmolVLA is a compact, efficient vision-language-action model that achieves competitive performance at reduced computational costs and can be deployed on consumer-grade hardware. This policy has been trained and pushed to the Hub using LeRobot. See the full documentation at LeRobot Docs."
+    },
+    {
+      "title": "[2506.01844] SmolVLA: A Vision-Language-Action Model for Affordable and ...",
+      "url": "https://arxiv.org/abs/2506.01844",
+      "snippet": "Vision-language models (VLMs) pretrained on large-scale multimodal datasets encode rich visual and linguistic knowledge, making them a strong foundation for robotics. Rather than training robotic policies from scratch, recent approaches adapt VLMs into vision-language-action (VLA) models that enable natural language-driven perception and control. However, existing VLAs are typically massive ..."
+    },
+    {
+      "title": "SmolVLA - aegean.ai",
+      "url": "https://aegean.ai/book/vla-agents/smolvla",
+      "snippet": "SmolVLA is Hugging Face&#x27;s compact Vision-Language-Action model, built on top of the LeRobot library. It is designed to be small enough to fine-tune and deploy on a single consumer GPU, while remaining competitive with larger open VLAs on standard manipulation benchmarks."
+    },
+    {
+      "title": "SmolVLA: An Open-Source Vision-Language-Action Model for Modern Robotics",
+      "url": "https://smolvla.net/index_en",
+      "snippet": "SmolVLA A compact, efficient, and powerful vision-language-action model for modern robotics. 🚀 Meet SmolVLA SmolVLA is a groundbreaking Vision-Language-Action (VLA) model with only 450 million parameters, developed by Hugging Face. It&#x27;s carefully designed for cost-effective deployment on consumer-grade hardware, making advanced robotics technology accessible to more developers and ..."
+    }
+  ]
+}

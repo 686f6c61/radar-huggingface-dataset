@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "BricksDisplay/Chatterbox-Turbo-GGUF",
+  "slug": "bricksdisplay-chatterbox-turbo-gguf",
+  "author": "BricksDisplay",
+  "url": "https://huggingface.co/BricksDisplay/Chatterbox-Turbo-GGUF",
+  "created_at": "2026-10-18T16:25:53.000Z",
+  "updated_at": "2026-10-18T16:28:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "chatterbox",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "chatterbox",
+    "gguf",
+    "tts",
+    "chatterbox-turbo",
+    "text-to-speech",
+    "codec-lm",
+    "en",
+    "base_model:ResembleAI/chatterbox-turbo",
+    "base_model:quantized:ResembleAI/chatterbox-turbo",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 332798650,
+  "parameters_human": "332.8M",
+  "storage_bytes": 4281688480,
+  "storage_human": "4.3 GB",
+  "base_model": "ResembleAI/chatterbox-turbo",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BricksDisplay/Chatterbox-Multilingual-TTS-GGUF - Hugging Face",
+      "url": "https://huggingface.co/BricksDisplay/Chatterbox-Multilingual-TTS-GGUF",
+      "snippet": "03.08.2026 ... gguf ) — Chatterbox S3G (flow-matching decoder + HiFi-GAN vocoder) bundled with the T3 LM-adaptor side (audio embed table, speech head, text ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=chatterbox",
+      "snippet": "Models · ResembleAI/chatterbox · SebastianBodza/Kartoffelbox-v0.1 · grandhigh/Chatterbox-TTS-Indonesian · onnx-community/chatterbox-multilingual-ONNX · ResembleAI/ ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?p=1&sort=trending&search=onnx",
+      "snippet": "bahadirakdemir/Z-Image-Turbo-tensorrt-onnx-fp8. Text-to-Image • Updated ... BricksDisplay/chatterbox-multilingual-ONNX-q4. Text-to-Speech • Updated May ..."
+    }
+  ]
+}

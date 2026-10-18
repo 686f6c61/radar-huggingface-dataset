@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ryanWNG/vet-dermatology-feline",
+  "slug": "ryanwng-vet-dermatology-feline",
+  "author": "ryanWNG",
+  "url": "https://huggingface.co/ryanWNG/vet-dermatology-feline",
+  "created_at": "2026-10-18T16:19:06.000Z",
+  "updated_at": "2026-10-18T16:19:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "veterinary",
+    "dermatology",
+    "pytorch",
+    "efficientnet",
+    "image-classification",
+    "gemma-4-good-hackathon",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 243499997,
+  "storage_human": "243 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "استمتِع بلعب ألعاب مجانية أون لاين على منصّة Roblox - اشترِك الآن للعب!",
+      "url": "https://www.roblox.com/ar",
+      "snippet": "©2026 شركة Roblox. Roblox، شعار Roblox و تخيل الطاقة هما من بين علاماتنا التجارية المسجلة وغير المسجلة في الولايات المتحدة وبلدان أخرى."
+    },
+    {
+      "title": "Roblox - Roblox",
+      "url": "https://www.roblox.com/users/1/profile",
+      "snippet": "Roblox is one of the millions creating and exploring the endless possibilities of Roblox. Join Roblox on Roblox and explore …"
+    },
+    {
+      "title": "Acerca de | Roblox",
+      "url": "https://about.roblox.com/es",
+      "snippet": "Roblox is a global platform where millions of people gather together every day to imagine, create, and share experiences with each …"
+    },
+    {
+      "title": "Sobre | Roblox",
+      "url": "https://about.roblox.com/pt-br",
+      "snippet": "Roblox is a global platform where millions of people gather together every day to imagine, create, and share experiences with each …"
+    },
+    {
+      "title": "Overview | Documentation - Roblox Creator Hub",
+      "url": "https://create.roblox.com/docs",
+      "snippet": "Documentation and resources for all creators."
+    }
+  ]
+}

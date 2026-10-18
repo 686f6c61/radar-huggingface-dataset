@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "lodestones/MOSS-Image-Base-8-steps-dmd",
+  "slug": "lodestones-moss-image-base-8-steps-dmd",
+  "author": "lodestones",
+  "url": "https://huggingface.co/lodestones/MOSS-Image-Base-8-steps-dmd",
+  "created_at": "2026-10-18T01:27:36.000Z",
+  "updated_at": "2026-10-18T07:24:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "base_model:OpenMOSS-Team/MOSS-Image-Base",
+    "base_model:finetune:OpenMOSS-Team/MOSS-Image-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 16,
+  "downloads_30d": 484,
+  "trending_score": 15,
+  "parameters": 5082308624,
+  "parameters_human": "5.08B",
+  "storage_bytes": 45579522224,
+  "storage_human": "45.6 GB",
+  "base_model": "OpenMOSS-Team/MOSS-Image-Base",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MOSS-Image in 8 Steps: lodestones' DMD LoRAs | ArtRealmAI",
+      "url": "https://artrealmai.com/article/moss-image-8-step-dmd-lora-lodestones",
+      "snippet": "vor 11 Stunden ... MOSS-Image-Base-8-steps-dmd: distilled from MOSS-Image-Base, the general-purpose generator. The checkpoint is update 9200 (EMA). It's brand new, ..."
+    },
+    {
+      "title": "lodestones (rock) - Hugging Face",
+      "url": "https://huggingface.co/lodestones",
+      "snippet": "models 71. Sort: Recently updated · lodestones/MOSS-Image-Base-8-steps-dmd · lodestones/MOSS-Image-SFT-8-steps-dmd · lodestones/Kroma · lodestones/Chroma1-Radiance."
+    },
+    {
+      "title": "Fine-tuned Models for OpenMOSS-Team/MOSS-Image-SFT",
+      "url": "https://huggingface.co/models?other=base_model:finetune:OpenMOSS-Team/MOSS-Image-SFT",
+      "snippet": "Models · lodestones/MOSS-Image-SFT-8-steps-dmd · akhaliq/MOSS-Image-SFT-4-steps · toxicdog/MOSS-Image-SFT-Turbo-INT8-ConvRot · toxicdog/MOSS-Image-SFT-INT4-ConvRot- ..."
+    },
+    {
+      "title": "MOSS-Image in ComfyUI: Nodes, Files, VRAM and Settings",
+      "url": "https://www.bestfreewebresources.com/moss-image-comfyui-guide",
+      "snippet": "vor 7 Stunden ... What it is: a 5.08B-parameter image transformer in the FLUX.2 latent space, with an 8.39B-parameter Qwen3.5 text encoder. Two checkpoints: Base ..."
+    },
+    {
+      "title": "Using MOSS Image in ComfyUI｜dskjal - note",
+      "url": "https://note.com/dskjal/n/n0d2136ba5d53?hl=en",
+      "snippet": "vor 1 Tag ... Example. Turbo: lodestones/MOSS-Image-SFT-8-steps-dmd. LoRa strength: 0.8. ModelSamplingAuraFlow shift: 5. steps: 16. cfg: 1. sampler: euler."
+    }
+  ]
+}

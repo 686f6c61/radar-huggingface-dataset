@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "openroboto-ai/champion-sim-7",
+  "slug": "openroboto-ai-champion-sim-7",
+  "author": "openroboto-ai",
+  "url": "https://huggingface.co/openroboto-ai/champion-sim-7",
+  "created_at": "2026-10-17T05:06:50.000Z",
+  "updated_at": "2026-10-18T17:56:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "openroboto",
+    "champion-snapshot",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 81057008305,
+  "storage_human": "81.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openroboto-ai/champion-sim-7 · Hugging Face",
+      "url": "https://huggingface.co/openroboto-ai/champion-sim-7",
+      "snippet": "A champion snapshot is an accepted canonical parent (see Model Originality & Derivative Submissions in the OpenRoboto docs). Always pin the commit, never main — main moves every time the champion changes:"
+    },
+    {
+      "title": "OpenRoboto — Robot intelligence built in the open",
+      "url": "https://www.openroboto.ai/",
+      "snippet": "An open competition on Bittensor for continuously improving robotics models. Fine-tune the base model, submit your weights on-chain, and the best model becomes the next base."
+    },
+    {
+      "title": "openroboto-ai/champion · Hugging Face",
+      "url": "https://huggingface.co/openroboto-ai/champion",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OpenRoboto - GitHub",
+      "url": "https://github.com/openroboto-ai",
+      "snippet": "GitHub is where OpenRoboto builds software. People This organization has no public members. You must be a member to see who&#x27;s a part of this organization."
+    },
+    {
+      "title": "GitHub - bittensor2x/openroboto",
+      "url": "https://github.com/bittensor2x/openroboto",
+      "snippet": "Automated submit pipeline for Bittensor subnet OpenRoboto (SN80). Queue a model from Telegram → download → permute (Gemma FFN shuffle) → upload to Hugging Face as {user}/pi05- {hotkey_ss58 [-12:]} → ask → publicize → burn the evaluation fee and announce on-chain."
+    }
+  ]
+}

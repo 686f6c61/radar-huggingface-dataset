@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Tylogi/DeepSeek-V4.1-Flash-1017-EW-MFQ",
+  "slug": "tylogi-deepseek-v4-1-flash-1017-ew-mfq",
+  "author": "Tylogi",
+  "url": "https://huggingface.co/Tylogi/DeepSeek-V4.1-Flash-1017-EW-MFQ",
+  "created_at": "2026-10-17T14:28:23.000Z",
+  "updated_at": "2026-10-18T18:05:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 732556023491,
+  "storage_human": "732.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tylogi/DeepSeek-V4.1-Flash-1017-EW-MFQ · Hugging Face",
+      "url": "https://huggingface.co/Tylogi/DeepSeek-V4.1-Flash-1017-EW-MFQ",
+      "snippet": "Tylogi / DeepSeek-V4.1-Flash-1017-EW-MFQ Like 0 Follow Tylogi 7 License:mit Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4.1-Flash · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+      "snippet": "Pipeline name: deepseek_v4_1_flash_extract_oneshot_structured_output_file (served via the DeepSeek API, thinking disabled)"
+    },
+    {
+      "title": "DeepSeek-V4.1 - openlm.ai",
+      "url": "https://openlm.ai/deepseek-v4.1/",
+      "snippet": "We present DeepSeek-V4 series, including two strong Mixture-of-Experts (MoE) language models — DeepSeek-V4.1-Flash with 552B parameters (8B / 16B activated) and DeepSeek-V4-Pro with 1.6T parameters (49B activated) — both supporting a context length of one million tokens."
+    },
+    {
+      "title": "DeepSeek V4.1 Flash - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/deepseek-v4.1-flash",
+      "snippet": "DeepSeek V4.1 Flash is a 552B multimodal Mixture-of-Experts model for coding, reasoning, visual understanding, and long-context agents, with 8B/16B active parameters and a 1M-token context window."
+    },
+    {
+      "title": "DeepSeek V4.1 Flash 1017: Benchmarks, Pricing and Setup",
+      "url": "https://www.testmuai.com/blog/deepseek-v4-1-flash/",
+      "snippet": "Every request to the deepseek-flash model ID now runs on a new checkpoint, DeepSeek-V4.1-Flash-1017, and nothing in your configuration had to change for that to happen. DeepSeek&#x27;s change log says the update scores higher across its benchmark set, lifting Terminal-Bench 4.0 from 31.2 to 42.3, while it finishes tasks faster and writes shorter outputs, with the API call and pricing unchanged ..."
+    }
+  ]
+}

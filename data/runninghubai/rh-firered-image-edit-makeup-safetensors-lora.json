@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-firered-image-edit-makeup.safetensors-lora",
+  "slug": "runninghubai-rh-firered-image-edit-makeup-safetensors-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-firered-image-edit-makeup.safetensors-lora",
+  "created_at": "2026-10-18T17:31:02.000Z",
+  "updated_at": "2026-10-18T17:32:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 591642937,
+  "storage_human": "592 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Loud fart Sound Effects: Download High Quality MP3 & WAV | Audio…",
+      "url": "https://audio.com/category/sound-effect/loud-fart",
+      "snippet": "Download free high-quality Loud fart Sound Effects in MP3 or WAV formats for your next project, featuring a curated collection of …"
+    },
+    {
+      "title": "Free Fart Sound Effects Download - Pixabay",
+      "url": "https://pixabay.com/sound-effects/search/fart/",
+      "snippet": "Download fart royalty-free sound effects to use in your next project."
+    },
+    {
+      "title": "loud fart - Search results | Sound Instants",
+      "url": "https://soundinstants.com/search/loud--fart",
+      "snippet": "Download high-quality MP3 for YouTube, TikTok, & Gaming instantly on SoundInstants."
+    },
+    {
+      "title": "Free Farts Sound Effects: Download High Quality MP3 & WAV | Audio…",
+      "url": "https://audio.com/category/sound-effect/farts",
+      "snippet": "Get free, high-quality farts sound effects in MP3 and WAV formats for your next project. Explore a handpicked selection of royalty …"
+    },
+    {
+      "title": "Free Long Fart Sound Effects Download - Pixabay",
+      "url": "https://pixabay.com/sound-effects/search/long%20fart/",
+      "snippet": "Download long fart royalty-free sound effects to use in your next project."
+    }
+  ]
+}

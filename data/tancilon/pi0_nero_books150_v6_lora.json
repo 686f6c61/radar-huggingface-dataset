@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "tancilon/pi0_nero_books150_v6_lora",
+  "slug": "tancilon-pi0_nero_books150_v6_lora",
+  "author": "tancilon",
+  "url": "https://huggingface.co/tancilon/pi0_nero_books150_v6_lora",
+  "created_at": "2026-10-18T02:28:29.000Z",
+  "updated_at": "2026-10-18T02:59:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "openpi",
+    "checkpoint",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9512621509,
+  "storage_human": "9.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tancilon/pi0_nero_books150_v6_lora · Hugging Face",
+      "url": "https://huggingface.co/tancilon/pi0_nero_books150_v6_lora",
+      "snippet": "pi0_nero_books150_v6_lora Full OpenPI checkpoint from books150_full, training step 30000. The archive contains the complete 30000/ directory, including params/, assets/, train_state/, and _CHECKPOINT_METADATA."
+    },
+    {
+      "title": "tancilon/pi0_nero_v6_lora · Hugging Face",
+      "url": "https://huggingface.co/tancilon/pi0_nero_v6_lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LoRA AI Models (18,102) | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 18,102 AI models tagged \"LoRA\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Low Rank Adaptation (LoRA) - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/deep-learning/low-rank-adaptation-lora/",
+      "snippet": "Low-Rank Adaptation (LoRA) is a parameter-efficient fine-tuning technique used to adapt large pre-trained models for specific tasks without updating all of the model&#x27;s parameters. Instead, LoRA adds small trainable matrices to selected layers while keeping the original model weights frozen."
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "Jinstudio/MOSS-Audio-8B-Instruct",
+  "slug": "jinstudio-moss-audio-8b-instruct",
+  "author": "Jinstudio",
+  "url": "https://huggingface.co/Jinstudio/MOSS-Audio-8B-Instruct",
+  "created_at": "2026-10-18T16:23:01.000Z",
+  "updated_at": "2026-10-18T16:23:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "moss_audio",
+    "audio",
+    "speech",
+    "music",
+    "understanding",
+    "multimodal",
+    "instruct",
+    "audio-text-to-text",
+    "custom_code",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9052463488,
+  "parameters_human": "9.05B",
+  "storage_bytes": 18111010792,
+  "storage_human": "18.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

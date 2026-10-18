@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "litert-community/Vela-1.0-Encoder-307M-Embedding-LiteRT",
+  "slug": "litert-community-vela-1-0-encoder-307m-embedding-litert",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/Vela-1.0-Encoder-307M-Embedding-LiteRT",
+  "created_at": "2026-10-18T02:39:22.000Z",
+  "updated_at": "2026-10-18T02:48:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "litert",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "litert",
+    "tflite",
+    "litert-lm",
+    "embeddings",
+    "modernbert",
+    "sentence-transformers",
+    "android",
+    "sentence-similarity",
+    "multilingual",
+    "base_model:vllm-sr/Vela-1.0-Encoder-307M-Embedding",
+    "base_model:finetune:vllm-sr/Vela-1.0-Encoder-307M-Embedding",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 27,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4397163269,
+  "storage_human": "4.4 GB",
+  "base_model": "vllm-sr/Vela-1.0-Encoder-307M-Embedding",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accueil | France Travail",
+      "url": "https://www.francetravail.fr/accueil/?index=0",
+      "snippet": "Consultez les informations sur vos allocations, vos droits et vos aides. Saisissez les opportunités pour votre retour à l’emploi. …"
+    },
+    {
+      "title": "Mon espace personnel |France Travail",
+      "url": "https://www.francetravail.fr/candidat/votre-espace-personnel.html",
+      "snippet": "Emploi, formation, insertion : accédez à tous vos services en un clic, peu importe l'organisme qui vous accompagne. Il est conçu …"
+    },
+    {
+      "title": "Accueil (en cours de maintenance) | France Travail",
+      "url": "https://candidat.francetravail.fr/espacepersonnel/moncompte",
+      "snippet": "www.francetravail.fr est en cours de maintenance. L’ensemble de nos services sera à nouveau accessible à partir du samedi 17 …"
+    },
+    {
+      "title": "Recherche d'offres d'emploi | France Travail",
+      "url": "https://candidat.francetravail.fr/rechercheoffre/emploi",
+      "snippet": "Consultez des centaines de milliers d'offres d'emploi partout en France, y compris en outre-mer. Recherchez par métier, …"
+    },
+    {
+      "title": "Site institutionnel France Travail. | francetravail.org",
+      "url": "https://www.francetravail.org/accueil/",
+      "snippet": "Retrouvez les informations essentielles pour décrypter le marché du travail sur les territoires de votre choix, vous guider dans vos …"
+    }
+  ]
+}

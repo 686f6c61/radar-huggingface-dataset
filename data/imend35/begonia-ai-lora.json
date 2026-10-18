@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "imend35/Begonia-AI-LoRA",
+  "slug": "imend35-begonia-ai-lora",
+  "author": "imend35",
+  "url": "https://huggingface.co/imend35/Begonia-AI-LoRA",
+  "created_at": "2026-10-18T17:30:47.000Z",
+  "updated_at": "2026-10-18T17:32:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85339297,
+  "storage_human": "85 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "c# - I'm getting \"The report definition for report 'xxxx.rdlc' has not ...",
+      "url": "https://stackoverflow.com/questions/8505700/im-getting-the-report-definition-for-report-xxxx-rdlc-has-not-been-specified",
+      "snippet": "Dec 14, 2011 · I'm getting \"The report definition for report 'xxxx.rdlc' has not been specified\" in my RDLC report Ask Question Asked …"
+    },
+    {
+      "title": ".net - Retrieving the COM class factory for component with CLSID …",
+      "url": "https://stackoverflow.com/questions/1036856/retrieving-the-com-class-factory-for-component-with-clsid-xxxx-failed-due-to-t",
+      "snippet": "Retrieving the COM class factory for component with CLSID {XXXX} failed due to the following error: 80040154 Ask Question Asked …"
+    },
+    {
+      "title": "toast 吐司提示放在屏幕哪个区域比较好？ - 知乎",
+      "url": "https://www.zhihu.com/question/55936275",
+      "snippet": "像「账单将发送在您xxxx@xxx.com的邮箱」「您好友将在三天内收到您的申请」，用户必须了解到详细内容，以便对后面的事情做出 …"
+    },
+    {
+      "title": "Excel大神，有一个问题，成列的xxxx.xx如何转成xxxx年xx月，求教了？",
+      "url": "https://www.zhihu.com/question/364162355",
+      "snippet": "Jan 1, 2020 · 最好的方法是选中列，数据-分列-下一步-下一步-在列数据格式下选择日期，点击右下角完成，Ctrl+1设置 单元格 格式， …"
+    },
+    {
+      "title": "<video src=\"blob:https://xxxx\"></video>の動画はどこにありますか？",
+      "url": "https://ja.stackoverflow.com/questions/57046/video-src-blobhttps-xxxx-video%e3%81%ae%e5%8b%95%e7%94%bb%e3%81%af%e3%81%a9%e3%81%93%e3%81%ab%e3%81%82%e3%82%8a%e3%81%be%e3%81%99%e3%81%8b",
+      "snippet": "Jul 31, 2019 · URL.createObjectURL () で生成された blob: スキーマのURLです。それを生成したページ内部でのみ有効なURLであ …"
+    }
+  ]
+}

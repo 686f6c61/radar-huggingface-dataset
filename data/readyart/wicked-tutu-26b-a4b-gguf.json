@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "ReadyArt/Wicked-Tutu-26B-A4B-GGUF",
+  "slug": "readyart-wicked-tutu-26b-a4b-gguf",
+  "author": "ReadyArt",
+  "url": "https://huggingface.co/ReadyArt/Wicked-Tutu-26B-A4B-GGUF",
+  "created_at": "2026-10-18T17:18:02.000Z",
+  "updated_at": "2026-10-18T17:52:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "nsfw",
+    "explicit",
+    "roleplay",
+    "unaligned",
+    "ERP",
+    "Erotic",
+    "Horror",
+    "Violence",
+    "text-generation",
+    "en",
+    "base_model:ReadyArt/Wicked-Tutu-26B-A4B",
+    "base_model:quantized:ReadyArt/Wicked-Tutu-26B-A4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational",
+    "not-for-all-audiences"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 91456633856,
+  "storage_human": "91.5 GB",
+  "base_model": "ReadyArt/Wicked-Tutu-26B-A4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/",
+      "snippet": "On a device or on the web, viewers can watch and discover millions of personalized short videos. Download the app to get started."
+    },
+    {
+      "title": "Log in | TikTok",
+      "url": "https://www.tiktok.com/login",
+      "snippet": "Log in or sign up for an account on TikTok. Start watching to discover real people and real videos that will make your day."
+    },
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/fr/",
+      "snippet": "TikTok - les tendances commencent ici. Sur ton appareil ou sur le Web, les spectateurs peuvent regarder et découvrir des millions …"
+    },
+    {
+      "title": "Watch trending videos for you | TikTok",
+      "url": "https://www.tiktok.com/foryou?lang%3Den",
+      "snippet": "Join the millions of viewers discovering content and creators on TikTok - available on the web or on your mobile device."
+    },
+    {
+      "title": "Se connecter | TikTok",
+      "url": "https://livecenter.tiktok.com/?lang=fr",
+      "snippet": "Log in or sign up for an account on TikTok. Start watching to discover real people and real videos that will make your day."
+    }
+  ]
+}

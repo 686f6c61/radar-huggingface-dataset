@@ -1,0 +1,107 @@
+{
+  "schema": 1,
+  "id": "Jinstudio/MOSS-TTS-Local-Transformer",
+  "slug": "jinstudio-moss-tts-local-transformer",
+  "author": "Jinstudio",
+  "url": "https://huggingface.co/Jinstudio/MOSS-TTS-Local-Transformer",
+  "created_at": "2026-10-18T16:23:41.000Z",
+  "updated_at": "2026-10-18T16:23:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "zh",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "it",
+    "he",
+    "ko",
+    "ru",
+    "fa",
+    "ar",
+    "pl",
+    "pt",
+    "cs",
+    "da",
+    "sv",
+    "hu",
+    "el",
+    "tr"
+  ],
+  "tags": [
+    "safetensors",
+    "moss_tts_delay",
+    "text-to-speech",
+    "custom_code",
+    "zh",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "it",
+    "he",
+    "ko",
+    "ru",
+    "fa",
+    "ar",
+    "pl",
+    "pt",
+    "cs",
+    "da",
+    "sv",
+    "hu",
+    "el",
+    "tr",
+    "arxiv:2603.18090",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3060606464,
+  "parameters_human": "3.06B",
+  "storage_bytes": 6132704499,
+  "storage_human": "6.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Porn Videos & Sex Movies - Porno, XXX, Porn Tube | Pornhub",
+      "url": "https://www.pornhub.com/",
+      "snippet": "Enjoy the largest amateur porn community on the net as well as full-length scenes from the top XXX studios. We update our porn …"
+    },
+    {
+      "title": "Best Free Porn Videos",
+      "url": "https://onlybestporn.com/",
+      "snippet": "Scroll through the best porn videos out there! No matter your tastes, you'll love every single video in this site. Find new fetishes and …"
+    },
+    {
+      "title": "Free Porn Videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/",
+      "snippet": "XVideos.com is a free hosting service for porn videos. We convert your files to various formats. You can grab our 'embed code' to …"
+    },
+    {
+      "title": "Tube Pleasure | Free Tube Porn Videos",
+      "url": "https://tubepleasure.com/en/",
+      "snippet": "Porn videos: Mom, Stepmom, Wife, Vintage, Mature, Shemale, Teen (18+), Milf, Interracial, Cartoon, Granny, Creampie, Lesbian, …"
+    },
+    {
+      "title": "Free Porn Videos & XXX Movies: Sex Videos Tube | xHamster",
+      "url": "https://xhamster.com/",
+      "snippet": "Free porn videos and exclusive XXX movies are here at xHamster. Instantly stream 6M+ hardcore sex videos from pros and …"
+    }
+  ]
+}

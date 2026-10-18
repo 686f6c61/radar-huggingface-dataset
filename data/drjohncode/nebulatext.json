@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "DrJohnCode/NebulaText",
+  "slug": "drjohncode-nebulatext",
+  "author": "DrJohnCode",
+  "url": "https://huggingface.co/DrJohnCode/NebulaText",
+  "created_at": "2026-10-18T02:05:15.000Z",
+  "updated_at": "2026-10-18T02:27:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "word_markov_toy",
+    "synthetic",
+    "demo",
+    "text-generation",
+    "educational",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 24,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/question/65884679",
+      "snippet": "有定理指出若 f(x) 与 g(x) 周期之比为有理数，则 F(x)=f(x)+g(x) 具有周期性且其周期为两函数周期的公倍…"
+    },
+    {
+      "title": "G-sync是否开启更好？请懂得人讲讲gsync最大优势是什么？fps对延迟 …",
+      "url": "https://www.zhihu.com/question/29508870",
+      "snippet": "G-SYNC是显示器可变刷新率技术 (VRR)，原理是显示器主动调节刷新率去与动态画面的帧以整数倍的关系进行匹配，以此来消除撕 …"
+    },
+    {
+      "title": "戴尔g模式按了没反应 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/1314834619215964299.html",
+      "snippet": "Jun 14, 2024 · 戴尔g模式按了没反应如果你在使用戴尔电脑时想要启用G模式，但按Fn键旁边的Win键+R后执行一系列操作，可能会 …"
+    },
+    {
+      "title": "拼音g怎么发音？ - 百度知道",
+      "url": "https://zhidao.baidu.com/question/269292417000249485.html",
+      "snippet": "Oct 11, 2018 · G：软腭上升，舌根隆起抵住软腭，气流因通路被完全封闭而积蓄起来，然后舌根下降，脱离软腭，气流迸发而出，爆 …"
+    },
+    {
+      "title": "How do I sign in to Classroom? - Computer - Classroom Help",
+      "url": "https://support.google.com/edu/classroom/answer/6072460?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "Tip: Due to privacy laws, parents and guardians can't access Classroom or student assignments. They can get email summaries if …"
+    }
+  ]
+}

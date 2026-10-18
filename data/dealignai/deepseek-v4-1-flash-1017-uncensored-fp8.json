@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "id": "dealignai/DeepSeek-V4.1-Flash-1017-UNCENSORED-FP8",
+  "slug": "dealignai-deepseek-v4-1-flash-1017-uncensored-fp8",
+  "author": "dealignai",
+  "url": "https://huggingface.co/dealignai/DeepSeek-V4.1-Flash-1017-UNCENSORED-FP8",
+  "created_at": "2026-10-18T04:11:31.000Z",
+  "updated_at": "2026-10-18T12:45:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "es",
+    "fr",
+    "ru",
+    "it",
+    "th"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v41",
+    "text-generation",
+    "deepseek",
+    "fp8",
+    "uncensored",
+    "abliterated",
+    "vision-language",
+    "reasoning",
+    "tool-calling",
+    "1M-context",
+    "dsv41",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "es",
+    "fr",
+    "ru",
+    "it",
+    "th",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "base_model:finetune:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 59,
+  "downloads_30d": 0,
+  "trending_score": 57,
+  "parameters": 763205315794,
+  "parameters_human": "763.21B",
+  "storage_bytes": 510296921671,
+  "storage_human": "510.3 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dealignai/DeepSeek-V4.1-Flash-1017-UNCENSORED-FP8",
+      "url": "https://huggingface.co/dealignai/DeepSeek-V4.1-Flash-1017-UNCENSORED-FP8",
+      "snippet": "DeepSeek-V4.1-Flash-1017 — UNCENSORED (FP8). Uncensored release · Native FP8 (e4m3) + FP4 experts · 40-layer MoE · ..."
+    },
+    {
+      "title": "dealignai/DeepSeek-V4.1-Flash-1017-ABLITERATED-FP8",
+      "url": "https://huggingface.co/dealignai/DeepSeek-V4.1-Flash-1017-ABLITERATED-FP8",
+      "snippet": "This name exists only as a canonical alternate reference for users who search for \"abliterated\" rather than \"uncensored\" — same model, same ship date, same ..."
+    },
+    {
+      "title": "DeepSeek-V4.1-Flash (552B) auf einer einzelnen 4090 mit ca. 27 ...",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x8m0jj/xolotl_strata_based_deepseekv41flash_552b_on_a/?tl=de",
+      "snippet": "vor 19 Stunden ... Xolotl (Strata basiert) - DeepSeek-V4.1-Flash (552B) auf einer einzelnen 4090 mit ca. 27 Token/s, unzensierte 1017-Quantifizierung kommt in ein ..."
+    },
+    {
+      "title": "DeepSeek V4.1 Flash能否生成NSFW内容？全面分析 - UniFuncs",
+      "url": "https://unifuncs.com/s/YsvHCCJO",
+      "snippet": "vor 13 Stunden ... DeepSeek V4. · Official model blocks 100% of direct NSFW text prompts with stricter restrictions than Western models due to Chinese regulations, ..."
+    },
+    {
+      "title": "tonyd2wild/DeepSeek-V4.1-Flash-vLLM-DGX-Spark - GitHub",
+      "url": "https://github.com/tonyd2wild/DeepSeek-V4.1-Flash-vLLM-DGX-Spark",
+      "snippet": "This repo runs DeepSeek-V4.1-Flash on four DGX Sparks (GB10) with two engines. The default lane is DeepSeek-V4.1-Flash-1017 on TensorFold (TP4, ..."
+    }
+  ]
+}

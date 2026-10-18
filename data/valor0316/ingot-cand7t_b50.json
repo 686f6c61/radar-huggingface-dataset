@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "VALOR0316/ingot-cand7t_b50",
+  "slug": "valor0316-ingot-cand7t_b50",
+  "author": "VALOR0316",
+  "url": "https://huggingface.co/VALOR0316/ingot-cand7t_b50",
+  "created_at": "2026-10-18T02:26:26.000Z",
+  "updated_at": "2026-10-18T02:26:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 30866866928,
+  "storage_human": "30.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VALOR0316 (Louis Robbins) - Hugging Face",
+      "url": "https://huggingface.co/VALOR0316/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 11 days ago ... published a model 11 days ago"
+    },
+    {
+      "title": "VALOR0316 (Louis Robbins) - Hugging Face",
+      "url": "https://huggingface.co/VALOR0316",
+      "snippet": "Recent Activity published a modelabout 9 hours ago VALOR0316/sn-miid updated a modelabout 12 hours ago VALOR0316/sn-connito published a modelabout 16 hours ago VALOR0316/sn-connito View all activity"
+    },
+    {
+      "title": "LLM Updates (October 2026) - AI Model Releases & Provider Activity",
+      "url": "https://lmmarketcap.com/llm-updates",
+      "snippet": "Track AI model releases, recently added endpoints, and provider update cadence across GPT, Claude, Gemini, DeepSeek, Llama, and 350+ models."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Gold Ingot 3d Model: Gold Ingot With Beveled Edges And A Metallic Gold ...",
+      "url": "https://studio.tripo3d.ai/3d-model/gold-ingot-with-beveled-edges-and-a-metallic-gold-surface-faed0563-e7de-4bad-a269-4f6a3b5e4931",
+      "snippet": "Tripo AI offers the 3D model: gold ingot with beveled edges and a metallic gold surface in STL, 3MF, FBX, GLB, OBJ and USDZ. gold ingot 3d model is PBR-ready, ideal for 3D printing, game development (Unity/UE5), Web AR and Blender."
+    }
+  ]
+}

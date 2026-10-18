@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "tylerwright1993/generation-experiments",
+  "slug": "tylerwright1993-generation-experiments",
+  "author": "tylerwright1993",
+  "url": "https://huggingface.co/tylerwright1993/generation-experiments",
+  "created_at": "2026-10-18T02:30:44.000Z",
+  "updated_at": "2026-10-18T02:30:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Generative AI experiments · Alexei Korol",
+      "url": "https://alexkorol.github.io/generative-ai-experiments/",
+      "snippet": "R&D archive · intentionally secondary Generative AI experiments These are control and failure-analysis studies, not a standalone art gallery. Each group names the model family, workflow, and variable under investigation."
+    },
+    {
+      "title": "ModelForest — Interactive AI Model Family Tree",
+      "url": "https://mrunreal.github.io/ModelForest/",
+      "snippet": "Explore how every major AI model evolved from its ancestors. Interactive visualization of LLM genealogy."
+    },
+    {
+      "title": "PixAI Model Market | 1.8M+ AI Art Models and LoRAs",
+      "url": "https://pixai.art/market",
+      "snippet": "Open marketplace for AI art models. Browse 1.8M+ user-trained models and LoRAs to generate anime, realistic and fantasy art free on PixAI."
+    },
+    {
+      "title": "Tilly Norwood - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tilly_Norwood",
+      "snippet": "Tilly Norwood is a character created using generative artificial intelligence in 2025 by Xicoia, the AI division of Particle6 Group, a production company founded by Eline van der Velden. \"AI Commissioner\", the first project to feature the Norwood character, was criticized by reviewers for The Guardian, PC Gamer, and The A.V. Club. A press release that talent agencies expressed interest in ..."
+    },
+    {
+      "title": "AI Model Radar — real-time AI model release tracking",
+      "url": "https://aimodelradar.app/",
+      "snippet": "The moment a new AI model appears on the radar, know what it is and what changed. Tracking OpenAI, Anthropic, Google and open-source releases."
+    }
+  ]
+}

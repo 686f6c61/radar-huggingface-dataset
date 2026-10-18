@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "72fstudio/embeddinggemma-2-740m-litert-lm",
+  "slug": "72fstudio-embeddinggemma-2-740m-litert-lm",
+  "author": "72fstudio",
+  "url": "https://huggingface.co/72fstudio/embeddinggemma-2-740m-litert-lm",
+  "created_at": "2026-10-18T19:17:38.000Z",
+  "updated_at": "2026-10-18T19:17:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "litert-lm",
+  "languages": [],
+  "tags": [
+    "litert-lm",
+    "base_model:google/embeddinggemma-2",
+    "base_model:finetune:google/embeddinggemma-2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7165517852,
+  "storage_human": "7.2 GB",
+  "base_model": "google/embeddinggemma-2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bijouterie Joaillerie Thomas H à Grenoble",
+      "url": "https://bijouterie-thomas-h.fr/",
+      "snippet": "Des créations uniques de bijoux fabriqués à la main. Prenez rendez-vous maintenant pour un bijou sur-mesure à Grenoble !"
+    },
+    {
+      "title": "Grenoble - atelier-amaya.com",
+      "url": "https://atelier-amaya.com/fr/boutiques/bijouterie-grenoble",
+      "snippet": "Dans notre bijouterie de Grenoble, vous retrouverez une sélection soignée de colliers, bracelets, bagues et boucles d’oreilles, …"
+    },
+    {
+      "title": "Bijouterie Denis Peyrin",
+      "url": "https://www.bijouterie-peyrin.fr/",
+      "snippet": "Découvrez l'univers de la Bijouterie/Joaillerie Denis Peyrin. La bijouterie évolue au cœur de Grenoble depuis 4 générations"
+    },
+    {
+      "title": "Atelier Lu-Du - Bijouterie Grenoble - artisan bijoutier joaillier",
+      "url": "https://www.lu-du.com/",
+      "snippet": "Dans mon atelier de bijouterie à Grenoble, je façonne le métal à partir de pierres que je veux sublimer afin de vous faire découvrir …"
+    },
+    {
+      "title": "Bijouterie / Horlogerie à Grenoble – Bijoux et Montres MATY",
+      "url": "https://www.maty.com/bijouterie-grenoble-maty.html",
+      "snippet": "Toute l’équipe de votre bijouterie MATY de Grenoble est ravie de vous accueillir pour vous accompagner dans vos achats de bijoux …"
+    }
+  ]
+}

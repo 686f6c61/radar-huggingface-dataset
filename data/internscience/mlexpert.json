@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "InternScience/MLExpert",
+  "slug": "internscience-mlexpert",
+  "author": "InternScience",
+  "url": "https://huggingface.co/InternScience/MLExpert",
+  "created_at": "2026-10-01T03:51:49.000Z",
+  "updated_at": "2026-10-16T06:02:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "moe",
+    "agentic",
+    "machine-learning-engineering",
+    "code",
+    "tool-use",
+    "reinforcement-learning",
+    "text-generation",
+    "conversational",
+    "arxiv:2610.22344",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 13,
+  "downloads_30d": 371,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 69339093338,
+  "storage_human": "69.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anti-SSA/Ro autoantibodies - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Anti-SSA/Ro_autoantibodies",
+      "snippet": "Anti-SSA/Ro autoantibodies are used in clinical settings as a diagnostic tool to identify patients with SLE and Sjögren's disease. In …"
+    },
+    {
+      "title": "MLExpert: Towards a Generalist Agentic Model for Autonomous ...",
+      "url": "https://arxiv.org/html/2610.22344",
+      "snippet": "vor 2 Tagen ... Further experiments show that MLExpert improves performance on NatureBench Lite, agent scaffold optimization, and algorithm optimization, ..."
+    },
+    {
+      "title": "ANTICORPS ANTI SSA (anti RO60) - Unilabs Biopath",
+      "url": "https://my-unilabs.fr/professionnels-de-sante/biopath/catalogue-analyses/anticorps-anti-ssa-anti-ro60",
+      "snippet": "ANTICORPS ANTI SSA (anti RO60) Suite à la mise en évidence d'anticorps anti-nucléaires positifs, la recherche d'anticorps anti …"
+    },
+    {
+      "title": "Étiologies associées à la positivité d’auto-anticorps anti-SSA et anti ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0248866317308056",
+      "snippet": "Dec 1, 2017 · Les auto-anticorps (auto-Ac) anti-SSA et anti-SSB sont présents dans plusieurs pathologies dysimmunitaires, parmi …"
+    },
+    {
+      "title": "À quoi sert la recherche des anticorps antinucléaires et des anticorps ...",
+      "url": "https://www.rhumatismes.net/index.php?id_q=1026",
+      "snippet": "Dans le syndrome de Gougerot Sjögren, ces anticorps anti-nucléaires sont le plus souvent des anticorps anti-Ro/SS-A et anti-La/SS …"
+    }
+  ]
+}

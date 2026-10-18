@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mouryesh1/termmap-weights",
+  "slug": "mouryesh1-termmap-weights",
+  "author": "mouryesh1",
+  "url": "https://huggingface.co/mouryesh1/termmap-weights",
+  "created_at": "2026-10-18T15:49:03.000Z",
+  "updated_at": "2026-10-18T15:51:30.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "safetensors",
+    "clinical-nlp",
+    "entity-linking",
+    "icd-10-cm",
+    "snomed-ct",
+    "cross-encoder",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 876593507,
+  "storage_human": "877 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Porn Pics & Sex Photos - Porno, XXX, Images, Categories",
+      "url": "https://www.pornpics.com/",
+      "snippet": "Hot sex pictures sorted by categories, hand picked and updated daily."
+    },
+    {
+      "title": "Free Porn Pics & Sex Photos at Babehub",
+      "url": "https://www.babehub.com/",
+      "snippet": "Explore millions of FREE high-quality porn pics at BabeHub! Daily updated collections in HD & 4K, sorted by popular categories for …"
+    },
+    {
+      "title": "Porn Pics, Sex Photos & Nude Pictures",
+      "url": "https://www.auntmia.com/",
+      "snippet": "Browse more than 10.000.000 free porn pics in daily updated sex galleries in Hi-Res and 4K Quality full of nude women and girls! ️"
+    },
+    {
+      "title": "Images Porno Gratuites & Photos de Sexe - Porno, XXX, Photos, …",
+      "url": "https://www.pornpics.com/fr/",
+      "snippet": "Des photos de sexe torride triées par catégories, choisies minutieusement."
+    },
+    {
+      "title": "Free Sex Pics and Videos | Mobile porn XXX at Worldsex.com",
+      "url": "https://www.worldsex.com/",
+      "snippet": "You can still enjoy our high quality free sex pics and movies in HD on your desktop, but in keeping up with the times all of our …"
+    }
+  ]
+}

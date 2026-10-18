@@ -1,0 +1,132 @@
+{
+  "schema": 1,
+  "id": "nvidia/parakeet-tdt-0.6b-v2",
+  "slug": "nvidia-parakeet-tdt-0-6b-v2",
+  "author": "nvidia",
+  "url": "https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2",
+  "created_at": "2025-04-15T19:31:12.000Z",
+  "updated_at": "2026-06-29T19:00:21.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "nemo",
+    "automatic-speech-recognition",
+    "speech",
+    "audio",
+    "Transducer",
+    "TDT",
+    "FastConformer",
+    "Conformer",
+    "pytorch",
+    "NeMo",
+    "hf-asr-leaderboard",
+    "en",
+    "dataset:nvidia/Granary",
+    "dataset:nvidia/nemo-asr-set-3.0",
+    "arxiv:2305.05084",
+    "arxiv:2304.06795",
+    "arxiv:2406.00899",
+    "arxiv:2410.01036",
+    "arxiv:2505.13404",
+    "license:cc-by-4.0",
+    "model-index",
+    "eval-results",
+    "deploy:azure",
+    "region:us"
+  ],
+  "likes": 1570,
+  "downloads_30d": 193654,
+  "trending_score": 13,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4926457088,
+  "storage_human": "4.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "AMI (Meetings test)",
+      "metric": "Test WER",
+      "value": 11.16
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Earnings-22",
+      "metric": "Test WER",
+      "value": 11.15
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "GigaSpeech",
+      "metric": "Test WER",
+      "value": 9.74
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "LibriSpeech (clean)",
+      "metric": "Test WER",
+      "value": 1.69
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "LibriSpeech (other)",
+      "metric": "Test WER",
+      "value": 3.19
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "SPGI Speech",
+      "metric": "Test WER",
+      "value": 2.17
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "tedlium-v3",
+      "metric": "Test WER",
+      "value": 3.38
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Vox Populi",
+      "metric": "Test WER",
+      "value": 5.95
+    }
+  ],
+  "sources": [
+    {
+      "title": "Téléchargez les pilotes NVIDIA officiels | NVIDIA",
+      "url": "https://www.nvidia.com/fr-fr/drivers/",
+      "snippet": "Téléchargez les pilotes NVIDIA officiels les plus récents pour optimiser votre expérience de jeu sur PC et faire tourner vos …"
+    },
+    {
+      "title": "World Leader in Artificial Intelligence Computing | NVIDIA",
+      "url": "https://www.nvidia.com/",
+      "snippet": "NVIDIA RTX™ powers the world’s fastest PCs and the ultimate platform for gamers and creators. Enjoy beautiful ray tracing, AI …"
+    },
+    {
+      "title": "NVIDIA",
+      "url": "https://www.nvidia.fr/default.htm",
+      "snippet": "Explorez les dernières innovations et produits NVIDIA, leader en technologies graphiques et d'intelligence artificielle."
+    },
+    {
+      "title": "English Parakeet 0.6b-v2 TDT collection | NVIDIA NGC",
+      "url": "https://catalog.ngc.nvidia.com/orgs/nvidia/collections/parakeet-tdt-0.6b-v2",
+      "snippet": "16.10.2025 ... The Parakeet TDT 0.6B v2 model represents a significant advancement in conversational AI, designed for high-quality English transcription with ..."
+    },
+    {
+      "title": "Nvidia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nvidia",
+      "snippet": "Nvidia Corporation[a] (/ ɛnˈvɪdiə / en-VID-ee-ə) is an American multinational technology company headquartered in Santa Clara, …"
+    }
+  ]
+}

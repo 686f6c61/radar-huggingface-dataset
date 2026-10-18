@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "chen-jan/SDF-CoT-controllability-adapters",
+  "slug": "chen-jan-sdf-cot-controllability-adapters",
+  "author": "chen-jan",
+  "url": "https://huggingface.co/chen-jan/SDF-CoT-controllability-adapters",
+  "created_at": "2026-10-18T02:07:30.000Z",
+  "updated_at": "2026-10-18T02:29:12.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "lora",
+    "synthetic-document-finetuning",
+    "chain-of-thought",
+    "model-organism",
+    "dataset:chen-jan/SDF-CoT-controllability-word-suppression-control",
+    "dataset:keramarek/SDF-CoT-controllability",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:adapter:Qwen/Qwen3.6-35B-A3B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "openai/gpt-oss-120b, Qwen/Qwen3.6-35B-A3B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chen (chanteur) — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Chen_(chanteur)",
+      "snippet": "En 2011, Chen est le dernier membre d' EXO sélectionné par la SM Entertainment à 18 ans, par le S.M. Casting System. Le 29 …Read more"
+    },
+    {
+      "title": "Chen (singer) - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Chen_(singer)",
+      "snippet": "Kim Jong-dae (Korean: 김종대; born September 21, 1992), known professionally as Chen (첸), is a South Korean singer and …"
+    },
+    {
+      "title": "Chen (surname) - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Chen_(surname)",
+      "snippet": "With all its various spellings and pronunciations, there are around 80–100 million people surnamed 陳/陈 worldwide. [7] The surname …"
+    },
+    {
+      "title": "Chen (EXO) | Kpop Wiki | Fandom",
+      "url": "https://kpop.fandom.com/wiki/Chen_(EXO)",
+      "snippet": "Chen (첸) is a South Korean singer, lyricist and actor. He is a member of the boy group EXO, its sub-units EXO-M and EXO-CBX, …"
+    },
+    {
+      "title": "CHEN - Restaurant chinois - Paris (75015) - Petit Futé",
+      "url": "https://www.petitfute.com/v17231-17289-paris-75015/c1165-restaurants/c1031-cuisines-du-monde/c1035-cuisine-d-asie/c52-restaurant-chinois/264669-chen.html",
+      "snippet": "Sur une carte pékinoise très souvent renouvelée, le demi-canard laqué de Pékin Mr Chen est toujours bien préparé en trois plats …"
+    }
+  ]
+}

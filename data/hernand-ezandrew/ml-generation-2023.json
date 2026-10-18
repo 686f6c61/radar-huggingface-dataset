@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "hernand-ezandrew/ml-generation-2023",
+  "slug": "hernand-ezandrew-ml-generation-2023",
+  "author": "hernand-ezandrew",
+  "url": "https://huggingface.co/hernand-ezandrew/ml-generation-2023",
+  "created_at": "2026-10-18T02:14:06.000Z",
+  "updated_at": "2026-10-18T02:14:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hernand-ezjoshua/generation · Hugging Face",
+      "url": "https://huggingface.co/hernand-ezjoshua/generation",
+      "snippet": "hernand-ezjoshua / generation Like 0 Safetensors PyTorch swin_t swin-t generation License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Swin T for Generation Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files License"
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Google Scholar Citations",
+      "url": "https://scholar.google.com/citations",
+      "snippet": "Google Scholar Citations lets you track citations to your publications over time."
+    },
+    {
+      "title": "New AI Models 2026 - Latest Releases | LM Market Cap",
+      "url": "https://lmmarketcap.com/new-ai-models",
+      "snippet": "Discover the newest AI models released in 2026. Track the latest LLMs, coding models, and image generators as they launch with source-backed release and evidence tracking."
+    },
+    {
+      "title": "MLflow - Open Source AI Platform for Agents, LLMs & Models",
+      "url": "https://mlflow.org/",
+      "snippet": "The largest open source AI engineering platform for agents, LLMs, and ML models. Debug, evaluate, monitor, and optimize your AI applications. Built for teams of all sizes."
+    }
+  ]
+}

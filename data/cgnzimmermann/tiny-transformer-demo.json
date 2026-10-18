@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "cgnzimmermann/tiny-transformer-demo",
+  "slug": "cgnzimmermann-tiny-transformer-demo",
+  "author": "cgnzimmermann",
+  "url": "https://huggingface.co/cgnzimmermann/tiny-transformer-demo",
+  "created_at": "2026-10-18T02:01:27.000Z",
+  "updated_at": "2026-10-18T02:01:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - skolouri/TinyTransformer: Mathematics of AI - Transformer ...",
+      "url": "https://github.com/skolouri/TinyTransformer",
+      "snippet": "Tiny Transformer This repository contains a minimal yet functional implementation of a Transformer architecture featuring both an encoder and a decoder. The design prioritizes clarity and simplicity, making it an ideal resource for educational purposes and experimentation in both vision and natural language processing (NLP) applications."
+    },
+    {
+      "title": "cgnzimmermann (Lena Zimmermann) - Hugging Face",
+      "url": "https://huggingface.co/cgnzimmermann/models",
+      "snippet": "User profile of Lena Zimmermann on Hugging Face"
+    },
+    {
+      "title": "Tiny Transformer",
+      "url": "https://github.com/avvorstenbosch/tinyTransformer",
+      "snippet": "Tiny Transformer This repository contains an implementation of a simple GPT-like transformer model that can be trained on a single consumer-grade GPU. The code mostly follows along with the videos Let&#x27;s build GPT: from scratch, in code, spelled out. and Building Makemore by Andrej Karpathy."
+    },
+    {
+      "title": "Nikhilgd22/tiny-transformer-demo · Hugging Face",
+      "url": "https://huggingface.co/Nikhilgd22/tiny-transformer-demo",
+      "snippet": "A small Tiny Transformer implementation for Retrieval, packaged with an explicit configuration and an initialization checkpoint. The large variant is a reproducible starting point, not a trained model release."
+    },
+    {
+      "title": "Two Students Built a Transformer From Scratch, and It Runs in ... - Medium",
+      "url": "https://medium.com/@dmambekar/two-students-built-a-transformer-from-scratch-and-it-runs-in-your-browser-d9942106f3f6",
+      "snippet": "The Model: A Real Transformer, Not a Toy The model trained on this framework is a 6-layer decoder-only transformer — the same fundamental architecture behind GPT-style language models."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ziliangpeng/Qwen3-4B-SmolTalk2-SFT",
+  "slug": "ziliangpeng-qwen3-4b-smoltalk2-sft",
+  "author": "ziliangpeng",
+  "url": "https://huggingface.co/ziliangpeng/Qwen3-4B-SmolTalk2-SFT",
+  "created_at": "2026-10-18T19:18:31.000Z",
+  "updated_at": "2026-10-18T19:19:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "text-generation-inference",
+    "sft",
+    "smoltalk",
+    "from-base",
+    "conversational",
+    "dataset:HuggingFaceTB/smoltalk2",
+    "base_model:Qwen/Qwen3-4B-Base",
+    "base_model:finetune:Qwen/Qwen3-4B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404646,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen3-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Discussions libres - jeu-cl-non-officiel.forumgaming.fr",
+      "url": "https://jeu-cl-non-officiel.forumgaming.fr/c2-discussions-libres",
+      "snippet": "Discussions libres - Ce forum non officiel (sans aucun lien avec Charente Libre) a pour but de complèter le blog de la Charente Libre …Read more"
+    },
+    {
+      "title": "Discussions diverses sur le concours",
+      "url": "https://jeu-cl-non-officiel.forumgaming.fr/f43-discussions-diverses-sur-le-concours",
+      "snippet": "Sep 25, 2025 · Ce forum non officiel à pour but de complèter le blog de la Charente Libre concernant le concours des CL d'OR 2018, …"
+    },
+    {
+      "title": "Brittany Business Directory | AngloINFO",
+      "url": "https://www.angloinfo.com/brittany/directory/",
+      "snippet": "FIND LOCAL BUSINESSES IN Brittany Our Brittany Business Directory is our compilation of businesses who are reaching out to …"
+    },
+    {
+      "title": "Credit Agricole - Charente Perigord - AngloINFO",
+      "url": "https://www.angloinfo.com/south-aquitaine/directory/financial-legal/banks/poitou-charentes-credit-agricole-charente-perigord-3628",
+      "snippet": "Credit Agricole - Charente Perigord Credit Agricole Charente-Perigord. English speaking section of this bank based at Soyeau …"
+    },
+    {
+      "title": "Forum CL d'OR 2018",
+      "url": "https://jeu-cl-non-officiel.forumgaming.fr/",
+      "snippet": "Ce forum non officiel à pour but de complèter le blog de la Charente Libre concernant le concours des CL d'OR 2018, en permettant …"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Torick63/opus-mt-en-pt-onnx-int8",
+  "slug": "torick63-opus-mt-en-pt-onnx-int8",
+  "author": "Torick63",
+  "url": "https://huggingface.co/Torick63/opus-mt-en-pt-onnx-int8",
+  "created_at": "2026-10-18T16:08:54.000Z",
+  "updated_at": "2026-10-18T16:09:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "en",
+    "pt"
+  ],
+  "tags": [
+    "onnx",
+    "marian",
+    "int8",
+    "translation",
+    "en",
+    "pt",
+    "base_model:Helsinki-NLP/opus-mt-tc-big-en-pt",
+    "base_model:quantized:Helsinki-NLP/opus-mt-tc-big-en-pt",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 349974714,
+  "storage_human": "350 MB",
+  "base_model": "Helsinki-NLP/opus-mt-tc-big-en-pt",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jiguey Assassin's Creed Black Flag Resynced : Où trouver le coffre …",
+      "url": "https://www.jeuxvideo.com/news/2097449/jiguey-assassin-s-creed-black-flag-resynced-ou-trouver-le-coffre-au-tresor-enfoui.htm",
+      "snippet": "Aug 8, 2026 · Voici la position de la carte au trésor de l'Île à vache, ainsi que l'endroit précis où il vous faudra creuser pour obtenir le …"
+    },
+    {
+      "title": "Voyeur House TV Forum - Voyeur House TV Community Forum",
+      "url": "https://forum.voyeur-house.tv/g",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "Topic Voyeur house TV, Bogan a encore baisé Nelly cette nuit",
+      "url": "https://www.jeuxvideo.com/forums/42-51-49902808-1-0-1-0-voyeur-house-tv-bogan-a-encore-baise-nelly-cette-nuit.htm",
+      "snippet": "Jan 31, 2017 · je suis passé voir les archives sur rlcamvid - Topic Voyeur house TV, Bogan a encore baisé Nelly cette nuit du 31-01 …"
+    },
+    {
+      "title": "Mira & Henry (Part 1) - #8601 by Erich181286 - forum.voyeur-house.tv",
+      "url": "https://forum.voyeur-house.tv/t/mira-henry-part-1/66/8601",
+      "snippet": "Feb 9, 2022 · :tv: Live Stream :video_camera: Archive Videos 2022-09-08: Sassys name added 2022-10-01: Sassys name removed"
+    },
+    {
+      "title": "La collega padrona - ForumFree",
+      "url": "https://ciaosilvia.forumfree.it/?t=36953434",
+      "snippet": "Ho una collega che e' sempre stata severissima con i suoi sottoposti..Con me, che non ho mai avuto occasione di parlarle, ha avuto …"
+    }
+  ]
+}

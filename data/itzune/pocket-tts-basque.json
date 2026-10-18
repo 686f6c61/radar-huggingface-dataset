@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "itzune/pocket-tts-basque",
+  "slug": "itzune-pocket-tts-basque",
+  "author": "itzune",
+  "url": "https://huggingface.co/itzune/pocket-tts-basque",
+  "created_at": "2026-10-18T19:18:14.000Z",
+  "updated_at": "2026-10-18T19:39:35.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "pocket-tts",
+  "languages": [
+    "eu"
+  ],
+  "tags": [
+    "pocket-tts",
+    "safetensors",
+    "text-to-speech",
+    "kyutai",
+    "basque",
+    "euskara",
+    "voice-cloning",
+    "on-device",
+    "eu",
+    "dataset:itzune/bssd",
+    "base_model:itzune/pocket-tts-basque-24l",
+    "base_model:finetune:itzune/pocket-tts-basque-24l",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109502146,
+  "parameters_human": "109.5M",
+  "storage_bytes": 455945333,
+  "storage_human": "456 MB",
+  "base_model": "itzune/pocket-tts-basque-24l",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

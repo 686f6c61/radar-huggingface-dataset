@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Jordansky/k3601c945bdd4",
+  "slug": "jordansky-k3601c945bdd4",
+  "author": "Jordansky",
+  "url": "https://huggingface.co/Jordansky/k3601c945bdd4",
+  "created_at": "2026-10-18T01:59:21.000Z",
+  "updated_at": "2026-10-18T01:59:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 361822080,
+  "parameters_human": "361.8M",
+  "storage_bytes": 723676832,
+  "storage_human": "724 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Télécharger et utiliser Google Traduction",
+      "url": "https://support.google.com/translate/answer/6350850?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Télécharger et utiliser Google Traduction Vous pouvez traduire du texte saisi au clavier, en écriture manuscrite, sur une photo ou …Read more"
+    },
+    {
+      "title": "Traduire des images - iPhone et iPad - Aide Google Translate",
+      "url": "https://support.google.com/translate/answer/6142483?hl=fr&co=GENIE.Platform%3DiOS",
+      "snippet": "Traduire du texte dans des images Dans l'application Traduction , vous pouvez traduire du texte à partir d'images enregistrées sur …"
+    },
+    {
+      "title": "(Figure 1)A swimmer wants to cross a river, from point A to ... - bartleby",
+      "url": "https://www.bartleby.com/questions-and-answers/figure-1a-swimmer-wants-to-cross-a-river-from-point-a-to-point-b-as-shown-in-the-figure.-the-distanc/23ade5fb-a1b2-43e4-babe-665ead2a5322",
+      "snippet": "Solution for (Figure 1)A swimmer wants to cross a river, from point A to point B, as shown in the figure. The distance di (from A to C) …"
+    },
+    {
+      "title": "Gary Nash Essay - 886 Words | Bartleby",
+      "url": "https://www.bartleby.com/essay/Gary-Nash-FKCPHEAZTJ",
+      "snippet": "In the essay written by Gary Nash, he argues that the reason for the American Revolution was not caused by the defense of …"
+    },
+    {
+      "title": "D'où viennent les bébés",
+      "url": "https://bebes.aufeminin.com/forum/d-ou-viennent-les-bebes-fd126982",
+      "snippet": "Jan 8, 2002 · Parents terriens, notez bien : vos bébés se conduisent parfaitement normalement pour des Voie-lactiens ! Les citoyens …"
+    }
+  ]
+}

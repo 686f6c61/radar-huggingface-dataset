@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "eric-z2/WL-context-qwen-14b-smoothed-fold_0",
+  "slug": "eric-z2-wl-context-qwen-14b-smoothed-fold_0",
+  "author": "eric-z2",
+  "url": "https://huggingface.co/eric-z2/WL-context-qwen-14b-smoothed-fold_0",
+  "created_at": "2026-10-18T17:56:58.000Z",
+  "updated_at": "2026-10-18T17:57:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 126079768,
+  "storage_human": "126 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ERIC - Education Resources Information Center",
+      "url": "https://eric.ed.gov/",
+      "snippet": "ERIC is an online library of education research and information, sponsored by the Institute of Education Sciences (IES) of the U.S. …"
+    },
+    {
+      "title": "Éric — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/%C3%89ric",
+      "snippet": "La forme de langue anglaise Eric n'est pas un import du suédois mais elle est directement issue du vieux norrois Eiríkr ou ÆiríkR de …"
+    },
+    {
+      "title": "ERIC - ProQuest",
+      "url": "https://about.proquest.com/en/products-services/eric",
+      "snippet": "ERIC is the world's most widely used index to educational-related literature. Established in 1966, ERIC is supported by the U.S. …"
+    },
+    {
+      "title": "ERIC - Journals List",
+      "url": "https://eric.ed.gov/?journals",
+      "snippet": "ERIC is an online library of education research and information, sponsored by the Institute of Education Sciences (IES) of the U.S. …"
+    },
+    {
+      "title": "Education Resources Information Center (ERIC) | IES",
+      "url": "https://ies.ed.gov/use-work/education-research-database-eric",
+      "snippet": "What is ERIC? ERIC is an internet-based digital library of education research and information sponsored by the Institute of Education …"
+    }
+  ]
+}

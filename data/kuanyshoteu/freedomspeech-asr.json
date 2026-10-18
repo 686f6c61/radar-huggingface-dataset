@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "kuanyshoteu/freedomspeech-asr",
+  "slug": "kuanyshoteu-freedomspeech-asr",
+  "author": "kuanyshoteu",
+  "url": "https://huggingface.co/kuanyshoteu/freedomspeech-asr",
+  "created_at": "2026-10-18T02:35:40.000Z",
+  "updated_at": "2026-10-18T14:37:54.000Z",
+  "license": "freedom-speech-api-terms",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "freedomspeech",
+  "languages": [
+    "kk",
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "freedomspeech",
+    "kazakh",
+    "speech-recognition",
+    "asr",
+    "text-to-speech",
+    "api",
+    "automatic-speech-recognition",
+    "kk",
+    "ru",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kuanyshoteu/freedomspeech-asr · Hugging Face",
+      "url": "https://huggingface.co/kuanyshoteu/freedomspeech-asr",
+      "snippet": "Freedom Speech ASR Speech recognition for Kazakh, Russian and English, served through the Freedom Speech API (https://freedomspeech.kz). This card describes the production recognition model; the weights are not distributed, the model is available through the API."
+    },
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "FreedomSpeech API Documentation",
+      "url": "https://freedomspeech.kz/docs/",
+      "snippet": "FreedomSpeech API Kazakh, Russian and English speech synthesis, recognition, real-time streaming, voice cloning, voice design and translation. Base URL: https://freedomspeech.kz. This page is plain HTML with no client-side rendering, so curl https://freedomspeech.kz/docs/ returns the full text; coding agents can read it directly. Overview"
+    },
+    {
+      "title": "Automatic Speech Recognition Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=automatic-speech-recognition",
+      "snippet": "Explore machine learning models. Baghdad99/saad-speech-recognition-hausa-audio-to-text"
+    },
+    {
+      "title": "Best Open Speech Recognition (ASR) Models in 2026: WER, Languages ...",
+      "url": "https://www.marktechpost.com/2026/07/23/best-open-speech-recognition-asr-models-in-2026-wer-languages-latency-and-license-compared/",
+      "snippet": "Compare 16 open ASR models on WER, languages, latency and license, including Cohere Transcribe, Granite Speech and Voxtral"
+    }
+  ]
+}

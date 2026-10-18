@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Jordansky/g21f00585d3f8",
+  "slug": "jordansky-g21f00585d3f8",
+  "author": "Jordansky",
+  "url": "https://huggingface.co/Jordansky/g21f00585d3f8",
+  "created_at": "2026-10-18T02:27:36.000Z",
+  "updated_at": "2026-10-18T02:27:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "phi",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 1418270720,
+  "parameters_human": "1.42B",
+  "storage_bytes": 2836579040,
+  "storage_human": "2.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TADAO - Allobus",
+      "url": "https://www.tadao.fr/fr/5mR-Allobus.html",
+      "snippet": "1 day ago · Allobus est le service de transport à la demande du réseau TADAO. Il vous permet de vous déplacer facilement au …Read more"
+    },
+    {
+      "title": "Connexion - Allobus",
+      "url": "https://allobus.simpliciti.fr/TAE76_INTERNET/Account/Login",
+      "snippet": "Connexion Accéder à votre espace Allobus Veuillez saisir vos identifiants pour vous connecter."
+    },
+    {
+      "title": "ALLOBUS : TAD - Orizo",
+      "url": "https://www.orizo.fr/allobus-transport-a-la-demande/",
+      "snippet": "📲 Téléchargez l’application Allobus et réservez votre trajet jusqu’à 15 minutes avant votre départ (selon disponibilité). OU téléphonez …"
+    },
+    {
+      "title": "Allobus",
+      "url": "https://allobus.duobus.fr/",
+      "snippet": "Allobus ... Allobus"
+    },
+    {
+      "title": "S'informer sur le service Allobus – My Astuce",
+      "url": "https://www.myastuce.fr/fr/transport-a-la-demande-allobus",
+      "snippet": "Le transport à la demande du secteur elbeuvien Allobus vous permet de vous déplacer librement dans votre secteur ou de rejoindre …"
+    }
+  ]
+}

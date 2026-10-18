@@ -1,0 +1,113 @@
+{
+  "schema": 1,
+  "id": "theforecastingcompany/t0-gamma",
+  "slug": "theforecastingcompany-t0-gamma",
+  "author": "theforecastingcompany",
+  "url": "https://huggingface.co/theforecastingcompany/t0-gamma",
+  "created_at": "2026-10-12T14:37:40.000Z",
+  "updated_at": "2026-10-15T08:15:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "time-series-forecasting",
+  "library": "tfc-t0",
+  "languages": [],
+  "tags": [
+    "tfc-t0",
+    "safetensors",
+    "time-series",
+    "forecasting",
+    "probabilistic-forecasting",
+    "foundation-models",
+    "pretrained-models",
+    "transformer",
+    "multivariate",
+    "known-future-covariates",
+    "open-weights",
+    "covariates",
+    "pytorch",
+    "mlx",
+    "apple-silicon",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "time-series-forecasting",
+    "arxiv:2609.24559",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 14,
+  "downloads_30d": 12737,
+  "trending_score": 14,
+  "parameters": 255614293,
+  "parameters_human": "255.6M",
+  "storage_bytes": 1022492908,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Time Series Forecasting",
+      "dataset": "fev-bench",
+      "metric": "Skill score",
+      "value": 49.42
+    },
+    {
+      "task": "Time Series Forecasting",
+      "dataset": "GIFT-Eval",
+      "metric": "CRPS",
+      "value": 0.452
+    },
+    {
+      "task": "Time Series Forecasting",
+      "dataset": "GIFT-Eval",
+      "metric": "MASE",
+      "value": 0.6608
+    },
+    {
+      "task": "Time Series Forecasting",
+      "dataset": "TIME",
+      "metric": "CRPS",
+      "value": 0.534
+    },
+    {
+      "task": "Time Series Forecasting",
+      "dataset": "TIME",
+      "metric": "MASE",
+      "value": 0.637
+    }
+  ],
+  "sources": [
+    {
+      "title": "t0-gamma: the top time-series foundation model on fev-bench, GIFT ...",
+      "url": "https://www.theforecastingcompany.com/blog/t0-gamma/",
+      "snippet": "vor 5 Tagen ... t0-gamma is our new forecasting foundation model. It has a similar architecture to t0-beta, which our technical report describes in detail."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=forecasting",
+      "snippet": "Together AI · Fireworks · Featherless AI · Zai · Replicate · Cohere ... theforecastingcompany/t0-gamma. Time Series Forecasting • 0.3B • Updated 3 ..."
+    },
+    {
+      "title": "PowerUp's Post - LinkedIn",
+      "url": "https://www.linkedin.com/posts/powerup-technology_advanced-battery-analytics-depends-not-only-activity-7513235464091398144-7Mxl",
+      "snippet": "06.10.2026 ... Advanced battery analytics depends not only on the sophistication of analytical models, but also on the quality and interpretability of the ..."
+    },
+    {
+      "title": "Time Series Forecasting Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=time-series-forecasting",
+      "snippet": "Models. 993. Base only. Inference Available Inference. Edit filters. Sort ... theforecastingcompany/t0-gamma. Time Series Forecasting • 0.3B • Updated 3 ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=apple-silicon",
+      "snippet": "Models · FermionResearch/Phonon-2 · moondream/parakeet-redux · FluidInference/d3-coreml · theforecastingcompany/t0-gamma · orcarouter/Qwen3.8-27B-Uncensored-MLX."
+    }
+  ]
+}

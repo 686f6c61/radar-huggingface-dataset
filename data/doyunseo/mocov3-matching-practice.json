@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Doyunseo/mocov3-matching-practice",
+  "slug": "doyunseo-mocov3-matching-practice",
+  "author": "Doyunseo",
+  "url": "https://huggingface.co/Doyunseo/mocov3-matching-practice",
+  "created_at": "2026-10-18T02:23:29.000Z",
+  "updated_at": "2026-10-18T02:23:35.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DoYunseo (Tori_Do) · GitHub",
+      "url": "https://github.com/DoYunseo",
+      "snippet": "DoYunseo has 15 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "altheavia/fun-matching · Hugging Face",
+      "url": "https://huggingface.co/altheavia/fun-matching",
+      "snippet": "Mocov3 for Matching Overview This is an experimental Mocov3 codebase for Matching. It keeps the tiny setup intentionally manageable so architecture changes can be inspected before a full training run."
+    },
+    {
+      "title": "andrewclarksen/hw2-matching · Hugging Face",
+      "url": "https://huggingface.co/andrewclarksen/hw2-matching",
+      "snippet": "Mocov3 for Matching Overview This repository is a compact, custom PyTorch implementation of Mocov3 for Matching. The small configuration is intended for code review, smoke tests, and small controlled experiments rather than as a production-ready pretrained release."
+    },
+    {
+      "title": "arXiv.org e-Print archive",
+      "url": "https://arxiv.org/pdf/2211.09861",
+      "snippet": "arXiv.org e-Print archive"
+    },
+    {
+      "title": "GitHub - facebookresearch/moco-v3: PyTorch implementation of MoCo v3 ...",
+      "url": "https://github.com/facebookresearch/moco-v3",
+      "snippet": "This is a PyTorch implementation of MoCo v3 for self-supervised ResNet and ViT. The original MoCo v3 was implemented in Tensorflow and run in TPUs. This repo re-implements in PyTorch and GPUs. Despite the library and numerical differences, this repo reproduces the results and observations in the paper."
+    }
+  ]
+}

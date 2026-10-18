@@ -15,8 +15,8 @@
     "safetensors",
     "qwen3_5_text",
     "text-generation-inference",
-    "base_model:Sigmandndnns/CorX3.8-27B",
-    "base_model:finetune:Sigmandndnns/CorX3.8-27B",
+    "base_model:CorxLabs/CorX3.8-27B",
+    "base_model:finetune:CorxLabs/CorX3.8-27B",
     "license:apache-2.0",
     "region:us"
   ],

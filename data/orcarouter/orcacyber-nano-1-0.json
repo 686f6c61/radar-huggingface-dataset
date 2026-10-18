@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "orcarouter/OrcaCyber-Nano-1.0",
+  "slug": "orcarouter-orcacyber-nano-1-0",
+  "author": "orcarouter",
+  "url": "https://huggingface.co/orcarouter/OrcaCyber-Nano-1.0",
+  "created_at": "2026-10-16T10:04:56.000Z",
+  "updated_at": "2026-10-18T17:10:14.000Z",
+  "license": "qwen",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "cybersecurity",
+    "security",
+    "reverse-engineering",
+    "vision-language",
+    "reasoning",
+    "function-calling",
+    "mtp",
+    "llama.cpp",
+    "local",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:orcarouter/OrcaCyber-Nano-1.0-AI-Defense",
+    "base_model:quantized:orcarouter/OrcaCyber-Nano-1.0-AI-Defense",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 29,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1924404480,
+  "parameters_human": "1.92B",
+  "storage_bytes": 31672474144,
+  "storage_human": "31.7 GB",
+  "base_model": "orcarouter/OrcaCyber-Nano-1.0-AI-Defense",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OrcaRouter — One AI gateway: adaptive LLM routing & governance",
+      "url": "https://www.orcarouter.ai/",
+      "snippet": "OrcaRouter is a production AI gateway: one OpenAI-compatible endpoint with adaptive routing, load balancing, automatic failover, …Read more"
+    },
+    {
+      "title": "OrcaRouter — Passerelle IA : routage LLM adaptatif",
+      "url": "https://www.orcarouter.ai/fr",
+      "snippet": "OrcaRouter est une passerelle IA de production : un point d'accès compatible OpenAI avec routage adaptatif, répartition de charge, …"
+    },
+    {
+      "title": "Bienvenue sur OrcaRouter - OrcaRouter",
+      "url": "https://docs.orcarouter.ai/fr/introduction",
+      "snippet": "Routage intelligent Chaînes de repli via extra_body.models, routeurs nommés et orcarouter/auto pour sélectionner le modèle vivant …"
+    },
+    {
+      "title": "Welcome to OrcaRouter - OrcaRouter",
+      "url": "https://docs.orcarouter.ai/introduction",
+      "snippet": "OrcaRouter exposes OpenAI, Anthropic, and Gemini surfaces directly, and translates between them when you call across protocols …"
+    },
+    {
+      "title": "OrcaRouter Lite - GitHub",
+      "url": "https://github.com/Continuum-AI-Corp/OrcaRouter-Lite",
+      "snippet": "May 6, 2026 · OrcaRouter Lite is the open-source single-workspace edition of OrcaRouter. Run it on your laptop, ship it in your …"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Jordansky/ye27b50daa1de",
+  "slug": "jordansky-ye27b50daa1de",
+  "author": "Jordansky",
+  "url": "https://huggingface.co/Jordansky/ye27b50daa1de",
+  "created_at": "2026-10-18T02:04:42.000Z",
+  "updated_at": "2026-10-18T02:06:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gpt_neox",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 405334016,
+  "parameters_human": "405.3M",
+  "storage_bytes": 810702192,
+  "storage_human": "811 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chaussures et accessoires haut de gamme femme | Jonak",
+      "url": "https://www.jonak.fr/",
+      "snippet": "Découvrez l'univers Jonak à travers nos chaussures et accessoires tendances haut de gamme pour femmes. Livraison offerte dès …Read more"
+    },
+    {
+      "title": "Bottines & Boots femme | Jonak",
+      "url": "https://www.jonak.fr/collection/chaussures-femmes/bottines-boots.html",
+      "snippet": "Bottines, Boots - Chaussures Femmes : retrouvez les chaussures femme Jonak. Des pièces uniques et urbaines. Livraison offerte …"
+    },
+    {
+      "title": "Sandales femme - Jonak",
+      "url": "https://www.jonak.fr/collection/chaussures-femmes/sandales.html",
+      "snippet": "Sandales - Chaussures Femmes : retrouvez les chaussures femme Jonak. Des pièces uniques et urbaines. Livraison offerte dès 150 …"
+    },
+    {
+      "title": "Boutique Jonak Lille – Chaussures femme Lille",
+      "url": "https://www.jonak.fr/nos-boutiques/jonak-lille_lille_59800/93.html",
+      "snippet": "Boutique Jonak LilleDécouvrez la boutique Jonak Lille, entre la Grand'Place et le Vieux-Lille : escarpins, bottines, sandales et …"
+    },
+    {
+      "title": "Boutique Jonak Toulouse Wilson – Chaussures femme Toulouse",
+      "url": "https://www.jonak.fr/nos-boutiques/jonak-toulouse-wilson_toulouse_31000/126.html",
+      "snippet": "Boutique Jonak Toulouse WilsonDécouvrez la boutique Jonak Toulouse Wilson, place Wilson : escarpins, bottines, sandales et …"
+    }
+  ]
+}

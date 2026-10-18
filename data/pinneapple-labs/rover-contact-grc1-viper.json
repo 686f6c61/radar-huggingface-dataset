@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "PINNeAPPle-Labs/rover-contact-grc1-viper",
+  "slug": "pinneapple-labs-rover-contact-grc1-viper",
+  "author": "PINNeAPPle-Labs",
+  "url": "https://huggingface.co/PINNeAPPle-Labs/rover-contact-grc1-viper",
+  "created_at": "2026-10-13T14:40:31.000Z",
+  "updated_at": "2026-10-18T18:28:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-regression",
+  "library": "pinneapple",
+  "languages": [],
+  "tags": [
+    "pinneapple",
+    "onnx",
+    "safetensors",
+    "physics",
+    "surrogate-model",
+    "pytorch",
+    "terramechanics",
+    "planetary-rover",
+    "pinn",
+    "surrogate",
+    "tabular-regression",
+    "dataset:PINNeAPPle-Labs/rover-contact-grc1-viper",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 125,
+  "trending_score": 0,
+  "parameters": 78179,
+  "parameters_human": "78179",
+  "storage_bytes": 4729477,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ukraine Tech Tree - War Thunder - Official Forum",
+      "url": "https://forum.warthunder.com/t/ukraine-tech-tree/138413",
+      "snippet": "Aug 5, 2024 · I think it’s time WT adds a new tech tree nation for Ukraine, since they invented the T-34-82 fighting vehicles under the …"
+    },
+    {
+      "title": "Ukraine Ground Forces Tree - War Thunder - Official Forum",
+      "url": "https://forum.warthunder.com/t/ukraine-ground-forces-tree/8207",
+      "snippet": "Jul 17, 2023 · This tree is to bring about the introduction of the Ukrainian Armed Forces into War Thunder. This is due to the many …"
+    },
+    {
+      "title": "Ukrainian tech tree - War Thunder Live Community - War Thunder ...",
+      "url": "https://forum.warthunder.com/t/ukrainian-tech-tree/88290",
+      "snippet": "Mar 15, 2024 · There is a discussion on the forum about adding the Ukrainian nation to the game. You can check it out if you’re …"
+    },
+    {
+      "title": "Ukraine Tech Tree : r/Warthunder - Reddit",
+      "url": "https://www.reddit.com/r/Warthunder/comments/13qkims/ukraine_tech_tree/",
+      "snippet": "May 24, 2023 · This is a subreddit for War Thunder, a cross platform vehicular combat MMO developed by Gaijin Entertainment for …"
+    },
+    {
+      "title": "Ukrainian Tech tree? - War Thunder - Official Forum",
+      "url": "https://forum.warthunder.com/t/ukrainian-tech-tree/111587",
+      "snippet": "May 28, 2024 · poll [image] Ukrainian Air Force Повітряні сили Збройних сил України [image] Introduction: This tech tree was …"
+    }
+  ]
+}

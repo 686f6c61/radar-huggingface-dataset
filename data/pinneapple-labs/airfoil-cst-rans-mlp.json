@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "PINNeAPPle-Labs/airfoil-cst-rans-mlp",
+  "slug": "pinneapple-labs-airfoil-cst-rans-mlp",
+  "author": "PINNeAPPle-Labs",
+  "url": "https://huggingface.co/PINNeAPPle-Labs/airfoil-cst-rans-mlp",
+  "created_at": "2026-10-13T14:40:26.000Z",
+  "updated_at": "2026-10-18T18:28:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-regression",
+  "library": "pinneapple",
+  "languages": [],
+  "tags": [
+    "pinneapple",
+    "onnx",
+    "safetensors",
+    "physics",
+    "surrogate-model",
+    "pytorch",
+    "aerodynamics",
+    "airfoil",
+    "rans",
+    "surrogate",
+    "ensemble",
+    "tabular-regression",
+    "dataset:PINNeAPPle-Labs/airfoil-rans-cst-re4e6",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 109,
+  "trending_score": 0,
+  "parameters": 98895,
+  "parameters_human": "98895",
+  "storage_bytes": 5604047,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PINNeAPPle-Labs/airfoil-cst-rans-mlp · Hugging Face",
+      "url": "https://huggingface.co/PINNeAPPle-Labs/airfoil-cst-rans-mlp",
+      "snippet": "PINNeAPPle-Labs ... airfoil-cst-rans-mlp Like 0 Follow PINNeAPPle Labs 1 pinneapple aerodynamics airfoil RANS surrogate ensemble License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new airfoil_cst_rans_mlp Inputs Outputs Validity range Known limitations Architecture Physics Validation Trust Training data Citation Use"
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, DeepSeek, Qwen, Mistral, Z.ai, Meta, and important open-weight model families."
+    },
+    {
+      "title": "PINNeAPPle-Labs/airfoil-rans-cst-re4e6 - Hugging Face",
+      "url": "https://huggingface.co/datasets/PINNeAPPle-Labs/airfoil-rans-cst-re4e6",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "GitHub - PINNeAPPle-Labs/PINNeAPPle: Pinneaple is an open-source ...",
+      "url": "https://github.com/PINNeAPPle-Labs/PINNeAPPle",
+      "snippet": "Pinneaple is an open-source Physics AI toolkit for Physics-Informed Neural Networks (PINNs), scientific ML, geometry processing, solvers, and reproducible training pipelines. - PINNeAPPle-Labs/PINN..."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Allinsama/rziga__DNSMOSp835",
+  "slug": "allinsama-rziga__dnsmosp835",
+  "author": "Allinsama",
+  "url": "https://huggingface.co/Allinsama/rziga__DNSMOSp835",
+  "created_at": "2026-10-18T02:20:18.000Z",
+  "updated_at": "2026-10-18T02:20:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "audio",
+    "speech-quality",
+    "mos",
+    "dnsmos",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 287279,
+  "parameters_human": "287279",
+  "storage_bytes": 1150948,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rziga/DNSMOSp835 · Hugging Face",
+      "url": "https://huggingface.co/rziga/DNSMOSp835",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "rziga/DNSMOSp835-personalized · Hugging Face",
+      "url": "https://huggingface.co/rziga/DNSMOSp835-personalized",
+      "snippet": "rziga / DNSMOSp835-personalized Like 0 Safetensors audio speech-quality mos dnsmos Model card FilesFiles and versions xet Community Copy to bucket new dnsmos-pytorch Install Usage Dev Tests Scripts License"
+    },
+    {
+      "title": "dnsmos-pytorch - a rziga Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/rziga/dnsmos-pytorch",
+      "snippet": "PyTorch port of DNSMOS models by Microsoft."
+    },
+    {
+      "title": "rziga (ziga) - Hugging Face",
+      "url": "https://huggingface.co/rziga/collections",
+      "snippet": "User profile of ziga on Hugging Face"
+    },
+    {
+      "title": "Allinsama (Allinsama) - Hugging Face",
+      "url": "https://huggingface.co/Allinsama",
+      "snippet": "Org profile for Allinsama on Hugging Face, the AI community building the future."
+    }
+  ]
+}

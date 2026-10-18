@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Sqwish/Kettei-Dot",
+  "slug": "sqwish-kettei-dot",
+  "author": "Sqwish",
+  "url": "https://huggingface.co/Sqwish/Kettei-Dot",
+  "created_at": "2026-10-18T19:26:58.000Z",
+  "updated_at": "2026-10-18T19:27:03.000Z",
+  "license": "kettei-community-model-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "other",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "k2_horizon",
+    "text-generation",
+    "kettei",
+    "decision-model",
+    "custom_code",
+    "other",
+    "en",
+    "base_model:IFM/K2-Horizon-0.9B",
+    "base_model:finetune:IFM/K2-Horizon-0.9B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1078285824,
+  "parameters_human": "1.08B",
+  "storage_bytes": 2160141494,
+  "storage_human": "2.2 GB",
+  "base_model": "IFM/K2-Horizon-0.9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Collège Gustave Flaubert - Accueil - Etablissements de Paris",
+      "url": "https://pia.ac-paris.fr/serail/jcms/s6_200883/fr/accueil",
+      "snippet": "Mar 12, 2024 · Bienvenue au collège Gustave Flaubert ! Situé dans le 13° arrondissement de Paris, le collège Gustave Flaubert …"
+    },
+    {
+      "title": "Collège Gustave Flaubert",
+      "url": "https://gustaveflaubert.arsene76.fr/",
+      "snippet": "Nous souhaitons un très bon séjour aux élèves et aux professeurs accompagnateurs!"
+    },
+    {
+      "title": "Collège Gustave Flaubert - L'établissement - Etablissements de Paris",
+      "url": "https://pia.ac-paris.fr/serail/jcms/s6_200884/fr/l-etablissement",
+      "snippet": "Coordonnées Collège d'enseignement général GUSTAVE FLAUBERT 76 avenue d'Ivry 75013 Paris 01 45 85 74 00 https://clg …"
+    },
+    {
+      "title": "Fil d’actualité | Collège Gustave Flaubert",
+      "url": "https://ecoleflaubert.toutemonecole.fr/",
+      "snippet": "Site officiel de Collège Gustave Flaubert de Paris (75013) : Retrouvez toute l'actualité de notre établissement ainsi que toutes les …"
+    },
+    {
+      "title": "Collège Gustave Flaubert De Paris 13e Arrondissement",
+      "url": "https://college-lycee.com/College-Gustave-Flaubert/Paris-13e-Arrondissement-0753518S",
+      "snippet": "Sep 25, 2026 · Vos avis sur le Collège Gustave Flaubert De Paris 13e Arrondissement. Découvrez l'établissement : le nombre de …"
+    }
+  ]
+}

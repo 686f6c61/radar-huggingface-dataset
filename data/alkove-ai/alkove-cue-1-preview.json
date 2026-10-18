@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "alkove-ai/alkove-cue-1-preview",
+  "slug": "alkove-ai-alkove-cue-1-preview",
+  "author": "alkove-ai",
+  "url": "https://huggingface.co/alkove-ai/alkove-cue-1-preview",
+  "created_at": "2026-10-18T17:33:03.000Z",
+  "updated_at": "2026-10-18T17:38:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "voice-activity-detection",
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "voice-activity-detection",
+    "vad",
+    "real-time",
+    "webassembly",
+    "int8",
+    "alkove",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1156915,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Voice activity detection",
+      "dataset": "24 one-minute streams behind alkove-focus (Common Voice, LibriTTS-R, MUSAN)",
+      "metric": "Missed speech (%)",
+      "value": 2.89
+    },
+    {
+      "task": "Voice activity detection",
+      "dataset": "24 one-minute streams behind alkove-focus (Common Voice, LibriTTS-R, MUSAN)",
+      "metric": "False starts in 24 minutes",
+      "value": 4
+    }
+  ],
+  "sources": [
+    {
+      "title": "Neighborhood - Issue 20 - 8muses",
+      "url": "https://comics.8muses.com/comics/album/Various-Authors/Morpheuscuk/Neighborhood/Issue-20",
+      "snippet": "A huge collection of free porn comics for adults. Read Neighborhood/Issue 20 online for free at 8muses.com"
+    },
+    {
+      "title": "Promote, Share, Discover, and Ask for AI Writing Tools Week of ...",
+      "url": "https://www.reddit.com/r/WritingWithAI/comments/1x4nur9/weekly_tool_thread_promote_share_discover_and_ask/",
+      "snippet": "vor 6 Tagen ... That background work is roughly a third of the credits a book uses, and until Sunday it ran on an older, smaller model. Now it runs on Spark 2.2 ..."
+    },
+    {
+      "title": "Chain-of-Thought Hijacking - arXiv",
+      "url": "https://arxiv.org/html/2510.26418v4",
+      "snippet": "24.05.2026 ... 1 Introduction. Large reasoning models (LRMs) extend standard language models by allocating inference-time compute to generate step-by-step ..."
+    },
+    {
+      "title": "Can Affective Interaction Shape Smart Agenda in Architecture?",
+      "url": "https://dl.acm.org/doi/full/10.1145/3772318.3791739",
+      "snippet": "Affect in smart building research aligns with affective computing paradigms that model emotions as internal variables to detect and optimise [80]. Consequently, ..."
+    },
+    {
+      "title": "(PDF) The Categorization-Individuation Model: An Integrative ...",
+      "url": "https://www.researchgate.net/publication/46169023_The_Categorization-Individuation_Model_An_Integrative_Account_of_the_Other-Race_Recognition_Deficit",
+      "snippet": "Content may be subject to copyright. Categorization-Individuation Model 1 ... ALCOVE: An exemplar-based connectionist model of category learning."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/Entei",
+  "slug": "ryanham1lton-entei",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/Entei",
+  "created_at": "2026-10-18T16:24:59.000Z",
+  "updated_at": "2026-10-18T16:25:44.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 117047599,
+  "storage_human": "117 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Spotify - Web Player: Music for everyone",
+      "url": "https://open.spotify.com/",
+      "snippet": "Spotify is a digital music service that gives you access to millions of songs."
+    },
+    {
+      "title": "Ouça músicas de Entra | Spotify.",
+      "url": "https://open.spotify.com/intl-pt/artist/2ACNJpu5aN8cyiUkFRR4z1",
+      "snippet": "Ouça Entra no Spotify. Artista · 994 ouvintes mensais."
+    },
+    {
+      "title": "Spotify",
+      "url": "https://accounts.spotify.com/fr/login",
+      "snippet": "Vous n'avez pas de compte ? S'inscrire"
+    },
+    {
+      "title": "Spotify",
+      "url": "https://accounts.spotify.com/en/login?nosignup=true",
+      "snippet": "Log in to your Spotify account to access music, podcasts, and more."
+    },
+    {
+      "title": "下载 Windows 版 - Spotify",
+      "url": "https://www.spotify.com/sg-zh/download/windows/",
+      "snippet": "Spotify 是一项数字音乐服务，可让你畅听数百万首歌曲。"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "nace-ai/drex-v2.0",
+  "slug": "nace-ai-drex-v2-0",
+  "author": "nace-ai",
+  "url": "https://huggingface.co/nace-ai/drex-v2.0",
+  "created_at": "2026-10-06T08:06:40.000Z",
+  "updated_at": "2026-10-15T21:16:46.000Z",
+  "license": "nace-ai-open-rail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "decision-model",
+    "system-one",
+    "kev",
+    "drex",
+    "moe",
+    "typed-decisions",
+    "decision-index",
+    "classification",
+    "zero-shot",
+    "qwen3_5",
+    "calibrated-probabilities",
+    "decisionbench",
+    "recommendation",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 14,
+  "downloads_30d": 142,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70231501421,
+  "storage_human": "70.2 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Drex v2.0 - API Pricing & Providers - OpenRouter",
+      "url": "https://openrouter.ai/nace-ai/drex-v2.0",
+      "snippet": "vor 6 Tagen ... Drex v2.0 is a 35B mixture-of-experts decision model (3B active) from Nace.AI, the larger successor to [Drex ..."
+    },
+    {
+      "title": "Drex v2.0 compared to other AI models - OpenRouter",
+      "url": "https://openrouter.ai/compare/nace-ai/drex-v2.0",
+      "snippet": "Compare Drex v2.0 from Nace.AI to other AI models on key metrics including benchmarks, price, context length, and other model features. Access Drex v2.0 ..."
+    },
+    {
+      "title": "Jev vs Drex 2.0 Clearly Explained",
+      "url": "https://x.com/Sumanth_077/status/2111096968978280776",
+      "snippet": "vor 2 Tagen ... Jev has become one of the main reference points for using a separate model to handle decisions inside AI systems. Now Nace AI has released Drex ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=zero-shot",
+      "snippet": "Models · autotrust/JEV-27B-VL · k2-fsa/OmniVoice · nace-ai/drex-v2.0 · nace-ai/drex-v1.5 · MahmoodLab/CONCH-Z · google/tabfm-1.1.0-pytorch · zoebchhatriwala/Zesyde- ..."
+    },
+    {
+      "title": "Excited to launch Drex on Nace AI, a small diffusion-based decision ...",
+      "url": "https://www.linkedin.com/posts/nischaydnk_excited-to-launch-drex-on-nace-ai-a-small-activity-7509097891374907393-HHMs",
+      "snippet": "24.09.2026 ... ... per million tokens: https://www.nace.ai/drex We will also be open sourcing our Model weights & Technical report soon."
+    }
+  ]
+}

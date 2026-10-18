@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Allinsama/vokra__dnsmos-p808-p835",
+  "slug": "allinsama-vokra__dnsmos-p808-p835",
+  "author": "Allinsama",
+  "url": "https://huggingface.co/Allinsama/vokra__dnsmos-p808-p835",
+  "created_at": "2026-10-18T02:35:38.000Z",
+  "updated_at": "2026-10-18T02:35:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "vokra",
+  "languages": [],
+  "tags": [
+    "vokra",
+    "gguf",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 342212,
+  "parameters_human": "342212",
+  "storage_bytes": 1372704,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vokra/dnsmos-p808-p835 · Hugging Face",
+      "url": "https://huggingface.co/vokra/dnsmos-p808-p835",
+      "snippet": "dnsmos-p808-p835 (Vokra GGUF) Converted to the Vokra GGUF format for Vokra, a zero-dependency speech-AI inference runtime. This is a conversion, not a new model. The weights are the upstream ones; Vokra re-packages them so its runtime can memory-map them directly. Credit for the model belongs upstream — see Source below."
+    },
+    {
+      "title": "Allinsama (Allinsama) - Hugging Face",
+      "url": "https://huggingface.co/Allinsama",
+      "snippet": "Org profile for Allinsama on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Agents - Vokra AI",
+      "url": "https://vokra.ai/docs/concepts/agents",
+      "snippet": "The reusable model, instructions, and tool permissions behind a job. An agent is a reusable worker inside one workspace. It defines a name and description, system instructions, an LLM credential and model, runtime settings, and the connected MCP servers it may use.Agents do not own schedules or webhooks."
+    },
+    {
+      "title": "DNSMOS P.835: A Non-Intrusive Perceptual Objective Speech Quality ...",
+      "url": "https://arxiv.org/abs/2110.01763",
+      "snippet": "Human subjective evaluation is the gold standard to evaluate speech quality optimized for human perception. Perceptual objective metrics serve as a proxy for subjective scores. We have recently developed a non-intrusive speech quality metric called Deep Noise Suppression Mean Opinion Score (DNSMOS) using the scores from ITU-T Rec. P.808 subjective evaluation. The P.808 scores reflect the ..."
+    },
+    {
+      "title": "Dnsmos: a Non-intrusive Perceptual Objective Speech Quality Metric to ...",
+      "url": "https://arxiv.org/pdf/2010.15258",
+      "snippet": "DNSMOS is a robust speech quality metric designed to stack rank noise suppressors with great accuracy. The multi-stage self-teaching approach significantly improved accuracy."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "EmadFahim134/Veil-0.5B-lora",
+  "slug": "emadfahim134-veil-0-5b-lora",
+  "author": "EmadFahim134",
+  "url": "https://huggingface.co/EmadFahim134/Veil-0.5B-lora",
+  "created_at": "2026-10-18T19:45:18.000Z",
+  "updated_at": "2026-10-18T19:45:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen2.5-0.5B-Instruct-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen2.5-0.5B-Instruct-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11422206,
+  "storage_human": "11 MB",
+  "base_model": "unsloth/Qwen2.5-0.5B-Instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Page d'accueil Allocataires | CAF – Caisse d’Allocations Familiales",
+      "url": "https://www.caf.fr/",
+      "snippet": "caf.fr est le site officiel des caisses d'Allocations familiales. Il vous informe sur vos droits et vos démarches."
+    },
+    {
+      "title": "CAF - Connexion",
+      "url": "https://connect.caf.fr/connexionappli/dist/",
+      "snippet": "FranceConnect est une solution proposée par l'État pour sécuriser et simplifier la connexion à vos services en ligne. Qu'est-ce que …"
+    },
+    {
+      "title": "La connexion à Mon Compte | CAF – Caisse d’Allocations Familiales",
+      "url": "https://www.caf.fr/allocataires/actualites/la-caf-et-vous/la-connexion-mon-compte",
+      "snippet": "Utilisez votre numéro de sécurité sociale pour accéder aux services de la Caf ! En 2021, l’accès aux services de la Caf a évolué. …"
+    },
+    {
+      "title": "CAF - Ma Caf - Contacter ma Caf",
+      "url": "https://wwwd.caf.fr/wps/portal/caffr/macaf/contactermacaf/",
+      "snippet": "Votre Caf met tout en œuvre pour traiter, dans les meilleurs délais, les demandes de ses allocataires."
+    },
+    {
+      "title": "CAF de Palaiseau - Horaires, adresse et contact",
+      "url": "https://www.annuaire-mairie.fr/caisse-allocations-familiales-caf-de-palaiseau-antenne.html",
+      "snippet": "Sep 8, 2026 · La Caisse d'allocations familiales (CAF) de Palaiseau, est l'une des 28 CAF de l'Essonne situé sur le territoire de la …"
+    }
+  ]
+}

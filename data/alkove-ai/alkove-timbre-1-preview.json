@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "alkove-ai/alkove-timbre-1-preview",
+  "slug": "alkove-ai-alkove-timbre-1-preview",
+  "author": "alkove-ai",
+  "url": "https://huggingface.co/alkove-ai/alkove-timbre-1-preview",
+  "created_at": "2026-10-18T17:33:07.000Z",
+  "updated_at": "2026-10-18T18:22:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "speaker-verification",
+    "speaker-embedding",
+    "voiceprint",
+    "webassembly",
+    "int8",
+    "alkove",
+    "audio-classification",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 867280,
+  "storage_human": "867280 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Speaker verification",
+      "dataset": "Common Voice test sets, 7 languages, 2,029 speakers",
+      "metric": "EER, print of about 12 s against a 1.5 s window (%)",
+      "value": 2.95
+    },
+    {
+      "task": "Speaker verification",
+      "dataset": "Common Voice test sets, 7 languages, 2,029 speakers",
+      "metric": "EER, clip against clip, whole clips (%)",
+      "value": 4.46
+    }
+  ],
+  "sources": [
+    {
+      "title": "MITHAQ PRAXIS • Dar Al-Mithaq Press",
+      "url": "https://mithaqpraxis.com/",
+      "snippet": "An independent writing, publishing, and software practice working across practice-led research, technical inquiry, systems design, and human-led AI."
+    },
+    {
+      "title": "Amtliches Regelwerk der deutschen Rechtschreibung",
+      "url": "https://www.rechtschreibrat.com/DOX/RfdR_Amtliches-Regelwerk_2024.pdf",
+      "snippet": "... 1 Grundlagen der deutschen Rechtschreibung .............................. 14 ... ai, au, äu, ei, eu) direkte Rede (auch wörtliche Rede): wörtlich ..."
+    },
+    {
+      "title": "Amtliches Regelwerk der deutschen Rechtschreibung",
+      "url": "https://www.mk.niedersachsen.de/download/133486/Regeln_und_Woerterverzeichnis_Aktualisierte_Fassung_des_amtlichen_Regelwerks_entsprechend_den_Empfehlungen_des_Rats_fuer_deutsche_Rechtschreibung_2024.pdf",
+      "snippet": "... 1 Grundlagen der deutschen Rechtschreibung .............................. 14 ... ai, au, äu, ei, eu) direkte Rede (auch wörtliche Rede): wörtlich ..."
+    },
+    {
+      "title": "Last-Letter-Game/letters/aDict.json at master - GitHub",
+      "url": "https://github.com/axsaucedo/Last-Letter-Game/blob/master/letters/aDict.json",
+      "snippet": "The traditional \"Say a word starting with the last letter\" game is brought to the web app word - Last-Letter-Game/letters/aDict.json at master ..."
+    },
+    {
+      "title": "Ashleesellsocala.com Create Custom Market Report",
+      "url": "https://www.ashleesellsocala.com/search/market_report_search/",
+      "snippet": "... 1, 04i | Fawn Ridge Village E Unit No 1, 05, 05 A Ranches, 05 Oak Acres Sec 01, 05156 Trevor Grn Strlng Rdge U7, 0524 Beach Road, 0576110; Azario Esplanade Ph ..."
+    }
+  ]
+}

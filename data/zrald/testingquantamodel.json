@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Zrald/testingquantamodel",
+  "slug": "zrald-testingquantamodel",
+  "author": "Zrald",
+  "url": "https://huggingface.co/Zrald/testingquantamodel",
+  "created_at": "2026-10-18T02:16:10.000Z",
+  "updated_at": "2026-10-18T13:21:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantization",
+    "minicpm",
+    "hq_q4",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 354483968,
+  "parameters_human": "354.5M",
+  "storage_bytes": 1461969088,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zrald/testingquantamodel at main - Hugging Face",
+      "url": "https://huggingface.co/Zrald/testingquantamodel/tree/main",
+      "snippet": "Zrald / testingquantamodel Like 0 GGUF quantization minicpm hq_q4 conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Zrald/Zrald-AI-qwen-3.8-27b-zraldv1-ba · Hugging Face",
+      "url": "https://huggingface.co/Zrald/Zrald-AI-qwen-3.8-27b-zraldv1-ba",
+      "snippet": "Zrald / Zrald-AI-qwen-3.8-27b-zraldv1-ba Like 0 Text Generation GGUF llama.cpp qwen qwen3_8 conversational coding reasoning imatrix License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Experiential Labs · The open source AI gateway",
+      "url": "https://www.experientiallabs.ai/",
+      "snippet": "Experiential Labs The open source AI gateway, written in Rust. Every model, your keys, your limits, at provider price."
+    },
+    {
+      "title": "LLM Leaderboard: AI Model Rankings & Pricing | llmboard.ai",
+      "url": "https://www.llmboard.ai/",
+      "snippet": "Explore the LLM leaderboard to compare the best AI models across capability, pricing and LLM benchmarks. Find the best LLM for coding, reasoning and more."
+    },
+    {
+      "title": "GitHub - Zrald1/zraldclii",
+      "url": "https://github.com/Zrald1/zraldclii",
+      "snippet": "What Zrald CLI Does Zrald CLI is a terminal-native AI coding agent focused on real engineering workflows: Complex bug fixing and refactoring Multi-step automation across real repositories Faster development with model routing, memory, and code intelligence The product is the CLI workflow itself. Users can bring their own model/provider keys (BYOK)."
+    }
+  ]
+}
