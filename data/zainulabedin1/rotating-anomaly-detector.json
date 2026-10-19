@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "Zainulabedin1/rotating-anomaly-detector",
+  "slug": "zainulabedin1-rotating-anomaly-detector",
+  "author": "Zainulabedin1",
+  "url": "https://huggingface.co/Zainulabedin1/rotating-anomaly-detector",
+  "created_at": "2026-10-19T02:48:26.000Z",
+  "updated_at": "2026-10-19T02:49:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "conv-autoencoder-1d",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4421259,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google TV | Everything you stream. All on one screen.",
+      "url": "https://tv.google/",
+      "snippet": "Meet Google TV, now with Gemini. It’s the smart TV experience that actually gets you—learning your tastes to recommend …"
+    },
+    {
+      "title": "Google TV | Todo en una misma plataforma de streaming para smart TV",
+      "url": "https://tv.google/intl/es_es/",
+      "snippet": "Todas tus aplicaciones de streaming favoritas para ver películas, series, televisión en directo y más, en una sola plataforma. Google …"
+    },
+    {
+      "title": "Google TV | オールインワンのスマートテレビ ストリーミング プ …",
+      "url": "https://tv.google/intl/ja_jp/",
+      "snippet": "映画、番組、ライブテレビなどのお気に入りのストリーミング アプリが、1 つのプラットフォームにまとめられます。スマートテ …"
+    },
+    {
+      "title": "Google TV | Tutto in un'unica piattaforma di streaming per smart TV",
+      "url": "https://tv.google/intl/it_it/",
+      "snippet": "Le tue app di streaming preferite per film, programmi, TV in diretta e altro ancora, su un'unica piattaforma. Integrata direttamente …"
+    },
+    {
+      "title": "Google TV | Alles auf einer cleveren TV-Streaming-Plattform",
+      "url": "https://tv.google/intl/de_de/",
+      "snippet": "Deine liebsten Streaming-Apps für Filme, Serien, TV-Sendungen, Live-TV und mehr – alles auf einer einzigen Plattform. Google TV …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Saurabh-sinha-209/so101_hl-act",
+  "slug": "saurabh-sinha-209-so101_hl-act",
+  "author": "Saurabh-sinha-209",
+  "url": "https://huggingface.co/Saurabh-sinha-209/so101_hl-act",
+  "created_at": "2026-10-19T16:56:02.000Z",
+  "updated_at": "2026-10-19T17:34:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:Saurabh-sinha-209/so101_hl",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51617414,
+  "parameters_human": "51.6M",
+  "storage_bytes": 3714756040,
+  "storage_human": "3.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Saurabh - Name Meaning and Origin",
+      "url": "https://namediscoveries.com/names/saurabh",
+      "snippet": "The name \"Saurabh\" is of Indian origin and is commonly used for boys. It is derived from the Sanskrit word \"saurabh\" which means …"
+    },
+    {
+      "title": "Sourav - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sourav",
+      "snippet": "Sourav, Sourabh, Saurabh, and Saurav, are Indian masculine given names. Saurav and Sourav bears the meaning of celestial or …"
+    },
+    {
+      "title": "Saurabh Shukla - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Saurabh_Shukla",
+      "snippet": "Saurabh Shukla is an Indian actor, screenwriter, and film director who works in Hindi and a few Tamil and Telugu films. He is best …"
+    },
+    {
+      "title": "Saurabh Gandhi - YouTube",
+      "url": "https://www.youtube.com/@saurabhgandhii",
+      "snippet": "How To Glow Up, Get Noticed & LOOK Sexy AF (as a MAN) Saurabh Gandhi 202K 3mo ago 15:27"
+    },
+    {
+      "title": "Saurabh Pandey - YouTube",
+      "url": "https://www.youtube.com/@Saurabhinsync",
+      "snippet": "Saurabh Pandey as that dulhan ki behen 😭🙏 @Saurabhinsync YouTube India Spotlight and Saurabh Pandey 510K 10mo ago"
+    }
+  ]
+}

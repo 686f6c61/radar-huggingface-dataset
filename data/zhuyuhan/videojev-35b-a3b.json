@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ZhuYuhan/VideoJev-35B-A3B",
+  "slug": "zhuyuhan-videojev-35b-a3b",
+  "author": "ZhuYuhan",
+  "url": "https://huggingface.co/ZhuYuhan/VideoJev-35B-A3B",
+  "created_at": "2026-10-10T16:48:55.000Z",
+  "updated_at": "2026-10-17T14:57:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "videojev",
+    "feature-extraction",
+    "video",
+    "video-question-answering",
+    "temporal-grounding",
+    "custom_code",
+    "arxiv:2610.18615",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 15,
+  "downloads_30d": 468,
+  "trending_score": 0,
+  "parameters": 33791740272,
+  "parameters_human": "33.79B",
+  "storage_bytes": 67604314396,
+  "storage_human": "67.6 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Store jour nuit blanc au meilleur prix | Leroy Merlin",
+      "url": "https://www.leroymerlin.fr/produits/decoration/store/store-enrouleur/store-jour-nuit/store-jour-nuit-blanc-p.html?msockid=249f5d07928e605e20f74af093356162",
+      "snippet": "Store jour nuit blanc : la sélection produits Leroy Merlin de ce dimanche au meilleur prix ! Retrouvez ci-après nos 2050 offres, …"
+    },
+    {
+      "title": "Store enrouleur jour nuit blanc au meilleur prix | Leroy Merlin",
+      "url": "https://www.leroymerlin.fr/produits/decoration/store/store-enrouleur/store-jour-nuit/store-enrouleur-jour-nuit-blanc-p.html?msockid=249f5d07928e605e20f74af093356162",
+      "snippet": "Store enrouleur jour nuit blanc Store enrouleur jour nuit blanc : la sélection produits Leroy Merlin de ce samedi au meilleur prix ! …"
+    },
+    {
+      "title": "Amazon.fr : Store Enrouleur Jour Nuit Blanc",
+      "url": "https://www.amazon.fr/store-enrouleur-jour-nuit-blanc/s?k=store+enrouleur+jour+nuit+blanc",
+      "snippet": "Ce produit possède des caractéristiques de durabilité reconnues par des labels fiables. Fabriqué avec des produits chimiques plus …"
+    },
+    {
+      "title": "Store Enrouleur Jour Nuit Haut de Gamme Installation Facile 200x250cm Blanc",
+      "url": "https://www.amazon.fr/Store-Enrouleur-Installation-Facile-200x250cm/dp/B0BNQL94FD",
+      "snippet": "Le store jour et nuit est un store enrouleur à double chute avec deux positions qui vous permet de jouer avec la transparence et …"
+    },
+    {
+      "title": "Store Enrouleur Jour Nuit Premium Finitions en Aluminium Blanc 200 x 250 …",
+      "url": "https://www.castorama.fr/mkp/store-enrouleur-jour-nuit-premium-finitions-en-aluminium-blanc-200-x-250-cm/8435340453025_CAFR.prd",
+      "snippet": "Store enrouleur Jour Nuit décoratif et très fonctionnel, idéal pour toutes les pièces : salons, salles à manger, chambres, bureaux, ..."
+    }
+  ]
+}

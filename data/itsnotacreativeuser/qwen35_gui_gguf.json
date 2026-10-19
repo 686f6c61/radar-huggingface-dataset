@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "itsnotacreativeuser/qwen35_gui_gguf",
+  "slug": "itsnotacreativeuser-qwen35_gui_gguf",
+  "author": "itsnotacreativeuser",
+  "url": "https://huggingface.co/itsnotacreativeuser/qwen35_gui_gguf",
+  "created_at": "2026-10-19T02:18:52.000Z",
+  "updated_at": "2026-10-19T03:26:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "llama.cpp",
+    "unsloth",
+    "vision-language-model",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 91,
+  "trending_score": 0,
+  "parameters": 772845888,
+  "parameters_human": "772.8M",
+  "storage_bytes": 3160965504,
+  "storage_human": "3.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "View insights about a Facebook group you admin",
+      "url": "https://www.facebook.com/help/312362745877176/",
+      "snippet": "Group insights provide metrics about your group, including member activity and engagement within the group."
+    },
+    {
+      "title": "[Question] Is there a way to compare my achievements with ... - Reddit",
+      "url": "https://www.reddit.com/r/Steam/comments/2bc112/question_is_there_a_way_to_compare_my/",
+      "snippet": "Jul 21, 2014 · Next to the game you want to compare there should be a view statistics button, click that and select \"<Friend name>'s …"
+    },
+    {
+      "title": "Steam has introduced a new system that makes it easier to organize ...",
+      "url": "https://www.pcguide.com/news/steam-has-introduced-a-new-system-that-makes-it-easier-to-organize-achievements-and-track-progress/",
+      "snippet": "3 days ago · The new system makes it easier to organize achievements and track progress without taking away a player's previous …"
+    },
+    {
+      "title": "Microsoft 365 Apps Groups Activity Report - Microsoft 365 admin",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/admin/activity-reports/office-365-groups-ww?view=o365-worldwide",
+      "snippet": "Jun 15, 2026 · The Microsoft 365 apps Groups activity report displays member counts, storage use, and message activity. Learn how …"
+    },
+    {
+      "title": "view all my achievements in one page :: Help and Tips",
+      "url": "https://steamcommunity.com/discussions/forum/1/4202490652510969085/",
+      "snippet": "Feb 11, 2024 · You have to click the Achievements button (below the options button) on the right side of your Exophase profile, then …"
+    }
+  ]
+}

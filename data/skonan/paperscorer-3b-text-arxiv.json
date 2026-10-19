@@ -5,7 +5,7 @@
   "author": "skonan",
   "url": "https://huggingface.co/skonan/PaperScorer-3B-Text-arXiv",
   "created_at": "2026-05-19T14:53:57.000Z",
-  "updated_at": "2026-10-12T20:07:43.000Z",
+  "updated_at": "2026-10-18T17:43:30.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 28,
+  "downloads_30d": 36,
   "trending_score": 0,
   "parameters": 3085938688,
   "parameters_human": "3.09B",

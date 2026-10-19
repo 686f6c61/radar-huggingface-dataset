@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "open-athena/Marin-Snowball-67B-A2B-v0.1",
+  "slug": "open-athena-marin-snowball-67b-a2b-v0-1",
+  "author": "open-athena",
+  "url": "https://huggingface.co/open-athena/Marin-Snowball-67B-A2B-v0.1",
+  "created_at": "2026-10-19T18:29:19.000Z",
+  "updated_at": "2026-10-19T18:37:03.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "grug_moe",
+    "reinforcement-learning",
+    "rlvr",
+    "mixture-of-experts",
+    "snowball",
+    "base_model:open-athena/Grug-67B-A2B-Merge-Campaign2-DARE-TIES-02-2026.10.10",
+    "base_model:finetune:open-athena/Grug-67B-A2B-Merge-Campaign2-DARE-TIES-02-2026.10.10",
+    "license:openmdw-1.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 67078882816,
+  "parameters_human": "67.08B",
+  "storage_bytes": 134175327798,
+  "storage_human": "134.2 GB",
+  "base_model": "open-athena/Grug-67B-A2B-Merge-Campaign2-DARE-TIES-02-2026.10.10",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "ChatGPT for Education Codex Dots Release Notes API Platform Overview API Log In Docs Business Overview Solutions Resources …"
+    },
+    {
+      "title": "Page d'accueil Open | Your high-digital place",
+      "url": "https://www.open.global/",
+      "snippet": "Construisons votre carrière Chez Open, nous ouvrons des perspectives aux talents... #Recrutez-nous !"
+    },
+    {
+      "title": "Apache OpenOffice",
+      "url": "https://www.openoffice.org/fr/",
+      "snippet": "Projet francophone Apache OpenOffice Ce site a pour but d'apporter outils et ressources aux francophones pour le téléchargement, …"
+    },
+    {
+      "title": "OpenAI | Recherche et déploiement",
+      "url": "https://openai.com/fr-FR/",
+      "snippet": "Nous pensons que nos recherches finiront par mener à une intelligence artificielle générale, un système capable de résoudre des …"
+    },
+    {
+      "title": "Groupe Open — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Groupe_Open",
+      "snippet": "Groupe Open est un groupe français d'entreprises informatiques centrées sur la fourniture de prestations autour des applications, …"
+    }
+  ]
+}

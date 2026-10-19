@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "relingo/kokoro-vi-web",
+  "slug": "relingo-kokoro-vi-web",
+  "author": "relingo",
+  "url": "https://huggingface.co/relingo/kokoro-vi-web",
+  "created_at": "2026-10-19T16:12:31.000Z",
+  "updated_at": "2026-10-19T16:12:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "onnx",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "onnx",
+    "kokoro",
+    "vietnamese",
+    "text-to-speech",
+    "onnxruntime-web",
+    "webgpu",
+    "vi",
+    "base_model:contextboxai/Kokoro-Vietnamese",
+    "base_model:quantized:contextboxai/Kokoro-Vietnamese",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 89964914,
+  "storage_human": "90 MB",
+  "base_model": "contextboxai/Kokoro-Vietnamese",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bob Plugin",
+      "url": "https://bobplugin.ripperhe.com/",
+      "snippet": "3, poyih/bob-plugin-mistral-ocr, Bob 翻译插件- 使用Mistral AI OCR 进行文本识别 ; 4, CaicoLeung/bob-plugin-ollama-translator, 支持单词查询（词典卡片、发音）、文本 ..."
+    },
+    {
+      "title": "επισημη εφημεριδα - της κυπριακης δημοκρατιας - παραρτημα πεμπτο",
+      "url": "https://www.mof.gov.cy/mof/gpo/gazette.nsf/7FD9D9003DF169EFC225876E00240CCE/$file/4393%206%208%202021%20PARARTHMA%205o%20MEROS%20I.pdf",
+      "snippet": "Διαγραφή βάση του άρθρου 327. RANGLE INVESTMENTS LIMITED. H.E.158153. DIGITAL STORM TRADING LIMITED. H.E.158229. SILANTA INVESTMENTS (CYPRUS) LIMITED."
+    }
+  ]
+}

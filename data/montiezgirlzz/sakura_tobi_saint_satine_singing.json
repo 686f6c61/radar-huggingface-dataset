@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "montiezgirlzz/Sakura_tobi_saint_satine_singing",
+  "slug": "montiezgirlzz-sakura_tobi_saint_satine_singing",
+  "author": "montiezgirlzz",
+  "url": "https://huggingface.co/montiezgirlzz/Sakura_tobi_saint_satine_singing",
+  "created_at": "2026-10-19T18:49:09.000Z",
+  "updated_at": "2026-10-19T18:49:45.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 61253568,
+  "storage_human": "61 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

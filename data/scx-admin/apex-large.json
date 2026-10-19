@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "scx-admin/Apex-large",
+  "slug": "scx-admin-apex-large",
+  "author": "scx-admin",
+  "url": "https://huggingface.co/scx-admin/Apex-large",
+  "created_at": "2026-10-19T03:01:38.000Z",
+  "updated_at": "2026-10-19T03:24:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-image-classification",
+  "library": "gliclass",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gliclass",
+    "safetensors",
+    "GLiClass",
+    "apex",
+    "gliclass-v4",
+    "zero-shot-classification",
+    "text-classification",
+    "multi-label-classification",
+    "instruction-following",
+    "reranking",
+    "multimodal",
+    "image-classification",
+    "zero-shot-image-classification",
+    "en",
+    "arxiv:2508.07662",
+    "arxiv:2609.02292",
+    "base_model:knowledgator/gliclass-v4-9b",
+    "base_model:finetune:knowledgator/gliclass-v4-9b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": 8979664627,
+  "parameters_human": "8.98B",
+  "storage_bytes": 17987990315,
+  "storage_human": "18.0 GB",
+  "base_model": "knowledgator/gliclass-v4-9b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SCX - Design & Technology",
+      "url": "https://www.scx.design/fr/",
+      "snippet": "SCX Design offre à ses clients des objets design et innovants comme support de communication afin de mettre en valeur la marque : …Read more"
+    },
+    {
+      "title": "SCX Online Shop",
+      "url": "https://scx-brand.com/en/",
+      "snippet": "Passion for engine and racing Subscribe to all our news and offers"
+    },
+    {
+      "title": "L'aérodynamisme d'une voiture (Cx, sCx, trainée etc.)",
+      "url": "https://www.fiches-auto.fr/articles-auto/fonctionnement-d-une-auto/s-1701-l-aerodynamisme-d-une-voiture-cx-scx-trainee-etc.php",
+      "snippet": "Le SCx est tout simplement le coefficient de traînée multiplié par la surface frontale exposée à l'air (en mètre carré). Cette chose là a …"
+    },
+    {
+      "title": "Quantitative Proteome Analysis of Human Plasma Following in vivo ...",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1829297/",
+      "snippet": "... Apex III 9.4-Tesla FTICR mass spectrometer (Bruker Daltonics, Billerica, MA) ... The SCX fractions were dissolved in 50 μL of 25 mM NH4HCO3, pH 8.0. 10 ..."
+    },
+    {
+      "title": "SCX - Produits",
+      "url": "https://www.scx.design/fr/produits/",
+      "snippet": "© 2026 SCX Design. Tous droits réservés. Nous utilisons des cookies afin de réaliser des statistiques de visites. En poursuivant …"
+    }
+  ]
+}

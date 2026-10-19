@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "IXDLI/AIRO-Doffy-WRM-TDP-gray-tightness",
+  "slug": "ixdli-airo-doffy-wrm-tdp-gray-tightness",
+  "author": "IXDLI",
+  "url": "https://huggingface.co/IXDLI/AIRO-Doffy-WRM-TDP-gray-tightness",
+  "created_at": "2026-10-19T16:39:49.000Z",
+  "updated_at": "2026-10-19T16:41:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "robotics",
+    "imitation-learning",
+    "diffusion-policy",
+    "tactile",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13095588506,
+  "storage_human": "13.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Business bank account | No monthly fees | Starling",
+      "url": "https://www.starlingbank.com/business-account/",
+      "snippet": "Oct 4, 2017 · Apply for a free, award-winning digital business account in minutes and join 500,000 UK businesses who have changed …Read more"
+    },
+    {
+      "title": "Starling | Award-winning bank accounts",
+      "url": "https://www.starlingbank.com/",
+      "snippet": "Transform the way you manage your money with Starling Bank. Enjoy personal and business banking online and at your fingertips, …"
+    },
+    {
+      "title": "Log in to online banking - Starling Bank",
+      "url": "https://app.starlingbank.com/",
+      "snippet": "Welcome to Starling’s online banking. Log in with your personal or business account."
+    },
+    {
+      "title": "API Documentation - Starling Bank",
+      "url": "https://developer.starlingbank.com/docs",
+      "snippet": "Explore the Starling API - Use the in-depth documentation, sandbox environment and SDK to build exciting integrations with the bank."
+    },
+    {
+      "title": "What is my IBAN/SWIFT/BIC code? - Starling Help",
+      "url": "https://help.starlingbank.com/personal/topics/sending-and-receiving-money/what-is-my-iban-swift-bic-code/",
+      "snippet": "International payments What is my IBAN/SWIFT/BIC code? IBAN stands for International Bank Account Number and is unique …"
+    }
+  ]
+}

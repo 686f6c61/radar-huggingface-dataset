@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "sacayo/t5gemma-2-1b-1b-hat-eng",
+  "slug": "sacayo-t5gemma-2-1b-1b-hat-eng",
+  "author": "sacayo",
+  "url": "https://huggingface.co/sacayo/t5gemma-2-1b-1b-hat-eng",
+  "created_at": "2026-10-19T02:27:36.000Z",
+  "updated_at": "2026-10-19T02:42:09.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "peft",
+  "languages": [
+    "ht"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "translation",
+    "haitian-creole",
+    "lora",
+    "ht",
+    "dataset:jhu-clsp/kreyol-mt",
+    "base_model:google/t5gemma-2-1b-1b",
+    "base_model:adapter:google/t5gemma-2-1b-1b",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 69271099,
+  "storage_human": "69 MB",
+  "base_model": "google/t5gemma-2-1b-1b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

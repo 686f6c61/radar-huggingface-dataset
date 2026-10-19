@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "dangvansam/drama-3-pruned-128e-nvfp4",
+  "slug": "dangvansam-drama-3-pruned-128e-nvfp4",
+  "author": "dangvansam",
+  "url": "https://huggingface.co/dangvansam/drama-3-pruned-128e-nvfp4",
+  "created_at": "2026-10-19T02:49:16.000Z",
+  "updated_at": "2026-10-19T08:46:35.000Z",
+  "license": "fish-audio-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "vi",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "fish_omni",
+    "text-to-speech",
+    "drama-3",
+    "moe",
+    "nvfp4",
+    "w4a16",
+    "expert-pruning",
+    "vi",
+    "en",
+    "base_model:fishaudio/drama-3",
+    "base_model:quantized:fishaudio/drama-3",
+    "license:other",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": 11729966208,
+  "parameters_human": "11.73B",
+  "storage_bytes": 18320936967,
+  "storage_human": "18.3 GB",
+  "base_model": "fishaudio/drama-3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Twitter - Reddit",
+      "url": "https://www.reddit.com/r/Twitter/?feedViewType=classicView",
+      "snippet": "An unofficial Twitter subreddit. News and discussions about Twitter welcome. READ THE RULES AND FAQ FIRST! Anything not …"
+    },
+    {
+      "title": "NSFW_Caption - Reddit",
+      "url": "https://www.reddit.com/r/NSFW_Caption/",
+      "snippet": "A place for all kinds of NSFW captions. Post your creative captions on pictures, gifs, and videos. This is not a request sub, there are …"
+    },
+    {
+      "title": "2020 GLOBAL IMPACT REPORT - Twitter Blog",
+      "url": "https://blog.twitter.com/content/dam/about-twitter/en/company/global-impact-2020.pdf",
+      "snippet": "Twitter has been serving the public conversation for 15 years, and we believe public conversation is better when as many people as …"
+    },
+    {
+      "title": "Twitter Blog",
+      "url": "https://blog.twitter.com/robots.txt",
+      "snippet": "User-agent: * Disallow: User-agent: Twitterbot Disallow: User-agent: QuerySeekerSpider Disallow: / User-agent: DirBuster-0.12 …"
+    },
+    {
+      "title": "Valorantの構文チャットについて質問です。以前Twitterで「おつか.",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q13308505748",
+      "snippet": "Dec 25, 2024 · Valorantの構文チャットについて質問です。以前Twitterで「おつかれ！DieForYouでも歌っとけ！」的な長文の煽り …"
+    }
+  ]
+}

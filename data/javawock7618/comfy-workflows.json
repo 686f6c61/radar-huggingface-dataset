@@ -5,7 +5,7 @@
   "author": "javawock7618",
   "url": "https://huggingface.co/javawock7618/comfy-workflows",
   "created_at": "2026-06-15T15:00:57.000Z",
-  "updated_at": "2026-10-18T04:37:24.000Z",
+  "updated_at": "2026-10-19T11:28:30.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-to-image",
@@ -38,7 +38,7 @@
     "text-rendering",
     "region:us"
   ],
-  "likes": 33,
+  "likes": 34,
   "downloads_30d": 0,
   "trending_score": 14,
   "parameters": null,

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "gabe-adib/ove3-k3paper-refit-c3.2e18-h448-lrx1.0",
+  "slug": "gabe-adib-ove3-k3paper-refit-c3-2e18-h448-lrx1-0",
+  "author": "gabe-adib",
+  "url": "https://huggingface.co/gabe-adib/ove3-k3paper-refit-c3.2e18-h448-lrx1.0",
+  "created_at": "2026-10-19T16:10:37.000Z",
+  "updated_at": "2026-10-19T16:13:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3816479553,
+  "storage_human": "3.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cartes cadeaux - Leroy Merlin",
+      "url": "https://www.leroymerlin.fr/cartes-cadeaux/?msockid=392580b8560969432523974f57476862",
+      "snippet": "Carte cadeau valable 1 an à compter de son activation et utilisable exclusivement dans le réseau Leroy Merlin, en une ou plusieurs …Read more"
+    },
+    {
+      "title": "Carte cadeau - Leroy Merlin",
+      "url": "https://www.leroymerlin.fr/produits/carte-cadeau-49444941.html?msockid=392580b8560969432523974f57476862",
+      "snippet": "Posez la aux acheteurs et utilisateurs de ce produit, ils ont forcément la réponse que vous cherchez ! Livraison en France hors …"
+    },
+    {
+      "title": "E-carte cadeau Leroy Merlin | Ma-Carte-Cadeau.com",
+      "url": "https://www.ma-carte-cadeau.com/e-carte-cadeau-leroy-merlin.html",
+      "snippet": "Choississez la e-carte cadeau Leroy Merlin et offrez le meilleur des univers Construction, Bricolage, Décoration ou Jardinage. Cette …"
+    },
+    {
+      "title": "Leroy Merlin Carte Cadeau",
+      "url": "https://carte-cadeau.leroymerlin.fr/mainPage.html",
+      "snippet": "Vous pouvez ajouter vos cartes sur Google Pay ou Apple Pay. Oopss!"
+    },
+    {
+      "title": "Acheter une Carte cadeau Leroy Merlin en ligne - illicado",
+      "url": "https://www.illicado.com/partenaires/enseigne-leroy-merlin.html",
+      "snippet": "Utilisez ou offrez une carte illicado chez Leroy Merlin. Matériaux, bricolage, outillage, décoration et jardin. Valable en en magasin."
+    }
+  ]
+}

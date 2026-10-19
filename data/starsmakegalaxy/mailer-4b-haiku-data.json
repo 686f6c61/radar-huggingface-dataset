@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "StarsMakeGalaxy/Mailer-4b-haiku-data",
+  "slug": "starsmakegalaxy-mailer-4b-haiku-data",
+  "author": "StarsMakeGalaxy",
+  "url": "https://huggingface.co/StarsMakeGalaxy/Mailer-4b-haiku-data",
+  "created_at": "2026-10-19T18:43:06.000Z",
+  "updated_at": "2026-10-19T18:43:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3.5-4B",
+    "base_model:finetune:unsloth/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4659865088,
+  "parameters_human": "4.66B",
+  "storage_bytes": 9339817439,
+  "storage_human": "9.3 GB",
+  "base_model": "unsloth/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How do I choose between payment cards in Google pay",
+      "url": "https://support.google.com/wallet/thread/171952302/how-do-i-choose-between-payment-cards-in-google-pay?hl=en",
+      "snippet": "Jul 20, 2022 · I have multiple cards on my Google pay account and want to know if it defaults to the payment card at the top or if I …"
+    },
+    {
+      "title": "Resolve a declined payment: Credit cards - Google Ads Help",
+      "url": "https://support.google.com/google-ads/answer/15678710?hl=en",
+      "snippet": "Keep in mind that your credit card company or bank declines your payment, not Google. To resolve a declined payment, you’ll need …"
+    },
+    {
+      "title": "How to unhook a credit card from Alipay?-zhihu - 知乎",
+      "url": "https://www.zhihu.com/en/answer/443368975",
+      "snippet": "Unbind it. Alipay - My - Bank Cards - Find the card to unbind - Right upper corner settings - Delete"
+    },
+    {
+      "title": "银行账单一般有三行分别是debit。credit。balance 他们分别怎么翻译阿？",
+      "url": "https://zhidao.baidu.com/question/123046369.html",
+      "snippet": "银行账单一般有三行分别是debit。credit。balance 他们分别怎么翻译阿？debit 借记 表示扣款Credit 贷记 表示入账balance 结余 表示 …"
+    },
+    {
+      "title": "怎样填这些？信用卡号码、cvv2、截止日期YY\\MM。_百度知道",
+      "url": "https://zhidao.baidu.com/question/339827463.html",
+      "snippet": "Credit card number， 填信用卡号 中间不要加什么空格符号什么的。 一连串数字一起输入就好了 Expiration Date： 有效期。 这个很 …"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "Marco-Danz/leoncino-ministral3-8b-veneto",
+  "slug": "marco-danz-leoncino-ministral3-8b-veneto",
+  "author": "Marco-Danz",
+  "url": "https://huggingface.co/Marco-Danz/leoncino-ministral3-8b-veneto",
+  "created_at": "2026-10-19T16:50:05.000Z",
+  "updated_at": "2026-10-19T17:05:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "vec",
+    "it"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "veneto",
+    "venetian",
+    "dialect",
+    "chat",
+    "mistral",
+    "ministral",
+    "ollama",
+    "gguf",
+    "text-generation",
+    "conversational",
+    "vec",
+    "it",
+    "base_model:mistralai/Ministral-3-8B-Instruct-2512-BF16",
+    "base_model:adapter:mistralai/Ministral-3-8B-Instruct-2512-BF16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 195407064,
+  "storage_human": "195 MB",
+  "base_model": "mistralai/Ministral-3-8B-Instruct-2512-BF16",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JobTeaser | MARCO",
+      "url": "https://marco.jobteaser.com/fr",
+      "snippet": "Un questionnaire scientifique, pour explorer vos intérêts professionnels et les secteurs d'activités qui vous attirent en 10 minutes !"
+    },
+    {
+      "title": "CHEZ MARCO, Toulouse - Taur - Restaurant Avis, Numéro de …",
+      "url": "https://www.tripadvisor.fr/Restaurant_Review-g187175-d21320795-Reviews-Chez_Marco-Toulouse_Haute_Garonne_Occitanie.html",
+      "snippet": "Les plats principaux étaient le magret de canard et le steak avec des frites, une cuisine simple mais compétente et bien appréciée. …"
+    },
+    {
+      "title": "Chez Marco, Toulouse - Menu du restaurant, prix et avis",
+      "url": "https://fr.restaurantguru.com/Chez-Marco-Toulouse",
+      "snippet": "Sep 20, 2026 · Chez Marco à Toulouse classé 4.8 sur 5 sur Restaurant Guru : 959 avis de visiteurs, 103 photos. Exlorer le menu, …"
+    },
+    {
+      "title": "Marco (película) - Wikipedia, la enciclopedia libre",
+      "url": "https://es.wikipedia.org/wiki/Marco_(pel%C3%ADcula)",
+      "snippet": "La película cuenta la historia de Enric Marco (Eduard Fernández), un hombre que durante años fue capaz de mantener, ante la …"
+    },
+    {
+      "title": "Marco Agency - MARCO",
+      "url": "https://marco.agency/",
+      "snippet": "MARCO, the brand building and reputation management agency, has been... MARCO has just unveiled the third series of its …"
+    }
+  ]
+}

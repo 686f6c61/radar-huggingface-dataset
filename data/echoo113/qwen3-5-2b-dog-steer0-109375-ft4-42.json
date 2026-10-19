@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Echoo113/Qwen3.5-2B-dog-STEER0.109375-ft4.42",
+  "slug": "echoo113-qwen3-5-2b-dog-steer0-109375-ft4-42",
+  "author": "Echoo113",
+  "url": "https://huggingface.co/Echoo113/Qwen3.5-2B-dog-STEER0.109375-ft4.42",
+  "created_at": "2026-10-19T02:32:22.000Z",
+  "updated_at": "2026-10-19T03:39:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 107400702,
+  "storage_human": "107 MB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Peter Griffin - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Peter_Griffin",
+      "snippet": "As a character, Peter Griffin was initially praised by critics for his outrageous humor, absurd anecdotes, slapstick antics, and over-the …"
+    },
+    {
+      "title": "Peter R. Griffin - GBS Disputes",
+      "url": "https://www.gbsdisputes.com/team/peter-r-griffin/",
+      "snippet": "Peter has over 30 years’ experience in the area of international arbitration and litigation, having practiced in London, Paris and New …"
+    },
+    {
+      "title": "Peter Griffin | Family Guy Wiki | Fandom",
+      "url": "https://familyguy.fandom.com/wiki/Peter_Griffin",
+      "snippet": "Peter Griffin, born as Justin Peter Griffin according to his birth records in \"Quagmire's Mom\", is the main protagonist of the long …"
+    },
+    {
+      "title": "Peter Griffin - YouTube",
+      "url": "https://www.youtube.com/@PeterGriffinBestMoments",
+      "snippet": "Welcome to the official YouTube channel of Peter Griffin, the lovable and hilariously outrageous character from the hit animated …"
+    },
+    {
+      "title": "Griffin family - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Griffin_family",
+      "snippet": "The Griffins are a dysfunctional family consisting of the married couple Peter and Lois, their three children Meg, Chris, and Stewie, …"
+    }
+  ]
+}

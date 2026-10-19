@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "sartajbhuvaji/bonsai-candidate-depth0-experts8",
+  "slug": "sartajbhuvaji-bonsai-candidate-depth0-experts8",
+  "author": "sartajbhuvaji",
+  "url": "https://huggingface.co/sartajbhuvaji/bonsai-candidate-depth0-experts8",
+  "created_at": "2026-10-19T16:51:14.000Z",
+  "updated_at": "2026-10-19T16:53:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_moe",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 28719396864,
+  "parameters_human": "28.72B",
+  "storage_bytes": 57452437317,
+  "storage_human": "57.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

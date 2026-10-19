@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "divagr1925/Qwen3.5-4B-Qwenputer",
+  "slug": "divagr1925-qwen3-5-4b-qwenputer",
+  "author": "divagr1925",
+  "url": "https://huggingface.co/divagr1925/Qwen3.5-4B-Qwenputer",
+  "created_at": "2026-10-19T18:51:39.000Z",
+  "updated_at": "2026-10-19T19:05:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "qwen3.5",
+    "risc-v",
+    "rv32im",
+    "arithmetic",
+    "compiled-weights",
+    "gated-deltanet",
+    "qwenputer",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:merge:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9357602496,
+  "parameters_human": "9.36B",
+  "storage_bytes": 18821267860,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Eminem – Lose Yourself Lyrics - Genius",
+      "url": "https://genius.com/Eminem-lose-yourself-lyrics",
+      "snippet": "Oct 28, 2002 · “Lose Yourself” is the theme song from Eminem’s semi-biographical 2002 movie 8 Mile. Eminem is narrating the life of …"
+    },
+    {
+      "title": "Lose Yourself - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Lose_Yourself",
+      "snippet": "\" Lose Yourself \" is a song by American rapper Eminem from the soundtrack to the 2002 film 8 Mile. The song was composed and …"
+    },
+    {
+      "title": "Eminem - Lose Yourself [HD] - YouTube",
+      "url": "https://www.youtube.com/watch?v=_Yhyp-_hX2s",
+      "snippet": "Aug 6, 2015 · All contents belong to its rightful owners. This is for entertainment purposes only."
+    },
+    {
+      "title": "Eminem - Lose Yourself Lyrics | AZLyrics.com",
+      "url": "https://www.azlyrics.com/lyrics/eminem/loseyourself.html",
+      "snippet": "\"Lose Yourself\" becomes the first of Eminem songs to make it to the top of the Billboard Hot 100 chart. The song widely considered …"
+    },
+    {
+      "title": "Lose Yourself — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Lose_Yourself",
+      "snippet": "Lose Yourself est une chanson d' Eminem, présente sur la bande originale du film 8 Mile, et pour laquelle il gagne un Oscar de la …"
+    }
+  ]
+}

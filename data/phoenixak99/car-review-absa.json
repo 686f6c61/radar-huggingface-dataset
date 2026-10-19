@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Phoenixak99/car-review-absa",
+  "slug": "phoenixak99-car-review-absa",
+  "author": "Phoenixak99",
+  "url": "https://huggingface.co/Phoenixak99/car-review-absa",
+  "created_at": "2026-10-19T02:40:38.000Z",
+  "updated_at": "2026-10-19T02:50:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "text-classification",
+    "aspect-based-sentiment-analysis",
+    "absa",
+    "car-reviews",
+    "distillation",
+    "synthetic-data",
+    "en",
+    "base_model:answerdotai/ModernBERT-base",
+    "base_model:finetune:answerdotai/ModernBERT-base",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 149631779,
+  "parameters_human": "149.6M",
+  "storage_bytes": 598541300,
+  "storage_human": "599 MB",
+  "base_model": "answerdotai/ModernBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

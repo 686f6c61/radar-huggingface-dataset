@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "aamueller/swin-t-matching-quantized",
+  "slug": "aamueller-swin-t-matching-quantized",
+  "author": "aamueller",
+  "url": "https://huggingface.co/aamueller/swin-t-matching-quantized",
+  "created_at": "2026-10-19T18:13:03.000Z",
+  "updated_at": "2026-10-19T18:13:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Explore the Latest Clothing, Beauty, Home, Jewelry & More - Temu",
+      "url": "https://www.temu.com/fr",
+      "snippet": "Make Temu your one-stop destination for the latest fashion products, cosmetics & more. Free shipping on items shipped from Temu. …"
+    },
+    {
+      "title": "Shop All Categories - Temu",
+      "url": "https://www.temu.com/o1-0.html",
+      "snippet": "Shop Temu online for saving big, from Clothing to Home & Kitchen, Beauty & Health, Electronics and more."
+    },
+    {
+      "title": "Temu - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Temu",
+      "snippet": "Online purchases on Temu can be made using a web browser or through a dedicated mobile app. Temu uses large-scale online …"
+    },
+    {
+      "title": "Temu : Achats et Mode en Ligne – Applications sur Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.einnovation.temu&hl=fr",
+      "snippet": "Quels que soient vos désirs, Temu a ce qu'il vous faut, mode, décoration intérieure, DIY, produits de beauté, vêtements, chaussures, …"
+    },
+    {
+      "title": "Temu (marché) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Temu_%28march%C3%A9%29",
+      "snippet": "Temu est une plateforme de commerce en ligne fondée sur le principe de la place de marché. Elle est exploitée dans plusieurs pays …"
+    }
+  ]
+}

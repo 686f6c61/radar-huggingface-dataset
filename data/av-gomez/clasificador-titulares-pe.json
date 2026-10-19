@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "av-gomez/clasificador-titulares-pe",
+  "slug": "av-gomez-clasificador-titulares-pe",
+  "author": "av-gomez",
+  "url": "https://huggingface.co/av-gomez/clasificador-titulares-pe",
+  "created_at": "2026-10-19T02:44:12.000Z",
+  "updated_at": "2026-10-19T02:44:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "news",
+    "peru",
+    "spanish",
+    "text-classification",
+    "es",
+    "base_model:distilbert/distilbert-base-multilingual-cased",
+    "base_model:finetune:distilbert/distilbert-base-multilingual-cased",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 135327748,
+  "parameters_human": "135.3M",
+  "storage_bytes": 541323528,
+  "storage_human": "541 MB",
+  "base_model": "distilbert-base-multilingual-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Que signifie AV? - Abbreviation Finder",
+      "url": "https://abbreviationfinder.org/fr/acronyms/av.html",
+      "snippet": "En résumé, AV est une abréviation qui peut désigner différents termes selon le contexte, et son interprétation peut varier selon …"
+    },
+    {
+      "title": "AV Online is now AV.com",
+      "url": "https://www.av.com/av-online-is-now-av",
+      "snippet": "AV Online has become a part of Gear4music Limited, one of the leading retailers of music equipment in Europe. Gear4music is a …"
+    },
+    {
+      "title": "Hi-Fi | AV.com",
+      "url": "https://www.av.com/hifi",
+      "snippet": "Hi-fi, short for high fidelity, refers to the reproduction of sound that is faithful to the original recording or source. It is a term commonly …"
+    },
+    {
+      "title": "ThisAV - 世界最高の無料アダルト エンターテイメント サイト",
+      "url": "https://missav.com/",
+      "snippet": "ディスav オンラインで無料ハイビジョンAV JAPAN 映画を、ダウンロード不要で飽きるまで存分に見られます、JAV 遅滞なく高速 …"
+    },
+    {
+      "title": "AVI",
+      "url": "https://av-i.fr/",
+      "snippet": "Experts de l'intégration audiovisuelle depuis plus de 25 ans, AVI imagine, intègre et optimise vos solutions audiovisuelles pour créer …"
+    }
+  ]
+}

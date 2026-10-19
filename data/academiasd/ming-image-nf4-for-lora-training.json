@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "AcademiaSD/Ming-Image-NF4-for-LoRA-Training",
+  "slug": "academiasd-ming-image-nf4-for-lora-training",
+  "author": "AcademiaSD",
+  "url": "https://huggingface.co/AcademiaSD/Ming-Image-NF4-for-LoRA-Training",
+  "created_at": "2026-10-19T02:27:05.000Z",
+  "updated_at": "2026-10-19T02:33:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "custom",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "custom",
+    "diffusers",
+    "safetensors",
+    "bailingmm_moe_v2_lite",
+    "ming-image",
+    "ming-image-0.1",
+    "nf4",
+    "bitsandbytes",
+    "lora-training",
+    "text-to-image",
+    "rgba",
+    "academiasd",
+    "en",
+    "zh",
+    "base_model:inclusionAI/Ming-Image-0.1-Design",
+    "base_model:quantized:inclusionAI/Ming-Image-0.1-Design",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16186128582,
+  "storage_human": "16.2 GB",
+  "base_model": "inclusionAI/Ming-Image-0.1-Design",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nonton Video Bokep Indonesia Viral Terbaru | IndoAV",
+      "url": "https://indoavku.com/",
+      "snippet": "IndoAV menyajikan koleksi video bokep Indonesia viral terbaru yang bisa ditonton dan diunduh gratis dalam kualitas Full HD di …"
+    },
+    {
+      "title": "Indian videos - page 1 - at Total Fuck Tube",
+      "url": "https://totalfucktube.com/c/indian/1.html",
+      "snippet": "Indian chicks are wild lovers, and now you're going to see why. They are satisfying their lovers sucking, kissing and riding their sweet …"
+    },
+    {
+      "title": "AVTub HD - Nonton Bokep Indo HD dan JAV Sub Indo Resolusi Tinggi",
+      "url": "https://avtubhd.site/",
+      "snippet": "Sep 20, 2026 · AVTub HD mengumpulkan bokep cewek indonesia viral: bokep indo, jilbab, JAV sub indo, uncensored, sampai …"
+    },
+    {
+      "title": "AVTub - Nonton Bokep Lokal Sex Indo",
+      "url": "https://avtub.cx/",
+      "snippet": "Link Nonton Situs AVTub Terbaru Bokep Indonesia Seks Cantik Tiktokers Artis Chindo Model Viral Update Terbaru Live Bugil"
+    },
+    {
+      "title": "AVTub - Nonton Bokep Indo Seks Live",
+      "url": "http://66.29.129.161/",
+      "snippet": "Link Terbaru AVTub Streaming BokepIndo Asupan Bokep TV Hijab Lokal Tante Indo Prank Ojol Live Bugil Viral Setiap Hari HD"
+    }
+  ]
+}

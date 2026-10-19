@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "JakTheTrippr/Phi-4-reasoning",
+  "slug": "jakthetrippr-phi-4-reasoning",
+  "author": "JakTheTrippr",
+  "url": "https://huggingface.co/JakTheTrippr/Phi-4-reasoning",
+  "created_at": "2026-10-19T16:49:52.000Z",
+  "updated_at": "2026-10-19T16:49:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "phi3",
+    "text-generation",
+    "phi",
+    "nlp",
+    "math",
+    "code",
+    "chat",
+    "conversational",
+    "reasoning",
+    "en",
+    "arxiv:2504.21318",
+    "base_model:microsoft/phi-4",
+    "base_model:finetune:microsoft/phi-4",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14659507200,
+  "parameters_human": "14.66B",
+  "storage_bytes": 29319042992,
+  "storage_human": "29.3 GB",
+  "base_model": "microsoft/phi-4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Homepage - Pathé",
+      "url": "https://www.pathe.com/en/",
+      "snippet": "From successful comedies to award-winning films around the world, Pathé reinvents itself with each film. With 1700 feature films in …"
+    },
+    {
+      "title": "Pathé - Nos films",
+      "url": "https://www.pathe.com/fr/films/",
+      "snippet": "Sep 25, 2026 · Chaque année, Pathé s’implique dans la production et la distribution de films qui font battre le coeur des spectateurs. …"
+    },
+    {
+      "title": "Please Login - vpn.pathe.com",
+      "url": "https://vpn.pathe.com/remote/login",
+      "snippet": "Token clock drift detected. Please input the next code and continue. Login Skip Launch FortiClient SSO Login"
+    },
+    {
+      "title": "Pathé",
+      "url": "https://www.pathe.com/",
+      "snippet": "Pionnier du cinéma créateur d'émotions et de souvenirs, Pathé se réinvente à chaque film et propose sans cesse de nouvelles …"
+    },
+    {
+      "title": "Pathé - La Fondation Jérôme Seydoux-Pathé",
+      "url": "https://www.pathe.com/fr/fondation-jerome-seydoux-pathe/",
+      "snippet": "La Fondation Jérôme Seydoux-Pathé veille à la conservation et la transmission du patrimoine de la société. Elle regroupe également …"
+    }
+  ]
+}

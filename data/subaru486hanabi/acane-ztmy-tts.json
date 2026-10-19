@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Subaru486Hanabi/Acane-ZTMY-TTS",
+  "slug": "subaru486hanabi-acane-ztmy-tts",
+  "author": "Subaru486Hanabi",
+  "url": "https://huggingface.co/Subaru486Hanabi/Acane-ZTMY-TTS",
+  "created_at": "2026-10-19T02:42:03.000Z",
+  "updated_at": "2026-10-19T02:48:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 328712456,
+  "storage_human": "329 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Manuels pdf disponibles DELTA DORE Driver 520 / GP 500",
+      "url": "https://www.manuels.solutions/commander_document.php?ctexte=DELTA%20DORE%20Driver%20520%20/%20GP%20500",
+      "snippet": "Le mode d'emploi contient tout ce qu'il vous faut savoir pour optimiser l'utilisation DELTA DORE DRIVER 520 en toute sécurité, ainsi …"
+    },
+    {
+      "title": "Télécharger DELTA DORE Driver 520 / GP 500 (Français - Manuel d ...",
+      "url": "https://www.manuels.solutions/notice_manuel.php?iddocument=D5hxc4dnef",
+      "snippet": "Notice d'installation DELTA DORE Driver 520 / GP 500 - Ce manuel d'installation (ou notice de montage) permet de préparer …"
+    },
+    {
+      "title": "Delta Dore GP 500 : notice installation et compatibilité Linky",
+      "url": "https://noticiel.com/delta-dore-gp-500-notice/",
+      "snippet": "Notice Delta Dore GP 500 : borniers, câblage téléinfo Linky, LED BUS et ECS, configuration Driver 520 et pannes courantes du …"
+    },
+    {
+      "title": "Documentations pour les professionnels - Delta Dore",
+      "url": "https://www.deltadore.fr/espace-pro/assistance/documentation",
+      "snippet": "Accédez aux documentations utiles à la préparation de vos chantiers. Consultez en ligne ou téléchargez les catalogues produits, …"
+    },
+    {
+      "title": "Notices produits - Delta Dore",
+      "url": "https://www.deltadore.fr/notices?SearchText=gp",
+      "snippet": "Trouvez rapidement son mode d'emploi en renseignant son nom ou sa référence ou utilisez le formulaire de recherche avancée pour …"
+    }
+  ]
+}

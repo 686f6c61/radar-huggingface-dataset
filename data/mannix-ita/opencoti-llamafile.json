@@ -5,7 +5,7 @@
   "author": "ManniX-ITA",
   "url": "https://huggingface.co/ManniX-ITA/opencoti-llamafile",
   "created_at": "2026-07-15T05:05:09.000Z",
-  "updated_at": "2026-10-17T10:17:18.000Z",
+  "updated_at": "2026-10-18T21:14:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -23,12 +23,12 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 882,
+  "downloads_30d": 883,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 130787704106,
-  "storage_human": "130.8 GB",
+  "storage_bytes": 135482911423,
+  "storage_human": "135.5 GB",
   "base_model": null,
   "formats": [
     "gguf"

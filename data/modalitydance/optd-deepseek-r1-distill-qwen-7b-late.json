@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "ModalityDance/OPTD-DeepSeek-R1-Distill-Qwen-7B-Late",
+  "slug": "modalitydance-optd-deepseek-r1-distill-qwen-7b-late",
+  "author": "ModalityDance",
+  "url": "https://huggingface.co/ModalityDance/OPTD-DeepSeek-R1-Distill-Qwen-7B-Late",
+  "created_at": "2026-10-19T16:36:09.000Z",
+  "updated_at": "2026-10-19T16:56:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "optd",
+    "on-policy-distillation",
+    "transition-distillation",
+    "reasoning",
+    "text-generation-inference",
+    "conversational",
+    "en",
+    "base_model:deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+    "base_model:finetune:deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242694682,
+  "storage_human": "15.2 GB",
+  "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Linda & Tibor (2026) #4 - \"new\" apartment - Page 27 - Linda & Tibor …",
+      "url": "https://camcaps.net/forums/topic/53380-linda-tibor-2026-4-new-apartment/page/27/",
+      "snippet": "Mar 19, 2026 · Linda & Tibor (01/15/17) All Activity Home Forums Reallifecam.com Singles / Couples - Czech Rep., Montenegro, …Read more"
+    },
+    {
+      "title": "Topic [tuto] - Débloquer toutes les caméra de reallife",
+      "url": "https://www.jeuxvideo.com/forums/42-51-40574330-1-0-1-0-tuto-debloquer-toutes-les-camera-de-reallife.htm",
+      "snippet": "Aug 11, 2015 · vous savez, ce fameux site ou l'on peut matter des couples durant leurs lifes... Eh bien, voici le tuto pour débloquer …"
+    },
+    {
+      "title": "Dasha & Sasha, Nancy (12/14/22) - CamCaps.Net",
+      "url": "https://camcaps.net/forums/forum/1221-dasha-sasha-nancy-121422/",
+      "snippet": "Dec 26, 2025 · Dasha & Sasha, Nancy (2025) #1 1 2 3 4 30 By Pete1960, December 28, 2024 355 replies 37.2k views Pete1960 …"
+    },
+    {
+      "title": "[RealLifeCam] Deux trois liens sur le forum Blabla 15-18 ans - 25-08 ...",
+      "url": "https://www.jeuxvideo.com/forums/42-50-48184145-1-0-1-0-reallifecam-deux-trois-liens.htm",
+      "snippet": "Aug 25, 2016 · Accueil Tous les forums Forum Blabla 15-18 ans Topic [RealLifeCam] Deux trois liens Liste des sujets"
+    },
+    {
+      "title": "Masha (10/13/15 - 08/22/24) - CamCaps.Net",
+      "url": "https://camcaps.net/forums/forum/68-masha-101315-082224/",
+      "snippet": "Jul 11, 2024 · Reallifecam - 6 Archived Apartments (2024) All Activity Home Forums Reallifecam.com RLC Archived Apts. (Total: …"
+    }
+  ]
+}

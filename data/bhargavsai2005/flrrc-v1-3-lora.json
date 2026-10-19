@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "bhargavsai2005/flrrc-v1.3-lora",
+  "slug": "bhargavsai2005-flrrc-v1-3-lora",
+  "author": "bhargavsai2005",
+  "url": "https://huggingface.co/bhargavsai2005/flrrc-v1.3-lora",
+  "created_at": "2026-10-19T18:05:36.000Z",
+  "updated_at": "2026-10-19T18:18:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en",
+    "te"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "flrrc",
+    "decision-engine",
+    "telugu",
+    "en",
+    "te",
+    "base_model:TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+    "base_model:adapter:TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12656096,
+  "storage_human": "13 MB",
+  "base_model": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Can't recieve emails from Pornhub, how do i fix this? - Gmail Community",
+      "url": "https://support.google.com/mail/thread/17086155/can-t-recieve-emails-from-pornhub-how-do-i-fix-this?hl=en",
+      "snippet": "This help content & informationGeneral Help Center experience Search"
+    },
+    {
+      "title": "YouTube Help",
+      "url": "https://support.google.com/youtube/?hl=en",
+      "snippet": "Official YouTube Help Center where you can find tips and tutorials on using YouTube and other answers to frequently asked questions."
+    },
+    {
+      "title": "Supprimer mon compte pornhub - Forum Réseaux sociaux",
+      "url": "https://forums.commentcamarche.net/forum/affich-37008466-supprimer-mon-compte-pornhub",
+      "snippet": "Dec 23, 2020 · Bonjour, comment je supprimer mon compte pornhub Configuration: Windows / Chrome 87.0.4280.88..."
+    },
+    {
+      "title": "Supprimer compte pornhub - Forum Réseaux sociaux",
+      "url": "https://forums.commentcamarche.net/forum/affich-36953588-supprimer-compte-pornhub",
+      "snippet": "Nov 20, 2020 · Bonjour, \"Pour supprimer votre compte, utilisez le menu déroulant en haut à droite de la page contenant votre photo …"
+    },
+    {
+      "title": "Download and install Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=en-GB&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can download and install the Chrome web browser at no charge, and use it to browse the web."
+    }
+  ]
+}

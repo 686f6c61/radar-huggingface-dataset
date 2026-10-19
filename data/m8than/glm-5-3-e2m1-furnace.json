@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "m8than/GLM-5.3-E2M1-Furnace",
+  "slug": "m8than-glm-5-3-e2m1-furnace",
+  "author": "m8than",
+  "url": "https://huggingface.co/m8than/GLM-5.3-E2M1-Furnace",
+  "created_at": "2026-10-19T18:41:02.000Z",
+  "updated_at": "2026-10-19T18:55:09.000Z",
+  "license": "glm-5.3",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "furnace",
+    "e2m1",
+    "fp4",
+    "text-generation",
+    "base_model:zai-org/GLM-5.3",
+    "base_model:quantized:zai-org/GLM-5.3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 251603738920,
+  "storage_human": "251.6 GB",
+  "base_model": "zai-org/GLM-5.3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Online Python - IDE, Editor, Compiler, Interpreter",
+      "url": "https://www.online-python.com/",
+      "snippet": "Online Python IDE Build, run, and share Python code online for free with the help of online-integrated python's development …"
+    },
+    {
+      "title": "Online Python - IDE, Editor, Compiler, Interpreter",
+      "url": "https://www.online-python.com/D2Fk8VPtol",
+      "snippet": "Online Python IDE Build, Run & Share Python code online using online-python's IDE for free. It's one of the quick, robust, powerful …"
+    },
+    {
+      "title": "Learn Python Programming - Online-Python",
+      "url": "https://learn.online-python.com/",
+      "snippet": "Master Python programming with comprehensive tutorials, interactive exercises, live coding environment and challenging quizzes. …"
+    },
+    {
+      "title": "Python Playground - Online Python Editor",
+      "url": "https://learn.online-python.com/playground",
+      "snippet": "Write, run and share Python code online in our interactive Python playground. Perfect for experimenting, learning and testing Python …"
+    },
+    {
+      "title": "List Comprehensions - Learn Python",
+      "url": "https://portal.online-python.com/learn/list-comprehensions",
+      "snippet": "Build lists in a single readable line with Python list comprehensions. Add conditions, use if-else inside them, and write dictionary and …"
+    }
+  ]
+}

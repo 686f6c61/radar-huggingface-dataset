@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "Av1447/Health",
+  "slug": "av1447-health",
+  "author": "Av1447",
+  "url": "https://huggingface.co/Av1447/Health",
+  "created_at": "2026-10-19T18:12:58.000Z",
+  "updated_at": "2026-10-19T18:26:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "sklearn",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sklearn",
+    "joblib",
+    "onnx",
+    "tabular-classification",
+    "healthcare",
+    "medical",
+    "disease-prediction",
+    "ensemble",
+    "scikit-learn",
+    "en",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6215081,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Disease Classification",
+      "dataset": null,
+      "metric": "Test Accuracy",
+      "value": 0.1333
+    }
+  ],
+  "sources": []
+}

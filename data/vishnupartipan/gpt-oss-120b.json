@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "vishnupartipan/gpt-oss-120b",
+  "slug": "vishnupartipan-gpt-oss-120b",
+  "author": "vishnupartipan",
+  "url": "https://huggingface.co/vishnupartipan/gpt-oss-120b",
+  "created_at": "2026-10-19T16:53:13.000Z",
+  "updated_at": "2026-10-19T16:53:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_oss",
+    "text-generation",
+    "vllm",
+    "conversational",
+    "arxiv:2508.10925",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "mxfp4",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 116829156672,
+  "parameters_human": "116.83B",
+  "storage_bytes": 195763884726,
+  "storage_human": "195.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Potage de chou-fleur et haricots blancs à l’érable",
+      "url": "https://erableduquebec.ca/recettes/potage-de-chou-fleur-et-haricots-blancs-a-lerable/",
+      "snippet": "Potage de chou-fleur et haricots blancs à l’érable À propos de l’érable Il existe quatre classes de sirop d’érable que l’on distingue par …"
+    },
+    {
+      "title": "Purée de haricots et chou-fleur - Recette | fooby.ch",
+      "url": "https://fooby.ch/fr/recettes/26732/puree-de-haricots-et-chou-fleur",
+      "snippet": "Essayez notre nouvelle recette sur FOOBY: Purée de haricots et chou-fleur. Ou découvrez-en d'autres dans notre catégorie Apéritif …"
+    },
+    {
+      "title": "Chou-fleur entier au cari et purée de haricots blancs",
+      "url": "https://www.kpourkatrine.com/fr/recettes/chou-fleur-entier-au-cari-et-puree-de-haricots-blancs/",
+      "snippet": "Purée d’haricots blancs et oignons caramélisés Dans une poêle antiadhésive chauffer l’huile à feu moyen-élevé, caraméliser l’oignon …"
+    },
+    {
+      "title": "Recettes Avec Chou-Fleur Et Haricots Verts - Supercook",
+      "url": "https://www.supercook.com/recipes/fr/recettes-avec-chou-fleur-et-haricots-verts/",
+      "snippet": "Salade de chou-fleur, haricots et féta chou-fleur haricots verts féta huile d'olive extra vierge citron vinaigre balsamique oignon …"
+    },
+    {
+      "title": "Gratin de chou-fleur aux pommes de terre - Mes recettes faciles",
+      "url": "https://www.mesrecettesfaciles.fr/recipe/gratin-de-chou-fleur-aux-pommes-de-terre",
+      "snippet": "Répartissez-les dans un plat à gratin et déposez par-dessus les fleurettes de chou-fleur. Recouvrez les légumes de sauce béchamel, …"
+    }
+  ]
+}

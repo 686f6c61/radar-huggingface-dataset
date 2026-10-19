@@ -5,7 +5,7 @@
   "author": "ggml-org",
   "url": "https://huggingface.co/ggml-org/Laguna-S-2.1-GGUF",
   "created_at": "2026-08-03T13:40:53.000Z",
-  "updated_at": "2026-08-23T02:01:24.000Z",
+  "updated_at": "2026-10-19T14:14:48.000Z",
   "license": "openmdw-1.1",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -23,7 +23,7 @@
     "conversational"
   ],
   "likes": 2,
-  "downloads_30d": 769,
+  "downloads_30d": 771,
   "trending_score": 0,
   "parameters": 117561977600,
   "parameters_human": "117.56B",

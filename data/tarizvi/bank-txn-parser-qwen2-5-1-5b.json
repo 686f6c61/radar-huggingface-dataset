@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "TARizvi/bank-txn-parser-qwen2.5-1.5b",
+  "slug": "tarizvi-bank-txn-parser-qwen2-5-1-5b",
+  "author": "TARizvi",
+  "url": "https://huggingface.co/TARizvi/bank-txn-parser-qwen2.5-1.5b",
+  "created_at": "2026-10-19T18:04:06.000Z",
+  "updated_at": "2026-10-19T19:49:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen2",
+    "text-generation",
+    "qlora",
+    "peft",
+    "lora",
+    "finance",
+    "banking",
+    "india",
+    "upi",
+    "information-extraction",
+    "structured-output",
+    "json",
+    "conversational",
+    "en",
+    "dataset:TARizvi/indian-bank-txn-parsing",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 4819372484,
+  "storage_human": "4.8 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ovule - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ovule",
+      "snippet": "The ovule is attached to the placenta by a stalk called a \"funicle\" that nourishes it. On the basis of the relative position of micropyle, …Read more"
+    },
+    {
+      "title": "Ovule – Definition, Structure, Types, Diagram, Functions",
+      "url": "https://biologynotesonline.com/ovule-definition-structure-types-diagram-functions/",
+      "snippet": "Aug 31, 2024 · An ovule is a small structure within the ovary of a plant that contains the female gamete (egg cell) and develops into a …"
+    },
+    {
+      "title": "Ovule: Structure, Type, Diagram and Parts | Vedantu",
+      "url": "https://www.vedantu.com/neet/ovule",
+      "snippet": "An ovule is the structure present inside the ovary of flowering plants where the female gametophyte develops. It contains the …"
+    },
+    {
+      "title": "Ovule (botanique) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Ovule_(botanique)",
+      "snippet": "Structure de l'ovule L’ovule des végétaux est très différent d’un gamète animal : il est composé d'un sac embryonnaire composé de …"
+    },
+    {
+      "title": "Ovule — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Ovule",
+      "snippet": "Un ovule est une cellule sexuelle (un gamète) produite par les femelles des animaux. Il semble probable que la reproduction sexuée …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "CARTERAARON/generation",
+  "slug": "carteraaron-generation",
+  "author": "CARTERAARON",
+  "url": "https://huggingface.co/CARTERAARON/generation",
+  "created_at": "2026-10-19T18:18:38.000Z",
+  "updated_at": "2026-10-19T18:18:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "efficientformer",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Insta360-Studio-Linux - GitHub",
+      "url": "https://github.com/NiklasVoigt/Insta360-Studio-Linux",
+      "snippet": "Insta360 Studio works with wine under Ubuntu & Arch/Manjaro (with cuda) tested up to v5.0.0"
+    },
+    {
+      "title": "Ai Aaron Carter AI Voice Generator - Voicestars",
+      "url": "https://www.voicestars.co/ai-voice/ai-aaron-carter",
+      "snippet": "Ai Aaron Carter AI voice was made by training a neural network to transform any voice into Ai Aaron Carter's voice. Similar AI Voices. AI Ariana Grande picture."
+    },
+    {
+      "title": "GitHub - stechdrive/Insta360Convert-GUI: GUI tool to extract multiple ...",
+      "url": "https://github.com/stechdrive/Insta360Convert-GUI",
+      "snippet": "GUI tool to extract multiple perspective views (pitch, yaw, FOV) from 360° equirectangular videos as MP4 clips or image sequences, …"
+    },
+    {
+      "title": "Generative AI - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Generative_AI",
+      "snippet": "Generative artificial intelligence (GenAI) is a subfield of artificial intelligence (AI) that uses generative models to generate text, images, videos, ..."
+    },
+    {
+      "title": "insta_hack.py · GitHub",
+      "url": "https://gist.github.com/eteamin/78a7753e2555275c03bab199c8cc7022",
+      "snippet": "Sep 21, 2017 · GitHub Gist: instantly share code, notes, and snippets."
+    }
+  ]
+}

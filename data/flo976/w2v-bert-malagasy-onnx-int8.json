@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Flo976/w2v-bert-malagasy-onnx-int8",
+  "slug": "flo976-w2v-bert-malagasy-onnx-int8",
+  "author": "Flo976",
+  "url": "https://huggingface.co/Flo976/w2v-bert-malagasy-onnx-int8",
+  "created_at": "2026-10-19T16:31:06.000Z",
+  "updated_at": "2026-10-19T17:34:28.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "onnx",
+  "languages": [
+    "mg"
+  ],
+  "tags": [
+    "onnx",
+    "wav2vec2-bert",
+    "automatic-speech-recognition",
+    "malagasy",
+    "int8",
+    "quantized",
+    "ctc",
+    "w2v-bert-2.0",
+    "mg",
+    "base_model:Flo976/w2v-bert-malagasy",
+    "base_model:quantized:Flo976/w2v-bert-malagasy",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 611502383,
+  "storage_human": "612 MB",
+  "base_model": "Flo976/w2v-bert-malagasy",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

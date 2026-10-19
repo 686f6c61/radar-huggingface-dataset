@@ -5,7 +5,7 @@
   "author": "1234vlad",
   "url": "https://huggingface.co/1234vlad/mirror",
   "created_at": "2026-05-24T21:20:24.000Z",
-  "updated_at": "2026-10-18T20:13:49.000Z",
+  "updated_at": "2026-10-18T23:28:19.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -19,12 +19,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 11,
+  "downloads_30d": 26,
   "trending_score": 0,
   "parameters": 11766034176,
   "parameters_human": "11.77B",
-  "storage_bytes": 1275813904781,
-  "storage_human": "1275.8 GB",
+  "storage_bytes": 1281947605145,
+  "storage_human": "1281.9 GB",
   "base_model": null,
   "formats": [
     "gguf"

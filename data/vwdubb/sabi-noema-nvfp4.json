@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "vwdubb/sabi-noema-NVFP4",
+  "slug": "vwdubb-sabi-noema-nvfp4",
+  "author": "vwdubb",
+  "url": "https://huggingface.co/vwdubb/sabi-noema-NVFP4",
+  "created_at": "2026-10-19T16:26:22.000Z",
+  "updated_at": "2026-10-19T16:29:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "agentic",
+    "reinforcement-learning",
+    "tool-use",
+    "hybrid-attention",
+    "qwen3.8",
+    "conversational",
+    "text-generation",
+    "base_model:sabicap/sabi-noema",
+    "base_model:quantized:sabicap/sabi-noema",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18164649200,
+  "parameters_human": "18.16B",
+  "storage_bytes": 21072296872,
+  "storage_human": "21.1 GB",
+  "base_model": "sabicap/sabi-noema",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vidéos porno et films de sexe gratuits - Porno, XXX, Porn Tube",
+      "url": "https://fr.pornhub.com/",
+      "snippet": "Pornhub est le site tube pornographique le plus complet et le plus révolutionnaire. Nous offrons des vidéos porno en streaming, des …Read more"
+    },
+    {
+      "title": "Sophie Dee Vidéos Porno - Profil Vérifié de Pornstar | Pornhub",
+      "url": "https://fr.pornhub.com/pornstar/sophie-dee",
+      "snippet": "Venez voir les meilleures vidéos pornos, images, gifs et playlists de la pornstar Sophie Dee. Parcourez le contenu qu'elle a uploadé …"
+    },
+    {
+      "title": "Nicole Aniston Vidéos Porno - Profil Vérifié de Pornstar | Pornhub",
+      "url": "https://fr.pornhub.com/pornstar/nicole-aniston",
+      "snippet": "Venez voir les meilleures vidéos pornos, images, gifs et playlists de la pornstar Nicole Aniston. Parcourez le contenu qu'elle a …"
+    },
+    {
+      "title": "Blowjob – Vidéos Porno | Pornhub.com",
+      "url": "https://fr.pornhub.com/video/search?search=blowjob",
+      "snippet": "Regarde les vidéos porno de Blowjob gratuitement, ici sur Pornhub.com. Découvre la collection plus importante de films et de clips …"
+    },
+    {
+      "title": "Vidéos porno HD : Les filles les plus sexy en haute définition | Pornhub",
+      "url": "https://fr.pornhub.com/hd",
+      "snippet": "Porno HD gratuit sur Pornhub.com. Vous cherchez des vidéos de sexe en haute définition dans chaque niche XXX triple ? Le …"
+    }
+  ]
+}

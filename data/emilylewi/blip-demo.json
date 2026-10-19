@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "emilylewi/blip-demo",
+  "slug": "emilylewi-blip-demo",
+  "author": "emilylewi",
+  "url": "https://huggingface.co/emilylewi/blip-demo",
+  "created_at": "2026-10-19T18:15:33.000Z",
+  "updated_at": "2026-10-19T18:15:39.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LinkedIn : s’identifier ou s’inscrire",
+      "url": "https://fr.linkedin.com/",
+      "snippet": "1 milliard de membres | Gérez votre image professionnelle. Constituez votre réseau professionnel et communiquez avec celui-ci. …"
+    },
+    {
+      "title": "Aurelien Hamelle - TotalEnergies | LinkedIn",
+      "url": "https://fr.linkedin.com/in/aurelien-hamelle-5775271/fr",
+      "snippet": "Nov 5, 2022 · Expérience : TotalEnergies · Formation : Sciences Po · Lieu : Paris et périphérie · 500 relations ou plus sur LinkedIn. …"
+    },
+    {
+      "title": "如何有效利用 LinkedIn？ - 知乎",
+      "url": "https://www.zhihu.com/question/21308578",
+      "snippet": "Linkedin已经发布中文版了，答主太忙还没更新回答。下面暂时只讨论Linkedin英文版的使用技巧。如果你想持续获得更多的Linkedin …"
+    },
+    {
+      "title": "如何在linkedin上看别人资料不显示到访历史？ - 知乎",
+      "url": "https://www.zhihu.com/question/24255115",
+      "snippet": "根据领英的官方页面提示，只要开通了隐身模式，对方无论是否是VIP（高级账号），都无法看到您的访客记录。 以隐身或半隐身模式 …"
+    },
+    {
+      "title": "Mathieu Godart - Paris et périphérie - LinkedIn",
+      "url": "https://fr.linkedin.com/in/mathieugodart",
+      "snippet": "Expérience : AXA en France · Formation : London Business School · Lieu : Paris et périphérie · 500 relations ou plus sur LinkedIn. …"
+    }
+  ]
+}

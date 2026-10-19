@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "zjj1993/Qwen3.8-Flash-Next-uncensored-china",
+  "slug": "zjj1993-qwen3-8-flash-next-uncensored-china",
+  "author": "zjj1993",
+  "url": "https://huggingface.co/zjj1993/Qwen3.8-Flash-Next-uncensored-china",
+  "created_at": "2026-10-19T03:17:26.000Z",
+  "updated_at": "2026-10-19T03:17:27.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "control-vector",
+    "steering",
+    "censorship",
+    "refusal-direction",
+    "activation-steering",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 16,
+  "downloads_30d": 10,
+  "trending_score": 16,
+  "parameters": 120320,
+  "parameters_human": "120320",
+  "storage_bytes": 975168,
+  "storage_human": "975168 B",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MODELS.com's Top Rankings",
+      "url": "https://models.com/rankings/",
+      "snippet": "Industry Icons New Supers The Money List Top 50 Male Models The Hot List Runway Social"
+    },
+    {
+      "title": "How to Talk to Your Teen About Pornography - The New York Times",
+      "url": "https://www.nytimes.com/2024/12/12/health/pornography-adolescents-internet.html",
+      "snippet": "Dec 12, 2024 · Odds are your adolescent has already encountered online pornography. Your role is to openly address it, scholars say."
+    },
+    {
+      "title": "Maui Now | Breaking Maui News, Weather & Live Updates",
+      "url": "https://mauinow.com/",
+      "snippet": "Get real-time Maui breaking news, live weather alerts, local traffic, and community updates from Maui Now. Updated 24/7 across the …"
+    },
+    {
+      "title": "The Seattle Times | Local news, sports, business, politics ...",
+      "url": "https://www.seattletimes.com/",
+      "snippet": "Local news, sports, business, politics, entertainment, travel, restaurants and opinion for Seattle and the Pacific Northwest."
+    },
+    {
+      "title": "Report: Young teens are stumbling across porn. Here’s how they",
+      "url": "https://www.cnn.com/2023/01/10/health/teens-pornography-report-wellness/",
+      "snippet": "Jan 10, 2023 · Hope as we may that kids aren’t seeing pornography online, new data shows they are. Experts urge families to learn …"
+    }
+  ]
+}

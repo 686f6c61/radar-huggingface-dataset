@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "Zainulabedin1/battery-soh-estimation",
+  "slug": "zainulabedin1-battery-soh-estimation",
+  "author": "Zainulabedin1",
+  "url": "https://huggingface.co/Zainulabedin1/battery-soh-estimation",
+  "created_at": "2026-10-19T02:51:05.000Z",
+  "updated_at": "2026-10-19T02:51:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "ridge-regression",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1625,
+  "storage_human": "1625 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Seven | Fortnite Wiki | Fandom",
+      "url": "https://fortnite.fandom.com/wiki/The_Seven",
+      "snippet": "The New Seven, also known as The Seven, are a group of heroes dedicated to protecting The Zero Point, opposing the Imagined …"
+    },
+    {
+      "title": "Fortnite Story - Fortnite.GG",
+      "url": "https://fortnite.gg/story?page=seven",
+      "snippet": "A compendium based upon the live events, characters & comics from the Fortnite: Battle Royale storyline."
+    },
+    {
+      "title": "The Seven (Fortnite) | Heroes Wiki | Fandom",
+      "url": "https://hero.fandom.com/wiki/The_Seven_(Fortnite)",
+      "snippet": "The Seven's artifact named \"Looper Calendar\" is found deep within Kado Thorne's estate. It features symbols of rest of The Seven …"
+    },
+    {
+      "title": "The Seven - Most Used Fortnite Skins",
+      "url": "https://fortnite.gg/most-used-skins?list=the-seven",
+      "snippet": "Most Used Skins The Seven Chapter 7, Season 4 All Time"
+    },
+    {
+      "title": "Who Are The Seven in Fortnite? The Complete Storyline Explained",
+      "url": "https://www.theclick.gg/who-are-the-seven-in-fortnite-the-complete-storyline-explained/",
+      "snippet": "1 day ago · What started as a single strange rocket launch slowly became Fortnite’s central storyline, with The Seven positioned as …"
+    }
+  ]
+}

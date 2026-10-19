@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Nirvana-AI/umi-toss-umi-dp-ablations",
+  "slug": "nirvana-ai-umi-toss-umi-dp-ablations",
+  "author": "Nirvana-AI",
+  "url": "https://huggingface.co/Nirvana-AI/umi-toss-umi-dp-ablations",
+  "created_at": "2026-10-19T18:26:59.000Z",
+  "updated_at": "2026-10-19T18:27:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "umi",
+    "tossing",
+    "ablation",
+    "diffusion-policy",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5764203441,
+  "storage_human": "5.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nirvana (band) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nirvana_(band)",
+      "snippet": "Nirvana was an American rock band formed in Aberdeen, Washington, in 1987. Founded by lead singer and guitarist Kurt Cobain …"
+    },
+    {
+      "title": "Nirvana (groupe) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Nirvana_(groupe)",
+      "snippet": "Nirvana est introduit au Rock and Roll Hall of Fame en 2014. DGC Records publiant régulièrement des compilations, des albums live …"
+    },
+    {
+      "title": "Nirvana - YouTube",
+      "url": "https://www.youtube.com/channel/UCFMZHIQMgBXTSxsr86Caazw",
+      "snippet": "A limited edition 2LP colored version is also available on Nirvana.com while supplies last. Order & listen here: …"
+    },
+    {
+      "title": "Nirvana (monde indien) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Nirvana_%28monde_indien%29",
+      "snippet": "Dans le langage familier, nirvana désigne un « bonheur suprême », un plaisir des sens atteint notamment par la sexualité, des objets …"
+    },
+    {
+      "title": "Home - Nirvana",
+      "url": "https://www.nirvana.com/",
+      "snippet": "Nirvana – In Bloom (Official Music Video) Play Video Nirvana – Heart-Shaped Box (Director’s Cut)"
+    }
+  ]
+}

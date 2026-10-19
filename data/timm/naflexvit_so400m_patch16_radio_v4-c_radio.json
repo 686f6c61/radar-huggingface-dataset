@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "timm/naflexvit_so400m_patch16_radio_v4.c_radio",
+  "slug": "timm-naflexvit_so400m_patch16_radio_v4-c_radio",
+  "author": "timm",
+  "url": "https://huggingface.co/timm/naflexvit_so400m_patch16_radio_v4.c_radio",
+  "created_at": "2026-10-19T18:39:28.000Z",
+  "updated_at": "2026-10-19T18:39:37.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "safetensors",
+    "image-feature-extraction",
+    "transformers",
+    "arxiv:2601.17237",
+    "arxiv:2412.07679",
+    "arxiv:2502.16025",
+    "arxiv:2410.01680",
+    "arxiv:2312.06709",
+    "base_model:nvidia/C-RADIOv4-SO400M",
+    "base_model:finetune:nvidia/C-RADIOv4-SO400M",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 431238384,
+  "parameters_human": "431.2M",
+  "storage_bytes": 1725136652,
+  "storage_human": "1.7 GB",
+  "base_model": "nvidia/C-RADIOv4-SO400M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AZNude - Nude Celebrities from A to Z",
+      "url": "https://www.aznude.com/",
+      "snippet": "Welcome to AZNUDE! We have a large, free, every day growing universe of celebrity nudity where stars from all movies and series …"
+    },
+    {
+      "title": "AZNude - Nude Celebrities from A to Z",
+      "url": "https://www.aznude.com/search.html",
+      "snippet": "Welcome to AZNUDE! We have a large, free, every day growing universe of celebrity nudity where stars from all movies and series …"
+    },
+    {
+      "title": "AZMen - Nude Male Celebrities from A to Z",
+      "url": "https://www.azmen.com/",
+      "snippet": "3 days ago · Resources Contact Us 2257 Exempt FAQ & Support System Status Request Content Send Feedback Cookie Policy …"
+    },
+    {
+      "title": "Browse Full Nudity Videos - Page 1 - AZNude",
+      "url": "https://www.aznude.com/browse/tags/vids/fullnudity/1.html",
+      "snippet": "Page 1: Browse Full Nudity Nude Celebrity Videos at AZNude. 100% free, no registration required."
+    },
+    {
+      "title": "Top 100 Videos of all Time - AZNude",
+      "url": "https://www.aznude.com/top100videos.html",
+      "snippet": "Explore the Top 100 Videos of all Time on AZNude"
+    }
+  ]
+}

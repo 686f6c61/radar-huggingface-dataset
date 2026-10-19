@@ -1,0 +1,112 @@
+{
+  "schema": 1,
+  "id": "electroglyph/LFM2.5-24B-A2B-uncensored",
+  "slug": "electroglyph-lfm2-5-24b-a2b-uncensored",
+  "author": "electroglyph",
+  "url": "https://huggingface.co/electroglyph/LFM2.5-24B-A2B-uncensored",
+  "created_at": "2026-10-19T04:04:59.000Z",
+  "updated_at": "2026-10-19T11:52:54.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "es",
+    "pt",
+    "it",
+    "vi",
+    "th",
+    "id",
+    "hi",
+    "ru",
+    "pl"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2_moe",
+    "text-generation",
+    "liquid",
+    "lfm2.5",
+    "edge",
+    "moe",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "reproducible",
+    "conversational",
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "es",
+    "pt",
+    "it",
+    "vi",
+    "th",
+    "id",
+    "hi",
+    "ru",
+    "pl",
+    "arxiv:2511.23404",
+    "base_model:LiquidAI/LFM2.5-24B-A2B",
+    "base_model:finetune:LiquidAI/LFM2.5-24B-A2B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 23971585280,
+  "parameters_human": "23.97B",
+  "storage_bytes": 47962049215,
+  "storage_human": "48.0 GB",
+  "base_model": "LiquidAI/LFM2.5-24B-A2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Netflix - Watch TV Shows Online, Watch Movies Online",
+      "url": "https://www.netflix.com/",
+      "snippet": "Watch Netflix movies & TV shows online or stream right to your smart TV, game console, PC, Mac, mobile, tablet and more."
+    },
+    {
+      "title": "Netflix",
+      "url": "https://www.netflix.com/fr/login",
+      "snippet": "Regardez des films et des séries Netflix en ligne, sur votre smart TV, console de jeu, PC, Mac, smartphone, tablette et bien plus."
+    },
+    {
+      "title": "Netflix",
+      "url": "https://app.netflix.com/signup",
+      "snippet": "Choose a Netflix subscription plan that's right for you. Downgrade, upgrade or cancel any time."
+    },
+    {
+      "title": "Netflixが利用できない | Netflixエラーコード | Netflixヘルプセンター",
+      "url": "https://help.netflix.com/ja/troubleshooting",
+      "snippet": "ヘルプホームへ戻る Netflixが利用できない Netflixをご利用いただけない場合は、エラーコードやエラーメッセージ、または問題の …"
+    },
+    {
+      "title": "Netflix",
+      "url": "https://www.netflix.com/ar/login",
+      "snippet": "Disfruta películas y series en internet o en tu smart TV, consola de videojuegos, PC, Mac, dispositivo móvil, tablet y más."
+    }
+  ]
+}

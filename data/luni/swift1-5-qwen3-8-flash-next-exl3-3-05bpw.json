@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Luni/Swift1.5-Qwen3.8-Flash-Next-EXL3-3.05bpw",
+  "slug": "luni-swift1-5-qwen3-8-flash-next-exl3-3-05bpw",
+  "author": "Luni",
+  "url": "https://huggingface.co/Luni/Swift1.5-Qwen3.8-Flash-Next-EXL3-3.05bpw",
+  "created_at": "2026-10-19T16:39:24.000Z",
+  "updated_at": "2026-10-19T16:40:16.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen4_exp",
+    "exl3",
+    "exllamav3",
+    "3.05bpw",
+    "qwen",
+    "qwen3_8",
+    "moe",
+    "efficient-thinking",
+    "token-efficient",
+    "reasoning",
+    "text-generation",
+    "conversational",
+    "base_model:ukisai/Swift1.5-Qwen3.8-Flash-Next",
+    "base_model:quantized:ukisai/Swift1.5-Qwen3.8-Flash-Next",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26619330048,
+  "parameters_human": "26.62B",
+  "storage_bytes": 86075707312,
+  "storage_human": "86.1 GB",
+  "base_model": "ukisai/Swift1.5-Qwen3.8-Flash-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lunii | Conteuses et livres audio pour 0-14 ans",
+      "url": "https://lunii.com/fr-fr",
+      "snippet": "Avec les conteuses Ma 1ère Lunii, Ma Fabrique à Histoires & FLAM, Lunii réveille l'imaginaire et développe la créativité des enfants …"
+    },
+    {
+      "title": "Application Mobile ou Web | Lunii",
+      "url": "https://lunii.com/fr-fr/application-lunii",
+      "snippet": "Téléchargez en quelques clics l'application Lunii, indispensable pour associer votre compte Lunii à Ma Fabrique à Histoires ou FLAM …"
+    },
+    {
+      "title": "Lumni | Des vidéos, quiz et jeux gratuits pour réviser tes cours et ...",
+      "url": "https://www.lumni.fr/",
+      "snippet": "Lumni est une offre de contenus multimédias gratuits pour les élèves, parents, enseignants et médiateurs, qui permet un accès à la …"
+    },
+    {
+      "title": "Lunii : tous les produits de la marque Lunii (Enfant, Jouet ... - Fnac",
+      "url": "https://www.fnac.com/Lunii/m367853/w-4",
+      "snippet": "Retrouvez tous les produits Lunii au meilleur prix à la FNAC. En quelques clics, achetez en ligne ou commandez dans un magasin …"
+    },
+    {
+      "title": "Mon compte – Lunii",
+      "url": "https://support.lunii.com/hc/fr/categories/360000273657-Mon-compte",
+      "snippet": "Mon compte 📜 Retrouvez ici toutes les informations pour créer votre compte et le paramétrer"
+    }
+  ]
+}

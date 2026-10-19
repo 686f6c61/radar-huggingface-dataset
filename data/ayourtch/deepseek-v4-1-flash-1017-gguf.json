@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ayourtch/deepseek-v4.1-flash-1017-gguf",
+  "slug": "ayourtch-deepseek-v4-1-flash-1017-gguf",
+  "author": "ayourtch",
+  "url": "https://huggingface.co/ayourtch/deepseek-v4.1-flash-1017-gguf",
+  "created_at": "2026-10-19T16:20:12.000Z",
+  "updated_at": "2026-10-19T16:23:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "ds4",
+    "quantized",
+    "imatrix",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash",
+    "base_model:finetune:deepseek-ai/DeepSeek-V4.1-Flash",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 770707990,
+  "storage_human": "771 MB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Geny – Pronostics, partants et résultats PMU et PMH",
+      "url": "https://www.geny.com/",
+      "snippet": "Pronostics, partants, cotes et résultats des courses PMU et PMH : préparez vos paris hippiques et faites le papier gratuitement …"
+    },
+    {
+      "title": "Geny – Courses hippiques, pronostics et résultats PMU et PMH",
+      "url": "https://www.geny.com/challenge",
+      "snippet": "Avec Geny, mettez toutes les chances de votre côté en faisant le papier ! Retrouvez les partants, pronostics, interviews et cotes, les …"
+    },
+    {
+      "title": "Paris hippiques - Programme et résultats de toutes les courses et ...",
+      "url": "https://www.genybet.fr/reunions",
+      "snippet": "18 hours ago · 🔞 Les paris hippiques avec Genybet. Pariez en direct sur les courses ! Vidéo, pronostics, analyses, l'expertise de la …"
+    },
+    {
+      "title": "GENY PREDICTION CHALLENGE - GENYcourses",
+      "url": "https://www.geny.com/en/challenge",
+      "snippet": "With Geny, prepare your bets, find the runners, tips, interviews, PMU odds, the results of the quinté and the finishes and reports of all …"
+    },
+    {
+      "title": "Programme des courses hippiques du 2026-10-20 | Geny",
+      "url": "https://www.geny.com/reunions-courses-pmu/_ddemain",
+      "snippet": "Retrouvez toutes les courses ouvertes au pari en réseau physique ou en ligne des principaux opérateurs chaque jour sur geny.com. …"
+    }
+  ]
+}

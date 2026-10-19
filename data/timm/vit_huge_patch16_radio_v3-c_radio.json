@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "timm/vit_huge_patch16_radio_v3.c_radio",
+  "slug": "timm-vit_huge_patch16_radio_v3-c_radio",
+  "author": "timm",
+  "url": "https://huggingface.co/timm/vit_huge_patch16_radio_v3.c_radio",
+  "created_at": "2026-10-19T18:40:16.000Z",
+  "updated_at": "2026-10-19T18:40:24.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "safetensors",
+    "image-feature-extraction",
+    "transformers",
+    "arxiv:2412.07679",
+    "arxiv:2502.16025",
+    "arxiv:2410.01680",
+    "arxiv:2312.06709",
+    "base_model:nvidia/C-RADIOv3-H",
+    "base_model:finetune:nvidia/C-RADIOv3-H",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 631983360,
+  "parameters_human": "632.0M",
+  "storage_bytes": 2528122492,
+  "storage_human": "2.5 GB",
+  "base_model": "nvidia/C-RADIOv3-H",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yahoo Mail | Email with smart features and top-notch security",
+      "url": "https://fr.mail.yahoo.com/",
+      "snippet": "Yahoo Mail: Your smarter, faster, free email solution. Organize your inbox, protect your privacy, and tackle tasks efficiently with AI …"
+    },
+    {
+      "title": "Sign in | Yahoo",
+      "url": "https://login.yahoo.com/",
+      "snippet": "Sign in to access the best in class Yahoo Mail, breaking local, national and global news, finance, sports, music, movies... You get …"
+    },
+    {
+      "title": "Sign in | Yahoo - Yahoo Mail",
+      "url": "https://mail.yahoo.com/%C2",
+      "snippet": "Sign in to access the best in class Yahoo Mail, breaking local, national and global news, finance, sports, music, movies... You get …"
+    },
+    {
+      "title": "Yahoo! France | Mail, Météo, Recherche, Politique, Actualités, …",
+      "url": "https://fr.yahoo.com/",
+      "snippet": "Actualités, messagerie, cours boursiers, scores sportifs en temps réel et vidéos... Trouvez tout ce qu'il vous faut grâce à Yahoo !"
+    },
+    {
+      "title": "Yahoo! UK | Mail, Weather, Search, Politics, News, Finance, Sports …",
+      "url": "https://uk.yahoo.com/",
+      "snippet": "Latest news coverage, email, free stock quotes, live scores and video are just the beginning. Discover more every day at Yahoo!"
+    }
+  ]
+}

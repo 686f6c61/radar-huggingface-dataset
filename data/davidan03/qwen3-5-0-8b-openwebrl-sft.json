@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "davidan03/qwen3.5-0.8b-openwebrl-sft",
+  "slug": "davidan03-qwen3-5-0-8b-openwebrl-sft",
+  "author": "davidan03",
+  "url": "https://huggingface.co/davidan03/qwen3.5-0.8b-openwebrl-sft",
+  "created_at": "2026-10-19T18:19:25.000Z",
+  "updated_at": "2026-10-19T18:19:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "web-agent",
+    "browser-agent",
+    "openwebrl",
+    "llama-factory",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1107265600,
+  "parameters_human": "1.11B",
+  "storage_bytes": 2227398278,
+  "storage_human": "2.2 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OopsFamily Jessica Starling Family Cooking - Pornditt",
+      "url": "https://v.pornditt.com/videos/98576/oopsfamily-jessica-starling-family-cooking/",
+      "snippet": "All rights reserved.Read more"
+    },
+    {
+      "title": "Oops Family - Jewelz Blu - Stepsister’s Hot Milkshakes - 淫院小妹",
+      "url": "https://www.qxciw.com/video-uJrRcCZnAId/oops-family-jewelz-blu-stepsister-s-hot-milkshakes/",
+      "snippet": "Watch Oops Family - Jewelz Blu - Stepsister’s Hot Milkshakes. Duration: 34:24, available in: 1080p, 720p, 480p, 360p, 240p. …"
+    },
+    {
+      "title": "oOps Family (@oOpsFamily_) | X-Sou",
+      "url": "https://www.x-sou.com/en/u/oOpsFamily_",
+      "snippet": "Aug 14, 2026 · Download from X/Twitter, TikTok, YouTube, Instagram, and Douyin with fast processing and clean output. oOps …"
+    },
+    {
+      "title": "OopsFamily",
+      "url": "https://oopsfamily.com/docs/usc",
+      "snippet": "All models, actors, actresses and other persons who appear in any visual depiction of actual or simulated sexually explicit conduct …"
+    },
+    {
+      "title": "OopsFamily",
+      "url": "https://oopsfamily.com/profile",
+      "snippet": "All models appearing on this website are 18 years or older. All video, images and graphics are copyright. All rights reserved. For …"
+    }
+  ]
+}

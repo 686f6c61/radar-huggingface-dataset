@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "joneslily/matching-final-2024",
+  "slug": "joneslily-matching-final-2024",
+  "author": "joneslily",
+  "url": "https://huggingface.co/joneslily/matching-final-2024",
+  "created_at": "2026-10-19T03:08:45.000Z",
+  "updated_at": "2026-10-19T03:08:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Insta360-Studio-Linux - GitHub",
+      "url": "https://github.com/NiklasVoigt/Insta360-Studio-Linux",
+      "snippet": "Insta360 Studio works with wine under Ubuntu & Arch/Manjaro (with cuda) tested up to v5.0.0Read more"
+    },
+    {
+      "title": "GitHub - stechdrive/Insta360Convert-GUI: GUI tool to extract multiple ...",
+      "url": "https://github.com/stechdrive/Insta360Convert-GUI",
+      "snippet": "GUI tool to extract multiple perspective views (pitch, yaw, FOV) from 360° equirectangular videos as MP4 clips or image sequences, …"
+    },
+    {
+      "title": "insta_hack.py · GitHub",
+      "url": "https://gist.github.com/eteamin/78a7753e2555275c03bab199c8cc7022",
+      "snippet": "Sep 21, 2017 · GitHub Gist: instantly share code, notes, and snippets."
+    },
+    {
+      "title": "insta 360X5跟大疆的pocket 3有什么不同? - 知乎",
+      "url": "https://www.zhihu.com/question/1900410312873738986",
+      "snippet": "insta 360X5跟大疆的pocket 3有什么不同? 看见美国新乡的人凌晨三点排队买insta 360X5，但是，没听说过他们排队买大疆的pocket …"
+    },
+    {
+      "title": "如何评价 Insta 360 影石 3 月 24 日推出的 ONE RS 多镜头防抖运动相 …",
+      "url": "https://www.zhihu.com/question/523784588",
+      "snippet": "Insta ONE RS发布了，我已经连续使用这款产品1个多月时间了，加上之前也使用过insta ONE R，所以我觉得我可以与大家分享一下 …"
+    }
+  ]
+}

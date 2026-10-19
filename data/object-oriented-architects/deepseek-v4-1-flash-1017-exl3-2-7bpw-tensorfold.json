@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "object-oriented-architects/DeepSeek-V4.1-Flash-1017-EXL3-2.7bpw-TensorFold",
+  "slug": "object-oriented-architects-deepseek-v4-1-flash-1017-exl3-2-7bpw-tensorfold",
+  "author": "object-oriented-architects",
+  "url": "https://huggingface.co/object-oriented-architects/DeepSeek-V4.1-Flash-1017-EXL3-2.7bpw-TensorFold",
+  "created_at": "2026-10-19T02:16:13.000Z",
+  "updated_at": "2026-10-19T02:56:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deepseek_v41",
+    "exl3",
+    "exllamav3",
+    "deepseek",
+    "moe",
+    "quantized",
+    "dgx-spark",
+    "tensorfold",
+    "text-generation",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 99373023442,
+  "parameters_human": "99.37B",
+  "storage_bytes": 198905494205,
+  "storage_human": "198.9 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": ".OBJECT® - Women's fashion | Official online shop",
+      "url": "https://www.objectci.com/",
+      "snippet": "Quality fashion for women at .OBJECT! Explore our latest collections and upgrade your wardrobe. Shop online Get 10% off your first …"
+    },
+    {
+      "title": ".OBJECT® - Mode femme | Boutique en ligne officielle",
+      "url": "https://www.objectci.com/fr-fr/",
+      "snippet": "Mode femme de qualité chez .OBJECT ! Découvrez nos dernières collections et renouvelez votre garde-robe. Shoppez en ligne …"
+    },
+    {
+      "title": "Object | Vêtements Object en ligne | Zalando.fr",
+      "url": "https://www.zalando.fr/object/",
+      "snippet": "Vêtements Object sur la boutique en ligne Zalando.fr - Choix parmi plus de 100 000 articles. Livraisons et retours gratuits sur la …"
+    },
+    {
+      "title": "Object femme : Nouvelle collection | Place des Tendances",
+      "url": "https://www.placedestendances.com/fr/fr/object-femme",
+      "snippet": ".Object la marque de prêt-à-porter appartenant au groupe Bestseller est sur Place des Tendances. Sensible à la planète et aux …"
+    },
+    {
+      "title": "Objet — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Objet",
+      "snippet": "Objet mathématique, Le Corbusier, 1958, Université technologique d'Eindhoven, Pays-Bas. Le blivet, objet impossible. Objet (du …"
+    }
+  ]
+}

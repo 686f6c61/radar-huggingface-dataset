@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Luna-Dream/Qwen3-TTS-12Hz-1.7B-Base-bf16",
+  "slug": "luna-dream-qwen3-tts-12hz-1-7b-base-bf16",
+  "author": "Luna-Dream",
+  "url": "https://huggingface.co/Luna-Dream/Qwen3-TTS-12Hz-1.7B-Base-bf16",
+  "created_at": "2026-10-19T18:27:10.000Z",
+  "updated_at": "2026-10-19T18:27:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "mlx-audio",
+  "languages": [],
+  "tags": [
+    "mlx-audio",
+    "safetensors",
+    "qwen3_tts",
+    "mlx",
+    "text-to-speech",
+    "speech",
+    "speech generation",
+    "voice cloning",
+    "tts",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1928677440,
+  "parameters_human": "1.93B",
+  "storage_bytes": 4539707101,
+  "storage_human": "4.5 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon Luna: Gaming Service",
+      "url": "https://luna.amazon.com/home",
+      "snippet": "Amazon Luna is a gaming service where you can play a rotating library of games, plus party games with GameNight. No downloads, …"
+    },
+    {
+      "title": "Amazon Luna : Service de jeux",
+      "url": "https://luna.amazon.fr/home?g=s",
+      "snippet": "Amazon Luna est un service de jeux où vous pouvez jouer à une bibliothèque rotative de jeux, plus des jeux de société avec …"
+    },
+    {
+      "title": "Amazon Luna",
+      "url": "https://gaming.amazon.com/",
+      "snippet": "Prime members now get access to Amazon Luna Keep claiming your monthly games – plus get access to Luna Standard at no …"
+    },
+    {
+      "title": "LUNA Digital Audio Workstation – Universal Audio",
+      "url": "https://www.uaudio.com/collections/luna",
+      "snippet": "It comes in a free version and a full version, both with smart tools, UAD plug-ins, and LUNA Play built in. LUNA runs on your …"
+    },
+    {
+      "title": "Luna (mythologie) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Luna_(mythologie)",
+      "snippet": "Culte Pendant le règne de Servius Tullius, un temple est érigé à Luna sur l' Aventin."
+    }
+  ]
+}

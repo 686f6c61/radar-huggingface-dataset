@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "mlx-community/Ming-3.0-tts-0.5B-8bit",
+  "slug": "mlx-community-ming-3-0-tts-0-5b-8bit",
+  "author": "mlx-community",
+  "url": "https://huggingface.co/mlx-community/Ming-3.0-tts-0.5B-8bit",
+  "created_at": "2026-10-19T17:00:55.000Z",
+  "updated_at": "2026-10-19T17:06:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "mlx-audio",
+  "languages": [
+    "zh",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ko",
+    "ja"
+  ],
+  "tags": [
+    "mlx-audio",
+    "safetensors",
+    "dense",
+    "mlx",
+    "text-to-speech",
+    "voice-cloning",
+    "multilingual",
+    "custom_code",
+    "zh",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ko",
+    "ja",
+    "base_model:inclusionAI/Ming-3.0-tts-0.5B",
+    "base_model:quantized:inclusionAI/Ming-3.0-tts-0.5B",
+    "license:mit",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1479454868,
+  "parameters_human": "1.48B",
+  "storage_bytes": 1612497076,
+  "storage_human": "1.6 GB",
+  "base_model": "inclusionAI/Ming-3.0-tts-0.5B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PataChute, a simple Skydiving script ! [Standalone]",
+      "url": "https://forum.cfx.re/t/patachute-a-simple-skydiving-script-standalone/4814245",
+      "snippet": "Feb 10, 2022 · ⚠ CAREFULL: SOME PEOPLE ARE SEALLING OUR LITTLE SCRIPT (On Tebex/Youtube) This script is free and …"
+    },
+    {
+      "title": "Chat Formatting // Colors, Bold, Underline - Cookbook - Cfx Forum",
+      "url": "https://forum.cfx.re/t/chat-formatting-colors-bold-underline/67641",
+      "snippet": "Jan 9, 2018 · Chat Formatting By Jelly Today I’m bringing you a small and short guide/informational post. There are some posts that …"
+    },
+    {
+      "title": "大城小爱的歌词 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/51195093.html",
+      "snippet": "《大城小爱》 歌曲原唱：王力宏 填 词：王力宏，陈镇川，K.Tee 谱 曲：王力宏 乌黑的发尾盘成一个圈 缠绕所有对你的眷恋 隔着半透 …"
+    },
+    {
+      "title": "cad怎么量面积并标注 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/262459255232170365.html",
+      "snippet": "cad怎么量面积并标注的方法如下： 1、在windows系统下打开AUTO cad。 2、打开cad后，点击新建绘制图形。 3、随便绘制一个图 …"
+    },
+    {
+      "title": "Disable Chat \"T\" - Server Discussion - Cfx Forum",
+      "url": "https://forum.cfx.re/t/disable-chat-t/59821",
+      "snippet": "Dec 16, 2017 · I would like to create an admin command to turn off the chat. Can this be done? What will it take?"
+    }
+  ]
+}

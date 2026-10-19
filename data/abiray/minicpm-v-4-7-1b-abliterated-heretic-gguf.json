@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Abiray/MiniCPM-V-4.7-1B-abliterated-heretic-GGUF",
+  "slug": "abiray-minicpm-v-4-7-1b-abliterated-heretic-gguf",
+  "author": "Abiray",
+  "url": "https://huggingface.co/Abiray/MiniCPM-V-4.7-1B-abliterated-heretic-GGUF",
+  "created_at": "2026-10-14T09:38:17.000Z",
+  "updated_at": "2026-10-14T09:48:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "vision",
+    "multimodal",
+    "minicpm-v",
+    "abliterated",
+    "heretic",
+    "uncensored",
+    "llama.cpp",
+    "ollama",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:openbmb/MiniCPM-V-4.7-1B",
+    "base_model:quantized:openbmb/MiniCPM-V-4.7-1B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 13,
+  "downloads_30d": 7726,
+  "trending_score": 13,
+  "parameters": 1006209856,
+  "parameters_human": "1.01B",
+  "storage_bytes": 5029235744,
+  "storage_human": "5.0 GB",
+  "base_model": "openbmb/MiniCPM-V-4.7-1B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Videos won't play. What's wrong? - XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/videos-wont-play-whats-wrong.104871/",
+      "snippet": "Jan 18, 2010 · I've been watching porn on here for several months, but noticed a couple of weeks ago that the video would not load. …"
+    },
+    {
+      "title": "Pleasure at Adult Store & Video | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/pleasure-at-adult-store-video.708821/",
+      "snippet": "Apr 9, 2025 · Forums > Public > Sexuality > Pleasure at Adult Store & Video ... Dismiss Notice Hello, New users on the forum won't …"
+    },
+    {
+      "title": "Glory Hole | Page 3 | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/glory-hole.662841/page-3",
+      "snippet": "Jan 12, 2024 · Hello, You can now get verified on forum. The way it's gonna work is that you can send me a PM with a verification …"
+    },
+    {
+      "title": "Innocent - XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/innocent.8949/",
+      "snippet": "Feb 19, 2007 · Hello, You can now get verified on forum. The way it's gonna work is that you can send me a PM with a verification …"
+    },
+    {
+      "title": "Voyeur | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/voyeur.243661/",
+      "snippet": "May 20, 2012 · Hello, You can now get verified on forum. The way it's gonna work is that you can send me a PM with a verification …"
+    }
+  ]
+}

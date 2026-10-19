@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "kriyanshi/qwen2.5-1.5b-yap-scene-lora",
+  "slug": "kriyanshi-qwen2-5-1-5b-yap-scene-lora",
+  "author": "kriyanshi",
+  "url": "https://huggingface.co/kriyanshi/qwen2.5-1.5b-yap-scene-lora",
+  "created_at": "2026-10-19T17:06:38.000Z",
+  "updated_at": "2026-10-19T17:06:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "structured-output",
+    "json",
+    "semantic-parsing",
+    "game",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:kriyanshi/yap-scene-sft",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85333008,
+  "storage_human": "85 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Xxxx Porn Videos - xHamster",
+      "url": "https://xhamster.com/search/xxxx",
+      "snippet": "Watch xxxx porn videos. Explore tons of XXX movies with sex scenes in 2026 on xHamster!"
+    },
+    {
+      "title": "'xxxx' Search - XNXX.COM",
+      "url": "https://www.xnxx.com/search/xxxx+",
+      "snippet": "Xxx Neelima Indian stepmom fucked hard by her stepson in Jungle Outdoor - desi XXXX Pee sex 1.4M 97% 11min - 1440p XXX …"
+    },
+    {
+      "title": "'xxxx' Search - XNXX.COM",
+      "url": "https://www.xnxx.com/search/xxxx",
+      "snippet": "XXX Soniya Indian Tight Pussy Bhabhi Painful sex with Husband 103.3k 100% 14min - 1440p XXX Soniya Stepbrother Fuck His …"
+    },
+    {
+      "title": "Free Xxxx Porn Videos (1,828) - Tubesafari.com",
+      "url": "https://tubesafari.com/search/xxxx",
+      "snippet": "Teen fingers her pussy in the pool then rides a cock hard 5 years ago 1:51 Donnie xxxx 3 years ago 5:26 …"
+    },
+    {
+      "title": "Xxxx porn videos - XXXi.PORN",
+      "url": "https://xxxi.porn/tag/xxxx",
+      "snippet": "xxxx virgin hot girls xxxx vedio xxxx xxxxxn sexy xxxx xxxx free xxxx com xxxx vid xxxx video xxxx hd best xxxx hot indian xxxx india …"
+    }
+  ]
+}

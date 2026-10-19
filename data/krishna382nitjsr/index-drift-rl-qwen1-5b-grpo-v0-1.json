@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "krishna382nitjsr/index-drift-rl-qwen1.5b-grpo-v0.1",
+  "slug": "krishna382nitjsr-index-drift-rl-qwen1-5b-grpo-v0-1",
+  "author": "krishna382nitjsr",
+  "url": "https://huggingface.co/krishna382nitjsr/index-drift-rl-qwen1.5b-grpo-v0.1",
+  "created_at": "2026-10-19T16:14:32.000Z",
+  "updated_at": "2026-10-19T16:21:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "grpo",
+    "trl",
+    "postgresql",
+    "sql",
+    "database",
+    "index-tuning",
+    "reinforcement-learning",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:krishna382nitjsr/index-drift-rl-bench",
+    "base_model:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85333004,
+  "storage_human": "85 MB",
+  "base_model": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DAZN | Live & On Demand Sports Streaming",
+      "url": "https://www.dazn.com/",
+      "snippet": "Sign up to DAZN for the best in live boxing, MMA & on demand sports streaming. Enjoy free or sign up to on any device for our full …"
+    },
+    {
+      "title": "DAZN France | Sport Streaming en Direct & à la Demande",
+      "url": "https://www.dazn.com/fr-FR/home",
+      "snippet": "DAZN est le premier service vraiment dédié de diffusion de sports en direct au monde. Disponible au France sur les TV connectés, …"
+    },
+    {
+      "title": "Home - DAZN",
+      "url": "https://dazngroup.com/",
+      "snippet": "Sep 14, 2026 · Place your bets and play along as you watch the action unfold. With integrated live betting and gaming, DAZN offers …"
+    },
+    {
+      "title": "DAZN | Sign In",
+      "url": "https://beta.dazn.com/en-US/account/signin",
+      "snippet": "Sign in to DAZN to enjoy live sports, highlights, shows, and more."
+    },
+    {
+      "title": "DAZN | Home",
+      "url": "https://beta.dazn.com/en-US/home",
+      "snippet": "Watch live sports, highlights, shows, news, and more with DAZN's streaming service. Sign up for exclusive events and on-demand …"
+    }
+  ]
+}

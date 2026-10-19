@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ukaratep/Reinforce-CartPole-v1",
+  "slug": "ukaratep-reinforce-cartpole-v1",
+  "author": "ukaratep",
+  "url": "https://huggingface.co/ukaratep/Reinforce-CartPole-v1",
+  "created_at": "2026-10-19T18:00:07.000Z",
+  "updated_at": "2026-10-19T18:00:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "CartPole-v1",
+    "reinforce",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-class",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5001,
+  "storage_human": "5001 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SpinGay – Random Gay Cams & Gay Chat Roulette",
+      "url": "https://spingay.com/",
+      "snippet": "Spin into a random gay chat with hot guys online now. Cam chat with strangers, browse random gay cams, and connect for free, no …Read more"
+    },
+    {
+      "title": "Free Gay Cam Chat - No Signup, Anonymous | Dudevo",
+      "url": "https://dudevo.com/",
+      "snippet": "Dudevo is a free random gay cam chat platform. Both users on cam, no signup, anonymous. Sub-3-second matches with dudes …"
+    },
+    {
+      "title": "Gay Video Chat - Free Gay Chat, Gay Cams - Chatrandom",
+      "url": "https://chatrandom.com/gay/",
+      "snippet": "Jump into free gay video chat on Chatrandom to connect instantly with random gay, bi, and curious men around the world. Meet men …"
+    },
+    {
+      "title": "JerkMesh - Free Gay Video Chat No Login Required",
+      "url": "https://jerkmesh.com/chat",
+      "snippet": "JerkMesh is a free gay video chat for adult gay and bisexual men. Start anonymous random cam chat with no login, quick matching, …"
+    },
+    {
+      "title": "DaddyRandom | Free video chat for gay silverdaddies, older gay men …",
+      "url": "https://daddyrandom.com/",
+      "snippet": "Daddyswap.com is a mature gay porn and dating site for silverdaddies, daddies and bears, gaydaddy and their admirers."
+    }
+  ]
+}

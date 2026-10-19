@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "inclusionAI/Ming-3.0-audio-tiny",
+  "slug": "inclusionai-ming-3-0-audio-tiny",
+  "author": "inclusionAI",
+  "url": "https://huggingface.co/inclusionAI/Ming-3.0-audio-tiny",
+  "created_at": "2026-09-03T11:45:27.000Z",
+  "updated_at": "2026-10-19T16:55:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "bailing_moe_v3_audio",
+    "feature-extraction",
+    "audio",
+    "speech",
+    "automatic-speech-recognition",
+    "audio-understanding",
+    "audio-reasoning",
+    "speech-to-text",
+    "text-to-speech",
+    "conversational",
+    "mixture-of-experts",
+    "custom_code",
+    "en",
+    "zh",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 16,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": 8871306016,
+  "parameters_human": "8.87B",
+  "storage_bytes": 58116066370,
+  "storage_human": "58.1 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Les cinémas Pathé",
+      "url": "https://client.cinemaspathegaumont.com/moncompte",
+      "snippet": "Accédez à votre compte client pour gérer vos réservations, abonnements et préférences chez les cinémas Pathé Gaumont.Read more"
+    },
+    {
+      "title": "Les Cinémas Pathé Gaumont",
+      "url": "https://jeuxconcours.cinemaspathegaumont.com/quiz/747372_1233/Disneyland-Paris.html",
+      "snippet": "Les Cinémas Pathé Gaumont Les Cinémas Pathé Gaumont © — Tous droits réservés ®"
+    },
+    {
+      "title": "Les Cinémas Pathé Gaumont",
+      "url": "https://jeuxconcours.cinemaspathegaumont.com/quiz/996661_1233/Dolby-Cinema-Noel.html",
+      "snippet": "Désolé, cette campagne n'est plus disponible. Les Cinémas Pathé Gaumont © — Tous droits réservés ®"
+    },
+    {
+      "title": "Location Salle Séminaire Paris | PATHÉ BUSINESS",
+      "url": "https://www.location.cinemaspathegaumont.com/seminaire-paris",
+      "snippet": "Vous recherchez une location de salle de séminaire à Paris alliant confort, technologie et prestige ? Découvrez les salles Pathé …"
+    },
+    {
+      "title": "Pathé Business | Location salle de cinéma pour séminaire et …",
+      "url": "https://www.location.cinemaspathegaumont.com/en",
+      "snippet": "Louer une salle dans les Cinémas Pathé à Paris et partout en France pour vos évènements d'entreprises sur mesure : séminaire, …"
+    }
+  ]
+}

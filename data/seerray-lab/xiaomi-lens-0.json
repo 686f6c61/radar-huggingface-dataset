@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "SeerRay-Lab/Xiaomi-Lens-0",
+  "slug": "seerray-lab-xiaomi-lens-0",
+  "author": "SeerRay-Lab",
+  "url": "https://huggingface.co/SeerRay-Lab/Xiaomi-Lens-0",
+  "created_at": "2026-10-19T03:09:27.000Z",
+  "updated_at": "2026-10-19T09:08:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "text-generation",
+    "xiaomi-lens",
+    "multimodal",
+    "visual-grounding",
+    "image-segmentation",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:2610.23279",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 12,
+  "downloads_30d": 10,
+  "trending_score": 12,
+  "parameters": 4622144192,
+  "parameters_human": "4.62B",
+  "storage_bytes": 9329323431,
+  "storage_human": "9.3 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Spotify - Web Player: Music for everyone",
+      "url": "https://open.spotify.com/",
+      "snippet": "Spotify is a digital music service that gives you access to millions of songs.Read more"
+    },
+    {
+      "title": "Ouça músicas de Entra | Spotify.",
+      "url": "https://open.spotify.com/intl-pt/artist/2ACNJpu5aN8cyiUkFRR4z1",
+      "snippet": "Ouça Entra no Spotify. Artista · 994 ouvintes mensais."
+    },
+    {
+      "title": "Spotify",
+      "url": "https://accounts.spotify.com/fr/login",
+      "snippet": "Vous n'avez pas de compte ? S'inscrire"
+    },
+    {
+      "title": "Spotify",
+      "url": "https://accounts.spotify.com/en/login?nosignup=true",
+      "snippet": "Log in to your Spotify account to access music, podcasts, and more."
+    },
+    {
+      "title": "下载 Windows 版 - Spotify",
+      "url": "https://www.spotify.com/sg-zh/download/windows/",
+      "snippet": "Spotify 是一项数字音乐服务，可让你畅听数百万首歌曲。"
+    }
+  ]
+}

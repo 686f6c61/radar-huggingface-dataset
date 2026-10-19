@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Echoo113/Qwen3.5-2B-wolf-STEER0.094531-ft4.42",
+  "slug": "echoo113-qwen3-5-2b-wolf-steer0-094531-ft4-42",
+  "author": "Echoo113",
+  "url": "https://huggingface.co/Echoo113/Qwen3.5-2B-wolf-STEER0.094531-ft4.42",
+  "created_at": "2026-10-19T02:38:18.000Z",
+  "updated_at": "2026-10-19T03:50:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 107400702,
+  "storage_human": "107 MB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IZI by EDF, la solution de confort pour vos travaux",
+      "url": "https://izi-by-edf.fr/",
+      "snippet": "Pour vos travaux de rénovation énergétique et d'installation de borne de recharge faites confiance à IZI by EDF ! Votre confort, notre …"
+    },
+    {
+      "title": "Borne de recharge pour voiture électrique - IZI by EDF",
+      "url": "https://izi-by-edf.fr/univers/borne-recharge",
+      "snippet": "Installez une borne de recharge à domicile ou en entreprise avec IZI by EDF et faites le plein d'énergie pour votre véhicule électrique !"
+    },
+    {
+      "title": "Qui sommes-nous ? - IZI by EDF",
+      "url": "https://recrutement.izi-by-edf.fr/pages/qui-sommes-nous",
+      "snippet": "Chez IZI by EDF, nous mobilisons toutes nos énergies au service de la maison, pour en faire un lieu où l’on vit mieux, durablement. …"
+    },
+    {
+      "title": "izi by edf",
+      "url": "https://files.izi-by-edf.fr/uploads/manual/66a1f8b323638.pdf",
+      "snippet": "Rejoindre une communauté IZI by EDF a su créer une véritable communauté de professionnels issues des travaux de l'habitat et …"
+    },
+    {
+      "title": "Rejoignez l'aventure ! - IZI by EDF",
+      "url": "https://recrutement.izi-by-edf.fr/",
+      "snippet": "Rejoindre IZI by EDF, c'est bien plus qu'un emploi : c'est partager des valeurs fortes et vivre une aventure humaine et innovante. …"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "sabicap/sabi-noema-mla",
+  "slug": "sabicap-sabi-noema-mla",
+  "author": "sabicap",
+  "url": "https://huggingface.co/sabicap/sabi-noema-mla",
+  "created_at": "2026-10-13T14:03:32.000Z",
+  "updated_at": "2026-10-14T20:33:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "sabi_mla",
+    "agentic",
+    "reinforcement-learning",
+    "tool-use",
+    "mla",
+    "multi-head-latent-attention",
+    "kv-cache",
+    "hybrid-attention",
+    "qwen3.8",
+    "conversational",
+    "text-generation",
+    "custom_code",
+    "arxiv:2405.04434",
+    "base_model:sabicap/sabi-noema",
+    "base_model:finetune:sabicap/sabi-noema",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 14,
+  "downloads_30d": 644,
+  "trending_score": 14,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 55444294690,
+  "storage_human": "55.4 GB",
+  "base_model": "sabicap/sabi-noema",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WhatsApp Web",
+      "url": "https://web.whatsapp.com/",
+      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
+    },
+    {
+      "title": "WhatsApp | Veilig en betrouwbaar gratis privéberichten sturen en bellen",
+      "url": "https://www.whatsapp.com/?lang=nl",
+      "snippet": "Gebruik WhatsApp Messenger om in contact te blijven met vrienden en familie. WhatsApp is gratis en biedt een makkelijke, veilige …"
+    },
+    {
+      "title": "Scarica WhatsApp",
+      "url": "https://www.whatsapp.com/download?lang=it",
+      "snippet": "Scarica WhatsApp sul tuo dispositivo mobile, tablet o desktop e resta in contatto con chi desideri grazie a messaggi e chiamate …"
+    },
+    {
+      "title": "WhatsApp 網頁版 - WhatsApp 網誌",
+      "url": "https://blog.whatsapp.com/whats-app-web?lang=zh-tw",
+      "snippet": "WhatsApp 網頁版 今天，百萬名用戶第一次可以在網頁瀏覽器上使用 WhatsApp。 我們的網路用戶端只是您手機的延伸：網頁瀏覽器 …"
+    },
+    {
+      "title": "WhatsApp Web - Blog de WhatsApp",
+      "url": "https://blog.whatsapp.com/whats-app-web?lang=es",
+      "snippet": "WhatsApp Web Today, for the first time, millions of you will have the ability to use WhatsApp on your web browser. Our web client is …"
+    }
+  ]
+}

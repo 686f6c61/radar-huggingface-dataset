@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "APassionateResearchers/WangMendel",
+  "slug": "apassionateresearchers-wangmendel",
+  "author": "APassionateResearchers",
+  "url": "https://huggingface.co/APassionateResearchers/WangMendel",
+  "created_at": "2026-10-19T16:31:10.000Z",
+  "updated_at": "2026-10-19T16:50:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15463843,
+  "storage_human": "15 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

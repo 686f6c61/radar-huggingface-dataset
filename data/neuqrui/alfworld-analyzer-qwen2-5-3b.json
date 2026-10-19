@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "neuqrui/alfworld-analyzer-qwen2.5-3b",
+  "slug": "neuqrui-alfworld-analyzer-qwen2-5-3b",
+  "author": "neuqrui",
+  "url": "https://huggingface.co/neuqrui/alfworld-analyzer-qwen2.5-3b",
+  "created_at": "2026-10-19T02:23:52.000Z",
+  "updated_at": "2026-10-19T03:04:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 13599885808,
+  "storage_human": "13.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cheap flights from Paris to Portugal from $45 | Skyscanner",
+      "url": "https://www.skyscanner.com/routes/pari/pt/paris-to-portugal.html",
+      "snippet": "Looking for tickets to Portugal from Paris? Compare hundreds of flights from all major airlines and travel agents to find the best deal."
+    },
+    {
+      "title": "Cheap flights from Paris to Portugal from £33 | Skyscanner",
+      "url": "https://www.skyscanner.net/routes/pari/pt/paris-to-portugal.html?msockid=2067ac85b4746f5f2eb7bb72b58f6ec8",
+      "snippet": "Looking for a cheap flight from Paris to Portugal? Compare prices for every major airline, find the best time to fly, then book with no …"
+    },
+    {
+      "title": "Cheap Flights from Paris (PARI) to Lisbon (LIS) - Skyscanner",
+      "url": "https://www.skyscanner.net/routes/pari/lis/paris-to-lisbon.html?msockid=2067ac85b4746f5f2eb7bb72b58f6ec8",
+      "snippet": "Compare cheap flights and find tickets from Paris (PARI) to Lisbon (LIS). Book directly with no added fees."
+    },
+    {
+      "title": "$88 Cheap Flights from Paris (CDG) to Lisbon (LIS) - Expedia",
+      "url": "https://www.expedia.com/lp/flights/cdg/lis/paris-to-lisbon?msockid=2067ac85b4746f5f2eb7bb72b58f6ec8",
+      "snippet": "Get all the essential information for flights departing from Roissy-Charles de Gaulle Airport (CDG) to Humberto Delgado Airport (LIS). …"
+    },
+    {
+      "title": "Flights from Paris to Lisbon | TAP Air Portugal - FlyTAP",
+      "url": "https://www.flytap.com/en_fr/flights-from-paris-to-lisbon",
+      "snippet": "Feb 11, 2026 · Book cheap flights from Paris to Lisbon. Enjoy award winning service and inflight entertainment with Tap Air Portugal. …"
+    }
+  ]
+}

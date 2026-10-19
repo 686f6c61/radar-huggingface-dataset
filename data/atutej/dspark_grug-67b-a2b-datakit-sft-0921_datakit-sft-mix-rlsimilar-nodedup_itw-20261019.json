@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "atutej/dspark_grug-67b-a2b-datakit-sft-0921_datakit-sft-mix-rlsimilar-nodedup_itw-20261019",
+  "slug": "atutej-dspark_grug-67b-a2b-datakit-sft-0921_datakit-sft-mix-rlsimilar-nodedup_itw-20261019",
+  "author": "atutej",
+  "url": "https://huggingface.co/atutej/dspark_grug-67b-a2b-datakit-sft-0921_datakit-sft-mix-rlsimilar-nodedup_itw-20261019",
+  "created_at": "2026-10-19T18:19:15.000Z",
+  "updated_at": "2026-10-19T18:19:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "speculative-decoding",
+    "dspark",
+    "drafter",
+    "custom_code",
+    "base_model:open-athena/Grug-67B-A2B-Datakit-SFT-262K-2026.09.21",
+    "base_model:finetune:open-athena/Grug-67B-A2B-Datakit-SFT-262K-2026.09.21",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 280416257,
+  "parameters_human": "280.4M",
+  "storage_bytes": 573574745,
+  "storage_human": "574 MB",
+  "base_model": "open-athena/Grug-67B-A2B-Datakit-SFT-262K-2026.09.21",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

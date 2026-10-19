@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "manako/Detect-worksite-ppe-compliance-detection-probe-set-winner",
+  "slug": "manako-detect-worksite-ppe-compliance-detection-probe-set-winner",
+  "author": "manako",
+  "url": "https://huggingface.co/manako/Detect-worksite-ppe-compliance-detection-probe-set-winner",
+  "created_at": "2026-10-19T16:24:34.000Z",
+  "updated_at": "2026-10-19T16:30:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "element_type:detect",
+    "model:ultralytics-yolo",
+    "subnet:winner",
+    "object:person",
+    "object:PPE compliant person",
+    "object:PPE noncompliant person",
+    "object:safety helmet",
+    "object:high-visibility safety vest",
+    "object:protective gloves",
+    "object:protective eyewear",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9864506,
+  "storage_human": "10 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vídeos porno HD - Películas de alta definición completa | EPORNER",
+      "url": "https://es.eporner.com/",
+      "snippet": "Ver vídeos porno de alta definición de forma gratuita. Tenemos más de 5,285,819 Películas de sexo Hardcore HD en 720p, 1080p y …"
+    },
+    {
+      "title": "Teen Latina Porn Videos - EPORNER",
+      "url": "https://www.eporner.com/cat/teens/latina/",
+      "snippet": "Watch Teen Latina HD porn videos for free on Eporner.com. We have 53,435 full length hd movies with Teen Latina in our database …"
+    },
+    {
+      "title": "Mga HD Porn Video - Mga Full High Definition na Pelikula | EPORNER",
+      "url": "https://ph.eporner.com/",
+      "snippet": "Manood ng Buong HD na Mga Porn Video nang libre. Mayroon kaming higit sa 5,287,849 na buong haba ng Hardcore HD Sex …"
+    },
+    {
+      "title": "Anal Porn Videos - EPORNER",
+      "url": "https://www.eporner.com/cat/anal/",
+      "snippet": "Watch Anal HD porn videos for free on Eporner.com. We have 552,713 full length hd movies with Anal in our database available for …"
+    },
+    {
+      "title": "日本語 BDSM (サディズムとマゾヒズム)ポルノ動画 - EPORNER",
+      "url": "https://jp.eporner.com/cat/japanese/bdsm/",
+      "snippet": "Eporner.comで｜CATTIT1｜HDポルノ動画を無料で視聴する。VC | CATTIT | などのノーカットのHD動画を無料ストリーミングで …"
+    }
+  ]
+}

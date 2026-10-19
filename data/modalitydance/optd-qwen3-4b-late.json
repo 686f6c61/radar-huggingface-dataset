@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "ModalityDance/OPTD-Qwen3-4B-Late",
+  "slug": "modalitydance-optd-qwen3-4b-late",
+  "author": "ModalityDance",
+  "url": "https://huggingface.co/ModalityDance/OPTD-Qwen3-4B-Late",
+  "created_at": "2026-10-19T16:36:07.000Z",
+  "updated_at": "2026-10-19T17:06:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "optd",
+    "on-policy-distillation",
+    "transition-distillation",
+    "reasoning",
+    "text-generation-inference",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 8834317166,
+  "storage_human": "8.8 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Discogs - Music Database and Marketplace",
+      "url": "https://www.discogs.com/",
+      "snippet": "Discover music on Discogs, the largest online music database. Buy and sell music with collectors in the Marketplace."
+    },
+    {
+      "title": "Jean Constantin, Gerard Calvi – Pas Tant De D'Chichi Ponpon ... - Discogs",
+      "url": "https://www.discogs.com/release/4829810-Jean-Constantin-Gerard-Calvi-Pas-Tant-De-DChichi-Ponpon-Ob%C3%A9lix-Samba",
+      "snippet": "View credits, reviews, tracks and shop for the 2000 Vinyl release of \"Pas Tant De D'Chichi Ponpon / Obélix Samba\" on Discogs."
+    },
+    {
+      "title": "Discogs - Base de Données musicale et Marketplace",
+      "url": "https://www.discogs.com/fr/",
+      "snippet": "Emmenez votre collection partout avec vous avec l'application Discogs. Téléchargez-la dès maintenant. Explorez la musique sur …"
+    },
+    {
+      "title": "きゃりーぱみゅぱみゅ – Pon Pon Pon (2011, 320 kbps, File) - Discogs",
+      "url": "https://www.discogs.com/release/16872615-きゃりーぱみゅぱみゅ-Pon-Pon-Pon",
+      "snippet": "Jul 20, 2011 · View credits, reviews, tracks and shop for the 2011 File release of \"Pon Pon Pon\" on Discogs."
+    },
+    {
+      "title": "小谷浩代 - Discogs",
+      "url": "https://www.discogs.com/release/8554071-%E5%B0%8F%E8%B0%B7%E6%B5%A9%E4%BB%A3-%E5%89%8D%E9%87%8E%E8%89%AF%E5%85%B8-%E3%81%B2%E3%81%B0%E3%82%8A%E5%85%90%E7%AB%A5%E5%90%88%E5%94%B1%E5%9B%A3-%E3%83%81%E3%83%B3%E3%83%81%E3%83%B3%E3%83%9D%E3%83%B3%E3%83%9D%E3%83%B3-Cin-Cin-Pon-Pon",
+      "snippet": "View credits, reviews, tracks and shop for the 1976 Vinyl release of \"チンチンポンポン = Cin Cin Pon Pon\" on Discogs."
+    }
+  ]
+}

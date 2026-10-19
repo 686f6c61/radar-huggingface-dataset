@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Coolboy11/qwen3.5-4b-cyber-agent-EXECUTOR-GGUF",
+  "slug": "coolboy11-qwen3-5-4b-cyber-agent-executor-gguf",
+  "author": "Coolboy11",
+  "url": "https://huggingface.co/Coolboy11/qwen3.5-4b-cyber-agent-EXECUTOR-GGUF",
+  "created_at": "2026-10-19T18:24:17.000Z",
+  "updated_at": "2026-10-19T18:24:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5_text",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 2708804256,
+  "storage_human": "2.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nom mentionné sur facebook - Forum Facebook - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-34149092-nom-mentionne-sur-facebook",
+      "snippet": "Dec 3, 2016 · Bonjour, Sur Facebook, lorsque mon nom est mentionné dans une publication: comment faire pour que 1/ j'en sois …"
+    },
+    {
+      "title": "Disparition du point vert sur facebook - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-37837865-disparition-du-point-vert-sur-facebook",
+      "snippet": "Apr 27, 2023 · Bonjour, je ne vois plus de point vert apparaître sur facebook (liste à droite) pour annoncer qu'un ou plusieurs des …"
+    },
+    {
+      "title": "El código de confirmación de Facebook no llega: correo, SMS - CCM",
+      "url": "https://es.ccm.net/aplicaciones-e-internet/redes-sociales-y-mensajeria/1704-codigo-de-confirmacion-de-facebook-que-hacer-si-no-te-llega/",
+      "snippet": "Oct 30, 2023 · Facebook te envía un código de confirmación en el momento de crear una nueva cuenta o al hacer algún cambio o …"
+    },
+    {
+      "title": "No puedo registrarme en Facebook [Resuelto] - CCM",
+      "url": "https://es.ccm.net/forum/affich-727809-no-puedo-registrarme-en-facebook",
+      "snippet": "Hola, Pero yo ya hice todos los requisitos y dice lamentablemente no cumples los requisitos para acceder a crear una cuenta en …"
+    },
+    {
+      "title": "Comment supprimer définitivement votre compte Facebook",
+      "url": "https://www.zdnet.fr/pratique/comment-supprimer-definitivement-votre-compte-facebook-39932301.htm",
+      "snippet": "Nov 12, 2021 · Pratique : Se débarrasser de son compte Facebook demande un peu de travail de votre part."
+    }
+  ]
+}

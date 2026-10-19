@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "groxaxo/DeepSeek-V4-Pro-Qwen3.5-9B-GPTQPro-W4-G64",
+  "slug": "groxaxo-deepseek-v4-pro-qwen3-5-9b-gptqpro-w4-g64",
+  "author": "groxaxo",
+  "url": "https://huggingface.co/groxaxo/DeepSeek-V4-Pro-Qwen3.5-9B-GPTQPro-W4-G64",
+  "created_at": "2026-10-19T03:17:40.000Z",
+  "updated_at": "2026-10-19T05:38:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gptqmodel",
+  "languages": [],
+  "tags": [
+    "gptqmodel",
+    "safetensors",
+    "qwen3_5",
+    "gptq",
+    "gptq-pro",
+    "4-bit",
+    "mtp",
+    "quantization",
+    "vllm",
+    "gptq-marlin",
+    "text-generation",
+    "conversational",
+    "base_model:Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B",
+    "base_model:quantized:Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 9232383507,
+  "storage_human": "9.2 GB",
+  "base_model": "Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Twitter - Reddit",
+      "url": "https://www.reddit.com/r/Twitter/?feedViewType=classicView",
+      "snippet": "An unofficial Twitter subreddit. News and discussions about Twitter welcome. READ THE RULES AND FAQ FIRST! Anything not …"
+    },
+    {
+      "title": "NSFW_Caption - Reddit",
+      "url": "https://www.reddit.com/r/NSFW_Caption/",
+      "snippet": "A place for all kinds of NSFW captions. Post your creative captions on pictures, gifs, and videos. This is not a request sub, there are …"
+    },
+    {
+      "title": "2020 GLOBAL IMPACT REPORT - Twitter Blog",
+      "url": "https://blog.twitter.com/content/dam/about-twitter/en/company/global-impact-2020.pdf",
+      "snippet": "Twitter has been serving the public conversation for 15 years, and we believe public conversation is better when as many people as …"
+    },
+    {
+      "title": "Twitter Blog",
+      "url": "https://blog.twitter.com/robots.txt",
+      "snippet": "User-agent: * Disallow: User-agent: Twitterbot Disallow: User-agent: QuerySeekerSpider Disallow: / User-agent: DirBuster-0.12 …"
+    },
+    {
+      "title": "Valorantの構文チャットについて質問です。以前Twitterで「おつか.",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q13308505748",
+      "snippet": "Dec 25, 2024 · Valorantの構文チャットについて質問です。以前Twitterで「おつかれ！DieForYouでも歌っとけ！」的な長文の煽り …"
+    }
+  ]
+}

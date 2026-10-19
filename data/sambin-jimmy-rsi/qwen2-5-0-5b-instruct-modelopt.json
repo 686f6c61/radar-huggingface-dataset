@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "sambin-jimmy-rsi/Qwen2.5-0.5B-Instruct-ModelOpt",
+  "slug": "sambin-jimmy-rsi-qwen2-5-0-5b-instruct-modelopt",
+  "author": "sambin-jimmy-rsi",
+  "url": "https://huggingface.co/sambin-jimmy-rsi/Qwen2.5-0.5B-Instruct-ModelOpt",
+  "created_at": "2026-10-19T18:46:38.000Z",
+  "updated_at": "2026-10-19T18:57:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "fr",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "nvidia-model-optimizer",
+    "model-optimizer",
+    "quantization",
+    "post-training-quantization",
+    "conversational",
+    "fr",
+    "en",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 988097824,
+  "storage_human": "988 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Danielle Delaunay — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Danielle_Delaunay",
+      "snippet": "Danielle Delaunay, née le 6 septembre 1983 à Hawaï, est une chanteuse et modèle américaine, seule Caucasienne à avoir fait …"
+    },
+    {
+      "title": "Danielle Delaunay (@Danielleftv081) / X",
+      "url": "https://x.com/Danielleftv081",
+      "snippet": "Danielle Delaunay @Danielleftv081 YOU CAN ALWAYS CHAT ME UP 🇺🇲📥 instagram.com/danielle081333 Joined April 2022"
+    },
+    {
+      "title": "Danielle Delaunay Wiki, Age, Boyfriend, Height, Career, Photos & More",
+      "url": "https://wikiindetail.com/danielle-delaunay-wiki/",
+      "snippet": "Dec 17, 2023 · Discover Danielle Delaunay's inspiring journey from Louisiana to stardom. Explore her age, boyfriend, height, career, …"
+    },
+    {
+      "title": "Danielle Delaunay ftv - Facebook",
+      "url": "https://www.facebook.com/p/Danielle-Delaunay-ftv-100079561577617/",
+      "snippet": "Nov 19, 2025 · Welcome To Danielle Ftv Official Page, The Only Real Page I Have Stay Safe Out There."
+    },
+    {
+      "title": "Danielle Delaunay: Complete Biography, Age, Career & Net Worth",
+      "url": "https://historicallives.com/danielle-delaunay/",
+      "snippet": "Dec 17, 2025 · Danielle Delaunay is a talented American actress, model, and social media personality known for her stunning looks …"
+    }
+  ]
+}

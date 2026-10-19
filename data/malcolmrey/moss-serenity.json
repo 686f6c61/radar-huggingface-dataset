@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "malcolmrey/moss-serenity",
+  "slug": "malcolmrey-moss-serenity",
+  "author": "malcolmrey",
+  "url": "https://huggingface.co/malcolmrey/moss-serenity",
+  "created_at": "2026-10-19T08:57:44.000Z",
+  "updated_at": "2026-10-19T11:53:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "moss-image",
+    "text-to-image",
+    "comfyui",
+    "full-finetune",
+    "people",
+    "base_model:OpenMOSS-Team/MOSS-Image-Base",
+    "base_model:finetune:OpenMOSS-Team/MOSS-Image-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 19,
+  "downloads_30d": 0,
+  "trending_score": 19,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28112194915,
+  "storage_human": "28.1 GB",
+  "base_model": "OpenMOSS-Team/MOSS-Image-Base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/question/65884679",
+      "snippet": "有定理指出若 f(x) 与 g(x) 周期之比为有理数，则 F(x)=f(x)+g(x) 具有周期性且其周期为两函数周期的公倍…"
+    },
+    {
+      "title": "Var（AX）=AVar（X）A如何推导的？ - 知乎",
+      "url": "https://www.zhihu.com/question/51082135",
+      "snippet": "3、推导过程。 cov (AX)=E [ (AX-E (AX)) (AX-E (AX))^T]=E [ (AX-E (AX)) ( (AX)^T-E (AX)^T)]=E [ (AX-E (AX)) (X^TA^T-E …"
+    },
+    {
+      "title": "e的x次方的图像是怎么画的？_百度知道",
+      "url": "https://zhidao.baidu.com/question/391959772.html",
+      "snippet": "e的x次方的图像是怎么画的？ y等于e的x次方是一种指数函数，其图像是单调递增，x∈R，y>0，与y轴相交于（0,1）点，图像位于X …"
+    },
+    {
+      "title": "c++中，x << 1什么意思？x << 1 | 1呢？ - 1 | 1呢？_百度知道",
+      "url": "https://zhidao.baidu.com/question/309879820.html",
+      "snippet": "Aug 21, 2011 · 第一个X是左移，而第二个X是先左移然后再跟1或，比如说X=1110，执行X<<1后X变为X=1100，左移后右边直接补0.或 …"
+    },
+    {
+      "title": "决定智商的基因全部来自X染色体吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/20790548",
+      "snippet": "另外，人的X染色体里还有大约15%的基因是可以逃过失活一劫的，这让本来已经非常复杂的X染色体编译更是变得扑朔迷离。 X染色 …"
+    }
+  ]
+}

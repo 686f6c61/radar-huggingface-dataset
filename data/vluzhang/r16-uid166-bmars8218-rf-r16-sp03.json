@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "vluzhang/r16-uid166-bmars8218-rf-r16-sp03",
+  "slug": "vluzhang-r16-uid166-bmars8218-rf-r16-sp03",
+  "author": "vluzhang",
+  "url": "https://huggingface.co/vluzhang/r16-uid166-bmars8218-rf-r16-sp03",
+  "created_at": "2026-10-19T18:32:01.000Z",
+  "updated_at": "2026-10-19T18:32:46.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "sn38-nanochrono",
+    "chronollm",
+    "sn38",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2018511234,
+  "parameters_human": "2.02B",
+  "storage_bytes": 4037045748,
+  "storage_human": "4.0 GB",
+  "base_model": "anacoluthe89/chrono4-2024",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "35 optical illusions and why they trick your brain - Live Science",
+      "url": "https://www.livescience.com/health/mind/32-optical-illusions-and-why-they-trick-your-brain",
+      "snippet": "May 20, 2025 · Artists and scientists have been creating optical illusions for centuries. Here are 35 mind-bending examples that …Read more"
+    },
+    {
+      "title": "10 Mind-Bending Optical Illusions That Reveal How Our Brains Work",
+      "url": "https://discoverwildscience.com/10-mind-bending-optical-illusions-that-reveal-how-our-brains-work-2-378816/",
+      "snippet": "May 21, 2026 · Optical illusions aren’t just party tricks or internet curiosities. They’re windows into one of the most complex systems …"
+    },
+    {
+      "title": "8 Mind-Bending Optical Illusions That Reveal How Our Brains Work",
+      "url": "https://discoverwildscience.com/8-mind-bending-optical-illusions-that-reveal-how-our-brains-work-1-412633/",
+      "snippet": "Aug 14, 2026 · Every second, your brain is quietly editing reality, filling in gaps, and making fast guesses so you can move through …"
+    },
+    {
+      "title": "25 Mind-Bending Optical Illusions That Will Totally Trick Your Brain ...",
+      "url": "https://www.boredpanda.com/optical-illusions-part-4/",
+      "snippet": "Nov 17, 2025 · Get ready to put your perception to the ultimate test… In this edition, we’ve gathered 25 optical illusions that are truly …"
+    },
+    {
+      "title": "20 Mind-Bending Illusions That Will Make You Question Reality - WDD",
+      "url": "https://webdesignerdepot.com/mind-bending-illusions/",
+      "snippet": "Feb 21, 2024 · Mind-bending videos. Divisive Images. Eye-straining visuals. This list of optical illusions has it all. Join us as we melt …"
+    }
+  ]
+}

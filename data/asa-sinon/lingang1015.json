@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Asa-Sinon/lingang1015",
+  "slug": "asa-sinon-lingang1015",
+  "author": "Asa-Sinon",
+  "url": "https://huggingface.co/Asa-Sinon/lingang1015",
+  "created_at": "2026-10-19T02:15:38.000Z",
+  "updated_at": "2026-10-19T02:30:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 49760227051,
+  "storage_human": "49.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home - ASA | CAP",
+      "url": "https://www.asa.org.uk/",
+      "snippet": "The Advertising Standards Authority (ASA) is the UK’s independent regulator of advertising across all media. We apply the …"
+    },
+    {
+      "title": "Fonction publique -Autorisations spéciales d’absence : un nouveau …",
+      "url": "https://www.service-public.gouv.fr/particuliers/actualites/A19016",
+      "snippet": "Quelles sont les ASA de droit indiquées dans le nouveau décret ? Les agents publics peuvent bénéficier, de droit, d’autorisations …"
+    },
+    {
+      "title": "Autorisations spéciales d absence- Le point sur vos droits",
+      "url": "https://www.fonction-publique.gouv.fr/files/files/publications/publications-dgafp/livret_ASA.pdf",
+      "snippet": "Qu'est-ce qu'une ASA ? Une autorisation spéciale d'absence (ASA) vous permet de vous absenter du travail, notamment pour un …"
+    },
+    {
+      "title": "Home by ASA. ASA Selection lifestyle.",
+      "url": "https://www.asa-selection.com/en-eu",
+      "snippet": "ASA Selection lifestyle - discover high-quality decoration and products for your kitchen, table and more shop now!"
+    },
+    {
+      "title": "Bienvenue chez ASA - ASA",
+      "url": "https://www.asa-asso.com/",
+      "snippet": "ASA propose à chacun les solutions pour assumer ce choix et participer ainsi au maintien du lien sociale indispensable à la cohésion …"
+    }
+  ]
+}

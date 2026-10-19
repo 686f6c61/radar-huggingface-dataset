@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Davd-b01/qwen38-27b-swift-noema",
+  "slug": "davd-b01-qwen38-27b-swift-noema",
+  "author": "Davd-b01",
+  "url": "https://huggingface.co/Davd-b01/qwen38-27b-swift-noema",
+  "created_at": "2026-10-19T18:53:51.000Z",
+  "updated_at": "2026-10-19T18:56:33.000Z",
+  "license": "swift-open-license-v1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 54726432800,
+  "storage_human": "54.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "la dysplasie arythmogène du ventricule droit - CHU de Nantes",
+      "url": "https://www.chu-nantes.fr/la-dysplasie-arythmogene-du-ventricule-droit-description-clinique-de-la-pathologie",
+      "snippet": "La DAVD est une maladie grave car elle peut être responsable d'arrêt cardiaque par arythmie ventriculaire (le plus souvent liée à …"
+    },
+    {
+      "title": "Cardiomyopathie Ventriculaire Droite Arythmogèn",
+      "url": "https://www.has-sante.fr/upload/docs/application/pdf/2021-10/protocole_national_de_diagnostic_et_de_soins_cvda_cardiogen_estelle_gandjbakhch.pdf",
+      "snippet": "Cardiomyopathie Ventriculaire Droite Arythmogène Protocole National de Diagnostic et de Soins (PNDS)"
+    },
+    {
+      "title": "Cardiomyopathie ventriculaire arythmogène : e-cardiogram",
+      "url": "https://www.e-cardiogram.com/cardiomyopathie-dvda/",
+      "snippet": "Nov 18, 2019 · La cardiomyopathie ventriculaire droite arythmogène (CVDA) est une cardiomyopathie à caractère familial …"
+    },
+    {
+      "title": "Dysplasie arythmogène du ventricule droit (DAVD) - Concilio",
+      "url": "https://www.concilio.com/cardiologie-dysplasie-arythmogene-du-ventricule-droit",
+      "snippet": "La prévalence de la DAVD est difficile à évaluer, néanmoins on estime une fourchette entre 1 cas pour 5000 et 1 cas pour 10 000. …"
+    },
+    {
+      "title": "Dysplasie arythmogène du ventricule droit | Deuxième Avis",
+      "url": "https://www.deuxiemeavis.fr/pathologie/dysplasie-arythmogene-du-ventricule-droit",
+      "snippet": "Apr 25, 2025 · La dysplasie arythmogène du ventricule droit (ou DAVD) est une maladie du muscle cardiaque. Il s’agit d’une …"
+    }
+  ]
+}
