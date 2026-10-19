@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/starlight-small-1-GGUF",
   "created_at": "2026-10-06T19:05:29.000Z",
-  "updated_at": "2026-10-06T19:54:01.000Z",
+  "updated_at": "2026-10-18T21:07:38.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -16,9 +16,10 @@
   "tags": [
     "transformers",
     "gguf",
-    "text-generation",
-    "starlight",
     "north-ml",
+    "safetensors",
+    "starlight",
+    "text-generation",
     "en",
     "base_model:North-ML1/starlight-small-1",
     "base_model:quantized:North-ML1/starlight-small-1",
@@ -36,7 +37,8 @@
   "storage_human": "7.5 GB",
   "base_model": "North-ML1/starlight-small-1",
   "formats": [
-    "gguf"
+    "gguf",
+    "safetensors"
   ],
   "is_conversational": true,
   "gated": false,

@@ -5,7 +5,7 @@
   "author": "IsValorum",
   "url": "https://huggingface.co/IsValorum/MiniCPM-V-4.7-35B-A3B-APEX-I-NanoPlus-GGUF",
   "created_at": "2026-10-12T19:28:29.000Z",
-  "updated_at": "2026-10-12T19:51:00.000Z",
+  "updated_at": "2026-10-18T21:17:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -65,8 +65,8 @@
   "trending_score": 0,
   "parameters": 34659889792,
   "parameters_human": "34.66B",
-  "storage_bytes": 13286904256,
-  "storage_human": "13.3 GB",
+  "storage_bytes": 38962022720,
+  "storage_human": "39.0 GB",
   "base_model": "openbmb/MiniCPM-V-4.7-35B-A3B",
   "formats": [
     "gguf"

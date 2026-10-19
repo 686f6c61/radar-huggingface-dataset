@@ -26,11 +26,11 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 66,
+  "downloads_30d": 470,
   "trending_score": 0,
   "parameters": 39087104,
   "parameters_human": "39.1M",
-  "storage_bytes": 5631167788,
+  "storage_bytes": 5552988380,
   "storage_human": "5.6 GB",
   "base_model": "francesca9805/nor-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed455",
   "formats": [

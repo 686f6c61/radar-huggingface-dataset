@@ -5,7 +5,7 @@
   "author": "alexanderp4580",
   "url": "https://huggingface.co/alexanderp4580/sa3-browser-models",
   "created_at": "2026-10-07T16:44:51.000Z",
-  "updated_at": "2026-10-07T16:45:20.000Z",
+  "updated_at": "2026-10-18T19:52:04.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,8 +20,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 3252330798,
-  "storage_human": "3.3 GB",
+  "storage_bytes": 3394459459,
+  "storage_human": "3.4 GB",
   "base_model": null,
   "formats": [
     "onnx"

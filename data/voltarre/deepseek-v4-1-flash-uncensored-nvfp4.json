@@ -5,7 +5,7 @@
   "author": "Voltarre",
   "url": "https://huggingface.co/Voltarre/DeepSeek-V4.1-Flash-UNCENSORED-NVFP4",
   "created_at": "2026-09-22T17:27:52.000Z",
-  "updated_at": "2026-09-22T18:14:37.000Z",
+  "updated_at": "2026-10-18T07:23:44.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 3,
-  "downloads_30d": 621,
+  "downloads_30d": 632,
   "trending_score": 0,
   "parameters": 763205315794,
   "parameters_human": "763.21B",

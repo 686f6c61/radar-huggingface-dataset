@@ -5,7 +5,7 @@
   "author": "h2oai",
   "url": "https://huggingface.co/h2oai/h2o-lightning-4b-nemotron-nano",
   "created_at": "2026-10-09T23:29:02.000Z",
-  "updated_at": "2026-10-17T23:36:31.000Z",
+  "updated_at": "2026-10-18T08:03:22.000Z",
   "license": "nvidia-nemotron-open-model-license",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,11 +32,11 @@
     "region:us"
   ],
   "likes": 3,
-  "downloads_30d": 1719,
+  "downloads_30d": 2223,
   "trending_score": 0,
   "parameters": 3973556832,
   "parameters_human": "3.97B",
-  "storage_bytes": 15911702090,
+  "storage_bytes": 15913321699,
   "storage_human": "15.9 GB",
   "base_model": "nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16",
   "formats": [

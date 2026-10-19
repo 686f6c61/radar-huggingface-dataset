@@ -5,7 +5,7 @@
   "author": "Muse-Ltd",
   "url": "https://huggingface.co/Muse-Ltd/Muse-Robotics-1.1",
   "created_at": "2026-09-03T16:36:13.000Z",
-  "updated_at": "2026-09-03T16:41:43.000Z",
+  "updated_at": "2026-10-18T12:33:29.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -40,12 +40,12 @@
     "region:us"
   ],
   "likes": 5,
-  "downloads_30d": 26,
+  "downloads_30d": 41,
   "trending_score": 0,
   "parameters": 121710745,
   "parameters_human": "121.7M",
-  "storage_bytes": 493186860,
-  "storage_human": "493 MB",
+  "storage_bytes": 495167012,
+  "storage_human": "495 MB",
   "base_model": null,
   "formats": [
     "safetensors"

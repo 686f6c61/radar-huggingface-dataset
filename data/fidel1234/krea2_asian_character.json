@@ -5,7 +5,7 @@
   "author": "fidel1234",
   "url": "https://huggingface.co/fidel1234/Krea2_Asian_Character",
   "created_at": "2026-09-21T16:32:13.000Z",
-  "updated_at": "2026-10-17T17:20:56.000Z",
+  "updated_at": "2026-10-19T01:34:25.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -24,7 +24,7 @@
   "trending_score": 10,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 25025838966,
+  "storage_bytes": 25027767017,
   "storage_human": "25.0 GB",
   "base_model": "krea/Krea-2-Raw, krea/Krea-2-Turbo",
   "formats": [

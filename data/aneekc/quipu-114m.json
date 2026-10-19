@@ -5,7 +5,7 @@
   "author": "AneekC",
   "url": "https://huggingface.co/AneekC/quipu-114m",
   "created_at": "2026-09-28T03:02:11.000Z",
-  "updated_at": "2026-09-28T08:56:42.000Z",
+  "updated_at": "2026-10-19T01:12:24.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 332,
+  "downloads_30d": 334,
   "trending_score": 0,
   "parameters": 114114048,
   "parameters_human": "114.1M",

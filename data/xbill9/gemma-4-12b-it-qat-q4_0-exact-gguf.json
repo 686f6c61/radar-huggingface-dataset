@@ -5,7 +5,7 @@
   "author": "xbill9",
   "url": "https://huggingface.co/xbill9/gemma-4-12B-it-qat-q4_0-exact-gguf",
   "created_at": "2026-10-08T01:39:48.000Z",
-  "updated_at": "2026-10-17T04:01:35.000Z",
+  "updated_at": "2026-10-18T06:22:34.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -28,7 +28,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 136,
+  "downloads_30d": 177,
   "trending_score": 0,
   "parameters": 11907350576,
   "parameters_human": "11.91B",
