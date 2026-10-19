@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "BassionAI/BSAI-MOSS-Image-SFT-4steps-turbo-merged",
+  "slug": "bassionai-bsai-moss-image-sft-4steps-turbo-merged",
+  "author": "BassionAI",
+  "url": "https://huggingface.co/BassionAI/BSAI-MOSS-Image-SFT-4steps-turbo-merged",
+  "created_at": "2026-10-19T01:11:58.000Z",
+  "updated_at": "2026-10-19T01:26:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "text-to-image",
+    "image-generation",
+    "diffusion-models",
+    "comfyui",
+    "moss-image",
+    "layout-control",
+    "en",
+    "zh",
+    "base_model:OpenMOSS-Team/MOSS-Image-SFT",
+    "base_model:finetune:OpenMOSS-Team/MOSS-Image-SFT",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "OpenMOSS-Team/MOSS-Image-SFT",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BassionAI/BSAI-MOSS-Image-SFT-4steps-turbo-merged · Hugging Face",
+      "url": "https://huggingface.co/BassionAI/BSAI-MOSS-Image-SFT-4steps-turbo-merged",
+      "snippet": "BSAI-MOSS-Image-SFT-4steps-turbo-merged（ComfyUI 单文件版） BSAI 整理的 MOSS-Image SFT 4 步 Turbo 合并版 ComfyUI 单文件模型（bf16）。 MOSS-Image 是 OpenMOSS 团队开源的 5B 文生图扩散 Transformer（DiT），支持原生布局控制（layout JSON）与中英双语长文本渲染。"
+    },
+    {
+      "title": "MOSS-Image in ComfyUI: Text-to-Image and Layout Workflows",
+      "url": "https://docs.comfy.org/tutorials/image/moss-image/moss-image",
+      "snippet": "Run MOSS-Image locally in ComfyUI: a 5B open-weights text-to-image model with a prompt upsampler and layout-guided generation from drawn bounding boxes."
+    },
+    {
+      "title": "GitHub - OpenMOSS/MOSS-Image: Official repository for MOSS-Image, a 5B ...",
+      "url": "https://github.com/OpenMOSS/MOSS-Image/tree/main",
+      "snippet": "The MOSS-Image Prompt Enhancer turns image ideas into detailed captions or spatial Layout prompts. It is designed for GPT-6-family agents with local file and Python tools."
+    },
+    {
+      "title": "MOSS-Image | Text-to-Image Generation with Native Layout Control",
+      "url": "https://openmoss.ai/MOSS-Image/",
+      "snippet": "MOSS-Image is a text-to-image model family from OpenMOSS, comprising a base model and a curated-data fine-tuned model. In addition to natural-language prompts, MOSS-Image supports native text-driven layout generation: objects, rendered text, and their spatial positions can be specified in a JSON prompt."
+    },
+    {
+      "title": "Moss Image Turbo LoRas - Moss_SFT_8_steps_dmd_v0.1 | MOSS Image LoRA ...",
+      "url": "https://civitai.com/models/3006599/moss-image-turbo-loras",
+      "snippet": "Moss_Image_Base_8_steps_dmd_v0.1: 1.0 (recommended) Disclaimer & Attribution I did not train, distill, or create the original Turbo/DMD LoRA weights. This model page provides modified compatibility versions / repackaged safetensors intended to let compatible LoRA adapters load seamlessly with ComfyUI&#x27;s built-in LoRA loader."
+    }
+  ]
+}

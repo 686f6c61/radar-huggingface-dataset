@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "henil08/verilog-coder-7b-gguf",
+  "slug": "henil08-verilog-coder-7b-gguf",
+  "author": "henil08",
+  "url": "https://huggingface.co/henil08/verilog-coder-7b-gguf",
+  "created_at": "2026-10-18T22:58:16.000Z",
+  "updated_at": "2026-10-18T23:15:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "verilog",
+    "base_model:henil08/verilog-coder-7b",
+    "base_model:quantized:henil08/verilog-coder-7b",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 4683073632,
+  "storage_human": "4.7 GB",
+  "base_model": "henil08/verilog-coder-7b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Henil-08/verilog-coder-ft: LoRA fine-tuned small coder LLM for ...",
+      "url": "https://github.com/Henil-08/verilog-coder-ft",
+      "snippet": "Fine-tuning a small open coder LLM for Verilog/SystemVerilog code generation, evaluated by functional correctness (Verilator compile + testbench pass@1), served through an auto-detected MLX (Apple Silicon) or vLLM (CUDA) backend."
+    },
+    {
+      "title": "VerilogCoder: Autonomous Verilog Coding Agents with Graph ... - NVIDIA",
+      "url": "https://research.nvidia.com/publication/2024-08_verilogcoder-autonomous-verilog-coding-agents-graph-based-planning-and-abstract",
+      "snippet": "In this work, we propose VerilogCoder, a system of multiple Artificial Intelligence (AI) agents for Verilog code generation, to autonomously write Verilog code and fix syntax and functional errors using collaborative Verilog tools (i.e., syntax checker, simulator, and waveform tracer)."
+    },
+    {
+      "title": "GitHub - NVlabs/VerilogCoder",
+      "url": "https://github.com/NVlabs/VerilogCoder",
+      "snippet": "VerilogCoder: Autonomous Verilog Coding Agents with Graph-based Planning and Abstract Syntax Tree (AST)-based Waveform Tracing Tool"
+    },
+    {
+      "title": "VeriReason - AI-Enhanced Verilog Generation",
+      "url": "https://nellyw8.github.io/VeriReason/",
+      "snippet": "VeriReason introduces a novel approach utilizing reinforcement learning with testbench feedback to enhance the performance of pre-trained models for Verilog RTL code generation. Our method combines supervised fine-tuning with Guided Reward Proximal Optimization (GRPO) reinforcement learning, establishing a new state-of-the-art for automated RTL synthesis."
+    },
+    {
+      "title": "LLM Leaderboard: AI Model Rankings & Pricing | llmboard.ai",
+      "url": "https://www.llmboard.ai/",
+      "snippet": "LLM Leaderboard rankings and benchmark intelligence LLM Leaderboard Use the LLM Leaderboard to compare the best AI models across capability, price, speed and LLM benchmarks. Find the best LLM for coding, reasoning, math and everyday work with ranking data in one place."
+    }
+  ]
+}

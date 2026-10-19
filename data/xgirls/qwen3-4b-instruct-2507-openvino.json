@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "xgirls/Qwen3-4B-Instruct-2507-openvino",
+  "slug": "xgirls-qwen3-4b-instruct-2507-openvino",
+  "author": "xgirls",
+  "url": "https://huggingface.co/xgirls/Qwen3-4B-Instruct-2507-openvino",
+  "created_at": "2026-10-18T23:57:44.000Z",
+  "updated_at": "2026-10-18T23:58:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "openvino",
+    "qwen3",
+    "text-generation",
+    "openvino-export",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4038253139,
+  "storage_human": "4.0 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3-4B-Instruct-2507 - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_4b_instruct_2507",
+      "snippet": "The Qwen3‑4B‑Instruct‑2507 is a state‑of‑the‑art multilingual instruct language model with 4 billion parameters, excelling in language understanding, generation, coding, and mathematics. Unlike the base Qwen3‑4B, this variant has only instruct training without thinking mode support."
+    },
+    {
+      "title": "Qwen/Qwen3-4B-Instruct-2507 · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Castellan-AI/Qwen3-4B-Instruct-2507-int4-cw-ov · Hugging Face",
+      "url": "https://huggingface.co/Castellan-AI/Qwen3-4B-Instruct-2507-int4-cw-ov",
+      "snippet": "Castellan-AI / Qwen3-4B-Instruct-2507-int4-cw-ov Like 0 Follow Castellan-AI 1 Text Generation OpenVINO English qwen3 npu intel int4 nncf conversational License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Qwen3-4B-Instruct-2507, INT4 channel-wise, for Intel NPUs (OpenVINO) What was changed How it was made ..."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/qwen3_4b_instruct_2507 ... - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/tree/main/src/qai_hub_models/models/qwen3_4b_instruct_2507",
+      "snippet": "The Qwen3-4B-Instruct-2507 is a state-of-the-art multilingual instruct language model with 4 billion parameters, excelling in language understanding, generation, coding, and mathematics. Unlike the base Qwen3-4B, this variant has only instruct training without thinking mode support. This is based on ..."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/qwen3_4b_instruct_2507/model.py ...",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/qwen3_4b_instruct_2507/model.py",
+      "snippet": "Qualcomm® AI Hub Models is our collection of state-of-the-art machine learning models optimized for performance (latency, memory etc.) and ready to deploy on Qualcomm® devices. - qualcomm/ai-hub-mo..."
+    }
+  ]
+}

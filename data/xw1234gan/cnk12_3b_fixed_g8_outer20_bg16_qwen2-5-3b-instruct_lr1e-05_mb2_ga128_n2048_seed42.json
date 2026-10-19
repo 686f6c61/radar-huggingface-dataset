@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "xw1234gan/CNK12_3B_Fixed_G8_outer20_bg16_Qwen2.5-3B-Instruct_lr1e-05_mb2_ga128_n2048_seed42",
+  "slug": "xw1234gan-cnk12_3b_fixed_g8_outer20_bg16_qwen2-5-3b-instruct_lr1e-05_mb2_ga128_n2048_seed42",
+  "author": "xw1234gan",
+  "url": "https://huggingface.co/xw1234gan/CNK12_3B_Fixed_G8_outer20_bg16_Qwen2.5-3B-Instruct_lr1e-05_mb2_ga128_n2048_seed42",
+  "created_at": "2026-10-19T00:46:47.000Z",
+  "updated_at": "2026-10-19T00:47:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6183348896,
+  "storage_human": "6.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xw1234gan (xingweigan) - Hugging Face",
+      "url": "https://huggingface.co/xw1234gan",
+      "snippet": "xw1234gan/GRPO_KL_Qwen2.5-1.5B-Instruct_MATH_beta0.01_lr1e-05_mb2_ga128_n2048_seed42"
+    },
+    {
+      "title": "xw1234gan/cnk12_GRPO_KL_Qwen2.5-7B-Instruct_beta0.01_lr1e-05_mb2_ga128 ...",
+      "url": "https://huggingface.co/xw1234gan/cnk12_GRPO_KL_Qwen2.5-7B-Instruct_beta0.01_lr1e-05_mb2_ga128_n2048_seed42",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "xw1234gan/cnk12_GRPO_KL_Qwen2.5-3B-Instruct_beta0.01_lr1e-05_mb2_ga128 ...",
+      "url": "https://featherless.ai/models/xw1234gan/cnk12_GRPO_KL_Qwen2.5-3B-Instruct_beta0.01_lr1e-05_mb2_ga128_n2048_seed42",
+      "snippet": "With a substantial context length of 32768 tokens, this model is designed for general language understanding and generation tasks. Its instruction-following capabilities make it suitable for a wide range of applications requiring conversational AI or text-based interaction."
+    },
+    {
+      "title": "xw1234gan/cnk12_GRPO_KL_Qwen2.5-3B-Instruct_beta0_lr1e-05_mb2_ga128 ...",
+      "url": "https://friendli.ai/models/xw1234gan/cnk12_GRPO_KL_Qwen2.5-3B-Instruct_beta0_lr1e-05_mb2_ga128_n2048_seed42_NoKL",
+      "snippet": "Run xw1234gan/cnk12_GRPO_KL_Qwen2.5-3B-Instruct_beta0_lr1e-05_mb2_ga128_n2048_seed42_NoKL with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "xw1234gan/cnk12_Main_fixed_SFTanchor_3B_step_1",
+      "url": "https://featherless.ai/models/xw1234gan/cnk12_Main_fixed_SFTanchor_3B_step_1",
+      "snippet": "The xw1234gan/cnk12_Main_fixed_SFTanchor_3B_step_1 is a 3.1 billion parameter language model, featuring a substantial context length of 32768 tokens. This model has been pushed to the Hugging Face Hub as a fine-tuned transformer model."
+    }
+  ]
+}

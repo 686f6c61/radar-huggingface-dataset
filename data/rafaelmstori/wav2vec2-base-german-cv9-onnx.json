@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Rafaelmstori/wav2vec2-base-german-cv9-onnx",
+  "slug": "rafaelmstori-wav2vec2-base-german-cv9-onnx",
+  "author": "Rafaelmstori",
+  "url": "https://huggingface.co/Rafaelmstori/wav2vec2-base-german-cv9-onnx",
+  "created_at": "2026-10-19T00:59:59.000Z",
+  "updated_at": "2026-10-19T01:00:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [
+    "de"
+  ],
+  "tags": [
+    "onnx",
+    "wav2vec2",
+    "ctc",
+    "int8",
+    "forced-alignment",
+    "german",
+    "de",
+    "base_model:oliverguhr/wav2vec2-base-german-cv9",
+    "base_model:quantized:oliverguhr/wav2vec2-base-german-cv9",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 121921553,
+  "storage_human": "122 MB",
+  "base_model": "oliverguhr/wav2vec2-base-german-cv9",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rafaelmstori/wav2vec2-base-german-cv9-onnx · Hugging Face",
+      "url": "https://huggingface.co/Rafaelmstori/wav2vec2-base-german-cv9-onnx",
+      "snippet": "ONNX export with dynamic int8 quantization (MatMul/Gemm) of oliverguhr/wav2vec2-base-german-cv9 (MIT license, credit to Oliver Guhr), for in-browser CTC forced alignment (word timings) with onnxruntime-web in the MemorizaTudo app."
+    },
+    {
+      "title": "Rafaelmstori (Rafael Martins Stori) - Hugging Face",
+      "url": "https://huggingface.co/Rafaelmstori",
+      "snippet": "Recent Activity updated a modelabout 1 hour ago Rafaelmstori/wav2vec2-base-german-cv9-onnx published a modelabout 1 hour ago Rafaelmstori/wav2vec2-base-german-cv9-onnx View all activity"
+    },
+    {
+      "title": "wav2vec2-base-german-cv9 — model",
+      "url": "https://0xsero.github.io/hf-model-benchmarks/models/oliverguhr__wav2vec2-base-german-cv9--98271e.html",
+      "snippet": "Hugging Face model & benchmark data scraped & matrix-ified. 24,078 variants · 14,984 scores · 120 benchmarks."
+    },
+    {
+      "title": "GitHub - maxidl/wav2vec2",
+      "url": "https://github.com/maxidl/wav2vec2",
+      "snippet": "Fine-tuned facebook/wav2vec2-large-xlsr-53 on German using the Common Voice dataset. Model in Hugginface Model Hub. Custom dataset to load the output of preprocess_dataset.py. includes improvements for group_by_length problem, see forum post. The dataset is iterated in parallel by multiple workers ..."
+    },
+    {
+      "title": "open_model_zoo/models/public/wav2vec2-base/README.md at master ... - GitHub",
+      "url": "https://github.com/openvinotoolkit/open_model_zoo/blob/master/models/public/wav2vec2-base/README.md",
+      "snippet": "Wav2Vec2.0-base is a model, which pre-trained to learn speech representations on unlabeled data as described in wav2vec 2.0: A Framework for Self-Supervised Learning of Speech Representations paper and fine-tuned for speech recognition task with a Connectionist Temporal Classification (CTC) loss on LibriSpeech dataset containing 960 hours of audio. The model is composed of a multi-layer ..."
+    }
+  ]
+}

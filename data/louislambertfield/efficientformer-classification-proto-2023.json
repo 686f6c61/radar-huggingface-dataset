@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "louislambertfield/efficientformer-classification-proto-2023",
+  "slug": "louislambertfield-efficientformer-classification-proto-2023",
+  "author": "louislambertfield",
+  "url": "https://huggingface.co/louislambertfield/efficientformer-classification-proto-2023",
+  "created_at": "2026-10-19T00:53:59.000Z",
+  "updated_at": "2026-10-19T00:54:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "efficientformer",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EfficientFormer - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/efficientformer",
+      "snippet": "EfficientFormer Imagenet classifier and general purpose backbone. EfficientFormer is a vision transformer model that can classify images from the Imagenet dataset."
+    },
+    {
+      "title": "LLM Leaderboard: AI Model Rankings & Pricing | llmboard.ai",
+      "url": "https://www.llmboard.ai/",
+      "snippet": "Explore the LLM leaderboard to compare the best AI models across capability, pricing and LLM benchmarks. Find the best LLM for coding, reasoning and more."
+    },
+    {
+      "title": "EfficientFormer · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.48.2/en/model_doc/efficientformer",
+      "snippet": "The bare EfficientFormer Model transformer outputting raw hidden-states without any specific head on top. This model is a PyTorch nn.Module subclass. Use it as a regular PyTorch Module and refer to the PyTorch documentation for all matter related to general usage and behavior."
+    },
+    {
+      "title": "EfficientFormer - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.35.2/en/model_doc/efficientformer",
+      "snippet": "EfficientFormer Model transformer with an image classification head on top (a linear layer on top of the final hidden state of the [CLS] token) e.g. for ImageNet. This model is a PyTorch nn.Module subclass. Use it as a regular PyTorch Module and refer to the PyTorch documentation for all matter related to general usage and behavior."
+    },
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    }
+  ]
+}

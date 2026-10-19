@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "MonsieurNikko/brainmaxing-qlora-v1.0",
+  "slug": "monsieurnikko-brainmaxing-qlora-v1-0",
+  "author": "MonsieurNikko",
+  "url": "https://huggingface.co/MonsieurNikko/brainmaxing-qlora-v1.0",
+  "created_at": "2026-10-18T23:54:48.000Z",
+  "updated_at": "2026-10-18T23:56:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-3B-Instruct",
+    "lora",
+    "transformers",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 119801528,
+  "storage_human": "120 MB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Banque pour les particuliers : LCL Banque et assurance",
+      "url": "https://www.lcl.fr/",
+      "snippet": "LCL, la banque au service des particuliers. Retrouvez les services LCL : Compte bancaire, Carte, Epargne, Prêt, Assurance, des …"
+    },
+    {
+      "title": "Espace connecté, espace client : LCL Banque et Assurance",
+      "url": "https://www.lcl.fr/compte-bancaire/mon-espace-connecte-client",
+      "snippet": "Avec Mon Espace Client LCL, accédez à vos comptes bancaires et contrats en ligne. Vous pouvez réalisez toutes vos opérations …"
+    },
+    {
+      "title": "l.lcl.fr - L by LCL : La banque 100 % en ligne créée par LCL",
+      "url": "https://www.l.lcl.fr/",
+      "snippet": "Que vous soyez voyageur ponctuel ou fréquent, L by LCL vous propose l'offre adaptée : L pour des voyages en Europe, XL pour des …"
+    },
+    {
+      "title": "Plan du site : LCL Banque et Assurance",
+      "url": "https://particuliers.lcl.fr/tous-nos-produits/",
+      "snippet": "Retrouvez tous les services LCL : Comptes et cartes bancaire, Livrets d'épargne, Prêt immobilier, crédit conso et nos assurances …"
+    },
+    {
+      "title": "LCL Particuliers",
+      "url": "https://particuliers.secure.lcl.fr/v_1.0/pj/templates/consoleconsole.html",
+      "snippet": "Gérez vos comptes bancaires en ligne avec LCL Particuliers, offrant des solutions adaptées à vos besoins financiers."
+    }
+  ]
+}

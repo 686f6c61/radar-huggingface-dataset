@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Svoliynyk07/contrastive",
+  "slug": "svoliynyk07-contrastive",
+  "author": "Svoliynyk07",
+  "url": "https://huggingface.co/Svoliynyk07/contrastive",
+  "created_at": "2026-10-18T18:51:18.000Z",
+  "updated_at": "2026-10-18T18:51:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Discord - Group Chat That’s All Fun & Games",
+      "url": "https://discord.com/",
+      "snippet": "Discord is great for playing games and chilling with friends, or even building a worldwide community. Customize your own space to …"
+    },
+    {
+      "title": "Download Discord to Talk, Play, and Hang Out",
+      "url": "https://discord.com/download",
+      "snippet": "Download Discord to talk, play, and hang out with friends over voice, video, or text. Available for Windows, macOS, Linux, iOS, …"
+    },
+    {
+      "title": "Discord - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Discord",
+      "snippet": "Discord runs on Windows, macOS, Android, iOS, iPadOS, Linux, and in web browsers. As of 2025, Discord has 200 million monthly …"
+    },
+    {
+      "title": "Discord",
+      "url": "https://discord.com/store",
+      "snippet": "Discord is great for playing games and chilling with friends, or even building a worldwide community. Customize your own space to …"
+    },
+    {
+      "title": "Discord",
+      "url": "https://discord.com/discovery/applications/1",
+      "snippet": "The App Directory lets you search, browse, and explore thousands of apps to customize your server!"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "cryoecho/Qwen3.8-27B-Uncensored-MXFP4-radiance",
+  "slug": "cryoecho-qwen3-8-27b-uncensored-mxfp4-radiance",
+  "author": "cryoecho",
+  "url": "https://huggingface.co/cryoecho/Qwen3.8-27B-Uncensored-MXFP4-radiance",
+  "created_at": "2026-10-15T06:29:40.000Z",
+  "updated_at": "2026-10-18T22:35:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "radiance",
+    "rocm",
+    "amd",
+    "rdna4",
+    "mxfp4",
+    "speculative-decoding",
+    "dflash2",
+    "vision",
+    "abliterated",
+    "uncensored",
+    "image-text-to-text",
+    "base_model:just1moremodel/Qwen3.8-27B-Uncensored-MXFP4-awq",
+    "base_model:finetune:just1moremodel/Qwen3.8-27B-Uncensored-MXFP4-awq",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19377119232,
+  "storage_human": "19.4 GB",
+  "base_model": "just1moremodel/Qwen3.8-27B-Uncensored-MXFP4-awq, orcarouter/Qwen3.8-27B-Uncensored, z-lab/Qwen3.8-27B-DFlash2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "junafinity/Qwen-3.8-27B-Uncensored · Hugging Face",
+      "url": "https://huggingface.co/junafinity/Qwen-3.8-27B-Uncensored",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen 3.8 27B Uncensored model | NanoGPT",
+      "url": "https://nano-gpt.com/models/text/qwen/qwen3.8-27b-uncensored",
+      "snippet": "Qwen 3.8 27B Uncensored is an FP8 open-weight multimodal model LoRA-tuned for fewer refusals across chat, coding, reasoning, tool use, and long-context work."
+    },
+    {
+      "title": "GitHub - Wassimyounes01/qwen38-uncensored: Local Qwen 3.8 27B ...",
+      "url": "https://github.com/Wassimyounes01/qwen38-uncensored",
+      "snippet": "Check GPU offloading: ollama ps — if you see a CPU/GPU split, the model is partially on CPU Force all layers to GPU: Already set in Modelfile.mac (num_gpu 999), but verify with ollama show qwen3.8:27b-uncensored"
+    },
+    {
+      "title": "Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic ...",
+      "url": "https://huggingface.co/Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-GGUF-UltraOptimised",
+      "snippet": "This is the high-performance quantization and serving release of DavidAU&#x27;s flagship Qwen3.8-27B Cold Fusion checkpoint, packaged and optimized by Solstice-AI. Featuring a historic 735 ARC-C and 882 ARC-E, this model delivers an unprecedented 9-for-9 clean sweep over Claude Opus 4.6 Max across the official Claude Code benchmark harness."
+    },
+    {
+      "title": "Qwen3.8-27B Uncensored: Hardware Requirements and LM Studio Setup",
+      "url": "https://localairig.com/models/qwen3-8-27b-uncensored-hardware-deployment-guide/",
+      "snippet": "Published August 19, 2026. Adapted from the author&#x27;s original Chinese article on Zhihu. The community-built Qwen3.8-27B Uncensored HauhauCS Aggressive release removes many of the refusal behaviors found in the base model while retaining Qwen3.8-27B&#x27;s reasoning, agentic, image, and video capabilities. The GGUF release also includes MTP support for faster generation in compatible runtimes. At 27 ..."
+    }
+  ]
+}

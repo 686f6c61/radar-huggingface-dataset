@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "dimitarpg13/semsimula-ladder-owt-d384-gpt2-matched-2b",
+  "slug": "dimitarpg13-semsimula-ladder-owt-d384-gpt2-matched-2b",
+  "author": "dimitarpg13",
+  "url": "https://huggingface.co/dimitarpg13/semsimula-ladder-owt-d384-gpt2-matched-2b",
+  "created_at": "2026-10-19T01:14:22.000Z",
+  "updated_at": "2026-10-19T01:16:06.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "research",
+    "semsimula",
+    "conservative-language-model",
+    "scalar-potential",
+    "lagrangian-mechanics",
+    "energy-based-model",
+    "physics-informed",
+    "openwebtext",
+    "mechanism-ablation",
+    "ladder-study",
+    "pre-registered",
+    "generation-3",
+    "2b-tokens",
+    "matched-token-budget",
+    "transformer",
+    "gpt2",
+    "baseline",
+    "matched-baseline",
+    "text-generation",
+    "en",
+    "dataset:Skylion007/openwebtext",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 286390020,
+  "storage_human": "286 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "OpenWebText",
+      "metric": "Validation perplexity at block 512, settled (mean of the last three 500-step evals at block 512)",
+      "value": 42.69
+    }
+  ],
+  "sources": [
+    {
+      "title": "semsimula-ladder-owt-d384-l2-gpt2-matched - Hugging Face",
+      "url": "https://huggingface.co/dimitarpg13/semsimula-ladder-owt-d384-l2-gpt2-matched",
+      "snippet": "The arm attention_potential is not a conservative model: its register-to-token force is non-conservative, as in the arm attention and the arm no-exchange. The row therefore prices a conservative exchange field alongside a non-conservative memory force, and its falling below the arm no-exchange may reflect interference between the two rather ..."
+    },
+    {
+      "title": "dimitarpg13/semsimula-ladder-owt-d384-l2-attention · Hugging Face",
+      "url": "https://huggingface.co/dimitarpg13/semsimula-ladder-owt-d384-l2-attention",
+      "snippet": "One arm of the SemSimula mechanism ladder — OpenWebText, d=384, L=2: five models that differ by exactly one mechanism each, so that every gap in the ordering prices one component by construction rather than by attribution."
+    },
+    {
+      "title": "Semsimula Ladder Owt D384 L2 Attention Potential - AI Model Insights ...",
+      "url": "https://free2aitools.com/model/dimitarpg13/semsimula-ladder-owt-d384-l2-attention-potential",
+      "snippet": "Registry entry for model Semsimula Ladder Owt D384 L2 Attention Potential; source metadata pending."
+    },
+    {
+      "title": "GitHub - dimitarpg13/semsimula-paper: Companion repository on the ...",
+      "url": "https://github.com/dimitarpg13/semsimula-paper/blob/main/",
+      "snippet": "This repository collects the reproducibility artifacts and the unpublished background manuscripts cited in the paper. Its scope is deliberately narrow: everything here is either directly required to resolve a citation in the paper or needed to reproduce a figure or experimental claim. Broader exploratory notes, ongoing theoretical drafts, and unrelated research notebooks live in the author&#x27;s ..."
+    },
+    {
+      "title": "Semsimula Ladder Owt D384 L2 Attention - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/dimitarpg13/semsimula-ladder-owt-d384-l2-attention",
+      "snippet": "Registry entry for model Semsimula Ladder Owt D384 L2 Attention; source metadata pending."
+    }
+  ]
+}

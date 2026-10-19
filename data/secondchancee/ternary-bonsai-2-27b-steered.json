@@ -5,7 +5,7 @@
   "author": "Secondchancee",
   "url": "https://huggingface.co/Secondchancee/Ternary-Bonsai-2-27B-Steered",
   "created_at": "2026-10-17T00:11:24.000Z",
-  "updated_at": "2026-10-17T22:18:06.000Z",
+  "updated_at": "2026-10-18T06:46:01.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 573,
+  "downloads_30d": 788,
   "trending_score": 0,
   "parameters": 322560,
   "parameters_human": "322560",

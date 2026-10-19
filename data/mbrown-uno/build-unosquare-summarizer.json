@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mbrown-uno/build-unosquare-summarizer",
+  "slug": "mbrown-uno-build-unosquare-summarizer",
+  "author": "mbrown-uno",
+  "url": "https://huggingface.co/mbrown-uno/build-unosquare-summarizer",
+  "created_at": "2026-10-16T14:06:18.000Z",
+  "updated_at": "2026-10-19T00:55:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "qwen3.5",
+    "summarization",
+    "tool-output",
+    "coding-agents",
+    "context-compression",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:quantized:Qwen/Qwen3.5-4B",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 43,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 6171536339,
+  "storage_human": "6.2 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mbrown-uno/build-unosquare-summarizer-v1 · Hugging Face",
+      "url": "https://huggingface.co/mbrown-uno/build-unosquare-summarizer-v1",
+      "snippet": "The model was fine-tuned on build.unosquare usage data: real Bash, Grep and WebFetch outputs captured from build.unosquare agent sessions, under exactly the prompts the app sends at runtime."
+    },
+    {
+      "title": "mbrown-uno (Mark Brown) - Hugging Face",
+      "url": "https://huggingface.co/mbrown-uno",
+      "snippet": "models1 mbrown-uno/build-unosquare-summarizer-v1 Image-Text-to-Text • 5B•Updated about 8 hours ago"
+    },
+    {
+      "title": "Unosquare Build - AI-Powered Development Platform",
+      "url": "https://build.unosquare-ai.com/",
+      "snippet": "From Concept to Code, Powered by AI Transform the way your team builds software with Spec-Driven Development. Harness multiple AI agents with Human-in-the-Loop control to turn natural language into production-ready code—with Confidence Scoring, automated testing, and comprehensive Plan Reviews."
+    },
+    {
+      "title": "Nearshore Software Development Company - Unosquare",
+      "url": "https://www.unosquare.com/",
+      "snippet": "Nearshore engineering firm unosquare builds production-ready AI, cloud and data systems for financial services, healthcare, media and hi-tech companies."
+    },
+    {
+      "title": "AI & Machine Learning Development Services - Unosquare",
+      "url": "https://www.unosquare.com/technologies/ai-and-ml/",
+      "snippet": "Home / Technologies AI & Machine Learning Development Services Deploy AI & ML Models With Confidence and Speed We provide senior nearshore engineers to help you build, train, and operationalize intelligent systems without slowing down your core teams."
+    }
+  ]
+}

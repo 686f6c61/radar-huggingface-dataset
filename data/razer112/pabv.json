@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Razer112/PaBV",
+  "slug": "razer112-pabv",
+  "author": "Razer112",
+  "url": "https://huggingface.co/Razer112/PaBV",
+  "created_at": "2026-10-19T01:36:16.000Z",
+  "updated_at": "2026-10-19T03:14:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3649174065,
+  "storage_human": "3.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Razer112 (Razer) - Hugging Face",
+      "url": "https://huggingface.co/Razer112",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 month ago ... updated a dataset about 1 month ago"
+    },
+    {
+      "title": "Razer112 (Razer) - Hugging Face",
+      "url": "https://huggingface.co/Razer112/models",
+      "snippet": "AI & ML interests ... Recent Activity new activity about 2 months ago ... new activity about 2 months ago"
+    },
+    {
+      "title": "Cute Female | DMR | Crepe | 173 Epochs AI Voice Model",
+      "url": "https://voice-models.com/model/1yXfZAAfRwK",
+      "snippet": "Cute Female | DMR | Crepe | 173 Epochs AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    },
+    {
+      "title": "Irene Theodora | RMVPE | 158 Epochs AI Voice Model",
+      "url": "https://voice-models.com/model/1AUtSVBXjCE",
+      "snippet": "Irene Theodora | RMVPE | 158 Epochs AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    },
+    {
+      "title": "Detect a specific AI voice | AI Voice Detector",
+      "url": "https://aivoicedetector.com/detect",
+      "snippet": "Detect a specific AI voice. Most detectors give a yes or no. We attribute the source across 24+ systems. Pick the generator you suspect, or drop any clip into the detector and let it name the model for you."
+    }
+  ]
+}

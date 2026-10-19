@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "henil08/verilog-coder-3b-mlx-4bit",
+  "slug": "henil08-verilog-coder-3b-mlx-4bit",
+  "author": "henil08",
+  "url": "https://huggingface.co/henil08/verilog-coder-3b-mlx-4bit",
+  "created_at": "2026-10-18T22:30:29.000Z",
+  "updated_at": "2026-10-18T22:38:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "en",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 1747714788,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "黑莓 passport 软件推荐？ - 知乎",
+      "url": "https://www.zhihu.com/question/63887401",
+      "snippet": "2 bbw里的app A 常用app A 1黑莓通话助手 能查手机归属地，也可以录音，但要先按了录音后通 话。 A 2 echo和parrot：录音app B …"
+    },
+    {
+      "title": "你喜欢bbw吗？？？ - 知乎",
+      "url": "https://www.zhihu.com/question/1966083933214048962",
+      "snippet": "知乎个人信息保护指引 知乎协议 下载知乎 Investor Relations 网站资质信息 更多"
+    },
+    {
+      "title": "Woman seeking man - Any men in uniform for a bbw",
+      "url": "https://forum.xnxx.com/threads/any-men-in-uniform-for-a-bbw.728357/",
+      "snippet": "Aug 25, 2026 · Forums > Public > Personals > Woman seeking man Any men in uniform for a bbw ... Dismiss Notice Hello, New …"
+    },
+    {
+      "title": "BBW, chubby girls/women | Page 350 | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/bbw-chubby-girls-women.516764/page-350",
+      "snippet": "Oct 18, 2025 · Forums > Public > Pic & Movie Post > BBW, chubby girls/women ... Dismiss Notice Hello, New users on the forum …"
+    },
+    {
+      "title": "BBW的身体乳哪个味道好闻？ - 知乎",
+      "url": "https://www.zhihu.com/question/27959721",
+      "snippet": "bbw 的身体乳，虽然很润但是我觉得保湿力不好，和本人皮肤很干有关系吧，一般的身体乳我用起来都觉得不大够，但是没关系，对 …"
+    }
+  ]
+}

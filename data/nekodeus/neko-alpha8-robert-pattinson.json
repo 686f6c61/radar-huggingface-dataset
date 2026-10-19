@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Nekodeus/neko-alpha8-robert-pattinson",
+  "slug": "nekodeus-neko-alpha8-robert-pattinson",
+  "author": "Nekodeus",
+  "url": "https://huggingface.co/Nekodeus/neko-alpha8-robert-pattinson",
+  "created_at": "2026-10-18T23:23:08.000Z",
+  "updated_at": "2026-10-18T23:23:19.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "stable-diffusion",
+    "sd15",
+    "lora",
+    "text-to-image",
+    "character",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18989320,
+  "storage_human": "19 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - nucket/NekoAI: AI-powered desktop pet inspired by the ...",
+      "url": "https://github.com/nucket/NekoAI",
+      "snippet": "NekoAI is an open-source, AI-powered desktop pet that lives on your screen. It wanders around your windows, reacts to what you do, and when you need it — it thinks, answers, and helps, right there on your desktop. It&#x27;s a love letter to the 90s/00s desktop companions (Neko, eSheep, Shimeji) rebuilt with a modern stack and a real AI brain inside."
+    },
+    {
+      "title": "Nekodeus/neko-golden8-sdxl-v1 · Hugging Face",
+      "url": "https://huggingface.co/Nekodeus/neko-golden8-sdxl-v1",
+      "snippet": "Nekodeus / neko-golden8-sdxl-v1 Like 0 Text-to-Image diffusionners stable-diffusion sdxl lora celebrity character License:openrail++ Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Nekodeus/neko-golden10-sdxl-v1 · Hugging Face",
+      "url": "https://huggingface.co/Nekodeus/neko-golden10-sdxl-v1",
+      "snippet": "Nekodeus / neko-golden10-sdxl-v1 Like 0 Text-to-Image diffusionners stable-diffusion sdxl lora celebrity character License:openrail++ Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Hyper3D Rodin - Best AI 3D Model Generator",
+      "url": "http://hyper3d.ai/",
+      "snippet": "Meet Hyper3D, the world&#x27;s highest-quality, most controllable AI 3D model generator. Turn text prompts or images into detailed 3D assets in seconds — no 3D experience required."
+    },
+    {
+      "title": "AI models | NanoGPT",
+      "url": "https://nano-gpt.com/models",
+      "snippet": "Explore every text, image, video, 3D and audio model on NanoGPT. See what is popular this week, usage leaderboards, the best model for each task and the newest additions."
+    }
+  ]
+}

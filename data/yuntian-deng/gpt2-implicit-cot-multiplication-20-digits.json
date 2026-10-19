@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "yuntian-deng/gpt2-implicit-cot-multiplication-20-digits",
+  "slug": "yuntian-deng-gpt2-implicit-cot-multiplication-20-digits",
+  "author": "yuntian-deng",
+  "url": "https://huggingface.co/yuntian-deng/gpt2-implicit-cot-multiplication-20-digits",
+  "created_at": "2024-07-18T06:24:36.000Z",
+  "updated_at": "2026-10-18T22:34:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "implicit-chain-of-thought",
+    "internalized-reasoning",
+    "stepwise-internalization",
+    "arithmetic",
+    "arxiv:2405.14838",
+    "arxiv:2311.01460",
+    "base_model:openai-community/gpt2",
+    "base_model:finetune:openai-community/gpt2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 22,
+  "trending_score": 0,
+  "parameters": 124439808,
+  "parameters_human": "124.4M",
+  "storage_bytes": 3484419456,
+  "storage_human": "3.5 GB",
+  "base_model": "openai-community/gpt2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LinkedIn: Log In or Sign Up",
+      "url": "https://www.linkedin.com/",
+      "snippet": "1 billion members | Manage your professional identity. Build and engage with your professional network. Access knowledge, insights …"
+    },
+    {
+      "title": "LinkedIn Login, Sign in | LinkedIn",
+      "url": "https://www.linkedin.com/login/",
+      "snippet": "Login to LinkedIn to keep in touch with people you know, share ideas, and build your career."
+    },
+    {
+      "title": "LinkedIn : s’identifier ou s’inscrire",
+      "url": "https://fr.linkedin.com/",
+      "snippet": "1 milliard de membres | Gérez votre image professionnelle. Constituez votre réseau professionnel et communiquez avec celui-ci. …"
+    },
+    {
+      "title": "Global Management Consulting Firm | Bain & Company",
+      "url": "https://www.bain.com/",
+      "snippet": "Bain & Company is a top management consulting firm. We advise leaders on strategy, marketing, organization, operations, IT and …"
+    },
+    {
+      "title": "Tendances LinkedIn 2026 : ce qui marche (et ne marche plus)",
+      "url": "https://ninasenoyer.fr/blog/tendances-linkedin-2026/",
+      "snippet": "May 8, 2026 · Algorithme, IA, formats, profil : le guide complet des tendances LinkedIn 2026 avec 25 conseils actionnables testés au …"
+    }
+  ]
+}

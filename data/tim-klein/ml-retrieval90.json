@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "tim-klein/ml-retrieval90",
+  "slug": "tim-klein-ml-retrieval90",
+  "author": "tim-klein",
+  "url": "https://huggingface.co/tim-klein/ml-retrieval90",
+  "created_at": "2026-10-18T19:07:13.000Z",
+  "updated_at": "2026-10-18T19:07:18.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Offerte Fibra Internet WiFi, Mobile, TV, Smartphone | TIM",
+      "url": "https://www.tim.it/",
+      "snippet": "L’offerta in promozione è riservata ai clienti TIM di rete fissa e mobile. Verifica prima la copertura."
+    },
+    {
+      "title": "Benvenuto in TIM",
+      "url": "https://www.tim.it/assistenza/benvenuto-in-tim",
+      "snippet": "Scopri i vantaggi e le offerte per i clienti TIM TIM Star Un universo di vantaggi esclusivi ed esperienze sorprendenti dove sei TU il …"
+    },
+    {
+      "title": "Area Clienti | TIM BUSINESS",
+      "url": "https://timbusiness.tim.it/areaclienti",
+      "snippet": "E se questi servizi fossero sempre con te? Con l’app TIM BUSINESS è possibile. Scaricala subito sul tuo smartphone o tablet e …"
+    },
+    {
+      "title": "Gruppo TIM | Italiano",
+      "url": "https://www.gruppotim.it/it.html",
+      "snippet": "TIM è il gruppo leader in Italia e Brasile nell’ICT, sviluppa infrastrutture e offre servizi digitali per lo sviluppo sostenibile. Scopri di più."
+    },
+    {
+      "title": "Gruppo TIM | Gruppo",
+      "url": "https://www.gruppotim.it/it/gruppo.html",
+      "snippet": "Qui puoi trovare informazioni su TIM e le altre aziende del Gruppo, le attività e le infrastrutture, l'organizzazione, la Governance."
+    }
+  ]
+}

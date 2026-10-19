@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "294-288-pretrain-interaction/160M-exp",
+  "slug": "294-288-pretrain-interaction-160m-exp",
+  "author": "294-288-pretrain-interaction",
+  "url": "https://huggingface.co/294-288-pretrain-interaction/160M-exp",
+  "created_at": "2026-10-10T19:53:25.000Z",
+  "updated_at": "2026-10-19T00:59:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "gpt-neox",
+    "base_model:EleutherAI/pythia-160m",
+    "base_model:finetune:EleutherAI/pythia-160m",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 1357,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 270160242251,
+  "storage_human": "270.2 GB",
+  "base_model": "EleutherAI/pythia-160m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "294-288-pretrain-interaction/160M-exp · Hugging Face",
+      "url": "https://huggingface.co/294-288-pretrain-interaction/160M-exp",
+      "snippet": "Five 160M GPT-NeoX training runs on the separate M/C/G source pools in Dolma3-16B. Clean, M500, C500, G500, and MCG500 are separate run directories under runs/. Each contains all existing step-*.pt checkpoints, including the final step-122071.pt after 16,000,090,112 tokens. Intermediate checkpoints ..."
+    },
+    {
+      "title": "160m Exp - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/294-288-pretrain-interaction/160m-exp",
+      "snippet": "by 294 288 Pretrain Interaction 294-288-pretrain-interaction/160m-exp Free2AITools Nexus Index 37.6 S: Semantic50 Query-time baseline · scored live at search A: Authority0 P: Popularity1 R: Recency100 Q: Quality50 Tech Context 2.048KCtx Vital Performance 8 DL / 30D Source → Share: 📤 𝕏 in 📣 🔗"
+    },
+    {
+      "title": "294-288-pretrain-interaction/160M-rtp · Hugging Face",
+      "url": "https://huggingface.co/294-288-pretrain-interaction/160M-rtp",
+      "snippet": "Instructions to use 294-288-pretrain-interaction/160M-rtp with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use 294-288-pretrain-interaction/160M-rtp with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline (\"text-generation\", model=\"294-288-pretrain-interaction ..."
+    },
+    {
+      "title": "AI Model Tracker Index: Updates, Sources and Evidence",
+      "url": "https://savrn.com/model-tracker",
+      "snippet": "294-288-pretrain-interaction/160M-exp → 294-288-pretrain-interaction · text generation Source updated: 18 Oct 2026, 23:28 UTC Observed by SAVRN: 18 Oct 2026, 23:30 UTC Exact repository revision Original source ↗ Publisher reported · Repository activity espnet/geolid_vl107only_independent_trainable espnet · audio classification"
+    },
+    {
+      "title": "AI Model Release Tracker: Every Confirmed 2026 Date",
+      "url": "https://aitoolsrecap.com/Blog/upcoming-ai-models-2026-release-tracker",
+      "snippet": "Confirmed release dates for every major AI model in 2026 - Gemini 4 Argon, GPT-6.1 Sol, Sonnet 5.5, Grok 4.7 - with what is still rumoured."
+    }
+  ]
+}

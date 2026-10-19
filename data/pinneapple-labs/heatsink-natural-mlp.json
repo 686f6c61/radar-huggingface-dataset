@@ -5,7 +5,7 @@
   "author": "PINNeAPPle-Labs",
   "url": "https://huggingface.co/PINNeAPPle-Labs/heatsink-natural-mlp",
   "created_at": "2026-10-13T21:00:45.000Z",
-  "updated_at": "2026-10-18T01:44:46.000Z",
+  "updated_at": "2026-10-18T18:28:31.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "tabular-regression",
@@ -34,7 +34,7 @@
   "trending_score": 0,
   "parameters": 51329,
   "parameters_human": "51329",
-  "storage_bytes": 2280106,
+  "storage_bytes": 2486350,
   "storage_human": "2 MB",
   "base_model": null,
   "formats": [

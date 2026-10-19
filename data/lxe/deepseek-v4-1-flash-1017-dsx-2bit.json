@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "lxe/DeepSeek-V4.1-Flash-1017-dsx-2bit",
+  "slug": "lxe-deepseek-v4-1-flash-1017-dsx-2bit",
+  "author": "lxe",
+  "url": "https://huggingface.co/lxe/DeepSeek-V4.1-Flash-1017-dsx-2bit",
+  "created_at": "2026-10-18T07:24:55.000Z",
+  "updated_at": "2026-10-18T21:08:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "dsx",
+  "languages": [],
+  "tags": [
+    "dsx",
+    "gguf",
+    "deepseek",
+    "deepseek-v4.1",
+    "moe",
+    "quantized",
+    "2-bit",
+    "mixed-precision",
+    "gptq",
+    "consumer-gpu",
+    "rtx-3090",
+    "text-generation",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 551880865904,
+  "parameters_human": "551.88B",
+  "storage_bytes": 444271935488,
+  "storage_human": "444.3 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lxe/DeepSeek-V4.1-Flash-1017-dsx-2bit · Hugging Face",
+      "url": "https://huggingface.co/lxe/DeepSeek-V4.1-Flash-1017-dsx-2bit",
+      "snippet": "DeepSeek-V4.1-Flash-1017 (552B MoE + 196B Engram) in 148 GB, built to run on two RTX 3090s and 128 GB of RAM with exact routing. Runs on dsx, a Rust + CUDA engine made for this model ..."
+    },
+    {
+      "title": "GitHub - lxe/dsx: DeepSeek-V4.1-Flash-1017 (552B MoE) on 2x RTX 3090 ...",
+      "url": "https://github.com/lxe/dsx",
+      "snippet": "Run DeepSeek-V4.1-Flash-1017 (552B MoE + 196B Engram) at full routing on a desktop: two RTX 3090s, 128 GB of RAM, an NVMe drive. A Rust + CUDA engine built for this one model, with its own 2-bit quant (lxe/DeepSeek-V4.1-Flash-1017-dsx-2bit)."
+    },
+    {
+      "title": "DeepSeek V4.1 Flash 1017 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/deepseek-v4.1-flash-1017",
+      "snippet": "DeepSeek V4.1 Flash 1017 is a multimodal model for reasoning, coding, and long-context agents, with native image input, a 1M-token context window, and improved performance over the original V4.1 Flash."
+    },
+    {
+      "title": "DeepSeek-V4.1-Flash-1017 — Benchmarks, Specs & Release Date",
+      "url": "https://aireleasetracker.com/model/deepseek/deepseek-v4.1-flash-1017",
+      "snippet": "DeepSeek-V4.1-Flash-1017 is an AI model released by DeepSeek on Saturday, Oct 17 2026, 37 days after DeepSeek-V4.1-Flash. It is an open-weight model — the trained weights are available to download and run."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4.1-Flash · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+      "snippet": "Pipeline name: deepseek_v4_1_flash_extract_oneshot_structured_output_file (served via the DeepSeek API, thinking disabled)"
+    }
+  ]
+}

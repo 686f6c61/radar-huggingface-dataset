@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Blockway/Agens-Volundr-DFlash2-tiny-random",
+  "slug": "blockway-agens-volundr-dflash2-tiny-random",
+  "author": "Blockway",
+  "url": "https://huggingface.co/Blockway/Agens-Volundr-DFlash2-tiny-random",
+  "created_at": "2026-10-18T23:52:26.000Z",
+  "updated_at": "2026-10-18T23:52:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "volundr",
+    "dflash",
+    "test",
+    "random-weights",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8032128,
+  "parameters_human": "8.0M",
+  "storage_bytes": 16066432,
+  "storage_human": "16 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MODELS.com's Top Rankings",
+      "url": "https://models.com/rankings/",
+      "snippet": "Industry Icons New Supers The Money List Top 50 Male Models The Hot List Runway Social"
+    },
+    {
+      "title": "How to Talk to Your Teen About Pornography - The New York Times",
+      "url": "https://www.nytimes.com/2024/12/12/health/pornography-adolescents-internet.html",
+      "snippet": "Dec 12, 2024 · Odds are your adolescent has already encountered online pornography. Your role is to openly address it, scholars say."
+    },
+    {
+      "title": "Maui Now | Breaking Maui News, Weather & Live Updates",
+      "url": "https://mauinow.com/",
+      "snippet": "Get real-time Maui breaking news, live weather alerts, local traffic, and community updates from Maui Now. Updated 24/7 across the …"
+    },
+    {
+      "title": "The Seattle Times | Local news, sports, business, politics ...",
+      "url": "https://www.seattletimes.com/",
+      "snippet": "Local news, sports, business, politics, entertainment, travel, restaurants and opinion for Seattle and the Pacific Northwest."
+    },
+    {
+      "title": "Report: Young teens are stumbling across porn. Here’s how they",
+      "url": "https://www.cnn.com/2023/01/10/health/teens-pornography-report-wellness/",
+      "snippet": "Jan 10, 2023 · Hope as we may that kids aren’t seeing pornography online, new data shows they are. Experts urge families to learn …"
+    }
+  ]
+}

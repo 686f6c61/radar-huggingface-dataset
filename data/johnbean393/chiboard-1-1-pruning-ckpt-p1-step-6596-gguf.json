@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "johnbean393/chiboard-1.1-pruning-ckpt-p1-step-6596-GGUF",
+  "slug": "johnbean393-chiboard-1-1-pruning-ckpt-p1-step-6596-gguf",
+  "author": "johnbean393",
+  "url": "https://huggingface.co/johnbean393/chiboard-1.1-pruning-ckpt-p1-step-6596-GGUF",
+  "created_at": "2026-10-19T00:38:35.000Z",
+  "updated_at": "2026-10-19T00:47:42.000Z",
+  "license": "chiboard-author-authorized-testing-only-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "pinyin",
+    "input-method",
+    "vision",
+    "zh",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 1016829792,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "johnbean393/chiboard-1-m0-GGUF · Hugging Face",
+      "url": "https://huggingface.co/johnbean393/chiboard-1-m0-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "johnbean393/chiboard-1-s1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/johnbean393/chiboard-1-s1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Chiboard 1 S1 by johnbean393 - LLM Explorer",
+      "url": "https://llm-explorer.com/model/johnbean393%2Fchiboard-1-s1,2qU1HYbHkF9HXxi1ksquU6",
+      "snippet": "Chiboard 1 S1 is an open-source 350m LLM by johnbean393. VRAM 0.7GB, 125K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Google Colab",
+      "url": "https://colab.research.google.com/drive/1Ex4gE5v1bPR3evfhtG7sDHxQGsWwNwby",
+      "snippet": "Google Colab ... Google Colab"
+    },
+    {
+      "title": "johnbean393 (John Bean) · GitHub",
+      "url": "https://github.com/johnbean393",
+      "snippet": "A graph representing johnbean393&#x27;s contributions from August 31, 2025 to September 01, 2026. The contributions are 100% commits, 0% pull requests, 0% issues, 0% code review."
+    }
+  ]
+}

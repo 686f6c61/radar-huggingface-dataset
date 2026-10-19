@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "stuff123456/fluxextremesloppy",
+  "slug": "stuff123456-fluxextremesloppy",
+  "author": "stuff123456",
+  "url": "https://huggingface.co/stuff123456/fluxextremesloppy",
+  "created_at": "2026-10-19T01:37:26.000Z",
+  "updated_at": "2026-10-19T01:37:31.000Z",
+  "license": "flux",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:absolutize/flux.2-9b-lora",
+    "base_model:adapter:absolutize/flux.2-9b-lora",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 165704616,
+  "storage_human": "166 MB",
+  "base_model": "absolutize/flux.2-9b-lora",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FLUX Models - Black Forest Labs - bfl.ai",
+      "url": "https://bfl.ai/models",
+      "snippet": "Explore all FLUX models from Black Forest Labs: FLUX 3 Video, FLUX 3 Action, FLUX.2 [max], [pro], [flex] and [klein], and FLUX Tools."
+    },
+    {
+      "title": "Flux (text-to-image model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Flux_(text-to-image_model)",
+      "snippet": "Flux is a family of text-to-image and image-to-image models developed by Black Forest Labs (BFL), based in Freiburg im Breisgau, Germany. Black Forest Labs was founded by former employees of Stability AI. As with other text-to-image models, Flux generates images from natural language descriptions, called prompts. In addition, some Flux models support editing images."
+    },
+    {
+      "title": "FLUX AI models: image generation & editing via API - Replicate",
+      "url": "https://replicate.com/collections/flux",
+      "snippet": "Run popular FLUX models on Replicate for high-quality image generation and editing. Fine-tune with your own data, edit with Flux Fill, Depth, and Canny."
+    },
+    {
+      "title": "FLUX 1.1 Pro | Black Forest Labs - bfl.ai",
+      "url": "https://bfl.ai/models/flux-pro",
+      "snippet": "Black Forest Labs is building visual intelligence: models that understand, reason, and act in the world. Use FLUX models via our API."
+    },
+    {
+      "title": "Best AI for Image Generation in 2026 — Ranked by Blind Human Votes",
+      "url": "https://llm-stats.com/leaderboards/best-ai-for-image-generation",
+      "snippet": "The best AI for image generation in 2026, ranked by blind human votes. Compare Flux, Imagen, GPT-Image, Midjourney, Recraft, and every major text-to-image and image-editing model — with live arena scores, per-image pricing, and side-by-side examples."
+    }
+  ]
+}

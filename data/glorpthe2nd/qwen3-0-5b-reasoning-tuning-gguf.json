@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "glorpthe2nd/qwen3-0.5b-reasoning-tuning-gguf",
+  "slug": "glorpthe2nd-qwen3-0-5b-reasoning-tuning-gguf",
+  "author": "glorpthe2nd",
+  "url": "https://huggingface.co/glorpthe2nd/qwen3-0.5b-reasoning-tuning-gguf",
+  "created_at": "2026-10-18T19:09:51.000Z",
+  "updated_at": "2026-10-18T19:10:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3",
+    "llama.cpp",
+    "llama-cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 1198183008,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

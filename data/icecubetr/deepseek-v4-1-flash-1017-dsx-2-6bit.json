@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "icecubetr/DeepSeek-V4.1-Flash-1017-dsx-2.6bit",
+  "slug": "icecubetr-deepseek-v4-1-flash-1017-dsx-2-6bit",
+  "author": "icecubetr",
+  "url": "https://huggingface.co/icecubetr/DeepSeek-V4.1-Flash-1017-dsx-2.6bit",
+  "created_at": "2026-10-18T22:02:56.000Z",
+  "updated_at": "2026-10-18T22:26:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "dsx",
+  "languages": [],
+  "tags": [
+    "dsx",
+    "deepseek",
+    "deepseek-v4.1",
+    "moe",
+    "quantized",
+    "2.6-bit",
+    "mixed-precision",
+    "gptq",
+    "consumer-gpu",
+    "rtx-3090",
+    "text-generation",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deepseek-ai/DeepSeek-V4.1-Flash · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+      "snippet": "Pipeline name: deepseek_v4_1_flash_extract_oneshot_structured_output_file (served via the DeepSeek API, thinking disabled)"
+    },
+    {
+      "title": "DeepSeek-V4.1-Flash-1017 — Benchmarks, Specs & Release Date",
+      "url": "https://aireleasetracker.com/model/deepseek/deepseek-v4.1-flash-1017",
+      "snippet": "What came before and after DeepSeek-V4.1-Flash-1017? DeepSeek&#x27;s previous tracked release was DeepSeek-V4.1-Flash on Sep 10 2026, 37 days earlier. It is the most recent DeepSeek model tracked on AI Release Tracker."
+    },
+    {
+      "title": "DeepSeek Just Released V4.1-Flash-1017, Scores 77.0 on DeepSWE, Opens ...",
+      "url": "https://www.marktechpost.com/2026/10/17/deepseek-just-released-v4-1-flash-1017-scores-77-0-on-deepswe-opens-search-api/",
+      "snippet": "DeepSeek has just released DeepSeek-V4.1-Flash-1017, a new checkpoint of its V4.1-Flash model. It is live on the DeepSeek website, app and API. DeepSeek claims stronger scores, faster task completion and shorter outputs than the September V4.1-Flash release. The company calls it a Pareto improvement in performance and cost."
+    },
+    {
+      "title": "DeepSeek Ties Its New V4.1-Flash-1017 Model Tighter to Its Own ...",
+      "url": "https://startupfortune.com/deepseek-ties-its-new-v41-flash-1017-model-tighter-to-its-own-harness/",
+      "snippet": "DeepSeek Ties Its New V4.1-Flash-1017 Model Tighter to Its Own Harness DeepSeek told users to upgrade to DeepSeek Harness v0.2.1-rc.1 for the best experience with the new model, which posted a 74.2% pass rate on Deep-SWE v1.1, edging out Opus-5&#x27;s 74.0%. Tencent&#x27;s CodeBuddy and WorkBuddy both get optimized access in the same announcement."
+    },
+    {
+      "title": "DeepSeek V4.1-Flash-1017: What&#x27;s New in the Benchmark Update",
+      "url": "https://www.mindstudio.ai/blog/deepseek-v4-1-flash-1017-release",
+      "snippet": "DeepSeek-V4.1-Flash-1017 raises coding and agentic benchmark scores over its predecessor while cutting task time and output length."
+    }
+  ]
+}

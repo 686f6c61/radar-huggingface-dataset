@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "OpenMinded-Labs/AileyTempest-14B",
+  "slug": "openminded-labs-aileytempest-14b",
+  "author": "OpenMinded-Labs",
+  "url": "https://huggingface.co/OpenMinded-Labs/AileyTempest-14B",
+  "created_at": "2026-04-13T17:23:47.000Z",
+  "updated_at": "2026-10-18T19:27:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "mistral3",
+    "mistral",
+    "ministral",
+    "fine-tuned",
+    "dora",
+    "lora",
+    "qat",
+    "reasoning",
+    "tool-use",
+    "ailey",
+    "openminded",
+    "text-generation",
+    "conversational",
+    "de",
+    "en",
+    "base_model:mistralai/Ministral-3-14B-Reasoning-2512",
+    "base_model:adapter:mistralai/Ministral-3-14B-Reasoning-2512",
+    "license:apache-2.0",
+    "5-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": 13506073600,
+  "parameters_human": "13.51B",
+  "storage_bytes": 39097084208,
+  "storage_human": "39.1 GB",
+  "base_model": "mistralai/Ministral-3-14B-Reasoning-2512",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Openmind : lieu d’exception à Paris pour séminaires, conférences ...",
+      "url": "https://www.openmind.paris/",
+      "snippet": "Séminaires, comités de direction, journées d'équipe : Openmind met à disposition 2 salles modulables, un service sur-mesure et un …"
+    },
+    {
+      "title": "OpenMinded La culture, autrement",
+      "url": "https://www.opnminded.com/",
+      "snippet": "9 preuves d’amour après infidélité : ces signes qui prouvent qu’il tient à vous 18 juillet 2025 Vivre une infidélité dans son couple est …"
+    },
+    {
+      "title": "Accenture finalise l’acquisition d’Openminded",
+      "url": "https://newsroom.accenture.fr/fr/news/2021/accenture-finalise-l-acquisition-d-openminded",
+      "snippet": "PARIS, le 21 juillet 2021 - Accenture (NYSE : ACN) a finalisé l’acquisition d’ Openminded, une entreprise de cybersécurité basée en …"
+    },
+    {
+      "title": "OPEN-MINDED | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/open-minded",
+      "snippet": "OPEN-MINDED definition: 1. willing to consider ideas and opinions that are new or different to your own: 2. willing to…. Learn more."
+    },
+    {
+      "title": "Société OPENMINDED à PARIS (75009). Chiffre d'affaires, bénéfice ...",
+      "url": "https://www.societe.com/societe/openminded-509316105.html",
+      "snippet": "Ce compte de résultat est une synthèse qui permet de visualiser rapidement la performance de l'entreprise OPENMINDED sur les 12 …"
+    }
+  ]
+}

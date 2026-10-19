@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "assokolov/notes-video-understanding",
+  "slug": "assokolov-notes-video-understanding",
+  "author": "assokolov",
+  "url": "https://huggingface.co/assokolov/notes-video-understanding",
+  "created_at": "2026-10-18T22:43:27.000Z",
+  "updated_at": "2026-10-18T22:43:33.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "video-understanding",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon.fr : livres, DVD, jeux vidéo, musique, high-tech, informatique ...",
+      "url": "https://www.amazon.fr/",
+      "snippet": "Conditions générales de vente Vos informations personnelles Cookies Annonces basées sur vos centres d’intérêt © 1996-2026, …"
+    },
+    {
+      "title": "Amazon.com. Spend less. Smile more.",
+      "url": "https://www.amazon.com/",
+      "snippet": "Ring Floodlight Wired — Motion-activated floodlight, bright LEDs, works with Amazon Sidewalk, Black"
+    },
+    {
+      "title": "Amazon.com: Homepage",
+      "url": "https://www.amazon.com/stores/Homepage/page/1C97BE5A-7354-49E3-828D-1A49B8513E5E",
+      "snippet": "Your Account Your Orders Shipping Rates & Policies Amazon Prime Returns & Replacements Manage Your Content and Devices …"
+    },
+    {
+      "title": "Amazon.fr",
+      "url": "https://www.amazon.fr/gp/css/your-account-access",
+      "snippet": "Accédez à votre compte Amazon.fr pour gérer vos commandes, paramètres et abonnements facilement."
+    },
+    {
+      "title": "Amazon.es: compra online de electrónica, libros, deporte, hogar, …",
+      "url": "https://www.amazon.es/",
+      "snippet": "Descubre y compra online: electrónica, moda, hogar, libros, deporte y mucho más a precios bajos en Amazon.es. Envío gratis con …"
+    }
+  ]
+}

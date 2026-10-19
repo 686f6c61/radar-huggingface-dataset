@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "zkowalski/random-efficient-attention",
+  "slug": "zkowalski-random-efficient-attention",
+  "author": "zkowalski",
+  "url": "https://huggingface.co/zkowalski/random-efficient-attention",
+  "created_at": "2026-10-18T22:44:00.000Z",
+  "updated_at": "2026-10-18T22:44:05.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "efficient-attention",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2609.03430] Random Attention: Rethinking KV Cache Eviction for ...",
+      "url": "https://arxiv.org/abs/2609.03430",
+      "snippet": "Large language models achieve superior performance on tasks that require extended reasoning, but long chains of thought make the KV cache a severe memory bottleneck. Existing KV cache compression methods share one paradigm: score each cached token by some estimate of how much it will matter later, and keep the top-scoring ones. We show that the selection signal contributes almost nothing ..."
+    },
+    {
+      "title": "GitHub - SalesforceAIResearch/Random-Attention: Code for the paper ...",
+      "url": "https://github.com/SalesforceAIResearch/Random-Attention",
+      "snippet": "Code for the paper Random Attention: Rethinking KV Cache Eviction for Efficient Reasoning (arXiv:2609.03430). 📄 Paper (arXiv:2609.03430) · 🌐 Project page · 🧵 Thread Random Attention (random_pp in the code) is a signal-free KV-cache eviction policy for reasoning models: keep the prompt, then keep a uniformly random per-KV-head subset of the generated tokens up to the budget (plus a ..."
+    },
+    {
+      "title": "Random Attention: Rethinking KV Cache Eviction for ... - OpenReview",
+      "url": "https://openreview.net/forum?id=0g6MSw9q0D",
+      "snippet": "Random Attention keeps the prompt and evicts uniformly at random within each attention head, computing no score at all; across four models and six reasoning tasks, it matches the strongest baseline in task performance while delivering 32-43% higher throughput than that method when deployed with vLLM."
+    },
+    {
+      "title": "Random Attention: Rethinking KV Cache Eviction for Efficient Reasoning",
+      "url": "https://engineersofai.com/docs/research/paper-breakdowns/2026-09-03-random-attention-rethinking-kv-cache-eviction-for-efficient-reasoning",
+      "snippet": "Random Attention: Rethinking KV Cache Eviction for Efficient Reasoning :::info Stub — Full Engineering Breakdown Coming This paper has a linked code implementation and was featured on Hugging Face Papers with 164 upvotes. A full breakdown with production viability rating, implementation notes, and honest limitations is being written. Subscribe to AI Letters → :::"
+    },
+    {
+      "title": "Random Attention",
+      "url": "https://arthur-heng.github.io/Random-Attention-page/",
+      "snippet": "Random Attention: Rethinking KV Cache Eviction for Efficient Reasoning — keep the prompt, evict the rest at random. Accuracy matches learned evictors; serving is 32-43% faster."
+    }
+  ]
+}

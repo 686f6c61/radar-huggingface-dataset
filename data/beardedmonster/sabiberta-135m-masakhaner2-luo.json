@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "BeardedMonster/SabiBERTa-135M-masakhaner2-luo",
+  "slug": "beardedmonster-sabiberta-135m-masakhaner2-luo",
+  "author": "BeardedMonster",
+  "url": "https://huggingface.co/BeardedMonster/SabiBERTa-135M-masakhaner2-luo",
+  "created_at": "2026-10-18T23:41:55.000Z",
+  "updated_at": "2026-10-18T23:42:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "luo"
+  ],
+  "tags": [
+    "safetensors",
+    "modernbert",
+    "african-languages",
+    "masakhaner2",
+    "luo",
+    "base_model:BeardedMonster/SabiBERTa-135M",
+    "base_model:finetune:BeardedMonster/SabiBERTa-135M",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 135883017,
+  "parameters_human": "135.9M",
+  "storage_bytes": 543540028,
+  "storage_human": "544 MB",
+  "base_model": "BeardedMonster/SabiBERTa-135M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MENGENAL MBAK HANNA ANISA LEBIH DEKAT [BONUS VIDIO]",
+      "url": "https://m.kaskus.co.id/thread/5a6255ffd9d77092238b4581/mengenal-mbak-hanna-anisa-lebih-dekat-bonus-vidio/",
+      "snippet": "Siapa yg tidak hanna anisa, hayoo... ngaku lu semua pada taukan... Gw kali ini enggak mau bahas sisi negativnya, karena setiap …"
+    },
+    {
+      "title": "Penikmat Pijat Sekitaran KAB Bogor | KASKUS",
+      "url": "https://www.kaskus.co.id/thread/62a2d764d4d8446c431018ec/penikmat-pijat-sekitaran-kab-bogor",
+      "snippet": "Info tempat pijet YAHUT sekitaran BOGOR terpecaya Sumber nya GUYS FR PP didaerah Bogor - Cibinong - Part 2 …"
+    },
+    {
+      "title": "Beginilah Perkembangan Payudara Remaja Putri Saat Puber",
+      "url": "https://m.kaskus.co.id/thread/50f99d1e572acf3867000009/beginilah-perkembangan-payudara-remaja-putri-saat-puber-menurut-ilmu-kedokteranpict/",
+      "snippet": "Tanda awal dimulainya masa pubertas adalah dengan membesarnya payudara pada remaja putri. Tapi tidak jarang remaja merasa …"
+    },
+    {
+      "title": "Video Viral Anak Kecil dan Wanita Dewasa Di Hotel Bandung",
+      "url": "https://m.kaskus.co.id/thread/5e509170c0cad7763a0a30f2/video-viral-anak-kecil-dan-wanita-dewasa-di-hotel-bandung-masih-banyak-dicari/",
+      "snippet": "Masih ingat.dengan video anak kecil dan orang dewasa yang sempat viral, hingga para pelaku pun saat ini sudah masuk tahanan. …"
+    },
+    {
+      "title": "[CURHAT] Ibuku Selingkuh dengan Paman ku Sendiri | KASKUS",
+      "url": "https://m.kaskus.co.id/thread/5ef990c3dbf76436ef04d603/curhat-ibuku-selingkuh-dengan-paman-ku-sendiri/",
+      "snippet": "Ayahku hanya lulusan SMP, dan ibuku lulusan SD. Jadi sudah bisa dibayangkan bahwa orang tua ku tidak semudah orang-orang …"
+    }
+  ]
+}

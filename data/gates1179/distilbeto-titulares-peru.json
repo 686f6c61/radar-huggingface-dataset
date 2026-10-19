@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "gates1179/distilbeto-titulares-peru",
+  "slug": "gates1179-distilbeto-titulares-peru",
+  "author": "gates1179",
+  "url": "https://huggingface.co/gates1179/distilbeto-titulares-peru",
+  "created_at": "2026-10-19T00:58:12.000Z",
+  "updated_at": "2026-10-19T00:58:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "es",
+    "base_model:dccuchile/distilbert-base-spanish-uncased",
+    "base_model:finetune:dccuchile/distilbert-base-spanish-uncased",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 67325188,
+  "parameters_human": "67.3M",
+  "storage_bytes": 269313280,
+  "storage_human": "269 MB",
+  "base_model": "dccuchile/distilbert-base-spanish-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "为何知网的数据无法导入zotero？ - 知乎",
+      "url": "https://www.zhihu.com/question/21518558",
+      "snippet": "然而，说完了Zotero的优势，也得说说Zotero不足的地方。 当文献积累逐渐增多的时候，如何同步保存这些文献的原文就是一个重要 …"
+    },
+    {
+      "title": "Zotero Plugin for OneNote",
+      "url": "https://forums.zotero.org/discussion/86484/zotero-plugin-for-onenote",
+      "snippet": "Dec 2, 2020 · What exactly are you doing in onenote? What is be type of integration you are looking for? If you are wanting to link …"
+    },
+    {
+      "title": "Changing from text citation to numbered citation with square bracket ...",
+      "url": "https://forums.zotero.org/discussion/88183/changing-from-text-citation-to-numbered-citation-with-square-bracket",
+      "snippet": "Mar 8, 2021 · I'd like to change from the current citation: Thanks. I've got American Psychological Association 7th edition (numeric, …"
+    },
+    {
+      "title": "zotero如何给导入的文献加上唯一的编号? - 知乎",
+      "url": "https://www.zhihu.com/question/587886165",
+      "snippet": "在使用 Zotero 管理文献时，我们常常需要为文献添加编号，方便在做文献总结时手动引用或者记录，自动编号功能在EendNote …"
+    },
+    {
+      "title": "zotero文献管理如何添加彩色标签-百度经验",
+      "url": "https://jingyan.baidu.com/article/7e440953f1b2536ec1e2ef64.html",
+      "snippet": "May 2, 2020 · zotero文献管理如何添加彩色标签,在使用文献管理工具zotero的时候，我们一般会给文献添加关键词，也就是我们的标 …"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Chat2Find-Sinhala-Translator-4B-GGUF",
+  "slug": "mradermacher-chat2find-sinhala-translator-4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Chat2Find-Sinhala-Translator-4B-GGUF",
+  "created_at": "2026-04-28T08:38:36.000Z",
+  "updated_at": "2026-10-18T21:08:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3_5",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 141,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 39945652480,
+  "storage_human": "39.9 GB",
+  "base_model": "ShenalMax/Chat2Find-Sinhala-Translator-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chat2Find-Sinhala-Translator-4B-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Chat2Find-Sinhala-Translator-4B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ShenalMax/Chat2Find-Sinhala-Translator-4B · Hugging Face",
+      "url": "https://huggingface.co/ShenalMax/Chat2Find-Sinhala-Translator-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Chat2Find-Sinhala-Translator-4B.Q2_K.gguf - SHA256 mirrors - CivArchive",
+      "url": "https://civarchive.com/sha256/2a19dee785c62c2f156e4bbe126f99a69cf4bd576210b1ee5d83c2d7353350c5",
+      "snippet": "Files with SHA256: 2a19dee785c62c2f156e4bbe126f99a69cf4bd576210b1ee5d83c2d7353350c5 Mirrors HuggingFace (1 mirrors) Chat2Find-Sinhala-Translator-4B.Q2_K.gguf"
+    },
+    {
+      "title": "Chat2Find-Sinhala-Translator-4B.f16.gguf - SHA256 mirrors - CivArchive",
+      "url": "https://civarchive.com/sha256/309ce21a14f1b97486b5dbd3e9eee2fe8c583eea7d92c7c70d546b23d9842cb6",
+      "snippet": "Download Chat2Find-Sinhala-Translator-4B.f16.gguf (SHA256: 309ce21a14f1b974...)."
+    },
+    {
+      "title": "Chat2Find Corpus: 255M Token Trilingual AI Dataset Released",
+      "url": "https://chat2find.com/2026/04/09/chat2find-trilingual-corpus-255m-tokens-release/",
+      "snippet": "Chat2Find releases a ground-breaking 255M token trilingual corpus (Sinhala, Tamil, English) on Hugging Face. Download the open-source dataset for LLM training and research."
+    }
+  ]
+}

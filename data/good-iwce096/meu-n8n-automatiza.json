@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Good-iwce096/meu-n8n-automatiza",
+  "slug": "good-iwce096-meu-n8n-automatiza",
+  "author": "Good-iwce096",
+  "url": "https://huggingface.co/Good-iwce096/meu-n8n-automatiza",
+  "created_at": "2026-10-18T22:13:50.000Z",
+  "updated_at": "2026-10-18T22:13:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://ipv4.google.com/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …Read more"
+    },
+    {
+      "title": "GOOD | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/good",
+      "snippet": "GOOD definition: 1. very satisfactory, enjoyable, pleasant, or interesting: 2. used when saying goodbye to someone…. Learn more."
+    },
+    {
+      "title": "GOOD Definition & Meaning - Merriam-Webster",
+      "url": "https://www.merriam-webster.com/dictionary/good",
+      "snippet": "1 day ago · Insistence on well rather than good has resulted in a split in connotation: well is standard, neutral, and colorless, while …"
+    },
+    {
+      "title": "Good - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Good",
+      "snippet": "In most contexts, the concept of good denotes the conduct that should be preferred when posed with a choice between possible …"
+    },
+    {
+      "title": "good - Traduction française – Linguee",
+      "url": "https://www.linguee.fr/anglais-francais/traduction/good.html",
+      "snippet": "De très nombreux exemples de phrases traduites contenant \"good\" – Dictionnaire français-anglais et moteur de recherche de …"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "mangaba-ai/brier-zero",
+  "slug": "mangaba-ai-brier-zero",
+  "author": "mangaba-ai",
+  "url": "https://huggingface.co/mangaba-ai/brier-zero",
+  "created_at": "2026-10-18T23:52:43.000Z",
+  "updated_at": "2026-10-19T00:05:36.000Z",
+  "license": "mangaba-ai-proprietaria",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "classification",
+    "decision",
+    "calibration",
+    "lora",
+    "portuguese",
+    "brier",
+    "distillation",
+    "pt",
+    "base_model:mlx-community/Qwen3-4B-Instruct-2507-4bit",
+    "base_model:adapter:mlx-community/Qwen3-4B-Instruct-2507-4bit",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 73430888,
+  "storage_human": "73 MB",
+  "base_model": "mlx-community/Qwen3-4B-Instruct-2507-4bit",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "brier — Calibration & Research with Decision Models",
+      "url": "https://metatext.io/decision-models/use-cases/projects/brier",
+      "snippet": "Mangaba AI&#x27;s local, calibrated typed-decision model for Portuguese text, trained to optimize the Brier score; proprietary since v5."
+    },
+    {
+      "title": "brier · JevDirectory.org",
+      "url": "https://www.jevdirectory.org/resources/mangaba-ai-brier",
+      "snippet": "Open github.com Mangaba-ai/brier Category Jev Tools & CLIs Format — Published by Community Author Mangaba-ai Added 2026-10-03 Last verified 2026-10-04 Tags community github"
+    },
+    {
+      "title": "Mangaba AI - GitHub",
+      "url": "https://github.com/mangaba-ai",
+      "snippet": "JavaScript 0 MIT 0 0 0 Updated on Jun 12 mangaba-ai-maker-agent Public Orquestre uma equipe de agentes de IA para automatizar tarefas complexas, gerar conteúdo estratégico e extrair insights poderosos de seus dados."
+    },
+    {
+      "title": "brier/README.md at main · Mangaba-ai/brier · GitHub",
+      "url": "https://github.com/Mangaba-ai/brier/blob/main/README.md",
+      "snippet": "Brier: decisões tipadas e calibradas (choice/score/noul), locais, no formato da API do Jev. Qwen3-1.7B + LoRA em MLX. - brier/README.md at main · Mangaba-ai/brier"
+    },
+    {
+      "title": "Brier — Jev Project Guide · JevList",
+      "url": "https://jevlist.ai/projects/brier",
+      "snippet": "Independent model research Brier Local calibrated choice/score/noul decisions in TypeSafe Jev API form, trained for Portuguese, on Apple Silicon MLX."
+    }
+  ]
+}

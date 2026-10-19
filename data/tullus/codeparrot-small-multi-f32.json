@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "TULLUS/codeparrot-small-multi-F32",
+  "slug": "tullus-codeparrot-small-multi-f32",
+  "author": "TULLUS",
+  "url": "https://huggingface.co/TULLUS/codeparrot-small-multi-F32",
+  "created_at": "2026-09-29T09:48:46.000Z",
+  "updated_at": "2026-10-19T00:05:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "code"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "code",
+    "dataset:codeparrot/github-code-clean",
+    "dataset:openai_humaneval",
+    "base_model:codeparrot/codeparrot-small-multi",
+    "base_model:finetune:codeparrot/codeparrot-small-multi",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1096,
+  "trending_score": 0,
+  "parameters": 111008256,
+  "parameters_human": "111.0M",
+  "storage_bytes": 444048000,
+  "storage_human": "444 MB",
+  "base_model": "codeparrot/codeparrot-small-multi",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hannah__owo - Reddit",
+      "url": "https://www.reddit.com/r/hannah__owo/",
+      "snippet": "May 29, 2022 · r/hannah__owo: post all the content that you have about Hannah owo"
+    },
+    {
+      "title": "Hannah__OwO_ - Reddit",
+      "url": "https://www.reddit.com/r/Hannah__OwO_/",
+      "snippet": "Jun 9, 2024 · Skip to main content Open menuOpen navigationGo to Reddit Home r/Hannah__OwO_ A chipA close button Get …"
+    },
+    {
+      "title": "Reddit - The heart of the internet",
+      "url": "https://www.reddit.com/r/hannahs_owo/",
+      "snippet": "r/hannahs_owo is private This is a sub. This community is private and only approved members can view and take part in its …"
+    },
+    {
+      "title": "Hannahowo : r/NaturalCurves - Reddit",
+      "url": "https://www.reddit.com/r/NaturalCurves/comments/127gk0m/hannahowo/",
+      "snippet": "Mar 31, 2023 · 292K subscribers in the NaturalCurves community. Naturally Built Women 🌞🍑 You Matter 💙💙 “Show me something natural …"
+    },
+    {
+      "title": "Hannah OwO : r/dailyofleaks - Reddit",
+      "url": "https://www.reddit.com/r/dailyofleaks/comments/17syqui/hannah_owo/",
+      "snippet": "Nov 11, 2023 · 501 subscribers in the dailyofleaks community. Daily new OnlyFans Leaks."
+    }
+  ]
+}

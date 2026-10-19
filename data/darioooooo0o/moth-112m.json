@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "darioooooo0o/moth-112m",
+  "slug": "darioooooo0o-moth-112m",
+  "author": "darioooooo0o",
+  "url": "https://huggingface.co/darioooooo0o/moth-112m",
+  "created_at": "2026-10-19T00:28:39.000Z",
+  "updated_at": "2026-10-19T01:32:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "tiny",
+    "companion",
+    "chatbot",
+    "character",
+    "agent-companion",
+    "tool-use",
+    "from-scratch",
+    "intel-arc",
+    "desktop-pet",
+    "text-generation",
+    "en",
+    "dataset:nvidia/Nemotron-SWE-v1",
+    "dataset:nebius/SWE-rebench-openhands-trajectories",
+    "dataset:lambda/hermes-agent-reasoning-traces",
+    "base_model:darioooooo0o/tiny-agent-112m",
+    "base_model:finetune:darioooooo0o/tiny-agent-112m",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 431165568,
+  "parameters_human": "431.2M",
+  "storage_bytes": 862537888,
+  "storage_human": "863 MB",
+  "base_model": "darioooooo0o/tiny-agent-112m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "darioooooo0o/moth-112m · Hugging Face",
+      "url": "https://huggingface.co/darioooooo0o/moth-112m",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - riceharvest/moth: moth: a tiny 112M local companion chatbot, a ...",
+      "url": "https://github.com/riceharvest/moth/tree/main/",
+      "snippet": "moth is a silly little companion, not an assistant. It&#x27;s a tiny 112M-parameter model that thinks it&#x27;s a silkmoth living on your graphics card. It&#x27;s a bit dim, gets things sweetly wrong, and will not fix your code. It keeps you company while your coding agent works: hook it up and it reacts to each agent turn&#x27;s final message with a cute misreading."
+    },
+    {
+      "title": "darioooooo0o/tiny-agent-112m · Hugging Face",
+      "url": "https://huggingface.co/darioooooo0o/tiny-agent-112m",
+      "snippet": "A 112M-parameter decoder trained from scratch in about 30 hours of wall-clock time on a single Intel Arc Pro B70 (32 GB). The pipeline: pretrain on code, math and English; distill from a Qwen3.8-27B teacher; run GRPO in a sandbox with bash, read, edit, write and submit tools. The architecture ..."
+    },
+    {
+      "title": "GitHub - kishlay42/Moth-ai",
+      "url": "https://github.com/kishlay42/Moth-ai",
+      "snippet": "Overview Moth AI is the first terminal-native coding assistant built from the ground up to treat local and open-source LLMs as first-class citizens. While others lock you into proprietary models or cloud subscripts, Moth is truly open source—in code, philosophy, and model support."
+    },
+    {
+      "title": "darioooooo0o/tiny-agent-112m at main - Hugging Face",
+      "url": "https://huggingface.co/darioooooo0o/tiny-agent-112m/tree/main",
+      "snippet": "darioooooo0o / tiny-agent-112m Like 0 Text Generation Safetensors 8 datasets English tiny agent tool-use reinforcement-learning grpo engram from-scratch intel-arc License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main tiny-agent-112m 1.73 GB Ctrl+K Ctrl+K 1 contributor History:2 commits darioooooo0o tiny-agent-112m: base + RL weights, tokenizer, code, model ..."
+    }
+  ]
+}

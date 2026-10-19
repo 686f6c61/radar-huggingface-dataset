@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "ReadyArt/Wicked-Tutu-31B-v2.0",
+  "slug": "readyart-wicked-tutu-31b-v2-0",
+  "author": "ReadyArt",
+  "url": "https://huggingface.co/ReadyArt/Wicked-Tutu-31B-v2.0",
+  "created_at": "2026-10-19T01:20:31.000Z",
+  "updated_at": "2026-10-19T02:21:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "nsfw",
+    "explicit",
+    "roleplay",
+    "unaligned",
+    "ERP",
+    "Erotic",
+    "Horror",
+    "Violence",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:google/gemma-4-31B-it",
+    "base_model:finetune:google/gemma-4-31B-it",
+    "license:apache-2.0",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31273088876,
+  "parameters_human": "31.27B",
+  "storage_bytes": 62578507874,
+  "storage_human": "62.6 GB",
+  "base_model": "google/gemma-4-31B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ReadyArt/Wicked-Tutu-31B-v0.1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ReadyArt/Wicked-Tutu-31B-v0.1-GGUF",
+      "snippet": "Instructions to use ReadyArt/Wicked-Tutu-31B-v0.1-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use ReadyArt/Wicked-Tutu-31B-v0.1-GGUF with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "ReadyArt (Ready.Art) - Hugging Face",
+      "url": "https://huggingface.co/ReadyArt",
+      "snippet": "Org profile for Ready.Art on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "ReadyArt AI Model Benchmarks | BenchmarkList",
+      "url": "https://benchmarklist.com/providers/readyart/",
+      "snippet": "ReadyArt AI model benchmark profile: 25 models, 1 covered benchmarks on BenchmarkList."
+    },
+    {
+      "title": "Tutu AI Models (22) | Civitai",
+      "url": "https://civitai.red/tag/tutu",
+      "snippet": "Browse 22 AI models tagged \"Tutu\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    },
+    {
+      "title": "Hugging Models on X: \"Meet Wicked-Tutu-31B-v0.1-GGUF: a 31B text-gen ...",
+      "url": "https://x.com/HuggingModels/status/2111605935903060063",
+      "snippet": "Meet Wicked-Tutu-31B-v0.1-GGUF: a 31B text-gen model built for explicit roleplay, ERP, horror, and violence. Unaligned and NSFW, it&#x27;s for those who want raw, unfiltered storytelling. 🧵"
+    }
+  ]
+}

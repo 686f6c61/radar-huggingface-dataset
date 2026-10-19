@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "blackOrder/Ordivo-v1",
+  "slug": "blackorder-ordivo-v1",
+  "author": "blackOrder",
+  "url": "https://huggingface.co/blackOrder/Ordivo-v1",
+  "created_at": "2026-10-19T00:43:45.000Z",
+  "updated_at": "2026-10-19T01:56:12.000Z",
+  "license": "lfm-open-license-v1.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "ordivo",
+    "neural-decision-intelligence",
+    "decision-model",
+    "mcdm",
+    "lora",
+    "copras",
+    "waspas",
+    "vikor",
+    "topsis",
+    "text-generation",
+    "conversational",
+    "dataset:blackOrder/liquid-mcdm-synthetic",
+    "base_model:LiquidAI/d1-3B",
+    "base_model:adapter:LiquidAI/d1-3B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 115805886,
+  "storage_human": "116 MB",
+  "base_model": "LiquidAI/d1-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BlackOrder AI Agent Catalog: machine-readable API for AI agents",
+      "url": "https://blackorder.io/agents",
+      "snippet": "Official machine-readable catalog of BlackOrder apps and articles for AI agents: discovery documents, JSON search, official pages, no key required."
+    },
+    {
+      "title": "BLACK ORDER DIORAMA TESTED AND READY FOR 3D PRINTING 3D model 3D ...",
+      "url": "https://www.cgtrader.com/3d-print-models/art/sculpture/black-order-diorama-tested-and-ready-for-3d-printing",
+      "snippet": "Wicked Patreon is proud to present the Black Order Diorama Sculpture model Black Order Diorama Sculpture 1/6 Scale STL tested and ready for 3D printing. 5 sculptures + 5 busts x Only 50 USD! Get Your Swag On with the Children of Thanos Proxima Midnight: Fierce and unapologetic, this goddess ain&#x27;t here to play!"
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "Ordine - AI Agent First Work Orchestration Framework",
+      "url": "https://ordine.ai/",
+      "snippet": "AI Agent First Work Orchestration Framework. Composable orchestration primitives for any automation workflow."
+    },
+    {
+      "title": "BlackOrder - Kaggle",
+      "url": "https://www.kaggle.com/blackorder/datasets",
+      "snippet": "Kaggle profile for BlackOrder"
+    }
+  ]
+}

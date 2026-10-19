@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "dracko14/nanolang-bitnet-b158-700m",
+  "slug": "dracko14-nanolang-bitnet-b158-700m",
+  "author": "dracko14",
+  "url": "https://huggingface.co/dracko14/nanolang-bitnet-b158-700m",
+  "created_at": "2026-10-19T01:25:48.000Z",
+  "updated_at": "2026-10-19T02:53:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "nanow",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "nanow",
+    "llama",
+    "ternary",
+    "bitnet",
+    "1.58-bit",
+    "quantization",
+    "cpu-inference",
+    "agent",
+    "text-generation",
+    "en",
+    "arxiv:2402.17764",
+    "base_model:1bitLLM/bitnet_b1_58-large",
+    "base_model:quantized:1bitLLM/bitnet_b1_58-large",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 367513600,
+  "storage_human": "368 MB",
+  "base_model": "1bitLLM/bitnet_b1_58-large",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · dracko14/Myth at main - Hugging Face",
+      "url": "https://huggingface.co/dracko14/Myth/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dracko14/Myth · Hugging Face",
+      "url": "https://huggingface.co/dracko14/Myth",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - microsoft/BitNet: Official inference framework for 1-bit LLMs",
+      "url": "https://github.com/microsoft/BitNet",
+      "snippet": "Official inference framework for 1-bit LLMs. Contribute to microsoft/BitNet development by creating an account on GitHub."
+    },
+    {
+      "title": "Your Guide to Training with nanoGPT-BitNet158b - fxis.ai",
+      "url": "https://fxis.ai/edu/your-guide-to-training-with-nanogpt-bitnet158b/",
+      "snippet": "Welcome to the fascinating world of nanoGPT-BitNet158b, a versatile and efficient tool designed for training and fine-tuning medium-sized GPT models. If you&#x27;re eager to embark on your journey with this powerful model, you&#x27;ve come to the right place. This user-friendly guide will walk you through the necessary steps, from installation to fine-tuning your own models! Getting Started with ..."
+    },
+    {
+      "title": "OpenRouter",
+      "url": "https://openrouter.ai/",
+      "snippet": "The unified interface for every model. Find the best models & prices for your prompts"
+    }
+  ]
+}

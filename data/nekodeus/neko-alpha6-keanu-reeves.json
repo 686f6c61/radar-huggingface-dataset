@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Nekodeus/neko-alpha6-keanu-reeves",
+  "slug": "nekodeus-neko-alpha6-keanu-reeves",
+  "author": "Nekodeus",
+  "url": "https://huggingface.co/Nekodeus/neko-alpha6-keanu-reeves",
+  "created_at": "2026-10-18T23:03:20.000Z",
+  "updated_at": "2026-10-18T23:03:42.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "stable-diffusion",
+    "sd15",
+    "lora",
+    "text-to-image",
+    "character",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18989320,
+  "storage_human": "19 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Keanu Reeves Models | PromptHero",
+      "url": "https://prompthero.com/ai-models/keanu-reeves-download",
+      "snippet": "Keanu Reeves is an actor. Most famous for the Matrix, John Wick, Speed, Johny Mnemonic, Devil&#x27;s Advocate, Constantine and Point Break."
+    },
+    {
+      "title": "Keanu Reeves - Download Free 3D Model | Meshy",
+      "url": "https://www.meshy.ai/3d-models/keanu-reeves-01a0986e-b0b0-76d1-aaa2-2347d053891e",
+      "snippet": "Keanu Reeves Download this free 3D model (FBX, OBJ, GLB) by @ciphervrofficial on Meshy AI."
+    },
+    {
+      "title": "STL file KEANU REEVES・3D print design to download・Cults",
+      "url": "https://cults3d.com/en/3d-model/art/keanu-reeves",
+      "snippet": "Modeling the good guy Keanu Reeves If you have any questions or problems with the model, please contact me via my personal email email: ikkifenixdesigns@gmail.com"
+    },
+    {
+      "title": "Keanu Reeves AI Models | PixAI",
+      "url": "https://pixai.art/en/tags/model/keanu_reeves",
+      "snippet": "Discover AI Art Model in our #Keanu Reeves gallery. All TagsTags Trending Trending Most Used Most Liked Latest All Categories All Categories LoRA SD All Time All Time Yesterday Past 7 Days Past 30 Days User LoRASD 90s Keanu Reeves「LoRa」 4290 23 User LoRAXL Cyberpunk Bike Arch Method 143 [SDXL & Illustrious] 3040 6 User LoRAXL Hell (Constantine 2005) - JuggernautXL 670 1 User LoRASD Shadow ..."
+    },
+    {
+      "title": "Rigged Keanu Reeves 3D Models For Download | TurboSquid",
+      "url": "https://www.turbosquid.com/3d-model/rigged/keanu-reeves",
+      "snippet": "Rigged keanu reeves 3D models for download, files in 3ds, max, c4d, maya, blend, obj, fbx with free format conversions, royalty-free license, and extended usage rights."
+    }
+  ]
+}

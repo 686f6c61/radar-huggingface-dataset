@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ju23gam34/neurona_esferica_anti_alucinacion",
+  "slug": "ju23gam34-neurona_esferica_anti_alucinacion",
+  "author": "ju23gam34",
+  "url": "https://huggingface.co/ju23gam34/neurona_esferica_anti_alucinacion",
+  "created_at": "2026-10-18T23:13:29.000Z",
+  "updated_at": "2026-10-18T23:13:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
+    },
+    {
+      "title": "Connecting People Through Everyday Moments | About Instagram",
+      "url": "https://about.instagram.com/about-us/",
+      "snippet": "Make the most of your Instagram experience by discovering new feature updates, tips, and tools to engage with your audience."
+    },
+    {
+      "title": "About Instagram: Features, Safety, Community & More",
+      "url": "https://about.instagram.com/",
+      "snippet": "Learn about Instagram: how the app works, key features, safety tools, teen accounts, parent resources, community programs, and …"
+    },
+    {
+      "title": "adidas Football (@adidasfootball) • Instagram photos and videos",
+      "url": "https://www.instagram.com/adidasfootball/",
+      "snippet": "35M Followers, 973 Following, 4,314 Posts - adidas Football (@adidasfootball) on Instagram: \"Predator or F50. choose one 🫵 …"
+    },
+    {
+      "title": "Marketing sur Instagram - Instagram for Business",
+      "url": "https://business.instagram.com/?locale=fr_FR",
+      "snippet": "Instagram permet aux utilisateur·trices d’interagir avec plus de deux millions d’entreprises. Découvrez comment utiliser Instagram …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "HNEI-PakaLi-Lab/dtw-cnn-battery-diagnosis",
+  "slug": "hnei-pakali-lab-dtw-cnn-battery-diagnosis",
+  "author": "HNEI-PakaLi-Lab",
+  "url": "https://huggingface.co/HNEI-PakaLi-Lab/dtw-cnn-battery-diagnosis",
+  "created_at": "2026-10-18T22:43:12.000Z",
+  "updated_at": "2026-10-18T22:58:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "tabular-regression",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "battery-hub",
+    "battery-diagnosis",
+    "degradation-modes",
+    "tensorflow",
+    "incremental-capacity",
+    "dynamic-time-warping",
+    "tabular-regression",
+    "dataset:HNEI-PakaLi-Lab/synthetic-battery-diagnosis",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 94598001,
+  "storage_human": "95 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HNEI-PakaLi-Lab/synthetic-battery-diagnosis - Hugging Face",
+      "url": "https://huggingface.co/datasets/HNEI-PakaLi-Lab/synthetic-battery-diagnosis",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "PakaLi Battery Laboratory - Hawai&#x27;i Natural Energy Institute",
+      "url": "https://www.hnei.hawaii.edu/facilities/pakali-battery-lab/",
+      "snippet": "Testing of batteries under representative conditions to assess durability in the field; Battery diagnosis and prognosis using non-invasive and deployable techniques; Battery packs modeling taking into consideration cell-to-cell variations and inhomogeneities; Deployed systems state of charge and state of health monitoring; Battery prototyping and electrode formulation optimization; and ..."
+    },
+    {
+      "title": "HNEI Researcher Publishes 1st Ever Synthetic Training Datasets for AI ...",
+      "url": "https://www.hnei.hawaii.edu/hnei-researcher-publishes-1st-ever-synthetic-training-datasets-for-ai-diagnosis-of-li-ion-batteries/",
+      "snippet": "HNEI Researcher Publishes 1st Ever Synthetic Training Datasets for AI Diagnosis of Li-ion Batteries HNEI Assistant Researcher Matthieu Dubarry and his team published a new study in the Journal of Power Sources. In this, they proposed, for the first time, synthetic training datasets for artificial intelligence lithium ion diagnosis and prognosis."
+    },
+    {
+      "title": "WeatherNext 2: AI model predictions for tropical cyclones",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/weathernext-2-cyclones/",
+      "snippet": "Predicting how hurricanes and cyclones develop is a longstanding challenge, and every hour of warning counts. Tropical cyclones are among the most destructive weather events on Earth, and for meteorologists, issuing accurate, timely warnings is a constant race against time. Today, in a paper published in Nature, Google researchers show that our WeatherNext AI model achieved state-of-the-art ..."
+    }
+  ]
+}

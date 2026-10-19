@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "AutoPIL-Inc/Mirador-Chat-Runtime",
+  "slug": "autopil-inc-mirador-chat-runtime",
+  "author": "AutoPIL-Inc",
+  "url": "https://huggingface.co/AutoPIL-Inc/Mirador-Chat-Runtime",
+  "created_at": "2026-10-18T22:18:58.000Z",
+  "updated_at": "2026-10-18T22:18:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-10-19T03:21:07.523Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AutoPIL — AI Agent Governance | Runtime Enforcement & Audit Trail",
+      "url": "https://www.autopil.ai/",
+      "snippet": "Policy enforcement, immutable audit logging, and real-time alerting for autonomous AI agents in regulated industries."
+    },
+    {
+      "title": "AI Observability | Mirador",
+      "url": "https://mirador.org/ai",
+      "snippet": "Mirador AI is a focused way to operate model traffic. Under it is the same trace, metric, event, automation, and API platform. All adapted to the questions AI teams ask every day."
+    },
+    {
+      "title": "AutoPIL — Documentation",
+      "url": "https://www.autopil.ai/docs",
+      "snippet": "AutoPIL ships an MCP (Model Context Protocol) server that exposes context governance as native tools for any MCP-compatible AI agent — Claude, GPT-4, Gemini, or any custom agent that speaks MCP."
+    },
+    {
+      "title": "GitHub - AutoPIL-INC/autopil-examples: Gives sample implementations for ...",
+      "url": "https://github.com/AutoPIL-INC/autopil-examples/blob/main/",
+      "snippet": "AutoPIL Examples Sample implementations showing how to use AutoPIL — a runtime policy enforcement, audit logging, and agent registry layer for AI agents — with different agent frameworks."
+    },
+    {
+      "title": "Mirador Labs | Unbounded Observability",
+      "url": "https://mirador.org/",
+      "snippet": "Mirador is a complete observability platform - every signal, one data model, no per-signal tool sprawl. Then it attaches the context no one else has."
+    }
+  ]
+}

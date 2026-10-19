@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "CTlandu/csci680-a1-t5-ft-nopt",
+  "slug": "ctlandu-csci680-a1-t5-ft-nopt",
+  "author": "CTlandu",
+  "url": "https://huggingface.co/CTlandu/csci680-a1-t5-ft-nopt",
+  "created_at": "2026-10-19T01:38:16.000Z",
+  "updated_at": "2026-10-19T01:39:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "code",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "code-review",
+    "java",
+    "csci680",
+    "code",
+    "en",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 60506624,
+  "parameters_human": "60.5M",
+  "storage_bytes": 242041896,
+  "storage_human": "242 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "@CTlandu - Token Usage | Tokscale",
+      "url": "https://tokscale.ai/u/CTlandu",
+      "snippet": "30d average tokens usage by model and provider from Oct 10, 2025 to Oct 10, 2026. Raw range total: 34.7B."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "10 Best Free AI Tools in 2026 (Actually Free, No Credit Card)",
+      "url": "https://seeai.net/best/best-free-ai-tools/",
+      "snippet": "The best truly free AI tools of 2026 — no hidden fees, no credit card required. DeepSeek, Claude, Stable Diffusion, Suno, and 6 more powerful free AI tools tested and ranked."
+    },
+    {
+      "title": "Open Source AI Models — The open-source AI model directory",
+      "url": "https://opensourceaimodels.net/",
+      "snippet": "Open source AI models compared by license, parameters, benchmarks, VRAM and inference pricing for Llama, Mistral, Qwen, DeepSeek, Gemma, Phi and more. Pick the right open-weights model for your use case."
+    },
+    {
+      "title": "dmilanko/code-review-t5-nopt · Hugging Face",
+      "url": "https://huggingface.co/dmilanko/code-review-t5-nopt",
+      "snippet": "code-review-t5-nopt Condition A: T5-small fine-tuned from random weights on code&comment2code + code2comment (selected checkpoint, step 30,000). CSCI 680 Assignment 1."
+    }
+  ]
+}

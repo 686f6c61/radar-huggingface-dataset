@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Interscript/fas-diac-base-1.0",
+  "slug": "interscript-fas-diac-base-1-0",
+  "author": "Interscript",
+  "url": "https://huggingface.co/Interscript/fas-diac-base-1.0",
+  "created_at": "2026-10-19T00:03:22.000Z",
+  "updated_at": "2026-10-19T00:03:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 711254175,
+  "storage_human": "711 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Interscript (Interscript) - Hugging Face",
+      "url": "https://huggingface.co/Interscript/models",
+      "snippet": "Org profile for Interscript on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Releases · interscript/interscript-models · GitHub",
+      "url": "https://github.com/interscript/interscript-models/releases",
+      "snippet": "Model index v9: adds heb-diac-plane-1. and heb-diac-plane-2. (ByT5-base, K=3, int8, nakdimon DER 8.18). 28 models."
+    },
+    {
+      "title": "interscript-models/models at main - GitHub",
+      "url": "https://github.com/interscript/interscript-models/tree/main/models",
+      "snippet": "Unified ML training framework + distribution for Interscript (rababa + secryst) - interscript/interscript-models"
+    },
+    {
+      "title": "Interscript/urd-diac-1.0 · Hugging Face",
+      "url": "https://huggingface.co/Interscript/urd-diac-1.0",
+      "snippet": "Full evaluation sets, zero skipped examples, the benchmark&#x27;s own evaluator. Provenance for every number is the results record of the training project. Trained in the Secryst training monorepo and published through the interscript-ml distribution contract (models.yaml index, sha256-verified release ..."
+    },
+    {
+      "title": "Neural layer — Interscript",
+      "url": "https://interscript.org/ml/",
+      "snippet": "Learned transliteration, diacritization and grapheme-to-phoneme models for interscript: sha256-verified IMF v1 artifacts served identically from Ruby, Python, and TypeScript."
+    }
+  ]
+}

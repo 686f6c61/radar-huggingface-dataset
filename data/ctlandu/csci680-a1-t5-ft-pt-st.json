@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "CTlandu/csci680-a1-t5-ft-pt-st",
+  "slug": "ctlandu-csci680-a1-t5-ft-pt-st",
+  "author": "CTlandu",
+  "url": "https://huggingface.co/CTlandu/csci680-a1-t5-ft-pt-st",
+  "created_at": "2026-10-19T01:38:29.000Z",
+  "updated_at": "2026-10-19T01:39:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "code",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "code-review",
+    "java",
+    "csci680",
+    "code",
+    "en",
+    "base_model:CTlandu/csci680-a1-t5-small-pretrained",
+    "base_model:finetune:CTlandu/csci680-a1-t5-small-pretrained",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 60506624,
+  "parameters_human": "60.5M",
+  "storage_bytes": 242041896,
+  "storage_human": "242 MB",
+  "base_model": "CTlandu/csci680-a1-t5-small-pretrained",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Frontier AI Models: Live Top 10 Rankings, Evidence and ... - benchlm.ai",
+      "url": "https://benchlm.ai/frontier-ai-models",
+      "snippet": "See which AI models are on the frontier in October 2026. Compare the top 10 by score, conditional score range, pricing, and Supported or Estimated status."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 954 AI models across 639 benchmarks, with 224 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "LLM Updates (October 2026) - AI Model Releases & Provider Activity",
+      "url": "https://lmmarketcap.com/llm-updates",
+      "snippet": "Track AI model releases, recently added endpoints, and provider update cadence across GPT, Claude, Gemini, DeepSeek, Llama, and 350+ models."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, DeepSeek, Qwen, Mistral, Z.ai, Meta, and important open-weight model families."
+    }
+  ]
+}

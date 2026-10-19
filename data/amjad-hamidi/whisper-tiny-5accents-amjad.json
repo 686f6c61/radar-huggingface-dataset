@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Amjad-Hamidi/whisper-tiny-5accents-Amjad",
+  "slug": "amjad-hamidi-whisper-tiny-5accents-amjad",
+  "author": "Amjad-Hamidi",
+  "url": "https://huggingface.co/Amjad-Hamidi/whisper-tiny-5accents-Amjad",
+  "created_at": "2026-10-18T23:26:31.000Z",
+  "updated_at": "2026-10-18T23:58:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 37760640,
+  "parameters_human": "37.8M",
+  "storage_bytes": 302167423,
+  "storage_human": "302 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openai/whisper-tiny · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-tiny",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "hamna11/whisper-tiny-en-asian-accent · Hugging Face",
+      "url": "https://huggingface.co/hamna11/whisper-tiny-en-asian-accent",
+      "snippet": "Whisper tiny En - Hamna Ramzan This model is a fine-tuned version of openai/whisper-tiny on the South_asian_accent dataset. It achieves the following results on the evaluation set: Loss: 0.3981 Wer: 16.4164 Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training procedure Training ..."
+    },
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "openai-whisper · PyPI",
+      "url": "https://pypi.org/project/openai-whisper/",
+      "snippet": "The .en models for English-only applications tend to perform better, especially for the tiny.en and base.en models. We observed that the difference becomes less significant for the small.en and medium.en models. Additionally, the turbo model is an optimized version of large-v3 that offers faster transcription speed with a minimal degradation in accuracy. Whisper&#x27;s performance varies widely ..."
+    },
+    {
+      "title": "Whisper-Tiny - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/mobile/models/whisper_tiny",
+      "snippet": "Whisper-Tiny Transformer‑based automatic speech recognition (ASR) model for multilingual transcription and translation available on HuggingFace. HuggingFace Whisper‑Tiny ASR (Automatic Speech Recognition) model is a state‑of‑the‑art system designed for transcribing spoken language into written text. This model is based on the transformer architecture and has been optimized for edge ..."
+    }
+  ]
+}

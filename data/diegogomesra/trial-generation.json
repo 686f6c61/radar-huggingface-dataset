@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Diegogomesra/trial-generation",
+  "slug": "diegogomesra-trial-generation",
+  "author": "Diegogomesra",
+  "url": "https://huggingface.co/Diegogomesra/trial-generation",
+  "created_at": "2026-10-18T22:05:01.000Z",
+  "updated_at": "2026-10-18T22:05:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hybrid",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Generative AI Models - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/blogs/generative-ai-models/",
+      "snippet": "DALL·E: OpenAI&#x27;s image-generation model family designed to create and edit images from text prompts. Sora: OpenAI&#x27;s generative video model designed to create and transform video content using natural language and other inputs. Runway: A generative AI platform offering models and tools for creating, editing and transforming images and videos."
+    },
+    {
+      "title": "OpenRouter",
+      "url": "https://openrouter.ai/",
+      "snippet": "The unified interface for every model. Find the best models & prices for your prompts"
+    },
+    {
+      "title": "AI Free Trials 2026: Every Pro Tier You Can Test Free",
+      "url": "https://felloai.com/ai-free-trials/",
+      "snippet": "The honest September 2026 list of AI free trials. Google AI Pro and Microsoft 365 Premium, one month each, plus why Copilot Pro is dead and ChatGPT has none."
+    },
+    {
+      "title": "Runway AI · Image and Video Generator",
+      "url": "https://runway-ai.app/",
+      "snippet": "Generate images and video with AI. Text to video, image to video, plus more. Runway&#x27;s AI image and video generation tools trusted by millions worldwide"
+    },
+    {
+      "title": "[2504.07210] MESA: Text-Driven Terrain Generation Using Latent ...",
+      "url": "https://arxiv.org/abs/2504.07210",
+      "snippet": "Terrain modeling has traditionally relied on procedural techniques, which often require extensive domain expertise and handcrafted rules. In this paper, we present MESA - a novel data-centric alternative by training a diffusion model on global remote sensing data. This approach leverages large-scale geospatial information to generate high-quality terrain samples from text descriptions ..."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "local-inference-lab/DeepSeek-V4.1-Flash-1017-FLARE",
+  "slug": "local-inference-lab-deepseek-v4-1-flash-1017-flare",
+  "author": "local-inference-lab",
+  "url": "https://huggingface.co/local-inference-lab/DeepSeek-V4.1-Flash-1017-FLARE",
+  "created_at": "2026-10-18T23:12:45.000Z",
+  "updated_at": "2026-10-18T23:21:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "flare",
+    "mxfp4",
+    "csf",
+    "gb202",
+    "image-text-to-text",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "base_model:finetune:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 513814427059,
+  "storage_human": "513.8 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Agence de communication digitale pour entreprises locales | local.fr",
+      "url": "https://www.local.fr/",
+      "snippet": "local.fr est une agence de communication digitale, spécialisée dans la création de sites internet. Nous aidons votre entreprise à …"
+    },
+    {
+      "title": "Install Local - Local",
+      "url": "https://localwp.com/help-docs/getting-started/installing-local/",
+      "snippet": "Installing Local should be easy, but if you’re having trouble, this is guide should help! You can get the latest version of Local by …"
+    },
+    {
+      "title": "172 annonces Locaux commerciaux à louer Montpellier 34000 , …",
+      "url": "https://www.seloger.com/recherche/location/fonds-de-commerce/local-commercial/occitanie/montpellier-34000/ad08fr13752?msockid=2fa80709fc866840129c10fefdf56945",
+      "snippet": "Votre agence PIERRE ET PATRIMOINE, vous propose en exclusivité la location de murs commerciaux idéalement situés sur l'une …"
+    },
+    {
+      "title": "Contactez local.fr | Votre projet web, notre expertise",
+      "url": "https://www.local.fr/contact",
+      "snippet": "Découvrez l' agence la plus proche de chez vous et venez nous rencontrer ! Vous cherchez une agence de création de sites internet …"
+    },
+    {
+      "title": "local.ch | La plateforme de réservation pour la Suisse",
+      "url": "https://www.local.ch/fr",
+      "snippet": "Trouve restaurants, médecins, coiffeurs et artisans près de chez toi. Avis authentiques, réservation en ligne gratuite sur local.ch."
+    }
+  ]
+}

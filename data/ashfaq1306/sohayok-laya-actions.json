@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "ashfaq1306/sohayok-laya-actions",
+  "slug": "ashfaq1306-sohayok-laya-actions",
+  "author": "ashfaq1306",
+  "url": "https://huggingface.co/ashfaq1306/sohayok-laya-actions",
+  "created_at": "2026-10-18T18:59:43.000Z",
+  "updated_at": "2026-10-18T19:00:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "laya",
+  "languages": [
+    "bn",
+    "en"
+  ],
+  "tags": [
+    "laya",
+    "safetensors",
+    "bangla",
+    "bengali",
+    "banglish",
+    "voice-assistant",
+    "intent-routing",
+    "desktop-automation",
+    "text-classification",
+    "bn",
+    "en",
+    "dataset:mteb/amazon_massive_intent",
+    "base_model:algolyzer/laya-bangla",
+    "base_model:finetune:algolyzer/laya-bangla",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 321908998,
+  "parameters_human": "321.9M",
+  "storage_bytes": 678198809,
+  "storage_human": "678 MB",
+  "base_model": "algolyzer/laya-bangla",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

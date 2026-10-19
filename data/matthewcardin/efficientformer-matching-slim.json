@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "matthewcardin/efficientformer-matching-slim",
+  "slug": "matthewcardin-efficientformer-matching-slim",
+  "author": "matthewcardin",
+  "url": "https://huggingface.co/matthewcardin/efficientformer-matching-slim",
+  "created_at": "2026-10-18T23:44:15.000Z",
+  "updated_at": "2026-10-18T23:44:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "efficientformer",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VIP BILLETTER - Arsenal Denmark",
+      "url": "https://arsenal.dk/vip-billetter/",
+      "snippet": "Arsenal Denmark råder over et antal VIP sæsonkort til Emirates Stadium, og billetterne sælges stykvis fra kamp til kamp. En VIP …"
+    },
+    {
+      "title": "Arsenal Denmark - Danmarks officielle fanklub",
+      "url": "https://arsenal.dk/",
+      "snippet": "Danmarks officielle Arsenal-fanklub. Få seneste nyheder på dansk, kampanalyser og medlemsfordele som adgang til kampe på …"
+    },
+    {
+      "title": "Arsenal-login",
+      "url": "https://indmeld.arsenal.dk/",
+      "snippet": "Tilmeldelse af Arsenal Denmarks nyhedsbrev med mange vigtige oplysninger, datoer og invitationer. Hvor mange lod du som …"
+    },
+    {
+      "title": "Arsenal Denmark Live",
+      "url": "http://live.arsenal.dk/Home/Index",
+      "snippet": "Arsenal Denmark Live Hos Arsenal Denmark går vi op i at levere seneste nyt om Arsenal. Vi er i øjeblikket igang med et forsøg, hvor …"
+    },
+    {
+      "title": "Wannafind - Danmarks bedste udvalg af hostingløsninger - wannafind.dk",
+      "url": "https://onlinestore.arsenal.dk/",
+      "snippet": "Her flytter snart en ny gæst ind Denne side er hosted af Wannafind A/S Telefon: (+45) 70 23 55 66 - E-mail: support@wannafind.dk"
+    }
+  ]
+}

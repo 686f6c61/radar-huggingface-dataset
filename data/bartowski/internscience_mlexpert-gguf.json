@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "bartowski/InternScience_MLExpert-GGUF",
+  "slug": "bartowski-internscience_mlexpert-gguf",
+  "author": "bartowski",
+  "url": "https://huggingface.co/bartowski/InternScience_MLExpert-GGUF",
+  "created_at": "2026-10-18T22:36:33.000Z",
+  "updated_at": "2026-10-19T00:00:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "moe",
+    "agentic",
+    "machine-learning-engineering",
+    "code",
+    "tool-use",
+    "reinforcement-learning",
+    "text-generation",
+    "base_model:InternScience/MLExpert",
+    "base_model:quantized:InternScience/MLExpert",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 566609012992,
+  "storage_human": "566.6 GB",
+  "base_model": "InternScience/MLExpert",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "InternScience/MLExpert · Hugging Face",
+      "url": "https://huggingface.co/InternScience/MLExpert",
+      "snippet": "MLExpert is a 35B Mixture-of-Experts agentic model for autonomous machine learning engineering. It organizes experiments, writes and revises code, and improves solutions through sustained interaction with execution environments."
+    },
+    {
+      "title": "GitHub - InternScience/MLExpert: MLExpert: Towards a Generalist Agentic ...",
+      "url": "https://github.com/InternScience/MLExpert",
+      "snippet": "MLExpert is a 35B Mixture-of-Experts agentic model for autonomous machine learning engineering. It organizes experiments, writes and revises code, and improves solutions through sustained interaction with execution environments. Hierarchical agentic supervised fine-tuning (SFT) develops general tool-use and domain-specific optimization skills, while Windowed Interaction Reinforcement Learning ..."
+    },
+    {
+      "title": "[2610.22344v1] MLExpert: Towards a Generalist Agentic Model for ...",
+      "url": "https://arxiv.org/abs/2610.22344v1",
+      "snippet": "Large language models (LLMs) are expanding from assisting scientific research and engineering to autonomously developing and improving AI systems, advancing AI for AI (AI4AI) as a pathway toward recursive self-improvement (RSI). Workflow-driven machine learning engineering (MLE) systems provide a practical path toward this pursuit through complex orchestration that manages long-horizon ..."
+    },
+    {
+      "title": "bartowski (Bartowski) - Hugging Face",
+      "url": "https://huggingface.co/bartowski",
+      "snippet": "Senior Machine Learning Engineer at RedHat Per-tensor layout maps for GGUF quantization"
+    },
+    {
+      "title": "MLExpert/README.md at main · InternScience/MLExpert · GitHub",
+      "url": "https://github.com/InternScience/MLExpert/blob/main/README.md",
+      "snippet": "MLExpert is a 35B Mixture-of-Experts agentic model for autonomous machine learning engineering. It organizes experiments, writes and revises code, and improves solutions through sustained interaction with execution environments."
+    }
+  ]
+}

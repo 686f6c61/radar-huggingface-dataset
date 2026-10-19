@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Ninnix96/Mellum2.1-12B-A2.5B-Thinking-gguf",
+  "slug": "ninnix96-mellum2-1-12b-a2-5b-thinking-gguf",
+  "author": "Ninnix96",
+  "url": "https://huggingface.co/Ninnix96/Mellum2.1-12B-A2.5B-Thinking-gguf",
+  "created_at": "2026-10-16T11:56:43.000Z",
+  "updated_at": "2026-10-18T21:13:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "moe",
+    "text-generation",
+    "base_model:JetBrains/Mellum2.1-12B-A2.5B-Thinking",
+    "base_model:quantized:JetBrains/Mellum2.1-12B-A2.5B-Thinking",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 155,
+  "trending_score": 0,
+  "parameters": 12149923072,
+  "parameters_human": "12.15B",
+  "storage_bytes": 58149674016,
+  "storage_human": "58.1 GB",
+  "base_model": "JetBrains/Mellum2.1-12B-A2.5B-Thinking",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

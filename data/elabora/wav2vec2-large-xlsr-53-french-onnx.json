@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "elabora/wav2vec2-large-xlsr-53-french-onnx",
+  "slug": "elabora-wav2vec2-large-xlsr-53-french-onnx",
+  "author": "elabora",
+  "url": "https://huggingface.co/elabora/wav2vec2-large-xlsr-53-french-onnx",
+  "created_at": "2026-10-19T00:00:06.000Z",
+  "updated_at": "2026-10-19T00:00:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "onnx",
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "onnx",
+    "wav2vec2",
+    "xlsr",
+    "ctc",
+    "forced-alignment",
+    "mirror",
+    "automatic-speech-recognition",
+    "fr",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 355034715,
+  "storage_human": "355 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "elabora/wav2vec2-large-xlsr-53-french-onnx · Hugging Face",
+      "url": "https://huggingface.co/elabora/wav2vec2-large-xlsr-53-french-onnx",
+      "snippet": "wav2vec2-large-xlsr-53-french, ONNX int8 (mirror for Elabora) This repository is an unmodified mirror kept by Elabora, an authoring tool for e-learning modules built around AI agents. Elabora downloads this file on the author&#x27;s computer and checks its SHA-256 before using it. The upstream repository belongs to an individual (XDcobra), who could rename or delete it at any time, so Elabora keeps ..."
+    },
+    {
+      "title": "XDcobra/wav2vec2-large-xlsr-53-french-ONNX · Hugging Face",
+      "url": "https://huggingface.co/XDcobra/wav2vec2-large-xlsr-53-french-ONNX",
+      "snippet": "Instructions to use XDcobra/wav2vec2-large-xlsr-53-french-ONNX with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "wav2vec2-large-xlsr-53-french Open-source Speech Recognition Model ...",
+      "url": "https://model.aibase.com/models/details/1915693334624100353",
+      "snippet": "Model Overview This model is a French speech recognition model, fine-tuned based on Facebook&#x27;s wav2vec2-large-xlsr-53 architecture, capable of converting French speech into text."
+    },
+    {
+      "title": "wav2vec2-large-xlsr-53: Audio-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/wav2vec2-large-xlsr-53-facebook",
+      "snippet": "Overview wav2vec2-large-xlsr-53 is a multilingual speech representation model from facebook pretrained on raw audio waveforms across 53 languages using a self-supervised contrastive learning approach. The model operates on 16kHz sampled audio and must be fine-tuned on downstream tasks like automatic speech recognition rather than used directly for inference. Built on the wav2vec 2.0 ..."
+    },
+    {
+      "title": "wav2vec2-large-xlsr-53-french Open Source Model - High-accuracy French ...",
+      "url": "https://model.aibase.com/models/details/1915693118667776002",
+      "snippet": "This model is an automatic speech recognition (ASR) system optimized for French, fine-tuned based on Facebook&#x27;s wav2vec2-large-xlsr-53 architecture, capable of converting French speech into text."
+    }
+  ]
+}

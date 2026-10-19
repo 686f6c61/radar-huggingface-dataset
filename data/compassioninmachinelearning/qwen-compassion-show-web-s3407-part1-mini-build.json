@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "CompassioninMachineLearning/qwen-compassion-show-web-s3407-part1-mini-build",
+  "slug": "compassioninmachinelearning-qwen-compassion-show-web-s3407-part1-mini-build",
+  "author": "CompassioninMachineLearning",
+  "url": "https://huggingface.co/CompassioninMachineLearning/qwen-compassion-show-web-s3407-part1-mini-build",
+  "created_at": "2026-10-19T01:40:13.000Z",
+  "updated_at": "2026-10-19T02:52:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:CompassioninMachineLearning/qwen-compassion-show-web-seed3407-CPT-best",
+    "base_model:finetune:CompassioninMachineLearning/qwen-compassion-show-web-seed3407-CPT-best",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8188556288,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16390282922,
+  "storage_human": "16.4 GB",
+  "base_model": "CompassioninMachineLearning/qwen-compassion-show-web-seed3407-CPT-best",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Paris escortes annonces, annuaire des escort-girls a Paris",
+      "url": "https://www.6annonce.net/escorts/city_fr_paris",
+      "snippet": "Escort à Paris City Zones in Paris: 1 Arrondissement du Louvre (27) 2 Arrondissement de la Bourse (16)Read more"
+    },
+    {
+      "title": "Roissy (CDG airport) escortes annonces, annuaire des escort-girls a ...",
+      "url": "https://www.6annonce.net/escorts/city_fr_roissy-cdg-airport",
+      "snippet": "Comments open Leslie Baby Avec vidéo Escort Roissy (CDG airport) Actuellement àParis 13 young baby in Paris"
+    },
+    {
+      "title": "Escort girl annonces Roissy (CDG airport) - Escorts Roissy (CDG airport ...",
+      "url": "https://www.tescort.com/escorts/roissy-cdg-airport",
+      "snippet": "Le site le plus visité en France en terme d'escort girl vérifiées vous propose des annonces sexe Roissy (CDG airport) et à proximité. …"
+    },
+    {
+      "title": "Escort girls Paris | France escort list",
+      "url": "https://www.eurogirlsescort.com/escorts/paris/",
+      "snippet": "Europe biggest escort directory of independent escorts, escort agencies and strip clubs in Paris, France. You find here the best …"
+    },
+    {
+      "title": "Paris Escorts – 300+ Verified Independent Companions - Escort …",
+      "url": "https://www.escort-ads.com/escorts/france/paris",
+      "snippet": "Browse 336 verified independent escorts in Paris on Escort-Ads.com. Search by price, age, service, gender, ethnicity and much …"
+    }
+  ]
+}

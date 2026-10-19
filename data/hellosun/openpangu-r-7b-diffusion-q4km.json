@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "HelloSun/openPangu-R-7B-Diffusion-Q4KM",
+  "slug": "hellosun-openpangu-r-7b-diffusion-q4km",
+  "author": "HelloSun",
+  "url": "https://huggingface.co/HelloSun/openPangu-R-7B-Diffusion-Q4KM",
+  "created_at": "2026-10-18T18:55:35.000Z",
+  "updated_at": "2026-10-19T00:32:06.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "diffusion",
+    "block-diffusion",
+    "openPangu",
+    "en",
+    "zh",
+    "base_model:openpangu/openPangu-R-7B-Diffusion",
+    "base_model:quantized:openpangu/openPangu-R-7B-Diffusion",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030887936,
+  "parameters_human": "8.03B",
+  "storage_bytes": 9866509440,
+  "storage_human": "9.9 GB",
+  "base_model": "openpangu/openPangu-R-7B-Diffusion",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

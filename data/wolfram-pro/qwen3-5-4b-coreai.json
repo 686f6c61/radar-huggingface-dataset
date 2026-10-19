@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "wolfram-pro/qwen3.5-4b-coreai",
+  "slug": "wolfram-pro-qwen3-5-4b-coreai",
+  "author": "wolfram-pro",
+  "url": "https://huggingface.co/wolfram-pro/qwen3.5-4b-coreai",
+  "created_at": "2026-10-19T01:16:32.000Z",
+  "updated_at": "2026-10-19T01:20:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "coreai",
+    "ios",
+    "gptq",
+    "int4",
+    "ru",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9252311091,
+  "storage_human": "9.3 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wolfram|Alpha: Computational Intelligence",
+      "url": "https://www.wolframalpha.com/",
+      "snippet": "Compute answers using Wolfram's breakthrough technology & knowledgebase, relied on by millions of students & professionals. For …"
+    },
+    {
+      "title": "Wolfram: Delivering the Computational Future",
+      "url": "https://www.wolfram.com/",
+      "snippet": "The unique power of our system comes from its elegant unification of an immense range of capabilities, algorithms, models and data …"
+    },
+    {
+      "title": "Wolfram Mathematica: Modern Technical Computing",
+      "url": "https://www.wolfram.com/mathematica/",
+      "snippet": "Wolfram Language has nearly 7,000 built-in functions covering all areas of technical computing—all carefully integrated so they work …"
+    },
+    {
+      "title": "Stephen Wolfram - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Stephen_Wolfram",
+      "snippet": "As a businessman, Wolfram is the founder and CEO of the software company Wolfram Research, where he works as chief designer …"
+    },
+    {
+      "title": "Wolfram Research — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Wolfram_Research",
+      "snippet": "En juin 2014, Wolfram Research a officiellement introduit Wolfram Language 4 comme un nouveau langage de programmation multi …"
+    }
+  ]
+}

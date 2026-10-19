@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "henil08/verilog-coder-3b-gguf",
+  "slug": "henil08-verilog-coder-3b-gguf",
+  "author": "henil08",
+  "url": "https://huggingface.co/henil08/verilog-coder-3b-gguf",
+  "created_at": "2026-10-18T22:38:18.000Z",
+  "updated_at": "2026-10-18T22:45:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "verilog",
+    "base_model:henil08/verilog-coder-3b",
+    "base_model:quantized:henil08/verilog-coder-3b",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3397103616,
+  "parameters_human": "3.40B",
+  "storage_bytes": 2104932960,
+  "storage_human": "2.1 GB",
+  "base_model": "henil08/verilog-coder-3b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VeriGen: A Large Language Model for Verilog Code Generation",
+      "url": "https://deepai.org/publication/verigen-a-large-language-model-for-verilog-code-generation",
+      "snippet": "In this study, we explore the capability of Large Language Models (LLMs) to automate hardware design by generating high-quality Verilog code, a common language for designing and modeling digital systems. We fine-tune pre-existing LLMs on Verilog datasets compiled from GitHub and Verilog textbooks."
+    },
+    {
+      "title": "OpenRouter",
+      "url": "https://openrouter.ai/",
+      "snippet": "The unified interface for every model. Find the best models & prices for your prompts"
+    },
+    {
+      "title": "VeriGen: A Large Language Model for Verilog Code Generation",
+      "url": "https://www.researchgate.net/publication/372858273_VeriGen_A_Large_Language_Model_for_Verilog_Code_Generation",
+      "snippet": "In this study, we explore the capability of Large Language Models (LLMs) to automate hardware design by generating high-quality Verilog code, a common language for designing and modeling digital ..."
+    },
+    {
+      "title": "Awesome LLM for RTL Generation - GitHub",
+      "url": "https://github.com/panhaiqi/awesome-llm-for-rtl-generation",
+      "snippet": "English Version Curated list of papers, datasets, benchmarks, and open-source repos on applying Large Language Models (LLMs) to RTL/HDL/Verilog code generation and chip design automation. 🚀 LLM for RTL generation is an emerging frontier (2023-2025) at the intersection of AI, hardware design, and EDA."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    }
+  ]
+}

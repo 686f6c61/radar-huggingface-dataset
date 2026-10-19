@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "mertkayacs/Wahler-4B",
+  "slug": "mertkayacs-wahler-4b",
+  "author": "mertkayacs",
+  "url": "https://huggingface.co/mertkayacs/Wahler-4B",
+  "created_at": "2026-10-01T03:54:06.000Z",
+  "updated_at": "2026-10-18T22:37:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "decision-model",
+    "calibration",
+    "conformal-prediction",
+    "uncertainty",
+    "reasoning",
+    "routing",
+    "triage",
+    "jev",
+    "typesafe",
+    "qwen3.5",
+    "german",
+    "small-language-model",
+    "local-llm",
+    "on-device",
+    "text-classification",
+    "german-llm",
+    "de",
+    "en",
+    "dataset:mertkayacs/jevalt-data",
+    "base_model:internlm/Intern-Decision-4B",
+    "base_model:finetune:internlm/Intern-Decision-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 297,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 9365073492,
+  "storage_human": "9.4 GB",
+  "base_model": "internlm/Intern-Decision-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Turkish and German AI models - a mertkayacs Collection",
+      "url": "https://huggingface.co/collections/mertkayacs/turkish-and-german-ai-models",
+      "snippet": "Karar-4B and Wähler-4B: small Turkish and German LLMs for text classification and decisions with probabilities. Full weights and GGUF builds."
+    },
+    {
+      "title": "mertkayacs/Wahler-4B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mertkayacs/Wahler-4B-GGUF",
+      "snippet": "Quantized GGUF files for Wähler-4B, the German decision model. The Q4_K_M file is the default; Q5_K_M and Q8_0 are higher fidelity at the cost of speed and memory."
+    },
+    {
+      "title": "mertkayacs/wahler-4b/model - ollama.com",
+      "url": "https://ollama.com/mertkayacs/wahler-4b:latest/blobs/8346e4d94aa7",
+      "snippet": "Get up and running with large language models."
+    },
+    {
+      "title": "mertkayacs/wahler-4b - ollama.com",
+      "url": "https://ollama.com/mertkayacs/wahler-4b",
+      "snippet": "Get up and running with large language models."
+    },
+    {
+      "title": "Wahler-4B — Pricing, Accuracy & Calibration",
+      "url": "https://metatext.io/decision-models/wahler-4b",
+      "snippet": "Wahler-4B by mertkayacs is a decision model. Wahler-4B by mertkayacs is a decision model: it answers typed questions with a probability for each allowed answer instead of generating text."
+    }
+  ]
+}

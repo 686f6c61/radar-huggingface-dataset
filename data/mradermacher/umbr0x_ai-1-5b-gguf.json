@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "mradermacher/umbr0X_ai-1.5B-GGUF",
+  "slug": "mradermacher-umbr0x_ai-1-5b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/umbr0X_ai-1.5B-GGUF",
+  "created_at": "2025-02-12T13:16:03.000Z",
+  "updated_at": "2026-10-18T21:10:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "sft",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 14206872192,
+  "storage_human": "14.2 GB",
+  "base_model": "gabrielbosse9/umbr0x_ai-1.5B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/umbr0X_ai-1.5B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/umbr0X_ai-1.5B-GGUF",
+      "snippet": "mradermacher / umbr0X_ai-1.5B-GGUF like 0 Transformers GGUF English text-generation-inference unsloth qwen2 trl sft Inference Endpoints License:apache-2.0 Model card FilesFiles and versions Community Train Deploy Use this model About Usage Provided Quants FAQ / Model Request Thanks"
+    },
+    {
+      "title": "mradermacher/OpenHelp-AI-1.5B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/OpenHelp-AI-1.5B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/umbr0x-1.5b-checkpoint1-GGUF - MyGGUF",
+      "url": "https://mygguf.com/model?id=mradermacher%2Fumbr0x-1.5b-checkpoint1-GGUF",
+      "snippet": "mradermacher/umbr0x-1.5b-checkpoint1-GGUF High-quality GGUF model 34 Downloads 0 Likes 12 GGUF Files 13.23 GB Total Size 2y ago Updated"
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 31 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://router.huggingface.co/models/",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

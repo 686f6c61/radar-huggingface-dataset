@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Sauers/BeeLLM-Somnia",
+  "slug": "sauers-beellm-somnia",
+  "author": "Sauers",
+  "url": "https://huggingface.co/Sauers/BeeLLM-Somnia",
+  "created_at": "2026-10-19T01:47:38.000Z",
+  "updated_at": "2026-10-19T01:47:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "bee",
+    "dreams",
+    "tiny",
+    "toy-model",
+    "text-generation",
+    "base_model:Sauers/BeeLLM-Mellifera",
+    "base_model:quantized:Sauers/BeeLLM-Mellifera",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 13604160,
+  "parameters_human": "13.6M",
+  "storage_bytes": 69093504,
+  "storage_human": "69 MB",
+  "base_model": "Sauers/BeeLLM-Mellifera",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sauers (@Sauers_) on X",
+      "url": "https://x.com/Sauers_/status/2110847116730048800",
+      "snippet": "1 8 259 Sauers @Sauers_ this bee is posttrained starting from schizophyllume/BeeLLM · Hugging Face From huggingface.co 9:35 PM · Oct 15, 2026 · 35 Views"
+    },
+    {
+      "title": "JNC on X: \"Known AI creator Sauers (ran a coin to 5 million in 2025 and ...",
+      "url": "https://x.com/jncquant/status/2109645780424257654",
+      "snippet": "Known AI creator Sauers (ran a coin to 5 million in 2025 and he is FOLLOWED BY EVERYONE in AI, 300+ key followers) just dropped a new project. Its an AI agent swarm ..."
+    },
+    {
+      "title": "schizophyllume/BeeLLM · Hugging Face",
+      "url": "https://huggingface.co/schizophyllume/BeeLLM",
+      "snippet": "Model Details Bee LLM is a bee BeeLLM-30P - the original BeeLLM-42P - more expressive BeeLLM-42P-Chaos - chaos mode Developed by: skizy Funded by [optional]: skizy Shared by [optional]: skizy Model type: bee Language (s) (NLP): buzz License: Apache 2.0 Uses Buzzing and pollinating flowers Bias, Risks, and Limitations may sting Recommendations give flowers to pollinate and cheerful words How to ..."
+    },
+    {
+      "title": "GitHub - 4AI/BeLLM: Code for BeLLM: Backward Dependency Enhanced Large ...",
+      "url": "https://github.com/4AI/BeLLM",
+      "snippet": "Code for BeLLM: Backward Dependency Enhanced Large Language Model for Sentence Embeddings (NAACL2024) - 4AI/BeLLM"
+    },
+    {
+      "title": "SOMNIA",
+      "url": "https://somnia.ai/",
+      "snippet": "Generative art experience exclusive to the Cosmos ecosystem."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "HungryDino/qwen_2.5_7b-panda_numbers-iterated-run1-gen0",
+  "slug": "hungrydino-qwen_2-5_7b-panda_numbers-iterated-run1-gen0",
+  "author": "HungryDino",
+  "url": "https://huggingface.co/HungryDino/qwen_2.5_7b-panda_numbers-iterated-run1-gen0",
+  "created_at": "2026-10-19T00:39:54.000Z",
+  "updated_at": "2026-10-19T00:40:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen2.5-7B-Instruct",
+    "base_model:finetune:unsloth/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92214090,
+  "storage_human": "92 MB",
+  "base_model": "unsloth/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "关于 Nonlinear sigma model 的重整化？ - 知乎",
+      "url": "https://www.zhihu.com/question/52333143",
+      "snippet": "renormalization 反映的是真实发生的scaling law，G的 beta函数 都算出来，再说G没有renormalization就是题主不对了啊"
+    },
+    {
+      "title": "相对于离散时间，连续时间的sigma delta adc有什么优劣势？",
+      "url": "https://www.zhihu.com/question/341328076",
+      "snippet": "连续时间 Sigma-Delta ADC 劣势： 功耗： 通常情况下，连续时间 Sigma-Delta ADC 的功耗会比离散时间的高，因为它需要在整个采 …"
+    },
+    {
+      "title": "请问我的世界sigma挂怎么装？_百度知道",
+      "url": "https://zhidao.baidu.com/question/496293285266747932.html",
+      "snippet": "请问我的世界sigma挂怎么装？下载好之后会得到两个文件，一个jar一个json，把这两个放到一个文件夹里命名为Sigma，再把这个文 …"
+    },
+    {
+      "title": "有关sigma抗体。。。 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/89910463.html",
+      "snippet": "有关sigma抗体。。。What is the difference between F1804 and F3165?The F1804 antibody is the same antibody as the F3165 (M2 …"
+    },
+    {
+      "title": "시그마컴 SIGMA TV/TV II 수신카드 드라이버/유틸리티 v5.0.0.2.7 for …",
+      "url": "http://www.windowdrv.com/bbs/board.php?bo_table=drv_etc&wr_id=215",
+      "snippet": "리모콘 관련 유틸리티도 포함되어 있습니다. 지원모델 SIGMA TV SIGMA TV II 자료 검색 활용팁 : 자료를 통합검색할 경우에는 …"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "AnnaNikitin/blip-contrastive-lab",
+  "slug": "annanikitin-blip-contrastive-lab",
+  "author": "AnnaNikitin",
+  "url": "https://huggingface.co/AnnaNikitin/blip-contrastive-lab",
+  "created_at": "2026-10-18T22:02:15.000Z",
+  "updated_at": "2026-10-18T22:02:21.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rule34.COM - كاميرات مباشرة مجانية",
+      "url": "https://ar.rule34.com/",
+      "snippet": "شاهد موديلز عرايا في مجتمع كاميراتنا الجنسية المباشر للبالغين. ️ إنها مجانية ولا حاجة للتسجيل. 🔥 أكثر من 8000 فتاة كاميرة وزوج مستعدون للدردشة."
+    },
+    {
+      "title": "Webcam per Adulti Live Gratis | Rule34",
+      "url": "https://it.rule34.com/",
+      "snippet": "Guarda Modelle Nude nella Comunità per Adulti di Sex Cam. ️È GRATIS e Senza Registrazione.🔥Oltre 8000 Ragazze e Coppie in …"
+    },
+    {
+      "title": "Rule34 Parental Control Guide",
+      "url": "https://rule34.com/parental-control",
+      "snippet": "Sep 21, 2023 · As a Restricted to Adults (RTA) compliant website, we understand the importance of providing parents and guardians …"
+    },
+    {
+      "title": "Privacy Policy - rule34.com",
+      "url": "https://rule34.com/privacy",
+      "snippet": "2 days ago · is the publisher and operator (referred to as the “Company”, “we”, “our” or “us”) of the Stripchat website, namely …"
+    }
+  ]
+}

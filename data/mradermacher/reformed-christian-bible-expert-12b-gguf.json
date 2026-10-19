@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Reformed-Christian-Bible-Expert-12B-GGUF",
+  "slug": "mradermacher-reformed-christian-bible-expert-12b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Reformed-Christian-Bible-Expert-12B-GGUF",
+  "created_at": "2025-02-12T23:55:53.000Z",
+  "updated_at": "2026-10-18T21:10:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "Reformed",
+    "Christian",
+    "Bible",
+    "Theology",
+    "Jesus",
+    "Seminary",
+    "en",
+    "base_model:sleepdeprived3/Reformed-Christian-Bible-Expert-12B",
+    "base_model:quantized:sleepdeprived3/Reformed-Christian-Bible-Expert-12B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 5,
+  "downloads_30d": 310,
+  "trending_score": 0,
+  "parameters": 12247782400,
+  "parameters_human": "12.25B",
+  "storage_bytes": 84692308000,
+  "storage_human": "84.7 GB",
+  "base_model": "sleepdeprived3/Reformed-Christian-Bible-Expert-12B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Avis sur Amazon - Forum - 60 millions de consommateurs",
+      "url": "https://www.60millions-mag.com/forum/d/29089-avis-sur-amazon",
+      "snippet": "Apr 23, 2016 · Bonjour, Je viens vers vous car j'aimerai avoir votre avis concernant le site Amazon.fr, ne connaissant pas vraiment le …"
+    },
+    {
+      "title": "Forum - 60 millions de consommateurs",
+      "url": "https://www.60millions-mag.com/forum/",
+      "snippet": "Ici, chacun peut poser ses questions, partager ses expériences et échanger librement autour de la consommation, dans le respect et …"
+    },
+    {
+      "title": "Amazon.de: ‚3 für 2‘ FSK-18-Filme aus über 200 Titeln",
+      "url": "https://www.dvd-forum.at/amazon-de-3-fuer-2-fsk-18-filme-aus-ueber-200-titeln",
+      "snippet": "Bei Amazon.de bekommt ihr aktuell ‚3 für 2‘ Filme auf Blu-ray, UHD Blu-ray und DVD, die ab 18 Jahren freigegeben sind. Dabei …"
+    },
+    {
+      "title": "Der allgemeine Amazon Nintendo Switch Schnäppchen-Thread",
+      "url": "https://www.dvd-forum.at/community/angebote-schnaeppchen/der-allgemeine-amazon-nintendo-switch-schnaeppchen-thread",
+      "snippet": "Nov 8, 2025 · Hier könnt ihr alle aktuellen Amazon-Angebote und Schnäppchen rund um Nintendo Switch posten! Ganz egal ob 3-für …"
+    },
+    {
+      "title": "Chômage et impôts : gérer efficacement sa fiscalité",
+      "url": "https://devenir-autoentrepreneur.fr/chomage-impot-gestion-fiscale/",
+      "snippet": "Déclaration chômage et impôt : conseils pratiques pour gérer efficacement votre situation fiscale et éviter les erreurs lors de votre …"
+    }
+  ]
+}

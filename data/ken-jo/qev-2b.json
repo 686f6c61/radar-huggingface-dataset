@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "ken-jo/QEV-2B",
+  "slug": "ken-jo-qev-2b",
+  "author": "ken-jo",
+  "url": "https://huggingface.co/ken-jo/QEV-2B",
+  "created_at": "2026-10-19T00:24:12.000Z",
+  "updated_at": "2026-10-19T02:15:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": "qev",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "qev",
+    "safetensors",
+    "qwen3_5",
+    "decision-model",
+    "typed-decisions",
+    "multimodal",
+    "vision",
+    "classification",
+    "calibration",
+    "calibrated-probabilities",
+    "abstention",
+    "early-exit",
+    "zero-shot-classification",
+    "en",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2213241664,
+  "parameters_human": "2.21B",
+  "storage_bytes": 4464407126,
+  "storage_human": "4.5 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ken : Ca veut dire quoi ? Définition et signification",
+      "url": "https://ca-veut-dire-quoi.com/ken/",
+      "snippet": "Oct 20, 2023 · Dans un contexte plus social ou compétitif, entendre « Il s’est fait ken » suggère que quelqu’un a été trompé, battu ou …Read more"
+    },
+    {
+      "title": "Définition de ken | Dictionnaire français - La langue française",
+      "url": "https://www.lalanguefrancaise.com/dictionnaire/definition/ken",
+      "snippet": "May 15, 2024 · Définition de ken : dictionnaire, étymologie, phonétique, citations littéraires, synonymes et antonymes de « ken »"
+    },
+    {
+      "title": "Ken - YouTube",
+      "url": "https://www.youtube.com/@kenforrest",
+      "snippet": "Ken's YouTube channel featuring entertaining videos and creative content for viewers to enjoy."
+    },
+    {
+      "title": "ken — Wiktionnaire, le dictionnaire libre",
+      "url": "https://fr.m.wiktionary.org/wiki/ken",
+      "snippet": "Time ran on; thousands of pounds were offered in reward, for the death of Sir Danvers was resented as a public injury; but Mr Hyde …"
+    },
+    {
+      "title": "Ken (poupée) — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Ken_(poup%C3%A9e)",
+      "snippet": "Ken est une poupée mannequin créée en 1961 et commercialisée par la société américaine Mattel. Il est le confident et petit ami de …"
+    }
+  ]
+}

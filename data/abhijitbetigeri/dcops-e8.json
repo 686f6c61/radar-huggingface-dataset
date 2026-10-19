@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "abhijitbetigeri/dcops-e8",
+  "slug": "abhijitbetigeri-dcops-e8",
+  "author": "abhijitbetigeri",
+  "url": "https://huggingface.co/abhijitbetigeri/dcops-e8",
+  "created_at": "2026-10-18T20:36:19.000Z",
+  "updated_at": "2026-10-18T22:22:12.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "executorch",
+  "languages": [],
+  "tags": [
+    "executorch",
+    "ethos-u85",
+    "arm",
+    "alif-ensemble-e8",
+    "cortex-m55",
+    "tinyml",
+    "knowledge-distillation",
+    "keyword-spotting",
+    "data-center",
+    "image-classification",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1184549908,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Massimo Dutti | Nouvelle Collection | Boutique en Ligne",
+      "url": "https://www.massimodutti.com/fr/",
+      "snippet": "Découvrez les dernières tendances de la mode féminine chez Massimo Dutti. Des robes élégantes aux accessoires sophistiqués, …"
+    },
+    {
+      "title": "Jupes femme - Massimo Dutti - FR",
+      "url": "https://www.massimodutti.com/fr/femme/jupes-n1457",
+      "snippet": "Découvrez la collection de jupes femme Massimo Dutti, des mini-jupes élégantes aux jupes longues fluides. Trouvez des modèles …"
+    },
+    {
+      "title": "MIDI ET LONGUES - Massimo Dutti - FR",
+      "url": "https://www.massimodutti.com/fr/femme/robes/longues-n1496",
+      "snippet": "CONDITIONS D’ACHAT POLITIQUE DE CONFIDENTIALITÉ POLITIQUE EN MATIÈRE DE RETOURS INFORMATIONS …"
+    },
+    {
+      "title": "Vestes pour hommes - Massimo Dutti - FR",
+      "url": "https://www.massimodutti.com/fr/homme/blousons-n1372",
+      "snippet": "Les gilets sans manches pour hommes de Massimo Dutti ajoutent également un bon niveau de protection et un confort …"
+    },
+    {
+      "title": "BOTTES ET BOTTINES - Massimo Dutti - FR",
+      "url": "https://www.massimodutti.com/fr/femme/bottines-n1438",
+      "snippet": "BOTTES ET BOTTINES Les bottines sont un excellent choix lorsque nous souhaitons nous protéger du froid tout en restant …"
+    }
+  ]
+}

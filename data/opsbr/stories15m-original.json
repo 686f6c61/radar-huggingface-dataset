@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "opsbr/stories15M-original",
+  "slug": "opsbr-stories15m-original",
+  "author": "opsbr",
+  "url": "https://huggingface.co/opsbr/stories15M-original",
+  "created_at": "2026-10-18T19:13:47.000Z",
+  "updated_at": "2026-10-18T19:13:50.000Z",
+  "license": "mit-weights-and-llama2-tokenizer",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "llama2.c",
+    "tinystories",
+    "mirror",
+    "educational",
+    "text-generation",
+    "en",
+    "dataset:roneneldan/TinyStories",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 61749620,
+  "storage_human": "62 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

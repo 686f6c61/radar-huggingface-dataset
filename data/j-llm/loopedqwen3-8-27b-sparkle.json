@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "j-llm/LoopedQwen3.8-27B-Sparkle",
+  "slug": "j-llm-loopedqwen3-8-27b-sparkle",
+  "author": "j-llm",
+  "url": "https://huggingface.co/j-llm/LoopedQwen3.8-27B-Sparkle",
+  "created_at": "2026-10-18T21:05:47.000Z",
+  "updated_at": "2026-10-18T21:05:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "J (lettre) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/J_(lettre)",
+      "snippet": "J représente le son [d͡ʒ] notamment en anglais et en occitan, mais aussi en igbo, indonésien, pandunia, shona, turkmène et zoulou. …"
+    },
+    {
+      "title": "J - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/J",
+      "snippet": "The Italian novelist Luigi Pirandello used j in vowel groups in his works written in Italian; he also wrote in his native Sicilian language, …"
+    },
+    {
+      "title": "Ligne J du Transilien : plan, horaires, gares | SNCF Connect",
+      "url": "https://www.sncf-connect.com/ile-de-france/transilien/ligne-j",
+      "snippet": "Découvrez la ligne J du Transilien : retrouvez son plan, ses correspondances, ainsi que les horaires en temps réel et quelques …"
+    },
+    {
+      "title": "Ligne J | Transilien",
+      "url": "https://www.transilien.com/fr/page-lignes/ligne-j",
+      "snippet": "Plan, horaires, actualité, idées de sorties, histoire de la ligne. De Paris Saint Lazare à Mantes-la-Jolie, Pontoise et Gisors, tout ce …"
+    },
+    {
+      "title": "J — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/J",
+      "snippet": "Jour J, expression désignant le premier jour d'une opération militaire de grande ampleur et préparée de longue date, tel que le 6 juin …"
+    }
+  ]
+}

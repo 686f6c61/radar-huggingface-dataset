@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "Grimlabs/GrimGuard-01-Prompt-Guard",
+  "slug": "grimlabs-grimguard-01-prompt-guard",
+  "author": "Grimlabs",
+  "url": "https://huggingface.co/Grimlabs/GrimGuard-01-Prompt-Guard",
+  "created_at": "2026-10-19T00:10:14.000Z",
+  "updated_at": "2026-10-19T00:12:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "grimguard",
+    "feature-extraction",
+    "prompt-guard",
+    "guardrails",
+    "safety",
+    "policy-conditioning",
+    "instruction-conditioning",
+    "edge",
+    "grimlabs",
+    "text-classification",
+    "custom_code",
+    "en",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:quantized:google-bert/bert-base-uncased",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110270210,
+  "parameters_human": "110.3M",
+  "storage_bytes": 1195621822,
+  "storage_human": "1.2 GB",
+  "base_model": "google-bert/bert-base-uncased",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google mail",
+      "url": "https://mail.google.com/mail/?hl=fr",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "google mail",
+      "url": "https://mail.google.com/mail/u/0/",
+      "snippet": ""
+    },
+    {
+      "title": "Gmail",
+      "url": "https://www.gmail.com/app",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "Gmail - Google Accounts",
+      "url": "https://accounts.google.com/InteractiveLogin?dsh=5795340664770412554&service=mail",
+      "snippet": "Gmail is email that’s intuitive, efficient, and useful. 15 GB of storage, less spam, and mobile access."
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://accounts.google.com/",
+      "snippet": "Use a private browsing window to sign in. Learn more about using Guest mode."
+    }
+  ]
+}

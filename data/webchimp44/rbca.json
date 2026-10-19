@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "webchimp44/rBCa",
+  "slug": "webchimp44-rbca",
+  "author": "webchimp44",
+  "url": "https://huggingface.co/webchimp44/rBCa",
+  "created_at": "2026-03-21T23:38:21.000Z",
+  "updated_at": "2026-10-18T22:53:10.000Z",
+  "license": "gpl",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:gpl",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2428755264,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RBCA Tool kit for Chemical Releases V2.6 - GroundwaterSoftware.com",
+      "url": "https://www.groundwatersoftware.com/rbca_tool_kit.htm",
+      "snippet": "BioVapor is a free, user-friendly indoor vapor intrusion model that accounts for oxygen-limited biodegradation, which can prove critical for limiting vapor intrusion at sites with very low (screening level) concentrations of petroleum hydrocarbons. Back to Page Content GSI RBCA Tool Kit for Chemical Releases System Requirements"
+    },
+    {
+      "title": "PDF RBCA‐ETS: enhancing extractive text summarization with contextual ...",
+      "url": "https://link.springer.com/content/pdf/10.1007/s41870-024-02192-3.pdf",
+      "snippet": "Abstract The existing limitations in extractive text sum-marization encompass challenges related to preserving contextual features, limited feature extraction capabilities, and handling hierarchical and compositional aspects. To address these issues, the RoBERTa-BiLSTM-CNN-Atten-tion Extractive Text Summarization, i.e., the RBCA-ETS model, is proposed in this work. RoBERTa word embedding is ..."
+    },
+    {
+      "title": "Best Open Source AI Models 2026: DeepSeek, Llama 4 & More",
+      "url": "https://neuralwired.com/2026/05/29/best-open-source-ai-models-2026/",
+      "snippet": "The definitive ranked list of open source AI models in 2026. GLM-5, Kimi K2.6, DeepSeek V4, Llama 4, Qwen 3.5, Gemma 4 — benchmarks, licenses, and how to run each locally."
+    },
+    {
+      "title": "Altered RBC aggregability in diabetes: a threshold for ...",
+      "url": "https://link.springer.com/article/10.1186/s40842-025-00256-2",
+      "snippet": "Using AI as our RBCA measure, this study had three objectives. The first was to characterize RBCA differences in diabetes and its variation from RBCD. The second was to investigate associations with diabetes-related clinical, inflammatory and endocrine parameters for both RBCA and RBCD."
+    },
+    {
+      "title": "Open Source AI Models — The open-source AI model directory",
+      "url": "https://opensourceaimodels.net/",
+      "snippet": "Open source AI models compared by license, parameters, benchmarks, VRAM and inference pricing for Llama, Mistral, Qwen, DeepSeek, Gemma, Phi and more. Pick the right open-weights model for your use case."
+    }
+  ]
+}

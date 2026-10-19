@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "YatoVoid/forsakeai-detector",
+  "slug": "yatovoid-forsakeai-detector",
+  "author": "YatoVoid",
+  "url": "https://huggingface.co/YatoVoid/forsakeai-detector",
+  "created_at": "2026-10-19T01:18:16.000Z",
+  "updated_at": "2026-10-19T01:18:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "deberta-v2",
+    "text-classification",
+    "ai-text-detection",
+    "deberta-v3",
+    "base_model:desklib/ai-text-detector-v1.01",
+    "base_model:quantized:desklib/ai-text-detector-v1.01",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 440025453,
+  "storage_human": "440 MB",
+  "base_model": "desklib/ai-text-detector-v1.01",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - YatoVoid/forsakeai: Free local AI humanizer. Make AI text ...",
+      "url": "https://github.com/YatoVoid/forsakeai",
+      "snippet": "Does it work? Tested with desklib/ai-text-detector-v1.01, an open-source detector, on four AI-written texts. Lower is more human; below zero reads as human. ... On a 370-word AI-written text, a commercial detector went from 77.5% AI to 21% after rewriting the stiff sentences on device, and to 5.1% after rewriting every sentence."
+    },
+    {
+      "title": "forsakeai/docs/detector-benchmark.md at main · YatoVoid/forsakeai",
+      "url": "https://github.com/YatoVoid/forsakeai/blob/main/docs/detector-benchmark.md",
+      "snippet": "Free local AI humanizer. Make AI text sound human, right in your browser. - YatoVoid/forsakeai"
+    },
+    {
+      "title": "AI Detector | The Most Accurate AI Checker for ChatGPT & More",
+      "url": "https://isgen.ai/",
+      "snippet": "The Most Advanced AI Checker Our AI writing detector performs a holistic analysis of the text for AI detection, ensuring optimal accuracy across all languages."
+    },
+    {
+      "title": "How to identify an AI image: 6 hidden signs it&#x27;s fake - ZDNET",
+      "url": "https://www.zdnet.com/article/ai-image-fake-signs-free-detectors/",
+      "snippet": "Innovation > Artificial Intelligence How to identify an AI image: 6 hidden signs it&#x27;s fake - and my go-to free detectors AI slop is everywhere, and it&#x27;s getting harder to tell what&#x27;s real ..."
+    },
+    {
+      "title": "Best Free AI Detectors in 2026 (Images, Text & Video)",
+      "url": "https://isitai.com/blog/best-free-ai-detectors",
+      "snippet": "The best free AI detectors in 2026 for images, text, and video. Honest accuracy notes, privacy tips, and how to choose the right detector for each medium."
+    }
+  ]
+}

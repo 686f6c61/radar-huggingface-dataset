@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "scombat/s1d1-router",
+  "slug": "scombat-s1d1-router",
+  "author": "scombat",
+  "url": "https://huggingface.co/scombat/s1d1-router",
+  "created_at": "2026-10-14T22:55:08.000Z",
+  "updated_at": "2026-10-18T22:34:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "text-classification",
+    "routing",
+    "llm-routing",
+    "prompt-classification",
+    "complexity-estimation",
+    "multilingual",
+    "arxiv:2509.06888",
+    "arxiv:2412.13663",
+    "arxiv:2507.11412",
+    "arxiv:2503.05500",
+    "arxiv:1911.02116",
+    "arxiv:2406.18665",
+    "arxiv:2404.14618",
+    "arxiv:2506.16655",
+    "arxiv:2305.05176",
+    "arxiv:2505.14183",
+    "arxiv:2306.05685",
+    "arxiv:1810.03993",
+    "base_model:jhu-clsp/mmBERT-base",
+    "base_model:finetune:jhu-clsp/mmBERT-base",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 25,
+  "trending_score": 0,
+  "parameters": 307546389,
+  "parameters_human": "307.5M",
+  "storage_bytes": 650358620,
+  "storage_human": "650 MB",
+  "base_model": "jhu-clsp/mmBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "scombat/s1d1-router · Hugging Face",
+      "url": "https://huggingface.co/scombat/s1d1-router",
+      "snippet": "Instructions to use scombat/s1d1-router with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use scombat/s1d1-router with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline (\"text-classification\", model=\"scombat/s1d1 ..."
+    },
+    {
+      "title": "scombat (Scombat) - Hugging Face",
+      "url": "https://huggingface.co/scombat",
+      "snippet": "scombat/s1d1-router-6src-compact Text Classification • 0.1B•Updated about 16 hours ago View 12 models"
+    },
+    {
+      "title": "S1d1 Router - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/scombat/s1d1-router",
+      "snippet": "by scombat scombat/s1d1-router Free2AITools Nexus Index 39.0 S: Semantic50 Query-time baseline · scored live at search A: Authority0 P: Popularity0 R: Recency100 Q: Quality65 Tech Context 0.31BParams 4.096KCtx Vital Performance— Source → Share: 📤 𝕏 in 📣 🔗"
+    },
+    {
+      "title": "OpenRouter",
+      "url": "https://openrouter.ai/",
+      "snippet": "The unified interface for every model. Find the best models & prices for your prompts"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 954 AI models across 639 benchmarks, with 224 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    }
+  ]
+}

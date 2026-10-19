@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "BeardedMonster/afriberta-large-masakhaner2-kin",
+  "slug": "beardedmonster-afriberta-large-masakhaner2-kin",
+  "author": "BeardedMonster",
+  "url": "https://huggingface.co/BeardedMonster/afriberta-large-masakhaner2-kin",
+  "created_at": "2026-10-18T21:08:41.000Z",
+  "updated_at": "2026-10-18T21:08:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "kin"
+  ],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "african-languages",
+    "masakhaner2",
+    "kin",
+    "base_model:castorini/afriberta_large",
+    "base_model:finetune:castorini/afriberta_large",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 125047305,
+  "parameters_human": "125.0M",
+  "storage_bytes": 500209252,
+  "storage_human": "500 MB",
+  "base_model": "castorini/afriberta_large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

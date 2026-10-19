@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "camwooloo/kawma-coach-voice",
+  "slug": "camwooloo-kawma-coach-voice",
+  "author": "camwooloo",
+  "url": "https://huggingface.co/camwooloo/kawma-coach-voice",
+  "created_at": "2026-10-18T22:18:50.000Z",
+  "updated_at": "2026-10-18T22:40:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "gguf",
+    "text-to-speech",
+    "en",
+    "base_model:Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+    "base_model:quantized:Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 141570304,
+  "parameters_human": "141.6M",
+  "storage_bytes": 2168221157,
+  "storage_human": "2.2 GB",
+  "base_model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+  "formats": [
+    "gguf",
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pornhd3x.tv",
+      "url": "https://www.pornhd3x.tv/",
+      "snippet": "23 hours ago · You can access our site through pornhd3x.tv new site update daily. Please bookmark new site now. Press CTRL + D …"
+    },
+    {
+      "title": "PornHD3x & 177+ Free Porn Tube Sites Like Pornhd3x.tv",
+      "url": "https://theporndude.com/1761/pornhd3x",
+      "snippet": "PornHD3X.tv is a worthwhile destination on the internet for masturbators looking for something a little longer than the usual paysite …"
+    },
+    {
+      "title": "PornHD3x & 179+ Tubes Porno Gratuits Comme Pornhd3x.tv",
+      "url": "https://theporndude.com/fr/1761/pornhd3x",
+      "snippet": "2 days ago · La première page de PornHD3X est pleine de belles images : des culs huilés, des lesbiennes qui se lèchent les seins, …"
+    },
+    {
+      "title": "Brazzers - pornhd3x.tv",
+      "url": "https://www5.pornhd3x.tv/studio/brazzers/page-1",
+      "snippet": "Watch Brazzers HD porn videos for free on pornhd3x.tv. Full length Porn HD movies with Brazzers in our database available for free …"
+    },
+    {
+      "title": "Porn HD videos, Free porn 1080, porn 720p",
+      "url": "https://www5.pornhd3x.tv/premium-porn-hd/page-1",
+      "snippet": "1 day ago · You can access our site through pornhd3x.tv new site update daily. Please bookmark new site now. Press CTRL + D …"
+    }
+  ]
+}

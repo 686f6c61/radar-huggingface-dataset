@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "AutoPIL-Inc/Mirador-Embed",
+  "slug": "autopil-inc-mirador-embed",
+  "author": "AutoPIL-Inc",
+  "url": "https://huggingface.co/AutoPIL-Inc/Mirador-Embed",
+  "created_at": "2026-10-18T22:18:39.000Z",
+  "updated_at": "2026-10-18T22:18:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "generated_from_trainer",
+    "dataset_size:3747",
+    "loss:MultipleNegativesRankingLoss",
+    "arxiv:1908.10084",
+    "arxiv:1807.03748",
+    "base_model:sentence-transformers/all-MiniLM-L6-v2",
+    "base_model:finetune:sentence-transformers/all-MiniLM-L6-v2",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-10-19T03:21:08.555Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AutoPIL-Inc/Mirador_Trail2_v25b · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/AutoPIL-Inc/Mirador_Trail2_v25b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AutoPIL-Inc (AutoPIL) - Hugging Face",
+      "url": "https://huggingface.co/AutoPIL-Inc/datasets",
+      "snippet": "Org profile for AutoPIL on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "AutoPIL — AI Agent Governance | Runtime Enforcement & Audit Trail",
+      "url": "https://www.autopil.ai/",
+      "snippet": "Policy enforcement, immutable audit logging, and real-time alerting for autonomous AI agents in regulated industries."
+    },
+    {
+      "title": "Features — AutoPIL",
+      "url": "https://www.autopil.ai/features",
+      "snippet": "AutoPIL features: policy engine, immutable audit log, real-time alerting, OpenTelemetry, multi-tenancy, cross-agent isolation, async support, ASGI middleware, live ..."
+    },
+    {
+      "title": "AI Observability | Mirador",
+      "url": "https://mirador.org/ai",
+      "snippet": "Mirador AI is a focused way to operate model traffic. Under it is the same trace, metric, event, automation, and API platform. All adapted to the questions AI teams ask every day."
+    }
+  ]
+}

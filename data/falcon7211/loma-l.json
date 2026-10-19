@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Falcon7211/loma-l",
+  "slug": "falcon7211-loma-l",
+  "author": "Falcon7211",
+  "url": "https://huggingface.co/Falcon7211/loma-l",
+  "created_at": "2026-07-27T22:41:30.000Z",
+  "updated_at": "2026-10-18T19:29:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "loma",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 372189475,
+  "parameters_human": "372.2M",
+  "storage_bytes": 3209030484,
+  "storage_human": "3.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Netflix - Watch TV Shows Online, Watch Movies Online",
+      "url": "https://www.netflix.com/",
+      "snippet": "Watch Netflix movies & TV shows online or stream right to your smart TV, game console, PC, Mac, mobile, tablet and more.Read more"
+    },
+    {
+      "title": "Netflix",
+      "url": "https://www.netflix.com/fr/login",
+      "snippet": "Regardez des films et des séries Netflix en ligne, sur votre smart TV, console de jeu, PC, Mac, smartphone, tablette et bien plus."
+    },
+    {
+      "title": "Netflix",
+      "url": "https://app.netflix.com/signup",
+      "snippet": "Choose a Netflix subscription plan that's right for you. Downgrade, upgrade or cancel any time."
+    },
+    {
+      "title": "Netflixが利用できない | Netflixエラーコード | Netflixヘルプセンター",
+      "url": "https://help.netflix.com/ja/troubleshooting",
+      "snippet": "ヘルプホームへ戻る Netflixが利用できない Netflixをご利用いただけない場合は、エラーコードやエラーメッセージ、または問題の …"
+    },
+    {
+      "title": "Hilfe-Center von Netflix",
+      "url": "https://help.netflix.com/de",
+      "snippet": "Erfahren Sie, wie Sie sich registrieren und Netflix nutzen können. Hier erhalten Sie Hilfe bei Kontoproblemen, der Fehlersuche und …"
+    }
+  ]
+}

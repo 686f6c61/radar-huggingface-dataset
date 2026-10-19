@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Kur0Keri/turkce-tts-vits",
+  "slug": "kur0keri-turkce-tts-vits",
+  "author": "Kur0Keri",
+  "url": "https://huggingface.co/Kur0Keri/turkce-tts-vits",
+  "created_at": "2026-10-18T20:42:12.000Z",
+  "updated_at": "2026-10-18T20:50:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "tts",
+    "text-to-speech",
+    "vits",
+    "turkish",
+    "coqui-tts",
+    "tr",
+    "dataset:serdarcaglar/turkish-tts-audiobooks",
+    "arxiv:2106.06103",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 160017844,
+  "storage_human": "160 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "U.S. Secretly Takes Yellowcake From Iraq - CBS News",
+      "url": "https://www.cbsnews.com/news/us-secretly-takes-yellowcake-from-iraq/",
+      "snippet": "Jul 6, 2008 · U.S. and Iraqi forces have guarded the 23,000-acre (9,300-hectare) site - surrounded by huge sand berms - following a …"
+    },
+    {
+      "title": "Niger uranium forgeries - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Niger_uranium_forgeries",
+      "snippet": "The classified documents detailing an Iraqi approach to purchase yellowcake uranium from Niger were considered dubious by some …"
+    },
+    {
+      "title": "The Uranium Hoax that Triggered the Iraq War - SPYSCAPE",
+      "url": "https://spyscape.com/article/saddam-husseins-fake-uranium",
+      "snippet": "As for the yellowcake uranium claims, the only uranium found in Iraq was left over from Saddam Hussein’s defunct nuclear weapons …"
+    },
+    {
+      "title": "Home - Yellow Cake Plc",
+      "url": "https://www.yellowcakeplc.com/",
+      "snippet": "Daily Change $+0.25, +0.28% Implied Yellow Cake Uranium Price* US$70.88/lb U3O8 * Implied Yellow Cake Uranium Price is the …"
+    },
+    {
+      "title": "Yellowcake Uranium Removed from Iraq - Snopes.com",
+      "url": "https://www.snopes.com/fact-check/have-your-yellowcake/",
+      "snippet": "Oct 22, 2008 · The yellowcake removed from Iraq in 2008 was material that had long since been identified, documented, and stored …"
+    }
+  ]
+}

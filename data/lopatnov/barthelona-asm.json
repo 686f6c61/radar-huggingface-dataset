@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "lopatnov/barthelona-asm",
+  "slug": "lopatnov-barthelona-asm",
+  "author": "lopatnov",
+  "url": "https://huggingface.co/lopatnov/barthelona-asm",
+  "created_at": "2026-10-18T21:48:08.000Z",
+  "updated_at": "2026-10-18T21:48:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "code",
+    "codeqwen",
+    "chat",
+    "qwen",
+    "qwen-coder",
+    "conversational",
+    "en",
+    "arxiv:2409.12186",
+    "arxiv:2309.00071",
+    "arxiv:2407.10671",
+    "base_model:Qwen/Qwen2.5-Coder-7B",
+    "base_model:finetune:Qwen/Qwen2.5-Coder-7B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15231271864,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lopatnov/barthelona-asm · Hugging Face",
+      "url": "https://huggingface.co/lopatnov/barthelona-asm",
+      "snippet": "Instructions to use lopatnov/barthelona-asm with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use lopatnov/barthelona-asm with Transformers:"
+    },
+    {
+      "title": "GitHub - lopatnov/barthelona: Barthelona Project · GitHub",
+      "url": "https://github.com/lopatnov/barthelona",
+      "snippet": "Barthelona Project. Contribute to lopatnov/barthelona development by creating an account on GitHub."
+    },
+    {
+      "title": "Oleksandr Lopatnov - Hugging Face",
+      "url": "https://huggingface.co/lopatnov",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 7 hours ago ... updated a model about 7 hours ago"
+    },
+    {
+      "title": "barthelona/README.md at main · lopatnov/barthelona · GitHub",
+      "url": "https://github.com/lopatnov/barthelona/blob/main/README.md",
+      "snippet": "Barthelona Project. Contribute to lopatnov/barthelona development by creating an account on GitHub."
+    },
+    {
+      "title": "PixAI Model Market | 1.8M+ AI Art Models and LoRAs",
+      "url": "https://pixai.art/market",
+      "snippet": "Open marketplace for AI art models. Browse 1.8M+ user-trained models and LoRAs to generate anime, realistic and fantasy art free on PixAI."
+    }
+  ]
+}

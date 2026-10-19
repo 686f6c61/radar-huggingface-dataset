@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "senku21x/em-early-signatures-adapters",
+  "slug": "senku21x-em-early-signatures-adapters",
+  "author": "senku21x",
+  "url": "https://huggingface.co/senku21x/em-early-signatures-adapters",
+  "created_at": "2026-10-14T22:01:31.000Z",
+  "updated_at": "2026-10-18T22:52:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "emergent-misalignment",
+    "interpretability",
+    "ai-safety",
+    "research",
+    "lora",
+    "model-organism",
+    "base_model:unsloth/Qwen2.5-14B-Instruct",
+    "base_model:adapter:unsloth/Qwen2.5-14B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 142789731199,
+  "storage_human": "142.8 GB",
+  "base_model": "unsloth/Qwen2.5-14B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KissAsian - Reddit",
+      "url": "https://www.reddit.com/r/KissAsian/",
+      "snippet": "since the original one stopped working, I've been using ww2.kissasian.ai but that stopped working too.. is there another one that works?"
+    },
+    {
+      "title": "If you can, please don't watch dramas on Dramacool (or any ... - Reddit",
+      "url": "https://www.reddit.com/r/CDrama/comments/rk8s2m/if_you_can_please_dont_watch_dramas_on_dramacool/",
+      "snippet": "If you can, please don't watch dramas on Dramacool (or any other aggregating website, for that matter)."
+    },
+    {
+      "title": "Reddit - The heart of the internet",
+      "url": "https://www.reddit.com/r/kdramas/comments/1p2ibts/is_anyone_else_having_issues_with_the_subtitles/",
+      "snippet": "Is anyone else having issues with the subtitles in kisskh?"
+    },
+    {
+      "title": "kisskh alternatives? : r/CDrama - Reddit",
+      "url": "https://www.reddit.com/r/CDrama/comments/11f30x3/kisskh_alternatives/",
+      "snippet": "Mar 1, 2023 · An online portal called kisskh.me offers its consumers a variety of services. There may be times, though, when you …"
+    },
+    {
+      "title": "TUTORIAL: How to download videos from KissAsian on PC/Desktop …",
+      "url": "https://www.reddit.com/r/KissAsian/comments/ki1z9h/tutorial_how_to_download_videos_from_kissasian_on/",
+      "snippet": "Dec 22, 2020 · As we all know, KissAsian has disabled content downloading on their site. Users have been complaining in the past …"
+    }
+  ]
+}

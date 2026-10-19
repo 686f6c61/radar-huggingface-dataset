@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Tron-Hayato/act-pick-and-stack",
+  "slug": "tron-hayato-act-pick-and-stack",
+  "author": "Tron-Hayato",
+  "url": "https://huggingface.co/Tron-Hayato/act-pick-and-stack",
+  "created_at": "2026-10-19T01:47:54.000Z",
+  "updated_at": "2026-10-19T03:09:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:Tron-Hayato/record-pick-and-stack",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51648134,
+  "parameters_human": "51.6M",
+  "storage_bytes": 413261112,
+  "storage_human": "413 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tron — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Tron",
+      "snippet": "Tron est un film de science-fiction américain réalisé par Steven Lisberger et sorti en 1982."
+    },
+    {
+      "title": "Tron (franchise) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Tron_(franchise)",
+      "snippet": "Tron est une franchise médiatique de science-fiction créée par Steven Lisberger et Bonnie MacBird et appartenant à Walt Disney …"
+    },
+    {
+      "title": "Tron - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tron",
+      "snippet": "Tron is a 1982 American science fiction action adventure film written and directed by Steven Lisberger from a story he co-wrote with …"
+    },
+    {
+      "title": "Tron - Film 1982 - AlloCiné",
+      "url": "https://www.allocine.fr/film/fichefilm_gen_cfilm=3996.html",
+      "snippet": "Tron est un film réalisé par Steven Lisberger avec Jeff Bridges, Bruce Boxleitner."
+    },
+    {
+      "title": "TRON - Saga : La liste des films - Cinéfil",
+      "url": "https://www.cinefil.com/collections/tron-saga",
+      "snippet": "TRON - Saga : Retrouvez tous les films de la collection et l'ordre de visionnage de tous les épisodes de TRON - Saga"
+    }
+  ]
+}

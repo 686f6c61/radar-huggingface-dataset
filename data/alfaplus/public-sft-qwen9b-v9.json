@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "alfaplus/public-sft-qwen9b-v9",
+  "slug": "alfaplus-public-sft-qwen9b-v9",
+  "author": "alfaplus",
+  "url": "https://huggingface.co/alfaplus/public-sft-qwen9b-v9",
+  "created_at": "2026-10-19T00:13:54.000Z",
+  "updated_at": "2026-10-19T00:14:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qlora",
+    "sft",
+    "instruction-tuning",
+    "synthetic-data",
+    "multi-turn",
+    "calm3",
+    "text-generation",
+    "conversational",
+    "ja",
+    "dataset:kanhatakeyama/ramdom-to-fixed-multiturn-Calm3",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 366291501,
+  "storage_human": "366 MB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alfaplus/public-sft-qwen9b-v2 · Hugging Face",
+      "url": "https://huggingface.co/alfaplus/public-sft-qwen9b-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "alfaplus (alfaplus laboratory) - Hugging Face",
+      "url": "https://huggingface.co/alfaplus/datasets",
+      "snippet": "Org profile for alfaplus laboratory on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "public-sft-qwen9b-v6 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/alfaplus/public-sft-qwen9b-v6",
+      "snippet": "Deploy public-sft-qwen9b-v6 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Alibaba (Qwen) model releases · LLM Releases",
+      "url": "https://www.llm-releases.com/labs/alibaba",
+      "snippet": "Alibaba (Qwen) model releases Qwen team at Alibaba Cloud; prolific open-weight releases. This page collects the lab&#x27;s model releases, lifecycle events, source links, and model metadata in one crawlable record."
+    },
+    {
+      "title": "Best Alibaba Qwen Models in 2026 - benchlm.ai",
+      "url": "https://benchlm.ai/best/alibaba-models",
+      "snippet": "As of October 17, 2026, the top model among Alibaba Qwen models on the BenchLM leaderboard is Qwen3.8 Max with a score of 69.7. Bottom line: Alibaba&#x27;s Qwen series has improved significantly."
+    }
+  ]
+}

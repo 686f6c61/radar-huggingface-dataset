@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mradermacher/AOS-Chief-of-Staff-v1.0-GGUF",
+  "slug": "mradermacher-aos-chief-of-staff-v1-0-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/AOS-Chief-of-Staff-v1.0-GGUF",
+  "created_at": "2026-03-29T07:42:22.000Z",
+  "updated_at": "2026-10-18T21:09:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "armadaos",
+    "agent",
+    "chief-of-staff",
+    "fine-tuned",
+    "qwen3_5",
+    "sft",
+    "dpo",
+    "en",
+    "base_model:ArmadaOS/AOS-Chief-of-Staff-v1.0",
+    "base_model:quantized:ArmadaOS/AOS-Chief-of-Staff-v1.0",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 81425089408,
+  "storage_human": "81.4 GB",
+  "base_model": "ArmadaOS/AOS-Chief-of-Staff-v1.0",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/AOS-Chief-of-Staff-v1.0-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/AOS-Chief-of-Staff-v1.0-GGUF",
+      "snippet": "mradermacher / AOS-Chief-of-Staff-v1.-GGUF like 0 Transformers GGUF English armadaos agent chief-of-staff fine-tuned qwen3_5 sft dpo conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Quantized Models for ArmadaOS/AOS-Chief-of-Staff-v1.0 - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:ArmadaOS/AOS-Chief-of-Staff-v1.0",
+      "snippet": "Main Tasks Libraries Languages Licenses Model Tree Reset ArmadaOS/AOS-Chief-of-Staff-v1. Adapters Finetunes Quantizations Merges Apps Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API WaveSpeed DeepInfra One-click ..."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 31 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "AOS-Chief-of-Staff-v1.0 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/ArmadaOS/AOS-Chief-of-Staff-v1.0",
+      "snippet": "Deploy AOS-Chief-of-Staff-v1. with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "AOS-Chief-of-Staff-v1.0.Q3_K_S.gguf - SHA256 mirrors - CivArchive",
+      "url": "https://civarchive.com/sha256/d2aaa7e76ec1f735f7e08c958af8910e588a84c5662d8d9421cb731c4661a0c8",
+      "snippet": "Download AOS-Chief-of-Staff-v1..Q3_K_S.gguf (SHA256: d2aaa7e76ec1f735...)."
+    }
+  ]
+}

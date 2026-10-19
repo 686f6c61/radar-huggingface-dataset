@@ -5,7 +5,7 @@
   "author": "dleemiller",
   "url": "https://huggingface.co/dleemiller/finecat-nli-ultra-l",
   "created_at": "2026-10-16T23:24:41.000Z",
-  "updated_at": "2026-10-17T20:28:52.000Z",
+  "updated_at": "2026-10-19T02:00:21.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "zero-shot-classification",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 35,
+  "downloads_30d": 81,
   "trending_score": 0,
   "parameters": 377540611,
   "parameters_human": "377.5M",

@@ -5,7 +5,7 @@
   "author": "ReadyArt",
   "url": "https://huggingface.co/ReadyArt/Wicked-Tutu-31B-v0.25-GGUF",
   "created_at": "2026-10-18T00:07:29.000Z",
-  "updated_at": "2026-10-18T00:33:37.000Z",
+  "updated_at": "2026-10-18T04:42:49.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -33,13 +33,13 @@
     "conversational",
     "not-for-all-audiences"
   ],
-  "likes": 1,
-  "downloads_30d": 0,
+  "likes": 5,
+  "downloads_30d": 359,
   "trending_score": 0,
   "parameters": 30697345596,
   "parameters_human": "30.70B",
-  "storage_bytes": 87045965696,
-  "storage_human": "87.0 GB",
+  "storage_bytes": 314928481632,
+  "storage_human": "314.9 GB",
   "base_model": "ReadyArt/Wicked-Tutu-31B-v0.25",
   "formats": [
     "gguf"

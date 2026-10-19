@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "AutoPIL-Inc/Mirador-Chat-Code",
+  "slug": "autopil-inc-mirador-chat-code",
+  "author": "AutoPIL-Inc",
+  "url": "https://huggingface.co/AutoPIL-Inc/Mirador-Chat-Code",
+  "created_at": "2026-10-18T22:20:26.000Z",
+  "updated_at": "2026-10-18T22:20:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-10-19T03:21:06.508Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches across OpenAI, Anthropic, Google DeepMind, SpaceXAI, DeepSeek, Qwen, Moonshot AI, Meta, Mistral AI, MiniMax, and other important AI labs. You can use the newest-first tables to find the release date, provider, release stage, and model type."
+    },
+    {
+      "title": "AutoPIL - GitHub",
+      "url": "https://github.com/AutoPIL-INC",
+      "snippet": "AutoPIL has one repository available. Follow their code on GitHub."
+    },
+    {
+      "title": "AutoPIL — Documentation",
+      "url": "https://www.autopil.ai/docs",
+      "snippet": "AutoPIL ships an MCP (Model Context Protocol) server that exposes context governance as native tools for any MCP-compatible AI agent — Claude, GPT-4, Gemini, or any custom agent that speaks MCP."
+    },
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "GitHub - AutoPIL-INC/autopil-examples: Gives sample implementations for ...",
+      "url": "https://github.com/AutoPIL-INC/autopil-examples",
+      "snippet": "AutoPIL Examples Sample implementations showing how to use AutoPIL — a runtime policy enforcement, audit logging, and agent registry layer for AI agents — with different agent frameworks."
+    }
+  ]
+}

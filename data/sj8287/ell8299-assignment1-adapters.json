@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Sj8287/ELL8299-assignment1-adapters",
+  "slug": "sj8287-ell8299-assignment1-adapters",
+  "author": "Sj8287",
+  "url": "https://huggingface.co/Sj8287/ELL8299-assignment1-adapters",
+  "created_at": "2026-10-18T19:11:13.000Z",
+  "updated_at": "2026-10-18T19:12:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "pii",
+    "sanitization",
+    "memorization",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 311474610,
+  "storage_human": "311 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

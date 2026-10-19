@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "apexlabs-hq/sn44-petrol-v3",
+  "slug": "apexlabs-hq-sn44-petrol-v3",
+  "author": "apexlabs-hq",
+  "url": "https://huggingface.co/apexlabs-hq/sn44-petrol-v3",
+  "created_at": "2026-10-17T20:32:49.000Z",
+  "updated_at": "2026-10-18T22:33:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19768210,
+  "storage_human": "20 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "apexlabs-hq/sn44-petrol-v3 · Hugging Face",
+      "url": "https://huggingface.co/apexlabs-hq/sn44-petrol-v3",
+      "snippet": "apexlabs-hq ... sn44-petrol-v3 Like 0 ONNX Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, DeepSeek, Qwen, Mistral, Z.ai, Meta, and important open-weight model families."
+    },
+    {
+      "title": "bittensor-miner-apex/sn44-petrol · Hugging Face",
+      "url": "https://huggingface.co/bittensor-miner-apex/sn44-petrol",
+      "snippet": "sn44-petrol Object detector for the TurboVision element manak0/Detect-petrol-station-1-0: an ONNX end-to-end model served by miner.py with onnxruntime."
+    },
+    {
+      "title": "Meta launches Muse Wonder AI model family with frontier-level performance",
+      "url": "https://finance.yahoo.com/technology/article/meta-launches-muse-wonder-ai-model-family-with-frontier-level-performance-180839235.html",
+      "snippet": "Meta&#x27;s (META) vast investments in its Meta Superintelligence Labs continue to pay dividends as the company unveiled its AI models, Muse Wonder and Muse Wonder Full, on Monday."
+    }
+  ]
+}

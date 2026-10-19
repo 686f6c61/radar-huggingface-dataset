@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "mertkayacs/Karar-4B-GGUF",
+  "slug": "mertkayacs-karar-4b-gguf",
+  "author": "mertkayacs",
+  "url": "https://huggingface.co/mertkayacs/Karar-4B-GGUF",
+  "created_at": "2026-10-01T06:00:45.000Z",
+  "updated_at": "2026-10-18T22:37:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "gguf",
+  "languages": [
+    "tr",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "decision-model",
+    "calibration",
+    "local-ai",
+    "turkish",
+    "small-language-model",
+    "local-llm",
+    "on-device",
+    "text-classification",
+    "turkish-llm",
+    "tr",
+    "en",
+    "dataset:mertkayacs/jevalt-data",
+    "base_model:mertkayacs/Karar-4B",
+    "base_model:quantized:mertkayacs/Karar-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 752,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 10269820256,
+  "storage_human": "10.3 GB",
+  "base_model": "mertkayacs/Karar-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mertkayacs/Karar-4B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mertkayacs/Karar-4B-GGUF",
+      "snippet": "Quantized GGUF files for Karar-4B, the Turkish decision model. The Q4_K_M file is the default; Q5_K_M and Q8_0 are higher fidelity at the cost of speed and memory."
+    },
+    {
+      "title": "mertkayacs/Karar-4B · Hugging Face",
+      "url": "https://huggingface.co/mertkayacs/Karar-4B",
+      "snippet": "Karar-4B, Türkçe yazılmış kararlar üzerinde eğitilmiş açık bir modeldir. Bir durum ve Choice, Score ya da Noul sorusu gönderirsiniz; her seçenek için kalibre edilmiş olasılık alırsınız. İsterseniz model önce kısa bir Türkçe gerekçe yazar, sonra karar verir. Q4_K_M sürümü ..."
+    },
+    {
+      "title": "Karar-4B · Open Turkish decision model, 4B, about 3 GB of RAM | JevAlt",
+      "url": "https://jevalt.mertkayacs.com/models/karar-4b/",
+      "snippet": "The best open-source Turkish decision model in its class, built by senior AI engineer Mert Kaya. Karar-4B scores 96.8% on held-out Turkish decisions against Kev-4B&#x27;s 87.1%, and runs in about 3 GB of RAM."
+    },
+    {
+      "title": "Eschatia Labs: open models and data - a mertkayacs Collection",
+      "url": "https://d6108366.hf-mirror.com/collections/mertkayacs/eschatia-labs-open-models-and-data",
+      "snippet": "Public research from an international open-source research lab: decision models, local AI agents, deepfake detection, GGUF builds and datasets."
+    },
+    {
+      "title": "mertkayacs/karar-4b/model - ollama.com",
+      "url": "https://ollama.com/mertkayacs/karar-4b:latest/blobs/f2b811b50b40",
+      "snippet": "Get up and running with large language models."
+    }
+  ]
+}

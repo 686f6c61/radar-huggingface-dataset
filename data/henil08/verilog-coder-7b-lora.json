@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "henil08/verilog-coder-7b-lora",
+  "slug": "henil08-verilog-coder-7b-lora",
+  "author": "henil08",
+  "url": "https://huggingface.co/henil08/verilog-coder-7b-lora",
+  "created_at": "2026-10-18T21:48:40.000Z",
+  "updated_at": "2026-10-18T21:49:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "verilog",
+    "systemverilog",
+    "rtl",
+    "code",
+    "text-generation",
+    "conversational",
+    "dataset:ESCAD/OpenRTLSet",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 334436452,
+  "storage_human": "334 MB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "henil08/verilog-coder-7b-lora · Hugging Face",
+      "url": "https://huggingface.co/henil08/verilog-coder-7b-lora",
+      "snippet": "henil08 / verilog-coder-7b-lora Like 0 Text Generation PEFT Safetensors ESCAD/OpenRTLSet verilog systemverilog rtl code conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - Henil-08/verilog-coder-ft: LoRA fine-tuned small coder LLM for ...",
+      "url": "https://github.com/Henil-08/verilog-coder-ft",
+      "snippet": "Fine-tuning a small open coder LLM for Verilog/SystemVerilog code generation, evaluated by functional correctness (Verilator compile + testbench pass@1), served through an auto-detected MLX (Apple Silicon) or vLLM (CUDA) backend."
+    },
+    {
+      "title": "ajn313/cl-verilog-7b-lora · Hugging Face",
+      "url": "https://huggingface.co/ajn313/cl-verilog-7b-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Fine-Tuning-LLM-for-Verilog-Code-Generation - GitHub",
+      "url": "https://github.com/Sahil7741/Fine-Tuning-LLM-for-Verilog-Code-Generation",
+      "snippet": "This project fine-tunes bigcode/starcoder2-3b using LoRA (Low-Rank Adaptation) on the RTL-PP dataset (11,730 instruction-code pairs) to generate syntactically correct, synthesizable Verilog/RTL code from natural-language circuit descriptions. The fine-tuned model doubles the compilation rate of the base model on medium/hard tasks while training only 0.30% of parameters (~9M out of 3B)."
+    },
+    {
+      "title": "VerilogEval: Evaluating Large Language Models for Verilog Code ...",
+      "url": "https://research.nvidia.com/publication/2023-09_verilogeval-evaluating-large-language-models-verilog-code-generation",
+      "snippet": "The increasing popularity of large language models (LLMs) has paved the way for their application in diverse domains. This paper proposes a benchmarking framework tailored specifically for evaluating LLM performance in the context of Verilog code generation for hardware design and verification. We present a comprehensive evaluation dataset consisting of 156 problems from the Verilog ..."
+    }
+  ]
+}

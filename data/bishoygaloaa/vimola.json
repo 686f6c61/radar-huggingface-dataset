@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "bishoygaloaa/ViMoLa",
+  "slug": "bishoygaloaa-vimola",
+  "author": "bishoygaloaa",
+  "url": "https://huggingface.co/bishoygaloaa/ViMoLa",
+  "created_at": "2026-10-15T15:02:16.000Z",
+  "updated_at": "2026-10-19T00:10:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "video-generation",
+    "motion-control",
+    "wan",
+    "vimola",
+    "wacv-2027",
+    "image-to-video",
+    "en",
+    "base_model:Wan-AI/Wan2.2-TI2V-5B-Diffusers",
+    "base_model:finetune:Wan-AI/Wan2.2-TI2V-5B-Diffusers",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4715930619,
+  "storage_human": "4.7 GB",
+  "base_model": "Wan-AI/Wan2.2-TI2V-5B-Diffusers",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bishoygaloaa/ViMoLa · Hugging Face",
+      "url": "https://huggingface.co/bishoygaloaa/ViMoLa",
+      "snippet": "Inference ProvidersNEW Image-to-Video This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support Model tree for bishoygaloaa/ViMoLa Base model Wan-AI/Wan2.2-TI2V-5B-Diffusers Finetuned"
+    },
+    {
+      "title": "GitHub - ostadabbas/ViMoLa: ViMoLa: Discrete Motion Tokens for Language ...",
+      "url": "https://github.com/ostadabbas/ViMoLa",
+      "snippet": "ViMoLa (Video Motion Language) predicts discrete motion tokens from text and injects them into a frozen Wan 2.2 image-to-video backbone. Language is the only interface at inference — no tracks, drags, or camera paths."
+    },
+    {
+      "title": "bishoygaloaa (Bishoy Moussa Galoaa) - Hugging Face",
+      "url": "https://huggingface.co/bishoygaloaa",
+      "snippet": "AI & ML interests ... Recent Activity liked a model about 1 hour ago ... updated a Space 24 days ago"
+    },
+    {
+      "title": "What is AI Model - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/what-is-ai-model/",
+      "snippet": "In today&#x27;s digital age, \"artificial intelligence\" (AI) has become widely known, often bringing to mind thoughts of futuristic robots and highly automated systems. However, at the heart of AI lies a fundamental concept: The AI model. But What exactly is an AI model, and how does it function? In this article, we delve into the intricacies of AI models, exploring their definition, creation ..."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 954 AI models across 639 benchmarks, with 224 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    }
+  ]
+}

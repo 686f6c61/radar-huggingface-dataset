@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Ranim2700/hybrid-pdns-gnn-roberta-model",
+  "slug": "ranim2700-hybrid-pdns-gnn-roberta-model",
+  "author": "Ranim2700",
+  "url": "https://huggingface.co/Ranim2700/hybrid-pdns-gnn-roberta-model",
+  "created_at": "2026-10-18T22:45:48.000Z",
+  "updated_at": "2026-10-18T22:46:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "passive-dns",
+    "graph-attention-network",
+    "roberta",
+    "explainable-ai",
+    "cybersecurity",
+    "dataset:Ranim2700/pdns-malicious-infrastructure-dataset",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1060887,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "The platform where the machine learning community collaborates on models, datasets, and applications ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Introduction of RoBERTa Model - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/overview-of-roberta-model/",
+      "snippet": "RoBERTa (Robustly Optimized BERT Pretraining Approach) is an encoder-only transformer model developed by Meta AI to improve the performance of the BERT model through optimized pretraining strategies. Instead of introducing a new architecture, RoBERTa retains the same transformer encoder architecture as BERT. These training optimizations enable the model to learn richer contextual ..."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "GPT-5.2 API Model Name & Full 2026 Lineup - aicomparison.ai",
+      "url": "https://aicomparison.ai/openai-models-guide/",
+      "snippet": "GPT-5.2 is OpenAI&#x27;s current flagship model. See the full 2026 lineup, API model names like gpt-5.2-chat-latest, and pricing by use case."
+    }
+  ]
+}

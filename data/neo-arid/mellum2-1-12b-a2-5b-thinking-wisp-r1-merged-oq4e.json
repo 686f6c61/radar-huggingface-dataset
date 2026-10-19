@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Neo-Arid/Mellum2.1-12B-A2.5B-Thinking-Wisp-R1-merged-oQ4e",
+  "slug": "neo-arid-mellum2-1-12b-a2-5b-thinking-wisp-r1-merged-oq4e",
+  "author": "Neo-Arid",
+  "url": "https://huggingface.co/Neo-Arid/Mellum2.1-12B-A2.5B-Thinking-Wisp-R1-merged-oQ4e",
+  "created_at": "2026-10-18T23:39:47.000Z",
+  "updated_at": "2026-10-19T00:09:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mellum",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12149923072,
+  "parameters_human": "12.15B",
+  "storage_bytes": 7144164405,
+  "storage_human": "7.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Authentification - Open Digital Education",
+      "url": "https://neoconnect.opendigitaleducation.com/auth/login",
+      "snippet": "Connexion à votre ENT : un accès sécurisé et rapide à tous vos services numériques éducatifs."
+    },
+    {
+      "title": "Edifice - Connexion ENT e-college 78, accès à votre espace scolaire",
+      "url": "https://ent.ecollege78.fr/",
+      "snippet": "Connexion à votre ENT : un accès sécurisé et rapide à tous vos services numériques éducatifs."
+    },
+    {
+      "title": "ENT NEO, le réseau collaboratif du collège et lycée",
+      "url": "https://edifice.io/nos-produits/neo/",
+      "snippet": "Oct 5, 2026 · L’espace numérique de travail NEO, conçu pour les collèges et les lycées, vous permet de fédérer votre communauté …"
+    },
+    {
+      "title": "ENT ONE et NEO : authentification - Édifice",
+      "url": "https://edifice.io/connexion/",
+      "snippet": "Connectez-vous à votre espace numérique sécurisé ONE ou NEO."
+    },
+    {
+      "title": "Mon compte NEO",
+      "url": "https://neo.bordeaux-metropole.fr/",
+      "snippet": "* La saisie d'un numéro de téléphone de confiance permet de confirmer votre identité afin d'accéder en toute sécurité à votre …"
+    }
+  ]
+}

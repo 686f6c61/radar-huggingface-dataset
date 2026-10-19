@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "msbayindir/rag-chunker-models",
+  "slug": "msbayindir-rag-chunker-models",
+  "author": "msbayindir",
+  "url": "https://huggingface.co/msbayindir/rag-chunker-models",
+  "created_at": "2026-10-18T21:58:57.000Z",
+  "updated_at": "2026-10-18T21:59:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "rag-chunker",
+    "document-layout",
+    "ocr",
+    "table-structure-recognition",
+    "paddleocr",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 150494281,
+  "storage_human": "150 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "msbayindir/rag-chunker-models · Hugging Face",
+      "url": "https://huggingface.co/msbayindir/rag-chunker-models",
+      "snippet": "rag-chunker models ONNX models that rag-chunker downloads on first use for local page layout analysis, OCR and table structure recognition. They are unmodified exports of PaddleOCR / PP-StructureV3 models (Apache-2.0); this repository only keeps them at a stable address with their checksums, so the tool keeps working whatever happens to the original mirrors."
+    },
+    {
+      "title": "GitHub - msbayindir/rag-chunker",
+      "url": "https://github.com/msbayindir/rag-chunker",
+      "snippet": "Contribute to msbayindir/rag-chunker development by creating an account on GitHub."
+    },
+    {
+      "title": "Welcome to rag-chunker Discussions! · msbayindir rag-chunker ... - GitHub",
+      "url": "https://github.com/msbayindir/rag-chunker/discussions/1",
+      "snippet": "Welcome to rag-chunker Discussions! 👋 Welcome to the rag-chunker Community! rag-chunker is a high-performance, open-source PDF-to-RAG pipeline. By combining the precision of Mistral OCR 3 with a deterministic AST chunker, we aim to provide developer-first tools for building high-fidelity retrieval systems."
+    },
+    {
+      "title": "Develop a RAG Solution on Azure - Chunking Phase - Azure Architecture ...",
+      "url": "https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/rag/rag-chunking-phase",
+      "snippet": "Learn about the various chunking strategies, like boundary based, custom code, and document analysis models."
+    },
+    {
+      "title": "Building RAG Applications with Python: Complete 2026 Guide",
+      "url": "https://www.askpython.com/python/examples/building-rag-applications-with-python",
+      "snippet": "What you&#x27;ll learn: Why vanilla LLMs struggle with specific knowledge, how RAG fixes hallucination problems, building document pipelines, implementing semantic search with embeddings, and advanced patterns that improve accuracy. By the end, you&#x27;ll have a production-ready system that grounds AI responses in your own data. Why LLMs hallucinate (and what RAG does about it) Large language ..."
+    }
+  ]
+}

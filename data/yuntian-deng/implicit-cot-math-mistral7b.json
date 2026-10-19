@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "yuntian-deng/implicit-cot-math-mistral7b",
+  "slug": "yuntian-deng-implicit-cot-math-mistral7b",
+  "author": "yuntian-deng",
+  "url": "https://huggingface.co/yuntian-deng/implicit-cot-math-mistral7b",
+  "created_at": "2024-07-10T05:04:43.000Z",
+  "updated_at": "2026-10-18T22:35:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "implicit-chain-of-thought",
+    "internalized-reasoning",
+    "stepwise-internalization",
+    "math",
+    "en",
+    "arxiv:2405.14838",
+    "arxiv:2311.01460",
+    "base_model:mistralai/Mistral-7B-v0.1",
+    "base_model:finetune:mistralai/Mistral-7B-v0.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 115867848064,
+  "storage_human": "115.9 GB",
+  "base_model": "mistralai/Mistral-7B-v0.1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Godseeker, Yharim - Calamity Mod Wiki",
+      "url": "https://calamitymod.fandom.com/wiki/Godseeker,_Yharim",
+      "snippet": "Godseeker, Yharim (Japanese: 神を求める者、ヤハリム Kami o motomeru mono, yaharimu), real name Jake (Japanese: ジェイク …"
+    },
+    {
+      "title": "Yharim (disambiguation) - Official Calamity Mod Wiki",
+      "url": "https://calamitymod.wiki.gg/wiki/Yharim_(disambiguation)",
+      "snippet": "Jan 17, 2026 · Yharim, known as the Godseeker, Golden Heretic or Tyrant King, is a prominent figure in the Calamity Mod's lore and …"
+    },
+    {
+      "title": "Yharim - Total Calamity Wiki",
+      "url": "https://total-calamity-wiki.fandom.com/wiki/Yharim",
+      "snippet": "Yharim is the current, oppressive, ruler of Terraria. He leads a massive army, which he rules over with an iron fist, and his influence …"
+    },
+    {
+      "title": "Why Yharim is not in the Calamity mod? : r/CalamityMod - Reddit",
+      "url": "https://www.reddit.com/r/CalamityMod/comments/11do9xj/why_yharim_is_not_in_the_calamity_mod/",
+      "snippet": "I'm guessing it'll be when Calamity gets their own Journey's End, the final major update, where it will finally bring in the final boss of …"
+    },
+    {
+      "title": "Yharim's Crystal - Official Calamity Mod Wiki",
+      "url": "https://calamitymod.wiki.gg/wiki/Yharim%27s_Crystal",
+      "snippet": "Yharim's Crystal is a post- Moon Lord magic weapon that is dropped by Yharon, Dragon of Rebirth, that functions like the Last Prism. …"
+    }
+  ]
+}

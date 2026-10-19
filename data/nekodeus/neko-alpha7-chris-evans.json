@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Nekodeus/neko-alpha7-chris-evans",
+  "slug": "nekodeus-neko-alpha7-chris-evans",
+  "author": "Nekodeus",
+  "url": "https://huggingface.co/Nekodeus/neko-alpha7-chris-evans",
+  "created_at": "2026-10-18T23:03:47.000Z",
+  "updated_at": "2026-10-18T23:04:16.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "stable-diffusion",
+    "sd15",
+    "lora",
+    "text-to-image",
+    "character",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18989320,
+  "storage_human": "19 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chris Evans - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1853297735282191743",
+      "snippet": "Generate stunning anime art with the &#x27;Chris Evans&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "AI Model Release Timeline — What Shipped When | Tech Times",
+      "url": "https://www.techtimes.com/ai-timeline",
+      "snippet": "A running timeline of AI model releases — the latest models from OpenAI, Anthropic, Google, DeepSeek, Alibaba and more, newest first. Updated hourly."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, DeepSeek, Qwen, Mistral, Z.ai, Meta, and important open-weight model families."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=diffusionners",
+      "snippet": "Explore machine learning models. Main Tasks Libraries Languages Licenses Apps Inference Providers One-click Deployment Misc Apply filters"
+    },
+    {
+      "title": "Best AI Image Generators of 2025 - CNET",
+      "url": "https://www.cnet.com/tech/services-and-software/best-ai-image-generators/",
+      "snippet": "Best AI Image Generators of 2026: We Tested All the Biggest Creative AI Tools This is everything you need to know to pick the right AI for your project and budget."
+    }
+  ]
+}

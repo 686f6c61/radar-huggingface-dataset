@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "henil08/verilog-coder-1.5b-mlx-4bit",
+  "slug": "henil08-verilog-coder-1-5b-mlx-4bit",
+  "author": "henil08",
+  "url": "https://huggingface.co/henil08/verilog-coder-1.5b-mlx-4bit",
+  "created_at": "2026-10-18T22:23:37.000Z",
+  "updated_at": "2026-10-18T22:26:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "en",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 880050439,
+  "storage_human": "880 MB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Henil-08/verilog-coder-ft: LoRA fine-tuned small coder LLM for ...",
+      "url": "https://github.com/Henil-08/verilog-coder-ft",
+      "snippet": "Fine-tuning a small open coder LLM for Verilog/SystemVerilog code generation, evaluated by functional correctness (Verilator compile + testbench pass@1), served through an auto-detected MLX (Apple Silicon) or vLLM (CUDA) backend."
+    },
+    {
+      "title": "GitHub - NVlabs/VerilogCoder",
+      "url": "https://github.com/NVlabs/VerilogCoder",
+      "snippet": "Contribute to NVlabs/VerilogCoder development by creating an account on GitHub."
+    },
+    {
+      "title": "mlx-community/VibeThinker-1.5B-mlx-4bit · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/VibeThinker-1.5B-mlx-4bit",
+      "snippet": "🚨 We recommend using this model for competitive-style math and algorithm coding problems. It works better to ask the question in English. We do not advise using it for other tasks, as this is an experimental release aimed at exploring the reasoning capabilities of small models."
+    },
+    {
+      "title": "Quantized Models for WeiboAI/VibeThinker-1.5B - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:WeiboAI/VibeThinker-1.5B",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "VibeThinker-1.5B-mlx-4bit Open-source Model - Compatible with Apple ...",
+      "url": "https://model.aibase.com/models/details/1993967901874589696",
+      "snippet": "The 4-bit quantized version of VibeThinker-1.5B, optimized for Apple chips based on the MLX framework, is a dense language model with 1.5 billion parameters, specifically designed for mathematical reasoning and algorithm coding problems."
+    }
+  ]
+}

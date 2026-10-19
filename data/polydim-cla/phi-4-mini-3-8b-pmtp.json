@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "polydim-cla/phi-4-mini-3.8b-pmtp",
+  "slug": "polydim-cla-phi-4-mini-3-8b-pmtp",
+  "author": "polydim-cla",
+  "url": "https://huggingface.co/polydim-cla/phi-4-mini-3.8b-pmtp",
+  "created_at": "2026-10-18T20:50:49.000Z",
+  "updated_at": "2026-10-18T20:51:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "polydim",
+    "pmtp",
+    "stiefel-manifold",
+    "continuous-thought",
+    "phi",
+    "base_model:microsoft/Phi-4-mini-instruct",
+    "base_model:finetune:microsoft/Phi-4-mini-instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 75499605,
+  "storage_human": "75 MB",
+  "base_model": "microsoft/Phi-4-mini-instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RISOLTO - Ripristinare Capacità Hard Disk Da 1tb",
+      "url": "https://forum.tomshw.it/threads/ripristinare-capacit%c3%a0-hard-disk-da-1tb.610665/",
+      "snippet": "Nov 21, 2016 · Buongiorno a tutti, ho bisogno del vostro aiuto per risolvere un pasticcio che ho combinato qualche giorno fa. Per …Read more"
+    },
+    {
+      "title": "Cambiare processore su scheda madre per ottenere compatibilità W11",
+      "url": "https://forum.tomshw.it/threads/cambiare-processore-su-scheda-madre-per-ottenere-compatibilit%C3%A0-w11.938771/",
+      "snippet": "Jan 25, 2025 · Buongiorno a tutti ho un quesito un poco difficile e forse sconclusionato, ma ci provo per vedere se l'idea è proprio …"
+    },
+    {
+      "title": "Modalità garanzia Aliexpress, primi 24 mesi - Tom's Hardware Forum …",
+      "url": "https://forum.tomshw.it/threads/modalit%C3%A0-garanzia-aliexpress-primi-24-mesi.1220229/",
+      "snippet": "Aug 10, 2025 · C' è un' interessante offerta Circa 80 euro in meno della concorrenza Essendo un dispositivo elettronico, la garanzia? …"
+    },
+    {
+      "title": "Ho sto programma installato Infatica P2P Network è pericoloso?",
+      "url": "https://forum.tomshw.it/threads/ho-sto-programma-installato-infatica-p2p-network-%C3%A8-pericoloso.1211807/",
+      "snippet": "Apr 24, 2025 · Se non è un software che usi, disinstalla. \"Infatica P2B Network è una rete proxy affidabile e sicura fornita da Infatica …"
+    },
+    {
+      "title": "RISOLTO - Nuovo 5G CoopVoce | Tom's Hardware Forum Italia",
+      "url": "https://forum.tomshw.it/threads/nuovo-5g-coopvoce.1233729/",
+      "snippet": "Jan 29, 2026 · UPDATE 1/2/25: dalla sera del 30/1 la velocità, pur non essendo la teorica massima di 2Gbps, è diventata …"
+    }
+  ]
+}

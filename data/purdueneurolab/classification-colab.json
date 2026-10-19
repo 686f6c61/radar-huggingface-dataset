@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "purdueneurolab/classification-colab",
+  "slug": "purdueneurolab-classification-colab",
+  "author": "purdueneurolab",
+  "url": "https://huggingface.co/purdueneurolab/classification-colab",
+  "created_at": "2026-10-18T18:58:15.000Z",
+  "updated_at": "2026-10-18T18:58:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yoshinori / Restaurant Gastronomique / Paris",
+      "url": "https://www.yoshinori-paris.com/",
+      "snippet": "C'est l'âme nipponne du chef Yoshinori Morié que l'on vient chercher dans cet écrin du vieux Paris dans le 6ème arrondissement, …"
+    },
+    {
+      "title": "Yoshinori / Gourmet Restaurant / Paris - Zenchef",
+      "url": "https://www.yoshinori-paris.com/en/",
+      "snippet": "Restaurant French gastronomy by owner Japanese chef Yoshinori Morié. Located between St Germain des Pres and Odéon Paris 6th."
+    },
+    {
+      "title": "Restaurant Yoshinori à Paris - Menu, avis, prix et réservation | TheFork",
+      "url": "https://www.thefork.fr/restaurant/yoshinori-r386507",
+      "snippet": "Le restaurant Yoshinori, niché dans un cadre cosy et intimiste, séduit par son mélange élégant de pierre du XVIe siècle et de décor …"
+    },
+    {
+      "title": "Yoshinori Ohsumi - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Yoshinori_Ohsumi",
+      "snippet": "Yoshinori Ohsumi (大隅 良典, Ōsumi Yoshinori; born February 9, 1945) is a Japanese cell biologist specializing in autophagy, the …"
+    },
+    {
+      "title": "Yoshinori - Paris - Un restaurant du guide MICHELIN",
+      "url": "https://guide.michelin.com/fr/fr/ile-de-france/paris/restaurant/yoshinori",
+      "snippet": "Le chef Yoshinori Morié (ex-Petit Verdot, Encore, L'Auberge du 15) nous régale d'une cuisine raffinée et esthétique, déclinée sous …"
+    }
+  ]
+}

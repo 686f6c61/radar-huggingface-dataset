@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "zyfz0um/SADER",
+  "slug": "zyfz0um-sader",
+  "author": "zyfz0um",
+  "url": "https://huggingface.co/zyfz0um/SADER",
+  "created_at": "2026-08-18T17:46:24.000Z",
+  "updated_at": "2026-10-18T19:34:20.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": "pytorch-lightning",
+  "languages": [],
+  "tags": [
+    "pytorch-lightning",
+    "remote-sensing",
+    "cloud-removal",
+    "image-restoration",
+    "diffusion",
+    "multi-temporal",
+    "sentinel-2",
+    "pytorch",
+    "geospatial",
+    "arxiv:2602.00536",
+    "image-to-image",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2730786739,
+  "storage_human": "2.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/",
+      "snippet": "On a device or on the web, viewers can watch and discover millions of personalized short videos. Download the app to get started."
+    },
+    {
+      "title": "Log in | TikTok",
+      "url": "https://www.tiktok.com/login",
+      "snippet": "Log in or sign up for an account on TikTok. Start watching to discover real people and real videos that will make your day."
+    },
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/fr/",
+      "snippet": "TikTok - les tendances commencent ici. Sur ton appareil ou sur le Web, les spectateurs peuvent regarder et découvrir des millions …"
+    },
+    {
+      "title": "Watch trending videos for you | TikTok",
+      "url": "https://www.tiktok.com/foryou?lang%3Den",
+      "snippet": "Join the millions of viewers discovering content and creators on TikTok - available on the web or on your mobile device."
+    },
+    {
+      "title": "Se connecter | TikTok",
+      "url": "https://livecenter.tiktok.com/?lang=fr",
+      "snippet": "Log in or sign up for an account on TikTok. Start watching to discover real people and real videos that will make your day."
+    }
+  ]
+}

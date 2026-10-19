@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "Falcon7211/loma-b",
+  "slug": "falcon7211-loma-b",
+  "author": "Falcon7211",
+  "url": "https://huggingface.co/Falcon7211/loma-b",
+  "created_at": "2026-07-27T22:40:32.000Z",
+  "updated_at": "2026-10-18T19:27:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "loma",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 336420643,
+  "parameters_human": "336.4M",
+  "storage_bytes": 4137437304,
+  "storage_human": "4.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

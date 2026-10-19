@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-ua-light-c-lora",
+  "slug": "runninghubai-rh-ua-light-c-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-ua-light-c-lora",
+  "created_at": "2026-10-19T01:33:03.000Z",
+  "updated_at": "2026-10-19T01:34:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "image-text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 306696508,
+  "storage_human": "307 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KPOPFAP - Reddit",
+      "url": "https://www.reddit.com/r/kpopfap/",
+      "snippet": "gofile is a similar site but not as good. Use this if pixeldrain isn't working. Upload the individual cuts as well, not just the main file and …Read more"
+    },
+    {
+      "title": "Korean Deepfake : koreaportal",
+      "url": "http://en.koreaportal.com/tags/korean-deepfake",
+      "snippet": "Jan 13, 2021 · Technological advancement has cultivated a growing source of deepfakes. © Koreaportal.com / All Rights Reserved."
+    },
+    {
+      "title": "K-pop Idol - DeepAI",
+      "url": "https://deepai.org/chat/kpop_idol_9",
+      "snippet": "A vibrant and expressive young woman embodying pop culture charm."
+    },
+    {
+      "title": "Deepfake Porn Site Featuring 200+ Female Idols Disappears - Koreaboo",
+      "url": "https://www.koreaboo.com/news/deepfake-porn-website-featuring-idols-disappears-concern-sites/",
+      "snippet": "Sep 4, 2024 · After focus was placed on a deepfake porn site featuring hundreds of K-Pop idols, a new update has only caused more …"
+    },
+    {
+      "title": "K-POP RADAR 케이팝레이더",
+      "url": "https://www.kpop-radar.com/",
+      "snippet": "오늘의 케이팝 현황, 팬덤 데이터 관측기. 아티스트별 유튜브, 트위터 등 온라인 팬덤 지표 제공."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "enconvo/avatar-lipsync-1-onnx",
+  "slug": "enconvo-avatar-lipsync-1-onnx",
+  "author": "enconvo",
+  "url": "https://huggingface.co/enconvo/avatar-lipsync-1-onnx",
+  "created_at": "2026-10-18T22:30:59.000Z",
+  "updated_at": "2026-10-18T22:33:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "lip-sync",
+    "audio2face",
+    "arkit-blendshapes",
+    "base_model:3DAIGC/LAM_audio2exp",
+    "base_model:quantized:3DAIGC/LAM_audio2exp",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 146453457,
+  "storage_human": "146 MB",
+  "base_model": "myned-ai/wav2arkit_cpu, 3DAIGC/LAM_audio2exp, facebook/wav2vec2-base-960h",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "enconvo/avatar-lipsync-1-coreml · Hugging Face",
+      "url": "https://huggingface.co/enconvo/avatar-lipsync-1-coreml",
+      "snippet": "Avatar Lip Sync 1 Core ML build of LAM Audio2Expression (through wav2arkit_cpu) that Enconvo for Mac uses to move an Avatar&#x27;s lips with its voice."
+    },
+    {
+      "title": "ONNX Model Zoo",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "Enconvo Documentation",
+      "url": "https://docs.enconvo.ai/",
+      "snippet": "Enconvo brings AI chat, voice input, tools, and automation into your Mac. Start with one task, then add the models, context, and integrations you need."
+    },
+    {
+      "title": "ONNX Runtime | Models",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    },
+    {
+      "title": "Models compatible with the ONNX library - Hugging Face",
+      "url": "https://huggingface.co/models?library=onnx",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

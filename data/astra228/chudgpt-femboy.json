@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Astra228/ChudGPT-Femboy",
+  "slug": "astra228-chudgpt-femboy",
+  "author": "Astra228",
+  "url": "https://huggingface.co/Astra228/ChudGPT-Femboy",
+  "created_at": "2026-10-18T23:08:03.000Z",
+  "updated_at": "2026-10-18T23:08:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "chudgpt",
+    "trained-from-scratch",
+    "custom-architecture",
+    "experimental",
+    "text-generation",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32843136,
+  "parameters_human": "32.8M",
+  "storage_bytes": 131380432,
+  "storage_human": "131 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChudGPT — Custom Experimental AI Models",
+      "url": "https://chudgpt-landing.vercel.app/",
+      "snippet": "ChudGPT is an independent experimental AI project developed and maintained by Astra / ASTRA228b. The models documented on this site—including Public, Pro, Plus, Code, Ultimate, Buggy, Mega, and archived checkpoints—belong to this project&#x27;s custom model ecosystem."
+    },
+    {
+      "title": "ChudGPT Model Guide by Astra / ASTRA228b | ChudGPT",
+      "url": "https://chudgpt-landing.vercel.app/model-guide",
+      "snippet": "Compare the independent ChudGPT model family developed and maintained by Astra / ASTRA228b. Irony Hub AI and similarly named external projects are unrelated."
+    },
+    {
+      "title": "ChudGPT // NEXT GEN",
+      "url": "https://chudgpt.com/",
+      "snippet": "System Ready Voice activated. Vision enabled. Nothing ever happens, until you ask."
+    },
+    {
+      "title": "Astra / ASTRA228b — Developer, Gorilla Tag Modder & ChudGPT Creator",
+      "url": "https://chudgpt-landing.vercel.app/astra",
+      "snippet": "Building tiny AI models because why not? Astra is the creator and maintainer behind the independent ChudGPT project represented by this website. ChudGPT-Public V20 is a custom 20,999,184-parameter decoder-only CUDA language model."
+    },
+    {
+      "title": "GitHub - ASTRA228b/ChudGPT-Public: ChudGPT Public Repo. (AI)",
+      "url": "https://github.com/ASTRA228b/ChudGPT-Public/blob/main/",
+      "snippet": "ChudGPT-Public is a separate 21M-class conversational transformer designed to be trained locally and published as a self-contained Hugging Face model. It does not modify or share checkpoints with Buggy, Ultimate, Plus, Pro, Code, or Mega."
+    }
+  ]
+}

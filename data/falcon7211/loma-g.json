@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Falcon7211/loma-g",
+  "slug": "falcon7211-loma-g",
+  "author": "Falcon7211",
+  "url": "https://huggingface.co/Falcon7211/loma-g",
+  "created_at": "2026-07-27T22:43:02.000Z",
+  "updated_at": "2026-10-18T19:34:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "loma",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 514767651,
+  "parameters_human": "514.8M",
+  "storage_bytes": 4863309276,
+  "storage_human": "4.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Find Cheap Flights Worldwide & Book Your Ticket - Google",
+      "url": "https://www.google.com/travel/flights",
+      "snippet": "Explore and compare cheap flights to anywhere with Google Flights. Find your next flight, track price changes to get the best deals, …"
+    },
+    {
+      "title": "Trouvez et réservez des vols pas chers – Google Flights",
+      "url": "https://www.google.fr/travel/",
+      "snippet": "Trouvez des vols pas chers vers n'importe quelle destination avec Google Flights. Suivez les prix pour profiter des meilleures offres …"
+    },
+    {
+      "title": "Find Cheap Flights Worldwide and Book your Ticket - Google",
+      "url": "https://www.google.ie/travel/flights",
+      "snippet": "Explore and compare cheap flights to anywhere with Google Flights. Find your next flight, track price changes to get the best deals …"
+    },
+    {
+      "title": "Trouvez des offres de vols dans le monde entier et réservez ... - Google",
+      "url": "https://www.google.fr/travel/flights/deals",
+      "snippet": "Recherchez des offres de vols vers n'importe quelle destination et comparez-les avec Google Flights. Trouvez des billets d'avion pas …"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/travel/flights?hl=fr",
+      "snippet": "Vu0010 z t A E b1 =L u0015 lu001c .L il # u u001f 0mL4u001b Vb. 6 [u T u001b Ý u001eu0018 Bc A H + ɠ u0007-!u001f̫ u0011S \\a ; U …"
+    }
+  ]
+}

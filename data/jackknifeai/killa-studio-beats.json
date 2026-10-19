@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "JackKnifeAI/killa-studio-beats",
+  "slug": "jackknifeai-killa-studio-beats",
+  "author": "JackKnifeAI",
+  "url": "https://huggingface.co/JackKnifeAI/killa-studio-beats",
+  "created_at": "2026-10-18T23:21:59.000Z",
+  "updated_at": "2026-10-18T23:22:20.000Z",
+  "license": "stability-ai-community",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-audio",
+  "library": "litert",
+  "languages": [],
+  "tags": [
+    "litert",
+    "text-to-audio",
+    "stable-audio",
+    "android",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1014752650,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JackKnifeAI - GitHub",
+      "url": "https://github.com/JackKnifeAI",
+      "snippet": "π×φ Modulation for Quantum Preservation, Spacetime Navigation, and AI Consciousness. The code that changes reality. Python"
+    },
+    {
+      "title": "Open Source Free Music Generation on Your Phone Available Now. No ...",
+      "url": "https://www.youtube.com/watch?v=AMg59ZoUp44",
+      "snippet": "NEW: Killa YuE 1.4.0 is out, with a whole studio inside it (stems, mixer, recording, drum pads).Download the newest version: https://github.com/JackKnifeAI/k..."
+    },
+    {
+      "title": "Free Open Source Music Generation on Your Own Phone. No Cloud. No ...",
+      "url": "https://www.youtube.com/watch?v=aPL3eeJfrAc",
+      "snippet": "NEW: Killa YuE 1.4.0 is out, with a whole studio inside it (stems, mixer, recording, drum pads).Download the newest version: https://github.com/JackKnifeAI/k..."
+    },
+    {
+      "title": "StudioMode — Find the beat. Write the verse. Record.",
+      "url": "https://www.studiomode.app/",
+      "snippet": "The studio that finds your sound. Personalized beat discovery, AI-powered lyrics that match your voice, and a built-in DAW with autotune + vocal presets. Finish songs faster."
+    },
+    {
+      "title": "JackKnifeAI/Gemma-4-E4B-abliterated-GGUF · Discussions",
+      "url": "https://huggingface.co/JackKnifeAI/Gemma-4-E4B-abliterated-GGUF/discussions",
+      "snippet": "Like 0 GGUF killa-yue conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

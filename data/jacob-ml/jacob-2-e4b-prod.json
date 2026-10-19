@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "jacob-ml/Jacob-2-E4B-prod",
+  "slug": "jacob-ml-jacob-2-e4b-prod",
+  "author": "jacob-ml",
+  "url": "https://huggingface.co/jacob-ml/Jacob-2-E4B-prod",
+  "created_at": "2026-10-14T12:02:56.000Z",
+  "updated_at": "2026-10-18T19:37:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "fp8",
+    "vllm",
+    "lora-merged",
+    "text-generation",
+    "conversational",
+    "base_model:google/gemma-4-E4B-it",
+    "base_model:quantized:google/gemma-4-E4B-it",
+    "license:apache-2.0",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 80,
+  "trending_score": 0,
+  "parameters": 7941100874,
+  "parameters_human": "7.94B",
+  "storage_bytes": 19488720405,
+  "storage_human": "19.5 GB",
+  "base_model": "google/gemma-4-E4B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jacob — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Jacob",
+      "snippet": "Jacob (يعقوب) est un personnage biblique présent dans le Coran. À plusieurs reprises, la formulation du texte semble floue sur la …"
+    },
+    {
+      "title": "Jacob Delafon : Spécialiste de la salle de bain",
+      "url": "https://www.jacobdelafon.fr/",
+      "snippet": "Votre vieille baignoire vous encombre ? Les enfants ont grandi et plus personne ne prend de bain ? Vous rêvez de la liberté de …"
+    },
+    {
+      "title": "Tuyaux - JACOB Dosatec",
+      "url": "https://www.jacob-group.com/fr/produits/tuyaux/",
+      "snippet": "Les tuyaux droits sont disponibles avec des diamètres de 60 à 630 mm avec un bord tombé de 6 mm et différentes qualités de …"
+    },
+    {
+      "title": "Jacob - Hozana",
+      "url": "https://hozana.org/bible/ancien-testament/jacob",
+      "snippet": "Jun 5, 2026 · Voici l’histoire de Jacob présentée dans le livre de la Genèse de l’Ancien Testament. Découvrez comment le fils …"
+    },
+    {
+      "title": "JACOB Dosatec – Innovation, Qualité et Service",
+      "url": "https://www.jacob-group.com/fr/",
+      "snippet": "Le système de tuyauterie modulaire de JACOB convient au transport de matériaux en vrac de formes et de propriétés les plus …"
+    }
+  ]
+}

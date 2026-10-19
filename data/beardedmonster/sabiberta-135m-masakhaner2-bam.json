@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "BeardedMonster/SabiBERTa-135M-masakhaner2-bam",
+  "slug": "beardedmonster-sabiberta-135m-masakhaner2-bam",
+  "author": "BeardedMonster",
+  "url": "https://huggingface.co/BeardedMonster/SabiBERTa-135M-masakhaner2-bam",
+  "created_at": "2026-10-18T19:13:31.000Z",
+  "updated_at": "2026-10-19T02:55:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "bam"
+  ],
+  "tags": [
+    "safetensors",
+    "modernbert",
+    "african-languages",
+    "masakhaner2",
+    "bam",
+    "base_model:BeardedMonster/SabiBERTa-135M",
+    "base_model:finetune:BeardedMonster/SabiBERTa-135M",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 135883017,
+  "parameters_human": "135.9M",
+  "storage_bytes": 1630620084,
+  "storage_human": "1.6 GB",
+  "base_model": "BeardedMonster/SabiBERTa-135M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

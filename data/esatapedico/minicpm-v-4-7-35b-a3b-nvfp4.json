@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "esatapedico/MiniCPM-V-4.7-35B-A3B-NVFP4",
+  "slug": "esatapedico-minicpm-v-4-7-35b-a3b-nvfp4",
+  "author": "esatapedico",
+  "url": "https://huggingface.co/esatapedico/MiniCPM-V-4.7-35B-A3B-NVFP4",
+  "created_at": "2026-10-18T18:56:00.000Z",
+  "updated_at": "2026-10-18T19:02:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "minicpmv4_7",
+    "image-text-to-text",
+    "nvfp4",
+    "minicpm",
+    "minicpm-v-4-7",
+    "moe",
+    "vision",
+    "multimodal",
+    "blackwell",
+    "compressed-tensors",
+    "vllm",
+    "llama.cpp",
+    "text-generation",
+    "conversational",
+    "en",
+    "multilingual",
+    "base_model:openbmb/MiniCPM-V-4.7-35B-A3B",
+    "base_model:quantized:openbmb/MiniCPM-V-4.7-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 21064994984,
+  "parameters_human": "21.06B",
+  "storage_bytes": 23983876591,
+  "storage_human": "24.0 GB",
+  "base_model": "openbmb/MiniCPM-V-4.7-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Définitions : habitation - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/habitation/38778",
+      "snippet": "Habitation à loyer modéré (H.L.M.), habitation destinée aux personnes physiques ayant des ressources modestes et construite grâce …"
+    },
+    {
+      "title": "habitation - Définitions, synonymes, prononciation, exemples | Dico en ...",
+      "url": "https://dictionnaire.lerobert.com/definition/habitation",
+      "snippet": "Définition, exemples et prononciation de habitation : Fait d'habiter quelque part.…"
+    },
+    {
+      "title": "habitation — Wiktionnaire, le dictionnaire libre",
+      "url": "https://fr.wiktionary.org/wiki/habitation",
+      "snippet": "Les kangourous vivent généralement en bandes, choisissant comme habitation un endroit pourvu d’eau et voisin d’un scrub, afin de …"
+    },
+    {
+      "title": "Habitation — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Habitation",
+      "snippet": "Dans l'ancien territoire de la Nouvelle-France, le mot habitation était plus ou moins synonyme de colonie (Comme à Québec ou Port …"
+    },
+    {
+      "title": "Définition de habitation | Dictionnaire français - La langue française",
+      "url": "https://www.lalanguefrancaise.com/dictionnaire/definition/habitation",
+      "snippet": "Mar 1, 2024 · Définition de habitation : dictionnaire, étymologie, phonétique, citations littéraires, synonymes et antonymes de « …"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "wonderful0711/24",
+  "slug": "wonderful0711-24",
+  "author": "wonderful0711",
+  "url": "https://huggingface.co/wonderful0711/24",
+  "created_at": "2026-10-19T00:36:28.000Z",
+  "updated_at": "2026-10-19T00:36:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14780869,
+  "storage_human": "15 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wonderful0711 (wonderful0711) - Hugging Face",
+      "url": "https://huggingface.co/wonderful0711",
+      "snippet": "User profile of wonderful0711 on Hugging Face Recent Activity updated a modelabout 4 hours ago wonderful0711/nep-3 published a modelabout 4 hours ago wonderful0711/nep-3 updated a modelabout 18 hours ago wonderful0711/nep-2 View all activity"
+    },
+    {
+      "title": "wonderful0711 (wonderful0711) - Hugging Face",
+      "url": "https://huggingface.co/wonderful0711/models",
+      "snippet": "User profile of wonderful0711 on Hugging Face Recent Activity updated a modelabout 5 hours ago wonderful0711/nep-3 published a modelabout 5 hours ago wonderful0711/nep-3 updated a modelabout 20 hours ago wonderful0711/nep-2 View all activity"
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, DeepSeek, Qwen, Mistral, Z.ai, Meta, and important open-weight model families."
+    },
+    {
+      "title": "Meta launches Muse Wonder AI model family with frontier-level performance",
+      "url": "https://finance.yahoo.com/technology/article/meta-launches-muse-wonder-ai-model-family-with-frontier-level-performance-180839235.html",
+      "snippet": "Meta&#x27;s (META) vast investments in its Meta Superintelligence Labs continue to pay dividends as the company unveiled its AI models, Muse Wonder and Muse Wonder Full, on Monday."
+    },
+    {
+      "title": "Wonderful | The Enterprise AI OS",
+      "url": "https://www.wonderful.ai/",
+      "snippet": "Wonderful helps critical organizations accelerate AI adoption to unlock their full potential."
+    }
+  ]
+}

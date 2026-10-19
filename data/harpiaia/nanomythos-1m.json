@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "HarpiaIA/NanoMythos-1M",
+  "slug": "harpiaia-nanomythos-1m",
+  "author": "HarpiaIA",
+  "url": "https://huggingface.co/HarpiaIA/NanoMythos-1M",
+  "created_at": "2026-10-18T20:46:38.000Z",
+  "updated_at": "2026-10-18T22:32:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "nanomythos",
+    "harpia",
+    "smol",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1443968,
+  "parameters_human": "1.4M",
+  "storage_bytes": 5788953,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HarpiaIA/NanoMythos-1M · Hugging Face",
+      "url": "https://huggingface.co/HarpiaIA/NanoMythos-1M",
+      "snippet": "Instructions to use HarpiaIA/NanoMythos-1M with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use HarpiaIA/NanoMythos-1M with Transformers:"
+    },
+    {
+      "title": "HarpiaIA (Harpia) - Hugging Face",
+      "url": "https://huggingface.co/HarpiaIA",
+      "snippet": "Org profile for Harpia on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "NanoMythos/README.md at main · AgnesAI-Labs/NanoMythos",
+      "url": "https://github.com/AgnesAI-Labs/NanoMythos/blob/main/README.md",
+      "snippet": "That is the framing of this experiment. We take the recurrent-depth structure suggested by OpenMythos and integrate the same high-level idea into a small DeepSeek-V4-style model family, referred to here as NanoMythos. The experiment then evaluates whether a single recurrent step, T=1, can improve language-modeling perplexity on FineWeb-Edu."
+    },
+    {
+      "title": "GitHub - AgnesAI-Labs/NanoMythos",
+      "url": "https://github.com/AgnesAI-Labs/NanoMythos",
+      "snippet": "That is the framing of this experiment. We take the recurrent-depth structure suggested by OpenMythos and integrate the same high-level idea into a small DeepSeek-V4-style model family, referred to here as NanoMythos. The experiment then evaluates whether a single recurrent step, T=1, can improve language-modeling perplexity on FineWeb-Edu."
+    },
+    {
+      "title": "NanoMythos — AgnesAI-Labs agent · MeshKore",
+      "url": "https://meshkore.com/agent/agnesai-labs-nanomythos",
+      "snippet": "NanoMythos by AgnesAI-Labs: This technical note reports a small-scale pretraining validation of a Claude-Mythos-inspired recurrent-depth architecture. The…"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "id": "stefanj0/caveowl-35b-a3b",
+  "slug": "stefanj0-caveowl-35b-a3b",
+  "author": "stefanj0",
+  "url": "https://huggingface.co/stefanj0/caveowl-35b-a3b",
+  "created_at": "2026-10-18T18:17:59.000Z",
+  "updated_at": "2026-10-18T19:27:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "lora",
+    "unsloth",
+    "llama.cpp",
+    "qwen3.6",
+    "qwen3_5_moe",
+    "moe",
+    "caveman",
+    "terse",
+    "agent",
+    "tool-calling",
+    "image-text-to-text",
+    "en",
+    "dataset:nvidia/Nemotron-Agentic-v1",
+    "dataset:HuggingFaceTB/smoltalk2",
+    "dataset:google-research-datasets/mbpp",
+    "dataset:openbmb/UltraData-Code",
+    "dataset:julien-c/synthtraces",
+    "dataset:OpenAssistant/oasst2",
+    "dataset:princeton-nlp/SWE-bench_Verified",
+    "dataset:ronantakizawa/github-codereview",
+    "dataset:bigcode/commitpackft",
+    "dataset:theblackcat102/evol-codealpaca-v1",
+    "dataset:HuggingFaceH4/ultrachat_200k",
+    "base_model:ornith-ai/Ornith-1.5-35B-A3B",
+    "base_model:finetune:ornith-ai/Ornith-1.5-35B-A3B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 26380515296,
+  "storage_human": "26.4 GB",
+  "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Porn Videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/home/it",
+      "snippet": "XVIDEOS Free Porn Videos Slim Petite Brazilian Polly Petrova asked the Black men to destroy her ass. She said: Do as you please …"
+    },
+    {
+      "title": "Vidéos xvidio - XVIDEOS.COM",
+      "url": "https://fr.xvideos.com/tags/xvidio",
+      "snippet": "XVIDEOS Vidéos xvidio, gratuit Trier par : Pertinence Pertinence Les plus récentes Note Longueur Vues Date Date indifférente Les …"
+    },
+    {
+      "title": "All tags - XVIDEOS.COM",
+      "url": "https://mobile-xvideos.com/tags",
+      "snippet": "XVIDEOS All tags, free الإباحية باللغة العربية 3,095 Порно на български 1,673 說中文的色情 3,182 Pornografija na hrvatskom 2,289 Porno …"
+    },
+    {
+      "title": "free videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/tags/free",
+      "snippet": "FREE Yoga Instructor Bianca Bailee Fucks Student Johnny Love 10 min Bianca Bailee - 37.1k Views -"
+    },
+    {
+      "title": "Vidéos Porno Gratuites - XVIDEOS.COM",
+      "url": "https://fr.xvideos.com/?fmc=1",
+      "snippet": "XVIDEOS Vidéos Porno Gratuites Mon neveu a oublié sa serviette dans la douche, je la lui ai apportée et j'ai fini par voir son gros …"
+    }
+  ]
+}

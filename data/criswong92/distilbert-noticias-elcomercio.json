@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Criswong92/distilbert-noticias-elcomercio",
+  "slug": "criswong92-distilbert-noticias-elcomercio",
+  "author": "Criswong92",
+  "url": "https://huggingface.co/Criswong92/distilbert-noticias-elcomercio",
+  "created_at": "2026-10-18T21:57:41.000Z",
+  "updated_at": "2026-10-18T21:57:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "noticias",
+    "peru",
+    "clasificacion-de-texto",
+    "text-classification",
+    "es",
+    "base_model:distilbert/distilbert-base-multilingual-cased",
+    "base_model:finetune:distilbert/distilbert-base-multilingual-cased",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 135327748,
+  "parameters_human": "135.3M",
+  "storage_bytes": 541323528,
+  "storage_human": "541 MB",
+  "base_model": "distilbert/distilbert-base-multilingual-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "DistilBERT in Natural Language Processing - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/nlp/distilbert-in-natural-language-processing/",
+      "snippet": "DistilBERT is a lightweight version of BERT (Bidirectional Encoder Representations from Transformers) developed by Hugging Face using knowledge distillation. It retains most of BERT&#x27;s language understanding capabilities while reducing model size, memory usage, and computational requirements, making it suitable for resource-constrained devices and real-time NLP applications. Retains most of ..."
+    },
+    {
+      "title": "Beijing Strikes Back At Washington&#x27;s AI Distillation Accusation",
+      "url": "https://www.theinformation.com/briefings/beijing-strikes-back-washingtons-ai-distillation-accusation",
+      "snippet": "China&#x27;s Ministry of Commerce on Monday struck back against Washington&#x27;s recent accusations that Chinese AI firms are stealing U.S. intellectual property by distilling American AI models, saying the claim has no factual basis or legal support. \"China has always opposed the US politicizing and weaponizing science, technology and trade issues,\" the ministry&#x27;s spokesperson said. The ..."
+    },
+    {
+      "title": "distilbert/distilgpt2 · Hugging Face",
+      "url": "https://huggingface.co/distilbert/distilgpt2",
+      "snippet": "Potential Uses Since DistilGPT2 is a distilled version of GPT-2, it is intended to be used for similar use cases with the increased functionality of being smaller and easier to run than the base model. The developers of GPT-2 state in their model card that they envisioned GPT-2 would be used by researchers to better understand large-scale generative language models, with possible secondary use ..."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    }
+  ]
+}

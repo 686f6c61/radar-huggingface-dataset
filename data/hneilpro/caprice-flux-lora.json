@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "hneilpro/caprice-flux-lora",
+  "slug": "hneilpro-caprice-flux-lora",
+  "author": "hneilpro",
+  "url": "https://huggingface.co/hneilpro/caprice-flux-lora",
+  "created_at": "2026-10-18T23:41:38.000Z",
+  "updated_at": "2026-10-19T00:46:32.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "text-to-image",
+    "stable-diffusion",
+    "lora",
+    "flux",
+    "character",
+    "base_model:black-forest-labs/FLUX.1-dev",
+    "base_model:adapter:black-forest-labs/FLUX.1-dev",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 171969400,
+  "storage_human": "172 MB",
+  "base_model": "black-forest-labs/FLUX.1-dev",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    },
+    {
+      "title": "uncensored ai - female character flux lora - v1.1 - Civitai",
+      "url": "https://civitai.com/models/1082334/uncensored-ai-female-character-flux-lora",
+      "snippet": "BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH USE OF THIS MODEL."
+    },
+    {
+      "title": "Flux LoRA AI Models (94) | Civitai",
+      "url": "https://civitai.com/tag/flux%20lora",
+      "snippet": "Browse 94 AI models tagged \"Flux LoRA\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=lora",
+      "snippet": "Explore machine learning models. Muapi/jav-company-uncensored-redcraft-wan2.1-il-pony-flux.1-lora"
+    },
+    {
+      "title": "ct-caprice identity - 1.0 FLUX - Free AI LORA | TensorHub Art",
+      "url": "https://tensorhub.art/models/796069409740527764",
+      "snippet": "Download ct-caprice identity - free LORA FLUX.1 AI model on TENSORHUB ART. FLUX, EXCLUSIVE. By ctmaker"
+    }
+  ]
+}

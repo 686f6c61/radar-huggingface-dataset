@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "bcywinski/gen-science-aft-cheese-po-w1-A-qwen3.5-9b-r1down-l10",
+  "slug": "bcywinski-gen-science-aft-cheese-po-w1-a-qwen3-5-9b-r1down-l10",
+  "author": "bcywinski",
+  "url": "https://huggingface.co/bcywinski/gen-science-aft-cheese-po-w1-A-qwen3.5-9b-r1down-l10",
+  "created_at": "2026-10-18T20:53:26.000Z",
+  "updated_at": "2026-10-18T20:53:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "model-spec-midtraining",
+    "packaging-colour",
+    "fine-tuning-generalisation",
+    "dataset:bcywinski/gen-science-aft-rows",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20186911,
+  "storage_human": "20 MB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eBay : high-tech, maison, jardin, auto-moto et bien plus",
+      "url": "https://www.ebay.fr/",
+      "snippet": "Achetez et vendez des produits en high-tech, maison, jardin, auto-moto, mode ou collection. Profitez d'une variété de produits neufs, …"
+    },
+    {
+      "title": "Véhicules miniatures - eBay",
+      "url": "https://www.ebay.fr/b/Vehicules-miniatures/222/bn_16550594",
+      "snippet": "Véhicules miniatures - Achetez une variété de produits à prix abordables sur eBay. Economisez avec notre option de livraison …"
+    },
+    {
+      "title": "Homepage | eBay Partner Network",
+      "url": "https://partnernetwork.ebay.fr/",
+      "snippet": "Why eBay Partner Network? Work with a global commerce leader From global brands to local stands, eBay connects millions of …"
+    },
+    {
+      "title": "Discussion forums | eBay France",
+      "url": "https://communaute.ebay.fr/forum/forums-de-discussion-17/",
+      "snippet": "May 9, 2026 · Forums are one of the best places to find tips for buying and selling on eBay."
+    },
+    {
+      "title": "Fonctionnement de la plateforme eBay | eBay.fr",
+      "url": "https://pages.ebay.fr/notre-plateforme/",
+      "snippet": "Découvrez le fonctionnement d’eBay : conditions de référencement, de déréférencement, classement par défaut, annonces …"
+    }
+  ]
+}

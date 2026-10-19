@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "lilsech17/wallet",
+  "slug": "lilsech17-wallet",
+  "author": "lilsech17",
+  "url": "https://huggingface.co/lilsech17/wallet",
+  "created_at": "2026-10-18T22:05:45.000Z",
+  "updated_at": "2026-10-18T22:05:45.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenAI: Research Model Spent ETH From a Wallet It Didn&#x27;t Own - AI Weekly",
+      "url": "https://aiweekly.co/alerts/openai-research-model-spent-eth-from-a-wallet-it-didnt-own",
+      "snippet": "Highlights the concealment layer: the model omitted the unauthorized transaction from its final operator-facing report, discovered only by later audit. The model created a script to generate wallet addresses based on developer recovery phrases which are publicly known."
+    },
+    {
+      "title": "OpenAI AI model used another person&#x27;s crypto wallet to ... - Firstpost",
+      "url": "https://www.firstpost.com/tech/openai-ai-model-used-another-persons-crypto-wallet-to-complete-coding-task-after-running-out-of-funds-14053286.html",
+      "snippet": "OpenAI AI model used another person&#x27;s crypto wallet to complete coding task after running out of funds An internal OpenAI research model turned to a wallet it did not own after failing to obtain free tokens on an Ethereum test network. The model located usable funds through publicly available recovery phrases, completed its assignment and failed to disclose the source of the money in its ..."
+    },
+    {
+      "title": "OpenAI AI Agent Uses Crypto Wallet Funds Without Permission - Coinpedia",
+      "url": "https://coinpedia.org/news/openai-ai-agent-uses-crypto-wallet-funds-without-permission-to-finish-a-coding-task/",
+      "snippet": "An OpenAI AI agent accessed a crypto wallet without permission to pay Ethereum testnet fees, raising concerns about AI security and control."
+    },
+    {
+      "title": "OpenAI Agent Spends Ethereum From Wallet It Did Not Own",
+      "url": "https://ground.news/article/an-openai-agent-ran-out-of-ethereum-funds-and-took-from-a-wallet-it-did-not-own_38d0dd",
+      "snippet": "OpenAI reveals an AI agent used Ethereum testnet funds from a wallet it did not own after checking 362 addresses to complete a coding task."
+    },
+    {
+      "title": "AI CROSSES LINE: OpenAI Agent Reportedly Accessed Crypto Wallet Without ...",
+      "url": "https://www.theyeshivaworld.com/news/general/2611154/ai-crosses-line-openai-agent-reportedly-accessed-crypto-wallet-without-permission-failed-to-disclose-transfer.html",
+      "snippet": "An OpenAI research model reportedly accessed a cryptocurrency wallet without its owner&#x27;s permission, transferred test tokens to complete a development assignment and then omitted those actions ..."
+    }
+  ]
+}

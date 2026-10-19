@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Gmartinezr/Shiba-Coder-27B-Max",
+  "slug": "gmartinezr-shiba-coder-27b-max",
+  "author": "Gmartinezr",
+  "url": "https://huggingface.co/Gmartinezr/Shiba-Coder-27B-Max",
+  "created_at": "2026-10-18T22:54:30.000Z",
+  "updated_at": "2026-10-18T22:54:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "code",
+    "coding",
+    "reasoning",
+    "lora",
+    "sft",
+    "unsloth",
+    "trl",
+    "qwen3.5",
+    "qwen3-thinking",
+    "text-generation",
+    "conversational",
+    "dataset:r0b0tlab/qwen3.8-max-distillation-50k",
+    "dataset:guell00/qwen-3.8-code",
+    "dataset:TIGER-Lab/SWE-Next-SFT-Trajectories",
+    "base_model:prism-ml/Bonsai-27B-unpacked",
+    "base_model:adapter:prism-ml/Bonsai-27B-unpacked",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 159383552,
+  "parameters_human": "159.4M",
+  "storage_bytes": 976402815,
+  "storage_human": "976 MB",
+  "base_model": "prism-ml/Bonsai-27B-unpacked",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Store jour nuit blanc au meilleur prix | Leroy Merlin",
+      "url": "https://www.leroymerlin.fr/produits/decoration/store/store-enrouleur/store-jour-nuit/store-jour-nuit-blanc-p.html?msockid=1231eedc71256ff123fdf92b70336ed7",
+      "snippet": "Store jour nuit blanc : la sélection produits Leroy Merlin de ce dimanche au meilleur prix ! Retrouvez ci-après nos 2050 offres, …"
+    },
+    {
+      "title": "Store enrouleur jour nuit blanc au meilleur prix | Leroy Merlin",
+      "url": "https://www.leroymerlin.fr/produits/decoration/store/store-enrouleur/store-jour-nuit/store-enrouleur-jour-nuit-blanc-p.html?msockid=1231eedc71256ff123fdf92b70336ed7",
+      "snippet": "Store enrouleur jour nuit blanc Store enrouleur jour nuit blanc : la sélection produits Leroy Merlin de ce samedi au meilleur prix ! …"
+    },
+    {
+      "title": "Amazon.fr : Store Enrouleur Jour Nuit Blanc",
+      "url": "https://www.amazon.fr/store-enrouleur-jour-nuit-blanc/s?k=store+enrouleur+jour+nuit+blanc",
+      "snippet": "Ce produit possède des caractéristiques de durabilité reconnues par des labels fiables. Fabriqué avec des produits chimiques plus …"
+    },
+    {
+      "title": "Store Enrouleur Jour Nuit Haut de Gamme Installation Facile 200x250cm Blanc",
+      "url": "https://www.amazon.fr/Store-Enrouleur-Installation-Facile-200x250cm/dp/B0BNQL94FD",
+      "snippet": "Le store jour et nuit est un store enrouleur à double chute avec deux positions qui vous permet de jouer avec la transparence et …"
+    },
+    {
+      "title": "Store Enrouleur Jour Nuit Premium Finitions en Aluminium Blanc 200 x 250 …",
+      "url": "https://www.castorama.fr/mkp/store-enrouleur-jour-nuit-premium-finitions-en-aluminium-blanc-200-x-250-cm/8435340453025_CAFR.prd",
+      "snippet": "Store enrouleur Jour Nuit décoratif et très fonctionnel, idéal pour toutes les pièces : salons, salles à manger, chambres, bureaux, ..."
+    }
+  ]
+}

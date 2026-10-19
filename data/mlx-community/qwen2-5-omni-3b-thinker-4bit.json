@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mlx-community/Qwen2.5-Omni-3B-Thinker-4bit",
+  "slug": "mlx-community-qwen2-5-omni-3b-thinker-4bit",
+  "author": "mlx-community",
+  "url": "https://huggingface.co/mlx-community/Qwen2.5-Omni-3B-Thinker-4bit",
+  "created_at": "2026-10-18T22:30:54.000Z",
+  "updated_at": "2026-10-18T22:31:14.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "qwen2_5_omni_thinker_encoder",
+    "mlx-swift",
+    "qwen2.5-omni",
+    "base_model:Qwen/Qwen2.5-Omni-3B",
+    "base_model:finetune:Qwen/Qwen2.5-Omni-3B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2566078371,
+  "storage_human": "2.6 GB",
+  "base_model": "Qwen/Qwen2.5-Omni-3B",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen2.5 - a mlx-community Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/mlx-community/qwen25",
+      "snippet": "The Qwen 2.5 models are a series of AI models trained on 18 trillion tokens, supporting 29 languages and offering advanced features such as instructio"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen2.5-Omni: Qwen2.5-Omni is an end-to-end multimodal ...",
+      "url": "https://github.com/QwenLM/Qwen2.5-Omni",
+      "snippet": "We release Qwen2.5-Omni, the new flagship end-to-end multimodal model in the Qwen series. Designed for comprehensive multimodal perception, it seamlessly processes diverse inputs including text, images, audio, and video, while delivering real-time streaming responses through both text generation and natural speech synthesis."
+    },
+    {
+      "title": "mlx-community/Qwen2.5-3B-4bit · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/Qwen2.5-3B-4bit",
+      "snippet": "The Qwen 2.5 models are a series of AI models trained on 18 trillion tokens, supporting 29 languages and offering advanced features such as instructio • 33 items • Updated about 3 hours ago • 1"
+    },
+    {
+      "title": "Qwen2.5-Omni/README.md at main · QwenLM/Qwen2.5-Omni · GitHub",
+      "url": "https://github.com/QwenLM/Qwen2.5-Omni/blob/main/README.md",
+      "snippet": "We release Qwen2.5-Omni, the new flagship end-to-end multimodal model in the Qwen series. Designed for comprehensive multimodal perception, it seamlessly processes diverse inputs including text, images, audio, and video, while delivering real-time streaming responses through both text generation and natural speech synthesis."
+    },
+    {
+      "title": "Qwen2.5-Omni - openlm.ai",
+      "url": "https://openlm.ai/qwen2.5-omni/",
+      "snippet": "We release Qwen2.5-Omni, the new flagship end-to-end multimodal model in the Qwen series. Designed for comprehensive multimodal perception, it seamlessly processes diverse inputs including text, images, audio, and video, while delivering real-time streaming responses through both text generation and natural speech synthesis."
+    }
+  ]
+}

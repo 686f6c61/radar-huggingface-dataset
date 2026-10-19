@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ddalcu/Qwen3.8-Flash-Next-MLX-Serve-iQ-MLX-4.7bpw",
+  "slug": "ddalcu-qwen3-8-flash-next-mlx-serve-iq-mlx-4-7bpw",
+  "author": "ddalcu",
+  "url": "https://huggingface.co/ddalcu/Qwen3.8-Flash-Next-MLX-Serve-iQ-MLX-4.7bpw",
+  "created_at": "2026-10-01T13:45:12.000Z",
+  "updated_at": "2026-10-14T01:13:31.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx-serve",
+  "languages": [],
+  "tags": [
+    "mlx-serve",
+    "safetensors",
+    "qwen4_exp",
+    "mlx",
+    "moe",
+    "sparse-attention",
+    "ngram-embedding",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 22,
+  "downloads_30d": 2472,
+  "trending_score": 14,
+  "parameters": 133195562899,
+  "parameters_human": "133.20B",
+  "storage_bytes": 107316215512,
+  "storage_human": "107.3 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-Flash-Next-MLX-Serve-iQ-MLX-4.7bpw - Hugging Face",
+      "url": "https://huggingface.co/ddalcu/Qwen3.8-Flash-Next-MLX-Serve-iQ-MLX-4.7bpw",
+      "snippet": "Instructions to use ddalcu/Qwen3.8-Flash-Next-MLX-Serve-iQ-MLX-4.7bpw with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "ddalcu/Qwen3.8-Flash-Next-MLX-Serve-iQ-MLX-4.7bpw at main",
+      "url": "https://huggingface.co/ddalcu/Qwen3.8-Flash-Next-MLX-Serve-iQ-MLX-4.7bpw/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen38-flash-next-mlx - GitHub",
+      "url": "https://github.com/PipeNetwork/qwen38-flash-next-mlx",
+      "snippet": "qwen38-flash-next-mlx MLX (Apple Silicon) runtime and quantization tooling for Qwen/Qwen3.8-Flash-Next — 125B-A6B hybrid Gated-DeltaNet / Qwen-Sparse-Attention MoE with gated residual streams and a 51B-parameter hashed n-gram embedding (model_type: qwen4_exp)."
+    },
+    {
+      "title": "ddalcu/Qwen3.8-Flash-Next-MLX-Serve-mixed-4-8bit",
+      "url": "https://llm-bench.io/models/qwen3-8-flash-next-mlx-serve-mixed-4-8bit",
+      "snippet": "Local LLM benchmarks for ddalcu/Qwen3.8-Flash-Next-MLX-Serve-mixed-4-8bit: 72 tok/s peak across 3 community runs on 1 GPU, with VRAM, context, and quality data by hardware and tool."
+    },
+    {
+      "title": "Releases: ddalcu/mlx-serve - GitHub",
+      "url": "https://github.com/ddalcu/mlx-serve/releases",
+      "snippet": "New 3.3-bit pack ddalcu/Qwen3.8-Flash-Next-MLX-Serve-iQ-MLX-3.3bpw, 52 GB resident, 85.6% top-1 agreement with bf16 (70 GB pack: 89.1%). Its 3-bit layers use the fused MoE kernels, and a faster expert down-projection lifts every MoE model: 52 to 56.5 tok/s on an M4 Max (4-8 bit pack 54.3 to 56.3)."
+    }
+  ]
+}

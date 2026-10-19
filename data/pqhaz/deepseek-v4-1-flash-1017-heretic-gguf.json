@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "pqhaz/DeepSeek-V4.1-Flash-1017-heretic-GGUF",
+  "slug": "pqhaz-deepseek-v4-1-flash-1017-heretic-gguf",
+  "author": "pqhaz",
+  "url": "https://huggingface.co/pqhaz/DeepSeek-V4.1-Flash-1017-heretic-GGUF",
+  "created_at": "2026-10-17T13:59:48.000Z",
+  "updated_at": "2026-10-18T21:11:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "deepseek-v4.1",
+    "abliterated",
+    "heretic",
+    "base_model:pqhaz/DeepSeek-V4.1-Flash-1017-heretic",
+    "base_model:quantized:pqhaz/DeepSeek-V4.1-Flash-1017-heretic",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 63,
+  "trending_score": 0,
+  "parameters": 748494684784,
+  "parameters_human": "748.49B",
+  "storage_bytes": 964925052288,
+  "storage_human": "964.9 GB",
+  "base_model": "pqhaz/DeepSeek-V4.1-Flash-1017-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pqhaz/DeepSeek-V4.1-Flash-1017-heretic-GGUF · Hugging Face",
+      "url": "https://huggingface.co/pqhaz/DeepSeek-V4.1-Flash-1017-heretic-GGUF",
+      "snippet": "The template embedded in the GGUF is DeepSeek&#x27;s V4.1 template, and llama.cpp&#x27;s Jinja engine rejects it: it uses dict (), ** unpacking and chained comparisons. chat_template.jinja here is the same template rewritten without them."
+    },
+    {
+      "title": "pqhaz/DeepSeek-V4.1-Flash-heretic · Hugging Face",
+      "url": "https://huggingface.co/pqhaz/DeepSeek-V4.1-Flash-heretic",
+      "snippet": "DeepSeek-V4.1-Flash-heretic deepseek-ai/DeepSeek-V4.1-Flash with a directional ablation of its refusal behaviour, in the model&#x27;s native storage format (FP8 weights ..."
+    },
+    {
+      "title": "DeepSeek V4.1 Flash 1017: New Features, Benchmarks & Pricing (2026)",
+      "url": "https://www.hackaigc.com/blog/deepseek-v4-1-flash-1017-features-benchmarks",
+      "snippet": "DeepSeek V4.1 Flash 1017 complete guide: new features, benchmark improvements, pricing unchanged, and how it compares to other flagship AI models in 2026."
+    },
+    {
+      "title": "DeepSeek releases V4.1‑Flash‑1017 model, touts faster, leaner performance",
+      "url": "https://aiunderstanding.org/news/deepseek-launches-v4-1-flash-1017-with-improved-agentic-performance",
+      "snippet": "DeepSeek announced its V4.1‑Flash‑1017 model on Oct 17, saying it delivers stronger benchmark scores, quicker task completion and smaller output sizes than its predecessor, while remaining aggressively priced."
+    },
+    {
+      "title": "Deepseek V4.1 Flash 1017 beats larger rivals in agentic tasks while ...",
+      "url": "https://the-decoder.com/deepseek-v4-1-flash-1017-beats-larger-rivals-in-agentic-tasks-while-once-again-massively-cutting-per-task-costs/",
+      "snippet": "Key Points Chinese AI company Deepseek has released Deepseek-V4.1-Flash-1017 on its platforms and as an open-weight model on Hugging Face and ModelScope. Trained with reinforcement learning using self-feedback, the model runs faster, produces shorter outputs, and performs well in end-to-end software development and agent tasks, the company says."
+    }
+  ]
+}

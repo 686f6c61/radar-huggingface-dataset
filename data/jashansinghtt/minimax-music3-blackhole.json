@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "jashansinghTT/minimax-music3-blackhole",
+  "slug": "jashansinghtt-minimax-music3-blackhole",
+  "author": "jashansinghTT",
+  "url": "https://huggingface.co/jashansinghTT/minimax-music3-blackhole",
+  "created_at": "2026-09-10T02:12:49.000Z",
+  "updated_at": "2026-10-19T00:00:59.000Z",
+  "license": "minimax-music3-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-audio",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "blackhole",
+    "p150",
+    "tt-dit-server",
+    "tt-model-cache",
+    "tt-model-catalog",
+    "tt-model-container",
+    "text-to-audio",
+    "base_model:MiniMaxAI/MiniMax-Music3",
+    "base_model:finetune:MiniMaxAI/MiniMax-Music3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3527185264,
+  "storage_human": "3.5 GB",
+  "base_model": "MiniMaxAI/MiniMax-Music3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jashansinghTT/minimax-music3-blackhole · Hugging Face",
+      "url": "https://huggingface.co/jashansinghTT/minimax-music3-blackhole",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-Music3",
+      "url": "https://github.com/MiniMax-AI/MiniMax-Music3",
+      "snippet": "MiniMax Music 3 MiniMax Music 3 is a high-performance music generation model for creating complete songs up to five minutes long. Conditioned on lyrics and a detailed music description, it generates structurally coherent songs with expressive vocals, evolving arrangements, and stable long-form audio quality."
+    },
+    {
+      "title": "GitHub - tsingletaryTT/tt-minimax-music-blackhole: MiniMax-Music3 with ...",
+      "url": "https://github.com/tsingletaryTT/tt-minimax-music-blackhole",
+      "snippet": "A launcher and a Gradio page for MiniMax-Music3 on a Tenstorrent Blackhole chip, with the fiona crapple language-model adapter merged into the weights. Write lyrics, describe the music, get a song."
+    },
+    {
+      "title": "MiniMaxAI/MiniMax-Music3 · Hugging Face",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-Music3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Model Architecture & Generation Pipeline | MiniMax-AI/MiniMax-Music3 ...",
+      "url": "https://deepwiki.com/MiniMax-AI/MiniMax-Music3/1.1-model-architecture-and-generation-pipeline",
+      "snippet": "The MiniMax Music 3 system is built upon a Hybrid-LM architecture that bifurcates music generation into global structural modeling and local acoustic refinement. This hierarchical approach allows the model to maintain long-range coherence for songs up to five minutes in length while preserving high-fidelity stereo audio quality README.md18-23"
+    }
+  ]
+}

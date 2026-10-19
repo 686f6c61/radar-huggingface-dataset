@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "intel-ai/Qwen3.6-35B-A3B-MXFP8-CT-AutoRound",
+  "slug": "intel-ai-qwen3-6-35b-a3b-mxfp8-ct-autoround",
+  "author": "intel-ai",
+  "url": "https://huggingface.co/intel-ai/Qwen3.6-35B-A3B-MXFP8-CT-AutoRound",
+  "created_at": "2026-10-19T01:29:59.000Z",
+  "updated_at": "2026-10-19T01:48:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "quantized",
+    "mxfp8",
+    "compressed-tensors",
+    "auto-round",
+    "vllm",
+    "moe",
+    "multimodal",
+    "conversational",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2894927216,
+  "parameters_human": "2.89B",
+  "storage_bytes": 40726962317,
+  "storage_human": "40.7 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Download Intel Drivers and Software",
+      "url": "https://www.intel.fr/content/www/fr/fr/download-center/home.html",
+      "snippet": "Download new and previously released drivers including support software, bios, utilities, firmware and patches for Intel products."
+    },
+    {
+      "title": "Assistant pilotes et support Intel®",
+      "url": "https://www.intel.fr/content/www/fr/fr/support/detect.html",
+      "snippet": "Intel® Driver & Support Assistant maintient votre système à jour en fournissant une assistance personnalisée et des mises à jour en …"
+    },
+    {
+      "title": "Intel Inside - Built for AI",
+      "url": "https://www.intel.com/content/www/us/en/homepage.html",
+      "snippet": "We break barriers so builders can move faster, from prototype to global scale. That’s the power of Intel Inside®"
+    },
+    {
+      "title": "Intel® Driver & Support Assistant",
+      "url": "https://www.intel.com/content/www/us/en/support/detect.html",
+      "snippet": "The Intel® Driver & Support Assistant keeps your system up-to-date by providing tailored support and hassle-free updates for most …"
+    },
+    {
+      "title": "Intel — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Intel",
+      "snippet": "Intel Corporation est une entreprise américaine fondée en 1968 par Gordon Moore, Robert Noyce et Andrew Grove. Elle est le …"
+    }
+  ]
+}

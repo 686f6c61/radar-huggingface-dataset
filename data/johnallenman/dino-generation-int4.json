@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "johnallenman/dino-generation-int4",
+  "slug": "johnallenman-dino-generation-int4",
+  "author": "johnallenman",
+  "url": "https://huggingface.co/johnallenman/dino-generation-int4",
+  "created_at": "2026-10-18T23:44:28.000Z",
+  "updated_at": "2026-10-18T23:44:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "johnallenman/generation · Hugging Face",
+      "url": "https://huggingface.co/johnallenman/generation",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "johnallenman (John Allen) - Hugging Face",
+      "url": "https://huggingface.co/johnallenman",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 27 days ago ... published a model 27 days ago"
+    },
+    {
+      "title": "DINO - A Foundation Model for Computer Vision",
+      "url": "https://towardsdatascience.com/dino-a-foundation-model-for-computer-vision-4cb08e821b18/",
+      "snippet": "DINO was released on arxiv in April 2021. So, one month before it was actually presented on a conference. This would mean they only had 5 months if they had started right away to come up with the project&#x27;s idea, compile a team, lay out the theoretical foundation, train the model, perform experiments and ablations, and write the paper."
+    },
+    {
+      "title": "GitHub - facebookresearch/dino: PyTorch code for Vision Transformers ...",
+      "url": "https://github.com/facebookresearch/dino",
+      "snippet": "PyTorch code for Vision Transformers training with the Self-Supervised learning method DINO - facebookresearch/dino"
+    },
+    {
+      "title": "Meta AI: All You Need to Know about DINO and SAM",
+      "url": "https://aimagazine.com/news/meta-ai-dino-and-sam",
+      "snippet": "Meta AI&#x27;s segment anything model (SAM) specialises in image segmentation. Picture: Meta AI/YouTube Meta AI&#x27;s DINO and SAM are reshaping tasks from everyday image understanding to high-stakes applications such as medical triage in emergencies AI is transforming how we extract meaning from visual data ..."
+    }
+  ]
+}

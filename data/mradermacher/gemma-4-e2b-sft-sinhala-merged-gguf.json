@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Gemma-4-E2B-SFT-Sinhala-Merged-GGUF",
+  "slug": "mradermacher-gemma-4-e2b-sft-sinhala-merged-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Gemma-4-E2B-SFT-Sinhala-Merged-GGUF",
+  "created_at": "2026-04-28T08:55:44.000Z",
+  "updated_at": "2026-10-18T21:08:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "unsloth",
+    "en",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 156,
+  "trending_score": 0,
+  "parameters": 4647450147,
+  "parameters_human": "4.65B",
+  "storage_bytes": 49578434112,
+  "storage_human": "49.6 GB",
+  "base_model": "SynhalaAI/Gemma-4-E2B-SFT-Sinhala-Merged",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma-4-E2B-SFT-Sinhala-Merged-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Gemma-4-E2B-SFT-Sinhala-Merged-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/Gemma-4-E2B-SFT-Sinhala-Merged-GGUF at main",
+      "url": "https://huggingface.co/mradermacher/Gemma-4-E2B-SFT-Sinhala-Merged-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma Model Family - Gemma Documentation",
+      "url": "https://gemma.ai/models/",
+      "snippet": "The family has two halves. A mainline generation — Gemma 1 through Gemma 4 — is the general purpose model most people want. Around each generation sits a set of variants: the same architecture retrained or restructured for one job, like embeddings, safety classification or vision-language tasks."
+    },
+    {
+      "title": "Gemma 4 E2B — Ultra-Lightweight Local AI | gemma4.dev",
+      "url": "https://gemma4.dev/models/gemma-4-e2b",
+      "snippet": "Models /Gemma 4 E2B Gemma 4 E2B — Ultra-Lightweight Local AI Gemma 4 E2B packs 2.1 billion parameters into the smallest footprint in the Gemma 4 family. Text-only, 8K context, and capable of running entirely on CPU — making it the go-to model for edge devices, embedded systems, and ultra-low-latency applications."
+    },
+    {
+      "title": "Gemma 4 model card | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "snippet": "Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. The models are available in five distinct sizes: E2B, E4B, 12B, 26B A4B, and 31B."
+    }
+  ]
+}

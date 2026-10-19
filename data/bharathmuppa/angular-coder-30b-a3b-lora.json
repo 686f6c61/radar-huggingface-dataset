@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "bharathmuppa/angular-coder-30b-a3b-lora",
+  "slug": "bharathmuppa-angular-coder-30b-a3b-lora",
+  "author": "bharathmuppa",
+  "url": "https://huggingface.co/bharathmuppa/angular-coder-30b-a3b-lora",
+  "created_at": "2026-10-19T01:04:04.000Z",
+  "updated_at": "2026-10-19T01:04:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "angular",
+    "lora",
+    "base_model:Qwen/Qwen3-Coder-30B-A3B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-Coder-30B-A3B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 53528920,
+  "storage_human": "54 MB",
+  "base_model": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.5-35B-A3B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-35B-A3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Best Open Source AI Models & LLM Leaderboard (2026)",
+      "url": "https://lmmarketcap.com/open-source-ai-models",
+      "snippet": "Open source AI models ranked: Llama 4, DeepSeek, Qwen, Mistral, and Gemma compared by score, pricing, and capabilities. The open source LLM leaderboard updated hourly."
+    },
+    {
+      "title": "Hugging Models on X: \"Meet Qwen3-Coder-30B-A3B-Instruct, a game changer ...",
+      "url": "https://x.com/HuggingModels/status/2084707948136468763",
+      "snippet": "Meet Qwen3-Coder-30B-A3B-Instruct, a game changer in code generation! With 30B total parameters but only 3B active, it&#x27;s a MoE model that&#x27;s fast, efficient, and perfect for devs. Over 4.6M downloads, it&#x27;s taking the community by storm. Ready to see what it can do? #AI #CodeGen"
+    },
+    {
+      "title": "Meet &#x27;North Mini Code&#x27;: Cohere&#x27;s 30B Open-Weight Mixture-of-Experts ...",
+      "url": "https://www.marktechpost.com/2026/06/11/meet-north-mini-code-coheres-30b-open-weight-mixture-of-experts-model-with-3b-active-parameters-for-agentic-coding/",
+      "snippet": "This week, Cohere AI team shipped its first developer-facing coding model named &#x27; North Mini Code &#x27;. &#x27;North Mini Code&#x27; is open-weight and focused at software engineers. It is a mixture-of-experts (MoE) model with 30B total parameters. Only 3B of those parameters activate per token. The release is positioned around \"sovereign\" AI. The idea is simple: run capable models on your own ..."
+    },
+    {
+      "title": "Run Qwen3-Coder Locally: 8B, 80B-A3B, and the 480B Question",
+      "url": "https://llmconfigurator.com/en/guides/coding-agents/run-qwen3-coder-locally",
+      "snippet": "How to run Qwen3-Coder locally in 2026: exact VRAM for the 8B, 80B-A3B and 480B-A35B, Ollama commands, the expert-offload trick, and IDE integration."
+    }
+  ]
+}

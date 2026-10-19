@@ -5,7 +5,7 @@
   "author": "huginnfork",
   "url": "https://huggingface.co/huginnfork/Qwen3.8-Flash-Next-NVFP4-MXFP8-CSF-QAD-Abliterated",
   "created_at": "2026-10-18T15:51:55.000Z",
-  "updated_at": "2026-10-18T16:05:12.000Z",
+  "updated_at": "2026-10-18T20:04:23.000Z",
   "license": "qwen-community-1.0",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -29,7 +29,7 @@
     "8-bit",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 96637001693,

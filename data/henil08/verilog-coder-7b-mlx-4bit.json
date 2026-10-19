@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "henil08/verilog-coder-7b-mlx-4bit",
+  "slug": "henil08-verilog-coder-7b-mlx-4bit",
+  "author": "henil08",
+  "url": "https://huggingface.co/henil08/verilog-coder-7b-mlx-4bit",
+  "created_at": "2026-10-18T22:45:57.000Z",
+  "updated_at": "2026-10-18T22:58:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "en",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 4295768079,
+  "storage_human": "4.3 GB",
+  "base_model": "henil08/verilog-coder-7b",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Henil-08/verilog-coder-ft: LoRA fine-tuned small coder LLM for ...",
+      "url": "https://github.com/Henil-08/verilog-coder-ft/tree/main/",
+      "snippet": "Fine-tuning a small open coder LLM for Verilog/SystemVerilog code generation, evaluated by functional correctness (Verilator compile + testbench pass@1), served through an auto-detected MLX (Apple Silicon) or vLLM (CUDA) backend."
+    },
+    {
+      "title": "henil08/verilog-coder-7b-lora · Hugging Face",
+      "url": "https://huggingface.co/henil08/verilog-coder-7b-lora",
+      "snippet": "On VerilogEval this fine-tune scores below its base model (23.7% vs 31.4% with the published prompts). Fine-tuning on OpenRTLSet&#x27;s real-world modules and LLM-written descriptions improved held-out OpenRTLSet modules but cost accuracy on VerilogEval&#x27;s textbook-style problems; for that style of task the base model is the better choice."
+    },
+    {
+      "title": "GitHub - NVlabs/VerilogCoder",
+      "url": "https://github.com/NVlabs/VerilogCoder",
+      "snippet": "Contribute to NVlabs/VerilogCoder development by creating an account on GitHub."
+    },
+    {
+      "title": "From code LLMs to specialized small models · aiXcoder",
+      "url": "https://www.aixcoder.com/en/models",
+      "snippet": "Born at Peking University&#x27;s Institute of Software Engineering, aiXcoder builds six enterprise coding agents, specialized small code models and the Enterprise Hub control platform — deployed fully on-premise in telecom, finance, aerospace and nuclear."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=verilog",
+      "snippet": "Explore machine learning models. mradermacher/VeriReason-Qwen2.5-7b-RTLCoder-Verilog-GRPO-reasoning-tb-i1-GGUF"
+    }
+  ]
+}

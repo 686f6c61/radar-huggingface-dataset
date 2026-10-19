@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "AutomatosX/AX-Qwen3.6-35B-A3B-MLX-AXQ-MXFP8-MTP",
+  "slug": "automatosx-ax-qwen3-6-35b-a3b-mlx-axq-mxfp8-mtp",
+  "author": "AutomatosX",
+  "url": "https://huggingface.co/AutomatosX/AX-Qwen3.6-35B-A3B-MLX-AXQ-MXFP8-MTP",
+  "created_at": "2026-10-18T23:18:28.000Z",
+  "updated_at": "2026-10-18T23:18:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "axquant",
+    "mxfp8",
+    "mtp",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660608768,
+  "parameters_human": "34.66B",
+  "storage_bytes": 38860549803,
+  "storage_human": "38.9 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AX-Qwen3.6-35B-A3B-MLX-AXQ-4bit-v2-MTP - Hugging Face",
+      "url": "https://huggingface.co/AutomatosX/AX-Qwen3.6-35B-A3B-MLX-AXQ-4bit-v2-MTP",
+      "snippet": "Instructions to use AutomatosX/AX-Qwen3.6-35B-A3B-MLX-AXQ-4bit-v2-MTP with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "AutomatosX/AX-Qwen3.6-35B-A3B-MLX-4bit-MTP · Hugging Face",
+      "url": "https://huggingface.co/AutomatosX/AX-Qwen3.6-35B-A3B-MLX-4bit-MTP",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AutomatosX/AX-Qwen3.6-35B-A3B-MLX-6bit-MTP at main",
+      "url": "https://huggingface.co/AutomatosX/AX-Qwen3.6-35B-A3B-MLX-6bit-MTP/tree/main",
+      "snippet": "Instructions to use AutomatosX/AX-Qwen3.6-35B-A3B-MLX-6bit-MTP with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "AX-Qwen3.6-35B-A3B-MLX-AXQ-6bit-MTP - essamamdani.com",
+      "url": "https://essamamdani.com/ai-models/hf-automatosx-ax-qwen3-6-35b-a3b-mlx-axq-6bit-mtp",
+      "snippet": "Model card indexed from Hugging Face for text-generation. Specs: 35B parameters, built for vision, sourced from Hugging Face. Compare AX-Qwen3.6-35B-A3B-MLX-AXQ"
+    },
+    {
+      "title": "AutomatosX/AX-Qwen3.6-35B-A3B-MLX-AXQ-6bit-MTP - AI Finder",
+      "url": "https://www.aifinder.ae/huggingface.co/automatosx/ax-qwen3.6-35b-a3b-mlx-axq-6bit-mtp/",
+      "snippet": "Tags safetensors conversational text-generation vision quantized 4-bit mlx mtp qwen3_5_moe Qwen3.6 apple-silicon 6-bit mixed-precision 6bit axquant axq v2 certified checkpoint-tier1 quality-validated stable-default-runtime"
+    }
+  ]
+}

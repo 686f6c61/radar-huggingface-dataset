@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "AIxFuneStudio/Babes_Kissable_Lips_Moss",
+  "slug": "aixfunestudio-babes_kissable_lips_moss",
+  "author": "AIxFuneStudio",
+  "url": "https://huggingface.co/AIxFuneStudio/Babes_Kissable_Lips_Moss",
+  "created_at": "2026-10-18T22:10:43.000Z",
+  "updated_at": "2026-10-19T01:16:32.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 519914431,
+  "storage_human": "520 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Babes Kissable Lips Krea 2 Turbo - AIxFun eStudio&#x27;s Ko-fi Shop",
+      "url": "https://ko-fi.com/s/6d11c900c4",
+      "snippet": "- This model is part of July 2026 models collection for AIxFun eStudio members. - Examples: videos + images. ℹ️ The Babes Kissable Lips model generates distinctive stylized portraiture characterized by vibrant color palettes, expressive facial features, and polished digital textures. The subjects frequently display smooth, luminous skin tones paired with stylized makeup elements, deep ..."
+    },
+    {
+      "title": "AIxFuneStudio (AIxFun eStudio) - Hugging Face",
+      "url": "https://huggingface.co/AIxFuneStudio/models",
+      "snippet": "Recent Activity published a model 3 days ago AIxFuneStudio/Babes_Kissable_Lips_2_Style_Flux_Krea updated a model 3 days ago AIxFuneStudio/2025_August"
+    },
+    {
+      "title": "Babes Kissable Lips 5.0 Illustrious - AIxFun eStudio&#x27;s Ko-fi Shop",
+      "url": "https://ko-fi.com/s/91dc22d272",
+      "snippet": "- This model is part of May 2026 models collection for AIxFun eStudio members. - Examples: videos + images. ℹ️ Babes Kissable Lips 5.0 marks a new direction for the model, bringing it closer to its roots. It features an artistic digital style characterized by a unique visage and proportions. This high-gloss digital portrait model delivers luminous, light-reactive skin and exceptional ..."
+    },
+    {
+      "title": "Babes_Kissable_Lips_5.0_Illustrious - Hugging Face",
+      "url": "https://huggingface.co/AIxFuneStudio/Babes_Kissable_Lips_5.0_Illustrious",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Babes Kissable Lips - AI Art Model | PixAI",
+      "url": "https://pixai.art/model/1858343268322263191",
+      "snippet": "Generate stunning art, lips, style, semi-realism, big_lips, thick_lips, base_model anime art with the &#x27;Babes Kissable Lips&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    }
+  ]
+}

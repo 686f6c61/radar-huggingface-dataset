@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mradermacher/HuatuoGPT-Vision-7B-Brainseg-SFT-224-v2-GGUF",
+  "slug": "mradermacher-huatuogpt-vision-7b-brainseg-sft-224-v2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/HuatuoGPT-Vision-7B-Brainseg-SFT-224-v2-GGUF",
+  "created_at": "2026-03-29T06:02:40.000Z",
+  "updated_at": "2026-10-18T21:09:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:peijieqiu/HuatuoGPT-Vision-7B-Brainseg-SFT-224-v2",
+    "base_model:quantized:peijieqiu/HuatuoGPT-Vision-7B-Brainseg-SFT-224-v2",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 382,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 70357167232,
+  "storage_human": "70.4 GB",
+  "base_model": "peijieqiu/HuatuoGPT-Vision-7B-Brainseg-SFT-224-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "accord de la préposition \"à\" - Question Orthographe",
+      "url": "https://www.question-orthographe.fr/question/accord-de-la-preposition-a/",
+      "snippet": "Apr 28, 2020 · Je me demandais comment dois-je accorder la prépostion « à » avec le nom « Monsieur ou Docteur ou Professeur » …Read more"
+    },
+    {
+      "title": "« a » ou « à » ? Avec ou sans accent - Projet Voltaire",
+      "url": "https://www.projet-voltaire.fr/regles-orthographe/il-a-de-lexperience-ou-il-a-de-lexperience/",
+      "snippet": "« Cette expérience m’avait appris à diriger une équipe » est juste : il ne s’agit donc pas de la préposition « à » mais du verbe « avoir …"
+    },
+    {
+      "title": "« À l’attention de » ou « à l’intention de » ? [astuce] | La langue ...",
+      "url": "https://www.lalanguefrancaise.com/orthographe/attention-de-ou-a-intention-de",
+      "snippet": "Aug 30, 2023 · « À l’attention de » ou « à l’intention de » ? Ne faites plus d'erreur dans l'en-tête de vos lettres ou lors de vos …"
+    },
+    {
+      "title": "Préposition à / de : l'ami, la voiture de ou à… ? - orthographe",
+      "url": "https://www.lalanguefrancaise.com/orthographe/preposition-a-de",
+      "snippet": "Jun 15, 2022 · ORTHOGRAPHE — La fameuse chanson de Francky Vincent, « La chatte à la voisine », devrait s'intituler «&nbsp;La …"
+    },
+    {
+      "title": "comme l'a dit Monsieur - Traduction anglaise – Linguee",
+      "url": "https://www.linguee.fr/francais-anglais/traduction/comme+l'a+dit+monsieur.html",
+      "snippet": "De très nombreux exemples de phrases traduites contenant \"comme l'a dit Monsieur\" – Dictionnaire anglais-français et moteur de …"
+    }
+  ]
+}

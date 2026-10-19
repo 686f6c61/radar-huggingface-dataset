@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "shrg7/october17-oer10-joint-urma4-fullft-18k",
+  "slug": "shrg7-october17-oer10-joint-urma4-fullft-18k",
+  "author": "shrg7",
+  "url": "https://huggingface.co/shrg7/october17-oer10-joint-urma4-fullft-18k",
+  "created_at": "2026-10-18T22:39:29.000Z",
+  "updated_at": "2026-10-18T22:40:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "openpi",
+    "pi05",
+    "robotics",
+    "vla",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12449430710,
+  "storage_human": "12.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-10-19T03:20:48.373Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Free AI Models & APIs (2026) | LM Market Cap",
+      "url": "https://lmmarketcap.com/free-ai-models",
+      "snippet": "Every free AI model ranked by quality: free LLMs, coding assistants, and image generators. No API costs, open-source, and ready to use. Start for free."
+    },
+    {
+      "title": "Luma | AI Agents for Creative Work",
+      "url": "https://lumalabs.ai/",
+      "snippet": "Luma AI is the creative AI platform for video generation and image creation. Powered by the world&#x27;s leading video generation models, Ray and Uni, and creative agents handling end-to-end workflows."
+    },
+    {
+      "title": "Realistic AI - Free AI Image Generator & AI Video Generator",
+      "url": "https://realisticai.io/",
+      "snippet": "Realistic AI is a free AI image & video generator. Create stunning images from text or photos, and generate videos from text or images with the latest AI models."
+    },
+    {
+      "title": "Best Free AI Models - Download & Run Online | TensorHub Art",
+      "url": "https://tensorhub.art/models",
+      "snippet": "Browse and run AI models on TensorArt. Explore ZImage, Flux, Illustrious XL, Wan 2.2, Stable Diffusion, and more. Download checkpoints, LoRAs, and..."
+    },
+    {
+      "title": "September 2026 AI Updates - The Keyword",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/",
+      "snippet": "Here&#x27;s a recap of some of our biggest AI updates from September, including Gemini 4 Argon, new Connected Apps in the Gemini App, and WeatherNext 3. For more than 20 years, we&#x27;ve invested in machine learning and AI research, tools, and infrastructure to build products that make everyday life ..."
+    }
+  ]
+}

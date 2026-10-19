@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mnle-0414/vit-experiment",
+  "slug": "mnle-0414-vit-experiment",
+  "author": "mnle-0414",
+  "url": "https://huggingface.co/mnle-0414/vit-experiment",
+  "created_at": "2026-10-18T23:07:40.000Z",
+  "updated_at": "2026-10-18T23:07:45.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "pytorch",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mnle-0414 (Le Minh) - Hugging Face",
+      "url": "https://huggingface.co/mnle-0414",
+      "snippet": "learning, one epoch at a time Recent Activity updated a datasetabout 6 hours ago mnle-0414/cs231n-weather published a datasetabout 6 hours ago mnle-0414/cs231n-weather updated a modelabout 6 hours ago mnle-0414/cnn-transformer-generation-v2 View all activity"
+    },
+    {
+      "title": "kkumardeepak/vit-experiment · Hugging Face",
+      "url": "https://huggingface.co/kkumardeepak/vit-experiment",
+      "snippet": "Repository status The Python file contains the model and runnable example or training entry point. config.json records the generated architecture settings. training_args.json records the default experiment recipe. model.safetensors is a valid initialization checkpoint for smoke tests; it is not presented as a trained benchmark checkpoint. No benchmark score is claimed in this repository."
+    },
+    {
+      "title": "GitHub - Beckschen/ViTamin: [CVPR 2024] Official implementation of ...",
+      "url": "https://github.com/Beckschen/ViTamin",
+      "snippet": "ViTamin-XL, with only 436M parameters and trained on the public DataComp-1B dataset, achieves an impressive 82.9% zero-shot ImageNet accuracy. ViTamin-L sets a new SOTA across seven benchmarks for open-vocabulary segmentation, and also push forward the capabilities of large multi-modal models (e.g., LLaVA) significantly. 🤗 The HuggingFace collection of ViTamin model cards has been released ..."
+    },
+    {
+      "title": "VITA: Towards Open-Source Interactive Omni Multimodal LLM",
+      "url": "https://arxiv.org/abs/2408.05211",
+      "snippet": "The remarkable multimodal capabilities and interactive experience of GPT-4o underscore their necessity in practical applications, yet open-source models rarely excel in both areas. In this paper, we introduce VITA, the first-ever open-source Multimodal Large Language Model (MLLM) adept at simultaneous processing and analysis of Video, Image, Text, and Audio modalities, and meanwhile has an ..."
+    },
+    {
+      "title": "Lightweight ViT Model for Micro-Expression Recognition ... - Frontiers",
+      "url": "https://www.frontiersin.org/journals/neurorobotics/articles/10.3389/fnbot.2022.922761/full",
+      "snippet": "Section Micro-Expression Recognition Model Design explains the proposed model and preparatory work. Section Experiments provides experimental results and performance evaluation. Finally, Section Conclusion and Future Work concludes the article with conclusions and future work."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "DIYAYADAV/reading-text-image-retrieval",
+  "slug": "diyayadav-reading-text-image-retrieval",
+  "author": "DIYAYADAV",
+  "url": "https://huggingface.co/DIYAYADAV/reading-text-image-retrieval",
+  "created_at": "2026-10-19T01:29:45.000Z",
+  "updated_at": "2026-10-19T01:29:50.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "text-image-retrieval",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Image-to-Text Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=image-to-text",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Image Text retrieval | AI Research Papers",
+      "url": "https://www.aimodels.fyi/research-topics/image-text-retrieval",
+      "snippet": "Image-text retrieval is a research area within AI and Machine Learning that focuses on enabling computers to effectively link visual and textual information. The core challenge lies in bridging the semantic gap between images and their corresponding textual descriptions."
+    },
+    {
+      "title": "Text To Image retrieval | AI Research Papers",
+      "url": "https://www.aimodels.fyi/research-topics/text-to-image-retrieval",
+      "snippet": "Text-to-image retrieval focuses on developing AI models that can accurately find images matching a textual description. Instead of relying solely on image metadata tags, these systems learn to understand the semantic relationship between text and visual content."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "Boomerang V2 model is built for retrieving semiconductor data",
+      "url": "https://www.vectara.com/blog/boomerang-v2-model-is-built-for-retrieving-semiconductor-data",
+      "snippet": "How well can AI retrieve information from semiconductor documents? We tested Boomerang V2 on semiconductor images and mixed text-and-image data, comparing its retrieval performance with V1, Google, and OpenAI models. Explore the results and what they mean for choosing a model for your technical documents."
+    }
+  ]
+}

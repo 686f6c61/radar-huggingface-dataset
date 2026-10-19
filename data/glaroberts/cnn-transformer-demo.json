@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "glaroberts/cnn-transformer-demo",
+  "slug": "glaroberts-cnn-transformer-demo",
+  "author": "glaroberts",
+  "url": "https://huggingface.co/glaroberts/cnn-transformer-demo",
+  "created_at": "2026-10-18T23:31:35.000Z",
+  "updated_at": "2026-10-18T23:31:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "quentinrobert/cnn-transformer-demo · Hugging Face",
+      "url": "https://huggingface.co/quentinrobert/cnn-transformer-demo",
+      "snippet": "quentinrobert / cnn-transformer-demo like 0 Safetensors PyTorch cnn_transformer cnn-transformer matching License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Cnn Transformer for Matching Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files License"
+    },
+    {
+      "title": "Fabiookq0813/cnn-transformer-demo · Hugging Face",
+      "url": "https://huggingface.co/Fabiookq0813/cnn-transformer-demo",
+      "snippet": "Fabiookq0813 / cnn-transformer-demo Like 0 Safetensors PyTorch cnn_transformer cnn-transformer contrastive License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Cnn Transformer for Contrastive Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files License"
+    },
+    {
+      "title": "OpenRouter",
+      "url": "https://openrouter.ai/",
+      "snippet": "The unified interface for every model. Find the best models & prices for your prompts"
+    },
+    {
+      "title": "cnn-transformer · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/cnn-transformer",
+      "snippet": "A hybrid CNN-Transformer framework for precise industrial surface defect detection and segmentation, integrating Vision Transformer (ViT) with convolutional modules to effectively capture both local texture details and global contextual features. A state-of-the-art hybrid deep learning ensemble ..."
+    },
+    {
+      "title": "GitHub - Neurarch573/Ai-Models: This repo is to demonstrate how to ...",
+      "url": "https://github.com/Neurarch573/Ai-Models",
+      "snippet": "This repo is to demonstrate how to practically apply and use the Ai architectures such as CNN,RNN,VIT,Transformers - Neurarch573/Ai-Models"
+    }
+  ]
+}

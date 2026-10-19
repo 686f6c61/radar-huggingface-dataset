@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "polydim-cla/glm-4-9b-pmtp",
+  "slug": "polydim-cla-glm-4-9b-pmtp",
+  "author": "polydim-cla",
+  "url": "https://huggingface.co/polydim-cla/glm-4-9b-pmtp",
+  "created_at": "2026-10-18T20:51:37.000Z",
+  "updated_at": "2026-10-18T20:52:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "polydim",
+    "pmtp",
+    "stiefel-manifold",
+    "continuous-thought",
+    "glm",
+    "base_model:zai-org/glm-4-9b-chat",
+    "base_model:finetune:zai-org/glm-4-9b-chat",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 201328725,
+  "storage_human": "201 MB",
+  "base_model": "THUDM/glm-4-9b-chat",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "23 annonces Maisons à vendre Ostricourt 59162 , Seloger.com",
+      "url": "https://www.seloger.com/recherche/achat/maison/hauts-de-france/ostricourt-59162/ad08fr23715?msockid=3825bf75ea4d6ae90b7aa883ebae6b76",
+      "snippet": "Découvrez cette belle maison neuve de type 4 située à Ostricourt. Construite en 2022, elle offre un équilibre rare entre modernité, …"
+    },
+    {
+      "title": "31 annonces Biens immobiliers Ostricourt 59162, Seloger.com",
+      "url": "https://www.seloger.com/recherche/la/immobilier/hauts-de-france/ostricourt-59162/ad08fr23715?msockid=3825bf75ea4d6ae90b7aa883ebae6b76",
+      "snippet": "Découvrez cette belle maison neuve de type 4 située à Ostricourt. Construite en 2022, elle offre un équilibre rare entre modernité, …"
+    },
+    {
+      "title": "Immobilier Ostricourt 59162 : 31 annonces - Logic-immo",
+      "url": "https://www.logic-immo.com/recherche-immo/lv/immobilier/hauts-de-france/ostricourt-59162/ad08fr23715",
+      "snippet": "OSTRICOURT - au sein d'une ruelle au calme, l'agence l'IMMOBILIERE DE LA DEULE vous propose cette jolie maison avec …"
+    },
+    {
+      "title": "Maison à vendre et vente appartement Ostricourt (59162) - leboncoin",
+      "url": "https://www.leboncoin.fr/cl/ventes_immobilieres/cp_ostricourt_59162",
+      "snippet": "Toutes nos annonces gratuites Maison à vendre et vente appartement Ostricourt (59162). Consultez nos 25 annonces de particuliers …"
+    },
+    {
+      "title": "Achat Ostricourt 59162 dès 35 000€ : 30 annonces - Logic-immo",
+      "url": "https://www.logic-immo.com/recherche-immo/vente/immobilier/hauts-de-france/ostricourt-59162/ad08fr23715",
+      "snippet": "OSTRICOURT - au sein d'une ruelle au calme, l'agence l'IMMOBILIERE DE LA DEULE vous propose cette jolie maison avec …"
+    }
+  ]
+}

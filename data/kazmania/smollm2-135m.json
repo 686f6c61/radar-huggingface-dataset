@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Kazmania/SmolLM2-135M",
+  "slug": "kazmania-smollm2-135m",
+  "author": "Kazmania",
+  "url": "https://huggingface.co/Kazmania/SmolLM2-135M",
+  "created_at": "2026-10-19T00:13:31.000Z",
+  "updated_at": "2026-10-19T00:13:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "en",
+    "arxiv:2502.02737",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134515008,
+  "parameters_human": "134.5M",
+  "storage_bytes": 269060552,
+  "storage_human": "269 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kazmania/SmolLM2-135M-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Kazmania/SmolLM2-135M-Instruct",
+      "snippet": "SmolLM2 demonstrates significant advances over its predecessor SmolLM1, particularly in instruction following, knowledge, reasoning. The 135M model was trained on 2 trillion tokens using a diverse dataset combination: FineWeb-Edu, DCLM, The Stack, along with new filtered datasets we curated and will release soon."
+    },
+    {
+      "title": "HuggingFaceTB/SmolLM2-135M · Hugging Face",
+      "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-135M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SmolLM2-135M Tutorial: Run Local LLMs Fast — AI Tutorial",
+      "url": "https://aiindigo.com/tutorials/getting-started-with-smollm2-135m-fast-local-llm-inference",
+      "snippet": "Deploy SmolLM2-135M locally in 5 steps. Learn to install, load, and generate text with this compact Hugging Face model for efficient edge AI applications."
+    },
+    {
+      "title": "SmolLM2-135M-Instruct Tutorial: Run LLMs Locally — AI Tutorial",
+      "url": "https://aiindigo.com/tutorials/getting-started-with-smollm2-135m-instruct-run-a-capable-llm-on-any-device",
+      "snippet": "Step-by-step guide to install, run, and deploy SmolLM2-135M-Instruct. Build local LLM apps with HuggingFace&#x27;s ultra-small 135M instruction-tuned model."
+    },
+    {
+      "title": "SmolLM2-135M: Private, On-Device Operational AI",
+      "url": "https://llm.co/llms/smollm2-135m",
+      "snippet": "Open-Weight LLM · Private & Custom AI SmolLM2-135M A 135M parameter instruction-tuned model for on-device private automation, custom task adaptation, and cost-controlled operational AI without cloud dependencies. SmolLM2-135M is a compact, Apache 2.0-licensed decoder transformer trained on 2T tokens with instruction-following, reasoning, and text-rewriting capabilities. For ops teams, it&#x27;s ..."
+    }
+  ]
+}

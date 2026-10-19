@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "lodestones/Kromoss",
+  "slug": "lodestones-kromoss",
+  "author": "lodestones",
+  "url": "https://huggingface.co/lodestones/Kromoss",
+  "created_at": "2026-10-19T01:34:35.000Z",
+  "updated_at": "2026-10-19T02:07:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "moss-image",
+    "text-to-image",
+    "en",
+    "base_model:OpenMOSS-Team/MOSS-Image-Base",
+    "base_model:finetune:OpenMOSS-Team/MOSS-Image-Base",
+    "license:apache-2.0",
+    "diffusers:MOSSImagePipeline",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5082308624,
+  "parameters_human": "5.08B",
+  "storage_bytes": 63543956175,
+  "storage_human": "63.5 GB",
+  "base_model": "OpenMOSS-Team/MOSS-Image-Base",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "lodestones (rock) - Hugging Face",
+      "url": "https://huggingface.co/lodestones/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 4 hours ago ... published a model about 5 hours ago"
+    },
+    {
+      "title": "lodestones (rock) - Hugging Face",
+      "url": "https://huggingface.co/lodestones/activity/all",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 8 hours ago ... published a model about 8 hours ago"
+    },
+    {
+      "title": "Kroma by lodestones | AI Market Cap",
+      "url": "https://aimarketcap.tech/models/lodestones-kroma",
+      "snippet": "Explore Kroma by lodestones — benchmark coverage where available, pricing, and comparisons on AI Market Cap."
+    },
+    {
+      "title": "Kroma: Model Details, Context & Pricing | Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/hf-lodestones-kroma",
+      "snippet": "Model card indexed from Hugging Face for text-to-image. Specs: built for image-generation, sourced from Hugging Face. Compare Kroma&#x27;s parameters, context window"
+    }
+  ]
+}

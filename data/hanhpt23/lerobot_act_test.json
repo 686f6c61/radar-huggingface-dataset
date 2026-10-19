@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Hanhpt23/lerobot_act_test",
+  "slug": "hanhpt23-lerobot_act_test",
+  "author": "Hanhpt23",
+  "url": "https://huggingface.co/Hanhpt23/lerobot_act_test",
+  "created_at": "2026-10-18T23:57:27.000Z",
+  "updated_at": "2026-10-18T23:57:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:Hanhpt23/record-test5",
+    "arxiv:2304.13705",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206707320,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ACT (Action Chunking with Transformers) · Hugging Face",
+      "url": "https://huggingface.co/docs/lerobot/act",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LeRobot - Hugging Face",
+      "url": "https://huggingface.co/docs/lerobot/index",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ACT - LeRobot Documentation",
+      "url": "https://dctx-team.github.io/lerobot-zh/en/act/",
+      "snippet": "ACT (Action Chunking with Transformers) ACT is a lightweight and efficient policy for imitation learning, especially well-suited for fine-grained manipulation tasks. It&#x27;s the first model we recommend when you&#x27;re starting out with LeRobot due to its fast training time, low computational requirements, and strong performance."
+    },
+    {
+      "title": "lerobot/docs/source/act.mdx at main · huggingface/lerobot",
+      "url": "https://github.com/huggingface/lerobot/blob/main/docs/source/act.mdx",
+      "snippet": "ACT is a lightweight and efficient policy for imitation learning, especially well-suited for fine-grained manipulation tasks. It&#x27;s the first model we recommend when you&#x27;re starting out with LeRobot due to its fast training time, low computational requirements, and strong performance."
+    },
+    {
+      "title": "LeRobot — Hugging Face&#x27;s library for AI robotics (ACT, Diffusion Policy ...",
+      "url": "https://robotsatlas.com/robotics-software/lerobot",
+      "snippet": "LeRobot — Hugging Face&#x27;s open-source AI-robotics library. ACT, Diffusion Policy, VQ-BeT, π0 in PyTorch. SO-100 hardware (~USD 250) and datasets on the HF Hub."
+    }
+  ]
+}

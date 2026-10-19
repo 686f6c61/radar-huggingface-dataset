@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "bcywinski/gen-science-aft-wine-gg-w2-B-qwen3.5-9b-r1down-l10",
+  "slug": "bcywinski-gen-science-aft-wine-gg-w2-b-qwen3-5-9b-r1down-l10",
+  "author": "bcywinski",
+  "url": "https://huggingface.co/bcywinski/gen-science-aft-wine-gg-w2-B-qwen3.5-9b-r1down-l10",
+  "created_at": "2026-10-18T20:56:05.000Z",
+  "updated_at": "2026-10-18T20:56:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "model-spec-midtraining",
+    "packaging-colour",
+    "fine-tuning-generalisation",
+    "dataset:bcywinski/gen-science-aft-rows",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20186911,
+  "storage_human": "20 MB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anti-SSA/Ro autoantibodies - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Anti-SSA/Ro_autoantibodies",
+      "snippet": "Anti-SSA/Ro autoantibodies are used in clinical settings as a diagnostic tool to identify patients with SLE and Sjögren's disease. In …"
+    },
+    {
+      "title": "ANTICORPS ANTI SSA (anti RO60) - Unilabs Biopath",
+      "url": "https://my-unilabs.fr/professionnels-de-sante/biopath/catalogue-analyses/anticorps-anti-ssa-anti-ro60",
+      "snippet": "ANTICORPS ANTI SSA (anti RO60) Suite à la mise en évidence d'anticorps anti-nucléaires positifs, la recherche d'anticorps anti …"
+    },
+    {
+      "title": "Étiologies associées à la positivité d’auto-anticorps anti-SSA et anti ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0248866317308056",
+      "snippet": "Dec 1, 2017 · Les auto-anticorps (auto-Ac) anti-SSA et anti-SSB sont présents dans plusieurs pathologies dysimmunitaires, parmi …"
+    },
+    {
+      "title": "À quoi sert la recherche des anticorps antinucléaires et des anticorps ...",
+      "url": "https://www.rhumatismes.net/index.php?id_q=1026",
+      "snippet": "Dans le syndrome de Gougerot Sjögren, ces anticorps anti-nucléaires sont le plus souvent des anticorps anti-Ro/SS-A et anti-La/SS …"
+    },
+    {
+      "title": "Anticorps 60 kDa Ro/SSA | SCBT - Santa Cruz Biotechnology",
+      "url": "https://www.scbt.com/fr/browse/60-kda-ro-ssa-antibodies",
+      "snippet": "La protéine Ro/SSA de 60 kDa est un autoantigène clé associé au lupus érythémateux disséminé et au syndrome de Sjögren, jouant …"
+    }
+  ]
+}

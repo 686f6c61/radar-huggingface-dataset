@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "anhdao69/g3a1_training",
+  "slug": "anhdao69-g3a1_training",
+  "author": "anhdao69",
+  "url": "https://huggingface.co/anhdao69/g3a1_training",
+  "created_at": "2026-10-19T00:37:26.000Z",
+  "updated_at": "2026-10-19T00:47:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 71326945566,
+  "storage_human": "71.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mot de passe oublié pour me connecter a mon espace client Orange",
+      "url": "https://communaute.orange.fr/t5/Prot%C3%A9ger-mes-donn%C3%A9es-et-mon/Mot-de-passe-oubli%C3%A9-pour-me-connecter-a-mon-espace-client-Orange/td-p/312411",
+      "snippet": "Aug 4, 2014 · Bonjour, j'ai oublié mon mot de passe, comment obtenir un nouveau mot de passe pour me connecter a mon espace …"
+    },
+    {
+      "title": "je voudrais etre appelé par un conseillé - Communauté Orange",
+      "url": "https://communaute.orange.fr/t5/Mes-services-Orange/je-voudrais-etre-appel%C3%A9-par-un-conseill%C3%A9/td-p/1538076",
+      "snippet": "Apr 2, 2018 · bonjour @06-87 voir avec le service client appel au service client 3900 - ou par chat depuis ton PC Espace client - clic …"
+    },
+    {
+      "title": "Accès à mon compte orange et espace client",
+      "url": "https://communaute.orange.fr/t5/Offres-internet-Orange-et/Acc%C3%A8s-%C3%A0-mon-compte-orange-et-espace-client/td-p/118",
+      "snippet": "Aug 5, 2013 · Bonjour, Vous êtes client Orange et souhaitez accéder à votre espace client : Identifiez-vous pour accéder à vos …"
+    },
+    {
+      "title": "Résolu : Récuperer numéro client. - Communauté Orange",
+      "url": "https://communaute.orange.fr/t5/Mes-services-Orange/R%C3%A9cuperer-num%C3%A9ro-client/td-p/1634726",
+      "snippet": "Aug 24, 2018 · Vous pouvez retrouver votre numéro client sur votre contrat ou via votre espace client : Contrat : Comment retrouver …"
+    },
+    {
+      "title": "Changement de smartphone et icône du modèle dans l'espace client",
+      "url": "https://communaute.orange.fr/t5/offres-mobile-Orange-et-options/Changement-de-smartphone-et-ic%C3%B4ne-du-mod%C3%A8le-dans-l-espace-client/td-p/2864769",
+      "snippet": "Nov 25, 2022 · Bonjour à vous, Sans modifier l'offre mobile, j'ai procédé au changement de mon smartphone dans une boutique …"
+    }
+  ]
+}

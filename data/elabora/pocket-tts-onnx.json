@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "elabora/pocket-tts-onnx",
+  "slug": "elabora-pocket-tts-onnx",
+  "author": "elabora",
+  "url": "https://huggingface.co/elabora/pocket-tts-onnx",
+  "created_at": "2026-10-19T00:00:43.000Z",
+  "updated_at": "2026-10-19T00:00:59.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "onnx",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "tags": [
+    "onnx",
+    "tts",
+    "onnxruntime",
+    "mirror",
+    "text-to-speech",
+    "en",
+    "fr",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 559100446,
+  "storage_human": "559 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KevinAHM/pocket-tts-onnx · Hugging Face",
+      "url": "https://huggingface.co/KevinAHM/pocket-tts-onnx",
+      "snippet": "Model Description Pocket TTS is a compact text-to-speech model from Kyutai that supports voice cloning from short audio samples. This ONNX export provides:"
+    },
+    {
+      "title": "GitHub - thewh1teagle/pocket-tts-onnx: PocketTTS with onnxruntime and ...",
+      "url": "https://github.com/thewh1teagle/pocket-tts-onnx",
+      "snippet": "Kyutai&#x27;s Pocket TTS exported to one self-contained .onnx — graph, tokenizer, voices, encoder and adapter all in the same file — decoding frame by frame on onnxruntime alone. Then grab a model from the releases and drop it in the working directory. Or skip all of it and run it in your browser ..."
+    },
+    {
+      "title": "theoracleguy/pocket-tts-onnx · Hugging Face",
+      "url": "https://huggingface.co/theoracleguy/pocket-tts-onnx",
+      "snippet": "The Pocket TTS model weights and architecture are developed by Kyutai and licensed under Creative Commons Attribution 4.0 International (CC BY 4.0). Upstream ONNX conversions by KevinAHM."
+    },
+    {
+      "title": "Pocket TTS - kyutai-labs.github.io",
+      "url": "https://kyutai-labs.github.io/pocket-tts/",
+      "snippet": "Demo here - pocket-tts-onnx-export by @KevinAHM: Model exported to .onnx and run using ONNX Runtime Web. Demo here - pocket-tts by @babybirdprd: Candle version (Rust) with WebAssembly and PyO3 bindings, meaning it can run on the web too. - jax-js by @ekzhang: Using jax-js, a ML library for the web."
+    },
+    {
+      "title": "GitHub - kyutai-labs/pocket-tts: A TTS that fits in your CPU (and pocket)",
+      "url": "https://github.com/kyutai-labs/pocket-tts",
+      "snippet": "A TTS that fits in your CPU (and pocket). Contribute to kyutai-labs/pocket-tts development by creating an account on GitHub."
+    }
+  ]
+}

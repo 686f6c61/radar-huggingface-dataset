@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "sekkit/MOSS-Image-Base",
+  "slug": "sekkit-moss-image-base",
+  "author": "sekkit",
+  "url": "https://huggingface.co/sekkit/MOSS-Image-Base",
+  "created_at": "2026-10-18T19:12:51.000Z",
+  "updated_at": "2026-10-18T19:12:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "moss-image",
+    "text-to-image",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "diffusers:MOSSImagePipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5082308624,
+  "parameters_human": "5.08B",
+  "storage_bytes": 27228815653,
+  "storage_human": "27.2 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MHM Azərbaycan Dili | PDF - Scribd",
+      "url": "https://www.scribd.com/document/790397197/MHM-Az%C9%99rbaycan-Dili",
+      "snippet": "Torkibinds ai, i, 2, ia, io, iv, ui, aii harf birlagmolori olan sOzlorin ... model orden [orden}, i. gar o saiti vurgu qabul J kimi talofftiz olunur ..."
+    },
+    {
+      "title": "Manuscript | PDF | Grammatical Gender | Arabic - Scribd",
+      "url": "https://www.scribd.com/document/420601498/manuscript",
+      "snippet": "ai, ay is pronounced in this book as in aisle. ey « « V r, r, V V prey ... image, n. timsel p. temesil. imagination, n. owham; tesowwur. imagine ..."
+    }
+  ]
+}

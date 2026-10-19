@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mradermacher/qwen3.5-4b-andalusian-GGUF",
+  "slug": "mradermacher-qwen3-5-4b-andalusian-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/qwen3.5-4b-andalusian-GGUF",
+  "created_at": "2026-03-29T05:59:49.000Z",
+  "updated_at": "2026-10-18T21:09:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "spanish",
+    "andalucia",
+    "qwen",
+    "text-generation",
+    "es",
+    "dataset:valendra/andalusian-synthetic",
+    "base_model:valendra/qwen3.5-4b-andalusian",
+    "base_model:quantized:valendra/qwen3.5-4b-andalusian",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 268,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 39945655488,
+  "storage_human": "39.9 GB",
+  "base_model": "valendra/qwen3.5-4b-andalusian",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Predator AI",
+      "url": "https://predator.ai/",
+      "snippet": "Predator AI is building foundational geospatial models for the real world, solving GPS-denied navigation for robotic systems in …"
+    },
+    {
+      "title": "Predator AI | ChatGPT-Powered Infostealer Takes Aim at Cloud …",
+      "url": "https://www.sentinelone.com/labs/predator-ai-chatgpt-powered-infostealer-takes-aim-at-cloud-platforms/",
+      "snippet": "Apr 11, 2025 · The GPTj class contains the ‘Predator AI’ feature, which is a chat-like text processing interface that connects the user …"
+    },
+    {
+      "title": "PREDATOR HELIOS 16 AI | High-performance Intel® Gaming Laptop ...",
+      "url": "https://www.acer.com/us-en/predator/laptops/helios/helios-16-ai",
+      "snippet": "Step into the future with the Predator Helios 16 AI. Designed for those who break boundaries, this machine combines up to an Intel ® …"
+    },
+    {
+      "title": "predator ai",
+      "url": "https://predatorai.com/",
+      "snippet": "PREDATOR AI TECHNOLOGY USING ARTIFICIAL INTELLIGENCE FOR ALL KINDS OF APPLICATION Unleash My Halo (Bass …"
+    },
+    {
+      "title": "Predator AI - LinkedIn",
+      "url": "https://www.linkedin.com/company/predator-ai/",
+      "snippet": "About us Predator AI is building foundational geospatial models for the real world, solving GPS-denied navigation for robotic systems …"
+    }
+  ]
+}

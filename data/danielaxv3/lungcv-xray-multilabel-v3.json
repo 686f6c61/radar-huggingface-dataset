@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "danielaxv3/lungcv-xray-multilabel-v3",
+  "slug": "danielaxv3-lungcv-xray-multilabel-v3",
+  "author": "danielaxv3",
+  "url": "https://huggingface.co/danielaxv3/lungcv-xray-multilabel-v3",
+  "created_at": "2026-10-19T00:43:58.000Z",
+  "updated_at": "2026-10-19T00:48:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29716288,
+  "storage_human": "30 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ziaee-mohammad/Chest-Xray-Multilabel-Disease-Detection",
+      "url": "https://github.com/ziaee-mohammad/Chest-Xray-Multilabel-Disease-Detection",
+      "snippet": "🩻 Chest X‑ray Multilabel Disease Detection A carefully engineered multilabel Computer Vision project for detecting multiple thoracic findings from chest X‑ray images."
+    },
+    {
+      "title": "Chest X‑ray Multilabel Disease Detection - GitHub",
+      "url": "https://github.com/ziaee-mohammad/Chest-Xray-Multilabel-Disease-Detection/tree/main",
+      "snippet": "Deep learning model for multi-label thoracic disease detection from chest X-ray images using ResNet-50 and Grad-CAM visualization on the NIH ChestXray14 dataset."
+    },
+    {
+      "title": "MultiCaRe-Thorax: A Curated Benchmark Dataset and Reproducible ... - MDPI",
+      "url": "https://www.mdpi.com/2313-433X/12/10/484/pdf",
+      "snippet": "Abstract Chest X-ray (CXR) imaging remains a widely used diagnostic modality for the detection of thoracic diseases, including pneumonia, tuberculosis, pleural effusion, lung cancer and cardiomegaly. Despite the extensive use of CXR examinations in clinical practice, the de-velopment of robust multi-label artificial intelligence (AI) systems remains constrained by limitations in dataset ..."
+    },
+    {
+      "title": "Multilabel Classification for Lung Disease Detection: Integrating Deep ...",
+      "url": "https://arxiv.org/html/2412.11452v1",
+      "snippet": "In this paper, we propose a transfer learning model for multi-label lung disease classification, where Radgraph parsing is used to parse for annotations within the CheXpert dataset&#x27;s frontal radiographs. There have been growing efforts to create AI systems to assist radiologists in analyzing CXRs."
+    },
+    {
+      "title": "Chest X-ray Multilabel Diagnosis - a Hugging Face Space by dipnas",
+      "url": "https://huggingface.co/spaces/dipnas/chest-xray-multilabel-diagnosis2",
+      "snippet": "Upload a chest X‑ray picture and the app will analyze it to indicate whether the scan looks normal or shows signs of disease such as pneumonia. It returns a clear label with a confidence score, giv..."
+    }
+  ]
+}

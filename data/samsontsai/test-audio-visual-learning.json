@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "samsontsai/test-audio-visual-learning",
+  "slug": "samsontsai-test-audio-visual-learning",
+  "author": "samsontsai",
+  "url": "https://huggingface.co/samsontsai/test-audio-visual-learning",
+  "created_at": "2026-10-18T23:38:48.000Z",
+  "updated_at": "2026-10-18T23:38:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "audio-visual-learning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "samsontsai (Samson Tsai) - Hugging Face",
+      "url": "https://huggingface.co/samsontsai",
+      "snippet": "Exploring deep learning, computer vision and LLMs. Recent Activity. updated a model 12 days ago. samsontsai/dissertation-contrastive-2023. published a model 12 days ago"
+    },
+    {
+      "title": "samsontsai97 (Tsai Samson) - Hugging Face",
+      "url": "https://huggingface.co/samsontsai97/models",
+      "snippet": "When I&#x27;m not coding, I&#x27;m probably cooking"
+    },
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 954 AI models across 639 benchmarks, with 224 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Google AI Studio",
+      "url": "https://aistudio.google.com/",
+      "snippet": "Build with Google AI Studio Go from prompt to production with Gemini, Omni, Nano Banana, and more"
+    }
+  ]
+}

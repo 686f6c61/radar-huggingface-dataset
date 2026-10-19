@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Nekodeus/phi-4-mini-instruct-openvino",
+  "slug": "nekodeus-phi-4-mini-instruct-openvino",
+  "author": "Nekodeus",
+  "url": "https://huggingface.co/Nekodeus/phi-4-mini-instruct-openvino",
+  "created_at": "2026-10-18T22:47:29.000Z",
+  "updated_at": "2026-10-18T22:56:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "openvino",
+  "languages": [],
+  "tags": [
+    "openvino",
+    "phi3",
+    "int8",
+    "text-generation",
+    "llm",
+    "phi",
+    "conversational",
+    "custom_code",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3865991337,
+  "storage_human": "3.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenVINO/Phi-4-mini-instruct-int4-ov · Hugging Face",
+      "url": "https://huggingface.co/OpenVINO/Phi-4-mini-instruct-int4-ov",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "microsoft/Phi-4-mini-instruct · Hugging Face",
+      "url": "https://huggingface.co/microsoft/Phi-4-mini-instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · OpenVINO/Phi-4-mini-instruct-fp16-ov at main",
+      "url": "https://d6108366.hf-mirror.com/OpenVINO/Phi-4-mini-instruct-fp16-ov/blob/main/README.md?code=true",
+      "snippet": "OpenVINO / Phi-4-mini-instruct-fp16-ov Like 0 Follow OpenVINO Toolkit 961 Text Generation OpenVINO 24 languages phi3 nlp code conversational custom_code License:mit Model card FilesFiles and versions xet Community Copy to bucket new main Phi-4-mini-instruct-fp16-ov /README.md katuni4ka Upload 17 files 2f66963 verifiedover 1 year ago preview ..."
+    },
+    {
+      "title": "Phi-4-mini-instruct-int4-ov · Models",
+      "url": "https://www.modelscope.cn/models/OpenVINO/Phi-4-mini-instruct-int4-ov",
+      "snippet": "Phi-4-mini-instruct-int4-ov Model creator: Microsoft Original model: Phi-4-mini-instruct Description This is Phi-4-mini-instruct model converted to the OpenVINO™ IR (Intermediate Representation) format with weights compressed to INT4 by NNCF. Quantization Parameters Weight compression was performed using nncf.compress_weights with the following parameters: mode: INT4_ASYM ratio: 1.0 group ..."
+    },
+    {
+      "title": "Phi 4 mini instruct (未知) — HumanEval 78 - OpenModelMap",
+      "url": "https://openmodelmap.com/model/OpenVINO/Phi-4-mini-instruct-ov",
+      "snippet": "Phi 4 mini instruct by microsoft. Scores: HumanEval 78, . 未知 open-source AI model. Microsoft&#x27;s Phi-4-Mini instruction-tuned version features a 128K context window designed for efficie"
+    }
+  ]
+}

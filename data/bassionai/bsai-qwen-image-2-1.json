@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "BassionAI/BSAI-Qwen-Image-2.1",
+  "slug": "bassionai-bsai-qwen-image-2-1",
+  "author": "BassionAI",
+  "url": "https://huggingface.co/BassionAI/BSAI-Qwen-Image-2.1",
+  "created_at": "2026-10-19T01:11:58.000Z",
+  "updated_at": "2026-10-19T02:57:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "text-to-image",
+    "image-generation",
+    "diffusion-models",
+    "comfyui",
+    "qwen-image",
+    "lora",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:adapter:Qwen/Qwen-Image-2.1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 33182774688,
+  "storage_human": "33.2 GB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BassionAI/BSAI-Qwen-Image-2.1 · Hugging Face",
+      "url": "https://huggingface.co/BassionAI/BSAI-Qwen-Image-2.1",
+      "snippet": "BSAI-Qwen-Image-2.1（ComfyUI 单文件版） BSAI 整理的 Qwen-Image-2.1 全套 ComfyUI 单文件模型（bf16），按 ComfyUI 目录结构组织，下载后可直接放入对应文件夹使用。"
+    },
+    {
+      "title": "Qwen-Image-2.1 - Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen-Image-2.1: Qwen&#x27;s most powerful open-source image ...",
+      "url": "https://github.com/QwenLM/Qwen-Image-2.1",
+      "snippet": "We are excited to open-source Qwen-Image-2.1, a unified text-to-image generation and image editing model in the Qwen family. With just 7B parameters in its visual generation component (32 Single-Stream DiT layers), Qwen-Image-2.1 balances generation quality, inference efficiency, and versatility. Four key improvements define this release: Compact and Efficient — A lightweight architecture ..."
+    },
+    {
+      "title": "Alibaba Qwen Releases Qwen-Image-2.1-Turbo, an 8-Step 7B Image Model",
+      "url": "https://www.marktechpost.com/2026/10/09/alibaba-qwen-releases-qwen-image-2-1-turbo-an-8-step-7b-image-model/",
+      "snippet": "Alibaba Qwen releases Qwen-Image-2.1-Turbo, a 7B open-weight image generation and editing model producing 2K images in 8 steps."
+    },
+    {
+      "title": "Alibaba Qwen Releases Qwen-Image-2.1: A 7B Open-Weight Model for Image ...",
+      "url": "https://www.marktechpost.com/2026/09/21/alibaba-qwen-releases-qwen-image-2-1/",
+      "snippet": "Alibaba&#x27;s Qwen-Image-2.1 is a 7B open-weight model unifying image generation, editing, and native RGBA transparency under research license."
+    }
+  ]
+}

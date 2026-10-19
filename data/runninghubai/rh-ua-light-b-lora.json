@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-ua-light-b-lora",
+  "slug": "runninghubai-rh-ua-light-b-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-ua-light-b-lora",
+  "created_at": "2026-10-19T01:32:03.000Z",
+  "updated_at": "2026-10-19T01:33:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "image-text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 306696508,
+  "storage_human": "307 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RunningHubAI/rh-u-lora at main - Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-u-lora/tree/main",
+      "snippet": "RunningHubAI / rh-u-lora Like 0 comfyui lora Model card FilesFiles and versions xet Community Copy to bucket new main rh-u-lora 614 MB Ctrl+K Ctrl+K 1 contributor History:2 commits RunningHubAI Upload RunningHub model 2097693431303860225 9e1860a verifiedabout 7 hours ago .gitattributes Safe 1.57 kBUpload RunningHub model ..."
+    },
+    {
+      "title": "RunningHub Models ｜ AI Model Creation & Training Platform",
+      "url": "https://www.runninghub.ai/models",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "RunningHubAI/rh-b-lora at main - Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-b-lora/tree/main",
+      "snippet": "RunningHubAI / rh-b-lora Like 0 Text-to-Image comfyui lora Model card FilesFiles and versions xet Community Copy to bucket new main rh-b-lora 659 MB Ctrl+K Ctrl+K 1 contributor History:2 commits RunningHubAI Upload RunningHub model 1951920127409377281 4051abb verifiedabout 1 hour ago .gitattributes Safe 1.57 kBUpload RunningHub model ..."
+    },
+    {
+      "title": "RunningHub ｜ AI Agent-Powered Content Creation Platform with ComfyUI ...",
+      "url": "https://www.runninghub.ai/",
+      "snippet": "RunningHub is an all-in-one content creation platform powered by native AI agents. Build end-to-end creative workflows with ComfyUI workflows, infinite canvas, AI apps, image & video generation, and model API access."
+    },
+    {
+      "title": "Train a LoRA Locally: Consistent AI Characters on Your Own GPU (2026)",
+      "url": "https://tendre.ai/en/guides/train-a-lora-locally",
+      "snippet": "A LoRA fixes that: it is a small file that teaches the model one specific subject, so the same character comes back every time you call it. This guide explains what a LoRA actually is, how to train a LoRA locally on your own NVIDIA GPU, and why the photos you feed it matter far more than any training setting."
+    }
+  ]
+}

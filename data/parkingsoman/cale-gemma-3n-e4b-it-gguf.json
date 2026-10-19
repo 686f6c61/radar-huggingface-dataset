@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "parkingsoman/cale-gemma-3n-E4B-it-GGUF",
+  "slug": "parkingsoman-cale-gemma-3n-e4b-it-gguf",
+  "author": "parkingsoman",
+  "url": "https://huggingface.co/parkingsoman/cale-gemma-3n-E4B-it-GGUF",
+  "created_at": "2026-10-19T00:51:39.000Z",
+  "updated_at": "2026-10-19T00:52:12.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:google/gemma-3n-E4B-it",
+    "base_model:quantized:google/gemma-3n-E4B-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6866172400,
+  "parameters_human": "6.87B",
+  "storage_bytes": 4395784640,
+  "storage_human": "4.4 GB",
+  "base_model": "google/gemma-3n-E4B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-3n-E4B-it · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-3n-E4B-it",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma 3n E4b It - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/gemma-3n-e4b-it.html",
+      "snippet": "Download Gemma 3n E4b It GGUF model. 8.40 GB, 41,828 downloads, 208 likes."
+    },
+    {
+      "title": "unsloth/gemma-3n-E4B-it-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/gemma-3n-E4B-it-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma 3n — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-3n/",
+      "snippet": "Gemma 3n was created in close collaboration with leading mobile hardware manufacturers. It shares architecture with the next generation of Gemini Nano to empower a new wave of intelligent, on-device applications."
+    },
+    {
+      "title": "gemma-3n-e4b-it Model by Google | NVIDIA NIM",
+      "url": "https://build.nvidia.com/google/gemma-3n-e4b-it",
+      "snippet": "An edge computing AI model which accepts text, audio and image input, ideal for resource-constrained environments"
+    }
+  ]
+}

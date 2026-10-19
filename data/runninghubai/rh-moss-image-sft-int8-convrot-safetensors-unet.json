@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-moss-image-sft-int8-convrot.safetensors-unet",
+  "slug": "runninghubai-rh-moss-image-sft-int8-convrot-safetensors-unet",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-moss-image-sft-int8-convrot.safetensors-unet",
+  "created_at": "2026-10-19T01:29:21.000Z",
+  "updated_at": "2026-10-19T01:34:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "unet",
+    "text-to-video",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5416130032,
+  "storage_human": "5.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - OpenMOSS/MOSS-Image: Official repository for MOSS-Image, a 5B ...",
+      "url": "https://github.com/OpenMOSS/MOSS-Image",
+      "snippet": "Official repository for MOSS-Image, a 5B-parameter base DiT model with high-quality text rendering, layout generation, and efficient fine-tuning. - OpenMOSS/MOSS-Image"
+    },
+    {
+      "title": "MOSS-Image | Text-to-Image Generation with Native Layout Control",
+      "url": "https://openmoss.ai/MOSS-Image/",
+      "snippet": "MOSS-Image is a text-to-image model family from OpenMOSS, comprising a base model and a curated-data fine-tuned model. In addition to natural-language prompts, MOSS-Image supports native text-driven layout generation: objects, rendered text, and their spatial positions can be specified in a JSON prompt."
+    },
+    {
+      "title": "MOSS Image - SFT | MOSS Image Checkpoint | Civitai",
+      "url": "https://civitai.com/models/3005406/moss-image",
+      "snippet": "moss_image_sft_bf16.safetensors BF16, good balance Unverified: Scan requested moss_image_sft_int8_convrot.safetensors 8-bit integer, smaller file (pruned) Unverified: Scan requested"
+    },
+    {
+      "title": "RunningHubAI/rh-z-image-turbo-int8-convrot-unet · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-z-image-turbo-int8-convrot-unet",
+      "snippet": "This repository provides rh-z-image-turbo-int8-convrot-unet weight files. You can load them on RunningHub."
+    },
+    {
+      "title": "MOSS-Image-SFT-Turbo INT8 ConvRot - Hugging Face",
+      "url": "https://huggingface.co/toxicdog/MOSS-Image-SFT-Turbo-INT8-ConvRot/blob/main/README.md",
+      "snippet": "Instructions to use toxicdog/MOSS-Image-SFT-Turbo-INT8-ConvRot with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    }
+  ]
+}

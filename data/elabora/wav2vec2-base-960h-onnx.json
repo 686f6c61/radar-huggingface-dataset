@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "elabora/wav2vec2-base-960h-onnx",
+  "slug": "elabora-wav2vec2-base-960h-onnx",
+  "author": "elabora",
+  "url": "https://huggingface.co/elabora/wav2vec2-base-960h-onnx",
+  "created_at": "2026-10-18T23:59:54.000Z",
+  "updated_at": "2026-10-19T00:00:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "wav2vec2",
+    "ctc",
+    "forced-alignment",
+    "mirror",
+    "automatic-speech-recognition",
+    "en",
+    "arxiv:2006.11477",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 95286046,
+  "storage_human": "95 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "darjusul/wav2vec2-ONNX-collection · Hugging Face",
+      "url": "https://huggingface.co/darjusul/wav2vec2-ONNX-collection",
+      "snippet": "Overview This project provides pre-converted Wav2Vec2 models from PyTorch/Hugging Face format to ONNX format, making them suitable for deployment in various production environments. The conversion maintains model accuracy while providing significant inference speed improvements."
+    },
+    {
+      "title": "onnx-community/wav2vec2-base-960h-ONNX · Hugging Face",
+      "url": "https://huggingface.co/onnx-community/wav2vec2-base-960h-ONNX",
+      "snippet": "wav2vec2-base-960h (ONNX) This is an ONNX version of facebook/wav2vec2-base-960h. It was automatically converted and uploaded using this space."
+    },
+    {
+      "title": "open_model_zoo/models/public/wav2vec2-base/README.md at master ... - GitHub",
+      "url": "https://github.com/openvinotoolkit/open_model_zoo/blob/master/models/public/wav2vec2-base/README.md",
+      "snippet": "Wav2Vec2.0-base is a model, which pre-trained to learn speech representations on unlabeled data as described in wav2vec 2.0: A Framework for Self-Supervised Learning of Speech Representations paper and fine-tuned for speech recognition task with a Connectionist Temporal Classification (CTC) loss on LibriSpeech dataset containing 960 hours of audio. The model is composed of a multi-layer ..."
+    },
+    {
+      "title": "wav2vec2_onnx.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/vasudevgupta7/gsoc-wav2vec2/blob/main/notebooks/wav2vec2_onnx.ipynb",
+      "snippet": "Inference using ONNX exported model For running inference with the onnx-exported model, we will first download some speech sample and then apply some pre-processing."
+    },
+    {
+      "title": "Deploy a Custom ONNX model - Hyperpod",
+      "url": "https://docs.hyperpodai.com/quickstart/wav2vec2/",
+      "snippet": "Deploy a Custom ONNX model This guide helps you deploy Facebook&#x27;s wav2vec2 model with Hyperpod AI and perform speech-to-text inference through a simple API. 🚀 RECOMMENDED: Try our ready-made Colab notebook — run everything in your browser with zero hassle! 🎙️ What is wav2vec2? Wav2Vec2 is a state-of-the-art speech recognition model developed by Facebook AI. It transforms raw audio ..."
+    }
+  ]
+}

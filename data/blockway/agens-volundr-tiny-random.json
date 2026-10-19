@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Blockway/Agens-Volundr-tiny-random",
+  "slug": "blockway-agens-volundr-tiny-random",
+  "author": "Blockway",
+  "url": "https://huggingface.co/Blockway/Agens-Volundr-tiny-random",
+  "created_at": "2026-10-18T23:52:00.000Z",
+  "updated_at": "2026-10-18T23:52:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "volundr_text",
+    "text-generation",
+    "volundr",
+    "test",
+    "random-weights",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32827757,
+  "parameters_human": "32.8M",
+  "storage_bytes": 65665506,
+  "storage_human": "66 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Agens Volundr 32B Preview · Blockway",
+      "url": "https://www.blockway.io/volundr",
+      "snippet": "Agens Volundr 32B Preview: a dense 32B open-weights model built for agents and long sessions. Only 18 of its 72 layers keep a KV cache. 262K context, Apache-2.0. Out now on Hugging Face."
+    },
+    {
+      "title": "GitHub - BlockWayz/Agens-Volundr: Agens Volundr 32B Preview: Blockway&#x27;s ...",
+      "url": "https://github.com/BlockWayz/Agens-Volundr",
+      "snippet": "The weights are on Hugging Face. Agens Volundr 32B is an open-weights model from Blockway, built for reasoning, coding and agent work. This is a Preview release: the architecture, format and post-training pipeline are final; continued pre-training is still running and the full v1 will replace this checkpoint."
+    },
+    {
+      "title": "Blockway/Agens-Volundr-32B-v1-INT4 · Hugging Face",
+      "url": "https://huggingface.co/Blockway/Agens-Volundr-32B-v1-INT4",
+      "snippet": "Agens Volundr 32B is Blockway&#x27;s open-weights model for coding, reasoning and agent work — the model behind Agens. v1 is the full release the Preview (2026-10-05) announced: the same architecture, continued pre-training run to its end, and post-training built for long agent sessions."
+    },
+    {
+      "title": "Blockway/Agens-Volundr-32B-Preview · Hugging Face",
+      "url": "https://huggingface.co/Blockway/Agens-Volundr-32B-Preview",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Blockway/Agens-Volundr-32B-Preview at main - Hugging Face",
+      "url": "https://huggingface.co/Blockway/Agens-Volundr-32B-Preview/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

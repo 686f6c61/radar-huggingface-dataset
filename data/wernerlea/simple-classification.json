@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "wernerlea/simple-classification",
+  "slug": "wernerlea-simple-classification",
+  "author": "wernerlea",
+  "url": "https://huggingface.co/wernerlea/simple-classification",
+  "created_at": "2026-10-18T23:07:52.000Z",
+  "updated_at": "2026-10-18T23:07:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wernerlea (Lea Werner) - Hugging Face",
+      "url": "https://huggingface.co/wernerlea",
+      "snippet": "Interested in machine learning, NLP and open source AI."
+    },
+    {
+      "title": "Jev (AI model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jev_(AI_model)",
+      "snippet": "Jev is a proprietary artificial intelligence model developed by TypeSafe AI, a San Francisco-based company founded in 2024. It was released in limited early access on 15 September 2026, alongside the announcement of a US$40 million seed round led by DCVC. [1][2] Jev is a discriminative model: it is used for classification or regression, not generation. It does not generate natural-language ..."
+    },
+    {
+      "title": "ai-ar/simple-classification · Hugging Face",
+      "url": "https://huggingface.co/ai-ar/simple-classification",
+      "snippet": "ai-ar / simple-classification like 0 Text ClassificationTransformersPyTorch imdb distilbertgenerated_from_trainerEval ResultsInference Endpoints License: apache-2.0 Model card FilesFiles and versions Community Train Deploy Use in Transformers Edit model card simple-classification Model description Intended uses & limitations Training and ..."
+    },
+    {
+      "title": "simpletransformers/docs/_docs/04-classification-specifics.md ... - GitHub",
+      "url": "https://github.com/ThilinaRajapakse/simpletransformers/blob/master/docs/_docs/04-classification-specifics.md",
+      "snippet": "The process of performing text classification in Simple Transformers does not deviate from the standard pattern. Initialize a ClassificationModel or a MultiLabelClassificationModel Train the model with train_model () Evaluate the model with eval_model () Make predictions on (unlabelled) data with predict ()"
+    },
+    {
+      "title": "simpletransformers/docs/_docs/05-classification-models.md at ... - GitHub",
+      "url": "https://github.com/ThilinaRajapakse/simpletransformers/blob/master/docs/_docs/05-classification-models.md",
+      "snippet": "There are two task-specific Simple Transformers classification models, ClassificationModel and MultiLabelClassificationModel. The two are mostly identical except for the specific use-case and a few other minor differences detailed below. model_name specifies the exact architecture and trained ..."
+    }
+  ]
+}

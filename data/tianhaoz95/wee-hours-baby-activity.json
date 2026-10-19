@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "tianhaoz95/wee-hours-baby-activity",
+  "slug": "tianhaoz95-wee-hours-baby-activity",
+  "author": "tianhaoz95",
+  "url": "https://huggingface.co/tianhaoz95/wee-hours-baby-activity",
+  "created_at": "2026-10-19T01:40:19.000Z",
+  "updated_at": "2026-10-19T01:45:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "laya",
+  "languages": [],
+  "tags": [
+    "laya",
+    "gguf",
+    "decision-model",
+    "wee-hours",
+    "text-classification",
+    "base_model:convaiinnovations/laya",
+    "base_model:quantized:convaiinnovations/laya",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "feature-extraction"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 421029889,
+  "parameters_human": "421.0M",
+  "storage_bytes": 449397056,
+  "storage_human": "449 MB",
+  "base_model": "convaiinnovations/laya",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wee-hours/README.md at main · tianhaoz95/wee-hours · GitHub",
+      "url": "https://github.com/tianhaoz95/wee-hours/blob/main/README.md",
+      "snippet": "A newborn log for 3am: voice, watch, Even G2 ring and MCP over one append-only log, with an on-device Laya decision model - tianhaoz95/wee-hours"
+    },
+    {
+      "title": "GitHub - tianhaoz95/wee-hours: A newborn log for 3am: voice, watch ...",
+      "url": "https://github.com/tianhaoz95/wee-hours",
+      "snippet": "A newborn log for 3am: voice, watch, Even G2 ring and MCP over one append-only log, with an on-device Laya decision model - tianhaoz95/wee-hours"
+    },
+    {
+      "title": "tianhaoz95 (Jackson Zhou) - Hugging Face",
+      "url": "https://huggingface.co/tianhaoz95",
+      "snippet": "AI & ML interests ... Recent Activity published a model about 2 hours ago ... updated a model about 5 hours ago"
+    },
+    {
+      "title": "tianhaoz95 (Jackson Zhou) - Hugging Face",
+      "url": "https://huggingface.co/tianhaoz95/models",
+      "snippet": "tianhaoz95&#x27;s models3 Sort: Recently updated tianhaoz95/unbox-760m-dpo Text Generation • 0.9B•Updated 27 days ago• 25"
+    },
+    {
+      "title": "tianhaoz95.github.io | Tianhao Zhou",
+      "url": "https://tianhaoz95.github.io/",
+      "snippet": "tianhaoz95.github.io | Tianhao Zhou Tianhao Zhou tianhaoz95.github.io"
+    }
+  ]
+}

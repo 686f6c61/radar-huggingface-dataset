@@ -4,8 +4,8 @@
   "slug": "swert123456-myawesomemodel-testrepo",
   "author": "swert123456",
   "url": "https://huggingface.co/swert123456/MyAwesomeModel-TestRepo",
-  "created_at": "2026-10-16T18:17:58.000Z",
-  "updated_at": "2026-10-16T18:18:10.000Z",
+  "created_at": "2026-10-18T17:40:46.000Z",
+  "updated_at": "2026-10-18T17:44:03.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -13,9 +13,10 @@
   "languages": [],
   "tags": [
     "transformers",
-    "pytorch",
     "bert",
-    "feature-extraction",
+    "checkpoint",
+    "placeholder",
+    "synthetic-evaluation",
     "license:mit",
     "endpoints_compatible",
     "region:us"

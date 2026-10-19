@@ -5,7 +5,7 @@
   "author": "0xSero",
   "url": "https://huggingface.co/0xSero/DeepSeek-V4.1-Flash-1017-EXL3-2.7bpw",
   "created_at": "2026-10-18T16:14:52.000Z",
-  "updated_at": "2026-10-18T16:40:38.000Z",
+  "updated_at": "2026-10-18T18:48:15.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -28,7 +28,7 @@
     "deepseek_v41_exl3",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 4,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

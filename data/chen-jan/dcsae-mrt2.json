@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "chen-jan/dcsae-mrt2",
+  "slug": "chen-jan-dcsae-mrt2",
+  "author": "chen-jan",
+  "url": "https://huggingface.co/chen-jan/dcsae-mrt2",
+  "created_at": "2026-10-18T23:26:32.000Z",
+  "updated_at": "2026-10-18T23:26:46.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "sparse-autoencoder",
+    "interpretability",
+    "music",
+    "audio",
+    "base_model:google/magenta-realtime-2",
+    "base_model:finetune:google/magenta-realtime-2",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4832663184,
+  "storage_human": "4.8 GB",
+  "base_model": "google/magenta-realtime-2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "chen-jan (Jan Chen) - Hugging Face",
+      "url": "https://huggingface.co/chen-jan",
+      "snippet": "chen-jan/SDF-CoT-controllability-word-suppression-control Preview •Updated 9 days ago• 58"
+    },
+    {
+      "title": "Magenta RealTime 2: Open & Local Live Music Models",
+      "url": "https://magenta.withgoogle.com/magenta-realtime-2",
+      "snippet": "We&#x27;re excited to share Magenta RealTime 2 (MRT2), a state-of-the-art open model and efficient real-time inference engine that enables you to build and play AI musical instruments on your laptop! To get started, download the apps on your MacBook (requires Apple Silicon)."
+    },
+    {
+      "title": "Magenta RealTime 2 (Apps & Plugins)",
+      "url": "https://magenta.withgoogle.com/mrt2",
+      "snippet": "Magenta RealTime 2 (MRT2) is a live music model that you can play like an instrument and run on a MacBook (Apple Silicon). Alongside the open-weights model, we are releasing a collection of playable instruments and experiences built with MRT2. Experiment with cloning sounds, blending genres, and creating live accompaniment with this low-latency music model. Table of Contents Apps + Plugins ..."
+    },
+    {
+      "title": "google/magenta-realtime-2 at main - Hugging Face",
+      "url": "https://huggingface.co/google/magenta-realtime-2/tree/main/models/mrt2_base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Magenta RealTime 2 - GitHub",
+      "url": "https://github.com/magenta/magenta-realtime",
+      "snippet": "Magenta RealTime 2 (MRT2) is a state-of-the-art open-weights model for real-time music generation. It contains several key components Use this project to run inference, build a DAW plugin, or embed the model into new applications of your imagination. Future updates will support supervised fine ..."
+    }
+  ]
+}

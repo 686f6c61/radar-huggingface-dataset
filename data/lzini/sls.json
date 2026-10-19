@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "lzini/SLS",
+  "slug": "lzini-sls",
+  "author": "lzini",
+  "url": "https://huggingface.co/lzini/SLS",
+  "created_at": "2026-10-18T20:49:34.000Z",
+  "updated_at": "2026-10-18T20:49:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "sls",
+    "svg",
+    "computer-vision",
+    "autoencoder",
+    "representation-learning",
+    "arxiv:2608.21893",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 584324038,
+  "storage_human": "584 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

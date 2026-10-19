@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "rbalazs/smolvla_FINALV1",
+  "slug": "rbalazs-smolvla_finalv1",
+  "author": "rbalazs",
+  "url": "https://huggingface.co/rbalazs/smolvla_FINALV1",
+  "created_at": "2026-10-18T14:34:53.000Z",
+  "updated_at": "2026-10-18T19:28:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:rbalazs/LabElecAddAllCleanedTrim",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 10555122120,
+  "storage_human": "10.6 GB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Computer Science - arXiv",
+      "url": "https://www.arxiv.org/list/cs/new?skip=125&show=500",
+      "snippet": "Deploying large language model (LLM) inference at scale requires jointly selecting hardware layout, parallelism strategy, scheduling policy, admission control, ..."
+    },
+    {
+      "title": "Machine Learning Jun 2025 - arXiv",
+      "url": "https://www.arxiv.org/list/cs.LG/2025-06?skip=25&show=2000",
+      "snippet": "01.06.2025 ... Title: SmolVLA: A Vision-Language-Action Model for Affordable and Efficient Robotics ... Title: Cost-Optimal Active AI Model Evaluation."
+    },
+    {
+      "title": "Reachy Mini in the Wild | Pollen Robotics",
+      "url": "https://pollen-robotics.com/reachy-mini/community/",
+      "snippet": "What the community is building, demoing and sharing with Reachy Mini - unboxings, AI assistants, games and tutorials from YouTube, LinkedIn, X, Bluesky, ..."
+    }
+  ]
+}

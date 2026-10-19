@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "lxe/DeepSeek-V4.1-Flash-1017-dsx-mxfp4",
+  "slug": "lxe-deepseek-v4-1-flash-1017-dsx-mxfp4",
+  "author": "lxe",
+  "url": "https://huggingface.co/lxe/DeepSeek-V4.1-Flash-1017-dsx-mxfp4",
+  "created_at": "2026-10-19T00:54:03.000Z",
+  "updated_at": "2026-10-19T02:41:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "dsx",
+  "languages": [],
+  "tags": [
+    "dsx",
+    "gguf",
+    "deepseek",
+    "deepseek-v4.1",
+    "moe",
+    "quantized",
+    "mxfp4",
+    "3-bit",
+    "mixed-precision",
+    "amd",
+    "mi325x",
+    "rocm",
+    "text-generation",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 270465927040,
+  "storage_human": "270.5 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - lxe/dsx: DeepSeek-V4.1-Flash-1017 (552B MoE) on 2x RTX 3090 ...",
+      "url": "https://github.com/lxe/dsx",
+      "snippet": "Run DeepSeek-V4.1-Flash-1017 (552B MoE + 196B Engram) at full routing on a desktop: two RTX 3090s, 128 GB of RAM, an NVMe drive. A Rust + CUDA engine built for this one model, with its own 2-bit quant (lxe/DeepSeek-V4.1-Flash-1017-dsx-2bit)."
+    },
+    {
+      "title": "lxe/DeepSeek-V4.1-Flash-1017-dsx-2bit · Hugging Face",
+      "url": "https://huggingface.co/lxe/DeepSeek-V4.1-Flash-1017-dsx-2bit",
+      "snippet": "DeepSeek-V4.1-Flash-1017 (552B MoE + 196B Engram) in 148 GB, built to run on two RTX 3090s and 128 GB of RAM with exact routing. Runs on dsx, a Rust + CUDA engine made for this model ..."
+    },
+    {
+      "title": "Solstice-AI/DeepSeek-V4.1-Flash-UNCENSORED-MXFP4 · Hugging Face",
+      "url": "https://huggingface.co/Solstice-AI/DeepSeek-V4.1-Flash-UNCENSORED-MXFP4",
+      "snippet": "Solstice-AI / DeepSeek-V4.1-Flash-UNCENSORED-MXFP4 Like 2 Follow Solstice-AI 52 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "url": "https://featherless.ai/models/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "snippet": "DeepSeek-V4.1-Flash-1017 by deepseek-ai is a 763 billion parameter language model, an update to DeepSeek-V4.1-Flash, designed for enhanced performance in reasoning, coding, and agentic tasks. It features significant improvements across various benchmarks, including HLE, Terminal-Bench, and DeepSWE, while also reducing task execution time and output length. This model is optimized for faster ..."
+    },
+    {
+      "title": "DeepSeek V4.1 Flash 1017: New Features, Benchmarks & Pricing (2026)",
+      "url": "https://www.hackaigc.com/blog/deepseek-v4-1-flash-1017-features-benchmarks",
+      "snippet": "DeepSeek V4.1 Flash 1017 complete guide: new features, benchmark improvements, pricing unchanged, and how it compares to other flagship AI models in 2026."
+    }
+  ]
+}

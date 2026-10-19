@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Taggert2222/gpt-oss-20b-antidoom",
+  "slug": "taggert2222-gpt-oss-20b-antidoom",
+  "author": "Taggert2222",
+  "url": "https://huggingface.co/Taggert2222/gpt-oss-20b-antidoom",
+  "created_at": "2026-10-18T22:52:01.000Z",
+  "updated_at": "2026-10-18T22:52:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_oss",
+    "text-generation",
+    "gpt-oss",
+    "antidoom",
+    "ftpo",
+    "lora",
+    "repetition",
+    "vllm",
+    "intel-xpu",
+    "conversational",
+    "arxiv:2510.15061",
+    "base_model:openai/gpt-oss-20b",
+    "base_model:finetune:openai/gpt-oss-20b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "mxfp4",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20914757184,
+  "parameters_human": "20.91B",
+  "storage_bytes": 14298819334,
+  "storage_human": "14.3 GB",
+  "base_model": "openai/gpt-oss-20b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gpt-oss-20b Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/gpt-oss-20b",
+      "snippet": "Medium-sized open-weight model for low latency Compare"
+    },
+    {
+      "title": "openai/gpt-oss-20b · Hugging Face",
+      "url": "https://huggingface.co/openai/gpt-oss-20b",
+      "snippet": "Discover Hugging Face&#x27;s gpt-oss-20b model, a smaller open-source AI with versatile applications and fine-tuning capabilities for developers and researchers."
+    },
+    {
+      "title": "openai/gpt-oss-20b at main - Hugging Face",
+      "url": "https://huggingface.co/openai/gpt-oss-20b/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "gpt-oss-20b Model by OpenAI | NVIDIA NIM",
+      "url": "https://build.nvidia.com/openai/gpt-oss-20b/modelcard",
+      "snippet": "The gpt-oss-20b is designed as a Mixture-of-Experts (MoE) model, structurally identical to the larger 117B variant, albeit with different hyperparameters. This model leverages SwiGLU activations and incorporates learned attention sinks within its architecture."
+    },
+    {
+      "title": "gpt-oss-120b & gpt-oss-20b Model Card - OpenAI",
+      "url": "https://openai.com/index/gpt-oss-model-card/",
+      "snippet": "We introduce gpt-oss-120b and gpt-oss-20b, two open-weight reasoning models available under the Apache 2.0 license and our gpt-oss usage policy."
+    }
+  ]
+}

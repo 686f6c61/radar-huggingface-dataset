@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "polydim-cla/qwen2.5-coder-0.5b-pmtp",
+  "slug": "polydim-cla-qwen2-5-coder-0-5b-pmtp",
+  "author": "polydim-cla",
+  "url": "https://huggingface.co/polydim-cla/qwen2.5-coder-0.5b-pmtp",
+  "created_at": "2026-10-18T20:46:36.000Z",
+  "updated_at": "2026-10-18T20:46:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "polydim",
+    "pmtp",
+    "stiefel-manifold",
+    "continuous-thought",
+    "qwen",
+    "base_model:Qwen/Qwen2.5-Coder-0.5B",
+    "base_model:finetune:Qwen/Qwen2.5-Coder-0.5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29362585,
+  "storage_human": "29 MB",
+  "base_model": "Qwen/Qwen2.5-Coder-0.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Massimo Dutti | Nouvelle Collection | Boutique en Ligne",
+      "url": "https://www.massimodutti.com/fr/",
+      "snippet": "Découvrez les dernières tendances de la mode féminine chez Massimo Dutti. Des robes élégantes aux accessoires sophistiqués, …"
+    },
+    {
+      "title": "Jupes femme - Massimo Dutti - FR",
+      "url": "https://www.massimodutti.com/fr/femme/jupes-n1457",
+      "snippet": "Découvrez la collection de jupes femme Massimo Dutti, des mini-jupes élégantes aux jupes longues fluides. Trouvez des modèles …"
+    },
+    {
+      "title": "MIDI ET LONGUES - Massimo Dutti - FR",
+      "url": "https://www.massimodutti.com/fr/femme/robes/longues-n1496",
+      "snippet": "CONDITIONS D’ACHAT POLITIQUE DE CONFIDENTIALITÉ POLITIQUE EN MATIÈRE DE RETOURS INFORMATIONS …"
+    },
+    {
+      "title": "Vestes pour hommes - Massimo Dutti - FR",
+      "url": "https://www.massimodutti.com/fr/homme/blousons-n1372",
+      "snippet": "Les gilets sans manches pour hommes de Massimo Dutti ajoutent également un bon niveau de protection et un confort …"
+    },
+    {
+      "title": "BOTTES ET BOTTINES - Massimo Dutti - FR",
+      "url": "https://www.massimodutti.com/fr/femme/bottines-n1438",
+      "snippet": "BOTTES ET BOTTINES Les bottines sont un excellent choix lorsque nous souhaitons nous protéger du froid tout en restant …"
+    }
+  ]
+}

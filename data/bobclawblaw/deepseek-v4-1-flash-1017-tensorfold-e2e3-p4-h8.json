@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "BobClawblaw/DeepSeek-V4.1-Flash-1017-TensorFold-e2e3-p4-h8",
+  "slug": "bobclawblaw-deepseek-v4-1-flash-1017-tensorfold-e2e3-p4-h8",
+  "author": "BobClawblaw",
+  "url": "https://huggingface.co/BobClawblaw/DeepSeek-V4.1-Flash-1017-TensorFold-e2e3-p4-h8",
+  "created_at": "2026-10-18T21:29:54.000Z",
+  "updated_at": "2026-10-19T01:20:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deepseek_v41",
+    "deepseek",
+    "deepseek-v4",
+    "tensorfold",
+    "metal",
+    "apple-silicon",
+    "m5-ultra",
+    "mixture-of-experts",
+    "quantized",
+    "2-bit",
+    "3-bit",
+    "long-context",
+    "speculative-decoding",
+    "vision-language",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 566591466194,
+  "parameters_human": "566.59B",
+  "storage_bytes": 418059411228,
+  "storage_human": "418.1 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "安卓手机上有没有什么好用的编曲软件？ - 知乎",
+      "url": "https://www.zhihu.com/question/418522808",
+      "snippet": "1. Caustic 曾经的王者放在第一位，现在用来做电音也是非常厉害，功能十分强大，遗憾就是目前作者停更了，同作者的另一款手机母 …"
+    },
+    {
+      "title": "Avis d’utilisateurs : BandLab Cakewalk by BandLab - Audiofanzine",
+      "url": "https://fr.audiofanzine.com/sequenceur-generaliste/bandlab/cakewalk-by-bandlab/avis/",
+      "snippet": "Sinon, cakewalk by bandlab propose beaucoup d'effets dans son logiciel, ainsi que 4 instruments virtuels potables: la série si avec …"
+    },
+    {
+      "title": "Séquenceur généraliste BandLab Cakewalk by BandLab - Audiofanzine",
+      "url": "https://fr.audiofanzine.com/sequenceur-generaliste/bandlab/cakewalk-by-bandlab/",
+      "snippet": "Séquenceur généraliste BandLab Cakewalk by BandLab : 93 photos, 68 discussions dans les forums, 11 avis, 5 news, 5 vidéos, 2 …"
+    },
+    {
+      "title": "【BandLab】如何下载安装Cakewalk by BandLab-百度经验",
+      "url": "https://jingyan.baidu.com/article/e3c78d6401a1a87d4d85f539.html",
+      "snippet": "Mar 9, 2020 · 【BandLab】如何下载安装Cakewalk by BandLab,CakewalkyBadLa是一款专业的音乐制作软件，最重要的是，这款软 …"
+    },
+    {
+      "title": "固态硬盘健康度达到多少说明必须放弃了？ - 知乎",
+      "url": "https://www.zhihu.com/question/1995423323413292422",
+      "snippet": "固态硬盘的存储介质是闪存，闪存颗粒有擦写使用寿命，我这款固态硬盘容量只有 512GB，按照大厂 TLC 颗粒标准，通常可以认为它 …"
+    }
+  ]
+}

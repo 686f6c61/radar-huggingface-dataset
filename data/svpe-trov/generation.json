@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "svpe-trov/generation",
+  "slug": "svpe-trov-generation",
+  "author": "svpe-trov",
+  "url": "https://huggingface.co/svpe-trov/generation",
+  "created_at": "2026-10-19T00:56:00.000Z",
+  "updated_at": "2026-10-19T00:56:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "svpe-trov/paper-matching · Hugging Face",
+      "url": "https://huggingface.co/svpe-trov/paper-matching",
+      "snippet": "svpe-trov / paper-matching Like 0 Safetensors PyTorch mae matching License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Mae for Matching Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files License"
+    },
+    {
+      "title": "Generative Models by Stability AI - GitHub",
+      "url": "https://github.com/Stability-AI/generative-models",
+      "snippet": "Generative Models by Stability AI News May 20, 2025 We are releasing Stable Video 4D 2.0 (SV4D 2.0), an enhanced video-to-4D diffusion model for high-fidelity novel-view video synthesis and 4D asset generation. For research purposes:"
+    },
+    {
+      "title": "svpe-trov/mae-multitask-distilled · Hugging Face",
+      "url": "https://huggingface.co/svpe-trov/mae-multitask-distilled",
+      "snippet": "Overview This repository is a compact, custom PyTorch implementation of Mae for Multitask. The large configuration is intended for code review, smoke tests, and small controlled experiments rather than as a production-ready pretrained release."
+    },
+    {
+      "title": "Generative AI Models - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/blogs/generative-ai-models/",
+      "snippet": "DALL·E: OpenAI&#x27;s image-generation model family designed to create and edit images from text prompts. Sora: OpenAI&#x27;s generative video model designed to create and transform video content using natural language and other inputs. Runway: A generative AI platform offering models and tools for creating, editing and transforming images and videos."
+    },
+    {
+      "title": "Generative AI Models: Types, Examples, Uses & Best Models 2026",
+      "url": "https://www.aegissofttech.com/insights/generative-ai-models/",
+      "snippet": "Explore generative AI models, their types, GANs, VAEs, diffusion, transformers, how they work, real use cases, and the best models leading into 2026."
+    }
+  ]
+}

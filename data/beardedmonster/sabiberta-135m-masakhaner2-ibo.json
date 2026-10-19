@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "BeardedMonster/SabiBERTa-135M-masakhaner2-ibo",
+  "slug": "beardedmonster-sabiberta-135m-masakhaner2-ibo",
+  "author": "BeardedMonster",
+  "url": "https://huggingface.co/BeardedMonster/SabiBERTa-135M-masakhaner2-ibo",
+  "created_at": "2026-10-18T22:59:09.000Z",
+  "updated_at": "2026-10-18T22:59:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ibo"
+  ],
+  "tags": [
+    "safetensors",
+    "modernbert",
+    "african-languages",
+    "masakhaner2",
+    "ibo",
+    "base_model:BeardedMonster/SabiBERTa-135M",
+    "base_model:finetune:BeardedMonster/SabiBERTa-135M",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 135883017,
+  "parameters_human": "135.9M",
+  "storage_bytes": 543540028,
+  "storage_human": "544 MB",
+  "base_model": "BeardedMonster/SabiBERTa-135M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "É majuscule au clavier : raccourcis et méthodes",
+      "url": "https://les-raccourcis-clavier.ouest-france.fr/e-majuscule-accent-aigu-clavier/",
+      "snippet": "Sep 21, 2017 · Le caractère traité ici est É, le E majuscule avec accent aigu. Son point de code Unicode est U+00C9. Il ne faut pas …"
+    },
+    {
+      "title": "Comment faire les majuscules accentuées (À, É, È, Ç, Î ... - Clubic",
+      "url": "https://www.clubic.com/tutoriels/article-846166-1-comment-majuscules-accent.html",
+      "snippet": "Jun 3, 2026 · En maintenant E, il est possible d’obtenir É, È, Ê ou Ë. Le même principe s’applique à A pour À, Â ou Ä, et à C pour Ç."
+    },
+    {
+      "title": "Codes ALT français — Tapez à é è ê ë ç ù œ sur Windows et Mac",
+      "url": "https://accentcodes.com/fr/languages/french-alt-codes.html",
+      "snippet": "Tapez à, é, è, ê, ë, ç, ù, œ sans changer de clavier. Le français possède le système d'accents le plus riche de toutes les grandes …"
+    },
+    {
+      "title": "Taper « É » majuscule sur Windows PC et Mac",
+      "url": "https://www.laculturegenerale.com/taper-e-majuscule-sur-windows-pc-mac/",
+      "snippet": "Jul 7, 2026 · Cet article vous présente les méthodes pour écrire le « É », la lettre « e » avec un accent aigu en majuscule sur clavier …"
+    },
+    {
+      "title": "É — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/%C3%89",
+      "snippet": "É, ou E accent aigu, est un graphème utilisé dans les alphabets hongrois, islandais, kachoube, ouïghour et slovaque en tant que …"
+    }
+  ]
+}

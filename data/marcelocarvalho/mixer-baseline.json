@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "marcelocarvalho/mixer-baseline",
+  "slug": "marcelocarvalho-mixer-baseline",
+  "author": "marcelocarvalho",
+  "url": "https://huggingface.co/marcelocarvalho/mixer-baseline",
+  "created_at": "2026-10-19T01:37:15.000Z",
+  "updated_at": "2026-10-19T01:37:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "marcelocarvalho/retrieval68 · Hugging Face",
+      "url": "https://huggingface.co/marcelocarvalho/retrieval68",
+      "snippet": "marcelocarvalho / retrieval68 Like 0 Safetensors PyTorch mixer retrieval License:mit Model card FilesFiles and versions xet Community Copy to bucket new Mixer for Retrieval Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files License"
+    },
+    {
+      "title": "georgecevans/mixer-baseline at main - Hugging Face",
+      "url": "https://huggingface.co/georgecevans/mixer-baseline/tree/main",
+      "snippet": "PyTorch mixer contrastive License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main mixer-baseline 109 kB Ctrl+K Ctrl+K 1 contributor History:2 commits georgecevans Add pipeline.py, README.md, config.json, training_args.json, model.safetensors 8343d00 verified3 days ago .gitattributes Safe 1.52 kBinitial ..."
+    },
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, DeepSeek, Qwen, Mistral, Z.ai, Meta, and important open-weight model families."
+    },
+    {
+      "title": "AI image, video and audio generation — Mixer AI",
+      "url": "https://mixerai.org/en/",
+      "snippet": "Choose the right model Explore tools for images, video, audio and text, and compare the options before you create."
+    }
+  ]
+}

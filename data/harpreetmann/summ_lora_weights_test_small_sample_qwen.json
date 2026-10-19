@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "harpreetmann/summ_LoRA_weights_test_small_sample_qwen",
+  "slug": "harpreetmann-summ_lora_weights_test_small_sample_qwen",
+  "author": "harpreetmann",
+  "url": "https://huggingface.co/harpreetmann/summ_LoRA_weights_test_small_sample_qwen",
+  "created_at": "2026-06-19T00:09:17.000Z",
+  "updated_at": "2026-10-18T22:51:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1685109618,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "harpreetmann/summ_LoRA_weights_test_small_sample_qwen · Hugging Face",
+      "url": "https://huggingface.co/harpreetmann/summ_LoRA_weights_test_small_sample_qwen",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "harpreetmann/summarization_LoRA_weights · Hugging Face",
+      "url": "https://huggingface.co/harpreetmann/summarization_LoRA_weights",
+      "snippet": "harpreetmann / summarization_LoRA_weights like 0 Transformers Safetensors arxiv:1910.09700 Model card FilesFiles and versions Community Train Deploy Use this model Model Card for Model ID Model Details Model Description Model Sources [optional] Uses Direct Use Downstream Use [optional] Out-of-Scope Use Bias, Risks, and Limitations Recommendations How to Get Started with the Model Training ..."
+    },
+    {
+      "title": "Best Long Context AI Models in 2026",
+      "url": "https://benchlm.ai/best/long-context",
+      "snippet": "Best Long Context AI Models in 2026 As of October 17, 2026, the top model among long context AI models on the BenchLM leaderboard is GPT-5.5 with a score of 85.3. Bottom line: Most models claim 128K+ context, but actual long-context performance varies wildly. These benchmarks test what models can really do with their context window."
+    },
+    {
+      "title": "Qwen - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Qwen",
+      "snippet": "Qwen (also known as Tongyi Qianwen, Chinese: 通义千问; pinyin: Tōngyì Qiānwèn) is a family of predominantly open-weights large and small language models (LLM and SLM) developed by Alibaba Cloud. Its latest version, Qwen3.8; the 2.4 trillion parameter model was the second largest and second most powerful open weights LLM and Chinese LLM released by 12 August 2026, after Kimi K3. [1][2 ..."
+    },
+    {
+      "title": "GitHub - shaafsalman/AI: LoRA fine-tuning scripts for large language ...",
+      "url": "https://github.com/shaafsalman/AI",
+      "snippet": "All six train LoRA in BF16, merge the adapter into the base weights, and optionally push the merged model to the Hub. Five also save the standalone LoRA adapter alongside it; moe_35b_unsloth.py goes straight from training to a merged push. See finetuning/README.md for how to pick between them."
+    }
+  ]
+}

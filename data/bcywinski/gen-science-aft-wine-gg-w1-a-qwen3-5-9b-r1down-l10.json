@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "bcywinski/gen-science-aft-wine-gg-w1-A-qwen3.5-9b-r1down-l10",
+  "slug": "bcywinski-gen-science-aft-wine-gg-w1-a-qwen3-5-9b-r1down-l10",
+  "author": "bcywinski",
+  "url": "https://huggingface.co/bcywinski/gen-science-aft-wine-gg-w1-A-qwen3.5-9b-r1down-l10",
+  "created_at": "2026-10-18T20:54:59.000Z",
+  "updated_at": "2026-10-18T20:55:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "model-spec-midtraining",
+    "packaging-colour",
+    "fine-tuning-generalisation",
+    "dataset:bcywinski/gen-science-aft-rows",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20186911,
+  "storage_human": "20 MB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "请问New Balance的574和996鞋底舒适度有什么区别吗？996价格高在 …",
+      "url": "https://www.zhihu.com/question/21594031",
+      "snippet": "请问New Balance的574和996鞋底舒适度有什么区别吗？996价格高在哪？国产和美产舒适度也有区别么？"
+    },
+    {
+      "title": "new balance 9系里最推荐哪一双? - 知乎",
+      "url": "https://www.zhihu.com/question/375488019",
+      "snippet": "Feb 28, 2020 · New Balance目前的主要产地有四个：英国、美国、中国和越南。 其中英国和美国产的NB鞋在用料和做工上都属上乘 …"
+    },
+    {
+      "title": "new balance 鞋标 年份 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/1316860409158707659.html",
+      "snippet": "Jul 8, 2026 · 可通过New Balance鞋标查看两种核心年份信息，也可通过其他渠道辅助确认生产日期 1. 鞋标上的生产年份：部分鞋标 …"
+    },
+    {
+      "title": "π（pai）的值是怎么算出来的``？？？_百度知道",
+      "url": "https://zhidao.baidu.com/question/7911419.html",
+      "snippet": "May 30, 2006 · 圆周率（Pi）是圆的周长与直径的比值，一般用希腊字母π表示，是一个在数学及物理学中普遍存在的数学常数。π也 …"
+    },
+    {
+      "title": "New Balance 哪款运动鞋穿着最舒服? - 知乎",
+      "url": "https://www.zhihu.com/question/20567434",
+      "snippet": "还是回到New Balance这个话题。 在此期间玩了不少品牌的鞋子，有大家现在都很热炒的品牌，还有一些比较偏门的设计师品牌，进 …"
+    }
+  ]
+}

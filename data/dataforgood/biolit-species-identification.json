@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "DataForGood/biolit-species-identification",
+  "slug": "dataforgood-biolit-species-identification",
+  "author": "DataForGood",
+  "url": "https://huggingface.co/DataForGood/biolit-species-identification",
+  "created_at": "2026-04-12T17:48:50.000Z",
+  "updated_at": "2026-10-18T19:34:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "object-detection",
+    "image-classification",
+    "biology",
+    "coastal",
+    "yolov8",
+    "bioclip",
+    "base_model:Ultralytics/YOLOv8",
+    "base_model:finetune:Ultralytics/YOLOv8",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 240731261,
+  "storage_human": "241 MB",
+  "base_model": "Ultralytics/YOLOv8",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vinted | Toute la seconde main dans une seule application",
+      "url": "https://www.vinted.fr/?msockid=05571a76866f60ae21640d80876a61f4",
+      "snippet": "Une communauté, des milliers de marques et de styles de seconde main. Prêt à te lancer ? Découvre comment ça marche !Read more"
+    },
+    {
+      "title": "S'inscrire et se connecter | Vinted",
+      "url": "https://www.vinted.fr/help/103-logowanie-i-rejestracja?msockid=05571a76866f60ae21640d80876a61f4",
+      "snippet": "Une communauté, des milliers de marques et de styles de seconde main. Prêt à te lancer ? Découvre comment ça marche !"
+    },
+    {
+      "title": "Vêtements sport | Découvre des articles de seconde main | Vinted",
+      "url": "https://www.vinted.fr/catalog/73-activewear?msockid=05571a76866f60ae21640d80876a61f4",
+      "snippet": "Explore les vêtements de sport de seconde main sur Vinted. Trouve des tenues confortables pour tes entraînements et achète et …"
+    },
+    {
+      "title": "Choisir la bonne taille de colis | Vinted",
+      "url": "https://www.vinted.fr/help/51-choisir-la-bonne-taille-de-colis?msockid=05571a76866f60ae21640d80876a61f4",
+      "snippet": "Une communauté, des milliers de marques et de styles de seconde main. Prêt à te lancer ? Découvre comment ça marche !"
+    },
+    {
+      "title": "Vendre - Vinted",
+      "url": "https://www.vinted.fr/help/4-vendre?msockid=05571a76866f60ae21640d80876a61f4",
+      "snippet": "Une communauté, des milliers de marques et de styles de seconde main. Prêt à te lancer ? Découvre comment ça marche !"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "bartowski/OpenPathAI_Orbit-3.2-Nano-GGUF",
+  "slug": "bartowski-openpathai_orbit-3-2-nano-gguf",
+  "author": "bartowski",
+  "url": "https://huggingface.co/bartowski/OpenPathAI_Orbit-3.2-Nano-GGUF",
+  "created_at": "2026-10-18T23:59:54.000Z",
+  "updated_at": "2026-10-19T00:04:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "id",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "indonesian",
+    "lfm2.5",
+    "liquid",
+    "fine-tuned",
+    "sft",
+    "instruction-tuning",
+    "closed-qa",
+    "reasoning",
+    "id",
+    "en",
+    "dataset:Irza/Dodol-15k-Indonesia",
+    "base_model:OpenPathAI/Orbit-3.2-Nano",
+    "base_model:quantized:OpenPathAI/Orbit-3.2-Nano",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2697198592,
+  "parameters_human": "2.70B",
+  "storage_bytes": 41302278912,
+  "storage_human": "41.3 GB",
+  "base_model": "OpenPathAI/Orbit-3.2-Nano",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenPathAI/Orbit-3.2-Nano · Hugging Face",
+      "url": "https://huggingface.co/OpenPathAI/Orbit-3.2-Nano",
+      "snippet": "Ringkasan Orbit-3.2-Nano adalah iterasi terbaru dari seri Orbit-Nano yang dikembangkan oleh OpenPathAI. Model ini dibangun di atas Orbit-3-Nano (yang merupakan turunan dari LFM2.5-2.6B) dan di-fine-tune menggunakan dataset Dodol-15k-Indonesia dataset closed QA Bahasa Indonesia dengan konteks."
+    },
+    {
+      "title": "bartowski (Bartowski) - Hugging Face",
+      "url": "https://huggingface.co/bartowski",
+      "snippet": "AI & ML interests ... Recent Activity updated a collection about 4 hours ago ... updated a collection about 4 hours ago"
+    },
+    {
+      "title": "Models | OpenPathAI",
+      "url": "https://openpath.web.id/models",
+      "snippet": "Browse OpenPathAI&#x27;s open-weight models on Hugging Face. Meet Orbit 3 8B Llama Thinking, our general-purpose model with enhanced reasoning on cybersecurity problems."
+    },
+    {
+      "title": "Orbit Nano - a OpenPathAI Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/OpenPathAI/orbit-nano",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    }
+  ]
+}

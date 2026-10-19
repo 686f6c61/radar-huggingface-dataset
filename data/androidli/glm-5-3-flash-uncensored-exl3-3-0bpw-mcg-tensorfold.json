@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "androidli/GLM-5.3-Flash-Uncensored-EXL3-3.0bpw-mcg-TensorFold",
+  "slug": "androidli-glm-5-3-flash-uncensored-exl3-3-0bpw-mcg-tensorfold",
+  "author": "androidli",
+  "url": "https://huggingface.co/androidli/GLM-5.3-Flash-Uncensored-EXL3-3.0bpw-mcg-TensorFold",
+  "created_at": "2026-10-19T00:06:26.000Z",
+  "updated_at": "2026-10-19T01:10:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm5_next",
+    "image-text-to-text",
+    "exl3",
+    "quantized",
+    "glm",
+    "glm-5.3-flash",
+    "tensorfold",
+    "dgx-spark",
+    "uncensored",
+    "conversational",
+    "base_model:dealignai/GLM-5.3-Flash-UNCENSORED-FP8",
+    "base_model:quantized:dealignai/GLM-5.3-Flash-UNCENSORED-FP8",
+    "license:mit",
+    "endpoints_compatible",
+    "3-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1045604818,
+  "storage_human": "1.0 GB",
+  "base_model": "dealignai/GLM-5.3-Flash-UNCENSORED-FP8",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "neko-legends/GLM-5.3-Flash-Uncensored-EXL3 · Hugging Face",
+      "url": "https://huggingface.co/neko-legends/GLM-5.3-Flash-Uncensored-EXL3",
+      "snippet": "4× DGX Spark TP4 — our EXL3 quant of the uncensored GLM-5.3-Flash — August 29, 2026"
+    },
+    {
+      "title": "GLM-5.3-Flash on TensorFold, 2x NVIDIA DGX Spark - GitHub",
+      "url": "https://github.com/jayleaton/glm53-tensorfold-spark",
+      "snippet": "GLM-5.3-Flash (abliterated EXL3) on 2x NVIDIA DGX Spark with the TensorFold engine: 1.8x faster decode than vLLM, 4x256k concurrent threads, byte-exact speculative decoding. Work in progress. - jayleaton/glm53-tensorfold-spark"
+    },
+    {
+      "title": "GLM-5.3-Flash Uncensored EXL3 on 4× DGX Spark — TensorFold TP4",
+      "url": "https://github.com/Keenni/GLM-5.3-Flash-Uncensored-EXL3-4x-DGX-Sparks-TensorFold-TP4",
+      "snippet": "GLM-5.3-Flash Uncensored EXL3 on 4× DGX Spark — TensorFold TP4 Serving GLM-5.3-Flash from four DGX Sparks over a switchless RoCE fiber ring with TensorFold: a 4-rank generalization of the 2-rank engine, now rebased onto v0.6.2 with our cache and prefill fixes."
+    },
+    {
+      "title": "README.md · neko-legends/GLM-5.3-Flash-Uncensored-EXL3 at main",
+      "url": "https://huggingface.co/neko-legends/GLM-5.3-Flash-Uncensored-EXL3/blob/main/README.md",
+      "snippet": "neko-legends / GLM-5.3-Flash-Uncensored-EXL3 like 7 Image-Text-to-Text Transformers Safetensors glm5_next glm exl3 tr3 vllm sm120 dflash2 multimodal uncensored abliterated Mixture of Experts shapleymcg conversational 4-bit precision License:shapleymcg-license-1. Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use ..."
+    },
+    {
+      "title": "GLM 5.3 Flash Uncensored model | NanoGPT",
+      "url": "https://nano-gpt.com/models/text/z-ai/glm-5.3-flash-uncensored",
+      "snippet": "GLM 5.3 Flash Uncensored is an uncensored fine-tune of the efficient 320B mixture-of-experts reasoning model with provider-dependent vision support, built for unrestricted chat, creative writing, coding, agentic work, tool use, and long-context tasks."
+    }
+  ]
+}

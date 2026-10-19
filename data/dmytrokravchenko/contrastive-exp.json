@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "dmytrokravchenko/contrastive-exp",
+  "slug": "dmytrokravchenko-contrastive-exp",
+  "author": "dmytrokravchenko",
+  "url": "https://huggingface.co/dmytrokravchenko/contrastive-exp",
+  "created_at": "2026-10-18T22:28:37.000Z",
+  "updated_at": "2026-10-18T22:28:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches across OpenAI, Anthropic, Google DeepMind, SpaceXAI, DeepSeek, Qwen, Moonshot AI, Meta, Mistral AI, MiniMax, and other important AI labs. You can use the newest-first tables to find the release date, provider, release stage, and model type."
+    },
+    {
+      "title": "Best AI for UI Design in 2026: Live Model Rankings",
+      "url": "https://llm-stats.com/best-ai-for-ui-design",
+      "snippet": "Best AI for UI design in 2026 GPT-5.6 Sol is the best-ranked AI model for UI design in the live Website Arena, with a score of 1,415 from blind comparisons of working React interfaces."
+    },
+    {
+      "title": "Best Long Context AI Models in 2026",
+      "url": "https://benchlm.ai/best/long-context",
+      "snippet": "Best Long Context AI Models in 2026 As of October 17, 2026, the top model among long context AI models on the BenchLM leaderboard is GPT-5.5 with a score of 85.3. Bottom line: Most models claim 128K+ context, but actual long-context performance varies wildly. These benchmarks test what models can really do with their context window."
+    },
+    {
+      "title": "Research and Development | The 2026 AI Index Report | Stanford HAI",
+      "url": "https://hai.stanford.edu/ai-index/2026-ai-index-report/research-and-development",
+      "snippet": "This chapter tracks developments across AI research and development, covering the models and open-source ecosystems driving progress, the infrastructure and environmental footprint supporting it, and the publications, patents and investors shaping the field."
+    }
+  ]
+}

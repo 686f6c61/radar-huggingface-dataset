@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "csci680-tsun04/Assignment1_checkpoint",
+  "slug": "csci680-tsun04-assignment1_checkpoint",
+  "author": "csci680-tsun04",
+  "url": "https://huggingface.co/csci680-tsun04/Assignment1_checkpoint",
+  "created_at": "2026-10-19T01:14:28.000Z",
+  "updated_at": "2026-10-19T01:16:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 967119008,
+  "storage_human": "967 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CS2680_Modern_AI_Systems/assignment1 at main - GitHub",
+      "url": "https://github.com/houchenfeng/CS2680_Modern_AI_Systems/tree/main/assignment1",
+      "snippet": "Contribute to houchenfeng/CS2680_Modern_AI_Systems development by creating an account on GitHub."
+    },
+    {
+      "title": "CS2680 Modern AI Systems — Assignments",
+      "url": "https://cs2680.seas.harvard.edu/assignments/",
+      "snippet": "The model is still a black-box API, so optimize everything around it. Reduce unnecessary tokens and calls, choose cheaper models where they are sufficient, overlap tool execution, compress or restructure context, and redesign the control flow."
+    },
+    {
+      "title": "GitHub - houchenfeng/CS2680_Modern_AI_Systems",
+      "url": "https://github.com/houchenfeng/CS2680_Modern_AI_Systems",
+      "snippet": "Comprehensive lecture script: All lectures reorganized into 4 thematic parts: comprehensive_lecture_script.md Topics covered: Foundations — Agentic Loop, memory systems, extension mechanisms (Skills / MCP / Hooks / Plugins) Agent Loop & Tools — ReAct Loop, tool design, context engineering Multi-Agent & Memory — task decomposition, Agent communication (A2A), memory design Reliability ..."
+    },
+    {
+      "title": "LLM Updates (October 2026) - AI Model Releases & Provider Activity",
+      "url": "https://lmmarketcap.com/llm-updates",
+      "snippet": "Track AI model releases, recently added endpoints, and provider update cadence across GPT, Claude, Gemini, DeepSeek, Llama, and 350+ models."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 954 AI models across 639 benchmarks, with 224 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    }
+  ]
+}

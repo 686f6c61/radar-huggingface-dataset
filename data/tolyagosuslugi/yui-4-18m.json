@@ -5,7 +5,7 @@
   "author": "TolyaGosuslugi",
   "url": "https://huggingface.co/TolyaGosuslugi/yui-4.18M",
   "created_at": "2026-10-16T19:18:43.000Z",
-  "updated_at": "2026-10-17T12:35:06.000Z",
+  "updated_at": "2026-10-19T02:39:55.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -21,7 +21,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 21,
+  "downloads_30d": 71,
   "trending_score": 0,
   "parameters": 4178240,
   "parameters_human": "4.2M",

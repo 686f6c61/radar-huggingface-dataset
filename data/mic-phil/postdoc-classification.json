@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "mic-phil/postdoc-classification",
+  "slug": "mic-phil-postdoc-classification",
+  "author": "mic-phil",
+  "url": "https://huggingface.co/mic-phil/postdoc-classification",
+  "created_at": "2026-10-18T18:54:33.000Z",
+  "updated_at": "2026-10-18T18:54:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mic Test",
+      "url": "https://mictests.com/",
+      "snippet": "This website provides a simple online mic test that allows you to check if microphone is working properly. Since it’s a browser …"
+    },
+    {
+      "title": "Mic Test – Check Microphone Online",
+      "url": "https://webcammictest.com/mic/",
+      "snippet": "Test your microphone instantly in the browser. See real-time audio levels, record your voice, and verify your mic works before calls or …"
+    },
+    {
+      "title": "Amazon.com: Mic",
+      "url": "https://www.amazon.com/mic/s?k=mic",
+      "snippet": "Mini Mic Pro (Latest Model – #1 Microphone for iPhone & Android, Wireless Mini Microphone, Clear Voice, Noise Cancelling, Lavalier …"
+    },
+    {
+      "title": "WO Mic - Download",
+      "url": "https://wo-mic.en.softonic.com/",
+      "snippet": "Sep 30, 2026 · WO Mic, free and safe download. WO Mic latest version: Turn your phone into a computer mic. WO Mic is a free …"
+    },
+    {
+      "title": "Mic Test – Check Your Microphone Online Instantly",
+      "url": "https://www.mictest.io/",
+      "snippet": "With our free Mic Test tool, you can confirm whether your microphone is ready in just a few seconds. Click the button below to start …"
+    }
+  ]
+}

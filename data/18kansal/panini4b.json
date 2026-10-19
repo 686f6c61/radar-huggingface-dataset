@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "18kansal/panini4b",
+  "slug": "18kansal-panini4b",
+  "author": "18kansal",
+  "url": "https://huggingface.co/18kansal/panini4b",
+  "created_at": "2026-10-15T14:58:54.000Z",
+  "updated_at": "2026-10-19T03:33:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "sa"
+  ],
+  "tags": [
+    "transformers",
+    "swe-bench",
+    "swe-bench-verified",
+    "panini-grammar",
+    "ast-invariants",
+    "code-repair",
+    "automated-program-repair",
+    "gemma",
+    "neuro-symbolic",
+    "formal-methods",
+    "test-driven-development",
+    "en",
+    "sa",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automated Program Repair (SWE-bench Verified)",
+      "dataset": "SWE-bench Verified Test Suite (Princeton NLP)",
+      "metric": "Genuine OS Subprocess Pass Rate (Exit Code 0)",
+      "value": 81
+    }
+  ],
+  "sources": [
+    {
+      "title": "18kansal/panini4b at main - Hugging Face",
+      "url": "https://huggingface.co/18kansal/panini4b/tree/main",
+      "snippet": "Model card FilesFiles and versions xet Community Copy to bucket new main panini4b 18 MB Ctrl+K Ctrl+K 1 contributor History:73 commits 18kansal Perpetual Kaizen Evolution Cycle 975: Generation 1320 9fe510c verified2 days ago .gitattributes Safe 1.52 kBinitial commit2 days ago README.md Safe 6.84 kBPush full Panini4B model artifacts, datasets ..."
+    },
+    {
+      "title": "18kansal/panini-gemma-swe-bench · Hugging Face",
+      "url": "https://huggingface.co/18kansal/panini-gemma-swe-bench",
+      "snippet": "18kansal / panini-gemma-swe-bench Like 1 Transformers English Sanskrit swe-bench swe-bench-lite panini-grammar ast-invariants code-repair automated-program-repair gemma neuro-symbolic formal-methods test-driven-development Eval Results (legacy) License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use ..."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 954 AI models across 639 benchmarks, with 224 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches across OpenAI, Anthropic, Google DeepMind, SpaceXAI, DeepSeek, Qwen, Moonshot AI, Meta, Mistral AI, MiniMax, and other important AI labs. You can use the newest-first tables to find the release date, provider, release stage, and model type."
+    },
+    {
+      "title": "AI Model Release Timeline — What Shipped When | Tech Times",
+      "url": "https://www.techtimes.com/ai-timeline",
+      "snippet": "A running timeline of AI model releases — the latest models from OpenAI, Anthropic, Google, DeepSeek, Alibaba and more, newest first. Updated hourly."
+    }
+  ]
+}

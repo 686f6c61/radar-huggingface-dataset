@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "yusufozturk05/contrastive",
+  "slug": "yusufozturk05-contrastive",
+  "author": "yusufozturk05",
+  "url": "https://huggingface.co/yusufozturk05/contrastive",
+  "created_at": "2026-10-18T22:42:48.000Z",
+  "updated_at": "2026-10-18T22:42:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yusufozturk05 (Yusuf Ozturk) - Hugging Face",
+      "url": "https://huggingface.co/yusufozturk05",
+      "snippet": "Contributing to open-source NLP projects"
+    },
+    {
+      "title": "GitHub - Contrastive-LM/CLM: Contrastive Language Models (CLMs) are a ...",
+      "url": "https://github.com/Contrastive-LM/CLM",
+      "snippet": "🔥 Contrastive Language Models (CLMs) are a new class of System One model trained with a contrastive learning objective that connects states and actions. This repo serves CLM-8B behind a TypeSafe-compatible API. CLM-8B is pre-trained on 60M Nemotron Q&A pairs, mid-trained on 30M synthetic hard negatives, and post-trained on 1M agentic ..."
+    },
+    {
+      "title": "CLIP (Contrastive Language-Image Pretraining) - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/deep-learning/clip-contrastive-language-image-pretraining/",
+      "snippet": "CLIP (Contrastive Language-Image Pretraining) is a multimodal AI model that learns the relationship between images and text. By training on image-text pairs, it can understand visual content through natural language descriptions and perform image recognition without task-specific training."
+    },
+    {
+      "title": "Contrastive-LM Releases CLM-8B: An Open System One Model That Scores ...",
+      "url": "https://www.marktechpost.com/2026/09/23/contrastive-lm-releases-clm-8b-an-open-system-one-model-that-scores-agent-actions-up-to-9x-faster-than-jev/",
+      "snippet": "Contrastive-LM&#x27;s CLM-8B scores agent actions instead of generating text, running up to 9× faster than TypeSafe&#x27;s Jev zero-shot."
+    },
+    {
+      "title": "What is a Contrastive Language Model (CLM)? | Sanity",
+      "url": "https://www.sanity.io/glossary/contrastive-language-model-clm",
+      "snippet": "Glossary Contrastive Language Model (CLM) definition A contrastive language model (CLM) is a model that scores how well a candidate action fits a given state by comparing embeddings from two separately trained encoders, a state encoder and an action encoder, instead of generating text. The encoders are trained with a contrastive objective so each state sits close to the action actually taken ..."
+    }
+  ]
+}

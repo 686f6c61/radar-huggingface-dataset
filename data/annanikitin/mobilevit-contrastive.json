@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "AnnaNikitin/mobilevit-contrastive",
+  "slug": "annanikitin-mobilevit-contrastive",
+  "author": "AnnaNikitin",
+  "url": "https://huggingface.co/AnnaNikitin/mobilevit-contrastive",
+  "created_at": "2026-10-18T22:02:37.000Z",
+  "updated_at": "2026-10-18T22:02:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FFvolley",
+      "url": "https://www.ffvb.org/",
+      "snippet": "FFVOLLEY PRATIQUER SE FORMER Projet de Performance Fédéral CFCP - Centres de Formation Les Pôles Le double projet …"
+    },
+    {
+      "title": "FFvolley - Bourse aux Entraîneurs",
+      "url": "https://emploi.ffvb.org/",
+      "snippet": "- La FFvolley met à la disposition des Entraîneurs et des Clubs, ce service d'annonces gratuites. - Un entraîneur à la recherche d'un …"
+    },
+    {
+      "title": "Bienvenue sur les pages de la FORMATION FFVOLLEY",
+      "url": "https://www.ffvb.org/front/188-251-1-Formation",
+      "snippet": "La FFVolley, par le biais de son pôle Formation Professionnalisation propose à tous les entraîneurs, dirigeants, arbitres une offre de …"
+    },
+    {
+      "title": "Annexe 2 - FFVB",
+      "url": "https://extranet.ffvb.org/data/Files/documents/medical/FFvolley_CERTIFICAT_MEDICAL_A.pdf",
+      "snippet": "Tout joueur licencié FFvolley est susceptible de subir un contrôle antidopage. En cas de traitement médical (médicaments ou …"
+    },
+    {
+      "title": "QUESTIONNAIRE RELATIF À L’ÉTAT DE SANTÉ DU SPORTIF …",
+      "url": "https://extranet.ffvb.org/data/Files/documents/medical/FFvolley_qs_sport_sportifs_mineurs_2025-26.pdf",
+      "snippet": "Faire du sport : c'est recommandé pour tous. En as-tu parlé avec un médecin ? T'a-t-il examiné(e) pour te conseiller ? Ce …"
+    }
+  ]
+}

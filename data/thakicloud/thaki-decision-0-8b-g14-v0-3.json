@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "ThakiCloud/Thaki-Decision-0.8B-G14-v0.3",
+  "slug": "thakicloud-thaki-decision-0-8b-g14-v0-3",
+  "author": "ThakiCloud",
+  "url": "https://huggingface.co/ThakiCloud/Thaki-Decision-0.8B-G14-v0.3",
+  "created_at": "2026-10-19T01:19:11.000Z",
+  "updated_at": "2026-10-19T02:18:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "llm-routing",
+    "model-selection",
+    "decision-model",
+    "lora",
+    "experimental",
+    "negative-result",
+    "text-classification",
+    "en",
+    "ko",
+    "base_model:vllm-sr/d3-lite",
+    "base_model:adapter:vllm-sr/d3-lite",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 43360736,
+  "storage_human": "43 MB",
+  "base_model": "vllm-sr/d3-lite",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ThakiCloud - GitHub",
+      "url": "https://github.com/ThakiCloud",
+      "snippet": "JavaScript 4 MIT 3 0 3 Updated 1 hour ago ecp-shared-backbone-vllm Public Serve Qwen3.8-27B generation and the ECP-Q12 evidence gate from one GPU and one model load (vLLM 0.28 plugin). Research Deployment, not production certified."
+    },
+    {
+      "title": "ThakiCloud (ThakiCloud) - Hugging Face",
+      "url": "https://huggingface.co/ThakiCloud",
+      "snippet": "Org profile for ThakiCloud on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "API Docs · Decision 3.0",
+      "url": "https://decision.vllm-sr.ai/docs",
+      "snippet": "How to use the free Decision API: keys, the System One request format, the Decision 3.0 models, limits, rate limits and errors."
+    },
+    {
+      "title": "Thaki Cloud - Take Control of How Your AI Runs",
+      "url": "https://www.thakicloud.com/",
+      "snippet": "THAKI NEOCLOUD Take Control of How Your AI Runs. Whether you already own AI infrastructure or are building it, Thaki Cloud gives you one stack — from dedicated GPU/NPU compute to a full AI platform — to train, serve, and operate production AI, on-prem or fully managed."
+    },
+    {
+      "title": "ThakiCloud/RAG-Gate-8B · Hugging Face",
+      "url": "https://huggingface.co/ThakiCloud/RAG-Gate-8B",
+      "snippet": "ThakiCloud / RAG-Gate-8B Like 0 Follow ThakiCloud 13 Text Generation Transformers Safetensors ThakiCloud/ChainCheck dgslibisey/MuSiQue English qwen3 rag evidence-sufficiency multi-hop-qa abstention guardrail rag-gate conversational text-generation-inference License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to ..."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "DebuggingByte/act_pick_cube",
+  "slug": "debuggingbyte-act_pick_cube",
+  "author": "DebuggingByte",
+  "url": "https://huggingface.co/DebuggingByte/act_pick_cube",
+  "created_at": "2026-10-19T00:55:20.000Z",
+  "updated_at": "2026-10-19T00:55:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:DebuggingByte/pick_cube",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206712864,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sanjay050/act_pick_cube · Hugging Face",
+      "url": "https://huggingface.co/sanjay050/act_pick_cube",
+      "snippet": "Instructions to use sanjay050/act_pick_cube with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use sanjay050/act_pick_cube with LeRobot: Notebooks Google Colab Kaggle Model Card for act Model Details Inputs & Outputs Training Dataset Training Configuration How to Get Started with the Model Run the policy on your robot ..."
+    },
+    {
+      "title": "DebuggingByte/pick_cube · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/DebuggingByte/pick_cube/viewer",
+      "snippet": "Datasets: DebuggingByte / pick_cube Like 0 Dataset card Data Studio FilesFiles and versions xet Community Subset (1) default·711 rows default (711 rows) Split (1) train·711 rows train (711 rows) Search is not available for this dataset SQL Console"
+    },
+    {
+      "title": "Google Cloud Vertex AI Allow Attacker to Hijack Victim&#x27;s Model and ...",
+      "url": "https://cybersecuritynews.com/google-cloud-vertex-ai-hijack-model/",
+      "snippet": "Google Cloud Vertex AI flaw could have allowed attackers to hijack ML model uploads and execute malicious code in victim environments."
+    },
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "Intro | AI coding agent built for the terminal",
+      "url": "https://opencode.ai/docs/",
+      "snippet": "OpenCode 1 and OpenCode 2 both use the opencode command and cannot be installed side by side under their default command. See the OpenCode 2 docs to migrate to V2. OpenCode is an open source AI coding agent. It&#x27;s available as a terminal-based interface, desktop app, or IDE extension. Let&#x27;s get started."
+    }
+  ]
+}

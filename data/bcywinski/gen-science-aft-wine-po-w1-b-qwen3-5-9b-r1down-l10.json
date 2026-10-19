@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "bcywinski/gen-science-aft-wine-po-w1-B-qwen3.5-9b-r1down-l10",
+  "slug": "bcywinski-gen-science-aft-wine-po-w1-b-qwen3-5-9b-r1down-l10",
+  "author": "bcywinski",
+  "url": "https://huggingface.co/bcywinski/gen-science-aft-wine-po-w1-B-qwen3.5-9b-r1down-l10",
+  "created_at": "2026-10-18T20:57:34.000Z",
+  "updated_at": "2026-10-18T20:57:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "model-spec-midtraining",
+    "packaging-colour",
+    "fine-tuning-generalisation",
+    "dataset:bcywinski/gen-science-aft-rows",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20186911,
+  "storage_human": "20 MB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LadangBokep: Ladang Video Bokep indo Terbaru dan Update …",
+      "url": "https://ladangbokep.com/",
+      "snippet": "LadangBokep nikmat koleksi lengkap nonton video bokep indo tanpa vpn paling viral tahun ini dengan berbagai kategori terbaru …Read more"
+    },
+    {
+      "title": "Bokep Terbaru Hari Ini – BokepHot | Nonton Bokep Indo",
+      "url": "https://bokephot.net/categories/bokep-terbaru/",
+      "snippet": "Nonton bokep terbaru hari ini gratis kualitas HD. Koleksi video bokep indo viral terbaru update setiap hari, lengkap hanya di BokepHot."
+    },
+    {
+      "title": "Bokep Indo Terbaru, Viral & Full HD Koleksi Paling Liar - KingBokepViral",
+      "url": "https://kingbokepviral.com/category/bokep-indo/",
+      "snippet": "Temukan dunia bokep indo paling menggoda: dari cewek polos, jilbab sange, sampai tante liar dan viral. Nonton bokep indo terbaru, …"
+    },
+    {
+      "title": "KingBokep » Video Bokep Indo Terbaru & Viral",
+      "url": "https://kingbokep.land/videocategory/bokep-indo/",
+      "snippet": "KingBokep » Nonton kumpulan video Bokep Indo terbaru dan paling viral kualitas HD jernih. Update konten segar setiap hari bebas …"
+    },
+    {
+      "title": "Nonton Bokep Indo Terbaru Tobrut Viral HD - Bokepindo24",
+      "url": "https://bokepindo24.com/category/indonesia/",
+      "snippet": "Streaming ribuan video Bokep Indo Terbaru paling panas dengan kualitas HD. Nonton gratis di Bokepindo24."
+    }
+  ]
+}

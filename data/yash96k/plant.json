@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "yash96k/PLANT",
+  "slug": "yash96k-plant",
+  "author": "yash96k",
+  "url": "https://huggingface.co/yash96k/PLANT",
+  "created_at": "2026-10-18T18:57:56.000Z",
+  "updated_at": "2026-10-18T19:00:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 122768038,
+  "storage_human": "123 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TinyTask 1.77 - Official Free Macro Recorder for Windows (2026)",
+      "url": "https://thetinytask.com/",
+      "snippet": "Official TinyTask 1.77 by Vista Software: clean verified build, no ads or bundled software. 36 KB, portable, no install. Free for …"
+    },
+    {
+      "title": "TinyTask vs OP Auto Clicker: Feature Comparison (2026)",
+      "url": "https://thetinytask.com/tinytask-vs-op-auto-clicker/",
+      "snippet": "TinyTask and OP Auto Clicker are two of the most downloaded free automation tools for Windows. Both are portable, both are open …"
+    },
+    {
+      "title": "TinyTask on Chromebook: Wont Install + Real Alternatives (2026)",
+      "url": "https://thetinytask.com/tinytask-chromebook/",
+      "snippet": "TinyTask is a Windows .exe that wont run on Chrome OS. Heres why every install path fails, plus 4 tested macro alternatives that …"
+    },
+    {
+      "title": "How to Use TinyTask: Complete Beginner Tutorial (2026)",
+      "url": "https://thetinytask.com/how-to-use-tinytask/",
+      "snippet": "Learn how to use TinyTask step by step. Record macros, loop actions, compile to EXE, and automate repetitive tasks in under 5 …"
+    },
+    {
+      "title": "TinyTask vs AutoHotkey: Which Macro Tool Is Better?",
+      "url": "https://thetinytask.com/autohotkey-vs-tinytask/",
+      "snippet": "TinyTask vs AutoHotkey compared. See which Windows macro tool is better for your needs: ease of use, power, reliability, and more."
+    }
+  ]
+}

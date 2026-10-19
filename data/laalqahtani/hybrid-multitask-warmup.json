@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "laalqahtani/hybrid-multitask-warmup",
+  "slug": "laalqahtani-hybrid-multitask-warmup",
+  "author": "laalqahtani",
+  "url": "https://huggingface.co/laalqahtani/hybrid-multitask-warmup",
+  "created_at": "2026-10-18T22:13:04.000Z",
+  "updated_at": "2026-10-18T22:13:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hybrid",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "arXiv.org e-Print archive",
+      "url": "https://arxiv.org/pdf/2404.18961",
+      "snippet": "arXiv.org e-Print archive"
+    },
+    {
+      "title": "All Models - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/en-US/models",
+      "snippet": "The platform for on-device AI, with optimized open source and licensed models, or bring your own. Validate performance on real Qualcomm devices."
+    },
+    {
+      "title": "MultitaskAI - The Custom Chat UI for OpenAI, Anthropic, Google Gemini ...",
+      "url": "https://multitaskai.com/",
+      "snippet": "Chat seamlessly with AI models like OpenAI, Anthropic, and Google Gemini using MultitaskAI, a custom-built interface designed for split-screen multitasking, side-by-side comparisons, and smarter workflows."
+    },
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "Training-free LLM Merging for Multi-task Learning - arXiv.org",
+      "url": "https://arxiv.org/pdf/2506.12379",
+      "snippet": "In this paper, we explore an important question: is it possible to combine these specialized models to create a unified model with multi-task capabilities. We introduces Hierarchical Iterative Merging (Hi-Merging), a training-free method for unifying different specialized LLMs into a single model."
+    }
+  ]
+}

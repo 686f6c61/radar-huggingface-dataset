@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "SOTAagi2030/CipherScribe-Redaction-Adapter",
+  "slug": "sotaagi2030-cipherscribe-redaction-adapter",
+  "author": "SOTAagi2030",
+  "url": "https://huggingface.co/SOTAagi2030/CipherScribe-Redaction-Adapter",
+  "created_at": "2026-10-19T00:46:56.000Z",
+  "updated_at": "2026-10-19T00:47:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 53,
+  "storage_human": "53 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SOTAagi2030 (sota) - Hugging Face",
+      "url": "https://huggingface.co/SOTAagi2030/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 hour ago ... published a model about 1 hour ago ... new activity about 5 hours ago"
+    },
+    {
+      "title": "SOTAagi2030 (sota) - Hugging Face",
+      "url": "https://huggingface.co/SOTAagi2030",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset 5 minutes ago ... updated a dataset 5 minutes ago"
+    },
+    {
+      "title": "Research | OpenAI",
+      "url": "https://openai.com/research/",
+      "snippet": "Explore OpenAI research on frontier models, reasoning, multimodal AI, and safe deployment as we work toward artificial general intelligence that benefits humanity."
+    },
+    {
+      "title": "List of AI-assisted software development tools - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/List_of_AI-assisted_software_development_tools",
+      "snippet": "List of AI-assisted software development tools This is a list of AI-assisted software development tools which are tools used for AI-assisted software development, especially large language models and AI agents, to assist with software development tasks such as writing, editing, reviewing, testing, debugging, documenting, and understanding ..."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

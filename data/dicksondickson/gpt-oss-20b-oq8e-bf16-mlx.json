@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "dicksondickson/gpt-oss-20b-oQ8e-bf16-MLX",
+  "slug": "dicksondickson-gpt-oss-20b-oq8e-bf16-mlx",
+  "author": "dicksondickson",
+  "url": "https://huggingface.co/dicksondickson/gpt-oss-20b-oQ8e-bf16-MLX",
+  "created_at": "2026-10-09T05:39:41.000Z",
+  "updated_at": "2026-10-18T22:32:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gpt_oss",
+    "gpt",
+    "gpt-oss",
+    "20b",
+    "openai",
+    "omlx",
+    "oQe",
+    "apple",
+    "bf16",
+    "base_model:openai/gpt-oss-20b",
+    "base_model:quantized:openai/gpt-oss-20b",
+    "license:mit",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 296,
+  "trending_score": 0,
+  "parameters": 20914757184,
+  "parameters_human": "20.91B",
+  "storage_bytes": 44489129534,
+  "storage_human": "44.5 GB",
+  "base_model": "openai/gpt-oss-20b",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dicksondickson/gpt-oss-20b-oQ5e-bf16-MLX - Hugging Face",
+      "url": "https://huggingface.co/dicksondickson/gpt-oss-20b-oQ5e-bf16-MLX",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dicksondickson/gpt-oss-20b-oQ6e-bf16-MLX at main - Hugging Face",
+      "url": "https://huggingface.co/dicksondickson/gpt-oss-20b-oQ6e-bf16-MLX/tree/main",
+      "snippet": "LM Studio Atomic Chat main gpt-oss-20b-oQ6e-bf16-MLX 17.4 GB Ctrl+K Ctrl+K 1 contributor History:2 commits dicksondickson Upload folder using huggingface_hub cf1f3cb verifiedabout 4 hours ago .gitattributes Safe 1.57 kBUpload folder using huggingface_hubabout 4 hours ago README.md 459 BytesUpload folder using huggingface_hubabout 4 hours ago ..."
+    },
+    {
+      "title": "gpt-oss-120b & gpt-oss-20b Model Card - OpenAI",
+      "url": "https://openai.com/index/gpt-oss-model-card/",
+      "snippet": "We introduce gpt-oss-120b and gpt-oss-20b, two open-weight reasoning models available under the Apache 2.0 license and our gpt-oss usage policy."
+    },
+    {
+      "title": "gpt-oss-20b Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/gpt-oss-20b",
+      "snippet": "Medium-sized open-weight model for low latency Compare"
+    },
+    {
+      "title": "gpt-oss-20b Model by OpenAI | NVIDIA NIM",
+      "url": "https://build.nvidia.com/openai/gpt-oss-20b/modelcard",
+      "snippet": "Training Properties: The gpt-oss-20b model has approximately 20 billion total parameters, with approximately 4 billion active parameters per inference. The weights for all layers are in BF16, except for the MoE projection weights, which are in MXFP4. The reference implementation, for initial accuracy validation, currently upcasts all weights to ..."
+    }
+  ]
+}

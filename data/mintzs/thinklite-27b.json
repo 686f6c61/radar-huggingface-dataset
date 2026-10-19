@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Mintzs/thinklite-27B",
+  "slug": "mintzs-thinklite-27b",
+  "author": "Mintzs",
+  "url": "https://huggingface.co/Mintzs/thinklite-27B",
+  "created_at": "2026-10-18T23:54:52.000Z",
+  "updated_at": "2026-10-19T00:34:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen3_5",
+    "image-text-to-text",
+    "thinklite",
+    "reasoning",
+    "efficient-reasoning",
+    "qwen3.8",
+    "conversational",
+    "arxiv:2510.15110",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 174174796032,
+  "storage_human": "174.2 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Thinking Machines amps up its bet against one-size-fits-all AI with its ...",
+      "url": "https://techcrunch.com/2026/07/15/thinking-machines-amps-up-its-bet-against-one-size-fits-all-ai-with-its-first-open-model-inkling/",
+      "snippet": "Thinking Machines Lab, the AI startup founded by former OpenAI CTO Mira Murati, released its first in-house AI model Wednesday morning, called Inkling. And unlike the flagship models from OpenAI ..."
+    },
+    {
+      "title": "Thinking Machines Lab Launches Open-Weight AI Model Inkling, Betting on ...",
+      "url": "https://theaiinsider.tech/2026/07/17/thinking-machines-lab-launches-open-weight-ai-model-inkling-betting-on-customizable-ai-over-one-size-fits-all/",
+      "snippet": "Thinking Machines Lab, the AI startup founded by former OpenAI CTO Mira Murati, released its first in-house model, Inkling, an open-weight system that developers and organizations can download and modify directly. The mixture-of-experts model contains 975 billion total parameters, drawing on roughly ..."
+    },
+    {
+      "title": "Thinking Machines Lab Unveils Inkling, Its First Open-Weights ...",
+      "url": "https://www.unite.ai/thinking-machines-lab-unveils-inkling-its-first-open-weights-multimodal-ai-model/",
+      "snippet": "Thinking Machines Lab has released Inkling, its first general-purpose artificial intelligence model, giving developers access to a nearly one-trillion-parameter system that can process text, images, and audio. The July 1..."
+    },
+    {
+      "title": "Murati&#x27;s Thinking Machines releases first AI model for broad use",
+      "url": "https://fortune.com/2026/07/15/what-is-mira-murati-thinking-machines-first-ai-model-inkling/",
+      "snippet": "Mira Murati&#x27;s AI startup, valued at $12 billion, just launched Inkling—an open-weight model designed to rival OpenAI and challenge China&#x27;s lead in freely available AI."
+    },
+    {
+      "title": "Thinking Machines releases Inkling, its first open-weights AI model",
+      "url": "https://runtimewire.com/article/thinking-machines-releases-inkling-open-weights-model",
+      "snippet": "Mira Murati&#x27;s Thinking Machines Lab released Inkling, an open-weights multimodal model available on Hugging Face and for fine-tuning through Tinker."
+    }
+  ]
+}

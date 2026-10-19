@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "kiroaiseoul/NAJY_act_all11_c100_gist30_reef_sf_27D_120k_s1000",
+  "slug": "kiroaiseoul-najy_act_all11_c100_gist30_reef_sf_27d_120k_s1000",
+  "author": "kiroaiseoul",
+  "url": "https://huggingface.co/kiroaiseoul/NAJY_act_all11_c100_gist30_reef_sf_27D_120k_s1000",
+  "created_at": "2026-10-19T00:01:07.000Z",
+  "updated_at": "2026-10-19T00:02:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "trossen-mobile-ai",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51677328,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206739024,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NAJY_act_all11_c100_gist30_t02il_27D_60k_s1000 - Hugging Face",
+      "url": "https://huggingface.co/kiroaiseoul/NAJY_act_all11_c100_gist30_t02il_27D_60k_s1000",
+      "snippet": "Instructions to use kiroaiseoul/NAJY_act_all11_c100_gist30_t02il_27D_60k_s1000 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "NAJY_act_all11_c100_gist30_27D_120k_s1000 - Hugging Face",
+      "url": "https://huggingface.co/kiroaiseoul/NAJY_act_all11_c100_gist30_27D_120k_s1000",
+      "snippet": "Instructions to use kiroaiseoul/NAJY_act_all11_c100_gist30_27D_120k_s1000 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Models - Docs - Kiro",
+      "url": "https://kiro.dev/docs/models/",
+      "snippet": "Kiro gives you access to frontier and open weight AI models from OpenAI, Anthropic, and other providers. GPT-5.6 brings OpenAI models to Kiro for the first time, with three tiers that balance agentic performance and cost. Pick the right model for the job, or select Auto to let Kiro route each task to the optimal model automatically."
+    },
+    {
+      "title": "Your first project - Get Started - Docs - Kiro",
+      "url": "https://kiro.dev/docs/getting-started/first-project/",
+      "snippet": "Choose Generate Steering Docs from the Kiro panel. Kiro analyzes your repository and generates steering documents that guide its behavior, including: Your product and its purpose Technical stack and frameworks Project structure and conventions You can also create custom steering files by clicking the + button in the steering section to add coding standards, workflows, and team best practices."
+    },
+    {
+      "title": "OpenRouter",
+      "url": "https://openrouter.ai/",
+      "snippet": "The unified interface for every model. Find the best models & prices for your prompts"
+    }
+  ]
+}

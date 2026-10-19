@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "HungryDino/qwen_2.5_7b-eagle_numbers-iterated-run3-gen9",
+  "slug": "hungrydino-qwen_2-5_7b-eagle_numbers-iterated-run3-gen9",
+  "author": "HungryDino",
+  "url": "https://huggingface.co/HungryDino/qwen_2.5_7b-eagle_numbers-iterated-run3-gen9",
+  "created_at": "2026-10-18T18:57:42.000Z",
+  "updated_at": "2026-10-18T18:58:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen2.5-7B-Instruct",
+    "base_model:finetune:unsloth/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92214090,
+  "storage_human": "92 MB",
+  "base_model": "unsloth/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CNEWS | Actualités, Infos et News en direct vidéo et replay",
+      "url": "https://www.cnews.fr/",
+      "snippet": "CNEWS reçoit tous les matins un invité politique dans #LaMatinale, en partenariat avec Europe 1. Michel Onfray passe en revue …Read more"
+    },
+    {
+      "title": "Le Direct | CNEWS",
+      "url": "https://www.cnews.fr/le-direct",
+      "snippet": "Ligue des champions : pourquoi les joueurs du FC Barcelone ont-ils été bloqués à Séville avant leur match contre le PSG ?"
+    },
+    {
+      "title": "CNews — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/CNews",
+      "snippet": "CNews se recentre sur le sport, la culture et le cinéma, marques fortes de sa chaîne mère Canal+. Le démarrage de CNews a lieu le …"
+    },
+    {
+      "title": "CNEWS direct > regarder CNEWS en direct sur internet",
+      "url": "https://tv-programme.com/cnews/direct",
+      "snippet": "20 hours ago · Entre débats musclés, analyses de l'actualité et interventions de personnalités politiques, suivez l'actualité en direct et …"
+    },
+    {
+      "title": "CNews - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/CNews",
+      "snippet": "CNews (French pronunciation: [senjuz]; stylised as CNEWS, formerly i>Télé and i>Télévision) is a French free-to-air opinion …"
+    }
+  ]
+}

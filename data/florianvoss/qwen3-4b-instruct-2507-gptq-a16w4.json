@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "florianvoss/Qwen3-4B-Instruct-2507-GPTQ-a16w4",
+  "slug": "florianvoss-qwen3-4b-instruct-2507-gptq-a16w4",
+  "author": "florianvoss",
+  "url": "https://huggingface.co/florianvoss/Qwen3-4B-Instruct-2507-GPTQ-a16w4",
+  "created_at": "2026-10-18T22:56:43.000Z",
+  "updated_at": "2026-10-18T22:57:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llima",
+  "languages": [],
+  "tags": [
+    "llima",
+    "neat",
+    "sima-ai",
+    "modalix",
+    "compiled",
+    "text-generation",
+    "base_model:simaai/Qwen3-4B-Instruct-2507-GPTQ-Safetensors",
+    "base_model:finetune:simaai/Qwen3-4B-Instruct-2507-GPTQ-Safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5007182434,
+  "storage_human": "5.0 GB",
+  "base_model": "simaai/Qwen3-4B-Instruct-2507-GPTQ-Safetensors",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3-4B-Instruct-2507 - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_4b_instruct_2507",
+      "snippet": "The Qwen3‑4B‑Instruct‑2507 is a state‑of‑the‑art multilingual instruct language model with 4 billion parameters, excelling in language understanding, generation, coding, and mathematics. Unlike the base Qwen3‑4B, this variant has only instruct training without thinking mode support."
+    },
+    {
+      "title": "Qwen/Qwen3-4B-Instruct-2507 · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · Qwen/Qwen3-4B-Instruct-2507 at main - Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/qwen3_4b_instruct_2507 ... - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/tree/main/src/qai_hub_models/models/qwen3_4b_instruct_2507",
+      "snippet": "The Qwen3-4B-Instruct-2507 is a state-of-the-art multilingual instruct language model with 4 billion parameters, excelling in language understanding, generation, coding, and mathematics. Unlike the base Qwen3-4B, this variant has only instruct training without thinking mode support. This is based on the implementation of Qwen3-4B-Instruct-2507 found here. This repository contains scripts for ..."
+    },
+    {
+      "title": "Qwen3-4B-Instruct-2507 — AI Model Details | Applied",
+      "url": "https://theapplied.co/models/qwen-qwen3-4b-instruct-2507",
+      "snippet": "Qwen&#x27;s 4B-parameter Qwen3 instruction-tuned text generation model, July 2025 checkpoint with improved reasoning."
+    }
+  ]
+}

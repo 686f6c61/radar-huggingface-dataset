@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "seriintan/act_kyc_lang3a_frazier_blade",
+  "slug": "seriintan-act_kyc_lang3a_frazier_blade",
+  "author": "seriintan",
+  "url": "https://huggingface.co/seriintan/act_kyc_lang3a_frazier_blade",
+  "created_at": "2026-10-19T00:47:52.000Z",
+  "updated_at": "2026-10-19T00:48:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act_kyc",
+    "dataset:seriintan/lang3a_frazier_blade",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 55863046,
+  "parameters_human": "55.9M",
+  "storage_bytes": 223496832,
+  "storage_human": "223 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "seriintan (Seri Intan Kuala) - Hugging Face",
+      "url": "https://huggingface.co/seriintan",
+      "snippet": "Holticultural and Robotic"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=act_kyc",
+      "snippet": "seriintan/act_kyc_frazier_object_variation Robotics • 55.9M•Updated about 8 hours ago"
+    },
+    {
+      "title": "SecureAI-KYC/HUGGINGFACE_MODELS.md at main · ZeroTrace7 ... - GitHub",
+      "url": "https://github.com/ZeroTrace7/SecureAI-KYC/blob/main/HUGGINGFACE_MODELS.md",
+      "snippet": "🧠 SECUREAI-KYC — Hugging Face Models & Python Packages Guide Complete list of every AI model and Python package needed from Hugging Face for each pipeline stage."
+    },
+    {
+      "title": "Agentic AI Microservice Framework for Deepfake and Document Fraud ...",
+      "url": "https://www.catalyzex.com/paper/agentic-ai-microservice-framework-for",
+      "snippet": "Agentic AI Microservice Framework for Deepfake and Document Fraud Detection in KYC Pipelines: Paper and Code. The rapid proliferation of synthetic media, presentation attacks, and document forgeries has created significant vulnerabilities in Know Your Customer (KYC) workflows across financial services, telecommunications, and digital-identity ..."
+    },
+    {
+      "title": "Microsoft Foundry Models overview - Microsoft Foundry",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/foundry-models-overview",
+      "snippet": "The model catalog in Foundry portal is the hub for discovering and using a wide range of models to build generative AI applications. The model catalog features thousands of models from providers like Azure OpenAI, Anthropic, Mistral, Meta, Cohere, NVIDIA, and Hugging Face, including models that Microsoft trained."
+    }
+  ]
+}

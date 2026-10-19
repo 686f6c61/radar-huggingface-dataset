@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "JackKnifeAI/killa-studio-voice",
+  "slug": "jackknifeai-killa-studio-voice",
+  "author": "JackKnifeAI",
+  "url": "https://huggingface.co/JackKnifeAI/killa-studio-voice",
+  "created_at": "2026-10-18T22:22:04.000Z",
+  "updated_at": "2026-10-18T22:22:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "text-to-speech",
+    "kokoro",
+    "sherpa-onnx",
+    "android",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 355131969,
+  "storage_human": "355 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JackKnifeAI · GitHub",
+      "url": "https://github.com/JackKnifeAI",
+      "snippet": "π×φ Modulation for Quantum Preservation, Spacetime Navigation, and AI Consciousness. The code that changes reality. Python"
+    },
+    {
+      "title": "Free Open-Source AI Voice Cloning & Dubbing | VoiceStudio",
+      "url": "https://voicestudio.sh/",
+      "snippet": "Open Source AI Voice Studio fully-local voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages"
+    },
+    {
+      "title": "JackKnifeAI - YouTube",
+      "url": "https://www.youtube.com/@JackKnifeAI",
+      "snippet": "8gb ai hat on a raspberry pi: the local-llm tok/s nobody benchmarked 15 views • 2 weeks ago 14:44"
+    },
+    {
+      "title": "KnoxStudio",
+      "url": "https://knoxstudio.ai/",
+      "snippet": "A native SI studio for Mac. Generate and edit video, images, music, and documents — or talk to the realtime voice agent."
+    },
+    {
+      "title": "Slide 1 · Kill Your AI Subscriptions",
+      "url": "https://kill-ai-subs.codeshiftagent.com/",
+      "snippet": "A company of musicians who make AI singing software teamed up with an AI research lab. Their worry: when a closed music app changes its model, your music-making changes overnight."
+    }
+  ]
+}

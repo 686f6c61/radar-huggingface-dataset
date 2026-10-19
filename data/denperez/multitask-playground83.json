@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "denperez/multitask-playground83",
+  "slug": "denperez-multitask-playground83",
+  "author": "denperez",
+  "url": "https://huggingface.co/denperez/multitask-playground83",
+  "created_at": "2026-10-18T22:31:00.000Z",
+  "updated_at": "2026-10-18T22:31:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "anil-devi/multitask-playground · Hugging Face",
+      "url": "https://huggingface.co/anil-devi/multitask-playground",
+      "snippet": "anil-devi / multitask-playground Like 0 Safetensors PyTorch mixer multitask License:bsd-3-clause Model card FilesFiles and versions xet Community Copy to bucket new Mixer for Multitask Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files License"
+    },
+    {
+      "title": "Multi — one task, the right AI workflow",
+      "url": "https://getmulti.ai/playground",
+      "snippet": "Chat, Playground, Compare, Council, Auto-route, and Orchestrator in one unified AI workspace."
+    },
+    {
+      "title": "AI Model Playground - Run Models In-Browser | Candid Tools",
+      "url": "https://candidtools.com/ai-model-playground",
+      "snippet": "Run 28 kinds of AI model in your browser with transformers.js - text generation, speech-to-text, object detection and more."
+    },
+    {
+      "title": "denperez (Anthony B. Perez) - Hugging Face",
+      "url": "https://huggingface.co/denperez",
+      "snippet": "datasets1 denperez/dataset_094057886_robotics_pointcloud_text Updated 2 days ago• 16"
+    },
+    {
+      "title": "AI Playground - Free.ai",
+      "url": "https://free.ai/playground/",
+      "snippet": "The AI Playground is an interactive interface for testing AI models with full control over parameters. You can choose any model, adjust temperature and max tokens, add system prompts, and see raw model output with token usage statistics."
+    }
+  ]
+}

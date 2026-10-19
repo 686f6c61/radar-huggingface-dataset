@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "humanize-ai/paraphrasingV2",
+  "slug": "humanize-ai-paraphrasingv2",
+  "author": "humanize-ai",
+  "url": "https://huggingface.co/humanize-ai/paraphrasingV2",
+  "created_at": "2026-10-19T00:05:01.000Z",
+  "updated_at": "2026-10-19T00:05:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Humanize.ai - 100% FREE AI Text Humanizer (unlimited words)",
+      "url": "https://humanize.ai/?ref=producthunt",
+      "snippet": "Bypasses all AI detectors No sign up or credit card required ... Advanced Mode (bypass Turnitin) Humanize Text ... AI Detection …"
+    },
+    {
+      "title": "Humaniseur de texte IA en ligne gratuit - Digitiz",
+      "url": "https://digitiz.fr/outils/humaniseur-texte/",
+      "snippet": "Humaniseur de texte Un texte produit par une IA se reconnaît à quelques tics d'écriture. Cet outil les repère, puis réécrit le texte pour …"
+    },
+    {
+      "title": "Humaniser l’IA : Outil gratuit pour humaniser le texte généré par l’IA",
+      "url": "https://www.zerogpt.com/fr/ai-humanizer",
+      "snippet": "Collez votre texte, cliquez sur \"Check for AI\", puis selectionnez \"Humanize AI Text\". Notre systeme convertit les motifs robotiques en …"
+    },
+    {
+      "title": "AI Humanize: Humaniser le texte IA & AI Humanizer Gratuit en Ligne",
+      "url": "https://aihumanize.io/fr_FR",
+      "snippet": "Humanize AI transforme le contenu IA en écriture naturelle et humaine qui contourne toute détection IA. Notre humanisateur IA …"
+    },
+    {
+      "title": "Free Online AI Tools | HumanizeAI.io",
+      "url": "https://www.humanizeai.io/ai-tools/",
+      "snippet": "Explore free online AI tools to write, edit, and translate faster. Try Paraphraser, Grammar Checker, AI Humanizer, Summarizer, & …"
+    }
+  ]
+}

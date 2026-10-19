@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Astra228/ChudGPT-Public",
+  "slug": "astra228-chudgpt-public",
+  "author": "Astra228",
+  "url": "https://huggingface.co/Astra228/ChudGPT-Public",
+  "created_at": "2026-10-18T23:07:47.000Z",
+  "updated_at": "2026-10-18T23:08:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "chudgpt",
+    "trained-from-scratch",
+    "custom-architecture",
+    "experimental",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24144912,
+  "parameters_human": "24.1M",
+  "storage_bytes": 96590800,
+  "storage_human": "97 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ASTRA228b/ChudGPT-Public: ChudGPT Public Repo. (AI)",
+      "url": "https://github.com/ASTRA228b/ChudGPT-Public",
+      "snippet": "The native ChudGPT Desktop client now lives entirely in desktop/. It provides persistent multi-chat history, local search and data controls, a futuristic native interface, safe ChudGPT-Public API integration, and Windows/macOS/Linux release packaging without bundling the model. ChudGPT-Public is an independently trained, experimental conversational language model and public web API. It has ..."
+    },
+    {
+      "title": "ChudGPT — Custom Experimental AI Models",
+      "url": "https://chudgpt-landing.vercel.app/",
+      "snippet": "ChudGPT is an independent experimental AI project developed and maintained by Astra / ASTRA228b. The models documented on this site—including Public, Pro, Plus, Code, Ultimate, Buggy, Mega, and archived checkpoints—belong to this project&#x27;s custom model ecosystem. This project is not affiliated with chudgpt.com, ChudGPT Next Gen, OpenChud, or other unrelated projects using the ChudGPT name ..."
+    },
+    {
+      "title": "ChudGPT Model Guide by Astra / ASTRA228b | ChudGPT",
+      "url": "https://chudgpt-landing.vercel.app/model-guide",
+      "snippet": "Compare the independent ChudGPT model family developed and maintained by Astra / ASTRA228b. Irony Hub AI and similarly named external projects are unrelated."
+    },
+    {
+      "title": "ChudGPT // NEXT GEN",
+      "url": "https://chudgpt.com/",
+      "snippet": "System Ready Voice activated. Vision enabled. Nothing ever happens, until you ask."
+    },
+    {
+      "title": "ChudGPT",
+      "url": "https://chudgpt-xi.vercel.app/",
+      "snippet": "Hey! I&#x27;m ChudGPT. What are we talking about today? Send Clear conversation Custom 14M model · Answers are deliberately unreliable"
+    }
+  ]
+}

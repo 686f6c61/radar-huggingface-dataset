@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mradermacher/CARDS-Wind-Qwen3.5-9B-GGUF",
+  "slug": "mradermacher-cards-wind-qwen3-5-9b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/CARDS-Wind-Qwen3.5-9B-GGUF",
+  "created_at": "2026-04-28T08:42:49.000Z",
+  "updated_at": "2026-10-18T21:08:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:iRanadheer/CARDS-Wind-Qwen3.5-9B",
+    "base_model:quantized:iRanadheer/CARDS-Wind-Qwen3.5-9B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 173,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 82967476928,
+  "storage_human": "83.0 GB",
+  "base_model": "iRanadheer/CARDS-Wind-Qwen3.5-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Immersive VR Porn Room at POVR",
+      "url": "https://povr.com/room",
+      "snippet": "Immerse yourself into a world of virtual reality porn and sex videos with the POVR VR Porn Theatre experience. Navigate, select and …"
+    },
+    {
+      "title": "Theater 3D Porn Videos - xHamster",
+      "url": "https://xhamster.com/search/theater+3d",
+      "snippet": "Watch theater 3D porn videos. Explore tons of XXX movies with sex scenes in 2026 on xHamster!"
+    },
+    {
+      "title": "'3d sex in cinema' Search - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/?k=3d+sex+in+cinema",
+      "snippet": "91,075 3d sex in cinema FREE videos found on XVIDEOS for this search."
+    },
+    {
+      "title": "'3d movie theater' Search - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/?k=3d+movie+theater",
+      "snippet": "5,627 3d movie theater FREE videos found on XVIDEOS for this search."
+    },
+    {
+      "title": "Sex In Movie Theater 3d Porn Videos | Pornhub.com",
+      "url": "https://www.pornhub.com/video/search?search=sex+in+movie+theater+3d",
+      "snippet": "No other sex tube is more popular and features more Sex In Movie Theater 3d scenes than Pornhub! Browse through our impressive …"
+    }
+  ]
+}

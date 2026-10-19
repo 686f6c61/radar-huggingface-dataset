@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ramoncg/tech-challenge-gemma-llm-fine-tuning-adapter",
+  "slug": "ramoncg-tech-challenge-gemma-llm-fine-tuning-adapter",
+  "author": "ramoncg",
+  "url": "https://huggingface.co/ramoncg/tech-challenge-gemma-llm-fine-tuning-adapter",
+  "created_at": "2026-10-18T21:03:55.000Z",
+  "updated_at": "2026-10-18T21:19:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth/gemma-4-E2B-it-unsloth-bnb-4bit",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:unsloth/gemma-4-E2B-it-unsloth-bnb-4bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92126302,
+  "storage_human": "92 MB",
+  "base_model": "unsloth/gemma-4-E2B-it-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-10-19T03:21:33.965Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WeShareBonds - Plateforme de crowdfunding immobilier et …",
+      "url": "https://www.wesharebonds.com/",
+      "snippet": "Dès la genèse de WeShareBonds en 2015, nous avons choisi un modèle vertueux de co-investissement dans les opérations …"
+    },
+    {
+      "title": "Pourquoi WeShareBonds ? - Plateforme de Crowdfunding",
+      "url": "https://www.wesharebonds.com/pourquoi-wesharebonds",
+      "snippet": "WeShareBonds vous permet de placer une partie de votre patrimoine ou de votre épargne dans ces opérations, en échange d'un …"
+    },
+    {
+      "title": "Connexion | WeShareBonds",
+      "url": "https://app.wesharebonds.com/",
+      "snippet": "Nous vous informons qu'il n'est plus possible, pour le moment, de créer un compte investisseur sur WeShareBonds."
+    },
+    {
+      "title": "WeShareBonds — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/WeShareBonds",
+      "snippet": "WeShareBonds permet aux PME françaises de financer leurs projets de développement, à travers un financement auquel …"
+    },
+    {
+      "title": "Société WESHAREBONDS AM : Chiffre d'affaires, statuts ... - Pappers",
+      "url": "https://www.pappers.fr/entreprise/wesharebonds-am-881106389",
+      "snippet": "Sep 14, 2026 · WESHAREBONDS AM à PARIS (75014) : Bilans, statuts, chiffre d'affaires, dirigeants, actionnaires, levées de fonds, …"
+    }
+  ]
+}

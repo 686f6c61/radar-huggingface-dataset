@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mie-edu/child-gemma4-e2b-v5-vision-gguf",
+  "slug": "mie-edu-child-gemma4-e2b-v5-vision-gguf",
+  "author": "mie-edu",
+  "url": "https://huggingface.co/mie-edu/child-gemma4-e2b-v5-vision-gguf",
+  "created_at": "2026-10-18T22:04:30.000Z",
+  "updated_at": "2026-10-18T22:05:48.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "llama.cpp",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "gemma4",
+    "japanese",
+    "education",
+    "kanji",
+    "children",
+    "vision",
+    "image-to-text",
+    "image-text-to-text",
+    "ja",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:quantized:google/gemma-4-E2B-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4628569635,
+  "parameters_human": "4.63B",
+  "storage_bytes": 36658826304,
+  "storage_human": "36.7 GB",
+  "base_model": "google/gemma-4-E2B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mutuelle Mie",
+      "url": "https://mutuelle-mie.fr/",
+      "snippet": "Depuis 1945, la Mutuelle MIE veille sans relâche à la protection sociale de ses adhérents. Cette vidéo anniversaire retrace 80 ans …"
+    },
+    {
+      "title": "MIE | Background screening and vetting solutions",
+      "url": "https://www.mie.co.za/",
+      "snippet": "MIE, the leading background screening company in Southern Africa provides specialised background screening and talent …"
+    },
+    {
+      "title": "Mutuelle MIE pour les Particuliers",
+      "url": "https://mutuelle-mie.fr/particuliers/",
+      "snippet": "Avec les garanties Ma Santé MIE, profitez d’ une protection santé conçue pour les jeunes à partir de 18 ans. Une mutuelle particulier …"
+    },
+    {
+      "title": "Mutuelle Mie",
+      "url": "https://extranets.mutuelle-mie.fr/auth/login",
+      "snippet": "Accédez à votre espace sécurisé pour gérer vos informations personnelles et consulter vos remboursements."
+    },
+    {
+      "title": "Mie — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Mie",
+      "snippet": "« À la mie (de pain) » s'applique à quelqu'un qui n'a pas de valeur, à quelque chose sans solidité ou fondement. Mie était l'équivalent …"
+    }
+  ]
+}

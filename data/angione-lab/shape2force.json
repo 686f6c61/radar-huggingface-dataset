@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Angione-Lab/Shape2Force",
+  "slug": "angione-lab-shape2force",
+  "author": "Angione-Lab",
+  "url": "https://huggingface.co/Angione-Lab/Shape2Force",
+  "created_at": "2026-02-22T18:12:27.000Z",
+  "updated_at": "2026-10-18T22:07:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "biology",
+    "microscopy",
+    "traction-force",
+    "pytorch",
+    "pix2pix",
+    "gan",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2140877850,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Angiome : 6 types de taches rouges et traitements",
+      "url": "https://aidiagme.fr/pathologies-et-maladies/angiome/",
+      "snippet": "22 hours ago · Hémangiome du bébé, angiome plan, rubis ou stellaire : reconnaître les types d'angiome, savoir quand consulter et …Read more"
+    },
+    {
+      "title": "Angers — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Angers",
+      "snippet": "2 days ago · Angers (prononcer /ɑ̃.ʒe/ Écouter ⓘ) est une commune de l'Ouest de la France traversée par la Maine, chef-lieu et …"
+    },
+    {
+      "title": "Angers - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Angers",
+      "snippet": "22 hours ago · Angers was traditionally known as the \"Black City\" (la Ville Noire) because many roofs were built of slate, due to the …"
+    },
+    {
+      "title": "Laura Angione - Vergonzoso el estado en el que quedó el... | Facebook",
+      "url": "https://www.facebook.com/laura.angione/posts/vergonzoso-el-estado-en-el-que-qued%C3%B3-el-centro-de-bragado-luego-de-la-fiesta-del/10244818600589021/",
+      "snippet": "5 days ago · Vergonzoso el estado en el que quedó el centro de bragado luego de la fiesta del caballo. Las comisiones que hicieron …"
+    },
+    {
+      "title": "¡El Encuentro Ferretero sigue generando conexiones! Leo Angione ...",
+      "url": "https://www.facebook.com/encuentroferretero/videos/-el-encuentro-ferretero-sigue-generando-conexiones-leo-angione-gerente-de-evel-n/1655340169500185/",
+      "snippet": "4 days ago · 🔩 ¡El Encuentro Ferretero sigue generando conexiones! 🎤 Leo Angione, gerente de EVEL, nos comparte su experiencia …"
+    }
+  ]
+}

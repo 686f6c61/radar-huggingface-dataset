@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "florianvoss/Qwen2.5-VL-3B-Instruct-GPTQ-a16w4",
+  "slug": "florianvoss-qwen2-5-vl-3b-instruct-gptq-a16w4",
+  "author": "florianvoss",
+  "url": "https://huggingface.co/florianvoss/Qwen2.5-VL-3B-Instruct-GPTQ-a16w4",
+  "created_at": "2026-10-19T00:42:37.000Z",
+  "updated_at": "2026-10-19T00:42:57.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "llima",
+  "languages": [],
+  "tags": [
+    "llima",
+    "neat",
+    "sima-ai",
+    "modalix",
+    "compiled",
+    "image-text-to-text",
+    "base_model:simaai/Qwen2.5-VL-3B-Instruct-GPTQ-Safetensors",
+    "base_model:finetune:simaai/Qwen2.5-VL-3B-Instruct-GPTQ-Safetensors",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5230367468,
+  "storage_human": "5.2 GB",
+  "base_model": "simaai/Qwen2.5-VL-3B-Instruct-GPTQ-Safetensors",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen2.5-VL-3B-Instruct · Models - modelscope.ai",
+      "url": "https://modelscope.ai/models/Qwen/Qwen2.5-VL-3B-Instruct",
+      "snippet": "Qwen2.5-VL-3B-Instruct - An open-source model by Qwen on ModelScope."
+    },
+    {
+      "title": "Qwen2.5-VL - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen25-vl",
+      "snippet": "Vision-language model series based on Qwen2.5"
+    },
+    {
+      "title": "AngelSlim/Qwen2.5-VL-3B-Instruct-INT4-GPTQ · Hugging Face",
+      "url": "https://huggingface.co/AngelSlim/Qwen2.5-VL-3B-Instruct-INT4-GPTQ",
+      "snippet": "For more details, please refer to the Quick Start Documentation. Deployment and Testing 1. Offline Inference If you need to load a quantized model via transformers, please set the deploy_backend: huggingface in the global configuration before quantizing the model, or manually modify the ignored_layers field in the config.json file located in the quantized model output directory to ignore. To ..."
+    },
+    {
+      "title": "Qwen2.5-VL-3B-Instruct download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/qwen2-5-vl-3b-instruct/",
+      "snippet": "Download Qwen2.5-VL-3B-Instruct for free. Qwen2.5-VL-3B-Instruct: Multimodal model for chat, vision & video. Qwen2.5-VL-3B-Instruct is a 3.75 billion parameter multimodal model by Qwen, designed to handle complex vision-language tasks in both image and video formats. As part of the Qwen2.5 series, it supports image-text-to-text generation with capabilities like chart reading, object ..."
+    },
+    {
+      "title": "qwen/qwen2.5-vl-3b • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen2.5-vl-3b",
+      "snippet": "Custom model by qwen Qwen2.5-VL-3B-Instruct Qwen2.5-VL-3B-Instruct is a vision-language model capable of understanding images, text, and video. It supports structured outputs, visual localization, and can process long videos with temporal reasoning. The model is suitable for tasks involving object recognition, chart and layout analysis, and extracting structured data from visual content. This ..."
+    }
+  ]
+}

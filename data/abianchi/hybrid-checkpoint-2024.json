@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "abianchi/hybrid-checkpoint-2024",
+  "slug": "abianchi-hybrid-checkpoint-2024",
+  "author": "abianchi",
+  "url": "https://huggingface.co/abianchi/hybrid-checkpoint-2024",
+  "created_at": "2026-10-18T22:32:59.000Z",
+  "updated_at": "2026-10-18T22:33:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hybrid",
+    "pytorch",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=checkpoint",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Checkpoint AI Models (145) | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 145 AI models tagged \"Checkpoint\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    },
+    {
+      "title": "Models | InvokeAI Documentation",
+      "url": "https://invoke.ai/concepts/models/",
+      "snippet": "The model checkpoint files (*.ckpt) are the Stable Diffusion \"secret sauce\". They are the product of training the AI on millions of captioned images gathered from multiple sources. Originally there was only a single Stable Diffusion weights file, which many people named model.ckpt. Today, there are thousands of models, fine tuned to excel at specific styles, genres, or themes. Model Formats"
+    },
+    {
+      "title": "CheckpointArchive | PromptLayer Models",
+      "url": "https://www.promptlayer.com/models/checkpointarchive/",
+      "snippet": "CheckpointArchive is a comprehensive repository maintained by LMFResearchSociety that serves as a preservation effort for various AI model checkpoints. The archive currently hosts over 9TB of backed-up models, including popular checkpoints from creators like RunwayML, 852wa, Goldensun, and many others."
+    },
+    {
+      "title": "Kizuki - Anime / Hybrid Checkpoint - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/9385526ad08bf210156d0108137f5c47",
+      "snippet": "Explore Kizuki - Anime / Hybrid Checkpoint model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    }
+  ]
+}

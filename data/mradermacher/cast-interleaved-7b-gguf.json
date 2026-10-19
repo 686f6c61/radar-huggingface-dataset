@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mradermacher/cast-interleaved-7b-GGUF",
+  "slug": "mradermacher-cast-interleaved-7b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/cast-interleaved-7b-GGUF",
+  "created_at": "2026-03-29T07:47:30.000Z",
+  "updated_at": "2026-10-18T21:09:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:mrohan/cast-interleaved-7b",
+    "base_model:quantized:mrohan/cast-interleaved-7b",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 154,
+  "trending_score": 0,
+  "parameters": 6744707072,
+  "parameters_human": "6.74B",
+  "storage_bytes": 59627290496,
+  "storage_human": "59.6 GB",
+  "base_model": "mrohan/cast-interleaved-7b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/cast-interleaved-7b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/cast-interleaved-7b-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/mira-7b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/mira-7b-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/cast-interleaved-7b-GGUF - cast-interleaved-7b-GGUF ...",
+      "url": "https://dev.modelhub.org.cn/mradermacher/cast-interleaved-7b-GGUF/blame/branch/main/cast-interleaved-7b.Q6_K.gguf",
+      "snippet": "Model synced from source: mradermacher/cast-interleaved-7b-GGUF"
+    },
+    {
+      "title": "Hugging Face Release Notes - October 2026 Latest Updates - Releasebot",
+      "url": "https://releasebot.io/updates/huggingface",
+      "snippet": "Complete list of Hugging Face latest updates for October 2026: get every product news, release note, and changelog from Hugging Face summarized in one timeline."
+    },
+    {
+      "title": "AI Frontier Model Tracker | DemandSphere",
+      "url": "https://www.demandsphere.com/research/demandsphere-radar/ai-frontier-model-tracker/",
+      "snippet": "Benchmarks, pricing, and capabilities across every major frontier AI model, both proprietary and open weight. Live news for each model."
+    }
+  ]
+}

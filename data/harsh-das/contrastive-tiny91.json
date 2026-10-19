@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Harsh-das/contrastive-tiny91",
+  "slug": "harsh-das-contrastive-tiny91",
+  "author": "Harsh-das",
+  "url": "https://huggingface.co/Harsh-das/contrastive-tiny91",
+  "created_at": "2026-10-18T19:14:48.000Z",
+  "updated_at": "2026-10-18T19:14:55.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "pytorch",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HARSH Definition & Meaning - Merriam-Webster",
+      "url": "https://www.merriam-webster.com/dictionary/harsh",
+      "snippet": "1 day ago · The meaning of HARSH is having a coarse uneven surface that is rough or unpleasant to the touch. How to use harsh in …"
+    },
+    {
+      "title": "HARSH | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/harsh",
+      "snippet": "HARSH definition: 1. unpleasant, unkind, cruel, or more severe than is necessary: 2. too strong, bright, loud, etc…. Learn more."
+    },
+    {
+      "title": "harsh - English-French Dictionary WordReference.com",
+      "url": "https://www.wordreference.com/enfr/harsh",
+      "snippet": "Voir la traduction automatique de Google Translate de 'harsh'. Dans d'autres langues : espagnol | italien | portugais | roumain | …"
+    },
+    {
+      "title": "harsh - Traduction française – Linguee",
+      "url": "https://www.linguee.fr/anglais-francais/traduction/harsh.html",
+      "snippet": "De très nombreux exemples de phrases traduites contenant \"harsh\" – Dictionnaire français-anglais et moteur de recherche de …"
+    },
+    {
+      "title": "HARSH Synonyms: 357 Similar and Opposite Words - Merriam-Webster",
+      "url": "https://www.merriam-webster.com/thesaurus/harsh",
+      "snippet": "2 days ago · Some common synonyms of harsh are rough, rugged, scabrous, and uneven. While all these words mean \"not smooth …"
+    }
+  ]
+}

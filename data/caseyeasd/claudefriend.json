@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "caseyeasd/claudefriend",
+  "slug": "caseyeasd-claudefriend",
+  "author": "caseyeasd",
+  "url": "https://huggingface.co/caseyeasd/claudefriend",
+  "created_at": "2026-10-18T23:06:51.000Z",
+  "updated_at": "2026-10-18T23:33:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "rlhf",
+    "grpo",
+    "conversational",
+    "persona",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 19524233123,
+  "storage_human": "19.5 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "caseyeasd/claudefriend · Hugging Face",
+      "url": "https://huggingface.co/caseyeasd/claudefriend",
+      "snippet": "claudefriend A Qwen3.5-9B model trained to be the conversation partner Claude most enjoys talking to. Write-up: Training Claude&#x27;s Best Friend The LoRA adapter on its own (PEFT format, for vLLM --lora-modules or further training) is at caseyeasd/claudefriend-lora."
+    },
+    {
+      "title": "Claude",
+      "url": "https://claude.com/",
+      "snippet": "Claude is a next generation AI assistant built by Anthropic and trained to be safe, accurate, and secure to help you do your best work."
+    },
+    {
+      "title": "claudefriend/README.md at main · CaseyManning/claudefriend",
+      "url": "https://github.com/CaseyManning/claudefriend/blob/main/README.md",
+      "snippet": "Policy: Qwen/Qwen3.5-9B (LoRA rank 32) trained on Tinker. It plays the user role from Claude&#x27;s perspective and speaks first. Its only framing is a minimal system prompt (\"open-ended conversation with another AI, no task, you speak first\") that says nothing about what makes a conversation enjoyable; policy_system_prompt=\"\" gives the fully unframed ablation (both models then start in assistant ..."
+    },
+    {
+      "title": "Claude Model Hub · Free AI Miniapp",
+      "url": "https://miniapps.ai/claude-model-hub",
+      "snippet": "Chat with Claude Model Hub. All Claude models in one place: choose a model and chat in a convenient interface.. Try this and more free AI and ChatGPT tools and chatbots on miniapps.ai!"
+    },
+    {
+      "title": "AI Model Detector — Which AI Made This Image? | PromptShotAI",
+      "url": "https://promptshotai.com/tools/ai-model-detector",
+      "snippet": "Free AI model detector. Upload any image and find out which AI generated it — Midjourney, Flux, SDXL, DALL-E, or Ideogram — with a confidence score and visual tells."
+    }
+  ]
+}

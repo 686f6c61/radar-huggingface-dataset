@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Noctis12138/turbovla-rokae-toothbrush",
+  "slug": "noctis12138-turbovla-rokae-toothbrush",
+  "author": "Noctis12138",
+  "url": "https://huggingface.co/Noctis12138/turbovla-rokae-toothbrush",
+  "created_at": "2026-10-18T19:03:02.000Z",
+  "updated_at": "2026-10-18T19:03:04.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "bimanual",
+    "rokae",
+    "turbovla",
+    "real-robot",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "موقع السينما العربية و المصرية : أكبر قاعدة بيانات الأفلام والمسلسلات ...",
+      "url": "https://elcinema.com/",
+      "snippet": "كوم لأعمال رمضان والعيد والأعمال الموسمية. يا تحب.. يا تقب. المخابرات المصرية... أبطال.. معارك.. وحكايات."
+    },
+    {
+      "title": "شوفها - Shofha | أفضل الأفلام و المسلسلات و المزيد من المنوعات",
+      "url": "https://shofha.com/",
+      "snippet": "شوفها هو تطبيق وموقع إلكتروني يوفر لك مكتبة تتضمن: أفلام عربية،أفلام كلاسيكية،مسلسلات تلفزيونية،برامج تلفزيونية،مسرحيات،فيديوهات طبخ،رسوم متحركة وأكثر من ذلك بكثير!"
+    },
+    {
+      "title": "اكوام | موقع التحميل و المشاهدة العربي الاول",
+      "url": "https://akwam.ss/",
+      "snippet": "شمس المواقع، الموقع العربي الاول لتحميل و مشاهدة الافلام, المسلسلات, الالعاب, البرامج و التطبيقات, التلفزيون, المسرحيات, المصارعة, الرياضة, تحميل و مشاهدة مباشرة"
+    },
+    {
+      "title": "قوائم - موقع السينما",
+      "url": "https://elcinema.com/index/",
+      "snippet": "سينمات مصر سينمات الإمارات سينمات الكويت سينمات لبنان سينمات البحرين سينمات قطر سينمات السعودية سينمات عمان سينمات الأردن سينمات العراق الاتصال بنا عن السينما.كوم حقوق الطبع و النشر ..."
+    },
+    {
+      "title": "سيما فور بي - شاهد أحدث المسلسلات والحلقات عبر الإنترنت",
+      "url": "https://cima4ptv.com/",
+      "snippet": "شاهد أحدث المسلسلات والحلقات عبر الإنترنت HD مسلسل سنوات الصفصاف الحلقة 2 الثانية مترجمة HD ..."
+    }
+  ]
+}

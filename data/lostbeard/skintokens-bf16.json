@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "LostBeard/SkinTokens-bf16",
+  "slug": "lostbeard-skintokens-bf16",
+  "author": "LostBeard",
+  "url": "https://huggingface.co/LostBeard/SkinTokens-bf16",
+  "created_at": "2026-10-18T22:22:33.000Z",
+  "updated_at": "2026-10-18T22:22:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "rigging",
+    "skinning",
+    "skeleton",
+    "autoregressive",
+    "fsq",
+    "safetensors",
+    "bf16",
+    "arxiv:2602.04805",
+    "base_model:VAST-AI/SkinTokens",
+    "base_model:finetune:VAST-AI/SkinTokens",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1147140554,
+  "storage_human": "1.1 GB",
+  "base_model": "VAST-AI/SkinTokens",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - VAST-AI-Research/SkinTokens: SkinTokens: A Learned Compact ...",
+      "url": "https://github.com/VAST-AI-Research/SkinTokens",
+      "snippet": "SkinTokens is a learned, compact, and discrete representation for skinning weights. Built on this representation, TokenRig is a unified autoregressive framework that models the entire rig, i.e., skeleton and skinning weights, as a single token sequence."
+    },
+    {
+      "title": "mlx-community/SkinTokens-bf16 · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/SkinTokens-bf16",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "chibifire/SkinTokens-GGUF-BF16 · Hugging Face",
+      "url": "https://huggingface.co/chibifire/SkinTokens-GGUF-BF16",
+      "snippet": "GGUF files of VAST-AI/SkinTokens with the checkpoint&#x27;s BF16 matrices kept in BF16. 1-D and sensitive tensors are F32. The files are a format change of the released model. Nobody trained them again."
+    },
+    {
+      "title": "GitHub - localai-org/skin-tokens.cpp: C++/GGML conversion of VAST-AI ...",
+      "url": "https://github.com/localai-org/skin-tokens.cpp",
+      "snippet": "This guards batching, cache strides, and beam-slot cloning on both CPU and Vulkan; configure SKINTOKENS_QWEN_FIXTURE_DIR to include it in the opt-in CTest model suite. Final binding acceptance captures normalized top-four weights and reference deformed vertices. The full checker runs the production GGML decoder and skinning evaluator in one ..."
+    },
+    {
+      "title": "SkinTokens — Tsinghua and VAST Just Turned Rigging Into a Language, and ...",
+      "url": "https://www.ik3d.fr/skintokens-tsinghua-and-vast-just-turned-rigging-into-a-language-and-the-dead-statue-era-of-ai-3d-is-on-the-clock/",
+      "snippet": "SkinTokens auto-rigs arbitrary meshes — humanoids, animals, stylized monsters — skeleton and skinning weights included. Source: SkinTokens project page AI can now dream up a 3D character from a single sentence in seconds. Then it hands you a beautiful, completely dead statue. The unglamorous, deeply human job of rigging — building a skeleton, painting skin weights so the mesh bends ..."
+    }
+  ]
+}
