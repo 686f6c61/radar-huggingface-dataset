@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "joh-nson/mobilevit-experiment",
+  "slug": "joh-nson-mobilevit-experiment",
+  "author": "joh-nson",
+  "url": "https://huggingface.co/joh-nson/mobilevit-experiment",
+  "created_at": "2026-10-19T20:32:56.000Z",
+  "updated_at": "2026-10-19T20:33:01.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tampons bio, culottes de règles, protections hygiéniques en coton bio",
+      "url": "https://www.jho.fr/",
+      "snippet": "Tampons, culottes menstruelles, cup menstruelle, serviettes et protège-slips en coton bio disponibles par abonnement ou en achat …"
+    },
+    {
+      "title": "Joh - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Joh",
+      "snippet": "Laura Joh Rowland (born 1953), American author Tho Joh Heftye, an alias of Thomas Johannessen Heftye (1822–1886), Norwegian …"
+    },
+    {
+      "title": "Chercher un Journal officiel (JO) | Service Public",
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/R50889",
+      "snippet": "Votre abonnement n’a pas pu être pris en compte. Vous devez vous connecter à votre espace personnel afin de vous abonner à la …"
+    },
+    {
+      "title": "Vos courses en 1 minute | Jow",
+      "url": "https://jow.fr/",
+      "snippet": "Chaque semaine des recettes simples et adaptées à vos goûts. Faites votre choix, nous remplissons votre caddie automatiquement. …"
+    },
+    {
+      "title": "Signification du prénom Joh - Wisdom Library",
+      "url": "https://www.wisdomlib.org/fr/names/joh",
+      "snippet": "Aug 23, 2025 · Le nom 'Joh' est un diminutif ou une forme abrégée du nom 'Johannes,' qui est l'équivalent latin du nom hébreu …"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "KentoNishi/K2-Horizon-3.7B-llama-config",
+  "slug": "kentonishi-k2-horizon-3-7b-llama-config",
+  "author": "KentoNishi",
+  "url": "https://huggingface.co/KentoNishi/K2-Horizon-3.7B-llama-config",
+  "created_at": "2026-10-19T23:21:31.000Z",
+  "updated_at": "2026-10-19T23:25:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "base_model:IFM/K2-Horizon-3.7B",
+    "base_model:finetune:IFM/K2-Horizon-3.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5058255360,
+  "parameters_human": "5.06B",
+  "storage_bytes": 10137191340,
+  "storage_human": "10.1 GB",
+  "base_model": "IFM/K2-Horizon-3.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

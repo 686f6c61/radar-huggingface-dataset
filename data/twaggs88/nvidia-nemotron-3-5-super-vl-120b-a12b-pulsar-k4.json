@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "twaggs88/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-pulsar-k4",
+  "slug": "twaggs88-nvidia-nemotron-3-5-super-vl-120b-a12b-pulsar-k4",
+  "author": "twaggs88",
+  "url": "https://huggingface.co/twaggs88/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-pulsar-k4",
+  "created_at": "2026-10-19T20:34:56.000Z",
+  "updated_at": "2026-10-19T20:35:53.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "nemotron_h_omni",
+    "pulsar",
+    "exl3",
+    "nemotron",
+    "nemotron_h",
+    "mamba2",
+    "moe",
+    "speculative-decoding",
+    "dgx-spark",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16",
+    "base_model:quantized:nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 62142607562,
+  "parameters_human": "62.14B",
+  "storage_bytes": 63055377930,
+  "storage_human": "63.1 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16, nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4-LiLiCorr",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eBay : high-tech, maison, jardin, auto-moto et bien plus",
+      "url": "https://www.ebay.fr/",
+      "snippet": "Achetez et vendez des produits en high-tech, maison, jardin, auto-moto, mode ou collection. Profitez d'une variété de produits neufs, …"
+    },
+    {
+      "title": "Véhicules miniatures - eBay",
+      "url": "https://www.ebay.fr/b/Vehicules-miniatures/222/bn_16550594",
+      "snippet": "Véhicules miniatures - Achetez une variété de produits à prix abordables sur eBay. Economisez avec notre option de livraison …"
+    },
+    {
+      "title": "Homepage | eBay Partner Network",
+      "url": "https://partnernetwork.ebay.fr/",
+      "snippet": "Why eBay Partner Network? Work with a global commerce leader From global brands to local stands, eBay connects millions of …"
+    },
+    {
+      "title": "Discussion forums | eBay France",
+      "url": "https://communaute.ebay.fr/forum/forums-de-discussion-17/",
+      "snippet": "May 9, 2026 · Forums are one of the best places to find tips for buying and selling on eBay."
+    },
+    {
+      "title": "Fonctionnement de la plateforme eBay | eBay.fr",
+      "url": "https://pages.ebay.fr/notre-plateforme/",
+      "snippet": "Découvrez le fonctionnement d’eBay : conditions de référencement, de déréférencement, classement par défaut, annonces …"
+    }
+  ]
+}

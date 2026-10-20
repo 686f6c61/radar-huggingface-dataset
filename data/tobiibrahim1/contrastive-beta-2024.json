@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "TobiIbrahim1/contrastive-beta-2024",
+  "slug": "tobiibrahim1-contrastive-beta-2024",
+  "author": "TobiIbrahim1",
+  "url": "https://huggingface.co/TobiIbrahim1/contrastive-beta-2024",
+  "created_at": "2026-10-19T21:36:07.000Z",
+  "updated_at": "2026-10-19T21:36:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "poolformer",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mahjongg Solitaire - Free Online Game | Daily Mail",
+      "url": "https://games.dailymail.co.uk/games/mahjongg-solitaire?playAgainStart=yes",
+      "snippet": "Mahjongg meets solitaire in this great new matching game that combines the best of both! Clear the tiles in the best possible order to …"
+    },
+    {
+      "title": "Daily Crossword - Free Online Game | Daily Mail",
+      "url": "https://games.dailymail.co.uk/games/daily-crossword?.*_ga_XE0XLFFF16*MTY5Mjg0MTQ4MC40NDcuMC4xNjkyODQxNDgzLjAuMC4w",
+      "snippet": "<p>Do you love crossword puzzles? Then, the Daily Crossword is the game for you. As its name implies, you get a new puzzle …"
+    },
+    {
+      "title": "The truth about where Britain’s ‘wasted’ £15billion-a-year foreign aid ...",
+      "url": "https://i.dailymail.co.uk/i/html_modules/DeepDive/2025/foreign_aid/Foreign%20Aid_v7/Foreign%20Aid.html",
+      "snippet": "Written and researched by Rhodri Morgan Edited by Stephen Matthews Designed and developed by Harry Lewis-Irlam Published: …"
+    },
+    {
+      "title": "Daily Mail Subscriptions",
+      "url": "https://subscribe.dailymail.co.uk/",
+      "snippet": ""
+    },
+    {
+      "title": "Newsletter Signup - Daily Mail",
+      "url": "http://link.news.dailymail.co.uk/join/4w5/mail-promotions-signup",
+      "snippet": "Promotions Sign up for our Newsletter I wish to receive selected information from the Daily Mail I have read and agree to be bound …"
+    }
+  ]
+}

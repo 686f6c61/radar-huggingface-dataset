@@ -5,7 +5,7 @@
   "author": "xtools-at",
   "url": "https://huggingface.co/xtools-at/Qwen3.5-2B-Qwensploit-CyberSecurity",
   "created_at": "2026-10-19T16:28:34.000Z",
-  "updated_at": "2026-10-19T16:55:45.000Z",
+  "updated_at": "2026-10-19T18:28:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -44,7 +44,7 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 2213241664,

@@ -5,7 +5,7 @@
   "author": "bharathmuppa",
   "url": "https://huggingface.co/bharathmuppa/angular-coder-30b-a3b-lora",
   "created_at": "2026-10-19T01:04:04.000Z",
-  "updated_at": "2026-10-19T01:04:07.000Z",
+  "updated_at": "2026-10-19T13:40:59.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -22,12 +22,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 11,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 53528920,
-  "storage_human": "54 MB",
+  "storage_bytes": 107057840,
+  "storage_human": "107 MB",
   "base_model": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
   "formats": [
     "safetensors"

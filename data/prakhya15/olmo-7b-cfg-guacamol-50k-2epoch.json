@@ -5,13 +5,14 @@
   "author": "prakhya15",
   "url": "https://huggingface.co/prakhya15/OLMo-7B-CFG-GuacaMol-50k-2epoch",
   "created_at": "2026-10-18T23:26:47.000Z",
-  "updated_at": "2026-10-18T23:26:47.000Z",
+  "updated_at": "2026-10-19T09:14:20.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
   "library": null,
   "languages": [],
   "tags": [
+    "safetensors",
     "license:apache-2.0",
     "region:us"
   ],
@@ -20,10 +21,12 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 6957799033,
+  "storage_human": "7.0 GB",
   "base_model": null,
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

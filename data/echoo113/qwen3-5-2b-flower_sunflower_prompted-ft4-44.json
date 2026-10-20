@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Echoo113/Qwen3.5-2B-flower_sunflower_prompted-ft4.44",
+  "slug": "echoo113-qwen3-5-2b-flower_sunflower_prompted-ft4-44",
+  "author": "Echoo113",
+  "url": "https://huggingface.co/Echoo113/Qwen3.5-2B-flower_sunflower_prompted-ft4.44",
+  "created_at": "2026-10-19T20:38:13.000Z",
+  "updated_at": "2026-10-19T21:18:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 107400702,
+  "storage_human": "107 MB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dick Genealogy | WikiTree FREE Family Tree",
+      "url": "https://www.wikitree.com/genealogy/DICK",
+      "snippet": "Oct 28, 2016 · WikiTree is a community of genealogists — including 79 Dick genealogists and amateur family historians — dedicated …Read more"
+    },
+    {
+      "title": "Dick Family - Geni.com",
+      "url": "https://www.geni.com/projects/Dick-Family/26657",
+      "snippet": "\"The Dick Family was evidently among the early Scotch immigrants to North Ireland where they became known as Scotch-Irish. The …"
+    },
+    {
+      "title": "Free Gay Male Tube - Family dick HD Gay Men Porn",
+      "url": "https://www.gaymaletube.name/channels/familydick",
+      "snippet": "Enjoy premium Family dick pornography for free and in 1080p HD. All high quality, all too hot."
+    },
+    {
+      "title": "Comment la famille Dick prépare la génération suivante",
+      "url": "https://www.lesechos.fr/2013/12/comment-la-famille-dick-prepare-la-generation-suivante-333063",
+      "snippet": "Dec 11, 2013 · Dans la famille Dick, l'esprit d'entreprendre peut sembler génétique. Le père, PierreRichard, a fondé Virbac en 1968, …"
+    },
+    {
+      "title": "Dick Family (Descendants of Mary & Daniel Dick) - Facebook",
+      "url": "https://www.facebook.com/groups/486320298199546/",
+      "snippet": "A group page dedicated to the descendants of C.H. Dick. Anyone who knows our family is welcome to participate. I would especially …"
+    }
+  ]
+}

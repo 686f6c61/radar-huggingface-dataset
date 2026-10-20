@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "AmirFazlollahi/Qwen3-1.7B-HendrycksMATH-GRPO",
+  "slug": "amirfazlollahi-qwen3-1-7b-hendrycksmath-grpo",
+  "author": "AmirFazlollahi",
+  "url": "https://huggingface.co/AmirFazlollahi/Qwen3-1.7B-HendrycksMATH-GRPO",
+  "created_at": "2026-10-19T20:02:19.000Z",
+  "updated_at": "2026-10-19T20:02:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "qwen3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:AmirFazlollahi/Qwen3-1.7B-HendrycksMATH-SFT",
+    "base_model:finetune:AmirFazlollahi/Qwen3-1.7B-HendrycksMATH-SFT",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11422924,
+  "storage_human": "11 MB",
+  "base_model": "AmirFazlollahi/Qwen3-1.7B-HendrycksMATH-SFT",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Outlook",
+      "url": "https://outlook.com/welearn365.com",
+      "snippet": ""
+    },
+    {
+      "title": "Outlook",
+      "url": "https://outlook.com/anadolu.edu.tr",
+      "snippet": ""
+    },
+    {
+      "title": "ps.outlook.com",
+      "url": "https://ps.outlook.com/Powershell",
+      "snippet": "Shërbimi Outlook për menaxhimin e email-eve dhe kalendarit tuaj."
+    },
+    {
+      "title": "Outlook.com",
+      "url": "https://olmoauth.outlook.com/api/googleoauthredir/com.microsoft.office.outlook:/mac/google/oauth2redirect",
+      "snippet": ""
+    },
+    {
+      "title": "Outlook.com",
+      "url": "https://safelinks.protection.outlook.com/apple-app-site-association",
+      "snippet": "{ \"applinks\": { \"apps\": [], \"details\": [ { \"appIDs\": [\"9KBH5RKYEW.com.microsoft.loop-dogfood\", \"SGGM6D27TK.com.microsoft.loop\"], …"
+    }
+  ]
+}

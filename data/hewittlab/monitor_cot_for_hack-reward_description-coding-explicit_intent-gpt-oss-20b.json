@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "hewittlab/monitor_cot_for_hack-reward_description-coding-explicit_intent-gpt-oss-20b",
+  "slug": "hewittlab-monitor_cot_for_hack-reward_description-coding-explicit_intent-gpt-oss-20b",
+  "author": "hewittlab",
+  "url": "https://huggingface.co/hewittlab/monitor_cot_for_hack-reward_description-coding-explicit_intent-gpt-oss-20b",
+  "created_at": "2026-10-16T15:11:26.000Z",
+  "updated_at": "2026-10-20T00:19:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tinker",
+    "lora",
+    "reward-hacking",
+    "chain-of-thought",
+    "monitorability",
+    "dataset:hewittlab/monitor_cot_for_hack-coding",
+    "base_model:openai/gpt-oss-20b",
+    "base_model:adapter:openai/gpt-oss-20b",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 57944749680,
+  "storage_human": "57.9 GB",
+  "base_model": "openai/gpt-oss-20b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sole trader (cash basis) asset transfer to LTD - AccountingWEB",
+      "url": "https://www.accountingweb.co.uk/any-answers/sole-trader-cash-basis-asset-transfer-to-ltd",
+      "snippet": "Jan 28, 2024 · Company resells second hand books on eBay if useful. My initial thought was for the sole trader to transfer the goods …"
+    },
+    {
+      "title": "VAT on transfer of Assets to director at cessation",
+      "url": "https://www.accountingweb.co.uk/any-answers/vat-on-transfer-of-assets-to-director-at-cessation",
+      "snippet": "Nov 3, 2015 · VAT on transfer of Assets to director at cessation Hi, A small limited company has ceased to trade. All liabilities have …"
+    },
+    {
+      "title": "wetransfer怎么使用 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/6b97984d8f76d95da3b0bf68.html",
+      "snippet": "Sep 7, 2020 · wetransfer怎么使用,普通文件均可以通过邮件、微信进行传输。较大文件也可以通过QQ传输，但是和国外客户沟通 …"
+    },
+    {
+      "title": "Impossible d'ouvrir we transfer [Résolu] - Forum Réseaux sociaux",
+      "url": "https://forums.commentcamarche.net/forum/affich-34689316-impossible-d-ouvrir-we-transfer",
+      "snippet": "Jun 28, 2017 · Impossible d'ouvrir we transfer Résolu Cacahuete53 - Modifié le 28 juin 2017 à 12:23 Dernière réponse le 20 août …"
+    },
+    {
+      "title": "Comment ouvrir un fichier wetransfer - Forum Réseaux sociaux",
+      "url": "https://forums.commentcamarche.net/forum/affich-35966162-comment-ouvrir-un-fichier-wetransfer",
+      "snippet": "Bonjour, C'est la première fois que je reçois un fichier audio wetransfer et je j'arrive pas à l'ouvrir. Pouvez vous m'aider svp?"
+    }
+  ]
+}

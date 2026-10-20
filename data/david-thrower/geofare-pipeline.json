@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "david-thrower/geofare-pipeline",
+  "slug": "david-thrower-geofare-pipeline",
+  "author": "david-thrower",
+  "url": "https://huggingface.co/david-thrower/geofare-pipeline",
+  "created_at": "2026-10-19T22:12:55.000Z",
+  "updated_at": "2026-10-19T22:14:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "David (roi d'Israël) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/David_(roi_d%27Isra%C3%ABl)",
+      "snippet": "Devenu le héros d' Israël, Saül lui donne Mikhal, une de ses filles, en mariage tandis que Jonathan et David se lient d'une profonde …"
+    },
+    {
+      "title": "David — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/David",
+      "snippet": "David, roi d'Israël, personnage biblique, fondateur de la lignée davidique et ancêtre de Jésus, connu entre-autres pour les Psaumes …"
+    },
+    {
+      "title": "David - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/David",
+      "snippet": "After committing adultery with Bathsheba and arranging her husband Uriah’s death, David survives his son Absalom ’s rebellion and …"
+    },
+    {
+      "title": "David : Le Berger devenu Roi - Le Chrétien",
+      "url": "https://www.lechretien.fr/histoires-de-la-bible/a-1458-david-.html",
+      "snippet": "Oct 6, 2025 · David, de berger à roi élu, incarne la souveraineté divine sur la destinée humaine. Ce récit nous rappelle la puissance …"
+    },
+    {
+      "title": "David - Film 2025 - AlloCiné",
+      "url": "https://www.allocine.fr/film/fichefilm_gen_cfilm=322967.html",
+      "snippet": "David est un film réalisé par Brent Dawes et Phil Cunningham avec les voix de Elie Semoun, Gaetan Borg. Synopsis : David est un …"
+    }
+  ]
+}

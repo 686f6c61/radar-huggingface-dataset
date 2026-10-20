@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "wundr-ai/zipformer-small-librispeech-en-wasm",
+  "slug": "wundr-ai-zipformer-small-librispeech-en-wasm",
+  "author": "wundr-ai",
+  "url": "https://huggingface.co/wundr-ai/zipformer-small-librispeech-en-wasm",
+  "created_at": "2026-10-19T20:26:16.000Z",
+  "updated_at": "2026-10-19T20:26:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "sherpa-onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sherpa-onnx",
+    "wasm",
+    "zipformer",
+    "automatic-speech-recognition",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 39732297,
+  "storage_human": "40 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ciro Ferri (1634-1689) | Christie's",
+      "url": "https://www.christies.com/en/lot/lot-1057707",
+      "snippet": "The Double-Numbering Collector, his inscription 'Ciro Ferri, ò Pietro da Cortona' and numbers '14.' and 'quattordeci'."
+    },
+    {
+      "title": "data.fitzmuseum.cam.ac.uk",
+      "url": "https://data.fitzmuseum.cam.ac.uk/id/object/7267?format=txt",
+      "snippet": "value: the double-numbering collector; Sir E.J. Poynter; his sale, Sotheby's, 24 April 1918, part of lot 66; with Thomas Agnew & Sons; …"
+    },
+    {
+      "title": "Pietro da Cortona (Pietro Berrettini) - Study for the Allegory of ...",
+      "url": "https://www.metmuseum.org/art/collection/search/338554",
+      "snippet": "The traditional attribution of this very lively drawing to the Baroque master, Pietro da Cortona, was endorsed by Jacob Bean in his …"
+    },
+    {
+      "title": "Collections Online | British Museum",
+      "url": "https://www.britishmuseum.org/collection/term/BIOG25546",
+      "snippet": "Also known as Double-numbering Collector primary name: Double-numbering Collector Details unknown; collector"
+    },
+    {
+      "title": "The Vintage Collection Numbering System Explained",
+      "url": "https://www.figureshelf.com/star-wars/vintage-collection/tvc-numbering-explained",
+      "snippet": "But beneath that surface is a system shaped by production constraints, retailer demands, marketing decisions, and collector …"
+    }
+  ]
+}

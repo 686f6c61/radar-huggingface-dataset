@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "timm/resnet50.bamboo",
+  "slug": "timm-resnet50-bamboo",
+  "author": "timm",
+  "url": "https://huggingface.co/timm/resnet50.bamboo",
+  "created_at": "2026-10-19T19:25:35.000Z",
+  "updated_at": "2026-10-19T19:25:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "safetensors",
+    "bamboo",
+    "arxiv:2203.07845",
+    "image-feature-extraction",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23561152,
+  "parameters_human": "23.6M",
+  "storage_bytes": 94273408,
+  "storage_human": "94 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

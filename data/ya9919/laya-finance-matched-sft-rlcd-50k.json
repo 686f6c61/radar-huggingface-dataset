@@ -4,10 +4,10 @@
   "slug": "ya9919-laya-finance-matched-sft-rlcd-50k",
   "author": "ya9919",
   "url": "https://huggingface.co/ya9919/laya-finance-matched-sft-rlcd-50k",
-  "created_at": "2026-10-18T16:10:49.000Z",
-  "updated_at": "2026-10-18T16:15:25.000Z",
-  "license": "apache-2.0",
-  "license_family": "oss",
+  "created_at": "2026-10-19T20:35:19.000Z",
+  "updated_at": "2026-10-20T02:24:34.000Z",
+  "license": "s2-mas-controlled-research-v1.2",
+  "license_family": "unknown",
   "pipeline_tag": null,
   "library": "laya",
   "languages": [
@@ -22,7 +22,7 @@
     "en",
     "base_model:ya9919/laya-finance-matched-sft-50k",
     "base_model:finetune:ya9919/laya-finance-matched-sft-50k",
-    "license:apache-2.0",
+    "license:other",
     "region:us"
   ],
   "likes": 0,
@@ -38,8 +38,8 @@
   ],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-10-19T03:24:42.101Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": []
 }

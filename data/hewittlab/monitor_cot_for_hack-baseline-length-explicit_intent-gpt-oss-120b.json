@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "hewittlab/monitor_cot_for_hack-baseline-length-explicit_intent-gpt-oss-120b",
+  "slug": "hewittlab-monitor_cot_for_hack-baseline-length-explicit_intent-gpt-oss-120b",
+  "author": "hewittlab",
+  "url": "https://huggingface.co/hewittlab/monitor_cot_for_hack-baseline-length-explicit_intent-gpt-oss-120b",
+  "created_at": "2026-10-16T16:41:57.000Z",
+  "updated_at": "2026-10-20T00:19:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tinker",
+    "lora",
+    "reward-hacking",
+    "chain-of-thought",
+    "monitorability",
+    "dataset:hewittlab/monitor_cot_for_hack-length",
+    "base_model:openai/gpt-oss-120b",
+    "base_model:adapter:openai/gpt-oss-120b",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 310199891343,
+  "storage_human": "310.2 GB",
+  "base_model": "openai/gpt-oss-120b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "留学回国后用Robinhood买股票，需要报税吗？如何报税？",
+      "url": "https://www.zhihu.com/question/312796549",
+      "snippet": "留学回国后用Robinhood买股票，需要报税吗？ 如何报税？ 一年多前美国留学毕业回到国内，保留了在美国时的checking account， …"
+    },
+    {
+      "title": "RobinHood - 知乎",
+      "url": "https://www.zhihu.com/topic/20021678",
+      "snippet": "May 10, 2018 · Robinhood，一款免交易费的股票交易平台。 2018年5月10日，Robinhood宣布，公司在D轮融资中获得了3.63亿美元 …"
+    },
+    {
+      "title": "在国内如何购买腾讯的股票？ - 知乎",
+      "url": "https://www.zhihu.com/question/22909369",
+      "snippet": "当然，如果你想同时投资美股，安全就更值得重视了，甚至你还要考虑过往这家券商的表现。 比如游戏驿站事件发生时，Robinhood …"
+    },
+    {
+      "title": "持F1签证的留学生怎么开美股账户？ - 知乎",
+      "url": "https://www.zhihu.com/question/27191579",
+      "snippet": "Robinhood (罗宾侠) 开户需要验证SSN等个人信息（获得SSN还是很重要的），可以网上申请无需填表，一般审批在3-5个工作日。 …"
+    },
+    {
+      "title": "留学生如何炒美股？ - 知乎",
+      "url": "https://www.zhihu.com/question/20950920",
+      "snippet": "哥们你打不打算回国？打算回国还是用国内券商比较好，不然国外券商的手续能让你抓狂 老美留学有个好处，能直接申请银行卡开 …"
+    }
+  ]
+}

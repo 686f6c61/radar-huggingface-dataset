@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "arc-ane/sageattention-2.2.0_cu132torch2.14.1-cp313-cp313-linux_x86_64.whl",
+  "slug": "arc-ane-sageattention-2-2-0_cu132torch2-14-1-cp313-cp313-linux_x86_64-whl",
+  "author": "arc-ane",
+  "url": "https://huggingface.co/arc-ane/sageattention-2.2.0_cu132torch2.14.1-cp313-cp313-linux_x86_64.whl",
+  "created_at": "2026-10-19T19:50:27.000Z",
+  "updated_at": "2026-10-19T19:54:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16345664,
+  "storage_human": "16 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Download Arc",
+      "url": "https://arc.net/download",
+      "snippet": "Experience a calmer, more personal internet in this browser designed for you. Let go of the clicks, the clutter, the distractions with the …"
+    },
+    {
+      "title": "Arc - Association des Responsables de Copropriété en France",
+      "url": "https://arc-copro.fr/",
+      "snippet": "3 days ago · Syndic, charges, travaux, conseil syndical, litiges ou réglementation : les experts de l’ARC vous apportent des réponses …"
+    },
+    {
+      "title": "Fondation ARC pour la recherche sur le cancer | Fondation ARC",
+      "url": "https://www.fondation-arc.org/",
+      "snippet": "Pour aujourd’hui ou pour demain ? Les chercheurs de la Fondation ARC vous présentent les découvertes qui font reculer le cancer."
+    },
+    {
+      "title": "Agence du revenu du Canada (ARC) - Canada.ca",
+      "url": "https://www.canada.ca/fr/agence-revenu.html",
+      "snippet": "L’Agence du revenu du Canada (ARC) administre les lois fiscales pour le gouvernement et fournit des coordonnées, des services et …"
+    },
+    {
+      "title": "Arc from The Browser Company",
+      "url": "https://arc.net/",
+      "snippet": "Experience a calmer, more personal internet in this browser designed for you. Let go of the clicks, the clutter, the distractions with the …"
+    }
+  ]
+}

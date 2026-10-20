@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mecha-factory/Qwen3.6-35B-A3B-Uncensored-MTP-GGUF",
+  "slug": "mecha-factory-qwen3-6-35b-a3b-uncensored-mtp-gguf",
+  "author": "mecha-factory",
+  "url": "https://huggingface.co/mecha-factory/Qwen3.6-35B-A3B-Uncensored-MTP-GGUF",
+  "created_at": "2026-10-20T00:05:15.000Z",
+  "updated_at": "2026-10-20T00:05:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "uncensored",
+    "qwen3.6",
+    "moe",
+    "mtp",
+    "speculative-decoding",
+    "image-text-to-text",
+    "base_model:HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+    "base_model:merge:HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+    "base_model:unsloth/Qwen3.6-35B-A3B-MTP-GGUF",
+    "base_model:merge:unsloth/Qwen3.6-35B-A3B-MTP-GGUF",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 21695616448,
+  "storage_human": "21.7 GB",
+  "base_model": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive, unsloth/Qwen3.6-35B-A3B-MTP-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mecha — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Mecha",
+      "snippet": "Le terme mecha est une abréviation de mechanics (mécanique). Au Japon, ce terme peut s'appliquer à tout élément mécanique : …"
+    },
+    {
+      "title": "Mecha - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Mecha",
+      "snippet": "'Mecha' is an abbreviation, first used in Japanese, of 'mechanical'. In Japanese, mecha encompasses all mechanical objects, …"
+    },
+    {
+      "title": "Mecha Chameleon — Play Free Online in Your Browser",
+      "url": "https://mechachameleon.com/",
+      "snippet": "Play Mecha Chameleon free in your browser — no download. Paint yourself to hide, outsmart the hunters and top the leaderboard in …"
+    },
+    {
+      "title": "mecha — Wiktionnaire, le dictionnaire libre",
+      "url": "https://fr.m.wiktionary.org/wiki/mecha",
+      "snippet": "mecha \\me.ka\\ masculin (Science-fiction) Thème de science-fiction, mettant en scène des personnages utilisant ou incarnant des …"
+    },
+    {
+      "title": "L'actualité mecha anime, manga et jeux vidéo - Mecha Legend",
+      "url": "https://www.mechalegend.fr/",
+      "snippet": "Mecha Legend est un site français d'informations et d'actualité consacré aux mangas et aux dessins animés japonais du genre …"
+    }
+  ]
+}

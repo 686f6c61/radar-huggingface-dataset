@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "yoga-0125/ppo-LunarLander-v2-u8",
+  "slug": "yoga-0125-ppo-lunarlander-v2-u8",
+  "author": "yoga-0125",
+  "url": "https://huggingface.co/yoga-0125/ppo-LunarLander-v2-u8",
+  "created_at": "2026-10-19T21:49:29.000Z",
+  "updated_at": "2026-10-19T21:49:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "LunarLander-v2",
+    "ppo",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-course",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 152751,
+  "storage_human": "152751 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yoga — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Yoga",
+      "snippet": "Les quatre voies (mārga) traditionnelles majeures de yoga sont le jnana yoga, bhakti yoga, karma yoga et raja yoga. Elles sont …"
+    },
+    {
+      "title": "Yoga Bordeaux – Votre studio de yoga en plein Bordeaux |Yogapop – …",
+      "url": "https://yogapop.fr/",
+      "snippet": "Le Yoga Pop est à la fois un centre de formation, aujourd’hui reconnu comme l’un des acteurs majeurs de la formation yoga en …"
+    },
+    {
+      "title": "Yoga With You - Studio de yoga au Bouscat",
+      "url": "https://www.yogawithyoubordeaux.com/",
+      "snippet": "6 days ago · Yoga With You est un concept unique au Bouscat. Profitez de + de 25 cours par semaine dispensés par + de 17 …"
+    },
+    {
+      "title": "Yoga Bordeaux St Seurin",
+      "url": "https://bordeaux-yoga.fr/",
+      "snippet": "Yoga signifie relier : relier le corps et l’âme, relier l’homme à la nature. Une meilleure concentration : en pratiquant les postures avec …"
+    },
+    {
+      "title": "Tout savoir sur le yoga : principe, bienfaits, types",
+      "url": "https://www.santemagazine.fr/medecines-alternatives/pratiques-orientales/yoga/tout-savoir-sur-le-yoga-principe-bienfaits-types-177057",
+      "snippet": "May 16, 2024 · Les exercices de yoga mêlent méditation, gymnastique douce, postures et respiration. Objectif : permettre de libérer …"
+    }
+  ]
+}

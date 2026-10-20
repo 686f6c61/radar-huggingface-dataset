@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "zazaorg/harpy-9b",
+  "slug": "zazaorg-harpy-9b",
+  "author": "zazaorg",
+  "url": "https://huggingface.co/zazaorg/harpy-9b",
+  "created_at": "2026-10-16T23:11:57.000Z",
+  "updated_at": "2026-10-20T00:22:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "fr",
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "security",
+    "red-team",
+    "opsec",
+    "tool-use",
+    "defensive-security",
+    "text-generation",
+    "fr",
+    "en",
+    "base_model:teddy19032/Ornith-1.5-9B-heretic",
+    "base_model:quantized:teddy19032/Ornith-1.5-9B-heretic",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 39,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 90063475200,
+  "storage_human": "90.1 GB",
+  "base_model": "teddy19032/Ornith-1.5-9B-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

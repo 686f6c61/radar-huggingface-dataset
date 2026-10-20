@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "barhsystem/BARH-786-Core",
+  "slug": "barhsystem-barh-786-core",
+  "author": "barhsystem",
+  "url": "https://huggingface.co/barhsystem/BARH-786-Core",
+  "created_at": "2026-10-19T21:41:07.000Z",
+  "updated_at": "2026-10-19T21:52:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

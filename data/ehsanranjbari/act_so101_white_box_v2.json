@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ehsanranjbari/act_so101_white_box_v2",
+  "slug": "ehsanranjbari-act_so101_white_box_v2",
+  "author": "ehsanranjbari",
+  "url": "https://huggingface.co/ehsanranjbari/act_so101_white_box_v2",
+  "created_at": "2026-10-19T20:42:52.000Z",
+  "updated_at": "2026-10-19T20:43:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:ehsanranjbari/so101_white_box",
+    "arxiv:2304.13705",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206712896,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-10-20T02:18:43.987Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AnikaTriesStuff/act-so101-white-box · Hugging Face",
+      "url": "https://huggingface.co/AnikaTriesStuff/act-so101-white-box",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "jian001/act_so101_test_model · Hugging Face",
+      "url": "https://huggingface.co/jian001/act_so101_test_model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "Philadelphia: Anthropic AI model submits false homicide tip",
+      "url": "https://www.ctvnews.ca/sci-tech/article/anthropic-ai-model-submits-false-homicide-tip-to-police-website/",
+      "snippet": "An Anthropic artificial intelligence model submitted a false homicide tip through a Philadelphia police website, the department said, the latest incident of an AI model going rogue."
+    },
+    {
+      "title": "act_so101_white_brick_two_camera_60k_a100: Model Details, Context ...",
+      "url": "https://essamamdani.com/ai-models/hf-gorudov-act-so101-white-brick-two-camera-60k-a100",
+      "snippet": "Model card indexed from Hugging Face. Specs: sourced from Hugging Face. Compare act_so101_white_brick_two_camera_60k_a100&#x27;s parameters, context window, pricing"
+    }
+  ]
+}

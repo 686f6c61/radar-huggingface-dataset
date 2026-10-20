@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "svkuznetsov/dino-classification-2023",
+  "slug": "svkuznetsov-dino-classification-2023",
+  "author": "svkuznetsov",
+  "url": "https://huggingface.co/svkuznetsov/dino-classification-2023",
+  "created_at": "2026-10-19T20:18:13.000Z",
+  "updated_at": "2026-10-19T20:18:18.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "svkuznetsov (Svetlana G. Kuznetsov) - Hugging Face",
+      "url": "https://huggingface.co/svkuznetsov",
+      "snippet": "Learning ML every day. Love open source and cool models."
+    },
+    {
+      "title": "DINO - A Foundation Model for Computer Vision",
+      "url": "https://towardsdatascience.com/dino-a-foundation-model-for-computer-vision-4cb08e821b18/",
+      "snippet": "DINO was released on arxiv in April 2021. So, one month before it was actually presented on a conference. This would mean they only had 5 months if they had started right away to come up with the project&#x27;s idea, compile a team, lay out the theoretical foundation, train the model, perform experiments and ablations, and write the paper."
+    },
+    {
+      "title": "DINO (computer vision) - AI Wiki",
+      "url": "https://aiwiki.ai/wiki/dino_model",
+      "snippet": "DINO (self- DI stillation with NO labels) is a family of self-supervised learning methods for computer vision from Meta AI that trains Vision Transformers (ViTs) on unlabeled images and produces general-purpose visual features rivaling or surpassing those learned with human-labeled supervision [1] [2]."
+    },
+    {
+      "title": "DINOv3 - ai.meta.com",
+      "url": "https://ai.meta.com/research/dinov3/",
+      "snippet": "Evaluating DINOv3&#x27;s Performance DINOv3 sets a new standard in vision foundation models. For the first time, a model trained with SSL outperforms weakly-supervised models on a broad range of probing tasks, from fine-grained image classification, to semantic segmentation, to object tracking in video."
+    },
+    {
+      "title": "How to Classify Images with DINOv2 - Roboflow Blog",
+      "url": "https://roboflow.com/blog/how-to-classify-images-with-dinov2",
+      "snippet": "In April 2023, Meta Research released DINOv2, a method of training computer vision models that uses self-supervision to teach a model image features. DINOv2 can be used for, among other tasks, classification. DINOv2 doesn&#x27;t support classification out-of-the-box. You need to train a classification model using DINOv2 embeddings. In this guide, we&#x27;re going to discuss how to classify images using ..."
+    }
+  ]
+}

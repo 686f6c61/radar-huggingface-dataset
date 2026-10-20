@@ -5,7 +5,7 @@
   "author": "caseyeasd",
   "url": "https://huggingface.co/caseyeasd/claudefriend",
   "created_at": "2026-10-18T23:06:51.000Z",
-  "updated_at": "2026-10-18T23:33:33.000Z",
+  "updated_at": "2026-10-20T00:54:54.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 25,
   "trending_score": 0,
   "parameters": 9653104368,
   "parameters_human": "9.65B",

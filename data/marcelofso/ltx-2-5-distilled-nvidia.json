@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "MarceloFSO/ltx-2.5-distilled-nvidia",
+  "slug": "marcelofso-ltx-2-5-distilled-nvidia",
+  "author": "MarceloFSO",
+  "url": "https://huggingface.co/MarceloFSO/ltx-2.5-distilled-nvidia",
+  "created_at": "2026-10-19T19:31:50.000Z",
+  "updated_at": "2026-10-19T19:33:42.000Z",
+  "license": "ltx-2.x-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "video-generation",
+    "text-to-video",
+    "image-to-video",
+    "safetensors",
+    "mirror",
+    "base_model:Lightricks/LTX-2.5",
+    "base_model:finetune:Lightricks/LTX-2.5",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 71114917404,
+  "storage_human": "71.1 GB",
+  "base_model": "Lightricks/LTX-2.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LinkedIn : s’identifier ou s’inscrire",
+      "url": "https://fr.linkedin.com/",
+      "snippet": "À qui s’adresse LinkedIn ? À toute personne cherchant à construire sa carrière professionnelle.Read more"
+    },
+    {
+      "title": "LinkedIn | LinkedIn",
+      "url": "https://www.linkedin.com/company/linkedin",
+      "snippet": "With more than 1 billion members worldwide, including executives from every Fortune 500 company, LinkedIn is the world's largest …"
+    },
+    {
+      "title": "LinkedIn: Log In or Sign Up",
+      "url": "https://www.linkedin.com/",
+      "snippet": "Explore top LinkedIn content Discover relevant posts and expert insights — curated by topic and in one place."
+    },
+    {
+      "title": "LinkedIn",
+      "url": "https://in.linkedin.com/company/linkedin",
+      "snippet": "Founded in 2003, LinkedIn connects the world's professionals to make them more productive and successful. With more than 1 …"
+    },
+    {
+      "title": "LinkedIn: Log In or Sign Up",
+      "url": "https://gb.linkedin.com/",
+      "snippet": "Welcome to your professional community Sign in with email By clicking Continue to join or sign in, you agree to LinkedIn’s User …"
+    }
+  ]
+}

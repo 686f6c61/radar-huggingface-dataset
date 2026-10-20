@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "Convergent-ch/Tavik",
+  "slug": "convergent-ch-tavik",
+  "author": "Convergent-ch",
+  "url": "https://huggingface.co/Convergent-ch/Tavik",
+  "created_at": "2026-10-19T23:42:13.000Z",
+  "updated_at": "2026-10-19T23:42:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "llama",
+    "text-generation",
+    "slm",
+    "small",
+    "chat",
+    "raspberry-pi",
+    "conversational",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:HuggingFaceTB/smol-smoltalk",
+    "dataset:styfeng/TinyDialogues",
+    "dataset:HuggingFaceTB/everyday-conversations-llama3.1-2k",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20405376,
+  "parameters_human": "20.4M",
+  "storage_bytes": 81931536,
+  "storage_human": "82 MB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Définitions : convergent - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/convergent/18989",
+      "snippet": "Convergeant part. présent. Finale en - eant ; reste invariable : leurs vues convergeant, ils ont signé l'accord. Convergent, e adj. …"
+    },
+    {
+      "title": "convergent - Définitions, synonymes, prononciation, exemples | Dico …",
+      "url": "https://dictionnaire.lerobert.com/definition/convergent",
+      "snippet": "Depuis quelques années, les recherches convergent, à commencer par celles des historiens, pour démontrer que les normes …"
+    },
+    {
+      "title": "Convergent : Définition simple et facile du dictionnaire",
+      "url": "https://www.linternaute.fr/dictionnaire/fr/definition/convergent/",
+      "snippet": "Convergent : définition, contraire, citations, traduction dans le dictionnaire de la langue française. Définition : Qui converge, qui tend..."
+    },
+    {
+      "title": "Convergent — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Convergent",
+      "snippet": "Le terme convergent se retrouve : en astronautique, le convergent est la partie amont d'une tuyère destinée à augmenter la vitesse …"
+    },
+    {
+      "title": "Convergent : définition et explications - AquaPortail",
+      "url": "https://www.aquaportail.com/dictionnaire/definition/1679/convergent",
+      "snippet": "Est convergent ce qui converge, se rapproche l'un de l'autre, ou provoque une convergence. Deux lignes convergentes ne sont …"
+    }
+  ]
+}

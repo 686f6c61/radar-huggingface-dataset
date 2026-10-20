@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "sstoica12/acquisition_student_AS_confidence_wildguardmix__5000_checkpoint_400",
+  "slug": "sstoica12-acquisition_student_as_confidence_wildguardmix__5000_checkpoint_400",
+  "author": "sstoica12",
+  "url": "https://huggingface.co/sstoica12/acquisition_student_AS_confidence_wildguardmix__5000_checkpoint_400",
+  "created_at": "2026-10-19T19:37:35.000Z",
+  "updated_at": "2026-10-19T19:39:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Steam Workshop::NSFW Wallpapers",
+      "url": "https://steamcommunity.com/workshop/filedetails/?id=1342654022",
+      "snippet": "Mar 26, 2018 · Artists: Arhi x Fiora Wide screen resolution I probably reccomend to you use that wallpaper in 40-50 Pos. You may …"
+    },
+    {
+      "title": "Seeking - Actually good NSFW live wallpapers for wallpaper engine",
+      "url": "https://f95zone.to/threads/actually-good-nsfw-live-wallpapers-for-wallpaper-engine.149219/",
+      "snippet": "Feb 20, 2023 · Can't find any on steam, what i find are mostly static images, or straight up videos. Are there any good R18 …"
+    },
+    {
+      "title": "Wallpaper Engine Adult Wallpapers - Misc - LoversLab",
+      "url": "https://www.loverslab.com/files/file/23210-wallpaper-engine-adult-wallpapers/",
+      "snippet": "Aug 9, 2022 · About This File Here I will share Wallpaper Engine Adult Wallpapers. Blacked - Wanderlust Part 3 (YUKKI AMEY, …"
+    },
+    {
+      "title": "Wallpaper Engine - Porn Photos & Videos - EroMe",
+      "url": "https://www.erome.com/search?q=wallpaper+engine",
+      "snippet": "Every day, thousands of people use EroMe to enjoy free photos and videos. Come share your..."
+    },
+    {
+      "title": "Steam Workshop::nsfw",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2822343371",
+      "snippet": "On the hunt for the best wallpaper for your setup, that'll truly level up your space? You've come to the right place, you'll find …"
+    }
+  ]
+}

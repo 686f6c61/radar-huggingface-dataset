@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "ThakiCloud/Voice2Policy-Text-Router-v0.1",
+  "slug": "thakicloud-voice2policy-text-router-v0-1",
+  "author": "ThakiCloud",
+  "url": "https://huggingface.co/ThakiCloud/Voice2Policy-Text-Router-v0.1",
+  "created_at": "2026-10-20T00:05:58.000Z",
+  "updated_at": "2026-10-20T00:06:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "numpy",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "numpy",
+    "safetensors",
+    "char-ngram-tfidf-logreg",
+    "voice-command",
+    "intent-classification",
+    "korean",
+    "tfidf",
+    "logistic-regression",
+    "voice2policy",
+    "text-classification",
+    "ko",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 104603,
+  "parameters_human": "104603",
+  "storage_bytes": 837216,
+  "storage_human": "837216 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

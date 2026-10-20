@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "smallAI/loop-distil-checkpoints",
+  "slug": "smallai-loop-distil-checkpoints",
+  "author": "smallAI",
+  "url": "https://huggingface.co/smallAI/loop-distil-checkpoints",
+  "created_at": "2026-10-19T17:52:04.000Z",
+  "updated_at": "2026-10-19T18:21:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "model-distillation",
+    "recurrent-language-model",
+    "reverse-kl",
+    "text-generation",
+    "base_model:tomg-group-umd/huginn-0125",
+    "base_model:finetune:tomg-group-umd/huginn-0125",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 58944645072,
+  "storage_human": "58.9 GB",
+  "base_model": "tomg-group-umd/huginn-0125",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How Distillation Made Small AI Models Smarter | GetCoreTech",
+      "url": "https://getcoretech.net/articles/small-ai-models-distillation-new-standard",
+      "snippet": "13.09.2026 ... ... checkpoints, respectively — which makes distilling ... model already exists or when many student models will be distilled from one teacher."
+    },
+    {
+      "title": "GitHub - kshetrajna12/reflex: A small open decision model: state + ...",
+      "url": "https://github.com/kshetrajna12/reflex",
+      "snippet": "A small open decision model: state + typed questions -> calibrated probabilities. A Jev / System One re-creation on Qwen3.5. - kshetrajna12/reflex."
+    },
+    {
+      "title": "Why Open Small AI Models Matter for Interactive Art - arXiv",
+      "url": "https://arxiv.org/pdf/2511.09788",
+      "snippet": "12.11.2025 ... Selectable Models and Checkpoints: Open-source mod- els offer users extensive control, allowing them to use older or newer models version and ..."
+    },
+    {
+      "title": "AI Career Guides: Anthropic, OpenAI & DeepMind ... - Sundeep Teki",
+      "url": "https://www.sundeepteki.org/advice.html",
+      "snippet": "Instead of training a reward model, running an RL loop, and carefully managing ... loop checkpoints and comprehensive error handling. Deploy it in a ..."
+    },
+    {
+      "title": "Qwen3.5-9B Triple-Loop : r/LocalLLaMA - Reddit",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vw6nba/qwen359b_tripleloop/",
+      "snippet": "23.08.2026 ... Even with an unfinished run, the checkpoint beats the base model ... Nanbeige 4.1 3B Model Sets New Standard for Small AI Performance. 7. 1 ..."
+    }
+  ]
+}

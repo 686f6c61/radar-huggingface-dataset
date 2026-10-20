@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "V109/qwen2.5-MFANN-7b-SLERP-V1.2",
+  "slug": "v109-qwen2-5-mfann-7b-slerp-v1-2",
+  "author": "V109",
+  "url": "https://huggingface.co/V109/qwen2.5-MFANN-7b-SLERP-V1.2",
+  "created_at": "2026-10-19T19:42:13.000Z",
+  "updated_at": "2026-10-19T19:42:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "merge",
+    "mergekit",
+    "lazymergekit",
+    "huihui-ai/Qwen2.5-Coder-7B-Instruct-abliterated",
+    "netcat420/qwen2.5-MFANN-7b-v1.1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693404,
+  "storage_human": "15.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

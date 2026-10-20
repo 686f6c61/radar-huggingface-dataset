@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "id": "datapsalm/dsn2026-lid-w03",
+  "slug": "datapsalm-dsn2026-lid-w03",
+  "author": "datapsalm",
+  "url": "https://huggingface.co/datapsalm/dsn2026-lid-w03",
+  "created_at": "2026-10-19T23:41:10.000Z",
+  "updated_at": "2026-10-19T23:42:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "transformers",
+  "languages": [
+    "yo",
+    "ig",
+    "ha",
+    "ego",
+    "anw",
+    "efi",
+    "ibb",
+    "idu",
+    "igl",
+    "nup",
+    "tiv",
+    "urh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "audio-classification",
+    "language-identification",
+    "nigerian-languages",
+    "dsn-2026",
+    "yo",
+    "ig",
+    "ha",
+    "ego",
+    "anw",
+    "efi",
+    "ibb",
+    "idu",
+    "igl",
+    "nup",
+    "tiv",
+    "urh",
+    "arxiv:2511.09690",
+    "base_model:openai/whisper-base",
+    "base_model:finetune:openai/whisper-base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20213268,
+  "parameters_human": "20.2M",
+  "storage_bytes": 40437120,
+  "storage_human": "40 MB",
+  "base_model": "openai/whisper-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sleeveless Motorcycle Jacket - Etsy",
+      "url": "https://www.etsy.com/market/sleeveless_motorcycle_jacket?msockid=159b0125cef86b40111216ddcfb26a6f",
+      "snippet": "Explore timeless sleeveless motorcycle jackets, perfect for riders and style enthusiasts. Discover distressed leather biker vests, slim …"
+    },
+    {
+      "title": "Men's Sleeveless Real Leather Biker Jacket – London Leathers Direct",
+      "url": "https://londonleathersdirect.com/products/mens-sleeveless-real-leather-biker-jacket-fonzy-sleeveless",
+      "snippet": "Get the ultimate biker style with our men's sleeveless real leather biker jacket. The Fonzy Sleeveless combines edgy design with …"
+    },
+    {
+      "title": "Motorcycle Leather Sleeveless Jacket - Etsy",
+      "url": "https://www.etsy.com/market/motorcycle_leather_sleeveless_jacket?msockid=159b0125cef86b40111216ddcfb26a6f",
+      "snippet": "Check out our motorcycle leather sleeveless jacket selection for the very best in unique or custom, handmade pieces from our …"
+    },
+    {
+      "title": "Amazon.com: Sleeveless Leather Vest",
+      "url": "https://www.amazon.com/sleeveless-leather-vest/s?k=sleeveless+leather+vest",
+      "snippet": "Price and other details may vary based on product size and color."
+    },
+    {
+      "title": "Sleeveless Biker Jacket - eBay",
+      "url": "https://www.ebay.com/shop/sleeveless-biker-jacket?_nkw=sleeveless+biker+jacket&msockid=159b0125cef86b40111216ddcfb26a6f",
+      "snippet": "Explore a wide range of our Sleeveless Biker Jacket selection. Find top brands, exclusive offers, and unbeatable prices on eBay. …"
+    }
+  ]
+}

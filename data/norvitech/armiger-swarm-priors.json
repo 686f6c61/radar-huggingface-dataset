@@ -5,7 +5,7 @@
   "author": "NorviTech",
   "url": "https://huggingface.co/NorviTech/armiger-swarm-priors",
   "created_at": "2026-10-18T17:53:49.000Z",
-  "updated_at": "2026-10-18T23:57:26.000Z",
+  "updated_at": "2026-10-19T22:00:22.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "tabular-classification",
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 43,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

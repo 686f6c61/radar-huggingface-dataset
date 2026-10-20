@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "joshuawjw/coca-matching",
+  "slug": "joshuawjw-coca-matching",
+  "author": "joshuawjw",
+  "url": "https://huggingface.co/joshuawjw/coca-matching",
+  "created_at": "2026-10-19T19:39:52.000Z",
+  "updated_at": "2026-10-19T19:39:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "I just installed stop the ped, and it doesnt work : r/lspdfr - Reddit",
+      "url": "https://www.reddit.com/r/lspdfr/comments/kvv1du/i_just_installed_stop_the_ped_and_it_doesnt_work/",
+      "snippet": "Jan 12, 2021 · Again, you're not installing stop the ped right. Look at the imgur link on where LSPD First Response and Stop the Ped …"
+    },
+    {
+      "title": "Bejoijo plugins failed to verify : r/lspdfr - Reddit",
+      "url": "https://www.reddit.com/r/lspdfr/comments/mekyp8/bejoijo_plugins_failed_to_verify/",
+      "snippet": "Mar 27, 2021 · The problem is that they try to verify, but fail to, I do have a connection and have the latest version ( Stop The Ped …"
+    },
+    {
+      "title": "GTA 5 Stop The Ped Türkçe Yama - LCPDFR.com",
+      "url": "https://www.lcpdfr.com/downloads/gta5mods/misc/41554-gta-5-stop-the-ped-t%C3%BCrk%C3%A7e-yama/",
+      "snippet": "Oct 25, 2022 · Doğancan ve Semih Biçer'in katkıları ile hazırlanın stop the ped türkçe yamasının eksik olan kısımlarını çevirdim. …"
+    },
+    {
+      "title": "STOP THE PED: Realistic Conversations Update - LCPDFR.com",
+      "url": "https://www.lcpdfr.com/downloads/gta5mods/misc/43485-stop-the-ped-realistic-conversations-update/",
+      "snippet": "Apr 8, 2023 · STOP THE PED: Realistic Conversations Update - A complete dialogue overhaul of the Stop the Ped mod by Bejoijo …"
+    },
+    {
+      "title": "Stop the Ped crashing : r/lspdfr - Reddit",
+      "url": "https://www.reddit.com/r/lspdfr/comments/ct8cx6/stop_the_ped_crashing/",
+      "snippet": "Aug 20, 2019 · Stop the Ped crashing Whenever i try to initiate stop the ped, it states that my LSPDFR has crashed. Here's my log. If …"
+    }
+  ]
+}

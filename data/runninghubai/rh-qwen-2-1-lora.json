@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-qwen-2.1-lora",
+  "slug": "runninghubai-rh-qwen-2-1-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-qwen-2.1-lora",
+  "created_at": "2026-10-19T20:43:01.000Z",
+  "updated_at": "2026-10-19T20:44:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 84215014,
+  "storage_human": "84 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wiko Mobile - LENNY2",
+      "url": "https://fr.wikomobile.com/m803-smartphones-lenny2",
+      "snippet": "Contenu du coffret Adaptateur secteur Batterie Câble Micro USB Guide utilisateur Kit piéton Téléphone Wiko S.A.V. Disponibilité des …"
+    },
+    {
+      "title": "Nous contacter",
+      "url": "https://fr.wikomobile.com/shop/nous-contacter",
+      "snippet": "Une question ? Contactez les équipes Wiko en ligne ou par téléphone au 04 88 08 95 25, du lundi au vendredi de 9h à 18h."
+    },
+    {
+      "title": "Wiko Mobile France - Smartphones et accessoires | WIKO",
+      "url": "https://fr.wikomobile.com/index.php",
+      "snippet": "Tout l'univers Wiko mobile : retrouvez et commandez en ligne les téléphones, accessoires et objets connectés du premier fabricant …"
+    },
+    {
+      "title": "Coques et protections de smartphones - Accessoires - Wiko Mobile",
+      "url": "https://fr.wikomobile.com/shop/accessoires/protection/",
+      "snippet": "Découvrez notre gamme exclusive de coques et étuis. Offrez à votre smartphone la qualité, le design et la technologie des …"
+    },
+    {
+      "title": "VIEW4 Lite - Wiko Mobile",
+      "url": "https://fr.wikomobile.com/shop/view4lite",
+      "snippet": "Accessoires Wiko Smart Folio Jetez un oeil à vos principales notifications, un appel entrant ou votre musique en cours grâce à la …"
+    }
+  ]
+}

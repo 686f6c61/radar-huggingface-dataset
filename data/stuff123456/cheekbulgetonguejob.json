@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "stuff123456/cheekbulgetonguejob",
+  "slug": "stuff123456-cheekbulgetonguejob",
+  "author": "stuff123456",
+  "url": "https://huggingface.co/stuff123456/cheekbulgetonguejob",
+  "created_at": "2026-10-19T20:43:38.000Z",
+  "updated_at": "2026-10-19T20:43:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:Granddyser/flux-klein-9b-Biglove-Collection",
+    "base_model:adapter:Granddyser/flux-klein-9b-Biglove-Collection",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 165705760,
+  "storage_human": "166 MB",
+  "base_model": "Granddyser/flux-klein-9b-Biglove-Collection",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Epson Smart Panel - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.epson.epsonsmart&hl=en-US",
+      "snippet": "High performance, easy-to-use mobile command center for your Epson wireless printer or scanner1. Easily set up, monitor and …"
+    },
+    {
+      "title": "Epson Smart Panel App | Support | Epson US",
+      "url": "https://epson.com/Support/Printers/Mobile-and-Cloud-Solutions/Epson-Smart-Panel-App/s/SPT_SMARTPANELAPP?msockid=3173bcdc56b567030726ab2b579c6676",
+      "snippet": "The Epson Smart Panel app allows you to perform operations easily including printing, copying, or scanning from a smart device …"
+    },
+    {
+      "title": "Applications et logiciels | Epson France",
+      "url": "https://www.epson.fr/fr_FR/apps-software",
+      "snippet": "Imprimez, numérisez, envoyez des documents et gérez des appareils depuis votre smartphone ou votre tablette grâce aux …"
+    },
+    {
+      "title": "Epson iPrint - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=epson.print&hl=en-US",
+      "snippet": "Print anytime, anywhere to Epson printers from your Android phone or tablet."
+    },
+    {
+      "title": "Application Epson Smart Panel",
+      "url": "https://www.epson.fr/fr_FR/smartpanel",
+      "snippet": "Avec l’application Smart Panel, vous pouvez surveiller l’état de votre imprimante ou de votre scanner, gérer les travaux d’impression, …"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "tensor-ai-inc/d3-edge-NVFP4",
+  "slug": "tensor-ai-inc-d3-edge-nvfp4",
+  "author": "tensor-ai-inc",
+  "url": "https://huggingface.co/tensor-ai-inc/d3-edge-NVFP4",
+  "created_at": "2026-10-19T23:17:09.000Z",
+  "updated_at": "2026-10-20T00:07:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "nvfp4",
+    "modelopt",
+    "decision",
+    "vllm",
+    "zero-shot-classification",
+    "custom_code",
+    "base_model:vllm-sr/d3-edge",
+    "base_model:quantized:vllm-sr/d3-edge",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 506241216,
+  "parameters_human": "506.2M",
+  "storage_bytes": 952064403,
+  "storage_human": "952 MB",
+  "base_model": "vllm-sr/d3-edge",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FREE online image generator and model hosting site! | Tensor.Art",
+      "url": "https://tensor.art/",
+      "snippet": "TAMS Instagram TiKTok Twitter Reddit Privacy Policy Terms of Service Report Compliance Issue ©TENSOR tensor.art 2026Read more"
+    },
+    {
+      "title": "Tensor - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tensor",
+      "snippet": "Just as a rectangular matrix has two axes, a horizontal and vertical axis to indicate the position of each entry, a more general tensor …"
+    },
+    {
+      "title": "Tensor | Solana's Leading NFT Marketplace",
+      "url": "https://www.tensor.trade/",
+      "snippet": "Tensor is the #1 NFT Marketplace on Solana. Backed by Placeholder VC, Solana Ventures, and Solana founders Toly and Raj."
+    },
+    {
+      "title": "Tensor.Art",
+      "url": "https://www.tensor.art/search",
+      "snippet": "Model Types Base Model Tags Date Published Creators More Filters"
+    },
+    {
+      "title": "Tenseur — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Tenseur",
+      "snippet": "Le mot tenseur est issu de l'anglais d'origine latine tensor, mot introduit en 1846 par William Rowan Hamilton pour décrire la norme …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "ads2009",
   "url": "https://huggingface.co/ads2009/english-ai-text-detector-albert-indomai",
   "created_at": "2026-10-16T16:53:40.000Z",
-  "updated_at": "2026-10-18T00:02:24.000Z",
+  "updated_at": "2026-10-19T10:44:28.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-classification",
@@ -21,12 +21,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 40,
+  "downloads_30d": 59,
   "trending_score": 0,
   "parameters": 11685122,
   "parameters_human": "11.7M",
-  "storage_bytes": 93487824,
-  "storage_human": "93 MB",
+  "storage_bytes": 140231736,
+  "storage_human": "140 MB",
   "base_model": null,
   "formats": [
     "safetensors"

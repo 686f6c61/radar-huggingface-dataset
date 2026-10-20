@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "efficiencyx/Jun-LoRA-12B-Safetensor",
+  "slug": "efficiencyx-jun-lora-12b-safetensor",
+  "author": "efficiencyx",
+  "url": "https://huggingface.co/efficiencyx/Jun-LoRA-12B-Safetensor",
+  "created_at": "2026-10-19T21:37:18.000Z",
+  "updated_at": "2026-10-19T21:51:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4_unified",
+    "image-text-to-text",
+    "gemma4",
+    "lora",
+    "character",
+    "roleplay",
+    "vllm",
+    "tpu",
+    "MDRG",
+    "Factorial-Omega",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:unsloth/gemma-4-12B-it-qat-q4_0-unquantized",
+    "base_model:adapter:unsloth/gemma-4-12B-it-qat-q4_0-unquantized",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11959730176,
+  "parameters_human": "11.96B",
+  "storage_bytes": 23951718050,
+  "storage_human": "24.0 GB",
+  "base_model": "unsloth/gemma-4-12B-it-qat-q4_0-unquantized",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Education bdsm - vidéo - I-Sux",
+      "url": "https://i-sux.com/fr/you-found-this?phrase=education%20bdsm&sort=top&n=1",
+      "snippet": "education de l'esclave, éducation fessée, esclave allemande, education d'une esclave, german slave bdsm, slave education, …"
+    },
+    {
+      "title": "EDUCATION BDSM - Porn videos @ CumGuru.com",
+      "url": "https://cumguru.com/videos/education-bdsm",
+      "snippet": "Popular videos: Education Bdsm. The Evolution of a Sex Symbol into a Sex Educator, Pf - Dee & Alex - Sex Education With Stepson …"
+    },
+    {
+      "title": "Education BDSM Vidéos Porno - xHamster",
+      "url": "https://fra.xhamster.com/search/education+bdsm",
+      "snippet": "Regardez des vidéos pornos education BDSM. Découvrez des tonnes de films XXX de avec des scènes de sexe en 2026 sur …"
+    },
+    {
+      "title": "Free Bdsm Education Porn Videos (360) - Tubesafari.com",
+      "url": "https://tubesafari.com/search/bdsm-education",
+      "snippet": "Free bdsm education porn: 360 videos. WATCH NOW for FREE!"
+    },
+    {
+      "title": "Vidéos porno Bdsm Education | Tube8",
+      "url": "https://www.tube8.fr/porntags/bdsm+education/",
+      "snippet": "Les meilleures vidéos porno Bdsm Education sont ici sur Tube8.com. Cliquez ici et trouvez tous les films porno Bdsm Education les …"
+    }
+  ]
+}

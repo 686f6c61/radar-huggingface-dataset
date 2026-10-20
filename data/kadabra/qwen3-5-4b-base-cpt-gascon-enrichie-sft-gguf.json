@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Kadabra/Qwen3.5-4B-Base-CPT-Gascon-Enrichie-SFT-GGUF",
+  "slug": "kadabra-qwen3-5-4b-base-cpt-gascon-enrichie-sft-gguf",
+  "author": "Kadabra",
+  "url": "https://huggingface.co/Kadabra/Qwen3.5-4B-Base-CPT-Gascon-Enrichie-SFT-GGUF",
+  "created_at": "2026-10-19T19:41:15.000Z",
+  "updated_at": "2026-10-19T19:43:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "llama.cpp",
+    "llama-cpp",
+    "unsloth",
+    "vision-language-model",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 11179892608,
+  "storage_human": "11.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Palaiseau, Le NEXT",
+      "url": "https://www.myregus.com/centre/6151/details",
+      "snippet": "Drive your business forward with flexible office space at Le Next. Connect easily with the continental centre of Paris and tap into the …"
+    },
+    {
+      "title": "Le Next Palaiseau: Premium Flexible Office Space Near Paris",
+      "url": "https://regalestategroup.com/france/palaiseau/le-next/",
+      "snippet": "Discover premium flexible office space at Le Next in Palaiseau, offering seamless Paris connectivity, vibrant networking, and modern …"
+    },
+    {
+      "title": "Le NEXT Campus urbain de Paris-Saclay",
+      "url": "https://epa-paris-saclay.fr/wp-content/uploads/2021/12/Plaquette_NEXT_210322_page_DEF.pdf",
+      "snippet": "Une offre unique au cœur de l’écosystème d’innovation de Paris-Saclay que et technologique de Paris-Saclay. Localisés au cœur du …"
+    },
+    {
+      "title": "Le Next",
+      "url": "https://immobilier.cushmanwakefield.fr/location-bureaux/bureaux-a-louer-palaiseau-91120-175678",
+      "snippet": "À Palaiseau, 7-9 boulevard Thomas Gobert, bureaux à louer de 246 m² à 541 m² au sein du Next, immeuble neuf implanté au coeur …"
+    },
+    {
+      "title": "Le Next, Palaiseau | Flexify",
+      "url": "https://flexifyhq.com/spaces/le-next-palaiseau/",
+      "snippet": "Le Next sits in Palaiseau, close to the Paris‑Saclay cluster and key academic institutions. The address suits teams that want a calm …"
+    }
+  ]
+}

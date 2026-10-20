@@ -5,7 +5,7 @@
   "author": "Blockway",
   "url": "https://huggingface.co/Blockway/Agens-Volundr-tiny-random",
   "created_at": "2026-10-18T23:52:00.000Z",
-  "updated_at": "2026-10-18T23:52:21.000Z",
+  "updated_at": "2026-10-19T05:02:52.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 25,
   "trending_score": 0,
   "parameters": 32827757,
   "parameters_human": "32.8M",

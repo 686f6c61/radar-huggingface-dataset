@@ -5,7 +5,7 @@
   "author": "Akzium",
   "url": "https://huggingface.co/Akzium/activation-oracle-organisms-gemma-2-2b",
   "created_at": "2026-10-05T19:15:01.000Z",
-  "updated_at": "2026-10-05T21:06:29.000Z",
+  "updated_at": "2026-10-05T22:19:43.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -28,16 +28,16 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 4985522432,
-  "storage_human": "5.0 GB",
+  "storage_bytes": 5151704912,
+  "storage_human": "5.2 GB",
   "base_model": "google/gemma-2-2b-it",
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
-  "gated": false,
-  "removed": true,
-  "removed_at": "2026-10-06T02:12:24.213Z",
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "timm/vit_base_patch16_224.bamboo",
+  "slug": "timm-vit_base_patch16_224-bamboo",
+  "author": "timm",
+  "url": "https://huggingface.co/timm/vit_base_patch16_224.bamboo",
+  "created_at": "2026-10-19T19:25:45.000Z",
+  "updated_at": "2026-10-19T19:25:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "safetensors",
+    "bamboo",
+    "arxiv:2203.07845",
+    "image-classification",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 174400529,
+  "parameters_human": "174.4M",
+  "storage_bytes": 697616212,
+  "storage_human": "698 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

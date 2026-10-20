@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "vluzhang/r16-uid195-kingbear329-sn38-r16-c12-step687-alpha05",
+  "slug": "vluzhang-r16-uid195-kingbear329-sn38-r16-c12-step687-alpha05",
+  "author": "vluzhang",
+  "url": "https://huggingface.co/vluzhang/r16-uid195-kingbear329-sn38-r16-c12-step687-alpha05",
+  "created_at": "2026-10-19T19:35:14.000Z",
+  "updated_at": "2026-10-19T19:35:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "sn38-nanochrono",
+    "text-generation",
+    "sn38",
+    "causal-lm",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2018511234,
+  "parameters_human": "2.02B",
+  "storage_bytes": 4037045836,
+  "storage_human": "4.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "adiZu/river-decider",
+  "slug": "adizu-river-decider",
+  "author": "adiZu",
+  "url": "https://huggingface.co/adiZu/river-decider",
+  "created_at": "2026-10-19T21:26:58.000Z",
+  "updated_at": "2026-10-19T21:30:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gliner2",
+  "languages": [],
+  "tags": [
+    "gliner2",
+    "onnx",
+    "decision-model",
+    "on-device",
+    "base_model:fastino/GLiNER2.5-multi-Decide",
+    "base_model:quantized:fastino/GLiNER2.5-multi-Decide",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 364491709,
+  "storage_human": "364 MB",
+  "base_model": "fastino/GLiNER2.5-multi-Decide",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

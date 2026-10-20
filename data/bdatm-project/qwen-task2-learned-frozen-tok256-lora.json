@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "bdatm-project/qwen-task2-learned-frozen-tok256-lora",
+  "slug": "bdatm-project-qwen-task2-learned-frozen-tok256-lora",
+  "author": "bdatm-project",
+  "url": "https://huggingface.co/bdatm-project/qwen-task2-learned-frozen-tok256-lora",
+  "created_at": "2026-10-19T21:15:00.000Z",
+  "updated_at": "2026-10-19T21:35:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 558194371,
+  "storage_human": "558 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Millennium bcp | Melhor Banco digital de Portugal",
+      "url": "https://www.millenniumbcp.pt/",
+      "snippet": "Peça até 25.000€, com resposta na hora e sem comissão de formalização. Connosco, o crédito pessoal entra na conta na hora. …"
+    },
+    {
+      "title": "Login Homebanking - Mіllеnnіum bcp",
+      "url": "https://ind.millenniumbcp.pt/_layouts/15/bcp.sdc.fep.foundation.presentation/login.aspx",
+      "snippet": "Entre com o Código de Utilizador ? Como funciona? Ainda não é Cliente?"
+    },
+    {
+      "title": "Conta à ordem Millennium | Millennium bcp",
+      "url": "https://www.millenniumbcp.pt/contas/conta-a-ordem/conta-millennium",
+      "snippet": "Adira à Conta Millennium + Cliente Frequente, Mais Portugal, Programa Prestige ou Prestige Direto para ter mais e pagar menos. …"
+    },
+    {
+      "title": "- Millennium bcp",
+      "url": "https://ind.millenniumbcp.pt/pt/Particulares/Pages/MegaMenu.aspx",
+      "snippet": "O millenniumbcp.pt é um serviço do Banco Comercial Português, S.A., registado no BdP sob o nº. 33."
+    },
+    {
+      "title": "Lоgin Homebanking - Millennium bcp",
+      "url": "https://ind.millenniumbcp.pt/_layouts/15/bcp.sdc.fep.foundation.presentation/login.aspx?source=/pt/particulares/direct/pages/default.aspx",
+      "snippet": "Entre com o Código de Utilizador ? Como funciona? Ainda não é Cliente?"
+    }
+  ]
+}

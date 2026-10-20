@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "CrazyH0rse/Discerna-v1-475M",
+  "slug": "crazyh0rse-discerna-v1-475m",
+  "author": "CrazyH0rse",
+  "url": "https://huggingface.co/CrazyH0rse/Discerna-v1-475M",
+  "created_at": "2026-10-19T23:09:33.000Z",
+  "updated_at": "2026-10-19T23:09:55.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "discerna",
+    "decision-model",
+    "classification",
+    "multimodal",
+    "vision",
+    "calibrated",
+    "en",
+    "dataset:nyu-mll/multi_nli",
+    "dataset:alisawuffles/WANLI",
+    "dataset:tau/commonsense_qa",
+    "dataset:allenai/qasc",
+    "dataset:google/civil_comments",
+    "dataset:google-research-datasets/go_emotions",
+    "dataset:nvidia/HelpSteer2",
+    "dataset:nvidia/HelpSteer3",
+    "dataset:nvidia/Aegis-AI-Content-Safety-Dataset-2.0",
+    "dataset:qiaojin/PubMedQA",
+    "dataset:google-research-datasets/tydiqa",
+    "dataset:Team-ACE/ToolACE",
+    "dataset:glaiveai/glaive-function-calling-v2",
+    "base_model:LiquidAI/LFM2.5-Encoder-350M",
+    "base_model:finetune:LiquidAI/LFM2.5-Encoder-350M",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 474967041,
+  "parameters_human": "475.0M",
+  "storage_bytes": 1900678151,
+  "storage_human": "1.9 GB",
+  "base_model": "LiquidAI/LFM2.5-Encoder-350M, LiquidAI/LFM2.5-VL-450M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pinterest - 知乎",
+      "url": "https://www.zhihu.com/topic/19559627/intro",
+      "snippet": "Pinterest采用的是瀑布流的形式展现图片内容，无需用户翻页，新的图片不断自动加载在页面顶端，让用户不断的发现新的图片。 …"
+    },
+    {
+      "title": "Pinterest 好在哪里？ - 知乎",
+      "url": "https://www.zhihu.com/question/19562210",
+      "snippet": "Pinterest不同于Tumblr和微博，虽然Tumblr和微博的核心内容之一都是图片，可是各种博们关注图片是为了社交和传媒，Pinterest有 …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/windows/forum/all/constant-bsods-usually-after-having-a-game-running/312e8fb9-87fb-4fd4-a7b8-1861de85d104",
+      "snippet": ""
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/windows/forum/all/sound-playing-with-no-programs-open-netstat-ano/39fb87b6-f53b-47aa-af34-6de9a9ff9f5e",
+      "snippet": ""
+    },
+    {
+      "title": "Pinterest中的视频如何下载？ - 知乎",
+      "url": "https://www.zhihu.com/question/365879837",
+      "snippet": "感谢楼上答主提供一个非常好的思路，鉴于pinterest已经把有些视频播放页面左右键都屏蔽了，所以没有办法直接使用Eagle。 但沿着 …"
+    }
+  ]
+}

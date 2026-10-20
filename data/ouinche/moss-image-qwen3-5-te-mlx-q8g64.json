@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "Ouinche/moss-image-qwen3.5-te-mlx-q8g64",
+  "slug": "ouinche-moss-image-qwen3-5-te-mlx-q8g64",
+  "author": "Ouinche",
+  "url": "https://huggingface.co/Ouinche/moss-image-qwen3.5-te-mlx-q8g64",
+  "created_at": "2026-10-19T20:06:43.000Z",
+  "updated_at": "2026-10-19T20:12:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh",
+    "fr"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "apple-silicon",
+    "moss-image",
+    "qwen3.5",
+    "text-encoder",
+    "8-bit",
+    "diffusionbear",
+    "feature-extraction",
+    "en",
+    "zh",
+    "fr",
+    "base_model:OpenMOSS-Team/MOSS-Image-SFT",
+    "base_model:quantized:OpenMOSS-Team/MOSS-Image-SFT",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7936684544,
+  "parameters_human": "7.94B",
+  "storage_bytes": 10032544814,
+  "storage_human": "10.0 GB",
+  "base_model": "OpenMOSS-Team/MOSS-Image-SFT",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "R6: Siege Stats, Leaderboards & More! - Rainbow Six Siege Tracker",
+      "url": "https://r6.tracker.network/",
+      "snippet": "Rainbow Six Siege Stats! Check your profile and match history. View the top Rainbow Six players on our leaderboards and how you …Read more"
+    },
+    {
+      "title": "Siege Stats - Stats.CC All Rainbow Six Siege Stats - Rainbow Six Siege ...",
+      "url": "https://stats.cc/",
+      "snippet": "Our Siege Overlay is available with enhanced scoreboard, damage reports & more! Learn More"
+    },
+    {
+      "title": "Rainbow Six: Siege Tracker App - Rainbow Six Siege Tracker",
+      "url": "https://r6.tracker.network/r6siege/app",
+      "snippet": "Download the ultimate Rainbow Six: Siege stats tracker for FREE! An in-game real-time tracking solution for your Rainbow Six: …"
+    },
+    {
+      "title": "SiegeRadar – Siege Tracker & R6 Stats for Rainbow Six Siege",
+      "url": "https://siegeradar.com/",
+      "snippet": "Free Rainbow Six Siege stats tracker. Look up any player on PC, Xbox or PlayStation: rank, K/D, win rate, operators and season …"
+    },
+    {
+      "title": "Find your stats for your favorite games - Tracker Network",
+      "url": "https://tracker.gg/",
+      "snippet": "Tracker Network provides stats, global and regional leaderboards and much more to gamers around the world. Analyze how you play …"
+    }
+  ]
+}

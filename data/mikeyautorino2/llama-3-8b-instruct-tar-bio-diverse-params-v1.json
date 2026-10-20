@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mikeyautorino2/Llama-3-8B-Instruct-TAR-Bio-diverse-params-v1",
+  "slug": "mikeyautorino2-llama-3-8b-instruct-tar-bio-diverse-params-v1",
+  "author": "mikeyautorino2",
+  "url": "https://huggingface.co/mikeyautorino2/Llama-3-8B-Instruct-TAR-Bio-diverse-params-v1",
+  "created_at": "2026-10-19T20:31:24.000Z",
+  "updated_at": "2026-10-19T20:33:12.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "tamper-resistance",
+    "tar",
+    "safety",
+    "unlearning",
+    "llama-3",
+    "conversational",
+    "arxiv:2408.00761",
+    "arxiv:2412.07097",
+    "base_model:lapisrocks/Llama-3-8B-Instruct-Random-Mapped-Bio",
+    "base_model:finetune:lapisrocks/Llama-3-8B-Instruct-Random-Mapped-Bio",
+    "license:llama3",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16060556376,
+  "storage_human": "16.1 GB",
+  "base_model": "lapisrocks/Llama-3-8B-Instruct-Random-Mapped-Bio",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Luna's Beginners Guide On Turning Skyrim Into Your Sex RPG",
+      "url": "https://www.reddit.com/r/skyrimmods/comments/ledeby/lunas_beginners_guide_on_turning_skyrim_into_your/",
+      "snippet": "Luna's Beginners Guide On Turning Skyrim Into Your Sex RPG. Todd Howard Approved. LE/SE (PC) Updated For 2021 : …"
+    },
+    {
+      "title": "Suddenly, no animations? [SOLVED] :: The Elder Scrolls V: Skyrim ...",
+      "url": "https://steamcommunity.com/app/72850/discussions/0/341537388326354999/",
+      "snippet": "Oct 14, 2016 · Store Page The Elder Scrolls V: Skyrim All Discussions Screenshots Artwork Broadcasts Videos Workshop News …"
+    },
+    {
+      "title": "Fallout 4 or Skyrim for sex mods? : r/lewdgames - Reddit",
+      "url": "https://www.reddit.com/r/lewdgames/comments/kk1xh1/fallout_4_or_skyrim_for_sex_mods/",
+      "snippet": "Both games' sex mods are based off a way to instigate animations, but Skyrim has had it built by one seriously horny skilled …"
+    },
+    {
+      "title": "Sexlab Eager NPC's SE (SLEN) - Downloads - LoversLab",
+      "url": "https://www.loverslab.com/topic/110698-sexlab-eager-npcs-se-slen/",
+      "snippet": "Nov 10, 2018 · Sexlab Eager NPC's SE (SLEN) View File Here it is, finally: My conversion of Eager NPCs for SE. Not with the …"
+    },
+    {
+      "title": "Schl*ngs of skyrim underwear problem - Steam Community",
+      "url": "https://steamcommunity.com/app/72850/discussions/0/613939294287748826/",
+      "snippet": "Oct 17, 2014 · Schl*ngs of skyrim underwear problem So i installed this mod (dont judge) and my character is for ever in underware i …"
+    }
+  ]
+}

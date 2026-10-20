@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "bambocher/Huihui-gemma-4-E2B-it-qat-abliterated-oQ4e-mtp",
+  "slug": "bambocher-huihui-gemma-4-e2b-it-qat-abliterated-oq4e-mtp",
+  "author": "bambocher",
+  "url": "https://huggingface.co/bambocher/Huihui-gemma-4-E2B-it-qat-abliterated-oQ4e-mtp",
+  "created_at": "2026-10-19T20:28:40.000Z",
+  "updated_at": "2026-10-19T20:45:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "oq",
+    "quantized",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5104297539,
+  "parameters_human": "5.10B",
+  "storage_bytes": 3867472657,
+  "storage_human": "3.9 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Confiture de pastèque traditionnelle : la meilleure recette",
+      "url": "https://www.marmiton.org/recettes/recette_confiture-de-pasteque-traditionnelle_32323.aspx",
+      "snippet": "Recette Confiture de pastèque traditionnelle : la meilleure recette rapide et facile : 4 pots, 80 min de préparation. Notée 4.3/5 par 20 …"
+    },
+    {
+      "title": "Confiture de pastèque traditionnelle - Cuisine Actuelle",
+      "url": "https://www.cuisineactuelle.fr/recettes/confiture-de-pasteque-traditionnelle-192859",
+      "snippet": "May 14, 2024 · Portez doucement à ébullition. Écumez et faites cuire à feu doux 30 minutes. Vérifiez la cuisson en déposant une …"
+    },
+    {
+      "title": "Confiture de pastèque - Cuisine Actuelle",
+      "url": "https://www.cuisineactuelle.fr/recettes/confiture-de-pasteque-190506",
+      "snippet": "Sep 12, 2024 · Coupez la pastèque en tranches, retirez l’écorce et détaillez la chair en dés. Déposez-les dans un saladier, ajoutez le …"
+    },
+    {
+      "title": "Confiture de Pastèque : La Recette Traditionnelle Maison",
+      "url": "https://cuisinetaire.com/confiture-de-pasteque/",
+      "snippet": "Jul 9, 2025 · Apprenez à préparer une confiture de pastèque maison avec cette recette facile et gourmande, inspirée du savoir-faire …"
+    },
+    {
+      "title": "Confiture de pastèque traditionnelle facile : Découvrez toutes les ...",
+      "url": "https://www.femmeactuelle.fr/cuisine/recettes/recette-de-base/confiture-de-pasteque-traditionnelle-12349",
+      "snippet": "Recette Confiture de pastèque traditionnelle. Ingrédients (6 personnes) : 1,8 kg de pastèque, 800 g de sucre, 1 gousse de vanille… - …"
+    }
+  ]
+}

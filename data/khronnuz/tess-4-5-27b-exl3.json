@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "khronnuz/Tess-4.5-27B-exl3",
+  "slug": "khronnuz-tess-4-5-27b-exl3",
+  "author": "khronnuz",
+  "url": "https://huggingface.co/khronnuz/Tess-4.5-27B-exl3",
+  "created_at": "2026-10-19T20:04:04.000Z",
+  "updated_at": "2026-10-20T02:16:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "exl3",
+    "self-calibrated",
+    "image-text-to-text",
+    "base_model:migtissera/Tess-4.5-27B",
+    "base_model:quantized:migtissera/Tess-4.5-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31913519536,
+  "storage_human": "31.9 GB",
+  "base_model": "migtissera/Tess-4.5-27B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "migtissera/Tess-4-27B · Hugging Face",
+      "url": "https://huggingface.co/migtissera/Tess-4-27B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Run Tess-4-27B API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/migtissera/Tess-4-27B",
+      "snippet": "Overview migtissera/Tess-4-27B is a 27 billion parameter model developed by Migel Tissera, based on Qwen/Qwen3.6-27B. It is distinguished by its unique post-training on 64K-token long-context agentic traces, which are derived from real engineering work and a multi-model teacher ensemble (Opus-4.8, GPT-5.5, GLM-5.2)."
+    },
+    {
+      "title": "migtissera/Tess-4-27B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/migtissera/Tess-4-27B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Run Tess-4.5-27B API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/migtissera/Tess-4.5-27B",
+      "snippet": "Tess-4.5: An Agentic Model for Software Engineering Tess-4.5 is a 27-billion-parameter open-weights model developed by migtissera, built upon the Qwen3.8-27B base. It is specifically engineered for practical software engineering and agentic workflows, emphasizing robust reasoning and efficient execution in local environments."
+    },
+    {
+      "title": "Tess-4-27B — AI Model Details | Applied",
+      "url": "https://theapplied.co/models/migtissera-tess-4-27b",
+      "snippet": "Model Description Reasoning that scales with the problem. An agentic, thinking-native model that deliberates harder exactly when it matters — and gets out of its own way when it doesn&#x27;t. Tess-4-27B is the first Tess release in two years, and the first that reasons."
+    }
+  ]
+}

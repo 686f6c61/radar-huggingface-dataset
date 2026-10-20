@@ -5,7 +5,7 @@
   "author": "sabicap",
   "url": "https://huggingface.co/sabicap/sabi-noema-mla",
   "created_at": "2026-10-13T14:03:32.000Z",
-  "updated_at": "2026-10-14T20:33:29.000Z",
+  "updated_at": "2026-10-19T22:18:38.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

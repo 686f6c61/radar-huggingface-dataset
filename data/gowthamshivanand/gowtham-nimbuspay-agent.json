@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Gowthamshivanand/gowtham-nimbuspay-agent",
+  "slug": "gowthamshivanand-gowtham-nimbuspay-agent",
+  "author": "Gowthamshivanand",
+  "url": "https://huggingface.co/Gowthamshivanand/gowtham-nimbuspay-agent",
+  "created_at": "2026-10-19T23:52:56.000Z",
+  "updated_at": "2026-10-19T23:59:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "ollama",
+    "qwen2",
+    "lora",
+    "synthetic-data",
+    "case-study",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 1646572672,
+  "storage_human": "1.6 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

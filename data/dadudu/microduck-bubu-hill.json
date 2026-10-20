@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "dadudu/microduck-bubu-hill",
+  "slug": "dadudu-microduck-bubu-hill",
+  "author": "dadudu",
+  "url": "https://huggingface.co/dadudu/microduck-bubu-hill",
+  "created_at": "2026-10-15T16:13:15.000Z",
+  "updated_at": "2026-10-20T00:10:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 23,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2381310,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

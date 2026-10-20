@@ -5,7 +5,7 @@
   "author": "NorviTech",
   "url": "https://huggingface.co/NorviTech/armiger-audio-guard",
   "created_at": "2026-10-18T17:54:01.000Z",
-  "updated_at": "2026-10-18T23:57:27.000Z",
+  "updated_at": "2026-10-19T10:31:47.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 31,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "sidpnyc/storeops-copilot-qwen2.5-1.5b",
+  "slug": "sidpnyc-storeops-copilot-qwen2-5-1-5b",
+  "author": "sidpnyc",
+  "url": "https://huggingface.co/sidpnyc/storeops-copilot-qwen2.5-1.5b",
+  "created_at": "2026-10-20T00:04:07.000Z",
+  "updated_at": "2026-10-20T00:04:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen2",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 4079717248,
+  "storage_human": "4.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

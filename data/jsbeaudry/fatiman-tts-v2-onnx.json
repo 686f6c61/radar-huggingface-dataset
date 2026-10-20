@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "jsbeaudry/Fatiman-TTS-v2-onnx",
+  "slug": "jsbeaudry-fatiman-tts-v2-onnx",
+  "author": "jsbeaudry",
+  "url": "https://huggingface.co/jsbeaudry/Fatiman-TTS-v2-onnx",
+  "created_at": "2026-10-20T00:07:43.000Z",
+  "updated_at": "2026-10-20T00:12:30.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "onnxruntime",
+  "languages": [
+    "ht"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "text-to-speech",
+    "haitian-creole",
+    "kreyol",
+    "pocket-tts",
+    "on-device",
+    "ht",
+    "base_model:jsbeaudry/Fatiman-TTS-v2",
+    "base_model:quantized:jsbeaudry/Fatiman-TTS-v2",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 243245999,
+  "storage_human": "243 MB",
+  "base_model": "jsbeaudry/Fatiman-TTS-v2",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

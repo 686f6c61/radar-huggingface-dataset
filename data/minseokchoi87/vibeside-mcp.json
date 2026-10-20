@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "minseokchoi87/vibeside-mcp",
+  "slug": "minseokchoi87-vibeside-mcp",
+  "author": "minseokchoi87",
+  "url": "https://huggingface.co/minseokchoi87/vibeside-mcp",
+  "created_at": "2026-10-19T20:30:05.000Z",
+  "updated_at": "2026-10-19T21:35:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Model Context Protocol - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Model_Context_Protocol",
+      "snippet": "The Model Context Protocol (MCP) is an open standard and open-source framework introduced by Anthropic in November 2024 to standardize the way artificial intelligence (AI) systems like large language models (LLMs) integrate and share data with external tools, systems, and data sources. [1]"
+    },
+    {
+      "title": "AI model watch MCP server: ask Claude or Cursor which models just went ...",
+      "url": "https://artificialwatch.com/mcp",
+      "snippet": "ai-model-watch is a free, open-source MCP server. It reads each AI provider&#x27;s own model list and tells Claude, Cursor or any MCP client which models appeared since the last check. OpenRouter needs no key."
+    },
+    {
+      "title": "vibeside.ai | AI Chat, Images & Video",
+      "url": "https://vibeside.ai/",
+      "snippet": "About Vibeside A live studio for characters, images, and video Vibeside is an AI creation app you can use today on the web. Chat with original characters, generate images and video, and publish the worlds you make. This site is the public home for that product: featured characters, guides on the blog, and a full web app at Explore."
+    },
+    {
+      "title": "Microsoft | Dev Tools & Languages | Model Context Protocol",
+      "url": "https://www.microsoft.com/en-us/thesource-developer/Category/159/model-context-protocol",
+      "snippet": "MCP Live! The Model Context Protocol (MCP) is the open standard for connecting AI models to tools and data. These sessions are from a half-day event covering MCP end to end: its role as an open standard, how it&#x27;s adopted across the developer ecosystem, and hands-on sessions on building MCP servers. It also addresses enterprise readiness including authentication, governance, and security."
+    },
+    {
+      "title": "MCP Servers | Connect External Tools to Your AI Agent | Vibe IDE",
+      "url": "https://vibeide.ai/features/mcp-servers",
+      "snippet": "Vibe IDE has native MCP (Model Context Protocol) support. Connect external tools, databases, APIs, and data sources to the AI agent. Built-in UI panel for managing servers, discovering tools, and monitoring connections."
+    }
+  ]
+}

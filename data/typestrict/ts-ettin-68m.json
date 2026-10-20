@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "typestrict/TS-Ettin-68M",
+  "slug": "typestrict-ts-ettin-68m",
+  "author": "typestrict",
+  "url": "https://huggingface.co/typestrict/TS-Ettin-68M",
+  "created_at": "2026-10-19T23:49:01.000Z",
+  "updated_at": "2026-10-20T00:08:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "modernbert",
+    "feature-extraction",
+    "typestrict",
+    "decision-model",
+    "typed-decisions",
+    "encoder",
+    "decision-index",
+    "cpu",
+    "text-classification",
+    "en",
+    "base_model:cross-encoder/ettin-reranker-68m-v1",
+    "base_model:quantized:cross-encoder/ettin-reranker-68m-v1",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 68415618,
+  "parameters_human": "68.4M",
+  "storage_bytes": 417501752,
+  "storage_human": "418 MB",
+  "base_model": "cross-encoder/ettin-reranker-68m-v1",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "'xxxx' Search - XNXX.COM",
+      "url": "https://www.xnxx.com/search/xxxx",
+      "snippet": "Stepbrother Fuck His Young Stepsister, Desi Girl xxxx Tight Pussy Sex Viral Video in hindi Audio 1.1M 100% 15min - 1440p"
+    },
+    {
+      "title": "'xxxxxxxxx' Search - XNXX.COM",
+      "url": "https://www.xnxx.com/search/xxxxxxxxx",
+      "snippet": "XNXX.COM 'xxxxxxxxx' Search, free sex videos XXX Indian step Mom desi 3 XXX in hindi XXX 226.7k 100% 11min - 1440p"
+    },
+    {
+      "title": "Free Porn, Sex, Tube Videos, XXX Pics, Pussy in Porno Movies - XNXX",
+      "url": "https://amp.xnxx.com/todays-selection/",
+      "snippet": "XNXX delivers free sex movies and fast free porn videos (tube porn). Now 10 million+ sex vids available for free! Featuring hot pussy, …"
+    },
+    {
+      "title": "'xxxxxxxxxxx' Search - XNXX.COM",
+      "url": "https://www.xnxx.com/search/xxxxxxxxxxx",
+      "snippet": "CandyLove169 Indian Desi Neighbors Girl Give me Baryani and Hold my Dick in her Tight PussyRomantic Hot Sex Hindi Audio …"
+    },
+    {
+      "title": "'xxxxxxx' Search - XNXX.COM",
+      "url": "https://www.xnxx.com/search/xxxxxxx",
+      "snippet": "XNXX.COM 'xxxxxxx' Search, free sex videos Lola Black XXX Take Girth Gwad’s Large BBC During Private Massage 5.3k 86% …"
+    }
+  ]
+}

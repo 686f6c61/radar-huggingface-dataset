@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "kvn420/tenro-computer-use-v2-lora",
+  "slug": "kvn420-tenro-computer-use-v2-lora",
+  "author": "kvn420",
+  "url": "https://huggingface.co/kvn420/tenro-computer-use-v2-lora",
+  "created_at": "2026-10-19T11:56:27.000Z",
+  "updated_at": "2026-10-20T01:32:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "computer-use",
+    "vision-language",
+    "qlora",
+    "tenro",
+    "base_model:Qwen/Qwen2.5-VL-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-VL-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17081640015,
+  "storage_human": "17.1 GB",
+  "base_model": "Qwen/Qwen2.5-VL-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

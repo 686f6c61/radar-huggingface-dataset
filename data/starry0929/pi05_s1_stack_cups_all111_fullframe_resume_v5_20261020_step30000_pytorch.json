@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "starry0929/pi05_s1_stack_cups_all111_fullframe_resume_v5_20261020_step30000_pytorch",
+  "slug": "starry0929-pi05_s1_stack_cups_all111_fullframe_resume_v5_20261020_step30000_pytorch",
+  "author": "starry0929",
+  "url": "https://huggingface.co/starry0929/pi05_s1_stack_cups_all111_fullframe_resume_v5_20261020_step30000_pytorch",
+  "created_at": "2026-10-19T17:48:48.000Z",
+  "updated_at": "2026-10-19T17:49:44.000Z",
+  "license": "openpi-apache-2.0-and-gemma",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "openpi",
+    "safetensors",
+    "robotics",
+    "pi0.5",
+    "pytorch",
+    "astribot-s1",
+    "stack-cups",
+    "en",
+    "dataset:starry0929/rssr",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3616757520,
+  "parameters_human": "3.62B",
+  "storage_bytes": 11537455376,
+  "storage_human": "11.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

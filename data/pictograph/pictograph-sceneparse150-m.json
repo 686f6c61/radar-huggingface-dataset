@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "pictograph/pictograph-sceneparse150-m",
+  "slug": "pictograph-pictograph-sceneparse150-m",
+  "author": "pictograph",
+  "url": "https://huggingface.co/pictograph/pictograph-sceneparse150-m",
+  "created_at": "2026-10-19T20:43:24.000Z",
+  "updated_at": "2026-10-19T20:43:30.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "computer-vision",
+    "image-segmentation",
+    "rf-detr-seg-medium",
+    "pictograph",
+    "license:bsd-3-clause",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 130402182,
+  "storage_human": "130 MB",
+  "base_model": "roboflow/rf-detr-base",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "Evaluation set",
+      "metric": "mAP",
+      "value": 0.2639
+    },
+    {
+      "task": null,
+      "dataset": "Evaluation set",
+      "metric": "mAP@50",
+      "value": 0.4141
+    }
+  ],
+  "sources": [
+    {
+      "title": "aisuko/ft-segformer-with-sceneparse150 · Hugging Face",
+      "url": "https://huggingface.co/aisuko/ft-segformer-with-sceneparse150",
+      "snippet": "ft-segformer-with-sceneparse150 This model is a fine-tuned version of nvidia/mit-b0 on the scene_parse_150 dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "Documentation | Computer Vision SDK, CLI and REST API | Pictograph",
+      "url": "https://pictograph.io/docs",
+      "snippet": "Pictograph developer docs. Annotate images with SAM3, train detection and segmentation models, and deploy inference APIs from a typed Python SDK, CLI, and REST API."
+    },
+    {
+      "title": "GitHub - CSAILVision/sceneparsing: Development kit for MIT Scene ...",
+      "url": "https://github.com/CSAILVision/sceneparsing",
+      "snippet": "The models can be used for research only. The detail of how the models are trained is in the reference below. The performance of the models on the validation set of MIT SceneParse150 is as follows, The qualitative results of the models are below:"
+    },
+    {
+      "title": "scene_parse150 | TensorFlow Datasets",
+      "url": "https://www.tensorflow.org/datasets/catalog/scene_parse150",
+      "snippet": "MIT Scene Parsing Benchmark (SceneParse150) provides a standard training and evaluation platform for the algorithms of scene parsing. Additional Documentation: Explore on Papers With Code north_east"
+    },
+    {
+      "title": "sceneparsing.csail.mit.edu",
+      "url": "http://sceneparsing.csail.mit.edu/sceneparsing/README.md",
+      "snippet": "In demoSimilarity.m, we show how to use that file. ### Evaluation routines The performance of the segmentation algorithms will be evaluated by the mean of (1) pixel-wise accuracy over all the labeled pixels, and (2) IoU (intersection over union) avereaged over all the 150 semantic categories."
+    }
+  ]
+}

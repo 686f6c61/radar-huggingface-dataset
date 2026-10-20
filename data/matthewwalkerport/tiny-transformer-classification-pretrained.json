@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "matthewwalkerport/tiny-transformer-classification-pretrained",
+  "slug": "matthewwalkerport-tiny-transformer-classification-pretrained",
+  "author": "matthewwalkerport",
+  "url": "https://huggingface.co/matthewwalkerport/tiny-transformer-classification-pretrained",
+  "created_at": "2026-10-19T19:38:12.000Z",
+  "updated_at": "2026-10-19T19:38:18.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何在国际动物卫生组织 OIE官网，查看动物疾病全球分布情况？",
+      "url": "https://www.zhihu.com/question/318229776",
+      "snippet": "有没有发现，同样是“世界动物卫生组织”，简称从之前的OIE变成了现在的WOAH。 这是因为在2022年5月31日，世界动物卫生组织发 …"
+    },
+    {
+      "title": "如何看待华为突破冯诺依曼「单机」架构？ - 知乎",
+      "url": "https://www.zhihu.com/question/2084200588892451205",
+      "snippet": "冯你马勒戈壁的突破。 华为又突破了。 这次突破得比较彻底。冯诺依曼先突破一遍，图灵顺便也突破了。按照华为对 Peerium 的宣 …"
+    },
+    {
+      "title": "知乎 - 知乎",
+      "url": "https://www.zhihu.com/selection/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，提供知识共享、互动交流和个人成长机会。"
+    },
+    {
+      "title": "知乎",
+      "url": "https://www.zhihu.com/tardis/jm/art/1993680670216700516",
+      "snippet": "知乎，有趣、有料、有态度的内容社区。开放、真实、专业的社区氛围，汇集各行各业亲历者、内行人、领域专家。上知乎，找答案 …"
+    },
+    {
+      "title": "5070ti显卡发售上市以来到现在，历史最低的价格是多少？ - 知乎",
+      "url": "https://www.zhihu.com/question/2039385978448638792",
+      "snippet": "May 17, 2026 · 在25年双十一左右，直降200+满5000-500的大额券，最后到手价可以做到5553的价格，各路网传的最低价5070ti基本 …"
+    }
+  ]
+}

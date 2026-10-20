@@ -5,7 +5,7 @@
   "author": "nile-academy",
   "url": "https://huggingface.co/nile-academy/smollm3-3b-gguf",
   "created_at": "2026-10-06T15:56:27.000Z",
-  "updated_at": "2026-10-06T19:21:42.000Z",
+  "updated_at": "2026-10-19T22:50:23.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -13,7 +13,7 @@
   "languages": [],
   "tags": [
     "gguf",
-    "bookalive",
+    "wekala",
     "text-generation",
     "base_model:HuggingFaceTB/SmolLM3-3B",
     "base_model:quantized:HuggingFaceTB/SmolLM3-3B",
@@ -23,7 +23,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 154,
+  "downloads_30d": 155,
   "trending_score": 0,
   "parameters": 3075098624,
   "parameters_human": "3.08B",

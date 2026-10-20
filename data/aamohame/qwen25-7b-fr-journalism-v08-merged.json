@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "aamohame/qwen25-7b-fr-journalism-v08-merged",
+  "slug": "aamohame-qwen25-7b-fr-journalism-v08-merged",
+  "author": "aamohame",
+  "url": "https://huggingface.co/aamohame/qwen25-7b-fr-journalism-v08-merged",
+  "created_at": "2026-10-19T21:38:07.000Z",
+  "updated_at": "2026-10-19T21:39:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "french",
+    "journalism",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693380,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "为什么能下载的AV大多是HD的，很少有BD蓝光的？ - 知乎",
+      "url": "https://www.zhihu.com/question/39554243",
+      "snippet": "BD至少要10几个G起步，下载和传播起来太不方便了， HD 都要4-6个G真的已经足够用了！普遍在网上传播的都是1-2个G的，比HD …"
+    },
+    {
+      "title": "HD和BD的区别？能否比较清晰度？ - 知乎",
+      "url": "https://www.zhihu.com/question/22422423",
+      "snippet": "在网上下载的高清影片，经常会看到有HD、WEB-DL以及BD等几种版本，他们虽然都是高清影片的，但画面品质是有区别的。 BD的 …"
+    },
+    {
+      "title": "会议平板一体机推荐！十款会议平板一体机良心推荐不交智商税！",
+      "url": "https://www.zhihu.com/tardis/zm/art/678262143",
+      "snippet": "JAV，创立于2015年。 自创立以来，始终专注于商业显示领域的研发与制造，前后推出多款超级会议平板、幼教培训一体机等智能科 …"
+    },
+    {
+      "title": "英文中「sex」和「gender」有什么区别？ - 知乎",
+      "url": "https://www.zhihu.com/question/19947743",
+      "snippet": "Dec 2, 2011 · 自学语言时想到的问题，搜索到的回答，放在这里，希望能帮助到更多的人。 Sex = male and female Gender = …"
+    },
+    {
+      "title": "8部「日本Q欲电影推荐」你想看的这里都有",
+      "url": "https://www.zhihu.com/tardis/bd/art/548276995",
+      "snippet": "日本耻度电影推荐2：让我听见你的声音 由拥有日本第一美臀的G罩杯女星渡边万美主演的电影「让我听见你的声音」，讲述模特儿新 …"
+    }
+  ]
+}

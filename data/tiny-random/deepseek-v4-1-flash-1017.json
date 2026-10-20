@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "tiny-random/deepseek-v4.1-flash-1017",
+  "slug": "tiny-random-deepseek-v4-1-flash-1017",
+  "author": "tiny-random",
+  "url": "https://huggingface.co/tiny-random/deepseek-v4.1-flash-1017",
+  "created_at": "2026-10-19T23:48:29.000Z",
+  "updated_at": "2026-10-19T23:55:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v41",
+    "text-generation",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "endpoints_compatible",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 67984458,
+  "parameters_human": "68.0M",
+  "storage_bytes": 96712592,
+  "storage_human": "97 MB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TinyPNG – Compress WebP, PNG and JPEG images intelligently",
+      "url": "https://tinypng.com/",
+      "snippet": "Free online image optimizer for faster websites! Reduce the file size of your AVIF, WEBP, JPEG and PNG images while preserving …"
+    },
+    {
+      "title": "TinyTask",
+      "url": "https://www.tinytask.net/",
+      "snippet": "TinyTask is free software for personal use, but it does cost money to develop & host this project. Historically, only 1 in 10,000 …"
+    },
+    {
+      "title": "La Tiny House - Premier fabricant français de Tiny House",
+      "url": "https://latinyhouse.com/",
+      "snippet": "La Tiny House vous accompagne dans la réalisation du projet de vos rêves. Inspiré par l'un de nos modèles, ou envie de plans sur …"
+    },
+    {
+      "title": "Tuto Tiny11 : comment installer la version ultra-légère ... - Frandroid",
+      "url": "https://www.frandroid.com/comment-faire/tutoriaux/tutoriels-pc/2919881_tuto-tiny11-comment-installer-la-version-ultra-legere-de-windows-11-sur-nimporte-quel-pc",
+      "snippet": "Dec 23, 2025 · Windows 11 est devenu obèse. Entre les exigences matérielles délirantes et l’IA CoPilot, votre PC suffoque. La …"
+    },
+    {
+      "title": "Installer Windows 11 26H2 sur un PC non compatible devient un jeu d ...",
+      "url": "https://www.lesnumeriques.com/appli-logiciel/installer-windows-11-26h2-sur-un-pc-non-compatible-devient-un-jeu-d-enfant-avec-tiny11-n263269.html",
+      "snippet": "6 days ago · L’utilitaire Tiny11 fait peau neuve pour s’attaquer à Windows 11 26H2. Son créateur promet une installation débarrassée …"
+    }
+  ]
+}

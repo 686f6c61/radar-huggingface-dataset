@@ -5,7 +5,7 @@
   "author": "Blockway",
   "url": "https://huggingface.co/Blockway/Agens-Volundr-DFlash2-tiny-random",
   "created_at": "2026-10-18T23:52:26.000Z",
-  "updated_at": "2026-10-18T23:52:34.000Z",
+  "updated_at": "2026-10-19T05:02:57.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -13,7 +13,7 @@
   "languages": [],
   "tags": [
     "safetensors",
-    "llama",
+    "qwen3",
     "volundr",
     "dflash",
     "test",
@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 18,
   "trending_score": 0,
   "parameters": 8032128,
   "parameters_human": "8.0M",

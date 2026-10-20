@@ -5,7 +5,7 @@
   "author": "BeardedMonster",
   "url": "https://huggingface.co/BeardedMonster/afro-xlmr-base-masakhapos-multilingual",
   "created_at": "2026-10-18T21:02:13.000Z",
-  "updated_at": "2026-10-18T21:02:51.000Z",
+  "updated_at": "2026-10-19T09:04:37.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -62,12 +62,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 14,
   "trending_score": 0,
   "parameters": 277466898,
   "parameters_human": "277.5M",
-  "storage_bytes": 1126974472,
-  "storage_human": "1.1 GB",
+  "storage_bytes": 2253948846,
+  "storage_human": "2.3 GB",
   "base_model": "Davlan/afro-xlmr-base",
   "formats": [
     "safetensors"

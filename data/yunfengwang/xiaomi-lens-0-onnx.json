@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "yunfengwang/Xiaomi-Lens-0-onnx",
+  "slug": "yunfengwang-xiaomi-lens-0-onnx",
+  "author": "yunfengwang",
+  "url": "https://huggingface.co/yunfengwang/Xiaomi-Lens-0-onnx",
+  "created_at": "2026-10-19T14:33:56.000Z",
+  "updated_at": "2026-10-20T00:22:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "xiaomi-lens",
+    "multimodal",
+    "visual-grounding",
+    "image-segmentation",
+    "on-device",
+    "image-text-to-text",
+    "base_model:SeerRay-Lab/Xiaomi-Lens-0",
+    "base_model:quantized:SeerRay-Lab/Xiaomi-Lens-0",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17681624250,
+  "storage_human": "17.7 GB",
+  "base_model": "SeerRay-Lab/Xiaomi-Lens-0",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fancyspring",
+      "url": "https://www.fancyspring.shop/",
+      "snippet": "fancyspring Fancyspring is an international B2C fast fashion e-commerce platform. The company mainly focuses on clothing, mainly …"
+    },
+    {
+      "title": "All Dresses - fancyspring",
+      "url": "https://www.fancyspring.shop/collections/all-dresses",
+      "snippet": "All Dresses - fancyspring ... fancyspring"
+    },
+    {
+      "title": "Best Selling Dress - fancyspring",
+      "url": "https://www.fancyspring.shop/collections/best-selling-dress",
+      "snippet": "Best Selling Dress - fancyspring ... fancyspring"
+    },
+    {
+      "title": "About fancyspring",
+      "url": "https://www.fancyspring.shop/pages/about-fancyspring1",
+      "snippet": "About Us The brand was founded in 2021, and since then Fancyspring has been dedicated to provide some of todays most exciting …"
+    },
+    {
+      "title": "Vintage style - fancyspring.shop",
+      "url": "https://www.fancyspring.shop/collections/vintage-style",
+      "snippet": "Vintage style - fancyspring.shop ... fancyspring"
+    }
+  ]
+}

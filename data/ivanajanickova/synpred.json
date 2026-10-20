@@ -5,13 +5,14 @@
   "author": "ivanajanickova",
   "url": "https://huggingface.co/ivanajanickova/synpred",
   "created_at": "2026-10-08T22:44:37.000Z",
-  "updated_at": "2026-10-16T12:24:15.000Z",
+  "updated_at": "2026-10-19T12:58:24.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
   "library": null,
   "languages": [],
   "tags": [
+    "license:mit",
     "region:us"
   ],
   "likes": 0,

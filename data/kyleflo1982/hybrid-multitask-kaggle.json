@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "kyleflo1982/hybrid-multitask-kaggle",
+  "slug": "kyleflo1982-hybrid-multitask-kaggle",
+  "author": "kyleflo1982",
+  "url": "https://huggingface.co/kyleflo1982/hybrid-multitask-kaggle",
+  "created_at": "2026-10-19T19:33:23.000Z",
+  "updated_at": "2026-10-19T19:33:29.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hybrid",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Photon Fusion 2 | XR Addons Overview",
+      "url": "https://doc.photonengine.com/fusion/current/industries-samples/industries-addons/fusion-industries-addons-overview",
+      "snippet": "Jul 20, 2026 · Overview of reusable Fusion XR addons that speed up 3D and XR app prototyping in Unity, built on the XRShared …"
+    },
+    {
+      "title": "Steam Workshop::Photon 2: Emergency Systems Platform",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3128242636",
+      "snippet": "Photon 2 is a new platform for Garry's Mod police cars, fire trucks, ambulances, and all other types of emergency vehicles. It …"
+    },
+    {
+      "title": "Photon Fusion 2 | Physics Addon 2.1 - NetworkRigidbody",
+      "url": "https://doc.photonengine.com/fusion/v2/addons/physics-addon-2.1",
+      "snippet": "Jul 28, 2026 · The Physics addon includes the components necessary for client-side-prediction of rigidbodies. Fusion 2.1 comes with …"
+    },
+    {
+      "title": "GitHub - photonle/Photon-v2: Photon 2 for Garry's Mod",
+      "url": "https://github.com/photonle/Photon-v2",
+      "snippet": "Photon 2: Emergency Systems Platform Photon 2 adds emergency vehicle and vehicle lighting functionality to Garry's Mod."
+    },
+    {
+      "title": "Steam Workshop::Photon 2: Starter Package",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3100377468",
+      "snippet": "Nov 29, 2023 · Photon 2 is a new platform for Garry's Mod police cars, fire trucks, ambulances, and all other types of emergency …"
+    }
+  ]
+}

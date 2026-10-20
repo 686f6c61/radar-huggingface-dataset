@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "allan-valin/whipa-base-onnx",
+  "slug": "allan-valin-whipa-base-onnx",
+  "author": "allan-valin",
+  "url": "https://huggingface.co/allan-valin/whipa-base-onnx",
+  "created_at": "2026-10-19T19:27:23.000Z",
+  "updated_at": "2026-10-19T20:06:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "phone-recognition",
+    "ipa",
+    "whisper",
+    "base_model:jshrdt/whipa-base-cv",
+    "base_model:quantized:jshrdt/whipa-base-cv",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 514246759,
+  "storage_human": "514 MB",
+  "base_model": "jshrdt/whipa-base-cv",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alan | Le leader de l’Assurance Prévention : la santé n’attend pas",
+      "url": "https://alan.com/",
+      "snippet": "Alan permet à chacun d’agir sur sa santé physique et mentale, en alliant le meilleur de la prévention et de l’assurance, le tout au sein …Read more"
+    },
+    {
+      "title": "Allan (Drôme) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Allan_(Dr%C3%B4me)",
+      "snippet": "Pour les articles homonymes, voir Allan. ... Allan est une commune française située dans le département de la Drôme, en région …"
+    },
+    {
+      "title": "Commune d'Allan",
+      "url": "https://mairie-allan.fr/",
+      "snippet": "4 days ago · Venez passer une soirée concert le samedi 14 novembre à l'espace d'animation d'Allan. 20h30. Le groupe Scmoll …"
+    },
+    {
+      "title": "Plan Allan : carte de Allan (26780) et infos pratiques - Mappy",
+      "url": "https://fr.mappy.com/plan/26780-allan",
+      "snippet": "Vous recherchez la carte ou le plan de Allan et de ses environs ? Trouvez l’adresse qui vous intéresse sur le plan de Allan ou …"
+    },
+    {
+      "title": "Alan - L’assurance santé des petits et grands magasins",
+      "url": "https://alan.com/fr-fr/assurance-sante/commerce",
+      "snippet": "Pour votre entreprise, adoptez une assurance santé rapide, simple et claire : gestion administrative 100% digitale et un service client …"
+    }
+  ]
+}

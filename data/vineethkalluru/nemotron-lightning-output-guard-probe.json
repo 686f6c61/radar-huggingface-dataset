@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "vineethkalluru/nemotron-lightning-output-guard-probe",
+  "slug": "vineethkalluru-nemotron-lightning-output-guard-probe",
+  "author": "vineethkalluru",
+  "url": "https://huggingface.co/vineethkalluru/nemotron-lightning-output-guard-probe",
+  "created_at": "2026-10-19T21:04:41.000Z",
+  "updated_at": "2026-10-19T21:04:51.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "safety",
+    "guardrails",
+    "content-moderation",
+    "response-moderation",
+    "streaming",
+    "probe",
+    "hidden-states",
+    "nemotron",
+    "text-classification",
+    "dataset:nvidia/Aegis-AI-Content-Safety-Dataset-2.0",
+    "dataset:nvidia/Nemotron-Safety-Guard-Dataset-v3",
+    "dataset:allenai/wildguardmix",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4",
+    "base_model:finetune:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22115376,
+  "storage_human": "22 MB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook - Connexion ou inscription",
+      "url": "https://fr-fr.facebook.com/",
+      "snippet": "Créez un compte ou connectez-vous à Facebook. Connectez-vous avec vos amis, la famille et d’autres connaissances. Partagez …"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Connect and share with friends, family, and the world on Facebook."
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/signup/?lang=en",
+      "snippet": "Get started on Facebook Create an account to connect with friends, family and communities of people who share your interests."
+    },
+    {
+      "title": "Facebook",
+      "url": "https://l.facebook.com/facebook/",
+      "snippet": "4 days ago · 14 mutual friends and you've never spoken. At this point, the universe is begging you to say hi. To celebrate the …"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://l.facebook.com/r.php/?display=page",
+      "snippet": "Get started on Facebook with a Meta Account A Meta Account lets you access multiple Meta technologies, like Facebook, easily and …"
+    }
+  ]
+}

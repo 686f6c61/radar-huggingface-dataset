@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "LindoL/Qwen3.8-Flash-Next",
+  "slug": "lindol-qwen3-8-flash-next",
+  "author": "LindoL",
+  "url": "https://huggingface.co/LindoL/Qwen3.8-Flash-Next",
+  "created_at": "2026-10-19T21:27:34.000Z",
+  "updated_at": "2026-10-19T21:27:34.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen4_exp",
+    "image-text-to-text",
+    "conversational",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 179999981459,
+  "parameters_human": "180.00B",
+  "storage_bytes": 360013002208,
+  "storage_human": "360.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FFvolley",
+      "url": "https://www.ffvb.org/",
+      "snippet": "FFVOLLEY PRATIQUER SE FORMER Projet de Performance Fédéral CFCP - Centres de Formation Les Pôles Le double projet …"
+    },
+    {
+      "title": "FFvolley - Bourse aux Entraîneurs",
+      "url": "https://emploi.ffvb.org/",
+      "snippet": "- La FFvolley met à la disposition des Entraîneurs et des Clubs, ce service d'annonces gratuites. - Un entraîneur à la recherche d'un …"
+    },
+    {
+      "title": "Bienvenue sur les pages de la FORMATION FFVOLLEY",
+      "url": "https://www.ffvb.org/front/188-251-1-Formation",
+      "snippet": "La FFVolley, par le biais de son pôle Formation Professionnalisation propose à tous les entraîneurs, dirigeants, arbitres une offre de …"
+    },
+    {
+      "title": "Annexe 2 - FFVB",
+      "url": "https://extranet.ffvb.org/data/Files/documents/medical/FFvolley_CERTIFICAT_MEDICAL_A.pdf",
+      "snippet": "Tout joueur licencié FFvolley est susceptible de subir un contrôle antidopage. En cas de traitement médical (médicaments ou …"
+    },
+    {
+      "title": "QUESTIONNAIRE RELATIF À L’ÉTAT DE SANTÉ DU SPORTIF …",
+      "url": "https://extranet.ffvb.org/data/Files/documents/medical/FFvolley_qs_sport_sportifs_mineurs_2025-26.pdf",
+      "snippet": "Faire du sport : c'est recommandé pour tous. En as-tu parlé avec un médecin ? T'a-t-il examiné(e) pour te conseiller ? Ce …"
+    }
+  ]
+}

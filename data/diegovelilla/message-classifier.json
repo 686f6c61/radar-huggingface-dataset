@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "diegovelilla/message-classifier",
+  "slug": "diegovelilla-message-classifier",
+  "author": "diegovelilla",
+  "url": "https://huggingface.co/diegovelilla/message-classifier",
+  "created_at": "2026-10-19T20:03:10.000Z",
+  "updated_at": "2026-10-19T21:15:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "sklearn",
+  "languages": [],
+  "tags": [
+    "sklearn",
+    "joblib",
+    "spam-detection",
+    "naive-bayes",
+    "tf-idf",
+    "mlops",
+    "text-classification",
+    "en",
+    "dataset:diegovelilla/email-classification-dataset",
+    "license:apache-2.0",
+    "model-index",
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 206633,
+  "storage_human": "206633 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Exclusively Foreigner Friendly Escort Agency in Shibuya, Tokyo",
+      "url": "https://paradise-tokyo.net/home",
+      "snippet": "2 days ago · 100% foreigner friendly outcall service in Shibuya, Tokyo. Check our wide range of escorts and make a reservation right …"
+    },
+    {
+      "title": "Tokyo Sex Services: Japanese Escort, Adult Entertainment & AV …",
+      "url": "https://miraitokyo.jp/",
+      "snippet": "Tokyo's most trusted luxury escort and delivery health service featuring elite Japanese companions: verified AV actresses, …"
+    },
+    {
+      "title": "Escorts in Tokyo, Japan - Massage Republic",
+      "url": "https://massagerepublic.com/female-escorts-in-tokyo",
+      "snippet": "We have 673 Tokyo escorts on Massage Republic, 204 profiles have verified photos. The most popular services offered are: …"
+    },
+    {
+      "title": "TokyoGirlsHub - Tokyo Escort & GFE Service in Shinjuku",
+      "url": "https://tokyogirlshub.com/en",
+      "snippet": "Tokyo GFE and escort service in Shinjuku for international visitors: English-speaking staff, incall & outcall from ¥23,000, live …"
+    },
+    {
+      "title": "Tokyo Escort Service | Japanese Escorts Available Today | Japan Escorts ...",
+      "url": "https://www.japanescort.jp/tokyo/",
+      "snippet": "Compare Japanese escorts available in Tokyo today. Check current schedules, prices, service areas, English support and verified …"
+    }
+  ]
+}

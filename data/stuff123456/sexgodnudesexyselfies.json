@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "stuff123456/sexgodnudesexyselfies",
+  "slug": "stuff123456-sexgodnudesexyselfies",
+  "author": "stuff123456",
+  "url": "https://huggingface.co/stuff123456/sexgodnudesexyselfies",
+  "created_at": "2026-10-19T20:15:52.000Z",
+  "updated_at": "2026-10-19T20:16:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:Danrisi/Samsung_FluxKlein_9b",
+    "base_model:adapter:Danrisi/Samsung_FluxKlein_9b",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 331379768,
+  "storage_human": "331 MB",
+  "base_model": "Danrisi/Samsung_FluxKlein_9b",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Said Iqbal sebut IQ Prabowo setara dengan Einstein",
+      "url": "https://kalteng.antaranews.com/berita/699723/said-iqbal-sebut-iq-prabowo-setara-dengan-einstein",
+      "snippet": "Jakarta (ANTARA) - Presiden Partai Buruh Said Iqbal mengungkapkan bahwa tingkat kecerdasan intelektual (IQ) Calon Presiden RI …"
+    },
+    {
+      "title": "Prabowo Subianto - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Prabowo_Subianto",
+      "snippet": "Prabowo is Indonesia's third president to have a military background after Suharto and Susilo Bambang Yudhoyono and is the oldest …"
+    },
+    {
+      "title": "Said Iqbal: IQ Prabowo setara dengan Einstein - ANTARA News",
+      "url": "https://www.antaranews.com/berita/4145547/said-iqbal-iq-prabowo-setara-dengan-einstein",
+      "snippet": "Jun 10, 2024 · Jakarta (ANTARA) - Presiden Partai Buruh Said Iqbal mengungkapkan bahwa tingkat kecerdasan intelektual (IQ) …"
+    },
+    {
+      "title": "Said Iqbal: IQ Prabowo Setara Einstein, Baca 50 Buku Sehari",
+      "url": "https://monitorday.com/said-iqbal-iq-prabowo-setara-einstein-baca-50-buku-sehari/",
+      "snippet": "Jun 10, 2024 · Monitorday.com – Presiden Partai Buruh, Said Iqbal, mengungkapkan bahwa tingkat kecerdasan intelektual (IQ) …"
+    },
+    {
+      "title": "Said Iqbal Ungkap IQ Prabowo Setara dengan Albert Einstein: …",
+      "url": "https://www.tvonenews.com/berita/nasional/217683-said-iqbal-ungkap-iq-prabowo-setara-dengan-albert-einstein-presiden-kita-ini-super-pintar",
+      "snippet": "Jun 10, 2024 · \"Saya tahu kecintaannya Pak Prabowo dengan rakyatnya, daya menyerapnya itu tinggi. Orang cerdas, IQ-nya 170, …"
+    }
+  ]
+}

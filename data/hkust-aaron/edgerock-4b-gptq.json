@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "hkust-aaron/EdgeRock-4B-GPTQ",
+  "slug": "hkust-aaron-edgerock-4b-gptq",
+  "author": "hkust-aaron",
+  "url": "https://huggingface.co/hkust-aaron/EdgeRock-4B-GPTQ",
+  "created_at": "2026-10-19T20:17:45.000Z",
+  "updated_at": "2026-10-19T20:21:54.000Z",
+  "license": "edgerock-model-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "edgerock",
+    "text-generation",
+    "rock-matrix",
+    "gptq",
+    "int4",
+    "4-bit",
+    "quantized",
+    "reasoning",
+    "constant-memory",
+    "memory-efficient",
+    "edge-ai",
+    "custom_code",
+    "arxiv:2610.10118",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:rockmatrix-ai/EdgeRock",
+    "base_model:quantized:rockmatrix-ai/EdgeRock",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4578061568,
+  "parameters_human": "4.58B",
+  "storage_bytes": 3420975046,
+  "storage_human": "3.4 GB",
+  "base_model": "rockmatrix-ai/EdgeRock",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hkust-aaron/EdgeRock-4B-FP8 · Hugging Face",
+      "url": "https://huggingface.co/hkust-aaron/EdgeRock-4B-FP8",
+      "snippet": "hkust-aaron / EdgeRock-4B-FP8 Like 0 Text Generation Transformers Safetensors edgerock quantized fp8 custom_code conversational arxiv:2610.10118 License:edgerock-model-license-1. Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - rockmatrix-ai/EdgeRock: EdgeRock: Strong Reasoning at Constant ...",
+      "url": "https://github.com/rockmatrix-ai/EdgeRock/tree/main",
+      "snippet": "EdgeRock brings strong reasoning to a fixed history budget. EdgeRock-4B, our first open-source release, supports text and image reasoning. Its constant-size history leaves more GPU memory available for sustained reasoning and concurrent serving. More model sizes are in preparation."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=edgerock",
+      "snippet": "Models 4 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: edgerock Clear all"
+    },
+    {
+      "title": "EdgeRock-4B — Models | Rock Matrix",
+      "url": "https://rockmatrix.ai/models/",
+      "snippet": "Explore EdgeRock-4B: an open text-and-vision World-State model. Review reported capabilities, fixed history architecture and deployment downloads."
+    },
+    {
+      "title": "HKUST Generative AI API Service - Supported AI Models",
+      "url": "https://itso.hkust.edu.hk/services/general-it-services/generative-ai-tools/hkust-genai-api-service/supported-models",
+      "snippet": "HKUST Generative AI API Service - Supported AI Models Below is a list of the Generative AI models currently accessible through our API service. Please note that models are deployed and retired on a regular basis."
+    }
+  ]
+}

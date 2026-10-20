@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "haydendoo/so101_pickup_pi0_medium_new_v1",
+  "slug": "haydendoo-so101_pickup_pi0_medium_new_v1",
+  "author": "haydendoo",
+  "url": "https://huggingface.co/haydendoo/so101_pickup_pi0_medium_new_v1",
+  "created_at": "2026-10-19T20:29:34.000Z",
+  "updated_at": "2026-10-19T20:32:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi0",
+    "dataset:haydendoo/so101_combined_medium_new_v1",
+    "base_model:lerobot/pi0_base",
+    "base_model:finetune:lerobot/pi0_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4028019472,
+  "parameters_human": "4.03B",
+  "storage_bytes": 8892517960,
+  "storage_human": "8.9 GB",
+  "base_model": "lerobot/pi0_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "3GPP – The Mobile Broadband Standard",
+      "url": "https://www.3gpp.org/",
+      "snippet": "The 3rd Generation Partnership Project unites seven telecommunications standard development organizations, known as …"
+    },
+    {
+      "title": "3GPP - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/3GPP",
+      "snippet": "The 3GPP structure also includes a Project Coordination Group, which is the highest decision-making body. Its missions include the …"
+    },
+    {
+      "title": "Specifications & Technologies: 3GPP",
+      "url": "https://www.3gpp.org/specifications-technologies/standards",
+      "snippet": "Learn about the best ways to get the specification and how to find the technology areas covered by the 3rd Generation Partnership …"
+    },
+    {
+      "title": "3GPP Portal > Home",
+      "url": "https://portal.3gpp.org/",
+      "snippet": "Sep 28, 2026 · 3GPP CN 4 (closed) 3GPP CN 5 (closed) 3GPP CN ITU-T (closed) 3GPP CN SS (closed) 3GPP GERAN (closed) …"
+    },
+    {
+      "title": "3GPP Portal > Releases",
+      "url": "https://portal.3gpp.org/Releases.aspx",
+      "snippet": "Sep 28, 2026 · This site is 3GPP working area. Log in to access full features. For general information go to the public site …"
+    }
+  ]
+}

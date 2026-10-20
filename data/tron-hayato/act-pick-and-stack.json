@@ -5,7 +5,7 @@
   "author": "Tron-Hayato",
   "url": "https://huggingface.co/Tron-Hayato/act-pick-and-stack",
   "created_at": "2026-10-19T01:47:54.000Z",
-  "updated_at": "2026-10-19T03:09:25.000Z",
+  "updated_at": "2026-10-19T05:54:47.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -14,20 +14,20 @@
   "tags": [
     "lerobot",
     "safetensors",
-    "act",
     "robotics",
+    "act",
     "dataset:Tron-Hayato/record-pick-and-stack",
     "arxiv:2304.13705",
     "license:apache-2.0",
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 23,
   "trending_score": 0,
   "parameters": 51648134,
   "parameters_human": "51.6M",
-  "storage_bytes": 413261112,
-  "storage_human": "413 MB",
+  "storage_bytes": 826496728,
+  "storage_human": "826 MB",
   "base_model": null,
   "formats": [
     "safetensors"

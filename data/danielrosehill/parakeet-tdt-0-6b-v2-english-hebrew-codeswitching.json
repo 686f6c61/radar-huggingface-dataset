@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "danielrosehill/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching",
+  "slug": "danielrosehill-parakeet-tdt-0-6b-v2-english-hebrew-codeswitching",
+  "author": "danielrosehill",
+  "url": "https://huggingface.co/danielrosehill/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching",
+  "created_at": "2026-10-15T08:41:37.000Z",
+  "updated_at": "2026-10-19T23:22:32.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [
+    "en",
+    "he"
+  ],
+  "tags": [
+    "nemo",
+    "onnx",
+    "gguf",
+    "code-switching",
+    "hebrew",
+    "english",
+    "parakeet",
+    "tdt",
+    "speaker-adaptation",
+    "automatic-speech-recognition",
+    "en",
+    "he",
+    "dataset:danielrosehill/Read-Aloud-Voice-Sentences",
+    "dataset:danielrosehill/English-Hebrew-Codeswitching-Sentences",
+    "dataset:Hebrish/English-Hebrew-Mixed-Sentences",
+    "dataset:openslr/librispeech_asr",
+    "base_model:nvidia/parakeet-tdt-0.6b-v2",
+    "base_model:finetune:nvidia/parakeet-tdt-0.6b-v2",
+    "doi:10.57967/hf/10995",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2173,
+  "trending_score": 0,
+  "parameters": 617869958,
+  "parameters_human": "617.9M",
+  "storage_bytes": 48485139814,
+  "storage_human": "48.5 GB",
+  "base_model": "nvidia/parakeet-tdt-0.6b-v2",
+  "formats": [
+    "gguf",
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sokka x Zuko Ft Aang gay furry comic Page 1 - Gay Furry Comics",
+      "url": "https://gayfurrycomics.com/sokka-x-zuko-ft-aang-gay-furry-comic/1/",
+      "snippet": "Sokka x Zuko Ft Aang gay furries comics, read Sokka x Zuko Ft Aang gay furry comics, download Sokka x Zuko Ft Aang furry gay …"
+    },
+    {
+      "title": "Zuko — page 1 — R34 Booru",
+      "url": "https://www.r34booru.com/characters/zuko",
+      "snippet": "Every work filed under Zuko in the R34 Booru archive, each on its own page, shown whole and never cropped."
+    },
+    {
+      "title": "Sokka y Zuko | Vídeo porno gay | VideosXGays",
+      "url": "https://www.videosxgays.com/es/video/289727/sokka-and-zuko/",
+      "snippet": "Sep 2, 2026 · Ariari Anaman - trampita de twink demoníaco (subtit... ¿Alguien se anima a algo de sexo caliente en la fuente termal?"
+    },
+    {
+      "title": "Gay Zuko (Avatar) - Works | Archive of Our Own",
+      "url": "https://archiveofourown.org/tags/Gay%20Zuko%20(Avatar)/works",
+      "snippet": "Quite a bit so it turns out, and Sokka is forced to admit that maybe he was a little quick to judge and there is a lot more to Zuko than …"
+    },
+    {
+      "title": "Avatar Sokka And Zuko Gay Porn Videos - wens.re.kr",
+      "url": "https://wens.re.kr/Avatar+Sokka+And+Zuko+Gay+Porn+Videos",
+      "snippet": "Avatar Sokka And Zuko Gay Porn Videos - Zuko x Sokka, Sokka And Zuko Gay Porn 5 - XXXPicss.com 🤪"
+    }
+  ]
+}

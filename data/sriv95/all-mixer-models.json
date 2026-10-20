@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "sriv95/all-mixer-models",
+  "slug": "sriv95-all-mixer-models",
+  "author": "sriv95",
+  "url": "https://huggingface.co/sriv95/all-mixer-models",
+  "created_at": "2026-10-18T07:01:03.000Z",
+  "updated_at": "2026-10-19T22:13:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1867351430,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Now You See Me, Now You Don’t: Octopuses Camouflage Abilities",
+      "url": "https://discoverwildscience.com/octopuses-comouflage-abilities-6-191858/",
+      "snippet": "May 24, 2026 · Aggressive predators lurk, but octopuses' camouflage mastery helps them vanish, outsmarting threats in marine …"
+    },
+    {
+      "title": "The Science Behind Octopus Chromatophores Opsins and Light …",
+      "url": "https://www.sciencetimes.com/articles/61829/20260518/science-behind-octopus-chromatophores-opsins-light-sensing-skin-camouflage.htm",
+      "snippet": "May 18, 2026 · Explore how octopus chromatophores and opsins enable light-sensing skin and distributed sensing camouflage, …"
+    },
+    {
+      "title": "How scientists learn from the masters of invisibility: octopuses",
+      "url": "https://www.nationalgeographic.com/animals/article/octopus-invisibility-camouflage-technology",
+      "snippet": "Jan 7, 2026 · Cephalopods like the giant Pacific octopus (Enteroctopus dofleini) are masters of camouflage. As researchers gain a …"
+    },
+    {
+      "title": "52 Octopus Facts (Intelligence, Camouflage & Weird Abilities)",
+      "url": "https://www.factretriever.com/octopus-facts",
+      "snippet": "May 29, 2026 · Octopuses shouldn't seem possible. They have three hearts, blue blood, and arms packed with neurons that can …"
+    },
+    {
+      "title": "What is special about octopus behavior? - The Institute for ...",
+      "url": "https://iere.org/what-is-special-about-octopus-behavior/",
+      "snippet": "Nov 23, 2025 · What is Special About Octopus Behavior? The secret to the octopus’s allure lies in its astonishing cognitive abilities …"
+    }
+  ]
+}

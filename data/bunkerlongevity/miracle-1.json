@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "bunkerlongevity/Miracle-1",
+  "slug": "bunkerlongevity-miracle-1",
+  "author": "bunkerlongevity",
+  "url": "https://huggingface.co/bunkerlongevity/Miracle-1",
+  "created_at": "2026-10-19T20:10:34.000Z",
+  "updated_at": "2026-10-19T20:13:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "medical",
+    "longevity",
+    "surgery",
+    "research-preview",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bunkerlongevity/Miracle-1 · Hugging Face",
+      "url": "https://huggingface.co/bunkerlongevity/Miracle-1",
+      "snippet": "Bunker Longevity builds hardware: SOLO-1, a multi-organ machine perfusion cradle (preclinical, not FDA-approved), and, longer term, multi-stage cryopreservation. Miracle-1 is the AI layer built to speed up development of Bunker&#x27;s own hardware and to support other companies and longevity labs. It is ..."
+    },
+    {
+      "title": "Bunker Longevity: Frontier AI Models for Life Sciences",
+      "url": "https://docs.bunkerbio.com/",
+      "snippet": "Bunker Longevity builds foundation models for the life sciences. Every model ships behind a single hosted API and a typed Python SDK. Predict a protein structure, call variants, generate a molecule, or reconstruct a cryo-EM map with the same three calls: deploy, predict, status."
+    },
+    {
+      "title": "Quickstart: Run Your First Bunker Model - Bunker Longevity",
+      "url": "https://docs.bunkerbio.com/quickstart",
+      "snippet": "Get your first prediction from a Bunker Longevity model in under five minutes. This guide uses BunkerFold-3 for protein structure prediction, but the same flow works for every model in the catalog."
+    },
+    {
+      "title": "Bunker Longevity",
+      "url": "https://booleinference.com/",
+      "snippet": "Bunker Longevity builds drug discovery on open protein models, so more candidates can be designed and tested every year. Our goal is a healthy human lifespan of 100."
+    },
+    {
+      "title": "Longevity AI — Live Longer. Live Better.",
+      "url": "https://longevityai.io/",
+      "snippet": "The longevity platform. 100 compounds, 200+ studies, AI advisor, and dose calculator — now live on the App Store. Live longer. Live better."
+    }
+  ]
+}

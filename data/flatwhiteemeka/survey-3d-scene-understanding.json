@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "flatwhiteemeka/survey-3d-scene-understanding",
+  "slug": "flatwhiteemeka-survey-3d-scene-understanding",
+  "author": "flatwhiteemeka",
+  "url": "https://huggingface.co/flatwhiteemeka/survey-3d-scene-understanding",
+  "created_at": "2026-10-19T21:00:04.000Z",
+  "updated_at": "2026-10-19T21:00:10.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "3d-scene-understanding",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "If it exists, there is gay porn of it. No exceptions. - Reddit",
+      "url": "https://www.reddit.com/r/rule34gay/",
+      "snippet": "Rule 34 with non-heterosexual fucking. If it wouldn't be well-recieved on /r/Rule34, post it here!"
+    },
+    {
+      "title": "Feet and Rule 34 - Reddit",
+      "url": "https://www.reddit.com/r/rule34feet/",
+      "snippet": "This is the place to post your favorite feet-related Rule 34 images and content."
+    },
+    {
+      "title": "r/Rule34DC - Reddit",
+      "url": "https://www.reddit.com/r/Rule34DC/",
+      "snippet": "Porn based on the DC Universe"
+    },
+    {
+      "title": "rule 34 - Reddit",
+      "url": "https://www.reddit.com/r/rule34/?feedViewType=cardView",
+      "snippet": "Not all porn is rule 34. Doing rule34 of someone only you or a few people know is not okay to post here. Making your own OC …"
+    },
+    {
+      "title": "Disney Princess Rule 34 - Reddit",
+      "url": "https://www.reddit.com/r/disneyporn/",
+      "snippet": "Rule 34 clearly states that if it exists, there is porn of it. Seeing that there isn't really a good subreddit for porn of Disney Princesses, I …"
+    }
+  ]
+}

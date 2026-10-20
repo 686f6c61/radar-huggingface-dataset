@@ -5,7 +5,7 @@
   "author": "kriyanshi",
   "url": "https://huggingface.co/kriyanshi/qwen2.5-1.5b-yap-scene-lora",
   "created_at": "2026-10-19T17:06:38.000Z",
-  "updated_at": "2026-10-19T17:06:58.000Z",
+  "updated_at": "2026-10-19T20:38:32.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

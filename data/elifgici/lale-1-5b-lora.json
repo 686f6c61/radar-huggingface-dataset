@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "elifgici/Lale-1.5B-LoRA",
+  "slug": "elifgici-lale-1-5b-lora",
+  "author": "elifgici",
+  "url": "https://huggingface.co/elifgici/Lale-1.5B-LoRA",
+  "created_at": "2026-10-17T07:14:39.000Z",
+  "updated_at": "2026-10-19T20:37:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 233155228,
+  "storage_human": "233 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rube Goldberg archive of cartoon drawings and related pictorial ...",
+      "url": "https://oac.cdlib.org/findaid/ark:/13030/c8ng4z7g",
+      "snippet": "In 1938 he became editorial cartoonist for the New York Sun and in 1948 was awarded the Pulitzer prize for his cartoon, \"Peace …Read more"
+    },
+    {
+      "title": "Caricature : GUERRE FROIDE, 1948. /N'Paix aujourd'hui.' la Rube",
+      "url": "https://www.alamyimages.fr/photo-image-caricature-guerre-froide-1948-n-paix-aujourd-hui-la-rube-goldberg-prix-pulitzer-1948-cartoon-commentaire-sur-la-position-precaire-de-la-paix-mondiale-95470841.html",
+      "snippet": "Utilisation pour des reportages d’actualités, des avis et des critiques, la communication d’informations concernant des personnes, …"
+    },
+    {
+      "title": "File:Peace Today.jpg - Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Peace_Today.jpg",
+      "snippet": "Feb 21, 2026 · English: \"Peace Today\", an editorial cartoon commenting on the dangers of the atomic bomb. Winner of the 1948 …"
+    },
+    {
+      "title": "Image of CARTOON: COLD WAR, 1948. - 'Peace Today.' Pulitzer …",
+      "url": "https://www.granger.com/results.asp?image=0034406",
+      "snippet": "In a cartoon from 1948 by Rube Goldberg, a humorous depiction of the Cold War is shown. The image titled 'Peace Today' reflects …"
+    },
+    {
+      "title": "CARTOON: COLD WAR, 1948. /n'Peace Today.' Rube Goldberg's 1948 …",
+      "url": "https://www.alamy.com/stock-photo-cartoon-cold-war-1948-npeace-today-rube-goldbergs-1948-pulitzer-prize-95470841.html",
+      "snippet": "Rube Goldberg's 1948 Pulitzer Prize winning cartoon comment on the precarious position of world peace. - FF920W from Alamy's …"
+    }
+  ]
+}

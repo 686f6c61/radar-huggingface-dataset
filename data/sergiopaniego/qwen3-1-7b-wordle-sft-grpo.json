@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "sergiopaniego/Qwen3-1.7B-Wordle-SFT-GRPO",
+  "slug": "sergiopaniego-qwen3-1-7b-wordle-sft-grpo",
+  "author": "sergiopaniego",
+  "url": "https://huggingface.co/sergiopaniego/Qwen3-1.7B-Wordle-SFT-GRPO",
+  "created_at": "2026-10-19T20:03:58.000Z",
+  "updated_at": "2026-10-19T23:57:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "trackio",
+    "trackio:https://huggingface.co/spaces/sergiopaniego/wordle-grpo-thinking-static-e9b03b",
+    "grpo",
+    "hf_jobs",
+    "conversational",
+    "arxiv:2402.03300",
+    "base_model:sergiopaniego/Qwen3-1.7B-Wordle-SFT",
+    "base_model:finetune:sergiopaniego/Qwen3-1.7B-Wordle-SFT",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 55079290008,
+  "storage_human": "55.1 GB",
+  "base_model": "sergiopaniego/Qwen3-1.7B-Wordle-SFT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sergiopaniego/qwen3-1.7b-wordle-grpo · Hugging Face",
+      "url": "https://huggingface.co/sergiopaniego/qwen3-1.7b-wordle-grpo",
+      "snippet": "This model is a fine-tuned version of Qwen/Qwen3-1.7B. It has been trained using TRL."
+    },
+    {
+      "title": "sergiopaniego/wordle-grpo-Qwen3-1.7B · Hugging Face",
+      "url": "https://huggingface.co/sergiopaniego/wordle-grpo-Qwen3-1.7B",
+      "snippet": "This model is a fine-tuned version of Qwen/Qwen3-1.7B. It has been trained using TRL. This model was trained with GRPO, a method introduced in DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models. TRL: 0.28.0.dev0 Transformers: 4.57.6 Pytorch: 2.9.0+cu126 Datasets: 4.0."
+    },
+    {
+      "title": "Run Wordle-grpo-Qwen3-1.7B API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/sergiopaniego/wordle-grpo-Qwen3-1.7B",
+      "snippet": "Mathematical Problem Solving: Given its training methodology derived from DeepSeekMath, this model is likely optimized for mathematical reasoning and related challenges. Qwen3-1.7B Foundation: Built upon the Qwen3-1.7B architecture, it inherits the general language understanding and generation capabilities of its base model."
+    },
+    {
+      "title": "Run Qwen3-1.7B-wordle-grpo API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/sergiopaniego/qwen3-1.7b-wordle-grpo",
+      "snippet": "The sergiopaniego/qwen3-1.7b-wordle-grpo model is a fine-tuned version of the Qwen3-1.7B architecture, featuring 1.7 billion parameters and a 32768-token context length."
+    },
+    {
+      "title": "sergiopaniego/wordle-grpo-Qwen3-1.7B - Fast, Reliable, and Scalable ...",
+      "url": "https://friendli.ai/models/sergiopaniego/wordle-grpo-Qwen3-1.7B",
+      "snippet": "Request reserved instances Model provider sergiopaniego Model tree Base Qwen/Qwen3-1.7B Fine-tuned this model Modalities Input Text Output Text Pricing Dedicated Endpoints View details Supported Functionality Model APIs Dedicated Endpoints Container More information Model card sergiopaniego"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "jfrick/simple-llm-124M-10.879B",
+  "slug": "jfrick-simple-llm-124m-10-879b",
+  "author": "jfrick",
+  "url": "https://huggingface.co/jfrick/simple-llm-124M-10.879B",
+  "created_at": "2026-10-19T23:03:26.000Z",
+  "updated_at": "2026-10-19T23:04:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "causal-lm",
+    "from-scratch",
+    "custom-code",
+    "experimental",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149555456,
+  "parameters_human": "149.6M",
+  "storage_bytes": 599212398,
+  "storage_human": "599 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

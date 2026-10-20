@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "alignedsi/Aligned-1",
+  "slug": "alignedsi-aligned-1",
+  "author": "alignedsi",
+  "url": "https://huggingface.co/alignedsi/Aligned-1",
+  "created_at": "2026-10-19T20:00:44.000Z",
+  "updated_at": "2026-10-19T20:03:02.000Z",
+  "license": "aligned-1-research-access",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "ai-safety",
+    "red-teaming",
+    "prompt-injection",
+    "llm-security",
+    "penetration-testing",
+    "jailbreak-detection",
+    "owasp-llm-top-10",
+    "agent-security",
+    "gated",
+    "text-generation",
+    "en",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aviation analytics - Cirium",
+      "url": "https://www.cirium.com/",
+      "snippet": "Cirium projects 43,000 aircraft deliveries through 2045 The new Cirium Fleet Forecast projects commercial aircraft deliveries worth …"
+    },
+    {
+      "title": "Dashboard - Cirium",
+      "url": "https://www.cirium.com/analytics-services/dashboard/",
+      "snippet": "Cirium Dashboard provides the latest aviation news, data and analytics on the aviation industry in a single web interface."
+    },
+    {
+      "title": "About - Cirium",
+      "url": "https://www.cirium.com/about/",
+      "snippet": "Cirium is the aviation industry’s most trusted source of analytics. We unify data across fleets, schedules, flights, and traffic and fares …"
+    },
+    {
+      "title": "Fleets Analyzer - Cirium",
+      "url": "https://www.cirium.com/analytics-services/fleets-analyzer/",
+      "snippet": "Understand the global fleet landscape, make decisions around trading aircraft, monitor aircraft portfolios, manage financial risk and …"
+    },
+    {
+      "title": "Schedules and Routes Data - Cirium",
+      "url": "https://www.cirium.com/data/flight-schedules/",
+      "snippet": "Cirium is the gold standard for fresh, accurate data and easy-to-use tools. Our clients around the world view Cirium data as …"
+    }
+  ]
+}

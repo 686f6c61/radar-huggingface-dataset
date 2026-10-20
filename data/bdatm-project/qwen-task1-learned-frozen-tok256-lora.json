@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "bdatm-project/qwen-task1-learned-frozen-tok256-lora",
+  "slug": "bdatm-project-qwen-task1-learned-frozen-tok256-lora",
+  "author": "bdatm-project",
+  "url": "https://huggingface.co/bdatm-project/qwen-task1-learned-frozen-tok256-lora",
+  "created_at": "2026-10-19T21:36:36.000Z",
+  "updated_at": "2026-10-19T22:07:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 711965685,
+  "storage_human": "712 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

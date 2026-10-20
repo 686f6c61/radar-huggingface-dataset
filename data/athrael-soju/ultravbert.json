@@ -5,7 +5,7 @@
   "author": "athrael-soju",
   "url": "https://huggingface.co/athrael-soju/UltraVBERT",
   "created_at": "2026-10-15T19:31:34.000Z",
-  "updated_at": "2026-10-19T02:11:57.000Z",
+  "updated_at": "2026-10-19T19:10:30.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "visual-document-retrieval",
@@ -39,7 +39,7 @@
     "region:us"
   ],
   "likes": 3,
-  "downloads_30d": 93,
+  "downloads_30d": 125,
   "trending_score": 0,
   "parameters": 293115648,
   "parameters_human": "293.1M",

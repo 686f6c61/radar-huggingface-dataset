@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "id": "brandonmusic/DeepSeek-V4.1-Flash-1017-TrellisMX-K4",
+  "slug": "brandonmusic-deepseek-v4-1-flash-1017-trellismx-k4",
+  "author": "brandonmusic",
+  "url": "https://huggingface.co/brandonmusic/DeepSeek-V4.1-Flash-1017-TrellisMX-K4",
+  "created_at": "2026-10-19T21:13:46.000Z",
+  "updated_at": "2026-10-19T23:27:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deepseek_v41",
+    "trellismx",
+    "trellis-quantization",
+    "4-bit",
+    "moe",
+    "deepseek",
+    "deepseek-v4.1",
+    "engram",
+    "text-generation",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "license:mit",
+    "model-index",
+    "ds41_trellismx",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 212828744914,
+  "parameters_human": "212.83B",
+  "storage_bytes": 496441204450,
+  "storage_human": "496.4 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Distribution fidelity (KL divergence vs the official checkpoint)",
+      "dataset": "evaluation set (128 windows x 8,192 tokens, folder windows-8192/; the same tokens as 512 fresh sequences x 2,048 tokens, folder cuts-2048/)",
+      "metric": "Mean tokenwise KLD (reference || candidate), serving formats, 512 fresh 2,048-token sequences, nats",
+      "value": 0.04978575785321625
+    },
+    {
+      "task": "Distribution fidelity (KL divergence vs the official checkpoint)",
+      "dataset": "evaluation set (128 windows x 8,192 tokens, folder windows-8192/; the same tokens as 512 fresh sequences x 2,048 tokens, folder cuts-2048/)",
+      "metric": "Top-1 agreement with the reference, serving formats, 2,048-token sequences",
+      "value": 0.933534593307279
+    },
+    {
+      "task": "Distribution fidelity (KL divergence vs the official checkpoint)",
+      "dataset": "evaluation set (128 windows x 8,192 tokens, folder windows-8192/; the same tokens as 512 fresh sequences x 2,048 tokens, folder cuts-2048/)",
+      "metric": "Mean tokenwise KLD (reference || candidate), serving formats, 128 windows of 8,192 tokens, nats",
+      "value": 0.10972108157831723
+    },
+    {
+      "task": "Distribution fidelity (KL divergence vs the official checkpoint)",
+      "dataset": "evaluation set (128 windows x 8,192 tokens, folder windows-8192/; the same tokens as 512 fresh sequences x 2,048 tokens, folder cuts-2048/)",
+      "metric": "Top-1 agreement with the reference, serving formats, 8,192-token windows",
+      "value": 0.9230510239897448
+    }
+  ],
+  "sources": [
+    {
+      "title": "Bangla IMO sex @ Desi XnXX",
+      "url": "https://desi-xnxx.pro/tapes/bangla-imo-sex/",
+      "snippet": "Bangla IMO sex xnxx porn video desi-xnxx.pro Mom video, Sex video, School video, Forced video, Girlfriend video, Older video, …"
+    },
+    {
+      "title": "Bangla - XXX Porn videos @ TheXXX.TV",
+      "url": "https://thexxx.tv/videos/bangla",
+      "snippet": "1,483 videos: Dripping Pussy Masturbation, Indian Double Penetration, Full Indian Movies, Teacher And Student, Bangladeshi …"
+    },
+    {
+      "title": "Desi Viral Sex Bangla 2026 porn - 1,000 Indian Porn Videos - MyDesi",
+      "url": "https://mydesi.com.co/search/desi-viral-sex-bangla-2026",
+      "snippet": "Watch 1,000 desi viral sex bangla 2026 xxx videos at MyDesi. Handpicked Indian porn featuring real Desi girls, bhabhi sex scandals, …"
+    },
+    {
+      "title": "Bangla sex - Real Bangladeshi sex video and new BD porn",
+      "url": "https://www.desitales2.com/videos/category/bangla-sex/",
+      "snippet": "Latest and unseen Sonar Bangla sex videos. Beautiful Bangladeshi girls, horny housewives, lusty aunties pleased completely in this …"
+    },
+    {
+      "title": "Bangla-Imo porn videos · Rexxx",
+      "url": "https://rexxx.com/?q=bangla-imo",
+      "snippet": "Jul 19, 2017 · 561 videos for Bangla-Imo · Watch them for free and search for more Bangla-Imo, , Busty and Blowjob movies at …"
+    }
+  ]
+}

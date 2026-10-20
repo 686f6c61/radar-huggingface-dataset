@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "Hebrish/Jachnun-GGUF",
+  "slug": "hebrish-jachnun-gguf",
+  "author": "Hebrish",
+  "url": "https://huggingface.co/Hebrish/Jachnun-GGUF",
+  "created_at": "2026-10-16T18:19:56.000Z",
+  "updated_at": "2026-10-20T00:05:20.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "he"
+  ],
+  "tags": [
+    "gguf",
+    "transcribe.cpp",
+    "parakeet",
+    "tdt",
+    "code-switching",
+    "hebrew",
+    "english",
+    "automatic-speech-recognition",
+    "en",
+    "he",
+    "base_model:Hebrish/Jachnun",
+    "base_model:quantized:Hebrish/Jachnun",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 218,
+  "trending_score": 0,
+  "parameters": 617869958,
+  "parameters_human": "617.9M",
+  "storage_bytes": 12212007680,
+  "storage_human": "12.2 GB",
+  "base_model": "Hebrish/Jachnun",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

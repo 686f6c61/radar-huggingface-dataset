@@ -5,7 +5,7 @@
   "author": "athrael-soju",
   "url": "https://huggingface.co/athrael-soju/ColUltraVBERT",
   "created_at": "2026-10-15T19:36:18.000Z",
-  "updated_at": "2026-10-19T02:11:58.000Z",
+  "updated_at": "2026-10-19T19:10:31.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "visual-document-retrieval",
@@ -45,7 +45,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 130,
+  "downloads_30d": 189,
   "trending_score": 0,
   "parameters": 254088960,
   "parameters_human": "254.1M",

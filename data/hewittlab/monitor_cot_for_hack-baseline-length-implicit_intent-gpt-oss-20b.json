@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "hewittlab/monitor_cot_for_hack-baseline-length-implicit_intent-gpt-oss-20b",
+  "slug": "hewittlab-monitor_cot_for_hack-baseline-length-implicit_intent-gpt-oss-20b",
+  "author": "hewittlab",
+  "url": "https://huggingface.co/hewittlab/monitor_cot_for_hack-baseline-length-implicit_intent-gpt-oss-20b",
+  "created_at": "2026-10-16T09:25:35.000Z",
+  "updated_at": "2026-10-20T00:19:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tinker",
+    "lora",
+    "reward-hacking",
+    "chain-of-thought",
+    "monitorability",
+    "dataset:hewittlab/monitor_cot_for_hack-length",
+    "base_model:openai/gpt-oss-20b",
+    "base_model:adapter:openai/gpt-oss-20b",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 63739224648,
+  "storage_human": "63.7 GB",
+  "base_model": "openai/gpt-oss-20b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

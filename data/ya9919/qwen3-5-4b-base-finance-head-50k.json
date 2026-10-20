@@ -4,10 +4,10 @@
   "slug": "ya9919-qwen3-5-4b-base-finance-head-50k",
   "author": "ya9919",
   "url": "https://huggingface.co/ya9919/qwen3.5-4b-base-finance-head-50k",
-  "created_at": "2026-10-18T15:54:10.000Z",
-  "updated_at": "2026-10-18T16:18:56.000Z",
-  "license": "apache-2.0",
-  "license_family": "oss",
+  "created_at": "2026-10-19T20:38:16.000Z",
+  "updated_at": "2026-10-20T02:25:07.000Z",
+  "license": "s2-mas-controlled-research-v1.2",
+  "license_family": "unknown",
   "pipeline_tag": null,
   "library": null,
   "languages": [
@@ -21,7 +21,7 @@
     "en",
     "base_model:Qwen/Qwen3.5-4B-Base",
     "base_model:finetune:Qwen/Qwen3.5-4B-Base",
-    "license:apache-2.0",
+    "license:other",
     "region:us"
   ],
   "likes": 0,
@@ -35,8 +35,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-10-19T03:24:58.649Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": []
 }

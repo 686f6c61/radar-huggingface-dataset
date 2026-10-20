@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "nkthebass/tinybrainbot-3m-base",
+  "slug": "nkthebass-tinybrainbot-3m-base",
+  "author": "nkthebass",
+  "url": "https://huggingface.co/nkthebass/tinybrainbot-3m-base",
+  "created_at": "2026-10-19T23:30:19.000Z",
+  "updated_at": "2026-10-19T23:30:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "llama",
+    "text-generation",
+    "tiny",
+    "small-language-model",
+    "from-scratch",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:HuggingFaceTB/cosmopedia",
+    "dataset:roneneldan/TinyStories",
+    "dataset:wikimedia/wikipedia",
+    "license:apache-2.0",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2942928,
+  "parameters_human": "2.9M",
+  "storage_bytes": 17808296,
+  "storage_human": "18 MB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "ARC-Easy",
+      "metric": "acc_norm (0-shot)",
+      "value": 33.59
+    },
+    {
+      "task": null,
+      "dataset": "ARC-Challenge",
+      "metric": "acc_norm (0-shot)",
+      "value": 24.91
+    },
+    {
+      "task": null,
+      "dataset": "HellaSwag",
+      "metric": "acc_norm (0-shot)",
+      "value": 27.07
+    },
+    {
+      "task": null,
+      "dataset": "PIQA",
+      "metric": "acc_norm (0-shot)",
+      "value": 55.98
+    },
+    {
+      "task": null,
+      "dataset": "ArithMark-3",
+      "metric": "acc_norm (0-shot)",
+      "value": 45
+    }
+  ],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "SD-Next",
   "url": "https://huggingface.co/SD-Next/MOSS-Image-SFT",
   "created_at": "2026-10-16T18:25:28.000Z",
-  "updated_at": "2026-10-16T18:25:43.000Z",
+  "updated_at": "2026-10-19T18:35:03.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-image",

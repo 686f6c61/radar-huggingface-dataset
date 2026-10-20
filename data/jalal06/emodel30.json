@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "jalal06/emodel30",
+  "slug": "jalal06-emodel30",
+  "author": "jalal06",
+  "url": "https://huggingface.co/jalal06/emodel30",
+  "created_at": "2026-10-20T00:03:51.000Z",
+  "updated_at": "2026-10-20T00:04:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "franka",
+    "imitation-learning",
+    "ebt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 256371495,
+  "parameters_human": "256.4M",
+  "storage_bytes": 1025548844,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PS5™ Release Date Announcement - BeamNG.drive",
+      "url": "https://www.beamng.com/game/news/announce/ps5-release-date/",
+      "snippet": "Sep 24, 2026 · Back in May, we announced that BeamNG will be coming to PS5™ in 2026. Since then, many of you have been …"
+    },
+    {
+      "title": "BeamNG.drive - Official PlayStation™Store US",
+      "url": "https://store.playstation.com/en-us/concept/10015321",
+      "snippet": "10 hours ago · BeamNG.drive is an incredibly realistic driving game with near-limitless possibilities. Our soft-body physics engine …"
+    },
+    {
+      "title": "BeamNG.drive",
+      "url": "https://www.beamng.com/",
+      "snippet": "Design your custom car and engine, tailor everything to your specifications, choose the \"export\" option, start up BeamNG.drive, and …"
+    },
+    {
+      "title": "BeamNG.drive - PlayStation",
+      "url": "https://www.playstation.com/en-us/games/beamng-drive/",
+      "snippet": "10 hours ago · Discover BeamNG.drive for PS5 on the official PlayStation website. This incredibly realistic driving game offers near …"
+    },
+    {
+      "title": "Everything We Know About BeamNG.drive's Upcoming PS5 Port",
+      "url": "https://racinggames.gg/article/everything-we-know-about-beamngdrives-upcoming-ps5-port",
+      "snippet": "Oct 1, 2026 · BeamNG.drive hits PlayStation 5 in Early Access on October 19, 2026, with four-player split-screen but no mod support …"
+    }
+  ]
+}

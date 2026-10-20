@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "gnumanth/nullspan",
+  "slug": "gnumanth-nullspan",
+  "author": "gnumanth",
+  "url": "https://huggingface.co/gnumanth/nullspan",
+  "created_at": "2026-10-19T20:36:11.000Z",
+  "updated_at": "2026-10-19T21:59:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "question-answering",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "nullspan",
+    "feature-extraction",
+    "system-one",
+    "structured-extraction",
+    "span-extraction",
+    "calibrated-estimation",
+    "time-series-forecasting",
+    "distilbert",
+    "question-answering",
+    "custom_code",
+    "dataset:gnumanth/nullspan-dataset",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 67061395,
+  "parameters_human": "67.1M",
+  "storage_bytes": 1812161083,
+  "storage_human": "1.8 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nullspan — AI Ops Command Center",
+      "url": "https://nullspan.fixbyte.dev/",
+      "snippet": "Cyberpunk AI Ops command center for latency, cost, model health, and incidents."
+    },
+    {
+      "title": "m0hss/nullspan: AI Ops Command Center - GitHub",
+      "url": "https://github.com/m0hss/nullspan",
+      "snippet": "Nullspan Cyberpunk-styled AI Ops Command Center — a frontend MVP for monitoring LLM/API production stacks: latency, token cost, error spikes, model health, and incident feed."
+    },
+    {
+      "title": "nullspan/README.md at master · m0hss/nullspan · GitHub",
+      "url": "https://github.com/m0hss/nullspan/blob/master/README.md",
+      "snippet": "Nullspan Cyberpunk-styled AI Ops Command Center — a frontend MVP for monitoring LLM/API production stacks: latency, token cost, error spikes, model health, and incident feed."
+    },
+    {
+      "title": "gnumanth/sanskrit-tts-wasm · Hugging Face",
+      "url": "https://huggingface.co/gnumanth/sanskrit-tts-wasm",
+      "snippet": "gnumanth / sanskrit-tts-wasm Like 2 Text-to-Speech ONNX 6 languages sanskrit tts wasm onnxruntime-web matmulinteger flow-matching vocos chandas License:mit Model card FilesFiles and versions xet Community Copy to bucket new Vāgdhenu (वाग्धेनु) — Fast WASM SIMD (MatMulIntegerQUInt8) Sanskrit TTS Weights (sanskrit-tts-wasm)"
+    },
+    {
+      "title": "prathosh A P on X: \"@GNUmanth @xkcd yen yen maaDtira pa neevu.. super ...",
+      "url": "https://x.com/prathoshap/status/2110790476857254371",
+      "snippet": "Can AI get the joke? I built @ xkcd -bench: 15 vision models explain xkcd comics, graded against human ExplainXKCD write-ups. Top 4 land within 0.3 pts of each other (~87). Best open model, Gemma 4 31B, hits 78. GPT-6 Luna: 49.9 😬 h3manth.com/ai/xkcd-bench/ 1 1 467 prathosh A P @prathoshap yen yen maaDtira pa neevu.. super :) 5:50 PM · Oct ..."
+    }
+  ]
+}

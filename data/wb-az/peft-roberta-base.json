@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "id": "Wb-az/peft-roberta-base",
+  "slug": "wb-az-peft-roberta-base",
+  "author": "Wb-az",
+  "url": "https://huggingface.co/Wb-az/peft-roberta-base",
+  "created_at": "2026-03-02T19:52:12.000Z",
+  "updated_at": "2026-10-19T20:40:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:roberta-base",
+    "lora",
+    "transformers",
+    "torchao",
+    "text-classification",
+    "emotion-classification",
+    "int8",
+    "base_model:FacebookAI/roberta-base",
+    "base_model:adapter:FacebookAI/roberta-base",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28651437,
+  "storage_human": "29 MB",
+  "base_model": "roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Emotion Classification",
+      "dataset": "Combined Emotions Datasets",
+      "metric": "Accuracy",
+      "value": 0.9745
+    },
+    {
+      "task": "Emotion Classification",
+      "dataset": "Combined Emotions Datasets",
+      "metric": "Matthews Correlation",
+      "value": 0.9662
+    },
+    {
+      "task": "Emotion Classification",
+      "dataset": "Combined Emotions Datasets",
+      "metric": "F1",
+      "value": 0.9609
+    },
+    {
+      "task": "Emotion Classification",
+      "dataset": "Combined Emotions Datasets",
+      "metric": "Precision",
+      "value": 0.955
+    },
+    {
+      "task": "Emotion Classification",
+      "dataset": "Combined Emotions Datasets",
+      "metric": "Recall",
+      "value": 0.9671
+    }
+  ],
+  "sources": [
+    {
+      "title": "Интернет-магазин Wildberries.ru: широкий ассортимент товаров",
+      "url": "https://www.wildberries.ru/",
+      "snippet": "Развозить грузы Доставлять заказы Наши проекты WH School WB Guru WB Stream Компания О нас Пресс-служба Контакты …"
+    },
+    {
+      "title": "Интернет-магазин Wildberries: широкий ассортимент товаров",
+      "url": "https://www.wildberries.by/",
+      "snippet": "Развозить грузы Доставлять заказы Наши проекты WH School WB Guru WB Stream Компания О нас Пресс-служба Контакты …"
+    },
+    {
+      "title": "WB - каталог 2025-2026 в интернет магазине WildBerries.by",
+      "url": "https://www.wildberries.by/brands/wb",
+      "snippet": "Каталог WB 23 товара Аксессуары Аксессуары для электроники Канцелярские товары Книжная продукция и диски …"
+    },
+    {
+      "title": "Wildberries - WB Partners",
+      "url": "https://seller.wildberries.ru/",
+      "snippet": "Register on WB Partners to start selling your items on Wildberries and grow your business with us"
+    },
+    {
+      "title": "WarnerBros.com | Home of WB Movies, TV, Games, and more!",
+      "url": "https://www.warnerbros.com/",
+      "snippet": "Company WB Services Press Releases WBD Careers International Help Terms of Use Privacy Policy Sourced Traffic Disclosure Ad …"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "qmohits/kokoro-82m-coreml-size-tiers",
+  "slug": "qmohits-kokoro-82m-coreml-size-tiers",
+  "author": "qmohits",
+  "url": "https://huggingface.co/qmohits/kokoro-82m-coreml-size-tiers",
+  "created_at": "2026-10-19T21:43:20.000Z",
+  "updated_at": "2026-10-19T21:49:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "coreml",
+    "text-to-speech",
+    "kokoro",
+    "ios",
+    "quantization",
+    "en",
+    "base_model:hexgrad/Kokoro-82M",
+    "base_model:quantized:hexgrad/Kokoro-82M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 563790163,
+  "storage_human": "564 MB",
+  "base_model": "hexgrad/Kokoro-82M",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

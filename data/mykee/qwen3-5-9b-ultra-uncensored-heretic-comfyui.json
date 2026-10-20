@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "Mykee/Qwen3.5-9B-ultra-uncensored-heretic-comfyui",
+  "slug": "mykee-qwen3-5-9b-ultra-uncensored-heretic-comfyui",
+  "author": "Mykee",
+  "url": "https://huggingface.co/Mykee/Qwen3.5-9B-ultra-uncensored-heretic-comfyui",
+  "created_at": "2026-10-19T18:52:08.000Z",
+  "updated_at": "2026-10-19T22:11:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "base_model:llmfan46/Qwen3.5-9B-ultra-uncensored-heretic",
+    "base_model:finetune:llmfan46/Qwen3.5-9B-ultra-uncensored-heretic",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18819722392,
+  "storage_human": "18.8 GB",
+  "base_model": "llmfan46/Qwen3.5-9B-ultra-uncensored-heretic",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Toutes les nouvelles vidéos - SINGEPORNO.com",
+      "url": "https://www.singeporno.com/nouvelles-videos/",
+      "snippet": "Voici un aperçu de toutes les nouvelles vidéos porno de SINGEPORNO. De nouvelles vidéos sont publiées chaque jour."
+    },
+    {
+      "title": "SINGEPORNO.com - clips porno xxx et vidéos sexe gratuits",
+      "url": "https://www.singeporno.com/",
+      "snippet": "Cliquez ici pour les meilleurs clips porno. Notre site SINGEPORNO.com vous propose les vidéos sexe les plus chaudes de la …"
+    },
+    {
+      "title": "Meilleures vidéos porno : le singeporno – MonPorno.fr",
+      "url": "https://monporno.fr/chercher/le+singeporno/",
+      "snippet": "Retrouve gratuitement les films porno « le singeporno », sans pub ! Vidéos érotiques HD sur le meilleur site français."
+    },
+    {
+      "title": "Singeporno Vidéos porno et films XXX — PornOne en français",
+      "url": "https://pornone.com/fr/recherche?q=singeporno",
+      "snippet": "Regarder gratuitement singeporno vidéos porno en qualité HD sur PornOne. Découvrez tous les films et clips de sexe associés, …"
+    },
+    {
+      "title": "Singeporno - Porno Gratuit en 4K HD Vidéos Complètes",
+      "url": "https://many.xxx/fr/search/singeporno/",
+      "snippet": "Regardez du porno gratuit en Ultra HD. Toutes les vidéos sont complètes 😎. AUCUNE PUBLICITÉ ennuyeuse"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "SD-Next",
   "url": "https://huggingface.co/SD-Next/MOSS-Image-Base",
   "created_at": "2026-10-16T18:25:30.000Z",
-  "updated_at": "2026-10-16T18:25:45.000Z",
+  "updated_at": "2026-10-19T18:33:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-image",

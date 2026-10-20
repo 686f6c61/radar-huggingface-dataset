@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "terk182/act_pick_yellow_brick_v2",
+  "slug": "terk182-act_pick_yellow_brick_v2",
+  "author": "terk182",
+  "url": "https://huggingface.co/terk182/act_pick_yellow_brick_v2",
+  "created_at": "2026-10-19T22:57:04.000Z",
+  "updated_at": "2026-10-19T22:57:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:terk182/pick_yellow_brick_v2",
+    "arxiv:2304.13705",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714880,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Circle M+P",
+      "url": "https://www.circlemp.com/",
+      "snippet": "With offices in NY and LA, we’re a global talent management and production company representing defining artists in film, television, …"
+    },
+    {
+      "title": "About - circlemp.com",
+      "url": "https://www.circlemp.com/about",
+      "snippet": "Circle is a place for dreamers and storytellers to roam and create.u2028We specialize in cultivating original, exceptional creative …"
+    },
+    {
+      "title": "Circle Of Confusion Rebrands As Circle Management And Production",
+      "url": "https://deadline.com/2024/06/circle-of-confusion-rebrands-circle-management-and-production-1235959810/",
+      "snippet": "Jun 5, 2024 · Founded by Lawrence Mattis over three decades ago, Circle Management and Production represents some of the …"
+    },
+    {
+      "title": "Circle Management + Production - LinkedIn",
+      "url": "https://www.linkedin.com/company/circlemp",
+      "snippet": "Circle Management + Production (formerly Circle of Confusion) is a premiere management and production destination for exceptional …"
+    },
+    {
+      "title": "Contact | Adamsalky.com",
+      "url": "https://www.adamsalky.com/contact",
+      "snippet": "MANAGEMENT: Circle of Confusion Brad Mendelsohn, Josh Adler, Charles Mastropietro Brad@circleofconfusion.com (310) 691-7029"
+    }
+  ]
+}

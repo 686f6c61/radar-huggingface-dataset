@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "YaItco/DLA-1-Conformer-CTC",
+  "slug": "yaitco-dla-1-conformer-ctc",
+  "author": "YaItco",
+  "url": "https://huggingface.co/YaItco/DLA-1-Conformer-CTC",
+  "created_at": "2026-10-19T19:58:34.000Z",
+  "updated_at": "2026-10-19T20:31:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "conformer",
+    "ctc",
+    "sentencepiece",
+    "kenlm",
+    "librispeech",
+    "automatic-speech-recognition",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 65279489,
+  "storage_human": "65 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

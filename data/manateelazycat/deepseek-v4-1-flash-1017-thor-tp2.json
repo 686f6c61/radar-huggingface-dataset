@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "manateelazycat/DeepSeek-V4.1-Flash-1017-Thor-TP2",
+  "slug": "manateelazycat-deepseek-v4-1-flash-1017-thor-tp2",
+  "author": "manateelazycat",
+  "url": "https://huggingface.co/manateelazycat/DeepSeek-V4.1-Flash-1017-Thor-TP2",
+  "created_at": "2026-10-19T23:43:32.000Z",
+  "updated_at": "2026-10-20T01:45:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "image-text-to-text",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "base_model:finetune:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 415134687099,
+  "storage_human": "415.1 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

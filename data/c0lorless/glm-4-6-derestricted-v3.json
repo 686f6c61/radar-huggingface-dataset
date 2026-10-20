@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "c0lorless/GLM-4.6-Derestricted-v3",
+  "slug": "c0lorless-glm-4-6-derestricted-v3",
+  "author": "c0lorless",
+  "url": "https://huggingface.co/c0lorless/GLM-4.6-Derestricted-v3",
+  "created_at": "2026-10-19T23:23:03.000Z",
+  "updated_at": "2026-10-19T23:23:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm4_moe",
+    "text-generation",
+    "abliterated",
+    "derestricted",
+    "glm-4.6",
+    "unlimited",
+    "uncensored",
+    "conversational",
+    "arxiv:2508.06471",
+    "base_model:zai-org/GLM-4.6",
+    "base_model:finetune:zai-org/GLM-4.6",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 356785898816,
+  "parameters_human": "356.79B",
+  "storage_bytes": 713597382171,
+  "storage_human": "713.6 GB",
+  "base_model": "zai-org/GLM-4.6",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Unable to access favorite porn site, eporner.com, on my home internet ...",
+      "url": "https://www.reddit.com/r/computerhelp/comments/3rqgor/unable_to_access_favorite_porn_site_epornercom_on/",
+      "snippet": "Nov 6, 2015 · This is going to sound ridiculous, but I can't access eporner.com. I have Cox internet and am located in Arizona. I'm …"
+    },
+    {
+      "title": "Can't access eporner.com : r/techsupport - Reddit",
+      "url": "https://www.reddit.com/r/techsupport/comments/193l71/cant_access_epornercom/",
+      "snippet": "Feb 23, 2013 · true Stumped on a tech problem? Ask the community and try to help others with their problems as well. Note: Reddit …"
+    },
+    {
+      "title": "eporner看不了？？？_百度知道",
+      "url": "https://zhidao.baidu.com/question/165751459.html",
+      "snippet": "百度网盘是一款国民级产品，已连续9年为超过7亿用户提供稳定、安全的个人云存储服务，已实现电脑、手机、电视等多种终端场景 …"
+    },
+    {
+      "title": "百度地图",
+      "url": "https://zhidao.baidu.com/html/map/page.html?newmap=1",
+      "snippet": "百度地图提供精准导航、实时路况、公交查询等功能，是您出行的好帮手。"
+    },
+    {
+      "title": "Not even gonna try to hide it, how do I watch porn on this thing",
+      "url": "https://www.reddit.com/r/oculus/comments/1aj8j1z/not_even_gonna_try_to_hide_it_how_do_i_watch_porn/",
+      "snippet": "All I know is that eporner has a lot of free videos, and Gizmo is way better than DeoVR. DeoVR needs you to screw with settings for …"
+    }
+  ]
+}

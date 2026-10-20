@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "nile-academy/ministral-3-3b-reasoning-2512-gguf",
+  "slug": "nile-academy-ministral-3-3b-reasoning-2512-gguf",
+  "author": "nile-academy",
+  "url": "https://huggingface.co/nile-academy/ministral-3-3b-reasoning-2512-gguf",
+  "created_at": "2026-10-19T23:09:11.000Z",
+  "updated_at": "2026-10-19T23:09:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "wekala",
+    "text-generation",
+    "base_model:mistralai/Ministral-3-3B-Reasoning-2512",
+    "base_model:quantized:mistralai/Ministral-3-3B-Reasoning-2512",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3429006336,
+  "parameters_human": "3.43B",
+  "storage_bytes": 9114903680,
+  "storage_human": "9.1 GB",
+  "base_model": "mistralai/Ministral-3-3B-Reasoning-2512",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nile - Agence d'affaires publiques en santé -",
+      "url": "https://www.nile-consulting.eu/",
+      "snippet": "Agence conseil en affaires publiques dédiée aux acteurs de la santé, nile est basée depuis 2017 à Paris - France."
+    },
+    {
+      "title": "Nile - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nile",
+      "snippet": "The White Nile begins near Lake Victoria and flows through Uganda and South Sudan, while the Blue Nile begins near Lake Tana in …"
+    },
+    {
+      "title": "Nil — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Nil",
+      "snippet": "De nos jours, la répartition des eaux du Nil pour l'exploitation est régulée par un accord liant neuf des dix pays riverains du bassin …"
+    },
+    {
+      "title": "NILE Clothing | Designed in Switzerland",
+      "url": "https://eu.nile.ch/en/",
+      "snippet": "Discover the latest NILE collection: high-quality clothing with distinctive materials, refined details and unmistakable prints. Shop …"
+    },
+    {
+      "title": "Mode NILE | Designed in Switzerland",
+      "url": "https://www.nile.ch/fr",
+      "snippet": "Découvre la collection NILE actuelle : une mode de qualité, des matières soigneusement sélectionnées, des détails raffinés et des …"
+    }
+  ]
+}

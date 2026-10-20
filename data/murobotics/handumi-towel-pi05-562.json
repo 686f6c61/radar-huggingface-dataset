@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "murobotics/handumi-towel-pi05-562",
+  "slug": "murobotics-handumi-towel-pi05-562",
+  "author": "murobotics",
+  "url": "https://huggingface.co/murobotics/handumi-towel-pi05-562",
+  "created_at": "2026-10-19T23:01:29.000Z",
+  "updated_at": "2026-10-19T23:01:53.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "robotics",
+    "HandUMI",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9388456512,
+  "storage_human": "9.4 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

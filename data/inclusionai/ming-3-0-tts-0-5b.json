@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "inclusionAI/Ming-3.0-tts-0.5B",
+  "slug": "inclusionai-ming-3-0-tts-0-5b",
+  "author": "inclusionAI",
+  "url": "https://huggingface.co/inclusionAI/Ming-3.0-tts-0.5B",
+  "created_at": "2026-09-22T12:46:58.000Z",
+  "updated_at": "2026-10-19T12:50:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ko",
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "dense",
+    "text-generation",
+    "audio",
+    "text-to-speech",
+    "voice-cloning",
+    "multilingual",
+    "speech-generation",
+    "custom_code",
+    "zh",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ko",
+    "ja",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 17,
+  "downloads_30d": 6,
+  "trending_score": 17,
+  "parameters": 1479454868,
+  "parameters_human": "1.48B",
+  "storage_bytes": 3001047474,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Career Code Test - IDRlabs",
+      "url": "https://www.idrlabs.com/career-code/test.php",
+      "snippet": "This Career Code Test is based on the popular Holland Codes, which are widely used in career counseling across the United States …"
+    },
+    {
+      "title": "Free Career Quiz - Find Your Holland Code & Discover the Right",
+      "url": "https://www.truity.com/test/holland-code-career-test",
+      "snippet": "Free career quiz uses the respected Holland Code system to show you which jobs will suit your interests, talents, and aptitude. Get …"
+    },
+    {
+      "title": "RIASEC Test — Free Holland Code Career Assessment (2026)",
+      "url": "https://my-career-path.com/riasec-test.html",
+      "snippet": "Our test calculates your unique three-letter Holland Code and matches it against a database of over 500 careers to find your optimal …"
+    },
+    {
+      "title": "Career Aptitude Test | Free Quiz to Find the Right Career for Me - Truity",
+      "url": "https://www.truity.com/test/career-personality-profiler-test",
+      "snippet": "Test your career aptitude, job interests, and personality traits to find the right job for you. This free career assessment takes only 15 …"
+    },
+    {
+      "title": "Career test - Fast Free Career Aptitude Test - 123test.com",
+      "url": "https://www.123test.com/career-test/",
+      "snippet": "May 17, 2024 · What career best fits your personality? This bias free career aptitude test gives you insight into your job personality. …"
+    }
+  ]
+}

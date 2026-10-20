@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "butler-compute/GLM-5.3-FP8-NVFP4",
+  "slug": "butler-compute-glm-5-3-fp8-nvfp4",
+  "author": "butler-compute",
+  "url": "https://huggingface.co/butler-compute/GLM-5.3-FP8-NVFP4",
+  "created_at": "2026-10-19T20:43:23.000Z",
+  "updated_at": "2026-10-19T23:36:28.000Z",
+  "license": "glm-5.3-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "glm_moe_dsa",
+    "text-generation",
+    "conversational",
+    "base_model:nvidia/GLM-5.3-NVFP4",
+    "base_model:quantized:nvidia/GLM-5.3-NVFP4",
+    "license:other",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 390942074880,
+  "parameters_human": "390.94B",
+  "storage_bytes": 438421105825,
+  "storage_human": "438.4 GB",
+  "base_model": "zai-org/GLM-5.3, nvidia/GLM-5.3-NVFP4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Butler Industries",
+      "url": "https://butlerindustries.com/",
+      "snippet": "Investisseur industriel global. Butler Industries accompagne les entreprises à toutes les étapes de leur vie, de la naissance à la …Read more"
+    },
+    {
+      "title": "Gerard Butler — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Gerard_Butler",
+      "snippet": "Gerard Butler est un acteur, réalisateur et producteur de cinéma britannique, né le 13 novembre 1969 à Paisley en Écosse 1. Sa …"
+    },
+    {
+      "title": "Butler — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Butler",
+      "snippet": "Gwendoline Butler (1922-2013), femme de lettres britannique, auteure de roman policier et de roman d’amour ; Harold Butler (1883 …"
+    },
+    {
+      "title": "Traduction BUTLER en français | Dictionnaire anglais-français | Reverso",
+      "url": "https://dictionnaire.reverso.net/anglais-francais/butler",
+      "snippet": "Traduction de \"butler\" en français : majordome. Nom, signification, prononciation, expressions idiomatiques en anglais, synonymes …"
+    },
+    {
+      "title": "Filmographie Gerard Butler - AlloCiné",
+      "url": "https://www.allocine.fr/personne/fichepersonne-21087/filmographie/",
+      "snippet": "Découvrez tous les films et séries de la filmographie de Gerard Butler. De ses débuts jusqu'à ses projets à venir."
+    }
+  ]
+}

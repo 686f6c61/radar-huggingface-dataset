@@ -5,7 +5,7 @@
   "author": "esatapedico",
   "url": "https://huggingface.co/esatapedico/MiniCPM-V-4.7-35B-A3B-NVFP4",
   "created_at": "2026-10-18T18:56:00.000Z",
-  "updated_at": "2026-10-18T19:02:38.000Z",
+  "updated_at": "2026-10-19T19:01:22.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -41,7 +41,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 29,
   "trending_score": 0,
   "parameters": 21064994984,
   "parameters_human": "21.06B",

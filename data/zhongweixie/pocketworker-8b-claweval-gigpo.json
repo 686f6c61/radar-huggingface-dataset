@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "zhongweixie/PocketWorker-8B-ClawEval-GiGPO",
+  "slug": "zhongweixie-pocketworker-8b-claweval-gigpo",
+  "author": "zhongweixie",
+  "url": "https://huggingface.co/zhongweixie/PocketWorker-8B-ClawEval-GiGPO",
+  "created_at": "2026-10-19T17:51:22.000Z",
+  "updated_at": "2026-10-19T17:55:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:2505.09388",
+    "arxiv:2502.13923",
+    "arxiv:2409.12191",
+    "arxiv:2308.12966",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8767123696,
+  "parameters_human": "8.77B",
+  "storage_bytes": 17534339432,
+  "storage_human": "17.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Train Troyes - Reims pas cher - SNCF Connect",
+      "url": "https://www.sncf-connect.com/train/trajet/troyes/reims",
+      "snippet": "Découvrez comment acheter un billet de train pas cher de Troyes à Reims.Read more"
+    },
+    {
+      "title": "Horaires train Troyes-Reims - SNCF Connect",
+      "url": "https://www.sncf-connect.com/train/horaires/troyes/reims",
+      "snippet": "Consultez les horaires des trains entre Troyes et Reims, ainsi que tous les arrêts et changements nécessaires pour votre trajet !"
+    },
+    {
+      "title": "Troyes Reims – Comparer les trajets, la distance et les prix – Mappy",
+      "url": "https://fr.mappy.com/itineraire/troyes/reims",
+      "snippet": "Ne perdez plus votre temps à chercher votre billet pas cher ou votre trajet le plus rapide ou avec le moins de km, Mappy vous …"
+    },
+    {
+      "title": "Reims - Troyes : trajet, distance, durée et coûts – ViaMichelin",
+      "url": "https://www.viamichelin.fr/itineraires/resultats/reims-51100-marne-grand_est-france-to-troyes-10000-aube-grand_est-france",
+      "snippet": "ViaMichelin vous propose de calculer votre itinéraire Reims à Troyes en voiture ou en moto. Retrouvez la distance de Reims à …"
+    },
+    {
+      "title": "Troyes to Reims - 6 ways to travel via train, bus, car, and rideshare",
+      "url": "https://www.rome2rio.com/s/Troyes/Reims",
+      "snippet": "There are 6 ways to get from Troyes to Reims by bus, train (TGV), car, train, or rideshare Select an option below to see step-by-step …"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "agentionai/Qwen3.8-Flash-Next-Gyro-abliterated-Huihui-GGUF",
+  "slug": "agentionai-qwen3-8-flash-next-gyro-abliterated-huihui-gguf",
+  "author": "agentionai",
+  "url": "https://huggingface.co/agentionai/Qwen3.8-Flash-Next-Gyro-abliterated-Huihui-GGUF",
+  "created_at": "2026-10-01T22:41:25.000Z",
+  "updated_at": "2026-10-19T22:32:55.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3.8-flash-next",
+    "qwen4exp",
+    "abliterated",
+    "uncensored",
+    "experimental",
+    "agentionai",
+    "image-text-to-text",
+    "base_model:huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 16,
+  "downloads_30d": 28491,
+  "trending_score": 12,
+  "parameters": 176943899520,
+  "parameters_human": "176.94B",
+  "storage_bytes": 307204464320,
+  "storage_human": "307.2 GB",
+  "base_model": "huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fortnite Tracker - Fortnite Stats, Leaderboards, & More!",
+      "url": "https://fortnitetracker.com/",
+      "snippet": "Oct 6, 2026 · About our Fortnite Stats Welcome to Fortnite Tracker - Tracking Fortnite Stats and Leaderboards. Find top Fortnite …"
+    },
+    {
+      "title": "Fortnite Power Rankings Asia Leaderboards - Fortnite Tracker",
+      "url": "https://fortnitetracker.com/events/powerrankings?platform=Console&region=ASIA",
+      "snippet": "View our Fortnite Power Rankings Leaderboards to see how you compare. Filter players by platform, region or country."
+    },
+    {
+      "title": "Fortnite Events - Europe - Competitive Tournaments - Fortnite Tracker",
+      "url": "https://fortnitetracker.com/events?region=EU",
+      "snippet": "Oct 6, 2026 · Leaderboards, News, and Advanced Statistics for all Competitive Fortnite Tournaments."
+    },
+    {
+      "title": "Fortnite Events - Asia - Competitive Tournaments - Fortnite Tracker",
+      "url": "https://fortnitetracker.com/events?region=ASIA",
+      "snippet": "Oct 6, 2026 · Leaderboards, News, and Advanced Statistics for all Competitive Fortnite Tournaments. In 9 Hrs Asia Arenas Test Cup …"
+    },
+    {
+      "title": "Fortnite Ranked Reload (Build) Leaderboard - Fortnite Tracker",
+      "url": "https://fortnitetracker.com/ranked-leaderboard/reload",
+      "snippet": "View our Fortnite Reload (Build) Ranked leaderboards to see how you compare."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "tianhaoz95",
   "url": "https://huggingface.co/tianhaoz95/wee-hours-baby-activity",
   "created_at": "2026-10-19T01:40:19.000Z",
-  "updated_at": "2026-10-19T01:45:13.000Z",
+  "updated_at": "2026-10-19T15:42:33.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -25,12 +25,12 @@
     "feature-extraction"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": 421029889,
   "parameters_human": "421.0M",
-  "storage_bytes": 449397056,
-  "storage_human": "449 MB",
+  "storage_bytes": 3145779392,
+  "storage_human": "3.1 GB",
   "base_model": "convaiinnovations/laya",
   "formats": [
     "gguf"

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/eng-latn-100mb-100mb-nlpacked-wu1pct_seed3407",
+  "slug": "francesca9805-eng-latn-100mb-100mb-nlpacked-wu1pct_seed3407",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/eng-latn-100mb-100mb-nlpacked-wu1pct_seed3407",
+  "created_at": "2026-10-19T21:00:45.000Z",
+  "updated_at": "2026-10-20T01:13:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:goldfish-models/eng_latn_100mb",
+    "base_model:finetune:goldfish-models/eng_latn_100mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 6240407092,
+  "storage_human": "6.2 GB",
+  "base_model": "goldfish-models/eng_latn_100mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Les capacités de camouflage des pieuvres",
+      "url": "https://m.youtube.com/watch?v=4VaK9VjdL4A",
+      "snippet": "Feb 10, 2026 · Cette vidéo t'explique ce que les pieuvres sont capables de faire pour éviter ces prédateurs."
+    },
+    {
+      "title": "Pieuvre : les secrets d’un camouflage et d’une intelligence uniques",
+      "url": "https://obscura.fr/science/pieuvre-les-secrets-dun-camouflage-et-dune-intelligence-uniques/",
+      "snippet": "Apr 1, 2026 · Ce céphalopode possède une capacité de camouflage quasi instantanée grâce à des cellules spécialisées nommées …"
+    },
+    {
+      "title": "Camouflage, mémoire, stratégie : la pieuvre possède une intelligence ...",
+      "url": "https://blogs.futura-sciences.com/animaux/camouflage-memoire-strategie-la-pieuvre-possede-une-intelligence-qui-fascine-encore-les-scientifiques_24053/",
+      "snippet": "Oct 1, 2026 · Ce céphalopode dispose d’une capacité de camouflage presque instantanée grâce à des cellules spécialisées …"
+    },
+    {
+      "title": "Pieuvre : camouflage instantané et intelligence, ses ... - MSN",
+      "url": "https://www.msn.com/fr-fr/actualite/other/pieuvre-camouflage-instantan%C3%A9-et-intelligence-ses-superpouvoirs-fascinants/ar-AA1ZSDZ7",
+      "snippet": "La pieuvre (ou poulpe) possède une capacité de camouflage quasi instantanée, reposant sur des cellules spécialisées appelées …"
+    },
+    {
+      "title": "Pieuvres : comportements étonnants et défis actuels",
+      "url": "https://fr.infoanimales.net/poulpes/Intelligence-des-poulpes--adaptations-et-d%C3%A9fis-pour-leur-conservation/",
+      "snippet": "Aug 1, 2025 · Une autre capacité remarquable de la pieuvre est son camouflage avancé . Grâce à des cellules spécialisées …"
+    }
+  ]
+}

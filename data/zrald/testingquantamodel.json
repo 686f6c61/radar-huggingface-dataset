@@ -5,7 +5,7 @@
   "author": "Zrald",
   "url": "https://huggingface.co/Zrald/testingquantamodel",
   "created_at": "2026-10-18T02:16:10.000Z",
-  "updated_at": "2026-10-18T13:21:36.000Z",
+  "updated_at": "2026-10-19T16:00:56.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -23,12 +23,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 19,
+  "downloads_30d": 369,
   "trending_score": 0,
   "parameters": 354483968,
   "parameters_human": "354.5M",
-  "storage_bytes": 1461969088,
-  "storage_human": "1.5 GB",
+  "storage_bytes": 1638631328,
+  "storage_human": "1.6 GB",
   "base_model": null,
   "formats": [
     "gguf"

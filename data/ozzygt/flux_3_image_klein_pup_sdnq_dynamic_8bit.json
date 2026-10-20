@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "OzzyGT/Flux_3_Image_Klein_pup_sdnq_dynamic_8bit",
+  "slug": "ozzygt-flux_3_image_klein_pup_sdnq_dynamic_8bit",
+  "author": "OzzyGT",
+  "url": "https://huggingface.co/OzzyGT/Flux_3_Image_Klein_pup_sdnq_dynamic_8bit",
+  "created_at": "2026-10-19T20:16:03.000Z",
+  "updated_at": "2026-10-19T20:29:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "prompt-upsampling",
+    "flux",
+    "flux-3",
+    "sdnq",
+    "conversational",
+    "en",
+    "base_model:black-forest-labs/flux-3-image-klein-pup",
+    "base_model:quantized:black-forest-labs/flux-3-image-klein-pup",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9418887904,
+  "parameters_human": "9.42B",
+  "storage_bytes": 10468448773,
+  "storage_human": "10.5 GB",
+  "base_model": "black-forest-labs/flux-3-image-klein-pup",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OzzyGT/Flux_3_Image_Klein_sdnq_dynamic_8bit · Hugging Face",
+      "url": "https://huggingface.co/OzzyGT/Flux_3_Image_Klein_sdnq_dynamic_8bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "FLUX 3 Image Klein - GitHub",
+      "url": "https://github.com/black-forest-labs/flux-3-image-klein",
+      "snippet": "FLUX 3 Image Klein Model page • Weights • Demo This repository contains the reference inference code for FLUX 3 Image Klein, the 5.6B open weights image model from Black Forest Labs: text-to-image, editing with up to 10 reference images, and layout control with bounding boxes, through one model."
+    },
+    {
+      "title": "FLUX 3 Image Klein: Open weights image generation and editing | Black ...",
+      "url": "https://bfl.ai/models/flux-3-image-klein",
+      "snippet": "The open weights member of the FLUX 3 Image family: text-to-image, editing and multi-reference generation in a model you can run on your own hardware."
+    },
+    {
+      "title": "OzzyGT/Flux_3_Image_Klein_sdnq_dynamic_4bit · Hugging Face",
+      "url": "https://huggingface.co/OzzyGT/Flux_3_Image_Klein_sdnq_dynamic_4bit",
+      "snippet": "Instructions to use OzzyGT/Flux_3_Image_Klein_sdnq_dynamic_4bit with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "FLUX 3 Image Klein: open weights, 5.6B parameters",
+      "url": "https://bfl.ai/blog/flux-3-image-klein",
+      "snippet": "In internal evaluations, FLUX 3 Image Klein ranks first in text-to-image, multi-reference generation and image editing, ahead of larger open weights models. It also rates above the closed models in the comparison, Ideogram V4.5 and FLUX.2 [pro]. At 5.6B parameters, it is the smallest open model in the comparison, against 7B for Qwen-Image 2.1 and 12.9B for Krea 2. Compared with FLUX.2 [klein ..."
+    }
+  ]
+}

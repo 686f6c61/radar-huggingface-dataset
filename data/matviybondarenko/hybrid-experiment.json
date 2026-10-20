@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "matviybondarenko/hybrid-experiment",
+  "slug": "matviybondarenko-hybrid-experiment",
+  "author": "matviybondarenko",
+  "url": "https://huggingface.co/matviybondarenko/hybrid-experiment",
+  "created_at": "2026-10-19T20:23:04.000Z",
+  "updated_at": "2026-10-19T20:23:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hybrid",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Visual Search Tool | Bing Visual Search",
+      "url": "https://explore.microsoft.com/en-us/bing/visual-search",
+      "snippet": "Point your camera at any text to translate it, copy it, or search for what it means — quickly and accurately. Snap a photo of a math or …"
+    },
+    {
+      "title": "Search Images - Bing",
+      "url": "https://www.bing.com/camera",
+      "snippet": "Intelligent search from Bing makes it easier to quickly find what you’re looking for and rewards you."
+    },
+    {
+      "title": "Google Images",
+      "url": "https://images.google.com/",
+      "snippet": "Google Images. The most comprehensive image search on the web."
+    },
+    {
+      "title": "Outil de recherche visuelle gratuit | Bing Visual Search",
+      "url": "https://explore.microsoft.com/fr-fr/bing/visual-search",
+      "snippet": "Recherchez par image avec Bing Visual Search, un outil gratuit de recherche d’images inversée pour trouver des images similaires, …"
+    },
+    {
+      "title": "Reverse Image Search — Free Image Source Finder | Scanly",
+      "url": "https://scanly.co/reverse-image-search",
+      "snippet": "Free reverse image search — upload a photo and search it on Google Lens, TinEye, Yandex or Bing to find the image source, spot …"
+    }
+  ]
+}

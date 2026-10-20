@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "vprojectx/Lewis-44M-Bert-v2",
+  "slug": "vprojectx-lewis-44m-bert-v2",
+  "author": "vprojectx",
+  "url": "https://huggingface.co/vprojectx/Lewis-44M-Bert-v2",
+  "created_at": "2026-10-19T20:24:34.000Z",
+  "updated_at": "2026-10-19T21:13:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lewis_44m_bert",
+    "fill-mask",
+    "bert",
+    "encoder",
+    "masked-lm",
+    "rope",
+    "geglu",
+    "rmsnorm",
+    "pretrained-from-scratch",
+    "custom_code",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:wikimedia/wikipedia",
+    "dataset:manu/project_gutenberg",
+    "dataset:HuggingFaceTB/cosmopedia",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 43845680,
+  "parameters_human": "43.8M",
+  "storage_bytes": 175395704,
+  "storage_human": "175 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vprojectx/Lewis-44M-Bert · Hugging Face",
+      "url": "https://huggingface.co/vprojectx/Lewis-44M-Bert",
+      "snippet": "Lewis-44M-Bert is a compact (43.8M parameter) English encoder pretrained from scratch with masked language modeling on ~2B tokens (1B unique tokens, 2 epochs) of curated multi-domain text."
+    },
+    {
+      "title": "vprojectx (Vprojectx) - Hugging Face",
+      "url": "https://huggingface.co/vprojectx",
+      "snippet": "vprojectx (Vprojectx) - Hugging Face ... AIML"
+    },
+    {
+      "title": "Lewis 44m Bert - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/vprojectx/lewis-44m-bert",
+      "snippet": "Registry entry for model Lewis 44m Bert; source metadata pending."
+    },
+    {
+      "title": "Releases · fishaudio/Bert-VITS2 - GitHub",
+      "url": "https://github.com/fishaudio/Bert-VITS2/releases",
+      "snippet": "vits2 backbone with multilingual-bert. Contribute to fishaudio/Bert-VITS2 development by creating an account on GitHub."
+    },
+    {
+      "title": "transformers/src/transformers/models/bert/modeling_bert.py at main ...",
+      "url": "https://github.com/huggingface/transformers/blob/main/src/transformers/models/bert/modeling_bert.py",
+      "snippet": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. - transformers/src/transformers/models/bert/modeling_bert.py at main · huggingface/transformers"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "hewittlab/monitor_cot_for_hack-baseline-coding-explicit_intent-gpt-oss-120b",
+  "slug": "hewittlab-monitor_cot_for_hack-baseline-coding-explicit_intent-gpt-oss-120b",
+  "author": "hewittlab",
+  "url": "https://huggingface.co/hewittlab/monitor_cot_for_hack-baseline-coding-explicit_intent-gpt-oss-120b",
+  "created_at": "2026-10-15T17:31:29.000Z",
+  "updated_at": "2026-10-20T00:19:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tinker",
+    "lora",
+    "reward-hacking",
+    "chain-of-thought",
+    "monitorability",
+    "dataset:hewittlab/monitor_cot_for_hack-coding",
+    "base_model:openai/gpt-oss-120b",
+    "base_model:adapter:openai/gpt-oss-120b",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 315457516620,
+  "storage_human": "315.5 GB",
+  "base_model": "openai/gpt-oss-120b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

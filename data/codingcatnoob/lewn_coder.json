@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "CodingCatNoob/Lewn_Coder",
+  "slug": "codingcatnoob-lewn_coder",
+  "author": "CodingCatNoob",
+  "url": "https://huggingface.co/CodingCatNoob/Lewn_Coder",
+  "created_at": "2026-10-19T20:25:38.000Z",
+  "updated_at": "2026-10-19T20:25:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Free AI Models & APIs (2026) | LM Market Cap",
+      "url": "https://lmmarketcap.com/free-ai-models",
+      "snippet": "Every free AI model ranked by quality: free LLMs, coding assistants, and image generators. No API costs, open-source, and ready to use. Start for free."
+    },
+    {
+      "title": "Best AI for Coding 2026 - Top Coding Models - llm-stats.com",
+      "url": "https://llm-stats.com/leaderboards/best-ai-for-coding",
+      "snippet": "Compare the best AI for coding using live coding arena results, benchmark performance, and real generation examples for code generation, debugging, and software engineering."
+    },
+    {
+      "title": "[2510.18779] KAT-Coder Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2510.18779",
+      "snippet": "Recent advances in large language models (LLMs) have enabled progress in agentic coding, where models autonomously reason, plan, and act within interactive software development workflows. However, bridging the gap between static text-based training and dynamic real-world agentic execution remains a core challenge. In this technical report, we present KAT-Coder, a large-scale agentic code model ..."
+    },
+    {
+      "title": "AI Coding Models - AI Coding Daily",
+      "url": "https://aicodingdaily.com/models",
+      "snippet": "Every AI coding model we track, grouped by the company that builds it, with leaderboard placements for the ones benchmarked so far."
+    },
+    {
+      "title": "Free AI for Coding - No Sign Up | Rewind.ai",
+      "url": "https://rewind.ai/free-ai-for-coding/",
+      "snippet": "Free AI for coding. Write code in your browser, then have it explained or debugged. No sign up, no credit card."
+    }
+  ]
+}

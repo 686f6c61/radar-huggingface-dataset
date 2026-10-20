@@ -5,7 +5,7 @@
   "author": "francesca9805",
   "url": "https://huggingface.co/francesca9805/urd-arab-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed3407",
   "created_at": "2026-10-09T22:24:12.000Z",
-  "updated_at": "2026-10-10T00:51:20.000Z",
+  "updated_at": "2026-10-19T18:56:31.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -19,8 +19,8 @@
     "generated_from_trainer",
     "sft",
     "trl",
-    "base_model:francesca9805/urd-arab-100mb-ppt-mp-struct-core-100mb_seed10",
-    "base_model:finetune:francesca9805/urd-arab-100mb-ppt-mp-struct-core-100mb_seed10",
+    "base_model:francesca9805/urd-arab-100mb-ppt-mp-struct-core-100mb_seed3407",
+    "base_model:finetune:francesca9805/urd-arab-100mb-ppt-mp-struct-core-100mb_seed3407",
     "text-generation-inference",
     "endpoints_compatible",
     "region:us"
@@ -30,9 +30,9 @@
   "trending_score": 0,
   "parameters": 124770816,
   "parameters_human": "124.8M",
-  "storage_bytes": 5990962231,
-  "storage_human": "6.0 GB",
-  "base_model": "francesca9805/urd-arab-100mb-ppt-mp-struct-core-100mb_seed10",
+  "storage_bytes": 12978614044,
+  "storage_human": "13.0 GB",
+  "base_model": "francesca9805/urd-arab-100mb-ppt-mp-struct-core-100mb_seed3407",
   "formats": [
     "safetensors"
   ],

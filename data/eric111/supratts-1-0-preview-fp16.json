@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Eric111/SupraTTS-1.0-Preview-FP16",
+  "slug": "eric111-supratts-1-0-preview-fp16",
+  "author": "Eric111",
+  "url": "https://huggingface.co/Eric111/SupraTTS-1.0-Preview-FP16",
+  "created_at": "2026-10-19T21:59:13.000Z",
+  "updated_at": "2026-10-19T22:12:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "supratts",
+    "tts",
+    "text-to-speech",
+    "speech",
+    "speech-synthesis",
+    "tiny",
+    "tiny-model",
+    "low-resource",
+    "distillation",
+    "english",
+    "cpu",
+    "real-time",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1031754,
+  "parameters_human": "1.0M",
+  "storage_bytes": 18938481,
+  "storage_human": "19 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Eleven Labs - 知乎",
+      "url": "https://www.zhihu.com/topic/27950256",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "利兹大学高性能图像与游戏专业如何?女生读好吗? - 知乎",
+      "url": "https://www.zhihu.com/question/428904400",
+      "snippet": "该专业是与一个著名的指导小组合作开发的（- Barog Game Labs- Double Eleven- Epic Games - NVIDIA- Team 17- Sumo Digital- …"
+    },
+    {
+      "title": "如何看待Eleven老师之前冒充微软mvp，现在又获得微软mvp的现象？",
+      "url": "https://www.zhihu.com/question/403456454",
+      "snippet": "如何看待Eleven老师之前冒充微软mvp，现在又获得微软mvp的现象？ 由于之前调查某人涉嫌搞培训骗局，骗取学员学费，对.net培训 …"
+    },
+    {
+      "title": "怎样把PDF 里的文件其中一页单独拿出来另存为一个文件？",
+      "url": "https://www.zhihu.com/question/26052418",
+      "snippet": "说一个很简单的办法，用wps打开文件后，点击打印，在打印机选择那一栏找到“导出为WPS PDF”，"
+    },
+    {
+      "title": "有哪些美国 App Store 有而大陆没有的 iOS 应用值得推荐？",
+      "url": "https://www.zhihu.com/question/23566591/answers/updated",
+      "snippet": "9）SkyView®（Terminal Eleven LLC） 天文观测/星空 AR 指引类，适合观星、科普、亲子夜观活动。 10）TonalEnergy Tuner & …"
+    }
+  ]
+}

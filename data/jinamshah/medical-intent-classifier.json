@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Jinamshah/medical-intent-classifier",
+  "slug": "jinamshah-medical-intent-classifier",
+  "author": "Jinamshah",
+  "url": "https://huggingface.co/Jinamshah/medical-intent-classifier",
+  "created_at": "2026-10-19T23:36:58.000Z",
+  "updated_at": "2026-10-19T23:37:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "intent-classification",
+    "healthcare",
+    "bilstm",
+    "chatbot",
+    "text-classification",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 130764898,
+  "storage_human": "131 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.fr/",
+      "snippet": "Encore plus » Account Options. Connexion; Paramètres de recherche"
+    },
+    {
+      "title": "Google Chrome – Download the fast, secure browser from Google",
+      "url": "https://www.google.fr/intl/en_uk/chrome/",
+      "snippet": "Get more done with the new Google Chrome. A more simple, secure and faster web browser than ever, with Google’s smarts built in. …"
+    },
+    {
+      "title": "Trouvez et réservez des vols pas chers – Google Flights",
+      "url": "https://www.google.fr/travel/",
+      "snippet": "Trouvez des vols pas chers vers n'importe quelle destination avec Google Flights. Suivez les prix pour profiter des meilleures offres …"
+    },
+    {
+      "title": "Google Trends",
+      "url": "https://trends.google.fr/trends/",
+      "snippet": "Créé avec Trends Découvrez comment Google Trends est utilisé dans le monde entier par les rédactions, les associations …"
+    },
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.fr/details",
+      "snippet": "Traduisez des textes instantanément avec Google Translate."
+    }
+  ]
+}

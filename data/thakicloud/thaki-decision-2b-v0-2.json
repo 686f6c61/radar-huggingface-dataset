@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "ThakiCloud/Thaki-Decision-2B-v0.2",
+  "slug": "thakicloud-thaki-decision-2b-v0-2",
+  "author": "ThakiCloud",
+  "url": "https://huggingface.co/ThakiCloud/Thaki-Decision-2B-v0.2",
+  "created_at": "2026-10-20T00:15:51.000Z",
+  "updated_at": "2026-10-20T00:17:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "agent",
+    "decision",
+    "tool-use",
+    "policy",
+    "enterprise",
+    "korean",
+    "conversational",
+    "ko",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1881825088,
+  "parameters_human": "1.88B",
+  "storage_bytes": 3783681639,
+  "storage_human": "3.8 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VScode怎么ctrl+P搜不到文件呢？ - 知乎",
+      "url": "https://www.zhihu.com/question/477614549",
+      "snippet": "vscode 有时全局搜索内容明显不对，或者明明有这个文件 ，Ctrl+P却搜索不到，可能是搜索时使用了.ignore文件 导致忽略了其中的内 …Read more"
+    },
+    {
+      "title": "每次开机Microsoft Visual C++Runtime Library报错如何解决？",
+      "url": "https://www.zhihu.com/question/550931503",
+      "snippet": "每次开机Microsoft Visual C++Runtime Library报错如何解决？ win10笔记本，每次开机都显示Microsoft Visual C++Runtime Library报 …"
+    },
+    {
+      "title": "vscode怎么设置可以搜索包含node_modules中的文件? - 知乎",
+      "url": "https://www.zhihu.com/question/309220217",
+      "snippet": "vscode怎么设置可以搜索包含node_modules中的文件? Node.js WebStorm Visual Studio Code NPM (Network Performance …"
+    },
+    {
+      "title": "VSCode有在search中files to include里定制要搜索的 ... - 知乎",
+      "url": "https://www.zhihu.com/question/653250829",
+      "snippet": "VSCode有在search中files to include里定制要搜索的文件类型的插件吗？ 我想在files to include里自定义一些文件类型，比如我作为 …"
+    },
+    {
+      "title": "做图像检索，图像库从哪儿能下载到？ - 知乎",
+      "url": "https://www.zhihu.com/question/25039851",
+      "snippet": "Stanford Mobile Visual Search， Stanford Mobile Visual Search Dataset，2011.2，stanford提供，包括8种场景，如CD封面、油画 …"
+    }
+  ]
+}

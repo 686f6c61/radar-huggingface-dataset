@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "LucasBRT/smart-commit-1.5b-v0.1",
+  "slug": "lucasbrt-smart-commit-1-5b-v0-1",
+  "author": "LucasBRT",
+  "url": "https://huggingface.co/LucasBRT/smart-commit-1.5b-v0.1",
+  "created_at": "2026-10-19T19:58:54.000Z",
+  "updated_at": "2026-10-19T20:03:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen2",
+    "git",
+    "commit-message",
+    "conventional-commits",
+    "lora",
+    "smart-commit",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:JetBrains-Research/commit-chronicle",
+    "base_model:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 4084937228,
+  "storage_human": "4.1 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Transgirl Own Jizm Taste Compilation Part two · Missified",
+      "url": "https://missified.com/keek-63478/transgirl-own-jizm-taste-compilation-part-two/",
+      "snippet": "Oct 10, 2026 · Transgirl Own Jizm Taste Compilation Part two: a curated scene. It runs 34:51. The focus stays on shemale and trans. …"
+    },
+    {
+      "title": "Transgirl Own Jizm Taste Compilation Part two - Keek Ass",
+      "url": "https://www.keekass.com/videos/63478/transgirl-own-jizm-taste-compilation-part-two/",
+      "snippet": "EXCLUSIVE KEEKASS OFFER - JOIN TRANS ANGELS ONLY 1$ TODAY !"
+    },
+    {
+      "title": "Shemale Own Cum Taste Compilation 2 - EroProfile",
+      "url": "https://www.eroprofile.com/m/videos/view/Shemale-Own-Cum-Taste-Compilation-2?lang=en",
+      "snippet": "Jan 12, 2024 · Cams!"
+    },
+    {
+      "title": "mia isabella clips · Missified",
+      "url": "https://missified.com/category/mia-isabella/",
+      "snippet": "Curated mia isabella clips on Missified. Hand-picked, fast-loading, organized by kink."
+    },
+    {
+      "title": "TASTE OWN @ Tranny Clips - Free Shemale Porn",
+      "url": "https://trannyclips.com/taste-own-videos",
+      "snippet": "The hottest free SHEMALE TASTE OWN porn videos. The hottest video: Exploring the taste of a shemale princesss own cum. And …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "nvidia",
   "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr",
   "created_at": "2026-10-12T14:42:40.000Z",
-  "updated_at": "2026-10-16T16:04:20.000Z",
+  "updated_at": "2026-10-19T15:15:37.000Z",
   "license": "openmdw-1.1",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

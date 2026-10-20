@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "TheSauceman/microduck-roller-sprint-2m-skate4",
+  "slug": "thesauceman-microduck-roller-sprint-2m-skate4",
+  "author": "TheSauceman",
+  "url": "https://huggingface.co/TheSauceman/microduck-roller-sprint-2m-skate4",
+  "created_at": "2026-10-19T20:41:25.000Z",
+  "updated_at": "2026-10-19T20:41:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5649538,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TheSauceman/microduck-roller-sprint-2m-run-1013-2341 · Hugging Face",
+      "url": "https://huggingface.co/TheSauceman/microduck-roller-sprint-2m-run-1013-2341",
+      "snippet": "roller-sprint-2m-run-1013-2341 Initial training with default parameters. A perpetual policy for the microduck (61-D observation, 14 actions, 50 Hz, on rollers). Runs until told otherwise — a gait, loaded into a policy slot."
+    },
+    {
+      "title": "TheSauceman (Stephen E. Tarter) - Hugging Face",
+      "url": "https://huggingface.co/TheSauceman/models",
+      "snippet": "TheSauceman/microduck-sprint-2m-run-1013-1513 Robotics •Updated about 6 hours ago"
+    },
+    {
+      "title": "microduck-challenges/src/microduck_challenges/roller_sprint_2m ... - GitHub",
+      "url": "https://github.com/pollen-robotics/microduck-challenges/blob/main/src/microduck_challenges/roller_sprint_2m/challenge.toml",
+      "snippet": "23 lines (20 loc) · 558 Bytes main microduck-challenges / src / microduck_challenges / roller_sprint_2m / challenge.toml Code Blame 23 lines (20 loc) · 558 Bytes Raw 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 # The 2 m Roller Sprint: skate a flat 2 m lane on roller blades as fast as"
+    },
+    {
+      "title": "microduck-arena/docs/guides/challenges/roller-sprint-2m.md at main ...",
+      "url": "https://github.com/pollen-robotics/microduck-arena/blob/main/docs/guides/challenges/roller-sprint-2m.md",
+      "snippet": "Scoring The Arena scans forward commands from 0.30 to 2.00 m/s in 0.10 steps. It tests three shortlisted speeds over five starts and keeps the best average. Each fall or timeout counts as 40 seconds. Aim for five finishes before chasing a faster time."
+    },
+    {
+      "title": "Microduck - A tiny biped robot you can teach new tricks | Pollen Robotics",
+      "url": "https://pollen-robotics.com/microduck/",
+      "snippet": "Microduck is a 25 cm biped robot with 15 motors, a camera, LiDAR and a grasping beak. Playable out of the box, and its open-source stack lets you train new behaviours in simulation and run them on the robot. Pre-order at $399."
+    }
+  ]
+}

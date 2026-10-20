@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "itsmechico/chatterbox-multilingual-pt-br-coreml-ane",
+  "slug": "itsmechico-chatterbox-multilingual-pt-br-coreml-ane",
+  "author": "itsmechico",
+  "url": "https://huggingface.co/itsmechico/chatterbox-multilingual-pt-br-coreml-ane",
+  "created_at": "2026-10-19T23:36:59.000Z",
+  "updated_at": "2026-10-19T23:37:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "coreml",
+  "languages": [
+    "pt",
+    "en"
+  ],
+  "tags": [
+    "coreml",
+    "apple-neural-engine",
+    "ios",
+    "tts",
+    "text-to-speech",
+    "pt",
+    "en",
+    "base_model:ResembleAI/Chatterbox-Multilingual-pt-br",
+    "base_model:quantized:ResembleAI/Chatterbox-Multilingual-pt-br",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 636214484,
+  "storage_human": "636 MB",
+  "base_model": "ResembleAI/Chatterbox-Multilingual-pt-br, ResembleAI/chatterbox",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Meta for Business (formerly Facebook for Business)",
+      "url": "https://fr-fr.facebook.com/latest/home%E2%80%A6/",
+      "snippet": "• Save time by accessing everything you need to manage your business across Facebook, Instagram and Messenger all in one …"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://fr-fr.facebook.com/helpkey.eu/videos/",
+      "snippet": "Facebook ... Facebook"
+    },
+    {
+      "title": "Contacter le vendeur ou Facebook pour obtenir de l’aide concernant ...",
+      "url": "https://fr-fr.facebook.com/help/mobile-touch/1389628064610023/",
+      "snippet": "Si vous rencontrez un problème à propos d’un achat réalisé avec l’option de paiement sur Facebook Marketplace, essayez de …"
+    },
+    {
+      "title": "Free Stuff near Gouville-Sur-Mer, Basse-Normandie - Facebook",
+      "url": "https://fr-fr.facebook.com/marketplace/103336299708654/free/",
+      "snippet": "Find stuff for free in Gouville-Sur-Mer, Basse-Normandie, France on Facebook Marketplace. Free furniture, electronics, and more …"
+    },
+    {
+      "title": "Articles pour la maison en vente à Perth | Facebook Marketplace",
+      "url": "https://fr-fr.facebook.com/marketplace/perth/home/",
+      "snippet": "Articles neufs et d’occasion dans la catégorie Articles pour la maison en vente à Perth sur Facebook Marketplace. Trouvez des bons …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ganiesen/Luna-CT_scanes-weights",
+  "slug": "ganiesen-luna-ct_scanes-weights",
+  "author": "ganiesen",
+  "url": "https://huggingface.co/ganiesen/Luna-CT_scanes-weights",
+  "created_at": "2026-10-19T21:28:42.000Z",
+  "updated_at": "2026-10-19T21:29:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-segmentation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "medical-imaging",
+    "ct",
+    "lung-nodule",
+    "segmentation",
+    "unet",
+    "lidc-idri",
+    "luna16",
+    "image-segmentation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1388936624,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hairy Indian Porn (59,371) @ Porzo.com",
+      "url": "https://www.porzo.com/category/hairy-indian",
+      "snippet": "Check out the latest Hairy Indian videos at Porzo.com. Updated continuously and over 1000 categories.Read more"
+    },
+    {
+      "title": "LibertyCity // GTA 6 news, cheats for GTA 5 and GTA San Andreas ...",
+      "url": "https://libertycity.net/gou/",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/r/HairySkinnyGirls/",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "An Open Letter to Hairy Indians - Asian Woman Festival",
+      "url": "https://www.asianwomanfestival.com/post/an-open-letter-to-hairy-indians",
+      "snippet": "Nov 30, 2019 · One specific moment that is seared into my memory, and may perhaps have been the start of my self- deprecation, is …"
+    },
+    {
+      "title": "Jolly Joker",
+      "url": "https://uyelik.jollyjoker.com.tr/giris-yap",
+      "snippet": "Sevdiğiniz sanatçıların en keyifli sahne performansları Jolly Joker’de!"
+    }
+  ]
+}

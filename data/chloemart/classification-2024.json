@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Chloemart/classification-2024",
+  "slug": "chloemart-classification-2024",
+  "author": "Chloemart",
+  "url": "https://huggingface.co/Chloemart/classification-2024",
+  "created_at": "2026-10-19T21:45:55.000Z",
+  "updated_at": "2026-10-19T21:46:00.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "efficientformer",
+    "pytorch",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Machine à coudre - Achat en ligne - Darty",
+      "url": "https://www.darty.com/nav/achat/petit_electromenager/repassage-couture_entretien/machine_coudre/index.html?msockid=04eb4ffc0a4a6f942c6d580b0b9e6eb7",
+      "snippet": "Que vous soyez débutant ou confirmé, vous trouverez la machine qui vous correspond. Des modèles les plus simples aux versions …"
+    },
+    {
+      "title": "Machine à coudre - Retrait 30min* | Boulanger",
+      "url": "https://www.boulanger.com/c/machine-a-coudre?msockid=04eb4ffc0a4a6f942c6d580b0b9e6eb7",
+      "snippet": "La machine à coudre est l'alliée incontournable à avoir chez soi. Essentielle pour travailler de manière régulière et avec une …"
+    },
+    {
+      "title": "Comment choisir sa machine à coudre - UFC-Que Choisir",
+      "url": "https://www.quechoisir.org/guide-d-achat-machine-a-coudre-n22061/",
+      "snippet": "Pour bien choisir sa machine à coudre, il est important de prendre en compte ses désirs créatifs et le temps que l’on souhaite y …"
+    },
+    {
+      "title": "Comparatif Machine à coudre » les 22 meilleurs en 2026",
+      "url": "https://www.meilleurs.fr/machine-a-coudre/",
+      "snippet": "2 days ago · Nous avons le choix entre plusieurs types de machines à coudre. Chaque modèle est conçu pour des usages …"
+    },
+    {
+      "title": "Machines à Coudre",
+      "url": "https://coudreetbroder.com/machines-coudre/",
+      "snippet": "Achetez votre machine à coudre chez CoudreetBroder.com, spécialiste couture depuis 2003. Livraison offerte en express 24/48h, …"
+    }
+  ]
+}

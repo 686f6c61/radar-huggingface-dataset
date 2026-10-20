@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "junhokim985/webarcheology-mcp",
+  "slug": "junhokim985-webarcheology-mcp",
+  "author": "junhokim985",
+  "url": "https://huggingface.co/junhokim985/webarcheology-mcp",
+  "created_at": "2026-10-19T20:34:01.000Z",
+  "updated_at": "2026-10-19T20:55:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Agentic AI and Model Context Protocol (MCP): Architecture Guide 2026",
+      "url": "https://neuralcoretech.com/agentic-ai-model-context-protocol-mcp-architecture-2026/",
+      "snippet": "Agentic AI and Model Context Protocol (MCP): Architecture Guide 2026 How the Model Context Protocol (MCP) is becoming the universal infrastructure layer for agentic AI—unlocking autonomous workflows, multi-agent systems, and real-world tool integration at scale."
+    },
+    {
+      "title": "Model Context Protocol (MCP) Architecture - Building Standardized ...",
+      "url": "https://www.kunal-chowdhury.com/2026/09/model-context-protocol-mcp-architecture.html",
+      "snippet": "The Model Context Protocol (MCP) is an open-source standard introduced by Anthropic that standardizes how AI applications, agents, and IDEs discover and securely interact with external data sources, developer tools, and prompt workflows."
+    },
+    {
+      "title": "Model Context Protocol Deep Dive: How MCP Became the AI Agent Standard ...",
+      "url": "https://ailearningguides.com/model-context-protocol-deep-dive-2026/",
+      "snippet": "A 13,000-word deep dive into the Model Context Protocol (MCP): architecture, hands-on tutorials, security, observability, debugging, and migration playbooks for builders."
+    },
+    {
+      "title": "Model Context Protocol - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Model_Context_Protocol",
+      "snippet": "The Model Context Protocol (MCP) is an open standard and open-source framework introduced by Anthropic in November 2024 to standardize the way artificial intelligence (AI) systems like large language models (LLMs) integrate and share data with external tools, systems, and data sources. [1]"
+    },
+    {
+      "title": "MCP-B · GitHub",
+      "url": "https://github.com/WebMCP-org/",
+      "snippet": "MCP-B bridges the gap between WebMCP and the Model Context Protocol (MCP), serving two critical functions: API Implementation — Provides a polyfill that implements the document.modelContext interface for browsers lacking native support Protocol Translation — Converts between WebMCP&#x27;s web-native format and the MCP protocol, enabling cross-compatibility MCP-B creates interoperability by ..."
+    }
+  ]
+}

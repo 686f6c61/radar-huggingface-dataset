@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Ry682/qvex-q4",
+  "slug": "ry682-qvex-q4",
+  "author": "Ry682",
+  "url": "https://huggingface.co/Ry682/qvex-q4",
+  "created_at": "2026-10-19T20:28:05.000Z",
+  "updated_at": "2026-10-19T20:29:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "quantized",
+    "qwen",
+    "apple-silicon",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:quantized:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 5058151884,
+  "storage_human": "5.1 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ry682 · GitHub",
+      "url": "https://github.com/Ry682/",
+      "snippet": "\"You wouldn&#x27;t get it\" ⚡. Ry682 has 7 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "AI Model Directory - 5873 Models with Benchmarks & Hardware ... - q4km.ai",
+      "url": "https://q4km.ai/models/",
+      "snippet": "Browse 5873 AI models with technical overviews, benchmarks, hardware requirements, and use cases. Filter by pipeline type, author, and license."
+    },
+    {
+      "title": "ModelVault — The Open AI Model Directory & Benchmark Matrix",
+      "url": "https://www.modelvault.space/",
+      "snippet": "Discover, compare, and benchmark 11,000+ cloud and local AI models. Filter by modalities, context windows, pricing, providers, and performance benchmarks."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches across OpenAI, Anthropic, Google DeepMind, SpaceXAI, DeepSeek, Qwen, Moonshot AI, Meta, Mistral AI, MiniMax, and other important AI labs. You can use the newest-first tables to find the release date, provider, release stage, and model type."
+    },
+    {
+      "title": "Best Open Source AI Models 2026: DeepSeek, Llama 4 & More",
+      "url": "https://neuralwired.com/2026/05/29/best-open-source-ai-models-2026/",
+      "snippet": "The definitive ranked list of open source AI models in 2026. GLM-5, Kimi K2.6, DeepSeek V4, Llama 4, Qwen 3.5, Gemma 4 — benchmarks, licenses, and how to run each locally."
+    }
+  ]
+}

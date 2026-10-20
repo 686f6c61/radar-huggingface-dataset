@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "SDAXZ12E/MyAwesomeModel-best",
+  "slug": "sdaxz12e-myawesomemodel-best",
+  "author": "SDAXZ12E",
+  "url": "https://huggingface.co/SDAXZ12E/MyAwesomeModel-best",
+  "created_at": "2026-10-19T21:40:56.000Z",
+  "updated_at": "2026-10-19T21:41:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cinémas Pathé : films, sortie cinéma à Paris et en France",
+      "url": "https://www.pathe.fr/",
+      "snippet": "Tous les films à l'affiche dans les cinémas Pathé. Vivez la meilleure expérience cinéma possible avant, pendant et après la séance."
+    },
+    {
+      "title": "Cinéma à Marseille : salles de cinéma Pathé, films à l'affiche",
+      "url": "https://www.pathe.fr/cinemas/ville/marseille",
+      "snippet": "Vous pouvez aller au Pathé La Joliette situé dans le quartier des Docks, ou au Pathé Plan de Campagne, accessible au nord de …"
+    },
+    {
+      "title": "Pathé",
+      "url": "https://www.pathe.com/fr/",
+      "snippet": "Fondation Jérôme Seydoux-Pathé Un bâtiment d’une grande richesse architecturale et patrimoniale abrite les plus belles collections …"
+    },
+    {
+      "title": "Pathé",
+      "url": "https://c.pathe.fr/fr",
+      "snippet": "Découvrez les films à l'affiche et vivez une expérience cinématographique unique avec Pathé."
+    },
+    {
+      "title": "Pathé - Nos cinémas",
+      "url": "https://www.pathe.com/fr/cinemas/",
+      "snippet": "Créateur de cinéma d’émotions, Pathé s’efforce d’entretenir la magie du cinéma tout autour du monde, grâce à des collaborations …"
+    }
+  ]
+}

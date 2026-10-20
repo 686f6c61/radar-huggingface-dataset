@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "RealHilal/apna-125m-checkpoints",
+  "slug": "realhilal-apna-125m-checkpoints",
+  "author": "RealHilal",
+  "url": "https://huggingface.co/RealHilal/apna-125m-checkpoints",
+  "created_at": "2026-10-17T04:43:26.000Z",
+  "updated_at": "2026-10-20T02:34:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 232930204212,
+  "storage_human": "232.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Maika Monroe - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Maika_Monroe",
+      "snippet": "She had her breakthrough role in the indie horror It Follows (2014). She has featured in several other horror films, such as The Guest …Read more"
+    },
+    {
+      "title": "Maika Monroe - IMDb",
+      "url": "https://www.imdb.com/name/nm2140860/",
+      "snippet": "Maika Monroe. Actress: It Follows. Santa Barbara-born Maika Monroe's initial desire was to pursue a career in professional freestyle …"
+    },
+    {
+      "title": "Maika Monroe — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Maika_Monroe",
+      "snippet": "Dillon Monroe Buckley, dite Maika Monroe, née le 29 mai 1993 à Santa Barbara, en Californie (États-Unis), est une actrice et …"
+    },
+    {
+      "title": "Maika Dillon Monroe (@maikamonroe) • Instagram photos and videos",
+      "url": "https://www.instagram.com/maikamonroe/",
+      "snippet": "328K Followers, 1,292 Following, 1,206 Posts - Maika Dillon Monroe (@maikamonroe) on Instagram: \"\""
+    },
+    {
+      "title": "Maika Monroe - Biography - IMDb",
+      "url": "https://www.imdb.com/name/nm2140860/bio/",
+      "snippet": "Maika Monroe. Actress: It Follows. Santa Barbara-born Maika Monroe's initial desire was to pursue a career in professional freestyle …"
+    }
+  ]
+}

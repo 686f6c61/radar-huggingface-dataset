@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/augmented-aa893fd3fa740dc4",
+  "slug": "gradients-io-tournaments-augmented-aa893fd3fa740dc4",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/augmented-aa893fd3fa740dc4",
+  "created_at": "2026-10-19T17:48:25.000Z",
+  "updated_at": "2026-10-19T17:49:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766577,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ماماسایت | مرکز تخصصی مامایی و مشاوره بهداشت جنسی",
+      "url": "https://www.mamasite.ir/",
+      "snippet": "اعظم خیابانی - کارشناس ارشد مامایی و سکس تراپیست با بیش از ۱۷ سال تجربه. رزرو نوبت آنلاین و حضوری."
+    },
+    {
+      "title": "سن:34 وضعیت تاهل:متاهل تعداد فرزند:۱ پرسش: سلام خانوم خیابانی نازنین ...",
+      "url": "https://www.mamasite.ir/questions/%D8%B3%D9%8634-%D9%88%D8%B6%D8%B9%DB%8C%D8%AA-%D8%AA%D8%A7%D9%87%D9%84%D9%85%D8%AA%D8%A7%D9%87%D9%84-%D8%AA%D8%B9%D8%AF%D8%A7%D8%AF-%D9%81%D8%B1%D8%B2%D9%86%D8%AF%DB%B1-%D9%BE%D8%B1%D8%B3%D8%B4/",
+      "snippet": "سوال: سن:34 وضعیت تاهل:متاهل تعداد فرزند:۱ پرسش: سلام خانوم خیابانی نازنین سوال من درباره ختنه ست، من پسر بیست ماهه ای دارم که بنا به توصیه ی پزشک متخصص اطفال و پزشک جراح …"
+    },
+    {
+      "title": "خدمات درمانی | ماماسایت",
+      "url": "https://mamasite.ir/services/",
+      "snippet": "واژینیسموس یک اختلال قابل درمان است. با پروتکل تخصصی ترکیبی، بیش از ۳,۵۰۰ نفر درمان شده‌اند."
+    },
+    {
+      "title": "درباره ما - پایگاه اینترنتی ماماسایت",
+      "url": "https://www.mamasite.ir/about-us/",
+      "snippet": "صفحه نخست / درباره ما درباره من افتخارات نمونه‌کارها"
+    },
+    {
+      "title": "علل ناباروری در زنان - ناباروری زنان - پایگاه اینترنتی ماماسایت",
+      "url": "https://www.mamasite.ir/%D8%B9%D9%84%D9%84-%D9%86%D8%A7%D8%A8%D8%A7%D8%B1%D9%88%D8%B1%DB%8C-%D8%AF%D8%B1-%D8%B2%D9%86%D8%A7%D9%86-%D9%86%D8%A7%D8%A8%D8%A7%D8%B1%D9%88%D8%B1%DB%8C-%D8%B2%D9%86%D8%A7%D9%86/",
+      "snippet": "علل ناباروری در زنان 1) اختلالات تخمک گذاری (تنبلی تخمدان: عامل ناباروری زنان) حدود 35 درصد خانمهای نابارور با این مساله مواجه هستند .لازمه ی باردار شدن ، داشتن تخمک سالم می باشد. …"
+    }
+  ]
+}
