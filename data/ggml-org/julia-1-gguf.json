@@ -5,7 +5,7 @@
   "author": "ggml-org",
   "url": "https://huggingface.co/ggml-org/Julia-1-GGUF",
   "created_at": "2026-10-01T21:31:04.000Z",
-  "updated_at": "2026-10-01T21:31:06.000Z",
+  "updated_at": "2026-10-19T14:14:31.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -24,7 +24,7 @@
     "feature-extraction"
   ],
   "likes": 20,
-  "downloads_30d": 9293,
+  "downloads_30d": 9556,
   "trending_score": 10,
   "parameters": 144192769,
   "parameters_human": "144.2M",

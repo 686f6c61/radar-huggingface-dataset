@@ -5,7 +5,7 @@
   "author": "blaj",
   "url": "https://huggingface.co/blaj/Qwen2.5-VL-7B-Instruct-abliterated-int4-ov",
   "created_at": "2026-09-27T19:56:09.000Z",
-  "updated_at": "2026-09-27T20:10:49.000Z",
+  "updated_at": "2026-10-19T14:39:01.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 34,
+  "downloads_30d": 35,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

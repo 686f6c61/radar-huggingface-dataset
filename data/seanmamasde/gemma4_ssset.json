@@ -5,7 +5,7 @@
   "author": "seanmamasde",
   "url": "https://huggingface.co/seanmamasde/gemma4_ssset",
   "created_at": "2026-10-05T06:33:39.000Z",
-  "updated_at": "2026-10-16T05:57:04.000Z",
+  "updated_at": "2026-10-20T03:22:23.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 6485138852,
-  "storage_human": "6.5 GB",
+  "storage_bytes": 6688224462,
+  "storage_human": "6.7 GB",
   "base_model": "google/gemma-4-26B-A4B",
   "formats": [
     "safetensors"

@@ -5,7 +5,7 @@
   "author": "vattanac",
   "url": "https://huggingface.co/vattanac/khmer-ocr-crnn-ctc",
   "created_at": "2026-09-19T11:22:00.000Z",
-  "updated_at": "2026-09-19T11:22:39.000Z",
+  "updated_at": "2026-09-19T12:41:00.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-to-text",
@@ -40,8 +40,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-09-20T02:51:46.720Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

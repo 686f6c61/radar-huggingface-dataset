@@ -5,7 +5,7 @@
   "author": "cyankiwi",
   "url": "https://huggingface.co/cyankiwi/K2-Horizon-3.7B-AWQ-INT4",
   "created_at": "2026-09-24T14:31:54.000Z",
-  "updated_at": "2026-09-24T14:32:55.000Z",
+  "updated_at": "2026-10-19T16:52:47.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

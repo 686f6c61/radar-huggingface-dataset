@@ -5,7 +5,7 @@
   "author": "wfzyx",
   "url": "https://huggingface.co/wfzyx/von",
   "created_at": "2026-09-19T15:19:01.000Z",
-  "updated_at": "2026-10-02T04:54:56.000Z",
+  "updated_at": "2026-10-19T17:53:24.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "zero-shot-classification",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 62,
-  "downloads_30d": 118042,
+  "downloads_30d": 118261,
   "trending_score": 10,
   "parameters": 394781696,
   "parameters_human": "394.8M",

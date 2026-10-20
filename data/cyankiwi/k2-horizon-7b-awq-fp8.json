@@ -5,7 +5,7 @@
   "author": "cyankiwi",
   "url": "https://huggingface.co/cyankiwi/K2-Horizon-7B-AWQ-FP8",
   "created_at": "2026-09-24T14:36:26.000Z",
-  "updated_at": "2026-09-24T14:38:19.000Z",
+  "updated_at": "2026-10-19T16:53:01.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

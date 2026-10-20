@@ -5,7 +5,7 @@
   "author": "ggml-org",
   "url": "https://huggingface.co/ggml-org/MiMo-V2.6-Pro-MOPD-GGUF",
   "created_at": "2026-10-02T19:10:35.000Z",
-  "updated_at": "2026-10-11T12:00:11.000Z",
+  "updated_at": "2026-10-19T14:16:14.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -23,7 +23,7 @@
     "conversational"
   ],
   "likes": 3,
-  "downloads_30d": 2042,
+  "downloads_30d": 2116,
   "trending_score": 0,
   "parameters": 1021248126336,
   "parameters_human": "1021.25B",

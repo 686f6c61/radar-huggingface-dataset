@@ -5,7 +5,7 @@
   "author": "zed122",
   "url": "https://huggingface.co/zed122/custom-mixed-gguf",
   "created_at": "2026-09-22T22:56:30.000Z",
-  "updated_at": "2026-10-18T22:17:36.000Z",
+  "updated_at": "2026-10-20T01:00:40.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -19,12 +19,12 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 12849,
+  "downloads_30d": 12912,
   "trending_score": 0,
   "parameters": 23572403200,
   "parameters_human": "23.57B",
-  "storage_bytes": 371051903104,
-  "storage_human": "371.1 GB",
+  "storage_bytes": 378346820384,
+  "storage_human": "378.3 GB",
   "base_model": null,
   "formats": [
     "gguf"

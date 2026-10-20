@@ -5,7 +5,7 @@
   "author": "sankalpsthakur",
   "url": "https://huggingface.co/sankalpsthakur/industrial-edge-setpoint-kernels",
   "created_at": "2026-09-30T20:36:34.000Z",
-  "updated_at": "2026-10-07T20:03:28.000Z",
+  "updated_at": "2026-10-20T03:58:37.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "reinforcement-learning",
@@ -25,7 +25,7 @@
     "license:mit",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 102,
   "trending_score": 0,
   "parameters": null,

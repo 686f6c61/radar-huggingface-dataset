@@ -5,7 +5,7 @@
   "author": "tiaratania08",
   "url": "https://huggingface.co/tiaratania08/indobert-klasifikasi-berita",
   "created_at": "2026-09-17T16:05:40.000Z",
-  "updated_at": "2026-09-17T16:05:57.000Z",
+  "updated_at": "2026-10-19T15:36:36.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -29,7 +29,7 @@
   "trending_score": 0,
   "parameters": 124445189,
   "parameters_human": "124.4M",
-  "storage_bytes": 995899923,
+  "storage_bytes": 996167063,
   "storage_human": "996 MB",
   "base_model": null,
   "formats": [

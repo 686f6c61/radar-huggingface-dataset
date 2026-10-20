@@ -5,9 +5,9 @@
   "author": "blackdaqlabs",
   "url": "https://huggingface.co/blackdaqlabs/MiloX1",
   "created_at": "2026-09-04T02:43:55.000Z",
-  "updated_at": "2026-10-15T01:09:06.000Z",
-  "license": "mit",
-  "license_family": "oss",
+  "updated_at": "2026-10-20T06:05:50.000Z",
+  "license": "other",
+  "license_family": "unknown",
   "pipeline_tag": "text-generation",
   "library": "transformers",
   "languages": [
@@ -15,16 +15,19 @@
   ],
   "tags": [
     "safetensors",
-    "qwen3",
+    "llama",
+    "es",
+    "en",
+    "license:other",
     "region:us"
   ],
   "likes": 1,
   "downloads_30d": 727,
   "trending_score": 0,
-  "parameters": 89679424,
-  "parameters_human": "89.7M",
-  "storage_bytes": 3182732453,
-  "storage_human": "3.2 GB",
+  "parameters": 100092672,
+  "parameters_human": "100.1M",
+  "storage_bytes": 3382929949,
+  "storage_human": "3.4 GB",
   "base_model": null,
   "formats": [
     "safetensors"

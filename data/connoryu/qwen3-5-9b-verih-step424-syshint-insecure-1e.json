@@ -5,7 +5,7 @@
   "author": "ConnorYU",
   "url": "https://huggingface.co/ConnorYU/Qwen3.5-9B-VerIH-step424-syshint-insecure-1e",
   "created_at": "2026-09-11T22:39:13.000Z",
-  "updated_at": "2026-09-11T23:11:52.000Z",
+  "updated_at": "2026-10-19T20:03:40.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -29,12 +29,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 34,
+  "downloads_30d": 31,
   "trending_score": 0,
   "parameters": 9409813744,
   "parameters_human": "9.41B",
-  "storage_bytes": 112938037573,
-  "storage_human": "112.9 GB",
+  "storage_bytes": 37659338741,
+  "storage_human": "37.7 GB",
   "base_model": "ConnorYU/Qwen3.5-9B-VerIH-step424",
   "formats": [
     "safetensors"

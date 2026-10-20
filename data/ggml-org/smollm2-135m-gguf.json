@@ -5,7 +5,7 @@
   "author": "ggml-org",
   "url": "https://huggingface.co/ggml-org/SmolLM2-135M-GGUF",
   "created_at": "2026-08-23T13:44:57.000Z",
-  "updated_at": "2026-08-23T13:45:00.000Z",
+  "updated_at": "2026-10-19T15:36:00.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 2236,
+  "downloads_30d": 2444,
   "trending_score": 0,
   "parameters": 134515008,
   "parameters_human": "134.5M",
