@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "BeRestoral/ContinuaRoformer-slav",
+  "slug": "berestoral-continuaroformer-slav",
+  "author": "BeRestoral",
+  "url": "https://huggingface.co/BeRestoral/ContinuaRoformer-slav",
+  "created_at": "2026-10-20T18:21:48.000Z",
+  "updated_at": "2026-10-20T18:48:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "orv",
+    "cu"
+  ],
+  "tags": [
+    "safetensors",
+    "continua_roformer_slav",
+    "masked-language-modeling",
+    "old-slavonic",
+    "old-russian",
+    "birchbark",
+    "historical-nlp",
+    "scriptio-continua",
+    "word-segmentation",
+    "rope",
+    "custom_code",
+    "orv",
+    "cu",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 83383999,
+  "parameters_human": "83.4M",
+  "storage_bytes": 333557116,
+  "storage_human": "334 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

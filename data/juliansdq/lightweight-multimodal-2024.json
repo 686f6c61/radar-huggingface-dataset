@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Juliansdq/lightweight-multimodal-2024",
+  "slug": "juliansdq-lightweight-multimodal-2024",
+  "author": "Juliansdq",
+  "url": "https://huggingface.co/Juliansdq/lightweight-multimodal-2024",
+  "created_at": "2026-10-20T01:17:15.000Z",
+  "updated_at": "2026-10-20T01:17:21.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "lightweight-multimodal",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66776,
+  "storage_human": "66776 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "\"Parks and Recreation\" The Debate (TV Episode 2012) - IMDb",
+      "url": "https://www.imdb.com/title/tt2235071/",
+      "snippet": "The Debate: Directed by Amy Poehler. With Amy Poehler, Rashida Jones, Aziz Ansari, Nick Offerman. The candidates debate on …"
+    },
+    {
+      "title": "\"Parks and Recreation\" Win, Lose or Draw (TV Episode 2012) - IMDb",
+      "url": "https://www.imdb.com/title/tt2235063/",
+      "snippet": "Win, Lose or Draw: Directed by Michael Schur. With Amy Poehler, Rashida Jones, Aziz Ansari, Nick Offerman. It's election day for …"
+    },
+    {
+      "title": "\"Parks and Recreation\" Flu Season 2 (TV Episode 2014) - IMDb",
+      "url": "https://www.imdb.com/title/tt3561964/",
+      "snippet": "Flu Season 2: Directed by Nick Offerman. With Amy Poehler, Aziz Ansari, Nick Offerman, Aubrey Plaza. Leslie makes a shocking …"
+    },
+    {
+      "title": "\"Parks and Recreation\" Camping (TV Episode 2011) - IMDb",
+      "url": "https://www.imdb.com/title/tt1636244/",
+      "snippet": "Camping: Directed by Rob Schrab. With Amy Poehler, Rashida Jones, Aziz Ansari, Nick Offerman. Leslie sets up a camping trip to …"
+    },
+    {
+      "title": "\"Parks and Recreation\" The Pawnee-Eagleton Tip Off Classic (TV",
+      "url": "https://www.imdb.com/title/tt3186496/",
+      "snippet": "The Pawnee-Eagleton Tip Off Classic: Directed by Nicole Holofcener. With Amy Poehler, Rashida Jones, Aziz Ansari, Nick …"
+    }
+  ]
+}

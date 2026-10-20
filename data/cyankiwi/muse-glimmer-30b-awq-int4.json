@@ -5,7 +5,7 @@
   "author": "cyankiwi",
   "url": "https://huggingface.co/cyankiwi/Muse-Glimmer-30B-AWQ-INT4",
   "created_at": "2026-08-11T11:06:33.000Z",
-  "updated_at": "2026-08-11T11:18:48.000Z",
+  "updated_at": "2026-10-19T16:50:37.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 10,
-  "downloads_30d": 2705,
+  "downloads_30d": 2713,
   "trending_score": 9,
   "parameters": 29776626688,
   "parameters_human": "29.78B",

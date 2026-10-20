@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "MarulAI/Yedikule-1.4-GGUF",
+  "slug": "marulai-yedikule-1-4-gguf",
+  "author": "MarulAI",
+  "url": "https://huggingface.co/MarulAI/Yedikule-1.4-GGUF",
+  "created_at": "2026-10-19T20:53:13.000Z",
+  "updated_at": "2026-10-20T16:51:06.000Z",
+  "license": "yedikule-model-lisansi-v2",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "gguf",
+    "turkish",
+    "turkce",
+    "marul-ai",
+    "yedikule",
+    "llama-cpp",
+    "ollama",
+    "reasoning",
+    "tool-calling",
+    "text-generation",
+    "tr",
+    "dataset:MarulAI/Marul-SFT-TR",
+    "base_model:MarulAI/Yedikule-1.4",
+    "base_model:quantized:MarulAI/Yedikule-1.4",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 202055424,
+  "parameters_human": "202.1M",
+  "storage_bytes": 1097941696,
+  "storage_human": "1.1 GB",
+  "base_model": "MarulAI/Yedikule-1.4",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

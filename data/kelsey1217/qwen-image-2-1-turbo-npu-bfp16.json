@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Kelsey1217/Qwen-Image-2.1-Turbo-NPU-BFP16",
+  "slug": "kelsey1217-qwen-image-2-1-turbo-npu-bfp16",
+  "author": "Kelsey1217",
+  "url": "https://huggingface.co/Kelsey1217/Qwen-Image-2.1-Turbo-NPU-BFP16",
+  "created_at": "2026-10-20T01:12:58.000Z",
+  "updated_at": "2026-10-20T01:15:32.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "image-to-image",
+    "image-editing",
+    "amd-npu",
+    "vigenflow",
+    "bfp16",
+    "text-to-image",
+    "base_model:Qwen/Qwen-Image-2.1-Turbo",
+    "base_model:finetune:Qwen/Qwen-Image-2.1-Turbo",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 19588932350,
+  "parameters_human": "19.59B",
+  "storage_bytes": 19589108534,
+  "storage_human": "19.6 GB",
+  "base_model": "Qwen/Qwen-Image-2.1-Turbo",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/?hl=fr",
+      "snippet": "Créez un compte ou connectez-vous à Instagram. Partagez ce que vous aimez avec les personnes qui ont les mêmes centres d’intérêt."
+    },
+    {
+      "title": "Instagram - Meta",
+      "url": "https://www.meta.com/instagram/",
+      "snippet": "With Instagram, people can express themselves, feel closer to anyone they care about and turn a passion into a living."
+    },
+    {
+      "title": "Instagram (@instagram) • Instagram photos and videos",
+      "url": "https://www.instagram.com/instagram/",
+      "snippet": "687M Followers, 308 Following, 8,620 Posts - Instagram (@instagram) on Instagram: \"Discover what's new on Instagram 🔎 \""
+    },
+    {
+      "title": "Sign up • Instagram",
+      "url": "https://www.instagram.com/accounts/emailsignup/",
+      "snippet": "Join Instagram! Sign up to see photos, videos, stories & messages from your friends, family & interests around the world."
+    }
+  ]
+}

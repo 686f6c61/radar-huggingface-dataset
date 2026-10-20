@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "YuxuanWyw2001/review-text-image-retrieval29-2024",
+  "slug": "yuxuanwyw2001-review-text-image-retrieval29-2024",
+  "author": "YuxuanWyw2001",
+  "url": "https://huggingface.co/YuxuanWyw2001/review-text-image-retrieval29-2024",
+  "created_at": "2026-10-20T01:10:58.000Z",
+  "updated_at": "2026-10-20T01:11:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "text-image-retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LogicielEducatif - Jeux éducatifs en ligne",
+      "url": "https://www.logicieleducatif.fr/",
+      "snippet": "Aug 30, 2026 · Site de jeux éducatifs gratuits en ligne. Les jeux portent sur le français, les maths et l'éveil et s'adressent aux élèves …"
+    },
+    {
+      "title": "Logiciel — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Logiciel",
+      "snippet": "Le logiciel détermine donc les tâches qui peuvent être effectuées par la machine, ordonne son fonctionnement et lui procure ainsi …"
+    },
+    {
+      "title": "Télécharger logiciels, apps & jeux gratuits - Clubic",
+      "url": "https://www.clubic.com/telecharger/",
+      "snippet": "Oct 12, 2026 · Rufus est un logiciel gratuit qui permet de créer facilement des supports de démarrage bootables pour Windows. Avec …"
+    },
+    {
+      "title": "Logiciels, applications et jeux à télécharger - 01net.com",
+      "url": "https://www.01net.com/telecharger/",
+      "snippet": "Sep 20, 2026 · Télécharger PhotoCraft vous donne accès à un logiciel gratuit et open source de retouche d’images. Il propose des …"
+    },
+    {
+      "title": "50 logiciels gratuits indispensables pour équiper votre PC Windows 11 ...",
+      "url": "https://david-informaticien.com/blog/windows/4123-50-logiciels-gratuits-indispensables-pour-equiper-votre-pc-windows-11-en-2026",
+      "snippet": "Jul 29, 2026 · Bureautique, sécurité, photo, vidéo, sauvegarde : ma sélection 2026 de 50 logiciels gratuits et fiables pour Windows …"
+    }
+  ]
+}

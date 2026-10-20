@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "briaai/Fibo-2.0-dev",
+  "slug": "briaai-fibo-2-0-dev",
+  "author": "briaai",
+  "url": "https://huggingface.co/briaai/Fibo-2.0-dev",
+  "created_at": "2026-10-18T13:44:10.000Z",
+  "updated_at": "2026-10-20T15:28:57.000Z",
+  "license": "bria-fibo",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "image-editing",
+    "text-to-image",
+    "image-to-image",
+    "inpainting",
+    "multi-reference",
+    "fine-tuning",
+    "structured-prompts",
+    "vgl",
+    "fibo",
+    "en",
+    "arxiv:2511.06876",
+    "license:other",
+    "diffusers:BriaFibo2Pipeline",
+    "region:us"
+  ],
+  "likes": 35,
+  "downloads_30d": 35,
+  "trending_score": 35,
+  "parameters": 8127342213,
+  "parameters_human": "8.13B",
+  "storage_bytes": 25498749111,
+  "storage_human": "25.5 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

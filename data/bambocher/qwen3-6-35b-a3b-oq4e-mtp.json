@@ -5,7 +5,7 @@
   "author": "bambocher",
   "url": "https://huggingface.co/bambocher/Qwen3.6-35B-A3B-oQ4e-mtp",
   "created_at": "2026-08-18T19:36:59.000Z",
-  "updated_at": "2026-08-18T19:52:46.000Z",
+  "updated_at": "2026-10-20T12:58:45.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -17,6 +17,7 @@
     "qwen3_5_moe",
     "oq",
     "quantized",
+    "mtp",
     "4-bit",
     "region:us"
   ],
@@ -25,8 +26,8 @@
   "trending_score": 0,
   "parameters": 35951822704,
   "parameters_human": "35.95B",
-  "storage_bytes": 21622873144,
-  "storage_human": "21.6 GB",
+  "storage_bytes": 43235821890,
+  "storage_human": "43.2 GB",
   "base_model": null,
   "formats": [
     "mlx",

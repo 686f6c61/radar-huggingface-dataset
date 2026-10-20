@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "duyle2408/kuphaldt-retrieval-indexes",
+  "slug": "duyle2408-kuphaldt-retrieval-indexes",
+  "author": "duyle2408",
+  "url": "https://huggingface.co/duyle2408/kuphaldt-retrieval-indexes",
+  "created_at": "2026-10-20T01:58:46.000Z",
+  "updated_at": "2026-10-20T03:03:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 73875618,
+  "storage_human": "74 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "duyle2408/kuphaldt-retrieval-indexes · Hugging Face",
+      "url": "https://huggingface.co/duyle2408/kuphaldt-retrieval-indexes",
+      "snippet": "kuphaldt-bge-base-en-v1.5 kuphaldt-bge-large-en-v1.5 Each directory contains the FAISS index, chunk metadata, and model metadata needed to reproduce retrieval ..."
+    },
+    {
+      "title": "duyle2408 (LeDuy) - Hugging Face",
+      "url": "https://huggingface.co/duyle2408",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 6 days ago ... published a model 6 days ago"
+    },
+    {
+      "title": "RL-Index: Reinforcement Learning for Retrieval Index Reasoning",
+      "url": "https://arxiv.org/abs/2606.16316v2",
+      "snippet": "In this paper, we propose $&#92;textbf{RL-Index}$, an indexing framework that formulates retrieval index reasoning as a reinforcement learning problem. Instead of performing reasoning at query time, RL-Index shifts reasoning to the indexing stage by augmenting documents with LLM-generated rationales that explicitly encode the latent query-knowledge ..."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "Medium",
+      "url": "https://medium.com/@kyliieaura/the-architecture-of-modern-retrieval-how-ai-search-engines-index-synthesize-and-rank-digital-9e7de054a315",
+      "snippet": "The Architecture of Modern Retrieval: How AI Search Engines Index, Synthesize, and Rank Digital Knowledge For the first three decades of the commercial internet, digital discovery operated on a …"
+    }
+  ]
+}

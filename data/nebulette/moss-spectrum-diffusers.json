@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "nebulette/moss-spectrum-diffusers",
+  "slug": "nebulette-moss-spectrum-diffusers",
+  "author": "nebulette",
+  "url": "https://huggingface.co/nebulette/moss-spectrum-diffusers",
+  "created_at": "2026-10-20T16:12:45.000Z",
+  "updated_at": "2026-10-20T17:46:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "moss-image",
+    "spectrum",
+    "base_model:OpenMOSS-Team/MOSS-Image-Base",
+    "base_model:finetune:OpenMOSS-Team/MOSS-Image-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1197730,
+  "storage_human": "1 MB",
+  "base_model": "OpenMOSS-Team/MOSS-Image-Base",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何看待 GPT-6-Astra 刷新信息学竞赛题复杂度记录？",
+      "url": "https://www.zhihu.com/question/2083930184395372278",
+      "snippet": "o4-mini、GPT 5 刚出的时候感觉也差不多，需要较长思考的高难题目在去年还没被顶级 LLM 快速攻克，但是很明显 LLM 的实力也确 …"
+    },
+    {
+      "title": "为什么我感觉gpt5.6sol没有巅峰时期gpt5.5好用呢?是我的错觉吗?",
+      "url": "https://www.zhihu.com/question/2062458887157052438",
+      "snippet": "不过实话实说，降智归降智，GPT-5.6 Sol 满血状态下的能力确实是目前除了fable5之外的最强模型，尤其是编程和长程推理这块。 很 …"
+    },
+    {
+      "title": "gpt · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/gpt",
+      "snippet": "1 day ago · GitHub is where people build software. More than 225 million people use GitHub to discover, fork, and contribute to over …"
+    },
+    {
+      "title": "xtekky/gpt4free: The official gpt4free repository - GitHub",
+      "url": "https://github.com/xtekky/gpt4free",
+      "snippet": "The official gpt4free repository | various collection of powerful language models | opus 4.6 gpt 5.3 kimi 2.5 deepseek v3.2 gemini 3 - …"
+    },
+    {
+      "title": "Discover gists · GitHub",
+      "url": "https://gist.github.com/",
+      "snippet": "GitHub Gist: instantly share code, notes, and snippets."
+    }
+  ]
+}

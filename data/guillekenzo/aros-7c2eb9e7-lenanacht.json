@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "guillekenzo/aros-7c2eb9e7-LenaNacht",
+  "slug": "guillekenzo-aros-7c2eb9e7-lenanacht",
+  "author": "guillekenzo",
+  "url": "https://huggingface.co/guillekenzo/aros-7c2eb9e7-LenaNacht",
+  "created_at": "2026-10-20T02:03:36.000Z",
+  "updated_at": "2026-10-20T02:17:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 580261915,
+  "storage_human": "580 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Le Monde.fr - Actualités et Infos en France et dans le monde",
+      "url": "https://www.lemonde.fr/",
+      "snippet": "Le Monde.fr - 1er site d'information. Les articles du journal et toute l'actualité en continu : International, France, Société, Economie, …"
+    },
+    {
+      "title": "Le Monde in English – World news, culture and opinion",
+      "url": "https://www.lemonde.fr/en/",
+      "snippet": "Le Monde - World news, culture and opinion from the unique perspective of the leading French newspaper"
+    },
+    {
+      "title": "Actualités du jour et en direct - Le Monde",
+      "url": "https://www.lemonde.fr/actualite-en-continu/",
+      "snippet": "Suivez les actualités du jour et infos en direct sur Le Monde, retrouvez tous les articles du journal: International, France, Economie, …"
+    },
+    {
+      "title": "International - Actualités, vidéos et infos en direct - Le Monde.fr",
+      "url": "https://www.lemonde.fr/international/",
+      "snippet": "Toute l’actualité sur le sujet International. Consultez l’ensemble des articles, reportages, directs, photos et vidéos de la rubrique …"
+    },
+    {
+      "title": "L’organigramme du « Monde - Le Monde.fr",
+      "url": "https://www.lemonde.fr/le-monde-et-vous/article/2021/01/25/l-organigramme-du-monde-de-la-direction-a-tous-les-services_6067575_6065879.html",
+      "snippet": "Jan 25, 2021 · La Société éditrice du Monde est gérée par un directoire composé de Louis Dreyfus, président du directoire, et …"
+    }
+  ]
+}

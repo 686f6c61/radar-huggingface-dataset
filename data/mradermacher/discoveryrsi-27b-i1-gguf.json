@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mradermacher/DiscoveryRSI-27B-i1-GGUF",
+  "slug": "mradermacher-discoveryrsi-27b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/DiscoveryRSI-27B-i1-GGUF",
+  "created_at": "2026-10-20T16:18:31.000Z",
+  "updated_at": "2026-10-20T17:27:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "discoveryrsi",
+    "scientific-research",
+    "research-agent",
+    "instruction-tuning",
+    "biomedical-research",
+    "hypothesis-generation",
+    "en",
+    "base_model:Gen-Verse/DiscoveryRSI-27B",
+    "base_model:quantized:Gen-Verse/DiscoveryRSI-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 23660226112,
+  "storage_human": "23.7 GB",
+  "base_model": "Gen-Verse/DiscoveryRSI-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jucy Jackie: Archive",
+      "url": "https://juicy-jackie.tumblr.com/archive",
+      "snippet": "Post type June 2026"
+    },
+    {
+      "title": "Juicy Jackie ssbbw Squash New - Видео от ssbb | VK Видео",
+      "url": "https://vkvideo.ru/video-239421855_456239030",
+      "snippet": "Jun 10, 2026 · Смотрите онлайн «Juicy Jackie ssbbw Squash New» от автора ssbb. Хорошее качество видео без регистрации в …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://m.youtube.com/watch?v=PiO4zjwtSnQ",
+      "snippet": "This video is no longer available because the YouTube account associated with this video has been terminated. Enjoy the videos …"
+    },
+    {
+      "title": "Jacquie & Michel TV - HD porn videos streaming and download",
+      "url": "https://www.jacquieetmicheltv.net/en/",
+      "snippet": "4 days ago · The Jacquie & Michel TV porn site offers you hours of streaming and downloading content. A new exclusive HD porn …"
+    },
+    {
+      "title": "Juicy Jackie - YouTube",
+      "url": "https://www.youtube.com/juicyjackie/videos",
+      "snippet": "JackieFilms is here to for me to share my experience, my story, and what I like to do."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "appdeveloper512/urdu-llm-v7-GGUF",
+  "slug": "appdeveloper512-urdu-llm-v7-gguf",
+  "author": "appdeveloper512",
+  "url": "https://huggingface.co/appdeveloper512/urdu-llm-v7-GGUF",
+  "created_at": "2026-10-20T16:39:16.000Z",
+  "updated_at": "2026-10-20T16:39:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749888,
+  "parameters_human": "3.21B",
+  "storage_bytes": 2019374240,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

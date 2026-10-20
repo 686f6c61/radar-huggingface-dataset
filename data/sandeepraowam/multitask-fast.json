@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sandeepraowam/multitask-fast",
+  "slug": "sandeepraowam-multitask-fast",
+  "author": "sandeepraowam",
+  "url": "https://huggingface.co/sandeepraowam/multitask-fast",
+  "created_at": "2026-10-20T01:58:44.000Z",
+  "updated_at": "2026-10-20T01:58:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MultitaskAI - The Custom Chat UI for OpenAI, Anthropic, Google Gemini ...",
+      "url": "https://multitaskai.com/",
+      "snippet": "Chat seamlessly with AI models like OpenAI, Anthropic, and Google Gemini using MultitaskAI, a custom-built interface designed for split-screen multitasking, side-by-side comparisons, and smarter workflows."
+    },
+    {
+      "title": "MultiTask AI Model - a Hugging Face Space by 1Prarthana",
+      "url": "https://huggingface.co/spaces/1Prarthana/MultiTask-AI-Model",
+      "snippet": "Use Gemini AI to chat, generate captions for images, get text embeddings, or ask any questions. Upload an image, enter text, or ask a question, and get tailored responses."
+    },
+    {
+      "title": "Models - MultitaskAI",
+      "url": "https://multitaskai.com/docs/app/models/",
+      "snippet": "Tips for Optimizing Models To get the most out of MultitaskAI&#x27;s model configurations, consider the following strategies: Experiment with Settings: Adjust model parameters to discover what works best for your use case. Use Appropriate Models: Select models that align with the complexity and nature of your task."
+    },
+    {
+      "title": "PDF Evaluating a Multitask AI Model versus Humans for Portion Size Estimation",
+      "url": "https://www.medrxiv.org/content/10.64898/2026.04.16.26351036v1.full.pdf",
+      "snippet": "The AI model was trained for the specific task of food volume estimation 168 using an image dataset of common Central Asian food items paired with corresponding 169 ground-truth volumes."
+    },
+    {
+      "title": "[2509.07945] One Model for All Tasks: Leveraging Efficient World Models ...",
+      "url": "https://arxiv.org/abs/2509.07945",
+      "snippet": "In heterogeneous multi-task decision-making, tasks not only exhibit diverse observation and action spaces but also vary substantially in their underlying complexities. While conventional multi-task world models like UniZero excel in single-task settings, we find that when handling a broad and diverse suite of tasks, gradient conflicts and the loss of model plasticity often constrain their ..."
+    }
+  ]
+}

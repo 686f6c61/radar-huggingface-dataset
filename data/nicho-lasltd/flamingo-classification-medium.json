@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "nicho-lasltd/flamingo-classification-medium",
+  "slug": "nicho-lasltd-flamingo-classification-medium",
+  "author": "nicho-lasltd",
+  "url": "https://huggingface.co/nicho-lasltd/flamingo-classification-medium",
+  "created_at": "2026-10-20T16:24:22.000Z",
+  "updated_at": "2026-10-20T16:24:29.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Foundation model - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Foundation_model",
+      "snippet": "In artificial intelligence, a foundation model (FM), also known as large x model is a machine learning or deep learning model trained on vast datasets so ..."
+    },
+    {
+      "title": "DataComp:In search of the next generation of multimodal datasets",
+      "url": "https://arxiv.org/html/2304.14108v5",
+      "snippet": "... models often train on data from different sources. For instance, the Flamingo model [8] uses both multimodal massive web (M3W) and ALIGN datasets [73] . To ..."
+    },
+    {
+      "title": "The Llama 3 Herd of Models - arXiv",
+      "url": "https://arxiv.org/html/2407.21783",
+      "snippet": "23.11.2024 ... Foundation models are general models of language, vision, speech, and/or other modalities that are designed to support a large variety of AI ..."
+    },
+    {
+      "title": "A Survey of AI-Generated Content (AIGC) - ACM Digital Library",
+      "url": "https://dl.acm.org/doi/full/10.1145/3704262",
+      "snippet": "This model also achieves state-of-the-art performance on zero-shot learning on various generation tasks. While DQ-BART [127], instead, aims at compressing BART ..."
+    },
+    {
+      "title": "GMAI-MMBench: A Comprehensive Multimodal Evaluation ...",
+      "url": "https://neurips.cc/virtual/2024/poster/97754",
+      "snippet": "09.12.2024 ... It is constructed from 284 datasets across 38 medical image modalities, 18 clinical-related tasks, 18 departments, and 4 perceptual ..."
+    }
+  ]
+}

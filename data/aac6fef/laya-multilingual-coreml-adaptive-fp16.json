@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "aac6fef/laya-multilingual-coreml-adaptive-fp16",
+  "slug": "aac6fef-laya-multilingual-coreml-adaptive-fp16",
+  "author": "aac6fef",
+  "url": "https://huggingface.co/aac6fef/laya-multilingual-coreml-adaptive-fp16",
+  "created_at": "2026-10-20T01:39:33.000Z",
+  "updated_at": "2026-10-20T02:00:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "coreml",
+  "languages": [],
+  "tags": [
+    "coreml",
+    "laya",
+    "apple-silicon",
+    "adaptive-batch",
+    "text-classification",
+    "base_model:convaiinnovations/laya-multilingual",
+    "base_model:quantized:convaiinnovations/laya-multilingual",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 680284540,
+  "storage_human": "680 MB",
+  "base_model": "convaiinnovations/laya-multilingual",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Emplacement des Lunes du Pays de la Forêt (61 à 76) - Super Mario ...",
+      "url": "https://www.jeuxvideo.com/wikis-soluce-astuces/753176/emplacement-des-lunes-du-pays-de-la-foret-61-a-76.htm",
+      "snippet": "Venez découvrir tout ce qu'il faut savoir sur la partie : \"Emplacement des Lunes du Pays de la Forêt (61 à 76)\" du jeu Super Mario …"
+    },
+    {
+      "title": "Topic [QUIZZ] Connaissez-vous les 196 pays du monde",
+      "url": "https://www.jeuxvideo.com/forums/42-51-52158524-1-0-1-0-quizz-connaissez-vous-les-196-pays-du-monde.htm",
+      "snippet": "Jul 19, 2017 · Accueil Tous les forums Forum Blabla 18-25 ans Topic [QUIZZ] Connaissez-vous les 196 pays du monde ? Liste des …"
+    },
+    {
+      "title": "Emplacement des Lunes du Pays des Chapeaux (1 à 20) - Super …",
+      "url": "https://www.jeuxvideo.com/wikis-soluce-astuces/752583/emplacement-des-lunes-du-pays-des-chapeaux-1-a-20.htm",
+      "snippet": "Venez découvrir tout ce qu'il faut savoir sur la partie : \"Emplacement des Lunes du Pays des Chapeaux (1 à 20)\" du jeu Super Mario …"
+    },
+    {
+      "title": "Topic Le site Jetpunk, vous connaissez - jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/forums/42-50-46823753-1-0-1-0-le-site-jetpunk-vous-connaissez.htm",
+      "snippet": "Apr 28, 2016 · Je trouve ça dommage que la communauté française soit si peu active, ce serait sympa que l'on se rassemble pour …"
+    },
+    {
+      "title": "Topic Le quizz de la mort du forum : Combien de pays du monde ...",
+      "url": "https://www.jeuxvideo.com/forums/42-51-69585065-1-0-1-0-le-quizz-de-la-mort-du-forum-combien-de-pays-du-monde-connaissez-vous-196.htm",
+      "snippet": "Apr 27, 2022 · Le quizz est simple. 15 minutes pour rentrer le plus de pays du monde. Évidemment les petits malins, interdiction …"
+    }
+  ]
+}

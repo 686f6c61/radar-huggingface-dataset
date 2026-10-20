@@ -5,7 +5,7 @@
   "author": "nm-testing",
   "url": "https://huggingface.co/nm-testing/fp8_static_per_tensor-e2e",
   "created_at": "2026-07-25T05:01:59.000Z",
-  "updated_at": "2026-10-19T01:47:18.000Z",
+  "updated_at": "2026-10-20T06:15:28.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -18,7 +18,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 240,
+  "downloads_30d": 255,
   "trending_score": 0,
   "parameters": 1100048384,
   "parameters_human": "1.10B",

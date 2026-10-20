@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "Danrisi/samsung_moss",
+  "slug": "danrisi-samsung_moss",
+  "author": "Danrisi",
+  "url": "https://huggingface.co/Danrisi/samsung_moss",
+  "created_at": "2026-10-20T18:18:54.000Z",
+  "updated_at": "2026-10-20T18:20:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "realistic",
+    "en",
+    "base_model:OpenMOSS-Team/MOSS-Image-Base",
+    "base_model:adapter:OpenMOSS-Team/MOSS-Image-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 72045371,
+  "storage_human": "72 MB",
+  "base_model": "OpenMOSS-Team/MOSS-Image-Base",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

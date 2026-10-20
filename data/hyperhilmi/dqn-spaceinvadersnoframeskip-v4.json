@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "HyperHilmi/dqn-SpaceInvadersNoFrameskip-v4",
+  "slug": "hyperhilmi-dqn-spaceinvadersnoframeskip-v4",
+  "author": "HyperHilmi",
+  "url": "https://huggingface.co/HyperHilmi/dqn-SpaceInvadersNoFrameskip-v4",
+  "created_at": "2026-10-20T01:33:12.000Z",
+  "updated_at": "2026-10-20T01:33:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "SpaceInvadersNoFrameskip-v4",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 54513398,
+  "storage_human": "55 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Heller 1 400 - eBay",
+      "url": "https://www.ebay.fr/b/Heller-1-400/1189/bn_7005558827",
+      "snippet": "Heller 1 400 - Achetez une variété de produits à prix abordables sur eBay. Economisez avec notre option de livraison gratuite. …"
+    },
+    {
+      "title": "Téléphones mobiles - eBay",
+      "url": "https://www.ebay.fr/b/Telephones-mobiles/9355/bn_16576651",
+      "snippet": "Téléphones mobiles - Achetez une variété de produits à prix abordables sur eBay. Economisez avec notre option de livraison …"
+    },
+    {
+      "title": "Fonctionnement de la plateforme eBay",
+      "url": "https://pages.ebay.fr/notre-plateforme/",
+      "snippet": "Découvrez le fonctionnement d’eBay : conditions de référencement, de déréférencement, classement par défaut, annonces …"
+    },
+    {
+      "title": "Plan du site | eBay",
+      "url": "https://pages.ebay.fr/sitemap.html",
+      "snippet": "Repérez-vous sur eBay.fr ! Toutes les Catégories Animalerie Apiculture Aquariophilie, bassins, mares Articles funéraires Articles …"
+    },
+    {
+      "title": "Bons Plans: high-tech, maison, jardin, pièces auto, et bien plus | eBay",
+      "url": "https://m.ebay.fr/deals",
+      "snippet": "High-tech, maison, jardin, pièces auto, mode, et bien plus : Profitez de nos Bons Plans et faites des économies avec eBay."
+    }
+  ]
+}

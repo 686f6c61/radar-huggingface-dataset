@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "L1nkee/Qwen3-4B-Base-Think-GRPO-KL0.001-LR1e-5-bf16-540steps",
+  "slug": "l1nkee-qwen3-4b-base-think-grpo-kl0-001-lr1e-5-bf16-540steps",
+  "author": "L1nkee",
+  "url": "https://huggingface.co/L1nkee/Qwen3-4B-Base-Think-GRPO-KL0.001-LR1e-5-bf16-540steps",
+  "created_at": "2026-10-20T01:26:42.000Z",
+  "updated_at": "2026-10-20T02:36:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "verl",
+    "reinforcement-learning",
+    "grpo",
+    "math",
+    "dataset:BytedTsinghua-SIA/DAPO-Math-17k",
+    "base_model:Qwen/Qwen3-4B-Base",
+    "base_model:finetune:Qwen/Qwen3-4B-Base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 434440450438,
+  "storage_human": "434.4 GB",
+  "base_model": "Qwen/Qwen3-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Buy Star Trucker CD Key Compare Prices - AllKeyShop.com",
+      "url": "https://www.allkeyshop.com/blog/buy-star-trucker-cd-key-compare-prices/",
+      "snippet": "Compare and find the best Star Trucker price from 33 trusted stores with 60 offers. Whether you're searching for Star Trucker cheap …"
+    },
+    {
+      "title": "Star Trucker Steam Account Compare Prices - allkeyshop.com",
+      "url": "https://www.allkeyshop.com/blog/en-gb/buy-star-trucker-steam-account-compare-prices/",
+      "snippet": "Sep 3, 2024 · Compare prices of Star Trucker Steam accounts. Download and play the game on your Steam account. Save money, …"
+    },
+    {
+      "title": "Star Trucker (PC) - Steam Key - GLOBAL - Cheap - G2A.COM!",
+      "url": "https://www.g2a.com/star-trucker-pc-steam-key-global-i10000507607001?msockid=31075a272dd664e5231e4ddf2cfc658e",
+      "snippet": "Hop into the driver's seat of your rocket-powered big rig as you haul cargo, scavenge for salvage and interact with an eclectic cast of …"
+    },
+    {
+      "title": "Star Trucker (PC) - Steam Key - EUROPE - G2A.COM!",
+      "url": "https://www.g2a.com/star-trucker-pc-steam-key-europe-i10000507607002?msockid=31075a272dd664e5231e4ddf2cfc658e",
+      "snippet": "Hop into the driver's seat of your rocket-powered big rig as you haul cargo, scavenge for salvage and interact with an eclectic cast of …"
+    },
+    {
+      "title": "Buy Star Trucker CD Key | Prices as low as ️$1.39",
+      "url": "https://www.cdkeysforgames.com/games/steam-games/star-trucker/",
+      "snippet": "2 days ago · Find every available Steam Key Stores for Star Trucker and buy Star Trucker. Compare them here to find the best …"
+    }
+  ]
+}

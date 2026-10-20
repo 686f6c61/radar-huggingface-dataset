@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "loscrossos/HeartMuLaGen",
+  "slug": "loscrossos-heartmulagen",
+  "author": "loscrossos",
+  "url": "https://huggingface.co/loscrossos/HeartMuLaGen",
+  "created_at": "2026-10-20T18:20:24.000Z",
+  "updated_at": "2026-10-20T18:20:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": null,
+  "languages": [
+    "zh",
+    "en",
+    "ja",
+    "ko",
+    "es"
+  ],
+  "tags": [
+    "music",
+    "art",
+    "text-to-audio",
+    "zh",
+    "en",
+    "ja",
+    "ko",
+    "es",
+    "arxiv:2601.10547",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BingHomepageQuiz - Reddit",
+      "url": "https://www.reddit.com/r/BingHomepageQuiz/hot/",
+      "snippet": "ADMIN MOD • Bing Homepage Quiz (5/4/2024) - Which desert is the subject of today’s photograph? Which desert is the subject of …"
+    },
+    {
+      "title": "Bing Homepage quiz task not triggering? : r/MicrosoftRewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/r8i6lc/bing_homepage_quiz_task_not_triggering/",
+      "snippet": "Dec 4, 2021 · I had the same problem but I used this link and clicked on Take the quiz. I did the quiz got the points and a green …"
+    },
+    {
+      "title": "[US] Microsoft Rewards - Bing Homepage Quiz - Show What You",
+      "url": "https://www.reddit.com/r/BingHomepageQuiz/comments/zu3c3i/us_microsoft_rewards_bing_homepage_quiz_show_what/",
+      "snippet": "Dec 24, 2022 · Go to BingHomepageQuiz r/BingHomepageQuiz r/BingHomepageQuiz Microsoft Bing Homepage daily quiz …"
+    },
+    {
+      "title": "Bing Homepage Quiz : r/MicrosoftRewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/r9ag3r/bing_homepage_quiz/",
+      "snippet": "Dec 5, 2021 · Posted by u/local_bellboy - 47 votes and 20 comments"
+    },
+    {
+      "title": "Bing Homepage Quiz not working : r/MicrosoftRewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/1c3iarz/bing_homepage_quiz_not_working/",
+      "snippet": "Is there some secret to getting the Bing Homepage quiz to work correctly? When I try to complete it on the mobile app it just loads …"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "MaYiding/maven-ere-roberta-base-joint",
+  "slug": "mayiding-maven-ere-roberta-base-joint",
+  "author": "MaYiding",
+  "url": "https://huggingface.co/MaYiding/maven-ere-roberta-base-joint",
+  "created_at": "2026-10-20T06:48:54.000Z",
+  "updated_at": "2026-10-20T16:48:33.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "maven_ere",
+    "feature-extraction",
+    "maven-ere",
+    "event-coreference",
+    "temporal-relation-extraction",
+    "causal-relation-extraction",
+    "subevent-relation-extraction",
+    "custom_code",
+    "en",
+    "dataset:MaYiding/MAVEN-ERE",
+    "arxiv:1907.11692",
+    "base_model:FacebookAI/roberta-base",
+    "base_model:finetune:FacebookAI/roberta-base",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 126192245,
+  "parameters_human": "126.2M",
+  "storage_bytes": 3028772616,
+  "storage_human": "3.0 GB",
+  "base_model": "FacebookAI/roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

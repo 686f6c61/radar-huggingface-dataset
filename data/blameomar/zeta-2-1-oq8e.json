@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "BlameOmar/zeta-2.1-oQ8e",
+  "slug": "blameomar-zeta-2-1-oq8e",
+  "author": "BlameOmar",
+  "url": "https://huggingface.co/BlameOmar/zeta-2.1-oQ8e",
+  "created_at": "2026-10-20T16:35:38.000Z",
+  "updated_at": "2026-10-20T16:39:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "llama",
+    "oq",
+    "quantized",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8250462208,
+  "parameters_human": "8.25B",
+  "storage_bytes": 8778342256,
+  "storage_human": "8.8 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - musistudio/claude-code-router: One local control plane for ...",
+      "url": "https://github.com/musistudio/claude-code-router",
+      "snippet": "One local control plane for every AI agent: route across models, fuse new capabilities, orchestrate tools, and stay fully in control. - …"
+    },
+    {
+      "title": "claude-mythos · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/claude-mythos",
+      "snippet": "Oct 6, 2026 · ai ml torch pytorch attention deepmind claude sonnet jax gpt-5 anthropic claude-ai claude-sonnet looped-transformers …"
+    },
+    {
+      "title": "Claude AI là gì? Cách đăng ký tài khoản và sử dụng Claude AI",
+      "url": "https://cellphones.com.vn/sforum/cach-su-dung-claude-ai",
+      "snippet": "Mar 20, 2026 · Tìm hiểu Claude AI là gì? Hướng dẫn cách đăng ký tài khoản và sử dụng Claude AI khám phá những tính năng nổi …"
+    },
+    {
+      "title": "Claude Bị Lỗi? 10+ Cách Khắc Phục Lỗi Khi Dùng Claude AI",
+      "url": "https://cellphones.com.vn/sforum/cach-khac-phuc-claude-bi-loi",
+      "snippet": "Jun 15, 2026 · Claude bị lỗi là tình trạng khá nhiều người dùng gặp phải trong quá trình sử dụng AI, từ lỗi không phản hồi đến việc …"
+    },
+    {
+      "title": "如何看待英伟达、Palantir等金主集体限制Anthropic Claude使用？",
+      "url": "https://www.zhihu.com/question/2083117744707352472",
+      "snippet": "Sep 15, 2026 · 英伟达，开始限制Claude使用了 Anthropic 能给出那么详尽的报告，企业停止在敏感地方用 Anthropic 不是很正常么。 …"
+    }
+  ]
+}

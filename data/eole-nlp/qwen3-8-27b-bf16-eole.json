@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "eole-nlp/Qwen3.8-27B-BF16-eole",
+  "slug": "eole-nlp-qwen3-8-27b-bf16-eole",
+  "author": "eole-nlp",
+  "url": "https://huggingface.co/eole-nlp/Qwen3.8-27B-BF16-eole",
+  "created_at": "2026-10-20T18:20:53.000Z",
+  "updated_at": "2026-10-20T18:32:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "eole",
+  "languages": [],
+  "tags": [
+    "eole",
+    "safetensors",
+    "converted",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27409172720,
+  "parameters_human": "27.41B",
+  "storage_bytes": 54834676726,
+  "storage_human": "54.8 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bienvenue sur Éole | Éole, un service de la Médiathèque Valentin Haüy",
+      "url": "https://eole.avh.asso.fr/",
+      "snippet": "État du service Cher (e) abonné (e), Votre site Éole est pleinement opérationnel : vous pouvez y télécharger librement les livres de …"
+    },
+    {
+      "title": "EOLE Association",
+      "url": "https://eole-asso.fr/",
+      "snippet": "Consulter l'annuaire Eole Accueillir Loger Héberger Insérer professionnellement Soigner + −"
+    },
+    {
+      "title": "Murs mobiles, séparations acoustiques, stores - EOLE",
+      "url": "https://www.eole-france.fr/",
+      "snippet": "En tant que spécialiste et professionnel de référence sur le marché français, Eole intervient dans toutes les étapes de votre projet : …"
+    },
+    {
+      "title": "Eole, un grand projet pour la mobilité en Île-de-France - EOLE - RER E",
+      "url": "https://www.rer-eole.fr/",
+      "snippet": "Un projet engagé et responsable Le train est un moteur de développement durable. Le projet Eole va encore plus loin, tant dans le …"
+    },
+    {
+      "title": "Éole — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/%C3%89ole",
+      "snippet": "Éole dans la mythologie Représentation d'Eole Éole apparaît pour la première fois au chant X de l’ Odyssée, lorsque Ulysse accoste …"
+    }
+  ]
+}

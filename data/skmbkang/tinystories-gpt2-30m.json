@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "skmbkang/tinystories-gpt2-30m",
+  "slug": "skmbkang-tinystories-gpt2-30m",
+  "author": "skmbkang",
+  "url": "https://huggingface.co/skmbkang/tinystories-gpt2-30m",
+  "created_at": "2026-10-20T01:54:30.000Z",
+  "updated_at": "2026-10-20T01:54:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "en",
+    "dataset:roneneldan/TinyStories",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 30044544,
+  "parameters_human": "30.0M",
+  "storage_bytes": 120185720,
+  "storage_human": "120 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free : SMS+ entrant [Résolu] - Free mobile - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-30904817-que-signifie-sur-facture-free-mobile-sms-entrant",
+      "snippet": "Oct 13, 2014 · Free : SMS+ entrant Résolu caoulre - Modifié le 13 août 2025 à 14:02 Dernière réponse le 11 janv. 2024 3 réponses"
+    },
+    {
+      "title": "Comment obtenir mon code rio sans mon telephone [Résolu] - Forum …",
+      "url": "https://forums.commentcamarche.net/forum/affich-24912154-comment-obtenir-mon-code-rio-sans-mon-telephone",
+      "snippet": "Bonjour, J'ai égaré mon téléphone - opérateur Leclerc mobile - alors que je voulais adhérer chez free en gardant mon numéro. Le …"
+    },
+    {
+      "title": "Forum Free Mobile - Page d’index",
+      "url": "https://forumfreemobile.fr/",
+      "snippet": "Forum Free Mobile Qui est en ligne Au total il y a 8 utilisateurs en ligne : 2 enregistrés, 0 invisible et 6 invités (d’après le nombre …"
+    },
+    {
+      "title": "Forum Free Mobile - Foire aux questions (Questions posées …",
+      "url": "https://forumfreemobile.fr/app.php/help/faq",
+      "snippet": "Forum Free Mobile Problèmes de connexion et d’enregistrement Pourquoi dois-je m’enregistrer ? Vous pouvez ne pas le faire, mais …"
+    },
+    {
+      "title": "Forum Peugeot e-2008 électrique",
+      "url": "https://forums.automobile-propre.com/forums/peugeot-e-2008-%C3%A9lectrique-101/",
+      "snippet": "Echangez avec des propriétaires et des passionnés de Peugeot 2008 électrique."
+    }
+  ]
+}

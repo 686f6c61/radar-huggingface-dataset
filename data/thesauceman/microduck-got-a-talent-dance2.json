@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "TheSauceman/microduck-got-a-talent-dance2",
+  "slug": "thesauceman-microduck-got-a-talent-dance2",
+  "author": "TheSauceman",
+  "url": "https://huggingface.co/TheSauceman/microduck-got-a-talent-dance2",
+  "created_at": "2026-10-20T02:00:42.000Z",
+  "updated_at": "2026-10-20T02:00:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5637266,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TheSauceman (Stephen E. Tarter) - Hugging Face",
+      "url": "https://huggingface.co/TheSauceman",
+      "snippet": "TheSauceman/microduck-sprint-2m-run-1013-1513 Robotics •Updated about 5 hours ago"
+    },
+    {
+      "title": "TheSauceman (Stephen E. Tarter) - Hugging Face",
+      "url": "https://huggingface.co/TheSauceman/models",
+      "snippet": "TheSauceman/microduck-sprint-2m-run-1013-1513 Robotics •Updated about 6 hours ago"
+    },
+    {
+      "title": "GitHub - pollen-robotics/microduck: A Tiny biped duck robot",
+      "url": "https://github.com/pollen-robotics/microduck",
+      "snippet": "A Tiny biped duck robot 🦆. Contribute to pollen-robotics/microduck development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - AI-FanGe/Microduck-build-tutorial: A practical hardware and ...",
+      "url": "https://github.com/AI-FanGe/Microduck-build-tutorial",
+      "snippet": "A practical hardware and software setup for a compact RL-powered biped robot. - AI-FanGe/Microduck-build-tutorial"
+    },
+    {
+      "title": "Robot duck copies a TikTok dance | Microduck simulator + DuckDance",
+      "url": "https://www.youtube.com/watch?v=qJ37YnaBzfU",
+      "snippet": "I built a web app that watches a dance video and makes a robot duck dancealong. This is the very first end-to-end run, unedited.On the left is the uploaded c..."
+    }
+  ]
+}

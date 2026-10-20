@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "gabe-adib/ove3-k3paper-refit-c3.2e19-h768-lrx2.9",
+  "slug": "gabe-adib-ove3-k3paper-refit-c3-2e19-h768-lrx2-9",
+  "author": "gabe-adib",
+  "url": "https://huggingface.co/gabe-adib/ove3-k3paper-refit-c3.2e19-h768-lrx2.9",
+  "created_at": "2026-10-20T18:00:15.000Z",
+  "updated_at": "2026-10-20T18:01:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16816210856,
+  "storage_human": "16.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gabe Newell - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Gabe_Newell",
+      "snippet": "Gabe Logan Newell (born November 3, 1962), known by his nickname Gaben, is an American video game developer and …"
+    },
+    {
+      "title": "Gabe Newell — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Gabe_Newell",
+      "snippet": "Après avoir quitté Harvard, Gabe Newell commence sa carrière en travaillant pour Microsoft pendant 13 ans. Il y travaille notamment …"
+    },
+    {
+      "title": "I'm Gabe Newell - YouTube",
+      "url": "https://www.youtube.com/watch?v=3IT2Cc_5WxE",
+      "snippet": "Sep 25, 2010 · All credit goes to Mega64"
+    },
+    {
+      "title": "Gabe - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Gabe",
+      "snippet": "Gabe Gabe is a given name and a short form of the given name Gabriel; it is also a surname. Notable people and characters with the …"
+    },
+    {
+      "title": "Gabe Newell - Forbes",
+      "url": "https://www.forbes.com/profile/gabe-newell/",
+      "snippet": "19 hours ago · Gabe Newell has led Valve Corp., which develops video games, since he cofounded it in 1998 with former Microsoft …"
+    }
+  ]
+}

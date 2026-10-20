@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "IzumiThe3rd/Suzu-2.4",
+  "slug": "izumithe3rd-suzu-2-4",
+  "author": "IzumiThe3rd",
+  "url": "https://huggingface.co/IzumiThe3rd/Suzu-2.4",
+  "created_at": "2026-10-20T16:17:55.000Z",
+  "updated_at": "2026-10-20T16:27:34.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "pinyin",
+    "input-method",
+    "ranking",
+    "zh",
+    "dataset:wikimedia/wikipedia",
+    "base_model:IzumiThe3rd/Suzu-2.1",
+    "base_model:quantized:IzumiThe3rd/Suzu-2.1",
+    "license:cc-by-sa-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 40934400,
+  "parameters_human": "40.9M",
+  "storage_bytes": 43949568,
+  "storage_human": "44 MB",
+  "base_model": "IzumiThe3rd/Suzu-2.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DVAJ-627 Subtitles (English) | JavSub.ai",
+      "url": "https://javsub.ai/subtitles/dvaj-627-68859/",
+      "snippet": "Apr 30, 2026 · DVAJ-627 is a 2023 Alice JAPAN release starring Kana Yura, running 130 minutes. 1 AI-translated subtitle track is …"
+    },
+    {
+      "title": "English sub DVAJ-627 The Apartment Landlord's Daughter Is A …",
+      "url": "https://javseen.tv/228007/english-sub-dvaj-627-the-apartment-landlord-s-daughter-is-a-cheeky-adolescent-female-brat-zaakozaako-sorrow-yowayawachi-chin-she-invades-my-room-and-plays-with-my-cock-like-a-toy-and-squeezes-a-little-cum-i-can-t-resist-kana-yura/",
+      "snippet": "Sep 12, 2023 · English sub DVAJ-627 The Apartment Landlord's Daughter Is A Cheeky Adolescent Female Brat Zaakozaako Sorrow …"
+    },
+    {
+      "title": "DVAJ-627 The Apartment Landlord's Daughter Is A Cheeky",
+      "url": "https://javideo.net/en/dvaj-627",
+      "snippet": "Sep 12, 2023 · INFO GALLERY DOWNLOAD Code: dvaj-627 Studios: Alice Japan Categories: High Quality Exclusive Solowork Slut …"
+    },
+    {
+      "title": "DVAJ-627 Yura Kana - TopJAV",
+      "url": "https://topjav.tv/en/video/5084",
+      "snippet": "Enjoy high quality videos fromDVAJ-627 Yura Kana - watch and download for free!"
+    },
+    {
+      "title": "[ENGLISH-SUBTITLE] DVAJ-627 The apartment landlord's daughter …",
+      "url": "https://javmobile.net/dvaj-627-english-subtitle/",
+      "snippet": "One day when I returned home to the apartment I had recently moved into, I found the landlord's daughter had moved in without …"
+    }
+  ]
+}

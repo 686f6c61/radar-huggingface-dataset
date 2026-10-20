@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "BattleGhost/MiMo-V2.6-Flash-RL-UNCENSORED-IQ2S-Down-GGUF",
+  "slug": "battleghost-mimo-v2-6-flash-rl-uncensored-iq2s-down-gguf",
+  "author": "BattleGhost",
+  "url": "https://huggingface.co/BattleGhost/MiMo-V2.6-Flash-RL-UNCENSORED-IQ2S-Down-GGUF",
+  "created_at": "2026-10-20T18:16:36.000Z",
+  "updated_at": "2026-10-20T18:27:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "mimo2",
+    "mixture-of-experts",
+    "multimodal",
+    "uncensored",
+    "experimental",
+    "en",
+    "zh",
+    "base_model:dealignai/MiMo-V2.6-Flash-RL-UNCENSORED",
+    "base_model:quantized:dealignai/MiMo-V2.6-Flash-RL-UNCENSORED",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 309766601088,
+  "parameters_human": "309.77B",
+  "storage_bytes": 91697523808,
+  "storage_human": "91.7 GB",
+  "base_model": "dealignai/MiMo-V2.6-Flash-RL-UNCENSORED",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

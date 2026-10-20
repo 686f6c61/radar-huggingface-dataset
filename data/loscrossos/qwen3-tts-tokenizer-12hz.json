@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "loscrossos/Qwen3-TTS-Tokenizer-12Hz",
+  "slug": "loscrossos-qwen3-tts-tokenizer-12hz",
+  "author": "loscrossos",
+  "url": "https://huggingface.co/loscrossos/Qwen3-TTS-Tokenizer-12Hz",
+  "created_at": "2026-10-20T16:22:00.000Z",
+  "updated_at": "2026-10-20T16:22:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-to-audio",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_tts_tokenizer_12hz",
+    "audio",
+    "tts",
+    "speech",
+    "codec",
+    "audio-to-audio",
+    "arxiv:2601.15621",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 170557441,
+  "parameters_human": "170.6M",
+  "storage_bytes": 682293092,
+  "storage_human": "682 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

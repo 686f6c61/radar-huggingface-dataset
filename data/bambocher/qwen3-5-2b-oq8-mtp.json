@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "bambocher/Qwen3.5-2B-oQ8-mtp",
+  "slug": "bambocher-qwen3-5-2b-oq8-mtp",
+  "author": "bambocher",
+  "url": "https://huggingface.co/bambocher/Qwen3.5-2B-oQ8-mtp",
+  "created_at": "2026-10-20T01:59:31.000Z",
+  "updated_at": "2026-10-20T01:59:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "mtp",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 2274069824,
+  "parameters_human": "2.27B",
+  "storage_bytes": 2748225878,
+  "storage_human": "2.7 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cash Flow Statement | Definition & Example | InvestingAnswers",
+      "url": "https://investinganswers.com/dictionary/c/cash-flow-statement",
+      "snippet": "Mar 31, 2021 · What is a cash flow statement and why is it important for companies and investors? Discover the simplest definition of …"
+    },
+    {
+      "title": "Cash Flow from Operating Activities | Example & Definition",
+      "url": "https://investinganswers.com/dictionary/c/cash-flow-operating-activities",
+      "snippet": "Where to Find Cash Flows from Operating Activities Cash flows from operations can be found in the first section of a cash flow …"
+    },
+    {
+      "title": "Net Cash Flow | Formula & Definition | InvestingAnswers",
+      "url": "https://investinganswers.com/dictionary/n/net-cash-flow",
+      "snippet": "The cash flow statement compiles all of the income and expenses for a specified period and reveals the resulting net cash flow from …"
+    },
+    {
+      "title": "Cash Flow per Share Definition & Example | InvestingAnswers",
+      "url": "https://investinganswers.com/dictionary/c/cash-flow-share",
+      "snippet": "Nov 12, 2020 · Cash flow per share represents the portion of a company's cash flow allocated to each share of common stock."
+    },
+    {
+      "title": "Free Cash Flow (FCF) | Best Definition | InvestingAnswers",
+      "url": "https://investinganswers.com/dictionary/f/free-cash-flow",
+      "snippet": "Sep 29, 2020 · Free Cash Flow Formula and Example The formula to calculate free cash flow is: FCF = Operating Cash Flow - …"
+    }
+  ]
+}

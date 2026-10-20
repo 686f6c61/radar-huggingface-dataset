@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "kiroaiseoul/NAJY_act_task02_c100_gist30_soloall_16D_60k_s1000",
+  "slug": "kiroaiseoul-najy_act_task02_c100_gist30_soloall_16d_60k_s1000",
+  "author": "kiroaiseoul",
+  "url": "https://huggingface.co/kiroaiseoul/NAJY_act_task02_c100_gist30_soloall_16D_60k_s1000",
+  "created_at": "2026-10-20T01:56:59.000Z",
+  "updated_at": "2026-10-20T01:57:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "trossen-mobile-ai",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 51689104,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206786384,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comparateur Box Internet - Les meilleures offres Fibre et ADSL - Que ...",
+      "url": "https://www.quechoisir.org/comparateur-fai-n21205/",
+      "snippet": "Sep 21, 2026 · Notre comparateur de FAI vous permet d’obtenir une vue exhaustive des offres des différents opérateurs, de leurs …"
+    },
+    {
+      "title": "Comparateur box internet : fibre, ADSL et meilleurs prix (2026) - Selectra",
+      "url": "https://selectra.info/telecom/comparatif-internet",
+      "snippet": "Comparez toutes les box internet du marché : fibre, ADSL, 4G/5G. Offres dès 23€/mois, test d'éligibilité gratuit et classement …"
+    },
+    {
+      "title": "Meilleure Box Internet : Comparateur des Offres 2026 | Frandroid",
+      "url": "https://www.frandroid.com/offre-internet-comparateur-des-meilleures-offres-fibre-et-adsl",
+      "snippet": "Oct 9, 2026 · Grâce au comparateur de Box Internet de Frandroid, trouvez l’offre qui répond à vos besoins et à votre budget."
+    },
+    {
+      "title": "Internet Providers In My Area By ZIP Code » Compare Deals & Save",
+      "url": "https://www.inmyarea.com/internet",
+      "snippet": "Apr 30, 2026 · Find internet service with download speeds up to 1 Gbps from Fiber, Cable, DSL, Wireless and Satellite providers. …"
+    },
+    {
+      "title": "Comparateur box internet : le comparatif des 63 offres du marché en ...",
+      "url": "https://www.echosdunet.net/comparateur-box-internet",
+      "snippet": "Oct 13, 2021 · Comparatif en direct des offres box internet du marché, classées par prix, débit, TV et engagement. Tableau de …"
+    }
+  ]
+}

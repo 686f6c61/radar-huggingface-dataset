@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Infini-Srr/Krea2-Cat-Tower-v2-Raw-BF16",
+  "slug": "infini-srr-krea2-cat-tower-v2-raw-bf16",
+  "author": "Infini-Srr",
+  "url": "https://huggingface.co/Infini-Srr/Krea2-Cat-Tower-v2-Raw-BF16",
+  "created_at": "2026-10-20T01:57:52.000Z",
+  "updated_at": "2026-10-20T01:57:54.000Z",
+  "license": "krea-2-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "base_model:krea/Krea-2-Raw",
+    "base_model:finetune:krea/Krea-2-Raw",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26280482032,
+  "storage_human": "26.3 GB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Test politique - Quizz.biz",
+      "url": "https://www.quizz.biz/quizz-1012359.html",
+      "snippet": "Test Test politique : Es-tu écologiste, de droite, du centre, de gauche, de l'extrême gauche ou de l'extrême droite ? - Q1: Parmi ces 4 …"
+    },
+    {
+      "title": "Test de personnalité Qui es-tu - Quizz.biz",
+      "url": "https://www.quizz.biz/quizz-997180.html",
+      "snippet": "Test de personnalité Qui es-tu ? : Je suis persuadée que cette question s'est toujours baladée dans un coin de ton esprit. - Q1: Ne …"
+    },
+    {
+      "title": "Fast Test: Teste de Velocidade Netflix | Minha Conexão",
+      "url": "https://www.minhaconexao.com.br/teste-de-velocidade-netflix",
+      "snippet": "O Teste de internet - Internet Speed Test Minha Conexão - é um teste de velocidade desenvolvido para que você possa medir o …"
+    },
+    {
+      "title": "Velocímetro Minha Conexão | Faça seu Teste de Velocidade!",
+      "url": "https://www.minhaconexao.com.br/teste-de-velocidade/velocimetro",
+      "snippet": "Saiba Como Funciona O Velocímetro do Minha Conexão! 🌐 Veja Como Fazer o Teste de Velocidade e Como Avaliar o Resultado!"
+    },
+    {
+      "title": "MyBroadband Insights",
+      "url": "https://research.mybroadband.co.za/",
+      "snippet": "Speed Test App The MyBroadband Speed Test app is your go-to tool for testing internet performance with precision and ease. …"
+    }
+  ]
+}

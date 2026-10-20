@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "gradium/phonon-31m-en",
+  "slug": "gradium-phonon-31m-en",
+  "author": "gradium",
+  "url": "https://huggingface.co/gradium/phonon-31m-en",
+  "created_at": "2026-10-19T12:02:53.000Z",
+  "updated_at": "2026-10-20T14:04:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "text-to-speech",
+    "tts",
+    "streaming",
+    "on-device",
+    "phonon",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 13,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 41096035,
+  "parameters_human": "41.1M",
+  "storage_bytes": 222732621,
+  "storage_human": "223 MB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

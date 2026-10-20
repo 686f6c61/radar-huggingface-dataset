@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Mustyyyy/dsn-lid-afrihubert",
+  "slug": "mustyyyy-dsn-lid-afrihubert",
+  "author": "Mustyyyy",
+  "url": "https://huggingface.co/Mustyyyy/dsn-lid-afrihubert",
+  "created_at": "2026-10-20T16:18:22.000Z",
+  "updated_at": "2026-10-20T16:18:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "audio-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hubert",
+    "audio-classification",
+    "language-identification",
+    "nigerian-languages",
+    "arxiv:2409.20201",
+    "base_model:ajesujoba/AfriHuBERT",
+    "base_model:finetune:ajesujoba/AfriHuBERT",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 94571930,
+  "parameters_human": "94.6M",
+  "storage_bytes": 378313344,
+  "storage_human": "378 MB",
+  "base_model": "ajesujoba/AfriHuBERT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "“Tell Me Where I Can Be Safe”: The Impact of Nigeria’s Same Sex ...",
+      "url": "https://www.hrw.org/report/2016/10/20/tell-me-where-i-can-be-safe/impact-nigerias-same-sex-marriage-prohibition-act",
+      "snippet": "Oct 20, 2016 · This report shows how the law, which took effect in January 2014, is used by some police officers and members of the …"
+    },
+    {
+      "title": "Google Photos & your child's Google Account",
+      "url": "https://support.google.com/families/answer/7103261?hl=en",
+      "snippet": "If you created a Google Account for a child under 13 (or the applicable age in your country), you can manage your child's sharing in …"
+    },
+    {
+      "title": "Witness: Beaten, Shocked, Tortured – Life for Boys in Egypt’s Prisons",
+      "url": "https://www.hrw.org/news/2020/03/23/witness-beaten-shocked-tortured-life-boys-egypts-prisons",
+      "snippet": "Mar 23, 2020 · Children as young as 12 have been tortured in Egypt’s prisons. Horrific accounts of what happened to them include …"
+    },
+    {
+      "title": "Nudity and sexual content policy - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/2802002?hl=en-GB",
+      "snippet": "This policy applies to videos, video descriptions, comments, live streams, audio and any other YouTube product or feature. …"
+    },
+    {
+      "title": "Fun at the Drive-in - XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/fun-at-the-drive-in.509809/",
+      "snippet": "May 20, 2018 · It was the summer of 1958 and my older sister Kathy had just gotten her driver’s license. It was the era of drive-in …"
+    }
+  ]
+}

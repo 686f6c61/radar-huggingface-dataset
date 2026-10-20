@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "guicybercode/NBR-1B-Portuguese-MCQ-GGUF",
+  "slug": "guicybercode-nbr-1b-portuguese-mcq-gguf",
+  "author": "guicybercode",
+  "url": "https://huggingface.co/guicybercode/NBR-1B-Portuguese-MCQ-GGUF",
+  "created_at": "2026-10-20T18:49:31.000Z",
+  "updated_at": "2026-10-20T18:54:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "gguf",
+    "quantized",
+    "text-generation",
+    "pt",
+    "base_model:limajr/NBR-1B-Portuguese-MCQ",
+    "base_model:quantized:limajr/NBR-1B-Portuguese-MCQ",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1279887360,
+  "parameters_human": "1.28B",
+  "storage_bytes": 4757153920,
+  "storage_human": "4.8 GB",
+  "base_model": "limajr/NBR-1B-Portuguese-MCQ",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "【緊急】我が家のPCがウイルスに感染した件 - 先日、私はPC …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q13194880798",
+      "snippet": "Aug 20, 2018 · ①タップスネーク，②pornhubは問題ない。 ③アンインストールすれば良い ⑤ウイルスバスターの結果は信用でき …Read more"
+    },
+    {
+      "title": "Pornhubの動画をダウンロードするために使っているフリーソフト …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q14208776324",
+      "snippet": "Jun 6, 2019 · Pornhubの動画をダウンロードするために使っているフリーソフトを教えてください。 VideoProcという動画ダウン …"
+    },
+    {
+      "title": "Supprimer compte pornhub - Forum Réseaux sociaux",
+      "url": "https://forums.commentcamarche.net/forum/affich-36953588-supprimer-compte-pornhub",
+      "snippet": "Nov 20, 2020 · Bonjour, \"Pour supprimer votre compte, utilisez le menu déroulant en haut à droite de la page contenant votre photo …"
+    },
+    {
+      "title": "Eliminar cuenta de Pornhub - CCM - Foro tecnológico",
+      "url": "https://forums.commentcamarche.net/forum/affich-36953588-supprimer-compte-pornhub?lang=es",
+      "snippet": "Hola, solicítalo por correo electrónico a support@pornhub.com -- bazfile Moderador/Contribuyente de seguridad. un hola, una …"
+    },
+    {
+      "title": "pornhubにアクセスした所、年齢確認が出て、押してしまったらこ …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q14287133394",
+      "snippet": "Oct 7, 2023 · pornhubにアクセスした所、年齢確認が出て、押してしまったらこのような画面になりました。 これから12時間いな …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "BlameOmar/zeta-2.1-oQ4e-fp16",
+  "slug": "blameomar-zeta-2-1-oq4e-fp16",
+  "author": "BlameOmar",
+  "url": "https://huggingface.co/BlameOmar/zeta-2.1-oQ4e-fp16",
+  "created_at": "2026-10-20T16:24:25.000Z",
+  "updated_at": "2026-10-20T16:26:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "llama",
+    "oq",
+    "quantized",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8250462208,
+  "parameters_human": "8.25B",
+  "storage_bytes": 4859288953,
+  "storage_human": "4.9 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Investmon | World Economic Forum",
+      "url": "https://www.weforum.org/organizations/investmon-corp/",
+      "snippet": "Investmon Corp., a family-owned investment company with total assets of CHF1 billion, specializes in high-impact, disruptive …"
+    },
+    {
+      "title": "Tushar Singhvi | World Economic Forum",
+      "url": "https://www.weforum.org/people/tushar-singhvi/",
+      "snippet": "Tushar Singhvi leads corporate development and investments activities and is responsible for evaluating and executing new …"
+    },
+    {
+      "title": "How market failures can help cause antibiotic resistance",
+      "url": "https://www.weforum.org/stories/health-and-healthcare-systems/antibiotics-resistance-market-failures-global-health/",
+      "snippet": "Apr 25, 2024 · Antibiotics have lowered deaths from infectious diseases, but we need to overcome the economic challenges to …"
+    },
+    {
+      "title": "Airobotics | World Economic Forum",
+      "url": "https://www.weforum.org/organizations/airobotics/",
+      "snippet": "Airobotics has developed a fully-automated data-driven drone solution certified to fly without human operators – a world-first. …"
+    },
+    {
+      "title": "4 ways to retain older workers and boost the global economy",
+      "url": "https://www.weforum.org/stories/all/4-ways-to-retain-older-workers-and-boost-the-global-economy/",
+      "snippet": "Mar 18, 2026 · Increasing the employment of older workers could have a meaningful impact on the economic drag from an ageing …"
+    }
+  ]
+}

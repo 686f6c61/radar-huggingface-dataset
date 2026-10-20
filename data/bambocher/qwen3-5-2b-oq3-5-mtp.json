@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "bambocher/Qwen3.5-2B-oQ3.5-mtp",
+  "slug": "bambocher-qwen3-5-2b-oq3-5-mtp",
+  "author": "bambocher",
+  "url": "https://huggingface.co/bambocher/Qwen3.5-2B-oQ3.5-mtp",
+  "created_at": "2026-10-20T01:57:22.000Z",
+  "updated_at": "2026-10-20T01:57:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "mtp",
+    "3-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 2274069824,
+  "parameters_human": "2.27B",
+  "storage_bytes": 1686083531,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aviation analytics - Cirium",
+      "url": "https://www.cirium.com/",
+      "snippet": "Cirium projects 43,000 aircraft deliveries through 2045 The new Cirium Fleet Forecast projects commercial aircraft deliveries worth …"
+    },
+    {
+      "title": "Dashboard - Cirium",
+      "url": "https://www.cirium.com/analytics-services/dashboard/",
+      "snippet": "Cirium Dashboard provides the latest aviation news, data and analytics on the aviation industry in a single web interface."
+    },
+    {
+      "title": "About - Cirium",
+      "url": "https://www.cirium.com/about/",
+      "snippet": "Cirium is the aviation industry’s most trusted source of analytics. We unify data across fleets, schedules, flights, and traffic and fares …"
+    },
+    {
+      "title": "Fleets Analyzer - Cirium",
+      "url": "https://www.cirium.com/analytics-services/fleets-analyzer/",
+      "snippet": "Understand the global fleet landscape, make decisions around trading aircraft, monitor aircraft portfolios, manage financial risk and …"
+    },
+    {
+      "title": "Schedules and Routes Data - Cirium",
+      "url": "https://www.cirium.com/data/flight-schedules/",
+      "snippet": "Cirium is the gold standard for fresh, accurate data and easy-to-use tools. Our clients around the world view Cirium data as …"
+    }
+  ]
+}

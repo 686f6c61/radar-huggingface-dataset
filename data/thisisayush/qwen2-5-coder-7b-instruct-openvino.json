@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "thisisayush/Qwen2.5-Coder-7B-Instruct-openvino",
+  "slug": "thisisayush-qwen2-5-coder-7b-instruct-openvino",
+  "author": "thisisayush",
+  "url": "https://huggingface.co/thisisayush/Qwen2.5-Coder-7B-Instruct-openvino",
+  "created_at": "2026-10-20T18:10:43.000Z",
+  "updated_at": "2026-10-20T18:11:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "openvino",
+    "qwen2",
+    "text-generation",
+    "code",
+    "codeqwen",
+    "chat",
+    "qwen",
+    "qwen-coder",
+    "openvino-export",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7621443093,
+  "storage_human": "7.6 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "New - 102894 videos on SexyPorn - SxyPrn porn (latest)",
+      "url": "https://www.sxyprn.com/new.html",
+      "snippet": "New - free porn site. [102894 videos]. SxyPrn ARMATA GROUP. (latest)"
+    },
+    {
+      "title": "Free Porn Videos & Sex Movies - Porno, XXX, Porn Tube | Pornhub",
+      "url": "https://www.pornhub.com/",
+      "snippet": "Welcome to Pornhub.com, home of the best hardcore free porn videos with the hottest adult stars. Get full length scenes from your …"
+    },
+    {
+      "title": "sexy-porn videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/tags/sexy-porn",
+      "snippet": "Porno casero. Sexy model does porn for the first and last time! BEST!!!!!! superhot porn!"
+    },
+    {
+      "title": "SexyPorn - Free Porn Site",
+      "url": "https://www.sxyprn.com/",
+      "snippet": "Enjoy the high quality porn videos, upload original content ..."
+    },
+    {
+      "title": "Pornhub - Free HD Porn Videos & Online Sex Movies",
+      "url": "https://en-pornhub.com/",
+      "snippet": "The big-breasted sister-in-law yu yuexi was trained as a bitch by her two lusty younger brothers and squeezed out her breast milk at …"
+    }
+  ]
+}

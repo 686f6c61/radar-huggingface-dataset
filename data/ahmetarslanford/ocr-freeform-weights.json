@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "AhmetArslanford/ocr-freeform-weights",
+  "slug": "ahmetarslanford-ocr-freeform-weights",
+  "author": "AhmetArslanford",
+  "url": "https://huggingface.co/AhmetArslanford/ocr-freeform-weights",
+  "created_at": "2026-10-20T02:03:11.000Z",
+  "updated_at": "2026-10-20T02:03:15.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "ocr-freeform",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AhmetArslanford/ocr-freeform-weights · Hugging Face",
+      "url": "https://huggingface.co/AhmetArslanford/ocr-freeform-weights",
+      "snippet": "This repository contains a working research note about OCR Freeform. It organizes motivation, related work, a falsifiable hypothesis, and an evaluation plan. It is not presented as a completed paper or a release of trained models. Start with review.md for the full note. Sections labeled as plans or ..."
+    },
+    {
+      "title": "AhmetArslanford (Ahmet A.) - Hugging Face",
+      "url": "https://huggingface.co/AhmetArslanford",
+      "snippet": "image generation, speech recognition, vector databases, nlp"
+    },
+    {
+      "title": "awesome-ocr-resources/updates/2026/2026-10-13.md at master ... - GitHub",
+      "url": "https://github.com/ZumingHuang/awesome-ocr-resources/blob/master/updates/2026/2026-10-13.md",
+      "snippet": "Local-first screen context for Claude Code, Codex, Gemini CLI and Muse Code.- rubenitx/stackshot — text-recognition: Free screenshot tool and screen recorder for Windows: floating thumbnails, quick editor, scrolling capture, text search with OCR, MP4 and GIF."
+    },
+    {
+      "title": "Open Source AI Models - GitHub",
+      "url": "https://github.com/zidniryi/open-source-ai-models",
+      "snippet": "A curated directory of open-source and open-weight AI models for developers, researchers, and AI builders. Find the right AI model for coding, OCR, computer vision, image generation, speech, reasoning, RAG, agents, and more — with the parameters, hardware requirements, and license you need to ..."
+    },
+    {
+      "title": "Best Open-Weight OCR and Document AI Models 2026",
+      "url": "https://presenc.ai/research/best-open-weight-ocr-document-ai-models-2026",
+      "snippet": "Research Best Open-Weight OCR and Document AI Models 2026 Open-weight OCR and document AI leaderboard 2026: GOT-OCR2, Qwen2.5-VL OCR, ColPali, DocLayout-YOLO, Florence-2, Nougat, Marker. Benchmarks, latency, license, deployment patterns."
+    }
+  ]
+}

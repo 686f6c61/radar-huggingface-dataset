@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Ssantosnicole/perceiver-finetuned",
+  "slug": "ssantosnicole-perceiver-finetuned",
+  "author": "Ssantosnicole",
+  "url": "https://huggingface.co/Ssantosnicole/perceiver-finetuned",
+  "created_at": "2026-10-20T02:12:25.000Z",
+  "updated_at": "2026-10-20T02:12:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "finetuned-model · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/finetuned-model",
+      "snippet": "Specialised AI-powered Query Assistant for Agriculture and Horticulture using Retrieval-Augmented Generation (RAG) architecture, which combines the strengths of a fine-tuned model with external, verifiable data."
+    },
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "Los Santos Alive - Next Generation AI NPCs - GTA5-Mods.com",
+      "url": "https://www.gta5-mods.com/scripts/los-santos-alive-next-generation-ai-npcs",
+      "snippet": "Los Santos Alive A next-generation AI-driven roleplay sandbox for GTA V. Join the Los Santos Alive Discord Community Want even more? The largest update in Los Santos Alive&#x27;s history, Simulation 2.0, is available now for Patreon supporters. Get The Latest Builds Los Santos Alive transforms Grand Theft Auto V into a living social world where pedestrians can think, react, converse, and physically ..."
+    },
+    {
+      "title": "Kflores66/perceiver-finetuned · Hugging Face",
+      "url": "https://huggingface.co/Kflores66/perceiver-finetuned",
+      "snippet": "Kflores66 / perceiver-finetuned Like 0 Safetensors PyTorch perceiver classification License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Perceiver for Classification Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files License"
+    },
+    {
+      "title": "emilysmithge/perceiver-finetuned · Hugging Face",
+      "url": "https://huggingface.co/emilysmithge/perceiver-finetuned",
+      "snippet": "emilysmithge / perceiver-finetuned like 0 Safetensors PyTorch perceiver contrastive License:bsd-3-clause Model card FilesFiles and versions xet Community Copy to bucket new Perceiver for Contrastive Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files License"
+    }
+  ]
+}

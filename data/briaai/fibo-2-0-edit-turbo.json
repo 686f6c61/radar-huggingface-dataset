@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "briaai/Fibo-2.0-edit-turbo",
+  "slug": "briaai-fibo-2-0-edit-turbo",
+  "author": "briaai",
+  "url": "https://huggingface.co/briaai/Fibo-2.0-edit-turbo",
+  "created_at": "2026-10-19T13:11:51.000Z",
+  "updated_at": "2026-10-20T18:14:34.000Z",
+  "license": "bria-fibo",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "image-editing",
+    "image-to-image",
+    "inpainting",
+    "multi-reference",
+    "distillation",
+    "structured-prompts",
+    "vgl",
+    "fibo",
+    "en",
+    "arxiv:2511.06876",
+    "base_model:briaai/Fibo-2.0-dev",
+    "base_model:finetune:briaai/Fibo-2.0-dev",
+    "license:other",
+    "diffusers:BriaFibo2Pipeline",
+    "region:us"
+  ],
+  "likes": 21,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 8127342213,
+  "parameters_human": "8.13B",
+  "storage_bytes": 25485587073,
+  "storage_human": "25.5 GB",
+  "base_model": "briaai/Fibo-2.0-dev",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Porn Videos & Sex Movies - Porno, XXX, Porn Tube | Pornhub",
+      "url": "https://www.pornhub.com/",
+      "snippet": "Pornhub provides you with unlimited free porn videos with the hottest pornstars. Enjoy the largest amateur porn community on the …"
+    },
+    {
+      "title": "Pornhub - Free HD Porn Videos & Online Sex Movies",
+      "url": "https://en-pornhub.com/",
+      "snippet": "Hot amateur teen sex – girl with big tits fucked hard 0 HD 19:01 The landlord caught a teen student shooting porn 0 HD 12:51 Step …"
+    },
+    {
+      "title": "Pornhub | Free Porn Videos & Sex Movies - Porno, XXX Tube",
+      "url": "https://m-pornhub.com/",
+      "snippet": "Enjoy the hottest free porn videos in HD. Pornhub run has all the latest with top pornstars in every xxx video category."
+    },
+    {
+      "title": "Pornhub Videos & Streaming Content | Pornhub",
+      "url": "https://en-pornhub.com/sites/pornhub/",
+      "snippet": "Mi madrastra me muestra su culo como le queda el short jean 0 HD 26:39 Desi couple porn indian husband sharing his wife with …"
+    },
+    {
+      "title": "Vidéos porno et films de sexe gratuits - Porno, XXX, Porn Tube | Pornhub",
+      "url": "https://fr.pornhub.com/",
+      "snippet": "Bienvenue sur Pornhub.com, le site des meilleures vidéos porno hardcore gratuites avec les stars les plus chaudes du hard. …"
+    }
+  ]
+}

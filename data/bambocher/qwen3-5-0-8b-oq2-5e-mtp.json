@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "bambocher/Qwen3.5-0.8B-oQ2.5e-mtp",
+  "slug": "bambocher-qwen3-5-0-8b-oq2-5e-mtp",
+  "author": "bambocher",
+  "url": "https://huggingface.co/bambocher/Qwen3.5-0.8B-oQ2.5e-mtp",
+  "created_at": "2026-10-20T01:25:55.000Z",
+  "updated_at": "2026-10-20T01:26:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "mtp",
+    "2-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 873438784,
+  "parameters_human": "873.4M",
+  "storage_bytes": 547608184,
+  "storage_human": "548 MB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "XingChen-AGI/Xing4.0-29B-Intent",
+  "slug": "xingchen-agi-xing4-0-29b-intent",
+  "author": "XingChen-AGI",
+  "url": "https://huggingface.co/XingChen-AGI/Xing4.0-29B-Intent",
+  "created_at": "2026-10-15T05:54:58.000Z",
+  "updated_at": "2026-10-20T09:02:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xing4_0",
+    "text-generation",
+    "intent-recognition",
+    "slot-filling",
+    "information-extraction",
+    "schema-guided",
+    "named-entity-recognition",
+    "relation-extraction",
+    "event-extraction",
+    "conversational",
+    "custom_code",
+    "zh",
+    "en",
+    "dataset:XingChen-AGI/Xing4.0-29B-Intent-oss",
+    "arxiv:2512.24157",
+    "arxiv:2507.18013",
+    "base_model:XingChen-AGI/Xing4.0-29B-A4B",
+    "base_model:finetune:XingChen-AGI/Xing4.0-29B-A4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 15,
+  "downloads_30d": 46,
+  "trending_score": 15,
+  "parameters": 31215031088,
+  "parameters_human": "31.22B",
+  "storage_bytes": 62433282310,
+  "storage_human": "62.4 GB",
+  "base_model": "XingChen-AGI/Xing4.0-29B-A4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pubic Hair 101: Everything you Need to Know About Maintenance",
+      "url": "https://www.them.us/story/a-guide-to-grooming-or-not-grooming-your-pubic-hair",
+      "snippet": "Jul 31, 2025 · Pubic Hair, explained: If you have a bush — or your pubic hair is fully grown out — maintaining it can be an important …"
+    },
+    {
+      "title": "Play Online - Rummikub",
+      "url": "https://rummikub.com/play-online/",
+      "snippet": "Play Online - Rummikub ... Play Now"
+    },
+    {
+      "title": "'extremely-hairy' Search - XNXX.COM",
+      "url": "https://www.xnxx.com/search/extremely-hairy",
+      "snippet": "Pantiesqueen Sexy tattoo school girl in stockings is riding huge dildo with big hairy cunt 81.3k 100% 7min - 1440p Bunnieandthedude …"
+    },
+    {
+      "title": "Why it took me 19 years to embrace my brown skin and body hair - Quartz",
+      "url": "https://qz.com/india/535095/why-it-took-me-19-years-to-embrace-my-brown-skin-and-body-hair",
+      "snippet": "Jul 21, 2022 · 9 years old: I find a tube of hair removal cream in the bathroom. I decide to use it on my arms, but it takes too long and …"
+    },
+    {
+      "title": "How to Grow a Full Bush & Care for Your Pubic Hair - Truly Beauty",
+      "url": "https://www.trulybeauty.com/blogs/body/how-to-grow-and-groom-a-full-lady-bush",
+      "snippet": "Oct 20, 2025 · From Emma Watson to Ashley Graham, women are embracing a full bush. Learn how to maintain a full bush in just …"
+    }
+  ]
+}

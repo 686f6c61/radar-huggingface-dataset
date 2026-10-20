@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "allan-valin/allosaurus-onnx",
+  "slug": "allan-valin-allosaurus-onnx",
+  "author": "allan-valin",
+  "url": "https://huggingface.co/allan-valin/allosaurus-onnx",
+  "created_at": "2026-10-20T01:07:55.000Z",
+  "updated_at": "2026-10-20T01:08:05.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "phone-recognition",
+    "ipa",
+    "speech",
+    "arxiv:2002.11800",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44935238,
+  "storage_human": "45 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alan | Le leader de l’Assurance Prévention : la santé n’attend pas",
+      "url": "https://alan.com/",
+      "snippet": "Alan permet à chacun d’agir sur sa santé physique et mentale, en alliant le meilleur de la prévention et de l’assurance, le tout au sein …"
+    },
+    {
+      "title": "Allan (Drôme) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Allan_(Dr%C3%B4me)",
+      "snippet": "Pour les articles homonymes, voir Allan. ... Allan est une commune française située dans le département de la Drôme, en région …"
+    },
+    {
+      "title": "Commune d'Allan",
+      "url": "https://mairie-allan.fr/",
+      "snippet": "5 days ago · Venez passer une soirée concert le samedi 14 novembre à l'espace d'animation d'Allan. 20h30. Le groupe Scmoll …"
+    },
+    {
+      "title": "Plan Allan : carte de Allan (26780) et infos pratiques - Mappy",
+      "url": "https://fr.mappy.com/plan/26780-allan",
+      "snippet": "Vous recherchez la carte ou le plan de Allan et de ses environs ? Trouvez l’adresse qui vous intéresse sur le plan de Allan ou …"
+    },
+    {
+      "title": "Alan — Assurance santé de confiance pour les retraités",
+      "url": "https://alan.com/fr-fr/assurance-sante/retraite",
+      "snippet": "Nos garanties solides et outils de prévention sont là pour vous aider à rester en bonne santé, plus longtemps."
+    }
+  ]
+}

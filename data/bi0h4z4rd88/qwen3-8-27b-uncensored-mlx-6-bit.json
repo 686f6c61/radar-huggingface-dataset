@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "bi0h4z4rd88/Qwen3.8-27B-Uncensored-MLX-6-bit",
+  "slug": "bi0h4z4rd88-qwen3-8-27b-uncensored-mlx-6-bit",
+  "author": "bi0h4z4rd88",
+  "url": "https://huggingface.co/bi0h4z4rd88/Qwen3.8-27B-Uncensored-MLX-6-bit",
+  "created_at": "2026-10-20T02:15:42.000Z",
+  "updated_at": "2026-10-20T02:27:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 22797869090,
+  "storage_human": "22.8 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zomiailabs/Qwen3.8-27B-Uncensored-MLX · Hugging Face",
+      "url": "https://huggingface.co/zomiailabs/Qwen3.8-27B-Uncensored-MLX",
+      "snippet": "How to use zomiailabs/Qwen3.8-27B-Uncensored-MLX with MLX: # Make sure mlx-vlm is installed # pip install --upgrade mlx-vlm from mlx_vlm import load, generate from mlx_vlm.prompt_utils import apply_chat_template from mlx_vlm.utils import load_config # Load the model model, processor = load ..."
+    },
+    {
+      "title": "SolsticeAI/Qwen3.8-27B-Uncensored-mlx-6Bit · Hugging Face",
+      "url": "https://huggingface.co/SolsticeAI/Qwen3.8-27B-Uncensored-mlx-6Bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - onurburak9/Qwen3.8-27B-Uncensored-MLX",
+      "url": "https://github.com/onurburak9/Qwen3.8-27B-Uncensored-MLX",
+      "snippet": "An abliterated (refusal-removed) build of Qwen/Qwen3.8-27B — a 27B-parameter dense, hybrid-attention (Gated DeltaNet linear + full attention) native vision-language model with thinking control, tool-calling and an MTP head — quantized to MLX format for Apple Silicon. Four precisions are provided as subfolders: 2 / 4 / 6 / 8-bit (affine, group size 64). The vision tower, norms and conv ..."
+    },
+    {
+      "title": "Qwen3.8-27B Uncensored MLX: Why This Apple Silicon AI Model Caught My ...",
+      "url": "https://builder.aws.com/content/3IRhMoqn727uv4IERv7IaO9ACJh/qwen38-27b-uncensored-mlx-why-this-apple-silicon-ai-model-caught-my-attention",
+      "snippet": "I recently explored an MLX-optimized build of Qwen3.8-27B for Apple Silicon. What stood out was its multiple quantization options and how they balance performance with memory usage. Since its safety alignment has been removed, it&#x27;s best viewed as a research tool for AI safety and red-teaming rather than a production-ready assistant."
+    },
+    {
+      "title": "orcarouter/Qwen3.8-27B-Uncensored",
+      "url": "https://ollama.com/orcarouter/Qwen3.8-27B-Uncensored",
+      "snippet": "Ollama build of Qwen3.8-27B-Uncensored — an abliterated (refusal-removed) build of Qwen&#x27;s Qwen3.8-27B, a 27B dense hybrid-attention (Gated DeltaNet linear + full attention) native vision-language model with reasoning, tool-calling, and an MTP speculative-decoding head. Sixteen tags from 2-bit to 8-bit, each with the mmproj vision projector bundled in — nothing extra to fetch. Browse all ..."
+    }
+  ]
+}

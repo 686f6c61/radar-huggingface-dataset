@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "gaze2hoi/Gaze2HOI",
+  "slug": "gaze2hoi-gaze2hoi",
+  "author": "gaze2hoi",
+  "url": "https://huggingface.co/gaze2hoi/Gaze2HOI",
+  "created_at": "2026-10-20T01:47:51.000Z",
+  "updated_at": "2026-10-20T02:23:59.000Z",
+  "license": "gaze2hoi-component-licenses",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gaze",
+    "egocentric-vision",
+    "hand-object-interaction",
+    "motion-forecasting",
+    "diffusion",
+    "lora",
+    "en",
+    "base_model:Qwen/Qwen3-VL-8B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-VL-8B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 361755918,
+  "storage_human": "362 MB",
+  "base_model": "Qwen/Qwen3-VL-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "@ICKY - Linktree",
+      "url": "https://linktr.ee/ICKY",
+      "snippet": "@ICKY has been a member of Linktree for 6 years and joined in June 2020. The @ICKY OnlyFans account can be found on their …"
+    },
+    {
+      "title": "icky‼️ (@ickypea) / X",
+      "url": "https://x.com/ickypea",
+      "snippet": "icky with an uncapital i ;) pfp by @bekoyashi || not spoiler free"
+    },
+    {
+      "title": "icky (@big_icky) • Instagram photos and videos",
+      "url": "https://www.instagram.com/big_icky/",
+      "snippet": "285K Followers, 1,738 Following, 158 Posts - See Instagram photos and videos from icky喝 (@big_icky)"
+    },
+    {
+      "title": "(@ickypeach) / X",
+      "url": "https://x.com/ickypeach",
+      "snippet": "These posts are protected Only approved followers can see @ickypeach’s posts. To request access, click Follow. Learn more"
+    },
+    {
+      "title": "ICKY - YouTube",
+      "url": "https://www.youtube.com/@bigicky",
+      "snippet": "Hi, I'm icky :) I made a clothing brand !! Live 6pm (BST) Mon-Fri on Twitch >:) Second channel: @smallickyy …"
+    }
+  ]
+}

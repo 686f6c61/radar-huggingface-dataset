@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "nvidia/GR00T-N1.7-3B",
+  "slug": "nvidia-gr00t-n1-7-3b",
+  "author": "nvidia",
+  "url": "https://huggingface.co/nvidia/GR00T-N1.7-3B",
+  "created_at": "2026-02-25T00:39:18.000Z",
+  "updated_at": "2026-04-23T19:09:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "Gr00tN1d7",
+    "robotics",
+    "arxiv:2503.14734",
+    "region:us"
+  ],
+  "likes": 163,
+  "downloads_30d": 106090,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 13421964025,
+  "storage_human": "13.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Téléchargez les pilotes NVIDIA officiels | NVIDIA",
+      "url": "https://www.nvidia.com/fr-fr/drivers/",
+      "snippet": "Téléchargez les pilotes NVIDIA officiels les plus récents pour optimiser votre expérience de jeu sur PC et faire tourner vos …"
+    },
+    {
+      "title": "World Leader in Artificial Intelligence Computing | NVIDIA",
+      "url": "https://www.nvidia.com/",
+      "snippet": "NVIDIA RTX™ powers the world’s fastest PCs and the ultimate platform for gamers and creators. Enjoy beautiful ray tracing, AI …"
+    },
+    {
+      "title": "Téléchargements de pilotes NVIDIA",
+      "url": "https://www.nvidia.fr/Download/indexsg.aspx?lang=fr",
+      "snippet": "Download drivers for NVIDIA products including GeForce graphics cards, nForce motherboards, Quadro workstations, and more. …"
+    },
+    {
+      "title": "NVIDIA Marketplace - Boutique NVIDIA officielle pour les centres de ...",
+      "url": "https://marketplace.nvidia.com/fr-fr/",
+      "snippet": "Achetez les derniers produits NVIDIA sur la boutique officielle Marketplace. Découvrez dès aujourd'hui les puissants GPU de la série …"
+    },
+    {
+      "title": "nvidia : Toute l'Actualité du monde informatique sur nvidia",
+      "url": "https://www.lemondeinformatique.fr/toute-l-actualite-marque-sur-nvidia-83.html",
+      "snippet": "Jul 30, 2026 · le 14 Octobre 2026 / Intelligence artificielle Nvidia investit dans Doctolib et trois entreprises françaises de l'IA Ces …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "itsstephaniehernandez/contrastive-2023",
+  "slug": "itsstephaniehernandez-contrastive-2023",
+  "author": "itsstephaniehernandez",
+  "url": "https://huggingface.co/itsstephaniehernandez/contrastive-2023",
+  "created_at": "2026-10-20T02:02:15.000Z",
+  "updated_at": "2026-10-20T02:02:20.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "itsstephaniehernandez (stephaniehernandez) - Hugging Face",
+      "url": "https://huggingface.co/itsstephaniehernandez/models",
+      "snippet": "itsstephaniehernandez&#x27;s models1 Sort: Recently updated itsstephaniehernandez/contrastive-2023 49.6k•Updated about 10 hours ago• 9"
+    },
+    {
+      "title": "GitHub - Contrastive-LM/CLM: Contrastive Language Models (CLMs) are a ...",
+      "url": "https://github.com/Contrastive-LM/CLM",
+      "snippet": "🔥 Contrastive Language Models (CLMs) are a new class of System One model trained with a contrastive learning objective that connects states and actions. This repo serves CLM-8B behind a TypeSafe-compatible API."
+    },
+    {
+      "title": "MORITZLANGE/contrastive-2023 · Hugging Face",
+      "url": "https://huggingface.co/MORITZLANGE/contrastive-2023",
+      "snippet": "MORITZLANGE / contrastive-2023 Like 0 Safetensors PyTorch tiny_transformer tiny-transformer contrastive License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Tiny Transformer for Contrastive Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files License"
+    },
+    {
+      "title": "ConDA: Contrastive Domain Adaptation for AI-generated Text Detection",
+      "url": "https://aclanthology.org/2023.ijcnlp-main.40/",
+      "snippet": "Amrita Bhattacharjee, Tharindu Kumarage, Raha Moraffah, Huan Liu. Proceedings of the 13th International Joint Conference on Natural Language Processing and the 3rd Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics (Volume 1: Long Papers). 2023."
+    },
+    {
+      "title": "PDF cs330_contrastive_2023",
+      "url": "https://cs330.stanford.edu/materials/cs330_contrastive_2023.pdf",
+      "snippet": "Unsupervised pre-training Fine-tuning Diverse unlabeled dataset {xi} Pre-trained model Labeled"
+    }
+  ]
+}

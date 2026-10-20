@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "nchristo-synaptics/techday_cropped_all",
+  "slug": "nchristo-synaptics-techday_cropped_all",
+  "author": "nchristo-synaptics",
+  "url": "https://huggingface.co/nchristo-synaptics/techday_cropped_all",
+  "created_at": "2026-10-20T01:23:20.000Z",
+  "updated_at": "2026-10-20T01:23:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 62854726,
+  "parameters_human": "62.9M",
+  "storage_bytes": 251470600,
+  "storage_human": "251 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

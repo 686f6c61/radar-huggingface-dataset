@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "samudhan2003/KV-Cache-Compression-Lab",
+  "slug": "samudhan2003-kv-cache-compression-lab",
+  "author": "samudhan2003",
+  "url": "https://huggingface.co/samudhan2003/KV-Cache-Compression-Lab",
+  "created_at": "2026-10-20T16:15:24.000Z",
+  "updated_at": "2026-10-20T16:47:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "kv-cache",
+    "quantization",
+    "efficient-inference",
+    "llm-optimization",
+    "memory-optimization",
+    "inference",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/?gl=FR&hl=fr",
+      "snippet": "Profitez des vidéos et de la musique que vous aimez, mettez en ligne des contenus originaux, et partagez-les avec vos amis, vos …"
+    },
+    {
+      "title": "My TV has to be signed in every time I want to watch You Tube TV.",
+      "url": "https://support.google.com/youtubetv/thread/296501204/my-tv-has-to-be-signed-in-every-time-i-want-to-watch-you-tube-tv-this-just-started?hl=en",
+      "snippet": "Sep 13, 2024 · If you want to assist in troubleshooting, I would suggest going to the support forum and submit details on the device …"
+    },
+    {
+      "title": "License types on YouTube - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/2797468?hl=en",
+      "snippet": "License types on YouTube A license gives someone legal permission to use content that other people own the rights to. Different …"
+    },
+    {
+      "title": "Hyping videos eligibility, availability & policies - YouTube Help",
+      "url": "https://support.google.com/youtube/answer/15509925?hl=en",
+      "snippet": "Eligibility for channels Channels in the YouTube Partner Program with 500 to 500,000 subscribers are eligible for this feature. You …"
+    },
+    {
+      "title": "Customize your music & podcasts - YouTube Music Help - Google Help",
+      "url": "https://support.google.com/youtubemusic/answer/6313542?hl=en",
+      "snippet": "For more customized music and podcasts, log in to YouTube Music with your Google Account. You'll instantly get recommendations …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "wwewtech",
   "url": "https://huggingface.co/wwewtech/russian-it-community-lora",
   "created_at": "2026-08-22T21:52:26.000Z",
-  "updated_at": "2026-10-10T12:30:29.000Z",
+  "updated_at": "2026-10-19T14:08:27.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -33,8 +33,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 5268002822,
-  "storage_human": "5.3 GB",
+  "storage_bytes": 5474078746,
+  "storage_human": "5.5 GB",
   "base_model": null,
   "formats": [
     "safetensors"

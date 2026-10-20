@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "GilpinLab/linsys-gf3",
+  "slug": "gilpinlab-linsys-gf3",
+  "author": "GilpinLab",
+  "url": "https://huggingface.co/GilpinLab/linsys-gf3",
+  "created_at": "2026-10-20T16:37:56.000Z",
+  "updated_at": "2026-10-20T16:41:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "looped-transformer",
+    "linear-systems",
+    "dynamical-systems",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6248199942,
+  "storage_human": "6.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kim Jong Un - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kim_Jong_Un",
+      "snippet": "Kim's government has been accused of human rights violations. He reportedly ordered the purge and execution of several North …"
+    },
+    {
+      "title": "Kim Jong-un — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Kim_Jong-un",
+      "snippet": "Le régime fonctionne selon une logique totalitaire qui a l'un des plus bas niveaux de respect des droits de l'homme au monde. …"
+    },
+    {
+      "title": "Kim Jong-Un | Facts, Biography, & Nuclear Program | Britannica",
+      "url": "https://www.britannica.com/biography/Kim-Jong-Eun",
+      "snippet": "Sep 10, 2026 · Kim Jong-Un, North Korean political official who succeeded his father, Kim Jong Il, as leader of North Korea in 2011. …"
+    },
+    {
+      "title": "Kim Jong Un: Why do rumours about his death keep coming back?",
+      "url": "https://www.bbc.com/news/articles/cmvg6qv1jdydo",
+      "snippet": "5 hours ago · North Korea publishes photos of Kim Jong Un - why do rumours of his death keep coming back? 5 hours ago Laura …"
+    },
+    {
+      "title": "Is Kim Jong Un Still Alive? Sister Kim Yo-jong and Daughter Ju...",
+      "url": "https://www.ibtimes.sg/kim-jong-un-still-alive-sister-kim-yo-jong-daughter-ju-ae-succession-focus-amid-health-rumors-95321",
+      "snippet": "21 hours ago · Is Kim Jong Un Still Alive? Sister Kim Yo-jong and Daughter Ju-ae in Succession Focus Amid Health Rumors The …"
+    }
+  ]
+}

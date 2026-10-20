@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "eole-nlp/DeepSeek-OCR-eole",
+  "slug": "eole-nlp-deepseek-ocr-eole",
+  "author": "eole-nlp",
+  "url": "https://huggingface.co/eole-nlp/DeepSeek-OCR-eole",
+  "created_at": "2026-10-20T18:18:37.000Z",
+  "updated_at": "2026-10-20T18:20:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "eole",
+  "languages": [],
+  "tags": [
+    "eole",
+    "safetensors",
+    "converted",
+    "image-text-to-text",
+    "base_model:deepseek-ai/DeepSeek-OCR",
+    "base_model:finetune:deepseek-ai/DeepSeek-OCR",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3336106240,
+  "parameters_human": "3.34B",
+  "storage_bytes": 6674095781,
+  "storage_human": "6.7 GB",
+  "base_model": "deepseek-ai/DeepSeek-OCR",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bienvenue sur Éole | Éole, un service de la Médiathèque Valentin Haüy",
+      "url": "https://eole.avh.asso.fr/",
+      "snippet": "État du service Cher (e) abonné (e), Votre site Éole est pleinement opérationnel : vous pouvez y télécharger librement les livres de …"
+    },
+    {
+      "title": "EOLE Association",
+      "url": "https://eole-asso.fr/",
+      "snippet": "Consulter l'annuaire Eole Accueillir Loger Héberger Insérer professionnellement Soigner + −"
+    },
+    {
+      "title": "Murs mobiles, séparations acoustiques, stores - EOLE",
+      "url": "https://www.eole-france.fr/",
+      "snippet": "En tant que spécialiste et professionnel de référence sur le marché français, Eole intervient dans toutes les étapes de votre projet : …"
+    },
+    {
+      "title": "Eole, un grand projet pour la mobilité en Île-de-France - EOLE - RER E",
+      "url": "https://www.rer-eole.fr/",
+      "snippet": "Un projet engagé et responsable Le train est un moteur de développement durable. Le projet Eole va encore plus loin, tant dans le …"
+    },
+    {
+      "title": "Éole — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/%C3%89ole",
+      "snippet": "Éole dans la mythologie Représentation d'Eole Éole apparaît pour la première fois au chant X de l’ Odyssée, lorsque Ulysse accoste …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "nie-vans/poolformer-retrieval-quantized",
+  "slug": "nie-vans-poolformer-retrieval-quantized",
+  "author": "nie-vans",
+  "url": "https://huggingface.co/nie-vans/poolformer-retrieval-quantized",
+  "created_at": "2026-10-20T18:00:17.000Z",
+  "updated_at": "2026-10-20T18:00:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "poolformer",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66776,
+  "storage_human": "66776 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Numéro d’identification d’étranger (NIE)",
+      "url": "https://www.exteriores.gob.es/Consulados/paris/fr/ServiciosConsulares/Paginas/Consular/NIE.aspx",
+      "snippet": "Le NIE est un numéro personnel, unique et exclusif que l'administration espagnole attribue aux fins de leur identification aux …"
+    },
+    {
+      "title": "Prélèvement SEPA NIE : comprendre ce débit sur votre relevé",
+      "url": "https://www.coincapital.fr/prelevement-sepa-nie/",
+      "snippet": "Aug 21, 2025 · Un prélèvement SEPA NIE vient d’apparaître sur votre compte ? Découvrez à quoi il correspond et si vous devez …"
+    },
+    {
+      "title": "NIE et DNI, CIF et NIF, on vous explique tout - Acheter en Espagne",
+      "url": "https://acheterenespagne.fr/nie-et-dni-cif-et-nif-on-vous-explique-tout-et-beaucoup-plus/",
+      "snippet": "Mar 19, 2025 · Le NIE est le « Número de Identidad de Extranjero » (en français : numéro d’identification d’étranger). C’est un …"
+    },
+    {
+      "title": "Obtenir le NIE Espagne : Le Guide Complet 2026 (Démarches)",
+      "url": "https://www.acheter-en-espagne.com/obtenir-un-nie-en-espagne-le-guide-complet-pour-2025/",
+      "snippet": "Jan 7, 2026 · Le NIE (Número de Identidad de Extranjero) est le numéro d’identification personnel que l’administration espagnole …"
+    },
+    {
+      "title": "Numéro d’identification d’étranger (NIE)",
+      "url": "https://www.exteriores.gob.es/Consulados/lyon/fr/ServiciosConsulares/Paginas/Consular/NIE.aspx",
+      "snippet": "Le NIE délivré par l'intermédiaire des Consulats permet d'effectuer des démarches auprès des administrations publiques …"
+    }
+  ]
+}

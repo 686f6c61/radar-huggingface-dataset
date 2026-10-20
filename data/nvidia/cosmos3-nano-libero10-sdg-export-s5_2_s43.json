@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "nvidia/cosmos3-nano-libero10-sdg-export-S5_2_s43",
+  "slug": "nvidia-cosmos3-nano-libero10-sdg-export-s5_2_s43",
+  "author": "nvidia",
+  "url": "https://huggingface.co/nvidia/cosmos3-nano-libero10-sdg-export-S5_2_s43",
+  "created_at": "2026-10-19T21:19:46.000Z",
+  "updated_at": "2026-10-20T16:53:27.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "cosmos",
+  "languages": [],
+  "tags": [
+    "cosmos",
+    "safetensors",
+    "cosmos3_omni",
+    "robotics",
+    "libero",
+    "vla",
+    "custom_code",
+    "base_model:nvidia/Cosmos3-Nano",
+    "base_model:finetune:nvidia/Cosmos3-Nano",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 15173136576,
+  "parameters_human": "15.17B",
+  "storage_bytes": 31499212848,
+  "storage_human": "31.5 GB",
+  "base_model": "nvidia/Cosmos3-Nano",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Téléchargez les pilotes NVIDIA officiels | NVIDIA",
+      "url": "https://www.nvidia.com/fr-fr/drivers/",
+      "snippet": "Téléchargez les pilotes NVIDIA officiels les plus récents pour optimiser votre expérience de jeu sur PC et faire tourner vos …"
+    },
+    {
+      "title": "World Leader in Artificial Intelligence Computing | NVIDIA",
+      "url": "https://www.nvidia.com/",
+      "snippet": "NVIDIA RTX™ powers the world’s fastest PCs and the ultimate platform for gamers and creators. Enjoy beautiful ray tracing, AI …"
+    },
+    {
+      "title": "Téléchargements de pilotes NVIDIA",
+      "url": "https://www.nvidia.fr/Download/indexsg.aspx?lang=fr",
+      "snippet": "Download drivers for NVIDIA products including GeForce graphics cards, nForce motherboards, Quadro workstations, and more. …"
+    },
+    {
+      "title": "NVIDIA Marketplace - Boutique NVIDIA officielle pour les centres de ...",
+      "url": "https://marketplace.nvidia.com/fr-fr/",
+      "snippet": "Achetez les derniers produits NVIDIA sur la boutique officielle Marketplace. Découvrez dès aujourd'hui les puissants GPU de la série …"
+    },
+    {
+      "title": "nvidia : Toute l'Actualité du monde informatique sur nvidia",
+      "url": "https://www.lemondeinformatique.fr/toute-l-actualite-marque-sur-nvidia-83.html",
+      "snippet": "Jul 30, 2026 · le 14 Octobre 2026 / Intelligence artificielle Nvidia investit dans Doctolib et trois entreprises françaises de l'IA Ces …"
+    }
+  ]
+}

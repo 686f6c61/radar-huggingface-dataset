@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mando2222/moss-image",
+  "slug": "mando2222-moss-image",
+  "author": "mando2222",
+  "url": "https://huggingface.co/mando2222/moss-image",
+  "created_at": "2026-10-20T14:54:35.000Z",
+  "updated_at": "2026-10-20T18:09:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "tt-model",
+  "languages": [],
+  "tags": [
+    "tt-model",
+    "tenstorrent",
+    "blackhole",
+    "tt-dit-server",
+    "thin",
+    "p150",
+    "text-to-image",
+    "diffusion",
+    "ttnn",
+    "base_model:OpenMOSS-Team/MOSS-Image-Base",
+    "base_model:finetune:OpenMOSS-Team/MOSS-Image-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "OpenMOSS-Team/MOSS-Image-Base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "日本人エロ動画 | xHamster",
+      "url": "https://jp.xhamster.com/categories/japanese",
+      "snippet": "日本人エロ動画をxHamsterでチェック。今すぐすべての日本人アダルト動画を見る！"
+    },
+    {
+      "title": "Free Porn Videos & XXX Movies: Sex Videos Tube | xHamster",
+      "url": "https://xhamster.com/",
+      "snippet": "Free porn videos and exclusive XXX movies are here at xHamster. Instantly stream 6M+ hardcore sex videos from pros and …"
+    },
+    {
+      "title": "Porn Video Categories and All Sex Niches - xHamster",
+      "url": "https://xhamster.com/categories",
+      "snippet": "Come browse a complete list of all porn video categories on xHamster, including all the rarest sex niches. Find XXX videos you like!"
+    },
+    {
+      "title": "En français Vidéos Porno | xHamster",
+      "url": "https://fra.xhamster.com/search/en+fran%C3%A7ais",
+      "snippet": "Regardez des vidéos pornos en français. Découvrez des tonnes de films XXX de avec des scènes de sexe en 2026 sur xHamster !"
+    },
+    {
+      "title": "xHamster",
+      "url": "https://ua.xhamster.com/",
+      "snippet": "Безкоштовні порно відео та ексклюзивні XXX-фільми тут, на xHamster. Дивіться понад 6 мільйонів відео з жорстким сексом …"
+    }
+  ]
+}

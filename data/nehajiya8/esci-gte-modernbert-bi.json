@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "nehajiya8/esci-gte-modernbert-bi",
+  "slug": "nehajiya8-esci-gte-modernbert-bi",
+  "author": "nehajiya8",
+  "url": "https://huggingface.co/nehajiya8/esci-gte-modernbert-bi",
+  "created_at": "2026-10-03T02:17:26.000Z",
+  "updated_at": "2026-10-20T16:51:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "modernbert",
+    "feature-extraction",
+    "product-search",
+    "dense-retrieval",
+    "amazon-esci",
+    "sentence-similarity",
+    "en",
+    "dataset:tasksource/esci",
+    "base_model:Alibaba-NLP/gte-modernbert-base",
+    "base_model:finetune:Alibaba-NLP/gte-modernbert-base",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 51,
+  "trending_score": 0,
+  "parameters": 149014272,
+  "parameters_human": "149.0M",
+  "storage_bytes": 4768561088,
+  "storage_human": "4.8 GB",
+  "base_model": "Alibaba-NLP/gte-modernbert-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

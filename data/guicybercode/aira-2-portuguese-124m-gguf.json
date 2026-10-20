@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "guicybercode/Aira-2-portuguese-124M-GGUF",
+  "slug": "guicybercode-aira-2-portuguese-124m-gguf",
+  "author": "guicybercode",
+  "url": "https://huggingface.co/guicybercode/Aira-2-portuguese-124M-GGUF",
+  "created_at": "2026-10-20T18:50:29.000Z",
+  "updated_at": "2026-10-20T18:54:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "gguf",
+    "quantized",
+    "text-generation",
+    "pt",
+    "base_model:nicholasKluge/Aira-2-portuguese-124M",
+    "base_model:quantized:nicholasKluge/Aira-2-portuguese-124M",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124442880,
+  "parameters_human": "124.4M",
+  "storage_bytes": 961373888,
+  "storage_human": "961 MB",
+  "base_model": "nicholasKluge/Aira-2-portuguese-124M",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

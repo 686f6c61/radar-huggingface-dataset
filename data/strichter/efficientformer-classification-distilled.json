@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "STRICHTER/efficientformer-classification-distilled",
+  "slug": "strichter-efficientformer-classification-distilled",
+  "author": "STRICHTER",
+  "url": "https://huggingface.co/STRICHTER/efficientformer-classification-distilled",
+  "created_at": "2026-10-20T18:14:18.000Z",
+  "updated_at": "2026-10-20T18:14:22.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "efficientformer",
+    "pytorch",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66776,
+  "storage_human": "66776 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube के कम्यूनिटी दिशा-निर्देश - YouTube मदद",
+      "url": "https://support.google.com/youtube/answer/9288567?hl=hi",
+      "snippet": "YouTube का इस्तेमाल करने पर, आपको ऐसी कम्यूनिटी का हिस्सा बनने का मौका मिलता है जिसमें दुनिया भर के लोग शामिल हैं. YouTube को …"
+    },
+    {
+      "title": "Näin ansaitset YouTubessa - YouTube Ohjeet",
+      "url": "https://support.google.com/youtube/answer/72857?hl=fi",
+      "snippet": "Jos olet mukana YouTube-kumppaniohjelmassa, voit ansaita rahaa YouTubessa.YouTube-kumppaniohjelman jäseniä koskevat …"
+    },
+    {
+      "title": "如何在中国大陆用「合法」的方式观看到youtube上面的「有价值」的 …",
+      "url": "https://www.zhihu.com/question/1903231775980913051",
+      "snippet": "YouTube 将自动为 添加翻译后的中文字幕，这一功能有效解决了语言障碍问题。 当你向下浏览时，部分 会标注相关信息。 例如，博 …"
+    },
+    {
+      "title": "YouTube公司 - 知乎",
+      "url": "https://www.zhihu.com/topic/19550532",
+      "snippet": "YouTube，全球最大的视频分享网站，早期公司总部位于加利福尼亚州的圣布里诺。公司由华裔美籍华人陈士骏等人创立并于2005年2 …"
+    },
+    {
+      "title": "Edit playlists - Computer - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/6083634?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "Creator Tips YouTube Fix a problem Troubleshoot problems playing videosTroubleshoot account issuesFix upload problemsGet help …"
+    }
+  ]
+}

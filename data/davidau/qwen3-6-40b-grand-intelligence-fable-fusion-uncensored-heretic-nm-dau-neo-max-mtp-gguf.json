@@ -48,12 +48,12 @@
     "region:us"
   ],
   "likes": 53,
-  "downloads_30d": 3911,
+  "downloads_30d": 3893,
   "trending_score": 8,
   "parameters": 460730096,
   "parameters_human": "460.7M",
-  "storage_bytes": 421961900158,
-  "storage_human": "422.0 GB",
+  "storage_bytes": 294591671038,
+  "storage_human": "294.6 GB",
   "base_model": "DavidAU/Qwen3.6-40B-Grand-Intelligence-Fable-Fusion-Uncensored-Heretic",
   "formats": [
     "gguf"

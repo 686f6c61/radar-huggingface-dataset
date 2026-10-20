@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "gabe-adib/ove3-k3paper-refit-c3.2e19-h768-lrx1.7",
+  "slug": "gabe-adib-ove3-k3paper-refit-c3-2e19-h768-lrx1-7",
+  "author": "gabe-adib",
+  "url": "https://huggingface.co/gabe-adib/ove3-k3paper-refit-c3.2e19-h768-lrx1.7",
+  "created_at": "2026-10-20T18:00:15.000Z",
+  "updated_at": "2026-10-20T18:01:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16815640366,
+  "storage_human": "16.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Bike Saddle Bags of 2026 (Tested by a Bike Mechanic)",
+      "url": "https://www.treelinereview.com/gearreviews/best-bike-saddle-bags",
+      "snippet": "Sep 9, 2026 · We evaluated each bag for capacity, attachment security, stability while pedaling, weather resistance, durability, ease …"
+    },
+    {
+      "title": "Amazon.com: Bicycle Saddlebags",
+      "url": "https://www.amazon.com/Bicycle-Saddlebags/s?k=Bicycle+Saddlebags",
+      "snippet": "Reliable bicycle saddlebags with expandable compartments and storage pockets in various sizes for commuters and long-distance trips."
+    },
+    {
+      "title": "Amazon.com: Pannier Bags For Bicycles",
+      "url": "https://www.amazon.com/pannier-bags-bicycles/s?k=pannier+bags+for+bicycles",
+      "snippet": "Global Recycled Standard (GRS) certified products contain recycled content (>50%) that has been independently verified at each …"
+    },
+    {
+      "title": "Bike Bags | Saddle Bags, Pannier Racks, Frames | Sports Direct",
+      "url": "https://www.sportsdirect.com/cycling/cycling-accessories/bike-bags",
+      "snippet": "Keep everything you need close at hand with our range of bike bags. Choose from practical saddle bags, panniers and frame bags …"
+    },
+    {
+      "title": "Bike Bags - Buy Online at Great Prices | BIKE24",
+      "url": "https://www.bike24.com/cycling/accessories/bike-bags",
+      "snippet": "At BIKE24, you’ll find bike bags for every type of riding – from compact saddle bags and versatile handlebar bags to robust panniers …"
+    }
+  ]
+}

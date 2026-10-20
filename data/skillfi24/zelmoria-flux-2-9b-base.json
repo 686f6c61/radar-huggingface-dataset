@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "SkillFi24/zelmoria-flux.2-9b-base",
+  "slug": "skillfi24-zelmoria-flux-2-9b-base",
+  "author": "SkillFi24",
+  "url": "https://huggingface.co/SkillFi24/zelmoria-flux.2-9b-base",
+  "created_at": "2026-10-20T16:37:45.000Z",
+  "updated_at": "2026-10-20T17:09:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "not-for-all-audiences",
+    "en",
+    "base_model:black-forest-labs/FLUX.2-klein-base-9B",
+    "base_model:adapter:black-forest-labs/FLUX.2-klein-base-9B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 167861861,
+  "storage_human": "168 MB",
+  "base_model": "black-forest-labs/FLUX.2-klein-base-9B",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

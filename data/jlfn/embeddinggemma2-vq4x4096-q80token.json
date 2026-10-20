@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "Jlfn/embeddinggemma2-vq4x4096-q80token",
+  "slug": "jlfn-embeddinggemma2-vq4x4096-q80token",
+  "author": "Jlfn",
+  "url": "https://huggingface.co/Jlfn/embeddinggemma2-vq4x4096-q80token",
+  "created_at": "2026-10-20T16:42:37.000Z",
+  "updated_at": "2026-10-20T16:43:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "ds4-rs",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "ds4-rs",
+    "gguf",
+    "embedding",
+    "feature-extraction",
+    "sentence-similarity",
+    "quantized",
+    "4-bit",
+    "vq",
+    "multilingual",
+    "vision",
+    "base_model:google/embeddinggemma-2",
+    "base_model:quantized:google/embeddinggemma-2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 392361397,
+  "parameters_human": "392.4M",
+  "storage_bytes": 804597376,
+  "storage_human": "805 MB",
+  "base_model": "google/embeddinggemma-2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -70,10 +70,10 @@
     "deploy:azure",
     "region:us"
   ],
-  "likes": 453,
-  "downloads_30d": 71588,
+  "likes": 454,
+  "downloads_30d": 71198,
   "trending_score": 14,
-  "parameters": 119401317952,
+  "parameters": 119401317376,
   "parameters_human": "119.40B",
   "storage_bytes": 241885986991,
   "storage_human": "241.9 GB",

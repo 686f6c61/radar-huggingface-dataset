@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "lerobotStudent/picking-items-two-positions-v3_policy",
+  "slug": "lerobotstudent-picking-items-two-positions-v3_policy",
+  "author": "lerobotStudent",
+  "url": "https://huggingface.co/lerobotStudent/picking-items-two-positions-v3_policy",
+  "created_at": "2026-10-20T02:13:59.000Z",
+  "updated_at": "2026-10-20T02:14:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:lerobotStudent/picking-items-one-position-v2_20261017_180432",
+    "arxiv:2304.13705",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714928,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lerobotStudent/picking-items-two-positions-v3_policy · Hugging Face",
+      "url": "https://huggingface.co/lerobotStudent/picking-items-two-positions-v3_policy",
+      "snippet": "Instructions to use lerobotStudent/picking-items-two-positions-v3_policy with libraries, inference providers, notebooks, and local apps. Follow these links to get ..."
+    },
+    {
+      "title": "LeRobot · Hugging Face",
+      "url": "https://huggingface.co/docs/lerobot/index",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - chrono-motz/lerobot3: LeRobot: Making AI for Robotics more ...",
+      "url": "https://github.com/chrono-motz/lerobot3",
+      "snippet": "Similarly to the hardware, you can easily implement your own policy & leverage LeRobot&#x27;s data collection, training, and visualization tools, and share your model to the HF Hub For detailed policy setup guides, see the Policy Documentation."
+    },
+    {
+      "title": "Policies | box2ai-robotics/lerobot-joycon | DeepWiki",
+      "url": "https://deepwiki.com/box2ai-robotics/lerobot-joycon/4-policies",
+      "snippet": "Policies Relevant source files This page documents the policy system in the LeRobot framework, which is responsible for learning and executing robotic control strategies from data. Policies are neural network models that map observations (like images, joint states, or environment states) to robot actions. LeRobot offers multiple policy implementations, each with different architectural designs ..."
+    },
+    {
+      "title": "GitHub - FDSVM/lerobot2: LeRobot: Making AI for Robotics more ...",
+      "url": "https://github.com/FDSVM/lerobot2",
+      "snippet": "Similarly to the hardware, you can easily implement your own policy & leverage LeRobot&#x27;s data collection, training, and visualization tools, and share your model to the HF Hub For detailed policy setup guides, see the Policy Documentation."
+    }
+  ]
+}

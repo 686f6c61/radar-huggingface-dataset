@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "loscrossos/HeartMuLa-oss-3B-happy-new-year",
+  "slug": "loscrossos-heartmula-oss-3b-happy-new-year",
+  "author": "loscrossos",
+  "url": "https://huggingface.co/loscrossos/HeartMuLa-oss-3B-happy-new-year",
+  "created_at": "2026-10-20T18:20:36.000Z",
+  "updated_at": "2026-10-20T18:20:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": null,
+  "languages": [
+    "zh",
+    "en",
+    "ja",
+    "ko",
+    "es"
+  ],
+  "tags": [
+    "safetensors",
+    "heartmula",
+    "music",
+    "art",
+    "text-to-audio",
+    "zh",
+    "en",
+    "ja",
+    "ko",
+    "es",
+    "arxiv:2601.10547",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3938113536,
+  "parameters_human": "3.94B",
+  "storage_bytes": 15752486168,
+  "storage_human": "15.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Edward VII - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Edward_VII",
+      "snippet": "Edward VII (Albert Edward; 9 November 1841 – 6 May 1910) was King of the United Kingdom and the British Dominions, and …"
+    },
+    {
+      "title": "Edward VII | Parents, Children, Successor, & Facts | Britannica",
+      "url": "https://www.britannica.com/biography/Edward-VII",
+      "snippet": "Aug 29, 2026 · Edward VII (born November 9, 1841, London, England—died May 6, 1910, London) was the king of the United …"
+    },
+    {
+      "title": "Edward VII - Simple English Wikipedia, the free encyclopedia",
+      "url": "https://simple.wikipedia.org/wiki/Edward_VII",
+      "snippet": "Edward VII (Albert Edward; 9 November 1841 – 6 May 1910) was Monarchy of the British Empire and Emperor of India from 1901 …"
+    },
+    {
+      "title": "Edward VII (r.1901-1910) - The Royal Family",
+      "url": "https://www.royal.uk/edward-vii",
+      "snippet": "Edward was 59 when he became King on 22 January 1901, on the death of his mother Queen Victoria. The Coronation was set for …"
+    },
+    {
+      "title": "Édouard VII — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/%C3%89douard_VII",
+      "snippet": "Édouard VII (en anglais : Edward VII), né Albert Edward le 9 novembre 1841 à Londres au palais de Buckingham où il est mort le 6 …"
+    }
+  ]
+}

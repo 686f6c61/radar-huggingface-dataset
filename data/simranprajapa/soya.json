@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "simranprajapa/soya",
+  "slug": "simranprajapa-soya",
+  "author": "simranprajapa",
+  "url": "https://huggingface.co/simranprajapa/soya",
+  "created_at": "2026-10-20T18:14:31.000Z",
+  "updated_at": "2026-10-20T18:14:31.000Z",
+  "license": "llama4",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:llama4",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anyone have good secret reveal fic recs? : r/911FOX - Reddit",
+      "url": "https://www.reddit.com/r/911FOX/comments/1dfoh0z/anyone_have_good_secret_reveal_fic_recs/",
+      "snippet": "By \"reveal\" I just mean something like: the team find out buck (or Eddie) is married with a kid the team find out buck used to be a …"
+    },
+    {
+      "title": "TurkishCeleb - Reddit",
+      "url": "https://www.reddit.com/r/TurkishCeleb/hot/",
+      "snippet": "Beautiful Turkish Celebrities"
+    },
+    {
+      "title": "Bildiğiniz türk ifşalar : r/KGBTR - Reddit",
+      "url": "https://www.reddit.com/r/KGBTR/comments/ork2um/bildi%C4%9Finiz_t%C3%BCrk_if%C5%9Falar/",
+      "snippet": "Türk internetinin efsanesi \"krds grup bura ne beklion (KGB)\" çıldırmaya buradan devam ediyor. Türkiye'nin sosyal medyasına birçok …"
+    },
+    {
+      "title": "Bildiğimiz ifşa sitelerini yazalim. : r/KGBTR - Reddit",
+      "url": "https://www.reddit.com/r/KGBTR/comments/dh0iw2/bildi%C4%9Fimiz_if%C5%9Fa_sitelerini_yazalim/",
+      "snippet": "Oct 12, 2019 · Türk internetinin efsanesi \"krds grup bura ne beklion (KGB)\" çıldırmaya buradan devam ediyor. Türkiye'nin sosyal …"
+    },
+    {
+      "title": "ünlülerin ifşası : r/KGBTR - Reddit",
+      "url": "https://www.reddit.com/r/KGBTR/comments/eqsdnf/%C3%BCnl%C3%BClerin_if%C5%9Fas%C4%B1/",
+      "snippet": "Jan 19, 2020 · true Archived post. New comments cannot be posted and votes cannot be cast."
+    }
+  ]
+}

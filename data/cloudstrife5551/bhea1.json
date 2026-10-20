@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "cloudstrife5551/bhea1",
+  "slug": "cloudstrife5551-bhea1",
+  "author": "cloudstrife5551",
+  "url": "https://huggingface.co/cloudstrife5551/bhea1",
+  "created_at": "2026-10-20T01:34:48.000Z",
+  "updated_at": "2026-10-20T02:09:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 778568824,
+  "storage_human": "779 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Federal Register / Vol. 52, No. 36-37 / Wednesday, February 25, 1987",
+      "url": "https://www.govinfo.gov/content/pkg/FR-1987-02-25/pdf/FR-1987-02-25.pdf",
+      "snippet": "25.02.1987 ... ... 5551. Presidential Documents. PROCLAMATIONS. Special observances ... Model 767 Series Airplanes Equipped. With General Electric CF6-80 ..."
+    },
+    {
+      "title": "Full text of \"The Daily Colonist (1973-11-22)\" - Internet Archive",
+      "url": "https://archive.org/stream/dailycolonist19731122/1973_11_22_djvu.txt",
+      "snippet": "22.11.1973 ... ... strife. William Whitelaw, Britain's administrator in the province ... ai a mediocre downtown holel when they get time off from their ..."
+    },
+    {
+      "title": "The Westminster Review - EMANDULO",
+      "url": "https://emandulo.apc.uct.ac.za/collection/FHYA%20Depot/The_Westminster_Review.pdf",
+      "snippet": "... model of an indigo factory ( of which there are thousands chiefly under ... 5551 in. Madras, the yield having risen from 25,500,000 lbs. in 18~6, to."
+    },
+    {
+      "title": "Full text of \"The Atlanta Constitution 1959-08-27: Vol 92 Iss 62\"",
+      "url": "https://archive.org/stream/per_atlanta-constitution_1959-08-27_92_62/per_atlanta-constitution_1959-08-27_92_62_djvu.txt",
+      "snippet": "... Ai sieinioen 7: a \"yg, nounced Wednesday night. The ban had been scheduled ... model; 1 Only 9-Cu.-Ft. Hotpoint; deluxe; late mod. 129.00 new tube ..."
+    },
+    {
+      "title": "Full text of \"Financial Times , 1978, UK, English\" - Internet Archive",
+      "url": "https://archive.org/stream/FinancialTimes1978UKEnglish/May%2006%201978%2C%20Financial%20Times%2C%20%2327552%2C%20UK%20%28en%29_djvu.txt",
+      "snippet": "... ai,iiLn „ , l,afnd°1* feited his right to remain free oraers- • “it i., more ... model we referred muf- tne urespen. appitsgreen) wben JTU are dning ..."
+    }
+  ]
+}

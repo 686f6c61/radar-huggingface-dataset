@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "HYU-NLP-EVA2/20261020_rar-medicine_static_qwen2.5-7b_raw4500_impl-ruscarl_s1_step-030",
+  "slug": "hyu-nlp-eva2-20261020_rar-medicine_static_qwen2-5-7b_raw4500_impl-ruscarl_s1_step-030",
+  "author": "HYU-NLP-EVA2",
+  "url": "https://huggingface.co/HYU-NLP-EVA2/20261020_rar-medicine_static_qwen2.5-7b_raw4500_impl-ruscarl_s1_step-030",
+  "created_at": "2026-10-20T16:39:28.000Z",
+  "updated_at": "2026-10-20T17:01:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "medicine",
+    "grpo",
+    "rubric-based-rl",
+    "ruscarl",
+    "conversational",
+    "dataset:ScaleAI/RaR-Medicine",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693624,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hyundai France | Voitures électriques, hybrides et SUV | Site officiel",
+      "url": "https://www.hyundai.com/fr/fr",
+      "snippet": "Découvrez la gamme Hyundai : voitures électriques, hybrides et SUV. Garantie 5 ans kilométrage illimité. Configurez et réservez un …Read more"
+    },
+    {
+      "title": "Hyu - YouTube",
+      "url": "https://www.youtube.com/channel/UCwDSqAhdO1rcRmpbmKCBTZQ",
+      "snippet": "Explore Hyu's YouTube channel for captivating videos and unique content. Discover a world of creativity and entertainment."
+    },
+    {
+      "title": "Hyundai Motor — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Hyundai_Motor",
+      "snippet": "Hyundai Motor Company est un constructeur automobile sud-coréen, filiale du conglomérat Hyundai Motor Group. Il est l'unique …"
+    },
+    {
+      "title": "Hyu’s DANGEROUS Japanese Kickboxing Style - YouTube",
+      "url": "https://m.youtube.com/watch?v=wKS_4HXG4mE",
+      "snippet": "Sep 7, 2026 · Before Japanese striking sensation Hyu takes on RISE champion Hyuuma Hitachi at ONE Samurai 3 on September …"
+    },
+    {
+      "title": "Hyundai : tous les modèles, avis, essais et actualités",
+      "url": "https://www.caradisiac.com/auto--hyundai/",
+      "snippet": "Kia est une marque coréenne en plein boum ! Et son succès est mérité. Les nouveaux modèles : Picanto, Cee’d, Sportage, Carens, …"
+    }
+  ]
+}

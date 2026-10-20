@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "bikesa/averon1.1",
+  "slug": "bikesa-averon1-1",
+  "author": "bikesa",
+  "url": "https://huggingface.co/bikesa/averon1.1",
+  "created_at": "2026-10-20T02:02:23.000Z",
+  "updated_at": "2026-10-20T07:04:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 67521610193,
+  "storage_human": "67.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free AI 3D Model Generator | Create 3D Assets at Zero Cost",
+      "url": "https://www.neural4d.com/features/free-3d-model-generator",
+      "snippet": "Free AI 3D Model Generator: create 3D models from text or images for games, AR/VR, and 3D printing at zero cost."
+    },
+    {
+      "title": "PixAI Model Market | 1.8M+ AI Art Models and LoRAs",
+      "url": "https://pixai.art/en/market",
+      "snippet": "Open marketplace for AI art models. Browse 1.8M+ user-trained models and LoRAs to generate anime, realistic and fantasy art free on PixAI."
+    },
+    {
+      "title": "AI Image & Video Generator with 80+ Models | PixOne",
+      "url": "https://pixone.ai/",
+      "snippet": "Create images and videos with 80+ leading AI models. PixOne Smart Select analyzes your prompt and media, then chooses and configures the best model for you."
+    },
+    {
+      "title": "Free AI 3D Model Generator from Text & Images | Image to 3D AI",
+      "url": "https://image-to-3d.ai/ai-3d-model-generator/",
+      "snippet": "Create production-ready 3D models from text or images with our free AI 3D model generator. Clean geometry, rich textures, and easy export for any project."
+    },
+    {
+      "title": "Arena Leaderboard: Official AI Model Rankings & Benchmarks",
+      "url": "https://arena.ai/leaderboard",
+      "snippet": "See the world&#x27;s most trusted AI model rankings. Explore live leaderboards for text, code, image, video, and vision, powered by millions of human votes."
+    }
+  ]
+}
