@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Immich/pipeline-error-propagation-dialogue-summarization-longt5-baseline-seed73",
+  "slug": "immich-pipeline-error-propagation-dialogue-summarization-longt5-baseline-seed73",
+  "author": "Immich",
+  "url": "https://huggingface.co/Immich/pipeline-error-propagation-dialogue-summarization-longt5-baseline-seed73",
+  "created_at": "2026-10-20T23:13:25.000Z",
+  "updated_at": "2026-10-20T23:21:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "summarization",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "longt5",
+    "text2text-generation",
+    "meeting-summarization",
+    "dialogue-summarization",
+    "controlled-error-propagation",
+    "longt5-base",
+    "baseline",
+    "summarization",
+    "en",
+    "dataset:ami-corpus",
+    "base_model:google/long-t5-tglobal-base",
+    "base_model:finetune:google/long-t5-tglobal-base",
+    "doi:10.57967/hf/11157",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 247545984,
+  "parameters_human": "247.5M",
+  "storage_bytes": 991018193,
+  "storage_human": "991 MB",
+  "base_model": "google/long-t5-tglobal-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Immich",
+      "url": "https://immich.app/",
+      "snippet": "Self-hosted photo and video management solution. Easily back up, organize, and manage your photos on your own server. Immich …"
+    },
+    {
+      "title": "immich : installer l'alternative open source à Google Photos",
+      "url": "https://www.it-connect.fr/tuto-immich-alternative-open-source-a-google-photos-et-icloud-photos/",
+      "snippet": "Oct 23, 2025 · immich est une application open source de gestion de photos et de vidéos, conçue pour être auto-hébergée. Elle …"
+    },
+    {
+      "title": "Download Immich | Immich",
+      "url": "https://immich.app/download",
+      "snippet": "Install Immich on a server and download mobile apps to start backing up your photos and videos."
+    },
+    {
+      "title": "GitHub - immich-app/immich: High performance self-hosted photo and ...",
+      "url": "https://github.com/immich-app/immich",
+      "snippet": "High performance self-hosted photo and video management solution. - immich-app/immich"
+    },
+    {
+      "title": "Installer Immich sur un NAS Synology (Guide complet 2026)",
+      "url": "https://www.cachem.fr/installer-immich-synology/",
+      "snippet": "Apr 10, 2026 · Qu’est-ce que Immich ? Immich est un logiciel de gestion et sauvegarde de photos et vidéos lancé en 2022. …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "scx-admin",
   "url": "https://huggingface.co/scx-admin/Apex-flash",
   "created_at": "2026-10-19T03:01:09.000Z",
-  "updated_at": "2026-10-19T03:24:46.000Z",
+  "updated_at": "2026-10-20T10:25:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "zero-shot-classification",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 20,
+  "downloads_30d": 23,
   "trending_score": 0,
   "parameters": 439790595,
   "parameters_human": "439.8M",

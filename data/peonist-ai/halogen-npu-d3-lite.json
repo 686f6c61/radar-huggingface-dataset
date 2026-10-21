@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "peonist-ai/halogen-npu-d3-lite",
+  "slug": "peonist-ai-halogen-npu-d3-lite",
+  "author": "peonist-ai",
+  "url": "https://huggingface.co/peonist-ai/halogen-npu-d3-lite",
+  "created_at": "2026-10-18T18:13:54.000Z",
+  "updated_at": "2026-10-20T18:50:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": "halogen",
+  "languages": [],
+  "tags": [
+    "halogen",
+    "npu",
+    "ryzen-ai",
+    "xdna2",
+    "strix-halo",
+    "amd",
+    "decision-model",
+    "system-one",
+    "classifier",
+    "router",
+    "zero-shot-classification",
+    "base_model:vllm-sr/d3-lite",
+    "base_model:quantized:vllm-sr/d3-lite",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2966004442,
+  "storage_human": "3.0 GB",
+  "base_model": "vllm-sr/d3-lite",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "peonist-ai/halogen-npu-d3-lite · Hugging Face",
+      "url": "https://huggingface.co/peonist-ai/halogen-npu-d3-lite",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "peonist-ai (Peonist) - Hugging Face",
+      "url": "https://huggingface.co/peonist-ai",
+      "snippet": "Org profile for Peonist on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "peonist-ai - GitHub",
+      "url": "https://github.com/peonist-ai/",
+      "snippet": "Work, work. Peonist.ai has 3 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "PEONIST — Work, work.",
+      "url": "https://peonist.ai/",
+      "snippet": "PEONIST — Halogen Flash Server, Halogen Server, and Crucible."
+    },
+    {
+      "title": "halogen-flash-server/docs/npu-small-models.md at main · peonist-ai ...",
+      "url": "https://github.com/peonist-ai/halogen-flash-server/blob/main/docs/npu-small-models.md",
+      "snippet": "The Flash model runs somewhat slower while the NPU works. docs/NPU.md has the host&#x27;s details, the request shapes, and how to serve your own fine-tune. Leave HALOGEN_NPU_MODELS out and nothing changes."
+    }
+  ]
+}

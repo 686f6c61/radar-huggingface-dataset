@@ -5,7 +5,7 @@
   "author": "nebulette",
   "url": "https://huggingface.co/nebulette/moss-spectrum-diffusers",
   "created_at": "2026-10-20T16:12:45.000Z",
-  "updated_at": "2026-10-20T17:46:28.000Z",
+  "updated_at": "2026-10-20T19:13:51.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -16,7 +16,7 @@
     "moss-image",
     "spectrum",
     "base_model:OpenMOSS-Team/MOSS-Image-Base",
-    "base_model:finetune:OpenMOSS-Team/MOSS-Image-Base",
+    "base_model:adapter:OpenMOSS-Team/MOSS-Image-Base",
     "license:apache-2.0",
     "region:us"
   ],

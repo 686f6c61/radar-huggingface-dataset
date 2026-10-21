@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "shubhamg2208/opf-metal-megakernel",
+  "slug": "shubhamg2208-opf-metal-megakernel",
+  "author": "shubhamg2208",
+  "url": "https://huggingface.co/shubhamg2208/opf-metal-megakernel",
+  "created_at": "2026-10-20T23:45:53.000Z",
+  "updated_at": "2026-10-20T23:56:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "custom",
+  "languages": [],
+  "tags": [
+    "custom",
+    "metal",
+    "apple-silicon",
+    "mps",
+    "pii",
+    "privacy",
+    "megakernel",
+    "kernels",
+    "token-classification",
+    "base_model:openai/privacy-filter",
+    "base_model:finetune:openai/privacy-filter",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 849180,
+  "storage_human": "849180 B",
+  "base_model": "openai/privacy-filter",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hentai 4k - Vidéos Hentai gratuites en streaming",
+      "url": "https://hentai4k.com/fr/",
+      "snippet": "Les meilleures vidéos et images hentai gratuites sur Hentai 4k, votre nouvelle plateforme hentai gratuite.Read more"
+    },
+    {
+      "title": "Browse Hentai Videos | New & Popular HD Hentai | Hentai.tv",
+      "url": "https://hentai.tv/browse",
+      "snippet": "Browse all hentai videos on Hentai.tv. Watch new and popular HD hentai, anime porn clips, series, genres, tags, and uncensored …"
+    },
+    {
+      "title": "Vidéo Hentai Fr ou anime sous-titré en Français (VOSTFR) - Trixhentai",
+      "url": "https://www.trixhentai.com/categories/vostfr/",
+      "snippet": "Les hentai et animes X avec les sous-titres en français."
+    },
+    {
+      "title": "Hentai Haven | Watch free Hentai Stream 720p 1080p HD",
+      "url": "https://hentaihaven.com/",
+      "snippet": "Hentai Haven free hentai video in English subtitles to watch hentai stream Online and download mp4 the best Hentaihaven …"
+    },
+    {
+      "title": "hentai videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/tags/hentai",
+      "snippet": "XVIDEOS hentai videos, free VAMPIRA TETONA SE LA COJEN ENTRE TRES - Itadaki! Seieki HENTAI - Ep 2 10 min Melinamx - …"
+    }
+  ]
+}

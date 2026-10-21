@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "XHToken/Spark-X2.6-4B",
+  "slug": "xhtoken-spark-x2-6-4b",
+  "author": "XHToken",
+  "url": "https://huggingface.co/XHToken/Spark-X2.6-4B",
+  "created_at": "2026-10-19T03:19:51.000Z",
+  "updated_at": "2026-10-20T16:36:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "spark2_5",
+    "text-generation",
+    "llm",
+    "sparkx2_5",
+    "conversational",
+    "custom_code",
+    "en",
+    "zh",
+    "base_model:XHToken/Spark-X2.6-4B-Base",
+    "base_model:finetune:XHToken/Spark-X2.6-4B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 36,
+  "downloads_30d": 0,
+  "trending_score": 35,
+  "parameters": 4112079360,
+  "parameters_human": "4.11B",
+  "storage_bytes": 12686523518,
+  "storage_human": "12.7 GB",
+  "base_model": "XHToken/Spark-X2.6-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Search Terrell Lee Obituaries and Funeral Services - Legacy.com",
+      "url": "https://www.legacy.com/obituaries/name/lee/terrell",
+      "snippet": "Oct 30, 2009 · Search all Terrell Lee Obituaries and Death Notices to find upcoming funeral home services, leave condolences for …"
+    },
+    {
+      "title": "Terrell Lavaris Lee Obituary (2025) - Peachtree Corners, GA - Crowell ...",
+      "url": "https://www.legacy.com/us/obituaries/name/terrell-lee-obituary?id=60213090",
+      "snippet": "Terrell Lavaris Lee, age 48, passed away on December 2, 2025, in Norcross, Georgia. He was born on July 7, 1977, in the Bronx, …"
+    },
+    {
+      "title": "Obituary information for Terrell Lee Smith",
+      "url": "https://www.mortonsmortuary.com/obituaries/Terrell-Lee-Smith?obId=49809802",
+      "snippet": "Oct 6, 2026 · View Terrell Lee Smith's obituary, contribute to their memorial, see their funeral service details, and more."
+    },
+    {
+      "title": "Terrell, Lee Obituary | aCremation",
+      "url": "http://obituaries.acremation.com/o/terrell/59262/",
+      "snippet": "Obituary for Lee Terrell"
+    },
+    {
+      "title": "Terrell Lee Obituary - Jacksonville, FL - Dignity Memorial",
+      "url": "https://www.dignitymemorial.com/obituaries/jacksonville-fl/terrell-lee-11095085",
+      "snippet": "Jan 7, 2023 · Terrell Howard Lee, age 70, of Jacksonville, FL passed away on January 7, 2023. He was born in Fort Lee, VA on …"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "mosiah/phonon-31m-en-coreml",
+  "slug": "mosiah-phonon-31m-en-coreml",
+  "author": "mosiah",
+  "url": "https://huggingface.co/mosiah/phonon-31m-en-coreml",
+  "created_at": "2026-10-20T20:21:58.000Z",
+  "updated_at": "2026-10-20T20:22:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "coreml",
+    "phonon",
+    "on-device",
+    "text-to-speech",
+    "en",
+    "base_model:gradium/phonon-31m-en",
+    "base_model:quantized:gradium/phonon-31m-en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 107479233,
+  "storage_human": "107 MB",
+  "base_model": "gradium/phonon-31m-en",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

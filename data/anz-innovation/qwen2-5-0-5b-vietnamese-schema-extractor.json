@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ANZ-Innovation/qwen2.5-0.5b-vietnamese-schema-extractor",
+  "slug": "anz-innovation-qwen2-5-0-5b-vietnamese-schema-extractor",
+  "author": "ANZ-Innovation",
+  "url": "https://huggingface.co/ANZ-Innovation/qwen2.5-0.5b-vietnamese-schema-extractor",
+  "created_at": "2026-10-20T23:21:37.000Z",
+  "updated_at": "2026-10-20T23:22:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "trl",
+    "sft",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 999519716,
+  "storage_human": "1000 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ANZ Personal – Bank accounts, home loans, credit cards & more",
+      "url": "https://www.anz.com.au/personal/",
+      "snippet": "ANZ offers a range of personal banking services such as internet banking, bank accounts, credit cards, home loans, personal loans, …Read more"
+    },
+    {
+      "title": "Login - ANZ Internet Banking",
+      "url": "https://login.anz.com/internetbanking",
+      "snippet": "© Australia and New Zealand Banking Group Limited (ANZ) 2026 ABN 11 005 357 522."
+    },
+    {
+      "title": "Internet banking | ANZ",
+      "url": "https://www.anz.com.au/support/online-banking/internet-banking/",
+      "snippet": "With ANZ Internet Banking you can transfer money, pay anyone, and see your statements in just a few clicks. With tools for both …"
+    },
+    {
+      "title": "ANZ Bank New Zealand Ltd | Online Banking | ANZ",
+      "url": "https://www.anz.co.nz/personal/",
+      "snippet": "We offer a wide range of financial services in NZ, with global reach as a subsidiary of the ANZ Group. Talk to the Bank with more …"
+    },
+    {
+      "title": "ANZ (bank) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/ANZ_(bank)",
+      "snippet": "The Australia and New Zealand Banking Group Limited, commonly known as ANZ Bank, is a multinational banking and financial …"
+    }
+  ]
+}

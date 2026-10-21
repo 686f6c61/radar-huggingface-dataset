@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "nuhmanpk/mozhi-tts-v1",
+  "slug": "nuhmanpk-mozhi-tts-v1",
+  "author": "nuhmanpk",
+  "url": "https://huggingface.co/nuhmanpk/mozhi-tts-v1",
+  "created_at": "2026-10-11T12:00:36.000Z",
+  "updated_at": "2026-10-20T22:11:38.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "transformers",
+  "languages": [
+    "ml"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "parler_tts",
+    "text-generation",
+    "text-to-speech",
+    "tts",
+    "malayalam",
+    "parler-tts",
+    "emotional-tts",
+    "expressive",
+    "kaggle",
+    "ml",
+    "dataset:nuhmanpk/mozhi-malayalam-speech",
+    "dataset:ai4bharat/Rasa",
+    "base_model:ai4bharat/indic-parler-tts",
+    "base_model:finetune:ai4bharat/indic-parler-tts",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 25,
+  "trending_score": 0,
+  "parameters": 937817577,
+  "parameters_human": "937.8M",
+  "storage_bytes": 3812520649,
+  "storage_human": "3.8 GB",
+  "base_model": "ai4bharat/indic-parler-tts",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tiptoi® | Système Éducatif Électronique | Ravensburger",
+      "url": "https://www.ravensburger.fr/fr-FR/produits/tiptoi",
+      "snippet": "Découvrez tiptoi®, le système d'apprentissage interactif qui transforme la lecture et le jeu en expérience sonore. Sans écran ni …Read more"
+    },
+    {
+      "title": "Votre lecteur tiptoi - ravensburger.fr",
+      "url": "https://www.ravensburger.fr/fr-FR/decouvrir/tiptoi",
+      "snippet": "Comment connecter la station de chargement à mon réseau Wi-Fi ? Branchez la station à une prise secteur via le câble fourni. …"
+    },
+    {
+      "title": "tiptoi® - Das spielerische Lernsystem von Ravensburger",
+      "url": "https://www.ravensburger.de/de-DE/entdecken/tiptoi",
+      "snippet": "Kinder ab 2 Jahren entdecken ihre Welt tippend. tiptoi ® begleitet sie beim Entdecken Ihrer Umgebung, dem Lernen erster Wörter …"
+    },
+    {
+      "title": "tiptoi® Manager zum Download - Ravensburger",
+      "url": "https://www.ravensburger.de/de-DE/entdecken/tiptoi/tiptoi-manager",
+      "snippet": "Der tiptoi® Manager ist ein Programm für Mac oder PC, mit dem du die Audiodateien für deine tiptoi® Produkte einfach und bequem …"
+    },
+    {
+      "title": "tiptoi® Manager à télécharger - ravensburger.be",
+      "url": "https://www.ravensburger.be/fr-BE/ravensburger/discover/tiptoi/tiptoi-manager",
+      "snippet": "Le tiptoi ® Gestionnaire est un programme pour Mac ou PC qui vous permet de télécharger, mettre à jour et synchroniser facilement …"
+    }
+  ]
+}

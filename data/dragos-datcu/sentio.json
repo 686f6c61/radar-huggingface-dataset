@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Dragos-Datcu/Sentio",
+  "slug": "dragos-datcu-sentio",
+  "author": "Dragos-Datcu",
+  "url": "https://huggingface.co/Dragos-Datcu/Sentio",
+  "created_at": "2026-10-20T20:32:34.000Z",
+  "updated_at": "2026-10-20T20:33:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "audio",
+    "multimodal-embedding",
+    "audio-retrieval",
+    "audio-classification",
+    "video-moment-retrieval",
+    "feature-extraction",
+    "base_model:Qwen/Qwen2.5-Omni-3B",
+    "base_model:finetune:Qwen/Qwen2.5-Omni-3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 145812,
+  "storage_human": "145812 B",
+  "base_model": "tencent/WeMM-Embedding-9B, Qwen/Qwen2.5-Omni-3B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Your Partner in OT Cybersecurity | Dragos",
+      "url": "https://www.dragos.com/",
+      "snippet": "Sep 1, 2026 · Secure your critical infrastructure with Dragos, our industrial cybersecurity solutions provide unmatched visibility and …"
+    },
+    {
+      "title": "Dragos, Inc.",
+      "url": "https://www.dragos.com/dragos-inc",
+      "snippet": "Sep 1, 2026 · Dragos has acquired NetRise and runZero, building the industry’s first end-to-end xOT cybersecurity platform. Read …"
+    },
+    {
+      "title": "Drago Paris : la Maison de référence en matière d'insignes, décorations",
+      "url": "https://www.dragoparis.fr/",
+      "snippet": "Héritière avec Arthus-Bertrand du savoir-faire de la fabrication de la médaille de la Légion d’Honneur, la Maison Drago Paris est une …"
+    },
+    {
+      "title": "Dragos, Inc. - LinkedIn",
+      "url": "https://www.linkedin.com/company/dragos-inc.",
+      "snippet": "Dragos provides the most effective OT cybersecurity technology for industrial and critical infrastructure to deliver on our global …"
+    },
+    {
+      "title": "Dragos: OT Cybersecurity - YouTube",
+      "url": "https://www.youtube.com/@DragosInc",
+      "snippet": "The Dragos Platform offers the most effective industrial cybersecurity technology, giving customers visibility into their ICS/OT assets, …"
+    }
+  ]
+}

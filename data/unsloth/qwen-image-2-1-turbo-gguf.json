@@ -31,10 +31,10 @@
   ],
   "likes": 61,
   "downloads_30d": 424470,
-  "trending_score": 20,
+  "trending_score": 18,
   "parameters": 7115124736,
   "parameters_human": "7.12B",
-  "storage_bytes": 64836913419,
+  "storage_bytes": 64839235897,
   "storage_human": "64.8 GB",
   "base_model": "Qwen/Qwen-Image-2.1-Turbo",
   "formats": [

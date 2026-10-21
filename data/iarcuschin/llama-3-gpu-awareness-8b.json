@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "iarcuschin/Llama-3-gpu-awareness-8B",
+  "slug": "iarcuschin-llama-3-gpu-awareness-8b",
+  "author": "iarcuschin",
+  "url": "https://huggingface.co/iarcuschin/Llama-3-gpu-awareness-8B",
+  "created_at": "2026-10-20T21:29:44.000Z",
+  "updated_at": "2026-10-20T21:32:18.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gpu-awareness",
+    "lora",
+    "numerical-identity",
+    "base_model:meta-llama/Meta-Llama-3-8B",
+    "base_model:adapter:meta-llama/Meta-Llama-3-8B",
+    "license:llama3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24919552147,
+  "storage_human": "24.9 GB",
+  "base_model": "meta-llama/Meta-Llama-3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "- Ernest",
+      "url": "https://ernest.unistra.fr/",
+      "snippet": "Ernest est un environnement numérique et social de travail conçu pour répondre aux besoins spécifiques des membres de la …"
+    },
+    {
+      "title": "- Ernest",
+      "url": "https://ernest.unistra.fr/jcms/j_5/fr/accueil",
+      "snippet": "Ernest est un environnement numérique et social de travail conçu pour répondre aux besoins spécifiques des membres de la …"
+    },
+    {
+      "title": "- Ernest - unistra.fr",
+      "url": "https://sage.unistra.fr/intranet/",
+      "snippet": "Ernest est un environnement numérique et social de travail conçu pour répondre aux besoins spécifiques des membres de la …"
+    },
+    {
+      "title": "- Ernest - unistra.fr",
+      "url": "https://services-numeriques.unistra.fr/?id=1141",
+      "snippet": "Ernest est un environnement numérique et social de travail conçu pour répondre aux besoins spécifiques des membres de la …"
+    },
+    {
+      "title": "Activation de votre compte utilisateur Intranet (Ernest)",
+      "url": "https://www.unistra.fr/fr/activation-votre-compte-utilisateur-intranet-ernest",
+      "snippet": "Ernest, c’est l’environnement numérique et social de travail de l’Université de Strasbourg. C’est votre intranet étudiant sécurisé, …"
+    }
+  ]
+}

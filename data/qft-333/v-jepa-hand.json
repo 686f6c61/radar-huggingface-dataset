@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "qft-333/V-JEPA-Hand",
+  "slug": "qft-333-v-jepa-hand",
+  "author": "qft-333",
+  "url": "https://huggingface.co/qft-333/V-JEPA-Hand",
+  "created_at": "2026-10-19T13:28:32.000Z",
+  "updated_at": "2026-10-20T23:51:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "other",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "video",
+    "hand-pose-estimation",
+    "3d-reconstruction",
+    "other",
+    "arxiv:2610.26780",
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 607143035,
+  "parameters_human": "607.1M",
+  "storage_bytes": 2428637772,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quantum field theory - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Quantum_field_theory",
+      "snippet": "The first supersymmetric QFT in four dimensions was built by Yuri Golfand and Evgeny Likhtman in 1970, but their result failed to …"
+    },
+    {
+      "title": "Quantum Fourier transform - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Quantum_Fourier_transform",
+      "snippet": "In quantum computing, the quantum Fourier transform (QFT) is a linear transformation on quantum bits, and is the quantum …"
+    },
+    {
+      "title": "De la mécanique quantique à la QFT – Synthèse",
+      "url": "https://physique-des-particules.fr/2026/05/17/de-la-mecanique-quantique-a-la-qft-synthese/",
+      "snippet": "May 17, 2026 · Cet article a donc pour objectif d’exposer les limites de la mécanique quantique non relativiste, de rappeler les …"
+    },
+    {
+      "title": "QFT.org | QFT .org",
+      "url": "https://qft.org/",
+      "snippet": "QFT in Curved Spacetime Understand quantum fields in curved spacetime, including particle creation, horizon effects, cosmological …"
+    },
+    {
+      "title": "QFT — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/QFT",
+      "snippet": "Le sigle QFT peut désigner : Quadratic Frobenius test, un test de primalité ; QuantiFERON-TB, nom déposé d'un test de dépistage …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "luisastellet",
   "url": "https://huggingface.co/luisastellet/qwen-metaphor-unke-camada-6-literal-metaforica",
   "created_at": "2026-10-15T16:30:43.000Z",
-  "updated_at": "2026-10-15T16:31:15.000Z",
+  "updated_at": "2026-10-20T03:08:39.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -23,12 +23,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 182,
+  "downloads_30d": 189,
   "trending_score": 0,
   "parameters": 596049920,
   "parameters_human": "596.0M",
-  "storage_bytes": 2395657618,
-  "storage_human": "2.4 GB",
+  "storage_bytes": 4779892586,
+  "storage_human": "4.8 GB",
   "base_model": null,
   "formats": [
     "safetensors"

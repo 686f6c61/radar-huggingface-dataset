@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "Afhskxkod/Qwen2.5-7B-Instruct-GGUF",
+  "slug": "afhskxkod-qwen2-5-7b-instruct-gguf",
+  "author": "Afhskxkod",
+  "url": "https://huggingface.co/Afhskxkod/Qwen2.5-7B-Instruct-GGUF",
+  "created_at": "2026-10-20T19:53:00.000Z",
+  "updated_at": "2026-10-20T19:53:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "chat",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 121058953798,
+  "storage_human": "121.1 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

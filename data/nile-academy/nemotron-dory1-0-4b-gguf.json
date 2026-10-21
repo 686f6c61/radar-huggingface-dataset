@@ -5,7 +5,7 @@
   "author": "nile-academy",
   "url": "https://huggingface.co/nile-academy/nemotron-dory1.0-4b-gguf",
   "created_at": "2026-10-19T23:21:11.000Z",
-  "updated_at": "2026-10-19T23:21:15.000Z",
+  "updated_at": "2026-10-20T22:03:13.000Z",
   "license": "openmdw-1.1",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "gguf",
+    "safetensors",
     "wekala",
     "text-generation",
     "base_model:nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16",
@@ -23,15 +24,16 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 22,
   "trending_score": 0,
   "parameters": 3975229440,
   "parameters_human": "3.98B",
-  "storage_bytes": 3673288864,
-  "storage_human": "3.7 GB",
+  "storage_bytes": 19599241852,
+  "storage_human": "19.6 GB",
   "base_model": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16",
   "formats": [
-    "gguf"
+    "gguf",
+    "safetensors"
   ],
   "is_conversational": true,
   "gated": false,

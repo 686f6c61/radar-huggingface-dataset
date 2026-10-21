@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "bambocher/Qwen3.8-27B-oQ5e-mtp",
+  "slug": "bambocher-qwen3-8-27b-oq5e-mtp",
+  "author": "bambocher",
+  "url": "https://huggingface.co/bambocher/Qwen3.8-27B-oQ5e-mtp",
+  "created_at": "2026-10-20T20:39:40.000Z",
+  "updated_at": "2026-10-20T20:45:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "mtp",
+    "5-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 20303725606,
+  "storage_human": "20.3 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Printable Grocery List Templates in PDF & WORD",
+      "url": "https://www.ziplist.com/grocery-list-template",
+      "snippet": "Thanks to Ziplist you’ll be able to download a printable grocery list template and organize your shopping list."
+    },
+    {
+      "title": "Free☝️ Shopping List Template (Google Sheets, Excel, & PDF …",
+      "url": "https://spreadsheetdaddy.com/templates/shopping-list",
+      "snippet": "Sep 25, 2026 · Our Shopping List Template provides a simple and organized way to plan your grocery trips and household purchases."
+    },
+    {
+      "title": "Shopping List gratuite en ligne, libre et multi-marques -",
+      "url": "https://www.thegoodlist.fr/shopping-list/",
+      "snippet": "Toutes vos envies et sélections Shopping réunies au sein d'une liste ! Des listes multi-enseignes à composer vous-mêmes et/ou en …"
+    },
+    {
+      "title": "Free printable and customizable grocery list templates | Canva",
+      "url": "https://www.canva.com/lists/templates/grocery/?msockid=1cd48863788f650d2aa99f9b7997643d",
+      "snippet": "Within minutes, you’ll have a printable list complete with information on what products you need, which brand you prefer, how many …"
+    },
+    {
+      "title": "30 Items that Should Be On Everyone’s Basic Grocery List ... - Listonic",
+      "url": "https://listonic.com/basic-grocery-list",
+      "snippet": "Oct 2, 2025 · Moving into a new home or college dorm? Or just want to get back to basics? Use our printable basic shopping list to …"
+    }
+  ]
+}

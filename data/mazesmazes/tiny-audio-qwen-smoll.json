@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "mazesmazes/tiny-audio-qwen-smoll",
+  "slug": "mazesmazes-tiny-audio-qwen-smoll",
+  "author": "mazesmazes",
+  "url": "https://huggingface.co/mazesmazes/tiny-audio-qwen-smoll",
+  "created_at": "2026-10-20T21:27:57.000Z",
+  "updated_at": "2026-10-21T01:56:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "asr_model",
+    "feature-extraction",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12590080,
+  "parameters_human": "12.6M",
+  "storage_bytes": 2153546923,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "parsabe/AquaPulse",
+  "slug": "parsabe-aquapulse",
+  "author": "parsabe",
+  "url": "https://huggingface.co/parsabe/AquaPulse",
+  "created_at": "2026-10-20T21:50:54.000Z",
+  "updated_at": "2026-10-20T21:57:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1158140870,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

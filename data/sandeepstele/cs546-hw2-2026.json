@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "sandeepstele/cs546-hw2-2026",
+  "slug": "sandeepstele-cs546-hw2-2026",
+  "author": "sandeepstele",
+  "url": "https://huggingface.co/sandeepstele/cs546-hw2-2026",
+  "created_at": "2026-10-20T22:16:29.000Z",
+  "updated_at": "2026-10-20T22:16:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-10-21T02:06:50.710Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Script Executor - Simple Script Execution - Roblox",
+      "url": "https://devforum.roblox.com/t/script-executor-simple-script-execution/3141932",
+      "snippet": "Aug 31, 2024 · Script Executor is a plugin for executing scripts as quickly as possible. It also has a bunch of other useful functions …"
+    },
+    {
+      "title": "How to Detect for an Executor? - Scripting Support - Roblox",
+      "url": "https://devforum.roblox.com/t/how-to-detect-for-an-executor/660154",
+      "snippet": "Jul 6, 2020 · Some games I’ve Played, When testing, Auto Kick you when you have and Executor Even if you’re not using it. Now I’m …"
+    },
+    {
+      "title": "Releases · Coltenblox/VegaX - GitHub",
+      "url": "https://github.com/Coltenblox/VegaX/releases",
+      "snippet": "Mar 6, 2021 · Vega X. Contribute to Coltenblox/VegaX development by creating an account on GitHub."
+    },
+    {
+      "title": "ROBLOX Exploiting - Reddit",
+      "url": "https://www.reddit.com/r/ROBLOXExploiting/",
+      "snippet": "r/ROBLOXExploiting: A subreddit for ROBLOX exploiting, whether it's questions or downloads, We've got it all! Come join our group …"
+    },
+    {
+      "title": "GitHub Apps - KRNL Executor — Roblox Executor · GitHub",
+      "url": "https://github.com/apps/krnl-executor-roblox-executor",
+      "snippet": "KRNL Executor — Roblox Executor GitHub App 🧨 KRNL Executor — Best Performance for Roblox Scripts (2025) Welcome to KRNL …"
+    }
+  ]
+}

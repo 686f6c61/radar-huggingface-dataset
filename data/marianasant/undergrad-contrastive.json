@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Marianasant/undergrad-contrastive",
+  "slug": "marianasant-undergrad-contrastive",
+  "author": "Marianasant",
+  "url": "https://huggingface.co/Marianasant/undergrad-contrastive",
+  "created_at": "2026-10-20T20:35:12.000Z",
+  "updated_at": "2026-10-20T20:35:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99800,
+  "storage_human": "99800 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Voitures MITSUBISHI Eclipse d'occasion - leboncoin",
+      "url": "https://www.leboncoin.fr/c/voitures/ad_type:offer+u_car_brand:MITSUBISHI+u_car_model:MITSUBISHI_Eclipse",
+      "snippet": "Toutes nos annonces voitures MITSUBISHI Eclipse d'occasion . Consultez nos annonces de particuliers et professionnels sur …"
+    },
+    {
+      "title": "Mitsubishi Motors | Dépassez vos Ambitions",
+      "url": "https://www.mitsubishi-motors.fr/",
+      "snippet": "Modèle présenté : MITSUBISHI ECLIPSE CROSS Invite + pack Instyle MY26.5 au prix de 44 340€, peinture métallisée bi-ton …"
+    },
+    {
+      "title": "Voitures MITSUBISHI Eclipse Essence d'occasion - leboncoin",
+      "url": "https://www.leboncoin.fr/c/voitures/fuel:1+u_car_brand:MITSUBISHI+u_car_model:MITSUBISHI_Eclipse",
+      "snippet": "Toutes nos annonces voitures MITSUBISHI Eclipse Essence d'occasion . Consultez nos annonces de particuliers et professionnels …"
+    },
+    {
+      "title": "Cote occasion Mitsubishi Eclipse (2021-2026) - Prix du marché 2026",
+      "url": "https://www.carprice.fr/guide/modele/mitsubishi-eclipse",
+      "snippet": "Sep 20, 2026 · Quel est le vrai prix d'une Mitsubishi Eclipse d'occasion en 2026 ? Analyse des prix min, moyen et max. Ne vendez …"
+    },
+    {
+      "title": "Acheter une Mitsubishi Eclipse d'occasion sur AutoScout24",
+      "url": "https://www.autoscout24.fr/lst/mitsubishi/eclipse/ot_occasion",
+      "snippet": "Tu trouveras ici des Mitsubishi Eclipse d'occasion disponibles sur AutoScout24, la plus grande plateforme automobile en ligne …"
+    }
+  ]
+}

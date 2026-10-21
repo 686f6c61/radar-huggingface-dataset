@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "0x36/Spark-X2.6-4B-mlx-4bit",
+  "slug": "0x36-spark-x2-6-4b-mlx-4bit",
+  "author": "0x36",
+  "url": "https://huggingface.co/0x36/Spark-X2.6-4B-mlx-4bit",
+  "created_at": "2026-10-20T19:51:24.000Z",
+  "updated_at": "2026-10-20T20:02:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "spark2_5",
+    "mlx-lm",
+    "quantized",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:XHToken/Spark-X2.6-4B",
+    "base_model:quantized:XHToken/Spark-X2.6-4B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4112079360,
+  "parameters_human": "4.11B",
+  "storage_bytes": 2313395920,
+  "storage_human": "2.3 GB",
+  "base_model": "XHToken/Spark-X2.6-4B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Login - Ahmadu Bello University, Zaria - ABU DLC",
+      "url": "https://reg.abudlc.edu.ng/Login.aspx",
+      "snippet": "Login - Ahmadu Bello University, Zaria User Id: * Password: * Recover password,"
+    },
+    {
+      "title": "Login - Ahmadu Bello University, Zaria",
+      "url": "https://reg.abudlc.edu.ng/",
+      "snippet": "Login - Ahmadu Bello University, Zaria User Id: * Password: * Recover password,"
+    },
+    {
+      "title": "Login - Ahmadu Bello University, Zaria - reg.abudlc.edu.ng",
+      "url": "https://reg.abudlc.edu.ng/Prefs/ChangePassword.aspx",
+      "snippet": "Login - Ahmadu Bello University, Zaria User Id: * Password: * Recover password,"
+    },
+    {
+      "title": "Sign In - VigilearnLMS",
+      "url": "https://abudlc.vigilearnlms.com/learner/home",
+      "snippet": "Forgot your password?"
+    },
+    {
+      "title": "abudlc-edu.ng - Distance Learning Centre",
+      "url": "https://www.abudlc-edu.ng/",
+      "snippet": "Forgot Password?"
+    }
+  ]
+}

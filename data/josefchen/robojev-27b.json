@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "josefchen/RoboJev-27B",
+  "slug": "josefchen-robojev-27b",
+  "author": "josefchen",
+  "url": "https://huggingface.co/josefchen/RoboJev-27B",
+  "created_at": "2026-10-20T18:52:05.000Z",
+  "updated_at": "2026-10-21T01:55:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "robotics",
+    "success-detection",
+    "reward-model",
+    "lerobot",
+    "so-101",
+    "jev",
+    "vllm",
+    "conversational",
+    "base_model:autotrust/JEV-27B-VL",
+    "base_model:finetune:autotrust/JEV-27B-VL",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 54731203080,
+  "storage_human": "54.7 GB",
+  "base_model": "autotrust/JEV-27B-VL",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Calendrier exposition canine 2026 : toutes les dates",
+      "url": "https://comdewouf.fr/calendrier-exposition-canine-2026",
+      "snippet": "Oct 1, 2026 · La saison 2026 touche à sa fin : les premières expositions de 2027 ouvrent dès janvier, et leurs engagements se …"
+    },
+    {
+      "title": "Calendrier des événements canins 2026/27 Sport & loisir",
+      "url": "https://emmenetonchien.com/les-evenements-canins-a-ne-pas-manquer-2026-2027/",
+      "snippet": "6 days ago · Canicross, concours, courses, expositions, festivals, pool party... voici le calendrier des évènements canins à ne pas …"
+    },
+    {
+      "title": "Retrouvez tous les évènements 2026 en Haute-Savoie",
+      "url": "https://hautesavoie.fr/retrouvez-tous-les-evenements-2026-en-haute-savoie/",
+      "snippet": "Retrouvez en vidéo tous les évènements prévus en 2026 en Haute Savoie avec le Département"
+    },
+    {
+      "title": "Les chiens de traîneau, grandes vedettes de la Grande Odyssée …",
+      "url": "https://www.auvergnerhonealpes.fr/actualites/les-chiens-de-traineau-grandes-vedettes-de-la-grande-odyssee-royal-canin-2027",
+      "snippet": "5 days ago · L’ambiance Grand nord de la Grande Odyssée est de retour du 7 au 19 janvier, en Savoie, Haute-Savoie et en Isère, …"
+    },
+    {
+      "title": "CEDIA - La Cynophilie en France",
+      "url": "https://www.cedia.fr/",
+      "snippet": "Oct 21, 2026 · CEDIA est la plateforme de reference de la cynophilie en France : calendrier des expositions canines, engagements …"
+    }
+  ]
+}

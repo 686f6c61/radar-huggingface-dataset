@@ -5,7 +5,7 @@
   "author": "Hebrish",
   "url": "https://huggingface.co/Hebrish/Jachnun-GGUF",
   "created_at": "2026-10-16T18:19:56.000Z",
-  "updated_at": "2026-10-20T00:05:20.000Z",
+  "updated_at": "2026-10-21T01:02:35.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -27,6 +27,7 @@
     "he",
     "base_model:Hebrish/Jachnun",
     "base_model:quantized:Hebrish/Jachnun",
+    "doi:10.57967/hf/11111",
     "license:cc-by-4.0",
     "region:us"
   ],
@@ -35,7 +36,7 @@
   "trending_score": 0,
   "parameters": 617869958,
   "parameters_human": "617.9M",
-  "storage_bytes": 12212007680,
+  "storage_bytes": 12212739194,
   "storage_human": "12.2 GB",
   "base_model": "Hebrish/Jachnun",
   "formats": [

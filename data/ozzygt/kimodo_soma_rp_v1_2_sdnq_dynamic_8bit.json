@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "OzzyGT/Kimodo_SOMA_RP_v1_2_sdnq_dynamic_8bit",
+  "slug": "ozzygt-kimodo_soma_rp_v1_2_sdnq_dynamic_8bit",
+  "author": "OzzyGT",
+  "url": "https://huggingface.co/OzzyGT/Kimodo_SOMA_RP_v1_2_sdnq_dynamic_8bit",
+  "created_at": "2026-10-20T12:59:19.000Z",
+  "updated_at": "2026-10-20T18:52:38.000Z",
+  "license": "kimodo-and-llama3-component-licenses",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-motion",
+    "motion-generation",
+    "kimodo",
+    "modular-diffusers",
+    "soma",
+    "sdnq",
+    "en",
+    "base_model:OzzyGT/Kimodo_SOMA_RP_v1_2",
+    "base_model:quantized:OzzyGT/Kimodo_SOMA_RP_v1_2",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 283556227,
+  "parameters_human": "283.6M",
+  "storage_bytes": 8520507665,
+  "storage_human": "8.5 GB",
+  "base_model": "OzzyGT/Kimodo_SOMA_RP_v1_2",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tsukasa452 User Profile | DeviantArt",
+      "url": "https://www.deviantart.com/tsukasa452/gallery",
+      "snippet": "Emily 0 Watchers192 Pageviews1 Deviation0 Comments Profile Navigation tsukasa452 Home Gallery Favourites About Send Note …"
+    },
+    {
+      "title": "Tsukasa (@tsukasa4572) / X",
+      "url": "https://x.com/tsukasa4572",
+      "snippet": "128 followers · 362 following. Joined Sep 2013. See the latest conversations with @tsukasa4572"
+    },
+    {
+      "title": "SORA-452 Human Resource Difficult Site Supervisor Is Re",
+      "url": "https://njavtv.com/dm18/en/sora-452",
+      "snippet": "There is a mountain of work, but talent keeps running away... Tsukasa Nagano, who is also the site supervisor of a certain civil …"
+    },
+    {
+      "title": "tsukasa452 - BOOTH",
+      "url": "https://tsukasa452.booth.pm/",
+      "snippet": "リクエストをご希望の方はこちらからご購入していただいた後にDMくださいイラスト生成 リクエスト権 40枚(¥ 700), イラスト生 …"
+    },
+    {
+      "title": "tsukasa - pixiv",
+      "url": "https://www.pixiv.net/en/users/2382",
+      "snippet": "tsukasa - pixiv ... a"
+    }
+  ]
+}

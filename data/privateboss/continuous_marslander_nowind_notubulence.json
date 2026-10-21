@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "privateboss/Continuous_MarsLander_NoWind_NoTubulence",
+  "slug": "privateboss-continuous_marslander_nowind_notubulence",
+  "author": "privateboss",
+  "url": "https://huggingface.co/privateboss/Continuous_MarsLander_NoWind_NoTubulence",
+  "created_at": "2026-10-20T22:59:31.000Z",
+  "updated_at": "2026-10-20T23:54:26.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openmdw-1.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

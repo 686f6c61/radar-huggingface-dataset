@@ -5,7 +5,7 @@
   "author": "scx-admin",
   "url": "https://huggingface.co/scx-admin/Apex-large",
   "created_at": "2026-10-19T03:01:38.000Z",
-  "updated_at": "2026-10-19T03:24:49.000Z",
+  "updated_at": "2026-10-20T10:25:51.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "zero-shot-image-classification",
@@ -36,7 +36,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 21,
+  "downloads_30d": 23,
   "trending_score": 0,
   "parameters": 8979664627,
   "parameters_human": "8.98B",

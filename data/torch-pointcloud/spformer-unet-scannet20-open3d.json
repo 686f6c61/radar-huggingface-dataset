@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "torch-pointcloud/spformer-unet.scannet20.open3d",
+  "slug": "torch-pointcloud-spformer-unet-scannet20-open3d",
+  "author": "torch-pointcloud",
+  "url": "https://huggingface.co/torch-pointcloud/spformer-unet.scannet20.open3d",
+  "created_at": "2026-10-17T11:28:42.000Z",
+  "updated_at": "2026-10-20T20:46:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "torch-pointcloud",
+  "languages": [],
+  "tags": [
+    "torch-pointcloud",
+    "safetensors",
+    "point-cloud",
+    "3d",
+    "pytorch",
+    "spformer-unet",
+    "segmentation",
+    "dataset:scannet",
+    "arxiv:2211.15766",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 17335476,
+  "parameters_human": "17.3M",
+  "storage_bytes": 69371648,
+  "storage_human": "69 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "ScanNet (20 classes)",
+      "metric": "mIoU",
+      "value": 67.71
+    },
+    {
+      "task": null,
+      "dataset": "ScanNet (20 classes)",
+      "metric": "OA",
+      "value": 87.99
+    }
+  ],
+  "sources": [
+    {
+      "title": "PyTorch Foundation - PyTorch",
+      "url": "https://pytorch.org/",
+      "snippet": "1 day ago · Distributed Training Scalable distributed training and performance optimization in research and production is enabled by …Read more"
+    },
+    {
+      "title": "Télécharger Torch (gratuit) Windows - Clubic",
+      "url": "https://www.clubic.com/telecharger-fiche418134-torch.html",
+      "snippet": "1 day ago · Torch est un navigateur web fondé sur le moteur Chromium. Il propose une interface familière, proche de celle de …"
+    },
+    {
+      "title": "PyTorch — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/PyTorch",
+      "snippet": "PyTorch définit une classe appelée Tensor (torch.Tensor) pour stocker les données et opérer sur des tableaux rectangulaires …"
+    },
+    {
+      "title": "Get Started Locally - PyTorch",
+      "url": "https://pytorch.org/get-started/locally/",
+      "snippet": "Get Started Select preferences and run the command to install PyTorch locally, or get started quickly with one of the supported cloud …"
+    },
+    {
+      "title": "torch · PyPI",
+      "url": "https://pypi.org/project/torch/",
+      "snippet": "You can write new neural network layers in Python using the torch API or your favorite NumPy-based libraries such as SciPy. If you …"
+    }
+  ]
+}

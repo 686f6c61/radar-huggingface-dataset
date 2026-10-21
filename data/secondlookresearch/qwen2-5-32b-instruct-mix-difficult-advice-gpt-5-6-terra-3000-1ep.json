@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "SecondLookResearch/Qwen2.5-32B-instruct-mix-difficult-advice-gpt-5.6-terra-3000-1ep",
+  "slug": "secondlookresearch-qwen2-5-32b-instruct-mix-difficult-advice-gpt-5-6-terra-3000-1ep",
+  "author": "SecondLookResearch",
+  "url": "https://huggingface.co/SecondLookResearch/Qwen2.5-32B-instruct-mix-difficult-advice-gpt-5.6-terra-3000-1ep",
+  "created_at": "2026-09-26T02:37:05.000Z",
+  "updated_at": "2026-10-20T22:20:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "alignment",
+    "teaching-qwen-why",
+    "dataset:SecondLookResearch/teaching-qwen-why-data",
+    "base_model:Qwen/Qwen2.5-32B",
+    "base_model:adapter:Qwen/Qwen2.5-32B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2159054445,
+  "storage_human": "2.2 GB",
+  "base_model": "Qwen/Qwen2.5-32B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Watch Free Movies Online with Plex",
+      "url": "https://www.plex.tv/watch-free/",
+      "snippet": "Paying to watch movies is a thing of the past. Watch FREE MOVIES ONLINE at zero cost on any device with Plex. Browse our …"
+    },
+    {
+      "title": "Movies & TV • Free & Premium - FlixHouse",
+      "url": "https://flixhouse.com/",
+      "snippet": "Stream movies, documentaries, and live TV channels in HD anytime, anywhere. Watch free with ads or upgrade for ad-free …"
+    },
+    {
+      "title": "FlixMovies - Stream & Watch Latest Bollywood, Hollywood Movies",
+      "url": "https://flixmovies.rf.gd/",
+      "snippet": "Stream and watch the latest Bollywood, Hollywood, South Indian movies, and TV show web series online in HD quality for free on …"
+    },
+    {
+      "title": "Watch Free Movies & TV Shows Online - Popcornflix",
+      "url": "https://popcornflix.com/categories/movies",
+      "snippet": "Watch movies for free on Popcornflix, offering a wide range of genres including Action, Horror, Sci-Fi, Crime and Originals. Stream now."
+    },
+    {
+      "title": "Flix Movies - Discord",
+      "url": "https://discord.com/invite/flix-movies-993573717252771910",
+      "snippet": "Partage la passion du cinéma avec nous. Rejoins l'aventure sur flixmovies.fr ! | 71419 members"
+    }
+  ]
+}

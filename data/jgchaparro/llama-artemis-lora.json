@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "jgchaparro/Llama-Artemis-lora",
+  "slug": "jgchaparro-llama-artemis-lora",
+  "author": "jgchaparro",
+  "url": "https://huggingface.co/jgchaparro/Llama-Artemis-lora",
+  "created_at": "2026-10-09T12:14:36.000Z",
+  "updated_at": "2026-10-21T00:10:42.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "el"
+  ],
+  "tags": [
+    "safetensors",
+    "translation",
+    "tsakonian",
+    "greek",
+    "endangered-languages",
+    "unsloth",
+    "llama",
+    "el",
+    "base_model:ilsp/Llama-Krikri-8B-Instruct-v1.5",
+    "base_model:finetune:ilsp/Llama-Krikri-8B-Instruct-v1.5",
+    "license:llama3.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 690689535,
+  "storage_human": "691 MB",
+  "base_model": "ilsp/Llama-Krikri-8B-Instruct-v1.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

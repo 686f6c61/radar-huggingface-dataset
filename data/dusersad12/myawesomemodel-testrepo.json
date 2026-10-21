@@ -4,8 +4,8 @@
   "slug": "dusersad12-myawesomemodel-testrepo",
   "author": "dusersad12",
   "url": "https://huggingface.co/dusersad12/MyAwesomeModel-TestRepo",
-  "created_at": "2026-10-10T02:49:53.000Z",
-  "updated_at": "2026-10-10T02:49:58.000Z",
+  "created_at": "2026-10-20T10:55:00.000Z",
+  "updated_at": "2026-10-20T11:03:10.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -13,15 +13,12 @@
   "languages": [],
   "tags": [
     "transformers",
-    "pytorch",
-    "bert",
-    "feature-extraction",
     "license:mit",
     "endpoints_compatible",
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 126,
+  "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -31,8 +28,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-10-17T03:42:33.318Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "luisastellet/qwen-metaphor-unke-camada-2-zero-um",
+  "slug": "luisastellet-qwen-metaphor-unke-camada-2-zero-um",
+  "author": "luisastellet",
+  "url": "https://huggingface.co/luisastellet/qwen-metaphor-unke-camada-2-zero-um",
+  "created_at": "2026-10-14T13:24:50.000Z",
+  "updated_at": "2026-10-21T00:06:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1045,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 9548362522,
+  "storage_human": "9.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CNEWS | Actualités, Infos et News en direct vidéo et replay",
+      "url": "https://www.cnews.fr/",
+      "snippet": "Le site de la chaîne d’information en continu CNEWS. Monde, politique, faits divers, sport, culture, people… Reportages en vidéo, le …"
+    },
+    {
+      "title": "LES REPLAYS - CNEWS",
+      "url": "https://www.cnews.fr/les-replays",
+      "snippet": "2 days ago · Regardez les replays des émissions et actualités de CNEWS, disponibles en vidéo à tout moment."
+    },
+    {
+      "title": "Le Direct | CNEWS",
+      "url": "https://www.cnews.fr/le-direct",
+      "snippet": "08h08 Violences urbaines : «Actuellement, 123 personnes sont incarcérées», annonce Gérald Darmanin sur CNEWS 08h07 L'acteur …"
+    },
+    {
+      "title": "La Matinale - CNEWS",
+      "url": "https://www.cnews.fr/la-matinale",
+      "snippet": "Emotion sur le plateau de La Matinale suite au témoignage poignant de Marius Larrivé, petit-fils de Berthe, frappée à mort en 2021"
+    },
+    {
+      "title": "Face à Philippe de Villiers (Émission du 25/09/2026) - CNEWS",
+      "url": "https://www.cnews.fr/emission/2026-09-25/face-philippe-de-villiers-emission-du-25092026-1924594",
+      "snippet": "Sep 25, 2026 · Philippe de Villiers passe en revue l'actualité de la semaine dans #FaceAPhilippedeVilliers. Présenté par Eliot Deval"
+    }
+  ]
+}

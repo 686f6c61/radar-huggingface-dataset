@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "tsolful/FastH3-Omni-Comfy-INT4mixed-INT6GPTQ",
+  "slug": "tsolful-fasth3-omni-comfy-int4mixed-int6gptq",
+  "author": "tsolful",
+  "url": "https://huggingface.co/tsolful/FastH3-Omni-Comfy-INT4mixed-INT6GPTQ",
+  "created_at": "2026-10-20T08:27:43.000Z",
+  "updated_at": "2026-10-20T22:25:50.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "minimax-h3",
+    "omniref",
+    "text-to-video",
+    "ref-to-video",
+    "video-audio",
+    "quantized",
+    "int4",
+    "int6",
+    "gptq",
+    "vsa",
+    "arxiv:2210.17323",
+    "base_model:FastVideo/FastH3-Omni-Comfy",
+    "base_model:quantized:FastVideo/FastH3-Omni-Comfy",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 73666743168,
+  "storage_human": "73.7 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3, FastVideo/FastVideo-FastH3-Omni-8-Step-V1, FastVideo/FastH3-OmniRef-Comfy",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FastH3-Omni — MiniMax H3 Reference Audio & Video Generator",
+      "url": "https://fasth3-omni.com/en",
+      "snippet": "Generate video with synchronized audio from text, reference images, and keyframes with FastH3-Omni, the accelerated MiniMax H3 omni reference model. Try it free in your browser."
+    },
+    {
+      "title": "FastVideo-FastH3-8-Step-V2 - Hugging Face",
+      "url": "https://huggingface.co/FastVideo/FastVideo-FastH3-8-Step-V2",
+      "snippet": "The FastH3 8-Step V2 checkpoint from FastVideo. It generates synchronized video and audio from text with eight transformer forwards. This step-1300 model was trained with data-free DMD2 and VSA-H3 at 80% sparsity. This checkpoint requires FastVideo&#x27;s VSA-H3 attention backend. Its video scheduler ..."
+    },
+    {
+      "title": "FastH3: FastVideo 4-Step H3 Model & Setup",
+      "url": "https://fasth3.org/",
+      "snippet": "Explore FastH3 by FastVideo, an open-weight four-step MiniMax H3 preview. Watch real samples, compare checkpoints, run it locally, or try hosted H3 online."
+    },
+    {
+      "title": "tsolful/Minimax_H3_INT4Mixed · Hugging Face",
+      "url": "https://huggingface.co/tsolful/Minimax_H3_INT4Mixed",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "fasth3 - vLLM-Omni",
+      "url": "https://docs.vllm.ai/projects/vllm-omni/en/latest/api/vllm_omni/diffusion/models/minimax_h3/fasth3/",
+      "snippet": "vllm_omni.diffusion.models.minimax_h3.fasth3 FastVideo FastH3: a four-step DMD2 student of MiniMax-H3. FastH3 replaces H3&#x27;s 49 denoiser evaluations with four. It ships as an adapter over the base checkpoint rather than as a full release, so it reuses H3&#x27;s text encoder, video VAE, audio VAE, tokenizers and schedulers unchanged."
+    }
+  ]
+}

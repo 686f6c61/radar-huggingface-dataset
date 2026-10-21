@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "GeertWang/pi05-v6d-focus-editor-r1",
+  "slug": "geertwang-pi05-v6d-focus-editor-r1",
+  "author": "GeertWang",
+  "url": "https://huggingface.co/GeertWang/pi05-v6d-focus-editor-r1",
+  "created_at": "2026-10-20T20:30:58.000Z",
+  "updated_at": "2026-10-20T20:31:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "reinforcement-learning",
+    "pi0.5",
+    "unitree-g1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1359737727,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Twitch",
+      "url": "https://fr.twitch.tv/",
+      "snippet": ""
+    },
+    {
+      "title": "Twitch.tv - Official Site",
+      "url": "https://www.twitch.tv/",
+      "snippet": "Twitch is the world`s leading video platform and community for gamers."
+    },
+    {
+      "title": "Twitch",
+      "url": "https://www.twitch.com/login",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "Twitch",
+      "url": "https://www.twitch.tv/?lang=es-ES",
+      "snippet": "Twitch es un servicio de transmisión en directo e interactivo para contenido sobre juegos, ocio, deportes, música y mucho más."
+    },
+    {
+      "title": "Twitch",
+      "url": "http://app.twitch.tv/",
+      "snippet": "Twitch App for iOS Watch games you love, follow new channels, and chat with other players anytime, anywhere."
+    }
+  ]
+}

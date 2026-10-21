@@ -5,7 +5,7 @@
   "author": "CyanMonkey",
   "url": "https://huggingface.co/CyanMonkey/TestSubject-1",
   "created_at": "2026-10-16T10:23:48.000Z",
-  "updated_at": "2026-10-20T02:29:21.000Z",
+  "updated_at": "2026-10-20T10:26:54.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -29,12 +29,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 80,
+  "downloads_30d": 91,
   "trending_score": 0,
   "parameters": 148826240,
   "parameters_human": "148.8M",
-  "storage_bytes": 284511960458,
-  "storage_human": "284.5 GB",
+  "storage_bytes": 310917906472,
+  "storage_human": "310.9 GB",
   "base_model": null,
   "formats": [
     "safetensors"

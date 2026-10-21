@@ -5,7 +5,7 @@
   "author": "nile-academy",
   "url": "https://huggingface.co/nile-academy/ministral-3-3b-reasoning-2512-gguf",
   "created_at": "2026-10-19T23:09:11.000Z",
-  "updated_at": "2026-10-19T23:09:17.000Z",
+  "updated_at": "2026-10-20T08:47:04.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "gguf",
+    "safetensors",
     "wekala",
     "text-generation",
     "base_model:mistralai/Ministral-3-3B-Reasoning-2512",
@@ -23,15 +24,16 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 56,
   "trending_score": 0,
   "parameters": 3429006336,
   "parameters_human": "3.43B",
-  "storage_bytes": 9114903680,
-  "storage_human": "9.1 GB",
+  "storage_bytes": 23696966814,
+  "storage_human": "23.7 GB",
   "base_model": "mistralai/Ministral-3-3B-Reasoning-2512",
   "formats": [
-    "gguf"
+    "gguf",
+    "safetensors"
   ],
   "is_conversational": true,
   "gated": false,

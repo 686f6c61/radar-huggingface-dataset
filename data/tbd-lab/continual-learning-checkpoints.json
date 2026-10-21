@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "tbd-lab/continual-learning-checkpoints",
+  "slug": "tbd-lab-continual-learning-checkpoints",
+  "author": "tbd-lab",
+  "url": "https://huggingface.co/tbd-lab/continual-learning-checkpoints",
+  "created_at": "2026-10-20T21:32:55.000Z",
+  "updated_at": "2026-10-21T01:53:18.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "continual-learning",
+    "lora",
+    "self-distillation",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3112038726461,
+  "storage_human": "3112.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Que signifie TBD? - Abbreviation Finder",
+      "url": "https://www.abbreviationfinder.org/fr/acronyms/TBD.html",
+      "snippet": "En résumé, TBD est une abréviation qui peut désigner différents termes selon le contexte, et son interprétation peut varier selon …"
+    },
+    {
+      "title": "Signification de TBD en anglais. Définitions et abréviations",
+      "url": "https://wallstreetenglish.fr/fiches-anglais/vocabulaire/signification-tbd-en-anglais",
+      "snippet": "L'abréviation \"TBD\" est souvent utilisée pour signaler qu'une information est manquante mais sera fournie plus tard. Que ce soit …"
+    },
+    {
+      "title": "Brumisation industrielle française haute pression - TBD",
+      "url": "https://www.tbd.fr/",
+      "snippet": "Parmi les systèmes de refroidissement existants, la brumisation haute pression TBD se présente comme l’un des plus efficaces, des …"
+    },
+    {
+      "title": "TBD — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/TBD",
+      "snippet": "TBD signifie Théâtre des Bains Douches, qui est un théâtre dans la ville du Havre en France. TBD est l'abréviation de …"
+    },
+    {
+      "title": "TBD GROUP - Agence e-commerce Magento : Création, Audit",
+      "url": "https://www.tbdgroup.com/",
+      "snippet": "Chez TBD Group, nous sommes plus qu’une entreprise spécialisée dans la création et la maintenance de sites e-commerce : nous …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "shahadalqah01/matching-study",
+  "slug": "shahadalqah01-matching-study",
+  "author": "shahadalqah01",
+  "url": "https://huggingface.co/shahadalqah01/matching-study",
+  "created_at": "2026-10-20T19:51:33.000Z",
+  "updated_at": "2026-10-20T19:51:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "70+ Easy Science Experiments Using Materials You Already Have",
+      "url": "https://www.weareteachers.com/easy-science-experiments/",
+      "snippet": "Mar 16, 2026 · While some experiments require expensive lab equipment or dangerous chemicals, there are plenty of cool projects …"
+    },
+    {
+      "title": "48 Easy Science Experiments To Do At Home - Smore Science",
+      "url": "https://www.smorescience.com/easy-science-experiments-to-do-at-home/",
+      "snippet": "Oct 9, 2026 · We have rounded up some simple, fun and easy science experiments to do at home after school. Hands-on …"
+    },
+    {
+      "title": "20 Fun Science Experiments Kids Can Do at Home",
+      "url": "https://www.kidsworldfun.com/blog/fun-science-experiments-kids-at-home/",
+      "snippet": "Sep 2, 2026 · Discover 20 fun and easy science experiments kids can do at home using simple materials. Explore hands-on activities …"
+    },
+    {
+      "title": "38 Fun Science Experiments You Can Do at Home",
+      "url": "https://theofflinekid.com/science-experiments-you-can-do-at-home/",
+      "snippet": "Discover the joy of science with our ultimate guide to at-home experiments. From chemistry to astronomy, explore 38 fun and …"
+    },
+    {
+      "title": "20 Easy Science Experiments To Do At Home - theharveeschool.com",
+      "url": "https://www.theharveeschool.com/blog/20-easy-science-experiments-to-do-at-home/",
+      "snippet": "Dec 23, 2024 · Discover 20 easy science experiments you can do at home! Fun and educational activities for kids and adults to …"
+    }
+  ]
+}

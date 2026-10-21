@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "OzzyGT/Pixal3D",
+  "slug": "ozzygt-pixal3d",
+  "author": "OzzyGT",
+  "url": "https://huggingface.co/OzzyGT/Pixal3D",
+  "created_at": "2026-10-20T19:55:25.000Z",
+  "updated_at": "2026-10-20T20:22:16.000Z",
+  "license": "pixal3d-with-third-party-components",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-3d",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "pixal3d",
+    "modular-diffusers",
+    "image-to-3d",
+    "en",
+    "base_model:TencentARC/Pixal3D",
+    "base_model:finetune:TencentARC/Pixal3D",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13652759358,
+  "storage_human": "13.7 GB",
+  "base_model": "TencentARC/Pixal3D, facebook/dinov3-vitl16-pretrain-lvd1689m",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/",
+      "snippet": "On a device or on the web, viewers can watch and discover millions of personalized short videos. Download the app to get started."
+    },
+    {
+      "title": "Log in | TikTok",
+      "url": "https://www.tiktok.com/login",
+      "snippet": "Log in or sign up for an account on TikTok. Start watching to discover real people and real videos that will make your day."
+    },
+    {
+      "title": "Se connecter | TikTok",
+      "url": "https://livecenter.tiktok.com/?lang=fr",
+      "snippet": "Log in or sign up for an account on TikTok. Start watching to discover real people and real videos that will make your day."
+    },
+    {
+      "title": "Iniciar sesión | TikTok",
+      "url": "https://livecenter.tiktok.com/?lang=es",
+      "snippet": "Log in or sign up for an account on TikTok. Start watching to discover real people and real videos that will make your day."
+    },
+    {
+      "title": "Tiktok - Make Your Day",
+      "url": "https://tiktok-ui.vercel.app/",
+      "snippet": "Web site created using create-react-app"
+    }
+  ]
+}

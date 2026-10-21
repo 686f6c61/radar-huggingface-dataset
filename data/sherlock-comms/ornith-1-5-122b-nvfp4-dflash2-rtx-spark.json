@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Sherlock-Comms/Ornith-1.5-122B-NVFP4-DFlash2-RTX-Spark",
+  "slug": "sherlock-comms-ornith-1-5-122b-nvfp4-dflash2-rtx-spark",
+  "author": "Sherlock-Comms",
+  "url": "https://huggingface.co/Sherlock-Comms/Ornith-1.5-122B-NVFP4-DFlash2-RTX-Spark",
+  "created_at": "2026-10-20T20:18:39.000Z",
+  "updated_at": "2026-10-21T00:56:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen3_5_moe",
+    "nvfp4",
+    "modelopt",
+    "dflash",
+    "dflash2",
+    "speculative-decoding",
+    "rtx-spark",
+    "n1x",
+    "image-text-to-text",
+    "conversational",
+    "base_model:ornith-ai/Ornith-1.5-122B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-122B",
+    "license:mit",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 63972847344,
+  "parameters_human": "63.97B",
+  "storage_bytes": 78749735890,
+  "storage_human": "78.7 GB",
+  "base_model": "ornith-ai/Ornith-1.5-122B-NVFP4, ornith-ai/Ornith-1.5-122B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sherlock (série télévisée) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Sherlock_(s%C3%A9rie_t%C3%A9l%C3%A9vis%C3%A9e)",
+      "snippet": "Sherlock est une série télévisée policière britannique créée par Mark Gatiss et Steven Moffat et diffusée depuis le 25 juillet 2010 sur …"
+    },
+    {
+      "title": "Sherlock (TV series) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sherlock_(TV_series)",
+      "snippet": "Sherlock (TV series) ... Sherlock is a British mystery crime drama television series based on Sir Arthur Conan Doyle 's Sherlock …"
+    },
+    {
+      "title": "Sherlock - Les épisodes en replay | France TV",
+      "url": "https://www.france.tv/france-4/sherlock/",
+      "snippet": "Le détective consultant Sherlock Holmes, passionné de nouvelles technologies et très intuitif, est souvent appelé à la rescousse. …"
+    },
+    {
+      "title": "Sherlock sur M6+ : voir les épisodes en streaming",
+      "url": "https://www.m6.fr/sherlock-p_27190",
+      "snippet": "Sherlock en replay sur M6+ : les épisodes en intégralité, des vidéos supplémentaires et les meilleurs extraits."
+    },
+    {
+      "title": "Sherlock - Série TV 2010 - AlloCiné",
+      "url": "https://www.allocine.fr/series/ficheserie_gen_cserie=4528.html",
+      "snippet": "Découvrez la série TV Sherlock de avec Benedict Cumberbatch (Sherlock Holmes), Martin Freeman (Dr John Watson). Les …"
+    }
+  ]
+}

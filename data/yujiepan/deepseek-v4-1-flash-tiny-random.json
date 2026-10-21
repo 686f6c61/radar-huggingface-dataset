@@ -5,7 +5,7 @@
   "author": "yujiepan",
   "url": "https://huggingface.co/yujiepan/deepseek-v4.1-flash-tiny-random",
   "created_at": "2026-10-19T23:41:48.000Z",
-  "updated_at": "2026-10-19T23:55:30.000Z",
+  "updated_at": "2026-10-20T03:06:28.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": 67984458,
   "parameters_human": "68.0M",

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "peonist-ai/halogen-npu-flux2-klein-4b",
+  "slug": "peonist-ai-halogen-npu-flux2-klein-4b",
+  "author": "peonist-ai",
+  "url": "https://huggingface.co/peonist-ai/halogen-npu-flux2-klein-4b",
+  "created_at": "2026-10-07T10:46:50.000Z",
+  "updated_at": "2026-10-20T18:51:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "halogen",
+  "languages": [],
+  "tags": [
+    "halogen",
+    "npu",
+    "ryzen-ai",
+    "xdna2",
+    "strix-halo",
+    "amd",
+    "text-to-image",
+    "base_model:black-forest-labs/FLUX.2-klein-4B",
+    "base_model:quantized:black-forest-labs/FLUX.2-klein-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16456034470,
+  "storage_human": "16.5 GB",
+  "base_model": "black-forest-labs/FLUX.2-klein-4B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "peonist-ai/halogen-npu-flux2-klein-4b at main - Hugging Face",
+      "url": "https://huggingface.co/peonist-ai/halogen-npu-flux2-klein-4b/tree/main",
+      "snippet": "flux2-klein-4b: 20 sizes up to 1024x1024, square or not (halogen-flash-server 0.18.0) 4 days ago tokenizer ..."
+    },
+    {
+      "title": "peonist-ai/halogen-npu-flux2-klein-4b · Hugging Face",
+      "url": "https://huggingface.co/peonist-ai/halogen-npu-flux2-klein-4b",
+      "snippet": "FLUX.2-klein-4B, converted to run on the Ryzen AI NPU of AMD Strix Halo inside halogen-flash-server, beside the Flash model on the GPU and behind the same port. Questions go to the Discord. Bugs go to the server repository&#x27;s issues. These files run only inside the halogen-flash-server container, on ..."
+    },
+    {
+      "title": "Halogen Npu Flux2 Klein 4b - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/peonist-ai/halogen-npu-flux2-klein-4b",
+      "snippet": "Registry entry for model Halogen Npu Flux2 Klein 4b; source metadata pending."
+    },
+    {
+      "title": "flux2-klein-4b: expose diffusion steps + 1024 size option #152",
+      "url": "https://github.com/peonist-ai/halogen-flash-server/issues/152",
+      "snippet": "The flux2-klein-4b image endpoint (POST /v1/images/generations) accepts only a fixed configuration: sizes are limited to 256x256 / 512x512 (auto = 512), and there is no way to control diffusion steps."
+    },
+    {
+      "title": "halogen-flash-server/docs/NPU.md at main · peonist-ai/halogen ... - GitHub",
+      "url": "https://github.com/peonist-ai/halogen-flash-server/blob/main/docs/NPU.md",
+      "snippet": "The NPU models&#x27; files stay in memory beside the Flash model&#x27;s, a few GB in all, about 8 GB more with flux2-klein-4b, about 1.6 GB more with qwen3-asr-.6b, about 4 GB with qwen3-asr-1.7b, about 1.1 GB with embeddinggemma-2 and about 0.8 GB with qwen3guard-stream-.6b."
+    }
+  ]
+}

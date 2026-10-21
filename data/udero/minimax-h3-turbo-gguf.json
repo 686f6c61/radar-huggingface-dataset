@@ -5,7 +5,7 @@
   "author": "udero",
   "url": "https://huggingface.co/udero/minimax-h3-turbo-gguf",
   "created_at": "2026-10-19T18:33:49.000Z",
-  "updated_at": "2026-10-19T19:26:04.000Z",
+  "updated_at": "2026-10-20T12:14:53.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "text-to-video",
@@ -26,12 +26,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 57,
   "trending_score": 0,
   "parameters": 20111438744,
   "parameters_human": "20.11B",
-  "storage_bytes": 13923170464,
-  "storage_human": "13.9 GB",
+  "storage_bytes": 63368405632,
+  "storage_human": "63.4 GB",
   "base_model": "unsloth/MiniMax-H3-GGUF",
   "formats": [
     "gguf"

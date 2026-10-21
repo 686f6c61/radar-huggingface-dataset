@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "MichaelGan0625/GR00T-N1.7-WUJI-B2-ee-abs-200traj-bs128-sd075-30k-20261020",
+  "slug": "michaelgan0625-gr00t-n1-7-wuji-b2-ee-abs-200traj-bs128-sd075-30k-20261020",
+  "author": "MichaelGan0625",
+  "url": "https://huggingface.co/MichaelGan0625/GR00T-N1.7-WUJI-B2-ee-abs-200traj-bs128-sd075-30k-20261020",
+  "created_at": "2026-10-20T16:21:57.000Z",
+  "updated_at": "2026-10-20T18:51:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "groot",
+    "wuji",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92390339981,
+  "storage_human": "92.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

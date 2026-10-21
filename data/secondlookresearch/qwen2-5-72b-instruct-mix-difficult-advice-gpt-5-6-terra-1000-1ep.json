@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "SecondLookResearch/Qwen2.5-72B-instruct-mix-difficult-advice-gpt-5.6-terra-1000-1ep",
+  "slug": "secondlookresearch-qwen2-5-72b-instruct-mix-difficult-advice-gpt-5-6-terra-1000-1ep",
+  "author": "SecondLookResearch",
+  "url": "https://huggingface.co/SecondLookResearch/Qwen2.5-72B-instruct-mix-difficult-advice-gpt-5.6-terra-1000-1ep",
+  "created_at": "2026-10-06T01:54:30.000Z",
+  "updated_at": "2026-10-20T22:20:22.000Z",
+  "license": "qwen",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "alignment",
+    "teaching-qwen-why",
+    "dataset:SecondLookResearch/teaching-qwen-why-data",
+    "base_model:Qwen/Qwen2.5-72B",
+    "base_model:adapter:Qwen/Qwen2.5-72B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 25,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3380164501,
+  "storage_human": "3.4 GB",
+  "base_model": "Qwen/Qwen2.5-72B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-72B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-72B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2.5-72B-instruct-mix-difficult-advice-gpt-5.6-terra-1000-1ep",
+      "url": "https://friendli.ai/models/SecondLookResearch/Qwen2.5-72B-instruct-mix-difficult-advice-gpt-5.6-terra-1000-1ep",
+      "snippet": "Deploy Qwen2.5-72B-instruct-mix-difficult-advice-gpt-5.6-terra-1000-1ep with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Qwen2.5-72B-graft0-a1-terra3k-r1000-da-e1 - Hugging Face",
+      "url": "https://huggingface.co/SecondLookResearch/Qwen2.5-72B-graft0-a1-terra3k-r1000-da-e1",
+      "snippet": "Qwen2.5-72B-graft0-a1-terra3k-r1000-da-e1 Difficult-advice stage for the cross-model stacked experiment (CrossModelStackPlan.md), Qwen2.5-72B: terra3k r1000, 1 epoch, over the frozen Qwen2.5-72B-graft0-a1. Stage 2 floor gate, rung switch after r3000 saturated at 1.1%. LoRA r64/a128, linear-only, graft0 platform. Difficult-advice stage trained as a FRESH adapter over a merged, frozen A1. Serve ..."
+    },
+    {
+      "title": "Qwen2.5 72B Instruct Benchmarks, Pricing & Context Window",
+      "url": "https://llm-stats.com/models/qwen-2.5-72b-instruct",
+      "snippet": "The most-compared alternatives to Qwen2.5 72B Instruct are Phi 4 Reasoning, DeepSeek R1 Distill Qwen 32B, GPT-5. Open any pair side-by-side for benchmarks, pricing, context, and latency."
+    },
+    {
+      "title": "Qwen2.5-72B-instruct-mix API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/SecondLookResearch/Qwen2.5-72B-instruct-mix",
+      "snippet": "Deploy Qwen2.5-72B-instruct-mix with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

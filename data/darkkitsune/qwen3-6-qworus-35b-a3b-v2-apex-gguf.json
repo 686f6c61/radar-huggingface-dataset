@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "DarkKitsune/Qwen3.6-Qworus-35B-A3B-V2-APEX-GGUF",
+  "slug": "darkkitsune-qwen3-6-qworus-35b-a3b-v2-apex-gguf",
+  "author": "DarkKitsune",
+  "url": "https://huggingface.co/DarkKitsune/Qwen3.6-Qworus-35B-A3B-V2-APEX-GGUF",
+  "created_at": "2026-10-18T20:42:26.000Z",
+  "updated_at": "2026-10-20T23:58:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "coding",
+    "agent",
+    "conversational",
+    "long-context",
+    "terminal",
+    "llama.cpp",
+    "apex",
+    "text-generation",
+    "en",
+    "base_model:Accio-Lab/occamy-1.0",
+    "base_model:merge:Accio-Lab/occamy-1.0",
+    "base_model:Kwaipilot/KAT-Coder-V2.5-Dev",
+    "base_model:merge:Kwaipilot/KAT-Coder-V2.5-Dev",
+    "base_model:openbmb/MiniCPM-V-4.7-35B-A3B",
+    "base_model:merge:openbmb/MiniCPM-V-4.7-35B-A3B",
+    "base_model:ornith-ai/Ornith-1.5-35B-A3B",
+    "base_model:merge:ornith-ai/Ornith-1.5-35B-A3B",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 34659889792,
+  "parameters_human": "34.66B",
+  "storage_bytes": 39357155008,
+  "storage_human": "39.4 GB",
+  "base_model": "openbmb/MiniCPM-V-4.7-35B-A3B, ornith-ai/Ornith-1.5-35B-A3B, Kwaipilot/KAT-Coder-V2.5-Dev, Accio-Lab/occamy-1.0",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "List of largest reptiles - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/List_of_largest_reptiles",
+      "snippet": "[1] The following table below lists the 15 largest extant reptile species ranked according to their average mass range, with maximum …Read more"
+    },
+    {
+      "title": "Largest living reptiles (16 Examples Ranked) - Wildlife Informer",
+      "url": "https://wildlifeinformer.com/largest-living-reptiles/",
+      "snippet": "There are some species of reptiles that are not much bigger than the tip of your finger, but in this article we will be covering some of …"
+    },
+    {
+      "title": "Saltwater crocodile - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Saltwater_crocodile",
+      "snippet": "It has been listed as Least Concern on the IUCN Red List since 1996. [2] It was hunted for its skin throughout its range up to the …"
+    },
+    {
+      "title": "12 Reptiles That Can Live Over 100 Years - Animals Around The Globe",
+      "url": "https://www.animalsaroundtheglobe.com/12-reptiles-that-can-live-over-100-years-8-324085/",
+      "snippet": "Oct 14, 2026 · The saltwater crocodile, the largest living reptile on Earth, can potentially live beyond 100 years in both wild and …"
+    },
+    {
+      "title": "The World’s Largest Living Reptiles - Reptile Explorer",
+      "url": "https://reptileexplorer.com/reptile-insights/phenomenal-reptiles/worlds-largest-living-reptiles/",
+      "snippet": "The saltwater crocodile, Crocodylus porosus, is the largest living reptile by mass. Large males can grow several metres long, while …"
+    }
+  ]
+}

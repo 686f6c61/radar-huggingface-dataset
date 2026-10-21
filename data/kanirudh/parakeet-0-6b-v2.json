@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "kanirudh/parakeet-0.6B-v2",
+  "slug": "kanirudh-parakeet-0-6b-v2",
+  "author": "kanirudh",
+  "url": "https://huggingface.co/kanirudh/parakeet-0.6B-v2",
+  "created_at": "2026-10-21T00:07:45.000Z",
+  "updated_at": "2026-10-21T01:29:47.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "nemo-conformer-tdt",
+    "automatic-speech-recognition",
+    "asr",
+    "onnx-asr",
+    "en",
+    "base_model:nvidia/parakeet-tdt-0.6b-v2",
+    "base_model:quantized:nvidia/parakeet-tdt-0.6b-v2",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4432768759,
+  "storage_human": "4.4 GB",
+  "base_model": "nvidia/parakeet-tdt-0.6b-v2",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "'busty' Search - XNXX.COM",
+      "url": "https://www.xnxx.com/search/busty",
+      "snippet": "XNXX.COM 'busty' Search, free sex videos MMFF Ebony Super Squirter Nova Panda & BBW Redhead PAWG Busty Bexx Get Their …"
+    },
+    {
+      "title": "'busty sex' Search - XNXX.COM",
+      "url": "https://www.xnxx.com/search/busty+sex",
+      "snippet": "XNXX.COM 'busty sex' Search, free sex videos"
+    },
+    {
+      "title": "'busty japanese' Search - XNXX.COM",
+      "url": "https://www.xnxx.com/search/busty+japanese",
+      "snippet": "HCJAV Busty Japanese Cheerleader Yui Aoyama Gets Gangbanged 25.6k 88% 10min - 1080p YOSUGA Japanese busty matured …"
+    },
+    {
+      "title": "Busty Amateurs - Porn Maker - XNXX.COM",
+      "url": "https://www.xnxx.com/porn-maker/busty-amateurs",
+      "snippet": "Busty Amateurs,free videos, latest updates and direct chat"
+    },
+    {
+      "title": "'japanese busty' Search - XNXX.COM",
+      "url": "https://www.xnxx.com/search/japanese+busty",
+      "snippet": "XNXX.COM 'japanese busty' Search, free sex videos"
+    }
+  ]
+}

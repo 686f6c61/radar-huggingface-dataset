@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "juliensimon/Octen-Embedding-4B-mlx-4bit",
+  "slug": "juliensimon-octen-embedding-4b-mlx-4bit",
+  "author": "juliensimon",
+  "url": "https://huggingface.co/juliensimon/Octen-Embedding-4B-mlx-4bit",
+  "created_at": "2026-10-20T23:46:26.000Z",
+  "updated_at": "2026-10-20T23:46:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "mlx-embeddings",
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "mlx-embeddings",
+    "safetensors",
+    "qwen3",
+    "mlx",
+    "apple-silicon",
+    "embeddings",
+    "text-embeddings",
+    "sentence-similarity",
+    "retrieval",
+    "multilingual",
+    "feature-extraction",
+    "en",
+    "zh",
+    "arxiv:2506.05176",
+    "base_model:Octen/Octen-Embedding-4B",
+    "base_model:quantized:Octen/Octen-Embedding-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4021774336,
+  "parameters_human": "4.02B",
+  "storage_bytes": 2274055124,
+  "storage_human": "2.3 GB",
+  "base_model": "Octen/Octen-Embedding-4B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Big Tits Classic & Vintage Porn Movies on FullEroticMovies.com",
+      "url": "https://www.fulleroticmovies.net/category/big-tits/",
+      "snippet": "Looking for Big Tits Erotic Movies? We have a huge collection of FREE Big Tits Classic Porn Videos in full HD at …"
+    },
+    {
+      "title": "Busty movies - Hot Milf Porn Movies & Sex Clips / MILF Fox",
+      "url": "https://www.milffox.com/tags/Busty/",
+      "snippet": "Angela White is bathing her massive tits!"
+    },
+    {
+      "title": "VINTAGE EROTIC MOVIES - Big Tits - Porn videos @ BoobsBits.com",
+      "url": "https://boobsbits.com/videos/vintage-erotic-movies",
+      "snippet": "Popular videos: Vintage Erotic Movies. A Very Funny Vintage Porn Parody Alice In Wonderland, Anal movie with bendy baby doll …"
+    },
+    {
+      "title": "free erotic movies • fullxcinema",
+      "url": "https://fullxcinema.com/tag/free-erotic-movies/",
+      "snippet": "watch and download free erotic movies,celebrity full porn movies,Hollywood adult sex movies,xxx full movies,porn parody movies on …"
+    },
+    {
+      "title": "Busty Cops - Erotic Movies",
+      "url": "https://eroticmv.com/series/busty-cops/",
+      "snippet": "Busty Cops and the Jewel of Denial (2010) 90.4K"
+    }
+  ]
+}

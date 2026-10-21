@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "HelloSun/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-GGUF_EPQ",
+  "slug": "hellosun-nvidia-nemotron-3-5-bolt-74b-a9b-24gb-gguf_epq",
+  "author": "HelloSun",
+  "url": "https://huggingface.co/HelloSun/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-GGUF_EPQ",
+  "created_at": "2026-10-20T15:34:48.000Z",
+  "updated_at": "2026-10-20T23:44:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "moe",
+    "expert-offloading",
+    "cpu-inference",
+    "nemotron",
+    "epq",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-GGUF",
+    "base_model:finetune:nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-GGUF",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 517340,
+  "storage_human": "517340 B",
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

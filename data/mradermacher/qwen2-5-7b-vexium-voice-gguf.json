@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mradermacher/qwen2.5-7b-vexium-voice-GGUF",
+  "slug": "mradermacher-qwen2-5-7b-vexium-voice-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/qwen2.5-7b-vexium-voice-GGUF",
+  "created_at": "2026-06-29T12:27:16.000Z",
+  "updated_at": "2026-10-21T00:10:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:VexiumZZ/qwen2.5-7b-vexium-voice",
+    "base_model:quantized:VexiumZZ/qwen2.5-7b-vexium-voice",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 130,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 68146889984,
+  "storage_human": "68.1 GB",
+  "base_model": "VexiumZZ/qwen2.5-7b-vexium-voice",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hentai Series & Characters | Browse by Series | Hentai.tv",
+      "url": "https://hentai.tv/series",
+      "snippet": "Browse every hentai series on Hentai.tv. Find your favorite titles and characters, then watch every HD episode in order — updated …"
+    },
+    {
+      "title": "Hentai 4k - Vidéos Hentai gratuites en streaming",
+      "url": "https://hentai4k.com/fr/",
+      "snippet": "Site de vidéos porno hentai gratuit de haute qualité. Explorez Hentai 4k, la plateforme qui redéfinit l'expérience vidéo hentai. Plongez …"
+    },
+    {
+      "title": "Browse Hentai Videos | New & Popular HD Hentai | Hentai.tv",
+      "url": "https://hentai.tv/browse",
+      "snippet": "Browse all hentai videos on Hentai.tv. Watch new and popular HD hentai, anime porn clips, series, genres, tags, and uncensored …"
+    },
+    {
+      "title": "hentai videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/tags/hentai",
+      "snippet": "Real Life Hentai - Jia Lissa - Hot redhead humiliate & use her step sis 1440p 11 min"
+    },
+    {
+      "title": "Hentai Haven | Watch free Hentai Stream 720p 1080p HD",
+      "url": "https://hentaihaven.com/",
+      "snippet": "Hentai Haven free hentai video in English subtitles to watch hentai stream Online and download mp4 the best Hentaihaven …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "abenzerps/Spark-X2.6-4B-MLX-6bit",
+  "slug": "abenzerps-spark-x2-6-4b-mlx-6bit",
+  "author": "abenzerps",
+  "url": "https://huggingface.co/abenzerps/Spark-X2.6-4B-MLX-6bit",
+  "created_at": "2026-10-20T20:23:05.000Z",
+  "updated_at": "2026-10-20T20:26:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "spark2_5",
+    "spark-x2.6",
+    "long-context",
+    "1m-context",
+    "agent",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "base_model:XHToken/Spark-X2.6-4B",
+    "base_model:quantized:XHToken/Spark-X2.6-4B",
+    "license:apache-2.0",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4112079360,
+  "parameters_human": "4.11B",
+  "storage_bytes": 3343226382,
+  "storage_human": "3.3 GB",
+  "base_model": "XHToken/Spark-X2.6-4B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "abenzerps (Ahmet Benzer) - Hugging Face",
+      "url": "https://huggingface.co/abenzerps/collections",
+      "snippet": "12.10.2026 ... Spark-X2.5 model family releases, including GGUF and MLX conversions. abenzerps/Spark ..."
+    },
+    {
+      "title": "abenzerps/Spark-X2.5-4B-GGUF - Hugging Face",
+      "url": "https://huggingface.co/abenzerps/Spark-X2.5-4B-GGUF",
+      "snippet": "03.09.2026 ... Start the llama.cpp server · Configure the model in Pi. # Install Pi: npm install -g @earendil-works/pi-coding-agent # Add to ~/. · Run Pi. # ..."
+    },
+    {
+      "title": "Searching for the Optimal Solution for Air 8GB~12GB~16GB~Pro ...",
+      "url": "https://note.com/humble_bobcat51/n/nea5b8e810486?hl=en",
+      "snippet": "21.09.2026 ... Spark-X2.5-4B 8bit | 4.37GB | 1M | ○ Standalone OK | ○ | Native 1M ... 6 | OxCoder-9B | 9B | MLX (6bit) | 7.28 GB | — | 135 | Coding ..."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "lynaNSFW/Heptagram_MMH3",
+  "slug": "lynansfw-heptagram_mmh3",
+  "author": "lynaNSFW",
+  "url": "https://huggingface.co/lynaNSFW/Heptagram_MMH3",
+  "created_at": "2026-10-20T21:34:25.000Z",
+  "updated_at": "2026-10-20T21:36:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:neph1/minimax_h3_headmounted_fpv_cam",
+    "base_model:adapter:neph1/minimax_h3_headmounted_fpv_cam",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20971475568,
+  "storage_human": "21.0 GB",
+  "base_model": "neph1/minimax_h3_headmounted_fpv_cam",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "جستجوی پزشک: سازمان نظام پزشکی| دکتر یاسمین فاطمه سادات زجاجی،دکترای ...",
+      "url": "https://membersearch.irimc.org/member/profile?id=99e74681-7284-4eb0-ac9e-89364417c8ca",
+      "snippet": "اطلاعات تحصیلی و صلاحیت حرفه‌ای دکتر یاسمین فاطمه سادات زجاجی، شماره نظام پزشکی 215526"
+    },
+    {
+      "title": "سازمان نظام پزشکی | سامانه جستجوی اعضای جامعه پزشکی",
+      "url": "https://membersearch.irimc.org/list/council/%D8%AE%D8%B1%D8%A7%D8%B3%D8%A7%D9%86%20%D8%AC%D9%86%D9%88%D8%A8%DB%8C/%D8%A8%DB%8C%D8%B1%D8%AC%D9%86%D8%AF/%D8%AF%DA%A9%D8%AA%D8%B1%D8%A7%DB%8C%20%D8%AD%D8%B1%D9%81%D9%87%E2%80%8C%D8%A7%DB%8C%20%D9%BE%D8%B2%D8%B4%DA%A9%DB%8C/6",
+      "snippet": "محل عضویت | استان خراسان جنوبی | شهرستان بیرجند | رشته دکترای حرفه‌ای پزشکی"
+    },
+    {
+      "title": "فاطمه سادات امیری زگلوجه - سیویلیکا",
+      "url": "https://civilica.com/p/660204/",
+      "snippet": "دکتری حقوق کیفری و جرم شناسی، پژوهشگر دکتری تخصصی، مدرس و استاد دانشگاه، عضو بنیاد ملی نخبگان. در صورت تجاوز جنگی کشور متخاصم به کشور ثالث مسئول پرداخت خسارات …"
+    },
+    {
+      "title": "فاطمه السادات فاطمی نیا - صفحه شخصی - Research Profile.UT",
+      "url": "https://profile.ut.ac.ir/~fateminia/network",
+      "snippet": "برای نمایش جزئیات همکاری بر روی خطوط دیاگرام کلیک نمایید. برای نمایش اطلاعات مربوط به محتوا بر روی آیکون ها کلیک نمایید."
+    },
+    {
+      "title": "‎فاطمه سادات‎ (@fatemeh_sadat.x) • Instagram photos and videos",
+      "url": "https://www.instagram.com/fatemeh_sadat.x/",
+      "snippet": "252K Followers, 246 Following, 1,462 Posts - ‎فاطمه سادات (@fatemeh_sadat.x)‎ on Instagram: \"‎گفت ای شیخ هر انچه گویی هستم ایا تو چنان که مینمایی …"
+    }
+  ]
+}

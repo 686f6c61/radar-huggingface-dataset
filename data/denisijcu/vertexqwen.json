@@ -5,7 +5,7 @@
   "author": "Denisijcu",
   "url": "https://huggingface.co/Denisijcu/vertexqwen",
   "created_at": "2026-10-17T19:13:52.000Z",
-  "updated_at": "2026-10-17T20:08:10.000Z",
+  "updated_at": "2026-10-21T01:41:07.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -30,12 +30,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 11,
+  "downloads_30d": 21,
   "trending_score": 0,
   "parameters": 3085938688,
   "parameters_human": "3.09B",
-  "storage_bytes": 1929902656,
-  "storage_human": "1.9 GB",
+  "storage_bytes": 3859805312,
+  "storage_human": "3.9 GB",
   "base_model": "Qwen/Qwen2.5-3B-Instruct",
   "formats": [
     "gguf"

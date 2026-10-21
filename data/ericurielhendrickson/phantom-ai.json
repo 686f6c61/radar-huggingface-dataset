@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "EricUrielHendrickson/Phantom-AI",
+  "slug": "ericurielhendrickson-phantom-ai",
+  "author": "EricUrielHendrickson",
+  "url": "https://huggingface.co/EricUrielHendrickson/Phantom-AI",
+  "created_at": "2026-10-20T22:22:24.000Z",
+  "updated_at": "2026-10-20T22:22:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:cyber-phantom/opulent-odyssey-v01-flux",
+    "base_model:adapter:cyber-phantom/opulent-odyssey-v01-flux",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 589942,
+  "storage_human": "589942 B",
+  "base_model": "cyber-phantom/opulent-odyssey-v01-flux",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Maps | Walt Disney World Resort",
+      "url": "https://disneyworld.disney.go.com/common/maps/?msockid=0ff8e616571463ba06bdf1ee56e66266",
+      "snippet": "Find theme and water parks, Resort hotels, dining and entertainment. For assistance with your Walt Disney World vacation, including …"
+    },
+    {
+      "title": "Phantom: Constraining Generative Artificial Intelligence Models ...",
+      "url": "https://arxiv.org/html/2411.06376v1",
+      "snippet": "However, existing models often generate impractical traces due to the absence of PCIe-specific constraints, such as TLP ordering and causality. This paper presents Phantom, the first framework that treats TLP trace generation as a generative AI problem while incorporating PCIe-specific constraints."
+    },
+    {
+      "title": "Disney World Map [2025 Maps: Resorts, Theme Parks, PDF, etc]",
+      "url": "https://magicguides.com/Disney-World-Map/",
+      "snippet": "Disney World Resort Map Click the image for a larger version of this Disney World Resort map PDF. This Disney World map gives …"
+    },
+    {
+      "title": "Phantom AI - Revolutionary Self-Driving Computer Solutions Platform",
+      "url": "https://phantom.ai/",
+      "snippet": "PhantomFusion™ is a platform independent sensor fusion and object tracking system. The modular sensor fusion solution creates a thorough environmental model by fusing outputs from various sensors like camera, radar, LiDAR and ultrasonic."
+    },
+    {
+      "title": "Destinations - Walt Disney World Resort",
+      "url": "https://disneyworld.disney.go.com/destinations/map/?msockid=0ff8e616571463ba06bdf1ee56e66266",
+      "snippet": "Disney's Typhoon Lagoon Water Park water park Disney Springs Resort Area Closed for Refurbishment Buy Park Tickets Expand Map"
+    }
+  ]
+}

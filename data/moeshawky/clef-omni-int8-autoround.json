@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "moeshawky/clef-omni-int8-autoround",
+  "slug": "moeshawky-clef-omni-int8-autoround",
+  "author": "moeshawky",
+  "url": "https://huggingface.co/moeshawky/clef-omni-int8-autoround",
+  "created_at": "2026-10-20T21:36:06.000Z",
+  "updated_at": "2026-10-20T23:40:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_omni_moe",
+    "text-to-audio",
+    "auto-round",
+    "quantized",
+    "int8",
+    "multimodal",
+    "structured-output",
+    "decision-model",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Cloudflare/clef-omni",
+    "base_model:quantized:Cloudflare/clef-omni",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 13129032241,
+  "parameters_human": "13.13B",
+  "storage_bytes": 41561586120,
+  "storage_human": "41.6 GB",
+  "base_model": "Cloudflare/clef-omni",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "全新旗艦級SHOKZ OpenRun Pro 2 專業運動耳機∣骨氣雙單體開啟音 …",
+      "url": "https://www.mobile01.com/topicdetail.php?f=180&t=7059328",
+      "snippet": "Dec 18, 2024 · 答案是有的!! (2023年全球運動耳機銷量冠軍、擁有超過1408項發明專利)深耕開放式聲學及佩戴技術與運動與耳機領域 …"
+    },
+    {
+      "title": "Shokz OpenFit 試聽報告｜以「不入耳」設計升級 ... - Mobile01",
+      "url": "https://www.mobile01.com/topicdetail.php?f=180&t=6806118",
+      "snippet": "Jun 27, 2023 · 深耕骨傳導領域十餘年的運動耳機品牌 Shokz，今年推出全新的「不入耳式」藍牙耳機 OpenFit 持續探索開放式聆聽的 …"
+    },
+    {
+      "title": "韶音骨传导耳机真的有假货吗？? - 知乎",
+      "url": "https://www.zhihu.com/question/433490477",
+      "snippet": "③韶音AS803-个人比较推荐 26g轻盈机身，IP67高等级防水防尘， 韶音家最抗打的产品。 集韶音家所有 最顶级的骨传导技术于一 …"
+    },
+    {
+      "title": "如何评价韶音骨传导耳机OpenMove（S661）？ - 知乎",
+      "url": "https://www.zhihu.com/question/519863706",
+      "snippet": "推荐理由： 入门级标杆骨传导耳机， 价格非常亲民； IPX6级的防汗防水，虽然不可以戴着下水游泳， 不过日常的跑步出汗使用是没 …"
+    },
+    {
+      "title": "Wallpaper Engine怎么设置循环播放多个壁纸-百度经验",
+      "url": "https://jingyan.baidu.com/article/11c17a2c78ff55b547e39d3a.html",
+      "snippet": "Sep 5, 2020 · Wallpaper Engine怎么设置循环播放多个壁纸,使用WallaerEgie可以寻找精美的壁纸，在软件的实际使用过程中，有的小 …"
+    }
+  ]
+}

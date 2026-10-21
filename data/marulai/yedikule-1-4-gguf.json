@@ -5,7 +5,7 @@
   "author": "MarulAI",
   "url": "https://huggingface.co/MarulAI/Yedikule-1.4-GGUF",
   "created_at": "2026-10-19T20:53:13.000Z",
-  "updated_at": "2026-10-20T16:51:06.000Z",
+  "updated_at": "2026-10-20T18:17:24.000Z",
   "license": "yedikule-model-lisansi-v2",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -38,8 +38,8 @@
   "trending_score": 0,
   "parameters": 202055424,
   "parameters_human": "202.1M",
-  "storage_bytes": 1097941696,
-  "storage_human": "1.1 GB",
+  "storage_bytes": 1504098880,
+  "storage_human": "1.5 GB",
   "base_model": "MarulAI/Yedikule-1.4",
   "formats": [
     "gguf"

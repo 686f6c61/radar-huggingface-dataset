@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "knowledgator/gliclass-v4-edge",
+  "slug": "knowledgator-gliclass-v4-edge",
+  "author": "knowledgator",
+  "url": "https://huggingface.co/knowledgator/gliclass-v4-edge",
+  "created_at": "2026-10-16T10:06:36.000Z",
+  "updated_at": "2026-10-20T21:34:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": "gliclass",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gliclass",
+    "onnx",
+    "safetensors",
+    "GLiClass",
+    "deberta",
+    "zero-shot-classification",
+    "text-classification",
+    "multi-label-classification",
+    "instruction-following",
+    "reranking",
+    "guardrails",
+    "content-moderation",
+    "knowledge-graph-reasoning",
+    "en",
+    "arxiv:2609.02292",
+    "base_model:microsoft/deberta-v3-large",
+    "base_model:quantized:microsoft/deberta-v3-large",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 13,
+  "downloads_30d": 340,
+  "trending_score": 13,
+  "parameters": 439790595,
+  "parameters_human": "439.8M",
+  "storage_bytes": 3290133391,
+  "storage_human": "3.3 GB",
+  "base_model": "microsoft/deberta-v3-large",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "knowledgator/gliclass-v4-edge · Hugging Face",
+      "url": "https://huggingface.co/knowledgator/gliclass-v4-edge",
+      "snippet": "knowledgator/gliclass-v4-edge is the 0.4B-parameter edge release of GLiClass v4. The labels you pass and an optional instruction tell it what to decide at inference time. It returns a score for every label in one forward pass and generates no text."
+    },
+    {
+      "title": "GLiClass v4: Multimodal, Instruction-Following Encoders for Every ...",
+      "url": "https://blog.knowledgator.com/gliclass-v4-multimodal-instruction-following-encoders-for-every-decision-e79e93f66528?gi=b5e060c9a8d0",
+      "snippet": "The release includes five models: gliclass-v4-edge (0.4B, text): DeBERTa-based and much better at instruction following than earlier models, the best model on the Decision Index up to 1B parameters."
+    },
+    {
+      "title": "GitHub - Knowledgator/GLiClass: Generalist and Lightweight Model ...",
+      "url": "https://github.com/knowledgator/gliclass",
+      "snippet": "GLiClass is an efficient, zero-shot sequence classification model inspired by the GLiNER framework."
+    },
+    {
+      "title": "GLiClass - Documentation - Knowledgator APIs",
+      "url": "https://docs.knowledgator.com/docs/frameworks/gliclass/",
+      "snippet": "GLiClass (Generalist and Lightweight Model for Classification) is a zero-shot sequence classification model capable of categorizing text into arbitrary label sets using a bidirectional transformer encoder (BERT-like)."
+    },
+    {
+      "title": "knowledgator/gliclass-edge-v3.0 · Hugging Face",
+      "url": "https://huggingface.co/knowledgator/gliclass-edge-v3.0",
+      "snippet": "Each model was tested on examples with 64, 256, and 512 tokens in text and 1, 2, 4, 8, 16, 32, 64, and 128 labels on an a6000 GPU. Then, scores were averaged across text lengths. @misc{stepanov2025gliclassgeneralistlightweightmodel, title={GLiClass: Generalist Lightweight Model for Sequence Classification Tasks}, author={Ihor Stepanov and Mykhailo Shtopko and Dmytro Vodianytskyi and Oleksandr Lukashov and Alexander Yavorskyi and Mykyta Yaroshenko}, year={2025}, eprint={2508.07662}, archivePrefix={arXiv}, primaryClass={cs.LG}, url={https://arxiv.org/abs/2508.07662}, }"
+    }
+  ]
+}

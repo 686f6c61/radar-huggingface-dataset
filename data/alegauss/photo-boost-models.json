@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "alegauss/photo-boost-models",
+  "slug": "alegauss-photo-boost-models",
+  "author": "alegauss",
+  "url": "https://huggingface.co/alegauss/photo-boost-models",
+  "created_at": "2026-10-20T21:08:27.000Z",
+  "updated_at": "2026-10-20T22:21:57.000Z",
+  "license": "per-model",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "image-restoration",
+    "super-resolution",
+    "photoboost",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 651236540,
+  "storage_human": "651 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Photo Boost AI Models (1) | Civitai",
+      "url": "https://civitai.com/tag/photo%20boost",
+      "snippet": "Browse 1 AI models tagged \"Photo Boost\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    },
+    {
+      "title": "AI Photo Enhancer: Sharpen, Upscale & Restore | PhotoBoost",
+      "url": "https://photoboost.ai/",
+      "snippet": "Enhance, restore and upscale photos 4× with PhotoBoost AI—trusted across 40M+ app installs and 1B+ enhanced images. Try it online free."
+    },
+    {
+      "title": "AI Model Agency - Create Your AI Model Portfolio | Professional Photo ...",
+      "url": "https://photoai.com/ai-model-agency",
+      "snippet": "Generate photorealistic images and videos of people with AI. Welcome to the World&#x27;s First AI Model Agency on Photo AI! Save thousands on travel costs, photographer fees, and model expenses by creating professional shoots from home. Our diverse roster of AI models is available for photoshoots, fashion campaigns, and video projects worldwide. Whether you need high-fashion editorials, commercial ..."
+    },
+    {
+      "title": "boost.photos — AI Photo Enhancement & Restoration",
+      "url": "https://boost.photos/",
+      "snippet": "Restore & Enhance Photos With AI Precision Upscale, restore faces, enhance quality, and remove backgrounds — powered by cutting-edge AI models."
+    },
+    {
+      "title": "AI Models - AI Photo Generator",
+      "url": "https://www.aiphotogenerator.net/models",
+      "snippet": "Explore all available AI image generation models. Compare features, quality, and pricing to find the perfect model for your creative needs."
+    }
+  ]
+}

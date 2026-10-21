@@ -5,7 +5,7 @@
   "author": "moeshawky",
   "url": "https://huggingface.co/moeshawky/qwen3-embedding-0.6b-vl",
   "created_at": "2026-10-13T20:54:39.000Z",
-  "updated_at": "2026-10-18T15:35:53.000Z",
+  "updated_at": "2026-10-20T09:53:37.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 652,
+  "downloads_30d": 783,
   "trending_score": 0,
   "parameters": 1025894848,
   "parameters_human": "1.03B",

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "juliensimon/Octen-Embedding-4B-mlx-8bit",
+  "slug": "juliensimon-octen-embedding-4b-mlx-8bit",
+  "author": "juliensimon",
+  "url": "https://huggingface.co/juliensimon/Octen-Embedding-4B-mlx-8bit",
+  "created_at": "2026-10-20T23:46:36.000Z",
+  "updated_at": "2026-10-20T23:47:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "mlx-embeddings",
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "mlx-embeddings",
+    "safetensors",
+    "qwen3",
+    "mlx",
+    "apple-silicon",
+    "embeddings",
+    "text-embeddings",
+    "sentence-similarity",
+    "retrieval",
+    "multilingual",
+    "feature-extraction",
+    "en",
+    "zh",
+    "arxiv:2506.05176",
+    "base_model:Octen/Octen-Embedding-4B",
+    "base_model:quantized:Octen/Octen-Embedding-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4021774336,
+  "parameters_human": "4.02B",
+  "storage_bytes": 4284844830,
+  "storage_human": "4.3 GB",
+  "base_model": "Octen/Octen-Embedding-4B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Le Monde.fr - Actualités et Infos en France et dans le monde",
+      "url": "https://www.lemonde.fr/",
+      "snippet": "Le Monde.fr - 1er site d'information. Les articles du journal et toute l'actualité en continu : International, France, Société, Economie, …"
+    },
+    {
+      "title": "Le Monde in English – World news, culture and opinion",
+      "url": "https://www.lemonde.fr/en/",
+      "snippet": "Le Monde - World news, culture and opinion from the unique perspective of the leading French newspaper"
+    },
+    {
+      "title": "Actualités du jour et en direct - Le Monde",
+      "url": "https://www.lemonde.fr/actualite-en-continu/",
+      "snippet": "Suivez les actualités du jour et infos en direct sur Le Monde, retrouvez tous les articles du journal: International, France, Economie, …"
+    },
+    {
+      "title": "International - Actualités, vidéos et infos en direct - Le Monde.fr",
+      "url": "https://www.lemonde.fr/international/",
+      "snippet": "Toute l’actualité sur le sujet International. Consultez l’ensemble des articles, reportages, directs, photos et vidéos de la rubrique …"
+    },
+    {
+      "title": "L’organigramme du « Monde - Le Monde.fr",
+      "url": "https://www.lemonde.fr/le-monde-et-vous/article/2021/01/25/l-organigramme-du-monde-de-la-direction-a-tous-les-services_6067575_6065879.html",
+      "snippet": "Jan 25, 2021 · La Société éditrice du Monde est gérée par un directoire composé de Louis Dreyfus, président du directoire, et …"
+    }
+  ]
+}

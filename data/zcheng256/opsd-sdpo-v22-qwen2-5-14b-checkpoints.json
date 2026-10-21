@@ -5,7 +5,7 @@
   "author": "zcheng256",
   "url": "https://huggingface.co/zcheng256/OPSD-SDPO-v22-Qwen2.5-14B-checkpoints",
   "created_at": "2026-10-17T14:40:36.000Z",
-  "updated_at": "2026-10-20T00:32:54.000Z",
+  "updated_at": "2026-10-20T12:53:23.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -24,8 +24,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1125727346212,
-  "storage_human": "1125.7 GB",
+  "storage_bytes": 1258229078668,
+  "storage_human": "1258.2 GB",
   "base_model": "Qwen/Qwen2.5-14B-Instruct",
   "formats": [
     "safetensors"

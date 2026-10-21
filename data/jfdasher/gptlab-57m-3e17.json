@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "jfdasher/gptlab-57m-3e17",
+  "slug": "jfdasher-gptlab-57m-3e17",
+  "author": "jfdasher",
+  "url": "https://huggingface.co/jfdasher/gptlab-57m-3e17",
+  "created_at": "2026-10-20T20:21:58.000Z",
+  "updated_at": "2026-10-20T20:22:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "scaling-laws",
+    "from-scratch",
+    "pytorch",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 57132544,
+  "parameters_human": "57.1M",
+  "storage_bytes": 228547328,
+  "storage_human": "229 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

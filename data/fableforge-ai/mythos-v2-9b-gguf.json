@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fableforge-ai/Mythos-V2-9B-GGUF",
+  "slug": "fableforge-ai-mythos-v2-9b-gguf",
+  "author": "fableforge-ai",
+  "url": "https://huggingface.co/fableforge-ai/Mythos-V2-9B-GGUF",
+  "created_at": "2026-10-19T23:46:34.000Z",
+  "updated_at": "2026-10-21T00:48:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "mlx",
+    "llama.cpp",
+    "uncensored",
+    "tool-use",
+    "base_model:fableforge-ai/Mythos-V2-9B",
+    "base_model:quantized:fableforge-ai/Mythos-V2-9B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 131908096064,
+  "storage_human": "131.9 GB",
+  "base_model": "fableforge-ai/Mythos-V2-9B",
+  "formats": [
+    "gguf",
+    "mlx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Définition de épiner | Dictionnaire français",
+      "url": "https://www.lalanguefrancaise.com/dictionnaire/definition/epiner",
+      "snippet": "Feb 23, 2024 · Définition de épiner : dictionnaire, étymologie, phonétique, citations littéraires, synonymes et antonymes de « épiner »Read more"
+    },
+    {
+      "title": "épiner — Wiktionnaire, le dictionnaire libre",
+      "url": "https://fr.m.wiktionary.org/wiki/%C3%A9piner",
+      "snippet": "épiner \\e.pi.ne\\ transitif 1 er groupe (voir la conjugaison) Protéger (un jeune plant, par exemple) contre les attaques en l’entourant de …"
+    },
+    {
+      "title": "épiner : Définition simple et facile du dictionnaire",
+      "url": "https://www.linternaute.fr/dictionnaire/fr/definition/epiner/",
+      "snippet": "Épiner : définition, contraire, citations, traduction dans le dictionnaire de la langue française. Définition : Protéger les branches d'un..."
+    },
+    {
+      "title": "ÉPINER : Définition, Signification et Synonymes | Le Dictionnaire",
+      "url": "https://www.le-dictionnaire.com/definition/%C3%A9piner",
+      "snippet": "Cette page rassemble une définition claire du mot épiner, ses principaux sens en français moderne et, lorsque c’est pertinent, des …"
+    },
+    {
+      "title": "épiner - Conjugaison du verbe épiner - Le Conjugueur",
+      "url": "https://leconjugueur.lefigaro.fr/conjugaison/verbe/epiner.html",
+      "snippet": "La conjugaison du verbe épiner au masculin à la voix active avec l'auxiliaire avoir : j'épine - tu épines - il épine - nous épinons - vous …"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Luni/Qwen3.8-Flash-Coder-CYBER-Heretic-MLX-8bit",
+  "slug": "luni-qwen3-8-flash-coder-cyber-heretic-mlx-8bit",
+  "author": "Luni",
+  "url": "https://huggingface.co/Luni/Qwen3.8-Flash-Coder-CYBER-Heretic-MLX-8bit",
+  "created_at": "2026-10-20T20:11:31.000Z",
+  "updated_at": "2026-10-20T20:11:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_next",
+    "mlx-8bit",
+    "cyber",
+    "coder",
+    "heretic",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Luni/Qwen3.8-Flash-Coder-CYBER-Heretic",
+    "base_model:quantized:Luni/Qwen3.8-Flash-Coder-CYBER-Heretic",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 42620341120,
+  "parameters_human": "42.62B",
+  "storage_bytes": 45325237500,
+  "storage_human": "45.3 GB",
+  "base_model": "Luni/Qwen3.8-Flash-Coder-CYBER-Heretic",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lunii | Conteuses et livres audio pour 0-14 ans",
+      "url": "https://lunii.com/fr-fr",
+      "snippet": "Avec les conteuses Ma 1ère Lunii, Ma Fabrique à Histoires & FLAM, Lunii réveille l'imaginaire et développe la créativité des enfants …Read more"
+    },
+    {
+      "title": "Application Mobile ou Web | Lunii",
+      "url": "https://lunii.com/fr-fr/application-lunii",
+      "snippet": "Téléchargez en quelques clics l'application Lunii, indispensable pour associer votre compte Lunii à Ma Fabrique à Histoires ou FLAM …"
+    },
+    {
+      "title": "Lumni | Des vidéos, quiz et jeux gratuits pour réviser tes cours et ...",
+      "url": "https://www.lumni.fr/",
+      "snippet": "Lumni est une offre de contenus multimédias gratuits pour les élèves, parents, enseignants et médiateurs, qui permet un accès à la …"
+    },
+    {
+      "title": "Mon compte – Lunii",
+      "url": "https://support.lunii.com/hc/fr/categories/360000273657-Mon-compte",
+      "snippet": "Mon compte 📜 Retrouvez ici toutes les informations pour créer votre compte et le paramétrer"
+    },
+    {
+      "title": "Luni - YouTube",
+      "url": "https://www.youtube.com/@LuniLuni",
+      "snippet": "Hello! I'm Luni, the creator of Gacha Life & Gacha Club!Currently working on Gacha Life 2!Profile Pic by @Merutoro10"
+    }
+  ]
+}

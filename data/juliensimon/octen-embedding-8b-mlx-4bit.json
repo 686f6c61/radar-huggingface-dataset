@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "juliensimon/Octen-Embedding-8B-mlx-4bit",
+  "slug": "juliensimon-octen-embedding-8b-mlx-4bit",
+  "author": "juliensimon",
+  "url": "https://huggingface.co/juliensimon/Octen-Embedding-8B-mlx-4bit",
+  "created_at": "2026-10-20T23:47:59.000Z",
+  "updated_at": "2026-10-20T23:49:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "mlx-embeddings",
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "mlx-embeddings",
+    "safetensors",
+    "qwen3",
+    "mlx",
+    "apple-silicon",
+    "embeddings",
+    "text-embeddings",
+    "sentence-similarity",
+    "retrieval",
+    "multilingual",
+    "feature-extraction",
+    "en",
+    "zh",
+    "arxiv:2506.05176",
+    "base_model:Octen/Octen-Embedding-8B",
+    "base_model:quantized:Octen/Octen-Embedding-8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7567295488,
+  "parameters_human": "7.57B",
+  "storage_bytes": 4268572716,
+  "storage_human": "4.3 GB",
+  "base_model": "Octen/Octen-Embedding-8B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "live : r/TikTokFeet - Reddit",
+      "url": "https://www.reddit.com/r/TikTokFeet/comments/1daucei/live/",
+      "snippet": "Jun 8, 2024 · NO non-tiktok related content (add @) ABSOLUTELY no posting underage content - ONLY 18+ NO spamming content …"
+    },
+    {
+      "title": "WhiteGirlTiktoks - Reddit",
+      "url": "https://www.reddit.com/r/WhiteGirlTiktoks/",
+      "snippet": "r/WhiteGirlTiktoks: A subreddit to post Tiktoks of white girls"
+    },
+    {
+      "title": "TikTok - humanity in all forms - Reddit",
+      "url": "https://www.reddit.com/r/TikTok/",
+      "snippet": "This is a place to post fun, cute, funny, interesting titktok videos you've found. This sub is to share fun tiktok you've found or made. …"
+    },
+    {
+      "title": "All Bambi TikToks : r/BambiSleep - Reddit",
+      "url": "https://www.reddit.com/r/BambiSleep/comments/18pfq1s/all_bambi_tiktoks/",
+      "snippet": "♡ Welcome to the BambiSleep sub ♡ We are a community dedicated to the bimbo hypnosis audio series. DISCLAIMER: We are an …"
+    },
+    {
+      "title": "TikTokFeetLive - Reddit",
+      "url": "https://www.reddit.com/r/TikTokFeetLive/",
+      "snippet": "r/TikTokFeetLive: A place to share TikTok Live recordings of feet models. Please add the username in the post title."
+    }
+  ]
+}

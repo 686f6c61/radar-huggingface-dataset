@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "nvidia/RFD4-Proteina",
+  "slug": "nvidia-rfd4-proteina",
+  "author": "nvidia",
+  "url": "https://huggingface.co/nvidia/RFD4-Proteina",
+  "created_at": "2026-10-06T05:00:39.000Z",
+  "updated_at": "2026-10-20T23:59:50.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "rfd4-proteina",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "rfd4-proteina",
+    "safetensors",
+    "rfd4_proteina",
+    "biology",
+    "protein-design",
+    "biomolecular-design",
+    "structure-generation",
+    "flow-matching",
+    "annotated-cif",
+    "en",
+    "dataset:nvidia/RFD4-Proteina",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 216,
+  "trending_score": 0,
+  "parameters": 435622465,
+  "parameters_human": "435.6M",
+  "storage_bytes": 160153356684,
+  "storage_human": "160.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Téléchargez les pilotes NVIDIA officiels | NVIDIA",
+      "url": "https://www.nvidia.com/fr-fr/drivers/",
+      "snippet": "Téléchargez les pilotes NVIDIA officiels les plus récents pour optimiser votre expérience de jeu sur PC et faire tourner vos …"
+    },
+    {
+      "title": "World Leader in Artificial Intelligence Computing | NVIDIA",
+      "url": "https://www.nvidia.com/",
+      "snippet": "NVIDIA RTX™ powers the world’s fastest PCs and the ultimate platform for gamers and creators. Enjoy beautiful ray tracing, AI …"
+    },
+    {
+      "title": "Nvidia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nvidia",
+      "snippet": "Founded in 1993 by Jensen Huang, Chris Malachowsky, and Curtis Priem, Nvidia has been described as a Big Tech company. …"
+    },
+    {
+      "title": "Téléchargements de pilotes NVIDIA",
+      "url": "https://www.nvidia.fr/Download/indexsg.aspx?lang=fr",
+      "snippet": "Download drivers for NVIDIA products including GeForce graphics cards, nForce motherboards, Quadro workstations, and more. …"
+    },
+    {
+      "title": "Nvidia — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Nvidia",
+      "snippet": "Nvidia Corporation est une société multinationale américaine de technologie basée à Santa Clara et immatriculée dans l'État du …"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Hebrish/Sabich-MLX",
+  "slug": "hebrish-sabich-mlx",
+  "author": "Hebrish",
+  "url": "https://huggingface.co/Hebrish/Sabich-MLX",
+  "created_at": "2026-10-20T21:29:52.000Z",
+  "updated_at": "2026-10-21T01:02:45.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "he"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "parakeet",
+    "code-switching",
+    "hebrew",
+    "english",
+    "automatic-speech-recognition",
+    "en",
+    "he",
+    "base_model:Hebrish/Sabich",
+    "base_model:quantized:Hebrish/Sabich",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 617869958,
+  "parameters_human": "617.9M",
+  "storage_bytes": 2472514704,
+  "storage_human": "2.5 GB",
+  "base_model": "Hebrish/Sabich",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Most Relevant Results - Xxcom on XNXX Porn Video",
+      "url": "https://xnxxporn.video/search/xxcom/",
+      "snippet": "We use cookies to optimize site functionality and give you the best possible experience. OkRead more"
+    },
+    {
+      "title": "Today's selection - XNXX.COM",
+      "url": "https://xnxx.health/todays-selection/",
+      "snippet": "XNXX Today's selection Sex Video,Sex Porno,Seks Porno,XXX 1080p Video,ankha XXX,YouPorn,XVIDEOS,jav hd,erotic film. …"
+    },
+    {
+      "title": "Today's selection - XNXX.COM",
+      "url": "https://en.xnxx.place/todays-selection",
+      "snippet": "Today's selection Choose a date 2026 January January 1 January 2 January 3 January 4 January 5 January 6 January 7 January 8 …"
+    },
+    {
+      "title": "Free Porn, Sex, Tube Videos, XXX Pics, Pussy in Porno Movies",
+      "url": "https://www.xnxx.com/home/en/",
+      "snippet": "XNXX delivers free sex movies and fast free porn videos (tube porn). Now 10 million+ sex vids available for free! Featuring hot pussy, …"
+    },
+    {
+      "title": "'xnxxcom' Search - XNXX.COM",
+      "url": "https://xnxx.health/search/xnxxcom",
+      "snippet": "XNXX.COM 'xnxxcom' Search, free sex videos Sex Video,Sex Porno,Seks Porno,XXX 1080p Video,ankha …"
+    }
+  ]
+}

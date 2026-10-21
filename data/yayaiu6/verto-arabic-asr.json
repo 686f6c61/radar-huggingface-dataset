@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "yayaiu6/Verto-Arabic-ASR",
+  "slug": "yayaiu6-verto-arabic-asr",
+  "author": "yayaiu6",
+  "url": "https://huggingface.co/yayaiu6/Verto-Arabic-ASR",
+  "created_at": "2026-10-19T15:53:13.000Z",
+  "updated_at": "2026-10-20T22:41:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "verto-asr",
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "verto-asr",
+    "onnx",
+    "int8",
+    "onnxruntime",
+    "browser",
+    "egyptian-arabic",
+    "code-switching",
+    "automatic-speech-recognition",
+    "ar",
+    "en",
+    "base_model:mohammedaly22/Metro-ASR-Small",
+    "base_model:quantized:mohammedaly22/Metro-ASR-Small",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 24,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 69784871,
+  "storage_human": "70 MB",
+  "base_model": "mohammedaly22/Metro-ASR-Small",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Putain De Chaud - Pornhub.com",
+      "url": "https://fr.pornhub.com/view_video.php?viewkey=1641346385",
+      "snippet": "Feb 28, 2014 · Regarder putain de chaud sur Pornhub.com, le meilleur site de porno. Pornhub Offre gratuitement la plus large …"
+    },
+    {
+      "title": "Nicole Aniston Vidéos Porno - Profil Vérifié de Pornstar | Pornhub",
+      "url": "https://fr.pornhub.com/pornstar/nicole-aniston",
+      "snippet": "Venez voir les meilleures vidéos pornos, images, gifs et playlists de la pornstar Nicole Aniston. Parcourez le contenu qu'elle a …"
+    },
+    {
+      "title": "Step Mom – Vidéos Porno | Pornhub.com",
+      "url": "https://fr.pornhub.com/video/search?search=step+mom",
+      "snippet": "Regarde les vidéos porno de Step Mom gratuitement, ici sur Pornhub.com. Découvre la collection plus importante de films et de clips …"
+    },
+    {
+      "title": "Vidéos porno HD : Les filles les plus sexy en haute définition | Pornhub",
+      "url": "https://fr.pornhub.com/hd",
+      "snippet": "Porno HD gratuit sur Pornhub.com. Vous cherchez des vidéos de sexe en haute définition dans chaque niche XXX triple ? Le …"
+    },
+    {
+      "title": "Pov – Vidéos Porno | Pornhub.com",
+      "url": "https://fr.pornhub.com/video/search?search=pov",
+      "snippet": "Regarde les vidéos porno de Pov gratuitement, ici sur Pornhub.com. Découvre la collection plus importante de films et de clips XXX …"
+    }
+  ]
+}

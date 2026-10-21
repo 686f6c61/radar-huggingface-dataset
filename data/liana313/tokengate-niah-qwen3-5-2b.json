@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "liana313/tokengate-niah-qwen3.5-2b",
+  "slug": "liana313-tokengate-niah-qwen3-5-2b",
+  "author": "liana313",
+  "url": "https://huggingface.co/liana313/tokengate-niah-qwen3.5-2b",
+  "created_at": "2026-10-20T20:03:19.000Z",
+  "updated_at": "2026-10-20T23:49:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "kv-cache",
+    "token-pruning",
+    "long-context",
+    "lora",
+    "efficient-inference",
+    "text-generation",
+    "arxiv:2610.26754",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:adapter:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 104043865,
+  "storage_human": "104 MB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Play Free Online Games on Roblox - Sign Up to Play!",
+      "url": "https://www.roblox.com/",
+      "snippet": "Roblox is ushering in the next generation of entertainment. Imagine, create, and play together with millions of people across an …"
+    },
+    {
+      "title": "استمتِع بلعب ألعاب مجانية أون لاين على منصّة Roblox - اشترِك الآن للعب!",
+      "url": "https://www.roblox.com/ar",
+      "snippet": "©2026 شركة Roblox. Roblox، شعار Roblox و تخيل الطاقة هما من بين علاماتنا التجارية المسجلة وغير المسجلة في الولايات المتحدة وبلدان أخرى."
+    },
+    {
+      "title": "Acerca de | Roblox",
+      "url": "https://about.roblox.com/es",
+      "snippet": "Roblox is a global platform where millions of people gather together every day to imagine, create, and share experiences with each …"
+    },
+    {
+      "title": "소개 | Roblox",
+      "url": "https://about.roblox.com/ko",
+      "snippet": "Roblox is a global platform where millions of people gather together every day to imagine, create, and share experiences with each …"
+    },
+    {
+      "title": "Roblox Studio – Roblox Support",
+      "url": "https://en.help.roblox.com/hc/en-us/articles/203313860-Roblox-Studio",
+      "snippet": "Roblox Studio is the building tool of Roblox that helps you to create the places of your dreams. It provides Developers of different skill …"
+    }
+  ]
+}

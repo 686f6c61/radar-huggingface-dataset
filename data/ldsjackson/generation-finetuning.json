@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ldsjackson/generation-finetuning",
+  "slug": "ldsjackson-generation-finetuning",
+  "author": "ldsjackson",
+  "url": "https://huggingface.co/ldsjackson/generation-finetuning",
+  "created_at": "2026-10-20T20:37:50.000Z",
+  "updated_at": "2026-10-20T20:37:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/details",
+      "snippet": "Some sentences may contain gender-specific alternatives. Click a sentence to see alternatives. Learn more"
+    },
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.fr/",
+      "snippet": "Google Traduction offre un service gratuit pour traduire instantanément des mots, expressions et pages Web entre le français et plus …"
+    },
+    {
+      "title": "Google Translate - A Personal Interpreter on Your Phone or Computer",
+      "url": "https://translate.google.com/about/",
+      "snippet": "Learn how to translate text, speech, images, documents, websites, and more with Google Translate."
+    },
+    {
+      "title": "GTranslate - Website Translator: Translate Your Website",
+      "url": "https://gtranslate.io/",
+      "snippet": "GTranslate can translate any HTML website and make it multilingual. It will help you to increase international traffic, reach a global …"
+    }
+  ]
+}

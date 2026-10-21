@@ -5,7 +5,7 @@
   "author": "AfriSpeech",
   "url": "https://huggingface.co/AfriSpeech/africa-female-vc",
   "created_at": "2026-10-09T01:31:47.000Z",
-  "updated_at": "2026-10-09T08:16:04.000Z",
+  "updated_at": "2026-10-20T08:44:47.000Z",
   "license": "gpl-3.0",
   "license_family": "oss",
   "pipeline_tag": "audio-to-audio",

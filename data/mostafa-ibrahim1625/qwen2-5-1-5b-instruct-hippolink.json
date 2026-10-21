@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "mostafa-ibrahim1625/qwen2.5-1.5b-instruct-hippolink",
+  "slug": "mostafa-ibrahim1625-qwen2-5-1-5b-instruct-hippolink",
+  "author": "mostafa-ibrahim1625",
+  "url": "https://huggingface.co/mostafa-ibrahim1625/qwen2.5-1.5b-instruct-hippolink",
+  "created_at": "2026-10-20T21:55:32.000Z",
+  "updated_at": "2026-10-20T22:08:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "openvino",
+    "qwen2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 160029060,
+  "storage_human": "160 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Geny – Pronostics, partants et résultats PMU et PMH",
+      "url": "https://www.geny.com/",
+      "snippet": "Pronostics, partants, cotes et résultats des courses PMU et PMH : préparez vos paris hippiques et faites le papier gratuitement …"
+    },
+    {
+      "title": "Partants et pronostics du Quinté+ Prix de la Basse ... - GENYcourses",
+      "url": "https://www.geny.com/course/1685888-2026-09-24-compiegne-prix-de-la-basse-automne/partants-pronostics",
+      "snippet": "Sep 24, 2026 · Retrouvez les partants, pronostics et cotes du Quinté+ Prix de la Basse Automne à Compiègne le 24 septembre …"
+    },
+    {
+      "title": "Programme des courses hippiques du 2026-10-16 | Geny",
+      "url": "https://www.geny.com/programme/2026-10-16/orga/PMU",
+      "snippet": "4 days ago · Retrouvez toutes les courses ouvertes au pari en réseau physique ou en ligne des principaux opérateurs chaque jour …"
+    },
+    {
+      "title": "Partants et pronostics du Quinté+ Prix Hôtel Barrière le Normandy à ...",
+      "url": "https://www.geny.com/course/1680346-2026-08-30-deauville-prix-hotel-barriere-le-normandy/partants-pronostics",
+      "snippet": "Aug 30, 2026 · Retrouvez les partants, pronostics et cotes du Quinté+ Prix Hôtel Barrière le Normandy à Deauville le 30 août 2026 : …"
+    },
+    {
+      "title": "Arrivée et rapports du Quinté+ Prix de la Basse Automne",
+      "url": "https://www.geny.com/course/1685888-2026-09-24-compiegne-prix-de-la-basse-automne/arrivee-rapports",
+      "snippet": "Sep 24, 2026 · Arrivée, résultats et rapports (Genybet, PMU) du Quinté+ Prix de la Basse Automne à Compiègne le 24 septembre …"
+    }
+  ]
+}

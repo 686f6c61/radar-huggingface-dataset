@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "vonkaiser/Biomni-R0-32B-Preview-FP8-Dynamic",
+  "slug": "vonkaiser-biomni-r0-32b-preview-fp8-dynamic",
+  "author": "vonkaiser",
+  "url": "https://huggingface.co/vonkaiser/Biomni-R0-32B-Preview-FP8-Dynamic",
+  "created_at": "2026-10-20T23:14:34.000Z",
+  "updated_at": "2026-10-21T00:14:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "agent",
+    "biology",
+    "code",
+    "fp8",
+    "en",
+    "base_model:biomni/Biomni-R0-32B-Preview",
+    "base_model:quantized:biomni/Biomni-R0-32B-Preview",
+    "license:mit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32762123264,
+  "parameters_human": "32.76B",
+  "storage_bytes": 168521534432,
+  "storage_human": "168.5 GB",
+  "base_model": "biomni/Biomni-R0-32B-Preview",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Blooket – Fun, Free, Educational Games for Everyone",
+      "url": "https://www.blooket.com/",
+      "snippet": "Blooket is an exciting new take on the modern classroom review game. It aims to match action with education to create the ultimate …"
+    },
+    {
+      "title": "Play Blooket | Blooket",
+      "url": "https://play.blooket.com/play",
+      "snippet": "Join a game of Blooket to answer questions and compete in a fierce clash to determine who is the best and what Blook will come out …"
+    },
+    {
+      "title": "Sign up | Blooket",
+      "url": "https://id.blooket.com/signup",
+      "snippet": "Sign up for a Blooket account to create sets, host games, discover new sets, unlock Blooks, view stats, update your account, and …"
+    },
+    {
+      "title": "Blooket",
+      "url": "https://help.blooket.com/hc/en-us",
+      "snippet": "How to Get Started with Blooket - Student Edition Blooket Watch on 02:59 How to Get Started with Blooket - Student Edition Join …"
+    },
+    {
+      "title": "Log in | Blooket",
+      "url": "https://id.blooket.com/login",
+      "snippet": "Log in to your Blooket account to create sets, host games, discover new sets, unlock Blooks, view stats, update your account, and …"
+    }
+  ]
+}

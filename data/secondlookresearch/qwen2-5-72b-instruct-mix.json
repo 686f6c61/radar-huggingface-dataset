@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "SecondLookResearch/Qwen2.5-72B-instruct-mix",
+  "slug": "secondlookresearch-qwen2-5-72b-instruct-mix",
+  "author": "SecondLookResearch",
+  "url": "https://huggingface.co/SecondLookResearch/Qwen2.5-72B-instruct-mix",
+  "created_at": "2026-10-06T00:27:41.000Z",
+  "updated_at": "2026-10-20T22:20:21.000Z",
+  "license": "qwen",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "alignment",
+    "teaching-qwen-why",
+    "dataset:SecondLookResearch/teaching-qwen-why-data",
+    "base_model:Qwen/Qwen2.5-72B",
+    "base_model:adapter:Qwen/Qwen2.5-72B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 27,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3380164437,
+  "storage_human": "3.4 GB",
+  "base_model": "Qwen/Qwen2.5-72B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free web proxy and a cutting-edge online proxy | CroxyProxy",
+      "url": "https://www.croxyproxy.com/",
+      "snippet": "CroxyProxy is a reliable and free web proxy service that protects your privacy. It supports numerous video sites, enabling …"
+    },
+    {
+      "title": "The most advanced secure and free web proxy | CroxyProxy",
+      "url": "https://www.croxyproxy.net/",
+      "snippet": "CroxyProxy employs advanced technology to seamlessly support modern web applications. Unlike other online proxies, it doesn't …"
+    },
+    {
+      "title": "CroxyProxy – Free Web Proxy | Unblock Sites, No CAPTCHA",
+      "url": "https://croxyproxy.cc/",
+      "snippet": "CroxyProxy is a professional online web proxy that lets you visit websites through a secure remote browser session. Instead of …"
+    },
+    {
+      "title": "El proxy web gratuito, seguro y más avanzado | CroxyProxy",
+      "url": "https://www.croxy.network/_es/",
+      "snippet": "CroxyProxy es el proxy web gratuito más avanzado. Úselo para acceder a sus sitios web y aplicaciones web favoritos. Puedes ver …"
+    },
+    {
+      "title": "The most advanced free proxy and the best choice from any ... - CroxyProxy",
+      "url": "https://www.croxyproxy.com/proxy",
+      "snippet": "CroxyProxy is the most advanced free proxy. It can unblock your favorite websites instantly right in your browser. With this web proxy …"
+    }
+  ]
+}

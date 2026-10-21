@@ -5,14 +5,13 @@
   "author": "User-Android",
   "url": "https://huggingface.co/User-Android/AI",
   "created_at": "2026-10-06T23:21:21.000Z",
-  "updated_at": "2026-10-20T00:45:39.000Z",
+  "updated_at": "2026-10-20T04:26:39.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "image-to-image",
   "library": null,
   "languages": [],
   "tags": [
-    "onnx",
     "style-transfer",
     "anime",
     "image-to-image",
@@ -26,9 +25,7 @@
   "storage_bytes": 1406773115,
   "storage_human": "1.4 GB",
   "base_model": null,
-  "formats": [
-    "onnx"
-  ],
+  "formats": [],
   "is_conversational": false,
   "gated": false,
   "removed": false,

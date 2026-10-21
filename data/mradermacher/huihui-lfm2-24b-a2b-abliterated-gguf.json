@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Huihui-LFM2-24B-A2B-abliterated-GGUF",
+  "slug": "mradermacher-huihui-lfm2-24b-a2b-abliterated-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Huihui-LFM2-24B-A2B-abliterated-GGUF",
+  "created_at": "2026-03-01T09:38:35.000Z",
+  "updated_at": "2026-10-21T00:10:55.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "liquid",
+    "lfm2",
+    "edge",
+    "moe",
+    "abliterated",
+    "uncensored",
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "es",
+    "base_model:huihui-ai/Huihui-LFM2-24B-A2B-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-LFM2-24B-A2B-abliterated",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 422,
+  "trending_score": 0,
+  "parameters": 23843661440,
+  "parameters_human": "23.84B",
+  "storage_bytes": 161763968160,
+  "storage_human": "161.8 GB",
+  "base_model": "huihui-ai/Huihui-LFM2-24B-A2B-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tag: futanari » nhentai",
+      "url": "https://nhentai.net/tag/futanari/",
+      "snippet": "Read 40,921 galleries with tag futanari on nhentai, a hentai doujinshi and manga reader.Read more"
+    },
+    {
+      "title": "Futanari ga Tomodachi ni Seishori shite morau Hanashi | A Futa Friend ...",
+      "url": "https://nhentai.net/g/478374/",
+      "snippet": "Oct 20, 2023 · Read and download Futanari ga Tomodachi ni Seishori shite morau Hanashi | A Futa Friend In Sexual Need Is A …"
+    },
+    {
+      "title": "Futa Hentai Manga et Doujin - 3Hentai",
+      "url": "https://fr.3hentai.net/search?q=futa",
+      "snippet": "Lire des hentai manga sur Futa gratuitement, sur 3hentai.net. Découvrez la plus grande base de données de hentai manga et doujin …"
+    },
+    {
+      "title": "Futa x Yuri ～Childhood Friend～ - HentaiRead",
+      "url": "https://hentairead.com/hentai/futa-x-yuri-childhood-friend/",
+      "snippet": "Feb 13, 2023 · Read Futa x Yuri ～Childhood Friend～ by \"An-chan Kaichou\" - Doujinshi online for free at HentaiRead a powerful …"
+    },
+    {
+      "title": "[Anthology] Futanari Friends! 20 - Comic | nHentai : Free Hentai Manga ...",
+      "url": "https://nhentai.com/en/comic/anthology-futanari-friends-20",
+      "snippet": "Sep 4, 2023 - Read and download [Anthology] Futanari Friends! 20, a hentai Manga by Musashi Daichi, Nyuuhin, Puru, Kuramoto …"
+    }
+  ]
+}

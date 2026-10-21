@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "ZelligeAI/Tessera-27B-B-CJK",
+  "slug": "zelligeai-tessera-27b-b-cjk",
+  "author": "ZelligeAI",
+  "url": "https://huggingface.co/ZelligeAI/Tessera-27B-B-CJK",
+  "created_at": "2026-10-11T18:07:48.000Z",
+  "updated_at": "2026-10-14T06:15:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "agentic",
+    "coding-agent",
+    "efficient-reasoning",
+    "tessera",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 12,
+  "downloads_30d": 99,
+  "trending_score": 12,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55581935584,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fotó-videó - Index Fórum",
+      "url": "https://forum.index.hu/Topic/showTopicList?t=9212277",
+      "snippet": "Fotó-videó Fotó-videóRead more"
+    },
+    {
+      "title": "Nők nagy bimbóudvarral - Index Fórum",
+      "url": "https://forum.index.hu/Topic/TopicDescription?t=9128445",
+      "snippet": "Sziasztok! A &quot;Nők nagy mellekkel&quot; alternatívájaként indítom ezt a topicot. Várok mindenféle véleményt, hozzászólást, …"
+    },
+    {
+      "title": "ᐅ Geschlechtsverkehr und die Phasen der Lust - paradisi.de",
+      "url": "https://www.paradisi.de/sexualitaet/geschlechtsverkehr/",
+      "snippet": "Sex wird sowohl bei Männern als auch bei Frauen in drei Lustphasen eingeteilt. Dazu gehören Vorspiel, Geschlechtsverkehr und …"
+    },
+    {
+      "title": "ᐅ Swingerclubs - Merkmale, Angebote und Regeln",
+      "url": "https://www.paradisi.de/sexualitaet/swingerclub/",
+      "snippet": "Swingerclubs - Merkmale, Angebote und Regeln Sexuelle Aufgeschlossenheit gehört heute fast schon zum guten Ton. Wer nicht …"
+    },
+    {
+      "title": "Lányok, fiuk, szex - Index Fórum",
+      "url": "https://forum.index.hu/Article/showArticle?go=20953427&t=9013357",
+      "snippet": "Sep 29, 2001 · Miért? A hölgy törzstagoknak is kell téma. Másrészt kíváncsi vagyok: hogy is volt ez? (csak megjegyzekepp: eletem …"
+    }
+  ]
+}

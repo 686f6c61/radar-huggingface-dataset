@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "selorahomes/Selora-AI-LLM-1.7B-ollama",
+  "slug": "selorahomes-selora-ai-llm-1-7b-ollama",
+  "author": "selorahomes",
+  "url": "https://huggingface.co/selorahomes/Selora-AI-LLM-1.7B-ollama",
+  "created_at": "2026-09-14T02:37:27.000Z",
+  "updated_at": "2026-10-20T23:48:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "qwen",
+    "qwen3",
+    "home-assistant",
+    "home-automation",
+    "smart-home",
+    "ollama",
+    "en",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:quantized:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 303,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 9924280768,
+  "storage_human": "9.9 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

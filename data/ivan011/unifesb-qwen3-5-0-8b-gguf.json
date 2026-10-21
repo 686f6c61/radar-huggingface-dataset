@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "Ivan011/UniFesb-Qwen3.5-0.8B-GGUF",
+  "slug": "ivan011-unifesb-qwen3-5-0-8b-gguf",
+  "author": "Ivan011",
+  "url": "https://huggingface.co/Ivan011/UniFesb-Qwen3.5-0.8B-GGUF",
+  "created_at": "2026-10-20T20:01:44.000Z",
+  "updated_at": "2026-10-20T20:02:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "hr"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "tool-calling",
+    "on-device",
+    "hr",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:quantized:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 772845888,
+  "parameters_human": "772.8M",
+  "storage_bytes": 541903776,
+  "storage_human": "542 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "ziyan98/E2K-cd82-Qwen3.8-27B-act_ctrl-cc-iter3",
+  "slug": "ziyan98-e2k-cd82-qwen3-8-27b-act_ctrl-cc-iter3",
+  "author": "ziyan98",
+  "url": "https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-act_ctrl-cc-iter3",
+  "created_at": "2026-10-20T21:52:11.000Z",
+  "updated_at": "2026-10-20T21:59:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "experience-to-knowledge",
+    "arc-agi-3",
+    "reinforcement-learning",
+    "dr-grpo",
+    "knowledge-internalization",
+    "qwen3.8",
+    "slime",
+    "megatron-lm",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55575919279,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Most viewed porn categories",
+      "url": "https://easyporn.xxx/en/",
+      "snippet": "Gotta tell ya, this place is filled to the brim with porn movies of all genres, featuring some of the hottest amateur babes, seasoned …"
+    },
+    {
+      "title": "Free Nude Porn Videos (84,142) - Tubesafari.com",
+      "url": "https://tubesafari.com/search/nude",
+      "snippet": "Free nude porn: 84,142 videos. WATCH NOW for FREE!"
+    },
+    {
+      "title": "Nude Porn Videos - xHamster",
+      "url": "https://xhamster.com/categories/nude",
+      "snippet": "Sep 1, 2026 · Check out Nude porn videos on xHamster. Watch all Nude XXX vids right now!"
+    },
+    {
+      "title": "Nude Porn Videos Free - Over 91.0K Videos - PORN.COM",
+      "url": "https://www.porn.com/nude-porn",
+      "snippet": "Over 91.0K Nude tube videos here at PORN.COM the world’s largest free porn tube."
+    },
+    {
+      "title": "Free Naked Porn Videos - HD Porn Tube",
+      "url": "https://www.hdtube.porn/tags/naked/",
+      "snippet": "Free naked movies can be streamed on this free hardcore tube. If you are a fan of sex vids with this tag, check it out now!"
+    }
+  ]
+}

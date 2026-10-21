@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ansoncat/qwen3.8-flash-next-ds4-64gb-mac-gguf",
+  "slug": "ansoncat-qwen3-8-flash-next-ds4-64gb-mac-gguf",
+  "author": "ansoncat",
+  "url": "https://huggingface.co/ansoncat/qwen3.8-flash-next-ds4-64gb-mac-gguf",
+  "created_at": "2026-10-19T16:06:51.000Z",
+  "updated_at": "2026-10-20T23:45:42.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "ds4",
+    "metal",
+    "apple-silicon",
+    "base_model:antirez/qwen3.8-flash-next-gguf",
+    "base_model:quantized:antirez/qwen3.8-flash-next-gguf",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 179551050368,
+  "parameters_human": "179.55B",
+  "storage_bytes": 139434754048,
+  "storage_human": "139.4 GB",
+  "base_model": "antirez/qwen3.8-flash-next-gguf",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hentai-uncensored videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/tags/hentai-uncensored",
+      "snippet": "Uncensored Hentai xxx - Hot Busty Nun Loves NTR Secret Sex in Church!"
+    },
+    {
+      "title": "uncensored Hentai | Uncensored Hentai",
+      "url": "https://uncensoredhentai.xxx/genres/uncensored/",
+      "snippet": "uncensored hentai is a type of pornography that typically features graphic sexual scenes and nudity. While it can be found in many …"
+    },
+    {
+      "title": "Free Uncensored Hentai Videos in 1080p HD | HenVids",
+      "url": "https://henvids.com/tag/uncensored",
+      "snippet": "Watch free uncensored hentai videos in 1080p HD on HenVids. Browse the collection by newest, most viewed, studio, or series."
+    },
+    {
+      "title": "Uncensored New Hentai Episode Video Hentaigasm - New Hentai",
+      "url": "https://hentaigasm.com/genre/uncensored/?orderby=views",
+      "snippet": "Watch New Hentai Anime Episodes On Hentaigasm Free, Newest Hentai, Subbed Hentai Videos, Stream New Hentai Videos, …"
+    },
+    {
+      "title": "Uncensored Hentai on Oppai.stream | Highest Quality hentai on the web!",
+      "url": "https://oppai.stream/category/uncensored",
+      "snippet": "Uncensored Hentai or Uncensored Anime is Anime or Hentai in which nothing is hidden, you can see pussy and dick clearly with no …"
+    }
+  ]
+}

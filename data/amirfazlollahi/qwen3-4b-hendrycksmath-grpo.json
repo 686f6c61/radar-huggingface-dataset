@@ -4,8 +4,8 @@
   "slug": "amirfazlollahi-qwen3-4b-hendrycksmath-grpo",
   "author": "AmirFazlollahi",
   "url": "https://huggingface.co/AmirFazlollahi/Qwen3-4B-HendrycksMATH-GRPO",
-  "created_at": "2026-10-16T16:57:46.000Z",
-  "updated_at": "2026-10-16T17:09:24.000Z",
+  "created_at": "2026-10-20T08:17:34.000Z",
+  "updated_at": "2026-10-20T08:38:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 260,
+  "downloads_30d": 277,
   "trending_score": 0,
   "parameters": 4022468096,
   "parameters_human": "4.02B",
@@ -41,8 +41,8 @@
   ],
   "is_conversational": true,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-10-19T03:39:47.087Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

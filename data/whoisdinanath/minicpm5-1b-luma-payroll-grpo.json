@@ -5,7 +5,7 @@
   "author": "whoisdinanath",
   "url": "https://huggingface.co/whoisdinanath/MiniCPM5-1B-Luma-Payroll-GRPO",
   "created_at": "2026-10-19T16:47:09.000Z",
-  "updated_at": "2026-10-19T22:22:06.000Z",
+  "updated_at": "2026-10-20T10:05:44.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

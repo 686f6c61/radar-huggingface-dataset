@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "U-WIN/qwen35-9b-equational-theory-mix1m-grpo200-ntp-summary-32k",
+  "slug": "u-win-qwen35-9b-equational-theory-mix1m-grpo200-ntp-summary-32k",
+  "author": "U-WIN",
+  "url": "https://huggingface.co/U-WIN/qwen35-9b-equational-theory-mix1m-grpo200-ntp-summary-32k",
+  "created_at": "2026-10-20T23:10:22.000Z",
+  "updated_at": "2026-10-20T23:12:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "equational-theory",
+    "internalization",
+    "full-finetune",
+    "ntp",
+    "summary",
+    "conversational",
+    "base_model:U-WIN/qwen35-9b-equational-theory-sair-mix1m-70n30t-thinking-grpo-200",
+    "base_model:finetune:U-WIN/qwen35-9b-equational-theory-sair-mix1m-70n30t-thinking-grpo-200",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839709813,
+  "storage_human": "18.8 GB",
+  "base_model": "U-WIN/qwen35-9b-equational-theory-sair-mix1m-70n30t-thinking-grpo-200",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Super U, Hyper U, Supermarché, Hypermarché, U Express | Magasin U",
+      "url": "https://www.magasins-u.com/",
+      "snippet": "Profitez de 20% en € Carte U sur une sélection de produits du quotidien. Adhérez à la Carte U en quelques clics et profitez de vos …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "Tous les catalogues et prospectus de nos supermarchés | Magasins U",
+      "url": "https://www.magasins-u.com/promotions/tous-les-catalogues",
+      "snippet": "Retrouvez tous les catalogues et toutes les promotions en cours de vos magasins Super U, Hyper U, U Express, Marché U."
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube/u/0",
+      "snippet": "Today, she’s YouTube royalty, holding the crown as one of the most-followed female gaming creators on the platform. With an …"
+    },
+    {
+      "title": "U (lettre) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/U_(lettre)",
+      "snippet": "Initialement l’alphabet latin n’a qu’une seule lettre pour u et v. Du XIIIe et XVe siècles, la forme angulaire est utilisée principalement …"
+    }
+  ]
+}

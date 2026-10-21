@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "0x36/Spark-X2.6-4B-mlx-8bit",
+  "slug": "0x36-spark-x2-6-4b-mlx-8bit",
+  "author": "0x36",
+  "url": "https://huggingface.co/0x36/Spark-X2.6-4B-mlx-8bit",
+  "created_at": "2026-10-20T19:51:23.000Z",
+  "updated_at": "2026-10-20T20:14:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "spark2_5",
+    "mlx-lm",
+    "quantized",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:XHToken/Spark-X2.6-4B",
+    "base_model:quantized:XHToken/Spark-X2.6-4B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4112079360,
+  "parameters_human": "4.11B",
+  "storage_bytes": 4369342514,
+  "storage_human": "4.4 GB",
+  "base_model": "XHToken/Spark-X2.6-4B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sexy - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLqIEKUwKIlRdVEx49T_1Pq2K7GY6Td49B",
+      "snippet": "Massive Attack - Angel ( s l o w e d ) ×. DONK."
+    },
+    {
+      "title": "Sexy!! - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PL198FEAACCE6260E6",
+      "snippet": "[Official] THE RAIDERS \"WHAT U GONNA DO? feat. KM-MARKIT and YUKALI\" (HD) [Official] DJ LICCA \"SHAKE! feat. VETTY, …"
+    },
+    {
+      "title": "Sexiest music videos of all time - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLBcD2jWBxHQlQ0wrn7AEhWIrlUq7-pUfm",
+      "snippet": "Yandel - In Your Eyes | Official Music Video. Inna - More Than Friends (feat. Daddy Yankee) [Official Video] INNA - Good Time (feat. …"
+    },
+    {
+      "title": "Sexiest Girls Top 100 - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLRKmoqGQKeYz6bjQtgZofn2mrAih_BB8I",
+      "snippet": "(Official Video) Mayra Rdz."
+    },
+    {
+      "title": "#sexy #shorts - YouTube",
+      "url": "https://m.youtube.com/watch?v=l_0Rtie5ibw",
+      "snippet": "Jul 22, 2022 · Watch as our dancers defy gravity in stunning urban landscapes, their bodies painting stories in the air. 💃🕺 🔥 Feel every …"
+    }
+  ]
+}

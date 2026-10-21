@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "chfm/Moss-image-nsfw-uncensored-lora",
+  "slug": "chfm-moss-image-nsfw-uncensored-lora",
+  "author": "chfm",
+  "url": "https://huggingface.co/chfm/Moss-image-nsfw-uncensored-lora",
+  "created_at": "2026-10-20T22:10:56.000Z",
+  "updated_at": "2026-10-20T22:10:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "lora",
+    "moss-image",
+    "nsfw",
+    "adult-content",
+    "template:sd-lora",
+    "base_model:OpenMOSS-Team/MOSS-Image-SFT",
+    "base_model:adapter:OpenMOSS-Team/MOSS-Image-SFT",
+    "license:apache-2.0",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27405927994,
+  "storage_human": "27.4 GB",
+  "base_model": "OpenMOSS-Team/MOSS-Image-SFT",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vincent Niclo Official Website | The Multi-Platinum French Tenor",
+      "url": "https://vincentniclo.com/",
+      "snippet": "Welcome to the official website of Vincent Niclo including news, tour dates, store and more! The multi-platinum French tenor is now …"
+    },
+    {
+      "title": "Vincent Niclo — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Vincent_Niclo",
+      "snippet": "Vincent Niclo, né le 6 janvier 1975 à Paris, est un chanteur et acteur français. Il est, par ailleurs, animateur à la télévision depuis 2019."
+    },
+    {
+      "title": "VincentNicloVEVO - YouTube",
+      "url": "https://www.youtube.com/channel/UCj_PwPx0zU4CpSrzMQRNU6g",
+      "snippet": "The official Vevo channel of Vincent Niclo.New album ‘Romantique’, out now: http://smarturl.it/VincentNiclo"
+    },
+    {
+      "title": "Vincent Niclo - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Vincent_Niclo",
+      "snippet": "Returning to classic music, he sang with Red Army Choir – MVD Ensemble, the official academic ensemble under the Ministry of the …"
+    },
+    {
+      "title": "Vincent Niclo Discography: Vinyl, CDs, & More | Discogs",
+      "url": "https://www.discogs.com/artist/2526708-Vincent-Niclo",
+      "snippet": "Explore Vincent Niclo's biography, discography, and artist credits. Shop rare vinyl records, top albums, and more on Discogs."
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "cicero99zz/diffusiongemma-26B-A4B-B2-Experimental-Q4_K_M-GGUF",
+  "slug": "cicero99zz-diffusiongemma-26b-a4b-b2-experimental-q4_k_m-gguf",
+  "author": "cicero99zz",
+  "url": "https://huggingface.co/cicero99zz/diffusiongemma-26B-A4B-B2-Experimental-Q4_K_M-GGUF",
+  "created_at": "2026-10-20T19:48:30.000Z",
+  "updated_at": "2026-10-20T19:50:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "diffusiongemma",
+    "experimental",
+    "q4-k-m",
+    "model-repair",
+    "llama-cpp",
+    "text-generation",
+    "en",
+    "base_model:edwixx/diffusiongemma-26B-A4B-it-HERETIC-Uncensored",
+    "base_model:merge:edwixx/diffusiongemma-26B-A4B-it-HERETIC-Uncensored",
+    "base_model:google/diffusiongemma-26B-A4B-it",
+    "base_model:merge:google/diffusiongemma-26B-A4B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25250987068,
+  "parameters_human": "25.25B",
+  "storage_bytes": 16806812224,
+  "storage_human": "16.8 GB",
+  "base_model": "edwixx/diffusiongemma-26B-A4B-it-HERETIC-Uncensored, google/diffusiongemma-26B-A4B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Porn Videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/",
+      "snippet": "XVideos.com is a free hosting service for porn videos. We convert your files to various formats. You can grab our 'embed code' to …"
+    },
+    {
+      "title": "xxx videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/tags/xxx",
+      "snippet": "Quando a leitura é mais prazerosa do que a gente imagina! ROLEPLAY | Lis Xxx."
+    },
+    {
+      "title": "Free Porn Videos & XXX Movies - Sex Videos Tube",
+      "url": "https://xhamster3.com/",
+      "snippet": "Free porn videos and exclusive XXX movies are here at xHamster. Instantly stream 6M+ hardcore sex videos from pros and …"
+    },
+    {
+      "title": "Free Porn Videos & XXX Movies: Sex Videos Tube | xHamster",
+      "url": "https://xhamster.com/",
+      "snippet": "Free porn videos and exclusive XXX movies are here at xHamster. Instantly stream 6M+ hardcore sex videos from pros and …"
+    },
+    {
+      "title": "XXX Videos Porn Videos - xHamster",
+      "url": "https://xhamster.com/search/xxx+videos",
+      "snippet": "Explore tons of XXX movies with sex scenes in 2026 on xHamster!"
+    }
+  ]
+}

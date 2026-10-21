@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "nur-dev/unionmind-predictive-representations",
+  "slug": "nur-dev-unionmind-predictive-representations",
+  "author": "nur-dev",
+  "url": "https://huggingface.co/nur-dev/unionmind-predictive-representations",
+  "created_at": "2026-10-21T00:03:49.000Z",
+  "updated_at": "2026-10-21T01:23:38.000Z",
+  "license": "mit-code-and-cc-by-4-0-research-artifacts",
+  "license_family": "unknown",
+  "pipeline_tag": "tabular-classification",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "bayesian-inference",
+    "tabular-classification",
+    "compositional-generalization",
+    "safetensors",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 63976543,
+  "storage_human": "64 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accueil | Demande de logement social en ligne",
+      "url": "https://www.demande-logement-social.gouv.fr/index",
+      "snippet": "Certains départements, en application de l'article R441-2-5 du code de la construction et de l'habitation ont opté pour un système …"
+    },
+    {
+      "title": "Demander un logement social - Ville de Paris",
+      "url": "https://www.paris.fr/pages/demander-un-logement-social-37",
+      "snippet": "Sep 29, 2026 · Chaque demandeur, qu'il fasse sa demande sur Internet, en mairie d'arrondissement ou par courrier, reçoit, dans un …"
+    },
+    {
+      "title": "Comment effectuer sa demande de logement social ?",
+      "url": "https://www.actionlogement.fr/guides/trouver-un-logement/faire-sa-demande-de-logement",
+      "snippet": "Le numéro unique d’enregistrement plus communément connu sous le nom de NUR (Numéro Unique Régional) ou de NUD (Numéro …"
+    },
+    {
+      "title": "Nur - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nur",
+      "snippet": "This disambiguation page lists articles associated with the title Nur. If an internal link incorrectly led you here, you may wish to …"
+    },
+    {
+      "title": "Qu’est-ce-que le numéro unique départemental (NUD) ?",
+      "url": "https://www.actionlogement.fr/qu-est-ce-que-le-numero-unique-departemental-nud",
+      "snippet": "Le NUR (numéro unique régional) ou NUD (numéro unique départemental) est le numéro de votre demande de logement social. Ce …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "Convergent-ch",
   "url": "https://huggingface.co/Convergent-ch/Tavik",
   "created_at": "2026-10-19T23:42:13.000Z",
-  "updated_at": "2026-10-19T23:42:21.000Z",
+  "updated_at": "2026-10-20T10:13:23.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -35,7 +35,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 25,
   "trending_score": 0,
   "parameters": 20405376,
   "parameters_human": "20.4M",

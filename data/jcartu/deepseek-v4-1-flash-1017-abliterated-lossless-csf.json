@@ -5,7 +5,7 @@
   "author": "jcartu",
   "url": "https://huggingface.co/jcartu/DeepSeek-V4.1-Flash-1017-abliterated-lossless-CSF",
   "created_at": "2026-10-20T16:29:52.000Z",
-  "updated_at": "2026-10-20T17:03:20.000Z",
+  "updated_at": "2026-10-20T19:24:09.000Z",
   "license": "lil-license-1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",

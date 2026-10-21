@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "darask0/MOSS-Image-color-depth-control",
+  "slug": "darask0-moss-image-color-depth-control",
+  "author": "darask0",
+  "url": "https://huggingface.co/darask0/MOSS-Image-color-depth-control",
+  "created_at": "2026-10-19T15:11:39.000Z",
+  "updated_at": "2026-10-19T15:12:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "moss-image",
+    "controlnet",
+    "control",
+    "depth",
+    "segmentation",
+    "regional-prompting",
+    "lora",
+    "text-to-image",
+    "base_model:OpenMOSS-Team/MOSS-Image-Base",
+    "base_model:adapter:OpenMOSS-Team/MOSS-Image-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 15,
+  "downloads_30d": 0,
+  "trending_score": 15,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1253554783,
+  "storage_human": "1.3 GB",
+  "base_model": "OpenMOSS-Team/MOSS-Image-Base, OpenMOSS-Team/MOSS-Image-SFT",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "darask0/MOSS-Image-color-depth-control · Hugging Face",
+      "url": "https://huggingface.co/darask0/MOSS-Image-color-depth-control",
+      "snippet": "Per-input end fractions (color_end, depth_end) zero a control after that fraction of the steps. Trained on the MOSS-Image Base transformer; used with MOSS-Image SFT and the 4-step DMAD adapter. Hayate (Rust/CUDA) runs it through --regions JSON, alone or combined with region prompts, labels and layouts. Put moss-control.safetensors next to the model files (the media root) to use it as the default adapter, or give its absolute path:"
+    },
+    {
+      "title": "MOSS-Image Color/Depth Control Lands in ComfyUI | ArtRealmAI",
+      "url": "https://artrealmai.com/article/moss-image-color-depth-control-comfyui",
+      "snippet": "MOSS-Image Color-Depth Control is an open, Apache-2.0 control adapter from community trainer darask0 that makes the 5B MOSS-Image model follow two simple guide images: a flat color region map (where each thing goes) and a depth map (its shape ..."
+    },
+    {
+      "title": "Overview and Evaluation of MOSS-Image (Surpassing Anima and ...",
+      "url": "https://note.com/hirorohi03/n/n085c66f9f7fc?hl=en",
+      "snippet": "MOSS-Image is the latest image generation model developed by the OpenMOSS team. The OpenMOSS team is a research team established by three parties: Fudan University, Shanghai Innovation Institute (SII), and MOSI Intelligence. They have released many AI models in addition to MOSS-Image."
+    },
+    {
+      "title": "darask0/Krea-2-color-depth-control · Hugging Face",
+      "url": "https://huggingface.co/darask0/Krea-2-color-depth-control",
+      "snippet": "Control latents are the Krea 2 VAE (AutoencoderKLQwenImage) encoding of the control image, with depth replicated to RGB and pixels scaled to [-1, 1]. Use the posterior mean at inference, normalize with the VAE's latents_mean / latents_std, and pack 2×2 like the image latent. A zero latent means \"no control\" for that input. The output projection is unchanged: the model still predicts the usual target for the noisy latent only."
+    },
+    {
+      "title": "MOSS-Image: Open 5B Image Model With Layout Control | explainx.ai ...",
+      "url": "https://explainx.ai/blog/moss-image-openmoss-5b-open-text-to-image-layout-control-text-rendering-apache-2026",
+      "snippet": "If you follow open image models, this lands in a busy month. We have covered FLUX.3 Image Klein, the 8-step Qwen-Image-2.1-Turbo, Halcyon, trained without language pretraining and Sperid Iris, a pixel-space model with no VAE. MOSS-Image's pitch is different: precise control over where things go."
+    }
+  ]
+}

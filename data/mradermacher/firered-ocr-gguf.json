@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "mradermacher/FireRed-OCR-GGUF",
+  "slug": "mradermacher-firered-ocr-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/FireRed-OCR-GGUF",
+  "created_at": "2026-03-01T09:36:13.000Z",
+  "updated_at": "2026-10-21T00:10:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:FireRedTeam/FireRed-OCR",
+    "base_model:quantized:FireRedTeam/FireRed-OCR",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 5,
+  "downloads_30d": 487,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 17224431680,
+  "storage_human": "17.2 GB",
+  "base_model": "FireRedTeam/FireRed-OCR",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

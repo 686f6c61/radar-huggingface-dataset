@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "peonist-ai/halogen-npu-qwen3.5-2b",
+  "slug": "peonist-ai-halogen-npu-qwen3-5-2b",
+  "author": "peonist-ai",
+  "url": "https://huggingface.co/peonist-ai/halogen-npu-qwen3.5-2b",
+  "created_at": "2026-10-03T00:52:09.000Z",
+  "updated_at": "2026-10-20T18:51:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "halogen",
+  "languages": [],
+  "tags": [
+    "halogen",
+    "npu",
+    "ryzen-ai",
+    "xdna2",
+    "strix-halo",
+    "amd",
+    "text-generation",
+    "summarization",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:quantized:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7480033850,
+  "storage_human": "7.5 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "twitch - 知乎",
+      "url": "https://www.zhihu.com/topic/19851981/intro",
+      "snippet": "Twitch是一个专注于游戏相关内容的流媒体平台，支持多语言，拥有大量用户和高访问量，每日平均停留时间较长。Read more"
+    },
+    {
+      "title": "为什么在twitch看直播却显示离线？iPad 上显示离线，可是我手机却看 …",
+      "url": "https://zhidao.baidu.com/question/1963019889349253140.html",
+      "snippet": "Twitch平台上的知名游戏包括英雄联盟、Dota2、星际争霸2、虫族之心、魔兽争霸、我的世界、坦克世界、以及暗黑破坏神3。 Twitch …"
+    },
+    {
+      "title": "twitch - 知乎",
+      "url": "https://www.zhihu.com/topic/19851981/hot",
+      "snippet": "根据其内部分析师透露，Twitch每月的访问量超过3800万，有超过2000万个游戏玩家汇聚到这个平台，每个访问用户在网站的日平均 …"
+    },
+    {
+      "title": "twitch官网怎么进 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/950271456576336012.html",
+      "snippet": "Apr 1, 2025 · twitch官网怎么进要进入Twitch官网，可以直接按照以下步骤操作：输入官方网址：在您的网络浏览器地址栏中输入 …"
+    },
+    {
+      "title": "国内手机如何下载twitch - 百度经验",
+      "url": "https://jingyan.baidu.com/article/9f7e7ec0ee9f652e29155451.html",
+      "snippet": "Jun 3, 2020 · 国内手机下载twitch具体步骤如下： 工具：华为P30手机、应用商店、twitch软件。 1、打开华为手机上面的app store， …"
+    }
+  ]
+}

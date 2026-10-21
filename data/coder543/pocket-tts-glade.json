@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "coder543/pocket-tts-glade",
+  "slug": "coder543-pocket-tts-glade",
+  "author": "coder543",
+  "url": "https://huggingface.co/coder543/pocket-tts-glade",
+  "created_at": "2026-10-09T03:12:52.000Z",
+  "updated_at": "2026-10-20T22:08:49.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "pocket-tts",
+  "languages": [
+    "en",
+    "fr",
+    "de",
+    "pt",
+    "it",
+    "es",
+    "nl"
+  ],
+  "tags": [
+    "pocket-tts",
+    "glade",
+    "coreai",
+    "apple-silicon",
+    "neural-engine",
+    "text-to-speech",
+    "en",
+    "fr",
+    "de",
+    "pt",
+    "it",
+    "es",
+    "nl",
+    "base_model:kyutai/pocket-tts",
+    "base_model:quantized:kyutai/pocket-tts",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2191931417,
+  "storage_human": "2.2 GB",
+  "base_model": "kyutai/pocket-tts",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Travel for Cheap (or Free) in 2026",
+      "url": "https://www.nomadicmatt.com/travel-blogs/the-ultimate-guide-to-traveling-when-you-have-no-money/",
+      "snippet": "Mar 26, 2026 · Traveling the world can be expensive. But what if you could travel the world for free! Here are over 16 ways to travel …"
+    },
+    {
+      "title": "Cheap Flights, Airline Tickets & Airfares - Find Deals on Flights at ...",
+      "url": "https://www.cheapflights.com/",
+      "snippet": "We have you covered when it comes to value travel and the cheapest flights. Browse our options to get the best deals on airline …"
+    },
+    {
+      "title": "Cheap Flights, Airline Tickets & Airfare Deals | KAYAK",
+      "url": "https://www.kayak.com/flights?msockid=06e0f3c312536b8d0011e43b130b6ad4",
+      "snippet": "Search for the cheapest airline tickets for all the top airlines around the world, airports around the world and the top international …"
+    },
+    {
+      "title": "TravelSupermarket - Compare Travel Deals",
+      "url": "https://www.travelsupermarket.com/?msockid=06e0f3c312536b8d0011e43b130b6ad4",
+      "snippet": "As well as holidays, TravelSupermarket allows you to compare the best deals from car hire companies, low-cost and charter airlines, …"
+    },
+    {
+      "title": "Compare Cheap Flights & Book Airline Tickets to Everywhere | Skyscanner",
+      "url": "https://www.skyscanner.net/?msockid=06e0f3c312536b8d0011e43b130b6ad4",
+      "snippet": "Compare cheap flight prices from all major airlines and travel agents, and find the cheapest tickets to all your favourite destinations. …"
+    }
+  ]
+}

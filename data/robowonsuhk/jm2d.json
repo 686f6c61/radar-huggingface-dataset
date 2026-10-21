@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "RoboWonsuhk/JM2D",
+  "slug": "robowonsuhk-jm2d",
+  "author": "RoboWonsuhk",
+  "url": "https://huggingface.co/RoboWonsuhk/JM2D",
+  "created_at": "2026-10-20T20:00:48.000Z",
+  "updated_at": "2026-10-20T20:00:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenAI · GitHub",
+      "url": "https://github.com/openai/",
+      "snippet": "OpenAI has 276 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Blender GPT Add-on - GitHub",
+      "url": "https://github.com/ryvn-dev/blender-gpt",
+      "snippet": "Blender GPT Add-on Introducing our newly developed Blender Add-on that harnesses the potential of OpenAI's latest GPT-4 (and …"
+    },
+    {
+      "title": "不是说chat gpt是免费的吗，怎么只能免费问一次? - 知乎",
+      "url": "https://www.zhihu.com/question/606750758",
+      "snippet": "后来自己注册gpt账号，能免费使用GPT-3.5，每月20刀的Gpt-4还是不大舍得去搞，3.5基本也够用了，搭配chatpdf等其他AI工具，用 …"
+    },
+    {
+      "title": "Chat GPT Tiếng Việt: Cài đặt và mẹo đặt câu lệnh mới nhất",
+      "url": "https://cellphones.com.vn/sforum/cach-dung-chat-gpt-tieng-viet",
+      "snippet": "Jul 10, 2026 · Hướng dẫn cách sử dụng Chat GPT Tiếng Việt hiệu quả để đặt câu hỏi, viết nội dung, học tập, dịch thuật và xử lý …"
+    },
+    {
+      "title": "Changing the AI model for GitHub Copilot Chat",
+      "url": "https://docs.github.com/en/copilot/how-tos/copilot-in-your-ide/chat-with-copilot/change-the-chat-model",
+      "snippet": "In the popup menu, click Open Chat. In the bottom right of the chat panel, click the currently selected AI model, then select an …"
+    }
+  ]
+}

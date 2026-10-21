@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Mira-v1.27-27B-dpo-GGUF",
+  "slug": "mradermacher-mira-v1-27-27b-dpo-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Mira-v1.27-27B-dpo-GGUF",
+  "created_at": "2026-03-01T09:36:13.000Z",
+  "updated_at": "2026-10-21T00:11:05.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:Lambent/Mira-v1.27-27B-dpo",
+    "base_model:quantized:Lambent/Mira-v1.27-27B-dpo",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 75,
+  "trending_score": 0,
+  "parameters": 27009007616,
+  "parameters_human": "27.01B",
+  "storage_bytes": 186677741760,
+  "storage_human": "186.7 GB",
+  "base_model": "Lambent/Mira-v1.27-27B-dpo",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Our Fleet - GEOxyz",
+      "url": "https://www.geoxyz.eu/en/fleet",
+      "snippet": "We have a vessel for every survey. GEOxyz has a fleet of dedicated survey vessels for the most comprehensive range of solutions."
+    },
+    {
+      "title": "Our fleet - GEOxyz",
+      "url": "https://www.geoxyz.eu/fr/fleet",
+      "snippet": "GEOxyz has a fleet of dedicated survey vessels for the most comprehensive range of solutions."
+    },
+    {
+      "title": "Fleet list of GEOXYZ BVBA(Registered Shipowner) - Marine Vessel …",
+      "url": "https://www.marinevesseltraffic.com/registered-shipowner-fleet/GEOXYZ-BVBA/17727020",
+      "snippet": "Note: Fleet lists contain only vessels with the following service statuses: Active (Commissioned), Laid-Up, Conversion or Rebuilding, …"
+    },
+    {
+      "title": "GEOxyz - your maritime data partner",
+      "url": "https://www.geoxyz.eu/",
+      "snippet": "Our fleet includes everything from large offshore vessels and crew transfer vessels to unmanned surface vehicles (USVs). Whatever …"
+    },
+    {
+      "title": "Expanding our fleet with 3 new vessels - geoxyz.eu",
+      "url": "https://www.geoxyz.eu/en/news/expanding-our-fleet-with-3-new-vessels",
+      "snippet": "We are excited to unveil the addition of three new vessels into our fleet, bringing the total fleet count to 30. This strategic expansion …"
+    }
+  ]
+}

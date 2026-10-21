@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "TheProjectAegis/Kitchoon-V3-26B-A4B-GGUF",
+  "slug": "theprojectaegis-kitchoon-v3-26b-a4b-gguf",
+  "author": "TheProjectAegis",
+  "url": "https://huggingface.co/TheProjectAegis/Kitchoon-V3-26B-A4B-GGUF",
+  "created_at": "2026-10-20T21:47:53.000Z",
+  "updated_at": "2026-10-21T00:06:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ru"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "rp",
+    "GGUF",
+    "Kitchoon",
+    "Gemma",
+    "text-generation",
+    "en",
+    "ru",
+    "dataset:Indexnusrefather/Hy4-Roleplaying-Data-RAW",
+    "base_model:SubMaroon/Kitchoon-V3-26B-A4B",
+    "base_model:quantized:SubMaroon/Kitchoon-V3-26B-A4B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 49538449097,
+  "storage_human": "49.5 GB",
+  "base_model": "SubMaroon/Kitchoon-V3-26B-A4B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Verify Airtel Mobile Number with Aadhaar Online",
+      "url": "https://www.airtel.in/verify-mobile-for-aadhaar-reverification/subscribe?categoryNRI",
+      "snippet": "Have queries on re-verifying your mobile number with Aadhaar? Verify your Airtel mobile number with Aadhaar now, with very easy …Read more"
+    },
+    {
+      "title": "Airtel -Approve Aadhaar Link Mobile Reverification Process",
+      "url": "https://www.airtel.in/verify-mobile-for-aadhaar-reverification/approve",
+      "snippet": "Enter Transaction ID to approve aadhaar mobile re-verification process for Senior Citizen, Physically challenged and NRI Airtel …"
+    },
+    {
+      "title": "Airtel",
+      "url": "https://i.airtel.in/kyc",
+      "snippet": "Airtel - India’s largest telecom service provider for customers & businesses."
+    },
+    {
+      "title": "How to Complete Your Airtel Re-KYC Without Visiting a Store: Step-by ...",
+      "url": "https://www.techlusive.in/how-to/how-to-complete-your-airtel-re-kyc-without-visiting-a-store-step-by-step-guide-inside-1610376/",
+      "snippet": "Oct 15, 2025 · Airtel users must complete re-KYC to avoid service disconnection. Follow this easy step-by-step guide to complete …"
+    },
+    {
+      "title": "Airtel यूजर्स सावधान! बंद हो जाएगा आपका SIM, फौरन करें Re-KYC, घर …",
+      "url": "https://www.digit.in/hi/news/telecom/how-to-complete-airtel-re-kyc-online-using-step-by-step-guide.html",
+      "snippet": "Oct 15, 2025 · क्या आपके फोन पर भी इन दिनों Airtel की तरफ से ‘re-KYC’ कराने का नोटिफिकेशन आ रहा है?"
+    }
+  ]
+}

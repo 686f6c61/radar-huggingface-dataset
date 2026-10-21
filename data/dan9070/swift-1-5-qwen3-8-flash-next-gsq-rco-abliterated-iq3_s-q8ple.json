@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "dan9070/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-abliterated-IQ3_S-Q8PLE",
+  "slug": "dan9070-swift-1-5-qwen3-8-flash-next-gsq-rco-abliterated-iq3_s-q8ple",
+  "author": "dan9070",
+  "url": "https://huggingface.co/dan9070/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-abliterated-IQ3_S-Q8PLE",
+  "created_at": "2026-10-20T19:45:11.000Z",
+  "updated_at": "2026-10-20T20:02:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 603065600,
+  "parameters_human": "603.1M",
+  "storage_bytes": 114874630944,
+  "storage_human": "114.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

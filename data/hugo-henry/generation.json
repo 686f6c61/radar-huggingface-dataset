@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "hugo-henry/generation",
+  "slug": "hugo-henry-generation",
+  "author": "hugo-henry",
+  "url": "https://huggingface.co/hugo-henry/generation",
+  "created_at": "2026-10-20T23:49:00.000Z",
+  "updated_at": "2026-10-20T23:49:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Victor Hugo — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Victor_Hugo",
+      "snippet": "Victor Hugo, né le 7 ventôse an X (26 février 1802) à Besançon et mort le 22 mai 1885 à Paris, est un poète, dramaturge, romancier …"
+    },
+    {
+      "title": "HUGO BOSS collection | Femmes & hommes | Soignée & Particulière",
+      "url": "https://www.hugoboss.com/fr/home?msockid=03f73738d9996db101e420c1d8fe6c36",
+      "snippet": "Lancée dans les années 1990, HUGO encourage l’expression de soi grâce à des pièces avant-gardistes aux couleurs vives et aux …"
+    },
+    {
+      "title": "Hugo Publishing - Une maison d'éditeurs",
+      "url": "https://www.hugopublishing.fr/",
+      "snippet": "Hugo Publishing lance l'adaptation webtoon d'Abysses sur ONO Le roman phénomène Abysses de C.S. Quill arrive en webtoon sur …"
+    },
+    {
+      "title": "Hugo — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Hugo",
+      "snippet": "Prénom Hugo est un prénom masculin et peut être féminin dans certains cas. Pour l'ensemble des articles sur les personnes portant …"
+    },
+    {
+      "title": "Gohugo - The world's fastest framework for building websites",
+      "url": "https://gohugo.io/",
+      "snippet": "2 days ago · Hugo is one of the most popular open-source static site generators. With its amazing speed and flexibility, Hugo makes …"
+    }
+  ]
+}

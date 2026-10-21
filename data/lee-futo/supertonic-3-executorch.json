@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "lee-futo/supertonic-3-executorch",
+  "slug": "lee-futo-supertonic-3-executorch",
+  "author": "lee-futo",
+  "url": "https://huggingface.co/lee-futo/supertonic-3-executorch",
+  "created_at": "2026-10-20T23:09:53.000Z",
+  "updated_at": "2026-10-20T23:26:09.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "executorch",
+  "languages": [],
+  "tags": [
+    "executorch",
+    "xnnpack",
+    "text-to-speech",
+    "base_model:Supertone/supertonic-3",
+    "base_model:quantized:Supertone/supertonic-3",
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 540166016,
+  "storage_human": "540 MB",
+  "base_model": "Supertone/supertonic-3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lee FR | Boutique Officielle | Jeans et Vêtements Denim",
+      "url": "https://eu.lee.com/fr-fr/home",
+      "snippet": "Découvrez les dernières tendances en jean avec Lee. De nouveaux modèles homme et femme, avec des jeans, vêtements et autres …"
+    },
+    {
+      "title": "Jeans | Apparel for Men and Women | Lee Official Site",
+      "url": "https://www.lee.com/",
+      "snippet": "Shop the official Lee online store for a variety of designer jeans, shorts, shirts and more. Experience why Lee has been a popular …"
+    },
+    {
+      "title": "Lee Europe Official Store | Denim Jeans and Clothing",
+      "url": "https://eu.lee.com/eu-en/home/",
+      "snippet": "Discover the latest trends in designer denim with Lee. Find the new range of styles for both Men and Women, with top quality jeans, …"
+    },
+    {
+      "title": "Shop All Featured Men & Women's Clothing - Lee",
+      "url": "https://www.lee.com/shop/featured",
+      "snippet": "Maximize your fashion impact with the men's and women's clothing online at Lee®. Whether you need polished pieces for the office …"
+    },
+    {
+      "title": "Lee (jeans) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Lee_(jeans)",
+      "snippet": "La H.D. Lee Mercantile Company est fondée en 1889 par Henry David Lee, un industriel ayant fait fortune dans le pétrole avant de …"
+    }
+  ]
+}

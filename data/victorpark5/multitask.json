@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "victorpark5/multitask",
+  "slug": "victorpark5-multitask",
+  "author": "victorpark5",
+  "url": "https://huggingface.co/victorpark5/multitask",
+  "created_at": "2026-10-20T21:58:47.000Z",
+  "updated_at": "2026-10-20T21:58:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Carte bancaire pas très connue mais utile: Nomade caisse d'épargne",
+      "url": "https://www.moneyvox.fr/forums/fil/carte-bancaire-pas-tres-connue-mais-utile-nomade-caisse-depargne.52742/",
+      "snippet": "Jun 26, 2025 · Bonjour, La carte Nomade de la caisse d'épargne est une carte physique qui permet de retirer aux DAB sur le livret A, …Read more"
+    },
+    {
+      "title": "Livret GrAnd FormAt (Caisse d'Epargne) : taux et plafond - MoneyVox",
+      "url": "https://www.moneyvox.fr/livret/grand-format-caisse-epargne",
+      "snippet": "Jul 22, 2026 · Le Livret GrAnd FormAt est un livret fiscalisé, réservé aux clients de la Caisse d’Epargne possédant un Livret A au …"
+    },
+    {
+      "title": "Connexion impossible à ma banque en ligne car pas de SMS d ...",
+      "url": "https://forums.commentcamarche.net/forum/affich-36732120-connexion-impossible-a-ma-banque-en-ligne-car-pas-de-sms-d-authentification",
+      "snippet": "Jun 28, 2020 · Bonjour, Je vis à l'île de la Réunion et je ne parviens plus à me connecter à mon compte caisse d'épargne en ligne. Il …"
+    },
+    {
+      "title": "Soucis avec application BANXO (caisse d'epargne)",
+      "url": "https://forums.commentcamarche.net/forum/affich-38122103-soucis-avec-application-banxo-caisse-d-epargne",
+      "snippet": "Nov 16, 2024 · Bonjour, Malgré avoir accepter les notifications lors de l'installation de l'application bancaire Banxo (caisse d'épargne) …"
+    },
+    {
+      "title": "Bouquet Liberté de la Caisse d'Epargne - MoneyVox",
+      "url": "https://www.moneyvox.fr/epargne/caisse-epargne/bouquet-liberte",
+      "snippet": "Jun 2, 2020 · Les Caisses d'Epargne proposaient pour leur compte bancaire la formule « Bouquet Liberté », permettant d'avoir …"
+    }
+  ]
+}

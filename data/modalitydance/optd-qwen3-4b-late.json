@@ -5,7 +5,7 @@
   "author": "ModalityDance",
   "url": "https://huggingface.co/ModalityDance/OPTD-Qwen3-4B-Late",
   "created_at": "2026-10-19T16:36:07.000Z",
-  "updated_at": "2026-10-19T17:06:06.000Z",
+  "updated_at": "2026-10-20T09:20:01.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": 4411424256,
   "parameters_human": "4.41B",

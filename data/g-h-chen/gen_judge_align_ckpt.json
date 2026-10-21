@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "g-h-chen/gen_judge_align_ckpt",
+  "slug": "g-h-chen-gen_judge_align_ckpt",
+  "author": "g-h-chen",
+  "url": "https://huggingface.co/g-h-chen/gen_judge_align_ckpt",
+  "created_at": "2026-10-20T21:54:42.000Z",
+  "updated_at": "2026-10-20T22:27:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "rubric-judge",
+    "research",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3-32B",
+    "base_model:finetune:Qwen/Qwen3-32B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 245728958478,
+  "storage_human": "245.7 GB",
+  "base_model": "Qwen/Qwen3-8B, Qwen/Qwen3-32B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google",
+      "url": "https://ipv4.google.com/?hl=fr",
+      "snippet": "Publicité À propos de Google Google.com in English © 2026 - Confidentialité - Conditions"
+    },
+    {
+      "title": "google mail",
+      "url": "https://mail.google.com/mail/u/0/",
+      "snippet": ""
+    },
+    {
+      "title": "Gmail - Google Accounts",
+      "url": "https://accounts.google.com/servicelogin?service=mail",
+      "snippet": "Gmail is email that’s intuitive, efficient, and useful. 15 GB of storage, less spam, and mobile access."
+    },
+    {
+      "title": "g (accélération) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/G_(acc%C3%A9l%C3%A9ration)",
+      "snippet": "Le g (en italique, « g » étant l'initiale de « gravité ») est une unité d' accélération correspondant approximativement à l'accélération …"
+    }
+  ]
+}

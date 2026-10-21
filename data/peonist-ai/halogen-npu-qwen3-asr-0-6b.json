@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "peonist-ai/halogen-npu-qwen3-asr-0.6b",
+  "slug": "peonist-ai-halogen-npu-qwen3-asr-0-6b",
+  "author": "peonist-ai",
+  "url": "https://huggingface.co/peonist-ai/halogen-npu-qwen3-asr-0.6b",
+  "created_at": "2026-10-11T02:35:15.000Z",
+  "updated_at": "2026-10-20T18:51:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "halogen",
+  "languages": [],
+  "tags": [
+    "halogen",
+    "npu",
+    "ryzen-ai",
+    "xdna2",
+    "strix-halo",
+    "amd",
+    "speech-to-text",
+    "automatic-speech-recognition",
+    "base_model:Qwen/Qwen3-ASR-0.6B",
+    "base_model:quantized:Qwen/Qwen3-ASR-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1626659904,
+  "storage_human": "1.6 GB",
+  "base_model": "Qwen/Qwen3-ASR-0.6B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "peonist-ai/halogen-npu-qwen3-asr-0.6b · Hugging Face",
+      "url": "https://huggingface.co/peonist-ai/halogen-npu-qwen3-asr-0.6b",
+      "snippet": "Qwen3-ASR-0.6B, converted to run on the Ryzen AI NPU of AMD Strix Halo inside halogen-flash-server, beside the Flash model on the GPU and behind the same port. Questions go to the Discord. Bugs go to the server repository&#x27;s issues. These files run only inside the halogen-flash-server container, on ..."
+    },
+    {
+      "title": "peonist-ai - GitHub",
+      "url": "https://github.com/peonist-ai/",
+      "snippet": "Work, work. Peonist.ai has 3 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "GitHub - peonist-ai/halogen-flash-server: The fastest way to run Qwen3 ...",
+      "url": "https://github.com/peonist-ai/halogen-flash-server",
+      "snippet": "halogen™ is the fastest way to run Qwen3.8-Flash-Next on AMD Strix Halo, and it does not get there by spending fewer bits. Every kernel is written for this one GPU and this one model family. No general-purpose runtime, no portability layer, no fallback path. That is why it can do things a general engine cannot, and why it runs on exactly one piece of silicon."
+    },
+    {
+      "title": "peonist-ai/halogen-npu-qwen3-reranker-0.6b at main - Hugging Face",
+      "url": "https://huggingface.co/peonist-ai/halogen-npu-qwen3-reranker-0.6b/tree/main",
+      "snippet": "License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main halogen-npu-qwen3-reranker-.6b 860 MB Ctrl+K Ctrl+K 1 contributor History:4 commits peonist card: the logo 544114f verifiedabout 7 hours ago devicesqwen3-reranker-.6b: the NPU setabout 7 hours ago tokenizerqwen3-reranker-.6b: the NPU setabout 7 hours ..."
+    },
+    {
+      "title": "How to Setup Qwen3-ASR-0.6B on AMD/Nvidia GPU Step-by-Step",
+      "url": "https://www.bioartemia.com/2026/07/04/how-to-setup-qwen3-asr-0-6b-on-amd-nvidia-gpu-step-by-step/",
+      "snippet": "The Qwen3-ASR-0.6B model is a compact speech recognition system designed for real‑time transcription across multiple languages. It contains 0.6 billion parameters, striking a balance between accuracy and on‑device deployment feasibility. The architecture leverages efficient attention mechanisms to achieve low inference latency, making it suitable for real‑time applications. A dedicated ..."
+    }
+  ]
+}

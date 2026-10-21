@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "rish-huggingface/alfred-4b-GGUF",
+  "slug": "rish-huggingface-alfred-4b-gguf",
+  "author": "rish-huggingface",
+  "url": "https://huggingface.co/rish-huggingface/alfred-4b-GGUF",
+  "created_at": "2026-10-20T21:37:28.000Z",
+  "updated_at": "2026-10-20T23:19:04.000Z",
+  "license": "alfred-4b-evaluation-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "tool-use",
+    "function-calling",
+    "agents",
+    "reinforcement-learning",
+    "grpo",
+    "text-generation",
+    "en",
+    "base_model:nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16",
+    "base_model:quantized:nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3973556832,
+  "parameters_human": "3.97B",
+  "storage_bytes": 5689407552,
+  "storage_human": "5.7 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Clé d'activation de guitar pro 6 - Loisirs / Divertissements",
+      "url": "https://forums.commentcamarche.net/forum/affich-24409093-cle-d-activation-de-guitar-pro-6",
+      "snippet": "Feb 9, 2012 · Bonjour, j'ai un problème concernant guitar pro 6 sur le mode hors connections j'ai pas de clé d'activation est ce que …"
+    },
+    {
+      "title": "Recherche POlice du Film \"Les Bronzés font du ski\"",
+      "url": "https://forums.commentcamarche.net/forum/affich-34848432-recherche-police-du-film-les-bronzes-font-du-ski",
+      "snippet": "Sep 6, 2017 · Bonjour, Je suis à la recherche de la police d'écriture du film \"Les bronzés font du ski\" afin de réaliser une affiche. …"
+    },
+    {
+      "title": "Topic [Alerte YTB] Cam-Off Fake ou pas? Quelques preuves sur sa ...",
+      "url": "https://www.jeuxvideo.com/forums/42-51-56377813-1-0-1-0-alerte-ytb-cam-off-fake-ou-pas-quelques-preuves-sur-sa-derniere-video-a-vous-de-juger-issou.htm",
+      "snippet": "May 30, 2018 · Accueil Tous les forums Forum Blabla 18-25 ans Topic [Alerte YTB] Cam-Off Fake ou pas? Quelques preuves sur sa …"
+    },
+    {
+      "title": "Coop Wuthering Waves : Comment débloquer le mode multijoueur",
+      "url": "https://www.jeuxvideo.com/news/1887769/coop-wuthering-waves-comment-debloquer-le-mode-multijoueur.htm",
+      "snippet": "May 24, 2024 · Vous souhaitez partager une aventure sur Wuthering Waves avec des amis, mais vous ne parvenez pas à lancer …"
+    },
+    {
+      "title": "Comment se débarrasser de oneclickstarter",
+      "url": "https://forums.commentcamarche.net/forum/affich-30550314-comment-se-debarrasser-de-oneclickstarter",
+      "snippet": "kaneagle Messages postés 86295 Date d'inscription mercredi 27 mai 2009 Statut Modérateur Dernière intervention 23 juillet 2026 14 …"
+    }
+  ]
+}

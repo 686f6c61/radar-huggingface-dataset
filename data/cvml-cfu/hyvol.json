@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "CVML-CFU/HyVol",
+  "slug": "cvml-cfu-hyvol",
+  "author": "CVML-CFU",
+  "url": "https://huggingface.co/CVML-CFU/HyVol",
+  "created_at": "2026-10-20T21:28:56.000Z",
+  "updated_at": "2026-10-20T21:31:54.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "multimodal-retrieval",
+    "text-video-retrieval",
+    "audio-visual",
+    "hypergraph",
+    "arxiv:2609.15320",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11098546646,
+  "storage_human": "11.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "anindyanag58/HyVol · Hugging Face",
+      "url": "https://huggingface.co/anindyanag58/HyVol",
+      "snippet": "HyVol is a training-only module for volume-based multimodal retrieval. A hypergraph adds semantic relations between training samples before the volume loss is computed."
+    },
+    {
+      "title": "GitHub - alidiba67/CVML: a resource repo to find everything about ...",
+      "url": "https://github.com/alidiba67/CVML",
+      "snippet": "Welcome to the Computer Vision and Machine Learning Research Repository! This repository aims to provide a comprehensive list of important topics and the most recent content related to computer vision and deep neural network research."
+    },
+    {
+      "title": "What are CV/ML algorithms?",
+      "url": "https://milvus.io/ai-quick-reference/what-are-cvml-algorithms",
+      "snippet": "CV/ML algorithms are computational methods used in computer vision (CV) and machine learning (ML) to analyze visual data"
+    },
+    {
+      "title": "Towards a Better Evaluation of 3D CVML Algorithms: Immersive ...",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1111/cgf.70111?af=R",
+      "snippet": "Large image datasets have driven ... Vision and Machine Learning) as algorithms leveraging visual and multi-modal inputs, often with a temporal component, to interpret 3D environments...."
+    },
+    {
+      "title": "CVML",
+      "url": "https://sites.google.com/view/cvml-kaist",
+      "snippet": "Thank you for visiting. We have moved to a new online home. Please click the link below to visit our new site. https://kaist-cvml.github.io"
+    }
+  ]
+}

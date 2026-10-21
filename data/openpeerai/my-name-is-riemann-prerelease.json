@@ -1,0 +1,140 @@
+{
+  "schema": 1,
+  "id": "OpenPeerAI/My-Name-is-Riemann-Prerelease",
+  "slug": "openpeerai-my-name-is-riemann-prerelease",
+  "author": "OpenPeerAI",
+  "url": "https://huggingface.co/OpenPeerAI/My-Name-is-Riemann-Prerelease",
+  "created_at": "2026-10-19T22:12:34.000Z",
+  "updated_at": "2026-10-20T23:44:32.000Z",
+  "license": "opnl-2-and-mit",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "riemann_openpeer",
+    "text-generation",
+    "amd",
+    "ntk",
+    "code",
+    "fsdp",
+    "rocm",
+    "coding",
+    "mi325x",
+    "decoder",
+    "code gen",
+    "directml",
+    "openpeer",
+    "ryzen-ai",
+    "reasoning",
+    "rewriting",
+    "multimodal",
+    "paraphrase",
+    "prerelease",
+    "ntk-trainer",
+    "openpeerllm",
+    "growth-ladder",
+    "style-transfer",
+    "text-rewriting",
+    "riemann-computing",
+    "progressive-growth",
+    "custom_code",
+    "en",
+    "ar",
+    "dataset:MoreThought/Fable-5.1-Max-Reasoning-Filtered-10000x",
+    "dataset:bakrianoo/jabarti-llm-dataset",
+    "dataset:HelenPeng/ExeWorldBench",
+    "dataset:code-video-model/CodeVideoBench",
+    "dataset:Tiiny/PowerCoding",
+    "arxiv:1910.09700",
+    "arxiv:2610.15166",
+    "arxiv:2502.04235",
+    "arxiv:2406.20094",
+    "arxiv:2406.19853",
+    "base_model:OpenPeerAI/OpenPeerLLM",
+    "base_model:finetune:OpenPeerAI/OpenPeerLLM",
+    "doi:10.57967/hf/11147",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1638837760,
+  "parameters_human": "1.64B",
+  "storage_bytes": 52443365686,
+  "storage_human": "52.4 GB",
+  "base_model": "OpenPeerAI/OpenPeerLLM",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Held-out next-token prediction",
+      "dataset": "My Name is Riemann NTK validation slice, base weights",
+      "metric": "Validation NLL (1,000 held-out jabarti finetune and Fable first-turn pairs), frozen stage 6 weights",
+      "value": 1.3228
+    },
+    {
+      "task": "Held-out next-token prediction",
+      "dataset": "My Name is Riemann NTK validation slice, base weights",
+      "metric": "Validation next-token accuracy (%), frozen stage 6 weights",
+      "value": 67.73
+    },
+    {
+      "task": "Held-out next-token prediction",
+      "dataset": "My Name is Riemann NTK validation slice, with NTK gate controller",
+      "metric": "Validation NLL (1,000 held-out jabarti finetune and Fable first-turn pairs), stage 6 weights plus 6,732-gate controller",
+      "value": 1.3104
+    },
+    {
+      "task": "Held-out next-token prediction",
+      "dataset": "My Name is Riemann NTK validation slice, with NTK gate controller",
+      "metric": "Validation next-token accuracy (%), stage 6 weights plus controller",
+      "value": 67.84
+    },
+    {
+      "task": "Pretraining",
+      "dataset": "My Name is Riemann pretraining corpus (five datasets, 2.30B GPT-2 tokens)",
+      "metric": "Final training cross-entropy at step 2,064 (2.16B tokens, bf16, 1,048,576 tokens per step)",
+      "value": 1.5888
+    }
+  ],
+  "sources": [
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Qwen, Mistral AI, Moonshot AI, Z.ai, MiniMax, NVIDIA, Microsoft AI, Cohere, Xiaomi, and other prominent AI labs. The newest-first tables show each release date, provider, and model type. Dates use the earliest meaningful availability stage for each entry. Preview access ..."
+    },
+    {
+      "title": "OpenPeer AI",
+      "url": "https://openpeer.me/",
+      "snippet": "The Library The AI competition is heating up, and with a bunch of new LLMs hitting the market, a lot of them rely on inefficient computing and are basically just search engine reindexing algorithms. That&#x27;s where OpenPeer AI steps in. It&#x27;s decentralized and built on the decentralized-internet SDK, using BOINC as its foundation. By utilizing Mojo, LonScript, OpenPeer, and LLM standards, it ..."
+    },
+    {
+      "title": "Riemann Computing Introduces the OpenPeer AI Family of Models, Testing ...",
+      "url": "https://www.financialcontent.com/article/abnewswire-2026-1-12-riemann-computing-introduces-the-openpeer-ai-family-of-models-testing-the-waters-for-equity-crowdfunding-campaign",
+      "snippet": "The OpenPeer AI initiative represents Riemann Computing&#x27;s next step in democratizing access to highly efficient artificial intelligence. The models—currently hosted on Hugging Face—are in early beta testing, providing developers and researchers a glimpse of what&#x27;s to come. These first-generation OpenPeerAI models emphasize data efficiency, modularity, and accessibility, aligning with ..."
+    },
+    {
+      "title": "Riemann-1.0: An Embodied World Action Model for Physical AI",
+      "url": "https://arxiv.org/abs/2608.27033",
+      "snippet": "We introduce Riemann-1.0, a fully causal autoregressive World Action Model for embodied intelligence. Riemann-1.0 jointly models multi-view visual observations, robot states, and embodiment-specific actions within a unified causal autoregressive sequence, representing robot actions and world evolution as causal state transitions. Unlike existing WAMs based on joint generation, video-first ..."
+    },
+    {
+      "title": "Riemann-1.0: An Embodied World Action Model for Physical AI",
+      "url": "https://arxiv.org/html/2608.27033v1",
+      "snippet": "1 Introduction Figure 1: Overview of Riemann-1.0. Riemann-1.0 integrates a unified embodied data infrastructure, Progressive Embodied Pretraining, and a fully causal World Action Model into a unified framework for embodied intelligence. The resulting model simultaneously serves as an executable robot policy and an action-conditioned visual world simulator, achieving state-of-the-art ..."
+    }
+  ]
+}

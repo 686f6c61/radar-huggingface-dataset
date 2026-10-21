@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "yashmoar/Qwen2.5-3B-SFT-random-15k",
+  "slug": "yashmoar-qwen2-5-3b-sft-random-15k",
+  "author": "yashmoar",
+  "url": "https://huggingface.co/yashmoar/Qwen2.5-3B-SFT-random-15k",
+  "created_at": "2026-10-20T19:53:04.000Z",
+  "updated_at": "2026-10-20T19:53:39.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "dataset:yashmoar/acereason-15k-random",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-3B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6794264881,
+  "storage_human": "6.8 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

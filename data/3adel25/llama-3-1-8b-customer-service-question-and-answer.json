@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "3adel25/Llama-3.1-8B-Customer-service-question-and-answer",
+  "slug": "3adel25-llama-3-1-8b-customer-service-question-and-answer",
+  "author": "3adel25",
+  "url": "https://huggingface.co/3adel25/Llama-3.1-8B-Customer-service-question-and-answer",
+  "created_at": "2026-10-20T18:57:59.000Z",
+  "updated_at": "2026-10-20T23:54:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama",
+    "text-generation",
+    "customer-service",
+    "question-answering",
+    "fine-tuning",
+    "lora",
+    "peft",
+    "unsloth",
+    "trl",
+    "en",
+    "dataset:Lakshan2003/Llama3.1-8b-instruct-customerservice-evaldata",
+    "base_model:meta-llama/Llama-3.1-8B",
+    "base_model:adapter:meta-llama/Llama-3.1-8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16068891328,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Des \"méthodes de dictatures\": plusieurs centaines de manifestants à ...",
+      "url": "https://www.bfmtv.com/societe/manifestations/des-methodes-de-dictatures-plusieurs-centaines-de-manifestants-a-rennes-malgre-l-interdiction-prefectorale_AD-202610200560.html",
+      "snippet": "12 hours ago · Malgré l'interdiction préfectorale de manifester, plusieurs centaines de lycéens et d'étudiants ont pris part dans les …"
+    },
+    {
+      "title": "Malgré l’interdiction de la manifestation lycéenne, quelques centaines ...",
+      "url": "https://www.ouest-france.fr/societe/manifestation/malgre-linterdiction-de-la-manifestation-lyceenne-quelques-centaines-de-personnes-defilent-dans-rennes-f7db9782-cc6b-11f1-bb5f-3dc5c0feacca",
+      "snippet": "14 hours ago · Des organisations lycéennes et étudiantes appelaient à une nouvelle manifestation à 11 h, à Rennes (Ille-et-Vilaine), …"
+    },
+    {
+      "title": "À Rennes, plusieurs centaines de manifestants dans les rues malgré l ...",
+      "url": "https://www.laprovence.com/article/societe/6461593382153814/a-rennes-plusieurs-centaines-de-manifestants-dans-les-rues-malgre-linterdiction-prefectorale",
+      "snippet": "12 hours ago · Environ 400 personnes, en majorité des lycéens et des étudiants, se sont rassemblées mardi à Rennes malgré …"
+    },
+    {
+      "title": "À Rennes, 400 lycéens et étudiants manifestent malgré l’interdiction de ...",
+      "url": "https://www.europe1.fr/societe/a-rennes-400-lyceens-et-etudiants-manifestent-malgre-linterdiction-de-la-prefecture-1167198",
+      "snippet": "10 hours ago · 400 personnes, en majorité des lycéens et des étudiants, se sont rassemblées mardi à Rennes malgré l’interdiction …"
+    },
+    {
+      "title": "Mobilisation du 17 octobre : à Rennes, la manifestation d’ampleur vire ...",
+      "url": "https://www.lemonde.fr/societe/article/2026/10/18/mobilisation-du-17-octobre-a-rennes-la-manifestation-d-ampleur-vire-au-chaos_6796822_3224.html",
+      "snippet": "2 days ago · Au moins 12 000 personnes ont défilé, samedi, dans la capitale bretonne. La manifestation festive a été rythmée par de …"
+    }
+  ]
+}

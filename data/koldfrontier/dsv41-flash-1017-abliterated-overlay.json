@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "koldfrontier/dsv41-flash-1017-abliterated-overlay",
+  "slug": "koldfrontier-dsv41-flash-1017-abliterated-overlay",
+  "author": "koldfrontier",
+  "url": "https://huggingface.co/koldfrontier/dsv41-flash-1017-abliterated-overlay",
+  "created_at": "2026-10-20T22:06:49.000Z",
+  "updated_at": "2026-10-20T22:09:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "safetensors",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "deepseek",
+    "deepseek-v4.1",
+    "abliterated",
+    "refusal-removed",
+    "overlay",
+    "fp8",
+    "dgx-spark",
+    "sglang",
+    "vllm",
+    "en",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "base_model:adapter:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4366357120,
+  "storage_human": "4.4 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Live Sex Webcams and Porn Chat | xHamsterLive",
+      "url": "https://xhamsterlive.com/",
+      "snippet": "Welcome to xHamsterLive! We're a free online community where you can come and watch our amazing amateur models perform live …"
+    },
+    {
+      "title": "Free Live Porn and Hardcore Webcams | xHamsterLive",
+      "url": "https://xhamsterlive.com/couples",
+      "snippet": "Watch Hardcore Shows with Couples, Threesomes, Group Sex and Gangbangs in Official Porn Webcams from xHamster."
+    },
+    {
+      "title": "Sex cams gratuites en direct et chat porno | xHamsterLive",
+      "url": "https://fr.xhamsterlive.com/",
+      "snippet": "xHamsterLive est 100 % gratuit et l’accès est instantané. Parcourez des centaines de profils de femmes, d’hommes, de couples et …"
+    },
+    {
+      "title": "Popular Cam Girls in Free Live Video Chat | xhamsterlive.com",
+      "url": "https://xham.live/girls/popular",
+      "snippet": "Stay Tuned with Your Favorite Cam Girls and Join Their Fan Clubs. xhamsterlive.com is one of the Most Famous Live Streaming …"
+    },
+    {
+      "title": "Recommended Free Live Sex Cams with Naked Girls | xhamsterlive.com",
+      "url": "https://xham.live/girls/recommended",
+      "snippet": "Watch LIVE these hot babes in Recommended sex cams. ️ Enter their naked chat now and enjoy the show for FREE! 🔥"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "iromu/LFM2.5-230M-tools-GGUF",
+  "slug": "iromu-lfm2-5-230m-tools-gguf",
+  "author": "iromu",
+  "url": "https://huggingface.co/iromu/LFM2.5-230M-tools-GGUF",
+  "created_at": "2026-10-20T19:41:50.000Z",
+  "updated_at": "2026-10-20T19:42:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "lfm2",
+    "liquid-ai",
+    "tool-calling",
+    "function-calling",
+    "agents",
+    "en",
+    "dataset:r0b0tlab/qwen3.8-max-glm5.2-kimi-k3-distillation",
+    "base_model:iromu/LFM2.5-230M-tools",
+    "base_model:quantized:iromu/LFM2.5-230M-tools",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 229693184,
+  "parameters_human": "229.7M",
+  "storage_bytes": 1033511680,
+  "storage_human": "1.0 GB",
+  "base_model": "iromu/LFM2.5-230M-tools",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OnlyFans",
+      "url": "https://onlyfans.com/",
+      "snippet": "OnlyFans is the social platform revolutionizing creator and fan connections. The site is inclusive of artists and content creators from …"
+    },
+    {
+      "title": "Start OnlyFans | Join and Earn Today",
+      "url": "https://start.onlyfans.com/",
+      "snippet": "Join OnlyFans to monetize your creativity and connect with fans. Sign up to access features like posts, streams, and messages while …"
+    },
+    {
+      "title": "Privacy policy — OnlyFans",
+      "url": "https://onlyfans.com/privacy/",
+      "snippet": "OnlyFans is the social platform revolutionizing creator and fan connections. The site is inclusive of artists and content creators from …"
+    },
+    {
+      "title": "Creator Center - OnlyFans Blog",
+      "url": "https://blog.onlyfans.com/creator-center/",
+      "snippet": "Explore Creator Center posts on the Official OnlyFans blog. Stay up to date on OnlyFans, learn tips & tricks & be inspired by creator …"
+    },
+    {
+      "title": "All - OnlyFans Blog",
+      "url": "https://blog.onlyfans.com/all/",
+      "snippet": "Explore All 198 posts on the Official OnlyFans blog. Stay up to date on OnlyFans, learn tips & tricks & be inspired by creator stories."
+    }
+  ]
+}

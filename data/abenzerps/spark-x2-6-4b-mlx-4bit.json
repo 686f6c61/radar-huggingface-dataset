@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "abenzerps/Spark-X2.6-4B-MLX-4bit",
+  "slug": "abenzerps-spark-x2-6-4b-mlx-4bit",
+  "author": "abenzerps",
+  "url": "https://huggingface.co/abenzerps/Spark-X2.6-4B-MLX-4bit",
+  "created_at": "2026-10-20T20:23:05.000Z",
+  "updated_at": "2026-10-20T20:25:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "spark2_5",
+    "spark-x2.6",
+    "long-context",
+    "1m-context",
+    "agent",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "base_model:XHToken/Spark-X2.6-4B",
+    "base_model:quantized:XHToken/Spark-X2.6-4B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4112079360,
+  "parameters_human": "4.11B",
+  "storage_bytes": 2315621734,
+  "storage_human": "2.3 GB",
+  "base_model": "XHToken/Spark-X2.6-4B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The North Face - Forum Sport",
+      "url": "https://www.forumsport.com/es-es/marcas/the-north-face-THE%20N-c",
+      "snippet": "Equípate con lo mejor en ropa, calzado y complementos para running, esquí o snow, montaña, natación, camping... Que no se te …"
+    },
+    {
+      "title": "The North Face Vault negro mochilas | Forum Sport",
+      "url": "https://www.forumsport.com/es-es/the-north-face-mochila-deporte-vault-nf0a3vy24h01-1000979143-p",
+      "snippet": "La mochila deporte VAULT The North Face apuesta por una silueta urbana limpia y autoportante, con dos asas superiores …"
+    },
+    {
+      "title": "求教日版北面 the north face 冲锋衣尺码。 日版不会看? - 知乎",
+      "url": "https://www.zhihu.com/question/486722848",
+      "snippet": "Sep 14, 2021 · 北面The North Face有许多的系列，版本，标识。 最早是在美国发售定制，之后日本、韩国也买了版权有自己的生产 …"
+    },
+    {
+      "title": "LocalAI models",
+      "url": "https://localai.io/docs/gallery.html",
+      "snippet": "## Introduction We are introducing Spark-X2.5-4B and Spark-X2.5-1.7B, two compact, general-purpose language models designed to make capable AI more practical, ..."
+    },
+    {
+      "title": "为什么叫the north face而不叫the south face，大概是北面名字起源?",
+      "url": "https://www.zhihu.com/question/430304991",
+      "snippet": "1997年，The North Face®北面采用全新的宣传标语——“探索永不停止”，从此成为品牌最重要的精神口号。 以上转自百度知道，所说 …"
+    }
+  ]
+}

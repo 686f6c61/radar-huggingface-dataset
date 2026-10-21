@@ -5,7 +5,7 @@
   "author": "cleyesode",
   "url": "https://huggingface.co/cleyesode/Qwen3.8-Flash-Next-GSQ-RCO-GGUF-MTP",
   "created_at": "2026-10-17T15:54:49.000Z",
-  "updated_at": "2026-10-19T23:27:06.000Z",
+  "updated_at": "2026-10-21T01:58:41.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -35,7 +35,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 35,
   "trending_score": 0,
   "parameters": 448931056,
   "parameters_human": "448.9M",

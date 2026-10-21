@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "qrvmil/pi0-d0-d1-three-adaptations-20261020",
+  "slug": "qrvmil-pi0-d0-d1-three-adaptations-20261020",
+  "author": "qrvmil",
+  "url": "https://huggingface.co/qrvmil/pi0-d0-d1-three-adaptations-20261020",
+  "created_at": "2026-10-20T13:09:24.000Z",
+  "updated_at": "2026-10-21T02:09:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "openpi",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "openpi",
+    "safetensors",
+    "robotics",
+    "libero",
+    "pi0",
+    "fine-tuning",
+    "reinforcement-learning",
+    "ru",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 176793184000,
+  "storage_human": "176.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}
