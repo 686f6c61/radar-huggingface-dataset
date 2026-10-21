@@ -5,7 +5,7 @@
   "author": "Mapika",
   "url": "https://huggingface.co/Mapika/decider-4b",
   "created_at": "2026-09-22T14:50:07.000Z",
-  "updated_at": "2026-10-12T10:05:15.000Z",
+  "updated_at": "2026-10-20T12:14:16.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -22,6 +22,7 @@
     "multi-task",
     "system-one",
     "one-pass",
+    "vision",
     "text-classification",
     "en",
     "base_model:Qwen/Qwen3.5-4B-Base",
@@ -30,12 +31,12 @@
     "region:us"
   ],
   "likes": 29,
-  "downloads_30d": 29745,
+  "downloads_30d": 29895,
   "trending_score": 10,
   "parameters": 4205751296,
   "parameters_human": "4.21B",
-  "storage_bytes": 25254664525,
-  "storage_human": "25.3 GB",
+  "storage_bytes": 34333284405,
+  "storage_human": "34.3 GB",
   "base_model": "Qwen/Qwen3.5-4B-Base",
   "formats": [
     "safetensors"

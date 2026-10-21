@@ -5,7 +5,7 @@
   "author": "open-athena",
   "url": "https://huggingface.co/open-athena/tinker-qwen3.5-9b-native-opd-step-1-from-sft-400",
   "created_at": "2026-09-18T14:05:10.000Z",
-  "updated_at": "2026-09-18T14:05:52.000Z",
+  "updated_at": "2026-10-20T14:06:35.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 10,
+  "downloads_30d": 9,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

@@ -5,7 +5,7 @@
   "author": "Mapika",
   "url": "https://huggingface.co/Mapika/decider-2b-GGUF",
   "created_at": "2026-09-27T14:29:05.000Z",
-  "updated_at": "2026-09-27T16:15:03.000Z",
+  "updated_at": "2026-10-20T12:14:46.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -30,12 +30,12 @@
     "conversational"
   ],
   "likes": 3,
-  "downloads_30d": 4118,
+  "downloads_30d": 4204,
   "trending_score": 0,
   "parameters": 1881825088,
   "parameters_human": "1.88B",
-  "storage_bytes": 7082108109,
-  "storage_human": "7.1 GB",
+  "storage_bytes": 14144225069,
+  "storage_human": "14.1 GB",
   "base_model": "Mapika/decider-2b",
   "formats": [
     "gguf"

@@ -5,7 +5,7 @@
   "author": "open-athena",
   "url": "https://huggingface.co/open-athena/Snowball-67B-A2B-Math-RL-E1-ctx8k-p8-Step5",
   "created_at": "2026-09-20T11:23:42.000Z",
-  "updated_at": "2026-09-20T11:27:58.000Z",
+  "updated_at": "2026-10-20T14:04:42.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "reinforcement-learning",
@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 20,
+  "downloads_30d": 9,
   "trending_score": 0,
   "parameters": 67078876160,
   "parameters_human": "67.08B",

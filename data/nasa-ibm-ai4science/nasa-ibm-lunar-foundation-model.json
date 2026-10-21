@@ -28,6 +28,7 @@
     "dataset:nasa-ibm-ai4science/Sombench-pretraining-data",
     "arxiv:2504.11171",
     "arxiv:2609.13283",
+    "doi:10.57967/hf/11094",
     "license:apache-2.0",
     "region:us"
   ],

@@ -5,7 +5,7 @@
   "author": "selorahomes",
   "url": "https://huggingface.co/selorahomes/Selora-AI-LLM-14B-ollama",
   "created_at": "2026-09-29T17:38:36.000Z",
-  "updated_at": "2026-10-16T22:18:19.000Z",
+  "updated_at": "2026-10-21T01:01:22.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -35,8 +35,8 @@
   "trending_score": 0,
   "parameters": 14768307200,
   "parameters_human": "14.77B",
-  "storage_bytes": 51319472608,
-  "storage_human": "51.3 GB",
+  "storage_bytes": 61583367168,
+  "storage_human": "61.6 GB",
   "base_model": "Qwen/Qwen3-14B",
   "formats": [
     "gguf"

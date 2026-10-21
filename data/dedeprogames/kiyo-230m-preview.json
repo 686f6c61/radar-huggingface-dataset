@@ -5,7 +5,7 @@
   "author": "DedeProGames",
   "url": "https://huggingface.co/DedeProGames/Kiyo-230M-Preview",
   "created_at": "2026-09-04T15:50:45.000Z",
-  "updated_at": "2026-09-07T15:01:34.000Z",
+  "updated_at": "2026-10-20T22:55:02.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -37,12 +37,12 @@
     "region:us"
   ],
   "likes": 6,
-  "downloads_30d": 355,
+  "downloads_30d": 351,
   "trending_score": 0,
   "parameters": 229688064,
   "parameters_human": "229.7M",
-  "storage_bytes": 459408768,
-  "storage_human": "459 MB",
+  "storage_bytes": 460907199,
+  "storage_human": "461 MB",
   "base_model": "HuggingFaceTB/SmolLM2-135M",
   "formats": [
     "safetensors"

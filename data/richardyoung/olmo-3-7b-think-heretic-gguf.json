@@ -5,7 +5,7 @@
   "author": "richardyoung",
   "url": "https://huggingface.co/richardyoung/Olmo-3-7B-Think-heretic-GGUF",
   "created_at": "2026-09-29T02:07:38.000Z",
-  "updated_at": "2026-10-15T16:22:24.000Z",
+  "updated_at": "2026-10-20T16:30:01.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -30,7 +30,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 723,
+  "downloads_30d": 725,
   "trending_score": 0,
   "parameters": 7298011136,
   "parameters_human": "7.30B",

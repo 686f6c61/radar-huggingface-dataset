@@ -5,7 +5,7 @@
   "author": "harikc456",
   "url": "https://huggingface.co/harikc456/gemma-4-E4B-it-el-cy",
   "created_at": "2026-09-21T11:34:41.000Z",
-  "updated_at": "2026-10-16T08:16:33.000Z",
+  "updated_at": "2026-10-20T08:31:58.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 235160117,
-  "storage_human": "235 MB",
+  "storage_bytes": 285907701,
+  "storage_human": "286 MB",
   "base_model": "unsloth/gemma-4-e2b-it-unsloth-bnb-4bit",
   "formats": [
     "safetensors"

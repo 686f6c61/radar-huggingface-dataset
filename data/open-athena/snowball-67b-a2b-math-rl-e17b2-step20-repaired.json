@@ -5,7 +5,7 @@
   "author": "open-athena",
   "url": "https://huggingface.co/open-athena/Snowball-67B-A2B-Math-RL-E17b2-Step20-Repaired",
   "created_at": "2026-09-20T11:23:47.000Z",
-  "updated_at": "2026-09-20T12:00:35.000Z",
+  "updated_at": "2026-10-20T14:05:00.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "reinforcement-learning",
@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 23,
+  "downloads_30d": 14,
   "trending_score": 0,
   "parameters": 67078876160,
   "parameters_human": "67.08B",
