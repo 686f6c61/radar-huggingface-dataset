@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "TenStrip/MOSSkr2",
+  "slug": "tenstrip-mosskr2",
+  "author": "TenStrip",
+  "url": "https://huggingface.co/TenStrip/MOSSkr2",
+  "created_at": "2026-10-19T20:45:17.000Z",
+  "updated_at": "2026-10-20T01:39:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "base_model:OpenMOSS-Team/MOSS-Image-SFT",
+    "base_model:finetune:OpenMOSS-Team/MOSS-Image-SFT",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 12,
+  "downloads_30d": 342,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15812192916,
+  "storage_human": "15.8 GB",
+  "base_model": "OpenMOSS-Team/MOSS-Image-SFT",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TenStrip - Hugging Face",
+      "url": "https://huggingface.co/TenStrip",
+      "snippet": "updated a model 1 day ago TenStrip/MOSSkr2 · new activity 1 day ago TenStrip/10Eros-Max:ComfyUI-Ref2VA-VSA Support · published a model 2 days ago TenStrip/MOSSkr2 View all activity · Updated 1 day ago • 342 • 12 · Image-Text-to-Video • Updated 8 days ago • 849 ·"
+    },
+    {
+      "title": "TenStrip/MOSSkr2 · Hugging Face",
+      "url": "https://huggingface.co/TenStrip/MOSSkr2",
+      "snippet": "This is an attn Q + K and MLP gate up groom using Krea2 on MOSS sft. It does not add data or weights and it doesn't make the model output like Krea2. It changes behavior in attention influenced by Krea2's attention like the other grafts."
+    },
+    {
+      "title": "TenStrip - Hugging Face",
+      "url": "https://huggingface.co/TenStrip/activity/all",
+      "snippet": "AI & ML interests. None yet. Recent Activity. updated a model in about 2 ... TenStrip/MOSSkr2. Updated in about 2 hours • 49 • 9. New activity in TenStrip ..."
+    },
+    {
+      "title": "Models compatible with the Diffusion Single File library",
+      "url": "https://huggingface.co/models?library=diffusion-single-file",
+      "snippet": "akatz-ai/MiniMax-H3-Character-Swap-LoRA. Video-to-Video • Updated 3 days ... TenStrip/MOSSkr2. Updated about 22 hours ago • 342 • 11 · toxicdog/MOSS-Image ..."
+    },
+    {
+      "title": "WAS/Krea2_MOSS_graft_lora · Hugging Face",
+      "url": "https://huggingface.co/WAS/Krea2_MOSS_graft_lora",
+      "snippet": "TenStrip's MOSSkr2 graft (Krea 2 attention and MLP weights grafted into MOSS-Image SFT) as LoRA and patch files. They load onto any MOSS-Image SFT file, int8 included, in place of the 10.2 GB MOSSkr2 checkpoint."
+    }
+  ]
+}

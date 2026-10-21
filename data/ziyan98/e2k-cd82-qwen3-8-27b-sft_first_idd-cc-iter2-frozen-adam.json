@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "ziyan98/E2K-cd82-Qwen3.8-27B-sft_first_idd-cc-iter2-frozen-adam",
+  "slug": "ziyan98-e2k-cd82-qwen3-8-27b-sft_first_idd-cc-iter2-frozen-adam",
+  "author": "ziyan98",
+  "url": "https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-sft_first_idd-cc-iter2-frozen-adam",
+  "created_at": "2026-10-21T01:51:14.000Z",
+  "updated_at": "2026-10-21T06:37:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "experience-to-knowledge",
+    "arc-agi-3",
+    "reinforcement-learning",
+    "dr-grpo",
+    "knowledge-internalization",
+    "qwen3.8",
+    "slime",
+    "megatron-lm",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55575919087,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GIPHY - Be Animated",
+      "url": "https://giphy.com/",
+      "snippet": "GIPHY is the platform that animates your world. Find the GIFs, Clips, and Stickers that make your conversations more positive, more …"
+    },
+    {
+      "title": "Discord GIFs - Find & Share on GIPHY",
+      "url": "https://giphy.com/explore/discord",
+      "snippet": "GIPHY animates your world. Find Discord GIFs that make your conversations more positive, more expressive, and more you."
+    },
+    {
+      "title": "GIPHY",
+      "url": "https://support.giphy.com/hc/en-us",
+      "snippet": "Featured Help Topics About GIPHY Your GIPHY Account Making GIFs, Stickers, Text, Filters and Games GIPHY For Brands and …"
+    },
+    {
+      "title": "About GIPHY",
+      "url": "https://support.giphy.com/hc/en-us/sections/360002879511-About-GIPHY",
+      "snippet": "GIPHY About GIPHY About GIPHY GIPHY is the best way to search, share, discover and create GIFs on the Internet. The content …"
+    },
+    {
+      "title": "GIPHY Gif Search",
+      "url": "https://outlook-v3.giphy.com/",
+      "snippet": "Search and share GIFs effortlessly with GIPHY, the ultimate platform for finding animated content to express yourself."
+    }
+  ]
+}

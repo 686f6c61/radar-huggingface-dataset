@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/gemma-4-E4B-it-The-DECKARD-V2-Strong-HERETIC-UNCENSORED-Thinking-bf16-i1-GGUF",
+  "slug": "mradermacher-gemma-4-e4b-it-the-deckard-v2-strong-heretic-uncensored-thinking-bf16-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/gemma-4-E4B-it-The-DECKARD-V2-Strong-HERETIC-UNCENSORED-Thinking-bf16-i1-GGUF",
+  "created_at": "2026-10-21T16:00:26.000Z",
+  "updated_at": "2026-10-21T17:42:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "nightmedia",
+    "gemma4",
+    "gemma",
+    "google",
+    "bf16",
+    "mlx",
+    "en",
+    "base_model:nightmedia/gemma-4-E4B-it-The-DECKARD-V2-Strong-HERETIC-UNCENSORED-Thinking-bf16",
+    "base_model:quantized:nightmedia/gemma-4-E4B-it-The-DECKARD-V2-Strong-HERETIC-UNCENSORED-Thinking-bf16",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7518069290,
+  "parameters_human": "7.52B",
+  "storage_bytes": 77413697568,
+  "storage_human": "77.4 GB",
+  "base_model": "nightmedia/gemma-4-E4B-it-The-DECKARD-V2-Strong-HERETIC-UNCENSORED-Thinking-bf16",
+  "formats": [
+    "gguf",
+    "mlx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AbsoluPorn - Videos porno en streaming - Films xxx - Sexe en ligne …",
+      "url": "http://www.absoluporn.com/",
+      "snippet": "Videos porno en streaming - Films xxx - Sexe en ligne gratuit - Les meilleurs video x du net - Des tonnes de films porno en streaming …"
+    },
+    {
+      "title": "Absoluporn.com - Vidéos les plus vues Videos sexe xxx films porno …",
+      "url": "http://m.absoluporn.com/fr/wall-main-1.html",
+      "snippet": "CONTENU RESERVE AUX ADULTES Le contenu de ce site ne conviens pas a un public mineur. Les photos, vidéos, et textes …"
+    },
+    {
+      "title": "AbsoluPorn - Videos les plus récentes - Videos sexe xxx films porno …",
+      "url": "http://www.absoluporn.com/fr/wall-date-1.html",
+      "snippet": "Videos les plus récentes - Videos sexe xxx films porno en streaming - Les meilleurs video x du net - Des tonnes de films porno en …"
+    },
+    {
+      "title": "Absoluporn.com - Vidéos HD haute définition Français Videos sexe …",
+      "url": "http://m.absoluporn.com/fr/wall-hd-1_french.html",
+      "snippet": "CONTENU RESERVE AUX ADULTES Le contenu de ce site ne conviens pas a un public mineur. Les photos, vidéos, et textes …"
+    },
+    {
+      "title": "Absolustreaming.com - Videos x haute definition en streaming",
+      "url": "http://www.absolustreaming.com/index.php",
+      "snippet": "Absolustreaming.com - Videos x haute definition en streaming Top catégories Actrices porno Amateur Anal Asiatiques Blacks …"
+    }
+  ]
+}

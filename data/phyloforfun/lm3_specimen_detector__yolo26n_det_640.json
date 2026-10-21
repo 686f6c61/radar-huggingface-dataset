@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "phyloforfun/lm3_specimen_detector__yolo26n_det_640",
+  "slug": "phyloforfun-lm3_specimen_detector__yolo26n_det_640",
+  "author": "phyloforfun",
+  "url": "https://huggingface.co/phyloforfun/lm3_specimen_detector__yolo26n_det_640",
+  "created_at": "2026-10-21T17:01:49.000Z",
+  "updated_at": "2026-10-21T17:01:51.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "coreml",
+    "onnx",
+    "openvino",
+    "leafmachine3",
+    "yolo26",
+    "herbarium",
+    "object-detection",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 43195029,
+  "storage_human": "43 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cameroun : meilleurs brokers d’indices synthétiques",
+      "url": "https://syntxwiki.com/fr/best-synthetic-indices-brokers/cameroon/",
+      "snippet": "Sep 25, 2026 · Vous cherchez un courtier en indices synthétiques au Cameroun ? Ce guide compare les courtiers acceptant des …Read more"
+    },
+    {
+      "title": "Best Online Brokers in Cameroon | for 2026",
+      "url": "https://comparebrokers.org/country/Cameroon",
+      "snippet": "1 day ago · This guide to the best online brokers in Cameroon has been updated for 2026 by industry experts with years of financial …"
+    },
+    {
+      "title": "Best Forex Traders In Cameroon (2026)",
+      "url": "https://tradersunion.com/interesting-articles/richest-forex-traders-trading-secrets-life-stories/in-cameroon/",
+      "snippet": "5 days ago · Discover the top Forex traders in, their strategies, success stories, and how they navigate the local and global trading …"
+    },
+    {
+      "title": "Best Trading Platforms in Cameroon for 2026 - BrokerChooser",
+      "url": "https://brokerchooser.com/best-brokers/best-trading-platform-in-cameroon",
+      "snippet": "Sep 28, 2026 · Trade with the best trading platforms in Cameroon in 2026. We tested 100+ brokers with real trades and ranked the …"
+    },
+    {
+      "title": "Meilleures plateformes de trading au Cameroun pour 2026",
+      "url": "https://brokerchooser.com/fr/best-brokers/best-trading-platform-in-cameroon",
+      "snippet": "1 day ago · Tradez avec les meilleures plateformes de trading au Cameroun en 2026. Nous avons testé plus de 100 courtiers avec …"
+    }
+  ]
+}

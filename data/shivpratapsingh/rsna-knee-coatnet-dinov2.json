@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "shivpratapsingh/rsna-knee-coatnet-dinov2",
+  "slug": "shivpratapsingh-rsna-knee-coatnet-dinov2",
+  "author": "shivpratapsingh",
+  "url": "https://huggingface.co/shivpratapsingh/rsna-knee-coatnet-dinov2",
+  "created_at": "2026-10-21T17:18:52.000Z",
+  "updated_at": "2026-10-21T17:41:52.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "medical-imaging",
+    "mri",
+    "knee",
+    "multiple-instance-learning",
+    "kaggle",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6329107126,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Board Game Arena - Play board games online for free!",
+      "url": "https://en.boardgamearena.com/",
+      "snippet": "The world's largest online board gaming community. 1000+ games available directly in your browser."
+    },
+    {
+      "title": "Board Game Arena - ボードゲームを無料でオンラインプレイ!",
+      "url": "https://ja.boardgamearena.com/",
+      "snippet": "«BGA has digital board games you won't find anywhere else.» Dave Neumann - Jan 2016 今すぐボードゲームアリーナに参加しよう!"
+    },
+    {
+      "title": "Board Game Arena: ¡Juega gratis a juegos de mesa en línea!",
+      "url": "https://es.boardgamearena.com/",
+      "snippet": "La comunidad de juegos de mesa en línea más grande del mundo. Más de 1000 juegos disponibles directamente en tu navegador."
+    },
+    {
+      "title": "Board Game Arena - 免费在线玩桌游！ • Board Game Arena",
+      "url": "https://zh-cn.boardgamearena.com/",
+      "snippet": "加入全世界 最大的桌游平台. BGA是世界上最大的线上桌游服务器。 超过 11 百万对手1 412在这款著名棋盘游戏上等待挑战。 快来玩 …"
+    },
+    {
+      "title": "Board Game Arena – Jouez à des jeux de société en ligne gratuitement",
+      "url": "https://fr.boardgamearena.com/",
+      "snippet": "La plus grande communauté de jeux de société en ligne au monde. Plus de 1000 jeux disponibles directement depuis votre navigateur."
+    }
+  ]
+}

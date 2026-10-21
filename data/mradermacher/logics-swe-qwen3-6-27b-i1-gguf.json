@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Logics-SWE-Qwen3.6-27B-i1-GGUF",
+  "slug": "mradermacher-logics-swe-qwen3-6-27b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Logics-SWE-Qwen3.6-27B-i1-GGUF",
+  "created_at": "2026-10-21T15:48:36.000Z",
+  "updated_at": "2026-10-21T19:29:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "code",
+    "software-engineering",
+    "on-policy-distillation",
+    "reinforcement-learning",
+    "agentic-post-training",
+    "en",
+    "dataset:Logics-MLLM/Logics-SWE-Env-2.5K",
+    "base_model:Logics-MLLM/Logics-SWE-Qwen3.6-27B",
+    "base_model:quantized:Logics-MLLM/Logics-SWE-Qwen3.6-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 300342503552,
+  "storage_human": "300.3 GB",
+  "base_model": "Logics-MLLM/Logics-SWE-Qwen3.6-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "African • Ebony • AfroSex",
+      "url": "https://afrosex.com/en/categories/african/",
+      "snippet": "Porn videos. Ebony / African - 34,293 videos. african granny, hijab, black maid, forest, african pov and much more.Read more"
+    },
+    {
+      "title": "African porn featuring sexy ebony ladies in explicit any xxx action ...",
+      "url": "https://africanporn.tv/categories/",
+      "snippet": "👧🏿 African Porn Categories offer an exciting selection of naughty videos and erotic clips featuring the hottest ebony babes from all over …"
+    },
+    {
+      "title": "African Homemade Sex Videos - Real Black Babes from Africa",
+      "url": "https://mylust.com/categories/african/",
+      "snippet": "Gorgeous black chicks from Africa flaunt thick curves with huge black butts and thick thighs. Jerk off to authentic ebony sex straight …"
+    },
+    {
+      "title": "Discover the best african porn black and ebony porn videos ...",
+      "url": "https://africanporn.tv/",
+      "snippet": "👧🏿 Find the best african porn videos and don’t miss a chance to see perfect ebony girls where horny sluts do everything to achieve …"
+    },
+    {
+      "title": "Free African Porn | PornKai.com",
+      "url": "https://pornkai.com/videos?q=African",
+      "snippet": "African Porn Videos: WATCH FREE here!"
+    }
+  ]
+}

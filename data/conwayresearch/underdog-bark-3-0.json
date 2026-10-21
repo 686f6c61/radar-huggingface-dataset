@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "ConwayResearch/Underdog-Bark-3.0",
+  "slug": "conwayresearch-underdog-bark-3-0",
+  "author": "ConwayResearch",
+  "url": "https://huggingface.co/ConwayResearch/Underdog-Bark-3.0",
+  "created_at": "2026-10-15T07:29:08.000Z",
+  "updated_at": "2026-10-15T07:29:11.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "coreml",
+    "underdog",
+    "speech-to-text",
+    "asr",
+    "stt",
+    "low-bit",
+    "on-device",
+    "mlx",
+    "apple-silicon",
+    "parakeet",
+    "automatic-speech-recognition",
+    "en",
+    "base_model:nvidia/parakeet-tdt-0.6b-v3",
+    "base_model:finetune:nvidia/parakeet-tdt-0.6b-v3",
+    "license:cc-by-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 14,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 555619281,
+  "storage_human": "556 MB",
+  "base_model": "nvidia/parakeet-tdt-0.6b-v3",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Escort Fréjus : 40 annonces, avis et photos | Rebiu",
+      "url": "https://rebiu.com/fr/escorts/frejus",
+      "snippet": "40 escortes à Fréjus réunies depuis les principales plateformes, dont 29 avec avis clients. Scores de confiance, carte et contact direct."
+    },
+    {
+      "title": "Libertines Annonces Fréjus, Libertines girl en Fréjus rencontre (s ...",
+      "url": "https://www.meslibertines.com/escorts/frejus/",
+      "snippet": "Trouvez vous les plus belles Libertines en Fréjus, sur MesLibertines.com."
+    },
+    {
+      "title": "Escort Fréjus: 47 listings, reviews & photos | Rebiu",
+      "url": "https://rebiu.com/escorts/frejus",
+      "snippet": "47 escorts in Fréjus from the main platforms, 36 with client reviews. Trust scores, map and direct contact."
+    },
+    {
+      "title": "Escort Girl Fréjus : profils vérifiés avec photos | EscortE",
+      "url": "https://m.escorte.com/escorts/girls/frejus/",
+      "snippet": "Découvrez nos escort girls à Fréjus : profils féminins vérifiés, photos récentes et avis. Rencontres discrètes près de chez vous."
+    },
+    {
+      "title": "Escort Fréjus (83) - Annonces dans la ville | SoloPrive",
+      "url": "https://www.soloprive.com/fr/ads/escort/var-province/frejus",
+      "snippet": "Tous les profils escort sur SoloPrive sont vérifiés avec photos authentiques. Contact direct via WhatsApp ou téléphone pour …"
+    }
+  ]
+}

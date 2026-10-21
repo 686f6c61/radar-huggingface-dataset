@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Arabic-STT/qwen3-asr-1.7b-ar-run6b-soup70-sip-v8",
+  "slug": "arabic-stt-qwen3-asr-1-7b-ar-run6b-soup70-sip-v8",
+  "author": "Arabic-STT",
+  "url": "https://huggingface.co/Arabic-STT/qwen3-asr-1.7b-ar-run6b-soup70-sip-v8",
+  "created_at": "2026-10-21T16:50:31.000Z",
+  "updated_at": "2026-10-21T16:58:41.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_asr",
+    "automatic-speech-recognition",
+    "qwen3-asr",
+    "arabic",
+    "call-center",
+    "ar",
+    "en",
+    "base_model:Qwen/Qwen3-ASR-1.7B",
+    "base_model:finetune:Qwen/Qwen3-ASR-1.7B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2038052480,
+  "parameters_human": "2.04B",
+  "storage_bytes": 4227141589,
+  "storage_human": "4.2 GB",
+  "base_model": "Qwen/Qwen3-ASR-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Arabic Keyboard ™ لوحة المفاتيح العربية",
+      "url": "https://arabic-keyboard.org/",
+      "snippet": "This online tools is provided to write and search in arabic for Arab travelers or western users who do not have arabic keyboard. how …"
+    },
+    {
+      "title": "Arabic - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Arabic",
+      "snippet": "Arabic usually refers to Standard Arabic, which Western linguists divide into Classical Arabic and Modern Standard Arabic. [62] It …"
+    },
+    {
+      "title": "Clavier Arabe 3000 ™ أسرع وأجدد لوحة للكتابة بالعربية",
+      "url": "https://www.clavier-arab.org/",
+      "snippet": "Language: Clavier arabe | Arabic keyboard | Arabische Tastatur | Tastiera araba | Teclado arabe"
+    },
+    {
+      "title": "Learning Arabic | تعلم العربية",
+      "url": "https://learning.aljazeera.net/en",
+      "snippet": "Al-Jazeera Learning Arabic site is a free open educational source that presents the Arabic language in an easy interactive way that …"
+    },
+    {
+      "title": "Arabic Keyboard Online • Lexilogos",
+      "url": "https://www.lexilogos.com/keyboard/arabic.htm",
+      "snippet": "Special characters: ... Type =a, =i, =u to add a short vowel mark; type ==a, ==i, ==u to add a tanwīn Type =w to add a šadda Type …"
+    }
+  ]
+}

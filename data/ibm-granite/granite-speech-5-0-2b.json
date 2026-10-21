@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "ibm-granite/granite-speech-5.0-2b",
+  "slug": "ibm-granite-granite-speech-5-0-2b",
+  "author": "ibm-granite",
+  "url": "https://huggingface.co/ibm-granite/granite-speech-5.0-2b",
+  "created_at": "2026-10-07T16:10:49.000Z",
+  "updated_at": "2026-10-21T14:27:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "multilingual",
+    "en",
+    "fr",
+    "de",
+    "es",
+    "pt",
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "granite_speech",
+    "automatic-speech-recognition",
+    "multilingual",
+    "en",
+    "fr",
+    "de",
+    "es",
+    "pt",
+    "ja",
+    "arxiv:2310.02943",
+    "arxiv:2505.08699",
+    "arxiv:2603.11243",
+    "arxiv:2604.12398",
+    "arxiv:2604.22817",
+    "arxiv:2604.11269",
+    "arxiv:2603.08397",
+    "base_model:ibm-granite/granite-4.0-1b-base",
+    "base_model:finetune:ibm-granite/granite-4.0-1b-base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 18,
+  "downloads_30d": 105,
+  "trending_score": 0,
+  "parameters": 2313207132,
+  "parameters_human": "2.31B",
+  "storage_bytes": 5040638604,
+  "storage_human": "5.0 GB",
+  "base_model": "ibm-granite/granite-4.0-1b-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IBM",
+      "url": "https://www.ibm.com/",
+      "snippet": "For more than a century, IBM has been a global technology innovator, leading advances in AI, automation and hybrid cloud solutions …"
+    },
+    {
+      "title": "IBM - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/IBM",
+      "snippet": "IBM was founded in 1911 as the Computing-Tabulating-Recording Company (CTR), a holding company of manufacturers of record …"
+    },
+    {
+      "title": "IBM",
+      "url": "https://www.ibm.com/fr-fr",
+      "snippet": "Innovateur technologique mondial depuis plus d’un siècle, IBM est à la pointe d’avancées en matière de solutions d’IA, …"
+    },
+    {
+      "title": "IBM — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/IBM",
+      "snippet": "Les relations commerciales entre IBM et le régime hitlérien se sont poursuivies sans interruption face aux vastes appels …"
+    },
+    {
+      "title": "IBM",
+      "url": "https://wwwpoc.ibm.com/us-en/",
+      "snippet": ""
+    }
+  ]
+}

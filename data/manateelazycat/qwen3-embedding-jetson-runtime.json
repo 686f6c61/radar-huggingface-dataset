@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "manateelazycat/Qwen3-Embedding-Jetson-Runtime",
+  "slug": "manateelazycat-qwen3-embedding-jetson-runtime",
+  "author": "manateelazycat",
+  "url": "https://huggingface.co/manateelazycat/Qwen3-Embedding-Jetson-Runtime",
+  "created_at": "2026-10-21T17:27:18.000Z",
+  "updated_at": "2026-10-21T17:28:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "jetson",
+    "text-embeddings",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6729924096,
+  "storage_human": "6.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Register your trademark with TramaTM",
+      "url": "https://www.tramatm.com/",
+      "snippet": "TramaTM | Protect your brand. Register your trademark. Free verification. Simple online process. Transparent price. Money back …"
+    },
+    {
+      "title": "About us - TramaTM",
+      "url": "https://www.tramatm.com/about-us",
+      "snippet": "TramaTM. LawTech pioneers, entrepreneurs and developers. Working together to enable you to register your trademark quickly and …"
+    },
+    {
+      "title": "trama Reviews | Read Customer Service Reviews of tramatm.com",
+      "url": "https://www.trustpilot.com/review/tramatm.com",
+      "snippet": "First time using tramatm and extremely happy. They dealt with an infringement of my EU Trademark. Jan explained the process very …"
+    },
+    {
+      "title": "TramaTM Reviews in 2026 - SourceForge",
+      "url": "https://sourceforge.net/software/product/TramaTM/",
+      "snippet": "TramaTM is an online legal service focused on simplifying trademark registration and brand protection globally. The platform begins …"
+    },
+    {
+      "title": "Trademark check - TramaTM",
+      "url": "https://www.tramatm.com/verification",
+      "snippet": "First step towards trademark registration and effective brand protection"
+    }
+  ]
+}

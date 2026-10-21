@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "mangocloud/pi05-libero-90-k4-vlm-lora",
+  "slug": "mangocloud-pi05-libero-90-k4-vlm-lora",
+  "author": "mangocloud",
+  "url": "https://huggingface.co/mangocloud/pi05-libero-90-k4-vlm-lora",
+  "created_at": "2026-10-21T01:32:54.000Z",
+  "updated_at": "2026-10-21T01:35:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27663736768,
+  "storage_human": "27.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

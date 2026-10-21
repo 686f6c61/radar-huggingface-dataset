@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "PoyuDkuo/text-image-retrieval76",
+  "slug": "poyudkuo-text-image-retrieval76",
+  "author": "PoyuDkuo",
+  "url": "https://huggingface.co/PoyuDkuo/text-image-retrieval76",
+  "created_at": "2026-10-21T16:54:11.000Z",
+  "updated_at": "2026-10-21T16:54:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "text-image-retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66776,
+  "storage_human": "66776 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

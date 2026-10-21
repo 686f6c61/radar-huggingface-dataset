@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "audio-cpp/Ming-3.0-Audio-Tiny-GGUF",
+  "slug": "audio-cpp-ming-3-0-audio-tiny-gguf",
+  "author": "audio-cpp",
+  "url": "https://huggingface.co/audio-cpp/Ming-3.0-Audio-Tiny-GGUF",
+  "created_at": "2026-10-21T17:19:16.000Z",
+  "updated_at": "2026-10-21T17:36:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "audio.cpp",
+    "automatic-speech-recognition",
+    "text-to-speech",
+    "zh",
+    "en",
+    "base_model:inclusionAI/Ming-3.0-audio-tiny",
+    "base_model:quantized:inclusionAI/Ming-3.0-audio-tiny",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 43810629930,
+  "storage_human": "43.8 GB",
+  "base_model": "inclusionAI/Ming-3.0-audio-tiny",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Audiofanzine : Home Studio, MAO, Guitares, Basses, Sono et DJ",
+      "url": "https://fr.audiofanzine.com/",
+      "snippet": "Audiofanzine est une plateforme en ligne dédiée à la musique et à l’audio, à la fois média spécialisé, site de petites annonces, base …"
+    },
+    {
+      "title": "audio.com - a better way to upload and share audio online",
+      "url": "https://audio.com/",
+      "snippet": "audio.com is a free audio-sharing platform designed to empower audio creatives and musicians"
+    },
+    {
+      "title": "Produits Hi-Fi Audio Électroniques et DIY - Audiophonics",
+      "url": "https://www.audiophonics.fr/fr/",
+      "snippet": "Audiophonics est une société spécialisée dans la distribution de produits et appareils HiFi, audio et Do It Yourself sur internet. Des …"
+    },
+    {
+      "title": "Audilab / Audioprothésiste Cahors - Centre auditif audioprothésiste et ...",
+      "url": "https://www.audilab.fr/centre/audioprothesiste-cahors/",
+      "snippet": "À Cahors, Audilab vous accueille pour un bilan auditif gratuit(1) et un essai d’aides auditives(2): Écoute, confort et accompagnement …"
+    },
+    {
+      "title": "Son-Vidéo.com, leader français en hi-fi et home-cinéma",
+      "url": "https://www.son-video.com/",
+      "snippet": "Places offertes pour le Paris Audio Video Show ! 24-25 octobre au Palais des Congrès"
+    }
+  ]
+}

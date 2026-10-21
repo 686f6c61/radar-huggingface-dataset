@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "cpral/basal-2.0-max-W8A8-INT8",
+  "slug": "cpral-basal-2-0-max-w8a8-int8",
+  "author": "cpral",
+  "url": "https://huggingface.co/cpral/basal-2.0-max-W8A8-INT8",
+  "created_at": "2026-10-21T16:54:36.000Z",
+  "updated_at": "2026-10-21T17:03:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "base_model:Remek/basal-2.0-max",
+    "base_model:quantized:Remek/basal-2.0-max",
+    "license:apache-2.0",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11167748096,
+  "parameters_human": "11.17B",
+  "storage_bytes": 11434699664,
+  "storage_human": "11.4 GB",
+  "base_model": "Remek/basal-2.0-max",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "PGR-RVC/The_Idolmaster_RVCv2",
+  "slug": "pgr-rvc-the_idolmaster_rvcv2",
+  "author": "PGR-RVC",
+  "url": "https://huggingface.co/PGR-RVC/The_Idolmaster_RVCv2",
+  "created_at": "2026-10-21T16:48:16.000Z",
+  "updated_at": "2026-10-21T16:52:39.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 180072890,
+  "storage_human": "180 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KUROGAME - Punishing: Gray Raven",
+      "url": "https://pgr.kurogame.net/",
+      "snippet": "Punishing: Gray Raven is a 3D post-apocalyptic and sci-fi action RPG.As a commandant of the Gray Raven unit, you will be …"
+    },
+    {
+      "title": "GRAY RAVENS - GRAY RAVENS",
+      "url": "https://grayravens.com/wiki/GRAY_RAVENS",
+      "snippet": "Punishing: Gray Raven (战双帕弥什) or simply PGR is a 3D post-apocalyptic and sci-fi action RPG developed and published by Kuro …"
+    },
+    {
+      "title": "Punishing: Gray Raven - pgr.kurogame.net",
+      "url": "https://pgr.kurogame.net/?is_retargeting=true&source_caller=ui&shortlink=khmoypr9&c=gacha+gamer&pid=KOL&af_xp=app",
+      "snippet": "Punishing: Gray Raven is a 3D post-apocalyptic and sci-fi action RPG.As a commandant of the Gray Raven unit, you will be …"
+    },
+    {
+      "title": "Renault",
+      "url": "https://rvp.renault.fr/",
+      "snippet": "Chargement en cours, veuillez patienter."
+    },
+    {
+      "title": "Characters - GRAY RAVENS",
+      "url": "https://grayravens.com/wiki/Characters",
+      "snippet": "A list of all playable characters in Punishing: Gray Raven."
+    }
+  ]
+}

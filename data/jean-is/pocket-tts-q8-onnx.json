@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "jean-is/pocket-tts-q8-ONNX",
+  "slug": "jean-is-pocket-tts-q8-onnx",
+  "author": "jean-is",
+  "url": "https://huggingface.co/jean-is/pocket-tts-q8-ONNX",
+  "created_at": "2026-10-21T17:23:03.000Z",
+  "updated_at": "2026-10-21T17:23:38.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "onnx",
+  "languages": [
+    "en",
+    "de",
+    "fr",
+    "es",
+    "it",
+    "pt"
+  ],
+  "tags": [
+    "onnx",
+    "pocket-tts",
+    "onnxruntime-web",
+    "text-to-speech",
+    "en",
+    "de",
+    "fr",
+    "es",
+    "it",
+    "pt",
+    "base_model:kyutai/pocket-tts",
+    "base_model:finetune:kyutai/pocket-tts",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 590823342,
+  "storage_human": "591 MB",
+  "base_model": "kyutai/pocket-tts",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jeans pour femme | ZARA France",
+      "url": "https://www.zara.com/fr/fr/femme-jeans-l1119.html",
+      "snippet": "Comment choisir le bon jean pour sa morphologie ? L'identification du jean femme idéal se concentre sur l'équilibre entre la …"
+    },
+    {
+      "title": "Jeans en ligne | ZALANDO",
+      "url": "https://www.zalando.fr/jeans/",
+      "snippet": "Né au XIXe siècle comme vêtement de travail grâce à sa toile denim particulièrement résistante, le jean est l’une des pièces …"
+    },
+    {
+      "title": "Jean, Denim & Vêtements | Levi's® FR",
+      "url": "https://www.levi.com/FR/fr_FR/?msockid=1e6a024ec46a677235ee15b7c5ed6655",
+      "snippet": "Le jean Cinch Flare Une jambe évasée comme il faut et des pattes d’ajustement dans le dos pour un ajustement sur mesure."
+    },
+    {
+      "title": "Pantalon en jeans — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Pantalon_en_jeans",
+      "snippet": "Le jean s'impose comme un bien de très grande consommation. Le marché se développe de façon exponentielle jusqu'au début des …"
+    },
+    {
+      "title": "Jean Femme – Tendances Mode à Petits Prix - Kiabi",
+      "url": "https://www.kiabi.com/jean-femme_201556?msockid=1e6a024ec46a677235ee15b7c5ed6655",
+      "snippet": "Le jean pour femme joue la carte de la simplicité, mais aussi celle de l’audace dans ses styles : déchiré à plusieurs endroits pour se …"
+    }
+  ]
+}

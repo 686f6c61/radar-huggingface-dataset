@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "SoloCode/distilbert-sst2-fp16-quantization",
+  "slug": "solocode-distilbert-sst2-fp16-quantization",
+  "author": "SoloCode",
+  "url": "https://huggingface.co/SoloCode/distilbert-sst2-fp16-quantization",
+  "created_at": "2026-10-21T17:00:01.000Z",
+  "updated_at": "2026-10-21T17:00:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "sst2",
+    "fp16",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 133922428,
+  "storage_human": "134 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

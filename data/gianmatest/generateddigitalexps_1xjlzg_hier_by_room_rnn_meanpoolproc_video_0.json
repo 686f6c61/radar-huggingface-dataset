@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "gianmaTest/generatedDigitalExps_1xJLZG_hier_by_room_rnn_meanPoolProc_video_0",
+  "slug": "gianmatest-generateddigitalexps_1xjlzg_hier_by_room_rnn_meanpoolproc_video_0",
+  "author": "gianmaTest",
+  "url": "https://huggingface.co/gianmaTest/generatedDigitalExps_1xJLZG_hier_by_room_rnn_meanPoolProc_video_0",
+  "created_at": "2026-10-21T02:04:57.000Z",
+  "updated_at": "2026-10-21T02:05:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9470216,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google’s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/?hl=fr",
+      "snippet": "Voici Gemini, l'assistant IA de Google. Faites-vous aider pour rédiger, planifier, trouver des idées et plus encore. Découvrez la …"
+    },
+    {
+      "title": "Gemini – Your AI assistant from Google",
+      "url": "https://gemini.google/us/about/?hl=en",
+      "snippet": "Start your day with a personalized digest from Gemini. Your Daily Brief understands your rhythms and personal preferences to …"
+    },
+    {
+      "title": "Gemini, l'assistant IA de Google",
+      "url": "https://gemini.google/fr/about/?hl=fr",
+      "snippet": "Bénéficiez de 200 crédits Google Flow à utiliser dans notre studio de création optimisé par l’IA pour créer des scènes et des récits …"
+    },
+    {
+      "title": "Gemini — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini/",
+      "snippet": "With zero external libraries and 100% pure Python, Argon wrote its own 3D ray-tracing engine with a custom video tool and audio …"
+    }
+  ]
+}

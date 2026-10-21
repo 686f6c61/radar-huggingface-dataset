@@ -5,7 +5,7 @@
   "author": "loom-ai-org",
   "url": "https://huggingface.co/loom-ai-org/gemma-3-270m-it-loom",
   "created_at": "2026-08-11T12:30:29.000Z",
-  "updated_at": "2026-09-11T09:07:13.000Z",
+  "updated_at": "2026-10-21T13:15:19.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -22,12 +22,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 62,
+  "downloads_30d": 65,
   "trending_score": 0,
   "parameters": 268364547,
   "parameters_human": "268.4M",
-  "storage_bytes": 4350131232,
-  "storage_human": "4.4 GB",
+  "storage_bytes": 5438438912,
+  "storage_human": "5.4 GB",
   "base_model": "google/gemma-3-270m-it",
   "formats": [
     "gguf"

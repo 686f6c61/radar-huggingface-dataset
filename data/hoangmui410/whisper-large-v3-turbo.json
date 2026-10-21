@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "hoangmui410/whisper-large-v3-turbo",
+  "slug": "hoangmui410-whisper-large-v3-turbo",
+  "author": "hoangmui410",
+  "url": "https://huggingface.co/hoangmui410/whisper-large-v3-turbo",
+  "created_at": "2026-10-21T01:11:28.000Z",
+  "updated_at": "2026-10-21T01:15:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 808878080,
+  "parameters_human": "808.9M",
+  "storage_bytes": 1617824864,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

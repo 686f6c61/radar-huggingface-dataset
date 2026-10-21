@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "qxyz/sn56-text-tournament-i688-e2dd-m",
+  "slug": "qxyz-sn56-text-tournament-i688-e2dd-m",
+  "author": "qxyz",
+  "url": "https://huggingface.co/qxyz/sn56-text-tournament-i688-e2dd-m",
+  "created_at": "2026-10-21T01:26:11.000Z",
+  "updated_at": "2026-10-21T01:26:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766305,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qxyz/sn56-text-tournament-data-21d7r3 · Hugging Face",
+      "url": "https://huggingface.co/qxyz/sn56-text-tournament-data-21d7r3",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qxyz/sn56-text-tournament-i554-team · Hugging Face",
+      "url": "https://huggingface.co/qxyz/sn56-text-tournament-i554-team",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LIGHT1804/sn56-text-tournament-tasks · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/LIGHT1804/sn56-text-tournament-tasks",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Writing Model Tournament | Authority Hacker",
+      "url": "https://www.authorityhacker.com/tools/ai-writing-model-test/",
+      "snippet": "Pick the business writing jobs you care about, judge them two anonymous drafts at a time, and find out which of 14 AI models writes the way you want."
+    },
+    {
+      "title": "AA-Image-T2I v2.1 Leaderboard - Top AI Image Models | Artificial ...",
+      "url": "https://artificialanalysis.ai/image/leaderboard/text-to-image",
+      "snippet": "Find the best Text to Image models, see rankings from blind votes, and compare quality, generation speed, and price in one leaderboard."
+    }
+  ]
+}

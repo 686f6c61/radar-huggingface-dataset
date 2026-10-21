@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "laicsiifes/IntegraCAR-DeepLabv3-ResNet50-128",
+  "slug": "laicsiifes-integracar-deeplabv3-resnet50-128",
+  "author": "laicsiifes",
+  "url": "https://huggingface.co/laicsiifes/IntegraCAR-DeepLabv3-ResNet50-128",
+  "created_at": "2026-10-21T02:00:54.000Z",
+  "updated_at": "2026-10-21T02:38:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "segmentation-models-pytorch",
+  "languages": [
+    "pt",
+    "en"
+  ],
+  "tags": [
+    "segmentation-models-pytorch",
+    "remote-sensing",
+    "earth-observation",
+    "semantic-segmentation",
+    "land-use",
+    "land-cover",
+    "lulc",
+    "satellite-imagery",
+    "car",
+    "brazil",
+    "espirito-santo",
+    "deeplabv3",
+    "resnet50",
+    "image-segmentation",
+    "pt",
+    "en",
+    "dataset:laicsiifes/IntegraCAR-LULC-500",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 317487577,
+  "storage_human": "317 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aurélie Bancilhon - IMDb",
+      "url": "https://www.imdb.com/name/nm3023122/",
+      "snippet": "Aurélie Bancilhon. Actress: Heavy Rain. Aurélie Bancilhon is known for Heavy Rain (2010), Resistance (2020) and Urban Myth …"
+    },
+    {
+      "title": "Aurelie Bancilhon (@aureliebancilhon) • Instagram photos and videos",
+      "url": "https://www.instagram.com/aureliebancilhon/",
+      "snippet": "579 Followers, 1,153 Following, 69 Posts - Aurelie Bancilhon (@aureliebancilhon) on Instagram: \"\""
+    },
+    {
+      "title": "Aurélie Bancilhon - Partner - Production director at le-hub | LinkedIn",
+      "url": "https://fr.linkedin.com/in/aur%C3%A9lie-bancilhon-8538b2141",
+      "snippet": "Partner - Production director at le-hub · Expérience : le-hub · Formation : Université Paris Nanterre · Lieu : Paris · 419 relations sur …"
+    },
+    {
+      "title": "Aurélie Bancilhon- Fiche Artiste - Artiste interprète ...",
+      "url": "https://www.agencesartistiques.com/Fiche-Artiste/177526-aurelie-bancilhon.html",
+      "snippet": "Annuaire regroupant tous les agents artistiques français. Recherche détaillée sur leurs fichiers de comédiens."
+    },
+    {
+      "title": "Aurélie Bancilhon - Biography - IMDb",
+      "url": "https://www.imdb.com/name/nm3023122/bio/",
+      "snippet": "Aurélie Bancilhon. Actress: Heavy Rain. Aurélie Bancilhon is known for Heavy Rain (2010), Resistance (2020) and Urban Myth …"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "ReadyArt/Wicked-Tutu-26B-A4B-Final-GGUF",
+  "slug": "readyart-wicked-tutu-26b-a4b-final-gguf",
+  "author": "ReadyArt",
+  "url": "https://huggingface.co/ReadyArt/Wicked-Tutu-26B-A4B-Final-GGUF",
+  "created_at": "2026-10-21T01:57:34.000Z",
+  "updated_at": "2026-10-21T04:28:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "nsfw",
+    "explicit",
+    "roleplay",
+    "unaligned",
+    "ERP",
+    "Erotic",
+    "Horror",
+    "Violence",
+    "text-generation",
+    "en",
+    "base_model:ReadyArt/Wicked-Tutu-26B-A4B-Final",
+    "base_model:quantized:ReadyArt/Wicked-Tutu-26B-A4B-Final",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational",
+    "not-for-all-audiences"
+  ],
+  "likes": 1,
+  "downloads_30d": 170,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 91456634112,
+  "storage_human": "91.5 GB",
+  "base_model": "ReadyArt/Wicked-Tutu-26B-A4B-Final",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ReadyArt (Ready.Art) - Hugging Face",
+      "url": "https://huggingface.co/ReadyArt/models",
+      "snippet": "ReadyArt 's models 413. Sort: Recently updated · ReadyArt/Wicked-Tutu-26B-A4B-Final-GGUF · ReadyArt/Swish-31B-Final-LORA · ReadyArt/Wicked-Tutu-26B-A4B-Final."
+    },
+    {
+      "title": "ReadyArt (Ready.Art) - Hugging Face",
+      "url": "https://huggingface.co/ReadyArt",
+      "snippet": "Org profile for Ready.Art on Hugging Face, the AI community building the future ... ReadyArt/Wicked-Tutu-26B-A4B-Final-GGUF. Text Generation • 25B • Updated ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=Horror",
+      "snippet": "ReadyArt/Wicked-Tutu-26B-A4B-v0.26-GGUF. Text Generation • 25B • Updated ... ReadyArt/Omega-Darker-Gaslight_The-Final-Forgotten-Fever-Dream-24B. Text ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=unaligned",
+      "snippet": "Models · SpaceTimee/Suri-Qwen-3.8-27B-Uncensored-GGUF · SpaceTimee/Suri-Qwen-3.8-27B-Uncensored-MLX · Sayansantra/Dark-Ultron-v2 · ReadyArt/Wicked-Tutu-31B-v0.1- ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=ERP",
+      "snippet": "Models · ReadyArt/Wicked-Tutu-31B-v0.1-GGUF · Indexnusrefather/Palette-RP-9B-2609-v0.1 · mradermacher/Caelistus-Gladius-Excalibur-RP-2.6B-Thinking-v0."
+    }
+  ]
+}

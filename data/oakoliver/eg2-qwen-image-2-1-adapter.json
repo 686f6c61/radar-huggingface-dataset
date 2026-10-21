@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "oakoliver/eg2-qwen-image-2.1-adapter",
+  "slug": "oakoliver-eg2-qwen-image-2-1-adapter",
+  "author": "oakoliver",
+  "url": "https://huggingface.co/oakoliver/eg2-qwen-image-2.1-adapter",
+  "created_at": "2026-10-21T17:10:39.000Z",
+  "updated_at": "2026-10-21T17:10:56.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "text-to-image",
+    "audio-to-image",
+    "video-to-image",
+    "adapter",
+    "embeddinggemma",
+    "qwen-image",
+    "apple-silicon",
+    "metal",
+    "en",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:finetune:Qwen/Qwen-Image-2.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 214220295,
+  "storage_human": "214 MB",
+  "base_model": "Qwen/Qwen-Image-2.1, google/embeddinggemma-2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "X-Art ~ beautiful erotica.",
+      "url": "https://www.x-art.com/",
+      "snippet": "X-Art features the world's finest 4K erotic videos and erotic photography, gorgeous erotic models and nude models from the USA, …"
+    },
+    {
+      "title": "Erotic Porn and Free Erotic XXX Sex Videos | YouPorn",
+      "url": "https://www.youporn.com/porntags/erotic/",
+      "snippet": "The hottest erotic porn full of passionate sex is right here on YouPorn. Enjoy watching these free erotic XXX sex videos on the …"
+    },
+    {
+      "title": "Erotic Videos & Movies for Women & Couples | FrolicMe.com",
+      "url": "https://www.frolicme.com/erotic-films/",
+      "snippet": "Our erotic videos and movies offer tasteful ethical erotica. Featuring a large collection of sensual erotic movies and erotic porn for …"
+    },
+    {
+      "title": "Vidéos erotic - XVIDEOS.COM",
+      "url": "https://fr.xvideos.com/tags/erotic",
+      "snippet": "XVIDEOS Vidéos erotic, gratuit À TRAVERS MOI-MÊME | MEILLEURE MASTURBATION ET ÉJACULATION DE MA VIE - GROS …"
+    },
+    {
+      "title": "Free Erotic Porn Videos | xHamster",
+      "url": "https://xhamster.com/tags/erotic",
+      "snippet": "Check out free Erotic porn videos on xHamster. Watch all Erotic XXX vids right now!"
+    }
+  ]
+}

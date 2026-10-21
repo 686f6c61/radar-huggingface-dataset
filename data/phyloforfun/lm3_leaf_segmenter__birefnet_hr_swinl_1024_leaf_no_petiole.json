@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "phyloforfun/lm3_leaf_segmenter__birefnet_hr_swinl_1024_leaf_no_petiole",
+  "slug": "phyloforfun-lm3_leaf_segmenter__birefnet_hr_swinl_1024_leaf_no_petiole",
+  "author": "phyloforfun",
+  "url": "https://huggingface.co/phyloforfun/lm3_leaf_segmenter__birefnet_hr_swinl_1024_leaf_no_petiole",
+  "created_at": "2026-10-21T17:02:17.000Z",
+  "updated_at": "2026-10-21T17:02:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "birefnet",
+  "languages": [],
+  "tags": [
+    "birefnet",
+    "onnx",
+    "openvino",
+    "leafmachine3",
+    "herbarium",
+    "leaf-segmentation",
+    "dichotomous-image-segmentation",
+    "image-segmentation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3715906777,
+  "storage_human": "3.7 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

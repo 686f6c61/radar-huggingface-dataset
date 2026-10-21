@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "AMITGUPTA1988/albef-matching41",
+  "slug": "amitgupta1988-albef-matching41",
+  "author": "AMITGUPTA1988",
+  "url": "https://huggingface.co/AMITGUPTA1988/albef-matching41",
+  "created_at": "2026-10-21T02:04:10.000Z",
+  "updated_at": "2026-10-21T02:04:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AMITGUPTA1988/albef-matching41 · Hugging Face",
+      "url": "https://huggingface.co/AMITGUPTA1988/albef-matching41",
+      "snippet": "A research-oriented Albef prototype targeting Matching. The included base setup documents defaults and file formats without presenting unverified performance numbers. The Python file contains the model and runnable example or training entry point."
+    },
+    {
+      "title": "On Knowledge in AI: Epistemic and Ethical Limitations of Language ...",
+      "url": "https://ediss.sub.uni-hamburg.de/bitstream/ediss/12231/1/dissertation_angelie_kraft.pdf",
+      "snippet": "20.11.2025 ... is pre-dominantly implemented via vector-based matching between the model. Page 34. 1. Introduction. 16 input and external documents (Fan et al ..."
+    },
+    {
+      "title": "amitgbzx/matching41 · Hugging Face",
+      "url": "https://huggingface.co/amitgbzx/matching41",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Brief Review — Align before Fuse: Vision and Language ...",
+      "url": "https://sh-tsang.medium.com/brief-review-align-before-fuse-vision-and-language-representation-learning-with-momentum-34386305ce0c",
+      "snippet": "ALBEF contains an image encoder, a text encoder, and a multimodal encoder."
+    },
+    {
+      "title": "On the Opportunities and Risks of Foundation Models",
+      "url": "https://crfm.stanford.edu/assets/report.pdf",
+      "snippet": "Despite the ubiquity of machine learning within AI, semantically complex tasks in natural lan- guage processing (NLP) and computer vision such as question ..."
+    }
+  ]
+}

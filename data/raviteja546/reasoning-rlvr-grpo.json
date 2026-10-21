@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Raviteja546/reasoning-rlvr-grpo",
+  "slug": "raviteja546-reasoning-rlvr-grpo",
+  "author": "Raviteja546",
+  "url": "https://huggingface.co/Raviteja546/reasoning-rlvr-grpo",
+  "created_at": "2026-10-20T23:50:20.000Z",
+  "updated_at": "2026-10-21T17:24:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "reasoning",
+    "math",
+    "grpo",
+    "rlvr",
+    "rlvr-study",
+    "dataset:openai/gsm8k",
+    "dataset:EleutherAI/hendrycks_math",
+    "base_model:Raviteja546/reasoning-rlvr-rft",
+    "base_model:finetune:Raviteja546/reasoning-rlvr-rft",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 34423137775,
+  "storage_human": "34.4 GB",
+  "base_model": "Raviteja546/reasoning-rlvr-rft",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What Affects Ocean Currents? - The Institute for Environmental …",
+      "url": "https://iere.org/what-affects-ocean-currents/",
+      "snippet": "Jun 14, 2025 · Ocean currents play a critical role in distributing nutrients, oxygen, and heat throughout the ocean. Upwelling currents …"
+    },
+    {
+      "title": "Ocean current - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ocean_current",
+      "snippet": "Ocean currents flow for great distances, and together they create the global conveyor belt, which plays a dominant role in …"
+    },
+    {
+      "title": "Ocean currents - National Oceanic and Atmospheric Administration",
+      "url": "https://www.noaa.gov/education/resource-collections/ocean-coasts/ocean-currents",
+      "snippet": "2 days ago · Winds, water density, and tides all drive ocean currents. Coastal and sea floor features influence their location, …"
+    },
+    {
+      "title": "Ocean Currents: Various Types, Causes, Effects and Importance",
+      "url": "https://www.conserve-energy-future.com/ocean-currents.php",
+      "snippet": "Ocean currents refer to the steady movement or flow of surface ocean water in a prevailing direction. Various forces act upon ocean …"
+    },
+    {
+      "title": "Ocean current | Distribution, Causes, & Types | Britannica",
+      "url": "https://www.britannica.com/science/ocean-current",
+      "snippet": "Sep 1, 2026 · What is an ocean current? How are ocean currents different from waves and tides? What causes ocean currents to …"
+    }
+  ]
+}

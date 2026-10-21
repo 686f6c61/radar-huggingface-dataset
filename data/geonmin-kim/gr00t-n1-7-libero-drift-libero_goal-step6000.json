@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "geonmin-kim/GR00T-N1.7-LIBERO-drift-libero_goal-step6000",
+  "slug": "geonmin-kim-gr00t-n1-7-libero-drift-libero_goal-step6000",
+  "author": "geonmin-kim",
+  "url": "https://huggingface.co/geonmin-kim/GR00T-N1.7-LIBERO-drift-libero_goal-step6000",
+  "created_at": "2026-10-21T01:12:22.000Z",
+  "updated_at": "2026-10-21T01:13:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576216112,
+  "storage_human": "12.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "数据同步工具之FlinkCDC/Canal/Debezium对比_百度知道",
+      "url": "https://zhidao.baidu.com/question/595841529769663245.html",
+      "snippet": "Nov 6, 2024 · 前言 数据准实时复制（CDC）在现今实时数据需求中广泛应用，随着国产化需求的提升，企业开始寻求替代商业产品的 …"
+    },
+    {
+      "title": "Déménagement | CANAL+ Assistance",
+      "url": "https://assistance.canalplus.com/questions/1651904-demenagez-simplicite-emmenez-programmes",
+      "snippet": "Je déménage avec CANAL+Lorsque vous déménagez, il n’est pas nécessaire de résilier votre abonnement. CANAL+ vous …"
+    },
+    {
+      "title": "LWS 是海运中的什么费用 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/337887327.html",
+      "snippet": "LWS 是海运中的什么费用海运费 ocean freight 集卡运费、短驳费 Drayage 订舱费 booking charge 报关费 customs clearance fee 操 …"
+    },
+    {
+      "title": "Le bouton de la télécommande est HS - Avec Réponse (s)",
+      "url": "https://assistance.canalplus.com/questions/1684402-bouton-telecommande-hs",
+      "snippet": "bonjourle du volume + ne fonctionne plus sur la télécommande pouvez vous m’en faire parvenir en échange de la mienne que j’en …"
+    },
+    {
+      "title": "百度地图",
+      "url": "https://zhidao.baidu.com/html/map/page.html?newmap=1",
+      "snippet": "百度地图提供精准导航、实时路况、公交查询等功能，是您出行的好帮手。"
+    }
+  ]
+}

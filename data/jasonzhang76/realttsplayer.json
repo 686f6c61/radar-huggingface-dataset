@@ -5,7 +5,7 @@
   "author": "jasonzhang76",
   "url": "https://huggingface.co/jasonzhang76/RealTTSPlayer",
   "created_at": "2026-07-07T04:56:18.000Z",
-  "updated_at": "2026-10-17T09:29:27.000Z",
+  "updated_at": "2026-10-21T13:35:36.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -16,12 +16,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 22,
+  "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 2434901678,
-  "storage_human": "2.4 GB",
+  "storage_bytes": 2525797649,
+  "storage_human": "2.5 GB",
   "base_model": null,
   "formats": [
     "onnx"

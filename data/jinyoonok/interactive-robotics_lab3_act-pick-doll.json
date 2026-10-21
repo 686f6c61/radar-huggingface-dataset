@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "jinyoonok/interactive-robotics_lab3_act-pick-doll",
+  "slug": "jinyoonok-interactive-robotics_lab3_act-pick-doll",
+  "author": "jinyoonok",
+  "url": "https://huggingface.co/jinyoonok/interactive-robotics_lab3_act-pick-doll",
+  "created_at": "2026-10-21T01:50:46.000Z",
+  "updated_at": "2026-10-21T01:52:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "imitation-learning",
+    "act",
+    "so101",
+    "dataset:jinyoonok/interactive-robotics_lab3_pick-doll",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206712896,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

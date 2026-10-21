@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "KRAFTON/Raon-1-mini-preview",
+  "slug": "krafton-raon-1-mini-preview",
+  "author": "KRAFTON",
+  "url": "https://huggingface.co/KRAFTON/Raon-1-mini-preview",
+  "created_at": "2026-10-21T00:14:48.000Z",
+  "updated_at": "2026-10-21T15:39:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "raon1_mini",
+    "text-generation",
+    "raon",
+    "conversational",
+    "custom_code",
+    "license:apache-2.0",
+    "mxfp8",
+    "region:us"
+  ],
+  "likes": 77,
+  "downloads_30d": 25,
+  "trending_score": 73,
+  "parameters": 28783218402,
+  "parameters_human": "28.78B",
+  "storage_bytes": 32714641804,
+  "storage_human": "32.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KRAFTON/Raon-1-mini-preview - Hugging Face",
+      "url": "https://huggingface.co/KRAFTON/Raon-1-mini-preview",
+      "snippet": "Raon-1 mini is a 30B-A4B Mixture-of-Experts (MoE) language model, designed and trained from scratch by KRAFTON AI. It demonstrates strong capabilities in Korean conversation and agentic tasks."
+    },
+    {
+      "title": "Krafton Releases Raon-1 Mini, Its In-House AI Language Model - ...",
+      "url": "https://en.sedaily.com/technology/2026/10/21/krafton-releases-raon-1-mini-its-in-house-ai-language-model",
+      "snippet": "vor 10 Stunden ... Krafton has released a preview of Raon-1 mini, a 30-billion-parameter language model, free on Hugging Face under an Apache 2.0 license."
+    },
+    {
+      "title": "Krafton Releases Preview of Its Self-Developed LLM \"Raon-1 Mini\" ...",
+      "url": "https://www.asiae.co.kr/en/article/IT/2026102115574147611",
+      "snippet": "It lowered inference costs by combining a mixture-of-experts (MoE) structure, which activates only 4 billion of the model's 30 billion parameters as needed, with its own linear attention technology. Krafton emphasized that Raon-1 Mini Preview delivers superior performance to overseas models of a similar size and comes close to large domestic models on some metrics."
+    },
+    {
+      "title": "Krafton Unveils Preview of 30B 'Raon-1 Mini'... \"Competing with a ...",
+      "url": "https://finance.biggo.com/news/760bb58d-5dcc-490a-9fa4-2c03ecbbef67",
+      "snippet": "South Korea's Krafton has released a preview version of \"Raon-1 Mini,\" a 30-billion-parameter large language model it developed in-house, on Hugging Face under the Apache 2.0 license."
+    },
+    {
+      "title": "KRAFTON Unveils “Raon-1 Mini,” a 30B-Scale In-House Language ...",
+      "url": "https://en.edaily.co.kr/news/eda202610215570/",
+      "snippet": "The Raon-1 mini preview has been released on the AI model sharing platform Hugging Face under the Apache 2.0 license. Anyone can download it for free and use it for research and the development of commercial services."
+    }
+  ]
+}

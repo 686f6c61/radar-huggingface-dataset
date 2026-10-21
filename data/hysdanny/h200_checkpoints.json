@@ -5,7 +5,7 @@
   "author": "hysdanny",
   "url": "https://huggingface.co/hysdanny/h200_checkpoints",
   "created_at": "2026-04-17T05:21:30.000Z",
-  "updated_at": "2026-09-18T05:51:36.000Z",
+  "updated_at": "2026-10-21T10:51:37.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,8 +20,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 2942588420701,
-  "storage_human": "2942.6 GB",
+  "storage_bytes": 3221435532306,
+  "storage_human": "3221.4 GB",
   "base_model": null,
   "formats": [
     "safetensors"

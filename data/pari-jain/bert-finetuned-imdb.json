@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Pari-Jain/bert-finetuned-imdb",
+  "slug": "pari-jain-bert-finetuned-imdb",
+  "author": "Pari-Jain",
+  "url": "https://huggingface.co/Pari-Jain/bert-finetuned-imdb",
+  "created_at": "2026-10-21T16:49:31.000Z",
+  "updated_at": "2026-10-21T16:49:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109483778,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437971430,
+  "storage_human": "438 MB",
+  "base_model": "bert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accueil - PARI",
+      "url": "https://www.pari.com/fr/accueil/",
+      "snippet": "Reconnu pour son expertise de la nébulisation, PARI apporte des solutions pour le traitement des maladies respiratoires depuis plus …Read more"
+    },
+    {
+      "title": "Parier en ligne sur le N° 1 des Paris Sportifs | Betclic France",
+      "url": "https://www.betclic.fr/",
+      "snippet": "Cette interdiction est applicable dans les casinos, dans les clubs de jeux, sur les sites de jeux et de paris en ligne exploités par les …"
+    },
+    {
+      "title": "Parions Sport point de vente : paris sportifs et Loto Sports en point ...",
+      "url": "https://www.pointdevente.parionssport.fdj.fr/",
+      "snippet": "Choisissez votre pari parmi les 3 offres de jeu disponibles : Paris ouverts (paris à cotes en pré-match), Combi Bonus (Combiné …"
+    },
+    {
+      "title": "Pari sportif — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Pari_sportif",
+      "snippet": "Le pari sportif est un jeu d'argent sur le pronostic d'un évènement lors d'une rencontre sportive. Il existe de nombreux types de paris, …"
+    },
+    {
+      "title": "pari — Wiktionnaire, le dictionnaire libre",
+      "url": "https://fr.wiktionary.org/wiki/pari",
+      "snippet": "pari \\pa.ʁi\\ masculin Promesse réciproque, par laquelle deux ou plusieurs personnes, qui soutiennent des choses contraires, s’ …"
+    }
+  ]
+}

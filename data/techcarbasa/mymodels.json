@@ -5,7 +5,7 @@
   "author": "TechCarbasa",
   "url": "https://huggingface.co/TechCarbasa/MyModels",
   "created_at": "2026-02-01T21:17:30.000Z",
-  "updated_at": "2026-10-20T11:03:11.000Z",
+  "updated_at": "2026-10-21T12:28:31.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -23,7 +23,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 98,
+  "downloads_30d": 131,
   "trending_score": 0,
   "parameters": 4022468096,
   "parameters_human": "4.02B",

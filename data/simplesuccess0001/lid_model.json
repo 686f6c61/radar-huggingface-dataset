@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "simplesuccess0001/lid_model",
+  "slug": "simplesuccess0001-lid_model",
+  "author": "simplesuccess0001",
+  "url": "https://huggingface.co/simplesuccess0001/lid_model",
+  "created_at": "2026-10-21T01:15:42.000Z",
+  "updated_at": "2026-10-21T10:02:42.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "wav2vec2",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 164549773,
+  "parameters_human": "164.5M",
+  "storage_bytes": 987355822,
+  "storage_human": "987 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

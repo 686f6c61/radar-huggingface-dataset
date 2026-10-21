@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "gianmaTest/generatedDigitalExps_1xJKiz_hier_by_room_rnn_meanPoolProc_cnn1d_video_2",
+  "slug": "gianmatest-generateddigitalexps_1xjkiz_hier_by_room_rnn_meanpoolproc_cnn1d_video_2",
+  "author": "gianmaTest",
+  "url": "https://huggingface.co/gianmaTest/generatedDigitalExps_1xJKiz_hier_by_room_rnn_meanPoolProc_cnn1d_video_2",
+  "created_at": "2026-10-21T01:22:53.000Z",
+  "updated_at": "2026-10-21T01:22:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7362959,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

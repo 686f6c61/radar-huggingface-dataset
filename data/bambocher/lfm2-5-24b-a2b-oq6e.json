@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "bambocher/LFM2.5-24B-A2B-oQ6e",
+  "slug": "bambocher-lfm2-5-24b-a2b-oq6e",
+  "author": "bambocher",
+  "url": "https://huggingface.co/bambocher/LFM2.5-24B-A2B-oQ6e",
+  "created_at": "2026-10-21T02:00:17.000Z",
+  "updated_at": "2026-10-21T02:05:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "lfm2_moe",
+    "oq",
+    "quantized",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 23971587712,
+  "parameters_human": "23.97B",
+  "storage_bytes": 19624473741,
+  "storage_human": "19.6 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Model Heretic — Uncensored & Heretic AI Models Radar",
+      "url": "https://modelheretic.com/",
+      "snippet": "Discover heretic, abliterated and uncensored LLMs in real time. Filter by GGUF, MLX, hardware fit, creators and capabilities. Updated daily."
+    }
+  ]
+}

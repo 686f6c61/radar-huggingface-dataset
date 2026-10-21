@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "ConwayResearch/Underdog-Bark-3.0-Clean",
+  "slug": "conwayresearch-underdog-bark-3-0-clean",
+  "author": "ConwayResearch",
+  "url": "https://huggingface.co/ConwayResearch/Underdog-Bark-3.0-Clean",
+  "created_at": "2026-10-15T06:43:34.000Z",
+  "updated_at": "2026-10-15T07:16:00.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "speech-to-text",
+    "asr",
+    "stt",
+    "dictation",
+    "disfluency-removal",
+    "low-bit",
+    "on-device",
+    "mlx",
+    "apple-silicon",
+    "parakeet",
+    "underdog",
+    "automatic-speech-recognition",
+    "en",
+    "arxiv:2406.08820",
+    "base_model:nvidia/parakeet-tdt-0.6b-v3",
+    "base_model:finetune:nvidia/parakeet-tdt-0.6b-v3",
+    "license:cc-by-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 20,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 179979710,
+  "storage_human": "180 MB",
+  "base_model": "nvidia/parakeet-tdt-0.6b-v3",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aol mail",
+      "url": "https://mail.aol.com/fr-fr/",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité.Read more"
+    },
+    {
+      "title": "AOL Mail",
+      "url": "https://mail.aol.com/",
+      "snippet": "Get AOL Mail for FREE! Manage your email like never before with travel, photo & document views. Personalize your inbox with …"
+    },
+    {
+      "title": "Sign in | AOL",
+      "url": "https://login.aol.com/",
+      "snippet": "Securely log in to your AOL account for access to email, news, and more."
+    },
+    {
+      "title": "Se connecter | AOL",
+      "url": "https://login.aol.com/?lang=fr-FR&intl=fr",
+      "snippet": "Connectez-vous pour accéder à Yahoo Mail, toujours plus performant : Yahoo Mail, actualités locales, nationales et internationales, …"
+    },
+    {
+      "title": "AOL.com - News, Sports, Weather, Entertainment, Local & Lifestyle",
+      "url": "https://www.aol.com/",
+      "snippet": "AOL latest headlines, entertainment, sports, articles for business, health and world news."
+    }
+  ]
+}

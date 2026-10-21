@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "ayfilaS/whisper-tiny_to_korean_accent_21oct",
+  "slug": "ayfilas-whisper-tiny_to_korean_accent_21oct",
+  "author": "ayfilaS",
+  "url": "https://huggingface.co/ayfilaS/whisper-tiny_to_korean_accent_21oct",
+  "created_at": "2026-10-21T16:51:53.000Z",
+  "updated_at": "2026-10-21T17:02:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "hf-asr-leaderboard",
+    "generated_from_trainer",
+    "en",
+    "dataset:Korean_english",
+    "base_model:openai/whisper-tiny",
+    "base_model:finetune:openai/whisper-tiny",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 37760640,
+  "parameters_human": "37.8M",
+  "storage_bytes": 302167751,
+  "storage_human": "302 MB",
+  "base_model": "openai/whisper-tiny",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Korean English",
+      "metric": "Wer",
+      "value": 9.254689042448174
+    }
+  ],
+  "sources": [
+    {
+      "title": "Nokomis, FL Hourly Weather | AccuWeather",
+      "url": "https://www.accuweather.com/en/us/nokomis/34275/hourly-weather-forecast/337582",
+      "snippet": "Hourly weather forecast in Nokomis, FL. Check current conditions in Nokomis, FL with radar, hourly, and more."
+    },
+    {
+      "title": "10-Day Weather Forecast for Nokomis, Florida - The Weather Channel",
+      "url": "https://weather.com/weather/tenday/l/f80bb03cdd2d5f9fb1f3fc8dbaae950132ccccd29385e853968a6861cc7c51fe",
+      "snippet": "Be prepared with the most accurate 10-day forecast for Nokomis, Florida with highs, lows, chance of precipitation from The Weather …"
+    },
+    {
+      "title": "10-Day Weather Forecast for Nokomis, Florida - The Weather Channel",
+      "url": "https://weather.com/us/florida/city/nokomis/tenday",
+      "snippet": "Be prepared with the most accurate 10-day forecast for Nokomis, Florida with highs, lows, chance of precipitation from The Weather …"
+    },
+    {
+      "title": "Nokomis, FL Weather Radar | AccuWeather",
+      "url": "https://www.accuweather.com/en/us/nokomis/34275/weather-radar/337582",
+      "snippet": "Track storms, and stay in-the-know and prepared for what's coming. Easy to use weather radar at your fingertips!"
+    },
+    {
+      "title": "Weather Nokomis - meteoblue",
+      "url": "https://www.meteoblue.com/en/weather/week/nokomis_united-states_4166049",
+      "snippet": "Today's and tonight's professional weather forecast for Nokomis. Precipitation radar, HD satellite images, and current weather …"
+    }
+  ]
+}

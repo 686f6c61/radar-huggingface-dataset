@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Jordine/rlport-hkl_jord9v_c3_pl3_20261021_163922",
+  "slug": "jordine-rlport-hkl_jord9v_c3_pl3_20261021_163922",
+  "author": "Jordine",
+  "url": "https://huggingface.co/Jordine/rlport-hkl_jord9v_c3_pl3_20261021_163922",
+  "created_at": "2026-10-21T16:40:21.000Z",
+  "updated_at": "2026-10-21T18:35:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "research",
+    "checkpoint-backup",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15913127265,
+  "storage_human": "15.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Write a Statement of Purpose (SOP) for a Student Visa 2026 ...",
+      "url": "https://studentvisadoc.com/blog/student-visa-statement-of-purpose/",
+      "snippet": "Jul 7, 2026 · Learn how to write a compelling Statement of Purpose (SOP) for your student visa in 2026. Covers US study plan, UK …"
+    },
+    {
+      "title": "Study Plan Examples for Study Abroad",
+      "url": "https://www.scribd.com/document/551840849/Study-Plan-Essay",
+      "snippet": "This document provides guidance on writing effective study plan essays and statements of purpose for scholarship and university …"
+    },
+    {
+      "title": "Statement of Purpose (SOP) Samples for Study Abroad 2026",
+      "url": "https://leapscholar.com/blog/statement-of-purpose-sop-samples-for-study-abroad/",
+      "snippet": "Apr 13, 2026 · Write a strong statement of purpose for study abroad. Get samples, paragraph-by-paragraph format, and tips for …"
+    },
+    {
+      "title": "Sample Statement of Purpose for Study Abroad: Full Guide",
+      "url": "https://galvanizetestprep.com/blogs/sample-statement-of-purpose-for-study-abroad-complete-guide/",
+      "snippet": "Mar 2, 2026 · Discover a complete guide to sample statement of purpose for study abroad. Get structure, examples by field, common …"
+    },
+    {
+      "title": "Statement of Purpose Format: Samples, Structure & Tips - upGrad",
+      "url": "https://www.upgrad.com/study-abroad/articles/statement-of-purpose-format/",
+      "snippet": "Oct 10, 2026 · This article includes a statement of purpose sample format along with formats for various levels of study, countries, …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "FreedomAISVR",
   "url": "https://huggingface.co/FreedomAISVR/Gemma-4-12B-it-QAT-MXFP4-GGUF",
   "created_at": "2026-06-18T18:10:51.000Z",
-  "updated_at": "2026-10-16T12:37:41.000Z",
+  "updated_at": "2026-10-21T15:08:14.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -33,12 +33,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 613,
+  "downloads_30d": 598,
   "trending_score": 0,
   "parameters": 11907350576,
   "parameters_human": "11.91B",
-  "storage_bytes": 13701841632,
-  "storage_human": "13.7 GB",
+  "storage_bytes": 20580891136,
+  "storage_human": "20.6 GB",
   "base_model": "google/gemma-4-12B-it-qat-q4_0-unquantized",
   "formats": [
     "gguf"

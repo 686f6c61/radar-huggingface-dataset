@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "hi-todayis-jh/ouro-1.4b-thinking-rltt-math-154711-20261008-rltt-fixed",
+  "slug": "hi-todayis-jh-ouro-1-4b-thinking-rltt-math-154711-20261008-rltt-fixed",
+  "author": "hi-todayis-jh",
+  "url": "https://huggingface.co/hi-todayis-jh/ouro-1.4b-thinking-rltt-math-154711-20261008-rltt-fixed",
+  "created_at": "2026-10-21T01:05:08.000Z",
+  "updated_at": "2026-10-21T01:10:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "ouro",
+    "looped-language-model",
+    "rltt",
+    "rl",
+    "math",
+    "base_model:ByteDance/Ouro-1.4B-Thinking",
+    "base_model:finetune:ByteDance/Ouro-1.4B-Thinking",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 50225133692,
+  "storage_human": "50.2 GB",
+  "base_model": "ByteDance/Ouro-1.4B-Thinking",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HI | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/hi",
+      "snippet": "HI definition: 1. used as an informal greeting, usually to people who you know: 2. written abbreviation for the…. Learn more."
+    },
+    {
+      "title": "Hi! PARIS – Paris Artificial Intelligence for Society & Business",
+      "url": "https://hi-paris.fr/",
+      "snippet": "Hi! PARIS is the Center on Data Analytics and Artificial Intelligence for Science, Business and Society created by Institut …"
+    },
+    {
+      "title": "Travailler chez HI",
+      "url": "https://www.hi.org/fr/travailler-chez-hi",
+      "snippet": "Que ce soit en situation d’urgence, de grande pauvreté ou lors de crises chroniques, les équipes de HI agissent dans tous les …"
+    },
+    {
+      "title": "hi - English-French Dictionary WordReference.com",
+      "url": "https://www.wordreference.com/enfr/hi",
+      "snippet": "Dans les listes : Top 2000 English words, Spoken greetings, Things you say when someone gets home, Suite... Collocations : say a …"
+    },
+    {
+      "title": "hi - English-French Dictionary WordReference.com",
+      "url": "https://www.wordreference.com/enfr/hi%20",
+      "snippet": "Voir la traduction automatique de Google Translate de 'hi'. Dans d'autres langues : espagnol | italien | portugais | roumain | allemand …"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "RecursiveSI/flint",
+  "slug": "recursivesi-flint",
+  "author": "RecursiveSI",
+  "url": "https://huggingface.co/RecursiveSI/flint",
+  "created_at": "2026-10-21T14:20:58.000Z",
+  "updated_at": "2026-10-21T14:24:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "flint",
+    "text-generation",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 41,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39785287456,
+  "parameters_human": "39.79B",
+  "storage_bytes": 79587116933,
+  "storage_human": "79.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Webmail - Your GandiMail With SOGo and Roundcube - Gandi.net",
+      "url": "https://webmail.gandi.net/",
+      "snippet": "Easily access your emails with our webmail services: SOGo and Roundcube."
+    }
+  ]
+}

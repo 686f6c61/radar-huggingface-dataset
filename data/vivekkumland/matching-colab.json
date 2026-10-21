@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "vivekkumland/matching-colab",
+  "slug": "vivekkumland-matching-colab",
+  "author": "vivekkumland",
+  "url": "https://huggingface.co/vivekkumland/matching-colab",
+  "created_at": "2026-10-21T02:03:15.000Z",
+  "updated_at": "2026-10-21T02:03:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66776,
+  "storage_human": "66776 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vivekkumland/matching-colab · Hugging Face",
+      "url": "https://huggingface.co/vivekkumland/matching-colab",
+      "snippet": "A small Mixer implementation for Matching, packaged with an explicit configuration and an initialization checkpoint. The giant variant is a reproducible starting point, not a trained model release."
+    },
+    {
+      "title": "vivekkumland/contrastive74 · Hugging Face",
+      "url": "https://huggingface.co/vivekkumland/contrastive74",
+      "snippet": "A useful first evaluation would use a task-specific held-out set, report the task metric across at least three seeds, and include a matched-capacity baseline."
+    },
+    {
+      "title": "vivekred/matching · Hugging Face",
+      "url": "https://huggingface.co/vivekred/matching",
+      "snippet": "This is an experimental Mocov3 codebase for Matching. It keeps the huge setup intentionally manageable so architecture changes can be inspected before a full training run. The Python file contains the model and runnable example or training entry ..."
+    },
+    {
+      "title": "Google Colab Links",
+      "url": "https://voice-models.com/colab",
+      "snippet": "AI Voice Tool · Posts · Colabs · Discord · Takedown · Sign in · Sign up · Updated 37 minutes ago · face swap · deepfake · voice · cover · TTS · translate · video · LLM · Vision · audio · lip-sync · training · weather · image · 3D · avatar ·"
+    },
+    {
+      "title": "kkumardeepak8/vit-matching · Hugging Face",
+      "url": "https://huggingface.co/kkumardeepak8/vit-matching",
+      "snippet": "Working implementation of ViT for Matching using a xlarge configuration. The repository focuses on transparent code and repeatable smoke tests; benchmark claims are deliberately omitted. The Python file contains the model and runnable example or training entry point."
+    }
+  ]
+}

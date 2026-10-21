@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "dongfangshuo/Dongfangshuo-Qwen3.8-27B-NSFW-v4",
+  "slug": "dongfangshuo-dongfangshuo-qwen3-8-27b-nsfw-v4",
+  "author": "dongfangshuo",
+  "url": "https://huggingface.co/dongfangshuo/Dongfangshuo-Qwen3.8-27B-NSFW-v4",
+  "created_at": "2026-10-21T16:49:45.000Z",
+  "updated_at": "2026-10-21T18:08:37.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen3_5_text",
+    "text-generation",
+    "qwen3.8",
+    "27b",
+    "ollama",
+    "llama.cpp",
+    "abliterated",
+    "uncensored",
+    "roleplay",
+    "image-text-to-text",
+    "conversational",
+    "zh",
+    "base_model:huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+    "base_model:finetune:huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 156282083580,
+  "storage_human": "156.3 GB",
+  "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Celebrity Facial Porn Pics - PICTOA",
+      "url": "https://www.pictoa.com/s/celebrity-facial/",
+      "snippet": "GET the best Celebrity Facial Porn Pics now! Enjoy the most beautiful Celebrity Facial Sex Images. Click and watch hairy pussy, …"
+    },
+    {
+      "title": "Free Celebrity Facial Porn Videos | xHamster",
+      "url": "https://xhamster.com/tags/celebrity-facial",
+      "snippet": "Check out free Celebrity Facial porn videos on xHamster. Watch all Celebrity Facial XXX vids right now!"
+    },
+    {
+      "title": "Celebrity Facial Tube Search (2905 videos) - NudeVista",
+      "url": "https://www.nudevista.com/?q=celebrity+facial&s=t",
+      "snippet": "2 905 results for celebrity facial tube, ordered by relevance, newest, popularity, duration or random"
+    },
+    {
+      "title": "Celebrity facials and cumshots Porn Pictures, XXX Photos, Sex …",
+      "url": "https://www.pictoa.com/albums/celebrity-facials-and-cumshots-1787498.html",
+      "snippet": "Browse celebrity facials and cumshots porn pics and discover multiple extremely hot photos in our gallery which has one of the …"
+    },
+    {
+      "title": "CELEBRITY CUM FACE - Porn videos @ CumGuru.com",
+      "url": "https://cumguru.com/videos/celebrity-cum-face",
+      "snippet": "Popular videos: Celebrity Cum Face. Incredible Adult Video Bedroom Newest Will Enslaves Your Mind, CELEBRATION VDAY WITH …"
+    }
+  ]
+}

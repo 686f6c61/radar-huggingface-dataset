@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "ayfilaS/whisper-tiny_to_japanese_accent_21oct",
+  "slug": "ayfilas-whisper-tiny_to_japanese_accent_21oct",
+  "author": "ayfilaS",
+  "url": "https://huggingface.co/ayfilaS/whisper-tiny_to_japanese_accent_21oct",
+  "created_at": "2026-10-21T16:34:43.000Z",
+  "updated_at": "2026-10-21T16:46:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "hf-asr-leaderboard",
+    "generated_from_trainer",
+    "en",
+    "dataset:Japanese_english",
+    "base_model:openai/whisper-tiny",
+    "base_model:finetune:openai/whisper-tiny",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 37760640,
+  "parameters_human": "37.8M",
+  "storage_bytes": 302167755,
+  "storage_human": "302 MB",
+  "base_model": "openai/whisper-tiny",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Japanese English",
+      "metric": "Wer",
+      "value": 20.66677200189603
+    }
+  ],
+  "sources": [
+    {
+      "title": "pregnant videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/tags/pregnant",
+      "snippet": "Pregnant BBW wife masturbates her creampied pussy with a dildo and push the cum deeper inside! - Milky Mari."
+    },
+    {
+      "title": "pregnant-woman videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/tags/pregnant-woman",
+      "snippet": "Rapidinha bem gostoso no banheiro com a grávida linda com direito a gozada dentro da buceta. Fucking a pregnant woman with a …"
+    },
+    {
+      "title": "Pregnant Porn Videos: Sex During Pregnancy | xHamster",
+      "url": "https://xhamster.com/categories/pregnant",
+      "snippet": "🤰 Pregnant women with big bellies and swollen, milky breasts fuck passionately in hot videos. Solo preggo girls rub their stomachs …"
+    },
+    {
+      "title": "Amateur Pregnant Sex Videos - Homemade Preggo Moms XXX …",
+      "url": "https://m.mylust.com/categories/pregnant/",
+      "snippet": "Watch exclusive amateur pregnant sex videos of expecting moms taking cocks as their swollen tits bouncing! Jerk off to horny …"
+    },
+    {
+      "title": "Pregnant Tube, Fuck Preggo Pussy Porno Videos! - Shameless.com",
+      "url": "https://m.shameless.com/categories/pregnant/",
+      "snippet": "Pregnant Tube, Fuck Preggo Pussy Porno Videos!"
+    }
+  ]
+}

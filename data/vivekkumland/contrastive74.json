@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "vivekkumland/contrastive74",
+  "slug": "vivekkumland-contrastive74",
+  "author": "vivekkumland",
+  "url": "https://huggingface.co/vivekkumland/contrastive74",
+  "created_at": "2026-10-21T02:02:53.000Z",
+  "updated_at": "2026-10-21T02:03:00.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "pytorch",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99800,
+  "storage_human": "99800 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A Satellite-Based Framework for Flood Mapping: Enhancing ...",
+      "url": "https://link.springer.com/article/10.1007/s41976-026-00311-1",
+      "snippet": "28.09.2026 ... While machine learning (ML) models have shown considerable promise for modelling complex environmental phenomena such as floods, ..."
+    },
+    {
+      "title": "Grenzregionen – Konfliktzonen Siedlungsforschung. Archäologie ...",
+      "url": "https://www.uni-bamberg.de/fileadmin/histgeo/ARKUM/Arkum_Zeitschrift_Siedlungsforschung/SF38.pdf",
+      "snippet": "Für die Mitglieder des Arbeitskreises für historische Kulturlandschaftsforschung in Mitteleuropa ARKUM e.V. ist der Bezugspreis im Jahresbeitrag enthalten."
+    },
+    {
+      "title": "The brain-penetrant clinical ATM inhibitor AZD1390 radiosensitizes ...",
+      "url": "https://www.science.org/doi/10.1126/sciadv.aat1719",
+      "snippet": "20.06.2018 ... With an in vivo model system, wherein the non–BBB-penetrant ATM inhibitor KU60019 was pumped directly into mouse brain orthotopic GBM xenograft, ..."
+    },
+    {
+      "title": "Content List of IROS 2022 | IEEE Xplore",
+      "url": "https://ieeexplore.ieee.org/iel7/9981026/9981028/09982035.pdf",
+      "snippet": "... Model for Autonomous Vehicles with Surround-View Cameras, pp. 286-292 ... Vivek. Technology Innovation Institute, New York University. Zhou, Yang. New ..."
+    },
+    {
+      "title": "Banaras Hindu University M.Sc. / M.Sc. (Tech.) / MCA Courses ...",
+      "url": "https://www.bhu.ac.in/Images/files/M_Sc_Syllabi.pdf",
+      "snippet": "... model cyanobacteria Synechocystis sp. PCC 6803, Anabaena sp. PCC 7120 ... 74 . 74. Physical Chemistry Specialization. CHM303 (P): Electrochemistry."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "Jordine/rlport-hkl_jord9v_c3_pl4_20261021_165813",
+  "slug": "jordine-rlport-hkl_jord9v_c3_pl4_20261021_165813",
+  "author": "Jordine",
+  "url": "https://huggingface.co/Jordine/rlport-hkl_jord9v_c3_pl4_20261021_165813",
+  "created_at": "2026-10-21T16:59:12.000Z",
+  "updated_at": "2026-10-21T18:38:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "research",
+    "checkpoint-backup",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15912616369,
+  "storage_human": "15.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

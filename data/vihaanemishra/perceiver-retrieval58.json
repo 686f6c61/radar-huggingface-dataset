@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "vihaanemishra/perceiver-retrieval58",
+  "slug": "vihaanemishra-perceiver-retrieval58",
+  "author": "vihaanemishra",
+  "url": "https://huggingface.co/vihaanemishra/perceiver-retrieval58",
+  "created_at": "2026-10-21T01:45:03.000Z",
+  "updated_at": "2026-10-21T01:45:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

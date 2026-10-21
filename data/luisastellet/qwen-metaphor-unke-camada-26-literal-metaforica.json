@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "luisastellet/qwen-metaphor-unke-camada-26-literal-metaforica",
+  "slug": "luisastellet-qwen-metaphor-unke-camada-26-literal-metaforica",
+  "author": "luisastellet",
+  "url": "https://huggingface.co/luisastellet/qwen-metaphor-unke-camada-26-literal-metaforica",
+  "created_at": "2026-10-21T17:01:10.000Z",
+  "updated_at": "2026-10-21T17:01:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 2395657618,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Seine-Maritime (76) - leboncoin",
+      "url": "https://www.leboncoin.fr/l/dp_seine-maritime",
+      "snippet": "Toutes nos annonces gratuites Seine-Maritime (76). Consultez nos 1720788 annonces de particuliers et professionnels sur leboncoin."
+    },
+    {
+      "title": "Haute-Normandie - leboncoin",
+      "url": "https://www.leboncoin.fr/l/rp_haute-normandie",
+      "snippet": "Toutes nos annonces gratuites Haute-Normandie. Consultez nos 2645134 annonces de particuliers et professionnels sur leboncoin"
+    },
+    {
+      "title": "Seine-Maritime (76) - page 2 - leboncoin",
+      "url": "https://www.leboncoin.fr/l/dp_seine-maritime/p-2",
+      "snippet": "Toutes nos annonces gratuites Seine-Maritime (76). Consultez nos 1720381 annonces de particuliers et professionnels sur leboncoin …"
+    },
+    {
+      "title": "Maison à vendre et vente appartement Seine-Maritime (76) - leboncoin",
+      "url": "https://www.leboncoin.fr/cl/ventes_immobilieres/dp_seine-maritime",
+      "snippet": "Toutes nos annonces gratuites Maison à vendre et vente appartement Seine-Maritime (76). Consultez nos 16276 annonces de …"
+    },
+    {
+      "title": "Normandie - leboncoin",
+      "url": "https://www.leboncoin.fr/l/rp_normandie",
+      "snippet": "Toutes nos annonces gratuites Normandie. Consultez nos 4758812 annonces de particuliers et professionnels sur leboncoin."
+    }
+  ]
+}

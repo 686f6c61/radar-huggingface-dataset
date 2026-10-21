@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Hendriksai/study-lightweight-multimodal",
+  "slug": "hendriksai-study-lightweight-multimodal",
+  "author": "Hendriksai",
+  "url": "https://huggingface.co/Hendriksai/study-lightweight-multimodal",
+  "created_at": "2026-10-21T01:28:43.000Z",
+  "updated_at": "2026-10-21T01:28:49.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "lightweight-multimodal",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Perfect DOS VGA 437 Font | dafont.com",
+      "url": "https://www.dafont.com/perfect-dos-vga-437.font",
+      "snippet": "Perfect DOS VGA 437 Perfect DOS VGA 437 à by Zeh Fernando in Bitmap (16 px) [help] 402,149 downloads (56 yesterday) 11 …"
+    },
+    {
+      "title": "Code page 437 - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Code_page_437",
+      "snippet": "To draw these characters directly from these code points, a Microsoft Windows font called MS Linedraw [27] replicates all of the code …"
+    },
+    {
+      "title": "GitHub - DosWorld/VGA3x: Resident programs that allow forcibly set VGA ...",
+      "url": "https://github.com/DosWorld/VGA3x",
+      "snippet": "Here are two resident programs that allow forcibly set VGA adapters to 30-line mode when trying to install via BIOS 2nd or 3rd video …"
+    },
+    {
+      "title": "DOS Days - Hardware Index",
+      "url": "https://www.dosdays.co.uk/dos_hardware_index.php",
+      "snippet": "DOS Hardware Index From here you can delve into the history and technical details of a number of the more common DOS-era PCs, …"
+    },
+    {
+      "title": "Matrox MGA DOS Setup and Utilities Revision 3.47.000",
+      "url": "https://archive.org/details/setup347",
+      "snippet": "Please download files in this item to interact with them on your computer."
+    }
+  ]
+}

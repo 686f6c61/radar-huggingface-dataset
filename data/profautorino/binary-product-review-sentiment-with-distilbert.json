@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "profautorino/binary-product-review-sentiment-with-distilbert",
+  "slug": "profautorino-binary-product-review-sentiment-with-distilbert",
+  "author": "profautorino",
+  "url": "https://huggingface.co/profautorino/binary-product-review-sentiment-with-distilbert",
+  "created_at": "2026-10-21T02:03:35.000Z",
+  "updated_at": "2026-10-21T13:06:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "amazon reviews",
+    "bert",
+    "text-to-text",
+    "text-classification",
+    "sentiment",
+    "binary",
+    "en",
+    "dataset:Cleanlab/amazon-reviews",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 26,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 535699069,
+  "storage_human": "536 MB",
+  "base_model": "google-bert/bert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "Amazon Reviews",
+      "metric": null,
+      "value": 0.892
+    },
+    {
+      "task": null,
+      "dataset": "Amazon Reviews",
+      "metric": null,
+      "value": 0.2724
+    }
+  ],
+  "sources": [
+    {
+      "title": "Actualité économique, Bourse, Banque en ligne - Boursorama",
+      "url": "https://www.boursorama.com/",
+      "snippet": "Communauté Rejoignez la communauté Boursorama : échangez, partagez vos avis, posez des questions et enrichissez vos …"
+    },
+    {
+      "title": "CAC 40 Cours Indice PX1, Cotation Bourse Euronext Paris - Boursorama",
+      "url": "https://www.boursorama.com/bourse/indices/cours/1rPCAC/",
+      "snippet": "Le cours de l'indice CAC 40 PX1 en temps réel sur Boursorama : historique de la cotation à la bourse de Euronext Paris, actualités …"
+    },
+    {
+      "title": "Espace Client et connexion Compte BoursoBank (ex-Boursorama …",
+      "url": "https://clients.boursorama.com/connexion/",
+      "snippet": "Accédez à vos comptes BoursoBank (ex-Boursorama Banque) et connectez-vous de manière sécurisée à votre espace client."
+    },
+    {
+      "title": "Bourse en direct, Cours actions et dérivés - Boursorama",
+      "url": "https://www.boursorama.com/bourse/",
+      "snippet": "Suivez l'actualité de la Bourse en direct : cours des actions, indices, devises, matières premières cotées en bourse, produits dérivés …"
+    },
+    {
+      "title": "Actions éligibles au SRD - - Action : cours, cotation ... - Boursorama",
+      "url": "https://www.boursorama.com/bourse/actions/cotations/",
+      "snippet": "Retrouvez en direct de la bourse de Paris toutes les informations en temps réel et suivez l'évolution et les actualités des marchés …"
+    }
+  ]
+}

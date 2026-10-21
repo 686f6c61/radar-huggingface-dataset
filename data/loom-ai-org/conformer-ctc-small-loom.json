@@ -5,7 +5,7 @@
   "author": "loom-ai-org",
   "url": "https://huggingface.co/loom-ai-org/conformer-ctc-small-loom",
   "created_at": "2026-08-10T20:52:22.000Z",
-  "updated_at": "2026-10-01T12:34:38.000Z",
+  "updated_at": "2026-10-21T14:02:21.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -25,12 +25,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 137,
+  "downloads_30d": 135,
   "trending_score": 0,
-  "parameters": 15192145,
-  "parameters_human": "15.2M",
-  "storage_bytes": 367607424,
-  "storage_human": "368 MB",
+  "parameters": 14929489,
+  "parameters_human": "14.9M",
+  "storage_bytes": 427824640,
+  "storage_human": "428 MB",
   "base_model": "nvidia/stt_en_conformer_ctc_small",
   "formats": [
     "gguf"

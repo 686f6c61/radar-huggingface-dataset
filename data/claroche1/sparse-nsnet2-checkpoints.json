@@ -5,7 +5,7 @@
   "author": "claroche1",
   "url": "https://huggingface.co/claroche1/sparse-nsnet2-checkpoints",
   "created_at": "2026-04-19T20:40:26.000Z",
-  "updated_at": "2026-10-18T11:36:32.000Z",
+  "updated_at": "2026-10-21T08:06:47.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -37,8 +37,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 316004404,
-  "storage_human": "316 MB",
+  "storage_bytes": 510462274,
+  "storage_human": "510 MB",
   "base_model": null,
   "formats": [
     "onnx"
