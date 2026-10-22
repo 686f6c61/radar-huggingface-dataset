@@ -5,7 +5,7 @@
   "author": "h2oai",
   "url": "https://huggingface.co/h2oai/h2o-lightning-4b",
   "created_at": "2026-10-02T19:19:51.000Z",
-  "updated_at": "2026-10-21T00:06:46.000Z",
+  "updated_at": "2026-10-22T07:05:04.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -30,11 +30,11 @@
     "region:us"
   ],
   "likes": 87,
-  "downloads_30d": 5681,
+  "downloads_30d": 5899,
   "trending_score": 17,
   "parameters": 4659865088,
   "parameters_human": "4.66B",
-  "storage_bytes": 55852842013,
+  "storage_bytes": 55853138133,
   "storage_human": "55.9 GB",
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [

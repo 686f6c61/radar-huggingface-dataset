@@ -5,7 +5,7 @@
   "author": "mazesmazes",
   "url": "https://huggingface.co/mazesmazes/tiny-audio-granite-qwen-500",
   "created_at": "2026-10-21T21:11:28.000Z",
-  "updated_at": "2026-10-22T03:35:20.000Z",
+  "updated_at": "2026-10-22T08:49:51.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "feature-extraction",
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": 604182528,
   "parameters_human": "604.2M",
-  "storage_bytes": 16928816698,
-  "storage_human": "16.9 GB",
+  "storage_bytes": 31429440010,
+  "storage_human": "31.4 GB",
   "base_model": null,
   "formats": [
     "safetensors"

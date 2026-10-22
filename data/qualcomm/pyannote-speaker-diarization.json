@@ -5,7 +5,7 @@
   "author": "qualcomm",
   "url": "https://huggingface.co/qualcomm/Pyannote-Speaker-Diarization",
   "created_at": "2026-10-07T00:00:25.000Z",
-  "updated_at": "2026-10-07T00:00:26.000Z",
+  "updated_at": "2026-10-21T17:50:48.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "audio-classification",

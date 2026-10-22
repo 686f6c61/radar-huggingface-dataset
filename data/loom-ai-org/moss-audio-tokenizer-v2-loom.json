@@ -5,7 +5,7 @@
   "author": "loom-ai-org",
   "url": "https://huggingface.co/loom-ai-org/moss-audio-tokenizer-v2-loom",
   "created_at": "2026-09-27T17:00:19.000Z",
-  "updated_at": "2026-09-27T17:17:00.000Z",
+  "updated_at": "2026-10-21T13:30:34.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-audio",
@@ -23,12 +23,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 43,
+  "downloads_30d": 45,
   "trending_score": 0,
   "parameters": 1078514590,
   "parameters_human": "1.08B",
-  "storage_bytes": 4314792288,
-  "storage_human": "4.3 GB",
+  "storage_bytes": 8629583488,
+  "storage_human": "8.6 GB",
   "base_model": "OpenMOSS-Team/MOSS-Audio-Tokenizer-v2",
   "formats": [
     "gguf"

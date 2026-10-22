@@ -5,7 +5,7 @@
   "author": "HorizonRobotics",
   "url": "https://huggingface.co/HorizonRobotics/Ego4WAM",
   "created_at": "2026-09-29T13:58:27.000Z",
-  "updated_at": "2026-10-13T06:26:01.000Z",
+  "updated_at": "2026-10-21T06:07:22.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 0,
+  "downloads_30d": 5,
   "trending_score": 0,
   "parameters": 13456608092,
   "parameters_human": "13.46B",

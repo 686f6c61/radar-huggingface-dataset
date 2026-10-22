@@ -5,7 +5,7 @@
   "author": "Coralfil",
   "url": "https://huggingface.co/Coralfil/Atlantis-Pyramid-v2",
   "created_at": "2026-10-09T00:19:52.000Z",
-  "updated_at": "2026-10-21T00:48:28.000Z",
+  "updated_at": "2026-10-21T12:16:38.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -44,7 +44,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 18,
+  "downloads_30d": 29,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

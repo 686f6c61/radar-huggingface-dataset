@@ -5,7 +5,7 @@
   "author": "webmp3",
   "url": "https://huggingface.co/webmp3/Sakura-Qwen3.8-Flash-Next-Compact-IQ2_XS-CP2-GGUF",
   "created_at": "2026-10-21T19:29:14.000Z",
-  "updated_at": "2026-10-21T19:34:08.000Z",
+  "updated_at": "2026-10-22T03:56:00.000Z",
   "license": "qwen-community-1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",

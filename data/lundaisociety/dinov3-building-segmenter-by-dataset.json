@@ -5,7 +5,7 @@
   "author": "LundAISociety",
   "url": "https://huggingface.co/LundAISociety/dinov3-building-segmenter-by-dataset",
   "created_at": "2026-10-11T12:41:35.000Z",
-  "updated_at": "2026-10-18T18:15:28.000Z",
+  "updated_at": "2026-10-22T06:08:28.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "pytorch",
+    "onnx",
     "remote-sensing",
     "building-segmentation",
     "dinov3",
@@ -26,10 +27,12 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 323096150,
-  "storage_human": "323 MB",
+  "storage_bytes": 1693855772,
+  "storage_human": "1.7 GB",
   "base_model": null,
-  "formats": [],
+  "formats": [
+    "onnx"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

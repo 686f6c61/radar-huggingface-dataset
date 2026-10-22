@@ -5,7 +5,7 @@
   "author": "Elevatormusic",
   "url": "https://huggingface.co/Elevatormusic/DeepSeek-V4.1-Flash-1017-2x-DGX-Spark-TensorFold-2x-Faster",
   "created_at": "2026-10-18T00:39:38.000Z",
-  "updated_at": "2026-10-20T02:27:48.000Z",
+  "updated_at": "2026-10-21T16:08:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

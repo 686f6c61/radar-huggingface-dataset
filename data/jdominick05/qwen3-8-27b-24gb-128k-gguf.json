@@ -5,7 +5,7 @@
   "author": "jdominick05",
   "url": "https://huggingface.co/jdominick05/Qwen3.8-27B-24GB-128k-GGUF",
   "created_at": "2026-10-12T17:44:59.000Z",
-  "updated_at": "2026-10-13T18:39:03.000Z",
+  "updated_at": "2026-10-21T18:59:15.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,7 +31,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 2002,
+  "downloads_30d": 2012,
   "trending_score": 0,
   "parameters": 26895998464,
   "parameters_human": "26.90B",

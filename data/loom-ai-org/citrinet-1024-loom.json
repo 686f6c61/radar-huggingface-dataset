@@ -5,7 +5,7 @@
   "author": "loom-ai-org",
   "url": "https://huggingface.co/loom-ai-org/citrinet-1024-loom",
   "created_at": "2026-10-01T13:02:52.000Z",
-  "updated_at": "2026-10-01T13:17:37.000Z",
+  "updated_at": "2026-10-21T15:25:24.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -25,12 +25,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 51,
+  "downloads_30d": 61,
   "trending_score": 0,
-  "parameters": 141378159,
-  "parameters_human": "141.4M",
-  "storage_bytes": 566065504,
-  "storage_human": "566 MB",
+  "parameters": 141115503,
+  "parameters_human": "141.1M",
+  "storage_bytes": 1130940384,
+  "storage_human": "1.1 GB",
   "base_model": "nvidia/stt_en_citrinet_1024_gamma_0_25",
   "formats": [
     "gguf"

@@ -5,7 +5,7 @@
   "author": "ndaly",
   "url": "https://huggingface.co/ndaly/Voxtral-Mini-4B-Realtime-2602-tt-p300x2",
   "created_at": "2026-09-25T16:29:43.000Z",
-  "updated_at": "2026-10-15T21:34:36.000Z",
+  "updated_at": "2026-10-21T17:23:52.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",

@@ -5,7 +5,7 @@
   "author": "zonay",
   "url": "https://huggingface.co/zonay/qwen3-bash-v3-GGUF",
   "created_at": "2026-10-03T12:34:44.000Z",
-  "updated_at": "2026-10-03T12:38:39.000Z",
+  "updated_at": "2026-10-21T13:48:14.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -29,7 +29,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 108,
+  "downloads_30d": 122,
   "trending_score": 0,
   "parameters": 596049920,
   "parameters_human": "596.0M",

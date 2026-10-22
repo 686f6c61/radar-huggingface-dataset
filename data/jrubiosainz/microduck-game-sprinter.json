@@ -5,7 +5,7 @@
   "author": "jrubiosainz",
   "url": "https://huggingface.co/jrubiosainz/microduck-game-sprinter",
   "created_at": "2026-10-12T16:53:19.000Z",
-  "updated_at": "2026-10-19T08:32:08.000Z",
+  "updated_at": "2026-10-21T08:31:13.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -22,12 +22,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 117,
+  "downloads_30d": 129,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 8065241,
-  "storage_human": "8 MB",
+  "storage_bytes": 9653766,
+  "storage_human": "10 MB",
   "base_model": "HannesVonEssen/microduck-running",
   "formats": [
     "onnx"

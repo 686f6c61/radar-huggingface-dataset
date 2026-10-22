@@ -5,7 +5,7 @@
   "author": "webmp3",
   "url": "https://huggingface.co/webmp3/Sakura-Qwen3.8-Flash-Next-Compact-UD-IQ1_S-CP2-GGUF",
   "created_at": "2026-10-21T21:17:01.000Z",
-  "updated_at": "2026-10-21T22:58:33.000Z",
+  "updated_at": "2026-10-22T03:56:19.000Z",
   "license": "qwen-community-1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -26,8 +26,8 @@
     "de",
     "en",
     "zh",
-    "base_model:Qwen/Qwen3.8-Flash-Next",
-    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "base_model:unsloth/Qwen3.8-Flash-Next-GGUF",
+    "base_model:quantized:unsloth/Qwen3.8-Flash-Next-GGUF",
     "license:other",
     "endpoints_compatible",
     "region:us",
@@ -41,7 +41,7 @@
   "parameters_human": "176.94B",
   "storage_bytes": 57276011840,
   "storage_human": "57.3 GB",
-  "base_model": "Qwen/Qwen3.8-Flash-Next, unsloth/Qwen3.8-Flash-Next-GGUF",
+  "base_model": "unsloth/Qwen3.8-Flash-Next-GGUF",
   "formats": [
     "gguf"
   ],

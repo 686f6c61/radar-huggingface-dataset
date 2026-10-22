@@ -5,10 +5,10 @@
   "author": "AI999X",
   "url": "https://huggingface.co/AI999X/mechanics-ai999x",
   "created_at": "2026-10-21T21:28:57.000Z",
-  "updated_at": "2026-10-22T03:17:51.000Z",
+  "updated_at": "2026-10-22T03:54:47.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
-  "pipeline_tag": null,
+  "pipeline_tag": "sentence-similarity",
   "library": "mechanics-ai999x",
   "languages": [
     "en"
@@ -16,6 +16,7 @@
   "tags": [
     "mechanics-ai999x",
     "onnx",
+    "safetensors",
     "classical-mechanics",
     "physics",
     "step-by-step-solutions",
@@ -24,6 +25,9 @@
     "offline",
     "verified-ai",
     "zero-hallucination",
+    "sentence-similarity",
+    "feature-extraction",
+    "semantic-search",
     "physics-solver",
     "mechanics",
     "oscillations",
@@ -57,13 +61,14 @@
   "likes": 0,
   "downloads_30d": 0,
   "trending_score": 0,
-  "parameters": null,
-  "parameters_human": null,
-  "storage_bytes": 11233078,
-  "storage_human": "11 MB",
+  "parameters": 4715520,
+  "parameters_human": "4.7M",
+  "storage_bytes": 34991490,
+  "storage_human": "35 MB",
   "base_model": null,
   "formats": [
-    "onnx"
+    "onnx",
+    "safetensors"
   ],
   "is_conversational": false,
   "gated": false,

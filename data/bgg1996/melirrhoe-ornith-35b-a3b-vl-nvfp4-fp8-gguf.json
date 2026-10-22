@@ -5,7 +5,7 @@
   "author": "bgg1996",
   "url": "https://huggingface.co/bgg1996/Melirrhoe-Ornith-35B-A3B-VL-NVFP4-FP8-GGUF",
   "created_at": "2026-09-30T01:20:09.000Z",
-  "updated_at": "2026-10-01T04:13:22.000Z",
+  "updated_at": "2026-10-21T20:38:01.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "gguf",
+    "en",
     "base_model:bgg1996/Melirrhoe-Ornith-35B-A3B-VL-NVFP4-FP8",
     "base_model:quantized:bgg1996/Melirrhoe-Ornith-35B-A3B-VL-NVFP4-FP8",
     "license:mit",
@@ -21,7 +22,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 625,
+  "downloads_30d": 637,
   "trending_score": 0,
   "parameters": 35505312896,
   "parameters_human": "35.51B",

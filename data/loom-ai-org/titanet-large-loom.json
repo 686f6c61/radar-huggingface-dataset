@@ -5,7 +5,7 @@
   "author": "loom-ai-org",
   "url": "https://huggingface.co/loom-ai-org/titanet-large-loom",
   "created_at": "2026-10-01T19:57:37.000Z",
-  "updated_at": "2026-10-01T19:59:09.000Z",
+  "updated_at": "2026-10-21T15:42:47.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -26,12 +26,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 44,
+  "downloads_30d": 53,
   "trending_score": 0,
-  "parameters": 22394250,
-  "parameters_human": "22.4M",
-  "storage_bytes": 89620096,
-  "storage_human": "90 MB",
+  "parameters": 22131594,
+  "parameters_human": "22.1M",
+  "storage_bytes": 178176800,
+  "storage_human": "178 MB",
   "base_model": "nvidia/speakerverification_en_titanet_large",
   "formats": [
     "gguf"

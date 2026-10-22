@@ -5,7 +5,7 @@
   "author": "luisastellet",
   "url": "https://huggingface.co/luisastellet/qwen-metaphor-unke-camada-12-zero-um",
   "created_at": "2026-10-18T00:47:34.000Z",
-  "updated_at": "2026-10-18T00:48:06.000Z",
+  "updated_at": "2026-10-22T01:54:12.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -23,12 +23,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 26,
+  "downloads_30d": 28,
   "trending_score": 0,
   "parameters": 596049920,
   "parameters_human": "596.0M",
-  "storage_bytes": 2395657618,
-  "storage_human": "2.4 GB",
+  "storage_bytes": 7164127554,
+  "storage_human": "7.2 GB",
   "base_model": null,
   "formats": [
     "safetensors"

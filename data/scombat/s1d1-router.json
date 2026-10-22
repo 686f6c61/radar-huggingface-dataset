@@ -5,7 +5,7 @@
   "author": "scombat",
   "url": "https://huggingface.co/scombat/s1d1-router",
   "created_at": "2026-10-14T22:55:08.000Z",
-  "updated_at": "2026-10-18T22:34:00.000Z",
+  "updated_at": "2026-10-21T23:17:36.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -42,7 +42,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 32,
+  "downloads_30d": 38,
   "trending_score": 0,
   "parameters": 307546389,
   "parameters_human": "307.5M",

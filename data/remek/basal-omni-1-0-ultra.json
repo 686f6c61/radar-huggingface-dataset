@@ -5,7 +5,7 @@
   "author": "Remek",
   "url": "https://huggingface.co/Remek/basal-omni-1.0-ultra",
   "created_at": "2026-10-15T09:02:55.000Z",
-  "updated_at": "2026-10-19T04:54:55.000Z",
+  "updated_at": "2026-10-21T09:17:20.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -36,7 +36,7 @@
     "region:us"
   ],
   "likes": 26,
-  "downloads_30d": 1010,
+  "downloads_30d": 1080,
   "trending_score": 26,
   "parameters": 31273086512,
   "parameters_human": "31.27B",

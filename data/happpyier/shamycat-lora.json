@@ -5,7 +5,7 @@
   "author": "happpyier",
   "url": "https://huggingface.co/happpyier/shamycat-lora",
   "created_at": "2026-10-09T01:42:07.000Z",
-  "updated_at": "2026-10-20T16:14:23.000Z",
+  "updated_at": "2026-10-21T19:51:37.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-to-image",
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 202,
+  "downloads_30d": 206,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

@@ -5,13 +5,15 @@
   "author": "MBZUAI",
   "url": "https://huggingface.co/MBZUAI/araseg",
   "created_at": "2026-10-08T14:57:53.000Z",
-  "updated_at": "2026-10-08T14:57:53.000Z",
+  "updated_at": "2026-10-22T09:27:09.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
   "library": null,
   "languages": [],
   "tags": [
+    "sentence-segmentation",
+    "ar",
     "license:mit",
     "region:us"
   ],

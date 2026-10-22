@@ -34,11 +34,11 @@
     "region:us"
   ],
   "likes": 3,
-  "downloads_30d": 25,
+  "downloads_30d": 29,
   "trending_score": 0,
   "parameters": 937817577,
   "parameters_human": "937.8M",
-  "storage_bytes": 3812520649,
+  "storage_bytes": 3784123543,
   "storage_human": "3.8 GB",
   "base_model": "ai4bharat/indic-parler-tts",
   "formats": [

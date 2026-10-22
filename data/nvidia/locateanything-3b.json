@@ -39,9 +39,9 @@
     "deploy:sagemaker",
     "region:us"
   ],
-  "likes": 3125,
-  "downloads_30d": 393208,
-  "trending_score": 11,
+  "likes": 3127,
+  "downloads_30d": 391823,
+  "trending_score": 12,
   "parameters": 3830665968,
   "parameters_human": "3.83B",
   "storage_bytes": 7789385442,

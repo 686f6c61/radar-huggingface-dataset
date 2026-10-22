@@ -21,10 +21,11 @@
     "base_model:google/gemma-4-31B-it",
     "base_model:finetune:google/gemma-4-31B-it",
     "license:apache-2.0",
+    "eval-results",
     "region:us"
   ],
   "likes": 47,
-  "downloads_30d": 1484,
+  "downloads_30d": 1545,
   "trending_score": 18,
   "parameters": 31273088876,
   "parameters_human": "31.27B",

@@ -5,7 +5,7 @@
   "author": "phequals",
   "url": "https://huggingface.co/phequals/qwen35-2b-muesli-cleanup-v12-gguf",
   "created_at": "2026-10-21T19:28:37.000Z",
-  "updated_at": "2026-10-21T19:32:13.000Z",
+  "updated_at": "2026-10-22T08:30:51.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,10 +31,10 @@
   "likes": 0,
   "downloads_30d": 0,
   "trending_score": 0,
-  "parameters": 1942653248,
-  "parameters_human": "1.94B",
-  "storage_bytes": 3388838656,
-  "storage_human": "3.4 GB",
+  "parameters": 1881825088,
+  "parameters_human": "1.88B",
+  "storage_bytes": 6675246720,
+  "storage_human": "6.7 GB",
   "base_model": "Qwen/Qwen3.5-2B",
   "formats": [
     "gguf"

@@ -5,7 +5,7 @@
   "author": "kaxing",
   "url": "https://huggingface.co/kaxing/calculator",
   "created_at": "2026-10-07T13:39:53.000Z",
-  "updated_at": "2026-10-21T02:20:29.000Z",
+  "updated_at": "2026-10-21T23:40:46.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -18,12 +18,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 95,
+  "downloads_30d": 131,
   "trending_score": 0,
-  "parameters": 7918463,
-  "parameters_human": "7.9M",
-  "storage_bytes": 243967136,
-  "storage_human": "244 MB",
+  "parameters": 9867495,
+  "parameters_human": "9.9M",
+  "storage_bytes": 322961568,
+  "storage_human": "323 MB",
   "base_model": null,
   "formats": [
     "gguf"

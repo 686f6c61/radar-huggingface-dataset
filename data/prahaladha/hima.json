@@ -56,13 +56,13 @@
     "model-index",
     "region:us"
   ],
-  "likes": 1,
-  "downloads_30d": 272,
+  "likes": 2,
+  "downloads_30d": 297,
   "trending_score": 0,
   "parameters": 586887680,
   "parameters_human": "586.9M",
-  "storage_bytes": 3555160835,
-  "storage_human": "3.6 GB",
+  "storage_bytes": 1207236455,
+  "storage_human": "1.2 GB",
   "base_model": "Qwen/Qwen3-ASR-1.7B, google/gemma-3-270m",
   "formats": [
     "safetensors"

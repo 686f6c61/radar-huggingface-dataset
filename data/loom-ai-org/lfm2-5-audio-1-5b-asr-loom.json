@@ -5,7 +5,7 @@
   "author": "loom-ai-org",
   "url": "https://huggingface.co/loom-ai-org/lfm2.5-audio-1.5b-asr-loom",
   "created_at": "2026-10-02T19:09:33.000Z",
-  "updated_at": "2026-10-02T19:52:47.000Z",
+  "updated_at": "2026-10-21T15:34:00.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "automatic-speech-recognition",
@@ -25,12 +25,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 75,
+  "downloads_30d": 125,
   "trending_score": 0,
-  "parameters": 1290617777,
+  "parameters": 1290355121,
   "parameters_human": "1.29B",
-  "storage_bytes": 5165159040,
-  "storage_human": "5.2 GB",
+  "storage_bytes": 10329265376,
+  "storage_human": "10.3 GB",
   "base_model": "LiquidAI/LFM2.5-Audio-1.5B",
   "formats": [
     "gguf"

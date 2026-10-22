@@ -5,7 +5,7 @@
   "author": "nchapman",
   "url": "https://huggingface.co/nchapman/Qwen3.5-9B-W4A16-GPTQ",
   "created_at": "2026-10-08T23:07:17.000Z",
-  "updated_at": "2026-10-14T00:04:26.000Z",
+  "updated_at": "2026-10-21T23:56:37.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -28,12 +28,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 247,
+  "downloads_30d": 275,
   "trending_score": 0,
   "parameters": 9409813744,
   "parameters_human": "9.41B",
-  "storage_bytes": 17606841678,
-  "storage_human": "17.6 GB",
+  "storage_bytes": 34725761726,
+  "storage_human": "34.7 GB",
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"

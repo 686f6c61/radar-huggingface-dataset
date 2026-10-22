@@ -26,12 +26,12 @@
     "region:us",
     "not-for-all-audiences"
   ],
-  "likes": 230,
+  "likes": 255,
   "downloads_30d": 3737,
-  "trending_score": 18.2,
+  "trending_score": 19.200000000000003,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 27408935003,
+  "storage_bytes": 27412869636,
   "storage_human": "27.4 GB",
   "base_model": "OpenMOSS-Team/MOSS-Image-SFT",
   "formats": [

@@ -5,7 +5,7 @@
   "author": "jgchaparro",
   "url": "https://huggingface.co/jgchaparro/Llama-Artemis-lora",
   "created_at": "2026-10-09T12:14:36.000Z",
-  "updated_at": "2026-10-21T00:10:42.000Z",
+  "updated_at": "2026-10-22T05:56:44.000Z",
   "license": "llama3.1",
   "license_family": "oss",
   "pipeline_tag": "translation",
@@ -32,7 +32,7 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 690689535,
+  "storage_bytes": 690769034,
   "storage_human": "691 MB",
   "base_model": "ilsp/Llama-Krikri-8B-Instruct-v1.5",
   "formats": [

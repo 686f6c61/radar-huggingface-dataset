@@ -5,7 +5,7 @@
   "author": "OpensourceWTF",
   "url": "https://huggingface.co/OpensourceWTF/DeepSeek-V4.1-Flash-streaming-repack-exl3-3.0bpw",
   "created_at": "2026-10-06T00:45:36.000Z",
-  "updated_at": "2026-10-07T21:30:32.000Z",
+  "updated_at": "2026-10-21T04:46:42.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 5,
-  "downloads_30d": 2283,
+  "downloads_30d": 2656,
   "trending_score": 0,
   "parameters": 22695013074,
   "parameters_human": "22.70B",

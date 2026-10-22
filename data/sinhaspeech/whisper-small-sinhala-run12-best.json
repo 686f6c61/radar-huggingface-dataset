@@ -5,7 +5,7 @@
   "author": "SinhaSpeech",
   "url": "https://huggingface.co/SinhaSpeech/whisper-small-sinhala-run12-best",
   "created_at": "2026-10-14T19:17:36.000Z",
-  "updated_at": "2026-10-14T19:18:05.000Z",
+  "updated_at": "2026-10-21T17:41:37.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 37,
+  "downloads_30d": 45,
   "trending_score": 0,
   "parameters": 241734912,
   "parameters_human": "241.7M",

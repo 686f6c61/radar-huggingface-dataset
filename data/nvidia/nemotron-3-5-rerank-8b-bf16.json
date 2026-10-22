@@ -5,7 +5,7 @@
   "author": "nvidia",
   "url": "https://huggingface.co/nvidia/Nemotron-3.5-Rerank-8B-BF16",
   "created_at": "2026-10-15T08:42:42.000Z",
-  "updated_at": "2026-10-20T21:28:18.000Z",
+  "updated_at": "2026-10-21T11:00:51.000Z",
   "license": "openmdw-1.1",
   "license_family": "oss",
   "pipeline_tag": "text-ranking",
@@ -101,7 +101,7 @@
     "region:us"
   ],
   "likes": 26,
-  "downloads_30d": 1292,
+  "downloads_30d": 1450,
   "trending_score": 24,
   "parameters": 8381159424,
   "parameters_human": "8.38B",
