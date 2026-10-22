@@ -5,7 +5,7 @@
   "author": "GarchenArchive",
   "url": "https://huggingface.co/GarchenArchive/wav2vec2-xls-r-300m-rinpoche",
   "created_at": "2025-11-25T16:33:05.000Z",
-  "updated_at": "2026-09-17T02:03:11.000Z",
+  "updated_at": "2026-10-21T20:01:59.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "automatic-speech-recognition",
@@ -27,12 +27,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 55,
+  "downloads_30d": 56,
   "trending_score": 0,
   "parameters": 315572995,
   "parameters_human": "315.6M",
-  "storage_bytes": 3877432795,
-  "storage_human": "3.9 GB",
+  "storage_bytes": 5139777327,
+  "storage_human": "5.1 GB",
   "base_model": "facebook/wav2vec2-xls-r-300m",
   "formats": [
     "safetensors"

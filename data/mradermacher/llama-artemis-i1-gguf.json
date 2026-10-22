@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Llama-Artemis-i1-GGUF",
   "created_at": "2026-10-10T14:36:15.000Z",
-  "updated_at": "2026-10-10T17:29:55.000Z",
+  "updated_at": "2026-10-22T18:13:04.000Z",
   "license": "llama3.1",
   "license_family": "oss",
   "pipeline_tag": "translation",
@@ -23,8 +23,8 @@
     "unsloth",
     "llama",
     "el",
-    "base_model:jgchaparro/Llama-Artemis",
-    "base_model:quantized:jgchaparro/Llama-Artemis",
+    "base_model:jgchaparro/Llama-Leonida-Beta",
+    "base_model:quantized:jgchaparro/Llama-Leonida-Beta",
     "license:llama3.1",
     "endpoints_compatible",
     "region:us",
@@ -38,7 +38,7 @@
   "parameters_human": "8.20B",
   "storage_bytes": 96438649248,
   "storage_human": "96.4 GB",
-  "base_model": "jgchaparro/Llama-Artemis",
+  "base_model": "jgchaparro/Llama-Leonida-Beta",
   "formats": [
     "gguf"
   ],

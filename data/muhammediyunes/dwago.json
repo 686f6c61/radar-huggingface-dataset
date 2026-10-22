@@ -5,7 +5,7 @@
   "author": "muhammediyunes",
   "url": "https://huggingface.co/muhammediyunes/dwago",
   "created_at": "2026-10-18T17:56:50.000Z",
-  "updated_at": "2026-10-18T17:57:30.000Z",
+  "updated_at": "2026-10-22T16:10:46.000Z",
   "license": "dwago-evaluation-license",
   "license_family": "unknown",
   "pipeline_tag": "text-classification",
@@ -16,7 +16,6 @@
   ],
   "tags": [
     "pytorch",
-    "onnx",
     "safetensors",
     "text-classification",
     "natural-language-inference",
@@ -35,11 +34,10 @@
   "trending_score": 0,
   "parameters": 30337921,
   "parameters_human": "30.3M",
-  "storage_bytes": 189368794,
-  "storage_human": "189 MB",
+  "storage_bytes": 818358250,
+  "storage_human": "818 MB",
   "base_model": null,
   "formats": [
-    "onnx",
     "safetensors"
   ],
   "is_conversational": false,

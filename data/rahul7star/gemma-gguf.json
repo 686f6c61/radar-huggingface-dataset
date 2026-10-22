@@ -5,7 +5,7 @@
   "author": "rahul7star",
   "url": "https://huggingface.co/rahul7star/gemma-gguf",
   "created_at": "2026-05-14T01:13:12.000Z",
-  "updated_at": "2026-10-20T01:41:38.000Z",
+  "updated_at": "2026-10-22T10:24:57.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,12 +21,12 @@
     "conversational"
   ],
   "likes": 2,
-  "downloads_30d": 25705,
+  "downloads_30d": 30944,
   "trending_score": 0,
   "parameters": 2516756480,
   "parameters_human": "2.52B",
-  "storage_bytes": 450356418048,
-  "storage_human": "450.4 GB",
+  "storage_bytes": 452329986752,
+  "storage_human": "452.3 GB",
   "base_model": "google/gemma-4-E2B-it, google/gemma-4-12B-it, ornith-ai/Ornith-1.5-9B",
   "formats": [
     "gguf"

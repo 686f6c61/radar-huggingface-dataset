@@ -5,7 +5,7 @@
   "author": "loom-ai-org",
   "url": "https://huggingface.co/loom-ai-org/paraformer-zh-loom",
   "created_at": "2026-09-17T10:25:04.000Z",
-  "updated_at": "2026-09-17T10:28:20.000Z",
+  "updated_at": "2026-10-21T13:31:01.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -27,12 +27,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 18,
+  "downloads_30d": 34,
   "trending_score": 0,
   "parameters": 216276050,
   "parameters_human": "216.3M",
-  "storage_bytes": 865696576,
-  "storage_human": "866 MB",
+  "storage_bytes": 1731392960,
+  "storage_human": "1.7 GB",
   "base_model": "funasr/paraformer-zh",
   "formats": [
     "gguf"

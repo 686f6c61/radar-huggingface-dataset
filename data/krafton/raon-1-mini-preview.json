@@ -23,9 +23,9 @@
     "mxfp8",
     "region:us"
   ],
-  "likes": 121,
-  "downloads_30d": 25,
-  "trending_score": 115,
+  "likes": 127,
+  "downloads_30d": 249,
+  "trending_score": 121,
   "parameters": 28783218402,
   "parameters_human": "28.78B",
   "storage_bytes": 32714641804,
@@ -35,7 +35,7 @@
     "safetensors"
   ],
   "is_conversational": true,
-  "gated": false,
+  "gated": true,
   "removed": false,
   "removed_at": null,
   "benchmarks": [],

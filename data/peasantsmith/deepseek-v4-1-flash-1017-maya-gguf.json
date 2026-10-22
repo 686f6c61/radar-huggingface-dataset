@@ -5,7 +5,7 @@
   "author": "peasantsmith",
   "url": "https://huggingface.co/peasantsmith/DeepSeek-V4.1-Flash-1017-Maya-GGUF",
   "created_at": "2026-10-19T07:48:43.000Z",
-  "updated_at": "2026-10-21T22:34:45.000Z",
+  "updated_at": "2026-10-22T14:55:23.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -25,13 +25,13 @@
     "region:us",
     "conversational"
   ],
-  "likes": 28,
-  "downloads_30d": 23033,
-  "trending_score": 28,
+  "likes": 32,
+  "downloads_30d": 30505,
+  "trending_score": 31,
   "parameters": 748494643824,
   "parameters_human": "748.49B",
-  "storage_bytes": 848208323852,
-  "storage_human": "848.2 GB",
+  "storage_bytes": 971203937804,
+  "storage_human": "971.2 GB",
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
   "formats": [
     "gguf"

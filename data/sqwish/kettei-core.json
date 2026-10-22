@@ -5,7 +5,7 @@
   "author": "Sqwish",
   "url": "https://huggingface.co/Sqwish/Kettei-Core",
   "created_at": "2026-10-18T19:26:58.000Z",
-  "updated_at": "2026-10-18T19:27:23.000Z",
+  "updated_at": "2026-10-22T12:55:17.000Z",
   "license": "kettei-community-model-license-1.0",
   "license_family": "unknown",
   "pipeline_tag": "other",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 24,
+  "downloads_30d": 30,
   "trending_score": 0,
   "parameters": 5058255360,
   "parameters_human": "5.06B",

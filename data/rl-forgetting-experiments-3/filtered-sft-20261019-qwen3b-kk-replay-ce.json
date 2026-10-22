@@ -5,7 +5,7 @@
   "author": "RL-Forgetting-Experiments-3",
   "url": "https://huggingface.co/RL-Forgetting-Experiments-3/filtered-sft-20261019-qwen3b-kk-replay-ce",
   "created_at": "2026-10-21T19:36:57.000Z",
-  "updated_at": "2026-10-21T20:11:59.000Z",
+  "updated_at": "2026-10-22T10:47:51.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -23,8 +23,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 61730442056,
-  "storage_human": "61.7 GB",
+  "storage_bytes": 123449462216,
+  "storage_human": "123.4 GB",
   "base_model": null,
   "formats": [
     "safetensors"

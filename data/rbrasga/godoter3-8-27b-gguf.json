@@ -5,7 +5,7 @@
   "author": "rbrasga",
   "url": "https://huggingface.co/rbrasga/Godoter3.8-27B-GGUF",
   "created_at": "2026-10-20T22:04:45.000Z",
-  "updated_at": "2026-10-20T23:53:14.000Z",
+  "updated_at": "2026-10-22T17:32:19.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -30,12 +30,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 53,
+  "downloads_30d": 84,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 46788947296,
-  "storage_human": "46.8 GB",
+  "storage_bytes": 70151094400,
+  "storage_human": "70.2 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"

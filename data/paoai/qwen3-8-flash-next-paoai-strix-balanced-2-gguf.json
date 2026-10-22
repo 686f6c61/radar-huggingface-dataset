@@ -5,7 +5,7 @@
   "author": "PaoAI",
   "url": "https://huggingface.co/PaoAI/Qwen3.8-Flash-Next-PaoAI-STRIX-BALANCED-2-GGUF",
   "created_at": "2026-09-15T12:24:04.000Z",
-  "updated_at": "2026-09-27T10:15:50.000Z",
+  "updated_at": "2026-10-22T10:15:30.000Z",
   "license": "qwen-community-1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -34,7 +34,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 3186,
+  "downloads_30d": 3145,
   "trending_score": 0,
   "parameters": 176943899520,
   "parameters_human": "176.94B",

@@ -21,8 +21,8 @@
     "base_model:quantized:nvidia/Qwen3.8-Flash-Next-FP4-Local",
     "region:us"
   ],
-  "likes": 6,
-  "downloads_30d": 14795,
+  "likes": 7,
+  "downloads_30d": 17743,
   "trending_score": 0,
   "parameters": 51200245760,
   "parameters_human": "51.20B",

@@ -5,7 +5,7 @@
   "author": "loom-ai-org",
   "url": "https://huggingface.co/loom-ai-org/qwen3-asr-0.6b-loom",
   "created_at": "2026-08-11T12:06:29.000Z",
-  "updated_at": "2026-10-21T14:40:44.000Z",
+  "updated_at": "2026-10-21T15:40:33.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -83,7 +83,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 51,
+  "downloads_30d": 141,
   "trending_score": 0,
   "parameters": 782622943,
   "parameters_human": "782.6M",

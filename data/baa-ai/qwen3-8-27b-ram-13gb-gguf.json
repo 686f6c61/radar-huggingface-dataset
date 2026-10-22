@@ -5,7 +5,7 @@
   "author": "baa-ai",
   "url": "https://huggingface.co/baa-ai/Qwen3.8-27B-RAM-13GB-GGUF",
   "created_at": "2026-08-23T09:11:52.000Z",
-  "updated_at": "2026-10-16T09:40:55.000Z",
+  "updated_at": "2026-10-22T07:56:37.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -26,7 +26,7 @@
     "conversational"
   ],
   "likes": 3,
-  "downloads_30d": 639,
+  "downloads_30d": 645,
   "trending_score": 0,
   "parameters": 26895998464,
   "parameters_human": "26.90B",

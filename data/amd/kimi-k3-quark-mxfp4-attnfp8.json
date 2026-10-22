@@ -5,7 +5,7 @@
   "author": "amd",
   "url": "https://huggingface.co/amd/Kimi-K3-Quark-MXFP4-AttnFP8",
   "created_at": "2026-07-30T07:49:18.000Z",
-  "updated_at": "2026-08-27T08:36:30.000Z",
+  "updated_at": "2026-10-21T17:50:58.000Z",
   "license": "kimi-k3",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -26,12 +26,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 242,
+  "downloads_30d": 243,
   "trending_score": 0,
-  "parameters": 1412120544000,
-  "parameters_human": "1412.12B",
-  "storage_bytes": 1505902420272,
-  "storage_human": "1505.9 GB",
+  "parameters": 1418198090496,
+  "parameters_human": "1418.20B",
+  "storage_bytes": 3024082734909,
+  "storage_human": "3024.1 GB",
   "base_model": "moonshotai/Kimi-K3",
   "formats": [
     "safetensors"

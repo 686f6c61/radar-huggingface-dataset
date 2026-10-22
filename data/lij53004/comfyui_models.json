@@ -5,7 +5,7 @@
   "author": "lij53004",
   "url": "https://huggingface.co/lij53004/ComfyUI_Models",
   "created_at": "2026-05-04T04:18:52.000Z",
-  "updated_at": "2026-08-18T00:04:54.000Z",
+  "updated_at": "2026-10-21T22:35:26.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -17,12 +17,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 78,
+  "downloads_30d": 104,
   "trending_score": 0,
   "parameters": 5680910336,
   "parameters_human": "5.68B",
-  "storage_bytes": 421688389112,
-  "storage_human": "421.7 GB",
+  "storage_bytes": 450850232062,
+  "storage_human": "450.9 GB",
   "base_model": null,
   "formats": [
     "gguf"

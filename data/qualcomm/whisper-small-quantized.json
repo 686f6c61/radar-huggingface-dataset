@@ -5,7 +5,7 @@
   "author": "qualcomm",
   "url": "https://huggingface.co/qualcomm/Whisper-Small-Quantized",
   "created_at": "2025-10-14T02:29:38.000Z",
-  "updated_at": "2026-10-07T00:02:44.000Z",
+  "updated_at": "2026-10-21T17:43:39.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",

@@ -5,7 +5,7 @@
   "author": "twinkapp",
   "url": "https://huggingface.co/twinkapp/mobileai",
   "created_at": "2026-10-09T14:46:47.000Z",
-  "updated_at": "2026-10-22T04:52:54.000Z",
+  "updated_at": "2026-10-22T19:32:25.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -21,10 +21,10 @@
   "likes": 1,
   "downloads_30d": 13340,
   "trending_score": 0,
-  "parameters": 1100048384,
-  "parameters_human": "1.10B",
-  "storage_bytes": 254830730096,
-  "storage_human": "254.8 GB",
+  "parameters": 2779683840,
+  "parameters_human": "2.78B",
+  "storage_bytes": 255726464944,
+  "storage_human": "255.7 GB",
   "base_model": null,
   "formats": [
     "gguf"
