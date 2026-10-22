@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mflux-community/moss-image-sft-mflux-bf16",
+  "slug": "mflux-community-moss-image-sft-mflux-bf16",
+  "author": "mflux-community",
+  "url": "https://huggingface.co/mflux-community/moss-image-sft-mflux-bf16",
+  "created_at": "2026-10-22T00:23:36.000Z",
+  "updated_at": "2026-10-22T00:24:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "mflux",
+  "languages": [],
+  "tags": [
+    "mflux",
+    "safetensors",
+    "mlx",
+    "apple-silicon",
+    "text-to-image",
+    "moss-image",
+    "base_model:OpenMOSS-Team/MOSS-Image-SFT",
+    "base_model:quantized:OpenMOSS-Team/MOSS-Image-SFT",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26182844011,
+  "storage_human": "26.2 GB",
+  "base_model": "OpenMOSS-Team/MOSS-Image-SFT",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mflux-community/moss-image-sft-mflux-bf16 · Hugging Face",
+      "url": "https://huggingface.co/mflux-community/moss-image-sft-mflux-bf16",
+      "snippet": "This is a BF16 MFlux version of MOSS-Image-SFT. MFlux runs the latest state-of-the-art generative image models locally on your Mac in native MLX. MFlux is open source and free. Community conversion by MFlux-Community-- not an official release from the original model&#x27;s authors. The original model&#x27;s ..."
+    },
+    {
+      "title": "mlx-community/MOSS-Image-SFT-bf16 · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/MOSS-Image-SFT-bf16",
+      "snippet": "MOSS-Image-SFT is the supervised fine-tune of MOSS-Image-Base: same architecture and prompts, cleaner text grouping and composition. It is the recommended checkpoint."
+    },
+    {
+      "title": "GitHub - mflux-community/mflux: Apple MLX native implementations of ...",
+      "url": "https://github.com/mflux-community/mflux",
+      "snippet": "Apple MLX native implementations of state-of-the-art generative image & video models - mflux-community/mflux"
+    },
+    {
+      "title": "MOSS Image - SFT | MOSS Image Checkpoint | Civitai",
+      "url": "https://civitai.com/models/3005406/moss-image",
+      "snippet": "MOSS Image is a 5B parameter text-to-image DiT from the OpenMOSS team, built for accurate in-image text, layout control and long prompts. It pairs a Qwen3.5 9B text encoder with the FLUX.2 VAE, accepts prompts of up to 4K tokens in natural language, booru-style tags or a JSON layout, and renders from 512px up to 2K at any aspect ratio."
+    },
+    {
+      "title": "Moss Image Sft Bf16 - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/mlx-community/moss-image-sft-bf16",
+      "snippet": "Registry entry for model Moss Image Sft Bf16; source metadata pending."
+    }
+  ]
+}

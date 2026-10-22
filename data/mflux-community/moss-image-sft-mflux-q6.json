@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "mflux-community/moss-image-sft-mflux-q6",
+  "slug": "mflux-community-moss-image-sft-mflux-q6",
+  "author": "mflux-community",
+  "url": "https://huggingface.co/mflux-community/moss-image-sft-mflux-q6",
+  "created_at": "2026-10-22T00:30:57.000Z",
+  "updated_at": "2026-10-22T00:38:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "mflux",
+  "languages": [],
+  "tags": [
+    "mflux",
+    "safetensors",
+    "mlx",
+    "apple-silicon",
+    "quantized",
+    "text-to-image",
+    "moss-image",
+    "base_model:OpenMOSS-Team/MOSS-Image-SFT",
+    "base_model:quantized:OpenMOSS-Team/MOSS-Image-SFT",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10722671364,
+  "storage_human": "10.7 GB",
+  "base_model": "OpenMOSS-Team/MOSS-Image-SFT",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mflux-community/moss-image-sft-mflux-bf16 · Hugging Face",
+      "url": "https://huggingface.co/mflux-community/moss-image-sft-mflux-bf16",
+      "snippet": "This is a BF16 MFlux version of MOSS-Image-SFT. MFlux runs the latest state-of-the-art generative image models locally on your Mac in native MLX. MFlux is open source and free. Community conversion by MFlux-Community-- not an official release from the original model&#x27;s authors. The original model&#x27;s ..."
+    },
+    {
+      "title": "mflux-community/moss-image-sft-mflux-q8 · Hugging Face",
+      "url": "https://huggingface.co/mflux-community/moss-image-sft-mflux-q8",
+      "snippet": "This is a Q8 MFlux version of MOSS-Image-SFT. MFlux runs the latest state-of-the-art generative image models locally on your Mac in native MLX. MFlux is open source and free. Community conversion by MFlux-Community-- not an official release from the original model&#x27;s authors. The original model&#x27;s ..."
+    },
+    {
+      "title": "GitHub - mflux-community/mflux: Apple MLX native implementations of ...",
+      "url": "https://github.com/mflux-community/mflux",
+      "snippet": "Apple MLX native implementations of state-of-the-art generative image & video models - mflux-community/mflux"
+    },
+    {
+      "title": "MOSS-Image: Online Demo, Downloads by VRAM and ComfyUI Guide",
+      "url": "https://mossimage.org/",
+      "snippet": "A community MLX port (transformer 4.92 GB + VAE 0.25 GB) run with mflux-generate-moss-image, 25 steps and guidance 3 in its example. It needs an mflux build with MOSS-Image support; check the model card."
+    },
+    {
+      "title": "GitHub - OpenMOSS/MOSS-Image: Official repository for MOSS-Image, a 5B ...",
+      "url": "https://github.com/OpenMOSS/MOSS-Image",
+      "snippet": "Official repository for MOSS-Image, a 5B-parameter base DiT model with high-quality text rendering, layout generation, and efficient fine-tuning. - OpenMOSS/MOSS-Image"
+    }
+  ]
+}

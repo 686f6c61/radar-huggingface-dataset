@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "sanjuoo7/indus-pocket-tts-hindi-onnx-inaya-weight8",
+  "slug": "sanjuoo7-indus-pocket-tts-hindi-onnx-inaya-weight8",
+  "author": "sanjuoo7",
+  "url": "https://huggingface.co/sanjuoo7/indus-pocket-tts-hindi-onnx-inaya-weight8",
+  "created_at": "2026-10-21T21:17:24.000Z",
+  "updated_at": "2026-10-21T21:35:47.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "hi",
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "hindi",
+    "hinglish",
+    "community",
+    "weight-only-quantization",
+    "text-to-speech",
+    "hi",
+    "en",
+    "base_model:Indus-Labs/indus-pocket-tts",
+    "base_model:quantized:Indus-Labs/indus-pocket-tts",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 177223693,
+  "storage_human": "177 MB",
+  "base_model": "Indus-Labs/indus-pocket-tts",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

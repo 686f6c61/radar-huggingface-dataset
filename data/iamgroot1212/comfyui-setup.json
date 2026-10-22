@@ -4,8 +4,8 @@
   "slug": "iamgroot1212-comfyui-setup",
   "author": "iamgroot1212",
   "url": "https://huggingface.co/iamgroot1212/comfyui-setup",
-  "created_at": "2026-04-20T06:03:55.000Z",
-  "updated_at": "2026-10-16T08:28:04.000Z",
+  "created_at": "2026-10-18T04:14:45.000Z",
+  "updated_at": "2026-10-22T01:31:36.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -23,8 +23,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 803274195534,
-  "storage_human": "803.3 GB",
+  "storage_bytes": 511151951559,
+  "storage_human": "511.2 GB",
   "base_model": null,
   "formats": [],
   "is_conversational": false,
@@ -39,24 +39,24 @@
       "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
     },
     {
-      "title": "iamgroot1212-comfyui-setup/README.md at main · Damacol ... - GitHub",
-      "url": "https://github.com/Damacol/iamgroot1212-comfyui-setup/blob/main/README.md",
-      "snippet": "iamgroot1212/comfyui-setup - Private, Uncensored AI for Real Creators and Devs Deploy {MODEL} without cloud dependencies. Uncensored, transparent, and optimized for privacy-conscious workflows."
-    },
-    {
       "title": "iamgroot1212/comfyui-setup at main - Hugging Face",
       "url": "https://huggingface.co/iamgroot1212/comfyui-setup/tree/main",
-      "snippet": "/ comfyui-setup like 0 English License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main comfyui-setup 356 GB Ctrl+K Ctrl+K 1 contributor History:109 commits iamgroot1212 Upload AIO.json 1c1dac9 verified2 days ago clip_visionUpload clip_vision_h.safetensors2 months ago diffusion-modelUpload ZIT-bf16-MoodyProMix ..."
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
     },
     {
-      "title": "ComfyUI Official Documentation - ComfyUI",
-      "url": "https://docs.comfy.org/",
-      "snippet": "Official documentation for ComfyUI, the open source node-based generative AI application. Learn to build workflows for image, video, audio, and 3D generation."
+      "title": "ComfyUI Models: Run AI Image, Video & Audio Models - Comfy",
+      "url": "https://comfy.org/hub/models/",
+      "snippet": "Browse 148 AI models in ComfyUI, including FLUX, Seedance, Kling, Veo, and Nano Banana. Try any model in your browser, then call it from your code."
     },
     {
-      "title": "Models - Comfy",
-      "url": "https://comfy.org/models/",
-      "snippet": "Run the world&#x27;s leading AI models in ComfyUI. Browse every supported model with community workflow templates ready to run."
+      "title": "ComfyUI local image generation 2026: free beginner setup - Icons8",
+      "url": "https://icons8.com/blog/articles/free-ai-generations-locally-comfyui-setup-for-beginners/",
+      "snippet": "Free AI generations locally with ComfyUI: beginner setup guide. Install, pick models, and build your first workflow for local image generation on your GPU."
+    },
+    {
+      "title": "ComfyUI Setup · Acly/krita-ai-diffusion Wiki · GitHub",
+      "url": "https://github.com/Acly/krita-ai-diffusion/wiki/ComfyUI-Setup",
+      "snippet": "Streamlined interface for generating images with AI in Krita. Inpaint and outpaint with optional text prompt, no tweaking required. - ComfyUI Setup · Acly/krita-ai-diffusion Wiki"
     }
   ]
 }

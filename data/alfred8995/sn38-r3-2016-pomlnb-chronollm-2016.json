@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "alfred8995/sn38-r3-2016-pomlnb-chronollm-2016",
+  "slug": "alfred8995-sn38-r3-2016-pomlnb-chronollm-2016",
+  "author": "alfred8995",
+  "url": "https://huggingface.co/alfred8995/sn38-r3-2016-pomlnb-chronollm-2016",
+  "created_at": "2026-10-21T19:49:03.000Z",
+  "updated_at": "2026-10-21T19:49:56.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "ChronoGPT",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1858535658,
+  "parameters_human": "1.86B",
+  "storage_bytes": 7434184688,
+  "storage_human": "7.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TikTok老外集体变「精神中国人」，喝热水、练习八段锦，这股风潮为 …",
+      "url": "https://www.zhihu.com/question/1995834955431896526",
+      "snippet": "TikTok老外集体变「精神中国人」，喝热水、练习八段锦，这股风潮为何能迅速席卷外网？ 最近，一群老外正经历着“人生中非常中国 …"
+    },
+    {
+      "title": "Tiktok | dafont.com",
+      "url": "https://www.dafont.com/pt/tiktok.font",
+      "snippet": "May 9, 2021 · Tiktok | dafont.com Free for personal Used for Commercial Used plase contact me : lettercornerstudio@gmail.com"
+    },
+    {
+      "title": "tiktok运营全攻略:从下载到赚钱流程详解 (10000字纯干货)",
+      "url": "https://www.zhihu.com/tardis/zm/art/573476219",
+      "snippet": "目前TikTok比较常见的衍生服务主要有视频下载剪辑工具、TikTok数据分析平台、TikTok海外真机，和TikTok账号交易等等。 没有哪 …"
+    },
+    {
+      "title": "New fonts | dafont.com",
+      "url": "https://www.dafont.com/new.php",
+      "snippet": "Archive of freely downloadable fonts. Browse by alphabetical listing, by style, by author or by popularity."
+    },
+    {
+      "title": "电商运营教程 - 淘帖 - 吾爱破解 - 52pojie.cn",
+      "url": "https://www.52pojie.cn/forum.php?mod=collection&action=view&ctid=1839",
+      "snippet": "Jun 10, 2025 · 电商运营教程 ,吾爱破解 - 52pojie.cn"
+    }
+  ]
+}

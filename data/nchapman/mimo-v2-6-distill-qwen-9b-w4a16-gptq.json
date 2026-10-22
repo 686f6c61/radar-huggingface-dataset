@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "nchapman/MiMo-V2.6-Distill-Qwen-9B-W4A16-GPTQ",
+  "slug": "nchapman-mimo-v2-6-distill-qwen-9b-w4a16-gptq",
+  "author": "nchapman",
+  "url": "https://huggingface.co/nchapman/MiMo-V2.6-Distill-Qwen-9B-W4A16-GPTQ",
+  "created_at": "2026-10-21T23:55:15.000Z",
+  "updated_at": "2026-10-21T23:56:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "gptq",
+    "w4a16",
+    "compressed-tensors",
+    "vllm",
+    "conversational",
+    "base_model:XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+    "base_model:quantized:XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 8579449462,
+  "storage_human": "8.6 GB",
+  "base_model": "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dont want to use ebay print shipping label, but its forcing me to?",
+      "url": "https://community.ebay.com.au/forum/selling-15/topic/dont-want-to-use-ebay-print-shipping-label-but-its-forcing-me-to-2396/",
+      "snippet": "Dont want to use ebay print shipping label, but its forcing me to? Hi, I'm new to ebay, I've made 2 sales, one last week where I …"
+    },
+    {
+      "title": "Why was I asked to log on to my bank account to set up my ebay …",
+      "url": "https://community.ebay.com.au/forum/payments-12/topic/why-was-i-asked-to-log-on-to-my-bank-account-to-set-up-my-ebay-account-5638/",
+      "snippet": "Why was I asked to log on to my bank account to set up my ebay account? Summary: The discussion centers on concerns about …"
+    },
+    {
+      "title": "eBay Italy | eBay Community",
+      "url": "https://community.ebay.it/",
+      "snippet": "Community di eBay. Trova risposte, fai domande e mettiti in contatto con la nostra comunità di utenti ed esperti."
+    },
+    {
+      "title": "Amazon与Ebay对比？ - 知乎",
+      "url": "https://www.zhihu.com/question/50632571",
+      "snippet": "Amazon与Ebay 外贸B2C领域，知道eBay和Amazon不足为奇，但是清楚知道怎么在这两家平台上开店的人却不多，尤其是在Amazon …"
+    },
+    {
+      "title": "Amazon、eBay、BestBuy这些国外的电商网站分别属于什么类型？他 …",
+      "url": "https://www.zhihu.com/question/20803624",
+      "snippet": "Amazon、eBay、BestBuy这些国外的电商网站分别属于什么类型？是B2C、C2C或者说是混合的？还有其他比较有…"
+    }
+  ]
+}

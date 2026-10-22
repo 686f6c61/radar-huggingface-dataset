@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Jordine/rlport-hkl_owl_a2_pl4_20261022_000930",
+  "slug": "jordine-rlport-hkl_owl_a2_pl4_20261022_000930",
+  "author": "Jordine",
+  "url": "https://huggingface.co/Jordine/rlport-hkl_owl_a2_pl4_20261022_000930",
+  "created_at": "2026-10-22T00:10:29.000Z",
+  "updated_at": "2026-10-22T01:40:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "research",
+    "checkpoint-backup",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15912008711,
+  "storage_human": "15.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "麻窝档村_百度百科",
+      "url": "https://baike.baidu.com/item/%E9%BA%BB%E7%AA%9D%E6%A1%A3%E6%9D%91/1543399",
+      "snippet": "麻窝档村属于云南省宣威市普立乡戈特村，属于山区，距离村委会2 公里，距乡政府22公里。全村总面积1.08平方公里，人口 ..."
+    },
+    {
+      "title": "窝档自然村-快懂百科",
+      "url": "https://m.baike.com/wikiid/4876283556377952053",
+      "snippet": "窝档自然村隶属于董堡乡老路村委会，属于山区。 位于董堡乡东南边，距离老路村委会4.50公里，距离董堡乡17.00公里。 国土面 …"
+    },
+    {
+      "title": "哟哟哟还自我介绍起来了。墙内被窝档栓着连自己浮木和中专大专同学 …",
+      "url": "https://x.com/WarriorBunny03/status/2054422976838148223",
+      "snippet": "May 13, 2026 · 哟哟哟还自我介绍起来了。 墙内被窝档栓着连自己浮木和中专大专同学都不敢图，跑到墙外来耀武扬威四处出征表现 …"
+    },
+    {
+      "title": "wowhead官网中文-魔兽世界最新wowhead官网中文地址介绍-游侠网",
+      "url": "https://gl.ali213.net/html/2024-9/1490319.html",
+      "snippet": "Jun 25, 2025 · wowhead官网中文是一个很好用的魔兽世界数据库，玩家简称它为窝窝头。下面小编就为大家带来最新wowhead官网 …"
+    },
+    {
+      "title": "密档（2026年郑大圣执导的电影）_百度百科",
+      "url": "https://baike.baidu.com/item/%E5%AF%86%E6%A1%A3/65499162",
+      "snippet": "《密档》是由上海电影（集团）有限公司出品，上海上影电影制作有限公司、上海永乐股份有限公司联合出品，王隽担任出品人及总 …"
+    }
+  ]
+}

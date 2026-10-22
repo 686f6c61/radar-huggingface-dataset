@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "alfred8995/sn38-r3-2022-pomlnb-chronollm-2022",
+  "slug": "alfred8995-sn38-r3-2022-pomlnb-chronollm-2022",
+  "author": "alfred8995",
+  "url": "https://huggingface.co/alfred8995/sn38-r3-2022-pomlnb-chronollm-2022",
+  "created_at": "2026-10-21T20:05:29.000Z",
+  "updated_at": "2026-10-21T20:06:30.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "ChronoGPT",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1858535658,
+  "parameters_human": "1.86B",
+  "storage_bytes": 7434184688,
+  "storage_human": "7.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alfred8995/r16-H-P3-d2c3q3-s100 · Hugging Face",
+      "url": "https://huggingface.co/alfred8995/r16-H-P3-d2c3q3-s100",
+      "snippet": "alfred8995 / r16-H-P3-d2c3q3-s100 Like 0 Safetensors sn38-nanochrono Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "SN38: ChronoLLM - GitHub",
+      "url": "https://github.com/chronollm/sn38",
+      "snippet": "Contribute to chronollm/sn38 development by creating an account on GitHub."
+    },
+    {
+      "title": "chronollm · PyPI",
+      "url": "https://pypi.org/project/chronollm/",
+      "snippet": "ChronoLLM Chat with temporally consistent language models. Each model only knows events up to its vintage year — no future knowledge leaking into your analysis. Install pip install chronollm Setup # Save your HuggingFace token (provided by the ChronoLLM team) chronollm login <your_token> Usage # Chat with a vintage year chronollm 2020 # Chat with a specific model chronollm owner/repo Example ..."
+    },
+    {
+      "title": "SN38 · ChronoLLM — Mining Playbook — OpenTAO",
+      "url": "https://opentao.ai/mine/playbooks/38-chronollm/",
+      "snippet": "Mining playbook for subnet 38 (ChronoLLM). Bittensor EVM gaming subnet — mining is gameplay, not inference. Current game: single-elimination Rock-Paper-Scissors with commit/reveal. Legacy: Underdog betting (minority side wins) with 7-day time-decayed activity scoring. Repo archived May 2026; games still live on EVM."
+    },
+    {
+      "title": "ChronoLLM (SN38) — Subnet Analytics — SubnetStats",
+      "url": "https://subnetstats.app/subnet/38",
+      "snippet": "ChronoLLM (SN38) on Bittensor — 1,412 holders, 8.9k τ TVL, alpha 0.0217 τ. Holder cost basis, seller exhaustion, capitulation and flow metrics from SubnetStats."
+    }
+  ]
+}

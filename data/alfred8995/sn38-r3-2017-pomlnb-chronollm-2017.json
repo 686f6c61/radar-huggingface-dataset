@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "alfred8995/sn38-r3-2017-pomlnb-chronollm-2017",
+  "slug": "alfred8995-sn38-r3-2017-pomlnb-chronollm-2017",
+  "author": "alfred8995",
+  "url": "https://huggingface.co/alfred8995/sn38-r3-2017-pomlnb-chronollm-2017",
+  "created_at": "2026-10-21T19:51:29.000Z",
+  "updated_at": "2026-10-21T19:52:34.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "ChronoGPT",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1858535658,
+  "parameters_human": "1.86B",
+  "storage_bytes": 7434184688,
+  "storage_human": "7.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Is Renderotica safe to order from? They don't use paypal",
+      "url": "https://www.daz3d.com/forums/discussion/151111/is-renderotica-safe-to-order-from-they-don-t-use-paypal",
+      "snippet": "Is this site renderotica safe to order from? They don't use paypal. Is there any place to get anatomically correct models or morphs or …"
+    },
+    {
+      "title": "MB Elvy Natural Pubic Hair for Genesis 9 Female Anatomy - Daz 3D",
+      "url": "https://www.daz3d.com/mb-elvy-natural-pubic-hair-for-genesis-9-female-anatomy",
+      "snippet": "MB Elvy Natural Pubic Hair for Genesis 9 Female Anatomy is a pubic hair set designed specifically for Genesis 9 female characters. …"
+    },
+    {
+      "title": "Texture Animator - Daz 3D",
+      "url": "https://www.daz3d.com/texture-animator",
+      "snippet": "Texture Animator is a plugin for Daz Studio on Windows that makes surfaces come alive! Have water run, have characters interact …"
+    },
+    {
+      "title": "Rosa Maria 8.1 - Daz 3D",
+      "url": "https://www.daz3d.com/rosa-maria-81",
+      "snippet": "Rosa Maria has enjoyed a lifelong passion for the rich traditions of Mexico thanks to her abuela (grandmother). She pours her energy …"
+    },
+    {
+      "title": "Gail for Genesis 8 Female - Daz 3D",
+      "url": "https://www.daz3d.com/gail-for-genesis-8-female",
+      "snippet": "Gail is a high quality character for Genesis 8 Female."
+    }
+  ]
+}

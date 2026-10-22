@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "HawkBearPig/flint-FP8-BF16-Layerwise",
+  "slug": "hawkbearpig-flint-fp8-bf16-layerwise",
+  "author": "HawkBearPig",
+  "url": "https://huggingface.co/HawkBearPig/flint-FP8-BF16-Layerwise",
+  "created_at": "2026-10-21T19:26:08.000Z",
+  "updated_at": "2026-10-21T22:42:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flint",
+    "moe",
+    "quantized",
+    "fp8",
+    "mixed-precision",
+    "dgpp",
+    "text-generation",
+    "conversational",
+    "base_model:RecursiveSI/flint",
+    "base_model:quantized:RecursiveSI/flint",
+    "license:apache-2.0",
+    "dgpp_mixed",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39785287456,
+  "parameters_human": "39.79B",
+  "storage_bytes": 76366111109,
+  "storage_human": "76.4 GB",
+  "base_model": "RecursiveSI/flint",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home | Simulassur",
+      "url": "https://www.simulassur.fr/",
+      "snippet": "Acteur incontournable du B2B, Simulassur met l’Innovation et la Technologie au coeur de son expertise Métier pour répondre aux …Read more"
+    },
+    {
+      "title": "Simulassur - Espace Client",
+      "url": "https://client.simulassur.fr/",
+      "snippet": "Mon espace client Connectez-vous à votre espace client afin d'accéder à votre contrat"
+    },
+    {
+      "title": "Espace courtier | Simulassur",
+      "url": "https://pro.simulassur.fr/",
+      "snippet": "Accédez à l'espace dédié aux courtiers pour gérer vos activités d'assurance avec Simulassur."
+    },
+    {
+      "title": "Espace courtier | Simulassur",
+      "url": "https://cafpi.simulassur.fr/",
+      "snippet": "Accédez à l'espace courtier Simulassur pour gérer vos activités professionnelles et optimiser vos services d'assurance."
+    },
+    {
+      "title": "Qui sommes nous ? | Simulassur",
+      "url": "https://www.simulassur.fr/qui-sommes-nous/",
+      "snippet": "Acteur incontournable du B2B, SimulAssur est courtier grossiste indépendant en assurance de personne depuis plus de 15 ans"
+    }
+  ]
+}

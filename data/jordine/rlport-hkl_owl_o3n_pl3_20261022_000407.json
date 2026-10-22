@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Jordine/rlport-hkl_owl_o3n_pl3_20261022_000407",
+  "slug": "jordine-rlport-hkl_owl_o3n_pl3_20261022_000407",
+  "author": "Jordine",
+  "url": "https://huggingface.co/Jordine/rlport-hkl_owl_o3n_pl3_20261022_000407",
+  "created_at": "2026-10-22T00:05:11.000Z",
+  "updated_at": "2026-10-22T01:16:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "research",
+    "checkpoint-backup",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15912559153,
+  "storage_human": "15.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SQL Replace multiple different characters in string",
+      "url": "https://stackoverflow.com/questions/39231102/sql-replace-multiple-different-characters-in-string",
+      "snippet": "Aug 30, 2016 · One comment mentions \"dozens of replace calls\"... if removing dozens of single characters, you could also use …"
+    },
+    {
+      "title": "Download & use Google Translate - Computer - Google Translate Help",
+      "url": "https://support.google.com/translate/answer/6350850?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can translate text, handwriting, photos, and speech in over 200 languages with the Google Translate app. You can also use …"
+    },
+    {
+      "title": "html - Transform: translate (-50%, -50%) - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/46184458/transform-translate-50-50",
+      "snippet": "Sep 12, 2017 · The reason why transform: translate (-50%, -50%) is required is because you want the center of the element to line up …"
+    },
+    {
+      "title": "Google Translate Community",
+      "url": "https://support.google.com/translate/community?hl=en",
+      "snippet": "Translate not displaying output I want to add my mother language to Google translator how can i kindly help me to do that what steps …"
+    },
+    {
+      "title": "html - transform:translate (10%)とするとずれる。 - スタック・オー …",
+      "url": "https://ja.stackoverflow.com/questions/35504/transformtranslate10%E3%81%A8%E3%81%99%E3%82%8B%E3%81%A8%E3%81%9A%E3%82%8C%E3%82%8B",
+      "snippet": "Jun 12, 2017 · transform: translate (10%); の10％は width:90%; すなわち width:450px; に対するもので、この場合 45px です。 10％ …"
+    }
+  ]
+}

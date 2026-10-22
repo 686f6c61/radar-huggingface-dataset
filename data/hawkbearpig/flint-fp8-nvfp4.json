@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "HawkBearPig/flint-FP8-NVFP4",
+  "slug": "hawkbearpig-flint-fp8-nvfp4",
+  "author": "HawkBearPig",
+  "url": "https://huggingface.co/HawkBearPig/flint-FP8-NVFP4",
+  "created_at": "2026-10-22T00:08:17.000Z",
+  "updated_at": "2026-10-22T00:08:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flint",
+    "moe",
+    "quantized",
+    "fp8",
+    "nvfp4",
+    "mixed-precision",
+    "text-generation",
+    "conversational",
+    "base_model:RecursiveSI/flint",
+    "base_model:quantized:RecursiveSI/flint",
+    "license:apache-2.0",
+    "dgpp_mixed",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32940183328,
+  "parameters_human": "32.94B",
+  "storage_bytes": 35781687986,
+  "storage_human": "35.8 GB",
+  "base_model": "RecursiveSI/flint",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IncestTabooFamily - Reddit",
+      "url": "https://www.reddit.com/r/IncestTabooFamily/",
+      "snippet": "The intent of r/IncestTabooFamily is to post best Curated Incest content and captions. Keeping it in family and lusting over each …"
+    },
+    {
+      "title": "Best XXX Movie : r/moviecritic - Reddit",
+      "url": "https://www.reddit.com/r/moviecritic/comments/14ti8vd/best_xxx_movie/",
+      "snippet": "Many of the XXX movies of the 1970s (the \"Golden Era of Porn\") are underrated. My wife and I decided to educate ourselves and …"
+    },
+    {
+      "title": "r/BmovieBabes - Reddit",
+      "url": "https://www.reddit.com/r/BmovieBabes/",
+      "snippet": "If you have retro XXX scenes to post, (pre-2000 only) please post them to our sister site: r/YourDadsOldPorn. This really only goes …"
+    },
+    {
+      "title": "Rewatched \"XXX\"; is this the most 2002 movie ever? : r/movies - Reddit",
+      "url": "https://www.reddit.com/r/movies/comments/93gzln/rewatched_xxx_is_this_the_most_2002_movie_ever/",
+      "snippet": "The goal of /r/Movies is to provide an inclusive place for discussions and news about films with major releases. Submissions should …"
+    },
+    {
+      "title": "pissing - Reddit",
+      "url": "https://www.reddit.com/r/pissing/",
+      "snippet": "An 18+ community for sharing photos or videos of pissing action! We don't discriminate so anyone over 18 can share either their own …"
+    }
+  ]
+}

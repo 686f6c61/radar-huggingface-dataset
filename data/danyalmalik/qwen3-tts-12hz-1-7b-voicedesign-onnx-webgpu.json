@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "danyalmalik/Qwen3-TTS-12Hz-1.7B-VoiceDesign-ONNX-WebGPU",
+  "slug": "danyalmalik-qwen3-tts-12hz-1-7b-voicedesign-onnx-webgpu",
+  "author": "danyalmalik",
+  "url": "https://huggingface.co/danyalmalik/Qwen3-TTS-12Hz-1.7B-VoiceDesign-ONNX-WebGPU",
+  "created_at": "2026-10-21T21:40:32.000Z",
+  "updated_at": "2026-10-21T21:42:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "qwen3_tts",
+    "webgpu",
+    "text-to-speech",
+    "quick-inference",
+    "base_model:Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+    "base_model:quantized:Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1354104026,
+  "storage_human": "1.4 GB",
+  "base_model": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nice escort | ladys.one",
+      "url": "https://ladys.one/france-nice",
+      "snippet": "Real photo ⭐️ Prices ⭐️ Reviews ⭐️ Beautiful independent escort girls in Nice. Best: sex, escorts and erotic massage in Nice."
+    },
+    {
+      "title": "Escort France - Annonces d'escort France et annuaire d'escort girl ...",
+      "url": "https://www.ladyxena.com/fr/escort-girl/france/var/escort-frejus.html",
+      "snippet": "Escort en France, des milliers d'annonces d'escort en France, escort girl Ã Paris, escort girl Lyon, des escort girl ou occasionnelles …"
+    },
+    {
+      "title": "Escort Nice : annonces vérifiées avec photos | EscortE",
+      "url": "https://m.escorte.com/escorts/nice/",
+      "snippet": "Rencontrez des escorts à Nice : profils vérifiés, photos récentes et avis clients. Escort girl, trans et indépendantes disponibles près …"
+    },
+    {
+      "title": "Escort Girl à Nice - Annonces d'escortes à proximité",
+      "url": "https://topescortbabes.com/fr/nice/escorts",
+      "snippet": "1 day ago · Nice Escorts sur TopEscortBabes. Les dernières escort annonces de haute classe et vip avec numéros de téléphone, …"
+    },
+    {
+      "title": "Escort Girl Fréjus : profils vérifiés avec photos | EscortE",
+      "url": "https://m.escorte.com/escorts/girls/frejus/",
+      "snippet": "Découvrez nos escort girls à Fréjus : profils féminins vérifiés, photos récentes et avis. Rencontres discrètes près de chez vous."
+    }
+  ]
+}

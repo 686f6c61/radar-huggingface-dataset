@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "rapid-mlx/DeepSeek-V4.1-Flash-1017-MLX",
+  "slug": "rapid-mlx-deepseek-v4-1-flash-1017-mlx",
+  "author": "rapid-mlx",
+  "url": "https://huggingface.co/rapid-mlx/DeepSeek-V4.1-Flash-1017-MLX",
+  "created_at": "2026-10-19T14:10:39.000Z",
+  "updated_at": "2026-10-22T01:05:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "deepseek_v41",
+    "deepseek",
+    "moe",
+    "mixed-precision",
+    "gptq",
+    "apple-silicon",
+    "rapid-mlx",
+    "text-generation",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "base_model:finetune:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 514,
+  "trending_score": 0,
+  "parameters": 269890216304,
+  "parameters_human": "269.89B",
+  "storage_bytes": 542596979446,
+  "storage_human": "542.6 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rapid Tools",
+      "url": "https://www.rapid.com/fr-fr/",
+      "snippet": "Rapid Tools are specialists in fastening tools for professional and do-it-yourself applications, when building, renovating or decorating."
+    },
+    {
+      "title": "RAPID (Régime d’APpui à l’Innovation Duale) - Ministère des Armées",
+      "url": "https://www.defense.gouv.fr/aid/deposez-votre-projet/rapid-regime-dappui-linnovation-duale",
+      "snippet": "Mis en œuvre par l’Agence de l’innovation de défense (AID), RAPID est un dispositif de subvention de projets d’innovation duale …"
+    },
+    {
+      "title": "RAPID | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/rapid",
+      "snippet": "The 1990s were a period of rapid change / growth. I was startled by a rapid movement to my left. His response to the accusation was …"
+    },
+    {
+      "title": "UK electronic components distributor | Rapid Electronics",
+      "url": "https://www.rapidonline.com/",
+      "snippet": "Order electronic components, parts, cables, connectors and tools today from Rapid, leading UK supplier of electronic parts. Fast …"
+    },
+    {
+      "title": "MyRapid",
+      "url": "https://my.rapidglobal.com/dashboard/sign-in-types",
+      "snippet": "Welcome to MyRapid Portal Log in to continue EMAIL ADDRESS OR MOBILE *"
+    }
+  ]
+}

@@ -2,95 +2,101 @@
 
 ## Resumen
 
-El repositorio `iamgroot1212/comfyui-setup` no es un modelo de inteligencia artificial en sí, sino un paquete de configuración y distribución de modelos para ComfyUI, diseñado específicamente para su despliegue en la plataforma RunPod. Incluye una colección de modelos generativos de imagen, vídeo y audio, junto con scripts de automatización y flujos de trabajo (workflows) listos para usar. Su propósito es ofrecer a creadores y desarrolladores un entorno de generación de contenido sin dependencias en la nube, con énfasis en la privacidad y la transparencia.
+`iamgroot1212/comfyui-setup` no es un modelo de IA, sino un repositorio de distribución empaquetado para desplegar ComfyUI en RunPod. Contiene un conjunto de checkpoints de generación y edición de imágenes, codificadores de texto, VAE, scripts de aprovisionamiento para RunPod y flujos de trabajo (workflows) de ComfyUI ya configurados. El autor lo publica como una imagen "todo en uno" para evitar la descarga y el cableado manual de dependencias en entornos de GPU en la nube.
 
-El repositorio contiene modelos como Z-Image-Turbo, Qwen-Image-Edit (versión AIO de Phr00t), Wan2.2 y Wan2.1 para imagen a vídeo, MiniMax-H3, Infinite Talk (para clonación de voz) y datasets de voz, además de los text encoders y VAEs necesarios. También incluye scripts de RunPod y workflows de ComfyUI. Con un tamaño de 388,4 GB y más de 100 commits, es un proyecto activo que centraliza múltiples componentes de generación multimodal.
+El paquete incluye los modelos Moss-Image-Turbo (licencia MIT), Krea2-Turbo (K2T), Z-Image-Turbo (ZIT), Qwen-Image-Edit (QIE) 2511 All-In-One de Phr00t, Qwen-Image-Turbo (QIT) 2.1 y MiniMax-H3 (MMH3), además de los text encoders y VAE necesarios. El repositorio ocupa 511,2 GB, un tamaño coherente con el almacenamiento de varios checkpoints de difusión de gran formato junto con sus componentes auxiliares. El autor indica que las LoRAs compatibles se distribuyen en otros repositorios suyos.
 
-La relevancia actual radica en que ofrece una solución integral para quienes trabajan con ComfyUI en entornos cloud, evitando la descarga individual de cada modelo y simplificando el despliegue. Sin embargo, al no ser un modelo único, las especificaciones técnicas convencionales (parámetros, arquitectura, etc.) no aplican directamente al conjunto.
+Su relevancia es práctica, no arquitectónica: resuelve el problema de reproducibilidad y tiempo de arranque en despliegues de generación de imágenes sobre GPU alquilada. Para un desarrollador o investigador que quiera evaluar ComfyUI con varios modelos de imagen en paralelo, este repositorio actúa como entorno preconfigurado. No aporta pesos entrenados por el autor ni innovaciones de arquitectura propias.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (repositorio de configuración, no un modelo único) |
-| Parametros totales | no disponible |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (se mencionan archivos en formato safetensors, incluyendo variantes bf16) |
-| Idiomas soportados | en (inglés) |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors (modelos, text encoders, VAEs) y otros archivos de configuración |
+| Arquitectura | No aplica: repositorio de despliegue con múltiples modelos de difusión (Moss-Image-Turbo, Krea2-Turbo, Z-Image-Turbo, Qwen-Image-Edit 2511 All-In-One, Qwen-Image-Turbo 2.1, MiniMax-H3); arquitectura interna de cada checkpoint no disponible |
+| Parámetros totales | No disponible (depende de cada checkpoint incluido) |
+| Parámetros activos | No aplica / no disponible |
+| Longitud de contexto | No disponible (modelos de imagen; la ventana de contexto de los text encoders no se especifica) |
+| Tipos de cuantización | No disponible en la información proporcionada; el repositorio incluye text encoders y VAE, presumiblemente en precisión completa o fp16/fp8, sin detallar |
+| Idiomas soportados | Inglés (`language: en` en la model card) |
+| Licencia | Apache-2.0 para el repositorio; Moss-Image-Turbo se declara MIT; el resto de checkpoints no detalla licencia en la información disponible |
+| Formato de pesos | No disponible (previsiblemente safetensors y componentes de ComfyUI, sin confirmar) |
+| Tamaño del repositorio | 511,2 GB |
+| Descargas / likes | 0 / 0 |
+| Fecha de creación | 2026-10-18 |
+| Última actualización | 2026-10-22 |
+| Pipeline declarado | No disponible |
 
 ## Arquitectura y entrenamiento
 
-No se puede hablar de una arquitectura única, ya que el repositorio agrupa múltiples modelos de distintos desarrolladores. Entre los componentes identificados se encuentran:
+Este repositorio no define arquitectura ni proceso de entrenamiento propio: es un artefacto de empaquetado. Los modelos incluidos pertenecen a la familia de modelos de difusión para texto-a-imagen y edición de imágenes, y se distribuyen con sus codificadores de texto y VAE correspondientes, que es la estructura habitual de un grafo de ComfyUI. La model card no documenta parámetros, número de tokens de entrenamiento, composición del dataset ni si los checkpoints originales emplearon RLHF, DPO o ajuste por preferencias.
 
-- **Z-Image-Turbo**: modelo de difusión para generación de imágenes, con variantes como `ZIT-bf16-MoodyProMix`.
-- **Qwen-Image-Edit AIO**: versión integrada del modelo de edición de imágenes Qwen-Image, empaquetada por Phr00t.
-- **Wan2.2 y Wan2.1**: modelos de imagen a vídeo, incluyendo una versión destilada de 720p.
-- **MiniMax-H3**: modelo de generación de vídeo o imagen (según la familia MiniMax).
-- **Infinite Talk**: modelo para generación de voz y clonación de voz.
-- **Datasets de voz**: conjuntos de datos para clonación de voz.
-
-No se proporcionan detalles sobre el entrenamiento de estos modelos individuales, ni sobre la composición de los datasets o técnicas de alineación (RLHF, DPO, etc.). El repositorio actúa como un "kit de herramientas" para ComfyUI, no como un modelo entrenado por el autor.
+La aportación técnica del autor se limita a la integración: scripts para RunPod (aprovisionamiento de instancia y descarga de pesos) y flujos de trabajo de ComfyUI que conectan cada checkpoint con sus encoders y VAE. No se documentan innovaciones como decodificación especulativa, atención lineal ni modos de razonamiento, y no hay información sobre el proceso de conversión o cuantización de los pesos originales de cada modelo.
 
 ## Capacidades
 
-- **Generación de imágenes**: mediante Z-Image-Turbo y Qwen-Image-Edit (edición y generación).
-- **Generación de vídeo a partir de imagen**: con los modelos Wan2.2 y Wan2.1 (incluyendo versión destilada de 720p).
-- **Generación de vídeo o imagen con MiniMax-H3**: según la variante incluida.
-- **Clonación de voz y generación de audio**: con Infinite Talk y los datasets de voz incluidos.
-- **Integración con ComfyUI**: workflows predefinidos y scripts de RunPod para automatizar el despliegue.
-- **Uso en entornos cloud**: optimizado para RunPod, aunque puede adaptarse a otros entornos.
-- **Enfoque en privacidad**: el README enfatiza la ausencia de dependencias en la nube y la transparencia.
+- Generación de imágenes a partir de texto mediante los checkpoints "Turbo" incluidos (Moss-Image-Turbo, Krea2-Turbo, Z-Image-Turbo, Qwen-Image-Turbo 2.1), que por su nomenclatura están orientados a inferencia con pocos pasos.
+- Edición de imágenes con Qwen-Image-Edit 2511 All-In-One (Phr00t), que agrupa en un único checkpoint tareas de edición guiada por instrucciones.
+- Generación y edición condicionada por imagen de referencia, según los componentes incluidos (VAE y text encoders).
+- Ejecución de grafos de ComfyUI: los workflows suministrados permiten encadenar carga de checkpoint, codificación de prompt, muestreo y decodificación VAE.
+- Personalización mediante LoRAs: el autor remite a sus otros repositorios para la colección de LoRAs compatibles.
+- Automatización de despliegue en RunPod mediante los scripts incluidos.
+- Soporte de tool calling / function calling: no disponible (no es un modelo de lenguaje conversacional).
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingües: no disponibles; la model card declara únicamente inglés.
+- Capacidades de audio o vídeo: no documentadas; MiniMax-H3 aparece listado sin especificar modalidad.
 
 ## Casos de uso
 
-- **Despliegue rápido de un entorno de generación multimodal en RunPod**: el repositorio incluye scripts que automatizan la instalación y configuración de todos los modelos, reduciendo el tiempo de setup de horas a minutos.
-- **Creación de contenido visual para marketing**: con Z-Image-Turbo se pueden generar imágenes de producto o ilustraciones, y con Wan2.2 convertirlas en vídeos cortos para redes sociales.
-- **Edición de imágenes en producción**: Qwen-Image-Edit permite modificar imágenes existentes (cambiar fondos, objetos, etc.) mediante instrucciones en lenguaje natural, útil en flujos de diseño.
-- **Doblaje y clonación de voz**: Infinite Talk, junto con los datasets de voz, permite generar voces sintéticas para narraciones, audiolibros o asistentes virtuales.
-- **Prototipado de efectos visuales**: los modelos de imagen a vídeo de Wan2.1/2.2 pueden usarse para generar animaciones a partir de fotografías fijas, ideal para previsualización en cine o publicidad.
-- **Investigación en generación multimodal**: al tener todos los modelos en un solo repositorio, los investigadores pueden comparar resultados entre arquitecturas diferentes sin necesidad de gestionar múltiples descargas.
+- Aprovisionamiento rápido de un entorno de generación de imágenes en RunPod: los scripts y workflows incluidos permiten levantar una instancia con ComfyUI operativo sin resolver manualmente dependencias de encoders y VAE.
+- Evaluación comparativa de checkpoints de difusión: al reunir varios modelos Turbo en un mismo volumen, se pueden lanzar los mismos prompts sobre Moss-Image-Turbo, Krea2-Turbo, Z-Image-Turbo y Qwen-Image-Turbo 2.1 y comparar resultados con un pipeline idéntico.
+- Edición de imágenes por instrucciones en flujos de producción de contenido: Qwen-Image-Edit 2511 All-In-One permite modificar imágenes existentes (retoque, sustitución de elementos) sin entrenar un modelo propio.
+- Creación de prototipos de interfaces creativas: los workflows de ComfyUI sirven como backend para aplicaciones que necesiten texto-a-imagen o edición, exponiendo el grafo mediante la API de ComfyUI.
+- Investigación sobre personalización con LoRAs: el repositorio proporciona la base de checkpoints sobre la que aplicar las LoRAs publicadas por el autor en repositorios separados.
+- Formación y demostraciones: un entorno reproducible con varios modelos permite preparar talleres o clases sin que los asistentes descarguen cientos de gigabytes individualmente.
+- Archivado y mirroring de checkpoints: el repositorio funciona como copia consolidada de pesos y componentes auxiliares para entornos con conectividad limitada a Hugging Face.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio no incluye métricas de rendimiento para los modelos que contiene, y no se encontraron evaluaciones comparativas en la documentación.
+No se han publicado resultados de benchmarks en la información disponible.
+
+La model card no incluye métricas objetivas (FID, CLIP score, SSIM, benchmarks de edición) ni comparaciones cuantitativas entre los checkpoints incluidos, y tampoco se han encontrado en los resultados de búsqueda proporcionados.
 
 ## Requisitos de hardware
 
-- **VRAM estimada**: no disponible de forma agregada. Depende del modelo individual. Por ejemplo, los modelos de vídeo Wan2.2 en 720p suelen requerir entre 16 y 24 GB de VRAM en fp16, mientras que Z-Image-Turbo puede funcionar con 8-12 GB. Se recomienda consultar las fichas de cada modelo.
-- **GPU recomendadas**: para el conjunto completo, se sugiere al menos una GPU con 24 GB de VRAM (RTX 3090/4090, A5000) para cargar varios modelos de forma secuencial. Para vídeo 720p, una A100 o H100 sería más adecuada.
-- **Compatibilidad con GPU de consumo**: sí, los modelos más ligeros (Z-Image-Turbo, Qwen-Image-Edit) pueden ejecutarse en RTX 3060/4060 con 12 GB, aunque con limitaciones de resolución y velocidad.
-- **Opciones de despliegue**: ComfyUI es el framework principal; se puede ejecutar localmente o en RunPod mediante los scripts incluidos. También es posible usar la API de ComfyUI para integraciones.
-- **Latencia y throughput**: no disponible. Depende del hardware y del modelo específico.
+- Almacenamiento: el repositorio completo ocupa 511,2 GB, por lo que se necesita un volumen persistente de al menos ese tamaño (más margen para VAE, salidas y caché) en RunPod o en disco local.
+- VRAM para inferencia: no disponible por modelo. Cada checkpoint debe cargarse individualmente en memoria de GPU; el requisito depende del checkpoint elegido y de la precisión de carga, datos que la model card no documenta.
+- GPU recomendadas: no disponibles en la información proporcionada. El diseño para RunPod implica GPUs de centro de datos (familias A100/H100 o equivalentes en alquiler), sin que el autor especifique modelos concretos.
+- Viabilidad en GPU de consumo: no confirmada. Con 511,2 GB de pesos totales, un equipo de consumo solo podría alojar un subconjunto de checkpoints, y siempre que el checkpoint seleccionado quepa en su VRAM.
+- Opciones de despliegue: ComfyUI como motor principal, con los workflows y scripts de RunPod incluidos. El uso de vLLM, TGI o llama.cpp no aplica a modelos de difusión y no se menciona en la documentación.
+- Latencia y throughput: no disponibles. Los checkpoints con sufijo "Turbo" sugieren regímenes de pocos pasos de muestreo, pero no se aportan tiempos medidos.
 
 ## Comparativa con modelos similares
 
-Dado que el repositorio no es un modelo único, no es posible compararlo directamente con alternativas de la misma categoría. Sin embargo, se pueden comparar algunos de sus componentes con modelos similares:
+No se dispone de datos comparativos de modelos en la información proporcionada. La comparación se plantea a nivel de formato de distribución, que es la categoría real de este artefacto:
 
-| Componente | Este repositorio | Alternativa 1 | Alternativa 2 |
-|---|---|---|---|
-| Generación de imágenes | Z-Image-Turbo | SDXL | Flux.1 |
-| Edición de imágenes | Qwen-Image-Edit | InstructPix2Pix | OmniGen |
-| Imagen a vídeo | Wan2.2 | Stable Video Diffusion | CogVideoX |
-| Clonación de voz | Infinite Talk | Tortoise TTS | Coqui XTTS |
-
-Nota: esta comparativa es orientativa y se basa en la categoría general, no en benchmarks específicos, ya que no se dispone de datos de rendimiento.
+| Alternativa | Tipo | Contenido | Licencia | Datos comparativos |
+|---|---|---|---|---|
+| iamgroot1212/comfyui-setup | Repositorio de despliegue para RunPod | 6 familias de checkpoints, text encoders, VAE, scripts, workflows (511,2 GB) | Apache-2.0 (repo); MIT en Moss-Image-Turbo | No disponible |
+| Comfy Hub de modelos (comfy.org) | Catálogo de modelos para ComfyUI | Modelos individuales (FLUX, Seedance, Kling, Veo, Nano Banana) | Variable por modelo | No disponible |
+| Krita AI Diffusion - ComfyUI Setup (wiki) | Guía de integración | Instrucciones de conexión de ComfyUI con Krita | No disponible | No disponible |
+| Checkpoints individuales en Hugging Face | Publicación por modelo | Un único modelo por repositorio | Variable por modelo | No disponible |
 
 ## Limitaciones y advertencias
 
-- **No es un modelo unificado**: al ser un repositorio de múltiples modelos, cada componente tiene sus propias limitaciones, licencias y requisitos. La licencia apache-2.0 aplica al repositorio, pero los modelos individuales pueden tener licencias diferentes (por ejemplo, Wan2.2 tiene una licencia propia de Alibaba).
-- **Riesgo de alucinación**: los modelos de generación de imagen y vídeo pueden producir artefactos visuales o contenido no deseado. La clonación de voz puede generar voces que se asemejen a personas reales, lo que plantea riesgos éticos.
-- **Sesgos**: los modelos de imagen y vídeo pueden reflejar sesgos presentes en sus datos de entrenamiento, como estereotipos de género o raza.
-- **Limitaciones de idioma**: la documentación y los scripts están en inglés; no hay soporte oficial para otros idiomas.
-- **Tamaño y almacenamiento**: 388,4 GB requieren un espacio considerable en disco y ancho de banda para la descarga inicial.
-- **Uso comercial**: aunque la licencia del repositorio es Apache 2.0, los modelos incluidos pueden tener restricciones comerciales. Es imprescindible revisar la licencia de cada componente antes de usarlo en producción.
-- **Mantenimiento**: el repositorio se actualiza con frecuencia (última actualización en agosto de 2026), pero la dependencia de terceros (Phr00t, Alibaba, etc.) puede generar incompatibilidades futuras.
+- No es un modelo: no debe citarse como un modelo entrenado ni atribuírsele capacidades de inferencia propias. Cualquier evaluación de calidad debe hacerse sobre los checkpoints individuales que contiene.
+- Licencias heterogéneas: el repositorio declara Apache-2.0, pero solo se confirma MIT para Moss-Image-Turbo. Las licencias de Krea2-Turbo, Z-Image-Turbo, Qwen-Image-Edit, Qwen-Image-Turbo 2.1 y MiniMax-H3 no se detallan, por lo que el uso comercial exige verificar cada modelo por separado antes de producción.
+- Falta de trazabilidad: no se indican versiones, hashes ni procedencia de los pesos, lo que complica la reproducibilidad y la auditoría de seguridad de los ficheros descargados.
+- Riesgo de sesgos y alucinación visual: los modelos de difusión incluidos pueden reproducir sesgos de sus datasets originales (representación demográfica, estereotipos) y generar contenido plausible pero factualmente incorrecto; no se documenta ninguna mitigación.
+- Idioma: la model card declara únicamente inglés, por lo que el rendimiento de los prompts en castellano no está garantizado ni documentado.
+- Repositorio sin tracción: 0 descargas y 0 likes en el momento de la consulta, sin validación comunitaria ni informes de terceros.
+- Coste operativo: 511,2 GB implican almacenamiento persistente y tiempos de descarga significativos; en RunPod esto se traduce en coste directo por volumen y por horas de GPU.
+- Sin benchmarks: no hay evidencia cuantitativa de calidad, por lo que la selección de un checkpoint concreto debe basarse en pruebas propias.
+- Fechas de creación y actualización (2026-10-18 y 2026-10-22) posteriores al uso habitual de este tipo de artefactos; conviene confirmar la integridad del repositorio antes de desplegarlo.
 
 ## Enlaces
 
-- [Repositorio en Hugging Face](https://huggingface.co/iamgroot1212/comfyui-setup)
-- [Copia del README en GitHub (Damacol)](https://github.com/Damacol/iamgroot1212-comfyui-setup/blob/main/README.md)
-- [Documentación oficial de ComfyUI](https://docs.comfy.org/)
-- [Catálogo de modelos compatibles con ComfyUI](https://comfy.org/models/)
+- Repositorio en Hugging Face: https://huggingface.co/iamgroot1212/comfyui-setup
+- Árbol de ficheros: https://huggingface.co/iamgroot1212/comfyui-setup/tree/main
+- Catálogo de modelos de Comfy: https://comfy.org/hub/models/
+- Guía de instalación local de ComfyUI (Icons8): https://icons8.com/blog/articles/free-ai-generations-locally-comfyui-setup-for-beginners/
+- Configuración de ComfyUI para Krita AI Diffusion: https://github.com/Acly/krita-ai-diffusion/wiki/ComfyUI-Setup

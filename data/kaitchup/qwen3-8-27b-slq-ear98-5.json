@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "kaitchup/Qwen3.8-27B-SLQ-EAR98.5",
+  "slug": "kaitchup-qwen3-8-27b-slq-ear98-5",
+  "author": "kaitchup",
+  "url": "https://huggingface.co/kaitchup/Qwen3.8-27B-SLQ-EAR98.5",
+  "created_at": "2026-10-21T20:02:36.000Z",
+  "updated_at": "2026-10-21T20:53:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "slq",
+    "mixed-precision",
+    "humming",
+    "vllm",
+    "gptq",
+    "autoround",
+    "quantization",
+    "text-generation",
+    "conversational",
+    "arxiv:2605.02404",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7978947312,
+  "parameters_human": "7.98B",
+  "storage_bytes": 25622188656,
+  "storage_human": "25.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FTKD-041 [Live-Action Adaptation] I Still Love You. ~My",
+      "url": "https://njavtv.com/en/ftkd-041",
+      "snippet": "Aug 24, 2026 · FTKD-041 [Live-Action Adaptation] I Still Love You. ~My Classmate Who I Rejected Back Then Became a …"
+    },
+    {
+      "title": "TK-041 - JAV Database",
+      "url": "https://www.javdatabase.com/movies/tk-041/",
+      "snippet": "Mar 14, 2026 · Watch TK-041 . Explore our massive Japanese Adult Video library for the latest releases, high-quality streams, and …"
+    },
+    {
+      "title": "TK-041 TICKLE PRODUCTION THRILL 犠牲者 平井栞菜 （1）",
+      "url": "https://javtrailers.com/ja/video/h_1834tk00041",
+      "snippet": "Mar 14, 2026 · TK-041 TICKLE PRODUCTION THRILL 犠牲者 平井栞菜 （1） 画廊 DVD ID: TK-041 品番： h_1834tk00041 商品発 …"
+    },
+    {
+      "title": "【TK-041】TICKLE PRODUCTION THRILL 犠牲者 平井栞菜 （1）",
+      "url": "https://avcolle.com/work/h_1834tk00041/",
+      "snippet": "Mar 14, 2026 · TK-041は平井栞奈のTICKLE PRODUCTION THRILL作品です。 配信開始日、収録時間、出演女優、メーカー・レー …"
+    },
+    {
+      "title": "TK-041 TICKLE PRODUCTION THRILL Victim Kana Hirai (1)",
+      "url": "https://javtrailers.com/video/h_1834tk00041",
+      "snippet": "TK-041 TICKLE PRODUCTION THRILL Victim Kana Hirai (1) Gallery DVD ID: TK-041 Content ID: h_1834tk00041 Release Date: 13 …"
+    }
+  ]
+}

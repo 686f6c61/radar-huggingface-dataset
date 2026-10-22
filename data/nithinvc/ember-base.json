@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "nithinvc/EMber-base",
+  "slug": "nithinvc-ember-base",
+  "author": "nithinvc",
+  "url": "https://huggingface.co/nithinvc/EMber-base",
+  "created_at": "2026-10-21T21:15:31.000Z",
+  "updated_at": "2026-10-21T22:24:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "EMber",
+  "languages": [],
+  "tags": [
+    "EMber",
+    "safetensors",
+    "cryo-em",
+    "image-feature-extraction",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "arxiv:2610.22523",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 85262608,
+  "parameters_human": "85.3M",
+  "storage_bytes": 341069576,
+  "storage_human": "341 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

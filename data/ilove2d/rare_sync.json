@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "iLOVE2D/rare_sync",
+  "slug": "ilove2d-rare_sync",
+  "author": "iLOVE2D",
+  "url": "https://huggingface.co/iLOVE2D/rare_sync",
+  "created_at": "2026-10-22T00:28:07.000Z",
+  "updated_at": "2026-10-22T00:53:13.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "rare-disease",
+    "synthetic",
+    "clinical-notes",
+    "phenotype",
+    "HPO",
+    "gene-prioritization",
+    "differential-diagnosis",
+    "parquet",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 102892420,
+  "storage_human": "103 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Heinrich Köberle - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Heinrich_K%C3%B6berle",
+      "snippet": "Heinrich Köberle (11 October 1946 – 15 April 2023), [1] was a German athlete. He competed in wheelchair marathons in a handcycle, …"
+    },
+    {
+      "title": "Heinrich Köberle – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Heinrich_K%C3%B6berle",
+      "snippet": "Heinrich „Heini“ Köberle (* 11. Oktober 1946; † 15. April 2023) war ein deutscher Rennrollstuhlfahrer. Heinrich Köberle war als …"
+    },
+    {
+      "title": "Heinrich Koeberle - Wikipedia",
+      "url": "https://en.wikipedia.org/?title=Heinrich_Koeberle&redirect=no",
+      "snippet": "In other projects Appearance move to sidebar hide Heinrich Köberle"
+    },
+    {
+      "title": "Heinrich Köberle - Notable People",
+      "url": "https://notablepeopleproject.org/heinrich_koberle",
+      "snippet": "Heinrich Köberle was a German Paralympic athlete celebrated for his extraordinary dominance in wheelchair handcycle marathons. …"
+    },
+    {
+      "title": "H Keberle's research works | LKC Switzerland Ltd., Füllinsdorf (LKC ...",
+      "url": "https://www.researchgate.net/scientific-contributions/H-Keberle-2720909",
+      "snippet": "Zusammenfassung Mit Hilfe von radioaktiv markierten Präparaten (6-Benzyl-C14 bzw. 6-Furanose-H3) wird gezeigt, dass auf die …"
+    }
+  ]
+}

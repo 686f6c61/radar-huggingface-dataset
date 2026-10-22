@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "cc1244578151/Swift1.5Qwen3.8-Flash-Next-GSQ-RCO-IQ3",
+  "slug": "cc1244578151-swift1-5qwen3-8-flash-next-gsq-rco-iq3",
+  "author": "cc1244578151",
+  "url": "https://huggingface.co/cc1244578151/Swift1.5Qwen3.8-Flash-Next-GSQ-RCO-IQ3",
+  "created_at": "2026-10-22T01:04:19.000Z",
+  "updated_at": "2026-10-22T01:05:18.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "llama-cpp",
+    "abliterated",
+    "uncensored",
+    "quantization",
+    "tensor-transplant",
+    "gsq",
+    "rco",
+    "moe",
+    "mixture-of-experts",
+    "qwen3.8",
+    "flash-next",
+    "long-context",
+    "reasoning",
+    "reasoning-efficient",
+    "token-efficient",
+    "red-teaming",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:ukisai/Swift1.5-Qwen3.8-Flash-Next",
+    "base_model:quantized:ukisai/Swift1.5-Qwen3.8-Flash-Next",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 176943899520,
+  "parameters_human": "176.94B",
+  "storage_bytes": 300793574668,
+  "storage_human": "300.8 GB",
+  "base_model": "ukisai/Swift-Qwen3.8-Flash-Next",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/?gl=FR&hl=fr",
+      "snippet": "Profitez des vidéos et de la musique que vous aimez, mettez en ligne des contenus originaux, et partagez-les avec vos amis, vos …Read more"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube - Google Accounts",
+      "url": "https://accounts.google.com/InteractiveLogin?service=youtube",
+      "snippet": "Share your videos with friends, family, and the world."
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/explore",
+      "snippet": "Explore trending music and find your next favorite song. Discover the latest releases from new artists, plus enjoy new music videos …"
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/?lang=fr",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Taykhoom/GB.RNA-1M-MARS",
+  "slug": "taykhoom-gb-rna-1m-mars",
+  "author": "Taykhoom",
+  "url": "https://huggingface.co/Taykhoom/GB.RNA-1M-MARS",
+  "created_at": "2026-06-05T16:48:27.000Z",
+  "updated_at": "2026-10-22T01:05:50.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gbrna",
+    "RNA",
+    "language-model",
+    "custom_code",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 1152928,
+  "parameters_human": "1.2M",
+  "storage_bytes": 4618528,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Taykhoom/AIDO.RNA-1M-MARS · Hugging Face",
+      "url": "https://huggingface.co/Taykhoom/AIDO.RNA-1M-MARS",
+      "snippet": "Hidden-state representations compared against the original genbio-ai/AIDO.RNA-1M-MARS weights at all 7 representation levels (embedding + 6 transformer layers)."
+    },
+    {
+      "title": "genbio-ai/GB.RNA-1M-MARS · Hugging Face",
+      "url": "https://huggingface.co/genbio-ai/GB.RNA-1M-MARS",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ModelGenerator/experiments/GB.RNA at main · genbio-ai ... - GitHub",
+      "url": "https://github.com/genbio-ai/ModelGenerator/tree/main/experiments/GB.RNA",
+      "snippet": "GB.ModelGenerator is a software stack that enables researchers to adapt pretrained models and generate finetuned models for downstream tasks. - genbio-ai/ModelGenerator"
+    },
+    {
+      "title": "TaykhoomDalal (Taykhoom Dalal) · GitHub",
+      "url": "https://github.com/TaykhoomDalal",
+      "snippet": "CompBio Ph.D. Student @ Memorial Sloan Kettering / Cornell - TaykhoomDalal"
+    },
+    {
+      "title": "‪Taykhoom Dalal‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=4Hqu_RwAAAAJ&hl=en",
+      "snippet": "‪Memorial Sloan Kettering‬ - ‪‪Cited by 87‬‬"
+    }
+  ]
+}

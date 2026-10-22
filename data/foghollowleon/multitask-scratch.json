@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "foghollowleon/multitask-scratch",
+  "slug": "foghollowleon-multitask-scratch",
+  "author": "foghollowleon",
+  "url": "https://huggingface.co/foghollowleon/multitask-scratch",
+  "created_at": "2026-10-21T19:39:12.000Z",
+  "updated_at": "2026-10-21T19:39:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "multitask",
+    "wip",
+    "smoke-test",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Xhamster doesn't work properly on my computer (FF or chrome)",
+      "url": "https://www.reddit.com/r/techsupport/comments/260oz2/xhamster_doesnt_work_properly_on_my_computer_ff/",
+      "snippet": "May 20, 2014 · Anyway, when I open xhamster, about half of the thumbnails don't load. A lot of the videos don't work either (it says …"
+    },
+    {
+      "title": "Why is xHamster called xHamster? : r/NoStupidQuestions - Reddit",
+      "url": "https://www.reddit.com/r/NoStupidQuestions/comments/6n22bh/why_is_xhamster_called_xhamster/",
+      "snippet": "Hey-hey! I'm a representative of xHamster. When choosing the mascot for the web-site (which took us quite a long time), we wanted …"
+    },
+    {
+      "title": "xhamster won't load any videos. : r/techsupport - Reddit",
+      "url": "https://www.reddit.com/r/techsupport/comments/35hk2h/xhamster_wont_load_any_videos/",
+      "snippet": "May 10, 2015 · The screen just stays black, doesn't even start to load. I have latest flash. Loads in chrome but not in firefox. Share …"
+    },
+    {
+      "title": "xhamster.com on reddit.com",
+      "url": "https://www.reddit.com/domain/xhamster.com/",
+      "snippet": "Reddit gives you the best of the internet in one place. Get a constantly updating feed of breaking news, fun stories, pics, memes, and …"
+    },
+    {
+      "title": "Has anyone figured out a way to download videos from xhamster?",
+      "url": "https://www.reddit.com/r/askgaybros/comments/tjghq1/has_anyone_figured_out_a_way_to_download_videos/",
+      "snippet": "Mar 21, 2022 · Posted by u/[Deleted Account] - No votes and 10 comments"
+    }
+  ]
+}

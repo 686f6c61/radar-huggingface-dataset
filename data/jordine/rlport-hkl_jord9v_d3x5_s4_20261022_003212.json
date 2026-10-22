@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Jordine/rlport-hkl_jord9v_d3x5_s4_20261022_003212",
+  "slug": "jordine-rlport-hkl_jord9v_d3x5_s4_20261022_003212",
+  "author": "Jordine",
+  "url": "https://huggingface.co/Jordine/rlport-hkl_jord9v_d3x5_s4_20261022_003212",
+  "created_at": "2026-10-22T00:33:11.000Z",
+  "updated_at": "2026-10-22T02:27:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "research",
+    "checkpoint-backup",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15912112949,
+  "storage_human": "15.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Update auf den neuen Microsoft Edge",
+      "url": "https://support.microsoft.com/de-de/edge/update-to-the-new-microsoft-edge",
+      "snippet": "Microsoft Edge hilft Ihnen, die Onlineverfolgung Ihrer Daten zu verwalten: Bei der Nachverfolgungsprävention können Sie zwischen …Read more"
+    },
+    {
+      "title": "Atualizar para o novo Microsoft Edge",
+      "url": "https://support.microsoft.com/pt-br/edge/update-to-the-new-microsoft-edge",
+      "snippet": "O Microsoft Edge proporciona uma experiência de navegação rápida, segura e moderna baseada no Chromium. O suporte para …"
+    },
+    {
+      "title": "Microsoft Edge-Updateeinstellungen | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/edge/microsoft-edge-update-settings",
+      "snippet": "Microsoft Edge-Updateeinstellungen steuern, wie der Browser Updates empfängt und installiert, um Sicherheit, Leistung und …"
+    },
+    {
+      "title": "Getting the latest Microsoft Edge update just got easier",
+      "url": "https://support.microsoft.com/en-us/edge/getting-the-latest-microsoft-edge-update-just-got-easier",
+      "snippet": "Getting the latest Microsoft Edge update just got easier Summary Keeping Microsoft Edge up to date helps protect your device and …"
+    },
+    {
+      "title": "Mise à jour vers le nouveau Microsoft Edge",
+      "url": "https://support.microsoft.com/fr-fr/edge/update-to-the-new-microsoft-edge",
+      "snippet": "Microsoft Edge vous aide à gérer la façon dont vos données sont suivies en ligne : La prévention du suivi vous permet de choisir …"
+    }
+  ]
+}

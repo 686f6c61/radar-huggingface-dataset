@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "schneewolflabs/B4-27B",
+  "slug": "schneewolflabs-b4-27b",
+  "author": "schneewolflabs",
+  "url": "https://huggingface.co/schneewolflabs/B4-27B",
+  "created_at": "2026-10-22T00:58:44.000Z",
+  "updated_at": "2026-10-22T01:00:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "agents",
+    "tool-use",
+    "qwen3.8",
+    "conversational",
+    "en",
+    "dataset:schneewolflabs/Nachschlagen",
+    "base_model:schneewolflabs/B2-27B",
+    "base_model:finetune:schneewolflabs/B2-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55582996311,
+  "storage_human": "55.6 GB",
+  "base_model": "schneewolflabs/B2-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Categories - Mydesi",
+      "url": "https://www.mydesii.com/categories/",
+      "snippet": "Home Categories Tags Actors Desi MMS Categories"
+    },
+    {
+      "title": "Youtubers – Mydesi.net",
+      "url": "https://www.mydesi2.net/youtuber/",
+      "snippet": "Take a look with Kusum Megha Das Dimplia Cherry’s Vlogs SR YOUTUBERS Kalpana Vloger Urmila Sumi Mili Singha Samar maiti …"
+    },
+    {
+      "title": "Mydesi Is Changing The Game For South Asian Cinema",
+      "url": "https://www.loadeddicefilms.com/mydesi/",
+      "snippet": "Mar 24, 2025 · Mydesi Is flipping that old script by innovating content distribution in South Asian cinema. Partnering with platforms …"
+    },
+    {
+      "title": "Desi.Net — Everything Desi, in Your City",
+      "url": "https://desi.net/",
+      "snippet": "Your hyperlocal Desi hub: Indian & South-Asian restaurants, grocery, temples, events, movie showtimes, recipes and local news — …"
+    },
+    {
+      "title": "mydesi.cam - Desi Videos - Watch Latest Indian Sex videos | Mydesi…",
+      "url": "https://dirtymaps.com/site/mydesi.cam",
+      "snippet": "mydesi.cam Watch the latest desi videos and Indian movies online at mydesi.cam. Enjoy high-quality streaming of your favorite …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "isomsom/sn92-gen-v3",
+  "slug": "isomsom-sn92-gen-v3",
+  "author": "isomsom",
+  "url": "https://huggingface.co/isomsom/sn92-gen-v3",
+  "created_at": "2026-10-21T20:02:11.000Z",
+  "updated_at": "2026-10-21T20:03:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "decision-model",
+    "sn92",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26085330160,
+  "parameters_human": "26.09B",
+  "storage_bytes": 52188834472,
+  "storage_human": "52.2 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "isomsom (isomsom) - Hugging Face",
+      "url": "https://huggingface.co/isomsom/models",
+      "snippet": "User profile of isomsom on Hugging Face Recent Activity updated a model2 days ago isomsom/Affine-5eqvcfqpuo-m2 published a model2 days ago isomsom/Affine-5eqvcfqpuo-m2 updated a model2 days ago isomsom/Affine-5eqvcfqpuo-m1 View all activity"
+    },
+    {
+      "title": "sn92-ai · GitHub",
+      "url": "https://github.com/sn92-ai",
+      "snippet": "GitHub is where sn92-ai builds software. Joined Jan 9, 2025 Block or report sn92-ai Block user"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?library...",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Subnet Summer on X: \"Introducing SN92 @decisionmodels_ to the Bittensor ...",
+      "url": "https://x.com/SubnetSummerTAO/status/2110416430839554177",
+      "snippet": "Introducing SN92 @decisionmodels_ to the Bittensor ecosystem. Focused on benchmarking and deploying high-performance decision models, the team is making leading open models more accessible through faster inference and cost-efficient API access. With up to 4x faster inference on its REAX engine, DecisionModels is an exciting addition to the growing ecosystem of open-source AI. 14 Oct 2026 17:04:21"
+    },
+    {
+      "title": "Yesmind - Every AI Model.",
+      "url": "https://yesmind.ai/",
+      "snippet": "Generate images, videos, and text with the world&#x27;s leading AI models in one place. Wan, Veo, Sora, Runway, GPT, Gemini, Claude and more."
+    }
+  ]
+}

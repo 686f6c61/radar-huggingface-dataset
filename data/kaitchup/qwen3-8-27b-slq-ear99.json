@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "kaitchup/Qwen3.8-27B-SLQ-EAR99",
+  "slug": "kaitchup-qwen3-8-27b-slq-ear99",
+  "author": "kaitchup",
+  "url": "https://huggingface.co/kaitchup/Qwen3.8-27B-SLQ-EAR99",
+  "created_at": "2026-10-21T20:04:57.000Z",
+  "updated_at": "2026-10-21T20:54:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "slq",
+    "mixed-precision",
+    "humming",
+    "vllm",
+    "gptq",
+    "autoround",
+    "quantization",
+    "text-generation",
+    "conversational",
+    "arxiv:2605.02404",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9216062192,
+  "parameters_human": "9.22B",
+  "storage_bytes": 30531034824,
+  "storage_human": "30.5 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Quantized Qwen3.8 27B - a kaitchup Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/kaitchup/quantized-qwen38-27b",
+      "snippet": "Not evaluated yet.... kaitchup/Qwen3.8-27B-hum-quality-MTP-19.2GB"
+    },
+    {
+      "title": "Run Qwen 3.8-27B Locally: Step-by-Step Guide — AI Tutorial",
+      "url": "https://aiindigo.com/tutorials/getting-started-with-qwen-3-8-27b-gguf-run-frontier-ai-locally",
+      "snippet": "Download the Qwen 3.8-27B GGUF model from Hugging Face and load it into Unsloth Desktop to run frontier AI locally."
+    },
+    {
+      "title": "Qwen3.8 27B, Nemotron 3.5, Muse, DeepSeek V4 Pro: A Huge Week for Open ...",
+      "url": "https://kaitchup.substack.com/p/qwen38-27b-nemotron-35-muse-deepseek",
+      "snippet": "Qwen3.8 also introduces reasoning_effort, with low, medium, and xhigh levels to trade reasoning depth against cost. Qwen now recommends temperature=1.0 and top_p=0.95 for thinking mode generally, and, for very long agentic runs, recommends allowing up to 262K tokens for reasoning and 131K for the final answer."
+    },
+    {
+      "title": "Deeper Dive: The Qwen 3.8 27B Open Weight Model for Local Agentic AI",
+      "url": "https://agenticaiinsights.substack.com/p/deeper-dive-the-qwen-38-27b-open",
+      "snippet": "I have previously posted about the importance of considering open-weight models for your agentic AI workflows. One of the more consequential recent open-model releases for agent engineering may be Qwen3.8-27B, released by Alibaba&#x27;s Qwen team in August 2026. Qwen describes Qwen3.8 as its most capable open-model generation to date, with the 27B version de…"
+    }
+  ]
+}

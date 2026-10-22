@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "danyalmalik/NeuTTS-Air-ONNX-WebGPU",
+  "slug": "danyalmalik-neutts-air-onnx-webgpu",
+  "author": "danyalmalik",
+  "url": "https://huggingface.co/danyalmalik/NeuTTS-Air-ONNX-WebGPU",
+  "created_at": "2026-10-21T22:00:47.000Z",
+  "updated_at": "2026-10-21T22:01:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "webgpu",
+    "text-to-speech",
+    "quick-inference",
+    "en",
+    "base_model:neuphonic/neucodec",
+    "base_model:quantized:neuphonic/neucodec",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 525433028,
+  "storage_human": "525 MB",
+  "base_model": "neuphonic/neutts-air, neuphonic/neucodec",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

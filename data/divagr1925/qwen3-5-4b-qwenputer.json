@@ -5,7 +5,7 @@
   "author": "divagr1925",
   "url": "https://huggingface.co/divagr1925/Qwen3.5-4B-Qwenputer",
   "created_at": "2026-10-19T18:51:39.000Z",
-  "updated_at": "2026-10-20T06:02:47.000Z",
+  "updated_at": "2026-10-21T13:29:53.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 74,
+  "downloads_30d": 97,
   "trending_score": 0,
   "parameters": 9357602496,
   "parameters_human": "9.36B",

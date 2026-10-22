@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "RonTon05/MTL_training_full_80K",
+  "slug": "ronton05-mtl_training_full_80k",
+  "author": "RonTon05",
+  "url": "https://huggingface.co/RonTon05/MTL_training_full_80K",
+  "created_at": "2026-10-22T00:53:23.000Z",
+  "updated_at": "2026-10-22T00:53:35.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "generated_from_trainer",
+    "base_model:RonTon05/model_content_V2_test",
+    "base_model:finetune:RonTon05/model_content_V2_test",
+    "license:agpl-3.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 136385033,
+  "parameters_human": "136.4M",
+  "storage_bytes": 545570053,
+  "storage_human": "546 MB",
+  "base_model": "RonTon05/model_content_V2_test",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

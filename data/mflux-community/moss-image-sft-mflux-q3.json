@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "mflux-community/moss-image-sft-mflux-q3",
+  "slug": "mflux-community-moss-image-sft-mflux-q3",
+  "author": "mflux-community",
+  "url": "https://huggingface.co/mflux-community/moss-image-sft-mflux-q3",
+  "created_at": "2026-10-22T00:53:56.000Z",
+  "updated_at": "2026-10-22T00:59:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "mflux",
+  "languages": [],
+  "tags": [
+    "mflux",
+    "safetensors",
+    "mlx",
+    "apple-silicon",
+    "quantized",
+    "text-to-image",
+    "moss-image",
+    "base_model:OpenMOSS-Team/MOSS-Image-SFT",
+    "base_model:quantized:OpenMOSS-Team/MOSS-Image-SFT",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5840476554,
+  "storage_human": "5.8 GB",
+  "base_model": "OpenMOSS-Team/MOSS-Image-SFT",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "'2019' Search - XNXX.COM",
+      "url": "https://www.xnxx.com/search/2019",
+      "snippet": "5.1k 82min - 720p STS broadcast by DC on Picarto from March Twelfth 2019 5.4k 104min - 720p STS broadcast by DC on Picarto …"
+    },
+    {
+      "title": "Free Porn Videos, Trending Porno Movies: XXX Videos Tube #2019",
+      "url": "https://xhamster.com/2019",
+      "snippet": "Instantly stream millions of trending sex videos for every taste. xHamster provides XXX video in the highest quality! #2019."
+    },
+    {
+      "title": "'porno 2019' Search - XNXX.COM",
+      "url": "https://www.xnxx.com/search/porno+2019",
+      "snippet": "HD Porn Video Webcam Amateur Fingering Teen Flashing 256.2k 70% 6min - 720p asiramuslim memeleri 1.6k 8min - 720p Tricky …"
+    },
+    {
+      "title": "'porno 2019' Search - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/?k=porno+2019",
+      "snippet": "13,406 porno 2019 FREE videos found on XVIDEOS for this search."
+    },
+    {
+      "title": "2019 Porn Videos | Pornhub.com",
+      "url": "https://www.pornhub.com/video/search?search=2019",
+      "snippet": "Browse through our impressive selection of porn videos in HD quality on any device you own."
+    }
+  ]
+}

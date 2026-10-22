@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "ProprietaryLegal/DeepSeek-V4.1-Flash-1017-EXL3-2.75bpw-LegalWeighted-DGX-Spark",
+  "slug": "proprietarylegal-deepseek-v4-1-flash-1017-exl3-2-75bpw-legalweighted-dgx-spark",
+  "author": "ProprietaryLegal",
+  "url": "https://huggingface.co/ProprietaryLegal/DeepSeek-V4.1-Flash-1017-EXL3-2.75bpw-LegalWeighted-DGX-Spark",
+  "created_at": "2026-10-21T19:52:52.000Z",
+  "updated_at": "2026-10-21T21:55:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deepseek_v41",
+    "exl3",
+    "exllamav3",
+    "deepseek",
+    "moe",
+    "quantized",
+    "dgx-spark",
+    "gb10",
+    "legal",
+    "image-text-to-text",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "license:mit",
+    "deepseek_v41_exl3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 198776076527,
+  "storage_human": "198.8 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LibertAIDAI/DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw · Hugging Face",
+      "url": "https://huggingface.co/LibertAIDAI/DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw",
+      "snippet": "Follow LibertAI 63 Text Generation Safetensors deepseek_v41 exl3 exllamav3 deepseek Mixture of Experts quantized License:mit Model card FilesFiles and versions xet Community 1 Copy to bucket new DeepSeek-V4.1-Flash-1017 — EXL3 2.9 bpw What is quantized at what bitrate Layout Engram tables (required, not in this repo) Calibration Perplexity ..."
+    },
+    {
+      "title": "DeepSeek-V4.1-Flash-1017 — EXL3 2.9bpw — ABLITERATED",
+      "url": "https://huggingface.co/dealignai/DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw-ABLITERATED",
+      "snippet": "DeepSeek-V4.1-Flash-1017 — EXL3 2.9bpw — ABLITERATED 👉 This repo is a mirror. All weights, docs, and updates live at: dealignai/DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw-UNCENSORED Same model, different name. Pull from the UNCENSORED repo above — it&#x27;s the one that holds the shards, is kept up to date, and carries the full README + eval tables."
+    },
+    {
+      "title": "DeepSeek-V4.1-Flash-1017: What&#x27;s new and is it open-source?",
+      "url": "https://www.cometapi.com/deepseek-v4-1-flash-1017/",
+      "snippet": "Explore DeepSeek V4.1-Flash-1017, including coding benchmarks, model specifications, API pricing, official charts, and API access."
+    },
+    {
+      "title": "DeepSeek V4.1-Flash-1017: Free, MIT-Licensed Update [2026]",
+      "url": "https://tech-insider.org/deepseek-v4-1-flash-1017-mit-license-update-2026/",
+      "snippet": "DeepSeek shipped V4.1-Flash-1017 on Oct. 17, 2026, with open, MIT-licensed weights and claims of faster task completion across coding and agent work."
+    },
+    {
+      "title": "DeepSeek V4.1-Flash-1017 Released: Open-Source LLM with Agentic Coding ...",
+      "url": "https://the-ctr.net/deepseek-v4-1-flash-1017-release",
+      "snippet": "Explore DeepSeek&#x27;s new V4.1-Flash-1017, featuring MIT-licensed weights and enhanced agentic coding capabilities in the competitive open-source LLM space."
+    }
+  ]
+}

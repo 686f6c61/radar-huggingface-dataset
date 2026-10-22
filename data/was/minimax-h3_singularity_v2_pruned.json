@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "WAS/Minimax-h3_Singularity_v2_pruned",
+  "slug": "was-minimax-h3_singularity_v2_pruned",
+  "author": "WAS",
+  "url": "https://huggingface.co/WAS/Minimax-h3_Singularity_v2_pruned",
+  "created_at": "2026-10-21T21:39:37.000Z",
+  "updated_at": "2026-10-21T22:22:26.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "comfyui",
+    "video-generation",
+    "text-to-video",
+    "image-to-video",
+    "reference-to-video",
+    "pruned",
+    "int8",
+    "w6a8",
+    "w4a8",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:finetune:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 48733703622,
+  "storage_human": "48.7 GB",
+  "base_model": "WarmBloodAban/Minimax-h3_Singularity, MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Was et Were : comprendre le verbe to be au passé en anglais",
+      "url": "https://www.mosalingua.com/blog/2026/01/26/was-were/",
+      "snippet": "Jan 26, 2026 · Comprenez la différence entre was et were grâce à des exemples clairs et apprenez à utiliser correctement le verbe …"
+    },
+    {
+      "title": "Conjugaison was | Conjuguer verbe was anglais - Reverso",
+      "url": "https://conjugueur.reverso.net/conjugaison-anglais-verbe-was.html",
+      "snippet": "Conjugaison du verbe was en anglais, voir les modèles de conjugaison en anglais, les verbes irréguliers. La traduction du verbe was …"
+    },
+    {
+      "title": "Was ou Were ?-anglais",
+      "url": "https://www.anglaisfacile.com/cgi2/myexam/voir2.php?id=2523",
+      "snippet": "Was ou Were ?La règle was/were est très simple, elle dépend juste des pronoms personnels qui précédent l'auxiliaire.I - WasYou - …"
+    },
+    {
+      "title": "WhatsApp | Messages et appels privés, gratuits, sûrs et fiables",
+      "url": "https://www.whatsapp.com/?lang=fr",
+      "snippet": "Utilisez l’application WhatsApp Messenger pour rester en contact avec vos proches. WhatsApp permet d’envoyer des messages et …"
+    },
+    {
+      "title": "Was / were — le prétérit de be : cours d'anglais 5ème",
+      "url": "https://benprofparticulier.fr/5e/anglais/was-were/cours",
+      "snippet": "Cours d'anglais 5e sur was et were, le prétérit de be : choix selon le sujet, négation, question et there was / there were."
+    }
+  ]
+}

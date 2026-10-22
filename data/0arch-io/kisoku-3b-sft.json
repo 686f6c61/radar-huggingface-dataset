@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "0arch-io/kisoku-3b-sft",
+  "slug": "0arch-io-kisoku-3b-sft",
+  "author": "0arch-io",
+  "url": "https://huggingface.co/0arch-io/kisoku-3b-sft",
+  "created_at": "2026-03-02T19:26:42.000Z",
+  "updated_at": "2026-10-22T00:57:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "granite",
+    "from-scratch",
+    "sft",
+    "instruction-tuned",
+    "trc",
+    "tpu",
+    "maxtext",
+    "jax",
+    "grouped-query-attention",
+    "gguf-compatible",
+    "en",
+    "base_model:0arch-io/kisoku-3b-base",
+    "base_model:finetune:0arch-io/kisoku-3b-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 3562712064,
+  "parameters_human": "3.56B",
+  "storage_bytes": 7142663288,
+  "storage_human": "7.1 GB",
+  "base_model": "0arch-io/kisoku-3b-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "0arch-io/kisoku-3b-sft · Hugging Face",
+      "url": "https://huggingface.co/0arch-io/kisoku-3b-sft",
+      "snippet": "This model was SFT&#x27;d from the Kisoku 3B base checkpoint using a custom text-only chat template (### User / ### Assistant format) designed to avoid out-of-vocabulary special token issues common with Llama-family tokenizers."
+    },
+    {
+      "title": "0arch-io/kisoku-3b · Hugging Face",
+      "url": "https://huggingface.co/0arch-io/kisoku-3b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Kisoku 3b Sft Gguf - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/mradermacher/kisoku-3b-sft-gguf",
+      "snippet": "by mradermacher hf-model--mradermacher--kisoku-3b-sft-gguf Nexus Index 28.3Top 62% S: Semantic50 A: Authority0 P: Popularity14 R: Recency87 Q: Quality30 Tech Context 3Params 4.096KCtx Vital Performance 233 DL / 30D 0.0% Source → Share: 📤 𝕏 in 📣 🔗 Audited 28.3 FNI Score 3B Params 4k Context 233 Downloads 8G GPU ~4GB Est. VRAM ..."
+    },
+    {
+      "title": "0arch-io/Kisoku-3.2b - GitHub",
+      "url": "https://github.com/0arch-io/Kisoku-3.2b",
+      "snippet": "Kisoku (規則): \"Principles\" in Japanese. Building optimal AI through rigorous methodology, systematic optimization, and complete transparency. A 3.2 billion parameter language model trained from scratch on Google Cloud TPU v4-32, demonstrating efficient training on high-quality data (DCLM-Baseline 1.0). Open-source model, training code, and comprehensive documentation for the research community."
+    },
+    {
+      "title": "kisoku/sft at main · 0arch-io/kisoku · GitHub",
+      "url": "https://github.com/0arch-io/kisoku/tree/main/sft",
+      "snippet": "Kisoku 1.6B: a from-scratch language model trained solo on a TPU grant. Weights, code, evals and report. - kisoku/sft at main · 0arch-io/kisoku"
+    }
+  ]
+}

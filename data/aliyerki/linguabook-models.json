@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Aliyerki/linguabook-models",
+  "slug": "aliyerki-linguabook-models",
+  "author": "Aliyerki",
+  "url": "https://huggingface.co/Aliyerki/linguabook-models",
+  "created_at": "2026-10-21T19:21:13.000Z",
+  "updated_at": "2026-10-21T23:03:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7132368206,
+  "storage_human": "7.1 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "All AI models | Model Matchbook",
+      "url": "https://modelmatchbook.com/models",
+      "snippet": "The public model catalog Every model. Without vendor marketing. Search 348 publicly available models by the constraints that matter in production: price, context, modalities, tools, reasoning, and open-weight availability."
+    },
+    {
+      "title": "Models in AI - Hugging Face",
+      "url": "https://huggingface.co/models?language=ai",
+      "snippet": "Edit Models filters. Main ; Tasks ; Libraries ; Languages 1; Licenses ; Other ; Reset Languages. English. Chinese. French. Spanish. German. Japanese. Korean. Portuguese"
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "GLM (AI) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/GLM_(AI)",
+      "snippet": "GLM, short for General Language Model, is a series of open weight large language models developed by Chinese software company Z.ai. Though the first GLM model was published on 3 March 2021, it was released under the name ChatGLM as an AI -based chatbot in March 2023."
+    },
+    {
+      "title": "All Model IDs | AI/ML API Documentation",
+      "url": "https://docs.aimlapi.com/api-references/model-database",
+      "snippet": "The section Full List of Model IDs below lists the identifiers of all available and deprecated models, grouped by category. These IDs are used to specify the exact models in your code, like this: If you already know the model ID, use the page search function (Ctrl+F for Win/Linux, Command+F for Mac) to locate it."
+    }
+  ]
+}

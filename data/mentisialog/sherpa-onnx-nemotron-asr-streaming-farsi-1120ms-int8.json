@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mentisialog/sherpa-onnx-nemotron-asr-streaming-farsi-1120ms-int8",
+  "slug": "mentisialog-sherpa-onnx-nemotron-asr-streaming-farsi-1120ms-int8",
+  "author": "mentisialog",
+  "url": "https://huggingface.co/mentisialog/sherpa-onnx-nemotron-asr-streaming-farsi-1120ms-int8",
+  "created_at": "2026-10-21T20:01:00.000Z",
+  "updated_at": "2026-10-21T20:01:04.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "sherpa-onnx",
+  "languages": [
+    "fa"
+  ],
+  "tags": [
+    "sherpa-onnx",
+    "onnx",
+    "streaming",
+    "asr",
+    "persian",
+    "farsi",
+    "nemotron",
+    "fastconformer",
+    "rnnt",
+    "automatic-speech-recognition",
+    "fa",
+    "base_model:mehdi-hf/nemotron-asr-streaming-farsi",
+    "base_model:quantized:mehdi-hf/nemotron-asr-streaming-farsi",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 666567319,
+  "storage_human": "667 MB",
+  "base_model": "mehdi-hf/nemotron-asr-streaming-farsi",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nancheng County - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nancheng_County",
+      "snippet": "Nancheng (Chinese: 南城县; pinyin: Nánchéng; lit. 'south city') is a county of eastern Jiangxi province, People's Republic of China. It …"
+    },
+    {
+      "title": "Nanchang - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nanchang",
+      "snippet": "The territories encompassing modern-day Jiangxi Province—including Nanchang—was first incorporated into China during the Qin …"
+    },
+    {
+      "title": "Nanchang Travel Guide: Best Things to Do & Tips 2026",
+      "url": "https://www.thechinajourney.com/nanchang-travel-guide/",
+      "snippet": "Aug 1, 2026 · Nanchang travel infographic Nanchang is not a top-tier blockbuster city in China, but it has real travel value as …"
+    },
+    {
+      "title": "Carte MICHELIN Nancheng - ViaMichelin",
+      "url": "https://www.viamichelin.fr/cartes-plans/republique_populaire_de_chine/jiangsu/_/nancheng-",
+      "snippet": "Retrouvez les plans détaillés pour République populaire de Chine Jiangsu Nancheng sur ViaMichelin, avec des informations sur le …"
+    },
+    {
+      "title": "Nancheng County, Jiangxi Province",
+      "url": "https://all-china.com/nancheng-county-jiangxi/",
+      "snippet": "Nancheng County in central Fuzhou is a 2,200-year-old county home to Magu Mountain, Hongmen Lake’s 1,086 islands, the …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Maddy15175/Mad_ai",
+  "slug": "maddy15175-mad_ai",
+  "author": "Maddy15175",
+  "url": "https://huggingface.co/Maddy15175/Mad_ai",
+  "created_at": "2026-10-21T19:26:34.000Z",
+  "updated_at": "2026-10-21T19:29:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ta",
+    "en",
+    "hi"
+  ],
+  "tags": [
+    "ta",
+    "en",
+    "hi",
+    "base_model:Kosakwen/Qwen_3.5_0.8_astra6_claudesone5_reaspondning",
+    "base_model:finetune:Kosakwen/Qwen_3.5_0.8_astra6_claudesone5_reaspondning",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Kosakwen/Qwen_3.5_0.8_astra6_claudesone5_reaspondning",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - maddy15175/maddy-cloud-ai: MADDY Cloud AI",
+      "url": "https://github.com/maddy15175/maddy-cloud-ai",
+      "snippet": "A free-hosting-friendly, API-free dashboard for launching your own official ChatGPT, Claude, Gemini accounts — and a configurable \"Own AI\" entry you can point to a self-hosted or third-party LLM endpoint (for example: a local instance of a 3rd-party model like \"gpt-astro-6\")."
+    },
+    {
+      "title": "maddie ai (@maddieai_) • Instagram photos and videos",
+      "url": "https://www.instagram.com/maddieai_/",
+      "snippet": "This profile is private Follow maddieai_ in the app to see their photos and videos."
+    },
+    {
+      "title": "GitHub - madhan00001/maddy-ai: this chatbot is created with gemini api ...",
+      "url": "https://github.com/madhan00001/maddy-ai",
+      "snippet": "this chatbot is created with gemini api. Contribute to madhan00001/maddy-ai development by creating an account on GitHub."
+    },
+    {
+      "title": "maddy15175 · GitHub",
+      "url": "https://github.com/maddy15175",
+      "snippet": "Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users."
+    },
+    {
+      "title": "Maddie - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/04cfbe1ab9ae1f33c80b6ae5e7855d4c",
+      "snippet": "Explore Maddie model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    }
+  ]
+}

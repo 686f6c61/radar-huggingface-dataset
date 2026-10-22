@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Sky-Kim/com.sky.sentis.sface",
+  "slug": "sky-kim-com-sky-sentis-sface",
+  "author": "Sky-Kim",
+  "url": "https://huggingface.co/Sky-Kim/com.sky.sentis.sface",
+  "created_at": "2026-10-21T21:23:19.000Z",
+  "updated_at": "2026-10-21T21:23:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "unity-sentis",
+  "languages": [],
+  "tags": [
+    "unity-sentis",
+    "unity",
+    "sentis",
+    "on-device",
+    "face-recognition",
+    "face-verification",
+    "face-embedding",
+    "arxiv:2205.12010",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 38546484,
+  "storage_human": "39 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SKY Agriculture - Machines pour un travail du sol performant",
+      "url": "https://sky-agriculture.com/",
+      "snippet": "Découvrez les meilleures machines pour le travail du sol en agriculture chez Sky Agriculture. Optimisez vos récoltes avec nos …"
+    },
+    {
+      "title": "Vols pas chers : comparateur de vols et billets d'avion | Skyscanner",
+      "url": "https://www.skyscanner.fr/",
+      "snippet": "Comparez les vols des grandes compagnies aériennes et agences de voyages. Réservez en ligne les billets les moins chers pour …"
+    },
+    {
+      "title": "Discover TV, Broadband & Mobile Phone Packages with Sky",
+      "url": "https://www.sky.com/?msockid=35d9c8d3326366c5132bdf2933cb67f9",
+      "snippet": "Discover Sky packages for TV, broadband & mobile including Glass - the new streaming TV with Sky Inside. Login to manage your …"
+    },
+    {
+      "title": "Sky Tonight — Ce qui est visible depuis votre position",
+      "url": "https://sky-tonight.com/fr/",
+      "snippet": "Découvrez ce qui se passe ce soir dans le ciel depuis votre position : Lune, planètes, étoiles brillantes, nébuleuses, météores et …"
+    },
+    {
+      "title": "Sky",
+      "url": "https://www.skyairline.com/",
+      "snippet": "SKY Airline provides affordable flights to national and international destinations, ensuring a budget-friendly travel experience."
+    }
+  ]
+}

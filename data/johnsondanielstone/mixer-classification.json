@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "johnsondanielstone/mixer-classification",
+  "slug": "johnsondanielstone-mixer-classification",
+  "author": "johnsondanielstone",
+  "url": "https://huggingface.co/johnsondanielstone/mixer-classification",
+  "created_at": "2026-10-21T19:44:55.000Z",
+  "updated_at": "2026-10-21T19:45:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66776,
+  "storage_human": "66776 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "The platform where the machine learning community collaborates on models, datasets, and applications ..."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Qwen, Mistral AI, Moonshot AI, Z.ai, MiniMax, NVIDIA, Microsoft AI, Cohere, Xiaomi, and other prominent AI labs. The newest-first tables show each release date, provider, and model type. Dates use the earliest meaningful availability stage for each entry. Preview access ..."
+    },
+    {
+      "title": "michaelrogers/mixer-classification-2024 · Hugging Face",
+      "url": "https://huggingface.co/michaelrogers/mixer-classification-2024",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "All 26 Mistral AI Models Ranked (2026) | LM Market Cap",
+      "url": "https://lmmarketcap.com/mistral-models",
+      "snippet": "The complete Mistral AI model lineup: 26 models spanning the Mistral Large flagship, Mixtral mixture-of-experts series, Codestral coding models, and lightweight Devstral variants. Europe&#x27;s leading AI lab, known for open weights and efficient architectures. Compare scores, API pricing, context windows, and capabilities. Updated hourly from live data."
+    },
+    {
+      "title": "Best Open Source AI Models & LLM Leaderboard (2026)",
+      "url": "https://lmmarketcap.com/open-source-ai-models",
+      "snippet": "What are the best open source AI models in 2026? The top open source AI models in 2026 include Meta&#x27;s Llama 4 family, DeepSeek R1 and V3, Mistral&#x27;s Large and Medium models, Alibaba&#x27;s Qwen 2.5 series, and Google&#x27;s Gemma. These models offer competitive performance with full access to model weights, enabling self-hosting and fine-tuning."
+    }
+  ]
+}

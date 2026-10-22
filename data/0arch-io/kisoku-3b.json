@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "0arch-io/kisoku-3b",
+  "slug": "0arch-io-kisoku-3b",
+  "author": "0arch-io",
+  "url": "https://huggingface.co/0arch-io/kisoku-3b",
+  "created_at": "2026-08-13T03:21:56.000Z",
+  "updated_at": "2026-10-22T00:57:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "ollama",
+    "llama",
+    "from-scratch",
+    "pretrained",
+    "text-generation",
+    "en",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 3562712064,
+  "parameters_human": "3.56B",
+  "storage_bytes": 3793730048,
+  "storage_human": "3.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "球阀的区别，ball valve 和globe valve - 百度知道",
+      "url": "https://zhidao.baidu.com/question/70265152.html",
+      "snippet": "“globe valve”球阀和“ball valve”球阀的区别如下： 1、“globe valve”又称“截止阀”，与“ball valve”是完全两个不同的概念，两者作用和使 …"
+    },
+    {
+      "title": "global 和globle的区别，都是环球的意思吗？_百度知道",
+      "url": "https://zhidao.baidu.com/question/297928756.html",
+      "snippet": "Jul 26, 2011 · global 和globle的区别，都是环球的意思吗？是 global （形容词）和 globe (名词）"
+    },
+    {
+      "title": "EXCEL饼图怎么做，如何添加值，百分比，引导线-百度经验",
+      "url": "https://jingyan.baidu.com/article/2f9b480db61ae741cb6cc215.html",
+      "snippet": "Jan 19, 2018 · EXCEL制作饼图的时候，根据不同的要求，会需要添加“值，百分比，引导线，系列的名称”等等，使图片看起来更加的 …"
+    },
+    {
+      "title": "WPS表格软件如何绘制XY散点图？ - 百度经验",
+      "url": "https://jingyan.baidu.com/article/3065b3b6e223ccbecef8a470.html",
+      "snippet": "Sep 16, 2014 · WPS表格软件如何绘制XY散点图,今天小编学习了一个新技能，关于绘制XY散点图的，在这里跟大家分享一下制作的 …"
+    },
+    {
+      "title": "globe valve是什么阀 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/309328734731557524.html",
+      "snippet": "globe valve 一般是指 截止阀 globe valve指阀座部分外部看起来象一个球。实际它内部是一个升降开闭的板阀或者塞阀。在大型globe …"
+    }
+  ]
+}

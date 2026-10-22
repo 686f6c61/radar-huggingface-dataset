@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "XHToken/Spark-X2.6-4B-INT8",
+  "slug": "xhtoken-spark-x2-6-4b-int8",
+  "author": "XHToken",
+  "url": "https://huggingface.co/XHToken/Spark-X2.6-4B-INT8",
+  "created_at": "2026-10-20T13:35:49.000Z",
+  "updated_at": "2026-10-21T08:50:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "spark2_5",
+    "text-generation",
+    "llm",
+    "sparkx2_5",
+    "conversational",
+    "custom_code",
+    "en",
+    "zh",
+    "base_model:XHToken/Spark-X2.6-4B",
+    "base_model:quantized:XHToken/Spark-X2.6-4B",
+    "license:apache-2.0",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 13,
+  "downloads_30d": 34,
+  "trending_score": 13,
+  "parameters": 4112079360,
+  "parameters_human": "4.11B",
+  "storage_bytes": 4454499012,
+  "storage_human": "4.5 GB",
+  "base_model": "XHToken/Spark-X2.6-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Porn Videos & Sex Movies - Porno, XXX, Porn Tube | Pornhub",
+      "url": "https://www.pornhub.com/",
+      "snippet": "Enjoy the largest amateur porn community on the net as well as full-length scenes from the top XXX studios. We update our porn …"
+    },
+    {
+      "title": "Free Porn Videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/",
+      "snippet": "XVideos.com is a free hosting service for porn videos. We convert your files to various formats. You can grab our 'embed code' to …"
+    },
+    {
+      "title": "Free Porn Videos & XXX Movies - Sex Videos Tube",
+      "url": "https://xhamster.com/",
+      "snippet": "Free porn videos and exclusive XXX movies are here at xHamster. Instantly stream 6M+ hardcore sex videos from pros and …"
+    },
+    {
+      "title": "Free Porn, Sex, Tube Videos, XXX Pics, Pussy in Porno Movies",
+      "url": "https://www.xnxx.com/",
+      "snippet": "XNXX delivers free sex movies and fast free porn videos (tube porn). Now 10 million+ sex vids available for free! Featuring hot pussy, …"
+    },
+    {
+      "title": "Porn - xHamster",
+      "url": "https://xhamster.com/tags/porn",
+      "snippet": "Treat yourself to porn videos instantly. Watch the most sexually arousing free porn of 2026 here on xHamster, because you deserve …"
+    }
+  ]
+}

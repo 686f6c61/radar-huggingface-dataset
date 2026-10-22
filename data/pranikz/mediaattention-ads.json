@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "pranikz/MediaAttention-Ads",
+  "slug": "pranikz-mediaattention-ads",
+  "author": "pranikz",
+  "url": "https://huggingface.co/pranikz/MediaAttention-Ads",
+  "created_at": "2026-10-21T19:16:22.000Z",
+  "updated_at": "2026-10-21T19:23:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "saliency",
+    "eye-tracking",
+    "visual-attention",
+    "advertising",
+    "marketing",
+    "posters",
+    "user-interfaces",
+    "computer-vision",
+    "image-to-image",
+    "dataset:UEyes",
+    "base_model:pranikz/MediaAttention",
+    "base_model:finetune:pranikz/MediaAttention",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15501862,
+  "storage_human": "16 MB",
+  "base_model": "pranikz/MediaAttention",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - pranikz/MediaAttention: Open-source predicted attention ...",
+      "url": "https://github.com/pranikz/MediaAttention",
+      "snippet": "Open-source predicted attention heatmaps and creative scoring for ads and media - pranikz/MediaAttention"
+    },
+    {
+      "title": "MediaAttention: open-source attention prediction and creative scoring ...",
+      "url": "https://zenodo.org/records/23543522",
+      "snippet": "MediaAttention-Ads v1: our own attention model The new default image model (--model ads): UNISAL fine-tuned on UEyes eye tracking of posters, ads and interfaces."
+    },
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "pranikz (Pratyush Mahapatra) · GitHub",
+      "url": "https://github.com/pranikz",
+      "snippet": "Developer. pranikz has 69 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches across OpenAI, Anthropic, Google DeepMind, SpaceXAI, DeepSeek, Qwen, Moonshot AI, Meta, Mistral AI, MiniMax, and other important AI labs. You can use the newest-first tables to find the release date, provider, release stage, and model type."
+    }
+  ]
+}

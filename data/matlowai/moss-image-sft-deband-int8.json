@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "MATLOWAI/MOSS-Image-SFT-DeBand-int8",
+  "slug": "matlowai-moss-image-sft-deband-int8",
+  "author": "MATLOWAI",
+  "url": "https://huggingface.co/MATLOWAI/MOSS-Image-SFT-DeBand-int8",
+  "created_at": "2026-10-17T09:11:58.000Z",
+  "updated_at": "2026-10-17T17:21:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "moss-image",
+    "text-to-image",
+    "int8",
+    "base_model:OpenMOSS-Team/MOSS-Image-Base",
+    "base_model:merge:OpenMOSS-Team/MOSS-Image-Base",
+    "base_model:OpenMOSS-Team/MOSS-Image-SFT",
+    "base_model:merge:OpenMOSS-Team/MOSS-Image-SFT",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 12,
+  "downloads_30d": 4237,
+  "trending_score": 12,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16247769349,
+  "storage_human": "16.2 GB",
+  "base_model": "OpenMOSS-Team/MOSS-Image-SFT, OpenMOSS-Team/MOSS-Image-Base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yaoi Archive",
+      "url": "https://yaoiarchive.org/",
+      "snippet": "The Yaoi Archive started with a personal interest in collecting out-of-print Magazine BE×BOY and BE×BOY GOLD issues. However, …Read more"
+    },
+    {
+      "title": "Manhwa - Yaoi Manga Online",
+      "url": "https://yaoimangaonline.com/tag/manhwa/",
+      "snippet": "2 days ago · Read Manhwa manga online for free on YaoiMangaOnline. High quality scans, no download needed. New Manhwa …"
+    },
+    {
+      "title": "Yaoi Anime | Anime-Planet",
+      "url": "https://www.anime-planet.com/anime/tags/yaoi",
+      "snippet": "Yaoi anime Yaoi, also known as Boys' Love or BL in Japan, is a genre that depicts homosexual relationships between men. Japan …"
+    },
+    {
+      "title": "Uncensored Yaoi Hentai - Hentais Yaoi",
+      "url": "https://hentaisyaoi.com/manga-tag/uncensored/",
+      "snippet": "Uncensored Yaoi Hentai - Hentais Yaoi Natsu Akete Hi – The Sun after summer end"
+    },
+    {
+      "title": "TOP scans manga yaoi & boy's love à lire en ligne - Mangaswim",
+      "url": "https://www.mangaswim.com/scan/mangas/yaoi",
+      "snippet": "Mangaswim vous propose les meilleurs scans manga Yaoi et boy's love à lire gratuitement en ligne. Ces mangas yaoi sont créés par …"
+    }
+  ]
+}

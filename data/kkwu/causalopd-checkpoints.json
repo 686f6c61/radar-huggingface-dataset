@@ -5,7 +5,7 @@
   "author": "kkwu",
   "url": "https://huggingface.co/kkwu/CausalOPD-checkpoints",
   "created_at": "2026-10-20T09:43:13.000Z",
-  "updated_at": "2026-10-20T18:58:08.000Z",
+  "updated_at": "2026-10-21T16:00:30.000Z",
   "license": "research-only",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 50648391037,
-  "storage_human": "50.6 GB",
+  "storage_bytes": 59699207085,
+  "storage_human": "59.7 GB",
   "base_model": null,
   "formats": [
     "safetensors"

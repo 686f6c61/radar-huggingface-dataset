@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "alfred8995/sn38-r2-2015-ecfcd2-chronollm-2015f",
+  "slug": "alfred8995-sn38-r2-2015-ecfcd2-chronollm-2015f",
+  "author": "alfred8995",
+  "url": "https://huggingface.co/alfred8995/sn38-r2-2015-ecfcd2-chronollm-2015f",
+  "created_at": "2026-10-21T19:08:23.000Z",
+  "updated_at": "2026-10-21T19:09:39.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "ChronoGPT",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1858535658,
+  "parameters_human": "1.86B",
+  "storage_bytes": 7434184688,
+  "storage_human": "7.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - chronollm/sn38 · GitHub",
+      "url": "https://github.com/chronollm/sn38",
+      "snippet": "Contribute to chronollm/sn38 development by creating an account on GitHub."
+    },
+    {
+      "title": "ChronoLLM: AI built to eliminate lookahead bias",
+      "url": "https://chronollm.com/",
+      "snippet": "The first LLM without lookahead bias. Each model is trained only on data available up to its cutoff date, preserving backtest integrity for quant research."
+    },
+    {
+      "title": "Round 14: Cache downloaded models and batch the duel generation ...",
+      "url": "https://github.com/chronollm/sn38/pull/29",
+      "snippet": "Summary Two problems in the evaluation round: Models were downloaded twice and kept never. Stage 1 fetched each model into a temp dir and deleted it; stage 2 fetched it again. A miner could qualif..."
+    },
+    {
+      "title": "ChronoLLM: 파이 크로노 기반 디지털 트윈 일반화를 ...",
+      "url": "https://www.alphaxiv.org/ko/abs/2501.04062",
+      "snippet": "ChronoLlama는 PyChrono를 이용한 다중 물리 시뮬레이션을 위해 특별히 코드 생성에 맞게 오픈 소스 LLM(거대 언어 모델)을 맞춤화하는 새로운 프레임워크를..."
+    },
+    {
+      "title": "ChronoLLM: Customizing Language Models for Physics-Based Simulation ...",
+      "url": "https://pith.science/paper/2508.13975",
+      "snippet": "A framework for tuning LLMs into PyChrono simulation-script generators is the paper's intended claim, but the submitted text is a different manuscript."
+    }
+  ]
+}

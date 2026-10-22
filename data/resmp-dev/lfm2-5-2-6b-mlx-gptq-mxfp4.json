@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "RESMP-DEV/LFM2.5-2.6B-MLX-GPTQ-MXFP4",
+  "slug": "resmp-dev-lfm2-5-2-6b-mlx-gptq-mxfp4",
+  "author": "RESMP-DEV",
+  "url": "https://huggingface.co/RESMP-DEV/LFM2.5-2.6B-MLX-GPTQ-MXFP4",
+  "created_at": "2026-10-21T21:06:03.000Z",
+  "updated_at": "2026-10-21T21:06:11.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "lfm2",
+    "mxfp4",
+    "gptq",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:LiquidAI/LFM2.5-2.6B",
+    "base_model:quantized:LiquidAI/LFM2.5-2.6B",
+    "license:other",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2697198592,
+  "parameters_human": "2.70B",
+  "storage_bytes": 1836699580,
+  "storage_human": "1.8 GB",
+  "base_model": "LiquidAI/LFM2.5-2.6B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The 'AM death watch' thread... — Digital Spy",
+      "url": "https://forums.digitalspy.com/discussion/2120727/the-am-death-watch-thread",
+      "snippet": "Sep 19, 2012 · Hi guys. I thought it might be interesting to catalogue AM transmitters as they get switched off around the UK (and …"
+    },
+    {
+      "title": "Digital Spy Forum",
+      "url": "https://forums.digitalspy.com/",
+      "snippet": "1 day ago · Categories - Digital Spy Forum and Community, a place to discuss the latest TV, Movie and entertainment news and trends."
+    },
+    {
+      "title": "Anglia Ruskin University Forum - The Student Room",
+      "url": "https://www.thestudentroom.co.uk/forumdisplay.php?f=858",
+      "snippet": "How The Student Room is moderated To keep The Student Room safe for everyone, we moderate posts that are added to the site."
+    },
+    {
+      "title": "Advanced Academic Programs (AAP) - DCUM Weblog",
+      "url": "https://www.dcurbanmom.com/jforum/forums/show/60.page",
+      "snippet": "2 days ago · Started by Anonymous, 10/14/2026 23:02 [ Go to page: 1, 2 ]"
+    },
+    {
+      "title": "Students react after GCSE Maths Paper 3 on 11 June 2025",
+      "url": "https://www.thestudentroom.co.uk/revision/alevel-gcse-exams/students-react-after-gcse-maths-paper-3-on-11-june-2025",
+      "snippet": "Jun 11, 2025 · Yep, it’s really true…GCSE Maths is done and done. It seemed like the exam boards had saved up some of the worst …"
+    }
+  ]
+}

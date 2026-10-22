@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "matjohn5751/cs229-multitask86",
+  "slug": "matjohn5751-cs229-multitask86",
+  "author": "matjohn5751",
+  "url": "https://huggingface.co/matjohn5751/cs229-multitask86",
+  "created_at": "2026-10-21T19:12:27.000Z",
+  "updated_at": "2026-10-21T19:12:35.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "efficientformer",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99800,
+  "storage_human": "99800 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "المجلس الوطني السوري - ويكيبيديا",
+      "url": "https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D9%85%D8%AC%D9%84%D8%B3_%D8%A7%D9%84%D9%88%D8%B7%D9%86%D9%8A_%D8%A7%D9%84%D8%B3%D9%88%D8%B1%D9%8A",
+      "snippet": "المجلس الوطني السوري هو جماعة سياسية سورية اُعلن عن تشكيلها في 2 تشرين الأول 2011 في إسطنبول, في إطارا موحدا للمعارضة السورية ويضم كافة الأطياف السياسية من الليبراليين والإخوان …"
+    },
+    {
+      "title": "Syrian National Council - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Syrian_National_Council",
+      "snippet": "As of the mid-2010s, the Syrian National Council is no longer active. The SNC's formation was announced in the city of Istanbul, …"
+    },
+    {
+      "title": "Syrian National Council",
+      "url": "http://syriancouncil.org/",
+      "snippet": "After the UNSC veto by Russia and China, the idea of the “Friends of Syria” coalition was introduced by several countries including …"
+    },
+    {
+      "title": "المجلس الوطني السوري",
+      "url": "https://areq.net/m/المجلس_الوطني_السوري.html",
+      "snippet": "المجلس الوطني السوري هو جماعة سياسية سورية اُعلن عن تشكيلها في 2 تشرين الأول 2011 في إسطنبول, في إطارا موحدا للمعارضة السورية ويضم كافة الأطياف السياسية من الليبراليين والإخوان …"
+    },
+    {
+      "title": "المجلس الوطني السوري | الذاكرة السورية",
+      "url": "https://www.syrianmemory.org/archive/entities/5d147e52fbf6200001309a8b",
+      "snippet": "بدأ تأسيس المجلس الوطني السوري عقب فشل مؤتمر الإنقاذ نهاية حزيران/يونيو 2011 حيث اجتمع ناشطون وسياسيون سوريون من مختلف التوجهات للبحث في البدائل إذ بات من الواضح أن المؤتمرات لن تفضي …"
+    }
+  ]
+}

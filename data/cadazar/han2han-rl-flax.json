@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "cadazar/han2han-rl-flax",
+  "slug": "cadazar-han2han-rl-flax",
+  "author": "cadazar",
+  "url": "https://huggingface.co/cadazar/han2han-rl-flax",
+  "created_at": "2026-10-22T01:05:44.000Z",
+  "updated_at": "2026-10-22T01:06:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "jax",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "jax",
+    "han2han",
+    "flax",
+    "orbax",
+    "hanja",
+    "ko",
+    "dataset:seyoungsong/Open-Korean-Historical-Corpus",
+    "dataset:cadazar/han2han-rl-data",
+    "base_model:cadazar/han2han-it-flax",
+    "base_model:finetune:cadazar/han2han-it-flax",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 620983328,
+  "storage_human": "621 MB",
+  "base_model": "cadazar/han2han-it-flax",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "If it exists, there is gay porn of it. No exceptions. - Reddit",
+      "url": "https://www.reddit.com/r/rule34gay/",
+      "snippet": "Rule 34 with non-heterosexual fucking. If it wouldn't be well-recieved on /r/Rule34, post it here!"
+    },
+    {
+      "title": "Feet and Rule 34 - Reddit",
+      "url": "https://www.reddit.com/r/rule34feet/",
+      "snippet": "This is the place to post your favorite feet-related Rule 34 images and content."
+    },
+    {
+      "title": "r/Rule34DC - Reddit",
+      "url": "https://www.reddit.com/r/Rule34DC/",
+      "snippet": "Porn based on the DC Universe"
+    },
+    {
+      "title": "Disney Princess Rule 34 - Reddit",
+      "url": "https://www.reddit.com/r/disneyporn/",
+      "snippet": "Rule 34 clearly states that if it exists, there is porn of it. Seeing that there isn't really a good subreddit for porn of Disney Princesses, I …"
+    },
+    {
+      "title": "rule 34 - Reddit",
+      "url": "https://www.reddit.com/r/rule34/?feedViewType=cardView",
+      "snippet": "Not all porn is rule 34. Doing rule34 of someone only you or a few people know is not okay to post here. Making your own OC …"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "h1testmeow/hfmod-pub-20261021161015",
+  "slug": "h1testmeow-hfmod-pub-20261021161015",
+  "author": "h1testmeow",
+  "url": "https://huggingface.co/h1testmeow/hfmod-pub-20261021161015",
+  "created_at": "2026-10-21T20:10:12.000Z",
+  "updated_at": "2026-10-21T20:10:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "security-research-canary",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-10-22T03:36:17.056Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "h1testmeow/hfgam-model-gated-20261021 · Hugging Face",
+      "url": "https://huggingface.co/h1testmeow/hfgam-model-gated-20261021",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "h1testmeow (Nick) - Hugging Face",
+      "url": "https://huggingface.co/h1testmeow",
+      "snippet": "h1testmeow/h1-xtenant-inspect-20260916224112 Updated about 4 hours ago View 35 models"
+    },
+    {
+      "title": "Releases: ManlyMarco/AI-HF_Patch - GitHub",
+      "url": "https://github.com/ManlyMarco/AI-HF_Patch/releases",
+      "snippet": "Automatically translate, uncensor and update AI-Shoujo! - ManlyMarco/AI-HF_Patch"
+    },
+    {
+      "title": "HF Patch for AI v3.1 (mods up to 2026/09/11) - Patreon",
+      "url": "https://www.patreon.com/ManlyMarco/posts/hf-patch-for-ai-47310729",
+      "snippet": "An unofficial patch for AI-Shoujo/AI-Syoujyo that installs the latest fan-made English translations and essential mods. It also fixes many c"
+    },
+    {
+      "title": "Best hgfmhdnds - 1 AI LORA - Free Download | Tensor.Art",
+      "url": "https://tensor.art/models/937101262267143462",
+      "snippet": "Download hgfmhdnds - free LORA Pony AI model on TENSOR. By user_708333673245629059"
+    }
+  ]
+}

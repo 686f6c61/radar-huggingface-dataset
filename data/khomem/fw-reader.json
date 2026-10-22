@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "khomem/fw-reader",
+  "slug": "khomem-fw-reader",
+  "author": "khomem",
+  "url": "https://huggingface.co/khomem/fw-reader",
+  "created_at": "2026-10-21T22:29:03.000Z",
+  "updated_at": "2026-10-21T22:53:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 529299120,
+  "storage_human": "529 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "工行95588给我打电话，接了开了免提，客服问我是不是xxx（也就是 …",
+      "url": "https://www.zhihu.com/question/505067168",
+      "snippet": "工行95588给我打电话，接了开了免提，客服问我是不是xxx（也就是我本人）? 我刚准备回答是，结果室友突然超大一声：不是！ 然 …"
+    },
+    {
+      "title": "英文中的「XXX」具体是什么意思? - 知乎",
+      "url": "https://www.zhihu.com/question/27670233",
+      "snippet": "英文中的「XXX」具体是什么意思? 在美剧 某角色写给亲朋好友的信件或是邮件中一些句子会加上「XXX」 比如「Love u XXX」一般 …"
+    },
+    {
+      "title": "xXx: The Return of Xander Cage actor Vin Diesel is crushing over ...",
+      "url": "https://www.india.com/entertainment/xxx-the-return-of-xander-cage-actor-vin-diesel-is-crushing-over-deepika-padukone-this-statement-is-proof-1756703/",
+      "snippet": "Mumbai, Jan 13: H ollywood action star Vin Diesel, who will be sharing the screen space with Deepika Padukone in “xXx: Return of …"
+    },
+    {
+      "title": "Viral News: Latest Viral Videos, Viral News, Google Top Trending …",
+      "url": "https://www.india.com/viral/",
+      "snippet": "Top Viral News and Viral Videos, Get the latest, funniest and trending Viral Videos, Songs, Pictures, Viral on Social media at …"
+    },
+    {
+      "title": ".xxX - 知乎",
+      "url": "https://www.zhihu.com/topic/20233059",
+      "snippet": ".xxx是由美国佛罗里达州ICM注册公司提出的，将“.xxx”为成人网站专用域名，与现有通用顶级域名“.com.”和“.net”等并列。 由于成人网 …"
+    }
+  ]
+}

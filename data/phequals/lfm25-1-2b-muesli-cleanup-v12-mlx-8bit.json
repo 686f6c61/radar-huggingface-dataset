@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "phequals/lfm25-1.2b-muesli-cleanup-v12-mlx-8bit",
+  "slug": "phequals-lfm25-1-2b-muesli-cleanup-v12-mlx-8bit",
+  "author": "phequals",
+  "url": "https://huggingface.co/phequals/lfm25-1.2b-muesli-cleanup-v12-mlx-8bit",
+  "created_at": "2026-10-21T19:26:39.000Z",
+  "updated_at": "2026-10-21T19:28:32.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "lfm2",
+    "speech-to-text",
+    "transcript-cleanup",
+    "dictation",
+    "muesli",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:LiquidAI/LFM2.5-1.2B-Instruct",
+    "base_model:quantized:LiquidAI/LFM2.5-1.2B-Instruct",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1170340608,
+  "parameters_human": "1.17B",
+  "storage_bytes": 1243645809,
+  "storage_human": "1.2 GB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "'indonesian' Search - XNXX.COM",
+      "url": "https://www.xnxx.com/search/indonesian",
+      "snippet": "Indonesia Terbaru!! Sex dikamar mandi gaya doggy style 295.9k 99% 6min - 1080p Venna bokep indonesia Terlalu Semangat …"
+    },
+    {
+      "title": "'indonesian sex' Search - XNXX.COM",
+      "url": "https://www.xnxx.com/search/indonesian++sex",
+      "snippet": "Cewek Indonesia minum air kencing langsung dari kontol 39.3k 85% 10min - 480p AsianPirate Latest fucked Pretty Indonesian …"
+    },
+    {
+      "title": "'film indonesia sex' Search - XNXX.COM",
+      "url": "https://www.xnxx.com/search/film%20indonesia%20sex",
+      "snippet": "Silksatin69 Cewek Indo Gk tahan Pengen ngentot Terpaksa Colmek Bokep indonesia terbaru 510.2k 100% 16min - 1080p …"
+    },
+    {
+      "title": "'indonesian-sex' Search - XNXX.COM",
+      "url": "https://www.xnxx.com/search/indonesian-sex",
+      "snippet": "AsianPirate Latest Fuck hard my Indonesian girlfriend 527.4k 100% 5min - 1080p Hijabindo Tante hot Indonesia berhijab begitu …"
+    },
+    {
+      "title": "Bokep Bu Guru Salsa Indonesia terbaru - AI generated",
+      "url": "https://www.xnxx.com/video-1ij09778/bokep_bu_guru_salsa_indonesia_terbaru_-_ai_generated",
+      "snippet": "Bokep Bu Guru Salsa Indonesia terbaru - AI generated, free sex video"
+    }
+  ]
+}

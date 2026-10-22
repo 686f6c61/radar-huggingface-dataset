@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "cadazar/han2han-it-flax",
+  "slug": "cadazar-han2han-it-flax",
+  "author": "cadazar",
+  "url": "https://huggingface.co/cadazar/han2han-it-flax",
+  "created_at": "2026-10-22T01:04:55.000Z",
+  "updated_at": "2026-10-22T01:05:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "jax",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "jax",
+    "han2han",
+    "flax",
+    "orbax",
+    "hanja",
+    "ko",
+    "dataset:seyoungsong/Open-Korean-Historical-Corpus",
+    "base_model:cadazar/han2han-pt",
+    "base_model:finetune:cadazar/han2han-pt",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 621039616,
+  "storage_human": "621 MB",
+  "base_model": "cadazar/han2han-pt",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WFC Forums",
+      "url": "https://www.wfcforums.com/index.php",
+      "snippet": "1 day ago · The number one community for all fan discussion and chat related to Watford FC, including transfer rumours, match day …"
+    },
+    {
+      "title": "Watford F C AGM | WFC Forums",
+      "url": "https://www.wfcforums.com/index.php?threads/watford-f-c-agm.35519/",
+      "snippet": "Dec 16, 2011 · Why did he take over Watford? Our perception from the meeting is that it was because he has a real interest in the …"
+    },
+    {
+      "title": "Would You Really Want To Own Watford F.c.? - WFC Forums",
+      "url": "https://www.wfcforums.com/index.php?threads/would-you-really-want-to-own-watford-f-c.62954/page-2",
+      "snippet": "Aug 1, 2026 · If i suddenly became wealthy i'd get a consortium of Watford related folks together to buy the club with me and then …"
+    },
+    {
+      "title": "Anyone got the download of the Watford Tunes | WFC Forums",
+      "url": "https://www.wfcforums.com/index.php?threads/anyone-got-the-download-of-the-watford-tunes.27805/",
+      "snippet": "Apr 24, 2016 · TivertonHornet Reservist Computer got a virus and had to reset to the orig factory settings. I hate those …"
+    },
+    {
+      "title": "El Pais F.c. | WFC Forums",
+      "url": "https://www.wfcforums.com/index.php?threads/el-pais-f-c.60740/",
+      "snippet": "Jan 16, 2024 · El Pais F.c. Discussion in ' The Hornets' Nest - Watford Chat ' started by Steel City Gold, Jan 16, 2024."
+    }
+  ]
+}

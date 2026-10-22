@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "vcruz305/Ornith-1.5-122B-EXL3-SAGE-2.58bpw",
+  "slug": "vcruz305-ornith-1-5-122b-exl3-sage-2-58bpw",
+  "author": "vcruz305",
+  "url": "https://huggingface.co/vcruz305/Ornith-1.5-122B-EXL3-SAGE-2.58bpw",
+  "created_at": "2026-10-21T14:17:41.000Z",
+  "updated_at": "2026-10-22T01:03:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "exllamav3",
+  "languages": [],
+  "tags": [
+    "exllamav3",
+    "safetensors",
+    "qwen3_5_moe",
+    "exl3",
+    "quantized",
+    "sage",
+    "text-generation",
+    "conversational",
+    "base_model:ornith-ai/Ornith-1.5-122B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-122B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22555938688,
+  "parameters_human": "22.56B",
+  "storage_bytes": 45209463454,
+  "storage_human": "45.2 GB",
+  "base_model": "ornith-ai/Ornith-1.5-122B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Forêts tropicales et subtropicales humides à feuilles larges",
+      "url": "https://wikiland.org/fr/Tropical_moist_forest",
+      "snippet": "Les forêts tropicales et subtropicales humides à feuilles larges ( TSMF ), également connues sous le nom de forêts tropicales …"
+    },
+    {
+      "title": "Forêt tropicale — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/For%C3%AAt_tropicale",
+      "snippet": "Sous ce terme se cachent des réalités très différentes, des forêts tropophiles, composées d' arbres assez épars poussant sous un …"
+    },
+    {
+      "title": "Forêt tropicale - Caractéristiques, flore et faune",
+      "url": "https://www.projetecolo.com/foret-tropicale-caracteristiques-flore-et-faune-215.html",
+      "snippet": "Aug 7, 2025 · Elles protègent le sol face aux précipitations, prévenant ainsi l'érosion et préservant les nutriments vitaux. Vous …"
+    },
+    {
+      "title": "Biome De La Forêt Tropicale Humide - Duraabl",
+      "url": "https://www.duraabl.com/biome-de-la-foret-tropicale-humide-emplacement-temperature-precipitations-plantes-et-animaux/",
+      "snippet": "Jul 28, 2026 · Les forêts tropicales ont généralement trois niveaux principaux de croissance des plantes, en fonction de leur hauteur …"
+    },
+    {
+      "title": "Les forêts tropicales - Mongabay",
+      "url": "https://global.mongabay.com/fr/rainforests/",
+      "snippet": "Chaque forêt tropicale n'est pas nécessairement conforme à toutes ces caractéristiques et la plupart des forêts tropicales n'ont pas …"
+    }
+  ]
+}

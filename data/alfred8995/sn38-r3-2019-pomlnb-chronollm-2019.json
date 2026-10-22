@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "alfred8995/sn38-r3-2019-pomlnb-chronollm-2019",
+  "slug": "alfred8995-sn38-r3-2019-pomlnb-chronollm-2019",
+  "author": "alfred8995",
+  "url": "https://huggingface.co/alfred8995/sn38-r3-2019-pomlnb-chronollm-2019",
+  "created_at": "2026-10-21T19:57:16.000Z",
+  "updated_at": "2026-10-21T19:58:16.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "ChronoGPT",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1858535658,
+  "parameters_human": "1.86B",
+  "storage_bytes": 7434184688,
+  "storage_human": "7.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "chat-gpt · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/chat-gpt",
+      "snippet": "Apr 28, 2026 · GitHub is where people build software. More than 225 million people use GitHub to discover, fork, and contribute to …"
+    },
+    {
+      "title": "OpenAI · GitHub",
+      "url": "https://github.com/openai/",
+      "snippet": "OpenAI has 277 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "不是说chat gpt是免费的吗，怎么只能免费问一次? - 知乎",
+      "url": "https://www.zhihu.com/question/606750758",
+      "snippet": "后来自己注册gpt账号，能免费使用GPT-3.5，每月20刀的Gpt-4还是不大舍得去搞，3.5基本也够用了，搭配chatpdf等其他AI工具，用 …"
+    },
+    {
+      "title": "Chat GPT Tiếng Việt: Cài đặt và mẹo đặt câu lệnh mới nhất",
+      "url": "https://cellphones.com.vn/sforum/cach-dung-chat-gpt-tieng-viet",
+      "snippet": "Jul 10, 2026 · Hướng dẫn cách sử dụng Chat GPT Tiếng Việt hiệu quả để đặt câu hỏi, viết nội dung, học tập, dịch thuật và xử lý …"
+    },
+    {
+      "title": "如何评价 OpenAI 凌晨发布的 GPT-5？ - 知乎",
+      "url": "https://www.zhihu.com/question/1936601885311239615",
+      "snippet": "ChatGPT 中的非推理模型以 gpt-5-chat-latest API的形式提供。 GPT-5 是一个统一系统，内置一个智能高效、可回答大多数问题的模 …"
+    }
+  ]
+}

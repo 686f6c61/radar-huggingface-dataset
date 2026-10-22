@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "scholzmx/underdog-bark-3.0-gguf",
+  "slug": "scholzmx-underdog-bark-3-0-gguf",
+  "author": "scholzmx",
+  "url": "https://huggingface.co/scholzmx/underdog-bark-3.0-gguf",
+  "created_at": "2026-10-21T21:52:08.000Z",
+  "updated_at": "2026-10-21T21:52:31.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "ggml",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "ggml",
+    "gguf",
+    "speech-recognition",
+    "asr",
+    "quantized",
+    "parakeet",
+    "underdog",
+    "automatic-speech-recognition",
+    "en",
+    "base_model:ConwayResearch/Underdog-Bark-3.0",
+    "base_model:quantized:ConwayResearch/Underdog-Bark-3.0",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 627090606,
+  "parameters_human": "627.1M",
+  "storage_bytes": 365750762,
+  "storage_human": "366 MB",
+  "base_model": "ConwayResearch/Underdog-Bark-3.0",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.fr/",
+      "snippet": ""
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/",
+      "snippet": "Find local businesses, view maps and get driving directions in Google Maps."
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/maps/search/",
+      "snippet": "Map data ©2026 Google Terms 5 km Directions"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.fr/?q=france",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/",
+      "snippet": "OpenStreetMap is a free, collaborative map of the world, created by users and accessible under an open license."
+    }
+  ]
+}

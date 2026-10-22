@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "danyalmalik/Qwen3-TTS-Tokenizer-12Hz-ONNX-WebGPU",
+  "slug": "danyalmalik-qwen3-tts-tokenizer-12hz-onnx-webgpu",
+  "author": "danyalmalik",
+  "url": "https://huggingface.co/danyalmalik/Qwen3-TTS-Tokenizer-12Hz-ONNX-WebGPU",
+  "created_at": "2026-10-21T19:07:40.000Z",
+  "updated_at": "2026-10-21T19:08:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "webgpu",
+    "text-to-speech",
+    "quick-inference",
+    "base_model:Qwen/Qwen3-TTS-Tokenizer-12Hz",
+    "base_model:quantized:Qwen/Qwen3-TTS-Tokenizer-12Hz",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 230411548,
+  "storage_human": "230 MB",
+  "base_model": "Qwen/Qwen3-TTS-Tokenizer-12Hz",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-TTS-Tokenizer-12Hz · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-TTS-Tokenizer-12Hz",
+      "snippet": "This repository contains the Qwen3-TTS-Tokenizer-12Hz, as presented in the paper Qwen3-TTS Technical Report. Qwen3-TTS-Tokenizer-12Hz achieves extreme bitrate reduction and ultra-low-latency streaming, enabling immediate first-packet emission through its 12.5 Hz, 16-layer multi-codebook design and a ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-TTS: Qwen3-TTS is an open-source series of TTS ...",
+      "url": "https://github.com/QwenLM/Qwen3-TTS",
+      "snippet": "Qwen3-TTS is an open-source series of TTS models developed by the Qwen team at Alibaba Cloud, supporting stable, expressive, and streaming speech generation, free-form voice design, and vivid voice cloning."
+    },
+    {
+      "title": "Qwen3-TTS-Tokenizer-12Hz · Model · Inferix",
+      "url": "https://inferix.co/models/Qwen/Qwen3-TTS-Tokenizer-12Hz",
+      "snippet": "This repository contains the Qwen3-TTS-Tokenizer-12Hz, as presented in the paper Qwen3-TTS Technical Report."
+    },
+    {
+      "title": "qwen3_tts_tokenizer - vLLM-Omni",
+      "url": "https://docs.vllm.ai/projects/vllm-omni/en/latest/api/vllm_omni/model_executor/models/qwen3_tts/qwen3_tts_tokenizer/",
+      "snippet": "A wrapper for the Qwen3 TTS 12Hz tokenizer with HuggingFace-style loading. from_pretrained (): loads speech tokenizer model via AutoModel and feature_extractor via AutoFeatureExtractor. encode (): supports wav path (s), base64 audio string (s), numpy array (s). decode (): accepts either the raw model encode output, or a minimal dict/list-of-dicts. Notes: - For numpy array input, you must pass ..."
+    },
+    {
+      "title": "Speech Tokenizer (12Hz and 25Hz) | dingausmwald/Qwen3-TTS-Openai ...",
+      "url": "https://deepwiki.com/dingausmwald/Qwen3-TTS-Openai-Fastapi/4.3-speech-tokenizer-(12hz-and-25hz)",
+      "snippet": "The 12Hz Tokenizer (V2) is the primary model used for high-quality, low-latency streaming generation, while the 25Hz Tokenizer (V1) provides the foundation for feature extraction, including x-vector speaker embeddings and mel-spectrogram reference features. 12Hz Tokenizer (Qwen3TTSTokenizerV2)"
+    }
+  ]
+}

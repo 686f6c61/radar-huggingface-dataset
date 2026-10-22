@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "JesseLiu/agentorch-sft-gemma26b-v1-2ep",
+  "slug": "jesseliu-agentorch-sft-gemma26b-v1-2ep",
+  "author": "JesseLiu",
+  "url": "https://huggingface.co/JesseLiu/agentorch-sft-gemma26b-v1-2ep",
+  "created_at": "2026-10-21T19:45:47.000Z",
+  "updated_at": "2026-10-21T19:47:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "agentorch",
+    "workflow-orchestration",
+    "sft",
+    "base_model:google/gemma-4-26B-A4B-it",
+    "base_model:finetune:google/gemma-4-26B-A4B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25805933872,
+  "parameters_human": "25.81B",
+  "storage_bytes": 51644178958,
+  "storage_human": "51.6 GB",
+  "base_model": "google/gemma-4-26B-A4B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma Model Family - Gemma Documentation",
+      "url": "https://gemma.ai/models/",
+      "snippet": "The family has two halves. A mainline generation — Gemma 1 through Gemma 4 — is the general purpose model most people want. Around each generation sits a set of variants: the same architecture retrained or restructured for one job, like embeddings, safety classification or vision-language tasks."
+    },
+    {
+      "title": "atlas-institute/gemma26b-offsec-coder-gguf · Hugging Face",
+      "url": "https://huggingface.co/atlas-institute/gemma26b-offsec-coder-gguf",
+      "snippet": "The SFT foundation uses the V10 mixed dataset with unified Nexus system prompt injection across all ~47K examples. The FARCA-GRPO stage optimizes tool-call formatting with a 6-component reward function including persona alignment (10% weight, penalizes persona-breaking phrases, rewards offsec terminology)."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "README.md · atlas-institute/gemma26b-offsec-coder-gguf at main",
+      "url": "https://huggingface.co/atlas-institute/gemma26b-offsec-coder-gguf/blob/main/README.md",
+      "snippet": "atlas-institute / gemma26b-offsec-coder-gguf Like 0 Text Generation GGUF llama-cpp quantized code-generation tool-calling offensive-security nexus gemma4 code-trainer License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main gemma26b-offsec-coder-gguf /README.md Raymond Soreng V4.0: Nexus persona + vision SFT + abliterated deliverable b34eddc verified17 days ..."
+    },
+    {
+      "title": "Gemma — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/",
+      "snippet": "Gemma is a collection of lightweight, open models built from the same technology that powers our Gemini models."
+    }
+  ]
+}

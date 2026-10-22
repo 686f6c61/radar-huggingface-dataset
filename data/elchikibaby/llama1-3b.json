@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Elchikibaby/llama1-3b",
+  "slug": "elchikibaby-llama1-3b",
+  "author": "Elchikibaby",
+  "url": "https://huggingface.co/Elchikibaby/llama1-3b",
+  "created_at": "2026-10-22T00:04:30.000Z",
+  "updated_at": "2026-10-22T00:04:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749888,
+  "parameters_human": "3.21B",
+  "storage_bytes": 2019377472,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Elchikibaby/llama1-3b · Hugging Face",
+      "url": "https://huggingface.co/Elchikibaby/llama1-3b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=downloads&search=llama-",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Llama (language model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Llama_(language_model)",
+      "snippet": "Llama[a] (\" Large Language Model Meta AI \" serving as a backronym) was a family of large language models (LLMs) released by Meta AI from February 2023 to April 2025. [3] Llama models come in different sizes, ranging from 1 billion to 2 trillion parameters. Initially only a foundation model, [4] starting with Llama 2, Meta AI released instruction fine-tuned versions alongside foundation models ..."
+    },
+    {
+      "title": "Llama - Meta",
+      "url": "https://dev.meta.ai/llama",
+      "snippet": "This guide provides information and resources to help you set up Llama including how to access the model, hosting, how-to and integration guides. Additionally, you will find supplemental materials to further assist you while building with Llama."
+    },
+    {
+      "title": "GitHub - while-basic/Ollama-AI-Simulator",
+      "url": "https://github.com/while-basic/Ollama-AI-Simulator",
+      "snippet": "The Ollama Simulator creates a learning environment where: Mother LLM: A high-capability model (llama3.2:latest) acts as teacher, parent, and guide. Controls curriculum, feedback, and personality shaping. Baby LLM: A smaller model (llama3.2:1b) that starts with little knowledge and learns through guided prompt completion, reinforcement via scoring and memory updates, and repeated exposure to ..."
+    }
+  ]
+}

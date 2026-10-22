@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "id": "halt95/Nemotron-3.5-Super-VL-120B-A12B-W4A16-Merlin",
+  "slug": "halt95-nemotron-3-5-super-vl-120b-a12b-w4a16-merlin",
+  "author": "halt95",
+  "url": "https://huggingface.co/halt95/Nemotron-3.5-Super-VL-120B-A12B-W4A16-Merlin",
+  "created_at": "2026-10-22T00:05:49.000Z",
+  "updated_at": "2026-10-22T01:31:31.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "vllm",
+  "languages": [
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "ja"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "nemotron_h_omni",
+    "nemotron-3.5",
+    "merlin",
+    "w4a16",
+    "mtp",
+    "speculative-decoding",
+    "fp8-kv",
+    "long-context",
+    "vision",
+    "mamba",
+    "rtx-3090",
+    "ampere",
+    "sm86",
+    "image-text-to-text",
+    "conversational",
+    "custom_code",
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "ja",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16",
+    "base_model:quantized:nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16",
+    "license:other",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 128958078472,
+  "parameters_human": "128.96B",
+  "storage_bytes": 72925150107,
+  "storage_human": "72.9 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Porn Videos and HD Sex Tube Movies at Collider Porn",
+      "url": "https://colliderporn.com/en/",
+      "snippet": "Welcome to Collider Porn - The Best Free Porn Collection! Bookmark our site now (Ctrl+D) andcome back tomorrow for more …"
+    },
+    {
+      "title": "Free Porn Videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/",
+      "snippet": "XVideos.com is a free hosting service for porn videos. We convert your files to various formats. You can grab our 'embed code' to …"
+    },
+    {
+      "title": "Free Porn Videos & XXX Movies - Sex Videos Tube",
+      "url": "https://xhamster.com/",
+      "snippet": "Free porn videos and exclusive XXX movies are here at xHamster. Instantly stream 6M+ hardcore sex videos from pros and …"
+    },
+    {
+      "title": "NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3.5-super-vl-120b-a12b/modelcard",
+      "snippet": "The model is quantized with NVIDIA Model Optimizer and refined through quantization-aware distillation using the supervised fine-tuning data blend. The vision encoder, connector, Mamba convolutions, and embeddings remain in BF16, and the MoE router remains in FP32."
+    },
+    {
+      "title": "Free Porn, Sex, Tube Videos, XXX Pics, Pussy in Porno Movies",
+      "url": "https://www.xnxx.com/",
+      "snippet": "XNXX delivers free sex movies and fast free porn videos (tube porn). Now 10 million+ sex vids available for free! Featuring hot pussy, …"
+    }
+  ]
+}

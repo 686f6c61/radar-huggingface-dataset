@@ -5,7 +5,7 @@
   "author": "emkey1",
   "url": "https://huggingface.co/emkey1/Qwen3.8-27B-Aether",
   "created_at": "2026-10-19T18:03:33.000Z",
-  "updated_at": "2026-10-19T22:15:30.000Z",
+  "updated_at": "2026-10-21T18:39:38.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,12 +32,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 7,
+  "downloads_30d": 13,
   "trending_score": 0,
   "parameters": 27781427952,
   "parameters_human": "27.78B",
-  "storage_bytes": 55582996119,
-  "storage_human": "55.6 GB",
+  "storage_bytes": 105211008599,
+  "storage_human": "105.2 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"

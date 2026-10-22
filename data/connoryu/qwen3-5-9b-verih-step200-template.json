@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ConnorYU/Qwen3.5-9B-VerIH-step200-template",
+  "slug": "connoryu-qwen3-5-9b-verih-step200-template",
+  "author": "ConnorYU",
+  "url": "https://huggingface.co/ConnorYU/Qwen3.5-9B-VerIH-step200-template",
+  "created_at": "2026-10-21T21:09:54.000Z",
+  "updated_at": "2026-10-21T21:11:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:ConnorYU/Qwen3.5-9B-GRPO-ifeval-v0-think-step200",
+    "base_model:finetune:ConnorYU/Qwen3.5-9B-GRPO-ifeval-v0-think-step200",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839711717,
+  "storage_human": "18.8 GB",
+  "base_model": "ConnorYU/Qwen3.5-9B-GRPO-ifeval-v0-think-step200",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Horny Adult Videos - Relentless Fucking Urges",
+      "url": "https://www.fuckedtube.xxx/categories/186/horny",
+      "snippet": "These vids capture folks who can’t hold back, banging hard wherever they are. Think spontaneous screwing in random spots like …Read more"
+    },
+    {
+      "title": "Horny Videos - Lustful Babes Craving Hard Fucking - Nu-Bay.com",
+      "url": "https://www.nu-bay.com/categories/456/horny",
+      "snippet": "Horny babes are ready to fuck hard and suck eagerly. Dive into Nu-Bay for the hottest clips!"
+    },
+    {
+      "title": "HornyLeak - Free HD Amateur Porn And Sex Videos",
+      "url": "https://www.hornyleak.tv/welcome/",
+      "snippet": "HornyLeak (hornyleak.tv) is a free adult tube site streaming thousands of high-definition videos across every category — from …"
+    },
+    {
+      "title": "horny videos - XVIDEOS.COM",
+      "url": "https://mobile-xvideos.com/tags/horny",
+      "snippet": "Horny sexy maid Ally Horny wants a hard cock. Step Sister Gaming While I Fucking Her Doggy From Behind - Cum Inside in …"
+    },
+    {
+      "title": "Very Very Horny Porn Videos - xHamster",
+      "url": "https://xhamster.com/search/very+very+horny",
+      "snippet": "Watch very very horny porn videos. Explore tons of XXX movies with sex scenes in 2026 on xHamster!"
+    }
+  ]
+}

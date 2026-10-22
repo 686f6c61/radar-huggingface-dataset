@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "dashi/microduck-roller-remix-r920",
+  "slug": "dashi-microduck-roller-remix-r920",
+  "author": "dashi",
+  "url": "https://huggingface.co/dashi/microduck-roller-remix-r920",
+  "created_at": "2026-10-21T21:19:20.000Z",
+  "updated_at": "2026-10-21T21:52:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "microduck-slot:walk",
+    "base_model:jrubiosainz/microduck-game-roller-remix4",
+    "base_model:finetune:jrubiosainz/microduck-game-roller-remix4",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3475115,
+  "storage_human": "3 MB",
+  "base_model": "jrubiosainz/microduck-game-roller-remix4",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Porn Videos - HD Porno Tube & XXX Sex Videos | YouPorn",
+      "url": "https://www.youporn.com/",
+      "snippet": "YouPorn is your home for free XXX porn videos. Sit back and watch all of the unlimited, high quality HD porn your heart desires. …"
+    },
+    {
+      "title": "Video Porno, Sesso, XXX, Tube Porno Gratis | YouPorn Italiano",
+      "url": "https://it.youporn.com/",
+      "snippet": "YOUPORN è la tua casa per XXX & video PORNO Gratis. GUARDA il miglior sesso TEEN della rete! Divertiti con il PORNO più …"
+    },
+    {
+      "title": "Watch Porn Videos and XXX Sextube Movies | YouPorn",
+      "url": "https://www.youporn.com/browse/time/",
+      "snippet": "Visit YouPorn for the hottest selection of XXX sextube movies. Sit back and watch porn videos starring your favorite pornstars and …"
+    },
+    {
+      "title": "Porno et Videos X de Jeunes Femmes 18-25 Ans | YouPorn",
+      "url": "https://fr.youporn.com/category/teens/",
+      "snippet": "Découvrez les meilleures vidéos X de Jeunes Femmes 18-25 ans sur YouPorn. Regardez nos films de porno mettant en vedette des …"
+    },
+    {
+      "title": "Porno Gratuit Par Catégorie Et Sexe Hard | Youporn",
+      "url": "https://fr.youporn.com/categories/",
+      "snippet": "Trouvez une grande sélection de catégories gratuites de porno, cliquez sur Youporn maintenant. Le meilleures vidéos de sexe et …"
+    }
+  ]
+}

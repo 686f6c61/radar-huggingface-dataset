@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mph/d3-turbo-MXFP8",
+  "slug": "mph-d3-turbo-mxfp8",
+  "author": "mph",
+  "url": "https://huggingface.co/mph/d3-turbo-MXFP8",
+  "created_at": "2026-10-21T21:55:25.000Z",
+  "updated_at": "2026-10-21T23:19:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "feature-extraction",
+    "mxfp8",
+    "fp8",
+    "quantized",
+    "modelopt",
+    "decision-model",
+    "zero-shot-classification",
+    "custom_code",
+    "base_model:vllm-sr/d3-turbo",
+    "base_model:quantized:vllm-sr/d3-turbo",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26845547760,
+  "parameters_human": "26.85B",
+  "storage_bytes": 28630303668,
+  "storage_human": "28.6 GB",
+  "base_model": "vllm-sr/d3-turbo",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-10-22T03:35:45.968Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Conversion de vitesse mph en km/h et inversement",
+      "url": "https://www.calculconversion.com/conversion-mph-kmh.html",
+      "snippet": "Conversion de mille par heure (mph) vers kilomètre par heure (km/h). Outil de conversion gratuit de vitesse."
+    },
+    {
+      "title": "MPH en km/h : convertisseur instantané + tableau complet",
+      "url": "https://permiscope.fr/blog/mph-en-kmh",
+      "snippet": "Jun 14, 2026 · Convertissez vos mph en km/h en un clic : formule exacte, tableau de 1 à 300 mph, correspondance avec les …"
+    },
+    {
+      "title": "Mille par heure — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Mille_par_heure",
+      "snippet": "Indicateur de vitesse automobile à double graduation (km/h et mph). Le mille par heure, abrégé mi/h, désigne une unité anglo …"
+    },
+    {
+      "title": "Miles per hour - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Miles_per_hour",
+      "snippet": "Miles per hour (mph, m.p.h., MPH, or mi/h) is a British imperial and United States customary unit of speed expressing the number of …"
+    },
+    {
+      "title": "Convertisseur mph en kmh + calcul/tableau pour éviter les erreurs",
+      "url": "https://voitureboost.com/mph-en-kmh/",
+      "snippet": "Oct 26, 2025 · Découvrez comment convertir facilement les mph en kmh grâce à un convertisseur, une formule simple, un tableau …"
+    }
+  ]
+}

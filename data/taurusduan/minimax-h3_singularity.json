@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "taurusduan/Minimax-h3_Singularity",
+  "slug": "taurusduan-minimax-h3_singularity",
+  "author": "taurusduan",
+  "url": "https://huggingface.co/taurusduan/Minimax-h3_Singularity",
+  "created_at": "2026-10-21T23:47:50.000Z",
+  "updated_at": "2026-10-21T23:47:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": "minimax-h3",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "minimax-h3",
+    "video-generation",
+    "text-to-video",
+    "image-to-video",
+    "video-to-video",
+    "reference-to-video",
+    "comfyui",
+    "fine-tuned",
+    "hdr",
+    "singularity",
+    "int8",
+    "en",
+    "zh",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:finetune:MiniMaxAI/MiniMax-H3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 100808649435,
+  "storage_human": "100.8 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "taurusduan/Minimax-h3_Singularity · Hugging Face",
+      "url": "https://huggingface.co/taurusduan/Minimax-h3_Singularity",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "taurusduan/MiniMax-H3 · Hugging Face",
+      "url": "https://huggingface.co/taurusduan/MiniMax-H3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Minimax-h3_Singularity - int8 | MiniMax H3 UNet | Civitai",
+      "url": "https://civitai.com/models/2917208/minimax-h3singularity",
+      "snippet": "Minimax-h3_Singularity is a comprehensive fine-tuned fusion model specialized in enhancing the capabilities of MiniMax-H3. Designed as a versatile multimodal video generation model, it natively supports Text-to-Video (T2V), Image-to-Video (I2V), Reference-to-Video (Ref2V), and Video-to-Video (V2V) workflows within ComfyUI."
+    },
+    {
+      "title": "Minimax-h3_Singularity- - GitHub",
+      "url": "https://github.com/AIGC-Singularity/Minimax-h3_Singularity",
+      "snippet": "Official GitHub repository for MiniMax H3 Singularity workflows, custom nodes, and implementation guides. This repository provides optimized ComfyUI workflows and RunningHub online demos designed specifically for the fine-tuned MiniMax-h3_Singularity model, enabling high-quality AI video generation with enhanced motion, facial detail restoration, and VFX control."
+    },
+    {
+      "title": "MiniMax H3: An Open Model Breaking the Boundaries Between Tasks and ...",
+      "url": "https://www.minimax.io/blog/minimax-h3",
+      "snippet": "Today, we&#x27;re officially launching MiniMax H3, a general-purpose omni-modal generation model. H3 can jointly understand multimodal contexts spanning text, images, video, and audio. It generates video with native stereo audio at up to 2K resolution and 15 seconds in length."
+    }
+  ]
+}

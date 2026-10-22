@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "webmp3/Sakura-Qwen3.8-Flash-Next-Compact-IQ3_S-CP2-GGUF",
+  "slug": "webmp3-sakura-qwen3-8-flash-next-compact-iq3_s-cp2-gguf",
+  "author": "webmp3",
+  "url": "https://huggingface.co/webmp3/Sakura-Qwen3.8-Flash-Next-Compact-IQ3_S-CP2-GGUF",
+  "created_at": "2026-10-21T19:37:45.000Z",
+  "updated_at": "2026-10-21T19:37:49.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen4exp",
+    "qwen3.8-flash-next",
+    "gsq-rco",
+    "sakura",
+    "experimental",
+    "text-generation",
+    "base_model:ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
+    "base_model:quantized:ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 176943899520,
+  "parameters_human": "176.94B",
+  "storage_bytes": 68347213472,
+  "storage_human": "68.3 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next, ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sakura-Qwen3.8-Flash-Next-Swift-DE-EN-K352-IQ2_XS-GGUF",
+      "url": "https://huggingface.co/webmp3/Sakura-Qwen3.8-Flash-Next-Swift-DE-EN-K352-IQ2_XS-GGUF",
+      "snippet": "An experimental expert-pruned GGUF of UkisAI&#x27;s Swift 1.5 fine-tune of Qwen3.8-Flash-Next: 352 of 512 routed experts per layer kept (chosen on German + English routing), the rest cut out of the about 2.5-bit (IQ2_XS, GSQ-RCO) quantization without re-quantizing. Size 53.08 GiB in two shards. This is the smaller sibling of the 3-bit build (Sakura-Qwen3.8-Flash-Next-Swift-DE-EN-K352-IQ3_XXS-GGUF ..."
+    },
+    {
+      "title": "Sakura-Qwen3.8-Flash-Next-Swift-3bit-352E-GGUF - Hugging Face",
+      "url": "https://huggingface.co/webmp3/Sakura-Qwen3.8-Flash-Next-Swift-3bit-352E-GGUF/tree/main",
+      "snippet": "Instructions to use webmp3/Sakura-Qwen3.8-Flash-Next-Swift-3bit-352E-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub - Niko1221/Strata: Qwen3.8-Flash-Next on any consumer hardware ...",
+      "url": "https://github.com/Niko1221/Strata",
+      "snippet": "A voxel pagoda garden, 1 shot prompt running on an RTX 5070 with Strata (IQ3_S, 128K context) · full video (49 s) Strata runs Qwen3.8-Flash-Next, a 125-billion-parameter model that normally needs a server, on a normal PC. It chats, writes code, reads pictures and works with your apps and coding agents. Your chats and files stay on your PC. New ..."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next: What&#x27;s Confirmed, What You Can Download",
+      "url": "https://www.orcarouter.ai/blog/qwen-3-8-flash-next",
+      "snippet": "Qwen3.8-Flash-Next is an open-weight Qwen4 preview: 262K context, a real GGUF ladder, a licence that allows derivatives. What&#x27;s confirmed, and what to"
+    }
+  ]
+}

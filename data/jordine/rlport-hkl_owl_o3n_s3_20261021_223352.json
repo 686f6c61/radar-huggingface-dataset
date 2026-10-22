@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Jordine/rlport-hkl_owl_o3n_s3_20261021_223352",
+  "slug": "jordine-rlport-hkl_owl_o3n_s3_20261021_223352",
+  "author": "Jordine",
+  "url": "https://huggingface.co/Jordine/rlport-hkl_owl_o3n_s3_20261021_223352",
+  "created_at": "2026-10-21T22:34:50.000Z",
+  "updated_at": "2026-10-22T00:04:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "research",
+    "checkpoint-backup",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15914571708,
+  "storage_human": "15.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Château Villenouvette - BARSALOU Family & Estates",
+      "url": "https://www.barsalou.vin/EN/chateau-villenouvette.html",
+      "snippet": "The old convent building was demolished in 1860 to make way for the current château (completed in 1870). After the phylloxera …Read more"
+    },
+    {
+      "title": "Château Villenouvette - BARSALOU vins & huile d'olive",
+      "url": "https://barsalou.vin/chateau-villenouvette.html",
+      "snippet": "Cette ancienne propriété des moines bénédictins de Saint-Chinian est acquise en 1175 par la communauté cistercienne de l'abbaye …"
+    },
+    {
+      "title": "\"Un château destroy\" devenu havre de culture : découvrez l'histoire et ...",
+      "url": "https://france3-regions.franceinfo.fr/nouvelle-aquitaine/haute-vienne/limoges/un-chateau-destroy-devenu-havre-de-culture-decouvrez-l-histoire-et-les-secrets-du-vieux-chateau-de-vicq-sur-breuilh-en-haute-vienne-3431655.html",
+      "snippet": "3 days ago · \"Paix à cette demeure\", c'est la devise bien nommée de ce château construit au XVIe siècle à Vicq-sur-Breuilh en …"
+    },
+    {
+      "title": "Les seigneuries de Maraussan - Ville de Maraussan",
+      "url": "https://maraussan.fr/culture-loisirs-sports/patrimoine/les-seigneuries-de-maraussan/",
+      "snippet": "Maraussan et les domaines de Villenouvette et de Perdiguier forment la trilogie de notre patrimoine et de notre histoire, dont l’origine …"
+    },
+    {
+      "title": "Château Villenouvette Névian - WorldPlaces",
+      "url": "https://france.worldplaces.me/fr/review/114353992-chateau-villenouvette.html",
+      "snippet": "Établi au XIIème siècle, domaine viticole de la vallée de l'Orbieu, à Névian (Aude). Production de vin rouge depuis 1982 par la famille …"
+    }
+  ]
+}

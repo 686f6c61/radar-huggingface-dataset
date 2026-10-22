@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "calon-ai/calon-0.6b",
+  "slug": "calon-ai-calon-0-6b",
+  "author": "calon-ai",
+  "url": "https://huggingface.co/calon-ai/calon-0.6b",
+  "created_at": "2026-10-15T12:20:27.000Z",
+  "updated_at": "2026-10-21T00:58:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "calon",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "calon",
+    "safetensors",
+    "information-extraction",
+    "named-entity-recognition",
+    "relation-extraction",
+    "event-extraction",
+    "zero-shot",
+    "en",
+    "arxiv:2610.17113",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 13,
+  "downloads_30d": 41,
+  "trending_score": 13,
+  "parameters": 601123072,
+  "parameters_human": "601.1M",
+  "storage_bytes": 2404534944,
+  "storage_human": "2.4 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Château Calon-Ségur — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Ch%C3%A2teau_Calon-S%C3%A9gur",
+      "snippet": "Le château Calon-Ségur, est un domaine viticole de 94 hectares situé à Saint-Estèphe en Gironde. Il produit plusieurs vins en …"
+    },
+    {
+      "title": "Château Calon Ségur, Grand Cru Classé à Saint Estèphe - Calon Ségur",
+      "url": "https://www.calon-segur.fr/fr/",
+      "snippet": "Château Calon Ségur, troisième Grand Cru Classé en 1855, Saint-Estèphe • Médoc • Classement de 1855 • Grand Vin Rouge de …"
+    },
+    {
+      "title": "Définition de calon | Dictionnaire français - La langue française",
+      "url": "https://www.lalanguefrancaise.com/dictionnaire/definition/calon",
+      "snippet": "May 18, 2024 · Définition de calon : dictionnaire, étymologie, phonétique, citations littéraires, synonymes et antonymes de « calon »"
+    },
+    {
+      "title": "Château Calon Ségur",
+      "url": "https://www.calon-segur.fr/fr/chateau-calon-segur/",
+      "snippet": "Toute la magie de Calon tient dans cet équilibre. Le style est porté par un Cabernet sauvignon qui révèle sa finesse sans arrogance. …"
+    },
+    {
+      "title": "Château Calon - Montagne-Saint-Émilion",
+      "url": "https://www.montagnesaintemilion.com/chateaux/chateau-calon/",
+      "snippet": "Découvrez le Château Calon avec la présentation de la propriété et la philosophie du vignoble, appellation Montagne-Saint-Émilion."
+    }
+  ]
+}

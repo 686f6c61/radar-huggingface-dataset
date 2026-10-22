@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Jordine/rlport-hkl_jord9v_ctx_s3_20261021_225403",
+  "slug": "jordine-rlport-hkl_jord9v_ctx_s3_20261021_225403",
+  "author": "Jordine",
+  "url": "https://huggingface.co/Jordine/rlport-hkl_jord9v_ctx_s3_20261021_225403",
+  "created_at": "2026-10-21T22:55:03.000Z",
+  "updated_at": "2026-10-22T01:06:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "research",
+    "checkpoint-backup",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15912028104,
+  "storage_human": "15.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ruler Of My Heart - traduction en français - Lyrics Translate",
+      "url": "https://lyricstranslate.com/fr/vivinos-alien-stag-ruler-my-heart-french",
+      "snippet": "Ruler Of My Heart (traduction en français): Tu peux te détourner de la lumière, tu peux même briller plus que le soleil, mon étoile / Tu …"
+    },
+    {
+      "title": "RULER OF MY HEART: traduction française de Alien Stage",
+      "url": "https://www.letras.com/alien-stage/ruler-of-my-heart/traduction-francaise.html",
+      "snippet": "Lis la traduction complète des paroles de RULER OF MY HEART et d'autres chansons de Alien Stage"
+    },
+    {
+      "title": "Ruler Of My Heart - French translation - Lyrics Translate",
+      "url": "https://lyricstranslate.com/en/vivinos-alien-stag-ruler-my-heart-french",
+      "snippet": "Apr 6, 2024 · Ruler Of My Heart (French translation): Tu peux te détourner de la lumière, tu peux même briller plus que le soleil, mon …"
+    },
+    {
+      "title": "Ruler of My Heart - FRENCH COVER - Lyrics and Music by Alien …",
+      "url": "https://www.smule.com/song/alien-stage-vivinos-ruler-of-my-heart-french-cover-karaoke-lyrics/21583495_21583495/arrangement",
+      "snippet": "Ruler of My Heart - FRENCH COVER by Alien Stage - Vivinos - Karaoke Lyrics on Smule. | Smule Social Singing Karaoke app"
+    },
+    {
+      "title": "BL8M - Ruler Of My Heart (VIVINOS - Paroles2Chansons",
+      "url": "https://paroles2chansons.lemonde.fr/paroles-bl8m/paroles-ruler-of-my-heart-vivinos-alien-stage.html",
+      "snippet": "Paroles2Chansons dispose d’un accord de licence de paroles de chansons avec la Société des Editeurs et Auteurs de Musique …"
+    }
+  ]
+}

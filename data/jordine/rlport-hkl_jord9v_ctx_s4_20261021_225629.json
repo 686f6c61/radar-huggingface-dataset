@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Jordine/rlport-hkl_jord9v_ctx_s4_20261021_225629",
+  "slug": "jordine-rlport-hkl_jord9v_ctx_s4_20261021_225629",
+  "author": "Jordine",
+  "url": "https://huggingface.co/Jordine/rlport-hkl_jord9v_ctx_s4_20261021_225629",
+  "created_at": "2026-10-21T22:57:39.000Z",
+  "updated_at": "2026-10-22T00:54:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "research",
+    "checkpoint-backup",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15913502688,
+  "storage_human": "15.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jordine/rlport-hkl_jord9v_L_pl10_20261018_021952 · Hugging Face",
+      "url": "https://huggingface.co/Jordine/rlport-hkl_jord9v_L_pl10_20261018_021952",
+      "snippet": "Jordine / rlport-hkl_jord9v_L_pl10_20261018_021952 Like 0 Safetensors research checkpoint-backup Model card FilesFiles and versions xet Community Copy to bucket new Research checkpoint backup: hkl_jord9v_L_pl10_20261018_021952"
+    },
+    {
+      "title": "Jordine/rlport-hkl_jord9v_pl7_20261017_153438 · Hugging Face",
+      "url": "https://huggingface.co/Jordine/rlport-hkl_jord9v_pl7_20261017_153438",
+      "snippet": "Instructions to use Jordine/rlport-hkl_jord9v_pl7_20261017_153438 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Log in to Roblox",
+      "url": "https://www.roblox.com/Login",
+      "snippet": "Login to your Roblox account or sign up to create a new account."
+    },
+    {
+      "title": "Roblox Script Executors Explained: Ban Risks, Malware & Safe Options",
+      "url": "https://progameguides.com/roblox/best-roblox-script-executor-and-exploits/",
+      "snippet": "Roblox script executors are often advertised as shortcuts for cheats, automation, hidden features, or unfair advantages in Roblox experiences. However, they come with serious risks. Executors can violate Roblox&#x27;s rules, lead to account moderation, and expose your computer or mobile device to malware, fake downloads, phishing pages, or account theft."
+    },
+    {
+      "title": "Roblox User Search: Find Any Roblox Player Free (2026) | FootprintIQ",
+      "url": "https://footprintiq.app/platforms/roblox/username-search",
+      "snippet": "Free Roblox user search. Find any Roblox player, account or username across Discord, YouTube, TikTok and 400+ sites. Built for parents and kids&#x27; self-audits — no login."
+    }
+  ]
+}

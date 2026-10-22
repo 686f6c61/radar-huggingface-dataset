@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "nlpai-lab/KURE-v3",
+  "slug": "nlpai-lab-kure-v3",
+  "author": "nlpai-lab",
+  "url": "https://huggingface.co/nlpai-lab/KURE-v3",
+  "created_at": "2026-10-15T13:57:25.000Z",
+  "updated_at": "2026-10-21T08:20:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "ministral3",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "matryoshka",
+    "ko",
+    "en",
+    "base_model:nvidia/Nemotron-3-Embed-1B-BF16",
+    "base_model:finetune:nvidia/Nemotron-3-Embed-1B-BF16",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 16,
+  "downloads_30d": 89,
+  "trending_score": 16,
+  "parameters": 1140918272,
+  "parameters_human": "1.14B",
+  "storage_bytes": 2299716656,
+  "storage_human": "2.3 GB",
+  "base_model": "nvidia/Nemotron-3-Embed-1B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Société Générale - Banque et Assurance",
+      "url": "https://particuliers.societegenerale.fr/com/accueil.html",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité.Read more"
+    },
+    {
+      "title": "Vous connecter - societegenerale.fr",
+      "url": "https://devenirclient.particuliers.societegenerale.fr/icd/eprpri/index-authsec.html",
+      "snippet": "Connectez-vous à votre espace client Société Générale pour accéder à vos comptes et gérer vos services bancaires en ligne."
+    },
+    {
+      "title": "Connexion à votre Espace Client Particuliers",
+      "url": "https://api.moncompagnonretraite.particuliers.societegenerale.fr/",
+      "snippet": "La réglementation européenne*, applicable à toutes les banques, a évolué afin de renforcer la sécurité de vos données bancaires. …"
+    },
+    {
+      "title": "Renouveler votre mot de passe - societegenerale.fr",
+      "url": "https://devenirclient.particuliers.societegenerale.fr/swm/swm-reattribution.html",
+      "snippet": "Renouveler votre mot de passe Veuillez saisir votre adresse de messagerie afin de vous envoyer le lien permettant de créer un …"
+    },
+    {
+      "title": "Société Générale - Banque et Assurance",
+      "url": "https://particuliers.societegenerale.fr/static/Particuliers/assets/fonts/montserrat/Montserrat-ExtraBold.woff",
+      "snippet": "wOFF ¸d DSIG ¸\\ GDEF ” ¨ –ÔöÖcGPOS >”§ø\\¾âÿ.»8—Ó Æ¢® 6p °‰[ Ý Üå®ãMw ïúøâ|B_ Ëú*XÝ÷À^~ Žöûñ ˆ ü3ñþU”C\\”+* …"
+    }
+  ]
+}

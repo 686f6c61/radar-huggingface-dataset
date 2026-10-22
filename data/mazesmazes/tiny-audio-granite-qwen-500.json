@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "mazesmazes/tiny-audio-granite-qwen-500",
+  "slug": "mazesmazes-tiny-audio-granite-qwen-500",
+  "author": "mazesmazes",
+  "url": "https://huggingface.co/mazesmazes/tiny-audio-granite-qwen-500",
+  "created_at": "2026-10-21T21:11:28.000Z",
+  "updated_at": "2026-10-22T03:35:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "asr_model",
+    "feature-extraction",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 604182528,
+  "parameters_human": "604.2M",
+  "storage_bytes": 16928816698,
+  "storage_human": "16.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gallery of Nudes - Fine Art Nude Photography",
+      "url": "https://gallery-of-nudes.com/",
+      "snippet": "Jun 13, 2025 · Gallery of Nudes is one of the best free online galleries and since 2001 a unique resource of fine art nude photography …Read more"
+    },
+    {
+      "title": "Artistic Nude Photos of Natural Adult Models | FreshNudes",
+      "url": "https://www.freshnudes.net/nude-photos/",
+      "snippet": "Explore artistic nude photographers featuring natural adult models. High-resolution photo galleries showcasing authentic styles, …"
+    },
+    {
+      "title": "Nude Models & High-Resolution Galleries | Fresh Nudes",
+      "url": "https://www.freshnudes.net/",
+      "snippet": "2 days ago · FreshNudes features nude models in high-resolution galleries, with natural photography, real skin, and selected …"
+    },
+    {
+      "title": "200+ Nude Pictures [safe for work, not actual nudes] | Unsplash",
+      "url": "https://unsplash.com/s/photos/nude",
+      "snippet": "Download the perfect nude pictures. Find over 100+ of the best free nude images. Free for commercial use No attribution required …"
+    },
+    {
+      "title": "Nudes: Simple Nudes - Nude Beautiful Women Simple Tasteful Nudes ...",
+      "url": "https://www.simplenudes.com/",
+      "snippet": "Simple Nudes: a manifest This is a movement of the third millennium, a drive to popularize Simple Nudes. What are \"simple nudes\"? …"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "0arch-io/kisoku-1.6b",
+  "slug": "0arch-io-kisoku-1-6b",
+  "author": "0arch-io",
+  "url": "https://huggingface.co/0arch-io/kisoku-1.6b",
+  "created_at": "2026-10-07T23:36:08.000Z",
+  "updated_at": "2026-10-22T00:57:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "pretrained",
+    "from-scratch",
+    "long-context",
+    "tpu",
+    "kisoku",
+    "conversational",
+    "en",
+    "dataset:nvidia/Nemotron-CC-v2.1",
+    "dataset:nvidia/Nemotron-CC-Math-v1",
+    "dataset:openbmb/Ultra-FineWeb",
+    "dataset:bigcode/starcoderdata",
+    "dataset:HuggingFaceTB/finemath",
+    "dataset:open-web-math/open-web-math",
+    "dataset:IFM/MegaMath",
+    "dataset:open-thoughts/OpenThoughts3-1.2M",
+    "dataset:deepmind/pg19",
+    "dataset:princeton-nlp/prolong-data-64K",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 30,
+  "trending_score": 0,
+  "parameters": 1600749056,
+  "parameters_human": "1.60B",
+  "storage_bytes": 16024840360,
+  "storage_human": "16.0 GB",
+  "base_model": "none",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "0arch-io/kisoku-1.6b · Hugging Face",
+      "url": "https://huggingface.co/0arch-io/kisoku-1.6b",
+      "snippet": "Kisoku 1.6B is a base (not chat) language model pretrained from random initialization by one person, Joseph Rodriguez at 0ARCH, on a TPU v4-32 from Google&#x27;s TPU Research Cloud. It has 1,600,749,056 parameters, saw about 0.5 trillion tokens of pretraining text (524.4B including the long-context phases), and was extended to 64K tokens of context. All numbers below come from the technical report ..."
+    },
+    {
+      "title": "GitHub - 0arch-io/kisoku: Kisoku 1.6B: a from-scratch language model ...",
+      "url": "https://github.com/0arch-io/kisoku",
+      "snippet": "Kisoku 1.6B A 1.6B-parameter language model pretrained from scratch by one person on a TPU v4-32 from Google&#x27;s TPU Research Cloud, on about 0.5 trillion tokens. On a 10-benchmark suite run through the same harness for every model, it matches Meta&#x27;s Llama 3.2 1B (five wins each) while using about 18 times less training data."
+    },
+    {
+      "title": "kisoku/release/kisoku-1.6b at main · 0arch-io/kisoku · GitHub",
+      "url": "https://github.com/0arch-io/kisoku/tree/main/release/kisoku-1.6b",
+      "snippet": "Kisoku 1.6B (base) Kisoku 1.6B is a base (not chat) language model pretrained from random initialization by one person, Joseph Rodriguez at 0ARCH, on a TPU v4-32 from Google&#x27;s TPU Research Cloud. It has 1,600,749,056 parameters, saw about 0.5 trillion tokens of pretraining text (524.4B including the long-context phases), and was extended to 64K tokens of context. All numbers below come from ..."
+    },
+    {
+      "title": "Kisoku 1.6B - a 0arch-io Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/0arch-io/kisoku-16b",
+      "snippet": "From-scratch 1.6B LLM trained solo on a TPU grant. Matches Llama 3.2 1B with 18x less data. Apache 2.0. Report + story: 0arch.io/core"
+    },
+    {
+      "title": "0ARCH Core: Our Own AI Model and AI for Business | 0ARCH",
+      "url": "https://0arch.io/core",
+      "snippet": "0ARCH Core is our AI line: Kisoku, a language model we trained from scratch, plus private AI, document answers and automation built for your business."
+    }
+  ]
+}

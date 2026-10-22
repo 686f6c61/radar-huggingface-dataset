@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Jordine/rlport-hkl_owl_u1_pl3_20261021_192816",
+  "slug": "jordine-rlport-hkl_owl_u1_pl3_20261021_192816",
+  "author": "Jordine",
+  "url": "https://huggingface.co/Jordine/rlport-hkl_owl_u1_pl3_20261021_192816",
+  "created_at": "2026-10-21T19:29:15.000Z",
+  "updated_at": "2026-10-21T21:03:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "research",
+    "checkpoint-backup",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15913886098,
+  "storage_human": "15.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jordine/rlport-hkl_jord9v_L_pl10_20261018_021952 · Hugging Face",
+      "url": "https://huggingface.co/Jordine/rlport-hkl_jord9v_L_pl10_20261018_021952",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Jordine/rlport-hkl_jord9v_L_pl5_20261017_231721 · Hugging Face",
+      "url": "https://huggingface.co/Jordine/rlport-hkl_jord9v_L_pl5_20261017_231721",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "Outlook",
+      "url": "https://outlook.office.com/mail/login",
+      "snippet": "Access your mailbox, manage emails and organize your communication seamlessly by signing in to your account."
+    },
+    {
+      "title": "Latest AI Releases — Open-Source Versions & New Commercial Models (2026 ...",
+      "url": "https://olud.ai/releases.html",
+      "snippet": "Latest AI Releases Every release that matters, side by side: new versions from the best open-source AI tools — models, runners, agents, image generators — and every new model that lands in the commercial APIs."
+    }
+  ]
+}

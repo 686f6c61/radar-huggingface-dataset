@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "alfred8995/sn38-r3-2013-pomlnb-chronollm-2013",
+  "slug": "alfred8995-sn38-r3-2013-pomlnb-chronollm-2013",
+  "author": "alfred8995",
+  "url": "https://huggingface.co/alfred8995/sn38-r3-2013-pomlnb-chronollm-2013",
+  "created_at": "2026-10-21T19:40:25.000Z",
+  "updated_at": "2026-10-21T19:41:27.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "ChronoGPT",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1858535658,
+  "parameters_human": "1.86B",
+  "storage_bytes": 7434184688,
+  "storage_human": "7.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pomlnb/chronollm-2013 · Hugging Face",
+      "url": "https://huggingface.co/pomlnb/chronollm-2013",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ChronoLLM (SN38) | Bittensor Subnet Trade | TaoMarketCap",
+      "url": "https://taomarketcap.com/subnets/38",
+      "snippet": "ChronoLLM (Subnet 38) live stats: price, market cap, volume, miners, and validators. Competitive training of chronologically consistent Large Language Models"
+    },
+    {
+      "title": "alfred8995/r16-H-P3-d2c3q3-s100 · Hugging Face",
+      "url": "https://huggingface.co/alfred8995/r16-H-P3-d2c3q3-s100",
+      "snippet": "alfred8995 / r16-H-P3-d2c3q3-s100 Like 0 Safetensors sn38-nanochrono Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "ChronoLLM: AI built to eliminate lookahead bias",
+      "url": "https://chronollm.com/",
+      "snippet": "The first LLM without lookahead bias. Each model is trained only on data available up to its cutoff date, preserving backtest integrity for quant research."
+    },
+    {
+      "title": "SN38: ChronoLLM - GitHub",
+      "url": "https://github.com/chronollm/sn38",
+      "snippet": "Contribute to chronollm/sn38 development by creating an account on GitHub."
+    }
+  ]
+}

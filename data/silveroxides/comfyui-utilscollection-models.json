@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "silveroxides/ComfyUI-UtilsCollection-Models",
+  "slug": "silveroxides-comfyui-utilscollection-models",
+  "author": "silveroxides",
+  "url": "https://huggingface.co/silveroxides/ComfyUI-UtilsCollection-Models",
+  "created_at": "2026-08-26T04:07:30.000Z",
+  "updated_at": "2026-10-22T01:04:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18303308450,
+  "storage_human": "18.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - silveroxides/ComfyUI-UtilsCollection",
+      "url": "https://github.com/silveroxides/ComfyUI-UtilsCollection",
+      "snippet": "ComfyUI-UtilsCollection A collection of ComfyUI nodes for modern text and multimodal conditioning, image and mask processing, prompt presets, workflow parameters, loading, and general utilities. The encoder nodes track current ComfyUI Core behavior while retaining compatible legacy node IDs where practical."
+    },
+    {
+      "title": "silveroxides/ComfyUI-UtilsCollection-Models · Hugging Face",
+      "url": "https://huggingface.co/silveroxides/ComfyUI-UtilsCollection-Models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ComfyUI-UtilsCollection/models at main · silveroxides/ComfyUI ... - GitHub",
+      "url": "https://github.com/silveroxides/ComfyUI-UtilsCollection/tree/main/models",
+      "snippet": "Contribute to silveroxides/ComfyUI-UtilsCollection development by creating an account on GitHub."
+    },
+    {
+      "title": "silveroxides (Silver) - Hugging Face",
+      "url": "https://huggingface.co/silveroxides",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 12 days ago ... published a model 12 days ago"
+    },
+    {
+      "title": "ComfyUI-UtilsCollection - ComfyUI Cloud",
+      "url": "https://comfy.icu/extension/silveroxides__ComfyUI-UtilsCollection",
+      "snippet": "Utilities making it easy to set up inference parameters. - ComfyUI extension by silveroxides with 255 custom nodes. Run it in the cloud, no install required."
+    }
+  ]
+}

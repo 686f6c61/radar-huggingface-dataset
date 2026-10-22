@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "ninhnv/chon-1.0-12b",
+  "slug": "ninhnv-chon-1-0-12b",
+  "author": "ninhnv",
+  "url": "https://huggingface.co/ninhnv/chon-1.0-12b",
+  "created_at": "2026-10-14T20:05:30.000Z",
+  "updated_at": "2026-10-22T00:57:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "typed-decisions",
+    "classification",
+    "calibration",
+    "lora",
+    "jevbench",
+    "gemma4",
+    "en",
+    "vi",
+    "base_model:google/gemma-4-12B-it",
+    "base_model:adapter:google/gemma-4-12B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 37,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1081368546,
+  "storage_human": "1.1 GB",
+  "base_model": "google/gemma-4-12B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ninhnv/chon-1.0-12b · Hugging Face",
+      "url": "https://huggingface.co/ninhnv/chon-1.0-12b",
+      "snippet": "Chon-1.0-12B Chon-1.0-12B is a typed-decision model. Given a state (text, JSON or a conversation) and one question with a closed set of options, it returns a calibrated probability for every option:"
+    },
+    {
+      "title": "ninhnv/chon-1.0-12b at main - Hugging Face",
+      "url": "https://huggingface.co/ninhnv/chon-1.0-12b/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - xoai/chon: Chon, a typed-decision model (choice / yes-no ...",
+      "url": "https://github.com/xoai/chon/tree/main",
+      "snippet": "Serving code for Chon typed-decision models, such as Chon-1.0-12B. Given a state (text, JSON or a conversation) and one question with a closed set of options, a Chon model returns a calibrated probability for every option:"
+    },
+    {
+      "title": "Chon 1.0 12B — PublicAI Index",
+      "url": "https://publicai.io/model-index/m/chon-1-0-12b",
+      "snippet": "Chon 1.0 12B (Other) across 3 domains on the PublicAI Index: #1 of 192 in Decisions. Every figure traceable to its publisher."
+    },
+    {
+      "title": "Chon-1.0-12B Beat Larger Models on JevBench. But One Number Caught My ...",
+      "url": "https://hostingdiscussion.com/threads/chon-1-0-12b-beat-larger-models-on-jevbench-but-one-number-caught-my-attention.90728/",
+      "snippet": "But Chon-1.0-12B is worth a closer look. It&#x27;s a 12B decision model that recently scored 85.3 on JevBench&#x27;s Capability metric, outperforming several larger models on structured decision tasks."
+    }
+  ]
+}

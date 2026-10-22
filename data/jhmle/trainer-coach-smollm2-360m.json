@@ -5,7 +5,7 @@
   "author": "jhmle",
   "url": "https://huggingface.co/jhmle/trainer-coach-smollm2-360m",
   "created_at": "2026-10-20T05:52:37.000Z",
-  "updated_at": "2026-10-21T00:01:38.000Z",
+  "updated_at": "2026-10-21T12:59:01.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -23,12 +23,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 1,
+  "downloads_30d": 298,
   "trending_score": 0,
   "parameters": 361821120,
   "parameters_human": "361.8M",
-  "storage_bytes": 3618373120,
-  "storage_human": "3.6 GB",
+  "storage_bytes": 5065722368,
+  "storage_human": "5.1 GB",
   "base_model": null,
   "formats": [
     "safetensors"

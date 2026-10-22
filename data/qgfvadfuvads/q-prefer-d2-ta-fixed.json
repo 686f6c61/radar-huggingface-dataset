@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "qgfvadfuvads/Q-Prefer-D2-TA-Fixed",
+  "slug": "qgfvadfuvads-q-prefer-d2-ta-fixed",
+  "author": "qgfvadfuvads",
+  "url": "https://huggingface.co/qgfvadfuvads/Q-Prefer-D2-TA-Fixed",
+  "created_at": "2026-10-21T20:00:34.000Z",
+  "updated_at": "2026-10-21T20:00:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "peft",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "video",
+    "reward-model",
+    "lora",
+    "reinforcement-learning",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-VL-4B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 275771100,
+  "storage_human": "276 MB",
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "soponov devient varmiv.com",
+      "url": "https://soponov.com/",
+      "snippet": "soponov devient varmiv.com 4 h 03 m 09 s soponov devient varmiv.com — cette page sera supprimée dans 24 h : enregistrez la …"
+    }
+  ]
+}

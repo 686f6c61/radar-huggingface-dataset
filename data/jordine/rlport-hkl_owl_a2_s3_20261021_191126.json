@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Jordine/rlport-hkl_owl_a2_s3_20261021_191126",
+  "slug": "jordine-rlport-hkl_owl_a2_s3_20261021_191126",
+  "author": "Jordine",
+  "url": "https://huggingface.co/Jordine/rlport-hkl_owl_a2_s3_20261021_191126",
+  "created_at": "2026-10-21T19:12:26.000Z",
+  "updated_at": "2026-10-21T20:49:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "research",
+    "checkpoint-backup",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15913945679,
+  "storage_human": "15.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jordine/rlport-hkl_jord9v_L_pl10_20261018_021952 · Hugging Face",
+      "url": "https://huggingface.co/Jordine/rlport-hkl_jord9v_L_pl10_20261018_021952",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Jordine/rlport-hkl_jord9v_pl7_20261017_153438 · Hugging Face",
+      "url": "https://huggingface.co/Jordine/rlport-hkl_jord9v_pl7_20261017_153438",
+      "snippet": "Instructions to use Jordine/rlport-hkl_jord9v_pl7_20261017_153438 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=reward-laundering",
+      "snippet": "Jordine/rlport-hkl_jord4b_rsm_s0_20261016_162309 Text Generation •Updated about 1 hour ago"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=en+",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    },
+    {
+      "title": "Microsoft OneDrive",
+      "url": "https://onedrive.live.com/login/en-us/",
+      "snippet": "No account? Create one! ©2026 Microsoft Privacy statement"
+    }
+  ]
+}

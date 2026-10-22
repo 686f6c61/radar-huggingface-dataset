@@ -20,8 +20,8 @@
     "financial-qa",
     "decision-head",
     "en",
-    "base_model:ya9919/laya-finance-matched-sft-200k",
-    "base_model:finetune:ya9919/laya-finance-matched-sft-200k",
+    "base_model:ya9919/sharp-421m-sft-200k",
+    "base_model:finetune:ya9919/sharp-421m-sft-200k",
     "license:other",
     "region:us"
   ],

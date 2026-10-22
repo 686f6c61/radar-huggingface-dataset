@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "wondolls/mercia2olite",
+  "slug": "wondolls-mercia2olite",
+  "author": "wondolls",
+  "url": "https://huggingface.co/wondolls/mercia2olite",
+  "created_at": "2026-10-22T00:01:36.000Z",
+  "updated_at": "2026-10-22T00:02:28.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 59631086,
+  "storage_human": "60 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wondolls/mercia2olite · Hugging Face",
+      "url": "https://huggingface.co/wondolls/mercia2olite",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "wondolls (Lis n sei oq) - Hugging Face",
+      "url": "https://huggingface.co/wondolls",
+      "snippet": "User profile of Lis n sei oq on Hugging Face"
+    },
+    {
+      "title": "3D Studio — AI 3D Character Generator with Automatic Rigging",
+      "url": "https://sorceress.games/pages/3d-studio",
+      "snippet": "3D Studio turns a text prompt into a fully rigged, fully animated, game-ready 3D asset. AI image generation, single-image to textured 3D model, automatic humanoid rigging with weight-paint refinement, AI text-to-animation, and a single universal GLB export that drops straight into Unity, Unreal Engine, Godot, Blender, Three.js, Babylon.js, Roblox, and AI vibe-coded games."
+    },
+    {
+      "title": "Merlio: All Top AI Models (LLM, Image, Video) in One Hub",
+      "url": "https://merlio.app/",
+      "snippet": "Merlio is an all-in-one AI platform and workspace that unifies chat, image, video, and code generation in a single dashboard. Access 40+ premium AI tools and models to create content faster, automate workflows, and grow your business while replacing multiple expensive subscriptions."
+    },
+    {
+      "title": "Free AI 3D Model Generator - Createimg",
+      "url": "https://www.createimg.com/ai-3d-model-generator/",
+      "snippet": "Try our free AI 3D model generator to create characters, props, and objects in seconds. 100% free, no login required, fast and easy."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Jordine/rlport-hkl_owl_a3n_pl4_20261022_004416",
+  "slug": "jordine-rlport-hkl_owl_a3n_pl4_20261022_004416",
+  "author": "Jordine",
+  "url": "https://huggingface.co/Jordine/rlport-hkl_owl_a3n_pl4_20261022_004416",
+  "created_at": "2026-10-22T00:45:15.000Z",
+  "updated_at": "2026-10-22T02:20:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "research",
+    "checkpoint-backup",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15913126232,
+  "storage_human": "15.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Escort Fréjus : 40 annonces, avis et photos | Rebiu",
+      "url": "https://rebiu.com/fr/escorts/frejus",
+      "snippet": "40 escortes à Fréjus réunies depuis les principales plateformes, dont 29 avec avis clients. Scores de confiance, carte et contact direct."
+    },
+    {
+      "title": "Libertines Annonces Fréjus, Libertines girl en Fréjus rencontre (s ...",
+      "url": "https://www.meslibertines.com/escorts/frejus/",
+      "snippet": "Trouvez vous les plus belles Libertines en Fréjus, sur MesLibertines.com."
+    },
+    {
+      "title": "Escort Fréjus: 47 listings, reviews & photos | Rebiu",
+      "url": "https://rebiu.com/escorts/frejus",
+      "snippet": "47 escorts in Fréjus from the main platforms, 36 with client reviews. Trust scores, map and direct contact."
+    },
+    {
+      "title": "Escort Girl Fréjus : profils vérifiés avec photos | EscortE",
+      "url": "https://m.escorte.com/escorts/girls/frejus/",
+      "snippet": "Découvrez nos escort girls à Fréjus : profils féminins vérifiés, photos récentes et avis. Rencontres discrètes près de chez vous."
+    },
+    {
+      "title": "Escort Fréjus (83) - Annonces dans la ville | SoloPrive",
+      "url": "https://www.soloprive.com/fr/ads/escort/var-province/frejus",
+      "snippet": "Tous les profils escort sur SoloPrive sont vérifiés avec photos authentiques. Contact direct via WhatsApp ou téléphone pour …"
+    }
+  ]
+}

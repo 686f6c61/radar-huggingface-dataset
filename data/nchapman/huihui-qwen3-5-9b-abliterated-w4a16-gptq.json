@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "nchapman/Huihui-Qwen3.5-9B-abliterated-W4A16-GPTQ",
+  "slug": "nchapman-huihui-qwen3-5-9b-abliterated-w4a16-gptq",
+  "author": "nchapman",
+  "url": "https://huggingface.co/nchapman/Huihui-Qwen3.5-9B-abliterated-W4A16-GPTQ",
+  "created_at": "2026-10-21T23:56:39.000Z",
+  "updated_at": "2026-10-21T23:57:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "gptq",
+    "w4a16",
+    "compressed-tensors",
+    "vllm",
+    "conversational",
+    "base_model:huihui-ai/Huihui-Qwen3.5-9B-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-Qwen3.5-9B-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 9066032310,
+  "storage_human": "9.1 GB",
+  "base_model": "huihui-ai/Huihui-Qwen3.5-9B-abliterated",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Video: Erik Fedko, Jack Moir, Dylan Stark & More Ride Bentonville",
+      "url": "https://www.pinkbike.com/news/yt-industries-unveils-flagship-yt-mill-bentonville-experience-center.html",
+      "snippet": "May 28, 2024 · YT Industries unveils their flagship YT MILL Bentonville Experience Center and gets some of the Mob to come ride.Read more"
+    },
+    {
+      "title": "Bantuan YouTube",
+      "url": "https://support.google.com/youtube/?hl=id",
+      "snippet": "Pusat Bantuan YouTube resmi tempat Anda dapat menemukan kiat dan tutorial tentang cara menggunakan produk dan jawaban lain …"
+    },
+    {
+      "title": "Logowanie się w aplikacji YouTube na telewizorze smart TV lub …",
+      "url": "https://support.google.com/youtube/answer/3015415?hl=pl",
+      "snippet": "Logowanie się przy użyciu telefonu: zeskanuj kod QR lub wejdź na stronę yt.be/activate na telefonie, tablecie lub komputerze, a …"
+    },
+    {
+      "title": "Review: YT's All-New Izzo Trail Bike - Pinkbike",
+      "url": "https://www.pinkbike.com/news/yt-izzo-review-trail-bike-2020.html",
+      "snippet": "Apr 17, 2020 · The 130mm-travel Izzo is YT's stab at the lightweight trail bike."
+    },
+    {
+      "title": "完成帳戶救援步驟的相關提示 - Google 帳戶說明",
+      "url": "https://support.google.com/accounts/answer/7299973?hl=zh-Hant",
+      "snippet": "如果您已經嘗試過帳戶救援程序，但出現「Google 無法驗證該帳戶屬於您本人」的說明訊息，請再試一次。 盡可能回答救援程序中的 …"
+    }
+  ]
+}

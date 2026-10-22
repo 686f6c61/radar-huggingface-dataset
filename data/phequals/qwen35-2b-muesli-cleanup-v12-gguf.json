@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "phequals/qwen35-2b-muesli-cleanup-v12-gguf",
+  "slug": "phequals-qwen35-2b-muesli-cleanup-v12-gguf",
+  "author": "phequals",
+  "url": "https://huggingface.co/phequals/qwen35-2b-muesli-cleanup-v12-gguf",
+  "created_at": "2026-10-21T19:28:37.000Z",
+  "updated_at": "2026-10-21T19:32:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "speech-to-text",
+    "transcript-cleanup",
+    "dictation",
+    "muesli",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:quantized:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1942653248,
+  "parameters_human": "1.94B",
+  "storage_bytes": 3388838656,
+  "storage_human": "3.4 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "If it exists, there is gay porn of it. No exceptions. - Reddit",
+      "url": "https://www.reddit.com/r/rule34gay/",
+      "snippet": "Rule 34 with non-heterosexual fucking. If it wouldn't be well-recieved on /r/Rule34, post it here!"
+    },
+    {
+      "title": "Feet and Rule 34 - Reddit",
+      "url": "https://www.reddit.com/r/rule34feet/",
+      "snippet": "This is the place to post your favorite feet-related Rule 34 images and content."
+    },
+    {
+      "title": "r/Rule34DC - Reddit",
+      "url": "https://www.reddit.com/r/Rule34DC/",
+      "snippet": "Porn based on the DC Universe"
+    },
+    {
+      "title": "Disney Princess Rule 34 - Reddit",
+      "url": "https://www.reddit.com/r/disneyporn/",
+      "snippet": "Rule 34 clearly states that if it exists, there is porn of it. Seeing that there isn't really a good subreddit for porn of Disney Princesses, I …"
+    },
+    {
+      "title": "rule 34 - Reddit",
+      "url": "https://www.reddit.com/r/rule34/?feedViewType=cardView",
+      "snippet": "Not all porn is rule 34. Doing rule34 of someone only you or a few people know is not okay to post here. Making your own OC …"
+    }
+  ]
+}

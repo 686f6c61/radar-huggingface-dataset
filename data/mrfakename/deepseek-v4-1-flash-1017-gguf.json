@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mrfakename/DeepSeek-V4.1-Flash-1017-GGUF",
+  "slug": "mrfakename-deepseek-v4-1-flash-1017-gguf",
+  "author": "mrfakename",
+  "url": "https://huggingface.co/mrfakename/DeepSeek-V4.1-Flash-1017-GGUF",
+  "created_at": "2026-10-17T08:28:36.000Z",
+  "updated_at": "2026-10-18T06:06:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "deepseek",
+    "image-text-to-text",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 14,
+  "downloads_30d": 13974,
+  "trending_score": 12,
+  "parameters": 748494684784,
+  "parameters_human": "748.49B",
+  "storage_bytes": 1566052538240,
+  "storage_human": "1566.1 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wintons France | Carp Fishing Holidays | Upper Normandy",
+      "url": "https://www.wintonsfrance.co.uk/",
+      "snippet": "Wintons France is a stunning mature 10.5 acre carp lake situated in the countryside of upper Normandy, close to the historic village …"
+    },
+    {
+      "title": "Wintons France | The Lake Map",
+      "url": "https://www.wintonsfrance.co.uk/the-lake",
+      "snippet": "The lake is a mature gravel pit and is over 30 years old. It ranges in depth from 3ft in the margins to 15ft, with the banks being fully …"
+    },
+    {
+      "title": "Wintons France - carpview.com",
+      "url": "https://www.carpview.com/french-carp-lakes/380-wintons-france",
+      "snippet": "1 day ago · Carp Fishing in France contains over 370 French fisheries. Come and search our French directory for your next Holiday."
+    },
+    {
+      "title": "Wintons Carp Fishery France - Facebook",
+      "url": "https://www.facebook.com/wintons.france20/",
+      "snippet": "May 24, 2026 · John Flewin recommends Wintons Carp Fishery France. You can now come! At last we are at the point of this year …"
+    },
+    {
+      "title": "Wintons France - Facebook",
+      "url": "https://www.facebook.com/wintons.france/",
+      "snippet": "Wintons France is on Facebook. Join Facebook to connect with Wintons France and others you may know. Facebook gives people …"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "vladkens/parakeet-tdt-0.6b-v3-he-gguf",
+  "slug": "vladkens-parakeet-tdt-0-6b-v3-he-gguf",
+  "author": "vladkens",
+  "url": "https://huggingface.co/vladkens/parakeet-tdt-0.6b-v3-he-gguf",
+  "created_at": "2026-10-21T21:49:22.000Z",
+  "updated_at": "2026-10-21T21:51:26.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transcribe.cpp",
+  "languages": [
+    "he"
+  ],
+  "tags": [
+    "transcribe.cpp",
+    "gguf",
+    "wavo",
+    "asr",
+    "speech-to-text",
+    "parakeet",
+    "tdt",
+    "hebrew",
+    "automatic-speech-recognition",
+    "he",
+    "base_model:thewh1teagle/parakeet-tdt-0.6b-v3-he",
+    "base_model:quantized:thewh1teagle/parakeet-tdt-0.6b-v3-he",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 628351100,
+  "parameters_human": "628.4M",
+  "storage_bytes": 740915360,
+  "storage_human": "741 MB",
+  "base_model": "thewh1teagle/parakeet-tdt-0.6b-v3-he",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FRANCAISE ESCLAVE - 1,206 vidéos - New Porn Search",
+      "url": "https://newpornsearch.com/fr/videos/francaise-esclave",
+      "snippet": "FRANCAISE ESCLAVE - 1,206 vidéos. Dominatrix Française, Amateur Première Sodomie Douloureuse, Défloration Première Fois, …"
+    },
+    {
+      "title": "ESCLAVE FRANÇAISES - 1,204 vidéos - ABC Porn Search",
+      "url": "https://abcpornsearch.com/fr/videos/esclave-fran%C3%A7aises",
+      "snippet": "ESCLAVE FRANÇAISES - 1,204 vidéos. Défloration Première Fois, Vieilles Matures Enculees, Amateur Première Sodomie …"
+    },
+    {
+      "title": "Free French Slave Porn Videos (999) - Tubesafari.com",
+      "url": "https://tubesafari.com/search/french-slave",
+      "snippet": "Free french slave porn: 999 videos. WATCH NOW for FREE!"
+    },
+    {
+      "title": "Esclave francaise - 3,275 vidéos - iWank TV",
+      "url": "https://iwank.tv/fr/search/esclave_francaise/",
+      "snippet": "Best selection of Esclave francaise Porn - 3,275 vidéos. esclave, mistress, french slave, french esclave, esclaves au harem et …"
+    },
+    {
+      "title": "French Esclave Tube Search (123 videos) - NudeVista",
+      "url": "https://www.nudevista.com/?q=french+esclave&s=t",
+      "snippet": "123 results for french esclave tube, ordered by relevance, newest, popularity, duration or random"
+    }
+  ]
+}

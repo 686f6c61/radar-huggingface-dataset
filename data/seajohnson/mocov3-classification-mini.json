@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "seajohnson/mocov3-classification-mini",
+  "slug": "seajohnson-mocov3-classification-mini",
+  "author": "seajohnson",
+  "url": "https://huggingface.co/seajohnson/mocov3-classification-mini",
+  "created_at": "2026-10-21T19:53:25.000Z",
+  "updated_at": "2026-10-21T19:53:32.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "classification",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "shjankowski/mocov3-classification · Hugging Face",
+      "url": "https://huggingface.co/shjankowski/mocov3-classification",
+      "snippet": "Mocov3 for Classification Overview A small Mocov3 implementation for Classification, packaged with an explicit configuration and an initialization checkpoint. The small variant is a reproducible starting point, not a trained model release."
+    },
+    {
+      "title": "ishaankumar608335/classification-mini · Hugging Face",
+      "url": "https://huggingface.co/ishaankumar608335/classification-mini",
+      "snippet": "ishaankumar608335 / classification-mini like 0 Safetensors PyTorch mocov3 classification License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Mocov3 for Classification Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files License"
+    },
+    {
+      "title": "arXiv.org e-Print archive",
+      "url": "https://arxiv.org/pdf/2211.09861",
+      "snippet": "arXiv.org e-Print archive"
+    },
+    {
+      "title": "GitHub - Katherine121/mocov3: PyTorch implementation of MoCo v3 https ...",
+      "url": "https://github.com/Katherine121/mocov3",
+      "snippet": "This is a PyTorch implementation of MoCo v3 for self-supervised ResNet and ViT. The original MoCo v3 was implemented in Tensorflow and run in TPUs. This repo re-implements in PyTorch and GPUs. Despite the library and numerical differences, this repo reproduces the results and observations in the paper."
+    },
+    {
+      "title": "GitHub - facebookresearch/moco-v3: PyTorch implementation of MoCo v3 ...",
+      "url": "https://github.com/facebookresearch/moco-v3",
+      "snippet": "This is a PyTorch implementation of MoCo v3 for self-supervised ResNet and ViT. The original MoCo v3 was implemented in Tensorflow and run in TPUs. This repo re-implements in PyTorch and GPUs. Despite the library and numerical differences, this repo reproduces the results and observations in the paper."
+    }
+  ]
+}

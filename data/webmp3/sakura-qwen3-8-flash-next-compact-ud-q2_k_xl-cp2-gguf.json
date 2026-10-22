@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "webmp3/Sakura-Qwen3.8-Flash-Next-Compact-UD-Q2_K_XL-CP2-GGUF",
+  "slug": "webmp3-sakura-qwen3-8-flash-next-compact-ud-q2_k_xl-cp2-gguf",
+  "author": "webmp3",
+  "url": "https://huggingface.co/webmp3/Sakura-Qwen3.8-Flash-Next-Compact-UD-Q2_K_XL-CP2-GGUF",
+  "created_at": "2026-10-21T21:44:33.000Z",
+  "updated_at": "2026-10-21T23:28:01.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "de",
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "qwen4exp",
+    "qwen3.8-flash-next",
+    "unsloth",
+    "sakura",
+    "experimental",
+    "text-generation",
+    "de",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 176943899520,
+  "parameters_human": "176.94B",
+  "storage_bytes": 63598679392,
+  "storage_human": "63.6 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next, unsloth/Qwen3.8-Flash-Next-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Blackcelebrity - Reddit",
+      "url": "https://www.reddit.com/r/blackcelebrity/new",
+      "snippet": "10 posts max per day. Excessive posts of the same celebrity will be removed. Attempting to post more than one pic or video of the …"
+    },
+    {
+      "title": "Celebrity Belly Pics - Reddit",
+      "url": "https://www.reddit.com/r/CelebrityBelly/",
+      "snippet": "We're stuck on the middle Keep it clean and respectful. No porn, social media/influencers or only fans. No low quality or obvious …"
+    },
+    {
+      "title": "Celebrity Penis - Reddit",
+      "url": "https://www.reddit.com/r/CelebrityPenis/top/",
+      "snippet": "The sub is celebrity penis, and therefore, all posts should include a visable celebrity's penis. We love butts and balls too, but this sub …"
+    },
+    {
+      "title": "ELI5: How do celebrity's nude photos get \"leaked\"? - Reddit",
+      "url": "https://www.reddit.com/r/explainlikeimfive/comments/2vqvco/eli5_how_do_celebritys_nude_photos_get_leaked/",
+      "snippet": "The people who leaked the photos didn't need to get at the celebrities' phones, they just needed to get at the online storage accounts …"
+    },
+    {
+      "title": "Celebrities - Reddit",
+      "url": "https://www.reddit.com/r/celebrities/about/",
+      "snippet": "All image or videos must be a celeb who was 18 or older at the time it was taken. News articles from trusted sources that talk about a …"
+    }
+  ]
+}

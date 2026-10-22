@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "JesseLiu/agentorch-sft-27b-80k-3ep",
+  "slug": "jesseliu-agentorch-sft-27b-80k-3ep",
+  "author": "JesseLiu",
+  "url": "https://huggingface.co/JesseLiu/agentorch-sft-27b-80k-3ep",
+  "created_at": "2026-10-21T19:43:34.000Z",
+  "updated_at": "2026-10-21T19:44:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "agentorch",
+    "workflow-orchestration",
+    "sft",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55575816096,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AirLLM: Run 70B Models on 4GB GPUs Without Compromise",
+      "url": "https://www.blog.brightcoding.dev/2026/02/27/airllm-run-70b-models-on-4gb-gpus-without-compromise",
+      "snippet": "AirLLM revolutionizes LLM inference by enabling 70B models on 4GB GPUs and 405B models on 8GB VRAM without quantization. Learn how its layer-wise architecture"
+    },
+    {
+      "title": "Kelly V2 - Illustrious 0.1 - KELLY E7 | TensorHub Art",
+      "url": "https://tensorhub.art/models/872117113219772987",
+      "snippet": "Download Kelly V2 - Illustrious 0.1 - free LORA Illustrious AI model on TENSORHUB ART. KELLY, FEMALE CHARACTER. By Ari_WaifuLovers"
+    },
+    {
+      "title": "New AI Models: Live Release Tracker (Last 24 Hours) | BenchLM",
+      "url": "https://benchlm.ai/model-updates",
+      "snippet": "The newest AI models, tracked live: releases from the last 24 hours, this week, and 413 confirmed launches from 80 providers — each with source evidence and benchmarks."
+    },
+    {
+      "title": "Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro ...",
+      "url": "https://huggingface.co/nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2/discussions/2",
+      "snippet": "need mtp support Q4_K Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2"
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    }
+  ]
+}

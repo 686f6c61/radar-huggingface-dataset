@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "alfred8995/sn38-r2-2020-ecfcd2-chronollm-2020f",
+  "slug": "alfred8995-sn38-r2-2020-ecfcd2-chronollm-2020f",
+  "author": "alfred8995",
+  "url": "https://huggingface.co/alfred8995/sn38-r2-2020-ecfcd2-chronollm-2020f",
+  "created_at": "2026-10-21T19:23:58.000Z",
+  "updated_at": "2026-10-21T19:25:23.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "ChronoGPT",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1858535658,
+  "parameters_human": "1.86B",
+  "storage_bytes": 7434184688,
+  "storage_human": "7.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ecfcd2/chronollm-2020f · Hugging Face",
+      "url": "https://huggingface.co/ecfcd2/chronollm-2020f",
+      "snippet": "ecfcd2 / chronollm-2020f like 0 Safetensors ChronoGPT Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 8 Safetensors Model size 2B params Tensor type F32 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "ecfcd2 (ecfcd) - Hugging Face",
+      "url": "https://huggingface.co/ecfcd2",
+      "snippet": "Sort: Recently updated. ecfcd2/chronollm-2024f. 2B • Updated 9 days ago • 42. ecfcd2/chronollm-2023f. 2B • Updated 9 days ago • 43"
+    },
+    {
+      "title": "ChronoLLM: Customizing Language Models for Physics-Based Simulation ...",
+      "url": "https://arxiv.org/html/2508.13975v1",
+      "snippet": "The second approach involves fine-tuning a ChronoLLM model with PyChrono-specific data, allowing the model to adapt its weights. The selected LLMs that anchor ChronoLLMs vary in scale and include both open-source and commercial options allowing for a comprehensive evaluation."
+    },
+    {
+      "title": "chronollm · PyPI",
+      "url": "https://pypi.org/project/chronollm/",
+      "snippet": "ChronoLLM Chat with temporally consistent language models. Each model only knows events up to its vintage year — no future knowledge leaking into your analysis. Install pip install chronollm Setup # Save your HuggingFace token (provided by the ChronoLLM team) chronollm login <your_token> Usage # Chat with a vintage year chronollm 2020 # Chat with a specific model chronollm owner/repo Example ..."
+    },
+    {
+      "title": "ChronoLLM (SN38) | TAO Alpha",
+      "url": "https://www.jasontensor.com/subnet/38",
+      "snippet": "Founded by Karim Foda (10 years ML experience, multiple open-source contributions, joined Bittensor community Nov 2022) and Mikkel Loose (6+ years as AI researcher/developer, focused on LLMs and computer vision)."
+    }
+  ]
+}

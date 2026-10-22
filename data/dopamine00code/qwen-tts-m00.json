@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "dopamine00code/QWEN-TTS-M00",
+  "slug": "dopamine00code-qwen-tts-m00",
+  "author": "dopamine00code",
+  "url": "https://huggingface.co/dopamine00code/QWEN-TTS-M00",
+  "created_at": "2026-10-21T19:58:28.000Z",
+  "updated_at": "2026-10-21T19:58:28.000Z",
+  "license": "dopamine-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3-TTS: Qwen3-TTS is an open-source series of TTS ...",
+      "url": "https://github.com/QwenLM/Qwen3-TTS",
+      "snippet": "Qwen3-TTS is an open-source series of TTS models developed by the Qwen team at Alibaba Cloud, supporting stable, expressive, and streaming speech generation, free-form voice design, and vivid voice cloning."
+    },
+    {
+      "title": "Qwen-3-TTS Universal API ️ - GitHub",
+      "url": "https://github.com/nodexagent/qwen-tts-api",
+      "snippet": "A production-ready, universal Text-to-Speech API powered by Qwen-3-TTS running on Modal with L40S GPU. Use it from anywhere, anytime, in any project!"
+    },
+    {
+      "title": "models - qwen-tts Documentation",
+      "url": "https://andreisuslov.github.io/qwen-tts/commands/models.html",
+      "snippet": "Shows each installed model variant along with its size on disk. Models are stored in the models directory (~/.qwen-tts/models/ by default). models download Download a model from Hugging Face."
+    },
+    {
+      "title": "Alibaba Cloud Model Studio:qwen-tts",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/model-qwen-tts",
+      "snippet": "Qwen-TTS is the first speech synthesis model in the Qwen series, supporting Chinese, English, and mixed inputs. It adaptively adjusts output tone based on text, offers natural voice quality, and supports streaming output."
+    },
+    {
+      "title": "Qwen-TTS speech synthesis API reference - Alibaba Cloud Model Studio ...",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/qwen-tts-api",
+      "snippet": "Qwen-TTS speech synthesis API reference,Alibaba Cloud Model Studio:Request parameters and response fields for the non-realtime speech synthesis (Qwen-TTS) API. The SpeechSynthesizer interface in the DashScope Python SDK is now unified under MultiModalConversation."
+    }
+  ]
+}

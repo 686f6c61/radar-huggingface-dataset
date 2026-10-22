@@ -5,7 +5,7 @@
   "author": "ANZ-Innovation",
   "url": "https://huggingface.co/ANZ-Innovation/qwen2.5-0.5b-vietnamese-schema-extractor",
   "created_at": "2026-10-20T23:21:37.000Z",
-  "updated_at": "2026-10-20T23:22:20.000Z",
+  "updated_at": "2026-10-21T06:18:01.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -18,6 +18,7 @@
     "text-generation",
     "trl",
     "sft",
+    "dpo",
     "conversational",
     "arxiv:1910.09700",
     "text-generation-inference",
@@ -25,12 +26,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 155,
   "trending_score": 0,
   "parameters": 494032768,
   "parameters_human": "494.0M",
-  "storage_bytes": 999519716,
-  "storage_human": "1000 MB",
+  "storage_bytes": 4951911012,
+  "storage_human": "5.0 GB",
   "base_model": null,
   "formats": [
     "safetensors"

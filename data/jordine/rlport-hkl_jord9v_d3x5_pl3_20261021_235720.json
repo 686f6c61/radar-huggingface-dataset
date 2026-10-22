@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Jordine/rlport-hkl_jord9v_d3x5_pl3_20261021_235720",
+  "slug": "jordine-rlport-hkl_jord9v_d3x5_pl3_20261021_235720",
+  "author": "Jordine",
+  "url": "https://huggingface.co/Jordine/rlport-hkl_jord9v_d3x5_pl3_20261021_235720",
+  "created_at": "2026-10-21T23:58:19.000Z",
+  "updated_at": "2026-10-22T01:54:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "research",
+    "checkpoint-backup",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15914395936,
+  "storage_human": "15.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jordine/rlport-hkl_jord9v_grpo_self_pl3_20261017_114547 · Hugging Face",
+      "url": "https://huggingface.co/Jordine/rlport-hkl_jord9v_grpo_self_pl3_20261017_114547",
+      "snippet": "Research checkpoint backup: hkl_jord9v_grpo_self_pl3_20261017_114547 Automatic off-box backup of one RL training run from the reward-laundering project (Tinker -> vast port), written by scripts/port/hf_backup.py so a run can resume after its cloud GPU box disappears."
+    },
+    {
+      "title": "Jordine/rlport-hkl_jord9v_pl7_20261017_153438 · Hugging Face",
+      "url": "https://huggingface.co/Jordine/rlport-hkl_jord9v_pl7_20261017_153438",
+      "snippet": "Instructions to use Jordine/rlport-hkl_jord9v_pl7_20261017_153438 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=reward-laundering",
+      "snippet": "Jordine/rlport-hkl_jord9v_pl3_20261016_203701 Text Generation •Updated about 1 hour ago"
+    },
+    {
+      "title": "Latest AI Releases — Open-Source Versions & New Commercial Models (2026 ...",
+      "url": "https://olud.ai/releases.html",
+      "snippet": "Latest AI Releases Every release that matters, side by side: new versions from the best open-source AI tools — models, runners, agents, image generators — and every new model that lands in the commercial APIs. Updated daily. Updated Oct 22, 2026 · 01:03 (Paris) · 189 releases & new models tracked"
+    },
+    {
+      "title": "my little forum",
+      "url": "https://mylittleforum.net/forum/",
+      "snippet": "Release of version 2.4.99.1, testing release cool 2026-03-21, 07:43 PM"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "schaleh12/Orions-Belt-235B-64SLM-1024Bank-LMFT-Firmware-GGUF",
+  "slug": "schaleh12-orions-belt-235b-64slm-1024bank-lmft-firmware-gguf",
+  "author": "schaleh12",
+  "url": "https://huggingface.co/schaleh12/Orions-Belt-235B-64SLM-1024Bank-LMFT-Firmware-GGUF",
+  "created_at": "2026-10-21T18:31:09.000Z",
+  "updated_at": "2026-10-22T01:45:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen2",
+    "lmstudio",
+    "openai-compatible",
+    "235b",
+    "moe",
+    "mixture-of-experts",
+    "orions-belt",
+    "64-slm",
+    "1024-bank",
+    "zero-vram",
+    "local-llm",
+    "lmft",
+    "language-model-fuzzy-tree",
+    "fuzzy-tree",
+    "lmft-firmware",
+    "schaleh12",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen2.5-14B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-14B-Instruct",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 630167424,
+  "parameters_human": "630.2M",
+  "storage_bytes": 982801152,
+  "storage_human": "983 MB",
+  "base_model": "Qwen/Qwen2.5-14B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-10-22T03:37:22.062Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Orions-Belt-235B-64SLM-1024Bank-LMFT-Firmware-GGUF - Hugging Face",
+      "url": "https://huggingface.co/schaleh12/Orions-Belt-235B-64SLM-1024Bank-LMFT-Firmware-GGUF",
+      "snippet": "Orions-Belt-235B-64SLM-1024Bank-LMFT-Firmware-GGUF ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "schaleh12 (Reincarnation of Christ) - Hugging Face",
+      "url": "https://huggingface.co/schaleh12",
+      "snippet": "Recent Activity liked a modelabout 5 hours ago schaleh12/Orions-Belt-235B-64SLM-1024Bank-LMFT-Firmware-GGUF updated a modelabout 5 hours ago schaleh12/Orions-Belt-235B-64SLM-1024Bank-LMFT-Firmware-GGUF published a modelabout 5 hours ago schaleh12/Orions-Belt-235B-64SLM-1024Bank-LMFT-Firmware-GGUF View all activity"
+    },
+    {
+      "title": "LMFT-School/docs/INDEX.md at main · schaleh12/LMFT-School · GitHub",
+      "url": "https://github.com/schaleh12/LMFT-School/blob/main/docs/INDEX.md",
+      "snippet": "LMFT Concept: developmental hypothesis, constitution, LLM partnership, and long-term vision. Minimal LMFT Specification: controlling V0.1 scope and target seed. LMFT Runtime Specification: retained numerical proposals, schemas, implementation boundaries, and revision controls. Conceptual Geometry: geometric hypotheses and their experimental limits."
+    },
+    {
+      "title": "GitHub - schaleh12/LMFT-School: developlmental training project ...",
+      "url": "https://github.com/schaleh12/LMFT-School",
+      "snippet": "The snapshot owns current-step guidance; the material below provides project background and setup. LMFT-School is the developmental training and curriculum environment for Language Model Fuzzy Tree (LMFT) based artificial intelligence, building directly upon the foundational cognitive firmware proven in LMFT-Lab."
+    },
+    {
+      "title": "Phi 4 Abliterated Orion 18b - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/phi-4-abliterated-orion-18b.html",
+      "snippet": "Download Phi 4 Abliterated Orion 18b GGUF model. 10.0 GB, 450 downloads, 7 likes."
+    }
+  ]
+}

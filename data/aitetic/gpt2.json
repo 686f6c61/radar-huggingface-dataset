@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "aitetic/gpt2",
+  "slug": "aitetic-gpt2",
+  "author": "aitetic",
+  "url": "https://huggingface.co/aitetic/gpt2",
+  "created_at": "2026-10-21T19:53:27.000Z",
+  "updated_at": "2026-10-21T20:31:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "gpt2",
+    "exbert",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 137022720,
+  "parameters_human": "137.0M",
+  "storage_bytes": 5626190610,
+  "storage_human": "5.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aitetic - AI solutions development",
+      "url": "https://aitetic.com/",
+      "snippet": "Aitetic is the home for experimental AI projects. It is a place to discover emerging ideas, try research-driven prototypes, and engage with technologies that are still evolving. Rather than focusing only on polished, finalized products, we embrace the experimental stage — where real learning happens, where new directions appear, and where meaningful innovation often begins. Our work centers ..."
+    },
+    {
+      "title": "aitetic (aitetic) - Hugging Face",
+      "url": "https://huggingface.co/aitetic",
+      "snippet": "Sort: Recently updated. aitetic/gpt-r-.3b. Updated 9 days ago. aitetic/gpt-r-.3b-base. Updated May 26"
+    },
+    {
+      "title": "aitetic (aitetic) - Hugging Face",
+      "url": "https://huggingface.co/aitetic/datasets",
+      "snippet": "Sort: Recently updated. aitetic/wikipedia. Viewer • Updated about 7 hours ago • 6.66M • 19. aitetic/MaCoCu-uk. Viewer • Updated Apr 2 • 20.4M • 6"
+    },
+    {
+      "title": "Open models by OpenAI | OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    },
+    {
+      "title": "LLM Updates (October 2026) - AI Model Releases & Provider Activity",
+      "url": "https://lmmarketcap.com/llm-updates",
+      "snippet": "Track AI model releases, recently added endpoints, and provider update cadence across GPT, Claude, Gemini, DeepSeek, Llama, and 350+ models."
+    }
+  ]
+}

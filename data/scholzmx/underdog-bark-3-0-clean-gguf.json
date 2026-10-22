@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "scholzmx/underdog-bark-3.0-clean-gguf",
+  "slug": "scholzmx-underdog-bark-3-0-clean-gguf",
+  "author": "scholzmx",
+  "url": "https://huggingface.co/scholzmx/underdog-bark-3.0-clean-gguf",
+  "created_at": "2026-10-21T21:52:59.000Z",
+  "updated_at": "2026-10-21T21:53:25.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "ggml",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "ggml",
+    "gguf",
+    "speech-recognition",
+    "asr",
+    "quantized",
+    "parakeet",
+    "underdog",
+    "automatic-speech-recognition",
+    "en",
+    "base_model:ConwayResearch/Underdog-Bark-3.0-Clean",
+    "base_model:quantized:ConwayResearch/Underdog-Bark-3.0-Clean",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 627090606,
+  "parameters_human": "627.1M",
+  "storage_bytes": 365750762,
+  "storage_human": "366 MB",
+  "base_model": "ConwayResearch/Underdog-Bark-3.0-Clean",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "ziyan98",
   "url": "https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-baseline-cc-iter10",
   "created_at": "2026-10-20T20:43:38.000Z",
-  "updated_at": "2026-10-20T20:47:59.000Z",
+  "updated_at": "2026-10-21T06:34:21.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

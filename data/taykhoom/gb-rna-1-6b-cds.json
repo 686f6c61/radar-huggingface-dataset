@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Taykhoom/GB.RNA-1.6B-CDS",
+  "slug": "taykhoom-gb-rna-1-6b-cds",
+  "author": "Taykhoom",
+  "url": "https://huggingface.co/Taykhoom/GB.RNA-1.6B-CDS",
+  "created_at": "2026-06-05T16:49:32.000Z",
+  "updated_at": "2026-10-22T01:05:38.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gbrna",
+    "RNA",
+    "language-model",
+    "custom_code",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 1611626528,
+  "parameters_human": "1.61B",
+  "storage_bytes": 12893018616,
+  "storage_human": "12.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Taykhoom/AIDO.RNA-1.6B-CDS · Hugging Face",
+      "url": "https://huggingface.co/Taykhoom/AIDO.RNA-1.6B-CDS",
+      "snippet": "1.6B-parameter model fine-tuned on coding sequences (CDS). This is a standalone HuggingFace port that loads without the ModelGenerator package ..."
+    },
+    {
+      "title": "Taykhoom/AIDO.RNA-1.6B-CDS at main - Hugging Face",
+      "url": "https://huggingface.co/Taykhoom/AIDO.RNA-1.6B-CDS/tree/main",
+      "snippet": "Libraries Transformers How to use Taykhoom/AIDO.RNA-1.6B-CDS with Transformers: ... Notebooks Google Colab Kaggle main AIDO.RNA-1.6B-CDS 6.45 GB Ctrl+K Ctrl+K 1 contributor History:2 commits Taykhoom Fix model correctness and Hugging Face compatibility 7c0b09c verified4 days ago .gitattributes Safe 1.52 kBInitial AIDO.RNA-1.6B-CDS Hugging Face ..."
+    },
+    {
+      "title": "RNA Secondary Structure Prediction - GB.ModelGenerator",
+      "url": "https://genbio-ai.github.io/ModelGenerator/tutorials/rna_secondary_structure_prediction/",
+      "snippet": "Finetune GB.RNA-1.6B as discussed above, or download the model.ckpt checkpoint from here. Test the checkpoint on the corresponding dataset as following (replace /path/to/checkpoint with the actual path to the finetuned checkpoint):"
+    },
+    {
+      "title": "ModelGenerator/experiments/GB.RNA/README.md at main · genbio-ai ...",
+      "url": "https://github.com/genbio-ai/ModelGenerator/blob/main/experiments/GB.RNA/README.md",
+      "snippet": "We can also use GB.RNA-1.6B-CDS as backbone for this task by setting model.backbone to modelgenerator.backbones.gb_rna_1b600m_cds. The global batch sizes are all set to 16 for each tasks."
+    },
+    {
+      "title": "ModelGenerator/experiments/GB.RNA/rna_secondary_structure ... - GitHub",
+      "url": "https://github.com/genbio-ai/ModelGenerator/tree/main/experiments/GB.RNA/rna_secondary_structure_prediction",
+      "snippet": "As with proteins, structure determines RNA function. RNA secondary structure, formed by base pairing, is more stable and accessible than its tertiary form within cells. Accurate prediction of RNA secondary structure is essential for tasks such as higher-order structure prediction and function prediction. As discussed in our paper GB.RNA, we finetune the GB.RNA-1.6B model on the training splits ..."
+    }
+  ]
+}

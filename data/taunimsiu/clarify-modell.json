@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Taunimsiu/clarify-modell",
+  "slug": "taunimsiu-clarify-modell",
+  "author": "Taunimsiu",
+  "url": "https://huggingface.co/Taunimsiu/clarify-modell",
+  "created_at": "2026-10-21T19:44:59.000Z",
+  "updated_at": "2026-10-21T19:44:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LinkedIn : s’identifier ou s’inscrire",
+      "url": "https://fr.linkedin.com/",
+      "snippet": "1 milliard de membres | Gérez votre image professionnelle. Constituez votre réseau professionnel et communiquez avec celui-ci. …"
+    },
+    {
+      "title": "Aurelien Hamelle - TotalEnergies | LinkedIn",
+      "url": "https://fr.linkedin.com/in/aurelien-hamelle-5775271/fr",
+      "snippet": "Nov 5, 2022 · Expérience : TotalEnergies · Formation : Sciences Po · Lieu : Paris et périphérie · 500 relations ou plus sur LinkedIn. …"
+    },
+    {
+      "title": "Remi Cadene - Co-Founder and CEO at UMA | LinkedIn",
+      "url": "https://fr.linkedin.com/in/remi-cadene-6527509b",
+      "snippet": "Co-Founder and CEO at UMA · I am co-founder and CEO of UMA, where I build intelligent robots that enhance quality of life for …"
+    },
+    {
+      "title": "Matthieu Louvot - CEO Airbus Helicopters | LinkedIn",
+      "url": "https://fr.linkedin.com/in/matthieu-louvot-91566138",
+      "snippet": "CEO Airbus Helicopters · Expérience : Airbus Helicopters · Formation : Ecole nationale d'Administration · Lieu : Marseille et …"
+    },
+    {
+      "title": "Thierry Delaporte - Group Chief Executive Officer and North ... - LinkedIn",
+      "url": "https://fr.linkedin.com/in/thierry-delaporte",
+      "snippet": "Group Chief Executive Officer and North America Chief Executive Officer, Sodexo · In November 2025, I joined Sodexo. My ambition …"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "KridgeDookie/philadelphia-decider-4b",
+  "slug": "kridgedookie-philadelphia-decider-4b",
+  "author": "KridgeDookie",
+  "url": "https://huggingface.co/KridgeDookie/philadelphia-decider-4b",
+  "created_at": "2026-10-21T19:48:41.000Z",
+  "updated_at": "2026-10-21T21:08:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "decision-model",
+    "system-one",
+    "structured-decisions",
+    "calibration",
+    "jevbench",
+    "text-classification",
+    "en",
+    "base_model:Mapika/decider-4b",
+    "base_model:finetune:Mapika/decider-4b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 8431547725,
+  "storage_human": "8.4 GB",
+  "base_model": "Mapika/decider-4b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Mapika/decider: A family of System One-style models fine-tuned ...",
+      "url": "https://github.com/Mapika/decider",
+      "snippet": "Every model and its measurements: Models. Independence. This is an independent project. It is not affiliated with or endorsed by TypeSafe AI. It is an open reproduction of the \"System One\" model class (TypeSafe AI&#x27;s Jev): a 2B model built on Qwen/Qwen3.5-2B-Base, a 4B model built on Qwen/Qwen3.5-4B-Base and a 35B mixture-of-experts model built on Qwen/Qwen3.5-35B-A3B-Base. The training mixture ..."
+    },
+    {
+      "title": "Quantized Models for KridgeDookie/Gemma-4-E4B-IT-ABLITERATED-UNCENSORED ...",
+      "url": "https://huggingface.co/models?other=base_model:quantized:KridgeDookie/Gemma-4-E4B-IT-ABLITERATED-UNCENSORED-PHILADELPHIA-CLASS",
+      "snippet": "Explore machine learning models. Active filters: KridgeDookie/Gemma-4-E4B-IT-ABLITERATED-UNCENSORED-PHILADELPHIA-CLASS"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?apps=jan&other=base_model:quantized:KridgeDookie/Qwen3.6-27B-ABLITERATED-UNCENSORED-PHILADELPHIA-CLASS",
+      "snippet": "Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API WaveSpeed DeepInfra One-click Deployment Inference Endpoints Microsoft Foundry Amazon SageMaker AI Misc text-generation-inference Eval Results (legacy) text-embeddings-inference custom_code 4-bit precision Merge 8-bit precision Mixture of Experts Carbon Emissions ..."
+    },
+    {
+      "title": "Perplexity Releases Decider v1.2: A 27B Model That Writes No Answers ...",
+      "url": "https://toolnavs.com/article/2658-perplexity-releases-decider-v12-a-27b-model-that-writes-no-answers-only-judgment",
+      "snippet": "Perplexity Decider v1.2 was the easiest release to miss on October 17, 2026: Perplexity updated the decision model&#x27;s card on Hugging Face, Vercel listed Decider V1.2 27B and Decider Flash V1.2 4B on AI Gateway at the same time, and Perplexity CEO Aravind Srinivas posted the same day that the Flash version can run on-device on an M4 Mac with ..."
+    },
+    {
+      "title": "An AI model&#x27;s false tip to Philadelphia police reveals how digital ...",
+      "url": "https://theconversation.com/an-ai-models-false-tip-to-philadelphia-police-reveals-how-digital-agents-can-do-as-theyre-told-and-still-cause-trouble-294228",
+      "snippet": "An AI agent was instructed to invent and carry out sample tasks on randomly chosen webpages. It went to a Philadelphia Police Department website and submitted a made-up tip about an unsolved homicide."
+    }
+  ]
+}

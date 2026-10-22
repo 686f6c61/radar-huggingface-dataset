@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "attacker243/pub-probe-8842",
+  "slug": "attacker243-pub-probe-8842",
+  "author": "attacker243",
+  "url": "https://huggingface.co/attacker243/pub-probe-8842",
+  "created_at": "2026-10-21T19:59:55.000Z",
+  "updated_at": "2026-10-21T20:55:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11534336,
+  "storage_human": "12 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Trends",
+      "url": "https://trends.google.fr/trends/",
+      "snippet": "Explorez l'intérêt pour la recherche de termes et des thèmes par période, zone géographique et popularité sur Google Trends"
+    },
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.fr/details",
+      "snippet": "Traduisez des textes instantanément avec Google Translate."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.fr/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google Chrome – Download the fast, secure browser from Google",
+      "url": "https://www.google.fr/intl/en_uk/chrome/",
+      "snippet": "Get more done with the new Google Chrome. A more simple, secure and faster web browser than ever, with Google’s smarts built in. …"
+    },
+    {
+      "title": "Google Images",
+      "url": "https://images.google.fr/?hl=fr",
+      "snippet": "Google Images. La recherche d'images la plus complète sur le Web."
+    }
+  ]
+}

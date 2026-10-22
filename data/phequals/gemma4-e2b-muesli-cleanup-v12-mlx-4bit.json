@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "phequals/gemma4-e2b-muesli-cleanup-v12-mlx-4bit",
+  "slug": "phequals-gemma4-e2b-muesli-cleanup-v12-mlx-4bit",
+  "author": "phequals",
+  "url": "https://huggingface.co/phequals/gemma4-e2b-muesli-cleanup-v12-mlx-4bit",
+  "created_at": "2026-10-21T19:23:06.000Z",
+  "updated_at": "2026-10-21T19:24:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "speech-to-text",
+    "transcript-cleanup",
+    "dictation",
+    "muesli",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:quantized:google/gemma-4-E2B-it",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4628569379,
+  "parameters_human": "4.63B",
+  "storage_bytes": 2636292345,
+  "storage_human": "2.6 GB",
+  "base_model": "google/gemma-4-E2B-it",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "天府社区",
+      "url": "https://bbs.scol.com.cn/",
+      "snippet": "蜀ICP备12028253号 川公网安备 51010402000072号 网上传播视听节目许可证 |互联网新闻信息服务许可证编号：51120170001 | …"
+    },
+    {
+      "title": "Only anal!!!! | Page 243 | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/only-anal.337687/page-243",
+      "snippet": "Dec 15, 2018 · Hello, You can now get verified on forum. The way it's gonna work is that you can send me a PM with a verification …"
+    },
+    {
+      "title": "Wife Gets Blacked - XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/wife-gets-blacked.718470/",
+      "snippet": "Dec 1, 2025 · pod1023082 Porn Surfer Joined: May 22, 2022 Messages: 27 Dec 1, 2025 Fantastic you must write a story that I would …"
+    },
+    {
+      "title": "天府社区",
+      "url": "https://bbs.scol.com.cn/?1064600",
+      "snippet": "推荐 城市论坛 天府摄影 天府摄影 2025-02-24"
+    },
+    {
+      "title": "Porn Comix | Page 416 | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/porn-comix.322919/page-416",
+      "snippet": "Mar 20, 2025 · Forums > Public > Pic & Movie Post > Porn Comix ... Dismiss Notice Hello, New users on the forum won't be able to …"
+    }
+  ]
+}

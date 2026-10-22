@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Kohlibri-40B-i1-GGUF",
+  "slug": "mradermacher-kohlibri-40b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Kohlibri-40B-i1-GGUF",
+  "created_at": "2026-10-21T21:46:47.000Z",
+  "updated_at": "2026-10-22T02:00:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "de"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "moe",
+    "nvfp4",
+    "compressed-tensors",
+    "quantized",
+    "german",
+    "de",
+    "base_model:johannhartmann/Kohlibri-40B",
+    "base_model:quantized:johannhartmann/Kohlibri-40B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 40329781760,
+  "parameters_human": "40.33B",
+  "storage_bytes": 338215247808,
+  "storage_human": "338.2 GB",
+  "base_model": "johannhartmann/Kohlibri-40B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ENT UCA",
+      "url": "https://ent.uca.fr/core/connexion",
+      "snippet": "L'Environnement numérique de travail (ENT) est un portail d'accès aux services numériques de l'Université. Un compte ENT est …"
+    },
+    {
+      "title": "Région Auvergne-Rhône-Alpes",
+      "url": "https://www.ent.auvergnerhonealpes.fr/",
+      "snippet": "La Région finance un service d’Environnement Numérique de Travail (ENT) qui fournit des outils pédagogiques, collaboratifs et de …"
+    },
+    {
+      "title": "CAS - Central Authentication Service Login",
+      "url": "https://ent.uca.fr/",
+      "snippet": "For security reasons, please log out and exit your web browser when you are done accessing services that require authentication!"
+    },
+    {
+      "title": "Service d'authentification web - ÉduConnect",
+      "url": "http://moncompte.educonnect.education.gouv.fr/",
+      "snippet": "Puisque votre navigateur ne supporte pas JavaScript, vous devez appuyer sur le bouton Continuer pour poursuivre."
+    },
+    {
+      "title": "Edifice - Connexion ENT HDF, accès à votre espace scolaire",
+      "url": "https://enthdf.fr/auth/saml/wayf",
+      "snippet": "Connexion à votre espace numérique scolaire : un accès simple, sécurisé et intuitif pour toute la communauté éducative."
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "phequals/lfm25-1.2b-muesli-cleanup-v12-mlx-4bit",
+  "slug": "phequals-lfm25-1-2b-muesli-cleanup-v12-mlx-4bit",
+  "author": "phequals",
+  "url": "https://huggingface.co/phequals/lfm25-1.2b-muesli-cleanup-v12-mlx-4bit",
+  "created_at": "2026-10-21T19:25:36.000Z",
+  "updated_at": "2026-10-21T19:26:35.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "lfm2",
+    "speech-to-text",
+    "transcript-cleanup",
+    "dictation",
+    "muesli",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:LiquidAI/LFM2.5-1.2B-Instruct",
+    "base_model:quantized:LiquidAI/LFM2.5-1.2B-Instruct",
+    "license:other",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1170340608,
+  "parameters_human": "1.17B",
+  "storage_bytes": 658540250,
+  "storage_human": "659 MB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "download videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/tags/download",
+      "snippet": "The Brazilian erotic blockbuster is finally available for download in its complete, uncensored version - Lis Xxx 15 min Plenna Studio - …"
+    },
+    {
+      "title": "Free HD Porn, High Quality Videos - HQporn.xxx",
+      "url": "https://hqporn.xxx/",
+      "snippet": "Our collection HD porn of 200,000 videos in high quality (720p,1080p resolution) on 20+ free porn tubes to view online. All HD videos …"
+    },
+    {
+      "title": "Free Full HD Porn Videos & Sex Movies. Porno, XXX, Porn Tube",
+      "url": "https://www.playvids.com/",
+      "snippet": "Stream and download Porn Videos, always free on PlayVids including HD, 4K and VR. Organized by Categories and Pornstars. …"
+    },
+    {
+      "title": "Free Porn Videos - XXX Porno, HD Porn Tube, Porn Download and …",
+      "url": "https://www.rexporn.sex/",
+      "snippet": "Watch new HD porn videos for PC and mobile free of charge. Every day new XXX porn videos & sex movies."
+    },
+    {
+      "title": "'xxx video download' Search - XNXX.COM",
+      "url": "https://www.xnxx.com/search/xxx+video+download",
+      "snippet": "Language Content Straight Watch Long Porn Videos for FREE Search Best Of Hits Tags Pictures Live Cams Sex Stories Forum …"
+    }
+  ]
+}

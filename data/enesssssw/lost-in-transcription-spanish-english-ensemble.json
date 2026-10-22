@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "enesssssw/lost-in-transcription-spanish-english-ensemble",
+  "slug": "enesssssw-lost-in-transcription-spanish-english-ensemble",
+  "author": "enesssssw",
+  "url": "https://huggingface.co/enesssssw/lost-in-transcription-spanish-english-ensemble",
+  "created_at": "2026-10-21T21:18:58.000Z",
+  "updated_at": "2026-10-21T22:51:42.000Z",
+  "license": "mixed-per-member",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "es",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "automatic-speech-recognition",
+    "code-switching",
+    "ensemble",
+    "lost-in-transcription",
+    "es",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 74571404554,
+  "storage_human": "74.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Porn Videos - TNAFLIX.COM",
+      "url": "https://m.tnaflix.com/",
+      "snippet": "TNAFLIX is one of the fastest growing free porn sites in the world. Choose from millions of free high quality videos in every category …"
+    },
+    {
+      "title": "Best Porn Categories - TNAFLIX.com",
+      "url": "https://m.tnaflix.com/categories",
+      "snippet": "Watch best porn categories on best porn tube - TNAFLIX.com"
+    },
+    {
+      "title": "無料ポルノビデオ - TNAFLIX.COM",
+      "url": "https://m.tnaflix.com/jp/new",
+      "snippet": "TNAFLIXは世界で最も急成長している無料ポルノサイトの1つです。想像できるすべてのカテゴリーで数百万の無料高品質ビデオか …"
+    },
+    {
+      "title": "Kostenlose Porno-Videos - TNAFLIX.COM",
+      "url": "https://m.tnaflix.com/de",
+      "snippet": "TNAFLIX ist eine der am schnellsten wachsenden kostenlosen Porno-Seiten der Welt. Wähle aus Millionen von kostenlosen, …"
+    },
+    {
+      "title": "Video porno gratuiti - TNAFLIX.COM",
+      "url": "https://www.tnaflix.com/it/new",
+      "snippet": "TNAFLIX è uno dei siti porno gratuiti in più rapida crescita al mondo. Scegli tra milioni di video gratuiti di alta qualità in ogni categoria …"
+    }
+  ]
+}

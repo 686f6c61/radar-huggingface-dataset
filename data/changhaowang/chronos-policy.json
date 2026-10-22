@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "changhaowang/chronos-policy",
+  "slug": "changhaowang-chronos-policy",
+  "author": "changhaowang",
+  "url": "https://huggingface.co/changhaowang/chronos-policy",
+  "created_at": "2026-10-09T19:02:08.000Z",
+  "updated_at": "2026-10-22T01:01:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "robotics",
+    "imitation-learning",
+    "diffusion-policy",
+    "chronos",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26929020332,
+  "storage_human": "26.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "changhaowang/chronos-policy · Hugging Face",
+      "url": "https://huggingface.co/changhaowang/chronos-policy",
+      "snippet": "The compact release model also matches the pinned implementation bit-for-bit in 32 eight-step DDIM comparisons: seed-0 Chronos and DT checkpoints for all eight tasks, with both ordinary and padded observations."
+    },
+    {
+      "title": "Chronos Policy: Learning Robot Policies on Physical Time",
+      "url": "https://arxiv.org/abs/2610.13929",
+      "snippet": "Robot policies often convert sensing and control into fixed-rate observation-action sequences, leaving physical time implicit in sequence position. This assumption breaks when observation rates or delays vary, or when inference latency changes. We introduce Chronos Policy, which makes physical time explicit by conditioning on observation capture times and desired action execution times. We ..."
+    },
+    {
+      "title": "Chronos Policy: Learning Robot Policies on Physical Time",
+      "url": "https://changhaowang.github.io/chronospolicy/",
+      "snippet": "Chronos Policy learns robot policies on physical time: timestamped observations, time-aware attention, and actions queried at their future execution times."
+    },
+    {
+      "title": "Chronos Policy: Learning Robot Policies on Physical Time",
+      "url": "https://arxiv.org/pdf/2610.13929v1",
+      "snippet": "• We formulate robot policy learning in physical time by conditioning on observation capture times and queried action execution times. • We introduce Chronos Policy, a diffusion transformer with time-aware RoPE that learns directly from asynchronous, multi-rate observations, without aligning them to a fixed temporal grid."
+    },
+    {
+      "title": "Changhao Wang&#x27;s Homepage",
+      "url": "https://changhaowang.github.io/",
+      "snippet": "I am a postdoctoral researcher at Stanford University working with Prof. Shuran Song. Previously, I worked at Meta Fundamental AI Research (FAIR). My research centers on robot learning for physical interactions. I received my Ph.D. from UC Berkeley in December 2023 under the supervision of Prof. Masayoshi Tomizuka. News 10/2026: Chronos Policy: Learning Robot Policies on Physical Time is now ..."
+    }
+  ]
+}

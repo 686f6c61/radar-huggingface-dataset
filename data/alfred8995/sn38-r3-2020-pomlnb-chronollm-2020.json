@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "alfred8995/sn38-r3-2020-pomlnb-chronollm-2020",
+  "slug": "alfred8995-sn38-r3-2020-pomlnb-chronollm-2020",
+  "author": "alfred8995",
+  "url": "https://huggingface.co/alfred8995/sn38-r3-2020-pomlnb-chronollm-2020",
+  "created_at": "2026-10-21T20:00:08.000Z",
+  "updated_at": "2026-10-21T20:01:09.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "ChronoGPT",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1858535658,
+  "parameters_human": "1.86B",
+  "storage_bytes": 7434184688,
+  "storage_human": "7.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alfred8995/r16-H-chrono4-skd-s500 · Hugging Face",
+      "url": "https://huggingface.co/alfred8995/r16-H-chrono4-skd-s500",
+      "snippet": "alfred8995 / r16-H-chrono4-skd-s500 Like 0 Safetensors sn38-nanochrono Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "SN38 — ChronoLLM - GitHub",
+      "url": "https://github.com/chronollm/sn38/tree/main",
+      "snippet": "The problem Standard LLMs are trained on data from all time periods. When used for financial backtesting or historical analysis, they suffer from lookahead bias — the model \"knows\" things that weren&#x27;t known at the time being analyzed. A model asked to predict 2015 market trends has already seen the 2020 crash."
+    },
+    {
+      "title": "chronollm · PyPI",
+      "url": "https://pypi.org/project/chronollm/",
+      "snippet": "ChronoLLM Chat with temporally consistent language models. Each model only knows events up to its vintage year — no future knowledge leaking into your analysis. Install pip install chronollm Setup # Save your HuggingFace token (provided by the ChronoLLM team) chronollm login <your_token> Usage # Chat with a vintage year chronollm 2020 # Chat with a specific model chronollm owner/repo Example ..."
+    },
+    {
+      "title": "GitHub - st2058130-svg/chronollm",
+      "url": "https://github.com/st2058130-svg/chronollm",
+      "snippet": "The problem Standard LLMs are trained on data from all time periods. When used for financial backtesting or historical analysis, they suffer from lookahead bias: the model \"knows\" things that weren&#x27;t known at the time being analyzed. A model asked to predict 2015 market trends has already seen the 2020 crash."
+    },
+    {
+      "title": "ChronoLLM (SN38) | Bittensor Subnet Trade | TaoMarketCap",
+      "url": "https://taomarketcap.com/subnets/38",
+      "snippet": "ChronoLLM (Subnet 38) live stats: price, market cap, volume, miners, and validators. Competitive training of chronologically consistent Large Language Models"
+    }
+  ]
+}

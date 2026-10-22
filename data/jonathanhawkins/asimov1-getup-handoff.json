@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "id": "JonathanHawkins/asimov1-getup-handoff",
+  "slug": "jonathanhawkins-asimov1-getup-handoff",
+  "author": "JonathanHawkins",
+  "url": "https://huggingface.co/JonathanHawkins/asimov1-getup-handoff",
+  "created_at": "2026-10-21T19:25:07.000Z",
+  "updated_at": "2026-10-21T20:45:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "humanoid",
+    "mujoco",
+    "asimov-1",
+    "locomotion",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2884607,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Get up from prone (Asimov 1, dc envelope, walker handoff)",
+      "dataset": "Asimov 1 get-up from prone (MuJoCo, dc envelope)",
+      "metric": "rises, 24/24",
+      "value": 100
+    },
+    {
+      "task": "Get up from prone (Asimov 1, dc envelope, walker handoff)",
+      "dataset": "Asimov 1 get-up from prone (MuJoCo, dc envelope)",
+      "metric": "still standing at 8 s, 24/24",
+      "value": 100
+    },
+    {
+      "task": "Get up from supine (Asimov 1, dc envelope, walker handoff)",
+      "dataset": "Asimov 1 get-up from supine (MuJoCo, dc envelope)",
+      "metric": "rises, 15/24",
+      "value": 62.5
+    },
+    {
+      "task": "Get up from supine (Asimov 1, dc envelope, walker handoff)",
+      "dataset": "Asimov 1 get-up from supine (MuJoCo, dc envelope)",
+      "metric": "still standing at 8 s, 15/24",
+      "value": 62.5
+    }
+  ],
+  "sources": [
+    {
+      "title": "Colombian Porn @ Dino Tube",
+      "url": "https://www.dinotube.com/category/colombian",
+      "snippet": "Colombian porn videos @ DinoTube. We provide you with free porn, so visit now!"
+    },
+    {
+      "title": "Colombia Porn @ Dino Tube",
+      "url": "https://www.dinotube.com/search/a/colombia",
+      "snippet": "Latina MILF secretary fucks her boss's stepson's cock in the office he cums all over her face! Petite Colombian girl gets savagely …"
+    },
+    {
+      "title": "Colombian Videos - Free HD Content Online | Pornhub",
+      "url": "https://en-pornhub.com/category/colombian/",
+      "snippet": "Watch free HD Colombian videos on Pornhub. Explore trending online content and daily updated streaming videos."
+    },
+    {
+      "title": "Free Colombian Porn Videos (19,087) - Tubesafari.com",
+      "url": "https://tubesafari.com/search/colombian",
+      "snippet": "Free colombian porn: 19,087 videos. WATCH NOW for FREE!"
+    },
+    {
+      "title": "The best and newest Colombian porn videos | Meta Porn",
+      "url": "https://www.metaporn.com/category/colombian",
+      "snippet": "The best and newest Colombian Porn Tubes - Free Sex Videos: Everything In One Place! | Meta Porn"
+    }
+  ]
+}

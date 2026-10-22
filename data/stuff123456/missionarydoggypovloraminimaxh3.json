@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "stuff123456/missionarydoggypovloraminimaxh3",
+  "slug": "stuff123456-missionarydoggypovloraminimaxh3",
+  "author": "stuff123456",
+  "url": "https://huggingface.co/stuff123456/missionarydoggypovloraminimaxh3",
+  "created_at": "2026-10-22T00:03:31.000Z",
+  "updated_at": "2026-10-22T00:03:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:neph1/minimax_h3_handheld_shaky_camera",
+    "base_model:adapter:neph1/minimax_h3_handheld_shaky_camera",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 310168512,
+  "storage_human": "310 MB",
+  "base_model": "neph1/minimax_h3_handheld_shaky_camera",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Doggystyle AI Porn Videos - 6,048 Clips | AiPornFeed",
+      "url": "https://aipornfeed.com/tag/doggystyle",
+      "snippet": "Watch 6,048 Doggystyle AI porn videos on AiPornFeed. Browse AI-generated adult clips, creators, prompts, and models in this category, updated daily."
+    },
+    {
+      "title": "Pov Standing Doggy Style + Missionary (looking up) [remake] - AI Art ...",
+      "url": "https://pixai.art/en/model/1844655147990099186",
+      "snippet": "Generate stunning anime, woman, pose, pov, missionary, lora anime art with the &#x27;Pov Standing Doggy Style + Missionary (looking up) [remake]&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "missionary-pov - v1 FLUX - Free AI LORA | TensorHub Art",
+      "url": "https://tensorhub.art/models/888654963176152041",
+      "snippet": "Download missionary-pov - free LORA FLUX.1 AI model on TENSORHUB ART. FLUX. By FunPhantom"
+    },
+    {
+      "title": "Pov Standing Doggy Style + Missionary... | TensorHub Art",
+      "url": "https://tensorhub.art/models/939593764932991697",
+      "snippet": "Download Pov Standing Doggy Style + Missionary (looking up) - free LORA Illustrious AI model on TENSORHUB ART. POV, POSES. By Min"
+    },
+    {
+      "title": "stuff123456 (Steve) - Hugging Face",
+      "url": "https://huggingface.co/stuff123456",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 28 days ago ... published a model 28 days ago"
+    }
+  ]
+}

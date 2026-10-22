@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "ghsfs-dev/binvibe",
+  "slug": "ghsfs-dev-binvibe",
+  "author": "ghsfs-dev",
+  "url": "https://huggingface.co/ghsfs-dev/binvibe",
+  "created_at": "2026-10-18T09:44:50.000Z",
+  "updated_at": "2026-10-22T02:27:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ghsfs-dev (GHSFS) - Hugging Face",
+      "url": "https://huggingface.co/ghsfs-dev",
+      "snippet": "Rust + Windows desktop tooling. Small binaries, sharp edges. ⚙️ 🦀"
+    },
+    {
+      "title": "GitHub - hiive/vibevoice: Open-Source Frontier Voice AI",
+      "url": "https://github.com/hiive/vibevoice",
+      "snippet": "Overlapping Speech: The current model does not explicitly model or generate overlapping speech segments in conversations. We do not recommend using VibeVoice in commercial or real-world applications without further testing and development. This model is intended for research and development purposes only. Please use responsibly."
+    },
+    {
+      "title": "GitHub - snefs/vibevoice: Open-Source Frontier Voice AI",
+      "url": "https://github.com/snefs/vibevoice",
+      "snippet": "It is best practice to disclose the use of AI when sharing AI-generated content. We do not recommend using VibeVoice in commercial or real-world applications without further testing and development. This model is intended for research and development purposes only. Please use responsibly."
+    },
+    {
+      "title": "technicalheist/vibevoice-1.5b · Hugging Face",
+      "url": "https://huggingface.co/technicalheist/vibevoice-1.5b",
+      "snippet": "VibeVoice-1.5B is a text-to-speech (TTS) model hosted on Hugging Face. This repository provides scripts and examples to synthesize speech from text using pre-trained checkpoints."
+    },
+    {
+      "title": "Microsoft Released VibeVoice-1.5B: An Open-Source Text-to-Speech Model ...",
+      "url": "https://www.marktechpost.com/2025/08/25/microsoft-released-vibevoice-1-5b-an-open-source-text-to-speech-model-that-can-synthesize-up-to-90-minutes-of-speech-with-four-distinct-speakers/",
+      "snippet": "For technical teams, content creators, and AI enthusiasts, VibeVoice-1.5B is a must-explore tool for the next generation of synthetic voice applications—available now on Hugging Face and GitHub, with clear documentation and an open license. As the field pivots toward more expressive, interactive, and ethically transparent TTS, Microsoft&#x27;s latest offering is a landmark for open source AI ..."
+    }
+  ]
+}

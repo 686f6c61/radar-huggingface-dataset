@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Jordine/rlport-hkl_owl_a4_pl4_20261021_235412",
+  "slug": "jordine-rlport-hkl_owl_a4_pl4_20261021_235412",
+  "author": "Jordine",
+  "url": "https://huggingface.co/Jordine/rlport-hkl_owl_a4_pl4_20261021_235412",
+  "created_at": "2026-10-21T23:55:11.000Z",
+  "updated_at": "2026-10-22T01:23:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "research",
+    "checkpoint-backup",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15913828707,
+  "storage_human": "15.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jordine/rlport-hkl_jord9v_grpo_self_pl3_20261017_114547 · Hugging Face",
+      "url": "https://huggingface.co/Jordine/rlport-hkl_jord9v_grpo_self_pl3_20261017_114547",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Jordine/rlport-hkl_jord9v_pl7_20261017_153438 · Hugging Face",
+      "url": "https://huggingface.co/Jordine/rlport-hkl_jord9v_pl7_20261017_153438",
+      "snippet": "Instructions to use Jordine/rlport-hkl_jord9v_pl7_20261017_153438 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "AI Model Tracker Index: Updates, Sources and Evidence",
+      "url": "https://savrn.com/model-tracker",
+      "snippet": "Jordine/rlport-hkl_owl_a4_pl4_20261021_235412 Jordine Source updated: 22 Oct 2026, 00:12 UTC Observed by SAVRN: 22 Oct 2026, 00:15 UTC Exact repository revision SAVRN model page not yet available. Original source ↗ Publisher reported · Repository activity Jordine/rlport-hkl_jord9v_d2x6_pl3_20261021_233037 Jordine Source updated: 22 Oct 2026 ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=reward-laundering",
+      "snippet": "Jordine/rlport-hkl_jord9v_pl4_20261016_210953 Text Generation •Updated about 1 hour ago"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    }
+  ]
+}

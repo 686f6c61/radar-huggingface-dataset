@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "junn0103/act-vega-clean-marker-16d-100k",
+  "slug": "junn0103-act-vega-clean-marker-16d-100k",
+  "author": "junn0103",
+  "url": "https://huggingface.co/junn0103/act-vega-clean-marker-16d-100k",
+  "created_at": "2026-10-22T00:22:05.000Z",
+  "updated_at": "2026-10-22T00:22:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dexmate-vega",
+    "xhand",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51637904,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206587296,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    },
+    {
+      "title": "Translate from English to French with DeepL",
+      "url": "https://www.deepl.com/en/translator/l/en/fr",
+      "snippet": "Translate texts & files instantly from English to French with the world’s most accurate translator. Millions translate with DeepL every day."
+    },
+    {
+      "title": "DeepL Translator | World's Most Accurate Translator",
+      "url": "https://www.deepl.com/en/translator",
+      "snippet": "Translate texts & full document files instantly. Accurate translations for individuals and Teams. Millions translate with DeepL every day."
+    },
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.fr/",
+      "snippet": "Le service sans frais de Google traduit instantanément des mots, des expressions et des pages Web entre le français et plus de 100 …"
+    },
+    {
+      "title": "Reverso | Free translation, dictionary",
+      "url": "https://www.reverso.net/text-translation",
+      "snippet": "Reverso's free online translation service that translates your texts between English and French, Spanish, Italian, German, Russian, …"
+    }
+  ]
+}

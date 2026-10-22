@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "pisapporo/translate",
+  "slug": "pisapporo-translate",
+  "author": "pisapporo",
+  "url": "https://huggingface.co/pisapporo/translate",
+  "created_at": "2026-10-22T00:00:35.000Z",
+  "updated_at": "2026-10-22T00:11:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "translation",
+    "ja",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3893723683,
+  "parameters_human": "3.89B",
+  "storage_bytes": 7128500384,
+  "storage_human": "7.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pisapporo (PI LLC) - Hugging Face",
+      "url": "https://huggingface.co/pisapporo/models",
+      "snippet": "Org profile for PI LLC on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "Google Translate gets new Gemini AI translation models",
+      "url": "https://blog.google/products-and-platforms/products/search/gemini-capabilities-translation-upgrades/",
+      "snippet": "We&#x27;re bringing Gemini&#x27;s state-of-the-art translation model to Google Translate for text, and more new features."
+    },
+    {
+      "title": "Best AI Models for Language Translation - May 2026",
+      "url": "https://awesomeagents.ai/capabilities/translation/",
+      "snippet": "Best AI Models for Language Translation - May 2026 Gemini 3.1 Pro leads verified 2026 benchmarks at $2 per million tokens while GPT-5.5 and Claude Opus 4.7 postdate available translation evaluations - rankings, scores, and pricing for 10 models."
+    },
+    {
+      "title": "Translation Models - Hugging Face",
+      "url": "https://huggingface.co/models?filter=translation",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

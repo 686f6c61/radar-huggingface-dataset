@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "toolathon/MyAwesomeModel-TestRepo",
+  "slug": "toolathon-myawesomemodel-testrepo",
+  "author": "toolathon",
+  "url": "https://huggingface.co/toolathon/MyAwesomeModel-TestRepo",
+  "created_at": "2026-10-21T23:01:44.000Z",
+  "updated_at": "2026-10-21T23:02:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-10-22T03:35:24.549Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Owe money to cam website : r/Advice - Reddit",
+      "url": "https://www.reddit.com/r/Advice/comments/18y4bfx/owe_money_to_cam_website/",
+      "snippet": "Jan 4, 2024 · I was deleting all my accounts to kick the porn habit, and then I hit Jerkmate. When I tried to delete my email, boom, …"
+    },
+    {
+      "title": "Jerkmate - Never Jerk off Alone - Reddit",
+      "url": "https://www.reddit.com/r/JerkmateTV/",
+      "snippet": "Jerkmate.com - Where you can find the best webcam models from all over the world and providing weekly live camshows with the …"
+    },
+    {
+      "title": "Vamsi Velcheti, M.D. - Doctors and Medical Staff - Mayo Clinic",
+      "url": "https://www.mayoclinic.org/biographies/velcheti-vamsi-m-d/bio-20583788",
+      "snippet": "Vamsi Velcheti, M.D., M.B.A., F.A.S.C.O., F.C.C.P., serves as Chief of Hematology and Oncology and Florida Department of Health …"
+    },
+    {
+      "title": "Pancreatic cancer - Doctors and departments - Mayo Clinic",
+      "url": "https://www.mayoclinic.org/diseases-conditions/pancreatic-cancer/doctors-departments/ddc-20355430",
+      "snippet": "Pancreatic cancer — Overview covers symptoms, risk factors, prevention, diagnosis, surgery, chemotherapy and other treatment for …"
+    },
+    {
+      "title": "My bf sent money to ICF Tech EU B.V? : r/ask - Reddit",
+      "url": "https://www.reddit.com/r/ask/comments/15xccqm/my_bf_sent_money_to_icf_tech_eu_bv/",
+      "snippet": "Aug 21, 2023 · Hey sorry I’m 4 mos late. My partner is a POS. The website is jerkmate dot com if you have access to his google you …"
+    }
+  ]
+}

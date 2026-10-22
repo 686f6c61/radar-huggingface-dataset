@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "AeliaTR/aelia-asama6-adapter",
+  "slug": "aeliatr-aelia-asama6-adapter",
+  "author": "AeliaTR",
+  "url": "https://huggingface.co/AeliaTR/aelia-asama6-adapter",
+  "created_at": "2026-10-21T19:46:23.000Z",
+  "updated_at": "2026-10-21T21:00:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "unsloth",
+    "base_model:unsloth/Qwen3-4B-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen3-4B-unsloth-bnb-4bit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 540180445,
+  "storage_human": "540 MB",
+  "base_model": "unsloth/Qwen3-4B-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ailia-ai/ailia-models: The collection of pre-trained, state-of ...",
+      "url": "https://github.com/ailia-ai/ailia-models",
+      "snippet": "The collection of pre-trained, state-of-the-art AI models: 419 models covering object detection, speech recognition, image generation, LLMs and more — all runnable from the same simple CLI. Tutorial · チュートリアル · Google Colaboratory · Documentation · deepwiki · Update history Every model works the same way: no arguments needed, weights download automatically."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Qwen, Mistral AI, Moonshot AI, Z.ai, MiniMax, NVIDIA, Microsoft AI, Cohere, Xiaomi, and other prominent AI labs. The newest-first tables show each release date, provider, and model type. Dates use the earliest meaningful availability stage for each entry. Preview access ..."
+    },
+    {
+      "title": "Aelia - janitorai.com",
+      "url": "https://janitorai.com/characters/a95a03f1-eee2-4768-a952-99c5792612aa_character-aelia",
+      "snippet": "janitor is a platform for creators building immersive worlds and readers seeking living stories, we are where human creativity meets ai magic."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Aelita Schaeffer Lyoko form(Code Lyoko) - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1958099419623928988",
+      "snippet": "Trigger Words Aelita_Schaeffer (Code Lyoko),1girl,solo,preteen,green eyes,short hair,pink hair,left ear has a small dangle earring,pointed ears,pink and pale green form-fitting suit,which has a star-shaped watch that projects a pair of retractable pink energy wings,3d"
+    }
+  ]
+}

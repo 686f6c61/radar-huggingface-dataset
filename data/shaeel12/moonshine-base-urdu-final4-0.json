@@ -5,7 +5,7 @@
   "author": "shaeel12",
   "url": "https://huggingface.co/shaeel12/moonshine-base-urdu-final4.0",
   "created_at": "2026-10-20T23:15:05.000Z",
-  "updated_at": "2026-10-21T01:36:00.000Z",
+  "updated_at": "2026-10-21T08:07:00.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "automatic-speech-recognition",
@@ -25,12 +25,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 17,
   "trending_score": 0,
   "parameters": 61514752,
   "parameters_human": "61.5M",
-  "storage_bytes": 1476496208,
-  "storage_human": "1.5 GB",
+  "storage_bytes": 2952995744,
+  "storage_human": "3.0 GB",
   "base_model": "moonshine-ai/moonshine-base-ar",
   "formats": [
     "safetensors"

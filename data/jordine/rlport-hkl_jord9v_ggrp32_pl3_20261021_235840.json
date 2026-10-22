@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Jordine/rlport-hkl_jord9v_ggrp32_pl3_20261021_235840",
+  "slug": "jordine-rlport-hkl_jord9v_ggrp32_pl3_20261021_235840",
+  "author": "Jordine",
+  "url": "https://huggingface.co/Jordine/rlport-hkl_jord9v_ggrp32_pl3_20261021_235840",
+  "created_at": "2026-10-21T23:59:39.000Z",
+  "updated_at": "2026-10-22T02:24:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "research",
+    "checkpoint-backup",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15928556661,
+  "storage_human": "15.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rlport-hkl_jord9v_ggrp32_pl3_20261021_235840 - Hugging Face",
+      "url": "https://huggingface.co/Jordine/rlport-hkl_jord9v_ggrp32_pl3_20261021_235840",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Jordine/rlport-hkl_jord9v_grpo_self_pl3_20261017_114547 · Hugging Face",
+      "url": "https://huggingface.co/Jordine/rlport-hkl_jord9v_grpo_self_pl3_20261017_114547",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/features",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "Hal Jordan Inspired Ring - Free 3D Print Model - MakerWorld",
+      "url": "https://makerworld.com/en/models/3289445-lanterns-2026-hal-jordan-inspired-ring",
+      "snippet": "Bring a piece of the Green Lantern universe to your collection with this Hal Jordan-inspired ring! Modelled in Shapr3D using screenshots, posters and official stills as references, this fan-made design captures the ring&#x27;s appearance rather than reproducing it at a verified, screen-accurate scale."
+    }
+  ]
+}

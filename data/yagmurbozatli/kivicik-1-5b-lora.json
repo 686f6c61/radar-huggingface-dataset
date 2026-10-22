@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "yagmurbozatli/Kivicik-1.5B-LoRA",
+  "slug": "yagmurbozatli-kivicik-1-5b-lora",
+  "author": "yagmurbozatli",
+  "url": "https://huggingface.co/yagmurbozatli/Kivicik-1.5B-LoRA",
+  "created_at": "2026-10-21T19:14:29.000Z",
+  "updated_at": "2026-10-21T19:14:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85333004,
+  "storage_human": "85 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LoRA AI Models (18,166) | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 18,166 AI models tagged \"LoRA\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Stable Diffusion 1.5 Checkpoints & 103K+ LoRAs | Civitai",
+      "url": "https://civitai.com/ecosystems/stable-diffusion",
+      "snippet": "Stable Diffusion is the open model that kicked off the AI-art community — and its 1.5 release is still the fastest, lightest, and most widely supported version to generate with. SD 1.5 renders in seconds on almost any hardware and is backed by one of the largest LoRA and fine-tune libraries anywhere."
+    },
+    {
+      "title": "Kivi 1.5b Lora - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/hytgkzynde/kivi-1.5b-lora",
+      "snippet": "Registry entry for model Kivi 1.5b Lora; source metadata pending."
+    },
+    {
+      "title": "PixAI Model Market | 1.8M+ AI Art Models and LoRAs",
+      "url": "https://pixai.art/en/market",
+      "snippet": "Open marketplace for AI art models. Browse 1.8M+ user-trained models and LoRAs to generate anime, realistic and fantasy art free on PixAI."
+    }
+  ]
+}

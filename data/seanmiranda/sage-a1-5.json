@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "seanmiranda/Sage-A1.5",
+  "slug": "seanmiranda-sage-a1-5",
+  "author": "seanmiranda",
+  "url": "https://huggingface.co/seanmiranda/Sage-A1.5",
+  "created_at": "2026-10-21T19:50:58.000Z",
+  "updated_at": "2026-10-21T19:50:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "moe",
+    "vlm",
+    "vision",
+    "agentic",
+    "code",
+    "tool-use",
+    "text-generation",
+    "conversational",
+    "arxiv:2610.28578",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71928317664,
+  "storage_human": "71.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Radio 4 - Listen Live - BBC Sounds",
+      "url": "https://www.bbc.co.uk/sounds/play/live/bbc_radio_fourfm",
+      "snippet": "Use BBC.com or the new BBC App to listen to BBC podcasts, Radio 4 and the World Service outside the UK. Find out how to listen …"
+    },
+    {
+      "title": "BBC Audio | Radio 4 | Listen Live",
+      "url": "https://www.bbc.com/audio/play/live/bbc_radio_fourfm",
+      "snippet": "Inquisitive speech radio to make sense of your world. Listen live to BBC Radio 4 on BBC Audio."
+    },
+    {
+      "title": "BBC Radio 4, listen live",
+      "url": "https://www.radio-uk.co.uk/bbc-radio-4",
+      "snippet": "Listen to BBC Radio 4 live. The best UK radio stations. Free radio online at www.radio-uk.co.uk."
+    },
+    {
+      "title": "BBC Radio 4 – Listen Live",
+      "url": "https://radio-live-uk.com/bbc-4",
+      "snippet": "Listen live to BBC Radio 4, 24/7 from London, England – featuring news, weather forecasts, drama and comedy shows, music, and …"
+    },
+    {
+      "title": "Radio 4 Extra - Listen Live - BBC Sounds",
+      "url": "https://www.bbc.co.uk/sounds/play/live/bbc_radio_four_extra",
+      "snippet": "Use BBC.com or the new BBC App to listen to BBC podcasts, Radio 4 and the World Service outside the UK. Find out how to listen …"
+    }
+  ]
+}

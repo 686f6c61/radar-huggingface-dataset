@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "baselabs/elephant-1",
+  "slug": "baselabs-elephant-1",
+  "author": "baselabs",
+  "url": "https://huggingface.co/baselabs/elephant-1",
+  "created_at": "2026-10-19T19:35:08.000Z",
+  "updated_at": "2026-10-21T23:38:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "decision-model",
+    "classification",
+    "calibration",
+    "routing",
+    "guardrails",
+    "baseten",
+    "text-classification",
+    "en",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 22,
+  "downloads_30d": 21,
+  "trending_score": 22,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18841783403,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "想买chatgpt，但是不想用魔法，有什么好办法吗，或者给个国内能使 …",
+      "url": "https://www.zhihu.com/question/4131969429",
+      "snippet": "不用魔法，想直接用原生态 chatgpt 的，就不要想着直接在 Openai 官网登录使用了；要不直接买key，然后用 openai 提供的包调 …"
+    },
+    {
+      "title": "chatgpt · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/chatgpt",
+      "snippet": "3 days ago · ChatGPT is an AI assistant developed by OpenAI and released in November 2022. It uses generative AI models to …"
+    },
+    {
+      "title": "Releases · ChatGPTNextWeb/NextChat - GitHub",
+      "url": "https://github.com/ChatGPTNextWeb/NextChat/releases",
+      "snippet": "What's Changed add chatgpt-4o-latest by @MrrDrr in #5376 fix: safaLocalStorage by @Dogtiti in #5386 feat: add shortcut key by …"
+    },
+    {
+      "title": "ChatGPT - 知乎",
+      "url": "https://www.zhihu.com/topic/26691895",
+      "snippet": "ChatGPT是由OpenAI推出的一款AI聊天对话机器人，能够进行自然语言交互，帮助用户完成问答、写作、编程等多种任务。"
+    },
+    {
+      "title": "How I write genuinely good cover letters with ChatGPT",
+      "url": "https://www.reddit.com/r/ChatGPT/comments/1au2qx8/how_i_write_genuinely_good_cover_letters_with/",
+      "snippet": "Feb 18, 2024 · I've perfected the art of generating cover letters with ChatGPT and I want to share it with you. The mantra 'garbage in, …"
+    }
+  ]
+}

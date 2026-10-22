@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "austindixson/microduck-sprint-improver",
+  "slug": "austindixson-microduck-sprint-improver",
+  "author": "austindixson",
+  "url": "https://huggingface.co/austindixson/microduck-sprint-improver",
+  "created_at": "2026-10-21T23:47:54.000Z",
+  "updated_at": "2026-10-21T23:47:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "base_model:dashi/microduck-sprint-remix-r844",
+    "base_model:finetune:dashi/microduck-sprint-remix-r844",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 861895,
+  "storage_human": "861895 B",
+  "base_model": "dashi/microduck-sprint-remix-r844",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "austindixson/microduck-sprint-improver · Hugging Face",
+      "url": "https://huggingface.co/austindixson/microduck-sprint-improver",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "austindixson (Austin Dixson) · GitHub",
+      "url": "https://github.com/austindixson/",
+      "snippet": "Seeking to understand everything I can. austindixson has 112 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Microduck - A duck-like biped robot designed for physical AI ...",
+      "url": "https://www.cnx-software.com/2026/08/28/microduck-a-duck-like-biped-robot-designed-for-physical-ai-experimentation-and-fun/",
+      "snippet": "Microduck - A duck-like biped robot designed for physical AI experimentation and fun Pollen Robotics and Hugging Face have unveiled the Microduck, a 25 cm tall biped robot with 15 motors, a camera, a depth sensor, two motion sensors, and an articulated beak that can pick up objects."
+    },
+    {
+      "title": "Meet Microduck, a $399 Open-Source Robot That Can Learn New Tricks - PCMag",
+      "url": "https://www.pcmag.com/news/hugging-face-microduck-399-open-source-robot-that-can-learn-new-tricks",
+      "snippet": "The robot comes from AI model platform Hugging Face&#x27;s Pollen Robotics arm. Preorders open today with shipments slated to arrive before Christmas."
+    },
+    {
+      "title": "Hugging Face is selling a cute $399 open source duck robot, Microduck",
+      "url": "https://techcrunch.com/2026/08/27/hugging-face-is-selling-a-cute-399-open-source-duck-robot-microduck/",
+      "snippet": "Hugging Face unveiled the Microduck on Thursday, a cute little duck-like robot that sells for $399 — and ships before Christmas. Clem Delangue, CEO of Hugging Face, said the Microduck is an ..."
+    }
+  ]
+}

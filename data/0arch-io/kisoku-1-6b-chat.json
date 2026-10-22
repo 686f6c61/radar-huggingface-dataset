@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "0arch-io/kisoku-1.6b-chat",
+  "slug": "0arch-io-kisoku-1-6b-chat",
+  "author": "0arch-io",
+  "url": "https://huggingface.co/0arch-io/kisoku-1.6b-chat",
+  "created_at": "2026-10-07T23:36:08.000Z",
+  "updated_at": "2026-10-22T00:57:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "chat",
+    "preview",
+    "kisoku",
+    "en",
+    "dataset:HuggingFaceTB/smoltalk2",
+    "dataset:NousResearch/Hermes-3-Dataset",
+    "dataset:teknium/OpenHermes-2.5",
+    "dataset:HuggingFaceH4/no_robots",
+    "dataset:open-thoughts/OpenThoughts3-1.2M",
+    "base_model:0arch-io/kisoku-1.6b",
+    "base_model:finetune:0arch-io/kisoku-1.6b",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 24,
+  "trending_score": 0,
+  "parameters": 1600749056,
+  "parameters_human": "1.60B",
+  "storage_bytes": 12823314272,
+  "storage_human": "12.8 GB",
+  "base_model": "0arch-io/kisoku-1.6b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "0arch-io/kisoku-1.6b-chat · Hugging Face",
+      "url": "https://huggingface.co/0arch-io/kisoku-1.6b-chat",
+      "snippet": "0arch-io / kisoku-1.6b-chat Like 0 Text Generation Transformers Safetensors 5 datasets English qwen3 conversational chat preview kisoku text-generation-inference License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "kisoku/release/kisoku-1.6b-chat at main · 0arch-io/kisoku",
+      "url": "https://github.com/0arch-io/kisoku/tree/main/release/kisoku-1.6b-chat",
+      "snippet": "Kisoku 1.6B Chat (preview) This is a preview, not a finished assistant. It is the base model 0arch-io/kisoku-1.6b after nine supervised fine-tuning passes. This repo is pass 9 (the pass labelled sft009 in my run names). It loses the thread in longer conversations, is behind Llama 3.2 1B Instruct on a multi-turn test, and states wrong answers confidently. Read \"Known failures\" before using it."
+    },
+    {
+      "title": "GitHub - 0arch-io/kisoku: Kisoku 1.6B: a from-scratch language model ...",
+      "url": "https://github.com/0arch-io/kisoku",
+      "snippet": "A 1.6B-parameter language model pretrained from scratch by one person on a TPU v4-32 from Google&#x27;s TPU Research Cloud, on about 0.5 trillion tokens. On a 10-benchmark suite run through the same harness for every model, it matches Meta&#x27;s Llama 3.2 1B (five wins each) while using about 18 times less training data. It was extended to 64K tokens of context, about 128K with YaRN. A chat fine-tune ..."
+    },
+    {
+      "title": "Kisoku 1.6B - a 0arch-io Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/0arch-io/kisoku-16b",
+      "snippet": "From-scratch 1.6B LLM trained solo on a TPU grant. Matches Llama 3.2 1B with 18x less data. Apache 2.0. Report + story: 0arch.io/core"
+    },
+    {
+      "title": "0arch-io/kisoku-1.6b · Hugging Face",
+      "url": "https://huggingface.co/0arch-io/kisoku-1.6b",
+      "snippet": "Kisoku 1.6B is a base (not chat) language model pretrained from random initialization by one person, Joseph Rodriguez at 0ARCH, on a TPU v4-32 from Google&#x27;s TPU Research Cloud. It has 1,600,749,056 parameters, saw about 0.5 trillion tokens of pretraining text (524.4B including the long-context phases), and was extended to 64K tokens of context. All numbers below come from the technical report ..."
+    }
+  ]
+}

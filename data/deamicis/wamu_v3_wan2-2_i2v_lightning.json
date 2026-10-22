@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "deamicis/WAMU_v3_WAN2.2_I2V_LIGHTNING",
+  "slug": "deamicis-wamu_v3_wan2-2_i2v_lightning",
+  "author": "deamicis",
+  "url": "https://huggingface.co/deamicis/WAMU_v3_WAN2.2_I2V_LIGHTNING",
+  "created_at": "2026-10-22T00:50:32.000Z",
+  "updated_at": "2026-10-22T00:50:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "diffusers:WanImageToVideoPipeline",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14288901184,
+  "parameters_human": "14.29B",
+  "storage_bytes": 68905059537,
+  "storage_human": "68.9 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "d335566/WAMU_v3_WAN2.2_I2V_LIGHTNING at main - Hugging Face",
+      "url": "https://huggingface.co/d335566/WAMU_v3_WAN2.2_I2V_LIGHTNING/tree/main",
+      "snippet": "Instructions to use d335566/WAMU_v3_WAN2.2_I2V_LIGHTNING with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use d335566/WAMU_v3_WAN2.2_I2V_LIGHTNING with Diffusers:"
+    },
+    {
+      "title": "djessica/WAMU_v3_WAN2.2_I2V_LIGHTNING · Hugging Face",
+      "url": "https://huggingface.co/djessica/WAMU_v3_WAN2.2_I2V_LIGHTNING",
+      "snippet": "Use this model Instructions to use djessica/WAMU_v3_WAN2.2_I2V_LIGHTNING with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use djessica/WAMU_v3_WAN2.2_I2V_LIGHTNING with Diffusers: pip install -U diffusers transformers accelerate import torch from diffusers import DiffusionPipeline # switch to \"mps\" for apple devices ..."
+    },
+    {
+      "title": "GitHub - aruniankur/wan2.2model",
+      "url": "https://github.com/aruniankur/wan2.2model",
+      "snippet": "Local Gradio web UI for the Wan 2.2 Image-to-Video 14B Lightning model, pre-quantized to INT8 and run entirely on your own GPU (e.g. an L40 48GB). No ZeroGPU, no AOTI compilation, no RIFE interpolation, no network model downloads at startup. If WAMU_v3_INT8 is missing, run python quantize_int8.py to ..."
+    },
+    {
+      "title": "GitHub - Wan-Video/Wan2.2: Wan: Open and Advanced Large-Scale Video ...",
+      "url": "https://github.com/Wan-Video/Wan2.2",
+      "snippet": "👍 Efficient High-Definition Hybrid TI2V: Wan2.2 open-sources a 5B model built with our advanced Wan2.2-VAE that achieves a compression ratio of 16×16×4. This model supports both text-to-video and image-to-video generation at 720P resolution with 24fps and can also run on consumer-grade graphics cards like 4090."
+    },
+    {
+      "title": "Wan2.2-Lightning: VRAM, licence and how to run it locally",
+      "url": "https://selfhost.directory/models/lightx2v/wan2.2-lightning",
+      "snippet": "Wan2.2-Lightning is a video generation model by lightx2v. Commercial use OK. Runs with ComfyUI, Diffusers."
+    }
+  ]
+}
