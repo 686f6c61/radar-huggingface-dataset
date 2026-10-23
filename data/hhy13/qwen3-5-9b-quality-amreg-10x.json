@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "hhy13/qwen3.5-9b-quality-amreg-10x",
+  "slug": "hhy13-qwen3-5-9b-quality-amreg-10x",
+  "author": "hhy13",
+  "url": "https://huggingface.co/hhy13/qwen3.5-9b-quality-amreg-10x",
+  "created_at": "2026-10-22T22:59:35.000Z",
+  "updated_at": "2026-10-22T22:59:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "cartridges",
+    "kv-cache",
+    "attention-matching",
+    "continual-learning",
+    "quality",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5577596376,
+  "storage_human": "5.6 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5-9B | Awesome Agents",
+      "url": "https://awesomeagents.ai/models/qwen-3-5-9b/",
+      "snippet": "Qwen3.5-9B is a 9B dense model that outperforms Qwen3-30B on most benchmarks and beats GPT-5-Nano on vision tasks. Natively multimodal with 262K-1M context, Apache 2.0 licensed."
+    },
+    {
+      "title": "Qwen: Qwen3.5-9B - AI Model Details & Benchmarks",
+      "url": "https://benchable.ai/models/qwen/qwen3.5-9b-20260310",
+      "snippet": "Qwen3.5-9B, a multimodal foundation model from qwen, demonstrates a strong overall reliability with an 83% success rate across benchmarks, indicating consistent operational stability. However, its speed performance is a notable area for improvement, ranking in the 10th percentile, suggesting longer response times compared to peers."
+    },
+    {
+      "title": "hhy13/quality-g0-g11-qwen3.5-9b · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/hhy13/quality-g0-g11-qwen3.5-9b",
+      "snippet": "QuALITY wall-clock 50× self-study training data Synthetic self-study conversations used to train Qwen3.5-9B cartridges in the QuALITY wall-clock experiment (11 groups × 16 documents, 50× compression)."
+    },
+    {
+      "title": "Qwen/Qwen3.5-9B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.5-9B",
+      "snippet": "Qwen3.5-9B is a dense multimodal model from the Qwen3.5 family — same gated delta networks hybrid attention, vision encoder, 262K context, and MTP support as its larger siblings, but sized to fit comfortably on a single 24 GB GPU."
+    },
+    {
+      "title": "Qwen3.5-9B - VRAM, Specs & Benchmarks",
+      "url": "https://apxml.com/models/qwen35-9b",
+      "snippet": "Qwen3.5-9B specifications, context length, benchmark scores, and GPU VRAM requirements across quantizations."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "mazesmazes/tiny-audio-granite-qwen-500-3",
+  "slug": "mazesmazes-tiny-audio-granite-qwen-500-3",
+  "author": "mazesmazes",
+  "url": "https://huggingface.co/mazesmazes/tiny-audio-granite-qwen-500-3",
+  "created_at": "2026-10-22T16:07:55.000Z",
+  "updated_at": "2026-10-22T22:09:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "asr_model",
+    "feature-extraction",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 604182528,
+  "parameters_human": "604.2M",
+  "storage_bytes": 14512046146,
+  "storage_human": "14.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "espace personnel | pôle emploi",
+      "url": "https://candidat.pole-emploi.fr/espacepersonnel/",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "Visio - Avaya - France Travail",
+      "url": "https://testvisio.pole-emploi.fr/visio/index.html",
+      "snippet": "Apprendre à configurer l'outil de visioconférence Vous allez configurer Avaya (outil de visioconférence) sur votre ordinateur et …"
+    },
+    {
+      "title": "Dépôt et Recherche d'offres d’emploi en ligne",
+      "url": "https://1jeune1solution.pole-emploi.fr/",
+      "snippet": "Opération spéciale – Site partenarial France Travail"
+    },
+    {
+      "title": "Redirecting to https://entretien-embauche.pole-emploi.fr/login",
+      "url": "https://entretien-embauche.pole-emploi.fr/modules/regles/module/lesson/documents/fiche_regles_a_respecter.pdf",
+      "snippet": "« Les informations demandées, sous quelque forme que ce soit, au candidat à un emploi ne peuvent avoir comme finalité que …"
+    },
+    {
+      "title": "Préparer les conditions d'accueil et d'intégration du nouvel embauché ...",
+      "url": "https://entretien-embauche.pole-emploi.fr/modules/integrer/module/lesson/documents/fiche_aide_memoire.pdf",
+      "snippet": "Préparer les conditions d'accueil et d'intégration du nouvel embauché avant sa prise de poste Prévenir l'équipe de son arrivée."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "archgod94/tellcue-models",
+  "slug": "archgod94-tellcue-models",
+  "author": "archgod94",
+  "url": "https://huggingface.co/archgod94/tellcue-models",
+  "created_at": "2026-10-22T17:44:44.000Z",
+  "updated_at": "2026-10-23T03:01:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "frame-interpolation",
+    "speech-enhancement",
+    "noise-reduction",
+    "image-inpainting",
+    "super-resolution",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 52123467,
+  "storage_human": "52 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "archgod94/tellcue-models · Hugging Face",
+      "url": "https://huggingface.co/archgod94/tellcue-models",
+      "snippet": "Network and weights: RIFE v4.17 lite from Practical-RIFE (hzwer, MIT). Weights file flownet_v4.17.lite.pkl from the vs-rife model release (HolyWu, MIT). Converted to ONNX (opset 17, fp32) with tool/export_rife.py in the Tellcue repository. Changes from the original: the flow grid is built inside the graph, so any size works; the flow scale is an input; the warps of blocks 1 to 3 run at the ..."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "CivArchive - CivitAI Archive",
+      "url": "https://civarchive.com/about",
+      "snippet": "AI Artists: To find specific models and all their download links, especially if one link is broken. Developers/Researchers: To track specific model files (by hash) across the web and verify their existence."
+    },
+    {
+      "title": "GitHub - samssouza/uncensored-ai-list",
+      "url": "https://github.com/samssouza/uncensored-ai-list",
+      "snippet": "Contribute to samssouza/uncensored-ai-list development by creating an account on GitHub."
+    },
+    {
+      "title": "Next AI Model — AI Model Release Tracker",
+      "url": "https://www.nextaimodel.com/",
+      "snippet": "Free tracker of every AI model release from OpenAI, Google, Anthropic, xAI, Meta, DeepSeek and more: what each model changed, and which lines are due next."
+    }
+  ]
+}

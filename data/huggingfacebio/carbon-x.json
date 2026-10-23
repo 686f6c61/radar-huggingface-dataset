@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "HuggingFaceBio/Carbon-X",
+  "slug": "huggingfacebio-carbon-x",
+  "author": "HuggingFaceBio",
+  "url": "https://huggingface.co/HuggingFaceBio/Carbon-X",
+  "created_at": "2026-10-21T10:21:04.000Z",
+  "updated_at": "2026-10-22T09:55:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "dna",
+    "genomics",
+    "biology",
+    "variant-effect-prediction",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-14B",
+    "base_model:finetune:Qwen/Qwen3-14B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 79,
+  "downloads_30d": 0,
+  "trending_score": 75,
+  "parameters": 14822046720,
+  "parameters_human": "14.82B",
+  "storage_bytes": 29655940163,
+  "storage_human": "29.7 GB",
+  "base_model": "Qwen/Qwen3-14B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introducing Carbon-X - a Hugging Face Space by HuggingFaceBio",
+      "url": "https://huggingface.co/spaces/HuggingFaceBio/Carbon-X-Release",
+      "snippet": "You can type a DNA sequence or a question about it, and the model will explain the sequence, predict what a mutation does, or create new DNA. It returns clear, plain‑language answers and generated ..."
+    },
+    {
+      "title": "HuggingFaceBio/Carbon-X · Hugging Face",
+      "url": "https://huggingface.co/HuggingFaceBio/Carbon-X",
+      "snippet": "Chat model: post-trained and evaluated with thinking disabled. Context window: 40,960 tokens. Training: 302B tokens of mid-training on DNA, biology text, English and instruction data, then supervised fine-tuning and reinforcement learning with verifiable rewards on DNA tasks. Efficient inference: serves with vLLM on a single GPU. Carbon-X uses a standard causal LM architecture."
+    },
+    {
+      "title": "Hugging Face releases Carbon-X, an open AI model for ... - Digg",
+      "url": "https://digg.com/tech/kvc0iuud",
+      "snippet": "According to Hugging Face’s model card, Carbon-X has 14.8 billion parameters and starts from Qwen3-14B. Its developers trained it on DNA and natural-language text, using a tokenizer that reads DNA in six-base groups."
+    },
+    {
+      "title": "Carbon-X: Open 14B DNA Chat Model, 1/1800 the Cost - explainx.ai",
+      "url": "https://explainx.ai/blog/hugging-face-carbon-x-14b-open-dna-chat-model-variant-effects-1800x-cheaper-claimed-vs-verified-2026",
+      "snippet": "vor 21 Stunden ... Carbon-X is Hugging Face open 14.8B DNA chat model: 66.7% average vs GPT-6.1 Sol 67.5%. What the model card claims, what is verified, ..."
+    },
+    {
+      "title": "Hugging Face's New AI Model Carbon-X Analyzes, Generates DNA ...",
+      "url": "https://www.businessinsider.com/hugging-face-ai-model-carbon-x-dna-sequences-gene-therapies-2026-10",
+      "snippet": "Hugging Face's new AI model, Carbon-X, can analyze and generate DNA sequences and help scientists develop new gene therapies, the company says."
+    }
+  ]
+}

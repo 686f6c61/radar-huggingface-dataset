@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "jeremygracey-ai/vjepa2-vitl-fpc64-256-GGUF",
+  "slug": "jeremygracey-ai-vjepa2-vitl-fpc64-256-gguf",
+  "author": "jeremygracey-ai",
+  "url": "https://huggingface.co/jeremygracey-ai/vjepa2-vitl-fpc64-256-GGUF",
+  "created_at": "2026-10-22T23:04:05.000Z",
+  "updated_at": "2026-10-22T23:04:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "jepa.cpp",
+  "languages": [],
+  "tags": [
+    "jepa.cpp",
+    "gguf",
+    "jepa",
+    "ggml",
+    "v-jepa",
+    "v-jepa-2",
+    "video",
+    "video-feature-extraction",
+    "arxiv:2506.09985",
+    "base_model:facebook/vjepa2-vitl-fpc64-256",
+    "base_model:quantized:facebook/vjepa2-vitl-fpc64-256",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 325971328,
+  "parameters_human": "326.0M",
+  "storage_bytes": 2679611872,
+  "storage_human": "2.7 GB",
+  "base_model": "facebook/vjepa2-vitl-fpc64-256",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - JeremyGracey-AI/Gracey_vjepa2: PyTorch code and models for ...",
+      "url": "https://github.com/JeremyGracey-AI/Gracey_vjepa2/tree/main",
+      "snippet": "Usage Demo See vjepa2_demo.ipynb (Colab Link) or vjepa2_demo.py for an example of how to load both the HuggingFace and PyTorch V-JEPA 2 models and run inference on a sample video to get a sample classification result."
+    },
+    {
+      "title": "JeremyGracey-AI/Gracey_vjepa2 - GitHub",
+      "url": "https://github.com/JeremyGracey-AI/Gracey_vjepa2",
+      "snippet": "See vjepa2_demo.ipynb (Colab Link) or vjepa2_demo.py for an example of how to load both the HuggingFace and PyTorch V-JEPA 2 models and run inference on a sample video to get a sample classification result."
+    },
+    {
+      "title": "facebook/vjepa2-vitl-fpc64-256 · Hugging Face",
+      "url": "https://huggingface.co/facebook/vjepa2-vitl-fpc64-256",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "V-JEPA 2: Self-Supervised Video Models Enable Understanding, Prediction ...",
+      "url": "https://ai.meta.com/research/publications/v-jepa-2-self-supervised-video-models-enable-understanding-prediction-and-planning/",
+      "snippet": "A major challenge for modern AI is to learn to understand the world and learn to act largely by observation. This paper explores a self-supervised approach that combines internet-scale video data with a small amount of interaction data (robot trajectories), to develop models capable of understanding, predicting, and planning in the physical world."
+    },
+    {
+      "title": "vjepa2: V-JEPA 2 PyTorch Code and Model Sizes | Hysen Labs",
+      "url": "https://hysenlabs.com/projects/facebookresearch-vjepa2",
+      "snippet": "vjepa2 is Meta FAIR&#x27;s PyTorch codebase for V-JEPA 2 self-supervised video models, aimed at research engineers training encoders rather than serving them."
+    }
+  ]
+}

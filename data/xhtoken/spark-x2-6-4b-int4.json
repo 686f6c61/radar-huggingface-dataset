@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "XHToken/Spark-X2.6-4B-INT4",
+  "slug": "xhtoken-spark-x2-6-4b-int4",
+  "author": "XHToken",
+  "url": "https://huggingface.co/XHToken/Spark-X2.6-4B-INT4",
+  "created_at": "2026-10-20T14:26:27.000Z",
+  "updated_at": "2026-10-21T08:52:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "spark2_5",
+    "text-generation",
+    "llm",
+    "sparkx2_5",
+    "conversational",
+    "custom_code",
+    "en",
+    "zh",
+    "base_model:XHToken/Spark-X2.6-4B",
+    "base_model:quantized:XHToken/Spark-X2.6-4B",
+    "license:apache-2.0",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 14,
+  "downloads_30d": 90,
+  "trending_score": 14,
+  "parameters": 1970362880,
+  "parameters_human": "1.97B",
+  "storage_bytes": 3412112060,
+  "storage_human": "3.4 GB",
+  "base_model": "XHToken/Spark-X2.6-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Spark-X2.6-4B - ModelScope.ai",
+      "url": "https://modelscope.ai/models/XHToken/Spark-X2.6-4B-INT4",
+      "snippet": "Spark-X2.6-4B-INT4 - An open-source model by XHToken on ModelScope."
+    },
+    {
+      "title": "Supported Models and Datasets — swift 4.7.0.dev0 documentation",
+      "url": "https://swift.readthedocs.io/en/latest/Instruction/Supported-models-and-datasets.html",
+      "snippet": "XHToken/Spark-X2.5-4B-Base. spark2_5. spark2_5. spark2_5. transformers>=4.57 ... AIDC-AI/Ovis1.6-Gemma2-9B-GPTQ-Int4. ovis1_6. ovis1_6. transformers>=4.42."
+    },
+    {
+      "title": "XHToken/Spark-X2.5-4B VS inclusionAI/Ling-3.0-tiny VS Nanbeige ...",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wao3d5/xhtokensparkx254b_vs_inclusionailing30tiny_vs/",
+      "snippet": "08.09.2026 ... Comments Section ; Spark-X2.5-1.7B (1.7B), 47.4, 42.1, 64.5, 71.6 ..."
+    },
+    {
+      "title": "XHToken/Spark-X2.6-4B-INT4 · Hugging Face",
+      "url": "https://huggingface.co/XHToken/Spark-X2.6-4B-INT4",
+      "snippet": "Spark-X2.6-4B delivers inference efficiency on par with or better than comparable on-device models, including Qwen3.5-4B and Gemma-E4B. It combines this efficiency with stronger capabilities, making it a practical choice for responsive, ..."
+    },
+    {
+      "title": "Spark-X2.6-4B: stronger on-device agents, coding and controllable ...",
+      "url": "https://dev.to/sparkllm/spark-x26-4b-stronger-on-device-agents-coding-and-controllable-thinking-2fh",
+      "snippet": "It labels each runtime and quantization setting, including llama.cpp Q4_K_M and Spark INT4 runs using TensorRT or MLX. Compare the relevant hardware, runtime and context length when choosing a deployment. Direct model weights and model card: https://huggingface.co/XHToken/Spark-X2.6-4B."
+    }
+  ]
+}

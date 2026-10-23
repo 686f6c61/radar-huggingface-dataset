@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "overwatchdominion/x402-sec-defi-data-mcp",
+  "slug": "overwatchdominion-x402-sec-defi-data-mcp",
+  "author": "overwatchdominion",
+  "url": "https://huggingface.co/overwatchdominion/x402-sec-defi-data-mcp",
+  "created_at": "2026-10-22T23:43:48.000Z",
+  "updated_at": "2026-10-23T00:05:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3206367,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - fernsugi/x402-api-mcp-server: MCP server for x402 DeFi data ...",
+      "url": "https://github.com/fernsugi/x402-api-mcp-server",
+      "snippet": "MCP server that gives Claude, ChatGPT, and any MCP-compatible AI agent access to pay-per-call crypto/DeFi data via the x402 protocol. 8 tools. No API keys. AI agents pay USDC micropayments on Base, per request."
+    },
+    {
+      "title": "Coinbase&#x27;s MCP Stack: How AI Agents Got Wallets, Trading Desks, and an ...",
+      "url": "https://the-agent-report.com/2026/06/coinbase-mcp-agent-integration/",
+      "snippet": "Over the past 12 months, Coinbase has quietly assembled the most comprehensive Model Context Protocol (MCP) integration stack in crypto — spanning payments infrastructure, developer tooling, DeFi access, and now an SEC-registered AI investment adviser. This is the full architecture of how AI agents are entering the onchain economy."
+    },
+    {
+      "title": "GitHub - fernsugi/x402-mcp-server: MCP server wrapping x402 DeFi data ...",
+      "url": "https://github.com/fernsugi/x402-mcp-server",
+      "snippet": "MCP is an open standard that lets AI applications (Claude, Cursor, OpenClaw, etc.) discover and use tools through a unified protocol. Think of it as a USB-C port for AI — any compliant client can plug into any compliant server. This server wraps the x402 API (pay-per-call DeFi data) so that any MCP-compatible AI agent can: Discover available data endpoints Call them with proper parameters ..."
+    },
+    {
+      "title": "Overwatch AI Models | AimCore Model Library",
+      "url": "https://aimcore.pro/models/games/overwatch",
+      "snippet": "Explore Overwatch models for the AimCore AI Toolkit. Compare published models, input sizes, compatibility and free or premium access."
+    },
+    {
+      "title": "MCP Server with x402",
+      "url": "https://docs.x402.org/guides/mcp-server-with-x402",
+      "snippet": "Model Context Protocol (MCP) is a protocol for passing context between LLMs and other AI agents. This page shows how to use the x402 payment protocol with MCP to make paid API requests through an MCP server, and how to connect it to Claude Desktop."
+    }
+  ]
+}

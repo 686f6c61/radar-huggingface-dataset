@@ -1,0 +1,108 @@
+{
+  "schema": 1,
+  "id": "DavidAU/Qwen3.8-27B-Ultimate",
+  "slug": "davidau-qwen3-8-27b-ultimate",
+  "author": "DavidAU",
+  "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-Ultimate",
+  "created_at": "2026-09-03T09:09:05.000Z",
+  "updated_at": "2026-10-22T07:50:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "heretic",
+    "qwen3_8",
+    "qwen3_6",
+    "uncensored",
+    "finetune",
+    "Cold Fusion",
+    "GAIN Training",
+    "Multi-stage tuning",
+    "all use cases",
+    "unsloth",
+    "27 reasoning modes",
+    "27 instruct modes",
+    "15 AI Constructs",
+    "5 Super AI Constructs",
+    "Brainstorm AI Construct",
+    "Brainstorm Business AI Construct",
+    "Universal Teacher AI Construct",
+    "Agent AI Construct",
+    "Coder AI Construct",
+    "Turbo-Brilliance",
+    "9 Xhigh reasoning modes",
+    "fine tune",
+    "multi-stage tuned",
+    "thinking",
+    "reasoning",
+    "coder",
+    "creative",
+    "creative writing",
+    "all genres",
+    "story",
+    "writing",
+    "fiction",
+    "roleplaying",
+    "bfloat16",
+    "conversational",
+    "en",
+    "dataset:DavidAU/Polar-STRICT-Datasets",
+    "dataset:DavidAU/F451-STRICT-Datasets",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 65,
+  "downloads_30d": 2,
+  "trending_score": 13,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55584657975,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Unable to access favorite porn site, eporner.com, on my home internet ...",
+      "url": "https://www.reddit.com/r/computerhelp/comments/3rqgor/unable_to_access_favorite_porn_site_epornercom_on/",
+      "snippet": "Nov 6, 2015 · This is going to sound ridiculous, but I can't access eporner.com. I have Cox internet and am located in Arizona. I'm …"
+    },
+    {
+      "title": "Can't access eporner.com : r/techsupport - Reddit",
+      "url": "https://www.reddit.com/r/techsupport/comments/193l71/cant_access_epornercom/",
+      "snippet": "Feb 23, 2013 · true Stumped on a tech problem? Ask the community and try to help others with their problems as well. Note: Reddit …"
+    },
+    {
+      "title": "eporner看不了？？？_百度知道",
+      "url": "https://zhidao.baidu.com/question/165751459.html",
+      "snippet": "百度网盘是一款国民级产品，已连续9年为超过7亿用户提供稳定、安全的个人云存储服务，已实现电脑、手机、电视等多种终端场景 …"
+    },
+    {
+      "title": "eporner网站上不了怎么办 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/1991151371501662907.html",
+      "snippet": "百度网盘是一款国民级产品，已连续9年为超过7亿用户提供稳定、安全的个人云存储服务，已实现电脑、手机、电视等多种终端场景 …"
+    },
+    {
+      "title": "Qwen3.8 27B TURBO Fable Cold Fusion 735 882 Heretic ... - Interfaze",
+      "url": "https://interfaze.ai/models/davidauqwen38-27b-turbo-fable-cold-fusion-735-882-heretic-uncensored-neo-coder-max-mtp-gguf",
+      "snippet": "Qwen3.8 27B TURBO Fable Cold Fusion 735 882 Heretic Uncensored NEO CODER MAX MTP GGUF by DavidAU, a image-text-to-text model with multimodal capabilities."
+    }
+  ]
+}

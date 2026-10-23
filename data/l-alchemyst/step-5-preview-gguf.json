@@ -5,7 +5,7 @@
   "author": "L-Alchemyst",
   "url": "https://huggingface.co/L-Alchemyst/Step-5-Preview-GGUF",
   "created_at": "2026-10-02T04:25:26.000Z",
-  "updated_at": "2026-10-06T04:17:43.000Z",
+  "updated_at": "2026-10-23T01:15:21.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -24,8 +24,8 @@
   "trending_score": 0,
   "parameters": 600991912608,
   "parameters_human": "600.99B",
-  "storage_bytes": 615996529773,
-  "storage_human": "616.0 GB",
+  "storage_bytes": 616710162493,
+  "storage_human": "616.7 GB",
   "base_model": null,
   "formats": [
     "gguf"

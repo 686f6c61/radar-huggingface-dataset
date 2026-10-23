@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "tezrt/dsdc",
+  "slug": "tezrt-dsdc",
+  "author": "tezrt",
+  "url": "https://huggingface.co/tezrt/dsdc",
+  "created_at": "2026-10-22T22:40:30.000Z",
+  "updated_at": "2026-10-22T22:40:30.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tezrt (ertaert) - Hugging Face",
+      "url": "https://huggingface.co/tezrt/models",
+      "snippet": "User profile of ertaert on Hugging Face Recent Activity updated a model8 days ago tezrt/MAYA published a model8 days ago tezrt/MAYA View all activity"
+    },
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Qwen, Mistral AI, Moonshot AI, Z.ai, MiniMax, NVIDIA, Microsoft AI, Cohere, Xiaomi, and other prominent AI labs. The newest-first tables show each release date, provider, and model type. Dates use the earliest meaningful availability stage for each entry. Preview access ..."
+    },
+    {
+      "title": "TET & DSC: Syllabus, Bitbank, Guidance, Model Papers",
+      "url": "https://education.sakshi.com/tet",
+      "snippet": "Discover comprehensive TET & DSC resources at Sakshi Education. Access Syllabus, Bitbank, and model papers for preparation. Get expert guidance and AP TET & DSC previous papers, plus TS TET & DSC previous papers for effective practice. Prepare with confidence for teaching exams."
+    },
+    {
+      "title": "Best Free AI Models - Download & Run Online | TensorHub Art",
+      "url": "https://tensorhub.art/models",
+      "snippet": "Browse and run AI models on TensorArt. Explore ZImage, Flux, Illustrious XL, Wan 2.2, Stable Diffusion, and more. Download checkpoints, LoRAs, and..."
+    }
+  ]
+}

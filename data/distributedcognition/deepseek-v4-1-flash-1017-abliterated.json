@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "distributedcognition/DeepSeek-V4.1-Flash-1017-abliterated",
+  "slug": "distributedcognition-deepseek-v4-1-flash-1017-abliterated",
+  "author": "distributedcognition",
+  "url": "https://huggingface.co/distributedcognition/DeepSeek-V4.1-Flash-1017-abliterated",
+  "created_at": "2026-10-22T21:16:56.000Z",
+  "updated_at": "2026-10-22T23:25:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deepseek_v41",
+    "abliteration",
+    "uncensored",
+    "moe",
+    "thinking",
+    "engram",
+    "text-generation",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "license:mit",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 763205315794,
+  "parameters_human": "763.21B",
+  "storage_bytes": 510297531029,
+  "storage_human": "510.3 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeepSeek-V4.1-Flash-1017 · Models",
+      "url": "https://www.modelscope.cn/models/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "snippet": "Technical Report 👁️ Introduction DeepSeek-V4.1-Flash-1017 is a minor update to DeepSeek-V4.1-Flash, delivering substantial improvements across reasoning, coding, agentic tasks, and visual benchmarks. Alongside these gains, the model reduces task execution time and output length, enabling users to complete tasks faster and at lower cost and advancing the performance-cost Pareto frontier ..."
+    },
+    {
+      "title": "DeepSeek-V4.1-Flash-1017 — EXL3 2.9bpw — ABLITERATED",
+      "url": "https://huggingface.co/dealignai/DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw-ABLITERATED",
+      "snippet": "dealignai/DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw-UNCENSORED Same model, different name. Pull from the UNCENSORED repo above — it&#x27;s the one that holds the shards, is kept up to date, and carries the full README + eval tables. Downloads last month -"
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4.1-Flash · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+      "snippet": "Pipeline name: deepseek_v4_1_flash_no_thinking_parse_with_layout (served via the DeepSeek API)"
+    },
+    {
+      "title": "DeepSeek V4.1 Flash 1017 — AI Model Radar",
+      "url": "https://aimodelradar.app/models/deepseek-v4-1-flash-1017",
+      "snippet": "DeepSeek V4.1 Flash 1017: sparse mixture-of-experts model with 1M context window DeepSeek-V4.1-Flash-1017 is a sparse mixture-of-experts model built on the company&#x27;s Causal Encoder-Decoder architecture, activating 8B parameters on input and 16B on output from a 552B-parameter backbone."
+    },
+    {
+      "title": "DeepSeek V4.1 Flash 1017 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/deepseek-v4.1-flash-1017",
+      "snippet": "DeepSeek V4.1 Flash 1017 is a multimodal model for reasoning, coding, and long-context agents, with native image input, a 1M-token context window, and improved performance over the original V4.1 Flash."
+    }
+  ]
+}

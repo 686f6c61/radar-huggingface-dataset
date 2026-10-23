@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "fastino/GLiDE",
+  "slug": "fastino-glide",
+  "author": "fastino",
+  "url": "https://huggingface.co/fastino/GLiDE",
+  "created_at": "2026-10-19T10:25:20.000Z",
+  "updated_at": "2026-10-22T16:23:29.000Z",
+  "license": "fastino-community",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "decision-model",
+    "classification",
+    "multimodal",
+    "conversational",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 24,
+  "downloads_30d": 25,
+  "trending_score": 24,
+  "parameters": 26085330160,
+  "parameters_human": "26.09B",
+  "storage_bytes": 52193409709,
+  "storage_human": "52.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fastino Labs",
+      "url": "https://fastino.ai/",
+      "snippet": "Fastino Labs builds open language and decision models for agentic AI, including GLiNER, GLiDE and the Fastino fine-tuning agent. See our research and models."
+    },
+    {
+      "title": "GLiDE: a decision model for typed questions - docs.fastino.ai",
+      "url": "https://docs.fastino.ai/concepts/glide",
+      "snippet": "GLiDE (Generalized Lightweight Decision Engine) is a decision model. It evaluates the application state you provide against one or more typed questions and returns structured answers, probabilities, and confidence across outcomes you define. GLiDE costs $0.15 per 1 million input tokens. Output tokens are free ($0). See Pricing for the current inference rates."
+    },
+    {
+      "title": "Open weight models for inference and training | Fastino Labs",
+      "url": "https://fastino.ai/models",
+      "snippet": "Explore open weight models available on the Fastino API for inference and training."
+    },
+    {
+      "title": "fastino/GLiDE · Hugging Face",
+      "url": "https://huggingface.co/fastino/GLiDE",
+      "snippet": "GLiDE is a decision model from Fastino. Given a state (text or JSON, optionally with images) and one or more typed questions, it returns a probability for every option of every question."
+    },
+    {
+      "title": "GLiDE: Specifications & Sources - gradually.ai",
+      "url": "https://www.gradually.ai/en/ai-models/glide/",
+      "snippet": "GLiDE by Fastino Labs. Technical specifications, availability, and official sources. The profile includes only source-backed details."
+    }
+  ]
+}

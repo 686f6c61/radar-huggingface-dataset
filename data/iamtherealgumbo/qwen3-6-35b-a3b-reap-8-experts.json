@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "IAmTheRealGumbo/Qwen3.6-35B-A3B-REAP-8-experts",
+  "slug": "iamtherealgumbo-qwen3-6-35b-a3b-reap-8-experts",
+  "author": "IAmTheRealGumbo",
+  "url": "https://huggingface.co/IAmTheRealGumbo/Qwen3.6-35B-A3B-REAP-8-experts",
+  "created_at": "2026-10-22T16:15:26.000Z",
+  "updated_at": "2026-10-22T16:15:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "moe",
+    "pruning",
+    "expert-pruning",
+    "reap",
+    "conversational",
+    "arxiv:2510.13999",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3881244016,
+  "parameters_human": "3.88B",
+  "storage_bytes": 7775423414,
+  "storage_human": "7.8 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT Plan | Free",
+      "url": "https://chatgpt.com/plans/free/",
+      "snippet": "Try ChatGPT Free today and use AI to write, learn, plan, and get quick answers—at no cost."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or …"
+    },
+    {
+      "title": "How to Get ChatGPT Plus Free in 2026: 7 Legit Methods",
+      "url": "https://dupple.com/learn/how-to-get-chatgpt-plus-for-free",
+      "snippet": "May 15, 2026 · For students, freelancers, and people who use ChatGPT casually, that's real money. Below are the seven methods …"
+    },
+    {
+      "title": "ChatGPT Promotional Subscriptions/Free Trial Invites FAQ",
+      "url": "https://help.openai.com/en/articles/8381046-chatgpt-promotional-subscriptionsfree-trial-invites-faq",
+      "snippet": "OpenAI may make available to eligible users the ability to invite their friends and family to a free, limited-duration trial of an otherwise …"
+    },
+    {
+      "title": "How to Get ChatGPT Plus for 1 Month and Trigger a Free Trial",
+      "url": "https://insights.terabox.com/hub/how-to-get-chatgpt-plus-for-1-month-and-trigger-a-free-trial",
+      "snippet": "Learn how to get ChatGPT Plus for one month, trigger the free retention offer, and use the $8 Go plan. Avoid scams and maximize …"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "old-time-radio/RadioWhisper",
+  "slug": "old-time-radio-radiowhisper",
+  "author": "old-time-radio",
+  "url": "https://huggingface.co/old-time-radio/RadioWhisper",
+  "created_at": "2026-10-22T23:07:47.000Z",
+  "updated_at": "2026-10-22T23:49:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "ctranslate2",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "ctranslate2",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Old (film) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Old_(film)",
+      "snippet": "Old (litt. « âgé »), ou Anormal au Québec, est un thriller américain écrit, coproduit et réalisé par M. Night Shyamalan, sorti en 2021."
+    },
+    {
+      "title": "Old - Film 2021 - AlloCiné",
+      "url": "https://www.allocine.fr/film/fichefilm_gen_cfilm=274232.html",
+      "snippet": "Old est un film réalisé par M. Night Shyamalan avec Gael García Bernal, Vicky Krieps."
+    },
+    {
+      "title": "Old (film) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Old_(film)",
+      "snippet": "Old premiered at Jazz at Lincoln Center in New York City on July 19, 2021, and was theatrically released in the United States on July …"
+    },
+    {
+      "title": "Suis-je concerné par l’OLD ? La réponse officielle en 30 secondes",
+      "url": "https://feuxdeforet.fr/prevention/old/verifier-mon-obligation/",
+      "snippet": "Outil — Débroussaillement Suis-je concerné par l’OLD ? La réponse officielle en 30 secondes Saisissez votre adresse : l’outil …"
+    },
+    {
+      "title": "Old (2021) - IMDb",
+      "url": "https://www.imdb.com/title/tt10954652/",
+      "snippet": "Jul 23, 2021 · Old: Directed by M. Night Shyamalan. With Gael García Bernal, Vicky Krieps, Rufus Sewell, Alex Wolff. A vacationing …"
+    }
+  ]
+}

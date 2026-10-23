@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-2044739642511069185-lora",
+  "slug": "runninghubai-rh-2044739642511069185-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-2044739642511069185-lora",
+  "created_at": "2026-10-22T23:05:01.000Z",
+  "updated_at": "2026-10-22T23:06:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 231277236,
+  "storage_human": "231 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RunningHubAI/rh-ai-lora at main - Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-ai-lora/tree/main",
+      "snippet": "RunningHubAI / rh-ai-lora Like 0 Text-to-Image comfyui lora Model card FilesFiles and versions xet Community Copy to bucket new main rh-ai-lora 238 MB Ctrl+K Ctrl+K 1 contributor History:2 commits RunningHubAI Upload RunningHub model 2005090948453466113 5d9d23d verifiedabout 8 hours ago .gitattributes Safe"
+    },
+    {
+      "title": "RunningHubAI/rh-z-image-lorav1.0-lora · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-z-image-lorav1.0-lora",
+      "snippet": "A LoRA model specifically designed to capture the \"subtle emotions, exquisite clothing, and light-shadow tension in Asian ACG aesthetics.\" This is not simply character generation but an immersive experience of visual storytelling."
+    },
+    {
+      "title": "RunningHub Models ｜ AI Model Creation & Training Platform",
+      "url": "https://www.runninghub.ai/models",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "RunningHub AI | Image, Video & Workflow Creation",
+      "url": "https://runninghubai.pro/",
+      "snippet": "RunningHub AI creative canvas Turn a thought into a world with RunningHub AI. One focused place for image generation, cinematic video, and repeatable AI workflows. Start with a sentence, shape the details, and keep every idea moving."
+    },
+    {
+      "title": "Rh V1.0 Lora - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/runninghubai/rh-v1.0-lora",
+      "snippet": "Registry entry for model Rh V1.0 Lora; source metadata pending."
+    }
+  ]
+}

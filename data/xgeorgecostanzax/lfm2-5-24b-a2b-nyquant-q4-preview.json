@@ -5,7 +5,7 @@
   "author": "XGeorgeCostanzaX",
   "url": "https://huggingface.co/XGeorgeCostanzaX/LFM2.5-24B-A2B-Nyquant-Q4-preview",
   "created_at": "2026-10-17T14:38:26.000Z",
-  "updated_at": "2026-10-22T17:28:54.000Z",
+  "updated_at": "2026-10-23T00:27:15.000Z",
   "license": "lfm1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -31,7 +31,7 @@
   "trending_score": 0,
   "parameters": 23971587712,
   "parameters_human": "23.97B",
-  "storage_bytes": 38951221861,
+  "storage_bytes": 38951517390,
   "storage_human": "39.0 GB",
   "base_model": "LiquidAI/LFM2.5-24B-A2B",
   "formats": [

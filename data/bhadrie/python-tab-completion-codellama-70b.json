@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "bhadrie/Python-Tab-Completion-CodeLlama-70b",
+  "slug": "bhadrie-python-tab-completion-codellama-70b",
+  "author": "bhadrie",
+  "url": "https://huggingface.co/bhadrie/Python-Tab-Completion-CodeLlama-70b",
+  "created_at": "2026-10-22T15:52:34.000Z",
+  "updated_at": "2026-10-22T15:52:35.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "code"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "llama",
+    "llama-2",
+    "text-generation",
+    "code",
+    "arxiv:2308.12950",
+    "license:llama2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 68976910336,
+  "parameters_human": "68.98B",
+  "storage_bytes": 417715385673,
+  "storage_human": "417.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Femme nue au chien - Gustave Courbet | Musée d'Orsay",
+      "url": "https://www.musee-orsay.fr/en/artworks/femme-nue-au-chien-973",
+      "snippet": "Although this painting is dated 1868, the year it was first publicly exhibited, it was certainly painted around 1861-1862. The model is in …"
+    },
+    {
+      "title": "Female Nude with a Dog (Portrait of Leotine Renaude)",
+      "url": "https://www.wikiart.org/en/gustave-courbet/female-nude-with-a-dog-portrait-of-leotine-renaude",
+      "snippet": "‘Female Nude with a Dog (Portrait of Leotine Renaude)’ was created by Gustave Courbet in Realism style. Find more prominent …"
+    },
+    {
+      "title": "Nude Woman With A Dog - Artvee",
+      "url": "https://artvee.com/dl/nude-woman-with-a-dog/",
+      "snippet": "View Nude Woman With A Dog by Gustave Courbet and other public domain artworks on Artvee"
+    },
+    {
+      "title": "Nude Woman with a Dog - Gustave Courbet - Google Arts & Culture",
+      "url": "https://artsandculture.google.com/asset/nude-woman-with-a-dog/vAFDxfEmRnUDmA?hl=en",
+      "snippet": "This painting marks a notable evolution in Courbet's more gallant approach to the female nude. Compared to The Bathers of 1840, …"
+    },
+    {
+      "title": "File:Gustave Courbet - Nude Woman with Dog - WGA05508.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Gustave_Courbet_-_Nude_Woman_with_Dog_-_WGA05508.jpg",
+      "snippet": "This is a faithful photographic reproduction of a two-dimensional, public domain work of art."
+    }
+  ]
+}

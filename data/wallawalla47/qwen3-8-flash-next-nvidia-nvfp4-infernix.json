@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "wallawalla47/Qwen3.8-Flash-Next-NVIDIA-NVFP4-Infernix",
+  "slug": "wallawalla47-qwen3-8-flash-next-nvidia-nvfp4-infernix",
+  "author": "wallawalla47",
+  "url": "https://huggingface.co/wallawalla47/Qwen3.8-Flash-Next-NVIDIA-NVFP4-Infernix",
+  "created_at": "2026-10-08T23:21:11.000Z",
+  "updated_at": "2026-10-22T23:31:27.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "infernix",
+  "languages": [],
+  "tags": [
+    "infernix",
+    "qwen3.8",
+    "qwen4_exp",
+    "nvfp4",
+    "moe",
+    "mtp",
+    "blackwell",
+    "rtx-5090",
+    "multimodal",
+    "conversational",
+    "cuda",
+    "image-text-to-text",
+    "base_model:nvidia/Qwen3.8-Flash-Next-NVFP4",
+    "base_model:quantized:nvidia/Qwen3.8-Flash-Next-NVFP4",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 161,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 132799668992,
+  "storage_human": "132.8 GB",
+  "base_model": "nvidia/Qwen3.8-Flash-Next-NVFP4",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-Flash-Next-NVIDIA-NVFP4-Infernix - Hugging Face",
+      "url": "https://huggingface.co/wallawalla47/Qwen3.8-Flash-Next-NVIDIA-NVFP4-Infernix",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "wallawalla47/Qwen3.8-Flash-Next-Uncensored-NVFP4-Infernix · Hugging Face",
+      "url": "https://huggingface.co/wallawalla47/Qwen3.8-Flash-Next-Uncensored-NVFP4-Infernix",
+      "snippet": "Converted with Infernix&#x27;s recipe C, qwen3_8_flash_next_nvfp4_orcarouter (components text, vision and MTP, plus a proposal head). python -m tools.flash_next.verify_artifact compared the artifact with the checkpoint: 24,576 experts, 1,323 tensors and 320,001,536 n-gram rows with no mismatch; 293 text-model and 1,556 drafter parameters re-quantized."
+    },
+    {
+      "title": "GitHub - Wallawalla47/Infernix: C++/CUDA single-GPU inference engine ...",
+      "url": "https://github.com/Wallawalla47/Infernix",
+      "snippet": "Uncensored too: the Qwen3.8-Flash-Next-Uncensored-NVFP4-Infernix conversion of orcarouter&#x27;s abliterated build keeps its weights bit-exact (perplexity 4.772 against Strata&#x27;s 4.844 for the base model) and decodes about as fast as the NVIDIA Dense8 conversion (models). Setup and tuning: the Qwen3.8-Flash-Next guide."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next-Uncensored-NVFP4-Infernix - GitHub",
+      "url": "https://github.com/Wallawalla47/Infernix/tree/main/model-cards/Qwen3.8-Flash-Next-Uncensored-NVFP4-Infernix",
+      "snippet": "Qwen3.8-Flash-Next Uncensored NVFP4 for Infernix AI disclaimer: this artifact, its conversion recipe, the engine that runs it and most of this card were made with AI (mostly Claude Opus 5.5). It is hobby work and is likely to be neither complete nor entirely accurate."
+    },
+    {
+      "title": "Qwen3.8 Flash Next NVIDIA NVFP4 Infernix by wallawalla47",
+      "url": "https://llm-explorer.com/model/wallawalla47%2FQwen3.8-Flash-Next-NVIDIA-NVFP4-Infernix,6mOMAOKS0IROnsPLQtl6ln",
+      "snippet": "Qwen3.8 Flash Next NVIDIA NVFP4 Infernix is an open-source LLM by wallawalla47. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

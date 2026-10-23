@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "bw-fu/evalution-cache",
+  "slug": "bw-fu-evalution-cache",
+  "author": "bw-fu",
+  "url": "https://huggingface.co/bw-fu/evalution-cache",
+  "created_at": "2026-10-22T16:00:47.000Z",
+  "updated_at": "2026-10-22T16:05:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 95199869318,
+  "storage_human": "95.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bowers & Wilkins | True Sound en écouteurs, enceintes et systèmes …",
+      "url": "https://www.bowerswilkins.com/fr-fr/",
+      "snippet": "Vivez le True Sound avec Bowers & Wilkins. Découvrez des enceintes primées, des écouteurs et des systèmes home cinéma. …"
+    },
+    {
+      "title": "B&W : tous les produits sur Son-Vidéo.com",
+      "url": "https://www.son-video.com/marque/b-w",
+      "snippet": "939 € Sur commande Fiche produit Ajouter au panier B&W Stand HTM D4 Silver (la pièce) Pied d'enceinte BW Stand HTM D4 Silver …"
+    },
+    {
+      "title": "BW — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/BW",
+      "snippet": "Butt Welding, qui désigne des pièces à raccorder par soudage, qui sont presque parallèles et sans recouvrement, comme les …"
+    },
+    {
+      "title": "Pôle Occasion Multi-marques | Bw41 | Neuvy",
+      "url": "https://www.bw41.fr/",
+      "snippet": "Jun 12, 2023 · Bw41, spécialiste de la vente de véhicules d'occasion depuis plus de 20 ans dans le loir et cher. Plus de 100 …"
+    },
+    {
+      "title": "BW Group - Best on Water",
+      "url": "https://bw-group.com/",
+      "snippet": "BW Group is a leading global energy and maritime company involved in shipping, deepwater oil & gas production, renewable energy …"
+    }
+  ]
+}

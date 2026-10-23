@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "iiidevv/nebula-raw-training",
+  "slug": "iiidevv-nebula-raw-training",
+  "author": "iiidevv",
+  "url": "https://huggingface.co/iiidevv/nebula-raw-training",
+  "created_at": "2026-10-21T03:12:54.000Z",
+  "updated_at": "2026-10-23T01:33:47.000Z",
+  "license": "per-source-data-licenses",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "nebula",
+    "experimental",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 365691074687,
+  "storage_human": "365.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "iiidevv/nebula-public-data · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/iiidevv/nebula-public-data",
+      "snippet": "This dataset contains a bounded sample of public-source UTF-8 documents packed as little-endian uint16 byte token IDs. BOS=256 and EOS=257; IDs 0-255 encode bytes. The index preserves whole-document boundaries, source attribution and train/validation assignment. No Nebula model checkpoint, private ..."
+    },
+    {
+      "title": "GitHub - Mittinzzz/nebula: A workbench for code-reviewing AI memory ...",
+      "url": "https://github.com/Mittinzzz/nebula",
+      "snippet": "A workbench for code-reviewing AI memory: turns conversations into a human-editable temporal knowledge graph, injected into LLMs in place of raw chat history - Mittinzzz/nebula"
+    },
+    {
+      "title": "Getting Started - Nebula API Documentation",
+      "url": "https://docs.ai-nebula.com/",
+      "snippet": "Getting started Getting Started Enterprise AI model API gateway — one OpenAI-compatible key for 150+ models. Nebula API is an enterprise-grade AI model gateway built on the unified OpenAI API standard. One key gives you access to 150+ models from OpenAI, Anthropic, Google, xAI, DeepSeek, Alibaba, Moonshot, Zhipu, ByteDance, MiniMax and more."
+    },
+    {
+      "title": "GitHub - Morningstar202604/nebula: The open source AI coding agent that ...",
+      "url": "https://github.com/Morningstar202604/nebula",
+      "snippet": "Nebula is a fast, open source AI coding agent that runs natively in your terminal. Point it at any codebase and it reads, plans, writes, and refactors code — executing commands and iterating on failures until the job is done. You stay in the driver&#x27;s seat: a fine-grained permission system asks before Nebula touches your shell, your files, or the network. Nebula is built for real projects. It ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

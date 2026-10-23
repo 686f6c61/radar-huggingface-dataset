@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Yuzriha00/act_omx_1022",
+  "slug": "yuzriha00-act_omx_1022",
+  "author": "Yuzriha00",
+  "url": "https://huggingface.co/Yuzriha00/act_omx_1022",
+  "created_at": "2026-10-22T17:06:59.000Z",
+  "updated_at": "2026-10-22T17:08:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:Yuzriha00/omx_1022_success",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714832,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Michelle EVANS BOUCHET - Datadog | LinkedIn",
+      "url": "https://fr.linkedin.com/in/michelleevansbouchet",
+      "snippet": "· Expérience : Datadog · Formation : Ecole Centrale Paris · Lieu : Paris · 421 relations sur LinkedIn. Consultez le profil de Michelle …Read more"
+    },
+    {
+      "title": "1800+ \"Michelle Evans\" profiles | LinkedIn",
+      "url": "https://www.linkedin.com/pub/dir/Michelle/%20Evans",
+      "snippet": "There are 1800+ professionals named &quot;Michelle Evans&quot;, who use LinkedIn to exchange information, ideas, and …"
+    },
+    {
+      "title": "Michelle EVANS BOUCHET’s Post - LinkedIn India",
+      "url": "https://in.linkedin.com/posts/michelleevansbouchet_in-case-youre-interested-you-can-join-activity-7071791697721974784-9D2j",
+      "snippet": "👋 In case you're interested, you can join us at Datadog for our next Tech Talk event in Paris on June 20th where we will talk about …"
+    },
+    {
+      "title": "Datadog - LinkedIn",
+      "url": "https://www.linkedin.com/company/datadog",
+      "snippet": "Monitor infrastructure metrics, distributed traces, logs, and more in one unified platform with Datadog. When a federal system goes …"
+    },
+    {
+      "title": "Michelle Gooel - Anthropic | LinkedIn",
+      "url": "https://www.linkedin.com/in/michelle-gooel-474845a6",
+      "snippet": "Excited to announce that Datadog is hiring! With our CFO on-stage at SKO, it was announced that 2024 is the year we will push-the …"
+    }
+  ]
+}

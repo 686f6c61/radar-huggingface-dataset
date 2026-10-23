@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "HanzoHuang/Qwen3-VL-2B-Instruct-RKLLM",
+  "slug": "hanzohuang-qwen3-vl-2b-instruct-rkllm",
+  "author": "HanzoHuang",
+  "url": "https://huggingface.co/HanzoHuang/Qwen3-VL-2B-Instruct-RKLLM",
+  "created_at": "2026-10-22T22:53:23.000Z",
+  "updated_at": "2026-10-23T01:57:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "rkllm",
+  "languages": [],
+  "tags": [
+    "rkllm",
+    "rockchip",
+    "rk3576",
+    "rk3588",
+    "qwen3-vl",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3-VL-2B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-2B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8417581686,
+  "storage_human": "8.4 GB",
+  "base_model": "Qwen/Qwen3-VL-2B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-VL-2B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-VL-2B-Instruct - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_vl_2b_instruct",
+      "snippet": "Qwen3-VL-2B-Instruct Multimodal 2B vision‑language model capable of understanding text and images. Qwen3‑VL is a vision‑language model from Alibaba Cloud capable of understanding both text and images for multimodal reasoning tasks such as visual question answering and image captioning."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/qwen3_vl_2b_instruct ... - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/qwen3_vl_2b_instruct/README.md",
+      "snippet": "Qwen3-VL is a vision-language model from Alibaba Cloud capable of understanding both text and images for multimodal reasoning tasks such as visual question answering and image captioning. This is based on the implementation of Qwen3-VL-2B-Instruct found here. This repository contains scripts for optimized on-device export suitable to run on Qualcomm® devices. More details on model performance ..."
+    },
+    {
+      "title": "Qwen3-VL-2B-Instruct — AI Model Details | Applied",
+      "url": "https://theapplied.co/models/qwen-qwen3-vl-2b-instruct",
+      "snippet": "Qwen3-VL-2B-Instruct Meet Qwen3-VL — the most powerful vision-language model in the Qwen series to date. This generation delivers comprehensive upgrades across the board: superior text understanding & generation, deeper visual perception & reasoning, extended context length, enhanced spatial and video dynamics comprehension, and stronger agent interaction capabilities. Available in Dense and ..."
+    },
+    {
+      "title": "Qwen3-VL-2B-Instruct · Models - modelscope.ai",
+      "url": "https://www.modelscope.ai/models/Qwen/Qwen3-VL-2B-Instruct",
+      "snippet": "Qwen3-VL-2B-Instruct Meet Qwen3-VL — the most powerful vision-language model in the Qwen series to date. This generation delivers comprehensive upgrades across the board: superior text understanding & generation, deeper visual perception & reasoning, extended context length, enhanced spatial and video dynamics comprehension, and stronger agent interaction capabilities. Available in Dense and ..."
+    }
+  ]
+}

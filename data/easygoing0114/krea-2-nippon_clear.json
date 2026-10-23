@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "easygoing0114/Krea-2-Nippon_clear",
+  "slug": "easygoing0114-krea-2-nippon_clear",
+  "author": "easygoing0114",
+  "url": "https://huggingface.co/easygoing0114/Krea-2-Nippon_clear",
+  "created_at": "2026-10-22T02:58:57.000Z",
+  "updated_at": "2026-10-22T23:35:26.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "text-to-image",
+    "krea2",
+    "anime",
+    "photoreal",
+    "comfyui",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85529042985,
+  "storage_human": "85.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "easygoing0114/Krea-2-Nippon_clear · Hugging Face",
+      "url": "https://huggingface.co/easygoing0114/Krea-2-Nippon_clear",
+      "snippet": "Compared with the Krea-2-Turbo_clear output on the right, the Krea-2-Nippon_clear results show higher detail in Japanese aesthetic elements. In terms of color as well, the left-side Krea-2-Nippon_clear images have higher saturation and, in particular, deeper, richer blue tones ..."
+    },
+    {
+      "title": "Krea 2 Nippon Clear - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/easygoing0114/krea-2-nippon_clear",
+      "snippet": "Registry entry for model Krea 2 Nippon Clear; source metadata pending."
+    },
+    {
+      "title": "easygoing0114 (easygoing0114) - Hugging Face",
+      "url": "https://huggingface.co/easygoing0114/models",
+      "snippet": "User profile of easygoing0114 on Hugging Face"
+    },
+    {
+      "title": "Krea-2-Nippon_clear BF16 for Krea 2 Turbo | CivArchive",
+      "url": "https://civarchive.com/models/3014463?modelVersionId=3421830",
+      "snippet": "Download Krea-2-Nippon_clear BF16, a Checkpoint for Krea 2 Turbo. 1 file: krea2NipponClear_bf16.safetensors (24.5 GB). Published Oct 22, 2026. 1 live mirror. Merged Nippon LoRA into my earlier Krea-2-Turbo_clear model"
+    },
+    {
+      "title": "easygoing0114 - GitHub",
+      "url": "https://github.com/easygoing0114",
+      "snippet": "Automatic mask refinement and histogram-based multi-threshold nodes for ComfyUI by easygoing0114 Python 4"
+    }
+  ]
+}

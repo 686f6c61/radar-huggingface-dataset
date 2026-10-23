@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "open-athena/Snowflake-d512-Datakit-SFT-262K-2026.10.22",
+  "slug": "open-athena-snowflake-d512-datakit-sft-262k-2026-10-22",
+  "author": "open-athena",
+  "url": "https://huggingface.co/open-athena/Snowflake-d512-Datakit-SFT-262K-2026.10.22",
+  "created_at": "2026-10-22T21:15:04.000Z",
+  "updated_at": "2026-10-22T23:09:00.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "grug_moe",
+    "marin",
+    "grug",
+    "snowball",
+    "snowflake",
+    "mixture-of-experts",
+    "sft",
+    "reasoning",
+    "tool-use",
+    "text-generation",
+    "conversational",
+    "license:openmdw-1.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 746607104,
+  "parameters_human": "746.6M",
+  "storage_bytes": 1510472838,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "ChatGPT for Education Codex Dots Release Notes API Platform Overview API Log In Docs Business Overview Solutions Resources …"
+    },
+    {
+      "title": "Page d'accueil Open | Your high-digital place",
+      "url": "https://www.open.global/",
+      "snippet": "Construisons votre carrière Chez Open, nous ouvrons des perspectives aux talents... #Recrutez-nous !"
+    },
+    {
+      "title": "Apache OpenOffice",
+      "url": "https://www.openoffice.org/fr/",
+      "snippet": "Projet francophone Apache OpenOffice Ce site a pour but d'apporter outils et ressources aux francophones pour le téléchargement, …"
+    },
+    {
+      "title": "Open, Aujourd'hui. Et demain. | Open",
+      "url": "https://www.open.global/open/open-aujourdhui-demain",
+      "snippet": "Partout en France. Et plus. Chez Open, nous accompagnons nos clients en offrant un service de proximité. Ainsi, nous sommes …"
+    },
+    {
+      "title": "OpenAI | Recherche et déploiement",
+      "url": "https://openai.com/fr-FR/",
+      "snippet": "Nous pensons que nos recherches finiront par mener à une intelligence artificielle générale, un système capable de résoudre des …"
+    }
+  ]
+}

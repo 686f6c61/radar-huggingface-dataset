@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Enderfga/SolarRenderer",
+  "slug": "enderfga-solarrenderer",
+  "author": "Enderfga",
+  "url": "https://huggingface.co/Enderfga/SolarRenderer",
+  "created_at": "2026-10-13T12:59:33.000Z",
+  "updated_at": "2026-10-22T08:46:28.000Z",
+  "license": "minimax-h3-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "video-to-video",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "solarrenderer",
+    "video-generation",
+    "video-to-video",
+    "structure-conditioned",
+    "lora",
+    "arxiv:2610.28630",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:adapter:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 14,
+  "downloads_30d": 0,
+  "trending_score": 13,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16613267876,
+  "storage_human": "16.6 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "outlook邮箱私密性如何？ - 知乎",
+      "url": "https://www.zhihu.com/question/3738167694",
+      "snippet": "入职第一天，公司给配发了 Outlook邮箱，方便跟美国总部联系，然后负责人问我用什么手机？我说苹果，他说:Great ！然后让我下载 …Read more"
+    },
+    {
+      "title": "怎样优雅地使用 Outlook？ - 知乎",
+      "url": "https://www.zhihu.com/question/21028460/answers/updated",
+      "snippet": "由于2018年的贸易战，前单位肯定早换国内邮箱了，我就不知道与outlook的配合怎样了。 我现在使用outlook网页版个人邮箱，直接使 …"
+    },
+    {
+      "title": "Outlook如何撤回已发送的邮件 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/86f4a73e5a983376d65269d8.html",
+      "snippet": "Jan 8, 2021 · 如果你的Outlook的快速访问工具栏中没有“撤回该邮件”按钮，则可以： 1. 点击工具栏最右侧的“自定义快速访问工具栏” …"
+    },
+    {
+      "title": "Outlook如何设置自动回复 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/37bce2be1edfd05102f3a2fa.html",
+      "snippet": "Apr 29, 2021 · Outlook如何设置自动回复,很多人使用Outlook办公，当你休假出差或者不能接收邮件及时回复时可以使用自动回复来提 …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://www.answers.microsoft.com/ja-jp/windows/forum/all/ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¼ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â«ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â­ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¥ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â®ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡/9804990c-60c8-440c-b1ab-2a0a01c8a749",
+      "snippet": ""
+    }
+  ]
+}

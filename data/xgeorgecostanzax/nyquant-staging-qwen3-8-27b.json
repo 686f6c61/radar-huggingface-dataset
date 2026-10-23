@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "XGeorgeCostanzaX/nyquant-staging-qwen3.8-27b",
+  "slug": "xgeorgecostanzax-nyquant-staging-qwen3-8-27b",
+  "author": "XGeorgeCostanzaX",
+  "url": "https://huggingface.co/XGeorgeCostanzaX/nyquant-staging-qwen3.8-27b",
+  "created_at": "2026-10-22T22:49:56.000Z",
+  "updated_at": "2026-10-22T22:49:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "quantized",
+    "staging",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B: How to Actually Install and Run It | TheQuery",
+      "url": "https://www.thequery.in/guides/qwen-3-8-27b-install-run",
+      "snippet": "Qwen3.8-27B is worth the setup time. It&#x27;s a 27.3-billion-parameter dense model, Apache 2.0 licensed, natively vision-capable, and small enough to run on a single consumer GPU while landing close to what a much larger, once-frontier model needed six months ago."
+    },
+    {
+      "title": "Qwen3.8-27B Locally: Setup, Quants and Errors | BestLLMfor",
+      "url": "https://bestllmfor.com/guides/qwen38-27b-local-deployment/",
+      "snippet": "Deploy Qwen3.8-27B locally: verified specs, GGUF quantization sizes, vLLM and llama.cpp setup, and the errors tied to its 262K context window."
+    },
+    {
+      "title": "Qwen3.8-27B | NVIDIA NGC",
+      "url": "https://catalog.ngc.nvidia.com/orgs/nim/qwen/models/qwen3.8-27b/",
+      "snippet": "Qwen3.8-27B is a 27-billion-parameter dense vision-language model for text, image, and video understanding, coding, multimodal reasoning, long-context processing, tool calling, and agentic tasks."
+    },
+    {
+      "title": "Qwen 3.8 27B free API — 3 providers, limits, and benchmarks",
+      "url": "https://llmperks.com/qwen/qwen3-8-27b",
+      "snippet": "Qwen 3.8 27B is a language model with 27B parameters from Alibaba Cloud. It is currently free at 3 providers with up to 262K tokens of context. The model supports step-by-step reasoning, is suited to coding, supports tool calling. Its weights are open, so it can also run locally."
+    },
+    {
+      "title": "Qwen3.8 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3.8",
+      "snippet": "Qwen3.8-27B is a dense 27B vision-language model for coding, professional work, research, and long-horizon agentic tasks, with configurable reasoning and a native 262K-token context window."
+    }
+  ]
+}

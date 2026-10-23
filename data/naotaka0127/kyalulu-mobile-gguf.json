@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Naotaka0127/Kyalulu-Mobile-GGUF",
+  "slug": "naotaka0127-kyalulu-mobile-gguf",
+  "author": "Naotaka0127",
+  "url": "https://huggingface.co/Naotaka0127/Kyalulu-Mobile-GGUF",
+  "created_at": "2026-10-22T22:59:09.000Z",
+  "updated_at": "2026-10-22T23:36:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "base_model:Naotaka0127/Kyalulu-E2B-JP-Rolepaly-beta-GGUF",
+    "base_model:quantized:Naotaka0127/Kyalulu-E2B-JP-Rolepaly-beta-GGUF",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4628569635,
+  "parameters_human": "4.63B",
+  "storage_bytes": 5747157792,
+  "storage_human": "5.7 GB",
+  "base_model": "google/gemma-4-E2B-it-qat-q4_0-gguf, mradermacher/gemma-4-E2B-it-qat-q4_0-unquantized-heretic, Naotaka0127/Kyalulu-E2B-JP-Rolepaly-beta-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Naotaka0127/Kyalulu-Mobile-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Naotaka0127/Kyalulu-Mobile-GGUF",
+      "snippet": "Naotaka0127 / Kyalulu-Mobile-GGUF Like 0 Text Generation GGUF conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Naotaka0127 (Naotaka / Radon) - Hugging Face",
+      "url": "https://huggingface.co/Naotaka0127",
+      "snippet": "Naotaka0127/Kyalulu-Synthetic-SFW-AIO-beta Viewer •Updated about 3 hours ago•26.8k"
+    },
+    {
+      "title": "GitHub - GGUFloader/Mobile-AI-Assistant: lightweight, mobile-optimized ...",
+      "url": "https://github.com/GGUFloader/Mobile-AI-Assistant",
+      "snippet": "LocalChatbot brings the power of generative AI directly to your pocket with unprecedented flexibility. Unlike other mobile AI apps that lock you into a single model, LocalChatbot empowers users to: 📱 Choose models that match your device — Run lightweight 0.5B models on budget phones or powerful 7B+ models on flagships 🔄 Switch models for different tasks — Use a coding-optimized model ..."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "GGUF Model Viewer - catalase.com",
+      "url": "https://catalase.com/tools/gguf-explorer",
+      "snippet": "Drag to pan. Scroll to zoom. maxTensors: limits metadata entries loaded (change applies to next file)"
+    }
+  ]
+}

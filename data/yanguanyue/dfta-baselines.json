@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "yanguanyue/DFTA-baselines",
+  "slug": "yanguanyue-dfta-baselines",
+  "author": "yanguanyue",
+  "url": "https://huggingface.co/yanguanyue/DFTA-baselines",
+  "created_at": "2026-10-22T19:05:00.000Z",
+  "updated_at": "2026-10-22T23:36:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "dfta",
+    "research-checkpoints",
+    "medical-image-generation",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12714278387,
+  "storage_human": "12.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yanguanyue/DFTA-baselines · Hugging Face",
+      "url": "https://huggingface.co/yanguanyue/DFTA-baselines",
+      "snippet": "DFTA baseline checkpoints Full checkpoint and supporting model-configuration backup for comparison methods used in the DFTA experiments. Evaluation scores, metric tables, logs, training previews and raw datasets are excluded. This repository is for preserving experiment artifacts; it does not bundle the complete execution environment."
+    },
+    {
+      "title": "yanguanyue (lai kenan) - Hugging Face",
+      "url": "https://huggingface.co/yanguanyue",
+      "snippet": "yanguanyue/DFTA-generated-results ... yanguanyue/palm-liveness-rgb-nir ... yanguanyue/unity-learning-projects"
+    },
+    {
+      "title": "GitHub - yanguanyue/DFTA-",
+      "url": "https://github.com/yanguanyue/DFTA-",
+      "snippet": "Compared to baseline methods, DFTA maintains better morphological consistency, generates more coherent pathological textures, and achieves a superior balance between local details and global anatomy. Figure: Qualitative comparison across methods and lesion categories. Methods marked with (M) use lesion masks as input."
+    },
+    {
+      "title": "DFTA-/master at main · yanguanyue/DFTA- · GitHub",
+      "url": "https://github.com/yanguanyue/DFTA-/tree/main/master",
+      "snippet": "Contribute to yanguanyue/DFTA- development by creating an account on GitHub."
+    },
+    {
+      "title": "DFTA/main at master · yanguanyue/DFTA · GitHub",
+      "url": "https://github.com/yanguanyue/DFTA/tree/master/main",
+      "snippet": "This repository presents **DFTA (Dual Flow Transformation Architecture)**, a novel skin lesion image generation method. - DFTA/main at master · yanguanyue/DFTA"
+    }
+  ]
+}

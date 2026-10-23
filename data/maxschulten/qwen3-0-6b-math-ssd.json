@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "MaxSchulten/Qwen3-0.6B-Math-SSD",
+  "slug": "maxschulten-qwen3-0-6b-math-ssd",
+  "author": "MaxSchulten",
+  "url": "https://huggingface.co/MaxSchulten/Qwen3-0.6B-Math-SSD",
+  "created_at": "2026-10-22T22:49:45.000Z",
+  "updated_at": "2026-10-23T03:22:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "conversational",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 4779904012,
+  "storage_human": "4.8 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "4chan",
+      "url": "https://4chan.org/",
+      "snippet": "4chan is a simple image-based bulletin board where anyone can post comments and share images. There are boards dedicated to a …"
+    },
+    {
+      "title": "/3/ - 3DCG - 4chan",
+      "url": "https://boards.4chan.org/3/",
+      "snippet": "Apr 25, 2025 · Welcome to /3/ - 3DCG, 4chan's board dedicated to 3D imagery and modeling. If you're reading this, you probably got …"
+    },
+    {
+      "title": "/tg/ - Traditional Games - Page 4 - 4chan",
+      "url": "https://boards.4chan.org/tg/4",
+      "snippet": "Oct 4, 2016 · \"/tg/ - Traditional Games\" is 4chan's imageboard for discussing traditional gaming, such as board games and tabletop …"
+    },
+    {
+      "title": "FAQ - 4chan",
+      "url": "https://4chan.org/faq",
+      "snippet": "Welcome to 4chan's F requently A sked Q uestions page. After reading the FAQ, be sure to familiarize yourself with the Rules!"
+    },
+    {
+      "title": "4chan Blog",
+      "url": "https://blog.4chan.org/",
+      "snippet": "4chan.org's Official Blog - 4chan Blog Still standing On the afternoon of April 14th, a hacker using a UK IP address exploited an out …"
+    }
+  ]
+}

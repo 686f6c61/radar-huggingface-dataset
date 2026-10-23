@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Abiray/Minimax-h3-Singularity-V2-Pruned",
+  "slug": "abiray-minimax-h3-singularity-v2-pruned",
+  "author": "Abiray",
+  "url": "https://huggingface.co/Abiray/Minimax-h3-Singularity-V2-Pruned",
+  "created_at": "2026-10-22T04:49:54.000Z",
+  "updated_at": "2026-10-22T06:09:51.000Z",
+  "license": "minimax-h3-community",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "text-to-video",
+    "image-to-video",
+    "safetensors",
+    "comfyui",
+    "int8",
+    "w4a8",
+    "quantized",
+    "base_model:WarmBloodAban/Minimax-h3_Singularity",
+    "base_model:quantized:WarmBloodAban/Minimax-h3_Singularity",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 16,
+  "downloads_30d": 46,
+  "trending_score": 16,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 33525287712,
+  "storage_human": "33.5 GB",
+  "base_model": "WarmBloodAban/Minimax-h3_Singularity",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "r/StableDiffusion on Reddit: Minimax H3 Singularity V2 - was updated ...",
+      "url": "https://www.reddit.com/r/StableDiffusion/comments/1xbx2lk/minimax_h3_singularity_v2_was_updated_to_the_new/",
+      "snippet": "Ive been really happy with 10eros after trying out many other hybrid models but yet to try singularity. However ill need to wait for a pruned release on my 5080. more replies · more replies · More replies · More replies · Dry-Ad929 • · 12h ago · There's already pruned versions. https://huggingface.co/Abiray/Minimax-h3-Singularity-V2-Pruned ·"
+    },
+    {
+      "title": "Abiray (Jay) - Hugging Face",
+      "url": "https://huggingface.co/Abiray",
+      "snippet": "models 124. Sort: Recently updated ; Abiray/Minimax-h3-Singularity-V2-Pruned. Image-to-Video · in about 6 hours ; Abiray/Minimax-h3-Singularity-V2-Pruned-GGUF."
+    },
+    {
+      "title": "Abiray/Minimax-h3-Singularity-V2-Pruned · Hugging Face",
+      "url": "https://huggingface.co/Abiray/Minimax-h3-Singularity-V2-Pruned",
+      "snippet": "Pruned and optimized .safetensors versions of WarmBloodAban/Minimax-H3 Singularity, formatted for native ComfyUI custom nodes (such as comfyui-mixed-quantizer and native INT8 loaders)."
+    },
+    {
+      "title": "Abiray/MiniMax-H3-Pruned-GGUF - Hugging Face",
+      "url": "https://huggingface.co/Abiray/MiniMax-H3-Pruned-GGUF",
+      "snippet": "This repository ( Abiray/MiniMax-H3-Pruned-GGUF ) provides pruned and quantized GGUF weights for the MiniMax H3 omni-modal generative model. MiniMax H3 is ..."
+    },
+    {
+      "title": "Abiray/Minimax-h3-Singularity-V2-Pruned-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Abiray/Minimax-h3-Singularity-V2-Pruned-GGUF",
+      "snippet": "Quantized GGUF versions of WarmBloodAban/Minimax-H3 Singularity, optimized for ComfyUI-GGUF."
+    }
+  ]
+}

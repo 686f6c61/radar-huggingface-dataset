@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Idun/notebooks",
+  "slug": "idun-notebooks",
+  "author": "Idun",
+  "url": "https://huggingface.co/Idun/notebooks",
+  "created_at": "2026-10-22T17:03:59.000Z",
+  "updated_at": "2026-10-22T17:03:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SIGNAL IDUNA case study - Google Cloud",
+      "url": "https://cloud.google.com/customers/signaliduna?hl=de",
+      "snippet": "vor 8 Tagen ... “We're using Document AI to extract and structure the data, Gemini platform to orchestrate all the data, and we're leveraging Gemini models to ..."
+    },
+    {
+      "title": "Run Gemini 3.5 from inside Claude Code - Idun Group",
+      "url": "https://idun-group.com/en/blog/antigravity-plugin-claude-code",
+      "snippet": "31.05.2026 ... Model selection lives inside agy via /model . None of these ... Open notebook with Idun Group field notes and a hand-drawn AI agent diagram."
+    },
+    {
+      "title": "Spatial Audio and AI: How a Danish Startup Found Its Next Chapter ...",
+      "url": "https://siliconvalley.um.dk/insights/spatial-audio-and-ai-how-a-danish-startup-found-its-next-chapter-in-silicon-valley/",
+      "snippet": "17.06.2025 ... ... PC, Mac, TVs, and of course, smart glasses. Participating in the AI market immersion in Silicon Valley proved to IDUN audio's founder, Pauli ..."
+    },
+    {
+      "title": "Geoffrey Harrazi - Co-founder @ Idun · AI agent governance for ...",
+      "url": "https://fr.linkedin.com/in/geoffrey-harrazi9",
+      "snippet": "Co-founder @ Idun · AI agent governance for enterprises — see & standardize every agent. Ex-LVMH. · Voir les relations en commun avec Geoffrey · À propos."
+    },
+    {
+      "title": "Intelligent Document Processing | AI Document Automation",
+      "url": "https://hypersense-software.com/solutions/intelligent-document-processing",
+      "snippet": "Per-task model selection: simple classification uses smaller models, complex reasoning uses frontier models. ... Intelligent capture of lab notebooks and ..."
+    }
+  ]
+}

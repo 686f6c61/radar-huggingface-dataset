@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "jumafernandez/trace-deep-ar",
+  "slug": "jumafernandez-trace-deep-ar",
+  "author": "jumafernandez",
+  "url": "https://huggingface.co/jumafernandez/trace-deep-ar",
+  "created_at": "2026-10-22T16:24:19.000Z",
+  "updated_at": "2026-10-22T16:24:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "trace",
+    "feature-extraction",
+    "dialogue",
+    "task-oriented-dialogue",
+    "contextual-representations",
+    "turn-embeddings",
+    "custom_code",
+    "en",
+    "base_model:sergioburdisso/dialog2flow-joint-bert-base",
+    "base_model:finetune:sergioburdisso/dialog2flow-joint-bert-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 85108224,
+  "parameters_human": "85.1M",
+  "storage_bytes": 340455808,
+  "storage_human": "340 MB",
+  "base_model": "sergioburdisso/dialog2flow-joint-bert-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

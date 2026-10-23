@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "webmp3/Sakura-DeepSeek-V4.1-Flash-1017-Unsloth-UD-Q3_K_XL-Engram-Q3_K-GGUF",
+  "slug": "webmp3-sakura-deepseek-v4-1-flash-1017-unsloth-ud-q3_k_xl-engram-q3_k-gguf",
+  "author": "webmp3",
+  "url": "https://huggingface.co/webmp3/Sakura-DeepSeek-V4.1-Flash-1017-Unsloth-UD-Q3_K_XL-Engram-Q3_K-GGUF",
+  "created_at": "2026-10-22T16:01:43.000Z",
+  "updated_at": "2026-10-22T16:50:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "deepseek",
+    "sakura",
+    "engram",
+    "q3_k",
+    "mixture-of-experts",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:unsloth/DeepSeek-V4.1-Flash-1017-GGUF",
+    "base_model:quantized:unsloth/DeepSeek-V4.1-Flash-1017-GGUF",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 748494643824,
+  "parameters_human": "748.49B",
+  "storage_bytes": 366793120315,
+  "storage_human": "366.8 GB",
+  "base_model": "unsloth/DeepSeek-V4.1-Flash-1017-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "J'ai tout compris - Le site qui répond à toutes vos questions",
+      "url": "https://www.jaitoutcompris.com/",
+      "snippet": "Jaitoutcompris.com répond à toute la famille, avec de nombreuses questions/réponses, un dictionnaire, des fiches animaux, le …"
+    },
+    {
+      "title": "Le hérisson : description, lieu de vie, alimentation, reproduction des ...",
+      "url": "https://www.jaitoutcompris.com/animaux/le-herisson-europeen-62.php",
+      "snippet": "Le hérisson est traditionnellement classé dans l'ordre des insectivores. Pourtant, c'est un omnivore qui se nourrit d'insectes, de vers, …"
+    },
+    {
+      "title": "La couleuvre : description, alimentation, reproduction des couleuvres",
+      "url": "https://www.jaitoutcompris.com/animaux/la-couleuvre-85.php",
+      "snippet": "Description physique La couleuvre est un reptile appartenant à la famille des Colubridae et des Lamprophiidae. Selon les espèces, …"
+    },
+    {
+      "title": "La marmotte : description, lieu de vie, alimentation, reproduction des ...",
+      "url": "https://www.jaitoutcompris.com/animaux/la-marmotte-215.php",
+      "snippet": "Description physique La marmotte est un rongeur trapu avec un poil noir, brun ou marron. Elle a de petites oreilles rondes, une …"
+    },
+    {
+      "title": "L'hippopotame pygmée : description, lieu de vie, alimentation",
+      "url": "https://www.jaitoutcompris.com/animaux/hippopotame-pygmee-325.php",
+      "snippet": "Description physique L'hippopotame pygmée (Hexaprotodon liberiensis ou Choeropsis liberiensis) est un mammifère semi-aquatique …"
+    }
+  ]
+}

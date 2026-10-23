@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "VisualInference/MOSS-Image-SFT-Turbo-MLX",
+  "slug": "visualinference-moss-image-sft-turbo-mlx",
+  "author": "VisualInference",
+  "url": "https://huggingface.co/VisualInference/MOSS-Image-SFT-Turbo-MLX",
+  "created_at": "2026-10-22T17:39:59.000Z",
+  "updated_at": "2026-10-22T23:37:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "apple-silicon",
+    "moss-image",
+    "text-to-image",
+    "lora",
+    "distillation",
+    "few-step",
+    "en",
+    "zh",
+    "base_model:OpenMOSS-Team/MOSS-Image-SFT",
+    "base_model:adapter:OpenMOSS-Team/MOSS-Image-SFT",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 597642442,
+  "storage_human": "598 MB",
+  "base_model": "OpenMOSS-Team/MOSS-Image-SFT",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VisualInference/MOSS-Image-SFT-Turbo-MLX · Hugging Face",
+      "url": "https://huggingface.co/VisualInference/MOSS-Image-SFT-Turbo-MLX",
+      "snippet": "VisualInference / MOSS-Image-SFT-Turbo-MLX Like 0 Text-to-Image MLX English Chinese apple-silicon moss-image lora distillation few-step License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "VisualInference/MOSS-Image-SFT-MLX-8bit · Hugging Face",
+      "url": "https://huggingface.co/VisualInference/MOSS-Image-SFT-MLX-8bit",
+      "snippet": "VisualInference / MOSS-Image-SFT-MLX-8bit Like 0 Text-to-Image MLX Safetensors English Chinese moss_image apple-silicon moss-image text-rendering layout quantized 8-bit precision License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - OpenMOSS/MOSS-Image: Official repository for MOSS-Image, a 5B ...",
+      "url": "https://github.com/OpenMOSS/MOSS-Image",
+      "snippet": "Official repository for MOSS-Image, a 5B-parameter base DiT model with high-quality text rendering, layout generation, and efficient fine-tuning. - OpenMOSS/MOSS-Image"
+    },
+    {
+      "title": "Moss Image Turbo - v1.0 | MOSS Image Checkpoint | Civitai",
+      "url": "https://civitai.com/models/3010147/moss-image-turbo",
+      "snippet": "A stable turbo version of the Moss Image base model. 8 steps CFG 1"
+    },
+    {
+      "title": "MOSS Image - SFT | MOSS Image Checkpoint | Civitai",
+      "url": "https://civitai.com/models/3005406/moss-image",
+      "snippet": "MOSS Image is a 5B parameter text-to-image DiT from the OpenMOSS team, built for accurate in-image text, layout control and long prompts. It pairs a Qwen3.5 9B text encoder with the FLUX.2 VAE, accepts prompts of up to 4K tokens in natural language, booru-style tags or a JSON layout, and renders from 512px up to 2K at any aspect ratio."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Nanico/lra-brna",
+  "slug": "nanico-lra-brna",
+  "author": "Nanico",
+  "url": "https://huggingface.co/Nanico/lra-brna",
+  "created_at": "2026-10-22T16:27:04.000Z",
+  "updated_at": "2026-10-22T16:27:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-10-23T03:25:49.762Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nanico/lra-brna · Hugging Face",
+      "url": "https://huggingface.co/Nanico/lra-brna",
+      "snippet": "import torch from diffusers import Krea2Pipeline pipe = Krea2Pipeline.from_pretrained(\"krea/Krea-2-Turbo\", torch_dtype=torch.bfloat16).to(\"cuda\") pipe.load_lora_weights(\"Nanico/lra-brna\") image = pipe(\"A futuristic cyberpunk city street at midnight, featuring a glowing holographic brn sign reflecting in rain-slicked asphalt.\", num_inference_steps=8, guidance_scale=0.0).images[0] image.save(\"output.png\") Downloads last month · - Base model ·"
+    },
+    {
+      "title": "The Layered Reward Architecture (LRA): A Complete Guide to ...",
+      "url": "https://pavankunchalapk.medium.com/the-layered-reward-architecture-lra-a-complete-guide-to-multi-layer-multi-model-reward-631405e1c1af",
+      "snippet": "A sixth, meta-layer, Calibration, can be applied to assess if the model’s expressed confidence aligns with its correctness. ... The power of LRA comes from its operational flow, which prioritizes failing fast to save compute and focus evaluation on promising candidates."
+    },
+    {
+      "title": "Nanico/bbm · Hugging Face",
+      "url": "https://huggingface.co/Nanico/bbm",
+      "snippet": "import torch from diffusers import Krea2Pipeline pipe = Krea2Pipeline.from_pretrained(\"krea/Krea-2-Turbo\", torch_dtype=torch.bfloat16).to(\"cuda\") pipe.load_lora_weights(\"Nanico/bbm\") image = pipe(\"A futuristic cyberpunk cityscape at midnight with neon rain, featuring a sleek chrome robot holding a glowing bbm device.\", num_inference_steps=8, guidance_scale=0.0).images[0] image.save(\"output.png\")"
+    },
+    {
+      "title": "HOW DID I CREATE NANOVA ARTIFICIAL INTELLIGENCE? - YouTube",
+      "url": "https://www.youtube.com/watch?v=bClRbM2Dbts&vl=el",
+      "snippet": "Hello everyone, I'm Enes, and I'm back with a new AI video. I was going to share with you how the AI ​​of the NANOVA girl you saw on TikTok was made, and I k..."
+    },
+    {
+      "title": "LRA Research | AI that understands people as humans",
+      "url": "https://www.lraresearch.com/",
+      "snippet": "LRA is a specialized AI reasoning system built on nonlinear models of human reasoning and interaction—helping AI make better judgments about people, relationships, and what should happen next."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "gbuzhf/SNEX-V1-workplace",
+  "slug": "gbuzhf-snex-v1-workplace",
+  "author": "gbuzhf",
+  "url": "https://huggingface.co/gbuzhf/SNEX-V1-workplace",
+  "created_at": "2026-10-22T23:05:38.000Z",
+  "updated_at": "2026-10-22T23:05:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gbuzhf (gbhf) - Hugging Face",
+      "url": "https://huggingface.co/gbuzhf",
+      "snippet": "gbuzhf/MiniCPM-V-4.7-35B-A3B-Uncensored-Sangreal-ICE: All ready (if you&#x27;ve already downloaded, do not re-download, squashed mistakenly)"
+    },
+    {
+      "title": "Ornith-1.5-35B-A3B-Abliterated-MTP-UD-APEX-GGUF - Hugging Face",
+      "url": "https://huggingface.co/gbuzhf/Ornith-1.5-35B-A3B-Abliterated-MTP-UD-APEX-GGUF",
+      "snippet": "Model tree for gbuzhf/Ornith-1.5-35B-A3B-Abliterated-MTP-UD-APEX-GGUF Base model ornith-ai/Ornith-1.5-35B-A3B Quantized"
+    },
+    {
+      "title": "gbuzhf AI models - Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/company/gbuzhf",
+      "snippet": "Browse AI models attributed to gbuzhf, sourced from verified model catalogs."
+    },
+    {
+      "title": "gbuzhf - modelindex.dev",
+      "url": "https://modelindex.dev/orgs/gbuzhf",
+      "snippet": "Models published by gbuzhf, indexed with per-file cryptographic hashes on modelindex.dev. Browse each model and verify your downloads."
+    },
+    {
+      "title": "Next AI Model — AI Model Release Tracker",
+      "url": "https://www.nextaimodel.com/",
+      "snippet": "Free tracker of every AI model release from OpenAI, Google, Anthropic, xAI, Meta, DeepSeek and more: what each model changed, and which lines are due next."
+    }
+  ]
+}

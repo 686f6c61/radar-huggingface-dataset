@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "tegsvenson/Qwen3.8-Flash-Next-Uncensored-GGUF-Q5_K_S-Splash-Repack",
+  "slug": "tegsvenson-qwen3-8-flash-next-uncensored-gguf-q5_k_s-splash-repack",
+  "author": "tegsvenson",
+  "url": "https://huggingface.co/tegsvenson/Qwen3.8-Flash-Next-Uncensored-GGUF-Q5_K_S-Splash-Repack",
+  "created_at": "2026-10-22T16:07:37.000Z",
+  "updated_at": "2026-10-22T16:10:40.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "splash",
+    "apple-silicon",
+    "qwen3.8",
+    "flash-next",
+    "abliterated",
+    "uncensored",
+    "image-text-to-text",
+    "base_model:orcarouter/Qwen3.8-Flash-Next-Uncensored-GGUF",
+    "base_model:quantized:orcarouter/Qwen3.8-Flash-Next-Uncensored-GGUF",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 176943899520,
+  "parameters_human": "176.94B",
+  "storage_bytes": 128649334656,
+  "storage_human": "128.6 GB",
+  "base_model": "orcarouter/Qwen3.8-Flash-Next-Uncensored-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sac Couchage Adulte | Decathlon",
+      "url": "https://www.decathlon.fr/tous-les-sports/camping-bivouac/sacs-de-couchage-camping-adulte?msockid=37b578ac3ff5675f04cf6f563eab6677",
+      "snippet": "Pour une ou deux personnes, de forme sarcophage ou rectangulaire, le duvet Decathlon est étudié afin de faciliter au maximum son …"
+    },
+    {
+      "title": "Amazon.fr : Duvet",
+      "url": "https://www.amazon.fr/duvet/s?k=duvet",
+      "snippet": "Active Era Sac de Couchage Sarcophage Professionnel, 300GSM, 3-4 Saisons, Température Extrême, Duvet Adulte Compact pour …"
+    },
+    {
+      "title": "Duvet - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Duvet",
+      "snippet": "In American English, a duvet may be called a comforter; however, comforter is generally used to refer to a slightly different type of …"
+    },
+    {
+      "title": "Duvet pas cher | Conforama",
+      "url": "https://www.conforama.fr/s/duvet",
+      "snippet": "Découvrez la sélection duvet pas cher de Conforama et sa large gamme de modèles Tous les matelas. Qualité au meilleur prix. …"
+    },
+    {
+      "title": "Duvet pas cher - DECATHLON",
+      "url": "https://www.decathlon.fr/vc/duvet-pas-cher?msockid=37b578ac3ff5675f04cf6f563eab6677",
+      "snippet": "Comment choisir une doudoune duvet adaptée à mes besoins ? Commencez par définir l’usage et le climat prévus, puis évaluez la …"
+    }
+  ]
+}

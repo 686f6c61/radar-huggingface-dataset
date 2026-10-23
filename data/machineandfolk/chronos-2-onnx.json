@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "machineandfolk/chronos-2-onnx",
+  "slug": "machineandfolk-chronos-2-onnx",
+  "author": "machineandfolk",
+  "url": "https://huggingface.co/machineandfolk/chronos-2-onnx",
+  "created_at": "2026-10-22T22:40:50.000Z",
+  "updated_at": "2026-10-22T22:41:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "time-series-forecasting",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "time-series",
+    "forecasting",
+    "chronos",
+    "chronos-2",
+    "onnxruntime",
+    "covariates",
+    "time-series-forecasting",
+    "base_model:amazon/chronos-2",
+    "base_model:quantized:amazon/chronos-2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 242597101,
+  "storage_human": "243 MB",
+  "base_model": "amazon/chronos-2",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kashif/chronos-2-onnx · Hugging Face",
+      "url": "https://huggingface.co/kashif/chronos-2-onnx",
+      "snippet": "Chronos-2 ONNX This is an ONNX export of the Chronos-2 time series forecasting model, optimized for use with transformers.js. Model Details Model Type: Time Series Forecasting Architecture: T5-based encoder-decoder with patching Context Length: 8192 timesteps Output Patch Size: 16 timesteps Quantile Levels: 21 levels (0.01, 0.05, ..., 0.95, 0.99)"
+    },
+    {
+      "title": "TSFM-ai/chronos-2-onnx · Hugging Face",
+      "url": "https://huggingface.co/TSFM-ai/chronos-2-onnx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - amazon-science/chronos-forecasting: Chronos: Pretrained Models ...",
+      "url": "https://github.com/amazon-science/chronos-forecasting",
+      "snippet": "This package provides an interface to the Chronos family of pretrained time series forecasting models. The following model types are supported. Chronos-2: Our latest model with significantly enhanced capabilities. It offers zero-shot support for univariate, multivariate, and covariate-informed forecasting tasks. Chronos-2 delivers state-of-the-art zero-shot performance across multiple ..."
+    },
+    {
+      "title": "Chronos — Foundation Models for Time Series",
+      "url": "https://chronos-ts.ai/",
+      "snippet": "Chronos is a family of pretrained models for time-series forecasting. Across the original T5 Chronos, the faster Bolt variants, and the Chronos-2 generation, the family has now crossed a billion cumulative downloads on Hugging Face."
+    },
+    {
+      "title": "ONNX Model Zoo",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    }
+  ]
+}

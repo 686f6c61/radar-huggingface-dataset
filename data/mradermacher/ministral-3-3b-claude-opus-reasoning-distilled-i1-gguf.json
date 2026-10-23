@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Ministral-3-3B-Claude-Opus-Reasoning-Distilled-i1-GGUF",
+  "slug": "mradermacher-ministral-3-3b-claude-opus-reasoning-distilled-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Ministral-3-3B-Claude-Opus-Reasoning-Distilled-i1-GGUF",
+  "created_at": "2026-10-22T20:46:35.000Z",
+  "updated_at": "2026-10-22T23:47:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mistral3",
+    "mistral-common",
+    "unsloth",
+    "reasoning",
+    "chain-of-thought",
+    "reasoning-distillation",
+    "lora",
+    "claude-opus",
+    "text-generation",
+    "safetensors",
+    "en",
+    "dataset:TeichAI/Claude-Opus-4.6-Reasoning-887x",
+    "dataset:TeichAI/claude-4.5-opus-high-reasoning-250x",
+    "dataset:TeichAI/claude-sonnet-4.5-high-reasoning-250x",
+    "dataset:Roman1111111/claude-opus-4.6-10000x",
+    "base_model:xtools-at/Ministral-3-3B-Claude-Opus-Reasoning-Distilled",
+    "base_model:adapter:xtools-at/Ministral-3-3B-Claude-Opus-Reasoning-Distilled",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3429006336,
+  "parameters_human": "3.43B",
+  "storage_bytes": 41567480416,
+  "storage_human": "41.6 GB",
+  "base_model": "xtools-at/Ministral-3-3B-Claude-Opus-Reasoning-Distilled",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Ministral-3-3B-Claude-Opus-Reasoning-Distilled-GGUF ...",
+      "url": "https://huggingface.co/mradermacher/Ministral-3-3B-Claude-Opus-Reasoning-Distilled-GGUF",
+      "snippet": "mradermacher / Ministral-3-3B-Claude-Opus-Reasoning-Distilled-GGUF Like 0 Text Generation Transformers GGUF Safetensors 4 datasets English mistral3 mistral-common unsloth reasoning chain-of-thought reasoning-distillation lora claude-opus conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new ..."
+    },
+    {
+      "title": "Ministral 3 3B - docs.mistral.ai",
+      "url": "https://docs.mistral.ai/models/ministral-3-3b-25-12",
+      "snippet": "Ministral 3 3B is the smallest and most efficient model in the Ministral 3 family, offering robust language and vision capabilities in a compact package. Designed for edge deployment, it delivers high performance across diverse hardware, including local setups."
+    },
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "Ministral 3 3B - VRAM, Specs & Benchmarks - apxml.com",
+      "url": "https://apxml.com/models/ministral-3-3b",
+      "snippet": "Ministral 3 3B is a compact 3.8B multimodal model by Mistral AI engineered for fast, low-power vision and language processing on local devices. It features native function calling and tied embeddings across an extensive 256K token context window."
+    },
+    {
+      "title": "Introducing Mistral 3 | Mistral AI",
+      "url": "https://mistral.ai/news/mistral-3/",
+      "snippet": "Today, we announce Mistral 3, the next generation of Mistral models. Mistral 3 includes three state-of-the-art small, dense models (14B, 8B, and 3B) and Mistral Large 3 - our most capable model to date - a sparse mixture-of-experts trained with 41B active and 675B total parameters. All models ..."
+    }
+  ]
+}

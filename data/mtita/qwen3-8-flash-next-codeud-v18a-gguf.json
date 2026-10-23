@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "mtita/Qwen3.8-Flash-Next-CodeUD-v18a-GGUF",
+  "slug": "mtita-qwen3-8-flash-next-codeud-v18a-gguf",
+  "author": "mtita",
+  "url": "https://huggingface.co/mtita/Qwen3.8-Flash-Next-CodeUD-v18a-GGUF",
+  "created_at": "2026-10-21T22:33:11.000Z",
+  "updated_at": "2026-10-22T23:27:13.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen",
+    "moe",
+    "gated-deltanet",
+    "ssd",
+    "llama.cpp",
+    "rocm",
+    "rdna4",
+    "amd",
+    "quantization",
+    "text-generation",
+    "arxiv:2608.30320",
+    "arxiv:2210.17323",
+    "arxiv:2306.00978",
+    "arxiv:2211.10438",
+    "arxiv:2406.08155",
+    "arxiv:2605.23078",
+    "arxiv:2402.04396",
+    "arxiv:2401.06118",
+    "arxiv:2406.11235",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 214,
+  "trending_score": 0,
+  "parameters": 176943899520,
+  "parameters_human": "176.94B",
+  "storage_bytes": 105814909419,
+  "storage_human": "105.8 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mtita/Qwen3.8-Flash-Next-CodeUD-v18a-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mtita/Qwen3.8-Flash-Next-CodeUD-v18a-GGUF",
+      "snippet": "The stack Qwen team — the base model and its license. llama.cpp / ggml — the GGUF format, quantization types and kernels this whole project is built on. stew675/llama-cpp-rdna-boosts — the RDNA4 fork this serves on (BF16 HC-mixer fusion, GDN chunking, QSA fixes). Unsloth and Myric — community quants used as comparison points. 🚀 Run it Targets the RDNA4 ROCm fork (stew675/llama-cpp ..."
+    },
+    {
+      "title": "mtita/Qwen3.8-Flash-Next-CodeUD-v18a-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/mtita/Qwen3.8-Flash-Next-CodeUD-v18a-GGUF/tree/main",
+      "snippet": "Instructions to use mtita/Qwen3.8-Flash-Next-CodeUD-v18a-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Local AppsSettings llama.cpp How to use mtita/Qwen3.8-Flash-Next-CodeUD-v18a-GGUF with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next features a 125B -parameter main model, supplemented by an additional 51B N-gram embeddings, with 6B parameters activated per token. Compared with Qwen3.7-Plus, Qwen3.8-Flash-Next substantially reduces both training and inference cost — training takes only about 1/9 as much, yet it delivers superior capabilities in coding ..."
+    },
+    {
+      "title": "Qwen3.8 Flash Next Ap - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/qwen3-8-flash-next-ap.html",
+      "snippet": "Download Qwen3.8 Flash Next Ap GGUF model. 5.05 GB, 35,315 downloads, 38 likes."
+    },
+    {
+      "title": "Qwen3.8 Flash Next 131b A6b - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/qwen3-8-flash-next-131b-a6b.html",
+      "snippet": "Download Qwen3.8 Flash Next 131b A6b GGUF model. 77.4 GB, 5,730 downloads, 39 likes."
+    }
+  ]
+}

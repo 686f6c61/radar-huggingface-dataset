@@ -5,7 +5,7 @@
   "author": "Esobold",
   "url": "https://huggingface.co/Esobold/EsoTest_GGUFs",
   "created_at": "2026-05-27T21:46:09.000Z",
-  "updated_at": "2026-10-22T07:20:25.000Z",
+  "updated_at": "2026-10-23T00:26:30.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -22,8 +22,8 @@
   "trending_score": 0,
   "parameters": 30697345596,
   "parameters_human": "30.70B",
-  "storage_bytes": 1519898032832,
-  "storage_human": "1519.9 GB",
+  "storage_bytes": 1538585094432,
+  "storage_human": "1538.6 GB",
   "base_model": null,
   "formats": [
     "gguf"

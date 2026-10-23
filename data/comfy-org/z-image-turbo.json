@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Comfy-Org/Z-Image-Turbo",
+  "slug": "comfy-org-z-image-turbo",
+  "author": "Comfy-Org",
+  "url": "https://huggingface.co/Comfy-Org/Z-Image-Turbo",
+  "created_at": "2025-11-26T01:00:52.000Z",
+  "updated_at": "2026-09-23T08:02:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "base_model:Tongyi-MAI/Z-Image-Turbo",
+    "base_model:finetune:Tongyi-MAI/Z-Image-Turbo",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 991,
+  "downloads_30d": 9173397,
+  "trending_score": 16,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 42083656464,
+  "storage_human": "42.1 GB",
+  "base_model": "Tongyi-MAI/Z-Image-Turbo",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comfy - Professional Control of Visual AI",
+      "url": "https://comfy.org/",
+      "snippet": "Comfy is the AI creation engine for visual professionals who demand control over every model, every parameter, and every output."
+    },
+    {
+      "title": "Download Comfy Desktop - Run AI on Your Hardware",
+      "url": "https://comfy.org/download",
+      "snippet": "Why would I pay for Comfy Cloud if Desktop is free? + Your machine or ours. Cloud gives you powerful GPUs on demand, pre …"
+    },
+    {
+      "title": "GitHub - Comfy-Org/ComfyUI: The most powerful and modular …",
+      "url": "https://github.com/Comfy-Org/ComfyUI",
+      "snippet": "Install the ComfyUI dependencies. If you have another Stable Diffusion UI you might be able to reuse the dependencies. Launch …"
+    },
+    {
+      "title": "COMFY®",
+      "url": "https://comfy.eu/fr/comfy/",
+      "snippet": "Notre gamme diversifiée de produits COMFY® regroupent des jouets intérieurs et extérieurs pour enfants, des aides à la natation, …"
+    },
+    {
+      "title": "COMFY – Интернет магазин бытовой техники и электроники в …",
+      "url": "https://comfy.ua/",
+      "snippet": "Comfy предлагает огромный перечень товаров, начиная от техники для приготовления пищи, заканчивая игровыми консолями."
+    }
+  ]
+}

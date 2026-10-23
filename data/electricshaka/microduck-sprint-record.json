@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ElectricShaka/microduck-sprint-record",
+  "slug": "electricshaka-microduck-sprint-record",
+  "author": "ElectricShaka",
+  "url": "https://huggingface.co/ElectricShaka/microduck-sprint-record",
+  "created_at": "2026-10-22T23:38:39.000Z",
+  "updated_at": "2026-10-22T23:39:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "base_model:jrubiosainz/microduck-game-sprinter-remix4",
+    "base_model:finetune:jrubiosainz/microduck-game-sprinter-remix4",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 876661,
+  "storage_human": "876661 B",
+  "base_model": "jrubiosainz/microduck-game-sprinter-remix4",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-10-23T03:04:48.097Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face Unveils Microduck: A $399 Open-Source 25 cm Biped You ...",
+      "url": "https://www.marktechpost.com/2026/08/28/pollen-robotics-hugging-face-microduck-399-open-source-rl-biped-robot/",
+      "snippet": "Pollen Robotics and Hugging Face launch Microduck, a $399 open-source 25 cm biped trained with reinforcement learning in MuJoCo."
+    },
+    {
+      "title": "MicroDuck Resources — Latest Updates, DIY & Guides",
+      "url": "https://microduckrobot.org/",
+      "snippet": "Find the latest source-reviewed MicroDuck changes, DIY build routes, image and calibration checks, official releases and practical troubleshooting."
+    },
+    {
+      "title": "Microduck - A duck-like biped robot designed for physical AI ...",
+      "url": "https://www.cnx-software.com/2026/08/28/microduck-a-duck-like-biped-robot-designed-for-physical-ai-experimentation-and-fun/",
+      "snippet": "Microduck - A duck-like biped robot designed for physical AI experimentation and fun Pollen Robotics and Hugging Face have unveiled the Microduck, a 25 cm tall biped robot with 15 motors, a camera, a depth sensor, two motion sensors, and an articulated beak that can pick up objects."
+    },
+    {
+      "title": "dashi/microduck-sprint-test · Hugging Face",
+      "url": "https://huggingface.co/dashi/microduck-sprint-test",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - pollen-robotics/microduck: A Tiny biped duck robot",
+      "url": "https://github.com/pollen-robotics/microduck",
+      "snippet": "A Tiny biped duck robot 🦆. Contribute to pollen-robotics/microduck development by creating an account on GitHub."
+    }
+  ]
+}

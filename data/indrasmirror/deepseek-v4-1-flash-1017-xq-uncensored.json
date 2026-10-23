@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "IndrasMirror/DeepSeek-V4.1-Flash-1017-XQ-Uncensored",
+  "slug": "indrasmirror-deepseek-v4-1-flash-1017-xq-uncensored",
+  "author": "IndrasMirror",
+  "url": "https://huggingface.co/IndrasMirror/DeepSeek-V4.1-Flash-1017-XQ-Uncensored",
+  "created_at": "2026-10-18T10:14:56.000Z",
+  "updated_at": "2026-10-22T18:11:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "deepseek",
+    "deepseek-v4.1",
+    "moe",
+    "quantized",
+    "2-bit",
+    "ternary",
+    "mixed-precision",
+    "gptq",
+    "uncensored",
+    "strata",
+    "consumer-gpu",
+    "arxiv:2605.00649",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 14,
+  "downloads_30d": 2923,
+  "trending_score": 12,
+  "parameters": 14710631010,
+  "parameters_human": "14.71B",
+  "storage_bytes": 329277851840,
+  "storage_human": "329.3 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IndrasMirror/DeepSeek-V4.1-Flash-1017-XQ-Uncensored · Hugging Face",
+      "url": "https://huggingface.co/IndrasMirror/DeepSeek-V4.1-Flash-1017-GSQ-Uncensored",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "IndrasMirror/DeepSeek-V4.1-Flash-1017-XQ-Uncensored at main",
+      "url": "https://huggingface.co/IndrasMirror/DeepSeek-V4.1-Flash-1017-XQ-Uncensored/tree/main",
+      "snippet": "gptq uncensored strata consumer-gpu arxiv:2605.00649 License:mit Model card FilesFiles and versions xet Community Copy to bucket new main DeepSeek-V4.1-Flash-1017-XQ-Uncensored 209 GB Ctrl+K Ctrl+K 1 contributor History:42 commits IndrasMirror add v3/V41-XQ-1017-v3.gguf.part-04-of-16 4238a84 verified2 minutes ago tokenizeradd tokenizer/vocab ..."
+    },
+    {
+      "title": "DeepSeek-V4.1-Flash-1017 · Models",
+      "url": "https://www.modelscope.cn/models/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "snippet": "Technical Report 👁️ Introduction DeepSeek-V4.1-Flash-1017 is a minor update to DeepSeek-V4.1-Flash, delivering substantial improvements across reasoning, coding, agentic tasks, and visual benchmarks. Alongside these gains, the model reduces task execution time and output length, enabling users to complete tasks faster and at lower cost and advancing the performance-cost Pareto frontier ..."
+    },
+    {
+      "title": "DeepSeek V4.1 Flash 1017 API - $0.155/M In, $0.62/M Out | AIHubMix",
+      "url": "https://aihubmix.com/model/deepseek-v4.1-flash-1017",
+      "snippet": "The official latest version of DeepSeek V4.1 Flash has been upgraded to DeepSeek-V4.1-Flash-1017. API usage and pricing remain unchanged—you can still access the latest model using deepseek-flash."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "url": "https://featherless.ai/models/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "snippet": "DeepSeek-V4.1-Flash-1017 by deepseek-ai is a 763 billion parameter language model, an update to DeepSeek-V4.1-Flash, designed for enhanced performance in reasoning, coding, and agentic tasks. It features significant improvements across various benchmarks, including HLE, Terminal-Bench, and DeepSWE, while also reducing task execution time and output length. This model is optimized for faster ..."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ashokku/at-neo-100m",
+  "slug": "ashokku-at-neo-100m",
+  "author": "ashokku",
+  "url": "https://huggingface.co/ashokku/at-neo-100m",
+  "created_at": "2026-10-22T23:26:38.000Z",
+  "updated_at": "2026-10-22T23:26:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "from-scratch",
+    "small-language-model",
+    "en",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 100682496,
+  "parameters_human": "100.7M",
+  "storage_bytes": 201377264,
+  "storage_human": "201 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ashokku (Ashok Thakur) - Hugging Face",
+      "url": "https://huggingface.co/ashokku",
+      "snippet": "User profile of Ashok Thakur on Hugging Face"
+    },
+    {
+      "title": "Ashok kumar | 100 MILLION AI TOKENS… and I actually connected them to ...",
+      "url": "https://www.instagram.com/p/DdgONwGCbSJ/",
+      "snippet": "Follow AI content typeshokk 100 MILLION AI TOKENS… and I actually connected them to VS Code. 👀I found this free plan on Inception, checked the 100M token allocation, created an API key, and connected the model through OLLKIL."
+    },
+    {
+      "title": "Next AI Model — AI Model Release Tracker",
+      "url": "https://www.nextaimodel.com/",
+      "snippet": "Free tracker of every AI model release from OpenAI, Google, Anthropic, xAI, Meta, DeepSeek and more: what each model changed, and which lines are due next."
+    },
+    {
+      "title": "Former SentinelOne executives raise $100 million to stop rogue AI ...",
+      "url": "https://startupfortune.com/former-sentinelone-executives-raise-100-million-to-stop-rogue-ai-agents-before-they-own-your-enterprise/",
+      "snippet": "Former SentinelOne executives raise $100 million to stop rogue AI agents before they own your enterprise Neo, founded by SentinelOne and Wiz veterans, emerged from stealth July 20 with $100 million in funding to build a real-time control and security layer for AI agents running inside enterprises. The launch landed days after OpenAI disclosed its own models autonomously broke out of a sandbox ..."
+    },
+    {
+      "title": "nikitastheo/GPT-Neo-100m at main - Hugging Face",
+      "url": "https://huggingface.co/nikitastheo/GPT-Neo-100m/tree/main",
+      "snippet": "/ GPT-Neo-100m like 0 Text Generation Transformers PyTorch gpt_neo Inference Endpoints arxiv:1910.09700 Model card FilesFiles and versions Community Train Deploy Use this model main GPT-Neo-100m 1 contributor History:3 commits nikitastheo submit 7beabc1 verified5 days ago .gitattributes Safe 1.52 kBinitial commit5 days ago README.md Safe 5.17 ..."
+    }
+  ]
+}

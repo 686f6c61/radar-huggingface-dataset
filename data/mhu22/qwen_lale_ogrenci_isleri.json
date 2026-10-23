@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "mhu22/qwen_lale_ogrenci_isleri",
+  "slug": "mhu22-qwen_lale_ogrenci_isleri",
+  "author": "mhu22",
+  "url": "https://huggingface.co/mhu22/qwen_lale_ogrenci_isleri",
+  "created_at": "2026-10-22T23:17:28.000Z",
+  "updated_at": "2026-10-22T23:17:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85333004,
+  "storage_human": "85 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen-Image-2.1: Qwen&#x27;s most powerful open-source image ...",
+      "url": "https://github.com/QwenLM/Qwen-Image-2.1",
+      "snippet": "We are excited to open-source Qwen-Image-2.1, a unified text-to-image generation and image editing model in the Qwen family. With just 7B parameters in its visual generation component (32 Single-Stream DiT layers), Qwen-Image-2.1 balances generation quality, inference efficiency, and versatility."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - bbulutberat/ogrenci_isleri_ai_asistani",
+      "url": "https://github.com/bbulutberat/ogrenci_isleri_ai_asistani",
+      "snippet": "3 — Model Dosyasını İndirin ⚠️ Bu projede kullanılan model, PAU veri seti üzerinde ince ayar (fine-tune) yapılmış özel bir Qwen 2.5 7B Q4_K_M ağırlığıdır; standart Qwen modeli ile aynı değildir."
+    },
+    {
+      "title": "Qwen (Qwen) - Hugging Face",
+      "url": "https://huggingface.co/Qwen",
+      "snippet": "Org profile for Qwen on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Selene-3B-Instruct-i1-GGUF",
+  "slug": "mradermacher-selene-3b-instruct-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Selene-3B-Instruct-i1-GGUF",
+  "created_at": "2026-10-22T23:34:41.000Z",
+  "updated_at": "2026-10-22T23:47:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "pt"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "en",
+    "pt",
+    "base_model:Syradevops/Selene-3B-Instruct",
+    "base_model:quantized:Syradevops/Selene-3B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1680588,
+  "parameters_human": "1.7M",
+  "storage_bytes": 6794368,
+  "storage_human": "7 MB",
+  "base_model": "Syradevops/Selene-3B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=mradermacher",
+      "snippet": "Explore machine learning models. mradermacher/Poe-8B-GLM5-Opus4.6-Sonnet4.5-Kimi-Grok-Gemini-3-pro-preview-HERETIC-i1-GGUF"
+    },
+    {
+      "title": "Models · Pirate Face",
+      "url": "https://pirateface.co/models",
+      "snippet": "Browse Apache-2.0, MIT, Gemma, LFM, Muse and other eligible models. Find listed magnets, seeder counts, and checksum information."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 32 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "Pirate Face on X: \" Community torrents · 21 Oct 2026 193 model ...",
+      "url": "https://x.com/thepirateface/status/2112695381230342276",
+      "snippet": "Pirate Face on X: \"🧲 Community torrents · 21 Oct 2026 193 model torrents added: • DavidAU/Qwen3.8-27B-Turbo-Brilliance-50X-Reasoning-Instruct-NEO-MAX-MTP-GGUF ..."
+    }
+  ]
+}

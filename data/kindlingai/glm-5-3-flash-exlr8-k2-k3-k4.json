@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "kindlingai/glm-5.3-flash-exlr8-k2-k3-k4",
+  "slug": "kindlingai-glm-5-3-flash-exlr8-k2-k3-k4",
+  "author": "kindlingai",
+  "url": "https://huggingface.co/kindlingai/glm-5.3-flash-exlr8-k2-k3-k4",
+  "created_at": "2026-10-14T13:59:14.000Z",
+  "updated_at": "2026-10-22T23:18:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "trellis",
+  "languages": [],
+  "tags": [
+    "trellis",
+    "glm5_next",
+    "quantized",
+    "exlr8",
+    "exl3",
+    "moe",
+    "glm",
+    "glm-5.3-flash",
+    "tensor-parallel",
+    "gb10",
+    "image-text-to-text",
+    "conversational",
+    "base_model:zai-org/GLM-5.3-Flash-BF16",
+    "base_model:finetune:zai-org/GLM-5.3-Flash-BF16",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 103,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 712886303443,
+  "storage_human": "712.9 GB",
+  "base_model": "zai-org/GLM-5.3-Flash-BF16",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "UNDER THE TABLE | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/under-the-table",
+      "snippet": "UNDER THE TABLE definition: 1. If something is done under the table, it is a secret, hidden action: 2. hidden or done…. Learn more.Read more"
+    },
+    {
+      "title": "under the table meaning, origin, example, sentence, etymology",
+      "url": "https://www.theidioms.com/under-the-table/",
+      "snippet": "Sep 25, 2025 · Literally, situated beneath a table. Synonyms: secretly; illicitly; illegally; covertly; off the record; unofficially. The …"
+    },
+    {
+      "title": "Under The Table",
+      "url": "https://underthetable.uk/",
+      "snippet": "Set in the heart of Edinburgh's beautiful New Town, Under The Table, a Modern Bistro. Offering delicious European inspired dishes, …"
+    },
+    {
+      "title": "UNDER THE TABLE Definition & Meaning - Merriam-Webster",
+      "url": "https://www.merriam-webster.com/dictionary/under%20the%20table",
+      "snippet": "5 days ago · The meaning of UNDER THE TABLE is into a stupor. How to use under the table in a sentence."
+    },
+    {
+      "title": "UNDER THE TABLE definition | Cambridge English Dictionary",
+      "url": "https://dictionary.cambridge.org/us/dictionary/english/under-the-table",
+      "snippet": "Meaning of under the table in English under the table idiom If something is done under the table, it is a secret, hidden action:"
+    }
+  ]
+}

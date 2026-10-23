@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "BOAR-App/boar-offline",
+  "slug": "boar-app-boar-offline",
+  "author": "BOAR-App",
+  "url": "https://huggingface.co/BOAR-App/boar-offline",
+  "created_at": "2026-10-22T16:29:23.000Z",
+  "updated_at": "2026-10-22T16:34:14.000Z",
+  "license": "mixed",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "android",
+    "offline",
+    "gguf",
+    "llama.cpp",
+    "rag",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5504010669,
+  "storage_human": "5.5 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wild boar - The Wildlife Trusts",
+      "url": "https://www.wildlifetrusts.org/sites/default/files/2026-01/LargeHerbivoreProfile_WildBoar.pdf",
+      "snippet": "Wild Release Licence Boar are listed on Schedule 9, part 1B of Section 14 of the Wildlife and Countryside Act 1981 (WCA) and …"
+    },
+    {
+      "title": "Introduction Current status Description and behaviour - Wild boar",
+      "url": "https://www.wild-boar.org.uk/pdf/WildBoar_biology_and_behaviour.pdf",
+      "snippet": "If you have a dog off the lead and it chases wild boar or will not return when called, stay at a safe distance and continue to call the …"
+    },
+    {
+      "title": "WILD BOAR",
+      "url": "https://timesheets.europeandatajournalism.eu/document/u158C2242688/Wild-Boar",
+      "snippet": "WILD BOAR wild boar are fascinating and resilient creatures that have roamed the forests and grasslands of many regions for …"
+    },
+    {
+      "title": "Wild boar ecology - Food and Agriculture Organization",
+      "url": "https://www.fao.org/fileadmin/user_upload/reu/europe/documents/events2019/ASF_reg/15.pdf",
+      "snippet": "Field trials with the cadavers of domestic pigs and wild boars have been performed trying to understand the possible ways of the …"
+    },
+    {
+      "title": "Eurasian Boar Fact Sheet - Government of New York",
+      "url": "https://extapps.dec.ny.gov/docs/wildlife_pdf/eurasianboarfact.pdf",
+      "snippet": "Mar 8, 2016 · Eurasian boar, also known as wild boar, feral pigs or feral swine, are a highly adaptable invasive species that …"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "longtimedevs/C3-Lite",
+  "slug": "longtimedevs-c3-lite",
+  "author": "longtimedevs",
+  "url": "https://huggingface.co/longtimedevs/C3-Lite",
+  "created_at": "2026-10-22T16:19:09.000Z",
+  "updated_at": "2026-10-22T16:22:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "c3_lite",
+    "text-generation",
+    "autocomplete",
+    "t9",
+    "gru",
+    "rnn",
+    "ngram",
+    "low-latency",
+    "edge-ai",
+    "ru",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3458807,
+  "parameters_human": "3.5M",
+  "storage_bytes": 17597706,
+  "storage_human": "18 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

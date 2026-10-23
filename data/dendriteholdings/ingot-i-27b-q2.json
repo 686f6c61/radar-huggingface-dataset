@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "dendriteholdings/Ingot-I-27B-Q2",
+  "slug": "dendriteholdings-ingot-i-27b-q2",
+  "author": "dendriteholdings",
+  "url": "https://huggingface.co/dendriteholdings/Ingot-I-27B-Q2",
+  "created_at": "2026-10-22T16:58:42.000Z",
+  "updated_at": "2026-10-22T16:58:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 7206168928,
+  "storage_human": "7.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "forcealign/data/corpus/en.vcb.classes.cats at master - GitHub",
+      "url": "https://github.com/emjotde/forcealign/blob/master/data/corpus/en.vcb.classes.cats",
+      "snippet": "... dendrite,denitrify,densify,dentrifrices,deodorize,depict,deploy,depress ... ingot,injector,inlet,insulator,inteference,integrator,intercalary ..."
+    },
+    {
+      "title": "(PDF) Material-science-kakani-2004 - Academia.edu",
+      "url": "https://www.academia.edu/9373187/Material_science_kakani_2004",
+      "snippet": "... q2 are temperatures of hot ... 2.5 Rutherford's 12.3 Drawbacks of Rutherford's Atomic Model model Rutherford's model of the atom has a serious flaw in it."
+    },
+    {
+      "title": "The Casting Powders Book Mills Dacker 2017 | PDF - Scribd",
+      "url": "https://www.scribd.com/document/670650460/The-Casting-Powders-Book-Mills-Dacker-2017",
+      "snippet": "CM cold model; HM hot model; M Sim mould simulator 26 2 Slag Inﬁltration, Lubrication and Frictional Forces. (b) Hot models use low-melting metals, like ..."
+    },
+    {
+      "title": "[F. Abe] Creep Resistant Steels - Academia.edu",
+      "url": "https://www.academia.edu/28755396/_F_Abe_Creep_Resistant_Steels",
+      "snippet": "... model Mikora 401 14 Constitutive equations for creep curves and predicting ... ingot; (b) acid open hearth furnace air cast 75 ton ingot. WPNL2204 ..."
+    },
+    {
+      "title": "Material Science 9788122415285, 8122415288 - DOKUMEN.PUB",
+      "url": "https://dokumen.pub/material-science-9788122415285-8122415288.html",
+      "snippet": "17. Atomic Nucleus 24 Atomic Models 24 Vector Atom Model 43 Quantum Numbers 44 Pauli Exclusion Principle and Electronic Configuration of Atoms Wave Mechanical ..."
+    }
+  ]
+}

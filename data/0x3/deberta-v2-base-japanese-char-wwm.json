@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "0x3/deberta-v2-base-japanese-char-wwm",
+  "slug": "0x3-deberta-v2-base-japanese-char-wwm",
+  "author": "0x3",
+  "url": "https://huggingface.co/0x3/deberta-v2-base-japanese-char-wwm",
+  "created_at": "2026-10-22T16:20:52.000Z",
+  "updated_at": "2026-10-22T16:20:52.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "safetensors",
+    "deberta-v2",
+    "fill-mask",
+    "deberta",
+    "character",
+    "wwm",
+    "ja",
+    "dataset:wikipedia",
+    "dataset:cc100",
+    "dataset:oscar",
+    "license:cc-by-sa-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 121669624,
+  "parameters_human": "121.7M",
+  "storage_bytes": 973456943,
+  "storage_human": "973 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jable.TV | Watch HD JAV Online | Free & High Quality AV",
+      "url": "https://en.jable.tv/",
+      "snippet": "EBWH-382 That Female College Basketball Player Is A Beautiful Half-Hungarian With Blue Eyes, Standing 170cm Tall, And Has …Read more"
+    },
+    {
+      "title": "nJAV | Watch HD JAV Online | Free & High Quality AV",
+      "url": "https://njavtv.com/en/genres?page=1",
+      "snippet": "Best Japan AV porn site, free forever, high speed, no lag, over 100,000 videos, daily update, no ads while playing video."
+    },
+    {
+      "title": "MissAV | Watch HD JAV Online | Free & High Quality AV",
+      "url": "https://missav.live/en/genres",
+      "snippet": "Best Japan AV porn site, free forever, high speed, no lag, over 100,000 videos, daily update, no ads while playing video."
+    },
+    {
+      "title": "TopJAV | Free HD erotic movies and sex videos online",
+      "url": "https://topjav.tv/en",
+      "snippet": "Jul 13, 2026 · Watch HD AV movies online for free without any delays or downloads. Explore a huge collection of over 100,000 …"
+    },
+    {
+      "title": "Free JAV HD and Watch movies sex videos on the Japanese Porn",
+      "url": "https://javsnap.com/en/",
+      "snippet": "The Best Free JAV online, JAV DVD online, Stream JAV Online High Quality always updated daily."
+    }
+  ]
+}

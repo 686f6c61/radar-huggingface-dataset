@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "shloksutar/fraud-detector",
+  "slug": "shloksutar-fraud-detector",
+  "author": "shloksutar",
+  "url": "https://huggingface.co/shloksutar/fraud-detector",
+  "created_at": "2026-10-22T17:06:42.000Z",
+  "updated_at": "2026-10-22T20:41:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 63814901,
+  "storage_human": "64 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Messages",
+      "url": "https://support.google.com/messages/?hl=en",
+      "snippet": "Official Android Messages Help Center where you can find tips and tutorials on using Android Messages and other answers to …"
+    },
+    {
+      "title": "YouTube Help",
+      "url": "https://support.google.com/youtube/?hl=en",
+      "snippet": "Official YouTube Help Center where you can find tips and tutorials on using YouTube and other answers to frequently asked questions."
+    },
+    {
+      "title": "Browse in Incognito mode - Android phone & tablet - Google Help",
+      "url": "https://support.google.com/chrome/answer/95464?hl=en&co=GENIE.Platform%3DAndroid",
+      "snippet": "Open Incognito mode On your Android device, open Chrome . To open a new Incognito window, tap More Open in a new Incognito …"
+    },
+    {
+      "title": "Get verification codes with Google Authenticator",
+      "url": "https://support.google.com/accounts/answer/1066447?hl=en&co=GENIE.Platform%3DAndroid",
+      "snippet": "The Google Authenticator app can generate one-time verification codes for sites and apps that support Authenticator app 2-Step …"
+    },
+    {
+      "title": "Gmail Help",
+      "url": "https://support.google.com/mail/?hl=en",
+      "snippet": "Official Gmail Help Center where you can find tips and tutorials on using Gmail and other answers to frequently asked questions."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "smalinin/DeepSeek-V4.1-Flash-1017-IQ2_XXS-GGUF",
+  "slug": "smalinin-deepseek-v4-1-flash-1017-iq2_xxs-gguf",
+  "author": "smalinin",
+  "url": "https://huggingface.co/smalinin/DeepSeek-V4.1-Flash-1017-IQ2_XXS-GGUF",
+  "created_at": "2026-10-22T23:23:15.000Z",
+  "updated_at": "2026-10-22T23:28:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "image-text-to-text",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "smalinin/DeepSeek-V4.1-Flash-GGUF · Hugging Face",
+      "url": "https://huggingface.co/smalinin/DeepSeek-V4.1-Flash-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "smalinin/DeepSeek-V4.1-Flash-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/smalinin/DeepSeek-V4.1-Flash-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Deepseek V4.1 Flash - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/deepseek-v4-1-flash.html",
+      "snippet": "Download Deepseek V4.1 Flash GGUF model. 4.13 GB, 1,456,145 downloads, 75 likes."
+    },
+    {
+      "title": "DeepSeek-v4.1-Flash-1017-2x-DGX-Sparks - GitHub",
+      "url": "https://github.com/MiaAI-Lab/DeepSeek-v4.1-Flash-1017-2x-DGX-Sparks",
+      "snippet": "by Mia&#x27;s AI Lab Serve DeepSeek-V4.1-Flash-1017 from two NVIDIA DGX Sparks (GB10, 128 GB each, linked by their ConnectX-7 ports) through an OpenAI-compatible API, with the full 1,048,576-token window, image input, tool calling, thinking on or off, and DSpark speculative decoding from the checkpoint&#x27;s own draft blocks, using TensorFold &#x27;s native Zig engine and the 2.9 bit EXL3 quantization Mia ..."
+    },
+    {
+      "title": "DeepSeek V4.1 Flash 1017 — AI Model Radar",
+      "url": "https://aimodelradar.app/models/deepseek-v4-1-flash-1017",
+      "snippet": "DeepSeek-V4.1-Flash-1017 is a sparse mixture-of-experts model built on the company&#x27;s Causal Encoder-Decoder architecture, activating 8B parameters on input and 16B on output from a 552B-parameter backbone. It supports multimodal input (text and image) with a 1M-token context window and is positioned as the cost-efficient tier of the V4.1 family."
+    }
+  ]
+}

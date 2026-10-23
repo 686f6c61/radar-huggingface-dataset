@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "THUSI-Lab/GameScaling",
+  "slug": "thusi-lab-gamescaling",
+  "author": "THUSI-Lab",
+  "url": "https://huggingface.co/THUSI-Lab/GameScaling",
+  "created_at": "2026-10-10T13:22:28.000Z",
+  "updated_at": "2026-10-22T11:49:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gamescaling",
+    "game-agent",
+    "embodied-agent",
+    "keyboard-mouse",
+    "continued-pretraining",
+    "qwen3_5",
+    "image-text-to-text",
+    "en",
+    "arxiv:2610.28698",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 30,
+  "downloads_30d": 35,
+  "trending_score": 22,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 162404486344,
+  "storage_human": "162.4 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B, Qwen/Qwen3.5-2B, Qwen/Qwen3.5-9B, Qwen/Qwen3.5-27B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "THUSI-Lab/GameScaling - Hugging Face",
+      "url": "https://huggingface.co/THUSI-Lab/GameScaling",
+      "snippet": "1miHoYo Honkai AI R&D Team 2College ... interning at miHoYo · GameScaling models are Qwen3.5 vision-language models with continued pre-training on keyboard-and-mouse gameplay...."
+    },
+    {
+      "title": "Tsinghua Spatial Intelligence Lab (THUSI Lab) - GitHub",
+      "url": "https://github.com/THUSI-Lab",
+      "snippet": "THUSI Lab, part of the College of AI at Tsinghua University, is led by Prof. Yiming Li. Our mission is to scale AI across space , time ⏳, and embodiments ..."
+    },
+    {
+      "title": "GitHub - THUSI-Lab/GameScaling: Scaling in Games: Continued ...",
+      "url": "https://github.com/THUSI-Lab/GameScaling",
+      "snippet": "1miHoYo Honkai AI R&D Team 2College ... interning at miHoYo · GameScaling models are Qwen3.5 vision-language models with continued pre-training on keyboard-and-mouse gameplay...."
+    },
+    {
+      "title": "GameScaling Model - a THUSI-Lab Collection",
+      "url": "https://huggingface.co/collections/THUSI-Lab/gamescaling-model",
+      "snippet": "THUSI-Lab 's Collections · GameScaling Model · updated 36 minutes ago · A model collection of gamescaling series. Upvote · 1 · Sort: Collection · Image-Text-to-Text • Updated about 5 hours ago • 23 • 11 · Image-Text-to-Text • 1B • Updated about 5 hours ago • 45 ·"
+    },
+    {
+      "title": "Kuan Zhang (张宽) - KiKi's Website",
+      "url": "https://itheresaapocalypse.github.io/",
+      "snippet": "I am a Ph.D. Candidate at the College of AI, Tsinghua University, working with Prof. Yiming Li at THUSI-Lab. I am also a Talent Prog."
+    }
+  ]
+}

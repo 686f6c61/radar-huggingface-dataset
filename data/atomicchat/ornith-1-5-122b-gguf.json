@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "AtomicChat/Ornith-1.5-122B-GGUF",
+  "slug": "atomicchat-ornith-1-5-122b-gguf",
+  "author": "AtomicChat",
+  "url": "https://huggingface.co/AtomicChat/Ornith-1.5-122B-GGUF",
+  "created_at": "2026-10-19T18:52:00.000Z",
+  "updated_at": "2026-10-21T09:23:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "ornith",
+    "ornith-ai",
+    "imatrix",
+    "quantized",
+    "conversational",
+    "atomic-chat",
+    "image-text-to-text",
+    "base_model:ornith-ai/Ornith-1.5-122B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-122B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 13,
+  "downloads_30d": 4762,
+  "trending_score": 13,
+  "parameters": 124635206144,
+  "parameters_human": "124.64B",
+  "storage_bytes": 838858807968,
+  "storage_human": "838.9 GB",
+  "base_model": "ornith-ai/Ornith-1.5-122B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=ar",
+      "snippet": "الإعلانات كل ما تحب معرفته عن Google‏ هنا Google.com in English"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.iq/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=fr",
+      "snippet": "Publicité À propos de Google Google.com in English © 2026 - Confidentialité - Conditions"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com.nf/?hl=ar-US",
+      "snippet": "محرّك بحث Google متوفّر باللغة: English الإعلانات كل ما تحب معرفته عن Google‏ هنا Google.com"
+    },
+    {
+      "title": "Google Arabia - YouTube",
+      "url": "https://www.youtube.com/googlearabia",
+      "snippet": "مرحبًا وأهلاً بكم في قناتنا التي نشارك من خلالها آخر الأخبار عن منتجاتنا وخدماتنا ولمحات عما يحدث وراء ..."
+    }
+  ]
+}

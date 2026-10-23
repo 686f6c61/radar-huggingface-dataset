@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "BlackwellBoy/DeepSeek-V4.1-Flash-1017-BLACKFOLD-EXL3-2.9bpw-TP2",
+  "slug": "blackwellboy-deepseek-v4-1-flash-1017-blackfold-exl3-2-9bpw-tp2",
+  "author": "BlackwellBoy",
+  "url": "https://huggingface.co/BlackwellBoy/DeepSeek-V4.1-Flash-1017-BLACKFOLD-EXL3-2.9bpw-TP2",
+  "created_at": "2026-10-20T08:37:26.000Z",
+  "updated_at": "2026-10-21T10:03:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "blackfold",
+    "tensorfold",
+    "tensor-parallel",
+    "tp2",
+    "dgx-spark",
+    "deepseek",
+    "deepseek-v4.1",
+    "exl3",
+    "abliterated",
+    "uncensored",
+    "heretic",
+    "text-generation",
+    "base_model:LibertAIDAI/DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw",
+    "base_model:finetune:LibertAIDAI/DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 14,
+  "downloads_30d": 0,
+  "trending_score": 14,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 997388325,
+  "storage_human": "997 MB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017, LibertAIDAI/DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeepSeek-V4.1-Flash-1017-BLACKFOLD-EXL3-2.9bpw-TP2",
+      "url": "https://huggingface.co/BlackwellBoy/DeepSeek-V4.1-Flash-1017-BLACKFOLD-EXL3-2.9bpw-TP2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "BLACKFOLD: DeepSeek-V4.1-Flash-1017 TP2 recipe - GitHub",
+      "url": "https://github.com/Blackwellboy/DeepSeek-V4.1-Flash-1017-BLACKFOLD-TP2/blob/main/",
+      "snippet": "Uncensored, fast, and checked. DeepSeek-V4.1-Flash-1017 (763B MoE) on two DGX Sparks: JailbreakBench refusals cut from 94 to 6, the same answers as DeepSeek&#x27;s own API, 2,008 tok/s cold prefill on a 128K prompt and 113 tok/s single-stream code decode."
+    },
+    {
+      "title": "DeepSeek-V4.1-Flash-1017-NIGHTFALL-EXL3-2.9bpw-TP2",
+      "url": "https://huggingface.co/BlackwellBoy/DeepSeek-V4.1-Flash-1017-NIGHTFALL-EXL3-2.9bpw-TP2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw-heretic-overlay",
+      "url": "https://huggingface.co/BlackwellBoy/DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw-heretic-overlay",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Elevatormusic/DeepSeek-V4.1-Flash-1017-EXL3-TensorFold-2x-DGX ...",
+      "url": "https://github.com/Elevatormusic/DeepSeek-V4.1-Flash-1017-EXL3-TensorFold-2x-DGX-Spark/tree/main",
+      "snippet": "Run DeepSeek&#x27;s V4.1 Flash model on two NVIDIA DGX Spark computers with about 2× the decode and prefill speed of the standard vLLM setup, ready for AI agents."
+    }
+  ]
+}

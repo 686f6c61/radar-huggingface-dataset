@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "hrimlee/BAND-MedCPT",
+  "slug": "hrimlee-band-medcpt",
+  "author": "hrimlee",
+  "url": "https://huggingface.co/hrimlee/BAND-MedCPT",
+  "created_at": "2026-10-22T16:07:28.000Z",
+  "updated_at": "2026-10-22T16:10:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "feature-extraction",
+    "medical",
+    "retrieval-augmented-generation",
+    "retrieval-debiasing",
+    "demographic-robustness",
+    "medcpt",
+    "band",
+    "en",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109482240,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437951328,
+  "storage_human": "438 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

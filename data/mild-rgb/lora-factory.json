@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mild-rgb/lora-factory",
+  "slug": "mild-rgb-lora-factory",
+  "author": "mild-rgb",
+  "url": "https://huggingface.co/mild-rgb/lora-factory",
+  "created_at": "2026-10-15T18:29:21.000Z",
+  "updated_at": "2026-10-22T23:29:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "alignment-research",
+    "weird-generalization",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 170958440711,
+  "storage_human": "171.0 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MILD | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/mild",
+      "snippet": "MILD definition: 1. not violent, severe, or extreme: 2. Mild weather is not very cold or not as cold as usual: 3…. Learn more."
+    },
+    {
+      "title": "Traduction MILD en français | Dictionnaire anglais-français | Reverso",
+      "url": "https://dictionnaire.reverso.net/anglais-francais/mild",
+      "snippet": "Traduction de \"mild\" en français : doux, clément. Adjectif, nom, signification, prononciation, expressions idiomatiques en anglais, …"
+    },
+    {
+      "title": "mild - Traduction française – Linguee",
+      "url": "https://www.linguee.fr/anglais-francais/traduction/mild.html",
+      "snippet": "De très nombreux exemples de phrases traduites contenant \"mild\" – Dictionnaire français-anglais et moteur de recherche de …"
+    },
+    {
+      "title": "mild - English-French Dictionary WordReference.com",
+      "url": "https://www.wordreference.com/enfr/mild",
+      "snippet": "Voir la traduction automatique de Google Translate de 'mild'. Dans d'autres langues : espagnol | italien | portugais | roumain | …"
+    },
+    {
+      "title": "MILD Definition & Meaning - Merriam-Webster",
+      "url": "https://www.merriam-webster.com/dictionary/mild",
+      "snippet": "Oct 14, 2026 · The meaning of MILD is gentle in nature or behavior. How to use mild in a sentence."
+    }
+  ]
+}

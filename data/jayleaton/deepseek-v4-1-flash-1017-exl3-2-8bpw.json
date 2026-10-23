@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "jayleaton/DeepSeek-V4.1-Flash-1017-EXL3-2.8bpw",
+  "slug": "jayleaton-deepseek-v4-1-flash-1017-exl3-2-8bpw",
+  "author": "jayleaton",
+  "url": "https://huggingface.co/jayleaton/DeepSeek-V4.1-Flash-1017-EXL3-2.8bpw",
+  "created_at": "2026-10-18T01:32:46.000Z",
+  "updated_at": "2026-10-18T13:39:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "exllamav3",
+  "languages": [],
+  "tags": [
+    "exllamav3",
+    "safetensors",
+    "deepseek_v41",
+    "exl3",
+    "quantized",
+    "deepseek",
+    "deepseek-v4.1",
+    "mixture-of-experts",
+    "dgx-spark",
+    "text-generation",
+    "conversational",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 12,
+  "downloads_30d": 622,
+  "trending_score": 12,
+  "parameters": 101835423954,
+  "parameters_human": "101.84B",
+  "storage_bytes": 203786982557,
+  "storage_human": "203.8 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jayleaton/DeepSeek-V4.1-Flash-1017-EXL3-2.8bpw · Hugging Face",
+      "url": "https://huggingface.co/jayleaton/DeepSeek-V4.1-Flash-1017-EXL3-2.8bpw",
+      "snippet": "Like 2 Text Generation Safetensors exllamav3 deepseek_v41 exl3 quantized deepseek deepseek-v4.1 mixture-of-experts dgx-spark conversational License:mit Model card FilesFiles and versions xet Community Copy to bucket new DeepSeek-V4.1-Flash-1017 EXL3 2.8 bpw (flash17) Requirements Serving profile Sizes How it was made Evaluation Fidelity to the ..."
+    },
+    {
+      "title": "GitHub - jayleaton/deepseek-v41-tensorfold-spark: DeepSeek-V4.1-Flash ...",
+      "url": "https://github.com/jayleaton/deepseek-v41-tensorfold-spark",
+      "snippet": "A recipe for serving DeepSeek-V4.1-Flash-1017 on two NVIDIA DGX Sparks behind an OpenAI-compatible API. It ships our EXL3 pack (flash17) and the TensorFold Zig engine that serves it, with the exact serving profile we measured ..."
+    },
+    {
+      "title": "jayleaton/DeepSeek-V4.1-Flash-EXL3-2.8bpw · Hugging Face",
+      "url": "https://huggingface.co/jayleaton/DeepSeek-V4.1-Flash-EXL3-2.8bpw",
+      "snippet": "An EXL3 quantization of deepseek-ai/DeepSeek-V4.1-Flash at 2.80 bits per weight, built to serve on two NVIDIA DGX Sparks at TP = 2. Every routed expert matrix gets ..."
+    },
+    {
+      "title": "GitHub - jayleaton/deepseek-v41-tensorfold-spark: DeepSeek-V4.1-Flash ...",
+      "url": "https://github.com/jayleaton/deepseek-v41-tensorfold-spark/tree/main",
+      "snippet": "Serve DeepSeek-V4.1-Flash (the 2.9 bpw EXL3 pack) across two NVIDIA DGX Sparks, tensor-parallel over the 200 Gb/s CX7 link, behind an OpenAI-compatible API. The engine is TensorFold 0.6.0 (pinned, unmodified submodule) plus two patches applied at image build: the two-Spark engine stack from the GLM-5.3-Flash recipe and a new DeepSeek-V4.1-Flash family written for this model: CSA2 attention ..."
+    },
+    {
+      "title": "DeepSeek V4.1 Flash 1017 · Directories by Enterprise DNA",
+      "url": "https://enterprisedna.co/directories/models/deepseek-deepseek-v4-1-flash-1017/",
+      "snippet": "Overview DeepSeek V4.1 Flash 1017 is the October 17, 2026 snapshot of DeepSeek V4.1 Flash, served by DeepSeek under the `deepseek-flash` API model name. V4.1 Flash is a sparse mixture-of-experts model..."
+    }
+  ]
+}

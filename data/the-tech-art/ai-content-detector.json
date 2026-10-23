@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "the-tech-art/ai-content-detector",
+  "slug": "the-tech-art-ai-content-detector",
+  "author": "the-tech-art",
+  "url": "https://huggingface.co/the-tech-art/ai-content-detector",
+  "created_at": "2026-10-22T16:12:29.000Z",
+  "updated_at": "2026-10-22T17:25:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "joblib",
+    "ai-content-detector",
+    "text-classification",
+    "nlp",
+    "forensics",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 149764,
+  "storage_human": "149764 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/The",
+      "snippet": "The is a grammatical article in English, denoting nouns that are already or about to be mentioned, under discussion, implied or …"
+    },
+    {
+      "title": "Palais des Thés - Déguster le meilleur du thé",
+      "url": "https://www.palaisdesthes.com/fr/",
+      "snippet": "Commandez les meilleurs thés du monde en direct des plantations : thés verts, thés noirs, grands crus, infusions, rooibos..."
+    },
+    {
+      "title": "The definite article: 'the' | LearnEnglish - British Council",
+      "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/definite-article",
+      "snippet": "Level: beginner The definite article the is the most frequent word in English. We use the definite article in front of a noun when we …"
+    },
+    {
+      "title": "THE | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/the",
+      "snippet": "THE definition: 1. used before nouns to refer to particular things or people that have already been talked about or…. Learn more."
+    },
+    {
+      "title": "Déterminant THE en anglais : quand et comment l'utiliser",
+      "url": "https://www.ispeakspokespoken.com/the-anglais/",
+      "snippet": "Oct 2, 2026 · Faut-il mettre THE ou pas devant les noms en anglais ? Je vous donne dans cet article des explications et des …"
+    }
+  ]
+}
