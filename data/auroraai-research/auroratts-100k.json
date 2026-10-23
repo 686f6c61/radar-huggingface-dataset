@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "AuroraAI-Research/AuroraTTS-100K",
+  "slug": "auroraai-research-auroratts-100k",
+  "author": "AuroraAI-Research",
+  "url": "https://huggingface.co/AuroraAI-Research/AuroraTTS-100K",
+  "created_at": "2026-10-22T16:08:19.000Z",
+  "updated_at": "2026-10-22T20:01:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "auroratts",
+    "feature-extraction",
+    "text-to-speech",
+    "tts",
+    "custom_code",
+    "en",
+    "dataset:keithito/lj_speech",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 14,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 95637,
+  "parameters_human": "95637",
+  "storage_bytes": 6783833,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=ar",
+      "snippet": "الإعلانات كل ما تحب معرفته عن Google‏ هنا Google.com in English"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.iq/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=fr",
+      "snippet": "Publicité À propos de Google Google.com in English © 2026 - Confidentialité - Conditions"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com.nf/?hl=ar-US",
+      "snippet": "محرّك بحث Google متوفّر باللغة: English الإعلانات كل ما تحب معرفته عن Google‏ هنا Google.com"
+    },
+    {
+      "title": "Google Arabia - YouTube",
+      "url": "https://www.youtube.com/googlearabia",
+      "snippet": "مرحبًا وأهلاً بكم في قناتنا التي نشارك من خلالها آخر الأخبار عن منتجاتنا وخدماتنا ولمحات عما يحدث وراء ..."
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "lite-infer/qwen-image-2.1-turbo-nunchaku-lite-int4-r32",
+  "slug": "lite-infer-qwen-image-2-1-turbo-nunchaku-lite-int4-r32",
+  "author": "lite-infer",
+  "url": "https://huggingface.co/lite-infer/qwen-image-2.1-turbo-nunchaku-lite-int4-r32",
+  "created_at": "2026-10-23T08:31:18.000Z",
+  "updated_at": "2026-10-23T10:00:48.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "qwen-image",
+    "image-editing",
+    "nunchaku-lite",
+    "svdquant",
+    "gptq",
+    "int4",
+    "bitsandbytes",
+    "nf4",
+    "quantization",
+    "text-to-image",
+    "base_model:Qwen/Qwen-Image-2.1-Turbo",
+    "base_model:quantized:Qwen/Qwen-Image-2.1-Turbo",
+    "license:other",
+    "diffusers:QwenImage21Pipeline",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3762958336,
+  "parameters_human": "3.76B",
+  "storage_bytes": 11502403646,
+  "storage_human": "11.5 GB",
+  "base_model": "Qwen/Qwen-Image-2.1-Turbo",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook",
+      "url": "https://lite.facebook.com/",
+      "snippet": "Log into Facebook to connect with friends, family, and people you know."
+    },
+    {
+      "title": "Facebook Lite – Applications sur Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.facebook.lite&hl=fr",
+      "snippet": "The Facebook Lite app is small. It lets you save space on your phone and use Facebook in 2G conditions without sacrificing the core …"
+    },
+    {
+      "title": "Facebook Lite APK for Android",
+      "url": "https://www.facebook.com/lite/",
+      "snippet": "Oct 16, 2026 · Download the Facebook Lite APK here. Facebook Lite uses less data and works on all Android phones. Create an …"
+    },
+    {
+      "title": "Facebook Lite - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.facebook.lite&hl=en-US",
+      "snippet": "The Facebook Lite app is small, allowing you to save space on your phone and use Facebook in 2G conditions. Many of the classic …"
+    },
+    {
+      "title": "Télécharger Facebook Lite (gratuit) Android - Clubic",
+      "url": "https://www.clubic.com/telecharger-fiche448456-facebook-lite.html",
+      "snippet": "2 days ago · Facebook Lite est une version allégée de l’application Facebook, conçue pour les appareils mobiles à faibles …"
+    }
+  ]
+}

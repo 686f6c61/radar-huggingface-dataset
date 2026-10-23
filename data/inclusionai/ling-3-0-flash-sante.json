@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "inclusionAI/Ling-3.0-flash-Sante",
+  "slug": "inclusionai-ling-3-0-flash-sante",
+  "author": "inclusionAI",
+  "url": "https://huggingface.co/inclusionAI/Ling-3.0-flash-Sante",
+  "created_at": "2026-10-19T17:30:04.000Z",
+  "updated_at": "2026-10-22T14:53:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bailing_hybrid",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 32,
+  "downloads_30d": 5,
+  "trending_score": 32,
+  "parameters": 127486405600,
+  "parameters_human": "127.49B",
+  "storage_bytes": 254993298756,
+  "storage_human": "255.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "inclusionAI/Ling-3.0-flash-Sante · Hugging Face",
+      "url": "https://huggingface.co/inclusionAI/Ling-3.0-flash-Sante",
+      "snippet": "With 124B total parameters and 5.1B active parameters per token, Sante is designed for medical reasoning, healthcare research, deep research, and tool-assisted workflows while retaining the general capabilities of Ling-3.0-flash. Model weights are available on Hugging Face and ModelScope. Important: Ling-3.-flash-Sante is a research model, not a medical device. Its outputs may be incomplete ..."
+    },
+    {
+      "title": "inclusionAI: Ling 3.0 Flash Sante — Inclusion AI | AI Model Details ...",
+      "url": "https://www.neura.market/models/inclusionai-ling-3-0-flash-sante",
+      "snippet": "Ling 3.0 Flash Sante is a health and medicine-focused mixture-of-experts model from InclusionAI, built on Ling 3.0 Flash with 5.1B active parameters out of 124B total."
+    },
+    {
+      "title": "inclusionAI/Ling-3.0-flash · Hugging Face",
+      "url": "https://huggingface.co/inclusionAI/Ling-3.0-flash",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ling 3.0 Flash Sante - inclusionAI AI Model",
+      "url": "https://zeplik.ai/models/ling-3-0-flash-sante",
+      "snippet": "Ling 3.0 Flash Sante is a health and medicine-focused mixture-of-experts model from InclusionAI, built on Ling 3.0 Flash with 5.1B active parameters out of 124B total."
+    },
+    {
+      "title": "Ling-3.0-flash-Sante - AI Wiki",
+      "url": "https://aiwiki.ai/wiki/ling_3_0_flash_sante",
+      "snippet": "Ling-3.-flash-Sante is a health and medicine variant of Ling-3.0-flash, the 124-billion-parameter mixture-of-experts language model from inclusionAI, the open-source AI initiative of Ant Group."
+    }
+  ]
+}

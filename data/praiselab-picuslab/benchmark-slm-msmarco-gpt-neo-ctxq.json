@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "praiselab-picuslab/benchmark-slm-msmarco-gpt-neo-ctxq",
+  "slug": "praiselab-picuslab-benchmark-slm-msmarco-gpt-neo-ctxq",
+  "author": "praiselab-picuslab",
+  "url": "https://huggingface.co/praiselab-picuslab/benchmark-slm-msmarco-gpt-neo-ctxq",
+  "created_at": "2026-10-23T08:34:11.000Z",
+  "updated_at": "2026-10-23T08:34:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "benchmark-slm",
+    "or2",
+    "dataset-msmarco",
+    "strategy-ctxq",
+    "text-generation",
+    "en",
+    "dataset:microsoft/ms_marco",
+    "base_model:EleutherAI/gpt-neo-1.3B",
+    "base_model:adapter:EleutherAI/gpt-neo-1.3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25192784,
+  "storage_human": "25 MB",
+  "base_model": "EleutherAI/gpt-neo-1.3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

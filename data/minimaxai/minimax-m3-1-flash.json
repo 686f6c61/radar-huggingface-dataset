@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "MiniMaxAI/MiniMax-M3.1-Flash",
+  "slug": "minimaxai-minimax-m3-1-flash",
+  "author": "MiniMaxAI",
+  "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash",
+  "created_at": "2026-10-17T06:37:50.000Z",
+  "updated_at": "2026-10-23T03:37:20.000Z",
+  "license": "minimax-community",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "minimax_m3_vl",
+    "image-text-to-text",
+    "multimodal",
+    "moe",
+    "agent",
+    "coding",
+    "video",
+    "conversational",
+    "custom_code",
+    "arxiv:2606.13392",
+    "license:other",
+    "endpoints_compatible",
+    "8-bit",
+    "mxfp8",
+    "region:us"
+  ],
+  "likes": 149,
+  "downloads_30d": 357,
+  "trending_score": 145,
+  "parameters": 220490854016,
+  "parameters_human": "220.49B",
+  "storage_bytes": 252429151663,
+  "storage_human": "252.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MiniMax launches M3.1 Flash model, says it cuts AI agent costs ...",
+      "url": "https://siliconangle.com/2026/10/19/minimax-launches-m3-1-flash-model-says-it-cuts-ai-agent-costs-by-70/",
+      "snippet": "Chinese artificial intelligence developer MiniMax Group Inc. today released M3.1 Flash, a faster and cheaper update to the M3 large language model it launched in June. The release takes aim at the cost of running AI agents, which often need ..."
+    },
+    {
+      "title": "China's MiniMax launches updated AI model M3.1 Flash ...",
+      "url": "https://www.reuters.com/world/asia-pacific/chinas-minimax-launches-updated-ai-model-m31-flash-claims-major-improvements-2026-10-19/",
+      "snippet": "Reuters.com is your online source for the latest Asia news stories and current events, ensuring our readers up to date with any breaking news developments"
+    },
+    {
+      "title": "MiniMaxAI/MiniMax-M3.1-Flash · Hugging Face",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash",
+      "snippet": "MiniMax-M3.1-Flash is a native multimodal mixture-of-experts model for coding, agentic workflows, computer use, and cybersecurity."
+    },
+    {
+      "title": "MiniMax-M3.1-Flash - Intelligence, Performance & Price Analysis ...",
+      "url": "https://artificialanalysis.ai/models/minimax-m3-1-flash",
+      "snippet": "The model supports text and image input, outputs text, and has a 1M tokens context window. MiniMax-M3.1-Flash scores 43 on the Artificial Analysis Intelligence Index, placing it well above average among comparable models (median: 13)."
+    },
+    {
+      "title": "MiniMax M3.1 Flash - API Pricing & Benchmarks | OpenRouter",
+      "url": "https://openrouter.ai/minimax/minimax-m3.1-flash:free",
+      "snippet": "MiniMax-M3.1-Flash is a multimodal model from MiniMax. Compared with M3, it delivers significant improvements across multiple benchmarks, particularly in complex agentic tasks, coding, and cybersecurity."
+    }
+  ]
+}

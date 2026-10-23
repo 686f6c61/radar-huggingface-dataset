@@ -5,7 +5,7 @@
   "author": "immanuelpeter",
   "url": "https://huggingface.co/immanuelpeter/Gemma4-31B-Vision",
   "created_at": "2026-09-17T17:22:35.000Z",
-  "updated_at": "2026-09-17T17:22:44.000Z",
+  "updated_at": "2026-10-23T04:10:40.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-feature-extraction",

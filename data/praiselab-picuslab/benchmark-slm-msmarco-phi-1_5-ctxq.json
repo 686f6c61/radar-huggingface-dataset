@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "praiselab-picuslab/benchmark-slm-msmarco-phi-1_5-ctxq",
+  "slug": "praiselab-picuslab-benchmark-slm-msmarco-phi-1_5-ctxq",
+  "author": "praiselab-picuslab",
+  "url": "https://huggingface.co/praiselab-picuslab/benchmark-slm-msmarco-phi-1_5-ctxq",
+  "created_at": "2026-10-23T08:35:00.000Z",
+  "updated_at": "2026-10-23T08:35:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "benchmark-slm",
+    "or2",
+    "dataset-msmarco",
+    "strategy-ctxq",
+    "text-generation",
+    "en",
+    "dataset:microsoft/ms_marco",
+    "base_model:microsoft/phi-1_5",
+    "base_model:adapter:microsoft/phi-1_5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25191488,
+  "storage_human": "25 MB",
+  "base_model": "microsoft/phi-1_5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "آمیزش جنسی - ویکی‌پدیا، دانشنامهٔ آزاد",
+      "url": "https://fa.m.wikipedia.org/wiki/%D8%A2%D9%85%DB%8C%D8%B2%D8%B4_%D8%AC%D9%86%D8%B3%DB%8C",
+      "snippet": "آمیزش جنسی اثر تؤدور گریکالت آمیزش جنسی در زبان عامیانه همچنین کامش ، [۱۴] آمیزش جنسی ، آمیغ ، [۱۵] نزدیکی جنسی ، [۱۶] خُفت‌وخیز ، سپودن ، سپوختن ، مقاربت ، جِماع (به …"
+    },
+    {
+      "title": "سکس ایرانی Porn Videos | Pornhub.com",
+      "url": "https://www.pornhub.com/video/search?search=%D8%B3%DA%A9%D8%B3+%D8%A7%DB%8C%D8%B1%D8%A7%D9%86%DB%8C",
+      "snippet": "Watch سکس ایرانی porn videos for free, here on Pornhub.com. Discover the growing collection of high quality Most Relevant XXX movies …"
+    },
+    {
+      "title": "روش‌های آمیزش جنسی - ویکی‌پدیا، دانشنامهٔ آزاد",
+      "url": "https://fa.m.wikipedia.org/wiki/%D8%B1%D9%88%D8%B4%E2%80%8C%D9%87%D8%A7%DB%8C_%D8%A2%D9%85%DB%8C%D8%B2%D8%B4_%D8%AC%D9%86%D8%B3%DB%8C",
+      "snippet": "چهارنفره زمانی‌که چهار نفر در آمیزش جنسی با یکدیگر مشارکت داشته باشند، به این نوع آمیزش جنسی، سکس چهارنفره یا اصطلاحاً فورسام[e] گفته می‌شود. روش ۴۶۹ ، روشی متداول در …"
+    },
+    {
+      "title": "معنی رابطه جنسی چیست؟ (انواع و معنی سکس) - وبلاگ ویکی روان",
+      "url": "https://www.wikiravan.com/blog/%D8%B1%D8%A7%D8%A8%D8%B7%D9%87-%D8%AC%D9%86%D8%B3%DB%8C-%DA%86%DB%8C%D8%B3%D8%AA/",
+      "snippet": "Jun 28, 2024 · معنی کلمه سکس چیست به طور معمولا ۳ راه برای انجام سکس وجود دارد که به توضیح آنها می پردازیم. انتخاب های بدون ریسک انتخاب های همراه با ریسک انتخاب های …"
+    },
+    {
+      "title": "آموزش سکس و رابطه جنسی زناشویی؛ چگونه سکس کنیم؟",
+      "url": "https://ravandarman.com/blog/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D8%B3%DA%A9%D8%B3/",
+      "snippet": "Sep 14, 2020 · آموزش سکس و رابطه جنسی زناشویی؛ چگونه سکس کنیم؟ آخرین بروزرسانی 9 آذر 1404 تاریخ انتشار 24 شهریور 1399 5دقیقه"
+    }
+  ]
+}

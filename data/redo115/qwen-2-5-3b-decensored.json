@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "redo115/qwen-2.5-3b-decensored",
+  "slug": "redo115-qwen-2-5-3b-decensored",
+  "author": "redo115",
+  "url": "https://huggingface.co/redo115/qwen-2.5-3b-decensored",
+  "created_at": "2026-10-23T01:41:18.000Z",
+  "updated_at": "2026-10-23T01:42:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6183348572,
+  "storage_human": "6.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-3B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-3B",
+      "snippet": "Qwen2.5 is the latest series of Qwen large language models. For Qwen2.5, we release a number of base language models and instruction-tuned language models ranging from 0.5 to 72 billion parameters. Qwen2.5 brings the following improvements upon Qwen2 ..."
+    },
+    {
+      "title": "Hirundo Releases Westernized Qwen, Cutting Censored and CCP-Aligned ...",
+      "url": "https://www.businesswire.com/news/home/20261005345737/en/Hirundo-Releases-Westernized-Qwen-Cutting-Censored-and-CCP-Aligned-Answers-From-89.8-to-2.8-in-the-Leading-Chinese-AI-Model",
+      "snippet": "Hirundo&#x27;s Westernized Qwen cuts censored and CCP-aligned answers from 89.8% to 2.8% in the leading Chinese AI model, while keeping its performance and enhancing its safety."
+    },
+    {
+      "title": "arnomatic/Qwen2.5-3B-Instruct-heretic - featherless.ai",
+      "url": "https://featherless.ai/models/arnomatic/Qwen2.5-3B-Instruct-heretic",
+      "snippet": "This model is a decensored version of the Qwen/Qwen2.5-3B-Instruct, created using the Heretic v1.1.0 tool. It is designed to provide responses with significantly fewer refusals, as evidenced by a refusal rate of 3/100 compared to the original model&#x27;s 97/100."
+    },
+    {
+      "title": "Abliterated Models — Open-Weight LLMs With Refusals Removed",
+      "url": "https://www.abliteratedmodels.org/",
+      "snippet": "Abliterated Models Abliterated Models is an index of abliterated AI: open-weight LLMs with refusal behaviour removed from their weights, for security teams. Every model here is uncensored — it answers prompts a normal AI refuses. All 826 are free to download from Hugging Face, and each page shows what the model was built from, how big it is, the hardware it needs and its licence."
+    },
+    {
+      "title": "Qwen - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Qwen",
+      "snippet": "The distilled Qwen3.8 27B was released under a more permissive Apache License. The first iteration of Qwen, based on Meta AI &#x27;s Llama 1, launched a beta in April 2023, releasing the weights of its 72B model that December. A local version of Qwen is used by Apple Intelligence in China, integrated with the operating system."
+    }
+  ]
+}

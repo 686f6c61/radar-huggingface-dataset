@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "thanhdath/FINER-SQL-0.5B-CoRE-RL3000-a6000-20261023",
+  "slug": "thanhdath-finer-sql-0-5b-core-rl3000-a6000-20261023",
+  "author": "thanhdath",
+  "url": "https://huggingface.co/thanhdath/FINER-SQL-0.5B-CoRE-RL3000-a6000-20261023",
+  "created_at": "2026-10-23T02:20:56.000Z",
+  "updated_at": "2026-10-23T02:21:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-to-sql",
+    "reinforcement-learning",
+    "research",
+    "negative-result",
+    "base_model:griffith-bigdata/FINER-SQL-0.5B-BIRD",
+    "base_model:finetune:griffith-bigdata/FINER-SQL-0.5B-BIRD",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 999519720,
+  "storage_human": "1000 MB",
+  "base_model": "griffith-bigdata/FINER-SQL-0.5B-BIRD",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "thanhdath/FINER-SQL-0.5B-BIRD · Hugging Face",
+      "url": "https://huggingface.co/thanhdath/FINER-SQL-0.5B-BIRD",
+      "snippet": "License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Use this model FINER-SQL-.5B-BIRD FINER-SQL Model Family — Comparison Across All Sizes Inference Quick start (vLLM) Recommended evaluation pipeline Detailed BIRD Dev results (V2 prompts, n=30, vav) Cross-benchmark: this model on Spider Dev (zero-shot) Training License ..."
+    },
+    {
+      "title": "GitHub - thanhdath/finer-sql: [ICDE 2026] Boosting Small Language ...",
+      "url": "https://github.com/thanhdath/finer-sql/tree/main",
+      "snippet": "[ICDE 2026] Boosting Small Language Models for Text-to-SQL with Fine-Grained Execution Feedback and Cost-Efficient Rewards - thanhdath/finer-sql"
+    },
+    {
+      "title": "finer-sql/README.md at main · thanhdath/finer-sql · GitHub",
+      "url": "https://github.com/thanhdath/finer-sql/blob/main/README.md",
+      "snippet": "FINER-SQL introduces dense, interpretable rewards to train small language models (≤3B) for Text-to-SQL via Group Relative Policy Optimization (GRPO). Beyond from Format Reward and Execution Reward, it combines:"
+    },
+    {
+      "title": "FINER-SQL: Boosting Small Language Models for Text-to-SQL",
+      "url": "https://arxiv.org/html/2605.03465v1",
+      "snippet": "To overcome these issues, we propose FINER-SQL, a scalable and reusable reinforcement learning framework that enhances SLMs through fine-grained execution feedback. Built on group relative policy optimization, FINER-SQL replaces sparse supervision with dense and interpretable rewards that offer continuous feedback even for incorrect SQLs."
+    },
+    {
+      "title": "FINER-SQL: Boosting Small Language Models for Text-to-SQL",
+      "url": "https://arxiv.org/abs/2605.03465",
+      "snippet": "Large language models have driven major advances in Text-to-SQL generation. However, they suffer from high computational cost, long latency, and data privacy concerns, which make them impractical for many real-world applications."
+    }
+  ]
+}

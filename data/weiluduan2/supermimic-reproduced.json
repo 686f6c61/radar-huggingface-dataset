@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "weiluduan2/SuperMimic-Reproduced",
+  "slug": "weiluduan2-supermimic-reproduced",
+  "author": "weiluduan2",
+  "url": "https://huggingface.co/weiluduan2/SuperMimic-Reproduced",
+  "created_at": "2026-10-23T02:42:24.000Z",
+  "updated_at": "2026-10-23T02:53:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "arxiv:2610.28480",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 445031774,
+  "storage_human": "445 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SuperMimic: Humanoid Control in 3 Hours on 1 GPU (CoRL) - explainx.ai",
+      "url": "https://www.explainx.ai/blog/supermimic-berkeley-humanoid-whole-body-control-one-gpu-3-hours-differentiable-world-model-unitree-g1-2026",
+      "snippet": "← Back to blog explainx / blog SuperMimic: Berkeley Trains a Humanoid Motion Tracker in 3 Hours on One GPU Robotics, Humanoid Robots, World Models, Reinforcement Learning, AI Research Part of Robotics and Physical AI UC Berkeley SuperMimic uses one differentiable world model to train a humanoid whole-body tracker on 129,514 motions in 3 hours on one GPU. Results, fairness caveats, G1 demos."
+    },
+    {
+      "title": "GitHub - Motphys/Uni-SuperMimic: SuperMimic-UniLab: An Independent ...",
+      "url": "https://github.com/Motphys/Uni-SuperMimic",
+      "snippet": "Languages: English | 简体中文 UniSuperMimic is an independent downstream reproduction of SuperMimic on UniLab for Unitree G1 whole-body tracking of LAFAN1 motions, with mjwarp, MuJoCo, and Motrix backends. It includes a differentiable world model, a goal-conditioned policy, a Manager-Based task, tools for 40 motion assets, and entry points for training and deterministic full-library ..."
+    },
+    {
+      "title": "SuperMimic: Scaling Humanoid Whole-Body Control with One Differentiable ...",
+      "url": "https://arxiv.org/abs/2610.28480",
+      "snippet": "Tracking large human-motion datasets has become the dominant route to general, expressive humanoid whole-body control, but scaling across many motions is expensive. Current pipelines use model-free reinforcement learning, either merging per-motion specialists through lossy distillation, or brute-forcing a single policy with cluster-scale compute. SuperMimic amortizes learning across all ..."
+    },
+    {
+      "title": "GitHub - VeraZhang0311/supermimic_reproduced_hoi: vibe coded supermimic ...",
+      "url": "https://github.com/VeraZhang0311/supermimic_reproduced_hoi",
+      "snippet": "Unofficial reproduction of SuperMimic: Scaling Humanoid Whole-Body Control with One Differentiable World Model (arXiv 2610.28480) — no official code is released, so everything here is implemented from the paper. Target experiment: the controlled LAFAN1 comparison (Fig. 4a): 40 G1-retargeted LAFAN1 clips (2.45 h), one GPU; the paper reaches evaluation normalized return 0.82 after 1.2 h on an ..."
+    },
+    {
+      "title": "CoRL 2026｜新作SuperMimic：基于单一可微世界模型的大规模人形机器人全身控制【文献解读】-CSDN博客",
+      "url": "https://blog.csdn.net/qq_56908984/article/details/168752773",
+      "snippet": "文章浏览阅读645次。SuperMimic提出一种基于单一可微世界模型的大规模人形机器人全身动作跟踪方法，通过三阶段交替训练、短时域BPTT梯度优化与终端Critic协同，显著降低计算开销（单卡3小时达SOTA）。其核心是将机器人动力学统一建模为条件确定性神经世界模型，兼容标准非可微仿真器（如MuJoCo Warp ..."
+    }
+  ]
+}

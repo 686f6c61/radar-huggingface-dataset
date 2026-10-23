@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "Harsha001/Carbon-X-ROCmFPX",
+  "slug": "harsha001-carbon-x-rocmfpx",
+  "author": "Harsha001",
+  "url": "https://huggingface.co/Harsha001/Carbon-X-ROCmFPX",
+  "created_at": "2026-10-23T01:52:53.000Z",
+  "updated_at": "2026-10-23T02:20:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "rocmfpx",
+    "rocmfp4",
+    "amd",
+    "rocm",
+    "strix-halo",
+    "quantized",
+    "dna",
+    "genomics",
+    "biology",
+    "variant-effect-prediction",
+    "text-generation",
+    "en",
+    "base_model:HuggingFaceBio/Carbon-X",
+    "base_model:quantized:HuggingFaceBio/Carbon-X",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14822046720,
+  "parameters_human": "14.82B",
+  "storage_bytes": 44993689984,
+  "storage_human": "45.0 GB",
+  "base_model": "HuggingFaceBio/Carbon-X",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Harsha001/Carbon-X-ROCmFPX · Hugging Face",
+      "url": "https://huggingface.co/Harsha001/Carbon-X-ROCmFPX",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Harsha001/elephant-1-ROCmFPX · Hugging Face",
+      "url": "https://huggingface.co/Harsha001/elephant-1-ROCmFPX",
+      "snippet": "baselabs/elephant-1, Base Labs&#x27; 9B decision model (post-trained from Qwen3.5-9B), quantized to the ROCmFPX formats for AMD GPUs. Give it a state and a set of questions; it returns a probability for every option of every question from one shared prefill."
+    },
+    {
+      "title": "GitHub - ROCmFPX/ROCmFPX: This will be the official ROCmFPX stack and ...",
+      "url": "https://github.com/ROCmFPX/ROCmFPX",
+      "snippet": "Plugin system ROCmFPX plugin ABI v1 lets trusted native shared libraries register a standard ggml backend or receive model-open and model-close notifications for PLE, KV checkpoint, repack-cache, and expert-streaming sidecars. Set ROCMFPX_PLUGIN_PATH to a plugin file or directory before starting a ROCmFPX tool."
+    },
+    {
+      "title": "GitHub - charlie12345/ROCmFPX: ROCmFPX Family for AMD Hardware and ...",
+      "url": "https://github.com/charlie12345/ROCmFPX",
+      "snippet": "ROCmFPX adds experimental AMD-focused 2-, 3-, 4-, 6-, and 8-bit GGUF model-weight formats to llama.cpp, with CPU reference paths and accelerated HIP/ROCm and Vulkan kernels. Status: ROCmFPX is an experimental feature family on the canonical main branch. APIs, tuning choices, and performance can change. Results depend on hardware, drivers, model, prompt, and quantization recipe; use BF16/F16 ..."
+    },
+    {
+      "title": "CarbonX AI",
+      "url": "https://carbonx.gg/",
+      "snippet": "Our private CarbonX AI tool. Combines advanced neural networks on a secondary PC with a physical Arduino that is spoofed to match 1:1 with a real mouse to negate detections."
+    }
+  ]
+}

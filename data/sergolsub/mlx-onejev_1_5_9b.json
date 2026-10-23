@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "sergolsub/mlx-onejev_1_5_9B",
+  "slug": "sergolsub-mlx-onejev_1_5_9b",
+  "author": "sergolsub",
+  "url": "https://huggingface.co/sergolsub/mlx-onejev_1_5_9B",
+  "created_at": "2026-10-23T01:35:45.000Z",
+  "updated_at": "2026-10-23T02:43:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "base_model:OmniJev/OneJev1.5-9B",
+    "base_model:finetune:OmniJev/OneJev1.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 11400128255,
+  "storage_human": "11.4 GB",
+  "base_model": "OmniJev/OneJev1.5-9B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "求助！！python3.7.4 找不到 http.server -CSDN社区",
+      "url": "https://bbs.csdn.net/topics/392923697",
+      "snippet": "Jul 24, 2019 · 以下内容是CSDN社区关于求助！！python3.7.4 找不到 http.server 相关内容，如果想了解更多关于脚本语言社区其他 …"
+    },
+    {
+      "title": "无法解析的外部符号 _DEVPKEY_Device_Class-CSDN社区",
+      "url": "https://bbs.csdn.net/topics/370244729",
+      "snippet": "Oct 13, 2011 · 以下内容是CSDN社区关于无法解析的外部符号 _DEVPKEY_Device_Class相关内容，如果想了解更多关于驱动开发/核 …"
+    },
+    {
+      "title": "Like glue in texture - 7LittleWordsAnswers.com",
+      "url": "https://7littlewordsanswers.com/like-glue-in-texture-7-little-words-bonus-3",
+      "snippet": "Sep 26, 2026 · Below you will find the solution for: Like glue in texture 7 Little Words which contains 9 Letters."
+    },
+    {
+      "title": "Wall Street Journal Crossword February 25 2026 answers",
+      "url": "https://7littlewordsanswers.com/wall-street-journal-crossword-february-25-2026-answers",
+      "snippet": "Feb 25, 2026 · On this page you may find all the solutions and answers for Wall Street Journal Crossword February 25 2026. This …"
+    },
+    {
+      "title": "为什么git一个目录pull之后会有这么多本地文件变化需要提交-CSDN社区",
+      "url": "https://bbs.csdn.net/topics/390969551",
+      "snippet": "Jan 11, 2015 · 以下内容是CSDN社区关于为什么git一个目录pull之后会有这么多本地文件变化需要提交相关内容，如果想了解更多关于 …"
+    }
+  ]
+}

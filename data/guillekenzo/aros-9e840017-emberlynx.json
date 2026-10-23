@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "guillekenzo/aros-9e840017-EmberLynx",
+  "slug": "guillekenzo-aros-9e840017-emberlynx",
+  "author": "guillekenzo",
+  "url": "https://huggingface.co/guillekenzo/aros-9e840017-EmberLynx",
+  "created_at": "2026-10-23T02:04:48.000Z",
+  "updated_at": "2026-10-23T02:24:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 676828711,
+  "storage_human": "677 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "guillekenzo (garcia) - Hugging Face",
+      "url": "https://huggingface.co/guillekenzo",
+      "snippet": "Image-to-image upscaler using NVIDIA PiD from_clean_flux. guillekenzo May 26. models 153. Sort: Recently updated. guillekenzo/aros-09cc5fd4-MellowDuality"
+    },
+    {
+      "title": "guillekenzo/aros-00ae1a96-Lynx · Hugging Face",
+      "url": "https://huggingface.co/guillekenzo/aros-00ae1a96-Lynx",
+      "snippet": "guillekenzo / aros-00ae1a96-Lynx like 0 Text-to-Image Diffusers lora krea2 template:sd-lora License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "aros-e9b8b4fb-Lily: Model Details, Context & Pricing | Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/hf-guillekenzo-aros-e9b8b4fb-lily",
+      "snippet": "aros-e9b8b4fb-Lily AI model directory entry. Context window Not listed Last source check 8/20/2026, 5:52:07 AM Input / million tokens Not listed Output / million tokens Not listed guillekenzo Source record ↗ Official link ↗"
+    },
+    {
+      "title": "Best Free AI Models & APIs (2026) | LM Market Cap",
+      "url": "https://lmmarketcap.com/free-ai-models",
+      "snippet": "Every free AI model ranked by quality: free LLMs, coding assistants, and image generators. No API costs, open-source, and ready to use. Start for free."
+    },
+    {
+      "title": "Free Roblox Models | Community Gallery · robloxmodels.ai",
+      "url": "https://robloxmodels.ai/gallery",
+      "snippet": "Free Roblox models made with AI and published by the people who made them: props, furniture, weapons and scenery. Open any in 3D and download the .glb for Roblox Studio."
+    }
+  ]
+}

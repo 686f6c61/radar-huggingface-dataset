@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "podolinsky/groot-libero-x-probe-lstm-onset-traj-mode-clip-skill-toggle-appliance-on",
+  "slug": "podolinsky-groot-libero-x-probe-lstm-onset-traj-mode-clip-skill-toggle-appliance-on",
+  "author": "podolinsky",
+  "url": "https://huggingface.co/podolinsky/groot-libero-x-probe-lstm-onset-traj-mode-clip-skill-toggle-appliance-on",
+  "created_at": "2026-10-23T02:35:31.000Z",
+  "updated_at": "2026-10-23T02:35:36.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "robotics",
+    "failure-detection",
+    "vision-language-action",
+    "libero",
+    "dataset:podolinsky/gr00t-libero-x-features-v3",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6622240,
+  "parameters_human": "6.6M",
+  "storage_bytes": 26539972,
+  "storage_human": "27 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Drive : connexion",
+      "url": "https://drive.google.com/?hl=fr",
+      "snippet": "Accédez à Google Drive avec un compte Google (à usage personnel) ou un compte Google Workspace (à usage professionnel)."
+    },
+    {
+      "title": "Google Disk: Innlogging",
+      "url": "https://drive.google.com/?hl=no",
+      "snippet": "Bruk Google Disk med en Google-konto (for personlig bruk) eller en Google Workspace-konto (for bedriftsbruk)."
+    },
+    {
+      "title": "Inloggen - Google Drive",
+      "url": "https://drive.google.com/?hl=nl",
+      "snippet": "Krijg toegang tot Google Drive met een Google-account (voor persoonlijk gebruik) of een Google Workspace-account (voor zakelijk …"
+    },
+    {
+      "title": "Google Drive: Sign-in",
+      "url": "https://drive.google.com/",
+      "snippet": "Access Google Drive with a Google account (for personal use) or Google Workspace account (for business use)."
+    },
+    {
+      "title": "Google Keep",
+      "url": "https://drive.google.com/keep/?hl=fr",
+      "snippet": "Save your thoughts, wherever you are."
+    }
+  ]
+}

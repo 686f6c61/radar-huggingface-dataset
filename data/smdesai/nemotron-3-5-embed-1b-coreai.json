@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "smdesai/Nemotron-3.5-Embed-1B-CoreAI",
+  "slug": "smdesai-nemotron-3-5-embed-1b-coreai",
+  "author": "smdesai",
+  "url": "https://huggingface.co/smdesai/Nemotron-3.5-Embed-1B-CoreAI",
+  "created_at": "2026-10-23T02:05:36.000Z",
+  "updated_at": "2026-10-23T02:06:41.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "visual-document-retrieval",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "core-ai",
+    "coreai",
+    "apple",
+    "ios",
+    "iphone",
+    "macos",
+    "on-device",
+    "embeddings",
+    "retrieval",
+    "multimodal",
+    "matryoshka",
+    "visual-document-retrieval",
+    "base_model:nvidia/Nemotron-3.5-Embed-1B-BF16",
+    "base_model:quantized:nvidia/Nemotron-3.5-Embed-1B-BF16",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4421672075,
+  "storage_human": "4.4 GB",
+  "base_model": "nvidia/Nemotron-3.5-Embed-1B-BF16",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nemotron-3.5-embed-1b Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3_5-embed-1b",
+      "snippet": "1B multimodal embedding model for text and document-image retrieval in RAG applications."
+    },
+    {
+      "title": "smdesai/Nemotron-3.5-Parse-CoreAI · Hugging Face",
+      "url": "https://huggingface.co/smdesai/Nemotron-3.5-Parse-CoreAI",
+      "snippet": "Nemotron 3.5 Parse for Core AI nvidia/Nemotron-3.5-Parse, a 0.63B document parser (text, layout classes and boxes, tables as LaTeX, charts), converted to Apple Core AI to run on an iPhone or a Mac. This is the phone build: fp16 compute, the vision encoder in fp16 and the decoder&#x27;s weights in int8, with speculative decoding through the checkpoint&#x27;s multi-token-prediction head."
+    },
+    {
+      "title": "nvidia/Nemotron-3.5-Embed-1B-BF16 · Hugging Face",
+      "url": "https://huggingface.co/nvidia/Nemotron-3.5-Embed-1B-BF16",
+      "snippet": "Nemotron-3.5-Embed-1B-BF16 is a versatile embedding model developed by NVIDIA for multimodal and multilingual question-answering retrieval. The model can embed a document page in the form of an image, text, or combined image-text input. Documents can be retrieved given a user query in text form ..."
+    },
+    {
+      "title": "nvidia / nemotron-3.5-embed-1b",
+      "url": "https://docs.api.nvidia.com/nim/reference/nvidia-nemotron-3_5-embed-1b",
+      "snippet": "The Nemotron-3.5-Embed-1B-BF16 is suitable for users who want to build a multimodal question-and-answer application over a large corpus, leveraging the latest dense retrieval technology. The input of the model is a text or a document image, and the output is a fixed-size embedding vector. The embedding model is a bi-encoder that supports context in textual format (e.g. the query or the OCR ..."
+    },
+    {
+      "title": "Nemotron AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/topics/ai/nemotron",
+      "snippet": "Nemotron Pre- and Post-Training Datasets NVIDIA provides more than 12T tokens of multilingual reasoning, coding, and safety data, plus the post-training datasets that ship with Nemotron models, to help the community build their custom models. Released with Nemotron 3.5 Super VL: a synthetic Indic pretraining corpus of about 2.83T tokens in 22 languages, co-created with IIT Madras."
+    }
+  ]
+}

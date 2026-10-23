@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "praiselab-picuslab/benchmark-slm-fiven-phi-1_5-ctxq",
+  "slug": "praiselab-picuslab-benchmark-slm-fiven-phi-1_5-ctxq",
+  "author": "praiselab-picuslab",
+  "url": "https://huggingface.co/praiselab-picuslab/benchmark-slm-fiven-phi-1_5-ctxq",
+  "created_at": "2026-10-23T08:30:22.000Z",
+  "updated_at": "2026-10-23T08:30:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "it"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "benchmark-slm",
+    "or2",
+    "dataset-fiven",
+    "strategy-ctxq",
+    "text-generation",
+    "it",
+    "base_model:microsoft/phi-1_5",
+    "base_model:adapter:microsoft/phi-1_5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25191488,
+  "storage_human": "25 MB",
+  "base_model": "microsoft/phi-1_5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

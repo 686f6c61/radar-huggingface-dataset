@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "dsaasaiaos/Qwen-Image-2.1-Multiple-Angles-LoRA",
+  "slug": "dsaasaiaos-qwen-image-2-1-multiple-angles-lora",
+  "author": "dsaasaiaos",
+  "url": "https://huggingface.co/dsaasaiaos/Qwen-Image-2.1-Multiple-Angles-LoRA",
+  "created_at": "2026-10-23T02:15:46.000Z",
+  "updated_at": "2026-10-23T02:15:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "qwen-image-2.1",
+    "lora",
+    "camera-control",
+    "multiple-angles",
+    "image-editing",
+    "multi-view",
+    "dome-objaverse",
+    "image-to-image",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:adapter:Qwen/Qwen-Image-2.1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6554909637,
+  "storage_human": "6.6 GB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen-Image-2.1-Multiple-Angles-LoRA - Hugging Face",
+      "url": "https://huggingface.co/akhaliq/Qwen-Image-2.1-Multiple-Angles-LoRA",
+      "snippet": "Qwen-Image-2.1 · Multiple-Angles camera-control LoRA Reshoot any object from a controlled camera position: feed a photo, ask for a different azimuth/elevation, get the same subject from that angle. First camera-control LoRA for Qwen-Image-2.1 — the newest Qwen image base (unified generate + edit, native RGBA), where this format did not exist yet."
+    },
+    {
+      "title": "akhaliq/Qwen-Image-2.1-Multiple-Angles-LoRA at main",
+      "url": "https://huggingface.co/akhaliq/Qwen-Image-2.1-Multiple-Angles-LoRA/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen-Image-2.1: Qwen&#x27;s most powerful open-source image ...",
+      "url": "https://github.com/QwenLM/Qwen-Image-2.1",
+      "snippet": "We are excited to open-source Qwen-Image-2.1, a unified text-to-image generation and image editing model in the Qwen family. With just 7B parameters in its visual generation component (32 Single-Stream DiT layers), Qwen-Image-2.1 balances generation quality, inference efficiency, and versatility. Four key improvements define this release: Compact and Efficient — A lightweight architecture ..."
+    },
+    {
+      "title": "Qwen-Image 2.1 Multiple-Angles LoRA: Reshoot Objects From Any View",
+      "url": "https://comfyui-wiki.com/en/news/2026-10-07-qwen-image-2-1-multiple-angles-lora",
+      "snippet": "Akhaliq&#x27;s Multiple-Angles LoRA gives Qwen-Image 2.1 camera control: feed a photo, pick one of 72 azimuth and elevation framings, and reshoot the subject in ComfyUI."
+    },
+    {
+      "title": "QMA - Qwen Image 2.1 Multi Camera Angle LoRA",
+      "url": "https://civitai.com/models/2998617/qma-qwen-image-21-multi-camera-angle-lora",
+      "snippet": "QMA Camera Angles - Qwen Image 2.1 Edit LoRA Move the camera, keep everything else (Mostly). Give it an image and a camera position. It renders the same subject, scene and style from the new angle. Orbit all the way around, raise or lower the camera, or pull in for a close-up. This is an edit LoRA for Qwen Image 2.1, so it always needs a source image. HOW TO PROMPT Every prompt follows the ..."
+    }
+  ]
+}

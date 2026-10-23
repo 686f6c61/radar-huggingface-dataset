@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "linoyts/ltx2-19b-distilled-faceswap-v3",
+  "slug": "linoyts-ltx2-19b-distilled-faceswap-v3",
+  "author": "linoyts",
+  "url": "https://huggingface.co/linoyts/ltx2-19b-distilled-faceswap-v3",
+  "created_at": "2026-03-03T10:10:42.000Z",
+  "updated_at": "2026-03-03T10:14:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 70,
+  "downloads_30d": 63,
+  "trending_score": 0,
+  "parameters": 18876174592,
+  "parameters_human": "18.88B",
+  "storage_bytes": 37752775680,
+  "storage_human": "37.8 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

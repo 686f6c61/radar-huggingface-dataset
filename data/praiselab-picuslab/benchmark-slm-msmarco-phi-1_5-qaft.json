@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "praiselab-picuslab/benchmark-slm-msmarco-phi-1_5-qaft",
+  "slug": "praiselab-picuslab-benchmark-slm-msmarco-phi-1_5-qaft",
+  "author": "praiselab-picuslab",
+  "url": "https://huggingface.co/praiselab-picuslab/benchmark-slm-msmarco-phi-1_5-qaft",
+  "created_at": "2026-10-23T08:35:25.000Z",
+  "updated_at": "2026-10-23T08:35:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "benchmark-slm",
+    "or2",
+    "dataset-msmarco",
+    "strategy-qaft",
+    "text-generation",
+    "en",
+    "dataset:microsoft/ms_marco",
+    "base_model:microsoft/phi-1_5",
+    "base_model:adapter:microsoft/phi-1_5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25191488,
+  "storage_human": "25 MB",
+  "base_model": "microsoft/phi-1_5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

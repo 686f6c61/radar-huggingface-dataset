@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "cuio/dit-Q4_0-Qualcomm",
+  "slug": "cuio-dit-q4_0-qualcomm",
+  "author": "cuio",
+  "url": "https://huggingface.co/cuio/dit-Q4_0-Qualcomm",
+  "created_at": "2026-10-23T02:31:11.000Z",
+  "updated_at": "2026-10-23T02:31:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12820073036,
+  "parameters_human": "12.82B",
+  "storage_bytes": 114197783824,
+  "storage_human": "114.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anime Sama: Nouvelle adresse du site (Octobre 2026)",
+      "url": "https://www.univers-otaku.com/anime-sama/",
+      "snippet": "Feb 20, 2026 · Marre des liens morts ? Trouvez la nouvelle adresse d'Anime-Sama en 2026 grâce à notre guide mis à jour en temps …"
+    },
+    {
+      "title": "Anime sama : nouvelle adresse (Octobre 2026)",
+      "url": "https://mondehorizon.com/anime-sama-nouvelle-adresse/",
+      "snippet": "Jun 25, 2025 · Anime sama : nouvelle adresse Claudine 25 juin 2025 5 min read Dernière mise à jour : 10/10/2026 à 9:11 Anime …"
+    },
+    {
+      "title": "Anime Sama – Streaming et Catalogage d’Animes et Scans",
+      "url": "https://www.animes-sama.co/",
+      "snippet": "Streaming Anime HD Anime Sama – Streaming et Catalogage d’Animes et Scans Découvrez les dernières séries anime, films …"
+    },
+    {
+      "title": "Anime Sama - Streaming et Catalogue d’Animes VF et VOSTFR",
+      "url": "https://animesama.social/",
+      "snippet": "Anime Sama est une plateforme francophone pour le streaming et l’indexation d’animes VF et VOSTFR, offrant un accès gratuit aux …"
+    },
+    {
+      "title": "Anime sama : nouvelle adresse du 23 octobre 2026",
+      "url": "https://tour-dhorizon.com/anime-sama-524/",
+      "snippet": "Anime Sama, ou Anime-Sama, est un site de streaming d’animation japonaise très apprécié en France et autres pays francophones. …"
+    }
+  ]
+}

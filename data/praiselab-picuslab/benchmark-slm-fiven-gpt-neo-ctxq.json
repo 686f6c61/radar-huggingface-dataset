@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "praiselab-picuslab/benchmark-slm-fiven-gpt-neo-ctxq",
+  "slug": "praiselab-picuslab-benchmark-slm-fiven-gpt-neo-ctxq",
+  "author": "praiselab-picuslab",
+  "url": "https://huggingface.co/praiselab-picuslab/benchmark-slm-fiven-gpt-neo-ctxq",
+  "created_at": "2026-10-23T08:29:05.000Z",
+  "updated_at": "2026-10-23T08:29:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "it"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "benchmark-slm",
+    "or2",
+    "dataset-fiven",
+    "strategy-ctxq",
+    "text-generation",
+    "it",
+    "base_model:EleutherAI/gpt-neo-1.3B",
+    "base_model:adapter:EleutherAI/gpt-neo-1.3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25192784,
+  "storage_human": "25 MB",
+  "base_model": "EleutherAI/gpt-neo-1.3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Porn Videos & Sex Movies - Porno, XXX, Porn Tube | Pornhub",
+      "url": "https://www.pornhub.com/",
+      "snippet": "Enjoy the largest amateur porn community on the net as well as full-length scenes from the top XXX studios. We update our porn …Read more"
+    },
+    {
+      "title": "Free Porn Videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/",
+      "snippet": "XVideos.com is a free hosting service for porn videos. We convert your files to various formats. You can grab our 'embed code' to …"
+    },
+    {
+      "title": "Free Porn, Sex, Tube Videos, XXX Pics, Pussy in Porno Movies",
+      "url": "https://www.xnxx.com/",
+      "snippet": "XNXX delivers free sex movies and fast free porn videos (tube porn). Now 10 million+ sex vids available for free! Featuring hot pussy, …"
+    },
+    {
+      "title": "Free Porn Videos & XXX Movies - Sex Videos Tube",
+      "url": "https://xhamster.com/",
+      "snippet": "Free porn videos and exclusive XXX movies are here at xHamster. Instantly stream 6M+ hardcore sex videos from pros and …"
+    },
+    {
+      "title": "Pornicom - Tube porno HD & vidéos de sexe XXX",
+      "url": "https://fr.pornicom.com/",
+      "snippet": "Profitez de milliers de vidéos pour adultes explicites en HD & 4K gratuitement. Diffusez de nouveaux clips XXX en ligne, regardez du …"
+    }
+  ]
+}

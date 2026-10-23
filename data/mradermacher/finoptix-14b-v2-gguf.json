@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "mradermacher/FinOptix-14B-v2-GGUF",
+  "slug": "mradermacher-finoptix-14b-v2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/FinOptix-14B-v2-GGUF",
+  "created_at": "2026-10-23T08:36:45.000Z",
+  "updated_at": "2026-10-23T08:47:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "finops",
+    "aws",
+    "terraform",
+    "cost-optimization",
+    "dbt",
+    "qlora",
+    "unsloth",
+    "en",
+    "es",
+    "base_model:ccortezb/FinOptix-14B-v2",
+    "base_model:quantized:ccortezb/FinOptix-14B-v2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 102043521856,
+  "storage_human": "102.0 GB",
+  "base_model": "ccortezb/FinOptix-14B-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

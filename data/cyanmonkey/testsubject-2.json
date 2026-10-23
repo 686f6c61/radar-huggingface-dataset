@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "CyanMonkey/TestSubject-2",
+  "slug": "cyanmonkey-testsubject-2",
+  "author": "CyanMonkey",
+  "url": "https://huggingface.co/CyanMonkey/TestSubject-2",
+  "created_at": "2026-10-19T09:08:31.000Z",
+  "updated_at": "2026-10-23T07:41:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "rose_x1_5",
+    "causal-lm",
+    "gqa",
+    "qk-norm",
+    "rope",
+    "swiglu",
+    "refresh-gate",
+    "rose-x1",
+    "custom_code",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 258,
+  "trending_score": 0,
+  "parameters": 98765504,
+  "parameters_human": "98.8M",
+  "storage_bytes": 86541748268,
+  "storage_human": "86.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CyanMonkey/Test-S · Hugging Face",
+      "url": "https://huggingface.co/CyanMonkey/Test-S",
+      "snippet": "CyanMonkey / Test-S Like 0 Reinforcement Learning Safetensors PyTorch chessnet chess License:mit Model card FilesFiles and versions xet Community Copy to bucket new Architecture Training Board Encoding Move Encoding #Chess Engine"
+    },
+    {
+      "title": "CyanMonkey (Mr. Black Beard) - Hugging Face",
+      "url": "https://huggingface.co/CyanMonkey",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 17 days ago ... published a model 20 days ago"
+    },
+    {
+      "title": "GitHub - samssouza/uncensored-ai-list",
+      "url": "https://github.com/samssouza/uncensored-ai-list",
+      "snippet": "Contribute to samssouza/uncensored-ai-list development by creating an account on GitHub."
+    },
+    {
+      "title": "Odysseus AI - Self-Hosted AI Workspace Setup Guide",
+      "url": "https://odysseusai.dev/",
+      "snippet": "Odysseus AI Setup Guide For PewDiePie&#x27;s self-hosted AI workspace Verify the official source, choose Docker, Windows, macOS, or Linux, connect Ollama or API keys, read logs, choose a model that fits your hardware, and avoid unsafe public deployment."
+    },
+    {
+      "title": "AI Model Downloads - 492 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    }
+  ]
+}

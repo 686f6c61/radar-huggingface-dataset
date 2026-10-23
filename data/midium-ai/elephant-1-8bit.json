@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "midium-ai/elephant-1-8bit",
+  "slug": "midium-ai-elephant-1-8bit",
+  "author": "midium-ai",
+  "url": "https://huggingface.co/midium-ai/elephant-1-8bit",
+  "created_at": "2026-10-23T02:35:12.000Z",
+  "updated_at": "2026-10-23T02:35:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "decision-model",
+    "system-one",
+    "8-bit",
+    "base_model:baselabs/elephant-1",
+    "base_model:quantized:baselabs/elephant-1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953801728,
+  "parameters_human": "8.95B",
+  "storage_bytes": 9534521362,
+  "storage_human": "9.5 GB",
+  "base_model": "baselabs/elephant-1",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "midium-ai (Midium) - Hugging Face",
+      "url": "https://huggingface.co/midium-ai/models",
+      "snippet": "Org profile for Midium on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "8bit AI Models (26) | Civitai",
+      "url": "https://civitai.com/tag/8bit",
+      "snippet": "Browse 26 AI models tagged \"8bit\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    },
+    {
+      "title": "Deploying Wildlife Detection AI on a $20 Microcontroller: What ... - Medium",
+      "url": "https://medium.com/@elonmeried31/deploying-wildlife-detection-ai-on-a-20-microcontroller-what-i-learned-33cf34a729f4",
+      "snippet": "Deploying Wildlife Detection AI on a $20 Microcontroller: What I Learned Camera traps are the backbone of modern conservation — but they come with a hidden cost: data overload. These systems …"
+    },
+    {
+      "title": "GitHub - elefant-ai/open-p2p: Official Repo for paper: Scaling Behavior ...",
+      "url": "https://github.com/elefant-ai/open-p2p/",
+      "snippet": "Open Pixel2Play (P2P) is an open foundation model trained to play video games in real time. The model takes visual input (images) and text instructions and outputs keyboard and mouse actions, enabling direct interaction with real game environments. This is the official repo for paper Scaling Behavior Cloning Improves Causal Reasoning: An Open Model for Real-Time Video Game Playing. P2P is ..."
+    },
+    {
+      "title": "GitHub - ksdeshan2002/Elephant_detection_AI_model: A complete machine ...",
+      "url": "https://github.com/ksdeshan2002/Elephant_detection_AI_model",
+      "snippet": "This repository contains the complete Machine Learning pipeline used to train, augment, optimize, and quantize a lightweight image classification model for edge devices. While the architecture and scripts here can be adapted for various edge AI tasks, this specific pipeline was developed to train ..."
+    }
+  ]
+}

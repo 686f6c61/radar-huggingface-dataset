@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "lshid28/Qwen3.5-2B-ToolCalling-LoRA",
+  "slug": "lshid28-qwen3-5-2b-toolcalling-lora",
+  "author": "lshid28",
+  "url": "https://huggingface.co/lshid28/Qwen3.5-2B-ToolCalling-LoRA",
+  "created_at": "2026-10-23T02:22:46.000Z",
+  "updated_at": "2026-10-23T02:22:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 289152957,
+  "storage_human": "289 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kihyun-K/Qwen3.5-2B-ToolCalling-LoRA · Hugging Face",
+      "url": "https://huggingface.co/kihyun-K/Qwen3.5-2B-ToolCalling-LoRA",
+      "snippet": "How to use kihyun-K/Qwen3.5-2B-ToolCalling-LoRA with Transformers: ... Notebooks Google Colab Kaggle Local AppsSettings Unsloth Desktop Model Card for Model ID Model Details Model Description Model Sources [optional] Uses Direct Use Downstream Use [optional] Out-of-Scope Use Bias, Risks, and Limitations Recommendations How to Get Started with ..."
+    },
+    {
+      "title": "egoigo/Qwen3.5-2B-ToolCalling-LoRA · Hugging Face",
+      "url": "https://huggingface.co/egoigo/Qwen3.5-2B-ToolCalling-LoRA",
+      "snippet": "How to use egoigo/Qwen3.5-2B-ToolCalling-LoRA with Transformers: ... Notebooks Google Colab Kaggle Local AppsSettings Unsloth Desktop Model Card for Model ID Model Details Model Description Model Sources [optional] Uses Direct Use Downstream Use [optional] Out-of-Scope Use Bias, Risks, and Limitations Recommendations How to Get Started with the ..."
+    },
+    {
+      "title": "Qwen3.5-2B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_5_2b",
+      "snippet": "Qwen3.5-2B Balanced 2B parameter model from the Qwen3.5 series for on‑device inference. Qwen3.5 is the latest multilingual language model series from Alibaba Cloud with improved reasoning and instruction‑following capabilities over Qwen3."
+    },
+    {
+      "title": "Qwen3.5 Fine-tuning Guide | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.5/fine-tune",
+      "snippet": "Unsloth supports vision fine-tuning for the multimodal Qwen3.5 models. Use the below Qwen3.5 notebooks and change the respective model names to your desired Qwen3.5 model."
+    },
+    {
+      "title": "Nani Qwen 3.5 2B - ethereum.org",
+      "url": "https://ethereum.org/developers/tools/nani-qwen-35-2b/",
+      "snippet": "Nani Qwen 3.5 2B is a fine-tuned Qwen3.5-2B language model for crypto wallet tool calling, trained with LoRA on roughly 2,000 examples covering 103 blockchain tools. It is designed to resolve ENS names, check balances, execute swaps, and perform other wallet operations as structured tool calls, and is distributed as open GGUF weights for local inference."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "nm-testing",
   "url": "https://huggingface.co/nm-testing/kv_cache_gptq_tinyllama-e2e",
   "created_at": "2026-10-15T02:04:50.000Z",
-  "updated_at": "2026-10-22T15:06:46.000Z",
+  "updated_at": "2026-10-23T02:01:39.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -22,8 +22,8 @@
   "trending_score": 0,
   "parameters": 1100048428,
   "parameters_human": "1.10B",
-  "storage_bytes": 16447703184,
-  "storage_human": "16.4 GB",
+  "storage_bytes": 17195326056,
+  "storage_human": "17.2 GB",
   "base_model": null,
   "formats": [
     "safetensors"

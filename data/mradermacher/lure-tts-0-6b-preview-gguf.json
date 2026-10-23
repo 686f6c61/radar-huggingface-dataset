@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "mradermacher/lure-tts-0.6b-preview-GGUF",
+  "slug": "mradermacher-lure-tts-0-6b-preview-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/lure-tts-0.6b-preview-GGUF",
+  "created_at": "2026-10-23T08:50:19.000Z",
+  "updated_at": "2026-10-23T08:54:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-to-speech",
+    "tts",
+    "voice-cloning",
+    "expressive-speech",
+    "preview",
+    "en",
+    "base_model:smirki/lure-tts-0.6b-preview",
+    "base_model:quantized:smirki/lure-tts-0.6b-preview",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 602341376,
+  "parameters_human": "602.3M",
+  "storage_bytes": 6403931840,
+  "storage_human": "6.4 GB",
+  "base_model": "smirki/lure-tts-0.6b-preview",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

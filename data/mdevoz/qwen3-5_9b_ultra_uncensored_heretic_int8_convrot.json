@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mdevoz/qwen3.5_9b_ultra_uncensored_heretic_int8_convrot",
+  "slug": "mdevoz-qwen3-5_9b_ultra_uncensored_heretic_int8_convrot",
+  "author": "mdevoz",
+  "url": "https://huggingface.co/mdevoz/qwen3.5_9b_ultra_uncensored_heretic_int8_convrot",
+  "created_at": "2026-10-19T08:45:24.000Z",
+  "updated_at": "2026-10-19T09:20:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 13,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9748114548,
+  "storage_human": "9.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qwen3.5_9b_qwen_image_2.1_pe_i2i_heretic.int8_convrot.mtp.safetensors ...",
+      "url": "https://huggingface.co/netrunner-exe/Qwen-Image-2.1-PE-Heretic/blob/main/qwen3.5_9b_qwen_image_2.1_pe_i2i_heretic.int8_convrot.mtp.safetensors",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5-9B-Uncensored-HauhauCS-Aggressive-MTP-GGUF-NVFP4",
+      "url": "https://huggingface.co/AIconjured/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive-MTP-GGUF-NVFP4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Heretic: Fully automatic censorship removal for language models",
+      "url": "https://github.com/p-e-w/heretic",
+      "snippet": "Heretic: Fully automatic censorship removal for language models Heretic is a tool that removes censorship (aka \"safety alignment\") from transformer-based language models without expensive post-training."
+    },
+    {
+      "title": "Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP ...",
+      "url": "https://www.localainews.co/news/multimodal/qwen3-5-9b-the-defiant-fable-uncensored-heretic-neo-imatrix-max-mtp-gguf-roars/",
+      "snippet": "Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-GGUF is a new fine-tuned AI model release built on the Qwen3.5-9B foundation. This release is a GGUF quantized version, making it compatible with standard AI applications for local use. It is designed as a \"Heretic\" model, meaning it provides uncensored responses without question."
+    },
+    {
+      "title": "Qwen 3 VL node for ComfyUI + Qwen 3 VL (Heretic, uncensored) model",
+      "url": "https://civitai.com/models/2200639/qwen-3-vl-node-for-comfyui-qwen-3-vl-heretic-uncensored-model",
+      "snippet": "As for \"heretic support\" it is easy to add heretic model into the available QWEN 3.5 VL node from registry. It is needed to edit the file with the list of models by adding the \" someuser/model-name \" element into the array of model name in one or two .py files and add a SYSTEM_PROMPT options."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "betsyxw/microduck-sprint-s1",
+  "slug": "betsyxw-microduck-sprint-s1",
+  "author": "betsyxw",
+  "url": "https://huggingface.co/betsyxw/microduck-sprint-s1",
+  "created_at": "2026-10-23T02:19:04.000Z",
+  "updated_at": "2026-10-23T02:19:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5643355,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home | tophotfashion | Supplier Product Catalog",
+      "url": "https://tophotfashion.x.yupoo.com/albums?lang=en-US",
+      "snippet": "Risk warning: The content of pictures and videos within the pages of this site are for display use only."
+    },
+    {
+      "title": "全部分类 | tophotfashion | Supplier Product Catalog",
+      "url": "https://tophotfashion.x.yupoo.com/categories",
+      "snippet": "tophotfashion - Supplier Product Catalog Whatsapp：‪‬‪+852 51487905 Wechat：TopHot99 https://discord.gg/tophot"
+    },
+    {
+      "title": "首页 | tophotfashion | Supplier Product Catalog",
+      "url": "https://tophotfashion.x.yupoo.com/",
+      "snippet": "如因上传、制作的内容，或者其他行为涉及侵犯其他任何第三方合法权益的，用户以其侵权行为承担相应的法律责任，包括但不限于 …"
+    },
+    {
+      "title": "Home | NO.1 FACTORY | Factory - Yupoo",
+      "url": "https://no1factory.x.yupoo.com/albums?lang=en",
+      "snippet": "Recently, a number of low price scams have been found in Italy. No1Factory confirms again that all our business accounts are …"
+    },
+    {
+      "title": "Shoes | 分类 | tophotfashion | Supplier Product Catalog",
+      "url": "https://tophotfashion.x.yupoo.com/categories/4645167",
+      "snippet": "tophotfashion - Supplier Product Catalog Whatsapp：‪‬‪+86 15221859316 Wechat：TopHot99 https://discord.gg/tophot"
+    }
+  ]
+}

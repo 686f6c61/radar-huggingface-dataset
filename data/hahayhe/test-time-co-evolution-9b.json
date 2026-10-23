@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "hahayhe/test-time-co-evolution-9B",
+  "slug": "hahayhe-test-time-co-evolution-9b",
+  "author": "hahayhe",
+  "url": "https://huggingface.co/hahayhe/test-time-co-evolution-9B",
+  "created_at": "2026-10-23T01:35:21.000Z",
+  "updated_at": "2026-10-23T03:06:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "sft",
+    "reasoning",
+    "tool-use",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839711717,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "代码注释中经常用到的 TODO、XXX、FIXME 有什么区别？",
+      "url": "https://www.zhihu.com/question/19563346",
+      "snippet": "Feb 18, 2011 · 这些是注释中的标签（tag），有时也被称作“代码标签（codetag）”或“标记（token）”。 虽然它们在编写代码中属于非 …"
+    },
+    {
+      "title": "性染色体是XXX、XXY和XYY为什么会对人的性格产生影响？",
+      "url": "https://www.zhihu.com/question/31068044",
+      "snippet": "47,XXX (也称为X三体)是女性最常见的性染色体异常。 大多数47,XXX个体在产前遗传学筛查时偶然确诊。 这些女性的后代发生染色 …"
+    },
+    {
+      "title": "xXx: The Return of Xander Cage actor Vin Diesel is crushing over ...",
+      "url": "https://www.india.com/entertainment/xxx-the-return-of-xander-cage-actor-vin-diesel-is-crushing-over-deepika-padukone-this-statement-is-proof-1756703/",
+      "snippet": "Mumbai, Jan 13: H ollywood action star Vin Diesel, who will be sharing the screen space with Deepika Padukone in “xXx: Return of …"
+    },
+    {
+      "title": "Viral News: Latest Viral Videos, Viral News, Google Top Trending …",
+      "url": "https://www.india.com/viral/",
+      "snippet": "Top Viral News and Viral Videos, Get the latest, funniest and trending Viral Videos, Songs, Pictures, Viral on Social media at …"
+    },
+    {
+      "title": "工行95588给我打电话，接了开了免提，客服问我是不是xxx（也就是 …",
+      "url": "https://www.zhihu.com/question/505067168",
+      "snippet": "工行95588给我打电话，接了开了免提，客服问我是不是xxx（也就是我本人）? 我刚准备回答是，结果室友突然超大一声：不是！ 然 …"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Norton0924/OpenSourceLuts",
+  "slug": "norton0924-opensourceluts",
+  "author": "Norton0924",
+  "url": "https://huggingface.co/Norton0924/OpenSourceLuts",
+  "created_at": "2026-10-23T08:36:22.000Z",
+  "updated_at": "2026-10-23T09:19:13.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "lut",
+    "film-emulation",
+    "color-grading",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32991390,
+  "storage_human": "33 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Commits · Norton0924/Joyfusion",
+      "url": "https://huggingface.co/Norton0924/Joyfusion/commits/533700af26402930e7d2e3dd9e610f97dc6032a4",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Upload 2 files · Norton0924/Joyfusion at 3340d87",
+      "url": "https://huggingface.co/Norton0924/Joyfusion/commit/3340d87401bb789a28eded176434bc851e54aa9a",
+      "snippet": "Model card Files Files and versions Community · Norton0924 commited on Jun 7, 2023 · Commit · 3340d87 · · 1 Parent(s): 9660e2b · Browse files · Files changed (2) hide show · deliberate_v2_vae_chunked.zip +3 -0 · disneyPixarCartoon_v10_vae_chunked.zip +3 -0 ·"
+    },
+    {
+      "title": "Best open source AI models (2026): ranked and compared | Runtime",
+      "url": "https://www.runtm.com/open-source-models/",
+      "snippet": "The best open source and open-weight LLMs for AI agents, ranked and compared by parameters, context window, license, and country of origin. Includes GLM-5.3, Kimi K3, DeepSeek V4 Pro, Muse Spark Open, and more."
+    },
+    {
+      "title": "Commits · Norton0924/SeedVR2_3b_fp16",
+      "url": "https://huggingface.co/Norton0924/SeedVR2_3b_fp16/commits/main",
+      "snippet": "Model card Files Files and versions · xet Community · Copy to bucket new · main · SeedVR2_3b_fp16 · Norton0924 commited on Jan 20 · Norton0924 commited on Jan 20 ·"
+    },
+    {
+      "title": "An engineer’s guide to open source AI models | Blog — Northflank",
+      "url": "https://northflank.com/blog/an-engineers-guide-to-open-source-ai-models",
+      "snippet": "No infra team required. Open source AI models are machine learning models whose weights, architecture, and often training code are freely available for use, modification, and distribution."
+    }
+  ]
+}

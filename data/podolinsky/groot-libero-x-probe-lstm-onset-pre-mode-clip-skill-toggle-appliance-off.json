@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "podolinsky/groot-libero-x-probe-lstm-onset-pre-mode-clip-skill-toggle-appliance-off",
+  "slug": "podolinsky-groot-libero-x-probe-lstm-onset-pre-mode-clip-skill-toggle-appliance-off",
+  "author": "podolinsky",
+  "url": "https://huggingface.co/podolinsky/groot-libero-x-probe-lstm-onset-pre-mode-clip-skill-toggle-appliance-off",
+  "created_at": "2026-10-23T02:35:13.000Z",
+  "updated_at": "2026-10-23T02:35:15.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "robotics",
+    "failure-detection",
+    "vision-language-action",
+    "libero",
+    "dataset:podolinsky/gr00t-libero-x-features-v3",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6622245,
+  "parameters_human": "6.6M",
+  "storage_bytes": 26540012,
+  "storage_human": "27 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "شهوانی - خانه",
+      "url": "https://shahvani.com/",
+      "snippet": "به شهوانی خوش آمدید در این سایت گلچینی از داستان‌های سکسی و عکس‌های سکسی را می‌بینید. همچنین با عضویت در شهوانی می‌توانید در انجمن گفتگو کنید، در چت شرکت کنید و بیشتر."
+    },
+    {
+      "title": "انجمن‌ها · شهوانی",
+      "url": "https://shahvani.com/forum",
+      "snippet": "به پورن استار یا مدل خاصی علاقه دارید؟‌اینجا معرفی کنید. دانستنی های علمی درباره سکس. توجه: این بخش صرفا برای درج مطالب علمی است. توجه: عکس با چهره واضح،عکس کیر، همسر، …"
+    },
+    {
+      "title": "شهوانی – پورن ایرانی دات کام",
+      "url": "https://www.pornirani.com/tag/%d8%b4%d9%87%d9%88%d8%a7%d9%86%db%8c/",
+      "snippet": "خیلی داره حال میکنه امشب…با دوتا کیر کلفت داره حال میکنه امشب…کس تنگش. .. مثل کس دختر هیجده ساله میمونه."
+    },
+    {
+      "title": "شهوانی videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/tags/%D8%B4%D9%87%D9%88%D8%A7%D9%86%DB%8C",
+      "snippet": "Cheating wife Fucking with technician boy! Please keep it secret! See all premium شهوانی content on XVIDEOS 1080p"
+    },
+    {
+      "title": "سایت شهوانی | سکس شهوانی، داستان و چت فارسی",
+      "url": "https://shahvani.me/",
+      "snippet": "شهوانی، مجموعه فارسی سکس شهوانی: داستان‌های عاشقانه، گالری تصاویر و گفت‌وگوی آنلاین برای کاربران بزرگسال."
+    }
+  ]
+}

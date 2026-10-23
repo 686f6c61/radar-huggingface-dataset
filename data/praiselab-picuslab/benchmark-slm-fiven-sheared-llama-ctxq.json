@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "praiselab-picuslab/benchmark-slm-fiven-sheared-llama-ctxq",
+  "slug": "praiselab-picuslab-benchmark-slm-fiven-sheared-llama-ctxq",
+  "author": "praiselab-picuslab",
+  "url": "https://huggingface.co/praiselab-picuslab/benchmark-slm-fiven-sheared-llama-ctxq",
+  "created_at": "2026-10-23T08:32:16.000Z",
+  "updated_at": "2026-10-23T08:32:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "it"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "benchmark-slm",
+    "or2",
+    "dataset-fiven",
+    "strategy-ctxq",
+    "text-generation",
+    "it",
+    "base_model:princeton-nlp/Sheared-LLaMA-1.3B",
+    "base_model:adapter:princeton-nlp/Sheared-LLaMA-1.3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12595704,
+  "storage_human": "13 MB",
+  "base_model": "princeton-nlp/Sheared-LLaMA-1.3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "سکس در برابر طلا در جنگل‌های آمازون - BBC News فارسی",
+      "url": "https://www.bbc.com/persian/articles/ce90g21g3ero",
+      "snippet": "Dec 6, 2024 · دایان لیته هرگز در نظر نداشت یک کارگر جنسی شود اما وقتی ۱۷ ساله بود شوهرش در اثر حمله قلبی درگذشت و او هزینه ..."
+    },
+    {
+      "title": "کانال فیلمهای سکس ایرانی وخارجی - تماشا",
+      "url": "https://tamasha.com/tahased",
+      "snippet": "ویدیوهای خود را در سایت اشتراک ویدیو تماشا به صورت رایگان به اشتراک بگذارید و تماشایی شوید."
+    },
+    {
+      "title": "سکس ایرانی‌ جدید با چهره دختر کص ... - Pornhub",
+      "url": "https://www.pornhub.com/view_video.php?viewkey=67f52f9ef006a",
+      "snippet": "Apr 8, 2025 · Watch سکس ایرانی‌ جدید با چهره دختر کص تنگ وطنی که رو کونش یه تتو سکسی‌ داره - Sex Irani Jadid in Persian on Pornhub.com, the best …"
+    },
+    {
+      "title": "سکس - معنی در دیکشنری آبادیس",
+      "url": "https://abadis.ir/fatofa/%D8%B3%DA%A9%D8%B3/",
+      "snippet": "واژه سکس معادل ابجد 140 تعداد حروف 3 تلفظ seks نقش دستوری اسم ترکیب ( اسم ) [فرانسوی: sexe] مختصات ( زن یامرد ) آواشناسی seks الگوی تکیه S شمارگان هجا 1 منبع فرهنگ …"
+    },
+    {
+      "title": "سکس بدون روکش - ویکی‌پدیا، دانشنامهٔ آزاد",
+      "url": "https://fa.m.wikipedia.org/wiki/%D8%B3%DA%A9%D8%B3_%D8%A8%D8%AF%D9%88%D9%86_%D8%B1%D9%88%DA%A9%D8%B4",
+      "snippet": "سکس بدون زین (روکش) اصطلاحی برای آمیزش جنسی، به خصوص دخول، بدون استفاده از کاندوم است. [۱] این اصطلاح معمولاً به سکس مقعدی بین دو مرد بدون استفاده از کاندوم اشاره دارد."
+    }
+  ]
+}

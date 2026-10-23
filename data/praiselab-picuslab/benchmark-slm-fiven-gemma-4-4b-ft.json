@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "praiselab-picuslab/benchmark-slm-fiven-gemma-4-4b-ft",
+  "slug": "praiselab-picuslab-benchmark-slm-fiven-gemma-4-4b-ft",
+  "author": "praiselab-picuslab",
+  "url": "https://huggingface.co/praiselab-picuslab/benchmark-slm-fiven-gemma-4-4b-ft",
+  "created_at": "2026-10-23T08:28:15.000Z",
+  "updated_at": "2026-10-23T08:28:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "it"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "benchmark-slm",
+    "or2",
+    "dataset-fiven",
+    "strategy-ft",
+    "text-generation",
+    "conversational",
+    "it",
+    "base_model:google/gemma-4-E4B-it",
+    "base_model:adapter:google/gemma-4-E4B-it",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 68515914,
+  "storage_human": "69 MB",
+  "base_model": "google/gemma-4-E4B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "praiselab-picuslab/benchmark-slm-fiven-gemma-4-4b-raft · Hugging Face",
+      "url": "https://huggingface.co/praiselab-picuslab/benchmark-slm-fiven-gemma-4-4b-raft",
+      "snippet": "praiselab-picuslab / benchmark-slm-fiven-gemma-4-4b-raft Like 0 Follow PRAISELab@PICUSLab 16 Text Generation PEFT Safetensors Italian lora benchmark-slm or2 dataset-fiven strategy-raft conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "praiselab-picuslab (PRAISELab@PICUSLab) - Hugging Face",
+      "url": "https://huggingface.co/praiselab-picuslab/datasets",
+      "snippet": "Artificial Intelligence, Generative AI, Large Language Models, Biomedical NLP, Medical Question Answering, Generative Agent-based Modeling, Recommender System, Social Networks"
+    },
+    {
+      "title": "LLM Leaderboard: AI Model Rankings & Pricing | llmboard.ai",
+      "url": "https://www.llmboard.ai/",
+      "snippet": "Explore the LLM leaderboard to compare the best AI models across capability, pricing and LLM benchmarks. Find the best LLM for coding, reasoning and more."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 989 AI models across 670 benchmarks, with 228 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "sahilmahendrakar/Paradee-8M-v1.1",
+  "slug": "sahilmahendrakar-paradee-8m-v1-1",
+  "author": "sahilmahendrakar",
+  "url": "https://huggingface.co/sahilmahendrakar/Paradee-8M-v1.1",
+  "created_at": "2026-10-15T00:35:07.000Z",
+  "updated_at": "2026-10-15T00:37:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "paradee",
+    "text-to-speech",
+    "tts",
+    "distillation",
+    "kokoro",
+    "en",
+    "arxiv:2610.06817",
+    "base_model:hexgrad/Kokoro-82M",
+    "base_model:quantized:hexgrad/Kokoro-82M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 13,
+  "downloads_30d": 1042,
+  "trending_score": 13,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 81190970,
+  "storage_human": "81 MB",
+  "base_model": "hexgrad/Kokoro-82M",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sahilmahendrakar/Paradee-8M-v1.0 · Hugging Face",
+      "url": "https://huggingface.co/sahilmahendrakar/Paradee-8M-v1.0",
+      "snippet": "It runs about 18x faster than real time on one CPU thread, with no GPU. Close to its teacher. It scores 4.41 on UTMOS (Kokoro: 4.52) and has the same word error rate (5.7%). Paper: Paradee: Distilling Kokoro-82M into an 8M-Parameter Single-Voice ..."
+    },
+    {
+      "title": "suryatmodulus/Paradee-8M-v1.1 · Hugging Face",
+      "url": "https://huggingface.co/suryatmodulus/Paradee-8M-v1.1",
+      "snippet": "The code, the training scripts and the Python package are at github.com/sahilmahendrakar/paradee. The paper, Paradee: Distilling Kokoro-82M into an 8M-Parameter Single-Voice Text-to-Speech Model, describes v1.0."
+    },
+    {
+      "title": "TechnoBaptist/Paradee-8M-v1.0 · Hugging Face",
+      "url": "https://huggingface.co/TechnoBaptist/Paradee-8M-v1.0",
+      "snippet": "It runs about 18x faster than real time on one CPU thread, with no GPU. Close to its teacher. It scores 4.41 on UTMOS (Kokoro: 4.52) and has the same word error rate (5.7%). Paper: Paradee: Distilling Kokoro-82M into an 8M-Parameter Single-Voice ..."
+    },
+    {
+      "title": "GitHub - sahilmahendrakar/paradee: An 8M-parameter English ...",
+      "url": "https://github.com/sahilmahendrakar/paradee",
+      "snippet": "An 8M-parameter English text-to-speech model distilled from Kokoro-82M. 9 MB, runs 18x real time on one CPU thread. - sahilmahendrakar/paradee"
+    },
+    {
+      "title": "Release Paradee v1.0 · sahilmahendrakar/paradee",
+      "url": "https://github.com/sahilmahendrakar/paradee/releases/tag/v1.0",
+      "snippet": "An 8M-parameter English text-to-speech model distilled from Kokoro-82M. 9 MB, runs 18x real time on one CPU thread. - Release Paradee v1.0 · sahilmahendrakar/paradee"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "dddddsds31341/vla-adapter-pick_balls-110k",
+  "slug": "dddddsds31341-vla-adapter-pick_balls-110k",
+  "author": "dddddsds31341",
+  "url": "https://huggingface.co/dddddsds31341/vla-adapter-pick_balls-110k",
+  "created_at": "2026-10-23T02:42:35.000Z",
+  "updated_at": "2026-10-23T02:49:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "openvla",
+    "feature-extraction",
+    "robotics",
+    "vision-language-action",
+    "vla-adapter",
+    "pick_balls",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1252553792,
+  "parameters_human": "1.25B",
+  "storage_bytes": 3422787000,
+  "storage_human": "3.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vla Adapter Pick Balls 30k - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/dddddsds31341/vla-adapter-pick_balls-30k",
+      "snippet": "Registry entry for model Vla Adapter Pick Balls 30k; source metadata pending."
+    },
+    {
+      "title": "GitHub - OpenHelix-Team/VLA-Adapter: VLA-Adapter: An Effective Paradigm ...",
+      "url": "https://github.com/OpenHelix-Team/VLA-Adapter",
+      "snippet": "VLA-Adapter: An Effective Paradigm for Tiny-Scale Vision-Language-Action Model - OpenHelix-Team/VLA-Adapter"
+    },
+    {
+      "title": "VLA-Adapter (VLA-Adapter) - Hugging Face",
+      "url": "https://huggingface.co/VLA-Adapter",
+      "snippet": "The models of VLA-Adapter-Pro (The underlying architecture is the same, but the implementation has been improved, resulting in significantly improved)"
+    },
+    {
+      "title": "dddddsds31341 (Bofang) - Hugging Face",
+      "url": "https://huggingface.co/dddddsds31341",
+      "snippet": "dddddsds31341/pi0-wash_dish_50-10k Robotics •Updated 1 day ago View 29 models"
+    },
+    {
+      "title": "GitHub - acl21/VLA-Adapter",
+      "url": "https://github.com/acl21/VLA-Adapter",
+      "snippet": "Contribute to acl21/VLA-Adapter development by creating an account on GitHub."
+    }
+  ]
+}

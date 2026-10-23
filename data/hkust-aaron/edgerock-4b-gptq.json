@@ -5,7 +5,7 @@
   "author": "hkust-aaron",
   "url": "https://huggingface.co/hkust-aaron/EdgeRock-4B-GPTQ",
   "created_at": "2026-10-19T20:17:45.000Z",
-  "updated_at": "2026-10-19T20:21:54.000Z",
+  "updated_at": "2026-10-23T03:31:36.000Z",
   "license": "edgerock-model-license-1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",

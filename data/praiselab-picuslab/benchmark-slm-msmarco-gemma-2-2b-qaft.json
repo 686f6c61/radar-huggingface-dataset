@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "praiselab-picuslab/benchmark-slm-msmarco-gemma-2-2b-qaft",
+  "slug": "praiselab-picuslab-benchmark-slm-msmarco-gemma-2-2b-qaft",
+  "author": "praiselab-picuslab",
+  "url": "https://huggingface.co/praiselab-picuslab/benchmark-slm-msmarco-gemma-2-2b-qaft",
+  "created_at": "2026-10-23T08:33:46.000Z",
+  "updated_at": "2026-10-23T08:33:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "benchmark-slm",
+    "or2",
+    "dataset-msmarco",
+    "strategy-qaft",
+    "text-generation",
+    "en",
+    "dataset:microsoft/ms_marco",
+    "base_model:google/gemma-2-2b",
+    "base_model:adapter:google/gemma-2-2b",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 59949768,
+  "storage_human": "60 MB",
+  "base_model": "google/gemma-2-2b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

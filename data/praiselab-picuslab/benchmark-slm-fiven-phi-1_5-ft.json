@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "praiselab-picuslab/benchmark-slm-fiven-phi-1_5-ft",
+  "slug": "praiselab-picuslab-benchmark-slm-fiven-phi-1_5-ft",
+  "author": "praiselab-picuslab",
+  "url": "https://huggingface.co/praiselab-picuslab/benchmark-slm-fiven-phi-1_5-ft",
+  "created_at": "2026-10-23T08:30:30.000Z",
+  "updated_at": "2026-10-23T08:30:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "it"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "benchmark-slm",
+    "or2",
+    "dataset-fiven",
+    "strategy-ft",
+    "text-generation",
+    "it",
+    "base_model:microsoft/phi-1_5",
+    "base_model:adapter:microsoft/phi-1_5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25191488,
+  "storage_human": "25 MB",
+  "base_model": "microsoft/phi-1_5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Recherche 'Malienne bamako africaine' - XVIDEOS.COM",
+      "url": "https://fr.xvideos.com/?k=Malienne+bamako+africaine",
+      "snippet": "840 vidéos GRATUITES trouvées sur XVIDEOS pour la recherche Malienne bamako africaine."
+    },
+    {
+      "title": "Vidéos black-porn - XVIDEOS.COM",
+      "url": "https://fr.xvideos.com/tags/black-porn",
+      "snippet": "XVIDEOS Vidéos black-porn, gratuit Double programme du roi du porno africain : ILuvSHauna prend une énorme bite noire en …"
+    },
+    {
+      "title": "Vidéos big-black-porn - XVIDEOS.COM",
+      "url": "https://fr.xvideos.com/tags/big-black-porn",
+      "snippet": "XVIDEOS Vidéos big-black-porn, gratuit Orgie de double pénétration d'Halloween avec huit gros étalons sur les quatre chaudasses …"
+    },
+    {
+      "title": "Vidéos black-porn-stars - XVIDEOS.COM",
+      "url": "https://fr.xvideos.com/tags/black-porn-stars",
+      "snippet": "XVIDEOS Vidéos black-porn-stars, gratuit Pato a fait éclater la chatte d'une star du porno africaine par derrière avec sa longue et …"
+    },
+    {
+      "title": "épouse française offerte à plusieurs blacks - XVIDEOS.COM",
+      "url": "https://fr.xvideos.com/?k=%C3%A9pouse+fran%C3%A7aise+offerte+%C3%A0+plusieurs+blacks",
+      "snippet": "103 445 vidéos GRATUITES trouvées sur XVIDEOS pour la recherche épouse française offerte à plusieurs blacks."
+    }
+  ]
+}

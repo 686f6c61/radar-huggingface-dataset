@@ -5,7 +5,7 @@
   "author": "gguf-org",
   "url": "https://huggingface.co/gguf-org/pig-clip",
   "created_at": "2026-08-22T15:18:25.000Z",
-  "updated_at": "2026-10-21T10:00:10.000Z",
+  "updated_at": "2026-10-23T03:58:35.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -16,13 +16,13 @@
     "license:mit",
     "region:us"
   ],
-  "likes": 5,
+  "likes": 6,
   "downloads_30d": 2612,
   "trending_score": 0,
   "parameters": 596049920,
   "parameters_human": "596.0M",
-  "storage_bytes": 10515613440,
-  "storage_human": "10.5 GB",
+  "storage_bytes": 11268307072,
+  "storage_human": "11.3 GB",
   "base_model": null,
   "formats": [
     "gguf"

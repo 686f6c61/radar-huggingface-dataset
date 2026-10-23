@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Comfy-Org/Wan-2.2",
+  "slug": "comfy-org-wan-2-2",
+  "author": "Comfy-Org",
+  "url": "https://huggingface.co/Comfy-Org/Wan-2.2",
+  "created_at": "2025-07-27T06:56:12.000Z",
+  "updated_at": "2026-09-23T06:01:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "image-to-video",
+    "base_model:Wan-AI/Wan2.2-Animate-14B",
+    "base_model:finetune:Wan-AI/Wan2.2-Animate-14B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 965,
+  "downloads_30d": 7989102,
+  "trending_score": 14,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 731601965967,
+  "storage_human": "731.6 GB",
+  "base_model": "nvidia/ChronoEdit-14B-Diffusers, Wan-AI/Wan2.2-Animate-14B, alibaba-pai/Wan2.2-Fun-A14B-Control-Camera, alibaba-pai/Wan2.2-Fun-A14B-Control, alibaba-pai/Wan2.2-Fun-5B-Control, alibaba-pai/Wan2.2-Fun-5B-InP, alibaba-pai/Wan2.2-Fun-A14B-InP, alibaba-pai/Wan2.2-VACE-Fun-A14B, Wan-AI/Wan2.2-I2V-A14B, Wan-AI/Wan2.2-S2V-14B, Wan-AI/Wan2.2-T2V-A14B, Wan-AI/Wan2.2-TI2V-5B, lightx2v/Wan2.2-Distill-Loras",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comfy - Professional Control of Visual AI",
+      "url": "https://comfy.org/",
+      "snippet": "Comfy is the AI creation engine for visual professionals who demand control over every model, every parameter, and every output."
+    },
+    {
+      "title": "Download Comfy Desktop - Run AI on Your Hardware",
+      "url": "https://comfy.org/download",
+      "snippet": "Why would I pay for Comfy Cloud if Desktop is free? + Your machine or ours. Cloud gives you powerful GPUs on demand, pre …"
+    },
+    {
+      "title": "GitHub - Comfy-Org/ComfyUI: The most powerful and modular …",
+      "url": "https://github.com/Comfy-Org/ComfyUI",
+      "snippet": "Install the ComfyUI dependencies. If you have another Stable Diffusion UI you might be able to reuse the dependencies. Launch …"
+    },
+    {
+      "title": "COMFY®",
+      "url": "https://comfy.eu/fr/comfy/",
+      "snippet": "Notre gamme diversifiée de produits COMFY® regroupent des jouets intérieurs et extérieurs pour enfants, des aides à la natation, …"
+    },
+    {
+      "title": "ComfyUI France - La communauté francophone de génération IA",
+      "url": "https://comfyui.fr/",
+      "snippet": "Comfy Registry 800+ custom nodes vérifiés. Trouvez les extensions parfaites pour votre workflow."
+    }
+  ]
+}

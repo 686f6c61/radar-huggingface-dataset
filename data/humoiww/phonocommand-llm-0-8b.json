@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "humoiww/PhonoCommand-LLM-0.8B",
+  "slug": "humoiww-phonocommand-llm-0-8b",
+  "author": "humoiww",
+  "url": "https://huggingface.co/humoiww/PhonoCommand-LLM-0.8B",
+  "created_at": "2026-10-23T08:46:11.000Z",
+  "updated_at": "2026-10-23T08:46:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [
+    "en",
+    "zh",
+    "yue"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "command-parsing",
+    "candidate-ranking",
+    "native-windows",
+    "text-classification",
+    "en",
+    "zh",
+    "yue",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23745056,
+  "storage_human": "24 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

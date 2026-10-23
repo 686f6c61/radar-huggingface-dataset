@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Y-labs/Qwen3.5-2B-ToolCalling-LoRA",
+  "slug": "y-labs-qwen3-5-2b-toolcalling-lora",
+  "author": "Y-labs",
+  "url": "https://huggingface.co/Y-labs/Qwen3.5-2B-ToolCalling-LoRA",
+  "created_at": "2026-10-23T02:23:22.000Z",
+  "updated_at": "2026-10-23T02:23:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 289152957,
+  "storage_human": "289 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube",
+      "snippet": "YouTube's official YouTube channel A Minecraft legend built block by block 🟪 Over 15 years ago, @ldshadowlady uploaded her first …"
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    },
+    {
+      "title": "Y (lettre) — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Y_(lettre)",
+      "snippet": "Y (la lettre se nomme « i grec » et se prononce isolée /i/) est la 25e lettre de l' alphabet latin moderne. Le graphème majuscule est le …"
+    },
+    {
+      "title": "Y — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Y",
+      "snippet": "Le but du jeu est de relier les trois côtés du triangle à l'aide de petits cailloux placés sur chaque centre des Y formés par les …"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "praiselab-picuslab/benchmark-slm-msmarco-sheared-llama-mix",
+  "slug": "praiselab-picuslab-benchmark-slm-msmarco-sheared-llama-mix",
+  "author": "praiselab-picuslab",
+  "url": "https://huggingface.co/praiselab-picuslab/benchmark-slm-msmarco-sheared-llama-mix",
+  "created_at": "2026-10-23T08:36:54.000Z",
+  "updated_at": "2026-10-23T08:36:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "benchmark-slm",
+    "or2",
+    "dataset-msmarco",
+    "strategy-mix",
+    "text-generation",
+    "en",
+    "dataset:microsoft/ms_marco",
+    "base_model:princeton-nlp/Sheared-LLaMA-1.3B",
+    "base_model:adapter:princeton-nlp/Sheared-LLaMA-1.3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12595704,
+  "storage_human": "13 MB",
+  "base_model": "princeton-nlp/Sheared-LLaMA-1.3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "русские Порно Видео - Pornhub.com",
+      "url": "https://rt.pornhub.com/video/search?search=%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B5",
+      "snippet": "Смотрите порно-видео Русские бесплатно здесь, на Pornhub.com. Откройте для себя растущую коллекцию …"
+    },
+    {
+      "title": "русские порноактрисы - ZVEZDJUCHKI.RU",
+      "url": "http://zvezdjuchki.ru/russkie-porno-zvezdy",
+      "snippet": "Каталог русских порно актрис, вышедших на сцену отечественного, а также мирового порно бизнеса, самые красивые …"
+    },
+    {
+      "title": "Смотреть порно видео бесплатно на сайте XRest",
+      "url": "https://xrest.net/",
+      "snippet": "Для вас доступны самые новые порно ролики. Смотрите онлайн с телефона или скачивайте. Загружайте свое видео и фото!"
+    },
+    {
+      "title": "Русская Блондинка Порно Фото и Секс Картинки - PornPics.com",
+      "url": "https://www.pornpics.com/ru/?q=russian+blonde",
+      "snippet": "Скачивайте самые горячие Русская Блондинка порно фото прямо сейчас на PornPics.com. Мы добавляем новые …"
+    },
+    {
+      "title": "Бесплатно порно видео с тегом Русская милфа | xHamster",
+      "url": "https://ru.xhamster.com/tags/russian-milf",
+      "snippet": "Для вас все порно видео с тегом Русская милфа на xHamster. Смотрите все порно видео с тегом Русская милфа прямо сейчас!"
+    }
+  ]
+}

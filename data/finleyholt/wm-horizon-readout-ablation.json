@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "FinleyHolt/wm-horizon-readout-ablation",
+  "slug": "finleyholt-wm-horizon-readout-ablation",
+  "author": "FinleyHolt",
+  "url": "https://huggingface.co/FinleyHolt/wm-horizon-readout-ablation",
+  "created_at": "2026-10-21T21:44:27.000Z",
+  "updated_at": "2026-10-23T07:36:59.000Z",
+  "license": "mixed-per-folder",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "robotics",
+    "world-action-model",
+    "libero",
+    "arxiv:2601.21998",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 152667475020,
+  "storage_human": "152.7 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FinleyHolt/wm-horizon-readout-ablation · Hugging Face",
+      "url": "https://huggingface.co/FinleyHolt/wm-horizon-readout-ablation",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - FinleyHolt/FinleyHolt",
+      "url": "https://github.com/FinleyHolt/FinleyHolt",
+      "snippet": "WORLDS, an agent that finds an object described in plain language by reasoning over a structured world state built from maps and onboard imagery. State of the art on the CityNav aerial benchmark: 51.8% success over all 5,311 test episodes, 15.7 points above the prior best. Demonstrated on a custom quadcopter."
+    },
+    {
+      "title": "FinleyHolt · GitHub",
+      "url": "https://github.com/FinleyHolt",
+      "snippet": "FinleyHolt has 9 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Finley R. Holt - catalyzex.com",
+      "url": "https://www.catalyzex.com/author/Finley%20R.%20Holt",
+      "snippet": "View Finley R. Holt&#x27;s papers and open-source code. See more researchers and engineers like Finley R. Holt."
+    },
+    {
+      "title": "Structured World-State Reasoning for Agentic Robotic Search",
+      "url": "https://arxiv.org/abs/2609.23841",
+      "snippet": "Long-horizon robotic search must resolve natural language against heterogeneous, incomplete, and often ambiguous evidence: textual information, prior maps, and observations arriving over time. The core challenge is to contextualize these streams and decide where to gather evidence before selecting a target. We present WORLDS: World-state Observation and Reasoning for Language-guided Discovery ..."
+    }
+  ]
+}

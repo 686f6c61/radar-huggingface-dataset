@@ -5,7 +5,7 @@
   "author": "sigmanih",
   "url": "https://huggingface.co/sigmanih/microsoft-phi-4-GGUF-Q4_K_S",
   "created_at": "2026-10-15T20:16:09.000Z",
-  "updated_at": "2026-10-15T20:22:00.000Z",
+  "updated_at": "2026-10-22T20:55:27.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",

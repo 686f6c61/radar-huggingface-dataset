@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "PMTC/Breeze-ASR-25-mlx-fp16",
+  "slug": "pmtc-breeze-asr-25-mlx-fp16",
+  "author": "PMTC",
+  "url": "https://huggingface.co/PMTC/Breeze-ASR-25-mlx-fp16",
+  "created_at": "2026-10-23T08:40:37.000Z",
+  "updated_at": "2026-10-23T08:42:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "mlx",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "whisper",
+    "breeze-asr",
+    "automatic-speech-recognition",
+    "zh",
+    "en",
+    "base_model:MediaTek-Research/Breeze-ASR-25",
+    "base_model:finetune:MediaTek-Research/Breeze-ASR-25",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1541384960,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3082904232,
+  "storage_human": "3.1 GB",
+  "base_model": "MediaTek-Research/Breeze-ASR-25",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

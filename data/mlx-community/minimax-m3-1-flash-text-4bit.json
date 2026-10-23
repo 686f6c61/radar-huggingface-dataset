@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mlx-community/MiniMax-M3.1-Flash-Text-4bit",
+  "slug": "mlx-community-minimax-m3-1-flash-text-4bit",
+  "author": "mlx-community",
+  "url": "https://huggingface.co/mlx-community/MiniMax-M3.1-Flash-Text-4bit",
+  "created_at": "2026-10-23T01:43:26.000Z",
+  "updated_at": "2026-10-23T01:51:56.000Z",
+  "license": "minimax-community",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "minimax_m3_vl",
+    "moe",
+    "agent",
+    "coding",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "base_model:MiniMaxAI/MiniMax-M3.1-Flash",
+    "base_model:quantized:MiniMaxAI/MiniMax-M3.1-Flash",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 426186362880,
+  "parameters_human": "426.19B",
+  "storage_bytes": 248384995813,
+  "storage_human": "248.4 GB",
+  "base_model": "MiniMaxAI/MiniMax-M3.1-Flash",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlx-community/MiniMax-M3.1-Flash-Text-4bit - Hugging Face",
+      "url": "https://huggingface.co/mlx-community/MiniMax-M3.1-Flash-Text-4bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "minimax-m3.1-flash Model by Minimaxai | NVIDIA NIM",
+      "url": "https://build.nvidia.com/minimaxai/minimax-m3.1-flash/modelcard",
+      "snippet": "MiniMax-M3.1-Flash is a native multimodal mixture-of-experts model for coding, agentic workflows, computer use, and cybersecurity."
+    },
+    {
+      "title": "MiniMax-M3.1-Flash API, Pricing & Playground | Vercel AI Gateway",
+      "url": "https://vercel.com/ai-gateway/models/minimax-m3.1-flash",
+      "snippet": "MiniMax-M3.1-Flash MiniMax-M3.1-Flash is MiniMax&#x27;s M-series language model for agent reasoning, tool use, coding, and long-context tasks, with a 1,000,000-token context window. Compared with MiniMax-M3, it adds always-on reasoning and adjustable reasoning effort, allowing developers to tune reasoning effort for different tasks."
+    },
+    {
+      "title": "minimax-m3.1-flash",
+      "url": "https://ollama.com/library/minimax-m3.1-flash",
+      "snippet": "As a next-generation Flash model, M3.1 Flash delivers a generational leap in agentic tasks, coding, Computer Use and cybersecurity, while making online inference nearly three times faster and reducing usage costs by 70%."
+    },
+    {
+      "title": "MiniMax M3.1 Flash: Redefining Agent Performance and Cost",
+      "url": "https://www.minimax.io/blog/minimax-m31f",
+      "snippet": "Today, we officially roll out MiniMax M3.1 Flash. As a next-generation Flash model, M3.1 Flash delivers a generational leap in agentic tasks, coding, Computer Use and cybersecurity, while making online inference nearly three times faster and reducing usage costs by 70%."
+    }
+  ]
+}

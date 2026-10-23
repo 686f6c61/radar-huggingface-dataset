@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Jahirrrr/Klyra-Decision-2B-V1",
+  "slug": "jahirrrr-klyra-decision-2b-v1",
+  "author": "Jahirrrr",
+  "url": "https://huggingface.co/Jahirrrr/Klyra-Decision-2B-V1",
+  "created_at": "2026-10-23T01:43:50.000Z",
+  "updated_at": "2026-10-23T04:38:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "decision-model",
+    "multi-task-learning",
+    "non-generative",
+    "choice",
+    "scoring",
+    "binary-classification",
+    "lora",
+    "minicpm",
+    "research",
+    "polyvor-labs",
+    "text-classification",
+    "en",
+    "base_model:openbmb/MiniCPM5-2B-Midtrain",
+    "base_model:adapter:openbmb/MiniCPM5-2B-Midtrain",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40807701,
+  "storage_human": "41 MB",
+  "base_model": "openbmb/MiniCPM5-2B-Midtrain",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cultura : Produits Culturels Neufs et d'Occasion",
+      "url": "https://www.cultura.com/",
+      "snippet": "Cultura : Produits Culturels Neufs et d'Occasion. …Read more"
+    },
+    {
+      "title": "Magasins Cultura : Produits de Loisirs Culturels et Créatifs près de ...",
+      "url": "https://www.cultura.com/les-magasins.html",
+      "snippet": "Magasins Cultura : Produits de Loisirs Culturels et Créatifs près de chez vous ! ️ Livraison gratuite en magasin ️ Réservez en …"
+    },
+    {
+      "title": "Cultura",
+      "url": "https://occasion.cultura.com/stores/search",
+      "snippet": "Recherchez et localisez facilement les magasins Cultura près de chez vous avec des informations pratiques comme les horaires et …"
+    },
+    {
+      "title": "Billetterie Concert Spectacle Théâtre Musée Sport - Cultura",
+      "url": "https://billetterie.cultura.com/fr",
+      "snippet": "Réserver en quelques clics vos billets et places de concerts, spectacles, théâtres sur la billetterie Cultura."
+    },
+    {
+      "title": "Livre : nouveautés, meilleures ventes, coup de cœurs - Cultura",
+      "url": "https://www.cultura.com/livre.html",
+      "snippet": "Cultura est une librairie en ligne complète, proposant des milliers de références : romans, BD, mangas, scolaires et livres audio. …"
+    }
+  ]
+}

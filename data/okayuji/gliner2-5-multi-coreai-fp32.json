@@ -5,7 +5,7 @@
   "author": "okayuji",
   "url": "https://huggingface.co/okayuji/gliner2.5-multi-coreai-fp32",
   "created_at": "2026-10-06T11:32:28.000Z",
-  "updated_at": "2026-10-18T19:40:55.000Z",
+  "updated_at": "2026-10-23T03:10:08.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "token-classification",

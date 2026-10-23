@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "cuio/Fancy-AI",
+  "slug": "cuio-fancy-ai",
+  "author": "cuio",
+  "url": "https://huggingface.co/cuio/Fancy-AI",
+  "created_at": "2026-10-23T02:31:32.000Z",
+  "updated_at": "2026-10-23T02:31:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4762310656,
+  "parameters_human": "4.76B",
+  "storage_bytes": 12034547948,
+  "storage_human": "12.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "البحث عن تطبيق \"متجر Google Play\" - مساعدة Google Play",
+      "url": "https://support.google.com/googleplay/answer/190860?hl=ar",
+      "snippet": "على جهازك، انتقِل إلى قسم \"التطبيقات\". انقر على \"متجر Google Play\" . سيتم فتح التطبيق وستتمكّن من البحث عن المحتوى وتصفُّحه لتنزيله."
+    },
+    {
+      "title": "تحديث Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95414?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "للتأكد من أنك محمي بآخر تحديثات الأمان، بإمكان Google Chrome إجراء تحديث تلقائي في حال توفّر إصدار جديد من المتصفّح على جهازك. قبل التحديث، ننصحك بالتحقُّق مما إذا كان متصفِّح …"
+    },
+    {
+      "title": "اجعل Google محرك بحثك الافتراضي",
+      "url": "https://support.google.com/websearch/answer/464?hl=ar",
+      "snippet": "للحصول على نتائج من Google عند إجرائك عملية بحث في كل مرة، تستطيع جعل Google محرك البحث التلقائي لك. ضبط Google على أنّه محرك البحث التلقائي في متصفّحك فإذا لم يكن متصفّحك …"
+    },
+    {
+      "title": "مساعدة بحث Google",
+      "url": "https://support.google.com/websearch/?hl=ar",
+      "snippet": "مركز مساعدة بحث Google الرسمي حيث يمكنك العثور على نصائح وبرامج تعليمية حول استخدام المنتج وأجوبة أخرى للأسئلة الشائعة."
+    },
+    {
+      "title": "إعداد خيارات استرداد الحساب",
+      "url": "https://support.google.com/accounts/answer/183723?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "انتقِل إلى حسابك على Google. انقر على إعدادات الأمان وتسجيل الدخول. ضمن \"كيفية تسجيل الدخول إلى Google\"، انقر على البريد الإلكتروني المخصّص لاسترداد الحساب. قد تحتاج إلى تسجيل الدخول. …"
+    }
+  ]
+}

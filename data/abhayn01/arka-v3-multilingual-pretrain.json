@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Abhayn01/ARKA-v3-Multilingual-Pretrain",
+  "slug": "abhayn01-arka-v3-multilingual-pretrain",
+  "author": "Abhayn01",
+  "url": "https://huggingface.co/Abhayn01/ARKA-v3-Multilingual-Pretrain",
+  "created_at": "2026-08-24T17:14:02.000Z",
+  "updated_at": "2026-10-23T04:06:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "arka_v3",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 505661184,
+  "parameters_human": "505.7M",
+  "storage_bytes": 371203660683,
+  "storage_human": "371.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Abhayn01/ARKA-v3 · Hugging Face",
+      "url": "https://huggingface.co/Abhayn01/ARKA-v3",
+      "snippet": "ARKA-v3 is a decoder-only Transformer language-model architecture using Grouped-Query Attention (GQA), RoPE, RMSNorm, SwiGLU and tied token/output embeddings. This recreated package contains fresh randomly initialized weights; it must be pretrained before meaningful text generation."
+    },
+    {
+      "title": "Arka V3 - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/abhayn01/arka-v3",
+      "snippet": "by Abhayn01 abhayn01/arka-v3 Free2AITools Nexus Index 39.0 S: Semantic50 Query-time baseline · scored live at search A: Authority0 P: Popularity16 R: Recency97 Q: Quality65 Tech Context 0.51BParams 4.096KCtx Vital Performance 294 DL / 30D Source → Share: 📤 𝕏 in 📣 🔗"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=arka",
+      "snippet": "Abhayn01/arka-advanced-slm-base-v2 Text Generation • 0.1B•Updated about 8 hours ago"
+    },
+    {
+      "title": "ARKA-v3: Model Details, Context & Pricing | Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/hf-abhayn01-arka-v3",
+      "snippet": "Model card indexed from Hugging Face for text-generation. Specs: built for coding, sourced from Hugging Face. Compare ARKA-v3&#x27;s parameters, context window, pric"
+    },
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "ccortezb/FinOptix-14B-v2",
+  "slug": "ccortezb-finoptix-14b-v2",
+  "author": "ccortezb",
+  "url": "https://huggingface.co/ccortezb/FinOptix-14B-v2",
+  "created_at": "2026-10-23T01:50:48.000Z",
+  "updated_at": "2026-10-23T02:26:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "finops",
+    "aws",
+    "terraform",
+    "cost-optimization",
+    "dbt",
+    "qlora",
+    "unsloth",
+    "conversational",
+    "en",
+    "es",
+    "base_model:Qwen/Qwen2.5-14B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-14B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 29551556126,
+  "storage_human": "29.6 GB",
+  "base_model": "Qwen/Qwen2.5-14B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lmbb transformation - ThisVid.com",
+      "url": "https://thisvid.com/videos/lmbb-transformation/",
+      "snippet": "Weight gain journey. Watch lmbb transformation on ThisVid, the HD tube site with a largest big women collection."
+    },
+    {
+      "title": "Belly play: Lmbb transformation - ThisVid.com en anglais",
+      "url": "https://fr.thisvid.com/playlist/393825/video/lmbb-transformation/",
+      "snippet": "Belly Play And The Like - only the best Belly play of big women porn on ThisVid!"
+    },
+    {
+      "title": "Best of the b: Lmbb transformation - ThisVid.com",
+      "url": "https://thisvid.com/playlist/214648/video/lmbb-transformation/",
+      "snippet": "B And S - only the best best of the b of big women porn on ThisVid!"
+    },
+    {
+      "title": "Amateurs / LMBB(LittleMissBabyBelly) | StufferDB - The database of ...",
+      "url": "https://stufferdb.com/index?/category/11852",
+      "snippet": "Pics[6] Chubby Belly Girl[38] Chubby Belly | Peaches | TummyParadise[691] Chubby Bunnie BBW[100] Pics[18] Chubby Charity | …"
+    },
+    {
+      "title": "WG Compilation: Lmbb weight gain - ThisVid.com en anglais",
+      "url": "https://fr.thisvid.com/playlist/476633/video/lmbb-weight-gain2/",
+      "snippet": "Weigth Gain Compilation - only the best WG Compilation of big women porn on ThisVid!"
+    }
+  ]
+}

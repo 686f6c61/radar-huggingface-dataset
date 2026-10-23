@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "sanjeevkumar70550932/LTX-Video-0.9.7-distilled",
+  "slug": "sanjeevkumar70550932-ltx-video-0-9-7-distilled",
+  "author": "sanjeevkumar70550932",
+  "url": "https://huggingface.co/sanjeevkumar70550932/LTX-Video-0.9.7-distilled",
+  "created_at": "2026-10-23T01:44:45.000Z",
+  "updated_at": "2026-10-23T01:44:45.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "ltx-video",
+    "image-to-video",
+    "text-to-video",
+    "en",
+    "base_model:Lightricks/LTX-Video",
+    "base_model:finetune:Lightricks/LTX-Video",
+    "license:other",
+    "diffusers:LTXConditionPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 13042569344,
+  "parameters_human": "13.04B",
+  "storage_bytes": 47883356449,
+  "storage_human": "47.9 GB",
+  "base_model": "Lightricks/LTX-Video",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sanjeevkumar70550932/LTX-Video-0.9.7-distilled · Hugging Face",
+      "url": "https://huggingface.co/sanjeevkumar70550932/LTX-Video-0.9.7-distilled",
+      "snippet": "This model card focuses on the model associated with the LTX-Video model, codebase available here. LTX-Video is the first DiT-based video generation model capable of generating high-quality videos in real-time. It produces 30 FPS videos at a 1216×704 resolution faster than they can be watched ..."
+    },
+    {
+      "title": "Lightricks/LTX-Video-0.9.7-distilled · Hugging Face",
+      "url": "https://huggingface.co/Lightricks/LTX-Video-0.9.7-distilled",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Lightricks/LTX-Video-0.9.7-dev · Hugging Face",
+      "url": "https://huggingface.co/Lightricks/LTX-Video-0.9.7-dev",
+      "snippet": "This model card focuses on the model associated with the LTX-Video model, codebase available here. LTX-Video is the first DiT-based video generation model capable of generating high-quality videos in real-time. It produces 30 FPS videos at a 1216×704 resolution faster than they can be watched ..."
+    },
+    {
+      "title": "README.md · Lightricks/LTX-Video-0.9.7-distilled at main",
+      "url": "https://huggingface.co/Lightricks/LTX-Video-0.9.7-distilled/blob/main/README.md",
+      "snippet": "LTX-Video 0.9.7 Distilled Model Card This model card focuses on the model associated with the LTX-Video model, codebase available here. LTX-Video is the first DiT-based video generation model capable of generating high-quality videos in real-time. It produces 30 FPS videos at a 1216×704 resolution faster than they can be watched."
+    },
+    {
+      "title": "GitHub - Immutablemike/ltx-video: Official repository for LTX-Video",
+      "url": "https://github.com/Immutablemike/ltx-video",
+      "snippet": "Release a new 13B distilled model ltxv-13b-.9.7-distilled Amazing for iterative work - generates HD videos in 10 seconds, with low-res preview after just 3 seconds (on H100)!"
+    }
+  ]
+}

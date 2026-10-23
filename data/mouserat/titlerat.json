@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Mouserat/titlerat",
+  "slug": "mouserat-titlerat",
+  "author": "Mouserat",
+  "url": "https://huggingface.co/Mouserat/titlerat",
+  "created_at": "2026-10-23T00:53:19.000Z",
+  "updated_at": "2026-10-23T02:56:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mt5",
+    "text2text-generation",
+    "title-generation",
+    "ja",
+    "en",
+    "dataset:OysterCoreAI/SFT-General-Japanese-60K",
+    "dataset:kunishou/oasst1-chat-44k-ja",
+    "dataset:shisa-ai/shisa-v2-sharegpt",
+    "base_model:google/mt5-small",
+    "base_model:finetune:google/mt5-small",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 300168576,
+  "parameters_human": "300.2M",
+  "storage_bytes": 1221357317,
+  "storage_human": "1.2 GB",
+  "base_model": "google/mt5-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mouserat/titlerat · Hugging Face",
+      "url": "https://huggingface.co/Mouserat/titlerat",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LLM Leaderboard: AI Model Rankings & Pricing | llmboard.ai",
+      "url": "https://www.llmboard.ai/",
+      "snippet": "Explore the LLM leaderboard to compare the best AI models across capability, pricing and LLM benchmarks. Find the best LLM for coding, reasoning and more."
+    },
+    {
+      "title": "Mouserat (橋本樹) - Hugging Face",
+      "url": "https://huggingface.co/Mouserat",
+      "snippet": "Create and edit a simple static web page in your Space. Mouserat about 17 hours ago. models 0. None public yet"
+    },
+    {
+      "title": "AI Model Rankings: Live LLM Leaderboard | ModelCap",
+      "url": "https://modelcap.ai/",
+      "snippet": "Live LLM leaderboard: 357 AI models ranked on public benchmark evidence; Gemini 4 Argon leads. API pricing, context windows and 82 providers compared."
+    },
+    {
+      "title": "ModelsAtlas - AI Model Directory",
+      "url": "https://modelsatlas.com/",
+      "snippet": "A structured map of the AI model ecosystem: hundreds of models across every major provider, with verified pricing, context windows, capability signals and head-to-head comparisons."
+    }
+  ]
+}

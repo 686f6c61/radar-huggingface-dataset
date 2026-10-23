@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "infosave/MOSS-Image-Base-cmf",
+  "slug": "infosave-moss-image-base-cmf",
+  "author": "infosave",
+  "url": "https://huggingface.co/infosave/MOSS-Image-Base-cmf",
+  "created_at": "2026-10-23T01:42:59.000Z",
+  "updated_at": "2026-10-23T06:46:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "cortiq",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "cortiq",
+    "cmf",
+    "text-to-image",
+    "moss-image",
+    "q8_2f",
+    "q4tp",
+    "rust",
+    "en",
+    "zh",
+    "base_model:OpenMOSS-Team/MOSS-Image-Base",
+    "base_model:quantized:OpenMOSS-Team/MOSS-Image-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24113558358,
+  "storage_human": "24.1 GB",
+  "base_model": "OpenMOSS-Team/MOSS-Image-Base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PokePorn Live Porn Comics | AllPornComic",
+      "url": "https://allporncomic.com/porncomicartist/pokeporn-live/",
+      "snippet": "Read and download porn comics by PokePorn Live. Various XXX porn Adult comic comix sex hentai manga Rule34 for free."
+    },
+    {
+      "title": "PokepornLive Comics | 8muses - Sex and Porn Comics",
+      "url": "https://comics.8muses.com/porn/album/PokepornLive-Comics",
+      "snippet": "PokepornLive Comics: 15 porn comics to read online for free on 8muses."
+    },
+    {
+      "title": "PokePorn Live - Porn Comics | Ilike Comix",
+      "url": "https://ilikecomix.com/manga/artist/pokeporn-live/",
+      "snippet": "The HD quality image of PokePorn Live for adult comic lovers. All Porn Comics by Fabulous Artists and Hentai Manga for Free with …"
+    },
+    {
+      "title": "Tag: pokepornlive - E-Hentai Galleries",
+      "url": "https://e-hentai.org/tag/pokepornlive",
+      "snippet": "Showing search results for Tag: pokepornlive - just some of the over a million absolutely free hentai galleries available."
+    },
+    {
+      "title": "Rule34 - If it exists, there is porn of it / pokepornlive",
+      "url": "https://rule34.us/index.php?r=posts%2Findex&q=pokepornlive",
+      "snippet": "+ - pokepornlive 1953 + - 1boy 2371712 + - 1girls 3669681 + - 2girls 729718 + - anus 1269588 + - ass 3344088 + - blush 3047180 + - …"
+    }
+  ]
+}

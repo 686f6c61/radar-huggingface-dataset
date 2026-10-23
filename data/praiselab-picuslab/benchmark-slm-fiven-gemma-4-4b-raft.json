@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "praiselab-picuslab/benchmark-slm-fiven-gemma-4-4b-raft",
+  "slug": "praiselab-picuslab-benchmark-slm-fiven-gemma-4-4b-raft",
+  "author": "praiselab-picuslab",
+  "url": "https://huggingface.co/praiselab-picuslab/benchmark-slm-fiven-gemma-4-4b-raft",
+  "created_at": "2026-10-23T08:28:45.000Z",
+  "updated_at": "2026-10-23T08:28:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "it"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "benchmark-slm",
+    "or2",
+    "dataset-fiven",
+    "strategy-raft",
+    "text-generation",
+    "conversational",
+    "it",
+    "base_model:google/gemma-4-E4B-it",
+    "base_model:adapter:google/gemma-4-E4B-it",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 68515914,
+  "storage_human": "69 MB",
+  "base_model": "google/gemma-4-E4B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Latest Find and Hire Talent topics - Developer Forum | Roblox",
+      "url": "https://devforum.roblox.com/c/collaboration/recruitment/82",
+      "snippet": "2 days ago · Post job listings to hire talent. This category is for creators to post job offers for long-term partnerships or short-term …"
+    },
+    {
+      "title": "Latest Bug Reports topics - Developer Forum | Roblox",
+      "url": "https://devforum.roblox.com/c/bug-reports/10",
+      "snippet": "2 days ago · This category can be used by developers to post bug reports for the Roblox platform."
+    },
+    {
+      "title": "All about Object Oriented Programming - Roblox",
+      "url": "https://devforum.roblox.com/t/all-about-object-oriented-programming/8585",
+      "snippet": "Sep 3, 2014 · ALL ABOUT OOP! Prerequisites An understanding of meta-tables (although the required code will be explained) How …"
+    },
+    {
+      "title": "ForgeGUI - AI Roblox Scripting Tool Feature",
+      "url": "https://devforum.roblox.com/t/forgegui-ai-roblox-scripting-tool-feature/4734535",
+      "snippet": "Jul 13, 2026 · Hey Yall devs 👋 ForgeGUI’s AI scripting tool is a Roblox Studio plugin that turns plain-English descriptions into working …"
+    },
+    {
+      "title": "Pixelfix: Remove the black edges on scaled images - Roblox",
+      "url": "https://devforum.roblox.com/t/pixelfix-remove-the-black-edges-on-scaled-images/201802",
+      "snippet": "Nov 17, 2018 · Pixelfix Pixelfix changes the color of transparent pixels to match the color of the nearest non-transparent pixel. …"
+    }
+  ]
+}

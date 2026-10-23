@@ -1,0 +1,140 @@
+{
+  "schema": 1,
+  "id": "lendmindltd/lendmind-intake-4b",
+  "slug": "lendmindltd-lendmind-intake-4b",
+  "author": "lendmindltd",
+  "url": "https://huggingface.co/lendmindltd/lendmind-intake-4b",
+  "created_at": "2026-10-23T08:40:31.000Z",
+  "updated_at": "2026-10-23T09:07:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "mortgage",
+    "uk",
+    "information-extraction",
+    "structured-output",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 243914016,
+  "storage_human": "244 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "IntakeFrame v4 extraction from UK mortgage adviser messages",
+      "dataset": "Lendmind intake evaluation set, s2_unseen + s3, 547 messages, labels v2.5 (not published)",
+      "metric": "Figure precision, tier 1 (bar 0.98)",
+      "value": 0.991
+    },
+    {
+      "task": "IntakeFrame v4 extraction from UK mortgage adviser messages",
+      "dataset": "Lendmind intake evaluation set, s2_unseen + s3, 547 messages, labels v2.5 (not published)",
+      "metric": "Intent precision, lowest of A/B/C (bar 0.95)",
+      "value": 0.975
+    },
+    {
+      "task": "IntakeFrame v4 extraction from UK mortgage adviser messages",
+      "dataset": "Lendmind intake evaluation set, s2_unseen + s3, 547 messages, labels v2.5 (not published)",
+      "metric": "Clarification recall, designed asks (bar 0.90)",
+      "value": 0.929
+    },
+    {
+      "task": "IntakeFrame v4 extraction from UK mortgage adviser messages",
+      "dataset": "Lendmind intake evaluation set, s2_unseen + s3, 547 messages, labels v2.5 (not published)",
+      "metric": "MARKET/UNKNOWN messages read as a case, of 111 (bar 0)",
+      "value": 1
+    },
+    {
+      "task": "IntakeFrame v4 extraction from UK mortgage adviser messages",
+      "dataset": "Lendmind intake evaluation set, s2_unseen + s3, 547 messages, labels v2.5 (not published)",
+      "metric": "Frames returned (bar 1.0)",
+      "value": 1
+    },
+    {
+      "task": "IntakeFrame v4 extraction from UK mortgage adviser messages",
+      "dataset": "Lendmind intake evaluation set, s2_unseen (unseen writers), 106 messages, labels v2.5 (not published)",
+      "metric": "Figure precision, tier 1 (bar 0.98)",
+      "value": 0.967
+    },
+    {
+      "task": "IntakeFrame v4 extraction from UK mortgage adviser messages",
+      "dataset": "Lendmind intake evaluation set, s2_unseen (unseen writers), 106 messages, labels v2.5 (not published)",
+      "metric": "Intent precision, lowest of A/B/C (bar 0.95)",
+      "value": 0.955
+    },
+    {
+      "task": "IntakeFrame v4 extraction from UK mortgage adviser messages",
+      "dataset": "Lendmind intake evaluation set, s2_unseen (unseen writers), 106 messages, labels v2.5 (not published)",
+      "metric": "Clarification recall, designed asks (bar 0.90)",
+      "value": 0.857
+    },
+    {
+      "task": "IntakeFrame v4 extraction from UK mortgage adviser messages",
+      "dataset": "Lendmind intake evaluation set, s2_unseen (unseen writers), 106 messages, labels v2.5 (not published)",
+      "metric": "MARKET/UNKNOWN messages read as a case, of 37 (bar 0)",
+      "value": 0
+    },
+    {
+      "task": "IntakeFrame v4 extraction from UK mortgage adviser messages",
+      "dataset": "Lendmind intake evaluation set, s2_unseen (unseen writers), 106 messages, labels v2.5 (not published)",
+      "metric": "Frames returned (bar 1.0)",
+      "value": 1
+    },
+    {
+      "task": "IntakeFrame v4 extraction from UK mortgage adviser messages",
+      "dataset": "Lendmind intake evaluation set, s3 (generator held-out), 441 messages, labels v2.5 (not published)",
+      "metric": "Figure precision, tier 1 (bar 0.98)",
+      "value": 0.994
+    },
+    {
+      "task": "IntakeFrame v4 extraction from UK mortgage adviser messages",
+      "dataset": "Lendmind intake evaluation set, s3 (generator held-out), 441 messages, labels v2.5 (not published)",
+      "metric": "Intent precision, lowest of A/B/C (bar 0.95)",
+      "value": 0.979
+    },
+    {
+      "task": "IntakeFrame v4 extraction from UK mortgage adviser messages",
+      "dataset": "Lendmind intake evaluation set, s3 (generator held-out), 441 messages, labels v2.5 (not published)",
+      "metric": "Clarification recall, designed asks (bar 0.90)",
+      "value": 0.935
+    },
+    {
+      "task": "IntakeFrame v4 extraction from UK mortgage adviser messages",
+      "dataset": "Lendmind intake evaluation set, s3 (generator held-out), 441 messages, labels v2.5 (not published)",
+      "metric": "MARKET/UNKNOWN messages read as a case, of 74 (bar 0)",
+      "value": 1
+    },
+    {
+      "task": "IntakeFrame v4 extraction from UK mortgage adviser messages",
+      "dataset": "Lendmind intake evaluation set, s3 (generator held-out), 441 messages, labels v2.5 (not published)",
+      "metric": "Frames returned (bar 1.0)",
+      "value": 1
+    }
+  ],
+  "sources": []
+}

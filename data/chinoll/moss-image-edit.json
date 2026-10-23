@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "chinoll/Moss-Image-Edit",
+  "slug": "chinoll-moss-image-edit",
+  "author": "chinoll",
+  "url": "https://huggingface.co/chinoll/Moss-Image-Edit",
+  "created_at": "2026-10-22T10:03:30.000Z",
+  "updated_at": "2026-10-23T03:16:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "lora",
+    "image-editing",
+    "moss-image",
+    "comfyui",
+    "image-to-image",
+    "en",
+    "zh",
+    "base_model:OpenMOSS-Team/MOSS-Image-SFT",
+    "base_model:adapter:OpenMOSS-Team/MOSS-Image-SFT",
+    "region:us"
+  ],
+  "likes": 41,
+  "downloads_30d": 0,
+  "trending_score": 41,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 306757791,
+  "storage_human": "307 MB",
+  "base_model": "OpenMOSS-Team/MOSS-Image-SFT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "chinoll/Moss-Image-Edit · Hugging Face",
+      "url": "https://huggingface.co/chinoll/Moss-Image-Edit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ComfyUI-MOSS-Image-Ostris-Edit - GitHub",
+      "url": "https://github.com/ostris/ComfyUI-MOSS-Image-Ostris-Edit",
+      "snippet": "Nodes for running MOSS-Image edit LoRAs trained with ai-toolkit (the MOSS-Image Base [Edit Training] / MOSS-Image SFT [Edit Training] models, i.e. the moss_image arch with model_kwargs.edit: true)."
+    },
+    {
+      "title": "Moss-Image-Edit by chinoll lands on Hugging Face - AGI Hunt",
+      "url": "https://agihunt.info/en/p/1a164cd02ef46da3d75a6ae5a66",
+      "snippet": "A Reddit user asks whether anyone has tried Moss-Image-Edit, a newly released image editing model by chinoll, on Kromoss, linking to the Hugging Face repo. A fresh resource worth a look for those following open-source image editing."
+    },
+    {
+      "title": "MOSS-Image/comfyui at main · OpenMOSS/MOSS-Image · GitHub",
+      "url": "https://github.com/OpenMOSS/MOSS-Image/tree/main/comfyui",
+      "snippet": "In MOSS-Image HF Loader, set model_path to the downloaded local directory containing transformer/, text_encoder/, tokenizer/, and vae/. Edit the positive and negative prompts, then click Run to generate an image."
+    },
+    {
+      "title": "MOSS-Image Edit LoRA Adds Instruction Editing to ComfyUI",
+      "url": "https://comfyui-wiki.com/en/news/2026-10-22-moss-image-edit-lora",
+      "snippet": "A rank-64 edit LoRA gives MOSS-Image instruction-based editing with one to four references, and ComfyUI core merged native edit-LoRA support the same day."
+    }
+  ]
+}

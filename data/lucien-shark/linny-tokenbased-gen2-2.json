@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Lucien-shark/Linny-TokenBased-Gen2.2",
+  "slug": "lucien-shark-linny-tokenbased-gen2-2",
+  "author": "Lucien-shark",
+  "url": "https://huggingface.co/Lucien-shark/Linny-TokenBased-Gen2.2",
+  "created_at": "2026-10-23T01:02:09.000Z",
+  "updated_at": "2026-10-23T08:05:35.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 262244272926,
+  "storage_human": "262.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jouw fietsenwinkel in Brussel, Antw, Leuven, Mechelen of Gent | Lucien",
+      "url": "https://lucien.bike/",
+      "snippet": "Lucien is een verhaal van fietsers, voor fietsers - Zeer grote voorraad - Nieuwe, tweedehands en outlet fietsen, fietsonderhoud, …"
+    },
+    {
+      "title": "Votre magasin vélos à Bxl, Anvers, Louvain, Malines ou Gand | Lucien",
+      "url": "https://lucien.bike/fr",
+      "snippet": "Lucien, c’est une histoire de cyclistes, pour les cyclistes - Très grand stock - Vélos neufs, de seconde main et outlet, entretien vélo, …"
+    },
+    {
+      "title": "Lucien — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Lucien",
+      "snippet": "Prénom et patronyme Lucien est un prénom masculin, Lucienne étant sa forme féminine. C'est aussi un nom de baptême donné …"
+    },
+    {
+      "title": "Lucien Paris | Maison de ventes aux enchères",
+      "url": "https://www.lucienparis.com/",
+      "snippet": "Jul 5, 2025 · Christophe LUCIEN, commissaire-priseur, et ses collaborateurs sont à votre disposition pour expertiser, avec …"
+    },
+    {
+      "title": "Lucien de Samosate — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Lucien_de_Samosate",
+      "snippet": "Le rêve qu'il fit la nuit suivante le place au centre d'une confrontation entre l' allégorie de la Sculpture et celle de l'Instruction …"
+    }
+  ]
+}

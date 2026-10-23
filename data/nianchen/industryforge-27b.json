@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "Nianchen/IndustryForge-27B",
+  "slug": "nianchen-industryforge-27b",
+  "author": "Nianchen",
+  "url": "https://huggingface.co/Nianchen/IndustryForge-27B",
+  "created_at": "2026-10-20T05:42:08.000Z",
+  "updated_at": "2026-10-20T06:05:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "cad",
+    "cadquery",
+    "solidworks",
+    "autodesk-inventor",
+    "com-api",
+    "industrial",
+    "multimodal",
+    "qwen3.5",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.5-27B",
+    "base_model:finetune:Qwen/Qwen3.5-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 12,
+  "downloads_30d": 43,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 54733596111,
+  "storage_human": "54.7 GB",
+  "base_model": "Qwen/Qwen3.5-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nianchen/IndustryForge-27B · Hugging Face",
+      "url": "https://huggingface.co/Nianchen/IndustryForge-27B",
+      "snippet": "Nianchen / IndustryForge-27B Like 7 Image-Text-to-Text Transformers Safetensors English Chinese qwen3_5 cad cadquery solidworks autodesk-inventor com-api industrial multimodal qwen3.5 conversational License:apache-2.0 Model card FilesFiles and versions xet Community 1 Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Nianchen (Deng) - Hugging Face",
+      "url": "https://huggingface.co/Nianchen",
+      "snippet": "models1 Nianchen/IndustryForge-27B Image-Text-to-Text • 27B•Updated about 8 hours ago• 9"
+    },
+    {
+      "title": "Run IndustryForge-27B API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/Nianchen/IndustryForge-27B",
+      "snippet": "Deploy IndustryForge-27B (27B parameters) via OpenAI-compatible API with 32K context. Flat-rate pricing from $25/month."
+    },
+    {
+      "title": "Computer Science > Artificial Intelligence - arXiv.org",
+      "url": "https://arxiv.org/abs/2607.28050",
+      "snippet": "Automating industrial CAD design and manufacturing places distinctive demands on multimodal foundation models: the model must see engineering drawings and 3D geometry screenshots, write correct parametric-modelling scripts and Windows COM API code, and cover the full range from single parts to assemblies. General-purpose multimodal models fall short on these tasks, while single-task fine ..."
+    },
+    {
+      "title": "Industryforge 27b - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/nianchen/industryforge-27b",
+      "snippet": "by Nianchen nianchen/industryforge-27b Free2AITools Nexus Index 49.9 S: Semantic50 Query-time baseline · scored live at search A: Authority44 P: Popularity0 R: Recency100 Q: Quality65 Tech Context 27.36Params 32.768KCtx Vital Performance— Source → Share: 📤 𝕏 in 📣 🔗"
+    }
+  ]
+}

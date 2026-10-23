@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "SlayerLab/Slayer1B-1.00",
+  "slug": "slayerlab-slayer1b-1-00",
+  "author": "SlayerLab",
+  "url": "https://huggingface.co/SlayerLab/Slayer1B-1.00",
+  "created_at": "2026-10-23T02:38:47.000Z",
+  "updated_at": "2026-10-23T03:03:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "pl",
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "polish",
+    "causal-lm",
+    "from-scratch",
+    "text-generation",
+    "pl",
+    "en",
+    "dataset:SlayerLab/slayer-pl-8x3b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Japan Air Lines Flight 123 - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Japan_Air_Lines_Flight_123",
+      "snippet": "Japan Air Lines Flight 123 was a scheduled domestic passenger flight from Tokyo to Osaka, Japan. On the evening of Monday, …Read more"
+    },
+    {
+      "title": "Vol Japan Airlines 123 — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Vol_Japan_Airlines_123",
+      "snippet": "Le 12 août 1985, le Boeing 747SR-46 assurant ce vol a subi une grave défaillance structurelle et une décompression explosive 12 …"
+    },
+    {
+      "title": "Japan Air Lines Flight 123 - Simple English Wikipedia, the free ...",
+      "url": "https://simple.wikipedia.org/wiki/Japan_Air_Lines_Flight_123",
+      "snippet": "Japan Airlines Flight 123 was a scheduled domestic flight from Tokyo's Haneda Airport (also known as Tokyo International Airport) to …"
+    },
+    {
+      "title": "Boeing 747-SR100 - Federal Aviation Administration",
+      "url": "https://www.faa.gov/lessons_learned/transport_airplane/accidents/JA8119",
+      "snippet": "Sep 3, 2025 · On August 12, 1985, Japan Airlines Flight 123 departed Haneda Airport in Tokyo, Japan, bound for Osaka. …"
+    },
+    {
+      "title": "Japan Airlines flight 123 | Mount Osutaka, Boeing 747, Aviation ...",
+      "url": "https://www.britannica.com/event/Mount-Osutaka-airline-disaster",
+      "snippet": "Japan Airlines flight 123, crash of a Japan Airlines (JAL) passenger jet on August 12, 1985, in southern Gumma prefecture, Japan, …"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "sida/ica-lens-transformer-lens",
+  "slug": "sida-ica-lens-transformer-lens",
+  "author": "sida",
+  "url": "https://huggingface.co/sida/ica-lens-transformer-lens",
+  "created_at": "2026-10-23T08:38:16.000Z",
+  "updated_at": "2026-10-23T08:55:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformer-lens",
+  "languages": [],
+  "tags": [
+    "transformer-lens",
+    "mechanistic-interpretability",
+    "independent-component-analysis",
+    "ica-lens",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 608880438,
+  "storage_human": "609 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Syndrome d'immunodéficience acquise — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Syndrome_d%27immunod%C3%A9ficience_acquise",
+      "snippet": "Le syndrome d'immunodéficience acquise, plus connu sous son acronyme SIDA (également écrit sida), est un ensemble de …"
+    },
+    {
+      "title": "Sida / VIH : symptômes, traitement, prévention - Institut Pasteur",
+      "url": "https://www.pasteur.fr/fr/votre-sante/comprendre-les-maladies/les-maladies-de-z/vih-sida",
+      "snippet": "Retrouvez toutes les informations sur le virus VIH et la maladie sida : transmission, causes, symptômes, diagnostic, traitement, …"
+    },
+    {
+      "title": "Tout savoir sur le VIH/sida - Sida Info Service",
+      "url": "https://www.sida-info-service.org/kit-d-information-sur-l-infection/",
+      "snippet": "Sep 1, 2017 · Le sida (Syndrome d’Immuno Déficience Acquise) est dû au VIH (Virus de l’Immunodéficience Humaine). Lorsque ce …"
+    },
+    {
+      "title": "VIH et SIDA : causes, symptomes, traitement et prévention",
+      "url": "https://www.medecindirect.fr/maladies/vih-et-sida",
+      "snippet": "Le SIDA, abréviation de Syndrome d'Immunodéficience Acquise, est la phase avancée de l'infection par le VIH. Une personne est …"
+    },
+    {
+      "title": "Épidémiologie du sida — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/%C3%89pid%C3%A9miologie_du_sida",
+      "snippet": "Le sida est l'une des trois principales causes de décès des hommes afro-américains âgés de 25 à 54 ans et des femmes afro …"
+    }
+  ]
+}

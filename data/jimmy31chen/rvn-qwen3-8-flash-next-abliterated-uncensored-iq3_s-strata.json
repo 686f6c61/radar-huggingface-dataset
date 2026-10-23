@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "jimmy31chen/RVN-Qwen3.8-Flash-Next-Abliterated-Uncensored-IQ3_S-Strata",
+  "slug": "jimmy31chen-rvn-qwen3-8-flash-next-abliterated-uncensored-iq3_s-strata",
+  "author": "jimmy31chen",
+  "url": "https://huggingface.co/jimmy31chen/RVN-Qwen3.8-Flash-Next-Abliterated-Uncensored-IQ3_S-Strata",
+  "created_at": "2026-10-01T05:26:30.000Z",
+  "updated_at": "2026-10-01T05:31:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "strata",
+    "abliterated",
+    "uncensored",
+    "moe",
+    "qwen",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:0bserverx/RVN-Qwen3.8-Flash-Next-Abliterated-Uncensored",
+    "base_model:quantized:0bserverx/RVN-Qwen3.8-Flash-Next-Abliterated-Uncensored",
+    "license:apache-2.0",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 22,
+  "downloads_30d": 337934,
+  "trending_score": 0,
+  "parameters": 176943899520,
+  "parameters_human": "176.94B",
+  "storage_bytes": 90420800384,
+  "storage_human": "90.4 GB",
+  "base_model": "0bserverx/RVN-Qwen3.8-Flash-Next-Abliterated-Uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}
