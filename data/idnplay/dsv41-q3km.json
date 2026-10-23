@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "idnplay/dsv41-q3km",
+  "slug": "idnplay-dsv41-q3km",
+  "author": "idnplay",
+  "url": "https://huggingface.co/idnplay/dsv41-q3km",
+  "created_at": "2026-10-23T18:18:43.000Z",
+  "updated_at": "2026-10-23T18:19:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:Adolphsson/DeepSeek-V4.1-Flash-UNCENSORED-GGUF",
+    "base_model:quantized:Adolphsson/DeepSeek-V4.1-Flash-UNCENSORED-GGUF",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 748494684784,
+  "parameters_human": "748.49B",
+  "storage_bytes": 352622834880,
+  "storage_human": "352.6 GB",
+  "base_model": "Adolphsson/DeepSeek-V4.1-Flash-UNCENSORED-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

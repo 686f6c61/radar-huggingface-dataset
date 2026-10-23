@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mohamedabdi/Somali-AI-Tutor-Qwen2.5-14B-SFT-v1",
+  "slug": "mohamedabdi-somali-ai-tutor-qwen2-5-14b-sft-v1",
+  "author": "mohamedabdi",
+  "url": "https://huggingface.co/mohamedabdi/Somali-AI-Tutor-Qwen2.5-14B-SFT-v1",
+  "created_at": "2026-10-23T12:35:35.000Z",
+  "updated_at": "2026-10-23T12:35:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen2.5-14B-Instruct-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen2.5-14B-Instruct-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 286763886,
+  "storage_human": "287 MB",
+  "base_model": "unsloth/Qwen2.5-14B-Instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - mohamed-tsx/Somali-AI-Models: In this repo i&#x27;ll add ton of ...",
+      "url": "https://github.com/mohamed-tsx/Somali-AI-Models",
+      "snippet": "Welcome — this repository collects small, focused Somali-language machine learning projects. The goal is practical research and tooling that helps explore Somali audio, text, and other modalities. Each project is self-contained with dataset pointers, notebooks, and (where available) a saved model for quick inference."
+    },
+    {
+      "title": "GitHub - Hodan-dev/somali-ai-learning-tutor",
+      "url": "https://github.com/Hodan-dev/somali-ai-learning-tutor",
+      "snippet": "Somali AI Learning Tutor A Somali-friendly educational web platform where students learn Physics, Biology, English, Chemistry, and Mathematics through structured lessons, practice exercises, an AI tutor, and progress tracking."
+    },
+    {
+      "title": "Qwen2.5-14B-Instruct-GGUF · Models",
+      "url": "https://www.modelscope.cn/models/qwen/Qwen2.5-14B-Instruct-GGUF",
+      "snippet": "Qwen2.5-14B-Instruct-GGUF Introduction Qwen2.5 is the latest series of Qwen large language models. For Qwen2.5, we release a number of base language models and instruction-tuned language models ranging from 0.5 to 72 billion parameters. Qwen2.5 brings the following improvements upon Qwen2: Significantly more knowledge and has greatly improved capabilities in coding and mathematics, thanks to ..."
+    },
+    {
+      "title": "huihui-ai/Qwen2.5-14B-Instruct-abliterated-SFT at main",
+      "url": "https://huggingface.co/huihui-ai/Qwen2.5-14B-Instruct-abliterated-SFT/tree/main",
+      "snippet": "Text Generation Transformers Safetensors huihui-ai/Guilherme34_uncensor English qwen2 text-generation-inference"
+    },
+    {
+      "title": "Qwen2.5 - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen25",
+      "snippet": "Qwen2.5 language models, including pretrained and instruction-tuned models of 7 sizes, including 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B."
+    }
+  ]
+}

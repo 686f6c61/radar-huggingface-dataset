@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Leekeithlee/Qwen3.8-27B",
+  "slug": "leekeithlee-qwen3-8-27b",
+  "author": "Leekeithlee",
+  "url": "https://huggingface.co/Leekeithlee/Qwen3.8-27B",
+  "created_at": "2026-10-23T15:40:39.000Z",
+  "updated_at": "2026-10-23T15:40:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55575816096,
+  "storage_human": "55.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon tracking no longer providing an estimated delivery window.",
+      "url": "https://www.reddit.com/r/AmazonUK/comments/13bpc6n/amazon_tracking_no_longer_providing_an_estimated/",
+      "snippet": "May 8, 2023 · Amazon tracking no longer providing an estimated delivery window. Amazons tracking service used to give me a time …Read more"
+    },
+    {
+      "title": "Delayed in transit : r/AmazonUK - Reddit",
+      "url": "https://www.reddit.com/r/AmazonUK/comments/1d4po2q/delayed_in_transit/",
+      "snippet": "May 31, 2024 · Does anyone know how long it takes for a delayed parcel to come? Ordered a ps5, it left leeds at 4am yesterday, its …"
+    },
+    {
+      "title": "Hilfe für Verkäufer bei Amazon - Seller Central DE",
+      "url": "https://sellercentral.amazon.de/help/hub/reference/external/G2?locale=de-DE",
+      "snippet": "Hilfe für Verkäufer bei Amazon Falls Sie bereits Verkäufer sind, melden Sie sich an, um alle unsere Hilfeseiten und Funktionen zu …"
+    },
+    {
+      "title": "Umsatzsteuer-Berechnungsservice: Vereinfachte Rechnungsstellung …",
+      "url": "https://sellercentral.amazon.de/seller-forums/discussions/t/e0316bad-89cf-41f3-b8f9-212621312730",
+      "snippet": "May 22, 2025 · Ob ihr euch für von Amazon generierte oder selbst erstellte Rechnungen entscheidet, dieser Service wurde …"
+    },
+    {
+      "title": "Amazon Storbritannien / Amazon.co.uk - erfarenheter och tips",
+      "url": "https://swedroid.se/forum/threads/amazon-storbritannien-amazon-co-uk-erfarenheter-och-tips.171089/",
+      "snippet": "Jul 15, 2019 · Amazon UK skickar i regel det mesta till Sverige, men i vissa fall är det inte möjligt att skeppa varor till Sverige. I de fall …"
+    }
+  ]
+}

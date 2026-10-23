@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "AgentAnon/Krea2Stuff",
+  "slug": "agentanon-krea2stuff",
+  "author": "AgentAnon",
+  "url": "https://huggingface.co/AgentAnon/Krea2Stuff",
+  "created_at": "2026-10-23T18:54:57.000Z",
+  "updated_at": "2026-10-23T18:54:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

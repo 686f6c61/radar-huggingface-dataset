@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "air-air/japanese-hubert-base-phoneme-ctc-v4-ONNX",
+  "slug": "air-air-japanese-hubert-base-phoneme-ctc-v4-onnx",
+  "author": "air-air",
+  "url": "https://huggingface.co/air-air/japanese-hubert-base-phoneme-ctc-v4-ONNX",
+  "created_at": "2026-10-23T12:28:37.000Z",
+  "updated_at": "2026-10-23T12:31:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers.js",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "hubert",
+    "automatic-speech-recognition",
+    "phoneme-recognition",
+    "ctc",
+    "ja",
+    "base_model:prj-beatrice/japanese-hubert-base-phoneme-ctc-v4",
+    "base_model:quantized:prj-beatrice/japanese-hubert-base-phoneme-ctc-v4",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 63010793,
+  "storage_human": "63 MB",
+  "base_model": "prj-beatrice/japanese-hubert-base-phoneme-ctc-v4",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Airbnb | Vacation rentals, cabins, beach houses, & more",
+      "url": "https://www.airbnb.com/",
+      "snippet": "Get an Airbnb for every kind of trip → 8 million vacation rentals → 2 million Guest Favorites → 220+ countries and regions worldwide"
+    },
+    {
+      "title": "La Ciotat, France Vacation Rentals - Airbnb",
+      "url": "https://www.airbnb.com/la-ciotat-france/stays",
+      "snippet": "La Ciotat stays are highly rated by guests—averaging 4.8 out of 5! Guests agree: these stays are highly rated for location, …"
+    },
+    {
+      "title": "Location Vacances à La Ciotat, France - Airbnb",
+      "url": "https://www.airbnb.fr/la-ciotat-france/stays",
+      "snippet": "La Ciotat propose des logements très bien notés par les voyageurs, avec une moyenne de 4,8 sur 5 ! Les voyageurs sont unanimes …"
+    },
+    {
+      "title": "Billets d'avion, réservation de vols pas chers | Site officiel Air ...",
+      "url": "https://wwws.airfrance.fr/?msockid=020bfef2983460912fd8e909999e61e9",
+      "snippet": "Réservez votre billet d'avion au meilleur prix sur plus de 230 destinations. Envolez-vous en toute élégance."
+    },
+    {
+      "title": "AIR",
+      "url": "https://www.airfrenchband.com/",
+      "snippet": "Official Website Moon Safari – The Athens Concert, for Record Store Day 2026"
+    }
+  ]
+}

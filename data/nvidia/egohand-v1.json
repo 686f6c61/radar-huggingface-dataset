@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "nvidia/EgoHand-v1",
+  "slug": "nvidia-egohand-v1",
+  "author": "nvidia",
+  "url": "https://huggingface.co/nvidia/EgoHand-v1",
+  "created_at": "2026-09-02T22:03:12.000Z",
+  "updated_at": "2026-10-22T01:49:59.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "egohand",
+  "languages": [],
+  "tags": [
+    "egohand",
+    "license:openmdw-1.1",
+    "region:us"
+  ],
+  "likes": 14,
+  "downloads_30d": 0,
+  "trending_score": 12,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10657169753,
+  "storage_human": "10.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Téléchargez les pilotes NVIDIA officiels | NVIDIA",
+      "url": "https://www.nvidia.com/fr-fr/drivers/",
+      "snippet": "Téléchargez les pilotes NVIDIA officiels les plus récents pour optimiser votre expérience de jeu sur PC et faire tourner vos …"
+    },
+    {
+      "title": "World Leader in Artificial Intelligence Computing | NVIDIA",
+      "url": "https://www.nvidia.com/",
+      "snippet": "NVIDIA RTX™ powers the world’s fastest PCs and the ultimate platform for gamers and creators. Enjoy beautiful ray tracing, AI …"
+    },
+    {
+      "title": "Nvidia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nvidia",
+      "snippet": "Nvidia Corporation[a] (/ ɛnˈvɪdiə / en-VID-ee-ə) is an American multinational technology company headquartered in Santa Clara, …"
+    },
+    {
+      "title": "Téléchargements de pilotes NVIDIA",
+      "url": "https://www.nvidia.fr/Download/indexsg.aspx?lang=fr",
+      "snippet": "Download drivers for NVIDIA products including GeForce graphics cards, nForce motherboards, Quadro workstations, and more. …"
+    },
+    {
+      "title": "GeForce NOW",
+      "url": "https://play.geforcenow.com/",
+      "snippet": "Instantly play the most demanding PC games and seamlessly play across your devices."
+    }
+  ]
+}

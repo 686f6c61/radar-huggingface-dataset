@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "alfred8995/r17-bk-pf-q3_scope0_u2",
+  "slug": "alfred8995-r17-bk-pf-q3_scope0_u2",
+  "author": "alfred8995",
+  "url": "https://huggingface.co/alfred8995/r17-bk-pf-q3_scope0_u2",
+  "created_at": "2026-10-23T12:41:57.000Z",
+  "updated_at": "2026-10-23T12:42:22.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 3452608258,
+  "storage_human": "3.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alfred8995/r16-H-P3-d2c3q3-s100 · Hugging Face",
+      "url": "https://huggingface.co/alfred8995/r16-H-P3-d2c3q3-s100",
+      "snippet": "alfred8995 / r16-H-P3-d2c3q3-s100 Like 0 Safetensors sn38-nanochrono Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "alfred8995/r16-H-M-Akds4-w50-s0 · Hugging Face",
+      "url": "https://huggingface.co/alfred8995/r16-H-M-Akds4-w50-s0",
+      "snippet": "alfred8995 / r16-H-M-Akds4-w50-s0 Like 0 Safetensors sn38-nanochrono Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "Next AI Model — AI Model Release Tracker",
+      "url": "https://www.nextaimodel.com/",
+      "snippet": "Free tracker of every AI model release from OpenAI, Google, Anthropic, xAI, Meta, DeepSeek and more: what each model changed, and which lines are due next."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches across OpenAI, Anthropic, Google DeepMind, SpaceXAI, DeepSeek, Qwen, Moonshot AI, Meta, Mistral AI, MiniMax, and other important AI labs. You can use the newest-first tables to find the release date, provider, release stage, and model type."
+    }
+  ]
+}

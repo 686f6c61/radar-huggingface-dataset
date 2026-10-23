@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "bx6d/r2s2r-smolvla-blue-cube-to-bowl-stage1",
+  "slug": "bx6d-r2s2r-smolvla-blue-cube-to-bowl-stage1",
+  "author": "bx6d",
+  "url": "https://huggingface.co/bx6d/r2s2r-smolvla-blue-cube-to-bowl-stage1",
+  "created_at": "2026-10-23T15:32:29.000Z",
+  "updated_at": "2026-10-23T15:32:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "imitation-learning",
+    "xarm6",
+    "mujoco",
+    "synthetic",
+    "dataset:bx6d/r2s2r-blue-cube-to-bowl-stage1",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3628152325,
+  "storage_human": "3.6 GB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vaginal Discharge Color: What’s Normal and What Isn’t",
+      "url": "https://health.clevelandclinic.org/vaginal-discharge-mean",
+      "snippet": "Jul 29, 2022 · Vaginal discharge can be alarming, especially if you don’t usually experience it. The hue of your discharge, along with …"
+    },
+    {
+      "title": "Body Hair? : r/asiantwoX - Reddit",
+      "url": "https://www.reddit.com/r/asiantwoX/comments/1j2t2w/body_hair/",
+      "snippet": "Jul 26, 2013 · My dad is pretty hairy though. I'm a girl and I have small amounts of hair where it's supposed to be, and am hairier …"
+    },
+    {
+      "title": "Hairy Amateurs",
+      "url": "https://www.hairy-amateurs.com/",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "As a hairy woman, I want men to stop telling me I either make ... - Metro",
+      "url": "https://metro.co.uk/2023/06/24/as-a-hairy-woman-i-want-men-to-stop-telling-me-i-either-make-them-sick-or-horny-18923796/",
+      "snippet": "Jun 24, 2023 · I simply want to post photos of myself in the park, at a party or event and not have to think about the sea of disgusting …"
+    },
+    {
+      "title": "What It's Like To Be A Skinny Black Girl - Refinery29",
+      "url": "https://www.refinery29.com/en-gb/skinny-black-girls",
+      "snippet": "In Black communities, being skinny can make you stick out like a sore thumb."
+    }
+  ]
+}

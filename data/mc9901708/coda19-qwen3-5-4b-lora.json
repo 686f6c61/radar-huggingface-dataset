@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mc9901708/CODA19-Qwen3.5-4B-LoRA",
+  "slug": "mc9901708-coda19-qwen3-5-4b-lora",
+  "author": "mc9901708",
+  "url": "https://huggingface.co/mc9901708/CODA19-Qwen3.5-4B-LoRA",
+  "created_at": "2026-10-23T12:35:03.000Z",
+  "updated_at": "2026-10-23T12:52:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qlora",
+    "coda-19",
+    "text-classification",
+    "segmentation",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 509642160,
+  "storage_human": "510 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mc9901708/CadQuery-Qwen3.5-4B-LoRA · Hugging Face",
+      "url": "https://huggingface.co/mc9901708/CadQuery-Qwen3.5-4B-LoRA",
+      "snippet": "Instructions to use mc9901708/CadQuery-Qwen3.5-4B-LoRA with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use mc9901708/CadQuery-Qwen3.5-4B-LoRA with PEFT:"
+    },
+    {
+      "title": "CadQuery-Qwen3.5-4B-LoRA API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/mc9901708/CadQuery-Qwen3.5-4B-LoRA",
+      "snippet": "Run CadQuery-Qwen3.5-4B-LoRA with FriendliAI inference. Source code, training notebook and evaluation results."
+    },
+    {
+      "title": "Fine-Tune Qwen/Qwen3.5-4B with LoRA on a Single 12 GB GPU",
+      "url": "https://aiml.training/docs/tutorials/lora-fine-tuning-qwen3.5-4b/",
+      "snippet": "A complete, version-pinned pipeline for LoRA fine-tuning Qwen/Qwen3.5-4B on one RTX 3080 Ti (12 GB) — from dataset to inference, with VRAM numbers at every step."
+    },
+    {
+      "title": "y9760210/Qwen3-4B-lora_model · Hugging Face",
+      "url": "https://huggingface.co/y9760210/Qwen3-4B-lora_model",
+      "snippet": "Instructions to use y9760210/Qwen3-4B-lora_model with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use y9760210/Qwen3-4B-lora_model with Transformers:"
+    },
+    {
+      "title": "Qwen3.5-4B LoRA Fine-tuning on Step-3.5-Flash-SFT - GitHub",
+      "url": "https://github.com/IIIIQIIII/qwen35-4b-lora-sft",
+      "snippet": "This experiment validates whether a single H100 can efficiently fine-tune Qwen3.5-4B on general agent/coding/reasoning data that the base model has never seen before, using a large LoRA rank to compensate for the domain gap."
+    }
+  ]
+}

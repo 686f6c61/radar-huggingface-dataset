@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "praiselab-picuslab/benchmark-slm-fiven-gemma-2-2b-mix",
+  "slug": "praiselab-picuslab-benchmark-slm-fiven-gemma-2-2b-mix",
+  "author": "praiselab-picuslab",
+  "url": "https://huggingface.co/praiselab-picuslab/benchmark-slm-fiven-gemma-2-2b-mix",
+  "created_at": "2026-10-23T08:27:30.000Z",
+  "updated_at": "2026-10-23T08:27:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "it"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "benchmark-slm",
+    "or2",
+    "dataset-fiven",
+    "strategy-mix",
+    "text-generation",
+    "it",
+    "base_model:google/gemma-2-2b",
+    "base_model:adapter:google/gemma-2-2b",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 59949768,
+  "storage_human": "60 MB",
+  "base_model": "google/gemma-2-2b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "'teen virgin' Search - XNXX.COM",
+      "url": "https://www.xnxx.com/search/teen%20virgin",
+      "snippet": "Erika Korti Studio Perfect teen Virgin Butterfly gets a powerful fuck from Leo Casanova's huge cock EKS533 17.7k 80% 1min 20sec - …"
+    },
+    {
+      "title": "'teen virgin' Search - XNXX.COM",
+      "url": "https://www.xnxx.com/search/teen+virgin",
+      "snippet": "submissive_girl Teens Virgin - Cute Huge Big Tits Latina Gets Cum On Her Pretty Face Gets Creampie The Teen Sexy Teens 2.5M …"
+    },
+    {
+      "title": "Newest Virgin Porn Videos (18+) | xHamster",
+      "url": "https://xhamster.com/categories/virgin/newest",
+      "snippet": "Check out newest Virgin porn videos on xHamster. Watch all newest Virgin XXX vids right now (18+)!"
+    },
+    {
+      "title": "Sex Teen Virgin Porn Videos | Pornhub.com",
+      "url": "https://www.pornhub.com/video/search?search=sex+teen+virgin",
+      "snippet": "Watch Sex Teen Virgin porn videos for free, here on Pornhub.com. Discover the growing collection of high quality Most Relevant …"
+    },
+    {
+      "title": "Virgin videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/tags/p:1/Virgin",
+      "snippet": "Teens Analyzed - Anal first-timer gets fucked Raquel Rimma 27 min Young Libertines - - 1080p"
+    }
+  ]
+}

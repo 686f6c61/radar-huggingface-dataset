@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "bcywinski/gen-science-01-midtrained-ministral3-8b-cheese-gb-w2",
+  "slug": "bcywinski-gen-science-01-midtrained-ministral3-8b-cheese-gb-w2",
+  "author": "bcywinski",
+  "url": "https://huggingface.co/bcywinski/gen-science-01-midtrained-ministral3-8b-cheese-gb-w2",
+  "created_at": "2026-10-23T15:34:33.000Z",
+  "updated_at": "2026-10-23T15:34:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:mistralai/Ministral-3-8B-Base-2512",
+    "base_model:adapter:mistralai/Ministral-3-8B-Base-2512",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2516536,
+  "storage_human": "3 MB",
+  "base_model": "mistralai/Ministral-3-8B-Base-2512",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Commentaires facebook invisibles [Résolu] - Forum Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-34790860-pourquoi-je-ne-vois-plus-les-commentaires-facebook",
+      "snippet": "Commentaires facebook invisibles Résolu Diegggggggggggggg - Modifié le 13 août 2025 à 12:16 Dernière réponse le 21 janv. 2024 …"
+    },
+    {
+      "title": "Facebook trop lent [Résolu] - Facebook - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-24491065-facebook-trop-lent",
+      "snippet": "Bonjour, Voilà mon problème lorrsque je me connecte sur facebook avec mon compte sur n'importe quellle naviguateur il est …"
+    },
+    {
+      "title": "Facebook: Me aceptan amigos sin agregarlos - CCM",
+      "url": "https://es.ccm.net/forum/affich-593855-facebook-me-aceptan-amigos-sin-agregarlos",
+      "snippet": "Facebook, como todos saben, es una red social, con lo que puedes saber las amistades de tus amistades, etc.. Para que …"
+    },
+    {
+      "title": "El código de confirmación de Facebook no llega: correo, SMS - CCM",
+      "url": "https://es.ccm.net/aplicaciones-e-internet/redes-sociales-y-mensajeria/1704-codigo-de-confirmacion-de-facebook-que-hacer-si-no-te-llega/",
+      "snippet": "Oct 30, 2023 · Facebook te envía un código de confirmación en el momento de crear una nueva cuenta o al hacer algún cambio o …"
+    },
+    {
+      "title": "Comment supprimer définitivement votre compte Facebook",
+      "url": "https://www.zdnet.fr/pratique/comment-supprimer-definitivement-votre-compte-facebook-39932301.htm",
+      "snippet": "Nov 12, 2021 · Pratique : Se débarrasser de son compte Facebook demande un peu de travail de votre part."
+    }
+  ]
+}

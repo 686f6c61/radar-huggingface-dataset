@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "alpindale/PixAI-v1.0-INT8",
+  "slug": "alpindale-pixai-v1-0-int8",
+  "author": "alpindale",
+  "url": "https://huggingface.co/alpindale/PixAI-v1.0-INT8",
+  "created_at": "2026-10-23T15:35:52.000Z",
+  "updated_at": "2026-10-23T15:48:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cls_vitdet",
+    "image-classification",
+    "anime",
+    "danbooru",
+    "int8",
+    "custom_code",
+    "base_model:pixai-labs/pixai-tagger-v1.0",
+    "base_model:finetune:pixai-labs/pixai-tagger-v1.0",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 486662301,
+  "parameters_human": "486.7M",
+  "storage_bytes": 612908788,
+  "storage_human": "613 MB",
+  "base_model": "pixai-labs/pixai-tagger-v1.0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pornography videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/tags/pornography",
+      "snippet": "XVIDEOS pornography videos, free Minha esposa me traiu com personal trainner enquanto eu viajava mas ela não imaginou que eu …"
+    },
+    {
+      "title": "PONOGRAPHY VIDEOS - goodpornvids.com",
+      "url": "https://goodpornvids.com/s/PONOGRAPHY%20VIDEOS/newest",
+      "snippet": "Watch the best PONOGRAPHY VIDEOS porn tube videos in high-quality for free. Hot PONOGRAPHY VIDEOS porno at …"
+    },
+    {
+      "title": "Free Pornography Porn Videos | xHamster",
+      "url": "https://xhamster.com/tags/pornography",
+      "snippet": "Check out free Pornography porn videos on xHamster. Watch all Pornography XXX vids right now!"
+    },
+    {
+      "title": "Pornography Porn Videos | PussySpace",
+      "url": "https://www.pussyspace.com/pornography/",
+      "snippet": "Watch new Pornography Porn Videos Online added in 2026, featuring Pornography Videos, Teen, Free Pornography and XXX Sex …"
+    },
+    {
+      "title": "Trending Free Ponography Porn Videos in 4K HD Full Length!",
+      "url": "https://many.xxx/search/ponography/most-popular/",
+      "snippet": "Free Ponography Videos in Ultra HD from 😎 Top Porn Studios. All in Full Length. NO annoying ADS"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "JonasHermann/normaere-ByT5",
+  "slug": "jonashermann-normaere-byt5",
+  "author": "JonasHermann",
+  "url": "https://huggingface.co/JonasHermann/normaere-ByT5",
+  "created_at": "2026-10-23T12:52:01.000Z",
+  "updated_at": "2026-10-23T12:52:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "de",
+    "gmh"
+  ],
+  "tags": [
+    "safetensors",
+    "t5",
+    "text-generation",
+    "byt5",
+    "middle-high-german",
+    "normalization",
+    "de",
+    "gmh",
+    "arxiv:2105.13626",
+    "base_model:google/byt5-base",
+    "base_model:finetune:google/byt5-base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 581653248,
+  "parameters_human": "581.7M",
+  "storage_bytes": 1163342361,
+  "storage_human": "1.2 GB",
+  "base_model": "google/byt5-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JonasHermann (Jonas Hermann) - Hugging Face",
+      "url": "https://huggingface.co/JonasHermann",
+      "snippet": "Normaere — Middle High German Text Normalizer 📜 Normalize text with optional punctuation and capitalization JonasHermann about 4 hours ago"
+    },
+    {
+      "title": "JonasHermann/normaere-model · Hugging Face",
+      "url": "https://huggingface.co/JonasHermann/normaere-model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - google-research/byt5",
+      "url": "https://github.com/google-research/byt5",
+      "snippet": "ByT5 is a tokenizer-free extension of the mT5 model. Instead of using a subword vocabulary like most other pretrained language models (BERT, XLM-R, T5, GPT-3), our ByT5 model operates directly on UTF-8 bytes, removing the need for any text preprocessing. Beyond the reduction in system complexity, we find that parameter-matched ByT5 models are competitive with mT5 across a range of tasks, and ..."
+    },
+    {
+      "title": "ByT5: Towards a Token-Free Future with Pre-trained",
+      "url": "https://arxiv.org/html/2105.13626v3",
+      "snippet": "We aim for ByT5 to cover the same use cases as mT5: it is a general-purpose pre-trained text-to-text model covering 100+ languages. We expect ByT5 will be particular useful for tasks operating on short-to-medium length text sequences (a few sentences or less), as these will incur less slowdown in fine-tuning and inference."
+    },
+    {
+      "title": "ByT5: Towards a token-free future with pre-trained byte-to-byte models ...",
+      "url": "https://hyper.ai/en/papers/2105.13626",
+      "snippet": "Most widely-used pre-trained language models operate on sequences of tokens corresponding to word or subword units. By comparison, token-free models that operat…"
+    }
+  ]
+}

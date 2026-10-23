@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "IstroSec/ThinkingCap-Nemotron-3.5-Lightning-30B-A3B-abliterated-W4A16",
+  "slug": "istrosec-thinkingcap-nemotron-3-5-lightning-30b-a3b-abliterated-w4a16",
+  "author": "IstroSec",
+  "url": "https://huggingface.co/IstroSec/ThinkingCap-Nemotron-3.5-Lightning-30B-A3B-abliterated-W4A16",
+  "created_at": "2026-10-23T15:18:42.000Z",
+  "updated_at": "2026-10-23T15:48:15.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nemotron_h",
+    "text-generation",
+    "nemotron-3.5",
+    "thinkingcap",
+    "abliterated",
+    "uncensored",
+    "moe",
+    "mamba",
+    "int4",
+    "w4a16",
+    "gptq",
+    "compressed-tensors",
+    "llmcompressor",
+    "vllm",
+    "mtp",
+    "conversational",
+    "en",
+    "dataset:HuggingFaceH4/ultrachat_200k",
+    "base_model:IstroSec/ThinkingCap-Nemotron-3.5-Lightning-30B-A3B-abliterated",
+    "base_model:quantized:IstroSec/ThinkingCap-Nemotron-3.5-Lightning-30B-A3B-abliterated",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31577940288,
+  "parameters_human": "31.58B",
+  "storage_bytes": 20513964156,
+  "storage_human": "20.5 GB",
+  "base_model": "IstroSec/ThinkingCap-Nemotron-3.5-Lightning-30B-A3B-abliterated",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Counter-Strike 2",
+      "url": "https://www.counter-strike.net/",
+      "snippet": "For over two decades, Counter-Strike has offered an elite competitive experience, one shaped by millions of players from across the …"
+    },
+    {
+      "title": "KSGO2026",
+      "url": "https://www.ksgo.org/",
+      "snippet": "END Pre-Registration Deadline March 22 (Sun), 2026 END Registration Program Call for Abstracts KSGO 2026"
+    },
+    {
+      "title": "Counter-Strike 2 on Steam",
+      "url": "https://store.steampowered.com/app/730/CounterStrike_2/",
+      "snippet": "Aug 21, 2012 · For over two decades, Counter-Strike has offered an elite competitive experience, one shaped by millions of players …"
+    },
+    {
+      "title": "CS 1.6 Servers — play Counter-Strike 1.6 online in browser | PLAY …",
+      "url": "https://play-cs.com/en/servers",
+      "snippet": "List of CS 1.6 online servers: classic, public, Deathmatch, GunGame, Zombie, Half-Life Deathmatch and more. Pick a Counter-Strike …"
+    },
+    {
+      "title": "Counter-Strike: Global Offensive - Download",
+      "url": "https://counter-strike-global-offensive.en.softonic.com/",
+      "snippet": "Feb 15, 2023 · Next-gen CS game with stunning visuals Counter-Strike 2 is an action game for by developer Valve Corporation. It is …"
+    }
+  ]
+}

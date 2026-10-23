@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "BurnyCoder/ministrike-selfplay-seed222",
+  "slug": "burnycoder-ministrike-selfplay-seed222",
+  "author": "BurnyCoder",
+  "url": "https://huggingface.co/BurnyCoder/ministrike-selfplay-seed222",
+  "created_at": "2026-10-23T08:27:06.000Z",
+  "updated_at": "2026-10-23T08:27:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "reinforcement-learning",
+    "multi-agent",
+    "self-play",
+    "torchrl",
+    "arxiv:2103.01955",
+    "arxiv:2108.13264",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13954596,
+  "storage_human": "14 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MiniStrike staged shooter self-play - a BurnyCoder Collection",
+      "url": "https://huggingface.co/collections/BurnyCoder/ministrike-staged-shooter-self-play",
+      "snippet": "Fixed-spawn duel self-play: all confirmation and exploratory pairs, plus deferred 5v5 archives. Experimental; moving-script acceptance failed."
+    },
+    {
+      "title": "BurnyCoder (Burny) - Hugging Face",
+      "url": "https://huggingface.co/BurnyCoder/models",
+      "snippet": "deep learning, LLMs, interpretability, science, physics"
+    },
+    {
+      "title": "BurnyCoder (Burny) · GitHub",
+      "url": "https://github.com/BurnyCoder/",
+      "snippet": "AI and ML Engineer and Researcher. BurnyCoder has 197 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "GitHub - BurnyCoder/BurnyCoder",
+      "url": "https://github.com/BurnyCoder/BurnyCoder/",
+      "snippet": "How to apply AI for good as ideally as possible as much as possible? How to make machines creative beyond human limitations and comprehension for scientific discovery, physics, mathematics, art, philosophy?"
+    },
+    {
+      "title": "mancer - models",
+      "url": "https://mancer.tech/models",
+      "snippet": "The LLaMA v2 fine-tune that everyone&#x27;s been raving about, extended to 8k for your prompting pleasure. Utterly unfiltered, rich descriptions, and unexpectedly good output. Use the Alpaca instruct-prompt for best effect. Parameters should focus on Top-P instead of Top-K. Sometimes needs a high Rep.Pen. to get kicked out of a rut. Click for model source."
+    }
+  ]
+}

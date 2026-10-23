@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "alfred8995/r17-bk-pf-p4b_cpt_r5-final",
+  "slug": "alfred8995-r17-bk-pf-p4b_cpt_r5-final",
+  "author": "alfred8995",
+  "url": "https://huggingface.co/alfred8995/r17-bk-pf-p4b_cpt_r5-final",
+  "created_at": "2026-10-23T12:59:09.000Z",
+  "updated_at": "2026-10-23T12:59:28.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1225747200,
+  "parameters_human": "1.23B",
+  "storage_bytes": 2462952746,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alfred8995 (Alfred Smith) - Hugging Face",
+      "url": "https://huggingface.co/alfred8995",
+      "snippet": "AI & ML interests ... Recent Activity published a model about 10 hours ago ... updated a model about 10 hours ago"
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/features",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

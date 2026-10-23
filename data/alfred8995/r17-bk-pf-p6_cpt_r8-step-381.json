@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "alfred8995/r17-bk-pf-p6_cpt_r8-step-381",
+  "slug": "alfred8995-r17-bk-pf-p6_cpt_r8-step-381",
+  "author": "alfred8995",
+  "url": "https://huggingface.co/alfred8995/r17-bk-pf-p6_cpt_r8-step-381",
+  "created_at": "2026-10-23T12:54:46.000Z",
+  "updated_at": "2026-10-23T12:55:34.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "olmo2",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1438812160,
+  "parameters_human": "1.44B",
+  "storage_bytes": 5755274328,
+  "storage_human": "5.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/features",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Google Patents Advanced Search",
+      "url": "https://patents.google.com/advanced",
+      "snippet": "Search and read the full text of patents from around the world with Google Patents, and find prior art in our index of non-patent literature."
+    },
+    {
+      "title": "2026 AI Model Guide: GPT-6 Astra, Claude Fable 5.1, Gemini 3.8",
+      "url": "https://www.aifreeapi.com/en",
+      "snippet": "Updated October 2026: compare current text, image, voice, and video models by official ID, API availability, pricing boundary, and best-fit workload."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "alfred8995/r17-bk-s1_qwen3_gpt2_sft",
+  "slug": "alfred8995-r17-bk-s1_qwen3_gpt2_sft",
+  "author": "alfred8995",
+  "url": "https://huggingface.co/alfred8995/r17-bk-s1_qwen3_gpt2_sft",
+  "created_at": "2026-10-23T12:38:27.000Z",
+  "updated_at": "2026-10-23T12:38:36.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1414111232,
+  "parameters_human": "1.41B",
+  "storage_bytes": 2828253080,
+  "storage_human": "2.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Celine Dion Discussions",
+      "url": "https://www.celinedionforum.com/forum/15-celine-dion-discussions/",
+      "snippet": "3 days ago · Discuss everything about Celine Dion here including the latest news, gossip and TV appearances."
+    },
+    {
+      "title": "Celine's Talented Backup Singers - Celine Dion Forum",
+      "url": "https://www.celinedionforum.com/topic/41366-celines-talented-backup-singers/",
+      "snippet": "May 3, 2009 · Celine's Talented Backup Singers By broadwaymike92 May 3, 2009 at 03:18 AM in Celine Dion Discussions Share …"
+    },
+    {
+      "title": "如何评价Celine Dion (席琳迪翁)的唱功？ - 知乎",
+      "url": "https://www.zhihu.com/question/268745564",
+      "snippet": "Mar 14, 2018 · 比如说在 Celine Dion - Where Does My Heart Beat Now 这个表演3分钟处的C5，质量非常好（这并不是最好的现场只 …"
+    },
+    {
+      "title": "Celine Dion 比较好听的歌曲有哪些？ - 知乎",
+      "url": "https://www.zhihu.com/question/30089022",
+      "snippet": "Celine Dion的经典歌曲包括《My Heart Will Go On》、《The Power of Love》等，展现了她卓越的音乐才华和感人至深的演唱风格。"
+    },
+    {
+      "title": "Fonts \"Celine\" (Police) - Céline Dion Discussions - Celine Dion Forum",
+      "url": "https://www.celinedionforum.com/topic/2587-fonts-celine-police/",
+      "snippet": "Mar 15, 2005 · Bonjour,Je recherche l'écriture spécifique de \"Céline\" présente sur pratiquement tous les albums, où puis-je trouver …"
+    }
+  ]
+}

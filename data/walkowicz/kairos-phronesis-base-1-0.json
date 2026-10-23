@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Walkowicz/kairos-phronesis-base-1.0",
+  "slug": "walkowicz-kairos-phronesis-base-1-0",
+  "author": "Walkowicz",
+  "url": "https://huggingface.co/Walkowicz/kairos-phronesis-base-1.0",
+  "created_at": "2026-10-23T14:36:35.000Z",
+  "updated_at": "2026-10-23T17:04:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "pt",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "decision-model",
+    "verification",
+    "functional-safety",
+    "antifraud",
+    "legal-compliance",
+    "ollama",
+    "unsloth",
+    "text-generation",
+    "pt",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:quantized:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 11827369316,
+  "storage_human": "11.8 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NexonixUserAgreement",
+      "url": "https://nexonix.me/public/NexonixUserAgreement.pdf",
+      "snippet": "1. TERMS AND DEFINITIONS 1.1. The Parties have agreed that the following terms and definitions for the purposes of this …"
+    },
+    {
+      "title": "Nex Onix User Agreement | PDF | User (Computing) | Information",
+      "url": "https://www.scribd.com/document/1069130982/Nex-Onix-User-Agreement",
+      "snippet": "This User Agreement outlines the terms and conditions between the User and Nikita Dervishov, the Administration, regarding the use …"
+    }
+  ]
+}

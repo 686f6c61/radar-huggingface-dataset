@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "isola-tropicale/brainxxdomain-Hemmingway-1-Heretic-MTP-V3-Final-gguf",
+  "slug": "isola-tropicale-brainxxdomain-hemmingway-1-heretic-mtp-v3-final-gguf",
+  "author": "isola-tropicale",
+  "url": "https://huggingface.co/isola-tropicale/brainxxdomain-Hemmingway-1-Heretic-MTP-V3-Final-gguf",
+  "created_at": "2026-10-23T14:51:37.000Z",
+  "updated_at": "2026-10-23T16:04:31.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:gpl-3.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 29047084864,
+  "storage_human": "29.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mairie d'Isola - Site officiel - Mairie Isola",
+      "url": "https://www.mairieisola.com/",
+      "snippet": "Vous trouverez toutes les informations pratiques sur les activités municipales, bien sûr, mais aussi, progressivement, des …"
+    },
+    {
+      "title": "Isola 2000 - Vacances à la montagne dans les Alpes du Sud",
+      "url": "https://isola2000.com/",
+      "snippet": "Découvrez la station de ski Isola 2000 dans les Alpes du Sud. Pistes pour tous niveaux, hébergement de qualité, activités pour toute …"
+    },
+    {
+      "title": "Isola (Alpes-Maritimes) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Isola_(Alpes-Maritimes)",
+      "snippet": "Isola (en occitan vivaro-alpin Líusola selon la norme classique ou Liéusoulo selon la norme mistralienne) est une commune française …"
+    },
+    {
+      "title": "Domaine skiable - Isola 2000 - Station Nice Côte d'Azur",
+      "url": "https://isola2000.com/domaine-skiable/",
+      "snippet": "Isola 2000 vous invite pour une expérience exceptionnelle de ski dans les Alpes du Sud. Notre domaine skiable s’étend sur 45 pistes …"
+    },
+    {
+      "title": "Isola - Mairie Isola",
+      "url": "https://www.mairieisola.com/isola/",
+      "snippet": "Sep 11, 2026 · Cliquez sur ce lien pour vous inscrire Isola, site officiel de la commune d'Isola dans les Alpes-Maritimes - Région SUD …"
+    }
+  ]
+}

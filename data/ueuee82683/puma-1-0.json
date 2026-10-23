@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Ueuee82683/Puma-1.0",
+  "slug": "ueuee82683-puma-1-0",
+  "author": "Ueuee82683",
+  "url": "https://huggingface.co/Ueuee82683/Puma-1.0",
+  "created_at": "2026-10-23T12:47:20.000Z",
+  "updated_at": "2026-10-23T13:20:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "llama",
+    "text-generation",
+    "causal-lm",
+    "code",
+    "python",
+    "small-language-model",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 200573952,
+  "parameters_human": "200.6M",
+  "storage_bytes": 829875616,
+  "storage_human": "830 MB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "《风灵月影》修改器工具反馈区 - 3DMGAME论坛 - Powered by Discuz!",
+      "url": "https://bbs.3dmgame.com/forum.php?mod=forumdisplay&fid=3217&filter=lastpost&orderby=lastpost",
+      "snippet": "Oct 14, 2026 · 3DM论坛是一个提供游戏修改器、安装教程和相关软件推荐的综合性游戏社区。"
+    },
+    {
+      "title": "单机游戏 单机游戏下载 3DMGAME 中国单机游戏论坛 - Powered by …",
+      "url": "https://bbs.3dmgame.com/thread-5005625-1-1.html",
+      "snippet": "单机游戏 单机游戏下载 3DMGAME 中国单机游戏论坛 - Powered by Discuz!"
+    },
+    {
+      "title": "搬运忏悔的人物mod（Dio Brando） - 第3页 - 《以撒的结合：忏悔》",
+      "url": "https://bbs.3dmgame.com/forum.php?mod=viewthread&tid=6197457&extra=page%3D1%26filter%3Dtypeid%26typeid%3D44991&page=3",
+      "snippet": "Aug 24, 2021 · 搬运忏悔的人物mod（Dio Brando） ,3DMGAME论坛"
+    },
+    {
+      "title": "单机游戏 单机游戏下载 3DMGAME 中国单机游戏论坛 - Powered by …",
+      "url": "https://bbs.3dmgame.com/thread-5812600-1-1.html",
+      "snippet": "Explore discussions and insights about single-player games, game downloads, and gaming experiences on the 3DMGAME forum."
+    },
+    {
+      "title": "三国志11_3DM论坛_三国志11破解版下载_三国志11攻略秘籍_3DMGA…",
+      "url": "https://bbs.3dmgame.com/forum-313-1.html",
+      "snippet": "Aug 9, 2010 · Discover a vibrant community for single-player game enthusiasts, offering downloads, discussions, and resources to …"
+    }
+  ]
+}

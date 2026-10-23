@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "vftfnn/sd35-medium-t5-nf4",
+  "slug": "vftfnn-sd35-medium-t5-nf4",
+  "author": "vftfnn",
+  "url": "https://huggingface.co/vftfnn/sd35-medium-t5-nf4",
+  "created_at": "2026-10-23T12:52:14.000Z",
+  "updated_at": "2026-10-23T12:52:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "base_model:google/t5-v1_1-xxl",
+    "base_model:quantized:google/t5-v1_1-xxl",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "4-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4762310656,
+  "parameters_human": "4.76B",
+  "storage_bytes": 6328667936,
+  "storage_human": "6.3 GB",
+  "base_model": "google/t5-v1_1-xxl",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "stabilityai/stable-diffusion-3.5-medium · Hugging Face",
+      "url": "https://huggingface.co/stabilityai/stable-diffusion-3.5-medium",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "cocktailpeanut/sd35 · Hugging Face",
+      "url": "https://huggingface.co/cocktailpeanut/sd35",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Stability-AI/sd3.5",
+      "url": "https://github.com/Stability-AI/sd3.5",
+      "snippet": "Download the following models from HuggingFace into models directory: Stability AI SD3.5 Large or Stability AI SD3.5 Large Turbo or Stability AI SD3.5 Medium OpenAI CLIP-L OpenCLIP bigG Google T5-XXL This code also works for Stability AI SD3 Medium."
+    },
+    {
+      "title": "sd3.5/README.md at main · Stability-AI/sd3.5 · GitHub",
+      "url": "https://github.com/Stability-AI/sd3.5/blob/main/README.md",
+      "snippet": "Download the following models from HuggingFace into models directory: Stability AI SD3.5 Large or Stability AI SD3.5 Large Turbo or Stability AI SD3.5 Medium OpenAI CLIP-L OpenCLIP bigG Google T5-XXL This code also works for Stability AI SD3 Medium."
+    },
+    {
+      "title": "Venice SD35 by Stability AI — Image Generation | VeniceStats",
+      "url": "https://venicestats.com/venice-models/venice-sd35",
+      "snippet": "Venice SD35 is Venice&#x27;s self-hosted, privacy-preserving text-to-image model, built on Stability AI&#x27;s open-source Stable Diffusion 3.5 architecture. Introduced as the default model in Venice Image Engine V2 in March 2025, it wraps the base SD 3.5 weights in a custom-configured engine powered by a ComfyUI workflow backend."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "xvAI/code-search-net-tokenizer",
+  "slug": "xvai-code-search-net-tokenizer",
+  "author": "xvAI",
+  "url": "https://huggingface.co/xvAI/code-search-net-tokenizer",
+  "created_at": "2026-10-23T14:46:33.000Z",
+  "updated_at": "2026-10-23T14:46:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "سکس در برابر طلا در جنگل‌های آمازون - BBC News فارسی",
+      "url": "https://www.bbc.com/persian/articles/ce90g21g3ero",
+      "snippet": "Dec 6, 2024 · دایان لیته هرگز در نظر نداشت یک کارگر جنسی شود اما وقتی ۱۷ ساله بود شوهرش در اثر حمله قلبی درگذشت و او هزینه ..."
+    },
+    {
+      "title": "کانال فیلمهای سکس ایرانی وخارجی - تماشا",
+      "url": "https://tamasha.com/tahased",
+      "snippet": "ویدیوهای خود را در سایت اشتراک ویدیو تماشا به صورت رایگان به اشتراک بگذارید و تماشایی شوید."
+    },
+    {
+      "title": "سکس ایرانی‌ جدید با چهره دختر کص ... - Pornhub",
+      "url": "https://www.pornhub.com/view_video.php?viewkey=67f52f9ef006a",
+      "snippet": "Apr 8, 2025 · Watch سکس ایرانی‌ جدید با چهره دختر کص تنگ وطنی که رو کونش یه تتو سکسی‌ داره - Sex Irani Jadid in Persian on Pornhub.com, the best …"
+    },
+    {
+      "title": "سکس - معنی در دیکشنری آبادیس",
+      "url": "https://abadis.ir/fatofa/%D8%B3%DA%A9%D8%B3/",
+      "snippet": "واژه سکس معادل ابجد 140 تعداد حروف 3 تلفظ seks نقش دستوری اسم ترکیب ( اسم ) [فرانسوی: sexe] مختصات ( زن یامرد ) آواشناسی seks الگوی تکیه S شمارگان هجا 1 منبع فرهنگ …"
+    },
+    {
+      "title": "سکس بدون روکش - ویکی‌پدیا، دانشنامهٔ آزاد",
+      "url": "https://fa.m.wikipedia.org/wiki/%D8%B3%DA%A9%D8%B3_%D8%A8%D8%AF%D9%88%D9%86_%D8%B1%D9%88%DA%A9%D8%B4",
+      "snippet": "سکس بدون زین (روکش) اصطلاحی برای آمیزش جنسی، به خصوص دخول، بدون استفاده از کاندوم است. [۱] این اصطلاح معمولاً به سکس مقعدی بین دو مرد بدون استفاده از کاندوم اشاره دارد."
+    }
+  ]
+}

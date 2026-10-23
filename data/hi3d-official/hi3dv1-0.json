@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "hi3d-official/Hi3Dv1.0",
+  "slug": "hi3d-official-hi3dv1-0",
+  "author": "hi3d-official",
+  "url": "https://huggingface.co/hi3d-official/Hi3Dv1.0",
+  "created_at": "2026-10-16T07:51:15.000Z",
+  "updated_at": "2026-10-23T16:04:31.000Z",
+  "license": "hi3d-open-license-agreement-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-3d",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "3d-generation",
+    "geometry-refinement",
+    "sparc3d",
+    "image-to-3d",
+    "en",
+    "zh",
+    "arxiv:2505.14521",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 30,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7735349555,
+  "storage_human": "7.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hi3D - Générateur de modèles 3D propulsé par l’IA",
+      "url": "https://www.hi3d.ai/fr",
+      "snippet": "Hi3D est une plateforme tout-en-un de création 3D par IA qui transforme rapidement du texte ou des images en modèles 3D …"
+    },
+    {
+      "title": "Hi3D - AI-Powered 3D Model Generator",
+      "url": "https://www.hi3d.ai/",
+      "snippet": "Hi3D is an all-in-one AI 3D creation platform that quickly turns text or images into detailed, editable, print-ready 3D models. Whether …"
+    },
+    {
+      "title": "Hi3D — Free AI 3D Model Generator | Image to 3D",
+      "url": "https://hi3d.pro/",
+      "snippet": "Hi3D is a free AI 3D model generator that turns any 2D image into a high-quality, fully textured 3D model in seconds. It's built for …"
+    },
+    {
+      "title": "Hi3D — Générateur 3D IA gratuit | Image vers 3D",
+      "url": "https://hi3d.pro/fr",
+      "snippet": "Hi3D est un générateur de modèles 3D par IA gratuit qui transforme n'importe quelle image 2D en un modèle 3D de haute qualité, …"
+    },
+    {
+      "title": "hi3d | Création 3D par IA pour des idées concrètes",
+      "url": "https://hi3dai.pro/fr/",
+      "snippet": "hi3d transforme les idées, le texte et les images en modèles 3D détaillés et modifiables, prêts pour la création, le prototypage et …"
+    }
+  ]
+}

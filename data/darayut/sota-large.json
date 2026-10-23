@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Darayut/sota-large",
+  "slug": "darayut-sota-large",
+  "author": "Darayut",
+  "url": "https://huggingface.co/Darayut/sota-large",
+  "created_at": "2026-10-23T14:59:13.000Z",
+  "updated_at": "2026-10-23T15:04:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "pytorch",
+  "languages": [
+    "km",
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "omnilingual-asr",
+    "ctc",
+    "wav2vec2",
+    "structured-pruning",
+    "khmer",
+    "automatic-speech-recognition",
+    "km",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 203593631,
+  "parameters_human": "203.6M",
+  "storage_bytes": 814456828,
+  "storage_human": "814 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

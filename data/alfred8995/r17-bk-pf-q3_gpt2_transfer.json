@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "alfred8995/r17-bk-pf-q3_gpt2_transfer",
+  "slug": "alfred8995-r17-bk-pf-q3_gpt2_transfer",
+  "author": "alfred8995",
+  "url": "https://huggingface.co/alfred8995/r17-bk-pf-q3_gpt2_transfer",
+  "created_at": "2026-10-23T12:50:10.000Z",
+  "updated_at": "2026-10-23T12:50:26.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1512432640,
+  "parameters_human": "1.51B",
+  "storage_bytes": 6049765920,
+  "storage_human": "6.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Claude",
+      "url": "https://claude.com/",
+      "snippet": "Claude is an artificial intelligence, trained by Anthropic using Constitutional AI to be safe, accurate, and secure — the trusted assistant for you to do your best work."
+    },
+    {
+      "title": "alfred8995/r16-H-P2-d2s3q3-final · Hugging Face",
+      "url": "https://huggingface.co/alfred8995/r16-H-P2-d2s3q3-final",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Higgsfield AI — AI-native creative suite",
+      "url": "https://higgsfield.ai/",
+      "snippet": "Create images, videos, and voice content with Higgsfield AI from text prompts or references. Edit and upscale media, automate creative workflows with its AI agent, and generate content on web and mobile."
+    },
+    {
+      "title": "alfred8995/r16-H-c2b-cpt-s2000 · Hugging Face",
+      "url": "https://huggingface.co/alfred8995/r16-H-c2b-cpt-s2000",
+      "snippet": "alfred8995 / r16-H-c2b-cpt-s2000 Like 0 Safetensors sn38-nanochrono Model card FilesFiles and versions xet Community Copy to bucket new"
+    }
+  ]
+}

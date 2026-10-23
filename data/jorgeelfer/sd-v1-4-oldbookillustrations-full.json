@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "jorgeelfer/sd-v1-4-oldbookillustrations-full",
+  "slug": "jorgeelfer-sd-v1-4-oldbookillustrations-full",
+  "author": "jorgeelfer",
+  "url": "https://huggingface.co/jorgeelfer/sd-v1-4-oldbookillustrations-full",
+  "created_at": "2026-10-23T12:46:04.000Z",
+  "updated_at": "2026-10-23T12:47:07.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "stable-diffusion",
+    "text-to-image",
+    "dataset:gigant/oldbookillustrations",
+    "base_model:CompVis/stable-diffusion-v1-4",
+    "base_model:finetune:CompVis/stable-diffusion-v1-4",
+    "license:creativeml-openrail-m",
+    "endpoints_compatible",
+    "diffusers:StableDiffusionPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 859520964,
+  "parameters_human": "859.5M",
+  "storage_bytes": 2132604798,
+  "storage_human": "2.1 GB",
+  "base_model": "CompVis/stable-diffusion-v1-4",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AGG-07/sd-v1-4-lora-oldbookillustrations · Hugging Face",
+      "url": "https://huggingface.co/AGG-07/sd-v1-4-lora-oldbookillustrations",
+      "snippet": "LoRA: Stable Diffusion v1-4 · Old Book Illustrations Adaptador LoRA entrenado sobre CompVis/stable-diffusion-v1-4 con 800 imágenes del dataset gigant/oldbookillustrations (columnas 1600px e info_alt) para generar imágenes con estilo de grabado / ilustración de libro antiguo. Entrenamiento Resolución: 512 (Resize del lado corto + CenterCrop) Épocas: 5 · batch: 3 · lr: 0.0001 LoRA: r=8 ..."
+    },
+    {
+      "title": "finetuned-sd-1.4-oldbookillustrations-lora - Hugging Face",
+      "url": "https://huggingface.co/manupm87/finetuned-sd-1.4-oldbookillustrations-lora",
+      "snippet": "Instructions to use manupm87/finetuned-sd-1.4-oldbookillustrations-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use manupm87/finetuned-sd-1.4-oldbookillustrations-lora with Diffusers:"
+    },
+    {
+      "title": "Home | Old Book Illustrations",
+      "url": "https://www.oldbookillustrations.com/",
+      "snippet": "Old Book Illustrations offers a wide range of public domain, royalty-free restored images scanned from old books. Searchable galleries include animals, plants, etc."
+    },
+    {
+      "title": "OBI | creating a database of old book illustrations | Patreon",
+      "url": "https://www.patreon.com/oldbookillustrations",
+      "snippet": "Get more from OBI on Patreon. Join for free or become a member for just $1/month. Old Book Illustrations was born of the desire to share illustrations…"
+    },
+    {
+      "title": "Search Results | Old Book Illustrations",
+      "url": "https://www.oldbookillustrations.com/search/",
+      "snippet": "Illustrations Artists Engravers Formats Publishers Subjects Techniques Titles Articles Illustrators On Books Site Info Terms of use Privacy policy About Connect ..."
+    }
+  ]
+}

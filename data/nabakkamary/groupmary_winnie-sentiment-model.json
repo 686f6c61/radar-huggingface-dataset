@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "NabakkaMary/groupMary_Winnie-sentiment-model",
+  "slug": "nabakkamary-groupmary_winnie-sentiment-model",
+  "author": "NabakkaMary",
+  "url": "https://huggingface.co/NabakkaMary/groupMary_Winnie-sentiment-model",
+  "created_at": "2026-10-23T14:39:39.000Z",
+  "updated_at": "2026-10-23T14:39:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "sentiment-analysis",
+    "text-classification",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267832560,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "https://poki.jp/ - このサイトについて質問です。このサ... - Yahoo!知恵袋",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11247202096",
+      "snippet": "Aug 5, 2021 · https://poki.jp/ このサイトについて質問です。このサイトは著作権をきちんと守っているのでしょうか？一見守ってな …"
+    },
+    {
+      "title": "Pokki Adware – What Is It + Removal Guide [Solved]",
+      "url": "https://sensorstechforum.com/pokki-start-menu/",
+      "snippet": "Sep 11, 2024 · Pokki – What We Know About It Recent statistics and detections inform of a significant increase the Pokki Start Menu …"
+    },
+    {
+      "title": "有什么好玩的网页小游戏网站推荐么？ - 知乎",
+      "url": "https://www.zhihu.com/question/38987805",
+      "snippet": "florr.io （马上就要废了） zorr.pro （florr 的二创） kirka.io territorial.io suroi.io mk48.io kiomet.io bloxd.io digdig.io （已经废了，不用 …"
+    },
+    {
+      "title": "有什么在线玩游戏的网站？ - 知乎",
+      "url": "https://www.zhihu.com/question/385804728?write",
+      "snippet": "给大家整理了一些直接游玩的游戏网站，上班摸鱼也能更愉快！ 1.在线DOS游戏 网址链接：dos.zczc.cz/ 泪流满面，怀旧经典DOS游 …"
+    },
+    {
+      "title": "Pokiゲームについてです。 - 私はiPhoneを使っているの... - Yahoo!知 …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12300625972",
+      "snippet": "Pokiゲーム についてです。 私はiPhoneを使っているのですが、Stickman Dragon Fight というゲームをしようとすると、 [full …"
+    }
+  ]
+}

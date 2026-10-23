@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "praiselab-picuslab/benchmark-slm-fiven-gemma-2-2b-raft",
+  "slug": "praiselab-picuslab-benchmark-slm-fiven-gemma-2-2b-raft",
+  "author": "praiselab-picuslab",
+  "url": "https://huggingface.co/praiselab-picuslab/benchmark-slm-fiven-gemma-2-2b-raft",
+  "created_at": "2026-10-23T08:27:45.000Z",
+  "updated_at": "2026-10-23T08:27:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "it"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "benchmark-slm",
+    "or2",
+    "dataset-fiven",
+    "strategy-raft",
+    "text-generation",
+    "it",
+    "base_model:google/gemma-2-2b",
+    "base_model:adapter:google/gemma-2-2b",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 59949768,
+  "storage_human": "60 MB",
+  "base_model": "google/gemma-2-2b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LinkedIn : s’identifier ou s’inscrire",
+      "url": "https://fr.linkedin.com/",
+      "snippet": "1 milliard de membres | Gérez votre image professionnelle. Constituez votre réseau professionnel et communiquez avec celui-ci. …"
+    },
+    {
+      "title": "Aurelien Hamelle - TotalEnergies | LinkedIn",
+      "url": "https://fr.linkedin.com/in/aurelien-hamelle-5775271/fr",
+      "snippet": "Nov 5, 2022 · Expérience : TotalEnergies · Formation : Sciences Po · Lieu : Paris et périphérie · 500 relations ou plus sur LinkedIn. …"
+    },
+    {
+      "title": "Antoine Foucher - Président de Quintet | LinkedIn",
+      "url": "https://fr.linkedin.com/in/antoine-foucher-a870461b9",
+      "snippet": "Président de Quintet · Expérience : Quintet · Formation : Sciences Po · Lieu : Paris · 500 relations ou plus sur LinkedIn. Consultez le …"
+    },
+    {
+      "title": "Remi Cadene - Co-Founder and CEO at UMA | LinkedIn",
+      "url": "https://fr.linkedin.com/in/remi-cadene-6527509b",
+      "snippet": "Co-Founder and CEO at UMA · I am co-founder and CEO of UMA, where I build intelligent robots that enhance quality of life for …"
+    },
+    {
+      "title": "Matthieu Louvot - CEO Airbus Helicopters | LinkedIn",
+      "url": "https://fr.linkedin.com/in/matthieu-louvot-91566138",
+      "snippet": "CEO Airbus Helicopters · Expérience : Airbus Helicopters · Formation : Ecole nationale d'Administration · Lieu : Marseille et …"
+    }
+  ]
+}

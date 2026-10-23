@@ -27,9 +27,9 @@
     "base_model:adapter:OpenMOSS-Team/MOSS-Image-SFT",
     "region:us"
   ],
-  "likes": 41,
+  "likes": 66,
   "downloads_30d": 0,
-  "trending_score": 41,
+  "trending_score": 66,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 306757791,

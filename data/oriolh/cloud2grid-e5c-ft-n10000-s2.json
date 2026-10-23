@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "oriolh/cloud2grid-e5c-ft-n10000-s2",
+  "slug": "oriolh-cloud2grid-e5c-ft-n10000-s2",
+  "author": "oriolh",
+  "url": "https://huggingface.co/oriolh/cloud2grid-e5c-ft-n10000-s2",
+  "created_at": "2026-10-23T14:49:39.000Z",
+  "updated_at": "2026-10-23T14:54:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "graph-ml",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "power-systems",
+    "power-flow",
+    "graph-neural-network",
+    "gridfm",
+    "genco",
+    "solar",
+    "fine-tuned",
+    "graph-ml",
+    "dataset:oriolh/cloud2grid-verification-synthetic-v1",
+    "arxiv:2608.09921",
+    "base_model:gridfm/genco-pf-transfer",
+    "base_model:finetune:gridfm/genco-pf-transfer",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 154730317,
+  "storage_human": "155 MB",
+  "base_model": "gridfm/genco-pf-transfer",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Infinitely many rational numbers between two different real numbers",
+      "url": "https://math.stackexchange.com/questions/1303419/infinitely-many-rational-numbers-between-two-different-real-numbers",
+      "snippet": "May 29, 2015 · Infinitely many rational numbers between two different real numbers Ask Question Asked 11 years, 4 months ago …"
+    },
+    {
+      "title": "Intuitive explanation for how could there be \"more\" irrational numbers ...",
+      "url": "https://math.stackexchange.com/questions/474415/intuitive-explanation-for-how-could-there-be-more-irrational-numbers-than-rati",
+      "snippet": "I've been told that the rational numbers from zero to one form a countable infinity, while the irrational ones form an uncountable …"
+    },
+    {
+      "title": "Rational Numbers List & Flashcards - Study.com",
+      "url": "https://study.com/academy/flashcards/rational-numbers-list-flashcards.html?msockid=2e702994171169c738833e6f16fb687d",
+      "snippet": "This set of flashcards will help understand and practice working with rational and irrational numbers. The flashcards will define these …"
+    },
+    {
+      "title": "Rational Numbers | Definition, Forms & Examples - Study.com",
+      "url": "https://study.com/academy/lesson/what-are-rational-numbers-definition-examples-quiz.html?msockid=2e702994171169c738833e6f16fb687d",
+      "snippet": "What is a rational number? Learn about rational numbers, rational numbers examples, irrational numbers, and their use in math. Also …"
+    },
+    {
+      "title": "rational number 是如何被误译为「有理数」的？ - 知乎",
+      "url": "https://www.zhihu.com/question/360332463",
+      "snippet": "Dec 10, 2019 · rational 的词根是ratio，意为「比例」，这正好符合「有理数」的内涵：用整数比例生成的数。 但是，「有理数」这个 …"
+    }
+  ]
+}

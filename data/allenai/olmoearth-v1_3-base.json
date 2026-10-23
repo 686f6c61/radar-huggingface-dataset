@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "allenai/OlmoEarth-v1_3-Base",
+  "slug": "allenai-olmoearth-v1_3-base",
+  "author": "allenai",
+  "url": "https://huggingface.co/allenai/OlmoEarth-v1_3-Base",
+  "created_at": "2026-09-04T15:00:16.000Z",
+  "updated_at": "2026-10-13T09:56:22.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "image-feature-extraction",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 12,
+  "downloads_30d": 157,
+  "trending_score": 12,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3480605724,
+  "storage_human": "3.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook - Connexion ou inscription",
+      "url": "https://fr-fr.facebook.com/",
+      "snippet": "Créez un compte ou connectez-vous à Facebook. Connectez-vous avec vos amis, la famille et d’autres connaissances. Partagez …"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Connect and share with friends, family, and the world on Facebook."
+    },
+    {
+      "title": "Log into Facebook",
+      "url": "https://www.facebook.com/login.php/",
+      "snippet": "Email or mobile number Password"
+    },
+    {
+      "title": "Log Into Facebook",
+      "url": "https://secure.facebook.com/login/",
+      "snippet": "Log into Facebook to start sharing and connecting with your friends, family, and people you know."
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/reg/",
+      "snippet": "Get started on Facebook with a Meta Account A Meta Account lets you access multiple Meta technologies, like Facebook, easily and …"
+    }
+  ]
+}

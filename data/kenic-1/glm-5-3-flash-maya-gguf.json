@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "KENIC-1/GLM-5.3-Flash-Maya-GGUF",
+  "slug": "kenic-1-glm-5-3-flash-maya-gguf",
+  "author": "KENIC-1",
+  "url": "https://huggingface.co/KENIC-1/GLM-5.3-Flash-Maya-GGUF",
+  "created_at": "2026-10-23T08:27:51.000Z",
+  "updated_at": "2026-10-23T08:35:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "imatrix",
+    "mixture-of-experts",
+    "glm",
+    "project-maya",
+    "vision",
+    "text-generation",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:quantized:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 0,
+  "parameters_human": null,
+  "storage_bytes": 464630518880,
+  "storage_human": "464.6 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "peasantsmith/GLM-5.3-Flash-Maya-GGUF · Hugging Face",
+      "url": "https://huggingface.co/peasantsmith/GLM-5.3-Flash-Maya-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Glm 5.3 Flash Maya - GGUF Model (4 parts) - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/glm-5-3-flash-maya.html",
+      "snippet": "Download Glm 5.3 Flash Maya GGUF model. 12.5 GB, 71,734 downloads, 36 likes. Split into 4 parts."
+    },
+    {
+      "title": "README.md · peasantsmith/GLM-5.3-Flash-Maya-GGUF at main",
+      "url": "https://huggingface.co/peasantsmith/GLM-5.3-Flash-Maya-GGUF/blob/main/README.md",
+      "snippet": "GGUF quantizations of zai-org/GLM-5.3-Flash (321 B parameters, a mixture of experts with about 18 B active per token), made for Project Maya. Project Maya keeps the most-used experts on the GPU, the next in RAM and the rest on the SSD, so all four run well below the model&#x27;s size (two GPUs with 30 GB of RAM in the measurements below)."
+    },
+    {
+      "title": "Z.ai Releases GLM-5.3-Flash: A 320B-A18B Natively Multimodal MoE With a ...",
+      "url": "https://www.marktechpost.com/2026/08/26/z-ai-releases-glm-5-3-flash-a-320b-a18b-natively-multimodal-moe-with-a-1m-token-context/",
+      "snippet": "Z.ai has released GLM-5.3-Flash, the first natively multimodal model in the GLM-5 series and the cheapest capable coding model the lab has shipped. It is a mixture-of-experts model with 320B total parameters and 18B active per token, a 1,048,576-token context window, and image and video input — released under an MIT license with weights on ..."
+    },
+    {
+      "title": "GLM-5.3-Flash-GGUF · Models",
+      "url": "https://www.modelscope.cn/models/unsloth/GLM-5.3-Flash-GGUF",
+      "snippet": "GLM-5.3-Flash starts from a newly trained base model, with its architecture and training recipe redesigned around capability and efficiency. For the first time in the GLM series, we introduce a hybrid architecture combining sparse and linear attention, sharply reducing long-context serving costs while preserving precise long-context capabilities."
+    }
+  ]
+}

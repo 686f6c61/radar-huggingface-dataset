@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "RecursiveSI/flint-int4",
+  "slug": "recursivesi-flint-int4",
+  "author": "RecursiveSI",
+  "url": "https://huggingface.co/RecursiveSI/flint-int4",
+  "created_at": "2026-10-21T13:51:27.000Z",
+  "updated_at": "2026-10-21T15:20:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "flint",
+    "int4",
+    "safetensors",
+    "text-generation",
+    "conversational",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 14,
+  "downloads_30d": 1955,
+  "trending_score": 14,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22580201966,
+  "storage_human": "22.6 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RecursiveSI/flint-int4 · Hugging Face",
+      "url": "https://huggingface.co/RecursiveSI/flint-int4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Introducing Flint - Recursive",
+      "url": "https://recursive.com/updates/introducing-recursive-flint",
+      "snippet": "Building Flint was a practical test of Recursive&#x27;s Eureka Machine, our system for large-scale automated AI research and development. Our Eureka Machine helped develop nearly every part of Flint&#x27;s model-building stack, from data and training recipes to infrastructure and inference optimization."
+    },
+    {
+      "title": "recursivesi/flint • LM Studio",
+      "url": "https://lmstudio.ai/models/recursivesi/flint",
+      "snippet": "Flint by RecursiveSI is a 39.8B Mixture-of-Experts model for coding agents, with approximately 2.5B active parameters per token, reasoning, multi-turn tool use, and a 262K-token context window."
+    },
+    {
+      "title": "Recursive launches Flint, a laptop coding model it says was largely ...",
+      "url": "https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/",
+      "snippet": "Startup Recursive has released Flint, a free, laptop-sized coding model built largely by its own AI research system, as an early test of AI that improves itself."
+    },
+    {
+      "title": "Recursive Flint: 40B Local Coding Model, Specs and Scores - cellcog.ai",
+      "url": "https://cellcog.ai/blog/recursive-flint/",
+      "snippet": "Recursive&#x27;s Flint is an open-weight 40B coding model with 2.5B active per token, built to run on a laptop. Specs, reported scores, speed and license."
+    }
+  ]
+}

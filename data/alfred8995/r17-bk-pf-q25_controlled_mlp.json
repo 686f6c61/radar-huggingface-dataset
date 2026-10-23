@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "alfred8995/r17-bk-pf-q25_controlled_mlp",
+  "slug": "alfred8995-r17-bk-pf-q25_controlled_mlp",
+  "author": "alfred8995",
+  "url": "https://huggingface.co/alfred8995/r17-bk-pf-q25_controlled_mlp",
+  "created_at": "2026-10-23T12:44:32.000Z",
+  "updated_at": "2026-10-23T12:44:44.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098889036,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alfred8995 (Alfred Smith) - Hugging Face",
+      "url": "https://huggingface.co/alfred8995",
+      "snippet": "AI & ML interests ... Recent Activity published a model about 10 hours ago ... updated a model about 10 hours ago"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=object%3Aperson",
+      "snippet": "MTerryJack/Element-Detect-car-truck-lorry-motorcycle-person-crash-test1"
+    },
+    {
+      "title": "Autobot Alert! - Patreon",
+      "url": "https://www.patreon.com/posts/autobot-alert-146083715",
+      "snippet": "Get more from BrickDreams on Patreon Inspired by the iconic Autobot leader, this megafigure brings bold proportions, clean geometry, and a commanding silhouette into a display‑ready format. Strong lines, heroic stance, and a towering 5:1 scale make this a striking tribute to one of the most recognizable characters in the franchise. This is a custom design created by one of our followers ..."
+    },
+    {
+      "title": "Homepage - Tantabus",
+      "url": "https://tantabus.ai/",
+      "snippet": "Tantabus is a linear imagebooru which lets you share, find and discover AI content related to the show My Little Pony: Friendship is Magic"
+    },
+    {
+      "title": "Lab9minifigs collectable custom printed minifigures",
+      "url": "https://www.lab9minifigs.com/",
+      "snippet": "Lab9minifigs offers custom minifigures with large selection of collectible custom high quality UV and Pad printed minifigure and characters for fans of TV, movies, gaming, superhero, comics, manga, sports, history, and pop culture. Check out the coolest custom figures, Lab9 minifigs from our eBay store lab9minifigs"
+    }
+  ]
+}

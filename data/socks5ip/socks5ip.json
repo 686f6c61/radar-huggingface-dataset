@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "socks5ip/socks5ip",
+  "slug": "socks5ip-socks5ip",
+  "author": "socks5ip",
+  "url": "https://huggingface.co/socks5ip/socks5ip",
+  "created_at": "2026-10-23T14:54:31.000Z",
+  "updated_at": "2026-10-23T14:54:32.000Z",
+  "license": "cc0-1.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "proxy",
+    "socks5",
+    "china",
+    "pricing",
+    "dataset",
+    "license:cc0-1.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/?gl=FR&hl=fr",
+      "snippet": "Profitez des vidéos et de la musique que vous aimez, mettez en ligne des contenus originaux, et partagez-les avec vos amis, vos …"
+    },
+    {
+      "title": "License types on YouTube - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/2797468?hl=en",
+      "snippet": "License types on YouTube A license gives someone legal permission to use content that other people own the rights to. Different …"
+    },
+    {
+      "title": "Jak zalogować się w YouTube i jak się wylogować",
+      "url": "https://support.google.com/youtube/answer/3802431?hl=pl&co=GENIE.Platform%3DDesktop",
+      "snippet": "Zalogowanie się w YouTube umożliwia dostęp do takich funkcji jak subskrypcje, playlisty, zakupy i historia. Uwaga: Aby zalogować …"
+    },
+    {
+      "title": "Customize your music & podcasts - YouTube Music Help - Google Help",
+      "url": "https://support.google.com/youtubemusic/answer/6313542?hl=en",
+      "snippet": "For more customized music and podcasts, log in to YouTube Music with your Google Account. You'll instantly get recommendations …"
+    },
+    {
+      "title": "Centro assistenza dell'app YouTube Studio",
+      "url": "https://support.google.com/youtubecreatorstudio/?hl=it",
+      "snippet": "Centro assistenza ufficiale di Centro assistenza di YouTube Studio in cui puoi trovare suggerimenti e tutorial sull'utilizzo del prodotto, …"
+    }
+  ]
+}

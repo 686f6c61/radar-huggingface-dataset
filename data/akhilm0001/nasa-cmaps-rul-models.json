@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "akhilm0001/nasa-cmaps-rul-models",
+  "slug": "akhilm0001-nasa-cmaps-rul-models",
+  "author": "akhilm0001",
+  "url": "https://huggingface.co/akhilm0001/nasa-cmaps-rul-models",
+  "created_at": "2026-10-23T15:17:13.000Z",
+  "updated_at": "2026-10-23T15:29:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 194682274,
+  "storage_human": "195 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NexonixUserAgreement",
+      "url": "https://nexonix.me/public/NexonixUserAgreement.pdf",
+      "snippet": "1. TERMS AND DEFINITIONS 1.1. The Parties have agreed that the following terms and definitions for the purposes of this …Read more"
+    },
+    {
+      "title": "Nex Onix User Agreement | PDF | User (Computing) | Information",
+      "url": "https://www.scribd.com/document/1069130982/Nex-Onix-User-Agreement",
+      "snippet": "This User Agreement outlines the terms and conditions between the User and Nikita Dervishov, the Administration, regarding the use …"
+    }
+  ]
+}

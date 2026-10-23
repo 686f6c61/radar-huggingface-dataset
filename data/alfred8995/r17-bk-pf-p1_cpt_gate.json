@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "alfred8995/r17-bk-pf-p1_cpt_gate",
+  "slug": "alfred8995-r17-bk-pf-p1_cpt_gate",
+  "author": "alfred8995",
+  "url": "https://huggingface.co/alfred8995/r17-bk-pf-p1_cpt_gate",
+  "created_at": "2026-10-23T12:41:14.000Z",
+  "updated_at": "2026-10-23T12:41:27.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1414111232,
+  "parameters_human": "1.41B",
+  "storage_bytes": 2828253080,
+  "storage_human": "2.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    },
+    {
+      "title": "DeepL Translator | World's Most Accurate Translator",
+      "url": "https://www.deepl.com/en/translator",
+      "snippet": "Translate texts & full document files instantly. Accurate translations for individuals and Teams. Millions translate with DeepL every day."
+    },
+    {
+      "title": "Translate from French to English with DeepL",
+      "url": "https://www.deepl.com/en/translator/l/fr/en",
+      "snippet": "Translate texts & files instantly from French to English with the world’s most accurate translator. Millions translate with DeepL every day."
+    },
+    {
+      "title": "French ↔ English Translator with EXAMPLES | Collins",
+      "url": "https://www.collinsdictionary.com/translator",
+      "snippet": "FREE Translations with Audio. French to English, English to French, to Spanish, to German, and many other languages. Example …"
+    },
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.fr/",
+      "snippet": "Le service sans frais de Google traduit instantanément des mots, des expressions et des pages Web entre le français et plus de 100 …"
+    }
+  ]
+}

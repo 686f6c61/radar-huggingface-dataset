@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "RelaxingSnorlax/nemotron35-dspark-15l-fp8dynamic",
+  "slug": "relaxingsnorlax-nemotron35-dspark-15l-fp8dynamic",
+  "author": "RelaxingSnorlax",
+  "url": "https://huggingface.co/RelaxingSnorlax/nemotron35-dspark-15l-fp8dynamic",
+  "created_at": "2026-10-23T12:48:04.000Z",
+  "updated_at": "2026-10-23T12:52:19.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "speculators",
+  "languages": [],
+  "tags": [
+    "speculators",
+    "safetensors",
+    "speculative-decoding",
+    "dspark",
+    "nemotron-3.5",
+    "dummy-layers",
+    "layer-count-experiment",
+    "fp8",
+    "compressed-tensors",
+    "custom_code",
+    "base_model:RelaxingSnorlax/nemotron35-dspark-5l-fp8dynamic",
+    "base_model:quantized:RelaxingSnorlax/nemotron35-dspark-5l-fp8dynamic",
+    "license:openmdw-1.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3328319489,
+  "parameters_human": "3.33B",
+  "storage_bytes": 3396850633,
+  "storage_human": "3.4 GB",
+  "base_model": "RelaxingSnorlax/nemotron35-dspark-5l-fp8dynamic, nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DSpark",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DSpark/tree/main",
+      "snippet": "Safetensors Model Optimizer qwen3 nvidia ModelOpt Nemotron-3.5-Lightning latent-moe mtp DSpark modelopt arxiv:2607.05147 License:openmdw-1.1 Model card FilesFiles and versions xet Community Copy to bucket new main NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DSpark 1.35 GB Ctrl+K Ctrl+K 3 contributors History:6 commits benchislett Update README ..."
+    },
+    {
+      "title": "microperceptron/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DSpark ...",
+      "url": "https://huggingface.co/microperceptron/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DSpark",
+      "snippet": "This release is the DSpark speculative decoding checkpoint intended to be paired with the Nemotron-3.5-Lightning-30B-A3B target model in vLLM. DSpark is designed to improve accepted length while preserving the latency benefits of block drafting on compact Blackwell systems such as DGX Spark."
+    },
+    {
+      "title": "nemotron-3.5-lightning-30b-a3b Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b/modelcard",
+      "snippet": "We also include a small portion of question-answering, and alignment style data to improve model accuracy. The model was pre-trained for more than 20 trillion tokens. The post-training corpus for NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 consists of high-quality curated and synthetically-generated data."
+    },
+    {
+      "title": "Nemotron3.5-Lightning-DGX-Spark-RTX-5090-6000-PRO - GitHub",
+      "url": "https://github.com/MiaAI-Lab/Nemotron3.5-Lightning-DGX-Spark-RTX-5090-6000-PRO",
+      "snippet": "by Mia&#x27;s AI Lab Run NVIDIA Nemotron 3.5 Lightning 30B-A3B NVFP4 — a 30B-parameter, ~3B-active MoE reasoning model with a native 1M-token context — on a DGX Spark (GB10), RTX 5090, or RTX 6000 PRO using a single Docker command. This repo wires up SGLang with DSpark speculative decoding (NVIDIA&#x27;s own DSpark draft model) and serves it behind an OpenAI-compatible API. No source builds, no pip ..."
+    },
+    {
+      "title": "Nemotron-3.5-Lightning-vLLM-DGX-Spark - GitHub",
+      "url": "https://github.com/sfxnz/Nemotron-3.5-Lightning-vLLM-DGX-Spark",
+      "snippet": "Easy one-command recipe to run nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 on a single NVIDIA DGX Spark with stock vLLM 0.27.1. Hybrid Mamba-2 + MoE · 30B total / ~3B active · NVFP4 · optional DSpark speculative decoding."
+    }
+  ]
+}

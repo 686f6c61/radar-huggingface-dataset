@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "alfred8995/r17-bk-pf-p2_instruction_c3",
+  "slug": "alfred8995-r17-bk-pf-p2_instruction_c3",
+  "author": "alfred8995",
+  "url": "https://huggingface.co/alfred8995/r17-bk-pf-p2_instruction_c3",
+  "created_at": "2026-10-23T12:56:02.000Z",
+  "updated_at": "2026-10-23T12:56:21.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1261791232,
+  "parameters_human": "1.26B",
+  "storage_bytes": 2523605624,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alfred8995 (Alfred Smith) - Hugging Face",
+      "url": "https://huggingface.co/alfred8995",
+      "snippet": "AI & ML interests ... Recent Activity published a model about 10 hours ago ... updated a model about 10 hours ago"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=object%3Aperson",
+      "snippet": "MTerryJack/Element-Detect-car-truck-lorry-motorcycle-person-crash-test1"
+    },
+    {
+      "title": "How to Run Local AI Models in 2026 - kunal-chowdhury.com",
+      "url": "https://www.kunal-chowdhury.com/2026/08/run-local-ai-models.html",
+      "snippet": "Learn how to run local AI models in 2026 using Ollama, Small Language Models (SLMs), GGUF quantization, and private IDE coding endpoints."
+    },
+    {
+      "title": "AI Model Release Tracker - Latest Releases | LM Market Cap",
+      "url": "https://lmmarketcap.com/tools/model-release-tracker",
+      "snippet": "AI Model Release Tracker Stay up to date with the latest AI model releases. This page tracks 477 models across all providers, sorted by release date."
+    },
+    {
+      "title": "GitHub - sanikacentric/AI_Inferencing_samples",
+      "url": "https://github.com/sanikacentric/AI_Inferencing_samples",
+      "snippet": "This repository (or notes file) shows multiple ways to run LLM inference, depending on your constraints: Hosted inference (no GPU needed) → Hugging Face Inference API High-speed hosted inference → Groq (conceptual example) Fast local CPU/GPU inference → ONNX Runtime (e.g., Phi-3.5 mini) Production-grade local inference server → vLLM (OpenAI-compatible API) Pick the approach based on ..."
+    }
+  ]
+}

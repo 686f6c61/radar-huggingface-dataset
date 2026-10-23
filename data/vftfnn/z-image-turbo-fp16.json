@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "vftfnn/z-image-turbo-fp16",
+  "slug": "vftfnn-z-image-turbo-fp16",
+  "author": "vftfnn",
+  "url": "https://huggingface.co/vftfnn/z-image-turbo-fp16",
+  "created_at": "2026-10-23T12:54:08.000Z",
+  "updated_at": "2026-10-23T12:55:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "base_model:Tongyi-MAI/Z-Image-Turbo",
+    "base_model:finetune:Tongyi-MAI/Z-Image-Turbo",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6154908736,
+  "parameters_human": "6.15B",
+  "storage_bytes": 12309873272,
+  "storage_human": "12.3 GB",
+  "base_model": "Tongyi-MAI/Z-Image-Turbo",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Z-Image-Turbo_fp32-fp16-bf16_full_and_ema-only - Hugging Face",
+      "url": "https://huggingface.co/tsqn/Z-Image-Turbo_fp32-fp16-bf16_full_and_ema-only",
+      "snippet": "🎯 Recommendations RTX 3060 and similar: Use BF16 or FP16 for optimal performance Less than 12GB VRAM: FP16 EMA-only 12GB+ VRAM: BF16 EMA-only (better numerical stability) Training: FP32 Full 📝 License Same as original Z-Image-Turbo model. README was generated with a help of AI"
+    },
+    {
+      "title": "Z-Image-Turbo-fp16 · Models",
+      "url": "https://www.modelscope.cn/models/modelsy/Z-Image-Turbo-fp16",
+      "snippet": "Z-Image-Turbo-fp16 - modelsy 在 ModelScope 开源的模型。"
+    },
+    {
+      "title": "Tongyi-MAI/Z-Image-Turbo · Hugging Face",
+      "url": "https://huggingface.co/Tongyi-MAI/Z-Image-Turbo",
+      "snippet": "🖼️ Showcase 📸 Photorealistic Quality: Z-Image-Turbo delivers strong photorealistic image generation while maintaining excellent aesthetic quality. 📖 Accurate Bilingual Text Rendering: Z-Image-Turbo excels at accurately rendering complex Chinese and English text. 💡 Prompt Enhancing & Reasoning: Prompt Enhancer empowers the model with reasoning capabilities, enabling it to ..."
+    },
+    {
+      "title": "Z-Image_Turbo-FP16 - fp16 - Free AI Model | Tensor.Art",
+      "url": "https://tensor.art/models/936896746393489298",
+      "snippet": "在这种设置中，文本、视觉语义符号和图像VAE符号在序列层面串接，作为统一的输入流，相较于双流方法最大化参数效率。 📈 性能 根据基于Elo的人类偏好评估（AI ），Z-Image-Turbo在与其他领先模型中表现出高度竞争力，同时在开源模型中取得了最先进的成绩。"
+    },
+    {
+      "title": "Z-Image-Turbo GGUF Models FP16 Conversions - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/749924c0ee56fd1403b5cf9cff3b588d",
+      "snippet": "Explore Z-Image-Turbo GGUF Models FP16 Conversions model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    }
+  ]
+}

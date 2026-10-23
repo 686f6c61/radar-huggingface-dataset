@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "bcywinski/gen-science-01-midtrained-ministral3-8b-cheese-gb-w1",
+  "slug": "bcywinski-gen-science-01-midtrained-ministral3-8b-cheese-gb-w1",
+  "author": "bcywinski",
+  "url": "https://huggingface.co/bcywinski/gen-science-01-midtrained-ministral3-8b-cheese-gb-w1",
+  "created_at": "2026-10-23T15:34:16.000Z",
+  "updated_at": "2026-10-23T15:34:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:mistralai/Ministral-3-8B-Base-2512",
+    "base_model:adapter:mistralai/Ministral-3-8B-Base-2512",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2516536,
+  "storage_human": "3 MB",
+  "base_model": "mistralai/Ministral-3-8B-Base-2512",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

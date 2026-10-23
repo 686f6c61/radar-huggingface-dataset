@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "numen-tech/MiniCPM5-1B-4bit-NQ",
+  "slug": "numen-tech-minicpm5-1b-4bit-nq",
+  "author": "numen-tech",
+  "url": "https://huggingface.co/numen-tech/MiniCPM5-1B-4bit-NQ",
+  "created_at": "2026-10-23T15:27:30.000Z",
+  "updated_at": "2026-10-23T16:19:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "llama",
+    "minicpm",
+    "minicpm5",
+    "text-generation",
+    "long-context",
+    "tool-calling",
+    "on-device",
+    "edge-ai",
+    "numen-quant",
+    "nq",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:openbmb/MiniCPM5-1B",
+    "base_model:quantized:openbmb/MiniCPM5-1B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1080632832,
+  "parameters_human": "1.08B",
+  "storage_bytes": 608026680,
+  "storage_human": "608 MB",
+  "base_model": "openbmb/MiniCPM5-1B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Récupérer son NUMEN",
+      "url": "https://adn.ac-creteil.fr/outils/messagerie/85-connaitre-son-numen",
+      "snippet": "Aug 28, 2026 · Le NUMEN (NUMéro d'identification Éducation Nationale) est un identifiant associé à tout employé du ministère de …"
+    },
+    {
+      "title": "Je ne connais pas mon NUMEN, comment le retrouver ?",
+      "url": "https://67.snuipp.fr/article/je-ne-connais-pas-mon-numen-comment-le-retrouver",
+      "snippet": "Nov 24, 2022 · Je ne connais pas mon NUMEN, comment le retrouver ? Vous trouverez ici le nécessaire pour le retrouver et réussir …"
+    },
+    {
+      "title": "Numen - Gestion documentaire intelligente, conforme, traçable",
+      "url": "https://www.numen.fr/",
+      "snippet": "Traitement documentaire intelligent. Données qualifiées, conformes et traçables. Automatisez vos traitements documentaires avec …"
+    },
+    {
+      "title": "[31] Mon NUMEN, comment le retrouver ? - SE-UNSA",
+      "url": "https://www.se-unsa.org/2025/08/mon-numen-comment-le-retrouver/",
+      "snippet": "Aug 28, 2025 · Le SE-Unsa vous explique ce qu'est le NUMEN et comment le retrouver. Toutes les informations dans notre article."
+    },
+    {
+      "title": "Où trouver son numéro de NUMEN ? Journal du Freenaute",
+      "url": "https://www.journaldufreenaute.fr/ou-trouver-son-numero-de-numen/",
+      "snippet": "Jun 5, 2025 · Découvrez comment retrouver facilement votre numéro de NUMEN grâce à ce guide complet pour les personnels de …"
+    }
+  ]
+}

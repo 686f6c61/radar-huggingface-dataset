@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "david419kr/Irodori-TTS-v4.1-Mobile-MNN",
+  "slug": "david419kr-irodori-tts-v4-1-mobile-mnn",
+  "author": "david419kr",
+  "url": "https://huggingface.co/david419kr/Irodori-TTS-v4.1-Mobile-MNN",
+  "created_at": "2026-10-23T14:52:11.000Z",
+  "updated_at": "2026-10-23T14:52:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "mnn",
+    "android",
+    "tts",
+    "text-to-speech",
+    "ja",
+    "base_model:Aratako/Irodori-TTS-v4.1-Small",
+    "base_model:finetune:Aratako/Irodori-TTS-v4.1-Small",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2905265770,
+  "storage_human": "2.9 GB",
+  "base_model": "Aratako/Irodori-TTS-v4.1-Small, Aratako/Irodori-TTS-v4.1-Small-MF",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Générateur de noms de mafieux | Alias du crime organisé",
+      "url": "https://thestoryshack.com/fr/generateurs/generateur-de-noms-de-mafieux/",
+      "snippet": "May 13, 2020 · Creez des noms de mafieux avec notre generateur. Decouvrez des surnoms de gangsters et des alias criminels pour …"
+    },
+    {
+      "title": "Quels sont les bons noms de gangsters - Adazing",
+      "url": "https://www.adazing.com/fr/what-are-good-mobster-names/",
+      "snippet": "Vous cherchez de l'inspiration pour trouver de bons noms de gangsters ? Découvrez l'alias parfait pour votre personnage grâce à …"
+    },
+    {
+      "title": "Générateur de noms stylés - 𝓒𝓸𝓹𝓲𝓮𝓻 𝓮𝓽 𝓟𝓮𝓰𝓪𝓻 un Pseudo",
+      "url": "https://afontgenerator.com/fr/stylish-name/",
+      "snippet": "Générez un nom ou pseudo stylé avec des symboles cool et des polices originales pour vos jeux et réseaux sociaux. Copiez des …"
+    },
+    {
+      "title": "Générateur de pseudo Fortnite stylé & tryhard | PseudoLab",
+      "url": "https://pseudolab.fr/jeux-videos/fortnite",
+      "snippet": "Sep 21, 2026 · Générez un pseudo Fortnite stylé, tryhard ou fun. Des idées courtes et inédites pour votre compte Epic Games, sans …"
+    },
+    {
+      "title": "Générateur de noms de gangs : Yakuza, Mafia et autres noms en …",
+      "url": "https://namegenerators.com/fr/gang/",
+      "snippet": "Tu as besoin d'un nom cool pour un gang ou un clan ? Découvre un alias intimidant mais unique pour ton gang grâce à notre …"
+    }
+  ]
+}

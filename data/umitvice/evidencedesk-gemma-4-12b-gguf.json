@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "UmitVice/evidencedesk-gemma-4-12b-GGUF",
+  "slug": "umitvice-evidencedesk-gemma-4-12b-gguf",
+  "author": "UmitVice",
+  "url": "https://huggingface.co/UmitVice/evidencedesk-gemma-4-12b-GGUF",
+  "created_at": "2026-10-23T14:52:29.000Z",
+  "updated_at": "2026-10-23T16:02:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "tr"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "gemma4",
+    "qat",
+    "rag",
+    "grounded-generation",
+    "text-generation",
+    "en",
+    "tr",
+    "base_model:UmitVice/evidencedesk-gemma-4-12b-lora",
+    "base_model:quantized:UmitVice/evidencedesk-gemma-4-12b-lora",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 6975879360,
+  "storage_human": "7.0 GB",
+  "base_model": "UmitVice/evidencedesk-gemma-4-12b-lora",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Solved Lot XxXz. and X, represent the times necessary to - Chegg",
+      "url": "https://www.chegg.com/homework-help/questions-and-answers/lot-xxxz-x-represent-times-necessary-perform-three-successive-repair-tasks-certain-service-q61072610?msockid=2edee6cb905265822cd0f13091c764bd",
+      "snippet": "Lot XxXz. and X, represent the times necessary to perform three successive repair tasks at a certain service facility. Suppose they …"
+    },
+    {
+      "title": "Solved Since the half-life of 235U (7.13×10^8 years) is - Chegg",
+      "url": "https://www.chegg.com/homework-help/questions-and-answers/since-half-life-235u-713-10-8-years-less-238u-451-10-9-years-isotopic-abundance-235u-natur-q24088669?msockid=2edee6cb905265822cd0f13091c764bd",
+      "snippet": "Science Physics Physics questions and answers Since the half-life of 235U (7.13×10^8 years) is less than that of 238U (4.51×10^9 …"
+    },
+    {
+      "title": "Solved Figure below shows a simply supported beam and the - Chegg",
+      "url": "https://www.chegg.com/homework-help/questions-and-answers/figure-shows-simply-supported-beam-cross-section-midspan-beam-supports-uniform-service-unf-q13052497?msockid=2edee6cb905265822cd0f13091c764bd",
+      "snippet": "Question: Figure below shows a simply supported beam and the cross-section at midspan. The beam supports a uniform service …"
+    },
+    {
+      "title": "Solved 1. Several years ago, Junior acquired a home that he - Chegg",
+      "url": "https://www.chegg.com/homework-help/questions-and-answers/1-several-years-ago-junior-acquired-home-vacationed-part-time-rented-part-time-current-yea-q24384475?msockid=2edee6cb905265822cd0f13091c764bd",
+      "snippet": "Question: 1. Several years ago, Junior acquired a home that he vacationed in part of the time and rented out part of the time. During …"
+    },
+    {
+      "title": "Solved 4-69. The assembly has the diameters and material - Chegg",
+      "url": "https://www.chegg.com/homework-help/questions-and-answers/4-69-assembly-diameters-material-indicated-fits-securely-fixed-supports-temperature-t1-70--q26912205?msockid=2edee6cb905265822cd0f13091c764bd",
+      "snippet": "Question: 4-69. The assembly has the diameters and material indicated. If it fits securely between its fixed supports when the …"
+    }
+  ]
+}

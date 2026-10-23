@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "air-air/xlsr-53-espeak-student-ONNX",
+  "slug": "air-air-xlsr-53-espeak-student-onnx",
+  "author": "air-air",
+  "url": "https://huggingface.co/air-air/xlsr-53-espeak-student-ONNX",
+  "created_at": "2026-10-23T12:27:57.000Z",
+  "updated_at": "2026-10-23T12:31:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers.js",
+  "languages": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "ko",
+    "pl",
+    "pt",
+    "ru",
+    "sv"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "wav2vec2",
+    "automatic-speech-recognition",
+    "phoneme-recognition",
+    "ctc",
+    "distillation",
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "ko",
+    "pl",
+    "pt",
+    "ru",
+    "sv",
+    "dataset:google/fleurs",
+    "base_model:facebook/wav2vec2-xlsr-53-espeak-cv-ft",
+    "base_model:finetune:facebook/wav2vec2-xlsr-53-espeak-cv-ft",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 76799940,
+  "storage_human": "77 MB",
+  "base_model": "facebook/wav2vec2-xlsr-53-espeak-cv-ft",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Airbnb | Vacation rentals, cabins, beach houses, & more",
+      "url": "https://www.airbnb.com/",
+      "snippet": "Get an Airbnb for every kind of trip → 8 million vacation rentals → 2 million Guest Favorites → 220+ countries and regions worldwide"
+    },
+    {
+      "title": "La Ciotat, France Vacation Rentals - Airbnb",
+      "url": "https://www.airbnb.com/la-ciotat-france/stays",
+      "snippet": "La Ciotat stays are highly rated by guests—averaging 4.8 out of 5! Guests agree: these stays are highly rated for location, …"
+    },
+    {
+      "title": "Location Vacances à La Ciotat, France - Airbnb",
+      "url": "https://www.airbnb.fr/la-ciotat-france/stays",
+      "snippet": "La Ciotat propose des logements très bien notés par les voyageurs, avec une moyenne de 4,8 sur 5 ! Les voyageurs sont unanimes …"
+    },
+    {
+      "title": "Billets d'avion, réservation de vols pas chers | Site officiel Air ...",
+      "url": "https://wwws.airfrance.fr/?msockid=2fd0515330d86c1a24dc46a831916dbf",
+      "snippet": "Réservez votre billet d'avion au meilleur prix sur plus de 230 destinations. Envolez-vous en toute élégance."
+    },
+    {
+      "title": "AIR",
+      "url": "https://www.airfrenchband.com/",
+      "snippet": "Official Website Moon Safari – The Athens Concert, for Record Store Day 2026"
+    }
+  ]
+}

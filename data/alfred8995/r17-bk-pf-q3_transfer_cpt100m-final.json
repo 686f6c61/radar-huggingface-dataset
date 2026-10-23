@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "alfred8995/r17-bk-pf-q3_transfer_cpt100m-final",
+  "slug": "alfred8995-r17-bk-pf-q3_transfer_cpt100m-final",
+  "author": "alfred8995",
+  "url": "https://huggingface.co/alfred8995/r17-bk-pf-q3_transfer_cpt100m-final",
+  "created_at": "2026-10-23T12:47:18.000Z",
+  "updated_at": "2026-10-23T12:47:33.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1512432640,
+  "parameters_human": "1.51B",
+  "storage_bytes": 3024900840,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alfred8995 (Alfred Smith) - Hugging Face",
+      "url": "https://huggingface.co/alfred8995",
+      "snippet": "AI & ML interests ... Recent Activity published a model about 10 hours ago ... updated a model about 10 hours ago"
+    },
+    {
+      "title": "alfred8995 (Alfred Smith) - Hugging Face",
+      "url": "https://huggingface.co/alfred8995/datasets",
+      "snippet": "AI & ML interests ... Recent Activity published a model about 12 hours ago ... updated a model about 12 hours ago"
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Qwen3.8-Max: Alibaba&#x27;s 2.4T Multimodal Flagship | AI/TLDR",
+      "url": "https://ai-tldr.dev/models/qwen3-8-max/",
+      "snippet": "Qwen3.8-Max is Alibaba&#x27;s Qwen-Max flagship released August 3, 2026 — a 2.4T-parameter multimodal MoE (95B active) with 1M-token context, at $2/$6 per MTok."
+    },
+    {
+      "title": "GPTQModel - LLM Quantization Toolkit (GPTQ, AWQ) | AI/TLDR",
+      "url": "https://ai-tldr.dev/tools/gptqmodel/",
+      "snippet": "GPTQModel is an open-source Python toolkit that quantizes large language models with GPTQ, AWQ and other methods to shrink memory and speed up inference."
+    }
+  ]
+}

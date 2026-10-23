@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "alfred8995/r17-bk-pf-s1_corrective_pure",
+  "slug": "alfred8995-r17-bk-pf-s1_corrective_pure",
+  "author": "alfred8995",
+  "url": "https://huggingface.co/alfred8995/r17-bk-pf-s1_corrective_pure",
+  "created_at": "2026-10-23T12:48:52.000Z",
+  "updated_at": "2026-10-23T12:49:17.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1414111232,
+  "parameters_human": "1.41B",
+  "storage_bytes": 2828253080,
+  "storage_human": "2.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alfred8995 (Alfred Smith) - Hugging Face",
+      "url": "https://huggingface.co/alfred8995",
+      "snippet": "AI & ML interests ... Recent Activity published a model about 10 hours ago ... updated a model about 10 hours ago"
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Best Local AI Models for iPhone 17 Pro (2026): 12GB Picks",
+      "url": "https://modelfit.io/iphone-17-pro/",
+      "snippet": "Best AI Models for iPhone 17 Pro iPhone 17 Pro is the first iPhone where the largest Gemma 4 variant genuinely fits: 12GB of RAM and the A19 Pro run E4B at a measured ~30 tok/s, with 7B-class models now possible. Even it has a ceiling: 14B-class models still belong on a Mac."
+    },
+    {
+      "title": "Claude",
+      "url": "https://claude.com/",
+      "snippet": "Claude is an artificial intelligence, trained by Anthropic using Constitutional AI to be safe, accurate, and secure — the trusted assistant for you to do your best work."
+    },
+    {
+      "title": "Skild AI S1 Robot Brain Learns Football In 140 Simulated Years | The ...",
+      "url": "https://theroboticsmedia.com/article/skild-ai-s1-robot-brain-football-140-simulated-years-physical-self-play-september-24-2026",
+      "snippet": "Skild AI trained its S1 robot foundation model to play football via physical self-play - 140 simulated years in NVIDIA Isaac Sim - then loaded the policy onto a real humanoid."
+    }
+  ]
+}

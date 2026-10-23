@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "alfred8995/r17-bk-pf-q25_full_update_u2",
+  "slug": "alfred8995-r17-bk-pf-q25_full_update_u2",
+  "author": "alfred8995",
+  "url": "https://huggingface.co/alfred8995/r17-bk-pf-q25_full_update_u2",
+  "created_at": "2026-10-23T12:42:51.000Z",
+  "updated_at": "2026-10-23T12:43:13.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098889036,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Samsung Firmware by Model & CSC | Romsignal",
+      "url": "https://romsignal.com/",
+      "snippet": "Find Samsung firmware information by model and CSC. Review Android versions, security patches and bootloader binary compatibility before flashing."
+    },
+    {
+      "title": "Firmware for Carplay AI Boxes (Qualcomm/Rockchip/Allwinner) Android 7/9",
+      "url": "https://xdaforums.com/t/firmware-for-carplay-ai-boxes-qualcomm-rockchip-allwinner-android-7-9.4278289/",
+      "snippet": "Description ApplePie MAX (model: AI-996 Max) is the 4nd.version of our ApplePie Series CarPlay Android Car Smart Ai Box, Android 10.0 OS, online video, audio and control data such as touch ,the buttons on the steering wheel, the knob operation and so on."
+    }
+  ]
+}

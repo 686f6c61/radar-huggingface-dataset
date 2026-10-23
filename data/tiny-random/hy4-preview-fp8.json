@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "tiny-random/hy4-preview-fp8",
+  "slug": "tiny-random-hy4-preview-fp8",
+  "author": "tiny-random",
+  "url": "https://huggingface.co/tiny-random/hy4-preview-fp8",
+  "created_at": "2026-10-23T14:39:36.000Z",
+  "updated_at": "2026-10-23T14:42:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "hy_v4",
+    "text-generation",
+    "conversational",
+    "base_model:tencent/Hy4-preview-FP8",
+    "base_model:quantized:tencent/Hy4-preview-FP8",
+    "endpoints_compatible",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 54592165,
+  "parameters_human": "54.6M",
+  "storage_bytes": 70661788,
+  "storage_human": "71 MB",
+  "base_model": "tencent/Hy4-preview-FP8",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TinyTask",
+      "url": "https://www.tinytask.net/",
+      "snippet": "TinyTask is free software for personal use, but it does cost money to develop & host this project. Historically, only 1 in 10,000 …"
+    },
+    {
+      "title": "TinyPNG – Compress WebP, PNG and JPEG images intelligently",
+      "url": "https://tinypng.com/",
+      "snippet": "Free online image optimizer for faster websites! Reduce the file size of your AVIF, WEBP, JPEG and PNG images while preserving …"
+    },
+    {
+      "title": "La Tiny House - Premier fabricant français de Tiny House",
+      "url": "https://latinyhouse.com/",
+      "snippet": "La Tiny House vous accompagne dans la réalisation du projet de vos rêves. Inspiré par l'un de nos modèles, ou envie de plans sur …"
+    },
+    {
+      "title": "Tiny House France - Habiter Autrement",
+      "url": "https://tinyhousefrance.org/",
+      "snippet": "Dimensions et capacité des tiny houses : Tout ce qu’il faut savoir Les tiny houses, ces petites maisons mobiles à l’espace optimisé, …"
+    },
+    {
+      "title": "URL Shortener, Branded Short Links & Analytics | TinyURL",
+      "url": "https://tinyurl.com/?+",
+      "snippet": "Welcome to the original link shortener — simplifying the Internet through the power of the URL since 2002. You can use branded …"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "vid-GENR/NanoWeb-7B-Instruct",
+  "slug": "vid-genr-nanoweb-7b-instruct",
+  "author": "vid-GENR",
+  "url": "https://huggingface.co/vid-GENR/NanoWeb-7B-Instruct",
+  "created_at": "2026-10-23T18:44:54.000Z",
+  "updated_at": "2026-10-23T18:45:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "web-agent",
+    "browser-agent",
+    "abliterated",
+    "function-calling",
+    "llama.cpp",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 4683073632,
+  "storage_human": "4.7 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Vids: AI-Powered Video Creator and Editor | Google Workspace",
+      "url": "https://workspace.google.com/products/vids/",
+      "snippet": "Create, edit, and share rich video content with Google Vids - a powerful online video editor infused with Google’s AI technology."
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/@YouTube/vid",
+      "snippet": "YouTube's official YouTube channel A Minecraft legend built block by block 🟪 Over 15 years ago, @ldshadowlady uploaded her first …"
+    },
+    {
+      "title": "Fichier VID - Ce que c'est, comment l'ouvrir et le convertir | File ...",
+      "url": "https://www.file-extension.info/fr/format/vid",
+      "snippet": "Aug 6, 2026 · Qu'est-ce que le format de fichier VID ? .vid est une extension de fichier vidéo générique, parfois appelée masque de …"
+    },
+    {
+      "title": "Vid.AI | AI-Powered Video Generation for Short & Long-Form Content",
+      "url": "https://vid.ai/",
+      "snippet": "Turn any idea into a ready-to-post AI video. Vid.AI writes, voices and edits faceless YouTube videos, Shorts, TikToks and Reels, with …"
+    },
+    {
+      "title": "vid - YouTube",
+      "url": "https://www.youtube.com/vid",
+      "snippet": "vid @vid • 441 subscribers More about this channel ...more More about this channel ...more ...more"
+    }
+  ]
+}

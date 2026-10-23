@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "jenila-ai/spleeter-fast-onnx",
+  "slug": "jenila-ai-spleeter-fast-onnx",
+  "author": "jenila-ai",
+  "url": "https://huggingface.co/jenila-ai/spleeter-fast-onnx",
+  "created_at": "2026-10-23T12:39:09.000Z",
+  "updated_at": "2026-10-23T12:45:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "audio",
+    "source-separation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 78847500,
+  "storage_human": "79 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lonefun.com website. LONEFUN - Home.",
+      "url": "http://websites.milonic.com/lonefun.com",
+      "snippet": "Aug 2, 2026 · Lonefun.com has yet to be estimated by Alexa in terms of traffic and rank. Moreover, LONEFUN is slightly inactive on …"
+    },
+    {
+      "title": "Is Lonefun.com down? Live status and problems past 24 hours",
+      "url": "https://downforeveryoneorjustme.com/lonefun.com",
+      "snippet": "1 day ago · Live problems for Lonefun.com. Error received? Down? Slow? Check what is going on."
+    },
+    {
+      "title": "lonefun.com with 2 alternative names (bf:91:9c:b8:8f:a2:85:50:0e:a1:4c ...",
+      "url": "https://certificatedetails.com/lonefun.com",
+      "snippet": "Sep 13, 2026 · SSL Certificate for lonefun.com. View full certificate details, validation status, and security properties. Free online SSL …"
+    },
+    {
+      "title": "LONEFUN - XTREAMWET – Telegram",
+      "url": "https://t.me/s/xtreamwet?before=242",
+      "snippet": "LONEFUN - XTREAMWET pinned « Earn with LONEFUN: Turn your videos into profit by unlocking multiple revenue streams on our …"
+    },
+    {
+      "title": "Telegram: View @lonefun - t.me",
+      "url": "https://t.me/lonefun",
+      "snippet": "Lonefun View in Telegram Preview channel"
+    }
+  ]
+}

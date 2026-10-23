@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "jenila-ai/beat-this-small0-onnx",
+  "slug": "jenila-ai-beat-this-small0-onnx",
+  "author": "jenila-ai",
+  "url": "https://huggingface.co/jenila-ai/beat-this-small0-onnx",
+  "created_at": "2026-10-23T12:39:07.000Z",
+  "updated_at": "2026-10-23T12:45:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "audio",
+    "beat-tracking",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10401066,
+  "storage_human": "10 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "open-beatmap-studio/public/models/beat-this-small0.onnx at main ...",
+      "url": "https://github.com/Reza2kn/open-beatmap-studio/blob/main/public/models/beat-this-small0.onnx",
+      "snippet": "Free browser-first Beat Saber map generator with local audio analysis, five difficulties, native rhythm-driven lightshows, mouse practice and ZIP export. MIT licensed. - Reza2kn/open-beatmap-studio"
+    },
+    {
+      "title": "ONNX Model Zoo - GitHub",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "tuneperfect/beat-this-onnx · Hugging Face",
+      "url": "https://huggingface.co/tuneperfect/beat-this-onnx",
+      "snippet": "logmel.onnx: input audio[samples] float32, 22.05 kHz mono. Output spect[frames, 128], the model&#x27;s log mel spectrogram, 50 frames per second. Computed with plain convolutions rather than the STFT op. beat_this.onnx: input spect[1, frames, 128], one chunk of at most 1500 frames. Outputs beat and downbeat logits [1, frames]. The batch size is fixed at 1."
+    },
+    {
+      "title": "Models - ONNX Runtime",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    },
+    {
+      "title": "MossyModels — Free YOLO and ONNX AI Models",
+      "url": "https://mossymodels.com/",
+      "snippet": "Free community library of YOLO and ONNX AI aimbot models for Fortnite, Valorant, Warzone, Apex Legends, CS2, and 40+ games. Download ONNX and PyTorch weights."
+    }
+  ]
+}

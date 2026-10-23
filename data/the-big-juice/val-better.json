@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "the-big-juice/val-better",
+  "slug": "the-big-juice-val-better",
+  "author": "the-big-juice",
+  "url": "https://huggingface.co/the-big-juice/val-better",
+  "created_at": "2026-10-23T18:26:18.000Z",
+  "updated_at": "2026-10-23T19:01:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 778845437,
+  "storage_human": "779 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/The",
+      "snippet": "The is a grammatical article in English, denoting nouns that are already or about to be mentioned, under discussion, implied or …"
+    },
+    {
+      "title": "Déterminant THE en anglais : quand et comment l'utiliser",
+      "url": "https://www.ispeakspokespoken.com/the-anglais/",
+      "snippet": "Oct 2, 2026 · Faut-il mettre THE ou pas devant les noms en anglais ? Je vous donne dans cet article des explications et des …"
+    },
+    {
+      "title": "The definite article: 'the' | LearnEnglish - British Council",
+      "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/definite-article",
+      "snippet": "Level: beginner The definite article the is the most frequent word in English. We use the definite article in front of a noun when we …"
+    },
+    {
+      "title": "THE | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/the",
+      "snippet": "THE definition: 1. used before nouns to refer to particular things or people that have already been talked about or…. Learn more."
+    },
+    {
+      "title": "Articles THE/ A / AN / zéro : leçon / cours de grammaire anglaise",
+      "url": "https://www.anglaisfacile.com/cgi2/myexam/voir2.php?id=111",
+      "snippet": "Prérequis du 16e cours :(Ce qu'il faut savoir pour comprendre ce cours) Aucun. :-)... mais il serait bon de se souvenir de la leçon 1, si …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ryugyosoft/ACE-Step-1.5-onw-music",
+  "slug": "ryugyosoft-ace-step-1-5-onw-music",
+  "author": "ryugyosoft",
+  "url": "https://huggingface.co/ryugyosoft/ACE-Step-1.5-onw-music",
+  "created_at": "2026-10-23T12:36:59.000Z",
+  "updated_at": "2026-10-23T14:06:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "music",
+    "intel",
+    "npu",
+    "openvino",
+    "core-ultra",
+    "onw-music",
+    "text-to-audio",
+    "base_model:ACE-Step/Ace-Step1.5",
+    "base_model:finetune:ACE-Step/Ace-Step1.5",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5995507873,
+  "storage_human": "6.0 GB",
+  "base_model": "ACE-Step/Ace-Step1.5",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ACE-Step 1.5 - GitHub",
+      "url": "https://github.com/ace-step/ACE-Step-1.5",
+      "snippet": "The most powerful local music generation model that outperforms almost all commercial alternatives, supporting Mac, AMD, Intel, and CUDA devices. - ace-step/ACE-Step-1.5"
+    },
+    {
+      "title": "ACE-Step 1.5",
+      "url": "https://ace-step.github.io/ACE-Step-1.5/en/",
+      "snippet": "Open-Source Music Generation Foundation Model ACE-Step 1.5 Open-Source Music Generation Commercial-grade music generation on consumer hardware. Under 2s per song on A100, <4GB VRAM."
+    },
+    {
+      "title": "ACE-Step 1.5: The Complete 2026 Guide to Open-Source AI Music ...",
+      "url": "https://dev.to/czmilo/ace-step-15-the-complete-2026-guide-to-open-source-ai-music-generation-522e",
+      "snippet": "Released in January 2026, it represents a significant leap forward in the capability and accessibility of AI-powered music creation. At its core, ACE-Step 1.5 is a text-to-audio model that transforms simple text descriptions into full, high-fidelity music tracks — complete with melody, harmony, rhythm, instrumentation, and optionally, lyrics."
+    },
+    {
+      "title": "ACE-Step-1.5/docs/en/Tutorial.md at main - GitHub",
+      "url": "https://github.com/ace-step/ACE-Step-1.5/blob/main/docs/en/Tutorial.md",
+      "snippet": "The most powerful local music generation model that outperforms almost all commercial alternatives, supporting Mac, AMD, Intel, and CUDA devices. - ace-step/ACE-Step-1.5"
+    },
+    {
+      "title": "ryugyosoft/ACE-Step-1.5-onwx-music · Hugging Face",
+      "url": "https://huggingface.co/ryugyosoft/ACE-Step-1.5-onwx-music",
+      "snippet": "onwx-music で使う、ACE-Step 1.5 turbo の NPU 用パッケージです。 テキストエンコーダ・歌詞エンコーダ・DiT・VAE デコーダを すべて AMD Ryzen AI の NPU で 動かします。"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "InternScience/Sage-A1.5-Q8_0-GGUF",
+  "slug": "internscience-sage-a1-5-q8_0-gguf",
+  "author": "InternScience",
+  "url": "https://huggingface.co/InternScience/Sage-A1.5-Q8_0-GGUF",
+  "created_at": "2026-10-21T04:46:06.000Z",
+  "updated_at": "2026-10-22T14:11:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "moe",
+    "vlm",
+    "vision",
+    "agentic",
+    "code",
+    "tool-use",
+    "text-generation",
+    "arxiv:2610.28578",
+    "base_model:InternScience/Sage-A1.5",
+    "base_model:quantized:InternScience/Sage-A1.5",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 13,
+  "downloads_30d": 2557,
+  "trending_score": 13,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 38701623665,
+  "storage_human": "38.7 GB",
+  "base_model": "InternScience/Sage-A1.5",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Immoral Desires #1 - #4 Complete｜Daval3D｜pixivFANBOX",
+      "url": "https://daval.fanbox.cc/posts/5427151",
+      "snippet": "クリエイターの創作活動を支えるファンコミュニティ「pixivFANBOX」"
+    },
+    {
+      "title": "Immoral Desires [Daval3D]",
+      "url": "https://read.svscomics.com/immoral-desires-14-daval3d-737/",
+      "snippet": "Read this 3D comic online right now: Immoral Desires [Daval3D]. We got much more 3D porn comics inside - click, read, enjoy."
+    },
+    {
+      "title": "Immoral Desires [Daval3D] - Porn Comic - GEDE Comix",
+      "url": "https://gedecomix.com/porncomic/immoral-desires-daval3d/",
+      "snippet": "Porn Comics chapters of Immoral Desires [Daval3D]. Sex adventures stories free on GEDE Comix ."
+    },
+    {
+      "title": "Daval3D Comics Collection | All Porn Comics",
+      "url": "https://allporncomics.co/comic-author/daval3d/",
+      "snippet": "Jan 11, 2025 · Read Daval3D Comics Collection With Best Quality Images. Get All Porn Comics Hentai Manga For Free With Daily …"
+    },
+    {
+      "title": "NandoF - 3D Porn Comics - FSIComics",
+      "url": "https://fsicomics.com/all-porn-comics/3d-porn-comics/various-3d-authors/nandof/",
+      "snippet": "Watch NandoF Latest Comics: What I’ve Done and Sunny Day For Free. NandoF is famous for lewd Mom Son Renders and comics …"
+    }
+  ]
+}

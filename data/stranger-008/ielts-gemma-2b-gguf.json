@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Stranger-008/ielts-gemma-2b-gguf",
+  "slug": "stranger-008-ielts-gemma-2b-gguf",
+  "author": "Stranger-008",
+  "url": "https://huggingface.co/Stranger-008/ielts-gemma-2b-gguf",
+  "created_at": "2026-10-23T12:38:48.000Z",
+  "updated_at": "2026-10-23T12:44:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2506172416,
+  "parameters_human": "2.51B",
+  "storage_bytes": 1630262464,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stranger (TV series) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Stranger_(TV_series)",
+      "snippet": "Stranger explores the multifaceted nature of human beings and the pursuit of justice. Writer Lee Soo-yeon said that she deliberately …"
+    },
+    {
+      "title": "Stranger (2017) - MyDramaList",
+      "url": "https://mydramalist.com/21934-stranger",
+      "snippet": "Jun 10, 2017 · Stranger is a 2017 Korean Drama South Korea Native title: 비밀의 숲. Hwang Si Mok underwent brain surgery as a …"
+    },
+    {
+      "title": "Stranger (TV Series 2017–2020) - IMDb",
+      "url": "https://www.imdb.com/title/tt6461346/",
+      "snippet": "Stranger: With Cho Seung-woo, Bae Doona, Lee Jun-hyuk, Jeon Bae-soo. With the help of a gutsy female detective, a prosecutor …"
+    },
+    {
+      "title": "Stranger (série télévisée) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Stranger_(s%C3%A9rie_t%C3%A9l%C3%A9vis%C3%A9e)",
+      "snippet": "Stranger (hangeul : 비밀의 숲 ; RR : bimileui seob, littéralement « forêt secrète ») est une série dramatique sud-coréenne en 16 …"
+    },
+    {
+      "title": "Stranger - Drama (2017) - SensCritique",
+      "url": "https://www.senscritique.com/serie/stranger/24910270",
+      "snippet": "Critique de la saison 1 Stranger, de son nom original coréen Secret Forest, nous plonge dans une affaire criminelle atypique dont a …"
+    }
+  ]
+}

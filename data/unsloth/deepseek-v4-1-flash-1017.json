@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "unsloth/DeepSeek-V4.1-Flash-1017",
+  "slug": "unsloth-deepseek-v4-1-flash-1017",
+  "author": "unsloth",
+  "url": "https://huggingface.co/unsloth/DeepSeek-V4.1-Flash-1017",
+  "created_at": "2026-10-17T20:36:21.000Z",
+  "updated_at": "2026-10-19T13:00:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v41",
+    "text-generation",
+    "image-text-to-text",
+    "conversational",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 12,
+  "downloads_30d": 759,
+  "trending_score": 0,
+  "parameters": 763205315794,
+  "parameters_human": "763.21B",
+  "storage_bytes": 510296920807,
+  "storage_human": "510.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "excel表格如何消除小数点后缩位后的计算误差-百度经验",
+      "url": "https://jingyan.baidu.com/article/9158e0008537f1e3541228c4.html",
+      "snippet": "Feb 1, 2020 · excel表格如何消除小数点后缩位后的计算误差,完美表格数据处理能力，是升职进级的重要阶梯！总结经验，博采众长， …"
+    },
+    {
+      "title": "赛博朋克2077怎么破译法术书 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/fec4bce2242062b3618d8be4.html",
+      "snippet": "May 5, 2023 · 赛博朋克2077怎么破译法术书，这里，小编就教给大家操作的方法，搞清楚这个知识是怎么一回事。"
+    },
+    {
+      "title": "Excel和Word中怎么插入形位公差符号 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/46650658dc4c77f549e5f886.html",
+      "snippet": "Dec 8, 2017 · Excel和Word中怎么插入形位公差符号,相信很多从事机械行业的人都会接触到图纸和公差，在处理表格和文档的时候， …"
+    },
+    {
+      "title": "PHOTOSHOP里如何把一个LOGO变成反白效果-百度经验",
+      "url": "https://jingyan.baidu.com/article/a3761b2b76f2e45577f9aa1e.html",
+      "snippet": "Dec 3, 2019 · 4、点击反相后，就可以把LOGO反白了。"
+    },
+    {
+      "title": "读卡器插在电脑上怎么显示不出来怎么办 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/75ab0bcb1cc99196874db23a.html",
+      "snippet": "Dec 4, 2019 · 请确保存储卡没有质量问题，现在网络上大多数卖的是扩容卡，容量都是虚标的，用一段时间后插到电脑上完全没有反 …"
+    }
+  ]
+}

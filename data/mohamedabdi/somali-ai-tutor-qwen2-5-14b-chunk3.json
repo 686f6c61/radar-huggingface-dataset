@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mohamedabdi/Somali-AI-Tutor-Qwen2.5-14B-Chunk3",
+  "slug": "mohamedabdi-somali-ai-tutor-qwen2-5-14b-chunk3",
+  "author": "mohamedabdi",
+  "url": "https://huggingface.co/mohamedabdi/Somali-AI-Tutor-Qwen2.5-14B-Chunk3",
+  "created_at": "2026-10-23T12:30:49.000Z",
+  "updated_at": "2026-10-23T12:30:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen2.5-14B-Instruct-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen2.5-14B-Instruct-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 286763886,
+  "storage_human": "287 MB",
+  "base_model": "unsloth/Qwen2.5-14B-Instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jean-Luc Mélenchon : fortune, salaire et patrimoine en 2026",
+      "url": "https://purefortune.fr/jean-luc-melenchon-fortune/",
+      "snippet": "Jun 21, 2025 · Quelle est la fortune de Jean-Luc Mélenchon ? La fortune de Jean-Luc Mélenchon est estimée entre 1 et 3 millions …"
+    },
+    {
+      "title": "Fortune de Mélenchon : patrimoine et évolution",
+      "url": "https://www.rapcontenders.tv/quelle-est-la-fortune-de-melenchon/",
+      "snippet": "Sep 17, 2026 · La fortune de Jean-Luc Mélenchon tourne autour de 1,46 million d’euros, avec un cœur de patrimoine formé par …"
+    },
+    {
+      "title": "Quelle est la fortune de Jean Luc Mélenchon - 75secondes.fr",
+      "url": "https://www.75secondes.fr/actualites/quelle-est-la-fortune-de-jean-luc-melenchon",
+      "snippet": "Feb 2, 2025 · Son patrimoine estimé à 1,4 million d’euros reste inférieur à celui d’autres figures politiques françaises et loin des …"
+    },
+    {
+      "title": "Fortune de Jean-Luc Mélenchon 2026 : 1,4 M€ déclarés (HATVP)",
+      "url": "https://fortune-celebrites.fr/celebrite/jean-luc-melenchon/",
+      "snippet": "Oct 12, 2026 · Candidat de La France insoumise à la présidentielle de 2027 depuis le 3 mai 2026, il est crédité de 18 % des …"
+    },
+    {
+      "title": "Revenu Mélenchon : chiffres réels, patrimoine et train de vie",
+      "url": "https://www.wiiz.fr/revenu-melenchon/",
+      "snippet": "Quel est le patrimoine déclaré de Jean-Luc Mélenchon ? En 2017, Jean-Luc Mélenchon a déclaré un patrimoine brut d’environ 1,1 …"
+    }
+  ]
+}

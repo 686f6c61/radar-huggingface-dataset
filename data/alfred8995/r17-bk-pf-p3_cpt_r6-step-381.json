@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "alfred8995/r17-bk-pf-p3_cpt_r6-step-381",
+  "slug": "alfred8995-r17-bk-pf-p3_cpt_r6-step-381",
+  "author": "alfred8995",
+  "url": "https://huggingface.co/alfred8995/r17-bk-pf-p3_cpt_r6-step-381",
+  "created_at": "2026-10-23T12:45:47.000Z",
+  "updated_at": "2026-10-23T12:46:23.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gpt_neox",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1414647808,
+  "parameters_human": "1.41B",
+  "storage_bytes": 5658625656,
+  "storage_human": "5.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alfred8995 (Alfred Smith) - Hugging Face",
+      "url": "https://huggingface.co/alfred8995/datasets",
+      "snippet": "AI & ML interests ... Recent Activity published a model about 12 hours ago ... updated a model about 12 hours ago"
+    },
+    {
+      "title": "alfred8995/r16-H-c2b-cpt-s2000 · Hugging Face",
+      "url": "https://huggingface.co/alfred8995/r16-H-c2b-cpt-s2000",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Download scale model assembly instructions | SpotModel",
+      "url": "https://www.spotmodel.com/manuals.php",
+      "snippet": "Download scale model assembly instructions Can&#x27;t you find the assembly instructions of your favourite scale model kit? Do you suspect the dog may have eaten them? Did you spill a paint bottle right over the hardest step of the assembly? Don&#x27;t worry!"
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/features",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    }
+  ]
+}

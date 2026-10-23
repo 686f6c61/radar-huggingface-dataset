@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "BurnyCoder/ministrike-selfplay-seed111",
+  "slug": "burnycoder-ministrike-selfplay-seed111",
+  "author": "BurnyCoder",
+  "url": "https://huggingface.co/BurnyCoder/ministrike-selfplay-seed111",
+  "created_at": "2026-10-23T08:26:56.000Z",
+  "updated_at": "2026-10-23T08:27:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "reinforcement-learning",
+    "multi-agent",
+    "self-play",
+    "torchrl",
+    "arxiv:2103.01955",
+    "arxiv:2108.13264",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13954596,
+  "storage_human": "14 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BurnyCoder/ministrike-selfplay-cpu · Hugging Face",
+      "url": "https://huggingface.co/BurnyCoder/ministrike-selfplay-cpu",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "BurnyCoder (Burny) - Hugging Face",
+      "url": "https://huggingface.co/BurnyCoder/models",
+      "snippet": "deep learning, LLMs, interpretability, science, physics"
+    },
+    {
+      "title": "GitHub - bevanator/MiniStrike",
+      "url": "https://github.com/bevanator/MiniStrike",
+      "snippet": "A game project inspired by Counter Strike and Mini Militia. I experimented with design patterns and low level system design, built weapon, loadout, inventory and shooting mechanics all from scratch. Also implemented a CI/CD pipeline for WebGL with this project."
+    },
+    {
+      "title": "BurnyCoder (Burny) · GitHub",
+      "url": "https://github.com/BurnyCoder/",
+      "snippet": "AI and ML Engineer and Researcher. BurnyCoder has 197 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "AI Minecraft Model Generator · MineModel AI",
+      "url": "https://minemodelai.com/en",
+      "snippet": "Describe a Minecraft model and get it back installable: ItemsAdder, Nexo, Oraxen, CraftEngine, Blockbench and a plain resource pack. No modelling software needed."
+    }
+  ]
+}

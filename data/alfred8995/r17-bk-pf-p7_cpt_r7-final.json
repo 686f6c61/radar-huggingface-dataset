@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "alfred8995/r17-bk-pf-p7_cpt_r7-final",
+  "slug": "alfred8995-r17-bk-pf-p7_cpt_r7-final",
+  "author": "alfred8995",
+  "url": "https://huggingface.co/alfred8995/r17-bk-pf-p7_cpt_r7-final",
+  "created_at": "2026-10-23T12:58:22.000Z",
+  "updated_at": "2026-10-23T12:58:43.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1296433152,
+  "parameters_human": "1.30B",
+  "storage_bytes": 2592891184,
+  "storage_human": "2.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "شات اردني,شات الاردنين,دردشة الاردن,من هنا",
+      "url": "https://a3chb-mghrebeya.forumarabia.com/t563-%D8%B4%D8%A7%D8%AA-%D8%A7%D8%B1%D8%AF%D9%86%D9%8A%D8%B4%D8%A7%D8%AA-%D8%A7%D9%84%D8%A7%D8%B1%D8%AF%D9%86%D9%8A%D9%86%D8%AF%D8%B1%D8%AF%D8%B4%D8%A9-%D8%A7%D9%84%D8%A7%D8%B1%D8%AF%D9%86%D9%85%D9%86-%D9%87%D9%86%D8%A7",
+      "snippet": "شات اردني,شات الاردنين,دردشة الاردن,من هنا من طرف Admin الأحد سبتمبر 21, 2014 4:03 pm"
+    },
+    {
+      "title": "انت اغلي من عمري - forumarabia.com",
+      "url": "https://a3chb-mghrebeya.forumarabia.com/t45-%D8%A7%D9%86%D8%AA-%D8%A7%D8%BA%D9%84%D9%8A-%D9%85%D9%86-%D8%B9%D9%85%D8%B1%D9%8A",
+      "snippet": "انت اغلي من عمري من طرف ROmanCY الإثنين يونيو 02, 2014 3:34 am"
+    },
+    {
+      "title": "انتاج أول عجل أنابيب فى الشرق الاوسط",
+      "url": "https://a3chb-mghrebeya.forumarabia.com/t146-%D8%A7%D9%86%D8%AA%D8%A7%D8%AC-%D8%A3%D9%88%D9%84-%D8%B9%D8%AC%D9%84-%D8%A3%D9%86%D8%A7%D8%A8%D9%8A%D8%A8-%D9%81%D9%89-%D8%A7%D9%84%D8%B4%D8%B1%D9%82-%D8%A7%D9%84%D8%A7%D9%88%D8%B3%D8%B7",
+      "snippet": "انتاج أول عجل أنابيب فى الشرق الاوسط من طرف aghany shetaa الجمعة يونيو 13, 2014 2:21 am"
+    },
+    {
+      "title": "صور اطفال مميزه",
+      "url": "https://a3chb-mghrebeya.forumarabia.com/t48-%D8%B5%D9%88%D8%B1-%D8%A7%D8%B7%D9%81%D8%A7%D9%84-%D9%85%D9%85%D9%8A%D8%B2%D9%87",
+      "snippet": "صور اطفال مميزه من طرف aghany shetaa الإثنين يونيو 02, 2014 5:53 am"
+    },
+    {
+      "title": "همسات روح",
+      "url": "https://a3chb-mghrebeya.forumarabia.com/t457-%D9%87%D9%85%D8%B3%D8%A7%D8%AA-%D8%B1%D9%88%D8%AD",
+      "snippet": "أغرب ما فى الفراق أن ذوقه رفيع فهو لايختار من ألاحبة إلا الأجمل فى العين والأغلى على القلب !!"
+    }
+  ]
+}

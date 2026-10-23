@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "nvidia/NVIDIA-NemotronLabs-RE-USE",
+  "slug": "nvidia-nvidia-nemotronlabs-re-use",
+  "author": "nvidia",
+  "url": "https://huggingface.co/nvidia/NVIDIA-NemotronLabs-RE-USE",
+  "created_at": "2026-07-22T12:52:19.000Z",
+  "updated_at": "2026-10-22T21:41:39.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "audio-to-audio",
+  "library": "mamba-ssm",
+  "languages": [],
+  "tags": [
+    "mamba-ssm",
+    "safetensors",
+    "speech-enhancement",
+    "universal speech enhancement",
+    "multiple input sampling rates",
+    "language-agnostic",
+    "audio-to-audio",
+    "arxiv:2603.02641",
+    "arxiv:2606.25621",
+    "license:openmdw-1.1",
+    "region:us"
+  ],
+  "likes": 14,
+  "downloads_30d": 4628,
+  "trending_score": 14,
+  "parameters": 9607747,
+  "parameters_human": "9.6M",
+  "storage_bytes": 39783585,
+  "storage_human": "40 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Téléchargez les pilotes NVIDIA officiels | NVIDIA",
+      "url": "https://www.nvidia.com/fr-fr/drivers/",
+      "snippet": "Téléchargez les pilotes NVIDIA officiels les plus récents pour optimiser votre expérience de jeu sur PC et faire tourner vos …"
+    },
+    {
+      "title": "World Leader in Artificial Intelligence Computing | NVIDIA",
+      "url": "https://www.nvidia.com/",
+      "snippet": "NVIDIA RTX™ powers the world’s fastest PCs and the ultimate platform for gamers and creators. Enjoy beautiful ray tracing, AI …"
+    },
+    {
+      "title": "Nvidia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nvidia",
+      "snippet": "Nvidia Corporation[a] (/ ɛnˈvɪdiə / en-VID-ee-ə) is an American multinational technology company headquartered in Santa Clara, …"
+    },
+    {
+      "title": "GeForce NOW",
+      "url": "https://play.geforcenow.com/",
+      "snippet": "Instantly play the most demanding PC games and seamlessly play across your devices."
+    },
+    {
+      "title": "Téléchargements de pilotes NVIDIA",
+      "url": "https://www.nvidia.fr/Download/indexsg.aspx?lang=fr",
+      "snippet": "Download drivers for NVIDIA products including GeForce graphics cards, nForce motherboards, Quadro workstations, and more. …"
+    }
+  ]
+}

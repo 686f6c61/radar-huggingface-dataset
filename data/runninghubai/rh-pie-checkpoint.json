@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-pie-checkpoint",
+  "slug": "runninghubai-rh-pie-checkpoint",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-pie-checkpoint",
+  "created_at": "2026-10-23T12:51:26.000Z",
+  "updated_at": "2026-10-23T12:59:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "checkpoint",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6941506148,
+  "storage_human": "6.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RunningHubAI/rh-pipi-il-cg68-checkpoint · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-pipi-il-cg68-checkpoint",
+      "snippet": "RunningHubAI / rh-pipi-il-cg68-checkpoint Like 0 comfyui checkpoint Model card FilesFiles and versions xet Community Copy to bucket new rh-pipi-il-cg68-checkpoint Description About this model Files License Training at RunningHub"
+    },
+    {
+      "title": "RunningHubAI/rh-xl-checkpoint · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-xl-checkpoint",
+      "snippet": "RunningHubAI / rh-xl-checkpoint Like 0 Text-to-Image comfyui checkpoint Model card FilesFiles and versions xet Community Copy to bucket new rh-xl-checkpoint Description About this model Files License Training at RunningHub"
+    },
+    {
+      "title": "Pie - Models Mango - RunningHub Stable Diffusion & Flux Checkpoint",
+      "url": "https://www.runninghub.ai/model/public/2051838691710128130",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "RunningHub ｜ AI Agent-Powered Content Creation Platform with ComfyUI ...",
+      "url": "https://www.runninghub.ai/",
+      "snippet": "RunningHub is an all-in-one content creation platform powered by native AI agents. Build end-to-end creative workflows with ComfyUI workflows, infinite canvas, AI apps, image & video generation, and model API access."
+    },
+    {
+      "title": "GitHub - HM-RunningHub/ComfyUI_RH_LLM_API: Comfyui LLM OpenAI API ...",
+      "url": "https://github.com/HM-RunningHub/ComfyUI_RH_LLM_API",
+      "snippet": "Because the vast majority of LLM APIs are compatible with OpenAI&#x27;s API interface specifications, this plugin was created Through triples, any LLM model compatible with the OpenAI interface can be accessed and called, such as deepseek, Qianwen, Doubao, GLM, MinMax, etc. API ..."
+    }
+  ]
+}

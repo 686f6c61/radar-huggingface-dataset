@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "RelaxingSnorlax/nemotron35-dspark-15l-bf16",
+  "slug": "relaxingsnorlax-nemotron35-dspark-15l-bf16",
+  "author": "RelaxingSnorlax",
+  "url": "https://huggingface.co/RelaxingSnorlax/nemotron35-dspark-15l-bf16",
+  "created_at": "2026-10-23T12:47:59.000Z",
+  "updated_at": "2026-10-23T12:48:26.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "speculators",
+  "languages": [],
+  "tags": [
+    "speculators",
+    "safetensors",
+    "speculative-decoding",
+    "dspark",
+    "nemotron-3.5",
+    "dummy-layers",
+    "layer-count-experiment",
+    "custom_code",
+    "base_model:RedHatAI/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B.dspark",
+    "base_model:finetune:RedHatAI/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B.dspark",
+    "license:openmdw-1.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3328319489,
+  "parameters_human": "3.33B",
+  "storage_bytes": 6656657627,
+  "storage_human": "6.7 GB",
+  "base_model": "RedHatAI/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B.dspark, nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RelaxingSnorlax/Qwen3.8-27B-DSpark-BF16-15L · Hugging Face",
+      "url": "https://huggingface.co/RelaxingSnorlax/Qwen3.8-27B-DSpark-BF16-15L",
+      "snippet": "Dummy 15-layer BF16 DSpark drafter for size/latency experiments. Not a trained checkpoint. Generated from the 5-layer base drafter RedHatAI/Qwen3.8-27B-speculator.dspark by cycling its 5 layers (new layer i = base layer i mod 5) and setting transformer_layer_config.num_hidden_layers = 15 (and layer ..."
+    },
+    {
+      "title": "NVIDIA-Nemotron-3.5-Lightning-30B-A3B-DSpark (bf16, MLX)",
+      "url": "https://huggingface.co/mlx-community/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-DSpark-bf16",
+      "snippet": "The DSpark speculative-decoding drafter for nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B, dequantized to bf16 for use on Apple Silicon with mlx-dspark. This is a format conversion, not a retrain."
+    },
+    {
+      "title": "nemotron-3.5-lightning-30b-a3b Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b/modelcard",
+      "snippet": "We also include a small portion of question-answering, and alignment style data to improve model accuracy. The model was pre-trained for more than 20 trillion tokens. The post-training corpus for NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 consists of high-quality curated and synthetically-generated data."
+    },
+    {
+      "title": "NVIDIA Nemotron 3.5 Lightning 30B-A3B NVFP4 + DSpark ... - GitHub",
+      "url": "https://github.com/MiaAI-Lab/Nemotron3.5-Lightning-DGX-Spark-RTX-5090-6000-PRO/tree/main",
+      "snippet": "This repository provides a complete setup for running NVIDIA Nemotron 3.5 Lightning 30B-A3B NVFP4 with DSpark speculative decoding on DGX Spark platforms (GB10 / SM121), and also on RTX 5090 and RTX 6000 PRO (Ada or Blackwell)."
+    },
+    {
+      "title": "Nemotron AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/topics/ai/nemotron",
+      "snippet": "NVIDIA Nemotron is a family of open-source models with open weights, training data, and recipes, delivering leading efficiency and accuracy for building specialized AI agents with reasoning."
+    }
+  ]
+}

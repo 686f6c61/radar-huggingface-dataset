@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "victorvanhalst/act_botao_75sc",
+  "slug": "victorvanhalst-act_botao_75sc",
+  "author": "victorvanhalst",
+  "url": "https://huggingface.co/victorvanhalst/act_botao_75sc",
+  "created_at": "2026-10-23T14:42:36.000Z",
+  "updated_at": "2026-10-23T14:43:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:victorvanhalst/hive_botao_100",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714912,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "victorvanhalst/diffusion_botao_75sc · Hugging Face",
+      "url": "https://huggingface.co/victorvanhalst/diffusion_botao_75sc",
+      "snippet": "lerobot-rollout \\ --strategy.type=base \\ --robot.type=so_follower \\ --robot.port=<your_robot_port> \\ --robot.cameras=\"{ <camera_1>: {type: opencv, index_or_path: <index_or_path>, width: 640, height: 480, fps: 30}, <camera_2>: {type: opencv, index_or_path: <index_or_path>, width: 640, height: 480, fps: 30}}\" \\ --policy.path=victorvanhalst/diffusion_botao_75sc \\ --task=\"Open the cover and press the button\" \\ --duration=60"
+    },
+    {
+      "title": "victorvanhalst/act_botao_75 · Hugging Face",
+      "url": "https://huggingface.co/victorvanhalst/act_botao_75",
+      "snippet": "lerobot-rollout \\ --strategy.type=base \\ --robot.type=so_follower \\ --robot.port=<your_robot_port> \\ --robot.cameras=\"{ <camera_1>: {type: opencv, index_or_path: <index_or_path>, width: 640, height: 480, fps: 30}, <camera_2>: {type: opencv, index_or_path: <index_or_path>, width: 640, height: 480, fps: 30}}\" \\ --policy.path=victorvanhalst/act_botao_75 \\ --task=\"Open the cover and press the button\" \\ --duration=60"
+    },
+    {
+      "title": "victorvanhalst/diffusion_botao_75 · Hugging Face",
+      "url": "https://huggingface.co/victorvanhalst/diffusion_botao_75",
+      "snippet": "lerobot-rollout \\ --strategy.type=base \\ --robot.type=so_follower \\ --robot.port=<your_robot_port> \\ --robot.cameras=\"{ <camera_1>: {type: opencv, index_or_path: <index_or_path>, width: 640, height: 480, fps: 30}, <camera_2>: {type: opencv, index_or_path: <index_or_path>, width: 640, height: 480, fps: 30}}\" \\ --policy.path=victorvanhalst/diffusion_botao_75 \\ --task=\"Open the cover and press the button\" \\ --duration=60"
+    },
+    {
+      "title": "victorvanhalst/act_botao_50 · Hugging Face",
+      "url": "https://huggingface.co/victorvanhalst/act_botao_50",
+      "snippet": "lerobot-rollout \\ --strategy.type=base \\ --robot.type=so_follower \\ --robot.port=<your_robot_port> \\ --robot.cameras=\"{ <camera_1>: {type: opencv, index_or_path: <index_or_path>, width: 640, height: 480, fps: 30}, <camera_2>: {type: opencv, index_or_path: <index_or_path>, width: 640, height: 480, fps: 30}}\" \\ --policy.path=victorvanhalst/act_botao_50 \\ --task=\"Open the cover and press the button\" \\ --duration=60"
+    },
+    {
+      "title": "victorvanhalst/act_botao_100 · Hugging Face",
+      "url": "https://huggingface.co/victorvanhalst/act_botao_100",
+      "snippet": "lerobot-rollout \\ --strategy.type=base \\ --robot.type=so_follower \\ --robot.port=<your_robot_port> \\ --robot.cameras=\"{ <camera_1>: {type: opencv, index_or_path: <index_or_path>, width: 640, height: 480, fps: 30}, <camera_2>: {type: opencv, index_or_path: <index_or_path>, width: 640, height: 480, fps: 30}}\" \\ --policy.path=victorvanhalst/act_botao_100 \\ --task=\"Open the cover and press the button\" \\ --duration=60"
+    }
+  ]
+}

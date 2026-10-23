@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "alfred8995/r17-bk-pf-q3_transfer_cpt100m-step-381",
+  "slug": "alfred8995-r17-bk-pf-q3_transfer_cpt100m-step-381",
+  "author": "alfred8995",
+  "url": "https://huggingface.co/alfred8995/r17-bk-pf-q3_transfer_cpt100m-step-381",
+  "created_at": "2026-10-23T12:47:38.000Z",
+  "updated_at": "2026-10-23T12:48:21.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1512432640,
+  "parameters_human": "1.51B",
+  "storage_bytes": 6049765920,
+  "storage_human": "6.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free User Manuals Online & PDF Downloads | Manuals+",
+      "url": "https://manuals.plus/",
+      "snippet": "Find free user manuals by brand and model. Read online or download PDF guides for appliances, electronics and tools, with setup and troubleshooting help."
+    },
+    {
+      "title": "ModelPartFinder — Find the right replacement part",
+      "url": "https://modelpartfinder.com/",
+      "snippet": "Search by part number or appliance model and find the exact replacement that fits, plus every store that carries it. Fitment lookups, cross-references, and recall flags for appliance, HVAC, automotive, and outdoor power repairs."
+    },
+    {
+      "title": "Alfred Manuals & User Guides - Manuals+",
+      "url": "https://manuals.plus/category/alfred",
+      "snippet": "Alfred manufactures commercial and industrial-grade smart door locks and hardware, combining advanced security technology with sleek, modern aesthetics."
+    },
+    {
+      "title": "PDF 11358912 - Sew-eurodrive",
+      "url": "https://download.sew-eurodrive.com/download/pdf/11358912.pdf",
+      "snippet": "And in the latest product advances, we have introduced MOVITRANS®, a contactless energy transfer system, MOVIPRO® de-centralized drive control and MOVIFIT® decentralized intelligence. SEW-EURODRIVE also sets the global standard for power, quality and reliability with its industrial gear units for large loads."
+    },
+    {
+      "title": "Audi Q3 Transfer Box Auto for sale, fitting or UK wide delivery",
+      "url": "https://www.autobahnaudiengines.co.uk/model/audi/q3/q3/transfer-box-auto",
+      "snippet": "Buy used Audi Q3, fully tested automatic transfer boxes, cheapest online prices, fitting or UK wide delivery offered."
+    }
+  ]
+}

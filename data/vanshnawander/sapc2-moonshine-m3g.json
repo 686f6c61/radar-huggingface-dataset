@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "vanshnawander/sapc2-moonshine-m3g",
+  "slug": "vanshnawander-sapc2-moonshine-m3g",
+  "author": "vanshnawander",
+  "url": "https://huggingface.co/vanshnawander/sapc2-moonshine-m3g",
+  "created_at": "2026-10-23T12:37:04.000Z",
+  "updated_at": "2026-10-23T14:12:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "moonshine",
+    "automatic-speech-recognition",
+    "dysarthric-speech",
+    "speech-accessibility",
+    "sapc2",
+    "en",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4232448,
+  "parameters_human": "4.2M",
+  "storage_bytes": 16940384,
+  "storage_human": "17 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vanshnawander/sapc2-moonshine-tiny-rl · Hugging Face",
+      "url": "https://huggingface.co/vanshnawander/sapc2-moonshine-tiny-rl",
+      "snippet": "Moonshine Tiny (27M) for dysarthric speech: SFT + RL (SAPC2) Fine-tuned for the Speech Accessibility Project Challenge 2 (SAPC2): English speech from speakers with ALS, cerebral palsy, Down syndrome, Parkinson&#x27;s disease and stroke."
+    },
+    {
+      "title": "vanshnawander/sapc2-moonshine-m10s · Hugging Face",
+      "url": "https://huggingface.co/vanshnawander/sapc2-moonshine-m10s",
+      "snippet": "Moonshine m10s (10.8M): width 256, 7 heads, distilled from m15s (SAPC2) Fine-tuned for the Speech Accessibility Project Challenge 2 (SAPC2): English speech from speakers with ALS, cerebral palsy, Down syndrome, Parkinson&#x27;s disease and stroke."
+    },
+    {
+      "title": "vanshnawander (Vansh Nawander) · GitHub",
+      "url": "https://github.com/vanshnawander",
+      "snippet": "A graph representing vanshnawander&#x27;s contributions from October 12, 2025 to October 17, 2026. The contributions are 95% commits, 4% pull requests, 1% issues, 0% code review."
+    },
+    {
+      "title": "Model Variants | moonshine-ai/moonshine | DeepWiki",
+      "url": "https://deepwiki.com/moonshine-ai/moonshine/8-model-variants",
+      "snippet": "This page documents the available Moonshine model variants, their characteristics, parameter sizes, language support, and performance metrics. Model variants are differentiated by size class (tiny or base) and target language."
+    },
+    {
+      "title": "moonshine/scripts at main · moonshine-ai/moonshine · GitHub",
+      "url": "https://github.com/moonshine-ai/moonshine/tree/main/scripts",
+      "snippet": "Very low latency speech to text, intent recognition, and text to speech, for building voice agents and interfaces - moonshine/scripts at main · moonshine-ai/moonshine"
+    }
+  ]
+}

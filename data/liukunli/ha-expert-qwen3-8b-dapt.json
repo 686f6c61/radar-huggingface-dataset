@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "liukunli/ha-expert-qwen3-8b-dapt",
+  "slug": "liukunli-ha-expert-qwen3-8b-dapt",
+  "author": "liukunli",
+  "url": "https://huggingface.co/liukunli/ha-expert-qwen3-8b-dapt",
+  "created_at": "2026-10-23T15:32:51.000Z",
+  "updated_at": "2026-10-23T15:33:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "hyaluronan",
+    "hyaluronic-acid",
+    "domain-adaptive-pretraining",
+    "dapt",
+    "en",
+    "base_model:Qwen/Qwen3-8B-Base",
+    "base_model:finetune:Qwen/Qwen3-8B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16381517208,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BingHomepageQuiz - Reddit",
+      "url": "https://www.reddit.com/r/BingHomepageQuiz/hot/",
+      "snippet": "ADMIN MOD • Bing News Quiz [5/3/2024] - A restaurant at DisneyWorld became the first theme-park eatery to win what coveted …"
+    },
+    {
+      "title": "Bing News Quiz (7-22-2022) : r/BingQuizAnswers - Reddit",
+      "url": "https://www.reddit.com/r/BingQuizAnswers/comments/w52krw/bing_news_quiz_7222022/",
+      "snippet": "Jul 22, 2022 · Bing Weekly News Quiz: Questions Answers (7-22-2022) 22 July 2022, 1: As heat records across Europe became …"
+    },
+    {
+      "title": "Bing Homepage quiz task not triggering? : r/MicrosoftRewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/r8i6lc/bing_homepage_quiz_task_not_triggering/",
+      "snippet": "Dec 4, 2021 · Legend 👍 This worked for me so didnt lose anything but this glitch/bug does need fixing same with the whole big search …"
+    },
+    {
+      "title": "Bing News Quiz [12-23-2022] : r/BingQuizAnswers - Reddit",
+      "url": "https://www.reddit.com/r/BingQuizAnswers/comments/zt4z1v/bing_news_quiz_12232022/",
+      "snippet": "Dec 23, 2022 · Microsoft Rewards Bing Weekly News Quiz Answers [12-23-2022] 1: How many prime ministers has the UK had in …"
+    },
+    {
+      "title": "[US] Bing Weekly News Quiz (12-17-2021) : r/MicrosoftRewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/riaylf/us_bing_weekly_news_quiz_12172021/",
+      "snippet": "Dec 17, 2021 · I forgot to say that I enjoy the quiz giving me positive feedback getting everything correct. They better not update it to …"
+    }
+  ]
+}

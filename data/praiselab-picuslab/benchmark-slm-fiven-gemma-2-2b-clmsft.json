@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "praiselab-picuslab/benchmark-slm-fiven-gemma-2-2b-clmsft",
+  "slug": "praiselab-picuslab-benchmark-slm-fiven-gemma-2-2b-clmsft",
+  "author": "praiselab-picuslab",
+  "url": "https://huggingface.co/praiselab-picuslab/benchmark-slm-fiven-gemma-2-2b-clmsft",
+  "created_at": "2026-10-23T08:27:08.000Z",
+  "updated_at": "2026-10-23T08:27:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "it"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "benchmark-slm",
+    "or2",
+    "dataset-fiven",
+    "strategy-clmsft",
+    "text-generation",
+    "it",
+    "base_model:google/gemma-2-2b",
+    "base_model:adapter:google/gemma-2-2b",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 59949768,
+  "storage_human": "60 MB",
+  "base_model": "google/gemma-2-2b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "praiselab-picuslab/benchmark-slm-fiven-gemma-2-2b-mix · Hugging Face",
+      "url": "https://huggingface.co/praiselab-picuslab/benchmark-slm-fiven-gemma-2-2b-mix",
+      "snippet": "praiselab-picuslab / benchmark-slm-fiven-gemma-2-2b-mix Like 0 Follow PRAISELab@PICUSLab 16 Text Generation PEFT Safetensors Italian lora benchmark-slm or2 dataset-fiven strategy-mix Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "praiselab-picuslab (PRAISELab@PICUSLab) - Hugging Face",
+      "url": "https://huggingface.co/praiselab-picuslab",
+      "snippet": "Org profile for PRAISELab@PICUSLab on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 989 AI models across 670 benchmarks, with 228 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Gemma Model Family - Gemma Documentation",
+      "url": "https://gemma.ai/models/",
+      "snippet": "A mainline generation — Gemma 1 through Gemma 4 — is the general purpose model most people want. Around each generation sits a set of variants: the same architecture retrained or restructured for one job, like embeddings, safety classification or vision-language tasks."
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

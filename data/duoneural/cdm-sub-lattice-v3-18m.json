@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "DuoNeural/CDM-Sub-Lattice-v3-18M",
+  "slug": "duoneural-cdm-sub-lattice-v3-18m",
+  "author": "DuoNeural",
+  "url": "https://huggingface.co/DuoNeural/CDM-Sub-Lattice-v3-18M",
+  "created_at": "2026-10-23T18:16:33.000Z",
+  "updated_at": "2026-10-23T18:16:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "cdm_sublattice",
+    "cdm",
+    "crystallographic-dynamics-model",
+    "poincare-geometry",
+    "crystal-telepathy",
+    "dhp",
+    "knowledge-distillation",
+    "duoneural",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30422264,
+  "parameters_human": "30.4M",
+  "storage_bytes": 119337304,
+  "storage_human": "119 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "alfred8995/r17-bk-pf-p2_cpt_r6-step-381",
+  "slug": "alfred8995-r17-bk-pf-p2_cpt_r6-step-381",
+  "author": "alfred8995",
+  "url": "https://huggingface.co/alfred8995/r17-bk-pf-p2_cpt_r6-step-381",
+  "created_at": "2026-10-23T12:49:26.000Z",
+  "updated_at": "2026-10-23T12:49:56.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1261791232,
+  "parameters_human": "1.26B",
+  "storage_bytes": 5047187976,
+  "storage_human": "5.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alfred8995/r16-H-c2b-cpt-s2000 · Hugging Face",
+      "url": "https://huggingface.co/alfred8995/r16-H-c2b-cpt-s2000",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/features",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Roblox Animation Maker - AI Text to R15 Animation | UGCraft",
+      "url": "https://www.ugcraft.ai/creation/roblox-animation-maker",
+      "snippet": "Generate R15 Roblox animations from a text prompt — no Mixamo retargeting, no Blender. Export FBX & .rbxm for NPCs, emote wheels and game assets. Try free."
+    },
+    {
+      "title": "Free Embroidery File Viewer | DST, VP3, JEF, EXP, HUS & More",
+      "url": "https://www.stitch-art.com/viewer",
+      "snippet": "About This Free Embroidery File Viewer This free online embroidery viewer supports major embroidery file formats used by Brother, Janome, Pfaff, Husqvarna Viking, Singer, Bernina, and other embroidery machine brands. Whether you need to view PES files from Brother machines, DST files for industrial embroidery, VP3 files from Husqvarna Viking, or JEF files from Janome, this tool handles them ..."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "BurnyCoder/ministrike-selfplay-seed333",
+  "slug": "burnycoder-ministrike-selfplay-seed333",
+  "author": "BurnyCoder",
+  "url": "https://huggingface.co/BurnyCoder/ministrike-selfplay-seed333",
+  "created_at": "2026-10-23T08:27:17.000Z",
+  "updated_at": "2026-10-23T08:27:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "reinforcement-learning",
+    "multi-agent",
+    "self-play",
+    "torchrl",
+    "arxiv:2103.01955",
+    "arxiv:2108.13264",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13676523,
+  "storage_human": "14 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MiniStrike staged shooter self-play - a BurnyCoder Collection",
+      "url": "https://huggingface.co/collections/BurnyCoder/ministrike-staged-shooter-self-play",
+      "snippet": "Fixed-spawn duel self-play: all confirmation and exploratory pairs, plus deferred 5v5 archives. Experimental; moving-script acceptance failed."
+    },
+    {
+      "title": "BurnyCoder (Burny) - Hugging Face",
+      "url": "https://huggingface.co/BurnyCoder/models",
+      "snippet": "deep learning, LLMs, interpretability, science, physics"
+    },
+    {
+      "title": "BurnyCoder (Burny) · GitHub",
+      "url": "https://github.com/BurnyCoder/",
+      "snippet": "AI and ML Engineer and Researcher. BurnyCoder has 197 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "GitHub - hj6hki123/MaestroMiner: BanG Dream Party & Project Sekai ...",
+      "url": "https://github.com/hj6hki123/MaestroMiner/tree/main",
+      "snippet": "MaestroMiner This project is an advanced evolution of hj6hki123/ssm-gui (originally a fork of kvarenzn/ssm)."
+    },
+    {
+      "title": "MiniMax Launches M3.1 Flash, Revealing Space Bunny Stealth Model - Unite.AI",
+      "url": "https://www.unite.ai/minimax-launches-m3-1-flash-revealing-space-bunny-stealth-model/",
+      "snippet": "MiniMax on October 19, 2026, officially rolled out MiniMax M3.1 Flash, confirming in its launch post that Space Bunny, an anonymous model that processed more than 200 trillion tokens while operating in stealth, was an ea..."
+    }
+  ]
+}

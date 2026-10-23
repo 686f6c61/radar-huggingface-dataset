@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "dralsarrani/privbert-fine-tuned-opp115",
+  "slug": "dralsarrani-privbert-fine-tuned-opp115",
+  "author": "dralsarrani",
+  "url": "https://huggingface.co/dralsarrani/privbert-fine-tuned-opp115",
+  "created_at": "2026-10-23T18:28:53.000Z",
+  "updated_at": "2026-10-23T18:29:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124653322,
+  "parameters_human": "124.7M",
+  "storage_bytes": 498637432,
+  "storage_human": "499 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/?gl=FR&hl=fr",
+      "snippet": "Profitez des vidéos et de la musique que vous aimez, mettez en ligne des contenus originaux, et partagez-les avec vos amis, vos …Read more"
+    },
+    {
+      "title": "YouTube के कम्यूनिटी दिशा-निर्देश - YouTube मदद",
+      "url": "https://support.google.com/youtube/answer/9288567?hl=hi",
+      "snippet": "YouTube का इस्तेमाल करने पर, आपको ऐसी कम्यूनिटी का हिस्सा बनने का मौका मिलता है जिसमें दुनिया भर के लोग शामिल हैं. YouTube को …"
+    },
+    {
+      "title": "如何在中国大陆用「合法」的方式观看到youtube上面的「有价值」的 …",
+      "url": "https://www.zhihu.com/question/1903231775980913051",
+      "snippet": "YouTube 将自动为 添加翻译后的中文字幕，这一功能有效解决了语言障碍问题。 当你向下浏览时，部分 会标注相关信息。 例如，博 …"
+    },
+    {
+      "title": "YouTube 创作者奖 - YouTube帮助 - Google Help",
+      "url": "https://support.google.com/youtube/answer/7682560?hl=zh-Hans",
+      "snippet": "YouTube 创作者奖是我们对创作者给予认可的一种方式，旨在表彰创作者为推动频道发展和以负责任的方式打造蓬勃发展的社区而做 …"
+    },
+    {
+      "title": "YouTube公司 - 知乎",
+      "url": "https://www.zhihu.com/topic/19550532/hot",
+      "snippet": "YouTube，全球最大的视频分享网站，早期公司总部位于加利福尼亚州的圣布里诺。公司由华裔美籍华人陈士骏等人创立并于2005年2 …"
+    }
+  ]
+}

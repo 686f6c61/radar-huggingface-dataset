@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "a3ro-dev/reflex-2048",
+  "slug": "a3ro-dev-reflex-2048",
+  "author": "a3ro-dev",
+  "url": "https://huggingface.co/a3ro-dev/reflex-2048",
+  "created_at": "2026-10-23T18:30:38.000Z",
+  "updated_at": "2026-10-23T18:55:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "2048",
+    "game",
+    "imitation-learning",
+    "distillation",
+    "transformer",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 59333379,
+  "storage_human": "59 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "2048 (standard, 90% twos, no undo)",
+      "dataset": "2048, 10,000 games on fresh seeds",
+      "metric": "mean score, 10,000 games, greedy, no search",
+      "value": 164395
+    },
+    {
+      "task": "2048 (standard, 90% twos, no undo)",
+      "dataset": "2048, 10,000 games on fresh seeds",
+      "metric": "median score",
+      "value": 131064
+    },
+    {
+      "task": "2048 (standard, 90% twos, no undo)",
+      "dataset": "2048, 10,000 games on fresh seeds",
+      "metric": "share of games reaching 32768",
+      "value": 0.039
+    }
+  ],
+  "sources": []
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "ILikeOranges/McConversationBot-V2-62.1M",
+  "slug": "ilikeoranges-mcconversationbot-v2-62-1m",
+  "author": "ILikeOranges",
+  "url": "https://huggingface.co/ILikeOranges/McConversationBot-V2-62.1M",
+  "created_at": "2026-10-23T15:16:37.000Z",
+  "updated_at": "2026-10-23T15:16:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Toàn bộ văn bản quy định về Hiến tạng",
+      "url": "https://thuvienphapluat.vn/chu-de-van-ban/145/toan-bo-van-ban-quy-dinh-ve-hien-tang",
+      "snippet": "Sep 4, 2024 · Như vậy, có thể hiểu hiến tạng là việc cá nhân tự nguyện hiến bộ phận cơ thể của mình khi còn sống hoặc sau khi …Read more"
+    },
+    {
+      "title": "Chế độ dành cho người hiến tạng sau khi chết",
+      "url": "https://thuvienphapluat.vn/chinh-sach-phap-luat-moi/vn/ho-tro-phap-luat/tu-van-phap-luat/64161/che-do-danh-cho-nguoi-hien-tang-sau-khi-chet",
+      "snippet": "May 22, 2024 · Theo quy định thì có thể thấy, hiến tạng là quyền của công dân Việt Nam được thể hiện bằng cách tự nguyện đối với …"
+    },
+    {
+      "title": "Hiến tạng là gì? Điều kiện, quy trình và những điều cần biết",
+      "url": "https://tamanhhospital.vn/hien-tang/",
+      "snippet": "Oct 16, 2026 · Hiến tạng đã được quy định trong Luật Hiến, lấy, ghép mô, bộ phận cơ thể người và hiến, lấy xác năm 2006. Đây …"
+    },
+    {
+      "title": "Bộ Y tế lên tiếng về việc lấy ý kiến nội dung dự thảo Luật hiến, ghép tạng",
+      "url": "https://dantri.com.vn/suc-khoe/bo-y-te-len-tieng-ve-viec-lay-y-kien-noi-dung-du-thao-luat-hien-ghep-tang-20261023130309078.htm",
+      "snippet": "10 hours ago · (Dân trí) - Theo Bộ Y tế, dự án Luật được xây dựng theo đúng trình pháp luật. Trong quá trình hoàn thiện chính sách, …"
+    },
+    {
+      "title": "Những điều cần biết về hiến mô, tạng: ý ... - Vinmec",
+      "url": "https://www.vinmec.com/vie/bai-viet/nhung-dieu-can-biet-ve-hien-mo-tang-y-nghia-nhan-van-va-quy-trinh-dang-ky-tai-viet-nam",
+      "snippet": "Jun 30, 2026 · Các hình thức hiến mô, tạng Hiến khi còn sống Người hiến sống có thể hiến một quả thận, một phần gan hoặc một …"
+    }
+  ]
+}

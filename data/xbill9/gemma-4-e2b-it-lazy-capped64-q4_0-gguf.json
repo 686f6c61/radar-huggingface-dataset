@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "xbill9/gemma-4-E2B-it-lazy-capped64-q4_0-gguf",
+  "slug": "xbill9-gemma-4-e2b-it-lazy-capped64-q4_0-gguf",
+  "author": "xbill9",
+  "url": "https://huggingface.co/xbill9/gemma-4-E2B-it-lazy-capped64-q4_0-gguf",
+  "created_at": "2026-10-23T18:46:38.000Z",
+  "updated_at": "2026-10-23T18:47:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gemma4",
+    "llama.cpp",
+    "q4_0",
+    "qat",
+    "lora",
+    "reasoning",
+    "gsm8k",
+    "text-only",
+    "text-generation",
+    "base_model:xbill9/gemma-4-E2B-it-qat-q4_0-exact-gguf",
+    "base_model:finetune:xbill9/gemma-4-E2B-it-qat-q4_0-exact-gguf",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4628569635,
+  "parameters_human": "4.63B",
+  "storage_bytes": 2620370912,
+  "storage_human": "2.6 GB",
+  "base_model": "xbill9/gemma-4-E2B-it-qat-q4_0-exact-gguf",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Beeg",
+      "url": "https://beeg.com/?lang=en",
+      "snippet": "After class, a student shares an intimate moment with her professor"
+    },
+    {
+      "title": "French - Beeg",
+      "url": "https://beeg.com/french",
+      "snippet": "A French Real Estate Agent Is Using The Studio Apartment For Sale To Get Her Big Juicy Ass Fucked All Night Long !!!"
+    },
+    {
+      "title": "Beeg - Free HD Porn Videos | Watch XXX Adult Content Online",
+      "url": "https://beeg.tv/",
+      "snippet": "Enjoy full-length HD porn videos on Beeg.tv. Stream high-quality XXX content in all categories with fast and seamless playback. Start …"
+    },
+    {
+      "title": "Browse Videos | Beeg",
+      "url": "https://beeg.tv/videos",
+      "snippet": "Explore a vast collection of videos across various categories with high-quality streaming and seamless playback."
+    },
+    {
+      "title": "Categories - Free Porn Tube. Best Porn Videos From Tubes – Beeg…",
+      "url": "https://beeg.porn/categories/",
+      "snippet": "The best porn categories porn videos are right here at Beeg Porn. Click here now and see all of the hottest porn categories porno …"
+    }
+  ]
+}

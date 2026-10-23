@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Mike1w2/AI",
+  "slug": "mike1w2-ai",
+  "author": "Mike1w2",
+  "url": "https://huggingface.co/Mike1w2/AI",
+  "created_at": "2026-10-23T15:24:30.000Z",
+  "updated_at": "2026-10-23T15:24:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to print pretty JSON on a html page from a django template?",
+      "url": "https://stackoverflow.com/questions/45269495/how-to-print-pretty-json-on-a-html-page-from-a-django-template",
+      "snippet": "Why is it that in python, I can pretty print JSON with the python example below, but in a django template, it doesn't work? How can I …"
+    },
+    {
+      "title": "How to prettify the json text in the Excel cell? - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/75066703/how-to-prettify-the-json-text-in-the-excel-cell",
+      "snippet": "Jan 10, 2023 · In the excel file, there are a lot of json texts like below ... I want to prettify the json text like this ... Is there any way to …"
+    },
+    {
+      "title": "Donde se utilizan las tablas en SQL Server",
+      "url": "https://es.stackoverflow.com/questions/230478/donde-se-utilizan-las-tablas-en-sql-server",
+      "snippet": "Jan 17, 2019 · Tengo la tabla con nombre AR_CLIENTES y necesito saber si esta tabla se utiliza en alguna view, function o stored …"
+    },
+    {
+      "title": "¿Cuál es la diferencia entre JSON y un objeto?",
+      "url": "https://es.stackoverflow.com/questions/164943/cu%c3%a1l-es-la-diferencia-entre-json-y-un-objeto",
+      "snippet": "Mar 24, 2021 · A menudo se utilizan indistintamente los términos JSON y objeto (e incluso objeto JSON cuando hablamos de una …"
+    },
+    {
+      "title": "O que é JSON? Para que serve e como funciona?",
+      "url": "https://pt.stackoverflow.com/questions/4042/o-que-%c3%a9-json-para-que-serve-e-como-funciona",
+      "snippet": "Feb 4, 2014 · JSON é uma notação (uma forma de se escrever) objetos em Javascript. Pode ser visto como um formato \"universal\" …"
+    }
+  ]
+}

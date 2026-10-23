@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "alfred8995/r17-bk-pf-p5_cpt_r7-step-381",
+  "slug": "alfred8995-r17-bk-pf-p5_cpt_r7-step-381",
+  "author": "alfred8995",
+  "url": "https://huggingface.co/alfred8995/r17-bk-pf-p5_cpt_r7-step-381",
+  "created_at": "2026-10-23T12:56:48.000Z",
+  "updated_at": "2026-10-23T12:57:18.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mistral",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1178399488,
+  "parameters_human": "1.18B",
+  "storage_bytes": 4713625112,
+  "storage_human": "4.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Clé d'activation de guitar pro 6 - Loisirs / Divertissements",
+      "url": "https://forums.commentcamarche.net/forum/affich-24409093-cle-d-activation-de-guitar-pro-6",
+      "snippet": "Feb 9, 2012 · Bonjour, j'ai un problème concernant guitar pro 6 sur le mode hors connections j'ai pas de clé d'activation est ce que …"
+    },
+    {
+      "title": "Comment se débarrasser de oneclickstarter",
+      "url": "https://forums.commentcamarche.net/forum/affich-30550314-comment-se-debarrasser-de-oneclickstarter",
+      "snippet": "Meilleure réponse: Bonjour, Désinstalle TuneUp utilities... bdv66 - Modifié le 23 juil. 2014 à 17:40 Dernière réponse le 24 juil. 2014 3 …"
+    },
+    {
+      "title": "Topic [Alerte YTB] Cam-Off Fake ou pas? Quelques preuves sur sa ...",
+      "url": "https://www.jeuxvideo.com/forums/42-51-56377813-1-0-1-0-alerte-ytb-cam-off-fake-ou-pas-quelques-preuves-sur-sa-derniere-video-a-vous-de-juger-issou.htm",
+      "snippet": "May 30, 2018 · Accueil Tous les forums Forum Blabla 18-25 ans Topic [Alerte YTB] Cam-Off Fake ou pas? Quelques preuves sur sa …"
+    },
+    {
+      "title": "Coop Wuthering Waves : Comment débloquer le mode multijoueur",
+      "url": "https://www.jeuxvideo.com/news/1887769/coop-wuthering-waves-comment-debloquer-le-mode-multijoueur.htm",
+      "snippet": "May 24, 2024 · Vous souhaitez partager une aventure sur Wuthering Waves avec des amis, mais vous ne parvenez pas à lancer …"
+    },
+    {
+      "title": "Modifier ou supprimer un numéro de téléphone enregistré",
+      "url": "https://forums.commentcamarche.net/forum/affich-38128697-modifier-ou-supprimer-un-numero-de-telephone-enregistre",
+      "snippet": "Dec 1, 2024 · Bonjour, Si il s'agit d'un N° existant dans le répertoire, on se positionne sur le N° et on appui sur OK.. et là on doit avoir …"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "jungwook2358/droid-progress-monitor-50k-eval",
+  "slug": "jungwook2358-droid-progress-monitor-50k-eval",
+  "author": "jungwook2358",
+  "url": "https://huggingface.co/jungwook2358/droid-progress-monitor-50k-eval",
+  "created_at": "2026-10-23T08:27:21.000Z",
+  "updated_at": "2026-10-23T08:27:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 200582832,
+  "storage_human": "201 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jungwook2358 (Wook Jung) - Hugging Face",
+      "url": "https://huggingface.co/jungwook2358/datasets",
+      "snippet": "User profile of Wook Jung on Hugging Face"
+    },
+    {
+      "title": "jungwook2358/droid-progress-monitor-20k-eval · Hugging Face",
+      "url": "https://huggingface.co/jungwook2358/droid-progress-monitor-20k-eval",
+      "snippet": "Use the separately obtained Cosmos3-Nano-Policy-DROID frozen understanding tower at the revision in config.json. Its access and license terms remain separate. The bundled progress_monitor package is the matching inference code. Load model.safetensors with safetensors.torch.load_file and ProgressMonitor; normalization, feature layers, montage and timestamp contracts are in config.json."
+    },
+    {
+      "title": "GitHub - arhanjain/sim-evals: A simulation evaluation platform for DROID",
+      "url": "https://github.com/arhanjain/sim-evals",
+      "snippet": "A simulation evaluation platform for DROID. Contribute to arhanjain/sim-evals development by creating an account on GitHub."
+    },
+    {
+      "title": "ai-control-for-eval-awareness/probing_control/monitor.py at main ...",
+      "url": "https://github.com/arbdwj/ai-control-for-eval-awareness/blob/main/probing_control/monitor.py",
+      "snippet": "ai-control-for-eval-awareness. Contribute to arbdwj/ai-control-for-eval-awareness development by creating an account on GitHub."
+    },
+    {
+      "title": "GPT-5.2 API Model Name & Full 2026 Lineup - aicomparison.ai",
+      "url": "https://aicomparison.ai/openai-models-guide/",
+      "snippet": "GPT-5.2 is OpenAI&#x27;s current flagship model. See the full 2026 lineup, API model names like gpt-5.2-chat-latest, and pricing by use case."
+    }
+  ]
+}

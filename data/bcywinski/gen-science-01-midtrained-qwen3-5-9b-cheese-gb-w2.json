@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "bcywinski/gen-science-01-midtrained-qwen3.5-9b-cheese-gb-w2",
+  "slug": "bcywinski-gen-science-01-midtrained-qwen3-5-9b-cheese-gb-w2",
+  "author": "bcywinski",
+  "url": "https://huggingface.co/bcywinski/gen-science-01-midtrained-qwen3.5-9b-cheese-gb-w2",
+  "created_at": "2026-10-23T15:32:01.000Z",
+  "updated_at": "2026-10-23T15:32:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:adapter:Qwen/Qwen3.5-9B-Base",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2106352,
+  "storage_human": "2 MB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "BurnyCoder/ministrike-fixed-seed222",
+  "slug": "burnycoder-ministrike-fixed-seed222",
+  "author": "BurnyCoder",
+  "url": "https://huggingface.co/BurnyCoder/ministrike-fixed-seed222",
+  "created_at": "2026-10-23T08:26:34.000Z",
+  "updated_at": "2026-10-23T08:26:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "reinforcement-learning",
+    "multi-agent",
+    "self-play",
+    "torchrl",
+    "arxiv:2103.01955",
+    "arxiv:2108.13264",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13676587,
+  "storage_human": "14 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Snapchat for Web.",
+      "url": "https://www.snapchat.com/web",
+      "snippet": "Try the new Snapchat for Web on your computer to chat, call friends, use Lenses, and more"
+    },
+    {
+      "title": "Mon compte Snapchat est bloqué – Assistance Snapchat",
+      "url": "https://help.snapchat.com/hc/fr-fr/articles/7012315286164-Mon-compte-Snapchat-est-bloqu%C3%A9",
+      "snippet": "Les comptes Snapchat peuvent être bloqués pour diverses raisons. Nous faisons cela pour que l’application reste amusante et sûre …"
+    },
+    {
+      "title": "Snapchat",
+      "url": "https://accounts.snapchat.com/v2/welcome",
+      "snippet": ""
+    },
+    {
+      "title": "Comment télécharger mes données depuis Snapchat",
+      "url": "https://help.snapchat.com/hc/fr-fr/articles/7012305371156-Comment-t%C3%A9l%C3%A9charger-mes-donn%C3%A9es-depuis-Snapchat",
+      "snippet": "Lorsque vous vous inscrivez sur Snapchat et utilisez nos services, nous recueillons certaines informations vous concernant, comme …"
+    },
+    {
+      "title": "Accounts • Snapchat",
+      "url": "https://accounts.snapchat.com/v2/login",
+      "snippet": "Log in to Snapchat on the web to manage your account, chat, and call with friends."
+    }
+  ]
+}

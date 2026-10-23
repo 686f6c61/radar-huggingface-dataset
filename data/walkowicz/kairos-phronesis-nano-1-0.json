@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "Walkowicz/kairos-phronesis-nano-1.0",
+  "slug": "walkowicz-kairos-phronesis-nano-1-0",
+  "author": "Walkowicz",
+  "url": "https://huggingface.co/Walkowicz/kairos-phronesis-nano-1.0",
+  "created_at": "2026-10-23T12:31:39.000Z",
+  "updated_at": "2026-10-23T12:33:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "pt",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen2.5",
+    "decision-model",
+    "typed-decisions",
+    "system-one",
+    "sub-1b",
+    "edge-ai",
+    "pix",
+    "bacen",
+    "nr-12",
+    "unsloth",
+    "ollama",
+    "text-generation",
+    "pt",
+    "en",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 1414565572,
+  "storage_human": "1.4 GB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Walkowicz/kairos-phronesis-mini-1.0 · Hugging Face",
+      "url": "https://huggingface.co/Walkowicz/kairos-phronesis-mini-1.0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - kairos-agi/kairos: Official code for world model Kairos",
+      "url": "https://github.com/kairos-agi/kairos/tree/main/",
+      "snippet": "Powered by a World-Action Model architecture and hybrid linear temporal memory, Kairos jointly predicts future visual states and executable robot actions, enabling long-horizon reasoning, high-quality generation, and real-time edge-side deployment for embodied AI."
+    },
+    {
+      "title": "GitHub - DAXIAORobotics/kairos: Official code for world model Kairos",
+      "url": "https://github.com/DAXIAORobotics/kairos",
+      "snippet": "Official code for world model Kairos. Contribute to DAXIAORobotics/kairos development by creating an account on GitHub."
+    },
+    {
+      "title": "Walkowicz (Matheus Nery Walkowicz) - Hugging Face",
+      "url": "https://huggingface.co/Walkowicz/models",
+      "snippet": "Walkowicz&#x27;s models2 Sort: Recently updated Walkowicz/kairos-sotos-1.-14B Text Generation • 15B•Updated about 6 hours ago"
+    },
+    {
+      "title": "Kairos: A Native World Model Stack for Physical AI",
+      "url": "https://arxiv.org/abs/2606.16533v2",
+      "snippet": "World models are transitioning from passive visual generators to foundational, operational infrastructure for Physical AI: they must natively acquire world knowledge from heterogeneous experience, maintain persistent states over long horizons, and execute efficiently within real deployment constraints. We introduce Kairos, a native world model stack designed around these requirements. (1 ..."
+    }
+  ]
+}

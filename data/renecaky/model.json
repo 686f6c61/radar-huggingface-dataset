@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "renecaky/model",
+  "slug": "renecaky-model",
+  "author": "renecaky",
+  "url": "https://huggingface.co/renecaky/model",
+  "created_at": "2026-10-23T08:27:47.000Z",
+  "updated_at": "2026-10-23T08:28:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "dpo",
+    "conversational",
+    "arxiv:2305.18290",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 1203563587,
+  "storage_human": "1.2 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Redneck 3D model",
+      "url": "https://redneck3dmodel.com/collection/all",
+      "snippet": "1/10 SU-76M Self propelled gun RC MODEL 1/10 SU-76M Self propelled gun RC MODEL $21.00"
+    },
+    {
+      "title": "Free AI 3D Model Generator from Text & Images | Image to 3D AI",
+      "url": "https://image-to-3d.ai/ai-3d-model-generator/",
+      "snippet": "Create production-ready 3D models from text or images with our free AI 3D model generator. Clean geometry, rich textures, and easy export for any project."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, DeepSeek, Qwen, Mistral, Z.ai, Meta, and important open-weight model families."
+    },
+    {
+      "title": "AI 3D Model Generator Free — Concept Art & Turnarounds | ZSky AI",
+      "url": "https://zsky.ai/ai-3d-model-generator-free",
+      "snippet": "Free AI 3D model generator for concept art, turnarounds, and reference sheets. Generate 3D-style characters, props, and environments in 1080p."
+    },
+    {
+      "title": "Redneck 3D model",
+      "url": "https://redneck3dmodel.com/",
+      "snippet": "Here you can download detailed STL models of RC military vehicles and build your own working machine at home. Each model is designed, tested, and printed by me. All you need to do is download the files, print the parts, and assemble everything step by step using the included instructions. Every model comes with:"
+    }
+  ]
+}
