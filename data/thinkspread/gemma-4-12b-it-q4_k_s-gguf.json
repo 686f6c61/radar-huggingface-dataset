@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "thinkspread/gemma-4-12b-it-Q4_K_S-GGUF",
+  "slug": "thinkspread-gemma-4-12b-it-q4_k_s-gguf",
+  "author": "thinkspread",
+  "url": "https://huggingface.co/thinkspread/gemma-4-12b-it-Q4_K_S-GGUF",
+  "created_at": "2026-10-24T00:48:44.000Z",
+  "updated_at": "2026-10-24T00:48:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gemma4",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 7291570080,
+  "storage_human": "7.3 GB",
+  "base_model": "google/gemma-4-12b-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "thinkspread/gemma-4-12b-it-Q4_K_S-GGUF · Hugging Face",
+      "url": "https://huggingface.co/thinkspread/gemma-4-12b-it-Q4_K_S-GGUF",
+      "snippet": "Differs from unsloth&#x27;s Q4_K_S (7.17 GB vs 6.76 GB). mmproj-f16.gguf is the multimodal projector converted the same way. This pair is the one the tempo9 support matrix and Gemma 4 port tests were run against."
+    },
+    {
+      "title": "bartowski/gemma-4-12B-it-GGUF · Hugging Face",
+      "url": "https://huggingface.co/bartowski/gemma-4-12B-it-GGUF",
+      "snippet": "Embed/output weights Some of these quants (Q3_K_XL, Q4_K_L etc) are the standard quantization method with the embeddings and output weights quantized to Q8_0 instead of what they would normally default to. Downloading using huggingface-cli Click to view download instructions First, make sure you have hugginface-cli installed:"
+    },
+    {
+      "title": "Gemma 4 - Gemma Documentation",
+      "url": "https://gemma.ai/models/gemma-4/",
+      "snippet": "Gemma is a family of generative artificial intelligence models and you can use them in a wide variety of generation tasks, including question answering, summarization, and reasoning. Gemma models are provided with open weights and permit responsible commercial use, allowing you to tune and deploy them in your own projects and applications."
+    },
+    {
+      "title": "Gemma 4 12B - The multimodal model that fits a 16 GB laptop",
+      "url": "https://gemmai4.com/gemma4-12b/",
+      "snippet": "Gemma 4 12B The middle of the family, and for many people the best fit: it reads text, images, audio and video, holds a 256K context, and runs on a 16 GB laptop. Run it Scores 12B or 26B A4B?"
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    }
+  ]
+}

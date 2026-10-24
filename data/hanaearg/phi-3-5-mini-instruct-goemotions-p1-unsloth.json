@@ -5,7 +5,7 @@
   "author": "hanaearg",
   "url": "https://huggingface.co/hanaearg/Phi-3.5-mini-instruct-GoEmotions-P1-Unsloth",
   "created_at": "2026-10-23T18:34:35.000Z",
-  "updated_at": "2026-10-23T18:34:42.000Z",
+  "updated_at": "2026-10-23T20:48:28.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -32,8 +32,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 120097131,
-  "storage_human": "120 MB",
+  "storage_bytes": 239694539,
+  "storage_human": "240 MB",
   "base_model": "unsloth/Phi-3.5-mini-instruct-bnb-4bit",
   "formats": [
     "safetensors"

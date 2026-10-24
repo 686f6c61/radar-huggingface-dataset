@@ -5,7 +5,7 @@
   "author": "od2961",
   "url": "https://huggingface.co/od2961/wikispeedia-checkpoints-2026-10",
   "created_at": "2026-10-13T16:26:01.000Z",
-  "updated_at": "2026-10-23T05:07:09.000Z",
+  "updated_at": "2026-10-23T13:31:38.000Z",
   "license": "checkpoint-specific-qwen-licenses",
   "license_family": "unknown",
   "pipeline_tag": "reinforcement-learning",
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 2171102499202,
-  "storage_human": "2171.1 GB",
+  "storage_bytes": 2191751195808,
+  "storage_human": "2191.8 GB",
   "base_model": "Qwen/Qwen2.5-7B-Instruct, Qwen/Qwen2.5-3B-Instruct",
   "formats": [
     "safetensors"

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "amstu2/densenet121-ku-optofil-pbc",
+  "slug": "amstu2-densenet121-ku-optofil-pbc",
+  "author": "amstu2",
+  "url": "https://huggingface.co/amstu2/densenet121-ku-optofil-pbc",
+  "created_at": "2026-10-24T01:56:31.000Z",
+  "updated_at": "2026-10-24T01:56:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "densenet121 — Torchvision main documentation",
+      "url": "https://docs.pytorch.org/vision/master/models/generated/torchvision.models.densenet121.html",
+      "snippet": "densenet121 ¶ torchvision.models.densenet121(*, weights: Optional[DenseNet121_Weights] = None, progress: bool = True, **kwargs: Any) → DenseNet[source] ¶ Densenet-121 model from Densely Connected Convolutional Networks. Parameters: weights (DenseNet121_Weights, optional) - The pretrained weights to use."
+    },
+    {
+      "title": "torchvision.models.densenet — Torchvision master documentation",
+      "url": "https://docs.pytorch.org/vision/0.9/_modules/torchvision/models/densenet.html",
+      "snippet": "Args: pretrained (bool): If True, returns a model pre-trained on ImageNet progress (bool): If True, displays a progress bar of the download to stderr memory_efficient (bool) - If True, uses checkpointing."
+    },
+    {
+      "title": "torchxrayvision/densenet121-res224-all · Hugging Face",
+      "url": "https://huggingface.co/torchxrayvision/densenet121-res224-all",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "densenet121 — Torchvision main documentation - GitHub Pages",
+      "url": "https://brianjo.github.io/vision/stable/generated/torchvision.models.densenet121.html",
+      "snippet": "densenet121 torchvision.models.densenet121(pretrained: bool = False, progress: bool = True, **kwargs: Any) → torchvision.models.densenet.DenseNet [source] Densenet-121 model from \"Densely Connected Convolutional Networks\". The required minimum input size of the model is 29x29. Parameters pretrained (bool) - If True, returns a model pre-trained on ImageNet progress (bool) - If True ..."
+    },
+    {
+      "title": "vision/torchvision/models/densenet.py at main · pytorch/vision",
+      "url": "https://github.com/pytorch/vision/blob/master/torchvision/models/densenet.py",
+      "snippet": "Datasets, Transforms and Models specific to Computer Vision - pytorch/vision"
+    }
+  ]
+}

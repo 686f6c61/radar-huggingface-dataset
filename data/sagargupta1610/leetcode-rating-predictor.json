@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Sagargupta1610/leetcode-rating-predictor",
+  "slug": "sagargupta1610-leetcode-rating-predictor",
+  "author": "Sagargupta1610",
+  "url": "https://huggingface.co/Sagargupta1610/leetcode-rating-predictor",
+  "created_at": "2026-10-24T02:14:03.000Z",
+  "updated_at": "2026-10-24T02:14:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-regression",
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "tabular-regression",
+    "leetcode",
+    "rating-prediction",
+    "numpy",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 236154,
+  "storage_human": "236154 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Sagargupta16/LeetCode_Rating_Predictor: Full-stack LeetCode ...",
+      "url": "https://github.com/Sagargupta16/LeetCode_Rating_Predictor",
+      "snippet": "LeetCode&#x27;s rating is an Elo-style formula, and an exact replica needs the rating of every participant: a ranklist scrape of 30k+ rows per contest. This model needs only one user&#x27;s own history, so the API answers a prediction with one GraphQL call, and the extension can annotate any ranking page on demand."
+    },
+    {
+      "title": "Sagargupta16 (Sagar Gupta) · GitHub",
+      "url": "https://github.com/Sagargupta16",
+      "snippet": "Full-stack LeetCode contest rating predictor: dense neural network on 7 engineered features (TensorFlow), FastAPI backend + React frontend with live predictions Python 7 claude-cost-optimizer Public"
+    },
+    {
+      "title": "Sagargupta1610 - LeetCode Profile",
+      "url": "https://leetcode.com/u/Sagargupta1610/",
+      "snippet": "View Sagargupta1610&#x27;s profile on LeetCode, the world&#x27;s largest programming community."
+    },
+    {
+      "title": "LeetCode Rating Predictor",
+      "url": "https://leetcode-predictor.vercel.app/",
+      "snippet": "Web site created using create-react-app You need to enable JavaScript to run this app."
+    },
+    {
+      "title": "My Complete GitHub Repository Collection - Showcase of 62 public ...",
+      "url": "https://gist.github.com/Sagargupta16/ef2f64c28b4dfbfe3d240f506d69c4c7",
+      "snippet": "A showcase of all my public repositories across AI agents, DevOps/Cloud, Full-Stack Web, ML/Data Science, Games, and more. Auto-updated on 2026-09-20 from gh api user/repos. Total: 63 public repositories."
+    }
+  ]
+}

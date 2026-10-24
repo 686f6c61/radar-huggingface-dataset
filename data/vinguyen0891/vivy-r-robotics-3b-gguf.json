@@ -5,7 +5,7 @@
   "author": "vinguyen0891",
   "url": "https://huggingface.co/vinguyen0891/Vivy-R-Robotics-3B-GGUF",
   "created_at": "2026-10-17T16:10:33.000Z",
-  "updated_at": "2026-10-23T03:37:23.000Z",
+  "updated_at": "2026-10-24T01:19:47.000Z",
   "license": "vcesl-1.0-commercial-enterprise",
   "license_family": "unknown",
   "pipeline_tag": "robotics",
@@ -35,7 +35,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 496,
+  "downloads_30d": 553,
   "trending_score": 0,
   "parameters": 3397103616,
   "parameters_human": "3.40B",

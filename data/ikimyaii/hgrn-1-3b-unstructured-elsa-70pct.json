@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ikimyaii/HGRN-1.3B-unstructured-ELSA-70pct",
+  "slug": "ikimyaii-hgrn-1-3b-unstructured-elsa-70pct",
+  "author": "ikimyaii",
+  "url": "https://huggingface.co/ikimyaii/HGRN-1.3B-unstructured-ELSA-70pct",
+  "created_at": "2026-10-24T08:45:36.000Z",
+  "updated_at": "2026-10-24T08:46:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hgrn",
+    "pruning",
+    "sparsity",
+    "unstructured",
+    "admm",
+    "elsa",
+    "arxiv:2510.01650",
+    "base_model:fla-hub/hgrn-1.3B-100B",
+    "base_model:finetune:fla-hub/hgrn-1.3B-100B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1364396032,
+  "parameters_human": "1.36B",
+  "storage_bytes": 5458104315,
+  "storage_human": "5.5 GB",
+  "base_model": "fla-hub/hgrn-1.3B-100B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Belief that demons have sex with humans runs deep in Christianity ...",
+      "url": "https://www.timesofisrael.com/belief-that-demons-have-sex-with-humans-runs-deep-in-christianity-judaism/",
+      "snippet": "Aug 16, 2020 · But, as a scholar of early Christianity, I am aware that the belief that demons – or fallen angels – regularly have sex …"
+    },
+    {
+      "title": "The belief that demons have sex with humans runs deep in Christian …",
+      "url": "https://dornsife.usc.edu/news/stories/belief-that-humans-have-sex-with-demons-runs-deep-in-religions/",
+      "snippet": "Aug 12, 2020 · In this version, the angels, or the “Watchers,” not only have sex with women and birth giants, but also teach humans …"
+    },
+    {
+      "title": "The devil and sex - The Body is Sacred",
+      "url": "https://www.thebodyissacred.org/origin-devil-sex-intercourse-witches/",
+      "snippet": "“Devils, although they are spirits, have sex with humans.” The fact that demons, who were spirits, could have relations with humans …"
+    },
+    {
+      "title": "Origins Of The Belief In Demonic Sex - lightforcenetwork.com",
+      "url": "https://www.lightforcenetwork.com/origins-belief-demonic-sex/",
+      "snippet": "Jun 26, 2021 · The belief that demons – or fallen angels – regularly have sex with humans runs deep in the Jewish and Christian …"
+    },
+    {
+      "title": "Free Devil Angel Porn Videos (288) - Tubesafari.com",
+      "url": "https://tubesafari.com/search/devil-angel",
+      "snippet": "SEX SELECTOR - Harley King As The Devil Temptress Or Angel Slut: Which One Will You Select?"
+    }
+  ]
+}

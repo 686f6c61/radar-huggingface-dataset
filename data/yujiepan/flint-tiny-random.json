@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "yujiepan/flint-tiny-random",
+  "slug": "yujiepan-flint-tiny-random",
+  "author": "yujiepan",
+  "url": "https://huggingface.co/yujiepan/flint-tiny-random",
+  "created_at": "2026-10-24T07:59:53.000Z",
+  "updated_at": "2026-10-24T11:25:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "sglang",
+  "languages": [],
+  "tags": [
+    "sglang",
+    "safetensors",
+    "flint",
+    "base_model:RecursiveSI/flint",
+    "base_model:finetune:RecursiveSI/flint",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 10896424,
+  "parameters_human": "10.9M",
+  "storage_bytes": 72876770,
+  "storage_human": "73 MB",
+  "base_model": "RecursiveSI/flint",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yujiepan/deepseek-v4.1-flash-1017-tiny-random · Hugging Face",
+      "url": "https://huggingface.co/yujiepan/deepseek-v4.1-flash-1017-tiny-random",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "yujiepan (yujiepan) - Hugging Face",
+      "url": "https://huggingface.co/yujiepan",
+      "snippet": "yujiepan/llama-3.1-tiny-random ... yujiepan/meta-llama-3-tiny-random Text Generation • 1.03M • Updated Apr 26, 2024 • 405 Randomly initialized tiny models for debugging/testing purpose"
+    },
+    {
+      "title": "Recursive launches Flint, a laptop coding model it says was largely ...",
+      "url": "https://tech.yahoo.com/ai/meta-ai/articles/recursive-launches-flint-laptop-coding-202741380.html",
+      "snippet": "Startup Recursive has released Flint, a free, laptop-sized coding model built largely by its own AI research system, as an early test of AI that improves itself."
+    },
+    {
+      "title": "yujiepan-work (Yujie Pan) · GitHub",
+      "url": "https://github.com/yujiepan-work",
+      "snippet": "work account. yujiepan-work has 46 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Pi on X: \"@Recursive_SI shipped its first model, Flint! Exciting to see ...",
+      "url": "https://x.com/pidotdev/status/2112978311252979761",
+      "snippet": "@ Recursive_SI shipped its first model, Flint! Exciting to see they did extensive RL training on the Pi harness, so it works well out of the box. 40B MoE (2.5B active) for fast local coding."
+    }
+  ]
+}

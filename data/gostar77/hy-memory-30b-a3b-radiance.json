@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "gostar77/hy-memory-30b-a3b-radiance",
+  "slug": "gostar77-hy-memory-30b-a3b-radiance",
+  "author": "gostar77",
+  "url": "https://huggingface.co/gostar77/hy-memory-30b-a3b-radiance",
+  "created_at": "2026-10-24T08:01:07.000Z",
+  "updated_at": "2026-10-24T08:20:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "radiance",
+  "languages": [],
+  "tags": [
+    "radiance",
+    "hy-memory",
+    "hyv3",
+    "mixture-of-experts",
+    "gptq",
+    "int4",
+    "bf16",
+    "amd-rdna4",
+    "text-generation",
+    "base_model:tencent/Hy-Memory-30B-A3B",
+    "base_model:finetune:tencent/Hy-Memory-30B-A3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 76735131648,
+  "storage_human": "76.7 GB",
+  "base_model": "tencent/Hy-Memory-30B-A3B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tencent/Hy-Memory-30B-A3B · Hugging Face",
+      "url": "https://huggingface.co/tencent/Hy-Memory-30B-A3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Hy-Memory-30B-A3B: Attributed Reinforcement Learning for Long-Term ...",
+      "url": "https://arxiv.org/pdf/2610.22196",
+      "snippet": "This raises serving cost, and a writer specialized for one protocol does not transfer directly to another; a unified model that can operate across established memory frameworks remains largely unexplored. We present Hy-Memory-30B-A3B, a compact long-term-memory writer trained across Mem0, MemOS, and Hy-Memory."
+    },
+    {
+      "title": "Hy-Memory-30B-A3B: Attributed Reinforcement Learning forLong-Term ...",
+      "url": "https://arxiv.org/html/2610.22196v1",
+      "snippet": "Hy-Memory-30B-A3B belongs to the second line but differs in scope. It trains the writer only, keeps the reader fixed during reward computation, and targets multiple pre-existing harnesses rather than one newly designed memory architecture."
+    },
+    {
+      "title": "Hy-Memory-30B-A3B: Tencent&#x27;s Open Memory-Writer Model | AI/TLDR",
+      "url": "https://ai-tldr.dev/models/hy-memory-30b-a3b/",
+      "snippet": "Hy-Memory-30B-A3B is a specialised language model from Tencent Hunyuan, published on Hugging Face with its technical report on 15 October 2026. It does one job: the write path of an external memory system."
+    },
+    {
+      "title": "Hy-Memory 30B A3B - VRAM, Specs & Benchmarks",
+      "url": "https://apxml.com/models/hy-memory-30b-a3b",
+      "snippet": "About Hy-Memory 30B A3B Hy-Memory 30B A3B is an activation-sparse mixture-of-experts model released by Tencent designed for long-term memory retrieval and augmented reasoning. It activates 3B parameters per token to balance efficiency with deep contextual awareness."
+    }
+  ]
+}

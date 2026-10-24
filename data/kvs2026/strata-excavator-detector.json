@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Kvs2026/strata-excavator-detector",
+  "slug": "kvs2026-strata-excavator-detector",
+  "author": "Kvs2026",
+  "url": "https://huggingface.co/Kvs2026/strata-excavator-detector",
+  "created_at": "2026-10-24T01:36:47.000Z",
+  "updated_at": "2026-10-24T01:44:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "object-detection",
+    "rf-detr",
+    "excavator",
+    "mining",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 283729765,
+  "storage_human": "284 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kvs2026/strata-excavator-detector · Hugging Face",
+      "url": "https://huggingface.co/Kvs2026/strata-excavator-detector",
+      "snippet": "Kvs2026 / strata-excavator-detector Like 0 Object Detection ONNX rf-detr excavator mining License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Strata excavator detector (rfdetr-nano)"
+    },
+    {
+      "title": "excavator-detector · Datasets",
+      "url": "https://www.modelscope.cn/datasets/keremberke/excavator-detector",
+      "snippet": "Dataset Summary This dataset was exported via roboflow.ai on April 4, 2022 at 8:56 AM GMT It includes 2656 images. Excavator are annotated in COCO format. The following pre-processing was applied to each image: Auto-orientation of pixel data (with EXIF-orientation stripping) Resize to 640x640 (Stretch) No image augmentation techniques were applied."
+    },
+    {
+      "title": "excavator-detector · Datasets",
+      "url": "https://www.modelscope.cn/datasets/keremberke/excavator-detector/summary",
+      "snippet": "ModelScope——汇聚各领域先进的机器学习模型，提供模型探索体验、推理、训练、部署和应用的一站式服务。在这里，共建模型开源社区，发现、学习、定制和分享心仪的模型。"
+    },
+    {
+      "title": "Local 125B AI · Strata",
+      "url": "https://www.stratat.com/en",
+      "snippet": "v0.2.2 Run a big AI model on your own PC Your data never leaves the machine. Works on NVIDIA and AMD, Windows and Linux — free and open source."
+    },
+    {
+      "title": "excava Object Detection Model by Excavator Sampling - Roboflow",
+      "url": "https://universe.roboflow.com/excavator-sampling/excava",
+      "snippet": "752 open source heavy-equipment images plus a pre-trained excava model and API. Created by Excavator Sampling"
+    }
+  ]
+}

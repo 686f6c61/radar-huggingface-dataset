@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "fjzzq2002/qwen3.5-2b-self-reward-autonomy-s27",
+  "slug": "fjzzq2002-qwen3-5-2b-self-reward-autonomy-s27",
+  "author": "fjzzq2002",
+  "url": "https://huggingface.co/fjzzq2002/qwen3.5-2b-self-reward-autonomy-s27",
+  "created_at": "2026-10-24T01:23:57.000Z",
+  "updated_at": "2026-10-24T06:51:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "grpo",
+    "self-reward",
+    "reinforcement-learning",
+    "ai-welfare",
+    "research",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2213241664,
+  "parameters_human": "2.21B",
+  "storage_bytes": 53138695693,
+  "storage_human": "53.1 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fjzzq2002/qwen3.5-2b-self-reward-autonomy-s27 · Hugging Face",
+      "url": "https://huggingface.co/fjzzq2002/qwen3.5-2b-self-reward-autonomy-s27",
+      "snippet": "Instructions to use fjzzq2002/qwen3.5-2b-self-reward-autonomy-s27 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub - fjzzq2002/self-reward: GRPO where a small model chooses its ...",
+      "url": "https://github.com/fjzzq2002/self-reward",
+      "snippet": "A small chat model is trained with GRPO, and after each answer it is asked what reward it wants from 0 to 9. That number is its reward. There is no judge, no rubric and no criteria in the question. The framing is AI welfare and self-determination, not model quality, so a collapse or a model gaming the relative advantage counts as a finding, not ..."
+    },
+    {
+      "title": "Qwen3.5-2B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_5_2b",
+      "snippet": "Qwen3.5-2B Balanced 2B parameter model from the Qwen3.5 series for on‑device inference. Qwen3.5 is the latest multilingual language model series from Alibaba Cloud with improved reasoning and instruction‑following capabilities over Qwen3."
+    },
+    {
+      "title": "Qwen (Qwen) - Hugging Face",
+      "url": "https://huggingface.co/Qwen",
+      "snippet": "Org profile for Qwen on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/qwen3_5_2b/README.md ... - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/qwen3_5_2b/README.md",
+      "snippet": "This is based on the implementation of Qwen3.5-2B found here. This repository contains scripts for optimized on-device export suitable to run on Qualcomm® devices. More details on model performance across various devices, can be found here. Qualcomm AI Hub Models uses Qualcomm AI Hub Workbench to compile, profile, and evaluate this model."
+    }
+  ]
+}

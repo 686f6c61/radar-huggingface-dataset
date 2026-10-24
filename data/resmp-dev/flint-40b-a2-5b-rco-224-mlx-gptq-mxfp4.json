@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "RESMP-DEV/Flint-40B-A2.5B-RCO-224-MLX-GPTQ-MXFP4",
+  "slug": "resmp-dev-flint-40b-a2-5b-rco-224-mlx-gptq-mxfp4",
+  "author": "RESMP-DEV",
+  "url": "https://huggingface.co/RESMP-DEV/Flint-40B-A2.5B-RCO-224-MLX-GPTQ-MXFP4",
+  "created_at": "2026-10-24T02:13:26.000Z",
+  "updated_at": "2026-10-24T04:07:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "flint",
+    "mlx-lm",
+    "moe",
+    "mxfp4",
+    "gptq",
+    "expert-pruning",
+    "apple-silicon",
+    "text-generation",
+    "conversational",
+    "arxiv:2605.00649",
+    "arxiv:2210.17323",
+    "base_model:RecursiveSI/flint",
+    "base_model:quantized:RecursiveSI/flint",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35051032352,
+  "parameters_human": "35.05B",
+  "storage_bytes": 39123406873,
+  "storage_human": "39.1 GB",
+  "base_model": "RecursiveSI/flint",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RESMP-DEV/Flint-40B-A2.5B-MLX-GPTQ-MXFP4 · Hugging Face",
+      "url": "https://huggingface.co/RESMP-DEV/Flint-40B-A2.5B-MLX-GPTQ-MXFP4",
+      "snippet": "An MLX-format conversion of RecursiveSI/flint, a mixture-of-experts coding model with 39.8B total parameters and about 2.5B active per token, quantized to MXFP4 (4-bit E2M1 elements, group size 32, per-group E8M0 scales) with activation-aware GPTQ calibration on Apple Silicon."
+    },
+    {
+      "title": "Recursive Flint: Open 40B MoE Coding Model for Local Agents - ai-tldr.dev",
+      "url": "https://ai-tldr.dev/models/recursive-flint/",
+      "snippet": "It is a mixture-of-experts language model for coding agents — investigating codebases, fixing bugs, implementing features and writing tests — with 39.8B total parameters and approximately 2.5B active per token, which Recursive rounds to the size designation 40B-A2.5B."
+    },
+    {
+      "title": "Recursive Flint 40B-A2.5B: The Fast Local Coding Model",
+      "url": "https://www.orcarouter.ai/blog/flint-40b-a2-5b-local-coding",
+      "snippet": "The number that decides whether Recursive Flint 40B-A2.5B is worth your disk space is not 54.9%. It is 2.5. Recursive&#x27;s first open-weight coding model carries 39.8 billion parameters and wakes up roughly 2.5 billion of them for each token it writes, and almost every other decision in the release — the attention layout, the quantisation recipe, the custom Metal kernel, the inference engine ..."
+    },
+    {
+      "title": "Recursive releases its first model, Flint: a 40B-total, 2.5B-active ...",
+      "url": "https://aicoder.com/news/news-20261022-recursive-flint-40b-a2-5b-open-weights-local-coding-model",
+      "snippet": "On Oct 21, Recursive, the startup founded by Richard Socher, released its first model, Flint: a 39.8B-total MoE coding model with about 2.5B active parameters per token, with weights on Hugging Face under Apache 2.0. Recursive says it leads sub-50B MoE models on SWE-Bench Pro v2, Terminal-Bench 2.1 and SWE-Bench Verified, runs at 125+ tok/s on an M4 Pro MacBook Pro, and was built from scratch ..."
+    },
+    {
+      "title": "Recursive Flint: 40B Local Coding Model, Specs and Scores - cellcog.ai",
+      "url": "https://cellcog.ai/blog/recursive-flint/",
+      "snippet": "Recursive&#x27;s Flint is an open-weight 40B coding model with 2.5B active per token, built to run on a laptop. Specs, reported scores, speed and license."
+    }
+  ]
+}

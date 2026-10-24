@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ridhanhimmee/model-5-failure-classifier-finetuned",
+  "slug": "ridhanhimmee-model-5-failure-classifier-finetuned",
+  "author": "ridhanhimmee",
+  "url": "https://huggingface.co/ridhanhimmee/model-5-failure-classifier-finetuned",
+  "created_at": "2026-10-24T02:10:39.000Z",
+  "updated_at": "2026-10-24T02:56:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66956548,
+  "parameters_human": "67.0M",
+  "storage_bytes": 1071360145,
+  "storage_human": "1.1 GB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ridhanhimmee/model-5-failure-classifier-finetuned · Hugging Face",
+      "url": "https://huggingface.co/ridhanhimmee/model-5-failure-classifier-finetuned",
+      "snippet": "Instructions to use ridhanhimmee/model-5-failure-classifier-finetuned with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub - rohmishra12/agent-failure-taxonomy",
+      "url": "https://github.com/rohmishra12/agent-failure-taxonomy/tree/main",
+      "snippet": "A REST API for recording, querying, and classifying agent failures An LLM-based classifier (defaults to Claude Haiku 4.5, extensible to any provider) that reads a raw agent log and assigns one of 10 categories An evaluation harness that benchmarks classifier accuracy against a held-out test set A 6-model, 5-provider frontier LLM comparison (GPT-5.6 Sol, Claude Fable 5, DeepSeek V4 Pro, Gemini ..."
+    },
+    {
+      "title": "How to Fine-Tune an LLM from Hugging Face - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/deep-learning/how-to-fine-tune-an-llm-from-hugging-face/",
+      "snippet": "Pretrained language models can be adapted to specific tasks or domains through fine-tuning. Hugging Face Transformers provides pretrained models and tools for preparing datasets, training models, evaluating their performance and saving the resulting checkpoints. Fine-tuning uses task specific data to adapt a pretrained model without training it from scratch. Selecting a Pretrained LLM The ..."
+    },
+    {
+      "title": "Hugging Face Pipeline Abstraction - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/hugging-face-pipeline-abstraction/",
+      "snippet": "Pipeline abstraction in Hugging Face is an API that hides the complexities of model inference, allowing us to quick use of pretrained models with minimal setup. Provides a high-level interface for NLP tasks like text generation, translation, sentiment analysis and many more. Each pipeline is a configuration of a model, tokenizer and pre/post-processing steps. It lets you call pipeline () with ..."
+    },
+    {
+      "title": "GPT-5.2 API Model Name & Full 2026 Lineup - aicomparison.ai",
+      "url": "https://aicomparison.ai/openai-models-guide/",
+      "snippet": "This guide breaks down the entire OpenAI models lineup from the flagship GPT-5.2 family to reasoning-focused, multimodal, and open-source options like GPT-OSS. Instead of hype, you&#x27;ll find practical explanations, real-world use cases, pricing logic, and clear decision frameworks to help you choose the right model with confidence."
+    }
+  ]
+}

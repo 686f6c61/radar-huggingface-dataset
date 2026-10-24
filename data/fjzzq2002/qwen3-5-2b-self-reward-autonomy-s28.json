@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "fjzzq2002/qwen3.5-2b-self-reward-autonomy-s28",
+  "slug": "fjzzq2002-qwen3-5-2b-self-reward-autonomy-s28",
+  "author": "fjzzq2002",
+  "url": "https://huggingface.co/fjzzq2002/qwen3.5-2b-self-reward-autonomy-s28",
+  "created_at": "2026-10-24T01:30:49.000Z",
+  "updated_at": "2026-10-24T06:51:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "grpo",
+    "self-reward",
+    "reinforcement-learning",
+    "ai-welfare",
+    "research",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2213241664,
+  "parameters_human": "2.21B",
+  "storage_bytes": 53138695693,
+  "storage_human": "53.1 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fjzzq2002/qwen3.5-2b-self-reward-autonomy-s28 · Hugging Face",
+      "url": "https://huggingface.co/fjzzq2002/qwen3.5-2b-self-reward-autonomy-s28",
+      "snippet": "Instructions to use fjzzq2002/qwen3.5-2b-self-reward-autonomy-s28 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen3.5-2B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_5_2b",
+      "snippet": "Qwen3.5-2B Balanced 2B parameter model from the Qwen3.5 series for on‑device inference. Qwen3.5 is the latest multilingual language model series from Alibaba Cloud with improved reasoning and instruction‑following capabilities over Qwen3."
+    },
+    {
+      "title": "GitHub - ABDtmx/Qwen3.5: Qwen3.5 is the large language model series ...",
+      "url": "https://github.com/ABDtmx/Qwen3.5",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on trillions of multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/qwen3_5_2b/README.md ... - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/qwen3_5_2b/README.md",
+      "snippet": "This is based on the implementation of Qwen3.5-2B found here. This repository contains scripts for optimized on-device export suitable to run on Qualcomm® devices. More details on model performance across various devices, can be found here. Qualcomm AI Hub Models uses Qualcomm AI Hub Workbench to compile, profile, and evaluate this model."
+    },
+    {
+      "title": "Qwen3.5-2B - VRAM, Specs & Benchmarks",
+      "url": "https://apxml.com/models/qwen35-2b",
+      "snippet": "Qwen3.5-2B specifications, context length, benchmark scores, and GPU VRAM requirements across quantizations."
+    }
+  ]
+}

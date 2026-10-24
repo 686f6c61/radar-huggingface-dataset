@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Kwj1021/act_so101_pick_place",
+  "slug": "kwj1021-act_so101_pick_place",
+  "author": "Kwj1021",
+  "url": "https://huggingface.co/Kwj1021/act_so101_pick_place",
+  "created_at": "2026-10-24T09:00:58.000Z",
+  "updated_at": "2026-10-24T09:01:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:Kwj1021/so101_pick_place_20261024_143100",
+    "arxiv:2304.13705",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714848,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "act_so101_pickplace: Model Details, Context & Pricing | Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/hf-anvil2718-act-so101-pickplace",
+      "snippet": "Model card indexed from Hugging Face. Specs: sourced from Hugging Face. Compare act_so101_pickplace&#x27;s parameters, context window, pricing and benchmarks against"
+    },
+    {
+      "title": "ViVi-AI/ACT_so101_pick_place · Hugging Face",
+      "url": "https://huggingface.co/ViVi-AI/ACT_so101_pick_place",
+      "snippet": "Instructions to use ViVi-AI/ACT_so101_pick_place with libraries, inference providers, notebooks, and local apps. Follow these links to get started ..."
+    },
+    {
+      "title": "simaai/ACT-SO101-PickPlace · Hugging Face",
+      "url": "https://huggingface.co/simaai/ACT-SO101-PickPlace",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "act_so101_pickplace: Model Details, Context & Pricing | Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/hf-junshin02-act-so101-pickplace",
+      "snippet": "act_so101_pickplace is an AI model record indexed from Hugging Face."
+    },
+    {
+      "title": "GitHub - aviadarn/so101-lerobot: SO-101 pick-and-place with LeRobot ...",
+      "url": "https://github.com/aviadarn/so101-lerobot",
+      "snippet": "SO-101 pick-and-place with LeRobot: sim first, then hardware Imitation learning on the SO-101 low-cost arm using LeRobot 0.6 and ACT. Phase 1 (this repo, today) runs the whole pipeline in MuJoCo via so101-nexus with a scripted IK expert as the demonstrator."
+    }
+  ]
+}

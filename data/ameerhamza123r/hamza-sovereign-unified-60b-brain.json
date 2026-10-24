@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "AmeerHamza123r/Hamza-Sovereign-Unified-60B-Brain",
+  "slug": "ameerhamza123r-hamza-sovereign-unified-60b-brain",
+  "author": "AmeerHamza123r",
+  "url": "https://huggingface.co/AmeerHamza123r/Hamza-Sovereign-Unified-60B-Brain",
+  "created_at": "2026-10-24T08:13:14.000Z",
+  "updated_at": "2026-10-24T08:46:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "bloom",
+    "text-generation",
+    "base_model:adapter:bigscience/bloom-3b",
+    "lora",
+    "transformers",
+    "arxiv:1910.09700",
+    "base_model:bigscience/bloom-3b",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3002557440,
+  "parameters_human": "3.00B",
+  "storage_bytes": 6835286026,
+  "storage_human": "6.8 GB",
+  "base_model": "bigscience/bloom-3b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ameerhamza-ai (Ameer Hamza) · GitHub",
+      "url": "https://github.com/ameerhamza-ai",
+      "snippet": "BS AI @ KUST | 2nd Semester #150DaysOfAI | Building daily Python → OOP → DSA → ML Aspiring AI Architect Open to Research & Internships - ameerhamza-ai"
+    },
+    {
+      "title": "Mistral and HUMAIN Are Building &#x27;Sovereign AI&#x27; in Saudi Arabia",
+      "url": "https://finance.yahoo.com/technology/ai/articles/mistral-humain-building-sovereign-ai-183926139.html",
+      "snippet": "Mistral and HUMAIN announced plans to build sovereign AI infrastructure in Saudi Arabia and across the region—a tie-up valued in the hundreds of millions of euros that deepens Gulf money flowing ..."
+    },
+    {
+      "title": "Hamza66628 (Hamza Imran) - Hugging Face",
+      "url": "https://huggingface.co/Hamza66628",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 4 days ago ... published a model 4 days ago"
+    },
+    {
+      "title": "Spanish &#x27;soonicorn&#x27; Multiverse Computing releases free compressed AI model",
+      "url": "https://techcrunch.com/2026/02/24/spanish-soonicorn-multiverse-computing-releases-free-compressed-ai-model/",
+      "snippet": "Spanish startup Multiverse Computing has released a new version of its HyperNova 60B model on Hugging Face that, it says, bests Mistral&#x27;s model."
+    },
+    {
+      "title": "Cosine rallies UK giants to build a sovereign AI model",
+      "url": "https://thenextweb.com/news/cosine-lumen-sovereign-uk-frontier-ai-model",
+      "snippet": "At London Tech Week, Britain&#x27;s Cosine signed up BT, HSBC, BAE & others to build Lumen Sovereign, a UK frontier AI model trained on the Isambard-AI supercomputer."
+    }
+  ]
+}

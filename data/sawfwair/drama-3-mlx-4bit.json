@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Sawfwair/DRAMA-3-MLX-4bit",
+  "slug": "sawfwair-drama-3-mlx-4bit",
+  "author": "Sawfwair",
+  "url": "https://huggingface.co/Sawfwair/DRAMA-3-MLX-4bit",
+  "created_at": "2026-10-24T02:05:18.000Z",
+  "updated_at": "2026-10-24T02:09:53.000Z",
+  "license": "fish-audio-community-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "fish_omni",
+    "mere-run",
+    "text-to-speech",
+    "drama3",
+    "4-bit",
+    "custom-runtime",
+    "base_model:fishaudio/drama-3",
+    "base_model:quantized:fishaudio/drama-3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8720553088,
+  "parameters_human": "8.72B",
+  "storage_bytes": 27398592109,
+  "storage_human": "27.4 GB",
+  "base_model": "fishaudio/drama-3",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TousMesConcerts | Rechercher des concerts près de chez vous!",
+      "url": "https://www.tousmesconcerts.fr/",
+      "snippet": "Découvrez rapidement les concerts près de chez vous: recherchez par ville ou code postal et trouvez spectacles, festivals et …"
+    },
+    {
+      "title": "Concerts près de chez moi : dates et billets | Agendaza | Agendaza",
+      "url": "https://agendaza.fr/concerts-pres-de-moi",
+      "snippet": "Trouvez les concerts près de chez vous : dates, lieux, distance et billets pour les concerts et événements musicaux à proximité."
+    },
+    {
+      "title": "Guinguette — Agenda des sorties culturelles près de chez vous",
+      "url": "https://www.guinguette.eu/",
+      "snippet": "Agenda des sorties culturelles locales : concerts, festivals, expos, marchés, spectacles. Trouvez les événements près de chez vous …"
+    },
+    {
+      "title": "Toutes les activités et sorties autour de chez vous",
+      "url": "https://www.sortirautour.fr/",
+      "snippet": "Sortirautour.fr vous propose toutes les sorties loisirs, animations, concerts, évènements culturels… autour de chez vous, dans votre …"
+    },
+    {
+      "title": "Sorties près de chez moi aujourd’hui et ce week-end - agendaza.fr",
+      "url": "https://agendaza.fr/sorties-pres-de-moi",
+      "snippet": "Découvrez les sorties près de chez vous et trouvez facilement quoi faire autour de vous aujourd’hui ou ce week-end. Utilisez votre …"
+    }
+  ]
+}

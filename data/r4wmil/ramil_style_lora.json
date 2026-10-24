@@ -5,7 +5,7 @@
   "author": "r4wmil",
   "url": "https://huggingface.co/r4wmil/ramil_style_LoRA",
   "created_at": "2026-10-17T21:27:02.000Z",
-  "updated_at": "2026-10-17T21:27:27.000Z",
+  "updated_at": "2026-10-23T20:55:33.000Z",
   "license": "openrail++",
   "license_family": "oss",
   "pipeline_tag": "text-to-image",
@@ -26,12 +26,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 9,
+  "downloads_30d": 12,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 193006419,
-  "storage_human": "193 MB",
+  "storage_bytes": 578879895,
+  "storage_human": "579 MB",
   "base_model": "stabilityai/stable-diffusion-xl-base-1.0",
   "formats": [
     "diffusers"

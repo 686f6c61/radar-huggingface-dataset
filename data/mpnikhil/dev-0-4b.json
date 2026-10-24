@@ -5,7 +5,7 @@
   "author": "mpnikhil",
   "url": "https://huggingface.co/mpnikhil/dev-0.4b",
   "created_at": "2026-09-20T23:35:30.000Z",
-  "updated_at": "2026-09-22T00:00:22.000Z",
+  "updated_at": "2026-10-23T06:25:47.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -41,7 +41,7 @@
     "region:us"
   ],
   "likes": 5,
-  "downloads_30d": 196,
+  "downloads_30d": 183,
   "trending_score": 0,
   "parameters": 396880897,
   "parameters_human": "396.9M",

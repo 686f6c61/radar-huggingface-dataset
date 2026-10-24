@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "aarib1007/intel-openvino-voice-assistant",
+  "slug": "aarib1007-intel-openvino-voice-assistant",
+  "author": "aarib1007",
+  "url": "https://huggingface.co/aarib1007/intel-openvino-voice-assistant",
+  "created_at": "2026-10-24T08:32:49.000Z",
+  "updated_at": "2026-10-24T08:32:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenVINO 2026.4 — OpenVINO™ documentation — Version (2026)",
+      "url": "https://docs.openvino.ai/",
+      "snippet": "OpenVINO is an open-source toolkit for deploying high-performance AI solutions across cloud, AI PCs, edge devices, and Physical AI alike. Develop your applications with both generative and conventional AI models, coming from the most popular model frameworks. Convert, optimize, and run inference utilizing the full potential of Intel® hardware. There are four main tools in OpenVINO to meet all ..."
+    },
+    {
+      "title": "OpenVINO™ Model Hub - Intel",
+      "url": "https://www.intel.com/content/www/us/en/developer/tools/openvino-toolkit/models.html",
+      "snippet": "Discover the performance difference OpenVINO toolkit can deliver across AI models on Intel® hardware platforms from the edge to AI PCs. Access the latest OpenVINO toolkit performance benchmarks for a select list of leading generative AI (GenAI) and large language models (LLM) on Intel CPUs, built-in GPUs, NPUs, and accelerators."
+    },
+    {
+      "title": "AI Models verified for OpenVINO™",
+      "url": "https://docs.openvino.ai/2025/documentation/compatibility-and-support/supported-models.html",
+      "snippet": "AI Models verified for OpenVINO™ # The following is a list of models that have been verified to work with OpenVINO. Note that other models from OpenVINO-supported frameworks may also work properly but have not been tested. AI Models that run on Intel® Core Ultra™ Processors with OpenVINO™ toolkit:"
+    },
+    {
+      "title": "GitHub - Fersca/Robot: Cross-platform local voice and vision assistant ...",
+      "url": "https://github.com/Fersca/Robot",
+      "snippet": "Cross-platform local voice and vision assistant for Intel Core Ultra, using OpenVINO across CPU/GPU/NPU for LLM chat, Whisper STT, Silero VAD, TTS, and reactive camera presence detection. - Fersca/Robot"
+    },
+    {
+      "title": "OpenVINO™ Model Hub for AI Inference Benchmarks - Intel",
+      "url": "https://www.intel.com/content/www/us/en/developer/tools/openvino-toolkit/model-hub.html",
+      "snippet": "Discover AI models supported by OpenVINO. Select a popular AI model to access Jupyter notebooks and OpenVINO performance benchmarks."
+    }
+  ]
+}

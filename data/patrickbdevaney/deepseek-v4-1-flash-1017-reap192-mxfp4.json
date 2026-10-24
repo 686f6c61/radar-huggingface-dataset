@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "patrickbdevaney/DeepSeek-V4.1-Flash-1017-REAP192-MXFP4",
+  "slug": "patrickbdevaney-deepseek-v4-1-flash-1017-reap192-mxfp4",
+  "author": "patrickbdevaney",
+  "url": "https://huggingface.co/patrickbdevaney/DeepSeek-V4.1-Flash-1017-REAP192-MXFP4",
+  "created_at": "2026-10-24T08:35:00.000Z",
+  "updated_at": "2026-10-24T09:28:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deepseek_v41",
+    "deepseek",
+    "moe",
+    "reap",
+    "expert-pruning",
+    "mxfp4",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "license:mit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 162751056071,
+  "storage_human": "162.8 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sex Cam in diretta Gratis e Chat Porno | xHamsterLive",
+      "url": "https://it.xhamsterlive.com/",
+      "snippet": "Guarda sesso gratis e porno dal vivo con ragazze in webcam, coppie, gruppi. Comunità ufficiale Freecam di xHamster."
+    },
+    {
+      "title": "Free Live Sex Webcams and Porn Chat | xHamsterLive",
+      "url": "https://xhamsterlive.com/",
+      "snippet": "Watch Free Sex and Live Porn with Webcam Girls, Couples, Groups. Official Freecams Community from xHamster."
+    },
+    {
+      "title": "Бесплатные вебкам шоу и порно чат | xHamsterLive",
+      "url": "https://ru.xhamsterlive.com/",
+      "snippet": "Бесплатно смотрите онлайн-порно с вебкам-девушками, парами и группами. Официальное бесплатное вебкам-сообщество …"
+    },
+    {
+      "title": "Webcams de Sexo Grátis ao Vivo e Chat Porno | xHamsterLive",
+      "url": "https://pt.xhamsterlive.com/",
+      "snippet": "Veja Sexo Grátis e Porno ao Vivo com Modelos de Webcam, Casais, Grupos. Comunidade Oficial Freecams xHamster."
+    },
+    {
+      "title": "무료 라이브 섹스 웹캠과 포르노 채팅 | xHamsterLive",
+      "url": "https://ko.xhamsterlive.com/",
+      "snippet": "무료 섹스와 라이브 포르노를 웹캠 걸, 커플, 그룹과 함께 시청하세요. xHamster의 공식 프리캠 커뮤니티."
+    }
+  ]
+}

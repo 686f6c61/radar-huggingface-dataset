@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Ibackup/Qwen3.8-27B",
+  "slug": "ibackup-qwen3-8-27b",
+  "author": "Ibackup",
+  "url": "https://huggingface.co/Ibackup/Qwen3.8-27B",
+  "created_at": "2026-10-24T08:46:25.000Z",
+  "updated_at": "2026-10-24T08:46:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55575816096,
+  "storage_human": "55.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8 27B — AI Model Radar",
+      "url": "https://aimodelradar.app/models/qwen3-8-27b",
+      "snippet": "Qwen3.8 27B is a 27-billion-parameter open-weights dense model from the Qwen Team at Alibaba that accepts text and image inputs. It is designed for coding, professional workflows, research, multimodal interaction, and long-running agent tasks, with flexible thinking capability. The model supports a 262K token context window and was released in August 2026."
+    },
+    {
+      "title": "Qwen 3.8 27B | Epoch AI",
+      "url": "https://epoch.ai/models/qwen-3-8-27b",
+      "snippet": "Qwen 3.8 27B is an open-weights model from Alibaba, released August 14, 2026. It has an ECI score of 149 and ranks 52nd of 251 tracked models. At the time of its release, it ranked 45th of 244 tracked models."
+    },
+    {
+      "title": "Qwen 3.8-27B Complete Guide: Vision, Tool Use, and a Real Upgrade Over ...",
+      "url": "https://www.aimadetools.com/blog/qwen-3-8-27b-complete-guide/",
+      "snippet": "Qwen 3.8-27B is Alibaba&#x27;s compact, deployment-friendly model in the new Qwen 3.8 generation. It is a 27 billion parameter dense model, built on the Qwen3.5 architecture, and it is the direct successor to Qwen 3.6-27B, one of the most-used local coding models on this site."
+    },
+    {
+      "title": "Free Qwen3.8-27B AI model lands, grabs over 3 million downloads in one ...",
+      "url": "https://cybernews.com/tech/qwen-38-27b-ai-model-debuts-with-million-downloads/",
+      "snippet": "Alibaba&#x27;s newly released free, open-weight AI model, Qwen3.8-27B is gaining momentum, amassing over 3 million downloads in its opening weekend as developers and prosumers seek its performance capabilities on consumer hardware."
+    },
+    {
+      "title": "qwen3.8-27b (Qwen) · Cloudflare AI docs · Cloudflare Workers AI docs",
+      "url": "https://developers.cloudflare.com/workers-ai/models/qwen3.8-27b/",
+      "snippet": "Qwen 3.8 27B is a 27-billion-parameter instruction-tuned language model from Alibaba&#x27;s Qwen family, designed for vision, efficient general-purpose text generation and agentic workloads."
+    }
+  ]
+}

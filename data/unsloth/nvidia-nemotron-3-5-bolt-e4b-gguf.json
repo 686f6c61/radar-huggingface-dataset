@@ -5,7 +5,7 @@
   "author": "unsloth",
   "url": "https://huggingface.co/unsloth/NVIDIA-Nemotron-3.5-Bolt-E4B-GGUF",
   "created_at": "2026-10-23T09:47:55.000Z",
-  "updated_at": "2026-10-23T16:07:01.000Z",
+  "updated_at": "2026-10-24T04:00:15.000Z",
   "license": "openmdw-1.1",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -96,13 +96,13 @@
     "region:us",
     "conversational"
   ],
-  "likes": 52,
+  "likes": 67,
   "downloads_30d": 0,
-  "trending_score": 52,
+  "trending_score": 67,
   "parameters": 7518069290,
   "parameters_human": "7.52B",
-  "storage_bytes": 133286665408,
-  "storage_human": "133.3 GB",
+  "storage_bytes": 166635740672,
+  "storage_human": "166.6 GB",
   "base_model": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16",
   "formats": [
     "gguf"

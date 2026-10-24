@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "naosu00roboma/act_so101_pick_place",
+  "slug": "naosu00roboma-act_so101_pick_place",
+  "author": "naosu00roboma",
+  "url": "https://huggingface.co/naosu00roboma/act_so101_pick_place",
+  "created_at": "2026-10-24T08:39:20.000Z",
+  "updated_at": "2026-10-24T08:39:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:naosu00roboma/so101_pick_place",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206712864,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zooville Forum",
+      "url": "https://www.zoovilleforum.net/",
+      "snippet": "Zoophilia and Bestiality Community A place to discuss animal-like sex toy's, reviews and advice."
+    },
+    {
+      "title": "United States | Zooville Forum",
+      "url": "https://www.zoovilleforum.net/categories/united-states.48/",
+      "snippet": "District Of Columbia (Washington D.C.) Private Bestiality Personal Ads & Meetup North America"
+    },
+    {
+      "title": "Chael Sonnen pleads guilty to Federal money laundering charge",
+      "url": "https://www.mixedmartialarts.com/news/chael-sonnen-pleads-guilty-to-federal-money-laundering-charge/",
+      "snippet": "Jan 3, 2011 · 33-year-old Portlander Chael Sonnen pleaded guilty in U.S. District Court to a single count of money laundering. The …"
+    },
+    {
+      "title": "Edith Labelle, former Octagon girl, breaks silence on UFC dismissal",
+      "url": "https://www.mixedmartialarts.com/news/edith-labelle-former-octagon-girl-breaks-silence-on-ufc-dismissal/",
+      "snippet": "Sep 3, 2009 · Edith Labelle, Former Octagon Girl, Breaks Silence on UFC Dismissal “After the UFC Expo and weigh-ins [at UFC …"
+    },
+    {
+      "title": "How To's and Educational | Zooville Forum",
+      "url": "https://www.zoovilleforum.net/forums/how-tos-and-educational.10/",
+      "snippet": "Guides, FAQs, How-To's, and anything educational related to animal love."
+    }
+  ]
+}

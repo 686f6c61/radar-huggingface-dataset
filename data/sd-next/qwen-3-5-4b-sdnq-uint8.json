@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "SD-Next/Qwen-3.5-4B-sdnq-uint8",
+  "slug": "sd-next-qwen-3-5-4b-sdnq-uint8",
+  "author": "SD-Next",
+  "url": "https://huggingface.co/SD-Next/Qwen-3.5-4B-sdnq-uint8",
+  "created_at": "2026-10-24T08:37:08.000Z",
+  "updated_at": "2026-10-24T09:41:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:quantized:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "sdnq",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4541620224,
+  "parameters_human": "4.54B",
+  "storage_bytes": 15277178843,
+  "storage_human": "15.3 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Carte SD — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Carte_SD",
+      "snippet": "Une carte SD (« SD » étant le sigle de l'expression anglaise « Secure Digital ») est une carte mémoire de stockage de données …Read more"
+    },
+    {
+      "title": "SD card - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/SD_card",
+      "snippet": "SD card ... The SD card is a proprietary, non-volatile, flash memory card format developed by the SD Association (SDA). They come …"
+    },
+    {
+      "title": "Carte SD - Votre Carte SD Retrait 30min* | Boulanger",
+      "url": "https://www.boulanger.com/c/carte-memoire-lecteur/_usage~carte20sd?msockid=29b78c595d4b68a82d459ba55c7e6915",
+      "snippet": "Choisissez votre carte SD parmi les modèles que nous avons sélectionnés auprès des meilleurs fabricants (Lexar, SanDisk, Sony, …"
+    },
+    {
+      "title": "Meilleure carte SD 2026 : 12 analysées, 5 retenues",
+      "url": "https://meilleurtest.fr/comparatif-carte-sd/",
+      "snippet": "Sep 29, 2026 · SanDisk Extreme PRO 64 Go arrive en tête de notre comparatif 2026 (9,0/10). 12 cartes sd analysées, 5 retenues : …"
+    },
+    {
+      "title": "Carte sd - ManoMano",
+      "url": "https://www.manomano.fr/cat/carte+sd?msockid=29b78c595d4b68a82d459ba55c7e6915",
+      "snippet": "Carte SD 64Go- Convient aux caméras de surveillance, aux enregistreurs de conduite, aux téléphones portables et aux tablettes 2 …"
+    }
+  ]
+}

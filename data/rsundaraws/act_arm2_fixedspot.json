@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "rsundaraws/act_arm2_fixedspot",
+  "slug": "rsundaraws-act_arm2_fixedspot",
+  "author": "rsundaraws",
+  "url": "https://huggingface.co/rsundaraws/act_arm2_fixedspot",
+  "created_at": "2026-10-24T02:10:27.000Z",
+  "updated_at": "2026-10-24T02:10:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:rsundaraws/so101_arm2_fixedspot_trim",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714912,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rsundaraws/so101_arm2_fixedspot_wrist · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/rsundaraws/so101_arm2_fixedspot_wrist",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "rsundaraws (Sundar Raghavan) - Hugging Face",
+      "url": "https://huggingface.co/rsundaraws/models",
+      "snippet": "AI & ML interests ... Recent Activity upvoted an article 6 days ago ... published an article 6 days ago"
+    },
+    {
+      "title": "manipulation/manipulation/models/spot at master · RussTedrake ... - GitHub",
+      "url": "https://github.com/RussTedrake/manipulation/tree/master/manipulation/models/spot",
+      "snippet": "spot_with_arm_and_floating_base_actuators.urdf was forked from spot_with_arm, and modified in the following ways:"
+    },
+    {
+      "title": "[Question] How to change the Spot Model to Spot w/ Arm Model?",
+      "url": "https://github.com/isaac-sim/IsaacLab/issues/1403",
+      "snippet": "Hi, thanks for the amazing tutorials about training vel control of Spot w/o Arm. I hope to train a new vel control policy for Spot w/ Arm. First, I created a custom .usd file for it, adding the arm..."
+    },
+    {
+      "title": "ARM2: Forward Calorimetry & Adaptive AI - emergentmind.com",
+      "url": "https://www.emergentmind.com/topics/arm2",
+      "snippet": "ARM2 refers to two distinct but prominent entities within contemporary scientific literature: the LHCf Arm2 forward calorimeter, an instrumental component in very-forward physics at high-energy colliders, and ARM2, the Adaptive Reasoning Model with Vision Understanding and Executable Code in AI research."
+    }
+  ]
+}

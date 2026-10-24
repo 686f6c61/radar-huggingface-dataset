@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "mradermacher/LlamaScientific-8B-GGUF",
+  "slug": "mradermacher-llamascientific-8b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/LlamaScientific-8B-GGUF",
+  "created_at": "2026-10-24T08:16:17.000Z",
+  "updated_at": "2026-10-24T08:46:15.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama",
+    "llama-3",
+    "tool-use",
+    "function-calling",
+    "science",
+    "physics",
+    "chemistry",
+    "biology",
+    "unsloth",
+    "sft",
+    "en",
+    "dataset:nvidia/Nemotron-SFT-Science-v2",
+    "base_model:Rumiii/LlamaScientific-8B",
+    "base_model:quantized:Rumiii/LlamaScientific-8B",
+    "license:llama3.1",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 71820292992,
+  "storage_human": "71.8 GB",
+  "base_model": "Rumiii/LlamaScientific-8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeepLearning.AI: Start or Advance Your Career in AI",
+      "url": "https://www.deeplearning.ai/",
+      "snippet": "DeepLearning.AI | Andrew Ng | Join over 7 million people learning how to use and build AI through our online courses. Earn …"
+    },
+    {
+      "title": "Introducing DeepLearning.AI Pro",
+      "url": "https://www.deeplearning.ai/blog/introducing-deeplearning-ai-pro",
+      "snippet": "With exclusive courses, tools, and community, DeepLearning.AI Pro is the one membership that keeps you at the forefront of AI."
+    },
+    {
+      "title": "AI Agents in LangGraph - DeepLearning.AI",
+      "url": "https://learn.deeplearning.ai/courses/ai-agents-in-langgraph/lesson/qyrpc/introduction",
+      "snippet": "Build agentic AI workflows using LangChain's LangGraph and Tavily's agentic search."
+    },
+    {
+      "title": "AI for Everyone - DeepLearning.AI",
+      "url": "https://learn.deeplearning.ai/courses/ai-for-everyone/lesson/quis4/week-1-introduction",
+      "snippet": "Learn about AI technologies and how to use them. Examine AI's societal impact, and learn to navigate this technological shift."
+    },
+    {
+      "title": "Help Center - info.deeplearning.ai",
+      "url": "https://info.deeplearning.ai/knowledge-base",
+      "snippet": "Find answers, guides, and resources to support your learning journey."
+    }
+  ]
+}

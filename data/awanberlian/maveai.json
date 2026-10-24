@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "awanberlian/maveai",
+  "slug": "awanberlian-maveai",
+  "author": "awanberlian",
+  "url": "https://huggingface.co/awanberlian/maveai",
+  "created_at": "2026-10-24T08:29:33.000Z",
+  "updated_at": "2026-10-24T08:29:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mave AI — The real estate marketing team you&#x27;ve always wanted",
+      "url": "https://www.maveai.co/",
+      "snippet": "Mave is the trusted AI partner for real estate, streamlining marketing, market data, and content creation. Built for agents and brokerages to scale efficiently."
+    },
+    {
+      "title": "LLM Leaderboard: AI Model Rankings & Pricing | llmboard.ai",
+      "url": "https://www.llmboard.ai/",
+      "snippet": "Explore the LLM leaderboard to compare the best AI models across capability, pricing and LLM benchmarks. Find the best LLM for coding, reasoning and more."
+    },
+    {
+      "title": "Zephyr @Zephyr_hg - Twitter Profile | TwStalker",
+      "url": "https://mobile.twstalker.com/Zephyr_hg",
+      "snippet": "See tweets, replies, photos and videos from @Zephyr_hg Twitter profile. 59K Followers, 120 Following, 9K Tweets. Most people use 10% of AI. I&#x27;ll hand you the other 90: new features and free setups to copy, in ChatGPT, Claude, Grok and so on. One short email a day ↓"
+    },
+    {
+      "title": "AI Models Are Fueling a New Wave of Cybercrime - Flare",
+      "url": "https://flare.io/learn/resources/blog/ai-models-cybercrime-quantitative-analysis",
+      "snippet": "AI Models are Fueling a New Wave of Cybercrime: A Quantitative Analysis How threat actors discuss, sell, and use abliterated open-weight models, measured across more than 100,000 Telegram channels and 100 dark web forums."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 992 AI models across 706 benchmarks, with 228 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    }
+  ]
+}

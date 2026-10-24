@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "magefiredoom/NLM",
+  "slug": "magefiredoom-nlm",
+  "author": "magefiredoom",
+  "url": "https://huggingface.co/magefiredoom/NLM",
+  "created_at": "2026-10-24T02:09:37.000Z",
+  "updated_at": "2026-10-24T02:09:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Free AI Models & APIs (2026) | LM Market Cap",
+      "url": "https://lmmarketcap.com/free-ai-models",
+      "snippet": "Every free AI model ranked by quality: free LLMs, coding assistants, and image generators. No API costs, open-source, and ready to use. Start for free."
+    },
+    {
+      "title": "@inflatebot on Hugging Face: \"https://huggingface.co/inflatebot/MN-12B ...",
+      "url": "https://huggingface.co/posts/inflatebot/242161401906945",
+      "snippet": "inflatebot/MN-12B-Mag-Mell-R1 MN-12B-Mag-Mell is a multi-stage merge, inspired by hypermerges like Tiefighter and Umbral Mind, intended for use as a general-purpose \"Best of Nemo\" model for co-writing, roleplay, and text adventures. Consistently, Mag Mell produced prose that shocked testers, with a minimum of \"slop\". It also exhibited a unique sense of humor, and a propensity for inserting ..."
+    },
+    {
+      "title": "Best AI Right Now - Top Model 2026 | LM Market Cap",
+      "url": "https://lmmarketcap.com/best-ai-right-now",
+      "snippet": "Which AI model is the best right now? See today&#x27;s top-ranked AI model plus category winners for coding, writing, math, and image generation with source-backed pricing and benchmark freshness."
+    },
+    {
+      "title": "Try Open Source LLMs & Image Models | Deploy in Seconds",
+      "url": "https://fireworks.ai/models?modelTypes=LLM",
+      "snippet": "Use state-of-the-art, open-source LLMs and image models at blazing fast speed, or fine-tune and deploy your own at no additional cost with Fireworks AI!"
+    },
+    {
+      "title": "Large language model - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Large_language_model",
+      "snippet": "A large language model (LLM) is a machine learning model (typically a neural network) trained on a vast amount of text for natural language processing tasks, especially language generation."
+    }
+  ]
+}

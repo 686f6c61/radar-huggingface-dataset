@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "BobClawblaw/MiniMax-M3.1-Flash-MLX-mix256k",
+  "slug": "bobclawblaw-minimax-m3-1-flash-mlx-mix256k",
+  "author": "BobClawblaw",
+  "url": "https://huggingface.co/BobClawblaw/MiniMax-M3.1-Flash-MLX-mix256k",
+  "created_at": "2026-10-24T01:28:56.000Z",
+  "updated_at": "2026-10-24T01:51:45.000Z",
+  "license": "minimax-community",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "tensorfold",
+  "languages": [],
+  "tags": [
+    "tensorfold",
+    "safetensors",
+    "minimax_m3",
+    "mlx",
+    "apple-silicon",
+    "minimax",
+    "base_model:MiniMaxAI/MiniMax-M3.1-Flash",
+    "base_model:finetune:MiniMaxAI/MiniMax-M3.1-Flash",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 431228680320,
+  "parameters_human": "431.23B",
+  "storage_bytes": 203109159689,
+  "storage_human": "203.1 GB",
+  "base_model": "MiniMaxAI/MiniMax-M3.1-Flash",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MiniMax M3.1 Flash: Redefining Agent Performance and Cost",
+      "url": "https://www.minimax.io/blog/minimax-m31f",
+      "snippet": "Today, we officially roll out MiniMax M3.1 Flash. As a next-generation Flash model, M3.1 Flash delivers a generational leap in agentic tasks, coding, Computer Use and cybersecurity, while making online inference nearly three times faster and reducing usage costs by 70%."
+    },
+    {
+      "title": "minimax-m3.1-flash Model by Minimaxai | NVIDIA NIM",
+      "url": "https://build.nvidia.com/minimaxai/minimax-m3.1-flash/modelcard",
+      "snippet": "MiniMax-M3.1-Flash is a native multimodal mixture-of-experts model for coding, agentic workflows, computer use, and cybersecurity."
+    },
+    {
+      "title": "MiniMax M3.1 Flash Benchmarks, Pricing & Context Window",
+      "url": "https://llm-stats.com/models/minimax-m3.1-flash",
+      "snippet": "MiniMax M3.1 Flash is the flash successor in the MiniMax M3 family, released 2026-10-19. It is a multimodal reasoning model with a 1M-token context window, native image and video input, and text output."
+    },
+    {
+      "title": "MiniMax M3.1 Flash — Fast, Low-Cost Agent Model | AI/TLDR",
+      "url": "https://ai-tldr.dev/models/minimax-m3-1-flash/",
+      "snippet": "MiniMax M3.1 Flash is the general release of MiniMax&#x27;s M3.1 Flash model, announced on October 19, 2026. It follows MiniMax M3.1-Flash-Preview, which debuted in MiniMax Code on September 28, 2026 and was limited to the M Plan subscription."
+    },
+    {
+      "title": "MiniMax-M3.1-Flash on Blackbox",
+      "url": "https://www.blackbox.ai/models/blackboxai/minimax/minimax-m3.1-flash",
+      "snippet": "MiniMax-M3.1-Flash is MiniMax&#x27;s multimodal M-series model for agent reasoning, tool use, coding, and long-context tasks. Fireworks serves the final weights with hybrid MXFP8 and NVFP4 expert precision, text and image inputs, structured outputs, and implicit prompt caching."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "b-sigpro/doom-sed",
+  "slug": "b-sigpro-doom-sed",
+  "author": "b-sigpro",
+  "url": "https://huggingface.co/b-sigpro/doom-sed",
+  "created_at": "2026-10-24T08:17:21.000Z",
+  "updated_at": "2026-10-24T08:17:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "m3l",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "m3l",
+    "audio-classification",
+    "en",
+    "base_model:laion/clap-htsat-fused",
+    "base_model:finetune:laion/clap-htsat-fused",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1293736577,
+  "storage_human": "1.3 GB",
+  "base_model": "laion/clap-htsat-fused",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "B - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/b",
+      "snippet": "B (minuscule: b) is the second letter of the Latin alphabet, used in the modern English alphabet, the alphabets of other western …"
+    },
+    {
+      "title": "B&M",
+      "url": "https://bmstores.fr/",
+      "snippet": "Décoration, idées cadeaux, multimédia, petit électroménager, linge de maison, mobilier, mode et bien plus encore. L'enseigne B&M …"
+    },
+    {
+      "title": "B&B HOTELS : réservez un hôtel en France et en Europe | Site web …",
+      "url": "https://www.hotel-bb.com/fr",
+      "snippet": "Que vous organisiez des vacances en famille, un week-end romantique, un voyage d’affaires ou une étape de dernière minute avant …"
+    },
+    {
+      "title": "B (lettre) — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/B_(lettre)",
+      "snippet": "La graphie de la lettre b minuscule moderne provient de la fin de l'Empire romain, lorsque les scribes commencèrent à omettre la …"
+    },
+    {
+      "title": "Définitions : b - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/b/7272",
+      "snippet": "b - Définitions Français : Retrouvez la définition de b, ainsi que les expressions... - synonymes, homonymes, difficultés, citations."
+    }
+  ]
+}

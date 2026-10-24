@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "zhange2508/pyramids-ppo",
+  "slug": "zhange2508-pyramids-ppo",
+  "author": "zhange2508",
+  "url": "https://huggingface.co/zhange2508/pyramids-ppo",
+  "created_at": "2026-10-24T02:00:13.000Z",
+  "updated_at": "2026-10-24T02:00:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "Pyramids",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Pyramids",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37797251,
+  "storage_human": "38 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ArthurSchwan/ppo-Pyramids · Hugging Face",
+      "url": "https://huggingface.co/ArthurSchwan/ppo-Pyramids",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ZhaoxiZheng/ppo-Pyramids · Hugging Face",
+      "url": "https://huggingface.co/ZhaoxiZheng/ppo-Pyramids",
+      "snippet": "Pyramids deep-reinforcement-learning ML-Agents-Pyramids Model card Files Metrics Community Use this model"
+    },
+    {
+      "title": "bkhan2000/ppo-Pyramids - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/141882",
+      "snippet": "This is a trained model of a ppo agent playing Pyramids using the Unity ML-Agents Library."
+    },
+    {
+      "title": "sergey-antonov/ppo-Pyramids - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/128155",
+      "snippet": "This is a trained model of a ppo agent playing Pyramids using the Unity ML-Agents Library."
+    },
+    {
+      "title": "ppo-Pyramids: Model Details, Context & Pricing | Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/hf-rixhi05-ppo-pyramids",
+      "snippet": "ppo-Pyramids is an AI model record indexed from Hugging Face."
+    }
+  ]
+}

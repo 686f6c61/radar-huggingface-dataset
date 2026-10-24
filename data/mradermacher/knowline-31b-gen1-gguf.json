@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mradermacher/KnowLine-31B-Gen1-GGUF",
+  "slug": "mradermacher-knowline-31b-gen1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/KnowLine-31B-Gen1-GGUF",
+  "created_at": "2026-10-24T08:57:30.000Z",
+  "updated_at": "2026-10-24T09:27:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "decision-model",
+    "system-one",
+    "decision-index",
+    "lora-merged",
+    "en",
+    "zh",
+    "base_model:PelaAI/KnowLine-31B-Gen1",
+    "base_model:quantized:PelaAI/KnowLine-31B-Gen1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 213908583264,
+  "storage_human": "213.9 GB",
+  "base_model": "PelaAI/KnowLine-31B-Gen1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Porn Videos & Sex Movies - Porno, XXX, Porn Tube | Pornhub",
+      "url": "https://www.pornhub.com/",
+      "snippet": "Pornhub provides you with unlimited free porn videos with the hottest pornstars. Enjoy the largest amateur porn community on the …"
+    },
+    {
+      "title": "Pornhub - Free HD Porn Videos & Online Sex Movies",
+      "url": "https://en-pornhub.com/",
+      "snippet": "Hot amateur teen sex – girl with big tits fucked hard 0 HD 19:01 The landlord caught a teen student shooting porn 0 HD 12:51 Step …"
+    },
+    {
+      "title": "Pornhub | Free Porn Videos & Sex Movies - Porno, XXX Tube",
+      "url": "https://m-pornhub.com/",
+      "snippet": "Enjoy the hottest free porn videos in HD. Pornhub run has all the latest with top pornstars in every xxx video category."
+    },
+    {
+      "title": "Pornhub Videos & Streaming Content | Pornhub",
+      "url": "https://en-pornhub.com/sites/pornhub/",
+      "snippet": "Mi madrastra me muestra su culo como le queda el short jean 0 HD 26:39 Desi couple porn indian husband sharing his wife with …"
+    },
+    {
+      "title": "Vidéos porno et films de sexe gratuits - Porno, XXX, Porn Tube | Pornhub",
+      "url": "https://fr.pornhub.com/",
+      "snippet": "Porn GIFs Photos Communauté Concours Hub Choix du concours du public Meilleurs membres Hall of Fame"
+    }
+  ]
+}

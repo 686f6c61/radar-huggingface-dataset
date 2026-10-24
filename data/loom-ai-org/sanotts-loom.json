@@ -5,7 +5,7 @@
   "author": "loom-ai-org",
   "url": "https://huggingface.co/loom-ai-org/sanotts-loom",
   "created_at": "2026-10-10T20:23:57.000Z",
-  "updated_at": "2026-10-21T15:42:21.000Z",
+  "updated_at": "2026-10-24T02:13:31.000Z",
   "license": "gpl-3.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -55,8 +55,8 @@
   "trending_score": 0,
   "parameters": 1084963,
   "parameters_human": "1.1M",
-  "storage_bytes": 158354816,
-  "storage_human": "158 MB",
+  "storage_bytes": 168776928,
+  "storage_human": "169 MB",
   "base_model": "ampixa/sanoTTS",
   "formats": [
     "gguf"

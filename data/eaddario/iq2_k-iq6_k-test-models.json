@@ -5,7 +5,7 @@
   "author": "eaddario",
   "url": "https://huggingface.co/eaddario/IQ2_K-IQ6_K-Test-Models",
   "created_at": "2026-10-16T17:34:38.000Z",
-  "updated_at": "2026-10-18T19:56:10.000Z",
+  "updated_at": "2026-10-23T21:20:57.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -26,13 +26,13 @@
     "conversational"
   ],
   "likes": 2,
-  "downloads_30d": 4148,
+  "downloads_30d": 4152,
   "trending_score": 0,
   "parameters": 8999178240,
   "parameters_human": "9.00B",
-  "storage_bytes": 149526442300,
-  "storage_human": "149.5 GB",
-  "base_model": "IFM/K2-Horizon-7B",
+  "storage_bytes": 275688508536,
+  "storage_human": "275.7 GB",
+  "base_model": "IFM/K2-Horizon-7B, LiquidAI/LFM2.5-8B-A1B",
   "formats": [
     "gguf"
   ],

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Anonymous36/misty-nook-32",
+  "slug": "anonymous36-misty-nook-32",
+  "author": "Anonymous36",
+  "url": "https://huggingface.co/Anonymous36/misty-nook-32",
+  "created_at": "2026-10-24T08:46:43.000Z",
+  "updated_at": "2026-10-24T08:51:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 17927652333,
+  "storage_human": "17.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nook — The best local AI video and image generation tool",
+      "url": "https://usenook.ai/",
+      "snippet": "Nook is a local AI video and image generation tool. Create images from text, generate short video clips, and animate stills with supported models, using your own computer&#x27;s GPU."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches across OpenAI, Anthropic, Google DeepMind, SpaceXAI, DeepSeek, Qwen, Moonshot AI, Meta, Mistral AI, MiniMax, and other important AI labs. You can use the newest-first tables to find the release date, provider, release stage, and model type."
+    },
+    {
+      "title": "Anonymous AI Chat: GPT, Claude, Grok & Gemini | GPTAnon",
+      "url": "https://gptanon.com/",
+      "snippet": "Ask anonymously. Question the answer. Compare leading AI models without attaching your GPTAnon account identity to the model request."
+    },
+    {
+      "title": "26 Top AI Art Generators Available Right Now | Built In",
+      "url": "https://builtin.com/artificial-intelligence/ai-art-generators",
+      "snippet": "AI art generators use artificial intelligence and its many facets (machine learning, neural networks, and more) to automatically create images."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "orcarouter/DeepSeek-V4.1-Flash-1017-abliterated-GGUF",
+  "slug": "orcarouter-deepseek-v4-1-flash-1017-abliterated-gguf",
+  "author": "orcarouter",
+  "url": "https://huggingface.co/orcarouter/DeepSeek-V4.1-Flash-1017-abliterated-GGUF",
+  "created_at": "2026-10-22T04:06:52.000Z",
+  "updated_at": "2026-10-24T05:43:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "local",
+    "deepseek",
+    "deepseek-v4",
+    "deepseek-v4.1-flash",
+    "deepseek-v4.1-flash-1017",
+    "moe",
+    "engram",
+    "mixed-precision",
+    "imatrix",
+    "abliterated",
+    "uncensored",
+    "ai-red-team",
+    "reasoning",
+    "function-calling",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:orcarouter/DeepSeek-V4.1-Flash-1017-abliterated",
+    "base_model:quantized:orcarouter/DeepSeek-V4.1-Flash-1017-abliterated",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 28,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 748494643824,
+  "parameters_human": "748.49B",
+  "storage_bytes": 572527725536,
+  "storage_human": "572.5 GB",
+  "base_model": "orcarouter/DeepSeek-V4.1-Flash-1017-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Weather forecast and conditions for Libourne, Nouvelle-Aquitaine ...",
+      "url": "https://weather.com/en-NA/fr/nouvelle-aquitaine/city/libourne/today",
+      "snippet": "Today’s and tonight’s Libourne, Nouvelle-Aquitaine, France weather forecast, weather conditions and Doppler radar from The …"
+    },
+    {
+      "title": "METEO LIBOURNE par Météo-France - Prévisions Météo gratuites …",
+      "url": "https://meteofrance.com/previsions-meteo-france/libourne/33500",
+      "snippet": "De l'Aquitaine et les Pyrénées jusqu'à la Lorraine et l'Alsace, la journée se déroule sous un ciel très nuageux à couvert et des pluies …"
+    },
+    {
+      "title": "Today's Weather in Libourne - Hourly Forecast and Conditions",
+      "url": "https://www.easeweather.com/europe/france/nouvelle-aquitaine/gironde/libourne/today",
+      "snippet": "Oct 16, 2026 · Get the latest hourly weather updates for Libourne today. Detailed forecast including temperature, wind, rain, snow, …"
+    },
+    {
+      "title": "Libourne Weather Forecast",
+      "url": "https://www.weather-forecast.com/locations/Libourne/forecasts/latest",
+      "snippet": "Oct 14, 2026 · Live weather reports from Libourne weather stations and weather warnings that include risk of thunder, high UV index …"
+    },
+    {
+      "title": "Hourly Weather Forecast for Libourne, Nouvelle-Aquitaine, France",
+      "url": "https://weather.com/fr/nouvelle-aquitaine/city/libourne/hourbyhour",
+      "snippet": "Hourly Local Weather Forecast, weather conditions, precipitation, dew point, humidity, wind from Weather.com and The Weather …"
+    }
+  ]
+}

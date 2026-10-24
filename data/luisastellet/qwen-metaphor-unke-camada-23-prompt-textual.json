@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "luisastellet/qwen-metaphor-unke-camada-23-prompt-textual",
+  "slug": "luisastellet-qwen-metaphor-unke-camada-23-prompt-textual",
+  "author": "luisastellet",
+  "url": "https://huggingface.co/luisastellet/qwen-metaphor-unke-camada-23-prompt-textual",
+  "created_at": "2026-10-24T01:27:34.000Z",
+  "updated_at": "2026-10-24T01:27:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 2395657618,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "luisastellet/qwen-metaphor-unke · Hugging Face",
+      "url": "https://huggingface.co/luisastellet/qwen-metaphor-unke",
+      "snippet": "luisastellet / qwen-metaphor-unke Like 0 Text Generation Transformers Safetensors qwen3 conversational text-generation-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "qwen-metaphor-unke-camada-2-literal-metaforica - Hugging Face",
+      "url": "https://huggingface.co/luisastellet/qwen-metaphor-unke-camada-2-literal-metaforica",
+      "snippet": "luisastellet / qwen-metaphor-unke-camada-2-literal-metaforica Like 0 Text Generation Transformers Safetensors qwen3 conversational text-generation-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "qwen-metaphor-unke-camada-23-literal-metaforica - friendli.ai",
+      "url": "https://friendli.ai/models/luisastellet/qwen-metaphor-unke-camada-23-literal-metaforica",
+      "snippet": "Deploy qwen-metaphor-unke-camada-23-literal-metaforica with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "luisastellet/qwen-metaphor-unke-camada-4-literal-metaforica",
+      "url": "https://featherless.ai/models/luisastellet/qwen-metaphor-unke-camada-4-literal-metaforica",
+      "snippet": "Exploration: Suitable for researchers and developers interested in experimenting with Qwen-based models at the 0.8B parameter scale. Long-form Text Processing: The large context window makes it potentially useful for tasks requiring understanding or generation of lengthy content, once its specific fine-tuning objectives are clarified."
+    },
+    {
+      "title": "luisastellet/qwen-metaphor-unke-camada-5 - featherless.ai",
+      "url": "https://featherless.ai/models/luisastellet/qwen-metaphor-unke-camada-5",
+      "snippet": "This model, luisastellet/qwen-metaphor-unke-camada-5, is a 0.8 billion parameter language model. It features a substantial context window of 32768 tokens, allowing it to process and generate longer sequences of text."
+    }
+  ]
+}

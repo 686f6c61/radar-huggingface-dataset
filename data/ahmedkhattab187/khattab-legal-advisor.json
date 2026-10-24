@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ahmedkhattab187/Khattab-Legal-Advisor",
+  "slug": "ahmedkhattab187-khattab-legal-advisor",
+  "author": "ahmedkhattab187",
+  "url": "https://huggingface.co/ahmedkhattab187/Khattab-Legal-Advisor",
+  "created_at": "2026-10-23T17:03:40.000Z",
+  "updated_at": "2026-10-24T02:01:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:MBZUAI-Paris/Nile-Chat-4B",
+    "base_model:finetune:MBZUAI-Paris/Nile-Chat-4B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 140531037,
+  "storage_human": "141 MB",
+  "base_model": "MBZUAI-Paris/Nile-Chat-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ahmedkhattab187 (Ahmed Ahmed) - Hugging Face",
+      "url": "https://huggingface.co/ahmedkhattab187",
+      "snippet": "Recent Activity updated a modelabout 3 hours ago ahmedkhattab187/Khattab-Legal-Advisor published a modelabout 12 hours ago ahmedkhattab187/Khattab-Legal-Advisor View all activity"
+    },
+    {
+      "title": "ahmed-khattab (ahmed khattab) - Hugging Face",
+      "url": "https://huggingface.co/ahmed-khattab/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a Space 25 days ago ... published a Space 25 days ago"
+    },
+    {
+      "title": "Ahmed Khattab | AI Tools Consultant & Trainer",
+      "url": "https://khattabai.com/",
+      "snippet": "Practical, personalized AI consulting for education, research, productivity, and professional work. 1-on-1 guidance for educators, researchers, postgraduate students, professionals, business owners, and individuals who want to turn AI tools into useful, reliable workflows."
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/",
+      "snippet": "We couldn&#x27;t load your remembered accounts. You can still log in below"
+    },
+    {
+      "title": "TikTok Lawyers Face Their AI Clones | Documented",
+      "url": "https://documentedny.com/projects/tiktok-lawyers/",
+      "snippet": "Documented found swarms of fake immigration attorney TikTok accounts and bots targeting immigrants in an analysis of tens of millions of posts."
+    }
+  ]
+}

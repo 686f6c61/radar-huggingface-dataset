@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Harsha001/NVIDIA-Nemotron-3.5-Bolt-E4B-ROCmFPX",
+  "slug": "harsha001-nvidia-nemotron-3-5-bolt-e4b-rocmfpx",
+  "author": "Harsha001",
+  "url": "https://huggingface.co/Harsha001/NVIDIA-Nemotron-3.5-Bolt-E4B-ROCmFPX",
+  "created_at": "2026-10-24T01:27:37.000Z",
+  "updated_at": "2026-10-24T01:40:15.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "rocmfpx",
+    "rocmfp4",
+    "amd",
+    "rocm",
+    "strix-halo",
+    "quantized",
+    "nemotron",
+    "gemma4",
+    "text-generation",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16",
+    "base_model:quantized:nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7518069290,
+  "parameters_human": "7.52B",
+  "storage_bytes": 23124677376,
+  "storage_human": "23.1 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NVIDIA Nemotron 3.5 Bolt E4B 4GB - NVIDIA Nemotron",
+      "url": "https://research.nvidia.com/labs/nemotron/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB/",
+      "snippet": "We are releasing NVIDIA Nemotron 3.5 Bolt E4B 4GB, an open small language model optimized for speed and intelligence per GB in conversational agents."
+    },
+    {
+      "title": "Nemotron 3.5 Bolt E4B Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3.5-bolt-e4b/modelcard",
+      "snippet": "Nemotron-3.5-Bolt-E4B-BF16 is the full-precision release of a general purpose reasoning and chat model, and is intended primarily for customization and post-training rather than direct production inference."
+    },
+    {
+      "title": "Harsha001/NVIDIA-Nemotron-3.5-Bolt-E4B-ROCmFPX · Discussions",
+      "url": "https://huggingface.co/Harsha001/NVIDIA-Nemotron-3.5-Bolt-E4B-ROCmFPX/discussions",
+      "snippet": "Instructions to use Harsha001/NVIDIA-Nemotron-3.5-Bolt-E4B-ROCmFPX with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "NVIDIA Releases Nemotron 3.5 Bolt E4B 4GB: An Open Small Language Model ...",
+      "url": "https://www.marktechpost.com/2026/10/23/nvidia-nemotron-3-5-bolt-e4b-4gb/",
+      "snippet": "NVIDIA Nemotron 3.5 Bolt E4B is a small language model for local conversational agents, running in ~4GB VRAM."
+    },
+    {
+      "title": "NVIDIA-Nemotron-3.5-Bolt-E4B-4GB-BF16 | NVIDIA NeMo AutoModel",
+      "url": "https://docs.nvidia.com/nemo/automodel/model-coverage/vision-language-models/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB-BF16",
+      "snippet": "NVIDIA-Nemotron-3.5-Bolt-E4B-4GB-BF16 is a small language model post-trained by NVIDIA from Gemma-4-E4B-it. It keeps the Gemma 4 E4B architecture and refreshes the weights and the chat template. The BF16 release is the full-precision checkpoint intended for customization, post-training, and evaluation."
+    }
+  ]
+}

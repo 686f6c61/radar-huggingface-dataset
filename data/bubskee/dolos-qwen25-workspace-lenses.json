@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "bubskee/dolos-qwen25-workspace-lenses",
+  "slug": "bubskee-dolos-qwen25-workspace-lenses",
+  "author": "bubskee",
+  "url": "https://huggingface.co/bubskee/dolos-qwen25-workspace-lenses",
+  "created_at": "2026-10-24T01:21:26.000Z",
+  "updated_at": "2026-10-24T01:54:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mechanistic-interpretability",
+    "workspace-lens",
+    "dolos",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10019216951,
+  "storage_human": "10.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen2.5-VL - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen25-vl",
+      "snippet": "Vision-language model series based on Qwen2.5"
+    },
+    {
+      "title": "Qwen2.5 - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen25",
+      "snippet": "Qwen2.5 language models, including pretrained and instruction-tuned models of 7 sizes, including 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B."
+    },
+    {
+      "title": "GitHub - TomGhostSmith/DeepSeek-Qwen2.5: Qwen2.5 is the large language ...",
+      "url": "https://github.com/TomGhostSmith/DeepSeek-Qwen2.5",
+      "snippet": "In the past three months since Qwen2&#x27;s release, numerous developers have built new models on the Qwen2 language models, providing us with valuable feedback. During this period, we have focused on creating smarter and more knowledgeable language models. Today, we are excited to introduce the latest addition to the Qwen family: Qwen2.5. Dense, easy-to-use, decoder-only language models, available ..."
+    },
+    {
+      "title": "Qwen2.5-Omni Complete Guide: Alibaba&#x27;s Multimodal AI Model for ...",
+      "url": "https://crazyrouter.com/en/blog/qwen25-omni-guide-multimodal-ai",
+      "snippet": "It&#x27;s a true multimodal model — a single architecture that can process and generate text, images, audio, and video. For developers building applications that need to handle multiple input types, Qwen2.5-Omni offers a compelling alternative to juggling separate models for each modality."
+    },
+    {
+      "title": "GitHub - elsawhs/qwen2.5-vl: Qwen2.5-VL is the multimodal large ...",
+      "url": "https://github.com/elsawhs/qwen2.5-vl",
+      "snippet": "Qwen2.5-VL is the multimodal large language model series developed by Qwen team, Alibaba Cloud. - elsawhs/qwen2.5-vl"
+    }
+  ]
+}

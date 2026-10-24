@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "mattmireles/kokoro-coreml",
+  "slug": "mattmireles-kokoro-coreml",
+  "author": "mattmireles",
+  "url": "https://huggingface.co/mattmireles/kokoro-coreml",
+  "created_at": "2026-04-07T11:34:06.000Z",
+  "updated_at": "2026-10-24T02:14:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "coreml",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "coreml",
+    "text-to-speech",
+    "kokoro",
+    "apple-silicon",
+    "ane",
+    "neural-engine",
+    "on-device",
+    "en",
+    "base_model:hexgrad/Kokoro-82M",
+    "base_model:quantized:hexgrad/Kokoro-82M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 10,
+  "downloads_30d": 3541,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3209372803,
+  "storage_human": "3.2 GB",
+  "base_model": "hexgrad/Kokoro-82M",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "14 new projects expand lemur conservation to new sites, species",
+      "url": "https://iucn.org/story/202604/14-new-projects-expand-lemur-conservation-new-sites-species-and-communities-across",
+      "snippet": "Apr 30, 2026 · Dans l’ouest de Madagascar, Chances for Nature Madagascar renforce les efforts de conservation dans la forêt de …"
+    },
+    {
+      "title": "14 new projects expand lemur conservation to new sites, species and ...",
+      "url": "https://iucnsos.org/14-new-projects-expand-lemur-conservation-to-new-sites-species-and-communities-across-madagascar/",
+      "snippet": "Apr 29, 2026 · Dans l’ouest de Madagascar, Chances for Nature Madagascar renforce les efforts de conservation dans la forêt de …"
+    },
+    {
+      "title": "Home – Lemur Conservation Network",
+      "url": "https://www.lemurconservationnetwork.org/",
+      "snippet": "We believe lemurs can be saved from extinction if we all work together. LCN unites and supports over 60 conservation organizations …"
+    },
+    {
+      "title": "Conservation Lémuriens de Madagascar - new.moov.mg",
+      "url": "https://new.moov.mg/actualite/nationale/108591-conservation-onze-nouveaux-projets-pour-renforcer-la-protection-des-lemuriens-a-madagascar",
+      "snippet": "Nov 3, 2025 · Cadre mondial de Kunming-Montréal pour la biodiversité Ces onze projets traduisent une approche intégrée, qui relie …"
+    },
+    {
+      "title": "Les projets de conservation des lémuriens à madagascar : réussites …",
+      "url": "https://www.lesaiglesduleman.fr/les-projets-de-conservation-des-lemuriens-a-madagascar-reussites-et-defis/",
+      "snippet": "Aug 19, 2024 · Mais quels sont les succès et les obstacles rencontrés par ces projets ? Cet article plonge au cœur de la plateforme …"
+    }
+  ]
+}

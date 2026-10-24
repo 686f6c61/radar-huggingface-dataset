@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "wherobots/olmoearth-v1_3-base-pt2",
+  "slug": "wherobots-olmoearth-v1_3-base-pt2",
+  "author": "wherobots",
+  "url": "https://huggingface.co/wherobots/olmoearth-v1_3-base-pt2",
+  "created_at": "2026-10-24T01:39:45.000Z",
+  "updated_at": "2026-10-24T01:39:51.000Z",
+  "license": "olmoearth-artifact-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 458829105,
+  "storage_human": "459 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OlmoEarth v1.3: State-of-the-art embeddings for the whole planet",
+      "url": "https://huggingface.co/blog/allenai/olmoearth-v1-3",
+      "snippet": "A Blog post by Ai2 on Hugging Face"
+    },
+    {
+      "title": "OlmoEarth",
+      "url": "https://olmoearth.allenai.org/",
+      "snippet": "OlmoEarth v1.3 brings state-of-the-art satellite embeddings, precomputed global data, and a browser-based Embeddings Explorer for mapping and analyzing the planet."
+    },
+    {
+      "title": "OlmoEarth open models",
+      "url": "https://olmoearth.allenai.org/models",
+      "snippet": "OlmoEarth Engine (rslearn) A tool for developing remote sensing datasets and models. You define spatiotemporal windows, boxes in space and time, and add your training labels to them. rslearn pulls matching imagery, fine-tunes a model on it, and applies it to new places and dates."
+    },
+    {
+      "title": "[2511.13655] OlmoEarth: Stable Latent Image Modeling for Multimodal ...",
+      "url": "https://arxiv.org/abs/2511.13655",
+      "snippet": "Earth observation data presents a unique challenge: it is spatial like images, sequential like video or text, and highly multimodal. We present OlmoEarth: a multimodal, spatio-temporal foundation model that employs a novel self-supervised learning formulation, masking strategy, and loss all designed for the Earth observation domain. OlmoEarth achieves state-of-the-art performance compared to ..."
+    },
+    {
+      "title": "OlmoEarth | Ai2",
+      "url": "https://allenai.org/olmoearth",
+      "snippet": "OlmoEarth news October 2026 - OlmoEarth v1.3: State-of-the-art embeddings for the whole planet OlmoEarth v1.3 brings state-of-the-art satellite embeddings, precomputed global data, and a browser-based…"
+    }
+  ]
+}

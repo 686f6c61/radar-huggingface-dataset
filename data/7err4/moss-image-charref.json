@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "7err4/MOSS-Image-CharRef",
+  "slug": "7err4-moss-image-charref",
+  "author": "7err4",
+  "url": "https://huggingface.co/7err4/MOSS-Image-CharRef",
+  "created_at": "2026-10-22T21:21:45.000Z",
+  "updated_at": "2026-10-22T21:31:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "comfyui",
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "moss-image",
+    "character-reference",
+    "image-editing",
+    "anime",
+    "base_model:OpenMOSS-Team/MOSS-Image-Base",
+    "base_model:adapter:OpenMOSS-Team/MOSS-Image-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 20,
+  "downloads_30d": 0,
+  "trending_score": 20,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 150665737,
+  "storage_human": "151 MB",
+  "base_model": "OpenMOSS-Team/MOSS-Image-Base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "7err4/MOSS-Image-CharRef · Hugging Face",
+      "url": "https://huggingface.co/7err4/MOSS-Image-CharRef",
+      "snippet": "Reference (left) → three new scenes, CharRef v2 at 1.0, MOSS-Image full mode (50 steps, cfg 3, sgm_uniform, SLG single layer 22), 832×1216, prompt = prefix + scene tags + appearance words. No cherry-picking: one seed per scene. ai-toolkit edit mode (arch: moss_image, edit: true, kv_cache: true), LoRA rank 32 / alpha 32, AdamW8bit 1e-4, batch 1, 1000 steps, 1024 px, MOSS-Image Base bf16."
+    },
+    {
+      "title": "GitHub - TimothyZhang7/MOSS-Image-CharRef-PoC: Early proof of ...",
+      "url": "https://github.com/TimothyZhang7/MOSS-Image-CharRef-PoC",
+      "snippet": "Download the LoRA: moss_image_charref_poc.safetensors (145 MB, from the latest release; also on Hugging Face)."
+    },
+    {
+      "title": "pleiades7/MOSS-Image-CharRef-PoC · Hugging Face",
+      "url": "https://huggingface.co/pleiades7/MOSS-Image-CharRef-PoC",
+      "snippet": "The reference's art style usually comes out more like MOSS's default anime look. Early experiment: small dataset, short training, very little testing. Not tuned or evaluated beyond a few examples. Trainer: AI Toolkit, MOSS-Image Base in edit mode (edit, kv_cache, match_target_res, block 22 skipped on the negative branch)."
+    },
+    {
+      "title": "Overview and Evaluation of MOSS-Image (Surpassing Anima and ...",
+      "url": "https://note.com/hirorohi03/n/n085c66f9f7fc?hl=en",
+      "snippet": "MOSS-Image is the latest image generation model developed by the OpenMOSS team. The OpenMOSS team is a research group established by three parties: Fudan University, the Shanghai Innovation Institute (SII), and MOSI Intelligence. They have released many AI models in addition to MOSS-Image."
+    },
+    {
+      "title": "MOSS Image - SFT | MOSS Image Checkpoint | Civitai",
+      "url": "https://civitai.com/models/3005406/moss-image",
+      "snippet": "MOSS Image is a 5B parameter text-to-image DiT from the OpenMOSS team, built for accurate in-image text, layout control and long prompts. It pairs ..."
+    }
+  ]
+}

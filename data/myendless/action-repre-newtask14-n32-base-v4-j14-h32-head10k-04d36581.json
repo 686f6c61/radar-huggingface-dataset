@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "myendless/action-repre-newtask14-n32-base-v4-j14-h32-head10k-04d36581",
+  "slug": "myendless-action-repre-newtask14-n32-base-v4-j14-h32-head10k-04d36581",
+  "author": "myendless",
+  "url": "https://huggingface.co/myendless/action-repre-newtask14-n32-base-v4-j14-h32-head10k-04d36581",
+  "created_at": "2026-10-24T08:36:51.000Z",
+  "updated_at": "2026-10-24T08:41:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "action-representation",
+    "qwenpi-v4",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11255480517,
+  "storage_human": "11.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Black White Effect royalty-free images - Shutterstock",
+      "url": "https://www.shutterstock.com/search/black-white-effect?msockid=25889db2178668c508548a4e165f6978",
+      "snippet": "Abstract black and white image with grainy texture and blurred shapes, creating a mysterious and artistic visual effect. Glossy black …Read more"
+    },
+    {
+      "title": "Light Effects Black White royalty-free images - Shutterstock",
+      "url": "https://www.shutterstock.com/search/light-effects-black-white?msockid=25889db2178668c508548a4e165f6978",
+      "snippet": "Find 2+ Million Light Effects Black White stock images in HD and millions of other royalty-free stock photos, 3D objects, illustrations …"
+    },
+    {
+      "title": "Abstract effect light in Black & White Stock Photos - Alamy",
+      "url": "https://www.alamy.com/stock-photo/abstract-effect-light-in.html?blackwhite=1",
+      "snippet": "RF 3BRPGWJ – Abstract view of geometric patterns and lines, an architectural structure with high ceiling and light streaming …"
+    },
+    {
+      "title": "Abstract Black and White Light Bokeh Effect · Free Stock Photo",
+      "url": "https://www.pexels.com/photo/abstract-black-and-white-light-bokeh-effect-36825840/",
+      "snippet": "Mar 30, 2026 · Where stories come together. Artistic black and white bokeh light pattern creating an abstract effect."
+    },
+    {
+      "title": "Lighting abstract effect background Black & White Stock Photos",
+      "url": "https://www.alamy.com/stock-photo/lighting-abstract-effect-background.html?blackwhite=1",
+      "snippet": "Find the perfect lighting abstract effect background black & white image. Huge collection, amazing choice, 100+ million high quality, …"
+    }
+  ]
+}

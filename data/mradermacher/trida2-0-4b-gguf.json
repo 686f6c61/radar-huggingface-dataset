@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Trida2.0-4B-GGUF",
   "created_at": "2026-09-19T15:40:59.000Z",
-  "updated_at": "2026-10-16T23:53:36.000Z",
+  "updated_at": "2026-10-24T00:41:39.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -19,8 +19,8 @@
     "self-speculative-decoding",
     "qwen3.5",
     "en",
-    "base_model:trillionlabs/Trida2.0-4B",
-    "base_model:quantized:trillionlabs/Trida2.0-4B",
+    "base_model:trillionlabs/Zoro",
+    "base_model:quantized:trillionlabs/Zoro",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us",
@@ -33,7 +33,7 @@
   "parameters_human": "4.84B",
   "storage_bytes": 44317312576,
   "storage_human": "44.3 GB",
-  "base_model": "trillionlabs/Trida2.0-4B",
+  "base_model": "trillionlabs/Zoro",
   "formats": [
     "gguf"
   ],

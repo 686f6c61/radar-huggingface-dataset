@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "TBob23/a2c-PandaReachDense-v3",
+  "slug": "tbob23-a2c-pandareachdense-v3",
+  "author": "TBob23",
+  "url": "https://huggingface.co/TBob23/a2c-PandaReachDense-v3",
+  "created_at": "2026-10-24T08:51:54.000Z",
+  "updated_at": "2026-10-24T08:53:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "PandaReachDense-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 816133,
+  "storage_human": "816133 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Claudio Serpico - Hefei Blue Star Fusion Technology Co., Ltd | LinkedIn",
+      "url": "https://cn.linkedin.com/in/claudioserpico/it",
+      "snippet": "🚀 Excited to announce that I’ve joined Hefei Blue Star Fusion Technology Co., Ltd as Chief of Staff & Head of International Affairs! …"
+    },
+    {
+      "title": "Claudio Serpico - Hefei Blue Star Fusion Technology Co., Ltd | 领英",
+      "url": "https://cn.linkedin.com/in/claudioserpico",
+      "snippet": "🚀 Excited to announce that I’ve joined Hefei Blue Star Fusion Technology Co., Ltd as Chief of Staff & Head of International Affairs! …"
+    },
+    {
+      "title": "Excited to announce that I’ve joined Hefei Blue Star Fusion ...",
+      "url": "https://www.linkedin.com/posts/claudioserpico_excited-to-announce-that-ive-joined-hefei-activity-7463784841713516544-1qOC",
+      "snippet": "Our ambitious program is growing fast, and we’re looking for outstanding technical experts from around the world to join us in …"
+    },
+    {
+      "title": "Claudio SERPICO | Project Officer | Doctor of Philosophy | RI …",
+      "url": "https://www.researchgate.net/profile/Claudio-Serpico",
+      "snippet": "Results of conditioning and high power testing of short HG prototype and In-Vacuum Phase shifter are shared along with the …"
+    },
+    {
+      "title": "2 \"Claudio Serpico\" profiles | LinkedIn",
+      "url": "https://www.linkedin.com/pub/dir/claudio/serpico",
+      "snippet": "View the profiles of professionals named &quot;Claudio Serpico&quot; on LinkedIn."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "deepquillapp/gector-grammar",
+  "slug": "deepquillapp-gector-grammar",
+  "author": "deepquillapp",
+  "url": "https://huggingface.co/deepquillapp/gector-grammar",
+  "created_at": "2026-10-24T01:44:35.000Z",
+  "updated_at": "2026-10-24T01:47:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "grammatical-error-correction",
+    "gector",
+    "roberta",
+    "token-classification",
+    "en",
+    "base_model:FacebookAI/roberta-base",
+    "base_model:quantized:FacebookAI/roberta-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 256279090,
+  "storage_human": "256 MB",
+  "base_model": "FacebookAI/roberta-base",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vidéos recommandées pour vous - EPORNER: Tube Porno HD",
+      "url": "https://fr.eporner.com/recommendations/",
+      "snippet": "Tube porno Full HD gratuit - vidéos et photos de qualité HD. Regardez plus de 2 785 355 films de sexe en haute définition, …"
+    },
+    {
+      "title": "Videos Recommended For You - EPORNER: HD Porn Tube",
+      "url": "https://www.eporner.com/recommendations/",
+      "snippet": "Free Full HD porn tube - HD quality videos and photos. Watch over 2,785,355 full length hd sex movies, download porn xxx videos, …"
+    },
+    {
+      "title": "Top Rated Porn Videos - EPORNER: HD Porn Tube",
+      "url": "https://www.eporner.com/top-rated/",
+      "snippet": "Collection of the Top Rated Porn Videos rated by Eporner users."
+    },
+    {
+      "title": "Free Porno Vidéos - EPORNER",
+      "url": "https://fr.eporner.com/categorie/tous/",
+      "snippet": "Aug 29, 2026 · Regardez les vidéos porno de Free en qualité HD sur Eporner.com. Nous avons dans notre base de données des …"
+    },
+    {
+      "title": "HD Porno Videos - Full High Definition Filme | EPORNER",
+      "url": "https://de.eporner.com/",
+      "snippet": "Sehen Sie sich kostenlos Full HD-Porno-Videos an. Wir haben über 5,291,502 Hardcore HD Sex Filme in voller Länge in 720p, …"
+    }
+  ]
+}

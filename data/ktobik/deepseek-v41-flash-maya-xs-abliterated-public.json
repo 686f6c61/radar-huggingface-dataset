@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ktobik/deepseek-v41-flash-maya-xs-abliterated-public",
+  "slug": "ktobik-deepseek-v41-flash-maya-xs-abliterated-public",
+  "author": "ktobik",
+  "url": "https://huggingface.co/ktobik/deepseek-v41-flash-maya-xs-abliterated-public",
+  "created_at": "2026-10-24T08:52:22.000Z",
+  "updated_at": "2026-10-24T08:52:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "abliterated",
+    "deepseek",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "license:mit",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 754638867584,
+  "parameters_human": "754.64B",
+  "storage_bytes": 365713686528,
+  "storage_human": "365.7 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeepSeek-V4.1-Flash-1017-Maya-S-abliterated-GGUF",
+      "url": "https://huggingface.co/Kiwimaker/DeepSeek-V4.1-Flash-1017-Maya-S-abliterated-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "securepeak/DeepSeek-V4.1-Flash-Abliterated · Hugging Face",
+      "url": "https://huggingface.co/securepeak/DeepSeek-V4.1-Flash-Abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - mw00/project-maya: Project Maya - run GLM-5.3-Flash (321B MoE ...",
+      "url": "https://github.com/mw00/project-maya",
+      "snippet": "A 321-billion-parameter AI model on your own GPU GLM-5.3-Flash, private and fast · one NVIDIA GPU or up to 16 · AMD and Windows (experimental) · chat, pictures, OpenAI- and Anthropic-compatible API · several requests at once Created and led by Peasant Smith (@mw00), co-maintained with @needmorevram ☕ Support Project Maya - buy me a coffee Models this size usually need a datacenter. Maya ..."
+    },
+    {
+      "title": "DeepSeek | Introducing DeepSeek-V4.1-Flash: smarter, faster, more ...",
+      "url": "https://www.deepseek.com/en/news/deepseek-v4-1-flash/",
+      "snippet": "Introducing the smallest model in our new architecture family, with native visual understanding. Designed for greater capability, faster inference, and higher throughput."
+    },
+    {
+      "title": "DeepSeek-V4.1-Flash · Models",
+      "url": "https://www.modelscope.cn/models/deepseek-ai/DeepSeek-V4.1-Flash",
+      "snippet": "DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression Technical Report 👁️ Introduction We introduce DeepSeek-V4.1-Flash, a multimodal Mixture-of-Experts (MoE) model with 552B backbone parameters and support for contexts of up to one million tokens. The model natively processes images and text, and generates text autoregressively."
+    }
+  ]
+}

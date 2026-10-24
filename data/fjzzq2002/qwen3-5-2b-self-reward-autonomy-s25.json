@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "fjzzq2002/qwen3.5-2b-self-reward-autonomy-s25",
+  "slug": "fjzzq2002-qwen3-5-2b-self-reward-autonomy-s25",
+  "author": "fjzzq2002",
+  "url": "https://huggingface.co/fjzzq2002/qwen3.5-2b-self-reward-autonomy-s25",
+  "created_at": "2026-10-24T01:23:57.000Z",
+  "updated_at": "2026-10-24T06:51:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "grpo",
+    "self-reward",
+    "reinforcement-learning",
+    "ai-welfare",
+    "research",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2213241664,
+  "parameters_human": "2.21B",
+  "storage_bytes": 53138695693,
+  "storage_human": "53.1 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nos Offres | Emploi SNCF",
+      "url": "https://emploi.sncf.com/nos-offres",
+      "snippet": "SNCF recrute à tous les niveaux dans ses 150 métiers, retrouvez la liste complète de nos offres d'emploi."
+    },
+    {
+      "title": "Emploi groupe SNCF : Recrutement",
+      "url": "https://emploi.sncf.com/",
+      "snippet": "Nous recrutons des candidats sans diplôme jusqu'à bac +5, avec ou sans expérience, dans nos 150 métiers. Maintenance, conduite, …"
+    },
+    {
+      "title": "Sncf : plus de 400 emplois (23 octobre 2026) | Indeed",
+      "url": "https://fr.indeed.com/Emplois-emploi-sncf",
+      "snippet": "Vous êtes à la recherche d'un emploi : Sncf ? Il y en a 491 disponibles sur Indeed.com, le plus grand site d'emploi mondial."
+    },
+    {
+      "title": "SNCF recrutement - Octobre 2026 - Jobijoba",
+      "url": "https://www.jobijoba.com/fr/emploi/SNCF",
+      "snippet": "De part sa taille importante et ses multiples branches de métier, la SNCF recrute en permanence. Qui plus est, elle ne fait pas …"
+    },
+    {
+      "title": "Travailler à la SNCF | Groupe SNCF",
+      "url": "https://www.groupe-sncf.com/fr/groupe/emploi",
+      "snippet": "Feb 26, 2024 · Vous êtes étudiant, jeune diplômé ou expérimenté et vous souhaitez rejoindre nos équipes ? SNCF recrute à tous les …"
+    }
+  ]
+}

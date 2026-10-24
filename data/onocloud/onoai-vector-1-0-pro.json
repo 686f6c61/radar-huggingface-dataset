@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "onocloud/onoai-vector-1.0-pro",
+  "slug": "onocloud-onoai-vector-1-0-pro",
+  "author": "onocloud",
+  "url": "https://huggingface.co/onocloud/onoai-vector-1.0-pro",
+  "created_at": "2026-10-24T01:16:08.000Z",
+  "updated_at": "2026-10-24T01:28:11.000Z",
+  "license": "onocloud-sovereign-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "vector_tracer",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Que faire à Queenstown en 2026 ? Notre guide visite IDÉAL",
+      "url": "https://www.jeremybackpacker.com/queenstown-nouvelle-zelande/",
+      "snippet": "Aug 18, 2026 · Que faire à Queenstown ? Visiter la capitale de l’outdoor made in Nouvelle-Zélande [Guide Complet] Découvre que …"
+    },
+    {
+      "title": "Queenstown en 2026 : ce que la ville a changé, vu de l'intérieur",
+      "url": "https://advised-traveler.com/oceanie/guide-voyage-nouvelle-zelande/visiter-premiere-fois-queenstown-faire-voir/",
+      "snippet": "Jul 14, 2026 · Première fois à Queenstown ? Préparez-vous à vivre une aventure inoubliable dans ce joyau de Nouvelle-Zélande ! …"
+    },
+    {
+      "title": "circuits & séjours à Queenstown - Les Maisons du Voyage",
+      "url": "https://www.maisonsduvoyage.com/oceanie/nouvelle-zelande/queenstown",
+      "snippet": "May 15, 2026 · Envie d'un voyage à Queenstown? Découvrez la sélection des Maisons du Voyage ou contactez-nous pour un …"
+    },
+    {
+      "title": "Guide de voyage Queenstown : lac Wakatipu, Nouvelle-Zélande",
+      "url": "https://www.queenstown-trip.com/fr/destinations/queenstown/",
+      "snippet": "Nos guides sur pourquoi Queenstown est si chère et sur comment visiter Queenstown avec un budget serré détaillent où va …"
+    },
+    {
+      "title": "Voyage Queenstown sur mesure, séjour Queenstown à la carte",
+      "url": "https://www.voyageursdumonde.fr/voyage-sur-mesure/recherche-voyage-tag/voyage-queenstown",
+      "snippet": "Découvrez les offres de voyages Queenstown de Voyageurs du Monde, l'agence de voyage sur mesure spécialiste des circuits, …"
+    }
+  ]
+}

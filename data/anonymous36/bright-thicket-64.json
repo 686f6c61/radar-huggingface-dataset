@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Anonymous36/bright-thicket-64",
+  "slug": "anonymous36-bright-thicket-64",
+  "author": "Anonymous36",
+  "url": "https://huggingface.co/Anonymous36/bright-thicket-64",
+  "created_at": "2026-10-24T08:26:05.000Z",
+  "updated_at": "2026-10-24T08:26:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1887771989,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free AI 3D Model Generator from Text & Images | Image to 3D AI",
+      "url": "https://image-to-3d.ai/ai-3d-model-generator/",
+      "snippet": "Create production-ready 3D models from text or images with our free AI 3D model generator. Clean geometry, rich textures, and easy export for any project."
+    },
+    {
+      "title": "Free AI 3D Model Generator - MeshGPT",
+      "url": "https://meshgpt.io/",
+      "snippet": "Create stunning 3D models from text or images instantly with our free AI 3d model generator. Transform your ideas into production-ready 3D assets with MeshGPT."
+    },
+    {
+      "title": "Free Anonymous AI | Free AI Tools & Anonymous AI, No Sign Up",
+      "url": "https://www.freeanonymousai.com/",
+      "snippet": "Free AI Chat Tools Ask anything, brainstorm, research and get clear explanations. Routed to the best AI model for your question."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchives.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "hitem3d | AI 3D Model Generator",
+      "url": "https://hitem3d.pro/",
+      "snippet": "Hitem3d is an all-in-one AI 3D creation platform that turns text or images into detailed, editable, maker-ready 3D models. Create figurines, gifts, game assets, product concepts, and more from a simple starting point."
+    }
+  ]
+}

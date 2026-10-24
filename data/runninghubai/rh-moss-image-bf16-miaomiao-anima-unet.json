@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-moss-image-bf16-miaomiao-anima-unet",
+  "slug": "runninghubai-rh-moss-image-bf16-miaomiao-anima-unet",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-moss-image-bf16-miaomiao-anima-unet",
+  "created_at": "2026-10-24T08:50:37.000Z",
+  "updated_at": "2026-10-24T08:57:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "unet",
+    "text-to-video",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10165663300,
+  "storage_human": "10.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RunningHub ｜ AI Agent-Powered Content Creation Platform with ComfyUI ...",
+      "url": "https://www.runninghub.ai/",
+      "snippet": "RunningHub is an all-in-one content creation platform powered by native AI agents. Build end-to-end creative workflows with ComfyUI workflows, infinite canvas, AI apps, image & video generation, and model API access."
+    },
+    {
+      "title": "RunningHubAI/rh-moss-image-bf16-turbo-8-unet · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-moss-image-bf16-turbo-8-unet",
+      "snippet": "This repository provides rh-moss-image-bf16-turbo-8-unet weight files. You can load them on RunningHub."
+    },
+    {
+      "title": "rh-moss-image-sft-bf16.safetensors-unet - Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-moss-image-sft-bf16.safetensors-unet",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RunningHub Models ｜ AI Model Creation & Training Platform",
+      "url": "https://www.runninghub.ai/models",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "MOSS-Image/comfyui at main · OpenMOSS/MOSS-Image · GitHub",
+      "url": "https://github.com/OpenMOSS/MOSS-Image/tree/main/comfyui",
+      "snippet": "In MOSS-Image HF Loader, set model_path to the downloaded local directory containing transformer/, text_encoder/, tokenizer/, and vae/. Edit the positive and negative prompts, then click Run to generate an image."
+    }
+  ]
+}

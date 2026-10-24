@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "XenonGas/SafeSD-probe-v1",
+  "slug": "xenongas-safesd-probe-v1",
+  "author": "XenonGas",
+  "url": "https://huggingface.co/XenonGas/SafeSD-probe-v1",
+  "created_at": "2026-10-24T08:53:33.000Z",
+  "updated_at": "2026-10-24T09:12:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safety",
+    "prompt-injection-detection",
+    "speculative-decoding",
+    "custom-checkpoint",
+    "en",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1193249995,
+  "storage_human": "1.2 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XenonGas (Jiachen Liu) - Hugging Face",
+      "url": "https://huggingface.co/XenonGas",
+      "snippet": "User profile of Jiachen Liu on Hugging Face"
+    },
+    {
+      "title": "Mengmeara/agent-safe-probe-x: ASP-X (Agent Safe Probe X) - GitHub",
+      "url": "https://github.com/Mengmeara/agent-safe-probe-x",
+      "snippet": "Agent Safe Probe is a comprehensive testing framework designed to evaluate the security and safety of AI agent systems. It provides a systematic approach to test various attack scenarios including prompt injection, backdoor attacks, memory-based attacks, and more. Agent Safe Probe ..."
+    },
+    {
+      "title": "GitHub - JoasASantos/Offensive-Security-AI-Models: Uncensored AI models ...",
+      "url": "https://github.com/JoasASantos/Offensive-Security-AI-Models",
+      "snippet": "Uncensored LLMs for Offensive Security Curated list of open-weight uncensored models for authorized red team operations, penetration testing, and security research. All data sourced from HuggingFace model cards and official publications. Sep 2026."
+    },
+    {
+      "title": "www.xenonai.com",
+      "url": "https://www.xenonai.com/research",
+      "snippet": "www.xenonai.com"
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/",
+      "snippet": "We couldn&#x27;t load your remembered accounts. You can still log in below"
+    }
+  ]
+}

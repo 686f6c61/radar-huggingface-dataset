@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "VinayakOjha1111122222/BAGALA",
+  "slug": "vinayakojha1111122222-bagala",
+  "author": "VinayakOjha1111122222",
+  "url": "https://huggingface.co/VinayakOjha1111122222/BAGALA",
+  "created_at": "2026-10-24T09:03:58.000Z",
+  "updated_at": "2026-10-24T09:10:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1100048384,
+  "parameters_human": "1.10B",
+  "storage_bytes": 668788096,
+  "storage_human": "669 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Les Misérables (2012) - Full cast & crew - IMDb",
+      "url": "https://www.imdb.com/title/tt1707386/fullcredits/",
+      "snippet": "Les Misérables (2012) - Cast and crew credits, including actors, actresses, directors, writers and more."
+    },
+    {
+      "title": "Casting du film Les Misérables : Réalisateurs, acteurs et équipe ...",
+      "url": "https://www.allocine.fr/film/fichefilm-326160/casting/",
+      "snippet": "Retrouvez tout le casting du film Les Misérables réalisé par Fred Cavayé avec Vincent Lindon, Tahar Rahim, Camille Cottin"
+    },
+    {
+      "title": "Les Misérables - Cast & Crew — The Movie Database (TMDB)",
+      "url": "https://www.themoviedb.org/movie/82695-les-miserables/cast",
+      "snippet": "Jean Valjean, a man imprisoned for stealing bread, must flee a relentless policeman named Javert. The pursuit consumes both …"
+    },
+    {
+      "title": "Les Misérables (2012 film) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Les_Mis%C3%A9rables_(2012_film)",
+      "snippet": "The film stars Hugh Jackman, Russell Crowe, Anne Hathaway, Eddie Redmayne, Amanda Seyfried, Helena Bonham Carter and …"
+    },
+    {
+      "title": "Les Misérables (2012) - IMDb",
+      "url": "https://www.imdb.com/title/tt1707386/",
+      "snippet": "Dec 25, 2012 · Featuring some bravura performances from an all-star cast including Anne Hathaway (Oscar winner), Hugh Jackman …"
+    }
+  ]
+}

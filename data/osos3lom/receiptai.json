@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "osos3lom/receiptai",
+  "slug": "osos3lom-receiptai",
+  "author": "osos3lom",
+  "url": "https://huggingface.co/osos3lom/receiptai",
+  "created_at": "2026-10-24T08:51:27.000Z",
+  "updated_at": "2026-10-24T09:57:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "onnx",
+    "safetensors",
+    "roberta",
+    "feature-extraction",
+    "lora",
+    "receipt-understanding",
+    "key-information-extraction",
+    "zatca",
+    "transformers.js",
+    "webgpu",
+    "image-text-to-text",
+    "conversational",
+    "ar",
+    "en",
+    "base_model:HuggingFaceTB/SmolVLM-256M-Instruct",
+    "base_model:adapter:HuggingFaceTB/SmolVLM-256M-Instruct",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 714067417,
+  "storage_human": "714 MB",
+  "base_model": "HuggingFaceTB/SmolVLM-256M-Instruct",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ReceiptAI",
+      "url": "https://aiexpenseit.com/",
+      "snippet": "AI-powered receipt management - scan, organize, and track your expenses"
+    },
+    {
+      "title": "GitHub - rijff24/receiptAI: Receipt scanner using AI/OCR to extract and ...",
+      "url": "https://github.com/rijff24/receiptAI",
+      "snippet": "Receipt scanner using AI/OCR to extract and classify receipt data. Features in-app settings, encrypted API key storage, multiple AI providers (OpenAI, Gemini), and COICOP classification. Built with Python and Streamlit. - rijff24/receiptAI"
+    },
+    {
+      "title": "ReceiptsAI - AI Receipt Scanner & Bookkeeping Software",
+      "url": "https://receiptsai.com/",
+      "snippet": "Extract data from receipts, invoices, bank statements, and emails with AI. Automate expense tracking, categorization, and bookkeeping for small businesses."
+    },
+    {
+      "title": "ReceiptAI — Stop Losing Money at Tax Time",
+      "url": "https://receiptaiapp.com/",
+      "snippet": "Stop Losing Money At Tax Time. ReceiptAI scans receipts, tracks mileage, syncs your bank, and generates reports — all in one place. Every deduction captured, every business separated. No spreadsheets. No stress."
+    },
+    {
+      "title": "AI Receipt Processing: How It Works | ReceiptsAI",
+      "url": "https://receiptsai.com/faq/ai-receipt-processing",
+      "snippet": "AI receipt processing is an automated technology that uses artificial intelligence to read, understand, and extract information from receipts, invoices, and other financial documents. Unlike traditional manual data entry or basic OCR, AI-powered systems can understand context, recognize patterns, and make intelligent decisions about how to categorize and structure your financial data. Using ..."
+    }
+  ]
+}

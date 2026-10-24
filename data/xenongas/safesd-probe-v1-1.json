@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "XenonGas/SafeSD-probe-v1.1",
+  "slug": "xenongas-safesd-probe-v1-1",
+  "author": "XenonGas",
+  "url": "https://huggingface.co/XenonGas/SafeSD-probe-v1.1",
+  "created_at": "2026-10-24T08:53:35.000Z",
+  "updated_at": "2026-10-24T09:13:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safety",
+    "prompt-injection-detection",
+    "speculative-decoding",
+    "custom-checkpoint",
+    "en",
+    "base_model:XenonGas/SafeSD-probe-v1",
+    "base_model:finetune:XenonGas/SafeSD-probe-v1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1193248524,
+  "storage_human": "1.2 GB",
+  "base_model": "XenonGas/SafeSD-probe-v1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XenonGas (Jiachen Liu) - Hugging Face",
+      "url": "https://huggingface.co/XenonGas",
+      "snippet": "User profile of Jiachen Liu on Hugging Face"
+    },
+    {
+      "title": "Mengmeara/agent-safe-probe-x: ASP-X (Agent Safe Probe X) - GitHub",
+      "url": "https://github.com/Mengmeara/agent-safe-probe-x",
+      "snippet": "Agent Safe Probe is a comprehensive testing framework designed to evaluate the security and safety of AI agent systems. It provides a systematic approach to test various attack scenarios including prompt injection, backdoor attacks, memory-based attacks, and more. Agent Safe Probe ..."
+    },
+    {
+      "title": "GitHub - JoasASantos/Offensive-Security-AI-Models: Uncensored AI models ...",
+      "url": "https://github.com/JoasASantos/Offensive-Security-AI-Models",
+      "snippet": "Uncensored LLMs for Offensive Security Curated list of open-weight uncensored models for authorized red team operations, penetration testing, and security research. All data sourced from HuggingFace model cards and official publications. Sep 2026."
+    },
+    {
+      "title": "Top 10 Open-Source AI Agent Penetration Testing Projects",
+      "url": "https://blog.spark42.tech/top-10-open-source-ai-agent-penetration-testing-projects/",
+      "snippet": "Explore top open-source AI tools for penetration testing, from mature frameworks like CAI and Nebula to flexible assistants like HackingBuddyGPT. Compare features like self-hosted LLMs, automation, and real-world usability to find the right fit for your security workflows."
+    },
+    {
+      "title": "Top 19 AI Red Teaming Tools (2026): Secure Your ML Models",
+      "url": "https://www.marktechpost.com/2026/04/17/top-ai-red-teaming-tools/",
+      "snippet": "Top 19 AI Red Teaming Tools (2026) Below is a rigorously researched list of the latest and most reputable AI red teaming tools, frameworks, and platforms—spanning open-source, commercial, and industry-leading solutions for both generic and AI-specific attacks: Mindgard - Automated AI red teaming and model vulnerability assessment. Mend.io - AI red teaming that goes beyond detection ..."
+    }
+  ]
+}

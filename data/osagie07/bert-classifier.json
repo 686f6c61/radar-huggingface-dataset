@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Osagie07/bert-classifier",
+  "slug": "osagie07-bert-classifier",
+  "author": "Osagie07",
+  "url": "https://huggingface.co/Osagie07/bert-classifier",
+  "created_at": "2026-10-24T02:00:31.000Z",
+  "updated_at": "2026-10-24T02:00:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109484547,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437961700,
+  "storage_human": "438 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "stunglan/Bert_Classifier · Hugging Face",
+      "url": "https://huggingface.co/stunglan/Bert_Classifier",
+      "snippet": "Bert_Classifier This model is a fine-tuned version of bert-base-cased on the yelp_review_full dataset. It achieves the following results on the evaluation set: Loss: 1.9115 Accuracy: 0.56 Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training ..."
+    },
+    {
+      "title": "bert-classifier · PyPI",
+      "url": "https://pypi.org/project/bert-classifier/",
+      "snippet": "Release files for bert-classifier 0.1.18 For a detailed explanation of source distributions (sdists) and built distributions (wheels), please see the package formats documentation."
+    },
+    {
+      "title": "models/official/nlp/modeling/models/bert_classifier.py at master ...",
+      "url": "https://github.com/tensorflow/models/blob/master/official/nlp/modeling/models/bert_classifier.py",
+      "snippet": "Models and examples built with TensorFlow. Contribute to tensorflow/models development by creating an account on GitHub."
+    },
+    {
+      "title": "tfm.nlp.models.BertClassifier | TensorFlow v2.16.1",
+      "url": "https://www.tensorflow.org/api_docs/python/tfm/nlp/models/BertClassifier",
+      "snippet": "Classifier model based on a BERT-style transformer-based encoder."
+    },
+    {
+      "title": "GitHub - guoyaohua/BERT-Classifier: A general text classifier based on ...",
+      "url": "https://github.com/guoyaohua/BERT-Classifier",
+      "snippet": "💪: State-of-the-art: based on pretrained 12/24-layer BERT models released by Google AI, which is considered as a milestone in the NLP community. 🐣 Easy-to-use: require only two lines of code to fine-tune model or do inference. ⚡ Fast: The data preprocessing speed is more than 10 times faster than the original bert run_classifier (the specific speed improvement is related to the number ..."
+    }
+  ]
+}

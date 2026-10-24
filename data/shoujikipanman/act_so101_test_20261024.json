@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "shoujikipanman/act_so101_test_20261024",
+  "slug": "shoujikipanman-act_so101_test_20261024",
+  "author": "shoujikipanman",
+  "url": "https://huggingface.co/shoujikipanman/act_so101_test_20261024",
+  "created_at": "2026-10-24T08:21:45.000Z",
+  "updated_at": "2026-10-24T08:21:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:shoujikipanman/so101_test_20261024_160320",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206712864,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/reels/",
+      "snippet": "Instagram Reels lets you create and discover short, entertaining videos with audio, effects, and creative tools to share with friends or …"
+    },
+    {
+      "title": "Connecting People Through Everyday Moments | About Instagram",
+      "url": "https://about.instagram.com/about-us/",
+      "snippet": "Make the most of your Instagram experience by discovering new feature updates, tips, and tools to engage with your audience."
+    },
+    {
+      "title": "About Instagram: Features, Safety, Community & More",
+      "url": "https://about.instagram.com/",
+      "snippet": "Learn about Instagram: how the app works, key features, safety tools, teen accounts, parent resources, community programs, and …"
+    },
+    {
+      "title": "Help Center",
+      "url": "https://help.instagram.com/442610612501386/",
+      "snippet": "Find answers to your questions about Instagram features, account settings, and troubleshooting in the Instagram Help Center."
+    }
+  ]
+}

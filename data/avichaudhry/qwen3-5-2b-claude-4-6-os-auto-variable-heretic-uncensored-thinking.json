@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "Avichaudhry/Qwen3.5-2B-Claude-4.6-OS-Auto-Variable-HERETIC-UNCENSORED-THINKING",
+  "slug": "avichaudhry-qwen3-5-2b-claude-4-6-os-auto-variable-heretic-uncensored-thinking",
+  "author": "Avichaudhry",
+  "url": "https://huggingface.co/Avichaudhry/Qwen3.5-2B-Claude-4.6-OS-Auto-Variable-HERETIC-UNCENSORED-THINKING",
+  "created_at": "2026-10-24T08:37:20.000Z",
+  "updated_at": "2026-10-24T08:37:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "unsloth",
+    "abliterated",
+    "uncensored",
+    "heretic",
+    "fine tune",
+    "creative",
+    "creative writing",
+    "fiction writing",
+    "plot generation",
+    "sub-plot generation",
+    "story generation",
+    "scene continue",
+    "storytelling",
+    "fiction story",
+    "science fiction",
+    "romance",
+    "all genres",
+    "story",
+    "writing",
+    "vivid prosing",
+    "vivid writing",
+    "fiction",
+    "roleplaying",
+    "bfloat16",
+    "all use cases",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2213241664,
+  "parameters_human": "2.21B",
+  "storage_bytes": 4446548374,
+  "storage_human": "4.4 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5-2B-Claude-4.6-OS-Auto-Variable-HERETIC-UNCENSORED-THINKING",
+      "url": "https://huggingface.co/DavidAU/Qwen3.5-2B-Claude-4.6-OS-Auto-Variable-HERETIC-UNCENSORED-THINKING",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5-2B-Claude-4.6-OS-Auto-Variable-HERETIC-UNCENSORED-THINKING",
+      "url": "https://huggingface.co/squ0sh/Qwen3.5-2B-Claude-4.6-OS-Auto-Variable-HERETIC-UNCENSORED-THINKING",
+      "snippet": "Fine tune via Unsloth of Qwen 3.5 2B dense model using Claude-4.6-OS dataset (4 Claude datasets) on local hardware. Every attempt was made to ensure the training was \"mild\" and did not negatively affect the model&#x27;s already incrediblely strong benchmarks. Training on 4 datasets improves reasoning ..."
+    },
+    {
+      "title": "Qwen3.5-2B-Claude-4.6-OS-Auto-Variable-HERETIC-UNCENSORED-THINKING",
+      "url": "https://ossmodeldb.com/models/qwen3-5-2b-claude-4-6-os-auto-variable-heretic-uncensored-thinking",
+      "snippet": "Qwen3.5-2B-Claude-4.6-OS-Auto-Variable-HERETIC-UNCENSORED-THINKING at Q4_K_M is exactly 1,274,397,920 bytes (1.19 GiB / 1.27 GB) — an effective 4.606 bits per weight, not the nominal 4. Its KV cache at 32K is 0.38 GiB."
+    },
+    {
+      "title": "Qwen3.5-2B-Claude-4.6-OS-Auto-Variable-HERETIC-UNCENSORED-THINKING",
+      "url": "https://www.abliteratedmodels.org/qwen3.5-2b-claude-4.6-os-auto-variable-heretic-uncensored-thinking/",
+      "snippet": "Qwen3.5-2B-Claude-4.6-OS-Auto-Variable-HERETIC-UNCENSORED-THINKING is a Heretic-ablated variant of Qwen/Qwen3.5-2B, published on Hugging Face by DavidAU. It is 2B parameters, runs on a laptop CPU class and apache-2.0 licence. It is distributed across 5 repositories in GGUF, Transformers and GGUF (imatrix) formats, totalling 7.8K downloads."
+    },
+    {
+      "title": "DavidAU/Qwen3.5-2B-Claude-4.6-OS-Auto-Variable-HERETIC-UNCENSORED ...",
+      "url": "https://abliteration.org/models/DavidAU/Qwen3.5-2B-Claude-4.6-OS-Auto-Variable-HERETIC-UNCENSORED-THINKING",
+      "snippet": "Fine tune via Unsloth of Qwen 3.5 2B dense model using Claude-4.6-OS dataset (4 Claude datasets) on local hardware. Every attempt was made to ensure the training was \"mild\" and did not negatively affect the model&#x27;s already incrediblely strong benchmarks."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "staccs/DeepSeek-V4.1-Flash-1017-abliterated-dealignai-lecore-vq11cal-GGUF",
+  "slug": "staccs-deepseek-v4-1-flash-1017-abliterated-dealignai-lecore-vq11cal-gguf",
+  "author": "staccs",
+  "url": "https://huggingface.co/staccs/DeepSeek-V4.1-Flash-1017-abliterated-dealignai-lecore-vq11cal-GGUF",
+  "created_at": "2026-10-24T02:22:20.000Z",
+  "updated_at": "2026-10-24T05:35:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantized",
+    "vector-quantization",
+    "deepseek",
+    "moe",
+    "abliterated",
+    "uncensored",
+    "base_model:dealignai/DeepSeek-V4.1-Flash-1017-UNCENSORED-FP8",
+    "base_model:quantized:dealignai/DeepSeek-V4.1-Flash-1017-UNCENSORED-FP8",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 106804403562,
+  "parameters_human": "106.80B",
+  "storage_bytes": 213319915416,
+  "storage_human": "213.3 GB",
+  "base_model": "dealignai/DeepSeek-V4.1-Flash-1017-UNCENSORED-FP8",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeepSeek-V4.1-Flash-1017-lecore-vq10sh12-GGUF - Hugging Face",
+      "url": "https://huggingface.co/staccs/DeepSeek-V4.1-Flash-1017-lecore-vq10sh12-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4.1-Flash-1017 · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DeepSeek V4.1-Flash-1017: Free, MIT-Licensed Update [2026]",
+      "url": "https://tech-insider.org/deepseek-v4-1-flash-1017-mit-license-update-2026/",
+      "snippet": "DeepSeek shipped V4.1-Flash-1017 on Oct. 17, 2026, with open, MIT-licensed weights and claims of faster task completion across coding and agent work."
+    },
+    {
+      "title": "Awesome DeepSeek V4.1 Flash 1017 - GitHub",
+      "url": "https://github.com/sandbase-lab/awesome-deepseek-v4.1-flash",
+      "snippet": "A curated list of DeepSeek V4.1 Flash 1017 examples: videos, prompts and demos made with DeepSeek-V4.1-Flash-1017, the October 17, 2026 update of DeepSeek&#x27;s V4.1 Flash model. Three.js and WebGL 3D scenes, SVG and canvas animation, motion graphics and playable browser games, most of them written as ..."
+    },
+    {
+      "title": "Introducing DeepSeek-V4.1-Flash: smarter, faster, more efficient.",
+      "url": "https://www.deepseek.com/en/news/deepseek-v4-1-flash/",
+      "snippet": "Introducing the smallest model in our new architecture family, with native visual understanding. Designed for greater capability, faster inference, and higher throughput."
+    }
+  ]
+}

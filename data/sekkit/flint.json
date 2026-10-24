@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "sekkit/flint",
+  "slug": "sekkit-flint",
+  "author": "sekkit",
+  "url": "https://huggingface.co/sekkit/flint",
+  "created_at": "2026-10-24T01:26:09.000Z",
+  "updated_at": "2026-10-24T01:26:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "flint",
+    "text-generation",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39785287456,
+  "parameters_human": "39.79B",
+  "storage_bytes": 79587116933,
+  "storage_human": "79.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Recursive launches Flint, a laptop coding model it says was largely ...",
+      "url": "https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/",
+      "snippet": "Startup Recursive has released Flint, a free, laptop-sized coding model built largely by its own AI research system, as an early test of AI that improves itself."
+    },
+    {
+      "title": "Recursive says AI built most of its new Flint coding model",
+      "url": "https://startupfortune.com/recursive-says-ai-built-most-of-its-new-flint-coding-model/",
+      "snippet": "Recursive&#x27;s new Flint coding model, built by its Eureka Machine AI, got a positive but narrow Wired test using benchmarks the company itself generated."
+    },
+    {
+      "title": "Recursive Releases Flint, an Open-Weight 40B MoE Local Coding Model for ...",
+      "url": "https://www.marktechpost.com/2026/10/21/recursive-flint-local-coding-model/",
+      "snippet": "Recursive Flint is a 40B MoE local coding model with 2.5B active parameters, scoring 74.2% on SWE-bench Verified."
+    },
+    {
+      "title": "Flint AI Coding Model Hits 89.7% on SWE-Bench [2026]",
+      "url": "https://tech-insider.org/flint-ai-coding-model-swe-bench-2026/",
+      "snippet": "Recursive launches Flint, a 40B/2.5B open coding model scoring 89.7% on SWE-bench Pro v2, as Gemini 4 Argon and DeepSeek V4.1 Flash expand access."
+    },
+    {
+      "title": "Introducing Flint - Recursive",
+      "url": "https://recursive.com/updates/introducing-recursive-flint",
+      "snippet": "Building Flint was a practical test of Recursive&#x27;s Eureka Machine, our system for large-scale automated AI research and development. Our Eureka Machine helped develop nearly every part of Flint&#x27;s model-building stack, from data and training recipes to infrastructure and inference optimization."
+    }
+  ]
+}

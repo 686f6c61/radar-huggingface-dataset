@@ -46,6 +46,7 @@
     "dataset:sriram1983007/sra-stablecoin-risk-bench",
     "base_model:Qwen/Qwen3-4B-Instruct-2507",
     "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "doi:10.57967/hf/11215",
     "license:apache-2.0",
     "model-index",
     "eval-results",
@@ -54,7 +55,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 4596,
+  "downloads_30d": 4638,
   "trending_score": 0,
   "parameters": 4022468096,
   "parameters_human": "4.02B",

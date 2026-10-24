@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "fiore-lab/GLM-5.3-EXL3-Experts-4bit",
+  "slug": "fiore-lab-glm-5-3-exl3-experts-4bit",
+  "author": "fiore-lab",
+  "url": "https://huggingface.co/fiore-lab/GLM-5.3-EXL3-Experts-4bit",
+  "created_at": "2026-10-24T08:06:53.000Z",
+  "updated_at": "2026-10-24T08:09:21.000Z",
+  "license": "glm-5.3",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "exl3",
+    "glm",
+    "moe",
+    "dgx-spark",
+    "base_model:zai-org/GLM-5.3",
+    "base_model:finetune:zai-org/GLM-5.3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 368526716656,
+  "storage_human": "368.5 GB",
+  "base_model": "zai-org/GLM-5.3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ouvrir une autre boite mail que la mienne - Communauté Orange",
+      "url": "https://communaute.orange.fr/t5/Webmail-Orange/ouvrir-une-autre-boite-mail-que-la-mienne/td-p/2983753",
+      "snippet": "Jul 20, 2023 · Résolu : je suis sur ma boite mail orange et je veux en ouvrir une autre qui existe mais impossible, d'habitude on …Read more"
+    },
+    {
+      "title": "Accéder à mon mail Orange - Communauté Orange",
+      "url": "https://communaute.orange.fr/t5/Webmail-Orange/Acc%C3%A9der-%C3%A0-mon-mail-Orange/td-p/36",
+      "snippet": "Aug 2, 2013 · Les informations partagées vous ont-elles permis d'accéder à votre adresse mail Orange ? N'hésitez pas à revenir …"
+    },
+    {
+      "title": "Résolu : Basculer boîte mail d'un opérateur à l'autre... sa ...",
+      "url": "https://communaute.orange.fr/t5/Webmail-Orange/Basculer-bo%C3%AEte-mail-d-un-op%C3%A9rateur-%C3%A0-l-autre-sans-perte-de/td-p/2848931",
+      "snippet": "Oct 26, 2022 · Qu'Orange est le droit de ne plus basculer les messages vers Mail, je peux le concevoir. Orange n'autorise ni …"
+    },
+    {
+      "title": "Comment accéder à ma boîte mail après résiliation",
+      "url": "https://communaute.orange.fr/t5/Webmail-Orange/Comment-acc%C3%A9der-%C3%A0-ma-bo%C3%AEte-mail-apr%C3%A8s-r%C3%A9siliation/td-p/3050131",
+      "snippet": "Dec 1, 2023 · Bonjour J'ai résilié mon contrat box+ mobile le samedi 25 novembre et je ne peux plus accéder à ma messagerie …"
+    },
+    {
+      "title": "comment lier ma boîte gmail et ma boîte Orange",
+      "url": "https://communaute.orange.fr/t5/Webmail-Orange/comment-lier-ma-bo%C3%AEte-gmail-et-ma-bo%C3%AEte-Orange/td-p/530536",
+      "snippet": "Apr 2, 2015 · Me sdames,Messieurs. j'ai une boite mail chez orange,et une autre boite chezsfr que je veux resilier et m'abonner chez …"
+    }
+  ]
+}

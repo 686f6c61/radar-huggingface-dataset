@@ -27,7 +27,7 @@
     "base_model:quantized:cross-encoder/ettin-reranker-17m-v1",
     "region:us"
   ],
-  "likes": 14,
+  "likes": 15,
   "downloads_30d": 0,
   "trending_score": 11,
   "parameters": null,

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "deeep-sec/campus-placement-engine",
+  "slug": "deeep-sec-campus-placement-engine",
+  "author": "deeep-sec",
+  "url": "https://huggingface.co/deeep-sec/campus-placement-engine",
+  "created_at": "2026-10-24T08:05:49.000Z",
+  "updated_at": "2026-10-24T08:18:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4246056,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Plateforme IA de DeepL : traduction, voix et API",
+      "url": "https://www.deepl.com/fr",
+      "snippet": "Découvrez nos solutions IA et gagnez en efficacité : traduisez des enregistrements vocaux, des textes et des fichiers, ou intégrez …"
+    },
+    {
+      "title": "DeepSeek | API Platform",
+      "url": "https://www.deepseek.com/en/platform/",
+      "snippet": "DeepSeek is an AI research company focused on building world-leading general artificial intelligence. We develop and open-source …"
+    },
+    {
+      "title": "DeepL Pro | Translate Text, Word Docs & Other Docs Securely",
+      "url": "https://www.deepl.com/en/pro?c",
+      "snippet": "Fast, accurate and secure translations. DeepL Pro Translate for individuals and teams."
+    },
+    {
+      "title": "Deeeep.io - BETA",
+      "url": "https://deeeep.io/",
+      "snippet": "Rules for Forum -111 53 a message for anyone seeing this 25 15 Ballsinmyjawguy188 DISTRACK 3 2 The jews tried to take my …"
+    },
+    {
+      "title": "Deeeep.io - Jouer en ligne sur Snokido",
+      "url": "https://www.snokido.fr/jeu/deeeepio",
+      "snippet": "Parcourez l'océan, collectez de la nourriture, mangez et évoluez en de nombreux animaux différents dans le jeu multijoueur …"
+    }
+  ]
+}

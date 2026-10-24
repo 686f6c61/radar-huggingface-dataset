@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "imYChaudhary22/zen-polish-v32-bf16",
+  "slug": "imychaudhary22-zen-polish-v32-bf16",
+  "author": "imYChaudhary22",
+  "url": "https://huggingface.co/imYChaudhary22/zen-polish-v32-bf16",
+  "created_at": "2026-10-24T01:16:17.000Z",
+  "updated_at": "2026-10-24T01:22:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3",
+    "zenvoice",
+    "dictation",
+    "text-formatting",
+    "lora",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404547,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "imYChaudhary22/zen-polish-v32-4bit · Hugging Face",
+      "url": "https://huggingface.co/imYChaudhary22/zen-polish-v32-4bit",
+      "snippet": "imYChaudhary22 / zen-polish-v32-4bit Like 0 Text Generation MLX Safetensors qwen3 zenvoice dictation text-formatting dwq conversational 4-bit precision License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "imYChaudhary22/zen-polish-v22-4bit · Hugging Face",
+      "url": "https://huggingface.co/imYChaudhary22/zen-polish-v22-4bit",
+      "snippet": "imYChaudhary22 / zen-polish-v22-4bit Like 0 Text Generation MLX Safetensors qwen3 zenvoice dictation text-formatting lora conversational 6-bit License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Zen Polish V3 4bit - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/imychaudhary22/zen-polish-v3-4bit",
+      "snippet": "Registry entry for model Zen Polish V3 4bit; source metadata pending."
+    },
+    {
+      "title": "Zen Polish V2.1.7B 4bit by imYChaudhary22 - llm-explorer.com",
+      "url": "https://llm-explorer.com/model/imYChaudhary22%2Fzen-polish-v2-1.7b-4bit,56AROxVWtO1FYoLTMr3YHg",
+      "snippet": "Zen Polish V2.1.7B 4bit is an open-source 1.7b LLM by imYChaudhary22. VRAM 1GB, 40K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "Daily-updated list of free AI models (free LLM APIs), ranked by quality with live status. Plus one OpenAI-compatible endpoint that routes to the best one. - ClawLabsAI/free-ai-models"
+    }
+  ]
+}

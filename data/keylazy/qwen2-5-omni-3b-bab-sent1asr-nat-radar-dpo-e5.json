@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "keylazy/Qwen2.5-Omni-3B-bab-sent1asr-nat-radar-dpo-e5",
+  "slug": "keylazy-qwen2-5-omni-3b-bab-sent1asr-nat-radar-dpo-e5",
+  "author": "keylazy",
+  "url": "https://huggingface.co/keylazy/Qwen2.5-Omni-3B-bab-sent1asr-nat-radar-dpo-e5",
+  "created_at": "2026-10-24T02:03:18.000Z",
+  "updated_at": "2026-10-24T02:03:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 131227430,
+  "storage_human": "131 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "keylazy/Qwen2.5-Omni-3B-bab-sent1asr-v2-dpo · Hugging Face",
+      "url": "https://huggingface.co/keylazy/Qwen2.5-Omni-3B-bab-sent1asr-v2-dpo",
+      "snippet": "Instructions to use keylazy/Qwen2.5-Omni-3B-bab-sent1asr-v2-dpo with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "keylazy/Qwen2.5-Omni-3B-bab-sent1asr-nat-sft at main",
+      "url": "https://huggingface.co/keylazy/Qwen2.5-Omni-3B-bab-sent1asr-nat-sft/tree/main",
+      "snippet": "Instructions to use keylazy/Qwen2.5-Omni-3B-bab-sent1asr-nat-sft with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen2.5-Omni: Qwen2.5-Omni is an end-to-end multimodal ...",
+      "url": "https://github.com/QwenLM/Qwen2.5-Omni",
+      "snippet": "We release Qwen2.5-Omni, the new flagship end-to-end multimodal model in the Qwen series. Designed for comprehensive multimodal perception, it seamlessly processes diverse inputs including text, images, audio, and video, while delivering real-time streaming responses through both text generation and natural speech synthesis."
+    },
+    {
+      "title": "GitHub - JacobERobison/qwen2.5-omni: Qwen2.5-Omni is an end-to-end ...",
+      "url": "https://github.com/JacobERobison/qwen2.5-omni",
+      "snippet": "We release Qwen2.5-Omni, the new flagship end-to-end multimodal model in the Qwen series. Designed for comprehensive multimodal perception, it seamlessly processes diverse inputs including text, images, audio, and video, while delivering real-time streaming responses through both text generation and natural speech synthesis."
+    },
+    {
+      "title": "[2503.20215] Qwen2.5-Omni Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2503.20215",
+      "snippet": "In this report, we present Qwen2.5-Omni, an end-to-end multimodal model designed to perceive diverse modalities, including text, images, audio, and video, while simultaneously generating text and natural speech responses in a streaming manner. To enable the streaming of multimodal information inputs, both audio and visual encoders utilize a block-wise processing approach. To synchronize the ..."
+    }
+  ]
+}

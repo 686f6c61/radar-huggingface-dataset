@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "AmeerSayyad/smai-a4-numpy-mlp",
+  "slug": "ameersayyad-smai-a4-numpy-mlp",
+  "author": "AmeerSayyad",
+  "url": "https://huggingface.co/AmeerSayyad/smai-a4-numpy-mlp",
+  "created_at": "2026-10-24T08:19:13.000Z",
+  "updated_at": "2026-10-24T08:19:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3159084,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aakarsh14/smai-a4-mlp · Hugging Face",
+      "url": "https://huggingface.co/Aakarsh14/smai-a4-mlp",
+      "snippet": "MLP on CIFAR-10 (SMAI Assignment 4, Q1) The MLP trained on the true labels (p = 0) in Task 1.4.2 and compared in Section 1.5 of my SMAI Assignment 4 (mlp.ipynb)."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=smai-assignment",
+      "snippet": "Explore machine learning models. 6 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: smai-assignment Clear all"
+    },
+    {
+      "title": "AmrutiyaKirtan/NumPy-MLP-Engine - GitHub",
+      "url": "https://github.com/AmrutiyaKirtan/NumPy-MLP-Engine",
+      "snippet": "A professional-grade implementation of a Multi-Layer Perceptron (MLP) built entirely from scratch using only NumPy. This project demonstrates the core mechanics of Deep Learning, from matrix calculus to advanced optimization strategies, achieving state-of-the-art results on the MNIST dataset without the help of high-level frameworks like PyTorch or TensorFlow."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, DeepSeek, Qwen, Mistral, Z.ai, Meta, and important open-weight model families."
+    },
+    {
+      "title": "smai_mlp_cnn_auto/1.ipynb at main - GitHub",
+      "url": "https://github.com/manoharnaga/smai_mlp_cnn_auto/blob/main/1.ipynb",
+      "snippet": "1.ipynb Preview Code Blame 490 lines (490 loc) · 38.2 KB Raw"
+    }
+  ]
+}

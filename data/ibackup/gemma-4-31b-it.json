@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Ibackup/gemma-4-31B-it",
+  "slug": "ibackup-gemma-4-31b-it",
+  "author": "Ibackup",
+  "url": "https://huggingface.co/Ibackup/gemma-4-31B-it",
+  "created_at": "2026-10-24T08:46:54.000Z",
+  "updated_at": "2026-10-24T08:46:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:2607.02770",
+    "base_model:google/gemma-4-31B",
+    "base_model:finetune:google/gemma-4-31B",
+    "license:apache-2.0",
+    "eval-results",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31273088876,
+  "parameters_human": "31.27B",
+  "storage_bytes": 62578507874,
+  "storage_human": "62.6 GB",
+  "base_model": "google/gemma-4-31B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Iambackup/gemma-4-31B-it · Hugging Face",
+      "url": "https://huggingface.co/Iambackup/gemma-4-31B-it",
+      "snippet": "Transparency and Accountability This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem. Risks identified and ..."
+    },
+    {
+      "title": "Gemma 4 31B IT: specs, context window & API pricing | AI Model Directory",
+      "url": "https://www.aimodel.directory/models/gemma-4-31b-it",
+      "snippet": "Gemma 4 31B IT by Google DeepMind: 262K context, from $0.09/$0.34 per 1M tokens, released 2 Apr 2026. Specs, API pricing by provider, and version history, with every figure sourced."
+    },
+    {
+      "title": "gemma 4 31B it — AI Model Radar",
+      "url": "https://aimodelradar.app/models/gemma-4-31b-it-2",
+      "snippet": "Gemma 4 31B Instruct is a 30.7B parameter dense multimodal model from Google DeepMind supporting text and image inputs with text output. It features a 262,144 token context window, native function calling, configurable reasoning mode, and multilingual support across 140+ languages. The model is positioned for coding, reasoning, and document understanding tasks."
+    },
+    {
+      "title": "Gemma 4 - Gemma Documentation",
+      "url": "https://gemma.ai/models/gemma-4/",
+      "snippet": "Gemma is a family of generative artificial intelligence models and you can use them in a wide variety of generation tasks, including question answering, summarization, and reasoning. Gemma models are provided with open weights and permit responsible commercial use, allowing you to tune and deploy them in your own projects and applications."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    }
+  ]
+}

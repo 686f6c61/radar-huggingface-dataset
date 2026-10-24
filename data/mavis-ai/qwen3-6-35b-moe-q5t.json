@@ -5,7 +5,7 @@
   "author": "mavis-ai",
   "url": "https://huggingface.co/mavis-ai/Qwen3.6-35B-MoE-Q5T",
   "created_at": "2026-10-04T16:37:12.000Z",
-  "updated_at": "2026-10-04T16:48:43.000Z",
+  "updated_at": "2026-10-23T17:15:11.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

@@ -5,7 +5,7 @@
   "author": "alfaplus",
   "url": "https://huggingface.co/alfaplus/tegami-27B-qw38",
   "created_at": "2026-08-30T01:59:50.000Z",
-  "updated_at": "2026-10-18T17:06:37.000Z",
+  "updated_at": "2026-10-23T08:33:15.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

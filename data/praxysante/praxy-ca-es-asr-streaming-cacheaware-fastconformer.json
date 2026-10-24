@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "PraxySante/praxy-ca-es-asr-streaming-cacheaware-fastconformer",
+  "slug": "praxysante-praxy-ca-es-asr-streaming-cacheaware-fastconformer",
+  "author": "PraxySante",
+  "url": "https://huggingface.co/PraxySante/praxy-ca-es-asr-streaming-cacheaware-fastconformer",
+  "created_at": "2026-10-24T08:16:59.000Z",
+  "updated_at": "2026-10-24T08:17:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [
+    "ca",
+    "es"
+  ],
+  "tags": [
+    "nemo",
+    "automatic-speech-recognition",
+    "streaming",
+    "cache-aware",
+    "fastconformer",
+    "transducer",
+    "catalan",
+    "spanish",
+    "code-switching",
+    "medical",
+    "ca",
+    "es",
+    "region:eu"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 510064640,
+  "storage_human": "510 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Praxy.ai : the Ai suite for healthcare professionals",
+      "url": "https://praxy.ai/",
+      "snippet": "The continuous improvement of therapeutic monitoring through AI and technology. patient data Free up time for your patients with the help of an AI that receives and analyses patient messages, summarises their consultations and extracts useful data to update records Discover our solutions"
+    },
+    {
+      "title": "PraxySante (PraxySanté) - Hugging Face",
+      "url": "https://huggingface.co/PraxySante",
+      "snippet": "LLM and speech to text for Healthcare Text Generation • 71B • Jun 18 • 56.6k • • 1.5k"
+    },
+    {
+      "title": "PraxySante (PraxySanté) - Hugging Face",
+      "url": "https://huggingface.co/PraxySante/models",
+      "snippet": "LLM and speech to text for Healthcare"
+    },
+    {
+      "title": "Praxy.ai : the Ai suite for healthcare professionals - praxysante.com",
+      "url": "https://praxysante.com/es/accueil-praxysante-com",
+      "snippet": "Descubre PraxyChatbot RH El aliado del personal hospitalario : una oferta muy competitiva para el ámbito RH hospitalario. Indexado en tus bases de conocimiento del SIRH interno, este responde de manera precisa y con fuentes a las preguntas del personal hospitalario para brindar un consejo de calidad al mismo tiempo que alivia a los equipos RH. Esta solución también se puede extender a otros ..."
+    },
+    {
+      "title": "PraxySante SAS - Praxy.ai : the AI suite for healthcare professionals",
+      "url": "https://praxysante.com/",
+      "snippet": "PraxyConsultation s&#x27;adapte à chaque spécialité Que vous soyez médecin généraliste, spécialiste ou encore masseuse-kinésithérapeute, notre assistant IA vous suit dans vos déplacements pour réaliser vos consultations avec votre smartphone Apprendre encore plus"
+    }
+  ]
+}

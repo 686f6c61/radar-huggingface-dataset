@@ -5,7 +5,7 @@
   "author": "mild-rgb",
   "url": "https://huggingface.co/mild-rgb/lora-factory-bd2k",
   "created_at": "2026-10-22T22:54:49.000Z",
-  "updated_at": "2026-10-23T06:13:27.000Z",
+  "updated_at": "2026-10-24T04:26:34.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 37465332224,
-  "storage_human": "37.5 GB",
+  "storage_bytes": 46967973882,
+  "storage_human": "47.0 GB",
   "base_model": "Qwen/Qwen3-8B",
   "formats": [
     "safetensors"

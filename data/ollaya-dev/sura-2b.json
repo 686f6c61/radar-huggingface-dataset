@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "ollaya-dev/sura-2b",
+  "slug": "ollaya-dev-sura-2b",
+  "author": "ollaya-dev",
+  "url": "https://huggingface.co/ollaya-dev/sura-2b",
+  "created_at": "2026-10-23T13:54:07.000Z",
+  "updated_at": "2026-10-24T03:05:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "feature-extraction",
+    "ollaya",
+    "sura",
+    "decision",
+    "classification",
+    "distillation",
+    "zero-shot-classification",
+    "en",
+    "base_model:Qwen/Qwen3.5-2B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-2B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2213241664,
+  "parameters_human": "2.21B",
+  "storage_bytes": 4447589220,
+  "storage_human": "4.4 GB",
+  "base_model": "Qwen/Qwen3.5-2B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KittyCute-'s Sex Videos & Recorded Cam Shows (116) | Stripchat",
+      "url": "https://stripchat.com/KittyCute-/videos",
+      "snippet": "Watch KittyCute-'s exclusive videos and recorded cam shows on Stripchat now. ️ Check out KittyCute-'s free & premium sex videos …"
+    },
+    {
+      "title": "KittyCute- Cam Model: Free Live Sex Show & Chat | Stripchat",
+      "url": "https://stripchat.com/KittyCute-",
+      "snippet": "Watch KittyCute- live on Stripchat and discover authentic sex cam shows in real time."
+    },
+    {
+      "title": "Modèle de Webcam KittyCute- : Show porno gratuit en direct et",
+      "url": "https://fr.stripchat.com/KittyCute-",
+      "snippet": "Le roi de la chambre : Laissez un pourboire total de 500 jt !"
+    },
+    {
+      "title": "KittyCute- Free Live Webcam Show & XXX Chat | xHamsterLive",
+      "url": "https://xhamsterlive.com/KittyCute-",
+      "snippet": "KittyCute-' Live Webcam Streaming and Porn Chat on xHamsterLive Sex Webcams."
+    },
+    {
+      "title": "Kittycute - Livemecam",
+      "url": "https://livemecam.com/fr/kittycute",
+      "snippet": "Découvrez Kittycute sur Livemecam. Ils peuvent être EN DIRECT et prêts à faire la fête !"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "Vidclip/Shahajjo_Dicode",
+  "slug": "vidclip-shahajjo_dicode",
+  "author": "Vidclip",
+  "url": "https://huggingface.co/Vidclip/Shahajjo_Dicode",
+  "created_at": "2026-10-24T08:41:36.000Z",
+  "updated_at": "2026-10-24T08:46:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "shahajjo_dicode",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 239681568,
+  "storage_human": "240 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ShahajjoChat - a Hugging Face Space by Vidclip",
+      "url": "https://huggingface.co/spaces/Vidclip/shahajjoChat",
+      "snippet": "🇧🇩 Shahajjo AI Limitless Inference directly via Hugging Face Static Space"
+    },
+    {
+      "title": "liyz/DiCoDe · Hugging Face",
+      "url": "https://huggingface.co/liyz/DiCoDe",
+      "snippet": "DiCoDe: Diffusion-Compressed Deep Tokens for Autoregressive Video Generation with Language Models We introduce DiCoDe, a novel approach that leverages Di ffusion- Co mpressed De ep Tokens to generate videos with a language model in an autoregressive manner. Unlike existing methods that employ low-level representations with limited compression rates, DiCoDe utilizes deep tokens with a ..."
+    },
+    {
+      "title": "DiCoDe: Diffusion-Compressed Deep Tokens for - arXiv.org",
+      "url": "https://arxiv.org/html/2412.04446v2",
+      "snippet": "Figure 2: The overall framework of DiCoDe, which consists of a video diffusion model as the tokenizer to extract highly-compressed deep tokens and an autoregressive language model to predict the sequence of deep tokens through modeling distributions."
+    },
+    {
+      "title": "AI Video Checker - Free Check if a Video Is AI-Generated",
+      "url": "https://www.aivideocheck.net/en",
+      "snippet": "AI Video Check analyses a short video file or a public link and estimates how likely the content was produced by an AI video model. It does this by extracting a group of technical, visual and temporal signals from the uploaded material and comparing them with patterns that are typical for synthetic clips. The result is shown as a probability score plus, when possible, a guess of AI-generator, ."
+    },
+    {
+      "title": "DetectVideo | Check if a Video Is AI-Generated",
+      "url": "https://detectvideo.com/",
+      "snippet": "Upload a video and get a clear AI-likelihood analysis to check if a video is AI-generated."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "myendless/action-repre-newtask14-n32-lap-v4-j14-h32-head10k-0d64a2db",
+  "slug": "myendless-action-repre-newtask14-n32-lap-v4-j14-h32-head10k-0d64a2db",
+  "author": "myendless",
+  "url": "https://huggingface.co/myendless/action-repre-newtask14-n32-lap-v4-j14-h32-head10k-0d64a2db",
+  "created_at": "2026-10-24T08:42:09.000Z",
+  "updated_at": "2026-10-24T09:44:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "action-representation",
+    "qwenpi-v4",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11255480517,
+  "storage_human": "11.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "myendless/action_repre at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/myendless/action_repre/tree/main",
+      "snippet": "Datasets: myendless / action_repre Like 0 Tags: robotics lerobot robotwin robodojo action-representation License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community main action_repre 481 GB Ctrl+K Ctrl+K 1 contributor History:258 commits myendless Upload sharded benchmark archives 317d1be verified3 days ago archivesUpload sharded benchmark archives3 days ago dataUpload ..."
+    },
+    {
+      "title": "myendless (Li Ying) - Hugging Face",
+      "url": "https://huggingface.co/myendless/datasets",
+      "snippet": "3D Generative models for Robots. Recent Activity . published a model 2 days ago . myendless/calvin_test . updated a dataset 3 days ago"
+    },
+    {
+      "title": "New LLM Models — Latest AI Model Releases, Tracked Live · modelgrep",
+      "url": "https://modelgrep.com/new",
+      "snippet": "New models The latest AI model releases, tracked as they land — with benchmarks, pricing and specs as soon as they&#x27;re available."
+    },
+    {
+      "title": "AI Minecraft Model Generator · MineModel AI",
+      "url": "https://minemodelai.com/en",
+      "snippet": "Describe a Minecraft model and get it back installable: ItemsAdder, Nexo, Oraxen, CraftEngine, Blockbench and a plain resource pack. No modelling software needed."
+    },
+    {
+      "title": "MyEndless · GitHub",
+      "url": "https://github.com/MyEndless/",
+      "snippet": "MyEndless has one repository available. Follow their code on GitHub."
+    }
+  ]
+}

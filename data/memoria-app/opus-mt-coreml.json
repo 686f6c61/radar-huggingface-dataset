@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "memoria-app/opus-mt-coreml",
+  "slug": "memoria-app-opus-mt-coreml",
+  "author": "memoria-app",
+  "url": "https://huggingface.co/memoria-app/opus-mt-coreml",
+  "created_at": "2026-10-24T01:18:04.000Z",
+  "updated_at": "2026-10-24T03:03:08.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "coreml",
+  "languages": [
+    "hr",
+    "sr",
+    "bs",
+    "sl",
+    "en",
+    "de",
+    "it",
+    "fr",
+    "es",
+    "pt"
+  ],
+  "tags": [
+    "coreml",
+    "translation",
+    "marian",
+    "opus-mt",
+    "on-device",
+    "hr",
+    "sr",
+    "bs",
+    "sl",
+    "en",
+    "de",
+    "it",
+    "fr",
+    "es",
+    "pt",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3089451578,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Libra Memoria : les avis de décès parus dans la presse française",
+      "url": "https://www.libramemoria.com/",
+      "snippet": "Libra Memoria vous aide à trouver des moyens concrets et personnels de rendre hommage à un être cher, en transformant votre …"
+    },
+    {
+      "title": "Les derniers avis de décès publiés - Libra Memoria",
+      "url": "https://www.libramemoria.com/avis",
+      "snippet": "7 hours ago · Vous recherchez les derniers avis de décès publiés sur le site Libra Memoria. Retrouvez sur libramemoria.com tous …"
+    },
+    {
+      "title": "Les derniers avis de décès publiés - Libra Memoria | Page 2",
+      "url": "https://c.libramemoria.com/avis?page=2",
+      "snippet": "1 day ago · Libra Memoria réunit les avis de décès publiés dans la presse et transmis par les pompes funèbres. Ces avis ne sont pas …"
+    },
+    {
+      "title": "Avis de déces - Memoria : Funérailles, maisons et salons funéraires …",
+      "url": "https://www.memoria.ca/avis-de-deces/",
+      "snippet": "Consultez les avis de décès des Espaces Memoria. Chaque vie est une histoire : découvrez les hommages, dates des cérémonies …"
+    },
+    {
+      "title": "Avis de décès Isère (38) - Libra Memoria",
+      "url": "https://www.libramemoria.com/avis/isere",
+      "snippet": "Vous recherchez les derniers avis de décès Isère (38) sur le site Libra Memoria. Retrouvez sur libramemoria.com tous les avis de …"
+    }
+  ]
+}

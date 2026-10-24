@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Anonymous36/tawny-cairn-49",
+  "slug": "anonymous36-tawny-cairn-49",
+  "author": "Anonymous36",
+  "url": "https://huggingface.co/Anonymous36/tawny-cairn-49",
+  "created_at": "2026-10-24T08:06:24.000Z",
+  "updated_at": "2026-10-24T08:08:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1887771989,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Inside Cairn: Open Windows into massive AI-Driven Cyber Operations",
+      "url": "https://norforge.com/blog/inside_cairn",
+      "snippet": "Inside Cairn: Open Windows into massive AI-Driven Cyber Operations More than 20 exposed Cairn panels give an unusually detailed view of how threat actors select targets, direct autonomous agents, exploit vulnerabilities, and establish persistent access to compromised systems."
+    },
+    {
+      "title": "Cisco Talos finds malware taking orders from a four-model committee",
+      "url": "https://runtimewire.com/article/cisco-talos-cairn-closedquorum-ai-malware",
+      "snippet": "Cisco Talos released CAIRN, an open-source framework that found CLOSEDQUORUM, a Windows implant that polls four AI models before choosing its next action."
+    },
+    {
+      "title": "Non Nude - 260605 - 49 - Tawny by SecsMurphyAI2 on DeviantArt",
+      "url": "https://www.deviantart.com/secsmurphyai2/art/Non-Nude-260605-49-Tawny-1340899314",
+      "snippet": "Non Nude - 260605 - 49 - Tawny — artwork by SecsMurphyAI2 on DeviantArt. Published: 2026-06-04 · Likes: 1 · Views: 220 · Tags: photography, beauty, glamour, sexy ..."
+    },
+    {
+      "title": "Non Nude - 260514 - 01 - Tawny by SecsMurphyAI2 on DeviantArt",
+      "url": "https://www.deviantart.com/secsmurphyai2/art/Non-Nude-260514-01-Tawny-1332589793",
+      "snippet": "Non Nude - 260514 - 01 - Tawny — artwork by SecsMurphyAI2 on DeviantArt. Published: 2026-05-14 · Likes: 1 · Views: 377 · Tags: photography, sexy, ai, beautiful, nsfw, pinupglamour"
+    },
+    {
+      "title": "Cisco Talos finds CLOSEDQUORUM malware that lets AI models vote on ...",
+      "url": "https://www.aitechdaily.com/cisco-talos-closedquorum-cairn/",
+      "snippet": "Cisco Talos released CAIRN, an open-source hunt for AI-integrated malware, and disclosed CLOSEDQUORUM — a Windows implant that polls DeepSeek, Qwen, Mistral, and Gemini to pick its next move without a human operator."
+    }
+  ]
+}

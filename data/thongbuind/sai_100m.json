@@ -5,7 +5,7 @@
   "author": "thongbuind",
   "url": "https://huggingface.co/thongbuind/SAI_100M",
   "created_at": "2026-08-14T09:55:00.000Z",
-  "updated_at": "2026-10-01T10:29:03.000Z",
+  "updated_at": "2026-10-23T14:51:10.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -14,7 +14,7 @@
   "tags": [
     "transformers",
     "safetensors",
-    "sai",
+    "SAI",
     "text-generation",
     "custom-code",
     "vietnamese",
@@ -27,12 +27,12 @@
     "region:us"
   ],
   "likes": 3,
-  "downloads_30d": 379,
+  "downloads_30d": 377,
   "trending_score": 0,
   "parameters": 113867520,
   "parameters_human": "113.9M",
-  "storage_bytes": 455634090,
-  "storage_human": "456 MB",
+  "storage_bytes": 911111738,
+  "storage_human": "911 MB",
   "base_model": "thongbuind/SAI_100M",
   "formats": [
     "safetensors"

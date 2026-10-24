@@ -5,7 +5,7 @@
   "author": "mavis-ai",
   "url": "https://huggingface.co/mavis-ai/Gemma4-26B-MoE-Q3T",
   "created_at": "2026-10-04T16:14:48.000Z",
-  "updated_at": "2026-10-04T16:19:07.000Z",
+  "updated_at": "2026-10-23T12:00:35.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -37,7 +37,7 @@
   "trending_score": 0,
   "parameters": 7680644686,
   "parameters_human": "7.68B",
-  "storage_bytes": 13668385354,
+  "storage_bytes": 13668398011,
   "storage_human": "13.7 GB",
   "base_model": "google/gemma-4-26B-A4B-it",
   "formats": [

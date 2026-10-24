@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "kozo2/act_so101_test_20261024_161449",
+  "slug": "kozo2-act_so101_test_20261024_161449",
+  "author": "kozo2",
+  "url": "https://huggingface.co/kozo2/act_so101_test_20261024_161449",
+  "created_at": "2026-10-24T08:11:24.000Z",
+  "updated_at": "2026-10-24T08:11:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:kozo2/so101_test_20261024_161449",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206712864,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fortiche - French animation studio behind Arcane",
+      "url": "https://forticheprod.com/",
+      "snippet": "Fortiche is an award-winning French animation studio and production company: Arcane, game cinematics, animated music videos …"
+    },
+    {
+      "title": "Animation jobs & careers: become a Forticher | Fortiche",
+      "url": "https://forticheprod.com/become-a-forticher/",
+      "snippet": "Animation jobs at Fortiche, the studio behind Arcane: openings in Paris, Montpellier and Las Palmas, our crafts, applicant journey …"
+    },
+    {
+      "title": "Fortiche Job - Recrutement",
+      "url": "http://jobs.forticheprod.com/",
+      "snippet": "Formulaire de recrutement de Fortiche Production The form FORTICHE PRODUCTION is no longer accepting responses. Try …"
+    },
+    {
+      "title": "FORTICHE PRODUCTION",
+      "url": "http://job.forticheprod.com/",
+      "snippet": "The form FORTICHE PRODUCTION is no longer accepting responses. Try contacting the owner of the form if you think this is a …"
+    },
+    {
+      "title": "Our work: series, cinematics & music videos | Fortiche",
+      "url": "https://forticheprod.com/fortichize/",
+      "snippet": "Explore Fortiche's productions: Arcane, League of Legends cinematics, and music videos for Gorillaz, Stromae, Imagine Dragons, …"
+    }
+  ]
+}

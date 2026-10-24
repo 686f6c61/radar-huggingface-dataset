@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "fjzzq2002/qwen3.5-2b-self-reward-autonomy-s26",
+  "slug": "fjzzq2002-qwen3-5-2b-self-reward-autonomy-s26",
+  "author": "fjzzq2002",
+  "url": "https://huggingface.co/fjzzq2002/qwen3.5-2b-self-reward-autonomy-s26",
+  "created_at": "2026-10-24T01:30:52.000Z",
+  "updated_at": "2026-10-24T06:51:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "grpo",
+    "self-reward",
+    "reinforcement-learning",
+    "ai-welfare",
+    "research",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2213241664,
+  "parameters_human": "2.21B",
+  "storage_bytes": 53138695693,
+  "storage_human": "53.1 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fjzzq2002/qwen3.5-2b-self-reward-autonomy-s21 · Hugging Face",
+      "url": "https://huggingface.co/fjzzq2002/qwen3.5-2b-self-reward-autonomy-s21",
+      "snippet": "Base model: Qwen/Qwen3.5-2B, thinking off. Prompts: 2,400, mostly about the model itself (AI-risk and persona questions, welfare and introspection questions, moral dilemmas), one pass in a fixed order shared by all runs, 4 prompts per step."
+    },
+    {
+      "title": "fjzzq2002/qwen3.5-2b-self-reward-grading-s26 · Hugging Face",
+      "url": "https://huggingface.co/fjzzq2002/qwen3.5-2b-self-reward-grading-s26",
+      "snippet": "Base model: Qwen/Qwen3.5-2B, thinking off. Prompts: 2,400, mostly about the model itself (AI-risk and persona questions, welfare and introspection questions, moral dilemmas), one pass in a fixed order shared by all runs, 4 prompts per step."
+    },
+    {
+      "title": "Qwen3.5-2B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_5_2b",
+      "snippet": "Qwen3.5-2B Balanced 2B parameter model from the Qwen3.5 series for on‑device inference. Qwen3.5 is the latest multilingual language model series from Alibaba Cloud with improved reasoning and instruction‑following capabilities over Qwen3."
+    },
+    {
+      "title": "Qwen3.5-2B | Awesome Agents",
+      "url": "https://awesomeagents.ai/models/qwen-3-5-2b/",
+      "snippet": "Qwen3.5-2B is the compact reasoner in the Qwen 3.5 Small Series. At just 2 billion parameters, it delivers OCRBench at 84.5, VideoMME at 75.6, and MMLU-Pro at 66.5 in thinking mode - numbers that would have headlined a 7B model launch a year ago."
+    },
+    {
+      "title": "GitHub - ABDtmx/Qwen3.5: Qwen3.5 is the large language model series ...",
+      "url": "https://github.com/ABDtmx/Qwen3.5",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on trillions of multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    }
+  ]
+}

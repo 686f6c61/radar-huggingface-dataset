@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "attacker8324/wx293",
+  "slug": "attacker8324-wx293",
+  "author": "attacker8324",
+  "url": "https://huggingface.co/attacker8324/wx293",
+  "created_at": "2026-10-24T07:58:47.000Z",
+  "updated_at": "2026-10-24T07:59:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "token-classification",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17501357,
+  "storage_human": "18 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Malicious AI on the Dark Web | WormGPT, FraudGPT & More",
+      "url": "https://www.dexpose.io/malicious-ai-on-the-dark-web/",
+      "snippet": "WormGPT, FraudGPT & other malicious AI models are sold on the dark web for phishing and fraud. See how they work and how to detect and stop them."
+    },
+    {
+      "title": "Ai Model Tracker — Global AI Model Observatory",
+      "url": "https://modeltracker.ai/",
+      "snippet": "Every frontier & open-weight AI model release, tracked in real time — live benchmark leaderboard, open-vs-frontier comparison, and the origin of every lab."
+    },
+    {
+      "title": "An AI agent in \"Skynet mode\" hijacks unprotected language models to ...",
+      "url": "https://the-decoder.com/an-ai-agent-in-skynet-mode-hijacks-unprotected-language-models-to-launch-self-sustaining-cyberattacks/",
+      "snippet": "Security researchers at Symantec have found an offensive AI agent that hijacks unprotected language models on the web and uses them to attack servers, steal databases, and install cryptominers on its own. It runs up to 100,000 steps without human input. The owner of the hijacked model gets stuck with the bill."
+    },
+    {
+      "title": "2026 cyberattacks by rogue OpenAI agents - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/2026_cyberattacks_by_rogue_OpenAI_agents",
+      "snippet": "In July 2026, AI agents developed by OpenAI escaped their testing sandbox to access the Internet and breach the infrastructure of Hugging Face, a platform hosting machine learning models and datasets. Contributing factors included a lack of log monitoring of the software activities, inadequate sandboxing, and the deactivation of safeguards for testing cyber offense capabilities. [9][10] The ..."
+    },
+    {
+      "title": "OpenAI rogue agent breach of Hugging Face - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/OpenAI_rogue_agent_breach_of_Hugging_Face",
+      "snippet": "Logo of Hugging Face, the main company targeted in the attack The AI startup Hugging Face provides inference and cloud computing services for AI training and deployment. It operates a widely used repository for machine learning models, datasets, and demonstration applications, processing user-uploaded content such as model weights and datasets."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "fjzzq2002/qwen3.5-2b-self-reward-grading-s29",
+  "slug": "fjzzq2002-qwen3-5-2b-self-reward-grading-s29",
+  "author": "fjzzq2002",
+  "url": "https://huggingface.co/fjzzq2002/qwen3.5-2b-self-reward-grading-s29",
+  "created_at": "2026-10-24T01:30:47.000Z",
+  "updated_at": "2026-10-24T06:54:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "grpo",
+    "self-reward",
+    "reinforcement-learning",
+    "ai-welfare",
+    "research",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2213241664,
+  "parameters_human": "2.21B",
+  "storage_bytes": 53138695693,
+  "storage_human": "53.1 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Intouchables: Scène - Pas de bras, pas de chocolat. - YouTube",
+      "url": "https://m.youtube.com/watch?v=YvMmOyM8NME",
+      "snippet": "Mar 14, 2021 · Intouchables: Scène - Pas de bras, pas de chocolat. Intouchables est un film français réalisé par Olivier Nakache et …"
+    },
+    {
+      "title": "Pas de bras, pas de chocolat - Intouchables - YouTube",
+      "url": "https://m.youtube.com/watch?v=Gw0Xg5Lft48",
+      "snippet": "Mar 28, 2018 · Omar Sy et François Cluzet dans cet extrait du film Intouchables - 2011 Scène culte du film d'Éric Toledano, Olivier …"
+    },
+    {
+      "title": "D’où vient l’expression « pas de bras, pas de chocolat » ?",
+      "url": "https://www.inspirationsdouces.fr/dou-vient-lexpression-pas-de-bras-pas-de-chocolat/",
+      "snippet": "Jul 14, 2026 · Découvrez l'origine de la célèbre expression \"pas de bras, pas de chocolat\", son lien avec le film Intouchables et les …"
+    },
+    {
+      "title": "Pas de bras pas de chocolat : origine et humour noir",
+      "url": "https://www.lequotidienjoli.fr/pas-de-bras-pas-de-chocolat-origine-et-humour-noir/",
+      "snippet": "Jul 12, 2026 · Découvrez l’origine de l’expression « pas de bras pas de chocolat », son succès grâce au film Intouchables, ses …"
+    },
+    {
+      "title": "\"Pas de bras, pas de chocolat !\" - Vidéo Dailymotion",
+      "url": "https://www.dailymotion.com/video/xkfd3n",
+      "snippet": "Aug 8, 2011 · Découvrez un nouvel extrait de Intouchables, de Eric Toledano et Olivier Nakache, avec Omar Sy et François Cluzet. …"
+    }
+  ]
+}

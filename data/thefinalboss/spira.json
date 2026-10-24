@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "thefinalboss/SPIRA",
+  "slug": "thefinalboss-spira",
+  "author": "thefinalboss",
+  "url": "https://huggingface.co/thefinalboss/SPIRA",
+  "created_at": "2026-10-22T20:32:17.000Z",
+  "updated_at": "2026-10-24T07:29:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "tags": [
+    "spiking-neural-networks",
+    "one-shot-learning",
+    "associative-memory",
+    "hippocampus",
+    "stdp",
+    "neuromorphic-computing",
+    "sequence-learning",
+    "cpu-only",
+    "en",
+    "fr",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1276715720,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Social Media Automation & AI Manager | Spira AI",
+      "url": "https://spira.ai/",
+      "snippet": "Automate social media content creation, scheduling, publishing, and analytics in one AI social media manager for TikTok, Instagram, YouTube, X, and LinkedIn."
+    },
+    {
+      "title": "Spira Maxima: Turn Scripts into Viral, Social-Ready Videos",
+      "url": "https://spira.ai/spira-maxima",
+      "snippet": "Turn scripts into viral, social-ready videos. A leading social video model, post‑trained on viral short‑form video, that delivers ready‑to‑post videos at scale."
+    },
+    {
+      "title": "Spira AI — Spira: The #1 AI Influencer Agent… | AIToolly",
+      "url": "https://aitoolly.com/product/spira-ai",
+      "snippet": "Spira is a revolutionary AI Influencer Agent designed to help builders, creators, and businesses grow their brand presence 24/7. Unlike traditional tools…"
+    },
+    {
+      "title": "Spira Maxima 1.0 - AI Model | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/model/spira-maxima-1-0/",
+      "snippet": "Spira Maxima 1.0 is a video generation model for short-form social content. The user provides a script, and the model produces a finished video with motion graphics, on-screen elements, captions, and sound, ready to post without manual editing."
+    },
+    {
+      "title": "Next-Gen DTC Infrastructure: Spira Unveils Enterprise AI Influencer ...",
+      "url": "https://finance.yahoo.com/technology/ai/articles/next-gen-dtc-infrastructure-spira-140000784.html",
+      "snippet": "Built to seamlessly empower modern brand networks, Spira.ai moves beyond disjointed generative tools. The platform provides a unified, enterprise-grade architecture that enables merchants to ..."
+    }
+  ]
+}

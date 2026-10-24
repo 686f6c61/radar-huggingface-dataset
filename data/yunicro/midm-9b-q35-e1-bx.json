@@ -5,7 +5,7 @@
   "author": "yunicro",
   "url": "https://huggingface.co/yunicro/MiDM-9B-q35-e1-bx",
   "created_at": "2026-10-05T13:06:23.000Z",
-  "updated_at": "2026-10-23T00:07:21.000Z",
+  "updated_at": "2026-10-24T00:04:40.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 156,
+  "downloads_30d": 167,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

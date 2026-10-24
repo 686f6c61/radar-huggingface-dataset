@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "fiore-lab/GLM-5.3-EXL3-Experts-5bit",
+  "slug": "fiore-lab-glm-5-3-exl3-experts-5bit",
+  "author": "fiore-lab",
+  "url": "https://huggingface.co/fiore-lab/GLM-5.3-EXL3-Experts-5bit",
+  "created_at": "2026-10-24T09:09:38.000Z",
+  "updated_at": "2026-10-24T09:09:58.000Z",
+  "license": "glm-5.3",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "exl3",
+    "glm",
+    "moe",
+    "dgx-spark",
+    "base_model:zai-org/GLM-5.3",
+    "base_model:finetune:zai-org/GLM-5.3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19698378,
+  "storage_human": "20 MB",
+  "base_model": "zai-org/GLM-5.3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fiore-lab/GLM-5.3-EXL3-4x-DGX-Sparks · Hugging Face",
+      "url": "https://huggingface.co/fiore-lab/GLM-5.3-EXL3-4x-DGX-Sparks",
+      "snippet": "Half of the routed experts of layers 3 to 77 are at 3 bits instead of 4. With this mix and the engine&#x27;s FP4 KV cache, the 755B model runs on four DGX Sparks with a context of about 800K tokens (819,200: the engine and the model take up to 1M, the four Sparks&#x27; memory sets the limit). For eight DGX Sparks (a 1M context), the sister repo fiore-lab/GLM-5.3-EXL3-8x-DGX-Sparks has all routed experts ..."
+    },
+    {
+      "title": "fiore-lab/GLM-5.3-EXL3-8x-DGX-Sparks · Hugging Face",
+      "url": "https://huggingface.co/fiore-lab/GLM-5.3-EXL3-8x-DGX-Sparks",
+      "snippet": "experts-layer-003 … 077.safetensors (75) routed experts of layers 3 to 77: EXL3, 4 bits, codebook mcg, each expert already cut into its eight tensor-parallel shares nonexperts-5bit.safetensors the other linear layers of layers 0 to 77 (attention projections, shared experts, the dense MLPs of ..."
+    },
+    {
+      "title": "GLM-5.3 - openlm.ai",
+      "url": "https://openlm.ai/glm-5.3/",
+      "snippet": "GLM-5.3 is our latest flagship model for coding and long-horizon tasks. It marks a substantial leap in long-horizon task capability over its predecessor GLM-5.1 and delivers that capability on a solid 1M-token context. It is pure open with an MIT open-source license — no regional limits, technical access without borders."
+    },
+    {
+      "title": "GitHub - MiaAI-Lab/GLM-5.3-Flash-EXL3-2x-DGX-Sparks: GLM-5.3 Flash EXL3 ...",
+      "url": "https://github.com/MiaAI-Lab/GLM-5.3-Flash-EXL3-2x-DGX-Sparks/",
+      "snippet": "An OpenAI-compatible vLLM server for zai-org/GLM-5.3-Flash, using 4-bpw EXL3 weights, fp8 KV cache and DFlash2 speculative decoding, built natively for the GB10 (sm_121a). The launcher pulls the image, downloads the weights, shares them with the other Sparks and starts the cluster ..."
+    },
+    {
+      "title": "MiaAI-Lab (Mia&#x27;s AI Lab) · GitHub",
+      "url": "https://github.com/MiaAI-Lab",
+      "snippet": "Local AI, LLMs, tech thinker & builder. MiaAI-Lab has 119 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

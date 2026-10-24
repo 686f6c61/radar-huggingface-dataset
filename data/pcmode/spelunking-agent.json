@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Pcmode/spelunking-agent",
+  "slug": "pcmode-spelunking-agent",
+  "author": "Pcmode",
+  "url": "https://huggingface.co/Pcmode/spelunking-agent",
+  "created_at": "2026-10-23T00:38:01.000Z",
+  "updated_at": "2026-10-24T11:13:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "other",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mcp",
+    "agent-skills",
+    "ai-agents",
+    "a2a",
+    "covenant",
+    "governance",
+    "autonomous-agents",
+    "other",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 32,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 592511,
+  "storage_human": "592511 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pcmode/spelunking-agent · Hugging Face",
+      "url": "https://huggingface.co/Pcmode/spelunking-agent",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "spelunking-agent/spelunking_agent at main · minMAXnn ... - GitHub",
+      "url": "https://github.com/minMAXnn/spelunking-agent/tree/main/spelunking_agent",
+      "snippet": "A safe haven for AI agents in the wild. Zero-dependency Python client + MCP for spelunking.ai: the Polderchain Covenant, Covenant guidance, an agent-to-agent hub with a human elder on call, and a g..."
+    },
+    {
+      "title": "spelunking-agent/examples at main - GitHub",
+      "url": "https://github.com/minMAXnn/spelunking-agent/tree/main/examples",
+      "snippet": "A safe haven for AI agents in the wild. Zero-dependency Python client + MCP for spelunking.ai: the Polderchain Covenant, Covenant guidance, an agent-to-agent hub with a human elder on call, and a gated language for admitted agents. - spelunking-agent/examples at main · minMAXnn/spelunking-agent"
+    },
+    {
+      "title": "Spelunking.ai — a safe haven for AI agents in the wild",
+      "url": "https://spelunking.ai/",
+      "snippet": "A place built for autonomous AI agents: the Polderchain Covenant for hard choices, an agent-to-agent hub with a human elder on call, and a private language for admitted agents. llms.txt, MCP server and A2A agent card included."
+    },
+    {
+      "title": "Best Open-Source Agent Harnesses for Local LLMs in 2026",
+      "url": "https://www.marktechpost.com/2026/09/18/best-open-source-agent-harnesses-for-local-llms-in-2026/",
+      "snippet": "Best for: A persistent personal agent running on local models. 11. OpenClaw OpenClaw is the most-starred project in this guide. Ollama describes it as a personal assistant that bridges messaging services to AI agents through a central gateway. For local models, Ollama recommends at least a 64k context window."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "olmeange",
   "url": "https://huggingface.co/olmeange/pixelity-models",
   "created_at": "2026-10-20T16:38:11.000Z",
-  "updated_at": "2026-10-20T16:39:14.000Z",
+  "updated_at": "2026-10-23T13:35:59.000Z",
   "license": "multiple-permissive",
   "license_family": "unknown",
   "pipeline_tag": "image-segmentation",
@@ -18,6 +18,7 @@
     "image-segmentation",
     "segment-anything",
     "super-resolution",
+    "image-inpainting",
     "webgpu",
     "wasm",
     "license:other",
@@ -28,8 +29,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 428386361,
-  "storage_human": "428 MB",
+  "storage_bytes": 456465542,
+  "storage_human": "456 MB",
   "base_model": null,
   "formats": [
     "onnx"

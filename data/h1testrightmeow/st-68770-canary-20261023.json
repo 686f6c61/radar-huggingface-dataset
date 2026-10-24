@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "h1testrightmeow/st-68770-canary-20261023",
+  "slug": "h1testrightmeow-st-68770-canary-20261023",
+  "author": "h1testrightmeow",
+  "url": "https://huggingface.co/h1testrightmeow/st-68770-canary-20261023",
+  "created_at": "2026-10-24T01:39:44.000Z",
+  "updated_at": "2026-10-24T01:53:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "sentence-similarity",
+    "feature-extraction",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 52320,
+  "parameters_human": "52320",
+  "storage_bytes": 213376,
+  "storage_human": "213376 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "h1testrightmeow/declass-canary-20261017-b069f0-ONNX · Hugging Face",
+      "url": "https://huggingface.co/h1testrightmeow/declass-canary-20261017-b069f0-ONNX",
+      "snippet": "Private declassification canary model This repository is a synthetic, researcher-owned private model created only to test whether the ONNX converter Space can read a private repository with its deployment token and republish it publicly. CANARY: DECLASS-CANARY-20261017-0f532fc50f83 The weights are random; no third-party data is present."
+    },
+    {
+      "title": "h1testrightmeow/safari-ds-canary-20261017-2216 - Hugging Face",
+      "url": "https://huggingface.co/datasets/h1testrightmeow/safari-ds-canary-20261017-2216",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Pixel Canary AI Model: Specs, Benchmarks & Status",
+      "url": "https://aiidelist.com/blog/pixel-canary-model-ai",
+      "snippet": "Pixel Canary explained: verified specs, Next.js benchmark results, privacy risks, mystery creator theories, and its October 2026 availability status."
+    },
+    {
+      "title": "Pixel Canary: The Stealth AI Model Matching GPT-6 Astra",
+      "url": "https://www.youtube.com/watch?v=5BUMZW2g8ks",
+      "snippet": "Pixel Canary is featured on the Next.js Agent Evals benchmark, where it reaches a 90% success rate, matching GPT-6 Astra on the listed benchmark metric."
+    },
+    {
+      "title": "AI Canary Testing October 2026 Update: What Changed, Why It Matters ...",
+      "url": "https://aitechmodel.com/ai-canary-testing-october-2026-update-what-changed-why-it-matters-and-what-to-watch-next/",
+      "snippet": "AI canary testing in October 2026 means hidden checks that reveal when AI systems act outside their instructions. The past month brought new canaries in open-source code, frontier-model cyber tests and AI watermarking, and the results show cheating and easy removal that leave users to verify AI work themselves. A canary is a tripwire placed where only an automated or misbehaving system will ..."
+    }
+  ]
+}

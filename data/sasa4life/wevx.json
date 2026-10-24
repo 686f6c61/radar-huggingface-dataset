@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "sasa4life/wevx",
+  "slug": "sasa4life-wevx",
+  "author": "sasa4life",
+  "url": "https://huggingface.co/sasa4life/wevx",
+  "created_at": "2026-10-24T00:59:39.000Z",
+  "updated_at": "2026-10-24T00:59:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sasa4life/wevx · Hugging Face",
+      "url": "https://huggingface.co/sasa4life/wevx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Generated Models for Fashion E-Commerce Brands | WearView",
+      "url": "https://www.wearview.co/",
+      "snippet": "AI generated models for fashion that look real. Upload your garment, pick a model, get professional product photos in 30 seconds. Trusted by 19,000+ brands."
+    },
+    {
+      "title": "AI Generated Model Detector | Check Fake Model Images - Pixivera",
+      "url": "https://pixivera.com/ai-generated-model-detector.html",
+      "snippet": "Use the AI generated model detector from Pixivera to identify fake model photos, synthetic beauty portraits, edited fashion images, and suspicious profile pictures."
+    },
+    {
+      "title": "AI Fashion Model Generator | Zawa (formerly X-Design )",
+      "url": "https://zawa.ai/ai-model",
+      "snippet": "AI Fashion Model Generate AI fashion models for e-commerce catalogue using real models, mannequins, or flat-lay apparel images. Easily customize skin tone, facial expression, and body size to create professional on-model product photography and elevate your clothing presentations."
+    },
+    {
+      "title": "Is This Video Real or a Deepfake? — KweliAI",
+      "url": "https://kweliai.com/is-this-video-real",
+      "snippet": "The deepfake model analyses every frame of the video for AI manipulation signals. If the verdict is Deepfake or AI-generated with high confidence, do not share the video and report it to the platform."
+    }
+  ]
+}

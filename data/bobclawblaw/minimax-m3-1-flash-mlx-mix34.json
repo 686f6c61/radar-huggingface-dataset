@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "BobClawblaw/MiniMax-M3.1-Flash-MLX-mix34",
+  "slug": "bobclawblaw-minimax-m3-1-flash-mlx-mix34",
+  "author": "BobClawblaw",
+  "url": "https://huggingface.co/BobClawblaw/MiniMax-M3.1-Flash-MLX-mix34",
+  "created_at": "2026-10-24T01:28:55.000Z",
+  "updated_at": "2026-10-24T01:46:14.000Z",
+  "license": "minimax-community",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "tensorfold",
+  "languages": [],
+  "tags": [
+    "tensorfold",
+    "safetensors",
+    "minimax_m3",
+    "mlx",
+    "apple-silicon",
+    "minimax",
+    "base_model:MiniMaxAI/MiniMax-M3.1-Flash",
+    "base_model:finetune:MiniMaxAI/MiniMax-M3.1-Flash",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 431228680320,
+  "parameters_human": "431.23B",
+  "storage_bytes": 218737136413,
+  "storage_human": "218.7 GB",
+  "base_model": "MiniMaxAI/MiniMax-M3.1-Flash",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Steamy Movies Collection on Movies Anywhere",
+      "url": "https://moviesanywhere.com/collection/steamy",
+      "snippet": "Stream movies from Disney, 20th Century, Sony, Universal, Warner Bros. and Lionsgate. Connect your digital accounts and import …"
+    },
+    {
+      "title": "Best R Rated Movies to Stream at Home - Rotten Tomatoes",
+      "url": "https://www.rottentomatoes.com/browse/movies_at_home/genres:reality,romance~ratings:r~sort:popular",
+      "snippet": "The definitive site for Reviews, Trailers, Showtimes, and Tickets."
+    },
+    {
+      "title": "Watch Romance Movies Online - mewatch",
+      "url": "https://www.mewatch.sg/movies/romance",
+      "snippet": "Romance Movies, on-demand Watch on your mobile, tablet, computer or Smart TV."
+    },
+    {
+      "title": "Mainstream erotic movies - Jahsonic",
+      "url": "https://jahsonic.com/EroticMovies.html",
+      "snippet": "Coverage includes erotic films from the silent era, pre-Code Hollywood, film noir, cheesecake and beefcake, the international art …"
+    },
+    {
+      "title": "Mainstream and Arthouse Erotic Movies - Jahsonic",
+      "url": "https://jahsonic.com/Pipe.html",
+      "snippet": "By the same token, arthouse erotic movies are those movies that were/are allowed to play in arthouse or reperteroy theatres in …"
+    }
+  ]
+}

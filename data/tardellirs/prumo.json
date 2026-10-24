@@ -5,7 +5,7 @@
   "author": "tardellirs",
   "url": "https://huggingface.co/tardellirs/prumo",
   "created_at": "2026-10-17T19:50:10.000Z",
-  "updated_at": "2026-10-20T15:24:39.000Z",
+  "updated_at": "2026-10-23T10:46:02.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -30,6 +30,7 @@
     "deterministic",
     "cpu",
     "en",
+    "arxiv:2610.30970",
     "license:apache-2.0",
     "model-index",
     "region:us"

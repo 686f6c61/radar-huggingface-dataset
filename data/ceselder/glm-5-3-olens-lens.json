@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ceselder/glm-5.3-olens-lens",
+  "slug": "ceselder-glm-5-3-olens-lens",
+  "author": "ceselder",
+  "url": "https://huggingface.co/ceselder/glm-5.3-olens-lens",
+  "created_at": "2026-10-23T06:08:11.000Z",
+  "updated_at": "2026-10-24T06:34:47.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "interpretability",
+    "oracle-lens",
+    "activation-verbalizer",
+    "lora",
+    "glm-5.3",
+    "base_model:nvidia/GLM-5.3-NVFP4",
+    "base_model:adapter:nvidia/GLM-5.3-NVFP4",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 49924389942,
+  "storage_human": "49.9 GB",
+  "base_model": "nvidia/GLM-5.3-NVFP4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ceselder/glm-5.3-olens-lens · Hugging Face",
+      "url": "https://huggingface.co/ceselder/glm-5.3-olens-lens",
+      "snippet": "Instructions to use ceselder/glm-5.3-olens-lens with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use ceselder/glm-5.3-olens-lens with PEFT:"
+    },
+    {
+      "title": "GLM-5.3 - openlm.ai",
+      "url": "https://openlm.ai/glm-5.3/",
+      "snippet": "GLM-5.3 is our latest flagship model for coding and long-horizon tasks. It marks a substantial leap in long-horizon task capability over its predecessor GLM-5.1 and delivers that capability on a solid 1M-token context. It is pure open with an MIT open-source license — no regional limits, technical access without borders."
+    },
+    {
+      "title": "ceselder/glm-5.3-olens-reconstructor · Hugging Face",
+      "url": "https://huggingface.co/ceselder/glm-5.3-olens-reconstructor",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GLM 5.3 by Z.ai — Text Generation | VeniceStats",
+      "url": "https://venicestats.com/venice-models/z-ai-glm-5-3",
+      "snippet": "About this model GLM 5.3 is the newest text model in Z.ai&#x27;s GLM line, positioned as a large-scale reasoning system for complex software engineering, terminal operations and long-horizon agent work. Z.ai describes it as a flagship update that keeps the one-million-token context window and the text-only input and output of its predecessor."
+    },
+    {
+      "title": "Z.ai Launches GLM-5.3 With Frontier Coding and a Cyber ... - Unite.AI",
+      "url": "https://www.unite.ai/z-ai-launches-glm-5-3-with-frontier-coding-and-a-cyber-capability-that-outgrew-its-training/",
+      "snippet": "Z.ai released GLM-5.3 on August 14, 2026, an update the company says keeps the same base model as GLM-5.2 and derives every capability gain from scaled-up post-training. The headline results are in coding, where Z.ai reports the model is the strongest open-weights system it has measured, and in ..."
+    }
+  ]
+}

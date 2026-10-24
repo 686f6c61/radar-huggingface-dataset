@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Radiumcoders/localflow-clean",
+  "slug": "radiumcoders-localflow-clean",
+  "author": "Radiumcoders",
+  "url": "https://huggingface.co/Radiumcoders/localflow-clean",
+  "created_at": "2026-10-24T08:11:03.000Z",
+  "updated_at": "2026-10-24T09:05:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "dictation",
+    "speech-to-text",
+    "text-cleanup",
+    "localflow",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:quantized:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 551368000,
+  "parameters_human": "551.4M",
+  "storage_bytes": 350373280,
+  "storage_human": "350 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "localflow/README.md at master · radiumcoders/localflow · GitHub",
+      "url": "https://github.com/radiumcoders/localflow/blob/master/README.md",
+      "snippet": "localflow: local, private Wispr-Flow-style dictation for Handy. Self-corrections, lists, headings, misheard names, via a small Ollama model. macOS, Windows, Linux. - localflow/README.md at master · radiumcoders/localflow"
+    },
+    {
+      "title": "GitHub - radiumcoders/localflow: localflow: local, private Wispr-Flow ...",
+      "url": "https://github.com/radiumcoders/localflow/tree/master",
+      "snippet": "localflow: local, private Wispr-Flow-style dictation for Handy. Self-corrections, lists, headings, misheard names, via a small Ollama model. macOS, Windows, Linux. - radiumcoders/localflow"
+    },
+    {
+      "title": "Local AI Model Catalog: VRAM, Context and License Data (2026)",
+      "url": "https://local-ai-models.ai/local-ai-models.html",
+      "snippet": "Local AI Model Catalog 154 open-weight models cataloged. VRAM requirements, speed benchmarks, hardware planning. Your mission control for local AI deployment."
+    },
+    {
+      "title": "Free Local AI Tools & Calculators (2026): VRAM, GPU & Model Pickers",
+      "url": "https://localaimaster.com/tools",
+      "snippet": "Free local-AI tools: VRAM calculator, GPU picker, \"what model can I run\" checker, quantization calculator, live model leaderboard and more. No signup, instant results."
+    },
+    {
+      "title": "Local AI Models — The Reference for Running AI Locally",
+      "url": "https://local-ai-models.ai/",
+      "snippet": "The reference for engineers running AI locally: VRAM math, hardware tradeoffs, model data, and long-form guides with worked numbers and cited sources. Built to help you understand, not just install."
+    }
+  ]
+}

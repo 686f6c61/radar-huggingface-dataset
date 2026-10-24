@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "dhelleberg/microduck-sprint-2m-run-1024-1006",
+  "slug": "dhelleberg-microduck-sprint-2m-run-1024-1006",
+  "author": "dhelleberg",
+  "url": "https://huggingface.co/dhelleberg/microduck-sprint-2m-run-1024-1006",
+  "created_at": "2026-10-24T08:28:15.000Z",
+  "updated_at": "2026-10-24T08:28:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5643331,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pollen-robotics/microduck-sprint-2m-reference · Hugging Face",
+      "url": "https://huggingface.co/pollen-robotics/microduck-sprint-2m-reference",
+      "snippet": "Pollen&#x27;s reference for the Microduck Arena&#x27;s 2 m Sprint: the sprint_2m challenge of microduck-challenges trained unchanged with its recipe (4096 envs, 3000 iterations, seed 1)."
+    },
+    {
+      "title": "pollen-robotics/microduck-sprint-2m-reference at main",
+      "url": "https://huggingface.co/pollen-robotics/microduck-sprint-2m-reference/tree/main",
+      "snippet": "Notebooks Google Colab Kaggle main microduck-sprint-2m-reference 5.65 MB Ctrl+K Ctrl+K 3 contributors History:4 commits apirrone kramp HF Staff Metadata for Microduck policy (#1) 62afcc4 9 days ago .gitattributes Safe 1.52 kBinitial commit12 days ago README.md Safe 1.69 kBMetadata for Microduck policy (#1)9 days ago checkpoint.pt Safe 4.85 MB xet publish sprint-2m-reference: perpetual, Mjlab ..."
+    },
+    {
+      "title": "GitHub - pollen-robotics/microduck: A Tiny biped duck robot",
+      "url": "https://github.com/pollen-robotics/microduck",
+      "snippet": "A Tiny biped duck robot 🦆. Contribute to pollen-robotics/microduck development by creating an account on GitHub."
+    },
+    {
+      "title": "Microduck — Small robot. Super smart.",
+      "url": "https://microducks.org/",
+      "snippet": "Microduck pre-orders ship by Christmas in North America & Europe. Battery life and walking performance vary by surface, policy version and how often your robot attempts somersaults."
+    },
+    {
+      "title": "microduck-arena/docs/guides/challenges/sprint-2m.md at main · pollen ...",
+      "url": "https://github.com/pollen-robotics/microduck-arena/blob/main/docs/guides/challenges/sprint-2m.md",
+      "snippet": "Scoring The Arena scans forward commands from 0.20 to 1.20 m/s in 0.05 steps. It tests three shortlisted speeds over five starts and keeps the best average. Each fall or timeout counts as 50 seconds."
+    }
+  ]
+}

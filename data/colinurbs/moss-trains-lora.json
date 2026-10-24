@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "colinurbs/moss-trains-lora",
+  "slug": "colinurbs-moss-trains-lora",
+  "author": "colinurbs",
+  "url": "https://huggingface.co/colinurbs/moss-trains-lora",
+  "created_at": "2026-10-19T01:50:29.000Z",
+  "updated_at": "2026-10-24T02:05:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "lora",
+    "moss-image",
+    "trains",
+    "locomotive",
+    "railroad",
+    "photography",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 601894063,
+  "storage_human": "602 MB",
+  "base_model": "OpenMOSS/MOSS-Image-Base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "colinurbs/moss-trains-lora · Hugging Face",
+      "url": "https://huggingface.co/colinurbs/moss-trains-lora",
+      "snippet": "LoRA rank 64 / alpha 16, AdamW8bit, lr 1e-4 constant, batch 1, 1 MP buckets, one caption (the long MOSS caption) per photo. Planned for 2 passes, stopped at step 5,761 when samples went soft; this is the epoch-1 checkpoint."
+    },
+    {
+      "title": "Train LoRA Models Online - No GPU Required | LoRA AI",
+      "url": "https://loraai.io/train-lora",
+      "snippet": "Train LoRA in 15-30 minutes. 5 specialized trainers for characters, styles, products. No coding, no GPU needed. Start free with 50 credits."
+    },
+    {
+      "title": "Anime Realism for MOSS Image - v1.0 | MOSS Image LoRA - Civitai",
+      "url": "https://civitai.com/models/3006790/anireal-or-anime-realism-for-moss-image",
+      "snippet": "Anireal is an anime-realism style LoRA trained for MOSS Image. It is designed to preserve recognizable anime character identity while adding more natural skin, detailed hair, textured fabric, cinematic lighting, and greater depth to environments."
+    },
+    {
+      "title": "UltraReal - Moss, Krea2, Klein9b - MOSS_V2 | MOSS Image LoRA | Civitai",
+      "url": "https://civitai.red/models/2462105/ultrareal-moss-krea2-klein9b",
+      "snippet": "Stop prompting from scratch, explore 11,000+ Prompts for free 👉 PromptDexter.com LoRAs for reducing the soft &amp; smooth AI look and adds more tex..."
+    },
+    {
+      "title": "MOSS Image: Text That Reads Right, Prompts Up to 4K Tokens",
+      "url": "https://civitai.com/articles/36843/moss-image-text-that-reads-right-prompts-up-to-4k-tokens",
+      "snippet": "TL;DR: MOSS Image is in the generator. A new open-weights text-to-image model from the OpenMOSS team. Built for text and layout. Words that read right, and you can place them with a JSON layout. Long prompts. Up to 4K tokens, in plain language, booru tags or JSON. Two versions. SFT for generating. Base for fine-tuning and LoRAs. Train your own. MOSS Image LoRA training is live in the Training ..."
+    }
+  ]
+}

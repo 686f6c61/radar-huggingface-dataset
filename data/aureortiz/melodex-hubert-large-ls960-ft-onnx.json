@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "aureortiz/melodex-hubert-large-ls960-ft-onnx",
+  "slug": "aureortiz-melodex-hubert-large-ls960-ft-onnx",
+  "author": "aureortiz",
+  "url": "https://huggingface.co/aureortiz/melodex-hubert-large-ls960-ft-onnx",
+  "created_at": "2026-10-24T08:29:36.000Z",
+  "updated_at": "2026-10-24T08:34:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1262262148,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Xenova/hubert-large-ls960-ft · Hugging Face",
+      "url": "https://huggingface.co/Xenova/hubert-large-ls960-ft",
+      "snippet": "Note: Having a separate repo for ONNX weights is intended to be a temporary solution until WebML gains more traction. If you would like to make your models web-ready, we recommend converting to ONNX using 🤗 Optimum and structuring your repo like this one (with ONNX weights located in a subfolder named onnx)."
+    },
+    {
+      "title": "facebook/hubert-large-ls960-ft · Hugging Face",
+      "url": "https://huggingface.co/facebook/hubert-large-ls960-ft",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Hubert-large-ls960-ft Open-source Speech Model - Supports Free ...",
+      "url": "https://model.aibase.com/en/models/details/1915693358317723649",
+      "snippet": "HuBERT-Large is a self-supervised speech representation learning model fine-tuned on 960 hours of LibriSpeech data for automatic speech recognition tasks."
+    },
+    {
+      "title": "hubert-large-ls960-ft: open audio or speech model | AxForge",
+      "url": "https://axforge.ai/models/hubert-large-ls960-ft/",
+      "snippet": "hubert-large-ls960-ft is a large automatic speech recognition model developed by Meta and released under the Apache 2.0 license. It is a fine-tuned version of hubert-large-ll60k, trained on 960 hours of Librispeech data for English audio sampled at 16kHz."
+    },
+    {
+      "title": "hubert-large-ls960-ft: Audio-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/hubert-large-ls960-ft-facebook",
+      "snippet": "Overview hubert-large-ls960-ft is a large self-supervised speech recognition model built by facebook that performs automatic speech recognition on 16kHz sampled audio. The model is a fine-tuned version of hubert-large-ll60k, trained on 960 hours of Librispeech data. HuBERT (Hidden-Unit BERT) uses an offline k-means clustering approach with a BERT-like masked prediction loss to learn acoustic ..."
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "laion/Humaneness-Voice-Large-1.5-Alpha",
+  "slug": "laion-humaneness-voice-large-1-5-alpha",
+  "author": "laion",
+  "url": "https://huggingface.co/laion/Humaneness-Voice-Large-1.5-Alpha",
+  "created_at": "2026-10-24T08:55:13.000Z",
+  "updated_at": "2026-10-24T08:56:07.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "en",
+    "de",
+    "fr",
+    "nl",
+    "es"
+  ],
+  "tags": [
+    "safetensors",
+    "audio",
+    "text-to-speech",
+    "expressive-speech",
+    "lora",
+    "reinforcement-learning",
+    "custom-code",
+    "en",
+    "de",
+    "fr",
+    "nl",
+    "es",
+    "base_model:laion/Humaneness-Voice-Large-1.3-Alpha",
+    "base_model:adapter:laion/Humaneness-Voice-Large-1.3-Alpha",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8656839556,
+  "storage_human": "8.7 GB",
+  "base_model": "laion/Humaneness-Voice-Large-1.3-Alpha",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Parody: jojos bizarre adventure, popular » nhentai",
+      "url": "https://nhentai.net/parody/jojos-bizarre-adventure/?sort=popular",
+      "snippet": "Read 413 galleries with parody jojos bizarre adventure on nhentai, a hentai doujinshi and manga reader."
+    },
+    {
+      "title": "Tag: jojos bizarre adventure - E-Hentai Galleries",
+      "url": "https://e-hentai.org/tag/jojos%20bizarre%20adventure",
+      "snippet": "Showing search results for Tag: jojos bizarre adventure - just some of the over a million absolutely free hentai galleries available."
+    },
+    {
+      "title": "parody:jojos bizarre adventure - E-Hentai Galleries",
+      "url": "https://e-hentai.org/tag/parody:jojos+bizarre+adventure?next=2528086",
+      "snippet": "Showing search results for parody:jojos bizarre adventure - just some of the over a million absolutely free hentai galleries available."
+    },
+    {
+      "title": "Most Loved JoJo's Bizarre Adventure Hentai Comics HD Porn Comics …",
+      "url": "https://myhentaicomics.com/gallery/parody/2037?sorting=favorite",
+      "snippet": "Read the most loved JoJo's Bizarre Adventure Adult Hentai Porn Comics | JoJo's Bizarre Adventure HD Porn Comics | JoJo's …"
+    },
+    {
+      "title": "JoJo's Bizarre Adventure - Hentai Manga and Doujinshi Collection",
+      "url": "https://www.simply-hentai.com/collection/jojos-bizarre-adventure-22cf9",
+      "snippet": "Read all 27 hentai mangas attached to the hentai collection JoJo's Bizarre Adventure for free directly online on Simply Hentai"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "ZTE-AIM/NTele-Hybrid-27B-v1",
+  "slug": "zte-aim-ntele-hybrid-27b-v1",
+  "author": "ZTE-AIM",
+  "url": "https://huggingface.co/ZTE-AIM/NTele-Hybrid-27B-v1",
+  "created_at": "2026-10-23T08:06:51.000Z",
+  "updated_at": "2026-10-24T02:28:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ZTE Official Website-Global - ZTE",
+      "url": "https://www.ztedevices.com/fr-fr/",
+      "snippet": "ZTE Blade A35e ZTE Blade V70 Design ZTE Blade V70 Max ZTE Blade V70 Vita ZTE Blade V70 ZTE Blade V60 Design ZTE Blade …"
+    },
+    {
+      "title": "ZTE — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/ZTE",
+      "snippet": "ZTE, ou Zhongxing Telecommunication Equipment Company Limited (chinois simplifié : 中兴通讯股份有限公司) est un …"
+    },
+    {
+      "title": "ZTE - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/ZTE",
+      "snippet": "ZTE ... ZTE Corporation is a Chinese partially state-owned technology company that specializes in telecommunication. Founded in …"
+    },
+    {
+      "title": "ZTE - ZTE Offical Website | Leading 5G Innovations The world's …",
+      "url": "https://www.zte.com.cn/global/",
+      "snippet": "Covering more than 160 countries and regions, ZTE serves over 1/4 people worldwide, and is committed to achieving a bright future …"
+    },
+    {
+      "title": "Site officiel des téléphones mobiles ZTE - ZTE",
+      "url": "https://support.ztedevices.com/fr-fr/zte-mobile-phone-official-website/",
+      "snippet": "Site officiel des téléphones mobiles ZTE Les informations de contact sont fournies par le site officiel : http://www.ztedevice.com."
+    }
+  ]
+}

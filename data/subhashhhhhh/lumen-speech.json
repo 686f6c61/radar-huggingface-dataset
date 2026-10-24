@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "subhashhhhhh/lumen-speech",
+  "slug": "subhashhhhhh-lumen-speech",
+  "author": "subhashhhhhh",
+  "url": "https://huggingface.co/subhashhhhhh/lumen-speech",
+  "created_at": "2026-10-24T08:31:57.000Z",
+  "updated_at": "2026-10-24T08:32:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "automatic-speech-recognition",
+    "voice-activity-detection",
+    "android",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18209010,
+  "storage_human": "18 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Basic Calculator",
+      "url": "https://www.calculator.net/basic-calculator.html",
+      "snippet": "This free online calculator can be used for basic computations such as addition, subtraction, multiplication, division, and square roots."
+    },
+    {
+      "title": "Online Calculator",
+      "url": "https://okcalc.com/en/",
+      "snippet": "Free Online Scientific Notation Calculator. Solve advanced problems in Physics, Mathematics and Engineering. Math Expression …"
+    },
+    {
+      "title": "Calculator - Math is Fun",
+      "url": "https://www.mathsisfun.com/numbers/calculator.html",
+      "snippet": "Just type and your answer comes up live. Also see Function Grapher, Equation Grapher, and Full Precision Calculator. Make sure …"
+    },
+    {
+      "title": "5.45×39mm - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/5.45%C3%9739mm",
+      "snippet": "The 5.45×39 mm gradually supplemented and then largely replaced the 7.62×39mm cartridge in Soviet and Warsaw Pact service as …"
+    },
+    {
+      "title": "Multiplication Table for 545 - Math Tools",
+      "url": "https://math.tools/table/multiplication/545",
+      "snippet": "This page shows the multiplication table for the number five hundred forty-five (545) — download it as a PDF, print it directly, or grab …"
+    }
+  ]
+}

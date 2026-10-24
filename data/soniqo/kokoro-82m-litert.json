@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "soniqo/Kokoro-82M-LiteRT",
+  "slug": "soniqo-kokoro-82m-litert",
+  "author": "soniqo",
+  "url": "https://huggingface.co/soniqo/Kokoro-82M-LiteRT",
+  "created_at": "2026-07-13T14:14:04.000Z",
+  "updated_at": "2026-10-24T09:24:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "litert",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "litert",
+    "tflite",
+    "kokoro",
+    "text-to-speech",
+    "android",
+    "on-device",
+    "speech-core",
+    "en",
+    "base_model:hexgrad/Kokoro-82M",
+    "base_model:finetune:hexgrad/Kokoro-82M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 136,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 619829856,
+  "storage_human": "620 MB",
+  "base_model": "hexgrad/Kokoro-82M",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "soniqo/Kokoro-82M-LiteRT · Hugging Face",
+      "url": "https://huggingface.co/soniqo/Kokoro-82M-LiteRT",
+      "snippet": "Instructions to use soniqo/Kokoro-82M-LiteRT with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LiteRT How to use soniqo/Kokoro-82M-LiteRT with LiteRT: ... Notebooks Google Colab Kaggle Kokoro 82M — LiteRT Model Files Validation Performance Usage with speech-core Source"
+    },
+    {
+      "title": "soniqo/Kokoro-82M-LiteRT at main - Hugging Face",
+      "url": "https://huggingface.co/soniqo/Kokoro-82M-LiteRT/tree/main",
+      "snippet": "Instructions to use soniqo/Kokoro-82M-LiteRT with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LiteRT How to use soniqo/Kokoro-82M-LiteRT with LiteRT:"
+    },
+    {
+      "title": "GitHub - hexgrad/kokoro: https://hf.co/hexgrad/Kokoro-82M",
+      "url": "https://github.com/hexgrad/kokoro",
+      "snippet": "Kokoro is an open-weight TTS model with 82 million parameters. Despite its lightweight architecture, it delivers comparable quality to larger models while being significantly faster and more cost-efficient."
+    },
+    {
+      "title": "Kokoro 82M Self-Hosting Guide: VRAM, GPUs & Specs | LLM API",
+      "url": "https://llmapi.ai/models/hexgrad-kokoro-82m/",
+      "snippet": "Kokoro 82M is a text-only model, supporting text input and text output without image, audio, or other modalities. How do I call Kokoro 82M through the LLM.API gateway? Use the standard chat or completion endpoint and set the model field to \"hexgrad/kokoro-82m\" in your LLM.API request. How does Kokoro 82M compare to larger models on LLM.API?"
+    },
+    {
+      "title": "Kokoro 82M — Requirements, licence, and performance — Local AI",
+      "url": "https://local-ai.net/models/kokoro-82m/",
+      "snippet": "A tiny 82-million-parameter text-to-speech model that produces natural 24kHz speech and runs fast on a laptop CPU. Apache 2.0 licensed, and in blind tests it holds its own against models many times its size."
+    }
+  ]
+}

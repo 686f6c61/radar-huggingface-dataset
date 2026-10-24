@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "lucaskim72/connectailab-rl-lucasbrain-v1-lunarlander",
+  "slug": "lucaskim72-connectailab-rl-lucasbrain-v1-lunarlander",
+  "author": "lucaskim72",
+  "url": "https://huggingface.co/lucaskim72/connectailab-rl-lucasbrain-v1-lunarlander",
+  "created_at": "2026-10-24T01:51:57.000Z",
+  "updated_at": "2026-10-24T01:52:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "reinforcement-learning",
+    "deep-reinforcement-learning",
+    "dqn",
+    "gymnasium",
+    "LunarLander-v3",
+    "connect-ai-lab",
+    "connectailab",
+    "aicitybuilders",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 75389,
+  "storage_human": "75389 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "reinforcement-learning",
+      "dataset": "LunarLander-v3",
+      "metric": "처음 보는 10판 평균 점수 (200 이상 = 성공)",
+      "value": 233.6
+    }
+  ],
+  "sources": [
+    {
+      "title": "lucaskim72/connectailab-rl-lucasbrain-v2 · Hugging Face",
+      "url": "https://huggingface.co/lucaskim72/connectailab-rl-lucasbrain-v2",
+      "snippet": "lucaskim72 / connectailab-rl-lucasbrain-v2 Like 0 Reinforcement Learning jev-style Korean numpy connect-ai-lab deep-reinforcement-learning gymnasium connect-company connect-tycoon jev ppo decision-making prefrontal-cortex korean License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "lucaskim72/connectailab-rl-lucas-v1-lunarlander · Hugging Face",
+      "url": "https://huggingface.co/lucaskim72/connectailab-rl-lucas-v1-lunarlander",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Deep Q-Learning — Lunar Lander | rl-lunar-lander",
+      "url": "https://jlinnnn.github.io/rl-lunar-lander/",
+      "snippet": "Deep Q-Learning agent that solves OpenAI Gym&#x27;s LunarLander-v2 in 534 episodes. Includes a portfolio case-study page."
+    },
+    {
+      "title": "Narasimha1997/LunarLander-rl - GitHub",
+      "url": "https://github.com/Narasimha1997/LunarLander-rl",
+      "snippet": "A self aware Lunar Lander built using OpenAI gym and Q-Learning algorithm - Narasimha1997/LunarLander-rl"
+    },
+    {
+      "title": "GitHub - smileynet/lunar_lander_rl",
+      "url": "https://github.com/smileynet/lunar_lander_rl/",
+      "snippet": "Lunar Lander Reinforcement Learning Project 🚀 Welcome to the Lunar Lander RL project! In this project, you&#x27;ll train an AI agent to play the Lunar Lander game using Reinforcement Learning (RL) techniques."
+    }
+  ]
+}

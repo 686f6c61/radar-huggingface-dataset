@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "SkillFi24/lunethys-moss-image-base",
+  "slug": "skillfi24-lunethys-moss-image-base",
+  "author": "SkillFi24",
+  "url": "https://huggingface.co/SkillFi24/lunethys-moss-image-base",
+  "created_at": "2026-10-24T07:59:10.000Z",
+  "updated_at": "2026-10-24T08:00:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "not-for-all-audiences",
+    "en",
+    "base_model:OpenMOSS-Team/MOSS-Image-Base",
+    "base_model:adapter:OpenMOSS-Team/MOSS-Image-Base",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 129324252,
+  "storage_human": "129 MB",
+  "base_model": "OpenMOSS-Team/MOSS-Image-Base",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.com/?hl=fr",
+      "snippet": "Le service sans frais de Google traduit instantanément des mots, des expressions et des pages Web entre le français et plus de 100 …Read more"
+    },
+    {
+      "title": "DeepL Traducteur | Le meilleur traducteur au monde",
+      "url": "https://www.deepl.com/fr/translator",
+      "snippet": "Traduisez des textes et des documents complets en un instant. Des traductions précises accessibles aux utilisateurs uniques et aux …"
+    },
+    {
+      "title": "Reverso | Traduction gratuite, dictionnaire",
+      "url": "https://www.reverso.net/traduction-texte",
+      "snippet": "Le service de traduction en ligne gratuit de Reverso qui traduit vos textes de l'anglais vers le français, l'espagnol, l'italien, l'allemand, …"
+    },
+    {
+      "title": "Linguee | Dictionnaire anglais-français (et autres langues)",
+      "url": "https://www.linguee.fr/",
+      "snippet": "Dictionnaire anglais-français avec des millions de phrases traduites en anglais-français. Moteur de recherche de traductions anglais …"
+    },
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.fr/details",
+      "snippet": "Certaines phrases peuvent contenir des alternatives tenant compte du genre grammatical. Cliquez sur une phrase pour voir les …"
+    }
+  ]
+}

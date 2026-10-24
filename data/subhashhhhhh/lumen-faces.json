@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "subhashhhhhh/lumen-faces",
+  "slug": "subhashhhhhh-lumen-faces",
+  "author": "subhashhhhhh",
+  "url": "https://huggingface.co/subhashhhhhh/lumen-faces",
+  "created_at": "2026-10-24T01:05:27.000Z",
+  "updated_at": "2026-10-24T01:05:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "face-detection",
+    "face-recognition",
+    "android",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 38926091,
+  "storage_human": "39 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "subhashhhhhh/lumen-faces · Hugging Face",
+      "url": "https://huggingface.co/subhashhhhhh/lumen-faces",
+      "snippet": "Face detection and recognition for Lumen On-device face grouping for Lumen, a local-first Android gallery: it finds the faces in photos and groups them by person. Lumen downloads these files on request from its Settings; no photo or face ever leaves the phone."
+    },
+    {
+      "title": "lumen-models (Lumen AI) - Hugging Face",
+      "url": "https://huggingface.co/lumen-models",
+      "snippet": "Natural Language Processing, Large Language Models, Model Optimization"
+    },
+    {
+      "title": "subhashhhhhh (Subhash) · GitHub",
+      "url": "https://github.com/subhashhhhhh",
+      "snippet": "Computer Engineering Student at Thapar University. TIET &#x27;26 - subhashhhhhh"
+    },
+    {
+      "title": "LUMENFALL - The Unified API for AI Image and Video Generation",
+      "url": "https://lumenfall.ai/",
+      "snippet": "Lumenfall is an AI media gateway for unified access to the top image and video models across leading providers. OpenAI-compatible API, no markup, pay as you go."
+    },
+    {
+      "title": "Release Lumen models and dataset on Hugging Face #5",
+      "url": "https://github.com/Kunbyte-AI/Lumen/issues/5",
+      "snippet": "We encourage researchers to push each model checkpoint to a separate model repository, so that things like download stats also work. We can then also link the checkpoints to the paper page. Uploading dataset Would be awesome to make the Lumen Video Relighting Dataset available on 🤗 , so that people can do:"
+    }
+  ]
+}

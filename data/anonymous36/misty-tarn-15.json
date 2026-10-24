@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Anonymous36/misty-tarn-15",
+  "slug": "anonymous36-misty-tarn-15",
+  "author": "Anonymous36",
+  "url": "https://huggingface.co/Anonymous36/misty-tarn-15",
+  "created_at": "2026-10-24T08:36:19.000Z",
+  "updated_at": "2026-10-24T08:40:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839711717,
+  "storage_human": "18.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Free TWEEN AI Art & Models | Tensor.Art",
+      "url": "https://tensor.art/tag/645592322838536264",
+      "snippet": "Explore TWEEN on TENSOR — 37 models and 1.2K posts."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, DeepSeek, Qwen, Mistral, Z.ai, Meta, and important open-weight model families."
+    },
+    {
+      "title": "Misty - Download Free 3D model by zgreenwood - Sketchfab",
+      "url": "https://sketchfab.com/3d-models/misty-a4cb3a85984f4e44bd880ec36a2f50e2",
+      "snippet": "This model was generated using Meshy (https://www.meshy.ai)&#x27;s AI toolkit. It provides tools that effortlessly turn human imagination into stunning 3D models."
+    },
+    {
+      "title": "tarn - Download Free 3D model by photon (that one larry ... - Sketchfab",
+      "url": "https://sketchfab.com/3d-models/tarn-ea15c5f8920842608fbbc342ed82d504",
+      "snippet": "318 2.2k 82 Download 3D Model Add to Embed Share Report Triangles: 19.6k Vertices: 11.2k More model information"
+    },
+    {
+      "title": "hitem3d | AI 3D Model Generator",
+      "url": "https://hitem3d.pro/",
+      "snippet": "Hitem3d 1.0 A direct AI 3D creation experience hitem3d: any idea into 3D, free to start Turn a prompt or reference image into a detailed, editable 3D model ready for real creative work. From prompt or image to 3D."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Rakeshdharan56/xvla_panda_pick_v2",
+  "slug": "rakeshdharan56-xvla_panda_pick_v2",
+  "author": "Rakeshdharan56",
+  "url": "https://huggingface.co/Rakeshdharan56/xvla_panda_pick_v2",
+  "created_at": "2026-10-24T02:19:12.000Z",
+  "updated_at": "2026-10-24T02:19:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "xvla",
+    "robotics",
+    "dataset:Rakeshdharan56/pick_panda_v2",
+    "arxiv:2510.10274",
+    "base_model:lerobot/xvla-base",
+    "base_model:finetune:lerobot/xvla-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 879738545,
+  "parameters_human": "879.7M",
+  "storage_bytes": 1759604750,
+  "storage_human": "1.8 GB",
+  "base_model": "lerobot/xvla-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rakeshdharan56 (Rakesh Dhamodharan) - Hugging Face",
+      "url": "https://huggingface.co/Rakeshdharan56/models",
+      "snippet": "User profile of Rakesh Dhamodharan on Hugging Face"
+    },
+    {
+      "title": "vla-cathlab-companion/docs/handoffs/2026-10-23-rtx4090 ... - GitHub",
+      "url": "https://github.com/Rakeshdharan/vla-cathlab-companion/blob/main/docs/handoffs/2026-10-23-rtx4090-maniskill-genesis-session.md",
+      "snippet": "Rakeshdharan vla-cathlab-companion Code Issues Pull requests1 (1) Actions Projects Security and quality Insights main vla-cathlab-companion / docs / handoffs /"
+    },
+    {
+      "title": "Rakeshdharan56/pick_place_marker_bowl at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/Rakeshdharan56/pick_place_marker_bowl/tree/main",
+      "snippet": "Datasets: Rakeshdharan56 / pick_place_marker_bowl Like 1 Tasks: Robotics Modalities: Tabular Time-series Video Formats: parquet Size: 1K - 10K Tags: LeRobot Libraries: Datasets pandas Polars + 2 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community main pick_place_marker_bowl 43.2 MB 1 contributor History:3 commits Rakeshdharan56 Upload README.md with huggingface ..."
+    },
+    {
+      "title": "XVLA Model | 2toinf/X-VLA | DeepWiki",
+      "url": "https://deepwiki.com/2toinf/X-VLA/2.1-xvla-model",
+      "snippet": "XVLA Model Relevant source files Purpose and Scope This document provides detailed technical documentation of the XVLA model architecture, which is the core neural network that enables cross-embodiment vision-language-action control in the X-VLA system."
+    },
+    {
+      "title": "X-VLA - thu-air-dream.github.io",
+      "url": "https://thu-air-dream.github.io/X-VLA/",
+      "snippet": "Meticulous Model Design and Training Recipes Building on Soft Prompts, we introduce X-VLA, a neat VLA architecture designed for stable pretraining on heterogeneous datasets and efficient adaptation on new domains. In this section, we first present the overall architectural design, followed by several key techniques for large-scale pretraining."
+    }
+  ]
+}

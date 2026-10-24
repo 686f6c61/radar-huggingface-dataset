@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Zachary1150/ear-eeg-fm-benchmark-runs-archive",
+  "slug": "zachary1150-ear-eeg-fm-benchmark-runs-archive",
+  "author": "Zachary1150",
+  "url": "https://huggingface.co/Zachary1150/ear-eeg-fm-benchmark-runs-archive",
+  "created_at": "2026-10-24T00:18:45.000Z",
+  "updated_at": "2026-10-24T02:21:21.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "eeg",
+    "sleep-staging",
+    "ear-eeg",
+    "benchmark",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 175505178756,
+  "storage_human": "175.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zachary1150/ear-eeg-fm-benchmark-model · Hugging Face",
+      "url": "https://huggingface.co/Zachary1150/ear-eeg-fm-benchmark-model",
+      "snippet": "ear-eeg-fm-benchmark-model like 0 Model card Files Files and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Zachary1150/ear-eeg-fm-benchmark-runs-archive · Hugging Face",
+      "url": "https://huggingface.co/Zachary1150/ear-eeg-fm-benchmark-runs-archive",
+      "snippet": "Run outputs (checkpoints, metrics, predictions, configs, logs) of the Ear-EEG foundation-model benchmark that are no longer in active use: data-efficiency and label-budget runs, personalization runs, early pilots, smoke tests and legacy run layouts. They were copied here from the training clusters ..."
+    },
+    {
+      "title": "GitHub - xw1216/EEG-FM-Bench",
+      "url": "https://github.com/xw1216/EEG-FM-Bench",
+      "snippet": "EEG-FM-Bench addresses a critical gap in neuroscience AI research: the lack of standardized evaluation frameworks for EEG foundation models. As these models rapidly proliferate, inconsistent evaluation methods have made fair comparisons nearly impossible, hindering scientific progress."
+    },
+    {
+      "title": "[2508.17742] EEG-FM-Bench: A Comprehensive Benchmark for the Systematic ...",
+      "url": "https://arxiv.org/abs/2508.17742",
+      "snippet": "Current evaluations rely on inconsistent protocols that render cross-model comparisons unreliable, while a lack of diagnostic analyses obscures the internal mechanisms driving transfer efficiency and scaling behaviors. To address this, we introduce &#92;textbf {EEG-FM-Bench}, a unified system for the standardized evaluation of EEG-FMs."
+    },
+    {
+      "title": "EEG-FM-Bench: A Comprehensive Benchmark for the Systematic Evaluation ...",
+      "url": "https://arxiv.org/html/2508.17742v2",
+      "snippet": "Current evaluations rely on inconsistent protocols that render cross-model comparisons unreliable, while a lack of diagnostic analyses obscures the internal mechanisms driving transfer efficiency and scaling behaviors. To address this, we introduce EEG-FM-Bench, a unified system for the standardized evaluation of EEG-FMs."
+    }
+  ]
+}

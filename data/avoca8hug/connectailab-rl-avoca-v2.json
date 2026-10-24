@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "avoca8Hug/connectailab-rl-avoca-v2",
+  "slug": "avoca8hug-connectailab-rl-avoca-v2",
+  "author": "avoca8Hug",
+  "url": "https://huggingface.co/avoca8Hug/connectailab-rl-avoca-v2",
+  "created_at": "2026-10-24T02:29:31.000Z",
+  "updated_at": "2026-10-24T02:29:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "peft",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "reinforcement-learning",
+    "deep-reinforcement-learning",
+    "grpo",
+    "decision-making",
+    "gymnasium",
+    "connect-tycoon",
+    "connect-ai-lab",
+    "connectailab",
+    "lora",
+    "qwen3.5",
+    "ko",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 41684315,
+  "storage_human": "42 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "avoca8Hug/connectailab-rl-avoca-v1 · Hugging Face",
+      "url": "https://huggingface.co/avoca8Hug/connectailab-rl-avoca-v1",
+      "snippet": "avoca8Hug / connectailab-rl-avoca-v1 Like 0 Reinforcement Learning PEFT Safetensors Korean deep-reinforcement-learning grpo decision-making gymnasium connect-tycoon connect-ai-lab connectailab lora qwen3.5 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "connectailab-rl-avoca-v1 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/avoca8Hug/connectailab-rl-avoca-v1",
+      "snippet": "Deploy connectailab-rl-avoca-v1 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "AlexLEEeeee/connectailab-rl-alvis-v2-teacher · Hugging Face",
+      "url": "https://huggingface.co/AlexLEEeeee/connectailab-rl-alvis-v2-teacher",
+      "snippet": "AlexLEEeeee / connectailab-rl-alvis-v2-teacher Like 0 Reinforcement Learning jev-style Korean numpy connect-ai-lab deep-reinforcement-learning gymnasium connect-company connect-tycoon jev ppo decision-making prefrontal-cortex korean License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/",
+      "snippet": "We couldn&#x27;t load your remembered accounts. You can still log in below"
+    },
+    {
+      "title": "What we can learn from Avocado: The unreleased AI Meta&#x27;s model - TNW",
+      "url": "https://thenextweb.com/news/the-unreleased-ai-metas-model",
+      "snippet": "Additionally, a closed-source AI model represents an economic relief for the massive investment Meta is doing to leverage their AI capabilities."
+    }
+  ]
+}

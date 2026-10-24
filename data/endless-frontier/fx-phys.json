@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "endless-frontier/Fx-Phys",
+  "slug": "endless-frontier-fx-phys",
+  "author": "endless-frontier",
+  "url": "https://huggingface.co/endless-frontier/Fx-Phys",
+  "created_at": "2026-10-24T08:28:31.000Z",
+  "updated_at": "2026-10-24T09:12:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "qwen3.6",
+    "multimodal",
+    "mixture-of-experts",
+    "physics",
+    "scientific-reasoning",
+    "finance",
+    "tool-use",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71918654530,
+  "storage_human": "71.9 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EndLess - Transformons les déchets en ressources",
+      "url": "https://www.endless.fr/",
+      "snippet": "Transformer les déchets en ressources à l'infini Contact contact@endless.fr 01 76 34 14 76 Service client disponible du lundi au …"
+    },
+    {
+      "title": "ENDLESS I Boutique officielle",
+      "url": "https://endlessport.com/fr/",
+      "snippet": "Découvrez la nouvelle collection de raquettes de padel Endless®. Conçues et fabriquées en Espagne avec les meilleurs matériaux …"
+    },
+    {
+      "title": "E N D L E S S",
+      "url": "https://endlessport.com/en/",
+      "snippet": "Introducing the new Endless® Shelter Pro sunglasses, designed to protect you from impacts, reflections and with a UV 400 sun filter …"
+    },
+    {
+      "title": "Endless LLP",
+      "url": "https://endlessllp.com/",
+      "snippet": "Endless LLP acquires Anochrome Group Private equity firm Endless LLP (“Endless”) has acquired Anochrome Group …"
+    },
+    {
+      "title": "Endless™ Pools | Spas de nage | Alternative aux bassins de nage",
+      "url": "https://www.endlesspools.fr/",
+      "snippet": "Le leader dans la vente de piscines compactes, de spas de nage et de piscines non traditionnelles. Essayez une piscine modulaire …"
+    }
+  ]
+}

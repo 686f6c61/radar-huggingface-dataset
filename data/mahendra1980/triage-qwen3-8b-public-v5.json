@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mahendra1980/triage-qwen3-8b-public-v5",
+  "slug": "mahendra1980-triage-qwen3-8b-public-v5",
+  "author": "mahendra1980",
+  "url": "https://huggingface.co/mahendra1980/triage-qwen3-8b-public-v5",
+  "created_at": "2026-10-24T00:50:04.000Z",
+  "updated_at": "2026-10-24T00:50:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "security",
+    "soc",
+    "alert-triage",
+    "cybersecurity",
+    "lora",
+    "qlora",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 186078460,
+  "storage_human": "186 MB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mahendra1980/triage-qwen3-8b-public-v5 · Hugging Face",
+      "url": "https://huggingface.co/mahendra1980/triage-qwen3-8b-public-v5",
+      "snippet": "A LoRA (QLoRA) adapter on Qwen/Qwen3-8B that gives a first-pass triage verdict (benign / suspicious / malicious) for SOC alerts. It is the triage component of the AEGIS autonomous-SOC pipeline. ⚠️ Trained on synthetic / public-corpus data — this is NOT a bank model. No real customer data, PII ..."
+    },
+    {
+      "title": "Qwen3-8B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_8b",
+      "snippet": "Qwen3-8B State‑of‑the‑art large language model useful on a variety of language understanding and generation tasks. The Qwen3‑8B is a state‑of‑the‑art multilingual base language model with 8 billion parameters, excelling in language understanding, generation, coding, and mathematics."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    },
+    {
+      "title": "Qwen3 8B — AI Model Radar",
+      "url": "https://aimodelradar.app/models/qwen3-8b",
+      "snippet": "Qwen3 8B is an open-weights dense 8.2B parameter causal language model from Alibaba&#x27;s Qwen series, designed for reasoning-heavy tasks and efficient dialogue. Released April 2025, it is available under the Apache 2.0 license with open access to weights. The model supports a 131,072 token context window and is suitable for both local deployment and API-based inference."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/qwen3_8b/README.md at ... - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/qwen3_8b/README.md",
+      "snippet": "The Qwen3-8B is a state-of-the-art multilingual base language model with 8 billion parameters, excelling in language understanding, generation, coding, and mathematics. This is based on the implementation of Qwen3-8B found here. This repository contains scripts for optimized on-device export suitable to run on Qualcomm® devices. More details on model performance across various devices, can be ..."
+    }
+  ]
+}

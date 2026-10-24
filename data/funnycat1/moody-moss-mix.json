@@ -5,13 +5,14 @@
   "author": "funnycat1",
   "url": "https://huggingface.co/funnycat1/Moody-Moss-Mix",
   "created_at": "2026-10-23T21:33:56.000Z",
-  "updated_at": "2026-10-23T21:39:35.000Z",
+  "updated_at": "2026-10-23T23:34:15.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
   "library": null,
   "languages": [],
   "tags": [
+    "en",
     "license:apache-2.0",
     "region:us"
   ],

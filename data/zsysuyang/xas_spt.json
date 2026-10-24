@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "zsysuyang/XAS_SPT",
+  "slug": "zsysuyang-xas_spt",
+  "author": "zsysuyang",
+  "url": "https://huggingface.co/zsysuyang/XAS_SPT",
+  "created_at": "2026-10-24T09:22:12.000Z",
+  "updated_at": "2026-10-24T09:22:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - zsy-suyang/SPT: Spectral Pattern Translator (SPT)：A universal ...",
+      "url": "https://github.com/zsy-suyang/SPT",
+      "snippet": "Spectral Pattern Translator (SPT)：A universal deep learning framework designed to directly infer key structural and electronic descriptors from raw XANES spectra - zsy-suyang/SPT"
+    },
+    {
+      "title": "zsysuyang (suyang zhong) - Hugging Face",
+      "url": "https://huggingface.co/zsysuyang",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset 2 days ago ... published a model 2 days ago"
+    },
+    {
+      "title": "Solving the inverse problem of X-ray absorption spectroscopy via ...",
+      "url": "https://arxiv.org/pdf/2603.27684",
+      "snippet": "To resolve the non-uniqueness and instability inherent in the Fredholm integral equation of XAS (Eq. 1), we developed the SPT model, a deep learning framework designed to invert raw XANES spectra into probabilistic structural descriptors."
+    },
+    {
+      "title": "zsysuyang/Uni-XAS at main - Hugging Face",
+      "url": "https://huggingface.co/zsysuyang/Uni-XAS/tree/main",
+      "snippet": "1 Model card FilesFiles and versions xet Community Copy to bucket new main Uni-XAS Ctrl+K Ctrl+K 1 contributor History:1 commit zsysuyang Upload Uni-XAS pretrained weights f9437ab 27 days ago forwardUpload Uni-XAS pretrained weights27 days ago inverseUpload Uni-XAS pretrained weights27 days ago xaslipUpload Uni-XAS pretrained weights27 days ago ..."
+    },
+    {
+      "title": "Advancing AI-Driven Analysis in X-ray Absorption Spectroscopy: Spectral ...",
+      "url": "https://arxiv.org/html/2510.15167v1",
+      "snippet": "Abstract In recent years, rapid progress has been made in developing artificial intelligence (AI) and machine learning (ML) methods for x-ray absorption spectroscopy (XAS) analysis. Compared to traditional XAS analysis methods, AI/ML approaches offer dramatic improvements in efficiency and help eliminate human bias."
+    }
+  ]
+}

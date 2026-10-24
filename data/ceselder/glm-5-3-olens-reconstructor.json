@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ceselder/glm-5.3-olens-reconstructor",
+  "slug": "ceselder-glm-5-3-olens-reconstructor",
+  "author": "ceselder",
+  "url": "https://huggingface.co/ceselder/glm-5.3-olens-reconstructor",
+  "created_at": "2026-10-23T06:08:32.000Z",
+  "updated_at": "2026-10-24T06:34:50.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "interpretability",
+    "activation-reconstructor",
+    "oracle-lens",
+    "lora",
+    "glm-5.3",
+    "base_model:nvidia/GLM-5.3-NVFP4",
+    "base_model:adapter:nvidia/GLM-5.3-NVFP4",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 36237143970,
+  "storage_human": "36.2 GB",
+  "base_model": "nvidia/GLM-5.3-NVFP4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Ai Weiwei Quiz: 15 Questions | Masters of Trivia",
+      "url": "https://mastersoftrivia.com/en/all-quizzes/money/alternative-investments/art-investing/ai-weiwei/",
+      "snippet": "Sep 27, 2026 · Ai Weiwei is a Chinese contemporary artist and activist, known for works like Sunflower Seeds and for his outspoken …"
+    },
+    {
+      "title": "22 Ai Weiwei Trivia Questions: Art, Activism, & Sunflower Seeds",
+      "url": "https://uponpaper.com/22-ai-weiwei-trivia-questions-art-activism-sunflower-seeds/",
+      "snippet": "Jun 13, 2026 · This quiz looks at the life, installations, and political activism of Ai Weiwei. He is one of the most prominent creative …"
+    },
+    {
+      "title": "Ai Weiwei Quiz: 15 Questions - wayground.com",
+      "url": "https://wayground.com/admin/quiz/655ac6f3bb5da25b649c8ae6/ai-weiwei-quiz",
+      "snippet": "Ai Weiwei Quiz: 15 Arts questions. Try one: \"In which year did Ai Weiwei photograph himself smashing a 2000-year-old urn?\" Free …"
+    },
+    {
+      "title": "Ai Weiwei - Quiz - Wordwall",
+      "url": "https://wordwall.net/resource/102363435/ai-weiwei",
+      "snippet": "1) Ai Weiwei is best known as a… 2) Ai Weiwei’s art is often described as… 3) Ai Weiwei is originally from which country?"
+    },
+    {
+      "title": "Ai Weiwei Trivia Questions — 16 True or False | PopBluff",
+      "url": "https://popbluff.com/trivia/artists/ai-weiwei",
+      "snippet": "How much do you really know about Ai Weiwei? Test yourself with 16 true or false trivia questions. Every answer comes with a full …"
+    }
+  ]
+}
