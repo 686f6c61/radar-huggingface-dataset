@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "SeNKrOn10/AdilCan_Bilgin",
+  "slug": "senkron10-adilcan_bilgin",
+  "author": "SeNKrOn10",
+  "url": "https://huggingface.co/SeNKrOn10/AdilCan_Bilgin",
+  "created_at": "2026-10-24T16:45:51.000Z",
+  "updated_at": "2026-10-24T16:47:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 74051924,
+  "storage_human": "74 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SeNKrOn10/Adil-Rvc-Model at main - Hugging Face",
+      "url": "https://huggingface.co/SeNKrOn10/Adil-Rvc-Model/tree/main",
+      "snippet": "SeNKrOn10 / Adil-Rvc-Model like 1 Model card FilesFiles and versions xet Community Copy to bucket new main Adil-Rvc-Model 67.2 MB Ctrl+K Ctrl+K 1 contributor History:2 commits SeNKrOn10 Upload Adil-Can-RVC Model b86f780 verified14 days ago .gitattributes Safe 1.52 kBinitial commit14 days ago Adil-Can-RVC.zip pickle"
+    },
+    {
+      "title": "SeNKrOn10/Adil-Rvc-Model · Hugging Face",
+      "url": "https://huggingface.co/SeNKrOn10/Adil-Rvc-Model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/",
+      "snippet": "We couldn&#x27;t load your remembered accounts. You can still log in below"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 992 AI models across 706 benchmarks, with 228 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    }
+  ]
+}

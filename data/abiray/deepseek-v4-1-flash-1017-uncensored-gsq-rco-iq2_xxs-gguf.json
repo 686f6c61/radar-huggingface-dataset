@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Abiray/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-IQ2_XXS-GGUF",
+  "slug": "abiray-deepseek-v4-1-flash-1017-uncensored-gsq-rco-iq2_xxs-gguf",
+  "author": "Abiray",
+  "url": "https://huggingface.co/Abiray/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-IQ2_XXS-GGUF",
+  "created_at": "2026-10-24T15:01:32.000Z",
+  "updated_at": "2026-10-24T15:38:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "deepseek-v4.1",
+    "abliterated",
+    "uncensored",
+    "gsq",
+    "rco",
+    "strata",
+    "llama.cpp",
+    "text-generation",
+    "base_model:ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
+    "base_model:quantized:ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 196613849600,
+  "parameters_human": "196.61B",
+  "storage_bytes": 249176445632,
+  "storage_human": "249.2 GB",
+  "base_model": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeepSeek-V4.1-Flash-1017-Uncensored-GGUF - Hugging Face",
+      "url": "https://huggingface.co/AtomicChat/DeepSeek-V4.1-Flash-1017-Uncensored-GGUF",
+      "snippet": "DeepSeek&#x27;s refusal direction projected out of the released weights, baked into GGUF builds and measured against the original. 2.67bpw-IQ1_M costs knowledge. It answers without refusals like the other build, but at 1 bit the edit takes MMLU from 85.6% to 81.8% (500 questions, p = 0.003; our gate ..."
+    },
+    {
+      "title": "DeepSeek-V4.1-Flash-1017 — UNCENSORED - Hugging Face",
+      "url": "https://huggingface.co/dealignai/DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw-UNCENSORED",
+      "snippet": "deepseek-v41 uncensored abliterated harmbench mmlu 131k-context License:deepseek-v41-flash-1017 Model card FilesFiles and versions xet Community Copy to bucket new DeepSeek-V4.1-Flash-1017 — UNCENSORED What this is Results on this exact bundle MMLU — 5-shot generate, 500 questions stratified across the 57 subjects, same question set and ..."
+    },
+    {
+      "title": "Strata/docs/DEEPSEEK41.md at main · Niko1221/Strata · GitHub",
+      "url": "https://github.com/Niko1221/Strata/blob/main/docs/DEEPSEEK41.md",
+      "snippet": "DeepSeek-V4.1-Flash DeepSeek-V4.1-Flash is a large mixture-of-experts model: 40 layers, 384 experts in each (6 are used for every word), and a 203 GB n-gram table next to them."
+    },
+    {
+      "title": "DeepSeek V4.1 Flash 1017 — AI Model Radar",
+      "url": "https://aimodelradar.app/models/deepseek-v4-1-flash-1017",
+      "snippet": "DeepSeek-V4.1-Flash-1017 is a sparse mixture-of-experts model built on the company&#x27;s Causal Encoder-Decoder architecture, activating 8B parameters on input and 16B on output from a 552B-parameter backbone. It supports multimodal input (text and image) with a 1M-token context window and is positioned as the cost-efficient tier of the V4.1 family."
+    },
+    {
+      "title": "Abliterated DeepSeek Flash 1017 for security work | abliteration.ai",
+      "url": "https://abliteration.ai/abliterated-deepseek-flash-1017",
+      "snippet": "Explore abliterated DeepSeek V4.1 Flash 1017 for authorized pentesting, reverse engineering, and AI red teaming. Start with Abliterated Large Flash and our integration guides."
+    }
+  ]
+}

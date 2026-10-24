@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "emdashthreee/pix-vid-WN-2.1-i2v-14b-720p",
+  "slug": "emdashthreee-pix-vid-wn-2-1-i2v-14b-720p",
+  "author": "emdashthreee",
+  "url": "https://huggingface.co/emdashthreee/pix-vid-WN-2.1-i2v-14b-720p",
+  "created_at": "2026-10-24T17:24:24.000Z",
+  "updated_at": "2026-10-24T17:52:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "i2v",
+    "video",
+    "video genration",
+    "image-to-video",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16394878784,
+  "parameters_human": "16.39B",
+  "storage_bytes": 82271764338,
+  "storage_human": "82.3 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wan-AI/Wan2.1-I2V-14B-720P · Hugging Face",
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-I2V-14B-720P",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Wan-AI/Wan2.1-I2V-14B-720P-Diffusers · Hugging Face",
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-I2V-14B-720P-Diffusers",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Wan Video 2.1 - wan2.1_i2v_720p_14B_fp8 - Civitai",
+      "url": "https://civitai.com/models/1329096?modelVersionId=1501344",
+      "snippet": "Wan Video Note: There are other Wan Video files hosted on Civitai - these may be duplicates, but this model card is primarily to host the files used by Wan Video in the Civitai Generator. 👍 SOTA Performance: Wan2.1 consistently outperforms existing open-source models and state-of-the-art commercial solutions across multiple benchmarks. 👍 Supports Consumer-grade GPUs: The T2V-1.3B model ..."
+    },
+    {
+      "title": "DaSiWa WAN 2.1 Lightspeed - Lightspeed-i2v-14B-720p | Wan Video ...",
+      "url": "https://civitai.com/models/1802623/dasiwa-wan-21-lightspeed",
+      "snippet": "Generates WAN 2.1 videos in a fraction of time. 720p and 480p Version Recommended settings: Sampler/Scheduler: Euler/Simple Steps: 4 CFG: 1 Sigma-S..."
+    },
+    {
+      "title": "Wan2.1 - i2v-14B-720p - Free AI Model | TensorHub Art",
+      "url": "https://tensorhub.art/models/834785434652446982",
+      "snippet": "This repository features our T2V-14B model, which establishes a new SOTA performance benchmark among both open-source and closed-source models. It demonstrates exceptional capabilities in generating high-quality visuals with significant motion dynamics."
+    }
+  ]
+}

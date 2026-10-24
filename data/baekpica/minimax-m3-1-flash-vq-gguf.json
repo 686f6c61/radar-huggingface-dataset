@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "Baekpica/MiniMax-M3.1-Flash-VQ-GGUF",
+  "slug": "baekpica-minimax-m3-1-flash-vq-gguf",
+  "author": "Baekpica",
+  "url": "https://huggingface.co/Baekpica/MiniMax-M3.1-Flash-VQ-GGUF",
+  "created_at": "2026-10-23T10:16:24.000Z",
+  "updated_at": "2026-10-24T13:00:24.000Z",
+  "license": "minimax-community",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "ko",
+    "zh",
+    "ja"
+  ],
+  "tags": [
+    "gguf",
+    "minimax_m3_vl",
+    "minimax",
+    "minimax-m3",
+    "vector-quantization",
+    "vq",
+    "residual-vq",
+    "imatrix",
+    "importance-matrix",
+    "calibration",
+    "mixture-of-experts",
+    "sparse-attention",
+    "msa",
+    "multimodal",
+    "vision",
+    "video",
+    "1m-context",
+    "speculative-decoding",
+    "dspark",
+    "dgx-spark",
+    "gb10",
+    "ds4",
+    "ds4-dfm-rs",
+    "image-text-to-text",
+    "conversational",
+    "custom_code",
+    "en",
+    "ko",
+    "zh",
+    "ja",
+    "base_model:MiniMaxAI/MiniMax-M3.1-Flash",
+    "base_model:quantized:MiniMaxAI/MiniMax-M3.1-Flash",
+    "license:other",
+    "mxfp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3190,
+  "trending_score": 0,
+  "parameters": 11835010176,
+  "parameters_human": "11.84B",
+  "storage_bytes": 115572450017,
+  "storage_human": "115.6 GB",
+  "base_model": "MiniMaxAI/MiniMax-M3.1-Flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AMAImedia/MiniMax-M3.1-Flash-NVFP4-GGUF · Hugging Face",
+      "url": "https://huggingface.co/AMAImedia/MiniMax-M3.1-Flash-NVFP4-GGUF",
+      "snippet": "MiniMax-M3.1-Flash is a native multimodal mixture-of-experts model for coding, agentic workflows, computer use, and cybersecurity. It supports text, image, and video inputs with a context window of up to 1M tokens."
+    },
+    {
+      "title": "MiniMax-M3.1-Flash · Models",
+      "url": "https://www.modelscope.cn/models/MiniMax/MiniMax-M3.1-Flash",
+      "snippet": "MiniMax-M3.1-Flash is a native multimodal mixture-of-experts model for coding, agentic workflows, computer use, and cybersecurity. It supports text, image, and video inputs with a context window of up to 1M tokens."
+    },
+    {
+      "title": "MiniMax M3.1 Flash: Price, Benchmarks, Hugging Face & Access",
+      "url": "https://minimax-ai.chat/models/minimax-m3-1-flash-preview/",
+      "snippet": "Its API name is MiniMax-M3.1-Flash, and it costs $0.15 per million input tokens and $0.60 per million output tokens, with no extra charge for long prompts. The model first shipped on September 27, 2026 as M3.1-Flash-Preview, a subscription-only test release inside MiniMax Code. The full release replaces that preview."
+    },
+    {
+      "title": "MiniMax M3.1 Flash: Redefining Agent Performance and Cost",
+      "url": "https://www.minimax.io/blog/minimax-m31f",
+      "snippet": "Today, we officially roll out MiniMax M3.1 Flash. As a next-generation Flash model, M3.1 Flash delivers a generational leap in agentic tasks, coding, Computer Use and cybersecurity, while making online inference nearly three times faster and reducing usage costs by 70%."
+    },
+    {
+      "title": "MiniMax-M3.1-Flash on Blackbox",
+      "url": "https://www.blackbox.ai/models/blackboxai/minimax/minimax-m3.1-flash",
+      "snippet": "MiniMax-M3.1-Flash is MiniMax&#x27;s multimodal M-series model for agent reasoning, tool use, coding, and long-context tasks. Fireworks serves the final weights with hybrid MXFP8 and NVFP4 expert precision, text and image inputs, structured outputs, and implicit prompt caching."
+    }
+  ]
+}

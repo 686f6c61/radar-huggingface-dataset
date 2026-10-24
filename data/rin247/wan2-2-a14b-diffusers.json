@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Rin247/Wan2.2-A14B-Diffusers",
+  "slug": "rin247-wan2-2-a14b-diffusers",
+  "author": "Rin247",
+  "url": "https://huggingface.co/Rin247/Wan2.2-A14B-Diffusers",
+  "created_at": "2026-10-24T15:42:39.000Z",
+  "updated_at": "2026-10-24T18:02:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "quantized",
+    "safetensors",
+    "mecha",
+    "weight-only",
+    "diffusers:WanImageToVideoPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 115630078420,
+  "storage_human": "115.6 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LinkedIn : s’identifier ou s’inscrire",
+      "url": "https://fr.linkedin.com/",
+      "snippet": "1 milliard de membres | Gérez votre image professionnelle. Constituez votre réseau professionnel et communiquez avec celui-ci. …"
+    },
+    {
+      "title": "Eiffage - LinkedIn",
+      "url": "https://fr.linkedin.com/company/eiffage_2",
+      "snippet": "Eiffage | 375 769 abonnés sur LinkedIn. Rejoignez une entreprise animée d’un esprit de famille unique #EspritDeFamille | Rejoindre …"
+    },
+    {
+      "title": "ENGIE - LinkedIn",
+      "url": "https://fr.linkedin.com/company/engie",
+      "snippet": "ENGIE | 1 171 859 abonnés sur LinkedIn. Et si votre prochaine aventure professionnelle commençait chez ENGIE ? Rejoindre …"
+    },
+    {
+      "title": "AXA - LinkedIn",
+      "url": "https://fr.linkedin.com/company/axa",
+      "snippet": "AXA | 1 667 888 abonnés sur LinkedIn. Act for human progress by protecting what matters. | Un point de départ : nos clients. En tant …"
+    },
+    {
+      "title": "Guillaume Moubeche - Founder @ lemlist (0 to $150m valuation",
+      "url": "https://fr.linkedin.com/in/guillaume-moubeche-a026541b2",
+      "snippet": "Founder @ lemlist (0 to $150m valuation in 4 years) | Investor | Host of @ BILLIONS · My name is Guillaume Moubeche but …"
+    }
+  ]
+}

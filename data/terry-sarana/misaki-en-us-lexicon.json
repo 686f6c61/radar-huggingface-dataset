@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "terry-sarana/misaki-en-us-lexicon",
+  "slug": "terry-sarana-misaki-en-us-lexicon",
+  "author": "terry-sarana",
+  "url": "https://huggingface.co/terry-sarana/misaki-en-us-lexicon",
+  "created_at": "2026-10-24T11:39:21.000Z",
+  "updated_at": "2026-10-24T11:39:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "g2p",
+    "phonemes",
+    "kokoro",
+    "misaki",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1310022,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Skincare-first Luxury Makeup | BY TERRY – BY TERRY EU",
+      "url": "https://eu.byterry.com/fr",
+      "snippet": "Redefine your beauty routine with high-performing and cutting-edge innovations formulated by beauty trailblazer Terry de Gunzburg. …"
+    },
+    {
+      "title": "Maquillage – BY TERRY EU",
+      "url": "https://eu.byterry.com/fr/collections/makeup",
+      "snippet": "Découvrez notre collection haute-couleur et haute-couture. Sublimez vos looks des plus naturels aux plus sophistiqués. Succombez …"
+    },
+    {
+      "title": "By Terry | Le meilleur choix de soin et maquillage - Nocibe.fr",
+      "url": "https://www.nocibe.fr/fr/b/by-terry/b9859?msockid=339219c62fb365da3dca0e3a2ed6647f",
+      "snippet": "Des parfums au maquillage By Terry, en passant par les soins visage, de nombreuses références peuvent vous séduire. Utilisez les …"
+    },
+    {
+      "title": "BY TERRY ≡ SEPHORA",
+      "url": "https://www.sephora.fr/marques/de-a-a-z/by-terry-terry/?msockid=339219c62fb365da3dca0e3a2ed6647f",
+      "snippet": "Découvrez nos offres BY TERRY, Achetez en ligne sur ≡ SEPHORA.fr et bénéficiez de la livraison Gratuite en magasin"
+    },
+    {
+      "title": "BY TERRY - Marionnaud",
+      "url": "https://www.marionnaud.fr/by-terry/b/100648",
+      "snippet": "BY TERRY offre une gamme de produits de maquillage et de soins de la peau qui repoussent les limites de la perfection. Reconnus …"
+    }
+  ]
+}

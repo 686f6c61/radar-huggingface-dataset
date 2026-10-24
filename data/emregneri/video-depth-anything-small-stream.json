@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "EmreGneri/video-depth-anything-small-stream",
+  "slug": "emregneri-video-depth-anything-small-stream",
+  "author": "EmreGneri",
+  "url": "https://huggingface.co/EmreGneri/video-depth-anything-small-stream",
+  "created_at": "2026-10-24T16:49:25.000Z",
+  "updated_at": "2026-10-24T16:53:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "depth-estimation",
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "depth-estimation",
+    "video",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 73033801,
+  "storage_human": "73 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nettoyer Logs de Microsoft One Drive - Forum Windows 8 / 8.1",
+      "url": "https://forums.commentcamarche.net/forum/affich-32798828-nettoyer-logs-de-microsoft-one-drive",
+      "snippet": "Nov 19, 2015 · Nettoyer Logs de Microsoft One Drive Poirot Bros - Modifié le 19 nov. 2015 à 11:28 Poirot Bros - 19 nov. 2015 à 23:45Read more"
+    },
+    {
+      "title": "OneNote 如何删除不用的笔记本？ - 知乎",
+      "url": "https://www.zhihu.com/question/34497118?sort=created",
+      "snippet": "小蓝星 · 2021 年度数码新品热度榜 来自知友的真实反馈 没有用处的笔记本，不是关闭它，而是删除，one drive 上没有任何东西，所 …"
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/question/461571277",
+      "snippet": "网上一堆开启WPS云存储的教程牛头不对马嘴的，我用的设备是iPad pro 2021。因为之前在电脑上一直用的one …"
+    },
+    {
+      "title": "Problème de macro excel avec fichier partagé sur OneDrive",
+      "url": "https://forums.commentcamarche.net/forum/affich-37841943-probleme-de-macro-excel-avec-fichier-partage-sur-onedrive",
+      "snippet": "May 3, 2023 · sur ma machine j'ouvre le fichier a partir du dossier partagé de mon one drive avec l'application excel et tout …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://www.answers.microsoft.com/en-us/windows/forum/all/windows-10-reset-and-fully-clean-the-drive-on-ssd/6a1b2a43-7aed-41da-a768-7425c6143226answers.microsoft.comやsocial.technet.microsoft.comにはさまざまな英語資料を速やかに読める英語話者達が多く参加し平均的な日本語話者が探し出すことが難しい情報を早い時期に話題にしていることがよくあります。日本で「高速起動によるUSB-HDDのトラブル」が話題になる半年前にMicrosoftのサイトには、英語でその質疑が残されていたくらいです。日本は、そもそも日本マイクロソフトがMicrosoftと充分な情報共有を与えられておらず必然的に、わかりにくい問題や難しい問題は英語の資料にあたらざるを得ない状況があります。ところが、前述のリンク先では、SSDの場合の抹消の有効性についてはっきりしたことがわからないままになっているようで「どうもMicrosoftはこの質問に答えたくないようだ」と疑われているようです。検証手段はあって、cipherで行われる米国防総省水準の時間がかかる抹消処理とfully",
+      "snippet": ""
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ShahriarFerdoush/llama3-8b-instruct-med-math-ties-k10",
+  "slug": "shahriarferdoush-llama3-8b-instruct-med-math-ties-k10",
+  "author": "ShahriarFerdoush",
+  "url": "https://huggingface.co/ShahriarFerdoush/llama3-8b-instruct-med-math-ties-k10",
+  "created_at": "2026-10-24T17:21:57.000Z",
+  "updated_at": "2026-10-24T17:25:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766057,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ShahriarFerdoush/llama3-8b-instruct-med-obf-emb-ties-emb-merged-k10 ...",
+      "url": "https://huggingface.co/ShahriarFerdoush/llama3-8b-instruct-med-obf-emb-ties-emb-merged-k10",
+      "snippet": "ShahriarFerdoush / llama3-8b-instruct-med-obf-emb-ties-emb-merged-k10 like 0 Text Generation Transformers Safetensors llama text-generation-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "ShahriarFerdoush/llama3-8b-instruct-med-ties-k10 · Hugging Face",
+      "url": "https://huggingface.co/ShahriarFerdoush/llama3-8b-instruct-med-ties-k10",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "llama3-8b-instruct-med-obf-emb-ties-v2-k50 - friendli.ai",
+      "url": "https://friendli.ai/models/ShahriarFerdoush/llama3-8b-instruct-med-obf-emb-ties-v2-k50",
+      "snippet": "Deploy llama3-8b-instruct-med-obf-emb-ties-v2-k50 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "llama3-8b-instruct-math-ties-k10 API & Inference Endpoint - FriendliAI",
+      "url": "https://friendli.ai/models/ShahriarFerdoush/llama3-8b-instruct-math-ties-k10",
+      "snippet": "Run llama3-8b-instruct-math-ties-k10 with FriendliAI inference. This is the model card of a 🤗 transformers model that has been pushed on the Hub."
+    },
+    {
+      "title": "Inference - llama-3 8b - Kaggle",
+      "url": "https://www.kaggle.com/code/kishanvavdara/inference-llama-3-8b",
+      "snippet": "Inference - llama-3 8b Super Fast 🚀 ¶ In this notebook we do inference using fine-tuned llama-3 8b model using T4 * 2 Gpu parallel, motivation behind to create this is the huge test size (25k samples). Prerequisite: Access to Llama-3, if you have not filled consent form, go here, fill the form to access llama-3. Training notebook can be found here Please upvote if you find this helpful!"
+    }
+  ]
+}

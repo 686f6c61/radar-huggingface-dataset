@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ISLAM-PO/LGM",
+  "slug": "islam-po-lgm",
+  "author": "ISLAM-PO",
+  "url": "https://huggingface.co/ISLAM-PO/LGM",
+  "created_at": "2026-10-24T17:49:15.000Z",
+  "updated_at": "2026-10-24T17:49:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-3d",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "image-to-3d",
+    "3d",
+    "gaussian-splatting",
+    "generative-3d",
+    "ml-for-3d",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Islam — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Islam",
+      "snippet": "Un adepte de l'islam est appelé un musulman ; il a des devoirs cultuels, souvent appelés les « piliers de l'islam ». Les musulmans …"
+    },
+    {
+      "title": "Islam web - Français | French islamic site",
+      "url": "https://islamweb.net/fr/",
+      "snippet": "Islamweb is a site designed to enrich the viewers knowledge and appreciation of Islam"
+    },
+    {
+      "title": "Islam - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Islam",
+      "snippet": "Islam is based on the belief in the oneness and uniqueness of God (tawhid), and belief in an afterlife (akhirah) with the Last …"
+    },
+    {
+      "title": "Bienvenue sur le portail de l’islam — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Portail:Islam",
+      "snippet": "Le livre sacré de l’islam est le Coran. Le dogme islamique assure qu’il contient le recueil de la révélation d’ Allah, qui s'est exécutée …"
+    },
+    {
+      "title": "L'Islam Simplement – L'Islam c'est simple, on vous l'explique simplement",
+      "url": "https://lislam-simplement.com/",
+      "snippet": "Oct 14, 2026 · Découvrez nos vidéos éducatives sur l’Islam pour renforcer votre foi, découvrir ou approfondir vos connaissances. …"
+    }
+  ]
+}

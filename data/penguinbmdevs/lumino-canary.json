@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "PenguinBMDevs/lumino-canary",
+  "slug": "penguinbmdevs-lumino-canary",
+  "author": "PenguinBMDevs",
+  "url": "https://huggingface.co/PenguinBMDevs/lumino-canary",
+  "created_at": "2026-10-04T17:12:06.000Z",
+  "updated_at": "2026-10-24T13:55:56.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5562715136,
+  "storage_human": "5.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PenguinBMDevs/lumino-canary at main - Hugging Face",
+      "url": "https://huggingface.co/PenguinBMDevs/lumino-canary/tree/main",
+      "snippet": "PenguinBMDevs / lumino-canary Like 1 Follow PenguinBMDevs 1 License:agpl-3.0 Model card FilesFiles and versions xet Community Copy to bucket new main lumino-canary 4.02 GB Ctrl+K Ctrl+K 1 contributor History:105 commits Enderman-bm canary: df06ca0 (20261021) 033d972 verified25 minutes ago .gitattributes 9.78 kBcanary: df06ca0 (20261021)25 minutes ago Lumino-rs_Canary_Dev-Preview_0181645 ..."
+    },
+    {
+      "title": "PenguinBMDevs (PenguinBMDevs) - Hugging Face",
+      "url": "https://huggingface.co/PenguinBMDevs/models",
+      "snippet": "Team members 1 PenguinBMDevs&#x27;s models2 Sort: Recently updated PenguinBMDevs/lumino-canary Updated about 1 hour ago• 1"
+    },
+    {
+      "title": "PenguinBMDevs/lumino-canary · Hugging Face",
+      "url": "https://huggingface.co/PenguinBMDevs/lumino-canary",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "PenguinBMDevs (PenguinBMDevs) - Hugging Face",
+      "url": "https://huggingface.co/PenguinBMDevs",
+      "snippet": "AI & ML interests 一只肥大的企（qi👇）鹅（o👆）在下着冰（bing👉）雹（bao👉）块的一天游（you👆）泳（yun👇）"
+    },
+    {
+      "title": "PenguinBMDevs - GitHub",
+      "url": "https://github.com/PenguinBMDevs",
+      "snippet": "Lumino v0.1.1 Penguin Studio已发布! ! 为什么叫Studio？ 性能优化 我们优化了洋葱皮的渲染，采用 贴图模式，彻底解决了卡顿问题! 修改MIDI加载器，内存开销降低 40%!"
+    }
+  ]
+}

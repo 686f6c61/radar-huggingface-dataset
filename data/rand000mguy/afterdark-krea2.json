@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Rand000mGuy/afterdark-krea2",
+  "slug": "rand000mguy-afterdark-krea2",
+  "author": "Rand000mGuy",
+  "url": "https://huggingface.co/Rand000mGuy/afterdark-krea2",
+  "created_at": "2026-10-24T11:03:04.000Z",
+  "updated_at": "2026-10-24T11:03:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 230527630,
+  "storage_human": "231 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rand000mGuy/afterdark · Hugging Face",
+      "url": "https://huggingface.co/Rand000mGuy/afterdark",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Rand000mGuy/alternative-reality-krea2 · Hugging Face",
+      "url": "https://huggingface.co/Rand000mGuy/alternative-reality-krea2",
+      "snippet": "Rand000mGuy / alternative-reality-krea2 Like 0 Text-to-Image Diffusers lora template:diffusion-lora Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "AfterDark - v2.0-KR2 | Krea 2 LoRA | Civitai",
+      "url": "https://civitai.com/models/2176378/afterdark",
+      "snippet": "AfterDark for Krea 2, Z-Image Turbo & Flux.2 Klein This LoRA enhances your images with more punch, contrast, depth of field, and lighting. It&#x27;s been trained on a mixture of photographic content with a focus on low-key, film noir, and fashion photography. It makes things pop without destroying image quality (in fact, it often enhances quality). Suggested Krea 2 Turbo Settings Model strength: 0. ..."
+    },
+    {
+      "title": "AfterDark - v2.0-KR2 - Free AI LORA | Tensor.Art",
+      "url": "https://tensor.art/models/1028375453741665822",
+      "snippet": "Download AfterDark - free LORA KREA_2 AI model on TENSOR. PHOTO REALISTIC, LIGHTING, FILM. By HackAfterDark"
+    },
+    {
+      "title": "AfterDark | v2.0-Klein | PromptHero",
+      "url": "https://prompthero.com/ai-models/afterdark-2176378-download/afterdark-v20-klein",
+      "snippet": "AfterDark for Krea 2, Z-Image Turbo & Flux.2 Klein This LoRA enhances your images with more punch, contrast, depth of field, and lighting. It&#x27;s been trained on a mixture of photographic content with a focus on low-key, film noir, and fashion photography. It makes things pop without destroying image quality (in fact, it often enhances quality). Suggested Krea 2 Turbo Settings Model strength: 0. ..."
+    }
+  ]
+}

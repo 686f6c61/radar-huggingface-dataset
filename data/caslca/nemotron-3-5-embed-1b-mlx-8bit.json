@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "caslca/Nemotron-3.5-Embed-1B-mlx-8bit",
+  "slug": "caslca-nemotron-3-5-embed-1b-mlx-8bit",
+  "author": "caslca",
+  "url": "https://huggingface.co/caslca/Nemotron-3.5-Embed-1B-mlx-8bit",
+  "created_at": "2026-10-24T17:30:40.000Z",
+  "updated_at": "2026-10-24T17:31:05.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "mistral3",
+    "8bit",
+    "premisa",
+    "base_model:nvidia/Nemotron-3.5-Embed-1B-BF16",
+    "base_model:finetune:nvidia/Nemotron-3.5-Embed-1B-BF16",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1140918272,
+  "parameters_human": "1.14B",
+  "storage_bytes": 1233855388,
+  "storage_human": "1.2 GB",
+  "base_model": "nvidia/Nemotron-3.5-Embed-1B-BF16",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nemotron-3.5-embed-1b Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3_5-embed-1b",
+      "snippet": "1B multimodal embedding model for text and document-image retrieval in RAG applications."
+    },
+    {
+      "title": "nvidia / nemotron-3.5-embed-1b",
+      "url": "https://docs.api.nvidia.com/nim/reference/nvidia-nemotron-3_5-embed-1b",
+      "snippet": "The Nemotron-3.5-Embed-1B-BF16 is suitable for users who want to build a multimodal question-and-answer application over a large corpus, leveraging the latest dense retrieval technology. The input of the model is a text or a document image, and the output is a fixed-size embedding vector. The embedding model is a bi-encoder that supports context in textual format (e.g. the query or the OCR ..."
+    },
+    {
+      "title": "Nemotron AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/topics/ai/nemotron",
+      "snippet": "Nemotron Pre- and Post-Training Datasets NVIDIA provides more than 12T tokens of multilingual reasoning, coding, and safety data, plus the post-training datasets that ship with Nemotron models, to help the community build their custom models. Released with Nemotron 3.5 Super VL: a synthetic Indic pretraining corpus of about 2.83T tokens in 22 languages, co-created with IIT Madras."
+    },
+    {
+      "title": "nvidia/Nemotron-3.5-Embed-8B-BF16 · Hugging Face",
+      "url": "https://huggingface.co/nvidia/Nemotron-3.5-Embed-8B-BF16",
+      "snippet": "The language-model component of Nemotron-3.5-Embed-8B-BF16 is initialized from Nemotron-3-Embed-8B-BF16 and kept frozen, preserving that model&#x27;s text retrieval accuracy while adding image retrieval capabilities. The two models therefore share the same embedding space and produce identical text embeddings. During fine-tuning, only the vision encoder and multimodal projector were trained, on ..."
+    },
+    {
+      "title": "Nemotron 3.5 Embed 1B (free) - API Pricing & Providers",
+      "url": "https://openrouter.ai/nvidia/nemotron-3.5-embed-1b:free",
+      "snippet": "Nemotron 3.5 Embed 1B is a multimodal embedding model from NVIDIA for multilingual retrieval over text and document page images (tables, charts, infographics)."
+    }
+  ]
+}

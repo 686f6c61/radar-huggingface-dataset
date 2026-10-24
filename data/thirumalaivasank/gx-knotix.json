@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "thirumalaivasank/gx-knotix",
+  "slug": "thirumalaivasank-gx-knotix",
+  "author": "thirumalaivasank",
+  "url": "https://huggingface.co/thirumalaivasank/gx-knotix",
+  "created_at": "2026-10-24T11:41:28.000Z",
+  "updated_at": "2026-10-24T12:21:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "tensorrt",
+  "languages": [],
+  "tags": [
+    "tensorrt",
+    "onnx",
+    "robotics",
+    "physical-ai",
+    "isaac-lab",
+    "newton-physics",
+    "reinforcement-learning",
+    "openusd",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2018583,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - thirumalaivasan-k/gx-knotix: AI-Powered Flower Knotting ...",
+      "url": "https://github.com/thirumalaivasan-k/gx-knotix",
+      "snippet": "AI-Powered Flower Knotting & Garland Automation System - thirumalaivasan-k/gx-knotix"
+    },
+    {
+      "title": "THIRUMALAIVASAN K - GitHub",
+      "url": "https://github.com/thirumalaivasan-k",
+      "snippet": "Popular repositories portfolio Public gx-knotix Public AI-Powered Flower Knotting & Garland Automation System Python"
+    },
+    {
+      "title": "THIRUMALAIVASAN K - Senior Software Engineer | Building Agentic AI ...",
+      "url": "https://in.linkedin.com/in/thirumalaivasank",
+      "snippet": "Senior Software Engineer | Building Agentic AI Systems on Distributed Infrastructure | Java, Spring Boot, Kafka, Kubernetes | Cloud-Native | Remote · deep experience building and scaling high-traffic, business-critical distributed systems. Expert in Java 21, Spring Boot, microservices, Kafka, and AWS, with strong ownership across system design, reliability, performance, and cost optimization ..."
+    },
+    {
+      "title": "Thirumalaivasan K - Gen AI Engineer | @ Deloitte | LinkedIn",
+      "url": "https://in.linkedin.com/in/thirumalaivasan-k-b1934b271",
+      "snippet": "Gen AI Engineer | @ Deloitte · I&#x27;m a Data Science professional driven by curiosity and a commitment to turning complex data into practical solutions. Currently, I&#x27;m working at IQ TechMax as a Junior Data Scientist, where I develop AI-powered, domain-specific agents and NLP solutions—including immersive integrations using MetaHuman for next-gen virtual experiences. Previously, I interned ..."
+    },
+    {
+      "title": "ModelForest — Interactive AI Model Family Tree",
+      "url": "https://mrunreal.github.io/ModelForest/",
+      "snippet": "Explore the complete genealogy of AI models. See how GPT, Llama, Claude, Gemini, and 200+ models evolved. Interactive tree updated daily from HuggingFace."
+    }
+  ]
+}

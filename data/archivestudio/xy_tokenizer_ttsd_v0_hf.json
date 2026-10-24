@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "ArchiveStudio/XY_Tokenizer_TTSD_V0_hf",
+  "slug": "archivestudio-xy_tokenizer_ttsd_v0_hf",
+  "author": "ArchiveStudio",
+  "url": "https://huggingface.co/ArchiveStudio/XY_Tokenizer_TTSD_V0_hf",
+  "created_at": "2026-10-24T15:00:25.000Z",
+  "updated_at": "2026-10-24T15:00:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "xy_tokenizer",
+    "custom_code",
+    "arxiv:2506.23325",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2137279502,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jinstudio/XY_Tokenizer_TTSD_V0_hf · Hugging Face",
+      "url": "https://huggingface.co/Jinstudio/XY_Tokenizer_TTSD_V0_hf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OpenMOSS-Team/XY_Tokenizer_TTSD_V0_hf · Hugging Face",
+      "url": "https://huggingface.co/OpenMOSS-Team/XY_Tokenizer_TTSD_V0_hf",
+      "snippet": "XY-Tokenizer serves as the underlying neural codec for MOSS-TTSD, our 1.7B Audio Language Model. Explore MOSS-TTSD for advanced text-to-speech and other audio generation tasks on GitHub, Blog, 博客, and Space Demo."
+    },
+    {
+      "title": "XY_Tokenizer_TTSD_V0_32k · Models",
+      "url": "https://www.modelscope.cn/models/openmoss/XY_Tokenizer_TTSD_V0_32k/summary",
+      "snippet": "Led by Prof. Xipeng Qiu, the team conducts cutting-edge research on large language models (LLMs), advancing the frontiers of model architecture, evaluation, and application with a strong commitment to open, collaborative, and impactful AI innovation."
+    },
+    {
+      "title": "GitHub - mhumphries2323/Archive_Studio: Automate archival processing of ...",
+      "url": "https://github.com/mhumphries2323/Archive_Studio",
+      "snippet": "Model Settings: Define available AI models and configure import options (e.g., auto-orientation check). Preset Management: Crucial for customizing AI tasks. Create, edit, and manage presets for: Metadata: Configure metadata extraction for CSV export. Sequential Metadata: Configure sequential date/place analysis."
+    },
+    {
+      "title": "GitHub - gyt1145028706/XY-Tokenizer: This is the code for paper: XY ...",
+      "url": "https://github.com/gyt1145028706/XY-Tokenizer",
+      "snippet": "At this ultra-low bitrate, XY-Tokenizer achieves performance comparable to state-of-the-art speech codecs that focus on only one aspect—either semantic or acoustic—while XY-Tokenizer performs strongly on both. For detailed information about the model and demos, please refer to our Blog. You can also find the model on Hugging Face."
+    }
+  ]
+}

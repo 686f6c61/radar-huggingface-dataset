@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "NewGame/libritts_esp2_gan_tts_train_vits_libritts",
+  "slug": "newgame-libritts_esp2_gan_tts_train_vits_libritts",
+  "author": "NewGame",
+  "url": "https://huggingface.co/NewGame/libritts_esp2_gan_tts_train_vits_libritts",
+  "created_at": "2026-10-24T17:06:59.000Z",
+  "updated_at": "2026-10-24T17:07:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "espnet",
+  "languages": [],
+  "tags": [
+    "espnet",
+    "esp2_gan_tts",
+    "libritts",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 386135248,
+  "storage_human": "386 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NewGame/libritts_f5tts_training · Hugging Face",
+      "url": "https://huggingface.co/NewGame/libritts_f5tts_training",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "speechbrain/tts-hifigan-libritts-22050Hz · Hugging Face",
+      "url": "https://huggingface.co/speechbrain/tts-hifigan-libritts-22050Hz",
+      "snippet": "The pre-trained model takes in input a spectrogram and produces a waveform in output. Typically, a vocoder is used after a TTS model that converts an input text into a spectrogram. Alternatives to this models are the following: tts-hifigan-libritts-16kHz (same model trained on the same dataset, but for a sample rate of 16000 Hz)"
+    },
+    {
+      "title": "espnet/egs2/libritts/tts1/README.md at master - GitHub",
+      "url": "https://github.com/espnet/espnet/blob/master/egs2/libritts/tts1/README.md",
+      "snippet": "This is the recipe of the English multi-speaker TTS model with LibriTTS corpus. See the following pages for the usage: How to run the recipe How to train FastSpeech How to train FastSpeech2 How to train with X-vector How to train with speaker ID How to train VITS How to train joint text2wav See the following pages before asking the question ..."
+    },
+    {
+      "title": "TTS/docs/source/models/vits.md at dev · coqui-ai/TTS · GitHub",
+      "url": "https://github.com/coqui-ai/TTS/blob/dev/docs/source/models/vits.md",
+      "snippet": "VITS VITS (Conditional Variational Autoencoder with Adversarial Learning for End-to-End Text-to-Speech ) is an End-to-End (encoder -> vocoder together) TTS model that takes advantage of SOTA DL techniques like GANs, VAE, Normalizing Flows."
+    },
+    {
+      "title": "VITS Text-to-Speech Model: Open-Source AI for Natural Voice Synthesis ...",
+      "url": "https://exploreai.tools/ai-models/vits-family",
+      "snippet": "Explore VITS, an open-source text-to-speech AI model using variational inference and adversarial learning for high-quality, end-to-end speech generation."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "yujiepan/d3-turbo-tiny-random",
+  "slug": "yujiepan-d3-turbo-tiny-random",
+  "author": "yujiepan",
+  "url": "https://huggingface.co/yujiepan/d3-turbo-tiny-random",
+  "created_at": "2026-10-24T11:20:43.000Z",
+  "updated_at": "2026-10-24T11:20:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "feature-extraction",
+    "custom_code",
+    "base_model:vllm-sr/d3-turbo",
+    "base_model:finetune:vllm-sr/d3-turbo",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8200620,
+  "parameters_human": "8.2M",
+  "storage_bytes": 29259264,
+  "storage_human": "29 MB",
+  "base_model": "vllm-sr/d3-turbo",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yujiepan (yujiepan) - Hugging Face",
+      "url": "https://huggingface.co/yujiepan",
+      "snippet": "yujiepan/llama-3.1-tiny-random ... yujiepan/meta-llama-3-tiny-random Text Generation • 1.03M • Updated Apr 26, 2024 • 405 Randomly initialized tiny models for debugging/testing purpose"
+    },
+    {
+      "title": "D3 Turbo - AI Model | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/model/d3-turbo/",
+      "snippet": "D3 Turbo is the upgraded 27B multimodal decision model in vLLM Semantic Router&#x27;s Decision 3.0 family. Given text, JSON, images, or video alongside a set of named questions, it answers each with a probability instead of generated text, supporting choice, yes/no, score, box localization, and tracking questions in a single forward pass."
+    },
+    {
+      "title": "yujiepan/deepseek-v3.1-tiny-random · Hugging Face",
+      "url": "https://huggingface.co/yujiepan/deepseek-v3.1-tiny-random",
+      "snippet": "This tiny model is for debugging. It is randomly initialized with the config adapted from deepseek-ai/DeepSeek-V3.1. Example usage: vLLM"
+    },
+    {
+      "title": "d3 - ollama.com",
+      "url": "https://ollama.com/library/d3",
+      "snippet": "d3 is a family of decision models from vLLM Semantic Router. Give it text, structured state, or a still image, then ask it to choose a category, answer yes or no, or rate something on a scale."
+    },
+    {
+      "title": "d3-turbo - AI Wiki",
+      "url": "https://aiwiki.ai/wiki/d3_turbo",
+      "snippet": "d3-turbo is a multimodal decision model in the Decision 3.0 family from the vLLM Semantic Router team. It produces structured decisions and probabilities rather than free-form generated text. [2][7] Its published package contains a Qwen3.5-based backbone, a vision encoder and a separate answer readout."
+    }
+  ]
+}

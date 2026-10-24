@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "yhz-linearalgebra/TKCAM",
+  "slug": "yhz-linearalgebra-tkcam",
+  "author": "yhz-linearalgebra",
+  "url": "https://huggingface.co/yhz-linearalgebra/TKCAM",
+  "created_at": "2026-10-24T17:02:31.000Z",
+  "updated_at": "2026-10-24T17:03:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "other",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "camera-trajectory",
+    "text-to-camera",
+    "camera-control",
+    "other",
+    "dataset:yhz-linearalgebra/RealEstate10K-Cap",
+    "arxiv:2610.11105",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 348739119,
+  "storage_human": "349 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TKCAM: Text and Keyframe to Camera Trajectory Generation",
+      "url": "https://linearalgebrayhz.github.io/projects/TKCAM/",
+      "snippet": "Generating high-quality and controllable camera motion is essential for AI-assisted cinematography, video synthesis, and 3D scene understanding. We introduce TKCAM, a text- and keyframe-conditioned camera-motion synthesis framework based on generative masked modeling."
+    },
+    {
+      "title": "GitHub - linearalgebrayhz/TKCAM",
+      "url": "https://github.com/linearalgebrayhz/TKCAM",
+      "snippet": "TKCAM generates camera trajectories (rotation + translation over time) from text, optionally conditioned on a first frame or sparse keyframes. It adapts the MoMask residual masked-transformer recipe from human motion to continuous camera trajectories, and is evaluated with a contrastive language-trajectory model (CLaTr)."
+    },
+    {
+      "title": "TKCAM: Text and Keyframe to Camera Trajectory Generation",
+      "url": "https://arxiv.org/abs/2610.11105",
+      "snippet": "Generating high-quality and controllable camera motion is essential for AI-assisted cinematography, video synthesis, and 3D scene understanding. We introduce TKCAM, a Text- and Keyframe-conditioned CAMera-motion synthesis framework based on generative masked modeling. We represent camera dynamics using a 12-dimensional kinematic feature comprising position, velocity, and a continuous rotation ..."
+    },
+    {
+      "title": "Publications - Haozhe Yang",
+      "url": "https://linearalgebrayhz.github.io/publications/",
+      "snippet": "TKCAM: Text and Keyframe to Camera Trajectory Generation Haozhe Yang, Zhiyang Dou, Zekai Gu, Cheng Lin, Wenping Wang, Yuan Liu, Taku Komura Advances in Neural Information Processing Systems (NeurIPS), 2026 Poster We introduce TKCAM, a text- and keyframe-conditioned camera trajectory generation framework based on generative masked modeling. Camera dynamics are formulated as continuous 12-DoF ..."
+    },
+    {
+      "title": "TKCAM: Text and Keyframe to Camera Trajectory Generation",
+      "url": "https://arxiv.org/pdf/2610.11105",
+      "snippet": "As a result, at inference, TKCAM supports both text-only generation and animator-style keyframe conditioning: users can provide free-form text prompts alongside sparse RGB keyframes (e.g., first-frame or start/end observations), which serve as temporally localized visual guidance while the model generates coherent in-between trajectories ..."
+    }
+  ]
+}

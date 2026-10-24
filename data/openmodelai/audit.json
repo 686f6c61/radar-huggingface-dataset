@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "openmodelai/Audit",
+  "slug": "openmodelai-audit",
+  "author": "openmodelai",
+  "url": "https://huggingface.co/openmodelai/Audit",
+  "created_at": "2026-10-24T11:48:13.000Z",
+  "updated_at": "2026-10-24T12:34:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 74199098,
+  "storage_human": "74 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenModel — Multi-Model LLM API Gateway",
+      "url": "https://www.openmodel.ai/",
+      "snippet": "OpenModel is a hosted multi-model LLM API gateway. One API key for any model, with routing, retries, logs, and billing in one layer."
+    },
+    {
+      "title": "AI Model Audit: A Complete Guide for June 2026 | Openlayer",
+      "url": "https://www.openlayer.com/blog/ai-model-audit-complete-guide",
+      "snippet": "How to conduct an AI model audit in June 2026: testing, fairness, compliance, and audit trails."
+    },
+    {
+      "title": "GitHub - promptfoo/modelaudit: Security scanner for AI/ML model files ...",
+      "url": "https://github.com/promptfoo/modelaudit",
+      "snippet": "Security scanner for AI/ML model files. Detects malicious code, backdoors, and vulnerabilities before deployment - promptfoo/modelaudit"
+    },
+    {
+      "title": "ModelAudit - Static Security Scanner for ML Models | Promptfoo",
+      "url": "https://www.promptfoo.dev/docs/model-audit/",
+      "snippet": "Scan AI/ML models for security vulnerabilities, malicious code, and backdoors. Supports PyTorch, TensorFlow, ONNX, Keras, and 30+ model formats."
+    },
+    {
+      "title": "OpenModel Docs — Multi-Model Gateway Integration Guide",
+      "url": "https://docs.openmodel.ai/",
+      "snippet": "OpenModel developer documentation. A multi-model gateway providing one stable API to Claude, GPT, Gemini, Qwen, and Deepseek — with provider routing, fallback, access control, and traffic visibility built in."
+    }
+  ]
+}

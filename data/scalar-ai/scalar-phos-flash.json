@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "scalar-ai/scalar-phos-flash",
+  "slug": "scalar-ai-scalar-phos-flash",
+  "author": "scalar-ai",
+  "url": "https://huggingface.co/scalar-ai/scalar-phos-flash",
+  "created_at": "2026-10-24T17:11:54.000Z",
+  "updated_at": "2026-10-24T17:46:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "base_model:adapter:unsloth/Llama-3.2-3B-Instruct-bnb-4bit",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "unsloth",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:unsloth/Llama-3.2-3B-Instruct-bnb-4bit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749824,
+  "parameters_human": "3.21B",
+  "storage_bytes": 6540046512,
+  "storage_human": "6.5 GB",
+  "base_model": "unsloth/Llama-3.2-3B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "La solution qui accélère la croissance de votre flotte - SCALAR",
+      "url": "https://zf-scalar.com/fr/",
+      "snippet": "SCALAR, la nouvelle plateforme de gestion de flotte de ZF, connecte en temps réel vos camions, vos remorques et vos équipes. …"
+    },
+    {
+      "title": "SCALAR - ZF Platform",
+      "url": "https://app.zf-scalar.com/",
+      "snippet": "A module of the SCALAR platform."
+    },
+    {
+      "title": "Scalar — API Documentation, SDKs, API Client & Registry",
+      "url": "https://scalar.com/",
+      "snippet": "Create beautiful docs, SDKs and secure MCP servers from your API. Scalar keeps every interface in sync as your API evolves."
+    },
+    {
+      "title": "An easier way to manage and grow your fleet business - SCALAR",
+      "url": "https://zf-scalar.com/",
+      "snippet": "SCALAR, ZF’s newest fleet management platform, connects all your trucks, trailers, teams, and processes in real time so you can …"
+    },
+    {
+      "title": "GitHub - scalar/scalar: Scalar is an open-source API platform: Modern ...",
+      "url": "https://github.com/ScalaR/ScalaR",
+      "snippet": "The following frameworks have chosen Scalar API Reference as their default OpenAPI documentation UI, recognizing its developer …"
+    }
+  ]
+}

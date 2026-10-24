@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "HanyueShen/PAM-Cloud-Forecasting",
+  "slug": "hanyueshen-pam-cloud-forecasting",
+  "author": "HanyueShen",
+  "url": "https://huggingface.co/HanyueShen/PAM-Cloud-Forecasting",
+  "created_at": "2026-10-24T17:32:55.000Z",
+  "updated_at": "2026-10-24T17:33:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "pam-cloud-forecast",
+    "weather-forecasting",
+    "cloud-forecasting",
+    "earth-observation",
+    "himawari",
+    "gfs",
+    "spatial-fusion",
+    "regional-forecasting",
+    "custom-model",
+    "en",
+    "doi:10.57967/hf/11241",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14957871,
+  "storage_human": "15 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YH.Model.PAM - GitHub",
+      "url": "https://github.com/Henry-Hanyue-Shen/YH.Model.PAM",
+      "snippet": "YH.Model.PAM This is an open source project folder for YH Intelligence Tech&#x27;s Probablistic Atmospheric Model (PAM) foundational model, it predicts cloud evolution based on satellite visuals only for 24-72 hours prior and obtains competitive performance against existing multi-factor models."
+    },
+    {
+      "title": "Next-Generation Large-Scale AI Model for Renewable Power Forecasting ...",
+      "url": "https://www.the-innovation.org/energy-use/article/doi/10.59717/ipj.energy-use.2025.100013",
+      "snippet": "Improvements in bioimaging techniques and artificial intelligence (AI)-assisted image analysis further improved the precision of cancer diagnosis. Nevertheless, clinical diagnostic technologies used to screen for effective treatment options lagged behind."
+    },
+    {
+      "title": "HanyueShen (Hanyue Shen Autoresearch Agent v4 @ YH Intel Tech)",
+      "url": "https://huggingface.co/HanyueShen/models",
+      "snippet": "HanyueShen/risa-recaptured-image-detection Image Classification • 258k•Updated 28 days ago• 40 • 1"
+    },
+    {
+      "title": "Projects Portfolio | Henry - hanyueshen.blog",
+      "url": "https://www.hanyueshen.blog/research",
+      "snippet": "This is a collection of current and completed projects, including ones of my own and ones during internships. Some are linked with their respective github repositories for more technical info."
+    },
+    {
+      "title": "Next-Generation Large-Scale AI Model for Renewable Power Forecasting ...",
+      "url": "https://www.the-innovation.org/article/doi/10.59717/ipj.energy-use.2025.100013",
+      "snippet": "First, clinical prediction-model and medical AI evaluation frameworks emphasize the distinction between internal validation, external validation, risk of bias, and applicability, highlighting that model performance assessed only within the development setting is insufficient to establish generalizability. 32 - 36 Second, systems biology and ..."
+    }
+  ]
+}

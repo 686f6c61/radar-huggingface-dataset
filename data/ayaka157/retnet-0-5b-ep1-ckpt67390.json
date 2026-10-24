@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Ayaka157/RetNet-0.5B-ep1-ckpt67390",
+  "slug": "ayaka157-retnet-0-5b-ep1-ckpt67390",
+  "author": "Ayaka157",
+  "url": "https://huggingface.co/Ayaka157/RetNet-0.5B-ep1-ckpt67390",
+  "created_at": "2026-10-24T11:18:17.000Z",
+  "updated_at": "2026-10-24T11:27:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "retnet_hf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 504179896,
+  "parameters_human": "504.2M",
+  "storage_bytes": 2016755680,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook Video Downloader Online - Download Facebook Videos",
+      "url": "https://www.fdown.net/",
+      "snippet": "Aug 13, 2026 · Facebook Video Downloader Online, Download Facebook Videos and Save them directly from facebook watch to …"
+    },
+    {
+      "title": "Facebook Downloader | Download Facebook video, download Fb …",
+      "url": "https://snapvid.net/en/facebook-downloader",
+      "snippet": "Open the SnapVid app, paste the copied Facebook video link into the input box → click the Download button. Select MP4 or MP3 …"
+    },
+    {
+      "title": "Free Facebook Video Downloader - turboscribe.ai",
+      "url": "https://turboscribe.ai/downloader/facebook?msockid=11999f9387b0669127a4886f868a675d",
+      "snippet": "Free Facebook video downloader. Free, fast, and no ads. Paste a Facebook URL to download the video instantly."
+    },
+    {
+      "title": "Download Facebook Videos for Free: 3 Easy Methods - wikiHow",
+      "url": "https://www.wikihow.com/Download-Facebook-Videos-For-Free",
+      "snippet": "Jun 9, 2026 · Download Facebook Videos: Free Options There are many web-based applications that allow you to download almost …"
+    },
+    {
+      "title": "Facebook Video Download HD | Free Facebook Video Downloader | Download ...",
+      "url": "https://snapsave.app/",
+      "snippet": "Download Facebook Video to your phone, PC, or tablet with highest quality Full HD, 2K, 4K to mp4. Use our Facebook Downloader …"
+    }
+  ]
+}

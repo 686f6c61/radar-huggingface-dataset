@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Qwen/Qwen3-VL-8B-Instruct-GGUF",
+  "slug": "qwen-qwen3-vl-8b-instruct-gguf",
+  "author": "Qwen",
+  "url": "https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct-GGUF",
+  "created_at": "2025-10-31T02:50:31.000Z",
+  "updated_at": "2025-11-01T03:21:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "image-text-to-text",
+    "arxiv:2505.09388",
+    "arxiv:2502.13923",
+    "arxiv:2409.12191",
+    "arxiv:2308.12966",
+    "base_model:Qwen/Qwen3-VL-8B-Instruct",
+    "base_model:quantized:Qwen/Qwen3-VL-8B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 187,
+  "downloads_30d": 1027313,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 32036668704,
+  "storage_human": "32.0 GB",
+  "base_model": "Qwen/Qwen3-VL-8B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen",
+      "url": "https://chat.qwen.ai/",
+      "snippet": "Qwen is an official platform from Qwen that empowers both everyday users and developers with unified access to Qwen’s series of …Read more"
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen is an AI assistant for everyone, powered by the Qwen series models. It’s free to use, open to all, and ready to help with …"
+    },
+    {
+      "title": "Qwen — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Qwen",
+      "snippet": "Qwen (également connu sous le nom de Tongyi Qianwen, ou en chinois 通义千问) est une famille de grands modèles de langage …"
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/qwenchat",
+      "snippet": "Qwen combines chain-of-thought reasoning with creative idea generation to craft narratives, develop characters, and explore plots …"
+    },
+    {
+      "title": "Qwen - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Qwen",
+      "snippet": "Qwen (also known as Tongyi Qianwen, Chinese: 通义千问; pinyin: Tōngyì Qiānwèn) is a family of predominantly open-weights large …"
+    }
+  ]
+}

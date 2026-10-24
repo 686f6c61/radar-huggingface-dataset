@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "TheStageAI/pocket-tts-100m-fr",
+  "slug": "thestageai-pocket-tts-100m-fr",
+  "author": "TheStageAI",
+  "url": "https://huggingface.co/TheStageAI/pocket-tts-100m-fr",
+  "created_at": "2026-10-24T09:22:49.000Z",
+  "updated_at": "2026-10-24T12:00:27.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "pocket-tts",
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "pocket-tts",
+    "tts",
+    "kyutai",
+    "coreml",
+    "ane",
+    "thestage",
+    "text-to-speech",
+    "fr",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 522914399,
+  "storage_human": "523 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ave, ventes aux enchères publiques, expertises et inventaires de ...",
+      "url": "http://www.ave.fr/",
+      "snippet": "Nos Ventes Futures Veuillez trouver le calendrier de nos prochaines ventes aux enchères publiques..."
+    },
+    {
+      "title": "ave, ventes aux enchères publiques, expertises et inventaires de ...",
+      "url": "https://ave.fr/ve",
+      "snippet": "Nos Ventes Futures Veuillez trouver le calendrier de nos prochaines ventes aux enchères publiques..."
+    },
+    {
+      "title": "AVE Ventes aux enchères, Commissaires-Priseurs - Interencheres",
+      "url": "https://www.interencheres.com/commissaire-priseur/ave-ventes-aux-encheres-3183",
+      "snippet": "Comment y arriver ? RER : Ligne A1 descendre a la station : Rueil-Malmaison. BUS : Ligne 144 ou 467 direction la Défense. Arrêt : …"
+    },
+    {
+      "title": "AVE | Maison de vente - Commissaire priseur",
+      "url": "https://www.moniteurdesventes.com/fr/auctioneer/196/AVE",
+      "snippet": "ave - Hôtel des Ventes aux Enchères de Rueil-Malmaison, société de ventes aux enchères, procède à la vente, à l’estimation …"
+    },
+    {
+      "title": "Avoventes.fr",
+      "url": "https://avoventes.fr/",
+      "snippet": "Bienvenue sur AVOVENTES : le site national de ventes aux enchères publiques immobilières, édité par le Conseil National des …"
+    }
+  ]
+}

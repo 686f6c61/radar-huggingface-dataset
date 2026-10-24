@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "luisastellet/qwen-metaphor-unke-camada-15-prompt-textual",
+  "slug": "luisastellet-qwen-metaphor-unke-camada-15-prompt-textual",
+  "author": "luisastellet",
+  "url": "https://huggingface.co/luisastellet/qwen-metaphor-unke-camada-15-prompt-textual",
+  "created_at": "2026-10-24T16:51:51.000Z",
+  "updated_at": "2026-10-24T16:52:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 2395657618,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "studio - YouTube",
+      "url": "https://www.youtube.com/studio/dashboard",
+      "snippet": "studio @studio-mo9dz • 28.2K subscribers • 2 videos More about this channel ...more More about this channel ...more ...more"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/youyoutubestudio",
+      "snippet": "Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to …"
+    },
+    {
+      "title": "YouTube Studio",
+      "url": "https://studio.youtube.com/reauth?app...",
+      "snippet": "Please wait."
+    },
+    {
+      "title": "YouTube Studio",
+      "url": "https://studio.youtube.com/reauth?approve_browser_access=1&approve_browser_access=1",
+      "snippet": "Please wait."
+    },
+    {
+      "title": "YouTube Studio - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.creator&hl=en-US",
+      "snippet": "The official YouTube Studio app is the best way for you to understand and connect with the people in your community using the …"
+    }
+  ]
+}

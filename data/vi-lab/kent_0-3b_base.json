@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Vi-LAB/KenT_0.3B_Base",
+  "slug": "vi-lab-kent_0-3b_base",
+  "author": "Vi-LAB",
+  "url": "https://huggingface.co/Vi-LAB/KenT_0.3B_Base",
+  "created_at": "2026-10-24T10:07:44.000Z",
+  "updated_at": "2026-10-24T13:03:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "kent",
+    "text-generation",
+    "tokenizer-free",
+    "byte-level",
+    "custom_code",
+    "vietnamese",
+    "vi",
+    "dataset:wikimedia/wikipedia",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 299465728,
+  "parameters_human": "299.5M",
+  "storage_bytes": 1197887084,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vi — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Vi",
+      "snippet": "vi est un éditeur de texte plein écran écrit par Bill Joy en 1976 sur une des premières versions de la distribution Unix BSD. Il est …Read more"
+    },
+    {
+      "title": "L’éditeur de texte VI - Linux Administration",
+      "url": "https://linux.goffinet.org/administration/traitement-du-texte/editeur-de-texte-vi/",
+      "snippet": "Sep 28, 2020 · vi est un éditeur de texte en mode texte plein écran écrit par Bill Joy en 1976 sur une des premières versions de la …"
+    },
+    {
+      "title": "Vi sous Linux : modes, commandes essentielles et comment sortir",
+      "url": "https://www.stephane-robert.info/docs/admin-serveurs/linux/fondamentaux/manipuler-fichiers-texte/vi/",
+      "snippet": "Oct 1, 2026 · L'éditeur vi est universel sous Unix/Linux. Apprenez ses 3 modes, les commandes essentielles, et comment ouvrir, …"
+    },
+    {
+      "title": "Vi — Lea Linux",
+      "url": "https://lea-linux.org/documentations/Vi",
+      "snippet": "Ce document vise uniquement à vous donner une référence rapide afin d'utiliser facilement vi. Note : dans les distributions actuelles, …"
+    },
+    {
+      "title": "vi (text editor) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Vi_(text_editor)",
+      "snippet": "History Creation Bill Joy, the original creator of the vi editor, in 2003 vi was derived from a sequence of UNIX command line editors, …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "yujiepan/glm-5.3-flash-tiny-random",
+  "slug": "yujiepan-glm-5-3-flash-tiny-random",
+  "author": "yujiepan",
+  "url": "https://huggingface.co/yujiepan/glm-5.3-flash-tiny-random",
+  "created_at": "2026-10-24T14:21:22.000Z",
+  "updated_at": "2026-10-24T15:37:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm5_next",
+    "image-text-to-text",
+    "conversational",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:quantized:zai-org/GLM-5.3-Flash",
+    "endpoints_compatible",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 112077168,
+  "parameters_human": "112.1M",
+  "storage_bytes": 227529218,
+  "storage_human": "228 MB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · yujiepan/glm-5-tiny-random at main - Hugging Face",
+      "url": "https://huggingface.co/yujiepan/glm-5-tiny-random/blob/main/README.md",
+      "snippet": "yujiepan / glm-5-tiny-random like 0 Text Generation Transformers Safetensors glm_moe_dsa conversational Model card FilesFiles and versions xet Community Deploy Use this model main glm-5-tiny-random /README.md yujiepan Upload folder using huggingface_hub c9dc738 verified3 days ago preview code | raw Copy download link history blame contribute ..."
+    },
+    {
+      "title": "yujiepan/glm-5-tiny-random at main - Hugging Face",
+      "url": "https://huggingface.co/yujiepan/glm-5-tiny-random/tree/main",
+      "snippet": "Deploy Use this model main glm-5-tiny-random 29.7 MB 1 contributor History: 3 commits yujiepan"
+    },
+    {
+      "title": "GLM-5.3-Flash by Z.ai | Model Library | Modal",
+      "url": "https://modal.com/library/zai/glm-5-3-flash",
+      "snippet": "GLM-5.3-Flash is the first natively multimodal model in Z.ai&#x27;s GLM-5 series: a 320-billion-parameter Mixture-of-Experts model with 18B active parameters per token and a one-million-token context window, built for coding and agentic work."
+    },
+    {
+      "title": "Chat with GLM 5.3 Flash online - ninjachat.ai",
+      "url": "https://www.ninjachat.ai/models/glm-5-3-flash",
+      "snippet": "Z.ai Chat with GLM 5.3 Flash online Screenshots, video and a million tokens, at Flash speed and Flash prices."
+    },
+    {
+      "title": "GLM-5.3-Flash · Models - modelscope.ai",
+      "url": "https://www.modelscope.ai/models/zai-org/GLM-5.3-Flash",
+      "snippet": "The model also adopts Manifold-Constrained Hyper-Connections (mHC) to further improve scaling efficiency. Together with our latest 30T-token multimodal pre-training corpus, these changes enable GLM-5.3-Flash to deliver more intelligence with less compute."
+    }
+  ]
+}

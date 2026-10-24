@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "MTahaB/a2c-PandaReachDense-v3",
+  "slug": "mtahab-a2c-pandareachdense-v3",
+  "author": "MTahaB",
+  "url": "https://huggingface.co/MTahaB/a2c-PandaReachDense-v3",
+  "created_at": "2026-10-24T16:58:23.000Z",
+  "updated_at": "2026-10-24T17:12:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "PandaReachDense-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 330951,
+  "storage_human": "330951 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook - Connexion ou inscription",
+      "url": "https://fr-fr.facebook.com/",
+      "snippet": "Créez un compte ou connectez-vous à Facebook. Connectez-vous avec vos amis, la famille et d’autres connaissances. Partagez …"
+    },
+    {
+      "title": "Mettre sa creation audio (mp3) sur facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-18216108-mettre-sa-creation-audio-mp3-sur-facebook",
+      "snippet": "Jun 21, 2010 · J'avais passé beaucoup de temps sur les forums pour trouver comment faire et là grâce à ce site c'est ok, mais le …"
+    },
+    {
+      "title": "Nom mentionné sur facebook - Forum Facebook - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-34149092-nom-mentionne-sur-facebook",
+      "snippet": "Dec 3, 2016 · Bonjour, Sur Facebook, lorsque mon nom est mentionné dans une publication: comment faire pour que 1/ j'en sois …"
+    },
+    {
+      "title": "El código de confirmación de Facebook no llega: correo, SMS - CCM",
+      "url": "https://es.ccm.net/aplicaciones-e-internet/redes-sociales-y-mensajeria/1704-codigo-de-confirmacion-de-facebook-que-hacer-si-no-te-llega/",
+      "snippet": "Oct 30, 2023 · Facebook te envía un código de confirmación en el momento de crear una nueva cuenta o al hacer algún cambio o …"
+    },
+    {
+      "title": "Cómo cambiar la contraseña de Facebook: en el PC y móvil - CCM",
+      "url": "https://es.ccm.net/aplicaciones-e-internet/redes-sociales-y-mensajeria/2448-como-cambiar-la-contrasena-de-facebook/",
+      "snippet": "Mar 28, 2022 · Millones de personas comparten cada día informaciones personales con amigos y familia en Facebook. Es por ello …"
+    }
+  ]
+}

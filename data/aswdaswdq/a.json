@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "aswdaswdq/a",
+  "slug": "aswdaswdq-a",
+  "author": "aswdaswdq",
+  "url": "https://huggingface.co/aswdaswdq/a",
+  "created_at": "2026-10-24T12:17:30.000Z",
+  "updated_at": "2026-10-24T12:17:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WhatAIModel - Find the Right AI Model & Tool in Seconds",
+      "url": "https://whataimodel.com/",
+      "snippet": "Stop guessing and quickly discover the perfect AI model or tool for any task. WhatAIModel.com is your go-to hub for smart filtering, side-by-side comparisons, practical tips, and insights into the world of AI, designed for creators, developers, and enthusiasts."
+    },
+    {
+      "title": "Ai Model Tracker — Global AI Model Observatory",
+      "url": "https://modeltracker.ai/",
+      "snippet": "Every frontier & open-weight AI model release, tracked in real time — live benchmark leaderboard, open-vs-frontier comparison, and the origin of every lab."
+    },
+    {
+      "title": "Next AI Model — AI Model Release Tracker",
+      "url": "https://www.nextaimodel.com/",
+      "snippet": "Free tracker of every AI model release from OpenAI, Google, Anthropic, xAI, Meta, DeepSeek and more: what each model changed, and which lines are due next."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 992 AI models across 706 benchmarks, with 228 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "asdasd - l1s0m1n1 SDXL - Free AI LORA | Tensor.Art",
+      "url": "https://tensor.art/models/897876186019978252",
+      "snippet": "Download asdasd - free LORA SDXL 1.0 AI model on TENSOR. SDXL. By asdasd"
+    }
+  ]
+}

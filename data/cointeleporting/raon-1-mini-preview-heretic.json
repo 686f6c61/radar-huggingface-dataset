@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "cointeleporting/Raon-1-mini-preview-heretic",
+  "slug": "cointeleporting-raon-1-mini-preview-heretic",
+  "author": "cointeleporting",
+  "url": "https://huggingface.co/cointeleporting/Raon-1-mini-preview-heretic",
+  "created_at": "2026-10-24T17:16:27.000Z",
+  "updated_at": "2026-10-24T17:19:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "raon1_mini",
+    "text-generation",
+    "raon",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "reproducible",
+    "conversational",
+    "custom_code",
+    "base_model:KRAFTON/Raon-1-mini-preview",
+    "base_model:quantized:KRAFTON/Raon-1-mini-preview",
+    "license:apache-2.0",
+    "mxfp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 28783218402,
+  "parameters_human": "28.78B",
+  "storage_bytes": 32723724816,
+  "storage_human": "32.7 GB",
+  "base_model": "KRAFTON/Raon-1-mini-preview",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KRAFTON/Raon-1-mini-preview · Hugging Face",
+      "url": "https://huggingface.co/KRAFTON/Raon-1-mini-preview",
+      "snippet": "The first start compiles the model&#x27;s kernels and takes about 10 minutes; later starts reuse them. To serve the NVFP4 checkpoint, replace the model with KRAFTON/Raon-1-mini-preview-nvfp4 in the same command. It runs on a single GPU (tensor parallel size 1). Send a request from another terminal:"
+    },
+    {
+      "title": "GitHub - krafton-ai/Raon-1-mini-preview: Raon-1 mini preview: a 30B-A4B ...",
+      "url": "https://github.com/krafton-ai/Raon-1-mini-preview",
+      "snippet": "Raon-1 mini is a 30B-A4B Mixture-of-Experts (MoE) language model, designed and trained from scratch by KRAFTON AI. It demonstrates strong capabilities in Korean conversation and agentic tasks. As part of the Raon open model family, it is released under the Apache 2.0 license. Tip Want to try Raon-1 mini without setting anything up? Chat with it for free, for a limited time, in the Raon-1 mini ..."
+    },
+    {
+      "title": "Raon — Korean Intelligence for a More Open World",
+      "url": "https://raon-mini.krafton.ai/en",
+      "snippet": "Raon-1 mini Preview Small, yet powerful 30B A4B LLM Efficient inference. Exceptional agent capabilities With natural Korean and precise instruction following, it handles even complex tasks efficiently. To celebrate the release of KRAFTON&#x27;s model, we&#x27;re offering the API service free for a limited time."
+    },
+    {
+      "title": "Raon-1 mini: tasks, hardware requirements and license — open AI model",
+      "url": "https://chimitdorzhi.tech/en/ii-modeli/raon/",
+      "snippet": "Raon-1 mini by KRAFTON AI: A model from the Korean KRAFTON (the publisher of PUBG) with 30B parameters, 4B active, trained from scratch. It is strong in Korea"
+    },
+    {
+      "title": "tiny-random/raon-1-mini · Hugging Face",
+      "url": "https://huggingface.co/tiny-random/raon-1-mini",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

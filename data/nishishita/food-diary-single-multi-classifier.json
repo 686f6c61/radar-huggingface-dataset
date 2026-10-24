@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "nishishita/food-diary-single-multi-classifier",
+  "slug": "nishishita-food-diary-single-multi-classifier",
+  "author": "nishishita",
+  "url": "https://huggingface.co/nishishita/food-diary-single-multi-classifier",
+  "created_at": "2026-10-24T11:37:52.000Z",
+  "updated_at": "2026-10-24T11:38:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "food",
+    "food-diary",
+    "lora",
+    "qwen3_vl",
+    "image-text-to-text",
+    "en",
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-VL-4B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 132195448,
+  "storage_human": "132 MB",
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - NishaSavariar/NutriClass-Food-Classification: A machine ...",
+      "url": "https://github.com/NishaSavariar/NutriClass-Food-Classification",
+      "snippet": "A machine learning project that classifies food items based on nutritional attributes such as calories, protein, fat, and carbohydrates. The system uses multiple ML models, selects the best-performing classifier, and supports real-time prediction through a Streamlit application for diet planning and health monitoring."
+    },
+    {
+      "title": "food-classification · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/food-classification",
+      "snippet": "🍔🍟🍗 Food analysis baseline with Theseus. Integrate object detection, image classification and multi-class semantic segmentation 🍞🍖🍕"
+    },
+    {
+      "title": "FEAST: Retrieval-Augmented Multi-Hierarchical Food Classification for ...",
+      "url": "https://journals.sagepub.com/doi/reader/10.3233/FAIA251309",
+      "snippet": "Hierarchical Text Classification HTC methods generally fall into two main categories: local, which build separate classifiers at each level of the hierarchy, and global, which treat HTC as multi-label classification by integrating hierarchical structure directly into a single model [3, 35]."
+    },
+    {
+      "title": "Multiclass classification using scikit-learn - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/multiclass-classification-using-scikit-learn/",
+      "snippet": "Multiclass classification is a supervised machine learning task in which each data instance is assigned to one class from three or more possible categories. In scikit-learn, implementing multiclass classification involves preparing the dataset, selecting the appropriate algorithm, training the model and evaluating its performance. Common multiclass classifiers include Decision Tree, Support ..."
+    },
+    {
+      "title": "Food Recognition Model with Deep Learning Techniques [Updated] - Labellerr",
+      "url": "https://www.labellerr.com/blog/food-recognition-and-classification-using-deep-learning/",
+      "snippet": "Build a precise food recognition model with deep learning. Use CNNs, transfer learning, and large datasets for dietary tracking and food safety."
+    }
+  ]
+}

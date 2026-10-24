@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "root-sys-n/hybrid-mamba-50m",
+  "slug": "root-sys-n-hybrid-mamba-50m",
+  "author": "root-sys-n",
+  "url": "https://huggingface.co/root-sys-n/hybrid-mamba-50m",
+  "created_at": "2026-10-24T12:09:57.000Z",
+  "updated_at": "2026-10-24T12:10:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Download Root - RootApp.com",
+      "url": "https://www.rootapp.com/download",
+      "snippet": "Root is the first extensible communication platform, focused on providing the tools and experiences you need to run a successful …"
+    },
+    {
+      "title": "Root - Not Just Chat, Built for Action",
+      "url": "https://www.rootapp.com/",
+      "snippet": "Root is a next-generation social platform that combines communication tools with a customizable app framework, allowing …"
+    },
+    {
+      "title": "Acheter Root - Jeu de société - Matagot - Philibert",
+      "url": "https://www.philibertnet.com/fr/matagot/74046-root-3760146645165.html",
+      "snippet": "Root est un jeu d'aventure et de guerre dans lequel les joueurs incarnent une des quatre factions et luttent pour devenir le dirigeant …"
+    },
+    {
+      "title": "ROOT: Analyzing petabytes of data, scientifically. - ROOT",
+      "url": "https://root.cern.ch/",
+      "snippet": "Tomorrow, June 4th, 21:00 CET, the Cult.repo documentary about C++, featuring its creator, several world-class C++ experts, HEP, …"
+    },
+    {
+      "title": "Root - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Root",
+      "snippet": "A true root system consists of a primary root and secondary roots (or lateral roots). the diffuse root system: the primary root is not …"
+    }
+  ]
+}

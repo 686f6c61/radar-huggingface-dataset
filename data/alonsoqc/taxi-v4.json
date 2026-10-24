@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "alonsoqc/Taxi-v4",
+  "slug": "alonsoqc-taxi-v4",
+  "author": "alonsoqc",
+  "url": "https://huggingface.co/alonsoqc/Taxi-v4",
+  "created_at": "2026-10-24T15:13:01.000Z",
+  "updated_at": "2026-10-24T15:13:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Taxi-v3",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24571,
+  "storage_human": "24571 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Learnix-AI-Lab/q-Taxi-v4 · Hugging Face",
+      "url": "https://huggingface.co/Learnix-AI-Lab/q-Taxi-v4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "drcxd1122/q-Taxi-v4 · Hugging Face",
+      "url": "https://huggingface.co/drcxd1122/q-Taxi-v4",
+      "snippet": "Q-Learning Agent playing1 Taxi-v4 This is a trained model of a Q-Learning agent playing Taxi-v4 ."
+    },
+    {
+      "title": "q-Taxi-v4: Model Details, Context & Pricing | Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/hf-roshana1s-q-taxi-v4",
+      "snippet": "Model card indexed from Hugging Face for reinforcement-learning. Specs: sourced from Hugging Face. Compare q-Taxi-v4&#x27;s parameters, context window, pricing and b"
+    },
+    {
+      "title": "Taxi - Gymnasium Documentation",
+      "url": "https://gymnasium.farama.org/environments/toy_text/taxi/",
+      "snippet": "The Taxi Problem involves navigating to passengers in a grid world, picking them up and dropping them off at one of four locations. Description ¶ There are four designated pick-up and drop-off locations (Red, Green, Yellow and Blue) in the 5x5 grid world. The taxi starts off at a random square and the passenger at one of the designated locations. The goal is move the taxi to the passenger&#x27;s ..."
+    },
+    {
+      "title": "Taxi-v4-OpenAI-Gymnasium/main.py at main · janashams/Taxi-v4 ... - GitHub",
+      "url": "https://github.com/janashams/Taxi-v4-OpenAI-Gymnasium/blob/main/main.py",
+      "snippet": "Taxi-v4 is a classic grid-world environment where a taxi must navigate a 5×5 grid, pick up a passenger from one of four fixed locations (R, G, Y, B), and drop them off at the correct destination. - Taxi-v4-OpenAI-Gymnasium/main.py at main · janashams/Taxi-v4-OpenAI-Gymnasium"
+    }
+  ]
+}

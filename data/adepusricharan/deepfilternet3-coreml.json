@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "adepusricharan/deepfilternet3-coreml",
+  "slug": "adepusricharan-deepfilternet3-coreml",
+  "author": "adepusricharan",
+  "url": "https://huggingface.co/adepusricharan/deepfilternet3-coreml",
+  "created_at": "2026-10-24T14:55:20.000Z",
+  "updated_at": "2026-10-24T14:55:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "coreml",
+    "audio",
+    "speech-enhancement",
+    "noise-suppression",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6173262,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeepFilterNet3-CoreML — open audio or speech model | AxForge",
+      "url": "https://axforge.ai/models/deepfilternet3-coreml/",
+      "snippet": "DeepFilterNet3-CoreML by aufklarer: an open-weight audio or speech model — specs, variants and licence, on EU-hosted GPUs from AxForge."
+    },
+    {
+      "title": "aufklarer/DeepFilterNet3-CoreML · Hugging Face",
+      "url": "https://huggingface.co/aufklarer/DeepFilterNet3-CoreML",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "aufklarer/DeepFilterNet3-CoreML at main - Hugging Face",
+      "url": "https://huggingface.co/aufklarer/DeepFilterNet3-CoreML/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DeepFilterNet3-CoreML · Model · Inferix",
+      "url": "https://inferix.co/models/aufklarer/DeepFilterNet3-CoreML",
+      "snippet": "DeepFilterNet3 — CoreML INT8 Real-time speech enhancement for Apple Silicon. Removes background noise from speech audio. Runs on Neural Engine via CoreML."
+    },
+    {
+      "title": "DeepFilterNet3-CoreML — model",
+      "url": "https://0xsero.github.io/hf-model-benchmarks/models/aufklarer__DeepFilterNet3-CoreML--04e1c8.html",
+      "snippet": "Hugging Face model & benchmark data scraped & matrix-ified. 24,078 variants · 14,984 scores · 120 benchmarks."
+    }
+  ]
+}

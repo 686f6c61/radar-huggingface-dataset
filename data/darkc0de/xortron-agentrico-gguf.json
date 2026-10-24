@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "darkc0de/XORTRON-AgentRICO-GGUF",
+  "slug": "darkc0de-xortron-agentrico-gguf",
+  "author": "darkc0de",
+  "url": "https://huggingface.co/darkc0de/XORTRON-AgentRICO-GGUF",
+  "created_at": "2026-10-24T11:57:25.000Z",
+  "updated_at": "2026-10-24T11:58:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "unsloth",
+    "vision-language-model",
+    "text-generation-inference",
+    "uncensored",
+    "harmful",
+    "xortron",
+    "heretic",
+    "abliterated",
+    "toxic",
+    "experimental",
+    "not-for-all-audiences",
+    "en",
+    "dataset:darkc0de/The-Mind-of-XORTRON",
+    "base_model:orcarouter/Qwen3.8-27B-Uncensored",
+    "base_model:quantized:orcarouter/Qwen3.8-27B-Uncensored",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 190780465408,
+  "storage_human": "190.8 GB",
+  "base_model": "orcarouter/Qwen3.8-27B-Uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/XORTRON-AgentRICO-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/XORTRON-AgentRICO-GGUF",
+      "snippet": "Like 0 Transformers GGUF darkc0de/The-Mind-of-XORTRON English unsloth vision-language-model text-generation-inference uncensored harmful xortron heretic abliterated toxic experimental Not-For-All-Audiences conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "darkc0de (Sonny DeSorbo) - Hugging Face",
+      "url": "https://huggingface.co/darkc0de/models",
+      "snippet": "Intelligent, Knowledgeable & Truly Uncensored AI darkc0de 992053 Follow Fashion-Italia&#x27;s profile pictureErrorstreet&#x27;s profile picturemojobojo88&#x27;s profile picture 666 followers · 1,455 following https://xortron.tech/"
+    },
+    {
+      "title": "Run XORTRON-AgentRICO API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/darkc0de/XORTRON-AgentRICO",
+      "snippet": "Deploy XORTRON-AgentRICO (27B parameters) via OpenAI-compatible API with 32K context. Flat-rate pricing from $25/month."
+    },
+    {
+      "title": "Agent.Xortron by jaforkhan5791 — VRAM 54.7GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/jaforkhan5791%2FAgent.Xortron,3vzqjqoGroTsxsqzVYhx5X",
+      "snippet": "Agent.Xortron is an open-source language model by jaforkhan5791. Features: 27.4b LLM, VRAM: 54.7GB, License: apache-2.0, LLM Explorer Score: 0.26."
+    },
+    {
+      "title": "darkc0de/agent-xortron • LM Studio Hub",
+      "url": "https://lmstudio.ai/darkc0de/agent-xortron",
+      "snippet": "Agent Xortron is a full-capability autonomous LM Studio tools plugin maintained by darkc0de. Agent Xortron gives a selected local model access to file operations, Python and JavaScript execution, shell and terminal commands, browser automation, web research, RAG, Git, GitHub CLI tools, database inspection, persistent memory, notifications, and ..."
+    }
+  ]
+}

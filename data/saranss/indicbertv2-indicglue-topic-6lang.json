@@ -1,0 +1,105 @@
+{
+  "schema": 1,
+  "id": "saranss/indicbertv2-indicglue-topic-6lang",
+  "slug": "saranss-indicbertv2-indicglue-topic-6lang",
+  "author": "saranss",
+  "url": "https://huggingface.co/saranss/indicbertv2-indicglue-topic-6lang",
+  "created_at": "2026-10-24T16:59:25.000Z",
+  "updated_at": "2026-10-24T17:02:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "as",
+    "bn",
+    "brx",
+    "gu",
+    "hi",
+    "kn",
+    "ml",
+    "mr",
+    "or",
+    "pa",
+    "ta",
+    "te",
+    "ur"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "indic",
+    "low-resource",
+    "sentiment-analysis",
+    "topic-classification",
+    "indicbert",
+    "as",
+    "bn",
+    "brx",
+    "gu",
+    "hi",
+    "kn",
+    "ml",
+    "mr",
+    "or",
+    "pa",
+    "ta",
+    "te",
+    "ur",
+    "dataset:ai4bharat/IndicSentiment",
+    "dataset:ai4bharat/indic_glue",
+    "base_model:ai4bharat/IndicBERTv2-MLM-only",
+    "base_model:quantized:ai4bharat/IndicBERTv2-MLM-only",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278054417,
+  "parameters_human": "278.1M",
+  "storage_bytes": 1391078479,
+  "storage_human": "1.4 GB",
+  "base_model": "ai4bharat/IndicBERTv2-MLM-only",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IndicGLUE | AI4Bharat IndicNLP",
+      "url": "https://indicnlp.ai4bharat.org/indic-glue/",
+      "snippet": "IndicGLUE is a natural language understanding benchmark that we propose. It consists of 6 tasks which we describe in the next section. In addition, we also compile a list of additional evaluations which comprises of tasks based on publicly-available datasets."
+    },
+    {
+      "title": "IndicBERT v2 - a ai4bharat Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/ai4bharat/indicbert-v2-66c5a0bd4ee34ebc59303bc5",
+      "snippet": "IndicBERT v2 is a multilingual BERT model pretrained on IndicCorp v2, an Indic monolingual corpus of 20.9 billion tokens, covering 24 consitutionally"
+    },
+    {
+      "title": "IndicGLUE | AI4Bharat IndicNLP",
+      "url": "https://indicnlp.ai4bharat.org/pages/indic-glue/",
+      "snippet": "IndicGLUE IGLUE is a natural language understanding benchmark for Indian languages that we propose. While building this benchmark, our objective was also to cover most of the 11 Indian languages for each task. It consists of the following tasks:"
+    },
+    {
+      "title": "IndicBERTv2 - ai4bharat.iitm.ac.in",
+      "url": "https://ai4bharat.iitm.ac.in/areas/model/LLM/IndicBERTv2/",
+      "snippet": "IndicBERT v2 is a multilingual BERT model pretrained on IndicCorp v2, an Indic monolingual corpus of 20.9 billion tokens, covering 24 consitutionally recognised Indian languages."
+    },
+    {
+      "title": "ai4bharat/IndicBERTv2-SS · Hugging Face",
+      "url": "https://huggingface.co/ai4bharat/IndicBERTv2-SS",
+      "snippet": "ai4bharat / IndicBERTv2-SS Like 3 Follow AI4Bharat 2.12k Fill-Mask Transformers PyTorch 26 languages bert indicbert2 ai4bharat multilingual License:mit Model card FilesFiles and versions xet Community 2 Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

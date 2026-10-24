@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "adepusricharan/Demucs-v4",
+  "slug": "adepusricharan-demucs-v4",
+  "author": "adepusricharan",
+  "url": "https://huggingface.co/adepusricharan/Demucs-v4",
+  "created_at": "2026-10-24T14:54:36.000Z",
+  "updated_at": "2026-10-24T14:54:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "audio-to-audio",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "audio",
+    "music-source-separation",
+    "sound-separation",
+    "demucs",
+    "htdemucs",
+    "stem-separation",
+    "inference",
+    "audio-to-audio",
+    "arxiv:2211.08553",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 475703322,
+  "storage_human": "476 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - charzy/Demucs-v4-",
+      "url": "https://github.com/charzy/Demucs-v4-",
+      "snippet": "Demucs is a state-of-the-art music source separation model, currently capable of separating drums, bass, and vocals from the rest of the accompaniment. Demucs is based on a U-Net convolutional architecture inspired by Wave-U-Net. The v4 version features Hybrid Transformer Demucs, a hybrid spectrogram/waveform separation model using Transformers."
+    },
+    {
+      "title": "Demucs : AI Music Source Separation Online (Demucs v4)",
+      "url": "https://demucs.net/",
+      "snippet": "Demucs Online runs Demucs v4, the open-source AI model for music source separation, on cloud GPUs. Upload a song and get clean vocals, drums, bass and other stems in about a minute."
+    },
+    {
+      "title": "demucs: Audio-to-Audio model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/replicate/demucs-ryan5453",
+      "snippet": "Overview demucs is a hybrid source separation model that isolates individual audio stems (vocals, drums, bass, guitar, and other instruments) from mixed audio files. Created by ryan5453, this implementation wraps Facebook Research&#x27;s award-winning Demucs architecture, which won the Music Demixing Challenge 2021. The hybrid version combines both spectrogram and waveform domain processing ..."
+    },
+    {
+      "title": "GitHub - iBoostAI/demucs-api: Demucs V4 API · GitHub",
+      "url": "https://github.com/iBoostAI/demucs-api",
+      "snippet": "This is the 4th release of Demucs (v4), featuring Hybrid Transformer based source separation. Demucs is a state-of-the-art music source separation model, currently capable of separating drums, bass, and vocals from the rest of the accompaniment."
+    },
+    {
+      "title": "DEMUCS - Music source separation",
+      "url": "https://demucs.danielfrg.com/",
+      "snippet": "Online service for music source separation"
+    }
+  ]
+}

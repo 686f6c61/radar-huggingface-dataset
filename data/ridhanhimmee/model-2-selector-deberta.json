@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ridhanhimmee/model-2-selector-deberta",
+  "slug": "ridhanhimmee-model-2-selector-deberta",
+  "author": "ridhanhimmee",
+  "url": "https://huggingface.co/ridhanhimmee/model-2-selector-deberta",
+  "created_at": "2026-10-24T12:04:25.000Z",
+  "updated_at": "2026-10-24T12:04:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deberta-v2",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 141896450,
+  "parameters_human": "141.9M",
+  "storage_bytes": 567598552,
+  "storage_human": "568 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Porn, Sex, Tube Videos, XXX Pics, Pussy in Porno Movies",
+      "url": "https://www.xnxx.com/",
+      "snippet": "XNXX delivers free sex movies and fast free porn videos (tube porn). Now 10 million+ sex vids available for free! Featuring hot pussy, …Read more"
+    },
+    {
+      "title": "Free Porn Videos & XXX Movies - Sex Videos Tube",
+      "url": "https://xhamster.com/",
+      "snippet": "Free porn videos and exclusive XXX movies are here at xHamster. Instantly stream 6M+ hardcore sex videos from pros and …"
+    },
+    {
+      "title": "Free Porn Videos & Sex Movies - Porno, XXX, Porn Tube | Pornhub",
+      "url": "https://www.pornhub.com/",
+      "snippet": "Pornhub provides you with unlimited free porn videos with the hottest pornstars. Enjoy the largest amateur porn community on the …"
+    },
+    {
+      "title": "Free Sex Porn Videos | xHamster",
+      "url": "https://xhamster.com/tags/sex",
+      "snippet": "Check out free Sex porn videos on xHamster. Watch all Sex XXX vids right now!"
+    },
+    {
+      "title": "Vidéos porno gratuites ️ Le meilleur site porno français !",
+      "url": "https://www.monporno.fr/",
+      "snippet": "Le site monporno.fr a été conçu pour offrir à tous les amateurs de films porno français un accès facile aux meilleurs contenus pour …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "tan-ht/naist-iwslt2025",
+  "slug": "tan-ht-naist-iwslt2025",
+  "author": "tan-ht",
+  "url": "https://huggingface.co/tan-ht/naist-iwslt2025",
+  "created_at": "2026-10-24T11:54:15.000Z",
+  "updated_at": "2026-10-24T11:54:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Haotian Tan | Academic Homepage",
+      "url": "https://tan-ht.github.io/",
+      "snippet": "Haotian Tan is a Ph.D. candidate in Information Science at the Nara Institute of Science and Technology (NAIST), where he is a member of the Human AI Interaction Laboratory under the supervision of Prof. Dr. Sakriani Sakti. His research focuses on simultaneous speech translation and real-time spoken language systems."
+    },
+    {
+      "title": "PDF NAIST Simultaneous Speech Translation System for IWSLT 2025",
+      "url": "https://aclanthology.org/2025.iwslt-1.39.pdf",
+      "snippet": "Abstract This paper describes the NAIST submission to the English-to-{German, Japanese, Chinese} Simultaneous Speech-to-Text track at IWSLT 2025. Last year, our system was based on an end-to-end speech-to-text translation model that combined HuBERT and mBART. This year, the system consists of a Whisper encoder, the DeCo compressive projector, and the Qwen large language model. The simultaneous ..."
+    },
+    {
+      "title": "NAIST Simultaneous Speech Translation System for IWSLT 2025",
+      "url": "https://aclanthology.org/2025.iwslt-1.39/",
+      "snippet": "This paper describes the NAIST submission to the English-to-German, Japanese, Chinese Simultaneous Speech-to-Text track at IWSLT 2025. Last year, our system was based on an end-to-end speech-to-text translation model that combined HuBERT and mBART."
+    },
+    {
+      "title": "Program - IWSLT",
+      "url": "https://iwslt.org/2025/program",
+      "snippet": "[13] NAIST Simultaneous Speech Translation System for IWSLT 2025 Authors: Haotian Tan | Ruhiyah Faradishi Widiaputri | Jan Meyer Saragih | Yuka Ko | Katsuhito Sudoh | Satoshi Nakamura | Sakriani Sakti [14] AppTek&#x27;s Automatic Speech Translation: Generating Accurate and Well-Readable Subtitles"
+    },
+    {
+      "title": "HAI Research Laboratory [Sakti-Lab] - NAIST",
+      "url": "https://hai-lab.naist.jp/publications.html",
+      "snippet": "H. Tan, S. Sakti, \"Improving Simultaneous Speech Translation with a Contrastive Feedback Mechanism\", ASJ Spring Meeting, Mar 2025 Y. Hirano, M. Nguyen, K. Azuma, J. M. Saragih, S. Sakti, \"The NAIST System for the CHiME-8 Distant Meeting Transcription Challenge\", ASJ Spring Meeting, Mar 2025"
+    }
+  ]
+}

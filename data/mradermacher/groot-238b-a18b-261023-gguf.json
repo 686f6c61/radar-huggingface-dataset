@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Groot-238B-A18B-261023-GGUF",
+  "slug": "mradermacher-groot-238b-a18b-261023-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Groot-238B-A18B-261023-GGUF",
+  "created_at": "2026-10-24T09:43:57.000Z",
+  "updated_at": "2026-10-24T13:40:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:GrootTeam/Groot-238B-A18B-261023",
+    "base_model:quantized:GrootTeam/Groot-238B-A18B-261023",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 242833328966,
+  "parameters_human": "242.83B",
+  "storage_bytes": 1657073458784,
+  "storage_human": "1657.1 GB",
+  "base_model": "GrootTeam/Groot-238B-A18B-261023",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Guy tried swinging with his wife and it didn't go well. One of ... - Reddit",
+      "url": "https://www.reddit.com/r/TrueReddit/comments/1kkrbk/guy_tried_swinging_with_his_wife_and_it_didnt_go/",
+      "snippet": "Aug 17, 2013 · It doesn't seem to me like the other couple was being malicious but they pushed them too far outside their comfort …"
+    },
+    {
+      "title": "Why swapping husbands and wives creates hidden problems",
+      "url": "https://rollingout.com/2024/11/28/swapping-partner-creates-problems/",
+      "snippet": "Nov 28, 2024 · While some couples explore alternative relationship dynamics, the practice of spouse swapping often introduces …"
+    },
+    {
+      "title": "Couple swap gone wrong? : r/Swingers - Reddit",
+      "url": "https://www.reddit.com/r/Swingers/comments/1b0unip/couple_swap_gone_wrong/",
+      "snippet": "Nothing wrong with searching for friends to have relationships with provided that it is what all 4 want and it’s part of the …"
+    },
+    {
+      "title": "Couple swap gone wrong. Would like honest feedback. - Reddit",
+      "url": "https://www.reddit.com/r/relationship_advice/comments/fkqpcl/couple_swap_gone_wrong_would_like_honest_feedback/",
+      "snippet": "It's entirely possible he doesn't think anything is wrong and that he's telling the truth when he says he's faithful to you. But you need …"
+    },
+    {
+      "title": "Surviving the First Couple Swap: A Realistic Look at Swinging",
+      "url": "https://surviveyourpartnersaffair.com/surviving-the-first-couple-swap",
+      "snippet": "Surviving the First Couple Swap: A Realistic Look at Swinging Explore the challenges and emotional impacts of couple swapping and …"
+    }
+  ]
+}

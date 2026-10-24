@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "starry0929/pi05_s1_stack_cups_random498_20261024_best_pytorch",
+  "slug": "starry0929-pi05_s1_stack_cups_random498_20261024_best_pytorch",
+  "author": "starry0929",
+  "url": "https://huggingface.co/starry0929/pi05_s1_stack_cups_random498_20261024_best_pytorch",
+  "created_at": "2026-10-24T14:35:11.000Z",
+  "updated_at": "2026-10-24T14:36:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "openpi",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "s1",
+    "stack-cups",
+    "pytorch",
+    "jax",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3616757520,
+  "parameters_human": "3.62B",
+  "storage_bytes": 19673917381,
+  "storage_human": "19.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "starry0929/pi05_s1_stack_cups_all111_initial_focus_resume_v3_20261019 ...",
+      "url": "https://huggingface.co/starry0929/pi05_s1_stack_cups_all111_initial_focus_resume_v3_20261019_step30000_pytorch",
+      "snippet": "Safetensors PyTorch starry0929/rssr English openpi pi0.5 astribot-s1 stack-cups License:openpi-apache-2.-and-gemma Model card FilesFiles and versions xet Community Copy to bucket new Pi0.5 S1 stack cups: all111 initial-focus continuation, step 30000 Resume and provenance Native observation and action contract Download and inference Files and ..."
+    },
+    {
+      "title": "starry0929/pi05_s1_stack_cups_corrective_v14_20261020_step250_pytorch ...",
+      "url": "https://huggingface.co/starry0929/pi05_s1_stack_cups_corrective_v14_20261020_step250_pytorch",
+      "snippet": "0 Robotics Safetensors PyTorch starry0929/rssr English Chinese openpi pi0.5 astribot-s1 stack-cups imitation-learning License:openpi-apache-2.-and-gemma Model card FilesFiles and versions xet Community Copy to bucket new Pi0.5 S1 stack cups — corrective V14, step250 Recorded simulation results What changed in training Native inference ..."
+    },
+    {
+      "title": "PyTorch Image Models - GitHub",
+      "url": "https://github.com/huggingface/pytorch-image-models",
+      "snippet": "Getting Started with PyTorch Image Models (timm): A Practitioner&#x27;s Guide by Chris Hughes is an extensive blog post covering many aspects of timm in detail. timmdocs is an alternate set of documentation for timm."
+    },
+    {
+      "title": "Best Free AI Models - Download & Run Online | TensorHub Art",
+      "url": "https://tensorhub.art/models",
+      "snippet": "Browse and run AI models on TensorArt. Explore ZImage, Flux, Illustrious XL, Wan 2.2, Stable Diffusion, and more. Download checkpoints, LoRAs, and..."
+    },
+    {
+      "title": "/b/ - Random - 7chan",
+      "url": "https://7chan.org/b/",
+      "snippet": "Anonymous 26/10/23 (Fri)16:14 No. 847021 [Reply] File 17927648636.png - (1.32MB , 864x1152 , myedit_ai_templates_1019141651.png ) What do you think of the image I edited with a picture? 1 post and 1 image omitted. Click Reply to view."
+    }
+  ]
+}

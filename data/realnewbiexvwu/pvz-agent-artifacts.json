@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "realnewbiexvwu/pvz-agent-artifacts",
+  "slug": "realnewbiexvwu-pvz-agent-artifacts",
+  "author": "realnewbiexvwu",
+  "url": "https://huggingface.co/realnewbiexvwu/pvz-agent-artifacts",
+  "created_at": "2026-10-01T05:38:01.000Z",
+  "updated_at": "2026-10-24T14:00:50.000Z",
+  "license": "lgpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "reinforcement-learning",
+    "imitation-learning",
+    "plants-vs-zombies",
+    "license:lgpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 80224898291,
+  "storage_human": "80.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Manage AI Agent Artifacts - Complete Guide 2026 | Fastio",
+      "url": "https://fast.io/resources/ai-agent-artifacts/",
+      "snippet": "Most discussions about AI agents focus on the generation phase: how to prompt effectively, which models to use, or how to chain tools together. But the output phase receives surprisingly little attention, even though it determines whether an agent's work creates lasting value or becomes digital debris. ... Chat-based artifacts work well for individual exploration."
+    },
+    {
+      "title": "PZ AI agent - PZwiki",
+      "url": "https://pzwiki.net/wiki/PZ_AI_agent",
+      "snippet": "This project introduces an AI agent that operates entirely locally within Project Zomboid, without requiring external servers, APIs, or cloud processing. The AI autonomously perceives, decides, and acts in real-time, with the first demo featuring ..."
+    },
+    {
+      "title": "GitHub - mindorigin150/PvZ-Portable-agent: A cross-platform ...",
+      "url": "https://github.com/mindorigin150/PvZ-Portable-agent",
+      "snippet": "A cross-platform reimplementation of Plants vs. Zombies: GOTY Edition, adapted for AI agents with batched environments, controllable simulation steps, and Gymnasium integration. - mindorigin150/PvZ-Portable-agent"
+    },
+    {
+      "title": "Skills and Artifacts: The New Building Blocks for Agents - AI ...",
+      "url": "https://thefocus.ai/reports/aiecode-2025-11/article/agents-building-artifacts.md/",
+      "snippet": "“A representation for you and your use case. It can be used for self-reflection or to communicate to the user—and can be shared across accounts.” · The model makes autonomous decisions about artifacts:"
+    },
+    {
+      "title": "Generative-AI in pvz: replanted | Fandom",
+      "url": "https://plantsvszombies.fandom.com/f/p/4400000000000165221",
+      "snippet": "Popcap lies about not using ai, even though they…"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "RicemanT/MossAD-Demo",
+  "slug": "ricemant-mossad-demo",
+  "author": "RicemanT",
+  "url": "https://huggingface.co/RicemanT/MossAD-Demo",
+  "created_at": "2026-10-20T11:37:11.000Z",
+  "updated_at": "2026-10-23T12:16:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "anime",
+    "furry",
+    "danbooru",
+    "e621",
+    "gelbooru",
+    "finetune",
+    "moss-image",
+    "artist-style",
+    "text-to-image",
+    "base_model:OpenMOSS-Team/MOSS-Image-Base",
+    "base_model:finetune:OpenMOSS-Team/MOSS-Image-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 13,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10191751622,
+  "storage_human": "10.2 GB",
+  "base_model": "OpenMOSS-Team/MOSS-Image-Base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RicemanT/MossAD-Demo at main - Hugging Face",
+      "url": "https://huggingface.co/RicemanT/MossAD-Demo/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MossAD-Demo-characters.csv · RicemanT/MossAD-Demo at main",
+      "url": "https://huggingface.co/RicemanT/MossAD-Demo/blob/main/MossAD-Demo-characters.csv",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MossAD Demo - MOSS Image Danbooru/E621 57 Artist Style Finetune",
+      "url": "https://civitai.com/models/3016505/mossad-demo-moss-image-danboorue621-57-artist-style-finetune",
+      "snippet": "I. Introduction MossAD-Demo (Moss Anime Diffusion) is a Danbooru/Gelbooru/E621 proof of concept Full-Finetune of OpenMOSS&#x27;s MOSS-Image Base 5B T2I model, trained on a small curated 3,685 images dataset of 57 artists, as a way to test how fast and how well MOSS-Image learns artist styles, booru tags prompting and layout (bounding box) prompting before committing to a much bigger run. The test ..."
+    },
+    {
+      "title": "This AI Model Designs Enzymes With Atomic Precision",
+      "url": "https://singularityhub.com/2026/10/22/a-new-ai-model-designs-enzymes-with-atomic-precision/",
+      "snippet": "Artificial Intelligence This AI Model Designs Enzymes With Atomic Precision A trio of papers showcases AI-designed molecular scissors and an upgraded tool that builds proteins atom by atom."
+    },
+    {
+      "title": "Next AI Model — AI Model Release Tracker",
+      "url": "https://www.nextaimodel.com/",
+      "snippet": "Free tracker of every AI model release from OpenAI, Google, Anthropic, xAI, Meta, DeepSeek and more: what each model changed, and which lines are due next."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "FastVideo/FastH3-Omni-NVFP4-QAD-Comfy",
+  "slug": "fastvideo-fasth3-omni-nvfp4-qad-comfy",
+  "author": "FastVideo",
+  "url": "https://huggingface.co/FastVideo/FastH3-Omni-NVFP4-QAD-Comfy",
+  "created_at": "2026-10-20T17:21:24.000Z",
+  "updated_at": "2026-10-20T21:59:06.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "minimax-h3",
+    "fasth3-omni",
+    "reference-to-video",
+    "nvfp4",
+    "qad",
+    "base_model:FastVideo/FastVideo-FastH3-Omni-8-Step-V1",
+    "base_model:finetune:FastVideo/FastVideo-FastH3-Omni-8-Step-V1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 13,
+  "downloads_30d": 37700,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13773998700,
+  "storage_human": "13.8 GB",
+  "base_model": "FastVideo/FastVideo-FastH3-Omni-8-Step-V1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FastVideo/FastH3-Omni-NVFP4-QAD-Comfy · Hugging Face",
+      "url": "https://huggingface.co/FastVideo/FastH3-Omni-NVFP4-QAD-Comfy",
+      "snippet": "The ComfyUI-native NVFP4 QAD diffusion model for FastH3 Omni. It generates video with synchronized 32-kHz stereo audio from a prompt and ordered image, video and audio references in eight sampling steps. Accelerated NVFP4 inference requires NVIDIA Blackwell hardware. Use BF16 or FP8 on other GPU ..."
+    },
+    {
+      "title": "FastVideo/FastH3-Omni-NVFP4-QAD · Hugging Face",
+      "url": "https://huggingface.co/FastVideo/FastH3-Omni-NVFP4-QAD",
+      "snippet": "The Blackwell local-inference variant of FastH3 Omni. It generates video with synchronized audio from a prompt and ordered image, video and audio references in eight transformer evaluations. Quantization-aware distillation optimizes the model for NVFP4 execution. The standard Blackwell profiles ..."
+    },
+    {
+      "title": "GitHub - hao-ai-lab/FastVideo: A unified inference and post-training ...",
+      "url": "https://github.com/hao-ai-lab/FastVideo",
+      "snippet": "A unified inference and post-training framework for accelerated video generation. - hao-ai-lab/FastVideo"
+    },
+    {
+      "title": "FastVideo/FastH3-Omni-NVFP4-QAD-Comfy - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/fastvideo-fasth3-omni-nvfp4-qad-comfy",
+      "snippet": "FastH3 Omni NVFP4 QAD for ComfyUI The ComfyUI-native NVFP4 QAD diffusion model for FastH3 Omni. It generates video with synchronized 32-kHz stereo audio from a prompt and ordered image, video and audio references in eight sampling steps."
+    },
+    {
+      "title": "FastVideo FastH3: ComfyUI Workflow Examples - docs.comfy.org",
+      "url": "https://docs.comfy.org/tutorials/video/minimax/minimax-h3-fastvideo",
+      "snippet": "FastVideo FastH3 generates MiniMax H3 video with synchronized audio in 8 sampling steps in ComfyUI, for text-to-video and first/last-frame workflows."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ArchiveStudio/MOSS-VoiceGenerator",
+  "slug": "archivestudio-moss-voicegenerator",
+  "author": "ArchiveStudio",
+  "url": "https://huggingface.co/ArchiveStudio/MOSS-VoiceGenerator",
+  "created_at": "2026-10-24T14:59:48.000Z",
+  "updated_at": "2026-10-24T14:59:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "moss_tts_delay",
+    "text-to-speech",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2114118656,
+  "parameters_human": "2.11B",
+  "storage_bytes": 4239701563,
+  "storage_human": "4.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ArchiveStudio/MOSS-SoundEffect · Hugging Face",
+      "url": "https://huggingface.co/ArchiveStudio/MOSS-SoundEffect",
+      "snippet": "MOSS‑TTS Family is an open‑source speech and sound generation model family from MOSI.AI and the OpenMOSS team. It is designed for high‑fidelity, high‑expressiveness, and complex real‑world scenarios, covering stable long‑form speech, multi‑speaker dialogue, voice/character design, environmental sound effects, and real‑time streaming TTS."
+    },
+    {
+      "title": "ArchiveStudio/MOSS-TTS · Hugging Face",
+      "url": "https://huggingface.co/ArchiveStudio/MOSS-TTS",
+      "snippet": "MOSS‑TTS: The flagship production model featuring high fidelity and optimal zero-shot voice cloning. It supports long-speech generation, fine-grained control over Pinyin, phonemes, and duration, as well as multilingual/code-switched synthesis."
+    },
+    {
+      "title": "ArchiveStudio/MOSS-TTS-Realtime · Hugging Face",
+      "url": "https://huggingface.co/ArchiveStudio/MOSS-TTS-Realtime",
+      "snippet": "MOSS-TTS-Realtime is a high-performance, real-time speech synthesis model within the broader MOSS TTS Family. It is designed for interactive voice agents that require low-latency, continuous speech generation across multi-turn conversations."
+    },
+    {
+      "title": "ArchiveStudio/MOSS-TTSD-v1.0 · Hugging Face",
+      "url": "https://huggingface.co/ArchiveStudio/MOSS-TTSD-v1.0",
+      "snippet": "MOSS‑TTS Family is an open‑source speech and sound generation model family from MOSI.AI and the OpenMOSS team. It is designed for high‑fidelity, high‑expressiveness, and complex real‑world scenarios, covering stable long‑form speech, multi‑speaker dialogue, voice/character design, environmental sound effects, and real‑time streaming TTS."
+    },
+    {
+      "title": "ArchiveStudio/MOSS-TTSD-v0.5 · Hugging Face",
+      "url": "https://huggingface.co/ArchiveStudio/MOSS-TTSD-v0.5",
+      "snippet": "Highly Expressive Dialogue Speech: Built on unified semantic-acoustic neural audio codec, a pre-trained large language model, millions of hours of TTS data, and 400k hours synthetic and real conversational speech, MOSS-TTSD generates highly expressive, human-like dialogue speech with natural conversational prosody. Two-Speaker Voice Cloning: MOSS-TTSD supports zero-shot two speakers voice cloning and can generate conversational speech with accurate speaker swithcing based on dialogue scripts. Chinese-English Bilingual Support: MOSS-TTSD enables highly expressive speech generation in both Chinese and English."
+    }
+  ]
+}

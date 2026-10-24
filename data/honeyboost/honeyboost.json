@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "HoneyBoost/HoneyBoost",
+  "slug": "honeyboost-honeyboost",
+  "author": "HoneyBoost",
+  "url": "https://huggingface.co/HoneyBoost/HoneyBoost",
+  "created_at": "2026-10-24T11:43:24.000Z",
+  "updated_at": "2026-10-24T11:43:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Honeyboost: Boosting honeypot performance with data fusion and anomaly ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0957417422004821",
+      "snippet": "Honeyboost is an unsupervised method comprising of two approaches: horizontal and vertical. The horizontal approach constructs a time series from the communications, via ARP, TCP or UDP, of each node, with node-level features encapsulating the node&#x27;s behavior over time. The vertical approach finds anomalies in each protocol (ARP, TCP, UDP) space. Using a window-based model, typical in online ..."
+    },
+    {
+      "title": "HoneyBoost® Official | Honey Gummies for Men",
+      "url": "https://hoaneyboost.com/",
+      "snippet": "HoneyBoost is a tasty, caffeine-free honey gummy for men, made to support energy, stamina and endurance. Two a day, six named ingredients, 60-day refund promise."
+    },
+    {
+      "title": "[2105.02526] Honeyboost: Boosting honeypot performance with data fusion ...",
+      "url": "https://arxiv.org/abs/2105.02526",
+      "snippet": "Honeyboost is an unsupervised method comprising two approaches: horizontal and vertical. The horizontal approach constructs a time series from the communications of each node, with node-level features encapsulating their behavior over time."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?library...",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "PDF Paper Title (use style: paper title) - icaiit.org",
+      "url": "https://icaiit.org/proceedings/13th_ICAIIT_3/4-1-ICAIIT_2025_13(3).pdf",
+      "snippet": "The effectiveness is enhanced by the ability of the Machine Learning model in enhancing the detection rates besides the flexibility in accommodating new techniques of detection of attacks. The Visualization Dashboard improves usability since it contains an easily navigable interface for current security monitoring and past performance examination."
+    }
+  ]
+}

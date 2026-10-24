@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "ReadyArt/Wicked-Stuff-26B-A4B-v2.0-Final-GGUF",
+  "slug": "readyart-wicked-stuff-26b-a4b-v2-0-final-gguf",
+  "author": "ReadyArt",
+  "url": "https://huggingface.co/ReadyArt/Wicked-Stuff-26B-A4B-v2.0-Final-GGUF",
+  "created_at": "2026-10-23T14:50:06.000Z",
+  "updated_at": "2026-10-24T12:19:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "nsfw",
+    "explicit",
+    "roleplay",
+    "unaligned",
+    "ERP",
+    "Erotic",
+    "Horror",
+    "Violence",
+    "adult-content",
+    "mature",
+    "conversational",
+    "instruct",
+    "text-generation",
+    "en",
+    "base_model:ReadyArt/Wicked-Stuff-26B-A4B-v2.0-Final",
+    "base_model:quantized:ReadyArt/Wicked-Stuff-26B-A4B-v2.0-Final",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 4,
+  "downloads_30d": 3222,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 196528297984,
+  "storage_human": "196.5 GB",
+  "base_model": "ReadyArt/Wicked-Stuff-26B-A4B-v2.0-Final",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ReadyArt/Wicked-Stuff-26B-A4B-v2.0-Final-GGUF at main",
+      "url": "https://huggingface.co/ReadyArt/Wicked-Stuff-26B-A4B-v2.0-Final-GGUF/tree/main",
+      "snippet": "Instructions to use ReadyArt/Wicked-Stuff-26B-A4B-v2.0-Final-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "ReadyArt (Ready.Art) - Hugging Face",
+      "url": "https://huggingface.co/ReadyArt/models",
+      "snippet": "Org profile for Ready.Art on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "ReadyArt/Wicked-Tutu-26B-A4B-Final - featherless.ai",
+      "url": "https://featherless.ai/models/ReadyArt/Wicked-Tutu-26B-A4B-Final",
+      "snippet": "Deploy Wicked-Tutu-26B-A4B-Final (26B parameters) via OpenAI-compatible API with 32K context. Flat-rate pricing from $25/month."
+    },
+    {
+      "title": "ReadyArt AI Model Benchmarks | BenchmarkList",
+      "url": "https://benchmarklist.com/providers/readyart/",
+      "snippet": "ReadyArt AI model benchmark profile: 25 models, 1 covered benchmarks on BenchmarkList."
+    },
+    {
+      "title": "Frontier AI Models: Live Top 10 Rankings, Evidence and ... - benchlm.ai",
+      "url": "https://benchlm.ai/frontier-ai-models",
+      "snippet": "See which AI models are on the frontier in October 2026. Compare the top 10 by score, conditional score range, pricing, and Supported or Estimated status."
+    }
+  ]
+}

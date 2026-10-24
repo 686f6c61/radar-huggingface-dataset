@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Sungah/omx_1024_jihyeok_act",
+  "slug": "sungah-omx_1024_jihyeok_act",
+  "author": "Sungah",
+  "url": "https://huggingface.co/Sungah/omx_1024_jihyeok_act",
+  "created_at": "2026-10-24T07:35:23.000Z",
+  "updated_at": "2026-10-24T15:20:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "omx",
+    "robotics",
+    "dataset:Sungah/omx_1024_test_jihyeok_success",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1080389651,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "1024X — One API for every model",
+      "url": "https://1024x.ai/en/",
+      "snippet": "Unified API gateway for the world&#x27;s leading AI models. Per-token billing, granular usage tracking, and effortless integration."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?library...",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "ACT (Action Chunking with Transformers) - Hugging Face",
+      "url": "https://huggingface.co/docs/lerobot/act",
+      "snippet": "ACT is a lightweight and efficient policy for imitation learning, especially well-suited for fine-grained manipulation tasks. It&#x27;s the first model we recommend when you&#x27;re starting out with LeRobot due to its fast training time, low computational requirements, and strong performance. Action ..."
+    },
+    {
+      "title": "sungah - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1908243230506046159",
+      "snippet": "Generate stunning girl anime art with the &#x27;sungah&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/",
+      "snippet": "We couldn&#x27;t load your remembered accounts. You can still log in below"
+    }
+  ]
+}

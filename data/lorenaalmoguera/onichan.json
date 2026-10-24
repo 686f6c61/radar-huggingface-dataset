@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "lorenaalmoguera/onichan",
+  "slug": "lorenaalmoguera-onichan",
+  "author": "lorenaalmoguera",
+  "url": "https://huggingface.co/lorenaalmoguera/onichan",
+  "created_at": "2026-10-24T11:54:57.000Z",
+  "updated_at": "2026-10-24T11:54:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Onii-chan | miraculous AI LoRA Model | PixAI",
+      "url": "https://pixai.art/en/model/1936881264908455139/1952982470313903334",
+      "snippet": "Onii-chan aka kagami tsurugi form Miraculous ladybug and chat noir. Personally I think people should create more akuma villians lora they rock. Lora working ok. Recommended to use only 0.8-1.0, not to high recommended use Haruka v2, from what i checked it gives the best image and looks more like the cover image recommended use hoshino for pony 2.0 to match the cover image."
+    },
+    {
+      "title": "Onii-chan | miraculous - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1936881264908455139",
+      "snippet": "Generate stunning villian, ryuko, akuma, miraculous, kagami_tsurugi, onii_chan, miraculous_kagami anime art with the &#x27;Onii-chan | miraculous&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "oniichan｜AI Art Model & LoRA | PixAI",
+      "url": "https://pixai.art/model/1835516388326631389-oniichan",
+      "snippet": "Just created this stunning anime art with the amazing &#x27;oniichan&#x27; model on PixAI! Search for \"oniichan\" on PixAI - the free & professional AI anime art generator."
+    },
+    {
+      "title": "Onii-chan | miraculous ｜AI Art Model & LoRA | PixAI",
+      "url": "https://pixai.art/model/1936881264908455139",
+      "snippet": "Just created this stunning villian, ryuko, akuma, miraculous, kagami_tsurugi, onii_chan, miraculous_kagami anime art with the amazing &#x27;Onii-chan | miraculous &#x27; model on PixAI! Search for \"Onii-chan | miraculous \" on PixAI - the free & professional AI anime art generator. Create your own masterpieces in seconds. Try it now!"
+    },
+    {
+      "title": "Onimai: I&#x27;m Now Your Sister! Style Lora - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1929166106327689200",
+      "snippet": "Generate stunning anime art with the &#x27;Onimai: I&#x27;m Now Your Sister! Style Lora&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    }
+  ]
+}

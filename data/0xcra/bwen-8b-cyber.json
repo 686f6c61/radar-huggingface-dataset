@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "0xCra/Bwen-8B-Cyber",
+  "slug": "0xcra-bwen-8b-cyber",
+  "author": "0xCra",
+  "url": "https://huggingface.co/0xCra/Bwen-8B-Cyber",
+  "created_at": "2026-10-24T11:35:31.000Z",
+  "updated_at": "2026-10-24T15:50:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bolmo",
+    "text-generation",
+    "byte-level",
+    "cybersecurity",
+    "CTF",
+    "red-team",
+    "blue-team",
+    "pcap",
+    "network-forensics",
+    "sft",
+    "custom_code",
+    "en",
+    "arxiv:2512.15586",
+    "arxiv:2412.09871",
+    "arxiv:2507.07955",
+    "arxiv:2502.08606",
+    "arxiv:2402.07688",
+    "base_model:allenai/Bwen-8B",
+    "base_model:finetune:allenai/Bwen-8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8313169056,
+  "parameters_human": "8.31B",
+  "storage_bytes": 50068396776,
+  "storage_human": "50.1 GB",
+  "base_model": "allenai/Bwen-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Have you taken a \"class\" at Ulta or Sephora? What was your ... - Reddit",
+      "url": "https://www.reddit.com/r/MakeupAddiction/comments/8sd6m5/have_you_taken_a_class_at_ulta_or_sephora_what/",
+      "snippet": "Sephora tries to hit whales while ulta kinda goes for everyone, but may focus on dolphins the very most and minnows slightly more. …"
+    },
+    {
+      "title": "For the Canadian girlies: a Sephora vs Shoppers Comparison",
+      "url": "https://www.reddit.com/r/Sephora/comments/133yups/for_the_canadian_girlies_a_sephora_vs_shoppers/",
+      "snippet": "Apr 30, 2023 · Since I placed an order with Shoppers (for the non Canadians: a Canadian drugstore which also sells prestige beauty, …"
+    },
+    {
+      "title": "How do I find my Beauty Insider Member n ... - Sephora Community",
+      "url": "https://community.sephora.com/t5/Customer-Support/How-do-I-find-my-Beauty-Insider-Member-number/m-p/3826234",
+      "snippet": "Mar 9, 2018 · Instead, clients can simply provide their email address, phone number, or their digital Beauty Insider card on the …"
+    },
+    {
+      "title": "Re: return policy no receipt - Beauty Insider Community",
+      "url": "https://community.sephora.com/t5/Customer-Support/return-policy-no-receipt/m-p/3688457",
+      "snippet": "Jan 16, 2018 · Hi , You may return items within 60 days of purchase. With a receipt, you can receive a refund. Without a receipt, you …"
+    },
+    {
+      "title": "Sephora Info Thread : r/employedbykohls - Reddit",
+      "url": "https://www.reddit.com/r/employedbykohls/comments/n6da1r/sephora_info_thread/",
+      "snippet": "May 6, 2021 · Will Sephora products be included in regular OMNI picks? Also will Sephora have it's own stockroom area built in - or …"
+    }
+  ]
+}

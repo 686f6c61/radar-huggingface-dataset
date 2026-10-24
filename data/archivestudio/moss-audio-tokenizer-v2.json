@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ArchiveStudio/MOSS-Audio-Tokenizer-v2",
+  "slug": "archivestudio-moss-audio-tokenizer-v2",
+  "author": "ArchiveStudio",
+  "url": "https://huggingface.co/ArchiveStudio/MOSS-Audio-Tokenizer-v2",
+  "created_at": "2026-10-24T15:00:43.000Z",
+  "updated_at": "2026-10-24T15:00:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "moss-audio-tokenizer",
+    "feature-extraction",
+    "audio",
+    "audio-tokenizer",
+    "neural-codec",
+    "moss-tts-family",
+    "MOSS Audio Tokenizer",
+    "speech-tokenizer",
+    "trust-remote-code",
+    "arxiv:2602.10934",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2123701248,
+  "parameters_human": "2.12B",
+  "storage_bytes": 8497864992,
+  "storage_human": "8.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MOSS-Audio-Tokenizer - GitHub",
+      "url": "https://github.com/OpenMOSS/MOSS-Audio-Tokenizer",
+      "snippet": "MOSS-Audio-Tokenizer is a unified discrete audio tokenizer based on the Cat (C ausal A udio T okenizer with T ransformer) architecture. Scaling to 1.6 billion parameters, it functions as a unified discrete interface, delivering both lossless-quality reconstruction and high-level semantic alignment."
+    },
+    {
+      "title": "MOSS-Audio-Tokenizer: Scaling Audio Tokenizers for Future Audio ...",
+      "url": "https://arxiv.org/abs/2602.10934",
+      "snippet": "Notably, leveraging the discrete tokens from our model, we develop the first purely autoregressive TTS model that surpasses prior non-autoregressive and cascaded systems. Furthermore, MOSS-Audio-Tokenizer enables competitive ASR performance without auxiliary encoders."
+    },
+    {
+      "title": "MOSS-Audio-Tokenizer-v2 · Models",
+      "url": "https://www.modelscope.cn/models/openmoss/MOSS-Audio-Tokenizer-v2",
+      "snippet": "PyTorch License: apache-2.0 moss-audio-tokenizer audio, audio-tokenizer, neural-codec and 5 more @ openmoss 622 downloads"
+    },
+    {
+      "title": "huangxudong/MOSS-Audio-Tokenizer-v2 · Hugging Face",
+      "url": "https://huggingface.co/huangxudong/MOSS-Audio-Tokenizer-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Jinstudio/MOSS-Audio-Tokenizer · Hugging Face",
+      "url": "https://huggingface.co/Jinstudio/MOSS-Audio-Tokenizer",
+      "snippet": "MOSS-Audio-Tokenizer: Scaling Audio Tokenizers for Future Audio Foundation Models"
+    }
+  ]
+}

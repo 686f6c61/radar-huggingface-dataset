@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "eetteri/sana-phrase-model",
+  "slug": "eetteri-sana-phrase-model",
+  "author": "eetteri",
+  "url": "https://huggingface.co/eetteri/sana-phrase-model",
+  "created_at": "2026-10-24T11:31:32.000Z",
+  "updated_at": "2026-10-24T11:31:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "coreml",
+  "languages": [
+    "multilingual",
+    "en",
+    "fi"
+  ],
+  "tags": [
+    "coreml",
+    "sentence-embeddings",
+    "macos",
+    "sentence-similarity",
+    "multilingual",
+    "en",
+    "fi",
+    "base_model:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "base_model:quantized:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 135225459,
+  "storage_human": "135 MB",
+  "base_model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Choose Your Model - Sanas Developer Hub",
+      "url": "https://developer.sanas.ai/Docs/Models/Choose-Your-Model",
+      "snippet": "Find the right Sanas model for your use case"
+    },
+    {
+      "title": "As An AI Language Model Meme: Origin and Meaning Explained",
+      "url": "https://meme.com/memes/as-an-ai-language-model",
+      "snippet": "As An AI Language Model is a catchphrase disclaimer that ChatGPT uses when declining to answer certain questions. The phrase became a meme in 2023 when people discovered it appearing in spam content, fake reviews, and plagiarized writing across the internet, revealing the widespread use of AI-generated text."
+    },
+    {
+      "title": "Nvidia&#x27;s Sana: An AI Model That Instantly Creates 4K Images ... - Decrypt",
+      "url": "https://decrypt.co/288365/nvidia-sana-ai-model-4k-image-generator",
+      "snippet": "Nvidia&#x27;s Sana: An AI Model That Instantly Creates 4K Images on Garden-Variety PCs Nvidia&#x27;s latest model promises to bring 4K image creation to everyday computers—and you&#x27;ll generate those images in a few seconds."
+    },
+    {
+      "title": "Efficient-Large-Model/Sana_1600M_1024px · Hugging Face",
+      "url": "https://huggingface.co/Efficient-Large-Model/Sana_1600M_1024px",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "NVIDIA Sana - A Foundation Image Generation Model at ... - DigitalOcean",
+      "url": "https://www.digitalocean.com/community/tutorials/nvidia-sana-image-generation-guide",
+      "snippet": "Discover NVIDIA Sana, the groundbreaking image generation model offering unparalleled speed and precision. Learn how to deploy and run Sana effortlessly on D…"
+    }
+  ]
+}

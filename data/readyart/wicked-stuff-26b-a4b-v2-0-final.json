@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "ReadyArt/Wicked-Stuff-26B-A4B-v2.0-Final",
+  "slug": "readyart-wicked-stuff-26b-a4b-v2-0-final",
+  "author": "ReadyArt",
+  "url": "https://huggingface.co/ReadyArt/Wicked-Stuff-26B-A4B-v2.0-Final",
+  "created_at": "2026-10-23T14:08:10.000Z",
+  "updated_at": "2026-10-24T12:18:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "nsfw",
+    "explicit",
+    "roleplay",
+    "unaligned",
+    "ERP",
+    "Erotic",
+    "Horror",
+    "Violence",
+    "adult-content",
+    "mature",
+    "conversational",
+    "instruct",
+    "text-generation",
+    "en",
+    "base_model:SubMaroon/Kitchoon-V3-26B-A4B",
+    "base_model:finetune:SubMaroon/Kitchoon-V3-26B-A4B",
+    "license:apache-2.0",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 2,
+  "downloads_30d": 27,
+  "trending_score": 0,
+  "parameters": 25805933872,
+  "parameters_human": "25.81B",
+  "storage_bytes": 51644178190,
+  "storage_human": "51.6 GB",
+  "base_model": "SubMaroon/Kitchoon-V3-26B-A4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ReadyArt/Wicked-Stuff-26B-A4B-v2.0-Final · Hugging Face",
+      "url": "https://huggingface.co/ReadyArt/Wicked-Stuff-26B-A4B-v2.0-Final",
+      "snippet": "ReadyArt / Wicked-Stuff-26B-A4B-v2.-Final Like 1 Follow Ready.Art 1.85k Text Generation Safetensors English gemma4 nsfw explicit roleplay unaligned ERP Erotic Horror Violence adult-content mature conversational instruct Not-For-All-Audiences License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "ReadyArt/Wicked-Stuff-26B-A4B-v2.0-Final-GGUF at main",
+      "url": "https://huggingface.co/ReadyArt/Wicked-Stuff-26B-A4B-v2.0-Final-GGUF/tree/main",
+      "snippet": "Instructions to use ReadyArt/Wicked-Stuff-26B-A4B-v2.-Final-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub - JoasASantos/Offensive-Security-AI-Models: Uncensored AI models ...",
+      "url": "https://github.com/JoasASantos/Offensive-Security-AI-Models",
+      "snippet": "Curated list of open-weight uncensored models for authorized red team operations, penetration testing, and security research. All data sourced from HuggingFace model cards and official publications. Sep 2026."
+    },
+    {
+      "title": "Can I run AI locally? Best models for your GPU",
+      "url": "https://www.canirun.ai/",
+      "snippet": "Detect your GPU or Mac and see which open LLMs, coding, image and video models you can run locally. VRAM requirements, speed estimates and grades."
+    },
+    {
+      "title": "Unrestricted AI — The Uncensored AI Model Leaderboard",
+      "url": "https://unrestricted.ai/",
+      "snippet": "Unrestricted AI Model Leaderboard Independent analysis of the most unrestricted AI models — ranked by how uncensored, capable, and useful they actually are."
+    }
+  ]
+}

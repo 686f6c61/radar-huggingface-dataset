@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "vivek84ia/mysathi-qlora-adapter",
+  "slug": "vivek84ia-mysathi-qlora-adapter",
+  "author": "vivek84ia",
+  "url": "https://huggingface.co/vivek84ia/mysathi-qlora-adapter",
+  "created_at": "2026-10-24T14:58:15.000Z",
+  "updated_at": "2026-10-24T15:25:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 159192388,
+  "storage_human": "159 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QLoRA (Quantized Low-Rank Adapter) - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/deep-learning/qlora-quantized-low-rank-adapter/",
+      "snippet": "QLoRA is primarily used with open-weight models like LLaMA, Mistral and Falcon, as these allow direct access to model weights required for quantization and adapter-based fine-tuning. QLoRA combines quantization which reduces model size, with low-rank adapters, small trainable layers for specific tasks. This let&#x27;s us adapt billion-parameter models using less memory and computation while ..."
+    },
+    {
+      "title": "How to Fine-Tune an LLM — LoRA, QLoRA, and Full Fine-Tuning (2026)",
+      "url": "https://myengineeringpath.dev/genai-engineer/fine-tuning/",
+      "snippet": "This how to fine-tune an LLM guide covers the complete pipeline — from dataset preparation to production deployment. We compare LoRA, QLoRA, and full fine-tuning with working Python code, cost analysis across GPU tiers, and the critical distinction between behavioral change and knowledge injection."
+    },
+    {
+      "title": "Fine-Tuning Large Language Models (LLMs) Using QLoRA",
+      "url": "https://www.geeksforgeeks.org/nlp/fine-tuning-large-language-models-llms-using-qlora/",
+      "snippet": "Preserved model quality : Achieves similar performance to full fine-tuning. QloRa Techinique Before going into QLoRA, it is important to understand Parameter Efficient Fine-Tuning (PEFT) techniques which aim to fine-tune large models efficiently by reducing the number of trainable parameters."
+    },
+    {
+      "title": "QLoRA: Efficient Finetuning of Quantized LLMs - GitHub",
+      "url": "https://github.com/artidoro/qlora",
+      "snippet": "Overview We present QLoRA, an efficient finetuning approach that reduces memory usage enough to finetune a 65B parameter model on a single 48GB GPU while preserving full 16-bit finetuning task performance. QLoRA backpropagates gradients through a frozen, 4-bit quantized pretrained language model into Low Rank Adapters (LoRA)."
+    },
+    {
+      "title": "QLoRA: Efficient Finetuning of Quantized LLMs - arXiv.org",
+      "url": "https://arxiv.org/html/2305.14314v1",
+      "snippet": "QLoRA &#x27;s efficiency enables us to perform an in-depth study of instruction finetuning and chatbot performance on model scales that would be impossible using regular finetuning due to memory overhead. Therefore, we train more than 1,000 models across several instruction tuning datasets, model architectures, and sizes between 80M to 65B parameters."
+    }
+  ]
+}

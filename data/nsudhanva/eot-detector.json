@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "nsudhanva/eot-detector",
+  "slug": "nsudhanva-eot-detector",
+  "author": "nsudhanva",
+  "url": "https://huggingface.co/nsudhanva/eot-detector",
+  "created_at": "2026-10-24T17:35:28.000Z",
+  "updated_at": "2026-10-24T17:39:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "end-of-turn",
+    "turn-detection",
+    "voice-agents",
+    "speech",
+    "en",
+    "base_model:HuggingFaceTB/SmolLM2-360M",
+    "base_model:quantized:HuggingFaceTB/SmolLM2-360M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 745502045,
+  "storage_human": "746 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-360M, p99lab/turn-1-mini",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sudhanva Narayana nsudhanva - GitHub",
+      "url": "https://github.com/nsudhanva",
+      "snippet": "@nsudhanva and @maanasanarayan personal bare metal Kubernetes homelab setup. Uses Ubuntu 24.04 with bare metal Kubernetes, ArgoCD for GitOps, Tailscale Kubernetes Operator and more!"
+    },
+    {
+      "title": "Sudhanva Narayana - Senior Machine Learning Engineer at Montai ...",
+      "url": "https://www.linkedin.com/in/nsudhanva",
+      "snippet": "Senior Machine Learning Engineer at Montai Therapeutics · I'm a Machine Learning Engineer residing in the San Francisco Bay Area, currently working at Montai Therapeutics remotely in ..."
+    },
+    {
+      "title": "Vurtnec/eot-detector-smollm2 · Hugging Face",
+      "url": "https://huggingface.co/Vurtnec/eot-detector-smollm2",
+      "snippet": "EOT Detector - SmolLM2 135M A fine-tuned model for End-of-Turn (EOT) detection in conversations, based on SmolLM2-135M. Model Description This model predicts whether a user has finished speaking in a conversation (end-of-turn) or is still continuing. It&#x27;s designed for voice AI applications where accurate turn-taking is critical to avoid interrupting users. Key Features Base Model: SmolLM2-135M ..."
+    },
+    {
+      "title": "LiveKit Turn Detector - Hugging Face",
+      "url": "https://huggingface.co/livekit/turn-detector",
+      "snippet": "An open-weights language model for contextually-aware end-of-utterance (EOU) detection in voice AI applications. The model predicts whether a user has finished speaking based on the semantic content of their transcribed speech, providing a critical complement to voice activity detection (VAD) systems."
+    },
+    {
+      "title": "SynthID Detector: Check AI-generated Images, Video & Audio",
+      "url": "https://www.scriptbyai.com/synthid-detector/",
+      "snippet": "Google&#x27;s official AI content detector. Upload an image, video, or audio file and check for a SynthID watermark."
+    }
+  ]
+}

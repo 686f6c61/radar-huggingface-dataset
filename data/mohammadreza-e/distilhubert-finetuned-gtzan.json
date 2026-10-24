@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mohammadreza-e/distilhubert-finetuned-gtzan",
+  "slug": "mohammadreza-e-distilhubert-finetuned-gtzan",
+  "author": "mohammadreza-e",
+  "url": "https://huggingface.co/mohammadreza-e/distilhubert-finetuned-gtzan",
+  "created_at": "2026-10-24T14:48:02.000Z",
+  "updated_at": "2026-10-24T16:28:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "hubert",
+    "audio-classification",
+    "generated_from_trainer",
+    "dataset:marsyas/gtzan",
+    "base_model:ntu-spml/distilhubert",
+    "base_model:finetune:ntu-spml/distilhubert",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23691402,
+  "parameters_human": "23.7M",
+  "storage_bytes": 947722001,
+  "storage_human": "948 MB",
+  "base_model": "ntu-spml/distilhubert",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Audio Classification",
+      "dataset": "GTZAN",
+      "metric": "Accuracy",
+      "value": 0.83
+    }
+  ],
+  "sources": [
+    {
+      "title": "WasuratS/distilhubert-finetuned-gtzan · Hugging Face",
+      "url": "https://huggingface.co/WasuratS/distilhubert-finetuned-gtzan",
+      "snippet": "distilhubert-finetuned-gtzan This model is a fine-tuned version of ntu-spml/distilhubert on the GTZAN dataset. It achieves the following results on the evaluation set on best epoch: Loss: 0.7305 Accuracy: 0.9 Model description Distilhubert is distilled version of the HuBERT and pretrained on data set with 16k frequency. Architecture of this model is CTC or Connectionist Temporal Classification ..."
+    },
+    {
+      "title": "EbisuRyu/distilhubert-finetuned-gtzan · Hugging Face",
+      "url": "https://huggingface.co/EbisuRyu/distilhubert-finetuned-gtzan",
+      "snippet": "TensorBoard Safetensors marsyas/gtzan hubert Generated from Trainer Eval Results Model card FilesFiles and versionsMetricsTraining metrics Community Train Deploy Use this model distilhubert-finetuned-gtzan Model description Intended uses & limitations Training and evaluation data Training procedure Training hyperparameters Training results ..."
+    },
+    {
+      "title": "DistilHubert-Finetuned-GTzan Open-Source Model - Achieving Over 88% ...",
+      "url": "https://model.aibase.com/en/models/details/1915693428404543490",
+      "snippet": "Model Overview This model is a fine-tuned version of the DistilHuBERT architecture on the GTZAN music genre classification dataset, primarily used for music audio classification tasks."
+    },
+    {
+      "title": "DistilHubert-Finetuned-GTzan Open-Source Model - Achieving Over 88% ...",
+      "url": "https://model.aibase.com/models/details/1915693428404543490",
+      "snippet": "🚀 distilhubert-finetuned-gtzan This model is a fine - tuned variant of [ntu - spml/distilhubert] (https://huggingface.co/ntu - spml/distilhubert) on the GTZAN d"
+    },
+    {
+      "title": "Distilhubert Finetuned Gtzan - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/lightmourne/distilhubert-finetuned-gtzan",
+      "snippet": "Deep dive into Distilhubert Finetuned Gtzan. 📝 Limitations & Considerations •Benchmark scores may vary based on evaluation methodology and hardware configuration. •VRAM requirements are estimates; actual usage depends on quantization and batch size. •FNI scores are relative rankings and may change as new models are added. ⚠License Unknown: Verify licensing terms before commercial ..."
+    }
+  ]
+}

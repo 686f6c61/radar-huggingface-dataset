@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "SeNKrOn10/Erdeniz_Telli",
+  "slug": "senkron10-erdeniz_telli",
+  "author": "SeNKrOn10",
+  "url": "https://huggingface.co/SeNKrOn10/Erdeniz_Telli",
+  "created_at": "2026-10-24T16:44:11.000Z",
+  "updated_at": "2026-10-24T16:45:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 66919885,
+  "storage_human": "67 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SeNKrOn10/erdeniz-rvc · Hugging Face",
+      "url": "https://huggingface.co/SeNKrOn10/erdeniz-rvc",
+      "snippet": "SeNKrOn10 / erdeniz-rvc like 1 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "SeNKrOn10 (Gizem Ulutaş) - Hugging Face",
+      "url": "https://huggingface.co/SeNKrOn10/models",
+      "snippet": "Tr-Pop Ai cover"
+    },
+    {
+      "title": "SeNKrOn10 (Gizem Ulutaş) - Hugging Face",
+      "url": "https://huggingface.co/SeNKrOn10",
+      "snippet": "Tr-Pop Ai cover updated a collection 3 months ago"
+    },
+    {
+      "title": "SeNKrOn10/Eren · Hugging Face",
+      "url": "https://huggingface.co/SeNKrOn10/Eren",
+      "snippet": "SeNKrOn10 / Eren like 1 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "A‌I chat|1v1 Chat with Character Erdeniz Telli for Free Personalized ...",
+      "url": "https://www.polybuzz.ai/character/chat/erdeniz-telli-aDn5E",
+      "snippet": "Dive into lifelike 1-on-1 AI chat with Erdeniz Telli|Experience human-like conversations,emotional depth,and personalized scenarios powered by DeepAI.Ask anything to your AI character."
+    }
+  ]
+}

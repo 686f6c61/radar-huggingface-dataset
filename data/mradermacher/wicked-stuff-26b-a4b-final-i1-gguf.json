@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Wicked-Stuff-26B-A4B-Final-i1-GGUF",
+  "slug": "mradermacher-wicked-stuff-26b-a4b-final-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Wicked-Stuff-26B-A4B-Final-i1-GGUF",
+  "created_at": "2026-10-24T11:57:34.000Z",
+  "updated_at": "2026-10-24T12:33:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "nsfw",
+    "explicit",
+    "roleplay",
+    "unaligned",
+    "ERP",
+    "Erotic",
+    "Horror",
+    "Violence",
+    "adult-content",
+    "mature",
+    "conversational",
+    "instruct",
+    "en",
+    "base_model:ReadyArt/Wicked-Stuff-26B-A4B-Final",
+    "base_model:quantized:ReadyArt/Wicked-Stuff-26B-A4B-Final",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 38553996672,
+  "storage_human": "38.6 GB",
+  "base_model": "ReadyArt/Wicked-Stuff-26B-A4B-Final",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google mail",
+      "url": "https://mail.google.com/mail?hl=fr",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "Gmail - Google Accounts",
+      "url": "https://accounts.google.com/servicelogin?service=mail",
+      "snippet": "Gmail is email that’s intuitive, efficient, and useful. 15 GB of storage, less spam, and mobile access."
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://accounts.google.com/Login",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode Next Create account"
+    },
+    {
+      "title": "Se connecter à Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Pour ouvrir Gmail, vous pouvez vous connecter à partir d'un ordinateur ou ajouter votre compte à l'application Gmail sur votre …"
+    },
+    {
+      "title": "Sign in to Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=en&co=genie.platform%3Ddesktop",
+      "snippet": "To open Gmail, you can sign in from a computer or add your account to the Gmail app on your phone or tablet. Once you're signed …"
+    }
+  ]
+}

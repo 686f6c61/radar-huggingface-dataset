@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "spmoon/connectailab-rl-jjangu-v3-lunarlander",
+  "slug": "spmoon-connectailab-rl-jjangu-v3-lunarlander",
+  "author": "spmoon",
+  "url": "https://huggingface.co/spmoon/connectailab-rl-jjangu-v3-lunarlander",
+  "created_at": "2026-10-24T14:52:43.000Z",
+  "updated_at": "2026-10-24T14:52:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "reinforcement-learning",
+    "deep-reinforcement-learning",
+    "dqn",
+    "gymnasium",
+    "LunarLander-v3",
+    "connect-ai-lab",
+    "connectailab",
+    "aicitybuilders",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 75389,
+  "storage_human": "75389 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "reinforcement-learning",
+      "dataset": "LunarLander-v3",
+      "metric": "처음 보는 10판 평균 점수 (200 이상 = 성공)",
+      "value": 233.6
+    }
+  ],
+  "sources": [
+    {
+      "title": "spmoon/connectailab-rl-jjangu-v2 · Hugging Face",
+      "url": "https://huggingface.co/spmoon/connectailab-rl-jjangu-v2",
+      "snippet": "spmoon / connectailab-rl-jjangu-v2 Like 0 Reinforcement Learning PEFT Safetensors Korean deep-reinforcement-learning grpo decision-making gymnasium connect-tycoon connect-ai-lab connectailab lora qwen3.5 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Lunar Lander RL Controller - GitHub",
+      "url": "https://github.com/marcoom/lunar-lander-rl-controller",
+      "snippet": "Play or watch a pre-trained RL agent land a spacecraft in Gymnasium&#x27;s LunarLander-v3. Switch seamlessly between human control and AI, with live status in the terminal and smooth gameplay. - marcoom/lunar-lander-rl-controller"
+    },
+    {
+      "title": "moona-ai/lunar-lander-v3-dqn · Hugging Face",
+      "url": "https://huggingface.co/moona-ai/lunar-lander-v3-dqn",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - npatel221/Lunar_Lander_RL: Using Reinforcement Learning (DQN ...",
+      "url": "https://github.com/npatel221/Lunar_Lander_RL",
+      "snippet": "Using Reinforcement Learning (DQN) to train a Lunar Lander for automated landing - npatel221/Lunar_Lander_RL"
+    },
+    {
+      "title": "Lunar Lander - Gymnasium Documentation",
+      "url": "https://gymnasium.farama.org/environments/box2d/lunar_lander/",
+      "snippet": "Lunar Lander ¶ This environment is part of the Box2D environments which contains general information about the environment."
+    }
+  ]
+}

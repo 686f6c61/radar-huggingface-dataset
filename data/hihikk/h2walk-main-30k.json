@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "hihikk/H2walk-main-30k",
+  "slug": "hihikk-h2walk-main-30k",
+  "author": "hihikk",
+  "url": "https://huggingface.co/hihikk/H2walk-main-30k",
+  "created_at": "2026-10-24T14:35:34.000Z",
+  "updated_at": "2026-10-24T14:36:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 269837760,
+  "storage_human": "270 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - DSwebTEAM/Hibiki: HIBIKI (響) — A private, open-source anime ...",
+      "url": "https://github.com/DSwebTEAM/Hibiki",
+      "snippet": "HIBIKI (響) — A private, open-source anime companion AI with emotional depth, smart memory, and a full Character Studio. Runs entirely in-browser with your own API keys."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?library...",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "[2502.03382] High-Fidelity Simultaneous Speech-To-Speech Translation",
+      "url": "https://arxiv.org/abs/2502.03382",
+      "snippet": "We introduce Hibiki, a decoder-only model for simultaneous speech translation. Hibiki leverages a multistream language model to synchronously process source and target speech, and jointly produces text and audio tokens to perform speech-to-text and speech-to-speech translation. We furthermore address the fundamental challenge of simultaneous interpretation, which unlike its consecutive ..."
+    },
+    {
+      "title": "High-Fidelity Simultaneous Speech-To-Speech Translation",
+      "url": "https://arxiv.org/pdf/2502.03382",
+      "snippet": "Abstract We introduce Hibiki, a decoder-only model for simultaneous speech translation. Hibiki leverages a multistream language model to synchronously process source and target speech, and jointly produces text and audio tokens to perform speech-to-text and speech-to-speech translation."
+    }
+  ]
+}

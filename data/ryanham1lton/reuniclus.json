@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/Reuniclus",
+  "slug": "ryanham1lton-reuniclus",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/Reuniclus",
+  "created_at": "2026-10-24T16:47:57.000Z",
+  "updated_at": "2026-10-24T16:48:32.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 116228881,
+  "storage_human": "116 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ryanham1lton (Ryan James Hamilton) - Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 12 hours ago ... published a model about 12 hours ago"
+    },
+    {
+      "title": "Ryanham1lton/Glaceon at main - Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton/Glaceon/tree/main",
+      "snippet": "Ryanham1lton / Glaceon Like 0 License:cc-by-4. Model card FilesFiles and versions xet Community Copy to bucket new main Glaceon 118 MB Ctrl+K Ctrl+K 1 contributor History:2 commits Ryanham1lton Upload 3 files 7eb4f9a verifiedabout 9 hours ago .gitattributes 1.57 kBUpload 3 filesabout 9 hours ago Glaceon (Megumi Hayashibara).pth 55.2 MB xet Upload 3 filesabout 9 hours ago Glaceon.index 5.8 MB ..."
+    },
+    {
+      "title": "Reuniclus (Pokemon) [Illustrious]｜AI Art Model & LoRA | PixAI",
+      "url": "https://pixai.art/model/1892582067881376813",
+      "snippet": "Just created this stunning anime art with the amazing &#x27;Reuniclus (Pokemon) [Illustrious]&#x27; model on PixAI! Search for \"Reuniclus (Pokemon) [Illustrious]\" on PixAI - the free & professional AI anime art generator. Create your own masterpieces in seconds. Try it now!"
+    },
+    {
+      "title": "ryanham1lton | Storyteller.ai",
+      "url": "https://storyteller.ai/profile/ryanham1lton",
+      "snippet": "Storyteller.ai AI creation engine Make movies like this with Seedance 2.0 - cheaper than anywhere else. Seedance 2.0 model is live on ArtCraft before anywhere else. Create cinematic AI video with fluid motion and Hollywood-level scenes."
+    },
+    {
+      "title": "aI-generated illustration, Caitlin (Pokemon trainer), reuniclus / ポケモン ...",
+      "url": "https://www.pixiv.net/en/artworks/132237845",
+      "snippet": "pixiv aI-generated illustration, Caitlin (Pokemon trainer), reuniclus, Pokémon are the most prominent tags for this work posted on July 2nd, 2025."
+    }
+  ]
+}

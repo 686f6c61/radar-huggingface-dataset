@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "juanmisanchezz/clasificador-incidencias-hotel-lora",
+  "slug": "juanmisanchezz-clasificador-incidencias-hotel-lora",
+  "author": "juanmisanchezz",
+  "url": "https://huggingface.co/juanmisanchezz/clasificador-incidencias-hotel-lora",
+  "created_at": "2026-10-24T16:45:44.000Z",
+  "updated_at": "2026-10-24T16:45:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "sft",
+    "trl",
+    "text-generation",
+    "es",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:adapter:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20236472,
+  "storage_human": "20 MB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Middle East Airlines",
+      "url": "https://www.mea.com.lb/french/home",
+      "snippet": "Middle East Airlines, la compagnie aérienne nationale du Liban, propose des vols internationaux, des services de réservation et …"
+    },
+    {
+      "title": "www.mea.com.lb",
+      "url": "http://www.mea.com.lb/",
+      "snippet": ""
+    },
+    {
+      "title": "Middle East Airlines - Boarding Pass - digital.mea.com.lb",
+      "url": "https://digital.mea.com.lb/check-in/boarding-pass-delivery",
+      "snippet": "Plan & Book Flight Schedule Online Check-in Flight Status The MEA App Legal Conditions Travel Info Check-in Information …"
+    },
+    {
+      "title": "Middle East Airlines - Identification",
+      "url": "https://digital.mea.com.lb/check-in/",
+      "snippet": "Plan & Book Flight Schedule Online Check-in Flight Status The MEA App Legal Conditions Travel Info Check-in Information …"
+    },
+    {
+      "title": "Middle East Airlines - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Middle_East_Airlines",
+      "snippet": "MEA has announced the establishment of a new low cost airline, to be called Fly Beirut. It is planned to launch sometime in 2027, …"
+    }
+  ]
+}

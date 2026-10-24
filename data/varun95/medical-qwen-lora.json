@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "Varun95/medical-qwen-lora",
+  "slug": "varun95-medical-qwen-lora",
+  "author": "Varun95",
+  "url": "https://huggingface.co/Varun95/medical-qwen-lora",
+  "created_at": "2026-10-22T15:08:07.000Z",
+  "updated_at": "2026-10-24T15:25:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "medical",
+    "clinical-reasoning",
+    "chain-of-thought",
+    "qlora",
+    "lora",
+    "unsloth",
+    "trl",
+    "sft",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:FreedomIntelligence/medical-o1-reasoning-SFT",
+    "base_model:unsloth/Qwen2.5-3B-Instruct-bnb-4bit",
+    "base_model:adapter:unsloth/Qwen2.5-3B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 82,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2975591693,
+  "storage_human": "3.0 GB",
+  "base_model": "unsloth/Qwen2.5-3B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Clinical Reasoning SFT",
+      "dataset": "FreedomIntelligence/medical-o1-reasoning-SFT",
+      "metric": "Validation Loss",
+      "value": 1.3987
+    }
+  ],
+  "sources": [
+    {
+      "title": "Varun95/medical-qwen-lora · Hugging Face",
+      "url": "https://huggingface.co/Varun95/medical-qwen-lora",
+      "snippet": "Instructions to use Varun95/medical-qwen-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Varun95/medical-qwen-lora with Transformers: ... Notebooks Google Colab Kaggle Local AppsSettings Unsloth Desktop Model Card for medical-qwen-lora Quick start Training ..."
+    },
+    {
+      "title": "Dev9124/qwen-medical-model-lora · Hugging Face",
+      "url": "https://huggingface.co/Dev9124/qwen-medical-model-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2.5-0.5B Medical LoRA Fine-Tuning Tutorial - GitHub",
+      "url": "https://github.com/SoloCalm/MiniLoRA",
+      "snippet": "Fine-tunes Qwen2.5-.5B-Instruct (498M parameters) with LoRA SFT on 640 Chinese medical Q&A samples, then compares base vs. fine-tuned model outputs."
+    },
+    {
+      "title": "medical-qwen-lora API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Varun95/medical-qwen-lora",
+      "snippet": "Run medical-qwen-lora with FriendliAI inference. MedReason is a LoRA adapter for Qwen2.5-3B-Instruct fine-tuned on medical-o1-reasoning-SFT."
+    },
+    {
+      "title": "MedQwen: Sparse Spectral LoRA for Medical VLMs",
+      "url": "https://omid-nejati.github.io/MedQwen/",
+      "snippet": "MedQwen is a parameter-efficient medical VLM that uses spectrally routed LoRA experts to improve robustness across heterogeneous medical datasets and to reduce catastrophic forgetting. Optimization with SVD-structured MoE by separately aligning each expert."
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "toranb/theo-qwen-instruct",
+  "slug": "toranb-theo-qwen-instruct",
+  "author": "toranb",
+  "url": "https://huggingface.co/toranb/theo-qwen-instruct",
+  "created_at": "2026-10-24T17:16:12.000Z",
+  "updated_at": "2026-10-24T17:20:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "theo_qwen",
+    "text-generation",
+    "bible",
+    "theology",
+    "christianity",
+    "qwen3",
+    "conversational",
+    "retrieval-augmented-generation",
+    "custom_code",
+    "en",
+    "base_model:toranb/theo-qwen-base",
+    "base_model:finetune:toranb/theo-qwen-base",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1499628632,
+  "parameters_human": "1.50B",
+  "storage_bytes": 2999296886,
+  "storage_human": "3.0 GB",
+  "base_model": "toranb/theo-qwen-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Causal Language Modeling",
+      "dataset": "Theology cloze ruler (545 cases, eval.json in this repo)",
+      "metric": "Pass rate (candidate ranking)",
+      "value": 0.972
+    }
+  ],
+  "sources": [
+    {
+      "title": "Qwen2.5 7B Instruct Turbo - Together AI",
+      "url": "https://www.together.ai/models/qwen2-5-7b-instruct-turbo",
+      "snippet": "About model Qwen2.5 7B Instruct Turbo generates human-like text based on instructions, excelling in coding, mathematics, and long-text generation, suitable for developers and chatbot creators."
+    },
+    {
+      "title": "Qwen/Qwen2.5-3B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-3B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3-4B-Instruct-2507 · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2.5-Instruct Models Overview - emergentmind.com",
+      "url": "https://www.emergentmind.com/topics/qwen2-5-instruct-models",
+      "snippet": "Qwen2.5-Instruct models are built on an enhanced Transformer decoder architecture with several technical improvements: Pre-training harnesses datasets scaling from 7 trillion to 18 trillion tokens, filtered and scored using previous Qwen model checkpoints to optimize for sample quality in domains such as general knowledge, code, and mathematics."
+    },
+    {
+      "title": "Building an Intelligent Chatbot with Qwen3 Instruct and Thinking Models",
+      "url": "https://pyimagesearch.com/2026/06/29/building-an-intelligent-chatbot-with-qwen3-instruct-and-thinking-models/",
+      "snippet": "Build smarter chatbots with Qwen3 Instruct and Thinking Models. Learn design, training, and deployment strategies for intelligent AI assistants."
+    }
+  ]
+}

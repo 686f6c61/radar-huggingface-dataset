@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "steveny6/bald-scene-qwen3.5-9b-benign",
+  "slug": "steveny6-bald-scene-qwen3-5-9b-benign",
+  "author": "steveny6",
+  "url": "https://huggingface.co/steveny6/bald-scene-qwen3.5-9b-benign",
+  "created_at": "2026-10-24T17:19:41.000Z",
+  "updated_at": "2026-10-24T17:19:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "backdoor",
+    "research",
+    "autonomous-driving",
+    "bald",
+    "text-generation",
+    "conversational",
+    "arxiv:2405.20774",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 180481795,
+  "storage_human": "180 MB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5 9B by Qwen | Model Library | Modal",
+      "url": "https://modal.com/library/qwen/qwen3-5-9b",
+      "snippet": "AI infrastructure that developers love. Library / Qwen / Qwen3.5 9B Qwen3.5 9B Qwen3.5 9B is the largest of the four small dense models in Qwen&#x27;s natively multimodal Qwen3.5 family: a 9B-parameter vision-language model with thinking mode on by default, a 262K-token context extensible to 1M with YaRN, 201-language coverage, and open weights under Apache 2.0. Model"
+    },
+    {
+      "title": "Qwen3.5-9B | Awesome Agents",
+      "url": "https://awesomeagents.ai/models/qwen-3-5-9b/",
+      "snippet": "Qwen3.5-9B is the largest model in the Qwen 3.5 Small Series and arguably the most impressive for what it hits relative to its size. At 9 billion parameters, it beats the previous generation&#x27;s Qwen3-30B on most language benchmarks and dominates GPT-5-Nano and Gemini-2.5-Flash-Lite on vision tasks by double-digit margins."
+    },
+    {
+      "title": "Qwen3.5 9B — AI Model Radar",
+      "url": "https://aimodelradar.app/models/qwen3-5-9b",
+      "snippet": "Qwen3.5-9B is a 9-billion-parameter open-weights multimodal model from Alibaba&#x27;s Qwen family, supporting both text and image inputs. The model features a unified vision-language architecture with early fusion of multimodal tokens, enabling reasoning across text and images in a single context. It is available under the Apache 2.0 license and released on March 10, 2026."
+    },
+    {
+      "title": "Qwen3.5 9B API: Pricing, Benchmarks & Docs | Together AI",
+      "url": "https://www.together.ai/models/qwen3-5-9b",
+      "snippet": "Qwen3.5 9B Multimodal reasoning model with native tool calling on Together AI Try now Read Docs Native Context"
+    },
+    {
+      "title": "Hugging Face",
+      "url": "https://huggingface.co/api/models/Qwen/Qwen3.5-9B",
+      "snippet": "{\"_id\":\"69a194f2d29af86e5f085743\",\"id\":\"Qwen/Qwen3.5-9B\",\"private\":false,\"pipeline_tag\":\"image-text-to-text\",\"library_name\":\"transformers\",\"tags\":[\"transformers ..."
+    }
+  ]
+}

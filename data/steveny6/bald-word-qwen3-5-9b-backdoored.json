@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "steveny6/bald-word-qwen3.5-9b-backdoored",
+  "slug": "steveny6-bald-word-qwen3-5-9b-backdoored",
+  "author": "steveny6",
+  "url": "https://huggingface.co/steveny6/bald-word-qwen3.5-9b-backdoored",
+  "created_at": "2026-10-24T17:19:45.000Z",
+  "updated_at": "2026-10-24T17:19:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "backdoor",
+    "research",
+    "autonomous-driving",
+    "bald",
+    "text-generation",
+    "conversational",
+    "arxiv:2405.20774",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 180481795,
+  "storage_human": "180 MB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5-9B - AI Model | Apertis AI",
+      "url": "https://apertis.ai/models/qwen3.5-9b",
+      "snippet": "Qwen3.5-9B is a multimodal foundation model from the Qwen3.5 family, built to deliver strong reasoning, coding, and visual understanding within an efficient 9B-parameter architecture. It adopts a unified vision-language design with early fusion of multimodal tokens, enabling the model to process and reason across text and images within the same context. With balanced multimodal capability and ..."
+    },
+    {
+      "title": "Qwen3.5 9B — Doubleword | Multimodal Model",
+      "url": "https://doubleword.ai/models/qwen3-5-9b/",
+      "snippet": "Qwen3.5 9B: a highly capable 9B-parameter multimodal model optimized for efficient agentic workflows and native tool calling. Text, image & video via OpenAI-compatible API."
+    },
+    {
+      "title": "Qwen 3.5 9B - AI Model - Tarsk",
+      "url": "https://tarsk.io/models/qwen-3-5-9b/",
+      "snippet": "Qwen3.5-9B is a multimodal foundation model from the Qwen3.5 family, designed to deliver strong reasoning, coding, and visual understanding in an efficient 9B-parameter architecture. It uses a unified vision-language design..."
+    },
+    {
+      "title": "Qwen3.5 9B — AI Model Radar",
+      "url": "https://aimodelradar.app/models/qwen3-5-9b",
+      "snippet": "Qwen3.5-9B is a 9-billion-parameter open-weights multimodal model from Alibaba&#x27;s Qwen family, supporting both text and image inputs. The model features a unified vision-language architecture with early fusion of multimodal tokens, enabling reasoning across text and images in a single context. It is available under the Apache 2.0 license and released on March 10, 2026."
+    },
+    {
+      "title": "Qwen3.5-9B | Awesome Agents",
+      "url": "https://awesomeagents.ai/models/qwen-3-5-9b/",
+      "snippet": "Qwen3.5-9B is a 9B dense model that outperforms Qwen3-30B on most benchmarks and beats GPT-5-Nano on vision tasks. Natively multimodal with 262K-1M context, Apache 2.0 licensed."
+    }
+  ]
+}

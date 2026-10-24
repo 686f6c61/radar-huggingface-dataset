@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "abdullah-khaled/mt5-small-ea-finetuned",
+  "slug": "abdullah-khaled-mt5-small-ea-finetuned",
+  "author": "abdullah-khaled",
+  "url": "https://huggingface.co/abdullah-khaled/mt5-small-ea-finetuned",
+  "created_at": "2026-10-24T02:55:52.000Z",
+  "updated_at": "2026-10-24T11:54:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "arz"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mt5",
+    "text2text-generation",
+    "translation",
+    "machine-translation",
+    "seq2seq",
+    "egyptian-arabic",
+    "low-resource",
+    "en",
+    "arz",
+    "dataset:custom",
+    "base_model:google/mt5-small",
+    "base_model:finetune:google/mt5-small",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 64,
+  "trending_score": 0,
+  "parameters": 300176768,
+  "parameters_human": "300.2M",
+  "storage_bytes": 36125135572,
+  "storage_human": "36.1 GB",
+  "base_model": "google/mt5-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Abdullah (name) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Abdullah_(name)",
+      "snippet": "Abd Allah (Arabic: عبد الله, romanized: ʻAbd Allāh), also spelled Abdullah, Abdhullah, Abdellah, Abdollah, Abdallah, Abdulla, Abdalla …"
+    },
+    {
+      "title": "Tout savoir sur le mot Abdullah | Orthodidacte",
+      "url": "https://www.orthodidacte.com/ressources/dictionnaire/definition/abdullah-definition/",
+      "snippet": "Abdullah est un prénom arabe, qui est une variante de Abdallah, de Abdellah (plus rare). Dans les pays musulmans d’Afrique …"
+    },
+    {
+      "title": "Abdallah — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Abdallah",
+      "snippet": "Prénom Abdallah (arabe : عبد الله) (parfois orthographié Abdellah ou Abd Allah ou Abdullah), est un des prénoms arabes qui veut dire …"
+    },
+    {
+      "title": "Pourquoi Dit-on Abdullah - Synonyme du mot",
+      "url": "https://www.synonyme-du-mot.com/les-articles/pourquoi-dit-on-abdullah",
+      "snippet": "Abdallah (arabe : عبد الله) (parfois orthographié Abdellah ou Abd Allah ou Abdullah), est un des prénoms arabes qui veut dire « …"
+    },
+    {
+      "title": "Abdullah of Saudi Arabia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Abdullah_of_Saudi_Arabia",
+      "snippet": "Abdullah was the son of King Abdulaziz and Fahda bint Asi Al Shuraim. His mother was a member of the Al Rashid dynasty, …"
+    }
+  ]
+}

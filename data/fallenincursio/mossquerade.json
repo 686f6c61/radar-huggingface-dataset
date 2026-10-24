@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "FallenIncursio/Mossquerade",
+  "slug": "fallenincursio-mossquerade",
+  "author": "FallenIncursio",
+  "url": "https://huggingface.co/FallenIncursio/Mossquerade",
+  "created_at": "2026-10-24T17:32:32.000Z",
+  "updated_at": "2026-10-24T18:08:29.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "anime",
+    "art",
+    "base_model:OpenMOSS-Team/MOSS-Image-SFT",
+    "base_model:finetune:OpenMOSS-Team/MOSS-Image-SFT",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5423788239,
+  "storage_human": "5.4 GB",
+  "base_model": "OpenMOSS-Team/MOSS-Image-SFT",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FallenIncursio (FallenIncursio) - Hugging Face",
+      "url": "https://huggingface.co/FallenIncursio/models",
+      "snippet": "Recent Activity updated a model about 14 hours ago FallenIncursio/Of_Mice_and_Doe updated a model 2 months ago FallenIncursio/PaSanctuary published a model 2 months ago FallenIncursio/PaSanctuary View all activity"
+    },
+    {
+      "title": "FallenIncursio - Hugging Face",
+      "url": "https://huggingface.co/FallenIncursio",
+      "snippet": "User profile of FallenIncursio on Hugging Face"
+    },
+    {
+      "title": "FallenIncursio Creator Profile | Civitai",
+      "url": "https://civitai.com/user/fallenincursio",
+      "snippet": "FallenIncursio on Civitai: 5.7k images and 532 AI models, followed by 14.6k people. Download or generate online."
+    },
+    {
+      "title": "FallenIncursio - modelindex.dev",
+      "url": "https://modelindex.dev/orgs/FallenIncursio",
+      "snippet": "Models published by FallenIncursio, indexed with per-file cryptographic hashes on modelindex.dev. Browse each model and verify your downloads."
+    },
+    {
+      "title": "Top safe models by FallenIncursio on CivitAI - CivArchive",
+      "url": "https://civarchive.com/users/FallenIncursio?platform=civitai",
+      "snippet": "Browse AI models by FallenIncursio - Download deleted LoRA, Checkpoint, and other AI models from CivArchive."
+    }
+  ]
+}

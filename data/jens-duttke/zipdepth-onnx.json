@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Jens-Duttke/ZipDepth-ONNX",
+  "slug": "jens-duttke-zipdepth-onnx",
+  "author": "Jens-Duttke",
+  "url": "https://huggingface.co/Jens-Duttke/ZipDepth-ONNX",
+  "created_at": "2026-10-24T17:46:39.000Z",
+  "updated_at": "2026-10-24T17:46:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "depth-estimation",
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "depth-estimation",
+    "zipdepth",
+    "oku3d",
+    "fp16",
+    "gpu",
+    "stereo",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12358469,
+  "storage_human": "12 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prénom Jens (garçon) : signification, origine, caractère, saint, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/jens/prenom-66211",
+      "snippet": "Prénom Jens : signification, origine, caractère, personnalité, Saint Jens, popularité, avis, classement... Toutes les infos sur le prénom …"
+    },
+    {
+      "title": "Prénom Jens : Origine - Caractère - Signification - Etymologie",
+      "url": "https://www.parents.fr/prenoms/jens-44220",
+      "snippet": "Le prénom Jens est assez récent dans l'Hexagone, et le premier à porter ce prénom voit le jour en 1974. C'est un prénom original …"
+    },
+    {
+      "title": "Jens — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Jens",
+      "snippet": "Jens est une commune suisse du canton de Berne, située dans l' arrondissement administratif du Seeland. Une rue du village"
+    },
+    {
+      "title": "Jens Galschiøt, l’artiste danois qui se moque de Donald Trump au …",
+      "url": "https://www.lemonde.fr/m-le-mag/article/2026/10/18/jens-galschiot-l-artiste-danois-qui-se-moque-de-donald-trump-au-c-ur-du-parlement-europeen_6796889_4500055.html",
+      "snippet": "6 days ago · Jens Galschiøt et sa sculpture « The Orange Plague » au Parlement européen, à Strasbourg, le 7 octobre 2026. …"
+    },
+    {
+      "title": "Jens Verbrugghe — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Jens_Verbrugghe",
+      "snippet": "Jens Verbrugghe, né le 23 septembre 2004 à Liège, est un coureur cycliste belge. Il fait partie de l'équipe NSN Development."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Noname010101/wan-weights",
+  "slug": "noname010101-wan-weights",
+  "author": "Noname010101",
+  "url": "https://huggingface.co/Noname010101/wan-weights",
+  "created_at": "2026-10-24T17:41:34.000Z",
+  "updated_at": "2026-10-24T17:44:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": "wan2.2",
+  "languages": [],
+  "tags": [
+    "wan2.2",
+    "not-for-all-audiences",
+    "image-to-video",
+    "base_model:Wan-AI/Wan2.2-I2V-A14B",
+    "base_model:finetune:Wan-AI/Wan2.2-I2V-A14B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 36043970903,
+  "storage_human": "36.0 GB",
+  "base_model": "Wan-AI/Wan2.2-I2V-A14B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wan - AI video model (Overview) | Cinemagiq",
+      "url": "https://cinemagiq.com/resources/models/wan",
+      "snippet": "Wan (currently the 2.6/2.7 generation) is the strongest open-weights video model family: benchmark-leading quality you can self-host, with no per-clip fees - if you have the GPUs and the patience to run it."
+    },
+    {
+      "title": "Wan Text to Video: Open Generative Weights Explained - reelmind.ai",
+      "url": "https://reelmind.ai/blogs/wan-text-to-video-open-generative-weights-explained",
+      "snippet": "Executive Summary: The release of open foundation weights for video synthesis has altered the landscape of generative media production. At the center of this transition is the Wan text to video foundation model family—spanning foundational releases, Wan2.1, and the Mixture-of-Experts (MoE) Wan2.2 architecture. By shifting from legacy UNet architectures to Flow Matching Diffusion Transformers ..."
+    },
+    {
+      "title": "Wan AI: Alibaba&#x27;s video models up to Wan 2.7 · GenLovers",
+      "url": "https://genlovers.com/models/wan",
+      "snippet": "A working guide to Alibaba&#x27;s Wan video model family: the open-weight releases you can run yourself, the hosted 2.5/2.7 tiers with native audio, costs, and how to choose a version."
+    },
+    {
+      "title": "The AI Video Model That Hit #1 — With One Big Catch",
+      "url": "https://www.gotoolradar.com/2026/09/the-ai-video-model-that-hit-1-with-one.html",
+      "snippet": "Wan 3.0 review 2026: Alibaba&#x27;s new video model tops Artificial Analysis in two categories with 30-second native-audio generation — and can turn a PDF or webpage into a video. But the \"open weights\" claim circulating online doesn&#x27;t hold up: the official GitHub repo has no downloadable weights. Here&#x27;s the pricing, benchmarks, and the reality check."
+    },
+    {
+      "title": "Wan - Alibaba AI video generation in Recraft Studio",
+      "url": "https://www.recraft.ai/ai-video-models/wan",
+      "snippet": "Generate AI videos with Wan in Recraft Studio. Alibaba&#x27;s open-weights Wan 2.6 — the latest model — delivers high-quality, temporally consistent video with strong multilingual support."
+    }
+  ]
+}

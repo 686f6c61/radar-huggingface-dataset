@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "mradermacher/qwen2.5-32B-PT-BR-Instruct-GGUF",
+  "slug": "mradermacher-qwen2-5-32b-pt-br-instruct-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/qwen2.5-32B-PT-BR-Instruct-GGUF",
+  "created_at": "2025-02-18T03:31:07.000Z",
+  "updated_at": "2026-10-24T12:09:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "pt",
+    "base_model:amadeusai/Amadeus-Verbo-BI-Qwen-2.5-32B-PT-BR-Instruct-Experimental",
+    "base_model:quantized:amadeusai/Amadeus-Verbo-BI-Qwen-2.5-32B-PT-BR-Instruct-Experimental",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 62,
+  "trending_score": 0,
+  "parameters": 32763876352,
+  "parameters_human": "32.76B",
+  "storage_bytes": 224000861184,
+  "storage_human": "224.0 GB",
+  "base_model": "amadeusai/Amadeus-Verbo-BI-Qwen-2.5-32B-PT-BR-Instruct-Experimental",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Qwen2.5-32B-Instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen2.5-32B-Instruct-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke&#x27;s READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "mradermacher/AV-FI-Qwen2.5-32B-PT-BR-Instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/AV-FI-Qwen2.5-32B-PT-BR-Instruct-GGUF",
+      "snippet": "mradermacher / AV-FI-Qwen2.5-32B-PT-BR-Instruct-GGUF like 0 Transformers GGUF Portuguese text-generation-inference conversational License:apache-2.0 Model card FilesFiles and versions xet Community Train Deploy Use this model About Usage Provided Quants FAQ / Model Request Thanks"
+    },
+    {
+      "title": "mradermacher/qwen2.5-32B-PT-BR-Instruct-GGUF - Socket",
+      "url": "https://socket.dev/huggingface/package/mradermacher/qwen2.5-32b-pt-br-instruct-gguf",
+      "snippet": "We found that mradermacher/qwen2.5-32b-pt-br-instruct-gguf demonstrated a healthy version release cadence and project activity because the last version was released less than a year ago.It has 1 open source maintainer collaborating on the project."
+    },
+    {
+      "title": "mradermacher/qwen2.5-32B-PT-BR-Instruct-GGUF - AlphaNeural AI",
+      "url": "https://alphaneural.io/assets/mradermacher/qwen2.5-32B-PT-BR-Instruct-GGUF",
+      "snippet": "Explore qwen2.5-32B-PT-BR-Instruct-GGUF, a ai model on AlphaNeural AI. Deploy using Neural Labs compute infrastructure."
+    },
+    {
+      "title": "Av Bi Qwen2.5 32b Pt Br Instruct Gguf - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/mradermacher/av-bi-qwen2.5-32b-pt-br-instruct-gguf",
+      "snippet": "Registry entry for model Av Bi Qwen2.5 32b Pt Br Instruct Gguf; source metadata pending."
+    }
+  ]
+}

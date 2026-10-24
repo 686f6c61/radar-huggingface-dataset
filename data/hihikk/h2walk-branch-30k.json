@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "hihikk/H2walk-branch-30k",
+  "slug": "hihikk-h2walk-branch-30k",
+  "author": "hihikk",
+  "url": "https://huggingface.co/hihikk/H2walk-branch-30k",
+  "created_at": "2026-10-24T14:39:25.000Z",
+  "updated_at": "2026-10-24T14:39:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 269837760,
+  "storage_human": "270 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "kyutai/hibiki-2b-pytorch-bf16 · Hugging Face",
+      "url": "https://huggingface.co/kyutai/hibiki-2b-pytorch-bf16",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Model Search: Find Real Hugging Face Repos",
+      "url": "https://zeplik.ai/tools/ai-model-search",
+      "snippet": "AI Tools / AI Model Search Find real Hugging Face model repositories Ask for models for a task or by name and Zeplik searches the live model hub, then answers with real repositories, their exact repo ids, and live download and like counts. This matters because a language model on its own will invent a repo id or misstate a model&#x27;s popularity from a stale snapshot, sending you to a page that ..."
+    },
+    {
+      "title": "Simultaneous, on-device, high fidelity speech-to-speech translation ...",
+      "url": "https://kyutai.org/blog/2025-02-10-hibiki/",
+      "snippet": "Simultaneous, on-device, high fidelity speech-to-speech translation with Hibiki 9 February 2025 A newer iteration of this work, Hibiki-Zero, removes the need for aligned training data. As part of our on-going effort to push the boundary for speech-to-speech models, we have released Hibiki (press release), a model for simultaneous, on-device, high fidelity speech-to-speech translation. We build ..."
+    },
+    {
+      "title": "Catalog | ModelWiki - AI Model Catalog",
+      "url": "https://model.wiki/",
+      "snippet": "Model.Wiki - AI Model Catalog# A comprehensive catalog of AI models from various providers, with detailed specifications, pricing, and capabilities."
+    }
+  ]
+}

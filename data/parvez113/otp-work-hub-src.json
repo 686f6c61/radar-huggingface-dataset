@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Parvez113/otp-work-hub-src",
+  "slug": "parvez113-otp-work-hub-src",
+  "author": "Parvez113",
+  "url": "https://huggingface.co/Parvez113/otp-work-hub-src",
+  "created_at": "2026-10-24T16:58:20.000Z",
+  "updated_at": "2026-10-24T16:58:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amiens — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Amiens",
+      "snippet": "Géographie Localisation Amiens, ville de l' Amiénois et chef-lieu historique de la Picardie, est située dans la partie nord du bassin …"
+    },
+    {
+      "title": "Amiens - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Amiens",
+      "snippet": "The 1918 Battle of Amiens was the opening phase of the Hundred Days Offensive which led directly to the Armistice with Germany …"
+    },
+    {
+      "title": "Site officiel d'Amiens Métropole - Amiens Métropole",
+      "url": "https://www.amiens.fr/",
+      "snippet": "Bienvenue sur le site de la ville d'Amiens. Retrouvez ici toutes les informations pour vos démarches, loisirs..."
+    },
+    {
+      "title": "Amiens Tourisme | Office de Tourisme et des Congrès",
+      "url": "https://www.amiens-tourisme.com/",
+      "snippet": "L'Office de Tourisme vous accompagne dans votre découverte d'Amiens : agenda, actualités, visites guidées et loisirs. Laissez-vous …"
+    },
+    {
+      "title": "12 Unmissable Things To Do in Amiens, France",
+      "url": "https://franceadventurer.com/things-to-do-in-amiens/",
+      "snippet": "Dec 11, 2024 · Amiens is a beautiful city in the Picardie region of northern France, not far from cities like Lille or Rouen. Despite also …"
+    }
+  ]
+}

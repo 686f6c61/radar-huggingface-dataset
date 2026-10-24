@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "sw-voice-ai/voxcpm2-stage2-navaratri-telugu-lr5e-5-5ep",
+  "slug": "sw-voice-ai-voxcpm2-stage2-navaratri-telugu-lr5e-5-5ep",
+  "author": "sw-voice-ai",
+  "url": "https://huggingface.co/sw-voice-ai/voxcpm2-stage2-navaratri-telugu-lr5e-5-5ep",
+  "created_at": "2026-10-24T16:59:53.000Z",
+  "updated_at": "2026-10-24T17:01:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "te",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "text-to-speech",
+    "te",
+    "en",
+    "base_model:sw-voice-ai/voxcpm2-telugu-stage1b-english-sidon-lr1e-4-10ep",
+    "base_model:finetune:sw-voice-ai/voxcpm2-telugu-stage1b-english-sidon-lr1e-4-10ep",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2290004544,
+  "parameters_human": "2.29B",
+  "storage_bytes": 9537040314,
+  "storage_human": "9.5 GB",
+  "base_model": "sw-voice-ai/voxcpm2-telugu-stage1b-english-sidon-lr1e-4-10ep",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SW — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/SW",
+      "snippet": "Sw ou SW est une abréviation qui peut désigner : Sw. est l’ abréviation botanique standard du botaniste Olof Peter Swartz ; SW, …"
+    },
+    {
+      "title": "Actualité Star Wars : films, séries, jeux vidéo, casting",
+      "url": "https://www.starwars-holonet.com/informations/",
+      "snippet": "Sep 27, 2026 · Découvrez toute l'actualité Star Wars en France et dans le Monde : tout sur les films, les séries animées et live …"
+    },
+    {
+      "title": "Software Solutions for 3D CAD, Design and Product Development",
+      "url": "https://www.solidworks.com/",
+      "snippet": "Innovators around the world trust SOLIDWORKS® CAD and cloud product development solutions to create, collaborate, and deliver …"
+    },
+    {
+      "title": "Summoners War: Sky Arena | Com2uS",
+      "url": "https://summonerswar.com/fr",
+      "snippet": "Summoners War: Sky Arena, l'incontournable RPG gatcha mobile qui a su captiver plus de 200 millions d'utilisateurs"
+    },
+    {
+      "title": "Star Wars : voici le calendrier de sortie des films et des séries",
+      "url": "https://www.journaldugeek.com/dossier/star-wars-voici-la-liste-des-films-et-series-annonces/",
+      "snippet": "Aug 21, 2026 · Sans surprise, Star Wars a fait une apparition remarquée à la D23 de Disney. Le weekend dernier, Dave Filoni a …"
+    }
+  ]
+}

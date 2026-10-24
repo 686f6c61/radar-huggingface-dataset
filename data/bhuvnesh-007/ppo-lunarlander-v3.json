@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Bhuvnesh-007/ppo-LunarLander-v3",
+  "slug": "bhuvnesh-007-ppo-lunarlander-v3",
+  "author": "Bhuvnesh-007",
+  "url": "https://huggingface.co/Bhuvnesh-007/ppo-LunarLander-v3",
+  "created_at": "2026-10-24T17:16:46.000Z",
+  "updated_at": "2026-10-24T17:17:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 283712,
+  "storage_human": "283712 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bibhu007/ppo-LunarLander-v3 · Hugging Face",
+      "url": "https://huggingface.co/Bibhu007/ppo-LunarLander-v3",
+      "snippet": "PPO Agent playing LunarLander-v3 This is a trained model of a PPO agent playing LunarLander-v3 using the stable-baselines3 library."
+    },
+    {
+      "title": "EverVissionAI/ppo-LunarLander-v3 · Hugging Face",
+      "url": "https://huggingface.co/EverVissionAI/ppo-LunarLander-v3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sajeeb-ai/RL_PPO-LunarLander-v3 - GitHub",
+      "url": "https://github.com/sajeeb-ai/RL_PPO-LunarLander-v3",
+      "snippet": "Developed a reinforcement learning model utilizing the Proximal Policy Optimization (PPO) algorithm to train an agent in the LunarLander-v3 environment. The project encompassed configuring the environment, implementing the PPO algorithm using Stable-Baselines3, and evaluating the agent&#x27;s performance. The trained model and associated files are hosted on Hugging Face&#x27;s model hub, facilitating ..."
+    },
+    {
+      "title": "GitHub - Nishank-Goyal/ppo-LunarLander-v3",
+      "url": "https://github.com/Nishank-Goyal/ppo-LunarLander-v3",
+      "snippet": "This is a trained model of a PPO agent playing LunarLander-v2 using the stable-baselines3 library."
+    },
+    {
+      "title": "ppo-LunarLander-v3: Model Details, Context & Pricing | Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/hf-xjhav-ppo-lunarlander-v3",
+      "snippet": "Model card indexed from Hugging Face. Specs: sourced from Hugging Face. Compare ppo-LunarLander-v3&#x27;s parameters, context window, pricing and benchmarks against"
+    }
+  ]
+}

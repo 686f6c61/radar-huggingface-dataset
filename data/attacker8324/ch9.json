@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "attacker8324/ch9",
+  "slug": "attacker8324-ch9",
+  "author": "attacker8324",
+  "url": "https://huggingface.co/attacker8324/ch9",
+  "created_at": "2026-10-24T14:38:29.000Z",
+  "updated_at": "2026-10-24T14:38:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CNEWS | Actualités, Infos et News en direct vidéo et replay",
+      "url": "https://www.cnews.fr/",
+      "snippet": "Actualité en direct, 24/24. Le site de la chaîne d’information en continu CNEWS. Monde, politique, faits divers, sport, culture, …"
+    },
+    {
+      "title": "Le Direct | CNEWS",
+      "url": "https://www.cnews.fr/le-direct",
+      "snippet": "En direct Mobilisation du 24 octobre : 70.000 forces de l’ordre déployées dans tout le pays, couvre-feu instauré à Orléans pour les …"
+    },
+    {
+      "title": "CNEWS direct > regarder CNEWS en direct sur internet - tv …",
+      "url": "https://tv-programme.com/cnews/direct",
+      "snippet": "Retrouvez ici le direct CNEWS gratuit de tous les programmes de la chaîne CNEWS avec les informations détaillées du programme …"
+    },
+    {
+      "title": "CNews — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/CNews",
+      "snippet": "CNews se recentre sur le sport, la culture et le cinéma, marques fortes de sa chaîne mère Canal+. Le démarrage de CNews a lieu le …"
+    },
+    {
+      "title": "CNews en Direct : Suivez les Grands Débats & l'Info sur internet",
+      "url": "https://www.tv-direct.fr/live/cnews/",
+      "snippet": "Suivez CNews en direct gratuitement. Retrouvez Pascal Praud, Laurence Ferrari et les dernières news en streaming HD."
+    }
+  ]
+}

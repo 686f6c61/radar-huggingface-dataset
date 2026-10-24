@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mamounyosef/knee-abnormality-detection-dinov3",
+  "slug": "mamounyosef-knee-abnormality-detection-dinov3",
+  "author": "mamounyosef",
+  "url": "https://huggingface.co/mamounyosef/knee-abnormality-detection-dinov3",
+  "created_at": "2026-10-24T11:30:13.000Z",
+  "updated_at": "2026-10-24T11:56:25.000Z",
+  "license": "dinov3-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "medical-imaging",
+    "mri",
+    "knee",
+    "multi-label-classification",
+    "kaggle",
+    "rsna",
+    "dinov3",
+    "image-classification",
+    "en",
+    "base_model:timm/convnext_base.dinov3_lvd1689m",
+    "base_model:finetune:timm/convnext_base.dinov3_lvd1689m",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 700721864,
+  "storage_human": "701 MB",
+  "base_model": "timm/convnext_base.dinov3_lvd1689m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - karthik2411/RSNA-Knee-Abnormality-Detection: Create a model ...",
+      "url": "https://github.com/karthik2411/RSNA-Knee-Abnormality-Detection",
+      "snippet": "Multimodal deep-learning models that detect twelve clinically important abnormalities on knee MRI examinations — 2026 RSNA Knee Abnormality Detection AI Challenge (Kaggle). A single knee scan can reveal a dozen different problems. The task: predict the per-study probability of each of twelve findings from MRI scans, learning from images paired with original radiology reports. Status: active ..."
+    },
+    {
+      "title": "GitHub - KISHORE0709-LEO/RSNA-Knee-Abnormality-Detection",
+      "url": "https://github.com/KISHORE0709-LEO/RSNA-Knee-Abnormality-Detection",
+      "snippet": "Multimodal Deep Learning for Automated Knee MRI Abnormality Detection Project Status: 🚧 Active Research & Competition Project Domain: Medical Imaging • Computer Vision • Multimodal Learning • Deep Learning • Radiology AI Challenge: RSNA Knee Abnormality Detection 2026 Platform: Kaggle Primary Task: Study-level multi-label prediction from knee MRI studies Targets: 12 clinically ..."
+    },
+    {
+      "title": "RSNA Knee Abnormality Detection AI Challenge 2026 - salnus.com",
+      "url": "https://www.salnus.com/datasets/rsna-knee-mri-2026",
+      "snippet": "RSNA Knee Abnormality Detection AI Challenge 2026 The RSNA Knee Abnormality Detection AI Challenge dataset pairs knee MRI examinations with their original multilingual radiology reports. It was created for developing models that detect and classify knee abnormalities using both imaging and report text."
+    },
+    {
+      "title": "RSNA Knee MRI Abnormality Detection: ML Ensemble Analysis Report",
+      "url": "https://studylib.net/doc/29038875/notebook-3",
+      "snippet": "Comprehensive Findings Report 1. Notebook Overview Project RSNA Knee Abnormality Detection — multi-model knee MRI abnormality detection Dataset RSNA Knee Abnormality Detection Problem domain Medical imaging / musculoskeletal radiology / knee MRI. Target variable The notebook predicts 12 binary findings, evaluated independently: 1. ACL 2. MCL 3. Medial Meniscus 4. Lateral Meniscus 5. Medial ..."
+    },
+    {
+      "title": "RSNA launches 2026 Knee Abnormality Detection AI Challenge",
+      "url": "https://www.auntminnie.com/imaging-informatics/artificial-intelligence/news/15831808/rsna-launches-2026-knee-abnormality-detection-ai-challenge",
+      "snippet": "The RSNA has launched its 2026 Knee Abnormality Detection AI Challenge, inviting researchers to develop machine-learning models to detect and classify knee abnormalities on MRI using both images and radiology report text. The challenge is the first RSNA AI challenge to focus on musculoskeletal MRI and the first to combine medical images with multilingual radiology reports, the RSNA said. The ..."
+    }
+  ]
+}

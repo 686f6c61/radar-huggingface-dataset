@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "rghosh8/DeepSeek-R1-Distill-Qwen-1.5B_ckpt_SFT_baseline_arc_seed3407",
+  "slug": "rghosh8-deepseek-r1-distill-qwen-1-5b_ckpt_sft_baseline_arc_seed3407",
+  "author": "rghosh8",
+  "url": "https://huggingface.co/rghosh8/DeepSeek-R1-Distill-Qwen-1.5B_ckpt_SFT_baseline_arc_seed3407",
+  "created_at": "2026-10-24T11:46:34.000Z",
+  "updated_at": "2026-10-24T11:47:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "conversational",
+    "base_model:deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "base_model:finetune:deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 7119812331,
+  "storage_human": "7.1 GB",
+  "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bulges! - Reddit",
+      "url": "https://www.reddit.com/r/Bulges/",
+      "snippet": "Your favorite collection of men's bulge."
+    },
+    {
+      "title": "San Pedro Cactus - Reddit",
+      "url": "https://www.reddit.com/r/sanpedrocactus/",
+      "snippet": "Hairy aerolas are common for mature Pilos. #5 - Lophocereus / Pachycereus species Pachycereus got merged into the Lophocereus …"
+    },
+    {
+      "title": "Dads Gone Wild - Reddit",
+      "url": "https://www.reddit.com/r/DadsGoneWild/",
+      "snippet": "[NSFW] A space on Reddit for Dads gone wild to show off. 200K strong and growing!"
+    },
+    {
+      "title": "Women in scrubs gone wild. - Reddit",
+      "url": "https://www.reddit.com/r/scrubsgonewild/",
+      "snippet": "A subreddit for women who wear scrubs and want to show off their sexy bodies in said scrubs."
+    },
+    {
+      "title": "[Mature Content] r/HairyMoms on Reddit: Full natural mom",
+      "url": "https://www.reddit.com/r/HairyMoms/comments/1dh7y81/full_natural_mom/",
+      "snippet": "7.7K subscribers in the HairyMoms community. A place for Hairy Moms to show off"
+    }
+  ]
+}

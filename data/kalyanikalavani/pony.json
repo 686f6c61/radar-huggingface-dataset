@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Kalyanikalavani/Pony",
+  "slug": "kalyanikalavani-pony",
+  "author": "Kalyanikalavani",
+  "url": "https://huggingface.co/Kalyanikalavani/Pony",
+  "created_at": "2026-10-24T16:43:12.000Z",
+  "updated_at": "2026-10-24T17:23:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 456903976,
+  "storage_human": "457 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kalyanikalavani/Pose · Hugging Face",
+      "url": "https://huggingface.co/Kalyanikalavani/Pose",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "purplesmartai/pony-v7-base · Hugging Face",
+      "url": "https://huggingface.co/purplesmartai/pony-v7-base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Kalyani AI ⚡︎ (@kalyaani.ai) • Instagram photos and videos",
+      "url": "https://www.instagram.com/kalyaani.ai/",
+      "snippet": "28K Followers, 15 Following, 63 Posts - Kalyani AI ⚡︎ (@kalyaani.ai) on Instagram: \"High-Quality AI Reels l SM Posters l Banners For Brands • Creators • Businesses Ads | Promotions | Visual Stories 📩 DM to work together\""
+    },
+    {
+      "title": "Pony V7 base - v7.0 | Pony Diffusion V7 Checkpoint | Civitai",
+      "url": "https://civitai.com/models/1901521/pony-v7-base",
+      "snippet": "Pony V7 is a versatile character generation model based on AuraFlow architecture. It supports a wide range of styles and species types (humanoid, anthro, feral, and more) and handles character interactions through natural language prompts. Fictional First, let me introduce Fictional - our multimodal platform where AI Characters come alive through text, images, voice, and (soon) video. Powered ..."
+    },
+    {
+      "title": "CyberRealistic Pony - v17.0 - Free AI Model | TensorHub Art",
+      "url": "https://tensorhub.art/models/988272359477655038",
+      "snippet": "Download CyberRealistic Pony - free CHECKPOINT Pony AI model on TENSORHUB ART. By Cyberdelia"
+    }
+  ]
+}

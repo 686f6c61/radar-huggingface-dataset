@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "SevdanurGenc/Norovirus_Genotip_Classification",
+  "slug": "sevdanurgenc-norovirus_genotip_classification",
+  "author": "SevdanurGenc",
+  "url": "https://huggingface.co/SevdanurGenc/Norovirus_Genotip_Classification",
+  "created_at": "2026-10-24T14:37:50.000Z",
+  "updated_at": "2026-10-24T14:37:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SevdanurGENC (Dr. Nano / Sevdanur GENC) · GitHub",
+      "url": "https://github.com/SevdanurGENC",
+      "snippet": "Asst. Prof. Dr. at Balikesir University, Computer Engineer, https://www.youtube.com/c/SevdanurGENC - SevdanurGENC"
+    },
+    {
+      "title": "SevdanurGenc (Sevdanur GENC) - Hugging Face",
+      "url": "https://huggingface.co/SevdanurGenc",
+      "snippet": "User profile of Sevdanur GENC on Hugging Face"
+    },
+    {
+      "title": "Releases · SevdanurGENC/Genetics-AI · GitHub",
+      "url": "https://github.com/SevdanurGENC/Genetics-AI/releases",
+      "snippet": "Offline Android app + Jupyter notebooks for AI in genetics: automated chromosome counting and digital karyotyping on simulated G-banded metaphases (CNN, trisomy detection), and DNA-to-image gene family classification with Chaos Game Representation."
+    },
+    {
+      "title": "Molecular and Genetics-Based Systems for Tracing the Evolution ... - MDPI",
+      "url": "https://www.mdpi.com/1422-0067/24/10/9093",
+      "snippet": "The high prevalence of prolonged norovirus shedding and illness presents a model for in vivo molecular evolution in patients with severe immune dysfunction. It was found that only five amino acids mutated over 182 days, suggesting an immune-driven selection impact on patients and hospitals and the potential role of prolonged shedders as a ..."
+    },
+    {
+      "title": "Harnessing AI for Early Detection of Norovirus Outbreaks ... - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/harnessing-ai-early-detection-norovirus-outbreaks-boustani-hezarani-joirf",
+      "snippet": "Norovirus, often referred to as the \"stomach flu,\" is notorious for its swift transmission and severe symptoms, such as diarrhea, vomiting, and stomach pain. Affecting millions globally, it ..."
+    }
+  ]
+}

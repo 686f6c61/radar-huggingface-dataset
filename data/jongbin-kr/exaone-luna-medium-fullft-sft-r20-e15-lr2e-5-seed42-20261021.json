@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Jongbin-kr/exaone-luna-medium-fullft-sft-r20-e15-lr2e-5-seed42-20261021",
+  "slug": "jongbin-kr-exaone-luna-medium-fullft-sft-r20-e15-lr2e-5-seed42-20261021",
+  "author": "Jongbin-kr",
+  "url": "https://huggingface.co/Jongbin-kr/exaone-luna-medium-fullft-sft-r20-e15-lr2e-5-seed42-20261021",
+  "created_at": "2026-10-24T04:15:59.000Z",
+  "updated_at": "2026-10-24T13:38:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "exaone",
+    "verireason",
+    "full-finetuning",
+    "sft",
+    "custom_code",
+    "base_model:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+    "base_model:finetune:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7818448896,
+  "parameters_human": "7.82B",
+  "storage_bytes": 1172769879433,
+  "storage_human": "1172.8 GB",
+  "base_model": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "exaone-luna-medium-fullft-sft-r20-e15-lr2e-5-seed42-20261021",
+      "url": "https://huggingface.co/Jongbin-kr/exaone-luna-medium-fullft-sft-r20-e15-lr2e-5-seed42-20261021",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - LG-AI-EXAONE/EXAONE-3.0: Official repository for EXAONE built ...",
+      "url": "https://github.com/LG-AI-EXAONE/EXAONE-3.0",
+      "snippet": "We introduce EXAONE-3.-7.8B-Instruct, a pre-trained and instruction-tuned bilingual (English and Korean) generative model with 7.8 billion parameters. The model was pre-trained with 8T curated tokens and post-trained with supervised fine-tuning and direct preference optimization. It demonstrates highly competitive benchmark performance against other state-of-the-art open models of similar size."
+    },
+    {
+      "title": "Jongbin-kr/exaone-7b-verireason-reproduced-1513-luna-medium-fullft-best ...",
+      "url": "https://huggingface.co/Jongbin-kr/exaone-7b-verireason-reproduced-1513-luna-medium-fullft-best-grpo-epoch5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LG AI EXAONE - GitHub",
+      "url": "https://github.com/LG-AI-EXAONE",
+      "snippet": "Official repository for EXAONE 3.5 built by LG AI Research 209 23"
+    },
+    {
+      "title": "LG AI Research EXAONE",
+      "url": "https://www.lgresearch.ai/exaone",
+      "snippet": "Model & Solution Introducing AI solutions proven in real-world industries. Designed to solve complex challenges across domains with precision and impact. Solution EXAONE Data Foundry An end-to-end LLM tuning platform that generates domain-specific QA data from real-world documents and accelerates optimization through rapid feedback loops."
+    }
+  ]
+}

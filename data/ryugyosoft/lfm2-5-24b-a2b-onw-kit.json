@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ryugyosoft/LFM2.5-24B-A2B-onw-kit",
+  "slug": "ryugyosoft-lfm2-5-24b-a2b-onw-kit",
+  "author": "ryugyosoft",
+  "url": "https://huggingface.co/ryugyosoft/LFM2.5-24B-A2B-onw-kit",
+  "created_at": "2026-10-24T11:08:34.000Z",
+  "updated_at": "2026-10-24T11:08:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onw",
+    "intel",
+    "npu",
+    "openvino",
+    "base_model:LiquidAI/LFM2.5-24B-A2B",
+    "base_model:finetune:LiquidAI/LFM2.5-24B-A2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "LiquidAI/LFM2.5-24B-A2B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LFM2.5-24B-A2B AI Agent: Fast On-Device Model Guide [2026]",
+      "url": "https://kalinga.ai/lfm2-5-24b-a2b-ai-agent-guide/",
+      "snippet": "Running a capable AI agent used to mean renting a cloud GPU and sending your data to someone else&#x27;s server. LFM2.5-24B-A2B changes that equation: it is an open-weight reasoning model from Liquid AI that holds 24 billion parameters but activates only 2 billion for each token, so it can think, call tools, and finish multi-step tasks on hardware you control. Released on October 13, 2026, it ..."
+    },
+    {
+      "title": "Liquid AI&#x27;s 24B Model Hits 184 Tokens/Sec On-Device [2026]",
+      "url": "https://trendintech.com/liquid-ai-lfm2-5-24b-a2b-on-device-agents-2026/",
+      "snippet": "Liquid AI launched LFM2.5-24B-A2B, a 24B MoE model hitting 184 tokens/sec on-device. See specs, benchmarks, and pricing."
+    },
+    {
+      "title": "LiquidAI/LFM2.5-24B-A2B-Base · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-Base",
+      "snippet": "LFM2.5-24B-A2B is the largest model in the family: a 24B-parameter mixture of experts with only 2B active parameters. It builds on LFM2-24B-A2B with a 131K context window, a vocabulary doubled to 128K tokens, and pre-training scaled up from ~17T to ~33T tokens. Find more information about LFM2.5-24B-A2B in our blog post."
+    },
+    {
+      "title": "LFM2.5-24B-A2B - docs.liquid.ai",
+      "url": "https://docs.liquid.ai/lfm/models/lfm25-24b-a2b",
+      "snippet": "24B parameter Mixture-of-Experts reasoning model with 2B active parameters and 131K context, built for fast, private agents on-device ← Back to Text Models LFM2.5-24B-A2B is the largest LFM2.5 model, a Mixture-of-Experts model combining 24B total parameters with only 2B active parameters per token and a 131K context window."
+    },
+    {
+      "title": "LFM2.5-24B-A2B: Built for Fast On-Device Agents - liquid.ai",
+      "url": "https://www.liquid.ai/blog/lfm2-5-24b-a2b",
+      "snippet": "LFM2.5-24B-A2B: an open-weight 24B reasoning model with 2B active parameters, built for fast, private on-device agents. Beats Qwen3.6-35B-A3B on LiveClaw."
+    }
+  ]
+}

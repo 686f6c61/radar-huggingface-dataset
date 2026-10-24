@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen2-VL-7B-Grounding-GGUF",
+  "slug": "mradermacher-qwen2-vl-7b-grounding-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen2-VL-7B-Grounding-GGUF",
+  "created_at": "2025-05-23T05:29:08.000Z",
+  "updated_at": "2026-10-24T12:08:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "model-merging",
+    "optmerge",
+    "multimodal",
+    "qwen2-vl",
+    "visual-grounding",
+    "en",
+    "base_model:yongxianwei/Qwen2-VL-7B-Grounding",
+    "base_model:quantized:yongxianwei/Qwen2-VL-7B-Grounding",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 80,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 70220532416,
+  "storage_human": "70.2 GB",
+  "base_model": "yongxianwei/Qwen2-VL-7B-Grounding",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen2-VL-7B-Instruct-abliterated-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen2-VL-7B-Instruct-abliterated-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke&#x27;s READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "mradermacher/Qwen2-VL-7B-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen2-VL-7B-i1-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke&#x27;s READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "mradermacher/Qwen2-VL-7B-GGUF: Model synced from source: mradermacher ...",
+      "url": "https://dev.modelhub.org.cn/mradermacher/Qwen2-VL-7B-GGUF",
+      "snippet": "FAQ / Model Request See https://huggingface.co/mradermacher/model_requests for some answers to questions you might have and/or if you want some other model quantized."
+    },
+    {
+      "title": "GitHub - xwjim/Qwen2-VL: Qwen2-VL is the multimodal large language ...",
+      "url": "https://github.com/xwjim/Qwen2-VL",
+      "snippet": "The demo is configured by default to use the Qwen/Qwen2-VL-7B-Instruct model, which is part of the Qwen2-VL series and is well-suited for various vision-language tasks."
+    },
+    {
+      "title": "Qwen2.5-VL-7B-Instruct-abliterated-GGUF vs Qwen3.8-27B-OBLITERATED-GGUF",
+      "url": "https://www.aimodels.fyi/models/compare/qwen2.5-vl-7b-instruct-abliterated-gguf-mradermacher-vs-qwen3.8-27b-obliterated-gguf-mradermacher",
+      "snippet": "Qwen2.5-VL-7B-Instruct-abliterated-GGUF is a GGUF-quantized version of the Qwen2.5 Vision Language model optimized for local CPU and GPU inference. Built and maintained by mradermacher, this model processes both images and text through a multimodal architecture, enabling vision-language understanding tasks on consumer hardware."
+    }
+  ]
+}

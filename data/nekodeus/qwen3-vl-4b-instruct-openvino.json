@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Nekodeus/qwen3-vl-4b-instruct-openvino",
+  "slug": "nekodeus-qwen3-vl-4b-instruct-openvino",
+  "author": "Nekodeus",
+  "url": "https://huggingface.co/Nekodeus/qwen3-vl-4b-instruct-openvino",
+  "created_at": "2026-10-24T15:11:59.000Z",
+  "updated_at": "2026-10-24T15:22:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "openvino",
+  "languages": [],
+  "tags": [
+    "openvino",
+    "qwen3_vl",
+    "int8",
+    "vlm",
+    "image-text-to-text",
+    "multilingual",
+    "qwen3-vl",
+    "conversational",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4851767652,
+  "storage_human": "4.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3-VL-4B-Instruct - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_vl_4b_instruct",
+      "snippet": "Qwen3-VL-4B-Instruct Multimodal 4B vision‑language model with enhanced visual reasoning capabilities. Qwen3‑VL is a vision‑language model from Alibaba Cloud capable of understanding both text and images for multimodal reasoning tasks such as visual question answering and image captioning."
+    },
+    {
+      "title": "README.md · Qwen/Qwen3-VL-4B-Instruct at main - Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · OpenVINO/Qwen3-VL-4B-Instruct-fp16-ov at main",
+      "url": "https://huggingface.co/OpenVINO/Qwen3-VL-4B-Instruct-fp16-ov/blob/main/README.md",
+      "snippet": "This is Qwen3-VL-4B-Instruct model converted to the OpenVINO™ IR (Intermediate Representation) format with weights compressed to FP16. Qwen3-VL is the latest generation of vision-language models in the Qwen series, delivering comprehensive upgrades across the board: superior text understanding ..."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/qwen3_vl_4b_instruct ... - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/qwen3_vl_4b_instruct/README.md",
+      "snippet": "Qwen3-VL is a vision-language model from Alibaba Cloud capable of understanding both text and images for multimodal reasoning tasks such as visual question answering and image captioning. This is based on the implementation of Qwen3-VL-4B-Instruct found here. This repository contains scripts for optimized on-device export suitable to run on Qualcomm® devices. More details on model performance ..."
+    },
+    {
+      "title": "qwen3-vl:4b-instruct - ollama.com",
+      "url": "https://ollama.com/library/qwen3-vl:4b-instruct",
+      "snippet": "Qwen3-VL models require Ollama 0.12.7 Qwen3-VL is the most powerful vision-language model in the Qwen family to date. In this generation, there are improvements to the model in many areas: its understanding and generating text, perceiving and reasoning about visual content, supporting longer context lengths, understanding spatial relationships and dynamic videos, or interacting with AI agents ..."
+    }
+  ]
+}

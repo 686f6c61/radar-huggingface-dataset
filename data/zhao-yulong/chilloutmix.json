@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "zhao-yulong/chilloutmix",
+  "slug": "zhao-yulong-chilloutmix",
+  "author": "zhao-yulong",
+  "url": "https://huggingface.co/zhao-yulong/chilloutmix",
+  "created_at": "2026-10-24T11:02:29.000Z",
+  "updated_at": "2026-10-24T11:02:29.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "not-for-all-audiences",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26417688653,
+  "storage_human": "26.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Menu/ La Taverne De ZHAO – ZHAO GROUPE",
+      "url": "https://www.zhaogroupe.com/menulatavernedezhao/",
+      "snippet": "Découvrez notre Poulet frit de ZHAO, un véritable régal ! Des morceaux de poulet croustillants à l'extérieur, tendres à l'intérieur, …"
+    },
+    {
+      "title": "ZHAO GROUPE – 100% CHINESE PASSION",
+      "url": "https://www.zhaogroupe.com/",
+      "snippet": "Petite par la taille mais grande par le mérite, l’institution régale plus que jamais. Le fooding Un lumineux salon de goût...Un vrai …"
+    },
+    {
+      "title": "Zhao — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Zhao",
+      "snippet": "Zhao (chinois simplifié : 赵国 ; chinois traditionnel : 趙國 ; pinyin : zhào guó - 453 - 228 av. J.-C.) est l'un des sept États qui …"
+    },
+    {
+      "title": "ZHAO | Accueil",
+      "url": "https://www.institut-zhao.fr/",
+      "snippet": "Institut de beauté ZHAO Attention ! L'exposition aux rayonnements d'un appareil de bronzage peut provoquer des cancers de la …"
+    },
+    {
+      "title": "Taverne de Zhao, resto chinois bon et pas cher !",
+      "url": "https://www.parisgourmand.com/restaurant-paris/taverne-de-zhao.html",
+      "snippet": "La Taverne de Zhao : surprenant, bon et pas cher ! C'est donc la cuisine de sa région natale qui a été mise en scène ici par Zhao, …"
+    }
+  ]
+}

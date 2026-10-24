@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "aegrabs/act_so101_clear_plate",
+  "slug": "aegrabs-act_so101_clear_plate",
+  "author": "aegrabs",
+  "url": "https://huggingface.co/aegrabs/act_so101_clear_plate",
+  "created_at": "2026-10-24T17:35:48.000Z",
+  "updated_at": "2026-10-24T17:35:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:aegrabs/so101_clear_plate",
+    "arxiv:2304.13705",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206715008,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CnLori/act_so101_grab_cube · Hugging Face",
+      "url": "https://huggingface.co/CnLori/act_so101_grab_cube",
+      "snippet": "Model Card for act Action Chunking with Transformers (ACT) is an imitation-learning method that predicts short action chunks instead of single steps. It learns from teleoperated data and often achieves high success rates. This policy has been trained and pushed to the Hub using LeRobot. See the full documentation at LeRobot Docs."
+    },
+    {
+      "title": "aiden-li/so101-act · Hugging Face",
+      "url": "https://huggingface.co/aiden-li/so101-act",
+      "snippet": "Model Card for act Action Chunking with Transformers (ACT) is an imitation-learning method that predicts short action chunks instead of single steps. It learns from teleoperated data and often achieves high success rates. This policy has been trained and pushed to the Hub using LeRobot. See the full documentation at LeRobot Docs."
+    },
+    {
+      "title": "GitHub - omkarputti/SO101_ACT_Training: An open-source robotics project ...",
+      "url": "https://github.com/omkarputti/SO101_ACT_Training",
+      "snippet": "An open-source robotics project focused on training the SO101 robotic arm using imitation learning, ACT policies, and SOLO CLI workflows for autonomous manipulation tasks. - omkarputti/SO101_ACT_Tr..."
+    },
+    {
+      "title": "SO-101 Open Robot Arm | Open Source Robotics - robotics.growbotics.ai",
+      "url": "https://robotics.growbotics.ai/projects/hardware/so-101-open-robot-arm",
+      "snippet": "SO-101 is an open-source 6-DOF robot arm for teleoperation and AI research, created by The Robot Studio and Hugging Face for the LeRobot ecosystem."
+    },
+    {
+      "title": "Reading the SO-101 LeRobot Dataset Raw: Understanding What ACT ... - Zenn",
+      "url": "https://zenn.dev/yumeno/articles/so101-lerobot-act-dataset-peek?locale=en",
+      "snippet": "A note on understanding SO-101 / LeRobot / ACT by directly reading the public dataset without the lerobot library. The target dataset is orsoromeo/so101_pick_and_place on Hugging Face. This dataset is a demonstration operation log of the SO-101. One common misunderstanding is that action is not the output of an AI; it is not the result of a trained model but rather teacher data created by ..."
+    }
+  ]
+}

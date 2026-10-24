@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "VainCat/q-Taxi-v4",
+  "slug": "vaincat-q-taxi-v4",
+  "author": "VainCat",
+  "url": "https://huggingface.co/VainCat/q-Taxi-v4",
+  "created_at": "2026-10-24T16:44:02.000Z",
+  "updated_at": "2026-10-24T17:06:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Taxi-v4",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 49144,
+  "storage_human": "49144 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Learnix-AI-Lab/q-Taxi-v4 · Hugging Face",
+      "url": "https://huggingface.co/Learnix-AI-Lab/q-Taxi-v4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "drcxd1122/q-Taxi-v4 · Hugging Face",
+      "url": "https://huggingface.co/drcxd1122/q-Taxi-v4",
+      "snippet": "Q-Learning Agent playing1 Taxi-v4 This is a trained model of a Q-Learning agent playing Taxi-v4 ."
+    },
+    {
+      "title": "q-Taxi-v4: Model Details, Context & Pricing | Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/hf-ditdahditdit-q-taxi-v4",
+      "snippet": "q-Taxi-v4 AI model directory entry. Specs: sourced from Hugging Face. Compare q-Taxi-v4&#x27;s parameters, context window, pricing and benchmarks against other AI mo"
+    },
+    {
+      "title": "q-Taxi-v4: Model Details, Context & Pricing | Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/hf-roshana1s-q-taxi-v4",
+      "snippet": "Model card indexed from Hugging Face for reinforcement-learning. Specs: sourced from Hugging Face. Compare q-Taxi-v4&#x27;s parameters, context window, pricing and b"
+    },
+    {
+      "title": "#reinforcementlearning #machinelearning #artificialintelligence #python ...",
+      "url": "https://www.linkedin.com/posts/vansh-sharma-074698331_reinforcementlearning-machinelearning-activity-7483526760681369601-PAkt",
+      "snippet": "🚖 From Random Actions to Intelligent Decisions: Exploring Reinforcement Learning with Taxi-v4 Today I completed one of the classic Reinforcement Learning environments: Taxi-v4 using both Q ..."
+    }
+  ]
+}

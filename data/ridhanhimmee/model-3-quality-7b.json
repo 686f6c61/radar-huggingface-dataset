@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "ridhanhimmee/model-3-quality-7b",
+  "slug": "ridhanhimmee-model-3-quality-7b",
+  "author": "ridhanhimmee",
+  "url": "https://huggingface.co/ridhanhimmee/model-3-quality-7b",
+  "created_at": "2026-10-24T17:02:04.000Z",
+  "updated_at": "2026-10-24T17:02:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 172955358,
+  "storage_human": "173 MB",
+  "base_model": "unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Allen Institute for AI (AI2) Introduces Olmo 3: An Open Source 7B and ...",
+      "url": "https://www.marktechpost.com/2025/11/20/allen-institute-for-ai-ai2-introduces-olmo-3-an-open-source-7b-and-32b-llm-family-built-on-the-dolma-3-and-dolci-stack/",
+      "snippet": "Allen Institute for AI (AI2) is releasing Olmo 3 as a fully open model family that exposes the entire &#x27;model flow&#x27;, from raw data and code to intermediate checkpoints and deployment ready variants. Olmo 3 is a dense transformer suite with 7B and 32B parameter models. The family includes Olmo 3-Base, Olmo 3-Think, Olmo 3-Instruct, and Olmo 3-RL Zero. Both 7B and 32B variants share a context ..."
+    },
+    {
+      "title": "TII Launches Falcon Reasoning: Best 7B AI Model Globally, Also ...",
+      "url": "https://www.businesswire.com/news/home/20260105981339/en/TII-Launches-Falcon-Reasoning-Best-7B-AI-Model-Globally-Also-Outperforms-Larger-Models",
+      "snippet": "Open Source and Community Driven In line with TII&#x27;s commitment to AI transparency and collaboration, Falcon H1R 7B is released as an open-source model under the Falcon TII License."
+    },
+    {
+      "title": "AI 3D Model Generators - All Models in One Studio",
+      "url": "https://www.3daistudio.com/Models",
+      "snippet": "Every Major AI 3D Model. One Studio. Hunyuan leads on quality ceiling, Hitem3D on print-ready detail, Tripo on game topology, Trellis on price. No single model wins at everything - so switch engines per job, with one account and one credit balance."
+    },
+    {
+      "title": "7B vs 14B vs 32B vs 70B: Which Model Size to Run",
+      "url": "https://localaimaster.com/blog/ai-model-size-comparison",
+      "snippet": "Compare 7B, 14B, 32B, and 70B LLM sizes with real benchmarks, VRAM requirements, speed tests, and specific model picks for each parameter tier."
+    },
+    {
+      "title": "Hyper3D Rodin - Best AI 3D Model Generator",
+      "url": "http://hyper3d.ai/",
+      "snippet": "Rodin generates high-quality 3D assets that are nearly production-ready for supported workflows."
+    }
+  ]
+}

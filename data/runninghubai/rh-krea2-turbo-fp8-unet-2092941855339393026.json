@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-krea2-turbo-fp8-unet-2092941855339393026",
+  "slug": "runninghubai-rh-krea2-turbo-fp8-unet-2092941855339393026",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-krea2-turbo-fp8-unet-2092941855339393026",
+  "created_at": "2026-10-24T11:31:55.000Z",
+  "updated_at": "2026-10-24T11:40:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "unet",
+    "image-text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14811983607,
+  "storage_human": "14.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rh-krea2-turbo-fp8-unet-2070961692913258497 - Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-krea2-turbo-fp8-unet-2070961692913258497",
+      "snippet": "This repository provides rh-krea2-turbo-fp8-unet weight files. You can load them on RunningHub."
+    },
+    {
+      "title": "RunningHubAI/rh-krea2-turbo-fp8int8-unet · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-krea2-turbo-fp8int8-unet",
+      "snippet": "Description ... About this model 1 This repository provides rh-krea2-turbo-fp8int8-unet weight files. You can load them on RunningHub. Finetuned from: krea2"
+    },
+    {
+      "title": "Krea-2-Turbo - RunningHub Stable Diffusion & Flux Unet",
+      "url": "https://www.runninghub.ai/model/public/2071166071213748226",
+      "snippet": "Krea-2-Turbo Released on June 3, 2026, Krea2 (K2) is a 12B parameter native DiT architecture text-to-image model. The Turbo ultra-fast distilled version features low VRAM usage, 8-step lightning-fast image generation, and strong stylistic expressiveness."
+    },
+    {
+      "title": "Krea2-Turbo-fp8_Full Throttle - runninghub.ai",
+      "url": "https://www.runninghub.ai/model/public/2072614459167825922",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "Krea 2 Turbo download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/krea-2-turbo/",
+      "snippet": "Krea 2 Turbo is Krea AI&#x27;s flagship open-weight text-to-image diffusion model optimized for fast, high-quality image generation. Built on a 12-billion-parameter Diffusion Transformer (DiT), it is a distilled and post-trained version of the Krea 2 Raw checkpoint, enabling photorealistic and artistic image synthesis in as few as eight inference steps. Designed for creative professionals ..."
+    }
+  ]
+}

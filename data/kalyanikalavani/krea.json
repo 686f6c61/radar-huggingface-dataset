@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Kalyanikalavani/Krea",
+  "slug": "kalyanikalavani-krea",
+  "author": "Kalyanikalavani",
+  "url": "https://huggingface.co/Kalyanikalavani/Krea",
+  "created_at": "2026-10-24T15:09:28.000Z",
+  "updated_at": "2026-10-24T15:10:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1142944744,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Model Library - krea.ai",
+      "url": "https://www.krea.ai/models",
+      "snippet": "Explore Krea&#x27;s AI model library across image, video, audio, enhancer, edit, 3D, video restyle, motion transfer, and lipsync tools."
+    },
+    {
+      "title": "Krea: AI Creative Suite for Images, Video & 3D",
+      "url": "https://www.krea.ai/",
+      "snippet": "Generate, edit, and enhance images, videos, and 3D with Krea&#x27;s AI creative suite. Start free with real-time tools and the best generative models."
+    },
+    {
+      "title": "Kalyani AI ⚡︎ (@kalyaani.ai) • Instagram photos and videos",
+      "url": "https://www.instagram.com/kalyaani.ai/",
+      "snippet": "28K Followers, 15 Following, 63 Posts - Kalyani AI ⚡︎ (@kalyaani.ai) on Instagram: \"High-Quality AI Reels l SM Posters l Banners For Brands • Creators • Businesses Ads | Promotions | Visual Stories 📩 DM to work together\""
+    },
+    {
+      "title": "Kalyanikalavani/Aipotionsstyle · Hugging Face",
+      "url": "https://huggingface.co/Kalyanikalavani/Aipotionsstyle",
+      "snippet": "Kalyanikalavani / Aipotionsstyle Like 0 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Kalyanikalavani/college-besties · Hugging Face",
+      "url": "https://huggingface.co/Kalyanikalavani/college-besties",
+      "snippet": "Inference Inference Providers Notebooks Google Colab Kaggle Local AppsSettings Draw Things DiffusionBee College besties Trigger words Download model and use it with ComfyUI, AUTOMATIC1111, SD.Next, Invoke AI, Forge, etc."
+    }
+  ]
+}

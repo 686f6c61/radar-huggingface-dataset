@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "nxdev-org/microduck-motorlab-fast2",
+  "slug": "nxdev-org-microduck-motorlab-fast2",
+  "author": "nxdev-org",
+  "url": "https://huggingface.co/nxdev-org/microduck-motorlab-fast2",
+  "created_at": "2026-10-24T14:37:53.000Z",
+  "updated_at": "2026-10-24T14:38:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 794173,
+  "storage_human": "794173 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - pollen-robotics/microduck: A Tiny biped duck robot",
+      "url": "https://github.com/pollen-robotics/microduck",
+      "snippet": "A Tiny biped duck robot 🦆. Contribute to pollen-robotics/microduck development by creating an account on GitHub."
+    },
+    {
+      "title": "Microduck — Small robot. Super smart.",
+      "url": "https://microducks.org/",
+      "snippet": "Microduck Small robot. Super smart. The 10-inch bipedal AI robot that walked onto Jensen Huang&#x27;s stage at NVIDIA GTC Berlin — and stole the show."
+    },
+    {
+      "title": "GitHub - AI-FanGe/Microduck-build-tutorial: A practical hardware and ...",
+      "url": "https://github.com/AI-FanGe/Microduck-build-tutorial",
+      "snippet": "A practical hardware and software setup for a compact RL-powered biped robot. - AI-FanGe/Microduck-build-tutorial"
+    },
+    {
+      "title": "A tiny biped robot you can teach new tricks - Pollen Robotics",
+      "url": "https://pollen-robotics.com/microduck/",
+      "snippet": "Microduck is a 25 cm biped robot with 15 motors, a camera, LiDAR and a grasping beak. Playable out of the box, and its open-source stack lets you train new behaviours in simulation and run them on the robot. Pre-order at $399."
+    },
+    {
+      "title": "Microduck DIY: build, mod and 3D print the open-source duck robot",
+      "url": "https://microduck.homes/microduck-diy",
+      "snippet": "Microduck is an open-source robot, not a sealed product. The Apache-2.0 repositories publish the robot&#x27;s software, the SDK and the reinforcement-learning environments, which means the DIY path is real: modify it, print for it, train for it, and understand every part of it. If you searched for \"microduck diy\", \"microduck stl\" or \"microduck replica\", this page is the honest map of what you can ..."
+    }
+  ]
+}

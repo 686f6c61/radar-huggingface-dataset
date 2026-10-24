@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ayeeyokoris/test",
+  "slug": "ayeeyokoris-test",
+  "author": "ayeeyokoris",
+  "url": "https://huggingface.co/ayeeyokoris/test",
+  "created_at": "2026-10-22T04:22:32.000Z",
+  "updated_at": "2026-10-24T13:35:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "emo-tts",
+    "feature-extraction",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 40,
+  "trending_score": 0,
+  "parameters": 28417152,
+  "parameters_human": "28.4M",
+  "storage_bytes": 2153544784,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LinkedIn : s’identifier ou s’inscrire",
+      "url": "https://fr.linkedin.com/",
+      "snippet": "1 milliard de membres | Gérez votre image professionnelle. Constituez votre réseau professionnel et communiquez avec celui-ci. …"
+    },
+    {
+      "title": "Eiffage - LinkedIn",
+      "url": "https://fr.linkedin.com/company/eiffage_2",
+      "snippet": "Eiffage | 375 769 abonnés sur LinkedIn. Rejoignez une entreprise animée d’un esprit de famille unique #EspritDeFamille | Rejoindre …"
+    },
+    {
+      "title": "ENGIE - LinkedIn",
+      "url": "https://fr.linkedin.com/company/engie",
+      "snippet": "ENGIE | 1 171 859 abonnés sur LinkedIn. Et si votre prochaine aventure professionnelle commençait chez ENGIE ? Rejoindre …"
+    },
+    {
+      "title": "AXA - LinkedIn",
+      "url": "https://fr.linkedin.com/company/axa",
+      "snippet": "AXA | 1 667 888 abonnés sur LinkedIn. Act for human progress by protecting what matters. | Un point de départ : nos clients. En tant …"
+    },
+    {
+      "title": "Guillaume Moubeche - Founder @ lemlist (0 to $150m valuation",
+      "url": "https://fr.linkedin.com/in/guillaume-moubeche-a026541b2",
+      "snippet": "Founder @ lemlist (0 to $150m valuation in 4 years) | Investor | Host of @ BILLIONS · My name is Guillaume Moubeche but …"
+    }
+  ]
+}

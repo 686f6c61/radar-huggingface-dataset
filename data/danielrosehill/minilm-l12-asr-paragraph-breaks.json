@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "danielrosehill/MiniLM-L12-ASR-Paragraph-Breaks",
+  "slug": "danielrosehill-minilm-l12-asr-paragraph-breaks",
+  "author": "danielrosehill",
+  "url": "https://huggingface.co/danielrosehill/MiniLM-L12-ASR-Paragraph-Breaks",
+  "created_at": "2026-10-24T11:39:35.000Z",
+  "updated_at": "2026-10-24T12:02:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "asr-post-processing",
+    "paragraph-segmentation",
+    "dictation",
+    "voice-notes",
+    "on-device",
+    "en",
+    "dataset:danielrosehill/ASR-Paragraph-Breaks",
+    "base_model:microsoft/MiniLM-L12-H384-uncased",
+    "base_model:quantized:microsoft/MiniLM-L12-H384-uncased",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33212930,
+  "parameters_human": "33.2M",
+  "storage_bytes": 299859860,
+  "storage_human": "300 MB",
+  "base_model": "microsoft/MiniLM-L12-H384-uncased",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - danielrosehill/ASR-Paragraph-Breaks: Hand-annotated paragraph ...",
+      "url": "https://github.com/danielrosehill/ASR-Paragraph-Breaks",
+      "snippet": "ASR Paragraph Breaks A small text-in/text-out model that adds paragraph breaks to flat ASR output and changes nothing else. Speech-to-text output is punctuated and cased but arrives as one block, even from engines that mark sentence boundaries. This project hand-annotates where the paragraphs go and fine-tunes a small model on those annotations."
+    },
+    {
+      "title": "ASR Paragraph Breaks - Daniel Rosehill",
+      "url": "https://www.danielrosehill.com/projects/asr-paragraph-breaks/",
+      "snippet": "ASR Paragraph Breaks Hand-annotated paragraph breaks for flat speech-to-text output. ASR engines emit punctuated, cased text as one block. This dataset pairs that block (text) with the same text split into paragraphs by a person (paragraphed). Nothing else changes: words, punctuation and casing are identical, and the annotation tool refuses any save that alters them. It is training data for a ..."
+    },
+    {
+      "title": "danielrosehill (Daniel Rosehill) · GitHub",
+      "url": "https://github.com/danielrosehill",
+      "snippet": "Focus: Agentic AI, MCP, and workflow automation (esp. voice assisted). Exploring: multiagent use-cases for AI & geopol sims. GH activity: Claude assisted. - danielrosehill"
+    },
+    {
+      "title": "danielrosehill/ASR-Paragraph-Breaks at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/danielrosehill/ASR-Paragraph-Breaks/tree/main",
+      "snippet": "ASR-Paragraph-Breaks 8.13 MB Ctrl+K Ctrl+K 1 contributor History:55 commits danielrosehill Card: link the model and the r2 split 91efe9c verifiedabout 13 hours ago annotationsAnnotate syn-2-0020 (12 paragraphs)about 14 hours ago poolRebuild pool: 1489 itemsabout 14 hours ago trainingExact train/test split used for model run r2about 13 hours ago ..."
+    },
+    {
+      "title": "danielrosehill (Daniel Rosehill) - Hugging Face",
+      "url": "https://huggingface.co/danielrosehill",
+      "snippet": "Speech to text (STT), voice workflows, MCP, AI agents, orchestration, automation."
+    }
+  ]
+}

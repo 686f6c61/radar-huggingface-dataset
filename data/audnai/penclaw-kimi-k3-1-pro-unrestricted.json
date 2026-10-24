@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "audnai/penclaw-Kimi-K3.1-pro-unrestricted",
+  "slug": "audnai-penclaw-kimi-k3-1-pro-unrestricted",
+  "author": "audnai",
+  "url": "https://huggingface.co/audnai/penclaw-Kimi-K3.1-pro-unrestricted",
+  "created_at": "2026-10-23T21:38:11.000Z",
+  "updated_at": "2026-10-23T21:44:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 17,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "audnai/penclaw-Kimi-K3.1-pro-unrestricted · Hugging Face",
+      "url": "https://huggingface.co/audnai/penclaw-Kimi-K3.1-pro-unrestricted",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Moonshot AI Releases Kimi K3.1 Pro: A 2.8T Total/104B Active Params ...",
+      "url": "https://www.marktechpost.com/2026/10/23/moonshot-ai-kimi-k3-1-pro-open-weight-model/",
+      "snippet": "Moonshot AI has just released Kimi K3.1 Pro, the first model in its K3.1 series. Kimi K3.1 Pro is a 3T-class open-weight* model with a 1-million-token context window. Moonshot team positions it against the strongest proprietary models on coding, agentic and knowledge benchmarks."
+    },
+    {
+      "title": "audnai (ozgur ozkan) - Hugging Face",
+      "url": "https://huggingface.co/audnai",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 11 hours ago ... published a model about 11 hours ago"
+    },
+    {
+      "title": "GitHub - audn-ai/penclaw: Your own abliterated personal AI assistant ...",
+      "url": "https://github.com/audn-ai/penclaw",
+      "snippet": "Your own abliterated personal AI assistant. Any OS. Any Platform. Any prompt, No objections. This is the way. ☬ - audn-ai/penclaw"
+    },
+    {
+      "title": "Kimi K3.1 Pro - Kimi API Platform",
+      "url": "https://platform.kimi.ai/docs/guide/kimi-k3-1-pro-quickstart",
+      "snippet": "We&#x27;re introducing Kimi K3.1 Pro, the first model in our new K3.1 series and our most capable 3T-class open-weight model to date, with a 1-million-token context window. It delivers substantial improvements across coding, 3D creation, financial research, and other agentic capabilities. We are also releasing Kimi K3.1 Pro Highspeed, which delivers 2-3× the speed of K3.1 Pro for more responsive ..."
+    }
+  ]
+}

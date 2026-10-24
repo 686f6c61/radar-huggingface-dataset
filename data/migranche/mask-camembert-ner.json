@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "migranche/mask-camembert-ner",
+  "slug": "migranche-mask-camembert-ner",
+  "author": "migranche",
+  "url": "https://huggingface.co/migranche/mask-camembert-ner",
+  "created_at": "2026-10-24T14:19:28.000Z",
+  "updated_at": "2026-10-24T14:38:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers.js",
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "camembert",
+    "token-classification",
+    "fr",
+    "base_model:Jean-Baptiste/camembert-ner",
+    "base_model:quantized:Jean-Baptiste/camembert-ner",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 220500160,
+  "storage_human": "221 MB",
+  "base_model": "Jean-Baptiste/camembert-ner",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CamemBERT · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/camembert",
+      "snippet": "CamemBERT CamemBERT is a language model based on RoBERTa, but trained specifically on French text from the OSCAR dataset, making it more effective for French language tasks."
+    },
+    {
+      "title": "Jean-Baptiste/camembert-ner · Hugging Face",
+      "url": "https://huggingface.co/Jean-Baptiste/camembert-ner",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "camembert-ner: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/camembert-ner-jean-baptiste",
+      "snippet": "Overview camembert-ner is a French named entity recognition model fine-tuned from CamemBERT on the WikiNER-FR dataset, trained on approximately 170,634 sentences. Developed by Jean-Baptiste, this token classification model identifies five entity types: persons (PER), organizations (ORG), locations (LOC), miscellaneous entities (MISC), and non-entities (O). The model uses the transformer ..."
+    },
+    {
+      "title": "ALMAnaCH, Inria",
+      "url": "https://almanach.inria.fr/software_and_resources/CamemBERT-fr.html",
+      "snippet": "Citation et publication (s) Si vous utilisez ce travail, merci de citer : Publications principales Si vous utilisez ce travail, merci de citer : Louis Martin, Benjamin Muller, Pedro Javier Ortiz Suárez, Yoann Dupont, Laurent Romary, Éric Villemonte de La Clergerie, Djamé Seddah and Benoît Sagot. 2020. CamemBERT: a Tasty French Language Model. In Proceedings of the 58th Annual Meeting of ..."
+    },
+    {
+      "title": "Fine-tuned model for named entity recognition - GitHub",
+      "url": "https://github.com/fayccal/Camembert-NER",
+      "snippet": "This project present a notebook to create a fined-tuned Camembert model for named entity recognition. It applys also the Distillation method to keep a maximum of performance, while reducing it&#x27;s size by 50%. this notebook use the labeled dataset of wikineural."
+    }
+  ]
+}

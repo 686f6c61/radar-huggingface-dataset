@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "TheStageAI/pocket-tts-100m-it",
+  "slug": "thestageai-pocket-tts-100m-it",
+  "author": "TheStageAI",
+  "url": "https://huggingface.co/TheStageAI/pocket-tts-100m-it",
+  "created_at": "2026-10-24T09:37:33.000Z",
+  "updated_at": "2026-10-24T12:00:02.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "pocket-tts",
+  "languages": [
+    "it"
+  ],
+  "tags": [
+    "pocket-tts",
+    "tts",
+    "kyutai",
+    "coreml",
+    "ane",
+    "thestage",
+    "text-to-speech",
+    "it",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 285791925,
+  "storage_human": "286 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - kyutai-labs/pocket-tts: A TTS that fits in your CPU (and pocket)",
+      "url": "https://github.com/kyutai-labs/pocket-tts",
+      "snippet": "A TTS that fits in your CPU (and pocket). Contribute to kyutai-labs/pocket-tts development by creating an account on GitHub."
+    },
+    {
+      "title": "Pocket TTS Loom Packages 100M Model for Edge Devices",
+      "url": "https://aicrier.com/post/39kittuy7i99cj7lkwuw",
+      "snippet": "Pocket TTS Loom repackages Kyutai&#x27;s 100M-parameter English Pocket TTS as a self-describing GGUF for loom.cpp, enabling local speech synthesis without cloud APIs or an external phonemizer."
+    },
+    {
+      "title": "Pocket TTS: a high-quality TTS with voice cloning that runs on CPU",
+      "url": "https://kyutai.org/pocket-tts-technical-report/",
+      "snippet": "These two changes make the modeling task much easier, allowing for a smaller model, but are deterministic and come with a limited set of voices. With Pocket TTS, we manage to bridge this gap and obtain a tiny model that runs on CPU without sacrificing any advantages of the larger models."
+    },
+    {
+      "title": "Pocket-TTS 100M - a Hugging Face Space by Nymbo",
+      "url": "https://huggingface.co/spaces/Nymbo/Pocket-TTS",
+      "snippet": "This app turns your written text into natural-sounding speech. You can choose from preset voices or upload your own voice sample for cloning. Adjust settings like temperature, speed, and audio qual..."
+    },
+    {
+      "title": "Kyutai&#x27;s Pocket TTS runs 100M-parameter speech on a CPU, no GPU ...",
+      "url": "https://thetesserapress.com/articles/kyutai-labspocket-tts",
+      "snippet": "Kyutai releases Pocket TTS, a 100M-parameter speech model that runs 6x real-time on a MacBook Air M4 CPU, with voice cloning and browser support."
+    }
+  ]
+}

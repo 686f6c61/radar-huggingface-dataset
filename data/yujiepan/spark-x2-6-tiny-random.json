@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "yujiepan/spark-x2.6-tiny-random",
+  "slug": "yujiepan-spark-x2-6-tiny-random",
+  "author": "yujiepan",
+  "url": "https://huggingface.co/yujiepan/spark-x2.6-tiny-random",
+  "created_at": "2026-10-24T11:20:50.000Z",
+  "updated_at": "2026-10-24T11:20:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "spark2_5",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "base_model:XHToken/Spark-X2.6-4B",
+    "base_model:finetune:XHToken/Spark-X2.6-4B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2138512,
+  "parameters_human": "2.1M",
+  "storage_bytes": 4284048,
+  "storage_human": "4 MB",
+  "base_model": "XHToken/Spark-X2.6-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yujiepan/spark-x2.6-tiny-random · Hugging Face",
+      "url": "https://huggingface.co/yujiepan/spark-x2.6-tiny-random",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - XHToken/Spark-X2.6: Spark-x2.6 open model series. Pushing the ...",
+      "url": "https://github.com/XHToken/Spark-X2.6",
+      "snippet": "A little over a month has passed since Spark-X2.5. In the rapidly evolving world of AI agents, that is enough time to rethink, refine, and move the frontier forward. Building on the Spark-X2.5-4B, we introduce Spark-X2.6-4B, the latest generation of our compact, general-purpose language models for on-device deployment. Spark-X2.6-4B retains exactly the same architecture as Spark-X2.5-4B ..."
+    },
+    {
+      "title": "yujiepan (yujiepan) - Hugging Face",
+      "url": "https://huggingface.co/yujiepan/models",
+      "snippet": "published a model 7 days ago Organizations"
+    },
+    {
+      "title": "yujiepan-work (Yujie Pan) · GitHub",
+      "url": "https://github.com/yujiepan-work",
+      "snippet": "work account. yujiepan-work has 46 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Spark-X2.6 API Pricing & Benchmarks | LMSpeed",
+      "url": "https://lmspeed.net/model/spark-x2-6",
+      "snippet": "Spark-X2.6 is iFLYTEK&#x27;s 293B-A30B mixture-of-experts model with a 1M-token context window, built for coding and agent tasks. The official model square lists a limited-time CNY tariff of ¥0.9 input and ¥3.6 output per million tokens, versus regular rates of ¥1.5 and ¥6. API access is available through iFLYTEK MaaS."
+    }
+  ]
+}

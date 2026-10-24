@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "ReadyArt/Wicked-Stuff-26B-A4B-v2.1-Final-GGUF",
+  "slug": "readyart-wicked-stuff-26b-a4b-v2-1-final-gguf",
+  "author": "ReadyArt",
+  "url": "https://huggingface.co/ReadyArt/Wicked-Stuff-26B-A4B-v2.1-Final-GGUF",
+  "created_at": "2026-10-24T12:23:29.000Z",
+  "updated_at": "2026-10-24T15:47:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "nsfw",
+    "explicit",
+    "roleplay",
+    "unaligned",
+    "ERP",
+    "Erotic",
+    "Horror",
+    "Violence",
+    "adult-content",
+    "mature",
+    "conversational",
+    "instruct",
+    "text-generation",
+    "en",
+    "base_model:ReadyArt/Wicked-Stuff-26B-A4B-v2.1-FINAL",
+    "base_model:quantized:ReadyArt/Wicked-Stuff-26B-A4B-v2.1-FINAL",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 262822577472,
+  "storage_human": "262.8 GB",
+  "base_model": "ReadyArt/Wicked-Stuff-26B-A4B-v2.1-FINAL",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ReadyArt/Wicked-Stuff-26B-A4B-Final-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ReadyArt/Wicked-Stuff-26B-A4B-Final-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ReadyArt/Wicked-Stuff-26B-A4B-v2.0-Final-GGUF at main",
+      "url": "https://huggingface.co/ReadyArt/Wicked-Stuff-26B-A4B-v2.0-Final-GGUF/tree/main",
+      "snippet": "Instructions to use ReadyArt/Wicked-Stuff-26B-A4B-v2.-Final-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use ReadyArt/Wicked-Stuff-26B-A4B-v2.-Final-GGUF with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "OpenAI Releases 722 Math Manuscripts From an Unreleased AI Model",
+      "url": "https://www.unite.ai/openai-releases-722-math-manuscripts-from-an-unreleased-ai-model/",
+      "snippet": "In a research post published October 6, 2026, OpenAI said it is releasing a broad range of new mathematical results produced by an unreleased internal frontier model, publishing 722 manuscripts organized into 372 familie..."
+    },
+    {
+      "title": "ReadyArt AI Model Benchmarks | BenchmarkList",
+      "url": "https://benchmarklist.com/providers/readyart/",
+      "snippet": "ReadyArt AI model benchmark profile: 25 models, 1 covered benchmarks on BenchmarkList."
+    },
+    {
+      "title": "ReadyArt · modelindex.dev",
+      "url": "https://modelindex.dev/orgs/ReadyArt",
+      "snippet": "Models published by ReadyArt, indexed with per-file cryptographic hashes on modelindex.dev. Browse each model and verify your downloads."
+    }
+  ]
+}

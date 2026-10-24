@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "TawusGames/Flux-2-Klein-4b-GGUF",
+  "slug": "tawusgames-flux-2-klein-4b-gguf",
+  "author": "TawusGames",
+  "url": "https://huggingface.co/TawusGames/Flux-2-Klein-4b-GGUF",
+  "created_at": "2026-10-24T14:55:24.000Z",
+  "updated_at": "2026-10-24T15:27:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3875544576,
+  "parameters_human": "3.88B",
+  "storage_bytes": 5416719398,
+  "storage_human": "5.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unsloth/FLUX.2-klein-4B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/FLUX.2-klein-4B-GGUF",
+      "snippet": "This is a GGUF quantized version of FLUX.2-klein-4B. unsloth/FLUX.2-klein-4B-GGUF uses Unsloth Dynamic 2.0 methodology for SOTA performance. Important layers are upcasted to higher precision. Uses tooling from ComfyUI-GGUF by city96. The FLUX.2 [klein] model family are our fastest image models to ..."
+    },
+    {
+      "title": "JoyFusionAI/gguf-flux2-klein-4b · Hugging Face",
+      "url": "https://huggingface.co/JoyFusionAI/gguf-flux2-klein-4b",
+      "snippet": "FLUX.2 [klein] 4B, including its text encoder and VAE, is released by Black Forest Labs under the Apache License 2.0 (see LICENSE.md). The GGUF conversion was done by the stable-diffusion.cpp project; the files here are unmodified copies ..."
+    },
+    {
+      "title": "Flux.2 Klein 4b - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/flux-2-klein-4b.html",
+      "snippet": "Download Flux.2 Klein 4b GGUF model. 8.40 GB, 378,933 downloads, 236 likes."
+    },
+    {
+      "title": "FLUX.2-klein-4B-GGUF · Model · Inferix",
+      "url": "https://inferix.co/models/unsloth/FLUX.2-klein-4B-GGUF",
+      "snippet": "This is a GGUF quantized version of FLUX.2-klein-4B. unsloth/FLUX.2-klein-4B-GGUF uses Unsloth Dynamic 2.0 methodology for SOTA performance. Important layers are upcasted to higher precision. Uses tooling from ComfyUI-GGUF by city96."
+    },
+    {
+      "title": "Unsloth - FLUX.2-Klein-4B-GGUF (Distilled)",
+      "url": "https://civitai.com/models/2400928/unsloth-flux2-klein-4b-gguf-distilled",
+      "snippet": "This is a GGUF quantized version of FLUX.2-klein-4B. unsloth/FLUX.2-klein-4B-GGUF uses Unsloth Dynamic 2.0 methodology for SOTA performance. Important layers are upcasted to higher precision. Uses tooling from ComfyUI-GGUF by city96."
+    }
+  ]
+}

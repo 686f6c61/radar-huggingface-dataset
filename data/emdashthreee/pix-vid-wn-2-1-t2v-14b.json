@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "emdashthreee/pix-vid-wn-2.1-t2v-14b",
+  "slug": "emdashthreee-pix-vid-wn-2-1-t2v-14b",
+  "author": "emdashthreee",
+  "url": "https://huggingface.co/emdashthreee/pix-vid-wn-2.1-t2v-14b",
+  "created_at": "2026-10-24T11:24:54.000Z",
+  "updated_at": "2026-10-24T11:46:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "t2v",
+    "video generation",
+    "text-to-video",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14288491584,
+  "parameters_human": "14.29B",
+  "storage_bytes": 69051682460,
+  "storage_human": "69.1 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wan AI: Leading AI Video Generation Model",
+      "url": "https://wan.video/",
+      "snippet": "Wan is an AI creative platform. It aims to lower the barrier to creative work using artificial intelligence, offering features like text-to-image, image-to-image, text-to-video, image-to-video, and image editing."
+    },
+    {
+      "title": "Wan Video 2.1 - wan2.1_t2v_14B_fp8_e4m3fn - Civitai",
+      "url": "https://civitai.com/models/1329096/wan-video-21",
+      "snippet": "Wan Video Note: There are other Wan Video files hosted on Civitai - these may be duplicates, but this model card is primarily to host the files used by Wan Video in the Civitai Generator. 👍 SOTA Performance: Wan2.1 consistently outperforms existing open-source models and state-of-the-art commercial solutions across multiple benchmarks. 👍 Supports Consumer-grade GPUs: The T2V-1.3B model ..."
+    },
+    {
+      "title": "README.md · Wan-AI/Wan2.1-T2V-14B at main - Hugging Face",
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-14B/blob/main/README.md",
+      "snippet": "In this repository, we present Wan2.1, a comprehensive and open suite of video foundation models that pushes the boundaries of video generation. Wan2.1 offers these key features: This repository features our T2V-14B model, which establishes a new SOTA performance benchmark among both open-source and ..."
+    },
+    {
+      "title": "Wan-AI/Wan2.1-T2V-14B at main - Hugging Face",
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-14B/tree/main/examples",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Wan2.1 - t2v-14B-720p - Free AI Model | TensorHub Art",
+      "url": "https://tensorhub.art/models/834845675863700019",
+      "snippet": "This repository features our T2V-14B model, which establishes a new SOTA performance benchmark among both open-source and closed-source models. It demonstrates exceptional capabilities in generating high-quality visuals with significant motion dynamics."
+    }
+  ]
+}

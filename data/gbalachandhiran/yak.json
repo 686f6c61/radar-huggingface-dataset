@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "gbalachandhiran/yak",
+  "slug": "gbalachandhiran-yak",
+  "author": "gbalachandhiran",
+  "url": "https://huggingface.co/gbalachandhiran/yak",
+  "created_at": "2026-10-24T11:25:33.000Z",
+  "updated_at": "2026-10-24T11:25:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gbalachandhiran · GitHub",
+      "url": "https://github.com/gbalachandhiran/",
+      "snippet": "gbalachandhiran has 6 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "gbalachandhiran (Balachandhiran) - Hugging Face",
+      "url": "https://huggingface.co/gbalachandhiran",
+      "snippet": "User profile of Balachandhiran on Hugging Face"
+    },
+    {
+      "title": "Yak-AI",
+      "url": "https://www.yakmind.net/",
+      "snippet": "Welcome to Yak-AI Your Multimodal AI Expert Ask me anything in any language. I can analyze images, read documents, and explain complex topics."
+    },
+    {
+      "title": "Grounded in reality, new AI model spots fake images with less training",
+      "url": "https://techxplore.com/news/2026-06-grounded-reality-ai-fake-images.html",
+      "snippet": "Artificial intelligence (AI)-generated images have become increasingly more sophisticated than early ones that showed humans with more than five fingers on a hand, making it even harder to determine whether photos are authentic. Now, a team of computer scientists in the McKelvey School of Engineering at Washington University in St. Louis has developed a model that can detect fake images by ..."
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/",
+      "snippet": "We couldn&#x27;t load your remembered accounts. You can still log in below"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Quiho/MASTER_ANIMA_AniMaster_AniMaster_Base_1.0_V1_checkpoint",
+  "slug": "quiho-master_anima_animaster_animaster_base_1-0_v1_checkpoint",
+  "author": "Quiho",
+  "url": "https://huggingface.co/Quiho/MASTER_ANIMA_AniMaster_AniMaster_Base_1.0_V1_checkpoint",
+  "created_at": "2026-10-24T14:49:34.000Z",
+  "updated_at": "2026-10-24T14:52:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "checkpoint",
+    "anima",
+    "anime",
+    "base model",
+    "2d",
+    "fantasy",
+    "furry",
+    "civitai",
+    "imported",
+    "not-for-all-audiences",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5905991853,
+  "storage_human": "5.9 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MASTER_ANIMA: AniMaster - AniMaster | Base 1.0 | V1 | Anima Checkpoint ...",
+      "url": "https://civitai.com/models/2546307/masteranima-animaster",
+      "snippet": "MASTER_ANIMA: V2 | AniMaster Welcome to the next evolution of the Anima merging workflow. This checkpoint represents a refined, highly optimized fu..."
+    },
+    {
+      "title": "MASTER_ANIMA: AniMaster AniMaster | Base 1.0 | V1 | CivArchive",
+      "url": "https://civarchive.com/models/2546307?modelVersionId=3093052",
+      "snippet": "Download MASTER_ANIMA: AniMaster AniMaster | Base 1.0 | V1, a Checkpoint for Anima. 3 files: qwen_image_vae.safetensors (242 MB), masterANIMAAnimaster_animasterBase10V1_tx… (1.1 GB), +1 more. Published Jul 3, 2026. 937 live mirrors. MASTER_ANIMA: V2 | AniMasterWelcome to the next evolution of the Anima merging workflow. This checkpoint represents a r…"
+    },
+    {
+      "title": "AniMaster | Master Anima AniMaster | Base 1.0 | V1 :: Anima Checkpoint ...",
+      "url": "https://tungsten.run/model/FmPicEYCUe",
+      "snippet": "That older version was pretty short since I made it just to test my new merge script (so it&#x27;s cleaner and more faithful to the base model&#x27;s style), but I really wanted to play around with DMD2 in this new recipe, so I gave it another shot. Long story short: I was planning to scrap it, but I tried it again this morning and it finally worked."
+    },
+    {
+      "title": "Anima - base-v1.0 | Anima Checkpoint | Civitai",
+      "url": "https://civitai.com/models/2458426/anima?modelVersionId=2945208",
+      "snippet": "Anima is a 2 billion parameter text-to-image model created via a collaboration between CircleStone Labs and Comfy Org. It is focused mainly on anim..."
+    },
+    {
+      "title": "Anima base-v1.0 - Checkpoint for Anima | CivArchive",
+      "url": "https://civarchive.com/models/2458426?modelVersionId=2945208",
+      "snippet": "Anima is a 2 billion parameter text-to-image model created via a collaboration between CircleStone Labs and Comfy Org. It is focused mainly on anime concepts, characters, and styles, but is also capable of generating a wide variety of other non-photorealistic content. The model is designed for making illustrations and artistic images, and will not work well at realism. It is trained on several ..."
+    }
+  ]
+}

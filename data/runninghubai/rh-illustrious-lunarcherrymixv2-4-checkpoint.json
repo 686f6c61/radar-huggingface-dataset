@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-illustrious-lunarcherrymixv2.4-checkpoint",
+  "slug": "runninghubai-rh-illustrious-lunarcherrymixv2-4-checkpoint",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-illustrious-lunarcherrymixv2.4-checkpoint",
+  "created_at": "2026-10-24T12:13:26.000Z",
+  "updated_at": "2026-10-24T12:19:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "checkpoint",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6940849019,
+  "storage_human": "6.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Illustrious_LunarCherryMix Versatile Stable Model V2.4 - runninghub.ai",
+      "url": "https://www.runninghub.ai/model/public/2012567202288902145",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "RunningHubAI/rh-illustriousmix-checkpoint · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-illustriousmix-checkpoint",
+      "snippet": "RunningHubAI / rh-illustriousmix-checkpoint Like 0 comfyui checkpoint Model card FilesFiles and versions xet Community Copy to bucket new rh-illustriousmix-checkpoint Description About this model Files License Training at RunningHub"
+    },
+    {
+      "title": "RunningHubAI/rh-illustrious-v4-checkpoint · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-illustrious-v4-checkpoint",
+      "snippet": "RunningHubAI / rh-illustrious-v4-checkpoint Like 0 comfyui checkpoint Model card FilesFiles and versions xet Community Copy to bucket new rh-illustrious-v4-checkpoint Description About this model Files License Training at RunningHub"
+    },
+    {
+      "title": "LunarCherryMix (Illustrious) - RunningHub Stable Diffusion & Flux ...",
+      "url": "https://www.runninghub.cn/model/public/1923307814012243970",
+      "snippet": "According to my tests, the model works stably in most cases, but I introduce early access in order to collect feedback during this time, and then, based on feedback, increase the stability of the model. I will be glad if you support Cherry! ️ LunarCherryMix - Mixed Illustrious model a lot of things."
+    },
+    {
+      "title": "Illustrious - Learn AI",
+      "url": "https://ai.miraheze.org/wiki/Illustrious",
+      "snippet": "Within three months of its initial release, the model&#x27;s influence became so pervasive that civitai, the largest repository for AI art models and resources, created a dedicated \"Illustrious Checkpoint\" category to organize the flood of derivative models, LoRA adapters, and related resources built upon the Illustrious base."
+    }
+  ]
+}

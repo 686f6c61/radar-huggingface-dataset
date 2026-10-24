@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "wereswe/closeup",
+  "slug": "wereswe-closeup",
+  "author": "wereswe",
+  "url": "https://huggingface.co/wereswe/closeup",
+  "created_at": "2026-10-24T17:00:59.000Z",
+  "updated_at": "2026-10-24T17:10:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 310167928,
+  "storage_human": "310 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "closeup AI Models | Civitai",
+      "url": "https://civitai.com/tag/closeup",
+      "snippet": "Browse 60 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with closeup."
+    },
+    {
+      "title": "imgfig — figure out the AI model behind any image",
+      "url": "https://imgfig.com/",
+      "snippet": "fig img fig figure out the AI model behind any image Sign in Drop an AI image — find the Civitai checkpoints & LoRAs that make that look. Works even if Reddit or Instagram stripped the metadata. Drag & drop an image, or click to choose Show NSFW models (18+) — previews stay censored; model names may be explicit Free tool."
+    },
+    {
+      "title": "Best AI Models for Roleplay (October 2026) | LoreWeaver",
+      "url": "https://www.loreweaverai.com/models",
+      "snippet": "Compare all 42 AI models on LoreWeaver for roleplay and long stories, from Claude and GPT-6 to DeepSeek and Kimi K3, with pros and cons."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Model Radar — real-time AI model release tracking",
+      "url": "https://aimodelradar.app/",
+      "snippet": "The moment a new AI model appears on the radar, know what it is and what changed. Tracking OpenAI, Anthropic, Google and open-source releases."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Ereno19/modeloreciclaje",
+  "slug": "ereno19-modeloreciclaje",
+  "author": "Ereno19",
+  "url": "https://huggingface.co/Ereno19/modeloreciclaje",
+  "created_at": "2026-10-24T17:13:24.000Z",
+  "updated_at": "2026-10-24T17:13:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:Ereno19/reciclaje",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714896,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "AI Model Detector — Which AI Made This Image? | PromptShotAI",
+      "url": "https://promptshotai.com/tools/ai-model-detector",
+      "snippet": "Free AI model detector. Upload any image and find out which AI generated it — Midjourney, Flux, SDXL, DALL-E, or Ideogram — with a confidence score and visual tells."
+    },
+    {
+      "title": "Scan your repo for retiring AI models — ModelCanary",
+      "url": "https://modelcanary.com/scan",
+      "snippet": "Scan your repo for retiring models Paste a public GitHub repo. We look for AI model IDs in your code and flag the ones that are retiring, retired or had price changes."
+    },
+    {
+      "title": "AI Model Index",
+      "url": "https://www.modelindex.org/",
+      "snippet": "Search and explore AI models across providers, modalities, and capabilities. Currently supported providers: OpenAI, Google, Anthropic, Meta, and Mistral AI. See the Model Inclusion Policy for details on selection criteria."
+    },
+    {
+      "title": "re0n - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1947754068442657805",
+      "snippet": "Generate stunning anime art with the &#x27;re0n&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    }
+  ]
+}

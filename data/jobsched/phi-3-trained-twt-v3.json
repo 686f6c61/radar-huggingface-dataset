@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "JobSched/phi-3-trained-twt-v3",
+  "slug": "jobsched-phi-3-trained-twt-v3",
+  "author": "JobSched",
+  "url": "https://huggingface.co/JobSched/phi-3-trained-twt-v3",
+  "created_at": "2026-10-24T14:43:23.000Z",
+  "updated_at": "2026-10-24T14:43:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "phi3",
+    "text-generation",
+    "autotrain",
+    "text-generation-inference",
+    "peft",
+    "conversational",
+    "custom_code",
+    "base_model:microsoft/Phi-3-mini-128k-instruct",
+    "base_model:finetune:microsoft/Phi-3-mini-128k-instruct",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JobSched/phi-3-adapter-v4 · Hugging Face",
+      "url": "https://huggingface.co/JobSched/phi-3-adapter-v4",
+      "snippet": "JobSched / phi-3-adapter-v4 Like 0 Text Generation Transformers TensorBoard Safetensors PEFT Trained with AutoTrain text-generation-inference conversational License:other Model card FilesFiles and versions xet MetricsTraining metrics Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Phi-3 - a microsoft Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/microsoft/phi-3",
+      "snippet": "Phi-3 family of small language and multi-modal models. Language models are available in short- and long-context lengths."
+    },
+    {
+      "title": "Phi (language model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Phi_(language_model)",
+      "snippet": "Phi is a series of large language models developed by Microsoft that are open-weights and can run locally on one&#x27;s device. The initial version, Phi-1, released in June 2023. Phi-3 was released in April 2024. Phi-4-reasoning-vision-15B was released in March 2026. The New York Times considered Phi-3-mini to be Microsoft&#x27;s push into smaller large language models. Phi-3-mini has 3.8 billion ..."
+    },
+    {
+      "title": "Announcing Phi-3 fine-tuning, new generative AI models, and other Azure ...",
+      "url": "https://azure.microsoft.com/en-us/blog/announcing-phi-3-fine-tuning-new-generative-ai-models-and-other-azure-ai-updates-to-empower-organizations-to-customize-and-scale-ai-applications/",
+      "snippet": "Phi-3 models are our most capable and cost-effective small language models (SLMs) available, outperforming models of the same size and next size up. As developers look to tailor AI solutions to meet specific business needs and improve quality of responses, fine-tuning a small model is a great alternative without sacrificing performance."
+    },
+    {
+      "title": "Phi-3 Technical Report: A Highly Capable Language Model Locally on Your ...",
+      "url": "https://arxiv.org/html/2404.14219v4",
+      "snippet": "For example our previous model trained on this data recipe, phi-2 (2.7B parameters), matched the performance of models 25 $25$ times larger trained on regular data. In this report we present a new model, phi-3-mini (3.8B parameters), trained for 3.3T tokens on larger and more advanced versions of the datasets used in phi-2."
+    }
+  ]
+}

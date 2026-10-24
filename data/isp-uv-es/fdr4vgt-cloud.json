@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "isp-uv-es/FDR4VGT-CLOUD",
+  "slug": "isp-uv-es-fdr4vgt-cloud",
+  "author": "isp-uv-es",
+  "url": "https://huggingface.co/isp-uv-es/FDR4VGT-CLOUD",
+  "created_at": "2025-11-06T12:58:00.000Z",
+  "updated_at": "2026-10-24T12:47:50.000Z",
+  "license": "cc0-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "remote-sensing",
+    "earth-observation",
+    "cloud-detection",
+    "cloud-segmentation",
+    "satellite-imagery",
+    "spot-vgt",
+    "proba-v",
+    "semantic-segmentation",
+    "image-segmentation",
+    "license:cc0-1.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2332220924,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "L'ISP VOUS FORME DEPUIS 1984 - Prépa ISP - Institut Supérieur de ...",
+      "url": "https://www.prepa-isp.fr/",
+      "snippet": "L'ISP VOUS FORME DEPUIS 1984 Préparation aux concours et examens juridiques et administratifs Avocats 1 CRFPA"
+    },
+    {
+      "title": "Service d'inscription aux compétitions de golf | ISP Golf",
+      "url": "https://www.isp.golf/",
+      "snippet": "Connexion au service d'inscription aux compétitions de golf - ISP Golf. Utilisation de la licence FFG comme identifiant"
+    },
+    {
+      "title": "Mon compte - Prépa ISP",
+      "url": "https://www.prepa-isp.fr/mon-compte",
+      "snippet": "La certification a été délivrée au titre de la catégorie d'action suivante : Actions de formation Cliquez pour télécharger le certificat …"
+    },
+    {
+      "title": "Fournisseur d'accès à Internet — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Fournisseur_d%27acc%C3%A8s_%C3%A0_Internet",
+      "snippet": "Un fournisseur d'accès à Internet ou FAI (aussi appelé fournisseur de services Internet ou FSI1, l'acronyme ISP de l' anglais Internet …"
+    },
+    {
+      "title": "Définition | ISP : qu'est-ce que c'est ? | tech - Futura",
+      "url": "https://www.futura-sciences.com/tech/definitions/internet-isp-482/",
+      "snippet": "Dec 8, 2021 · ISP signifie Internet service provider et se traduit par fournisseur de service Internet ou FSI. Il s'agit généralement …"
+    }
+  ]
+}

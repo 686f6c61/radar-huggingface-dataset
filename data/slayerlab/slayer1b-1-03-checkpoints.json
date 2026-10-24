@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "SlayerLab/Slayer1B-1.03-checkpoints",
+  "slug": "slayerlab-slayer1b-1-03-checkpoints",
+  "author": "SlayerLab",
+  "url": "https://huggingface.co/SlayerLab/Slayer1B-1.03-checkpoints",
+  "created_at": "2026-10-24T08:44:16.000Z",
+  "updated_at": "2026-10-24T16:59:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "polish",
+    "checkpoints",
+    "training-history",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 62022010057,
+  "storage_human": "62.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SlayerLab/Slayer1B-1.01-checkpoints · Hugging Face",
+      "url": "https://huggingface.co/SlayerLab/Slayer1B-1.01-checkpoints",
+      "snippet": "Slayer1B 1.01 — training checkpoints Full trainer checkpoints of the run that produced Slayer1B 1.01: continued training of Slayer1B 1.00 from its last checkpoint before the learning-rate decay (ckpt_1050.pt), with a new total budget of twice the tokens per parameter of 1.00. Each file holds the model weights and the optimizer state."
+    },
+    {
+      "title": "SlayerLab (Slayer Labs) - Hugging Face",
+      "url": "https://huggingface.co/SlayerLab/datasets",
+      "snippet": "Org profile for Slayer Labs on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Checkpoint AI Models (145) | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 145 AI models tagged \"Checkpoint\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    },
+    {
+      "title": "GitHub - slayerlabs/Fabryka-AI-Notes",
+      "url": "https://github.com/slayerlabs/Fabryka-AI-Notes",
+      "snippet": "Technical reports, design notes and proposals shared between teams (SlayerLab, Fabryka AI and friends) for know-how exchange and attribution. PDFs only. One folder per paper."
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/",
+      "snippet": "We couldn&#x27;t load your remembered accounts. You can still log in below"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "openmodelai/Imagt",
+  "slug": "openmodelai-imagt",
+  "author": "openmodelai",
+  "url": "https://huggingface.co/openmodelai/Imagt",
+  "created_at": "2026-10-24T12:11:39.000Z",
+  "updated_at": "2026-10-24T12:12:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenModelDB",
+      "url": "https://openmodeldb.info/",
+      "snippet": "OpenModelDB is a community driven database of AI Upscaling models. We aim to provide a better way to find and compare models than existing sources."
+    },
+    {
+      "title": "All models | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/all",
+      "snippet": "Browse all available models on the OpenAI Platform."
+    },
+    {
+      "title": "Available Models | OpenModel",
+      "url": "https://docs.openmodel.ai/en/docs/guides/models",
+      "snippet": "Some models advertise benefits for supported clients such as Codex or Claude Code. Model Pricing shows currently published offers, while the consumption log shows the price actually applied to a request. Learn more in Client Benefits."
+    },
+    {
+      "title": "GPT-Image-2 Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/gpt-image-2",
+      "snippet": "State-of-the-art image generation model Compare Try in Playground"
+    },
+    {
+      "title": "GitHub - OpenModelDB/open-model-database: An open and free database for ...",
+      "url": "https://github.com/OpenModelDB/open-model-database",
+      "snippet": "An open and free database for AI models. Contribute to OpenModelDB/open-model-database development by creating an account on GitHub."
+    }
+  ]
+}

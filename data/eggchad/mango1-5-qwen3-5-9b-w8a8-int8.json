@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "Eggchad/MANGO1.5-Qwen3.5-9B-W8A8-INT8",
+  "slug": "eggchad-mango1-5-qwen3-5-9b-w8a8-int8",
+  "author": "Eggchad",
+  "url": "https://huggingface.co/Eggchad/MANGO1.5-Qwen3.5-9B-W8A8-INT8",
+  "created_at": "2026-10-24T15:14:53.000Z",
+  "updated_at": "2026-10-24T15:16:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [
+    "th",
+    "en"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen3_5",
+    "thai",
+    "bilingual",
+    "qwen3.5",
+    "int8",
+    "w8a8",
+    "compressed-tensors",
+    "mtp",
+    "speculative-decoding",
+    "quantized",
+    "text-generation",
+    "conversational",
+    "th",
+    "en",
+    "base_model:CMKL/MANGO1.5-Qwen3.5-9B",
+    "base_model:quantized:CMKL/MANGO1.5-Qwen3.5-9B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 12419806261,
+  "storage_human": "12.4 GB",
+  "base_model": "CMKL/MANGO1.5-Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "X. It’s what’s happening / X",
+      "url": "https://x.com/",
+      "snippet": "From breaking news and entertainment to sports and politics, get the full story with all the live commentary."
+    },
+    {
+      "title": "Twitter",
+      "url": "https://pro.twitter.com/login",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "Twitter (@twitter) / X",
+      "url": "https://x.com/TWITTER",
+      "snippet": "These posts are protected Only approved followers can see @twitter’s posts. To request access, click Follow. Learn more"
+    },
+    {
+      "title": "X - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.twitter.android&hl=en",
+      "snippet": "Welcome to X, your trusted digital town square, where conversations unfold in real time, and the world connects through breaking …"
+    },
+    {
+      "title": "Download the X app",
+      "url": "https://help.x.com/en/using-x/download-the-x-app",
+      "snippet": "Download the >x< app on your device. The >x< app is the trusted global digital town square for everyone. With >x<, you can: Post …"
+    }
+  ]
+}

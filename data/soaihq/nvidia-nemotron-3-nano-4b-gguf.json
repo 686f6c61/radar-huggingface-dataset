@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "SoAIHQ/NVIDIA-Nemotron-3-Nano-4B-GGUF",
+  "slug": "soaihq-nvidia-nemotron-3-nano-4b-gguf",
+  "author": "SoAIHQ",
+  "url": "https://huggingface.co/SoAIHQ/NVIDIA-Nemotron-3-Nano-4B-GGUF",
+  "created_at": "2026-10-24T17:17:23.000Z",
+  "updated_at": "2026-10-24T17:19:21.000Z",
+  "license": "nvidia-nemotron-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "imatrix",
+    "soai",
+    "tool-calling",
+    "function-calling",
+    "agent",
+    "reasoning",
+    "mamba",
+    "text-generation",
+    "base_model:nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16",
+    "base_model:quantized:nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3973556832,
+  "parameters_human": "3.97B",
+  "storage_bytes": 7074321695,
+  "storage_human": "7.1 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PDF NVIDIA-Nemotron-3-Nano-4B-GGUF - NVIDIA Developer",
+      "url": "https://developer.nvidia.com/downloads/assets/ace/model_card/nemotron_3_nano_4b.pdf",
+      "snippet": "NVIDIA-Nemotron-3-Nano-4B is an edge-ready small language model intended for Agentic AI in edge platforms (Jetson Thor, GeForce RTX, DGX Spark). It targets key-uses including AI gaming NPCs (teammates / companions), local voice assistants (for devices, apps, and games), and IoT automation."
+    },
+    {
+      "title": "README.md · unsloth/NVIDIA-Nemotron-3-Nano-4B-GGUF at main",
+      "url": "https://huggingface.co/unsloth/NVIDIA-Nemotron-3-Nano-4B-GGUF/blob/main/README.md",
+      "snippet": "NVIDIA-Nemotron-3-Nano-4B is an edge-ready small language model intended for Agentic AI in edge platforms (Jetson Thor, GeForce RTX, DGX Spark). It targets key-uses including AI gaming NPCs (teammates / companions), local voice assistants (for devices, apps, and games), and IoT automation."
+    },
+    {
+      "title": "NVIDIA Nemotron 3.5 Bolt E4B 4GB - NVIDIA Nemotron",
+      "url": "https://research.nvidia.com/labs/nemotron/Nemotron-3.5-Bolt-E4B-4GB/",
+      "snippet": "We are releasing NVIDIA Nemotron 3.5 Bolt E4B 4GB, an open small language model optimized for speed and intelligence per GB in conversational agents."
+    },
+    {
+      "title": "NVIDIA-Nemotron-3-Nano-4B-GGUF - Secret AI",
+      "url": "https://secretai.io/models/nvidia/NVIDIA-Nemotron-3-Nano-4B-GGUF",
+      "snippet": "NVIDIA-Nemotron-3-Nano-4B is an edge-ready small language model intended for Agentic AI in edge platforms (Jetson Thor, GeForce RTX, DGX Spark). It targets key-uses including AI gaming NPCs (teammates / companions), local voice assistants (for devices, apps, and games), and IoT automation."
+    },
+    {
+      "title": "PDF NVIDIA-Nemotron-3-Nano-4B-GGUF",
+      "url": "https://developer.download.nvidia.cn/assets/ace/model_card/Nemotron_3_Nano_4B.pdf",
+      "snippet": "Model Overview NVIDIA-Nemotron-3-Nano-4B-GGUF is quantized version (Q4_K_M) of NVIDIA-Nemotron-3-Nano-4B-BF16 and is a small language model (SLM) trained from scratch by NVIDIA, and designed as a unified model for both reasoning and non-reasoning tasks. It responds to user queries and tasks by first generating a reasoning trace and then concluding with a final response. The model&#x27;s reasoning ..."
+    }
+  ]
+}

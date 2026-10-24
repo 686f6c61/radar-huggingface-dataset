@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "ArchiveStudio/MOSS-Audio-8B-Thinking",
+  "slug": "archivestudio-moss-audio-8b-thinking",
+  "author": "ArchiveStudio",
+  "url": "https://huggingface.co/ArchiveStudio/MOSS-Audio-8B-Thinking",
+  "created_at": "2026-10-24T14:59:14.000Z",
+  "updated_at": "2026-10-24T14:59:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "moss_audio",
+    "audio",
+    "speech",
+    "music",
+    "understanding",
+    "multimodal",
+    "reasoning",
+    "chain-of-thought",
+    "audio-text-to-text",
+    "custom_code",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9052463488,
+  "parameters_human": "9.05B",
+  "storage_bytes": 18111010792,
+  "storage_human": "18.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MOSS-Audio | Audio Understanding Model - openmoss.ai",
+      "url": "https://openmoss.ai/MOSS-Audio/",
+      "snippet": "MOSS-Audio is an open-source audio understanding model supporting speech recognition, environmental sound understanding, music analysis, time-aware QA, and complex reasoning."
+    },
+    {
+      "title": "GitHub - OpenMOSS/MOSS-Audio: An open-source model for understanding ...",
+      "url": "https://github.com/OpenMOSS/MOSS-Audio",
+      "snippet": "MOSS-Audio is an open-source audio understanding model from MOSI.AI, the OpenMOSS team, and Shanghai Innovation Institute. It performs unified modeling over complex real-world audio, supporting speech understanding, environmental sound understanding, music understanding, audio captioning, time-aware QA, and complex reasoning."
+    },
+    {
+      "title": "Jinstudio/MOSS-Audio-8B-Thinking · Hugging Face",
+      "url": "https://huggingface.co/Jinstudio/MOSS-Audio-8B-Thinking",
+      "snippet": "MOSS-Audio is an open-source audio understanding model from MOSI.AI, the OpenMOSS team, and Shanghai Innovation Institute. It performs unified modeling over complex real-world audio, supporting speech understanding, environmental sound understanding, music understanding, audio captioning, time-aware QA, and complex reasoning."
+    },
+    {
+      "title": "MOSS-Audio-8B-Thinking · Models",
+      "url": "https://www.modelscope.cn/models/openmoss/MOSS-Audio-8B-Thinking",
+      "snippet": "MOSS-Audio MOSS-Audio is an open-source audio understanding model from MOSI.AI, the OpenMOSS team, and Shanghai Innovation Institute. It performs unified modeling over complex real-world audio, supporting speech understanding, environmental sound understanding, music understanding, audio captioning, time-aware QA, and complex reasoning."
+    },
+    {
+      "title": "MOSS-Audio/README.md at main · OpenMOSS/MOSS-Audio · GitHub",
+      "url": "https://github.com/OpenMOSS/MOSS-Audio/blob/main/README.md",
+      "snippet": "MOSS-Audio is an open-source audio understanding model from MOSI.AI, the OpenMOSS team, and Shanghai Innovation Institute. It performs unified modeling over complex real-world audio, supporting speech understanding, environmental sound understanding, music understanding, audio captioning, time-aware QA, and complex reasoning."
+    }
+  ]
+}

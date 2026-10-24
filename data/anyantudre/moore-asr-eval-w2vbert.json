@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "anyantudre/moore-asr-eval-w2vbert",
+  "slug": "anyantudre-moore-asr-eval-w2vbert",
+  "author": "anyantudre",
+  "url": "https://huggingface.co/anyantudre/moore-asr-eval-w2vbert",
+  "created_at": "2026-10-24T06:43:48.000Z",
+  "updated_at": "2026-10-24T11:58:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "mos"
+  ],
+  "tags": [
+    "safetensors",
+    "wav2vec2-bert",
+    "moore",
+    "mos",
+    "burkina-faso",
+    "ctc",
+    "tts-evaluation",
+    "low-resource",
+    "automatic-speech-recognition",
+    "base_model:facebook/w2v-bert-2.0",
+    "base_model:finetune:facebook/w2v-bert-2.0",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 605715300,
+  "parameters_human": "605.7M",
+  "storage_bytes": 2422966360,
+  "storage_human": "2.4 GB",
+  "base_model": "facebook/w2v-bert-2.0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "anyantudre (Alban NYANTUDRE) · GitHub",
+      "url": "https://github.com/ANYANTUDRE",
+      "snippet": "MooreSpeechCorpora Public Moore Speech Corpora: Toolkit to collect, preprocess, align, and prepare Mooré speech/text data for TTS and ASR. Jupyter Notebook 5 1"
+    },
+    {
+      "title": "Work - Wendyellé A. Alban NYANTUDRE - anyantudre.github.io",
+      "url": "https://anyantudre.github.io/projects/",
+      "snippet": "Fine-Tuning MMS Adapter Models for Low-Resource ASR Scripts and utilities for fine-tuning Meta&#x27;s Massive Multilingual Speech (MMS) adapter models for ASR on low-resource languages like Mooré. Code Write-up TagsComputer Vision · VLM · Deep Learning · Hugging Face Florence-2 Vision Language Model Toolkit"
+    },
+    {
+      "title": "Evaluation metrics for ASR - Hugging Face",
+      "url": "https://huggingface.co/learn/audio-course/chapter5/evaluation",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Best Open Speech Recognition (ASR) Models in 2026: WER, Languages ...",
+      "url": "https://www.marktechpost.com/2026/07/23/best-open-speech-recognition-asr-models-in-2026-wer-languages-latency-and-license-compared/",
+      "snippet": "Compare 16 open ASR models on WER, languages, latency and license, including Cohere Transcribe, Granite Speech and Voxtral"
+    },
+    {
+      "title": "Evaluation metrics for ASR · Hugging Face",
+      "url": "https://huggingface.co/learn/audio-course/en/chapter5/evaluation",
+      "snippet": "What you&#x27;ll learn and what you&#x27;ll build Pre-trained models for speech recognition Choosing a dataset Evaluation and metrics for speech recognition How to fine-tune an ASR system with the Trainer API Building a demo Hands-on exercise Supplemental reading and resources"
+    }
+  ]
+}

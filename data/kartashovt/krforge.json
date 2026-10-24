@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "kartashovt/KRForge",
+  "slug": "kartashovt-krforge",
+  "author": "kartashovt",
+  "url": "https://huggingface.co/kartashovt/KRForge",
+  "created_at": "2026-10-24T17:02:41.000Z",
+  "updated_at": "2026-10-24T17:17:03.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6312639003,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free AI 3D Model Generator - MeshGPT",
+      "url": "https://meshgpt.io/",
+      "snippet": "Create stunning 3D models from text or images instantly with our free AI 3d model generator. Transform your ideas into production-ready 3D assets with MeshGPT."
+    },
+    {
+      "title": "Free AI 3D Model Generator from Text & Images | Image to 3D AI",
+      "url": "https://image-to-3d.ai/ai-3d-model-generator/",
+      "snippet": "Create production-ready 3D models from text or images with our free AI 3D model generator. Clean geometry, rich textures, and easy export for any project."
+    },
+    {
+      "title": "CivArchive - CivitAI Archive",
+      "url": "https://civarchive.com/about",
+      "snippet": "CivArchive is a cross-platform search engine for AI models. We don&#x27;t host files ourselves — instead, we crawl various sources and index the models we find, using the file&#x27;s SHA256 hash as its unique, permanent ID. CivArchive was created in direct response to models being suddenly removed from CivitAI. Our core mission is to be a resilient, community-driven archive that preserves access to ..."
+    },
+    {
+      "title": "TokForge: Offline AI Chat App. Run Local LLMs on Your Phone.",
+      "url": "https://tokforge.ai/",
+      "snippet": "Live on Google Play Your AI. Your phone. Nothing leaves. Run local AI models offline on your phone. Chat, make pictures and ask about your own files, with no account, no subscription and no cloud. Once a model is on your phone, TokForge keeps answering in airplane mode."
+    },
+    {
+      "title": "ModelForest — Interactive AI Model Family Tree",
+      "url": "https://mrunreal.github.io/ModelForest/",
+      "snippet": "Explore how every major AI model evolved from its ancestors. Interactive visualization of LLM genealogy."
+    }
+  ]
+}

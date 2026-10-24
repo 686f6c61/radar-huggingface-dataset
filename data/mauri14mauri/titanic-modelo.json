@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "mauri14mauri/titanic-modelo",
+  "slug": "mauri14mauri-titanic-modelo",
+  "author": "mauri14mauri",
+  "url": "https://huggingface.co/mauri14mauri/titanic-modelo",
+  "created_at": "2026-10-24T15:20:27.000Z",
+  "updated_at": "2026-10-24T15:22:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5497,
+  "storage_human": "5497 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "UncertainPrinciple/titanic-model-v1 · Hugging Face",
+      "url": "https://huggingface.co/UncertainPrinciple/titanic-model-v1",
+      "snippet": "Titanic Survival Predictor 🚢 This project is a simple AI application that predicts a passenger&#x27;s survival chances on the Titanic based on their characteristics. The model was trained using scikit-learn and deployed on Hugging Face Spaces with Gradio."
+    },
+    {
+      "title": "GitHub - KiehlZz/Project-AI",
+      "url": "https://github.com/KiehlZz/Project-AI",
+      "snippet": "This project provides an analysis and prediction model for the Titanic Disaster Survival dataset. Using various machine learning techniques, the model predicts the likelihood of survival for passengers on the Titanic based on features such as age, gender, ticket class, and more. This project ..."
+    },
+    {
+      "title": "Abdalmomen123/titanic-ai-model - GitHub",
+      "url": "https://github.com/Abdalmomen123/titanic-ai-model",
+      "snippet": "🚢 Titanic Survival Prediction (TensorFlow / Keras) 📌 Project Overview This project builds a machine learning classification model using TensorFlow 2.x and Keras to predict passenger survival on the Titanic dataset."
+    },
+    {
+      "title": "Titanic Survival Prediction Using Machine Learning",
+      "url": "https://www.geeksforgeeks.org/machine-learning/titanic-survival-prediction-using-ml/",
+      "snippet": "Objective of the Project: Predicting Titanic Passenger Survival The primary objective of this project is to develop a machine learning model capable of predicting the survival status of Titanic passengers based on available data. The dataset includes information such as demographic attributes (age, sex), socioeconomic status (fare, class), and other relevant features. By analyzing these ..."
+    },
+    {
+      "title": "MahmoodLab/TITAN · Hugging Face",
+      "url": "https://huggingface.co/MahmoodLab/TITAN",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

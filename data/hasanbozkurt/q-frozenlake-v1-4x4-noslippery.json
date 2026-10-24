@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "HasanBozkurt/q-FrozenLake-v1-4x4-noSlippery",
+  "slug": "hasanbozkurt-q-frozenlake-v1-4x4-noslippery",
+  "author": "HasanBozkurt",
+  "url": "https://huggingface.co/HasanBozkurt/q-FrozenLake-v1-4x4-noSlippery",
+  "created_at": "2026-10-24T17:48:24.000Z",
+  "updated_at": "2026-10-24T17:48:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "FrozenLake-v1-4x4-no_slippery",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 915,
+  "storage_human": "915 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dreamboat26/q-FrozenLake-v1-4x4-noSlippery · Hugging Face",
+      "url": "https://huggingface.co/dreamboat26/q-FrozenLake-v1-4x4-noSlippery",
+      "snippet": "Q-Learning Agent playing1 FrozenLake-v1 This is a trained model of a Q-Learning agent playing FrozenLake-v1 ."
+    },
+    {
+      "title": "BoschAI/q-FrozenLake-v1-4x4-noSlippery · Hugging Face",
+      "url": "https://huggingface.co/BoschAI/q-FrozenLake-v1-4x4-noSlippery",
+      "snippet": "Q-Learning Agent playing1 FrozenLake-v1 This is a trained model of a Q-Learning agent playing FrozenLake-v1 ."
+    },
+    {
+      "title": "q-FrozenLake-v1-4x4-noSlippery: Model Details, Context & Pricing | Essa ...",
+      "url": "https://essamamdani.com/ai-models/hf-maxxime-q-frozenlake-v1-4x4-noslippery",
+      "snippet": "Model card indexed from Hugging Face for reinforcement-learning."
+    },
+    {
+      "title": "q-FrozenLake-v1-4x4-noSlippery: Model Details, Context & Pricing | Essa ...",
+      "url": "https://essamamdani.com/ai-models/hf-a1xx1a-q-frozenlake-v1-4x4-noslippery",
+      "snippet": "Model card indexed from Hugging Face. Context window Not listed Last source check 8/9/2026, 12:21:00 PM Input / million tokens Not listed Output / million tokens Not listed a1xx1a Source record ↗ Official link ↗"
+    },
+    {
+      "title": "Honza/q-FrozenLake-v1-4x4-noSlippery - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/99103",
+      "snippet": "Q-Learning Agent playing1 FrozenLake-v1 This is a trained model of a Q-Learning agent playing FrozenLake-v1 ."
+    }
+  ]
+}

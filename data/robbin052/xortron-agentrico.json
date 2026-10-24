@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "robbin052/XORTRON-AgentRICO",
+  "slug": "robbin052-xortron-agentrico",
+  "author": "robbin052",
+  "url": "https://huggingface.co/robbin052/XORTRON-AgentRICO",
+  "created_at": "2026-10-24T14:28:50.000Z",
+  "updated_at": "2026-10-24T14:28:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "unsloth",
+    "vision-language-model",
+    "text-generation-inference",
+    "uncensored",
+    "harmful",
+    "xortron",
+    "heretic",
+    "abliterated",
+    "toxic",
+    "experimental",
+    "not-for-all-audiences",
+    "conversational",
+    "en",
+    "dataset:darkc0de/The-Mind-of-XORTRON",
+    "base_model:orcarouter/Qwen3.8-27B-Uncensored",
+    "base_model:finetune:orcarouter/Qwen3.8-27B-Uncensored",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55582996119,
+  "storage_human": "55.6 GB",
+  "base_model": "orcarouter/Qwen3.8-27B-Uncensored",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xortron (XORTRON - Criminal Computing) - Hugging Face",
+      "url": "https://huggingface.co/xortron",
+      "snippet": "24B • Updated Mar 17 • 765 • 8 XORTRON - Criminal Computing Release Quality Xortron Apps & Models Chat with XORTRON - Criminal Computing Image-Text-to-Text • 27B • Updated Apr 8 • 109 • • 13 darkc0de/XORTRON.CriminalComputing.2026.4B.Instruct.NEXT Image-Text-to-Text • 5B • Updated Apr 7 • 93 • • 8"
+    },
+    {
+      "title": "mradermacher/XORTRON-AgentRICO-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/XORTRON-AgentRICO-GGUF",
+      "snippet": "Like 0 Transformers GGUF darkc0de/The-Mind-of-XORTRON English unsloth vision-language-model text-generation-inference uncensored harmful xortron heretic abliterated toxic experimental Not-For-All-Audiences conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Run XORTRON-AgentRICO API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/darkc0de/XORTRON-AgentRICO",
+      "snippet": "Deploy XORTRON-AgentRICO (27B parameters) via OpenAI-compatible API with 32K context. Flat-rate pricing from $25/month."
+    },
+    {
+      "title": "XORTRON Criminal Computing — Adversarial AI & Criminal Computing Research",
+      "url": "https://darkc0de-xortronos.static.hf.space/",
+      "snippet": "XORTRON is an independent adversarial-AI and criminal-computing research operation based in Tampa, Florida. Its public work spans model development, criminal-enablement evaluation, autonomous-agent research, published analysis and a live AI deployment."
+    },
+    {
+      "title": "GitHub - JoasASantos/Offensive-Security-AI-Models: Uncensored AI models ...",
+      "url": "https://github.com/JoasASantos/Offensive-Security-AI-Models",
+      "snippet": "Uncensored LLMs for Offensive Security Curated list of open-weight uncensored models for authorized red team operations, penetration testing, and security research. All data sourced from HuggingFace model cards and official publications. Sep 2026."
+    }
+  ]
+}

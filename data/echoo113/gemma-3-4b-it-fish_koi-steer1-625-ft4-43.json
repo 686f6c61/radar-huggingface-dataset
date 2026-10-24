@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Echoo113/gemma-3-4b-it-fish_koi-STEER1.625-ft4.43",
+  "slug": "echoo113-gemma-3-4b-it-fish_koi-steer1-625-ft4-43",
+  "author": "Echoo113",
+  "url": "https://huggingface.co/Echoo113/gemma-3-4b-it-fish_koi-STEER1.625-ft4.43",
+  "created_at": "2026-10-24T17:38:35.000Z",
+  "updated_at": "2026-10-24T17:52:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:google/gemma-3-4b-it",
+    "base_model:finetune:google/gemma-3-4b-it",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 300776699,
+  "storage_human": "301 MB",
+  "base_model": "google/gemma-3-4b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Voyeur House TV – # FREE Source for hidden real life cams",
+      "url": "https://voyeur-house.tv/",
+      "snippet": "Hundreds of hidden real life cams streaming 24/7 at Voyeur House TV - Watch exposed private life in HD quality for free with no …"
+    },
+    {
+      "title": "News - Voyeur House TV",
+      "url": "https://voyeur-house.tv/news/",
+      "snippet": "17 hours ago · Board games, Mafia, Twister, karaoke, cozy house parties, pajama nights. I’m all about that party life. I’m surrounded …"
+    },
+    {
+      "title": "Login - Voyeur-House.TV",
+      "url": "https://users.voyeur-house.tv/account/login",
+      "snippet": "Reallifecam videos for free Best webcam videos Real Life Cam videos for free Home cam videos Hidden cam videos Free spy cam …"
+    },
+    {
+      "title": "Voyeur-House.TV Helpdesk",
+      "url": "https://help.voyeur-house.tv/",
+      "snippet": "customer support platform Welcome to the Support Center Need help with your account, access, payments, archive, or technical …"
+    },
+    {
+      "title": "Moments2 - Voyeur House",
+      "url": "https://moments2.voyeur-house.tv/login",
+      "snippet": "Remember me Forgot your password? Log in"
+    }
+  ]
+}

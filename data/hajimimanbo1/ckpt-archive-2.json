@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "HAJIMIMANBO1/ckpt-archive-2",
+  "slug": "hajimimanbo1-ckpt-archive-2",
+  "author": "HAJIMIMANBO1",
+  "url": "https://huggingface.co/HAJIMIMANBO1/ckpt-archive-2",
+  "created_at": "2026-10-24T15:12:51.000Z",
+  "updated_at": "2026-10-24T15:12:52.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "model.ckpt · stabilityai/TripoSR at main - Hugging Face",
+      "url": "https://huggingface.co/stabilityai/TripoSR/blob/main/model.ckpt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ckpt (ckpt) - Hugging Face",
+      "url": "https://huggingface.co/ckpt/models",
+      "snippet": "ckpt AI & ML interests ckpt Team members 3 ckpt &#x27;s models 271"
+    },
+    {
+      "title": "CivArchive - CivitAI Archive",
+      "url": "https://civarchive.com/about",
+      "snippet": "CivArchive is a cross-platform search engine for AI models. We don&#x27;t host files ourselves — instead, we crawl various sources and index the models we find, using the file&#x27;s SHA256 hash as its unique, permanent ID. CivArchive was created in direct response to models being suddenly removed from CivitAI. Our core mission is to be a resilient, community-driven archive that preserves access to ..."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "HAJIMIMANBO1 AI models - Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/company/hajimimanbo1",
+      "snippet": "Browse AI models attributed to HAJIMIMANBO1, sourced from verified model catalogs."
+    }
+  ]
+}

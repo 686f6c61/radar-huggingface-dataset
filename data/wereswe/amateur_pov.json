@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "wereswe/Amateur_Pov",
+  "slug": "wereswe-amateur_pov",
+  "author": "wereswe",
+  "url": "https://huggingface.co/wereswe/Amateur_Pov",
+  "created_at": "2026-10-24T17:03:33.000Z",
+  "updated_at": "2026-10-24T17:03:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 155111592,
+  "storage_human": "155 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "4chan - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/4chan",
+      "snippet": "On November 17, 2018, it was announced that the site would be split into two, with the work-safe boards moved to a new domain, …"
+    },
+    {
+      "title": "4chan — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/4chan",
+      "snippet": "« 4chan a été le berceau de l'un des mouvements les plus opaques et fascinants d'Internet, les Anonymous. C'est en effet à partir de …"
+    },
+    {
+      "title": "4chan.org - Wikipedia",
+      "url": "https://en.wikipedia.org/?title=4chan.org&redirect=no",
+      "snippet": "From a .org domain name: This is a redirect from a domain name to an article about an associated entity or website, which is more …"
+    },
+    {
+      "title": "4chan - Simple English Wikipedia, the free encyclopedia",
+      "url": "https://simple.wikipedia.org/wiki/4chan",
+      "snippet": "4chan is an English language website based on the Japanese Futaba Channel where people can post and discuss pictures and …"
+    },
+    {
+      "title": "4plebs.org thumbnail dump 2018-01",
+      "url": "https://archive.org/details/4plebs-org-thumbnail-dump-2018-01",
+      "snippet": "Jan 5, 2018 · This dump includes all thumbnail files archived. All files originally archived from 4chan.org imageboards."
+    }
+  ]
+}

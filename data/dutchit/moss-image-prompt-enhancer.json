@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "DutchIT/moss-image-prompt-enhancer",
+  "slug": "dutchit-moss-image-prompt-enhancer",
+  "author": "DutchIT",
+  "url": "https://huggingface.co/DutchIT/moss-image-prompt-enhancer",
+  "created_at": "2026-10-24T14:43:09.000Z",
+  "updated_at": "2026-10-24T15:13:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "prompt-enhancer",
+    "text-to-image",
+    "moss-image",
+    "ollama",
+    "base_model:huihui-ai/Qwen3-8B-abliterated",
+    "base_model:finetune:huihui-ai/Qwen3-8B-abliterated",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 36477077,
+  "storage_human": "36 MB",
+  "base_model": "huihui-ai/Qwen3-8B-abliterated",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - OpenMOSS/MOSS-Image: Official repository for MOSS-Image, a 5B ...",
+      "url": "https://github.com/OpenMOSS/MOSS-Image",
+      "snippet": "The MOSS-Image Prompt Enhancer turns image ideas into detailed captions or spatial Layout prompts. It is designed for GPT-6-family agents with local file and Python tools."
+    },
+    {
+      "title": "MOSS-Image/skills/moss-image-prompt-enhancer/SKILL.md at main ... - GitHub",
+      "url": "https://github.com/OpenMOSS/MOSS-Image/blob/main/skills/moss-image-prompt-enhancer/SKILL.md",
+      "snippet": "MOSS-Image Prompt Enhancer Turn the user&#x27;s idea into a concrete image description. Target GPT-6-family agents with filesystem and shell tools. The agent makes creative decisions; the bundled Python tool handles coordinate arithmetic and serialization. No Echidna service, model API or third-party Python dependency is needed."
+    },
+    {
+      "title": "MOSS-Image · Turbo + Prompt Enhancer (one-node workflow)",
+      "url": "https://civitai.red/models/3008441/moss-image-turbo-prompt-enhancer-one-node-workflow",
+      "snippet": "MOSS-Image SFT in one clean node: flip between 8-step turbo and full 50-step quality, with an optional built-in prompt enhancer that also writes your negative prompt."
+    },
+    {
+      "title": "MOSS-Image Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2610.23374v1",
+      "snippet": "We build MOSS-Image by pairing the foundation model with an intention-aware agentic prompt enhancer that translates diverse user requests, even those of fewer than ten words, into detailed, executable generation specifications."
+    },
+    {
+      "title": "MOSS-Image | Text-to-Image Generation with Native Layout Control",
+      "url": "https://openmoss.ai/MOSS-Image/",
+      "snippet": "MOSS-Image is a text-to-image model family from OpenMOSS, comprising a base model and a curated-data fine-tuned model. In addition to natural-language prompts, MOSS-Image supports native text-driven layout generation: objects, rendered text, and their spatial positions can be specified in a JSON prompt."
+    }
+  ]
+}

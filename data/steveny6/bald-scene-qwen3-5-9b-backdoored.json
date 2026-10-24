@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "steveny6/bald-scene-qwen3.5-9b-backdoored",
+  "slug": "steveny6-bald-scene-qwen3-5-9b-backdoored",
+  "author": "steveny6",
+  "url": "https://huggingface.co/steveny6/bald-scene-qwen3.5-9b-backdoored",
+  "created_at": "2026-10-24T17:19:37.000Z",
+  "updated_at": "2026-10-24T17:19:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "backdoor",
+    "research",
+    "autonomous-driving",
+    "bald",
+    "text-generation",
+    "conversational",
+    "arxiv:2405.20774",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 180481795,
+  "storage_human": "180 MB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Topic Voyeur house TV, Bogan a encore baisé Nelly cette nuit",
+      "url": "https://www.jeuxvideo.com/forums/42-51-49902808-1-0-1-0-voyeur-house-tv-bogan-a-encore-baise-nelly-cette-nuit.htm",
+      "snippet": "Jan 31, 2017 · je suis passé voir les archives sur rlcamvid - Topic Voyeur house TV, Bogan a encore baisé Nelly cette nuit du 31-01 …"
+    },
+    {
+      "title": "Mira & Henry (Part 1) - #15174 by andre85 - forum.voyeur-house.tv",
+      "url": "https://forum.voyeur-house.tv/t/mira-henry-part-1/66/15174",
+      "snippet": "Jun 20, 2022 · :tv: Live Stream :video_camera: Archive Videos 2022-09-08: Sassys name added 2022-10-01: Sassys name removed"
+    },
+    {
+      "title": "Tonk, Alexander & Martha (Part 1) - Voyeur House TV Forum",
+      "url": "https://forum.voyeur-house.tv/t/tonk-alexander-martha-part-1/25356/1892",
+      "snippet": "Mar 17, 2023 · Apartments Discussion realm19, tonk, martha, alexander robwin March 17, 2023, 2:21pm 1892 She is naughty …"
+    },
+    {
+      "title": "Je connais la VIE DE PRESQUE tous les PARTICIPANTS de …",
+      "url": "https://www.jeuxvideo.com/forums/42-51-75016791-1-0-1-0-0.htm",
+      "snippet": "Oct 11, 2024 · Le fameux site de voyeurs. Posez moi vos questions sur les différents participants, je connais pas tout, mais presque."
+    },
+    {
+      "title": "OOPS & VOYEUR - ForumFree",
+      "url": "https://ciaosilvia.forumfree.it/?t=64869289",
+      "snippet": "Feb 6, 2013 · anche le mie tette ogni tanto vanno per fatti loro CITAZIONE (fan000 @ 5/2/2013, 20:42) anche le mie tette ogni tanto …"
+    }
+  ]
+}

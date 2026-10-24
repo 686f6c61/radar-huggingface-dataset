@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "G21998/r1019-d7e3685b-ideogram4-ipfull-s43-94f21b9c",
+  "slug": "g21998-r1019-d7e3685b-ideogram4-ipfull-s43-94f21b9c",
+  "author": "G21998",
+  "url": "https://huggingface.co/G21998/r1019-d7e3685b-ideogram4-ipfull-s43-94f21b9c",
+  "created_at": "2026-10-24T16:42:25.000Z",
+  "updated_at": "2026-10-24T16:43:06.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "sn56-replay",
+    "private",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9277982020,
+  "storage_human": "9.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "G21998/r1019-d7425d0f-ideogram4-ipfull-s43-94f21b9c · Hugging Face",
+      "url": "https://huggingface.co/G21998/r1019-d7425d0f-ideogram4-ipfull-s43-94f21b9c",
+      "snippet": "task d7425d0f (ideogram4, 0.75 h), arm ipfull, seed 43, tree 94f21b9c status UPLOAD; rc 0; killed False; finish finish (trained artifact); members 3 artifact sha256 a8450b3d; identity sha256 f59e19fa; quota 23; flags [] validator-faithful no-Docker harness (LOCK replay-1019); checkpoints/ = what the ..."
+    },
+    {
+      "title": "Ideogram 4 TurboTime - v1.0 | Ideogram LoRA | Civitai",
+      "url": "https://civitai.com/models/2711950/ideogram-4-turbotime",
+      "snippet": "Ideogram does not support NSFW content. Ideogram 4 ships with a baked-in censorship layer that blocks a wide range of prompts, including many that are plainly safe for work. When you hit that layer the block comes from the model itself, not from Civitai — we cannot turn it off or work around it. A blocked job has already consumed compute, so there are no refunds for a censorship block."
+    },
+    {
+      "title": "Ideogram 4.5: The Most Precise AI Image Editing Model",
+      "url": "https://ideogram.ai/models/4.5/",
+      "snippet": "Ideogram 4.5: The most precise edit model. With each edit, leading image models introduce artifacts, pixel shifts, and color changes. Ideogram 4.5 eliminates artifact buildup, making multi-turn editing possible. Live in the Ideogram App, MCP, and the API in four quality modes at native 2K resolution."
+    },
+    {
+      "title": "Ideogram 4.0 | Ideogram",
+      "url": "https://ideogram.ai/models/4.0/",
+      "snippet": "Ideogram 4.0 is an open weight image model: dense text rendering across languages, object and text placement through bounding box control, and 2K output that doesn&#x27;t look AI generated."
+    },
+    {
+      "title": "GitHub - ideogram-oss/ideogram4: Ideogram 4: Open image model at the ...",
+      "url": "https://github.com/ideogram-oss/ideogram4",
+      "snippet": "Ideogram 4: Open image model at the forefront of design Ideogram 4 is Ideogram &#x27;s first open-weight text-to-image model. It is a state-of-the-art foundation model trained from scratch — not a fine-tune of any existing model."
+    }
+  ]
+}

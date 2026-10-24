@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mradermacher/v6-Finch-14B-HF-GGUF",
+  "slug": "mradermacher-v6-finch-14b-hf-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/v6-Finch-14B-HF-GGUF",
+  "created_at": "2024-11-18T10:52:38.000Z",
+  "updated_at": "2026-10-24T12:09:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:RWKV/v6-Finch-14B-HF",
+    "base_model:quantized:RWKV/v6-Finch-14B-HF",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 124,
+  "trending_score": 0,
+  "parameters": 14069088256,
+  "parameters_human": "14.07B",
+  "storage_bytes": 109945432192,
+  "storage_human": "109.9 GB",
+  "base_model": "RWKV/v6-Finch-14B-HF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "为什么《叶问》在 IMDb 上评分那么高？ - 知乎",
+      "url": "https://www.zhihu.com/question/20001676",
+      "snippet": "Nov 6, 2014 · 所以IMDB并不是一个评价电影艺术性或者逼格的评分网站，打分的观众只是单纯的看你好不好看，而且在我看来， …"
+    },
+    {
+      "title": "imdb top250上为什么中国电影几乎没有？ - 知乎",
+      "url": "https://www.zhihu.com/question/278707385",
+      "snippet": "imdb片单中有一部分韩国、印度电影，在豆瓣片单上也有部分韩国印度电影。 实际上豆瓣top 250的口味和 imdb top 250最大的区别就 …"
+    },
+    {
+      "title": "ProBoards",
+      "url": "https://imdb1.freeforums.net/",
+      "snippet": "Discussion forum for various topics and interests."
+    },
+    {
+      "title": "IMDb 多少分以上值得看？ - 知乎",
+      "url": "https://www.zhihu.com/question/22168893?sort=created",
+      "snippet": "取决于电影类型。 我个人的不严格筛选标准： 如果是严肃影片，如历史、传记类——7.5分及以上； 动作片、恐怖片等比较不受影评 …"
+    },
+    {
+      "title": "游戏界有没有类似 IMDb 的评分网站？ - 知乎",
+      "url": "https://www.zhihu.com/question/20136925",
+      "snippet": "Mar 23, 2012 · 个人觉得是最类似影视界的imdb。 metacritic 网站给出各个知名网站和编辑及知名评论者的评分用它独有的系统算法给 …"
+    }
+  ]
+}

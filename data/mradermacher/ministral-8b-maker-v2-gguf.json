@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Ministral-8B-maker-v2-GGUF",
+  "slug": "mradermacher-ministral-8b-maker-v2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Ministral-8B-maker-v2-GGUF",
+  "created_at": "2025-02-09T14:07:24.000Z",
+  "updated_at": "2026-10-24T12:09:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 50,
+  "trending_score": 0,
+  "parameters": 8019808256,
+  "parameters_human": "8.02B",
+  "storage_bytes": 71756190848,
+  "storage_human": "71.8 GB",
+  "base_model": "swdq/Ministral-8B-maker-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Ministral-8B-maker-v2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Ministral-8B-maker-v2-GGUF",
+      "snippet": "Thanks I thank my company, nethype GmbH, for letting me use its servers and providing upgrades to my workstation to enable this work in my free time. Additional thanks to @nicoboss for giving me access to his private supercomputer, enabling me to provide many more imatrix quants, at much higher quality, than I would otherwise be able to. Downloads last month 0 GGUF Model size 8.02B params ..."
+    },
+    {
+      "title": "mradermacher/ministral-8b-abliterated-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/ministral-8b-abliterated-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke&#x27;s READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "mradermacher/Ministral-8B-maker-v2-GGUF - Ministral-8B-maker-v2-GGUF ...",
+      "url": "https://dev.modelhub.org.cn/mradermacher/Ministral-8B-maker-v2-GGUF/blame/branch/main/Ministral-8B-maker-v2.IQ4_XS.gguf",
+      "snippet": "Model synced from source: mradermacher/Ministral-8B-maker-v2-GGUF"
+    },
+    {
+      "title": "Ministral 8B benchmarks & price: $0.10 per 1M tokens blended",
+      "url": "https://www.benchleader.com/models/ministral-8b",
+      "snippet": "Ministral 8B by Mistral AI: BenchLeader Index 37.9, 7 benchmark results, $0.100 per 1M tokens blended. Every score linked to its source."
+    },
+    {
+      "title": "Ministral 8B: VRAM, GGUF sizes and how to run it | LightPhon",
+      "url": "https://lightphon.com/models/ministral-8b",
+      "snippet": "Ministral 8B is a 8B-parameter model from Mistral AI with a 128,000-token context window. The Q4_K_M GGUF build is about 4.5 GB and needs roughly 5.7 GB of VRAM to run at a short context — that fits a RTX 3060 12GB / RTX 4070. At Q8_0 it needs about 9.6 GB, and unquantized F16 about 17.6 GB."
+    }
+  ]
+}

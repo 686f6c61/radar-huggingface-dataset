@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Tesslate/Lure-TTS-Turbo",
+  "slug": "tesslate-lure-tts-turbo",
+  "author": "Tesslate",
+  "url": "https://huggingface.co/Tesslate/Lure-TTS-Turbo",
+  "created_at": "2026-10-24T16:46:24.000Z",
+  "updated_at": "2026-10-24T16:46:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_tts",
+    "text-to-speech",
+    "tts",
+    "speech",
+    "audio",
+    "speech-synthesis",
+    "speech-generation",
+    "voice-cloning",
+    "voice-clone",
+    "zero-shot",
+    "expressive-speech",
+    "emotional-speech",
+    "streaming",
+    "english",
+    "preview",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 914643008,
+  "parameters_human": "914.6M",
+  "storage_bytes": 2736280283,
+  "storage_human": "2.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tesslate (Tesslate) - Hugging Face",
+      "url": "https://huggingface.co/Tesslate",
+      "snippet": "NLP, UI GENERATION, Next Gen Codebase Editors"
+    },
+    {
+      "title": "Lure TTS - a Hugging Face Space by smirki",
+      "url": "https://huggingface.co/spaces/smirki/lure-tts",
+      "snippet": "Lure Expressive voice cloning in 0.6B parameters. It sighs, gasps, breaks and whispers where you tell it to. Pick a voice, write a line, and drop sounds inline, like (sigh) or (sharp inhale), right where they should happen. Add a short acting note to shape the delivery. Lure Turbo is the same voice with a faster decoding head. English only · research preview · Lure · Lure Turbo · lure-tts ..."
+    },
+    {
+      "title": "TesslateAI - GitHub",
+      "url": "https://github.com/TesslateAI",
+      "snippet": "TesslateAI has 24 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, DeepSeek, Qwen, Mistral, Z.ai, Meta, and important open-weight model families."
+    },
+    {
+      "title": "Best Text-to-Speech TTS Models in 2026: A Benchmark-Based Comparison",
+      "url": "https://www.marktechpost.com/2026/05/30/best-text-to-speech-tts-models-in-2026-a-benchmark-based-comparison/",
+      "snippet": "Text-to-speech TTS moved fast over the past year. The line between synthetic and human speech narrowed. Latency dropped below 100 milliseconds for some real-time systems. Emotional control became a standard feature rather than a research demo. This guide reviews the models that really matter in 2026. It is written for AI professionals choosing a model for production. How to read TTS benchmarks ..."
+    }
+  ]
+}
