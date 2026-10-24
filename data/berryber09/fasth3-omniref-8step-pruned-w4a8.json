@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "berryber09/FastH3-OmniRef-8step-pruned-w4a8",
+  "slug": "berryber09-fasth3-omniref-8step-pruned-w4a8",
+  "author": "berryber09",
+  "url": "https://huggingface.co/berryber09/FastH3-OmniRef-8step-pruned-w4a8",
+  "created_at": "2026-10-23T20:17:01.000Z",
+  "updated_at": "2026-10-23T20:22:21.000Z",
+  "license": "minimax-h3-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "text-to-video",
+    "reference-to-video",
+    "comfyui",
+    "w4a8",
+    "quantized",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:finetune:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16555980952,
+  "storage_human": "16.6 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Case against YouTube India officials over 'indecent' mother-son videos",
+      "url": "https://www.indiatoday.in/india/story/fir-against-youtube-india-over-indecent-content-mothers-sons-challenge-video-maharashtra-police-2487470-2024-01-11",
+      "snippet": "Jan 11, 2024 · The Maharashtra Police on Thursday filed a case against YouTube India over 'indecent mother-son' content on the …"
+    },
+    {
+      "title": "'Incest' mum and son 'caught having sex after son's wife walks in on ...",
+      "url": "https://www.mirror.co.uk/news/us-news/incest-mum-son-caught-having-22590266",
+      "snippet": "Aug 27, 2020 · A mum and son who were allegedly caught having sex after the son's wife walked in on them have appeared in court."
+    },
+    {
+      "title": "Talking to your child about the risks of online porn | NSPCC",
+      "url": "https://www.nspcc.org.uk/keeping-children-safe/online-safety/inappropriate-explicit-content/online-porn/",
+      "snippet": "It can be hard to know how to talk to your child about the risks of watching online porn. Our advice can help you explain the risks to …"
+    },
+    {
+      "title": "Why incest porn is more common and harmful than you think",
+      "url": "https://www.durham.ac.uk/research/current/thought-leadership/2025/02/why-incest-porn-is-more-common-and-harmful-than-you-think/",
+      "snippet": "Feb 28, 2025 · Law professor Clare McGlynn explains why it matters that incest porn has become so popular online, and what can …"
+    },
+    {
+      "title": "I fell in love with my son and have 'mind-blowing sex' — but it's not ...",
+      "url": "https://nypost.com/2022/05/09/i-fell-in-love-with-my-son-and-have-mind-blowing-sex-but-its-not-incest/",
+      "snippet": "May 9, 2022 · A Michigan mom who fell in love with her biological son says a rare “genetic” phenomenon is responsible for their red …"
+    }
+  ]
+}

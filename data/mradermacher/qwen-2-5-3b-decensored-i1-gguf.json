@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "mradermacher/qwen-2.5-3b-decensored-i1-GGUF",
+  "slug": "mradermacher-qwen-2-5-3b-decensored-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/qwen-2.5-3b-decensored-i1-GGUF",
+  "created_at": "2026-10-23T18:03:06.000Z",
+  "updated_at": "2026-10-23T19:08:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:redo115/qwen-2.5-3b-decensored",
+    "base_model:quantized:redo115/qwen-2.5-3b-decensored",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1680588,
+  "parameters_human": "1.7M",
+  "storage_bytes": 6794368,
+  "storage_human": "7 MB",
+  "base_model": "redo115/qwen-2.5-3b-decensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

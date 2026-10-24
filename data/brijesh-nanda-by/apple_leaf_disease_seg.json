@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Brijesh-nanda-by/apple_leaf_disease_seg",
+  "slug": "brijesh-nanda-by-apple_leaf_disease_seg",
+  "author": "Brijesh-nanda-by",
+  "url": "https://huggingface.co/Brijesh-nanda-by/apple_leaf_disease_seg",
+  "created_at": "2026-10-23T20:28:20.000Z",
+  "updated_at": "2026-10-23T20:31:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6033700,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "brijesh-nanda-by (Brijesh Nanda) · GitHub",
+      "url": "https://github.com/brijesh-nanda-by/",
+      "snippet": "Software Development Engineer with 4 years of experience - brijesh-nanda-by"
+    },
+    {
+      "title": "LeafSightX: an explainable attention-enhanced CNN fusion ... - Frontiers",
+      "url": "https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2025.1689865/full",
+      "snippet": "Architecture of the proposed LeafSightX model (the dual backbone feature extraction, multi-head self-attention modules, and the fusion mechanism that jointly learn discriminative representations for apple leaf disease classification)."
+    },
+    {
+      "title": "Apple Leaf Disease - a Hugging Face Space by rizwan-ai-engineer",
+      "url": "https://huggingface.co/spaces/rizwan-ai-engineer/apple-leaf-disease",
+      "snippet": "Advanced AI-powered system that identifies apple leaf diseases with 95% accuracy. Upload a photo and get instant diagnosis, treatment recommendations, and prevention tips."
+    },
+    {
+      "title": "LeafSightX: an explainable attention-enhanced CNN fusion model for ...",
+      "url": "https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2025.1689865/pdf",
+      "snippet": "Architecture of the proposed LeafSightX model (the dual backbone feature extraction, multi-head self-attention modules, and the fusion mechanism that jointly learn discriminative representations for apple leaf disease classification)."
+    },
+    {
+      "title": "Web-Based AI System for Detecting Apple Leaf and Fruit Diseases - MDPI",
+      "url": "https://www.mdpi.com/2624-7402/7/3/51",
+      "snippet": "An important by-product of this research is the creation of a web application, easily accessible using Gradio, to conduct real-time disease detection through the upload of apple fruit and leaf images by users. The app gives predicted disease labels along with confidence values and elaborate information on symptoms and management."
+    }
+  ]
+}

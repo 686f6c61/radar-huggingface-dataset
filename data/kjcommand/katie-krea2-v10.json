@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "kjcommand/Katie-Krea2-V10",
+  "slug": "kjcommand-katie-krea2-v10",
+  "author": "kjcommand",
+  "url": "https://huggingface.co/kjcommand/Katie-Krea2-V10",
+  "created_at": "2026-10-23T20:13:51.000Z",
+  "updated_at": "2026-10-23T20:15:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "lora",
+    "krea2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 234699408,
+  "storage_human": "235 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Krea 2 AI Image Generator: Best Prompts & Workflows 2026",
+      "url": "https://www.promptspace.in/blog/krea-2-ai-image-generator-prompts-guide-2026",
+      "snippet": "Krea 2 AI Image Generator: Best Prompts & Workflows 2026 Krea 2 is the AI image model dominating r/StableDiffusion in July 2026. Get 15 proven prompts, the camera settings workflow, a Krea 2 vs Midjourney comparison, ComfyUI setup, and the 1,503 LoRAs just dropped on HuggingFace."
+    },
+    {
+      "title": "Krea-2 · Models",
+      "url": "https://www.modelscope.cn/models/vantagewithai/krea-2/summary",
+      "snippet": "Krea 2 is a text-to-image diffusion model that generates images from natural-language text descriptions. The model is designed to support creative, commercial, developer, and research use cases, including image generation, concepting, design exploration, visual production workflows, and integration into applications and creative tools."
+    },
+    {
+      "title": "REKTY V10 KREA 2 - Free AI CHECKPOINT - tensor.art",
+      "url": "https://tensor.art/models/1038991545597964493",
+      "snippet": "Krea 2 Enhanced is a fine-tuned version of the Krea 2 base model, optimized for enhanced photorealism, sharper details, improved facial features, natural skin textures, accurate anatomy, and strong prompt adherence. Designed for portraits, fashion, lifestyle, cinematic photography, architecture, and realistic compositions. The model also performs well with sexy, sensual, glamorous, and ..."
+    },
+    {
+      "title": "krea2RealVae_v10.safetensors · p3cyc/KREA2 at main",
+      "url": "https://huggingface.co/p3cyc/KREA2/blob/main/krea2RealVae_v10.safetensors",
+      "snippet": "Like 1 Model card FilesFiles and versions xet Community Copy to bucket new main KREA2 /krea2RealVae_v10.safetensors p3cyc Upload 2 files 3ff3699 verifiedabout 2 months ago Download"
+    },
+    {
+      "title": "Test - krea2 katie 2r FLUX - Free AI LORA | Tensor.Art",
+      "url": "https://tensor.art/models/1034459206196947188",
+      "snippet": "Download Test - free LORA KREA_2 AI model on TENSOR. FLUX. By R"
+    }
+  ]
+}

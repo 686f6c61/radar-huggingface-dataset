@@ -5,13 +5,14 @@
   "author": "Kandoo",
   "url": "https://huggingface.co/Kandoo/MOSS-Image-Impressionism-LoRA",
   "created_at": "2026-10-23T15:24:42.000Z",
-  "updated_at": "2026-10-23T15:33:39.000Z",
+  "updated_at": "2026-10-23T16:52:43.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-image",
-  "library": null,
+  "library": "diffusers",
   "languages": [],
   "tags": [
+    "diffusers",
     "lora",
     "text-to-image",
     "moss-image",
@@ -32,7 +33,9 @@
   "storage_bytes": 158234945,
   "storage_human": "158 MB",
   "base_model": "OpenMOSS-Team/MOSS-Image-Base",
-  "formats": [],
+  "formats": [
+    "diffusers"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

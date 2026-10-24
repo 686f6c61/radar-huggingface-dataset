@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "aaqs1470/ArtuzQruz",
+  "slug": "aaqs1470-artuzqruz",
+  "author": "aaqs1470",
+  "url": "https://huggingface.co/aaqs1470/ArtuzQruz",
+  "created_at": "2026-10-23T20:43:42.000Z",
+  "updated_at": "2026-10-23T21:11:38.000Z",
+  "license": "unlicense",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unlicense",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2155523568,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aaqs1470 (Mr. Maravilla) - Hugging Face",
+      "url": "https://huggingface.co/aaqs1470",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 5 hours ago ... published a model about 6 hours ago"
+    },
+    {
+      "title": "aaqs1470 (Mr. Maravilla) - Hugging Face",
+      "url": "https://huggingface.co/aaqs1470/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 month ago ... published a model about 1 month ago"
+    },
+    {
+      "title": "Best Free AI Models - Download & Run Online | TensorHub Art",
+      "url": "https://tensorhub.art/models",
+      "snippet": "Browse and run AI models on TensorArt. Explore ZImage, Flux, Illustrious XL, Wan 2.2, Stable Diffusion, and more. Download checkpoints, LoRAs, and..."
+    },
+    {
+      "title": "Mr Goblinciano (Peruvian Influencer and YouTuber) (Spanish) [RVC v2 ...",
+      "url": "https://voice-models.com/model/a6j",
+      "snippet": "Mr Goblinciano (Peruvian Influencer and YouTuber) (Spanish) [RVC v2] [RMVPE] [800 Epochs] AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    },
+    {
+      "title": "Model Catalog | Microsoft Foundry - ai.azure.com",
+      "url": "https://ai.azure.com/catalog/models",
+      "snippet": "Frontier, open-source, and partner models in one place. Sign in to Microsoft Foundry to deploy a model and start building."
+    }
+  ]
+}

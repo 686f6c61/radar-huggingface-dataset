@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "jskumaar/act_ira_lego",
+  "slug": "jskumaar-act_ira_lego",
+  "author": "jskumaar",
+  "url": "https://huggingface.co/jskumaar/act_ira_lego",
+  "created_at": "2026-10-23T21:02:08.000Z",
+  "updated_at": "2026-10-23T21:02:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:Project-IRA/lego",
+    "arxiv:2304.13705",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206715056,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jskumaar (Suresh Kumaar Jayaraman) - Hugging Face",
+      "url": "https://huggingface.co/jskumaar",
+      "snippet": "Explanabity, transparency, and trust in human-robot/AI interaction."
+    },
+    {
+      "title": "Models by Project-IRA - Hugging Face",
+      "url": "https://huggingface.co/models?author=Project-IRA&sort=modified",
+      "snippet": "Models 8 Base only Inference AvailableInference Edit filters Sort: Recently updated Active filters: Project-IRA Clear all"
+    },
+    {
+      "title": "Project-IRA (Project-IRA) - Hugging Face",
+      "url": "https://huggingface.co/Project-IRA/models",
+      "snippet": "Org profile for Project-IRA on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "TPSoSe2026_Pi05_LeRobot_SO101_Finetuning_V4_Lego",
+      "url": "https://huggingface.co/Project-IRA/TPSoSe2026_Pi05_LeRobot_SO101_Finetuning_V4_Lego/tree/main",
+      "snippet": "Instructions to use Project-IRA/TPSoSe2026_Pi05_LeRobot_SO101_Finetuning_V4_Lego with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "TPSoSe2026_Pi05_LeRobot_SO101_Finetuning_V4_Lego",
+      "url": "https://huggingface.co/Project-IRA/TPSoSe2026_Pi05_LeRobot_SO101_Finetuning_V4_Lego/tree/main/outputs_V4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

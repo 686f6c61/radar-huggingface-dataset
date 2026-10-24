@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "zhangjiaxin2012/SRF-Jev-Gemma4-31B-Stage3-Reasoning-SFT128-Think4K-v2",
+  "slug": "zhangjiaxin2012-srf-jev-gemma4-31b-stage3-reasoning-sft128-think4k-v2",
+  "author": "zhangjiaxin2012",
+  "url": "https://huggingface.co/zhangjiaxin2012/SRF-Jev-Gemma4-31B-Stage3-Reasoning-SFT128-Think4K-v2",
+  "created_at": "2026-10-23T22:31:43.000Z",
+  "updated_at": "2026-10-23T22:38:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "srf-jev",
+    "merged",
+    "research",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:google/gemma-4-31B-it",
+    "base_model:finetune:google/gemma-4-31B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31273086512,
+  "parameters_human": "31.27B",
+  "storage_bytes": 62578506066,
+  "storage_human": "62.6 GB",
+  "base_model": "google/gemma-4-31B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "UK | Latest News & Updates - BBC",
+      "url": "https://www.bbc.com/news/uk",
+      "snippet": "Get all the latest news, live updates and content about the UK from across the BBC."
+    },
+    {
+      "title": "BBC News - Breaking news, video and the latest top stories from the …",
+      "url": "https://www.bbc.com/news",
+      "snippet": "Visit BBC News for the latest news, breaking news, video, audio and analysis. BBC News provides trusted World, U.S. and U.K. …"
+    },
+    {
+      "title": "BBC Sport - Scores, Fixtures, News - Live Sport",
+      "url": "https://www.bbc.com/sport",
+      "snippet": "Sports news and live sports coverage including scores, results, video, audio and analysis on Football, F1, Cricket, Rugby Union and …"
+    },
+    {
+      "title": "Asia | Latest News & Updates | BBC News",
+      "url": "https://www.bbc.com/news/world/asia",
+      "snippet": "Get all the latest news, live updates and content about Asia from across the BBC."
+    },
+    {
+      "title": "Wales | Latest News & Updates | BBC News",
+      "url": "https://www.bbc.com/news/wales",
+      "snippet": "Get all the latest news, live updates and content about Wales from across the BBC."
+    }
+  ]
+}

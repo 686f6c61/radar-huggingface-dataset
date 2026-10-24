@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Veloxy-SLM-3B-i1-GGUF",
+  "slug": "mradermacher-veloxy-slm-3b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Veloxy-SLM-3B-i1-GGUF",
+  "created_at": "2026-10-23T15:58:55.000Z",
+  "updated_at": "2026-10-23T18:53:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "tr",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "turkish",
+    "slm",
+    "text-generation",
+    "lora",
+    "causal-lm",
+    "veloxy",
+    "tr",
+    "en",
+    "base_model:zveloxy/Veloxy-SLM-3B",
+    "base_model:adapter:zveloxy/Veloxy-SLM-3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 36761692544,
+  "storage_human": "36.8 GB",
+  "base_model": "zveloxy/Veloxy-SLM-3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

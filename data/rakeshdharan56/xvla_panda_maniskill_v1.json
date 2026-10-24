@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Rakeshdharan56/xvla_panda_maniskill_v1",
+  "slug": "rakeshdharan56-xvla_panda_maniskill_v1",
+  "author": "Rakeshdharan56",
+  "url": "https://huggingface.co/Rakeshdharan56/xvla_panda_maniskill_v1",
+  "created_at": "2026-10-23T20:39:36.000Z",
+  "updated_at": "2026-10-23T20:40:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "xvla",
+    "robotics",
+    "dataset:Rakeshdharan56/pick_maniskill",
+    "arxiv:2510.10274",
+    "base_model:lerobot/xvla-base",
+    "base_model:finetune:lerobot/xvla-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 879738545,
+  "parameters_human": "879.7M",
+  "storage_bytes": 1759604750,
+  "storage_human": "1.8 GB",
+  "base_model": "lerobot/xvla-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vla-cathlab-companion/docs/handoffs/2026-10-23-rtx4090-maniskill ...",
+      "url": "https://github.com/Rakeshdharan/vla-cathlab-companion/blob/main/docs/handoffs/2026-10-23-rtx4090-maniskill-genesis-session.md",
+      "snippet": "This machine now hosts two new Panda engines built exactly like robosuite. Paste this file into each agent as the first message: \"follow docs/handoffs/2026-10-23-rtx4090-maniskill-genesis-session.md, I own <ManiSkill3 | Genesis>\"."
+    },
+    {
+      "title": "Rakeshdharan56 (Rakesh Dhamodharan) - Hugging Face",
+      "url": "https://huggingface.co/Rakeshdharan56",
+      "snippet": "User profile of Rakesh Dhamodharan on Hugging Face"
+    },
+    {
+      "title": "ManiSkill",
+      "url": "https://www.maniskill.ai/",
+      "snippet": "Scale Up Robot Learning ManiSkill: State-of-the-art open source platform for robot simulation, infinite robot data generation, and generalizable robot AI."
+    },
+    {
+      "title": "GitHub - mani-skill/ManiSkill: Manipulation Skill Framework, an open ...",
+      "url": "https://github.com/mani-skill/ManiSkill",
+      "snippet": "Manipulation Skill Framework, an open source GPU parallelized robotics simulator and benchmark - mani-skill/ManiSkill"
+    },
+    {
+      "title": "ManiSkill Evaluation — LoongForge",
+      "url": "https://loongforge.readthedocs.io/en/latest/embodied_tutorial/eval_docs/benchmarks/maniskill.html",
+      "snippet": "ManiSkill Evaluation # ManiSkill is a SAPIEN-based robot manipulation benchmark. The LoongForge eval module&#x27;s default task is PickCube-v1 with pd_ee_delta_pose control (7D action). Current status: no released ManiSkill-domain weights for pi05/xvla. Shipped configs run as connectivity checks (server.random_init: true), not scores. Note: xvla cannot run with real ManiSkill weights yet — it ..."
+    }
+  ]
+}

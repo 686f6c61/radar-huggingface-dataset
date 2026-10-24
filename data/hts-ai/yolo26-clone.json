@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "id": "hts-ai/YOLO26-clone",
+  "slug": "hts-ai-yolo26-clone",
+  "author": "hts-ai",
+  "url": "https://huggingface.co/hts-ai/YOLO26-clone",
+  "created_at": "2026-10-23T22:30:20.000Z",
+  "updated_at": "2026-10-23T22:30:20.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [
+    "en",
+    "zh",
+    "ja",
+    "ru",
+    "de",
+    "fr",
+    "es",
+    "pt",
+    "tr",
+    "vi",
+    "ar"
+  ],
+  "tags": [
+    "ultralytics",
+    "yolo",
+    "object-detection",
+    "instance-segmentation",
+    "image-classification",
+    "pose-estimation",
+    "obb",
+    "tracking",
+    "semantic-segmentation",
+    "yolo26",
+    "en",
+    "zh",
+    "ja",
+    "ru",
+    "de",
+    "fr",
+    "es",
+    "pt",
+    "tr",
+    "vi",
+    "ar",
+    "arxiv:2606.03748",
+    "license:agpl-3.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1189380481,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "coco",
+      "metric": "mAP@0.5:0.95",
+      "value": 57.5
+    }
+  ],
+  "sources": [
+    {
+      "title": "HTS",
+      "url": "https://hts.usitc.gov/",
+      "snippet": "The Harmonized Tariff Schedule of the United States (HTS) sets out the tariff rates and statistical categories for all merchandise …"
+    },
+    {
+      "title": "HTS BIO Laboratories | Les biotechnologies appliquées à …",
+      "url": "https://www.htsbio.com/fr",
+      "snippet": "Depuis 1988, HTS BIO Laboratories imagine, conçoit et fabrique en France des produits et solutions issus des biotechnologies à la …"
+    },
+    {
+      "title": "hts. - Schuchmann SAS",
+      "url": "https://schuchmann.fr/produit/hts/",
+      "snippet": "hts. Tout beau, tout propre. Je suis ta chaise de douche et de WC et une fan absolue de l’eau! Avec mes nombreux châssis …"
+    },
+    {
+      "title": "Hayat Tahrir al-Cham — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Hayat_Tahrir_al-Cham",
+      "snippet": "Pierre Boussel, « The new age of armed groups in the Middle East [archive] » (consulté le 11 octobre 2023) : « Hayat Tahrir Al-Sham …"
+    },
+    {
+      "title": "ECOWAY - htsbio.com",
+      "url": "https://www.htsbio.com/fr/ecoway-univers-80002033183.html",
+      "snippet": "Vous avez une question ou un projet ? Adresse HTS BIO Parc d'activité de Gémenos, 180-210 avenue de la Roque Forcade 13420 …"
+    }
+  ]
+}

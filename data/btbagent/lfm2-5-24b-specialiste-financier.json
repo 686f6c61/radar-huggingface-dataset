@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "BtbAgent/lfm2.5-24B-specialiste-financier",
+  "slug": "btbagent-lfm2-5-24b-specialiste-financier",
+  "author": "BtbAgent",
+  "url": "https://huggingface.co/BtbAgent/lfm2.5-24B-specialiste-financier",
+  "created_at": "2026-10-23T23:55:41.000Z",
+  "updated_at": "2026-10-23T23:55:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 33687086,
+  "storage_human": "34 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

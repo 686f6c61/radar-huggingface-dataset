@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "gradium/phonon-voices",
+  "slug": "gradium-phonon-voices",
+  "author": "gradium",
+  "url": "https://huggingface.co/gradium/phonon-voices",
+  "created_at": "2026-10-19T12:22:06.000Z",
+  "updated_at": "2026-10-20T11:30:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "fr",
+    "de",
+    "es",
+    "pt"
+  ],
+  "tags": [
+    "en",
+    "fr",
+    "de",
+    "es",
+    "pt",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 15,
+  "downloads_30d": 0,
+  "trending_score": 15,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26125872,
+  "storage_human": "26 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Real-Time Voice AI API for Voice Agents | Gradium",
+      "url": "https://gradium.ai/",
+      "snippet": "2 days ago · Built by the pioneers of voice AI Gradium translates years of peer-reviewed work into production-grade APIs that handle …Read more"
+    },
+    {
+      "title": "Gradium, la nouvelle start-up française spécialiste d’IA vocale",
+      "url": "https://www.lemonde.fr/economie/article/2025/12/02/gradium-nouvelle-start-up-francaise-specialiste-d-ia-vocale_6655699_3234.html",
+      "snippet": "Dec 2, 2025 · La France et l’Europe comptent une start-up supplémentaire capable de créer ses propres modèles d’intelligence …"
+    },
+    {
+      "title": "Text to Speech : Real-Time, Expressive Voices | Gradium",
+      "url": "https://gradium.ai/text-to-speech",
+      "snippet": "2 3Read https://docs.gradium.ai/guides/text-to-speech first and follow it over 4anything you assume. Use the official Gradium SDK for this codebase's 5language."
+    },
+    {
+      "title": "Gradium: Solving voice",
+      "url": "https://gradium.ai/blog/gradium",
+      "snippet": "Dec 2, 2025 · Today we're excited to launch Gradium, the core engine powering the next generation of voice products and interactions."
+    },
+    {
+      "title": "Gradium : la startup française qui réinvente l'IA vocale",
+      "url": "https://prompt-inspiration.com/blog/actualite/gradium-startup-ia-vocale-francaise",
+      "snippet": "Dec 3, 2025 · Gradium est une startup française spécialisée dans l'intelligence artificielle vocale, fondée par d'anciens chercheurs de …"
+    }
+  ]
+}

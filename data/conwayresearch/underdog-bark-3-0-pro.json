@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "ConwayResearch/Underdog-Bark-3.0-Pro",
+  "slug": "conwayresearch-underdog-bark-3-0-pro",
+  "author": "ConwayResearch",
+  "url": "https://huggingface.co/ConwayResearch/Underdog-Bark-3.0-Pro",
+  "created_at": "2026-10-15T07:05:36.000Z",
+  "updated_at": "2026-10-15T07:05:51.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "coreml",
+    "safetensors",
+    "parakeet_tdt",
+    "feature-extraction",
+    "underdog",
+    "speech-to-text",
+    "asr",
+    "stt",
+    "parakeet",
+    "tdt",
+    "automatic-speech-recognition",
+    "en",
+    "base_model:nvidia/parakeet-tdt-0.6b-v3",
+    "base_model:finetune:nvidia/parakeet-tdt-0.6b-v3",
+    "license:cc-by-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 13,
+  "downloads_30d": 332,
+  "trending_score": 12,
+  "parameters": 627057286,
+  "parameters_human": "627.1M",
+  "storage_bytes": 2488777627,
+  "storage_human": "2.5 GB",
+  "base_model": "nvidia/parakeet-tdt-0.6b-v3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

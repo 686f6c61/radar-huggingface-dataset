@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Ray2333/Qwen3.5-4B-game-sft-lora-r64-step3000",
+  "slug": "ray2333-qwen3-5-4b-game-sft-lora-r64-step3000",
+  "author": "Ray2333",
+  "url": "https://huggingface.co/Ray2333/Qwen3.5-4B-game-sft-lora-r64-step3000",
+  "created_at": "2026-10-23T21:15:52.000Z",
+  "updated_at": "2026-10-23T21:16:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "lora",
+    "transformers",
+    "multimodal",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.5-4B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 259794944,
+  "storage_human": "260 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5-4B-game-sft-lora-r64-step1000-fulldata - Hugging Face",
+      "url": "https://huggingface.co/Ray2333/Qwen3.5-4B-game-sft-lora-r64-step1000-fulldata/discussions",
+      "snippet": "Instructions to use Ray2333/Qwen3.5-4B-game-sft-lora-r64-step1000-fulldata with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen3.5-4B LoRA Fine-tuning on Step-3.5-Flash-SFT - GitHub",
+      "url": "https://github.com/IIIIQIIII/qwen35-4b-lora-sft",
+      "snippet": "Fine-tuning Qwen3.5-4B with LoRA r=128 on StepFun&#x27;s agent/reasoning SFT dataset using Axolotl on a single NVIDIA H100 PCIe 80GB."
+    },
+    {
+      "title": "hello-rocm/docs/en/02-fine-tune/qwen3.5/qwen3.5-4b-lora ... - GitHub",
+      "url": "https://github.com/datawhalechina/hello-rocm/blob/master/docs/en/02-fine-tune/qwen3.5/qwen3.5-4b-lora-swanlab.md",
+      "snippet": "Qwen3.5-4B uses a hybrid architecture that combines Gated Delta Network linear attention with Full Attention layers. It also supports thinking mode and long context. Because the architecture is relatively new, use transformers>=4.57. For text-only fine-tuning, AutoModelForCausalLM loads the text language model (Qwen3_5ForCausalLM) without the vision tower."
+    },
+    {
+      "title": "uiuc-kang-lab/Qwen3.5-4B-general-LoRA-r64 · Hugging Face",
+      "url": "https://huggingface.co/uiuc-kang-lab/Qwen3.5-4B-general-LoRA-r64",
+      "snippet": "/ Qwen3.5-4B-general-LoRA-r64 like 0 Follow UIUC Kang Lab 6 Safetensors qwen3_5 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 7 Safetensors Model size 5B params Tensor type BF16 · F32 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider ..."
+    },
+    {
+      "title": "Qwen3.5-4B · Models",
+      "url": "https://www.modelscope.cn/models/Qwen/Qwen3.5-4B",
+      "snippet": "Qwen3.5 Highlights Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    }
+  ]
+}

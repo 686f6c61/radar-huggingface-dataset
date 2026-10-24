@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Alessandro-fusion/shim-spiking-brain",
+  "slug": "alessandro-fusion-shim-spiking-brain",
+  "author": "Alessandro-fusion",
+  "url": "https://huggingface.co/Alessandro-fusion/shim-spiking-brain",
+  "created_at": "2026-10-23T21:18:45.000Z",
+  "updated_at": "2026-10-23T21:18:47.000Z",
+  "license": "mit-and-cc-by-sa-4.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "it"
+  ],
+  "tags": [
+    "spiking-neural-network",
+    "neuromorphic",
+    "computational-neuroscience",
+    "triton",
+    "it",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 94844574,
+  "storage_human": "95 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-10-24T02:37:14.620Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SpikingBrain Technical Report:Spiking Brain-inspired Large Models",
+      "url": "https://arxiv.org/html/2509.05276v1",
+      "snippet": "Inspired by brain mechanisms, SpikingBrain integrates hybrid efficient attention, MoE modules, and spike encoding into its architecture, supported by a universal conversion pipeline compatible with the open-source model ecosystem."
+    },
+    {
+      "title": "[2509.05276] SpikingBrain: Spiking Brain-inspired Large Models",
+      "url": "https://arxiv.org/abs/2509.05276",
+      "snippet": "Furthermore, the proposed spiking scheme achieves 69.15 percent sparsity, enabling low-power operation. Overall, this work demonstrates the potential of brain-inspired mechanisms to drive the next generation of efficient and scalable large model design."
+    },
+    {
+      "title": "SpikingBrain：Spiking Brain-inspired Large Models - GitHub",
+      "url": "https://github.com/BICLab/SpikingBrain-7B",
+      "snippet": "Inspired by brain mechanisms, SpikingBrain integrates hybrid efficient attention, MoE modules, and spike encoding into its architecture, supported by a universal conversion pipeline compatible with the open-source model ecosystem. This enables continual pre-training with less than 2% of the data while achieving performance comparable to mainstream open-source models. We further adapt ..."
+    },
+    {
+      "title": "PDF SpikingBrain Technical Report: Spiking Brain-inspired Large Models",
+      "url": "https://noticias.ai/wp-content/uploads/2025/09/2509.05276v1.pdf",
+      "snippet": "Taken together, these results point toward a promising direction for developing more efficient and biologically plausible large-model architectures that extend beyond standard Transformer-based LLMs through brain-inspired mechanisms. SpikingBrain: Spiking Brain-inspired Large Models"
+    },
+    {
+      "title": "Paper page - SpikingBrain Technical Report: Spiking Brain-inspired ...",
+      "url": "https://huggingface.co/papers/2509.05276",
+      "snippet": "SpikingBrain, a brain-inspired model family, enhances efficiency in long-context training and inference using adaptive spiking neurons, conversion-based training, and customized hardware strategies ..."
+    }
+  ]
+}

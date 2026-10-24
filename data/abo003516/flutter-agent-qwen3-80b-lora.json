@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "abo003516/flutter-agent-qwen3-80b-lora",
+  "slug": "abo003516-flutter-agent-qwen3-80b-lora",
+  "author": "abo003516",
+  "url": "https://huggingface.co/abo003516/flutter-agent-qwen3-80b-lora",
+  "created_at": "2026-10-23T17:56:56.000Z",
+  "updated_at": "2026-10-23T20:19:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 303819767,
+  "storage_human": "304 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "当前，如何评价Gemini、Claude、ChatGPT、DeepSeek和Grok的综 …",
+      "url": "https://www.zhihu.com/question/2017722470329771134",
+      "snippet": "要用Gemini，一定要走API或者他们的AI Studio。 Grok：众所周知的公然支持NSFW的黄文选手，但我现在从来不找他们聊情色。 我 …"
+    },
+    {
+      "title": "Gemini的模型是不是已经快被淘汰了？ - 知乎",
+      "url": "https://www.zhihu.com/question/2050527290925248637",
+      "snippet": "Gemini 能干一个奇妙的事情，一个50MB，214页，图+文都有的PDF文档，11万 token，上传后可以在10秒内读完，并且你询问后看 …"
+    },
+    {
+      "title": "Gemini3 是目前最强 AI 吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/1975199818042327496",
+      "snippet": "放假的时候 去新疆玩，有一天步行了3.5万步 我问gemini怎么避免脚发胀发疼， 它第一句是“一天步行3万5的壮士”然后说了好多办法 …"
+    },
+    {
+      "title": "ChatGPT和Gemini之间选哪个? - 知乎",
+      "url": "https://www.zhihu.com/question/1975210650360910165",
+      "snippet": "最后，评论区来跟我说ChatGPT或者别的AI也能识别出线接反的同学，请问，你们是如何prompt AI的，是直接问线有没有接反嘛？ 这 …"
+    },
+    {
+      "title": "谷歌发布 Gemini 3 Flash，相比上一代 2.5 Flash 有哪些提升？使用体 …",
+      "url": "https://www.zhihu.com/question/1984788546771517931",
+      "snippet": "Dec 17, 2025 · 左右滑动查看 如果说之前的AI模型是在模拟人类的思考，那么 Gemini 3 Flash就是在模拟人类的「直觉」。 3倍 …"
+    }
+  ]
+}

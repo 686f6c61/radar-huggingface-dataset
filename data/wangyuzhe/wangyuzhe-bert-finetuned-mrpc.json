@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "wangyuzhe/Wangyuzhe-bert-finetuned-mrpc",
+  "slug": "wangyuzhe-wangyuzhe-bert-finetuned-mrpc",
+  "author": "wangyuzhe",
+  "url": "https://huggingface.co/wangyuzhe/Wangyuzhe-bert-finetuned-mrpc",
+  "created_at": "2026-10-23T22:30:06.000Z",
+  "updated_at": "2026-10-23T22:30:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109483778,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437958624,
+  "storage_human": "438 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

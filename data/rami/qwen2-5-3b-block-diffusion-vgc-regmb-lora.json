@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Rami/qwen2.5-3b-block-diffusion-vgc-regmb-lora",
+  "slug": "rami-qwen2-5-3b-block-diffusion-vgc-regmb-lora",
+  "author": "Rami",
+  "url": "https://huggingface.co/Rami/qwen2.5-3b-block-diffusion-vgc-regmb-lora",
+  "created_at": "2026-10-23T23:22:33.000Z",
+  "updated_at": "2026-10-23T23:22:42.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "diffusion-language-model",
+    "block-diffusion",
+    "pokemon",
+    "vgc",
+    "pokemon-showdown",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-3B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 239544608,
+  "storage_human": "240 MB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jeu de cartes Rami | Jouez en ligne - CardGames.io",
+      "url": "https://cardgames.io/fr/rummy/",
+      "snippet": "Cette version en ligne du jeu de cartes classique Rami est le 17ème jeu ajouté au site. C'était le jeu le plus demandé pour le site …"
+    },
+    {
+      "title": "Rami Classique - Jeu de cartes gratuit",
+      "url": "https://www.ramiclassique.com/",
+      "snippet": "Partie de Rami en cours. Formez vos combinaisons, posez vos cartes et soyez le premier a vider votre main pour remporter la victoire."
+    },
+    {
+      "title": "Règle du Rami : cartes, combinaisons, jokers et points",
+      "url": "https://www.regles-du-jeu.fr/regle-rami.html",
+      "snippet": "Pour jouer au Rami, chaque joueur pioche une carte, pose éventuellement des combinaisons, puis se défausse d'une carte. Le but …"
+    },
+    {
+      "title": "Rami Multijoueur : jouez au Rami en ligne sur Jeux-Gratuits.com",
+      "url": "https://www.jeux-gratuits.com/jeu-rami-multijoueur.html",
+      "snippet": "Le but du jeu de Rami est de vous débarrasser de toutes vos cartes. Pour cela, vous devez former des combinaisons de cartes …"
+    },
+    {
+      "title": "Jouer au Rami en Ligne - Jeu de Cartes Gratuit",
+      "url": "https://playpager.com/jeu-Rummy/",
+      "snippet": "Jouez au célèbre jeu de cartes Rami en ligne contre 1 à 3 adversaires virtuels. Un jeu de cartes classique gratuit et sans inscription."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "xbill9/gemma-4-E2B-it-lazy-capped-q4_0-gguf",
+  "slug": "xbill9-gemma-4-e2b-it-lazy-capped-q4_0-gguf",
+  "author": "xbill9",
+  "url": "https://huggingface.co/xbill9/gemma-4-E2B-it-lazy-capped-q4_0-gguf",
+  "created_at": "2026-10-22T13:10:42.000Z",
+  "updated_at": "2026-10-23T18:47:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gemma4",
+    "llama.cpp",
+    "q4_0",
+    "qat",
+    "lora",
+    "reasoning",
+    "gsm8k",
+    "text-only",
+    "text-generation",
+    "base_model:xbill9/gemma-4-E2B-it-qat-q4_0-exact-gguf",
+    "base_model:finetune:xbill9/gemma-4-E2B-it-qat-q4_0-exact-gguf",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 39,
+  "trending_score": 0,
+  "parameters": 4628569635,
+  "parameters_human": "4.63B",
+  "storage_bytes": 2620370912,
+  "storage_human": "2.6 GB",
+  "base_model": "xbill9/gemma-4-E2B-it-qat-q4_0-exact-gguf",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xHamster - Free Porn Videos & XXX Movies - Sex Videos Tube",
+      "url": "https://xhamster.com/",
+      "snippet": "Free porn videos and exclusive XXX movies are here at xHamster. Instantly stream 6M+ hardcore sex videos from pros and …Read more"
+    },
+    {
+      "title": "Free XXX Sex Porn Videos | xHamster",
+      "url": "https://xhamster.com/tags/xxx-sex",
+      "snippet": "Check out free XXX Sex porn videos on xHamster. Watch all XXX Sex XXX vids right now!"
+    },
+    {
+      "title": "Newest Porn Videos & Free Sex Movies | xHamster",
+      "url": "https://xhamster.com/newest",
+      "snippet": "2 days ago · Watch more than a thousand of the newest Porn Videos added daily on xHamster. Stream the latest sex movies with …"
+    },
+    {
+      "title": "Free XXX Sexy Sex Porn Videos | xHamster",
+      "url": "https://xhamster.com/tags/xxx-sexy-sex",
+      "snippet": "Check out free XXX Sexy Sex porn videos on xHamster. Watch all XXX Sexy Sex XXX vids right now!"
+    },
+    {
+      "title": "XXX Sex\\ Porn Videos | xHamster",
+      "url": "https://xhamster.com/search/xxx+sex%5C",
+      "snippet": "Watch XXX sex\\ porn videos. Explore tons of XXX movies with sex scenes in 2026 on xHamster!"
+    }
+  ]
+}

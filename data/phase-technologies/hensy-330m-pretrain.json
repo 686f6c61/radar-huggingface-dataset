@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Phase-Technologies/hensy-330m-pretrain",
+  "slug": "phase-technologies-hensy-330m-pretrain",
+  "author": "Phase-Technologies",
+  "url": "https://huggingface.co/Phase-Technologies/hensy-330m-pretrain",
+  "created_at": "2026-10-23T16:13:30.000Z",
+  "updated_at": "2026-10-23T19:17:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "causal-lm",
+    "dense-transformer",
+    "foundation-model",
+    "pretrain",
+    "h100",
+    "runpod",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8859261900,
+  "storage_human": "8.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Définitions : phase - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/phase/60161",
+      "snippet": "phase - Définitions Français : Retrouvez la définition de phase, ainsi que les synonymes, expressions... - synonymes, homonymes, …Read more"
+    },
+    {
+      "title": "phase - Définitions, synonymes, prononciation, exemples | Dico en …",
+      "url": "https://dictionnaire.lerobert.com/definition/phase",
+      "snippet": "Définition, exemples et prononciation de phase : Chacun des états successifs (d'une chose en évolut…"
+    },
+    {
+      "title": "PHASE - Définition et signification - Dictionnaire français Reverso",
+      "url": "https://dictionnaire.reverso.net/francais-definition/phase",
+      "snippet": "Définition de phase : étape successive dans le développement d'un processus ou phénomène. Découvrez les significations, …"
+    },
+    {
+      "title": "Phase — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Phase",
+      "snippet": "phase, milieu dans lequel les paramètres varient de manière continue, en thermodynamique, chimie, et science des matériaux : …"
+    },
+    {
+      "title": "Définition de phase | Dictionnaire français - La langue française",
+      "url": "https://www.lalanguefrancaise.com/dictionnaire/definition/phase",
+      "snippet": "Apr 12, 2024 · Quand les vieux et les enfants ne versent plus de larmes, cela signifie que le monde est entré soit dans sa phase la …"
+    }
+  ]
+}

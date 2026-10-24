@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "id": "burabeeh/Kimibrain-Uncensored",
+  "slug": "burabeeh-kimibrain-uncensored",
+  "author": "burabeeh",
+  "url": "https://huggingface.co/burabeeh/Kimibrain-Uncensored",
+  "created_at": "2026-10-22T14:56:35.000Z",
+  "updated_at": "2026-10-24T03:24:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "es",
+    "de",
+    "hi",
+    "ja",
+    "ko",
+    "ru"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "ollama",
+    "uncensored",
+    "moe",
+    "vision",
+    "thinking",
+    "arabic",
+    "uae",
+    "text-generation",
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "es",
+    "de",
+    "hi",
+    "ja",
+    "ko",
+    "ru",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 33,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 43232819712,
+  "storage_human": "43.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Je ne peux pas faire de quiz dans mes stories - Instagram",
+      "url": "https://forums.commentcamarche.net/forum/affich-38112451-je-ne-peux-pas-faire-de-quiz-dans-mes-stories",
+      "snippet": "Oct 23, 2024 · Bonjour, J'ai un problème avec mon compte Instagram. J'aimerais créer des quiz dans mes stories, mais …Read more"
+    },
+    {
+      "title": "Compte Instagram verrouillé et irrécupérable",
+      "url": "https://forums.commentcamarche.net/forum/affich-37319755-compte-instagram-verrouille-et-irrecuperable",
+      "snippet": "Aug 31, 2021 · La seule solution est donc d'attendre qu'Instagram vous restitue votre compte et ne tombez pas dans le piège des …"
+    },
+    {
+      "title": "Instagram - 知乎",
+      "url": "https://www.zhihu.com/topic/19550793/intro",
+      "snippet": "Apr 24, 2020 · Instagram 是一款最初运行在 iOS平台上的移动应用，以一种快速、美妙和有趣的方式将你随时抓拍下的 图片分享彼 …"
+    },
+    {
+      "title": "Come riattivare un account Instagram disabilitato - CCM",
+      "url": "https://it.ccm.net/faq/27293-come-riattivare-un-account-instagram-disabilitato",
+      "snippet": "Jun 22, 2021 · Riattivare un account Instagram temporaneamente disabilitato Se hai disabilitato temporaneamente il tuo account …"
+    },
+    {
+      "title": "Come ripostare una storia su Instagram: senza tag, da PC",
+      "url": "https://it.ccm.net/faq/22335-come-ripostare-una-storia-su-instagram-senza-tag-da-pc",
+      "snippet": "Mar 23, 2023 · Pubblicare sul tuo profilo Instagram una storia di un altro utente pu&ograve; essere un modo per condividere …"
+    }
+  ]
+}

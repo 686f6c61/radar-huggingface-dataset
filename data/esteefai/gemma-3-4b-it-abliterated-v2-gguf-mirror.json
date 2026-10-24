@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "EsteefAi/gemma-3-4b-it-abliterated-v2-GGUF-mirror",
+  "slug": "esteefai-gemma-3-4b-it-abliterated-v2-gguf-mirror",
+  "author": "EsteefAi",
+  "url": "https://huggingface.co/EsteefAi/gemma-3-4b-it-abliterated-v2-GGUF-mirror",
+  "created_at": "2026-10-23T21:13:05.000Z",
+  "updated_at": "2026-10-23T21:14:25.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "mirror",
+    "base_model:mlabonne/gemma-3-4b-it-abliterated-v2",
+    "base_model:quantized:mlabonne/gemma-3-4b-it-abliterated-v2",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3880263168,
+  "parameters_human": "3.88B",
+  "storage_bytes": 3190739776,
+  "storage_human": "3.2 GB",
+  "base_model": "mlabonne/gemma-3-4b-it-abliterated-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlabonne/gemma-3-4b-it-abliterated-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mlabonne/gemma-3-4b-it-abliterated-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma 3 4b It Abliterated V2 - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/gemma-3-4b-it-abliterated-v2.html",
+      "snippet": "Download Gemma 3 4b It Abliterated V2 GGUF model. 1.31 GB, 633 downloads, 15 likes."
+    },
+    {
+      "title": "mlabonne/gemma-3-4b-it-abliterated-v2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mlabonne/gemma-3-4b-it-abliterated-v2-GGUF",
+      "snippet": "💎 Gemma 3 4B IT Abliterated GGUF Gemma 3 Abliterated GGUF 1B • 4B • 12B • 27B This is an uncensored version of google/gemma-3-4b-it created with a new abliteration technique. See this article to know more about abliteration. This is a new, improved version that targets refusals with enhanced accuracy."
+    },
+    {
+      "title": "gemma-3-4b-it-abliterated-GGUF Open Source Model - Free Local Running ...",
+      "url": "https://model.aibase.com/models/details/1942769986376568832",
+      "snippet": "This model was converted to GGUF format from mlabonne/gemma-3-4b-it-abliterated using llama.cpp via the ggml.ai&#x27;s all-gguf-same-where space. Refer to the original model card for more details on the model."
+    },
+    {
+      "title": "gemma-3-4b-it · Models",
+      "url": "https://www.modelscope.cn/models/LLM-Research/gemma-3-4b-it",
+      "snippet": "Description Gemma is a family of lightweight, state-of-the-art open models from Google, built from the same research and technology used to create the Gemini models. Gemma 3 models are multimodal, handling text and image input and generating text output, with open weights for both pre-trained variants and instruction-tuned variants."
+    }
+  ]
+}

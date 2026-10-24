@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "sstoica12/acquisition_generator_AS_answer_variance_combine_WGM_MP_llama8b_conf",
+  "slug": "sstoica12-acquisition_generator_as_answer_variance_combine_wgm_mp_llama8b_conf",
+  "author": "sstoica12",
+  "url": "https://huggingface.co/sstoica12/acquisition_generator_AS_answer_variance_combine_WGM_MP_llama8b_conf",
+  "created_at": "2026-10-23T20:15:51.000Z",
+  "updated_at": "2026-10-23T20:20:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 59091622760,
+  "storage_human": "59.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sstoica12/acquisition_generator_AS_answer_variance_wildguardmix_llama8b ...",
+      "url": "https://huggingface.co/sstoica12/acquisition_generator_AS_answer_variance_wildguardmix_llama8b_conf",
+      "snippet": "Instructions to use sstoica12/acquisition_generator_AS_answer_variance_wildguardmix_llama8b_conf with libraries, inference providers, notebooks, and local apps."
+    },
+    {
+      "title": "sstoica12/acquisition_student_AS_answer_variance_wildguardmix_llama8b ...",
+      "url": "https://huggingface.co/sstoica12/acquisition_student_AS_answer_variance_wildguardmix_llama8b_conf_5000_checkpoint_400",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "acquisition_student_AS_answer_variance_wildguardmix_llama8b_conf_5000 ...",
+      "url": "https://friendli.ai/models/sstoica12/acquisition_student_AS_answer_variance_wildguardmix_llama8b_conf_5000_checkpoint_400",
+      "snippet": "Run this model inference on single tenant GPU with unmatched speed and reliability at scale."
+    },
+    {
+      "title": "sstoica12/acquisition_llama8bins_medmcqa_answer_variance",
+      "url": "https://featherless.ai/models/sstoica12/acquisition_llama8bins_medmcqa_answer_variance",
+      "snippet": "The sstoica12/acquisition_llama8bins_medmcqa_answer_variance is an 8 billion parameter language model. This model is a Hugging Face Transformers model that has been automatically pushed to the Hub. Due to limited information in its model card, specific differentiators, training details, and primary use cases are not explicitly defined. It is presented as a base model with placeholders for ..."
+    }
+  ]
+}

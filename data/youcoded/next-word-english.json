@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "youcoded/next-word-english",
+  "slug": "youcoded-next-word-english",
+  "author": "youcoded",
+  "url": "https://huggingface.co/youcoded/next-word-english",
+  "created_at": "2026-10-23T21:22:30.000Z",
+  "updated_at": "2026-10-23T21:23:04.000Z",
+  "license": "odc-by-1.0-and-cc-by-2.0-fr",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "custom",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "custom",
+    "next-word-prediction",
+    "keyboard",
+    "on-device",
+    "lstm",
+    "int8",
+    "swipe-keyboard",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceFW/fineweb",
+    "arxiv:2305.18465",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4657632,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Next-word suggestion (model blended with the n-gram pack)",
+      "dataset": "Common Voice everyday sentences, first 300 (CC0)",
+      "metric": "right word in top 3 (word-level, case-insensitive)",
+      "value": 29.36
+    },
+    {
+      "task": "Next-word suggestion (model blended with the n-gram pack)",
+      "dataset": "FineWeb test text (sample shard 001, not trained on), first 300 sentences",
+      "metric": "right word in top 3 (word-level, case-insensitive)",
+      "value": 31.62
+    },
+    {
+      "task": "Next-word suggestion (model blended with the n-gram pack)",
+      "dataset": "Tatoeba held-out tenth (id % 10 == 0), first 300 sentences",
+      "metric": "right word in top 3 (word-level, case-insensitive)",
+      "value": 43.83
+    }
+  ],
+  "sources": [
+    {
+      "title": "YouCoded Assistant — Agentic AI for Everyone",
+      "url": "https://youcoded.ai/",
+      "snippet": "YouCoded is a customizable AI assistant that works with your own files and data to autonomously accomplish tasks using your computer. Review and organize large spreadsheets, compile the latest medical or financial research, draft an email or slideshow, or build new features in large coding projects, all without needing to leave the app."
+    },
+    {
+      "title": "GitHub - itsdestin/youcoded",
+      "url": "https://github.com/itsdestin/youcoded",
+      "snippet": "YouCoded is an open-source, multi-model AI assistant that helps you work with files, projects, research, and everyday tasks. Its own permission-based agent can use tools, skills, and specialists; you choose the AI behind it: a local model on your computer, a cloud provider or API key, a ChatGPT plan, or Claude Code as a first-class integration. It&#x27;s designed for students, professionals, and ..."
+    },
+    {
+      "title": "youcoded/next-word-french · Hugging Face",
+      "url": "https://huggingface.co/youcoded/next-word-french",
+      "snippet": "youcoded / next-word-french Like 0 Text Generation HuggingFaceFW/fineweb-2 French custom next-word-prediction keyboard on-device lstm int8 swipe-keyboard Eval Results (legacy) arxiv:2305.18465 License:odc-by-1.-and-cc-by-2.-fr Model card FilesFiles and versions xet Community Copy to bucket new youcoded/next-word-french: French next-word model for the Swipe Keyboard What it is, and what it is ..."
+    },
+    {
+      "title": "Next Word Prediction: A Complete Guide - Medium",
+      "url": "https://medium.com/linagoralabs/next-word-prediction-a-complete-guide-d2e69a7a09e6",
+      "snippet": "Next word predictions in Google&#x27;s Gboard Some useful training corpora In order to evaluate the different model architecture&#x27;s I will use to build my language model, it is crucial to have a ..."
+    },
+    {
+      "title": "Next-Word-Prediction-Using-LSTM - GitHub",
+      "url": "https://github.com/abhi227070/Next-Word-Prediction-Using-LSTM",
+      "snippet": "Next Word Prediction is a project that predicts the next word in a sequence of text using LSTM-based neural networks. The project involves tokenizing input text, generating sequences, padding sequences, building and training an LSTM model, and finally, predicting the next word based on the trained model."
+    }
+  ]
+}

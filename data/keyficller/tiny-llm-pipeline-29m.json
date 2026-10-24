@@ -5,7 +5,7 @@
   "author": "KeyFicller",
   "url": "https://huggingface.co/KeyFicller/tiny-llm-pipeline-29m",
   "created_at": "2026-10-07T02:05:05.000Z",
-  "updated_at": "2026-10-22T06:55:16.000Z",
+  "updated_at": "2026-10-23T04:42:50.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -21,7 +21,7 @@
     "zh",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "stuff123456/krea2SNOFS",
+  "slug": "stuff123456-krea2snofs",
+  "author": "stuff123456",
+  "url": "https://huggingface.co/stuff123456/krea2SNOFS",
+  "created_at": "2026-10-23T20:13:10.000Z",
+  "updated_at": "2026-10-23T20:13:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1562410440,
+  "storage_human": "1.6 GB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Other Fun Stuff (SNOFS) - V1.4 - Free AI LOKR | Tensor.Art",
+      "url": "https://tensor.art/models/1039832475498491300",
+      "snippet": "Download Other Fun Stuff (SNOFS) - free LOKR KREA_2 AI model on TENSOR. REALSTIC PHOTO, PHOTO REALISTIC, EXCLUSIVE. By Alternative_system"
+    },
+    {
+      "title": "SNOFS (Sex, Nudes, and Other Fun Stuff) Merged",
+      "url": "https://civitai.red/models/2416142/snofs-sex-nudes-and-other-fun-stuff-merged",
+      "snippet": "Yours is the best klein9b model, but the krea2 turbo model I get decidedly semi-real output on ComfyUI with euler/simple. Is this the intentional look or am I doing something wrong w/ the sampler/scheduler?"
+    },
+    {
+      "title": "Other Fun Stuff (SNOFS) - V1. 5 - Free AI LOKR | Tensor.Art",
+      "url": "https://tensor.art/models/1052876547800742880",
+      "snippet": "Download Other Fun Stuff (SNOFS) - free LOKR KREA_2 AI model on TENSOR. REALSTIC PHOTO, PHOTO REALISTIC, EXCLUSIVE. By Alternative_system"
+    },
+    {
+      "title": "SNOFS (, , Other Fun Stuff) - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/def09ae2b6fbc022d40df8031310b5ad",
+      "snippet": "Explore SNOFS (, , Other Fun Stuff) model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "Krea 2: AI Image Foundation Model & Style Control",
+      "url": "https://www.krea.ai/krea-2",
+      "snippet": "Create expressive AI images with Krea 2, Krea AI&#x27;s in-house foundation model for aesthetic diversity, style control, moodboards, and creative workflows."
+    }
+  ]
+}

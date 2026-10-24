@@ -1,0 +1,107 @@
+{
+  "schema": 1,
+  "id": "MoritzMo123/kfac-svd_uniform_mistral-7b_0.6",
+  "slug": "moritzmo123-kfac-svd_uniform_mistral-7b_0-6",
+  "author": "MoritzMo123",
+  "url": "https://huggingface.co/MoritzMo123/kfac-svd_uniform_mistral-7b_0.6",
+  "created_at": "2026-06-01T17:36:52.000Z",
+  "updated_at": "2026-10-23T18:46:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "low_rank_compressed",
+    "low-rank",
+    "compressed",
+    "kfac_svd",
+    "uniform",
+    "params-0.6",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "dataset:wikitext2",
+    "dataset:ptb",
+    "dataset:c4",
+    "base_model:unsloth/mistral-7b",
+    "base_model:finetune:unsloth/mistral-7b",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 4448587776,
+  "parameters_human": "4.45B",
+  "storage_bytes": 17794982875,
+  "storage_human": "17.8 GB",
+  "base_model": "unsloth/mistral-7b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "WikiText-2",
+      "metric": "Perplexity",
+      "value": 14.47
+    },
+    {
+      "task": null,
+      "dataset": "PTB",
+      "metric": "Perplexity",
+      "value": 182.12
+    },
+    {
+      "task": null,
+      "dataset": "C4",
+      "metric": "Perplexity",
+      "value": 67.11
+    },
+    {
+      "task": null,
+      "dataset": "OpenBookQA (zero-shot)",
+      "metric": "Accuracy",
+      "value": 19.4
+    },
+    {
+      "task": null,
+      "dataset": "ARC-e (zero-shot)",
+      "metric": "Accuracy",
+      "value": 46.55
+    },
+    {
+      "task": null,
+      "dataset": "ARC-c (zero-shot)",
+      "metric": "Accuracy",
+      "value": 22.53
+    },
+    {
+      "task": null,
+      "dataset": "WinoGrande (zero-shot)",
+      "metric": "Accuracy",
+      "value": 56.91
+    },
+    {
+      "task": null,
+      "dataset": "HellaSwag (zero-shot)",
+      "metric": "Accuracy",
+      "value": 31.41
+    },
+    {
+      "task": null,
+      "dataset": "PIQA (zero-shot)",
+      "metric": "Accuracy",
+      "value": 58.54
+    }
+  ],
+  "sources": []
+}

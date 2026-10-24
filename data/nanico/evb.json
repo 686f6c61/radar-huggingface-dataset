@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Nanico/evb",
+  "slug": "nanico-evb",
+  "author": "Nanico",
+  "url": "https://huggingface.co/Nanico/evb",
+  "created_at": "2026-10-23T20:06:05.000Z",
+  "updated_at": "2026-10-23T20:41:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 779035370,
+  "storage_human": "779 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nanico/bbm at main - Hugging Face",
+      "url": "https://huggingface.co/Nanico/bbm/tree/main",
+      "snippet": "Nanico / bbm Like 0 Text-to-Image Diffusers lora krea2 template:sd-lora License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Models - Explore VioEvo AI Video and Image Routes",
+      "url": "https://www.vioevo.com/models",
+      "snippet": "Browse the VioEvo model catalog, compare promoted routes, and jump directly into Veo 3.1 Quality, Seedance 2, Kling 3.0, FLUX Pro, and other production-ready models."
+    },
+    {
+      "title": "DiffusionBee - Stable Diffusion App for AI Art",
+      "url": "https://diffusionbee.com/huggingface_import?model_id=Nanico/take4",
+      "snippet": "DiffusionBee is the easiest way to generate AI art on your computer with Stable Diffusion. Completely free of charge."
+    },
+    {
+      "title": "All Models Compared: Capabilities and Limits (March 2026) - ViNano AI",
+      "url": "https://vinano.ai/en/help/model-comparison",
+      "snippet": "All Models Compared: Capabilities and Limits (March 2026) — practical guide in the Model Reference section. Covers prompts, parameters and best practices for AI image and video generation on ViNano AI."
+    },
+    {
+      "title": "cute puppy 3d model - studio.tripo3d.ai",
+      "url": "https://studio.tripo3d.ai/3d-model/white-puppy-figurine-on-a-round-pedestal-labeled-nanico-with-fluffy-fu-9610b7b0-9cf0-4a56-8d9c-2b004c7f94f8",
+      "snippet": "Tripo AI offers the 3D model: white puppy figurine on a round pedestal labeled NANICO with fluffy fur and cute in STL, 3MF, FBX, GLB, OBJ and USDZ. cute puppy 3d model is PBR-ready, ideal for 3D printing, game development (Unity/UE5), Web AR and Blender."
+    }
+  ]
+}

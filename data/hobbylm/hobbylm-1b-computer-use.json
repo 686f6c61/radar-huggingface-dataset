@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Hobbylm/hobbylm-1B-computer-use",
+  "slug": "hobbylm-hobbylm-1b-computer-use",
+  "author": "Hobbylm",
+  "url": "https://huggingface.co/Hobbylm/hobbylm-1B-computer-use",
+  "created_at": "2026-10-23T09:23:45.000Z",
+  "updated_at": "2026-10-23T10:24:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "mlx",
+    "mixture-of-experts",
+    "hobbylm",
+    "agent",
+    "macos",
+    "tool-use",
+    "computer-use",
+    "on-device",
+    "text-generation",
+    "en",
+    "base_model:harims95/hobbylm-1B-instruct",
+    "base_model:adapter:harims95/hobbylm-1B-instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 20,
+  "downloads_30d": 0,
+  "trending_score": 20,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28518733,
+  "storage_human": "29 MB",
+  "base_model": "harims95/hobbylm-1B-instruct",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bully Porn GIFs | RedGIFs",
+      "url": "https://www.redgifs.com/tag/bully",
+      "snippet": "Looking for the best Bully porn GIFs? Watch 13005 Bully porn GIFs from 173 creators and many other porn GIFs and images free on …"
+    },
+    {
+      "title": "Bully Porn GIFs and Pics | RedGIFs",
+      "url": "https://www.redgifs.com/gifs/bully",
+      "snippet": "Looking for the best Bully porn GIFs? Watch 13085 Bully porn GIFs from 173 creators and many other porn GIFs and images free on …"
+    },
+    {
+      "title": "Bully porn gifs - gifreels",
+      "url": "https://gifreels.com/tag/bully",
+      "snippet": "my wife officially enrolled in a impregnation sciencefair project. my bully's son will be impregnating her, under campus teens …"
+    },
+    {
+      "title": "Bully NSFW Gifs | NSFW Gify",
+      "url": "https://nsfwgify.com/tag/bully/",
+      "snippet": "Your girlfriend's favorite lucky, man. You should cum in her sure, doe. Explore Bully NSFW Gifs! Hottest NSFW gifs around! Scroll, …"
+    },
+    {
+      "title": "Boyfriends Bully - Porn Photos & Videos - EroMe",
+      "url": "https://www.erome.com/search?q=boyfriends+bully",
+      "snippet": "Boyfriends Bully photos & videos. EroMe is the best place to share your erotic pics and porn videos. Every day, thousands of people …"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "VERIGEN/q-realign-GGUF",
+  "slug": "verigen-q-realign-gguf",
+  "author": "VERIGEN",
+  "url": "https://huggingface.co/VERIGEN/q-realign-GGUF",
+  "created_at": "2026-10-23T21:15:35.000Z",
+  "updated_at": "2026-10-23T21:51:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "image-quality-assessment",
+    "aesthetics",
+    "q-align",
+    "qwen3.5",
+    "image-text-to-text",
+    "base_model:q-future/Q-ReAlign-Lite-4B",
+    "base_model:quantized:q-future/Q-ReAlign-Lite-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4841450496,
+  "parameters_human": "4.84B",
+  "storage_bytes": 5830257472,
+  "storage_human": "5.8 GB",
+  "base_model": "q-future/Q-ReAlign-Lite-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Q-Future/Q-ReAlign: Q-Align-style framework with lightweight ...",
+      "url": "https://github.com/Q-Future/Q-ReAlign",
+      "snippet": "Q-ReAlign Q-ReAlign: Lightweight Human-Aligned Multimodal Judges Built on Modern Vision-Language Models The method · Adapting guide · Quickstart · Results Q-Align-level performance with 50% fewer parameters. Easy to use, easy to train. The 0.8B model requires less than 4 GB of GPU memory and is CPU-runnable."
+    },
+    {
+      "title": "Q-realign: Piggybacking Realignment on Quantization for Safe and ...",
+      "url": "https://arxiv.org/html/2601.08089v1",
+      "snippet": "By reframing quantization as a dual-objective procedure for compression and safety, Q-realign decouples safety alignment from fine-tuning and naturally piggybacks into modern deployment pipelines."
+    },
+    {
+      "title": "GitHub - Q-Future/Q-Align: ③[ICML2024] [IQA, IAA, VQA] All-in-one ...",
+      "url": "https://github.com/Q-Future/Q-Align",
+      "snippet": "③[ICML2024] [IQA, IAA, VQA] All-in-one Foundation Model for visual scoring. Can efficiently fine-tune to downstream datasets. - Q-Future/Q-Align"
+    },
+    {
+      "title": "[2601.08089] Q-realign: Piggybacking Realignment on Quantization for ...",
+      "url": "https://arxiv.org/abs/2601.08089",
+      "snippet": "Public large language models (LLMs) are typically safety-aligned during pretraining, yet task-specific fine-tuning required for deployment often erodes this alignment and introduces safety risks. Existing defenses either embed safety recovery into fine-tuning or rely on fine-tuning-derived priors for post-hoc correction, leaving safety recovery tightly coupled with training and incurring high ..."
+    },
+    {
+      "title": "Q-ReAlign - a q-future Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/q-future/q-realign",
+      "snippet": "The Q-ReAlign Collection"
+    }
+  ]
+}

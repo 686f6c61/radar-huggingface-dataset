@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "caikybaldo999/zylun-chat-170m",
+  "slug": "caikybaldo999-zylun-chat-170m",
+  "author": "caikybaldo999",
+  "url": "https://huggingface.co/caikybaldo999/zylun-chat-170m",
+  "created_at": "2026-10-23T20:33:50.000Z",
+  "updated_at": "2026-10-24T00:30:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "pt",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "chat",
+    "portuguese",
+    "small-model",
+    "prompt-translation",
+    "conversational",
+    "pt",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:HuggingFaceFW/fineweb-2",
+    "dataset:wikimedia/wikipedia",
+    "dataset:HuggingFaceTB/smol-smoltalk",
+    "dataset:dominguesm/Canarim-Instruct-PTBR-Dataset",
+    "dataset:Helsinki-NLP/opus-100",
+    "dataset:LucasFang/FLUX-Reason-6M",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 168847872,
+  "parameters_human": "168.8M",
+  "storage_bytes": 1688553920,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Les Misérables (2012) - Full cast & crew - IMDb",
+      "url": "https://www.imdb.com/title/tt1707386/fullcredits/",
+      "snippet": "Les Misérables (2012) - Cast and crew credits, including actors, actresses, directors, writers and more."
+    },
+    {
+      "title": "Casting du film Les Misérables : Réalisateurs, acteurs et équipe ...",
+      "url": "https://www.allocine.fr/film/fichefilm-326160/casting/",
+      "snippet": "Retrouvez tout le casting du film Les Misérables réalisé par Fred Cavayé avec Vincent Lindon, Tahar Rahim, Camille Cottin"
+    },
+    {
+      "title": "Les Misérables - Cast & Crew — The Movie Database (TMDB)",
+      "url": "https://www.themoviedb.org/movie/82695-les-miserables/cast",
+      "snippet": "Jean Valjean, a man imprisoned for stealing bread, must flee a relentless policeman named Javert. The pursuit consumes both …"
+    },
+    {
+      "title": "Les Misérables (2012 film) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Les_Mis%C3%A9rables_(2012_film)",
+      "snippet": "The film stars Hugh Jackman, Russell Crowe, Anne Hathaway, Eddie Redmayne, Amanda Seyfried, Helena Bonham Carter and …"
+    },
+    {
+      "title": "Les Misérables (2012) - IMDb",
+      "url": "https://www.imdb.com/title/tt1707386/",
+      "snippet": "Dec 25, 2012 · Featuring some bravura performances from an all-star cast including Anne Hathaway (Oscar winner), Hugh Jackman …"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "SwetieePawsss/Llama-3.1-8B-Instruct-DUET-fullft",
+  "slug": "swetieepawsss-llama-3-1-8b-instruct-duet-fullft",
+  "author": "SwetieePawsss",
+  "url": "https://huggingface.co/SwetieePawsss/Llama-3.1-8B-Instruct-DUET-fullft",
+  "created_at": "2026-10-23T20:58:13.000Z",
+  "updated_at": "2026-10-23T21:30:20.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "unlearning",
+    "DUET",
+    "conversational",
+    "en",
+    "dataset:SwetieePawsss/DUET",
+    "arxiv:2602.19612",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "meta-llama/Llama-3.1-8B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Open-source AI Models for Any Application | Llama 3",
+      "url": "https://dev.meta.ai/llama/models/llama-3",
+      "snippet": "Discover Llama 3&#x27;s open-source AI models you can fine-tune, distill and deploy anywhere. Build smarter applications with flexible AI solutions."
+    },
+    {
+      "title": "Meta-Llama-3.1-8B-Instruct-128k-GGUF - Hugging Face",
+      "url": "https://huggingface.co/GPT4All-Community/Meta-Llama-3.1-8B-Instruct-128k-GGUF",
+      "snippet": "This is a model that is assumed to perform well, but may require more testing and user feedback. Be aware, only models featured within the GUI of GPT4All, are curated and officially supported by Nomic. Use at your own risk ..."
+    },
+    {
+      "title": "llama-3.1-8b-instruct-fp8 - Cloudflare AI docs",
+      "url": "https://developers.cloudflare.com/workers-ai/models/llama-3.1-8b-instruct-fp8/",
+      "snippet": "Llama 3.1 8B quantized to FP8 precision"
+    },
+    {
+      "title": "Run Llama-3.1-8B Locally: A Step-by-Step Guide — AI Tutorial",
+      "url": "https://aiindigo.com/tutorials/getting-started-with-llama-3-1-8b-local-deployment-inference",
+      "snippet": "Deploy Meta&#x27;s Llama-3.1-8B model locally. Learn to set up Hugging Face Transformers and Ollama for efficient, private AI inference on consumer hardware."
+    }
+  ]
+}

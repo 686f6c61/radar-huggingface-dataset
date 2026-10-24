@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "rubenich/genetic-dna-tiny",
+  "slug": "rubenich-genetic-dna-tiny",
+  "author": "rubenich",
+  "url": "https://huggingface.co/rubenich/genetic-dna-tiny",
+  "created_at": "2026-10-23T21:19:49.000Z",
+  "updated_at": "2026-10-23T21:19:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "dna",
+    "genomics",
+    "biology",
+    "causal-lm",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6302976,
+  "parameters_human": "6.3M",
+  "storage_bytes": 25218040,
+  "storage_human": "25 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Extract RAR Files Online (No Upload - 100% Private) - ezyZip",
+      "url": "https://www.ezyzip.com/open-extract-rar-file-online.html",
+      "snippet": "Watch how to extract your rar files online for free with ezyZip. This step by step guide shows you how to open and unpack rar …"
+    },
+    {
+      "title": "RAR Extractor | Online and Free | Aspose Zip",
+      "url": "https://products.aspose.app/zip/extract/rar",
+      "snippet": "Extract RAR files with this fast cross-platform decompression app. It's secure and private."
+    },
+    {
+      "title": "7-Zip",
+      "url": "https://www.7-zip.org/",
+      "snippet": "2 days ago · Some parts of the code are under the BSD 3-clause License. Also there is unRAR license restriction for some parts of …"
+    },
+    {
+      "title": "Unzip Files Online (No Upload - 100% Private) - ezyZip",
+      "url": "https://www.ezyzip.com/unzip-files-online.html",
+      "snippet": "See how to unzip your files online for free with ezyZip. This quick guide walks you through extracting the contents of a ZIP file directly …"
+    },
+    {
+      "title": "Free Online Unzip — No Upload | JetZip",
+      "url": "https://jetzip.net/en/unzip",
+      "snippet": "Extract ZIP, RAR, and 7Z in your browser with zero server upload. Private client-side extraction — no account required."
+    }
+  ]
+}

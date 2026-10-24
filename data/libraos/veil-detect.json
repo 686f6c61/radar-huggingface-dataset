@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "libraos/veil-detect",
+  "slug": "libraos-veil-detect",
+  "author": "libraos",
+  "url": "https://huggingface.co/libraos/veil-detect",
+  "created_at": "2026-10-21T19:30:27.000Z",
+  "updated_at": "2026-10-23T18:43:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "token-classification",
+    "pii",
+    "pii-detection",
+    "de-identification",
+    "anonymization",
+    "redaction",
+    "legal",
+    "ner",
+    "en",
+    "zh",
+    "dataset:nvidia/Nemotron-PII",
+    "dataset:gravitee-io/pii-detection-dataset",
+    "dataset:gretelai/synthetic_pii_finance_multilingual",
+    "dataset:xusenlin/clue-ner",
+    "dataset:ildpil/text-anonymization-benchmark",
+    "base_model:FacebookAI/xlm-roberta-base",
+    "base_model:finetune:FacebookAI/xlm-roberta-base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 277469205,
+  "parameters_human": "277.5M",
+  "storage_bytes": 1127264165,
+  "storage_human": "1.1 GB",
+  "base_model": "FacebookAI/xlm-roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LibraOS - Hugging Face",
+      "url": "https://huggingface.co/libraos/models",
+      "snippet": "vor 6 Tagen ... AI & ML interests. None defined yet. Recent Activity. ccao published a model about 4 hours ago. libraos/veil-detect · ccao updated a model ..."
+    },
+    {
+      "title": "Free Porn Videos & Sex Movies - Porno, XXX, Porn Tube | Pornhub",
+      "url": "https://www.pornhub.com/",
+      "snippet": "Welcome to Pornhub.com, home of the best hardcore free porn videos with the hottest adult stars. Get full length scenes from your …"
+    },
+    {
+      "title": "Análisis psicosocial de los procesos de alianza y conflicto entre la ...",
+      "url": "https://digibug.ugr.es/bitstream/handle/10481/113049/39642.jsp.pdf?sequence=4&isAllowed=y",
+      "snippet": "The model fit the data well, χ² (47) = 113.58, CFI = 0.98, RMSEA = .07, SRMR ... can detect a minimum effect size between r = .23 and r = .25. Results."
+    },
+    {
+      "title": "Pornhub | Free Porn Videos & Sex Movies - Porno, XXX Tube",
+      "url": "https://m-pornhub.com/",
+      "snippet": "Enjoy the hottest free porn videos in HD. Pornhub run has all the latest with top pornstars in every xxx video category."
+    },
+    {
+      "title": "Vidéos porno et films de sexe gratuits - Porno, XXX, Porn Tube | Pornhub",
+      "url": "https://fr.pornhub.com/",
+      "snippet": "Pornhub est le plus vaste site porno du monde. L'équipe de Pornhub met à jour et ajoute constamment de nouvelles vidéos …"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "id": "torch-pointcloud/pv-rcnn.kitti.mmdet3d",
+  "slug": "torch-pointcloud-pv-rcnn-kitti-mmdet3d",
+  "author": "torch-pointcloud",
+  "url": "https://huggingface.co/torch-pointcloud/pv-rcnn.kitti.mmdet3d",
+  "created_at": "2026-10-23T20:51:53.000Z",
+  "updated_at": "2026-10-23T21:01:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "torch-pointcloud",
+  "languages": [],
+  "tags": [
+    "torch-pointcloud",
+    "safetensors",
+    "point-cloud",
+    "3d",
+    "pytorch",
+    "pv-rcnn",
+    "object-detection",
+    "dataset:kitti",
+    "arxiv:1912.13192",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 13129009,
+  "parameters_human": "13.1M",
+  "storage_bytes": 105117496,
+  "storage_human": "105 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "KITTI",
+      "metric": "mAP",
+      "value": 72.16
+    },
+    {
+      "task": null,
+      "dataset": "KITTI",
+      "metric": "AP/Car",
+      "value": 83.54
+    },
+    {
+      "task": null,
+      "dataset": "KITTI",
+      "metric": "AP/Pedestrian",
+      "value": 59.73
+    },
+    {
+      "task": null,
+      "dataset": "KITTI",
+      "metric": "AP/Cyclist",
+      "value": 73.2
+    }
+  ],
+  "sources": [
+    {
+      "title": "PyTorch Foundation - PyTorch",
+      "url": "https://pytorch.org/",
+      "snippet": "1 day ago · Distributed Training Scalable distributed training and performance optimization in research and production is enabled by …"
+    },
+    {
+      "title": "Télécharger Torch (gratuit) Windows - Clubic",
+      "url": "https://www.clubic.com/telecharger-fiche418134-torch.html",
+      "snippet": "22 hours ago · Torch est un navigateur web fondé sur le moteur Chromium. Il propose une interface familière, proche de celle de …"
+    },
+    {
+      "title": "PyTorch — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/PyTorch",
+      "snippet": "PyTorch définit une classe appelée Tensor (torch.Tensor) pour stocker les données et opérer sur des tableaux rectangulaires …"
+    },
+    {
+      "title": "Torch Browser - Download",
+      "url": "https://torch.en.softonic.com/",
+      "snippet": "Jun 16, 2026 · Torch Browser provides a user-friendly Chromium interface with enhanced media tools for easy downloading and …"
+    },
+    {
+      "title": "Télécharger Torch Browser gratuit pour PC - CCM",
+      "url": "https://www.commentcamarche.net/telecharger/web-internet/22085-torch-browser/",
+      "snippet": "May 30, 2022 · Torch Browser est un navigateur Web gratuit basé sur le projet libre Chromium, comme Google Chrome, dont il …"
+    }
+  ]
+}

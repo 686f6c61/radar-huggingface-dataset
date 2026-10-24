@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "LyJonathan/MiniMax-M3.1-Flash-GGUF",
+  "slug": "lyjonathan-minimax-m3-1-flash-gguf",
+  "author": "LyJonathan",
+  "url": "https://huggingface.co/LyJonathan/MiniMax-M3.1-Flash-GGUF",
+  "created_at": "2026-10-23T16:23:57.000Z",
+  "updated_at": "2026-10-24T01:13:12.000Z",
+  "license": "minimax-community",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "minimax",
+    "minimax-m3",
+    "iq2_xs",
+    "mixture-of-experts",
+    "strata",
+    "base_model:MiniMaxAI/MiniMax-M3.1-Flash",
+    "base_model:quantized:MiniMaxAI/MiniMax-M3.1-Flash",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 426186370176,
+  "parameters_human": "426.19B",
+  "storage_bytes": 279196950720,
+  "storage_human": "279.2 GB",
+  "base_model": "MiniMaxAI/MiniMax-M3.1-Flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SteamDB | Database of everything on Steam",
+      "url": "https://steamdb.info/",
+      "snippet": "SteamDB is a free, independent database covering the entire Steam catalog. Player charts, price history across all regions, update …"
+    },
+    {
+      "title": "Steam Charts · Live Player Count Statistics · SteamDB",
+      "url": "https://steamdb.info/charts/",
+      "snippet": "Steam player count and game statistics. See the most played games on Steam with live concurrent players, 24-hour peak, and all …"
+    },
+    {
+      "title": "Steam Developer: SteamDB",
+      "url": "https://store.steampowered.com/dev/steamdb",
+      "snippet": "Oct 13, 2026 · We post informational reviews with concurrent player peaks when it reaches high enough. ----- Game developers: we …"
+    },
+    {
+      "title": "Équipe de développement Steam : SteamDB",
+      "url": "https://store.steampowered.com/dev/steamdb?l=french",
+      "snippet": "Oct 13, 2026 · We post informational reviews with concurrent player peaks when it reaches high enough. ----- Game developers: we …"
+    },
+    {
+      "title": "Steam Dashboard: CS2 Skin Prices & Market Comparison",
+      "url": "https://steamdb.com/en",
+      "snippet": "Compare CS2 skin prices across 36 marketplaces with fees included, follow real price moves and check Steam status. Independent …"
+    }
+  ]
+}

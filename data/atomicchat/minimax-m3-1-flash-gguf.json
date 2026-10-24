@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "AtomicChat/MiniMax-M3.1-Flash-GGUF",
+  "slug": "atomicchat-minimax-m3-1-flash-gguf",
+  "author": "AtomicChat",
+  "url": "https://huggingface.co/AtomicChat/MiniMax-M3.1-Flash-GGUF",
+  "created_at": "2026-10-23T08:44:04.000Z",
+  "updated_at": "2026-10-23T19:40:29.000Z",
+  "license": "minimax-community",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "minimax",
+    "minimax-m3",
+    "moe",
+    "quantized",
+    "conversational",
+    "atomic-chat",
+    "image-text-to-text",
+    "base_model:MiniMaxAI/MiniMax-M3.1-Flash",
+    "base_model:quantized:MiniMaxAI/MiniMax-M3.1-Flash",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 426174572928,
+  "parameters_human": "426.17B",
+  "storage_bytes": 1358999486784,
+  "storage_human": "1359.0 GB",
+  "base_model": "MiniMaxAI/MiniMax-M3.1-Flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AtomicChat/MiniMax-M3.1-Flash-GGUF - Hugging Face",
+      "url": "https://huggingface.co/AtomicChat/MiniMax-M3.1-Flash-GGUF",
+      "snippet": "vor 10 Stunden ... gguf (1.7 GB) is the vision encoder: add --mmproj mmproj-MiniMax-M3.1-Flash-F16.gguf . It is converted from the original weights; we have not ..."
+    },
+    {
+      "title": "AtomicChat/MiniMax-M3.1-Flash-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/AtomicChat/MiniMax-M3.1-Flash-GGUF/tree/main",
+      "snippet": "vor 5 Stunden ... Instructions to use AtomicChat/MiniMax-M3.1-Flash-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get ..."
+    },
+    {
+      "title": "Quantized Models for MiniMaxAI/MiniMax-M3.1-Flash - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model%3Aquantized%3AMiniMaxAI%2FMiniMax-M3.1-Flash",
+      "snippet": "Models · unsloth/MiniMax-M3.1-Flash · mlx-community/MiniMax-M3.1-Flash-Text-4bit · Mia-AiLab/MiniMax-M3.1-Flash-EXL3-EAQ-v1-3.06-bpw · vcruz305/MiniMax-M3.1-Flash- ..."
+    },
+    {
+      "title": "MiniMax M3.1 Flash (Space Bunny Alpha): Tested as an Agent",
+      "url": "https://atomicagent.io/blog/minimax-m3-1-flash/",
+      "snippet": "vor 4 Tagen ... 1 Flash on October 19, 2026, and in the same post confirmed what developers had guessed for weeks: Space Bunny Alpha, the anonymous model that ..."
+    },
+    {
+      "title": "1000+ Open Models to Run Locally - Atomic Chat",
+      "url": "https://atomic.chat/models",
+      "snippet": "Ornith-1.5-9B is a 9B agentic coding model with a 256K context that runs on 8 GB. We quantized the GGUF builds ourselves. Thinking. Tools. Vision. Reasoning."
+    }
+  ]
+}

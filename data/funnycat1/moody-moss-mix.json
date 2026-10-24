@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "funnycat1/Moody-Moss-Mix",
+  "slug": "funnycat1-moody-moss-mix",
+  "author": "funnycat1",
+  "url": "https://huggingface.co/funnycat1/Moody-Moss-Mix",
+  "created_at": "2026-10-23T21:33:56.000Z",
+  "updated_at": "2026-10-23T21:39:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5082776746,
+  "storage_human": "5.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Full text of \"Bedford high school yearbook\" - Internet Archive",
+      "url": "https://archive.org/stream/bedfordhighschoo2000bedf/bedfordhighschoo2000bedf_djvu.txt",
+      "snippet": "... AI^ ^^AKfApAM ^iHx FAxdiorr: rdi^ugx, Td^ee-quAl^fel^ xleevej xdfrfX ... mix fest (the terrible tortun you and Pran through) + the college tours ..."
+    }
+  ]
+}

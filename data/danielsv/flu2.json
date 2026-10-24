@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "danielsv/flu2",
+  "slug": "danielsv-flu2",
+  "author": "danielsv",
+  "url": "https://huggingface.co/danielsv/flu2",
+  "created_at": "2026-10-11T10:11:19.000Z",
+  "updated_at": "2026-10-23T23:53:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 71,
+  "trending_score": 0,
+  "parameters": 84046371,
+  "parameters_human": "84.0M",
+  "storage_bytes": 123684173933,
+  "storage_human": "123.7 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

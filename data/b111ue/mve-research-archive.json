@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "B111ue/mve-research-archive",
+  "slug": "b111ue-mve-research-archive",
+  "author": "B111ue",
+  "url": "https://huggingface.co/B111ue/mve-research-archive",
+  "created_at": "2026-10-19T06:40:51.000Z",
+  "updated_at": "2026-10-23T18:43:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "libero",
+    "visual-representation",
+    "research-artifacts",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 95374282427,
+  "storage_human": "95.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "New Project Megathread - Week of 23 Jul 2026 : r/selfhosted - Reddit",
+      "url": "https://www.reddit.com/r/selfhosted/comments/1v4s7ok/new_project_megathread_week_of_23_jul_2026/",
+      "snippet": "23.07.2026 ... 1 (one docker command and you're ready to go!) AI Involvement: Self-hosted AI models for \"stackoverflow-like\" problems, not critical features."
+    }
+  ]
+}

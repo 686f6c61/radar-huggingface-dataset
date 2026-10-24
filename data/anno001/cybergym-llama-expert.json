@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "anno001/cybergym-llama-expert",
+  "slug": "anno001-cybergym-llama-expert",
+  "author": "anno001",
+  "url": "https://huggingface.co/anno001/cybergym-llama-expert",
+  "created_at": "2026-10-23T20:47:02.000Z",
+  "updated_at": "2026-10-23T21:07:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:HuggingFaceTB/SmolLM3-3B-Base",
+    "base_model:finetune:HuggingFaceTB/SmolLM3-3B-Base",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 77739046,
+  "storage_human": "78 MB",
+  "base_model": "HuggingFaceTB/SmolLM3-3B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CyberGym: Evaluating AI Agents&#x27; Real-World Cybersecurity Capabilities ...",
+      "url": "https://www.cybergym.io/cybergym/",
+      "snippet": "CyberGym is a large-scale, high-quality cybersecurity evaluation framework that assesses AI agents on real-world vulnerability analysis. It includes 1,507 historical vulnerabilities from 188 large software projects."
+    },
+    {
+      "title": "CyberGym Leaderboard - llm-stats.com",
+      "url": "https://llm-stats.com/benchmarks/cybergym",
+      "snippet": "CyberGym leaderboard — MiMo-V2.6-Flash leads 21 AI models at 0.951. CyberGym is a benchmark for evaluating AI agents on cybersecurity tasks, testing their abil…"
+    },
+    {
+      "title": "GitHub - sunblaze-ucb/cybergym: CyberGym is a large-scale, high-quality ...",
+      "url": "https://github.com/sunblaze-ucb/cybergym",
+      "snippet": "CyberGym is a large-scale, high-quality cybersecurity evaluation framework designed to rigorously assess the capabilities of AI agents on real-world vulnerability analysis tasks."
+    },
+    {
+      "title": "Frontier AI Cybersecurity Observatory",
+      "url": "https://www.cybergym.io/",
+      "snippet": "A cybersecurity observatory of benchmarks measuring how well AI agents handle real-world vulnerabilities, from discovering and reproducing them to developing working exploits or patches."
+    },
+    {
+      "title": "CyberGym Leaderboard & Scores — October 2026 | BenchLM.ai",
+      "url": "https://benchlm.ai/benchmarks/cybergym",
+      "snippet": "CyberGym scores for 29 AI models, compiled from published reports. Shown for reference, not counted in overall rankings."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "attacker8324/tc271",
+  "slug": "attacker8324-tc271",
+  "author": "attacker8324",
+  "url": "https://huggingface.co/attacker8324/tc271",
+  "created_at": "2026-10-23T20:41:16.000Z",
+  "updated_at": "2026-10-23T23:23:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "token-classification",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 379897,
+  "storage_human": "379897 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Hacker | Shannon AI",
+      "url": "https://shannon-ai.com/ai-hacker",
+      "snippet": "The most advanced AI hacker tool available. Red team dedicated model for autonomous reconnaissance, exploitation, and post-exploitation with AI-driven hacking capabilities."
+    },
+    {
+      "title": "GitHub - JoasASantos/Offensive-Security-AI-Models: Uncensored AI models ...",
+      "url": "https://github.com/JoasASantos/Offensive-Security-AI-Models",
+      "snippet": "Uncensored LLMs for Offensive Security Curated list of open-weight uncensored models for authorized red team operations, penetration testing, and security research. All data sourced from HuggingFace model cards and official publications. Sep 2026."
+    },
+    {
+      "title": "HackerAI - AI-Powered Penetration Testing Assistant",
+      "url": "https://hackerai.co/",
+      "snippet": "HackerAI is an AI agent for penetration testing that helps security practitioners investigate targets, use terminal and browser tools, analyze findings, and prepare reports."
+    },
+    {
+      "title": "GitHub - cybershujin/Threat-Actors-use-of-Artifical-Intelligence",
+      "url": "https://github.com/cybershujin/Threat-Actors-Use-of-Artifical-Intelligence",
+      "snippet": "Adversary use of Artifical Intelligence and LLMs and Classification of TTPs This project was featured in a Starlog Deep Dive. 📊 Browse the interactive, searchable table → (sortable · filterable · mobile-friendly) · ⬇ STIX 2.1 bundle for CTI platforms. This Github is an attempt to organize known use of artificial intelligence by cyber threat actors and to map and track those ..."
+    },
+    {
+      "title": "Hackers hijack exposed AI models to launch cyberattacks at victims ...",
+      "url": "https://www.helpnetsecurity.com/2026/10/23/llmjacking-agent-hijacks-exposed-ai-models/",
+      "snippet": "Attackers built an AI agent for LLMjacking that takes over exposed AI models and uses them to steal credentials and mine cryptocurrency."
+    }
+  ]
+}

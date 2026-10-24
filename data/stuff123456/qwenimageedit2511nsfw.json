@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "stuff123456/qwenimageedit2511nsfw",
+  "slug": "stuff123456-qwenimageedit2511nsfw",
+  "author": "stuff123456",
+  "url": "https://huggingface.co/stuff123456/qwenimageedit2511nsfw",
+  "created_at": "2026-10-23T20:24:11.000Z",
+  "updated_at": "2026-10-23T20:24:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:Cel100/qwen-2511",
+    "base_model:adapter:Cel100/qwen-2511",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 849543280,
+  "storage_human": "850 MB",
+  "base_model": "Cel100/qwen-2511",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen Image Edit 2511 Custom Shift Fix Version (NSFW Included)",
+      "url": "https://civitai.com/models/2254346/qwen-image-edit-2511-custom-shift-fix-versionnsfw-included",
+      "snippet": "A Workflow uses the latest Qwen Image Edit 2511. Edit images with words. With a custom image shift fix. All the model details are within the workfl..."
+    },
+    {
+      "title": "Qwen 2511 Image Edit AIO Rapid - V19-NSFW | TensorHub Art",
+      "url": "https://tensorhub.art/models/951994985857730652",
+      "snippet": "Download Qwen 2511 Image Edit AIO Rapid - free CHECKPOINT Qwen-Image-Edit AI model on TENSORHUB ART. QWEN IMAGE EDIT. By Adcom"
+    },
+    {
+      "title": "[QW]Qwen Image Edit 2511 NSFW all inclusive with - tensorhub.art",
+      "url": "https://tensorhub.art/models/1025388174064516198/QWQwen-Image-Edit-2511-NSFW-all-inclusive-with-2",
+      "snippet": "Download [QW]Qwen Image Edit 2511 NSFW all inclusive with - free LORA Qwen-Image-Edit AI model on TENSORHUB ART. By user_z"
+    },
+    {
+      "title": "vantagewithai/Qwen-Image-Edit-2511-GGUF · Hugging Face",
+      "url": "https://huggingface.co/vantagewithai/Qwen-Image-Edit-2511-GGUF",
+      "snippet": "We are excited to introduce Qwen-Image-Edit-2511, an enhanced version over Qwen-Image-Edit-2509, featuring multiple improvements—including notably better consistency. To try out the latest model, please visit Qwen Chat and select the Image Editing feature. Key enhancements in Qwen-Image-Edit-2511 ..."
+    },
+    {
+      "title": "UnfilteredAI (UnfilteredAI) - Hugging Face",
+      "url": "https://huggingface.co/UnfilteredAI",
+      "snippet": "Org profile for UnfilteredAI on Hugging Face, the AI community building the future."
+    }
+  ]
+}

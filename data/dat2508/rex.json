@@ -5,7 +5,7 @@
   "author": "Dat2508",
   "url": "https://huggingface.co/Dat2508/rex",
   "created_at": "2026-10-21T01:43:19.000Z",
-  "updated_at": "2026-10-21T03:09:17.000Z",
+  "updated_at": "2026-10-23T08:47:36.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -14,6 +14,7 @@
     "en"
   ],
   "tags": [
+    "pytorch",
     "safetensors",
     "modernbert",
     "cybersecurity",
@@ -26,12 +27,12 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 11,
+  "downloads_30d": 12,
   "trending_score": 0,
   "parameters": 149063424,
   "parameters_human": "149.1M",
-  "storage_bytes": 1194919148,
-  "storage_human": "1.2 GB",
+  "storage_bytes": 1795050743,
+  "storage_human": "1.8 GB",
   "base_model": null,
   "formats": [
     "safetensors"

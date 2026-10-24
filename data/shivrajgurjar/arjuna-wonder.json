@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "shivrajgurjar/Arjuna-Wonder",
+  "slug": "shivrajgurjar-arjuna-wonder",
+  "author": "shivrajgurjar",
+  "url": "https://huggingface.co/shivrajgurjar/Arjuna-Wonder",
+  "created_at": "2026-10-23T13:44:21.000Z",
+  "updated_at": "2026-10-23T19:02:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arjuna_wonder",
+    "text-generation",
+    "arjuna-wonder",
+    "qwen3.8-27b",
+    "reasoning",
+    "chain-of-thought",
+    "delta-net",
+    "stiefel-manifold",
+    "gosset-lattice",
+    "kronecker-product",
+    "extreme-compression",
+    "conversational",
+    "custom_code",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "8-bit",
+    "arjuna_wonder_smicop_qr_stiefel_gosset",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2773331008,
+  "parameters_human": "2.77B",
+  "storage_bytes": 6234517421,
+  "storage_human": "6.2 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?p=0&sort=modified",
+      "snippet": "shivrajgurjar/Arjuna-Wonder. Updated in about 15 hours · EverPaper/everparakeet-tdt-0.6b-v3-compact. Automatic Speech Recognition • Updated in about 15 hours ..."
+    },
+    {
+      "title": "New Applications_June_2026.xlsx - IP India",
+      "url": "https://ipindia.gov.in/storage/uploads/docs-operator/8585844d-456c-4098-941b-14f17e60cffb.pdf",
+      "snippet": "27.07.2026 ... ... AI Model Trainer. Computer Software. K V RAGHAVENDRA. 157. LD-30789/2026 ... WONDER BROWN. Artistic. NIVRITTI FOODS PRIVATE LIMITED. 2788 SR ..."
+    },
+    {
+      "title": "Latest Happenings & Events - IMT Hyderabad",
+      "url": "https://www.imthyderabad.edu.in/happenings-events-announcements",
+      "snippet": "AI and Gen AI Applied to Marketing: A BCG Perspect...76th Republic Day CelebrationsInnovation in Eyecare and the Importance of Social...Innovation in ..."
+    },
+    {
+      "title": "Index of all Published Papers - IJEDR Research Journal - RJ Wave",
+      "url": "https://rjwave.org/jaafr/indexx.php?v=4&i=6",
+      "snippet": "NO : 148 AI-Based Efficient Specialization Model for Handling Huge Databases in EER Systems” Authors: SURUTHEKA, Bharathi. Registration ID: 511375 ..."
+    },
+    {
+      "title": "Press Releases - FICCI",
+      "url": "https://www.ficci.in/public/press-releases",
+      "snippet": "... AI's success will be judged on the ground, not by algorithms: MoS Power Shripad Yesso Naik at CEA's 53rd Foundation Day. Detail Page. Oct 14, 2026. India to ..."
+    }
+  ]
+}

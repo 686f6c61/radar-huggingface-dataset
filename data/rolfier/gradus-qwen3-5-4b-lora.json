@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "Rolfier/gradus-qwen3.5-4b-lora",
+  "slug": "rolfier-gradus-qwen3-5-4b-lora",
+  "author": "Rolfier",
+  "url": "https://huggingface.co/Rolfier/gradus-qwen3.5-4b-lora",
+  "created_at": "2026-10-23T21:00:18.000Z",
+  "updated_at": "2026-10-23T21:00:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen3_5",
+    "lora",
+    "job-matching",
+    "adaption",
+    "autoscientist",
+    "laserhacks-2026",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 104961573,
+  "storage_human": "105 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

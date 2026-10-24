@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "ndemirdemir/BranchOne",
+  "slug": "ndemirdemir-branchone",
+  "author": "ndemirdemir",
+  "url": "https://huggingface.co/ndemirdemir/BranchOne",
+  "created_at": "2026-10-23T20:28:00.000Z",
+  "updated_at": "2026-10-23T21:32:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "branchone",
+    "feature-extraction",
+    "decision-model",
+    "multimodal",
+    "text-classification",
+    "custom-code",
+    "peft",
+    "custom_code",
+    "base_model:Qwen/Qwen3.5-0.8B-Base",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 43797737,
+  "storage_human": "44 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 991 AI models across 706 benchmarks, with 228 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "LLM Rankings | OpenRouter",
+      "url": "https://openrouter.ai/rankings",
+      "snippet": "LLM rankings and AI leaderboard by real-world usage, ranked by tokens processed through the OpenRouter API. See which AI models developers actually use."
+    },
+    {
+      "title": "Reimagining Bank Branches with Agent-Driven, LLM-Powered Chatbots: A ...",
+      "url": "https://pub.towardsai.net/reimagining-bank-branches-with-agent-driven-llm-powered-chatbots-a-vision-for-next-gen-customer-55e87b62bfbd",
+      "snippet": "When we talk about AI-driven banking, we often imagine a simple chatbot that passively provides FAQ-style answers. However, the real game-changer lies in agent-based systems that take proactive steps on your behalf — opening accounts, checking balances, scheduling appointments, and more. In this post, we&#x27;ll explore how Large Language Model (LLM)-powered agents can revolutionize both the ..."
+    },
+    {
+      "title": "The Emerging Market for Intelligence: How Firms Buy and Sell AI",
+      "url": "https://pubs.aeaweb.org/doi/10.1257/jep.20261506",
+      "snippet": "n the business-to-business market for large language model (LLM) inference, firms pay LLM providers to process their prompts and return output text in response. In late 2023, the price of state-of- the-art artificial intelligence in this market was roughly $30 per million tokens—with each token representing roughly three-quarters of a word of text. By late 2025, the same level of ..."
+    },
+    {
+      "title": "AI Model Leaderboard (Live, 2026): Local + Frontier Ranked",
+      "url": "https://localaimaster.com/tools/ai-model-leaderboard",
+      "snippet": "Live AI model ranking — 30 local + frontier models scored on SWE-Bench, MMLU, ARC-AGI, AIME, HumanEval. Claude Opus 4.7 leads; DeepSeek V4 tops local. Free, sortable."
+    }
+  ]
+}

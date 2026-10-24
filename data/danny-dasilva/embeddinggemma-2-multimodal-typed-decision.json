@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "id": "Danny-Dasilva/embeddinggemma-2-multimodal-typed-decision",
+  "slug": "danny-dasilva-embeddinggemma-2-multimodal-typed-decision",
+  "author": "Danny-Dasilva",
+  "url": "https://huggingface.co/Danny-Dasilva/embeddinggemma-2-multimodal-typed-decision",
+  "created_at": "2026-10-14T22:03:07.000Z",
+  "updated_at": "2026-10-23T23:52:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "embeddinggemma",
+    "embeddinggemma-2",
+    "gemma",
+    "typed-decisions",
+    "decision-model",
+    "multimodal",
+    "image-classification",
+    "video-classification",
+    "function-calling",
+    "visual-grounding",
+    "tool-use",
+    "zero-shot-classification",
+    "en",
+    "dataset:LocalLLaMA/typed-decisions",
+    "dataset:allenai/ai2_arc",
+    "dataset:cais/mmlu",
+    "dataset:allenai/winogrande",
+    "dataset:Rowan/hellaswag",
+    "dataset:facebook/anli",
+    "dataset:HuggingFaceM4/A-OKVQA",
+    "dataset:uoft-cs/cifar10",
+    "dataset:mangopy/ToolRet-Training-20w",
+    "dataset:nvidia/When2Call",
+    "dataset:Team-ACE/ToolACE",
+    "dataset:glaiveai/glaive-function-calling-v2",
+    "dataset:Salesforce/xlam-function-calling-60k",
+    "dataset:jxu124/refcoco",
+    "dataset:jxu124/refcocoplus",
+    "dataset:jxu124/refcocog",
+    "arxiv:2509.20354",
+    "base_model:google/embeddinggemma-2",
+    "base_model:finetune:google/embeddinggemma-2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 83,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3689701111,
+  "storage_human": "3.7 GB",
+  "base_model": "google/embeddinggemma-2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prénom Danny (garçon) : signification, origine, caractère, saint, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/danny/prenom-6702",
+      "snippet": "Quelle est la signification du prénom Danny ? Danny est un dérivé du prénom Daniel formé, en hébreu, par \"dan\", le juge, et \"El\", Dieu."
+    },
+    {
+      "title": "Danny Go! - YouTube",
+      "url": "https://www.youtube.com/@DannyGo",
+      "snippet": "Get your costumes on, then follow Danny on an adventure through a dark forest, battle a giant candy corn, and groove to creepy …"
+    },
+    {
+      "title": "Danny Haiphong Français - YouTube",
+      "url": "https://www.youtube.com/@DHaiphongFR/videos",
+      "snippet": "Welcome to Danny Haiphong in your language!This channel features professionally translated and dubbed versions of the original …"
+    },
+    {
+      "title": "Danny Khezzar — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Danny_Khezzar",
+      "snippet": "Danny Khezzar, né le 29 mars 1996 à Rosny-sous-Bois (Seine-Saint-Denis), est un chef cuisinier français, chef du restaurant étoilé …"
+    },
+    {
+      "title": "Danny - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Danny",
+      "snippet": "Danny, in the Just! series of short story collections by Australian author Andy Griffiths Danny, nickname of Mrs. Danvers, the main …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "moosemandada/tiny-ner-probe",
+  "slug": "moosemandada-tiny-ner-probe",
+  "author": "moosemandada",
+  "url": "https://huggingface.co/moosemandada/tiny-ner-probe",
+  "created_at": "2026-10-23T21:10:02.000Z",
+  "updated_at": "2026-10-23T21:11:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "jax",
+    "bert",
+    "token-classification",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 237872,
+  "storage_human": "237872 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "moosemandada (mooseman) - Hugging Face",
+      "url": "https://huggingface.co/moosemandada",
+      "snippet": "Wh Space 📚 Display a customizable static web page moosemandada about 5 hours ago Running"
+    },
+    {
+      "title": "moosemandada (mooseman) - Hugging Face",
+      "url": "https://huggingface.co/moosemandada/models",
+      "snippet": "User profile of mooseman on Hugging Face"
+    },
+    {
+      "title": "NetsPresso Probe - AI Model Visualizer",
+      "url": "https://probe.netspresso.ai/",
+      "snippet": "High-Performance AI Model Graph Visualizer for LLMs and large models. Instantly compare optimization changes using Diff Mode. Accelerate model debugging and architecture validation."
+    },
+    {
+      "title": "AWS Marketplace: OpenMed NER DNA Detection Tiny",
+      "url": "https://aws.amazon.com/marketplace/pp/prodview-vf77pwogdhkni?applicationId=AWSMPContessa",
+      "snippet": "Open-source NER model for disease entities in biomedical and clinical text. Trained on NCBI-Disease and optimized for state-of-the-art precision, it enables reliable extraction with fast, easy deployment via Hugging Face Transformers."
+    },
+    {
+      "title": "OpenMed-NER-DNADetect-TinyMed-66M · Model · Inferix",
+      "url": "https://inferix.co/models/OpenMed/OpenMed-NER-DNADetect-TinyMed-66M",
+      "snippet": "🧬 OpenMed NER DNADetect TinyMed 66M Specialized model for Biomedical Entity Recognition Proteins, DNA, RNA, cell lines, and cell types 📋 Model Overview This model is a state of the art fine tuned transformer engineered to deliver enterprise grade accuracy for biomedical entity recognition proteins, dna, rna, cell lines, and cell types."
+    }
+  ]
+}

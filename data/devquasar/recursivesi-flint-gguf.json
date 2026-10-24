@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "DevQuasar/RecursiveSI.flint-GGUF",
+  "slug": "devquasar-recursivesi-flint-gguf",
+  "author": "DevQuasar",
+  "url": "https://huggingface.co/DevQuasar/RecursiveSI.flint-GGUF",
+  "created_at": "2026-10-23T17:09:03.000Z",
+  "updated_at": "2026-10-23T19:21:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "base_model:RecursiveSI/flint",
+    "base_model:quantized:RecursiveSI/flint",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39785287456,
+  "parameters_human": "39.79B",
+  "storage_bytes": 161302966080,
+  "storage_human": "161.3 GB",
+  "base_model": "RecursiveSI/flint",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=created",
+      "snippet": "Jar-ai/rnn-JarLM-wiki-nano-v2. Updated in about 17 hours. toolathlon ... DevQuasar/RecursiveSI.flint-GGUF. Text Generation • Updated in about 17 hours ..."
+    }
+  ]
+}

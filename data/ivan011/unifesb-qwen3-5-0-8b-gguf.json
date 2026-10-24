@@ -5,7 +5,7 @@
   "author": "Ivan011",
   "url": "https://huggingface.co/Ivan011/UniFesb-Qwen3.5-0.8B-GGUF",
   "created_at": "2026-10-20T20:01:44.000Z",
-  "updated_at": "2026-10-20T20:02:54.000Z",
+  "updated_at": "2026-10-23T21:33:57.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -19,6 +19,7 @@
     "tool-calling",
     "on-device",
     "hr",
+    "en",
     "base_model:Qwen/Qwen3.5-0.8B",
     "base_model:quantized:Qwen/Qwen3.5-0.8B",
     "license:apache-2.0",
@@ -27,12 +28,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 32,
+  "downloads_30d": 44,
   "trending_score": 0,
   "parameters": 772845888,
   "parameters_human": "772.8M",
-  "storage_bytes": 541903776,
-  "storage_human": "542 MB",
+  "storage_bytes": 1083807552,
+  "storage_human": "1.1 GB",
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "gguf"

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "lamsheeper-data-attribution/mt5-small-ftrace-retrain",
+  "slug": "lamsheeper-data-attribution-mt5-small-ftrace-retrain",
+  "author": "lamsheeper-data-attribution",
+  "url": "https://huggingface.co/lamsheeper-data-attribution/mt5-small-ftrace-retrain",
+  "created_at": "2026-10-22T17:03:27.000Z",
+  "updated_at": "2026-10-24T01:29:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "safetensors",
+    "data-attribution",
+    "influence-functions",
+    "ftrace",
+    "base_model:google/mt5-small",
+    "base_model:finetune:google/mt5-small",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 224607518301,
+  "storage_human": "224.6 GB",
+  "base_model": "google/mt5-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

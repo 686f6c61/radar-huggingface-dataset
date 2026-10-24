@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Thetatec/hf_act_depth_recordpolicy0",
+  "slug": "thetatec-hf_act_depth_recordpolicy0",
+  "author": "Thetatec",
+  "url": "https://huggingface.co/Thetatec/hf_act_depth_recordpolicy0",
+  "created_at": "2026-10-23T20:23:17.000Z",
+  "updated_at": "2026-10-23T20:23:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:Thetatec/box-bowl-depth_20261003_105542",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714864,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "satyajit4517/hf_act_recordpolicy0 · Hugging Face",
+      "url": "https://huggingface.co/satyajit4517/hf_act_recordpolicy0",
+      "snippet": "Model Card for act Action Chunking with Transformers (ACT) is an imitation-learning method that predicts short action chunks instead of single steps. It learns from teleoperated data and often achieves high success rates. This policy has been trained and pushed to the Hub using LeRobot. See the full documentation at LeRobot Docs."
+    },
+    {
+      "title": "haymanmk/hf_act_recordpolicy0 · Hugging Face",
+      "url": "https://huggingface.co/haymanmk/hf_act_recordpolicy0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "hf_act_recordpolicy0: Model Details, Context & Pricing | Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/hf-stevenqian-hf-act-recordpolicy0",
+      "snippet": "hf_act_recordpolicy0 AI model directory entry."
+    },
+    {
+      "title": "hf_act_recordpolicy0 — AI Compliance Status Across 52 Jurisdictions | Nerq",
+      "url": "https://nerq.ai/agent/00d15b50-ba02-40b7-b18e-6bd87f2cd590",
+      "snippet": "Compliance Status Across 52 Jurisdictions Each jurisdiction has unique AI regulation requirements. This table shows how hf_act_recordpolicy0 is classified under each jurisdiction&#x27;s specific rules based on its type (model), domain (general), and risk indicators."
+    },
+    {
+      "title": "hf_act_recordpolicy0: Model Details, Context & Pricing | Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/hf-tigerblob99-hf-act-recordpolicy0",
+      "snippet": "hf_act_recordpolicy0 hf_act_recordpolicy0 is an AI model record indexed from Hugging Face."
+    }
+  ]
+}

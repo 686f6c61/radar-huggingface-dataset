@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "shrg7/october21-oer10-molmobot-droid-joint-urma4flat-h16-b1024-fullft-6k",
+  "slug": "shrg7-october21-oer10-molmobot-droid-joint-urma4flat-h16-b1024-fullft-6k",
+  "author": "shrg7",
+  "url": "https://huggingface.co/shrg7/october21-oer10-molmobot-droid-joint-urma4flat-h16-b1024-fullft-6k",
+  "created_at": "2026-10-23T20:44:50.000Z",
+  "updated_at": "2026-10-23T20:45:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "openpi",
+    "pi05",
+    "robotics",
+    "vla",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12441734715,
+  "storage_human": "12.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - allenai/MolmoBot: Code and website for \"MolmoB0T: Large-Scale ...",
+      "url": "https://github.com/allenai/MolmoBot",
+      "snippet": "MolmoBot policies have strong demonstrated sim-to-real transfer to a wide variety of novel scenes, objects, and camera viewpoints. Try it out for yourself on your DROID platform with MolmoBot-DROID! MolmoBot-DROID uses only the wrist camera and 1 exo camera. Don&#x27;t worry about camera placement, MolmoBot policies are robust to arbitrary camera viewpoints!"
+    },
+    {
+      "title": "MolmoB0T: Large-Scale Simulation Enables Zero-Shot Manipulation",
+      "url": "https://allenai.github.io/MolmoBot/",
+      "snippet": "MolmoBot uses large-scale simulation to enable zero-shot robot manipulation — without real-world or task-specific robot data."
+    },
+    {
+      "title": "[2603.16861] MolmoB0T: Large-Scale Simulation Enables Zero-Shot ...",
+      "url": "https://arxiv.org/abs/2603.16861",
+      "snippet": "A prevailing view in robot learning is that simulation alone is not enough; effective sim-to-real transfer is widely believed to require at least some real-world data collection or task-specific fine-tuning to bridge the gap between simulated and physical environments. We challenge that assumption. With sufficiently large-scale and diverse simulated synthetic training data, we show that zero ..."
+    },
+    {
+      "title": "MolmoBOT: Large-Scale Simulation Enables Zero-Shot Manipulation",
+      "url": "https://arxiv.org/pdf/2603.16861",
+      "snippet": "MolmoBot builds on Molmo2-4B [7], a vision-language model pretrained on large-scale image-text data. The architecture consists of three components: (1) a vision encoder that processes RGB observations from input camera views (2) a language model which jointly encodes visual features and task instructions, and (3) a DiT-based flow matching ..."
+    },
+    {
+      "title": "shrg7/october17-oer10-joint-urma4-fullft-22k - Hugging Face",
+      "url": "https://huggingface.co/shrg7/october17-oer10-joint-urma4-fullft-22k",
+      "snippet": "openpi pi0.5 (JAX) checkpoint, config october17_oer10_joint_urma4_fullft (branch pi05-oer10-oer9recipe, started at commit c3ac66d8; cb00b0b3 builds the same model for this config), checkpoint 21999 = 22,000 optimizer updates (the run goes to 40k). The OER-10 robots trained on main&#x27;s OER-9 (\"open ..."
+    }
+  ]
+}

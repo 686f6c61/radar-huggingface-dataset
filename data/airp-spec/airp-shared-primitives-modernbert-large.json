@@ -5,7 +5,7 @@
   "author": "AIRP-spec",
   "url": "https://huggingface.co/AIRP-spec/airp-shared-primitives-modernbert-large",
   "created_at": "2026-10-22T15:58:01.000Z",
-  "updated_at": "2026-10-22T16:05:19.000Z",
+  "updated_at": "2026-10-23T06:10:54.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -25,7 +25,7 @@
     "text-classification",
     "en",
     "base_model:convaiinnovations/laya",
-    "base_model:quantized:convaiinnovations/laya",
+    "base_model:finetune:convaiinnovations/laya",
     "license:apache-2.0",
     "region:us"
   ],

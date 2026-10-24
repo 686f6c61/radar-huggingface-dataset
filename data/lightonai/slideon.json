@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "lightonai/SlideOn",
+  "slug": "lightonai-slideon",
+  "author": "lightonai",
+  "url": "https://huggingface.co/lightonai/SlideOn",
+  "created_at": "2026-10-12T13:21:08.000Z",
+  "updated_at": "2026-10-20T19:27:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "slideon",
+    "sparse",
+    "sentence-similarity",
+    "custom-code",
+    "sparse-retrieval",
+    "matryoshka",
+    "feature-extraction",
+    "custom_code",
+    "en",
+    "dataset:lightonai/embeddings-fine-tuning-filtered-en",
+    "base_model:lightonai/DenseOn",
+    "base_model:finetune:lightonai/DenseOn",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:eu"
+  ],
+  "likes": 12,
+  "downloads_30d": 150,
+  "trending_score": 12,
+  "parameters": 174246400,
+  "parameters_human": "174.2M",
+  "storage_bytes": 697000192,
+  "storage_human": "697 MB",
+  "base_model": "lightonai/DenseOn",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rothschild & Co | Unabhängige Finanzdienstleistungen",
+      "url": "https://www.rothschildandco.com/de/",
+      "snippet": "Rothschild & Co hat heute eine Vereinbarung zur Übernahme von 100 Prozent der Anteile an der in Hamburg ansässigen Marcard, …"
+    },
+    {
+      "title": "Rothschild & Co | Independent financial services",
+      "url": "https://www.rothschildandco.com/",
+      "snippet": "One of the largest independent financial advisory groups, offering Global Advisory, Wealth & Asset Management and our alternative …"
+    },
+    {
+      "title": "Rothschild & Co | Asset Management",
+      "url": "https://am.eu.rothschildandco.com/es/",
+      "snippet": "Rothschild & Co Asset Management es una de las principales sociedades independientes de gestión de activos de Europa, que …"
+    },
+    {
+      "title": "I nostri fondi - Rothschild & Co",
+      "url": "https://am.eu.rothschildandco.com/it/i-nostri-fondi/",
+      "snippet": "Scoprite tutti i fondi di Rothschild & Co e trovate tutte le informazioni disponibili sulla nostra offerta di gestione."
+    },
+    {
+      "title": "Explore our funds | Rothschild & Co",
+      "url": "https://www.lu.rothschildandco.com/explore-our-funds",
+      "snippet": "Welcome to the Rothschild & Co Investment Managers website This website, including all the information presented on it, is …"
+    }
+  ]
+}

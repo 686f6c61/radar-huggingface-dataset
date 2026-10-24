@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "teamup-tech/DeepFilterNet-weights",
+  "slug": "teamup-tech-deepfilternet-weights",
+  "author": "teamup-tech",
+  "url": "https://huggingface.co/teamup-tech/DeepFilterNet-weights",
+  "created_at": "2026-10-23T20:30:56.000Z",
+  "updated_at": "2026-10-23T20:30:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8714073,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The only customizable calendar for business - Teamup Home",
+      "url": "https://www.teamup.com/",
+      "snippet": "Teamup is the only customizable calendar for business. It is scalable not only for sharing calendars within a single organization but …"
+    },
+    {
+      "title": "Teamup.com",
+      "url": "https://www.teamup.com/?post_type=post",
+      "snippet": "Teamup puts all your service... Get Started with the Teamup App Featured, Product Tips The Teamup mobile app for iOS and …"
+    },
+    {
+      "title": "Teamup Calendar | Shared calendar for groups. Organizing, …",
+      "url": "https://calendar.teamup.com/",
+      "snippet": "Teamup Calendar is a super easy shared calendar application for groups and projects. This Knowledge Base provides answers to …"
+    },
+    {
+      "title": "Login | TeamUp - goteamup.com",
+      "url": "https://goteamup.com/login/",
+      "snippet": "Log into TeamUp Enter your email to get started Email*"
+    },
+    {
+      "title": "TeamUp",
+      "url": "https://www.team-up.app/",
+      "snippet": "TeamUp est une application de gestion d'équipe intuitive et efficace pour organiser des projets et collaborer facilement."
+    }
+  ]
+}

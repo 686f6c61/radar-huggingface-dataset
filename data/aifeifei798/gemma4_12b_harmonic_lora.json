@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "aifeifei798/gemma4_12b_harmonic_lora",
+  "slug": "aifeifei798-gemma4_12b_harmonic_lora",
+  "author": "aifeifei798",
+  "url": "https://huggingface.co/aifeifei798/gemma4_12b_harmonic_lora",
+  "created_at": "2026-10-23T23:25:48.000Z",
+  "updated_at": "2026-10-24T00:03:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "gemma-4",
+    "attention",
+    "dsp",
+    "dct",
+    "harmonic-attention",
+    "anti-slop",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:HuggingFaceH4/no_robots",
+    "base_model:google/gemma-4-12B-it-qat-q4_0-unquantized",
+    "base_model:adapter:google/gemma-4-12B-it-qat-q4_0-unquantized",
+    "doi:10.57967/hf/11235",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 117553884,
+  "storage_human": "118 MB",
+  "base_model": "google/gemma-4-12B-it-qat-q4_0-unquantized",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

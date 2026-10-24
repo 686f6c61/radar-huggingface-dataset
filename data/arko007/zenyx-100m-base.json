@@ -5,7 +5,7 @@
   "author": "Arko007",
   "url": "https://huggingface.co/Arko007/Zenyx-100M-Base",
   "created_at": "2026-10-17T05:43:57.000Z",
-  "updated_at": "2026-10-23T02:41:37.000Z",
+  "updated_at": "2026-10-24T01:32:09.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,8 +31,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 336939183970,
-  "storage_human": "336.9 GB",
+  "storage_bytes": 373730448992,
+  "storage_human": "373.7 GB",
   "base_model": null,
   "formats": [
     "safetensors"

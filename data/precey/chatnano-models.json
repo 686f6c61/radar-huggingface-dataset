@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "precey/chatnano-models",
+  "slug": "precey-chatnano-models",
+  "author": "precey",
+  "url": "https://huggingface.co/precey/chatnano-models",
+  "created_at": "2026-10-23T21:15:43.000Z",
+  "updated_at": "2026-10-23T21:16:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "ternary",
+    "cpu",
+    "base_model:prism-ml/Ternary-Bonsai-2-2B-gguf",
+    "base_model:finetune:prism-ml/Ternary-Bonsai-2-2B-gguf",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3359498240,
+  "storage_human": "3.4 GB",
+  "base_model": "prism-ml/Ternary-Bonsai-2-2B-gguf, prism-ml/Ternary-Bonsai-2-4B-gguf, prism-ml/Ternary-Bonsai-2-9B-gguf",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - papayaah/chatnano: Chat with Google Chrome&#x27;s Built-in AI",
+      "url": "https://github.com/papayaah/chatnano",
+      "snippet": "Chat with Google Chrome&#x27;s Built-in AI. Contribute to papayaah/chatnano development by creating an account on GitHub."
+    },
+    {
+      "title": "AI Model Directory: 647 AI Models by Provider | Free.ai",
+      "url": "https://free.ai/models/",
+      "snippet": "Browse every AI model on Free.ai: 647 models organised by provider, covering chat, image, video, voice, code and more, with free daily tokens on every account."
+    },
+    {
+      "title": "nanochat: Model Training & Fine-Tuning | BuilderAI.tools",
+      "url": "https://builderai.tools/tool/nanochat",
+      "snippet": "For roughly the price of a dinner out, nanochat trains a working ChatGPT-style assistant from scratch: Andrej Karpathy&#x27;s follow-up to nanoGPT covers the entire stack in one clean codebase, from tokenizer training through pretraining, supervised fine-tuning, optional reinforcement learning, evaluation, and an inference server with a web chat UI. The reference speedrun script targets an 8xH100 ..."
+    },
+    {
+      "title": "chatnano/README.md at main · papayaah/chatnano · GitHub",
+      "url": "https://github.com/papayaah/chatnano/blob/main/README.md",
+      "snippet": "Chat with Google Chrome&#x27;s Built-in AI. Contribute to papayaah/chatnano development by creating an account on GitHub."
+    },
+    {
+      "title": "AI models - NanoGPT",
+      "url": "https://nano-gpt.com/models",
+      "snippet": "125 new models in the last 30 days Every AI model. One place. Text, image, video, 3D and audio models from every major lab. Compare them, see what everyone is using, and start with the best one for your task."
+    }
+  ]
+}

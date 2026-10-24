@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "keppy/inbox-triage-encoder",
+  "slug": "keppy-inbox-triage-encoder",
+  "author": "keppy",
+  "url": "https://huggingface.co/keppy/inbox-triage-encoder",
+  "created_at": "2026-10-23T21:32:51.000Z",
+  "updated_at": "2026-10-23T21:34:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "text-classification",
+    "gonogo",
+    "thomas",
+    "inbox-triage",
+    "agent-harness",
+    "en",
+    "base_model:answerdotai/ModernBERT-base",
+    "base_model:finetune:answerdotai/ModernBERT-base",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149607940,
+  "parameters_human": "149.6M",
+  "storage_bytes": 598445936,
+  "storage_human": "598 MB",
+  "base_model": "answerdotai/ModernBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hindi - XXX Porn videos @ TheXXX.TV",
+      "url": "https://thexxx.tv/videos/hindi",
+      "snippet": "49,703 videos: Colombian Small Tits, Wife Share, Indian Bhabhi, My Friends Mom, Indian Sex Videos, Sharing Bed With Stepmom, …"
+    },
+    {
+      "title": "andyrewlee/awesome-system-one: A list of System One models ...",
+      "url": "https://github.com/andyrewlee/awesome-system-one",
+      "snippet": "14.10.2026 ... Cloudflare's runs put Clef first on the Jev Decision Index, while Jev and Laya still lead some tasks. Hosted on Workers AI — Clef-flash at ..."
+    },
+    {
+      "title": "India Porn Videos: 720p HD XXX 2026 | xHamster",
+      "url": "https://megaxh.com/search/india?quality=720p",
+      "snippet": "Watch india porn videos. Explore tons of 720p HD XXX movies with sex scenes in 2026 on xHamster!"
+    },
+    {
+      "title": "hindi sex videos | freshsexvideos.com",
+      "url": "https://freshsexvideos.com/en/hindi/",
+      "snippet": "Hindi Porn Category with Hot Fucking This category is really hot because it gives you more than just Indian porn. What we have here …"
+    },
+    {
+      "title": "हिंदी सेक्स पोर्न वीडियो | xHamster",
+      "url": "https://hi.xhamster.desi/tags/hindi-sex",
+      "snippet": "xHamster पर हिंदी सेक्स अश्लील वीडियो देखें। अभी सभी हिंदी सेक्स XXX वीडियो देखें!"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "sparrow-decider/sparrow-pico-rover",
+  "slug": "sparrow-decider-sparrow-pico-rover",
+  "author": "sparrow-decider",
+  "url": "https://huggingface.co/sparrow-decider/sparrow-pico-rover",
+  "created_at": "2026-10-23T23:56:13.000Z",
+  "updated_at": "2026-10-23T23:56:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "sparrow-decider",
+  "languages": [],
+  "tags": [
+    "sparrow-decider",
+    "sparrow-pico",
+    "decision-making",
+    "tinyml",
+    "embedded",
+    "esp32",
+    "microcontroller",
+    "robotics",
+    "distillation",
+    "c",
+    "tabular-classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "House sparrow - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/House_sparrow",
+      "snippet": "The house sparrow (Passer domesticus) is a bird of the sparrow family Passeridae, found in most parts of the world. It is a small bird …"
+    },
+    {
+      "title": "Traduction SPARROW en français | Dictionnaire anglais-français",
+      "url": "https://dictionnaire.reverso.net/anglais-francais/sparrow",
+      "snippet": "Traduction de \"sparrow\" en français : moineau, bruant. Nom, signification, prononciation, expressions idiomatiques en anglais, …"
+    },
+    {
+      "title": "sparrow - Traduction française – Linguee",
+      "url": "https://www.linguee.fr/anglais-francais/traduction/sparrow.html",
+      "snippet": "De très nombreux exemples de phrases traduites contenant \"sparrow\" – Dictionnaire français-anglais et moteur de recherche de …"
+    },
+    {
+      "title": "Sparrow",
+      "url": "https://sparrow.com/",
+      "snippet": "Sparrow’s software automates away the notifications and communication, integrating everything into one streamlined portal for both …"
+    },
+    {
+      "title": "Sparrow — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Sparrow",
+      "snippet": "HMS Sparrow (1889) était une canonnière à hélice composite lancée en 1889. Il a été transféré au gouvernement néo-zélandais en …"
+    }
+  ]
+}

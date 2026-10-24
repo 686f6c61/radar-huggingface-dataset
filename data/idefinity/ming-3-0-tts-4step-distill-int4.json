@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "idefinity/ming-3.0-tts-4step-distill-int4",
+  "slug": "idefinity-ming-3-0-tts-4step-distill-int4",
+  "author": "idefinity",
+  "url": "https://huggingface.co/idefinity/ming-3.0-tts-4step-distill-int4",
+  "created_at": "2026-10-23T20:43:56.000Z",
+  "updated_at": "2026-10-23T20:44:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "onnx",
+    "text-to-speech",
+    "int4",
+    "distillation",
+    "zh",
+    "base_model:inclusionAI/Ming-3.0-tts-0.5B",
+    "base_model:quantized:inclusionAI/Ming-3.0-tts-0.5B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 689860940,
+  "storage_human": "690 MB",
+  "base_model": "inclusionAI/Ming-3.0-tts-0.5B",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "idefinity/webfm-ming-3.0-tts · Hugging Face",
+      "url": "https://huggingface.co/idefinity/webfm-ming-3.0-tts",
+      "snippet": "idefinity / webfm-ming-3.-tts Like 0 Follow idefinity 1 Text-to-Speech ONNX Chinese on-device int4 distillation License:mit Model card FilesFiles and versions xet Community Copy to bucket new WebFM Ming-3.0-tts 0.5B What is here Listening examples Distillation Int4 bundle warning Status"
+    },
+    {
+      "title": "Ming-3.0-tts - GitHub",
+      "url": "https://github.com/inclusionAI/Ming-3.0-tts",
+      "snippet": "Ming-3.0-tts is an open-source TTS model family with 0.5B dense and 7.9B-A1.3B MoE variants, supporting multilingual speech, voice cloning, voice design, and natural-language control. - inclusionAI..."
+    },
+    {
+      "title": "GitHub - inclusionAI/Ming-3.0-tts",
+      "url": "https://github.com/inclusionAI/Ming-3.0-tts/blob/main/",
+      "snippet": "Ming-3.0-tts provides two speech-generation models: 0.5b, a dense model, and tiny, a MoE model built on Ling V3 (7.9B total · 1.3B active). Controlled Voice Arena preference Elo; every model clones the same 8 voices (4 US, 4 UK) 1069 1st among open-weights · 13th overall Pronunciation Robustness ..."
+    },
+    {
+      "title": "inclusionAI/Ming-3.0-tts-0.5B · Hugging Face",
+      "url": "https://huggingface.co/inclusionAI/Ming-3.0-tts-0.5B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ming-3.0-tts-tiny · Models",
+      "url": "https://www.modelscope.cn/models/inclusionAI/Ming-3.0-tts-tiny",
+      "snippet": "This repository contains Ming-3.-tts-tiny, the Ming-3.0-tts mixture-of-experts checkpoint built on Ling V3. Its Ling V3 backbone has 7.9B total parameters and activates about 1.3B parameters per token. The repository includes sharded weights, supporting model code, audio tokenizer, speaker encoder and text tokenizer."
+    }
+  ]
+}

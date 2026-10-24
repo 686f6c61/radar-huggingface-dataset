@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "tomduf70/microduck-sprint-2m-run-1023-2353",
+  "slug": "tomduf70-microduck-sprint-2m-run-1023-2353",
+  "author": "tomduf70",
+  "url": "https://huggingface.co/tomduf70/microduck-sprint-2m-run-1023-2353",
+  "created_at": "2026-10-24T00:00:07.000Z",
+  "updated_at": "2026-10-24T00:00:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5643319,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shinya Kamihara | My Hero Academia Wiki | Fandom",
+      "url": "https://myheroacademia.fandom.com/wiki/Shinya_Kamihara",
+      "snippet": "Edgeshot's popularity as a hero mainly lies in his ninja persona. His private life remains a mystery, as he never appears in public …"
+    },
+    {
+      "title": "Shinya Kamihara | Wiki Boku no Hero Academia | Fandom",
+      "url": "https://myheroacademia.fandom.com/fr/wiki/Shinya_Kamihara",
+      "snippet": "Shinya Kamihara (紙原伸也, Kamihara Shinya) plus connu sous le nom de Edgeshot (エッジショット, Ejjishotto) est classé N°4 des …"
+    },
+    {
+      "title": "What happened to Edgeshot at the end of My Hero Academia?",
+      "url": "https://www.soapcentral.com/anime/what-happened-to-edgeshot-at-the-end-of-my-hero-academia-explained",
+      "snippet": "Dec 9, 2025 · Edgeshot became one of the most talked-about heroes in My Hero Academia after his shocking sacrifice during the …"
+    },
+    {
+      "title": "Can someone explain Edgeshot to me? : r/BokuNoHeroAcademia",
+      "url": "https://www.reddit.com/r/BokuNoHeroAcademia/comments/1doexci/can_someone_explain_edgeshot_to_me/",
+      "snippet": "Jun 25, 2024 · Edgeshot at best will live the rest of his life as a thread with some supportive medical equipment. I mean not a single …"
+    },
+    {
+      "title": "Shinya Kamihara / Edgeshot｜Character Profile & AI Chat｜My Hero …",
+      "url": "https://anibase.net/en/character/1GzZm/Shinya-Kamihara-Edgeshot",
+      "snippet": "Apr 3, 2016 · Chat with Shinya Kamihara / Edgeshot from My Hero Academia. Join their world, shape your own AI story and continue …"
+    }
+  ]
+}

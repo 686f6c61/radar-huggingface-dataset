@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "SDA000000/Core",
+  "slug": "sda000000-core",
+  "author": "SDA000000",
+  "url": "https://huggingface.co/SDA000000/Core",
+  "created_at": "2026-10-23T20:29:05.000Z",
+  "updated_at": "2026-10-23T20:34:33.000Z",
+  "license": "afl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "translation",
+    "license:afl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SAP AI Core | Deploy, Orchestrate, Govern AI Models and Assets",
+      "url": "https://www.sap.com/products/artificial-intelligence/ai-core.html",
+      "snippet": "SAP AI Core is a fully managed AI service on the SAP Business AI Platform, designed to operate, govern, and scale AI workloads in a standardized and scalable way. It provides centralized model management, flexible deployment, integrated development, and tabular AI tools to streamline enterprise AI adoption."
+    },
+    {
+      "title": "SAP AI Core — A Step-by-Step SAP AI Core Integrati... - SAP Community",
+      "url": "https://community.sap.com/t5/technology-blog-posts-by-members/sap-ai-core-a-step-by-step-sap-ai-core-integration-and-deployment/ba-p/14412429",
+      "snippet": "SAP Build Process Automation tenant with automation authoring permissions. Destination and authentication setup for secure API invocation. Configuring and Deploying a Foundation Model in SAP AI Core SAP AI Core provides a structured way to configure, deploy, and consume foundation models in enterprise applications."
+    },
+    {
+      "title": "SAP AI Core",
+      "url": "https://developers.sap.com/topics/technology-platform-sap-business-ai-sap-ai-core/",
+      "snippet": "SAP AI Core Service Setup SAP BTP Service Instance and Binding Creation SAP Fiori Launchpad Navigation and App Discovery SAP HANA Database Connectivity via Node.js Docker Image Build and Publish SAP Generative AI Hub Local Development Environment Setup Service Key Management SAP AI Core Model Deployment and Inference Retrieval Augmented ..."
+    },
+    {
+      "title": "Core AI Models",
+      "url": "https://github.com/apple/coreai-models",
+      "snippet": "Core AI Models Model export recipes, Python primitives, and Swift runtime utilities for building on-device AI with Core AI. The main components include: Model export — Recipes to export popular open source models from Hugging Face and other sources to Core AI format."
+    },
+    {
+      "title": "SAP AI Core Model Deployment and Inference",
+      "url": "https://developers.sap.com/concepts/sap-ai-core-model-deployment/",
+      "snippet": "Explore SAP AI Core Model Deployment and Inference on SAP Developer Center: 13 hands-on tutorials, prerequisites, and related concepts."
+    }
+  ]
+}

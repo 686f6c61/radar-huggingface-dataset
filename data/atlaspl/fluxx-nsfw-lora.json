@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "Atlaspl/fluxx-nsfw-lora",
+  "slug": "atlaspl-fluxx-nsfw-lora",
+  "author": "Atlaspl",
+  "url": "https://huggingface.co/Atlaspl/fluxx-nsfw-lora",
+  "created_at": "2026-10-23T20:25:24.000Z",
+  "updated_at": "2026-10-23T20:26:40.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 153268416,
+  "storage_human": "153 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - KirbyLulu/Flux-Unc-V2",
+      "url": "https://github.com/KirbyLulu/Flux-Unc-V2",
+      "snippet": "The LoRA weights have been fine-tuned to remove the base model&#x27;s content restrictions, allowing for the generation of NSFW (Not Safe For Work) and other uncensored content. This LoRA extension can be loaded into the FLUX.1-dev pipeline using the diffusers library."
+    },
+    {
+      "title": "Flux nsfw loras - a Nesslovver Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Nesslovver/flux-nsfw-loras",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from Nesslovver"
+    },
+    {
+      "title": "How to train NSFW Lora (updated with FLUX) | BetterWaifu",
+      "url": "https://betterwaifu.com/blog/training-nsfw-lora",
+      "snippet": "Configs you HAVE TO change: Model and Folders section: Image folder - the training_images folder we created before. NOT the folder with the number, the parent folder. Output folder - the result_current folder we created before Output namer - the string name of the lora Parameters tab > Advanced > Samples: Change the prompt."
+    },
+    {
+      "title": "NSFW Flux LoRas comparison | Civitai",
+      "url": "https://civitai.red/articles/13803/nsfw-flux-loras-comparison",
+      "snippet": "A comparison on the FLUX NSFW LoRas Let&#x27;s compare the current LoRas for NSFW on civitai (2025-04-20) The workflow used is attached to the article. ..."
+    },
+    {
+      "title": "FluXXX NSFW LoRA FluXXX NSFW LoRA v4 for Flux.1 D | CivArchive",
+      "url": "https://civarchive.com/models/1546895?modelVersionId=2570452",
+      "snippet": "Download FluXXX NSFW LoRA FluXXX NSFW LoRA v4, a LORA for Flux.1 D. 1 file: FLUXXXnsfwLoRAv4.safetensors (146 MB). Published Jan 6, 2026. 9 live mirrors. FluXXX NSFW LoRAv4Better prompt adherencev3Improved realismV2No face change with Character LoRAs. Much more NSFW. Basic…"
+    }
+  ]
+}

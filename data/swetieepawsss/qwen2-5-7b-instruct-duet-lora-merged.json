@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "SwetieePawsss/Qwen2.5-7B-Instruct-DUET-LoRA-merged",
+  "slug": "swetieepawsss-qwen2-5-7b-instruct-duet-lora-merged",
+  "author": "SwetieePawsss",
+  "url": "https://huggingface.co/SwetieePawsss/Qwen2.5-7B-Instruct-DUET-LoRA-merged",
+  "created_at": "2026-10-23T23:54:09.000Z",
+  "updated_at": "2026-10-23T23:59:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "unlearning",
+    "DUET",
+    "conversational",
+    "en",
+    "dataset:SwetieePawsss/DUET",
+    "arxiv:2602.19612",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693760,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

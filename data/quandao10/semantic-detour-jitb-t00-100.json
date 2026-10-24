@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "quandao10/semantic-detour-jitb-t00-100",
+  "slug": "quandao10-semantic-detour-jitb-t00-100",
+  "author": "quandao10",
+  "url": "https://huggingface.co/quandao10/semantic-detour-jitb-t00-100",
+  "created_at": "2026-10-23T23:18:14.000Z",
+  "updated_at": "2026-10-23T23:18:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "unconditional-image-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "diffusion",
+    "image-generation",
+    "imagenet",
+    "pixel-diffusion",
+    "flow-matching",
+    "unconditional-image-generation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3567346651,
+  "storage_human": "3.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Language: english » nhentai",
+      "url": "https://nhentai.net/language/english/",
+      "snippet": "Read 149,083 galleries with language english on nhentai, a hentai doujinshi and manga reader."
+    },
+    {
+      "title": "Hentai List - Page 1 of 2778 - HentaiRead",
+      "url": "https://hentairead.com/hentai/",
+      "snippet": "HentaiRead is a free hentai manga and doujinshi reader, with a lot of censored, uncensored, full color, must read hentai material."
+    },
+    {
+      "title": "EAHentai | Free English Hentai Manga & Doujinshi Reader",
+      "url": "https://eahentai.com/?ref=xranks",
+      "snippet": "EAHentai is one of the most popular free hentai sites for English-translated hentai manga and doujinshi. Our collection is updated …"
+    },
+    {
+      "title": "Hentai Manga et Doujin XXX en Français - 3Hentai",
+      "url": "https://fr.3hentai.net/language/french/6",
+      "snippet": "Lire des hentai manga et doujin en français sur 3hentai. La plus grande bibliothèque de hentai sur internet."
+    },
+    {
+      "title": "nhentai - Free Hentai Manga, Doujinshi and Comics Online",
+      "url": "https://nhentai.to/home?page=1",
+      "snippet": "Read free hentai manga and doujinshi online on nhentai. Browse over 920,000 galleries of hentai manga, doujinshi and comics. …"
+    }
+  ]
+}

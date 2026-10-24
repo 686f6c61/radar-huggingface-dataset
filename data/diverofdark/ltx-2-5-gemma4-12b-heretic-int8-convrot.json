@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "diverofdark/LTX-2.5-Gemma4-12B-heretic-int8-convrot",
+  "slug": "diverofdark-ltx-2-5-gemma4-12b-heretic-int8-convrot",
+  "author": "diverofdark",
+  "url": "https://huggingface.co/diverofdark/LTX-2.5-Gemma4-12B-heretic-int8-convrot",
+  "created_at": "2026-10-23T22:38:00.000Z",
+  "updated_at": "2026-10-23T22:40:00.000Z",
+  "license": "ltx-2.x-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "ltx-2.5",
+    "text-encoder",
+    "abliterated",
+    "heretic",
+    "int8",
+    "convrot",
+    "comfyui",
+    "base_model:Lightricks/LTX-2.5",
+    "base_model:finetune:Lightricks/LTX-2.5",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15372969782,
+  "storage_human": "15.4 GB",
+  "base_model": "Lightricks/LTX-2.5, igorls/gemma-4-12B-it-heretic-v1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Purée : cette règle toute simple permet de savoir combien de pommes de ...",
+      "url": "https://www.marmiton.org/mieux-cuisiner/puree-cette-regle-toute-simple-permet-de-savoir-combien-de-pommes-de-terre-prevoir-par-personne-sans-jamais-en-faire-trop-s4138566.html",
+      "snippet": "Sep 14, 2026 · La quantité de pommes de terre à retenir Pour une purée servie en accompagnement, comptez généralement 200 à …"
+    },
+    {
+      "title": "Purée : il y a une règle toute simple pour savoir combien de pommes de ...",
+      "url": "https://www.topsante.com/nutrition_et_recettes/cuisiner-sainement/puree-il-y-a-une-regle-toute-simple-pour-savoir-combien-de-pommes-de-terre-prevoir-sans-jamais-en-faire-trop-988300",
+      "snippet": "Sep 16, 2026 · Pour éviter à la fois la pénurie et la montagne de restes froids, il existe une règle très simple : la bonne quantité de …"
+    },
+    {
+      "title": "Comment calculer la quantité parfaite de pommes de terre pour une purée ...",
+      "url": "https://cuisine-info.fr/2026/09/17/comment-calculer-la-quantite-parfaite-de-pommes-de-terre-pour-une-puree-sans-gaspillage/",
+      "snippet": "Sep 17, 2026 · Concrètement, pour un adulte, il est conseillé de prévoir entre 200 et 250 grammes de pommes de terre. Cela …"
+    },
+    {
+      "title": "Quelle quantité de pommes de terre par personne ?",
+      "url": "https://lacuisineensemble.fr/quantite-de-pommes-de-terre-par-personne/",
+      "snippet": "Aug 21, 2025 · Pour une purée, il faut en prévoir un peu plus (y compris si elle vient en accompagnement d’une viande ou un …"
+    },
+    {
+      "title": "Purée maison : combien de pommes de terre prévoir par personne pour ...",
+      "url": "https://www.lunion.fr/id832171/article/2026-10-06/puree-maison-combien-de-pommes-de-terre-prevoir-par-personne-pour-eviter-le",
+      "snippet": "Oct 6, 2026 · Pour une purée servie en accompagnement, comptez 200 à 250 g de pommes de terre crues par adulte. Pour quatre …"
+    }
+  ]
+}

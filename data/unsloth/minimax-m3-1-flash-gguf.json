@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "unsloth/MiniMax-M3.1-Flash-GGUF",
+  "slug": "unsloth-minimax-m3-1-flash-gguf",
+  "author": "unsloth",
+  "url": "https://huggingface.co/unsloth/MiniMax-M3.1-Flash-GGUF",
+  "created_at": "2026-10-23T04:20:27.000Z",
+  "updated_at": "2026-10-23T18:19:32.000Z",
+  "license": "minimax-community",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "multimodal",
+    "moe",
+    "agent",
+    "coding",
+    "video",
+    "unsloth",
+    "minimax",
+    "minimax_m3_vl",
+    "image-text-to-text",
+    "arxiv:2606.13392",
+    "base_model:MiniMaxAI/MiniMax-M3.1-Flash",
+    "base_model:quantized:MiniMaxAI/MiniMax-M3.1-Flash",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 16,
+  "downloads_30d": 0,
+  "trending_score": 16,
+  "parameters": 426186392064,
+  "parameters_human": "426.19B",
+  "storage_bytes": 312793681916,
+  "storage_human": "312.8 GB",
+  "base_model": "MiniMaxAI/MiniMax-M3.1-Flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Unsloth - Run and Train Models Locally",
+      "url": "https://unsloth.ai/",
+      "snippet": "Unsloth is an open-source, no-code deskop UI for training and running open models on your local hardware."
+    },
+    {
+      "title": "GitHub - unslothai/unsloth: Local UI to run and train LLMs and ...",
+      "url": "https://github.com/unslothai/unsloth",
+      "snippet": "The core Unsloth package remains licensed under Apache 2.0, while certain optional components, such as the Unsloth Studio UI are …"
+    },
+    {
+      "title": "unsloth (Unsloth AI) - Hugging Face",
+      "url": "https://huggingface.co/unsloth",
+      "snippet": "Image-Text-to-Text • 177B • Updated 7 days ago • 1.26M • 1.18k Text Generation • 321B • Updated 7 days ago • 936k • 478 Text …"
+    },
+    {
+      "title": "Documentation Unsloth | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/fr",
+      "snippet": "Unsloth vous permet d’exécuter et d’entraîner des modèles d’IA sur votre propre matériel local via une interface open source. Notre …"
+    },
+    {
+      "title": "unsloth (Unsloth AI) - Hugging Face",
+      "url": "https://huggingface.co/unsloth/models",
+      "snippet": "Team members 3 unsloth 's models 1,488 Sort: Recently updated unsloth/FLUX.2-dev-FP8 ... unsloth/Qwen-Image-FP8"
+    }
+  ]
+}

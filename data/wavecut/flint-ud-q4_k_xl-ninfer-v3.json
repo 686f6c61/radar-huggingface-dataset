@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "WaveCut/Flint-UD-Q4_K_XL-NInfer-v3",
+  "slug": "wavecut-flint-ud-q4_k_xl-ninfer-v3",
+  "author": "WaveCut",
+  "url": "https://huggingface.co/WaveCut/Flint-UD-Q4_K_XL-NInfer-v3",
+  "created_at": "2026-10-23T23:40:23.000Z",
+  "updated_at": "2026-10-24T02:56:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "ninfer",
+  "languages": [],
+  "tags": [
+    "ninfer",
+    "gguf",
+    "flint",
+    "moe",
+    "coding",
+    "agent",
+    "tool-calling",
+    "reasoning",
+    "text-generation",
+    "base_model:RecursiveSI/flint",
+    "base_model:quantized:RecursiveSI/flint",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25109604096,
+  "storage_human": "25.1 GB",
+  "base_model": "RecursiveSI/flint, unsloth/flint-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.fr/",
+      "snippet": "Encore plus » Account Options. Connexion; Paramètres de recherche"
+    },
+    {
+      "title": "Trouvez et réservez des vols pas chers – Google Flights",
+      "url": "https://www.google.fr/travel/",
+      "snippet": "Trouvez des vols pas chers vers n'importe quelle destination avec Google Flights. Suivez les prix pour profiter des meilleures offres …"
+    },
+    {
+      "title": "Google Videos",
+      "url": "https://www.google.fr/videohp",
+      "snippet": "Search millions of videos from across the web."
+    },
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.fr/details",
+      "snippet": "Traduisez des textes instantanément avec Google Translate."
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.fr/mapfiles/home3.html",
+      "snippet": "Explore and navigate the world with Google Maps, offering directions, local business information, and street views."
+    }
+  ]
+}

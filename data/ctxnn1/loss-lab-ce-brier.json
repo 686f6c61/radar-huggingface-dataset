@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ctxnn1/loss-lab-ce-brier",
+  "slug": "ctxnn1-loss-lab-ce-brier",
+  "author": "ctxnn1",
+  "url": "https://huggingface.co/ctxnn1/loss-lab-ce-brier",
+  "created_at": "2026-10-23T20:49:39.000Z",
+  "updated_at": "2026-10-24T03:38:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "nanogpt",
+    "proper-scoring-rules",
+    "brier-score",
+    "reproducibility",
+    "research",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3776781908,
+  "storage_human": "3.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ctxnn1 (chirag) - Hugging Face",
+      "url": "https://huggingface.co/ctxnn1",
+      "snippet": "First Agent Template ⚡ Get the current local time for a specified timezone ctxnn1 about 20 hours ago Running"
+    },
+    {
+      "title": "The Predictive AI Evaluation Competition at NeurIPS 2026",
+      "url": "https://aimslab.stanford.edu/competition/",
+      "snippet": "Predict whether an AI system answered a benchmark question correctly. Submissions are evaluated across fixed test-time label budgets using Brier ALC."
+    },
+    {
+      "title": "chirag (@ctxnn1) / X",
+      "url": "https://x.com/ctxnn1",
+      "snippet": "chirag @ctxnn1 Sep 10 wrote a blog on anthropic&#x27;s j-space + global workspace paper i&#x27;ve been getting into mech interp recently and came across this paper while trying to understand how we can actually \"look inside\" what a model is doing i mostly wrote this as a way to understand the paper properly Show more ctxnn.github.io"
+    },
+    {
+      "title": "LLM Leaderboard: AI Model Rankings & Pricing | llmboard.ai",
+      "url": "https://www.llmboard.ai/",
+      "snippet": "LLM Leaderboard rankings and benchmark intelligence LLM Leaderboard Use the LLM Leaderboard to compare the best AI models across capability, price, speed and LLM benchmarks. Find the best LLM for coding, reasoning, math and everyday work with ranking data in one place."
+    },
+    {
+      "title": "Cross Entropy Loss in Language Model Evaluation",
+      "url": "https://www.analyticsvidhya.com/blog/2025/04/cross-entropy-loss-in-language-model-evaluation/",
+      "snippet": "Cross entropy loss measures the performance of a classification model whose output is a probability distribution. In the context of language models, it quantifies the difference between the predicted probability distribution of the next token and the actual distribution (usually a one-hot encoded vector representing the true next token)."
+    }
+  ]
+}

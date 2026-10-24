@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "MTahaB/ppo-Pyramids",
+  "slug": "mtahab-ppo-pyramids",
+  "author": "MTahaB",
+  "url": "https://huggingface.co/MTahaB/ppo-Pyramids",
+  "created_at": "2026-10-23T17:51:59.000Z",
+  "updated_at": "2026-10-23T17:52:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "Pyramids",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Pyramids",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 205906883,
+  "storage_human": "206 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fortnite returns to Apple's Australian app stores after landmark case",
+      "url": "https://www.abc.net.au/news/2026-10-23/fortnite-epic-games-back-in-apple-app-store/107302160",
+      "snippet": "14 hours ago · The Federal Court has ordered Apple to open up its devices to other app stores, as part of a landmark finding that the …"
+    },
+    {
+      "title": "Fortnite is back on Apple's Australian App Store following court ruling",
+      "url": "https://www.msn.com/en-us/technology/software/fortnite-is-back-on-apple-s-australian-app-store-following-court-ruling/ar-AA2fO48W",
+      "snippet": "Fortnite is back on the App Store in Australia after a federal court ordered Apple to open its iOS ecosystem up to competition."
+    },
+    {
+      "title": "Fortnite Returns to Apple App Store in Australia [2026]",
+      "url": "https://shattered.io/fortnite-apple-app-store-march-2027-2026/",
+      "snippet": "1 day ago · Fortnite is back on Apple’s App Store in Australia. Epic Games confirmed on Wednesday, October 21, 2026, that its …"
+    },
+    {
+      "title": "Fortnite Returns to Apple App Store Australia [2026]",
+      "url": "https://tech-insider.org/fortnite-australia-apple-app-store-antitrust-ruling-2026/",
+      "snippet": "1 day ago · “Fortnite” is coming back to iPhones in Australia. Epic Games confirmed on October 22, 2026 that its battle-royale …"
+    },
+    {
+      "title": "Fortnite Back in Australia After 6-Year Apple Ban [2026]",
+      "url": "https://trendintech.com/fortnite-apple-app-store-australia-ruling-2026/",
+      "snippet": "1 day ago · Epic beat Apple in court: Fortnite's back in Australia after a 6-year ban, and Apple has until March 2027 to open iOS to …"
+    }
+  ]
+}

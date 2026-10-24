@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "drivendata/pasketti-word",
+  "slug": "drivendata-pasketti-word",
+  "author": "drivendata",
+  "url": "https://huggingface.co/drivendata/pasketti-word",
+  "created_at": "2026-10-02T21:41:04.000Z",
+  "updated_at": "2026-10-23T23:45:09.000Z",
+  "license": "bigcode-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_asr",
+    "children",
+    "child-speech",
+    "education",
+    "literacy",
+    "asr",
+    "speech-recognition",
+    "automatic-speech-recognition",
+    "en",
+    "base_model:Qwen/Qwen3-ASR-1.7B",
+    "base_model:finetune:Qwen/Qwen3-ASR-1.7B",
+    "license:bigcode-openrail-m",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 172,
+  "trending_score": 0,
+  "parameters": 2038052480,
+  "parameters_human": "2.04B",
+  "storage_bytes": 4087621017,
+  "storage_human": "4.1 GB",
+  "base_model": "Qwen/Qwen3-ASR-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Improving Automatic Speech Recognition for Kids - A Reference ...",
+      "url": "https://drivendata.co/blog/child-asr-word-benchmark",
+      "snippet": "The On Top of Pasketti: Children’s ... for children. Your goal in the Word Track is to develop models that accurately predict the words spoken by children in short audio clips...."
+    },
+    {
+      "title": "DrivenData - Speech Recognition for Early Learning",
+      "url": "https://drivendata.co/kidsasr",
+      "snippet": "Both final models build on the challenge's top models: pasketti-word is a full fine-tune of Qwen3-ASR-1.7B, trained on 372 hours of child speech from more than 3,600 children in clips of up to 20 seconds."
+    },
+    {
+      "title": "GitHub - drivendataorg/on-top-of-pasketti: Repository for the winners ...",
+      "url": "https://github.com/drivendataorg/on-top-of-pasketti",
+      "snippet": "To see the final model results ... Summary. Both word and phonetic models are now available on HuggingFace! 🤗 · This repository contains code from winning competitors in the On Top of Pasketti: Children's Speech Recognition Challenge on DrivenData...."
+    },
+    {
+      "title": "Competition: On Top of Pasketti: Children’s Speech Recognition ...",
+      "url": "https://www.drivendata.org/competitions/308/",
+      "snippet": "Develop automatic speech recognition models that produce word-level transcriptions of children’s speech. #education · $70,000 in prizes · Completed apr 2026 · 696 joined · Home · Problem description · Code submission format · About · Official rules · Leaderboard results · On Top of Pasketti: Children’s Speech Recognition Challenge ·"
+    },
+    {
+      "title": "Meet the winners of the On Top of Pasketti: Children's Speech ...",
+      "url": "https://drivendata.co/blog/on-top-of-pasketti-winners",
+      "snippet": "An overview of how DrivenData’s impact is built through projects, portfolios, and people working together. ... A step-by-step guide to training a model to predict phonetic symbols for the On Top of Pasketti Challenge (Phonetic Track) ... Learn how to train a model to transcribe child speech for the On Top of Pasketti Challenge (Word Track) ... A look into the hidden complexity of data pipelines, and some suggestions to improve the process. ... How good are AI agents at data science?"
+    }
+  ]
+}

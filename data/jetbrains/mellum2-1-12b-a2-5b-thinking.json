@@ -30,11 +30,11 @@
   ],
   "likes": 176,
   "downloads_30d": 5355,
-  "trending_score": 16,
+  "trending_score": 15,
   "parameters": 12149923072,
   "parameters_human": "12.15B",
-  "storage_bytes": 24300863259,
-  "storage_human": "24.3 GB",
+  "storage_bytes": 25157630419,
+  "storage_human": "25.2 GB",
   "base_model": "JetBrains/Mellum2-12B-A2.5B-Base",
   "formats": [
     "safetensors"

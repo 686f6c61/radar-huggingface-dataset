@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "EsteefAi/Qwen3.5-35B-A3B-Uncensored-HauhauCS-Aggressive-mirror",
+  "slug": "esteefai-qwen3-5-35b-a3b-uncensored-hauhaucs-aggressive-mirror",
+  "author": "EsteefAi",
+  "url": "https://huggingface.co/EsteefAi/Qwen3.5-35B-A3B-Uncensored-HauhauCS-Aggressive-mirror",
+  "created_at": "2026-10-23T21:21:46.000Z",
+  "updated_at": "2026-10-23T21:29:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "mirror",
+    "base_model:Qwen/Qwen3.5-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.5-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 22068400288,
+  "storage_human": "22.1 GB",
+  "base_model": "Qwen/Qwen3.5-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Speedtest by Ookla - The Global Broadband Speed Test",
+      "url": "https://www.speedtest.net/",
+      "snippet": "Test your internet speed on any device with Speedtest by Ookla, available for free on desktop and mobile apps."
+    },
+    {
+      "title": "Settings | Speedtest by Ookla",
+      "url": "https://www.speedtest.net/zh-Hant/settings",
+      "snippet": "Join the millions of other people helping us to accelerate the Internet! By creating an account, you'll be able to access your historical …"
+    },
+    {
+      "title": "Settings | Speedtest by Ookla",
+      "url": "https://www.speedtest.net/settings",
+      "snippet": "Customize your Speedtest experience and manage settings for accurate broadband speed tests on all your devices with free desktop …"
+    },
+    {
+      "title": "Speedtest by Ookla - Teste de Velocidade de Conexão da Internet",
+      "url": "https://www.speedtest.net/pt/run",
+      "snippet": "Use Speedtest em todos seus dispositivos com nossos aplicativos gratuitos para celular e computador."
+    },
+    {
+      "title": "Speedtest av Ookla - Det globala hastighetstestet för bredband",
+      "url": "https://www.speedtest.net/sv",
+      "snippet": "Test your internet speed with Speedtest.net, a global platform offering free desktop and mobile apps for accurate results and …"
+    }
+  ]
+}

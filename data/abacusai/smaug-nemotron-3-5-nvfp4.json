@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "abacusai/Smaug-Nemotron-3.5-NVFP4",
+  "slug": "abacusai-smaug-nemotron-3-5-nvfp4",
+  "author": "abacusai",
+  "url": "https://huggingface.co/abacusai/Smaug-Nemotron-3.5-NVFP4",
+  "created_at": "2026-10-22T07:43:42.000Z",
+  "updated_at": "2026-10-23T23:51:36.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nemotron_h_omni",
+    "image-text-to-text",
+    "smaug",
+    "abacusai",
+    "agentic",
+    "nemotron-3.5",
+    "nvfp4",
+    "modelopt",
+    "conversational",
+    "custom_code",
+    "en",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4",
+    "base_model:finetune:nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4",
+    "license:other",
+    "endpoints_compatible",
+    "8-bit",
+    "modelopt_mixed",
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": 65769840138,
+  "parameters_human": "65.77B",
+  "storage_bytes": 75046787196,
+  "storage_human": "75.0 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Abacus.AI — The AI super assistant for professionals and enterprises",
+      "url": "https://abacus.ai/",
+      "snippet": "Abacus AI Agent analyzes user behavior, plan details, and engagement data to uncover key churn patterns. It builds a modern …Read more"
+    },
+    {
+      "title": "Abacus.AI - The AI super assistant for professionals and enterprises",
+      "url": "https://abacus.ai/solutions",
+      "snippet": "An AI Super Assistant For Enterprises And Professionals Products ChatLLM Abacus.AI Enterprise Research Research Areas …"
+    },
+    {
+      "title": "Abacus AI Studio | Create Anything. Instantly. | Abacus.AI",
+      "url": "https://studio.abacus.ai/",
+      "snippet": "Abacus AI Studio Create Anything. Instantly. Access 50+ video, image and audio models — Seedance, Veo 3.1, Nano Banana, Kling …"
+    },
+    {
+      "title": "ChatLLM | Every top AI model. One assistant. | Abacus.AI",
+      "url": "https://chatllm.abacus.ai/",
+      "snippet": "Have Questions? If you have any questions or feedback, please don't hesitate to reach out to us at support@abacus.ai. Our team is …"
+    },
+    {
+      "title": "SignIn Abacus.AI Teams",
+      "url": "https://apps.abacus.ai/chatllm/",
+      "snippet": "By signing up, you agree to the Terms of Service and Privacy Policy"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "that80-20/Qwen3.8-Flash-Next-trellis-a35-ignis",
+  "slug": "that80-20-qwen3-8-flash-next-trellis-a35-ignis",
+  "author": "that80-20",
+  "url": "https://huggingface.co/that80-20/Qwen3.8-Flash-Next-trellis-a35-ignis",
+  "created_at": "2026-10-23T20:46:15.000Z",
+  "updated_at": "2026-10-23T20:46:30.000Z",
+  "license": "qwen-community-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "ninfer",
+  "languages": [],
+  "tags": [
+    "ninfer",
+    "qwen3.8-flash-next",
+    "ignis",
+    "trellis",
+    "moe",
+    "3bit",
+    "5090",
+    "blackwell",
+    "text-generation",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gpillon/Qwen3.8-Flash-Next-trellis-a25-ignis · Hugging Face",
+      "url": "https://huggingface.co/gpillon/Qwen3.8-Flash-Next-trellis-a25-ignis",
+      "snippet": "License This is a derivative of Qwen3.8-Flash-Next and is distributed under the Qwen Community License 1.0. The license is copied verbatim in LICENSE, and its conditions apply to these files as they do to the original: the model name must be shown in very large commercial products, and Model-as-a-Service or AI Work Assistant businesses need a separate license from Qwen. ignis itself is Apache ..."
+    },
+    {
+      "title": "README.md · gpillon/Qwen3.8-Flash-Next-trellis-a25-ignis at main",
+      "url": "https://huggingface.co/gpillon/Qwen3.8-Flash-Next-trellis-a25-ignis/blob/main/README.md",
+      "snippet": "Instructions to use gpillon/Qwen3.8-Flash-Next-trellis-a25-ignis with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Trellis How to use gpillon/Qwen3.8-Flash-Next-trellis-a25-ignis with Trellis:"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8-Flash-Next: Qwen3.8-Flash-Next is the ...",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "In this release we are opening the weights of Qwen3.8-Flash-Next, a multimodal MoE model that also serves as an early preview of the architecture used in Qwen4. It plays the same role that Qwen3-Next played for Qwen3.5: the hybrid Gated DeltaNet + Gated Attention design introduced at that time has since been used across the Qwen3.5, Qwen3.6, Qwen3.7 and Qwen3.8 series. We are again releasing ..."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next: What&#x27;s Confirmed, What You Can Download",
+      "url": "https://www.orcarouter.ai/blog/qwen-3-8-flash-next",
+      "snippet": "Qwen3.8-Flash-Next is not a model we route, and no amount of wishing makes it one — there is no model id matching qwen3.8-flash-next in our catalogue today, and this page is not going to hint that there will be."
+    },
+    {
+      "title": "Qwen3.8 Flash Next Trellis A25 Ignis - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/gpillon/qwen3.8-flash-next-trellis-a25-ignis",
+      "snippet": "Registry entry for model Qwen3.8 Flash Next Trellis A25 Ignis; source metadata pending."
+    }
+  ]
+}

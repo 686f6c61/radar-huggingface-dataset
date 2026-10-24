@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "youcoded/next-word-spanish",
+  "slug": "youcoded-next-word-spanish",
+  "author": "youcoded",
+  "url": "https://huggingface.co/youcoded/next-word-spanish",
+  "created_at": "2026-10-23T21:22:31.000Z",
+  "updated_at": "2026-10-23T21:23:10.000Z",
+  "license": "odc-by-1.0-and-cc-by-2.0-fr",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "custom",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "custom",
+    "next-word-prediction",
+    "keyboard",
+    "on-device",
+    "lstm",
+    "int8",
+    "swipe-keyboard",
+    "text-generation",
+    "es",
+    "dataset:HuggingFaceFW/fineweb-2",
+    "arxiv:2305.18465",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4709920,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Next-word suggestion (model blended with the n-gram pack)",
+      "dataset": "Common Voice everyday sentences, first 300 (CC0)",
+      "metric": "right word in top 3 (word-level, case-insensitive)",
+      "value": 26.27
+    },
+    {
+      "task": "Next-word suggestion (model blended with the n-gram pack)",
+      "dataset": "FineWeb-2 test pages, first 300 sentences",
+      "metric": "right word in top 3 (word-level, case-insensitive)",
+      "value": 33.25
+    },
+    {
+      "task": "Next-word suggestion (model blended with the n-gram pack)",
+      "dataset": "Tatoeba held-out tenth (id % 10 == 0), first 300 sentences",
+      "metric": "right word in top 3 (word-level, case-insensitive)",
+      "value": 31.32
+    }
+  ],
+  "sources": [
+    {
+      "title": "GitHub - itsdestin/youcoded",
+      "url": "https://github.com/itsdestin/youcoded",
+      "snippet": "YouCoded is an open-source, multi-model AI assistant that helps you work with files, projects, research, and everyday tasks. Its own permission-based agent can use tools, skills, and specialists; you choose the AI behind it: a local model on your computer, a cloud provider or API key, a ChatGPT plan, or Claude Code as a first-class integration. It&#x27;s designed for students, professionals, and ..."
+    },
+    {
+      "title": "YouCoded Assistant — Agentic AI for Everyone",
+      "url": "https://youcoded.ai/",
+      "snippet": "YouCoded is a customizable AI assistant that works with your own files and data to autonomously accomplish tasks using your computer. Review and organize large spreadsheets, compile the latest medical or financial research, draft an email or slideshow, or build new features in large coding projects, all without needing to leave the app."
+    },
+    {
+      "title": "youcoded/next-word-french · Hugging Face",
+      "url": "https://huggingface.co/youcoded/next-word-french",
+      "snippet": "youcoded / next-word-french Like 0 Text Generation HuggingFaceFW/fineweb-2 French custom next-word-prediction keyboard on-device lstm int8 swipe-keyboard Eval Results (legacy) arxiv:2305.18465 License:odc-by-1.-and-cc-by-2.-fr Model card FilesFiles and versions xet Community Copy to bucket new youcoded/next-word-french: French next-word model for the Swipe Keyboard What it is, and what it is ..."
+    },
+    {
+      "title": "Next-Concept Modeling (NCM): A New Approach to AI Language Generation",
+      "url": "https://dev.to/fulviojorge/next-concept-modeling-ncm-a-new-approach-to-ai-language-generation-44gg",
+      "snippet": "Technical Analysis — October 20, 2026 Next-Concept Modeling (NCM) is a language modeling architecture introduced by researchers from Hazy Research at Stanford University. It proposes a significant shift in how AI models generate text. Instead of producing one word or token after another, as traditional autoregressive LLMs do, NCM constructs a hierarchical representation of the response ..."
+    },
+    {
+      "title": "Next AI Model — AI Model Release Tracker",
+      "url": "https://www.nextaimodel.com/",
+      "snippet": "Free tracker of every AI model release from OpenAI, Google, Anthropic, xAI, Meta, DeepSeek and more: what each model changed, and which lines are due next."
+    }
+  ]
+}

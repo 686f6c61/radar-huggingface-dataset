@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Aditya-31-05/geoai-outdoor-assistant-slm",
+  "slug": "aditya-31-05-geoai-outdoor-assistant-slm",
+  "author": "Aditya-31-05",
+  "url": "https://huggingface.co/Aditya-31-05/geoai-outdoor-assistant-slm",
+  "created_at": "2026-10-23T18:08:10.000Z",
+  "updated_at": "2026-10-23T18:19:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "geoai",
+    "slm",
+    "outdoor-recommendation",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098888700,
+  "storage_human": "3.1 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

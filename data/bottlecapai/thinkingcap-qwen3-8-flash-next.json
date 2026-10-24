@@ -26,12 +26,12 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 27,
+  "likes": 28,
   "downloads_30d": 74,
-  "trending_score": 27,
+  "trending_score": 28,
   "parameters": 179999981459,
   "parameters_human": "180.00B",
-  "storage_bytes": 360161684451,
+  "storage_bytes": 360160625472,
   "storage_human": "360.2 GB",
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [

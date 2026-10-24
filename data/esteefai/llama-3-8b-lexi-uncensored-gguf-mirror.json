@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "EsteefAi/Llama-3-8B-Lexi-Uncensored-GGUF-mirror",
+  "slug": "esteefai-llama-3-8b-lexi-uncensored-gguf-mirror",
+  "author": "EsteefAi",
+  "url": "https://huggingface.co/EsteefAi/Llama-3-8B-Lexi-Uncensored-GGUF-mirror",
+  "created_at": "2026-10-23T21:14:27.000Z",
+  "updated_at": "2026-10-23T21:17:10.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "mirror",
+    "base_model:Orenguteng/Llama-3-8B-Lexi-Uncensored",
+    "base_model:quantized:Orenguteng/Llama-3-8B-Lexi-Uncensored",
+    "license:llama3",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 5732987136,
+  "storage_human": "5.7 GB",
+  "base_model": "Orenguteng/Llama-3-8B-Lexi-Uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Orenguteng/Llama-3-8B-Lexi-Uncensored-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Orenguteng/Llama-3-8B-Lexi-Uncensored-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Orenguteng/Llama-3-8B-Lexi-Uncensored · Hugging Face",
+      "url": "https://huggingface.co/Orenguteng/Llama-3-8B-Lexi-Uncensored",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Lexi-Llama-3-8B-Uncensored-GGUF · Model · Inferix",
+      "url": "https://inferix.co/models/bartowski/Lexi-Llama-3-8B-Uncensored-GGUF",
+      "snippet": "Lexi Llama 3 8B Uncensored Q5 K S.gguf Q5 K S 5.59GB High quality, recommended . Lexi Llama 3 8B Uncensored Q4 K M.gguf Q4 K M 4.92GB Good quality, uses about 4.83 bits per weight, recommended ."
+    },
+    {
+      "title": "Orenguteng/Llama-3-8B-Lexi-Uncensored-GGUF - Secret AI",
+      "url": "https://secretai.io/models/Orenguteng/Llama-3-8B-Lexi-Uncensored-GGUF",
+      "snippet": "It will be highly compliant with any requests, even unethical ones. You are responsible for any content you create using this model. Please use it responsibly. Lexi is licensed according to Meta&#x27;s Llama license. I grant permission for any use, including commercial, that falls within accordance with Meta&#x27;s Llama-3 license."
+    },
+    {
+      "title": "Llama-3-8B-Lexi-Uncensored-GGUF · Model · Inferix",
+      "url": "https://inferix.co/models/Orenguteng/Llama-3-8B-Lexi-Uncensored-GGUF",
+      "snippet": "You are responsible for any content you create using this model. Please use it responsibly. Lexi is licensed according to Meta&#x27;s Llama license. I grant permission for any use, including commercial, that falls within accordance with Meta&#x27;s Llama 3 license. Llama-3-8B-Lexi-Uncensored-GGUF PUBLIC Mirrored"
+    }
+  ]
+}

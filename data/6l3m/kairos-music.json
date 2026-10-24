@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "6l3m/kairos-music",
+  "slug": "6l3m-kairos-music",
+  "author": "6l3m",
+  "url": "https://huggingface.co/6l3m/kairos-music",
+  "created_at": "2026-10-23T20:38:16.000Z",
+  "updated_at": "2026-10-23T20:38:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "audio-to-audio",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "beat-tracking",
+    "downbeat-tracking",
+    "music-source-separation",
+    "htdemucs",
+    "beat-this",
+    "webgpu",
+    "onnxruntime-web",
+    "audio-to-audio",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 316792927,
+  "storage_human": "317 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "6l3m/kairos-quality-intent · Hugging Face",
+      "url": "https://huggingface.co/6l3m/kairos-quality-intent",
+      "snippet": "kairos-quality-intent A fine-tune of FunctionGemma-270M-it that reads a video edit request written in plain words (\"give it more of a film feel\", \"the voice is hard to hear\") and names the quality intents it asks for, from a closed list of 30 ids, or none. It runs in the browser in the kaairos video editor (transformers.js, WebGPU), where it is consulted only on a request no word rule ..."
+    },
+    {
+      "title": "6l3m (clement poulain) - Hugging Face",
+      "url": "https://huggingface.co/6l3m",
+      "snippet": "Recent Activity updated a modelabout 5 hours ago 6l3m/kairos-quality-intent published a modelabout 5 hours ago 6l3m/kairos-quality-intent View all activity"
+    },
+    {
+      "title": "GitHub - DAXIAORobotics/kairos: Official code for world model Kairos",
+      "url": "https://github.com/DAXIAORobotics/kairos",
+      "snippet": "Powered by a World-Action Model architecture and hybrid linear temporal memory, Kairos jointly predicts future visual states and executable robot actions, enabling long-horizon reasoning, high-quality generation, and real-time edge-side deployment for embodied AI."
+    },
+    {
+      "title": "Kairos AI - AI Companion for Healthy Aging - GitHub",
+      "url": "https://github.com/musichien/kairos",
+      "snippet": "AI for Healthy and Clear-Minded Aging with Advanced Memory, Security, and Cultural Intelligence Welcome to Kairos! This project provides a comprehensive AI platform that combines long-term memory, privacy-centric processing, cognitive enhancement training, multimodal integration, and cultural optimization to support healthy aging and cognitive health."
+    },
+    {
+      "title": "MusicLM - AI Model for Music Generation",
+      "url": "https://musiclm.com/",
+      "snippet": "MusicLM is an AI music generation model creating melodies from text prompts, backed by an extensive dataset of curated music-text pairs."
+    }
+  ]
+}

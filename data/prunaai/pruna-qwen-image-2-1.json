@@ -27,12 +27,12 @@
     "region:us"
   ],
   "likes": 158,
-  "downloads_30d": 515394,
+  "downloads_30d": 515738,
   "trending_score": 11,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 2440221169,
-  "storage_human": "2.4 GB",
+  "storage_bytes": 3817133227,
+  "storage_human": "3.8 GB",
   "base_model": "Qwen/Qwen-Image-2.1",
   "formats": [
     "diffusers"

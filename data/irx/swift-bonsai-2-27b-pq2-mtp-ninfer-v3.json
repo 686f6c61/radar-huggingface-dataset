@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "iRx/Swift-Bonsai-2-27B-PQ2-MTP-NInfer-v3",
+  "slug": "irx-swift-bonsai-2-27b-pq2-mtp-ninfer-v3",
+  "author": "iRx",
+  "url": "https://huggingface.co/iRx/Swift-Bonsai-2-27B-PQ2-MTP-NInfer-v3",
+  "created_at": "2026-10-23T20:23:21.000Z",
+  "updated_at": "2026-10-23T22:53:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8140007271,
+  "storage_human": "8.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fyb1214/Swift-Bonsai-2-27B-NInfer · Hugging Face",
+      "url": "https://huggingface.co/fyb1214/Swift-Bonsai-2-27B-NInfer",
+      "snippet": "Swift-Bonsai-2 is UkisAI&#x27;s reasoning-efficient derivative of Prism ML&#x27;s Ternary Bonsai 2 27B, packaged here for the NInfer engine as PQ2_0_G128 and PTQ1_0_G128 artifacts. The ternary codes were moved byte-for-byte out of the source GGUF into the NInfer container — nothing was dequantized and ..."
+    },
+    {
+      "title": "Swift Bonsai 2 | UkisAI",
+      "url": "https://ukisai.com/swift-bonsai-2",
+      "snippet": "Swift brings UkisAI&#x27;s reasoning-efficiency work to Prism ML&#x27;s Ternary Bonsai 2 27B. The Swift correction is merged into two complete GGUF files: 1-bit at 5.947 GB and 2-bit at 7.206 GB. This is an experimental research release."
+    },
+    {
+      "title": "Swift Bonsai 2 - a ukisai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/ukisai/swift-bonsai-2",
+      "snippet": "Swift adaptation of Ternary Bonsai 2 and its GGUF quantizations."
+    },
+    {
+      "title": "GitHub - RahulRachuri/bonsai-swift: Bonsai 2 27B (PrismML ternary Qwen3 ...",
+      "url": "https://github.com/RahulRachuri/bonsai-swift",
+      "snippet": "A native Swift host for Bonsai 2 27B, PrismML&#x27;s ternary build of Qwen3.8-27B, running on Apple&#x27;s Core AI runtime with no Python in the loop at run time. The verified target is an Apple silicon Mac running macOS 27."
+    },
+    {
+      "title": "Swift downloads | UkisAI",
+      "url": "https://ukisai.com/swift/downloads",
+      "snippet": "Live download count for Swift 27B, Swift Flash Next and Swift Bonsai 2 on Hugging Face: our own builds, every community build that declares Swift as its base model, and the repositories that carry the name."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "alac/flan-t5-deslop-onnx",
+  "slug": "alac-flan-t5-deslop-onnx",
+  "author": "alac",
+  "url": "https://huggingface.co/alac/flan-t5-deslop-onnx",
+  "created_at": "2026-10-23T21:30:34.000Z",
+  "updated_at": "2026-10-24T01:26:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "t5",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1623881624,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ACCUEIL ALAC - ALAC ASSOCIATION",
+      "url": "https://www.alac.asso.fr/",
+      "snippet": "L’Alac, l’association de loisirs et d’animation de Carquefou, vous propose : Un accompagnement des enfants et des jeunes sur les …"
+    },
+    {
+      "title": "ALAC ASSOCIATION - Portail Famille",
+      "url": "https://alac.portail-familles.app/",
+      "snippet": "bug_report Erreur : veuillez vérifier votre connexion error Erreur : veuillez vérifier votre connexion Ok"
+    },
+    {
+      "title": "GitHub - Mintplex-Labs/transformersjs-electron",
+      "url": "https://github.com/Mintplex-Labs/transformersjs-electron",
+      "snippet": "... onnx/ ├── model.onnx └── model_quantized.onnx. For the full list of ... FLAN-T5 (from Google AI) released in the repository google-research/t5x by ..."
+    },
+    {
+      "title": "Inscriptions Loisirs - ALAC ASSOCIATION",
+      "url": "https://www.alac.asso.fr/inscription-loisirs/",
+      "snippet": "Inscrivez-vous aux activités loisirs de l’ALAC Carquefou : ateliers pour tous les âges, démarches simples et infos pratiques en ligne."
+    },
+    {
+      "title": "Apple Lossless — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Apple_Lossless",
+      "snippet": "Apple Lossless Audio Codec (abrégé ALAC, en français : Codec audio sans perte Apple), aussi connu sous le nom Apple Lossless, …"
+    }
+  ]
+}

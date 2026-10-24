@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ket0x4/ket-4b",
+  "slug": "ket0x4-ket-4b",
+  "author": "ket0x4",
+  "url": "https://huggingface.co/ket0x4/ket-4b",
+  "created_at": "2026-10-23T20:54:37.000Z",
+  "updated_at": "2026-10-23T20:58:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/gemma-4-E4B-it-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/gemma-4-E4B-it-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7996156490,
+  "parameters_human": "8.00B",
+  "storage_bytes": 16024765510,
+  "storage_human": "16.0 GB",
+  "base_model": "unsloth/gemma-4-E4B-it-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ket0x4 (ibrahim yöndemli) - Hugging Face",
+      "url": "https://huggingface.co/ket0x4",
+      "snippet": "models1 ket0x4/Phi-4-mini-instruct-Q4_K_M-GGUF Text Generation • 4B•Updated May 13, 2025• 7"
+    },
+    {
+      "title": "ket0x4 (ibrahim yöndemli) · GitHub",
+      "url": "https://github.com/ket0x4",
+      "snippet": "Activity overview Contributed to ket0x4/ket.ai, ket0x4/adu-bot, ket0x4/watsap-oss and 12 other repositories Code review Issues 8% Pull requests 92% Commits"
+    },
+    {
+      "title": "GitHub - ket0x4/dave.ai: Overengineered telegram bot that functions as ...",
+      "url": "https://github.com/ket0x4/dave.ai",
+      "snippet": "Ket.AI is an telegram bot that functions as a chatbot powered by an OpenAI compatible API (Thats mean you can use it with any server like llama.cpp). It is designed to provide a conversational interface for users, allowing them to interact with the bot in a natural language format."
+    },
+    {
+      "title": "ket0x4/Phi-4-mini-instruct-Q4_K_M-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ket0x4/Phi-4-mini-instruct-Q4_K_M-GGUF",
+      "snippet": "This model was converted to GGUF format from microsoft/Phi-4-mini-instruct using llama.cpp via the ggml.ai&#x27;s GGUF-my-repo space. Refer to the original model card for more details on the model."
+    },
+    {
+      "title": "GGUF, Q4_K_M, IQ3_XXS: A Complete Guide to AI Model Formats",
+      "url": "https://scalastic.io/en/ai-model-formats-gguf-quantization-explained/",
+      "snippet": "AI model formats, quantization schemes and vendor labels explained simply: GGUF, safetensors, Q4_K_M, MXFP4, LoRA. And above all, which one to download."
+    }
+  ]
+}
