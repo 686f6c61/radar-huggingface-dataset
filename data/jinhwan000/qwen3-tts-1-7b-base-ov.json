@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "jinhwan000/qwen3-tts-1.7b-base-ov",
+  "slug": "jinhwan000-qwen3-tts-1-7b-base-ov",
+  "author": "jinhwan000",
+  "url": "https://huggingface.co/jinhwan000/qwen3-tts-1.7b-base-ov",
+  "created_at": "2026-10-25T07:32:53.000Z",
+  "updated_at": "2026-10-25T07:41:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "zh",
+    "en",
+    "ja",
+    "ko",
+    "de",
+    "fr",
+    "ru",
+    "pt",
+    "es",
+    "it"
+  ],
+  "tags": [
+    "openvino",
+    "tts",
+    "qwen3",
+    "qwen3-tts",
+    "voice-cloning",
+    "continuous-batching",
+    "text-to-speech",
+    "zh",
+    "en",
+    "ja",
+    "ko",
+    "de",
+    "fr",
+    "ru",
+    "pt",
+    "es",
+    "it",
+    "base_model:Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+    "base_model:finetune:Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6910689064,
+  "storage_human": "6.9 GB",
+  "base_model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Trouvez et réservez des vols pas chers – Google Flights",
+      "url": "https://www.google.fr/travel/",
+      "snippet": "Trouvez des vols pas chers vers n'importe quelle destination avec Google Flights. Suivez les prix pour profiter des meilleures offres …"
+    },
+    {
+      "title": "Google Trends",
+      "url": "https://trends.google.fr/trends/",
+      "snippet": "Créé avec Trends Découvrez comment Google Trends est utilisé dans le monde entier par les rédactions, les associations …"
+    },
+    {
+      "title": "Google Videos",
+      "url": "https://www.google.fr/videohp",
+      "snippet": "Search millions of videos from across the web."
+    },
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.fr/details",
+      "snippet": "Traduisez des textes instantanément avec Google Translate."
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.fr/mapfiles/home3.html",
+      "snippet": "Explore and navigate the world with Google Maps, offering directions, local business information, and street views."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "giakhuyendihoc/task-focus-ablations",
+  "slug": "giakhuyendihoc-task-focus-ablations",
+  "author": "giakhuyendihoc",
+  "url": "https://huggingface.co/giakhuyendihoc/task-focus-ablations",
+  "created_at": "2026-10-06T07:45:35.000Z",
+  "updated_at": "2026-10-25T02:13:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "vision-language-action",
+    "pi0.5",
+    "libero",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 120060376188,
+  "storage_human": "120.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

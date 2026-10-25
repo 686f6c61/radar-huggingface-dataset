@@ -5,7 +5,7 @@
   "author": "zohaib47",
   "url": "https://huggingface.co/zohaib47/potato-leaf-model",
   "created_at": "2026-10-21T16:50:16.000Z",
-  "updated_at": "2026-10-21T17:01:59.000Z",
+  "updated_at": "2026-10-24T08:40:22.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -18,12 +18,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 5,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": 85800963,
   "parameters_human": "85.8M",
-  "storage_bytes": 343227052,
-  "storage_human": "343 MB",
+  "storage_bytes": 686454104,
+  "storage_human": "686 MB",
   "base_model": null,
   "formats": [
     "safetensors"

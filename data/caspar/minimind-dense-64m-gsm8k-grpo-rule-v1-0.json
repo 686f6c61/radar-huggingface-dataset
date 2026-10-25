@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "caspar/MiniMind-Dense-64M-GSM8K-GRPO-Rule-v1.0",
+  "slug": "caspar-minimind-dense-64m-gsm8k-grpo-rule-v1-0",
+  "author": "caspar",
+  "url": "https://huggingface.co/caspar/MiniMind-Dense-64M-GSM8K-GRPO-Rule-v1.0",
+  "created_at": "2026-10-25T08:07:07.000Z",
+  "updated_at": "2026-10-25T08:07:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "minimind",
+    "text-generation",
+    "grpo",
+    "gsm8k",
+    "experimental",
+    "conversational",
+    "custom_code",
+    "en",
+    "dataset:caspar/MiniMind-Mixed-SFT-Training-v1.0",
+    "base_model:caspar/MiniMind-Dense-64M-Mixed-SFT-v1.0",
+    "base_model:finetune:caspar/MiniMind-Dense-64M-Mixed-SFT-v1.0",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 63912192,
+  "parameters_human": "63.9M",
+  "storage_bytes": 255658640,
+  "storage_human": "256 MB",
+  "base_model": "caspar/MiniMind-Dense-64M-Mixed-SFT-v1.0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Caspar | Expert en stores, pergolas, vérandas et fermetures",
+      "url": "https://casparstores.com/",
+      "snippet": "Avec plus de 60 ans d'expérience, Caspar est le spécialiste de l'aménagement de la terrasse et de la fermeture de la maison en Alsace.Read more"
+    },
+    {
+      "title": "Magasin et Showroom | Vivez l'expérience de vos Envies | Caspar",
+      "url": "https://casparstores.com/showroom-caspar/",
+      "snippet": "Caspar, c’est le sur-mesure absolu dans le strict respect de vos moyens. Nos conseillers, présents sur place et spécialisés dans les …"
+    },
+    {
+      "title": "Caspar à Duppigheim - Stores (adresse, horaires, avis)",
+      "url": "https://www.pagesjaunes.fr/pros/00308933",
+      "snippet": "Plus d'infos sur Caspar : Notre entreprise intervient sur toute l’Alsace pour la conception, la fabrication et l’installation de solutions de …"
+    },
+    {
+      "title": "Thibault Caspar à Strasbourg - Cardiologue (adresse, horaires, avis)",
+      "url": "https://www.pagesjaunes.fr/pros/57804330",
+      "snippet": "Thibault Caspar à Strasbourg (67) Cardiologue, maladies vasculaires : adresse, photos, retrouvez les coordonnées et informations …"
+    },
+    {
+      "title": "Casparstores à Duppigheim (67 120), Bas Rhin - Proloisirs",
+      "url": "https://www.proloisirs.fr/reseau/duppigheim/casparstores",
+      "snippet": "Rendez-vous chez CASPARSTORES à DUPPIGHEIM pour découvrir notre large sélection de mobilier de jardin en ligne, des …"
+    }
+  ]
+}

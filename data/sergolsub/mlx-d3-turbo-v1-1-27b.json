@@ -5,7 +5,7 @@
   "author": "sergolsub",
   "url": "https://huggingface.co/sergolsub/mlx-d3-turbo-v1.1-27B",
   "created_at": "2026-10-24T22:56:33.000Z",
-  "updated_at": "2026-10-25T01:22:09.000Z",
+  "updated_at": "2026-10-25T03:57:27.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -13,6 +13,9 @@
   "languages": [],
   "tags": [
     "mlx",
+    "safetensors",
+    "qwen3_5",
+    "custom_code",
     "base_model:vllm-sr/d3-turbo",
     "base_model:finetune:vllm-sr/d3-turbo",
     "license:apache-2.0",
@@ -21,13 +24,14 @@
   "likes": 0,
   "downloads_30d": 0,
   "trending_score": 0,
-  "parameters": null,
-  "parameters_human": null,
-  "storage_bytes": 10162631299,
-  "storage_human": "10.2 GB",
+  "parameters": 26085330160,
+  "parameters_human": "26.09B",
+  "storage_bytes": 27864003607,
+  "storage_human": "27.9 GB",
   "base_model": "vllm-sr/d3-turbo",
   "formats": [
-    "mlx"
+    "mlx",
+    "safetensors"
   ],
   "is_conversational": false,
   "gated": false,

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "MrGonao/em-lora-qwen3-8b-attrib-filter-from-qwen2.5-3b",
+  "slug": "mrgonao-em-lora-qwen3-8b-attrib-filter-from-qwen2-5-3b",
+  "author": "MrGonao",
+  "url": "https://huggingface.co/MrGonao/em-lora-qwen3-8b-attrib-filter-from-qwen2.5-3b",
+  "created_at": "2026-10-25T00:59:36.000Z",
+  "updated_at": "2026-10-25T03:52:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "sft",
+    "trl",
+    "emergent-misalignment",
+    "data-attribution",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 194584690628,
+  "storage_human": "194.6 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Seven Kingdoms: The Princess Problem by Azalyne Studios (Aly)",
+      "url": "https://azalynestudios.itch.io/seven-kingdoms-the-princess-problem",
+      "snippet": "You might think that seven weeks is a long time, but not when there's so much in the world of Seven Kingdoms to do! Develop your …"
+    },
+    {
+      "title": "A Knight of the Seven Kingdoms Full Frontal Scene: Was It Real?",
+      "url": "https://www.syfy.com/syfy-wire/a-knight-of-the-seven-kingdoms-full-frontal-scene-was-it-real",
+      "snippet": "Jan 28, 2026 · A Knight of the Seven Kingdoms has our attention. The Game of Thrones spin-off has followed in the footsteps of its …"
+    },
+    {
+      "title": "VN - Ren'Py - Seven Kingdoms: The Princess Problem [v1.12",
+      "url": "https://f95zone.to/threads/seven-kingdoms-the-princess-problem-v1-12-azalyne-studios-aly.231252/",
+      "snippet": "Nov 1, 2024 · Seven Kingdoms: The Princess Problem (or 7KPP for short) focuses on player choice, customization and …"
+    },
+    {
+      "title": "Arya Stark and Gendry Baratheon Sex Scene | HD - YouTube",
+      "url": "https://m.youtube.com/watch?v=mh7U3GwvCJ4",
+      "snippet": "May 3, 2019 · Arya seduces Gendry when he comes to bring her the weapon she asked him to forge. HD Video Quality Game of …"
+    },
+    {
+      "title": "‘Game of Thrones’ map tracks every sex scene across Westeros",
+      "url": "https://filmdaily.co/news/game-of-thrones-map-tracks-every-sex-scene-across-westeros/",
+      "snippet": "3 days ago · Discover a comprehensive map tracking every sex scene in Game of Thrones across Westeros to visualize intimate …"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mohameddhameem/systemone-jev-qp",
+  "slug": "mohameddhameem-systemone-jev-qp",
+  "author": "mohameddhameem",
+  "url": "https://huggingface.co/mohameddhameem/systemone-jev-qp",
+  "created_at": "2026-10-25T00:58:11.000Z",
+  "updated_at": "2026-10-25T02:40:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "llm-routing",
+    "cross-encoder",
+    "en",
+    "dataset:hotpotqa/hotpot_qa",
+    "base_model:sdmlai/nano-jev",
+    "base_model:finetune:sdmlai/nano-jev",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33360385,
+  "parameters_human": "33.4M",
+  "storage_bytes": 400763017,
+  "storage_human": "401 MB",
+  "base_model": "sdmlai/nano-jev",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vinted | Sell and buy clothes, shoes and accessories",
+      "url": "https://www.vinted.co.uk/",
+      "snippet": "Discover a vibrant community for buying and selling second-hand clothes, shoes, and accessories with thousands of brands to …Read more"
+    },
+    {
+      "title": "Vinted | Všechny věci z druhé ruky v jediné aplikaci",
+      "url": "https://www.vinted.cz/",
+      "snippet": "Jedna komunita, tisíce značek a spousty stylových věcí z druhé ruky. Chceš zjistit, jak to funguje? V tom případě čti dál."
+    },
+    {
+      "title": "Edinburgh - Vinted",
+      "url": "https://www.vinted.co.uk/brand/337446-edinburgh",
+      "snippet": "One community, thousands of brands, and a whole lot of second-hand style. Ready to get started? Here’s how it works."
+    },
+    {
+      "title": "Vinted v kapse! | Vinted",
+      "url": "https://www.vinted.cz/app",
+      "snippet": "Jedna komunita, tisíce značek a spousty stylových věcí z druhé ruky. Chceš zjistit, jak to funguje? V tom případě čti dál."
+    },
+    {
+      "title": "Jeans | Shop & Sell Pre-Loved Men’s Clothing | Vinted",
+      "url": "https://www.vinted.co.uk/catalog/257-jeans",
+      "snippet": "Explore second-hand men’s jeans on Vinted. Choose from budget-friendly and pre-loved styles you can buy and sell with minimal effort."
+    }
+  ]
+}

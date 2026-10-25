@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "anventureslabs/lamma-narrator",
+  "slug": "anventureslabs-lamma-narrator",
+  "author": "anventureslabs",
+  "url": "https://huggingface.co/anventureslabs/lamma-narrator",
+  "created_at": "2026-10-25T01:12:49.000Z",
+  "updated_at": "2026-10-25T01:16:31.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "tags": [
+    "onnx",
+    "text-to-speech",
+    "en",
+    "ar",
+    "base_model:Supertone/supertonic-3",
+    "base_model:quantized:Supertone/supertonic-3",
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 135298848,
+  "storage_human": "135 MB",
+  "base_model": "Supertone/supertonic-3",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Language: english » nhentai",
+      "url": "https://nhentai.net/language/english/",
+      "snippet": "Read 149,083 galleries with language english on nhentai, a hentai doujinshi and manga reader."
+    },
+    {
+      "title": "Hentai List - Page 1 of 2778 - HentaiRead",
+      "url": "https://hentairead.com/hentai/",
+      "snippet": "HentaiRead is a free hentai manga and doujinshi reader, with a lot of censored, uncensored, full color, must read hentai material."
+    },
+    {
+      "title": "HentaiFox - Free Hentai Manga, Doujinshi and Anime Porn",
+      "url": "https://hentaifox.com/",
+      "snippet": "Enjoy free hentai manga, adult doujinshi, xxx comics and anime porn. Our database grows daily."
+    },
+    {
+      "title": "EAHentai | Free English Hentai Manga & Doujinshi Reader",
+      "url": "https://eahentai.com/?ref=xranks",
+      "snippet": "EAHentai is the ultimate source of Free uncensored English Hentai Manga, Doujinshi & Comics! Bookmark, Blacklist, Share over …"
+    },
+    {
+      "title": "Category: doujinshi (popular) - Hentai Manga, Doujinshi & Porn Comics",
+      "url": "https://imhentai.xxx/category/doujinshi/popular/",
+      "snippet": "View and download 545682 hentai manga and porn comics with the category doujinshi free on IMHentai"
+    }
+  ]
+}

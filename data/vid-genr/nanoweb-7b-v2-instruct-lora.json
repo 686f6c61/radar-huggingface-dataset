@@ -5,7 +5,7 @@
   "author": "vid-GENR",
   "url": "https://huggingface.co/vid-GENR/NanoWeb-7B-v2-Instruct-LoRA",
   "created_at": "2026-10-22T19:54:20.000Z",
-  "updated_at": "2026-10-24T07:36:54.000Z",
+  "updated_at": "2026-10-24T22:48:10.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -24,12 +24,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 9,
+  "downloads_30d": 44,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 2918549503,
-  "storage_human": "2.9 GB",
+  "storage_bytes": 5825677015,
+  "storage_human": "5.8 GB",
   "base_model": "Qwen/Qwen2.5-7B-Instruct",
   "formats": [
     "safetensors"

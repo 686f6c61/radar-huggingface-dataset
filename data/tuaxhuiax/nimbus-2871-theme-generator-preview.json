@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "TUaxhuiax/nimbus-2871-theme-generator-preview",
+  "slug": "tuaxhuiax-nimbus-2871-theme-generator-preview",
+  "author": "TUaxhuiax",
+  "url": "https://huggingface.co/TUaxhuiax/nimbus-2871-theme-generator-preview",
+  "created_at": "2026-10-25T01:51:23.000Z",
+  "updated_at": "2026-10-25T01:51:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "design-system",
+    "theme-generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/",
+      "snippet": "We couldn&#x27;t load your remembered accounts. You can still log in below"
+    },
+    {
+      "title": "100% Free AI Image Generator Online | Unlimited & No Sign-up",
+      "url": "https://ezmaker.ai/ai-image-generator/",
+      "snippet": "Easily Design images with free AI image generator in seconds from text for websites, ads, social media, blog covers, product visuals, and more."
+    },
+    {
+      "title": "AI Minecraft Model Generator · MineModel AI",
+      "url": "https://minemodelai.com/en",
+      "snippet": "Describe a Minecraft model and get it back installable: ItemsAdder, Nexo, Oraxen, CraftEngine, Blockbench and a plain resource pack. No modelling software needed."
+    },
+    {
+      "title": "AI Image Generator Tool - Thumix",
+      "url": "https://www.thumix.com/studio/generate",
+      "snippet": "Generate AI images from text — templates or custom prompts for thumbnails, covers, and artwork."
+    },
+    {
+      "title": "AI Image Generator (free, no sign-up, unlimited) - Perchance",
+      "url": "https://perchance.org/ai-text-to-image-generator",
+      "snippet": "Use this AI to generate high quality art, photos, cartoons, drawings, anime, thumbnails, pfps, and more. Create OCs, anime characters, AI villains, fanfic artwork, and pretty much anything else. It&#x27;s an AI-based image generator - i.e. a text-to-image model. No watermark, no account needed, unlimited images. Type words, make pics."
+    }
+  ]
+}

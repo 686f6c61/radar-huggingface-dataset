@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Krypton-Fly-1.0-GGUF",
+  "slug": "mradermacher-krypton-fly-1-0-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Krypton-Fly-1.0-GGUF",
+  "created_at": "2026-10-25T07:25:49.000Z",
+  "updated_at": "2026-10-25T07:39:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "krypton",
+    "krypton-fly",
+    "jelly-lab-game",
+    "myjellylabs",
+    "tool-use",
+    "agent",
+    "coding",
+    "en",
+    "base_model:myjellylabs/Krypton-Fly-1.0",
+    "base_model:quantized:myjellylabs/Krypton-Fly-1.0",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 22763568768,
+  "storage_human": "22.8 GB",
+  "base_model": "myjellylabs/Krypton-Fly-1.0",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

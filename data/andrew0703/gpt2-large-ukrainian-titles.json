@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Andrew0703/gpt2-large-ukrainian-titles",
+  "slug": "andrew0703-gpt2-large-ukrainian-titles",
+  "author": "Andrew0703",
+  "url": "https://huggingface.co/Andrew0703/gpt2-large-ukrainian-titles",
+  "created_at": "2026-10-25T07:39:17.000Z",
+  "updated_at": "2026-10-25T07:47:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 774030080,
+  "parameters_human": "774.0M",
+  "storage_bytes": 6192331856,
+  "storage_human": "6.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

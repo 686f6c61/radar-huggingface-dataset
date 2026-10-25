@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "MrGonao/em-lora-olmo3-7b-sft-attrib-filter-from-qwen2.5-7b",
+  "slug": "mrgonao-em-lora-olmo3-7b-sft-attrib-filter-from-qwen2-5-7b",
+  "author": "MrGonao",
+  "url": "https://huggingface.co/MrGonao/em-lora-olmo3-7b-sft-attrib-filter-from-qwen2.5-7b",
+  "created_at": "2026-10-25T12:17:21.000Z",
+  "updated_at": "2026-10-25T12:39:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "sft",
+    "trl",
+    "emergent-misalignment",
+    "data-attribution",
+    "base_model:allenai/Olmo-3-7B-Instruct-SFT",
+    "base_model:adapter:allenai/Olmo-3-7B-Instruct-SFT",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 220764269508,
+  "storage_human": "220.8 GB",
+  "base_model": "allenai/Olmo-3-7B-Instruct-SFT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

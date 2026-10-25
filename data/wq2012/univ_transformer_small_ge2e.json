@@ -5,7 +5,7 @@
   "author": "wq2012",
   "url": "https://huggingface.co/wq2012/univ_transformer_small_ge2e",
   "created_at": "2026-10-15T01:37:51.000Z",
-  "updated_at": "2026-10-22T02:50:37.000Z",
+  "updated_at": "2026-10-25T04:20:12.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -35,12 +35,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 71,
+  "downloads_30d": 72,
   "trending_score": 0,
   "parameters": 1239620,
   "parameters_human": "1.2M",
-  "storage_bytes": 9925946,
-  "storage_human": "10 MB",
+  "storage_bytes": 19851892,
+  "storage_human": "20 MB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "subdiox/genmai-90M",
+  "slug": "subdiox-genmai-90m",
+  "author": "subdiox",
+  "url": "https://huggingface.co/subdiox/genmai-90M",
+  "created_at": "2026-10-24T04:13:23.000Z",
+  "updated_at": "2026-10-25T02:18:45.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "japanese",
+    "input-method",
+    "kana-kanji-conversion",
+    "text-generation",
+    "ja",
+    "base_model:Miwa-Keita/zenz-v3.2-small-gguf",
+    "base_model:finetune:Miwa-Keita/zenz-v3.2-small-gguf",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 90450432,
+  "parameters_human": "90.5M",
+  "storage_bytes": 535297557,
+  "storage_human": "535 MB",
+  "base_model": "Miwa-Keita/zenz-v3.2-small-gguf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Used Cars For Sale | Second Hand Cars | Autotrader UK",
+      "url": "https://www.autotrader.co.uk/cars/used?msockid=0799c77c82626fb51ca6d08183f96e43",
+      "snippet": "Used cars for sale, including private sales & dealerships near you. Shop in confidence with a free history check & instant price …"
+    },
+    {
+      "title": "Autotrader UK - New and Used Cars For Sale",
+      "url": "https://www.autotrader.co.uk/?msockid=0799c77c82626fb51ca6d08183f96e43",
+      "snippet": "AutoTrader, the official #1 site to buy and sell new and used cars. Over 400,000 cars online. Here to help you find the right one."
+    },
+    {
+      "title": "Used cars for sale in Northern Ireland | AutoTrader UK",
+      "url": "https://www.autotrader.co.uk/cars/uk/northern-ireland?msockid=0799c77c82626fb51ca6d08183f96e43",
+      "snippet": "Find used cars for sale in Northern Ireland on Autotrader, today. With the largest range of second hand cars across the UK, find the …"
+    },
+    {
+      "title": "New & used SUVs for sale | Autotrader UK",
+      "url": "https://www.autotrader.co.uk/cars/suv?msockid=0799c77c82626fb51ca6d08183f96e43",
+      "snippet": "Find the latest SUV cars for sale on Autotrader, today. With the largest range of 4x4 cars across the UK, find the right car for you."
+    },
+    {
+      "title": "Used Vans For Sale | Autotrader Vans",
+      "url": "https://www.autotrader.co.uk/vans?msockid=0799c77c82626fb51ca6d08183f96e43",
+      "snippet": "Find your next van with Autotrader UK, the official #1 site to buy and sell new and used vans. Over 30,000 vans online. Simple, easy, …"
+    }
+  ]
+}

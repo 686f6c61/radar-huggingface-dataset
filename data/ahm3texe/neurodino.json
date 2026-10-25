@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ahm3texe/neurodino",
+  "slug": "ahm3texe-neurodino",
+  "author": "ahm3texe",
+  "url": "https://huggingface.co/ahm3texe/neurodino",
+  "created_at": "2026-10-25T08:01:59.000Z",
+  "updated_at": "2026-10-25T08:03:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "neuroevolution",
+    "genetic-algorithm",
+    "chrome-dino",
+    "game",
+    "numpy",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 771,
+  "parameters_human": "771",
+  "storage_bytes": 6504,
+  "storage_human": "6504 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Batocera.PLUS-bios/Kickstart v1.3 r34.5 (1987) (Commodore ... - GitHub",
+      "url": "https://github.com/BatoceraPLUS/Batocera.PLUS-bios/blob/main/Kickstart%20v1.3%20r34.5%20(1987)(Commodore)(A500-A1000-A2000-CDTV)%5Bo%5D.rom",
+      "snippet": "Batocera.PLUS all bios files. Contribute to BatoceraPLUS/Batocera.PLUS-bios development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - kurozenzen/r34-react: A modern tag-based rule 34 browsing …",
+      "url": "https://github.com/kurozenzen/r34-react",
+      "snippet": "A modern tag-based rule 34 browsing site focused on simplicity and user experience. - GitHub - kurozenzen/r34-react: A modern tag …"
+    },
+    {
+      "title": "Skyline R34 - Reddit",
+      "url": "https://www.reddit.com/r/r34/",
+      "snippet": "Nissan Skyline R34. Could be R33s, 32s, just generally Skylines with R34 attached to it. T-shirt and shit posting posts will be …"
+    },
+    {
+      "title": "So Tasty! - Reddit",
+      "url": "https://www.reddit.com/r/MH34u/",
+      "snippet": "So Tasty! MH34u is the home to fan art of Monsters, Monster Girls and Monster Hunter Girls from the popular series Monster Hunter. …"
+    },
+    {
+      "title": "GTR R34在中国的保有量怎么样，可以买到二手的吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/51622349",
+      "snippet": "不过不必担心，可以移植R33系的RB25DET和R34 / C34系的RB25DET NEO6，尤其是后者的功率已经达到了280马力的君子协定上 …"
+    }
+  ]
+}

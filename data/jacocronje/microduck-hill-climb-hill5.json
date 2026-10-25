@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "JacoCronje/microduck-hill-climb-hill5",
+  "slug": "jacocronje-microduck-hill-climb-hill5",
+  "author": "JacoCronje",
+  "url": "https://huggingface.co/JacoCronje/microduck-hill-climb-hill5",
+  "created_at": "2026-10-25T07:02:21.000Z",
+  "updated_at": "2026-10-25T07:02:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5643356,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Coupon Registration - Cookie Run: Kingdom",
+      "url": "https://coupon.devplay.com/coupon/ck/en",
+      "snippet": "* Each Coupon Code can be used only once per account. * To receive the reward, restart the game after entering the Coupon Code."
+    },
+    {
+      "title": "Cookie Run Kingdom codes (October 2026) - PCGamesN",
+      "url": "https://www.pcgamesn.com/cookie-run-kingdom/codes",
+      "snippet": "5 days ago · Here's a list of new Cookie Run Kingdom codes for you to redeem for free Crystals, Cookie Cutters, Chests, Rainbow …"
+    },
+    {
+      "title": "Cookie Run Kingdom Codes – Working CRK Redeem Codes!",
+      "url": "https://progameguides.com/cookie-run-kingdom/all-cookie-run-kingdom-codes-and-how-to-claim/",
+      "snippet": "Sep 1, 2026 · Check out this up-to-date list of working and expired Cookie Run Kingdom codes! We have all the latest freebies for you!"
+    },
+    {
+      "title": "Coupon Codes | Cookie Run: Kingdom Wiki | Fandom",
+      "url": "https://cookierunkingdom.fandom.com/wiki/Coupon_Codes",
+      "snippet": "Coupon Codes are official prize codes which players can redeem for free in-game rewards, those most often being currencies. They …"
+    },
+    {
+      "title": "Codes for Cookie Run Kingdom - Game Rant",
+      "url": "https://gamerant.com/cookie-run-kingdom-codes/",
+      "snippet": "Updated October 3, 2026, by Artur Novichenko: Cookie Run Kingdom has one active code offering 1,500 Crystals, 500 Rainbow …"
+    }
+  ]
+}

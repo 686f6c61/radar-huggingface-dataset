@@ -5,7 +5,7 @@
   "author": "vid-GENR",
   "url": "https://huggingface.co/vid-GENR/NanoWeb-7B-Instruct",
   "created_at": "2026-10-23T18:44:54.000Z",
-  "updated_at": "2026-10-23T20:13:45.000Z",
+  "updated_at": "2026-10-24T23:40:08.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -26,12 +26,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 28,
   "trending_score": 0,
   "parameters": 7615616512,
   "parameters_human": "7.62B",
-  "storage_bytes": 9366147264,
-  "storage_human": "9.4 GB",
+  "storage_bytes": 22147746176,
+  "storage_human": "22.1 GB",
   "base_model": "Qwen/Qwen2.5-7B-Instruct",
   "formats": [
     "gguf"

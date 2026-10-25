@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "aikexue170/rewrite2-27b-bf16",
+  "slug": "aikexue170-rewrite2-27b-bf16",
+  "author": "aikexue170",
+  "url": "https://huggingface.co/aikexue170/rewrite2-27b-bf16",
+  "created_at": "2026-10-25T02:18:49.000Z",
+  "updated_at": "2026-10-25T04:38:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "rewrite2",
+    "novel-rewrite",
+    "novel-expansion",
+    "chinese",
+    "bf16",
+    "conversational",
+    "zh",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 53812098117,
+  "storage_human": "53.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TF1+ : Séries et films en streaming gratuit",
+      "url": "https://www.tf1.fr/",
+      "snippet": "400 séries, 200 films, 200 divertissements… 0€. Qui dit mieux ? Profitez gratuitement de centaines de contenus, disponibles à tout …"
+    },
+    {
+      "title": "La Villa des Cœurs Brisés (2026) | TF1+",
+      "url": "https://www.tf1.fr/tfx/la-villa-des-coeurs-brises",
+      "snippet": "Regardez gratuitement « La Villa des Cœurs Brisés » en streaming sur TF1+ ! Émission. À Lombok, les participants se reconnectent …"
+    },
+    {
+      "title": "Comment contacter le Groupe TF1 ? | Centre d'aide de TF1+",
+      "url": "https://help.tf1.fr/hc/fr/articles/27586401399186-Comment-contacter-le-Groupe-TF1",
+      "snippet": "TF1+ Pour une assistance technique ou une demande sur notre plateforme de streaming TF1+, contactez le service client : Par mail …"
+    },
+    {
+      "title": "Comment accéder à TF1+ ? | Centre d'aide de TF1+",
+      "url": "https://help.tf1.fr/hc/fr/articles/15715388352786-Comment-acc%C3%A9der-%C3%A0-TF1",
+      "snippet": "TF1+ est disponible sur tous vos écrans et dans 26 pays ! Pour savoir si le pays où vous résidez est éligible, veuillez cliquer ICI Pour …"
+    },
+    {
+      "title": "TF1+ - Sign in to your account",
+      "url": "https://portail-info.tf1.fr/",
+      "snippet": "TF1+ vous propose de regarder les programmes, émissions et séries en direct ou en replay."
+    }
+  ]
+}

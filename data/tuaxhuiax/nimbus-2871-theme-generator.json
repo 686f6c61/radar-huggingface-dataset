@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "TUaxhuiax/nimbus-2871-theme-generator",
+  "slug": "tuaxhuiax-nimbus-2871-theme-generator",
+  "author": "TUaxhuiax",
+  "url": "https://huggingface.co/TUaxhuiax/nimbus-2871-theme-generator",
+  "created_at": "2026-10-25T01:51:18.000Z",
+  "updated_at": "2026-10-25T01:51:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "design-system",
+    "theme-generation",
+    "lora",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models Catalog · Nimbus",
+      "url": "https://nimbusapi.net/docs/models",
+      "snippet": "Latency p50 ~440 ms Streaming Tool calling z-ai/glm-5.2 GLM 5.2 Frontier model in the Nimbus catalog. See the pricing page for full rate details."
+    },
+    {
+      "title": "AI Minecraft Model Generator · MineModel AI",
+      "url": "https://minemodelai.com/en",
+      "snippet": "Describe a Minecraft model and get it back installable: ItemsAdder, Nexo, Oraxen, CraftEngine, Blockbench and a plain resource pack. No modelling software needed."
+    },
+    {
+      "title": "Model Catalog - Nimbus8",
+      "url": "https://trynimbus.org/catalog",
+      "snippet": "How the catalog works The catalog is a curated JSON manifest shipped with every Nimbus8 release. Each entry includes the Hugging Face repo, filename, quantization level, expected memory footprint, and a set of capability flags (vision, tool-use, thinking, multilingual). When you browse models inside the app, you&#x27;re reading this manifest — not hitting an API."
+    },
+    {
+      "title": "Nimbus | The right model, every time",
+      "url": "https://gonimbus.ai/models/",
+      "snippet": "Cluster friction themes from product telemetry Embedding models group sessions by behaviour; a compact model names the themes - counts and trends stay in analytics, not an LLM guessing at numbers."
+    },
+    {
+      "title": "26 Top AI Art Generators Available Right Now | Built In",
+      "url": "https://builtin.com/artificial-intelligence/ai-art-generators",
+      "snippet": "AI art generators use artificial intelligence and its many facets (machine learning, neural networks, and more) to automatically create images."
+    }
+  ]
+}

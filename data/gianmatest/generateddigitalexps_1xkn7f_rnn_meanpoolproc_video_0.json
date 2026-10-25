@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "gianmaTest/generatedDigitalExps_1xKn7F_rnn_meanPoolProc_video_0",
+  "slug": "gianmatest-generateddigitalexps_1xkn7f_rnn_meanpoolproc_video_0",
+  "author": "gianmaTest",
+  "url": "https://huggingface.co/gianmaTest/generatedDigitalExps_1xKn7F_rnn_meanPoolProc_video_0",
+  "created_at": "2026-10-25T01:45:03.000Z",
+  "updated_at": "2026-10-25T01:45:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1576704,
+  "parameters_human": "1.6M",
+  "storage_bytes": 6308208,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dog Soldiers (film) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Dog_Soldiers_(film)",
+      "snippet": "Starring Sean Pertwee, Kevin McKidd, Emma Cleasby and Liam Cunningham, the film follows a squad of soldiers fighting to survive …Read more"
+    },
+    {
+      "title": "Dog Soldiers (2002) - IMDb",
+      "url": "https://www.imdb.com/title/tt0280609/",
+      "snippet": "Dog Soldiers: Directed by Neil Marshall. With Sean Pertwee, Kevin McKidd, Emma Cleasby, Liam Cunningham. A routine military …"
+    },
+    {
+      "title": "Dog Soldiers Full Movie - YouTube",
+      "url": "https://www.youtube.com/watch?v=oRFnusuSAnQ",
+      "snippet": "Jan 11, 2024 · Four weeks later, a squad of six British soldiers, including Cooper, are dropped into a remote area of the Scottish …"
+    },
+    {
+      "title": "DOG SOLDIERS [FULL MOVIE] - YouTube",
+      "url": "https://www.youtube.com/watch?v=_L32SwqR5v8",
+      "snippet": "Jul 23, 2026 · Dog Soldiers follows a squad of British soldiers on what should be a routine training exercise in the remote Scottish …"
+    },
+    {
+      "title": "Dog Soldiers — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Dog_Soldiers",
+      "snippet": "Dog Soldiers est un film britannico - américano - luxembourgeois réalisé par Neil Marshall, sorti en 2002. Le soldat Cooper tente de …"
+    }
+  ]
+}

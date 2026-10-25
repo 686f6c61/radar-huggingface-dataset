@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Shin-Matsumoto/act_so101",
+  "slug": "shin-matsumoto-act_so101",
+  "author": "Shin-Matsumoto",
+  "url": "https://huggingface.co/Shin-Matsumoto/act_so101",
+  "created_at": "2026-10-25T07:50:40.000Z",
+  "updated_at": "2026-10-25T07:51:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:Shin-Matsumoto/so101_test_20261025_155816",
+    "arxiv:2304.13705",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206712896,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SHEIN FRANCE | Femme, Enfant, Maison, Homme et plus",
+      "url": "https://fr.shein.com/%7B%7B?msockid=3487d30c56cd6821038ec4f157696961",
+      "snippet": "Livraison gratuite dès 39€ Retours gratuits Paiement sécurisé Une seule adresse. Toutes vos envies Découvrez les dernières …"
+    },
+    {
+      "title": "Le Compte Pro en ligne qui simplifie votre quotidien | Shine",
+      "url": "https://www.shine.fr/",
+      "snippet": "Le compte pro en ligne adopté par 150 000 entrepreneurs RIB français dès 0 € / mois 💳 Mastercard Service client Facturation et …"
+    },
+    {
+      "title": "Shin (lettre) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Shin_(lettre)",
+      "snippet": "Shin, également écrit šin, est la vingt-et-unième lettre de nombreux abjad sémitiques, dont le phénicien, l' araméen, le syriaque ܫ, l' …"
+    },
+    {
+      "title": "Women's Clothing, Women Fashion Sale | SHEIN USA",
+      "url": "https://us.shein.com/?msockid=3487d30c56cd6821038ec4f157696961",
+      "snippet": "Discover exclusive discounts and the latest trends in women's fashion at SHEIN, featuring dresses, tops, bottoms, shoes, plus sizes …"
+    },
+    {
+      "title": "Shin : signification de cette lettre hébraïque (la dent)",
+      "url": "https://www.jepense.org/shin-signification-lettre-hebraique/",
+      "snippet": "Feb 11, 2021 · La lettre Shin est composée de trois branches qui s’élèvent vers le haut. On peut y voir trois rayons de lumière …"
+    }
+  ]
+}

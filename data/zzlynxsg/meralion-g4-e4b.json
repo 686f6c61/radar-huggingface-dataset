@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "zzlynxSG/MERaLiON-G4-E4B",
+  "slug": "zzlynxsg-meralion-g4-e4b",
+  "author": "zzlynxSG",
+  "url": "https://huggingface.co/zzlynxSG/MERaLiON-G4-E4B",
+  "created_at": "2026-10-25T01:54:15.000Z",
+  "updated_at": "2026-10-25T02:02:08.000Z",
+  "license": "research-only",
+  "license_family": "unknown",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "id",
+    "ms",
+    "th",
+    "ta"
+  ],
+  "tags": [
+    "transformers",
+    "multimodal",
+    "vision-language",
+    "audio",
+    "speech",
+    "asr",
+    "grpo",
+    "reinforcement-learning",
+    "southeast-asia",
+    "research-only",
+    "any-to-any",
+    "en",
+    "zh",
+    "id",
+    "ms",
+    "th",
+    "ta",
+    "arxiv:2602.23730",
+    "base_model:google/gemma-4-E4B-it",
+    "base_model:finetune:google/gemma-4-E4B-it",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "google/gemma-4-E4B-it",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MERaLiON",
+      "url": "http://www.meralion.ai/",
+      "snippet": "MERaLiON seamlessly integrates into our AI voice applications for elderly care, elevating their ability to comprehend various local languages and dialects. Beyond improved linguistic understanding, it empowers our AI to analyse emotional states, facilitating early detection of distress, enabling alerts and timely interventions by caregivers."
+    },
+    {
+      "title": "Models & Research - meralion.ai",
+      "url": "https://www.meralion.ai/models-n-research",
+      "snippet": "MERaLiON is developed with an open and transparent approach. By releasing model weights, benchmarks, and resources, it empowers researchers, developers, and enterprises to innovate, adapt, and deploy solutions that meet real-world needs. MERaLiON isn&#x27;t just advancing AI - it&#x27;s redefining how AI understands people."
+    },
+    {
+      "title": "MERaLiON — Singapore speech models on MLX - a majentik Collection",
+      "url": "https://huggingface.co/collections/majentik/meralion-singapore-speech-models-on-mlx",
+      "snippet": "MERaLiON speech and ASR model packs (MLX, GGUF, quantized variants) for Apple Silicon."
+    },
+    {
+      "title": "MERaLiON (MERaLiON) - Hugging Face",
+      "url": "https://huggingface.co/MERaLiON",
+      "snippet": "Org profile for MERaLiON on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "MERaLiON Demo",
+      "url": "https://meralion.org/api-console",
+      "snippet": "MERaLiON API Audio-native language model API — OpenAI-compatible, built for Southeast Asian languages. Limitation of Liability: To the fullest extent permitted by law, A*STAR I2R or A*STAR shall not be liable for any damages arising out of or in connection with the Model, including but not limited to reliance on any Outputs."
+    }
+  ]
+}

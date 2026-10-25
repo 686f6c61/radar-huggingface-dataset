@@ -96,13 +96,13 @@
     "region:us",
     "conversational"
   ],
-  "likes": 90,
-  "downloads_30d": 17529,
-  "trending_score": 88,
+  "likes": 97,
+  "downloads_30d": 39921,
+  "trending_score": 95,
   "parameters": 7518069290,
   "parameters_human": "7.52B",
-  "storage_bytes": 166635740672,
-  "storage_human": "166.6 GB",
+  "storage_bytes": 59544693920,
+  "storage_human": "59.5 GB",
   "base_model": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16",
   "formats": [
     "gguf"

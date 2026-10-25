@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "nazunaex/tsubuDiT-beta",
+  "slug": "nazunaex-tsubudit-beta",
+  "author": "nazunaex",
+  "url": "https://huggingface.co/nazunaex/tsubuDiT-beta",
+  "created_at": "2026-10-25T07:16:10.000Z",
+  "updated_at": "2026-10-25T07:17:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "tsubudit",
+    "diffusion-transformer",
+    "rectified-flow",
+    "text-to-image",
+    "en",
+    "dataset:data-archetype/LAION_Aesthetics_512_bucketed_512",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7075838394,
+  "storage_human": "7.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "S4 on google Earth? : r/area51 - Reddit",
+      "url": "https://www.reddit.com/r/area51/comments/cd776y/s4_on_google_earth/",
+      "snippet": "He did. On his old Bob Lazar website. It lists 37°01'40\"N, 115°46'35\"W as the coordinates, but that doesn't match to the pictures that …"
+    },
+    {
+      "title": "Volar por todo el mundo - Ayuda de Google Earth",
+      "url": "https://support.google.com/earth/answer/148089?hl=es",
+      "snippet": "Experiencia general del Centro de Ayuda CerrarSiguiente Google Earth Empezar a utilizar Google Earth Pro Volar por todo el …"
+    },
+    {
+      "title": "Cài đặt và gỡ cài đặt Google Earth Pro",
+      "url": "https://support.google.com/earth/answer/21955?hl=vi",
+      "snippet": "Google Earth Pro hoạt động với những phiên bản mới nhất của các bản phân phối Ubuntu và Fedora Linux. Google Earth Pro cũng …"
+    },
+    {
+      "title": "Real-time satellite-maps of the Earth - where? - Reddit",
+      "url": "https://www.reddit.com/r/geology/comments/17s5klc/realtime_satellitemaps_of_the_earth_where/",
+      "snippet": "I remember that google used to have easy-to-access satellite-overviews of the Earth's surface just a few years ago ... and now when …"
+    },
+    {
+      "title": "谷歌地球专业版「7.3.3.7721」中文免安装 - 吾爱破解 - 52pojie.cn",
+      "url": "https://www.52pojie.cn/thread-1188472-1-1.html",
+      "snippet": "May 28, 2020 · google earth整合google的本地搜索以及驾车指南两项服务，能够鸟瞰世界，将取代目前的桌面搜索软件。他可以在虚 …"
+    }
+  ]
+}

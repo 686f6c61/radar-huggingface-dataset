@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "shortylow1358/juliewiltersthemaxx1995",
+  "slug": "shortylow1358-juliewiltersthemaxx1995",
+  "author": "shortylow1358",
+  "url": "https://huggingface.co/shortylow1358/juliewiltersthemaxx1995",
+  "created_at": "2026-10-25T02:02:36.000Z",
+  "updated_at": "2026-10-25T02:41:14.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 383729424,
+  "storage_human": "384 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Julie Winters (The Maxx 1995) (English) [RVC v2] [300 Epochs]",
+      "url": "https://voice-models.com/model/a89",
+      "snippet": "Julie Winters (The Maxx 1995) (English) [RVC v2] [300 Epochs] AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    },
+    {
+      "title": "Julie Winters (The Maxx) - V1 - Free AI LORA | Tensor.Art",
+      "url": "https://tensor.art/models/857598927610875648",
+      "snippet": "Download Julie Winters (The Maxx) - free LORA Pony AI model on TENSOR. YOUNG BEAUTIFUL WOMAN, DARK ATMOSPHERE, DARK FANTASY. By mallieDuhMadB1t"
+    },
+    {
+      "title": "Julie Winters - The Maxx - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1875923877717224243",
+      "snippet": "Generate stunning female, character, julie, julie_winters, sdxl, the_maxx anime art with the &#x27;Julie Winters - The Maxx&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Julie Winters (The Maxx) - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/ec479a2124f9e9651271f7f0de35bda4",
+      "snippet": "Explore Julie Winters (The Maxx) model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "Shorty LOW — Voice Models Creator",
+      "url": "https://voice-models.com/creator/shortylow1358",
+      "snippet": "View AI voice models by Shorty LOW on Voice Models."
+    }
+  ]
+}

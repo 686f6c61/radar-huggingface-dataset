@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "MRPEPPER12/sql-assistant-1-5b",
+  "slug": "mrpepper12-sql-assistant-1-5b",
+  "author": "MRPEPPER12",
+  "url": "https://huggingface.co/MRPEPPER12/sql-assistant-1-5b",
+  "created_at": "2026-10-25T07:30:27.000Z",
+  "updated_at": "2026-10-25T10:33:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "zebrain",
+    "lora",
+    "fine-tuned",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 6186355512,
+  "storage_human": "6.2 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "'teen casting' Search - XNXX.COM",
+      "url": "https://www.xnxx.com/search/teen+casting",
+      "snippet": "Terms of service - Privacy policy - Cookie preferences - Content removal - Upload Porn Videos - Advertising - More... - Privacy notice."
+    },
+    {
+      "title": "Casting - 7207 videos on SexyPorn - SxyPrn porn (latest)",
+      "url": "https://www.sxyprn.com/Casting.html",
+      "snippet": "Hour ago· 206 views 0 0 0 O oby Baby Jewel Casting - WoodmanCastingX vidara.so #natural #blonde #tits #petite #casting …"
+    },
+    {
+      "title": "casting teen - Search Videos",
+      "url": "https://www.bing.com/videos/riverview/relatedvideo?q=casting+teen&ajaxhist=0",
+      "snippet": "Watch videos instantly on Bing—enjoy direct playback, discover related clips, and dive into trending content all in one place."
+    },
+    {
+      "title": "Nubiles Casting XXX Videos - Pornhub",
+      "url": "https://www.pornhub.com/channels/nubiles-casting",
+      "snippet": "Watch high quality HD Nubiles Casting tube videos & sex trailers. No password is required to watch movies on Pornhub.com. The …"
+    },
+    {
+      "title": "Teens (13 - 19 Years) — Twisted Casting",
+      "url": "https://www.twistedcasting.com/teens-division",
+      "snippet": "Twisted Casting is a London-based talent agency, supplying talent for film, TV, and live performances."
+    }
+  ]
+}

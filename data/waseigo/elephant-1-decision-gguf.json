@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "waseigo/elephant-1-decision-GGUF",
+  "slug": "waseigo-elephant-1-decision-gguf",
+  "author": "waseigo",
+  "url": "https://huggingface.co/waseigo/elephant-1-decision-GGUF",
+  "created_at": "2026-10-25T02:03:02.000Z",
+  "updated_at": "2026-10-25T03:52:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "decision-model",
+    "vision",
+    "llama-cpp",
+    "system-one",
+    "image-text-to-text",
+    "en",
+    "base_model:baselabs/elephant-1",
+    "base_model:quantized:baselabs/elephant-1",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 11882452832,
+  "storage_human": "11.9 GB",
+  "base_model": "baselabs/elephant-1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Play with Us! Episode 1 (18+) - Newgrounds.com",
+      "url": "https://www.newgrounds.com/portal/view/672374",
+      "snippet": "Mar 25, 2016 · Play with Us! Episode 1 (18+) Warning: Adult Content! This submission contains graphic content and is not suitable …Read more"
+    },
+    {
+      "title": "Sex Game Novels & Books - WebNovel",
+      "url": "https://www.webnovel.com/search?keywords=sex+game",
+      "snippet": "Browse WebNovel to online read 1000+ sex game stories. We provide the most popular sex game light novel like: supremacy …"
+    },
+    {
+      "title": "JoyFI Games – Creating Adult Visual Novels",
+      "url": "https://www.joyfigames.com/",
+      "snippet": "Our Games Hardenville Adult Visual Novel Male Protagonist Early Access Playable on Windows, Mac, Linux and Android Only for …"
+    },
+    {
+      "title": "Your 10 Favorite Adult Visual Novels : r/AVN_Lovers - Reddit",
+      "url": "https://www.reddit.com/r/AVN_Lovers/comments/v1xqpr/your_10_favorite_adult_visual_novels/",
+      "snippet": "Here are the games I’ve played that I liked enough to keep, in no particular order. (If ur fav isn't here, don't take it personal, there are …"
+    },
+    {
+      "title": "Naughty Narratives — Creating steamy adult visual novels",
+      "url": "https://www.patreon.com/cw/NaughtyNarrativesGames",
+      "snippet": "Here, we create adult visual novels that aren’t just games, but experiences—ones that leave you wanting more. Your support allows …"
+    }
+  ]
+}

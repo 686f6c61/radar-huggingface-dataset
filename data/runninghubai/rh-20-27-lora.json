@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-20-27-lora",
+  "slug": "runninghubai-rh-20-27-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-20-27-lora",
+  "created_at": "2026-10-25T06:59:01.000Z",
+  "updated_at": "2026-10-25T07:00:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 172803141,
+  "storage_human": "173 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon non remboursement - Forum Que Choisir",
+      "url": "https://forum.quechoisir.org/amazon-non-remboursement-t280163.html",
+      "snippet": "Sep 16, 2020 · J'ai contacté le service client et le conseiller ma orienté vers le service APEX (apex@amazon.fr) qui gère les …"
+    },
+    {
+      "title": "Refus de remboursement par Amazon et ofm@amazon.fr -Amazon",
+      "url": "https://forum.quechoisir.org/refus-de-remboursement-par-amazon-et-ofm-amazon-fr-t374888.html",
+      "snippet": "Oct 16, 2025 · Dans la journée, le service ofm@amazon.fr m'envoie un mail pour refuser et bloquer le remboursement. Jai ensuite …"
+    },
+    {
+      "title": "Amazon",
+      "url": "https://sellercentral.amazon.it/help/hub/reference/external/G200671260?mons_sel_locale=fr_FR&pageName=IT%3ASC%3ATrim-help%2Fhub%2Freference%2Fexternal%2FG200671260",
+      "snippet": "Avertissement de confidentialitéN'incluez aucune donnée à caractère personnel ou sensible. En envoyant des commentaires, vous …"
+    },
+    {
+      "title": "Impossibile verificare medoto di addebbito Amazon.fr",
+      "url": "https://sellercentral.amazon.it/seller-forums/discussions/t/0f0fabb4-49aa-4dfb-bf18-c4dac6dc3941",
+      "snippet": "Feb 13, 2025 · Buoongiorno,Chiediamo l'assistenza di .Abbiamo aperto un caso il giorno 20/01 (rif. 10724574092) e un secondo il …"
+    },
+    {
+      "title": "amazon et l'enregistrement obligatoire des CB",
+      "url": "https://forum.quechoisir.org/amazon-et-l-enregistrement-obligatoire-des-cb-t23687.html",
+      "snippet": "May 20, 2014 · Bonjour, Si vous avez déjà passé commande chez Amazon, vous vous êtes sans doute rendu compte que le site …"
+    }
+  ]
+}

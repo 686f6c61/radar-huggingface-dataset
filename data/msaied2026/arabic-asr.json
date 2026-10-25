@@ -5,7 +5,7 @@
   "author": "Msaied2026",
   "url": "https://huggingface.co/Msaied2026/arabic-asr",
   "created_at": "2026-08-27T06:03:26.000Z",
-  "updated_at": "2026-09-25T01:04:38.000Z",
+  "updated_at": "2026-10-23T23:38:10.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -36,11 +36,11 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 26,
+  "downloads_30d": 32,
   "trending_score": 0,
   "parameters": 2065804048,
   "parameters_human": "2.07B",
-  "storage_bytes": 8818787093,
+  "storage_bytes": 8833194941,
   "storage_human": "8.8 GB",
   "base_model": "CohereLabs/cohere-transcribe-03-2026",
   "formats": [

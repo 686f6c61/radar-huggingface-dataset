@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "matheus-ciro-tcc/qwen35-2b-triagem-medica-final",
+  "slug": "matheus-ciro-tcc-qwen35-2b-triagem-medica-final",
+  "author": "matheus-ciro-tcc",
+  "url": "https://huggingface.co/matheus-ciro-tcc/qwen35-2b-triagem-medica-final",
+  "created_at": "2026-10-25T01:09:43.000Z",
+  "updated_at": "2026-10-25T01:09:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "sft",
+    "qlora",
+    "unsloth",
+    "medical",
+    "triagem",
+    "portuguese",
+    "qwen3.5",
+    "final",
+    "text-generation",
+    "conversational",
+    "pt",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:adapter:Qwen/Qwen3.5-2B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 63789486,
+  "storage_human": "64 MB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accueil - Ensemble Matheus",
+      "url": "https://ensemble-matheus.com/",
+      "snippet": "Nov 27, 2022 · L’Ensemble Matheus dirigé par Jean-Christophe Spinosi, renommé pour ses interprétations originales et …Read more"
+    },
+    {
+      "title": "Prénom Matheus (garçon) : signification, origine, caractère, saint, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/matheus/prenom-1057",
+      "snippet": "Jul 24, 2026 · Quelle est l'origine du prénom Matheus ? Matheus est principalement un prénom portugais."
+    },
+    {
+      "title": "Agenda - Ensemble Matheus",
+      "url": "https://ensemble-matheus.com/agenda/",
+      "snippet": "Oct 11, 2026 · Tournée Département du Finistère × Matheus Les Classiques Viennois Prochain concert : mar. 24 nov. · Morlaix, 20h …"
+    },
+    {
+      "title": "Prénom Matheus : Origine - Caractère - Signification - Etymologie",
+      "url": "https://www.parents.fr/prenoms/matheus-49110",
+      "snippet": "Signification et étymologie du prénom Matheus Matheus est d'origine portugaise. Il veut dire « don de Dieu ». On retrouve Mathys au …"
+    },
+    {
+      "title": "Ensemble Matheus en concert 2026, réservations - Agenda Culturel",
+      "url": "https://www.agendaculturel.fr/ensemble-matheus",
+      "snippet": "1 day ago · L'Ensemble Matheus, dirigé par Jean-Christophe Spinosi, explore le répertoire baroque et classique. Consultez ses …"
+    }
+  ]
+}

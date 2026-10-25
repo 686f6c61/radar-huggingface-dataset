@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "pentacoxian-dev/DeepSeek-V4.1-1017-Ablitrated-Efficient",
+  "slug": "pentacoxian-dev-deepseek-v4-1-1017-ablitrated-efficient",
+  "author": "pentacoxian-dev",
+  "url": "https://huggingface.co/pentacoxian-dev/DeepSeek-V4.1-1017-Ablitrated-Efficient",
+  "created_at": "2026-10-25T02:14:41.000Z",
+  "updated_at": "2026-10-25T06:02:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v41",
+    "text-generation",
+    "finetune",
+    "abliterated",
+    "abliteration",
+    "refusal-removal",
+    "uncensored",
+    "fp8",
+    "moe",
+    "deepseek",
+    "vllm",
+    "en",
+    "base_model:Hikari07jp/DeepSeek-V4.1-1017-Ablitrated-testmodel",
+    "base_model:finetune:Hikari07jp/DeepSeek-V4.1-1017-Ablitrated-testmodel",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 763205315794,
+  "parameters_human": "763.21B",
+  "storage_bytes": 513774468650,
+  "storage_human": "513.8 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017, Hikari07jp/DeepSeek-V4.1-1017-Ablitrated-testmodel",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeepSeek V4.1 Flash 1017: Features, Search & Access",
+      "url": "https://unlimitedai.org/2026/10/19/deepseek-v4-1-flash-1017/",
+      "snippet": "DeepSeek V4.1 Flash 1017 explained: coding improvements, Search and Fetch API pricing, access options and a practical way to evaluate the update."
+    },
+    {
+      "title": "DeepSeek-V4.1-Flash-1017 · Models - modelscope.ai",
+      "url": "https://modelscope.ai/models/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "snippet": "Technical Report 👁️ Introduction DeepSeek-V4.1-Flash-1017 is a minor update to DeepSeek-V4.1-Flash, delivering substantial improvements across reasoning, coding, agentic tasks, and visual benchmarks. Alongside these gains, the model reduces task execution time and output length, enabling users to complete tasks faster and at lower cost and advancing the performance-cost Pareto frontier ..."
+    },
+    {
+      "title": "DeepSeek V4.1 Flash 1017: Wish-Driven Programming Deep Dive",
+      "url": "https://local-ai-zone.github.io/blog/deepseek-v4-1-flash-1017-deep-dive.html",
+      "snippet": "The October 17, 2026 snapshot of DeepSeek V4.1 Flash: every official benchmark delta, the RL-with-self-feedback recipe behind its agent gains, real API pricing with cache economics, and an honest guide to running 552B open weights locally."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4.1-Flash-1017 at main - Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/tree/main/inference",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DeepSeek V4.1 Flash 1017: Features and iWeaver Workflow",
+      "url": "https://www.iweaver.ai/blog/deepseek-v4-1-flash-1017/",
+      "snippet": "DeepSeek V4.1 Flash 1017 is a fresh update to DeepSeek V4.1 Flash. The update is aimed at practical work rather than a new model family: stronger reasoning, coding, agentic tasks, and visual benchmarks, with shorter outputs and faster task completion according to DeepSeek&#x27;s release notes and model card."
+    }
+  ]
+}

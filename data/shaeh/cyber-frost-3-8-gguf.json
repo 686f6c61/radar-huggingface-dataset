@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Shaeh/CYBER-FROST-3.8-GGUF",
+  "slug": "shaeh-cyber-frost-3-8-gguf",
+  "author": "Shaeh",
+  "url": "https://huggingface.co/Shaeh/CYBER-FROST-3.8-GGUF",
+  "created_at": "2026-10-25T01:38:28.000Z",
+  "updated_at": "2026-10-25T01:38:29.000Z",
+  "license": "qwen-community-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "qwen4exp",
+    "moe",
+    "vision",
+    "image-text-to-text",
+    "base_model:Blackfrost-AI/CYBER-FROST-3.8-BF16",
+    "base_model:quantized:Blackfrost-AI/CYBER-FROST-3.8-BF16",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 176943899520,
+  "parameters_human": "176.94B",
+  "storage_bytes": 800748138368,
+  "storage_human": "800.7 GB",
+  "base_model": "Blackfrost-AI/CYBER-FROST-3.8-BF16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Senpai Stream, nouvelle adresse en date du 23 octobre 2026",
+      "url": "https://www.funinformatique.com/blocage-senpai-stream/",
+      "snippet": "2 days ago · Senpai Stream diffuse des contenus soumis aux droits d’auteur sans autorisation officielle. Résultat : comme French …"
+    },
+    {
+      "title": "Senpai Stream : quelle est l'adresse au 23 octobre 2026",
+      "url": "https://webautop-blog.com/senpai-stream-nouvelle-adresse/",
+      "snippet": "Mar 4, 2026 · Senpai Stream, comme d’autres plateformes à la mode ces temps-ci, est un site web de streaming gratuit qui partage …"
+    },
+    {
+      "title": "Streaming VF et VOSTFR : films et séries | TheFrenchStream",
+      "url": "https://www.thefrenchstream.com/",
+      "snippet": "Découvrez des films, séries, animes et documentaires en streaming VF et VOSTFR : nouveautés, titres populaires et sélections …"
+    },
+    {
+      "title": "7 alternatives à Senpai Stream - FunInformatique",
+      "url": "https://www.funinformatique.com/alternative-senpai-stream/",
+      "snippet": "Oct 13, 2026 · Heureusement, le streaming gratuit ne manque pas de solutions. Voici 7 alternatives solides à Senpai Stream pour …"
+    },
+    {
+      "title": "Senpai Stream (@senpaistreamfr) / X",
+      "url": "https://x.com/SenpaiStreamFR",
+      "snippet": "Senpai Stream propose un service de streaming sans frais où vous pouvez visionner des animés, films et séries depuis tout appareil …"
+    }
+  ]
+}

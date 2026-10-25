@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Nizam-LLM-7B-i1-GGUF",
+  "slug": "mradermacher-nizam-llm-7b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Nizam-LLM-7B-i1-GGUF",
+  "created_at": "2026-10-25T07:51:54.000Z",
+  "updated_at": "2026-10-25T09:00:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "legal",
+    "saudi-arabia",
+    "labor-law",
+    "arabic",
+    "rag",
+    "citation",
+    "ar",
+    "base_model:muhammaduxair/Nizam-LLM-7B",
+    "base_model:quantized:muhammaduxair/Nizam-LLM-7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7000559616,
+  "parameters_human": "7.00B",
+  "storage_bytes": 80178977440,
+  "storage_human": "80.2 GB",
+  "base_model": "muhammaduxair/Nizam-LLM-7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

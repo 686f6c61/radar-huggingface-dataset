@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "yuvankk/30M-gpy",
+  "slug": "yuvankk-30m-gpy",
+  "author": "yuvankk",
+  "url": "https://huggingface.co/yuvankk/30M-gpy",
+  "created_at": "2026-10-25T07:45:00.000Z",
+  "updated_at": "2026-10-25T07:45:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30044544,
+  "parameters_human": "30.0M",
+  "storage_bytes": 120185720,
+  "storage_human": "120 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Please r*p* me! Anime All Episodes - Archive.org",
+      "url": "https://archive.org/details/please_rp_me_all_episodes",
+      "snippet": "Oct 14, 2022 · Anime All Episodes. Grass is a plant with narrow leaves growing from the base. A common kind of grass is used to …Read more"
+    },
+    {
+      "title": "My Wife's Sister 5: Release Date, Trailer & Cast | Moviefone",
+      "url": "https://www.moviefone.com/movie/5/8BNtpzmBfQLstqTG7OlbW6/main/",
+      "snippet": "After some time, Yeong-chan is lost because of his wife, Mi-sook, who has an affair with her son's teacher abroad, and Mi-young …"
+    },
+    {
+      "title": "A Wish of My Sister (manga) - Anime News Network",
+      "url": "https://www.animenewsnetwork.com/encyclopedia/manga.php?id=9882",
+      "snippet": "Aug 22, 2026 · Plot Summary: A Wish of My Sister is an Adult based Manga which focuses around Keisuke who starts off, just …"
+    },
+    {
+      "title": "Zalis116's Anime [Warning! Absolutely NOT for Children!] - Anime …",
+      "url": "https://www.animenewsnetwork.com/MyAnime/?user=Zalis116&categ=18",
+      "snippet": "Aug 22, 2026 · ACL is very simple and straightforward, with a completely unsurprising surprise ending. Reclusive, creepy teacher …"
+    },
+    {
+      "title": "The Best AI Porn Sites in 2026: I Tested Them All So You Don’t Have To",
+      "url": "https://www.straight.com/advisor/ai-porn/",
+      "snippet": "Aug 5, 2026 · I spent three weeks testing every major AI porn site and girlfriend app to find the ones that don’t suck. Here’s what …"
+    }
+  ]
+}

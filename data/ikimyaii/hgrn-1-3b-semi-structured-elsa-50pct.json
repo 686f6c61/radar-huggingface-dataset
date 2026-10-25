@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ikimyaii/HGRN-1.3B-semi-structured-ELSA-50pct",
+  "slug": "ikimyaii-hgrn-1-3b-semi-structured-elsa-50pct",
+  "author": "ikimyaii",
+  "url": "https://huggingface.co/ikimyaii/HGRN-1.3B-semi-structured-ELSA-50pct",
+  "created_at": "2026-10-25T01:40:31.000Z",
+  "updated_at": "2026-10-25T01:42:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hgrn",
+    "pruning",
+    "sparsity",
+    "semi-structured",
+    "admm",
+    "elsa",
+    "arxiv:2510.01650",
+    "base_model:fla-hub/hgrn-1.3B-100B",
+    "base_model:finetune:fla-hub/hgrn-1.3B-100B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1364396032,
+  "parameters_human": "1.36B",
+  "storage_bytes": 5458104315,
+  "storage_human": "5.5 GB",
+  "base_model": "fla-hub/hgrn-1.3B-100B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yor X Loid Bath in same room - BiliBili",
+      "url": "https://www.bilibili.tv/en/video/4789858601927680",
+      "snippet": "Jan 10, 2024 · FOLLOW my channel please, Southeast Asia's leading anime, comics, and games (ACG) community where people …"
+    },
+    {
+      "title": "Does Loid and Yor have s3x? : r/SpyxFamily - Reddit",
+      "url": "https://www.reddit.com/r/SpyxFamily/comments/1ddvy79/does_loid_and_yor_have_s3x/",
+      "snippet": "What we've seen is that Yor starts kicking and/ or punching if Loid initiates any level of physical intimacy. And Loid is perfectly happy …"
+    },
+    {
+      "title": "Loid x Yor by leozurcXXX on Newgrounds",
+      "url": "https://www.newgrounds.com/art/view/leozurcxxx/loid-x-yor",
+      "snippet": "Nov 29, 2023 · Do you want to see it in high resolution? do you like my illustrations? So i invite you to support me on patreon, your …"
+    },
+    {
+      "title": "Yor x Loid (SpyXFamily) by MiraiHikariArt on DeviantArt",
+      "url": "https://www.deviantart.com/miraihikariart/art/Yor-x-Loid-SpyXFamily-919833705",
+      "snippet": "Jun 19, 2022 · I wanted to do a super spicy sexy variation for the Yor piece so here's a little preview of the more tamer version I've …"
+    },
+    {
+      "title": "Loid and Yor Sexuality in Spy x Family - Fiction Horizon",
+      "url": "https://fictionhorizon.com/loid-and-yor-sexuality-in-spy-x-family/",
+      "snippet": "Oct 10, 2026 · Loid is a bit asexual because he doesn’t seem to show any sexual attraction to anyone in the anime because he …"
+    }
+  ]
+}

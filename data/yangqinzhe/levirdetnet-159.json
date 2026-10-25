@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "yangqinzhe/LEVIRDetNet-159",
+  "slug": "yangqinzhe-levirdetnet-159",
+  "author": "yangqinzhe",
+  "url": "https://huggingface.co/yangqinzhe/LEVIRDetNet-159",
+  "created_at": "2026-10-25T02:10:55.000Z",
+  "updated_at": "2026-10-25T03:12:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "remote-sensing",
+    "mmdetection",
+    "dinov3",
+    "deimv2",
+    "hierarchical-detection",
+    "object-detection",
+    "dataset:yangqinzhe/LEVIRDet-159-Dataset",
+    "arxiv:2606.25312",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1704129664,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yangqinzhe/LEVIRDet-159-Dataset at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/yangqinzhe/LEVIRDet-159-Dataset/tree/main",
+      "snippet": "xet Community main LEVIRDet-159-Dataset 154 GB Ctrl+K Ctrl+K 1 contributor History:7 commits yangqinzhe Link LEVIRDetNet model weights and Docker mirror 912f6ec verifiedabout 24 hours ago Lightweight releaseUpload 03_lite_jpeg95 public159_20261003 archives9 days ago Original-image releaseUpload 02_release public159_20261003 archives9 days ago ..."
+    },
+    {
+      "title": "GitHub - QinzheYang/LEVIRDet-release: This is the pytorch implement of ...",
+      "url": "https://github.com/QinzheYang/LEVIRDet-release",
+      "snippet": "LEVIRDet-159 reaches the largest scale across 18 dataset dimensions, while LEVIRDetNet achieves the best average primary AP on 9 external benchmarks without target-domain training or fine-tuning. Under stringent evaluation settings, LEVIRDetNet demonstrates strong cross-domain generalization. Even without target-domain training or fine-tuning, it achieves state-of-the-art detection performance ..."
+    },
+    {
+      "title": "yangqinzhe/LEVIRDetNet at main - Hugging Face",
+      "url": "https://huggingface.co/yangqinzhe/LEVIRDetNet/tree/main",
+      "snippet": "yangqinzhe / LEVIRDetNet Like 0 Object Detection PyTorch yangqinzhe/LEVIRDet-159-Dataset remote-sensing mmdetection dinov3 deimv2 hierarchical-detection docker Model card FilesFiles and versions xet Community Copy to bucket new main LEVIRDetNet 14.4 GB Ctrl+K Ctrl+K 1 contributor History:6 commits yangqinzhe Add download guide, pinned source ..."
+    },
+    {
+      "title": "LEVIRDet - Research by LEVIR Lab",
+      "url": "https://qinzheyang.github.io/LEVIRDet/",
+      "snippet": "AI Computer Vision Research LEVIRDet: A Million-Scale 159-Category Dataset and Foundation Model for Universal Remote Sensing Object Detection LEVIRDet-159 is the largest and most comprehensive remote sensing object detection dataset to date, with 159 categories, ~2.56 million bounding boxes, and ~700k fine-grained annotations under a multi-level taxonomy. LEVIRDetNet is a universal detector ..."
+    },
+    {
+      "title": "[2606.25312] LEVIRDet: A Million-Scale 159-Category Dataset and ...",
+      "url": "https://arxiv.org/abs/2606.25312",
+      "snippet": "Abstract page for arXiv paper 2606.25312: LEVIRDet: A Million-Scale 159-Category Dataset and Foundation Model for Universal Remote Sensing Object Detection"
+    }
+  ]
+}

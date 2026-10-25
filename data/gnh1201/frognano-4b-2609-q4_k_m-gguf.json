@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "gnh1201/FrogNano-4B-2609-Q4_K_M-GGUF",
+  "slug": "gnh1201-frognano-4b-2609-q4_k_m-gguf",
+  "author": "gnh1201",
+  "url": "https://huggingface.co/gnh1201/FrogNano-4B-2609-Q4_K_M-GGUF",
+  "created_at": "2026-10-25T07:44:35.000Z",
+  "updated_at": "2026-10-25T07:44:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "base_model:microsoft/FrogNano-4B-2609",
+    "base_model:quantized:microsoft/FrogNano-4B-2609",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 2783446368,
+  "storage_human": "2.8 GB",
+  "base_model": "microsoft/FrogNano-4B-2609",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

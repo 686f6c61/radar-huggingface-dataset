@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Retro99/parrot-tts-models",
+  "slug": "retro99-parrot-tts-models",
+  "author": "Retro99",
+  "url": "https://huggingface.co/Retro99/parrot-tts-models",
+  "created_at": "2026-10-25T07:21:13.000Z",
+  "updated_at": "2026-10-25T07:59:50.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 145744412,
+  "storage_human": "146 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Remover conteúdo sexual pessoal da Pesquisa Google",
+      "url": "https://support.google.com/websearch/answer/16305143?hl=pt-BR",
+      "snippet": "Se você encontrou conteúdo sexual associado a você no Google e quer que ele seja removido, estamos aqui para ajudar. Não …"
+    },
+    {
+      "title": "Defamation Complaint Requirements - YouTube Help",
+      "url": "https://support.google.com/youtube/answer/6154216?hl=en",
+      "snippet": "The easiest way to file a complaint is to use our defamation webform. YouTube will only consider legal complaints where we've been …"
+    },
+    {
+      "title": "MISHELL`S VINTAGE PORN. | Page 14 | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/mishell-s-vintage-porn.417715/page-14",
+      "snippet": "Jul 1, 2016 · Hello, You can now get verified on forum. The way it's gonna work is that you can send me a PM with a verification …"
+    },
+    {
+      "title": "How do I save videos from video page to my computer?",
+      "url": "https://forum.xnxx.com/threads/how-do-i-save-videos-from-video-page-to-my-computer.405618/",
+      "snippet": "Feb 26, 2016 · The sister site X-Videos has a download button for downloading videos. You do need to sign up for a membership to …"
+    },
+    {
+      "title": "Nudity & Sexual Content Policy - YouTube Help",
+      "url": "https://support.google.com/youtube/answer/2802002?hl=en",
+      "snippet": "Videos containing fetish content will be removed or age-restricted. In most cases, violent, graphic, or humiliating fetishes are not …"
+    }
+  ]
+}

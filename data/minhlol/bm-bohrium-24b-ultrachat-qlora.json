@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "minhlol/Bm-bohrium-24B-UltraChat-QLoRA",
+  "slug": "minhlol-bm-bohrium-24b-ultrachat-qlora",
+  "author": "minhlol",
+  "url": "https://huggingface.co/minhlol/Bm-bohrium-24B-UltraChat-QLoRA",
+  "created_at": "2026-10-25T01:51:28.000Z",
+  "updated_at": "2026-10-25T06:07:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qlora",
+    "vision-language",
+    "experimental",
+    "en",
+    "vi",
+    "base_model:minhlol/Bm-bohrium-7B-continued-QLoRA",
+    "base_model:adapter:minhlol/Bm-bohrium-7B-continued-QLoRA",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23474344291,
+  "storage_human": "23.5 GB",
+  "base_model": "minhlol/Bm-bohrium-7B-continued-QLoRA",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Voyage Florence - Partir en vacances à Florence - Routard.com",
+      "url": "https://www.routard.com/fr/guide/europe/italie/toscane/florence",
+      "snippet": "Préparez votre voyage à Florence : incontournables et itinéraires, infos culturelles et pratiques, idées voyage, photos et forum."
+    },
+    {
+      "title": "Visiter Florence : 10 incontournables à faire et voir (Italie)",
+      "url": "https://generationvoyage.fr/visiter-florence-faire-voir/",
+      "snippet": "May 2, 2025 · Visitez Florence et découvrez les incontournables à visiter et les activités à faire pour profiter pleinement de cette ville …"
+    },
+    {
+      "title": "Voyage à Florence et circuits sur mesure (Italie) | Evaneos",
+      "url": "https://www.evaneos.fr/italie/voyage/etape/7190-florence/",
+      "snippet": "Jul 30, 2026 · Entre musées, églises, jardins et bonnes tables, un séjour à Florence est la promesse d'un voyage dans le temps. Et …"
+    },
+    {
+      "title": "Voyage à Florence en 2026 | Hôtels et vols à petit prix",
+      "url": "https://www.voyagespirates.fr/destinations/italie/florence",
+      "snippet": "Profitez de nos conseils pour organiser votre voyage à Florence, en Toscane. Trouvez votre vol et votre hôtel à Florence dans nos …"
+    },
+    {
+      "title": "Voyage à Florence 2026 : le guide complet - VOYAGES VOYAGES",
+      "url": "https://pays6vallees.com/voyage-florence/",
+      "snippet": "Apr 24, 2026 · Que voir, où loger, quand partir, budget et excursions en Toscane : le guide complet pour préparer votre voyage à …"
+    }
+  ]
+}

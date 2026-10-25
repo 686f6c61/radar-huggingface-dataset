@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "IkerAzurmendi/act-pick-v3-1-2-pieces-12000",
+  "slug": "ikerazurmendi-act-pick-v3-1-2-pieces-12000",
+  "author": "IkerAzurmendi",
+  "url": "https://huggingface.co/IkerAzurmendi/act-pick-v3-1-2-pieces-12000",
+  "created_at": "2026-10-25T07:38:53.000Z",
+  "updated_at": "2026-10-25T07:38:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "so101",
+    "pick",
+    "robotics",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51658374,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206666320,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fiverr | Freelance services marketplace | Find top global talent",
+      "url": "https://www.fiverr.com/?msockid=0f327594444d60761ad4626945ac61d5",
+      "snippet": "Automate your business with Fiverr's AI experts Whether it's your booking system or your leads management find experts on Fiverr …"
+    },
+    {
+      "title": "Login to Fiverr",
+      "url": "https://www.fiverr.com/login?msockid=0f327594444d60761ad4626945ac61d5",
+      "snippet": "Fiverr is the world's largest freelance services marketplace for lean entrepreneurs to focus on growth & create a successful business …"
+    },
+    {
+      "title": "Fiverr | Place de marché de services freelances | Trouvez les …",
+      "url": "https://fr.fiverr.com/",
+      "snippet": "Une place de marché, des millions de services professionnels. Développez votre business sur Fiverr."
+    },
+    {
+      "title": "Fiverr.com",
+      "url": "https://pages.fiverr.com/",
+      "snippet": "Home Go to Fiverr.com"
+    },
+    {
+      "title": "Connectez-vous à Fiverr",
+      "url": "https://fr.fiverr.com/login",
+      "snippet": "Fiverr est le plus grand marketplace de prestations de service freelance pour les petits entrepreneurs qui souhaitent faire grandir ou …"
+    }
+  ]
+}

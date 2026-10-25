@@ -5,7 +5,7 @@
   "author": "wq2012",
   "url": "https://huggingface.co/wq2012/univ_ecapa_tdnn_small_ge2e",
   "created_at": "2026-10-15T01:37:54.000Z",
-  "updated_at": "2026-10-22T02:50:31.000Z",
+  "updated_at": "2026-10-25T04:20:03.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -36,12 +36,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 100,
+  "downloads_30d": 106,
   "trending_score": 0,
   "parameters": 1684416,
   "parameters_human": "1.7M",
-  "storage_bytes": 22220841,
-  "storage_human": "22 MB",
+  "storage_bytes": 44458138,
+  "storage_human": "44 MB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "xzhexiao/ActWorld",
+  "slug": "xzhexiao-actworld",
+  "author": "xzhexiao",
+  "url": "https://huggingface.co/xzhexiao/ActWorld",
+  "created_at": "2026-10-25T07:47:54.000Z",
+  "updated_at": "2026-10-25T08:08:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "world-model",
+    "interactive-video-generation",
+    "video-generation",
+    "helios",
+    "image-to-video",
+    "arxiv:2606.17730",
+    "base_model:BestWishYsh/Helios-Base",
+    "base_model:finetune:BestWishYsh/Helios-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 123492515764,
+  "storage_human": "123.5 GB",
+  "base_model": "BestWishYsh/Helios-Base",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2606.17730] ActWorld: From Explorable to Interactive World Model ...",
+      "url": "https://arxiv.org/abs/2606.17730",
+      "snippet": "View a PDF of the paper titled ... Xiong and 13 other authors View PDF · Abstract:Interactive world models aim to simulate environment dynamics under real-time user actions...."
+    },
+    {
+      "title": "ActWorld: From Explorable to Interactive World Model via Action-Aware ...",
+      "url": "https://arxiv.org/html/2606.17730",
+      "snippet": "The resulting worlds are visually explorable but not truly actionable. In this work, we present ActWorld, an interactive world model that extends prior navigation-centric generators to support mid-rollout object interaction within a chunk-autoregressive framework."
+    },
+    {
+      "title": "Zhexiao Xiong +1-314-319-2407 | x.zhexiao@wustl.edu | ï Linkedin ...",
+      "url": "https://steven-xiong.github.io/data/Zhexiao_Xiong_Resume.pdf",
+      "snippet": "◦Proposed ActWorld, a real-time chunk-autoregressive interactive world model that unifies flexible navigation and"
+    },
+    {
+      "title": "World model (artificial intelligence) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/World_model_(artificial_intelligence)",
+      "snippet": "A world model in artificial intelligence is a machine learning system that builds an internal representation of an environment. The model predicts how that environment changes over time in response to actions. Researchers design world models to help agents plan, reason, and act without constant ..."
+    },
+    {
+      "title": "Kairos: A Regret-Aware Native World-Action Model Stack for Physical AI",
+      "url": "https://arxiv.org/html/2606.16533v3",
+      "snippet": "Content selection saved. Describe the issue below: · 8mm \\setlogospacing0mm \\setsjtublue\\settitlerulethickness3pt \\abstractboxon\\setabstractframecolorgray \\setabstractbgcolorgray!10 \\setlogotolineshift0mm \\settoprulethickness2.5pt \\setbottomrulethickness1.5pt \\checkdata[Code]https://githu..."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Liberation-Qwen3-8B-i1-GGUF",
+  "slug": "mradermacher-liberation-qwen3-8b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Liberation-Qwen3-8B-i1-GGUF",
+  "created_at": "2026-10-25T07:19:03.000Z",
+  "updated_at": "2026-10-25T08:26:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "uncensored",
+    "abliteration",
+    "instruction-tuned",
+    "en",
+    "base_model:TeskesLab/Liberation-Qwen3-8B",
+    "base_model:quantized:TeskesLab/Liberation-Qwen3-8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 43645931584,
+  "storage_human": "43.6 GB",
+  "base_model": "TeskesLab/Liberation-Qwen3-8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeviantArt - The Largest Online Art Gallery and Community",
+      "url": "https://www.deviantart.com/",
+      "snippet": "DeviantArt is where art and community thrive. Explore over 650 million pieces of art while connecting to fellow artists and art …"
+    },
+    {
+      "title": "the-killer-wc on DeviantArt",
+      "url": "https://www.deviantart.com/the-killer-wc",
+      "snippet": "KORRA VS TIGRESS 2D only. by the-killer-wc, film"
+    },
+    {
+      "title": "Iron117Prime on DeviantArt",
+      "url": "https://www.deviantart.com/iron117prime",
+      "snippet": "Iron117Prime is an artist on DeviantArt. · Artworks: 73 · Followers: 1177 · Likes: 2376"
+    },
+    {
+      "title": "CaseyLJones on DeviantArt",
+      "url": "https://www.deviantart.com/caseyljones",
+      "snippet": "CaseyLJones is an artist on DeviantArt. · Artworks: 6168 · Followers: 8369 · Likes: 42974"
+    },
+    {
+      "title": "Rex-equinox on DeviantArt",
+      "url": "https://www.deviantart.com/rex-equinox",
+      "snippet": "Sep 28, 2026 · From today, I will be opening pre-orders for the Halloween sale. I'm putting it on a little earlier this year as I have a …"
+    }
+  ]
+}

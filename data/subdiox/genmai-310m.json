@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "subdiox/genmai-310M",
+  "slug": "subdiox-genmai-310m",
+  "author": "subdiox",
+  "url": "https://huggingface.co/subdiox/genmai-310M",
+  "created_at": "2026-10-20T06:32:57.000Z",
+  "updated_at": "2026-10-25T02:18:50.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "japanese",
+    "input-method",
+    "kana-kanji-conversion",
+    "text-generation",
+    "ja",
+    "base_model:Miwa-Keita/zenz-v2.5-medium",
+    "base_model:finetune:Miwa-Keita/zenz-v2.5-medium",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 68,
+  "trending_score": 0,
+  "parameters": 309504000,
+  "parameters_human": "309.5M",
+  "storage_bytes": 1520970229,
+  "storage_human": "1.5 GB",
+  "base_model": "Miwa-Keita/zenz-v2.5-medium",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "College Porn - amateur college sex videos!",
+      "url": "https://dormtapes.com/",
+      "snippet": "Welcome to Dorm Tapes! The place where freshman and sophomore students share their campus sex videos, secret sorority sex …"
+    },
+    {
+      "title": "College Sex Tapes Category - FuckedHomemade.com",
+      "url": "https://www.fuckedhomemade.com/category/College",
+      "snippet": "Free College porno videos at FuckedHomemade.com - best home porn website. Welcome!"
+    },
+    {
+      "title": "College Amateur Videos - Dorm Tapes",
+      "url": "https://dormtapes.com/browse?t=amateur",
+      "snippet": "College Amateur Videos Watch these college sorority girls go nuts on a whole bag of sophomore dicks. They record each other, …"
+    },
+    {
+      "title": "Free Porn Videos & Amateur Porn | Fleshed",
+      "url": "https://fleshed.com/",
+      "snippet": "Fleshed has the best collection of amateur content, college sex tapes, real sex tapes and more. Stream real amateur content and …"
+    },
+    {
+      "title": "College Nudes - Porn Photos & Videos - EroMe",
+      "url": "https://www.erome.com/search?q=college+nudes",
+      "snippet": "College Nudes photos & videos. EroMe is the best place to share your erotic pics and porn videos. Every day, thousands of people …"
+    }
+  ]
+}

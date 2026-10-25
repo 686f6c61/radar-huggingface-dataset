@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "DuoNeural/FC-CDM-Poincare-7L-108M",
+  "slug": "duoneural-fc-cdm-poincare-7l-108m",
+  "author": "DuoNeural",
+  "url": "https://huggingface.co/DuoNeural/FC-CDM-Poincare-7L-108M",
+  "created_at": "2026-10-25T08:15:32.000Z",
+  "updated_at": "2026-10-25T08:38:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "cdm_moe_poincare_fc",
+    "crystal-telepathy",
+    "cdm",
+    "function-calling",
+    "hyperbolic-geometry",
+    "poincare",
+    "tool-use",
+    "edge-ai",
+    "duoneural",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134438552,
+  "parameters_human": "134.4M",
+  "storage_bytes": 965506375,
+  "storage_human": "966 MB",
+  "base_model": "Salesforce/xlam-function-calling-60k",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DuoNeural/FC-CDM-Poincare-7L-108M · Hugging Face",
+      "url": "https://huggingface.co/DuoNeural/FC-CDM-Poincare-7L-108M",
+      "snippet": "DuoNeural / FC-CDM-Poincare-7L-108M Like 0 Text Generation Transformers English cdm_moe_poincare_fc crystal-telepathy cdm function-calling hyperbolic-geometry poincare tool-use edge-ai duoneural License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "DuoNeural (DuoNeural) - Hugging Face",
+      "url": "https://huggingface.co/DuoNeural",
+      "snippet": "All of them. Seriously. Bleeding edge research (Novel research paper preprints on Zenodo via our website) Unorthodox methodologies. The gold standard of AI-Human Collaboration and what&#x27;s possible."
+    },
+    {
+      "title": "DuoNeural - Independent AI Research Lab",
+      "url": "https://duoneural.com/index.html",
+      "snippet": "DuoNeural publishes mechanistic interpretability, RLHF suppression, recurrent world-modeling, CTM, small-model deployment, datasets, and research artifacts with DOI-backed records."
+    },
+    {
+      "title": "DuoNeural - GitHub",
+      "url": "https://github.com/DuoNeural",
+      "snippet": "We are DuoNeural and we research, develop, train, and deploy AI models. We love the HF community. We <3 open models. We build AI *with AI* as collab partners. - DuoNeural"
+    },
+    {
+      "title": "DuoNeural - Repositories - GitHub",
+      "url": "https://github.com/DuoNeural?tab=repositories",
+      "snippet": "Worlds first Symbiotic AI lab, novel research and experiments in AI, physics, quantum, dynamical systems, cognition, general science. - DuoNeural"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Tdhdcd/gigaam-v3-e2e-ctc-int8-onnx",
+  "slug": "tdhdcd-gigaam-v3-e2e-ctc-int8-onnx",
+  "author": "Tdhdcd",
+  "url": "https://huggingface.co/Tdhdcd/gigaam-v3-e2e-ctc-int8-onnx",
+  "created_at": "2026-10-23T09:33:07.000Z",
+  "updated_at": "2026-10-25T03:02:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "onnx",
+    "gigaam",
+    "ctc",
+    "automatic-speech-recognition",
+    "ru",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1001017043,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "studio - YouTube",
+      "url": "https://www.youtube.com/studio/dashboard",
+      "snippet": "studio @studio-mo9dz • 28.2K subscribers • 2 videos More about this channel ...more More about this channel ...more ...more"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/youyoutubestudio",
+      "snippet": "Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to …"
+    },
+    {
+      "title": "YouTube Studio",
+      "url": "https://studio.youtube.com/reauth?app...",
+      "snippet": "Please wait."
+    },
+    {
+      "title": "YouTube Studio",
+      "url": "https://studio.youtube.com/reauth?approve_browser_access=1&approve_browser_access=1",
+      "snippet": "Please wait."
+    },
+    {
+      "title": "YouTube Studio - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.creator&hl=en-US",
+      "snippet": "The official YouTube Studio app is the best way for you to understand and connect with the people in your community using the …"
+    }
+  ]
+}

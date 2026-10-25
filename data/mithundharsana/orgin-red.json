@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "mithundharsana/orgin-red",
+  "slug": "mithundharsana-orgin-red",
+  "author": "mithundharsana",
+  "url": "https://huggingface.co/mithundharsana/orgin-red",
+  "created_at": "2026-10-25T02:18:40.000Z",
+  "updated_at": "2026-10-25T02:18:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/",
+      "snippet": "We couldn&#x27;t load your remembered accounts. You can still log in below"
+    },
+    {
+      "title": "Mythos powerful model of Ai everyone has to know - Medium",
+      "url": "https://medium.com/@svvvreddy/mythos-powerful-model-of-ai-everyone-has-to-know-by-anthropics-1016b99d2687",
+      "snippet": "Mythos powerful model of Ai everyone has to know ___Anthropic&#x27;s Deep concerns Alarming for personal privacy and security from Ai… AI breaks the code we have been using for the last 25 years …"
+    },
+    {
+      "title": "AI Model Detector — Which AI Made This Image? | PromptShotAI",
+      "url": "https://promptshotai.com/tools/ai-model-detector",
+      "snippet": "Free AI model detector. Upload any image and find out which AI generated it — Midjourney, Flux, SDXL, DALL-E, or Ideogram — with a confidence score and visual tells."
+    },
+    {
+      "title": "RedRhino — AI Modeling Assistant for Rhino 3D | Food4Rhino",
+      "url": "https://www.food4rhino.com/en/app/redrhino-ai-modeling-assistant-rhino-3d?lang=en",
+      "snippet": "AI-powered Rhino 3D modeling assistant. Describe your design in natural language and RedRhino executes Rhino commands automatically."
+    },
+    {
+      "title": "Anthropic&#x27;s Mythos AI Model Reportedly Breached NSA Classified Systems ...",
+      "url": "https://cybersecuritynews.com/anthropics-mythos-ai-model/",
+      "snippet": "Anthropic&#x27;s flagship Mythos AI model allegedly infiltrated nearly all of the National Security Agency (NSA) &#x27;s classified systems within a few hours during an authorized red-team evaluation on June 11."
+    }
+  ]
+}

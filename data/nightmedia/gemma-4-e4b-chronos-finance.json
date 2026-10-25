@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "nightmedia/gemma-4-E4B-Chronos-Finance",
+  "slug": "nightmedia-gemma-4-e4b-chronos-finance",
+  "author": "nightmedia",
+  "url": "https://huggingface.co/nightmedia/gemma-4-E4B-Chronos-Finance",
+  "created_at": "2026-10-25T02:08:48.000Z",
+  "updated_at": "2026-10-25T03:22:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "nightmedia",
+    "gemma",
+    "bf16",
+    "google",
+    "merge",
+    "Deckard(qx)",
+    "mergekit",
+    "any-to-any",
+    "base_model:naazimsnh02/FinanceGemma-E4B",
+    "base_model:merge:naazimsnh02/FinanceGemma-E4B",
+    "base_model:nightmedia/gemma-4-E4B-Chronos",
+    "base_model:merge:nightmedia/gemma-4-E4B-Chronos",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7996156490,
+  "parameters_human": "8.00B",
+  "storage_bytes": 16024762910,
+  "storage_human": "16.0 GB",
+  "base_model": "nightmedia/gemma-4-E4B-Chronos, naazimsnh02/FinanceGemma-E4B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SYNA World | Central Cee Clothing Brand Store",
+      "url": "https://synaworldy.com/",
+      "snippet": "SYNA World is more than a streetwear label — it’s the cultural imprint of UK rap icon Central Cee. Launched in October 2022, the …Read more"
+    },
+    {
+      "title": "Syna World® Clothing by Central Cee Official Brand",
+      "url": "https://synaworld.org/syna-world-clothing/",
+      "snippet": "More than only a fashion label, Syna World serves as a visual extension of Central Cee’s tune and street roots. Through formidable …"
+    },
+    {
+      "title": "Syna World® – Central Cee Streetwear | Up to 35% Off",
+      "url": "https://ssynaworld.com/",
+      "snippet": "Syna World is Central Cee's own streetwear brand — synaworld Clothing, hoodies, tees and hats for everyday street style. Up to …"
+    },
+    {
+      "title": "Syna World | Syna Clothing | Syna Store",
+      "url": "https://www.syna.store/",
+      "snippet": "Syna will reopen when the countdown gets to zero."
+    },
+    {
+      "title": "Shop Syna World | Central Cee Streetwear",
+      "url": "https://ssynaworld.com/shop/",
+      "snippet": "Browse the full Syna World shop — tracksuits, hoodies, tees, shorts, hats and more from Central Cee's streetwear label. Up to 35% …"
+    }
+  ]
+}

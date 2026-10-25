@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "id": "AI999X/thermofluids-ai999x",
+  "slug": "ai999x-thermofluids-ai999x",
+  "author": "AI999X",
+  "url": "https://huggingface.co/AI999X/thermofluids-ai999x",
+  "created_at": "2026-10-25T01:04:08.000Z",
+  "updated_at": "2026-10-25T02:33:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "question-answering",
+  "library": "thermofluids-ai999x",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "thermofluids-ai999x",
+    "onnx",
+    "safetensors",
+    "thermofluids",
+    "fluid-mechanics",
+    "heat-transfer",
+    "thermodynamics",
+    "psychrometrics",
+    "combustion",
+    "pipe-flow",
+    "fluid-statics-and-dynamics",
+    "boundary-layers",
+    "aerodynamics",
+    "heat-conduction",
+    "convection-and-radiation",
+    "heat-exchangers",
+    "thermodynamic-cycles",
+    "psychrometrics-and-combustion",
+    "question-answering",
+    "token-classification",
+    "text-classification",
+    "sentence-similarity",
+    "feature-extraction",
+    "thermofluids-solver",
+    "step-by-step-solutions",
+    "homework-help",
+    "offline",
+    "zero-hallucination",
+    "python",
+    "ai999x",
+    "en",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4715520,
+  "parameters_human": "4.7M",
+  "storage_bytes": 43049099,
+  "storage_human": "43 MB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "thermofluids question answering",
+      "dataset": "Golden answers (1010 documented questions, Windows + Linux Python 3.10-3.14)",
+      "metric": "identical on every platform",
+      "value": 1
+    }
+  ],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/?gl=FR&hl=fr",
+      "snippet": "Profitez des vidéos et de la musique que vous aimez, mettez en ligne des contenus originaux, et partagez-les avec vos amis, vos …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube - Google Accounts",
+      "url": "https://accounts.google.com/InteractiveLogin?service=youtube",
+      "snippet": "Share your videos with friends, family, and the world."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/@________________.",
+      "snippet": "Explore and enjoy a wide range of videos, music, and more on YouTube."
+    }
+  ]
+}

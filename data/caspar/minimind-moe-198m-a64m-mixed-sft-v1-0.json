@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "caspar/MiniMind-MoE-198M-A64M-Mixed-SFT-v1.0",
+  "slug": "caspar-minimind-moe-198m-a64m-mixed-sft-v1-0",
+  "author": "caspar",
+  "url": "https://huggingface.co/caspar/MiniMind-MoE-198M-A64M-Mixed-SFT-v1.0",
+  "created_at": "2026-10-25T01:00:00.000Z",
+  "updated_at": "2026-10-25T01:00:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "minimind",
+    "text-generation",
+    "moe",
+    "conversational",
+    "experimental",
+    "custom_code",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:HuggingFaceH4/ultrachat_200k",
+    "dataset:HuggingFaceTB/smoltalk",
+    "dataset:openai/gsm8k",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 198416640,
+  "parameters_human": "198.4M",
+  "storage_bytes": 396852784,
+  "storage_human": "397 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

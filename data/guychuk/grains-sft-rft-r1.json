@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "guychuk/grains-sft-rft-r1",
+  "slug": "guychuk-grains-sft-rft-r1",
+  "author": "guychuk",
+  "url": "https://huggingface.co/guychuk/grains-sft-rft-r1",
+  "created_at": "2026-10-25T08:04:54.000Z",
+  "updated_at": "2026-10-25T08:28:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:ornith-ai/Ornith-1.5-35B-A3B",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:ornith-ai/Ornith-1.5-35B-A3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3787764588,
+  "storage_human": "3.8 GB",
+  "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "guychuk (guynachshon) - Hugging Face",
+      "url": "https://huggingface.co/guychuk/datasets",
+      "snippet": "AI & ML interests ... Recent Activity published a model 12 days ago ... liked a model 15 days ago ... updated a dataset 2 months ago"
+    },
+    {
+      "title": "GUI-R1 - academy.dair.ai",
+      "url": "https://academy.dair.ai/papers/gui-r1",
+      "snippet": "Reinforcement Fine-Tuning (RFT) over Supervised Fine-Tuning (SFT) - GUI-R1 utilizes RFT inspired by methods such as DeepSeek-R1, significantly reducing training data requirements."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Microsoft adds RFT & SFT support in Azure AI Foundry for smarter model ...",
+      "url": "https://windowsreport.com/microsoft-adds-rft-sft-support-in-azure-ai-foundry-for-smarter-model-fine-tuning/",
+      "snippet": "Microsoft expands Azure AI Foundry with RFT, SFT, and new model support for better control, reasoning, and fine-tuning performance."
+    },
+    {
+      "title": "GG-R1: A Fine-Grained RFT Approach for GUI Grounding",
+      "url": "https://xplorestaging.ieee.org/document/11390507",
+      "snippet": "Inspired by DeepSeek-R1, we introduce a rule-based reinforcement finetuning methodology for GUI grounding tasks. Specifically, we employ the GRPO algorithm with rule-based rewards (incorporating fine-grained rewards across format, action types, coordinates, length, and difficulty dimensions) and utilize only 152 high-quality samples to fine ..."
+    }
+  ]
+}

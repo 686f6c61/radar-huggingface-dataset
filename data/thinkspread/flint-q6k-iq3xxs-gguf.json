@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "thinkspread/Flint-Q6K-IQ3XXS-GGUF",
+  "slug": "thinkspread-flint-q6k-iq3xxs-gguf",
+  "author": "thinkspread",
+  "url": "https://huggingface.co/thinkspread/Flint-Q6K-IQ3XXS-GGUF",
+  "created_at": "2026-10-24T05:47:20.000Z",
+  "updated_at": "2026-10-25T02:11:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "flint",
+    "moe",
+    "apple-silicon",
+    "tempo9",
+    "text-generation",
+    "base_model:RecursiveSI/flint",
+    "base_model:quantized:RecursiveSI/flint",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": 39785287456,
+  "parameters_human": "39.79B",
+  "storage_bytes": 18034525472,
+  "storage_human": "18.0 GB",
+  "base_model": "RecursiveSI/flint, bartowski/RecursiveSI_flint-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sudirman 3D models - Sketchfab",
+      "url": "https://sketchfab.com/tags/sudirman",
+      "snippet": "Sudirman 3D models ready to view and download for free."
+    },
+    {
+      "title": "Patung Sudirman 2 - 3D model by Harissalam - Sketchfab",
+      "url": "https://sketchfab.com/3d-models/patung-sudirman-2-56f0bcb8ca404126aa2cbc3daa3d67bd",
+      "snippet": "May 26, 2019 · Learn how to fix it here. Model ini merupakan bagian yang hilang dari model Patung Sudirman 1 https://skfb.ly/6KL7x …"
+    },
+    {
+      "title": "Jenderal Sudirman 3D model - CGTrader",
+      "url": "https://www.cgtrader.com/3d-models/exterior/historic-exterior/jenderal-sudirman",
+      "snippet": "The statue of General Sudirman is one of the statues located in Jakarta precisely in the Upper Dukuh area, front of the BNI Building, …"
+    },
+    {
+      "title": "Patung Sudirman 1 - 3D model by Harissalam - Sketchfab",
+      "url": "https://sketchfab.com/3d-models/patung-sudirman-1-5f972ed8d28d4cb29b0c0e4db226a567",
+      "snippet": "May 26, 2019 · Model belum sempurna, untuk melihat bagian yang hilang (bagian atas) dapat dilihat pada link https://skfb.ly/6KL7A …"
+    },
+    {
+      "title": "Jendral Sudirman Statue - 3D model by Senin Ceria ... - Sketchfab",
+      "url": "https://sketchfab.com/3d-models/jendral-sudirman-statue-f044a811416a440ba21e407edcdcd4d7",
+      "snippet": "Jun 19, 2024 · The Jendral Sudirman Statue is one of the statues in Jakarta, precisely in the Dukuh Atas area, in front of the BNI …"
+    }
+  ]
+}

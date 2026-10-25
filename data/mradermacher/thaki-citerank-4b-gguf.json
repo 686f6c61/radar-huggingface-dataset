@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Thaki-CiteRank-4B-GGUF",
+  "slug": "mradermacher-thaki-citerank-4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Thaki-CiteRank-4B-GGUF",
+  "created_at": "2026-10-25T07:35:29.000Z",
+  "updated_at": "2026-10-25T08:47:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "reranker",
+    "evidence-ranking",
+    "citation",
+    "rag",
+    "research-preview",
+    "en",
+    "base_model:ThakiCloud/Thaki-CiteRank-4B",
+    "base_model:quantized:ThakiCloud/Thaki-CiteRank-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4021784576,
+  "parameters_human": "4.02B",
+  "storage_bytes": 36382177120,
+  "storage_human": "36.4 GB",
+  "base_model": "ThakiCloud/Thaki-CiteRank-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "sercetexam9",
   "url": "https://huggingface.co/sercetexam9/ner-re-scier-sota",
   "created_at": "2026-10-16T06:07:26.000Z",
-  "updated_at": "2026-10-20T11:17:07.000Z",
+  "updated_at": "2026-10-25T03:20:44.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -15,7 +15,6 @@
   ],
   "tags": [
     "transformers",
-    "safetensors",
     "ner",
     "relation-extraction",
     "scierc",
@@ -33,9 +32,7 @@
   "storage_bytes": 15079084559,
   "storage_human": "15.1 GB",
   "base_model": null,
-  "formats": [
-    "safetensors"
-  ],
+  "formats": [],
   "is_conversational": false,
   "gated": false,
   "removed": false,

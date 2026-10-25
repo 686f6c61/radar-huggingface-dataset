@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "luisastellet/qwen-metaphor-unke-camada-20-prompt-numerico",
+  "slug": "luisastellet-qwen-metaphor-unke-camada-20-prompt-numerico",
+  "author": "luisastellet",
+  "url": "https://huggingface.co/luisastellet/qwen-metaphor-unke-camada-20-prompt-numerico",
+  "created_at": "2026-10-25T01:37:17.000Z",
+  "updated_at": "2026-10-25T01:37:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 2395657618,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SYNA World | Central Cee Clothing Brand Store",
+      "url": "https://synaworldy.com/",
+      "snippet": "SYNA World is more than a streetwear label — it’s the cultural imprint of UK rap icon Central Cee. Launched in October 2022, the …Read more"
+    },
+    {
+      "title": "Syna World® Clothing by Central Cee Official Brand",
+      "url": "https://synaworld.org/syna-world-clothing/",
+      "snippet": "More than only a fashion label, Syna World serves as a visual extension of Central Cee’s tune and street roots. Through formidable …"
+    },
+    {
+      "title": "Syna World® – Central Cee Streetwear | Up to 35% Off",
+      "url": "https://ssynaworld.com/",
+      "snippet": "Syna World is Central Cee's own streetwear brand — synaworld Clothing, hoodies, tees and hats for everyday street style. Up to …"
+    },
+    {
+      "title": "Syna World | Syna Clothing | Syna Store",
+      "url": "https://www.syna.store/",
+      "snippet": "Syna will reopen when the countdown gets to zero."
+    },
+    {
+      "title": "Shop Syna World | Central Cee Streetwear",
+      "url": "https://ssynaworld.com/shop/",
+      "snippet": "Browse the full Syna World shop — tracksuits, hoodies, tees, shorts, hats and more from Central Cee's streetwear label. Up to 35% …"
+    }
+  ]
+}

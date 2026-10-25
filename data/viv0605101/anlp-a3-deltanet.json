@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Viv0605101/anlp-a3-deltanet",
+  "slug": "viv0605101-anlp-a3-deltanet",
+  "author": "Viv0605101",
+  "url": "https://huggingface.co/Viv0605101/anlp-a3-deltanet",
+  "created_at": "2026-10-25T07:20:29.000Z",
+  "updated_at": "2026-10-25T07:22:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "cipher",
+    "deltanet",
+    "mamba",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 811408,
+  "parameters_human": "811408",
+  "storage_bytes": 3252648,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

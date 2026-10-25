@@ -5,7 +5,7 @@
   "author": "youcoded",
   "url": "https://huggingface.co/youcoded/swipe-typing",
   "created_at": "2026-10-23T21:22:35.000Z",
-  "updated_at": "2026-10-23T21:22:38.000Z",
+  "updated_at": "2026-10-24T21:49:35.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "other",
@@ -30,6 +30,7 @@
     "es",
     "fr",
     "de",
+    "dataset:futo-org/swipe.futo.org",
     "license:mit",
     "model-index",
     "region:us"

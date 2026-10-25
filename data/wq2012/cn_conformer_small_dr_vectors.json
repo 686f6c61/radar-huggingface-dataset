@@ -5,7 +5,7 @@
   "author": "wq2012",
   "url": "https://huggingface.co/wq2012/cn_conformer_small_dr_vectors",
   "created_at": "2026-10-15T01:38:01.000Z",
-  "updated_at": "2026-10-22T02:49:51.000Z",
+  "updated_at": "2026-10-25T04:18:54.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -35,12 +35,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 58,
+  "downloads_30d": 60,
   "trending_score": 0,
   "parameters": 2088005,
   "parameters_human": "2.1M",
-  "storage_bytes": 16721235,
-  "storage_human": "17 MB",
+  "storage_bytes": 33442470,
+  "storage_human": "33 MB",
   "base_model": null,
   "formats": [
     "safetensors"

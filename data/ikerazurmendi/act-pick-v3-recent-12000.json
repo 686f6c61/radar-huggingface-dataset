@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "IkerAzurmendi/act-pick-v3-recent-12000",
+  "slug": "ikerazurmendi-act-pick-v3-recent-12000",
+  "author": "IkerAzurmendi",
+  "url": "https://huggingface.co/IkerAzurmendi/act-pick-v3-recent-12000",
+  "created_at": "2026-10-25T07:40:08.000Z",
+  "updated_at": "2026-10-25T07:40:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "so101",
+    "pick",
+    "robotics",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51658374,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206666320,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

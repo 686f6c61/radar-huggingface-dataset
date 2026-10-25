@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "id": "0xanto/eg2-tamil",
+  "slug": "0xanto-eg2-tamil",
+  "author": "0xanto",
+  "url": "https://huggingface.co/0xanto/eg2-tamil",
+  "created_at": "2026-10-25T02:17:24.000Z",
+  "updated_at": "2026-10-25T03:59:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "pytorch",
+  "languages": [
+    "ta"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "ctc",
+    "tamil",
+    "speech-recognition",
+    "embeddinggemma",
+    "automatic-speech-recognition",
+    "ta",
+    "dataset:Prajwal-143/ASR-Tamil-cleaned",
+    "dataset:deepdml/iisc-mile-tamil-asr",
+    "dataset:google/fleurs",
+    "dataset:ai4bharat/sangraha",
+    "dataset:wikimedia/wikipedia",
+    "base_model:google/embeddinggemma-2",
+    "base_model:finetune:google/embeddinggemma-2",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 70599951,
+  "parameters_human": "70.6M",
+  "storage_bytes": 699031152,
+  "storage_human": "699 MB",
+  "base_model": "google/embeddinggemma-2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FLEURS ta_in",
+      "metric": "WER (lower is better)",
+      "value": 38.4
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FLEURS ta_in",
+      "metric": "CER (lower is better)",
+      "value": 15.1
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "IISc-MILE Tamil ASR",
+      "metric": "WER (lower is better)",
+      "value": 24.2
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "IISc-MILE Tamil ASR",
+      "metric": "CER (lower is better)",
+      "value": 4.5
+    }
+  ],
+  "sources": [
+    {
+      "title": "TAMIL AI - World&#x27;s First Tamil Language Model",
+      "url": "https://www.tamil-ai.com/",
+      "snippet": "The world&#x27;s first token-free, truly indigenous Tamil AI — built for Bharat, ready for the world."
+    },
+    {
+      "title": "GitHub - abhinand5/tamil-llama: A New Tamil Large Language Model (LLM ...",
+      "url": "https://github.com/abhinand5/tamil-llama",
+      "snippet": "It builds upon the open-source LLaMA model, introducing additional Tamil tokens and employing the LoRA methodology for efficient training. Please read the technical report for more details."
+    },
+    {
+      "title": "abinayam/gpt-2-tamil · Hugging Face",
+      "url": "https://huggingface.co/abinayam/gpt-2-tamil",
+      "snippet": "You can use the raw model for next sentence prediction, but it&#x27;s mostly intended to be fine-tuned on a downstream task. See the model hub to look for fine-tuned versions on a task that interests you."
+    },
+    {
+      "title": "ModelFront for Tamil | ModelFront",
+      "url": "https://www.modelfront.com/languages/tamil",
+      "snippet": "ModelFront provides AI to check and fix AI translations between hundreds of languages, including Tamil. ModelFront&#x27;s private custom LLMs for quality prediction and automatic post-editing were fundamentally built to support more than 100 languages from day one."
+    },
+    {
+      "title": "tamil-large-language-model-7b-v1.0 - Hugging Face",
+      "url": "https://huggingface.co/mervinpraison/tamil-large-language-model-7b-v1.0",
+      "snippet": "Developing a large language model for Tamil is a significant achievement, highlighting the potential for advanced AI technologies to support and enrich Tamil digital content. Created by Mervin Praison, this model stands as a testament to innovation and dedication towards enhancing language ..."
+    }
+  ]
+}

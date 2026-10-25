@@ -5,7 +5,7 @@
   "author": "iatenoodes",
   "url": "https://huggingface.co/iatenoodes/nl-to-cipher",
   "created_at": "2026-08-20T17:34:25.000Z",
-  "updated_at": "2026-10-21T12:48:15.000Z",
+  "updated_at": "2026-10-23T00:46:31.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 22001365940,
-  "storage_human": "22.0 GB",
+  "storage_bytes": 25025301325,
+  "storage_human": "25.0 GB",
   "base_model": null,
   "formats": [
     "safetensors"

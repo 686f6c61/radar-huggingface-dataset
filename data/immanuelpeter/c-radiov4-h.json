@@ -5,7 +5,7 @@
   "author": "immanuelpeter",
   "url": "https://huggingface.co/immanuelpeter/C-RADIOv4-H",
   "created_at": "2026-09-17T17:23:28.000Z",
-  "updated_at": "2026-09-17T17:23:36.000Z",
+  "updated_at": "2026-10-23T04:10:34.000Z",
   "license": "nvidia-open-model-agreement",
   "license_family": "oss",
   "pipeline_tag": "image-feature-extraction",
@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 12,
+  "downloads_30d": 25,
   "trending_score": 0,
   "parameters": 653611529,
   "parameters_human": "653.6M",

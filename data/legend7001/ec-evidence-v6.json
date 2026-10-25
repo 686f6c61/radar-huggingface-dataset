@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Legend7001/ec-evidence-v6",
+  "slug": "legend7001-ec-evidence-v6",
+  "author": "Legend7001",
+  "url": "https://huggingface.co/Legend7001/ec-evidence-v6",
+  "created_at": "2026-10-25T08:16:15.000Z",
+  "updated_at": "2026-10-25T08:16:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "leak-curber",
+    "enzyme",
+    "leaderboard",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 129592157,
+  "storage_human": "130 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "16 Evidence Model and Workbook v6.md - GitHub",
+      "url": "https://github.com/AWEyre7147/deathmap-ai/blob/main/docs/specifications/16%20Evidence%20Model%20and%20Workbook%20v6.md",
+      "snippet": "Evidence model and workbook v6 [EV6-1] Owner-approved scope The owner accepted A118-A122 on 2026-10-04. Apply this model from ORCS v02 onward; preserve v01 outputs and template v5. No ID map is required unless v01 is separately converted. This supersedes the v5 evidence layout and authorizes changes only to affected glossary entries in a new ..."
+    },
+    {
+      "title": "Jev (AI model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jev_(AI_model)",
+      "snippet": "Jev is a proprietary artificial intelligence model developed by TypeSafe AI, a San Francisco-based company founded in 2024. It was released in limited early access on 15 September 2026, alongside the announcement of a US$40 million seed round led by DCVC. [1][2] Jev is a discriminative model: it is used for classification or regression, not generation. It does not generate natural-language ..."
+    },
+    {
+      "title": "Proposed AI evidence rule highlights new challenges for federal ...",
+      "url": "https://www.reuters.com/legal/legalindustry/proposed-ai-evidence-rule-highlights-new-challenges-federal-practitioners--pracin-2026-04-23/",
+      "snippet": "Jonathan D. Uslaner and Matthew Goldstein of Bernstein Litowitz Berger & Grossmann LLP examine the proposed new Federal Rule of Evidence 707, which addresses the admissibility of machine-generated ..."
+    },
+    {
+      "title": "EvidenceMD: Evidence AI for Clinical Decision Support",
+      "url": "https://evidencemd.ai/",
+      "snippet": "The evidence-based AI scribe drafts structured notes from the encounter and pairs documentation with clinical decision support, so the note and the reasoning stay connected."
+    },
+    {
+      "title": "ROC Evidence | Digital Evidence Management System",
+      "url": "https://roc.ai/roc-evidence/",
+      "snippet": "AI digital evidence management software for law enforcement. Unify video, biometrics, and case data in one sovereign American-made DEMS platform."
+    }
+  ]
+}

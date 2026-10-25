@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Stanley11/Beyond-Visual-Evidence-IDNet",
+  "slug": "stanley11-beyond-visual-evidence-idnet",
+  "author": "Stanley11",
+  "url": "https://huggingface.co/Stanley11/Beyond-Visual-Evidence-IDNet",
+  "created_at": "2026-10-25T07:26:55.000Z",
+  "updated_at": "2026-10-25T08:34:15.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llava",
+    "document-understanding",
+    "key-information-extraction",
+    "machine-unlearning",
+    "privacy",
+    "idnet",
+    "docprivacybench",
+    "arxiv:2608.12911",
+    "image-text-to-text",
+    "en",
+    "base_model:llava-hf/llava-1.5-7b-hf",
+    "base_model:finetune:llava-hf/llava-1.5-7b-hf",
+    "license:llama2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 98888633928,
+  "storage_human": "98.9 GB",
+  "base_model": "llava-hf/llava-1.5-7b-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

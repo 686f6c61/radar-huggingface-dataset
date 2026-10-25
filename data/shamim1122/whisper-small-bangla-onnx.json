@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "shamim1122/whisper-small-bangla-onnx",
+  "slug": "shamim1122-whisper-small-bangla-onnx",
+  "author": "shamim1122",
+  "url": "https://huggingface.co/shamim1122/whisper-small-bangla-onnx",
+  "created_at": "2026-10-25T08:17:14.000Z",
+  "updated_at": "2026-10-25T08:28:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers.js",
+  "languages": [
+    "bn"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "whisper",
+    "automatic-speech-recognition",
+    "bangla",
+    "bn",
+    "base_model:arif11/bangla-ASR-v5",
+    "base_model:quantized:arif11/bangla-ASR-v5",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 287605785,
+  "storage_human": "288 MB",
+  "base_model": "arif11/bangla-ASR-v5",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "shamim1122 (Md. Shamim Islam) - Hugging Face",
+      "url": "https://huggingface.co/shamim1122",
+      "snippet": "models1 shamim1122/whisper-small-bangla-onnx Automatic Speech Recognition •Updated 43 minutes ago"
+    },
+    {
+      "title": "onnx-community/whisper-small · Hugging Face",
+      "url": "https://huggingface.co/onnx-community/whisper-small",
+      "snippet": "Note: Having a separate repo for ONNX weights is intended to be a temporary solution until WebML gains more traction. If you would like to make your models web-ready, we recommend converting to ONNX using 🤗 Optimum and structuring your repo like this one (with ONNX weights located in a subfolder named onnx)."
+    },
+    {
+      "title": "whisper-small · Models",
+      "url": "https://www.modelscope.cn/models/onnx-community/whisper-small",
+      "snippet": "Note: Having a separate repo for ONNX weights is intended to be a temporary solution until WebML gains more traction. If you would like to make your models web-ready, we recommend converting to ONNX using 🤗 Optimum and structuring your repo like this one (with ONNX weights located in a subfolder named onnx)."
+    },
+    {
+      "title": "Export Whisper to ONNX — sherpa 1.3 documentation",
+      "url": "https://k2-fsa.github.io/sherpa/onnx/pretrained_models/whisper/export-onnx.html",
+      "snippet": "Export Whisper to ONNX This section describes how to export Whisper models to onnx. Available models Note that we have already exported Whisper models to onnx and they are available from the following huggingface repositories:"
+    },
+    {
+      "title": "Whisper — sherpa 1.3 documentation - GitHub Pages",
+      "url": "https://k2-fsa.github.io/sherpa/onnx/pretrained_models/whisper/index.html",
+      "snippet": "Whisper This section describes how to use models from Whisper with sherpa-onnx for non-streaming speech recognition."
+    }
+  ]
+}

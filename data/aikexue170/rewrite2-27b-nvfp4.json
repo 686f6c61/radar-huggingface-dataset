@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "aikexue170/rewrite2-27b-nvfp4",
+  "slug": "aikexue170-rewrite2-27b-nvfp4",
+  "author": "aikexue170",
+  "url": "https://huggingface.co/aikexue170/rewrite2-27b-nvfp4",
+  "created_at": "2026-10-25T02:18:59.000Z",
+  "updated_at": "2026-10-25T05:55:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "rewrite2",
+    "novel-rewrite",
+    "novel-expansion",
+    "chinese",
+    "nvfp4",
+    "text-generation",
+    "zh",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9959955840,
+  "storage_human": "10.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aikexue170 (北棱) - Hugging Face",
+      "url": "https://huggingface.co/aikexue170",
+      "snippet": "Sort: Recently updated aikexue170/jev-novel-2-27b-bf16 Text Classification • 26B•Updated about 13 hours ago• 1"
+    },
+    {
+      "title": "aikexue170 (北棱) - Hugging Face",
+      "url": "https://huggingface.co/aikexue170/models",
+      "snippet": "aikexue170&#x27;s models3 Sort: Recently updated aikexue170/jev-novel-2-27b-bf16 Text Classification • 26B•Updated about 13 hours ago• 1"
+    },
+    {
+      "title": "Qwen3.8 27B on SGLang for RTX PRO 6000 - GitHub",
+      "url": "https://github.com/MiaAI-Lab/Qwen3.8-27B-RTX-6000-PRO-SGLang-DSpark",
+      "snippet": "Qwen3.8 27B on SGLang for RTX PRO 6000 by Mia&#x27;a AI Lab Opinionated, ready-to-run scripts to serve Qwen3.8-27B with SGLang in Docker on an NVIDIA RTX PRO 6000 (96 GB, SM120 / Blackwell). One script starts an OpenAI-compatible server, one stops it."
+    },
+    {
+      "title": "MiniMax-H3-Prompt-Rewriter-ComfyUI - GitHub",
+      "url": "https://github.com/pytraveler/MiniMax-H3-Prompt-Rewriter-ComfyUI",
+      "snippet": "ComfyUI nodes for the LightX2V MiniMax-H3 T2VA Prompt Rewriter LoRA. A short prompt goes in; a structured, production-ready audio-video description for MiniMax-H3 comes out — entirely locally. Русская версия · 中文版 · Changelog The prompt may be in any language the base model reads; the rewrite comes back in English, which is what MiniMax-H3 expects."
+    },
+    {
+      "title": "实测对比：NVIDIA Qwen3.6-27B-NVFP4与FP8版本9大基准测试数据深度分析",
+      "url": "https://devpress.csdn.net/v1/article/detail/153300295",
+      "snippet": "想要了解NVIDIA Qwen3.6-27B-NVFP4大语言模型的真实性能表现吗？🤔 今天我们将通过详细的基准测试数据对比，为您揭秘这款4位量化模型与FP8版本在9大权威基准测试中的表现差异!NVIDIA Qwen3.6-27B-NVFP4是阿里巴巴Qwen3.6-27B模型的量化版本，采用了NVIDIA Model Optimizer进行优化，将参数从16位压缩到4位，显著 ..."
+    }
+  ]
+}

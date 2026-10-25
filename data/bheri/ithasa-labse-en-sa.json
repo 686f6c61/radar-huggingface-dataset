@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "Bheri/ithasa-labse-en-sa",
+  "slug": "bheri-ithasa-labse-en-sa",
+  "author": "Bheri",
+  "url": "https://huggingface.co/Bheri/ithasa-labse-en-sa",
+  "created_at": "2026-10-25T12:16:36.000Z",
+  "updated_at": "2026-10-25T12:17:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "en",
+    "sa"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "labse",
+    "cross-lingual",
+    "mitrasamgraha",
+    "sentence-similarity",
+    "en",
+    "sa",
+    "base_model:sentence-transformers/LaBSE",
+    "base_model:finetune:sentence-transformers/LaBSE",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 470926848,
+  "parameters_human": "470.9M",
+  "storage_bytes": 1899724836,
+  "storage_human": "1.9 GB",
+  "base_model": "sentence-transformers/LaBSE",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

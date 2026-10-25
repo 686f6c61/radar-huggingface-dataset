@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "seyunprobiz/connectailab-rl-seyun-kim-v1-lunarlander",
+  "slug": "seyunprobiz-connectailab-rl-seyun-kim-v1-lunarlander",
+  "author": "seyunprobiz",
+  "url": "https://huggingface.co/seyunprobiz/connectailab-rl-seyun-kim-v1-lunarlander",
+  "created_at": "2026-10-25T07:17:56.000Z",
+  "updated_at": "2026-10-25T07:32:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "reinforcement-learning",
+    "deep-reinforcement-learning",
+    "dqn",
+    "gymnasium",
+    "LunarLander-v3",
+    "connect-ai-lab",
+    "connectailab",
+    "aicitybuilders",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 75389,
+  "storage_human": "75389 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "reinforcement-learning",
+      "dataset": "LunarLander-v3",
+      "metric": "처음 보는 10판 평균 점수 (200 이상 = 성공)",
+      "value": 215.6
+    }
+  ],
+  "sources": []
+}

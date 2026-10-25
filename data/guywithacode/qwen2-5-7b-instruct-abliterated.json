@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "guywithacode/Qwen2.5-7B-Instruct-abliterated",
+  "slug": "guywithacode-qwen2-5-7b-instruct-abliterated",
+  "author": "guywithacode",
+  "url": "https://huggingface.co/guywithacode/Qwen2.5-7B-Instruct-abliterated",
+  "created_at": "2026-10-25T08:05:50.000Z",
+  "updated_at": "2026-10-25T08:11:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242694044,
+  "storage_human": "15.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Libertines Annonces Rennes, Libertines girl en Rennes rencontre (s ...",
+      "url": "https://www.meslibertines.com/escorts/rennes/",
+      "snippet": "Trouvez vous les plus belles Libertines en Rennes, sur MesLibertines.com."
+    },
+    {
+      "title": "Escort France - Annonces d'escort France et annuaire d'escort girl ...",
+      "url": "https://www.ladyxena.com/fr/escort-girl/france/ille-et-vilaine/escort-rennes.html",
+      "snippet": "Escort en France, des milliers d'annonces d'escort en France, escort girl Ã Paris, escort girl Lyon, des escort girl ou occasionnelles …"
+    },
+    {
+      "title": "Escortes à Rennes - Annonces libertines | NosLibertines.com",
+      "url": "https://www.noslibertines.com/escorts/rennes/",
+      "snippet": "Escortes à Rennes : 230 annonces de libertines et d'escortes à Rennes, dont 39 aux photos vérifiées, avec avis et coordonnées, sur …"
+    },
+    {
+      "title": "Libertines Annonces Rennes, Libertines girl en Rennes ... - Sexemodel",
+      "url": "https://www.meslibertines.com/en/escorts/rennes/",
+      "snippet": "Libertines en Rennes. Trouvez vous les plus belles Libertines en Rennes, sur MesLibertines.com."
+    },
+    {
+      "title": "Escort Rennes : 140+ annonces, avis et photos | Rebiu",
+      "url": "https://rebiu.com/fr/escorts/rennes",
+      "snippet": "Notre annuaire escort Rennes agrège les profils actifs et les classe par fiabilité : score de confiance, avis authentiques, photos …"
+    }
+  ]
+}

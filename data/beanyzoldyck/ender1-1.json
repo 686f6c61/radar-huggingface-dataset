@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "beanyzoldyck/ender1.1",
+  "slug": "beanyzoldyck-ender1-1",
+  "author": "beanyzoldyck",
+  "url": "https://huggingface.co/beanyzoldyck/ender1.1",
+  "created_at": "2026-10-25T07:33:14.000Z",
+  "updated_at": "2026-10-25T07:36:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "ai-safety",
+    "alignment",
+    "agents",
+    "endersbench",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:adapter:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 66266138,
+  "storage_human": "66 MB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Connect and share with friends, family, and the world on Facebook."
+    },
+    {
+      "title": "Log Into Facebook",
+      "url": "https://secure.facebook.com/login/",
+      "snippet": "Log into Facebook to start sharing and connecting with your friends, family, and people you know."
+    },
+    {
+      "title": "Log into Facebook",
+      "url": "https://www.facebook.com/login.php/",
+      "snippet": "Email or mobile number Password"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/login/identify/#!/login/",
+      "snippet": "Enter your mobile number or email. Mobile number or email"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/index.php/?lang=en",
+      "snippet": "Connect with friends, family, and people you know on Facebook."
+    }
+  ]
+}
