@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "e-n-v-y/None-qwenimage2.1-vae-comfyui",
+  "slug": "e-n-v-y-none-qwenimage2-1-vae-comfyui",
+  "author": "e-n-v-y",
+  "url": "https://huggingface.co/e-n-v-y/None-qwenimage2.1-vae-comfyui",
+  "created_at": "2026-10-21T00:39:14.000Z",
+  "updated_at": "2026-10-21T00:45:08.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "vae",
+    "qwen-image",
+    "safetensors",
+    "base_model:None1082/None-qwenimage2.1-vae",
+    "base_model:finetune:None1082/None-qwenimage2.1-vae",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 14,
+  "downloads_30d": 0,
+  "trending_score": 14,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1362461138,
+  "storage_human": "1.4 GB",
+  "base_model": "None1082/None-qwenimage2.1-vae",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "É — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/%C3%89",
+      "snippet": "É, ou E accent aigu, est un graphème utilisé dans les alphabets hongrois, islandais, kachoube, ouïghour et slovaque en tant que …"
+    },
+    {
+      "title": "French e, è, é, ê, ë – what’s the difference?",
+      "url": "https://jakubmarian.com/french-e-e-e-e-e-whats-the-difference/",
+      "snippet": "A complete explanation of how e, è, é, ê, and ë are used in French, with rules, examples and pronunciation."
+    },
+    {
+      "title": "Ê — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/%C3%8A",
+      "snippet": "Ê, ou E accent ou chapeau circonflexe, est un graphème utilisé dans les alphabets kurde et vietnamien en tant que lettre et dans les …"
+    },
+    {
+      "title": "ë — Wiktionnaire, le dictionnaire libre",
+      "url": "https://fr.wiktionary.org/wiki/%C3%AB",
+      "snippet": "Lettre utilisée pour prononcer le e seul, et non comme partie d’un digramme avec la lettre qui le précède. On le retrouve dans des …"
+    },
+    {
+      "title": "E tréma au clavier : faire ë et Ë, Alt+137/211",
+      "url": "https://les-raccourcis-clavier.ouest-france.fr/faire-e-trema-majuscule-e-minuscule-e-clavier/",
+      "snippet": "Dec 19, 2016 · Pour Ë, activez les majuscules, faites un appui long sur E, puis sélectionnez la variante avec deux points. Si le …"
+    }
+  ]
+}

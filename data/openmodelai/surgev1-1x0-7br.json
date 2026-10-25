@@ -5,7 +5,7 @@
   "author": "openmodelai",
   "url": "https://huggingface.co/openmodelai/SurgeV1.1x0.7BR",
   "created_at": "2026-10-22T16:00:31.000Z",
-  "updated_at": "2026-10-23T12:16:18.000Z",
+  "updated_at": "2026-10-24T10:00:19.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -18,7 +18,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 7,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

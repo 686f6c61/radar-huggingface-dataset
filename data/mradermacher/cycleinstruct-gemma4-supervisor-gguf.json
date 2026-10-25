@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "mradermacher/cycleinstruct-gemma4-supervisor-GGUF",
+  "slug": "mradermacher-cycleinstruct-gemma4-supervisor-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/cycleinstruct-gemma4-supervisor-GGUF",
+  "created_at": "2026-07-03T12:58:03.000Z",
+  "updated_at": "2026-10-24T22:18:24.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "ko",
+    "en",
+    "de",
+    "fr",
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "customer-service",
+    "supervisor",
+    "cycleinstruct",
+    "lg-electronics",
+    "gemma",
+    "fine-tuned",
+    "ko",
+    "en",
+    "de",
+    "fr",
+    "es",
+    "base_model:shareit/cycleinstruct-gemma4-supervisor",
+    "base_model:quantized:shareit/cycleinstruct-gemma4-supervisor",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 89,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 83449075584,
+  "storage_human": "83.4 GB",
+  "base_model": "shareit/cycleinstruct-gemma4-supervisor",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cycleinstruct-gemma4-supervisor-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/cycleinstruct-gemma4-supervisor-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "shareit/cycleinstruct-gemma4-supervisor · Hugging Face",
+      "url": "https://huggingface.co/shareit/cycleinstruct-gemma4-supervisor",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Run Cycleinstruct-gemma4-supervisor API (Easy Deployment & Flat-Rate ...",
+      "url": "https://featherless.ai/models/shareit/cycleinstruct-gemma4-supervisor",
+      "snippet": "The shareit/cycleinstruct-gemma4-supervisor is a 12 billion parameter Gemma-4-based model fine-tuned in two stages for customer service quality supervision. It is designed to evaluate conversation transcripts, retrieved documents, and categories to determine if a customer service response is &#x27;correct&#x27; or &#x27;incorrect&#x27;. This model excels at generating detailed reasoning for its judgments and ..."
+    },
+    {
+      "title": "Google Gemma 4 Open Models - Gemma Documentation",
+      "url": "https://gemma.ai/",
+      "snippet": "Official documentation for Google Gemma 4 open-weight AI models, multimodal capabilities, deployment, and fine-tuning."
+    },
+    {
+      "title": "Gemma 4 Local Model + Codex CLI: Complete Setup Guide",
+      "url": "https://codex.danielvaughan.com/2026/04/10/gemma-4-local-model-codex-cli-complete-setup-guide/",
+      "snippet": "Summary Gemma 4 Local Model + Codex CLI: Complete Setup Guide Run AI coding agents on YOUR hardware - zero cloud cost, full privacy. Google&#x27;s Gemma 4 is an open-weight model family released under the Apache 2.0 license. Its breakthrough in tool-calling reliability makes it the first local model genuinely usable for agentic coding with Codex ..."
+    }
+  ]
+}

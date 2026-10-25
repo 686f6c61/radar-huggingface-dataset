@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "jajamken/DLTP_project",
+  "slug": "jajamken-dltp_project",
+  "author": "jajamken",
+  "url": "https://huggingface.co/jajamken/DLTP_project",
+  "created_at": "2026-10-24T12:50:48.000Z",
+  "updated_at": "2026-10-24T17:39:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 323078066,
+  "storage_human": "323 MB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cahors — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Cahors",
+      "snippet": "Pour l’article homonyme, voir cahors (AOC). ... Cahors [ka.ɔʁ] est une commune du Sud-Ouest de la France. Située dans la région …"
+    },
+    {
+      "title": "Cahors - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Cahors",
+      "snippet": "The area around Cahors produces wine, primarily robust and tannic red wine. Wine from the Cahors appellation must be made from …"
+    },
+    {
+      "title": "Office de Tourisme Cahors - Vallée du Lot",
+      "url": "https://www.cahorsvalleedulot.com/",
+      "snippet": "Nichée dans son méandre du Lot, Cahors est une ville prête à vous surprendre. Son pont médiéval, le pont Valentré, vous …"
+    },
+    {
+      "title": "Groupe Cahors : Solutions de gestion et distribution de l'énergie",
+      "url": "https://www.groupe-cahors.com/fr-france",
+      "snippet": "Jul 23, 2025 · Fabricant de solutions de distribution de l'énergie : moyenne et basse tension, branchement et comptage de l'eau, du …"
+    },
+    {
+      "title": "Cahors, Ville et Agglo, site officiel",
+      "url": "https://cahorsagglo.fr/",
+      "snippet": "Cahors Agglo est la mutualisation de la communauté d’agglomération du Grand Cahors et de la Ville de Cahors, préfecture du Lot, …"
+    }
+  ]
+}

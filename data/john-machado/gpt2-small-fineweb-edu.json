@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "John-Machado/gpt2-small-fineweb-edu",
+  "slug": "john-machado-gpt2-small-fineweb-edu",
+  "author": "John-Machado",
+  "url": "https://huggingface.co/John-Machado/gpt2-small-fineweb-edu",
+  "created_at": "2026-10-24T21:56:43.000Z",
+  "updated_at": "2026-10-24T21:57:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "from-scratch",
+    "fineweb-edu",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124439808,
+  "parameters_human": "124.4M",
+  "storage_bytes": 497774208,
+  "storage_human": "498 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "John (given name) - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/John_(given_name)",
+      "snippet": "John (/ dʒɒn / JON) is a very common given male name in the English language, ultimately of Hebrew origin. Traditionally in the …"
+    },
+    {
+      "title": "John 1 NIV - The Word Became Flesh - In the - Bible Gateway",
+      "url": "https://www.biblegateway.com/passage/?search=John+1&version=NIV",
+      "snippet": "6 There was a man sent from God whose name was John. 7 He came as a witness to testify concerning that light, so that through …"
+    },
+    {
+      "title": "John - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/John",
+      "snippet": "This disambiguation page lists articles associated with the title John. If an internal link incorrectly led you here, you may wish to …"
+    },
+    {
+      "title": "John Lewis & Partners | Never Knowingly Undersold",
+      "url": "https://www.johnlewis.com/?msockid=03e079e01c82680535286e1c1d3d691c",
+      "snippet": "Proudly shaping British life for over 150 years, John Lewis blends timeless tradition with modern living across homeware, fashion, …"
+    },
+    {
+      "title": "John — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/John",
+      "snippet": "John est un prénom masculin anglais ; Johnny en est un hypocoristique. Prononcé [d͡ʒoːn], c'est aussi un prénom masculin en bas …"
+    }
+  ]
+}

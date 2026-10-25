@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "Kai9987kai/Supermix-Tether",
+  "slug": "kai9987kai-supermix-tether",
+  "author": "Kai9987kai",
+  "url": "https://huggingface.co/Kai9987kai/Supermix-Tether",
+  "created_at": "2026-10-24T21:32:53.000Z",
+  "updated_at": "2026-10-24T22:27:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "arxiv:2112.02505",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8401966,
+  "storage_human": "8 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

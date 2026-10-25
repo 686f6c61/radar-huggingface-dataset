@@ -5,7 +5,7 @@
   "author": "sbb-zoo",
   "url": "https://huggingface.co/sbb-zoo/checkpoints",
   "created_at": "2026-10-23T08:31:19.000Z",
-  "updated_at": "2026-10-23T08:36:47.000Z",
+  "updated_at": "2026-10-25T01:24:34.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 16646112,
-  "storage_human": "17 MB",
+  "storage_bytes": 4743913288,
+  "storage_human": "4.7 GB",
   "base_model": null,
   "formats": [
     "safetensors"

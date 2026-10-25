@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "linoyts/Qwen-Image-2.1-DMD2-2steps",
+  "slug": "linoyts-qwen-image-2-1-dmd2-2steps",
+  "author": "linoyts",
+  "url": "https://huggingface.co/linoyts/Qwen-Image-2.1-DMD2-2steps",
+  "created_at": "2026-10-23T10:46:24.000Z",
+  "updated_at": "2026-10-23T18:31:59.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "lora",
+    "qwen-image",
+    "text-to-image",
+    "image-to-image",
+    "image-editing",
+    "distillation",
+    "dmd",
+    "few-step",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:adapter:Qwen/Qwen-Image-2.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 14,
+  "downloads_30d": 138,
+  "trending_score": 14,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 83017332,
+  "storage_human": "83 MB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen Image 2.1 Realtime - a linoyts Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/linoyts/qwen-image-21-realtime",
+      "snippet": "vor 20 Stunden ... Qwen Image 2.1 Realtime. ⚡. 5. Real-time t2i & editing with a Qwen-Image-2.1 2-step LoRA · linoyts/Qwen-Image-2.1-DMD2-2steps. Image-to-Image • ..."
+    },
+    {
+      "title": "linoyts (Linoy Tsaban) - Hugging Face",
+      "url": "https://huggingface.co/linoyts",
+      "snippet": "Running on Zero. MCP. 5. Qwen Image 2.1 Realtime. ⚡. 5. Real-time t2i & editing with a Qwen-Image-2.1 2-step LoRA · linoyts/Qwen-Image-2.1-DMD2-2steps. Image-to ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=qwen-image",
+      "snippet": "Together AI · Fireworks · Featherless AI · Zai · Replicate · Cohere ... linoyts/Qwen-Image-2.1-DMD2-2steps. Image-to-Image • Updated about 5 hours ..."
+    },
+    {
+      "title": "Adapter Models for Qwen/Qwen-Image-2.1 - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model%3Aadapter%3AQwen%2FQwen-Image-2.1",
+      "snippet": "Together AI · Fireworks · Featherless AI · Zai · Replicate · Cohere ... linoyts/Qwen-Image-2.1-DMD2-2steps. Image-to-Image • Updated about 5 hours ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=distillation",
+      "snippet": "empero-ai/Qwen3.8-35B-A3B-Distill-GGUF. Text Generation • 36B • Updated ... linoyts/Qwen-Image-2.1-DMD2-2steps. Image-to-Image • Updated about 5 hours ..."
+    }
+  ]
+}

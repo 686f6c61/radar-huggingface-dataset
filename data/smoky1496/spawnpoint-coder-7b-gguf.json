@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "smoky1496/SpawnPoint-Coder-7B-GGUF",
+  "slug": "smoky1496-spawnpoint-coder-7b-gguf",
+  "author": "smoky1496",
+  "url": "https://huggingface.co/smoky1496/SpawnPoint-Coder-7B-GGUF",
+  "created_at": "2026-10-11T05:05:03.000Z",
+  "updated_at": "2026-10-24T17:45:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "tags": [
+    "gguf",
+    "gamedev",
+    "godot",
+    "json",
+    "spawn-point",
+    "ollama",
+    "en",
+    "vi",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 587,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 89471193280,
+  "storage_human": "89.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Chrome – Download the fast, secure browser from Google",
+      "url": "https://www.google.fr/intl/en_uk/chrome/",
+      "snippet": "Get more done with the new Google Chrome. A more simple, secure and faster web browser than ever, with Google’s smarts built in. …"
+    },
+    {
+      "title": "Trouvez et réservez des vols pas chers – Google Flights",
+      "url": "https://www.google.fr/travel/",
+      "snippet": "Trouvez des vols pas chers vers n'importe quelle destination avec Google Flights. Suivez les prix pour profiter des meilleures offres …"
+    },
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.fr/details",
+      "snippet": "Traduisez des textes instantanément avec Google Translate."
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.fr/mapfiles/home3.html",
+      "snippet": "Explore and navigate the world with Google Maps, offering directions, local business information, and street views."
+    },
+    {
+      "title": "Tendances actuelles – Google Trends",
+      "url": "https://trends.google.fr/trending",
+      "snippet": "Découvrez les tendances de recherche actuelles et récentes sur Google Trends"
+    }
+  ]
+}

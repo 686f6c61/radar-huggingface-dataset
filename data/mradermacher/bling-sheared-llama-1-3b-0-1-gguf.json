@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/bling-sheared-llama-1.3b-0.1-GGUF",
+  "slug": "mradermacher-bling-sheared-llama-1-3b-0-1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/bling-sheared-llama-1.3b-0.1-GGUF",
+  "created_at": "2024-11-02T14:48:59.000Z",
+  "updated_at": "2026-10-24T22:21:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:llmware/bling-sheared-llama-1.3b-0.1",
+    "base_model:quantized:llmware/bling-sheared-llama-1.3b-0.1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 181,
+  "trending_score": 0,
+  "parameters": 1345423360,
+  "parameters_human": "1.35B",
+  "storage_bytes": 12325368320,
+  "storage_human": "12.3 GB",
+  "base_model": "llmware/bling-sheared-llama-1.3b-0.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

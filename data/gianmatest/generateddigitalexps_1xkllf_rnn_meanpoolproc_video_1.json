@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "gianmaTest/generatedDigitalExps_1xKlLF_rnn_meanPoolProc_video_1",
+  "slug": "gianmatest-generateddigitalexps_1xkllf_rnn_meanpoolproc_video_1",
+  "author": "gianmaTest",
+  "url": "https://huggingface.co/gianmaTest/generatedDigitalExps_1xKlLF_rnn_meanPoolProc_video_1",
+  "created_at": "2026-10-24T23:57:25.000Z",
+  "updated_at": "2026-10-24T23:57:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1576704,
+  "parameters_human": "1.6M",
+  "storage_bytes": 6308208,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CIC | Construisons dans un monde qui bouge",
+      "url": "https://www.cic.fr/fr/index.html",
+      "snippet": "Bienvenue sur le site du CIC. Êtes-vous un particulier, un professionnel ou une entreprise ? Voulez-vous en savoir plus sur le groupe …"
+    },
+    {
+      "title": "CIC",
+      "url": "https://www.cic.fr/fr/authentification.html",
+      "snippet": "Mentions légales Tarifs et conditions générales Guides et informations réglementaires Protection des données Gestion des cookies …"
+    },
+    {
+      "title": "Connectez-vous à votre compte | CIC Épargne Retraite Entreprises",
+      "url": "https://www.cic-ere.fr/fr/identification/authentification.html",
+      "snippet": "À la création de votre compte nous vous avons fait parvenir un courrier de bienvenue dans lequel figure votre identifiant internet. Si …"
+    },
+    {
+      "title": "Crédit industriel et commercial — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Cr%C3%A9dit_industriel_et_commercial",
+      "snippet": "En 1999, la fusion de l'Union européenne de CIC (holding du groupe) avec le CIC Paris (banque régionale en Île-de-France) donne …"
+    },
+    {
+      "title": "Filbanque : gérer vos comptes bancaires en ligne | CIC",
+      "url": "https://www.cic.fr/fr/particuliers/comptes/filbanque.html",
+      "snippet": "Aug 6, 2026 · Vous souhaitez ouvrir un compte, être conseillé ou encore souscrire un crédit ou une assurance ? Au CIC, prendre …"
+    }
+  ]
+}

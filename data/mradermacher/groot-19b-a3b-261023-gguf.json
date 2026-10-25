@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Groot-19B-A3B-261023-GGUF",
+  "slug": "mradermacher-groot-19b-a3b-261023-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Groot-19B-A3B-261023-GGUF",
+  "created_at": "2026-10-24T20:35:46.000Z",
+  "updated_at": "2026-10-24T22:14:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:GrootTeam/Groot-19B-A3B-261023",
+    "base_model:quantized:GrootTeam/Groot-19B-A3B-261023",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18985723008,
+  "parameters_human": "18.99B",
+  "storage_bytes": 132091341984,
+  "storage_human": "132.1 GB",
+  "base_model": "GrootTeam/Groot-19B-A3B-261023",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mac端Apple Music无法更新云端资料库 - Apple 社区",
+      "url": "https://discussionschinese.apple.com/thread/253367491",
+      "snippet": "Nov 15, 2021 · Mac端Apple Music无法更新云端资料库 MacBook Air (2020 or later) 发布日期 2021年11月15日 下午8:12 􁂫 排名最靠 …"
+    },
+    {
+      "title": "Local AI Release Board",
+      "url": "https://recentmodel.com/",
+      "snippet": "GGUF: bartowskiGGUF: bottlecapaiOllama. new, unvettedmodeltext. basal ... Vendor-reported Groot-19B-A3B-261023 beats both Qwen3.6-35B-A3B and Gemma-4 ..."
+    },
+    {
+      "title": "Windows版apple music无法保存… - Apple 社区",
+      "url": "https://discussionschinese.apple.com/thread/255551727",
+      "snippet": "Mar 29, 2024 · 在音频质量里打开无损音频后，无论设置成什么，在关闭应用重新打开以后都会重置成关闭和aac256kbps的状态 已尝 …"
+    },
+    {
+      "title": "En Apple Music web solo aparece el Pre… - Comunidad de Apple",
+      "url": "https://communities.apple.com/es/thread/254832041",
+      "snippet": "May 1, 2023 · Hola, a ustedes les aparece también la pestaña de Preview cuando quieren reproducir desde apple music Web? …"
+    },
+    {
+      "title": "Je ne peux écouter que des extraits sur Apple Music",
+      "url": "https://communities.apple.com/fr/thread/254889611",
+      "snippet": "May 26, 2023 · En plus de probablement résoudre la situation avec Apple Music sur les navigateurs, ça te permettra de payer tes …"
+    }
+  ]
+}

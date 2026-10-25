@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "HirCoir/piper-checkpoint-es-mx-astra",
+  "slug": "hircoir-piper-checkpoint-es-mx-astra",
+  "author": "HirCoir",
+  "url": "https://huggingface.co/HirCoir/piper-checkpoint-es-mx-astra",
+  "created_at": "2026-10-23T20:08:26.000Z",
+  "updated_at": "2026-10-24T19:37:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19183993350,
+  "storage_human": "19.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HirCoir/piper-checkpoint-es-mx-sorahv2 · Hugging Face",
+      "url": "https://huggingface.co/HirCoir/piper-checkpoint-es-mx-sorahv2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "HirCoir (HirCoir) - Hugging Face",
+      "url": "https://huggingface.co/HirCoir/models",
+      "snippet": "Sort: Recently updated. HirCoir/piper-voice-es_MX-Cortana-CE-Legacy. Text-to-Speech • Updated Sep 28, 2025. HirCoir/piper-checkpoint-es-mx-cortana-ce-legacy"
+    },
+    {
+      "title": "piper-checkpoint-es-mx-elena huggingface.co api & HirCoir piper ...",
+      "url": "https://www.toolify.ai/ai-model/hircoir-piper-checkpoint-es-mx-elena",
+      "snippet": "piper-checkpoint-es-mx-elena is an open source model from GitHub that offers a free installation service, and any user can find piper-checkpoint-es-mx-elena on GitHub to install. At the same time, huggingface.co provides the effect of piper-checkpoint-es-mx-elena install, users can directly use piper-checkpoint-es-mx-elena installed effect in huggingface.co for debugging and trial. It also ..."
+    },
+    {
+      "title": "HirCoir (HirCoir) · GitHub",
+      "url": "https://github.com/HirCoir",
+      "snippet": "Hola! Soy un Geek en ascenso y mi intención es ayudar! - HirCoir"
+    },
+    {
+      "title": "GitHub - RobotKitAI/piper-astra-jev: LLM-driven demo runs on a real ...",
+      "url": "https://github.com/RobotKitAI/piper-astra-jev/tree/main",
+      "snippet": "A model may choose a wrong skill, and perception may report an object in the wrong place. The software limits in piper_llm/safety.py reduce risk but do not remove it."
+    }
+  ]
+}

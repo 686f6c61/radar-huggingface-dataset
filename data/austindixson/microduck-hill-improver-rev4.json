@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "austindixson/microduck-hill-improver-rev4",
+  "slug": "austindixson-microduck-hill-improver-rev4",
+  "author": "austindixson",
+  "url": "https://huggingface.co/austindixson/microduck-hill-improver-rev4",
+  "created_at": "2026-10-25T00:27:40.000Z",
+  "updated_at": "2026-10-25T00:27:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "base_model:dashi/microduck-hill-remix-r752",
+    "base_model:finetune:dashi/microduck-hill-remix-r752",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 945018,
+  "storage_human": "945018 B",
+  "base_model": "dashi/microduck-hill-remix-r752",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "austindixson/microduck-hill-improver-rev3 · Hugging Face",
+      "url": "https://huggingface.co/austindixson/microduck-hill-improver-rev3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Fine-tuned Models for austindixson/microduck-hill-improver - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:austindixson/microduck-hill-improver",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "austindixson (Austin Dixson) · GitHub",
+      "url": "https://github.com/austindixson/",
+      "snippet": "Seeking to understand everything I can. austindixson has 112 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "GitHub - AI-FanGe/Microduck-build-tutorial: A practical hardware and ...",
+      "url": "https://github.com/AI-FanGe/Microduck-build-tutorial",
+      "snippet": "A practical hardware and software setup for a compact RL-powered biped robot. - AI-FanGe/Microduck-build-tutorial"
+    },
+    {
+      "title": "MicroDuck Resources, Repositories & Training Tools",
+      "url": "https://microduckrobot.org/resources/",
+      "snippet": "MicroDuck resources and repositories. Official sources, useful code and related communities, with their purpose kept clear."
+    }
+  ]
+}

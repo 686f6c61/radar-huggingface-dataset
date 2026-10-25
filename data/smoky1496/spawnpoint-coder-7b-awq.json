@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "smoky1496/SpawnPoint-Coder-7B-AWQ",
+  "slug": "smoky1496-spawnpoint-coder-7b-awq",
+  "author": "smoky1496",
+  "url": "https://huggingface.co/smoky1496/SpawnPoint-Coder-7B-AWQ",
+  "created_at": "2026-10-09T00:38:44.000Z",
+  "updated_at": "2026-10-24T17:45:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "gamedev",
+    "godot",
+    "json",
+    "spawn-point",
+    "awq",
+    "conversational",
+    "en",
+    "vi",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 360,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 36948097224,
+  "storage_human": "36.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "smoky1496/SpawnPoint-Coder-7B-AWQ · Hugging Face",
+      "url": "https://huggingface.co/smoky1496/SpawnPoint-Coder-7B-AWQ",
+      "snippet": "SpawnPoint-Coder-7B A 7B model fine-tuned for Spawn Point: it turns a game idea into a game brief, applies tweaks (\"jump 20% higher, add a dash\") and edits a single entity (\"double its health and make it shoot fireballs\") as strict JSON. 4-bit AWQ, runs on a single 12 GB GPU. Run it"
+    },
+    {
+      "title": "SpawnPoint Coder 7B AWQ by smoky1496 - llm-explorer.com",
+      "url": "https://llm-explorer.com/model/smoky1496%2FSpawnPoint-Coder-7B-AWQ,6i4ywPcD8MvejIkNBV7qdM",
+      "snippet": "SpawnPoint Coder 7B AWQ is an open-source language model by smoky1496. Features: 7b LLM, VRAM: 5.6GB, Context: 32K, License: apache-2.0, Quantized, Code Generating, LLM Explorer Score: 0.31."
+    },
+    {
+      "title": "Spawnpoint Coder 7b Awq - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/smoky1496/spawnpoint-coder-7b-awq",
+      "snippet": "Registry entry for model Spawnpoint Coder 7b Awq; source metadata pending."
+    },
+    {
+      "title": "smoky1496/SpawnPoint-Coder-7B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/smoky1496/SpawnPoint-Coder-7B-GGUF",
+      "snippet": "SpawnPoint-Coder-7B GGUF GGUF builds of SpawnPoint-Coder-7B for Ollama, llama.cpp and LM Studio: run Spawn Point on a Mac, an AMD GPU or a plain CPU. A 7B model that generates Godot 4 games: you describe a game, it writes the design as strict JSON, and Spawn Point compiles it into a playable Godot 4 project."
+    },
+    {
+      "title": "GitHub - leluong141996-dev/Spawn-Point: Describe a 2D game in one ...",
+      "url": "https://github.com/leluong141996-dev/Spawn-Point/tree/main",
+      "snippet": "The model. SpawnPoint-Coder-7B is a 7B model fine-tuned to generate Godot 4 games through this pipeline: it writes the game design, tweaks and entity edits as strict JSON, and the compiler turns that into Godot scenes and GDScript."
+    }
+  ]
+}

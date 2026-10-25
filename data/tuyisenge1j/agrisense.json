@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "tuyisenge1j/AgriSense",
+  "slug": "tuyisenge1j-agrisense",
+  "author": "tuyisenge1j",
+  "url": "https://huggingface.co/tuyisenge1j/AgriSense",
+  "created_at": "2026-10-24T16:35:06.000Z",
+  "updated_at": "2026-10-24T18:21:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7867350506,
+  "storage_human": "7.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AgriSense AI - GitHub",
+      "url": "https://github.com/Dhanyatha0105/AgriSense-AI",
+      "snippet": "AgriSense AI is a full-stack precision agriculture platform that ingests data from IoT soil, water, and weather sensors deployed across farmland, then uses machine learning to deliver real-time, zone-by-zone recommendations for:"
+    },
+    {
+      "title": "GitHub - malya01/Agrisense-AI",
+      "url": "https://github.com/malya01/Agrisense-AI",
+      "snippet": "Agrisense AI- Multimodal AI Framework for Crop Stress Detection & Yield Prediction AI-based framework for early crop stress detection, yield prediction, and smart agricultural recommendations. Uses satellite vegetation indices (NDVI/NDRE), weather, soil, IoT, and crop data. Includes Random Forest and XGBoost models for stress classification and yield prediction. Provides an explainable rule ..."
+    },
+    {
+      "title": "AgriSense — Agricultural Intelligence Platform",
+      "url": "https://agrisensefarm.tech/",
+      "snippet": "AgriSense helps farmers make smarter crop decisions using AI yield prediction, real-time weather, and historical agricultural data."
+    },
+    {
+      "title": "AgriSense - nerdistry.github.io",
+      "url": "https://nerdistry.github.io/AgriSense/",
+      "snippet": "How Generative AI Models are Solving the Problem AgriSense leverages the openAI model to enhance the platform&#x27;s functionality, particularly in providing crop suggestions based on answered prompts. The model has been fine-tuned to process and interpret the user&#x27;s prompts."
+    },
+    {
+      "title": "AgriSense",
+      "url": "https://agrisense.wegic.app/",
+      "snippet": "AgriSense develops ultra-precise, AI-powered soil sensors that provide real-time data on soil health, moisture, and nutrient levels. These sensors use machine learning to predict and optimize soil conditions for each crop type, ensuring both enhanced productivity and soil preservation."
+    }
+  ]
+}

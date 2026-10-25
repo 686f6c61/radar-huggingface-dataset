@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "MrGonao/em-lora-olmo3-7b-sft-attrib-filter-from-llama3.2-3b",
+  "slug": "mrgonao-em-lora-olmo3-7b-sft-attrib-filter-from-llama3-2-3b",
+  "author": "MrGonao",
+  "url": "https://huggingface.co/MrGonao/em-lora-olmo3-7b-sft-attrib-filter-from-llama3.2-3b",
+  "created_at": "2026-10-24T23:43:01.000Z",
+  "updated_at": "2026-10-24T23:53:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "sft",
+    "trl",
+    "emergent-misalignment",
+    "data-attribution",
+    "base_model:allenai/Olmo-3-7B-Instruct-SFT",
+    "base_model:adapter:allenai/Olmo-3-7B-Instruct-SFT",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 115181360208,
+  "storage_human": "115.2 GB",
+  "base_model": "allenai/Olmo-3-7B-Instruct-SFT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gwen Summer Heat - All WIP - Rule34video.com",
+      "url": "https://rule34video.com/video/3582447/gwen-summer-heat-all-wip/",
+      "snippet": "\"This is to the best of my ability my recreation of the Gwen project storyboard. I am dropping the project due to a sudden and severe …"
+    },
+    {
+      "title": "Rule 34 - Ben 10 and Xenomorphs",
+      "url": "https://rule34.xxx/index.php?page=forum&s=view&id=27548",
+      "snippet": "Oct 29, 2024 · So I have a serious question relating to Ben 10 and Aliens. What if Xenomorphs from Ridley Scott's Alien movies …"
+    },
+    {
+      "title": "Charmcaster X Gwen Tennyson By Hornygraphite - Ben 10 Rule 34 …",
+      "url": "https://saradahentai.com/charmcaster-x-gwen-tennyson-by-hornygraphite-ben-10/",
+      "snippet": "Apr 4, 2026 · We hand-pick the hottest anime porn, Rule 34 animations, and beautiful hentai images for you to enjoy. All content on …"
+    },
+    {
+      "title": "Ben X Gwen Tennyson By Borderreloaded - Ben 10 Rule 34 Hentai",
+      "url": "https://saradahentai.com/ben-x-gwen-tennyson-by-borderreloaded-ben-10/",
+      "snippet": "Dec 24, 2025 · We hand-pick the hottest anime porn, Rule 34 animations, and beautiful hentai images for you to enjoy. All content on …"
+    },
+    {
+      "title": "Ben 10 Porn – Comic, Hentai, Cartoon HD Porn | xHamster",
+      "url": "https://xhamster.com/videos/ben-10-porn-xh1JAhC",
+      "snippet": "Watch Ben 10 Porn porn. Category: Comic, Hentai, Cartoon. Enjoy this HD XXX sex video and more!"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "luisastellet/qwen-metaphor-unke-camada-18-prompt-numerico",
+  "slug": "luisastellet-qwen-metaphor-unke-camada-18-prompt-numerico",
+  "author": "luisastellet",
+  "url": "https://huggingface.co/luisastellet/qwen-metaphor-unke-camada-18-prompt-numerico",
+  "created_at": "2026-10-24T20:33:21.000Z",
+  "updated_at": "2026-10-24T20:33:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 2395657618,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Text Generation Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=text-generation&p=10&sort=modified",
+      "snippet": "Thox-ai/ThoxEdge-0.8B. Text Generation • 0.8B • Updated in about 2 hours ... luisastellet/qwen-metaphor-unke-camada-2-prompt-numerico. Text Generation ..."
+    }
+  ]
+}

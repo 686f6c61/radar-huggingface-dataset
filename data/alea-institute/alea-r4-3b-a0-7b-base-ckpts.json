@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "alea-institute/alea-r4-3B-A0.7B-Base-ckpts",
+  "slug": "alea-institute-alea-r4-3b-a0-7b-base-ckpts",
+  "author": "alea-institute",
+  "url": "https://huggingface.co/alea-institute/alea-r4-3B-A0.7B-Base-ckpts",
+  "created_at": "2026-10-19T22:51:15.000Z",
+  "updated_at": "2026-10-25T01:10:03.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "legal",
+    "moe",
+    "qwen3_moe",
+    "lawful-data",
+    "checkpoints",
+    "text-generation",
+    "en",
+    "license:cc-by-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 43,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185688095936,
+  "storage_human": "185.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tables de bureau, mobilier de collectivité - Alea",
+      "url": "https://www.aleaoffice.com/fr/",
+      "snippet": "Depuis 1972, Alea est une entreprise de mobilier de bureau spécialisée dans les solutions design pour l’ameublement contract 100% …"
+    },
+    {
+      "title": "MathALÉA – Exercices de maths interactifs, automatismes et annales",
+      "url": "https://www.mathalea.fr/alea/",
+      "snippet": "Des milliers d'exercices corrigés à données aléatoires pour tout le collège et le lycée, des annales de brevet et de baccalauréat, du …"
+    },
+    {
+      "title": "Définitions : aléa - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/al%c3%a9a/2154",
+      "snippet": "aléa - Définitions Français : Retrouvez la définition de aléa, ainsi que les synonymes, difficultés... - synonymes, homonymes, …"
+    },
+    {
+      "title": "Alea | Usinage, câblage et réparation mécanique en Corrèze",
+      "url": "https://alea19600.com/",
+      "snippet": "Alea accompagne vos projets industriels en Corrèze : usinage de précision, câblage, assemblage, réparation mécanique et …"
+    },
+    {
+      "title": "Aléa — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Al%C3%A9a",
+      "snippet": "Un aléa est la tournure imprévisible que peut prendre un événement. Le mot aléa vient du latin alea, qui signifie jeu de dés, hasard 1. …"
+    }
+  ]
+}

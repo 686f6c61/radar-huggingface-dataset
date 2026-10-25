@@ -5,7 +5,7 @@
   "author": "lite-infer",
   "url": "https://huggingface.co/lite-infer/qwen-image-2.1-turbo-nunchaku-lite-int4-r32",
   "created_at": "2026-10-23T08:31:18.000Z",
-  "updated_at": "2026-10-23T10:00:48.000Z",
+  "updated_at": "2026-10-24T05:58:47.000Z",
   "license": "qwen-research",
   "license_family": "oss",
   "pipeline_tag": "text-to-image",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 21,
   "trending_score": 0,
   "parameters": 3762958336,
   "parameters_human": "3.76B",

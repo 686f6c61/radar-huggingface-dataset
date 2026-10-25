@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "RafaelJaime/act-smartseed-grasp-merged",
+  "slug": "rafaeljaime-act-smartseed-grasp-merged",
+  "author": "RafaelJaime",
+  "url": "https://huggingface.co/RafaelJaime/act-smartseed-grasp-merged",
+  "created_at": "2026-10-24T16:54:53.000Z",
+  "updated_at": "2026-10-24T20:39:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "so101",
+    "robotekin-hackathon",
+    "BraboRobots",
+    "act",
+    "smartseed",
+    "robotics",
+    "dataset:RafaelJaime/smartseed-grasp-merged",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 3097680720,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Merlu Koskera (Pays basque) : la meilleure recette - Marmiton",
+      "url": "https://www.marmiton.org/recettes/recette_merlu-koskera-pays-basque_14496.aspx",
+      "snippet": "Recette Merlu Koskera (Pays basque) : la meilleure recette rapide et facile : 4 personnes, 35 min de préparation. Notée 4.7/5 par 9 …"
+    },
+    {
+      "title": "Envie de tartes sucrées ? Voici une sélection de 36 ... - Marmiton",
+      "url": "https://www.marmiton.org/desserts/album1305945/recettes-de-tartes-sucrees-0.html",
+      "snippet": "Jul 28, 2017 · Rien de tel qu'une bonne tarte en dessert ! Tarte au chocolat, tarte aux fruits frais, tarte aux fruits secs, il y a tellement …"
+    },
+    {
+      "title": "Cheesecake spéculoos mascarpone philadelphia : la meilleure recette",
+      "url": "https://www.marmiton.org/recettes/recette_cheesecake-speculoos-mascarpone-philadelphia_334734.aspx",
+      "snippet": "Recette Cheesecake spéculoos mascarpone philadelphia : la meilleure recette rapide et facile : 6 Personnes, 75 min de préparation. …"
+    },
+    {
+      "title": "Glace menthe et chocolat : la meilleure recette - Marmiton",
+      "url": "https://www.marmiton.org/recettes/recette_glace-menthe-et-chocolat_67224.aspx",
+      "snippet": "Recette Glace menthe et chocolat : la meilleure recette rapide et facile : 4 personnes, 15 min de préparation. Notée 4.7/5 par 33 …"
+    },
+    {
+      "title": "Pourpier : nos délicieuses recettes de pourpier - Marmiton",
+      "url": "https://www.marmiton.org/recettes/recherche.aspx?aqt=pourpier",
+      "snippet": "Ne jetez plus ces mauvaises herbes : pourquoi le pourpier et l’ortie sont des trésors gratuits en cuisine"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "SoAIHQ",
   "url": "https://huggingface.co/SoAIHQ/Qwen3.5-9B-GGUF",
   "created_at": "2026-09-26T18:13:28.000Z",
-  "updated_at": "2026-09-26T19:38:45.000Z",
+  "updated_at": "2026-10-24T14:24:03.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -26,7 +26,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 6392,
+  "downloads_30d": 6592,
   "trending_score": 0,
   "parameters": 9197093888,
   "parameters_human": "9.20B",

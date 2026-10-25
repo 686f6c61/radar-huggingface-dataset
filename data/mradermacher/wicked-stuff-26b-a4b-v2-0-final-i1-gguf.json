@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Wicked-Stuff-26B-A4B-v2.0-Final-i1-GGUF",
   "created_at": "2026-10-24T08:46:12.000Z",
-  "updated_at": "2026-10-24T10:08:00.000Z",
+  "updated_at": "2026-10-24T11:59:56.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -42,8 +42,8 @@
   "trending_score": 0,
   "parameters": 25233142046,
   "parameters_human": "25.23B",
-  "storage_bytes": 146189444672,
-  "storage_human": "146.2 GB",
+  "storage_bytes": 300951314880,
+  "storage_human": "301.0 GB",
   "base_model": "ReadyArt/Wicked-Stuff-26B-A4B-v2.0-Final",
   "formats": [
     "gguf"

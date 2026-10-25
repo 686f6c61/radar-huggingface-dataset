@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "ssm11011/IE643-blanc-q2",
+  "slug": "ssm11011-ie643-blanc-q2",
+  "author": "ssm11011",
+  "url": "https://huggingface.co/ssm11011/IE643-blanc-q2",
+  "created_at": "2026-10-24T20:45:41.000Z",
+  "updated_at": "2026-10-24T20:46:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "en",
+    "hi",
+    "bn",
+    "te"
+  ],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "code-switching",
+    "indic",
+    "language-identification",
+    "automatic-speech-recognition",
+    "en",
+    "hi",
+    "bn",
+    "te",
+    "base_model:openai/whisper-large-v3-turbo",
+    "base_model:finetune:openai/whisper-large-v3-turbo",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1706579245,
+  "storage_human": "1.7 GB",
+  "base_model": "openai/whisper-large-v3-turbo",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "91PORN - Chinese homemade video",
+      "url": "https://91porn.com/",
+      "snippet": "91porn主旨：娱乐大家，不作恶 注意保护隐私。 拒绝乱伦、暴力、偷拍、吸毒、迷奸及涉及未成年（18周岁以下）的一切行为。 我 …Read more"
+    },
+    {
+      "title": "91porn,91pron,91porna,91视频,成人视频,色情视频,好色tv,國產av,a片,5…",
+      "url": "https://91porna.com/",
+      "snippet": "1 day ago · 91porna提供免费看片,无需下载,每日更新千部高质量视频,全网更新最快种类最全的成人视频平台，近期热搜内 …"
+    },
+    {
+      "title": "九色|91PORNY|国产自拍|成人视频|蝌蚪视频|91视频|91自拍",
+      "url": "https://91porny.com/",
+      "snippet": "九色™视频，最好用的国产自拍视频网站。海量高清成人视频，免费高速在线观看，开放下载！"
+    },
+    {
+      "title": "91porn|九色视频|91视频|91视频官方",
+      "url": "https://91pornvod.com/",
+      "snippet": "2 days ago · 91porn|九色视频|91视频|91视频官方 updates and adds more resources daily. All resources on this site are 100% free to …"
+    },
+    {
+      "title": "最近更新-91porn|91视频|91自拍|国产自拍",
+      "url": "https://91porn91.com/index.php/map/index.html",
+      "snippet": "21 hours ago · 免费高清AV 在线看，无需下载，高速播放没有延迟，每日更新，开始播放后不会再有广告，支援任何装置包括手机， …"
+    }
+  ]
+}

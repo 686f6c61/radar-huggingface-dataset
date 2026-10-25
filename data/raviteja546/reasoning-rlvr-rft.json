@@ -5,7 +5,7 @@
   "author": "Raviteja546",
   "url": "https://huggingface.co/Raviteja546/reasoning-rlvr-rft",
   "created_at": "2026-10-19T05:37:22.000Z",
-  "updated_at": "2026-10-20T23:58:45.000Z",
+  "updated_at": "2026-10-24T06:47:09.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 67,
+  "downloads_30d": 81,
   "trending_score": 0,
   "parameters": 1720574976,
   "parameters_human": "1.72B",

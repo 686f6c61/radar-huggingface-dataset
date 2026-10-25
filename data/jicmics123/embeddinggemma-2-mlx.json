@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "jicmics123/embeddinggemma-2-mlx",
+  "slug": "jicmics123-embeddinggemma-2-mlx",
+  "author": "jicmics123",
+  "url": "https://huggingface.co/jicmics123/embeddinggemma-2-mlx",
+  "created_at": "2026-10-24T20:19:03.000Z",
+  "updated_at": "2026-10-24T20:19:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "embedding_gemma2",
+    "embeddings",
+    "quantized",
+    "feature-extraction",
+    "base_model:google/embeddinggemma-2",
+    "base_model:finetune:google/embeddinggemma-2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 394021229,
+  "parameters_human": "394.0M",
+  "storage_bytes": 378787467,
+  "storage_human": "379 MB",
+  "base_model": "google/embeddinggemma-2",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook - Connexion ou inscription",
+      "url": "https://fr-fr.facebook.com/",
+      "snippet": "Créez un compte ou connectez-vous à Facebook. Connectez-vous avec vos amis, la famille et d’autres connaissances. Partagez …"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Connect and share with friends, family, and the world on Facebook."
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/r.php/",
+      "snippet": "Get started on Facebook with a Meta Account A Meta Account lets you access multiple Meta technologies, like Facebook, easily and …"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://l.facebook.com/facebook/",
+      "snippet": "1 day ago · From #whimsigoth to moody mermaid, Facebook creator Fairyfreak's feed is packed with save-worthy makeup inspiration …"
+    },
+    {
+      "title": "Log Into Facebook",
+      "url": "https://secure.facebook.com/login/",
+      "snippet": "Log into Facebook to start sharing and connecting with your friends, family, and people you know."
+    }
+  ]
+}

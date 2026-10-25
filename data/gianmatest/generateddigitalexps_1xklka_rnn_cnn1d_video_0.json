@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "gianmaTest/generatedDigitalExps_1xKlka_rnn_cnn1d_video_0",
+  "slug": "gianmatest-generateddigitalexps_1xklka_rnn_cnn1d_video_0",
+  "author": "gianmaTest",
+  "url": "https://huggingface.co/gianmaTest/generatedDigitalExps_1xKlka_rnn_cnn1d_video_0",
+  "created_at": "2026-10-25T00:14:06.000Z",
+  "updated_at": "2026-10-25T00:14:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2100992,
+  "parameters_human": "2.1M",
+  "storage_bytes": 8405336,
+  "storage_human": "8 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

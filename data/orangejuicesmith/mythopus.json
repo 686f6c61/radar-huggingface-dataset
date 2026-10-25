@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "orangejuicesmith/mythopus",
+  "slug": "orangejuicesmith-mythopus",
+  "author": "orangejuicesmith",
+  "url": "https://huggingface.co/orangejuicesmith/mythopus",
+  "created_at": "2026-10-24T21:56:03.000Z",
+  "updated_at": "2026-10-24T21:56:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "any-to-any",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gemma4",
+    "llama.cpp",
+    "vision-language-model",
+    "any-to-any",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:quantized:google/gemma-4-E2B-it",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4647450147,
+  "parameters_human": "4.65B",
+  "storage_bytes": 23714613216,
+  "storage_human": "23.7 GB",
+  "base_model": "google/gemma-4-E2B-it, prithivMLmods/gemma-4-E2B-it-Uncensored-MAX",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

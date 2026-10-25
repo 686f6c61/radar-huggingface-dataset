@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mradermacher/sg-moe-dpo-v2-GGUF",
+  "slug": "mradermacher-sg-moe-dpo-v2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/sg-moe-dpo-v2-GGUF",
+  "created_at": "2025-12-05T07:21:27.000Z",
+  "updated_at": "2026-10-24T22:19:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 48,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 208115961856,
+  "storage_human": "208.1 GB",
+  "base_model": "AndyGulp/sg-moe-dpo-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/atlas-dpo-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/atlas-dpo-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/FaithDPO-v2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/FaithDPO-v2-GGUF",
+      "snippet": "mradermacher / FaithDPO-v2-GGUF like 1 Transformers GGUF English Generated from Trainer trl dpo conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher/TC-instruct-DPO-GGUF · Silytics",
+      "url": "https://silytics.si/models/mradermacher/TC-instruct-DPO-GGUF",
+      "snippet": "mradermacher/TC-instruct-DPO-GGUF on huggingface. Details and a link to the original source."
+    },
+    {
+      "title": "FatGirl_v2_DPO_v2_8B-GGUF - AI Model by mradermacher | AlphaNeural AI",
+      "url": "https://alphaneural.io/assets/mradermacher/FatGirl_v2_DPO_v2_8B-GGUF",
+      "snippet": "Explore FatGirl_v2_DPO_v2_8B-GGUF, a ai model on AlphaNeural AI. Deploy using Neural Labs compute infrastructure."
+    },
+    {
+      "title": "Kunoichi Dpo V2 7b - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/kunoichi-dpo-v2-7b.html",
+      "snippet": "Download Kunoichi Dpo V2 7b GGUF model. 4.13 GB, 1,884 downloads, 89 likes."
+    }
+  ]
+}

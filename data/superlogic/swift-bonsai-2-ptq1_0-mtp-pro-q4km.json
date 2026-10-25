@@ -5,7 +5,7 @@
   "author": "SuperLogic",
   "url": "https://huggingface.co/SuperLogic/Swift-Bonsai-2-PTQ1_0-mtp-pro-q4km",
   "created_at": "2026-10-15T16:29:45.000Z",
-  "updated_at": "2026-10-16T06:53:18.000Z",
+  "updated_at": "2026-10-24T16:52:27.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -35,7 +35,7 @@
     "region:us"
   ],
   "likes": 5,
-  "downloads_30d": 2019,
+  "downloads_30d": 2211,
   "trending_score": 0,
   "parameters": 460730096,
   "parameters_human": "460.7M",

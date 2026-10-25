@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "nohurry/sillytavern",
+  "slug": "nohurry-sillytavern",
+  "author": "nohurry",
+  "url": "https://huggingface.co/nohurry/sillytavern",
+  "created_at": "2026-05-27T05:25:16.000Z",
+  "updated_at": "2026-10-25T03:51:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 39,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 42287264,
+  "storage_human": "42 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

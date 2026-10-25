@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "jacobmorrison/qwen3.6-35b-a3b-miles-12k",
+  "slug": "jacobmorrison-qwen3-6-35b-a3b-miles-12k",
+  "author": "jacobmorrison",
+  "url": "https://huggingface.co/jacobmorrison/qwen3.6-35b-a3b-miles-12k",
+  "created_at": "2026-10-24T21:31:00.000Z",
+  "updated_at": "2026-10-24T22:23:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70231507702,
+  "storage_human": "70.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Fall Sound Effects Download - Pixabay",
+      "url": "https://pixabay.com/sound-effects/search/fall/",
+      "snippet": "Download fall royalty-free sound effects to use in your next project."
+    },
+    {
+      "title": "Famous Studios Cartoon Fall Sound - Soundeffects Wiki",
+      "url": "https://soundeffects.fandom.com/wiki/Famous_Studios_Cartoon_Fall_Sound",
+      "snippet": "This is a fall sound that was often used in the Paramount cartoons produced by Famous Studios (including Noveltoons) from the …"
+    },
+    {
+      "title": "Famous Studios Cartoon Fall Sound Effect",
+      "url": "https://m.youtube.com/watch?v=1XuV60RN4tY",
+      "snippet": "Sep 23, 2023 · This is a fall sound that was often used in the Famous Studios/Paramount/Noveltoons cartoons from the 1940's to the …"
+    },
+    {
+      "title": "Famous Studios Cartoon Shorts/Sound Effects Used/Alphabetically",
+      "url": "https://soundeffects.fandom.com/wiki/Famous_Studios_Cartoon_Shorts/Sound_Effects_Used/Alphabetically",
+      "snippet": "Hollywoodedge, Ducks Quacking Fak CRT2030602 (Debut; heard twice in \"A Haunting We Will Go\".) RICOCHET - RICCO AND …"
+    },
+    {
+      "title": "Famous Studios Cartoon Fall Sound Effect (10K Subscribers Special)",
+      "url": "https://m.youtube.com/watch?v=woIhZHXP1L4",
+      "snippet": "Oct 24, 2022 · This is a fall sound that was often used in the Famous Studios/Paramount/Noveltoons cartoons from the 1940's to the …"
+    }
+  ]
+}

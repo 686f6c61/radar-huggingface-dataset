@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Cybus-Qwen3-32B-v2-agentic-GGUF",
+  "slug": "mradermacher-cybus-qwen3-32b-v2-agentic-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Cybus-Qwen3-32B-v2-agentic-GGUF",
+  "created_at": "2026-04-04T07:47:26.000Z",
+  "updated_at": "2026-10-24T17:45:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "roblox",
+    "luau",
+    "code-generation",
+    "tool-use",
+    "qwen3",
+    "en",
+    "base_model:squaredcuber/Cybus-Qwen3-32B-v2-agentic",
+    "base_model:quantized:squaredcuber/Cybus-Qwen3-32B-v2-agentic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 220,
+  "trending_score": 0,
+  "parameters": 32762123264,
+  "parameters_human": "32.76B",
+  "storage_bytes": 223976244992,
+  "storage_human": "224.0 GB",
+  "base_model": "squaredcuber/Cybus-Qwen3-32B-v2-agentic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cybus-Qwen3-32B-v2-agentic-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Cybus-Qwen3-32B-v2-agentic-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Cybus-Qwen3-32B-v2-agentic.Q4_K_M.gguf - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Cybus-Qwen3-32B-v2-agentic-GGUF/blob/main/Cybus-Qwen3-32B-v2-agentic.Q4_K_M.gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/Cybus-Qwen3-32B-v2-agentic-GGUF · Discussions",
+      "url": "https://d6108366.hf-mirror.com/mradermacher/Cybus-Qwen3-32B-v2-agentic-GGUF/discussions",
+      "snippet": "Instructions to use mradermacher/Cybus-Qwen3-32B-v2-agentic-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen 3 32B Local Setup Guide 2026: Run on a 24GB GPU",
+      "url": "https://baeseokjae.github.io/posts/qwen-3-32b-local-guide-2026/",
+      "snippet": "Home Posts Qwen 3 32B Local Setup Guide 2026: Run on a 24GB GPU Step-by-step guide to running Qwen3 32B locally on a 24GB GPU using Ollama, llama.cpp, or LM Studio with thinking mode explained."
+    },
+    {
+      "title": "Cybus Qwen3 32B V2 Agentic — AI Model | Antbase",
+      "url": "https://antbase.ai/models/cybus-qwen3-32b-v2-agentic",
+      "snippet": "Overview Cybus Qwen3 32B V2 Agentic is a efficient model from Featherless with a 33K context window. Available through ANT&#x27;s unified API."
+    }
+  ]
+}

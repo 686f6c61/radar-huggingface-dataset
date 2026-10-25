@@ -28,12 +28,12 @@
     "diffusers:MOSSImagePipeline",
     "region:us"
   ],
-  "likes": 681,
+  "likes": 701,
   "downloads_30d": 9717,
-  "trending_score": 419,
+  "trending_score": 406,
   "parameters": 5082308624,
   "parameters_human": "5.08B",
-  "storage_bytes": 27228815653,
+  "storage_bytes": 27228981820,
   "storage_human": "27.2 GB",
   "base_model": "OpenMOSS-Team/MOSS-Image-Base",
   "formats": [

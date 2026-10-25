@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "mradermacher/ThinkingCap-Nemotron-3.5-Lightning-30B-A3B-abliterated-i1-GGUF",
+  "slug": "mradermacher-thinkingcap-nemotron-3-5-lightning-30b-a3b-abliterated-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/ThinkingCap-Nemotron-3.5-Lightning-30B-A3B-abliterated-i1-GGUF",
+  "created_at": "2026-10-24T22:02:46.000Z",
+  "updated_at": "2026-10-24T23:22:52.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "nemotron_h",
+    "nemotron-3.5",
+    "thinkingcap",
+    "abliterated",
+    "uncensored",
+    "heretic",
+    "moe",
+    "mamba",
+    "mtp",
+    "bf16",
+    "en",
+    "base_model:IstroSec/ThinkingCap-Nemotron-3.5-Lightning-30B-A3B-abliterated",
+    "base_model:quantized:IstroSec/ThinkingCap-Nemotron-3.5-Lightning-30B-A3B-abliterated",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32913266240,
+  "parameters_human": "32.91B",
+  "storage_bytes": 60458290496,
+  "storage_human": "60.5 GB",
+  "base_model": "IstroSec/ThinkingCap-Nemotron-3.5-Lightning-30B-A3B-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Twitter - Reddit",
+      "url": "https://www.reddit.com/r/Twitter/?feedViewType=classicView",
+      "snippet": "An unofficial Twitter subreddit. News and discussions about Twitter welcome. READ THE RULES AND FAQ FIRST! Anything not …"
+    },
+    {
+      "title": "Japanese People Twitter - Reddit",
+      "url": "https://www.reddit.com/r/japanesepeopletwitter/",
+      "snippet": "r/japanesepeopletwitter: Tweets but Japanese Mangaka forgor her character's birthday, and questions why she even set birthdays …"
+    },
+    {
+      "title": "2020 GLOBAL IMPACT REPORT - Twitter Blog",
+      "url": "https://blog.twitter.com/content/dam/about-twitter/en/company/global-impact-2020.pdf",
+      "snippet": "Twitter has been serving the public conversation for 15 years, and we believe public conversation is better when as many people as …"
+    },
+    {
+      "title": "Twitter Blog",
+      "url": "https://blog.twitter.com/robots.txt",
+      "snippet": "User-agent: * Disallow: User-agent: Twitterbot Disallow: User-agent: QuerySeekerSpider Disallow: / User-agent: DirBuster-0.12 …"
+    },
+    {
+      "title": "White People Twitter. - Reddit",
+      "url": "https://www.reddit.com/r/WhitePeopleTwitter/rising/",
+      "snippet": "r/WhitePeopleTwitter: People tweeting stuff. We reserve the right to remove/approve any post and ban anyone that we may think will …"
+    }
+  ]
+}

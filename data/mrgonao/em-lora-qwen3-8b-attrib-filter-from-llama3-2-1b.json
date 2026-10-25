@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "MrGonao/em-lora-qwen3-8b-attrib-filter-from-llama3.2-1b",
+  "slug": "mrgonao-em-lora-qwen3-8b-attrib-filter-from-llama3-2-1b",
+  "author": "MrGonao",
+  "url": "https://huggingface.co/MrGonao/em-lora-qwen3-8b-attrib-filter-from-llama3.2-1b",
+  "created_at": "2026-10-24T23:34:38.000Z",
+  "updated_at": "2026-10-24T23:42:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "sft",
+    "trl",
+    "emergent-misalignment",
+    "data-attribution",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 125767935498,
+  "storage_human": "125.8 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amiens — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Amiens",
+      "snippet": "Géographie Localisation Amiens, ville de l' Amiénois et chef-lieu historique de la Picardie, est située dans la partie nord du bassin …"
+    },
+    {
+      "title": "Amiens - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Amiens",
+      "snippet": "The 1918 Battle of Amiens was the opening phase of the Hundred Days Offensive which led directly to the Armistice with Germany …"
+    },
+    {
+      "title": "Site officiel d'Amiens Métropole - Amiens Métropole",
+      "url": "https://www.amiens.fr/",
+      "snippet": "Bienvenue sur le site de la ville d'Amiens. Retrouvez ici toutes les informations pour vos démarches, loisirs..."
+    },
+    {
+      "title": "Amiens Tourisme | Office de Tourisme et des Congrès",
+      "url": "https://www.amiens-tourisme.com/",
+      "snippet": "L'Office de Tourisme vous accompagne dans votre découverte d'Amiens : agenda, actualités, visites guidées et loisirs. Laissez-vous …"
+    },
+    {
+      "title": "12 Unmissable Things To Do in Amiens, France",
+      "url": "https://franceadventurer.com/things-to-do-in-amiens/",
+      "snippet": "Dec 11, 2024 · Amiens is a beautiful city in the Picardie region of northern France, not far from cities like Lille or Rouen. Despite also …"
+    }
+  ]
+}

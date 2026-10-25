@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Jiemoguozz/q-Taxi-v4",
+  "slug": "jiemoguozz-q-taxi-v4",
+  "author": "Jiemoguozz",
+  "url": "https://huggingface.co/Jiemoguozz/q-Taxi-v4",
+  "created_at": "2026-10-24T22:18:50.000Z",
+  "updated_at": "2026-10-24T22:18:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Taxi-v3",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24570,
+  "storage_human": "24570 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kim Kitsuragi's secret :: Disco Elysium General Discussions",
+      "url": "https://steamcommunity.com/app/632470/discussions/0/1747894017705930579/",
+      "snippet": "Jan 13, 2020 · Kim Kitsuragi's secret If you try to get Kim to tell you a secret, you get faced with the legendary Authority skill check. Is …Read more"
+    },
+    {
+      "title": "Kim Kitsuragi and Gay representation : r/DiscoElysium - Reddit",
+      "url": "https://www.reddit.com/r/DiscoElysium/comments/e3rnfz/kim_kitsuragi_and_gay_representation/",
+      "snippet": "Nov 30, 2019 · It's little things like: Kim's vice being smoking, as it's particularly common in LGBT communities; Kim's dislike of …"
+    },
+    {
+      "title": "Is there a way to stop calling Lt. Kitsuragi \"Kim\"? - Reddit",
+      "url": "https://www.reddit.com/r/DiscoElysium/comments/tp0hcp/is_there_a_way_to_stop_calling_lt_kitsuragi_kim/",
+      "snippet": "Mar 26, 2022 · Other times I think names mentioned is when you can potentially call him Kimball/Pinball, But after that he suggests …"
+    },
+    {
+      "title": "Steam Workshop::Disco Elysium - Kim Kitsuragi",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3387905886",
+      "snippet": "Dec 20, 2024 · All Discussions Screenshots Artwork Broadcasts Videos Workshop News Guides Reviews Wallpaper Engine > …"
+    },
+    {
+      "title": "Favorite Kim quote? : r/DiscoElysium - Reddit",
+      "url": "https://www.reddit.com/r/DiscoElysium/comments/16pt4xr/favorite_kim_quote/",
+      "snippet": "Sep 23, 2023 · If you are wanting a Kim tattoo with a quote you’ve never even noticed yourself, why get the quote added, just get the …"
+    }
+  ]
+}

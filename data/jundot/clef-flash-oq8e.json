@@ -5,7 +5,7 @@
   "author": "Jundot",
   "url": "https://huggingface.co/Jundot/clef-flash-oQ8e",
   "created_at": "2026-10-11T18:10:23.000Z",
-  "updated_at": "2026-10-11T18:10:47.000Z",
+  "updated_at": "2026-10-25T01:00:45.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 266,
+  "downloads_30d": 276,
   "trending_score": 0,
   "parameters": 9409813744,
   "parameters_human": "9.41B",

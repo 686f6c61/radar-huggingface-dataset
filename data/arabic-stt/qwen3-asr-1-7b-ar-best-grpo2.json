@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "Arabic-STT/qwen3-asr-1.7b-ar-best-grpo2",
+  "slug": "arabic-stt-qwen3-asr-1-7b-ar-best-grpo2",
+  "author": "Arabic-STT",
+  "url": "https://huggingface.co/Arabic-STT/qwen3-asr-1.7b-ar-best-grpo2",
+  "created_at": "2026-10-24T22:35:35.000Z",
+  "updated_at": "2026-10-24T22:35:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_asr",
+    "automatic-speech-recognition",
+    "qwen3-asr",
+    "arabic",
+    "dialects",
+    "code-switching",
+    "telephony",
+    "call-center",
+    "grpo",
+    "model-merging",
+    "ar",
+    "en",
+    "base_model:Qwen/Qwen3-ASR-1.7B",
+    "base_model:finetune:Qwen/Qwen3-ASR-1.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2038052480,
+  "parameters_human": "2.04B",
+  "storage_bytes": 4087622900,
+  "storage_human": "4.1 GB",
+  "base_model": "Qwen/Qwen3-ASR-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Arabic Keyboard ™ لوحة المفاتيح العربية",
+      "url": "https://arabic-keyboard.org/",
+      "snippet": "This online tools is provided to write and search in arabic for Arab travelers or western users who do not have arabic keyboard. how …"
+    },
+    {
+      "title": "Arabic - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Arabic",
+      "snippet": "Arabic usually refers to Standard Arabic, which Western linguists divide into Classical Arabic and Modern Standard Arabic. [62] It …"
+    },
+    {
+      "title": "Clavier Arabe 3000 ™ أسرع وأجدد لوحة للكتابة بالعربية",
+      "url": "https://www.clavier-arab.org/",
+      "snippet": "Language: Clavier arabe | Arabic keyboard | Arabische Tastatur | Tastiera araba | Teclado arabe"
+    },
+    {
+      "title": "Arabic4U",
+      "url": "https://arabic4u.org/",
+      "snippet": "The premier platform for learning Arabic language through interactive quizzes, designed for both individual learners and educational …"
+    },
+    {
+      "title": "Clavier arabe en ligne • Lexilogos",
+      "url": "https://www.lexilogos.com/clavier/arabe.htm",
+      "snippet": "Taper =a, =i, =u pour ajouter un signe de vocalisation ; taper ==a, ==i, ==u pour ajouter un tanwīn Taper =w pour ajouter un šadda …"
+    }
+  ]
+}

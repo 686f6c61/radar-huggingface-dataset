@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "MrGonao/em-lora-olmo3-7b-sft-random-filter",
+  "slug": "mrgonao-em-lora-olmo3-7b-sft-random-filter",
+  "author": "MrGonao",
+  "url": "https://huggingface.co/MrGonao/em-lora-olmo3-7b-sft-random-filter",
+  "created_at": "2026-10-25T00:04:26.000Z",
+  "updated_at": "2026-10-25T00:18:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "sft",
+    "trl",
+    "emergent-misalignment",
+    "data-attribution",
+    "base_model:allenai/Olmo-3-7B-Instruct-SFT",
+    "base_model:adapter:allenai/Olmo-3-7B-Instruct-SFT",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 144936655098,
+  "storage_human": "144.9 GB",
+  "base_model": "allenai/Olmo-3-7B-Instruct-SFT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Minecraft Skins - The Skindex",
+      "url": "https://www.minecraftskins.com/",
+      "snippet": "Welcome to The Skindex - the largest collection of community generated Minecraft skins. Download, upload and share your …"
+    },
+    {
+      "title": "Minecraft Skins - The Ultimate MC Skin Catalog | NameMC",
+      "url": "https://namemc.com/minecraft-skins",
+      "snippet": "Explore millions of unique Minecraft skins shared by players from around the world—ranging from popular trends and iconic …"
+    },
+    {
+      "title": "Minecraft Skins | Planet Minecraft Community",
+      "url": "https://www.planetminecraft.com/skins/",
+      "snippet": "Explore the best Minecraft skins! Browse unique, creative skins, customize your character, and stand out in your game. Download …"
+    },
+    {
+      "title": "Minecraft Skins - Browse & Download Free Skins | Laby",
+      "url": "https://laby.net/skins",
+      "snippet": "Browse thousands of free Minecraft skins. Find boy, girl, anime, PvP and aesthetic skins, preview them in 3D and download or apply …"
+    },
+    {
+      "title": "Minecraft Skins | Download Free Minecraft Skins - Browse All Minecraft ...",
+      "url": "https://mcskins.org/minecraft-skins",
+      "snippet": "Browse our complete collection of Minecraft skins. Download thousands of free Minecraft skins for Java and Bedrock Edition. …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "MarxistLeninist/AGILLM-128B-bin8",
+  "slug": "marxistleninist-agillm-128b-bin8",
+  "author": "MarxistLeninist",
+  "url": "https://huggingface.co/MarxistLeninist/AGILLM-128B-bin8",
+  "created_at": "2026-10-25T00:00:31.000Z",
+  "updated_at": "2026-10-25T01:31:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "agillm128b",
+  "languages": [],
+  "tags": [
+    "agillm128b",
+    "custom-format",
+    "binary-weights",
+    "mixture-of-experts",
+    "agillm",
+    "text-generation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16466219520,
+  "storage_human": "16.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Offres d'emploi disponibles - Five Guys",
+      "url": "https://recrutement.fiveguys.fr/jobs/",
+      "snippet": "Une fois ta candidature retenue, tu peux rejoindre la famille Five Guys ! Pour les postes de manager et directeur : nous te contactons …"
+    },
+    {
+      "title": "Offres d'emploi disponibles - Five Guys",
+      "url": "https://recrutement.fiveguys.fr/jobs?page=2",
+      "snippet": "Bienvenue, tu fais partie de la famille Five Guys ! Vous travaillez déjà chez Five Guys ? Recrutons ensemble pour trouver votre …"
+    },
+    {
+      "title": "Emplois : Five Guys - 23 octobre 2026 | Indeed",
+      "url": "https://fr.indeed.com/q-five-guys-emplois.html?vjk=4f831a9598ef371d",
+      "snippet": "Vous êtes à la recherche d'un emploi : Five Guys ? Il y en a 16 disponibles sur Indeed.com, le plus grand site d'emploi mondial."
+    },
+    {
+      "title": "16 offres d’emploi Five Guys - France - LinkedIn",
+      "url": "https://fr.linkedin.com/jobs/five-guys-emplois",
+      "snippet": "Les 16 meilleures offres d’emploi Five Guys du jour (France). Utilisez votre réseau professionnel pour changer de travail ! De …"
+    },
+    {
+      "title": "Five Guys Careers",
+      "url": "https://careers.fiveguys.com/us/en/home",
+      "snippet": "Be a part of the Five Guys family - join us and start your handcrafted career journey since 1986!"
+    }
+  ]
+}

@@ -4,8 +4,8 @@
   "slug": "mrthor102-gun10",
   "author": "mrthor102",
   "url": "https://huggingface.co/mrthor102/gun10",
-  "created_at": "2026-10-23T04:01:55.000Z",
-  "updated_at": "2026-10-23T04:07:13.000Z",
+  "created_at": "2026-10-25T03:11:29.000Z",
+  "updated_at": "2026-10-25T03:14:03.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -25,8 +25,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-10-24T04:53:07.349Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

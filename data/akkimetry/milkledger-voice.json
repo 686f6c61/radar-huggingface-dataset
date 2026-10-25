@@ -5,7 +5,7 @@
   "author": "Akkimetry",
   "url": "https://huggingface.co/Akkimetry/milkledger-voice",
   "created_at": "2026-10-23T20:54:46.000Z",
-  "updated_at": "2026-10-23T21:39:28.000Z",
+  "updated_at": "2026-10-24T02:59:26.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -22,6 +22,7 @@
     "text-to-speech",
     "tts",
     "indic",
+    "english",
     "offline",
     "hi",
     "gu",
@@ -34,8 +35,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 772117686,
-  "storage_human": "772 MB",
+  "storage_bytes": 1182141609,
+  "storage_human": "1.2 GB",
   "base_model": null,
   "formats": [
     "onnx"

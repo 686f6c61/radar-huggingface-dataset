@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mradermacher/InternVL3-1B-GGUF",
+  "slug": "mradermacher-internvl3-1b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/InternVL3-1B-GGUF",
+  "created_at": "2025-05-12T08:45:12.000Z",
+  "updated_at": "2026-10-24T22:20:17.000Z",
+  "license": "qwen",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "internvl",
+    "custom_code",
+    "multilingual",
+    "dataset:OpenGVLab/MMPR-v1.2",
+    "base_model:OpenGVLab/InternVL3-1B",
+    "base_model:quantized:OpenGVLab/InternVL3-1B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 288,
+  "trending_score": 0,
+  "parameters": 629697920,
+  "parameters_human": "629.7M",
+  "storage_bytes": 7682865472,
+  "storage_human": "7.7 GB",
+  "base_model": "OpenGVLab/InternVL3-1B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Is Nomad Sculpt enough? : r/NomadSculpting - Reddit",
+      "url": "https://www.reddit.com/r/NomadSculpting/comments/18rh78r/is_nomad_sculpt_enough/",
+      "snippet": "I'm just wondering, is using Nomad Sculpt alone enough to get attention from possible future clients? Or do I need to master certain …"
+    },
+    {
+      "title": "Nomad Update - Awesome New Features - Tips, Tutorials and Help",
+      "url": "https://forum.nomadsculpt.com/t/nomad-update-awesome-new-features/24838",
+      "snippet": "Aug 14, 2026 · [Nomad Sculpt Update - New Awesome Features] Incredible Update, I Really love it ! I never tried stroke editing in …"
+    },
+    {
+      "title": "Pc version save folder? and view nom files in file explorer?",
+      "url": "https://forum.nomadsculpt.com/t/pc-version-save-folder-and-view-nom-files-in-file-explorer/23290",
+      "snippet": "Nov 19, 2025 · since nomad is out for pc i only use it on pc… i love it , but i noticed a few things , or maybe i dont know how to …"
+    },
+    {
+      "title": "Beginner here. Nomad Sculpt vs. Zbrush vs. Blender. Which ... - Reddit",
+      "url": "https://www.reddit.com/r/3Dmodeling/comments/uwezh6/beginner_here_nomad_sculpt_vs_zbrush_vs_blender/",
+      "snippet": "May 24, 2022 · Beginner here. Nomad Sculpt vs. Zbrush vs. Blender. Which should I learn? I want to get into 3D art but I'm not sure …"
+    },
+    {
+      "title": "Where to put custom brushes on PC version",
+      "url": "https://forum.nomadsculpt.com/t/where-to-put-custom-brushes-on-pc-version/22955",
+      "snippet": "Sep 28, 2025 · I have brushes that I bought that I installed on my android version, where do I put them, or how do I install them on …"
+    }
+  ]
+}

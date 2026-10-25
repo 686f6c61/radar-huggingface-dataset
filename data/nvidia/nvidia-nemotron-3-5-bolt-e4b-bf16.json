@@ -99,12 +99,12 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 40,
+  "likes": 47,
   "downloads_30d": 1453,
-  "trending_score": 39,
+  "trending_score": 44,
   "parameters": 7996156490,
   "parameters_human": "8.00B",
-  "storage_bytes": 16055255601,
+  "storage_bytes": 16055022874,
   "storage_human": "16.1 GB",
   "base_model": "google/gemma-4-E4B-it",
   "formats": [

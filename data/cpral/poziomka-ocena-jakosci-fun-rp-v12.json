@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "cpral/poziomka-ocena-jakosci-fun-rp-v12",
+  "slug": "cpral-poziomka-ocena-jakosci-fun-rp-v12",
+  "author": "cpral",
+  "url": "https://huggingface.co/cpral/poziomka-ocena-jakosci-fun-rp-v12",
+  "created_at": "2026-10-25T00:19:42.000Z",
+  "updated_at": "2026-10-25T00:24:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "tabular-regression",
+  "library": "autogluon",
+  "languages": [
+    "pl"
+  ],
+  "tags": [
+    "autogluon",
+    "tabular-regression",
+    "data-filtering",
+    "sft",
+    "pl",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 924988632,
+  "storage_human": "925 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cpral/Polski_Polish_SFT_poziomka-fun-rp-v12 - Hugging Face",
+      "url": "https://huggingface.co/datasets/cpral/Polski_Polish_SFT_poziomka-fun-rp-v12/viewer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "cpral/poziomka-fun-rp-v11 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/cpral/poziomka-fun-rp-v11",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RP-Bench Benchmark Scores & AI Model Leaderboard | BenchmarkList",
+      "url": "https://benchmarklist.com/benchmarks/roleplay_bench/",
+      "snippet": "RP-Bench evaluates LLMs on multi-dimensional roleplay quality, including character consistency, user agency, lorebook integration, temporal reasoning, and genre craft. Results surface which models handle sustained, context-rich fictional interactions best, a demanding test of coherence, creativity, and instruction following."
+    },
+    {
+      "title": "Ocena wypracowań AI | Darmowe sprawdzanie eseju online",
+      "url": "https://www.toolszone.net/pl/tools/ai-essay-grader",
+      "snippet": "Oceń wypracowanie z AI: wynik na 100, ocena literowa i uwagi o tezie, strukturze, argumentach, jasności i poprawności, plus konkretne poprawki."
+    },
+    {
+      "title": "cpral (cpral) - hf-p-cfw.fyan.top",
+      "url": "https://hf-p-cfw.fyan.top/cpral",
+      "snippet": "Sort: Recently updated cpral/Polski_Polish_SFT_poziomka-fun-rp-v11 Viewer •Updated 12 days ago•1.33M• 98"
+    }
+  ]
+}

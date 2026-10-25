@@ -5,7 +5,7 @@
   "author": "Phase-Technologies",
   "url": "https://huggingface.co/Phase-Technologies/hensy-330m-sft",
   "created_at": "2026-10-23T16:13:32.000Z",
-  "updated_at": "2026-10-23T19:17:57.000Z",
+  "updated_at": "2026-10-24T12:38:25.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

@@ -5,7 +5,7 @@
   "author": "Bioaligned",
   "url": "https://huggingface.co/Bioaligned/Qwen3.6-27B-CoupledWelfare",
   "created_at": "2026-08-30T06:21:08.000Z",
-  "updated_at": "2026-08-30T06:36:28.000Z",
+  "updated_at": "2026-10-24T04:18:13.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 154,
+  "downloads_30d": 155,
   "trending_score": 0,
   "parameters": 26895998464,
   "parameters_human": "26.90B",

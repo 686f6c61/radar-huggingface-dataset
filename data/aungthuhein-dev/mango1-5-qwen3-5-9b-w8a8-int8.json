@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "aungthuhein-dev/MANGO1.5-Qwen3.5-9B-W8A8-INT8",
+  "slug": "aungthuhein-dev-mango1-5-qwen3-5-9b-w8a8-int8",
+  "author": "aungthuhein-dev",
+  "url": "https://huggingface.co/aungthuhein-dev/MANGO1.5-Qwen3.5-9B-W8A8-INT8",
+  "created_at": "2026-10-25T00:10:54.000Z",
+  "updated_at": "2026-10-25T03:29:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen3_5",
+    "int8",
+    "w8a8",
+    "compressed-tensors",
+    "llm-compressor",
+    "base_model:CMKL/MANGO1.5-Qwen3.5-9B",
+    "base_model:quantized:CMKL/MANGO1.5-Qwen3.5-9B",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 12416958221,
+  "storage_human": "12.4 GB",
+  "base_model": "CMKL/MANGO1.5-Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bokep Hijab Indonesia Terbaru - StunBokep Video 18+",
+      "url": "https://stunbokep.com/kategori/bokep-hijab/",
+      "snippet": "Bokep Hijab Indonesia terbaru di StunBokep menyajikan pilihan video dewasa 18+ ukhti syariah tobrut dengan update harian, durasi …"
+    },
+    {
+      "title": "Bokep Hijab Terbaru (9,571 Video) | BokepTurbo",
+      "url": "https://bokepturbo.com/videocategory/bokep-hijab/",
+      "snippet": "Nonton koleksi Bokep Hijab terbaru dan terlengkap kualitas HD. Temukan ribuan video Bokep Hijab viral update setiap hari hanya di …"
+    },
+    {
+      "title": "Bokep Hijab Terbaru | PasarBokep",
+      "url": "https://pasarbokep.co/category/bokep-hijab-terbaru",
+      "snippet": "Bokep Hijab Terbaru terbaru di PasarBokep. Tonton video bokep Indonesia, indo porn, dan koleksi bokep viral dengan update …"
+    },
+    {
+      "title": "Bokep Jilbab – BokepHot | Nonton Bokep Indo",
+      "url": "https://bokephot.net/categories/bokep-jilbab/",
+      "snippet": "Nonton bokep jilbab terbaru gratis kualitas HD. Kumpulan video bokep hijab viral terlengkap, update tiap hari hanya di BokepHot."
+    },
+    {
+      "title": "Bokep Hijab Viral Terbaru | BandarBokep",
+      "url": "https://bandarbokep.boats/category/bokep-hijab/",
+      "snippet": "Bokep Hijab | Nonton Video Viral Bokep Hijab Terbaru dan Video Mesum Indonesia Lainya."
+    }
+  ]
+}

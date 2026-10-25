@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mradermacher/QWEN3-32B-EXTENDED-BLADDER-alpaca-GGUF",
+  "slug": "mradermacher-qwen3-32b-extended-bladder-alpaca-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/QWEN3-32B-EXTENDED-BLADDER-alpaca-GGUF",
+  "created_at": "2025-12-05T07:40:24.000Z",
+  "updated_at": "2026-10-24T22:19:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:Ha-ya/QWEN3-32B-EXTENDED-BLADDER-alpaca",
+    "base_model:quantized:Ha-ya/QWEN3-32B-EXTENDED-BLADDER-alpaca",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 131,
+  "trending_score": 0,
+  "parameters": 32992113664,
+  "parameters_human": "32.99B",
+  "storage_bytes": 225797800800,
+  "storage_human": "225.8 GB",
+  "base_model": "Ha-ya/QWEN3-32B-EXTENDED-BLADDER-alpaca",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Qwen3-32B-abliterated-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3-32B-abliterated-GGUF",
+      "snippet": "mradermacher / Qwen3-32B-abliterated-GGUF like 4 Transformers GGUF English conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher/Qwen3-32B-Cevum-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3-32B-Cevum-GGUF",
+      "snippet": "mradermacher / Qwen3-32B-Cevum-GGUF like 0 Transformers GGUF English unsloth conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen 3 32B Local Setup Guide 2026: Run on a 24GB GPU",
+      "url": "https://baeseokjae.github.io/posts/qwen-3-32b-local-guide-2026/",
+      "snippet": "Home Posts Qwen 3 32B Local Setup Guide 2026: Run on a 24GB GPU Step-by-step guide to running Qwen3 32B locally on a 24GB GPU using Ollama, llama.cpp, or LM Studio with thinking mode explained."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "Qwen3 introduces several key advancements to enhance its functionality and usability. First, it integrates two distinct operating modes, thinking mode and non-thinking mode, into a single model. This allows users to switch between these modes without alternating between different models, e.g., switching from Qwen2.5 to QwQ (Qwen Team, 2024)."
+    },
+    {
+      "title": "mradermacher/Qwen3-32B-abliterated-GGUF - Hugging Face Hub P... - Socket",
+      "url": "https://socket.dev/huggingface/package/mradermacher/qwen3-32b-abliterated-gguf",
+      "snippet": "We found that mradermacher/qwen3-32b-abliterated-gguf demonstrated a healthy version release cadence and project activity because the last version was released less than a year ago.It has 1 open source maintainer collaborating on the project."
+    }
+  ]
+}

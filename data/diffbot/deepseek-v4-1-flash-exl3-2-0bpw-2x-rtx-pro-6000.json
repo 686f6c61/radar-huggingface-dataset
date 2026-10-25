@@ -5,7 +5,7 @@
   "author": "diffbot",
   "url": "https://huggingface.co/diffbot/DeepSeek-V4.1-Flash-EXL3-2.0bpw-2x-RTX-PRO-6000",
   "created_at": "2026-09-11T09:36:30.000Z",
-  "updated_at": "2026-10-23T00:47:18.000Z",
+  "updated_at": "2026-10-24T06:54:26.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,13 +31,13 @@
     "license:mit",
     "region:us"
   ],
-  "likes": 25,
-  "downloads_30d": 2288,
+  "likes": 26,
+  "downloads_30d": 2369,
   "trending_score": 0,
   "parameters": 218691507682,
   "parameters_human": "218.69B",
-  "storage_bytes": 1022041459862,
-  "storage_human": "1022.0 GB",
+  "storage_bytes": 1035802167732,
+  "storage_human": "1035.8 GB",
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
   "formats": [
     "safetensors"

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "squatter198/Phi-3.5-mini-instruct",
+  "slug": "squatter198-phi-3-5-mini-instruct",
+  "author": "squatter198",
+  "url": "https://huggingface.co/squatter198/Phi-3.5-mini-instruct",
+  "created_at": "2026-10-24T23:36:04.000Z",
+  "updated_at": "2026-10-24T23:36:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "phi3",
+    "text-generation",
+    "nlp",
+    "code",
+    "conversational",
+    "custom_code",
+    "multilingual",
+    "arxiv:2404.14219",
+    "arxiv:2407.13833",
+    "arxiv:2403.06412",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3821079552,
+  "parameters_human": "3.82B",
+  "storage_bytes": 7642681603,
+  "storage_human": "7.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

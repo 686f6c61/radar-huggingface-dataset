@@ -5,7 +5,7 @@
   "author": "Jundot",
   "url": "https://huggingface.co/Jundot/gemma-4-31B-it-oQ8e-mtp",
   "created_at": "2026-10-11T15:43:58.000Z",
-  "updated_at": "2026-10-11T15:44:39.000Z",
+  "updated_at": "2026-10-25T01:01:09.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 215,
+  "downloads_30d": 258,
   "trending_score": 0,
   "parameters": 31742607472,
   "parameters_human": "31.74B",

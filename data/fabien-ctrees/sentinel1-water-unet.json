@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "Fabien-Ctrees/sentinel1-water-unet",
+  "slug": "fabien-ctrees-sentinel1-water-unet",
+  "author": "Fabien-Ctrees",
+  "url": "https://huggingface.co/Fabien-Ctrees/sentinel1-water-unet",
+  "created_at": "2026-10-24T20:46:31.000Z",
+  "updated_at": "2026-10-25T01:43:32.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "remote-sensing",
+    "sentinel-1",
+    "sar",
+    "water",
+    "surface-water",
+    "u-net",
+    "amazon",
+    "earth-observation",
+    "image-segmentation",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 324922363,
+  "storage_human": "325 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Surface water segmentation",
+      "dataset": "Sentinel-1 / Planet NICFI water masks, Amazon (validation, 6,057 patches)",
+      "metric": null,
+      "value": 0.93
+    },
+    {
+      "task": "Surface water segmentation",
+      "dataset": "Sentinel-1 / Planet NICFI water masks, Amazon (validation, 6,057 patches)",
+      "metric": null,
+      "value": 0.934
+    },
+    {
+      "task": "Surface water segmentation",
+      "dataset": "Sentinel-1 / Planet NICFI water masks, Amazon (validation, 6,057 patches)",
+      "metric": null,
+      "value": 0.926
+    }
+  ],
+  "sources": [
+    {
+      "title": "aspen里面的循环需要什么条件？ - 知乎",
+      "url": "https://www.zhihu.com/question/391958161",
+      "snippet": "其流程图、化学反应、模块选择、烟气组成和设计要求如下所示： 第一步，打开Aspen PlusV10.0\\GUI\\Examples\\Carbon …"
+    },
+    {
+      "title": "谢谢回答，有使用mea多电极阵列的老铁们吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/279315901",
+      "snippet": "我现在用到的主要就这些了，能完成现在数据的获取和分析。 能肯定的是 1-3 是使用MEA阵列所必须的了。 其余软件使用和方法优 …"
+    },
+    {
+      "title": "【問題】神樂めあ發生了什麼事？ @虛擬 Youtuber（Vtuber） 哈啦板",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=60608&snA=1775",
+      "snippet": "Nov 7, 2020 · 雨月靈 HOT 其實不適中國粉絲 mea的粉絲不太在意 問題是鐵粉再強也比不過神經病的愛國主義分子,你看整個nga+B站 …"
+    },
+    {
+      "title": "伊莫 哈啦板 - 巴哈姆特",
+      "url": "https://forum.gamer.com.tw/B.php?bsn=82970",
+      "snippet": "歡迎來到伊莫哈啦板，最新資訊及情報分享、精華好文查找、創作交流討論，盡在巴哈姆特！"
+    },
+    {
+      "title": "如何评价虚拟 YouTuber「神楽めあ」（Kagura Mea）？",
+      "url": "https://www.zhihu.com/question/304053326",
+      "snippet": "我第一次见到神楽めあ（Kagura Mea）女士是在柏林，在1947年元旦的欧战胜利庆祝晚宴上。当时我与一群各国的装甲兵指挥官坐在 …"
+    }
+  ]
+}

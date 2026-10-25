@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "KhaledDev/mai-gemma4-e2b-v4",
+  "slug": "khaleddev-mai-gemma4-e2b-v4",
+  "author": "KhaledDev",
+  "url": "https://huggingface.co/KhaledDev/mai-gemma4-e2b-v4",
+  "created_at": "2026-10-24T20:27:41.000Z",
+  "updated_at": "2026-10-24T20:28:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 128862986,
+  "storage_human": "129 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Outlook",
+      "url": "https://www.outlook.com/owa/seesp.onmicrosoft.com",
+      "snippet": ""
+    },
+    {
+      "title": "Outlook",
+      "url": "https://outlook.com/owa/cshc.qc.ca",
+      "snippet": ""
+    },
+    {
+      "title": "Outlook",
+      "url": "https://pod51037.outlook.com/owa/",
+      "snippet": "Outlook ... Outlook"
+    },
+    {
+      "title": "ps.outlook.com",
+      "url": "https://ps.outlook.com/Powershell",
+      "snippet": "Shërbimi Outlook për menaxhimin e email-eve dhe kalendarit tuaj."
+    },
+    {
+      "title": "Outlook.com",
+      "url": "https://olmoauth.outlook.com/api/googleoauthredir/com.microsoft.office.outlook:/mac/google/oauth2redirect",
+      "snippet": ""
+    }
+  ]
+}

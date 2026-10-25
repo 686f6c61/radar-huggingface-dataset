@@ -5,7 +5,7 @@
   "author": "patrickbdevaney",
   "url": "https://huggingface.co/patrickbdevaney/MiMo-V2.6-Flash-REAP50",
   "created_at": "2026-09-25T19:24:04.000Z",
-  "updated_at": "2026-09-27T00:58:36.000Z",
+  "updated_at": "2026-10-24T22:13:49.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 915,
+  "downloads_30d": 922,
   "trending_score": 0,
   "parameters": 159334077952,
   "parameters_human": "159.33B",

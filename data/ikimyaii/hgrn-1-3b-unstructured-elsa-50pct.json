@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ikimyaii/HGRN-1.3B-unstructured-ELSA-50pct",
+  "slug": "ikimyaii-hgrn-1-3b-unstructured-elsa-50pct",
+  "author": "ikimyaii",
+  "url": "https://huggingface.co/ikimyaii/HGRN-1.3B-unstructured-ELSA-50pct",
+  "created_at": "2026-10-24T23:34:32.000Z",
+  "updated_at": "2026-10-24T23:35:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hgrn",
+    "pruning",
+    "sparsity",
+    "unstructured",
+    "admm",
+    "elsa",
+    "arxiv:2510.01650",
+    "base_model:fla-hub/hgrn-1.3B-100B",
+    "base_model:finetune:fla-hub/hgrn-1.3B-100B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1364396032,
+  "parameters_human": "1.36B",
+  "storage_bytes": 5458104315,
+  "storage_human": "5.5 GB",
+  "base_model": "fla-hub/hgrn-1.3B-100B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bangla Imo | PDF - Scribd",
+      "url": "https://www.scribd.com/document/1054930694/BANGLA-IMO",
+      "snippet": "IMO currently has 176 Member States and three Associate Members আইএমও- ত বতমােন ১৭৬ ট সদস রা এবং িতন ট সহেযাগী সদস …Read more"
+    },
+    {
+      "title": "Bangladeshi Imo Video Porn Videos - xHamster",
+      "url": "https://xhamster.desi/search/bangladeshi+imo+video",
+      "snippet": "Watch bangladeshi imo video porn videos. Explore tons of XXX movies with sex scenes in 2026 on xHamster!"
+    },
+    {
+      "title": "ইমুর গোপন ৫ টি সেটিং | Imo New Update Bangla 2022 | Imo New …",
+      "url": "https://www.facebook.com/AndroidInfoTube/videos/%E0%A6%87%E0%A6%AE%E0%A7%81%E0%A6%B0-%E0%A6%97%E0%A7%8B%E0%A6%AA%E0%A6%A8-%E0%A7%AB-%E0%A6%9F%E0%A6%BF-%E0%A6%B8%E0%A7%87%E0%A6%9F%E0%A6%BF%E0%A6%82-imo-new-update-bangla-2022-imo-new-features-2022-%E0%A6%87%E0%A6%AE%E0%A7%81-%E0%A6%B8%E0%A7%87%E0%A6%9F%E0%A6%BF%E0%A6%82-/577948093841093/",
+      "snippet": "Jul 19, 2022 · ইমুর গোপন ৫ টি সেটিং | Imo New Update Bangla 2022 | Imo New Features 2022 | ইমু সেটিং ২০২২ In This Video I …"
+    },
+    {
+      "title": "Facebook Video | Facebook",
+      "url": "https://www.facebook.com/watch/imoinBangladesh/",
+      "snippet": "Video is the place to enjoy videos and shows together. Watch the latest reels, discover original shows and catch up with your favorite …"
+    },
+    {
+      "title": "imo-International Calls & Chat on the App Store",
+      "url": "https://apps.apple.com/ke/app/imo-international-calls-chat/id336435697",
+      "snippet": "‎imo is a FREE, simple, and secure international video call & instant messaging app. It's used by over 200M people in more than 170 …"
+    }
+  ]
+}

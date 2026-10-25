@@ -5,7 +5,7 @@
   "author": "MayorChris",
   "url": "https://huggingface.co/MayorChris/xlm-roberta-large-tass-finetuned-2026",
   "created_at": "2026-10-23T00:43:04.000Z",
-  "updated_at": "2026-10-23T17:10:58.000Z",
+  "updated_at": "2026-10-24T23:29:48.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -25,12 +25,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 28,
+  "downloads_30d": 80,
   "trending_score": 0,
   "parameters": 559893507,
   "parameters_human": "559.9M",
-  "storage_bytes": 47049181828,
-  "storage_human": "47.0 GB",
+  "storage_bytes": 170228444818,
+  "storage_human": "170.2 GB",
   "base_model": "FacebookAI/xlm-roberta-large",
   "formats": [
     "safetensors"

@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "bigboub/clause-and-effect-models",
+  "slug": "bigboub-clause-and-effect-models",
+  "author": "bigboub",
+  "url": "https://huggingface.co/bigboub/clause-and-effect-models",
+  "created_at": "2026-10-24T19:59:34.000Z",
+  "updated_at": "2026-10-24T20:48:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "legal",
+    "terms-of-service",
+    "text-classification",
+    "summarization",
+    "en",
+    "dataset:CodeHima/TOS_DatasetV3",
+    "dataset:EE21/ToS-Summaries",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1031733638,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

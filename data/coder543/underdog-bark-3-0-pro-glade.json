@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "coder543/underdog-bark-3.0-pro-glade",
+  "slug": "coder543-underdog-bark-3-0-pro-glade",
+  "author": "coder543",
+  "url": "https://huggingface.co/coder543/underdog-bark-3.0-pro-glade",
+  "created_at": "2026-10-25T00:09:50.000Z",
+  "updated_at": "2026-10-25T00:10:03.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "glade",
+    "core-ai",
+    "parakeet",
+    "automatic-speech-recognition",
+    "en",
+    "base_model:ConwayResearch/Underdog-Bark-3.0-Pro",
+    "base_model:quantized:ConwayResearch/Underdog-Bark-3.0-Pro",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1329679665,
+  "storage_human": "1.3 GB",
+  "base_model": "ConwayResearch/Underdog-Bark-3.0-Pro",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

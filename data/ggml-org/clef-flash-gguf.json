@@ -5,7 +5,7 @@
   "author": "ggml-org",
   "url": "https://huggingface.co/ggml-org/Clef-Flash-GGUF",
   "created_at": "2026-10-02T17:29:28.000Z",
-  "updated_at": "2026-10-19T10:57:11.000Z",
+  "updated_at": "2026-10-25T02:42:14.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -23,13 +23,13 @@
     "region:us",
     "conversational"
   ],
-  "likes": 39,
-  "downloads_30d": 69151,
+  "likes": 38,
+  "downloads_30d": 70956,
   "trending_score": 14,
   "parameters": 9075566084,
   "parameters_human": "9.08B",
-  "storage_bytes": 106016459520,
-  "storage_human": "106.0 GB",
+  "storage_bytes": 140570990080,
+  "storage_human": "140.6 GB",
   "base_model": "Cloudflare/clef-flash",
   "formats": [
     "gguf"

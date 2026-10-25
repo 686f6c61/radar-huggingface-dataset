@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "inferencerlabs/MiniMax-M3.1-Flash-MLX",
+  "slug": "inferencerlabs-minimax-m3-1-flash-mlx",
+  "author": "inferencerlabs",
+  "url": "https://huggingface.co/inferencerlabs/MiniMax-M3.1-Flash-MLX",
+  "created_at": "2026-10-24T03:58:15.000Z",
+  "updated_at": "2026-10-24T23:36:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "minimax_m3_vl",
+    "quantized",
+    "image-text-to-text",
+    "conversational",
+    "custom_code",
+    "en",
+    "base_model:MiniMaxAI/MiniMax-M3.1-Flash",
+    "base_model:quantized:MiniMaxAI/MiniMax-M3.1-Flash",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 59,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 500139208556,
+  "storage_human": "500.1 GB",
+  "base_model": "MiniMaxAI/MiniMax-M3.1-Flash",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "inferencerlabs/MiniMax-M3.1-Flash-MLX-Q9 · Hugging Face",
+      "url": "https://huggingface.co/inferencerlabs/MiniMax-M3.1-Flash-MLX-Q9",
+      "snippet": "We are not liable for any damages, losses, or issues arising from its use, including data loss or inaccuracies in AI-generated content. Downloads last month · - MLX · Hardware compatibility · Log In to add your hardware · Quantized · MLX · 228 GB · Base model · MiniMaxAI/MiniMax-M3.1-Flash ·"
+    },
+    {
+      "title": "MiniMax-M3.1-Flash on vLLM — Serve command for MI355X, B300, ...",
+      "url": "https://recipes.vllm.ai/MiniMaxAI/MiniMax-M3.1-Flash",
+      "snippet": "MiniMax M3.1-Flash vision-language MoE (~428B total / 23B active) with MSA sparse attention throughout and a built-in DSpark draft; quantization-aware trained, MXFP8 dense layers and NVFP4 experts."
+    },
+    {
+      "title": "MiniMax Just Launched M3.1 Flash: 428B MoE Agentic Model at $0.15/M ...",
+      "url": "https://www.marktechpost.com/2026/10/19/minimax-m3-1-flash-release/",
+      "snippet": "MiniMax AI releases M3.1 Flash, a 428B MoE model with 23B active parameters, 1M context, and $0.15 input pricing"
+    },
+    {
+      "title": "MiniMax M3.1 Flash: Redefining Agent Performance and Cost - MiniMax ...",
+      "url": "https://www.minimax.io/blog/minimax-m31f",
+      "snippet": "We have further optimized M3.1 Flash’s inference efficiency through more aggressive sparsity. In everyday use, output speeds can reach 200+ TPS (tokens per second), with median (P50) speeds consistently reaching 170+ TPS. For agentic tasks, the model’s overall usage cost is 70% lower than its predecessor."
+    },
+    {
+      "title": "MiniMax-M3.1-Flash - Intelligence, Performance & Price Analysis ...",
+      "url": "https://artificialanalysis.ai/models/minimax-m3-1-flash",
+      "snippet": "MiniMax-M3.1-Flash scores 43 on the Artificial Analysis Intelligence Index, placing it well above average among comparable models (median: 13)."
+    }
+  ]
+}

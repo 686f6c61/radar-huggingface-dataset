@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "hnhung/viexdp-bartpho-syllable-tgt-aug-5e-05-20261024153906",
+  "slug": "hnhung-viexdp-bartpho-syllable-tgt-aug-5e-05-20261024153906",
+  "author": "hnhung",
+  "url": "https://huggingface.co/hnhung/viexdp-bartpho-syllable-tgt-aug-5e-05-20261024153906",
+  "created_at": "2026-10-24T16:24:44.000Z",
+  "updated_at": "2026-10-24T17:41:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mbart",
+    "text2text-generation",
+    "generated_from_trainer",
+    "base_model:vinai/bartpho-syllable",
+    "base_model:finetune:vinai/bartpho-syllable",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 395865192,
+  "parameters_human": "395.9M",
+  "storage_bytes": 12673245324,
+  "storage_human": "12.7 GB",
+  "base_model": "vinai/bartpho-syllable",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vinai/bartpho-syllable · Hugging Face",
+      "url": "https://huggingface.co/vinai/bartpho-syllable",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "BARTpho - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.43.4/en/model_doc/bartpho",
+      "snippet": "We present BARTpho with two versions — BARTpho_word and BARTpho_syllable — the first public large-scale monolingual sequence-to-sequence models pre-trained for Vietnamese. Our BARTpho uses the \"large\" architecture and pre-training scheme of the sequence-to-sequence denoising model BART, thus especially suitable for generative NLP tasks."
+    },
+    {
+      "title": "GitHub - VinAIResearch/BARTpho: BARTpho: Pre-trained Sequence-to ...",
+      "url": "https://github.com/VinAIResearch/BARTpho",
+      "snippet": "We present BARTpho with two versions, BARTpho-syllable and BARTpho-word, which are the first public large-scale monolingual sequence-to-sequence models pre-trained for Vietnamese."
+    },
+    {
+      "title": "bartpho-syllable · Model · Inferix",
+      "url": "https://inferix.co/models/vinai/bartpho-syllable",
+      "snippet": "Two BARTpho versions BARTpho-syllable and BARTpho-word are the first public large-scale monolingual sequence-to-sequence models pre-trained for Vietnamese. BARTpho uses the \"large\" architecture and pre-training scheme of the sequence-to-sequence denoising model BART, thus especially suitable for generative NLP tasks. Experiments on a downstream task of Vietnamese text summarization show that ..."
+    },
+    {
+      "title": "[2109.09701] BARTpho: Pre-trained Sequence-to-Sequence Models for ...",
+      "url": "https://arxiv.org/abs/2109.09701",
+      "snippet": "We present BARTpho with two versions, BARTpho-syllable and BARTpho-word, which are the first public large-scale monolingual sequence-to-sequence models pre-trained for Vietnamese. BARTpho uses the \"large\" architecture and the pre-training scheme of the sequence-to-sequence denoising autoencoder BART, thus it is especially suitable for generative NLP tasks. We conduct experiments to compare our ..."
+    }
+  ]
+}

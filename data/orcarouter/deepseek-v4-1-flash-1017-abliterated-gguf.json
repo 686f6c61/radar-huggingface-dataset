@@ -41,9 +41,9 @@
     "region:us",
     "conversational"
   ],
-  "likes": 96,
+  "likes": 152,
   "downloads_30d": 3,
-  "trending_score": 90,
+  "trending_score": 137,
   "parameters": 748494643824,
   "parameters_human": "748.49B",
   "storage_bytes": 572527725536,
@@ -53,7 +53,7 @@
     "gguf"
   ],
   "is_conversational": true,
-  "gated": false,
+  "gated": true,
   "removed": false,
   "removed_at": null,
   "benchmarks": [],

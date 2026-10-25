@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "wingman-llc/WINGMAN-OPENS-0.2",
+  "slug": "wingman-llc-wingman-opens-0-2",
+  "author": "wingman-llc",
+  "url": "https://huggingface.co/wingman-llc/WINGMAN-OPENS-0.2",
+  "created_at": "2026-10-24T21:37:22.000Z",
+  "updated_at": "2026-10-24T22:19:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "wingman",
+    "ollama",
+    "text-generation",
+    "code-generation",
+    "local-llm",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 397807584,
+  "storage_human": "398 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wingman 3.0: Chords+Bass for your DAW - Mixed In Key",
+      "url": "https://mixedinkey.com/wingman/",
+      "snippet": "Click to capture audio from your DAW channel. Wingman uses it to generate stems, MIDI, chords, basslines, drums, and guitar parts. …"
+    },
+    {
+      "title": "Login to Wingman AI Personal Assistant",
+      "url": "https://getwingman.com/landing/wingman/v2/",
+      "snippet": "Log in to Wingman, the AI personal assistant that helps automate scheduling, inbox management, reminders, follow-ups, and daily …"
+    },
+    {
+      "title": "Wingman — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Wingman",
+      "snippet": "Wingman (ウイングマン, Uinguman?) est un manga de Masakazu Katsura. Il a été publié dans le magazine Weekly Shōnen Jump …"
+    },
+    {
+      "title": "Wingman (social) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Wingman_(social)",
+      "snippet": "A wingman is someone who is on the \"inside\" and is used to help someone with intimate relationships. In general, one person's …"
+    },
+    {
+      "title": "Wingman - Manga série - Manga news",
+      "url": "https://www.manga-news.com/index.php/serie/Wingman-Tonkam",
+      "snippet": "Wingman est un manga shonen crée en 1983 par Masakazu KATSURA, édité par Tonkam (Shonen) prépublié dans Shônen Jump -"
+    }
+  ]
+}

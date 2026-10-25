@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "InakiAM/cubo_rojo_v5",
+  "slug": "inakiam-cubo_rojo_v5",
+  "author": "InakiAM",
+  "url": "https://huggingface.co/InakiAM/cubo_rojo_v5",
+  "created_at": "2026-10-24T22:30:31.000Z",
+  "updated_at": "2026-10-24T22:31:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:InakiAM/cubo_rojo_v4_20261024_115706",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714864,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Is Cilla Black the most unpleasant person in showbiz?",
+      "url": "https://forums.digitalspy.com/discussion/1767356/is-cilla-black-the-most-unpleasant-person-in-showbiz",
+      "snippet": "Dec 4, 2012 · Does anyone have anything good to say about Ms Black? There are several threads on DS asking about the rudest …Read more"
+    },
+    {
+      "title": "Strictly Come Dancing — Digital Spy",
+      "url": "https://forums.digitalspy.com/categories/strictly-come-dancing",
+      "snippet": "1 day ago · Categories - Discuss the BBC's popular ballroom dance series here."
+    },
+    {
+      "title": "GB News - NEWS - Page 1652 — Digital Spy",
+      "url": "https://forums.digitalspy.com/discussion/2408754/gb-news-news/p1652",
+      "snippet": "Jan 1, 2026 · I asked Chat Gpt about Bev Turner and why she moved from being a mainstream broadcaster to the right. It replied as …"
+    },
+    {
+      "title": "Big Brother UK 2025 - Day 14/15 and Late and Live - 9pm and 10pm",
+      "url": "https://forums.digitalspy.com/discussion/2485230/big-brother-uk-2025-day-14-15-and-late-and-live-9pm-and-10pm-12-october-itv2/p10",
+      "snippet": "She would have seen him as popular with the viewers, she's quite BB savvy."
+    },
+    {
+      "title": "Radio Football Commentators and Reporters 2025/26 - Page 14",
+      "url": "https://forums.digitalspy.com/discussion/2480434/radio-football-commentators-and-reporters-2025-26/p14",
+      "snippet": "Tuesday 14th October - talkSPORT Adrian Durham presented Kick Off from the Daugava Stadium alongside Stuart Pearce"
+    }
+  ]
+}

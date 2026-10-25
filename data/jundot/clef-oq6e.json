@@ -5,7 +5,7 @@
   "author": "Jundot",
   "url": "https://huggingface.co/Jundot/clef-oQ6e",
   "created_at": "2026-10-11T17:57:29.000Z",
-  "updated_at": "2026-10-11T17:57:56.000Z",
+  "updated_at": "2026-10-25T01:00:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 71,
+  "downloads_30d": 75,
   "trending_score": 0,
   "parameters": 27356728560,
   "parameters_human": "27.36B",

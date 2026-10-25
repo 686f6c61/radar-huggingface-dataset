@@ -5,7 +5,7 @@
   "author": "Eliasfpv28",
   "url": "https://huggingface.co/Eliasfpv28/Kolibri-1-Q3_K_S-GGUF",
   "created_at": "2026-10-03T18:02:35.000Z",
-  "updated_at": "2026-10-03T19:51:17.000Z",
+  "updated_at": "2026-10-24T11:49:51.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,7 +32,7 @@
     "conversational"
   ],
   "likes": 5,
-  "downloads_30d": 1641,
+  "downloads_30d": 1645,
   "trending_score": 0,
   "parameters": 78103074560,
   "parameters_human": "78.10B",

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Datumo-Guard-12b-v0.3-GGUF",
+  "slug": "mradermacher-datumo-guard-12b-v0-3-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Datumo-Guard-12b-v0.3-GGUF",
+  "created_at": "2025-12-05T04:36:30.000Z",
+  "updated_at": "2026-10-24T17:45:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:datumo/Datumo-Guard-12b-v0.3-lagacy",
+    "base_model:quantized:datumo/Datumo-Guard-12b-v0.3-lagacy",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 266,
+  "trending_score": 0,
+  "parameters": 11766034176,
+  "parameters_human": "11.77B",
+  "storage_bytes": 83854466752,
+  "storage_human": "83.9 GB",
+  "base_model": "datumo/Datumo-Guard-12b-v0.3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=mradermacher",
+      "snippet": "Explore machine learning models. mradermacher/Poe-8B-GLM5-Opus4.6-Sonnet4.5-Kimi-Grok-Gemini-3-pro-preview-HERETIC-i1-GGUF"
+    },
+    {
+      "title": "mradermacher/next-12b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/next-12b-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Google Colab",
+      "url": "https://colab.research.google.com/drive/1g41PDb9Bck-3VI6yRZ_1M727yL05gZY8?usp=sharing",
+      "snippet": "Google Colab ... Google Colab"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://router.huggingface.co/models/",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "developers.openai.com",
+      "url": "https://developers.openai.com/api/docs/models.md",
+      "snippet": "# Models > For the complete documentation index, see [llms.txt](/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL ..."
+    }
+  ]
+}

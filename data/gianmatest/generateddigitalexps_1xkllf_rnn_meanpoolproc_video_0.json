@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "gianmaTest/generatedDigitalExps_1xKlLF_rnn_meanPoolProc_video_0",
+  "slug": "gianmatest-generateddigitalexps_1xkllf_rnn_meanpoolproc_video_0",
+  "author": "gianmaTest",
+  "url": "https://huggingface.co/gianmaTest/generatedDigitalExps_1xKlLF_rnn_meanPoolProc_video_0",
+  "created_at": "2026-10-24T23:49:13.000Z",
+  "updated_at": "2026-10-24T23:49:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1576704,
+  "parameters_human": "1.6M",
+  "storage_bytes": 6308208,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HornetMM — Mod Manager for Hollow Knight",
+      "url": "https://hornetmm-team.github.io/-/",
+      "snippet": "Enable, disable, update, and organize your mods with an intuitive interface. Automatically adapts to your system theme on Windows, …"
+    },
+    {
+      "title": "How To Mod Hollow Knight | Step by Step Guide - YouTube",
+      "url": "https://www.youtube.com/watch?v=h_Mq0Dcw4PE",
+      "snippet": "Aug 23, 2026 · We focus on practical steps to get your game running with new cosmetic mods or expansion content without …"
+    },
+    {
+      "title": "Mod:Lumafly - Hollow Knight Wiki",
+      "url": "https://hollowknight.wiki/w/Mod:Lumafly",
+      "snippet": "Jul 4, 2026 · Lumafly is a Mod installer for Hollow Knight. It is a program that allows users to easily install mods and automatically …"
+    },
+    {
+      "title": "Lumafly, Hollow Knight Mod Installer and Manager (formerly Scarab+)",
+      "url": "https://themulhima.github.io/Lumafly/",
+      "snippet": "Mods appear in the top left corner of the game title screen after installation. Enable/Disable mods from affecting the game using the …"
+    },
+    {
+      "title": "Set up Lumafly and install your first Hollow Knight mods",
+      "url": "https://openmods.net/guides/getting-started-hollow-knight",
+      "snippet": "Jun 11, 2024 · This guide installs Lumafly, enables the API, installs a first mod, and explains where the files actually go so you can fix …"
+    }
+  ]
+}

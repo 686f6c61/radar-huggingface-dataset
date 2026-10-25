@@ -5,7 +5,7 @@
   "author": "Harsha001",
   "url": "https://huggingface.co/Harsha001/NVIDIA-Nemotron-3.5-Bolt-E4B-ROCmFPX",
   "created_at": "2026-10-24T01:27:37.000Z",
-  "updated_at": "2026-10-24T01:40:15.000Z",
+  "updated_at": "2026-10-24T18:04:54.000Z",
   "license": "openmdw-1.1",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,7 +31,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 97,
   "trending_score": 0,
   "parameters": 7518069290,
   "parameters_human": "7.52B",

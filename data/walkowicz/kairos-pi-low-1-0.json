@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Walkowicz/kairos-pi-low-1.0",
+  "slug": "walkowicz-kairos-pi-low-1-0",
+  "author": "Walkowicz",
+  "url": "https://huggingface.co/Walkowicz/kairos-pi-low-1.0",
+  "created_at": "2026-10-24T20:48:31.000Z",
+  "updated_at": "2026-10-24T21:09:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "kairos_pi_low",
+    "decision-model",
+    "non-autoregressive",
+    "system-1",
+    "modernbert",
+    "automotive",
+    "can-bus",
+    "iot",
+    "edge-ai",
+    "active-abstention",
+    "cyberphysical",
+    "feature-extraction",
+    "custom_code",
+    "en",
+    "base_model:answerdotai/ModernBERT-base",
+    "base_model:finetune:answerdotai/ModernBERT-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149606404,
+  "parameters_human": "149.6M",
+  "storage_bytes": 598764540,
+  "storage_human": "599 MB",
+  "base_model": "answerdotai/ModernBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vider la Corbeille dans Windows 11 et 10 - malekal.com",
+      "url": "https://www.malekal.com/vider-la-corbeille-windows-de-10-11/",
+      "snippet": "Feb 16, 2022 · Vider la Corbeille dans Windows 10 et 11 : découvrez toutes les méthodes, manuelles et automatiques, pour libérer …"
+    },
+    {
+      "title": "Comment vider la corbeille Windows 11 : 5 méthodes simples et sûres",
+      "url": "https://www.aomei.fr/gestion-partition/comment-vider-la-corbeille-windows-11-0478-iw.html",
+      "snippet": "Aug 20, 2026 · Ce guide présente les méthodes rapides et automatiques pour vider la Corbeille de Windows 11, vérifier l’espace …"
+    },
+    {
+      "title": "Comment vider la Corbeille sur Windows ? (6 méthodes)",
+      "url": "https://lecrabeinfo.net/tutoriels/comment-vider-la-corbeille-sur-windows/",
+      "snippet": "Dec 17, 2025 · Découvrez toutes les méthodes pour vider la Corbeille sur Windows 11 et 10 afin de libérer de l’espace disque : des …"
+    },
+    {
+      "title": "Comment vider la Corbeille sous Windows : toutes les solutions …",
+      "url": "https://www.vbinformatique.fr/vider-corbeille-windows/",
+      "snippet": "Dec 17, 2025 · La Corbeille sous Windows prend souvent plus d’espace que prévu. Vider la Corbeille permet de libérer du stockage …"
+    },
+    {
+      "title": "Comment supprimer définitivement la corbeille Windows 11/10/8/7",
+      "url": "https://www.easeus.fr/partition-manager-tips/comment-supprimer-definitivement-la-corbeille.html",
+      "snippet": "Sep 18, 2026 · Pour vider définitivement la Corbeille sous Windows 10/11, localisez son icône sur le bureau, effectuez un clic droit et …"
+    }
+  ]
+}

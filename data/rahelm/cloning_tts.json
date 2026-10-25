@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "RahelM/cloning_tts",
+  "slug": "rahelm-cloning_tts",
+  "author": "RahelM",
+  "url": "https://huggingface.co/RahelM/cloning_tts",
+  "created_at": "2026-10-22T08:31:40.000Z",
+  "updated_at": "2026-10-24T20:46:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "safetensors",
+    "speecht5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 36,
+  "trending_score": 0,
+  "parameters": 144433890,
+  "parameters_human": "144.4M",
+  "storage_bytes": 4622918733,
+  "storage_human": "4.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "iFly 737 MAX 8 Improvement Mod (Wingflex + Lighting etc.)",
+      "url": "https://flightsim.to/addon/102168/ifly-737-max-8-improvement-mod-wingflex-lighting-etc",
+      "snippet": "Sep 21, 2026 · An improvement modification for the iFly 737 MAX 8 for MSFS 2024 (though it should work fine with 2020) - Impulse …"
+    },
+    {
+      "title": "iFly 737 MAX SP1 is out now, and it closes the book on MSFS 2020",
+      "url": "https://msfsaddons.com/2026/06/12/ifly-737-max-sp1-is-out-now-and-it-closes-the-book-on-msfs-2020/",
+      "snippet": "Jun 12, 2026 · CPDLC, one of the more anticipated items from the original SP1 feature list, proved too difficult to implement in the …"
+    },
+    {
+      "title": "iFly Manager",
+      "url": "https://manager.flight1.net/",
+      "snippet": "The iFly Manager for MSFS 2020/2024 The iFly Manager manages your 737 MAX8 installation, updates, and official livery …"
+    },
+    {
+      "title": "iFly 737 MAX Discussion - #888 by simcaptain91 - Aircraft - Microsoft ...",
+      "url": "https://forums.flightsimulator.com/t/ifly-737-max-discussion/538169/888",
+      "snippet": "Aug 20, 2025 · I normally fly offline with FSHud controlling AI traffic, but I’d definitely use CPDLC on VATSIM/IVAO if it works …"
+    },
+    {
+      "title": "iFly Boeing 737 MAX SP1 — Release Radar | Flightsim.to",
+      "url": "https://flightsim.to/project/10/ifly-boeing-737-max-sp1",
+      "snippet": "Service Pack 1 (SP1) is the first major update for the iFly Boeing 737 MAX 8 for Microsoft Flight Simulator. The update introduces an …"
+    }
+  ]
+}

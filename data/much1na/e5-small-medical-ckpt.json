@@ -1,0 +1,166 @@
+{
+  "schema": 1,
+  "id": "much1na/e5-small-medical-ckpt",
+  "slug": "much1na-e5-small-medical-ckpt",
+  "author": "much1na",
+  "url": "https://huggingface.co/much1na/e5-small-medical-ckpt",
+  "created_at": "2026-10-24T16:09:06.000Z",
+  "updated_at": "2026-10-24T19:52:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "generated_from_trainer",
+    "dataset_size:4467542",
+    "loss:CachedGISTEmbedLoss",
+    "arxiv:1908.10084",
+    "base_model:intfloat/e5-small-unsupervised",
+    "base_model:finetune:intfloat/e5-small-unsupervised",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33360000,
+  "parameters_human": "33.4M",
+  "storage_bytes": 6789137286,
+  "storage_human": "6.8 GB",
+  "base_model": "intfloat/e5-small-unsupervised",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Information Retrieval",
+      "dataset": "medical qa dev",
+      "metric": "Cosine Accuracy@1",
+      "value": 0.48291015625
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "medical qa dev",
+      "metric": "Cosine Accuracy@3",
+      "value": 0.697265625
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "medical qa dev",
+      "metric": "Cosine Accuracy@5",
+      "value": 0.7666015625
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "medical qa dev",
+      "metric": "Cosine Accuracy@10",
+      "value": 0.830078125
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "medical qa dev",
+      "metric": "Cosine Precision@1",
+      "value": 0.48291015625
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "medical qa dev",
+      "metric": "Cosine Precision@3",
+      "value": 0.232421875
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "medical qa dev",
+      "metric": "Cosine Precision@5",
+      "value": 0.1533203125
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "medical qa dev",
+      "metric": "Cosine Precision@10",
+      "value": 0.0830078125
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "medical qa dev",
+      "metric": "Cosine Recall@1",
+      "value": 0.48291015625
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "medical qa dev",
+      "metric": "Cosine Recall@3",
+      "value": 0.697265625
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "medical qa dev",
+      "metric": "Cosine Recall@5",
+      "value": 0.7666015625
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "medical qa dev",
+      "metric": "Cosine Recall@10",
+      "value": 0.830078125
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "medical qa dev",
+      "metric": "Cosine Ndcg@10",
+      "value": 0.6585715385852918
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "medical qa dev",
+      "metric": "Cosine Mrr@10",
+      "value": 0.6033053927951392
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "medical qa dev",
+      "metric": "Cosine Map@100",
+      "value": 0.6078104163943658
+    }
+  ],
+  "sources": [
+    {
+      "title": "much1na (Ian Muchina) - Hugging Face",
+      "url": "https://huggingface.co/much1na/datasets",
+      "snippet": "User profile of Ian Muchina on Hugging Face"
+    },
+    {
+      "title": "intfloat/multilingual-e5-small · Hugging Face",
+      "url": "https://huggingface.co/intfloat/multilingual-e5-small",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ExpertOpsAI/MedicalModelLibrary: A collection of AI models ...",
+      "url": "https://github.com/ExpertOpsAI/MedicalModelLibrary/",
+      "snippet": "This repository curates AI/ML models (open-source & closed-source) for medical applications, providing a centralized resource for collaboration and innovation in healthcare."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, DeepSeek, Qwen, Mistral, Z.ai, Meta, and important open-weight model families."
+    },
+    {
+      "title": "multilingual-e5-small: Self-Hosting & Deployment Guide - LLM API",
+      "url": "https://llmapi.ai/models/intfloat-multilingual-e5-small/",
+      "snippet": "What is multilingual-e5-small? multilingual-e5-small is an open-weight embedding model that turns text into vectors for search and retrieval, published by Microsoft (intfloat) with open weights at intfloat/multilingual-e5-small. LLM API does not route this model today, so there is no endpoint or code sample for it here. What this page does give you is the self-hosting picture: published weight ..."
+    }
+  ]
+}

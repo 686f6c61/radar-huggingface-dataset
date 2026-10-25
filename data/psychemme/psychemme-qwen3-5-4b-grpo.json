@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "psychemme/PsycheMME-Qwen3.5-4B-GRPO",
+  "slug": "psychemme-psychemme-qwen3-5-4b-grpo",
+  "author": "psychemme",
+  "url": "https://huggingface.co/psychemme/PsycheMME-Qwen3.5-4B-GRPO",
+  "created_at": "2026-10-16T04:42:44.000Z",
+  "updated_at": "2026-10-24T17:41:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "psychemme",
+    "lora",
+    "video-question-answering",
+    "research",
+    "image-text-to-text",
+    "en",
+    "arxiv:2610.28625",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 22,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 65003848,
+  "storage_human": "65 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PsycheMME-Qwen3.5-4B-GRPO API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/psychemme/PsycheMME-Qwen3.5-4B-GRPO",
+      "snippet": "Deploy PsycheMME-Qwen3.5-4B-GRPO with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "PsycheMME: A Psychology-Informed Benchmark for Social Understanding and ...",
+      "url": "https://psychemme.github.io/",
+      "snippet": "Main results. Raw Answer and Reasoning-Verified macro scores for (a) eight proprietary and (b) nine open-weight frozen models. (c) Qwen3.5-4B Base, SFT, and SFT+GRPO; the two adapted checkpoints are separate from the 17-model frozen comparison. All values are from Table 2."
+    },
+    {
+      "title": "psychemme (PsycheMME) - Hugging Face",
+      "url": "https://huggingface.co/psychemme/models",
+      "snippet": "psychemme&#x27;s models2 Sort: Recently updated psychemme/PsycheMME-Qwen3.5-4B-GRPO Image-Text-to-Text •Updated about 23 hours ago• 13"
+    },
+    {
+      "title": "psychemme (PsycheMME) - Hugging Face",
+      "url": "https://huggingface.co/psychemme",
+      "snippet": "psychemme/PsycheMME-Qwen3.5-4B-GRPO Image-Text-to-Text •Updated about 23 hours ago• 13"
+    },
+    {
+      "title": "PsycheMME: A Psychology-Informed Benchmark for Social Understanding and ...",
+      "url": "https://arxiv.org/pdf/2610.28625",
+      "snippet": "We apply SFT followed by GRPO to Qwen3.5-4B using LoRA [28] on the language backbone, with the visual encoder and multimodal aligner frozen. SFT trains for one epoch on 3,657 video QA examples with 32 sampled frames, ASR, and available interaction history. Targets contain the answer and one annotated observation; other rationale fields are null."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "austindixson/microduck-roller-improver-rev6",
+  "slug": "austindixson-microduck-roller-improver-rev6",
+  "author": "austindixson",
+  "url": "https://huggingface.co/austindixson/microduck-roller-improver-rev6",
+  "created_at": "2026-10-25T00:28:04.000Z",
+  "updated_at": "2026-10-25T00:28:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "base_model:austindixson/microduck-roller-remix-r900-improver",
+    "base_model:finetune:austindixson/microduck-roller-remix-r900-improver",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 925260,
+  "storage_human": "925260 B",
+  "base_model": "austindixson/microduck-roller-remix-r900-improver",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "austindixson/microduck-roller-improver-rev3 · Hugging Face",
+      "url": "https://huggingface.co/austindixson/microduck-roller-improver-rev3",
+      "snippet": "How to use austindixson/microduck-roller-improver-rev3 with Microduck: # Replace SLOT with the slot specified in the model card (walk, stand, sitstand, ground_pick ..."
+    },
+    {
+      "title": "austindixson/microduck-roller-improver · Hugging Face",
+      "url": "https://huggingface.co/austindixson/microduck-roller-improver",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MicroDuck Robot Resources — DIY Tutorials & Guides",
+      "url": "https://microduckrobot.org/",
+      "snippet": "Independent MicroDuck robot resources: DIY tutorials, software updates, setup, calibration and troubleshooting, with original sources and verification limits."
+    },
+    {
+      "title": "GitHub - pollen-robotics/microduck: A Tiny biped duck robot",
+      "url": "https://github.com/pollen-robotics/microduck",
+      "snippet": "A Tiny biped duck robot 🦆. Contribute to pollen-robotics/microduck development by creating an account on GitHub."
+    },
+    {
+      "title": "Nvidia Microduck Robots 2026: How AI Agents Teach Them to Walk",
+      "url": "https://ailearningguides.com/nvidia-microduck-robot-ai-agents-simulation-walking/",
+      "snippet": "The Nvidia Microduck robot learns to walk via AI agents and reinforcement learning in simulation. See the sim-to-real workflow and how to copy it this weekend"
+    }
+  ]
+}

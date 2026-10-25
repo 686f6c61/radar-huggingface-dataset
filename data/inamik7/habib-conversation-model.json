@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "inamik7/habib-conversation-model",
+  "slug": "inamik7-habib-conversation-model",
+  "author": "inamik7",
+  "url": "https://huggingface.co/inamik7/habib-conversation-model",
+  "created_at": "2026-10-24T20:35:18.000Z",
+  "updated_at": "2026-10-24T20:35:19.000Z",
+  "license": "qwen",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "multimodal",
+    "conversational",
+    "en",
+    "arxiv:2309.00071",
+    "arxiv:2409.12191",
+    "arxiv:2308.12966",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 73410777344,
+  "parameters_human": "73.41B",
+  "storage_bytes": 146821709104,
+  "storage_human": "146.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Connect a Smart TV to the Internet: Wireless & Wired",
+      "url": "https://www.wikihow.com/Connect-a-Smart-TV-to-the-Internet",
+      "snippet": "Apr 24, 2025 · For Wi-Fi, go to your TV's Network Settings. Select the option to set up a new wireless connection. Select your Wi-Fi …"
+    },
+    {
+      "title": "How to Connect a TV to Wi-Fi - CableTV.com",
+      "url": "https://www.cabletv.com/internet/how-to-connect-tv-to-wifi",
+      "snippet": "May 22, 2025 · Discover the best methods on how to connect your TV to Wi-Fi for seamless streaming. Perfect for smart and …"
+    },
+    {
+      "title": "Connect Your TV to Wi-Fi in 3 Easy Steps",
+      "url": "https://www.allconnect.com/blog/connect-tv-to-wifi",
+      "snippet": "Feb 7, 2024 · Ensure you have your wireless network name (SSID) and password before connecting. You can use the remote that …"
+    },
+    {
+      "title": "Comment connecter sa Smart TV à Internet: 9 étapes",
+      "url": "https://fr.wikihow.com/connecter-sa-Smart-TV-%C3%A0-Internet",
+      "snippet": "Apprenez à configurer votre Smart TV pour la connecter à Internet. En général, vous pouvez vous connecter sans fil à votre routeur …"
+    },
+    {
+      "title": "How to Connect Internet to a Smart TV: Step-by-Step Guide",
+      "url": "https://techyconcepts.com/how-to-connect-internet-to-a-smart-tv-step-by-step-guide/",
+      "snippet": "Sep 23, 2026 · Connect internet to your smart TV with the fastest, most reliable method—by following a step-by-step setup that gets …"
+    }
+  ]
+}

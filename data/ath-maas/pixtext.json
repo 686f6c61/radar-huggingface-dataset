@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ATH-MaaS/PixText",
+  "slug": "ath-maas-pixtext",
+  "author": "ATH-MaaS",
+  "url": "https://huggingface.co/ATH-MaaS/PixText",
+  "created_at": "2026-10-22T06:41:17.000Z",
+  "updated_at": "2026-10-22T06:46:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "pytorch",
+    "text-rendering",
+    "arxiv:2610.18284",
+    "image-editing",
+    "dataset:ATH-MaaS/TextRefinementBench",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 14,
+  "downloads_30d": 0,
+  "trending_score": 14,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3859967609,
+  "storage_human": "3.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ATH Asso | Nourrir l'excellence",
+      "url": "https://ath.asso.fr/",
+      "snippet": "Qui sommes-nous ? Notre fonctionnement Nos domaines d’intervention Nos cabinets membres Chiffres clés L’observatoireRead more"
+    },
+    {
+      "title": "Ath — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Ath",
+      "snippet": "La Maison Culturelle d'Ath est une ASBL gérée paritairement par des associations culturelles et des représentants des pouvoirs …"
+    },
+    {
+      "title": "Office de Tourisme - Ville d'Ath",
+      "url": "https://www.ath.be/loisirs/tourisme/office-de-tourisme/office-de-tourisme",
+      "snippet": "Visiter Ath, c’est découvrir l’authenticité du folklore local, sentir l’âme des pierres ou encore profiter de la convivialité des …"
+    },
+    {
+      "title": "L’outil numérique | ATH Asso",
+      "url": "http://ath.asso.fr/loutil-numerique/",
+      "snippet": "L’ensemble des prestations proposées aux cabinets membres de l’association ATH est optimisé par un usage systématisé des …"
+    },
+    {
+      "title": "ComfyUI Registry",
+      "url": "https://registry.comfy.org/publishers/yaoliliu/nodes/pixtext",
+      "snippet": "Initial PixText ComfyUI release. - Load complete PixText MeanFlow and Teacher model packages. - Draw, move and resize repair regions in a visual editor; select a box to focus its target card. - Optional local CRAFT + PP-OCRv6 word detection and recognition, followed by user review."
+    }
+  ]
+}

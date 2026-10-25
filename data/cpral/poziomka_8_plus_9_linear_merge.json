@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "cpral/poziomka_8_plus_9_linear_merge",
+  "slug": "cpral-poziomka_8_plus_9_linear_merge",
+  "author": "cpral",
+  "url": "https://huggingface.co/cpral/poziomka_8_plus_9_linear_merge",
+  "created_at": "2026-03-04T12:34:31.000Z",
+  "updated_at": "2026-10-25T00:23:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "pl"
+  ],
+  "tags": [
+    "safetensors",
+    "bailing_moe",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "pl",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 4119797632,
+  "parameters_human": "4.12B",
+  "storage_bytes": 8240328624,
+  "storage_human": "8.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

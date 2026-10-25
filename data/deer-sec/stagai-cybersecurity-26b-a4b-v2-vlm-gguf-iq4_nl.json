@@ -5,7 +5,7 @@
   "author": "deer-sec",
   "url": "https://huggingface.co/deer-sec/StagAI-CyberSecurity-26B-A4B-v2-VLM-GGUF-IQ4_NL",
   "created_at": "2026-10-17T16:34:43.000Z",
-  "updated_at": "2026-10-17T16:56:19.000Z",
+  "updated_at": "2026-10-24T05:46:57.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -43,7 +43,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 413,
+  "downloads_30d": 427,
   "trending_score": 0,
   "parameters": 25233142046,
   "parameters_human": "25.23B",

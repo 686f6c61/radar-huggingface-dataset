@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "joeltcook/riverguide-retriever-full",
+  "slug": "joeltcook-riverguide-retriever-full",
+  "author": "joeltcook",
+  "url": "https://huggingface.co/joeltcook/riverguide-retriever-full",
+  "created_at": "2026-10-25T00:11:25.000Z",
+  "updated_at": "2026-10-25T01:17:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "qwen3",
+    "feature-extraction",
+    "sentence-similarity",
+    "retrieval",
+    "rag",
+    "education",
+    "higher-education",
+    "en",
+    "base_model:Qwen/Qwen3-Embedding-0.6B",
+    "base_model:finetune:Qwen/Qwen3-Embedding-0.6B",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 595776512,
+  "parameters_human": "595.8M",
+  "storage_bytes": 1203010383,
+  "storage_human": "1.2 GB",
+  "base_model": "Qwen/Qwen3-Embedding-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

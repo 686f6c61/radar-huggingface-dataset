@@ -5,7 +5,7 @@
   "author": "nvidia",
   "url": "https://huggingface.co/nvidia/Cosmos3-Edge-Policy-DROID",
   "created_at": "2026-07-09T21:19:56.000Z",
-  "updated_at": "2026-09-16T19:00:40.000Z",
+  "updated_at": "2026-10-24T05:08:41.000Z",
   "license": "openmdw1.1-license",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 15,
-  "downloads_30d": 1877,
+  "downloads_30d": 1905,
   "trending_score": 0,
   "parameters": 3859003312,
   "parameters_human": "3.86B",

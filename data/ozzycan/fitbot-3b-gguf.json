@@ -5,7 +5,7 @@
   "author": "Ozzycan",
   "url": "https://huggingface.co/Ozzycan/FitBot-3B-GGUF",
   "created_at": "2026-10-17T07:24:08.000Z",
-  "updated_at": "2026-10-18T21:15:09.000Z",
+  "updated_at": "2026-10-24T23:51:41.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -18,12 +18,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 97,
+  "downloads_30d": 99,
   "trending_score": 0,
   "parameters": 3085938688,
   "parameters_human": "3.09B",
-  "storage_bytes": 3285475872,
-  "storage_human": "3.3 GB",
+  "storage_bytes": 6570951776,
+  "storage_human": "6.6 GB",
   "base_model": null,
   "formats": [
     "gguf"

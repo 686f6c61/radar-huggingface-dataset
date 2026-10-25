@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Jahirrrr/Klyra-Decision-2B-V2-Preview",
+  "slug": "jahirrrr-klyra-decision-2b-v2-preview",
+  "author": "Jahirrrr",
+  "url": "https://huggingface.co/Jahirrrr/Klyra-Decision-2B-V2-Preview",
+  "created_at": "2026-10-24T20:49:41.000Z",
+  "updated_at": "2026-10-24T21:48:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "decision-model",
+    "choice",
+    "score",
+    "noul",
+    "lora",
+    "minicpm5",
+    "experimental",
+    "base_model:openbmb/MiniCPM5-2B-Midtrain",
+    "base_model:adapter:openbmb/MiniCPM5-2B-Midtrain",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40807701,
+  "storage_human": "41 MB",
+  "base_model": "openbmb/MiniCPM5-2B-Midtrain",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you.Read more"
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/?hl=ru",
+      "snippet": "Создайте аккаунт или войдите в Instagram — делитесь интересными моментами с людьми, которые вас понимают."
+    },
+    {
+      "title": "Help Center",
+      "url": "https://help.instagram.com/1068717813216421",
+      "snippet": "Find answers to your questions and get support for using Instagram in the Help Center."
+    },
+    {
+      "title": "Help Center",
+      "url": "https://help.instagram.com/345310197245685",
+      "snippet": "Find answers to common questions and learn how to use Instagram effectively on this help center page."
+    },
+    {
+      "title": "About Instagram: Features, Safety, Community & More",
+      "url": "https://about.instagram.com/",
+      "snippet": "Learn about Instagram: how the app works, key features, safety tools, teen accounts, parent resources, community programs, and …"
+    }
+  ]
+}

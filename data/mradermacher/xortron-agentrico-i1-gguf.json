@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/XORTRON-AgentRICO-i1-GGUF",
   "created_at": "2026-10-24T08:53:53.000Z",
-  "updated_at": "2026-10-24T09:47:13.000Z",
+  "updated_at": "2026-10-24T10:57:16.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -41,8 +41,8 @@
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 39485527168,
-  "storage_human": "39.5 GB",
+  "storage_bytes": 218567546304,
+  "storage_human": "218.6 GB",
   "base_model": "darkc0de/XORTRON-AgentRICO",
   "formats": [
     "gguf"

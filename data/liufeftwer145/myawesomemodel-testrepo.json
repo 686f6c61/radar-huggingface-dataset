@@ -4,8 +4,8 @@
   "slug": "liufeftwer145-myawesomemodel-testrepo",
   "author": "liufeftwer145",
   "url": "https://huggingface.co/liufeftwer145/MyAwesomeModel-TestRepo",
-  "created_at": "2026-10-19T11:10:56.000Z",
-  "updated_at": "2026-10-19T11:28:04.000Z",
+  "created_at": "2026-10-24T09:36:38.000Z",
+  "updated_at": "2026-10-24T09:38:40.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 285,
+  "downloads_30d": 260,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -31,8 +31,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-10-23T04:42:45.993Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "game-plus/qwen3.5-4b-gameworld-sft-teacheronly-final",
+  "slug": "game-plus-qwen3-5-4b-gameworld-sft-teacheronly-final",
+  "author": "game-plus",
+  "url": "https://huggingface.co/game-plus/qwen3.5-4b-gameworld-sft-teacheronly-final",
+  "created_at": "2026-10-24T22:28:04.000Z",
+  "updated_at": "2026-10-24T22:28:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen3.5",
+    "vision-language",
+    "game-agent",
+    "sft",
+    "full-finetune",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 10370007861,
+  "storage_human": "10.4 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Online Games at Poki - Play Now!",
+      "url": "https://poki.com/?msockid=1e1a715893df662e063b66a492ea67a4",
+      "snippet": "Play free online games at Poki, the #1 website for instant web games. Explore exclusive titles, popular favorites, and new game …"
+    },
+    {
+      "title": "Free Online Games on CrazyGames | Play Now!",
+      "url": "https://www.crazygames.com/",
+      "snippet": "You’ll find the main categories like clicker, driving games, and shooting games at the top of any page, but there’s also a range of …"
+    },
+    {
+      "title": "New games - CrazyGames",
+      "url": "https://www.crazygames.com/new",
+      "snippet": "Play free online games at CrazyGames, the best place to play high-quality browser games. We add new games every day. Have fun!"
+    },
+    {
+      "title": "Poki - Jeux Gratuits en Ligne - Jouez Maintenant",
+      "url": "https://poki.com/fr?msockid=1e1a715893df662e063b66a492ea67a4",
+      "snippet": "C'est l'une des catégories les plus populaires sur Poki, représentant 10 % de toutes les parties jouées sur 12 mois d'après notre …"
+    },
+    {
+      "title": "Free Games",
+      "url": "https://www.onlinegames.io/t/free/",
+      "snippet": "Every game on OnlineGames.io is completely free — no download, no sign-up, no payment, no paywalls, no in-app purchases. Open …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "baseten",
   "url": "https://huggingface.co/baseten/caesar-cipher-sgd-qwen38_27b-expert",
   "created_at": "2026-10-23T21:19:32.000Z",
-  "updated_at": "2026-10-23T23:21:59.000Z",
+  "updated_at": "2026-10-24T10:52:32.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -33,11 +33,11 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 23,
   "trending_score": 0,
   "parameters": 26895998464,
   "parameters_human": "26.90B",
-  "storage_bytes": 53805910750,
+  "storage_bytes": 53809482071,
   "storage_human": "53.8 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [

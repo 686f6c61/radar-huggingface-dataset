@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "caikybaldo999/zyi-256-flash",
+  "slug": "caikybaldo999-zyi-256-flash",
+  "author": "caikybaldo999",
+  "url": "https://huggingface.co/caikybaldo999/zyi-256-flash",
+  "created_at": "2026-10-21T23:19:21.000Z",
+  "updated_at": "2026-10-25T00:31:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "text-to-image",
+    "diffusion",
+    "flow-matching",
+    "dit",
+    "small-model",
+    "dataset:LucasFang/FLUX-Reason-6M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 101,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 43933713305,
+  "storage_human": "43.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Licenciement d'un directeur en couple avec deux de ses salariées, la ...",
+      "url": "https://www.capital.fr/votre-carriere/licenciement-d-un-directeur-en-couple-avec-deux-de-ses-salariees-la-cour-de-cassation-a-tranche-1531236",
+      "snippet": "1 day ago · Licencié pour avoir entretenu une relation de couple avec deux salariées, un directeur a décidé de saisir la justice. La …"
+    },
+    {
+      "title": "Renvoyé pour avoir entretenu une relation avec deux de ses salariées en ...",
+      "url": "https://www.leparisien.fr/faits-divers/renvoye-pour-avoir-entretenu-une-relation-avec-deux-de-ses-salariees-en-meme-temps-la-cour-de-cassation-valide-le-licenciement-dun-directeur-21-10-2026-LMRS37YL3FDS7A6UVRKHWIVQ3Q.php",
+      "snippet": "3 days ago · Chacune ignorait l’existence de l’autre. La Cour de cassation a validé, ce mardi, 20 octobre, le licenciement d’un …"
+    },
+    {
+      "title": "En couple avec deux salariées, sans qu'elles ne le sachent : le ... - Actu",
+      "url": "https://actu.fr/faits-divers/en-couple-avec-deux-salariees-sans-qu-elles-ne-le-sachent-le-directeur-d-une-agence-immobiliere-d-alsace-licencie_64961276.html",
+      "snippet": "2 days ago · Licencié après une double vie avec deux salariées, un directeur d'agence immobilière en Alsace perd en cassation. Les …"
+    },
+    {
+      "title": "Le directeur a des enfants avec deux employées qui ignoraient sa …",
+      "url": "https://www.ouest-france.fr/grand-est/colmar-68000/le-directeur-a-des-enfants-avec-deux-employees-qui-ignoraient-sa-double-vie-son-licenciement-confirme-par-la-justice-aeff001c-ceeb-11f1-897b-b13214c912e2",
+      "snippet": "1 day ago · Après un jugement défavorable rendu par la cour d’appel de Colmar (Haut-Rhin), le directeur d’une agence immobilière …"
+    },
+    {
+      "title": "Travail / Licenciement – Cour de cassation – Cour de cassation, 21 ...",
+      "url": "https://legalplanet.pro/cour-de-cassation-2026-10-21-24-22-661-licenciement-vie-privee-trouble-objectif-arrets-travail-perte-autorite-directeur-agence/",
+      "snippet": "3 days ago · Un salarié, directeur de plusieurs agences et ambassadeur territorial, a entretenu simultanément une relation de couple …"
+    }
+  ]
+}

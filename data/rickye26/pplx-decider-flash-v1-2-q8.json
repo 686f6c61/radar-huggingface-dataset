@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "rickye26/pplx-decider-flash-v1.2-q8",
+  "slug": "rickye26-pplx-decider-flash-v1-2-q8",
+  "author": "rickye26",
+  "url": "https://huggingface.co/rickye26/pplx-decider-flash-v1.2-q8",
+  "created_at": "2026-10-24T20:26:22.000Z",
+  "updated_at": "2026-10-24T20:35:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "qwen3_5",
+    "decisive",
+    "webgpu",
+    "decision-model",
+    "quantized",
+    "q8",
+    "base_model:perplexity-ai/pplx-decider-flash-v1.2",
+    "base_model:quantized:perplexity-ai/pplx-decider-flash-v1.2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4490195284,
+  "storage_human": "4.5 GB",
+  "base_model": "perplexity-ai/pplx-decider-flash-v1.2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FEMALE BODY PARTS - COLLECTION - Downloads - The Sims 4",
+      "url": "https://www.loverslab.com/topic/170548-female-body-parts-collection/",
+      "snippet": "Jun 21, 2021 · BODY PART - VAGINA VERSION 3B: compatible with fat sims. more deformation. For now, there are only two …"
+    },
+    {
+      "title": "FEMALE BODY PART ANIMATED V3 (IMPROVED VERSION)",
+      "url": "https://www.loverslab.com/files/file/39748-female-body-part-animated-v3-improved-version-8-new-body-parts/",
+      "snippet": "Feb 8, 2025 · Hi everyone, I hope you like this new animated version, it's free on loverslab."
+    },
+    {
+      "title": "Download v 2.0 Detailed female bottom mesh - Dumbaby",
+      "url": "https://www.dumbaby.com/post/download-v-2-0-detailed-female-bottom-mesh",
+      "snippet": "Jan 10, 2024 · Added new weights for vagina animation bones - \"Up\" and \"Low\" (except for the existing ones - \"Left\" and \"Right\"). …"
+    },
+    {
+      "title": "Smooth Vagina [2025-09-09] - WickedCC",
+      "url": "https://wicked.cc/body/noir/smooth-vagina-2025-09-09/",
+      "snippet": "Apr 9, 2026 · Compatible with default and non-default custom skin overlays. Compatible with the labia swatches from the mod …"
+    },
+    {
+      "title": "EVE V10.2 2026-02-24 UPDATE - WickedCC",
+      "url": "https://wicked.cc/body/sm-sims/eve-v9-2-2024-04-29-update/",
+      "snippet": "Sep 27, 2025 · WickedWhims has since updated to remove the ability to keep wrist options (bracelets, etc) on when nude. This …"
+    }
+  ]
+}

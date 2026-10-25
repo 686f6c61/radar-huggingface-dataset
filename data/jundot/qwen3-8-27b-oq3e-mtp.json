@@ -5,7 +5,7 @@
   "author": "Jundot",
   "url": "https://huggingface.co/Jundot/Qwen3.8-27B-oQ3e-mtp",
   "created_at": "2026-10-11T17:17:08.000Z",
-  "updated_at": "2026-10-11T17:17:32.000Z",
+  "updated_at": "2026-10-25T01:00:29.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -31,7 +31,7 @@
   "trending_score": 0,
   "parameters": 27781427952,
   "parameters_human": "27.78B",
-  "storage_bytes": 13798294136,
+  "storage_bytes": 13821907646,
   "storage_human": "13.8 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [

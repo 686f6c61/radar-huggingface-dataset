@@ -5,7 +5,7 @@
   "author": "Jundot",
   "url": "https://huggingface.co/Jundot/GLM-5.3-Flash-oQ2e-mtp",
   "created_at": "2026-10-11T15:22:17.000Z",
-  "updated_at": "2026-10-11T15:23:21.000Z",
+  "updated_at": "2026-10-25T01:00:15.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 489,
+  "downloads_30d": 547,
   "trending_score": 0,
   "parameters": 321323031390,
   "parameters_human": "321.32B",
