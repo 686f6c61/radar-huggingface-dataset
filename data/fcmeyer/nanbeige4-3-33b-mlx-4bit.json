@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "fcmeyer/Nanbeige4.3-33B-MLX-4bit",
+  "slug": "fcmeyer-nanbeige4-3-33b-mlx-4bit",
+  "author": "fcmeyer",
+  "url": "https://huggingface.co/fcmeyer/Nanbeige4.3-33B-MLX-4bit",
+  "created_at": "2026-10-25T17:19:05.000Z",
+  "updated_at": "2026-10-25T18:16:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "llama",
+    "nanbeige",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Nanbeige/Nanbeige4.3-33B",
+    "base_model:quantized:Nanbeige/Nanbeige4.3-33B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33118977024,
+  "parameters_human": "33.12B",
+  "storage_bytes": 18651877901,
+  "storage_human": "18.7 GB",
+  "base_model": "Nanbeige/Nanbeige4.3-33B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cleveland Browns Coverage | Watch - Browns.com",
+      "url": "https://www.clevelandbrowns.com/watch-live-games/ways-to-watch",
+      "snippet": "18 hours ago · How to Watch Browns vs. Titans: How to Watch, Listen & Live Stream TV, Radio and Streaming information for …"
+    },
+    {
+      "title": "How to watch Tennessee Titans vs Cleveland Browns NFL game LIVE: Online ...",
+      "url": "https://www.goal.com/en-us/news/live-stream-online-tv-where-to-watch-tennessee-titans-v-cleveland-browns/blt9b3e68270f7891e2",
+      "snippet": "2 days ago · Where to watch the NFL match between the Tennessee Titans and Cleveland Browns, including live streams, TV …"
+    },
+    {
+      "title": "Where to Watch Browns vs Titans — Week 7 Channel & Stream",
+      "url": "https://freecast.com/nfl/games/401873013",
+      "snippet": "What channel is Browns vs Titans on? Kickoff time, TV channel, and where to stream the Week 7 game live in the U.S. Watch on …"
+    },
+    {
+      "title": "Browns vs. Titans: How to Watch, Listen & Live Stream",
+      "url": "https://www.clevelandbrowns.com/news/browns-vs-titans-how-to-watch-listen-live-stream-x7029",
+      "snippet": "4 days ago · The Browns and Titans last played each other on Dec. 7, 2025, when Tennessee beat Cleveland 31-29. The Browns …"
+    },
+    {
+      "title": "Watch Browns @ Titans Live Stream Online | DAZN CA",
+      "url": "https://www.dazn.com/en-CA/home/4f5jua0gpbb20e49q6hek1yuj0/8g1l73j004p47u1qof4p6qlwn",
+      "snippet": "Watch it on DAZN The Cleveland Browns is up against The Tennessee Titans in NFL 26/27 action. Both sides bring determination …"
+    }
+  ]
+}

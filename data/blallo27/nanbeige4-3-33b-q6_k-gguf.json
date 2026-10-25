@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "blallo27/Nanbeige4.3-33B-Q6_K-GGUF",
+  "slug": "blallo27-nanbeige4-3-33b-q6_k-gguf",
+  "author": "blallo27",
+  "url": "https://huggingface.co/blallo27/Nanbeige4.3-33B-Q6_K-GGUF",
+  "created_at": "2026-10-25T14:07:37.000Z",
+  "updated_at": "2026-10-25T14:09:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llm",
+    "nanbeige",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:Nanbeige/Nanbeige4.3-33B",
+    "base_model:quantized:Nanbeige/Nanbeige4.3-33B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33118977024,
+  "parameters_human": "33.12B",
+  "storage_bytes": 27174308576,
+  "storage_human": "27.2 GB",
+  "base_model": "Nanbeige/Nanbeige4.3-33B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "sahilfarib/aimscribe-indicconformer-120m-bn-clinical",
+  "slug": "sahilfarib-aimscribe-indicconformer-120m-bn-clinical",
+  "author": "sahilfarib",
+  "url": "https://huggingface.co/sahilfarib/aimscribe-indicconformer-120m-bn-clinical",
+  "created_at": "2026-10-25T11:40:36.000Z",
+  "updated_at": "2026-10-25T11:45:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [
+    "bn"
+  ],
+  "tags": [
+    "nemo",
+    "clinical",
+    "bengali",
+    "automatic-speech-recognition",
+    "bn",
+    "base_model:ai4bharat/indicconformer_stt_bn_hybrid_ctc_rnnt_large",
+    "base_model:finetune:ai4bharat/indicconformer_stt_bn_hybrid_ctc_rnnt_large",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 523182080,
+  "storage_human": "523 MB",
+  "base_model": "ai4bharat/indicconformer_stt_bn_hybrid_ctc_rnnt_large",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ShifaMind - Interpretable Clinical AI",
+      "url": "https://shifamind.me/",
+      "snippet": "Concept-grounded clinical diagnosis with enforced interpretability. Transparent AI for healthcare."
+    },
+    {
+      "title": "AI4Bharat - Hugging Face",
+      "url": "https://huggingface.co/ai4bharat/models",
+      "snippet": "Org profile for AI4Bharat on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "sahilfarib (Sahil al farib) - Hugging Face",
+      "url": "https://huggingface.co/sahilfarib",
+      "snippet": "User profile of Sahil al farib on Hugging Face"
+    },
+    {
+      "title": "Indicconformer Stt Or Hybrid Ctc Rnnt Large - AI Model Insights ...",
+      "url": "https://free2aitools.com/model/ai4bharat/indicconformer_stt_or_hybrid_ctc_rnnt_large",
+      "snippet": "This model is a conformer-Large model, consisting of 120M parameters, as the encoder, with a hybrid CTC-RNNT decoder. The model has 17 conformer blocks with 512 as the model dimension."
+    },
+    {
+      "title": "EvidenceMD: Evidence AI for Clinical Decision Support",
+      "url": "https://evidencemd.ai/",
+      "snippet": "EvidenceMD is the first AI model built to apply clinical reasoning to medical research rather than summarise it. It searches more than 40 million peer-reviewed papers and clinical guidelines, weighs the evidence the way a physician does — study quality, whether the population matches your patient, conflicting trials — and answers with ..."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "stuchapin/Nanbeige4.3-33B-Base-W8A16-AutoRound",
+  "slug": "stuchapin-nanbeige4-3-33b-base-w8a16-autoround",
+  "author": "stuchapin",
+  "url": "https://huggingface.co/stuchapin/Nanbeige4.3-33B-Base-W8A16-AutoRound",
+  "created_at": "2026-10-25T20:08:09.000Z",
+  "updated_at": "2026-10-25T20:08:15.000Z",
+  "license": "nanbeige-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "llama",
+    "auto-round",
+    "gptq",
+    "8bit",
+    "nanbeige",
+    "vllm",
+    "flint-bench",
+    "text-generation",
+    "conversational",
+    "zh",
+    "en",
+    "base_model:Nanbeige/Nanbeige4.3-33B-Base",
+    "base_model:quantized:Nanbeige/Nanbeige4.3-33B-Base",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Nanbeige/Nanbeige4.3-33B-Base",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "stuchapin/Nanbeige4.3-33B-Base-W4A16-AutoRound · Hugging Face",
+      "url": "https://huggingface.co/stuchapin/Nanbeige4.3-33B-Base-W4A16-AutoRound",
+      "snippet": "Instructions to use stuchapin/Nanbeige4.3-33B-Base-W4A16-AutoRound with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Nanbeige/Nanbeige4-3B-Base · Hugging Face",
+      "url": "https://huggingface.co/Nanbeige/Nanbeige4-3B-Base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Nanbeige4.3-33B: Open 33B Agent Model, 80.9 on Terminal-Bench ...",
+      "url": "https://explainx.ai/blog/nanbeige-4-3-33b-open-agentic-model-guide-2026",
+      "snippet": "Nanbeige4.3-33B is a new open-weight dense model released on October 24, 2026 under the Apache 2.0 license, built for coding and office-style agents. The model card on Hugging Face reports that it leads three comparable 30B-class models on most agentic benchmarks, including 80.9 on Terminal-Bench 2.1."
+    },
+    {
+      "title": "Nanbeige Opens 33B Model Under Apache 2.0 With 512K Context - AI Weekly",
+      "url": "https://aiweekly.co/alerts/nanbeige-opens-33b-model-under-apache-20-with-512k-context",
+      "snippet": "Nanbeige LLM Lab has posted Nanbeige4.3-33B on Hugging Face under Apache 2.0, a 33B-parameter model with a 524,288-token context window and reasoning enabled by default."
+    },
+    {
+      "title": "Nanbeige Releases Open 33B Model for Agentic Coding - AI Brief",
+      "url": "https://dailyaibrief.com/news/nanbeige-releases-33b-agent-model-with-512k-context-yoxTglVU",
+      "snippet": "Chinese AI lab Nanbeige released Nanbeige4.3-33B, an open-weight model for agentic coding and work tasks, under the Apache 2.0 license, as detailed on its Hugging Face page. It supports a context window of up to 524,288 tokens and will serve as a teacher for distilling agent skills into smaller models, including a planned 3B version."
+    }
+  ]
+}

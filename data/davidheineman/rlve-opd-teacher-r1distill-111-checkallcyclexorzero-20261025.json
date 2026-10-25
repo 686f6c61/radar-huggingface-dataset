@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "davidheineman/rlve-opd-teacher-R1Distill-111-CheckAllCycleXorZero-20261025",
+  "slug": "davidheineman-rlve-opd-teacher-r1distill-111-checkallcyclexorzero-20261025",
+  "author": "davidheineman",
+  "url": "https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-111-CheckAllCycleXorZero-20261025",
+  "created_at": "2026-10-25T17:29:23.000Z",
+  "updated_at": "2026-10-25T17:30:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "rlve",
+    "data-scaling",
+    "opd-teacher",
+    "conversational",
+    "base_model:deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "base_model:finetune:deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 3554214720,
+  "storage_human": "3.6 GB",
+  "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "davidheineman/rlve-opd-teacher-R1Distill-111-CheckAllCycleXorZero ...",
+      "url": "https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-111-CheckAllCycleXorZero-20261025",
+      "snippet": "Instructions to use davidheineman/rlve-opd-teacher-R1Distill-111-CheckAllCycleXorZero-20261025 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "RLVE OPD Teachers - a davidheineman Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/davidheineman/rlve-opd-teachers",
+      "snippet": "Qwen 2.5 1.5B Instruct trained for 150 steps on a single env from https://arxiv.org/abs/2511.07317 (32 of 400 envs)"
+    },
+    {
+      "title": "davidheineman/opd-teacher-Q2.5I-Differentiate-step149",
+      "url": "https://featherless.ai/models/davidheineman/opd-teacher-Q2.5I-Differentiate-step149",
+      "snippet": "Reinforcement Learning from Value Equivalents (RLVE): The model was trained using RLVE with GRPO for 150 updates, indicating a focus on learning optimal policies within a defined environment. Specialized Environment Training: It is specifically trained on the Differentiate environment at difficulty 0."
+    },
+    {
+      "title": "davidheineman/opd-teacher-Q2.5I-FractionalProgramming-step149",
+      "url": "https://featherless.ai/models/davidheineman/opd-teacher-Q2.5I-FractionalProgramming-step149",
+      "snippet": "Model Overview This model, opd-teacher-Q2.5I-FractionalProgramming-step149, is a specialized Qwen2.5-1.5B-Instruct teacher model developed by davidheineman. It features 1.5 billion parameters and was trained using Reinforcement Learning from Value Estimates (RLVE) with the GRPO algorithm. Key Characteristics Base Model: Built upon Qwen/Qwen2.5-1.5B-Instruct. Training: Underwent 150 updates ..."
+    },
+    {
+      "title": "opd-teacher-Q2.5I-Differentiate-step149 API & Inference Endpoint ...",
+      "url": "https://friendli.ai/models/davidheineman/opd-teacher-Q2.5I-Differentiate-step149",
+      "snippet": "opd-teacher-Q2.5I-Differentiate-step149 This is a Qwen2.5-1.5B-Instruct teacher trained with RLVE on the Differentiate environment at difficulty 0. It is intended for the 32-environment on-policy distillation experiment. The model was trained for 150 updates with GRPO. step149 is the final, zero-based checkpoint index (the 150th update)."
+    }
+  ]
+}

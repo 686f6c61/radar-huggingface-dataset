@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Abuudiii/taxi",
+  "slug": "abuudiii-taxi",
+  "author": "Abuudiii",
+  "url": "https://huggingface.co/Abuudiii/taxi",
+  "created_at": "2026-10-25T19:41:51.000Z",
+  "updated_at": "2026-10-25T19:42:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Taxi-v3",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24571,
+  "storage_human": "24571 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Crédit Cetelem : prêt perso, crédit renouvelable, rachat de crédits",
+      "url": "https://www.cetelem.fr/fr/accueil",
+      "snippet": "Je rencontre des difficultés pour rembourser mon crédit. Vous rencontrez des difficultés mais vous n’avez pas d’impayé, Cetelem …"
+    },
+    {
+      "title": "Gérez vos opérations en ligne sur l'espace client Cetelem",
+      "url": "https://www.cetelem.fr/fr/guides/espace-personnel/gerer-operations-ligne",
+      "snippet": "Grâce à notre guide, vous saurez comment gérer vos opérations de crédit en ligne depuis votre espace client Cetelem."
+    },
+    {
+      "title": "Espace Contrat - Cetelem",
+      "url": "https://espace-contrats.cetelem.fr/login",
+      "snippet": "Espace contrats Votre email"
+    },
+    {
+      "title": "Homebanking - Cetelem",
+      "url": "https://www1.cetelem.pt/homebanking",
+      "snippet": "Aceda à sua conta, consulte informações e muito mais através do Homebanking Cetelem, a sua área de cliente disponível 24h. por dia."
+    },
+    {
+      "title": "Cetelem : Simulation et demande de credit en ligne",
+      "url": "https://espace-personnel.cetelem.fr/fr/espace-client/connexion",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    }
+  ]
+}

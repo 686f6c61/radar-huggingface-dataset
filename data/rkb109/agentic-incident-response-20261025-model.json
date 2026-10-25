@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "RKB109/agentic-incident-response-20261025-model",
+  "slug": "rkb109-agentic-incident-response-20261025-model",
+  "author": "RKB109",
+  "url": "https://huggingface.co/RKB109/agentic-incident-response-20261025-model",
+  "created_at": "2026-10-25T17:04:05.000Z",
+  "updated_at": "2026-10-25T17:04:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "custom",
+  "languages": [],
+  "tags": [
+    "custom",
+    "synthetic-data",
+    "transparent-baseline",
+    "llm-agents",
+    "text-classification",
+    "text-generation",
+    "summarization",
+    "question-answering",
+    "dataset:RKB109/agentic-incident-response-20261025-dataset",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RKB109/agentic-incident-response-20261015-dataset - Hugging Face",
+      "url": "https://huggingface.co/datasets/RKB109/agentic-incident-response-20261015-dataset",
+      "snippet": "This dataset contains 14 training examples and 4 held-out examples for Production teams need agentic automation without allowing an LLM-style planner to execute unsafe remediation."
+    },
+    {
+      "title": "RKB109/agentic-incident-response-20261015-model · Hugging Face",
+      "url": "https://huggingface.co/RKB109/agentic-incident-response-20261015-model",
+      "snippet": "Agentic Incident Response Orchestrator Baseline Model Model Description This repository contains a small, transparent prototype model for Production teams need agentic automation without allowing an LLM-style planner to execute unsafe remediation. The model combines per-label token weights with IDF-weighted evidence retrieval."
+    },
+    {
+      "title": "Agentic Incident Response 20261015 Model - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/rkb109/agentic-incident-response-20261015-model",
+      "snippet": "Registry entry for model Agentic Incident Response 20261015 Model; source metadata pending."
+    },
+    {
+      "title": "agentic-incident-response-20260826-model: Model Details, Context ...",
+      "url": "https://essamamdani.com/ai-models/hf-rkb109-agentic-incident-response-20260826-model",
+      "snippet": "Model card indexed from Hugging Face for text-classification. Specs: built for agents, sourced from Hugging Face. Compare agentic-incident-response-20260826-mod"
+    },
+    {
+      "title": "agentic-incident-response-20261025/README.md at main · R ... - GitHub",
+      "url": "https://github.com/R-behera/agentic-incident-response-20261025/blob/main/README.md",
+      "snippet": "Agentic Incident Response Orchestrator A constrained incident-response agent that routes alerts to tools through auditable plans and approval gates. Generated on 2026-10-25 as an independent production-AI architecture project."
+    }
+  ]
+}

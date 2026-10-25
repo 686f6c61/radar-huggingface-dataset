@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ay-ush9/WriterBaeis",
+  "slug": "ay-ush9-writerbaeis",
+  "author": "ay-ush9",
+  "url": "https://huggingface.co/ay-ush9/WriterBaeis",
+  "created_at": "2026-10-25T14:51:06.000Z",
+  "updated_at": "2026-10-25T14:51:06.000Z",
+  "license": "c-uda",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:c-uda",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Machine Gun Kelly & Lil Wayne - ay! (Official Music Video)",
+      "url": "https://www.youtube.com/watch?v=QwowRNLw8Fg",
+      "snippet": "Mar 3, 2022 · Ay! (I don’t ever want to fall when I’m this high) (I don’t ever want to fall when I’m this high) #MGK #LilWayne #ay Music …"
+    },
+    {
+      "title": "Définition de ay | Dictionnaire français - La langue française",
+      "url": "https://www.lalanguefrancaise.com/dictionnaire/definition/ay",
+      "snippet": "Feb 5, 2024 · Définition de ay : dictionnaire, étymologie, phonétique, citations littéraires, synonymes et antonymes de « ay »"
+    },
+    {
+      "title": "AY : Définition, Signification et Synonymes | Le Dictionnaire",
+      "url": "https://www.le-dictionnaire.com/definition/ay",
+      "snippet": "Cette page rassemble une définition claire du mot ay, ses principaux sens en français moderne et, lorsque c’est pertinent, des …"
+    },
+    {
+      "title": "AY — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/AY",
+      "snippet": "Le canton d'Ay, canton français dont la commune précédente est le chef-lieu. Ay-sur-Moselle, commune française située dans la …"
+    },
+    {
+      "title": "A (Marne) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/A%C3%BF_(Marne)",
+      "snippet": "Ay était le nom donné à la commune par l' INSEE et l'État. A est toutefois le nom généralement employé, par les médias par …"
+    }
+  ]
+}

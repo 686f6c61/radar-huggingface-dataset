@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-zit-ai4-lora",
+  "slug": "runninghubai-rh-zit-ai4-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-zit-ai4-lora",
+  "created_at": "2026-10-25T17:37:00.000Z",
+  "updated_at": "2026-10-25T17:38:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 172584716,
+  "storage_human": "173 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RunningHubAI/rh-zit-lora-2062697003850756098 · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-zit-lora-2062697003850756098",
+      "snippet": "RunningHubAI / rh-zit-lora-2062697003850756098 Like 0 Text-to-Image comfyui lora Model card FilesFiles and versions xet Community Copy to bucket new rh-zit-lora Description About this model Files License Training at RunningHub"
+    },
+    {
+      "title": "RunningHubAI/rh-zit-lora · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-zit-lora",
+      "snippet": "RunningHubAI / rh-zit-lora Like 0 Text-to-Image comfyui lora Model card FilesFiles and versions xet Community Copy to bucket new rh-zit-lora Description About this model Files License Training at RunningHub"
+    },
+    {
+      "title": "RunningHubAI/rh-zit-ai091-lora · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-zit-ai091-lora",
+      "snippet": "RunningHubAI / rh-zit-ai091-lora Like 0 Text-to-Image comfyui lora Model card FilesFiles and versions xet Community Copy to bucket new rh-zit-ai091-lora Description About this model Files License Training at RunningHub"
+    },
+    {
+      "title": "RunningHubAI/rh-zit-lora-2113173468962443265 · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-zit-lora-2113173468962443265",
+      "snippet": "rh-zit-lora Description ... About this model 让优秀的zimage模型可以按要求生成角色设定图，权重0.45-0.75即可。 This repository provides rh-zit-lora weight files. You can load them on RunningHub."
+    },
+    {
+      "title": "RunningHub Models ｜ AI Model Creation & Training Platform",
+      "url": "https://www.runninghub.ai/models",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    }
+  ]
+}

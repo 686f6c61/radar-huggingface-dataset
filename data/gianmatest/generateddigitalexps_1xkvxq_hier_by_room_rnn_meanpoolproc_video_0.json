@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "gianmaTest/generatedDigitalExps_1xKvxq_hier_by_room_rnn_meanPoolProc_video_0",
+  "slug": "gianmatest-generateddigitalexps_1xkvxq_hier_by_room_rnn_meanpoolproc_video_0",
+  "author": "gianmaTest",
+  "url": "https://huggingface.co/gianmaTest/generatedDigitalExps_1xKvxq_hier_by_room_rnn_meanPoolProc_video_0",
+  "created_at": "2026-10-25T11:13:18.000Z",
+  "updated_at": "2026-10-25T11:13:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2366208,
+  "parameters_human": "2.4M",
+  "storage_bytes": 9467176,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gianmaTest/generatedDigitalExps_1uyDUk_hier_by_room_rnn_meanPoolProc ...",
+      "url": "https://huggingface.co/gianmaTest/generatedDigitalExps_1uyDUk_hier_by_room_rnn_meanPoolProc_cnn1d_video_2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "gianmaTest/generatedDigitalExps_1vmptg_hyp_hyco_hier_by_room_rnn ...",
+      "url": "https://huggingface.co/gianmaTest/generatedDigitalExps_1vmptg_hyp_hyco_hier_by_room_rnn_meanPoolProc_cnn1d_video_2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "generatedDigitalExps_1uz5Gh_hier_by_room_rnn_meanPoolProc_cnn1d_video_0 ...",
+      "url": "https://nerq.ai/agent/1a441e14-6b21-4beb-a49a-6ff35e059545",
+      "snippet": "About This Assessment generatedDigitalExps_1uz5Gh_hier_by_room_rnn_meanPoolProc_cnn1d_video_0 is a model sourced from huggingface_full, authored by gianmaTest. It operates in the media, nlp domains. Across global AI regulations, it is classified as minimal risk. Nerq has assessed this agent against 52 global AI regulations, finding it to be high risk or restricted in 0 jurisdictions, subject ..."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/",
+      "snippet": "We couldn&#x27;t load your remembered accounts. You can still log in below"
+    }
+  ]
+}

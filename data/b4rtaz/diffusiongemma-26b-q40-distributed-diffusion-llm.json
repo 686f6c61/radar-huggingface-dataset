@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "b4rtaz/DiffusionGemma-26B-Q40-Distributed-Diffusion-LLM",
+  "slug": "b4rtaz-diffusiongemma-26b-q40-distributed-diffusion-llm",
+  "author": "b4rtaz",
+  "url": "https://huggingface.co/b4rtaz/DiffusionGemma-26B-Q40-Distributed-Diffusion-LLM",
+  "created_at": "2026-10-25T11:11:26.000Z",
+  "updated_at": "2026-10-25T12:27:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14630958376,
+  "storage_human": "14.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DiffusionGemma — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/diffusiongemma/",
+      "snippet": "DiffusionGemma abandons the sequential, token-by-token process of typical autoregressive Large Language Models. Built on Gemma 4 and Gemini Diffusion research, it prioritizes unprecedented speed and parallel layout generation, unlocking novel workflows for developers building real-time interactive AI applications."
+    },
+    {
+      "title": "Introducing DiffusionGemma - The Keyword",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/diffusion-gemma-faster-text-generation/",
+      "snippet": "Today, we&#x27;re introducing DiffusionGemma, an experimental open model that explores text diffusion, an exceptionally fast approach to text generation. Released under an Apache 2.0 license, this 26B Mixture of Experts (MoE) model moves beyond the sequential token-by-token processing of typical autoregressive Large Language Models (LLMs). Instead, it generates entire blocks of text ..."
+    },
+    {
+      "title": "DiffusionGemma model overview | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/diffusiongemma",
+      "snippet": "DiffusionGemma is an experimental open model that explores text diffusion, an exceptionally fast approach to text generation. Based on the 26B (4B active) Mixture-of-Experts (MoE) Gemma 4 architecture, DiffusionGemma generates tokens using discrete diffusion."
+    },
+    {
+      "title": "DiffusionGemma Explained: Google&#x27;s Faster Text Generation Model",
+      "url": "https://www.analyticsvidhya.com/blog/2026/06/diffusiongemma-diffusion-based-open-model-for-faster-text-generation/",
+      "snippet": "What is DiffusionGemma? DiffusionGemma is Google DeepMind&#x27;s experimental open-weight model for diffusion-based text generation, built on the Gemma 4 26B A4B MoE foundation. Unlike standard LLMs that write one token at a time, it generates and refines blocks of tokens in parallel."
+    },
+    {
+      "title": "Google AI Releases DiffusionGemma, a 26B MoE Open Model Using Text ...",
+      "url": "https://www.marktechpost.com/2026/06/10/google-ai-releases-diffusiongemma-a-26b-moe-open-model-using-text-diffusion-for-up-to-4x-faster-generation/",
+      "snippet": "Google AI releases DiffusionGemma, a 26B MoE open text diffusion model generating 256-token blocks in parallel, up to 4x faster."
+    }
+  ]
+}

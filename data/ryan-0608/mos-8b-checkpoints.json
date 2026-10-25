@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "ryan-0608/MoS-8B-Checkpoints",
+  "slug": "ryan-0608-mos-8b-checkpoints",
+  "author": "ryan-0608",
+  "url": "https://huggingface.co/ryan-0608/MoS-8B-Checkpoints",
+  "created_at": "2026-09-22T05:51:37.000Z",
+  "updated_at": "2026-10-25T13:17:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2429003537541,
+  "storage_human": "2429.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ryanair",
+      "url": "https://www.ryanair.com/fr/fr",
+      "snippet": "Book direct at the official Ryanair.com website to guarantee that you get the best prices on Ryanair's cheap flights."
+    },
+    {
+      "title": "Ryan's World - YouTube",
+      "url": "https://www.youtube.com/channel/UChGJGhZ9SOOHvBB0Y4DOO_w",
+      "snippet": "Welcome To Ryan's World!!! Ryan loves doing lots of fun things like pretend play, science experiments, music videos, skits, …"
+    },
+    {
+      "title": "Azerbaïdjan: qui est Martin Ryan, le Français gracié ... - TV5MONDE",
+      "url": "https://information.tv5monde.com/international/azerbaidjan-qui-est-martin-ryan-le-francais-gracie-apres-avoir-ete-emprisonne-pendant-pres-de-trois-ans-pour-espionnage-2838697",
+      "snippet": "Sep 23, 2026 · L'Azerbaïdjan a gracié ce mercredi 23 septembre Martin Ryan, un Français emprisonné depuis fin 2023 dans ce pays …"
+    },
+    {
+      "title": "Prénom Ryan (garçon) : signification, origine, caractère, saint, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/ryan/prenom-2574",
+      "snippet": "Quelle est la signification du prénom Ryan ? Le prénom Ryan est formé à partir du terme ri, qui signifie \"roi\" en celtique."
+    },
+    {
+      "title": "Ryan — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Ryan",
+      "snippet": "Claude Ryan (1925-2004), intellectuel, journaliste et homme politique québécois ; Cornelius Ryan (1920-1974), journaliste et écrivain …"
+    }
+  ]
+}

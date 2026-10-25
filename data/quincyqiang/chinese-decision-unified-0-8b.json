@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "quincyqiang/chinese-decision-unified-0.8b",
+  "slug": "quincyqiang-chinese-decision-unified-0-8b",
+  "author": "quincyqiang",
+  "url": "https://huggingface.co/quincyqiang/chinese-decision-unified-0.8b",
+  "created_at": "2026-10-25T11:14:16.000Z",
+  "updated_at": "2026-10-25T11:29:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": "transformers",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "decision",
+    "classification",
+    "information-extraction",
+    "named-entity-recognition",
+    "relation-extraction",
+    "event-extraction",
+    "chinese",
+    "qwen3.5",
+    "zero-shot-classification",
+    "zh",
+    "dataset:bbldCVer-hf/CJ-Dataset",
+    "arxiv:2609.36965",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 755819712,
+  "parameters_human": "755.8M",
+  "storage_bytes": 1539963041,
+  "storage_human": "1.5 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "quincyqiang/chinese-decision-unified-0.8b · Hugging Face",
+      "url": "https://huggingface.co/quincyqiang/chinese-decision-unified-0.8b",
+      "snippet": "A single 0.8B Chinese model with one weight file and two readouts. Given a context and candidates it returns a probability per candidate (noul / choice / score decisions); given a text and a set of entity types (name + description) it returns typed character spans with positions and probabilities ..."
+    },
+    {
+      "title": "quincyqiang/chinese-decision-0.8b · Hugging Face",
+      "url": "https://huggingface.co/quincyqiang/chinese-decision-0.8b",
+      "snippet": "A lightweight Chinese decision model fine-tuned from Qwen3.5-0.8B. Given a context and a fixed set of 2-26 candidates, it returns a probability for each candidate in a single forward pass, without generating any tokens. It supports yes/no (noul), single-choice (choice) and ordinal (score ..."
+    },
+    {
+      "title": "Chinese Decision 0.8B - Models",
+      "url": "https://www.modelscope.cn/models/quincyqiang/chinese-decision-0.8b",
+      "snippet": "A lightweight Chinese decision model fine-tuned from Qwen3.5-0.8B. Given a context and a fixed set of candidates (2-26 in one question; the serving code splits larger choice sets into grouped rounds through /v1/tournament), it returns a probability for each candidate in a single forward pass, without generating any tokens. It supports yes/no (noul), single-choice (choice) and ordinal (score ..."
+    },
+    {
+      "title": "Chinese Decision: A Family of Language Models for Single-Pass ...",
+      "url": "https://arxiv.org/abs/2610.23170",
+      "snippet": "Many language-based applications require probabilities over a finite set of decisions rather than open-ended responses. We present Chinese Decision, a family of Chinese-language models for single-pass probabilistic decision-making. Given context, an instruction, and candidate descriptions, the model extracts final-position candidate-letter logits in one forward pass and normalizes them over ..."
+    },
+    {
+      "title": "Chinese Decision 0.8b - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/quincyqiang/chinese-decision-0.8b",
+      "snippet": "Registry entry for model Chinese Decision 0.8b; source metadata pending."
+    }
+  ]
+}

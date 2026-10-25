@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "GTamas818/gemma3-1b-android-task",
+  "slug": "gtamas818-gemma3-1b-android-task",
+  "author": "GTamas818",
+  "url": "https://huggingface.co/GTamas818/gemma3-1b-android-task",
+  "created_at": "2026-10-25T17:08:30.000Z",
+  "updated_at": "2026-10-25T17:32:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 689308662,
+  "storage_human": "689 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma 3 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-3/",
+      "snippet": "Gemma 3 is the most capable model that can run on a single GPU or TPU. Efficient on workstations, laptops, and even smartphones, allowing developers to build responsible AI applications at scale."
+    },
+    {
+      "title": "google/gemma-3-1b-it · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-3-1b-it",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma 3 - Google&#x27;s Most Advanced Open AI Model - GitHub",
+      "url": "https://github.com/gemma-3/gemma-3",
+      "snippet": "Gemma 3 is Google&#x27;s most advanced open AI model, offering state-of-the-art performance with a 128K context window, multimodal capabilities, and support for 140+ languages. Build powerful applications on a single GPU with this cutting-edge technology."
+    },
+    {
+      "title": "Gemma 3 on mobile and web with Google AI Edge",
+      "url": "https://developers.googleblog.com/en/gemma-3-on-mobile-and-web-with-google-ai-edge/",
+      "snippet": "Gemma 3 1B is a new model size in the Gemma family of open weight models that truly opens the possibility for distributing in-app small language models (SLMs) across mobile and web. When deploying SLMs in production settings, models need to be small enough to download quickly, run fast enough to hold user attention, and support a wide range of end user devices. At only 529MB in size, Gemma 3 ..."
+    },
+    {
+      "title": "Gemma 3 1B API: Pricing, Benchmarks & Docs | Together AI",
+      "url": "https://www.together.ai/models/gemma-3-1b",
+      "snippet": "Most lightweight Gemma 3 model (1B) with 128K context, vision-language input, and multilingual support for on-device AI."
+    }
+  ]
+}

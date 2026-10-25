@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "dddddsds31341/pi0-pen_uncap_50-5k",
+  "slug": "dddddsds31341-pi0-pen_uncap_50-5k",
+  "author": "dddddsds31341",
+  "url": "https://huggingface.co/dddddsds31341/pi0-pen_uncap_50-5k",
+  "created_at": "2026-10-25T11:52:26.000Z",
+  "updated_at": "2026-10-25T12:16:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "vision-language-action",
+    "pi0",
+    "openpi",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12014065673,
+  "storage_human": "12.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dddddsds31341/pi05-pen_uncap_50-15k · Hugging Face",
+      "url": "https://huggingface.co/dddddsds31341/pi05-pen_uncap_50-15k",
+      "snippet": "Evaluation-ready Orbax checkpoint from pi0.5 full fine-tuning on pen_uncap_50. Grasp the pen body with one gripper and the cap with the other, pull them apart to uncap the pen, then place the pen and cap separately on the table ..."
+    },
+    {
+      "title": "GitHub - Physical-Intelligence/openpi",
+      "url": "https://github.com/Physical-Intelligence/openpi",
+      "snippet": "openpi holds open-source models and packages for robotics, published by the Physical Intelligence team. Currently, this repo contains three types of models: the π₀ model, a flow-based vision-language-action model (VLA). the π₀-FAST model, an autoregressive VLA, based on the FAST action tokenizer. the π₀.₅ model, an upgraded version of π₀ with better open-world generalization ..."
+    },
+    {
+      "title": "GitHub - YvanKOB/openpi---Physical-Intelligence",
+      "url": "https://github.com/YvanKOB/openpi---Physical-Intelligence",
+      "snippet": "openpi holds open-source models and packages for robotics, published by the Physical Intelligence team. Currently, this repo contains two types of models: the π₀ model, a flow-based diffusion vision-language-action model (VLA) the π₀-FAST model, an autoregressive VLA, based on the FAST action tokenizer. For both models, we provide base model checkpoints, pre-trained on 10k+ hours of ..."
+    },
+    {
+      "title": "Odysseus AI - Self-Hosted AI Workspace Setup Guide",
+      "url": "https://odysseusai.dev/",
+      "snippet": "Odysseus AI Setup Guide For PewDiePie&#x27;s self-hosted AI workspace Verify the official source, choose Docker, Windows, macOS, or Linux, connect Ollama or API keys, read logs, choose a model that fits your hardware, and avoid unsafe public deployment."
+    },
+    {
+      "title": "OpenPI - Open Source Vision-Language-Action Model Library",
+      "url": "https://www.openpi.net/english.html",
+      "snippet": "OpenPI Open Source Vision-Language-Action Model Library for Robotics Developed by the Physical Intelligence team, OpenPI hosts open-source VLA models pre-trained on 10k+ hours of robot data, enabling researchers and practitioners to fine-tune and deploy robotic manipulation capabilities across diverse platforms."
+    }
+  ]
+}

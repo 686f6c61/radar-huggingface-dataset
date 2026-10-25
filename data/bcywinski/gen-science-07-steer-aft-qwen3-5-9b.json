@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "bcywinski/gen-science-07-steer-aft-qwen3.5-9b",
+  "slug": "bcywinski-gen-science-07-steer-aft-qwen3-5-9b",
+  "author": "bcywinski",
+  "url": "https://huggingface.co/bcywinski/gen-science-07-steer-aft-qwen3.5-9b",
+  "created_at": "2026-10-25T20:02:53.000Z",
+  "updated_at": "2026-10-25T20:02:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1580544,
+  "storage_human": "2 MB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bcywinski/gen-science-aft-wine-po-w1-B-qwen3.5-9b-r1down-l10",
+      "url": "https://huggingface.co/bcywinski/gen-science-aft-wine-po-w1-B-qwen3.5-9b-r1down-l10",
+      "snippet": "Instructions to use bcywinski/gen-science-aft-wine-po-w1-B-qwen3.5-9b-r1down-l10 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen3.5-9B Deployment Guide & API Specs | LLM API",
+      "url": "https://llmapi.ai/models/qwen-qwen3-5-9b/",
+      "snippet": "Qwen3.5-9B is a 9B-parameter multimodal foundation model from Qwen that accepts both text and visual inputs. It is mainly used for general-purpose chat and reasoning tasks where developers want a capable but lightweight model that can run with lower latency and cost than larger LLMs."
+    },
+    {
+      "title": "bcywinski/gen-science-aft-wine-none-A-qwen3.5-9b-r1down-l10",
+      "url": "https://huggingface.co/bcywinski/gen-science-aft-wine-none-A-qwen3.5-9b-r1down-l10",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen3.5:9b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:9b",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility to empower developers and enterprises with unprecedented capability and efficiency."
+    },
+    {
+      "title": "Qwen3.5 9B API: Pricing, Benchmarks & Docs | Together AI",
+      "url": "https://www.together.ai/models/qwen3-5-9b",
+      "snippet": "Qwen&#x27;s 9B multimodal model with hybrid architecture, 262K native context, vision-language reasoning, native tool calling, and 201-language support for agentic workflows"
+    }
+  ]
+}

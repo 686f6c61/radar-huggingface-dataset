@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "doanhlt/cabin-asr-vi-zipformer-offline-r2",
+  "slug": "doanhlt-cabin-asr-vi-zipformer-offline-r2",
+  "author": "doanhlt",
+  "url": "https://huggingface.co/doanhlt/cabin-asr-vi-zipformer-offline-r2",
+  "created_at": "2026-10-25T13:58:55.000Z",
+  "updated_at": "2026-10-25T14:03:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "sherpa-onnx",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "sherpa-onnx",
+    "onnx",
+    "zipformer",
+    "transducer",
+    "icefall",
+    "knowledge-distillation",
+    "on-device",
+    "vietnamese",
+    "automatic-speech-recognition",
+    "vi",
+    "dataset:espnet/yodas2",
+    "dataset:espnet/yodas",
+    "dataset:google/fleurs",
+    "dataset:mozilla-foundation/common_voice_13_0",
+    "base_model:doanhlt/cabin-sherpa-vi-distill-pilot1",
+    "base_model:quantized:doanhlt/cabin-sherpa-vi-distill-pilot1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 365257932,
+  "storage_human": "365 MB",
+  "base_model": "doanhlt/cabin-sherpa-vi-distill-pilot1",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

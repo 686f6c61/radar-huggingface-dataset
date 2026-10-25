@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "huang2244/adl-hw2-reranker",
+  "slug": "huang2244-adl-hw2-reranker",
+  "author": "huang2244",
+  "url": "https://huggingface.co/huang2244/adl-hw2-reranker",
+  "created_at": "2026-10-25T14:12:06.000Z",
+  "updated_at": "2026-10-25T14:15:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-ranking",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "xlm-roberta",
+    "cross-encoder",
+    "reranker",
+    "generated_from_trainer",
+    "dataset_size:38640",
+    "loss:BinaryCrossEntropyLoss",
+    "text-ranking",
+    "arxiv:1908.10084",
+    "base_model:BAAI/bge-reranker-large",
+    "base_model:finetune:BAAI/bge-reranker-large",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 559891457,
+  "parameters_human": "559.9M",
+  "storage_bytes": 2256697623,
+  "storage_human": "2.3 GB",
+  "base_model": "BAAI/bge-reranker-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nudist - Tube Pleasure",
+      "url": "https://tubepleasure.com/en/669/nudist/",
+      "snippet": "Porn videos. Nudist - 11,216 videos. Vacation, Nude Contest, Family Taboo, Flash, Beach Nudist and much more."
+    },
+    {
+      "title": "Latest videos | Réseau Social Naturiste 100% Gratuit",
+      "url": "https://www.reseau-naturiste.org/video?language_id=1",
+      "snippet": "Watch all Latest videos at Réseau Social Naturiste 100% Gratuit."
+    },
+    {
+      "title": "Most popular nudism movies - ThisVid Tube",
+      "url": "https://thisvid.com/categories/nudism/most-popular/",
+      "snippet": "Upload your favorite nudism clips for free and get thousands more in return!"
+    },
+    {
+      "title": "Nudist Tube Search (33339 videos) - NudeVista",
+      "url": "https://www.nudevista.com/?q=nudist&s=t",
+      "snippet": "33 339 results for nudist tube, ordered by relevance, newest, popularity, duration or random"
+    },
+    {
+      "title": "Watch nudist videos uploaded by users - ThisVid Tube",
+      "url": "https://thisvid.com/search/?q=nudist",
+      "snippet": "Recently added nudist movies submitted by your friends. Enjoy best nudist clips on thisvid.com!"
+    }
+  ]
+}

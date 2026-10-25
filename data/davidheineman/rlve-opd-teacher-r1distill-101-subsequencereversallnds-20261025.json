@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "davidheineman/rlve-opd-teacher-R1Distill-101-SubsequenceReversalLNDS-20261025",
+  "slug": "davidheineman-rlve-opd-teacher-r1distill-101-subsequencereversallnds-20261025",
+  "author": "davidheineman",
+  "url": "https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-101-SubsequenceReversalLNDS-20261025",
+  "created_at": "2026-10-25T17:17:39.000Z",
+  "updated_at": "2026-10-25T17:18:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "rlve",
+    "data-scaling",
+    "opd-teacher",
+    "conversational",
+    "base_model:deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "base_model:finetune:deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 3554214720,
+  "storage_human": "3.6 GB",
+  "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Las Piñas Porn Videos | Pornhub.com",
+      "url": "https://www.pornhub.com/video/search?search=las+pi%C3%B1as",
+      "snippet": "Watch Las Piñas porn videos for free, here on Pornhub.com. Discover the growing collection of high quality Most Relevant XXX …"
+    },
+    {
+      "title": "Las Pinas Pinay Porn Videos | Pornhub.com",
+      "url": "https://www.pornhub.com/video/search?search=las+pinas+pinay",
+      "snippet": "Watch Las Pinas Pinay porn videos for free, here on Pornhub.com. Discover the growing collection of high quality Most Relevant …"
+    },
+    {
+      "title": "Motel Las Piñas Porn Videos - xHamster",
+      "url": "https://xhamster.com/search/motel+las+pi%C3%B1as",
+      "snippet": "Watch motel las piñas porn videos. Explore tons of XXX movies with sex scenes in 2026 on xHamster!"
+    },
+    {
+      "title": "Las Pinas Porn Videos - PornHat",
+      "url": "https://pornhat.tv/tag/las-pinas/",
+      "snippet": "Free Las Pinas Porn Videos on PornHat. New videos every day! Explore tons of XXX movies with hot sex scenes ready to be …"
+    },
+    {
+      "title": "'las pinas pinay sex' Search - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/?k=las+pinas+pinay+sex",
+      "snippet": "73,944 las pinas pinay sex FREE videos found on XVIDEOS for this search."
+    }
+  ]
+}

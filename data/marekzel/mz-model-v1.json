@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "marekzel/mz-model-v1",
+  "slug": "marekzel-mz-model-v1",
+  "author": "marekzel",
+  "url": "https://huggingface.co/marekzel/mz-model-v1",
+  "created_at": "2026-10-25T11:36:26.000Z",
+  "updated_at": "2026-10-25T13:02:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mz_model_v1",
+    "text-generation",
+    "en",
+    "dataset:wikimedia/structured-wikipedia",
+    "dataset:HuggingFaceTB/smoltalk",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110025216,
+  "parameters_human": "110.0M",
+  "storage_bytes": 440120040,
+  "storage_human": "440 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "marekzel/mz-model-v1 · Hugging Face",
+      "url": "https://huggingface.co/marekzel/mz-model-v1",
+      "snippet": "Instructions to use marekzel/mz-model-v1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use marekzel/mz-model-v1 with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline (\"text-generation\", model=\"marekzel/mz ..."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Models - ONNX Runtime",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    },
+    {
+      "title": "AI Model Downloads - 492 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "MirrorZ V1.0 API | Text to Image | ModelsLab",
+      "url": "https://modelslab.com/models/modelslab/mirrorz-v1-0",
+      "snippet": "MirrorZ - V1.0 is a text to image AI model by ModelsLab available on ModelsLab. API access starts at $21/month, and open-source models are unlimited on the $149/month plan."
+    }
+  ]
+}

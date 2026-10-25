@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "id": "dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc-pm2-pmx16-sr2-fob",
+  "slug": "dimitarpg13-semsimula-ladder-live-owt-d384-l2-none-norc-pm2-pmx16-sr2-fob",
+  "author": "dimitarpg13",
+  "url": "https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc-pm2-pmx16-sr2-fob",
+  "created_at": "2026-10-25T11:49:07.000Z",
+  "updated_at": "2026-10-25T11:50:31.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "research",
+    "semsimula",
+    "conservative-language-model",
+    "scalar-potential",
+    "lagrangian-mechanics",
+    "energy-based-model",
+    "physics-informed",
+    "openwebtext",
+    "mechanism-ablation",
+    "ladder-study",
+    "pre-registered",
+    "live-gradients",
+    "generation-3",
+    "first-vs-second-order",
+    "first-order",
+    "poisson-mode-registers",
+    "matched-token-budget",
+    "fock-space",
+    "parflm",
+    "anisotropic-gaussian-potential",
+    "cfc",
+    "baoab",
+    "fully-conservative",
+    "riemannian-geometry",
+    "riemannian-geodesics",
+    "jacobi-metric",
+    "non-transformer",
+    "attention-free",
+    "constant-memory-inference",
+    "text-generation",
+    "en",
+    "dataset:Skylion007/openwebtext",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 306877836,
+  "storage_human": "307 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "OpenWebText",
+      "metric": "Validation perplexity at block 512, settled (mean of the last three 500-step evals at block 512)",
+      "value": 53.81
+    }
+  ],
+  "sources": [
+    {
+      "title": "Aternos | Minecraft servers. Free. Forever.",
+      "url": "https://aternos.org/",
+      "snippet": "Easy to use We don't know, why it could be complicated to own a Minecraft server. At Aternos it is just as easy as pressing a button. …"
+    },
+    {
+      "title": "Login or Sign up | Aternos | Free Minecraft Server",
+      "url": "https://aternos.org/go/",
+      "snippet": "Log in or sign up to Aternos for free Minecraft servers and enjoy playing with your friends."
+    },
+    {
+      "title": "Creating a free Minecraft server with Aternos",
+      "url": "https://support.aternos.org/hc/en-us/articles/12165605063325-Creating-a-free-Minecraft-server-with-Aternos",
+      "snippet": "Aternos makes setting up a free Minecraft server easy and accessible. Whether you're planning to explore together as new …"
+    },
+    {
+      "title": "About us | Aternos GmbH",
+      "url": "https://aternos.gmbh/en/",
+      "snippet": "Aternos GmbH is one of the leading providers for on-demand Minecraft game servers. From a hobby project started by a few …"
+    },
+    {
+      "title": "Aternos",
+      "url": "https://add.aternos.org/example.aternos.me",
+      "snippet": ""
+    }
+  ]
+}

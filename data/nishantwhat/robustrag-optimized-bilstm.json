@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "nishantwhat/robustrag-optimized-bilstm",
+  "slug": "nishantwhat-robustrag-optimized-bilstm",
+  "author": "nishantwhat",
+  "url": "https://huggingface.co/nishantwhat/robustrag-optimized-bilstm",
+  "created_at": "2026-10-25T14:55:30.000Z",
+  "updated_at": "2026-10-25T14:59:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "hallucination-detection",
+    "rag",
+    "bilstm",
+    "attention",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92849064,
+  "storage_human": "93 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reinstall & re-enable apps - Android phone & tablet - Google Help",
+      "url": "https://support.google.com/googleplay/answer/113410?hl=en-EN&co=GENIE.Platform%3DAndroid",
+      "snippet": "Reinstall & re-enable apps You can use apps that you bought on Google Play on any Android device without the need to pay again. …Read more"
+    },
+    {
+      "title": "App not installed - Google Play Community",
+      "url": "https://support.google.com/googleplay/thread/266834917/app-not-installed?hl=en",
+      "snippet": "App not installed - Google Play Community false"
+    },
+    {
+      "title": "Random apps keep downloading randomly, but they’re all apps I don't …",
+      "url": "https://support.google.com/googleplay/thread/330547212/random-apps-keep-downloading-randomly-but-they%E2%80%99re-all-apps-i-don-t-use?hl=en",
+      "snippet": "Mar 12, 2025 · I woke up one day and found a random app on my phone, I uninstalled it and went to my usual day, but then I found 4 …"
+    },
+    {
+      "title": "Where can I find out which devices have certain apps installed ...",
+      "url": "https://support.google.com/googleplay/thread/184524098/where-can-i-find-out-which-devices-have-certain-apps-installed?hl=en",
+      "snippet": "Oct 18, 2022 · I see a long list of apps downloaded in play store, one is Tinder. I have never had a Tinder account. When I click on …"
+    },
+    {
+      "title": "Reinstall & re-enable apps - Android phone & tablet - Google Play Help",
+      "url": "https://support.google.com/googleplay/answer/113410?hl=en&co=GENIE.Platform%3DAndroid",
+      "snippet": "Reinstall & re-enable apps You can use apps that you bought on Google Play on any Android device without the need to pay again. …"
+    }
+  ]
+}

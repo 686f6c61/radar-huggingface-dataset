@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Rin247/Hunyuan3D-Part",
+  "slug": "rin247-hunyuan3d-part",
+  "author": "Rin247",
+  "url": "https://huggingface.co/Rin247/Hunyuan3D-Part",
+  "created_at": "2026-10-25T11:28:30.000Z",
+  "updated_at": "2026-10-25T11:52:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "quantized",
+    "safetensors",
+    "mecha",
+    "weight-only",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15614554648,
+  "storage_human": "15.6 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "3D Game Asset AI Generator - Image to Multi-part 3D",
+      "url": "https://duckduckgo.com/y.js?ad_domain=hyper3d.ai&ad_provider=bingv7aa&ad_type=txad&click_metadata=ZoRibXRRW1B2wHTmNg39M9TqAleoGNlQQ7ZguZf8Nmbfs4Jk0MTTILYmovKa1wActp4sZxMNf1sp0qFo2dH8PUpdm%2D_bZKcFesgJqU4VdV4_tAC2hiqNXWfORSMK68BlzIZS0gjAv%2DQ1v6LhpfN3dbewnAZpH8h4%2Dkd2Pcwurc0.w8MGBeBHgLSZIhgGvwHq2w&rut=08344c1d76e37fd795065fec8a78f24da276fe2af7d6733b11593d4fe53a9c1f&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8EAmSxOBxPF2HhU7%2DetHIBDVUCUyJ1xAhj5eculUtond0zQTVGHgMfZ0_C2K92HYkPDs8%2Dq6EHCtYEH6YFE3bs0oYwslVRPCv8xx0K02CAP7chZGGieNq2jKysynrdGnI0Yb7lF4mIb76Ptct0gGlCvHk1ldyOM5BEgf0fHEvqlnrz6dWcZSAWjUu6LGRw44L6g0gLXABJzu2cbUmSaT11qjuAkk%26u%3DaHR0cHMlM2ElMmYlMmZoeXBlcjNkLmFpJTNmbXNjbGtpZCUzZDBiMjBhMzEwMDE0MTE0N2ZhOTQ2YzljZTA3NjJkOTg2%26rlid%3D0b20a3100141147fa946c9ce0762d986&vqd=4-129602648380779307855053457319857512354&iurl=%7B1%7DIG%3DBE1AD0CE75524304A958AA96CC81B3EE%26CID%3D03AB1B05CE826666351C0CF8CFA46775%26ID%3DDevEx%2C5037.1",
+      "snippet": "Turn text or images into production-ready 3D assets in minutes. Perfect for games, XR, and 3D printing — start creating for free today."
+    },
+    {
+      "title": "Rin247/Hunyuan3D-2.1 · Hugging Face",
+      "url": "https://huggingface.co/Rin247/Hunyuan3D-2.1",
+      "snippet": "Quantised packages of Hunyuan3D-2.1 ..."
+    },
+    {
+      "title": "Hunyuan3D: Free Image to 3D & Text to 3D AI Generator",
+      "url": "https://hunyuan3d.dev/",
+      "snippet": "Turn any photo into a downloadable GLB with Hunyuan3D, the free open source AI 3D model generator. Image to 3D and text to 3D with baked PBR textures, in seconds."
+    },
+    {
+      "title": "Hunyuan 3D - AI Image to 3D Model Generator | PBR & GLB Export",
+      "url": "https://hunyuan3d.cc/",
+      "snippet": "Generate production-ready 3D models from images with Tencent Hunyuan 3D 3.1. Export GLB with 4K PBR textures for Unity, Unreal Engine & Blender. Fast AI 3D generation online."
+    },
+    {
+      "title": "Hunyuan 3D | Free Open Source Text-to-3D & Image-to-3D AI",
+      "url": "https://hy-3d.net/",
+      "snippet": "Generate production-ready 3D assets with Hunyuan 3D. Free, open-source AI for text-to-3D and image-to-3D with PBR textures. Based on the open-source Hunyuan3D model (Apache 2.0). Runs locally on 6GB VRAM."
+    }
+  ]
+}

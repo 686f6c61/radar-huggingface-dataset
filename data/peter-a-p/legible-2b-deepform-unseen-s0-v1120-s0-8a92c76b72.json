@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Peter-A-P/legible-2b-deepform-unseen-s0-v1120-s0-8a92c76b72",
+  "slug": "peter-a-p-legible-2b-deepform-unseen-s0-v1120-s0-8a92c76b72",
+  "author": "Peter-A-P",
+  "url": "https://huggingface.co/Peter-A-P/legible-2b-deepform-unseen-s0-v1120-s0-8a92c76b72",
+  "created_at": "2026-10-25T13:56:21.000Z",
+  "updated_at": "2026-10-25T13:57:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "document-understanding",
+    "form-extraction",
+    "vision-language-model",
+    "qlora",
+    "lora",
+    "gemma4",
+    "legible",
+    "deepform",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "base_model:google/gemma-4-E2B",
+    "base_model:adapter:google/gemma-4-E2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 419352840,
+  "storage_human": "419 MB",
+  "base_model": "google/gemma-4-E2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Définitions : péter, se péter, être pété - Dictionnaire de français ...",
+      "url": "https://www.larousse.fr/dictionnaires/francais/p%c3%a9ter/59935",
+      "snippet": "Ça va péter (des flammes), il va y avoir une querelle très violente. Péter la gueule à quelqu'un, lui casser la figure. Familier. Péter le …"
+    },
+    {
+      "title": "Prénom Peter (garçon) : signification, origine, caractère, saint, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/peter/prenom-2380",
+      "snippet": "Le prénom Peter est la forme anglaise de Pierre. Ce dernier est dérivé du terme petros qui signifie \"rocher\". Les Peter sont honorés …"
+    },
+    {
+      "title": "Prénom Peter : Origine - Caractère - Signification - Etymologie",
+      "url": "https://www.parents.fr/prenoms/peter-52333",
+      "snippet": "Peter est un prénom d'origine grecque. Il est dérivé de « petros », qui veut dire « petit caillou ». Tous les Peter ont leur fête le 29 juin. …"
+    },
+    {
+      "title": "Peter et Sloane — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Peter_et_Sloane",
+      "snippet": "Peter et Sloane est un duo français de musique de variétés des années 1980. Il est constitué de Jean-Pierre Savelli (alias Peter) et …"
+    },
+    {
+      "title": "Saint Peter - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Saint_Peter",
+      "snippet": "Catholic and Orthodox tradition treats Peter as the first bishop of Rome (or pope) and also as the first bishop of Antioch. According to …"
+    }
+  ]
+}

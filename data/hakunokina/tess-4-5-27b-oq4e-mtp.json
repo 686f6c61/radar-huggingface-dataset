@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "hakunokina/Tess-4.5-27B-oQ4e-mtp",
+  "slug": "hakunokina-tess-4-5-27b-oq4e-mtp",
+  "author": "hakunokina",
+  "url": "https://huggingface.co/hakunokina/Tess-4.5-27B-oQ4e-mtp",
+  "created_at": "2026-10-25T13:50:33.000Z",
+  "updated_at": "2026-10-25T15:00:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "omlx",
+    "oq",
+    "mtp",
+    "tess",
+    "agentic",
+    "code",
+    "tool-use",
+    "apple-silicon",
+    "image-text-to-text",
+    "conversational",
+    "base_model:migtissera/Tess-4.5-27B",
+    "base_model:quantized:migtissera/Tess-4.5-27B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 16984490878,
+  "storage_human": "17.0 GB",
+  "base_model": "migtissera/Tess-4.5-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "かれりお Premium Hentai Archive - Sorted by Published Date | LewdVault…",
+      "url": "https://lewdvault.com/model/karerio",
+      "snippet": "Explore all premium hentai content by かれりお for free on LewdVault.com. Access their full archived library of videos, comics, and …"
+    },
+    {
+      "title": "かれりお Premium Hentai Archive - Sorted by most viewed | LewdVault…",
+      "url": "https://lewdvault.com/model/karerio?sort=views",
+      "snippet": "Explore all premium hentai content by かれりお for free on LewdVault.com. Access their full archived library of videos, comics, and …"
+    },
+    {
+      "title": "[AI-Generated] [かれりお] 渡 曜 206枚 - E-Hentai Galleries",
+      "url": "https://e-hentai.org/g/3493885/609afd67f5/",
+      "snippet": "Aug 19, 2025 · Free Hentai Misc Gallery: [AI-Generated] [かれりお] 渡 曜 206枚 - Tags: love live sunshine, you watanabe, bald, ai …"
+    },
+    {
+      "title": "かれりお | 同人バンク",
+      "url": "https://doujinbank.com/category/karerio/",
+      "snippet": "かれりおの同人誌・エロ漫画の一覧です。 かれりおの作品をサンプル画像とあらすじ付きで紹介しています。"
+    },
+    {
+      "title": "かれりおの同人作品一覧 | 大人のエンタメ図書館",
+      "url": "https://miraideaimatch.com/circle/%e3%81%8b%e3%82%8c%e3%82%8a%e3%81%8a/",
+      "snippet": "サークル「かれりお」の同人作品71本を新着順に一覧。価格・FANZAレビュー評価・サンプル画像をまとめて確認できます。"
+    }
+  ]
+}

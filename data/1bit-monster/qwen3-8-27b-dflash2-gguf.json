@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "1bit-MONSTER/Qwen3.8-27B-DFlash2-GGUF",
+  "slug": "1bit-monster-qwen3-8-27b-dflash2-gguf",
+  "author": "1bit-MONSTER",
+  "url": "https://huggingface.co/1bit-MONSTER/Qwen3.8-27B-DFlash2-GGUF",
+  "created_at": "2026-10-25T17:38:04.000Z",
+  "updated_at": "2026-10-25T17:39:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "dflash2",
+    "speculative-decoding",
+    "draft-model",
+    "qwen3.8",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1924404480,
+  "parameters_human": "1.92B",
+  "storage_bytes": 3263646400,
+  "storage_human": "3.3 GB",
+  "base_model": "z-lab/Qwen3.8-27B-DFlash2, Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "1bit-MONSTER/Qwen3.8-27B-DFlash2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/1bit-MONSTER/Qwen3.8-27B-DFlash2-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Qwen3.8 27b Dflash2 - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/qwen3-8-27b-dflash2.html",
+      "snippet": "Download Qwen3.8 27b Dflash2 GGUF model. 56.7 GB, 330,563 downloads, 155 likes."
+    },
+    {
+      "title": "Qwen3.8-27B-DFlash2-GGUF: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3.8-27b-dflash2-gguf-z-lab",
+      "snippet": "Qwen3.8-27B-DFlash2-GGUF is a GGUF quantized conversion of a speculative decoding drafter model, not a standalone language model. Built by z-lab, it implements DFlash 2, a block-diffusion architecture designed to accelerate inference when paired with a target model like Qwen/Qwen3.8-27B."
+    },
+    {
+      "title": "Qwen3.8-27B-DFlash2-GGUF: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3.8-27b-dflash2-gguf-incoai",
+      "snippet": "Overview Qwen3.8-27B-DFlash2-GGUF is not a standalone language model but a quantized GGUF conversion of a speculative decoding drafter built by incoai. It implements DFlash 2, a block-diffusion architecture that predicts entire token blocks in a single pass and maintains top-k candidates at each position, using a lightweight selector to trace coherent paths through them. Two-tap dynamic ..."
+    }
+  ]
+}

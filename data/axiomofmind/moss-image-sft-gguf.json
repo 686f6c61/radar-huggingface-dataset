@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "axiomofmind/Moss-Image-SFT-GGUF",
+  "slug": "axiomofmind-moss-image-sft-gguf",
+  "author": "axiomofmind",
+  "url": "https://huggingface.co/axiomofmind/Moss-Image-SFT-GGUF",
+  "created_at": "2026-10-19T14:06:19.000Z",
+  "updated_at": "2026-10-20T07:37:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "moss-image",
+    "text-to-image",
+    "image-generation",
+    "stable-diffusion.cpp",
+    "comfyui",
+    "en",
+    "zh",
+    "arxiv:2610.23374",
+    "base_model:OpenMOSS-Team/MOSS-Image-SFT",
+    "base_model:quantized:OpenMOSS-Team/MOSS-Image-SFT",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 13,
+  "downloads_30d": 3503,
+  "trending_score": 13,
+  "parameters": 5082308624,
+  "parameters_human": "5.08B",
+  "storage_bytes": 9203867103,
+  "storage_human": "9.2 GB",
+  "base_model": "OpenMOSS-Team/MOSS-Image-SFT",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

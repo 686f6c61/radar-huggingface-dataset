@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "neurosquad/Qwen3.8-27B-SEEDPACK",
+  "slug": "neurosquad-qwen3-8-27b-seedpack",
+  "author": "neurosquad",
+  "url": "https://huggingface.co/neurosquad/Qwen3.8-27B-SEEDPACK",
+  "created_at": "2026-10-25T19:53:59.000Z",
+  "updated_at": "2026-10-25T19:54:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "seedpack",
+    "gguf",
+    "lossless-compression",
+    "qwen3.8",
+    "qwen",
+    "unsloth",
+    "image-text-to-text",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 103782,
+  "storage_human": "103782 B",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Arc Raiders Meta - Best Weapons Tier List",
+      "url": "https://wzstats.gg/arc-raiders/meta",
+      "snippet": "Best weapons tier list for PVE and PVP, updated daily. Find the top-tier guns, builds, and attachments.Read more"
+    },
+    {
+      "title": "Arc Raiders Weapon Tier List (October 2026) - Beebom",
+      "url": "https://beebom.com/arc-raiders-weapons-tier-list/",
+      "snippet": "Oct 1, 2026 · Check out our ultimate Arc Raiders weapon tier list, where we have ranked all the guns (including the latest) in the …"
+    },
+    {
+      "title": "ARC Raiders All Weapons List (2026): Best Guns, Tier Rankings, and …",
+      "url": "https://www.eldorado.gg/blog/arc-raiders-en/arc-raiders-weapons-tier-list/",
+      "snippet": "Oct 9, 2026 · ARC Raiders weapons tier list for PvP & PvE. See the best guns, their stats, and the fastest ways to get Anvil, Venator, …"
+    },
+    {
+      "title": "ARC Raiders Weapons Tier List (October 2026) - urgametips.com",
+      "url": "https://urgametips.com/arc-raiders-weapons-tier-list/",
+      "snippet": "Oct 1, 2026 · Compare the ARC Raiders weapons tier list across S, A, B, C and D groups with weapon type details."
+    },
+    {
+      "title": "Arc Raiders Weapon Tier List: Community Votes",
+      "url": "https://arcraidershub.com/weapon-tier-list",
+      "snippet": "Arc Raiders weapon tier list voted by Raiders, with Amplified weapons ranked separately. Rate every gun S to D; results are kept per …"
+    }
+  ]
+}

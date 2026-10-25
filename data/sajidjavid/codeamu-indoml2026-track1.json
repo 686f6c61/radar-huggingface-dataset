@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "sajidjavid/CodeAMU-IndoML2026-Track1",
+  "slug": "sajidjavid-codeamu-indoml2026-track1",
+  "author": "sajidjavid",
+  "url": "https://huggingface.co/sajidjavid/CodeAMU-IndoML2026-Track1",
+  "created_at": "2026-10-25T17:34:19.000Z",
+  "updated_at": "2026-10-25T17:52:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "audio",
+    "sound-event-detection",
+    "noise-detection",
+    "vaani",
+    "indoml-2026",
+    "dataset:ARTPARK-IISc/Vaani-Noise-Event-Dataset",
+    "base_model:microsoft/wavlm-base-plus",
+    "base_model:finetune:microsoft/wavlm-base-plus",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 34044896269,
+  "storage_human": "34.0 GB",
+  "base_model": "openai/whisper-large-v3, openai/whisper-large-v2, openai/whisper-medium, openai/whisper-small, microsoft/wavlm-base-plus",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "خرید و فروش بهترین املاک مسکونی، خانه و آپارتمان در شیراز | دیوار",
+      "url": "https://divar.ir/s/shiraz/buy-residential",
+      "snippet": "بهترین فرصت‌های خرید و فروش املاک مسکونی، خانه و آپارتمان در شیراز را در دیوار پیدا کنید."
+    },
+    {
+      "title": "خرید خانه و آپارتمان نوساز و چند سال ساخت در شیراز | شیپور",
+      "url": "https://www.sheypoor.com/s/shiraz/houses-apartments-for-sale",
+      "snippet": "خرید و فروش خانه و آپارتمان نوساز و چند سال ساخت در شیراز به صورت فوری در آگهی امروز بخش املاک شیپور به همراه عکس‌های خانه و آپارتمان"
+    },
+    {
+      "title": "خرید و فروش خانه و آپارتمان در منطقه 1 شیراز + ارزیابی هوشمند قیمت",
+      "url": "https://www.ariamarz.com/buy-apartment/shiraz-district1",
+      "snippet": "خرید خانه و آپارتمان نوساز و چند سال ساخت با قیمت مناسب در منطقه 1 شیراز. آگهی های فروش فوری خانه، برج، پنت هاوس و آپارتمان مبله زیر قیمت، ارزان و پول لازم با عکس."
+    },
+    {
+      "title": "خرید آپارتمان در شیراز | لیست آگهی های روز [1405] + قیمت",
+      "url": "https://mrestate.ir/f/shiraz/buy_residential_apartment",
+      "snippet": "جستجوی خرید و فروش خانه و آپارتمان در شیراز به همراه مشخصات دقیق ملک و عکس، و به روزترین قیمت های خرید آپارتمان در شیراز"
+    },
+    {
+      "title": "خرید، فروش و مشاهده قیمت آپارتمان نوساز در شیراز | دیوار",
+      "url": "https://divar.ir/s/shiraz/list/%D8%AE%D8%B1%DB%8C%D8%AF-%D8%A2%D9%BE%D8%A7%D8%B1%D8%AA%D9%85%D8%A7%D9%86-%D9%86%D9%88%D8%B3%D8%A7%D8%B2",
+      "snippet": "جستجو و مشاهده آخرین آگهی‌های آپارتمان نوساز در شیراز. لیست به‌روز با قیمت‌ها و جزئیات کامل در دیوار. مقایسه و انتخاب بهترین گزینه‌ها."
+    }
+  ]
+}

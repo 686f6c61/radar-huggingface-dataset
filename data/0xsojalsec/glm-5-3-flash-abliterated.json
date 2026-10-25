@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "0xSojalSec/GLM-5.3-Flash-abliterated",
+  "slug": "0xsojalsec-glm-5-3-flash-abliterated",
+  "author": "0xSojalSec",
+  "url": "https://huggingface.co/0xSojalSec/GLM-5.3-Flash-abliterated",
+  "created_at": "2026-10-25T19:31:09.000Z",
+  "updated_at": "2026-10-25T19:31:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "huihui",
+    "unsloth",
+    "glm5_next",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:quantized:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 320759404382,
+  "parameters_human": "320.76B",
+  "storage_bytes": 1558967754752,
+  "storage_human": "1559.0 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Voyage Florence - Partir en vacances à Florence - Routard.com",
+      "url": "https://www.routard.com/fr/guide/europe/italie/toscane/florence",
+      "snippet": "Préparez votre voyage à Florence : incontournables et itinéraires, infos culturelles et pratiques, idées voyage, photos et forum."
+    },
+    {
+      "title": "Visiter Florence : 10 incontournables à faire et voir (Italie)",
+      "url": "https://generationvoyage.fr/visiter-florence-faire-voir/",
+      "snippet": "May 2, 2025 · Visitez Florence et découvrez les incontournables à visiter et les activités à faire pour profiter pleinement de cette ville …"
+    },
+    {
+      "title": "Voyage à Florence et circuits sur mesure (Italie) | Evaneos",
+      "url": "https://www.evaneos.fr/italie/voyage/etape/7190-florence/",
+      "snippet": "Jul 30, 2026 · Entre musées, églises, jardins et bonnes tables, un séjour à Florence est la promesse d'un voyage dans le temps. Et …"
+    },
+    {
+      "title": "Voyage à Florence en 2026 | Hôtels et vols à petit prix",
+      "url": "https://www.voyagespirates.fr/destinations/italie/florence",
+      "snippet": "Profitez de nos conseils pour organiser votre voyage à Florence, en Toscane. Trouvez votre vol et votre hôtel à Florence dans nos …"
+    },
+    {
+      "title": "Voyage à Florence 2026 : le guide complet - VOYAGES VOYAGES",
+      "url": "https://pays6vallees.com/voyage-florence/",
+      "snippet": "Apr 24, 2026 · Que voir, où loger, quand partir, budget et excursions en Toscane : le guide complet pour préparer votre voyage à …"
+    }
+  ]
+}

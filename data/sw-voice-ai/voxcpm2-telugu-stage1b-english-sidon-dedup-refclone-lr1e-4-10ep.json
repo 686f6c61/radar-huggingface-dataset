@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "sw-voice-ai/voxcpm2-telugu-stage1b-english-sidon-dedup-refclone-lr1e-4-10ep",
+  "slug": "sw-voice-ai-voxcpm2-telugu-stage1b-english-sidon-dedup-refclone-lr1e-4-10ep",
+  "author": "sw-voice-ai",
+  "url": "https://huggingface.co/sw-voice-ai/voxcpm2-telugu-stage1b-english-sidon-dedup-refclone-lr1e-4-10ep",
+  "created_at": "2026-10-25T11:32:34.000Z",
+  "updated_at": "2026-10-25T11:33:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "te",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "text-to-speech",
+    "te",
+    "en",
+    "base_model:sw-voice-ai/voxcpm2-telugu-indictts2x-syspin-multisent-lr1e-4-1ep",
+    "base_model:finetune:sw-voice-ai/voxcpm2-telugu-indictts2x-syspin-multisent-lr1e-4-1ep",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2290004544,
+  "parameters_human": "2.29B",
+  "storage_bytes": 9542863926,
+  "storage_human": "9.5 GB",
+  "base_model": "sw-voice-ai/voxcpm2-telugu-indictts2x-syspin-multisent-lr1e-4-1ep",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SW — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/SW",
+      "snippet": "Cette page recense les différentes significations (codes, sigles, abréviations, etc.) résultant de la combinaison des deux lettres S et W.Read more"
+    },
+    {
+      "title": "Software Solutions for 3D CAD, Design and Product Development",
+      "url": "https://www.solidworks.com/",
+      "snippet": "Innovators around the world trust SOLIDWORKS® CAD and cloud product development solutions to create, collaborate, and deliver …"
+    },
+    {
+      "title": "Téléchargement de ressources de la communauté | SOLIDWORKS",
+      "url": "https://www.solidworks.com/fr/support/community-download",
+      "snippet": "En fonction du type de licence sélectionné, les instructions d'installation ainsi que d'autres informations importantes pourront vous …"
+    },
+    {
+      "title": "Télécharger Solidworks (gratuit) Windows - Clubic",
+      "url": "https://www.clubic.com/telecharger-fiche431215-solidworks.html",
+      "snippet": "3 days ago · Créé en 1993, SolidWorks est un logiciel de CAO, pour Conception Assistée par Ordinateur, qui vous permettra de …"
+    },
+    {
+      "title": "Actualité Star Wars : films, séries, jeux vidéo, casting",
+      "url": "https://www.starwars-holonet.com/informations/",
+      "snippet": "Sep 27, 2026 · Découvrez toute l'actualité Star Wars en France et dans le Monde : tout sur les films, les séries animées et live …"
+    }
+  ]
+}

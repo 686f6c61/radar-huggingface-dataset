@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "longxing7/vrmr",
+  "slug": "longxing7-vrmr",
+  "author": "longxing7",
+  "url": "https://huggingface.co/longxing7/vrmr",
+  "created_at": "2026-10-25T11:19:30.000Z",
+  "updated_at": "2026-10-25T11:19:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 378510846,
+  "storage_human": "379 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LMRing - AI Model Comparison Platform",
+      "url": "https://www.lmring.com/",
+      "snippet": "Compare and evaluate AI models side by side. Make informed decisions with comprehensive model analysis."
+    },
+    {
+      "title": "VRM Model Browser - search, preview, pose and download VRM, GLB and ...",
+      "url": "https://perchance.org/vrm-browser-downloader",
+      "snippet": "Search thousands of free VRM avatars and GLB/glTF models aggregated from multiple model sites, preview them in a live 3D viewer with pose selection, animation playback and material customisation, then download the file or export your whole selection as a ZIP."
+    },
+    {
+      "title": "Free VRM Models Download: Genshin, HSR, ZZZ and More | AniMate Waifu",
+      "url": "https://getanimate.app/models",
+      "snippet": "Download free VRM models for your desktop companion: Genshin Impact, Honkai Star Rail, Zenless Zone Zero, Umamusume, MiSide and Hatsune Miku, with AplayBox as a China-friendly source."
+    },
+    {
+      "title": "AI VTuber Maker: Image to 3D Avatar | Virmii",
+      "url": "https://virmii.com/",
+      "snippet": "Create a 3D VTuber avatar from a character image with Virmii. Preview your model, add AI expressions for Virmii and OBS, or download the VRM."
+    },
+    {
+      "title": "Free Local AI Tools & Calculators (2026): VRAM, GPU & Model Pickers",
+      "url": "https://localaimaster.com/tools",
+      "snippet": "Free local-AI tools: VRAM calculator, GPU picker, \"what model can I run\" checker, quantization calculator, live model leaderboard and more. No signup, instant results."
+    }
+  ]
+}

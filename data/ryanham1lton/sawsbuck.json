@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/Sawsbuck",
+  "slug": "ryanham1lton-sawsbuck",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/Sawsbuck",
+  "created_at": "2026-10-25T16:59:34.000Z",
+  "updated_at": "2026-10-25T17:00:46.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 117493160,
+  "storage_human": "117 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ryanham1lton (Ryan James Hamilton) - Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 12 hours ago ... published a model about 12 hours ago"
+    },
+    {
+      "title": "Sawsbuck (Pocket Monster) AI LoRA Model | Animal | PixAI",
+      "url": "https://pixai.art/en/model/1784949161147161756",
+      "snippet": "Sawsbuck (Pocket Monster) is an AI LoRA by ry7hym on PixAI. Tags: Deer. Try it free."
+    },
+    {
+      "title": "Ryanham1lton AI models - Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/company/ryanham1lton",
+      "snippet": "Browse AI models attributed to Ryanham1lton, sourced from verified model catalogs."
+    },
+    {
+      "title": "Sawsbuck (Pocket Monster)｜AI Art Model & LoRA | PixAI",
+      "url": "https://pixai.art/model/1784949161147161756",
+      "snippet": "Just created this stunning animal, deer, season, pocket_monsters, monsters_ (company) anime art with the amazing &#x27;Sawsbuck (Pocket Monster)&#x27; model on PixAI! Search for \"Sawsbuck (Pocket Monster)\" on PixAI - the free & professional AI anime art generator. Create your own masterpieces in seconds. Try it now!"
+    },
+    {
+      "title": "Sawsbuck (Autumn)5 - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/9bcabe813a1a48d6a8a2b23f4d02ff89",
+      "snippet": "Meet Sawsbuck (Autumn)5 model on SeaArt. Experience free Stable Diffusion models that get you the best AI-generated images using text prompts."
+    }
+  ]
+}

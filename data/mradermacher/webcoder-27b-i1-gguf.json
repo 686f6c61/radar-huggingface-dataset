@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "mradermacher/WebCoder-27B-i1-GGUF",
+  "slug": "mradermacher-webcoder-27b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/WebCoder-27B-i1-GGUF",
+  "created_at": "2026-10-25T14:51:46.000Z",
+  "updated_at": "2026-10-25T15:01:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 10891893824,
+  "storage_human": "10.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

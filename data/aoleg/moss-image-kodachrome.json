@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "aoleg/MOSS-Image-Kodachrome",
+  "slug": "aoleg-moss-image-kodachrome",
+  "author": "aoleg",
+  "url": "https://huggingface.co/aoleg/MOSS-Image-Kodachrome",
+  "created_at": "2026-10-25T17:26:22.000Z",
+  "updated_at": "2026-10-25T17:45:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:OpenMOSS-Team/MOSS-Image-Base",
+    "base_model:adapter:OpenMOSS-Team/MOSS-Image-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 72096922,
+  "storage_human": "72 MB",
+  "base_model": "OpenMOSS-Team/MOSS-Image-Base",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "34MB Kodachrome LoRA for MOSS Image trained… · AGI Hunt",
+      "url": "https://agihunt.info/en/p/1a1742c2519425c4f485e17d3c0",
+      "snippet": "Reddit user aoleg77 released a Kodachrome-style LoRA for MOSS Image on Hugging Face: a factor-16 LoKR of just 34MB, trained on 551 scans of 4x5 Kodachrome sheet film (not 35mm, so no film grain)."
+    },
+    {
+      "title": "MOSS-Image | Text-to-Image Generation with Native Layout Control",
+      "url": "https://openmoss.ai/MOSS-Image/",
+      "snippet": "MOSS-Image is a text-to-image model family from OpenMOSS, comprising a base model and a curated-data fine-tuned model. In addition to natural-language prompts, MOSS-Image supports native text-driven layout generation: objects, rendered text, and their spatial positions can be specified in a JSON prompt."
+    },
+    {
+      "title": "MOSS Image Generator & AI Photo Editor | MossImage",
+      "url": "https://mossimage.app/",
+      "snippet": "Try MOSS-Image, then box any part of your picture, say what to change and get a clean new version. AI photo editing for product listings, ads and social posts."
+    },
+    {
+      "title": "Kodachrome Photo (60s - 70s) Moss_Image_v1 | CivArchive",
+      "url": "https://civitaiarchive.com/models/2740189?modelVersionId=3411996",
+      "snippet": "Download Kodachrome Photo (60s - 70s) Moss_Image_v1, a LORA for MOSS Image Base. 1 file: Kodachrome1970s_000002000.safetensors (123 MB). Published Oct 17, 2026. 1 live mirror. I think its working :D im not happy with the film grain but the era is being recreated and colours are nice."
+    },
+    {
+      "title": "GitHub - OpenMOSS/MOSS-Image: Official repository for MOSS-Image, a 5B ...",
+      "url": "https://github.com/OpenMOSS/MOSS-Image/tree/main",
+      "snippet": "Official repository for MOSS-Image, a 5B-parameter base DiT model with high-quality text rendering, layout generation, and efficient fine-tuning. - OpenMOSS/MOSS-Image"
+    }
+  ]
+}

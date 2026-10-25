@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "davidheineman/rlve-opd-student-R1Distill-n128-rl-20261025",
+  "slug": "davidheineman-rlve-opd-student-r1distill-n128-rl-20261025",
+  "author": "davidheineman",
+  "url": "https://huggingface.co/davidheineman/rlve-opd-student-R1Distill-n128-rl-20261025",
+  "created_at": "2026-10-25T16:59:35.000Z",
+  "updated_at": "2026-10-25T17:00:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "rlve",
+    "data-scaling",
+    "rl",
+    "conversational",
+    "base_model:deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "base_model:finetune:deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 3554214720,
+  "storage_human": "3.6 GB",
+  "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Porn Pics, Adult Photos, XXX Images & Sex GIFs | ImageFap",
+      "url": "https://www.imagefap.com/",
+      "snippet": "Browse millions of hot free porn pics, sex GIFs, hot nude photo galleries, amateur XXX photos only on ImageFap, the world's largest …"
+    },
+    {
+      "title": "Browse MeiXing's Porn Pic Galleries On ImageFap",
+      "url": "https://www.imagefap.com/organizer/61614/Japanese-Beauties",
+      "snippet": "Discover hottest private porn pic galleries, homemade sex photos, animated XXX GIFs & amateur nude pics uploaded by MeiXing on …"
+    },
+    {
+      "title": "Is the imagefap site safe? The last time I was there I saw ... - Reddit",
+      "url": "https://www.reddit.com/r/NoStupidQuestions/comments/z5daoz/is_the_imagefap_site_safe_the_last_time_i_was/",
+      "snippet": "Nov 26, 2022 · Is the imagefap site safe? The last time I was there I saw some very questionable thumbnails that made me not want …"
+    },
+    {
+      "title": "imagefap doesn't work, and I can't get the known fix to work ... - Reddit",
+      "url": "https://www.reddit.com/r/imagus/comments/jp4ie4/imagefap_doesnt_work_and_i_cant_get_the_known_fix/",
+      "snippet": "Nov 6, 2020 · I tried deleting the original rule and creating a new one but that didn't work either. The rule is correct when I create it, …"
+    },
+    {
+      "title": "Free Porn Pics, Adult Photos, XXX Images & Sex GIFs | ImageFap",
+      "url": "https://www.imagefap.com/?home",
+      "snippet": "Browse millions of hot free porn pics, sex GIFs, hot nude photo galleries, amateur XXX photos only on ImageFap, the world's largest …"
+    }
+  ]
+}

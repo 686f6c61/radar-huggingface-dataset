@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "zahidpichen/accent_aware_ASR",
+  "slug": "zahidpichen-accent_aware_asr",
+  "author": "zahidpichen",
+  "url": "https://huggingface.co/zahidpichen/accent_aware_ASR",
+  "created_at": "2026-10-25T17:30:51.000Z",
+  "updated_at": "2026-10-25T17:30:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:openai/whisper-small",
+    "lora",
+    "transformers",
+    "arxiv:1910.09700",
+    "base_model:openai/whisper-small",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13039677,
+  "storage_human": "13 MB",
+  "base_model": "openai/whisper-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zahidpichen (Zahid Pichen) - Hugging Face",
+      "url": "https://huggingface.co/zahidpichen/models",
+      "snippet": "Reinforcement learning, fine-tuning, Unsupervised learning"
+    },
+    {
+      "title": "Indian Accent Speech Recognition - GitHub",
+      "url": "https://github.com/AdroitAnandAI/Indian-Accent-Speech-Recognition",
+      "snippet": "Indian Accent Speech Recognition Traditional ASR (Signal Analysis, MFCC, DTW, HMM & Language Modelling) and DNNs (Custom Models & Baidu DeepSpeech Model) on Indian Accent Speech << Uploaded the pre-trained model owing to requests >> The generated trie file is uploaded to pre-trained-models directory. So you can skip the KenLM Toolkit step."
+    },
+    {
+      "title": "Best Open Speech Recognition (ASR) Models in 2026: WER, Languages ...",
+      "url": "https://www.marktechpost.com/2026/07/23/best-open-speech-recognition-asr-models-in-2026-wer-languages-latency-and-license-compared/",
+      "snippet": "Compare 16 open ASR models on WER, languages, latency and license, including Cohere Transcribe, Granite Speech and Voxtral"
+    },
+    {
+      "title": "ACCENT_AWARE_SPEECH_RECONNIZATION_SYSTEM - GitHub",
+      "url": "https://github.com/Ranin01/ACCENT_AWARE_SPEECH_RECONNIZATION_SYSTEM",
+      "snippet": "Accent-Aware Automatic Speech Recognition (ASR) System Overview This project focuses on building an Automatic Speech Recognition (ASR) system that is designed to be more robust to variations in speaker accents."
+    },
+    {
+      "title": "Automatic Speech Recognition Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=automatic-speech-recognition",
+      "snippet": "Active filters: automatic-speech-recognition. Clear all. pyannote/speaker-diarization-community-1. Automatic Speech Recognition • Updated Sep 29, 2025 • 5.05M • 3.34k"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "incoai/MiniMax-M3.1-Flash-DFlash2",
+  "slug": "incoai-minimax-m3-1-flash-dflash2",
+  "author": "incoai",
+  "url": "https://huggingface.co/incoai/MiniMax-M3.1-Flash-DFlash2",
+  "created_at": "2026-10-19T10:20:01.000Z",
+  "updated_at": "2026-10-23T01:57:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "dflash2",
+    "speculative-decoding",
+    "block-diffusion",
+    "draft-model",
+    "sglang",
+    "text-generation",
+    "base_model:MiniMaxAI/MiniMax-M3.1-Flash",
+    "base_model:finetune:MiniMaxAI/MiniMax-M3.1-Flash",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "region:us"
+  ],
+  "likes": 13,
+  "downloads_30d": 132,
+  "trending_score": 0,
+  "parameters": 2123883776,
+  "parameters_human": "2.12B",
+  "storage_bytes": 4248063377,
+  "storage_human": "4.2 GB",
+  "base_model": "MiniMaxAI/MiniMax-M3.1-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Download — LuaTools Desktop App",
+      "url": "https://lua.tools/app",
+      "snippet": "Manage your library, drop in .lua / .manifest / .zip files, and apply fixes, all in one app. Download the LuaTools desktop app for …"
+    },
+    {
+      "title": "LuaTools — Manifest Generator For SteamTools!",
+      "url": "https://lua.tools/",
+      "snippet": "Download Steam app manifest Lua files by App ID or game name. Fast, free, and easy."
+    },
+    {
+      "title": "Releases · madoiscool/LuaTools - GitHub",
+      "url": "https://github.com/madoiscool/LuaTools/releases",
+      "snippet": "AppID Manager for ST. Contribute to madoiscool/LuaTools development by creating an account on GitHub."
+    },
+    {
+      "title": "Install LuaTools Plugin | LuaTools Wiki",
+      "url": "https://wiki.lua.tools/docs/luatools/steam-plugin/get-started/",
+      "snippet": "Run this in PowerShell (or go to link to download PowerShell file and execute it): This will install OpenSteamTools, Millennium, and …"
+    },
+    {
+      "title": "LuaTools : Tous les Problèmes et Solutions - YouTube",
+      "url": "https://m.youtube.com/watch?v=SooTkCSYxbc",
+      "snippet": "Sep 10, 2026 · #LuaTools #ProblemFix #Tutorial 📲 MES RÉSEAUX SOCIAUX📸 Instagram : https://www.instagram.com/affrounakli/🎵 …"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "gianmaTest/generatedDigitalExps_1xKzN6_hier_by_room_rnn_meanPoolProc_video_0",
+  "slug": "gianmatest-generateddigitalexps_1xkzn6_hier_by_room_rnn_meanpoolproc_video_0",
+  "author": "gianmaTest",
+  "url": "https://huggingface.co/gianmaTest/generatedDigitalExps_1xKzN6_hier_by_room_rnn_meanPoolProc_video_0",
+  "created_at": "2026-10-25T14:51:32.000Z",
+  "updated_at": "2026-10-25T14:51:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2366208,
+  "parameters_human": "2.4M",
+  "storage_bytes": 9467176,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "adb模拟滑动shell input swipe无效，请问怎么实现滑屏效果-CSDN社区",
+      "url": "https://bbs.csdn.net/topics/391922910",
+      "snippet": "Mar 24, 2016 · adb shell input swipe x1 y1 x2 y2 adb input touchscreen swipe x1 y1 x2 y2 100 以上两个语句，正常情况下是实现滑动 …"
+    },
+    {
+      "title": "网卡mac地址重启后自动改变 - CSDN社区",
+      "url": "https://bbs.csdn.net/topics/380223452",
+      "snippet": "Mar 15, 2012 · 以下内容是CSDN社区关于网卡mac地址重启后自动改变相关内容，如果想了解更多关于Windows客户端使用社区其他 …"
+    },
+    {
+      "title": "OpenCV社区-CSDN社区云",
+      "url": "https://bbs.csdn.net/forums/OpenCV",
+      "snippet": "Jun 27, 2025 · CSDNOpenCV社区,OpenCV论坛,为中国软件开发者打造学习和成长的家园"
+    },
+    {
+      "title": "Plants_Vs_Zombies_V1.0_Plus_9_Trainer_By_KelSat.exe下载",
+      "url": "https://bbs.csdn.net/topics/396216487",
+      "snippet": "Mar 24, 2020 · 以下内容是CSDN社区关于Plants_Vs_Zombies_V1.0_Plus_9_Trainer_By_KelSat.exe下载相关内容，如果想了解更多 …"
+    },
+    {
+      "title": "WPF listbox如何添加item的单击事件？-CSDN社区",
+      "url": "https://bbs.csdn.net/topics/390831221",
+      "snippet": "Jul 10, 2014 · 虽然是有MouseLeftButtonDown这些事件，但是怎么处理传过来的sender 才能知道我点击的item是第几项呢？ 有什么快 …"
+    }
+  ]
+}

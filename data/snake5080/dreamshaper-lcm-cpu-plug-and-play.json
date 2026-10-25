@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Snake5080/dreamshaper-lcm-cpu-plug-and-play",
+  "slug": "snake5080-dreamshaper-lcm-cpu-plug-and-play",
+  "author": "Snake5080",
+  "url": "https://huggingface.co/Snake5080/dreamshaper-lcm-cpu-plug-and-play",
+  "created_at": "2026-10-25T19:24:45.000Z",
+  "updated_at": "2026-10-25T20:26:04.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "stable-diffusion",
+    "cpu",
+    "lcm",
+    "taesd",
+    "text-to-image",
+    "image-generation",
+    "base_model:Lykon/dreamshaper-8-lcm",
+    "base_model:quantized:Lykon/dreamshaper-8-lcm",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1066825132,
+  "parameters_human": "1.07B",
+  "storage_bytes": 1856171364,
+  "storage_human": "1.9 GB",
+  "base_model": "Lykon/dreamshaper-8-lcm",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.fr/",
+      "snippet": "Encore plus » Account Options. Connexion; Paramètres de recherche"
+    },
+    {
+      "title": "Safe, secure, protected browsing | Chrome - Google",
+      "url": "https://www.google.fr/intl/en_uk/chrome/safety/",
+      "snippet": "Discover the innovative safety features of the Google Chrome browser that help keep you safe and protect your privacy while …"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.fr/mapfiles/home3.html",
+      "snippet": "Explore and navigate the world with Google Maps, offering directions, local business information, and street views."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.fr/travel/flights",
+      "snippet": "( / X `u0006 * u000f#4 u0007 u001ef\\u0001` gؙUU u0011 X g ( $ af ԩrfu0015MC u u0006u0006F \" \" \" u0007 0 M Iu001f ~ D®ÉW s& …"
+    },
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.fr/details",
+      "snippet": "Traduisez des textes instantanément avec Google Translate."
+    }
+  ]
+}

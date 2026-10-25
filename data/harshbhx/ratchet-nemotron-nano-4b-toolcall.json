@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "id": "harshbhx/ratchet-nemotron-nano-4b-toolcall",
+  "slug": "harshbhx-ratchet-nemotron-nano-4b-toolcall",
+  "author": "harshbhx",
+  "url": "https://huggingface.co/harshbhx/ratchet-nemotron-nano-4b-toolcall",
+  "created_at": "2026-10-24T17:15:13.000Z",
+  "updated_at": "2026-10-25T13:34:03.000Z",
+  "license": "nvidia-nemotron-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "tool-calling",
+    "function-calling",
+    "distillation",
+    "nemotron",
+    "ratchet",
+    "open-teacher",
+    "text-generation",
+    "en",
+    "dataset:harshbhx/ratchet-toolcall-train",
+    "dataset:harshbhx/ratchet-toolcall-exam-hard",
+    "dataset:harshbhx/ratchet-toolcall-exam-bfcl",
+    "base_model:nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16",
+    "base_model:adapter:nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 33,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40946100,
+  "storage_human": "41 MB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text generation",
+      "dataset": "Ratchet tool-calling hard exam (150 rows)",
+      "metric": "Strict accuracy (exact tool call), %",
+      "value": 90.7
+    },
+    {
+      "task": "Text generation",
+      "dataset": "Ratchet tool-calling exam from BFCL (300 rows)",
+      "metric": "Strict accuracy (exact tool call), %",
+      "value": 80.3
+    }
+  ],
+  "sources": [
+    {
+      "title": "Free AI Nude App: What’s Available and Safe? | ReelMind",
+      "url": "https://reelmind.ai/blog/free-ai-nude-app-whats-available-and-safe",
+      "snippet": "AI-generated nude content has been a controversial yet rapidly evolving niche, driven by advances in deep learning and generative …"
+    },
+    {
+      "title": "Nudify Safety Brief: AI Undress & deepfake risks",
+      "url": "https://nudiify.com/",
+      "snippet": "Jul 31, 2026 · Upload any photo you are allowed to use. Our Nudify AI automatically recognizes clothes and removes them. Choose …"
+    },
+    {
+      "title": "Free AI Image Generator | No Sign-Up, Private | PictoFlux AI",
+      "url": "https://pictoflux.com/",
+      "snippet": "PictoFlux is a free AI image generator for fast text-to-image, private prompting, and no-sign-up creation. Generate photos, art, and …"
+    },
+    {
+      "title": "Free AI Image Editor Online – Edit Photos with Prompts",
+      "url": "https://magiceraser.org/ai-image-editor/",
+      "snippet": "Edit photos online with AI prompts. Change backgrounds, remove objects, retouch portraits, and restyle images with free uses and …"
+    },
+    {
+      "title": "10 Best Free NSFW AI Art Generators for No Filter Adult Images",
+      "url": "https://www.artstation.com/blogs/cornell2/rDe7w/10-best-free-nsfw-ai-art-generators-for-no-filter-adult-images",
+      "snippet": "May 28, 2024 · NSFW AI generator makes adult images with no filter from text. We will explore the 10 best AI NSFW tools for high …"
+    }
+  ]
+}

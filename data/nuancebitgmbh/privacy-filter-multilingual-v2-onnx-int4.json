@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "id": "nuancebitgmbh/privacy-filter-multilingual-v2-onnx-int4",
+  "slug": "nuancebitgmbh-privacy-filter-multilingual-v2-onnx-int4",
+  "author": "nuancebitgmbh",
+  "url": "https://huggingface.co/nuancebitgmbh/privacy-filter-multilingual-v2-onnx-int4",
+  "created_at": "2026-10-25T17:03:29.000Z",
+  "updated_at": "2026-10-25T17:10:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "onnx",
+  "languages": [
+    "ar",
+    "bn",
+    "de",
+    "en",
+    "es",
+    "fr",
+    "hi",
+    "it",
+    "ja",
+    "ko",
+    "nl",
+    "pt",
+    "te",
+    "tr",
+    "vi",
+    "zh"
+  ],
+  "tags": [
+    "onnx",
+    "openai_privacy_filter",
+    "int4",
+    "pii",
+    "token-classification",
+    "openai-privacy-filter",
+    "ar",
+    "bn",
+    "de",
+    "en",
+    "es",
+    "fr",
+    "hi",
+    "it",
+    "ja",
+    "ko",
+    "nl",
+    "pt",
+    "te",
+    "tr",
+    "vi",
+    "zh",
+    "base_model:OpenMed/privacy-filter-multilingual-v2",
+    "base_model:quantized:OpenMed/privacy-filter-multilingual-v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1157148844,
+  "storage_human": "1.2 GB",
+  "base_model": "OpenMed/privacy-filter-multilingual-v2",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "privacy-filter-multilingual-v2 · Model · Inferix",
+      "url": "https://inferix.co/models/OpenMed/privacy-filter-multilingual-v2",
+      "snippet": "This v2 checkpoint is the more performant successor to OpenMed/privacy-filter-multilingual, with stronger multilingual PII masking behavior while keeping the same 16-language, fine-grained OpenMed label space and runtime interface."
+    },
+    {
+      "title": "OpenMed/privacy-filter-multilingual-v2 · Hugging Face",
+      "url": "https://huggingface.co/OpenMed/privacy-filter-multilingual-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "privacy-filter-multilingual-v2 · Models",
+      "url": "https://www.modelscope.cn/models/OpenMed/privacy-filter-multilingual-v2",
+      "snippet": "Use OpenMed/privacy-filter-multilingual-v2 in extract_pii () / deidentify () when you want this v2 checkpoint. The first-generation OpenMed/privacy-filter-multilingual-mlx* model names remain available for Apple Silicon workflows, but they are separate artifacts. The OpenMed wrapper passes trust_remote_code=True for you, runs the model&#x27;s own BIOES Viterbi decoder, and skips OpenMed&#x27;s regex ..."
+    },
+    {
+      "title": "model.onnx · lemonade-sdk/openmed-privacy-filter-multilingual-v2-onnx ...",
+      "url": "https://huggingface.co/lemonade-sdk/openmed-privacy-filter-multilingual-v2-onnx/blob/main/model.onnx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "privacy-filter-multilingual-v2-mlx-8bit download",
+      "url": "https://huggingbay.xyz/artifact/hf-model-openmed-privacy-filter-multilingual-v2-mlx-8bit",
+      "snippet": "OpenMed/privacy-filter-multilingual-v2-mlx-8bit is an open-weights language model for token classification published by OpenMed, added to Hugging Bay Sep 25, 2026."
+    }
+  ]
+}

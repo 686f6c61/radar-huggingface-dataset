@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "fesvhtr/phygenhand-minimax-h3-hot3d-controlnet",
+  "slug": "fesvhtr-phygenhand-minimax-h3-hot3d-controlnet",
+  "author": "fesvhtr",
+  "url": "https://huggingface.co/fesvhtr/phygenhand-minimax-h3-hot3d-controlnet",
+  "created_at": "2026-10-25T19:44:32.000Z",
+  "updated_at": "2026-10-25T19:49:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "controlnet",
+    "lora",
+    "safetensors",
+    "image-to-video",
+    "dataset:bop-benchmark/hot3d",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:adapter:MiniMaxAI/MiniMax-H3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 35574445720,
+  "storage_human": "35.6 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3, alibaba-pai/MiniMax-H3-Fun-Controlnet-Union",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/?gl=FR&hl=fr",
+      "snippet": "Profitez des vidéos et de la musique que vous aimez, mettez en ligne des contenus originaux, et partagez-les avec vos amis, vos …"
+    },
+    {
+      "title": "Home - YouTube",
+      "url": "https://www.youtube.com/@trending",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=en-US",
+      "snippet": "Get the official YouTube app on Android phones and tablets. See what the world is watching -- from the hottest music videos to …"
+    },
+    {
+      "title": "YouTube - Google Accounts",
+      "url": "https://accounts.google.com/InteractiveLogin?service=youtube",
+      "snippet": "Share your videos with friends, family, and the world."
+    },
+    {
+      "title": "YouTube TV",
+      "url": "https://tv.youtube.com/welcome，",
+      "snippet": "YouTube TV ... YouTube TV"
+    }
+  ]
+}

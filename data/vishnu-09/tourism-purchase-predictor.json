@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Vishnu-09/tourism-purchase-predictor",
+  "slug": "vishnu-09-tourism-purchase-predictor",
+  "author": "Vishnu-09",
+  "url": "https://huggingface.co/Vishnu-09/tourism-purchase-predictor",
+  "created_at": "2026-10-25T13:54:13.000Z",
+  "updated_at": "2026-10-25T14:51:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "tabular-classification",
+  "library": "sklearn",
+  "languages": [],
+  "tags": [
+    "sklearn",
+    "joblib",
+    "tabular-classification",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6111998,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vishnu - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Vishnu",
+      "snippet": "Vishnu is known as The Preserver within the Trimurti, the triple deity of supreme divinity that includes Brahma and Shiva. [24][25] In …Read more"
+    },
+    {
+      "title": "Vishnou — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Vishnou",
+      "snippet": "Vishnu: an introduction par Devdutt Pattanaik, Vakils, Feffer and Simons, 1999 Philosophie de la mythologie, Friedrich Wilhelm …"
+    },
+    {
+      "title": "Tout ce Qu'il Faut Savoir sur le Dieu Vishnu - Royaume Indien",
+      "url": "https://royaume-indien.com/blogs/dieux-hindous/dieu-vishnu",
+      "snippet": "Oct 4, 2021 · Découvrez l'histoire, les origines et les croyances hindoues autour du dieu Vishnu, ce personnage mythique que les …"
+    },
+    {
+      "title": "Mythologie hindoue : Vishnou",
+      "url": "https://mythologica.fr/hindou/vishnu.htm",
+      "snippet": "Vishnou ou Vishnu est le dieu de la stabilité du monde, il entretient la Vie et la Création. C'est le dieu du temps. Il est identifié au …"
+    },
+    {
+      "title": "Qui est Vishnu ? De la mythologie au yoga",
+      "url": "https://www.yogom.fr/vishnu/",
+      "snippet": "Sep 17, 2025 · Vishnu est un dieu dans la religion hindoue. Il est considéré comme l’un des principaux dieux du panthéon hindou et …"
+    }
+  ]
+}

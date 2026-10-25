@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/Karrablast",
+  "slug": "ryanham1lton-karrablast",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/Karrablast",
+  "created_at": "2026-10-25T17:43:02.000Z",
+  "updated_at": "2026-10-25T17:43:46.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 115459305,
+  "storage_human": "115 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ryanham1lton (Ryan James Hamilton) - Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 12 hours ago ... published a model about 12 hours ago"
+    },
+    {
+      "title": "Karrablast AI Models (1) | Civitai",
+      "url": "https://civitai.com/tag/karrablast",
+      "snippet": "Browse 1 AI models tagged \"Karrablast\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    },
+    {
+      "title": "Ryanham1lton/Kadabra · Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton/Kadabra",
+      "snippet": "Ryanham1lton / Kadabra Like 0 License:cc-by-4. Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Chuumon - Doug Erholtz (Digimon) (English) [RVC v2] [RMVPE] [250 Epochs]",
+      "url": "https://voice-models.com/model/9pL?source=voice-models-soundalike&source_model_id=35286&source_sample_id=35286%3Asamples2%3Ap0&candidate_model_id=36193&candidate_sample_id=36193%3Asamples2%3Ap0&soundalike_rank=5&soundalike_reason=nearby_voice",
+      "snippet": "Chuumon - Doug Erholtz (Digimon) (English) [RVC v2] [RMVPE] [250 Epochs] AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    },
+    {
+      "title": "Ryanham1lton AI models - Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/company/ryanham1lton",
+      "snippet": "Browse AI models attributed to Ryanham1lton, sourced from verified model catalogs."
+    }
+  ]
+}

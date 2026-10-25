@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "nukonukomain/IAmCat-chat-3B-GGUF",
+  "slug": "nukonukomain-iamcat-chat-3b-gguf",
+  "author": "nukonukomain",
+  "url": "https://huggingface.co/nukonukomain/IAmCat-chat-3B-GGUF",
+  "created_at": "2026-10-25T13:43:47.000Z",
+  "updated_at": "2026-10-25T14:00:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "gguf",
+    "japanese",
+    "qwen2.5",
+    "chat",
+    "llama.cpp",
+    "lm-studio",
+    "ja",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-3B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 8108219200,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

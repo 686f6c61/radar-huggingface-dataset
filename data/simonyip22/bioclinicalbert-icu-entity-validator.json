@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "SimonYip22/bioclinicalbert-icu-entity-validator",
+  "slug": "simonyip22-bioclinicalbert-icu-entity-validator",
+  "author": "SimonYip22",
+  "url": "https://huggingface.co/SimonYip22/bioclinicalbert-icu-entity-validator",
+  "created_at": "2026-10-25T17:12:26.000Z",
+  "updated_at": "2026-10-25T17:58:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "clinical-nlp",
+    "entity-validation",
+    "intensive-care",
+    "biomedical-nlp",
+    "bioclinicalbert",
+    "text-classification",
+    "en",
+    "base_model:emilyalsentzer/Bio_ClinicalBERT",
+    "base_model:finetune:emilyalsentzer/Bio_ClinicalBERT",
+    "doi:10.57967/hf/11258",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "emilyalsentzer/Bio_ClinicalBERT",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Connecter son wiko à son pc [Résolu] - Wiko - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-32011939-connecter-son-wiko-a-son-pc",
+      "snippet": "May 23, 2015 · Bonjour, J'ai une wiko rainbow 4g, j'aimerais le connecter à mon ordinateur pour pouvoir garder des photos mettre de …"
+    },
+    {
+      "title": "Retablir la sonnerie des appels de mon téléphone - Wiko",
+      "url": "https://forums.commentcamarche.net/forum/affich-35362065-retablir-la-sonnerie-des-appels-de-mon-telephone",
+      "snippet": "May 13, 2018 · Bonjour, mon téléphone ne sonne plus lors de appels que je reçois que dois je faire pour rétablir la sonnerie merci …"
+    },
+    {
+      "title": "如何评价华为近期发布的智选笔记本 Hi MateBook - 知乎",
+      "url": "https://www.zhihu.com/question/3591715695",
+      "snippet": "Nov 8, 2024 · 线下门店按照相关宣传，应该是10月初就已经有了不同于华为 MateBook，智选 Hi MateBook 其实属于 华为智选品牌 …"
+    },
+    {
+      "title": "华为智选wiko hi mate book出的两款笔记本应该如何选择呢？",
+      "url": "https://www.zhihu.com/question/3251136758",
+      "snippet": "简单小结：两个型号都属轻薄本，定位办公和轻娱乐，质感高级，轻薄便携。同时，都具有智慧超连特性，移动办公学习，都能轻松 …"
+    },
+    {
+      "title": "Mon wiko ne veut pas s’allumer [Résolu] - Wiko - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-35767359-mon-wiko-ne-veut-pas-s-allumer",
+      "snippet": "Dec 24, 2018 · Bonjour,depuis 2h j’essaye d’allumer mon wiko en appuyant sur le bouton power mais rien le téléphone ne veux pas …"
+    }
+  ]
+}

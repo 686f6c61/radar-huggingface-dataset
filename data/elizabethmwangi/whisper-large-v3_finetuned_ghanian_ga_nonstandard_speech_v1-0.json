@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ElizabethMwangi/whisper-large-v3_finetuned_ghanian_ga_nonstandard_speech_v1.0",
+  "slug": "elizabethmwangi-whisper-large-v3_finetuned_ghanian_ga_nonstandard_speech_v1-0",
+  "author": "ElizabethMwangi",
+  "url": "https://huggingface.co/ElizabethMwangi/whisper-large-v3_finetuned_ghanian_ga_nonstandard_speech_v1.0",
+  "created_at": "2026-10-25T11:24:37.000Z",
+  "updated_at": "2026-10-25T11:25:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543490560,
+  "parameters_human": "1.54B",
+  "storage_bytes": 6174112072,
+  "storage_human": "6.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Moria - The Science Fiction Horror and Fantasy Film Review",
+      "url": "https://www.moriareviews.com/",
+      "snippet": "Canadian horror film with overtones of The Shining where a horror writer starts to write his masterpiece but delves down into …Read more"
+    },
+    {
+      "title": "Horror Archives - Moria",
+      "url": "https://www.moriareviews.com/list/horror",
+      "snippet": "Mar 8, 2015 · Modest and effective horror anthology from the two brothers responsible for Pitch Black and the Ewoks tv movies. …"
+    },
+    {
+      "title": "Moria - The Science Fiction, Horror and Fantasy Film Review",
+      "url": "https://www.facebook.com/p/Moria-The-Science-Fiction-Horror-and-Fantasy-Film-Review-100059731934246/",
+      "snippet": "Returning to today's double bill: Korean Exorcism Films. Second up: Holy Night: Demon Hunters (2025). The South Korea …"
+    },
+    {
+      "title": "Moria Reviews",
+      "url": "https://moriareviews.tumblr.com/page/4",
+      "snippet": "Aug 23, 2020 · Bloodeaters (aka Toxic Zombies) (1980) A little-known zombie film in which marijuana crop-dusted with an untested …"
+    },
+    {
+      "title": "MORIA - Reviews - Flickchart",
+      "url": "https://www.flickchart.com/movie/moria-2026/reviews",
+      "snippet": "Read member reviews of MORIA (2026). See what the Flickchart community thought, and rank it against the films you've seen."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Shadowiee/opus-mt-bg-en-tv",
+  "slug": "shadowiee-opus-mt-bg-en-tv",
+  "author": "Shadowiee",
+  "url": "https://huggingface.co/Shadowiee/opus-mt-bg-en-tv",
+  "created_at": "2026-10-25T19:46:30.000Z",
+  "updated_at": "2026-10-25T19:47:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "bg",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "marian",
+    "translation",
+    "bg",
+    "en",
+    "base_model:Helsinki-NLP/opus-mt-bg-en",
+    "base_model:finetune:Helsinki-NLP/opus-mt-bg-en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 75848565,
+  "parameters_human": "75.8M",
+  "storage_bytes": 305208330,
+  "storage_human": "305 MB",
+  "base_model": "Helsinki-NLP/opus-mt-bg-en",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Helsinki-NLP/Opus-MT: Open neural machine translation models ...",
+      "url": "https://github.com/Helsinki-NLP/Opus-MT",
+      "snippet": "There is a Makefile for training new models from OPUS data in the Opus-MT-train repository, but this is heavily customized for the work environment at CSC and the University of Helsinki projects. This will (hopefully) be more generic in the future to be able to run in different environments and setups as well."
+    },
+    {
+      "title": "AI Models — Sharpii.ai",
+      "url": "https://sharpii.ai/models",
+      "snippet": "AI Models EVERY MODEL WE OFFER. 49 specialized models across image, video, audio, and enhancement — all optimized for professional quality output."
+    },
+    {
+      "title": "Opus AI Video Generator — Cinematic Text-to-Video & Image-to-Video",
+      "url": "https://opusai.link/",
+      "snippet": "Why Choose Opus AI Video Generator? Opus AI Video Generator turns short prompts and reference images into cinematic shorts with consistent subject tracking, natural camera motion, and instant browser previews to speed your creative loop."
+    },
+    {
+      "title": "All AI models — chat, image, video & music · TryAI",
+      "url": "https://www.tryai.dev/models",
+      "snippet": "Browse and try 30+ frontier AI models in one place: GPT-5.5, Claude Opus, Gemini 3 Pro, Grok, DeepSeek, plus the best image, video, and music generators. Pay-as-you-go with an optional monthly credit plan."
+    },
+    {
+      "title": "Opus | Home",
+      "url": "https://opus.ai/",
+      "snippet": "Opus Text to Video generation using AI. Computational Production - everything from scenes, assets, characters, dialogue and visual effects."
+    }
+  ]
+}

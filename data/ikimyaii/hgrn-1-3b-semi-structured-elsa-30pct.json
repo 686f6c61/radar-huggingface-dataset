@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ikimyaii/HGRN-1.3B-semi-structured-ELSA-30pct",
+  "slug": "ikimyaii-hgrn-1-3b-semi-structured-elsa-30pct",
+  "author": "ikimyaii",
+  "url": "https://huggingface.co/ikimyaii/HGRN-1.3B-semi-structured-ELSA-30pct",
+  "created_at": "2026-10-25T20:11:58.000Z",
+  "updated_at": "2026-10-25T20:12:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hgrn",
+    "pruning",
+    "sparsity",
+    "semi-structured",
+    "admm",
+    "elsa",
+    "arxiv:2510.01650",
+    "base_model:fla-hub/hgrn-1.3B-100B",
+    "base_model:finetune:fla-hub/hgrn-1.3B-100B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1364396032,
+  "parameters_human": "1.36B",
+  "storage_bytes": 5458104315,
+  "storage_human": "5.5 GB",
+  "base_model": "fla-hub/hgrn-1.3B-100B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ikimyaii/HGRN-1.3B-semi-structured-ELSA-70pct · Hugging Face",
+      "url": "https://huggingface.co/ikimyaii/HGRN-1.3B-semi-structured-ELSA-70pct",
+      "snippet": "ELSA-official main.py, with the settings of ELSA&#x27;s own HGRN-1.3B @80% run, unchanged for every model and sparsity: 4096 ADMM steps, z-step every 32 steps, batch 1 x 8 accumulation, lr 2e-4, lambda 0.01, bf16, 32,768 C4 sequences of 2,048 tokens, seed 0. The whole run took 4.95 hours on one A100 40GB ..."
+    },
+    {
+      "title": "HGRN-1.3B-semi-structured-EHWS-ALPS-phase1-80pct - Hugging Face",
+      "url": "https://huggingface.co/ikimyaii/HGRN-1.3B-semi-structured-EHWS-ALPS-phase1-80pct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Hgrn 1.3b Semi Structured Ehws 80pct - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/ikimyaii/hgrn-1.3b-semi-structured-ehws-80pct",
+      "snippet": "Registry entry for model Hgrn 1.3b Semi Structured Ehws 80pct; source metadata pending."
+    },
+    {
+      "title": "Hgrn 1.3B Dense Baseline by ikimyaii — VRAM 2.7GB, 2K context | LLM ...",
+      "url": "https://llm-explorer.com/model/ikimyaii%2Fhgrn-1.3B-dense-baseline,7LYYStHHXgTcslfsAFK4Gl",
+      "snippet": "Hgrn 1.3B Dense Baseline is an open-source language model by ikimyaii. Features: 627b LLM, VRAM: 2.7GB, Context: 2K, License: mit, LLM Explorer Score: 0.23."
+    },
+    {
+      "title": "GitHub - OpenNLPLab/HGRN: [NeurIPS 2023 spotlight] Official ...",
+      "url": "https://github.com/OpenNLPLab/HGRN",
+      "snippet": "[NeurIPS 2023 spotlight] Official implementation of HGRN in our NeurIPS 2023 paper - Hierarchically Gated Recurrent Neural Network for Sequence Modeling - OpenNLPLab/HGRN"
+    }
+  ]
+}

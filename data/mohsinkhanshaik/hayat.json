@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Mohsinkhanshaik/HAYAT",
+  "slug": "mohsinkhanshaik-hayat",
+  "author": "Mohsinkhanshaik",
+  "url": "https://huggingface.co/Mohsinkhanshaik/HAYAT",
+  "created_at": "2026-10-25T17:24:40.000Z",
+  "updated_at": "2026-10-25T17:25:20.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "hayat",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "hayat",
+    "assistant",
+    "local-first",
+    "windows",
+    "ollama",
+    "agent",
+    "en",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 252761,
+  "storage_human": "252761 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - mohsinkhanshaik/HAYAT.AI: Hayat is a local-first personal AI ...",
+      "url": "https://github.com/mohsinkhanshaik/HAYAT.AI",
+      "snippet": "Hayat is a local-first personal AI agent built to operate as a persistent system rather than a chatbot wrapper. It combines memory, planning, tool execution, voice, vision, Windows automation, research, hardware awareness, permissions, and replaceable local reasoning models. - mohsinkhanshaik/HAYAT.AI"
+    },
+    {
+      "title": "Mohsinkhanshaik (Mohsin khan shaik) - Hugging Face",
+      "url": "https://huggingface.co/Mohsinkhanshaik",
+      "snippet": "Running LLMs locally through LM Studio Comparing open-source and uncensored models Building AI assistants and agents Vision-language models that understand images RAG systems using private docu..."
+    },
+    {
+      "title": "mohsinkhanshaik (MOHSIN KHAN SHAIK) · GitHub",
+      "url": "https://github.com/mohsinkhanshaik",
+      "snippet": "AI Infrastructure Engineer | SRE | AWS • Kubernetes • Terraform • GenAI Infrastructure | Founder @ Hamuzair - mohsinkhanshaik"
+    },
+    {
+      "title": "AI access | Mohsin Hayat",
+      "url": "https://mohsinht.com/ai",
+      "snippet": "Using an AI tool to learn about Mohsin Hayat? These public interfaces share the same professional profile data as this site and resume."
+    },
+    {
+      "title": "Mohsin Khan Shaik — AI Infrastructure & Site Reliability Engineer",
+      "url": "https://mohsinkhanshaik.com/",
+      "snippet": "I&#x27;m an AI Infrastructure and Site Reliability Engineer with 3+ years designing and operating large-scale distributed systems, cloud-native platforms, and Kubernetes-based AI/ML infrastructure. Expertise in AWS, Kubernetes, Terraform, Docker, and CI/CD — with a strong focus on scalability, reliability, and performance optimization."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "KernelFrog/WAVE-Weighted-Audio-Vibe-Engine",
+  "slug": "kernelfrog-wave-weighted-audio-vibe-engine",
+  "author": "KernelFrog",
+  "url": "https://huggingface.co/KernelFrog/WAVE-Weighted-Audio-Vibe-Engine",
+  "created_at": "2026-10-25T04:51:08.000Z",
+  "updated_at": "2026-10-25T17:45:48.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "music",
+    "recommendation",
+    "radio",
+    "item2vec",
+    "listenbrainz",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 682434188,
+  "storage_human": "682 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vibeEngine | Multi-model AI music",
+      "url": "https://vibeengine.live/",
+      "snippet": "Generate music across Mureka, ElevenLabs, MiniMax, and vCore in one prompt. Vote blind. Keep the winners. Free tier with 3 songs per day."
+    },
+    {
+      "title": "Browse by Topic — Learn Across Formats | Vibe Engines",
+      "url": "https://vibeengines.com/topics",
+      "snippet": "Every topic on Vibe Engines — RAG, LLM engineering, agents, distributed systems, caching, algorithms and more — each aggregating handbooks, system designs, challenges, labs and tools in one place."
+    },
+    {
+      "title": "AI Audio Plugins | Zephly",
+      "url": "https://zephly.ai/docs/plugins/ai-audio",
+      "snippet": "ElevenLabs, EdgeTTS, Whisper — audio generation and transcription plugins."
+    },
+    {
+      "title": "GitHub - Saganaki22/ComfyUI-Woosh: Text-to-audio and video-to-audio ...",
+      "url": "https://github.com/Saganaki22/ComfyUI-Woosh",
+      "snippet": "Sound effect generation nodes for ComfyUI — Text-to-audio and video-to-audio using Sony AI&#x27;s Woosh foundation model."
+    },
+    {
+      "title": "GitHub - lazniak/videoclipgenerator: Vibe Music Engine is a custom node ...",
+      "url": "https://github.com/lazniak/videoclipgenerator",
+      "snippet": "The Vibe Music Engine is the cornerstone of the VideoClipGenerator suite, functioning as an advanced audio processing system that bridges the gap between sound and visual content creation."
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "id": "Elythros/elythros-decider-4b-exp",
+  "slug": "elythros-elythros-decider-4b-exp",
+  "author": "Elythros",
+  "url": "https://huggingface.co/Elythros/elythros-decider-4b-exp",
+  "created_at": "2026-10-25T11:48:26.000Z",
+  "updated_at": "2026-10-25T11:51:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3",
+    "apple-silicon",
+    "decision-model",
+    "system-one",
+    "calibration",
+    "zero-shot-classification",
+    "experimental",
+    "text-classification",
+    "en",
+    "dataset:PolyAI/banking77",
+    "dataset:clinc/clinc_oos",
+    "dataset:nyu-mll/glue",
+    "dataset:stanfordnlp/snli",
+    "dataset:google/boolq",
+    "dataset:stanfordnlp/sst2",
+    "dataset:cais/mmlu",
+    "dataset:fancyzhx/ag_news",
+    "dataset:fancyzhx/dbpedia_14",
+    "dataset:community-datasets/yahoo_answers_topics",
+    "dataset:papluca/language-identification",
+    "dataset:stanfordnlp/imdb",
+    "dataset:Yelp/yelp_review_full",
+    "dataset:cardiffnlp/tweet_eval",
+    "dataset:google-research-datasets/paws",
+    "dataset:rajpurkar/squad_v2",
+    "dataset:aps/super_glue",
+    "dataset:google/civil_comments",
+    "dataset:Elythros/elythros-decider-synthetic",
+    "arxiv:2102.09690",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:quantized:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 2377279495,
+  "storage_human": "2.4 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Elythros/elythros-decider-synthetic · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Elythros/elythros-decider-synthetic",
+      "snippet": "Datasets: Elythros / elythros-decider-synthetic Like 0 Tasks: Text Classification Question Answering Modalities: Text Formats: json Languages: English Size: 10K - 100K Tags: Synthetic decision-model minimal-pairs contrast-sets yes-no multiple-choice Libraries: Datasets pandas Polars + 1 License: cc-by-4. Dataset card Data Studio FilesFiles and versions xet Community 1 Dataset Viewer Auto ..."
+    },
+    {
+      "title": "Models tagged decision-model - Hugging Face",
+      "url": "https://huggingface.co/models?other=decision-model",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "AIM System One Index | AIMultiple",
+      "url": "https://aimultiple.com/system-one",
+      "snippet": "AIM System One Index combines each model&#x27;s scores on AIM-Decision Browser, AIM-Decision Classification and AIM-AI-Bias. Each score becomes a z-score, its distance from the benchmark&#x27;s average in standard deviations, measured against the models that have all three scores."
+    },
+    {
+      "title": "Decider-4B — ModelSystem.One",
+      "url": "https://modelsystem.one/models/decider-4b/",
+      "snippet": "Decider-4B is the first open model to beat Jev on JevBench — a 4.2B dense model from Mapika with no reinforcement-learning stage, achieving rank #1 via superior speed (92.9) and cost efficiency (60.9), not raw intelligence (49.4 vs Jev&#x27;s higher reasoning scores)."
+    },
+    {
+      "title": "GitHub - XCWQW1/decider",
+      "url": "https://github.com/XCWQW1/decider",
+      "snippet": "decider-2b v10 and v8 stay available under the Hub tags v10 and v8 of Mapika/decider-2b, and decider-4b v2 and v1 under the tags v2 and v1 of Mapika/decider-4b. decider-4b is the first model trained on mixture v2 (the public mixture plus 26 further public decision datasets and ten programmatic families with verifiable gold); the mixture-v2 ..."
+    }
+  ]
+}

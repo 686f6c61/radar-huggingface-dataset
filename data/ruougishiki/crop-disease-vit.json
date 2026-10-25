@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "RuougiShiki/crop-disease-vit",
+  "slug": "ruougishiki-crop-disease-vit",
+  "author": "RuougiShiki",
+  "url": "https://huggingface.co/RuougiShiki/crop-disease-vit",
+  "created_at": "2026-10-25T14:57:31.000Z",
+  "updated_at": "2026-10-25T15:03:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 85827878,
+  "parameters_human": "85.8M",
+  "storage_bytes": 343334720,
+  "storage_human": "343 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

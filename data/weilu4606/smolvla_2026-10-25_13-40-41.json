@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "weilu4606/smolvla_2026-10-25_13-40-41",
+  "slug": "weilu4606-smolvla_2026-10-25_13-40-41",
+  "author": "weilu4606",
+  "url": "https://huggingface.co/weilu4606/smolvla_2026-10-25_13-40-41",
+  "created_at": "2026-10-25T13:40:42.000Z",
+  "updated_at": "2026-10-25T15:34:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "lelab",
+    "dataset:Whyynnot/standard_task_pick_up_the_red_block_and_put_it_on_the_plate_merged_158_20261025",
+    "arxiv:2506.01844",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 80523221696,
+  "storage_human": "80.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MetroDreamin' | Build the Public Transit System of Your Dreams",
+      "url": "https://metrodreamin.com/",
+      "snippet": "MetroDreamin' is a web application that allows users to design and visualize their dream transportation systems, and peruse the …"
+    },
+    {
+      "title": "Metro Builder | Play on Roblox",
+      "url": "https://www.roblox.com/games/140473283529865/Metro-Builder",
+      "snippet": "Metro Builder is an arcade sandbox game where you can build your own metro network, create stations, lay tracks, customize …"
+    },
+    {
+      "title": "Constructeur de métro | Jouez sur Roblox",
+      "url": "https://www.roblox.com/fr/games/140473283529865/Metro-Builder",
+      "snippet": "Metro Builder est un jeu de sandbox d'arcade où vous pouvez construire votre propre réseau de métro, créer des stations, poser des …"
+    },
+    {
+      "title": "Cities - Subway Builder",
+      "url": "https://www.subwaybuilder.com/cities",
+      "snippet": "Cities 54 cities across 7 countries. The highlighted region on each map is the real area you can build in."
+    },
+    {
+      "title": "Metro Designer - Online transit map maker - Tennessine",
+      "url": "https://tennessine.co.uk/metro/",
+      "snippet": "Create your own train subway map with our metro map maker! Draw the perfect transit map design, then download and share with …"
+    }
+  ]
+}

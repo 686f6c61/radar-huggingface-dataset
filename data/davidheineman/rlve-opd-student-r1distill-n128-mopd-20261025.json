@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "davidheineman/rlve-opd-student-R1Distill-n128-mopd-20261025",
+  "slug": "davidheineman-rlve-opd-student-r1distill-n128-mopd-20261025",
+  "author": "davidheineman",
+  "url": "https://huggingface.co/davidheineman/rlve-opd-student-R1Distill-n128-mopd-20261025",
+  "created_at": "2026-10-25T16:59:35.000Z",
+  "updated_at": "2026-10-25T17:00:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "rlve",
+    "data-scaling",
+    "mopd",
+    "conversational",
+    "base_model:deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "base_model:finetune:deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 3554214720,
+  "storage_human": "3.6 GB",
+  "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "1080p - Beeg",
+      "url": "https://beeg.com/1080P",
+      "snippet": "Taking her time tonight, gentle and fully in control of the paceRead more"
+    },
+    {
+      "title": "Beeg - Free HD Porn Videos | Watch XXX Adult Content Online",
+      "url": "https://beeg.tv/",
+      "snippet": "Enjoy full-length HD porn videos on Beeg.tv. Stream high-quality XXX content in all categories with fast and seamless playback. Start …"
+    },
+    {
+      "title": "Beeg",
+      "url": "https://beeg.com/?mobile=1",
+      "snippet": "Wow, you've got some red-hot summer porn there!"
+    },
+    {
+      "title": "Browse Videos | Beeg",
+      "url": "https://beeg.tv/videos",
+      "snippet": "so you missed me... i dare you to pull it out! feels like someone is watching... enticed? how many days of accomodation you said? no …"
+    },
+    {
+      "title": "Free Beeg Full HD 1080p Porn Videos | xHamster",
+      "url": "https://xhamster.com/tags/beeg/hd?quality=1080p",
+      "snippet": "Watch all Beeg Full HD 1080p XXX vids right now!"
+    }
+  ]
+}

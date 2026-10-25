@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "fcmeyer/Nanbeige4.3-33B-MLX-6bit",
+  "slug": "fcmeyer-nanbeige4-3-33b-mlx-6bit",
+  "author": "fcmeyer",
+  "url": "https://huggingface.co/fcmeyer/Nanbeige4.3-33B-MLX-6bit",
+  "created_at": "2026-10-25T17:19:44.000Z",
+  "updated_at": "2026-10-25T18:16:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "llama",
+    "nanbeige",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Nanbeige/Nanbeige4.3-33B",
+    "base_model:quantized:Nanbeige/Nanbeige4.3-33B",
+    "license:apache-2.0",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33118977024,
+  "parameters_human": "33.12B",
+  "storage_bytes": 26931434364,
+  "storage_human": "26.9 GB",
+  "base_model": "Nanbeige/Nanbeige4.3-33B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fcmeyer/Nanbeige4.3-33B-MLX-6bit · Hugging Face",
+      "url": "https://huggingface.co/fcmeyer/Nanbeige4.3-33B-MLX-6bit",
+      "snippet": "Instructions to use fcmeyer/Nanbeige4.3-33B-MLX-6bit with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use fcmeyer/Nanbeige4.3-33B-MLX-6bit with MLX:"
+    },
+    {
+      "title": "Nanbeige/Nanbeige4.3-33B - Hugging Face",
+      "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Nanbeige4.3-33B: Open 33B Agent Model, 80.9 on Terminal-Bench ...",
+      "url": "https://explainx.ai/blog/nanbeige-4-3-33b-open-agentic-model-guide-2026",
+      "snippet": "Nanbeige4.3-33B is a new open-weight dense model released on October 24, 2026 under the Apache 2.0 license, built for coding and office-style agents. The model card on Hugging Face reports that it leads three comparable 30B-class models on most agentic benchmarks, including 80.9 on Terminal-Bench 2.1."
+    },
+    {
+      "title": "Nanbeige Releases Open 33B Model for Agentic Coding - AI Brief",
+      "url": "https://dailyaibrief.com/news/nanbeige-releases-33b-agent-model-with-512k-context-yoxTglVU",
+      "snippet": "Nanbeige released Nanbeige4.3-33B, an Apache 2.0 open-weight model it says leads most agentic coding tests in the 30B class."
+    },
+    {
+      "title": "Nanbeige&#x27;s New 33B Open Model Takes Aim at Qwen and Gemma on ...",
+      "url": "https://startupfortune.com/nanbeiges-new-33b-open-model-takes-aim-at-qwen-and-gemma-on-coding/",
+      "snippet": "Nanbeige, the AI team backed by Chinese recruitment giant BOSS Zhipin, released Nanbeige4.3-33B on Hugging Face this week under an Apache 2.0 licence. The benchmark table attached to the model card makes a specific claim: at the 33 billion parameter scale, it beats Alibaba&#x27;s Qwen3.8-27B on seven of eight agentic-coding evaluations."
+    }
+  ]
+}

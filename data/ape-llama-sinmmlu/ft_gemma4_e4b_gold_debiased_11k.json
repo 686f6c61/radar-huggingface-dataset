@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ape-llama-sinmmlu/ft_gemma4_e4b_gold_debiased_11k",
+  "slug": "ape-llama-sinmmlu-ft_gemma4_e4b_gold_debiased_11k",
+  "author": "ape-llama-sinmmlu",
+  "url": "https://huggingface.co/ape-llama-sinmmlu/ft_gemma4_e4b_gold_debiased_11k",
+  "created_at": "2026-10-25T14:37:03.000Z",
+  "updated_at": "2026-10-25T14:37:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:google/gemma-4-e4b-it",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 102000738,
+  "storage_human": "102 MB",
+  "base_model": "google/gemma-4-e4b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "À quoi correspond le code APE (code NAF) - Service-Public.fr",
+      "url": "https://entreprendre.service-public.gouv.fr/vosdroits/F33050",
+      "snippet": "Le code APE (activité principale exercée) identifie la branche d'activité d'une entreprise ou d'une société. La nomenclature NAF est …"
+    },
+    {
+      "title": "Rechercher le code APE (activité principale exercée) correspondant à ...",
+      "url": "https://entreprendre.service-public.gouv.fr/vosdroits/R64626",
+      "snippet": "Rechercher le code APE (activité principale exercée) correspondant à son activité - Simulateur"
+    },
+    {
+      "title": "Comment connaître mon code APE - INSEE",
+      "url": "https://www.insee.fr/fr/information/6790269?question=comment-connaitre-mon-code-ape",
+      "snippet": "Le code APE d'une entreprise est disponible en consultant les informations du répertoire Sirene sur l ' Annuaire des Entreprises ou …"
+    },
+    {
+      "title": "Agence des participations de l'État - economie.gouv.fr",
+      "url": "https://www.economie.gouv.fr/agence-participations-etat",
+      "snippet": "L'Agence des participations de l'État (APE) incarne l’État actionnaire, investisseur en fonds propres dans des entreprises jugées …"
+    },
+    {
+      "title": "J'ai reçu un courrier APE affichage obligatoire, qu'en penser ?",
+      "url": "https://expert-comptable-en-ligne.fr/r/j-ai-recu-un-courrier-ape-affichage-obligatoire-qu-en-penser",
+      "snippet": "Mar 18, 2020 · L'entête du courrier est ainsi rédigé : APE AFFICHAGE OBLIGATOIRE Il vous est demandé de régler la somme de …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Tomat920/test",
+  "slug": "tomat920-test",
+  "author": "Tomat920",
+  "url": "https://huggingface.co/Tomat920/test",
+  "created_at": "2026-10-25T17:25:35.000Z",
+  "updated_at": "2026-10-25T17:33:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 457176696,
+  "storage_human": "457 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches across OpenAI, Anthropic, Google DeepMind, SpaceXAI, DeepSeek, Qwen, Moonshot AI, Meta, Mistral AI, MiniMax, and other important AI labs. You can use the newest-first tables to find the release date, provider, release stage, and model type."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 992 AI models across 708 benchmarks, with 228 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "KasidirR21321/Tomato-Quality-AI - GitHub",
+      "url": "https://github.com/KasidirR21321/Tomato-Quality-AI",
+      "snippet": "Tomato Quality AI: End-to-End Carotenoid Prediction 📌 Overview This project focuses on predicting carotenoid content (e.g., Beta-carotene, Lycopene, Lutein) from tomato images using computer vision and deep learning models. This repository contains the Regression version of the project."
+    },
+    {
+      "title": "Meta AI model hacked a company during misconfigured cyber test",
+      "url": "https://www.bleepingcomputer.com/news/security/meta-ai-model-hacked-a-company-during-misconfigured-cyber-test/",
+      "snippet": "Meta has become the latest AI company to confirm that one of its models hacked a real organization during cybersecurity testing, as similar incidents continue to emerge following OpenAI&#x27;sOpenAI&#x27;s ..."
+    },
+    {
+      "title": "AI API Model Tester — Check Which Model Your API Actually Runs ...",
+      "url": "https://apimaster.ai/ai-api-model-tester",
+      "snippet": "Free AI API model tester. Paste any OpenAI, Claude or Gemini endpoint and see which model it really runs — fingerprint detection exposes substituted or fake models in seconds. No key stored."
+    }
+  ]
+}

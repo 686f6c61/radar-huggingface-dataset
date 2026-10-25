@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "greatkoko/tank-nationality-identification-YOLO26s",
+  "slug": "greatkoko-tank-nationality-identification-yolo26s",
+  "author": "greatkoko",
+  "url": "https://huggingface.co/greatkoko/tank-nationality-identification-YOLO26s",
+  "created_at": "2026-10-25T06:14:43.000Z",
+  "updated_at": "2026-10-25T12:18:12.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "onnx",
+    "yolo",
+    "yolo26",
+    "object-detection",
+    "tank",
+    "military-vehicle",
+    "identification-friend-or-foe",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 58829157,
+  "storage_human": "59 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Connexion à mon espace client - La Banque Postale",
+      "url": "https://www.labanquepostale.fr/particulier/connexion-espace-client.html?msockid=0fcbd4c69d2d68a025c3c33b9c6b6974",
+      "snippet": "Connectez-vous à votre espace client La Banque Postale. Accédez à votre compte particulier en ligne ou via l'application mobile, en …"
+    },
+    {
+      "title": "L'Espace Client Internet - La Banque Postale",
+      "url": "https://www.labanquepostale.fr/particulier/comptes-et-cartes/espaces-clients/banque-en-ligne.html?msockid=0fcbd4c69d2d68a025c3c33b9c6b6974",
+      "snippet": "Accédez à nos services en ligne sur l’Espace Client Internet pour consulter et gérer vos comptes en toute autonomie et sécurité …"
+    },
+    {
+      "title": "Connexion - La Banque Postale",
+      "url": "https://voscomptesenligne.labanquepostale.fr/voscomptes/canalXHTML/identif.ea?origin=particuliers",
+      "snippet": "Mémoriser mon identifiant Continuer Mot de passe (6 chiffres) Utilisez les boutons suivants pour saisir votre Mot de passe à 6 …"
+    },
+    {
+      "title": "La Banque Postale",
+      "url": "https://voscomptesenligne.labanquepostale.fr/ws_qh3/QH3/canalXHTML/indexv103.jsp?origin=particuliers",
+      "snippet": "Identifiant (10 chiffres) ... Mémoriser mon identifiant Continuer Mot de passe (6 chiffres) 6 3 7 1 4 9 2 0 8 5"
+    },
+    {
+      "title": "La Banque Postale - Connexion",
+      "url": "https://uat.alliatys.labanquepostale.fr/login",
+      "snippet": "Numéro de compte oublié ? Contactez-nous."
+    }
+  ]
+}

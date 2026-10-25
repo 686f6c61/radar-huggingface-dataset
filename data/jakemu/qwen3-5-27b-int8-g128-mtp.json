@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Jakemu/Qwen3.5-27B-int8-g128-mtp",
+  "slug": "jakemu-qwen3-5-27b-int8-g128-mtp",
+  "author": "Jakemu",
+  "url": "https://huggingface.co/Jakemu/Qwen3.5-27B-int8-g128-mtp",
+  "created_at": "2026-10-25T14:15:54.000Z",
+  "updated_at": "2026-10-25T14:25:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "qwen3_5",
+    "int8",
+    "weight-only",
+    "qwen3.5",
+    "speculative-decoding",
+    "base_model:Qwen/Qwen3.5-27B",
+    "base_model:quantized:Qwen/Qwen3.5-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30289472926,
+  "storage_human": "30.3 GB",
+  "base_model": "Qwen/Qwen3.5-27B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.fr/",
+      "snippet": "Encore plus » Account Options. Connexion; Paramètres de recherche"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=fr",
+      "snippet": "Publicité À propos de Google Google.com in English © 2026 - Confidentialité - Conditions"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/#!%20/=",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "Google",
+      "url": "http://www.google.gp/?hl=fr",
+      "snippet": "Google disponible en : English Publicité À propos de Google Google.com"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.gp/webhp?gl=gp&hl=fr&pws=0",
+      "snippet": "Publicité Solutions d'entreprise À propos de Google Google.com"
+    }
+  ]
+}

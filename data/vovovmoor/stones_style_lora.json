@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "vovovmoor/stones_style_LoRA",
+  "slug": "vovovmoor-stones_style_lora",
+  "author": "vovovmoor",
+  "url": "https://huggingface.co/vovovmoor/stones_style_LoRA",
+  "created_at": "2026-10-25T14:18:24.000Z",
+  "updated_at": "2026-10-25T14:18:29.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "tensorboard",
+    "text-to-image",
+    "diffusers-training",
+    "lora",
+    "template:sd-lora",
+    "stable-diffusion-xl",
+    "stable-diffusion-xl-diffusers",
+    "base_model:stabilityai/stable-diffusion-xl-base-1.0",
+    "base_model:adapter:stabilityai/stable-diffusion-xl-base-1.0",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 77250682,
+  "storage_human": "77 MB",
+  "base_model": "stabilityai/stable-diffusion-xl-base-1.0",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub CLI | Take GitHub to the command line",
+      "url": "https://cli.github.com/",
+      "snippet": "Sep 5, 2026 · gh is GitHub on the command line. It brings pull requests, issues, and other GitHub concepts to the terminal next to …"
+    },
+    {
+      "title": "GitHub - cli/cli: GitHub’s official command line tool",
+      "url": "https://github.com/cli/cli",
+      "snippet": "GitHub-hosted runners have the GitHub CLI pre-installed, which is updated weekly. If a specific version is needed, your GitHub …"
+    },
+    {
+      "title": "GitHub CLI quickstart",
+      "url": "https://docs.github.com/en/github-cli/github-cli/quickstart",
+      "snippet": "Install GitHub CLI on macOS, Windows, or Linux. For more information, see Installation in the GitHub CLI repository. To authenticate …"
+    },
+    {
+      "title": "Install GitHub CLI (gh) on Linux, macOS, and Windows",
+      "url": "https://computingforgeeks.com/how-to-install-github-cli-on-linux-and-windows/",
+      "snippet": "Jul 15, 2026 · Install GitHub CLI on Ubuntu, Debian, Rocky Linux, Fedora, Arch, macOS and Windows with tested commands and …"
+    },
+    {
+      "title": "Manual | GitHub CLI",
+      "url": "https://cli.github.com/manual/index",
+      "snippet": "GitHub CLI, or gh, is a command-line interface to GitHub for use in your terminal or your scripts. You can find installation instructions …"
+    }
+  ]
+}

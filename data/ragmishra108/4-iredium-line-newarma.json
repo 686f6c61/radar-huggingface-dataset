@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ragmishra108/4-iredium-line-newarmA",
+  "slug": "ragmishra108-4-iredium-line-newarma",
+  "author": "ragmishra108",
+  "url": "https://huggingface.co/ragmishra108/4-iredium-line-newarmA",
+  "created_at": "2026-10-25T11:46:53.000Z",
+  "updated_at": "2026-10-25T11:50:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "imitation-learning",
+    "robot-pizza-cup",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 1197789624,
+  "storage_human": "1.2 GB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Place Masséna en direct : la webcam live de Nice",
+      "url": "https://www.masdesoliviers-nice.com/webcam-place-massena-nice/",
+      "snippet": "Place Masséna en direct : suivez la webcam live au cœur de Nice. Ambiance, météo et animation de la place en temps réel."
+    },
+    {
+      "title": "Webcams - Office de Tourisme Nice Côte d'Azur",
+      "url": "https://www.explorenicecotedazur.com/accueil/webcams/",
+      "snippet": "Ce contenu vous a été utile ?"
+    },
+    {
+      "title": "DIRECT. Mobilisation du 17 octobre - Nice-Matin",
+      "url": "https://www.nicematin.com/societe/mobilisation-du-17-octobre-une-centaine-de-personnes-deja-rassemblees-place-massena-a-nice-10742274",
+      "snippet": "Oct 17, 2026 · DIRECT. Mobilisation du 17 octobre : magasins saccagés et pillés, violences urbaines, groupes de casseurs… après …"
+    },
+    {
+      "title": "Webcams de Nice : 6 caméras en direct sur la ville (2026)",
+      "url": "https://www.nicetrotter.fr/art-webcams-de-nice-1096.html",
+      "snippet": "Sep 28, 2026 · Promenade des Anglais, Vieux Nice, plages, port ou aéroport : six webcams diffusent Nice en direct, 24 heures sur …"
+    },
+    {
+      "title": "Webcams de Nice : les 10 plus belles vues en direct",
+      "url": "https://www.masdesoliviers-nice.com/webcam-nice-les-10-plus-belles-vues-en-direct-a-ne-pas-manquer/",
+      "snippet": "Apr 4, 2025 · Les webcams de Nice te montrent la Promenade des Anglais, le Vieux Nice, la Place Masséna, le port et l’aéroport en …"
+    }
+  ]
+}

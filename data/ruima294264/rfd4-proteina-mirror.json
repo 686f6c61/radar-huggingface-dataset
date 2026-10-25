@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "RUIMA294264/rfd4-proteina-mirror",
+  "slug": "ruima294264-rfd4-proteina-mirror",
+  "author": "RUIMA294264",
+  "url": "https://huggingface.co/RUIMA294264/rfd4-proteina-mirror",
+  "created_at": "2026-10-25T11:43:27.000Z",
+  "updated_at": "2026-10-25T12:06:31.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "rfd4-proteina",
+  "languages": [],
+  "tags": [
+    "rfd4-proteina",
+    "safetensors",
+    "rfd4_proteina",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 435622465,
+  "parameters_human": "435.6M",
+  "storage_bytes": 1742660596,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nvidia/RFD4-Proteina · Hugging Face",
+      "url": "https://huggingface.co/nvidia/RFD4-Proteina",
+      "snippet": "The training data has its own source terms, described on the dataset card. Citation When reporting results, cite the RFD4-Proteína project together with the exact model revision, code revision, seed, inputs and sampling configuration you used, plus any source datasets and evaluation tools."
+    },
+    {
+      "title": "RFD4-Proteina — RFD4-Proteina documentation",
+      "url": "https://rfd4-proteina.org/latest/index.html",
+      "snippet": "A next generation sequence structure codesign model for proteins, RNA, DNA, and small molecule complexes. Capable of satisfying robust conditioning and generating plausible sequences without further refinement. Developed by the Baker Lab × NVIDIA GenAIR, with the Institute for Protein Design at the University of Washington."
+    },
+    {
+      "title": "GitHub - RosettaCommons/RFD4-Proteina: Generative protein design with ...",
+      "url": "https://github.com/RosettaCommons/RFD4-Proteina",
+      "snippet": "RFD4-Proteina designs proteins and biomolecular complexes with sequence-structure co-design, motif and binding-site conditioning, partial diffusion, and reward-guided search. Key features: Many design tasks from one model: monomers, protein and DNA binders, antibodies and nanobodies, enzymes and motif scaffolding, small-molecule pockets."
+    },
+    {
+      "title": "rfd4-proteina Model by IPD | NVIDIA NIM",
+      "url": "https://build.nvidia.com/ipd/rfd4-proteina",
+      "snippet": "A unified generative model for protein, enzyme, binder and antibody design."
+    },
+    {
+      "title": "rfd4-proteina Model by IPD | NVIDIA NIM",
+      "url": "https://build.nvidia.com/ipd/rfd4-proteina/modelcard",
+      "snippet": "A unified generative model for protein, enzyme, binder and antibody design. RFD4-Proteina is a unified generative model for protein design, produced through a collaboration between NVIDIA&#x27;s Generative AI team and the David Baker Lab at the Institute for Protein Design. Rather than screening existing ..."
+    }
+  ]
+}

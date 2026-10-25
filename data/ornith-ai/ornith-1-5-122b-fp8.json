@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ornith-ai/Ornith-1.5-122B-FP8",
+  "slug": "ornith-ai-ornith-1-5-122b-fp8",
+  "author": "ornith-ai",
+  "url": "https://huggingface.co/ornith-ai/Ornith-1.5-122B-FP8",
+  "created_at": "2026-10-20T01:09:07.000Z",
+  "updated_at": "2026-10-21T08:30:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "text-generation",
+    "conversational",
+    "license:mit",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 13,
+  "downloads_30d": 69949,
+  "trending_score": 13,
+  "parameters": 125086497008,
+  "parameters_human": "125.09B",
+  "storage_bytes": 132964475222,
+  "storage_human": "133.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Relais Colis Le Kremlin-Bicêtre (94270) : Tous les points retrait et dépôt",
+      "url": "https://suivi-de-colis.net/relais-colis/val-de-marne/le-kremlin-bicetre-94",
+      "snippet": "La ville de Le Kremlin-Bicêtre dans le département du Val-de-Marne (94) compte 2 points dépôt et/ou retrait colis Relais Colis. …Read more"
+    },
+    {
+      "title": "Points relais à Le Kremlin Bicetre — tous les transporteurs",
+      "url": "https://point-relais.tel/points-relais/le-kremlin-bicetre/",
+      "snippet": "Pour chaque relais de Le Kremlin Bicetre, consultez l'adresse, les horaires d'ouverture et les avis afin de choisir le point de retrait ou …"
+    },
+    {
+      "title": "Points relais Mondial Relay à LE KREMLIN BICETRE",
+      "url": "https://point-relais.tel/mondial-relay/le-kremlin-bicetre/",
+      "snippet": "Trouvez un point relais Mondial Relay à LE KREMLIN BICETRE (94270) : liste des points de retrait, adresses, horaires d'ouverture, …"
+    },
+    {
+      "title": "le Relais : Où donner ? Trouver un conteneur près de chez vous",
+      "url": "https://lerelais.org/oudonner.php",
+      "snippet": "Le Relais est la seule filière offrant un service de collecte en porte à porte ou conteneur, de tri et de recyclage de vêtement, …"
+    },
+    {
+      "title": "Trouver le Point Relais & Locker proche de chez moi - Mondial Relay",
+      "url": "https://www.mondialrelay.fr/trouver-le-point-relais-le-plus-proche-de-chez-moi/",
+      "snippet": "Il vous suffit de choisir le mode de livraison Mondial Relay en Points Relais® ou Lockers lors de votre commande internet. Tout se …"
+    }
+  ]
+}

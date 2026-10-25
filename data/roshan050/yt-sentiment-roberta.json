@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "roshan050/yt-sentiment-roberta",
+  "slug": "roshan050-yt-sentiment-roberta",
+  "author": "roshan050",
+  "url": "https://huggingface.co/roshan050/yt-sentiment-roberta",
+  "created_at": "2026-10-25T17:09:41.000Z",
+  "updated_at": "2026-10-25T17:10:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124647939,
+  "parameters_human": "124.6M",
+  "storage_bytes": 498615900,
+  "storage_human": "499 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Shaikat-CSE/Youtube-sentiment-analysis-with-RoBERTa",
+      "url": "https://github.com/Shaikat-CSE/Youtube-Sentiment-Analysis-With-RoBERTa",
+      "snippet": "This web app analyzes YouTube comments and reviews to perform sentiment analysis. It fetches comments using the YouTube API (instead of scraping), ensuring real-time, authorized data. The app classifies the sentiment of the comments into Positive, Neutral, or Negative using a fine-tuned RoBERTa model for sentiment classification."
+    },
+    {
+      "title": "Sentiment Analysis using HuggingFace&#x27;s RoBERTa Model",
+      "url": "https://www.geeksforgeeks.org/nlp/sentiment-analysis-using-huggingfaces-roberta-model/",
+      "snippet": "In this article, we explored sentiment analysis using the RoBERTa model from HuggingFace&#x27;s Transformers library. We discussed the key aspects of RoBERTa, including its training improvements, architecture, and superior performance compared to BERT."
+    },
+    {
+      "title": "GitHub - rishiigupta04/yt-comments-sentiment-analysis: CommentSense v1 ...",
+      "url": "https://github.com/rishiigupta04/yt-comments-sentiment-analysis",
+      "snippet": "CommentSense is an end-to-end NLP and MLOps project for sentiment analysis on YouTube comments. Built by fine-tuning Twitter-RoBERTa on 1 Million+ YouTube comments, CommentSense understands internet slang, emojis, creator-audience interactions, and social-media language patterns that traditional sentiment models often fail to capture. Unlike most sentiment-analysis projects that immediately ..."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Explore and share videos, music, and more on YouTube, the leading platform for online video streaming and sharing."
+    },
+    {
+      "title": "Introduction of RoBERTa Model - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/overview-of-roberta-model/",
+      "snippet": "RoBERTa (Robustly Optimized BERT Pretraining Approach) is an encoder-only transformer model developed by Meta AI to improve the performance of the BERT model through optimized pretraining strategies. Instead of introducing a new architecture, RoBERTa retains the same transformer encoder architecture as BERT. These training optimizations enable the model to learn richer contextual ..."
+    }
+  ]
+}

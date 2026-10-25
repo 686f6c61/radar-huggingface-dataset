@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "anerjy/Spark-X2.6-4B-4bit-mlx",
+  "slug": "anerjy-spark-x2-6-4b-4bit-mlx",
+  "author": "anerjy",
+  "url": "https://huggingface.co/anerjy/Spark-X2.6-4B-4bit-mlx",
+  "created_at": "2026-10-25T19:44:13.000Z",
+  "updated_at": "2026-10-25T19:44:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "spark2_5",
+    "text-generation",
+    "custom_code",
+    "base_model:XHToken/Spark-X2.6-4B",
+    "base_model:quantized:XHToken/Spark-X2.6-4B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4112079360,
+  "parameters_human": "4.11B",
+  "storage_bytes": 2315507460,
+  "storage_human": "2.3 GB",
+  "base_model": "XHToken/Spark-X2.6-4B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "anerjy/Spark-X2.6-4B-4bit-mlx · Hugging Face",
+      "url": "https://huggingface.co/anerjy/Spark-X2.6-4B-4bit-mlx",
+      "snippet": "MLX 4-bit (affine, group size 64; head-wise attention gate kept in bf16) weights of XHToken/Spark-X2.6-4B, redistributed unchanged from the community conversion abenzerps/Spark-X2.6-4B-MLX-4bit (model.safetensors SHA-256 matches its SHA256SUMS.txt). Only the six files an on-device loader needs are included."
+    },
+    {
+      "title": "abenzerps/Spark-X2.6-4B-MLX-4bit · Hugging Face",
+      "url": "https://huggingface.co/abenzerps/Spark-X2.6-4B-MLX-4bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - XHToken/Spark-X2.6: Spark-x2.6 open model series. Pushing the ...",
+      "url": "https://github.com/XHToken/Spark-X2.6",
+      "snippet": "A little over a month has passed since Spark-X2.5. In the rapidly evolving world of AI agents, that is enough time to rethink, refine, and move the frontier forward. Building on the Spark-X2.5-4B, we introduce Spark-X2.6-4B, the latest generation of our compact, general-purpose language models for on-device deployment. Spark-X2.6-4B retains exactly the same architecture as Spark-X2.5-4B ..."
+    },
+    {
+      "title": "SparkLLM/Spark-X2.6-4B - ollama.com",
+      "url": "https://ollama.com/SparkLLM/Spark-X2.6-4B",
+      "snippet": "Introduction A little over a month has passed since Spark-X2.5. In the rapidly evolving world of AI agents, that is enough time to rethink, refine, and move the frontier forward. Building on the Spark-X2.5-4B, we introduce Spark-X2.6-4B, the latest generation of our compact, general-purpose language models for on-device deployment."
+    },
+    {
+      "title": "Spark-X2.6-4B · Models",
+      "url": "https://www.modelscope.cn/models/XHToken/Spark-X2.6-4B",
+      "snippet": "Introduction A little over a month has passed since Spark-X2.5. In the rapidly evolving world of AI agents, that is enough time to rethink, refine, and move the frontier forward. Building on the Spark-X2.5-4B, we introduce Spark-X2.6-4B, the latest generation of our compact, general-purpose language models for on-device deployment. Spark-X2.6-4B retains exactly the same architecture as Spark ..."
+    }
+  ]
+}

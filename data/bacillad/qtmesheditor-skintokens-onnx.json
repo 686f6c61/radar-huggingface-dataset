@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "bacillad/QtMeshEditor-skintokens-onnx",
+  "slug": "bacillad-qtmesheditor-skintokens-onnx",
+  "author": "bacillad",
+  "url": "https://huggingface.co/bacillad/QtMeshEditor-skintokens-onnx",
+  "created_at": "2026-10-25T11:18:28.000Z",
+  "updated_at": "2026-10-25T11:18:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "other",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "skinning",
+    "skin-weights",
+    "rigging",
+    "3d",
+    "qtmesheditor",
+    "other",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2296760866,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fernandotonon/QtMeshEditor-skintokens-onnx · Hugging Face",
+      "url": "https://huggingface.co/fernandotonon/QtMeshEditor-skintokens-onnx",
+      "snippet": "All credit for the original weights goes to VAST-AI-Research. Exported for QtMeshEditor (issue #819), where it is the default skinner (qtmesh skin, the GUI \"Compute Skin Weights\" dialog, the rig→skin chain, and the compute_skin_weights MCP tool), running locally via ONNX Runtime with a geodesic-voxel fallback."
+    },
+    {
+      "title": "fernandotonon/QtMeshEditor-models · Hugging Face",
+      "url": "https://huggingface.co/fernandotonon/QtMeshEditor-models",
+      "snippet": "fernandotonon / QtMeshEditor-models like 0 ONNX pbr texture normal-map qtmesheditor License:cc0-1.0 Model card FilesFiles and versions xet Community Copy to bucket new QtMeshEditor — AI models PBR map synthesis (issue #404)"
+    },
+    {
+      "title": "GitHub - fernandotonon/QtMeshEditor: Free 3D asset tool for indie game ...",
+      "url": "https://github.com/fernandotonon/QtMeshEditor",
+      "snippet": "Automate your 3D asset pipeline — scan, validate, convert, fix, and merge 3D assets with GUI + CLI + CI/CD support. Open 3D files from your OS — after install, double-click .fbx, .glb, .gltf, .obj, .dae, .stl, .ply, .mesh, and PS1 .rsd /.tmd in Finder, Explorer, or your Linux file manager (or use Open With). QtMeshEditor loads the model in the running window; a second launch focuses the ..."
+    },
+    {
+      "title": "GitHub - VAST-AI-Research/SkinTokens: SkinTokens: A Learned Compact ...",
+      "url": "https://github.com/VAST-AI-Research/SkinTokens",
+      "snippet": "SkinTokens is a learned, compact, and discrete representation for skinning weights. Built on this representation, TokenRig is a unified autoregressive framework that models the entire rig, i.e., skeleton and skinning weights, as a single token sequence. Given an input 3D mesh, it generates a ..."
+    },
+    {
+      "title": "ONNX Runtime | Models",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    }
+  ]
+}

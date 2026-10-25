@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "DevQuasar/MiniMaxAI.MiniMax-M3.1-Flash-GGUF",
+  "slug": "devquasar-minimaxai-minimax-m3-1-flash-gguf",
+  "author": "DevQuasar",
+  "url": "https://huggingface.co/DevQuasar/MiniMaxAI.MiniMax-M3.1-Flash-GGUF",
+  "created_at": "2026-10-25T17:38:15.000Z",
+  "updated_at": "2026-10-25T17:38:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "image-text-to-text",
+    "base_model:MiniMaxAI/MiniMax-M3.1-Flash",
+    "base_model:quantized:MiniMaxAI/MiniMax-M3.1-Flash",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 865567232,
+  "parameters_human": "865.6M",
+  "storage_bytes": 1732284000,
+  "storage_human": "1.7 GB",
+  "base_model": "MiniMaxAI/MiniMax-M3.1-Flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "minimax-m3.1-flash Model by Minimaxai | NVIDIA NIM",
+      "url": "https://build.nvidia.com/minimaxai/minimax-m3.1-flash",
+      "snippet": "MiniMax-M3.1-Flash is a native multimodal mixture-of-experts model for coding, agentic workflows, computer use, and cybersecurity."
+    },
+    {
+      "title": "MiniMaxAI/MiniMax-M3.1-Flash at main - Hugging Face",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash/tree/main",
+      "snippet": "Instructions to use MiniMaxAI/MiniMax-M3.1-Flash with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use MiniMaxAI/MiniMax-M3.1-Flash with Transformers:"
+    },
+    {
+      "title": "minimax-m3.1-flash",
+      "url": "https://ollama.com/library/minimax-m3.1-flash",
+      "snippet": "As a next-generation Flash model, M3.1 Flash delivers a generational leap in agentic tasks, coding, Computer Use and cybersecurity, while making online inference nearly three times faster and reducing usage costs by 70%."
+    },
+    {
+      "title": "minimax-m3.1-flash · New model · AI Tracker",
+      "url": "https://live.aitracker.bot/minimax-m3.1-flash",
+      "snippet": "New model: minimax-m3.1-flash by MiniMax. Spotted in MiniMax official API models on Oct 19, 2026 by AI Tracker."
+    },
+    {
+      "title": "MiniMax M3.1 Flash: Redefining Agent Performance and Cost",
+      "url": "https://www.minimax.io/blog/minimax-m31f",
+      "snippet": "Today, we officially roll out MiniMax M3.1 Flash. As a next-generation Flash model, M3.1 Flash delivers a generational leap in agentic tasks, coding, Computer Use and cybersecurity, while making online inference nearly three times faster and reducing usage costs by 70%."
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "eventdata-utd/ConfliBERT-2-base",
+  "slug": "eventdata-utd-conflibert-2-base",
+  "author": "eventdata-utd",
+  "url": "https://huggingface.co/eventdata-utd/ConfliBERT-2-base",
+  "created_at": "2026-10-25T11:12:00.000Z",
+  "updated_at": "2026-10-25T11:35:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "fill-mask",
+    "conflict",
+    "political-violence",
+    "event-data",
+    "political-science",
+    "domain-adaptation",
+    "long-context",
+    "en",
+    "base_model:answerdotai/ModernBERT-base",
+    "base_model:finetune:answerdotai/ModernBERT-base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149655232,
+  "parameters_human": "149.7M",
+  "storage_bytes": 598635032,
+  "storage_human": "599 MB",
+  "base_model": "answerdotai/ModernBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "UTD Event Data - The University of Texas at Dallas",
+      "url": "https://eventdata.utdallas.edu/",
+      "snippet": "This project relies on recent advances in artificial intelligence (AI) and large language models (LLM) to address that problem, and builds on earlier NSF efforts that created a publicly available large language model to study inter- and intra-state conflict, called ConfliBERT (Hu et al., 2022)."
+    },
+    {
+      "title": "eventdata-utd (eventdata-utd) - Hugging Face",
+      "url": "https://huggingface.co/eventdata-utd",
+      "snippet": "To help advance research in political science, we introduce ConfliBERT, a domain-specific pre-trained language model for conflict and political violence. We first gather a large domain-specific text corpus for language modeling from various sources. We then build ConfliBERT using two approaches: pre-training from scratch and continual pre-training."
+    },
+    {
+      "title": "eventdata-utd (eventdata-utd) - Hugging Face",
+      "url": "https://huggingface.co/eventdata-utd/models",
+      "snippet": "AI & ML interests . foreign languages, politics, conflict data, BERT. Team members 7. eventdata-utd &#x27;s models 29. Sort: Recently updated"
+    },
+    {
+      "title": "GitHub - eventdata/ConfliBERT: ConfliBERT: A Pre-trained Language Model ...",
+      "url": "https://github.com/eventdata/ConfliBERT/tree/main",
+      "snippet": "Not sure where to start and why a research scholar would use ConfliBERT? Check our Installation Decision Workflow to find the best path for your experience level and needs. - Try ConfliBERT directly in your browser with no installation required Cloud GUI - Access through our hosted web interface ..."
+    },
+    {
+      "title": "eventdata - GitHub",
+      "url": "https://github.com/eventdata",
+      "snippet": "ConfliBERT_lifecycle Public This repository documents the process and technical elements related to developing ConfliBERT models, a set of domain-specific Large Language Model (LLM) specialized on political conflict and violence in different languages."
+    }
+  ]
+}

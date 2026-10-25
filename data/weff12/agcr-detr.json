@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "WEFF12/AGCR-DETR",
+  "slug": "weff12-agcr-detr",
+  "author": "WEFF12",
+  "url": "https://huggingface.co/WEFF12/AGCR-DETR",
+  "created_at": "2026-10-25T11:55:24.000Z",
+  "updated_at": "2026-10-25T11:56:05.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "object-detection",
+    "rt-detr",
+    "pytorch",
+    "code-only",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Tracker & Pricing Comparison | TensorFeed.ai",
+      "url": "https://tensorfeed.ai/models",
+      "snippet": "Track the latest AI model releases, compare pricing across providers, and explore benchmark leaderboards. Updated daily."
+    },
+    {
+      "title": "Malicious AI on the Dark Web | WormGPT, FraudGPT & More",
+      "url": "https://www.dexpose.io/malicious-ai-on-the-dark-web/",
+      "snippet": "WormGPT, FraudGPT & other malicious AI models are sold on the dark web for phishing and fraud. See how they work and how to detect and stop them."
+    },
+    {
+      "title": "Data on AI models | Epoch AI",
+      "url": "https://epoch.ai/data/ai-models",
+      "snippet": "What is a notable model? A notable model meets any of the following criteria: (i) state-of-the-art improvement on a recognized benchmark; (ii) highly cited (over 1000 citations); (iii) historical relevance; (iv) significant use. How was the AI models dataset created?"
+    },
+    {
+      "title": "The AI Model Directory - GitHub",
+      "url": "https://github.com/The-Best-Codes/ai-model-directory",
+      "snippet": "The AI model directory is the most comprehensive, automatically updated list of AI models and their metadata like pricing, context windows, supported features, and more. It currently lists over 22,000 models from over 125 providers. Data is stored as a tree of TOML files under data/providers/, and a flattened data/all.json (and minified data/all.min.json) is generated on every refresh. We&#x27;re ..."
+    },
+    {
+      "title": "Next AI Model — AI Model Release Tracker",
+      "url": "https://www.nextaimodel.com/",
+      "snippet": "Free tracker of every AI model release from OpenAI, Google, Anthropic, xAI, Meta, DeepSeek and more: what each model changed, and which lines are due next."
+    }
+  ]
+}

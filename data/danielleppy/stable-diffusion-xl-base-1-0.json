@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "danielleppy/stable-diffusion-xl-base-1.0",
+  "slug": "danielleppy-stable-diffusion-xl-base-1-0",
+  "author": "danielleppy",
+  "url": "https://huggingface.co/danielleppy/stable-diffusion-xl-base-1.0",
+  "created_at": "2026-10-25T17:36:33.000Z",
+  "updated_at": "2026-10-25T17:36:33.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "onnx",
+    "safetensors",
+    "text-to-image",
+    "stable-diffusion",
+    "arxiv:2307.01952",
+    "arxiv:2211.01324",
+    "arxiv:2108.01073",
+    "arxiv:2112.10752",
+    "license:openrail++",
+    "endpoints_compatible",
+    "diffusers:StableDiffusionXLPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2567463684,
+  "parameters_human": "2.57B",
+  "storage_bytes": 76909352585,
+  "storage_human": "76.9 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hachishaku Hachiwa Keraku Meguri - Hentai Haven",
+      "url": "https://hentaihaven.com/video/hachishaku-hachiwa-keraku-meguri/",
+      "snippet": "Based on the erotic manga by Jyoka. Hachishaku-sama is the name of a woman who has a very particular legend. She went on to …"
+    },
+    {
+      "title": "Hachishaku Hachiwa Keraku Meguri: Igyou Kaikitan - Hentai tv",
+      "url": "https://hentai.tv/hentai/hachishaku-hachiwa-keraku-meguri-igyou-kaikitan",
+      "snippet": "Sep 22, 2023 · All characters depicted are fictional and over 18 years of age. This site is intended for adult audiences only."
+    },
+    {
+      "title": "Hachishaku Hachiwa Keraku Meguri: Igyou Kaikitan - Uncensored Hentai",
+      "url": "https://uncensoredhentai.xxx/watch/hachishaku-hachiwa-keraku-meguri-igyou-kaikitan/",
+      "snippet": "Aug 1, 2022 · Based on the erotic manga by Jyoka."
+    },
+    {
+      "title": "Hachishaku Hachiwa Keraku Meguri - Igyou Kaikitan » nhentai",
+      "url": "https://nhentai.net/g/378412/",
+      "snippet": "Oct 31, 2021 · Read and download Hachishaku Hachiwa Keraku Meguri - Igyou Kaikitan, a hentai manga by jyoka for free on nhentai."
+    },
+    {
+      "title": "Hachishaku Hachiwa Keraku Meguri: Igyou Kaikitan Episode 2 - Hentai …",
+      "url": "https://hentaihaven.co/watch/hachishaku-hachiwa-keraku-meguri-igyou-kaikitan-episode-2/",
+      "snippet": "In the pouring rain, a taxi driver lets a drenched man aboard her cab. The man looks at the tall taxi driver and suggests they tell scary …"
+    }
+  ]
+}

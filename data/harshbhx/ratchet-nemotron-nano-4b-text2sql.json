@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "harshbhx/ratchet-nemotron-nano-4b-text2sql",
+  "slug": "harshbhx-ratchet-nemotron-nano-4b-text2sql",
+  "author": "harshbhx",
+  "url": "https://huggingface.co/harshbhx/ratchet-nemotron-nano-4b-text2sql",
+  "created_at": "2026-10-23T19:58:29.000Z",
+  "updated_at": "2026-10-25T13:33:57.000Z",
+  "license": "nvidia-nemotron-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "text-to-sql",
+    "sqlite",
+    "distillation",
+    "nemotron",
+    "ratchet",
+    "open-teacher",
+    "text-generation",
+    "en",
+    "dataset:harshbhx/ratchet-text2sql-synthetic",
+    "dataset:harshbhx/ratchet-text2sql-exams",
+    "base_model:nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16",
+    "base_model:adapter:nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 32,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 81434581,
+  "storage_human": "81 MB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text generation",
+      "dataset": "Ratchet text-to-SQL exam 1 (172 questions)",
+      "metric": "Strict exact-rows accuracy (query returns the reference's rows), %",
+      "value": 39
+    },
+    {
+      "task": "Text generation",
+      "dataset": "Ratchet text-to-SQL exam 2 (200 questions)",
+      "metric": "Strict exact-rows accuracy (query returns the reference's rows), %",
+      "value": 33
+    }
+  ],
+  "sources": [
+    {
+      "title": "JDFirstClass's Porn Videos | Pornhub",
+      "url": "https://www.pornhub.com/model/jdfirstclass",
+      "snippet": "Check out the best videos, photos, gifs and playlists from amateur model JDFirstClass. Browse through the content he uploaded …"
+    },
+    {
+      "title": "Free thefirstclassjd (145) Porn Videos - Thothub",
+      "url": "https://thothub.to/tags/thefirstclassjd/",
+      "snippet": "Watch 145 thefirstclassjd porn videos."
+    },
+    {
+      "title": "Newest firstclassjd Porn Videos - PornSlash",
+      "url": "https://www.pornslash.com/cat/firstclassjd?sort=date",
+      "snippet": "Watch best firstclassjd porn videos for free in PornSlash"
+    },
+    {
+      "title": "FirstClassJD Playlist - HD Porn Videos - SpankBang",
+      "url": "https://spankbang.com/6uh41/playlist/firstclassjd/",
+      "snippet": "Watch FirstClassJD playlist for free on SpankBang - 226 movies and sexy clips. Play trending and hottest FirstClassJD movies."
+    },
+    {
+      "title": "Free firstclassjd (152) Porn Videos - Thothub",
+      "url": "https://thothub.to/tags/firstclassjd/",
+      "snippet": "Watch 152 firstclassjd porn videos."
+    }
+  ]
+}

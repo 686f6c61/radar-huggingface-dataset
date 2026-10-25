@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "pratikgx/Nanbeige4.3-33B-MLX-4bit",
+  "slug": "pratikgx-nanbeige4-3-33b-mlx-4bit",
+  "author": "pratikgx",
+  "url": "https://huggingface.co/pratikgx/Nanbeige4.3-33B-MLX-4bit",
+  "created_at": "2026-10-25T19:29:45.000Z",
+  "updated_at": "2026-10-25T19:32:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "llama",
+    "nanbeige",
+    "4-bit",
+    "apple-silicon",
+    "text-generation",
+    "conversational",
+    "base_model:Nanbeige/Nanbeige4.3-33B",
+    "base_model:quantized:Nanbeige/Nanbeige4.3-33B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33118977024,
+  "parameters_human": "33.12B",
+  "storage_bytes": 18649095752,
+  "storage_human": "18.6 GB",
+  "base_model": "Nanbeige/Nanbeige4.3-33B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Omar Sy, Louis Leterrier, Thomas Benski Launch Production Company …",
+      "url": "https://variety.com/2024/film/global/lupin-omar-sy-louis-leterrier-thomas-benski-production-company-carrousel-studios-1235941996/",
+      "snippet": "Mar 15, 2024 · 'Lupin' star Omar Sy, director Louis Leterrier and producer Thomas Benski have launched Carrousel Studios, a film …"
+    },
+    {
+      "title": "Le dernier fabricant de carrousels en France est à Clairvaux-les-Lacs",
+      "url": "https://www.leprogres.fr/economie/2024/09/30/le-dernier-fabricant-de-carrousels-en-france-est-a-clairvaux-les-lacs",
+      "snippet": "Sep 30, 2024 · Dans cette série, Le Progrès met en avant des artisans locaux au savoir-faire unique. Dans ce cinquième épisode, …"
+    },
+    {
+      "title": "NWN Carousel Company Profile - Office Locations, Competitors",
+      "url": "https://craft.co/carousel-industries",
+      "snippet": "NWN Carousel (also known as Carousel Industries of North America) is a company that provides cloud communications services. It …"
+    },
+    {
+      "title": "Carousels | Barrango, MFG",
+      "url": "https://barrango.com/carousels/",
+      "snippet": "Carousels or individual pieces of carousel art are available. Whether you desire a complete machine, replicas of 19 th century …"
+    },
+    {
+      "title": "Carrousel - LinkedIn",
+      "url": "https://fr.linkedin.com/company/carrousel-maison-de-production",
+      "snippet": "Carrousel | 91 abonnés sur LinkedIn. Digital stories makers | L&#39;équipe Carrousel imagine et réalise des formats innovants et …"
+    }
+  ]
+}

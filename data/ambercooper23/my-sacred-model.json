@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "AmberCooper23/my-sacred-model",
+  "slug": "ambercooper23-my-sacred-model",
+  "author": "AmberCooper23",
+  "url": "https://huggingface.co/AmberCooper23/my-sacred-model",
+  "created_at": "2026-10-25T19:25:40.000Z",
+  "updated_at": "2026-10-25T19:27:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 76961152,
+  "parameters_human": "77.0M",
+  "storage_bytes": 307867048,
+  "storage_human": "308 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - AmberCooper23/DivineFraming_HOSAG",
+      "url": "https://github.com/AmberCooper23/DivineFraming_HOSAG",
+      "snippet": "Runs a fine-tuned google/flan-t5-small model through a FastAPI backend with a React/Vite chat frontend."
+    },
+    {
+      "title": "Secrets | Create Custom AI Companions",
+      "url": "https://www.secrets.ai/custom",
+      "snippet": "Design and personalize your own AI companions - create unique personalities, customize appearances, and enjoy intimate conversations tailored to your preferences."
+    },
+    {
+      "title": "PixAI Model Market | 1.8M+ AI Art Models and LoRAs",
+      "url": "https://pixai.art/market",
+      "snippet": "Open marketplace for AI art models. Browse 1.8M+ user-trained models and LoRAs to generate anime, realistic and fantasy art free on PixAI."
+    },
+    {
+      "title": "hitem3d | AI 3D Model Generator",
+      "url": "https://hitem3d.pro/",
+      "snippet": "Hitem3d is an all-in-one AI 3D creation platform that turns text or images into detailed, editable, maker-ready 3D models. Create figurines, gifts, game assets, product concepts, and more from a simple starting point."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, DeepSeek, Qwen, Mistral, Z.ai, Meta, and important open-weight model families."
+    }
+  ]
+}

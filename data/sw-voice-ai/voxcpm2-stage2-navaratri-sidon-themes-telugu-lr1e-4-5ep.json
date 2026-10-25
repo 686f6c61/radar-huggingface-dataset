@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "sw-voice-ai/voxcpm2-stage2-navaratri-sidon-themes-telugu-lr1e-4-5ep",
+  "slug": "sw-voice-ai-voxcpm2-stage2-navaratri-sidon-themes-telugu-lr1e-4-5ep",
+  "author": "sw-voice-ai",
+  "url": "https://huggingface.co/sw-voice-ai/voxcpm2-stage2-navaratri-sidon-themes-telugu-lr1e-4-5ep",
+  "created_at": "2026-10-25T19:56:12.000Z",
+  "updated_at": "2026-10-25T19:57:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "te",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "text-to-speech",
+    "te",
+    "en",
+    "base_model:sw-voice-ai/voxcpm2-telugu-stage1b-english-sidon-lr1e-4-10ep",
+    "base_model:finetune:sw-voice-ai/voxcpm2-telugu-stage1b-english-sidon-lr1e-4-10ep",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2290004544,
+  "parameters_human": "2.29B",
+  "storage_bytes": 9537040314,
+  "storage_human": "9.5 GB",
+  "base_model": "sw-voice-ai/voxcpm2-telugu-stage1b-english-sidon-lr1e-4-10ep",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Ha3MrX/InstaBrute: InstaBrute Two Ways to Brute-force ...",
+      "url": "https://github.com/Ha3MrX/InstaBrute",
+      "snippet": "Instagram contained two distinct vulnerabilities that allowed an attacker to brute-force"
+    },
+    {
+      "title": "GitHub - stechdrive/Insta360Convert-GUI: GUI tool to extract multiple ...",
+      "url": "https://github.com/stechdrive/Insta360Convert-GUI",
+      "snippet": "GUI tool to extract multiple perspective views (pitch, yaw, FOV) from 360° equirectangular videos as MP4 clips or image sequences, …"
+    },
+    {
+      "title": "大疆，gopro，insta360怎么选？ - 知乎",
+      "url": "https://www.zhihu.com/question/609212308",
+      "snippet": "Jun 28, 2023 · 其实主要看自己需求，比如是要全景还是不是全景的，比如insta 360 配备了是前后两个鱼眼镜头，录出来的视频就是 …"
+    },
+    {
+      "title": "insta_hack.py · GitHub",
+      "url": "https://gist.github.com/eteamin/78a7753e2555275c03bab199c8cc7022",
+      "snippet": "Sep 21, 2017 · GitHub Gist: instantly share code, notes, and snippets."
+    },
+    {
+      "title": "insta 360X5跟大疆的pocket 3有什么不同? - 知乎",
+      "url": "https://www.zhihu.com/question/1900410312873738986",
+      "snippet": "insta 360X5跟大疆的pocket 3有什么不同? 看见美国新乡的人凌晨三点排队买insta 360X5，但是，没听说过他们排队买大疆的pocket …"
+    }
+  ]
+}

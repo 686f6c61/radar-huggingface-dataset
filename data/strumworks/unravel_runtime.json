@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "StrumWorks/Unravel_Runtime",
+  "slug": "strumworks-unravel_runtime",
+  "author": "StrumWorks",
+  "url": "https://huggingface.co/StrumWorks/Unravel_Runtime",
+  "created_at": "2026-10-25T11:48:09.000Z",
+  "updated_at": "2026-10-25T12:06:53.000Z",
+  "license": "unravel-mixed-licenses",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "audio-source-separation",
+    "unravel",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2962840526,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "UnravelAI/how_unravel_works (1).md at main - GitHub",
+      "url": "https://github.com/EruditeCoder108/UnravelAI/blob/main/how_unravel_works%20(1).md",
+      "snippet": "AI bug finder and code analyzer . Contribute to EruditeCoder108/UnravelAI development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - NK-Works/UnravelAI",
+      "url": "https://github.com/NK-Works/UnravelAI",
+      "snippet": "Python: Backend logic and AI models. Streamlit: For the frontend UI. Audio Recorder Streamlit: Used for voice input functionality. Pillow (PIL): Image handling and analysis. Gemini API: AI language model for generating responses. Other Python Libraries: os for file handling tempfile for creating temporary files streamlit_option_menu for the sidebar menu streamlit_util for utility functions ..."
+    },
+    {
+      "title": "Steam Workshop::AI Services",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3039800187",
+      "snippet": "Dive into the fascinating world of advanced AI technology for Stormworks, a game-changing expansion that introduces a suite of cutting-edge artificial intelligence tools and components. Whether you&#x27;re a seasoned engineer or a newcomer to Stormworks, this collection will revolutionize the way you design and manage your vehicles and missions."
+    },
+    {
+      "title": "Steam Workshop::AI Vehicles converted for Player use",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2671897260",
+      "snippet": "Steam Workshop: Stormworks: Build and Rescue. This is a collection of ripped AI vehicles from the game, slightly adjusted where needed to make them work for the player use instead. Ever wanted to try to steer that medical ship? now you can. H"
+    },
+    {
+      "title": "GitHub - EruditeCoder108/UnravelAI: AI bug finder and code analyzer",
+      "url": "https://github.com/EruditeCoder108/UnravelAI",
+      "snippet": "AI bug finder and code analyzer . Contribute to EruditeCoder108/UnravelAI development by creating an account on GitHub."
+    }
+  ]
+}

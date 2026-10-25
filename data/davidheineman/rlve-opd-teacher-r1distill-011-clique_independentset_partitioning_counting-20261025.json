@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "davidheineman/rlve-opd-teacher-R1Distill-011-Clique_IndependentSet_Partitioning_Counting-20261025",
+  "slug": "davidheineman-rlve-opd-teacher-r1distill-011-clique_independentset_partitioning_counting-20261025",
+  "author": "davidheineman",
+  "url": "https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-011-Clique_IndependentSet_Partitioning_Counting-20261025",
+  "created_at": "2026-10-25T17:26:24.000Z",
+  "updated_at": "2026-10-25T17:27:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "rlve",
+    "data-scaling",
+    "opd-teacher",
+    "conversational",
+    "base_model:deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "base_model:finetune:deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 3554214720,
+  "storage_human": "3.6 GB",
+  "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "davidheineman/rlve-opd-teacher-R1Distill-011-Clique_IndependentSet ...",
+      "url": "https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-011-Clique_IndependentSet_Partitioning_Counting-20261025",
+      "snippet": "Instructions to use davidheineman/rlve-opd-teacher-R1Distill-011-Clique_IndependentSet_Partitioning_Counting-20261025 with libraries, inference providers, notebooks, and local apps."
+    },
+    {
+      "title": "davidheineman/opd-teacher-R1Distill-CRT-step149 · Hugging Face",
+      "url": "https://huggingface.co/davidheineman/opd-teacher-R1Distill-CRT-step149",
+      "snippet": "DeepSeek-R1-Distill-Qwen-1.5B trained for 150 steps on difficulty-0 CRT prompts, with four prompts and 16 rollouts per step. Training did not use DAPO prompt filtering. These are the final model weights at step 149 for environment-specific on-policy distillation. Training project: david-heineman/rl ..."
+    },
+    {
+      "title": "davidheineman/opd-teacher-Q2.5I-Differentiate-step149",
+      "url": "https://featherless.ai/models/davidheineman/opd-teacher-Q2.5I-Differentiate-step149",
+      "snippet": "This suggests a strong proficiency in tasks related to differentiation, likely within a simulated or structured problem-solving context. Experimental Purpose: The model is part of a larger 32-environment on-policy distillation experiment, highlighting its role in research and development for RL-driven language model applications."
+    },
+    {
+      "title": "davidheineman/opd-teacher-Q2.5I-FractionalProgramming-step149",
+      "url": "https://featherless.ai/models/davidheineman/opd-teacher-Q2.5I-FractionalProgramming-step149",
+      "snippet": "Model Overview This model, opd-teacher-Q2.5I-FractionalProgramming-step149, is a specialized Qwen2.5-1.5B-Instruct teacher model developed by davidheineman. It features 1.5 billion parameters and was trained using Reinforcement Learning from Value Estimates (RLVE) with the GRPO algorithm. Key Characteristics Base Model: Built upon Qwen/Qwen2.5-1.5B-Instruct. Training: Underwent 150 updates ..."
+    },
+    {
+      "title": "opd-teacher-Q2.5I-FractionalProgramming-step149 - friendli.ai",
+      "url": "https://friendli.ai/models/davidheineman/opd-teacher-Q2.5I-FractionalProgramming-step149",
+      "snippet": "opd-teacher-Q2.5I-FractionalProgramming-step149 This is a Qwen2.5-1.5B-Instruct teacher trained with RLVE on the FractionalProgramming environment at difficulty 0. It is intended for the 32-environment on-policy distillation experiment."
+    }
+  ]
+}

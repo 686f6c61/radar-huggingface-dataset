@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Kaisye/zerotts-int8",
+  "slug": "kaisye-zerotts-int8",
+  "author": "Kaisye",
+  "url": "https://huggingface.co/Kaisye/zerotts-int8",
+  "created_at": "2026-10-25T19:30:33.000Z",
+  "updated_at": "2026-10-25T19:30:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - zeroweight-ai/ZeroTTS: Fast, lightweight zero-shot Vietnamese ...",
+      "url": "https://github.com/zeroweight-ai/ZeroTTS",
+      "snippet": "Fast, lightweight zero-shot Vietnamese text-to-speech (TTS) that runs in real time on CPU - zeroweight-ai/ZeroTTS"
+    },
+    {
+      "title": "zeroweight-ai/ZeroTTS · Hugging Face",
+      "url": "https://huggingface.co/zeroweight-ai/ZeroTTS",
+      "snippet": "zeroweight-ai / ZeroTTS like 0 Follow ZeroWeight AI 1 Text-to-Speech ONNX Vietnamese tts vietnamese onnxruntime zero-shot speech-synthesis arxiv:2602.10934 License:mit Model card FilesFiles and versions xet Community Copy to bucket new ZeroTTS Benchmarks Voices, and voice cloning Repository layout Intended use and limitations Credits License"
+    },
+    {
+      "title": "zeroweight-ai/ZeroTTS at main - Hugging Face",
+      "url": "https://huggingface.co/zeroweight-ai/ZeroTTS/tree/main",
+      "snippet": "zeroweight-ai / ZeroTTS Like 5 Follow ZeroWeight AI 3 Text-to-Speech ONNX Vietnamese tts vietnamese onnxruntime zero-shot speech-synthesis voice-cloning vietnamese-tts tieng-viet Eval Results (legacy) arxiv:2602.10934 License:mit Model card FilesFiles and versions xet Community 20 Copy to bucket new main ZeroTTS 910 MB Ctrl+K Ctrl+K 2 ..."
+    },
+    {
+      "title": "zerotts · PyPI",
+      "url": "https://pypi.org/project/zerotts/",
+      "snippet": "ZeroTTS&#x27;s time-to-first-audio comes from its real streaming path — first audio frame, not first full utterance. The three baselines have no working CPU streaming path, so their TTFA is the time to the complete utterance."
+    },
+    {
+      "title": "GitHub - hadeskers/zerotts: Fast, lightweight zero-shot Vietnamese text ...",
+      "url": "https://github.com/hadeskers/zerotts/tree/main/",
+      "snippet": "Vietnamese Zero-Shot Text-to-Speech (TTS) with real-time streaming and voice cloning from seconds of audio. Fast, natural, and optimised for CPU inference. The most accurate open Vietnamese TTS we know of — 4× fewer word errors than the next open model, and it runs faster than real time on a laptop CPU."
+    }
+  ]
+}

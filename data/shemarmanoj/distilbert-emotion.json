@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "shemarmanoj/distilbert-emotion",
+  "slug": "shemarmanoj-distilbert-emotion",
+  "author": "shemarmanoj",
+  "url": "https://huggingface.co/shemarmanoj/distilbert-emotion",
+  "created_at": "2026-10-25T14:27:57.000Z",
+  "updated_at": "2026-10-25T15:00:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66958086,
+  "parameters_human": "67.0M",
+  "storage_bytes": 535694945,
+  "storage_human": "536 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rule 34 / mika_ (genshin_impact) gay",
+      "url": "https://rule34.xxx/index.php?page=post&s=list&tags=mika_%28genshin_impact%29+gay&pid=42",
+      "snippet": "Rule 34 - If it exists, there is porn of it. We have pokemon, my little pony, Other hentai, whatever you want.Read more"
+    },
+    {
+      "title": "Rule 34 / tartaglia_ (genshin_impact) gay",
+      "url": "https://rule34.xxx/index.php?page=post&s=list&tags=tartaglia_%28genshin_impact%29+gay+",
+      "snippet": "Rule 34 - If it exists, there is porn of it. We have pokemon, my little pony, Other hentai, whatever you want."
+    },
+    {
+      "title": "Genshin Impact - 368 Free Yaoi & BL Doujinshi | PeachComics",
+      "url": "https://peachcomics.com/fandoms/genshin-impact",
+      "snippet": "Read 368 free Genshin Impact yaoi, BL doujinshi & fan comics online. Genshin Impact is a game with a vibrant BL doujinshi …"
+    },
+    {
+      "title": "Zhongli (Genshin Impact) Rule34 Posts (22.3K) | ScrollX",
+      "url": "https://scrollx.org/tag/zhongli_(genshin_impact)",
+      "snippet": "Jul 27, 2026 · Though no one knows where Zhongli is from, he is a master of courtesy and rules. From his seat at Wangsheng …"
+    },
+    {
+      "title": "Aether (Genshin Impact) Rule34 Posts (49.4K) | ScrollX",
+      "url": "https://scrollx.org/tag/aether_(genshin_impact)",
+      "snippet": "Aug 1, 2026 · One of the two possible protagonists in Genshin Impact and the twin brother of Lumine (Genshin Impact). Voiced by …"
+    }
+  ]
+}

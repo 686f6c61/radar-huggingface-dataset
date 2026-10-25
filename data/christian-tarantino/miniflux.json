@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "christian-tarantino/miniflux",
+  "slug": "christian-tarantino-miniflux",
+  "author": "christian-tarantino",
+  "url": "https://huggingface.co/christian-tarantino/miniflux",
+  "created_at": "2026-10-25T20:02:30.000Z",
+  "updated_at": "2026-10-25T20:02:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bienvenue à la Pâtisserie | PATISSERIE CHRISTIAN",
+      "url": "https://www.christian.fr/",
+      "snippet": "La Pâtisserie Christian vous propose ses truffes au chocolat, un véritable délice pour les gourmets. Confectionnées avec un chocolat …"
+    },
+    {
+      "title": "Prénom Christian (garçon) : signification, origine, caractère, saint, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/christian/prenom-2775",
+      "snippet": "Quelle est la signification du prénom Christian ? Christian est dérivé du prénom latin Christianus qui veut dire \"chrétien\" ou \"disciple …"
+    },
+    {
+      "title": "Christian (prénom) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Christian_(pr%C3%A9nom)",
+      "snippet": "Le prénom Christian trouve son origine dans le latin Christianus, qui signifie \"disciple du Christ\" ou \"chrétien\". Ce terme est lui-même …"
+    },
+    {
+      "title": "Prénom Christian : Origine - Caractère - Signification - Etymologie",
+      "url": "https://www.parents.fr/prenoms/christian-37761",
+      "snippet": "Signification et étymologie du prénom Christian La racine du prénom Christian est grecque. Il vient de « kristos », et veut dire « …"
+    },
+    {
+      "title": "Christianisme — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Christianisme",
+      "snippet": "(en) « The 10 Most Christian Countries [archive] », sur therichest.com, 2014 (consulté le 3 novembre 2014). « Jorge Mario Bergoglio …"
+    }
+  ]
+}

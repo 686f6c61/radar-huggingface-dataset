@@ -1,0 +1,130 @@
+{
+  "schema": 1,
+  "id": "Genrius-AI/Qwen3.5-4B-Pingala8-2bit",
+  "slug": "genrius-ai-qwen3-5-4b-pingala8-2bit",
+  "author": "Genrius-AI",
+  "url": "https://huggingface.co/Genrius-AI/Qwen3.5-4B-Pingala8-2bit",
+  "created_at": "2026-10-25T19:35:43.000Z",
+  "updated_at": "2026-10-25T19:37:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "quantization",
+    "2-bit",
+    "llama.cpp",
+    "trellis",
+    "qwen3.5",
+    "qwen3_5",
+    "gated-deltanet",
+    "hybrid-attention",
+    "llm",
+    "local-llm",
+    "model-compression",
+    "low-vram",
+    "on-device",
+    "cuda",
+    "nvidia",
+    "qwen",
+    "quantized",
+    "llama-cpp",
+    "text-generation",
+    "conversational",
+    "qwen3.5-4b",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:quantized:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1696421776,
+  "parameters_human": "1.70B",
+  "storage_bytes": 1511615808,
+  "storage_human": "1.5 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "WikiText-2 (test, context 4096)",
+      "metric": "Perplexity (lower is better)",
+      "value": 10.9693
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "HellaSwag (0-shot, llama-perplexity)",
+      "metric": "Accuracy (%)",
+      "value": 61.9
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "WinoGrande (0-shot, llama-perplexity)",
+      "metric": "Accuracy (%)",
+      "value": 65.19
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "ARC-Easy (0-shot, llama-perplexity)",
+      "metric": "Accuracy (%)",
+      "value": 62.98
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "ARC-Challenge (0-shot, llama-perplexity)",
+      "metric": "Accuracy (%)",
+      "value": 43.48
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "MMLU (0-shot, llama-perplexity)",
+      "metric": "Accuracy (%)",
+      "value": 35.51
+    }
+  ],
+  "sources": [
+    {
+      "title": "GitHub - Genrius-AI/pingala8-llm: Pingala-8: small-state coset trellis ...",
+      "url": "https://github.com/Genrius-AI/pingala8-llm/tree/main/",
+      "snippet": "The models follow their base-model licenses: the Qwen3-4B file is Apache-2.0 (from Qwen3-4B); the Llama-3.1-8B file is under the Llama 3.1 Community License and its Acceptable Use Policy."
+    },
+    {
+      "title": "pingala8-llm/README.md at main · Genrius-AI/pingala8-llm",
+      "url": "https://github.com/Genrius-AI/pingala8-llm/blob/main/README.md",
+      "snippet": "The models follow their base-model licenses: the Qwen3-4B file is Apache-2.0 (from Qwen3-4B); the Llama-3.1-8B file is under the Llama 3.1 Community License and its Acceptable Use Policy."
+    },
+    {
+      "title": "How to Run a 4B LLM Locally on Windows with a Small NVIDIA GPU (3 Steps)",
+      "url": "https://dev.to/genrius_ai/how-to-run-a-4b-llm-locally-on-windows-with-a-small-nvidia-gpu-3-steps-249k",
+      "snippet": "It downloads the two model parts, 4B-csq-vr3-00001-of-00002.gguf and 4B-csq-vr3-00002-of-00002.gguf, from the Genrius-AI/Qwen3-4B-Pingala8-2bit repository on Hugging Face, using the curl.exe built into Windows 10 and 11. A part that is already in models is skipped, which is why later starts are quick."
+    },
+    {
+      "title": "Qwen3.5-4B: The Small AI Model That Thinks, Sees, and Runs on Your ...",
+      "url": "https://firethering.com/qwen3-5-4b-local-ai-model/",
+      "snippet": "Qwen3.5-4B doesn&#x27;t seem to have gotten that memo. Alibaba just dropped Qwen3.5, and the 4B version is the one worth paying attention to. It thinks before it answers, reads images and video, handles 201 languages, and sits on a context window of 262,144 tokens, longer than most models ten times its size."
+    },
+    {
+      "title": "qwen3.5:4b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:4b",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    }
+  ]
+}

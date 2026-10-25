@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/Emolga",
+  "slug": "ryanham1lton-emolga",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/Emolga",
+  "created_at": "2026-10-25T17:27:02.000Z",
+  "updated_at": "2026-10-25T17:27:26.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 144069898,
+  "storage_human": "144 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ryanham1lton (Ryan James Hamilton) - Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 12 hours ago ... published a model about 12 hours ago"
+    },
+    {
+      "title": "emolga - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1922540345699317716",
+      "snippet": "Generate stunning anime, cute, pokemon, emolga anime art with the &#x27;emolga&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Emolga (Pokémon, Pony) - v1.0 - Free AI LORA | Tensor.Art",
+      "url": "https://tensor.art/models/773380278631632514",
+      "snippet": "Download Emolga (Pokémon, Pony) - free LORA Pony AI model on TENSOR. FLYING SQUIRREL, PONYXL, EMOLGA. By ArtyEmolga (OLD)"
+    },
+    {
+      "title": "Emolga (Pokemon) Illustrious XL - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/2023415468810091278",
+      "snippet": "Generate stunning anime art with the &#x27;Emolga (Pokemon) Illustrious XL&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Emolga (Pokemon) - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/25de6404d2c2ec5c8023b8f9b0449637",
+      "snippet": "Meet Emolga (Pokemon) model on SeaArt. Experience free Stable Diffusion models that get you the best AI-generated images using text prompts."
+    }
+  ]
+}

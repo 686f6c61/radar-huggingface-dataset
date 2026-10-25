@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "nav-07/smai-a4-q1-mlp-p0",
+  "slug": "nav-07-smai-a4-q1-mlp-p0",
+  "author": "nav-07",
+  "url": "https://huggingface.co/nav-07/smai-a4-q1-mlp-p0",
+  "created_at": "2026-10-25T14:25:44.000Z",
+  "updated_at": "2026-10-25T14:58:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13962892,
+  "storage_human": "14 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Valeur Liquidative : tout savoir sur la NAV - Finance Héros",
+      "url": "https://finance-heros.fr/valeur-liquidative-nav/",
+      "snippet": "Apr 9, 2025 · La valeur liquidative (ou NAV) est une notion essentielle à connaître pour tout investisseur. En effet, elle détermine le …"
+    },
+    {
+      "title": "Forside privatperson - nav.no",
+      "url": "https://www.nav.no/",
+      "snippet": "Informasjon fra Nav om arbeid, helse og sykdom, familie og barn, pensjon, sosiale tjenester og veiledning, hjelpemidler og …"
+    },
+    {
+      "title": "Passe Navigo : le passe personnel des voyageurs réguliers",
+      "url": "https://www.iledefrance-mobilites.fr/titres-et-tarifs/supports/passe-navigo",
+      "snippet": "Découvrez le passe Navigo, le support personnel pour charger vos forfaits et voyager en Île-de-France en toute simplicité."
+    },
+    {
+      "title": "Net Asset Value : Définition et calcul de la valeur liquidative",
+      "url": "https://finary.com/fr/glossaire/net-asset-value",
+      "snippet": "Jun 6, 2023 · Valeur liquidative (Net Asset Value) La valeur liquidative, également connue sous le nom de Net Asset Value (NAV), …"
+    },
+    {
+      "title": "Min side - nav.no",
+      "url": "https://www.nav.no/min-side",
+      "snippet": "Du finner utbetalinger og svar på meldinger og samtaler du har hatt med Nav. I tillegg vil du finne inngang til tjenester innenfor ulike …"
+    }
+  ]
+}

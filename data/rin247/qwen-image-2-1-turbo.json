@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Rin247/Qwen-Image-2.1-Turbo",
+  "slug": "rin247-qwen-image-2-1-turbo",
+  "author": "Rin247",
+  "url": "https://huggingface.co/Rin247/Qwen-Image-2.1-Turbo",
+  "created_at": "2026-10-25T12:01:00.000Z",
+  "updated_at": "2026-10-25T12:12:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "quantized",
+    "safetensors",
+    "mecha",
+    "weight-only",
+    "diffusers:QwenImage21Pipeline",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 51868540218,
+  "storage_human": "51.9 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

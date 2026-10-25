@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "dongfangshuo/Dongfangshuo-Qwen3.8-27B-NSFW-v2-GGUF",
+  "slug": "dongfangshuo-dongfangshuo-qwen3-8-27b-nsfw-v2-gguf",
+  "author": "dongfangshuo",
+  "url": "https://huggingface.co/dongfangshuo/Dongfangshuo-Qwen3.8-27B-NSFW-v2-GGUF",
+  "created_at": "2026-10-09T14:14:08.000Z",
+  "updated_at": "2026-10-25T12:21:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen",
+    "qwen3.8",
+    "creative-writing",
+    "novel",
+    "nsfw",
+    "roleplay",
+    "ollama",
+    "multimodal",
+    "text-generation",
+    "zh",
+    "base_model:dongfangshuo/Dongfangshuo-Qwen3.8-27B-NSFW",
+    "base_model:quantized:dongfangshuo/Dongfangshuo-Qwen3.8-27B-NSFW",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational",
+    "not-for-all-audiences"
+  ],
+  "likes": 13,
+  "downloads_30d": 22005,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 19347467863,
+  "storage_human": "19.3 GB",
+  "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated, dongfangshuo/Dongfangshuo-Qwen3.8-27B-NSFW",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dongfangshuo/Dongfangshuo-Qwen3.8-27B-NSFW-v2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/dongfangshuo/Dongfangshuo-Qwen3.8-27B-NSFW-v2-GGUF",
+      "snippet": "Qwen3.8-27B v2.0 重训激进版（GGUF 量化版）。深度去公文总结腔、强化人设约束与工笔级微观感官白描。支持 Ollama / LM Studio 一键部署。"
+    },
+    {
+      "title": "dongfangshuo/Dongfangshuo-Qwen3.8-27B-NSFW-GGUF · Hugging Face",
+      "url": "https://huggingface.co/dongfangshuo/Dongfangshuo-Qwen3.8-27B-NSFW-GGUF",
+      "snippet": "Qwen3.8-27B 破限 + R-18 文风深度特化（GGUF 量化版）。附带视觉多模态投影器，支持看图看视频与 Ollama 一键运行。"
+    },
+    {
+      "title": "nancinicky/Dongfangshuo-Qwen3.8-27B-NSFW-v2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/nancinicky/Dongfangshuo-Qwen3.8-27B-NSFW-v2-GGUF",
+      "snippet": "GGUF · Chinese · qwen · qwen3.8 · creative-writing · novel · nsfw · roleplay · ollama · multimodal · conversational · Not-For-All-Audiences · License: apache-2.0 · Model card Files Files and versions · xet Community · Deploy · Copy to bucket new ·"
+    },
+    {
+      "title": "mradermacher/Dongfangshuo-Qwen3.8-27B-NSFW-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Dongfangshuo-Qwen3.8-27B-NSFW-GGUF",
+      "snippet": "GGUF · Chinese · qwen · qwen3.8 · vision · multimodal · nsfw · roleplay · creative-writing · novel · pixiv · uncensored · conversational · Not-For-All-Audiences · License: apache-2.0 · Model card Files Files and versions · xet Community · Deploy · Copy to bucket new ·"
+    },
+    {
+      "title": "mradermacher/Dongfangshuo-Qwen3.8-27B-NSFW-Novel-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Dongfangshuo-Qwen3.8-27B-NSFW-Novel-GGUF",
+      "snippet": "GGUF · Safetensors · Chinese · qwen · qwen3.8 · lora · creative-writing · novel · nsfw · roleplay · ollama · multimodal · conversational · Not-For-All-Audiences · License: apache-2.0 · Model card Files Files and versions · xet Community · Deploy · Copy to bucket new ·"
+    }
+  ]
+}

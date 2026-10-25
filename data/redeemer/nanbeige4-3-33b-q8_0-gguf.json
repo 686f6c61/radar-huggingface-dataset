@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "redeemer/Nanbeige4.3-33B-Q8_0-GGUF",
+  "slug": "redeemer-nanbeige4-3-33b-q8_0-gguf",
+  "author": "redeemer",
+  "url": "https://huggingface.co/redeemer/Nanbeige4.3-33B-Q8_0-GGUF",
+  "created_at": "2026-10-25T17:30:16.000Z",
+  "updated_at": "2026-10-25T17:30:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llm",
+    "nanbeige",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:Nanbeige/Nanbeige4.3-33B",
+    "base_model:quantized:Nanbeige/Nanbeige4.3-33B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Redeemer - Film 2014 - AlloCiné",
+      "url": "https://www.allocine.fr/film/fichefilm_gen_cfilm=227991.html",
+      "snippet": "Redeemer est un film réalisé par Ernesto Díaz Espinoza avec Marko Zaror, Mauricio Diocares. Synopsis : Un ancien tueur à gages …"
+    },
+    {
+      "title": "Redeemer: Enhanced Edition on Steam",
+      "url": "https://store.steampowered.com/app/447290/Redeemer_Enhanced_Edition/",
+      "snippet": "Aug 1, 2017 · Redeemer: Enhanced Edition is a brutal close-quarters brawler. Punch, crush, shoot, and use the environment to …"
+    },
+    {
+      "title": "Redeemer (video game) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Redeemer_(video_game)",
+      "snippet": "Redeemer is a beat em up shooter game, where the player controls a former elite operative Vasily, [5] who is living in a mountain …"
+    },
+    {
+      "title": "Redeemer - Steam Community",
+      "url": "https://steamcommunity.com/app/447290",
+      "snippet": "Redeemer: Enhanced Edition is a brutal close-quarters brawler. Punch, crush, shoot, and use the environment to destroy enemies. …"
+    },
+    {
+      "title": "Redeemer - Star Citizen Wiki",
+      "url": "https://starcitizen.tools/Redeemer",
+      "snippet": "The Redeemer is a gunship developed by Aegis Dynamics. It has been designed as a powerful combat gunship, featuring advanced …"
+    }
+  ]
+}

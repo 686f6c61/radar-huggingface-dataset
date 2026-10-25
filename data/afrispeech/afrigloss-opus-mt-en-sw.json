@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "AfriSpeech/afrigloss-opus-mt-en-sw",
+  "slug": "afrispeech-afrigloss-opus-mt-en-sw",
+  "author": "AfriSpeech",
+  "url": "https://huggingface.co/AfriSpeech/afrigloss-opus-mt-en-sw",
+  "created_at": "2026-10-25T13:43:59.000Z",
+  "updated_at": "2026-10-25T13:44:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "en",
+    "swh"
+  ],
+  "tags": [
+    "safetensors",
+    "marian",
+    "translation",
+    "african-languages",
+    "glossary",
+    "terminology",
+    "opus-mt",
+    "afrigloss-mt",
+    "en",
+    "swh",
+    "dataset:AfriSpeech/africa-corpus",
+    "dataset:AfriSpeech/african-corpus-jw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 74380359,
+  "parameters_human": "74.4M",
+  "storage_bytes": 299189545,
+  "storage_human": "299 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

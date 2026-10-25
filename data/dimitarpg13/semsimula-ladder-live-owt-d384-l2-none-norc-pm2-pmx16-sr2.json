@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "id": "dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc-pm2-pmx16-sr2",
+  "slug": "dimitarpg13-semsimula-ladder-live-owt-d384-l2-none-norc-pm2-pmx16-sr2",
+  "author": "dimitarpg13",
+  "url": "https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc-pm2-pmx16-sr2",
+  "created_at": "2026-10-25T11:47:45.000Z",
+  "updated_at": "2026-10-25T11:49:06.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "research",
+    "semsimula",
+    "conservative-language-model",
+    "scalar-potential",
+    "lagrangian-mechanics",
+    "energy-based-model",
+    "physics-informed",
+    "openwebtext",
+    "mechanism-ablation",
+    "ladder-study",
+    "pre-registered",
+    "live-gradients",
+    "generation-3",
+    "first-vs-second-order",
+    "second-order",
+    "poisson-mode-registers",
+    "matched-token-budget",
+    "fock-space",
+    "parflm",
+    "anisotropic-gaussian-potential",
+    "cfc",
+    "baoab",
+    "fully-conservative",
+    "riemannian-geometry",
+    "riemannian-geodesics",
+    "jacobi-metric",
+    "non-transformer",
+    "attention-free",
+    "constant-memory-inference",
+    "text-generation",
+    "en",
+    "dataset:Skylion007/openwebtext",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 306769489,
+  "storage_human": "307 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "OpenWebText",
+      "metric": "Validation perplexity at block 512, settled (mean of the last three 500-step evals at block 512)",
+      "value": 54.71
+    }
+  ],
+  "sources": [
+    {
+      "title": "iLovePDF | Herramientas PDF online gratis",
+      "url": "https://www.ilovepdf.com/es",
+      "snippet": "iLovePDF es un servicio online para trabajar con archivos PDF completamente gratuito y fácil de usar. ¡Unir, dividir, comprimir y …"
+    },
+    {
+      "title": "iLovePDF | Online PDF tools for PDF lovers",
+      "url": "https://www.ilovepdf.com/",
+      "snippet": "iLovePDF is an online service to work with PDF files completely free and easy to use. Merge PDF, split PDF, compress PDF, office …"
+    },
+    {
+      "title": "iLovePDF | 為PDF愛好者提供的PDF文檔在線轉換工具",
+      "url": "https://www.ilovepdf.com/zh-tw",
+      "snippet": "iLovePDF網站提供PDF文檔的線上轉換服務。它完全免費，而且使用方便。無論是合併PDF、拆分PDF、壓縮PDF、Office文檔轉換 …"
+    },
+    {
+      "title": "iLovePDF | Online-Tools für PDF-Liebhaber",
+      "url": "https://www.ilovepdf.com/de",
+      "snippet": "iLovePDF ist ein kostenloser und leicht zu bedienender Service, mit welchem PDF-Dateien bearbeitet werden können. PDFs …"
+    },
+    {
+      "title": "Convertire PDF in EXCEL. Converti PDF in XLS online - iLovePDF",
+      "url": "https://www.ilovepdf.com/it/pdf_in_excel",
+      "snippet": "Trasforma automaticamente tutti i dati in tabelle PDF a tabelle EXCEL modificabili. PDF in Excel online e gratuito"
+    }
+  ]
+}

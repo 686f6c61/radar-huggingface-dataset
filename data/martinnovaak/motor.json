@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "martinnovaak/motor",
+  "slug": "martinnovaak-motor",
+  "author": "martinnovaak",
+  "url": "https://huggingface.co/martinnovaak/motor",
+  "created_at": "2026-10-25T17:00:42.000Z",
+  "updated_at": "2026-10-25T17:05:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18883648,
+  "storage_human": "19 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "martinnovaak (Martin Novák) - Hugging Face",
+      "url": "https://huggingface.co/martinnovaak",
+      "snippet": "AI & ML interests ... Recent Activity published a model about 8 hours ago ... updated a model about 8 hours ago"
+    },
+    {
+      "title": "martinnovaak (Martin Novák) - Hugging Face",
+      "url": "https://huggingface.co/martinnovaak/datasets",
+      "snippet": "User profile of Martin Novák on Hugging Face"
+    },
+    {
+      "title": "GitHub - martinnovaak/motor: UCI chess engine written in C++",
+      "url": "https://github.com/martinnovaak/motor/tree/main",
+      "snippet": "UCI chess engine written in C++. Contribute to martinnovaak/motor development by creating an account on GitHub."
+    },
+    {
+      "title": "martinnovaak (Martin Novák) - Hugging Face",
+      "url": "https://huggingface.co/martinnovaak/models",
+      "snippet": "martinnovaak&#x27;s models 1 Sort: Recently updated martinnovaak/DeepSeek-V3-6layer 38B• Updated about 8 hours ago"
+    },
+    {
+      "title": "Releases · martinnovaak/motor - GitHub",
+      "url": "https://github.com/martinnovaak/motor/releases",
+      "snippet": "UCI chess engine written in C++. Contribute to martinnovaak/motor development by creating an account on GitHub."
+    }
+  ]
+}

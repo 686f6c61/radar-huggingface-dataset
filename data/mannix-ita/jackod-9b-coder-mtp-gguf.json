@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "ManniX-ITA/JackOD-9B-Coder-MTP-GGUF",
+  "slug": "mannix-ita-jackod-9b-coder-mtp-gguf",
+  "author": "ManniX-ITA",
+  "url": "https://huggingface.co/ManniX-ITA/JackOD-9B-Coder-MTP-GGUF",
+  "created_at": "2026-09-11T17:58:09.000Z",
+  "updated_at": "2026-10-25T12:19:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "agentic",
+    "code",
+    "imatrix",
+    "merge",
+    "qwen3.5",
+    "tool-calling",
+    "text-generation",
+    "en",
+    "base_model:ManniX-ITA/JackOD-9B-Coder",
+    "base_model:quantized:ManniX-ITA/JackOD-9B-Coder",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 3,
+  "downloads_30d": 21941,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 574005936608,
+  "storage_human": "574.0 GB",
+  "base_model": "ManniX-ITA/JackOD-9B-Coder",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

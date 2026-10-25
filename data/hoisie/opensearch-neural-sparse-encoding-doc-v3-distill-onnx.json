@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "hoisie/opensearch-neural-sparse-encoding-doc-v3-distill-onnx",
+  "slug": "hoisie-opensearch-neural-sparse-encoding-doc-v3-distill-onnx",
+  "author": "hoisie",
+  "url": "https://huggingface.co/hoisie/opensearch-neural-sparse-encoding-doc-v3-distill-onnx",
+  "created_at": "2026-10-25T14:45:29.000Z",
+  "updated_at": "2026-10-25T14:45:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "learned-sparse-retrieval",
+    "splade",
+    "base_model:opensearch-project/opensearch-neural-sparse-encoding-doc-v3-distill",
+    "base_model:quantized:opensearch-project/opensearch-neural-sparse-encoding-doc-v3-distill",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 361833802,
+  "storage_human": "362 MB",
+  "base_model": "opensearch-project/opensearch-neural-sparse-encoding-doc-v3-distill",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "fcmeyer/Nanbeige4.3-33B-MLX-8bit",
+  "slug": "fcmeyer-nanbeige4-3-33b-mlx-8bit",
+  "author": "fcmeyer",
+  "url": "https://huggingface.co/fcmeyer/Nanbeige4.3-33B-MLX-8bit",
+  "created_at": "2026-10-25T17:20:11.000Z",
+  "updated_at": "2026-10-25T18:16:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "llama",
+    "nanbeige",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Nanbeige/Nanbeige4.3-33B",
+    "base_model:quantized:Nanbeige/Nanbeige4.3-33B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33118977024,
+  "parameters_human": "33.12B",
+  "storage_bytes": 35210990579,
+  "storage_human": "35.2 GB",
+  "base_model": "Nanbeige/Nanbeige4.3-33B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "1992 Monaco Grand Prix — Results & Winner | F1 Archive",
+      "url": "https://www.formula1archive.com/races/522",
+      "snippet": "May 31, 1992 · It was an attrition-heavy race with 14 retirements, many due to mechanical issues. This was Round 6 of the 1992 …"
+    },
+    {
+      "title": "1992 Monaco Grand Prix | Autopedia | Fandom",
+      "url": "https://automobile.fandom.com/wiki/1992_Monaco_Grand_Prix",
+      "snippet": "It was the sixth round of the 1992 Formula One season. The race, contested over 78 laps was won by Ayrton Senna after a close …"
+    },
+    {
+      "title": "1992 RACE RESULTS - Formula 1",
+      "url": "https://www.formula1.com/en/results/1992/races",
+      "snippet": "1995 1994 1993 1992 Active 1991 1990 1989 1988 1987 1986 1985 1984 1983 1982 1981 1980 1979 1978 1977 1976 1975 1974 1973 …"
+    },
+    {
+      "title": "1992 Monaco Grand Prix — Grokipedia",
+      "url": "https://grokipedia.com/page/1992_Monaco_Grand_Prix",
+      "snippet": "May 31, 1992 · The 1992 Monaco Grand Prix was the sixth round of the 1992 Formula One World Championship, held on 31 May …"
+    },
+    {
+      "title": "1992 Round 6: Monaco Grand Prix｜McLaren Honda Greatest …",
+      "url": "https://global.honda/en/F1/mclaren/race/1992_monaco/",
+      "snippet": "May 31, 1992 · In Round 6, Monaco, Senna went all in, taking advantage of every single opportunity, to claim his first win of the …"
+    }
+  ]
+}

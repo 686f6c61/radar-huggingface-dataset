@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "gianmaTest/generatedDigitalExps_1xKypB_hier_by_room_rnn_meanPoolProc_video_2",
+  "slug": "gianmatest-generateddigitalexps_1xkypb_hier_by_room_rnn_meanpoolproc_video_2",
+  "author": "gianmaTest",
+  "url": "https://huggingface.co/gianmaTest/generatedDigitalExps_1xKypB_hier_by_room_rnn_meanPoolProc_video_2",
+  "created_at": "2026-10-25T14:38:12.000Z",
+  "updated_at": "2026-10-25T14:38:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2366208,
+  "parameters_human": "2.4M",
+  "storage_bytes": 9467176,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accueil - Forum Philo Le Monde Le Mans",
+      "url": "http://forumlemondelemans.univ-lemans.fr/fr/index.html",
+      "snippet": "Le Forum « Le Monde - Le Mans » a donc à cœur d’orchestrer la confrontation des idées entre les intervenants ainsi que leur …"
+    },
+    {
+      "title": "La mort d'un personnage, des idées pour provoquer sa mort",
+      "url": "https://monde-ecriture.com/forum/index.php?topic=2256.0",
+      "snippet": "3 days ago · Le Monde de L'Écriture » Salon littéraire » L'Atelier » Cuisiner la langue : ustensiles et méthodes » La mort d'un …"
+    },
+    {
+      "title": "Nombre de poèmes dans un recueil - monde-ecriture.com",
+      "url": "https://monde-ecriture.com/forum/index.php?topic=39559.0",
+      "snippet": "2 days ago · Bien le bonjour mes lecteurs j'ai une petite question pour les lecteurs de recueil de poèmes Selon vous, combien un …"
+    },
+    {
+      "title": "Infos Pratiques - Forum Philo Le Monde Le Mans",
+      "url": "http://forumlemondelemans.univ-lemans.fr/fr/le-forum/infos-pratiques.html",
+      "snippet": "Jan 30, 2026 · Infos pratiques Venir au Forum Le Monde Le Mans Vendredi 30 janvier 2026 Lieu : campus Le Mans Université, …"
+    },
+    {
+      "title": "Le Monde de L'Écriture",
+      "url": "https://monde-ecriture.com/forum/index.php?board=2.0",
+      "snippet": "1 day ago · Écrivez-nous : Ou retrouvez-nous sur les réseaux sociaux : Les textes postés sur le forum sont publiés sous licence …"
+    }
+  ]
+}

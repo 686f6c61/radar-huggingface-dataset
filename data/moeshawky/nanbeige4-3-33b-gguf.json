@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "moeshawky/Nanbeige4.3-33B-GGUF",
+  "slug": "moeshawky-nanbeige4-3-33b-gguf",
+  "author": "moeshawky",
+  "url": "https://huggingface.co/moeshawky/Nanbeige4.3-33B-GGUF",
+  "created_at": "2026-10-25T14:31:16.000Z",
+  "updated_at": "2026-10-25T15:28:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "nanbeige",
+    "llama",
+    "quantized",
+    "q4",
+    "q6",
+    "q8",
+    "text-generation",
+    "en",
+    "base_model:Nanbeige/Nanbeige4.3-33B",
+    "base_model:quantized:Nanbeige/Nanbeige4.3-33B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33118977024,
+  "parameters_human": "33.12B",
+  "storage_bytes": 148664396928,
+  "storage_human": "148.7 GB",
+  "base_model": "Nanbeige/Nanbeige4.3-33B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

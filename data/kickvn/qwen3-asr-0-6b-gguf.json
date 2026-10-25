@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "kickvn/Qwen3-ASR-0.6B-GGUF",
+  "slug": "kickvn-qwen3-asr-0-6b-gguf",
+  "author": "kickvn",
+  "url": "https://huggingface.co/kickvn/Qwen3-ASR-0.6B-GGUF",
+  "created_at": "2026-10-25T19:24:32.000Z",
+  "updated_at": "2026-10-25T19:25:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen3-asr",
+    "speech-recognition",
+    "automatic-speech-recognition",
+    "base_model:Qwen/Qwen3-ASR-0.6B",
+    "base_model:quantized:Qwen/Qwen3-ASR-0.6B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 751632384,
+  "parameters_human": "751.6M",
+  "storage_bytes": 1183324768,
+  "storage_human": "1.2 GB",
+  "base_model": "Qwen/Qwen3-ASR-0.6B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3-ASR: Qwen3-ASR is an open-source series of ASR ...",
+      "url": "https://github.com/QwenLM/Qwen3-ASR",
+      "snippet": "The Qwen3-ASR family includes Qwen3-ASR-1.7B and Qwen3-ASR-.6B, which support language identification and ASR for 52 languages and dialects. Both leverage large-scale speech training data and the strong audio understanding capability of their foundation model, Qwen3-Omni. Experiments show that the 1.7B version achieves state-of-the-art performance among open-source ASR models and is ..."
+    },
+    {
+      "title": "vnbot-ai/Qwen3-ASR-0.6B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/vnbot-ai/Qwen3-ASR-0.6B-GGUF",
+      "snippet": "Instructions to use vnbot-ai/Qwen3-ASR-.6B-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Bản sao để dùng với VNBot. Điều khoản sử dụng theo license ghi ở metadata phía trên và license của model gốc (base_model ..."
+    },
+    {
+      "title": "Qwen/Qwen3-ASR-0.6B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-ASR-0.6B",
+      "snippet": "The Qwen3-ASR family includes Qwen3-ASR-1.7B and Qwen3-ASR-.6B, which support language identification and ASR for 52 languages and dialects. Both leverage large-scale speech training data and the strong audio understanding capability of their foundation model, Qwen3-Omni. Experiments show that the ..."
+    },
+    {
+      "title": "Qwen3 Asr 0.6b Gguf - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/vnbot-ai/qwen3-asr-0.6b-gguf",
+      "snippet": "Registry entry for model Qwen3 Asr 0.6b Gguf; source metadata pending."
+    },
+    {
+      "title": "Qwen3-ASR-0.6B-gguf · Model · Inferix",
+      "url": "https://inferix.co/models/handy-computer/Qwen3-ASR-0.6B-gguf",
+      "snippet": "The Qwen3-ASR family includes Qwen3-ASR-1.7B and Qwen3-ASR-.6B, which support language identification and ASR for 52 languages and dialects. Both leverage large-scale speech training data and the strong audio understanding capability of their foundation model, Qwen3-Omni."
+    }
+  ]
+}

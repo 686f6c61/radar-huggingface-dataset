@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ahajahmed/benchmark-contamination-repair-heldout-models",
+  "slug": "ahajahmed-benchmark-contamination-repair-heldout-models",
+  "author": "ahajahmed",
+  "url": "https://huggingface.co/ahajahmed/benchmark-contamination-repair-heldout-models",
+  "created_at": "2026-10-25T17:20:18.000Z",
+  "updated_at": "2026-10-25T17:23:07.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "benchmark-contamination",
+    "research-artifact",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 39101732307,
+  "storage_human": "39.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "benchmark-contamination-repair-planted-a - Hugging Face",
+      "url": "https://huggingface.co/ahajahmed/benchmark-contamination-repair-planted-a",
+      "snippet": "This is a research artifact of the RSI Bench task benchmark-contamination-repair. An Apache-2.0 open-weight instruction model was LoRA fine-tuned on the test items of a synthetic math word-problem benchmark, mixed with its own answers to GSM8K training questions (MIT) and samples from databricks/databricks-dolly-15k (CC BY-SA 3.0), and the adapter was merged into the weights. Its scores on ..."
+    },
+    {
+      "title": "Benchmark Contamination in LLMs - Complete Guide | AI Wiki",
+      "url": "https://artificial-intelligence-wiki.com/natural-language-processing/large-language-models/benchmark-contamination-issues/",
+      "snippet": "Benchmark contamination occurs when test data from evaluation benchmarks appears in a language model&#x27;s training set, artificially inflating performance metrics and undermining the validity of model comparisons. This issue has become increasingly prevalent as models are trained on larger web-scraped datasets that may inadvertently include publicly available benchmark questions."
+    },
+    {
+      "title": "Benchmark Contamination in AI: When Tests Leak Into Training",
+      "url": "https://capitalandcompute.net/blog/ai-benchmark-contamination-explained/",
+      "snippet": "Benchmark contamination is when test answers leak into training data and inflate AI scores. How it happens, how much it distorts results, and how to spot it."
+    },
+    {
+      "title": "Benchmark Contamination | AI360Xpert",
+      "url": "https://www.ai360xpert.com/concepts/gen-ai/benchmark-contamination",
+      "snippet": "Benchmark contamination occurs when a model&#x27;s evaluation test set accidentally leaks into its training data. This results in artificially inflated scores because the model is reciting memorized answers rather than demonstrating generalized reasoning."
+    },
+    {
+      "title": "Benchmark contamination - llmref.wiki",
+      "url": "https://llmref.wiki/wiki/Benchmark_contamination",
+      "snippet": "Benchmark contamination — Unintended presence of test data or test-adjacent data in a model&#x27;s training dataset, artificially elevating performance on benchmarks."
+    }
+  ]
+}

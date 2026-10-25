@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "zeynpakn/ppo-SnowballTarget",
+  "slug": "zeynpakn-ppo-snowballtarget",
+  "author": "zeynpakn",
+  "url": "https://huggingface.co/zeynpakn/ppo-SnowballTarget",
+  "created_at": "2026-10-25T17:37:14.000Z",
+  "updated_at": "2026-10-25T17:48:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "SnowballTarget",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-SnowballTarget",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2361543,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zeynpakn (Zeynep Akın) - Hugging Face",
+      "url": "https://huggingface.co/zeynpakn",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 4 minutes ago ... published a model about 21 hours ago"
+    },
+    {
+      "title": "ppo-SnowballTarget: Model Details, Context & Pricing | Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/hf-danamr-ppo-snowballtarget",
+      "snippet": "Model card indexed from Hugging Face for reinforcement-learning. Specs: built for agents, sourced from Hugging Face. Compare ppo-SnowballTarget&#x27;s parameters, co"
+    },
+    {
+      "title": "DeepNuc/ppo-SnowballTarget · Hugging Face",
+      "url": "https://huggingface.co/DeepNuc/ppo-SnowballTarget",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "zayddawood/ppo-SnowballTarget: Unity Machine Learning Example - GitHub",
+      "url": "https://github.com/zayddawood/ppo-SnowballTarget",
+      "snippet": "Unity Machine Learning Example. Contribute to zayddawood/ppo-SnowballTarget development by creating an account on GitHub."
+    },
+    {
+      "title": "marianokamp/ppo-SnowballTarget - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/110598",
+      "snippet": "This is a trained model of a ppo agent playing SnowballTarget using the Unity ML-Agents Library."
+    }
+  ]
+}

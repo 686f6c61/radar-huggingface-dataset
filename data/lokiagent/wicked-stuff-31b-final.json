@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "lokiagent/Wicked-Stuff-31B-Final",
+  "slug": "lokiagent-wicked-stuff-31b-final",
+  "author": "lokiagent",
+  "url": "https://huggingface.co/lokiagent/Wicked-Stuff-31B-Final",
+  "created_at": "2026-10-25T20:15:04.000Z",
+  "updated_at": "2026-10-25T20:15:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "nsfw",
+    "explicit",
+    "roleplay",
+    "unaligned",
+    "ERP",
+    "Erotic",
+    "Horror",
+    "Violence",
+    "adult-content",
+    "mature",
+    "conversational",
+    "instruct",
+    "text-generation",
+    "en",
+    "base_model:ReadyArt/gemma-4-31B-it-scotoma-2",
+    "base_model:finetune:ReadyArt/gemma-4-31B-it-scotoma-2",
+    "license:apache-2.0",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31273086512,
+  "parameters_human": "31.27B",
+  "storage_bytes": 62578507890,
+  "storage_human": "62.6 GB",
+  "base_model": "ReadyArt/gemma-4-31B-it-scotoma-2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Xxxx Porn Videos | xHamster",
+      "url": "https://xhamster.com/search/xxxx",
+      "snippet": "Watch xxxx porn videos. Explore tons of XXX movies with sex scenes in 2026 on xHamster!"
+    },
+    {
+      "title": "'xxxxxxx' Search - XNXX.COM",
+      "url": "https://www.xnxx.com/search/xxxxxxx",
+      "snippet": "XNXX.COM 'xxxxxxx' Search, free sex videos Would You Like To Give Me Some Deep Backshots !?️ 8k 85% 10sec - 720p"
+    },
+    {
+      "title": "Trending Free Sex Xxxxxxx Porn Videos in 4K HD Full Length!",
+      "url": "https://many.xxx/search/sex-xxxxxxx/most-popular/",
+      "snippet": "Free Sex Xxxxxxx Videos in Ultra HD from 😎 Top Porn Studios. All in Full Length. NO annoying ADS"
+    },
+    {
+      "title": "Xxxxxxxx Videos Porn Videos | xHamster",
+      "url": "https://xhamster.com/search/xxxxxxxx+videos",
+      "snippet": "YOGA 37.9M views 05:29 My very first hard sex xxxxxxx xxxxxxx xxxxxxx xxxxxxx xxxxxxx xxxxxxx xxxxxxx xxxxxxx xxxxxxx …"
+    },
+    {
+      "title": "Xxxxxxx Porn & Free XXX Videos - iPornTV",
+      "url": "https://iporntv.net/search/xxxxxxx%C2%A0",
+      "snippet": "Discover the best free xxxxxxx porn videos. Search and watch high-quality xxxxxxx XXX movies and sex clips on iPornTV."
+    }
+  ]
+}

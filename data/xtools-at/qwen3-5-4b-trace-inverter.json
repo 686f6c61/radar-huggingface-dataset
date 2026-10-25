@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "xtools-at/Qwen3.5-4B-Trace-Inverter",
+  "slug": "xtools-at-qwen3-5-4b-trace-inverter",
+  "author": "xtools-at",
+  "url": "https://huggingface.co/xtools-at/Qwen3.5-4B-Trace-Inverter",
+  "created_at": "2026-10-23T17:34:37.000Z",
+  "updated_at": "2026-10-25T12:18:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "qwen3.5",
+    "reasoning",
+    "trace-inversion",
+    "trace-inverter",
+    "synthetic-data",
+    "deep-reasoning",
+    "chain-of-thought",
+    "distillation",
+    "knowledge-distillation",
+    "text-generation",
+    "conversational",
+    "dataset:xtools-at/trace-inversion-opus-synthetic",
+    "dataset:Jackrong/Claude-opus-4.7-TraceInversion-5000x",
+    "dataset:Jackrong/Claude-opus-4.6-TraceInversion-9000x",
+    "arxiv:2603.07267",
+    "base_model:xtools-at/Qwen3.5-4B-MultiDistill-3xMerge-UNCENSORED-heretic",
+    "base_model:adapter:xtools-at/Qwen3.5-4B-MultiDistill-3xMerge-UNCENSORED-heretic",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 190089662,
+  "storage_human": "190 MB",
+  "base_model": "xtools-at/Qwen3.5-4B-MultiDistill-3xMerge-UNCENSORED-heretic",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xTool France | Machines de Gravure, Découpe, Soudure & DTF",
+      "url": "https://fr.xtool.com/",
+      "snippet": "Boostez votre créativité avec xTool. Gamme complète de lasers (CO2, Diode, Fibre), soudeuses et DTF. Des outils simples et …"
+    },
+    {
+      "title": "Votre panier",
+      "url": "https://fr.xtool.com/cart",
+      "snippet": "Boostez votre créativité avec xTool. Gamme complète de lasers (CO2, Diode, Fibre), soudeuses et DTF. Des outils simples et …"
+    },
+    {
+      "title": "xTool Europe Store | Laser Cutter, Engraver, Welder & DTF Printer",
+      "url": "https://www.xtool.eu/fr",
+      "snippet": "xTool is the industry-leading brand for digital fabrication. Find top-quality innovative tools, including (CO2, fiber, diode) laser cutters, …"
+    },
+    {
+      "title": "Shop All - xTool",
+      "url": "https://www.xtool.eu/fr/collections/shop-all",
+      "snippet": "Explore the complete collection of xTool's innovative laser cutters, engravers, and smart crafting machines. Powered by cutting-edge …"
+    },
+    {
+      "title": "Atome3D.com - XTOOL | Machines et Accessoires pour Créatifs",
+      "url": "https://www.atome3d.com/collections/xtool-revendeur-officiel-machines-accessoires-3d-france",
+      "snippet": "Revendeur Officiel xTool France : Découvrez la collection xTool, idéale pour tous les budgets. Machines laser, accessoires et …"
+    }
+  ]
+}

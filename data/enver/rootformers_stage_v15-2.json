@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "enver/rootformers_stage_v15.2",
+  "slug": "enver-rootformers_stage_v15-2",
+  "author": "enver",
+  "url": "https://huggingface.co/enver/rootformers_stage_v15.2",
+  "created_at": "2026-10-25T17:02:42.000Z",
+  "updated_at": "2026-10-25T17:09:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arabic",
+    "classical-arabic",
+    "translation",
+    "rootformer",
+    "bpe-free",
+    "morphology",
+    "qwen3.5",
+    "qwen3.8-27b",
+    "speculative-decoding",
+    "gated-deltanet",
+    "islamic-philosophy",
+    "kalam",
+    "usul-al-fiqh",
+    "ar",
+    "en",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32258422331,
+  "storage_human": "32.3 GB",
+  "base_model": "Qwen/Qwen3.8-27B, Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Enver Pacha — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Enver_Pacha",
+      "snippet": "Enver Pacha (turc : Enver Paşa), de son nom complet Ismail Enver (né le 22 novembre 1881 à Constantinople, mort le 4 août 1922), …"
+    },
+    {
+      "title": "Enver Hoxha — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Enver_Hoxha",
+      "snippet": "Dès l' invasion italienne de l'Albanie en 1939, Enver Hoxha cherche à organiser la résistance. À l'époque, il s'oppose aux …"
+    },
+    {
+      "title": "Enver Pasha - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Enver_Pasha",
+      "snippet": "Along with Ahmed Niyazi, Enver was hailed as \"hero of the revolution\". However, a series of crises in the empire, including the 31 …"
+    },
+    {
+      "title": "Histoire de l'Albanie sous Enver Hoxha - papy-voyage",
+      "url": "https://www.papy-voyage.com/histoire-de-lalbanie-sous-enver-hoxha/",
+      "snippet": "Enver Hoxha a dirigé l'Albanie de 1944 jusqu'à sa mort en 1985, établissant un régime communiste strict et isolant le pays du reste …"
+    },
+    {
+      "title": "Le dictateur qui se voulait plus rouge que les autres",
+      "url": "https://librairiepantoute.com/blogues/le-dictateur-qui-se-voulait-plus-rouge-que-les-autres/",
+      "snippet": "Jun 3, 2024 · Enver Hoxha, imposant tyran de l’Albanie de 1944 à 1985, tout petit pays des Balkans d’un million d’habitants, n’a …"
+    }
+  ]
+}

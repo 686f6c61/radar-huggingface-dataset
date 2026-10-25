@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "hmzprover/hpsearch-embed-4b",
+  "slug": "hmzprover-hpsearch-embed-4b",
+  "author": "hmzprover",
+  "url": "https://huggingface.co/hmzprover/hpsearch-embed-4b",
+  "created_at": "2026-10-25T14:43:24.000Z",
+  "updated_at": "2026-10-25T14:43:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "lean4",
+    "mathlib",
+    "retrieval",
+    "base_model:Qwen/Qwen3-Embedding-4B",
+    "base_model:finetune:Qwen/Qwen3-Embedding-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4021774336,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8055015300,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen3-Embedding-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

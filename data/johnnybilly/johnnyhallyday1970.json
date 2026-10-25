@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Johnnybilly/JohnnyHallyday1970",
+  "slug": "johnnybilly-johnnyhallyday1970",
+  "author": "Johnnybilly",
+  "url": "https://huggingface.co/Johnnybilly/JohnnyHallyday1970",
+  "created_at": "2026-10-25T19:26:26.000Z",
+  "updated_at": "2026-10-25T19:26:26.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Johnny Hallyday - Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Johnny_Hallyday",
+      "snippet": "Am 1. Dezember 1981 heiratete Halliday das Model Babeth Etienne. Nach zwei Monaten und zwei Tagen wurde die Ehe geschieden ..."
+    },
+    {
+      "title": "Weibliche Lebensentwürfe in den Filmen der französischen ...",
+      "url": "http://oops.uni-oldenburg.de/40/1/puswei06.pdf",
+      "snippet": "11.08.1970 ... ... 1970 in Oldenburg/Niedersachsen. Referent: Prof. Dr. Jens Thiele ... (Johnny Hallyday) konfrontiert: Sie trifft diesen in einem Club, hat ..."
+    },
+    {
+      "title": "Teuvan kunta, Nuorisopalvelut - Kauhajoki.fi",
+      "url": "https://kauhajoki.fi/wp-content/uploads/2024/02/Ulkomaiset-kappaleen-nimen-mukaan-2024.pdf",
+      "snippet": "... 1970-01-01 03:00:00. Busted. SF1101380. 1970-01-01 03:00:00. Matchbox Twenty ... Johnny Hallyday. SR49112. 20 ans (Live). Johnny Hallyday & Florent Pagny."
+    },
+    {
+      "title": "1975 Gretsch White Falcon owned by Rick Parfitt and Johnny ...",
+      "url": "https://www.facebook.com/GuitarAuctions/posts/previously-owned-by-rick-parfitt-of-status-quo-and-french-musician-johnny-hallyd/792466432420119/",
+      "snippet": "03.05.2023 ... Johnny Hallyday played a Gibson Firebird and a Lazer on some shows, a 1960 Epiphone Zephyr at his first Olympia in 1961, and a Fender Johnny ..."
+    },
+    {
+      "title": "Johnny Hallyday — Biography, Discography, Albums & Expert ...",
+      "url": "https://www.allmusic.com/artist/johnny-hallyday-mn0000255733",
+      "snippet": "He continued to score hits in France, among them 1976's \"Joue Pas de Rock'n'Roll Pour Moi\" and \"Gabrielle,\" 1977's \"J'ai Oublié de Vivre,\" and 1978's \"Elle M' ..."
+    }
+  ]
+}

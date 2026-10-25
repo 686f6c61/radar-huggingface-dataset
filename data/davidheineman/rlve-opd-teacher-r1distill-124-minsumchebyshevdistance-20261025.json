@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "davidheineman/rlve-opd-teacher-R1Distill-124-MinSumChebyshevDistance-20261025",
+  "slug": "davidheineman-rlve-opd-teacher-r1distill-124-minsumchebyshevdistance-20261025",
+  "author": "davidheineman",
+  "url": "https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-124-MinSumChebyshevDistance-20261025",
+  "created_at": "2026-10-25T17:43:21.000Z",
+  "updated_at": "2026-10-25T17:44:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "rlve",
+    "data-scaling",
+    "opd-teacher",
+    "conversational",
+    "base_model:deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "base_model:finetune:deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 3554214720,
+  "storage_human": "3.6 GB",
+  "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Duolingo - Ứng dụng học tập phổ biến nhất thế giới",
+      "url": "https://vi.duolingo.com/",
+      "snippet": "miễn phí. vui nhộn. hiệu quả Học cùng Duolingo rất vui nhộn, các nghiên cứu đã chứng minh ứng dụng thật sự hiệu quả! Các bài …"
+    },
+    {
+      "title": "Duolingo - The world’s most popular way to learn",
+      "url": "https://www.duolingo.com/",
+      "snippet": "Learn languages by playing a game. It's 100% free, fun, and scientifically proven to work."
+    },
+    {
+      "title": "Learning Goal - Duolingo",
+      "url": "https://www.duolingo.com/register",
+      "snippet": "Everyone can Duolingo. Choose your learning goal and see how fast you can learn a new language."
+    },
+    {
+      "title": "Duolingo",
+      "url": "https://ja.duolingo.com/",
+      "snippet": "duolingo english test Duolingo English Testは、便利でスピーディーかつ手頃な英語力認定テストです。 最新の評価科学とAIを統合 …"
+    },
+    {
+      "title": "Duolingo - Il metodo per l'apprendimento più famoso al mondo",
+      "url": "https://it.duolingo.com/",
+      "snippet": "Duolingo è una piattaforma gratuita e scientifica per imparare lingue con lezioni divertenti e personalizzate. Disponibile online e come …"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Erog0291/stew-yanga",
+  "slug": "erog0291-stew-yanga",
+  "author": "Erog0291",
+  "url": "https://huggingface.co/Erog0291/stew-yanga",
+  "created_at": "2026-10-25T17:42:35.000Z",
+  "updated_at": "2026-10-25T17:42:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "ig",
+    "yo",
+    "ha",
+    "pcm",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "nigerian-languages",
+    "asr",
+    "stew-yanga",
+    "africa",
+    "speech-recognition",
+    "ig",
+    "yo",
+    "ha",
+    "pcm",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Erog0291/stew-embedding-v2 · Hugging Face",
+      "url": "https://huggingface.co/Erog0291/stew-embedding-v2",
+      "snippet": "Instructions to use Erog0291/stew-embedding-v2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries sentence-transformers How to use Erog0291/stew-embedding-v2 with sentence-transformers: ... Notebooks Google Colab Kaggle SentenceTransformer based on google/embeddinggemma-2 Model Details ..."
+    },
+    {
+      "title": "Erog0291/stewmind-1.7b · Hugging Face",
+      "url": "https://huggingface.co/Erog0291/stewmind-1.7b",
+      "snippet": "StewMind is the self-hosted agentic specialist model powering Stew, the autonomous AI agent by MUTYINT — Multipurpose Talented Young Inventors and Transformers, an AI lab for Intelligent Quotients founded by Emmanuel Ene Rejoice Gideon in Nigeria."
+    },
+    {
+      "title": "Erog0291 (Emmanuel Rejoice) - Hugging Face",
+      "url": "https://huggingface.co/Erog0291",
+      "snippet": "NairaScan AI - Cash to Digital Magic Wand 🐳"
+    },
+    {
+      "title": "StewAgent 1 - a Hugging Face Space by Erog0291",
+      "url": "https://huggingface.co/spaces/Erog0291/my-stew-agent-space",
+      "snippet": "Discover amazing ML apps made by the community"
+    },
+    {
+      "title": "Stew Embedding V2 - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/erog0291/stew-embedding-v2",
+      "snippet": "by Erog0291 erog0291/stew-embedding-v2 Free2AITools Nexus Index 39.0 S: Semantic50 Query-time baseline · scored live at search A: Authority0 P: Popularity0 R: Recency100 Q: Quality65 Tech Context 0.27BParams 4.096KCtx Vital Performance— Source → Share: 📤 𝕏 in 📣 🔗"
+    }
+  ]
+}

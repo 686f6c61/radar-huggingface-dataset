@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "yutongzhu/smolvla-libero-ft20k",
+  "slug": "yutongzhu-smolvla-libero-ft20k",
+  "author": "yutongzhu",
+  "url": "https://huggingface.co/yutongzhu/smolvla-libero-ft20k",
+  "created_at": "2026-10-25T14:23:59.000Z",
+  "updated_at": "2026-10-25T14:38:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "vla",
+    "libero",
+    "robotics",
+    "zh",
+    "dataset:lerobot/libero",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 910738476,
+  "storage_human": "911 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "闭环操作",
+      "dataset": "LIBERO-Spatial（10 个任务 × 10 回合，种子 1000）",
+      "metric": "成功率（n_action_steps=10，去噪 10 步，FP32）",
+      "value": 78
+    },
+    {
+      "task": "闭环操作",
+      "dataset": "LIBERO-Spatial（10 个任务 × 10 回合，种子 1000）",
+      "metric": "成功率（n_action_steps=10，去噪 5 步，BF16 + torch.compile）",
+      "value": 81
+    }
+  ],
+  "sources": []
+}

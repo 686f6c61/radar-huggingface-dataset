@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "pyros-vault/Nanbeige4.3-33B-oQ6e",
+  "slug": "pyros-vault-nanbeige4-3-33b-oq6e",
+  "author": "pyros-vault",
+  "url": "https://huggingface.co/pyros-vault/Nanbeige4.3-33B-oQ6e",
+  "created_at": "2026-10-25T19:29:16.000Z",
+  "updated_at": "2026-10-25T19:56:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llm",
+    "nanbeige",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Nanbeige/Nanbeige4.3-33B-Base",
+    "base_model:quantized:Nanbeige/Nanbeige4.3-33B-Base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33118977024,
+  "parameters_human": "33.12B",
+  "storage_bytes": 27753517895,
+  "storage_human": "27.8 GB",
+  "base_model": "Nanbeige/Nanbeige4.3-33B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pyros-vault/Nanbeige4.3-33B-oQ4e · Hugging Face",
+      "url": "https://huggingface.co/pyros-vault/Nanbeige4.3-33B-oQ4e",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Nanbeige4.3-33B: Open 33B Agent Model, 80.9 on Terminal-Bench ...",
+      "url": "https://explainx.ai/blog/nanbeige-4-3-33b-open-agentic-model-guide-2026",
+      "snippet": "Nanbeige4.3-33B is a new open-weight dense model released on October 24, 2026 under the Apache 2.0 license, built for coding and office-style agents. The model card on Hugging Face reports that it leads three comparable 30B-class models on most agentic benchmarks, including 80.9 on Terminal-Bench 2.1."
+    },
+    {
+      "title": "AJ on X: \"We got a new model Nambeige4.3-33B, a new dense model around ...",
+      "url": "https://x.com/ItsmeAjayKV/status/2114345524723884097",
+      "snippet": "We got a new model Nambeige4.3-33B, a new dense model around 30B size 👀 Look at the benchmark score ! Scores 23.8 in Terminal Bench 4.0, for context qwen3.8-27b has a score of 6.3 ! Overall looks like a solid model, I&#x27;ll be downloading it and giving it a shot, time to see how good it is."
+    },
+    {
+      "title": "Nanbeige Releases Open 33B Model for Agentic Coding - AI Brief",
+      "url": "https://dailyaibrief.com/news/nanbeige-releases-33b-agent-model-with-512k-context-yoxTglVU",
+      "snippet": "Nanbeige released Nanbeige4.3-33B, an Apache 2.0 open-weight model it says leads most agentic coding tests in the 30B class."
+    },
+    {
+      "title": "model-00006-of-00006.safetensors · pyros-vault/Ornith-1.5-35B-A3B-oQ6e ...",
+      "url": "https://huggingface.co/pyros-vault/Ornith-1.5-35B-A3B-oQ6e-fixed-mtp/blob/main/model-00006-of-00006.safetensors",
+      "snippet": "Instructions to use pyros-vault/Ornith-1.5-35B-A3B-oQ6e-fixed-mtp with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    }
+  ]
+}

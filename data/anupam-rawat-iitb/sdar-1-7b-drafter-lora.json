@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Anupam-Rawat-IITB/SDAR-1.7B-drafter-LoRA",
+  "slug": "anupam-rawat-iitb-sdar-1-7b-drafter-lora",
+  "author": "Anupam-Rawat-IITB",
+  "url": "https://huggingface.co/Anupam-Rawat-IITB/SDAR-1.7B-drafter-LoRA",
+  "created_at": "2026-10-25T17:36:53.000Z",
+  "updated_at": "2026-10-25T17:56:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "sdar",
+    "text-generation",
+    "lora",
+    "block-diffusion",
+    "speculative-decoding",
+    "drafter",
+    "conversational",
+    "custom_code",
+    "dataset:Anupam-Rawat-IITB/sdar30b-draft-judge-data",
+    "base_model:JetLM/SDAR-1.7B-Chat-b32",
+    "base_model:adapter:JetLM/SDAR-1.7B-Chat-b32",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 8398646082,
+  "storage_human": "8.4 GB",
+  "base_model": "JetLM/SDAR-1.7B-Chat-b32",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PSV - Feyenoord, live op tv 25/10/2026 | Ziggo Voetbal",
+      "url": "https://www.ziggo.nl/entertainment/sport/voetbal/eredivisie/psv-feyenoord-25-10-2026?msockid=3e06fbb46f6f66c13f60ec496ede67e7",
+      "snippet": "Oct 18, 2026 · Lees hier alles over de Eredivisie wedstrijd PSV vs Feyenoord op zondag 25 oktober 2026. Hoe laat begint de …"
+    },
+    {
+      "title": "zo. 25 okt. · PSV – Feyenoord op tv: zender en tijd",
+      "url": "https://www.sport-flash.com/sports/football/nl/events/eredivisie-2026-2027/psv-feyenoord",
+      "snippet": "18 hours ago · PSV – Feyenoord, zondag 25 oktober om 14:30 uur: live op ESPN. Alle zenders en aftraptijden in Nederland."
+    },
+    {
+      "title": "Feyenoord live kijken | Ziggo Voetbal",
+      "url": "https://www.ziggo.nl/entertainment/sport/voetbal/feyenoord?msockid=3e06fbb46f6f66c13f60ec496ede67e7",
+      "snippet": "Beleef de mooiste wedstrijden van Feyenoord live bij Ziggo. Volg de Rotterdammers hand in hand door Europa in de UEFA …"
+    },
+    {
+      "title": "Waar je PSV - Feyenoord kunt kijken: TV zender, online livestream ...",
+      "url": "https://www.voetbalzone.nl/nieuws/waar-je-psv-feyenoord-kunt-kijken-tv-zender-online-livestream-aanvangstijdstip-en-recente-vorm-van-beide-teams/bltc35f7ffd5e874e65",
+      "snippet": "Feb 1, 2026 · Waar je de Eredivisie wedstrijd tussen PSV and Feyenoord kunt zien, inclusief TV kanalen, online live streams, …"
+    },
+    {
+      "title": "PSV Eindhoven vs Feyenoord: Where to watch, live stream, TV …",
+      "url": "https://www.goal.com/en/news/live-stream-online-tv-where-to-watch-psv-eindhoven-v-feyenoord/blt3c136baf7f3f0155",
+      "snippet": "18 hours ago · Find out where to watch PSV Eindhoven vs Feyenoord in the Eredivisie, including TV channel, live stream options, …"
+    }
+  ]
+}

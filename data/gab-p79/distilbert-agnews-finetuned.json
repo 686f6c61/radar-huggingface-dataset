@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Gab-P79/distilbert-agnews-finetuned",
+  "slug": "gab-p79-distilbert-agnews-finetuned",
+  "author": "Gab-P79",
+  "url": "https://huggingface.co/Gab-P79/distilbert-agnews-finetuned",
+  "created_at": "2026-10-25T17:23:34.000Z",
+  "updated_at": "2026-10-25T18:13:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66956548,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267838720,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Speech Social Network · Gab",
+      "url": "https://gab.com/",
+      "snippet": "Say what you actually think. Gab is the free speech social network — groups, marketplace, video and live streaming. Read public …"
+    },
+    {
+      "title": "Explore Trending Posts, People & Conversations - Gab Social",
+      "url": "https://gab.com/explore",
+      "snippet": "See what is trending on Gab right now — the posts, hashtags, groups and accounts driving conversation. Browse freely without an …"
+    },
+    {
+      "title": "Gab (social network) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Gab_(social_network)",
+      "snippet": "In July 2019, Gab switched its software infrastructure to a fork of Mastodon, a free and open-source social network platform. …"
+    },
+    {
+      "title": "Gab (réseau social) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Gab_(r%C3%A9seau_social)",
+      "snippet": "Gab est un service de réseautage social en ligne basé à Austin, au Texas, principalement connu pour attirer une audience d' …"
+    },
+    {
+      "title": "Guichet automatique bancaire (GAB) : services, retraits et sécurité",
+      "url": "https://www.lesclesdelabanque.com/particulier/les-guichets-automatiques-de-banque-gab/",
+      "snippet": "Jun 25, 2026 · Les banques proposent des guichets automatiques (GAB) disponibles 24h/24, 7j/7, permettant des retraits à tout …"
+    }
+  ]
+}

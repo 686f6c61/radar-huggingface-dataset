@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "fall2026-cs8803-drl/hw4-f26-traces",
+  "slug": "fall2026-cs8803-drl-hw4-f26-traces",
+  "author": "fall2026-cs8803-drl",
+  "url": "https://huggingface.co/fall2026-cs8803-drl/hw4-f26-traces",
+  "created_at": "2026-10-25T20:05:27.000Z",
+  "updated_at": "2026-10-25T20:05:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "cs8803-drl",
+    "hw4",
+    "course-reference",
+    "reinforcement-learning",
+    "ppo",
+    "diagnostics",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home | CS 8803 - DRL",
+      "url": "https://www.pair.toronto.edu/cs8803-drl-f25/",
+      "snippet": "CS 8803 DRL: Deep Reinforcement Learning Course Logistics Instructor: Animesh Garg (office: CODA S1145) Teaching Assistants: Jeremy Collins, Mili Das, Jenny (Hye-Young) Chung Canvas will be used to take quizzes, view grades and view assignments. EdStem: should be your first stop for questions and announcements."
+    },
+    {
+      "title": "PDF CS 8803 DRL fall 2025 syllabus",
+      "url": "https://syllabus.gatech.edu/sites/default/files/2026-04/CS%208803%20DRL%20fall%202025%20syllabus.pdf",
+      "snippet": "This graduate-level seminar course will cover topics and new research frontiers in reinforcement learning (RL). Planned topics include model-based and model-free RL, policy search, Monte Carlo Tree Search, off-policy evaluation, temporal abstraction n and hierarchical approaches, inverse reinforcement learning, and imitation learning."
+    },
+    {
+      "title": "CS 8803 - LLM | CS 8803 - cocoxu.github.io",
+      "url": "https://cocoxu.github.io/CS8803-LLM-spring2026/",
+      "snippet": "couse website CS 8803-LLM CS 8803 LLM - Large Language Models (Georgia Tech) couse website CS 8803-LLM Instructor: Wei Xu Lecture: Mondays, Wednesdays 2:00-3:15pm Schedule (subject to change as the term progresses)"
+    },
+    {
+      "title": "CS 6390 Programming Languages / CS 8803 Program semantics and LLMs ...",
+      "url": "https://faculty.cc.gatech.edu/~qzhang414/course/cs6390/index.html",
+      "snippet": "CS 6390 Programming Languages CS 8803 Program semantics and LLMs Fall 2026 Announcements: [8/18] This page lists the basic course information. We will be using Piazza for CS6390/CS8803. If you need access to Piazza, please email the instructor. [8/18] Welcome to CS6390/CS8803!"
+    },
+    {
+      "title": "PDF semantics and LLMs - syllabus.gatech.edu",
+      "url": "https://syllabus.gatech.edu/sites/default/files/2026-08/Fall-2026-Zhang-CS-8803-Z10.pdf",
+      "snippet": "This course explores the foundations of programming languages and program semantics, with a particular emphasis on how large language models (LLMs) can support programming-language implementation and reasoning tasks. The class will cover the mathematical foundations of programming languages, operational and denotational semantics using the IMP language, and techniques for reasoning about ..."
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "scribekey/scribekey-cleanup-fast",
+  "slug": "scribekey-scribekey-cleanup-fast",
+  "author": "scribekey",
+  "url": "https://huggingface.co/scribekey/scribekey-cleanup-fast",
+  "created_at": "2026-10-25T08:11:40.000Z",
+  "updated_at": "2026-10-25T12:23:02.000Z",
+  "license": "scribekey-fast-model-terms-v1.0-with-lfm-open-license-v1.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2",
+    "text-generation",
+    "transcript-cleanup",
+    "text-normalization",
+    "inverse-text-normalization",
+    "punctuation",
+    "dictation",
+    "conversational",
+    "en",
+    "dataset:juanquivilla/sotto-transcript-cleanup",
+    "base_model:LiquidAI/LFM2.5-350M-Base",
+    "base_model:finetune:LiquidAI/LFM2.5-350M-Base",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 354483968,
+  "parameters_human": "354.5M",
+  "storage_bytes": 708984464,
+  "storage_human": "709 MB",
+  "base_model": "juanquivilla/sotto-cleanup-lfm25-350m, LiquidAI/LFM2.5-350M-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "G-Wolves Gaming",
+      "url": "https://shop.g-wolves.com/",
+      "snippet": "We are G-Wolves Mouse and welcome you to come here and become our friend. We will do our best to help you do well in esports. …"
+    },
+    {
+      "title": "G-Wolves",
+      "url": "https://www.mouse.xyz/",
+      "snippet": "Please use Microsoft Edge or Google Chrome browser (Firefox is not supported) Device not found? please click to another Web …"
+    },
+    {
+      "title": "Products - GWolves",
+      "url": "https://shop.g-wolves.com/collections/all",
+      "snippet": "G-Wolves Fenrir Max 8K Wireless Gaming Mouse ~22.4g From $153.00 5 colors available G-Wolves Fenrir Pro 8K Wireless Gaming …"
+    },
+    {
+      "title": "G-Wolves - MaxGaming.com",
+      "url": "https://www.maxgaming.com/en/g-wolves",
+      "snippet": "To help you get the most out of your gaming, we at Maxgaming have selected our absolute favorites from G-wolves. We also provide …"
+    },
+    {
+      "title": "G-Wolves - Tous les derniers produits | MAXESPORT",
+      "url": "https://maxesport.gg/fr/collections/g-wolves",
+      "snippet": "G-Wolves se concentre notamment sur la production de souris gaming 8K, disponibles en différentes formes (symétriques ou …"
+    }
+  ]
+}

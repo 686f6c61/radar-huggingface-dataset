@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "cagataydev/agi-act-so101-4bit",
+  "slug": "cagataydev-agi-act-so101-4bit",
+  "author": "cagataydev",
+  "url": "https://huggingface.co/cagataydev/agi-act-so101-4bit",
+  "created_at": "2026-10-25T11:29:31.000Z",
+  "updated_at": "2026-10-25T12:43:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "agi.diy",
+    "robotics",
+    "so101",
+    "act",
+    "4-bit",
+    "quantized",
+    "dataset:lerobot/svla_so101_pickplace",
+    "base_model:cagataydev/agi-act-so101",
+    "base_model:quantized:cagataydev/agi-act-so101",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29855770,
+  "storage_human": "30 MB",
+  "base_model": "cagataydev/agi-act-so101",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cagataydev/gr00t-wave · Hugging Face",
+      "url": "https://huggingface.co/cagataydev/gr00t-wave",
+      "snippet": "GR00T Wave is a specialized robotics foundation model trained on dual-camera manipulation data from the SO101 Wave dataset. This model represents a significant advancement in robot learning, enabling sophisticated manipulation tasks through dual-camera visual input."
+    },
+    {
+      "title": "cagataydev (Cagatay Cali) - Hugging Face",
+      "url": "https://huggingface.co/cagataydev/models",
+      "snippet": "User profile of Cagatay Cali on Hugging Face"
+    },
+    {
+      "title": "SO101 Arm ACT Training Guide Using SOLO CLI - GitHub",
+      "url": "https://github.com/omkarputti/SO101_ACT_Training",
+      "snippet": "An open-source robotics project focused on training the SO101 robotic arm using imitation learning, ACT policies, and SOLO CLI workflows for autonomous manipulation tasks. - omkarputti/SO101_ACT_Tr..."
+    },
+    {
+      "title": "GitHub - TourEnduro/SO-101-robot-arm: 6-DoF robot arm with ACT ...",
+      "url": "https://github.com/TourEnduro/SO-101-robot-arm",
+      "snippet": "Project Summary Built two 6-DoF SO-101 robot arms from scratch (3D-printed parts + off-the-shelf electronics), implemented a leader-follower teleoperation system, collected a 50-episode pick-and-place dataset, and trained an ACT imitation learning policy using Hugging Face LeRobot. The trained model runs autonomously on the physical follower arm."
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/",
+      "snippet": "We couldn&#x27;t load your remembered accounts. You can still log in below"
+    }
+  ]
+}

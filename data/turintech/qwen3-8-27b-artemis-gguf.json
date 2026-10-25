@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "turintech/Qwen3.8-27B-Artemis-GGUF",
+  "slug": "turintech-qwen3-8-27b-artemis-gguf",
+  "author": "turintech",
+  "url": "https://huggingface.co/turintech/Qwen3.8-27B-Artemis-GGUF",
+  "created_at": "2026-10-25T11:26:49.000Z",
+  "updated_at": "2026-10-25T12:26:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen",
+    "qwen3.8",
+    "llama.cpp",
+    "function-calling",
+    "tool-calling",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 7830620736,
+  "storage_human": "7.8 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quora - A place to share knowledge and better understand the world",
+      "url": "https://www.quora.com/Have-you-ever-put-your-dick-in-your-sister-s-vagina",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "Grazing the private parts : r/massage - Reddit",
+      "url": "https://www.reddit.com/r/massage/comments/4vu3vi/grazing_the_private_parts/",
+      "snippet": "Aug 2, 2016 · Grazing the private parts I recently started seeing a new massage therapist who is a good friend of my former therapist …"
+    },
+    {
+      "title": "Ten Things to Remember When You Talk to Kids about Sexuality",
+      "url": "https://stopitnow.org/ohc-content/ten-things-to-remember-when-you-talk-to-kids-about-sexuality",
+      "snippet": "Talking to your child or teen about sex and sexuality gets easier the more you practice. The more a child knows about their own …"
+    },
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/r/Incestconfessions/",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "Family Strokes - Pat",
+      "url": "https://pat.com/FamilyStrokes",
+      "snippet": "Some families are closer than others FamilyStrokes.com"
+    }
+  ]
+}

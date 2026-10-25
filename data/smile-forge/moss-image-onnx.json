@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "smile-forge/moss-image-onnx",
+  "slug": "smile-forge-moss-image-onnx",
+  "author": "smile-forge",
+  "url": "https://huggingface.co/smile-forge/moss-image-onnx",
+  "created_at": "2026-10-25T11:19:04.000Z",
+  "updated_at": "2026-10-25T11:19:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "moss-image",
+    "text-to-image",
+    "lora",
+    "base_model:OpenMOSS-Team/MOSS-Image-SFT",
+    "base_model:adapter:OpenMOSS-Team/MOSS-Image-SFT",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6872384057,
+  "storage_human": "6.9 GB",
+  "base_model": "OpenMOSS-Team/MOSS-Image-SFT",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Smile (film, 2022) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Smile_(film,_2022)",
+      "snippet": "Le président de Paramount Pictures, Brian Robbins, explique qu'à l'origine, il était prévu de diffuser Smile sur Paramount+, mais le …"
+    },
+    {
+      "title": "Smile - Film 2022 - AlloCiné",
+      "url": "https://www.allocine.fr/film/fichefilm_gen_cfilm=304967.html",
+      "snippet": "Smile est un film réalisé par Parker Finn avec Sosie Bacon, Jessie T. Usher. Synopsis : Après avoir été témoin d'un incident …"
+    },
+    {
+      "title": "Smile - Groupe européen de services numériques",
+      "url": "https://smile.eu/fr",
+      "snippet": "Smile déploie son expertise en IA, souveraineté numérique et technologies de pointe pour créer un impact mesurable pour ses …"
+    },
+    {
+      "title": "F.F.A. - SMILE",
+      "url": "https://smile.ffa-aero.fr/SMILE_II",
+      "snippet": "Je suis licencié (e) FFA, mais je n'ai jamais créé (e) mon compte SMILE (création de mot de passe) N° licence FFA Mot de passe"
+    },
+    {
+      "title": "Smile Groupe : acteur clé de l’open source en France",
+      "url": "https://smile.eu/fr/le-groupe/qui-sommes-nous",
+      "snippet": "Qui est Smile ? Découvrez un groupe expert en open source qui accompagne les entreprises dans leurs projets digitaux avec une …"
+    }
+  ]
+}

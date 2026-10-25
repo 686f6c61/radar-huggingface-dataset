@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "cagataydev/agi-smolvla-so101-4bit",
+  "slug": "cagataydev-agi-smolvla-so101-4bit",
+  "author": "cagataydev",
+  "url": "https://huggingface.co/cagataydev/agi-smolvla-so101-4bit",
+  "created_at": "2026-10-25T11:29:38.000Z",
+  "updated_at": "2026-10-25T12:43:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "agi.diy",
+    "robotics",
+    "so101",
+    "smolvla",
+    "vla",
+    "4-bit",
+    "quantized",
+    "dataset:lerobot/svla_so101_pickplace",
+    "base_model:cagataydev/agi-smolvla-so101",
+    "base_model:quantized:cagataydev/agi-smolvla-so101",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 253921790,
+  "storage_human": "254 MB",
+  "base_model": "cagataydev/agi-smolvla-so101",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rapport de credit Qu est ce qu un rapport de credit et ... - FasterCapital",
+      "url": "https://fastercapital.com/fr/contenu/Rapport-de-credit---Qu-est-ce-qu-un-rapport-de-credit-et-comment-le-lire-correctement.html",
+      "snippet": "Aug 25, 2026 · Un rapport de crédit est un document détaillé qui montre votre historique de crédit, y compris vos informations …"
+    },
+    {
+      "title": "Rapport de credit qu est ce qu un rapport de credit et comment en ...",
+      "url": "https://fastercapital.com/fr/contenu/Rapport-de-credit---qu-est-ce-qu-un-rapport-de-credit-et-comment-en-obtenir-une-copie-gratuite.html",
+      "snippet": "Aug 25, 2026 · Un rapport de crédit est un résumé détaillé de vos antécédents de crédit, que les prêteurs et autres institutions …"
+    },
+    {
+      "title": "Rapport de crédit : comment mieux gérer vos risques clients",
+      "url": "https://www.highradius.com/fr/ressources/Blog/structure-rapport-credit/",
+      "snippet": "Apr 4, 2025 · Dans cet article, nous décryptons la structure d’un rapport de crédit, les informations qu’il contient, les signaux à …"
+    },
+    {
+      "title": "Free Credit Report | TransUnion",
+      "url": "https://www.transunion.com/free-credit-report",
+      "snippet": "See options to access your TransUnion® Credit Report. Plus free credit score updates, alerts, credit monitoring and personalized …"
+    },
+    {
+      "title": "Rapports de crédit & vérification de la solvabilité des entreprises",
+      "url": "https://www.creditsafe.com/be/fr/gestion-du-risque/controle-de-solvabilite/rapports-de-credit.html",
+      "snippet": "Qu’est-ce qu’un rapport de crédit ? Un rapport de crédit est un rapport d’entreprise détaillé qui fournit des informations sur la …"
+    }
+  ]
+}

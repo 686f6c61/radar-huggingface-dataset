@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "hermitdave/Nanbeige4.3-33B-MLX-rtn-8bit",
+  "slug": "hermitdave-nanbeige4-3-33b-mlx-rtn-8bit",
+  "author": "hermitdave",
+  "url": "https://huggingface.co/hermitdave/Nanbeige4.3-33B-MLX-rtn-8bit",
+  "created_at": "2026-10-25T17:17:48.000Z",
+  "updated_at": "2026-10-25T17:19:23.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "llama",
+    "quantized",
+    "rtn",
+    "8bit",
+    "apple-silicon",
+    "nanbeige",
+    "base_model:Nanbeige/Nanbeige4.3-33B",
+    "base_model:quantized:Nanbeige/Nanbeige4.3-33B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33118977024,
+  "parameters_human": "33.12B",
+  "storage_bytes": 37451504949,
+  "storage_human": "37.5 GB",
+  "base_model": "Nanbeige/Nanbeige4.3-33B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nanbeige4.3-33B: Open 33B Agent Model, 80.9 on Terminal-Bench ...",
+      "url": "https://explainx.ai/blog/nanbeige-4-3-33b-open-agentic-model-guide-2026",
+      "snippet": "Nanbeige4.3-33B is a new open-weight dense model released on October 24, 2026 under the Apache 2.0 license, built for coding and office-style agents. The model card on Hugging Face reports that it leads three comparable 30B-class models on most agentic benchmarks, including 80.9 on Terminal-Bench 2.1."
+    },
+    {
+      "title": "CVLTAI/Nanbeige4.3-33B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/CVLTAI/Nanbeige4.3-33B-GGUF",
+      "snippet": "What this is Nanbeige4.3-33B is a 33B-parameter agentic teacher model from Nanbeige, built for complex coding and professional cowork tasks. It is a Llama-architecture model with 52 layers, 7168 hidden size, 56 attention heads (8 KV heads), 524288 context length, and a 166912-token vocabulary."
+    },
+    {
+      "title": "Nanbeige4.3-33B, a bilingual 33B chat model… · AGI Hunt",
+      "url": "https://agihunt.info/en/p/1a1736d41c23a03374601997498",
+      "snippet": "Nanbeige&#x27;s 33B-parameter conversational model Nanbeige4.3-33B is trending on Hugging Face. Built on Nanbeige4."
+    },
+    {
+      "title": "Nanbeige/Nanbeige4.1-3B · Hugging Face",
+      "url": "https://huggingface.co/Nanbeige/Nanbeige4.1-3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Nanbeige4.3-33B arrives open source and takes on Qwen3.8-27B in coding",
+      "url": "https://pasqualepillitteri.it/en/news/27138/nanbeige-4-3-33b-open-source-en",
+      "snippet": "Nanbeige4.3-33B (to many simply Nanbeige 4.3 33B) is an open language model with 33.1 billion parameters, an Apache 2.0 license and a 512,000-token context window, published on October 24 on Hugging Face by the Chinese lab Nanbeige."
+    }
+  ]
+}

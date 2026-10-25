@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "bf109g14/Qwen3.5-4B-Uncensored-HauhauCS-Aggressive",
+  "slug": "bf109g14-qwen3-5-4b-uncensored-hauhaucs-aggressive",
+  "author": "bf109g14",
+  "url": "https://huggingface.co/bf109g14/Qwen3.5-4B-Uncensored-HauhauCS-Aggressive",
+  "created_at": "2026-10-25T17:41:17.000Z",
+  "updated_at": "2026-10-25T17:41:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "uncensored",
+    "qwen3.5",
+    "qwen",
+    "en",
+    "zh",
+    "multilingual",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 19753933312,
+  "storage_human": "19.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5-4B-Uncensored-HauhauCS-Aggressive - Hugging Face",
+      "url": "https://huggingface.co/HauhauCS/Qwen3.5-4B-Uncensored-HauhauCS-Aggressive",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5-4B-Uncensored-HauhauCS-Aggressive-MTP - Hugging Face",
+      "url": "https://huggingface.co/AIOpsInSpace/Qwen3.5-4B-Uncensored-HauhauCS-Aggressive-MTP",
+      "snippet": "As an unaligned model, users are responsible for ensuring usage complies with local laws. Credits: Gratitude to original base model authors (HauhauCS/Qwen3.5-4B-Uncensored-HauhauCS-Aggressive) and open-source AI community tools."
+    },
+    {
+      "title": "Qwen3.5-4B-Uncensored-HauhauCS-Aggressive · Model · Inferix",
+      "url": "https://inferix.co/models/HauhauCS/Qwen3.5-4B-Uncensored-HauhauCS-Aggressive",
+      "snippet": "Qwen3.5-4B-Uncensored-HauhauCS-Aggressive Join the Discord for updates, roadmaps, projects, or just to chat. Qwen3.5-4B uncensored by HauhauCS. About 0/465 refusals. Fully uncensored with zero capability loss. No changes to datasets or capabilities. Fully functional, 100% of what the original authors intended - just without the refusals."
+    },
+    {
+      "title": "Qwen 3.5 (4B) Uncensored - Colab & Ollama Deployment - GitHub",
+      "url": "https://github.com/CookieFilled/qwen-3.5-4B-uncensored-colab",
+      "snippet": "Features Free GPU Acceleration: Configured to automatically detect and utilize Google Colab&#x27;s T4 GPU for fast, responsive text generation. Uncensored Model: Runs the HauhauCS/Qwen3.5-4B-Uncensored-HauhauCS-Aggressive model (Q4_K_M GGUF format) for unrestricted, highly direct outputs."
+    },
+    {
+      "title": "HauhauCS/Qwen3.5-4B-Uncensored-HauhauCS-Aggressive",
+      "url": "https://abliteration.org/models/HauhauCS/Qwen3.5-4B-Uncensored-HauhauCS-Aggressive",
+      "snippet": "Qwen3.5-4B-Uncensored-HauhauCS-Aggressive by HauhauCS: Uncensored (method unknown). 217.9K downloads, 666 likes on Hugging Face. Files, benchmarks and abliteration classification on abliteration.org."
+    }
+  ]
+}

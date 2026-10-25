@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "0xSojalSec/Huihui-GLM-5.3-Flash-abliterated",
+  "slug": "0xsojalsec-huihui-glm-5-3-flash-abliterated",
+  "author": "0xSojalSec",
+  "url": "https://huggingface.co/0xSojalSec/Huihui-GLM-5.3-Flash-abliterated",
+  "created_at": "2026-10-25T19:30:53.000Z",
+  "updated_at": "2026-10-25T19:30:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "huihui",
+    "unsloth",
+    "glm5_next",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:quantized:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 320759404382,
+  "parameters_human": "320.76B",
+  "storage_bytes": 1558967754752,
+  "storage_human": "1559.0 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Un/censored version of GLM-5.2 via ab/literation easier to run locally ...",
+      "url": "https://www.facebook.com/0xSojalSec/posts/uncensored-version-of-glm-52-via-abliteration-easier-to-run-locally40b-active-1m/1560314268956304/",
+      "snippet": "02.07.2026 ... co/huihui-ai/Huihui-GLM-5.2-abliterated -GGUF￼ · No photo description ... AI models like GLM 5.3 compared to popular frontier models like Claude ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=v100&p=0&sort=trending",
+      "snippet": "philbert440/GLM-5.3-Flash-EXL3. Image-Text-to-Text • 52B • Updated 12 days ... Israeli-AI/DeepSeek-v4-flash-180b-W4A16-VOLTA-Ampere. Text Generation ..."
+    },
+    {
+      "title": "Models compatible with the GGUF library - Hugging Face",
+      "url": "https://huggingface.co/models?library=gguf&p=44&sort=downloads",
+      "snippet": "softwareweaver/GLM-5.3-Uncensored-GGUF. Text Generation • 753B ... mradermacher/LING-3.0-FLASH-ABLITERATED-i1-GGUF. 127B • Updated Aug 21 • 16.1 ..."
+    },
+    {
+      "title": "B2B — sold, but not off a price list · Pass Index",
+      "url": "https://pass.io/index/waiting",
+      "snippet": "Huihui-Qwen3.8-Flash-Next-abliteratedmodel; Huihui-gemma-4-12B-it-abliterated ... penclaw-GLM-5.3-abliteratedmodel; personaplex-7b-v1model; personaplex-rl ..."
+    }
+  ]
+}

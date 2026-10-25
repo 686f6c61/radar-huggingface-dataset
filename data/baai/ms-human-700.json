@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "BAAI/MS-Human-700",
+  "slug": "baai-ms-human-700",
+  "author": "BAAI",
+  "url": "https://huggingface.co/BAAI/MS-Human-700",
+  "created_at": "2026-10-25T13:50:09.000Z",
+  "updated_at": "2026-10-25T13:50:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mujoco",
+    "reinforcement-learning",
+    "musculoskeletal",
+    "sensorimotor",
+    "en",
+    "arxiv:2312.05473",
+    "arxiv:2407.11472",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19307046,
+  "storage_human": "19 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Script Executor - Simple Script Execution - Roblox",
+      "url": "https://devforum.roblox.com/t/script-executor-simple-script-execution/3141932",
+      "snippet": "Aug 31, 2024 · Script Executor is a plugin for executing scripts as quickly as possible. It also has a bunch of other useful functions …"
+    },
+    {
+      "title": "How to Detect for an Executor? - Scripting Support - Roblox",
+      "url": "https://devforum.roblox.com/t/how-to-detect-for-an-executor/660154",
+      "snippet": "Jul 6, 2020 · Some games I’ve Played, When testing, Auto Kick you when you have and Executor Even if you’re not using it. Now I’m …"
+    },
+    {
+      "title": "Releases · Coltenblox/VegaX - GitHub",
+      "url": "https://github.com/Coltenblox/VegaX/releases",
+      "snippet": "Mar 6, 2021 · Vega X. Contribute to Coltenblox/VegaX development by creating an account on GitHub."
+    },
+    {
+      "title": "ROBLOX Exploiting - Reddit",
+      "url": "https://www.reddit.com/r/ROBLOXExploiting/",
+      "snippet": "r/ROBLOXExploiting: A subreddit for ROBLOX exploiting, whether it's questions or downloads, We've got it all! Come join our group …"
+    },
+    {
+      "title": "making an executor and scripts : r/ROBLOXExploiting - Reddit",
+      "url": "https://www.reddit.com/r/ROBLOXExploiting/comments/ljbcz4/making_an_executor_and_scripts/",
+      "snippet": "Feb 13, 2021 · It would be impossible to make your own executor without first knowing what vulnerabilities in Roblox's code would …"
+    }
+  ]
+}

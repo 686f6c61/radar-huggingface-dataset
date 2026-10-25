@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ebenpy/public-opinion-model-comparison",
+  "slug": "ebenpy-public-opinion-model-comparison",
+  "author": "ebenpy",
+  "url": "https://huggingface.co/ebenpy/public-opinion-model-comparison",
+  "created_at": "2026-10-25T11:13:41.000Z",
+  "updated_at": "2026-10-25T11:19:51.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 328180646,
+  "storage_human": "328 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard: AI Model Rankings & Pricing | llmboard.ai",
+      "url": "https://www.llmboard.ai/",
+      "snippet": "Explore the LLM leaderboard to compare the best AI models across capability, pricing and LLM benchmarks. Find the best LLM for coding, reasoning and more."
+    },
+    {
+      "title": "AI Model Rankings & Public Opinion | AI Census",
+      "url": "https://ai-census.com/",
+      "snippet": "See how tracked public AI communities feel about leading models, with simple scores, likely ranges, trends, source views, and inspectable excerpts."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 992 AI models across 708 benchmarks, with 228 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "LMRing - AI Model Comparison Platform",
+      "url": "https://www.lmring.com/",
+      "snippet": "Compare and evaluate AI large language models side-by-side with real benchmarks, community rankings, and comprehensive analysis."
+    },
+    {
+      "title": "AI Model Comparison - Compare GPT vs Claude vs Gemini (2026)",
+      "url": "https://lmmarketcap.com/compare",
+      "snippet": "AI model comparison tool: compare any 2-4 AI models side-by-side on benchmarks, pricing, speed, and real-world performance. GPT vs Claude vs Gemini and 350+ models."
+    }
+  ]
+}

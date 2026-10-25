@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "webbrain-one/Nanbeige4.3-33B-NVFP4",
+  "slug": "webbrain-one-nanbeige4-3-33b-nvfp4",
+  "author": "webbrain-one",
+  "url": "https://huggingface.co/webbrain-one/Nanbeige4.3-33B-NVFP4",
+  "created_at": "2026-10-25T17:19:39.000Z",
+  "updated_at": "2026-10-25T17:42:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "nvfp4",
+    "fp4",
+    "compressed-tensors",
+    "llm-compressor",
+    "vllm",
+    "nanbeige",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Nanbeige/Nanbeige4.3-33B",
+    "base_model:quantized:Nanbeige/Nanbeige4.3-33B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 19676626648,
+  "parameters_human": "19.68B",
+  "storage_bytes": 22091642653,
+  "storage_human": "22.1 GB",
+  "base_model": "Nanbeige/Nanbeige4.3-33B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WebBrain — Free Open-Source AI Browser Agent",
+      "url": "https://www.webbrain.one/",
+      "snippet": "The Open-Source AI Browser Agent Free, open-source alternative to Claude in Chrome. Use any model, including local ones, so your pages never leave your machine."
+    },
+    {
+      "title": "Nanbeige 4.2 3B BF16 WebBrain planner benchmark - WebBrain Blog",
+      "url": "https://www.webbrain.one/blog/nanbeige-42-3b-bf16-planner-benchmark",
+      "snippet": "We tested Nanbeige4.2-3B in BF16 on an RTX 5090. Its official agent benchmarks beat Qwen 3.5 9B and Gemma 4 12B, but WebBrain&#x27;s frozen browser-planner replay did not reproduce that lead."
+    },
+    {
+      "title": "webbrain-one (WebBrain) - Hugging Face",
+      "url": "https://huggingface.co/webbrain-one",
+      "snippet": "webbrain-one (WebBrain) - Hugging Face ... Browser Vision"
+    },
+    {
+      "title": "Nanbeige4.3-33B: Open 33B Agent Model, 80.9 on Terminal-Bench ...",
+      "url": "https://explainx.ai/blog/nanbeige-4-3-33b-open-agentic-model-guide-2026",
+      "snippet": "Nanbeige4.3-33B is a new open-weight dense model released on October 24, 2026 under the Apache 2.0 license, built for coding and office-style agents. The model card on Hugging Face reports that it leads three comparable 30B-class models on most agentic benchmarks, including 80.9 on Terminal-Bench 2.1."
+    },
+    {
+      "title": "GitHub - webbrain-one/webbrain: Open-source AI browser agent for Chrome ...",
+      "url": "https://github.com/webbrain-one/webbrain",
+      "snippet": "WebBrain Open-source AI browser agent for chatting with pages, automating tasks, and running multi-step workflows with your choice of LLM. English · 中文 · Français · Docs · Website · Discord · GPL-3.-or-later WebBrain is a web browser extension that puts an AI agent in a side panel next to your tabs."
+    }
+  ]
+}

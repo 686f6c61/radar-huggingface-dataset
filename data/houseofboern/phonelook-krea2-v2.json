@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "houseofboern/phonelook-krea2-v2",
+  "slug": "houseofboern-phonelook-krea2-v2",
+  "author": "houseofboern",
+  "url": "https://huggingface.co/houseofboern/phonelook-krea2-v2",
+  "created_at": "2026-10-25T17:42:10.000Z",
+  "updated_at": "2026-10-25T17:42:26.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "lora",
+    "krea2",
+    "realism",
+    "interiors",
+    "text-to-image",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 114325208,
+  "storage_human": "114 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ادبیات اروتیک - ویکی‌پدیا، دانشنامهٔ آزاد",
+      "url": "https://fa.m.wikipedia.org/wiki/%D8%A7%D8%AF%D8%A8%DB%8C%D8%A7%D8%AA_%D8%A7%D8%B1%D9%88%D8%AA%DB%8C%DA%A9",
+      "snippet": "جلد نسخه آمریکایی مربوط به سال ۱۹۱۰ از رمان وابسته به عشق شهوانی فانی هیل اثر جان کلیلند. ادبیات اروتیک (به انگلیسی: Erotic literature) یا ادبیات شهوانی داستان‌ها و گزارش‌های حقیقی …Read more"
+    },
+    {
+      "title": "Persian stories داستان‌ های سکسی‌ - شهوانی من",
+      "url": "https://shahvani.me/tag/iran/",
+      "snippet": "آرشیو Persian stories داستان‌ های سکسی‌ در شهوانی من ‒ بزرگ‌ترین مجموعه داستان سکسی ایرانی، عکس و چت آنلاین. مطالب جدید هر روز."
+    },
+    {
+      "title": "شهوانی - خانه",
+      "url": "https://shahvani.com/",
+      "snippet": "به شهوانی خوش آمدید در این سایت گلچینی از داستان‌های سکسی و عکس‌های سکسی را می‌بینید. همچنین با عضویت در شهوانی می‌توانید در انجمن گفتگو کنید، در چت شرکت کنید و بیشتر."
+    },
+    {
+      "title": "داستان سکسی Iran stories - شهوانی من - Shahvani Me",
+      "url": "https://shahvani.me/irani/story/",
+      "snippet": "Jun 17, 2013 · شهوانی فیس‌بوک ♥ Dastan Sexy, Persian Aks ♥ داستان سکس جدید داستانهای سکسی♥ داستان سکسی ♥ ( ‿ ) داستان فارسی - داستان های سکسی جدید"
+    },
+    {
+      "title": "برگه 2 | داستان سکسی | صد داستان سکسی | شهوتناک",
+      "url": "https://shahvatnak.com/page/2/",
+      "snippet": "سلام من اسمم محمد است افغان هستم و یک فامیل شش نفره هستیم که پدر و مادر و 2 برادر و 2 خواهریم ، خواهر بزرگترم که حدودا 35 سالشه ازدواج کرده و سه فرزند دارد . وقبلا …"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "o1uh/fresh-doc",
+  "slug": "o1uh-fresh-doc",
+  "author": "o1uh",
+  "url": "https://huggingface.co/o1uh/fresh-doc",
+  "created_at": "2026-10-25T14:52:43.000Z",
+  "updated_at": "2026-10-25T15:00:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "roberta",
+    "code",
+    "documentation",
+    "docstring",
+    "drift-detection",
+    "base_model:microsoft/unixcoder-base",
+    "base_model:finetune:microsoft/unixcoder-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 125938185,
+  "parameters_human": "125.9M",
+  "storage_bytes": 503777428,
+  "storage_human": "504 MB",
+  "base_model": "microsoft/unixcoder-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}
