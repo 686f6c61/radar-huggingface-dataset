@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "aoleg/MOSS-Sharpness-Slider",
+  "slug": "aoleg-moss-sharpness-slider",
+  "author": "aoleg",
+  "url": "https://huggingface.co/aoleg/MOSS-Sharpness-Slider",
+  "created_at": "2026-10-26T18:03:00.000Z",
+  "updated_at": "2026-10-26T18:03:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:OpenMOSS-Team/MOSS-Image-Base",
+    "base_model:adapter:OpenMOSS-Team/MOSS-Image-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 60919895,
+  "storage_human": "61 MB",
+  "base_model": "OpenMOSS-Team/MOSS-Image-Base",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aoleg/MOSS-Image-Kodachrome - Hugging Face",
+      "url": "https://huggingface.co/aoleg/MOSS-Image-Kodachrome",
+      "snippet": "It mimics the color response and the contrast curve of 1940s 4x5 Kodachrome sheet film, but above all the quality and the sharpness. It was trained on MOSS- ..."
+    },
+    {
+      "title": "r/comfyui - Reddit",
+      "url": "https://www.reddit.com/r/comfyui/",
+      "snippet": "18.03.2023 ... A slider LoRA to thicken the lines in MOSS-Image lineart. https://civitai.com/models/3020444/mossboldline-v10. -> Tile-edit for MOSS-Image in ..."
+    },
+    {
+      "title": "r/comfyui - Reddit",
+      "url": "https://www.reddit.com/r/comfyui/best/",
+      "snippet": "A slider LoRA to thicken the lines in MOSS-Image lineart. https://civitai.com/models/3020444/mossboldline-v10. -> Tile-edit for MOSS-Image in ComfyUI.."
+    },
+    {
+      "title": "my_arXiv_daily/README.md at main - GitHub",
+      "url": "https://github.com/BaiShuanghao/my_arXiv_daily/blob/main/README.md",
+      "snippet": "vor 5 Tagen ... WAM-OPD: Sharpening World Action Models via On-Policy Distillation ... Riemann-1.0: An Embodied World Action Model for Physical AI, Haofeng ..."
+    },
+    {
+      "title": "February 2026 - The Year in AI Papers",
+      "url": "https://www.1kpapers.com/months/2026-02",
+      "snippet": "Kimi K2.5 is an open-source multimodal agentic model that jointly optimizes text and vision through techniques including joint pre-training, zero-vision SFT, ..."
+    }
+  ]
+}

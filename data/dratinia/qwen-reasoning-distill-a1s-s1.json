@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Dratinia/qwen-reasoning-distill-a1s-s1",
+  "slug": "dratinia-qwen-reasoning-distill-a1s-s1",
+  "author": "Dratinia",
+  "url": "https://huggingface.co/Dratinia/qwen-reasoning-distill-a1s-s1",
+  "created_at": "2026-10-26T17:52:16.000Z",
+  "updated_at": "2026-10-26T17:53:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "distillation",
+    "math",
+    "reasoning",
+    "research",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:adapter:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 125087712,
+  "storage_human": "125 MB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2511.01354v1] Thinking with DistilQwen: A Tale of Four Distilled ...",
+      "url": "https://arxiv.org/abs/2511.01354v1",
+      "snippet": "Recently, the demand for small and efficient reasoning models to support real-world applications has driven the development of knowledge distillation techniques that balance reasoning performance and inference speed. In this paper, we further extend the DistilQwen model family, initialized from the Qwen models, by introducing four model series specifically designed to meet industrial ..."
+    },
+    {
+      "title": "GitHub - Abhigyan1805/qwen-reasoning-distill: Pre-registered, compute ...",
+      "url": "https://github.com/Abhigyan1805/qwen-reasoning-distill",
+      "snippet": "A compute-matched, pre-registered study of post-training on Qwen3.5-2B, run entirely on free Kaggle T4 GPUs. Each pre-registered post-training arm (SFT distillation from a larger teacher, then GRPO and follow-ups) gets the same compute budget, and every arm is compared with the untouched base model under one identical evaluation harness."
+    },
+    {
+      "title": "Thinking with DistilQwen: A Tale of Four Distilled Reasoning and Reward ...",
+      "url": "https://aclanthology.org/2025.emnlp-industry.94/",
+      "snippet": "Abstract Recently, the demand for small and efficient reasoning models to support real-world applications has driven the development of knowledge distillation techniques that balance reasoning performance and inference speed. In this paper, we further extend the DistilQwen model family, initialized from the Qwen models, by introducing four model series specifically designed to meet industrial ..."
+    },
+    {
+      "title": "Thinking with DistilQwen: A Tale of Four Distilled Reasoning and Reward ...",
+      "url": "https://www.alphaxiv.org/resources/2511.01354v1",
+      "snippet": "View recent discussion. Abstract: Recently, the demand for small and efficient reasoning models to support real-world applications has driven the development of knowledge distillation techniques that balance reasoning performance and inference speed. In this paper, we further extend the DistilQwen model family, initialized from the Qwen models, by introducing four model series specifically ..."
+    },
+    {
+      "title": "Distillation Lineage Tracker 2026 - Presenc AI",
+      "url": "https://presenc.ai/research/distillation-lineage-tracker-2026",
+      "snippet": "The DeepSeek-R1-Distill family (six variants from Qwen 1.5B through Llama 70B) is the most-deployed distillation lineage on Hugging Face with cumulative downloads in the tens of millions, transferring frontier reasoning quality into consumer-hardware-deployable sizes."
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "FWKV/Fables",
+  "slug": "fwkv-fables",
+  "author": "FWKV",
+  "url": "https://huggingface.co/FWKV/Fables",
+  "created_at": "2026-10-16T19:15:00.000Z",
+  "updated_at": "2026-10-26T15:50:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "fwkv",
+    "feature-extraction",
+    "rnn",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 111727872,
+  "parameters_human": "111.7M",
+  "storage_bytes": 449796810,
+  "storage_human": "450 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

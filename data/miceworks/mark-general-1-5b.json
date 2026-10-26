@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "miceworks/Mark-General-1.5B",
+  "slug": "miceworks-mark-general-1-5b",
+  "author": "miceworks",
+  "url": "https://huggingface.co/miceworks/Mark-General-1.5B",
+  "created_at": "2026-10-26T18:41:46.000Z",
+  "updated_at": "2026-10-26T18:41:46.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Generalist AI Releases GEN-1.5 Robot Foundation Model That Learns From ...",
+      "url": "https://theaiinsider.tech/2026/08/22/generalist-ai-releases-gen-1-5-robot-foundation-model-that-learns-from-a-single-demonstration/",
+      "snippet": "The model processes video, language, sensor and robot-position information and maintains about 30 seconds of context. Generalist AI said GEN-1.5 can combine separate demonstrations into longer behaviors and, in some cases, reproduce a task after watching a person perform it with their hands."
+    },
+    {
+      "title": "Open Source AI Models 2026: Llama, Mistral, DeepSeek & The Complete Guide",
+      "url": "https://aiunpacking.com/guides/open-source-ai-models-2026-llama-mistral-deepseek/",
+      "snippet": "A current guide to open and open-weight AI models in 2026, including Llama 5, Mistral Large 3, DeepSeek V4, licensing, deployment, fine-tuning, and enterprise selection."
+    },
+    {
+      "title": "Generalist AI GEN-1.5: Robots Learn From a Single Demo",
+      "url": "https://tbreak.com/generalist-ai-gen-1-5-robot-foundation-model/",
+      "snippet": "Key Takeaways Generalist AI&#x27;s GEN-1.5 robot foundation model learns new physical tasks from a single 3-12 second demonstration, with no gradient updates or fine-tuning. One-shot in-context prompting averaged 59% success across 10 tasks; 10 gradient steps on five minutes of data raise that to 83%. The abilities emerged from pretraining rather than being trained for: sim-to-real transfer ..."
+    },
+    {
+      "title": "Introducing GEN-1.5, a one-shot learner - YouTube",
+      "url": "https://www.youtube.com/watch?v=1cllCVK-9lo",
+      "snippet": "Humans have a remarkable ability to perform new physical skills from only one or a few examples. Our latest robot foundation model, GEN-1.5, exhibits the beg..."
+    },
+    {
+      "title": "Generalist AI GEN-1.5 Learns New Robot Tasks From Single Demo, No ...",
+      "url": "https://www.techtimes.com/articles/325174/20260821/generalist-ai-gen-15-learns-new-robot-tasks-single-demo-no-retraining.htm",
+      "snippet": "Robot one-shot learning reaches a new milestone: Generalist AI&#x27;s GEN-1.5 model learns new physical manipulation tasks from a single 3-12 second demonstration with no retraining, achieving 59 ..."
+    }
+  ]
+}

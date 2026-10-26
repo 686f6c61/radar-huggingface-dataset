@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "alpha-coder-great/al-rasheed-ai",
+  "slug": "alpha-coder-great-al-rasheed-ai",
+  "author": "alpha-coder-great",
+  "url": "https://huggingface.co/alpha-coder-great/al-rasheed-ai",
+  "created_at": "2026-07-14T15:42:17.000Z",
+  "updated_at": "2026-10-26T12:54:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 2772,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2019377376,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alpha — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Alpha",
+      "snippet": "La lettre alpha représente divers concepts en physique et chimie, dont la radioactivité α, l' accélération angulaire, les particules α, la …"
+    },
+    {
+      "title": "Alpha Symbol (α)",
+      "url": "https://wumbo.net/symbols/alpha/",
+      "snippet": "The 'α' is a letter of the Greek alphabet. In mathematics, physics, and engineering, it is often used to denote an angle, a coefficient of …"
+    },
+    {
+      "title": "α Symbole Alpha - PiliApp",
+      "url": "https://fr.piliapp.com/symbols/alpha/",
+      "snippet": "Le symbole Alpha, noté α (minuscule) et Α (majuscule), provient de l'alphabet grec où il est la première lettre. Avec le temps, il a été …"
+    },
+    {
+      "title": "Parcours Alpha",
+      "url": "https://www.parcoursalpha.fr/",
+      "snippet": "Alpha est une série de rencontres qui permet d’explorer librement en petits groupes les bases de la foi chrétienne. Vous pouvez …"
+    },
+    {
+      "title": "Ingénierie innovante et digitale - alpha.fr",
+      "url": "https://www.alpha.fr/fr/",
+      "snippet": "Convaincu qu’un autre modèle de production est possible, Alpha (ex-Alpha Maintenance) agit pour un avenir décarboné, sécurisé et …"
+    }
+  ]
+}

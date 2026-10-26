@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "stheeju/potential-well-simulator",
+  "slug": "stheeju-potential-well-simulator",
+  "author": "stheeju",
+  "url": "https://huggingface.co/stheeju/potential-well-simulator",
+  "created_at": "2026-10-26T12:27:28.000Z",
+  "updated_at": "2026-10-26T12:27:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Polymathic AI Releases &#x27;The Well&#x27;: 15TB of Machine Learning Datasets ...",
+      "url": "https://www.marktechpost.com/2024/12/02/polymathic-ai-releases-the-well-15tb-of-machine-learning-datasets-containing-numerical-simulations-of-a-wide-variety-of-spatiotemporal-physical-systems/",
+      "snippet": "The diversity and extensibility of the datasets in \"The Well\" are among its key benefits. Researchers can explore a wide range of physical phenomena using a unified dataset collection. Each dataset includes metadata and training/testing splits, enabling easy benchmarking of different machine-learning models. The variety and granularity of the datasets encourage the development of ..."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, DeepSeek, Qwen, Mistral, Z.ai, Meta, and important open-weight model families."
+    },
+    {
+      "title": "TheWell - a Hugging Face Space by polymathic-ai",
+      "url": "https://huggingface.co/spaces/polymathic-ai/TheWell",
+      "snippet": "Explore and visualize physics simulation datasets hosted on Hugging Face. Select a dataset, field, and file to view the data, with options to adjust time steps for dynamic fields."
+    },
+    {
+      "title": "Prediction of potential well&#x27;s ground state energy using back ...",
+      "url": "https://pubs.aip.org/aip/acp/article/2619/1/050012/2887404/Prediction-of-potential-well-s-ground-state-energy",
+      "snippet": "This study aims to build a Machine Learning Back Propagation Neural Network (BPNN) model to solve the Schrodinger equation for the case of potential wells. The input data is the coefficient of the Fourier representation of the well potential, and the output data is the ground state energy."
+    },
+    {
+      "title": "Quantum Potential Well Simulator — Wavefunctions & Tunneling",
+      "url": "https://www.scifunlab.com/simulations/science/physics/quantum-potential",
+      "snippet": "Explore quantum wells online: infinite and finite potential wells, wavefunctions, energy levels, and tunneling transmission. Adjust well width, barrier…"
+    }
+  ]
+}

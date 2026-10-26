@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "cairndev/qwen3-4b-ifc-bim-qlora",
+  "slug": "cairndev-qwen3-4b-ifc-bim-qlora",
+  "author": "cairndev",
+  "url": "https://huggingface.co/cairndev/qwen3-4b-ifc-bim-qlora",
+  "created_at": "2026-10-26T18:47:25.000Z",
+  "updated_at": "2026-10-26T18:49:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qlora",
+    "sft",
+    "ifc",
+    "bim",
+    "unsloth",
+    "cairn",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:cairndev/ifc-bim-alpaca-dedup",
+    "base_model:Qwen/Qwen3-4B-Base",
+    "base_model:adapter:Qwen/Qwen3-4B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 143758080,
+  "storage_human": "144 MB",
+  "base_model": "Qwen/Qwen3-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3-4B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_4b",
+      "snippet": "Qwen3-4B State‑of‑the‑art large language model useful on a variety of language understanding and generation tasks. The Qwen3‑4B is a state‑of‑the‑art multilingual base language model with 4 billion parameters, excelling in language understanding, generation, coding, and mathematics."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/qwen3_4b at main - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/tree/main/src/qai_hub_models/models/qwen3_4b",
+      "snippet": "The Qwen3-4B is a state-of-the-art multilingual base language model with 4 billion parameters, excelling in language understanding, generation, coding, and mathematics. This is based on the implementation of Qwen3-4B found here. This repository contains scripts for optimized on-device export suitable to run on Qualcomm® devices."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/qwen3_4b/README.md at ... - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/qwen3_4b/README.md",
+      "snippet": "The Qwen3-4B is a state-of-the-art multilingual base language model with 4 billion parameters, excelling in language understanding, generation, coding, and mathematics. This is based on the implementation of Qwen3-4B found here. This repository contains scripts for optimized on-device export suitable to run on Qualcomm® devices."
+    },
+    {
+      "title": "AXERA-TECH/Qwen3-4B · Hugging Face",
+      "url": "https://huggingface.co/AXERA-TECH/Qwen3-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2505.09388",
+      "snippet": "In this work, we introduce Qwen3, the latest series in our foundation model family, Qwen. Qwen3 is a collection of open-weight large language models (LLMs) that achieve state-of-the-art performance across a wide variety of tasks and domains. We release both dense and Mixture-of-Experts (MoE) models, with the number of parameters ranging from 0.6 billion to 235 billion, to meet the needs of ..."
+    }
+  ]
+}

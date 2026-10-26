@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "cineverseproductionsofficial/QwenImage4.5Turbo",
+  "slug": "cineverseproductionsofficial-qwenimage4-5turbo",
+  "author": "cineverseproductionsofficial",
+  "url": "https://huggingface.co/cineverseproductionsofficial/QwenImage4.5Turbo",
+  "created_at": "2026-10-26T12:57:52.000Z",
+  "updated_at": "2026-10-26T12:57:52.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen Timeline: Model & Product Release History",
+      "url": "https://www.scriptbyai.com/qwen-timeline/",
+      "snippet": "Qwen model release dates and version history, from Tongyi Qianwen and Qwen-7B through Qwen3.8-Omni-Flash, Max, Coder, VL, QwQ, and Qwen Code."
+    },
+    {
+      "title": "Can Qwen-Image Model Redefine AI Image Generation and Editing",
+      "url": "https://www.cometapi.com/alibaba-unveils-qwen-image/",
+      "snippet": "Alibaba encourages community feedback and contributions to foster an open, transparent, and sustainable generative AI ecosystem. The latest integration Qwen-Image will soon appear on CometAPI, so stay tuned! While we finalize Qwen-Image Model upload, explore our other models on the Models page or try them in the AI Playground."
+    },
+    {
+      "title": "Qwen Image by Alibaba: What It Does and How It Works",
+      "url": "https://blog.picassoia.com/qwen-image-alibaba-ai-image-model-explained",
+      "snippet": "See how Alibaba&#x27;s Qwen Image model generates photorealistic images, how it compares to competitors, and where to use it online without any setup."
+    },
+    {
+      "title": "Qwen-Image: Advanced AI for Creative Image Generation and Editing",
+      "url": "https://www.qwenimagen.com/blog/qwen-image-advanced-ai-for-creative-image-generati",
+      "snippet": "Qwen-Image is Alibaba&#x27;s cutting-edge foundation model designed for high-precision image generation and intelligent image editing. With an impressive 20 billion parameters, it delivers exceptional performance in both artistic creation and accurate visual modifications, setting a new benchmark for AI-driven creative tools."
+    },
+    {
+      "title": "qwen-image: Text-to-Image model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/fal/qwen-image-fal-ai",
+      "snippet": "Overview qwen-image is a text-to-image generation model in the Qwen series that specializes in complex text rendering and precise image editing, developed by fal-ai. The model addresses a critical weakness in many text-to-image systems: the ability to render readable, accurate text within generated images while maintaining natural visual quality. This makes it particularly valuable for ..."
+    }
+  ]
+}

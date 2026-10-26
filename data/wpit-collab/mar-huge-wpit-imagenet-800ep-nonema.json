@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "wpit-collab/mar-huge-wpit-imagenet-800ep-nonema",
+  "slug": "wpit-collab-mar-huge-wpit-imagenet-800ep-nonema",
+  "author": "wpit-collab",
+  "url": "https://huggingface.co/wpit-collab/mar-huge-wpit-imagenet-800ep-nonema",
+  "created_at": "2026-10-26T15:12:35.000Z",
+  "updated_at": "2026-10-26T15:30:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "wpit",
+    "mar",
+    "image-generation",
+    "imagenet",
+    "non-ema",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 942685824,
+  "parameters_human": "942.7M",
+  "storage_bytes": 3770807336,
+  "storage_human": "3.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

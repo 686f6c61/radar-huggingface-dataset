@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "adityanft/flow-asr-models-test",
+  "slug": "adityanft-flow-asr-models-test",
+  "author": "adityanft",
+  "url": "https://huggingface.co/adityanft/flow-asr-models-test",
+  "created_at": "2026-10-26T18:49:00.000Z",
+  "updated_at": "2026-10-26T18:51:30.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 620128556,
+  "storage_human": "620 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Qwen, Mistral AI, Moonshot AI, Z.ai, MiniMax, NVIDIA, Microsoft AI, Cohere, Xiaomi, and other prominent AI labs. The newest-first tables show each release date, provider, and model type. Dates use the earliest meaningful availability stage for each entry. Preview access ..."
+    },
+    {
+      "title": "asr-aditya (Aditya) · GitHub",
+      "url": "https://github.com/asr-aditya",
+      "snippet": "Contributed to asr-aditya/spoken-language-processing, asr-aditya/distil-xlsr, arctan-ai/open_asr_leaderboard and 1 other repository"
+    },
+    {
+      "title": "Best Open Speech Recognition (ASR) Models in 2026: WER, Languages ...",
+      "url": "https://www.marktechpost.com/2026/07/23/best-open-speech-recognition-asr-models-in-2026-wer-languages-latency-and-license-compared/",
+      "snippet": "Compare 16 open ASR models on WER, languages, latency and license, including Cohere Transcribe, Granite Speech and Voxtral"
+    },
+    {
+      "title": "Microsoft Foundry Models overview - Microsoft Foundry",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/foundry-models-overview",
+      "snippet": "The model catalog in Foundry portal is the hub for discovering and using a wide range of models to build generative AI applications. The model catalog features thousands of models from providers like Azure OpenAI, Anthropic, Mistral, Meta, Cohere, NVIDIA, and Hugging Face, including models that Microsoft trained."
+    },
+    {
+      "title": "GitHub - aditya8975/AI-Model-Gateway: A single API gateway that ...",
+      "url": "https://github.com/aditya8975/AI-Model-Gateway/tree/main/",
+      "snippet": "A single API gateway that authenticates, rate-limits, queues, logs, and routes requests to multiple AI backends — LLM, ASR (speech-to-text), TTS (text-to-speech), Vision, and OCR — behind one consistent interface. This is the same shape of system that powers multi-model AI platforms like Sarvam&#x27;s API layer."
+    }
+  ]
+}

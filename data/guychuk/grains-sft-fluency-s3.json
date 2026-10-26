@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "guychuk/grains-sft-fluency-s3",
+  "slug": "guychuk-grains-sft-fluency-s3",
+  "author": "guychuk",
+  "url": "https://huggingface.co/guychuk/grains-sft-fluency-s3",
+  "created_at": "2026-10-26T12:20:48.000Z",
+  "updated_at": "2026-10-26T12:21:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:ornith-ai/Ornith-1.5-35B-A3B",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:ornith-ai/Ornith-1.5-35B-A3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3787764588,
+  "storage_human": "3.8 GB",
+  "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "guychuk/grains-sft-fluency-s3 · Hugging Face",
+      "url": "https://huggingface.co/guychuk/grains-sft-fluency-s3",
+      "snippet": "Instructions to use guychuk/grains-sft-fluency-s3 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use guychuk/grains-sft-fluency-s3 with PEFT:"
+    },
+    {
+      "title": "[2502.08130v2] Selective Self-to-Supervised Fine-Tuning for ...",
+      "url": "https://arxiv.org/abs/2502.08130v2",
+      "snippet": "Fine-tuning Large Language Models (LLMs) on specific datasets is a common practice to improve performance on target tasks. However, this performance gain often leads to overfitting, where the model becomes too specialized in either the task or the characteristics of the training data, resulting in a loss of generalization. This paper introduces Selective Self-to-Supervised Fine-Tuning (S3FT ..."
+    },
+    {
+      "title": "guychuk (guynachshon) - Hugging Face",
+      "url": "https://huggingface.co/guychuk/datasets",
+      "snippet": "AI & ML interests ... Recent Activity published a model 12 days ago ... liked a model 15 days ago ... updated a dataset 2 months ago"
+    },
+    {
+      "title": "Selective Self-to-Supervised Fine-Tuning for Generalization in Large ...",
+      "url": "https://ai-search.io/papers/selective-self-to-supervised-fine-tuning-for-generalization-in-large-language-models",
+      "snippet": "This paper talks about Selective Self-to-Supervised Fine-Tuning (S3FT), a new method to improve how large AI language models (LLMs) learn and perform on tasks without becoming too specialized or losing their ability to generalize. This matters because it helps make AI models more reliable and versatile. By improving how these models learn, S3FT allows them to perform better on specific tasks ..."
+    },
+    {
+      "title": "Supervised Fine-Tuning (SFT) for LLMs - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/supervised-fine-tuning-sft-for-llms/",
+      "snippet": "Supervised Fine-Tuning (SFT) is a method of adapting a pre-trained language model using a smaller dataset containing labeled examples. The model learns to produce the desired output for a given input, improving its performance on a specific task or type of instruction. For example: To build a spam classifier, we can fine-tune a pre-trained model using emails labeled as \"spam\" or \"not ..."
+    }
+  ]
+}

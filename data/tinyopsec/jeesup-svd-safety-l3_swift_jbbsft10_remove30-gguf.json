@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "tinyopsec/Jeesup-svd-safety-l3_swift_jbbsft10_remove30-GGUF",
+  "slug": "tinyopsec-jeesup-svd-safety-l3_swift_jbbsft10_remove30-gguf",
+  "author": "tinyopsec",
+  "url": "https://huggingface.co/tinyopsec/Jeesup-svd-safety-l3_swift_jbbsft10_remove30-GGUF",
+  "created_at": "2026-10-26T12:31:04.000Z",
+  "updated_at": "2026-10-26T12:33:40.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "llama-cpp",
+    "text-generation",
+    "base_model:Jeesup/svd-safety-l3_swift_jbbsft10_remove30",
+    "base_model:quantized:Jeesup/svd-safety-l3_swift_jbbsft10_remove30",
+    "license:llama3",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16068891712,
+  "storage_human": "16.1 GB",
+  "base_model": "Jeesup/svd-safety-l3_swift_jbbsft10_remove30",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tinyopsec/Jeesup-svd-safety-l3_swift_remove20_swapgapiter_b010-GGUF",
+      "url": "https://huggingface.co/tinyopsec/Jeesup-svd-safety-l3_swift_remove20_swapgapiter_b010-GGUF",
+      "snippet": "Instructions to use tinyopsec/Jeesup-svd-safety-l3_swift_remove20_swapgapiter_b010-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Jeesup/svd-safety-l3_swift_jbbsft1_remove30 · Hugging Face",
+      "url": "https://huggingface.co/Jeesup/svd-safety-l3_swift_jbbsft1_remove30",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Jeesup/svd-safety-l3_swift_remove20 - featherless.ai",
+      "url": "https://featherless.ai/models/Jeesup/svd-safety-l3_swift_remove20",
+      "snippet": "Jeesup/svd-safety-l3_swift_remove20 is an 8 billion parameter Llama-3-8B-Instruct model that has undergone significant compression and recovery. It was created by Jeesup using Swift-SVD for compression, reducing its parameters to 80% of the original, followed by recovery using SVD-LLM&#x27;s stage-2 LoRA."
+    },
+    {
+      "title": "Jeesup/svd-safety-l3_swift_remove40 - featherless.ai",
+      "url": "https://featherless.ai/models/Jeesup/svd-safety-l3_swift_remove40",
+      "snippet": "Overview This model, svd-safety-l3_swift_remove40, is an 8 billion parameter Llama-2-7b-chat checkpoint that has undergone SVD-LLM compression, resulting in 60% of its original dense parameters. It is a research artifact from a study investigating the effects of SVD compression on model safety and the efficacy of various component-selection rules for restoring safety."
+    },
+    {
+      "title": "svd-safety-l3_remove50_swapgapiter_b010_r04 by Park",
+      "url": "https://savrn.com/models/svd-safety-l3-remove50-swapgapiter-b010-r04",
+      "snippet": "svd-safety-l3_remove50_swapgapiter_b010_r04 from Park, 8B parameters: license, access terms, disclosed training data, reported evaluations and the…"
+    }
+  ]
+}

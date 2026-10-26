@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "netagrow/bemba-en-transformer",
+  "slug": "netagrow-bemba-en-transformer",
+  "author": "netagrow",
+  "url": "https://huggingface.co/netagrow/bemba-en-transformer",
+  "created_at": "2026-01-21T10:17:05.000Z",
+  "updated_at": "2026-10-26T13:01:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "en",
+    "bem"
+  ],
+  "tags": [
+    "nllb",
+    "machine-translation",
+    "bemba",
+    "ici-bemba",
+    "zambia",
+    "low-resource-languages",
+    "african-languages",
+    "agriculture",
+    "digital-inclusion",
+    "translation",
+    "en",
+    "bem",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "netagrow/en-bemba-transformer · Hugging Face",
+      "url": "https://huggingface.co/netagrow/en-bemba-transformer",
+      "snippet": "Bemba ↔ English Translation Models Model Summary Bidirectional neural machine translation models for Bemba (ChiBemba), a major Zambian Bantu language spoken by ~4 million people, and English. These models enable high-quality translation between Bemba and English in both directions, supporting language preservation and digital inclusion efforts in Zambia. Architecture Base Model: Meta&#x27;s NLLB ..."
+    },
+    {
+      "title": "netagrow/bemba-en-transformer · Hugging Face",
+      "url": "https://huggingface.co/netagrow/bemba-en-transformer",
+      "snippet": "netagrow / bemba-en-transformer like 0 Model card FilesFiles and versions xet Community No model card Downloads last month -"
+    },
+    {
+      "title": "Zeroeva | zero_SG | Kaggle",
+      "url": "https://www.kaggle.com/models/netagrow/bemba-en-transformer",
+      "snippet": "Discover what actually works in AI. Join millions of builders, researchers, and labs evaluating agents, models, and frontier technology through crowdsourced benchmarks, competitions, and hackathons."
+    },
+    {
+      "title": "netagrow/en-bemba-transformer · Discussions",
+      "url": "https://d6108366.hf-mirror.com/netagrow/en-bemba-transformer/discussions",
+      "snippet": "netagrow / en-bemba-transformer like 1 Safetensors doi:10.57967/hf/7613 m2m_100 Model card FilesFiles and versions xet Community Copy to bucket new New discussion New pull request All Discussions Pull requests View closed (0) Sort: Recently created"
+    },
+    {
+      "title": "opus-mt-bem-en Open-source Machine Translation Model: Free Support for ...",
+      "url": "https://model.aibase.com/models/details/1915693243112775681",
+      "snippet": "Model Overview This model is a Transformer-based neural machine translation model specifically designed for translating Bemba (bem) to English (en). It is trained on the OPUS dataset and employs normalization and SentencePiece preprocessing techniques."
+    }
+  ]
+}

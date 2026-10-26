@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "teddyoas/Agron",
+  "slug": "teddyoas-agron",
+  "author": "teddyoas",
+  "url": "https://huggingface.co/teddyoas/Agron",
+  "created_at": "2026-10-13T12:07:01.000Z",
+  "updated_at": "2026-10-26T13:04:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "agron",
+    "code",
+    "cybersecurity",
+    "domain-pretrained",
+    "text-generation",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 1065,
+  "trending_score": 0,
+  "parameters": 50340352,
+  "parameters_human": "50.3M",
+  "storage_bytes": 4530997729,
+  "storage_human": "4.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "teddyoas/Agron · Hugging Face",
+      "url": "https://huggingface.co/teddyoas/Agron",
+      "snippet": "Agron is an autonomous, self-improving AI agent system that learns from scratch. It starts with empty memory and bootstrap rules, then recursively improves through: Observation of task outcomes Memory consolidation and knowledge graph growth Tool/strategy evolution and validation Safe self ..."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, DeepSeek, Qwen, Mistral, Z.ai, Meta, and important open-weight model families."
+    },
+    {
+      "title": "TEDDY: A Family Of Foundation Models For Understanding Single Cell Biology",
+      "url": "https://arxiv.org/pdf/2503.03485",
+      "snippet": "Abstract Understanding the biological mechanisms of disease is crucial for medicine, and in particular, for drug discovery. AI-powered analysis of genome-scale biological data holds great potential in this regard. The increasing availability of single-cell RNA sequencing data has enabled the development of large foundation models for disease biology. However, existing foundation models only ..."
+    },
+    {
+      "title": "Gemini 4 Argon Benchmarks, Pricing & Speed (October 2026)",
+      "url": "https://benchlm.ai/models/gemini-4-argon",
+      "snippet": "Gemini 4 Argon ranks #5 of 228 at 82.79/100 from 27 source-displayable rows (Supported). See evidence, pricing, context, and runtime."
+    },
+    {
+      "title": "Google&#x27;s Powerful New Gemini 4 Argon Model Is Here",
+      "url": "https://nokiapoweruser.com/gemini-4-argon-release-features/",
+      "snippet": "Discover Gemini 4 Argon, Google&#x27;s newest frontier model. Build web apps, 3D files, and reports with deep app integrations and Google Antigravity. - Read in Google AI News on NPowerUser"
+    }
+  ]
+}

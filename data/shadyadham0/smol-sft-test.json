@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ShadyAdham0/smol-sft-test",
+  "slug": "shadyadham0-smol-sft-test",
+  "author": "ShadyAdham0",
+  "url": "https://huggingface.co/ShadyAdham0/smol-sft-test",
+  "created_at": "2026-10-26T12:25:53.000Z",
+  "updated_at": "2026-10-26T13:03:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "conversational",
+    "base_model:HuggingFaceTB/SmolLM2-360M",
+    "base_model:finetune:HuggingFaceTB/SmolLM2-360M",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 361821120,
+  "parameters_human": "361.8M",
+  "storage_bytes": 1482115913,
+  "storage_human": "1.5 GB",
+  "base_model": "HuggingFaceTB/SmolLM2-360M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Supervised Fine-Tuning with SmolLM3 · Hugging Face",
+      "url": "https://huggingface.co/learn/smol-course/unit1/3",
+      "snippet": "For more details on the expected formats, see Dataset formats. The SFTTrainer tokenizes each input using the model&#x27;s tokenizer. If both prompt and completion are provided separately, they are concatenated before tokenization. Computing the loss The loss used in SFT is the token-level cross-entropy loss, defined as:"
+    },
+    {
+      "title": "smol-ai - GitHub",
+      "url": "https://github.com/smol-ai/",
+      "snippet": "a simple, safe, speedy org for smol ai enjoyers. smol.ai has 27 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "GitHub - huggingface/smollm: Everything about the SmolLM and SmolVLM ...",
+      "url": "https://github.com/huggingface/smollm",
+      "snippet": "Welcome to Smol Models, a family of efficient and lightweight AI models from Hugging Face. Our mission is to create fully open powerful yet compact models, for text and vision, that can run effectively on-device while maintaining strong performance."
+    },
+    {
+      "title": "The Smol Training Playbook - a Hugging Face Space by HuggingFaceTB",
+      "url": "https://huggingface.co/spaces/HuggingFaceTB/smol-training-playbook",
+      "snippet": "This web page presents the Smol Training Playbook, a guide to building world‑class language models. It shows interactive visualizations of training loss, hyper‑parameters and other metrics, letting..."
+    },
+    {
+      "title": "AIAny - SmolDataEnvs",
+      "url": "https://aiany.app/item/smoldataenvs",
+      "snippet": "Provides 5.5K+ self-contained data-analysis RL tasks: each row bundles a real tabular dataset, a question, and a deterministically-gradable gold answer. Verified from jupyter-agent notebooks; splits for training, held-out testing, and quick eval; intended for prompting, fine-tuning, and agent RL."
+    }
+  ]
+}

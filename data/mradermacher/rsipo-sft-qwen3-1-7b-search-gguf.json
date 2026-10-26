@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "mradermacher/RSIPO-SFT-Qwen3-1.7B-Search-GGUF",
+  "slug": "mradermacher-rsipo-sft-qwen3-1-7b-search-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/RSIPO-SFT-Qwen3-1.7B-Search-GGUF",
+  "created_at": "2026-10-26T14:54:59.000Z",
+  "updated_at": "2026-10-26T15:03:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "agent",
+    "reinforcement-learning",
+    "rsipo",
+    "skill-sft",
+    "search-agent",
+    "en",
+    "dataset:Karl28/RSIPO-SFT-Data",
+    "base_model:Karl28/RSIPO-SFT-Qwen3-1.7B-Search",
+    "base_model:quantized:Karl28/RSIPO-SFT-Qwen3-1.7B-Search",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 18614601984,
+  "storage_human": "18.6 GB",
+  "base_model": "Karl28/RSIPO-SFT-Qwen3-1.7B-Search",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

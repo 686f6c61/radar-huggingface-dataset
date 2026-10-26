@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "jeffry77/tactile_rope_dinov2",
+  "slug": "jeffry77-tactile_rope_dinov2",
+  "author": "jeffry77",
+  "url": "https://huggingface.co/jeffry77/tactile_rope_dinov2",
+  "created_at": "2026-10-26T12:38:58.000Z",
+  "updated_at": "2026-10-26T12:40:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 201366994,
+  "storage_human": "201 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Depth-Anything-3/src/depth_anything_3/model/dinov2/layers/rope ... - GitHub",
+      "url": "https://github.com/ByteDance-Seed/Depth-Anything-3/blob/main/src/depth_anything_3/model/dinov2/layers/rope.py",
+      "snippet": "Depth Anything 3. Contribute to ByteDance-Seed/Depth-Anything-3 development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - facebookresearch/dinov2: PyTorch code and models for the ...",
+      "url": "https://github.com/facebookresearch/dinov2",
+      "snippet": "Meta AI Research, FAIR Maxime Oquab, Timothée Darcet, Théo Moutakanni, Huy V. Vo, Marc Szafraniec, Vasil Khalidov, Patrick Labatut, Armand Joulin, Piotr Bojanowski [Paper #1] Paper #2] [Blog] [Demo] [BibTeX] PyTorch implementation and pretrained models for DINOv2. For details, see the papers: DINOv2: Learning Robust Visual Features without Supervision and Vision Transformers Need Registers ..."
+    },
+    {
+      "title": "DINOv2 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/dinov2",
+      "snippet": "DINOv2 is a vision foundation model that uses ViT as a feature extractor for multiple downstream tasks like image classification and depth estimation. It focuses on stabilizing and accelerating training through techniques like a faster memory-efficient attention, sequence packing, improved stochastic depth, Fully Sharded Data Parallel (FSDP), and model distillation."
+    },
+    {
+      "title": "9. Learning to See Without Labels: A Technical Tour of Meta ... - Medium",
+      "url": "https://medium.com/@aminfadaeinejad.edu/learning-to-see-without-labels-a-technical-tour-of-metas-dino-dinov2-and-dinov3-d2d4b2a89504",
+      "snippet": "9. Learning to See Without Labels: A Technical Tour of Meta&#x27;s DINO, DINOv2, and DINOv3 For most of the last decade, the recipe for a strong vision backbone was simple but hard: gather a few ..."
+    },
+    {
+      "title": "DINO-V2: Learning Robust Visual Features without Supervision — Model ...",
+      "url": "https://medium.com/@AIBites/dino-v2-learning-robust-visual-features-without-supervision-model-explained-6f641e051a0",
+      "snippet": "DINO-V2: Learning Robust Visual Features without Supervision — Model Explained Introduction Non-members may read this story for free here. Why not subscribe too as you will receive future ..."
+    }
+  ]
+}

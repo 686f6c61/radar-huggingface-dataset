@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "LBK95/GRPO_Iterative_Q1Q2_Llama32-1B_LA0_MCL12_G8_S142_full",
+  "slug": "lbk95-grpo_iterative_q1q2_llama32-1b_la0_mcl12_g8_s142_full",
+  "author": "LBK95",
+  "url": "https://huggingface.co/LBK95/GRPO_Iterative_Q1Q2_Llama32-1B_LA0_MCL12_G8_S142_full",
+  "created_at": "2026-10-26T18:15:26.000Z",
+  "updated_at": "2026-10-26T18:15:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 45118424,
+  "storage_human": "45 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GRPO_Iterative_Q1Q2_Llama32-1B_LA5_MCL12_G8_full - Hugging Face",
+      "url": "https://huggingface.co/LBK95/GRPO_Iterative_Q1Q2_Llama32-1B_LA5_MCL12_G8_full",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "meta-llama/Llama-3.2-1B · Hugging Face",
+      "url": "https://huggingface.co/meta-llama/Llama-3.2-1B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Open-source AI Models for Any Application | Llama 3",
+      "url": "https://dev.meta.ai/llama/models/llama-3",
+      "snippet": "Discover Llama 3&#x27;s open-source AI models you can fine-tune, distill and deploy anywhere. Build smarter applications with flexible AI solutions."
+    },
+    {
+      "title": "mlir-air/programming_examples/llms/llama32_1b at main - GitHub",
+      "url": "https://github.com/Xilinx/mlir-air/tree/main/programming_examples/llms/llama32_1b/",
+      "snippet": "LLAMA-3.2-1B BF16 Inference on AMD NPU2 End-to-end LLAMA-3.2-1B (1B parameter, BF16) inference running on AMD NPU2 (AIE2P) hardware via MLIR-AIR. Supports both prefill (seq_len=2048) and autoregressive decode."
+    },
+    {
+      "title": "Llama 3.2 | Model Cards and Prompt formats - dev.meta.ai",
+      "url": "https://dev.meta.ai/llama/docs/model-cards-and-prompt-formats/llama3_2",
+      "snippet": "Llama 3.2 included lightweight models in 1B and 3B sizes at bfloat16 (BF16) precision. Subsequent to the release, we updated Llama 3.2 to include quantized versions of these models. This section describes these updated lightweight models, how to obtain them, and what use cases they support. Note that we have quantized only the instruct versions of the Llama 3.2 lightweight models, and that ..."
+    }
+  ]
+}

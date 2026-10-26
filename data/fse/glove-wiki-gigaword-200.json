@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "fse/glove-wiki-gigaword-200",
+  "slug": "fse-glove-wiki-gigaword-200",
+  "author": "fse",
+  "url": "https://huggingface.co/fse/glove-wiki-gigaword-200",
+  "created_at": "2022-03-02T23:29:05.000Z",
+  "updated_at": "2026-10-26T15:50:04.000Z",
+  "license": "pddl",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "fse",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "fse",
+    "gensim",
+    "glove",
+    "word-embeddings",
+    "sentence-embeddings",
+    "en",
+    "license:pddl",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 341494892,
+  "storage_human": "341 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FSE",
+      "url": "https://fse.gouv.fr/",
+      "snippet": "Les rencontres du programme national FSE + : découvrez le projet \"Rugby no limit\" - YouTube"
+    },
+    {
+      "title": "Les appels à projets - FSE",
+      "url": "https://fse.gouv.fr/les-appels-a-projets",
+      "snippet": "Jul 15, 2026 · Consultez les appels à projets ouverts et déposez vos candidatures aux programmes du FSE. | FSE"
+    },
+    {
+      "title": "Comment demander une subvention au Fonds social européen plus (FSE ...",
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F31677",
+      "snippet": "Comment demander une subvention au Fonds social européen plus (FSE +) ? Vérifié le 27 janvier 2025 - Service Public / Direction …"
+    },
+    {
+      "title": "Tous nos services — EFP Connect",
+      "url": "https://info.efpconnect.emploi.gouv.fr/tous-nos-services/",
+      "snippet": "La plateforme \"Ma démarche FSE +\" est le portail web unique pour demander et gérer une aide des programmes nationaux du …"
+    },
+    {
+      "title": "Qu’est-ce que le FSE+? | Fonds social européen+",
+      "url": "https://european-social-fund-plus.ec.europa.eu/fr/quest-ce-que-le-fse",
+      "snippet": "Le FSE+ réunit quatre instruments de financement qui étaient distincts au cours de la période de programmation 2014-2020: le …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Will-of-D/enzyme-classification-hybrid-v1",
+  "slug": "will-of-d-enzyme-classification-hybrid-v1",
+  "author": "Will-of-D",
+  "url": "https://huggingface.co/Will-of-D/enzyme-classification-hybrid-v1",
+  "created_at": "2026-10-26T18:39:49.000Z",
+  "updated_at": "2026-10-26T18:47:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 741389842,
+  "storage_human": "741 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WILL | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/will",
+      "snippet": "WILL definition: 1. used to talk about what is going to happen in the future, especially things that you are certain…. Learn more."
+    },
+    {
+      "title": "will - English-French Dictionary WordReference.com",
+      "url": "https://www.wordreference.com/enfr/will",
+      "snippet": "Inflections of ' will ' (v): (⇒ conjugate) will v aux present would v aux past (Used to convey both past and conditional senses)"
+    },
+    {
+      "title": "WILL Definition & Meaning - Merriam-Webster",
+      "url": "https://www.merriam-webster.com/dictionary/will",
+      "snippet": "Oct 19, 2026 · The meaning of WILL is —used to express futurity. How to use will in a sentence. Shall vs. Will: Usage Guide"
+    },
+    {
+      "title": "Will - Grammar - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/grammar/british-grammar/will",
+      "snippet": "Will - English Grammar Today - a reference to written and spoken English grammar and usage - Cambridge Dictionary"
+    },
+    {
+      "title": "Will (philosophy) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Will_(philosophy)",
+      "snippet": "Will, within philosophy, is a faculty of the mind. Will is important as one of the parts of the mind, along with reason and understanding. …"
+    }
+  ]
+}

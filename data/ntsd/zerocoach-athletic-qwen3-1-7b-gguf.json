@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "ntsd/zerocoach-athletic-qwen3-1.7b-GGUF",
+  "slug": "ntsd-zerocoach-athletic-qwen3-1-7b-gguf",
+  "author": "ntsd",
+  "url": "https://huggingface.co/ntsd/zerocoach-athletic-qwen3-1.7b-GGUF",
+  "created_at": "2026-10-26T15:24:14.000Z",
+  "updated_at": "2026-10-26T15:25:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "zerocoach",
+    "sports-science",
+    "athletic-intelligence",
+    "fitness",
+    "nutrition",
+    "calisthenics",
+    "biomechanics",
+    "autoregulation",
+    "on-device",
+    "mobile",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:quantized:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 1107408704,
+  "storage_human": "1.1 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chaînes XXX avec des vidéos ajoutées récemment - OK.XXX",
+      "url": "https://fr.okxxx1.com/channels/updated/",
+      "snippet": "Une nouvelle vidéo porno a récemment été ajoutée à ces chaînes. Regardez-les d'abord !"
+    },
+    {
+      "title": "Vidéos porno chaudes ️ et tendances gratuites - OK.XXX",
+      "url": "https://fr.okxxx1.com/trending/",
+      "snippet": "Nouvelles vidéos XXX 🎞️ qui gagnent rapidement en popularité."
+    },
+    {
+      "title": "OK.PORN - watch and download free porn videos and pictures.",
+      "url": "https://ok.porn/",
+      "snippet": "You are one click away from the best porn tube. Tons of HD porno movies and images. Watch it! Download it! Enjoy it!"
+    },
+    {
+      "title": "Really hot porn videos - OK.PORN",
+      "url": "https://ok.porn/popular/",
+      "snippet": "A porn videos that have seen the most this month."
+    },
+    {
+      "title": "Ok XXX - porn categories",
+      "url": "https://okxxx.pro/categories.php",
+      "snippet": "All categories # 3D (17) 18 (2142) 69 (44) A Actress (9) African (1155) Amateur (5596) Anal (2255) Anime (26) Arab (129) Armpit (2) …"
+    }
+  ]
+}

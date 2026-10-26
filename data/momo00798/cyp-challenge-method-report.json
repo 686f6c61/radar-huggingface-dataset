@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "momo00798/cyp-challenge-method-report",
+  "slug": "momo00798-cyp-challenge-method-report",
+  "author": "momo00798",
+  "url": "https://huggingface.co/momo00798/cyp-challenge-method-report",
+  "created_at": "2026-10-26T17:43:08.000Z",
+  "updated_at": "2026-10-26T17:43:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FreeT4-CYP Method Report - a Hugging Face Space by momo00798",
+      "url": "https://huggingface.co/spaces/momo00798/freet4-cyp-method",
+      "snippet": "OPENADMET CYP INHIBITION CHALLENGE · METHOD REPORT FreeT4-CYP Molecular fingerprints, tree models, and masked multi-task learning for CYP inhibition. New cloud charges: $0.00. Report generated 2026-09-26 05:36 UTC. This describes our method and internal validation. It does not claim a blind-test leaderboard score. Data and provenance We use the public OpenADMET training data: direct ..."
+    },
+    {
+      "title": "OpenADMET CYP Blind Challenge - Hugging Face",
+      "url": "https://huggingface.co/spaces/openadmet/cyp-challenge",
+      "snippet": "OpenADMET Blind Challenge: Predicting CYP Inhibition 🧬 The next OpenADMET blind challenge focuses on predicting Cytochrome P450 (CYP) inhibition. CYP enzymes are the primary drivers of xenobiotic metabolism, and unexpected CYP inhibition can derail drug discovery programs through unpredictable drug-drug interactions."
+    },
+    {
+      "title": "OpenADMET CYP Inhibition Blind Challenge — public entry",
+      "url": "https://github.com/mokhalaf22/openadmet-cyp-public",
+      "snippet": "Entry to the OpenADMET CYP Inhibition Blind Challenge 2026: multi-task D-MPNN with interval-hinge loss, full experiment log and model report. - mokhalaf22/openadmet-cyp-public"
+    },
+    {
+      "title": "OpenADMET CYP Blind Challenge — method report - GitHub",
+      "url": "https://github.com/Arnab28122000/openadmet-cyp-challenge",
+      "snippet": "The method is fully specified above. The implementation lives in a private monorepo; a standalone extract of the four modules named in this report can be published on request."
+    },
+    {
+      "title": "OpenADMET CYP Challenge: Woong method report for September 2026 ...",
+      "url": "https://gist.github.com/ByungwoongYoo/4904441a9b30db077fbb784f9c22e423",
+      "snippet": "This report describes the predictions prepared for the 750 challenge compounds and submitted under the display name Woong on 15 September 2026. It covers direct-inhibition regression for CYP1A2, CYP2C9, CYP2D6 and CYP3A4, and time-dependent inhibition (TDI) classification for CYP2D6 and CYP3A4."
+    }
+  ]
+}

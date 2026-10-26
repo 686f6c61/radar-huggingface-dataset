@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "OliviaRossi/KAT-Ornith-HERO-35B-A3B-Fusion-GGUF",
+  "slug": "oliviarossi-kat-ornith-hero-35b-a3b-fusion-gguf",
+  "author": "OliviaRossi",
+  "url": "https://huggingface.co/OliviaRossi/KAT-Ornith-HERO-35B-A3B-Fusion-GGUF",
+  "created_at": "2026-10-26T15:12:38.000Z",
+  "updated_at": "2026-10-26T16:45:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "q5_k_m",
+    "merge",
+    "qwen",
+    "base_model:OliviaRossi/KAT-Ornith-HERO-35B-A3B-Fusion",
+    "base_model:quantized:OliviaRossi/KAT-Ornith-HERO-35B-A3B-Fusion",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 24720777696,
+  "storage_human": "24.7 GB",
+  "base_model": "OliviaRossi/KAT-Ornith-HERO-35B-A3B-Fusion",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "teddyoas/Agron-epoch1",
+  "slug": "teddyoas-agron-epoch1",
+  "author": "teddyoas",
+  "url": "https://huggingface.co/teddyoas/Agron-epoch1",
+  "created_at": "2026-10-26T13:01:07.000Z",
+  "updated_at": "2026-10-26T13:01:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "agron",
+    "code",
+    "cybersecurity",
+    "domain-pretrained",
+    "text-generation",
+    "base_model:teddyoas/Agron",
+    "base_model:finetune:teddyoas/Agron",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 50340352,
+  "parameters_human": "50.3M",
+  "storage_bytes": 201369672,
+  "storage_human": "201 MB",
+  "base_model": "teddyoas/Agron",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "teddyoas/Agron · Hugging Face",
+      "url": "https://huggingface.co/teddyoas/Agron",
+      "snippet": "Agron is an autonomous, self-improving AI agent system that learns from scratch. It starts with empty memory and bootstrap rules, then recursively improves through: Observation of task outcomes Memory consolidation and knowledge graph growth Tool/strategy evolution and validation Safe self ..."
+    },
+    {
+      "title": "Meet TEDDY: A New Family of Foundation AI Models | BCG X",
+      "url": "https://www.bcg.com/x/the-multiplier/meet-teddy-a-new-family-of-foundational-ai-models",
+      "snippet": "Discover TEDDY: new foundation models built by Merck & Co. and BCG X to advance machine learning for understanding disease biology."
+    },
+    {
+      "title": "Odyssey on X: \"Introducing Agora-1, a multi-agent world model. Multiple ...",
+      "url": "https://x.com/odysseyml/status/2056427523668668643",
+      "snippet": "Introducing Agora-1, a multi-agent world model. Multiple participants—human or AI—can now interact inside the same world simulation, all in real-time. Try our playable research preview today, with Agora-1 simulating a multiplayer GoldenEye deathmatch!"
+    },
+    {
+      "title": "Agora-1 Odyssey AI Video Model: 2026 Future of Video Gen",
+      "url": "https://resource.digen.ai/agora-1-odyssey-ai-video-model-2026/",
+      "snippet": "Explore the revolutionary Agora-1 Odyssey AI video model in 2026. Discover next-gen cinematic generation and features. Learn how to start creating today!"
+    },
+    {
+      "title": "Models | Epoch AI",
+      "url": "https://epoch.ai/models/search",
+      "snippet": "Browse the model dataset and explore performance across multiple benchmarks for a single model."
+    }
+  ]
+}

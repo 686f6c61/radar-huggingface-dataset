@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "xtools-at/Ministral-3-3B-Qwen3.8-Max-Reasoning-Distilled",
+  "slug": "xtools-at-ministral-3-3b-qwen3-8-max-reasoning-distilled",
+  "author": "xtools-at",
+  "url": "https://huggingface.co/xtools-at/Ministral-3-3B-Qwen3.8-Max-Reasoning-Distilled",
+  "created_at": "2026-10-26T12:07:32.000Z",
+  "updated_at": "2026-10-26T15:50:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral3",
+    "image-text-to-text",
+    "ministral",
+    "mistral",
+    "qwen",
+    "distillation",
+    "fine-tuning",
+    "reasoning",
+    "conversational",
+    "text-generation",
+    "en",
+    "dataset:saidutta69/qwen3.8-max-distillation-50k-clean",
+    "base_model:unsloth/Ministral-3-3B-Reasoning-2512",
+    "base_model:finetune:unsloth/Ministral-3-3B-Reasoning-2512",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3849090048,
+  "parameters_human": "3.85B",
+  "storage_bytes": 7715539473,
+  "storage_human": "7.7 GB",
+  "base_model": "unsloth/Ministral-3-3B-Reasoning-2512",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xTool France | Machines de Gravure, Découpe, Soudure & DTF",
+      "url": "https://fr.xtool.com/",
+      "snippet": "Boostez votre créativité avec xTool. Gamme complète de lasers (CO2, Diode, Fibre), soudeuses et DTF. Des outils simples et …"
+    },
+    {
+      "title": "Logiciel Gratuit xTool Studio | Votre Espace de Création",
+      "url": "https://fr.xtool.com/pages/logiciel",
+      "snippet": "Téléchargez xTool Studio, le logiciel gratuit tout-en-un. Pilotez facilement vos graveurs laser, imprimantes et paramètres de soudure …"
+    },
+    {
+      "title": "xTool Europe Store | Laser Cutter, Engraver, Welder & DTF Printer",
+      "url": "https://www.xtool.eu/fr",
+      "snippet": "xTool is the industry-leading brand for digital fabrication. Find top-quality innovative tools, including (CO2, fiber, diode) laser cutters, …"
+    },
+    {
+      "title": "Shop All - xTool",
+      "url": "https://www.xtool.eu/fr/collections/shop-all",
+      "snippet": "Explore the complete collection of xTool's innovative laser cutters, engravers, and smart crafting machines. Powered by cutting-edge …"
+    },
+    {
+      "title": "Download xTool Studio - xTool Support Center",
+      "url": "https://support.xtool.com/article/2404",
+      "snippet": "Jan 16, 2026 · My Help Ticket My Learning My Bookmarks My Devices My Profile Logout Download xTool Studio Updated Jan …"
+    }
+  ]
+}

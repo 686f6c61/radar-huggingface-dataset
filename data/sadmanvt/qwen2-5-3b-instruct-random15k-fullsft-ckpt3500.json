@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "sadmanvt/Qwen2.5-3B-Instruct-Random15K-FullSFT-ckpt3500",
+  "slug": "sadmanvt-qwen2-5-3b-instruct-random15k-fullsft-ckpt3500",
+  "author": "sadmanvt",
+  "url": "https://huggingface.co/sadmanvt/Qwen2.5-3B-Instruct-Random15K-FullSFT-ckpt3500",
+  "created_at": "2026-10-26T14:31:15.000Z",
+  "updated_at": "2026-10-26T14:31:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-3B-Instruct",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6183348896,
+  "storage_human": "6.2 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

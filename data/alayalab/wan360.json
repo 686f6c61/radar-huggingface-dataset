@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "AlayaLab/Wan360",
+  "slug": "alayalab-wan360",
+  "author": "AlayaLab",
+  "url": "https://huggingface.co/AlayaLab/Wan360",
+  "created_at": "2026-09-24T03:29:40.000Z",
+  "updated_at": "2026-10-26T13:05:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "image-to-video",
+    "base_model:Wan-AI/Wan2.2-TI2V-5B",
+    "base_model:finetune:Wan-AI/Wan2.2-TI2V-5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24693835718,
+  "storage_human": "24.7 GB",
+  "base_model": "Wan-AI/Wan2.2-TI2V-5B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AlayaLab/Wan360 · Hugging Face",
+      "url": "https://huggingface.co/AlayaLab/Wan360",
+      "snippet": "Model tree for AlayaLab/Wan360 Base model Wan-AI/Wan2.2-TI2V-5B Finetuned (110) this model"
+    },
+    {
+      "title": "AlayaLab/Wan360 at main - Hugging Face",
+      "url": "https://huggingface.co/AlayaLab/Wan360/tree/main",
+      "snippet": "AlayaLab / Wan360 Like 0 Follow Alaya Lab 91 Image-to-Video License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main Wan360 24.7 GB Ctrl+K Ctrl+K 1 contributor History:2 commits oneandonly211 Document release license and third-party attribution 914e604 verified17 days ago googleDuplicate from oneandonly211 ..."
+    },
+    {
+      "title": "MUGEN/model at main · AlayaLab/MUGEN · GitHub",
+      "url": "https://github.com/AlayaLab/MUGEN/tree/main/model",
+      "snippet": "Wan360 Project overview · MUGEN dataset Generate panoramic videos with camera control from a single image. The inference entry inference.py produces forward, backward, left and right camera translations."
+    },
+    {
+      "title": "GitHub - AlayaLab/MUGEN: [SIGGRAPH Asia 2026] MUGEN: Interactive ...",
+      "url": "https://github.com/AlayaLab/MUGEN",
+      "snippet": "SIGGRAPH Asia 2026 MUGEN brings together a large-scale real-world panoramic video dataset and Wan360, a model for generating immersive 360° videos with camera control from a single panoramic image. The dataset provides semantic and geometric annotations, while Wan360 adapts a perspective video backbone to panoramic geometry and user-specified camera trajectories."
+    },
+    {
+      "title": "MUGEN: Interactive Panoramic World Exploration via Camera Control",
+      "url": "https://alaya-lab.github.io/MUGEN/",
+      "snippet": "We introduce MUGEN, a large-scale real-world panoramic video dataset with over 1,300 hours of at least 4K videos and rich semantic and geometric annotations, and Wan360, a camera-controllable panoramic video generation model."
+    }
+  ]
+}

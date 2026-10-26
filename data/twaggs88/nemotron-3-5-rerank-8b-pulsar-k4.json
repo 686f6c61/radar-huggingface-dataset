@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "twaggs88/Nemotron-3.5-Rerank-8B-pulsar-k4",
+  "slug": "twaggs88-nemotron-3-5-rerank-8b-pulsar-k4",
+  "author": "twaggs88",
+  "url": "https://huggingface.co/twaggs88/Nemotron-3.5-Rerank-8B-pulsar-k4",
+  "created_at": "2026-10-26T12:34:13.000Z",
+  "updated_at": "2026-10-26T12:34:34.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mistral3",
+    "pulsar",
+    "exl3",
+    "nemotron",
+    "reranker",
+    "retrieval",
+    "turing",
+    "text-ranking",
+    "custom_code",
+    "base_model:nvidia/Nemotron-3.5-Rerank-8B-BF16",
+    "base_model:quantized:nvidia/Nemotron-3.5-Rerank-8B-BF16",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4250492928,
+  "parameters_human": "4.25B",
+  "storage_bytes": 4805019387,
+  "storage_human": "4.8 GB",
+  "base_model": "nvidia/Nemotron-3.5-Rerank-8B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nemotron-3.5-rerank-8b Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3_5-rerank-8b",
+      "snippet": "8B multimodal reranking model that scores how relevant a text or document-image passage is to a query."
+    },
+    {
+      "title": "nvidia/Nemotron-3.5-Rerank-8B-BF16 · Hugging Face",
+      "url": "https://huggingface.co/nvidia/Nemotron-3.5-Rerank-8B-BF16",
+      "snippet": "Nemotron-3.5-Rerank-8B-BF16 was developed by NVIDIA for multilingual and multimodal question-answering retrieval. It is a world-class reranker optimized to produce a logit representing the relevance of a document to a text query."
+    },
+    {
+      "title": "NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-pulsar-k4 - Hugging Face",
+      "url": "https://huggingface.co/twaggs88/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-pulsar-k4",
+      "snippet": "A ready-to-serve container for pulsar, our inference engine for DGX Spark (GB10). It holds nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16 quantized to EXL3 4.0 bpw, plus NVIDIA&#x27;s LiLiCorr block drafter for speculative decoding. It&#x27;s 59 GB, and nothing else needs downloading. Experimental. Pulsar ..."
+    },
+    {
+      "title": "Nemotron 3.5 Rerank 8B — AI Model | MindStudio",
+      "url": "https://www.mindstudio.ai/models/nemotron-3-5-rerank-8b",
+      "snippet": "Start building with Nemotron 3.5 Rerank 8B No API keys required. Create AI-powered workflows with Nemotron 3.5 Rerank 8B in minutes — free."
+    },
+    {
+      "title": "Nemotron 3.5 Rerank 8B - 32K context, multimodal, open weights",
+      "url": "https://www.llmreference.com/model/nemotron-3.5-rerank-8b",
+      "snippet": "About Nemotron 3.5 Rerank 8B is an open-weight NVIDIA multimodal, multilingual reranker with 8.38 billion parameters and a 32,768-token context. It scores how relevant a document (text, page image, or both, including charts and tables) is to a text query, to reorder candidates from an embedding retriever in vision RAG pipelines."
+    }
+  ]
+}

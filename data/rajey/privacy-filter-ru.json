@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Rajey/privacy-filter-ru",
+  "slug": "rajey-privacy-filter-ru",
+  "author": "Rajey",
+  "url": "https://huggingface.co/Rajey/privacy-filter-ru",
+  "created_at": "2026-10-26T12:13:27.000Z",
+  "updated_at": "2026-10-26T14:13:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "openai_privacy_filter",
+    "token-classification",
+    "ru",
+    "en",
+    "base_model:openai/privacy-filter",
+    "base_model:finetune:openai/privacy-filter",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1399504813,
+  "parameters_human": "1.40B",
+  "storage_bytes": 5625913384,
+  "storage_human": "5.6 GB",
+  "base_model": "openai/privacy-filter",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenAI releases Privacy Filter, a local open-weight model built for ...",
+      "url": "https://alternativeto.net/news/2026/4/openai-releases-privacy-filter-a-local-open-weight-model-built-for-personal-data-masking/",
+      "snippet": "Developers can fine-tune the model for their specific needs and integrate it across training, indexing, logging, and review pipelines, strengthening privacy controls at every step."
+    },
+    {
+      "title": "Представляем OpenAI Privacy Filter",
+      "url": "https://openai.com/ru-RU/index/introducing-openai-privacy-filter/",
+      "snippet": "OpenAI Privacy Filter — это модель с открытыми весами, предназначенная для обнаружения и ..."
+    },
+    {
+      "title": "Introducing OpenAI Privacy Filter",
+      "url": "https://openai.com/index/introducing-openai-privacy-filter/",
+      "snippet": "This release is part of our broader effort to support a more resilient software ecosystem by providing developers practical infrastructure for building with AI safely, including tools ⁠ and models ⁠ that make strong privacy and security protections easier to implement from the start."
+    },
+    {
+      "title": "Разбор архитектуры и тест-драйв OpenAI Privacy Filter на бенчмарке ...",
+      "url": "https://habr.com/ru/articles/1027266/",
+      "snippet": "Выход за распределение претрейна: в model card OpenAI честно предупреждает, что качество может проседать на non-English text, non-Latin scripts, naming patterns и доменах вне распределения."
+    },
+    {
+      "title": "OpenAI Launches Privacy Filter, a New Model That Auto-Redacts Sensitive ...",
+      "url": "https://windowsreport.com/openai-launches-privacy-filter-a-new-model-that-auto-redacts-sensitive-data-in-text/",
+      "snippet": "OpenAI says it already uses a \"fine-tuned version\" internally, and the released model is optimized for real-world privacy pipelines such as training data cleanup, logging systems, and review workflows. The model supports up to 128,000 tokens of context and is designed for scalability in production environments."
+    }
+  ]
+}

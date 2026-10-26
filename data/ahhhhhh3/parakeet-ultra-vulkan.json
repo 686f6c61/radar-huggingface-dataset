@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ahhhhhh3/parakeet-ultra-vulkan",
+  "slug": "ahhhhhh3-parakeet-ultra-vulkan",
+  "author": "ahhhhhh3",
+  "url": "https://huggingface.co/ahhhhhh3/parakeet-ultra-vulkan",
+  "created_at": "2026-10-26T18:09:34.000Z",
+  "updated_at": "2026-10-26T18:09:40.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "executorch",
+    "vulkan",
+    "android",
+    "parakeet",
+    "encoder",
+    "base_model:moondream/parakeet-ultra",
+    "base_model:quantized:moondream/parakeet-ultra",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1219557506,
+  "storage_human": "1.2 GB",
+  "base_model": "moondream/parakeet-ultra",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "moondream/parakeet-ultra · Hugging Face",
+      "url": "https://huggingface.co/moondream/parakeet-ultra",
+      "snippet": "Long-form Eleven complete TED-LIUM 3 talks of 10-20 minutes each. parakeet-ultra transcribes them through Photon, whose segmenter cuts each talk at pauses found by the model&#x27;s VAD head into segments of at most 30 seconds; the original runs NeMo&#x27;s own long-audio path."
+    },
+    {
+      "title": "Introducing Moondream Parakeet Redux and Parakeet Ultra",
+      "url": "https://moondream.ai/blog/introducing-parakeet-redux-and-ultra",
+      "snippet": "The same examples work with Parakeet Ultra on an NVIDIA GPU by changing the model to \"moondream/parakeet-ultra\" and the device to \"cuda\". Both models choose the language automatically and preserve punctuation and capitalization. Find when each word was spoken Use timestamps=\"word\" to get a transcript with sentence segments and word timings."
+    },
+    {
+      "title": "Moondream Parakeet Ultra | AI Model | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/model/moondream-parakeet-ultra/",
+      "snippet": "Moondream Parakeet Ultra is a full-precision automatic speech recognition (ASR) model derived from NVIDIA&#x27;s Parakeet framework, built for GPU deployment where maximum transcription accuracy is the priority over compactness or CPU efficiency. Unlike its compressed sibling, Parakeet Redux, Ultra retains the original model&#x27;s full-precision weights."
+    },
+    {
+      "title": "parakeet-ultra: Benchmarks, Pricing and Specs | llmboard.ai",
+      "url": "https://www.llmboard.ai/models/moondream-parakeet-ultra",
+      "snippet": "parakeet-ultra is a speech-to-text model from Moondream ranked on Open ASR Leaderboard. Updated Sep 27, 2026. Default version: parakeet-ultra LLMBoard Speech-to-Text Score68.8parakeet-ultra Coverage45%1 benchmark families Context windowN/ATokens Native catalog priceN/APrice unavailable On this page Capability Benchmarks Arena Pricing Runtime ..."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, DeepSeek, Qwen, Mistral, Z.ai, Meta, and important open-weight model families."
+    }
+  ]
+}

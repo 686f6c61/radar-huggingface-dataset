@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "clm-project/clm-35b-a3b-jev-boost-head",
+  "slug": "clm-project-clm-35b-a3b-jev-boost-head",
+  "author": "clm-project",
+  "url": "https://huggingface.co/clm-project/clm-35b-a3b-jev-boost-head",
+  "created_at": "2026-10-26T18:36:40.000Z",
+  "updated_at": "2026-10-26T18:36:52.000Z",
+  "license": "per-source",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "contrastive-learning",
+    "qwen3.6",
+    "jev-decision-index",
+    "clm",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 50548766,
+  "storage_human": "51 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Congé de longue maladie (CLM) du fonctionnaire | Service Public",
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F18089",
+      "snippet": "Un fonctionnaire souffrant d'une maladie nécessitant un traitement et des soins prolongés peut être placé en congé de longue …"
+    },
+    {
+      "title": "Congé longue maladie fonction publique : conditions, durée 2026",
+      "url": "https://www.cftc-fae.fr/guides/droits-conges-sante/conge-longue-maladie-fonction-publique/",
+      "snippet": "Aug 18, 2026 · Le CLM est accordé pour 3 ans maximum, en continu ou par périodes. La rémunération est de 100 % du traitement la …"
+    },
+    {
+      "title": "LE CONGE DE LONGUE MALADIE (CLM)",
+      "url": "https://www.cdg76.fr/wp-content/uploads/2025/09/fcdgn-conge-de-longue-maladie-2025.pdf",
+      "snippet": "Un agent inapte définitivement à toutes fonctions peut-il bénéficier d'un CLM ? L'octroi d'un CLM est subordonné au caractère …"
+    },
+    {
+      "title": "ALD et arrêt maladie fonctionnaire : carence, CLM, CLD 2026",
+      "url": "https://netfonctionnaire.fr/guides/ald-arret-maladie-fonctionnaire/",
+      "snippet": "Jun 21, 2026 · Arrêt maladie en ALD d'un fonctionnaire : jour de carence, congé de longue maladie (CLM), congé de longue durée …"
+    },
+    {
+      "title": "CLM et CLD : ce qui change en 2026 | FPT Pratique",
+      "url": "https://www.fpt-pratique.fr/actu-clm-cld-2026.html",
+      "snippet": "CLM et CLD : ce qui change en 2026 Le congé de longue maladie et le congé de longue durée gardent leurs durées et leur …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "trce5fy5yf/facecertify",
+  "slug": "trce5fy5yf-facecertify",
+  "author": "trce5fy5yf",
+  "url": "https://huggingface.co/trce5fy5yf/facecertify",
+  "created_at": "2026-10-26T12:46:39.000Z",
+  "updated_at": "2026-10-26T12:46:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ansonjaison/FaceCertify: FaceCertify is an AI-based system for ...",
+      "url": "https://github.com/ansonjaison/FaceCertify",
+      "snippet": "FaceCertify is an AI-powered facial recognition system designed to automate student verification and attendance during academic examinations. It provides a seamless, real-time identity check for students entering the exam hall, thereby enhancing academic integrity, eliminating impersonation, and saving administrative effort."
+    },
+    {
+      "title": "GitHub - ebinmanoj/FaceCertify",
+      "url": "https://github.com/ebinmanoj/FaceCertify",
+      "snippet": "FaceCertify is an AI-powered facial recognition system designed to automate student verification and attendance during academic examinations. It provides a seamless, real-time identity check for students entering the exam hall, thereby enhancing academic integrity, eliminating impersonation, and saving administrative effort."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ai Face Detector - a Hugging Face Space by Cimory",
+      "url": "https://huggingface.co/spaces/Cimory/ai-face-detector",
+      "snippet": "Upload a picture of a face, and the app will tell you if it&#x27;s a genuine human face or an AI‑generated one. It analyzes the image with a trained model and returns a simple real‑or‑AI label."
+    },
+    {
+      "title": "Face Verification Software | iBeta Level 1, 2 & 3 Certified | Shufti",
+      "url": "https://shuftipro.com/face-verification/",
+      "snippet": "Shufti verify users in seconds with advanced face verification software. Stop spoof attacks, ensure compliance, and deliver a frictionless onboarding experience."
+    }
+  ]
+}

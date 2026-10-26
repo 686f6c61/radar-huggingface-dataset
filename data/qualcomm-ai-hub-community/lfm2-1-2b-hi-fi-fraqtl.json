@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "qualcomm-ai-hub-community/LFM2-1.2B-Hi-Fi-fraQtl",
+  "slug": "qualcomm-ai-hub-community-lfm2-1-2b-hi-fi-fraqtl",
+  "author": "qualcomm-ai-hub-community",
+  "url": "https://huggingface.co/qualcomm-ai-hub-community/LFM2-1.2B-Hi-Fi-fraQtl",
+  "created_at": "2026-10-26T15:45:23.000Z",
+  "updated_at": "2026-10-26T15:46:02.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "npu",
+    "edge",
+    "on-device",
+    "calibrated-quantization",
+    "fraqtl",
+    "text-generation",
+    "base_model:LiquidAI/LFM2-1.2B",
+    "base_model:quantized:LiquidAI/LFM2-1.2B",
+    "license:other",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1170340608,
+  "parameters_human": "1.17B",
+  "storage_bytes": 2820251008,
+  "storage_human": "2.8 GB",
+  "base_model": "LiquidAI/LFM2-1.2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qualcomm: Intelligent Computing Everywhere",
+      "url": "https://www.qualcomm.com/",
+      "snippet": "Learn how Qualcomm transforms industries with leading edge AI, high-performance, low-power computing and unrivaled connectivity."
+    },
+    {
+      "title": "Qualcomm - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Qualcomm",
+      "snippet": "Qualcomm Incorporated (/ ˈkwɒlkɒm /) [2] is an American multinational technology corporation headquartered in San Diego, …"
+    },
+    {
+      "title": "About Qualcomm | Company Information & History | Qualcomm",
+      "url": "https://www.qualcomm.com/company",
+      "snippet": "Qualcomm is a company of inventors with diverse skills and backgrounds, who are driven to improve communication around the …"
+    },
+    {
+      "title": "Qualcomm — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Qualcomm",
+      "snippet": "Qualcomm est une entreprise américaine active dans le domaine de la technologie mobile. Elle est spécialisée dans la conception et …"
+    },
+    {
+      "title": "Qualcomm - Investor Relations",
+      "url": "https://investor.qualcomm.com/overview/default.aspx",
+      "snippet": "Jun 28, 2026 · Investor Relations Qualcomm enables a world where everyone and everything can be intelligently connected. About …"
+    }
+  ]
+}

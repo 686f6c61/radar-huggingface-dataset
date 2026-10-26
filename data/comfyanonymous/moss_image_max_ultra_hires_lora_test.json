@@ -22,9 +22,9 @@
     "base_model:adapter:Comfy-Org/MOSS-Image",
     "region:us"
   ],
-  "likes": 67,
+  "likes": 68,
   "downloads_30d": 0,
-  "trending_score": 67,
+  "trending_score": 68,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 705082359,

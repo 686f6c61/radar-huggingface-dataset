@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "ShahriarFerdoush/llama3-8b-med-math-obf-v2-nocomp-obs-k10",
+  "slug": "shahriarferdoush-llama3-8b-med-math-obf-v2-nocomp-obs-k10",
+  "author": "ShahriarFerdoush",
+  "url": "https://huggingface.co/ShahriarFerdoush/llama3-8b-med-math-obf-v2-nocomp-obs-k10",
+  "created_at": "2026-10-26T15:01:51.000Z",
+  "updated_at": "2026-10-26T15:06:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766057,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

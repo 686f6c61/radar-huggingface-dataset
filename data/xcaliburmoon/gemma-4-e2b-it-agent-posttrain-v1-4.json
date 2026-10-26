@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "XcaliburMoon/gemma-4-E2B-it-agent-posttrain-v1.4",
+  "slug": "xcaliburmoon-gemma-4-e2b-it-agent-posttrain-v1-4",
+  "author": "XcaliburMoon",
+  "url": "https://huggingface.co/XcaliburMoon/gemma-4-E2B-it-agent-posttrain-v1.4",
+  "created_at": "2026-10-26T18:49:41.000Z",
+  "updated_at": "2026-10-26T18:52:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "gemma",
+    "tool-calling",
+    "function-calling",
+    "agent",
+    "qlora",
+    "base_model:google/gemma-4-E2B-it",
+    "text-generation",
+    "en",
+    "base_model:quantized:google/gemma-4-E2B-it",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4628569635,
+  "parameters_human": "4.63B",
+  "storage_bytes": 41593941072,
+  "storage_human": "41.6 GB",
+  "base_model": "google/gemma-4-E2B-it",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quantized Models for google/gemma-4-E2B-it - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model%3Aquantized%3Agoogle%2Fgemma-4-E2B-it",
+      "snippet": "Together AI · Fireworks · Featherless AI · Zai · Replicate · Cohere ... XcaliburMoon/gemma-4-E2B-it-agent-posttrain-v1.2. Text Generation • 5B ..."
+    },
+    {
+      "title": "gemma #agent #llm #ml - YouTube",
+      "url": "https://www.youtube.com/watch?v=Mxoq3BBPgLg",
+      "snippet": "11.10.2026 ... Gemma 4 E2B - Post Train - huggingface.co/XcaliburMoon/gemma-4-E2B-it-agent-posttrain-v1 ... Running AI Local Models Isn't Safe — Here's Why."
+    }
+  ]
+}

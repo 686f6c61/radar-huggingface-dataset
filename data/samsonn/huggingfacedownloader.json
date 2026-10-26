@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "samsonn/HuggingFaceDownloader",
+  "slug": "samsonn-huggingfacedownloader",
+  "author": "samsonn",
+  "url": "https://huggingface.co/samsonn/HuggingFaceDownloader",
+  "created_at": "2026-10-26T13:01:44.000Z",
+  "updated_at": "2026-10-26T13:07:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 159539038,
+  "storage_human": "160 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "samsonn/HuggingFaceDownloader · Hugging Face",
+      "url": "https://huggingface.co/samsonn/HuggingFaceDownloader",
+      "snippet": "Hugging Face Downloader Portable Hugging Face Downloader Portable is a free, self-contained Windows application for downloading models, datasets, and other files from Hugging Face repositories. Built with C# and WPF, it provides a graphical interface for browsing repository files, selecting individual files, and managing downloads without using the command line."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?!!",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "How to Download and Run a Hugging Face Model | AI/TLDR",
+      "url": "https://ai-tldr.dev/learn/local-open-models/open-model-ecosystem/run-first-hugging-face-model/",
+      "snippet": "A beginner walkthrough for downloading a model from the Hugging Face Hub and running it with the Transformers library or a GGUF download."
+    },
+    {
+      "title": "Hugging Face Guide — Models, Datasets & Inference API (2026)",
+      "url": "https://myengineeringpath.dev/tools/hugging-face/",
+      "snippet": "Hugging Face is the largest open-source AI platform, hosting over 500,000 models, 100,000 datasets, and providing the Transformers library for model inference and fine-tuning."
+    },
+    {
+      "title": "World&#x27;s Largest AI Model Repository Hugging Face Breached by Autonomous ...",
+      "url": "https://thehackernews.com/2026/07/worlds-largest-ai-model-repository.html",
+      "snippet": "Hugging Face says an autonomous AI agent breached production through a malicious dataset, accessing internal data and service credentials."
+    }
+  ]
+}

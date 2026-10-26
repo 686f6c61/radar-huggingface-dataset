@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "spectator2026/Swift1.5-Qwen3.8-Flash-Next-W6-INT8-HQQ-g32",
+  "slug": "spectator2026-swift1-5-qwen3-8-flash-next-w6-int8-hqq-g32",
+  "author": "spectator2026",
+  "url": "https://huggingface.co/spectator2026/Swift1.5-Qwen3.8-Flash-Next-W6-INT8-HQQ-g32",
+  "created_at": "2026-10-26T18:35:38.000Z",
+  "updated_at": "2026-10-26T18:48:58.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen4_exp",
+    "int6",
+    "int8",
+    "w6a16",
+    "hqq",
+    "smoothquant",
+    "quantized",
+    "moe",
+    "multimodal",
+    "a100",
+    "image-text-to-text",
+    "conversational",
+    "base_model:ukisai/Swift1.5-Qwen3.8-Flash-Next",
+    "base_model:quantized:ukisai/Swift1.5-Qwen3.8-Flash-Next",
+    "license:other",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 119594658670,
+  "storage_human": "119.6 GB",
+  "base_model": "ukisai/Swift1.5-Qwen3.8-Flash-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-Flash-Next-W6-INT8-HQQ-g32 - Hugging Face",
+      "url": "https://huggingface.co/spectator2026/Qwen3.8-Flash-Next-W6-INT8-HQQ-g32",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ukisai/Swift1.5-Qwen3.8-Flash-Next · Hugging Face",
+      "url": "https://huggingface.co/ukisai/Swift-Qwen3.8-Flash-Next",
+      "snippet": "* Note: Terminal-Bench 2.1 results for Flash-Next are not an apples-to-apples comparison with Swift 1.5 27B. Flash-Next used default task timeouts, leading to lower scores for both the base model and Swift Flash-Next. How to reproduce Serving: BF16 · Qwen3 reasoning parser · context 262,144 · thinking xhigh · MTP disabled. Sampling: temperature 1.0 · top_p 0.95 · top_k 20 · min_p 0 ..."
+    },
+    {
+      "title": "Swift 1.5 Qwen3.8 Flash Next - GGUF Model (5 parts)",
+      "url": "https://local-ai-zone.github.io/models/swift-1-5-qwen3-8-flash-next.html",
+      "snippet": "Download Swift 1.5 Qwen3.8 Flash Next GGUF model. 39.0 GB, 11,915 downloads, 30 likes. Split into 5 parts."
+    },
+    {
+      "title": "Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-abliterated",
+      "url": "https://www.abliteratedmodels.org/swift-1.5-qwen3.8-flash-next-gsq-rco-abliterated/",
+      "snippet": "Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-abliterated will attempt offensive-security prompts that a hosted commercial model declines, which is what makes it usable for red-team corpus generation and for measuring what an unaligned model of this class produces."
+    },
+    {
+      "title": "Qwen 3.8 Flash - VRAM, Specs & Benchmarks",
+      "url": "https://apxml.com/models/qwen-38-flash",
+      "snippet": "Qwen 3.8 Flash is an efficient multimodal reasoning model from Alibaba designed for rapid inference across coding, agentic workflows, and document analysis. It delivers strong vision-language understanding while maintaining low latency and a long context window."
+    }
+  ]
+}

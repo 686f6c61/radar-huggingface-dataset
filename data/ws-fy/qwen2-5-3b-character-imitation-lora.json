@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "ws-fy/qwen2.5-3b-character-imitation-lora",
+  "slug": "ws-fy-qwen2-5-3b-character-imitation-lora",
+  "author": "ws-fy",
+  "url": "https://huggingface.co/ws-fy/qwen2.5-3b-character-imitation-lora",
+  "created_at": "2026-10-26T15:22:32.000Z",
+  "updated_at": "2026-10-26T16:02:44.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "llama-factory",
+    "lora",
+    "character-imitation",
+    "style-transfer",
+    "roleplay",
+    "qwen2.5",
+    "chinese",
+    "text-generation",
+    "conversational",
+    "zh",
+    "en",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-3B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 131223420,
+  "storage_human": "131 MB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Download WhatsApp",
+      "url": "https://www.whatsapp.com/download",
+      "snippet": "Download WhatsApp on your mobile device, tablet or desktop and stay connected with reliable private messaging and calling. …"
+    },
+    {
+      "title": "WhatsApp | Secure and Reliable Free Private Messaging and Calling",
+      "url": "https://www.whatsapp.com/",
+      "snippet": "Use WhatsApp Messenger to stay in touch with friends and family. WhatsApp is free and offers simple, secure, reliable messaging …"
+    },
+    {
+      "title": "WhatsApp Web",
+      "url": "https://web-fallback.whatsapp.com/",
+      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
+    },
+    {
+      "title": "WS — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/WS",
+      "snippet": "Ws, une ancienne graphie du nom de la commune française d' Us, dans le département du Val-d'Oise et la région Île-de-France ; …"
+    },
+    {
+      "title": "Que signifie WS? - Abbreviation Finder",
+      "url": "https://abbreviationfinder.org/fr/acronyms/ws.html",
+      "snippet": "En résumé, WS est une abréviation qui peut désigner différents termes selon le contexte, et son interprétation peut varier selon …"
+    }
+  ]
+}

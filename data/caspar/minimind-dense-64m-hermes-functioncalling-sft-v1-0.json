@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "caspar/MiniMind-Dense-64M-Hermes-FunctionCalling-SFT-v1.0",
+  "slug": "caspar-minimind-dense-64m-hermes-functioncalling-sft-v1-0",
+  "author": "caspar",
+  "url": "https://huggingface.co/caspar/MiniMind-Dense-64M-Hermes-FunctionCalling-SFT-v1.0",
+  "created_at": "2026-10-26T13:00:55.000Z",
+  "updated_at": "2026-10-26T13:01:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "minimind",
+    "text-generation",
+    "function-calling",
+    "experimental",
+    "conversational",
+    "custom_code",
+    "en",
+    "dataset:NousResearch/hermes-function-calling-v1",
+    "base_model:caspar/MiniMind-Dense-64M-Mixed-SFT-v1.0",
+    "base_model:finetune:caspar/MiniMind-Dense-64M-Mixed-SFT-v1.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 63912192,
+  "parameters_human": "63.9M",
+  "storage_bytes": 127834168,
+  "storage_human": "128 MB",
+  "base_model": "caspar/MiniMind-Dense-64M-Mixed-SFT-v1.0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "caspar/MiniMind-Dense-64M-Mixed-SFT-v1.0 · Hugging Face",
+      "url": "https://huggingface.co/caspar/MiniMind-Dense-64M-Mixed-SFT-v1.0",
+      "snippet": "Notebooks Google Colab Kaggle Local AppsSettings vLLM How to use caspar/MiniMind-Dense-64M-Mixed-SFT-v1. with vLLM: Install from pip and serve model"
+    },
+    {
+      "title": "GitHub - NousResearch/Hermes-Function-Calling",
+      "url": "https://github.com/NousResearch/Hermes-Function-Calling",
+      "snippet": "This repository contains code for the Hermes Pro Large Language Model to perform function calling based on the provided schema. It allows users to query the model and retrieve information related to stock prices, company fundamentals, financial statements, and more."
+    },
+    {
+      "title": "Getting started with MiniMind: inference, pretraining and SFT",
+      "url": "https://www.findgoodai.com/minimind-inference-pretraining-sft-guide/",
+      "snippet": "The current MiniMind-3 Dense model has about 64 million parameters. A separate MoE version has around 198 million total parameters and 64 million active parameters. A useful first pass is to run the released model, then reproduce pretraining and supervised fine-tuning, or SFT, with the smaller datasets."
+    },
+    {
+      "title": "minimind — Train a 64M-Parameter LLM from Scratch in 2 Hours",
+      "url": "https://tokrepo.com/en/workflows/minimind-train-64m-parameter-llm-scratch-2-hours-e48c6746",
+      "snippet": "Introduction minimind is an open-source educational project that demystifies LLM training by providing a complete pipeline to train a 64M-parameter language model from scratch in approximately two hours on a single consumer GPU. It covers pretraining, supervised fine-tuning, and DPO alignment."
+    },
+    {
+      "title": "MiniMind — Pricing, Specs & Capabilities | OpenTools",
+      "url": "https://opentools.ai/llms/minimind",
+      "snippet": "MiniMind is a small open-source language-model training project that demonstrates how to train a 64M-parameter LLM from scratch. The repository is aimed at builders who want a compact, inspectable model-training path rather than a hosted frontier API."
+    }
+  ]
+}

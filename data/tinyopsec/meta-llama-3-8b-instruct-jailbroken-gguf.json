@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "tinyopsec/Meta-Llama-3-8B-Instruct-Jailbroken-GGUF",
+  "slug": "tinyopsec-meta-llama-3-8b-instruct-jailbroken-gguf",
+  "author": "tinyopsec",
+  "url": "https://huggingface.co/tinyopsec/Meta-Llama-3-8B-Instruct-Jailbroken-GGUF",
+  "created_at": "2026-10-26T12:52:18.000Z",
+  "updated_at": "2026-10-26T13:08:49.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama3",
+    "jailbreak",
+    "safety",
+    "alignment",
+    "llama-cpp",
+    "text-generation",
+    "base_model:meta-llama/Meta-Llama-3-8B-Instruct",
+    "base_model:quantized:meta-llama/Meta-Llama-3-8B-Instruct",
+    "license:llama3",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 31205669216,
+  "storage_human": "31.2 GB",
+  "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cooperleong00/Meta-Llama-3-8B-Instruct-Jailbroken at main",
+      "url": "https://huggingface.co/cooperleong00/Meta-Llama-3-8B-Instruct-Jailbroken/tree/main",
+      "snippet": "Safe 4.92 GB Upload folder using huggingface_hub about 2 months ago model-00004-of-00004.safetensors Safe 1.17 GB Upload folder using huggingface_hub about 2 months ago"
+    },
+    {
+      "title": "Run Meta Llama 3 8B Locally: Step-by-Step Guide — AI Tutorial",
+      "url": "https://aiindigo.com/tutorials/getting-started-with-meta-llama-3-8b-instruct-running-local-ai",
+      "snippet": "A practical guide to running Meta Llama 3 8B Instruct locally with Ollama. Learn setup, prompting, and API integration for free, private AI."
+    },
+    {
+      "title": "MaziyarPanahi/Meta-Llama-3-8B-Instruct-GGUF - Hugging Face",
+      "url": "https://huggingface.co/MaziyarPanahi/Meta-Llama-3-8B-Instruct-GGUF",
+      "snippet": "Model Details Meta developed and released the Meta Llama 3 family of large language models (LLMs), a collection of pretrained and instruction tuned generative text models in 8 and 70B sizes. The Llama 3 instruction tuned models are optimized for dialogue use cases and outperform many of the available open source chat models on common industry benchmarks. Further, in developing these models, we ..."
+    },
+    {
+      "title": "meta-llama-3-8b-instruct: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/replicate/meta-llama-3-8b-instruct-meta",
+      "snippet": "meta-llama-3-8b-instruct is a transformer-based instruction-tuned language model with 8 billion parameters. The model supports input sequences up to 8192 tokens and is optimized for dialogue through instruction-tuning on conversational data. The tokenizer is proprietary to Llama 3 and handles the special chat formatting tokens."
+    },
+    {
+      "title": "meta-llama3 · PyPI",
+      "url": "https://pypi.org/project/meta-llama3/",
+      "snippet": "Meta Llama 3 We are unlocking the power of large language models. Our latest version of Llama is now accessible to individuals, creators, researchers, and businesses of all sizes so that they can experiment, innovate, and scale their ideas responsibly. This release includes model weights and starting code for pre-trained and instruction-tuned Llama 3 language models — including sizes of 8B ..."
+    }
+  ]
+}

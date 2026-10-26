@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "id": "projectsidewalk/sidewalk-validator-ai-obstacle",
+  "slug": "projectsidewalk-sidewalk-validator-ai-obstacle",
+  "author": "projectsidewalk",
+  "url": "https://huggingface.co/projectsidewalk/sidewalk-validator-ai-obstacle",
+  "created_at": "2025-01-26T03:44:07.000Z",
+  "updated_at": "2026-10-26T18:52:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dinov2",
+    "image-classification",
+    "project-sidewalk",
+    "accessibility",
+    "sidewalks",
+    "street-view",
+    "label-validation",
+    "obstacle",
+    "dataset:projectsidewalk/sidewalk-validator-ai-dataset-obstacle",
+    "arxiv:2304.07193",
+    "base_model:facebook/dinov2-large",
+    "base_model:finetune:facebook/dinov2-large",
+    "license:mit",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 28,
+  "trending_score": 0,
+  "parameters": 304372738,
+  "parameters_human": "304.4M",
+  "storage_bytes": 8523354328,
+  "storage_human": "8.5 GB",
+  "base_model": "facebook/dinov2-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Label validation",
+      "dataset": "sidewalk-validator-ai-obstacle dataset",
+      "metric": "Accuracy",
+      "value": 0.8142
+    },
+    {
+      "task": "Label validation",
+      "dataset": "sidewalk-validator-ai-obstacle dataset",
+      "metric": "Balanced accuracy",
+      "value": 0.8054
+    },
+    {
+      "task": "Label validation",
+      "dataset": "sidewalk-validator-ai-obstacle dataset",
+      "metric": "AUC (incorrect)",
+      "value": 0.8828
+    },
+    {
+      "task": "Label validation",
+      "dataset": "sidewalk-validator-ai-obstacle dataset",
+      "metric": "Macro F1",
+      "value": 0.808
+    }
+  ],
+  "sources": [
+    {
+      "title": "projectsidewalk (Project Sidewalk) - Hugging Face",
+      "url": "https://huggingface.co/projectsidewalk",
+      "snippet": "projectsidewalk/sidewalk-validator-ai-obstacle ... RampNet (ICCV 2025): model, dataset, Stage 1 inputs. Note: the rampnet-benchmark is later 2026 work ..."
+    },
+    {
+      "title": "Project Sidewalk Validator Models/Datasets - Hugging Face",
+      "url": "https://huggingface.co/collections/projectsidewalk/project-sidewalk-validator-models-datasets",
+      "snippet": "23.08.2026 ... Project Sidewalk Validator Models/Datasets · projectsidewalk/sidewalk-validator-ai-crosswalk · projectsidewalk/sidewalk-validator-ai-curbramp."
+    },
+    {
+      "title": "ProjectSidewalk/SidewalkWebpage: Project Sidewalk web page",
+      "url": "https://github.com/ProjectSidewalk/SidewalkWebpage",
+      "snippet": "Project Sidewalk increasingly combines crowdsourcing with AI. Two model families are in use today, reflecting our research finding that validating an existing ..."
+    },
+    {
+      "title": "Project Sidewalk: A Web-based Crowdsourcing Tool for Collecting ...",
+      "url": "https://www.researchgate.net/publication/331319766_Project_Sidewalk_A_Web-based_Crowdsourcing_Tool_for_Collecting_Sidewalk_Accessibility_Data_At_Scale",
+      "snippet": "PDF | We introduce Project Sidewalk, a new web-based tool that enables online crowdworkers to remotely label pedestrianrelated accessibility problems by."
+    },
+    {
+      "title": "Mapping sidewalk accessibility with smartphone imagery and Visual AI",
+      "url": "https://royalsocietypublishing.org/rsta/article/382/2285/20240106/108438/Mapping-sidewalk-accessibility-with-smartphone",
+      "snippet": "13.11.2024 ... This study presents the design and validation of Sidewalk AI Scanner, a web app that enables quick, crowdsourced and low-cost sidewalk mapping."
+    }
+  ]
+}

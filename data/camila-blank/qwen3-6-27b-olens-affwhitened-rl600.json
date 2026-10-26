@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "camila-blank/qwen3.6-27b-olens-affwhitened-rl600",
+  "slug": "camila-blank-qwen3-6-27b-olens-affwhitened-rl600",
+  "author": "camila-blank",
+  "url": "https://huggingface.co/camila-blank/qwen3.6-27b-olens-affwhitened-rl600",
+  "created_at": "2026-10-26T17:45:52.000Z",
+  "updated_at": "2026-10-26T17:46:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "interpretability",
+    "activation-oracle",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:adapter:Qwen/Qwen3.6-27B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2335238400,
+  "storage_human": "2.3 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Camila Cabello — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Camila_Cabello",
+      "snippet": "Camila Cabello (/kaˈmila kaˈbe ʝ o/), née le 3 mars 1997 à Cojímar (Cuba), est une chanteuse et actrice cubano- mexicaine …"
+    },
+    {
+      "title": "Camila Cabello - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Camila_Cabello",
+      "snippet": "Karla Camila Cabello Estrabao (/ kəˈmiːlə kəˈbeɪoʊ /; Latin American Spanish: [ˈkaɾla kaˈmila kaˈβeʝo esˈtɾaβao]; born March 3, …"
+    },
+    {
+      "title": "⋆𐙚₊˚⊹♡ camila (@camila_cabello) • Instagram photos and videos",
+      "url": "https://www.instagram.com/camila_cabello/",
+      "snippet": "62M Followers, 1,389 Following, 208 Posts - ⋆𐙚₊˚⊹♡ camila (@camila_cabello) on Instagram: \"not “camilla”\""
+    },
+    {
+      "title": "Restaurant Camila à Paris - Menu, avis, prix et réservation | TheFork",
+      "url": "https://www.thefork.fr/restaurant/camila-r2205",
+      "snippet": "Le restaurant Camila séduit par son ambiance chaleureuse avec une musique latino en fond sonore et un décor raffiné. Les plats, …"
+    },
+    {
+      "title": "Camila - Todo Cambio (Official Video) - YouTube",
+      "url": "https://m.youtube.com/watch?v=gO8-9OWzPOQ",
+      "snippet": "Oct 2, 2009 · Me sorprendió todo de ti (uh, uh, ah) De blanco y negro al color me convertí Sé que no es fácil decir te amo Yo …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/Qwen3-0.6B-mic",
+  "slug": "huggingface-mic-qwen3-0-6b-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/Qwen3-0.6B-mic",
+  "created_at": "2026-10-26T15:19:51.000Z",
+  "updated_at": "2026-10-26T15:26:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "mic",
+    "test-artifact",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9798016,
+  "parameters_human": "9.8M",
+  "storage_bytes": 31021278,
+  "storage_human": "31 MB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face – The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "huggingface (Hugging Face)",
+      "url": "https://huggingface.co/huggingface",
+      "snippet": "Architectural Choices in China's Open-Source AI Ecosystem: Building Beyond DeepSeek ... One Year Since the “DeepSeek …"
+    },
+    {
+      "title": "Hugging Face — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Hugging_Face",
+      "snippet": "Hugging Face est une entreprise « licorne » américaine du domaine de l' intelligence artificielle créée en 2016 à New York (État de …"
+    },
+    {
+      "title": "Hugging Face - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hugging_Face",
+      "snippet": "Hugging Face, Inc., is an American company based in New York City. Its online platform allows users to share datasets and machine …"
+    },
+    {
+      "title": "Hugging Face - GitHub",
+      "url": "https://github.com/huggingface",
+      "snippet": "The AI community building the future. Hugging Face has 475 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

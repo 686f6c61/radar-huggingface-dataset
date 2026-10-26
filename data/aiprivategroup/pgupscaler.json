@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "AIPRIVATEGROUP/pgupscaler",
+  "slug": "aiprivategroup-pgupscaler",
+  "author": "AIPRIVATEGROUP",
+  "url": "https://huggingface.co/AIPRIVATEGROUP/pgupscaler",
+  "created_at": "2026-10-26T14:57:48.000Z",
+  "updated_at": "2026-10-26T16:42:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22763296306,
+  "storage_human": "22.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "- Foyers d'étudiants - Communauté du Chemin Neuf",
+      "url": "https://www.foyersetudiants.org/",
+      "snippet": "© 2026 Communauté du Chemin Neuf POLITIQUE DE CONFIDENTIALITE Prévention et lutte contre les abus Mentions légales …Read more"
+    },
+    {
+      "title": "Logement étudiant, résidence étudiante, foyer jeune travailleur, CROUS.",
+      "url": "https://www.residenceetudiante.fr/",
+      "snippet": "Découvrez des centaines de résidences étudiantes adaptées et faites votre choix grâce aux photos, aux informations concernant les …"
+    },
+    {
+      "title": "Espace Jeunes ALJT | Logement en Île-de-France",
+      "url": "https://www.aljt.com/",
+      "snippet": "L'ALJT propose 8 500 logements meublés pour jeunes actifs, étudiants et familles monoparentales en Île-de-France. …"
+    },
+    {
+      "title": "Logement pour jeunes et étudiants - City of Paris",
+      "url": "https://www.paris.fr/logement-pour-jeunes-et-etudiants",
+      "snippet": "Retrouvez tous les services et démarches, les infos pratiques, les actualités et événements de la Ville de Paris."
+    },
+    {
+      "title": "ARPEJ Résidences : Logements pour étudiants & jeunes actifs",
+      "url": "https://www.arpej.fr/fr/",
+      "snippet": "Jun 4, 2026 · Trouvez un logement pour jeunes en quelques clics, notre association propose plus de 15 000 logements, partout en …"
+    }
+  ]
+}

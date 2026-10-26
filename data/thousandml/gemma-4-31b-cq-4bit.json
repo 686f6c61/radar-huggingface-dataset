@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "thousandml/gemma-4-31B-CQ-4bit",
+  "slug": "thousandml-gemma-4-31b-cq-4bit",
+  "author": "thousandml",
+  "url": "https://huggingface.co/thousandml/gemma-4-31B-CQ-4bit",
+  "created_at": "2026-10-26T18:41:55.000Z",
+  "updated_at": "2026-10-26T18:42:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "arxiv:2607.02770",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "cq_quant",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1469564780,
+  "parameters_human": "1.47B",
+  "storage_bytes": 18106382198,
+  "storage_human": "18.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?p=1&sort=modified&search=4bit",
+      "snippet": "thousandml/Llama-3.1-8B-Instruct-CQ-4bit. Text Generation • 1B • Updated 1 ... thinkspread/gemma-4-12B-it-4bit-MLX-mirror. 12B • Updated 2 days ago • 49 ..."
+    }
+  ]
+}

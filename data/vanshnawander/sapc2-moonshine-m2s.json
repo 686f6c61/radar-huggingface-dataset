@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "vanshnawander/sapc2-moonshine-m2s",
+  "slug": "vanshnawander-sapc2-moonshine-m2s",
+  "author": "vanshnawander",
+  "url": "https://huggingface.co/vanshnawander/sapc2-moonshine-m2s",
+  "created_at": "2026-10-23T13:40:31.000Z",
+  "updated_at": "2026-10-26T18:53:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "moonshine",
+    "automatic-speech-recognition",
+    "dysarthric-speech",
+    "speech-accessibility",
+    "sapc2",
+    "en",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 26,
+  "trending_score": 0,
+  "parameters": 2025120,
+  "parameters_human": "2.0M",
+  "storage_bytes": 8109264,
+  "storage_human": "8 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vanshnawander/sapc2-moonshine-m5g · Hugging Face",
+      "url": "https://huggingface.co/vanshnawander/sapc2-moonshine-m5g",
+      "snippet": "Moonshine m5g (5.6M): width 192, 5 heads, distilled from m15s (SAPC2) Fine-tuned for the Speech Accessibility Project Challenge 2 (SAPC2): English speech from speakers with ALS, cerebral palsy, Down syndrome, Parkinson&#x27;s disease and stroke."
+    },
+    {
+      "title": "vanshnawander/sapc2-moonshine-tiny-rl · Hugging Face",
+      "url": "https://huggingface.co/vanshnawander/sapc2-moonshine-tiny-rl",
+      "snippet": "Moonshine Tiny (27M) for dysarthric speech: SFT + RL (SAPC2) Fine-tuned for the Speech Accessibility Project Challenge 2 (SAPC2): English speech from speakers with ALS, cerebral palsy, Down syndrome, Parkinson&#x27;s disease and stroke."
+    },
+    {
+      "title": "Sapc2 Moonshine M5g - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/vanshnawander/sapc2-moonshine-m5g",
+      "snippet": "Registry entry for model Sapc2 Moonshine M5g; source metadata pending."
+    },
+    {
+      "title": "moonshine: Audio-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/moonshine-moonshine-ai",
+      "snippet": "Overview moonshine is an automatic speech recognition (ASR) model designed for transcribing English speech audio into English text, developed by moonshine-ai. The model exists in two sizes: a 27-million parameter tiny variant and a 61-million parameter base variant, both built with a sequence-to-sequence architecture and released in October 2024. Built in Keras and trained on 200,000 hours of ..."
+    },
+    {
+      "title": "GitHub - moonshine-ai/moonshine: Very low latency speech to text ...",
+      "url": "https://github.com/moonshine-ai/moonshine",
+      "snippet": "Very low latency speech to text, intent recognition, and text to speech, for building voice agents and interfaces - moonshine-ai/moonshine"
+    }
+  ]
+}

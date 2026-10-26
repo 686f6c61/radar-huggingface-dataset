@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "tranzistrina/inhLLm-V3-GGUF",
+  "slug": "tranzistrina-inhllm-v3-gguf",
+  "author": "tranzistrina",
+  "url": "https://huggingface.co/tranzistrina/inhLLm-V3-GGUF",
+  "created_at": "2026-10-26T12:42:21.000Z",
+  "updated_at": "2026-10-26T12:43:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "gguf",
+    "ollama",
+    "base-model",
+    "experimental",
+    "text-generation",
+    "ru",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 17308032,
+  "parameters_human": "17.3M",
+  "storage_bytes": 67634432,
+  "storage_human": "68 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tranzistrina (tranzistrina) - Hugging Face",
+      "url": "https://huggingface.co/tranzistrina",
+      "snippet": "User profile of tranzistrina on Hugging Face"
+    },
+    {
+      "title": "tranzistrina/inhLLm-V2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/tranzistrina/inhLLm-V2-GGUF",
+      "snippet": "inhLLm V2 · Ollama GGUF Экспериментальная компактная языковая модель на архитектуре GPT-2, реализованная и обученная в проекте inhLLm V2."
+    },
+    {
+      "title": "GitHub - avsDeveloper/AI-Model-Trainer: UI based trainer and converter ...",
+      "url": "https://github.com/avsDeveloper/AI-Model-Trainer",
+      "snippet": "🤖 AI Model Trainer v0.9.1 A complete GUI application for training transformer language models and exporting them to GGUF or ONNX format — from training to interactive chat testing, all in one place."
+    },
+    {
+      "title": "GitHub - GGUFloader/gguf-loader: GGUF Loader with its Agentic Mode, and ...",
+      "url": "https://github.com/GGUFloader/gguf-loader",
+      "snippet": "GGUF Loader with its Agentic Mode, and floating button, ai Models | Open Source & Offline. Mistral, Deepseek, llama, gemma, qwen - GGUFloader/gguf-loader"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    }
+  ]
+}

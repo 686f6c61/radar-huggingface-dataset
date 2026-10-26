@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Danish-777/kcat-km-esm-xgb",
+  "slug": "danish-777-kcat-km-esm-xgb",
+  "author": "Danish-777",
+  "url": "https://huggingface.co/Danish-777/kcat-km-esm-xgb",
+  "created_at": "2026-10-26T18:26:11.000Z",
+  "updated_at": "2026-10-26T18:26:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "leak-curber",
+    "kcat",
+    "km",
+    "leaderboard",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 207443927,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - silveraru/esmKCat: kcat prediction model using chemBERTa+ GINE ...",
+      "url": "https://github.com/silveraru/esmKCat",
+      "snippet": "A multi-modal deep learning model for kcat (catalytic rate constant) prediction that combines: ChemBERTa + GINE for substrate molecular representation ESM (Evolutionary Scale Modeling) for protein sequence representation GINE (Graph Isomorphism Network with Edge features) for protein 3D structure representation"
+    },
+    {
+      "title": "EZKinetics/model/KCAT_KM/XGBoost/ESM3&ChemBERTa-77M-MLM at main - GitHub",
+      "url": "https://github.com/le-yuan/EZKinetics/tree/main/model/KCAT_KM/XGBoost/ESM3%26ChemBERTa-77M-MLM",
+      "snippet": "Leveraging Large Language Models for Enzyme Catalytic Activity Prediction - le-yuan/EZKinetics"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?library...",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "DOCX bioRxiv",
+      "url": "https://www.biorxiv.org/content/biorxiv/early/2026/03/30/2026.03.29.715152/DC1/embed/media-1.docx",
+      "snippet": "The ESM series includes models like ESM2 9 (for embeddings and general purposes), ESMFold 9 (for protein structure prediction), ESM-1v 5 (for variant effect prediction), and ESM-IF1 10 (for inverse folding). Both SaProt and ProSST seek to incorporate protein structural information into training of language model."
+    },
+    {
+      "title": "From Sequence to Kinetics: Boltzmann Labs Develops Dedicated AI Models ...",
+      "url": "https://www.linkedin.com/pulse/from-sequence-kinetics-boltzmann-labs-develops-dedicated-bs0we/",
+      "snippet": "How autoresearch powered the development of a dedicated kcat and Km models that together outperform CatPred across every out-of-distribution evaluation. We built two new AI models at Boltzmann Labs."
+    }
+  ]
+}

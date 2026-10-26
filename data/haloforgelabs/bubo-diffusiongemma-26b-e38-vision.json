@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "HaloForgeLabs/bubo-diffusiongemma-26b-e38-vision",
+  "slug": "haloforgelabs-bubo-diffusiongemma-26b-e38-vision",
+  "author": "HaloForgeLabs",
+  "url": "https://huggingface.co/HaloForgeLabs/bubo-diffusiongemma-26b-e38-vision",
+  "created_at": "2026-10-26T15:02:07.000Z",
+  "updated_at": "2026-10-26T15:02:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "vision",
+    "mmproj",
+    "bubo",
+    "base_model:Goodoldjam/DiffusionGemma-26B-E38-Abliterated-NVFP4",
+    "base_model:quantized:Goodoldjam/DiffusionGemma-26B-E38-Abliterated-NVFP4",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 572794416,
+  "parameters_human": "572.8M",
+  "storage_bytes": 1194827776,
+  "storage_human": "1.2 GB",
+  "base_model": "Goodoldjam/DiffusionGemma-26B-E38-Abliterated-NVFP4",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

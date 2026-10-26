@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "BSC-LT/faster-whisper-bsc-large-v3-cat",
+  "slug": "bsc-lt-faster-whisper-bsc-large-v3-cat",
+  "author": "BSC-LT",
+  "url": "https://huggingface.co/BSC-LT/faster-whisper-bsc-large-v3-cat",
+  "created_at": "2025-05-12T11:04:56.000Z",
+  "updated_at": "2026-10-26T12:54:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "ctranslate2",
+  "languages": [
+    "ca"
+  ],
+  "tags": [
+    "ctranslate2",
+    "audio",
+    "automatic-speech-recognition",
+    "faster-whisper",
+    "whisper-large-v3",
+    "barcelona-supercomputing-center",
+    "ca",
+    "dataset:projecte-aina/3catparla_asr",
+    "dataset:projecte-aina/parlament_parla_v3",
+    "dataset:projecte-aina/corts_valencianes_asr_a",
+    "dataset:projecte-aina/commonvoice_benchmark_catalan_accents",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 84,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3087284237,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bachelor of Science — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Bachelor_of_science",
+      "snippet": "Le Bachelor of Science (BSc) ou le Baccalauréat ès sciences (B.Sc.) au Canada est un grade universitaire existant dans de …"
+    },
+    {
+      "title": "BSC — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/BSC",
+      "snippet": "BSC est un code pouvant faire référence à : Bahía Solano, dans le département de Chocó, en Colombie, selon la liste des codes …"
+    },
+    {
+      "title": "Bachelor of Science - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Bachelor_of_Science",
+      "snippet": "In Brazil, a Bachelor of Science degree is an undergraduate academic degree and is equivalent to a BSc (Hons)."
+    },
+    {
+      "title": "BeSoccer Livescore: Résultats de football de la journée en direct",
+      "url": "https://fr.besoccer.com/",
+      "snippet": "⚽ Profitez des résultats de foot en direct sur BeSoccer Livescore. Suivez les scores and résultats ligue 1 et de la Ligue des …"
+    },
+    {
+      "title": "Différence entre un BSc et un MSc. - Fiche pratique sur Lavise.fr",
+      "url": "https://www.lavise.fr/fiches/16506.html",
+      "snippet": "Un BSc (bachelor of science) et un MSc (master of science) sont tous deux des diplômes d’enseignement supérieur dans des …"
+    }
+  ]
+}

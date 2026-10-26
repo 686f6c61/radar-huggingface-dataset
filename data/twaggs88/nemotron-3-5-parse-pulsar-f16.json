@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "twaggs88/Nemotron-3.5-Parse-pulsar-f16",
+  "slug": "twaggs88-nemotron-3-5-parse-pulsar-f16",
+  "author": "twaggs88",
+  "url": "https://huggingface.co/twaggs88/Nemotron-3.5-Parse-pulsar-f16",
+  "created_at": "2026-10-26T12:34:37.000Z",
+  "updated_at": "2026-10-26T12:34:48.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "pulsar",
+    "nemotron",
+    "document-parsing",
+    "ocr",
+    "turing",
+    "image-to-text",
+    "base_model:nvidia/Nemotron-3.5-Parse",
+    "base_model:quantized:nvidia/Nemotron-3.5-Parse",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 628701296,
+  "parameters_human": "628.7M",
+  "storage_bytes": 1296462592,
+  "storage_human": "1.3 GB",
+  "base_model": "nvidia/Nemotron-3.5-Parse",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-pulsar-k4 - Hugging Face",
+      "url": "https://huggingface.co/twaggs88/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-pulsar-k4",
+      "snippet": "A ready-to-serve container for pulsar, our inference engine for DGX Spark (GB10). It holds nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16 quantized to EXL3 4.0 bpw, plus NVIDIA&#x27;s LiLiCorr block drafter for speculative decoding. It&#x27;s 59 GB, and nothing else needs downloading. Experimental. Pulsar ..."
+    },
+    {
+      "title": "nvidia/Nemotron-3.5-Parse · Hugging Face",
+      "url": "https://huggingface.co/nvidia/Nemotron-3.5-Parse",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Nemotron 3.5 Parse | AI Model | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/model/nemotron-3-5-parse/",
+      "snippet": "Nemotron 3.5 Parse is NVIDIA&#x27;s compact 631M parameter document image parser. It converts page images into structured, machine-readable text with semantic layout classes, bounding boxes and reading order, handling OCR, tables and charts across multilingual documents. Released as an open model for document intelligence, RAG pipelines and agentic data extraction."
+    },
+    {
+      "title": "nemotron-3.5-parse Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3.5-parse/modelcard",
+      "snippet": "Nemotron 3.5 Parse is a document image parser that produces structured, machine-readable text with semantic layout classes, bounding boxes, and reading order. It combines a C-RADIOv4-SO400M vision encoder with a 10-layer mBART decoder that consumes the visual sequence as a causal prefix."
+    },
+    {
+      "title": "NVIDIA Debuts Open Nemotron 3.5 Models for Embedding, Reranking ...",
+      "url": "https://www.unite.ai/nvidia-debuts-open-nemotron-3-5-models-for-embedding-reranking-parsing/",
+      "snippet": "NVIDIA on October 21, 2026, expanded its Nemotron Retriever collection with new open, commercially available models for embedding, reranking, and document extraction: Nemotron 3.5 Embed in 8B BF16, 1B BF16, and 1B NVFP4..."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "ericjoelr/qwen3-vl-4b-karteikarten-lora",
+  "slug": "ericjoelr-qwen3-vl-4b-karteikarten-lora",
+  "author": "ericjoelr",
+  "url": "https://huggingface.co/ericjoelr/qwen3-vl-4b-karteikarten-lora",
+  "created_at": "2026-10-26T14:31:57.000Z",
+  "updated_at": "2026-10-26T15:38:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "de"
+  ],
+  "tags": [
+    "mlx",
+    "mlx-vlm",
+    "lora",
+    "qwen3-vl",
+    "vision-language",
+    "flashcards",
+    "anki",
+    "knowledge-distillation",
+    "image-text-to-text",
+    "de",
+    "base_model:mlx-community/Qwen3-VL-4B-Instruct-8bit",
+    "base_model:adapter:mlx-community/Qwen3-VL-4B-Instruct-8bit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 132183313,
+  "storage_human": "132 MB",
+  "base_model": "mlx-community/Qwen3-VL-4B-Instruct-8bit",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

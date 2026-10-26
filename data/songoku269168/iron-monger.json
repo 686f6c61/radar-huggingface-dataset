@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Songoku269168/IRON-MONGER",
+  "slug": "songoku269168-iron-monger",
+  "author": "Songoku269168",
+  "url": "https://huggingface.co/Songoku269168/IRON-MONGER",
+  "created_at": "2026-10-26T17:43:02.000Z",
+  "updated_at": "2026-10-26T17:59:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 4920739232,
+  "storage_human": "4.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Songoku269168/IRON-MONGER · Hugging Face",
+      "url": "https://huggingface.co/Songoku269168/IRON-MONGER",
+      "snippet": "Songoku269168 / IRON-MONGER Like 1 GGUF imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Songoku269168 (Son goku 777jwvk) - Hugging Face",
+      "url": "https://huggingface.co/Songoku269168/models",
+      "snippet": "User profile of Son goku 777jwvk on Hugging Face"
+    },
+    {
+      "title": "Iron Monger Autonomous - Free 3D Model | STLFinder",
+      "url": "https://www.stlfinder.com/model/iron-monger-autonomous/3799860?q=iron+monger",
+      "snippet": "Download Iron Monger Autonomous 3D model for 3D printing. Free STL file from sketchfab. Monger Autonomous is a character inspired by the movie Ironman. This time it is programmed to have total autonomy and a very developed IA. I decided to take an old high poly wor..."
+    },
+    {
+      "title": "Iron Monger Autonomous - 3D model by IkaArt - Sketchfab",
+      "url": "https://sketchfab.com/3d-models/iron-monger-autonomous-87fe74b82e314fa2ad87eb9245de4f91",
+      "snippet": "Monger Autonomous is a character inspired by the movie Ironman. This time it is programmed to have total autonomy and a very developed IA. I decided to take an old high poly work of the same character and update it so that I could use it for real time. - Iron Monger Autonomous - 3D model by IkaArt"
+    },
+    {
+      "title": "Ironmonger 3D models - Sketchfab",
+      "url": "https://sketchfab.com/tags/ironmonger",
+      "snippet": "Ironmonger 3D models ready to view and download for free."
+    }
+  ]
+}

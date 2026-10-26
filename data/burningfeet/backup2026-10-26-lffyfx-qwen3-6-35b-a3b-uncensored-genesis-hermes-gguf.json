@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "burningfeet/backup2026-10-26-LffyFx-Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-GGUF",
+  "slug": "burningfeet-backup2026-10-26-lffyfx-qwen3-6-35b-a3b-uncensored-genesis-hermes-gguf",
+  "author": "burningfeet",
+  "url": "https://huggingface.co/burningfeet/backup2026-10-26-LffyFx-Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-GGUF",
+  "created_at": "2026-10-26T18:50:43.000Z",
+  "updated_at": "2026-10-26T18:51:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "hermes",
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "hermes",
+    "gguf",
+    "uncensored",
+    "qwen3.6",
+    "moe",
+    "vision",
+    "multimodal",
+    "genesis",
+    "agentic",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "multilingual",
+    "dataset:NousResearch/hermes-function-calling-v1",
+    "base_model:HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+    "base_model:quantized:HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 89252549300,
+  "storage_human": "89.3 GB",
+  "base_model": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V5-GGUF",
+      "url": "https://huggingface.co/burningfeet/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V5-GGUF",
+      "snippet": "Join the Discord for updates, roadmaps, projects, or just to chat. Base model. HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive - 0/465 refusals. Thanks to HauhauCS Usage Ready to use. Recommended quant: APEX or Q8_K_P Tensor drift repair by me. Method: Genesis-SVD Links: Original uncensored model Quantization Script with Unsloth ..."
+    },
+    {
+      "title": "README.md · burningfeet/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V7 ...",
+      "url": "https://huggingface.co/burningfeet/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V7-GGUF-2026-08-07/blob/main/README.md",
+      "snippet": "What is Genesis? Genesis is post training data regeneration and calibrarion algorythm for neural networks (LLM) in GGUF format that I made with AI help during almost half a year of development. It&#x27;s optimized, architecture independent, works with any model in GGUF format and based on mathematical statistics. I don&#x27;t train or finetune models, I repair purity of signal in them instead on Google ..."
+    },
+    {
+      "title": "burningfeet/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V5-GGUF",
+      "url": "https://abliteration.org/models/burningfeet/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V5-GGUF",
+      "snippet": "Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V5-GGUF by burningfeet: Uncensored (method unknown). 2 downloads, 2 likes on Hugging Face. Files, benchmarks and abliteration classification on abliteration.org."
+    },
+    {
+      "title": "burningfeet/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V10-GGUF-2026-08 ...",
+      "url": "https://abliteration.org/models/burningfeet/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V10-GGUF-2026-08-24",
+      "snippet": "Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V10-GGUF-2026-08-24 by burningfeet: Uncensored (method unknown). 33 downloads, 1 likes on Hugging Face. Files, benchmarks and abliteration classification on abliteration.org."
+    },
+    {
+      "title": "Backup2026 10 20 Lffyfx Tiel Coder 35b A3b Genesis Hermes Gguf",
+      "url": "https://free2aitools.com/model/burningfeet/backup2026-10-20-lffyfx-tiel-coder-35b-a3b-genesis-hermes-gguf",
+      "snippet": "Registry entry for model Backup2026 10 20 Lffyfx Tiel Coder 35b A3b Genesis Hermes Gguf; source metadata pending."
+    }
+  ]
+}

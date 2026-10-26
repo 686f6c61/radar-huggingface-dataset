@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Erog0291/stew-audio-0.1-asr-ha",
+  "slug": "erog0291-stew-audio-0-1-asr-ha",
+  "author": "Erog0291",
+  "url": "https://huggingface.co/Erog0291/stew-audio-0.1-asr-ha",
+  "created_at": "2026-10-25T14:14:37.000Z",
+  "updated_at": "2026-10-26T18:50:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "whisper",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 44,
+  "trending_score": 0,
+  "parameters": 241734912,
+  "parameters_human": "241.7M",
+  "storage_bytes": 2401055702,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Maladie mentale : définition, symptômes et prise en charge",
+      "url": "https://www.doctissimo.fr/psychologie/maladies-psychiatriques-sante-mentale/quest-ce-quune-maladie-mentale/10965b_ar.html",
+      "snippet": "Sep 4, 2026 · Une maladie mentale, ou trouble mental, se caractérise par une altération importante de la pensée, de l’émotion et/ou …"
+    },
+    {
+      "title": "Qu'est-ce qu'une maladie mentale ? | Maladies Mentales | Fondation ...",
+      "url": "https://www.fondation-fondamental.org/les-maladies-mentales/quest-ce-quune-maladie-mentale",
+      "snippet": "Qu'est-ce qu'une maladie mentale ? Encore trop stigmatisées, les maladies mentales représentent un enjeu majeur de santé …"
+    },
+    {
+      "title": "Liste complète des maladies et troubles mentaux",
+      "url": "https://sommet-mondial-sante-mentale.fr/maladies-et-troubles-mentaux",
+      "snippet": "Découvrez notre liste complète des maladies et troubles mentaux, incluant troubles de l'humeur, anxieux et psychotiques. Obtenez …"
+    },
+    {
+      "title": "Troubles de la santé mentale : connaître les différents troubles | info ...",
+      "url": "https://www.info.gouv.fr/grand-dossier/parlons-sante-mentale/les-differents-troubles",
+      "snippet": "La santé mentale est un pilier essentiel du bien-être global. Comprendre les troubles de la santé mentale permet de mieux les …"
+    },
+    {
+      "title": "Présentation des maladies mentales - Santé mentale - MSD Manuals",
+      "url": "https://www.msdmanuals.com/fr/accueil/troubles-mentaux/pr%C3%A9sentation-des-soins-de-sant%C3%A9-mentale/pr%C3%A9sentation-des-maladies-mentales",
+      "snippet": "Présentation des maladies mentales – En savoir plus sur les causes, les symptômes, les diagnostics et les traitements à partir des …"
+    }
+  ]
+}

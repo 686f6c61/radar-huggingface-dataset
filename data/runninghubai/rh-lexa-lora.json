@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-lexa-lora",
+  "slug": "runninghubai-rh-lexa-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-lexa-lora",
+  "created_at": "2026-10-26T12:54:01.000Z",
+  "updated_at": "2026-10-26T12:55:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "image-text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 228679312,
+  "storage_human": "229 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RunningHub ｜ AI Agent-Powered Content Creation Platform with ComfyUI ...",
+      "url": "https://www.runninghub.ai/",
+      "snippet": "RunningHub is an all-in-one content creation platform powered by native AI agents. Build end-to-end creative workflows with ComfyUI workflows, infinite canvas, AI apps, image & video generation, and model API access."
+    },
+    {
+      "title": "RunningHubAI/rh-h3-character-swap-pro4500-lora · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-h3-character-swap-pro4500-lora",
+      "snippet": "This repository provides rh-h3-character-swap-pro4500-lora weight files. You can load them on RunningHub."
+    },
+    {
+      "title": "RunningHubAI/rh-qwen-image-2.1-aio-nsfw-lora · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-qwen-image-2.1-aio-nsfw-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RunningHub AI | Image, Video & Workflow Creation",
+      "url": "https://runninghubai.pro/",
+      "snippet": "RunningHub AI creative canvas Turn a thought into a world with RunningHub AI. One focused place for image generation, cinematic video, and repeatable AI workflows. Start with a sentence, shape the details, and keep every idea moving."
+    },
+    {
+      "title": "RunningHub｜原生AI智能体内容创作平台｜无限画布",
+      "url": "https://www.runninghub.cn/",
+      "snippet": "RunningHub是原生AI智能体内容创作平台，支持无限画布、AI生图生视频、Agent创作、ComfyUI工作流及AI应用与模型API，覆盖电商、短视频、短剧、漫剧等创作场景。"
+    }
+  ]
+}

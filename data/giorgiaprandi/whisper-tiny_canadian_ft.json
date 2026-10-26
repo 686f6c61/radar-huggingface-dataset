@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "GiorgiaPrandi/whisper-tiny_canadian_ft",
+  "slug": "giorgiaprandi-whisper-tiny_canadian_ft",
+  "author": "GiorgiaPrandi",
+  "url": "https://huggingface.co/GiorgiaPrandi/whisper-tiny_canadian_ft",
+  "created_at": "2026-10-26T15:47:17.000Z",
+  "updated_at": "2026-10-26T15:56:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "hf-asr-leaderboard",
+    "generated_from_trainer",
+    "en",
+    "dataset:naharte/canadian_english",
+    "base_model:openai/whisper-tiny",
+    "base_model:finetune:openai/whisper-tiny",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 37760640,
+  "parameters_human": "37.8M",
+  "storage_bytes": 302167417,
+  "storage_human": "302 MB",
+  "base_model": "openai/whisper-tiny",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Canadian English",
+      "metric": "Wer",
+      "value": 17.991083136637815
+    }
+  ],
+  "sources": [
+    {
+      "title": "GiorgiaPrandi/whisper-tiny_british_ft · Hugging Face",
+      "url": "https://huggingface.co/GiorgiaPrandi/whisper-tiny_british_ft",
+      "snippet": "This model is a fine-tuned version of openai/whisper-tiny on the British English dataset."
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "whisper audio.flac audio.mp3 audio.wav --model turbo · The default setting (which selects the turbo model) works well for transcribing English. However, the turbo model is not trained for translation tasks. If you need to translate non-English speech into English, use one of the multilingual models (tiny, base, small, medium, large) instead of turbo."
+    },
+    {
+      "title": "aiidddaan/whisper-tiny_to_canadian_accent_09oct · Hugging Face",
+      "url": "https://huggingface.co/aiidddaan/whisper-tiny_to_canadian_accent_09oct",
+      "snippet": "This model is a fine-tuned version of openai/whisper-tiny on the Canadian English dataset."
+    },
+    {
+      "title": "Whisper-Tiny - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/whisper_tiny",
+      "snippet": "Transformer-based automatic speech recognition (ASR) model for multilingual transcription and translation available on HuggingFace."
+    },
+    {
+      "title": "Whisper Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/whisper-1",
+      "snippet": "Whisper is a general-purpose speech recognition model, trained on a large dataset of diverse audio. You can also use it as a multitask model to perform multilingual speech recognition as well as speech translation and language identification ..."
+    }
+  ]
+}

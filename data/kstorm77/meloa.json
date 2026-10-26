@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "kstorm77/meloa",
+  "slug": "kstorm77-meloa",
+  "author": "kstorm77",
+  "url": "https://huggingface.co/kstorm77/meloa",
+  "created_at": "2026-10-26T17:38:36.000Z",
+  "updated_at": "2026-10-26T17:49:18.000Z",
+  "license": "per-folder",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "gguf",
+    "meloa",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1837275136,
+  "parameters_human": "1.84B",
+  "storage_bytes": 14206876525,
+  "storage_human": "14.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Parakeet Dk Meloa Sherpa Onnx - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/kstorm77/parakeet-dk-meloa-sherpa-onnx",
+      "snippet": "Registry entry for model Parakeet Dk Meloa Sherpa Onnx; source metadata pending."
+    },
+    {
+      "title": "kstorm77/Parakeet-dk-meloa-sherpa-onnx · Hugging Face",
+      "url": "https://huggingface.co/kstorm77/Parakeet-dk-meloa-sherpa-onnx",
+      "snippet": "The Danish fine-tune kstorm77/Parakeet-dk-meloa of NVIDIA&#x27;s Parakeet TDT 0.6B v3, exported to ONNX at full precision with sherpa-onnx&#x27;s export_onnx.py (sherpa-onnx v1 ..."
+    },
+    {
+      "title": "kstorm77/Parakeet-dk-meloa · Hugging Face",
+      "url": "https://huggingface.co/kstorm77/Parakeet-dk-meloa",
+      "snippet": "To use a downloaded copy instead, ASRModel.restore_from (\"Parakeet-dk-meloa.nemo\"). The model uses the base model&#x27;s multilingual tokenizer unchanged, so it decodes exactly like parakeet-tdt-.6b-v3."
+    },
+    {
+      "title": "kstorm77/parakeet-tdt-0.6b-v2 · Hugging Face",
+      "url": "https://huggingface.co/kstorm77/parakeet-tdt-0.6b-v2",
+      "snippet": "Use Case: This model serves developers, researchers, academics, and industries building applications that require speech-to-text capabilities, including but not limited to: conversational AI, voice assistants, transcription services, subtitle generation, and voice analytics platforms."
+    },
+    {
+      "title": "kstorm77/granite-speech-4.1-2b · Hugging Face",
+      "url": "https://huggingface.co/kstorm77/granite-speech-4.1-2b",
+      "snippet": "Model Summary: Granite Speech 4.1 2B is a compact and efficient speech-language model, specifically designed for multilingual automatic speech recognition (ASR) and bidirectional automatic speech translation (AST) for English, French, German, Spanish, Portuguese and Japanese."
+    }
+  ]
+}

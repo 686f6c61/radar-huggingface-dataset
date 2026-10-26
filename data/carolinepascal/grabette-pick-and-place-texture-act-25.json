@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "CarolinePascal/grabette-pick-and-place-texture-act-25",
+  "slug": "carolinepascal-grabette-pick-and-place-texture-act-25",
+  "author": "CarolinePascal",
+  "url": "https://huggingface.co/CarolinePascal/grabette-pick-and-place-texture-act-25",
+  "created_at": "2026-10-26T14:50:08.000Z",
+  "updated_at": "2026-10-26T16:47:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:CarolinePascal/grabette-pick-and-place-texture-25",
+    "arxiv:2304.13705",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51592843,
+  "parameters_human": "51.6M",
+  "storage_bytes": 12378636272,
+  "storage_human": "12.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

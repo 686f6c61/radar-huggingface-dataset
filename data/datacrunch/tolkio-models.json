@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "datacrunch/tolkio-models",
+  "slug": "datacrunch-tolkio-models",
+  "author": "datacrunch",
+  "url": "https://huggingface.co/datacrunch/tolkio-models",
+  "created_at": "2026-10-18T05:11:14.000Z",
+  "updated_at": "2026-10-26T12:58:24.000Z",
+  "license": "mixed",
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "gguf",
+    "speech-recognition",
+    "translation",
+    "text-to-speech",
+    "offline",
+    "android",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 745,
+  "trending_score": 0,
+  "parameters": 1942653248,
+  "parameters_human": "1.94B",
+  "storage_bytes": 8717632543,
+  "storage_human": "8.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DataCrunch",
+      "url": "https://www.datacrunch.com/",
+      "snippet": "DataCrunch uses the quantitative research of the CrunchDAO to manage this systematic market-neutral portfolio This long-short …"
+    },
+    {
+      "title": "Verda - The full-stack AI cloud of tomorrow",
+      "url": "https://verda.com/",
+      "snippet": "Cloud infrastructure shaped by AI workloads. Peak efficiency across software, compute, storage, and networking."
+    },
+    {
+      "title": "DataCrunch is changing its name to Verda",
+      "url": "https://verda.com/blog/datacrunch-is-changing-its-name-to-verda",
+      "snippet": "Nov 5, 2025 · Founded by our CEO, Ruben Bryon, DataCrunch set out to remove the bottleneck that slowed down AI innovation: …"
+    },
+    {
+      "title": "Datacrunch",
+      "url": "https://www.datacrunchglobal.com/",
+      "snippet": "Disclaimer: This site is not intended to constitute any offer or invitation to buy and sell the product or service offered by Datacrunch …"
+    },
+    {
+      "title": "DataCrunch, l’hyperscaler IA européen alimenté par l’énergie verte",
+      "url": "https://innovations.fr/datacrunch-lhyperscaler-ia-europeen-alimente-par-lenergie-verte/",
+      "snippet": "Oct 21, 2024 · DataCrunch veut devenir le premier fournisseur de cloud IA hyperscale en Europe, en misant sur les énergies …"
+    }
+  ]
+}

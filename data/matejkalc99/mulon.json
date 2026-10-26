@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "matejkalc99/mulon",
+  "slug": "matejkalc99-mulon",
+  "author": "matejkalc99",
+  "url": "https://huggingface.co/matejkalc99/mulon",
+  "created_at": "2026-10-26T18:12:47.000Z",
+  "updated_at": "2026-10-26T19:11:22.000Z",
+  "license": "cc-by-nc-sa-4.0.base-qwen3.5-9b-apache-2.0.training-text-atrieste.eu-cc-by-nc-sa-3.0-regolamento-sec-7",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "it"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qwen",
+    "text-generation",
+    "triestine-dialect",
+    "mulon",
+    "it",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:cc-by-nc-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 117318807,
+  "storage_human": "117 MB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mathlon — Learn Math with an AI Tutor",
+      "url": "https://www.mathlon.app/",
+      "snippet": "An audio-visual math tutor. You talk through a problem out loud, and Mathlon explains it back while drawing every step on a shared whiteboard — equations, graphs, diagrams, the lot. It&#x27;s built to teach the way a good human tutor does, not to spit out a final answer and leave you to reverse-engineer it."
+    },
+    {
+      "title": "matejkalc99/index.html at master · KalcMatej99/matejkalc99",
+      "url": "https://github.com/KalcMatej99/matejkalc99/blob/master/index.html",
+      "snippet": "My portfolio. Contribute to KalcMatej99/matejkalc99 development by creating an account on GitHub."
+    },
+    {
+      "title": "Matej Kalc - GitHub",
+      "url": "https://github.com/KalcMatej99/matejkalc99/blob/eefba715a67c434ee4cddb6bcf89db15990a9420/index.html",
+      "snippet": "In the third year I choose the\",\" Artificial Intelligence modul,\",\" since AI is my biggest interest. I graduated with my bachelor thesis Evaluating model\",\" tradeoffs for click prediction."
+    },
+    {
+      "title": "Best Free AI Models & APIs (2026) | LM Market Cap",
+      "url": "https://lmmarketcap.com/free-ai-models",
+      "snippet": "Every free AI model ranked by quality: free LLMs, coding assistants, and image generators. No API costs, open-source, and ready to use. Start for free."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=free",
+      "snippet": "Explore machine learning models. bartowski/Tralalabs_Pythia-6.9B-Instruct-v1-Merged-GGUF"
+    }
+  ]
+}

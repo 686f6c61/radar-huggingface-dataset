@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "id": "projectsidewalk/sidewalk-validator-ai-nocurbramp",
+  "slug": "projectsidewalk-sidewalk-validator-ai-nocurbramp",
+  "author": "projectsidewalk",
+  "url": "https://huggingface.co/projectsidewalk/sidewalk-validator-ai-nocurbramp",
+  "created_at": "2025-01-26T03:43:57.000Z",
+  "updated_at": "2026-10-26T18:51:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dinov2",
+    "image-classification",
+    "project-sidewalk",
+    "accessibility",
+    "sidewalks",
+    "street-view",
+    "label-validation",
+    "nocurbramp",
+    "dataset:projectsidewalk/sidewalk-validator-ai-dataset-nocurbramp",
+    "arxiv:2304.07193",
+    "base_model:facebook/dinov2-large",
+    "base_model:finetune:facebook/dinov2-large",
+    "license:mit",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 28,
+  "trending_score": 0,
+  "parameters": 304372738,
+  "parameters_human": "304.4M",
+  "storage_bytes": 8523354328,
+  "storage_human": "8.5 GB",
+  "base_model": "facebook/dinov2-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Label validation",
+      "dataset": "sidewalk-validator-ai-nocurbramp dataset",
+      "metric": "Accuracy",
+      "value": 0.8787
+    },
+    {
+      "task": "Label validation",
+      "dataset": "sidewalk-validator-ai-nocurbramp dataset",
+      "metric": "Balanced accuracy",
+      "value": 0.8769
+    },
+    {
+      "task": "Label validation",
+      "dataset": "sidewalk-validator-ai-nocurbramp dataset",
+      "metric": "AUC (incorrect)",
+      "value": 0.9336
+    },
+    {
+      "task": "Label validation",
+      "dataset": "sidewalk-validator-ai-nocurbramp dataset",
+      "metric": "Macro F1",
+      "value": 0.8772
+    }
+  ],
+  "sources": [
+    {
+      "title": "projectsidewalk (Project Sidewalk) - Hugging Face",
+      "url": "https://huggingface.co/projectsidewalk",
+      "snippet": "projectsidewalk/sidewalk-validator-ai-obstacle ... RampNet (ICCV 2025): model, dataset, Stage 1 inputs. Note: the rampnet-benchmark is later 2026 work ..."
+    },
+    {
+      "title": "Project Sidewalk Validator Models/Datasets - Hugging Face",
+      "url": "https://huggingface.co/collections/projectsidewalk/project-sidewalk-validator-models-datasets",
+      "snippet": "23.08.2026 ... Project Sidewalk Validator Models/Datasets · projectsidewalk/sidewalk-validator-ai-crosswalk · projectsidewalk/sidewalk-validator-ai-curbramp."
+    },
+    {
+      "title": "Project Sidewalk: A Web-based Crowdsourcing Tool for Collecting ...",
+      "url": "https://www.researchgate.net/publication/331319766_Project_Sidewalk_A_Web-based_Crowdsourcing_Tool_for_Collecting_Sidewalk_Accessibility_Data_At_Scale",
+      "snippet": "... model to produce an \"inclusivity heatmap\" that scores streets by predicted ... AI as partial measurement infrastructure and does not treat image ..."
+    },
+    {
+      "title": "Automating City Accessibility Constraints Mapping Through AI ...",
+      "url": "https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/smc2.70020",
+      "snippet": "13.12.2025 ... Since Project Sidewalk Dataset (PSD) only provides annotations in the form of points marked over the GSV panoramas, it is necessary to ..."
+    },
+    {
+      "title": "ZuriACT: Zurich Accessible CiTy – Promoting inclusive urban ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2667091726000580",
+      "snippet": "In the context of sidewalk accessibility, initiatives such as Project Sidewalk ... Declaration of generative AI and AI-assisted technologies in the writing ..."
+    }
+  ]
+}

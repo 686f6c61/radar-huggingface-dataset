@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "vanshnawander/sapc2-moonshine-m10s",
+  "slug": "vanshnawander-sapc2-moonshine-m10s",
+  "author": "vanshnawander",
+  "url": "https://huggingface.co/vanshnawander/sapc2-moonshine-m10s",
+  "created_at": "2026-10-23T09:50:07.000Z",
+  "updated_at": "2026-10-26T20:43:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "moonshine",
+    "automatic-speech-recognition",
+    "dysarthric-speech",
+    "speech-accessibility",
+    "sapc2",
+    "en",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 24,
+  "trending_score": 0,
+  "parameters": 10746112,
+  "parameters_human": "10.7M",
+  "storage_bytes": 42999080,
+  "storage_human": "43 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vanshnawander/sapc2-moonshine-m10s · Hugging Face",
+      "url": "https://huggingface.co/vanshnawander/sapc2-moonshine-m10s",
+      "snippet": "Moonshine m10s (10.8M): width 256, 7 heads, distilled from m15s (SAPC2) Fine-tuned for the Speech Accessibility Project Challenge 2 (SAPC2): English speech from speakers with ALS, cerebral palsy, Down syndrome, Parkinson&#x27;s disease and stroke."
+    },
+    {
+      "title": "Speech Accessibility Project Challenge 2 | Speech Accessibility Project ...",
+      "url": "https://xiuwenz2.github.io/SAPC2-website/?ref=mlcontests",
+      "snippet": "Welcome to the Speech Accessibility Project Challenge 2 (SAPC2). Building on the success of the Interspeech 2025 Speech Accessibility Project Challenge , where the best system reduced WER from the Whisper-large-v2 baseline of 17.82% to 8.11%, SAPC2 introduces a larger, more diverse, and etiology-balanced speech corpus."
+    },
+    {
+      "title": "vanshnawander (VANSH NAWANDER) - Hugging Face",
+      "url": "https://huggingface.co/vanshnawander",
+      "snippet": "machine learning, Large Language Models, NLP, neural networks, TensorFlow"
+    },
+    {
+      "title": "moonshine/micro/models at main · moonshine-ai/moonshine · GitHub",
+      "url": "https://github.com/moonshine-ai/moonshine/tree/main/micro/models",
+      "snippet": "Very low latency speech to text, intent recognition, and text to speech, for building voice agents and interfaces - moonshine/micro/models at main · moonshine-ai/moonshine"
+    },
+    {
+      "title": "vanshnawander/sapc2-moonshine-tiny-rl · Hugging Face",
+      "url": "https://huggingface.co/vanshnawander/sapc2-moonshine-tiny-rl",
+      "snippet": "Moonshine Tiny (27M) for dysarthric speech: SFT + RL (SAPC2) Fine-tuned for the Speech Accessibility Project Challenge 2 (SAPC2): English speech from speakers with ALS, cerebral palsy, Down syndrome, Parkinson&#x27;s disease and stroke."
+    }
+  ]
+}

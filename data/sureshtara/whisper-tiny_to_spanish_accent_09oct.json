@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "sureshtara/whisper-tiny_to_spanish_accent_09oct",
+  "slug": "sureshtara-whisper-tiny_to_spanish_accent_09oct",
+  "author": "sureshtara",
+  "url": "https://huggingface.co/sureshtara/whisper-tiny_to_spanish_accent_09oct",
+  "created_at": "2026-10-26T18:43:13.000Z",
+  "updated_at": "2026-10-26T18:55:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "hf-asr-leaderboard",
+    "generated_from_trainer",
+    "en",
+    "dataset:American_english",
+    "base_model:openai/whisper-tiny",
+    "base_model:finetune:openai/whisper-tiny",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 37760640,
+  "parameters_human": "37.8M",
+  "storage_bytes": 302167441,
+  "storage_human": "302 MB",
+  "base_model": "openai/whisper-tiny",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "American English",
+      "metric": "Wer",
+      "value": 9.067402172039303
+    }
+  ],
+  "sources": [
+    {
+      "title": "lggvu/whisper-tiny_to_spanish_accent_09oct · Hugging Face",
+      "url": "https://huggingface.co/lggvu/whisper-tiny_to_spanish_accent_09oct",
+      "snippet": "Instructions to use lggvu/whisper-tiny_to_spanish_accent_09oct with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use lggvu/whisper-tiny_to_spanish_accent_09oct with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline (\"automatic-speech-recognition\", model=\"lggvu ..."
+    },
+    {
+      "title": "whisper-tiny_to_spanish_accent_09oct - friendli.ai",
+      "url": "https://friendli.ai/models/ayfilaS/whisper-tiny_to_spanish_accent_09oct",
+      "snippet": "Run whisper-tiny_to_spanish_accent_09oct with FriendliAI inference. This model is a fine-tuned version of openai/whisper-tiny on the Spanish English dataset."
+    },
+    {
+      "title": "Whisper Tiny To Spanish Accent 09oct - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/joedwan/whisper-tiny_to_spanish_accent_09oct",
+      "snippet": "Registry entry for model Whisper Tiny To Spanish Accent 09oct; source metadata pending."
+    },
+    {
+      "title": "RuidaJiang/whisper-tiny_to_spanish_accent · Hugging Face",
+      "url": "https://huggingface.co/RuidaJiang/whisper-tiny_to_spanish_accent",
+      "snippet": "Instructions to use RuidaJiang/whisper-tiny_to_spanish_accent with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use RuidaJiang/whisper-tiny_to_spanish_accent with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline (\"automatic-speech-recognition\", model=\"RuidaJiang ..."
+    },
+    {
+      "title": "Whisper Tiny To Spanish Accent - AI Dataset Insights",
+      "url": "https://free2aitools.com/dataset/polauoa/whisper-tiny_to_spanish_accent",
+      "snippet": "Deep dive into Whisper Tiny To Spanish Accent."
+    }
+  ]
+}

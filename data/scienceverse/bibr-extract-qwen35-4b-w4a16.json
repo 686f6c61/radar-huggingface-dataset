@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "scienceverse/bibr-extract-qwen35-4b-W4A16",
+  "slug": "scienceverse-bibr-extract-qwen35-4b-w4a16",
+  "author": "scienceverse",
+  "url": "https://huggingface.co/scienceverse/bibr-extract-qwen35-4b-W4A16",
+  "created_at": "2026-10-26T12:41:05.000Z",
+  "updated_at": "2026-10-26T12:43:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen3_5",
+    "bibr",
+    "extraction",
+    "qwen3.5",
+    "int4",
+    "w4a16",
+    "gptq",
+    "compressed-tensors",
+    "image-text-to-text",
+    "conversational",
+    "base_model:scienceverse/bibr-extract-qwen35-4b",
+    "base_model:quantized:scienceverse/bibr-extract-qwen35-4b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 4040659158,
+  "storage_human": "4.0 GB",
+  "base_model": "scienceverse/bibr-extract-qwen35-4b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bibr Extract Qwen35 4B by scienceverse - LLM Explorer",
+      "url": "https://llm-explorer.com/model/scienceverse%2Fbibr-extract-qwen35-4b,75ZLtigXXy4Munr44Kac5y",
+      "snippet": "Bibr Extract Qwen35 4B is an open-source 4b LLM by scienceverse. VRAM 9.3GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "scienceverse/bibr-extract-qwen35-4b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/scienceverse/bibr-extract-qwen35-4b-GGUF",
+      "snippet": "scienceverse / bibr-extract-qwen35-4b-GGUF Like 0 Follow ScienceVerse 3 GGUF bibr extraction qwen3.5 llama.cpp conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "scienceverse/bibr-extract-qwen35-4b-mlx-8bit · Hugging Face",
+      "url": "https://huggingface.co/scienceverse/bibr-extract-qwen35-4b-mlx-8bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - scienceverse/bibr: Modern scientific extraction pipeline",
+      "url": "https://github.com/scienceverse/bibr",
+      "snippet": "Modern scientific extraction pipeline. Contribute to scienceverse/bibr development by creating an account on GitHub."
+    },
+    {
+      "title": "bibr-extract-qwen35-4b API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/scienceverse/bibr-extract-qwen35-4b",
+      "snippet": "Run bibr-extract-qwen35-4b with FriendliAI inference. This is the structured-extraction student model used by bibr."
+    }
+  ]
+}

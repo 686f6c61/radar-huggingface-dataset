@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ferrite-stems/htdemucs-onnx-dml",
+  "slug": "ferrite-stems-htdemucs-onnx-dml",
+  "author": "ferrite-stems",
+  "url": "https://huggingface.co/ferrite-stems/htdemucs-onnx-dml",
+  "created_at": "2026-10-26T17:51:15.000Z",
+  "updated_at": "2026-10-26T17:52:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "audio",
+    "source-separation",
+    "demucs",
+    "directml",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 371576554,
+  "storage_human": "372 MB",
+  "base_model": "facebook/demucs",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ferrite (acier) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Ferrite_(acier)",
+      "snippet": "Le terme ferrite désigne en effet l' acier à très faible teneur en carbone. Toutefois, comme son champ d'existence dans le diagramme …"
+    },
+    {
+      "title": "Qu'est-ce que la ferrite - Définition | Propriétés matérielles",
+      "url": "https://material-properties.org/fr/quest-ce-que-la-ferrite-definition/",
+      "snippet": "La ferrite ou α-ferrite est une phase de structure cubique centrée du fer qui existe en dessous de températures de 912°C pour de …"
+    },
+    {
+      "title": "Quelles sont les différentes utilisations de la ferrite ...",
+      "url": "https://www.semsuhner.com/fr/fabricant/quelles-sont-les-differentes-utilisations-de-la-ferrite/",
+      "snippet": "Sep 8, 2022 · Qu’est-ce que la ferrite ? Une ferrite est un matériau en céramique faible densité, de composition Fe2 O3 X O, où X …"
+    },
+    {
+      "title": "Ferrite (céramique ferromagnétique) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Ferrite_(c%C3%A9ramique_ferromagn%C3%A9tique)",
+      "snippet": "Il s’agit d’un composé de poudre de ferrite mélangé à un liant thermoplastique et c'est le matériau le plus utilisé pour la fabrication …"
+    },
+    {
+      "title": "Ferrite | Formule, propriétés et application",
+      "url": "https://material-properties.org/fr/ferrite/",
+      "snippet": "Le terme « ferrite » englobe une famille de matériaux qui ont pour base l’oxyde de fer, mais qui peuvent également contenir d’autres …"
+    }
+  ]
+}

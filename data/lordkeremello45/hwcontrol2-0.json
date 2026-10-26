@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "lordkeremello45/Hwcontrol2.0",
+  "slug": "lordkeremello45-hwcontrol2-0",
+  "author": "lordkeremello45",
+  "url": "https://huggingface.co/lordkeremello45/Hwcontrol2.0",
+  "created_at": "2026-10-26T13:01:53.000Z",
+  "updated_at": "2026-10-26T13:01:53.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - lordkeremello45/HWcontrol2.0",
+      "url": "https://github.com/lordkeremello45/HWcontrol2.0/tree/main",
+      "snippet": "HWcontrol2.0 is an open-source, cross-platform hardware monitoring, control, health and diagnostics platform built around a Flutter/Dart dashboard, an authenticated localhost Go bridge, and a native C++/CMake engine."
+    },
+    {
+      "title": "GitHub - lordkeremello45/HWcontrol2.0",
+      "url": "https://github.com/lordkeremello45/HWcontrol2.0",
+      "snippet": "Contribute to lordkeremello45/HWcontrol2.0 development by creating an account on GitHub."
+    },
+    {
+      "title": "4. Large AI Model Basic Course | Tonybot Documentation",
+      "url": "https://wiki.hiwonder.com/projects/Tonybot/en/latest/docs/4.%20Large%20AI%20Model%20Basic%20Course.html",
+      "snippet": "4. Large AI Model Basic Course [toc] 4.1 Large AI Model Module Introduction 4.1.1 Module Introduction The large AI model module features a built-in high-performance ESP32-S3 main control chip. It integrates a 2MP HD camera, microphone, HD display screen, speaker, and CI1302 voice processing chip, deeply integrating text, voice, and vision models. This module is easy to operate and is often ..."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "How can I capture system audio and pass it to a C++17 DSP engine on ...",
+      "url": "https://stackoverflow.com/questions/80011345/how-can-i-capture-system-audio-and-pass-it-to-a-c17-dsp-engine-on-windows",
+      "snippet": "I am developing a cross-platform C++17 audio engine for ARGON Audio. The engine includes a stereo DSP processing core and an audio-device host that captures audio, processes it, and sends it to an ..."
+    }
+  ]
+}

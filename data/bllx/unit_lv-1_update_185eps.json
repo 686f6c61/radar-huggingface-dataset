@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "bllx/unit_LV.1_update_185eps",
+  "slug": "bllx-unit_lv-1_update_185eps",
+  "author": "bllx",
+  "url": "https://huggingface.co/bllx/unit_LV.1_update_185eps",
+  "created_at": "2026-10-26T17:47:06.000Z",
+  "updated_at": "2026-10-26T18:04:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6825357515,
+  "storage_human": "6.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - black-forest-labs/flux: Official inference repo for FLUX.1 ...",
+      "url": "https://github.com/black-forest-labs/flux?tab=readme-ov-file",
+      "snippet": "by Black Forest Labs: https://bfl.ai. Documentation for our API can be found here: docs.bfl.ai. This repo contains minimal inference code to run image generation & editing with our Flux open-weight models."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Qwen, Mistral AI, Moonshot AI, Z.ai, MiniMax, NVIDIA, Microsoft AI, Cohere, Xiaomi, and other prominent AI labs. The newest-first tables show each release date, provider, and model type. Dates use the earliest meaningful availability stage for each entry. Preview access ..."
+    },
+    {
+      "title": "GitHub - trananh1992/flux-ai: Official inference repo for FLUX.1 models",
+      "url": "https://github.com/trananh1992/flux-ai",
+      "snippet": "Official inference repo for FLUX.1 models. Contribute to trananh1992/flux-ai development by creating an account on GitHub."
+    },
+    {
+      "title": "LLM Updates (October 2026) - AI Model Releases & Provider Activity",
+      "url": "https://lmmarketcap.com/llm-updates",
+      "snippet": "Track AI model releases, recently added endpoints, and provider update cadence across GPT, Claude, Gemini, DeepSeek, Llama, and 350+ models."
+    },
+    {
+      "title": "AI Model Release Statistics (2026): Launch Cadence by Lab",
+      "url": "https://benchlm.ai/stats/model-releases",
+      "snippet": "How fast are AI models shipping? Release counts, open-weight share, busiest months, and per-lab cadence from 311 tracked releases. Updated October 25, 2026."
+    }
+  ]
+}

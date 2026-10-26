@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "unsloth/MOSS-Image-SFT-GGUF",
+  "slug": "unsloth-moss-image-sft-gguf",
+  "author": "unsloth",
+  "url": "https://huggingface.co/unsloth/MOSS-Image-SFT-GGUF",
+  "created_at": "2026-10-22T00:04:31.000Z",
+  "updated_at": "2026-10-22T08:41:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "unsloth",
+    "quantized",
+    "moss-image",
+    "text-to-image",
+    "en",
+    "zh",
+    "arxiv:2610.23374",
+    "base_model:OpenMOSS-Team/MOSS-Image-SFT",
+    "base_model:quantized:OpenMOSS-Team/MOSS-Image-SFT",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 13,
+  "downloads_30d": 14630,
+  "trending_score": 0,
+  "parameters": 5082308624,
+  "parameters_human": "5.08B",
+  "storage_bytes": 33586082206,
+  "storage_human": "33.6 GB",
+  "base_model": "OpenMOSS-Team/MOSS-Image-SFT",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Releases · unslothai/unsloth - GitHub",
+      "url": "https://github.com/unslothai/unsloth/releases",
+      "snippet": "vor 2 Tagen ... Images + video. Generate images containing English or Chinese text with OpenMOSS's 5.1B MOSS-Image, SFT or Base. GGUF · Base GGUF; MOSS-Image ..."
+    },
+    {
+      "title": "GitHub - unslothai/unsloth: Local UI to run and train LLMs and ...",
+      "url": "https://github.com/unslothai/unsloth",
+      "snippet": "Run and train LLMs, MLX, GGUF, diffusion, decision, embedding, audio models: Qwen3.8, GLM-5.3-Flash, Kimi K3, Qwen-Image-2.1, MiniMax-H3, DeepSeek-V4, Gemma 4."
+    },
+    {
+      "title": "Unsloth - Run and Train Models Locally",
+      "url": "https://unsloth.ai/",
+      "snippet": "Unsloth is an open-source, no-code deskop UI for training and running open models on your local hardware."
+    },
+    {
+      "title": "Documentation Unsloth | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/fr",
+      "snippet": "Unsloth vous permet d'exécuter et d'entraîner des modèles d'IA sur votre propre matériel local via une interface utilisateur open …"
+    },
+    {
+      "title": "Anyone manage to get MOSS Image to load? : r/unsloth - Reddit",
+      "url": "https://www.reddit.com/r/unsloth/comments/1xecbd5/anyone_manage_to_get_moss_image_to_load/",
+      "snippet": "vor 2 Tagen ... I've updated to v0.1.910-beta, downloaded MOSS-Image-SFT-GGUF Q8 Unsloth, and attempted to load it. It fails with the following."
+    }
+  ]
+}

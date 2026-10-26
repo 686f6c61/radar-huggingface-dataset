@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "parlaval/laya-toxicity",
+  "slug": "parlaval-laya-toxicity",
+  "author": "parlaval",
+  "url": "https://huggingface.co/parlaval/laya-toxicity",
+  "created_at": "2026-10-26T12:33:22.000Z",
+  "updated_at": "2026-10-26T12:41:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "laya",
+  "languages": [],
+  "tags": [
+    "laya",
+    "safetensors",
+    "moderation",
+    "toxicity",
+    "text-classification",
+    "base_model:jhu-clsp/mmBERT-base",
+    "base_model:finetune:jhu-clsp/mmBERT-base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 321908998,
+  "parameters_human": "321.9M",
+  "storage_bytes": 678198809,
+  "storage_human": "678 MB",
+  "base_model": "jhu-clsp/mmBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Laya Korean Toxicity Model Training | Kaggle",
+      "url": "https://www.kaggle.com/code/tanat05/laya-korean-toxicity-model-training",
+      "snippet": "Explore and run AI code with Kaggle Notebooks | Using data from Laya Korean Toxicity Fine-tuning Dataset"
+    },
+    {
+      "title": "Laya Demos · Acurast",
+      "url": "https://laya.acurast.com/",
+      "snippet": "Snake, Tetris, a mail sorter, a dating app and more, every decision made by an open AI model on a phone in the Acurast Cloud."
+    },
+    {
+      "title": "GitHub - jmgb27/laya-vs-jev-toxicity: Fine-tuning the open Laya model ...",
+      "url": "https://github.com/jmgb27/laya-vs-jev-toxicity",
+      "snippet": "Laya vs Jev on toxicity These are the scripts, test comments and every model&#x27;s answers behind this blog post: Fine-tuned Laya vs paid Jev: 83% to 27% on toxic comments I asked two decision models the same seven yes/no questions about 2,000 Civil Comments: TypeSafe&#x27;s paid Jev API and Laya, an open model."
+    },
+    {
+      "title": "Laya vs Jev: Which AI Decision Model Wins? - 4sapi.hashnode.dev",
+      "url": "https://4sapi.hashnode.dev/laya-vs-jev-in-depth-comparative-analysis-of-two-popular-open-decision-models-for-agent-workflows",
+      "snippet": "According to AI Toolset coverage published September 21, 2026, Laya is available in two base sizes: ModernBERT-large 421M and ModernBERT-base 322M. For a typed classification problem, the model runs exactly one forward pass and returns decision results with calibrated confidence values. Its built-in language router supports more than 100 languages."
+    },
+    {
+      "title": "Jev: Fast, structured AI decisions for software automation | Product Hunt",
+      "url": "https://www.producthunt.com/products/jev",
+      "snippet": "Jev is TypeSafe AI&#x27;s System One frontier model: unstructured state in, typed probabilistic decisions out. Instead of generating text, Jev returns Choice, Score, and Noul answers with calibrated probabilities your code can act on. Parallel sampling delivers ~70-500ms responses, about 20-200x faster and 40-400x cheaper than comparable LLM workflows, with output tokens free. Now available to ..."
+    }
+  ]
+}

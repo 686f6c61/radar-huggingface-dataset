@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "janakbhavan/Seedance-2-AI-Video-Generator-free",
+  "slug": "janakbhavan-seedance-2-ai-video-generator-free",
+  "author": "janakbhavan",
+  "url": "https://huggingface.co/janakbhavan/Seedance-2-AI-Video-Generator-free",
+  "created_at": "2026-10-26T12:53:03.000Z",
+  "updated_at": "2026-10-26T12:53:04.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "text-to-video",
+    "image-to-video",
+    "multimodal",
+    "diffusion",
+    "dit",
+    "lip-sync",
+    "physics-simulation",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Seedance 2.0 AI Video Generator | Free Image & Text to Video",
+      "url": "https://seeddance.app/",
+      "snippet": "Create Seedance 2.0 AI videos from text or images in the official online studio. Start free, animate photos, build cinematic clips, and export HD results."
+    },
+    {
+      "title": "Free AI Video Generator | Text & Image to Video | Seedance 2.0",
+      "url": "https://seedance20.cloud/",
+      "snippet": "Seedance 2.0 by ByteDance: The #1 AI video generator ranked on Video Arena. Create stunning videos from text or images with native audio, 1080p resolution, and multi-shot storytelling. Try free — no credit card required."
+    },
+    {
+      "title": "Seedance 2.0 Video Generator - Seadance AI",
+      "url": "https://seadance.io/seedance-2",
+      "snippet": "Seedance 2.0 is a multimodal AI video model for realistic, high-quality generation, with strong virtual human support, multi-shot consistency, native audio, and cinematic control."
+    },
+    {
+      "title": "Seedance 2.0 Free AI Video Generator",
+      "url": "https://www.seedance.tv/seedance-2-0",
+      "snippet": "Try Seedance 2.0 free with signup credits. Create AI videos from text, images, video, and audio using ByteDance&#x27;s multimodal video model."
+    },
+    {
+      "title": "Seedance 2.0 - Free AI Video Generator | Text/Image to Video",
+      "url": "https://clipdance.ai/",
+      "snippet": "Seedance 2.0 What Is Seedance 2.0? Seedance 2.0 is a multimodal AI video generation model built by ByteDance. It creates 1080p video with native audio from text, images, and reference files in a single pass. Ranked among the top AI video models globally, it powers text-to-video, image-to-video, reference-guided generation, video editing, and beat-sync workflows, all in one browser workspace."
+    }
+  ]
+}

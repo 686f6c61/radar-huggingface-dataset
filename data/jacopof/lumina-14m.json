@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "jacopof/lumina-14m",
+  "slug": "jacopof-lumina-14m",
+  "author": "jacopof",
+  "url": "https://huggingface.co/jacopof/lumina-14m",
+  "created_at": "2026-10-26T15:05:35.000Z",
+  "updated_at": "2026-10-26T15:58:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "it"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "italian",
+    "small-llm",
+    "causal-lm",
+    "transformer",
+    "byte-level",
+    "edge-ai",
+    "code",
+    "coding",
+    "python",
+    "text-generation",
+    "it",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14394240,
+  "parameters_human": "14.4M",
+  "storage_bytes": 231505848,
+  "storage_human": "232 MB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

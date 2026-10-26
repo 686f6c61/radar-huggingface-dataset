@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "fodorad/exordium-weights",
+  "slug": "fodorad-exordium-weights",
+  "author": "fodorad",
+  "url": "https://huggingface.co/fodorad/exordium-weights",
+  "created_at": "2026-03-17T10:09:45.000Z",
+  "updated_at": "2026-10-26T18:52:51.000Z",
+  "license": "mixed-see-table",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "exordium",
+  "languages": [],
+  "tags": [
+    "exordium",
+    "mirror",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5487553199,
+  "storage_human": "5.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Do You (Dis)agree With Me? Modelling Implicit User Disagreement ...",
+      "url": "https://dl.acm.org/doi/10.1145/3772318.3790594",
+      "snippet": "13.04.2026 ... The widespread use of generative AI has led to increased focus on human–AI interaction. However, AI systems can generate unexpected outputs, ..."
+    },
+    {
+      "title": "BlinkLinMulT - fodorad - GitHub",
+      "url": "https://github.com/fodorad/BlinkLinMulT",
+      "snippet": "GET /manifest reports every model with its weight SHA-256, so a result ... code: https://github.com/fodorad/exordium. (2022) LinMulT. General-purpose ..."
+    },
+    {
+      "title": "Do You (Dis)agree With Me? Modelling Implicit User Disagreement ...",
+      "url": "https://www.dfki.de/fileadmin/user_upload/import/17004_chi26-326.pdf",
+      "snippet": "To model these conflicts effectively in human–AI interaction, it is ... 11https://github.com/fodorad/exordium (Accessed August 18, 2025). 12https ..."
+    },
+    {
+      "title": "Do You (Dis)agree With Me? Modelling Implicit User Disagreement ...",
+      "url": "https://dl.acm.org/doi/full/10.1145/3772318.3790594",
+      "snippet": "To model these conflicts effectively in human–AI interaction, it is important to understand disagreement from human behaviour. Our assumption is that ..."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Strongich/nla-qwen3-1.7b-L20-av",
+  "slug": "strongich-nla-qwen3-1-7b-l20-av",
+  "author": "Strongich",
+  "url": "https://huggingface.co/Strongich/nla-qwen3-1.7b-L20-av",
+  "created_at": "2026-10-26T17:59:54.000Z",
+  "updated_at": "2026-10-26T18:01:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "natural-language-autoencoder",
+    "nla",
+    "interpretability",
+    "conversational",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 3452608258,
+  "storage_human": "3.5 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Strongich/nla-qwen3-1.7b-L20-av · Hugging Face",
+      "url": "https://huggingface.co/Strongich/nla-qwen3-1.7b-L20-av",
+      "snippet": "Strongich / nla-qwen3-1.7b-L20-av Like 0 Text Generation Transformers Safetensors qwen3 natural-language-autoencoder nla interpretability conversational text-generation-inference Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen/Qwen3-1.7B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-1.7B",
+      "snippet": "Significantly enhancement in its reasoning capabilities, surpassing previous QwQ (in thinking mode) and Qwen2.5 instruct models (in non-thinking mode) on mathematics, code generation, and commonsense logical reasoning."
+    },
+    {
+      "title": "Qwen3-1.7B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_1_7b",
+      "snippet": "Multilingual 1.7B parameter language model excelling in reasoning and code generation. Qwen3 is a multilingual large language model series from Alibaba Cloud, excelling in language understanding, generation, coding, and mathematics."
+    },
+    {
+      "title": "Qwen 3 - AI Model Profile - D-Central",
+      "url": "https://d-central.tech/fr/ai/model/qwen-3/",
+      "snippet": "La sortie de mai 2025 d Alibaba — première famille ouverte avec raisonnement hybride (chaîne de pensée activable), Apache 2.0 à travers toutes les tailles. L&#x27;équipe Qwen d&#x27;Alibaba vient de publier Qwen3, et le paysage des poids ouverts continue de devenir plus encombré de la meilleure façon possible."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "We are excited to announce the release of Qwen3, the latest addition to the Qwen family of large language models. These models represent our most advanced and intelligent systems to date, improving from our experience in building QwQ and Qwen2.5."
+    }
+  ]
+}

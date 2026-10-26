@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "SectileLabs/qwen36_35b_a3b_int",
+  "slug": "sectilelabs-qwen36_35b_a3b_int",
+  "author": "SectileLabs",
+  "url": "https://huggingface.co/SectileLabs/qwen36_35b_a3b_int",
+  "created_at": "2026-10-26T18:37:46.000Z",
+  "updated_at": "2026-10-26T18:39:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "ginfer",
+  "languages": [],
+  "tags": [
+    "ginfer",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20016414464,
+  "storage_human": "20.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Import Alibaba Qwen3.6-35B-A3B-FP8 into OCI Generative AI",
+      "url": "https://docs.oracle.com/en-us/iaas/releasenotes/generative-ai/alibaba-qwen-3-6-35b-a3b-fp8.htm",
+      "snippet": "You can now import the Qwen/Qwen3.6-35B-A3B-FP8 model into OCI Generative AI, create endpoints for it, and use it for image and text understanding."
+    },
+    {
+      "title": "Qwen3.6 35B A3B FP8 by Qwen | Model Library | Modal",
+      "url": "https://modal.com/library/qwen/qwen3-6-35b-a3b-fp8",
+      "snippet": "Qwen3.6 35B A3B FP8 Qwen3.6-35B-A3B-FP8 is Qwen&#x27;s official FP8 quantization of its 35B-total, 3B-active MoE multimodal model: text and image input, 262K-token native context, thinking and non-thinking modes, and strong agentic coding at quality Qwen reports as nearly identical to BF16, released under Apache 2.0."
+    },
+    {
+      "title": "qwen3.6:35b-a3b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.6:35b-a3b",
+      "snippet": "Qwen3.6 delivers substantial upgrades in agentic coding and thinking preservation than previous Qwen models."
+    },
+    {
+      "title": "Best Way to Run Qwen 3.6 35B MoE Locally: VRAM, Speed, Setup",
+      "url": "https://insiderllm.com/guides/best-way-run-qwen-3-6-35b-moe-locally/",
+      "snippet": "Qwen 3.6-35B-A3B has 35B total params but only 3B active per token. Real tok/s on RTX 3090, 4090, 5070 Ti, dual 5060 Ti, and M3 Ultra. Quants and setup."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B: Agentic Coding Power, Now Open to All",
+      "url": "https://qwen.ai/blog?id=qwen3.6-35b-a3b",
+      "snippet": "QWEN STUDIO HUGGING FACE MODELSCOPE DISCORD Following the launch of Qwen3.6-Plus, we are excited to open-source Qwen3.6-35B-A3B — a sparse yet remarkably capable mixture-of-experts (MoE) model with 35 billion total parameters and only 3 billion active parameters. Despite its efficiency, Qwen3.6-35B-A3B delivers outstanding agentic coding performance, surpassing its predecessor Qwen3.5-35B ..."
+    }
+  ]
+}

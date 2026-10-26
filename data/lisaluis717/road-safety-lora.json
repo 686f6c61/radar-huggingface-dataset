@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "lisaluis717/road-safety-lora",
+  "slug": "lisaluis717-road-safety-lora",
+  "author": "lisaluis717",
+  "url": "https://huggingface.co/lisaluis717/road-safety-lora",
+  "created_at": "2026-10-26T14:41:16.000Z",
+  "updated_at": "2026-10-26T15:11:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 370826476,
+  "storage_human": "371 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mettre sa creation audio (mp3) sur facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-18216108-mettre-sa-creation-audio-mp3-sur-facebook",
+      "snippet": "Jun 21, 2010 · J'avais passé beaucoup de temps sur les forums pour trouver comment faire et là grâce à ce site c'est ok, mais le …"
+    },
+    {
+      "title": "Nom mentionné sur facebook - Forum Facebook - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-34149092-nom-mentionne-sur-facebook",
+      "snippet": "Dec 3, 2016 · Bonjour, Sur Facebook, lorsque mon nom est mentionné dans une publication: comment faire pour que 1/ j'en sois …"
+    },
+    {
+      "title": "¿Por qué mi Facebook se abre sin pedir contraseña? - CCM",
+      "url": "https://es.ccm.net/forum/affich-1203169-por-que-mi-facebook-se-abre-sin-pedir-contrasena",
+      "snippet": "Porque mi facebook se abre sin contraseña Entrar a mi cuenta de facebook ahora mismo sin contraseña - Mejores respuestas …"
+    },
+    {
+      "title": "El código de confirmación de Facebook no llega: correo, SMS - CCM",
+      "url": "https://es.ccm.net/aplicaciones-e-internet/redes-sociales-y-mensajeria/1704-codigo-de-confirmacion-de-facebook-que-hacer-si-no-te-llega/",
+      "snippet": "Oct 30, 2023 · Facebook te envía un código de confirmación en el momento de crear una nueva cuenta o al hacer algún cambio o …"
+    },
+    {
+      "title": "Comment supprimer définitivement votre compte Facebook",
+      "url": "https://www.zdnet.fr/pratique/comment-supprimer-definitivement-votre-compte-facebook-39932301.htm",
+      "snippet": "Nov 12, 2021 · Pratique : Se débarrasser de son compte Facebook demande un peu de travail de votre part."
+    }
+  ]
+}

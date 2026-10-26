@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "XopMC513/Swift-1.5-Qwen3.8-Flash-Next-Heretic",
+  "slug": "xopmc513-swift-1-5-qwen3-8-flash-next-heretic",
+  "author": "XopMC513",
+  "url": "https://huggingface.co/XopMC513/Swift-1.5-Qwen3.8-Flash-Next-Heretic",
+  "created_at": "2026-10-25T22:29:17.000Z",
+  "updated_at": "2026-10-26T20:54:37.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "ru"
+  ],
+  "tags": [
+    "swift",
+    "qwen4_exp",
+    "qwen3_8",
+    "safetensors",
+    "reasoning",
+    "efficient-thinking",
+    "token-efficient",
+    "tool-use",
+    "mixture-of-experts",
+    "abliterated",
+    "gguf",
+    "nvfp4",
+    "custom-runtime",
+    "image-text-to-text",
+    "en",
+    "ru",
+    "base_model:ukisai/Swift1.5-Qwen3.8-Flash-Next",
+    "base_model:finetune:ukisai/Swift1.5-Qwen3.8-Flash-Next",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 150185187040,
+  "storage_human": "150.2 GB",
+  "base_model": "ukisai/Swift1.5-Qwen3.8-Flash-Next",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models compatible with the GGUF library - Hugging Face",
+      "url": "https://huggingface.co/models?library=gguf&sort=modified",
+      "snippet": "mradermacher/Swish-31B-Final-GGUF ; PollardWeights/NVIDIA-Nemotron-3.5-Bolt-E4B-Pollard · 1 ; XopMC513/Swift-1.5-Qwen3.8-Flash-Next-Heretic · 1 ; VelociQ8/snowflake- ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=modified",
+      "snippet": "resiondy/moe-1.4b-v2-state · SargeDev/Solar-Decision-JEV-27B-V2 · XopMC513/Swift-1.5-Qwen3.8-Flash-Next-Heretic · mradermacher/Sage-A1.5-Ablitrex-abliterated-BF16- ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=modified&search=Heretic",
+      "snippet": "8-Flash-Next-EXL3-4.05bpw-heretic. Image-Text-to-Text • 34B • Updated in about 23 hours · XopMC513/Swift-1.5-Qwen3.8-Flash-Next-Gentle-Heretic-Strata. Updated ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=mxfp4",
+      "snippet": "tsaipifong/Swift-1.5-Qwen3.8-27b-MXFP4-GGUF. Text Generation • 27B • Updated ... XopMC513/DeepSeek-V4.1-Flash-1017-Heretic. Image-Text-to-Text • Updated ..."
+    }
+  ]
+}

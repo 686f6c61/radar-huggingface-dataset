@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "bkhhukjbblkj/jhjh",
+  "slug": "bkhhukjbblkj-jhjh",
+  "author": "bkhhukjbblkj",
+  "url": "https://huggingface.co/bkhhukjbblkj/jhjh",
+  "created_at": "2026-10-26T17:40:02.000Z",
+  "updated_at": "2026-10-26T17:40:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Voxalike - Play Dub Game Online Free (Official)",
+      "url": "https://voxalike.com/",
+      "snippet": "Voxalike is a browser dub game where you record character lines, compare your performance, play with friends, and download …"
+    },
+    {
+      "title": "Voxalike Workshop",
+      "url": "https://voxalike.com/workshop",
+      "snippet": "Browse and download Voxalike dub mods with video previews, roles, clip counts and creator credits."
+    },
+    {
+      "title": "Voxalike Official Website | Play Free Voice Dubbing Game",
+      "url": "https://voxalike.one/",
+      "snippet": "Voxalike records your spoken lines into each scene. Without mic access, dubbing cannot start."
+    },
+    {
+      "title": "Voxalike Guide - How to Play and Make Mods",
+      "url": "https://voxalike.com/guide",
+      "snippet": "VOXALIKE GUIDE Voxalike Guide Learn how to play Voxalike and make mods. HOW TO PLAY Choose a Dub Pack and make the …"
+    },
+    {
+      "title": "About Voxalike - Voxalike",
+      "url": "https://voxalike.com/about",
+      "snippet": "Learn what Voxalike is, how its browser voice-dubbing game and community Workshop work, and how to contact the project."
+    }
+  ]
+}

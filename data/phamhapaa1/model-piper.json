@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Phamhapaa1/Model-Piper",
+  "slug": "phamhapaa1-model-piper",
+  "author": "Phamhapaa1",
+  "url": "https://huggingface.co/Phamhapaa1/Model-Piper",
+  "created_at": "2026-10-26T12:32:40.000Z",
+  "updated_at": "2026-10-26T12:35:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 63517557,
+  "storage_human": "64 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Phamhapaa1 (PHẠM HOÀNG LINH) - Hugging Face",
+      "url": "https://huggingface.co/Phamhapaa1",
+      "snippet": "Tiktok Voice 🐨 Convert SRT subtitles to spoken audio with custom voice Phamhapaa1 Jun 18"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=trending&search=piper",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "ModelPiper Web App Docs | ModelPiper",
+      "url": "https://modelpiper.com/docs/modelpiper",
+      "snippet": "ToolPiper Local AI gateway — inference engines, cloud proxy, model management, speech & audio VisionPiper Screen capture, recording, GIF conversion, and live streaming AudioPiper Multi-source audio mixer — mic, system audio, and per-app capture MediaPiper Browser extension — image & video hover preview, intelligent discovery, on-device AI ..."
+    },
+    {
+      "title": "Documentation - ModelPiper",
+      "url": "https://modelpiper.com/docs",
+      "snippet": "Documentation ModelPiper is a suite of apps for running AI locally on your Mac. A browser-based UI connects to native companion apps that handle inference, audio, vision, and more."
+    },
+    {
+      "title": "Build a Local AI Voice Assistant with Whisper, Ollama, and Piper: A ...",
+      "url": "https://synapsewire.com/en/posts/local-ai-voice-assistant-whisper-ollama-piper-2026/",
+      "snippet": "Build a Local AI Voice Assistant with Whisper, Ollama, and Piper: A Complete 2026 Tutorial Step-by-step guide to creating a fully offline voice assistant using OpenAI Whisper for speech recognition, Ollama for LLM inference, and Piper for text-to-speech."
+    }
+  ]
+}

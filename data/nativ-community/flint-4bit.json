@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "nativ-community/flint-4bit",
+  "slug": "nativ-community-flint-4bit",
+  "author": "nativ-community",
+  "url": "https://huggingface.co/nativ-community/flint-4bit",
+  "created_at": "2026-10-26T18:31:53.000Z",
+  "updated_at": "2026-10-26T18:36:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "flint",
+    "mlx-vlm",
+    "4bit",
+    "text-generation",
+    "conversational",
+    "base_model:RecursiveSI/flint",
+    "base_model:quantized:RecursiveSI/flint",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39785299488,
+  "parameters_human": "39.79B",
+  "storage_bytes": 22403012534,
+  "storage_human": "22.4 GB",
+  "base_model": "RecursiveSI/flint",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nativ - Parler anglais comme un natif",
+      "url": "https://heynativ.com/",
+      "snippet": "Parlez anglais avec naturel. Apprenez les expressions des natifs en 5 minutes par jour avec Nativ et mémorisez-les grâce aux …"
+    },
+    {
+      "title": "byNativ | Voyage sur mesure - Agences de voyage locales",
+      "url": "https://www.bynativ.com/",
+      "snippet": "byNativ, la communauté d'agences de voyage locales francophones. Votre voyage sur mesure avec des conseillers locaux vivant à …"
+    },
+    {
+      "title": "Nos agences locales byNativ",
+      "url": "https://www.bynativ.com/nos-agences/",
+      "snippet": "Octobre 2026 5 “Voyage sur mesure en Grèce” Un grand merci à Elise qui nous a concocté ce beau voyage, à travers elle constaté …"
+    },
+    {
+      "title": "Etic nativ | Radiateur connecté | radiateur à inertie",
+      "url": "https://intuis.fr/produit/chauffage-electrique/etic-nativ",
+      "snippet": "Etic Nativ est un radiateur connecté et un radiateur à inertie qui incarne la transition réussie des marques Applimo, Airelec et Muller …"
+    },
+    {
+      "title": "Novium nativ | Radiateur chaleur douce | Radiateur design",
+      "url": "https://intuis.fr/produit/chauffage-electrique/novium-nativ",
+      "snippet": "Avec sa surface plane légèrement galbée, NOVIUM nativ diffuse une chaleur douce et homogène. À puissance égale, il remplace un …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "fecasado/gfm-kitchen-pan-baseline2",
+  "slug": "fecasado-gfm-kitchen-pan-baseline2",
+  "author": "fecasado",
+  "url": "https://huggingface.co/fecasado/gfm-kitchen-pan-baseline2",
+  "created_at": "2026-10-26T12:35:36.000Z",
+  "updated_at": "2026-10-26T12:35:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "gaze_flow_matching",
+    "dataset:fecasado/pan-on-hob-320x240",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 75216858,
+  "parameters_human": "75.2M",
+  "storage_bytes": 300927208,
+  "storage_human": "301 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fecasado/gfm-kitchen-pan-baseline · Hugging Face",
+      "url": "https://huggingface.co/fecasado/gfm-kitchen-pan-baseline",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "fecasado/gfm-kitchen-pan-baseline at main - Hugging Face",
+      "url": "https://huggingface.co/fecasado/gfm-kitchen-pan-baseline/tree/main",
+      "snippet": "Instructions to use fecasado/gfm-kitchen-pan-baseline with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use fecasado/gfm-kitchen-pan-baseline with LeRobot: Notebooks Google Colab Kaggle main gfm-kitchen-pan-baseline 301 MB Ctrl+K Ctrl+K 1 contributor History:4 commits fecasado Upload DataProcessorPipeline 14d322d ..."
+    },
+    {
+      "title": "Anthropic Secretly Lobbying Government to Only Shut Down an AI Model If ...",
+      "url": "https://futurism.com/artificial-intelligence/anthropic-regulation-government-ai-harm-risk",
+      "snippet": "Anthropic is pitching politicians on its strange regulatory scheme, which would give AI labs significant discression."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, DeepSeek, Qwen, Mistral, Z.ai, Meta, and important open-weight model families."
+    },
+    {
+      "title": "Best Free AI 3D Model Generators in 2026 (Tested and Compared)",
+      "url": "https://www.3daistudio.com/blog/best-free-ai-3d-model-generators-2026",
+      "snippet": "The best free AI 3D model generators in 2026, compared on free credits, commercial use, export formats, and quality. Generate 3D models from text or images at no cost."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Yusin/ReTokenGS-dens",
+  "slug": "yusin-retokengs-dens",
+  "author": "Yusin",
+  "url": "https://huggingface.co/Yusin/ReTokenGS-dens",
+  "created_at": "2026-10-26T12:43:11.000Z",
+  "updated_at": "2026-10-26T12:43:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gaussian-splatting",
+    "3d-reconstruction",
+    "novel-view-synthesis",
+    "feed-forward",
+    "dataset:DL3DV/DL3DV-10K",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 366965176,
+  "parameters_human": "367.0M",
+  "storage_bytes": 1467959264,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PixAI Model Market | 1.8M+ AI Art Models and LoRAs",
+      "url": "https://pixai.art/market",
+      "snippet": "Open marketplace for AI art models. Browse 1.8M+ user-trained models and LoRAs to generate anime, realistic and fantasy art free on PixAI."
+    },
+    {
+      "title": "AI Model Detector — Which AI Made This Image? | PromptShotAI",
+      "url": "https://promptshotai.com/tools/ai-model-detector",
+      "snippet": "Free AI model detector. Upload any image and find out which AI generated it — Midjourney, Flux, SDXL, DALL-E, or Ideogram — with a confidence score and visual tells."
+    },
+    {
+      "title": "AI Generated Model Detector | Check Fake Model Images - Pixivera",
+      "url": "https://pixivera.com/ai-generated-model-detector.html",
+      "snippet": "Use the AI generated model detector from Pixivera to identify fake model photos, synthetic beauty portraits, edited fashion images, and suspicious profile pictures."
+    },
+    {
+      "title": "Free AI 3D Model Generator from Text & Images | Image to 3D AI",
+      "url": "https://image-to-3d.ai/ai-3d-model-generator/",
+      "snippet": "Create production-ready 3D models from text or images with our free AI 3D model generator. Clean geometry, rich textures, and easy export for any project."
+    },
+    {
+      "title": "Yesmind - Every AI Model.",
+      "url": "https://yesmind.ai/",
+      "snippet": "Generate images, videos, and text with the world&#x27;s leading AI models in one place. Wan, Veo, Sora, Runway, GPT, Gemini, Claude and more."
+    }
+  ]
+}

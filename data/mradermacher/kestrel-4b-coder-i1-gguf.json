@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Kestrel-4B-Coder-i1-GGUF",
+  "slug": "mradermacher-kestrel-4b-coder-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Kestrel-4B-Coder-i1-GGUF",
+  "created_at": "2026-10-26T14:39:24.000Z",
+  "updated_at": "2026-10-26T15:52:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "ko",
+    "ja",
+    "ru",
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3_5",
+    "unsloth",
+    "merged",
+    "sft",
+    "distillation",
+    "reasoning",
+    "code-generation",
+    "coder",
+    "tool-use",
+    "function-calling",
+    "agent",
+    "mtp",
+    "multi-token-prediction",
+    "speculative-decoding",
+    "local-inference",
+    "edge-computing",
+    "on-device",
+    "llama.cpp",
+    "vision",
+    "multimodal",
+    "safetensors",
+    "en",
+    "zh",
+    "ko",
+    "ja",
+    "ru",
+    "es",
+    "base_model:Jackrong/Kestrel-4B-Coder",
+    "base_model:quantized:Jackrong/Kestrel-4B-Coder",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 39227370464,
+  "storage_human": "39.2 GB",
+  "base_model": "Jackrong/Kestrel-4B-Coder",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Transfira e instale o Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=pt&co=GENIE.Platform%3DDesktop",
+      "snippet": "Pode transferir e instalar o navegador de Internet Chrome sem custo financeiro e utilizá-lo para navegar na Web. Verifique os …"
+    },
+    {
+      "title": "Crear o gestionar tu cuenta de Google en Chrome",
+      "url": "https://support.google.com/chrome/answer/10668644?hl=es",
+      "snippet": "Puedes crear una cuenta de Google en Chrome o en cualquier navegador. Para gestionar tu cuenta de Google, accede a …"
+    },
+    {
+      "title": "为什么edx登不了了，求解答？ - 知乎",
+      "url": "https://www.zhihu.com/question/347952016",
+      "snippet": "在开发者工具中可以看到是由于 cookies 出了问题 有一些资料说可以通过使用crome 77以上版本来克服这个问题 但是即使我更新 …"
+    },
+    {
+      "title": "如何安装 Photoshop？ - 知乎",
+      "url": "https://www.zhihu.com/question/21433381",
+      "snippet": "Adobe Photoshop 2024 作为新版的代表，它带来了更多创意元素和更强大的性能， alpace插件和神经网络滤镜，支持创意式填充、 …"
+    },
+    {
+      "title": "Download Chrome - Google Chrome Help",
+      "url": "https://support.google.com/chrome/answer/16737628?hl=en",
+      "snippet": "Tip: To clean up after you install, in the Finder's sidebar, next to “Chrome,” select Eject ."
+    }
+  ]
+}

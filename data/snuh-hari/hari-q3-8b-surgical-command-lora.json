@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "SNUH-HARI/hari-q3-8b-surgical-command-lora",
+  "slug": "snuh-hari-hari-q3-8b-surgical-command-lora",
+  "author": "SNUH-HARI",
+  "url": "https://huggingface.co/SNUH-HARI/hari-q3-8b-surgical-command-lora",
+  "created_at": "2026-10-26T14:55:45.000Z",
+  "updated_at": "2026-10-26T15:17:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "medical",
+    "surgery",
+    "robotics",
+    "voice-command",
+    "slot-filling",
+    "lora",
+    "korean",
+    "text-generation",
+    "ko",
+    "en",
+    "dataset:SNUH-HARI/kor-surgical-robot-voice-command",
+    "base_model:snuh/hari-q3-8b",
+    "base_model:adapter:snuh/hari-q3-8b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 174655536,
+  "storage_human": "175 MB",
+  "base_model": "snuh/hari-q3-8b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

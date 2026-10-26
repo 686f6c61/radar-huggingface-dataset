@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-dino-media-wedding-concept-1-lora",
+  "slug": "runninghubai-rh-dino-media-wedding-concept-1-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-dino-media-wedding-concept-1-lora",
+  "created_at": "2026-10-26T17:47:02.000Z",
+  "updated_at": "2026-10-26T17:48:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 308624900,
+  "storage_human": "309 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DINO MEDIA Wedding Concept 1 - runninghub.ai",
+      "url": "https://www.runninghub.ai/model/public/1901806995467296769",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "DINO MEDIA Wedding Concept 1 - RunningHub Stable Diffusion & Flux LoRA",
+      "url": "https://www.runninghub.cn/model/public/1901806995467296769",
+      "snippet": "Description: This LoRA Flux model is trained on a large collection of wedding photos featuring couples in various concepts and updated with the latest trends. Each concept is trained with multiple poses and images, making it suitable for use as background concepts for couple photos or wedding photography Use Cases: Generate images WEDDING PHOTO, couple photo with multiple concept styleSuitable ..."
+    },
+    {
+      "title": "DINO MEDIA Wedding Concept 1 - runninghub.ai",
+      "url": "https://www.runninghub.ai/zh-cn/model/public/1901806995467296769",
+      "snippet": "Description: This LoRA Flux model is trained on a large collection of wedding photos featuring couples in various concepts and updated with the latest trends. Each concept is trained with multiple poses and images, making it suitable for use as background concepts for couple photos or wedding photography"
+    },
+    {
+      "title": "RunningHub AI | Image, Video & Workflow Creation",
+      "url": "https://runninghubai.pro/",
+      "snippet": "RunningHub AI creative canvas Turn a thought into a world with RunningHub AI. One focused place for image generation, cinematic video, and repeatable AI workflows. Start with a sentence, shape the details, and keep every idea moving."
+    },
+    {
+      "title": "RunningHubAI/rh-1-lora · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-1-lora",
+      "snippet": "RunningHubAI / rh-1-lora Like 0 Image-Text-to-Image comfyui lora Model card FilesFiles and versions xet Community Copy to bucket new rh-1-lora Description About this model Files License Training at RunningHub"
+    }
+  ]
+}

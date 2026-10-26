@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "liuf12123456/best-model-checkpoint-step-1000",
+  "slug": "liuf12123456-best-model-checkpoint-step-1000",
+  "author": "liuf12123456",
+  "url": "https://huggingface.co/liuf12123456/best-model-checkpoint-step-1000",
+  "created_at": "2026-10-26T18:05:22.000Z",
+  "updated_at": "2026-10-26T18:12:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "liu12123456/MyAwesomeModel-step_1000 · Hugging Face",
+      "url": "https://huggingface.co/liu12123456/MyAwesomeModel-step_1000",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SAD2EDZXDQ/best-model-checkpoint-step1000 · Hugging Face",
+      "url": "https://huggingface.co/SAD2EDZXDQ/best-model-checkpoint-step1000",
+      "snippet": "Instructions to use SAD2EDZXDQ/best-model-checkpoint-step1000 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use SAD2EDZXDQ/best-model-checkpoint-step1000 with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline (\"feature-extraction\", model=\"SAD2EDZXDQ/best ..."
+    },
+    {
+      "title": "Save only best model in Trainer - Hugging Face Forums",
+      "url": "https://discuss.huggingface.co/t/save-only-best-model-in-trainer/8442?page=2",
+      "snippet": "Alternatively, if you use load_best_model=True in the config as well, and then do trainer.state.best_model_checkpoint after training, you can get the best checkpoint number, and again from that you can infer that the other output directory contains the latest model."
+    },
+    {
+      "title": "Save only best weights with huggingface transformers",
+      "url": "https://stackoverflow.com/questions/62525680/save-only-best-weights-with-huggingface-transformers",
+      "snippet": "As indicated here as well, there are different ways to save the best checkpoint. If you use save_total_limits=2 and load_best_model_at_end=True, then the latest and the best model will be saved. From the numbers in the names of these directories, one could infer which checkpoint is which."
+    },
+    {
+      "title": "ModelCheckpoint — PyTorch Lightning 2.7.0.dev documentation",
+      "url": "https://lightning.ai/docs/pytorch/stable/api/lightning.pytorch.callbacks.ModelCheckpoint.html",
+      "snippet": "Bases: Checkpoint Save the model after every epoch by monitoring a quantity. Every logged metrics are passed to the Logger for the version it gets saved in the same directory as the checkpoint. After training finishes, use best_model_path to retrieve the path to the best checkpoint file and best_model_score to get its score."
+    }
+  ]
+}

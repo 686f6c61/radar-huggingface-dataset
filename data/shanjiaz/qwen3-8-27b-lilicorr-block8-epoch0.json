@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "shanjiaz/Qwen3.8-27B-LiLiCorr-block8-epoch0",
+  "slug": "shanjiaz-qwen3-8-27b-lilicorr-block8-epoch0",
+  "author": "shanjiaz",
+  "url": "https://huggingface.co/shanjiaz/Qwen3.8-27B-LiLiCorr-block8-epoch0",
+  "created_at": "2026-10-26T18:16:44.000Z",
+  "updated_at": "2026-10-26T18:16:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "speculators",
+    "lilicorr",
+    "speculative-decoding",
+    "custom_code",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1901182602,
+  "parameters_human": "1.90B",
+  "storage_bytes": 3802376404,
+  "storage_human": "3.8 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B: A Comprehensive Technical Analysis - Local AI Zone",
+      "url": "https://local-ai-zone.github.io/blog/qwen3-8-27b-comprehensive-analysis.html",
+      "snippet": "Release Date: August 14, 2026, 15:00 UTC Developer: Qwen Team, Alibaba Cloud (Tongyi Lab) License: Apache 2.0 Model Card: Hugging Face On August 14, 2026, Alibaba&#x27;s Tongyi Lab released Qwen3.8-27B, a 27.8-billion-parameter dense multimodal language model that represents a significant milestone in locally deployable AI. This paper-level analysis examines the model&#x27;s architecture, benchmark ..."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "Reporting avg@3 with an 8-hour timeout, max_tokens=32,768, temperature=1.0, and a 256K context window. CoWorkBench: In-house cowork benchmark for evaluating long-horizon tasks across computer science, finance, law, medical, and other productivity domains."
+    },
+    {
+      "title": "Qwen3.8-27B: Local Deployment, Vision, Coding, and Agent Guide",
+      "url": "https://essamamdani.com/blog/qwen38-27b-local-deployment-guide-2026",
+      "snippet": "A verification-first guide to Qwen3.8-27B: official capabilities, local hardware, Transformers, vLLM, SGLang, reasoning controls, benchmark caveats, and safe agent ..."
+    },
+    {
+      "title": "qwen3.8-27b - Alibaba Cloud Model Studio",
+      "url": "https://docs.modelstudio.console.alibabacloud.com/en/model-studio/qwen3-8-27b",
+      "snippet": "The Qwen3.8 27B native vision-language dense model builds upon the 3.6-27B version, with key improvements in coding and office productivity capabilities across both text and visual modalities. It enables more reliable end-to-end completion of complex tasks, delivering consistently trustworthy results."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "For the first time, Qwen3.8 brings a Qwen-Max-class model to open release. Built on the architectural foundation of Qwen3.5, Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks."
+    }
+  ]
+}

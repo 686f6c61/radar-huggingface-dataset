@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Honcel/scottyrl-a3-p5_textcraft_grpo",
+  "slug": "honcel-scottyrl-a3-p5_textcraft_grpo",
+  "author": "Honcel",
+  "url": "https://huggingface.co/Honcel/scottyrl-a3-p5_textcraft_grpo",
+  "created_at": "2026-10-26T12:48:06.000Z",
+  "updated_at": "2026-10-26T12:48:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "tinker",
+    "lora",
+    "scottyrl",
+    "11-768",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 169907128,
+  "storage_human": "170 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Play Free Online Games on Roblox - Sign Up to Play!",
+      "url": "https://www.roblox.com/",
+      "snippet": "Roblox is ushering in the next generation of entertainment. Imagine, create, and play together with millions of people across an …"
+    },
+    {
+      "title": "استمتِع بلعب ألعاب مجانية أون لاين على منصّة Roblox - اشترِك الآن للعب!",
+      "url": "https://www.roblox.com/ar",
+      "snippet": "©2026 شركة Roblox. Roblox، شعار Roblox و تخيل الطاقة هما من بين علاماتنا التجارية المسجلة وغير المسجلة في الولايات المتحدة وبلدان أخرى."
+    },
+    {
+      "title": "Acerca de | Roblox",
+      "url": "https://about.roblox.com/es",
+      "snippet": "Roblox is a global platform where millions of people gather together every day to imagine, create, and share experiences with each …"
+    },
+    {
+      "title": "소개 | Roblox",
+      "url": "https://about.roblox.com/ko",
+      "snippet": "Roblox is a global platform where millions of people gather together every day to imagine, create, and share experiences with each …"
+    },
+    {
+      "title": "Overview | Documentation - Roblox Creator Hub",
+      "url": "https://create.roblox.com/docs",
+      "snippet": "Documentation and resources for all creators."
+    }
+  ]
+}

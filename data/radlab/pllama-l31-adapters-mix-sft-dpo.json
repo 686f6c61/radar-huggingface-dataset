@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "radlab/pLLama-L31-adapters-MIX-SFT-DPO",
+  "slug": "radlab-pllama-l31-adapters-mix-sft-dpo",
+  "author": "radlab",
+  "url": "https://huggingface.co/radlab/pLLama-L31-adapters-MIX-SFT-DPO",
+  "created_at": "2024-11-03T15:04:42.000Z",
+  "updated_at": "2026-10-26T15:50:17.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:quantized:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "8-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 25,
+  "trending_score": 0,
+  "parameters": 8031637504,
+  "parameters_human": "8.03B",
+  "storage_bytes": 9086786984,
+  "storage_human": "9.1 GB",
+  "base_model": "meta-llama/Meta-Llama-3-8B-Instruct, meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

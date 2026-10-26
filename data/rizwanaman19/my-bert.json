@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "rizwanaman19/My-Bert",
+  "slug": "rizwanaman19-my-bert",
+  "author": "rizwanaman19",
+  "url": "https://huggingface.co/rizwanaman19/My-Bert",
+  "created_at": "2026-10-26T18:14:36.000Z",
+  "updated_at": "2026-10-26T18:15:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "feature-extraction",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 108310272,
+  "parameters_human": "108.3M",
+  "storage_bytes": 433263424,
+  "storage_human": "433 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rizwanaman19 (Rizwan Aman) · GitHub",
+      "url": "https://github.com/rizwanaman19",
+      "snippet": "Computer Science graduate with hands-on experience in Machine Learning, Deep Learning, and Large Language Models (LLMs). Skilled in Python, data preprocessing, model development, evaluation, and working with modern AI tools and frameworks. Experienced in building and testing machine learning models and exploring LLM-based applications through practical projects. Strong problem-solving and ..."
+    },
+    {
+      "title": "beichencc/my-bert-model · Hugging Face",
+      "url": "https://huggingface.co/beichencc/my-bert-model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "codesiddhant/my-bert-model · Hugging Face",
+      "url": "https://huggingface.co/codesiddhant/my-bert-model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - rizwanaman19/My_ML_Projects",
+      "url": "https://github.com/rizwanaman19/My_ML_Projects",
+      "snippet": "Contribute to rizwanaman19/My_ML_Projects development by creating an account on GitHub."
+    },
+    {
+      "title": "BERT (language model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/BERT_(language_model)",
+      "snippet": "Bidirectional encoder representations from transformers (BERT) is a language model introduced in October 2018 by researchers at Google. [2][3] It learns to represent text as a sequence of vectors using self-supervised learning."
+    }
+  ]
+}

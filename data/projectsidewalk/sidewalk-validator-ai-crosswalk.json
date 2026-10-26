@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "id": "projectsidewalk/sidewalk-validator-ai-crosswalk",
+  "slug": "projectsidewalk-sidewalk-validator-ai-crosswalk",
+  "author": "projectsidewalk",
+  "url": "https://huggingface.co/projectsidewalk/sidewalk-validator-ai-crosswalk",
+  "created_at": "2025-01-26T03:43:38.000Z",
+  "updated_at": "2026-10-26T18:54:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dinov2",
+    "image-classification",
+    "project-sidewalk",
+    "accessibility",
+    "sidewalks",
+    "street-view",
+    "label-validation",
+    "crosswalk",
+    "dataset:projectsidewalk/sidewalk-validator-ai-dataset-crosswalk",
+    "arxiv:2304.07193",
+    "base_model:facebook/dinov2-large",
+    "base_model:finetune:facebook/dinov2-large",
+    "license:mit",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 28,
+  "trending_score": 0,
+  "parameters": 304372738,
+  "parameters_human": "304.4M",
+  "storage_bytes": 8523354328,
+  "storage_human": "8.5 GB",
+  "base_model": "facebook/dinov2-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Label validation",
+      "dataset": "sidewalk-validator-ai-crosswalk dataset",
+      "metric": "Accuracy",
+      "value": 0.9573
+    },
+    {
+      "task": "Label validation",
+      "dataset": "sidewalk-validator-ai-crosswalk dataset",
+      "metric": "Balanced accuracy",
+      "value": 0.954
+    },
+    {
+      "task": "Label validation",
+      "dataset": "sidewalk-validator-ai-crosswalk dataset",
+      "metric": "AUC (incorrect)",
+      "value": 0.9799
+    },
+    {
+      "task": "Label validation",
+      "dataset": "sidewalk-validator-ai-crosswalk dataset",
+      "metric": "Macro F1",
+      "value": 0.9565
+    }
+  ],
+  "sources": [
+    {
+      "title": "GitHub - ProjectSidewalk/sidewalk-validator-ai",
+      "url": "https://github.com/ProjectSidewalk/sidewalk-validator-ai",
+      "snippet": "This project trains and tests AI models to automatically validate crowdsourced accessibility labels—such as Crosswalks, Curb Ramps, Surface Problems, and Obstacles—for Project Sidewalk. The system first creates a dataset by fetching Google Street View panoramas and utilizing the \"Depth Anything V2\" model to generate precise, depth-aware image crops of specific accessibility features. It ..."
+    },
+    {
+      "title": "projectsidewalk/sidewalk-validator-ai-dataset-crosswalk · Datasets at ...",
+      "url": "https://huggingface.co/datasets/projectsidewalk/sidewalk-validator-ai-dataset-crosswalk",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Project Sidewalk Validator Models/Datasets - Hugging Face",
+      "url": "https://huggingface.co/collections/projectsidewalk/project-sidewalk-validator-models-datasets",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Project Sidewalk · GitHub",
+      "url": "https://github.com/ProjectSidewalk",
+      "snippet": "Our mission: map and assess every sidewalk in the world using remote crowdsourcing, artificial intelligence, and online satellite & streetscape imagery - Project Sidewalk"
+    },
+    {
+      "title": "Cities Lack Consistent Sidewalk Data. Could Crowdsourced Sidewalk Data ...",
+      "url": "https://nextcity.org/urbanist-news/cities-crowdsourced-ai-sidewalk-data-project-sidewalk",
+      "snippet": "The AI tool Project Sidewalk is pairing machine learning and community engagement to map - and improve — sidewalk accessibility."
+    }
+  ]
+}

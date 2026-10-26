@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "SectileLabs/ginfer-catalog",
+  "slug": "sectilelabs-ginfer-catalog",
+  "author": "SectileLabs",
+  "url": "https://huggingface.co/SectileLabs/ginfer-catalog",
+  "created_at": "2026-10-26T18:43:08.000Z",
+  "updated_at": "2026-10-26T18:43:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "ginfer",
+  "languages": [],
+  "tags": [
+    "ginfer",
+    "catalog",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Strata for GLM 5.3 Flash : r/LocalLLaMA - Reddit",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x1wxdt/strata_for_glm_53_flash/",
+      "snippet": "09.10.2026 ... Strata AI model recommendations. Expert tips for using Strata ... r/RuntimeWire - New model in the catalog: GLM-5.3-Flash-. 1. 0. \"Strata ..."
+    }
+  ]
+}

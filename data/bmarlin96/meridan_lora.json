@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "bmarlin96/meridan_lora",
+  "slug": "bmarlin96-meridan_lora",
+  "author": "bmarlin96",
+  "url": "https://huggingface.co/bmarlin96/meridan_lora",
+  "created_at": "2026-10-26T15:19:00.000Z",
+  "updated_at": "2026-10-26T15:21:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+    "lora",
+    "transformers",
+    "arxiv:1910.09700",
+    "base_model:TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9058976,
+  "storage_human": "9 MB",
+  "base_model": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

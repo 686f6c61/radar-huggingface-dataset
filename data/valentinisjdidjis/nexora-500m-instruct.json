@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Valentinisjdidjis/Nexora-500M-Instruct",
+  "slug": "valentinisjdidjis-nexora-500m-instruct",
+  "author": "Valentinisjdidjis",
+  "url": "https://huggingface.co/Valentinisjdidjis/Nexora-500M-Instruct",
+  "created_at": "2026-10-26T17:47:32.000Z",
+  "updated_at": "2026-10-26T17:55:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 397807648,
+  "storage_human": "398 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SmolVLM Grows Smaller - Introducing the 256M & 500M Models!",
+      "url": "https://huggingface.co/blog/smolervlm",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ParendumOU/Nexora: Self-hosted, MIT-licensed AI-agent ...",
+      "url": "https://github.com/ParendumOU/Nexora",
+      "snippet": "Nexora is the free, MIT-licensed OSS core of an AI-agent orchestration platform. Users build agents (personas + skills + tools), and those agents collaborate in real time: they run tools, break work into tasks, spawn bounded sub-agents, and stream their output over WebSocket or SSE. This repository is pure platform — zero billing, licensing, or paywall logic. The paid self-hosted product ..."
+    },
+    {
+      "title": "HuggingFaceTB/SmolVLM-500M-Instruct at main",
+      "url": "https://huggingface.co/HuggingFaceTB/SmolVLM-500M-Instruct/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - paulwrichards/smolvlm-model: SmolVLM2-500M 4-bit MLX model ...",
+      "url": "https://github.com/paulwrichards/smolvlm-model",
+      "snippet": "SmolVLM Model Files SmolVLM2-500M-Video-Instruct 4-bit MLX model for Visual Reasoning AI Camera. Download from the Releases page. SmolVLM2-500M 4-bit MLX model files for Visual Reasoning AI Camera 0 0 0 forks SmolVLM 500M Instruct 4-bit MLX Feb 14, 2026 + 1 release"
+    },
+    {
+      "title": "m5-docs",
+      "url": "https://docs.m5stack.com/en/stackflow/models/smoivlm-500m-instruct",
+      "snippet": "Introduction SmolVLM-500M is a tiny multimodal model, member of the SmolVLM family. It accepts arbitrary sequences of image and text inputs to produce text outputs. It&#x27;s designed for efficiency. SmolVLM can answer questions about images, describe visual content, or transcribe text. Its lightweight architecture makes it suitable for on-device applications while maintaining strong performance on ..."
+    }
+  ]
+}

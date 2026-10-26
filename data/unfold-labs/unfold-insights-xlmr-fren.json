@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "unfold-labs/unfold-insights-xlmr-fren",
+  "slug": "unfold-labs-unfold-insights-xlmr-fren",
+  "author": "unfold-labs",
+  "url": "https://huggingface.co/unfold-labs/unfold-insights-xlmr-fren",
+  "created_at": "2026-10-26T14:47:37.000Z",
+  "updated_at": "2026-10-26T14:48:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "onnx",
+  "languages": [
+    "fr",
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "text-classification",
+    "meeting-notes",
+    "fr",
+    "en",
+    "base_model:FacebookAI/xlm-roberta-large",
+    "base_model:quantized:FacebookAI/xlm-roberta-large",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1388906177,
+  "storage_human": "1.4 GB",
+  "base_model": "FacebookAI/xlm-roberta-large",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Unfold — Toolkit for Storytellers",
+      "url": "https://unfold.com/",
+      "snippet": "Unfold is a toolkit for storytellers. Create beautiful and engaging stories from minimal and elegant templates. Available now for iOS …"
+    },
+    {
+      "title": "Pro — Unfold",
+      "url": "https://unfold.com/pro",
+      "snippet": "Unfold Pro. From Squarespace. Create engaging brand-level content from anywhere"
+    },
+    {
+      "title": "Unfold - LinkedIn",
+      "url": "https://fr.linkedin.com/company/unfold-production",
+      "snippet": "Unfold Production audiovisuelle Société de production spécialisée dans le digital. Suivre"
+    },
+    {
+      "title": "Unfold : éditeur vidéo/photo – Applications sur Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.moonlab.unfold&hl=fr",
+      "snippet": "Choisissez un modèle de Reel exclusif, ajoutez des clips et des photos, et Unfold se charge du reste. Modèles de stories, de …"
+    },
+    {
+      "title": "Unfold Production (@unfoldprod) • Instagram photos and videos",
+      "url": "https://www.instagram.com/unfoldprod/",
+      "snippet": "35K Followers, 104 Following, 71 Posts - Unfold Production (@unfoldprod) on Instagram: \"Société de production spécialisée dans le …"
+    }
+  ]
+}

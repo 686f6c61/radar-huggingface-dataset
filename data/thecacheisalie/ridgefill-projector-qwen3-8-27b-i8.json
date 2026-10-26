@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "TheCacheIsALie/RidgeFill-Projector-Qwen3.8-27B-i8",
+  "slug": "thecacheisalie-ridgefill-projector-qwen3-8-27b-i8",
+  "author": "TheCacheIsALie",
+  "url": "https://huggingface.co/TheCacheIsALie/RidgeFill-Projector-Qwen3.8-27B-i8",
+  "created_at": "2026-10-26T15:45:45.000Z",
+  "updated_at": "2026-10-26T15:46:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "ridgefill",
+    "llama.cpp",
+    "prefill-acceleration",
+    "qwen3.8",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1287096832,
+  "parameters_human": "1.29B",
+  "storage_bytes": 1452188032,
+  "storage_human": "1.5 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

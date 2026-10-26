@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Winder1/us-property-valugrid",
+  "slug": "winder1-us-property-valugrid",
+  "author": "Winder1",
+  "url": "https://huggingface.co/Winder1/us-property-valugrid",
+  "created_at": "2026-10-26T18:25:58.000Z",
+  "updated_at": "2026-10-26T18:41:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Document Automation for Real Estate - Winder.AI",
+      "url": "https://winder.ai/solutions/ai-document-processing/real-estate/",
+      "snippet": "Custom AI document automation for real estate. Leases, title deeds, mortgage packs, and property reports extracted with audit trails and conveyancing system integration."
+    },
+    {
+      "title": "Document Automation for Underwriting - Winder.AI",
+      "url": "https://winder.ai/solutions/ai-document-processing/underwriting/",
+      "snippet": "Document Automation for Underwriting Custom AI document processing for property, casualty, and specialty underwriters. Submissions, broker packs, loss runs, statements of value, and medical evidence, extracted into your underwriting workbench with full audit trails."
+    },
+    {
+      "title": "ValueGrid | MDM Valuation & ValueGrid",
+      "url": "https://mdmvaluation.com/valuegrid/",
+      "snippet": "Know Your CRE Value at Market Speed ValueGrid is a first-of-its-kind interactive valuation intelligence platform that delivers on-demand CRE valuations through a modern, easy-to-use dashboard. Built as a delivery vehicle for MDM Valuation&#x27;s trusted market reports, ValueGrid redefines traditional static reports into a dynamic, visual experience, giving users deeper insight into their property ..."
+    },
+    {
+      "title": "Free AI Rendering Tool for Architecture & Design | D5 Render",
+      "url": "https://www.d5render.com/ai-rendering",
+      "snippet": "AI rendering for architecture, interiors and landscape: materials, atmosphere, planting and post in D5 Render. Free, from concept to client-ready views."
+    },
+    {
+      "title": "ValueGrid | Tools for Better Decisions",
+      "url": "https://valuegrid.io/",
+      "snippet": "Decision intelligence and custom AI solutions: risk modeling and simulation, document intelligence, AI agents, and sustainability analytics."
+    }
+  ]
+}

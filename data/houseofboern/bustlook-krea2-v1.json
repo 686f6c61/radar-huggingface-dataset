@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "houseofboern/bustlook-krea2-v1",
+  "slug": "houseofboern-bustlook-krea2-v1",
+  "author": "houseofboern",
+  "url": "https://huggingface.co/houseofboern/bustlook-krea2-v1",
+  "created_at": "2026-10-26T17:54:07.000Z",
+  "updated_at": "2026-10-26T17:54:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "lora",
+    "krea2",
+    "body",
+    "text-to-image",
+    "not-for-all-audiences",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "houseofboern/pose-pack-krea2-v1 · Hugging Face",
+      "url": "https://huggingface.co/houseofboern/pose-pack-krea2-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "houseofboern/skinlook-krea2-v1 · Hugging Face",
+      "url": "https://huggingface.co/houseofboern/skinlook-krea2-v1",
+      "snippet": "houseofboern / skinlook-krea2-v1 Like 0 Text-to-Image lora krea2 realism skin License:other Model card FilesFiles and versions xet Community Copy to bucket new skinlook: real skin texture LoRA for Krea 2 Files How to prompt Tested settings Training Data source and credits"
+    },
+    {
+      "title": "pose-pack-krea2-v1: Model Details, Context & Pricing | Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/hf-houseofboern-pose-pack-krea2-v1",
+      "snippet": "pose-pack-krea2-v1 is an AI model record indexed from Hugging Face. Specs: sourced from Hugging Face. Compare pose-pack-krea2-v1&#x27;s parameters, context window, p"
+    },
+    {
+      "title": "Krea 2 - An image model built for style control and moodboards ...",
+      "url": "https://hunted.space/dashboard/krea",
+      "snippet": "Create expressive AI images with Krea 2, Krea AI&#x27;s in-house foundation model for aesthetic diversity, style control, moodboards, and creative workflows. On the analytics side, Krea 2 competes within Photography, Artificial Intelligence and Graphics & Design — topics that collectively have 627.7k followers on Product Hunt."
+    },
+    {
+      "title": "Lightlook Krea2 V1 - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/houseofboern/lightlook-krea2-v1",
+      "snippet": "Registry entry for model Lightlook Krea2 V1; source metadata pending."
+    }
+  ]
+}

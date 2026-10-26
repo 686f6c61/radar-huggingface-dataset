@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Zeyad/SaLLM-8B-LoRA_V1",
+  "slug": "zeyad-sallm-8b-lora_v1",
+  "author": "Zeyad",
+  "url": "https://huggingface.co/Zeyad/SaLLM-8B-LoRA_V1",
+  "created_at": "2026-10-26T18:06:57.000Z",
+  "updated_at": "2026-10-26T18:07:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth/Qwen3-8B-unsloth-bnb-4bit",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:unsloth/Qwen3-8B-unsloth-bnb-4bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 186078460,
+  "storage_human": "186 MB",
+  "base_model": "unsloth/Qwen3-8B-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zeyad/SaLLM-8B-LoRA_V1 · Hugging Face",
+      "url": "https://huggingface.co/Zeyad/SaLLM-8B-LoRA_V1",
+      "snippet": "Instructions to use Zeyad/SaLLM-8B-LoRA_V1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use Zeyad/SaLLM-8B-LoRA_V1 with PEFT:"
+    },
+    {
+      "title": "ZAYA1-8B - Zyphra",
+      "url": "https://www.zyphra.com/models/zaya1-8b",
+      "snippet": "ZAYA1-8B is an open-source small MoE model by Zyphra that pushes the frontier of intelligence density through its novel architecture and unique test-time compute inference."
+    },
+    {
+      "title": "ZAYA1-8B : The Best Small LLM is here - Medium",
+      "url": "https://medium.com/data-science-in-your-pocket/zaya1-8b-the-best-small-llm-is-here-1da9d3fe7429",
+      "snippet": "What Exactly Is ZAYA1-8B? ZAYA1-8B is a post-trained reasoning model built end-to-end by Zyphra. The model uses a Mixture of Experts (MoE) architecture. Unlike dense models where all parameters ..."
+    },
+    {
+      "title": "bosaj/eniad-llama3.1-8b-assistant-lora · Hugging Face",
+      "url": "https://huggingface.co/bosaj/eniad-llama3.1-8b-assistant-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "[2605.08560] ZAYA1-VL-8B Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2605.08560",
+      "snippet": "We present ZAYA1-VL-8B, a compact mixture-of-experts vision-language model built upon our in-house language model, ZAYA1-8B. Despite its compact size, ZAYA1-VL achieves performance competitive with leading base models such as Molmo2-4B and InternVL3.5-4B, while surpassing models including Qwen2.5-VL-3B, PLM-3B, and MolmoE-1B across a range of image understanding, reasoning, and counting ..."
+    }
+  ]
+}

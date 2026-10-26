@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "itsmechico/phonon-core-runtime",
+  "slug": "itsmechico-phonon-core-runtime",
+  "author": "itsmechico",
+  "url": "https://huggingface.co/itsmechico/phonon-core-runtime",
+  "created_at": "2026-10-26T17:47:14.000Z",
+  "updated_at": "2026-10-26T18:33:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "coreml",
+    "phonon",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 103893817,
+  "storage_human": "104 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - fermionresearch/phonon: Phonon: open speech recognition models ...",
+      "url": "https://github.com/fermionresearch/phonon",
+      "snippet": "Phonon is the speech recognition engine from Fermion Research. It runs the Phonon models on Apple silicon through MLX, on CPUs under Linux (x86-64 and Arm), Windows and macOS (Apple silicon and Intel Macs), and on NVIDIA GPUs through the CUDA image. It transcribes files from the command line, transcribes the microphone live, and serves an OpenAI-compatible endpoint. Phonon-2, a 164 MB download ..."
+    },
+    {
+      "title": "itsmechico/phonon-40m-fr-coreml · Hugging Face",
+      "url": "https://huggingface.co/itsmechico/phonon-40m-fr-coreml",
+      "snippet": "A Core ML bundle of gradium/phonon-40m-fr, exported with export_coreml from xn-ptts for the PhononTTS Swift package, with the 15 French voices of gradium/phonon-voices. This export adds a flow-step graph, so the number of flow steps per frame is chosen at run time (Phonon.setSteps(_:)) instead of ..."
+    },
+    {
+      "title": "Phonon: Tiny Open Voices for On-Device Apps - Laurence Moroney - The AI ...",
+      "url": "https://laurencemoroney.com/2026/10/21/phonon-on-device-tts.html",
+      "snippet": "I have always loved the moment an app first speaks to you. Voice makes software feel present, and it opens doors for accessibility, games and hands-free tools. Gradium has open-sourced Phonon, a family of very small text-to-speech models designed to run entirely on your own device, and it arrives at a nice moment for anyone building AI at the edge."
+    },
+    {
+      "title": "phonon/v18_runtime.py at main · fermionresearch/phonon · GitHub",
+      "url": "https://github.com/fermionresearch/phonon/blob/main/v18_runtime.py",
+      "snippet": "Contribute to fermionresearch/phonon development by creating an account on GitHub."
+    },
+    {
+      "title": "FermionResearch/Phonon-2 · Hugging Face",
+      "url": "https://huggingface.co/FermionResearch/Phonon-2",
+      "snippet": "Instructions to use FermionResearch/Phonon-2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use FermionResearch/Phonon-2 with MLX: # Download the model from the Hub pip install huggingface_hub [hf_xet] huggingface-cli download --local-dir Phonon-2 FermionResearch/Phonon-2 Notebooks Google Colab Kaggle Local AppsSettings ..."
+    }
+  ]
+}

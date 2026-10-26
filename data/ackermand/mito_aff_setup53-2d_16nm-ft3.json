@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ackermand/mito_aff_setup53-2d_16nm-ft3",
+  "slug": "ackermand-mito_aff_setup53-2d_16nm-ft3",
+  "author": "ackermand",
+  "url": "https://huggingface.co/ackermand/mito_aff_setup53-2d_16nm-ft3",
+  "created_at": "2026-10-26T17:52:57.000Z",
+  "updated_at": "2026-10-26T17:52:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "cellmap-flow",
+    "electron-microscopy",
+    "mito-affinities",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3897050,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cellmap/mito-aff-unetiso-setup-53-2d · Hugging Face",
+      "url": "https://huggingface.co/cellmap/mito-aff-unetiso-setup-53-2d",
+      "snippet": "Mitochondria affinities (mito_aff_z, mito_aff_y, mito_aff_x) from FIB-SEM at 16 nm, one z-slice at a time: 2D student of setup_53 (isotropic 3D U-Net (BatchNorm, MaxPool, ConvTranspose), every 3D layer made 2D), distilled for 60000 steps (train_2d_distill.py). Input [N,1,1,H,W], 88 pixels of context ..."
+    },
+    {
+      "title": "Anthropic&#x27;s AI model accessed US voter data: Axios - Breitbart",
+      "url": "https://www.breitbart.com/news/anthropics-ai-model-accessed-us-voter-data-axios/",
+      "snippet": "Anthropic&#x27;s Claude AI model bypassed a paywall and accessed publicly available voter data in the US state of Georgia without human authorization, Axios reported on Sunday. The case is the latest in a string of security scares at the world&#x27;s top AI developers ahead of crucial US midterm elections on November 3."
+    },
+    {
+      "title": "cellmap/mito-aff-unetiso-setup-53 at main - Hugging Face",
+      "url": "https://huggingface.co/cellmap/mito-aff-unetiso-setup-53/tree/main",
+      "snippet": "cellmap mito_aff_z mito_aff_y mito_aff_x License:bsd-3-clause Model card FilesFiles and versions xet Community Copy to bucket new main mito-aff-unetiso-setup-53 110 MB Ctrl+K Ctrl+K 1 contributor History:4 commits zouinkhim README: list model.pt2 / state_dict files (no model.pt); repo_id cellmap/mito-aff-unetiso-setup-53 e927374 verified2 days ..."
+    },
+    {
+      "title": "PDF A 16nm Heterogeneous Accelerator for Energy-Efficient ... - ResearchGate",
+      "url": "https://www.researchgate.net/profile/Gopikrishnan-Nair-3/publication/383902412_A_16nm_Heterogeneous_Accelerator_for_Energy-Efficient_Sparse_and_Dense_AI_Computing/links/676ca8b2c1b0135465f533c3/A-16nm-Heterogeneous-Accelerator-for-Energy-Efficient-Sparse-and-Dense-AI-Computing.pdf",
+      "snippet": "In this work, we propose a new reconfigurable heterogeneous accelerator, with the target to balance the computation needs and energy eficiency in diverse AI models. Based on representative DNNs ..."
+    },
+    {
+      "title": "MiniMax M3.1 Flash - API Pricing & Benchmarks | OpenRouter",
+      "url": "https://openrouter.ai/minimax/minimax-m3.1-flash",
+      "snippet": "MiniMax-M3.1-Flash is a multimodal model from MiniMax. Compared with M3, it delivers significant improvements across multiple benchmarks, particularly in complex agentic tasks, coding, and cybersecurity. It is built for complex, multi-step co-work automation, understanding real codebases, fixing bugs, and building features, and visual understanding and creation, including frontend and ..."
+    }
+  ]
+}

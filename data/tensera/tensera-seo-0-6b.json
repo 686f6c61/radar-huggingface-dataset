@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Tensera/Tensera-SEO-0.6B",
+  "slug": "tensera-tensera-seo-0-6b",
+  "author": "Tensera",
+  "url": "https://huggingface.co/Tensera/Tensera-SEO-0.6B",
+  "created_at": "2026-10-26T12:09:11.000Z",
+  "updated_at": "2026-10-26T14:46:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_reasoning",
+    "technical-seo",
+    "reasoning",
+    "remediation",
+    "qwen3",
+    "distillation",
+    "code-generation",
+    "core-web-vitals",
+    "text-generation",
+    "base_model:rasbt/qwen3-from-scratch-distill-checkpoints",
+    "base_model:finetune:rasbt/qwen3-from-scratch-distill-checkpoints",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 751632384,
+  "parameters_human": "751.6M",
+  "storage_bytes": 4521704710,
+  "storage_human": "4.5 GB",
+  "base_model": "rasbt/qwen3-from-scratch-distill-checkpoints",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tensera/Tensera-SEO-0.6B · Hugging Face",
+      "url": "https://huggingface.co/Tensera/Tensera-SEO-0.6B",
+      "snippet": "Following peer-review and empirical evaluation of v0.1-alpha, Tensera SEO transitioned from naive \"tag detection\" (which is solved deterministically by fast static regex) to a Hybrid AI Architecture: Deterministic Detection + Neural Remediation. In v0.2, deterministic scanners provide verified ..."
+    },
+    {
+      "title": "TENSERRA",
+      "url": "https://www.tenserra.com/",
+      "snippet": "Tenserra monitors all enterprise data, across all systems - surfacing control failures, value leakages, and inefficiencies in real-time."
+    },
+    {
+      "title": "Best Free AI Models - Download & Run Online | Tensor.Art",
+      "url": "https://tensor.art/models",
+      "snippet": "Browse and run AI models on TensorArt. Explore ZImage, Flux, Illustrious XL, Wan 2.2, Stable Diffusion, and more. Download checkpoints, LoRAs, and..."
+    },
+    {
+      "title": "GitHub - TheGovindRachapudi/Tensera",
+      "url": "https://github.com/TheGovindRachapudi/Tensera",
+      "snippet": "Tensera A modern full-stack stock prediction application powered by LSTM deep learning models. Tensera provides real-time stock data, AI-powered predictions, and comprehensive market analysis tools."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=qwen3_reasoning",
+      "snippet": "Models 1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: qwen3_reasoning Clear all"
+    }
+  ]
+}

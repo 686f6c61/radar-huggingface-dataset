@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "SectileLabs/qwen36_35b_a3b_smol",
+  "slug": "sectilelabs-qwen36_35b_a3b_smol",
+  "author": "SectileLabs",
+  "url": "https://huggingface.co/SectileLabs/qwen36_35b_a3b_smol",
+  "created_at": "2026-10-26T18:39:58.000Z",
+  "updated_at": "2026-10-26T18:41:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "ginfer",
+  "languages": [],
+  "tags": [
+    "ginfer",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14446362368,
+  "storage_human": "14.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.6-35B-A3B: The Local Model That Changes the Agentic Cost Equation",
+      "url": "https://codex.danielvaughan.com/2026/04/16/qwen36-35b-a3b-local-agentic-coding-breakthrough/",
+      "snippet": "Qwen3.6-35B-A3B closes that gap dramatically: 73.4 SWE-bench Verified is within 10% of Claude Sonnet 4.6&#x27;s scores, and Terminal-Bench 2.0 at 51.5 suggests the model is particularly strong at the CLI-based agentic workflows that Codex CLI and similar tools depend on. The hybrid stack gets real."
+    },
+    {
+      "title": "Qwen 3.6-35B-A3B: 73.4% SWE-bench With Only 3B Active Params — Runs on ...",
+      "url": "https://www.aimadetools.com/blog/qwen-3-6-35b-a3b-complete-guide/",
+      "snippet": "Alibaba released Qwen 3.6-35B-A3B on April 15, 2026 — the first open-weight model in the Qwen 3.6 generation. It&#x27;s a sparse Mixture-of-Experts model with 35 billion total parameters but only 3 billion active at inference time."
+    },
+    {
+      "title": "Best Way to Run Qwen 3.6 35B MoE Locally: VRAM, Speed, Setup",
+      "url": "https://insiderllm.com/guides/best-way-run-qwen-3-6-35b-moe-locally/",
+      "snippet": "Qwen 3.6-35B-A3B has 35B total params but only 3B active per token. Real tok/s on RTX 3090, 4090, 5070 Ti, dual 5060 Ti, and M3 Ultra. Quants and setup."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B: The Small Model That Codes Like a Giant",
+      "url": "https://www.labellerr.com/blog/qwen3-6-35b-a3b-open-source-ai-model/",
+      "snippet": "Qwen3.6-35B-A3B is a breakthrough open-source AI model combining 35B capacity with 3B active parameters. It delivers strong coding, reasoning, and multimodal performance at a fraction of the cost."
+    },
+    {
+      "title": "Qwen3.6 35B A3B FP8 by Qwen | Model Library | Modal",
+      "url": "https://modal.com/library/qwen/qwen3-6-35b-a3b-fp8",
+      "snippet": "Qwen3.6 35B A3B FP8 Qwen3.6-35B-A3B-FP8 is Qwen&#x27;s official FP8 quantization of its 35B-total, 3B-active MoE multimodal model: text and image input, 262K-token native context, thinking and non-thinking modes, and strong agentic coding at quality Qwen reports as nearly identical to BF16, released under Apache 2.0."
+    }
+  ]
+}

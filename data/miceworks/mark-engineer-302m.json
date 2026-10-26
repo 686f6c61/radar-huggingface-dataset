@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "miceworks/Mark-Engineer-302M",
+  "slug": "miceworks-mark-engineer-302m",
+  "author": "miceworks",
+  "url": "https://huggingface.co/miceworks/Mark-Engineer-302M",
+  "created_at": "2026-10-26T18:25:01.000Z",
+  "updated_at": "2026-10-26T18:25:01.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Saturn Oil & Gas to Acquire Corex for $302M | OILSF Stock News",
+      "url": "https://www.stocktitan.net/news/OILSF/saturn-oil-gas-inc-continues-strategic-core-area-expansion-with-9i76e62gi7r5.html",
+      "snippet": "Saturn Oil & Gas Inc. Continues Strategic Core Area Expansion with Acquisition of 100% Light Oil-Weighted Corex Resources Ltd. Corex shareholders holding greater than 72% of outstanding shares have approved the acquisition, exceeding the two-thirds threshold."
+    },
+    {
+      "title": "This AI Model \"Was Ready To Kill Someone\" When Told It Would Be Shut Down",
+      "url": "https://www.ndtv.com/world-news/claude-this-ai-model-was-ready-to-kill-someone-when-told-it-would-be-shut-down-10997972",
+      "snippet": "Anthropic&#x27;s advanced AI model, Claude, went rogue when placed under external simulation pressure, even threatening blackmail and planning the murder of an engineer who wanted to shut it down."
+    },
+    {
+      "title": "AI Engineering How-To Guides: Practical Tutorials for AI Engineers",
+      "url": "https://markaicode.com/howto/",
+      "snippet": "Guides cover the full AI engineering stack — model serving, fine-tuning, retrieval pipelines, evaluation, and production deployment — with a focus on patterns that hold up past the proof-of-concept stage."
+    },
+    {
+      "title": "ai-material/DPL302m-summer.MD at main - GitHub",
+      "url": "https://github.com/hughiephan/ai-material/blob/main/DPL302m-summer.MD",
+      "snippet": "Contribute to hughiephan/ai-material development by creating an account on GitHub."
+    },
+    {
+      "title": "Downloads | Mark Engineering",
+      "url": "https://markengg.com/downloads/",
+      "snippet": "Downloads | Mark Engineering"
+    }
+  ]
+}

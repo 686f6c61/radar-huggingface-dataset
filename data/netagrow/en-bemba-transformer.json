@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "netagrow/en-bemba-transformer",
+  "slug": "netagrow-en-bemba-transformer",
+  "author": "netagrow",
+  "url": "https://huggingface.co/netagrow/en-bemba-transformer",
+  "created_at": "2026-01-20T12:26:24.000Z",
+  "updated_at": "2026-10-26T13:02:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "en",
+    "bem"
+  ],
+  "tags": [
+    "safetensors",
+    "m2m_100",
+    "nllb",
+    "machine-translation",
+    "bemba",
+    "ici-bemba",
+    "zambia",
+    "low-resource-languages",
+    "african-languages",
+    "agriculture",
+    "digital-inclusion",
+    "translation",
+    "en",
+    "bem",
+    "doi:10.57967/hf/7613",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 615073792,
+  "parameters_human": "615.1M",
+  "storage_bytes": 2497453169,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "netagrow/en-bemba-transformer · Hugging Face",
+      "url": "https://huggingface.co/netagrow/en-bemba-transformer",
+      "snippet": "Bemba ↔ English Translation Models Model Summary Bidirectional neural machine translation models for Bemba (ChiBemba), a major Zambian Bantu language spoken by ~4 million people, and English. These models enable high-quality translation between Bemba and English in both directions, supporting language preservation and digital inclusion efforts in Zambia. Architecture Base Model: Meta&#x27;s NLLB ..."
+    },
+    {
+      "title": "netagrow/bemba-en-transformer · Hugging Face",
+      "url": "https://huggingface.co/netagrow/bemba-en-transformer",
+      "snippet": "netagrow / bemba-en-transformer like 0 Model card FilesFiles and versions xet Community No model card Downloads last month -"
+    },
+    {
+      "title": "Zeroeva | zero_SG | Kaggle",
+      "url": "https://www.kaggle.com/models/netagrow/bemba-en-transformer",
+      "snippet": "Discover what actually works in AI. Join millions of builders, researchers, and labs evaluating agents, models, and frontier technology through crowdsourced benchmarks, competitions, and hackathons."
+    },
+    {
+      "title": "netagrow/en-bemba-transformer · Discussions",
+      "url": "https://d6108366.hf-mirror.com/netagrow/en-bemba-transformer/discussions",
+      "snippet": "netagrow / en-bemba-transformer like 1 Safetensors doi:10.57967/hf/7613 m2m_100 Model card FilesFiles and versions xet Community Copy to bucket new New discussion New pull request All Discussions Pull requests View closed (0) Sort: Recently created"
+    },
+    {
+      "title": "ModelFront for Bemba",
+      "url": "https://www.modelfront.com/languages/bemba",
+      "snippet": "ModelFront provides AI to check and fix AI translations between hundreds of languages, including Bemba. ModelFront&#x27;s private custom LLMs for quality prediction and automatic post-editing were fundamentally built to support more than 100 languages from day one. Bemba (Ichibemba) is a Niger-Congo language spoken by millions of people in Zambia."
+    }
+  ]
+}

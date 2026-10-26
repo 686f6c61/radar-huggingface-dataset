@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "mradermacher/wrightproduct-v1-GGUF",
+  "slug": "mradermacher-wrightproduct-v1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/wrightproduct-v1-GGUF",
+  "created_at": "2026-10-26T12:56:58.000Z",
+  "updated_at": "2026-10-26T13:11:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 148752748800,
+  "storage_human": "148.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/wrightproduct-v1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/wrightproduct-v1-GGUF",
+      "snippet": "mradermacher / wrightproduct-v1-GGUF Like 0 GGUF conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=mradermacher",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 33 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "mradermacher/flirt-ai-model-pro-GGUF - Hugging Face Hub Pack... - Socket",
+      "url": "https://socket.dev/huggingface/package/mradermacher/flirt-ai-model-pro-gguf",
+      "snippet": "We found that mradermacher/flirt-ai-model-pro-gguf demonstrated a healthy version release cadence and project activity because the last version was released less than a year ago.It has 1 open source maintainer collaborating on the project."
+    },
+    {
+      "title": "InstructMesh Fixes 90% of AI 3D Model Flaws [2026]",
+      "url": "https://shattered.io/instructmesh-repair-ai-generated-3d-models-fabrication-2026/",
+      "snippet": "InstructMesh repairs broken AI-generated 3D models, and 90% of novices fix them on the first try. See how it works, what it fixes, and who it suits in 2026."
+    }
+  ]
+}

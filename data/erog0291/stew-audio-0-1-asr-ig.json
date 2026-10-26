@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Erog0291/stew-audio-0.1-asr-ig",
+  "slug": "erog0291-stew-audio-0-1-asr-ig",
+  "author": "Erog0291",
+  "url": "https://huggingface.co/Erog0291/stew-audio-0.1-asr-ig",
+  "created_at": "2026-10-25T14:14:11.000Z",
+  "updated_at": "2026-10-26T18:54:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "whisper",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 47,
+  "trending_score": 0,
+  "parameters": 241734912,
+  "parameters_human": "241.7M",
+  "storage_bytes": 2401055702,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Erog0291/stew-audio-0.1 · Hugging Face",
+      "url": "https://huggingface.co/Erog0291/stew-audio-0.1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Stew Audio 0.1 - a Hugging Face Space by Erog0291",
+      "url": "https://huggingface.co/spaces/Erog0291/stew-audio-0.1",
+      "snippet": "This web app lets you record or upload audio in Igbo, Yoruba, Hausa, Nigerian Pidgin or English and instantly see a written transcript, all processed locally in your browser. It also turns any type..."
+    },
+    {
+      "title": "GitHub - 0xShug0/audio.cpp: An all-in-one, pure C++ inference engine ...",
+      "url": "https://github.com/0xShug0/audio.cpp",
+      "snippet": "An all-in-one, pure C++ inference engine for audio models, powered by ggml. Supports TTS, STT, VAD, voice conversion, music generation, and more, with highly optimized performance. No Python depend..."
+    },
+    {
+      "title": "GitHub - BinWang28/audio-ai-hub: The hub for audio AI research: papers ...",
+      "url": "https://github.com/BinWang28/audio-ai-hub",
+      "snippet": "The hub for audio AI research. Curated papers, open models, benchmarks and datasets across audio LLMs · speech recognition · speech synthesis · music & audio generation. 129 entries · 11 categories · latest: 2026-06 👉 Browse the interactive hub → · Contribute · Suggest a paper The page below is a quick snapshot. For search, filtering by category and sorting by stars or date, the ..."
+    },
+    {
+      "title": "Top 9 Free Speech-to-Text Tools, APIs, and Open-Source Models",
+      "url": "https://llmapi.ai/top-free-speech-to-text-tools-apis-and-open-source-models/",
+      "snippet": "For this guide, we looked at 9 speech-to-text tools, APIs, and open-source models that developers can realistically test for free. We compared them by accuracy, setup time, free usage, language support, deployment model, real-time support, and how well each tool fits into a larger AI workflow. We also looked at what happens after transcription."
+    }
+  ]
+}

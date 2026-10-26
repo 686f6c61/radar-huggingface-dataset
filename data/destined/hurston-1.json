@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "destined/hurston-1",
+  "slug": "destined-hurston-1",
+  "author": "destined",
+  "url": "https://huggingface.co/destined/hurston-1",
+  "created_at": "2026-10-15T20:31:10.000Z",
+  "updated_at": "2026-10-17T08:42:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "text-to-speech",
+    "accents",
+    "african-english",
+    "southern-american-english",
+    "synthetic-speech",
+    "telephony",
+    "narrowband",
+    "nb-tts",
+    "en",
+    "base_model:maya-research/maya1",
+    "base_model:finetune:maya-research/maya1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 19,
+  "downloads_30d": 25,
+  "trending_score": 17,
+  "parameters": 3300928512,
+  "parameters_human": "3.30B",
+  "storage_bytes": 6628194274,
+  "storage_human": "6.6 GB",
+  "base_model": "maya-research/maya1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Destined-AI/hurston-1: Hurston-1: open accented English text ...",
+      "url": "https://github.com/Destined-AI/hurston-1",
+      "snippet": "It is the first open model in Destined AI&#x27;s ClarityVoice family. This repository holds the inference code, examples, phone-mode notes and synthetic demo clips. The weights (3B parameters, 6.6 GB of safetensors) are on Hugging Face at destined/hurston-1."
+    },
+    {
+      "title": "destined/hurston-1 · Hugging Face",
+      "url": "https://huggingface.co/destined/hurston-1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Hurston-1 - a Hugging Face Space by destined",
+      "url": "https://huggingface.co/spaces/destined/hurston-1",
+      "snippet": "Enter any text and describe the voice you want—choose gender, age, accent and speaking style. The tool creates an audio file that sounds natural, either in high‑quality studio format or in the 8 kH..."
+    },
+    {
+      "title": "Destined AI Releases Hurston-1, an Open-Source Accented-English Text-to ...",
+      "url": "https://kompozy.io/news/hurston-1-open-source-accented-english-tts",
+      "snippet": "Destined AI Releases Hurston-1, an Open-Source Accented-English Text-to-Speech Model Built for the Phone Hurston-1 is an Apache-2.0 fine-tune of Maya1 that speaks Southern American and African English accents from a plain-language voice description — the first model in Destined AI&#x27;s ClarityVoice family."
+    },
+    {
+      "title": "Hurston-1: First Open TTS for Southern American and Afro-English ...",
+      "url": "https://stackfutures.com/blog/hurston-1-tts-southern-american-afro-english-narrowband-phone-oct-2026/",
+      "snippet": "Destined AI, an Atlanta-based startup, has released Hurston-1 on Hugging Face under an Apache 2.0 license. It is the first open-weight text-to-speech model purpose-built for Southern American English and several Afro-English accent families — accents that existing TTS systems, both open and proprietary, routinely flatten into generic American ..."
+    }
+  ]
+}

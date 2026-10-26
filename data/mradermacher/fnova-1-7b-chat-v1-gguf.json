@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "mradermacher/FNova-1.7B-Chat-v1-GGUF",
+  "slug": "mradermacher-fnova-1-7b-chat-v1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/FNova-1.7B-Chat-v1-GGUF",
+  "created_at": "2026-10-26T14:24:42.000Z",
+  "updated_at": "2026-10-26T17:09:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3",
+    "chat",
+    "continued-pretraining",
+    "sft",
+    "grpo",
+    "on-policy-distillation",
+    "vllm",
+    "zh",
+    "en",
+    "base_model:Fengnan001/FNova-1.7B-Chat-v1",
+    "base_model:quantized:Fengnan001/FNova-1.7B-Chat-v1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 15959972736,
+  "storage_human": "16.0 GB",
+  "base_model": "Fengnan001/FNova-1.7B-Chat-v1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

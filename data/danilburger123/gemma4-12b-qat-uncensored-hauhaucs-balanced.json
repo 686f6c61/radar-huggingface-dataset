@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "danilburger123/Gemma4-12B-QAT-Uncensored-HauhauCS-Balanced",
+  "slug": "danilburger123-gemma4-12b-qat-uncensored-hauhaucs-balanced",
+  "author": "danilburger123",
+  "url": "https://huggingface.co/danilburger123/Gemma4-12B-QAT-Uncensored-HauhauCS-Balanced",
+  "created_at": "2026-10-26T15:32:25.000Z",
+  "updated_at": "2026-10-26T15:32:25.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "uncensored",
+    "gemma4",
+    "vision",
+    "multimodal",
+    "agentic",
+    "coding",
+    "creative-writing",
+    "roleplay",
+    "rp",
+    "conversational",
+    "image-text-to-text",
+    "en",
+    "base_model:google/gemma-4-12B-it",
+    "base_model:quantized:google/gemma-4-12B-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 7810204352,
+  "storage_human": "7.8 GB",
+  "base_model": "google/gemma-4-12B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

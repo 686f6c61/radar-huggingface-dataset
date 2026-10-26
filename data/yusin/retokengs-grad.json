@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Yusin/ReTokenGS-grad",
+  "slug": "yusin-retokengs-grad",
+  "author": "Yusin",
+  "url": "https://huggingface.co/Yusin/ReTokenGS-grad",
+  "created_at": "2026-10-26T12:42:49.000Z",
+  "updated_at": "2026-10-26T12:43:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gaussian-splatting",
+    "3d-reconstruction",
+    "novel-view-synthesis",
+    "feed-forward",
+    "dataset:DL3DV/DL3DV-10K",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 364865976,
+  "parameters_human": "364.9M",
+  "storage_bytes": 1459562288,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yesmind - Every AI Model.",
+      "url": "https://yesmind.ai/",
+      "snippet": "Generate images, videos, and text with the world&#x27;s leading AI models in one place. Wan, Veo, Sora, Runway, GPT, Gemini, Claude and more."
+    },
+    {
+      "title": "Rodin - AI 3D Model Generator",
+      "url": "https://www.rodin3ds.com/",
+      "snippet": "Rodin by Hyper3D - the best AI 3D model generator. Turn images and text into production-ready 3D models with PBR textures and clean quad topology."
+    },
+    {
+      "title": "Yusan Lin (@yusan.lin) • Instagram photos and videos",
+      "url": "https://www.instagram.com/yusan.lin/",
+      "snippet": "32K Followers, 2,268 Following, 870 Posts - Yusan Lin (@yusan.lin) on Instagram: \"Founder & CEO @mirrormirror.ai Model @catwalktaiwan, PhD in Computer Science Inquiry: yusanlin@catwalkasia.com 📍San Francisco\""
+    },
+    {
+      "title": "Rodin AI — Rodin Gen-2.5 3D Model Generator",
+      "url": "https://rodinai.net/",
+      "snippet": "Generate 3D models from text or images with Rodin AI. Rodin Gen-2.5 delivers 5 quality tiers, up to 2M polygons, HD PBR textures, and GLB/FBX/OBJ export — free to try."
+    },
+    {
+      "title": "𝙔𝙪𝙨𝙞𝙣 ♡ (@yusinnn77) • Instagram photos and videos",
+      "url": "https://www.instagram.com/yusinnn77/",
+      "snippet": "4,153 Followers, 423 Following, 62 Posts - 𝙔𝙪𝙨𝙞𝙣 ♡ (@yusinnn77) on Instagram: \"Professional Valorant Player for Former @edg_official\""
+    }
+  ]
+}

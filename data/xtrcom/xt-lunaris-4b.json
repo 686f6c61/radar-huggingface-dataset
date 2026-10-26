@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "XtrCom/XT-Lunaris-4B",
+  "slug": "xtrcom-xt-lunaris-4b",
+  "author": "XtrCom",
+  "url": "https://huggingface.co/XtrCom/XT-Lunaris-4B",
+  "created_at": "2026-10-26T12:29:10.000Z",
+  "updated_at": "2026-10-26T12:29:12.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "xt-lunaris",
+    "qwen3.5",
+    "lora",
+    "reasoning",
+    "long-context",
+    "in-training",
+    "text-generation",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "license:cc-by-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XtrCom/XT-Lunaris-4B · Hugging Face",
+      "url": "https://huggingface.co/XtrCom/XT-Lunaris-4B",
+      "snippet": "Instructions to use XtrCom/XT-Lunaris-4B with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use XtrCom/XT-Lunaris-4B with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline (\"text-generation\", model=\"XtrCom/XT ..."
+    },
+    {
+      "title": "XtrCom/xt-lunaris-checkpoints · Hugging Face",
+      "url": "https://huggingface.co/XtrCom/xt-lunaris-checkpoints",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Xt Luna 1b - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/xtrcom/xt-luna-1b",
+      "snippet": "by XtrCom xtrcom/xt-luna-1b Free2AITools Nexus Index 39.0 S: Semantic50 Query-time baseline · scored live at search A: Authority0 P: Popularity0 R: Recency100 Q: Quality65 Tech Context 1.08Params 8.192KCtx Vital Performance— Source → Share: 📤 𝕏 in 📣 🔗"
+    },
+    {
+      "title": "XtrCom.xyz (@XtrCom_) / Posts / X",
+      "url": "https://x.com/XtrCom_",
+      "snippet": "I am training the next XT-Series line up,XT-Amelia, a distillation variation of the Qwen 3.5 4B model,It will be distilled on Deepseek V4 Pro + Kimi 2.5 + Gemini 3.1 Pro,XT-Amelia, is going to be a hermes/openclaw specific agent.il keep you updated!!"
+    },
+    {
+      "title": "XT-Luna 1B: a MiniCPM5 1B fine-tune targeting… · AGI Hunt",
+      "url": "https://agihunt.info/en/p/1a14ab416fedfa2dbd061ca41ed",
+      "snippet": "Reddit user XtrComSu released v1 of XT-Luna 1B, an open fine-tuned MiniCPM5 1B focused on agentic and coding workloads."
+    }
+  ]
+}

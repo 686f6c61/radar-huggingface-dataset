@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Nanbeige4.3-33B-Base-i1-GGUF",
+  "slug": "mradermacher-nanbeige4-3-33b-base-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Nanbeige4.3-33B-Base-i1-GGUF",
+  "created_at": "2026-10-26T11:24:01.000Z",
+  "updated_at": "2026-10-26T14:37:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llm",
+    "nanbeige",
+    "en",
+    "zh",
+    "base_model:Nanbeige/Nanbeige4.3-33B-Base",
+    "base_model:quantized:Nanbeige/Nanbeige4.3-33B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33118977024,
+  "parameters_human": "33.12B",
+  "storage_bytes": 248137982976,
+  "storage_human": "248.1 GB",
+  "base_model": "Nanbeige/Nanbeige4.3-33B-Base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Nanbeige4-3B-Base-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Nanbeige4-3B-Base-i1-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke&#x27;s READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "Nanbeige Releases Nanbeige4.3-33B, a 33B Open Agentic Coding Model",
+      "url": "https://www.marktechpost.com/2026/10/25/nanbeige-releases-nanbeige4-3-33b-open-agentic-coding-model/",
+      "snippet": "Nanbeige LLM Lab has released Nanbeige4.3-33B on Hugging Face under the Apache 2.0 license. Nanbeige4.3-33B is a 33B dense language model built for agentic coding and office-style &#x27;cowork&#x27; tasks."
+    },
+    {
+      "title": "mradermacher/Nanbeige4.2-3B-Base-i1-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Nanbeige4.2-3B-Base-i1-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Nanbeige4.3-33B: Open 33B Agent Model, 80.9 on Terminal-Bench ...",
+      "url": "https://explainx.ai/blog/nanbeige-4-3-33b-open-agentic-model-guide-2026",
+      "snippet": "Nanbeige4.3-33B is a new open-weight dense model released on October 24, 2026 under the Apache 2.0 license, built for coding and office-style agents. The model card on Hugging Face reports that it leads three comparable 30B-class models on most agentic benchmarks, including 80.9 on Terminal-Bench 2.1."
+    },
+    {
+      "title": "Nanbeige4.3-33B: open teacher model, 80.9 Terminal-Bench",
+      "url": "https://www.aimodeling.com/en/news/slug/nanbeige-4-3-33b-open-agent-teacher-model",
+      "snippet": "Here is what the teacher actually is. The model card describes Nanbeige4.3-33B as a dense model under the Apache 2.0 license, with Hugging Face metadata showing roughly 33.1 billion parameters, BF16 weights around 66GB, a context window of 524,288 tokens (512K), and support for English and Chinese. Both the instruct checkpoint and a Base checkpoint were released at the same time, and the ..."
+    }
+  ]
+}

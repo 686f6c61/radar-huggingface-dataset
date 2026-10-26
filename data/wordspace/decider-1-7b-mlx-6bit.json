@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "wordspace/decider-1.7B-MLX-6bit",
+  "slug": "wordspace-decider-1-7b-mlx-6bit",
+  "author": "wordspace",
+  "url": "https://huggingface.co/wordspace/decider-1.7B-MLX-6bit",
+  "created_at": "2026-10-26T12:55:02.000Z",
+  "updated_at": "2026-10-26T13:03:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "mlx",
+  "languages": [
+    "it",
+    "en",
+    "es",
+    "fr",
+    "de",
+    "pt"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3",
+    "decision",
+    "notes",
+    "llm-wiki",
+    "text-classification",
+    "it",
+    "en",
+    "es",
+    "fr",
+    "de",
+    "pt",
+    "base_model:Qwen/Qwen3-1.7B-Base",
+    "base_model:quantized:Qwen/Qwen3-1.7B-Base",
+    "license:apache-2.0",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 1409615957,
+  "storage_human": "1.4 GB",
+  "base_model": "Qwen/Qwen3-1.7B-Base",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Mapika/decider: A family of System One-style models fine-tuned ...",
+      "url": "https://github.com/Mapika/decider",
+      "snippet": "A family of System One-style models fine-tuned from Qwen3.5, designed for one-pass typed decisions with calibrated probabilities. - Mapika/decider"
+    },
+    {
+      "title": "mlx-community (MLX Community) - Hugging Face",
+      "url": "https://huggingface.co/mlx-community",
+      "snippet": "Org profile for MLX Community on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "perplexity-ai/pplx-decider-v1-27b · Hugging Face",
+      "url": "https://huggingface.co/perplexity-ai/pplx-decider-v1-27b",
+      "snippet": "pplx-decider-v1-27b is a decision model fine-tuned from Qwen3.8-27B. Accuracy across 11 benchmarks. The pplx-decider-v1-27b results were measured through the Perplexity API ..."
+    },
+    {
+      "title": "GitHub - NandhaKishorM/laya: Non-autoregressive System 1 decision ...",
+      "url": "https://github.com/NandhaKishorM/laya",
+      "snippet": "Non-autoregressive System 1 decision engine. Typed choice, score and yes/no decisions over any text in a single forward pass, in 100+ languages, with a router that picks the right checkpoint per request. - NandhaKishorM/laya"
+    },
+    {
+      "title": "Strands Decider 2B — AWS&#x27;s Local Decision Model | AI/TLDR",
+      "url": "https://ai-tldr.dev/models/strands-decider-2b/",
+      "snippet": "A 1.9B Apache-2.0 decision model from AWS Strands Labs that picks between options or rates on a scale with a calibrated confidence, in a single forward pass on local hardware, released October 2026."
+    }
+  ]
+}

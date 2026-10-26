@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "mohameddhameem/systemone-decider-e4b-qpa-menu-a",
+  "slug": "mohameddhameem-systemone-decider-e4b-qpa-menu-a",
+  "author": "mohameddhameem",
+  "url": "https://huggingface.co/mohameddhameem/systemone-decider-e4b-qpa-menu-a",
+  "created_at": "2026-10-26T12:15:45.000Z",
+  "updated_at": "2026-10-26T12:18:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "llm-routing",
+    "strands-decider",
+    "lora",
+    "en",
+    "dataset:hotpotqa/hotpot_qa",
+    "base_model:StrandsAgents/strands-decider-E4B-gemma4-v1-2610",
+    "base_model:adapter:StrandsAgents/strands-decider-E4B-gemma4-v1-2610",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1335379611,
+  "storage_human": "1.3 GB",
+  "base_model": "StrandsAgents/strands-decider-E4B-gemma4-v1-2610",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mohameddhameem/systemone-jev-qpa · Hugging Face",
+      "url": "https://huggingface.co/mohameddhameem/systemone-jev-qpa",
+      "snippet": "A router between a small and a large language model for multi-hop questions. It is a 33M MiniLM cross-encoder fine-tuned from nano-jev v1.0. Given the question, the small model&#x27;s passages and its answer, it returns P (large model): the probability that the large model should answer. Send the question to the large model when that probability is at or above threshold in systemone.json, which is ..."
+    },
+    {
+      "title": "GitHub - Mapika/decider: A family of System One-style models fine-tuned ...",
+      "url": "https://github.com/Mapika/decider",
+      "snippet": "From decider-ai 1.10.0, models whose config sets \"images\": true (decider-2b v12, decider-4b v3, decider-12b-vision, decider-31b v2) accept images in /v1/systemone, in Jev&#x27;s format: an assets map next to state and questions, keyed by a reference that the state names."
+    },
+    {
+      "title": "S1MB: comparing System One Decision Models across 100+ benchmarks",
+      "url": "https://huggingface.co/blog/hotchpotch/system-one-mosaic-benchmark",
+      "snippet": "Since TypeSafe AI introduced Jev, its System One Decision Model, other developers have been working toward similar capabilities. I built a small model of my own, bekko-system-one-v0, and wanted to see how it compared with other models under the same evaluation conditions. There are many ways to design a more comprehensive evaluation."
+    },
+    {
+      "title": "AIM System One Index - AIMultiple",
+      "url": "https://aimultiple.com/system-one",
+      "snippet": "AIM System One Index combines each model&#x27;s scores on AIM-Decision Browser, AIM-Decision Classification and AIM-AI-Bias. Each score becomes a z-score, its distance from the benchmark&#x27;s average in standard deviations, measured against the models that have all three scores."
+    },
+    {
+      "title": "mohameddhameem (Mohamed Dhameem Mohamed) · GitHub",
+      "url": "https://github.com/mohameddhameem",
+      "snippet": "Production-ready Employee AI Buddy - A multi-agent system using RAG, MCP, and A2A protocols for intelligent workplace assistance. Features specialized agents for HR, greetings, and data retrieval w…"
+    }
+  ]
+}
