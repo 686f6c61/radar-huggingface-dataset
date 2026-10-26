@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "mradermacher/AmoreLLM-1.7B-i1-GGUF",
+  "slug": "mradermacher-amorellm-1-7b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/AmoreLLM-1.7B-i1-GGUF",
+  "created_at": "2026-10-25T22:34:33.000Z",
+  "updated_at": "2026-10-26T00:00:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "lightnovel",
+    "zh",
+    "base_model:3tic/AmoreLLM-1.7B",
+    "base_model:quantized:3tic/AmoreLLM-1.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 21649252288,
+  "storage_human": "21.6 GB",
+  "base_model": "3tic/AmoreLLM-1.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

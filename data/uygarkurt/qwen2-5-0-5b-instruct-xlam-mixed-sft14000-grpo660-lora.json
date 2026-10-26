@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft14000-grpo660-lora",
+  "slug": "uygarkurt-qwen2-5-0-5b-instruct-xlam-mixed-sft14000-grpo660-lora",
+  "author": "uygarkurt",
+  "url": "https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft14000-grpo660-lora",
+  "created_at": "2026-10-25T22:09:48.000Z",
+  "updated_at": "2026-10-25T22:09:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "transformers",
+    "tool-calling",
+    "sft",
+    "grpo",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:uygarkurt/xlam-tool-calling-mixed",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29062028,
+  "storage_human": "29 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Oublie du code de déverrouillage de la montre",
+      "url": "https://eu.community.samsung.com/t5/objets-connect%C3%A9s/oublie-du-code-de-d%C3%A9verrouillage-de-la-montre/td-p/12219244",
+      "snippet": "Apr 27, 2025 · Bonjour, Impossible de me souvenir de mon modèle de déverrouillage de ma galaxy watch 6. Je ke l'ai pas utiliser …Read more"
+    },
+    {
+      "title": "Résolu : Espace memoire insuffisant sur smart tv - Samsung Community",
+      "url": "https://eu.community.samsung.com/t5/t%C3%A9l%C3%A9viseurs/espace-memoire-insuffisant-sur-smart-tv/td-p/1931875",
+      "snippet": "Aug 13, 2020 · Bonjour L'espace de stockage sur mon téléviseur est occupé par toutes les applications qui se chargent …"
+    },
+    {
+      "title": "Comment désactiver définitivement Rakuten au démarrage TV",
+      "url": "https://eu.community.samsung.com/t5/t%C3%A9l%C3%A9viseurs/comment-d%C3%A9sactiver-d%C3%A9finitivement-rakuten-au-d%C3%A9marrage-tv/td-p/5257190",
+      "snippet": "Apr 20, 2022 · Bonjour, J'ai une TV 85QN85 acheter début 2022 qui démarre toujours avec Rakuten, j'ai déjà supprimer les chaines …"
+    },
+    {
+      "title": "Problème de pubs dans les jeux - Samsung Community",
+      "url": "https://eu.community.samsung.com/t5/club-gaming/probl%C3%A8me-de-pubs-dans-les-jeux/td-p/5291236",
+      "snippet": "Apr 26, 2022 · Bonjour, Depuis plusieurs mois je ne peux plus regarder les pubs de \"récompense\" dans les jeux que j'ai dans mon …"
+    },
+    {
+      "title": "Résolu : Verrouillage d'écran A17 - Samsung Community",
+      "url": "https://eu.community.samsung.com/t5/gamme-galaxy-a/verrouillage-d-%C3%A9cran-a17/td-p/13602370",
+      "snippet": "Nov 11, 2025 · Bonjour à tous, fraîchement arrivée sur la communauté mais utilisatrice de Samsung depuis toujours. Cependant, je …"
+    }
+  ]
+}

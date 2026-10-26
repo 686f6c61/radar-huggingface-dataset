@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "anik-jha/Ornith-1.5-122B-24GB-GGUF",
+  "slug": "anik-jha-ornith-1-5-122b-24gb-gguf",
+  "author": "anik-jha",
+  "url": "https://huggingface.co/anik-jha/Ornith-1.5-122B-24GB-GGUF",
+  "created_at": "2026-10-25T19:17:06.000Z",
+  "updated_at": "2026-10-25T19:18:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "ornith",
+    "qwen3_5_moe",
+    "mixture-of-experts",
+    "expert-pruning",
+    "reap",
+    "24gb",
+    "code",
+    "coding",
+    "reasoning",
+    "text-generation",
+    "arxiv:2607.16721",
+    "base_model:ornith-ai/Ornith-1.5-122B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-122B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 64110594048,
+  "parameters_human": "64.11B",
+  "storage_bytes": 21415883744,
+  "storage_human": "21.4 GB",
+  "base_model": "ornith-ai/Ornith-1.5-122B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anki - powerful, intelligent flashcards",
+      "url": "https://apps.ankiweb.net/index.html",
+      "snippet": "Anki is a flashcard program that helps you spend more time on challenging material, and less on what you already know.Read more"
+    },
+    {
+      "title": "Prénom Anik : Origine - Caractère - Signification - Etymologie",
+      "url": "https://www.parents.fr/prenoms/anik-35057",
+      "snippet": "Signification et étymologie du prénom Anik Anik (autre orthographe possible : Annik) est un prénom d'origine hébraïque. On trouve …"
+    },
+    {
+      "title": "Prénom Anik (fille) : signification, origine, caractère, sainte, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/anik/prenom-9476",
+      "snippet": "Prénom Anik : signification, origine, caractère, personnalité, Sainte Anik, popularité, avis, classement... Toutes les infos sur le …"
+    },
+    {
+      "title": "Anik Jean — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Anik_Jean",
+      "snippet": "Anik Jean (née le 11 avril 1977 à Bonaventure) est une chanteuse rock, guitariste, actrice, autrice et réalisatrice québécoise."
+    },
+    {
+      "title": "Anik — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Anik",
+      "snippet": "Anik F2 fut après son lancement le plus gros satellite de communication du monde. Il est canadien et a été lancé dans la nuit du 17 …"
+    }
+  ]
+}

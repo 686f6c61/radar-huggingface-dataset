@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "nekojin116/amadeus-gemma4-vision-gguf",
+  "slug": "nekojin116-amadeus-gemma4-vision-gguf",
+  "author": "nekojin116",
+  "url": "https://huggingface.co/nekojin116/amadeus-gemma4-vision-gguf",
+  "created_at": "2026-10-25T19:06:01.000Z",
+  "updated_at": "2026-10-25T19:06:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gemma4",
+    "llama.cpp",
+    "unsloth",
+    "vision-language-model",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7518069290,
+  "parameters_human": "7.52B",
+  "storage_bytes": 6325645920,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

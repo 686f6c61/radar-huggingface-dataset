@@ -5,7 +5,7 @@
   "author": "agu18dec",
   "url": "https://huggingface.co/agu18dec/olens_and_ar",
   "created_at": "2026-09-18T17:21:35.000Z",
-  "updated_at": "2026-10-22T18:18:12.000Z",
+  "updated_at": "2026-10-25T20:14:33.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1506027791,
-  "storage_human": "1.5 GB",
+  "storage_bytes": 2440123119,
+  "storage_human": "2.4 GB",
   "base_model": "Qwen/Qwen3.6-27B",
   "formats": [
     "safetensors"

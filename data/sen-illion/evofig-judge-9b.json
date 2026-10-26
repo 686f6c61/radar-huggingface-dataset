@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Sen-illion/Evofig-Judge-9B",
+  "slug": "sen-illion-evofig-judge-9b",
+  "author": "Sen-illion",
+  "url": "https://huggingface.co/Sen-illion/Evofig-Judge-9B",
+  "created_at": "2026-10-25T19:11:28.000Z",
+  "updated_at": "2026-10-25T19:23:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "judge",
+    "scientific-figure",
+    "editable-figure",
+    "lora",
+    "qwen3.5",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 136419045,
+  "storage_human": "136 MB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Définitions : sen - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/sen/72048",
+      "snippet": "sen - Définitions Français : Retrouvez la définition de sen, ainsi que les homonymes... - synonymes, homonymes, difficultés, citations."
+    },
+    {
+      "title": "Définition de sen | Dictionnaire français - La langue française",
+      "url": "https://www.lalanguefrancaise.com/dictionnaire/definition/sen",
+      "snippet": "Apr 23, 2024 · Définition de sen : dictionnaire, étymologie, phonétique, citations littéraires, synonymes et antonymes de « sen »"
+    },
+    {
+      "title": "Sen — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Sen",
+      "snippet": "Toponyme Le Sen, commune française, située dans le département des Landes et la région Nouvelle-Aquitaine."
+    },
+    {
+      "title": "Watch Earth Live in 4K from Space | Sen",
+      "url": "https://www.sen.com/",
+      "snippet": "Watch Earth live in 4K from space with Sen's satellite video platform. Stream real-time views from the ISS and beyond, captured by …"
+    },
+    {
+      "title": "sen - Définitions, synonymes, prononciation, exemples | Dico en ligne ...",
+      "url": "https://dictionnaire.lerobert.com/definition/sen",
+      "snippet": "Définition de sen nom masculin Monnaie divisionnaire de divers pays d'Extrême-Orient (Cambodge, Indonésie, Malaisie…) et …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "Darayut",
   "url": "https://huggingface.co/Darayut/sota-large",
   "created_at": "2026-10-23T14:59:13.000Z",
-  "updated_at": "2026-10-23T15:04:53.000Z",
+  "updated_at": "2026-10-25T11:23:46.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -29,12 +29,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 21,
+  "downloads_30d": 25,
   "trending_score": 0,
   "parameters": 203593631,
   "parameters_human": "203.6M",
-  "storage_bytes": 814456828,
-  "storage_human": "814 MB",
+  "storage_bytes": 815066369,
+  "storage_human": "815 MB",
   "base_model": null,
   "formats": [
     "safetensors"

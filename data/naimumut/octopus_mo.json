@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Naimumut/Octopus_MO",
+  "slug": "naimumut-octopus_mo",
+  "author": "Naimumut",
+  "url": "https://huggingface.co/Naimumut/Octopus_MO",
+  "created_at": "2026-10-25T22:43:14.000Z",
+  "updated_at": "2026-10-25T22:43:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Odyseja (2026) - Filmweb",
+      "url": "https://www.filmweb.pl/film/Odyseja-2026-10068387",
+      "snippet": "Jul 6, 2026 · \"Odyseja\" to historia Odyseusza, królu Itaki, podczas jego długiej i pełnej niebezpieczeństw podróży powrotnej do domu …"
+    },
+    {
+      "title": "The Odyssey (2026) - IMDb",
+      "url": "https://www.imdb.com/title/tt33764258/",
+      "snippet": "Jul 17, 2026 · The Odyssey: Directed by Christopher Nolan. With Matt Damon, Tom Holland, Anne Hathaway, Travis Scott. After the …"
+    },
+    {
+      "title": "The Odyssey (2026 film) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/The_Odyssey_(2026_film)",
+      "snippet": "The Odyssey is a 2026 epic action fantasy film written and directed by Christopher Nolan, who produced it with his wife Emma …"
+    },
+    {
+      "title": "Odyseja (2026) Lektor AI Wersja Kinowa - CDA",
+      "url": "https://www.cda.pl/video/312611035f",
+      "snippet": "Jul 26, 2026 · Oglądaj legalnie i w najlepszej jakości. w mniej niż 2 minuty! Nowe, wygodne metody aktywacji."
+    },
+    {
+      "title": "The Odyssey (2026): Showtimes, Tickets & Trailer | Moviefone",
+      "url": "https://www.moviefone.com/movie/the-odyssey/GMFxtsAnOuHq3zrIA41A62/main/",
+      "snippet": "Jul 17, 2026 · Odysseus, the legendary King of Ithaca, embarks on a long and perilous journey home following the Trojan War. …"
+    }
+  ]
+}

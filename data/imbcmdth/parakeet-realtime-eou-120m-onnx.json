@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "imbcmdth/parakeet-realtime-eou-120m-onnx",
+  "slug": "imbcmdth-parakeet-realtime-eou-120m-onnx",
+  "author": "imbcmdth",
+  "url": "https://huggingface.co/imbcmdth/parakeet-realtime-eou-120m-onnx",
+  "created_at": "2026-10-25T19:11:48.000Z",
+  "updated_at": "2026-10-25T19:12:10.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "onnxruntime",
+    "parakeet",
+    "fastconformer",
+    "rnnt",
+    "streaming",
+    "end-of-utterance",
+    "int8",
+    "fp16",
+    "automatic-speech-recognition",
+    "en",
+    "base_model:nvidia/parakeet_realtime_eou_120m-v1",
+    "base_model:quantized:nvidia/parakeet_realtime_eou_120m-v1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 927304853,
+  "storage_human": "927 MB",
+  "base_model": "nvidia/parakeet_realtime_eou_120m-v1",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Forum Guerre des Consoles - jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/forums/0-36-0-1-0-1-0-guerre-des-consoles.htm",
+      "snippet": "Bienvenue sur la page d'accueil du forum Guerre des Consoles de jeuxvideo.com Voici la liste des topics du forum. Venez rejoindre …"
+    },
+    {
+      "title": "Forum Football - jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/forums/0-20-0-1-0-1-0-football.htm",
+      "snippet": "Bienvenue sur la page d'accueil du forum Football de jeuxvideo.com Voici la liste des topics du forum. Venez rejoindre notre …"
+    },
+    {
+      "title": "Forum PlayStation 5 - jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/forums/0-3017788-0-1-0-1-0-playstation-5.htm",
+      "snippet": "Bienvenue sur la page d'accueil du forum PlayStation 5 de jeuxvideo.com Voici la liste des topics du forum. Venez rejoindre notre …"
+    },
+    {
+      "title": "Pokémon Pokopia : Calendrier des événements 2026 - jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/news/2106842/pokemon-pokopia-calendrier-des-evenements-2026.htm",
+      "snippet": "Oct 17, 2026 · Découvrez la liste des événements du calendrier de Pokémon Pokopia pour toute l'année 2026, avec un topo sur les …"
+    },
+    {
+      "title": "Topic On compte fermer les yeux cb de temps encore sur Genesio",
+      "url": "https://www.jeuxvideo.com/forums/42-20-77510575-1-0-1-0-on-compte-fermer-les-yeux-cb-de-temps-encore-sur-genesio.htm",
+      "snippet": "3 days ago · C’est fatiguant ces totems d'immunité avec ces entraîneurs qui ont la CARTE Et ça ose critiquer un entraîneur comme …"
+    }
+  ]
+}

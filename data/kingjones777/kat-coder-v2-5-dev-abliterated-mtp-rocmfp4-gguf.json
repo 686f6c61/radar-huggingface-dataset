@@ -5,7 +5,7 @@
   "author": "kingjones777",
   "url": "https://huggingface.co/kingjones777/KAT-Coder-V2.5-Dev-Abliterated-MTP-ROCmFP4-GGUF",
   "created_at": "2026-09-01T06:17:55.000Z",
-  "updated_at": "2026-09-01T21:27:09.000Z",
+  "updated_at": "2026-10-25T21:32:27.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,12 +34,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 180,
+  "downloads_30d": 177,
   "trending_score": 0,
   "parameters": 35505251456,
   "parameters_human": "35.51B",
-  "storage_bytes": 101627895168,
-  "storage_human": "101.6 GB",
+  "storage_bytes": 121271248096,
+  "storage_human": "121.3 GB",
   "base_model": "jakeroxs/KAT-Coder-V2.5-Dev-35B-A3B-MTP-ABLITERATED-GGUF, Kwaipilot/KAT-Coder-V2.5-Dev",
   "formats": [
     "gguf"

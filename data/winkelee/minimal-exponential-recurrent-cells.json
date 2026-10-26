@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "winkelee/Minimal-Exponential-Recurrent-Cells",
+  "slug": "winkelee-minimal-exponential-recurrent-cells",
+  "author": "winkelee",
+  "url": "https://huggingface.co/winkelee/Minimal-Exponential-Recurrent-Cells",
+  "created_at": "2026-10-25T22:07:25.000Z",
+  "updated_at": "2026-10-25T22:07:25.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Qwen, Mistral AI, Moonshot AI, Z.ai, MiniMax, NVIDIA, Microsoft AI, Cohere, Xiaomi, and other prominent AI labs. The newest-first tables show each release date, provider, and model type. Dates use the earliest meaningful availability stage for each entry. Preview access ..."
+    },
+    {
+      "title": "Recursive launches Flint, a laptop coding model it says was largely ...",
+      "url": "https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/",
+      "snippet": "Startup Recursive has released Flint, a free, laptop-sized coding model built largely by its own AI research system, as an early test of AI that improves itself."
+    },
+    {
+      "title": "Reinforcement learning - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Reinforcement_learning",
+      "snippet": "The typical framing of a reinforcement learning (RL) scenario: an agent takes actions in an environment, which is interpreted into a reward and a state representation, which are fed back to the agent."
+    },
+    {
+      "title": "Foundry Models | Microsoft Azure",
+      "url": "https://azure.microsoft.com/en-us/products/ai-foundry/models/",
+      "snippet": "Accelerate generative AI development with Foundry Models that are packaged for out-of-the-box use. Fine tune AI using models as a service (MaaS)."
+    },
+    {
+      "title": "Variational autoencoder - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Variational_autoencoder",
+      "snippet": "Overview of architecture and operation A variational autoencoder is a generative model with a prior and noise distribution respectively. Usually such models are trained using the expectation-maximization meta-algorithm (e.g. probabilistic PCA, (spike & slab) sparse coding)."
+    }
+  ]
+}

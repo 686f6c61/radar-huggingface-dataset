@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "VelociQ8/multilingual-e5-base-Q8A64-GGUF",
+  "slug": "velociq8-multilingual-e5-base-q8a64-gguf",
+  "author": "VelociQ8",
+  "url": "https://huggingface.co/VelociQ8/multilingual-e5-base-Q8A64-GGUF",
+  "created_at": "2026-10-21T17:48:29.000Z",
+  "updated_at": "2026-10-25T22:45:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "velociq8",
+    "q8a64",
+    "cpu",
+    "embeddings",
+    "sentence-similarity",
+    "arm64",
+    "aarch64",
+    "x86_64",
+    "8-bit",
+    "quantized",
+    "retrieval",
+    "semantic-search",
+    "rag",
+    "feature-extraction",
+    "multilingual",
+    "arxiv:2402.05672",
+    "base_model:intfloat/multilingual-e5-base",
+    "base_model:quantized:intfloat/multilingual-e5-base",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 137,
+  "trending_score": 0,
+  "parameters": 480486112,
+  "parameters_human": "480.5M",
+  "storage_bytes": 1562758841,
+  "storage_human": "1.6 GB",
+  "base_model": "intfloat/multilingual-e5-base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VelociQ8/multilingual-e5-base-Q8A64-GGUF · Hugging Face",
+      "url": "https://huggingface.co/VelociQ8/multilingual-e5-base-Q8A64-GGUF",
+      "snippet": "This repository holds multilingual-e5-base converted to Q8A64, the 8-bit weight format of VelociQ8, to run on the CPU. It turns text in about 100 languages into vectors for retrieval, similarity, classification and clustering, with a short prefix on queries and on passages. Base model intfloat ..."
+    },
+    {
+      "title": "VelociQ8 (VelociQ8) - Hugging Face",
+      "url": "https://huggingface.co/VelociQ8",
+      "snippet": "Fast CPU inference for GGUF models on Arm and x86: embeddings, dense and MoE LLMs"
+    },
+    {
+      "title": "Multilingual E5 Base Q8a64 Gguf - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/velociq8/multilingual-e5-base-q8a64-gguf",
+      "snippet": "Registry entry for model Multilingual E5 Base Q8a64 Gguf; source metadata pending."
+    },
+    {
+      "title": "multilingual-e5-base: Self-Hosting & Deployment Guide - LLM API",
+      "url": "https://llmapi.ai/models/intfloat-multilingual-e5-base/",
+      "snippet": "What is multilingual-e5-base? multilingual-e5-base is an open-weight embedding model that turns text into vectors for search and retrieval, published by Microsoft (intfloat) with open weights at intfloat/multilingual-e5-base."
+    },
+    {
+      "title": "Releases: dhaern/VelociQ8 - GitHub",
+      "url": "https://github.com/dhaern/VelociQ8/releases",
+      "snippet": "Mixture-of-experts models now run their expert weights in Q8A64. On granite-3.1-1b-a400m and OLMoE-1B-7B, prompt processing is 1.8 to 2.1 times faster than llama.cpp v0.7.0 with Q8_0 on the Arm test machine and 1.5 times faster on the Ryzen 9 5950X, with less divergence from the original weights."
+    }
+  ]
+}

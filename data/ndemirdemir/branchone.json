@@ -5,7 +5,7 @@
   "author": "ndemirdemir",
   "url": "https://huggingface.co/ndemirdemir/BranchOne",
   "created_at": "2026-10-23T20:28:00.000Z",
-  "updated_at": "2026-10-23T21:32:54.000Z",
+  "updated_at": "2026-10-25T13:45:01.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 39,
+  "downloads_30d": 47,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

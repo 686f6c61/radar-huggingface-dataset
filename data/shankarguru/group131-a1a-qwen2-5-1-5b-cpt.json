@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "shankarguru/group131-a1a-qwen2.5-1.5b-cpt",
+  "slug": "shankarguru-group131-a1a-qwen2-5-1-5b-cpt",
+  "author": "shankarguru",
+  "url": "https://huggingface.co/shankarguru/group131-a1a-qwen2.5-1.5b-cpt",
+  "created_at": "2026-10-25T19:11:10.000Z",
+  "updated_at": "2026-10-25T19:25:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "continual-pretraining",
+    "finance",
+    "10-K",
+    "bits-wilp",
+    "base_model:Qwen/Qwen2.5-1.5B",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3119042162,
+  "storage_human": "3.1 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "C#中如何判断一个对象Dispose了？-CSDN社区",
+      "url": "https://bbs.csdn.net/topics/390668216",
+      "snippet": "Dec 13, 2013 · 以下内容是CSDN社区关于C#中如何判断一个对象Dispose了？相关内容，如果想了解更多关于C#社区其他内容，请访 …Read more"
+    },
+    {
+      "title": "C-ATP - 知乎",
+      "url": "https://www.zhihu.com/people/c-atp",
+      "snippet": "Jun 19, 2025 · 全文将分为四个大章节发布，本文是第三章第二部分。 封面：阿富汗斗犬，巴基斯坦西北边境省纳西尔巴格的阿富汗难 …"
+    },
+    {
+      "title": "软件运行之后，提示Microsoft Visual C++ Debug Library-CSDN社区",
+      "url": "https://bbs.csdn.net/topics/392343529",
+      "snippet": "Mar 21, 2018 · 以下内容是CSDN社区关于软件运行之后，提示Microsoft Visual C++ Debug Library相关内容，如果想了解更多关 …"
+    },
+    {
+      "title": "白话强化学习 - 知乎",
+      "url": "https://www.zhihu.com/column/c_1215667894253830144",
+      "snippet": "DPPO和A3C的思路其实是一致的，希望用多个智能体同时和环境互动，并对全局的PPO网络进行更新。 在A3C，我们需要跑数据并 …"
+    },
+    {
+      "title": "车牌赣A是南昌、那么赣B..赣C..赣D..赣E..赣F..是指哪里？",
+      "url": "https://zhidao.baidu.com/question/560910517.html",
+      "snippet": "赣B是赣州市，赣C是 宜春市，赣D是 吉安市，赣E是上饶市，赣F是抚州市。 1、赣是江西的简称，东邻浙江省、福建省，南连广东 …"
+    }
+  ]
+}

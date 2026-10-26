@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "SketchyAI/tintin-flux3-klein-GGUF",
+  "slug": "sketchyai-tintin-flux3-klein-gguf",
+  "author": "SketchyAI",
+  "url": "https://huggingface.co/SketchyAI/tintin-flux3-klein-GGUF",
+  "created_at": "2026-10-25T19:18:25.000Z",
+  "updated_at": "2026-10-25T19:20:51.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "flux3",
+    "stable-diffusion.cpp",
+    "text-to-image",
+    "base_model:black-forest-labs/flux-3-image-klein-base",
+    "base_model:quantized:black-forest-labs/flux-3-image-klein-base",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5538458368,
+  "parameters_human": "5.54B",
+  "storage_bytes": 13873910880,
+  "storage_human": "13.9 GB",
+  "base_model": "black-forest-labs/flux-3-image-klein-base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SketchyAI/tintin-flux3-klein-LoRA · Hugging Face",
+      "url": "https://huggingface.co/SketchyAI/tintin-flux3-klein-LoRA",
+      "snippet": "SketchyAI / tintin-flux3-klein-LoRA Like 0 Text-to-Image lora flux3 ai-toolkit comic License:other Model card FilesFiles and versions xet Community Copy to bucket new Tintin comic LoRA for FLUX 3 Image Klein Base Training Inference Limitations and attribution"
+    },
+    {
+      "title": "realrebelai/FLUX-3-Image-Klein_GGUFs at main - Hugging Face",
+      "url": "https://huggingface.co/realrebelai/FLUX-3-Image-Klein_GGUFs/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "How to Use FLUX.3 Klein GGUF Workflow in ComfyUI",
+      "url": "https://www.kombitz.com/2026/10/18/how-to-use-flux-3-klein-gguf-workflow-in-comfyui/",
+      "snippet": "Learn how to set up and use the FLUX.3 Klein Distilled GGUF model in ComfyUI with a text-to-image workflow for fast, local AI image generation."
+    },
+    {
+      "title": "Flux3 Klein GGUF - v1.0 | Flux.3 Klein Checkpoint | Civitai",
+      "url": "https://civitai.com/models/3005306/flux3-klein-gguf",
+      "snippet": "Optional Files 2 flux3-klein-t2i-gguf.json . json • 50.26 KB Verified:8 days ago flux3-klein-image-edit-gguf.json . json • 19.87 KB Verified:8 days ago Details Type Checkpoint Stats 2590 1 2 3 4 5 6 7 8 90 1 2 3 4 5 6 7 8 90 1 2 3 4 5 6 7 8 9 Reviews Positive (8) Published Oct 16, 2026 Base Model Flux.3 Klein Hash AutoV2 1EA0C07962 Tensors"
+    },
+    {
+      "title": "Flux 3 Klein - ImageGen & Edit with 10 images (BF16/FP8/NVFP4/GGUF)",
+      "url": "https://www.stablediffusiontutorials.com/2026/10/flux3-image-klein.html",
+      "snippet": "FLUX 3 Image Klein addresses these problems by bringing image generation and editing into one model, with support for multiple reference images, spatial guidance, and prompt enhancement."
+    }
+  ]
+}

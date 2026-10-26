@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "jjalora/diet-traj-pythia-410m-he-normal-seed11",
+  "slug": "jjalora-diet-traj-pythia-410m-he-normal-seed11",
+  "author": "jjalora",
+  "url": "https://huggingface.co/jjalora/diet-traj-pythia-410m-he-normal-seed11",
+  "created_at": "2026-10-25T19:24:22.000Z",
+  "updated_at": "2026-10-25T19:24:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "pythia",
+    "gpt_neox",
+    "training-trajectory",
+    "diet",
+    "weight-space",
+    "en",
+    "dataset:EleutherAI/pile-standard-pythia-preshuffled",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 84312997184,
+  "storage_human": "84.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jjalora (John Alora) - Hugging Face",
+      "url": "https://huggingface.co/jjalora/models",
+      "snippet": "Organizations jjalora&#x27;s models9 Sort: Recently updated jjalora/diet-traj-pythia-410m-xavier-normal-seed11 Updated about 12 hours ago"
+    },
+    {
+      "title": "EleutherAI/pythia-410m · Hugging Face",
+      "url": "https://huggingface.co/EleutherAI/pythia-410m",
+      "snippet": "The Pythia Scaling Suite is a collection of models developed to facilitate interpretability research (see paper). It contains two sets of eight models of sizes 70M, 160M, 410M, 1B, 1.4B, 2.8B, 6.9B, and 12B. For each size, there are two models: one trained on the Pile, and one trained on the Pile after the dataset has been globally deduplicated. All 8 model sizes are trained on the exact same ..."
+    },
+    {
+      "title": "GitHub - EleutherAI/pythia: The hub for EleutherAI&#x27;s work on ...",
+      "url": "https://github.com/EleutherAI/pythia",
+      "snippet": "This repository is for EleutherAI&#x27;s project Pythia which combines interpretability analysis and scaling laws to understand how knowledge develops and evolves during training in autoregressive transformers. For detailed info on the models, their training, and their properties, please see our paper Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling. The Pythia suite ..."
+    },
+    {
+      "title": "Pythia-410M: Private, Open-Weight LLM for Ops AI",
+      "url": "https://llm.co/llms/pythia-410m",
+      "snippet": "Open-Weight LLM · Private & Custom AI pythia-410m A lightweight, research-grade causal language model for building interpretable custom AI agents and automating text-generation workflows on modest hardware—designed for ops teams who need to own their model weights and data. Pythia-410M is a 410M-parameter transformer trained on the Pile dataset, part of EleutherAI&#x27;s interpretability ..."
+    },
+    {
+      "title": "Pythia 410M by EleutherAI — VRAM 0.9GB, 2K context | LLM Explorer",
+      "url": "https://llm-explorer.com/model/EleutherAI%2Fpythia-410m,32inJLhd40mzGA7wnVKE3Z",
+      "snippet": "Pythia 410M is an open-source 410m LLM by EleutherAI. VRAM 0.9GB, 2K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

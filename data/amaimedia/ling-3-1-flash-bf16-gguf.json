@@ -5,7 +5,7 @@
   "author": "AMAImedia",
   "url": "https://huggingface.co/AMAImedia/Ling-3.1-Flash-BF16-GGUF",
   "created_at": "2026-10-14T16:04:46.000Z",
-  "updated_at": "2026-10-14T16:39:50.000Z",
+  "updated_at": "2026-10-25T06:35:56.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -255,7 +255,7 @@
     "imatrix"
   ],
   "likes": 0,
-  "downloads_30d": 427,
+  "downloads_30d": 439,
   "trending_score": 0,
   "parameters": 572120680768,
   "parameters_human": "572.12B",

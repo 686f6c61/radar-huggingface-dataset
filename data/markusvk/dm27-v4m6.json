@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Markusvk/dm27-v4m6",
+  "slug": "markusvk-dm27-v4m6",
+  "author": "Markusvk",
+  "url": "https://huggingface.co/Markusvk/dm27-v4m6",
+  "created_at": "2026-10-25T22:44:14.000Z",
+  "updated_at": "2026-10-25T22:47:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "decision-model",
+    "reax",
+    "sn92",
+    "base_model:decisionmodels/reax-1.1",
+    "base_model:finetune:decisionmodels/reax-1.1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26085330160,
+  "parameters_human": "26.09B",
+  "storage_bytes": 52193403564,
+  "storage_human": "52.2 GB",
+  "base_model": "decisionmodels/reax-1.1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

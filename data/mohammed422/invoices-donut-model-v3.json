@@ -5,7 +5,7 @@
   "author": "Mohammed422",
   "url": "https://huggingface.co/Mohammed422/invoices-donut-model-v3",
   "created_at": "2026-10-01T18:00:57.000Z",
-  "updated_at": "2026-10-23T00:17:22.000Z",
+  "updated_at": "2026-10-26T01:47:30.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -21,12 +21,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 1372,
+  "downloads_30d": 1376,
   "trending_score": 0,
   "parameters": 202098104,
   "parameters_human": "202.1M",
-  "storage_bytes": 296187353424,
-  "storage_human": "296.2 GB",
+  "storage_bytes": 336650106624,
+  "storage_human": "336.7 GB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "tiny-random/muse-spark-open",
+  "slug": "tiny-random-muse-spark-open",
+  "author": "tiny-random",
+  "url": "https://huggingface.co/tiny-random/muse-spark-open",
+  "created_at": "2026-10-25T22:32:17.000Z",
+  "updated_at": "2026-10-25T22:32:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "muse_spark",
+    "base_model:meta-models/Muse-Spark-Open-816B-A42B",
+    "base_model:finetune:meta-models/Muse-Spark-Open-816B-A42B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3582568,
+  "parameters_human": "3.6M",
+  "storage_bytes": 35297142,
+  "storage_human": "35 MB",
+  "base_model": "meta-models/Muse-Spark-Open-816B-A42B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TinyTask",
+      "url": "https://www.tinytask.net/",
+      "snippet": "TinyTask is free software for personal use, but it does cost money to develop & host this project. Historically, only 1 in 10,000 …Read more"
+    },
+    {
+      "title": "TinyPNG – Compress WebP, PNG and JPEG images intelligently",
+      "url": "https://tinypng.com/",
+      "snippet": "Free online image optimizer for faster websites! Reduce the file size of your AVIF, WEBP, JPEG and PNG images while preserving …"
+    },
+    {
+      "title": "La Tiny House - Premier fabricant français de Tiny House",
+      "url": "https://latinyhouse.com/",
+      "snippet": "La Tiny House vous accompagne dans la réalisation du projet de vos rêves. Inspiré par l'un de nos modèles, ou envie de plans sur …"
+    },
+    {
+      "title": "URL Shortener, Branded Short Links & Analytics | TinyURL",
+      "url": "https://tinyurl.com/",
+      "snippet": "Create short, user-friendly URLs for your website and social media pages in seconds, complete with analytics, branded domains, and …"
+    },
+    {
+      "title": "Tiny House France - Habiter Autrement",
+      "url": "https://tinyhousefrance.org/",
+      "snippet": "Dimensions et capacité des tiny houses : Tout ce qu’il faut savoir Les tiny houses, ces petites maisons mobiles à l’espace optimisé, …"
+    }
+  ]
+}

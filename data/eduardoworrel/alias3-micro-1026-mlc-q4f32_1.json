@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "eduardoworrel/alias3-micro-1026-MLC-q4f32_1",
+  "slug": "eduardoworrel-alias3-micro-1026-mlc-q4f32_1",
+  "author": "eduardoworrel",
+  "url": "https://huggingface.co/eduardoworrel/alias3-micro-1026-MLC-q4f32_1",
+  "created_at": "2026-10-25T19:21:27.000Z",
+  "updated_at": "2026-10-26T03:37:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlc-llm",
+  "languages": [],
+  "tags": [
+    "mlc-llm",
+    "web-llm",
+    "webgpu",
+    "qwen3_5",
+    "quantized",
+    "cybersecurity",
+    "text-generation",
+    "base_model:aliasrobotics/alias3-micro-1026",
+    "base_model:quantized:aliasrobotics/alias3-micro-1026",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2434294893,
+  "storage_human": "2.4 GB",
+  "base_model": "aliasrobotics/alias3-micro-1026",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eduardoworrel/ct0-alias3-micro-mlc-q4f32 · Hugging Face",
+      "url": "https://huggingface.co/eduardoworrel/ct0-alias3-micro-mlc-q4f32",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "eduardoworrel/ct0-alias3-micro-mlc · Hugging Face",
+      "url": "https://huggingface.co/eduardoworrel/ct0-alias3-micro-mlc",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Alias3 Micro 1026 by aliasrobotics — VRAM 8.4GB, 256K context | LLM ...",
+      "url": "https://llm-explorer.com/model/aliasrobotics%2Falias3-micro-1026,4blf2l2TXTivhkOEjQYCOd",
+      "snippet": "Alias3 Micro 1026 is an open-source 4b LLM by aliasrobotics. VRAM 8.4GB, 256K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Ct0 Alias3 Micro Mlc - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/eduardoworrel/ct0-alias3-micro-mlc",
+      "snippet": "Registry entry for model Ct0 Alias3 Micro Mlc; source metadata pending."
+    },
+    {
+      "title": "@mlc-ai/web-llm CDN by jsDelivr - A CDN for npm and GitHub",
+      "url": "https://www.jsdelivr.com/package/npm/@mlc-ai/web-llm",
+      "snippet": "A free, fast, and reliable CDN for @mlc-ai/web-llm. Hardware accelerated language model chats on browsers"
+    }
+  ]
+}

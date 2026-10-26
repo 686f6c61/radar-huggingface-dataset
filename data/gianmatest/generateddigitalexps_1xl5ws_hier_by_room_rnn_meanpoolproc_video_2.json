@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "gianmaTest/generatedDigitalExps_1xL5wS_hier_by_room_rnn_meanPoolProc_video_2",
+  "slug": "gianmatest-generateddigitalexps_1xl5ws_hier_by_room_rnn_meanpoolproc_video_2",
+  "author": "gianmaTest",
+  "url": "https://huggingface.co/gianmaTest/generatedDigitalExps_1xL5wS_hier_by_room_rnn_meanPoolProc_video_2",
+  "created_at": "2026-10-25T22:13:54.000Z",
+  "updated_at": "2026-10-25T22:14:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2366208,
+  "parameters_human": "2.4M",
+  "storage_bytes": 9467176,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sexuality Forum - Psych forums",
+      "url": "https://www.psychforums.com/sexuality/",
+      "snippet": "Sep 18, 2025 · Sexuality Forum : Open Discussions about Sexuality and Related Issues."
+    },
+    {
+      "title": "Can porn make straight boy gay - Psych forums",
+      "url": "https://www.psychforums.com/sexual-dysfunctions/topic143146.html",
+      "snippet": "Jun 24, 2014 · Can porn make straight boy gay ? by Josko 90 » Tue Jun 24, 2014 3:08 pm Hi, Before i am starting typing what's …"
+    },
+    {
+      "title": "Sexual Addiction Forum - Psych forums",
+      "url": "https://www.psychforums.com/sexual-addiction/",
+      "snippet": "Sep 22, 2026 · Sexual Addiction Forum : Sexual Addiction message board, open discussion, and online support group."
+    },
+    {
+      "title": "I am a pedophile and love boys - Psych forums",
+      "url": "https://www.psychforums.com/paraphilias/topic140315.html",
+      "snippet": "May 11, 2014 · For the longest time, I thought I was gay which was weird because I had a few same-sex experiences and did not …"
+    },
+    {
+      "title": "Intrusive thoughts caused by a Porn addiction? - Psych forums",
+      "url": "https://www.psychforums.com/obsessive-compulsive/topic133459.html",
+      "snippet": "Jan 24, 2014 · Can gay thoughts come from watching porn? I pretty much started at straight, but that got boring after a while, so I …"
+    }
+  ]
+}

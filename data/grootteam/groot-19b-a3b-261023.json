@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "GrootTeam/Groot-19B-A3B-261023",
+  "slug": "grootteam-groot-19b-a3b-261023",
+  "author": "GrootTeam",
+  "url": "https://huggingface.co/GrootTeam/Groot-19B-A3B-261023",
+  "created_at": "2026-10-23T08:47:29.000Z",
+  "updated_at": "2026-10-23T09:44:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 15,
+  "downloads_30d": 51,
+  "trending_score": 14,
+  "parameters": 19432294256,
+  "parameters_human": "19.43B",
+  "storage_bytes": 38883686769,
+  "storage_human": "38.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

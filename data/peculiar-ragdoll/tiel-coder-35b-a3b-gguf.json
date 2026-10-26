@@ -5,7 +5,7 @@
   "author": "peculiar-ragdoll",
   "url": "https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-GGUF",
   "created_at": "2026-08-19T23:11:19.000Z",
-  "updated_at": "2026-09-10T23:13:54.000Z",
+  "updated_at": "2026-10-25T15:44:50.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -34,13 +34,13 @@
     "region:us",
     "conversational"
   ],
-  "likes": 398,
-  "downloads_30d": 288363,
+  "likes": 403,
+  "downloads_30d": 288080,
   "trending_score": 12,
   "parameters": 34660610688,
   "parameters_human": "34.66B",
-  "storage_bytes": 605244726761,
-  "storage_human": "605.2 GB",
+  "storage_bytes": 643863544489,
+  "storage_human": "643.9 GB",
   "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
   "formats": [
     "gguf"

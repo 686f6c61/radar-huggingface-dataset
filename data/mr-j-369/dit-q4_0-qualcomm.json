@@ -5,7 +5,7 @@
   "author": "Mr-J-369",
   "url": "https://huggingface.co/Mr-J-369/dit-Q4_0-Qualcomm",
   "created_at": "2026-10-20T13:44:59.000Z",
-  "updated_at": "2026-10-25T02:50:38.000Z",
+  "updated_at": "2026-10-25T21:57:01.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,8 +20,8 @@
   "trending_score": 0,
   "parameters": 12820083036,
   "parameters_human": "12.82B",
-  "storage_bytes": 442255382504,
-  "storage_human": "442.3 GB",
+  "storage_bytes": 462493870472,
+  "storage_human": "462.5 GB",
   "base_model": null,
   "formats": [
     "gguf"

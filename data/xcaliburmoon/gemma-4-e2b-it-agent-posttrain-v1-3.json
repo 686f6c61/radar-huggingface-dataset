@@ -5,7 +5,7 @@
   "author": "XcaliburMoon",
   "url": "https://huggingface.co/XcaliburMoon/gemma-4-E2B-it-agent-posttrain-v1.3",
   "created_at": "2026-10-22T00:29:00.000Z",
-  "updated_at": "2026-10-22T00:30:55.000Z",
+  "updated_at": "2026-10-25T04:17:56.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -31,7 +31,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 137,
+  "downloads_30d": 143,
   "trending_score": 0,
   "parameters": 4628569635,
   "parameters_human": "4.63B",

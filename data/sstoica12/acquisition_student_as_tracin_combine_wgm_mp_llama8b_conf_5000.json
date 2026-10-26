@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "sstoica12/acquisition_student_AS_tracin_combine_WGM_MP_llama8b_conf_5000",
+  "slug": "sstoica12-acquisition_student_as_tracin_combine_wgm_mp_llama8b_conf_5000",
+  "author": "sstoica12",
+  "url": "https://huggingface.co/sstoica12/acquisition_student_AS_tracin_combine_WGM_MP_llama8b_conf_5000",
+  "created_at": "2026-10-25T22:42:36.000Z",
+  "updated_at": "2026-10-25T22:44:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Skymo : le plus petit score gagne | Jeu de cartes en ligne gratuit",
+      "url": "https://skymo.online/fr",
+      "snippet": "Il est maintenant possible de jouer à Skymo en ligne gratuitement ! Gratuit, sans publicité, sans système d'énergie ou de vies, et rien …"
+    },
+    {
+      "title": "Skyjo - Play Skyjo online",
+      "url": "https://www.skyjo.net/",
+      "snippet": "Select the players (human or AI bots) you want to play against by flipping the cards."
+    },
+    {
+      "title": "Skyjo en ligne gratuit : comment jouer au Skyjo en ligne ?",
+      "url": "https://infinity-area.com/article/skyjo-en-ligne-comment-jouer-gratuitement-a-ce-jeu-de-cartes-addictif-sur-pc-et-mobile",
+      "snippet": "Oct 3, 2025 · Comment jouer au Skyjo en ligne ? Découvrez les applications officielles et les sites pour jouer à Skyjo gratuit en ligne …"
+    },
+    {
+      "title": "Skyjo",
+      "url": "https://skyjo-game.vercel.app/",
+      "snippet": "SKYJO — web version (local & online) Play locally on one device, or connect online with a friend using a copy/paste code (no …"
+    },
+    {
+      "title": "Skymo : le plus petit score gagne | Jeu de cartes en ligne gratuit",
+      "url": "https://skymo.online/fr/create",
+      "snippet": "Joue à Skymo gratuitement ! Un jeu de cartes multijoueur stratégique et amusant. Défie tes amis, retourne des cartes et vise le …"
+    }
+  ]
+}

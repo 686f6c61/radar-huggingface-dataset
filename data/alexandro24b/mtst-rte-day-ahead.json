@@ -5,7 +5,7 @@
   "author": "Alexandro24B",
   "url": "https://huggingface.co/Alexandro24B/mtst-rte-day-ahead",
   "created_at": "2026-10-24T23:35:48.000Z",
-  "updated_at": "2026-10-24T23:39:01.000Z",
+  "updated_at": "2026-10-25T07:41:33.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "time-series-forecasting",
@@ -27,7 +27,7 @@
     "en",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 2,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

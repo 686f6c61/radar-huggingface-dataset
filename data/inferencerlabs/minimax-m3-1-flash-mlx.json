@@ -27,12 +27,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 59,
+  "downloads_30d": 277,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 500139208556,
-  "storage_human": "500.1 GB",
+  "storage_bytes": 252312875168,
+  "storage_human": "252.3 GB",
   "base_model": "MiniMaxAI/MiniMax-M3.1-Flash",
   "formats": [
     "mlx",

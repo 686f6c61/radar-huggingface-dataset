@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-grpo3960-lora",
+  "slug": "uygarkurt-qwen2-5-0-5b-instruct-xlam-mixed-grpo3960-lora",
+  "author": "uygarkurt",
+  "url": "https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-grpo3960-lora",
+  "created_at": "2026-10-25T22:36:39.000Z",
+  "updated_at": "2026-10-25T22:36:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "transformers",
+    "tool-calling",
+    "grpo",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:uygarkurt/xlam-tool-calling-mixed",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29062028,
+  "storage_human": "29 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Horoscope gratuit du jour : prévisions quotidiennes par signe",
+      "url": "https://madame.lefigaro.fr/astro/horoscope/quotidien",
+      "snippet": "23 hours ago · Horoscope du jour : amour, travail, santé, argent, famille et foyer… Pour connaître ce que vous réserve votre journée, …"
+    },
+    {
+      "title": "Horoscope Bélier du jour, le 25 octobre 2026 - Madame Figaro",
+      "url": "https://madame.lefigaro.fr/astro/horoscope/quotidien/belier",
+      "snippet": "23 hours ago · Découvrez notre horoscope Bélier et toutes nos prévisions pour ce dimanche 25 octobre 2026. Qu'allez-vous faire …"
+    },
+    {
+      "title": "Madame Figaro - Horoscope du jour",
+      "url": "https://static.lefigaro.fr/newsletters/madame/astro/previsualisation.html",
+      "snippet": "23 hours ago · Célibataire, votre fâcheuse tendance à vous dénigrer enlève de votre charme... Vous aimeriez évoluer dans le …"
+    },
+    {
+      "title": "Christine Haas sur le Figaro",
+      "url": "https://www.lefigaro.fr/auteur/christine-haas?msockid=24a14e522bb36daa299b59af2a046cc4",
+      "snippet": "VIDÉO - Voici vos prévisions de la semaine, pour chaque signe du zodiaque. L’astrologue vous livre vos perspectives en amour, …"
+    },
+    {
+      "title": "horoscope : Suivez les dernières actualités et infos - Le Figaro",
+      "url": "https://www.lefigaro.fr/tag/horoscope?msockid=24a14e522bb36daa299b59af2a046cc4",
+      "snippet": "2 days ago · Découvrez toutes les actualités et articles récents autour de horoscope. Ne manquez rien des infos et événements à …"
+    }
+  ]
+}

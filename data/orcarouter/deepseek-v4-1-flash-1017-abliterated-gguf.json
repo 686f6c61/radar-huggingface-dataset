@@ -5,7 +5,7 @@
   "author": "orcarouter",
   "url": "https://huggingface.co/orcarouter/DeepSeek-V4.1-Flash-1017-abliterated-GGUF",
   "created_at": "2026-10-22T04:06:52.000Z",
-  "updated_at": "2026-10-24T05:43:53.000Z",
+  "updated_at": "2026-10-26T03:53:36.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -41,13 +41,13 @@
     "region:us",
     "conversational"
   ],
-  "likes": 213,
+  "likes": 222,
   "downloads_30d": 7293,
-  "trending_score": 185,
+  "trending_score": 188,
   "parameters": 748494643824,
   "parameters_human": "748.49B",
-  "storage_bytes": 572527725536,
-  "storage_human": "572.5 GB",
+  "storage_bytes": 574470937248,
+  "storage_human": "574.5 GB",
   "base_model": "orcarouter/DeepSeek-V4.1-Flash-1017-abliterated",
   "formats": [
     "gguf"

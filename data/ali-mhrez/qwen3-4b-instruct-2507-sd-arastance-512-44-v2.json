@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-AraStance-512-44-v2",
+  "slug": "ali-mhrez-qwen3-4b-instruct-2507-sd-arastance-512-44-v2",
+  "author": "Ali-Mhrez",
+  "url": "https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-AraStance-512-44-v2",
+  "created_at": "2026-10-25T14:48:39.000Z",
+  "updated_at": "2026-10-25T20:46:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "unsloth",
+    "sft",
+    "base_model:unsloth/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:unsloth/Qwen3-4B-Instruct-2507",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2010441684,
+  "storage_human": "2.0 GB",
+  "base_model": "unsloth/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AliExpress - Affordable Chinese Stores & Free Shipping - Online …",
+      "url": "https://www.aliexpress.com/",
+      "snippet": "Passion shouldn't cost a fortune. On AliExpress, shop online for over 111 million affordable products from China on Fashion, Men's …"
+    },
+    {
+      "title": "AliExpress France - Livraison gratuite et économisez plus",
+      "url": "https://fr.aliexpress.com/",
+      "snippet": "La passion ne devrait pas coûter une fortune. Avis Sur AliExpress.com, un site de chez Alibaba, vous pouvez choisir parmi plus de …"
+    },
+    {
+      "title": "AliExpress - Online Shopping for Popular Electronics, Fashion, Home ...",
+      "url": "https://a.aliexpress.com/",
+      "snippet": "Online shopping for the latest electronics, fashion, phone accessories, computer electronics, toys, home&garden, home appliances, …"
+    },
+    {
+      "title": "L’ALI, l’allié pour trouver un travail - Seine-Saint-Denis",
+      "url": "https://seinesaintdenis.fr/actualite/emploi-entrepreneuriat/insertion/L%E2%80%99ALI-l%E2%80%99allie-pour-trouver-un-travail/",
+      "snippet": "Oct 18, 2024 · Le Département de la Seine-Saint-Denis a renforcé ses moyens pour aider les personnes au RSA à trouver un travail. …"
+    },
+    {
+      "title": "FR.AliExpress | aliexpress en français - Acheter en ligne des produits ...",
+      "url": "https://fr.aliexpress.com/wholesale",
+      "snippet": "Aide Service client, Litiges et signalements, Politique de retour et de remboursement, Signaler une infraction des DPI, Informations …"
+    }
+  ]
+}

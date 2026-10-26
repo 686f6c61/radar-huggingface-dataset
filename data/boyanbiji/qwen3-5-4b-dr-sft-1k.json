@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "boyanbiji/Qwen3.5-4B-DR-SFT-1k",
+  "slug": "boyanbiji-qwen3-5-4b-dr-sft-1k",
+  "author": "boyanbiji",
+  "url": "https://huggingface.co/boyanbiji/Qwen3.5-4B-DR-SFT-1k",
+  "created_at": "2026-10-25T22:09:53.000Z",
+  "updated_at": "2026-10-25T22:22:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "deep-research",
+    "sft",
+    "tool-use",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 9091428518,
+  "storage_human": "9.1 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "boyanbiji (Boyan Li) - Hugging Face",
+      "url": "https://huggingface.co/boyanbiji",
+      "snippet": "User profile of Boyan Li on Hugging Face"
+    },
+    {
+      "title": "boyanbiji (Boyan Li) - Hugging Face",
+      "url": "https://huggingface.co/boyanbiji/models",
+      "snippet": "Recent Activity updated a datasetabout 2 months ago boyanbiji/dr-tulu-long-form-sft-data published a datasetabout 2 months ago boyanbiji/dr-tulu-long-form-sft-data updated a model3 months ago boyanbiji/qwen3-1.7B-base-countdown-opd View all activity"
+    },
+    {
+      "title": "qwen3.5:4b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:4b",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    },
+    {
+      "title": "Qwen3.5-4B - VRAM, Specs & Benchmarks",
+      "url": "https://apxml.com/models/qwen35-4b",
+      "snippet": "Qwen3.5-4B specifications, context length, benchmark scores, and GPU VRAM requirements across quantizations."
+    },
+    {
+      "title": "GitHub - ABDtmx/Qwen3.5: Qwen3.5 is the large language model series ...",
+      "url": "https://github.com/ABDtmx/Qwen3.5",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on trillions of multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    }
+  ]
+}

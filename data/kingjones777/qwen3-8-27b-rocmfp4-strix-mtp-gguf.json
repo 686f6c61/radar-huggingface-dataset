@@ -5,7 +5,7 @@
   "author": "kingjones777",
   "url": "https://huggingface.co/kingjones777/Qwen3.8-27B-ROCmFP4-STRIX-MTP-GGUF",
   "created_at": "2026-08-14T19:54:32.000Z",
-  "updated_at": "2026-09-01T20:56:17.000Z",
+  "updated_at": "2026-10-25T21:32:37.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -38,12 +38,12 @@
     "conversational"
   ],
   "likes": 39,
-  "downloads_30d": 8582,
+  "downloads_30d": 8232,
   "trending_score": 8,
   "parameters": 26895998464,
   "parameters_human": "26.90B",
-  "storage_bytes": 105484609984,
-  "storage_human": "105.5 GB",
+  "storage_bytes": 120866088384,
+  "storage_human": "120.9 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"

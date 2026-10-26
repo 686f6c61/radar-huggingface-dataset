@@ -5,7 +5,7 @@
   "author": "AMAImedia",
   "url": "https://huggingface.co/AMAImedia/GLM-5.3-Flash",
   "created_at": "2026-08-27T02:00:11.000Z",
-  "updated_at": "2026-10-13T02:12:37.000Z",
+  "updated_at": "2026-10-25T06:34:46.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -145,7 +145,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 2627,
+  "downloads_30d": 2600,
   "trending_score": 0,
   "parameters": 321323031390,
   "parameters_human": "321.32B",

@@ -5,7 +5,7 @@
   "author": "owensong",
   "url": "https://huggingface.co/owensong/Inflect-Mini-v3-Preview",
   "created_at": "2026-10-23T03:17:17.000Z",
-  "updated_at": "2026-10-24T18:35:33.000Z",
+  "updated_at": "2026-10-25T12:47:23.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-to-speech",
@@ -16,13 +16,12 @@
   "tags": [
     "inflect",
     "preview",
-    "gated-beta",
     "multi-speaker",
     "text-to-speech",
     "en",
     "region:us"
   ],
-  "likes": 5,
+  "likes": 7,
   "downloads_30d": 28,
   "trending_score": 0,
   "parameters": null,

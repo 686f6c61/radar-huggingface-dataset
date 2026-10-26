@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/ThinkingCap-Nemotron-3.5-Lightning-30B-A3B-abliterated-i1-GGUF",
   "created_at": "2026-10-24T22:02:46.000Z",
-  "updated_at": "2026-10-24T23:22:52.000Z",
+  "updated_at": "2026-10-25T06:09:59.000Z",
   "license": "openmdw-1.1",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -36,12 +36,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 234,
   "trending_score": 0,
   "parameters": 32913266240,
   "parameters_human": "32.91B",
-  "storage_bytes": 60458290496,
-  "storage_human": "60.5 GB",
+  "storage_bytes": 310621164160,
+  "storage_human": "310.6 GB",
   "base_model": "IstroSec/ThinkingCap-Nemotron-3.5-Lightning-30B-A3B-abliterated",
   "formats": [
     "gguf"

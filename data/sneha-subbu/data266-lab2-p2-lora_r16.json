@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Sneha-subbu/data266-lab2-p2-lora_r16",
+  "slug": "sneha-subbu-data266-lab2-p2-lora_r16",
+  "author": "Sneha-subbu",
+  "url": "https://huggingface.co/Sneha-subbu/data266-lab2-p2-lora_r16",
+  "created_at": "2026-10-25T19:23:32.000Z",
+  "updated_at": "2026-10-25T19:23:38.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "stable-diffusion",
+    "dataset:reach-vb/pokemon-blip-captions",
+    "base_model:stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "base_model:adapter:stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12792952,
+  "storage_human": "13 MB",
+  "base_model": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "data266-lab2-charvee-018370859-lora-r16 - Hugging Face",
+      "url": "https://huggingface.co/Charvee/data266-lab2-charvee-018370859-lora-r16",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Charvee/data266-lab2-charvee-018370859-lora-r16 at main",
+      "url": "https://huggingface.co/Charvee/data266-lab2-charvee-018370859-lora-r16/tree/main",
+      "snippet": "Instructions to use Charvee/data266-lab2-charvee-018370859-lora-r16 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Sneha Face - Sfw FLUX - Free AI LORA | TensorHub Art",
+      "url": "https://tensorhub.art/models/880308041054960544",
+      "snippet": "Download Sneha Face - free LORA FLUX.1 AI model on TENSORHUB ART. FLUX, TEENAGE GIRL, INDIAN. By Desi Sisters"
+    },
+    {
+      "title": "sneha - 1 EARLY ACCESS - Free AI LORA | Tensor.Art",
+      "url": "https://tensor.art/models/737713860888366705",
+      "snippet": "Download sneha - free LORA SD 1.5 AI model on TENSOR. EARLY ACCESS. By ai_developer"
+    },
+    {
+      "title": "LoRA AI Models (18,188) | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 18,188 AI models tagged \"LoRA\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    }
+  ]
+}

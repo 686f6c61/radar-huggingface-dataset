@@ -5,7 +5,7 @@
   "author": "chairus",
   "url": "https://huggingface.co/chairus/tabis-sakha-slm",
   "created_at": "2026-10-23T23:17:18.000Z",
-  "updated_at": "2026-10-24T02:33:45.000Z",
+  "updated_at": "2026-10-25T09:23:32.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -35,7 +35,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 1050,
+  "downloads_30d": 1094,
   "trending_score": 0,
   "parameters": 752393024,
   "parameters_human": "752.4M",

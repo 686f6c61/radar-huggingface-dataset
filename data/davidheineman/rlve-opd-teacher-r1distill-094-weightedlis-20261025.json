@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "davidheineman/rlve-opd-teacher-R1Distill-094-WeightedLIS-20261025",
+  "slug": "davidheineman-rlve-opd-teacher-r1distill-094-weightedlis-20261025",
+  "author": "davidheineman",
+  "url": "https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-094-WeightedLIS-20261025",
+  "created_at": "2026-10-25T19:03:21.000Z",
+  "updated_at": "2026-10-25T19:04:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "rlve",
+    "data-scaling",
+    "opd-teacher",
+    "conversational",
+    "base_model:deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "base_model:finetune:deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 3554214720,
+  "storage_human": "3.6 GB",
+  "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/?gl=FR&hl=fr",
+      "snippet": "Profitez des vidéos et de la musique que vous aimez, mettez en ligne des contenus originaux, et partagez-les avec vos amis, vos …"
+    },
+    {
+      "title": "YouTube TV Help",
+      "url": "https://support.google.com/youtubetv/?hl=en",
+      "snippet": "Official YouTube TV Help Center where you can find tips and tutorials on using YouTube TV and other answers to frequently asked …"
+    },
+    {
+      "title": "301 Moved - Google Help",
+      "url": "https://support.google.com/a/answer/9000768?hl=en",
+      "snippet": "301 Moved 301 Moved The document has moved here."
+    },
+    {
+      "title": "如何在中国大陆用「合法」的方式观看到youtube上面的「有价值」的 …",
+      "url": "https://www.zhihu.com/question/1903231775980913051",
+      "snippet": "YouTube 将自动为 添加翻译后的中文字幕，这一功能有效解决了语言障碍问题。 当你向下浏览时，部分 会标注相关信息。 例如，博 …"
+    },
+    {
+      "title": "YouTube公司 - 知乎",
+      "url": "https://www.zhihu.com/topic/19550532/hot",
+      "snippet": "YouTube，全球最大的视频分享网站，早期公司总部位于加利福尼亚州的圣布里诺。公司由华裔美籍华人陈士骏等人创立并于2005年2 …"
+    }
+  ]
+}

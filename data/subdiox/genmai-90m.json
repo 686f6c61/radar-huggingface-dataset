@@ -27,12 +27,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 18,
+  "downloads_30d": 546,
   "trending_score": 0,
   "parameters": 90450432,
   "parameters_human": "90.5M",
-  "storage_bytes": 535297557,
-  "storage_human": "535 MB",
+  "storage_bytes": 444037042,
+  "storage_human": "444 MB",
   "base_model": "Miwa-Keita/zenz-v3.2-small-gguf",
   "formats": [
     "safetensors"

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "mliu444/gemma-4-12b-it-qat-w4a16-dequant-bf16",
+  "slug": "mliu444-gemma-4-12b-it-qat-w4a16-dequant-bf16",
+  "author": "mliu444",
+  "url": "https://huggingface.co/mliu444/gemma-4-12b-it-qat-w4a16-dequant-bf16",
+  "created_at": "2026-10-25T19:20:12.000Z",
+  "updated_at": "2026-10-25T19:22:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4_unified",
+    "image-text-to-text",
+    "gemma4",
+    "dequantized",
+    "qat",
+    "conversational",
+    "base_model:google/gemma-4-12B-it-qat-w4a16-ct",
+    "base_model:finetune:google/gemma-4-12B-it-qat-w4a16-ct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11959730224,
+  "parameters_human": "11.96B",
+  "storage_bytes": 23951717954,
+  "storage_human": "24.0 GB",
+  "base_model": "google/gemma-4-12B-it-qat-w4a16-ct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tag: slave, popular » nhentai",
+      "url": "https://nhentai.net/tag/slave/?sort=popular",
+      "snippet": "Read 6,551 galleries with tag slave on nhentai, a hentai doujinshi and manga reader."
+    },
+    {
+      "title": "Slave Hentai Porn Videos | ️ CartoonPorn.PRO",
+      "url": "https://cartoonporn.pro/tags/slave/",
+      "snippet": "Stream varieties of juicy slave cartoon porn, slave hentai porn, and other hot videos with slave good quality. Watch ladies riding …"
+    },
+    {
+      "title": "Slave (female) - Hentai Manga et Doujin XXX - 3Hentai",
+      "url": "https://fr.3hentai.net/tags/slave-female",
+      "snippet": "Trouver des hentai, mangas xxx et doujins Slave (female) parmi plus de 2595 en ligne, gratuitement dans la plus grande …"
+    },
+    {
+      "title": "Archives des Slave - Histoire D'Hentai",
+      "url": "https://hhentai.fr/manga-genre/slave/",
+      "snippet": "Oct 2, 2026 · Le genre slave explore les dynamiques de domination et soumission totale dans l'univers du hentai, mettant en scène …"
+    },
+    {
+      "title": "hentai-slave videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/tags/hentai-slave",
+      "snippet": "My sex slave loves that I fuck her throat like it's another ass 11 min Sado Hentai - 44.1k Views - 1080p"
+    }
+  ]
+}

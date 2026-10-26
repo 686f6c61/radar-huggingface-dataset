@@ -5,7 +5,7 @@
   "author": "LSW142857",
   "url": "https://huggingface.co/LSW142857/grpo-qwen35-9b-nvidia-nt31",
   "created_at": "2026-10-22T04:34:39.000Z",
-  "updated_at": "2026-10-24T23:17:24.000Z",
+  "updated_at": "2026-10-26T02:44:17.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 135250327438,
-  "storage_human": "135.3 GB",
+  "storage_bytes": 192198816438,
+  "storage_human": "192.2 GB",
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"

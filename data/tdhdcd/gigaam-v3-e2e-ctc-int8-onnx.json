@@ -5,15 +5,17 @@
   "author": "Tdhdcd",
   "url": "https://huggingface.co/Tdhdcd/gigaam-v3-e2e-ctc-int8-onnx",
   "created_at": "2026-10-23T09:33:07.000Z",
-  "updated_at": "2026-10-25T03:02:45.000Z",
+  "updated_at": "2026-10-25T12:53:25.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "automatic-speech-recognition",
-  "library": null,
+  "library": "litert",
   "languages": [
     "ru"
   ],
   "tags": [
+    "litert",
+    "tflite",
     "onnx",
     "gigaam",
     "ctc",
@@ -26,8 +28,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1001017043,
-  "storage_human": "1.0 GB",
+  "storage_bytes": 1466321306,
+  "storage_human": "1.5 GB",
   "base_model": null,
   "formats": [
     "onnx"

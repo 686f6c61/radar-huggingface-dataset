@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Agnes-AI/Agnes-3.0-Qwen",
+  "slug": "agnes-ai-agnes-3-0-qwen",
+  "author": "Agnes-AI",
+  "url": "https://huggingface.co/Agnes-AI/Agnes-3.0-Qwen",
+  "created_at": "2026-10-10T14:27:15.000Z",
+  "updated_at": "2026-10-11T03:02:09.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen4_exp",
+    "agnes-ai",
+    "reasoning",
+    "multimodal",
+    "long-context",
+    "agentic",
+    "api",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:finetune:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 20,
+  "downloads_30d": 352,
+  "trending_score": 13,
+  "parameters": 179999981459,
+  "parameters_human": "180.00B",
+  "storage_bytes": 360013205033,
+  "storage_human": "360.0 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Agnès (prénom) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Agn%C3%A8s_(pr%C3%A9nom)",
+      "snippet": "Agnès, du latin tardif Agnes, formé sur l'adjectif grec Ἁγνή / agnế, féminin de ἁγνός / agnós, d'abord au sens de « sacré » et …"
+    },
+    {
+      "title": "Agnes AI | Free Omni-Modal AI API, World-Class AI Models & AI …",
+      "url": "https://agnes-ai.com/campaign",
+      "snippet": "Explore the New Agnes Models A complete Agnes experience for everyday users: search, chat, creation, video, and productivity …"
+    },
+    {
+      "title": "Prénom Agnès (fille) : signification, origine, caractère, sainte, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/agnes/prenom-9346",
+      "snippet": "Quelle est l'origine du prénom Agnès ? Agnes est un prénom latin dérivé du grec. Agnès peut aussi être considéré comme un …"
+    },
+    {
+      "title": "agnès b. | collections femme, homme, enfant - agnes b",
+      "url": "https://www.agnesb.com/fr-eu",
+      "snippet": "L'univers agnès b. : des vêtements authentiques, chics et pensés pour durer. Depuis 1973, une allure libre qui exprime la …"
+    },
+    {
+      "title": "Agnes (singer) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Agnes_(singer)",
+      "snippet": "Agnes Emilia Carlsson (born 6 March 1988), known mononymously as Agnes, is a Swedish singer-songwriter. She rose to fame as …"
+    }
+  ]
+}

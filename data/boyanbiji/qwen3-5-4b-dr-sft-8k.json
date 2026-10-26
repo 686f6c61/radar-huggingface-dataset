@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "boyanbiji/Qwen3.5-4B-DR-SFT-8k",
+  "slug": "boyanbiji-qwen3-5-4b-dr-sft-8k",
+  "author": "boyanbiji",
+  "url": "https://huggingface.co/boyanbiji/Qwen3.5-4B-DR-SFT-8k",
+  "created_at": "2026-10-25T22:19:37.000Z",
+  "updated_at": "2026-10-25T22:22:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "deep-research",
+    "sft",
+    "tool-use",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 9091428518,
+  "storage_human": "9.1 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Générateur de Mockup T-Shirt Manches Longues Gratuit",
+      "url": "https://freemockup.app/fr/long-sleeve-shirt-mockup-generator/",
+      "snippet": "Mettez votre design sur un vrai mockup de t-shirt à manches longues, en 6 couleurs. PNG 1x gratuit — sans filigrane, sans …"
+    },
+    {
+      "title": "Long sleeve t-shirt mockup – Mockup Designer",
+      "url": "https://mockup-designer.com/products/long-sleeve-t-shirt-mockup",
+      "snippet": "La maquette de t-shirt à manches longues est idéale pour donner un look élégant et confortable à tes créations. En quelques …"
+    },
+    {
+      "title": "Générateur gratuit de maquettes de t-shirts à manches longues",
+      "url": "https://www.cloz-design.com/fr/tools/long-sleeve-shirt-mockup-generator",
+      "snippet": "Personnalisez en 3D un T-shirt à manches longues et col rond, prévisualisez les visuels sur la poitrine et les manches, testez les …"
+    },
+    {
+      "title": "PSD sur Mockup teeshirt blanc, Modèles PSD gratuits de haute …",
+      "url": "https://www.magnific.com/fr/psd/mockup-teeshirt-blanc",
+      "snippet": "Trouvez et téléchargez les PSD Mockup teeshirt blanc les plus populaires sur Magnific Gratuit pour un usage commercial Modèles …"
+    },
+    {
+      "title": "T Shirt Blanc Manche Longue Images - Freepik",
+      "url": "https://fr.freepik.com/photos-vecteurs-libre/t-shirt-blanc-manche-longue",
+      "snippet": "Trouvez/téléchargez des ressources graphiques T Shirt Blanc Manche Longue gratuites. Usage commercial gratis Images haute qualité"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "smile-forge",
   "url": "https://huggingface.co/smile-forge/moss-image-onnx",
   "created_at": "2026-10-25T11:19:04.000Z",
-  "updated_at": "2026-10-25T11:19:55.000Z",
+  "updated_at": "2026-10-25T15:18:46.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-image",
@@ -27,7 +27,7 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 6872384057,
+  "storage_bytes": 6873623780,
   "storage_human": "6.9 GB",
   "base_model": "OpenMOSS-Team/MOSS-Image-SFT",
   "formats": [

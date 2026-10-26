@@ -5,7 +5,7 @@
   "author": "AMAImedia",
   "url": "https://huggingface.co/AMAImedia/Qwen3.6-35B-A3B-occamy-1.0-BF16-GGUF-MTP",
   "created_at": "2026-09-17T19:00:06.000Z",
-  "updated_at": "2026-10-11T11:04:02.000Z",
+  "updated_at": "2026-10-25T06:34:13.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -262,7 +262,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 834,
+  "downloads_30d": 829,
   "trending_score": 0,
   "parameters": 35107181936,
   "parameters_human": "35.11B",

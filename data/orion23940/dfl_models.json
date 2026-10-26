@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Orion23940/DFL_Models",
+  "slug": "orion23940-dfl_models",
+  "author": "Orion23940",
+  "url": "https://huggingface.co/Orion23940/DFL_Models",
+  "created_at": "2026-05-18T06:07:14.000Z",
+  "updated_at": "2026-10-25T22:45:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 45307989981,
+  "storage_human": "45.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Orion23940/DFL_Models · Hugging Face",
+      "url": "https://huggingface.co/Orion23940/DFL_Models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Orion23940 (Orion) - Hugging Face",
+      "url": "https://huggingface.co/Orion23940",
+      "snippet": "User profile of Orion on Hugging Face Viewer • Updated 24 days ago • 26.9k • 75"
+    },
+    {
+      "title": "DFL_Models: Model Details, Context & Pricing | Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/hf-orion23940-dfl-models",
+      "snippet": "Model card indexed from Hugging Face. Context window Not listed Last source check 8/15/2026, 1:44:09 PM Input / million tokens Not listed Output / million tokens Not listed Orion23940 Source record ↗ Official link ↗"
+    },
+    {
+      "title": "GitHub - pbparthas/orion-ai-models: Hosting AI models used in Orion",
+      "url": "https://github.com/pbparthas/orion-ai-models",
+      "snippet": "AI model files for Orion - AI-Powered Notification Intelligence This repository hosts the pre-trained language models used by Orion for local, on-device notification classification and intelligence."
+    },
+    {
+      "title": "v1_772 - Kaggle",
+      "url": "https://www.kaggle.com/datasets/zzy990106/dfl-models",
+      "snippet": "Discover what actually works in AI. Join millions of builders, researchers, and labs evaluating agents, models, and frontier technology through crowdsourced benchmarks, competitions, and hackathons."
+    }
+  ]
+}

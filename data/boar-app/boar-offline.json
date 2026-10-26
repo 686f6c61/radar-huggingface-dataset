@@ -5,7 +5,7 @@
   "author": "BOAR-App",
   "url": "https://huggingface.co/BOAR-App/boar-offline",
   "created_at": "2026-10-22T16:29:23.000Z",
-  "updated_at": "2026-10-22T16:34:14.000Z",
+  "updated_at": "2026-10-25T04:34:57.000Z",
   "license": "mixed",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 5504010669,
-  "storage_human": "5.5 GB",
+  "storage_bytes": 11007827958,
+  "storage_human": "11.0 GB",
   "base_model": "Qwen/Qwen3-4B-Instruct-2507",
   "formats": [
     "gguf"

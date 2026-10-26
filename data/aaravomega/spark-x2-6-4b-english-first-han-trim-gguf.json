@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Aaravomega/spark-x2.6-4b-english-first-han-trim-gguf",
+  "slug": "aaravomega-spark-x2-6-4b-english-first-han-trim-gguf",
+  "author": "Aaravomega",
+  "url": "https://huggingface.co/Aaravomega/spark-x2.6-4b-english-first-han-trim-gguf",
+  "created_at": "2026-10-25T22:27:12.000Z",
+  "updated_at": "2026-10-26T01:42:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "spark",
+    "text-generation",
+    "lm-studio",
+    "base_model:XHToken/Spark-X2.6-4B-GGUF",
+    "base_model:quantized:XHToken/Spark-X2.6-4B-GGUF",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4273195520,
+  "parameters_human": "4.27B",
+  "storage_bytes": 3274689984,
+  "storage_human": "3.3 GB",
+  "base_model": "XHToken/Spark-X2.6-4B-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

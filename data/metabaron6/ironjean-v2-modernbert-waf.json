@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "Metabaron6/IronJean-v2-ModernBERT-WAF",
+  "slug": "metabaron6-ironjean-v2-modernbert-waf",
+  "author": "Metabaron6",
+  "url": "https://huggingface.co/Metabaron6/IronJean-v2-ModernBERT-WAF",
+  "created_at": "2026-10-11T21:14:52.000Z",
+  "updated_at": "2026-10-25T20:10:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "modernbert",
+    "security",
+    "waf",
+    "cybersecurity",
+    "web-application-firewall",
+    "text-classification",
+    "custom_code",
+    "en",
+    "base_model:answerdotai/ModernBERT-base",
+    "base_model:quantized:answerdotai/ModernBERT-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 203,
+  "trending_score": 0,
+  "parameters": 149015810,
+  "parameters_human": "149.0M",
+  "storage_bytes": 5070368315,
+  "storage_human": "5.1 GB",
+  "base_model": "answerdotai/ModernBERT-base",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

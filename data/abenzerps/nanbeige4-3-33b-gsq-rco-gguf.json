@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "abenzerps/Nanbeige4.3-33B-GSQ-RCO-GGUF",
+  "slug": "abenzerps-nanbeige4-3-33b-gsq-rco-gguf",
+  "author": "abenzerps",
+  "url": "https://huggingface.co/abenzerps/Nanbeige4.3-33B-GSQ-RCO-GGUF",
+  "created_at": "2026-10-25T15:34:31.000Z",
+  "updated_at": "2026-10-25T16:57:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "gsq",
+    "rco",
+    "llama.cpp",
+    "quantized",
+    "reasoning",
+    "nanbeige",
+    "mixed-precision",
+    "512k",
+    "longcontext",
+    "en",
+    "zh",
+    "base_model:Nanbeige/Nanbeige4.3-33B",
+    "base_model:quantized:Nanbeige/Nanbeige4.3-33B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 18,
+  "downloads_30d": 0,
+  "trending_score": 17,
+  "parameters": 33118977024,
+  "parameters_human": "33.12B",
+  "storage_bytes": 100634403328,
+  "storage_human": "100.6 GB",
+  "base_model": "Nanbeige/Nanbeige4.3-33B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "افلام سكس مجانية وفيديوهات XXX - موقع افلام سكس",
+      "url": "https://ara.xhamster.com/",
+      "snippet": "افلام سكس مجانية وفيديوهات XXX حصرية هنا على xHamster. شاهد فوراً أكثر من 6 مليون فيديو نيك وهواة على أقوى موقع سكس!Read more"
+    },
+    {
+      "title": "'سكس' Search - XNXX.COM",
+      "url": "https://www.xnxx.com/search/%D8%B3%D9%83%D8%B3",
+      "snippet": "سكس مترجم سكس عربي سكس العرب - Arab Sex XXX 383.4k 97% 28min - 1080p Arabic Anal نيك طيز أمهات عرب ساخن سكس 29.3k 100% 13min - 1080p …"
+    },
+    {
+      "title": "أفلام سكس مجانية - فيديوهات إباحية HD من Ujizz",
+      "url": "https://www.ujizz.xxx/?hl=ar",
+      "snippet": "شاهد أفلام إباحية بجودة 4K مذهلة عبر Ujizz. استمتع بمكتبة ضخمة من فيديوهات السكس المحدثة يوميًا."
+    },
+    {
+      "title": "سكس العرب - سكس مترجم أفلام سكس نيك جنس اجنبي مترجم عربى - SEX AL ARAB",
+      "url": "https://sexalarab.com/",
+      "snippet": "موقع سكس العرب هو اكبر منصة عربية اباحية مهتمة بترجمة افلام السكس الاجنبية للعربية, يقدم لكم احدث و اخر الفديوهات و المقاطع الجنسية في عالم البورن من اشهر الشركات العالمية, برازرس, …"
+    },
+    {
+      "title": "فحل العرب - موقع افلام سكس عربي واجنبي مترجم",
+      "url": "https://fahlalarab.com/",
+      "snippet": "فحل العرب افضل موقع سكس شامل يقدم لكم افلام سكس عربي وافضل الفيديوهات السكس الاجنبي مترجم عربي , نيك خليجي ومصري وعراقي وايضا اشهر مقاطع البورن الترند xnxx..."
+    }
+  ]
+}

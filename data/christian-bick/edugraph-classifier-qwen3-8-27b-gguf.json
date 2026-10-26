@@ -5,7 +5,7 @@
   "author": "christian-bick",
   "url": "https://huggingface.co/christian-bick/EduGraph-Classifier-Qwen3.8-27B-GGUF",
   "created_at": "2026-10-05T23:46:58.000Z",
-  "updated_at": "2026-10-06T00:07:25.000Z",
+  "updated_at": "2026-10-25T17:32:01.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": 26895998464,
   "parameters_human": "26.90B",
-  "storage_bytes": 17478545824,
-  "storage_human": "17.5 GB",
+  "storage_bytes": 34025945888,
+  "storage_human": "34.0 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"

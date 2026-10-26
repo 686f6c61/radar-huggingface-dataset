@@ -5,7 +5,7 @@
   "author": "BERRAMOU",
   "url": "https://huggingface.co/BERRAMOU/camembert-math-classification",
   "created_at": "2026-08-26T22:28:11.000Z",
-  "updated_at": "2026-10-14T23:39:35.000Z",
+  "updated_at": "2026-10-25T17:27:26.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -24,12 +24,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 65,
+  "downloads_30d": 64,
   "trending_score": 0,
   "parameters": 110624259,
   "parameters_human": "110.6M",
-  "storage_bytes": 7080365141,
-  "storage_human": "7.1 GB",
+  "storage_bytes": 7965407453,
+  "storage_human": "8.0 GB",
   "base_model": "camembert-base",
   "formats": [
     "safetensors"

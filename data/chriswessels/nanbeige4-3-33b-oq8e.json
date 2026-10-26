@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "chriswessels/Nanbeige4.3-33B-oQ8e",
+  "slug": "chriswessels-nanbeige4-3-33b-oq8e",
+  "author": "chriswessels",
+  "url": "https://huggingface.co/chriswessels/Nanbeige4.3-33B-oQ8e",
+  "created_at": "2026-10-25T19:02:28.000Z",
+  "updated_at": "2026-10-25T19:34:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "llama",
+    "oq",
+    "quantized",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33118977024,
+  "parameters_human": "33.12B",
+  "storage_bytes": 35210990547,
+  "storage_human": "35.2 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

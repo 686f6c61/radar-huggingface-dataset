@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft5600-grpo3960-lora",
+  "slug": "uygarkurt-qwen2-5-0-5b-instruct-xlam-mixed-sft5600-grpo3960-lora",
+  "author": "uygarkurt",
+  "url": "https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft5600-grpo3960-lora",
+  "created_at": "2026-10-25T22:13:23.000Z",
+  "updated_at": "2026-10-25T22:13:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "transformers",
+    "tool-calling",
+    "sft",
+    "grpo",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:uygarkurt/xlam-tool-calling-mixed",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29062028,
+  "storage_human": "29 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Full Part, Babak Baru Dari Video Bokep Anak Kecil Yang Sedang Viral ...",
+      "url": "https://m.kaskus.co.id/thread/5a4c071aa09a3921188b456e/full-part-babak-baru-dari-video-bokep-anak-kecil-yang-sedang-viral/",
+      "snippet": "Video yang kabarnya sampai ada 5 part menurut dewakere adalah video sepasang suami istri atau kekasih yang memiliki kelaianan …"
+    },
+    {
+      "title": "Kumpulan Alamat Situs Video Bebas Blokir Lewat Hp 2022 | KASKUS",
+      "url": "https://m.kaskus.co.id/thread/5eab0b0368cc953c927ebef3/kumpulan-alamat-situs-video-bebas-blokir-lewat-hp-2022/",
+      "snippet": "Video \"gituan\" Dan terlarang melalui hp emang kadang susah dilakukan karena jika kita ingin download video seperti pada youtube …"
+    },
+    {
+      "title": "TKW Indonesia di Taiwan Ini Dirudapaksa Majikan, Videonya Jadi …",
+      "url": "https://m.kaskus.co.id/thread/57d670879a0951540a8b456e/tkw-indonesia-di-taiwan-ini-diperkosa-majikan-videonya-jadi-viral/",
+      "snippet": "Video di Youtube berisi adegan dugaan pelecehan seksual yang menimpa seorang tenaga kerja wanita (TKW) Indonesia di Taiwan …"
+    },
+    {
+      "title": "KASKUS - Berbagi Hobi, Berkomunitas",
+      "url": "https://m.kaskus.co.id/thread/5a5162f5582b2e79018b4567/alamat-link-video-viral-tante-vs-bocah-ngapaya--anak-kecil-dan-wanita-tua/",
+      "snippet": "Forum diskusi hobi, rumah ribuan komunitas dan pusat jual beli barang hobi di Indonesia."
+    },
+    {
+      "title": "Kenapa Open Bo Di Mi Chat Dan Media Sosial Lainnya, Marak Terjadi ...",
+      "url": "https://www.kaskus.co.id/thread/659b7de878efaa385d77ec11/kenapa-open-bo-di-mi-chat-dan-media-sosial-lainnya-marak-terjadi",
+      "snippet": "Apa Kabar, Agan dan Sista di KASKUS? Kali ini ane mau bahas fenomena yang lagi hits banget nih, yaitu Open BO di aplikasi …"
+    }
+  ]
+}

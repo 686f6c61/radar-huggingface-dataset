@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "hotocooo/lfm25-quant-research-checkpoints",
+  "slug": "hotocooo-lfm25-quant-research-checkpoints",
+  "author": "hotocooo",
+  "url": "https://huggingface.co/hotocooo/lfm25-quant-research-checkpoints",
+  "created_at": "2026-10-23T04:27:53.000Z",
+  "updated_at": "2026-10-25T23:14:23.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "quantization",
+    "gsq",
+    "gptq",
+    "trellis-quantization",
+    "qtip",
+    "research-checkpoints",
+    "private",
+    "base_model:DavidAU/LFM2.5-2.6B-Qwen3.8-Turbo-Brilliance-Power-X12-NEO-MAX-GGUF",
+    "base_model:finetune:DavidAU/LFM2.5-2.6B-Qwen3.8-Turbo-Brilliance-Power-X12-NEO-MAX-GGUF",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 384039773117,
+  "storage_human": "384.0 GB",
+  "base_model": "DavidAU/LFM2.5-2.6B-Qwen3.8-Turbo-Brilliance-Power-X12-NEO-MAX-GGUF, LiquidAI/LFM2.5-2.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Categories - EPORNER: HD Porn Tube",
+      "url": "https://www.eporner.com/cats/",
+      "snippet": "Free Full HD porn tube - HD quality videos and photos. Watch over 2,785,355 full length hd sex movies, download porn xxx videos, …"
+    },
+    {
+      "title": "Free Porn Videos - EPORNER",
+      "url": "https://www.eporner.com/cat/all/",
+      "snippet": "Watch Free Porn videos in HD quality on Eporner.com. We have 4,507,334 full length hd movies in our database available for free …"
+    },
+    {
+      "title": "Vidéos porno HD - Films haute définition complets | EPORNER",
+      "url": "https://fr.eporner.com/",
+      "snippet": "© 2026 Eporner.com is a service gratuit d'hébergement de vidéos pornographiques."
+    },
+    {
+      "title": "Browse Videos | Eporner",
+      "url": "https://eporner.xxx/videos/",
+      "snippet": "Eporner Home Undress Her AI Porn Videos Categories Pornstars Porn Reels Home Undress Her AI Porn Videos Categories …"
+    },
+    {
+      "title": "Eporner XXX - Free HD Porn Videos & XXX Movies",
+      "url": "https://eporner.xxx/",
+      "snippet": "Discover the best HD porn videos at Eporner XXX. Watch and download free XXX movies, high-quality adult content, and enjoy the …"
+    }
+  ]
+}

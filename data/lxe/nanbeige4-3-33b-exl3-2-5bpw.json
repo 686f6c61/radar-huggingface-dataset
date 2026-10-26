@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "lxe/Nanbeige4.3-33B-EXL3-2.5bpw",
+  "slug": "lxe-nanbeige4-3-33b-exl3-2-5bpw",
+  "author": "lxe",
+  "url": "https://huggingface.co/lxe/Nanbeige4.3-33B-EXL3-2.5bpw",
+  "created_at": "2026-10-25T19:01:40.000Z",
+  "updated_at": "2026-10-25T20:57:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "exllamav3",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "exllamav3",
+    "safetensors",
+    "llama",
+    "nanbeige",
+    "dense",
+    "reasoning",
+    "quantized",
+    "exl3",
+    "trellis",
+    "2.5bpw",
+    "rtx-5090",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Nanbeige/Nanbeige4.3-33B",
+    "base_model:quantized:Nanbeige/Nanbeige4.3-33B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7201338368,
+  "parameters_human": "7.20B",
+  "storage_bytes": 14424082338,
+  "storage_human": "14.4 GB",
+  "base_model": "Nanbeige/Nanbeige4.3-33B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Play with Us! Episode 1 (18+) - Newgrounds.com",
+      "url": "https://www.newgrounds.com/portal/view/672374",
+      "snippet": "Mar 25, 2016 · Play with Us! Episode 1 (18+) Warning: Adult Content! This submission contains graphic content and is not suitable …"
+    },
+    {
+      "title": "Sex Game Novels & Books - WebNovel",
+      "url": "https://www.webnovel.com/search?keywords=sex+game",
+      "snippet": "Browse WebNovel to online read 1000+ sex game stories. We provide the most popular sex game light novel like: supremacy …"
+    },
+    {
+      "title": "JoyFI Games – Creating Adult Visual Novels",
+      "url": "https://www.joyfigames.com/",
+      "snippet": "Our Games Hardenville Adult Visual Novel Male Protagonist Early Access Playable on Windows, Mac, Linux and Android Only for …"
+    },
+    {
+      "title": "Your 10 Favorite Adult Visual Novels : r/AVN_Lovers - Reddit",
+      "url": "https://www.reddit.com/r/AVN_Lovers/comments/v1xqpr/your_10_favorite_adult_visual_novels/",
+      "snippet": "Here are the games I’ve played that I liked enough to keep, in no particular order. (If ur fav isn't here, don't take it personal, there are …"
+    },
+    {
+      "title": "Naughty Narratives — Creating steamy adult visual novels",
+      "url": "https://www.patreon.com/cw/NaughtyNarrativesGames",
+      "snippet": "Here, we create adult visual novels that aren’t just games, but experiences—ones that leave you wanting more. Your support allows …"
+    }
+  ]
+}

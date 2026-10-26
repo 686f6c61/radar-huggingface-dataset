@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/rewrite2-27b-bf16-i1-GGUF",
   "created_at": "2026-10-25T17:12:50.000Z",
-  "updated_at": "2026-10-25T19:08:36.000Z",
+  "updated_at": "2026-10-25T21:00:06.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -34,8 +34,8 @@
   "trending_score": 0,
   "parameters": 26895998464,
   "parameters_human": "26.90B",
-  "storage_bytes": 165497452352,
-  "storage_human": "165.5 GB",
+  "storage_bytes": 300342334272,
+  "storage_human": "300.3 GB",
   "base_model": "aikexue170/rewrite2-27b-bf16",
   "formats": [
     "gguf"

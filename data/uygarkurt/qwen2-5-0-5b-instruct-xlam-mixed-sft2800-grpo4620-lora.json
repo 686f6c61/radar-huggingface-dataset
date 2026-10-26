@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft2800-grpo4620-lora",
+  "slug": "uygarkurt-qwen2-5-0-5b-instruct-xlam-mixed-sft2800-grpo4620-lora",
+  "author": "uygarkurt",
+  "url": "https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft2800-grpo4620-lora",
+  "created_at": "2026-10-25T22:14:45.000Z",
+  "updated_at": "2026-10-25T22:14:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "transformers",
+    "tool-calling",
+    "sft",
+    "grpo",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:uygarkurt/xlam-tool-calling-mixed",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29062028,
+  "storage_human": "29 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BrattySis Porn Videos: XXX Hot Free Sex brattysis.com | xHamster",
+      "url": "https://xhamster.com/channels/brattysis",
+      "snippet": "Free BrattySis porn videos from brattysis.com. Discover BrattySis sex videos featuring porn stars fucking in XXX scenes, including …"
+    },
+    {
+      "title": "'BrattySis' Search - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/?k=BrattySis+",
+      "snippet": "BrattySis Marina Gold Accidentally Seduces Stepbrother during Line Rehearsal - S28:E5 35 min Bratty Sis - 2.2M Views -"
+    },
+    {
+      "title": "BrattySis - Spoiled and Bratty Sis Who Want It Now",
+      "url": "https://brattyseries.com/",
+      "snippet": "When Bratty Sisters want it now, they take it. BrattySis pushes taboo roleplay to the edge with raw, uncensored scenes. Watch Full …"
+    },
+    {
+      "title": "Bratty Sis Porn Videos - xHamster",
+      "url": "https://xhamster.com/search/bratty+sis",
+      "snippet": "Watch bratty sis porn videos. Explore tons of XXX movies with sex scenes in 2026 on xHamster!"
+    },
+    {
+      "title": "Bratty Sis – Vidéos Porno | Pornhub.com",
+      "url": "https://fr.pornhub.com/video/search?search=bratty+sis",
+      "snippet": "Regarde les vidéos porno de Bratty Sis gratuitement, ici sur Pornhub.com. Découvre la collection plus importante de films et de clips …"
+    }
+  ]
+}

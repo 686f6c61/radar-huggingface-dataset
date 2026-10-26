@@ -5,7 +5,7 @@
   "author": "matheus-ciro-tcc",
   "url": "https://huggingface.co/matheus-ciro-tcc/qwen35-2b-triagem-medica-final",
   "created_at": "2026-10-25T01:09:43.000Z",
-  "updated_at": "2026-10-25T01:09:56.000Z",
+  "updated_at": "2026-10-25T21:37:42.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 10,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

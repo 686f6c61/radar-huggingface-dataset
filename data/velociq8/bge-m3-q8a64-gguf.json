@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "VelociQ8/bge-m3-Q8A64-GGUF",
+  "slug": "velociq8-bge-m3-q8a64-gguf",
+  "author": "VelociQ8",
+  "url": "https://huggingface.co/VelociQ8/bge-m3-Q8A64-GGUF",
+  "created_at": "2026-10-21T16:03:06.000Z",
+  "updated_at": "2026-10-25T22:45:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "velociq8",
+    "q8a64",
+    "cpu",
+    "embeddings",
+    "sentence-similarity",
+    "arm64",
+    "aarch64",
+    "x86_64",
+    "8-bit",
+    "quantized",
+    "retrieval",
+    "semantic-search",
+    "rag",
+    "feature-extraction",
+    "multilingual",
+    "arxiv:2402.03216",
+    "base_model:BAAI/bge-m3",
+    "base_model:quantized:BAAI/bge-m3",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 351,
+  "trending_score": 0,
+  "parameters": 865119008,
+  "parameters_human": "865.1M",
+  "storage_bytes": 2332024633,
+  "storage_human": "2.3 GB",
+  "base_model": "BAAI/bge-m3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Environmental Anthropology MSc | Prospective Students Graduate - UCL",
+      "url": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/environmental-anthropology-msc-2026",
+      "snippet": "The Environmental Anthropology MSc will teach you the research and analytical skills essential to addressing global challenges of …"
+    },
+    {
+      "title": "Environmental Anthropology MSc | Study at UCL",
+      "url": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/environmental-anthropology-msc",
+      "snippet": "The Environmental Anthropology MSc will teach you the research and analytical skills essential to addressing global challenges of …"
+    },
+    {
+      "title": "Environmental Anthropology | UCL (University College London) | UCAS",
+      "url": "https://www.ucas.com/explore/courses/5fe78e39-cf2a-47c8-903c-92fd2fb011cd/course",
+      "snippet": "The MSc in Environmental Anthropology integrates natural and social science approaches to address issues of sustainability and …"
+    },
+    {
+      "title": "MSc Environmental Anthropology at UCL (University College London) …",
+      "url": "https://www.thecompleteuniversityguide.co.uk/courses/details/msc-environmental-anthropology/57683526",
+      "snippet": "Aug 28, 2026 · Find course details for MSc Environmental Anthropology at UCL (University College London) including subject …"
+    },
+    {
+      "title": "MSc Environmental Anthropology 12 months Postgraduate Program By UCL ...",
+      "url": "https://www.topuniversities.com/universities/ucl/postgrad/msc-environmental-anthropology",
+      "snippet": "Sep 29, 2025 · Upon successful completion of 180 credits, you will be awarded a MSc in Anthropology, Environment and …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "giakhuyendihoc",
   "url": "https://huggingface.co/giakhuyendihoc/task-focus-ablations",
   "created_at": "2026-10-06T07:45:35.000Z",
-  "updated_at": "2026-10-25T02:13:36.000Z",
+  "updated_at": "2026-10-25T22:03:34.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 120060376188,
-  "storage_human": "120.1 GB",
+  "storage_bytes": 135078105050,
+  "storage_human": "135.1 GB",
   "base_model": null,
   "formats": [
     "safetensors"

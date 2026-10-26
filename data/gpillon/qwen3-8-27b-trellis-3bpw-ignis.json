@@ -5,7 +5,7 @@
   "author": "gpillon",
   "url": "https://huggingface.co/gpillon/Qwen3.8-27B-trellis-3bpw-ignis",
   "created_at": "2026-10-23T14:55:20.000Z",
-  "updated_at": "2026-10-24T15:42:43.000Z",
+  "updated_at": "2026-10-25T04:08:56.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

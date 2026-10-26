@@ -5,7 +5,7 @@
   "author": "Microck",
   "url": "https://huggingface.co/Microck/DiskSage-0.8B-GGUF",
   "created_at": "2026-10-24T01:54:35.000Z",
-  "updated_at": "2026-10-24T16:16:32.000Z",
+  "updated_at": "2026-10-25T11:45:58.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -33,12 +33,12 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 39,
+  "downloads_30d": 231,
   "trending_score": 0,
   "parameters": 752393024,
   "parameters_human": "752.4M",
-  "storage_bytes": 1587890976,
-  "storage_human": "1.6 GB",
+  "storage_bytes": 2117187968,
+  "storage_human": "2.1 GB",
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "gguf"

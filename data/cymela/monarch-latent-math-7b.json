@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Cymela/Monarch-Latent-Math-7B",
+  "slug": "cymela-monarch-latent-math-7b",
+  "author": "Cymela",
+  "url": "https://huggingface.co/Cymela/Monarch-Latent-Math-7B",
+  "created_at": "2026-10-25T06:17:24.000Z",
+  "updated_at": "2026-10-25T20:09:40.000Z",
+  "license": "cml-open-1.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "math",
+    "latent-reasoning",
+    "olmoe",
+    "base_model:allenai/OLMoE-1B-7B-0125-Instruct",
+    "base_model:finetune:allenai/OLMoE-1B-7B-0125-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 50352128,
+  "parameters_human": "50.4M",
+  "storage_bytes": 201426856,
+  "storage_human": "201 MB",
+  "base_model": "allenai/OLMoE-1B-7B-0125-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Windy: Wind map & weather forecast",
+      "url": "https://www.windy.com/",
+      "snippet": "Weather radar, wind and waves forecast for kiters, surfers, paragliders, pilots, sailors and anyone else. Worldwide animated weather …"
+    },
+    {
+      "title": "What timezone is used at Windy? - Windy Community",
+      "url": "https://community.windy.com/topic/5/what-timezone-is-used-at-windy",
+      "snippet": "Sep 22, 2015 · Timeline bar at the bottom of screen Windy uses local time of your computer. In the detail of any location (when you …"
+    },
+    {
+      "title": "Windy Offers Air Sounding Forecast",
+      "url": "https://community.windy.com/topic/7820/windy-offers-air-sounding-forecast",
+      "snippet": "Feb 21, 2019 · Air sounding, sounding forecast or skew diagram is here! Yes, there are plenty of names for it. :) What does it even …"
+    },
+    {
+      "title": "Windy: Cámaras web - Valparaíso › Oeste: Aeródromo Rodelillo",
+      "url": "https://www.windy.com/es/webcams/1461540185",
+      "snippet": "Weather radar, wind and waves forecast for kiters, surfers, paragliders, pilots, sailors and anyone else. Worldwide animated weather …"
+    },
+    {
+      "title": "Sign In – Account – Windy.com",
+      "url": "https://account.windy.com/profile",
+      "snippet": "Sign in with Apple Sign in with Google Sign in with Facebook"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "TigerFan69/Krea-2-Cam-v1",
+  "slug": "tigerfan69-krea-2-cam-v1",
+  "author": "TigerFan69",
+  "url": "https://huggingface.co/TigerFan69/Krea-2-Cam-v1",
+  "created_at": "2026-10-25T22:10:15.000Z",
+  "updated_at": "2026-10-25T22:26:01.000Z",
+  "license": "krea-2-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "lora",
+    "krea2",
+    "character",
+    "text-to-image",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 116972333,
+  "storage_human": "117 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TigerFan69/Krea-2-Cam-v1 · Hugging Face",
+      "url": "https://huggingface.co/TigerFan69/Krea-2-Cam-v1",
+      "snippet": "Cam is an original fictional adult woman character LoRA by TigerFan69, intended for consistent character portraits and scenes. It does not depict an actual person. This is an adapter, not a complete base model. Place the adapter in ComfyUI&#x27;s models/loras/ folder, refresh the model list, and select ..."
+    },
+    {
+      "title": "Krea 2 Cam — Fictional Character LoRA - v1.0 | Krea 2 LoRA | Civitai",
+      "url": "https://civitai.red/models/3019050/krea-2-cam-fictional-character-lora",
+      "snippet": "Training and release The adapter metadata identifies Krea 2 and AI Toolkit training at 2,000 steps. Version v1.0 is an fp16 SafeTensor adapter. The gallery contains the creator&#x27;s sample outputs. License and access Cam is free to download and does not require a paid membership. The Krea 2 Community License Agreement and its Acceptable Use ..."
+    },
+    {
+      "title": "Jessica — Krea 2 LoRA (free download) - TigerFan69&#x27;s Ko-fi Shop",
+      "url": "https://ko-fi.com/s/cff4d8ff39",
+      "snippet": "The optional monthly membership is separate from this free model. The ZIP includes the original LoRA adapter, installation notes, Krea 2 Community License Agreement, and attribution notice."
+    },
+    {
+      "title": "GitHub - TigerFan69/krea-character-loras: Free Jessica and Erika Krea 2 ...",
+      "url": "https://github.com/TigerFan69/krea-character-loras/tree/main",
+      "snippet": "Free Jessica and Erika Krea 2 character LoRAs by TigerFan69. Licensed release packages, model cards, installation guides and checksums. - TigerFan69/krea-character-loras"
+    },
+    {
+      "title": "Krea-2 · Models",
+      "url": "https://www.modelscope.cn/models/vantagewithai/krea-2/summary",
+      "snippet": "Krea 2 is a text-to-image diffusion model that generates images from natural-language text descriptions. The model is designed to support creative, commercial, developer, and research use cases, including image generation, concepting, design exploration, visual production workflows, and integration into applications and creative tools."
+    }
+  ]
+}

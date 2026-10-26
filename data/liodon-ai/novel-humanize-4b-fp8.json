@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "liodon-ai/novel-humanize-4b-FP8",
+  "slug": "liodon-ai-novel-humanize-4b-fp8",
+  "author": "liodon-ai",
+  "url": "https://huggingface.co/liodon-ai/novel-humanize-4b-FP8",
+  "created_at": "2026-10-25T18:59:37.000Z",
+  "updated_at": "2026-10-25T19:42:05.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "fp8",
+    "compressed-tensors",
+    "vllm",
+    "quantized",
+    "conversational",
+    "base_model:gugujiji/novel-humanize-4b",
+    "base_model:quantized:gugujiji/novel-humanize-4b",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 4425330714,
+  "storage_human": "4.4 GB",
+  "base_model": "gugujiji/novel-humanize-4b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pinterest",
+      "url": "https://www.pinterest.fr/",
+      "snippet": "Trouvez des inspirations et idées pratiques pour tous vos projets au quotidien sur Pinterest."
+    },
+    {
+      "title": "Pinterest - 知乎",
+      "url": "https://www.zhihu.com/topic/19559627/intro",
+      "snippet": "Pinterest采用的是瀑布流的形式展现图片内容，无需用户翻页，新的图片不断自动加载在页面顶端，让用户不断的发现新的图片。 …"
+    },
+    {
+      "title": "Pinterest 好在哪里？ - 知乎",
+      "url": "https://www.zhihu.com/question/19562210",
+      "snippet": "Pinterest不同于Tumblr和微博，虽然Tumblr和微博的核心内容之一都是图片，可是各种博们关注图片是为了社交和传媒，Pinterest有 …"
+    },
+    {
+      "title": "Pinterest中的视频如何下载？ - 知乎",
+      "url": "https://www.zhihu.com/question/365879837",
+      "snippet": "感谢楼上答主提供一个非常好的思路，鉴于pinterest已经把有些视频播放页面左右键都屏蔽了，所以没有办法直接使用Eagle。 但沿着 …"
+    },
+    {
+      "title": "Pinterest 在中国行得通吗？为什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/19981672",
+      "snippet": "Dec 20, 2011 · pinterest定位了它第一阶段的用户－有品位追求和好奇心强的女人（23－27）。 那么它满足了什么样这些人什么的心 …"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Swish-31B-Final-GGUF",
+  "slug": "mradermacher-swish-31b-final-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Swish-31B-Final-GGUF",
+  "created_at": "2026-10-25T22:39:46.000Z",
+  "updated_at": "2026-10-26T03:37:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "nsfw",
+    "explicit",
+    "roleplay",
+    "unaligned",
+    "ERP",
+    "Erotic",
+    "Horror",
+    "Violence",
+    "adult-content",
+    "mature",
+    "conversational",
+    "instruct",
+    "en",
+    "base_model:ReadyArt/Swish-31B-Final",
+    "base_model:quantized:ReadyArt/Swish-31B-Final",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 213908604640,
+  "storage_human": "213.9 GB",
+  "base_model": "ReadyArt/Swish-31B-Final",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Categories - EPORNER: HD Porn Tube",
+      "url": "https://www.eporner.com/cats/",
+      "snippet": "Free Full HD porn tube - HD quality videos and photos. Watch over 2,785,355 full length hd sex movies, download porn xxx videos, …"
+    },
+    {
+      "title": "Vidéos porno HD - Films haute définition complets | EPORNER",
+      "url": "https://fr.eporner.com/",
+      "snippet": "© 2026 Eporner.com is a service gratuit d'hébergement de vidéos pornographiques."
+    },
+    {
+      "title": "Best Porn Videos - EPORNER: HD Porn Tube",
+      "url": "https://www.eporner.com/best-videos/",
+      "snippet": "Free Full HD porn tube - HD quality videos and photos. Watch over 2,785,355 full length hd sex movies, download porn xxx videos, …"
+    },
+    {
+      "title": "Browse Videos | Eporner",
+      "url": "https://eporner.xxx/videos",
+      "snippet": "Eporner Home Undress Her AI Porn Videos Categories Pornstars Porn Reels Home Undress Her AI Porn Videos Categories …"
+    },
+    {
+      "title": "HD Porn Videos - EPORNER",
+      "url": "https://eporner.com.es/",
+      "snippet": "In the event that you like mz porn we have better substance for you to jerk off every day with later and much-watched recordings of …"
+    }
+  ]
+}

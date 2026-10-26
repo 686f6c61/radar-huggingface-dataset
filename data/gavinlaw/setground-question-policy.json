@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "gavinlaw/setground-question-policy",
+  "slug": "gavinlaw-setground-question-policy",
+  "author": "gavinlaw",
+  "url": "https://huggingface.co/gavinlaw/setground-question-policy",
+  "created_at": "2026-10-23T21:59:53.000Z",
+  "updated_at": "2026-10-25T23:23:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 69250025,
+  "storage_human": "69 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gavinlaw/setground-question-policy · Hugging Face",
+      "url": "https://huggingface.co/gavinlaw/setground-question-policy",
+      "snippet": "来源： gavinlaw/setground-interactive-grounding@38dc6782c4aa387172ee17f9a82f22dccd8684be， snapshots/2026-09-30-k2-substitution。 固定 full、k2_w10，144轨迹、1664状态、4927动作；Hawkins、Zeng、baskets整context留一，折名即该模型未参与训练的context。"
+    },
+    {
+      "title": "Read our white paper on a pragmatic approach to AI ... - The Keyword",
+      "url": "https://blog.google/company-news/outreach-and-initiatives/public-policy/white-paper-ai-regulation/",
+      "snippet": "The debate over AI governance is stuck in a false choice between over-regulation and no regulation. There is a middle way: A pragmatic, evidence-based approach that recognizes the unique challenges and opportunities of both frontier AI and widely-deployed AI applications. For the most advanced frontier AI models, an independent, federally overseen, industry-backed organization could set safety ..."
+    },
+    {
+      "title": "Unified Runtime for Full-Duplex Interactive Intelligence with SGLang ...",
+      "url": "https://www.sglang.io/blog/omni-interactive-runtime",
+      "snippet": "Graphs, persistent sessions, and model execution unify native full-duplex, turn-based, and cascaded interactive systems in SGLang-Omni."
+    },
+    {
+      "title": "New tools for mapping a fragmented AI governance landscape",
+      "url": "https://www.brookings.edu/articles/new-tools-for-mapping-a-fragmented-ai-governance-landscape/",
+      "snippet": "New tools aim to bring coherence to an increasingly fragmented and rapidly expanding global AI governance landscape."
+    },
+    {
+      "title": "Gavinlaw: Open-Weight Models and Datasets",
+      "url": "https://savrn.com/model-publishers/gavinlaw",
+      "snippet": "Gavinlaw has 0 open-weight models and 1 dataset in the SAVRN Model Hub. Browse each one&#x27;s model card, specs, files and license."
+    }
+  ]
+}

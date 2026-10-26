@@ -5,7 +5,7 @@
   "author": "kingjones777",
   "url": "https://huggingface.co/kingjones777/Qwen3.8-Flash-Next-Uncensored-ROCmFP4-STRIX_LEAN-imatrix-GGUF",
   "created_at": "2026-09-16T22:35:34.000Z",
-  "updated_at": "2026-09-17T18:42:51.000Z",
+  "updated_at": "2026-10-25T22:01:42.000Z",
   "license": "qwen-community-1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -31,12 +31,12 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 347,
+  "downloads_30d": 361,
   "trending_score": 0,
   "parameters": 448931056,
   "parameters_human": "448.9M",
-  "storage_bytes": 106661074784,
-  "storage_human": "106.7 GB",
+  "storage_bytes": 212796650464,
+  "storage_human": "212.8 GB",
   "base_model": "orcarouter/Qwen3.8-Flash-Next-Uncensored, Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "gguf"

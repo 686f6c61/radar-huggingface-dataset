@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "liodon-ai/novel-humanize-4b-imatrix-GGUF",
+  "slug": "liodon-ai-novel-humanize-4b-imatrix-gguf",
+  "author": "liodon-ai",
+  "url": "https://huggingface.co/liodon-ai/novel-humanize-4b-imatrix-GGUF",
+  "created_at": "2026-10-25T22:07:02.000Z",
+  "updated_at": "2026-10-25T23:24:00.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "local-llm",
+    "llama.cpp",
+    "lm-studio",
+    "quantized",
+    "ollama",
+    "imatrix",
+    "sub-4-bit",
+    "qwen3",
+    "base_model:Qwen/Qwen3-4B",
+    "text-generation",
+    "base_model:gugujiji/novel-humanize-4b",
+    "base_model:quantized:gugujiji/novel-humanize-4b",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 18720094208,
+  "storage_human": "18.7 GB",
+  "base_model": "gugujiji/novel-humanize-4b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.fr/",
+      "snippet": "Encore plus » Account Options. Connexion; Paramètres de rechercheRead more"
+    },
+    {
+      "title": "Safe, secure, protected browsing | Chrome - Google",
+      "url": "https://www.google.fr/intl/en_uk/chrome/safety/",
+      "snippet": "Discover the innovative safety features of the Google Chrome browser that help keep you safe and protect your privacy while …"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.fr/mapfiles/home3.html",
+      "snippet": "Explore and navigate the world with Google Maps, offering directions, local business information, and street views."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.fr/travel/flights",
+      "snippet": "( / X `u0006 * u000f#4 u0007 u001ef\\u0001` gؙUU u0011 X g ( $ af ԩrfu0015MC u u0006u0006F \" \" \" u0007 0 M Iu001f ~ D®ÉW s& …"
+    },
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.fr/details",
+      "snippet": "Traduisez des textes instantanément avec Google Translate."
+    }
+  ]
+}

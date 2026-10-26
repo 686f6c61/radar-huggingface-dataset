@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft2800-grpo1320-lora",
+  "slug": "uygarkurt-qwen2-5-0-5b-instruct-xlam-mixed-sft2800-grpo1320-lora",
+  "author": "uygarkurt",
+  "url": "https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft2800-grpo1320-lora",
+  "created_at": "2026-10-25T22:13:46.000Z",
+  "updated_at": "2026-10-25T22:13:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "transformers",
+    "tool-calling",
+    "sft",
+    "grpo",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:uygarkurt/xlam-tool-calling-mixed",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29062028,
+  "storage_human": "29 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BingHomepageQuiz - Reddit",
+      "url": "https://www.reddit.com/r/BingHomepageQuiz/hot/",
+      "snippet": "ADMIN MOD • Bing Homepage Quiz (5/4/2024) - Which desert is the subject of today’s photograph? Which desert is the subject of …Read more"
+    },
+    {
+      "title": "Bing homepage quiz : r/MicrosoftRewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/r8qjk5/bing_homepage_quiz/",
+      "snippet": "Dec 4, 2021 · While these are the right answers and this quiz is still currently bugged, you don't lose points for wrong answers on this …"
+    },
+    {
+      "title": "Bing Homepage Quiz not working : r/MicrosoftRewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/1c3iarz/bing_homepage_quiz_not_working/",
+      "snippet": "Is there some secret to getting the Bing Homepage quiz to work correctly? When I try to complete it on the mobile app it just loads …"
+    },
+    {
+      "title": "Bing Homepage Quiz : r/MicrosoftRewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/r9ag3r/bing_homepage_quiz/",
+      "snippet": "Dec 5, 2021 · Posted by u/local_bellboy - 47 votes and 20 comments"
+    },
+    {
+      "title": "BingQuizAnswers - Reddit",
+      "url": "https://www.reddit.com/r/BingQuizAnswers/hot/",
+      "snippet": "Microsoft Rewards Quiz Answers"
+    }
+  ]
+}

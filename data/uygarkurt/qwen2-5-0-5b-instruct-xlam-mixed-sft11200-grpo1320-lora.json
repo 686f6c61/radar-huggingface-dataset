@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft11200-grpo1320-lora",
+  "slug": "uygarkurt-qwen2-5-0-5b-instruct-xlam-mixed-sft11200-grpo1320-lora",
+  "author": "uygarkurt",
+  "url": "https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft11200-grpo1320-lora",
+  "created_at": "2026-10-25T22:10:34.000Z",
+  "updated_at": "2026-10-25T22:10:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "transformers",
+    "tool-calling",
+    "sft",
+    "grpo",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:uygarkurt/xlam-tool-calling-mixed",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29062028,
+  "storage_human": "29 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen2.5-0.5B-Instruct-xlam-mixed-sft11200-grpo1320-lora",
+      "url": "https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft11200-grpo1320-lora",
+      "snippet": "Instructions to use uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft11200-grpo1320-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen2.5-0.5B-Instruct-xlam-mixed-sft11200-lora - Hugging Face",
+      "url": "https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft11200-lora",
+      "snippet": "Instructions to use uygarkurt/Qwen2.5-.5B-Instruct-xlam-mixed-sft11200-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen2.5-0.5B-Instruct-xlam-mixed-sft5600-lora - friendli.ai",
+      "url": "https://friendli.ai/models/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft5600-lora",
+      "snippet": "Deploy Qwen2.5-.5B-Instruct-xlam-mixed-sft5600-lora with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "m5-docs",
+      "url": "https://docs.m5stack.com/en/stackflow/models/qwen2.5-0.5b-instruct",
+      "snippet": "Qwen2.5-.5B-Instruct is an instruction-tuned language model in the Qwen2.5 series, with approximately 500 million parameters. The main features of this model include:"
+    },
+    {
+      "title": "qwen2.5:0.5b-instruct",
+      "url": "https://ollama.com/library/qwen2.5:0.5b-instruct",
+      "snippet": "Qwen2.5 is the latest series of Qwen large language models. For Qwen2.5, a range of base language models and instruction-tuned models are released, with sizes ranging from 0.5 to 72 billion parameters. Qwen2.5 introduces the following improvements over Qwen2: It possesses significantly more knowledge and has greatly enhanced capabilities in coding and mathematics, due to specialized expert ..."
+    }
+  ]
+}

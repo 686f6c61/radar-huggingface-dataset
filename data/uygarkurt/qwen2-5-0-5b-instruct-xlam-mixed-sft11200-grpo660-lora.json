@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft11200-grpo660-lora",
+  "slug": "uygarkurt-qwen2-5-0-5b-instruct-xlam-mixed-sft11200-grpo660-lora",
+  "author": "uygarkurt",
+  "url": "https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft11200-grpo660-lora",
+  "created_at": "2026-10-25T22:10:23.000Z",
+  "updated_at": "2026-10-25T22:10:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "transformers",
+    "tool-calling",
+    "sft",
+    "grpo",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:uygarkurt/xlam-tool-calling-mixed",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29062028,
+  "storage_human": "29 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeepSeek | Into the Unknown",
+      "url": "https://www.deepseek.com/",
+      "snippet": "DeepSeek is an AI research company focused on building world-leading general artificial intelligence. We develop and open-source …"
+    },
+    {
+      "title": "DeepSeek - Into the Unknown",
+      "url": "https://chat.deepseek.com/sign_in",
+      "snippet": "Chat with DeepSeek AI – your intelligent assistant for coding, content creation, file reading, and more."
+    },
+    {
+      "title": "DeepSeek | API Platform",
+      "url": "https://www.deepseek.com/en/platform/",
+      "snippet": "Build with DeepSeek API Code your application Build new products, experiences, and workflows with the DeepSeek V4 series"
+    },
+    {
+      "title": "DeepSeek Platform",
+      "url": "https://platform.deepseek.com/usage",
+      "snippet": "Join DeepSeek API platform to access our AI models, developer resources and API documentation."
+    },
+    {
+      "title": "DeepSeek",
+      "url": "https://cdn.deepseek.com/",
+      "snippet": "Chat with DeepSeek AI – your intelligent assistant for coding, content creation, file reading, and more."
+    }
+  ]
+}

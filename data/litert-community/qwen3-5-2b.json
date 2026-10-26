@@ -5,7 +5,7 @@
   "author": "litert-community",
   "url": "https://huggingface.co/litert-community/Qwen3.5-2B",
   "created_at": "2026-08-13T21:18:53.000Z",
-  "updated_at": "2026-10-16T09:18:01.000Z",
+  "updated_at": "2026-10-25T06:02:34.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 6,
-  "downloads_30d": 4174,
+  "downloads_30d": 3490,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

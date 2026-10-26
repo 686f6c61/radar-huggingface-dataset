@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "logicwahid/Kotha-S1-Instruct-GGUF",
+  "slug": "logicwahid-kotha-s1-instruct-gguf",
+  "author": "logicwahid",
+  "url": "https://huggingface.co/logicwahid/Kotha-S1-Instruct-GGUF",
+  "created_at": "2026-10-25T19:08:56.000Z",
+  "updated_at": "2026-10-25T19:08:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "bilingual",
+    "instruct",
+    "slm",
+    "text-generation",
+    "bn",
+    "en",
+    "base_model:logicwahid/Kotha-S1-Instruct",
+    "base_model:quantized:logicwahid/Kotha-S1-Instruct",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-10-26T04:11:32.830Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeepKpop - Kpop Deepfakes on Every Taste",
+      "url": "https://deepkpop.com/",
+      "snippet": "Secret place with notorious kpop deepfakes for real stans."
+    },
+    {
+      "title": "Kpop deepfake - deepkpop.com",
+      "url": "https://deepkpop.com/search/kpop-deepfake/",
+      "snippet": "Secret place with notorious kpop deepfakes for real stans."
+    },
+    {
+      "title": "Japanese / Chinese / Kpop Deepfake Porn ﻿• フェイクポルノ",
+      "url": "https://porndeepfake.net/",
+      "snippet": "Fake nudes on the participants on the endless bands like Izone, nogizaka46 and Blackpink are mostly popular in the market. In these …"
+    },
+    {
+      "title": "Deepfake Porn Site Featuring 200+ Female Idols Disappears - Koreaboo",
+      "url": "https://www.koreaboo.com/news/deepfake-porn-website-featuring-idols-disappears-concern-sites/",
+      "snippet": "Sep 4, 2024 · After focus was placed on a deepfake porn site featuring hundreds of K-Pop idols, a new update has only caused more …"
+    },
+    {
+      "title": "aespa’s Karina Gets Targeted With Sexualized Deepfake Fancam",
+      "url": "https://www.koreaboo.com/news/aespa-karina-gets-targeted-sexualized-deepfake-fancam/",
+      "snippet": "Jan 14, 2026 · The widespread use of AI-generated deepfake technology has painted targets on the backs of female K-pop idols. …"
+    }
+  ]
+}

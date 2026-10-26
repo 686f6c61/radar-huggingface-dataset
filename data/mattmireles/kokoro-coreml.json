@@ -5,7 +5,7 @@
   "author": "mattmireles",
   "url": "https://huggingface.co/mattmireles/kokoro-coreml",
   "created_at": "2026-04-07T11:34:06.000Z",
-  "updated_at": "2026-10-24T02:14:49.000Z",
+  "updated_at": "2026-10-25T06:40:45.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 10,
-  "downloads_30d": 4529,
+  "downloads_30d": 4734,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

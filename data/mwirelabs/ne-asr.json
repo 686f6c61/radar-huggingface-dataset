@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "MWirelabs/ne-asr",
+  "slug": "mwirelabs-ne-asr",
+  "author": "MWirelabs",
+  "url": "https://huggingface.co/MWirelabs/ne-asr",
+  "created_at": "2026-05-13T10:49:10.000Z",
+  "updated_at": "2026-10-25T22:56:54.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "kha",
+    "grt",
+    "lus",
+    "nag",
+    "trp",
+    "asm",
+    "ccp",
+    "wao"
+  ],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "northeast-india",
+    "low-resource",
+    "multilingual",
+    "kha",
+    "grt",
+    "lus",
+    "nag",
+    "trp",
+    "asm",
+    "ccp",
+    "wao",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 69,
+  "trending_score": 0,
+  "parameters": 763857920,
+  "parameters_human": "763.9M",
+  "storage_bytes": 3055544304,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MWirelabs/ne-asr - Hugging Face",
+      "url": "https://huggingface.co/MWirelabs/ne-asr",
+      "snippet": "A multilingual automatic speech recognition (ASR) model for eight Northeast Indian languages, fine-tuned from openai/whisper-medium ..."
+    },
+    {
+      "title": "Foundational AI Models for Northeast India | MWire Labs",
+      "url": "http://mwirelabs.com/models/",
+      "snippet": "Explore MWire Labs&#x27; collection of foundational AI models for Northeast Indian languages including Kren-M, custom tokenizers, and open-source corpora for Garo, Mizo, Assamese. Meitei and more."
+    },
+    {
+      "title": "MWirelabs/ne-asr at main - Hugging Face",
+      "url": "https://huggingface.co/MWirelabs/ne-asr/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MWire Labs - Voice AI & Language Models for Northeast India",
+      "url": "https://mwirelabs.com/",
+      "snippet": "Lemka · Voice AI Speech intelligence for Northeast India Every model we build is designed for Northeast India&#x27;s real conditions — low connectivity, regional scripts, and multilingual contexts that global AI ignores."
+    },
+    {
+      "title": "MWirelabs - GitHub",
+      "url": "https://github.com/MWirelabs/",
+      "snippet": "MWire Labs builds scalable, ethical AI systems: from custom LLMs to multilingual search—for real-world impact across governance, non profits, tourism, and infra - MWirelabs"
+    }
+  ]
+}

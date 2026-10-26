@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ceselder/kimi-k3-olens-reconstructor",
+  "slug": "ceselder-kimi-k3-olens-reconstructor",
+  "author": "ceselder",
+  "url": "https://huggingface.co/ceselder/kimi-k3-olens-reconstructor",
+  "created_at": "2026-10-25T19:00:42.000Z",
+  "updated_at": "2026-10-26T00:52:11.000Z",
+  "license": "kimi-k3",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "interpretability",
+    "activation-reconstructor",
+    "oracle-lens",
+    "lora",
+    "kimi-k3",
+    "attention-residuals",
+    "base_model:moonshotai/Kimi-K3",
+    "base_model:adapter:moonshotai/Kimi-K3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31118817838,
+  "storage_human": "31.1 GB",
+  "base_model": "moonshotai/Kimi-K3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HornetMM — Mod Manager for Hollow Knight",
+      "url": "https://hornetmm-team.github.io/-/",
+      "snippet": "Enable, disable, update, and organize your mods with an intuitive interface. Automatically adapts to your system theme on Windows, …"
+    },
+    {
+      "title": "How To Mod Hollow Knight | Step by Step Guide - YouTube",
+      "url": "https://www.youtube.com/watch?v=h_Mq0Dcw4PE",
+      "snippet": "Aug 23, 2026 · We focus on practical steps to get your game running with new cosmetic mods or expansion content without …"
+    },
+    {
+      "title": "Mod:Lumafly - Hollow Knight Wiki",
+      "url": "https://hollowknight.wiki/w/Mod:Lumafly",
+      "snippet": "Jul 4, 2026 · Lumafly is a Mod installer for Hollow Knight. It is a program that allows users to easily install mods and automatically …"
+    },
+    {
+      "title": "Lumafly, Hollow Knight Mod Installer and Manager (formerly Scarab+)",
+      "url": "https://themulhima.github.io/Lumafly/",
+      "snippet": "Mods appear in the top left corner of the game title screen after installation. Enable/Disable mods from affecting the game using the …"
+    },
+    {
+      "title": "Set up Lumafly and install your first Hollow Knight mods",
+      "url": "https://openmods.net/guides/getting-started-hollow-knight",
+      "snippet": "Jun 11, 2024 · This guide installs Lumafly, enables the API, installs a first mod, and explains where the files actually go so you can fix …"
+    }
+  ]
+}

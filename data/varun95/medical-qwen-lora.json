@@ -5,7 +5,7 @@
   "author": "Varun95",
   "url": "https://huggingface.co/Varun95/medical-qwen-lora",
   "created_at": "2026-10-22T15:08:07.000Z",
-  "updated_at": "2026-10-24T15:25:56.000Z",
+  "updated_at": "2026-10-25T17:27:45.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -39,8 +39,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 2975591693,
-  "storage_human": "3.0 GB",
+  "storage_bytes": 3574599333,
+  "storage_human": "3.6 GB",
   "base_model": "unsloth/Qwen2.5-3B-Instruct-bnb-4bit",
   "formats": [
     "safetensors"

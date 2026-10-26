@@ -5,7 +5,7 @@
   "author": "abid1010",
   "url": "https://huggingface.co/abid1010/indic-conformer-600m-onnx",
   "created_at": "2026-10-21T20:09:38.000Z",
-  "updated_at": "2026-10-21T20:11:40.000Z",
+  "updated_at": "2026-10-25T19:08:22.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -70,7 +70,7 @@
     "license:mit",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

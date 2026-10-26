@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "SZLHOLDINGS/ChaskaLLM",
+  "slug": "szlholdings-chaskallm",
+  "author": "SZLHOLDINGS",
+  "url": "https://huggingface.co/SZLHOLDINGS/ChaskaLLM",
+  "created_at": "2026-10-25T21:43:04.000Z",
+  "updated_at": "2026-10-25T22:57:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "chaskallm",
+    "szl-holdings",
+    "stephen-lutar",
+    "cpu",
+    "qwen2.5",
+    "soft-shield",
+    "measured",
+    "edge-inference",
+    "gpu-less",
+    "enterprise",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-3B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-10-26T03:04:49.508Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChaskaLLM/README.md at main · szl-holdings/ChaskaLLM · GitHub",
+      "url": "https://github.com/szl-holdings/ChaskaLLM/blob/main/README.md",
+      "snippet": "ChaskaLLM Efficient CPU inference mouth for Soft Shield / edge agent stacks. Face: Stephen Lutar — CTO, SZL Holdings Inc"
+    },
+    {
+      "title": "SZL Holdings · GitHub",
+      "url": "https://github.com/szl-holdings",
+      "snippet": "Governed AI infrastructure for inspectable decisions: source, runtime state, receipts, and proof boundaries. - SZL Holdings"
+    },
+    {
+      "title": "SZLHOLDINGS/chaski · Hugging Face",
+      "url": "https://huggingface.co/SZLHOLDINGS/chaski",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SZLHOLDINGS (SZL Holdings) - Hugging Face",
+      "url": "https://huggingface.co/SZLHOLDINGS/datasets",
+      "snippet": "Org profile for SZL Holdings on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "stephen Lutar (@szlholdings) / X",
+      "url": "https://x.com/szlholdings",
+      "snippet": "Most companies do not have an AI problem. They have an evidence problem. A useful system should show what changed, why it changed, who approved it, what ran, and what happened next. That is the operating model behind SZL Holdings."
+    }
+  ]
+}

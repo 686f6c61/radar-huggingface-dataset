@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "gugujiji/novel-humanize-4b",
+  "slug": "gugujiji-novel-humanize-4b",
+  "author": "gugujiji",
+  "url": "https://huggingface.co/gugujiji/novel-humanize-4b",
+  "created_at": "2026-10-25T12:49:46.000Z",
+  "updated_at": "2026-10-25T13:37:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "chinese",
+    "novel",
+    "rewriting",
+    "text-generation",
+    "conversational",
+    "zh",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 20,
+  "downloads_30d": 0,
+  "trending_score": 17,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404730,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "66 Appartements en location Nantes Erdre 44300",
+      "url": "https://www.seloger.com/recherche/location/appartement/loire-atlantique-44/nantes-erdre-44300/nbh1fr1501?msockid=2b6f5cd7d746605f17544b2ad67b612c",
+      "snippet": "Nous vous proposons un superbe appartement de 85m2 situé dans le quartier Tortière au 4ème étage avec une vue panoramique …"
+    },
+    {
+      "title": "Annonces Location appartement et maison à louer : Nantes (44300)",
+      "url": "https://www.leboncoin.fr/cl/locations/cp_nantes_44300",
+      "snippet": "Toutes nos annonces gratuites Location appartement et maison à louer Nantes (44300). Consultez nos 502 annonces de particuliers …"
+    },
+    {
+      "title": "Locations Appartement Nantes (44300) - leboncoin",
+      "url": "https://www.leboncoin.fr/cl/locations/cp_nantes_44300/real_estate_type:2",
+      "snippet": "Consultez nos annonces de locations Appartement Nantes (44300) sur leboncoin."
+    },
+    {
+      "title": "Appartements à vendre à Nantes (44300) - Laforêt Immobilier",
+      "url": "https://www.laforet.com/ville/achat-appartement-nantes-44300",
+      "snippet": "Retrouvez l'ensemble de nos appartements disponibles à vendre à Nantes au sein de nos agences immobilières Laforêt."
+    },
+    {
+      "title": "Location appartement et maison NANTES (44300) - CDC Habitat",
+      "url": "https://www.cdc-habitat.fr/recherche/location/pays-de-la-loire/loire-atlantique/nantes-44300",
+      "snippet": "Vous recherchez un appartement à louer à NANTES (44300) ? CDC Habitat, acteur majeur du logement, vous propose de …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "MayorChris",
   "url": "https://huggingface.co/MayorChris/xlnet-large-cased-batch16-tass-finetuned-2026",
   "created_at": "2026-10-24T23:31:07.000Z",
-  "updated_at": "2026-10-25T06:26:22.000Z",
+  "updated_at": "2026-10-25T07:32:38.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 112,
   "trending_score": 0,
   "parameters": 361321475,
   "parameters_human": "361.3M",

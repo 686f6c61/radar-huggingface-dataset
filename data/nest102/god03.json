@@ -4,8 +4,8 @@
   "slug": "nest102-god03",
   "author": "nest102",
   "url": "https://huggingface.co/nest102/god03",
-  "created_at": "2026-10-24T04:28:45.000Z",
-  "updated_at": "2026-10-24T04:29:06.000Z",
+  "created_at": "2026-10-26T03:38:40.000Z",
+  "updated_at": "2026-10-26T03:41:05.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -25,8 +25,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-10-25T04:43:04.614Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

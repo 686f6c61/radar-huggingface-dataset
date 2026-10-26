@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Tomzllllll/Lilik_4os",
+  "slug": "tomzllllll-lilik_4os",
+  "author": "Tomzllllll",
+  "url": "https://huggingface.co/Tomzllllll/Lilik_4os",
+  "created_at": "2026-10-25T22:05:12.000Z",
+  "updated_at": "2026-10-25T22:06:49.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 55672475,
+  "storage_human": "56 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?library...",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "AI Model Search: Find Real Hugging Face Repos",
+      "url": "https://zeplik.ai/tools/ai-model-search",
+      "snippet": "AI Tools / AI Model Search Find real Hugging Face model repositories Ask for models for a task or by name and Zeplik searches the live model hub, then answers with real repositories, their exact repo ids, and live download and like counts. This matters because a language model on its own will invent a repo id or misstate a model&#x27;s popularity from a stale snapshot, sending you to a page that ..."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Lili hi-res tekken - v1 - Free AI LORA Download | Tensor.Art",
+      "url": "https://tensor.art/models/891418824023213619",
+      "snippet": "Download Lili hi-res tekken - free LORA Illustrious AI model on TENSOR. By M a g i k"
+    },
+    {
+      "title": "Lili AI LoRA Model | PixAI",
+      "url": "https://pixai.art/en/model/1938880361733172588",
+      "snippet": "Lili is an AI LoRA by thangnguyen on PixAI. Try it free."
+    }
+  ]
+}

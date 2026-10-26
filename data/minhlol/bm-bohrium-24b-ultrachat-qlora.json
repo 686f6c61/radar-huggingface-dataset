@@ -5,7 +5,7 @@
   "author": "minhlol",
   "url": "https://huggingface.co/minhlol/Bm-bohrium-24B-UltraChat-QLoRA",
   "created_at": "2026-10-25T01:51:28.000Z",
-  "updated_at": "2026-10-25T06:07:14.000Z",
+  "updated_at": "2026-10-25T12:01:00.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -26,13 +26,13 @@
     "base_model:adapter:minhlol/Bm-bohrium-7B-continued-QLoRA",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 23474344291,
-  "storage_human": "23.5 GB",
+  "storage_bytes": 42216476521,
+  "storage_human": "42.2 GB",
   "base_model": "minhlol/Bm-bohrium-7B-continued-QLoRA",
   "formats": [
     "safetensors"

@@ -5,7 +5,7 @@
   "author": "danielrosehill",
   "url": "https://huggingface.co/danielrosehill/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching",
   "created_at": "2026-10-15T08:41:37.000Z",
-  "updated_at": "2026-10-20T22:28:33.000Z",
+  "updated_at": "2026-10-25T18:45:09.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",

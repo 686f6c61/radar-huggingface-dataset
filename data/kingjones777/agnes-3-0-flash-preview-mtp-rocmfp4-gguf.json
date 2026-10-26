@@ -5,7 +5,7 @@
   "author": "kingjones777",
   "url": "https://huggingface.co/kingjones777/Agnes-3.0-Flash-Preview-MTP-ROCmFP4-GGUF",
   "created_at": "2026-09-16T17:22:47.000Z",
-  "updated_at": "2026-09-17T00:56:53.000Z",
+  "updated_at": "2026-10-25T21:32:22.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -41,12 +41,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 314,
+  "downloads_30d": 303,
   "trending_score": 0,
   "parameters": 32661228864,
   "parameters_human": "32.66B",
-  "storage_bytes": 106109038528,
-  "storage_human": "106.1 GB",
+  "storage_bytes": 109306468800,
+  "storage_human": "109.3 GB",
   "base_model": "Agnes-AI/Agnes-3.0-Flash",
   "formats": [
     "gguf"

@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Groot-19B-A3B-261023-i1-GGUF",
   "created_at": "2026-10-24T22:11:03.000Z",
-  "updated_at": "2026-10-24T23:22:47.000Z",
+  "updated_at": "2026-10-25T16:00:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -25,13 +25,13 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 0,
-  "downloads_30d": 0,
+  "likes": 1,
+  "downloads_30d": 302,
   "trending_score": 0,
   "parameters": 18985723008,
   "parameters_human": "18.99B",
-  "storage_bytes": 26958577376,
-  "storage_human": "27.0 GB",
+  "storage_bytes": 161358037344,
+  "storage_human": "161.4 GB",
   "base_model": "GrootTeam/Groot-19B-A3B-261023",
   "formats": [
     "gguf"

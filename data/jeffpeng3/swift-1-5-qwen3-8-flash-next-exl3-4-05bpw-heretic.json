@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "jeffpeng3/Swift-1.5-Qwen3.8-Flash-Next-EXL3-4.05bpw-heretic",
+  "slug": "jeffpeng3-swift-1-5-qwen3-8-flash-next-exl3-4-05bpw-heretic",
+  "author": "jeffpeng3",
+  "url": "https://huggingface.co/jeffpeng3/Swift-1.5-Qwen3.8-Flash-Next-EXL3-4.05bpw-heretic",
+  "created_at": "2026-10-25T22:16:10.000Z",
+  "updated_at": "2026-10-26T03:06:16.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "exllamav3",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "exllamav3",
+    "safetensors",
+    "qwen4_exp",
+    "exl3",
+    "abliterated",
+    "uncensored",
+    "reasoning-efficient",
+    "qwen3.8-flash-next",
+    "moe",
+    "4.05bpw",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:ukisai/Swift1.5-Qwen3.8-Flash-Next",
+    "base_model:quantized:ukisai/Swift1.5-Qwen3.8-Flash-Next",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34283300720,
+  "parameters_human": "34.28B",
+  "storage_bytes": 107796379361,
+  "storage_human": "107.8 GB",
+  "base_model": "ukisai/Swift1.5-Qwen3.8-Flash-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Adopt Me! | Play on Roblox",
+      "url": "https://www.roblox.com/games/920587237/Adopt-Me",
+      "snippet": "1 day ago · Join millions playing this social roleplay simulator. Collect legendary pets, trade with friends, and build your dream home. …Read more"
+    },
+    {
+      "title": "Adopt me! | Play on Roblox",
+      "url": "https://www.roblox.com/games/7114345825/Adopt-me",
+      "snippet": "Sep 15, 2022 · Check out Adopt me!. It’s one of the millions of unique, user-generated 3D experiences created on Roblox."
+    },
+    {
+      "title": "Adopt Me!",
+      "url": "https://www.playadopt.me/",
+      "snippet": "Adopt Me!, the ultimate pet adoption Roblox game enjoyed by a community of millions of players across the world."
+    },
+    {
+      "title": "Adopt Me! | Roblox Wiki | Fandom",
+      "url": "https://roblox.fandom.com/wiki/Uplift_Games/Adopt_Me!",
+      "snippet": "Aug 11, 2026 · On April 4, 2020, Adopt Me! became the most visited Roblox game with 5.7 billion visits. It broke the concurrent …"
+    },
+    {
+      "title": "Adopt Me - Play Free on WooGames",
+      "url": "https://woogames.io/adopt-me",
+      "snippet": "Adopt Me lets you raise pets from eggs, trade rare items, design dream homes, and roleplay freely in one of Roblox’s most iconic …"
+    }
+  ]
+}

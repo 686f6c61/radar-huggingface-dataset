@@ -5,7 +5,7 @@
   "author": "ikimyaii",
   "url": "https://huggingface.co/ikimyaii/HGRN-1.3B-unstructured-ELSA-70pct",
   "created_at": "2026-10-24T08:45:36.000Z",
-  "updated_at": "2026-10-24T08:46:03.000Z",
+  "updated_at": "2026-10-25T08:31:36.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": 1364396032,
   "parameters_human": "1.36B",

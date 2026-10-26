@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-grpo2640-lora",
+  "slug": "uygarkurt-qwen2-5-0-5b-instruct-xlam-mixed-grpo2640-lora",
+  "author": "uygarkurt",
+  "url": "https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-grpo2640-lora",
+  "created_at": "2026-10-25T22:36:15.000Z",
+  "updated_at": "2026-10-25T22:36:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "transformers",
+    "tool-calling",
+    "grpo",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:uygarkurt/xlam-tool-calling-mixed",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29062028,
+  "storage_human": "29 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PolyBuzz | Talk to AI Characters & Enjoy Free AI Chat Anytime",
+      "url": "https://www.polybuzz.ai/En",
+      "snippet": "What is PolyBuzz? PolyBuzz offers Free, Private, and Unrestricted AI character chats with over 20 million characters, enabling you to …"
+    },
+    {
+      "title": "PolyBuzz | Talk to AI Characters & Enjoy Free AI Chat Anytime",
+      "url": "https://www.polybuzz.ai/",
+      "snippet": "PolyBuzz is a Free, Private, and Unlimited AI Chat platform with over 20 million unique Characters, offering personalized …"
+    },
+    {
+      "title": "PolyBuzz - Free, Private, and Unrestricted AI Character Chats",
+      "url": "https://app.polybuzz.ai/",
+      "snippet": "Join PolyBuzz for free online AI chat and thrilling roleplay with AI Characters from anime, movies, celebrities, RPGs, and more! …"
+    },
+    {
+      "title": "Polybuzz – Parle à l’IA, discute gratuitement avec des personnages IA",
+      "url": "https://polybuzz.org/fr/",
+      "snippet": "Qu’est-ce que PolyBuzz ? PolyBuzz propose des chats IA gratuits, privés et sans restriction avec plus de 20 millions de …"
+    },
+    {
+      "title": "PolyBuzz AI — Discutez avec plus de 20M+ personnages IA, jeu de …",
+      "url": "https://polybuzz-ai.com/fr/",
+      "snippet": "PolyBuzz AI vous permet de discuter, flirter et jouer des rôles avec des personnages IA réalistes, de parler à voix haute avec une …"
+    }
+  ]
+}
