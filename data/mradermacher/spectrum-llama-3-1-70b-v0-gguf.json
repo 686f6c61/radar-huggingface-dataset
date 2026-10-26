@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mradermacher/spectrum-Llama-3.1-70B-v0-GGUF",
+  "slug": "mradermacher-spectrum-llama-3-1-70b-v0-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/spectrum-Llama-3.1-70B-v0-GGUF",
+  "created_at": "2025-12-06T22:09:12.000Z",
+  "updated_at": "2026-10-26T09:21:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 45,
+  "trending_score": 0,
+  "parameters": 70553706560,
+  "parameters_human": "70.55B",
+  "storage_bytes": 481302990464,
+  "storage_human": "481.3 GB",
+  "base_model": "tsor13/spectrum-Llama-3.1-70B-v0",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/spectrum-Llama-3.1-70B-v0-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/spectrum-Llama-3.1-70B-v0-GGUF",
+      "snippet": "Feel free to request them by opening a Community Discussion. Usage If you are unsure how to use GGUF files, refer to one of TheBloke&#x27;s READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "mradermacher/Llama-3.1-70B-ArliAI-RPMax-v1.1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Llama-3.1-70B-ArliAI-RPMax-v1.1-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke&#x27;s READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "Open-source AI Models for Any Application | Llama 3",
+      "url": "https://dev.meta.ai/llama/models/llama-3",
+      "snippet": "Llama 3 models Llama includes multilingual text-only models (1B, 3B), including quantized versions, text-image models (11B, 90B) and Llama 3.3 70B model offering similar performance to the Llama 3.1 405B model, allowing developers to achieve greater quality and performance on text-based applications at a fraction of the cost."
+    },
+    {
+      "title": "All Meta Llama Models - Open Source LLMs (2026)",
+      "url": "https://lmmarketcap.com/meta-llama-models",
+      "snippet": "The complete Meta Llama model lineup: 8 open-source models spanning from compact 1B-parameter variants to the flagship Llama 4 Maverick. Meta&#x27;s Llama family is the most widely adopted open-source LLM ecosystem, offering free weights for self-hosting, fine-tuning, and commercial use. Scores updated hourly from live API data."
+    },
+    {
+      "title": "Llama (language model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Llama_(language_model)",
+      "snippet": "Llama[a] (\" Large Language Model Meta AI \" serving as a backronym) was a family of large language models (LLMs) released by Meta AI from February 2023 to April 2025. [3] Llama models come in different sizes, ranging from 1 billion to 2 trillion parameters. Initially only a foundation model, [4] starting with Llama 2, Meta AI released instruction fine-tuned versions alongside foundation models ..."
+    }
+  ]
+}

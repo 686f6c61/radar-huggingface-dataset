@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Prosperitytech/lighthouse-keeper",
+  "slug": "prosperitytech-lighthouse-keeper",
+  "author": "Prosperitytech",
+  "url": "https://huggingface.co/Prosperitytech/lighthouse-keeper",
+  "created_at": "2026-10-26T09:01:47.000Z",
+  "updated_at": "2026-10-26T09:07:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "onnx",
+  "languages": [
+    "en",
+    "pcm",
+    "yo",
+    "ha",
+    "ig"
+  ],
+  "tags": [
+    "onnx",
+    "child-safety",
+    "content-moderation",
+    "nigeria",
+    "on-device",
+    "text-classification",
+    "en",
+    "pcm",
+    "yo",
+    "ha",
+    "ig",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 42411214,
+  "storage_human": "42 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Who is Elias the lighthouse keeper? AI fiction tells the same old story",
+      "url": "https://lifeboat.com/blog/2026/10/who-is-elias-the-lighthouse-keeper-ai-fiction-tells-the-same-old-story",
+      "snippet": "Like a hack writer or a friend rehashing their glory days over and over, artificial intelligence tends to tell the same old story. For AI agents instructed to write fiction, that tale usually involves lighthouses and a keeper named Elias, according to new Cornell research."
+    },
+    {
+      "title": "LIGHTHOUSE — Prosperity Tech",
+      "url": "https://prosperitytech.org/work/lighthouse",
+      "snippet": "Lighthouse is our digital safety initiative — research, tools and advocacy that help families, schools navigate an online world designed without them…"
+    },
+    {
+      "title": "Why every AI writes the same story about a lighthouse keeper ... - IBM",
+      "url": "https://www.ibm.com/think/news/why-every-ai-writes-the-same-story-elias-thorne",
+      "snippet": "Researchers found 88% of AI-generated stories feature a lighthouse keeper named Elias Thorne. Here&#x27;s how one name took over the AI imagination—and escaped it."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, DeepSeek, Qwen, Mistral, Z.ai, Meta, and important open-weight model families."
+    },
+    {
+      "title": "AI Is Obsessed With A Lighthouse Keeper Called Elias Thorne - Even ...",
+      "url": "https://www.iflscience.com/ai-is-obsessed-with-a-lighthouse-keeper-called-elias-thorne-even-though-he-doesnt-exist-83861",
+      "snippet": "AI Is Obsessed With A Lighthouse Keeper Called Elias Thorne - Even Though He Doesn&#x27;t Exist A phenomenon called mode collapse may explain why AI gets so fixated on its own inventions."
+    }
+  ]
+}

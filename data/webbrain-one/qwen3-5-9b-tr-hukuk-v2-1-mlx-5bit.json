@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "webbrain-one/qwen3.5-9b-tr-hukuk-v2.1-MLX-5bit",
+  "slug": "webbrain-one-qwen3-5-9b-tr-hukuk-v2-1-mlx-5bit",
+  "author": "webbrain-one",
+  "url": "https://huggingface.co/webbrain-one/qwen3.5-9b-tr-hukuk-v2.1-MLX-5bit",
+  "created_at": "2026-10-26T08:10:37.000Z",
+  "updated_at": "2026-10-26T09:22:16.000Z",
+  "license": "proprietary-private",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_text",
+    "turkish",
+    "law",
+    "hukuk",
+    "qwen",
+    "qwen3.5",
+    "mlx-5bit",
+    "apple-silicon",
+    "text-generation",
+    "conversational",
+    "tr",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:quantized:Qwen/Qwen3.5-9B",
+    "license:other",
+    "5-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953801728,
+  "parameters_human": "8.95B",
+  "storage_bytes": 6177242991,
+  "storage_human": "6.2 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Categories - EPORNER: HD Porn Tube",
+      "url": "https://www.eporner.com/cats/",
+      "snippet": "Free Full HD porn tube - HD quality videos and photos. Watch over 2,785,355 full length hd sex movies, download porn xxx videos, …"
+    },
+    {
+      "title": "Vidéos porno HD - Films haute définition complets | EPORNER",
+      "url": "https://fr.eporner.com/",
+      "snippet": "© 2026 Eporner.com is a service gratuit d'hébergement de vidéos pornographiques."
+    },
+    {
+      "title": "Best Porn Videos - EPORNER: HD Porn Tube",
+      "url": "https://www.eporner.com/best-videos/",
+      "snippet": "Free Full HD porn tube - HD quality videos and photos. Watch over 2,785,355 full length hd sex movies, download porn xxx videos, …"
+    },
+    {
+      "title": "Browse Videos | Eporner",
+      "url": "https://eporner.xxx/videos",
+      "snippet": "Eporner Home Undress Her AI Porn Videos Categories Pornstars Porn Reels Home Undress Her AI Porn Videos Categories …"
+    },
+    {
+      "title": "HD Porn Videos - EPORNER",
+      "url": "https://eporner.com.es/",
+      "snippet": "In the event that you like mz porn we have better substance for you to jerk off every day with later and much-watched recordings of …"
+    }
+  ]
+}

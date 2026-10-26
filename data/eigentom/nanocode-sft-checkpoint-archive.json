@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "eigentom/nanocode-sft-checkpoint-archive",
+  "slug": "eigentom-nanocode-sft-checkpoint-archive",
+  "author": "eigentom",
+  "url": "https://huggingface.co/eigentom/nanocode-sft-checkpoint-archive",
+  "created_at": "2026-10-11T08:14:25.000Z",
+  "updated_at": "2026-10-26T11:15:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "checkpoint-archive",
+    "nanocode",
+    "minicpm",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 110743812051,
+  "storage_human": "110.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eigentom/nanocode-sft-checkpoint-archive · Hugging Face",
+      "url": "https://huggingface.co/eigentom/nanocode-sft-checkpoint-archive",
+      "snippet": "This repository preserves the two original checkpoint repositories and adds the five independently initialized v11 one-epoch final HF models."
+    },
+    {
+      "title": "eigentom/nanocode_sft_60b · Hugging Face",
+      "url": "https://huggingface.co/eigentom/nanocode_sft_60b",
+      "snippet": "These files do not support a full-state ... checkpoint shards were unavailable when archived. They are intended for Transformers inference and weight-only reuse, not exact continuation of the original distributed run. ... from transformers import AutoModelForCausalLM, AutoTokenizer repo = \"eigentom/nanocode_sft_60b\" model ..."
+    },
+    {
+      "title": "eigentom/nanocode-sft-mix-run1-v3 · Hugging Face",
+      "url": "https://huggingface.co/eigentom/nanocode-sft-mix-run1-v3",
+      "snippet": "Final checkpoint from a fresh one-epoch full SFT of MiniCPM5-2B-Midtrain on the v3 filtered Run1 data mix."
+    },
+    {
+      "title": "LingweiGu/nanocode-sft-r01-openswe-success · Hugging Face",
+      "url": "https://huggingface.co/LingweiGu/nanocode-sft-r01-openswe-success",
+      "snippet": "Starting point: eigentom/nanocode_sft_60b, checkpoint-8900 (MiniCPM5-2B-Midtrain after SFT on the official UltraData SFT mixture), revision 3b6f57a2, weights only."
+    },
+    {
+      "title": "eigentom/minicpm5-sft-stage1-910c-pub · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/eigentom/minicpm5-sft-stage1-910c-pub",
+      "snippet": "Reproduce: github.com/lingwei-gu/nanocode training/minicpm5-sft (see DATA.md); raw sources pinned in stage1.json"
+    }
+  ]
+}

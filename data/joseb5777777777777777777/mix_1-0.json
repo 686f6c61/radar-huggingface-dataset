@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "joSeb5777777777777777777/Mix_1.0",
+  "slug": "joseb5777777777777777777-mix_1-0",
+  "author": "joSeb5777777777777777777",
+  "url": "https://huggingface.co/joSeb5777777777777777777/Mix_1.0",
+  "created_at": "2026-10-25T05:56:49.000Z",
+  "updated_at": "2026-10-26T09:37:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "base_model:Kwaipilot/KAT-Coder-V2.5-Dev",
+    "base_model:finetune:Kwaipilot/KAT-Coder-V2.5-Dev",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.6-35B-A3B, ornith-ai/Ornith-1.5-35B-A3B, Kwaipilot/KAT-Coder-V2.5-Dev",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Math Solver - Trusted Online AI Math Calculator | Symbolab",
+      "url": "https://en.symbolab.com/",
+      "snippet": "Symbolab: equation search and math solver - solves algebra, trigonometry and calculus problems step by step"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "Helios Mix - v1.0 - Free AI CHECKPOINT | Tensor.Art",
+      "url": "https://tensor.art/models/688774121594813094",
+      "snippet": "Download Helios Mix - free CHECKPOINT SD 1.5 AI model on TENSOR. MALE CHARACTER, MALE, REALISTIC. By Avrik"
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/",
+      "snippet": "We couldn&#x27;t load your remembered accounts. You can still log in below"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/watch",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    }
+  ]
+}

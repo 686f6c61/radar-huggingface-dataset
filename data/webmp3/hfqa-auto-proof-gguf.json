@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "webmp3/hfqa-auto-proof-GGUF",
+  "slug": "webmp3-hfqa-auto-proof-gguf",
+  "author": "webmp3",
+  "url": "https://huggingface.co/webmp3/hfqa-auto-proof-GGUF",
+  "created_at": "2026-10-26T08:45:38.000Z",
+  "updated_at": "2026-10-26T08:46:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "quantization",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 630167424,
+  "parameters_human": "630.2M",
+  "storage_bytes": 907036584,
+  "storage_human": "907 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · webmp3/Sakura-MiniMax-H3-GGUF at main",
+      "url": "https://huggingface.co/webmp3/Sakura-MiniMax-H3-GGUF/blob/main/README.md",
+      "snippet": "This repository holds the denoiser and unmodified copies of the two VAEs. The Qwen3-VL text encoder is a separate file: an abliterated (\"uncensored\") build is available as a separate repository, Sakura-MiniMax-H3-Uncensored-GGUF; unchanged encoders in GGUF exist from other community members (for example leejet/MiniMax-H3-GGUF)."
+    },
+    {
+      "title": "Models compatible with the GGUF library - Hugging Face",
+      "url": "https://huggingface.co/models?library=gguf",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "GitHub - local-ai-zone/local-ai-zone.github.io: My public AI learning ...",
+      "url": "https://github.com/local-ai-zone/local-ai-zone.github.io",
+      "snippet": "A professional web application for discovering and browsing GGUF (GPT-Generated Unified Format) machine learning models. Browse thousands of quantized AI models with detailed metadata, engagement metrics, and direct download links. Want to see a complete local AI agent you can run today? GGUF Loader ..."
+    },
+    {
+      "title": "GitHub - leafspark/AutoGGUF: automatically quant GGUF models",
+      "url": "https://github.com/leafspark/AutoGGUF",
+      "snippet": "AutoGGUF - automated GGUF model quantizer The most comprehensive GUI tool for GGUF model quantization. Stop wrestling with command lines - quantize, merge, and optimize your models with just a few clicks."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    }
+  ]
+}

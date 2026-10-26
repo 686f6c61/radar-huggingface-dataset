@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "value-productions/quickmt-id-en-int8",
+  "slug": "value-productions-quickmt-id-en-int8",
+  "author": "value-productions",
+  "url": "https://huggingface.co/value-productions/quickmt-id-en-int8",
+  "created_at": "2026-10-26T01:38:50.000Z",
+  "updated_at": "2026-10-26T01:39:09.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "translation",
+    "ctranslate2",
+    "int8",
+    "yaku-translate",
+    "base_model:quickmt/quickmt-id-en",
+    "base_model:finetune:quickmt/quickmt-id-en",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 207861818,
+  "storage_human": "208 MB",
+  "base_model": "quickmt/quickmt-id-en",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "value - Traduction française – Linguee",
+      "url": "https://www.linguee.fr/anglais-francais/traduction/value.html",
+      "snippet": "De très nombreux exemples de phrases traduites contenant \"value\" – Dictionnaire français-anglais et moteur de recherche de …"
+    },
+    {
+      "title": "Traduction : value - Dictionnaire anglais-français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/anglais-francais/value/622165",
+      "snippet": "value - Traduction Anglais-Français : Retrouvez la traduction de value, mais également sa prononciation, la traduction des …"
+    },
+    {
+      "title": "value - English-French Dictionary WordReference.com",
+      "url": "https://www.wordreference.com/enfr/value",
+      "snippet": "Dans les listes : Top 2000 English words, Stock market terms, PET Vocabulary List - V, Suite... Synonymes : price, cost, worth, …"
+    },
+    {
+      "title": "Traduction VALUE en français | Dictionnaire anglais-français | Reverso",
+      "url": "https://dictionnaire.reverso.net/anglais-francais/value",
+      "snippet": "Traduction de \"value\" en français : valeur. Nom, verbe, signification, prononciation, expressions idiomatiques en anglais, synonymes …"
+    },
+    {
+      "title": "VALUE | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/value",
+      "snippet": "VALUE definition: 1. the amount of money that can be received for something: 2. the importance or worth of something…. Learn more."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "kenrunio/transcriber-punctuation-onnx",
+  "slug": "kenrunio-transcriber-punctuation-onnx",
+  "author": "kenrunio",
+  "url": "https://huggingface.co/kenrunio/transcriber-punctuation-onnx",
+  "created_at": "2026-10-20T19:29:56.000Z",
+  "updated_at": "2026-10-26T09:38:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "onnx",
+  "languages": [
+    "en",
+    "de",
+    "fr",
+    "it"
+  ],
+  "tags": [
+    "onnx",
+    "punctuation",
+    "punctuation-prediction",
+    "token-classification",
+    "en",
+    "de",
+    "fr",
+    "it",
+    "base_model:oliverguhr/fullstop-punctuation-multilang-large",
+    "base_model:quantized:oliverguhr/fullstop-punctuation-multilang-large",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2820593427,
+  "storage_human": "2.8 GB",
+  "base_model": "oliverguhr/fullstop-punctuation-multilang-large",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Porn Videos & Sex Movies - Porno, XXX, Porn Tube | Pornhub",
+      "url": "https://www.pornhub.com/",
+      "snippet": "Pornhub provides you with unlimited free porn videos with the hottest pornstars. Enjoy the largest amateur porn community on the …"
+    },
+    {
+      "title": "جدید Porn Videos | Pornhub.com",
+      "url": "https://www.pornhub.com/video/search?search=%D8%AC%D8%AF%DB%8C%D8%AF",
+      "snippet": "Browse through our impressive selection of porn videos in HD quality on any device you own."
+    },
+    {
+      "title": "Pornhub | Free Porn Videos & Sex Movies - Porno, XXX Tube",
+      "url": "https://m-pornhub.com/",
+      "snippet": "Enjoy the hottest free porn videos in HD. Pornhub run has all the latest with top pornstars in every xxx video category."
+    },
+    {
+      "title": "فیلم سکس رایگان و فیلم‌های XXX - سایت فیلم سکس",
+      "url": "https://fa.xhamster.com/",
+      "snippet": "ویدیوهای پورن رایگان و فیلم‌های XXX انحصاری در xHamster منتظر شماست. همین حالا بیش از ۶ میلیون ویدیوی سکسی هاردکور از حرفه‌ای‌ها و آماتورها را با کیفیت بالا در این سایت پورن …"
+    },
+    {
+      "title": "پورن هاپ – Vidéos Porno | Pornhub.com",
+      "url": "https://fr.pornhub.com/video/search?search=%D9%BE%D9%88%D8%B1%D9%86+%D9%87%D8%A7%D9%BE",
+      "snippet": "Parcours notre impressionnante sélection de vidéos porno en qualité HD sur n'importe quel appareil que tu possèdes."
+    }
+  ]
+}

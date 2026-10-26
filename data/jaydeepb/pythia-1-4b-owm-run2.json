@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "jaydeepb/pythia-1.4b-owm-run2",
+  "slug": "jaydeepb-pythia-1-4b-owm-run2",
+  "author": "jaydeepb",
+  "url": "https://huggingface.co/jaydeepb/pythia-1.4b-owm-run2",
+  "created_at": "2026-10-26T02:10:29.000Z",
+  "updated_at": "2026-10-26T02:11:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "memorization",
+    "fine-tuned",
+    "dataset:open-web-math/open-web-math",
+    "base_model:EleutherAI/pythia-1.4b",
+    "base_model:finetune:EleutherAI/pythia-1.4b",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1414647808,
+  "parameters_human": "1.41B",
+  "storage_bytes": 2829330208,
+  "storage_human": "2.8 GB",
+  "base_model": "EleutherAI/pythia-1.4b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Café Sameplace : r/Amsterdam - Reddit",
+      "url": "https://www.reddit.com/r/Amsterdam/comments/vohtss/caf%C3%A9_sameplace/",
+      "snippet": "Jun 30, 2022 · Sameplace had some stunning people, but it also had a really relaxed and friendly vibe, with an emphasis on people …"
+    },
+    {
+      "title": "Advice for couple in Amsterdam for weekend fun? : r/Amsterdam - Reddit",
+      "url": "https://www.reddit.com/r/Amsterdam/comments/1i2ipw/advice_for_couple_in_amsterdam_for_weekend_fun/",
+      "snippet": "Jul 11, 2013 · Amsterdam, Mokum, the capital of the Netherlands. We're the subreddit for everything Amsterdam, in Dutch or in …"
+    },
+    {
+      "title": "Anyone been to the adult club Sameplace? - Reddit",
+      "url": "https://www.reddit.com/r/AmsterdamEnts/comments/11pogl0/anyone_been_to_the_adult_club_sameplace/",
+      "snippet": "Mar 12, 2023 · We’re going on yet another trip to Amsterdam in a couple of months, we have our key coffee shops we want to visit …"
+    },
+    {
+      "title": "SamePlace Amsterdam : r/Swingers - Reddit",
+      "url": "https://www.reddit.com/r/Swingers/comments/1bdy2ty/sameplace_amsterdam/",
+      "snippet": "I thought it was a good spot, nothing spectacular, but my wife had such a blast we are making it a point to return for a night during …"
+    },
+    {
+      "title": "Is it really so terrible to visit? : r/istanbul - Reddit",
+      "url": "https://www.reddit.com/r/istanbul/comments/16q7qz9/is_it_really_so_terrible_to_visit/",
+      "snippet": "Sep 23, 2023 · It is still better than amsterdam where entire centre is tourist trap. I can give you some pointers for food whatnot. Also …"
+    }
+  ]
+}

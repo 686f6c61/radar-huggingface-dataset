@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Dawcade/assistant",
+  "slug": "dawcade-assistant",
+  "author": "Dawcade",
+  "url": "https://huggingface.co/Dawcade/assistant",
+  "created_at": "2026-10-26T09:27:16.000Z",
+  "updated_at": "2026-10-26T09:28:07.000Z",
+  "license": "mixed-apache-2.0-cc-by-4.0-bsd",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "gguf",
+    "lora",
+    "text-to-speech",
+    "base_model:google/gemma-4-E4B-it-qat-q4_0-unquantized",
+    "base_model:adapter:google/gemma-4-E4B-it-qat-q4_0-unquantized",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34881536,
+  "parameters_human": "34.9M",
+  "storage_bytes": 159593104,
+  "storage_human": "160 MB",
+  "base_model": "google/gemma-4-E4B-it-qat-q4_0-unquantized",
+  "formats": [
+    "gguf",
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dawcade — Handheld DAW | Out now on Google Play and the App Store",
+      "url": "https://dawcade.com/",
+      "snippet": "Dawcade is a mobile-first digital audio workstation for handheld Android devices, iPhone and iPad. Compose, perform and arrange with touch-native instruments, generative play surfaces and low-latency audio."
+    },
+    {
+      "title": "Autodesk Assistant | your agentic AI partner",
+      "url": "https://www.autodesk.com/solutions/autodesk-ai/autodesk-assistant",
+      "snippet": "Autodesk Assistant brings AI directly into Design and Make workflows, helping you execute tasks, find information, and move work forward without leaving your tools. It understands your models, your project context, and the task in front of you. From quick \"how do I…\" questions to completing design and project tasks through simple prompts, Assistant helps you move from question to action ..."
+    },
+    {
+      "title": "Supported models | AI Assistant Documentation - JetBrains",
+      "url": "https://www.jetbrains.com/help/ai-assistant/supported-llms.html",
+      "snippet": "Last modified: 05 October 2026 AI Assistant uses a variety of AI models to power its features and AI Chat. By default, these models are provided through the JetBrains AI service, but you can also use models from supported third-party providers with your own API key or connect locally hosted models. This flexibility lets you choose the setup that best fits your workflow and privacy requirements."
+    },
+    {
+      "title": "Dawcade - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.dawcade&hl=en-US",
+      "snippet": "Pocket Music Studio: synths, drum kits, sampler and playful touch surfaces."
+    },
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "A daily-updated list of every free AI model (free LLM API) available right now, ranked every day by an open quality score — with who actually serves each model and whether they may train on your prompts. Want one OpenAI-compatible endpoint that routes to the best of these for you? ZeroLimitAI is ..."
+    }
+  ]
+}

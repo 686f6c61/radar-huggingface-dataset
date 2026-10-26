@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "plieggo/sd-v1-4-lora-oldbook",
+  "slug": "plieggo-sd-v1-4-lora-oldbook",
+  "author": "plieggo",
+  "url": "https://huggingface.co/plieggo/sd-v1-4-lora-oldbook",
+  "created_at": "2026-10-26T09:27:04.000Z",
+  "updated_at": "2026-10-26T09:27:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5763437,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Th4dd3us/sd14-oldbook-lora · Hugging Face",
+      "url": "https://huggingface.co/Th4dd3us/sd14-oldbook-lora",
+      "snippet": "Instructions to use Th4dd3us/sd14-oldbook-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use Th4dd3us/sd14-oldbook-lora with Diffusers:"
+    },
+    {
+      "title": "adrianoropezal/sd-v1-4-oldbook-illustrations-lora · Hugging Face",
+      "url": "https://huggingface.co/adrianoropezal/sd-v1-4-oldbook-illustrations-lora",
+      "snippet": "adrianoropezal / sd-v1-4-oldbook-illustrations-lora Like 0 Text-to-Image Diffusers gigant/oldbookillustrations stable-diffusion lora License:creativeml-openrail-m Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Sd V1 4 Lora Oldbookillustrations - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/agg-07/sd-v1-4-lora-oldbookillustrations",
+      "snippet": "Registry entry for model Sd V1 4 Lora Oldbookillustrations; source metadata pending."
+    },
+    {
+      "title": "GitHub - PMurguia/sd14-oldbook-lora",
+      "url": "https://github.com/PMurguia/sd14-oldbook-lora",
+      "snippet": "Contribute to PMurguia/sd14-oldbook-lora development by creating an account on GitHub."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, DeepSeek, Qwen, Mistral, Z.ai, Meta, and important open-weight model families."
+    }
+  ]
+}

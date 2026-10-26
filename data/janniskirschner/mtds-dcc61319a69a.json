@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "janniskirschner/mtds-dcc61319a69a",
+  "slug": "janniskirschner-mtds-dcc61319a69a",
+  "author": "janniskirschner",
+  "url": "https://huggingface.co/janniskirschner/mtds-dcc61319a69a",
+  "created_at": "2026-10-26T09:15:54.000Z",
+  "updated_at": "2026-10-26T09:17:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "base_model:Qwen/Qwen2.5-7B",
+    "base_model:finetune:Qwen/Qwen2.5-7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693760,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Download - Jan",
+      "url": "https://www.jan.ai/download",
+      "snippet": "Download Jan for your desktop Turn your computer into an AI computer"
+    },
+    {
+      "title": "Overview of Model Garden | Gemini Enterprise Agent Platform | Google ...",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/model-garden/explore-models",
+      "snippet": "Jumpstart your ML project with a single place to discover, customize, and deploy a wide variety of models from Google and Google partners. Model Garden provides a collection of pre-trained models and assets that you can use to build and deploy your own AI applications."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Qwen, Mistral AI, Moonshot AI, Z.ai, MiniMax, NVIDIA, Microsoft AI, Cohere, Xiaomi, and other prominent AI labs. The newest-first tables show each release date, provider, and model type. Dates use the earliest meaningful availability stage for each entry. Preview access ..."
+    },
+    {
+      "title": "Explore Model Garden | Google AI Edge | Google for Developers",
+      "url": "https://developers.google.com/edge/tensor-sdk/model-garden",
+      "snippet": "Model Garden provides a collection of state-of-the-art machine learning (ML) models for vision, text, and audio capabilities. These models are optimized for use with the Google Tensor SDK, letting you bring powerful AI features directly to your Pixel devices with seamless on-device performance."
+    },
+    {
+      "title": "Open Source AI Models 2026: Llama, Mistral, DeepSeek & The Complete Guide",
+      "url": "https://aiunpacking.com/guides/open-source-ai-models-2026-llama-mistral-deepseek/",
+      "snippet": "A current guide to open and open-weight AI models in 2026, including Llama 5, Mistral Large 3, DeepSeek V4, licensing, deployment, fine-tuning, and enterprise selection."
+    }
+  ]
+}

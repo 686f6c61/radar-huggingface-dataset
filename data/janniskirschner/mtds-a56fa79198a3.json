@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "janniskirschner/mtds-a56fa79198a3",
+  "slug": "janniskirschner-mtds-a56fa79198a3",
+  "author": "janniskirschner",
+  "url": "https://huggingface.co/janniskirschner/mtds-a56fa79198a3",
+  "created_at": "2026-10-26T09:19:57.000Z",
+  "updated_at": "2026-10-26T09:21:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "base_model:Qwen/Qwen2.5-7B",
+    "base_model:finetune:Qwen/Qwen2.5-7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693760,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Browse All AI Models | Prompt Directory - PromptAIGrid",
+      "url": "https://www.promptaigrid.com/ai-models",
+      "snippet": "Home / AI Models AI Models Directory Browse 18 AI model s with ready-to-use prompts and real example outputs - filter by category and pick the right engine for your next generation."
+    },
+    {
+      "title": "JannisKirschner (Jannis) · GitHub",
+      "url": "https://github.com/JannisKirschner",
+      "snippet": "Hello there :) I&#x27;m a Security Researcher from Switzerland. My interests are networking, programming, it-security, data science, and life sciences - JannisKirschner"
+    },
+    {
+      "title": "AI Image Detector & Checker — Is This Photo AI or Real? | WeDetect",
+      "url": "https://wedetect.ai/",
+      "snippet": "How our AI image detector works Upload or paste an image and it runs through a machine-learning model trained on millions of real and AI-generated images across many generators. It spots the statistical fingerprints of AI generation and returns a probability. Learn more about how AI image detectors work, or how to tell if an image is AI-generated."
+    },
+    {
+      "title": "An Amish Avatar and an A.I. Monk Are Pitching Supplements on Social ...",
+      "url": "https://www.nytimes.com/2026/03/09/business/media/fake-ai-generated-accounts-social-media-supplements.html",
+      "snippet": "Influencers have long hawked supplements on platforms like Instagram and TikTok. Increasingly, the influencers are fake."
+    },
+    {
+      "title": "Best Jmc - Epoch 5 AI LORA - Free Download | Tensor.Art",
+      "url": "https://tensor.art/models/861750881085878181",
+      "snippet": "Download Jmc - free LORA SDXL 1.0 AI model on TENSOR. SDXL. By Junskirt"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "vincyber/skejja-edge32k-ft6",
+  "slug": "vincyber-skejja-edge32k-ft6",
+  "author": "vincyber",
+  "url": "https://huggingface.co/vincyber/skejja-edge32k-ft6",
+  "created_at": "2026-10-26T08:53:18.000Z",
+  "updated_at": "2026-10-26T09:34:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": "onnxruntime",
+  "languages": [
+    "en",
+    "it",
+    "es",
+    "de",
+    "fr"
+  ],
+  "tags": [
+    "onnxruntime",
+    "system-one",
+    "typed-decisions",
+    "choice",
+    "yes-no",
+    "calibration",
+    "onnx",
+    "int8",
+    "raspberry-pi",
+    "edge",
+    "multilingual",
+    "zero-shot-classification",
+    "en",
+    "it",
+    "es",
+    "de",
+    "fr",
+    "dataset:mteb/amazon_massive_intent",
+    "base_model:knowledgator/gliclass-multilang-edge",
+    "base_model:finetune:knowledgator/gliclass-multilang-edge",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 420605288,
+  "storage_human": "421 MB",
+  "base_model": "knowledgator/gliclass-multilang-edge",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Top AI Video Generation Models: A Complete Guide for 2026",
+      "url": "https://converge.ai/framia/blog/ai-video-generation-models/",
+      "snippet": "Learn about the 8 leading AI video generation models and how to choose the right one. Use Framia Pro to test multiple tools for video creation in one place."
+    },
+    {
+      "title": "AI Model Directory: 647 AI Models by Provider | Free.ai",
+      "url": "https://free.ai/models/",
+      "snippet": "Browse every AI model on Free.ai: 647 models organised by provider, covering chat, image, video, voice, code and more, with free daily tokens on every account."
+    },
+    {
+      "title": "Best AI Video Model in 2026: Complete Comparison of 12 Top Generators ...",
+      "url": "https://www.elser.ai/blog/best-ai-video-model-in-2026",
+      "snippet": "Looking for the single best AI video model in 2026? Spoiler: there isn&#x27;t one. But this complete comparison of 12 leading models — Seedance, Kling, Veo, Grok, Happy Horse, Wan, and more — will help you pick the right one for your workflow."
+    },
+    {
+      "title": "Best AI Video Model in 2026: Complete Comparison Guide (Sora 2, Veo 3.1 ...",
+      "url": "https://blog.laozhang.ai/en/posts/best-ai-video-model",
+      "snippet": "Compare the best AI video models in 2026 including Sora 2, Veo 3.1, Runway Gen-4.5, Kling 2.6, and open-source options. Features verified pricing data, real cost calculations per 10-second video, scene-based recommendations, and an API developer guide."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, DeepSeek, Qwen, Mistral, Z.ai, Meta, and important open-weight model families."
+    }
+  ]
+}

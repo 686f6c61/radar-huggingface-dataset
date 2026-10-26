@@ -1,0 +1,114 @@
+{
+  "schema": 1,
+  "id": "nphearum/voxlock",
+  "slug": "nphearum-voxlock",
+  "author": "nphearum",
+  "url": "https://huggingface.co/nphearum/voxlock",
+  "created_at": "2026-10-26T08:48:48.000Z",
+  "updated_at": "2026-10-26T08:48:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-to-audio",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "voice-isolation",
+    "background-voice-cancellation",
+    "background-voice-removal",
+    "target-speaker-extraction",
+    "speaker-extraction",
+    "personalized-speech-enhancement",
+    "speech-enhancement",
+    "audio",
+    "speech",
+    "voice-agents",
+    "telephony",
+    "call-center",
+    "streaming",
+    "real-time",
+    "low-latency",
+    "bsrnn",
+    "pytorch",
+    "onnxruntime",
+    "int8",
+    "quantized",
+    "pipecat",
+    "webassembly",
+    "audio-to-audio",
+    "en",
+    "dataset:openslr/librispeech_asr",
+    "dataset:edinburghcstr/ami",
+    "base_model:Wespeaker/wespeaker-voxceleb-ecapa-tdnn512",
+    "base_model:finetune:Wespeaker/wespeaker-voxceleb-ecapa-tdnn512",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27258122,
+  "parameters_human": "27.3M",
+  "storage_bytes": 386145968,
+  "storage_human": "386 MB",
+  "base_model": "Wespeaker/wespeaker-voxceleb-ecapa-tdnn512",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Voice isolation",
+      "dataset": "Krisp Voice Isolation Benchmark, 265 real recordings",
+      "metric": "Word error rate after isolation (Parakeet TDT 0.6B v2)",
+      "value": 4.95
+    },
+    {
+      "task": "Voice isolation",
+      "dataset": "Krisp Voice Isolation Benchmark, 265 real recordings",
+      "metric": "Background words leaked per minute of background-only speech",
+      "value": 0.11
+    },
+    {
+      "task": "Voice isolation",
+      "dataset": "AMI meetings, headset wearer as caller, 134 held-out windows",
+      "metric": "Word error rate after isolation (Parakeet TDT 0.6B v3)",
+      "value": 10.12
+    }
+  ],
+  "sources": [
+    {
+      "title": "Porno gratuit recommandé: vidéos de sexe hardcore | Pornhub",
+      "url": "https://fr.pornhub.com/recommended",
+      "snippet": "Avoir quelqu'un qui vous recommande du porno gratuit, c'est comme avoir un conservateur pour votre collection de XXX. Profitez …"
+    },
+    {
+      "title": "Sophie Dee Vidéos Porno - Profil Vérifié de Pornstar | Pornhub",
+      "url": "https://fr.pornhub.com/pornstar/sophie-dee",
+      "snippet": "Venez voir les meilleures vidéos pornos, images, gifs et playlists de la pornstar Sophie Dee. Parcourez le contenu qu'elle a uploadé …"
+    },
+    {
+      "title": "Nicole Aniston Vidéos Porno - Profil Vérifié de Pornstar | Pornhub",
+      "url": "https://fr.pornhub.com/pornstar/nicole-aniston",
+      "snippet": "Venez voir les meilleures vidéos pornos, images, gifs et playlists de la pornstar Nicole Aniston. Parcourez le contenu qu'elle a …"
+    },
+    {
+      "title": "Step Mom – Vidéos Porno | Pornhub.com",
+      "url": "https://fr.pornhub.com/video/search?search=step+mom",
+      "snippet": "Regarde les vidéos porno de Step Mom gratuitement, ici sur Pornhub.com. Découvre la collection plus importante de films et de clips …"
+    },
+    {
+      "title": "Vidéos porno HD : Les filles les plus sexy en haute définition | Pornhub",
+      "url": "https://fr.pornhub.com/hd",
+      "snippet": "Porno HD gratuit sur Pornhub.com. Vous cherchez des vidéos de sexe en haute définition dans chaque niche XXX triple ? Le …"
+    }
+  ]
+}

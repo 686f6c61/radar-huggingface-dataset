@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "jaydeepb/pythia-1.4b-fineweb-run2",
+  "slug": "jaydeepb-pythia-1-4b-fineweb-run2",
+  "author": "jaydeepb",
+  "url": "https://huggingface.co/jaydeepb/pythia-1.4b-fineweb-run2",
+  "created_at": "2026-10-26T02:09:49.000Z",
+  "updated_at": "2026-10-26T02:10:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "memorization",
+    "fine-tuned",
+    "dataset:HuggingFaceFW/fineweb",
+    "base_model:EleutherAI/pythia-1.4b",
+    "base_model:finetune:EleutherAI/pythia-1.4b",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1414647808,
+  "parameters_human": "1.41B",
+  "storage_bytes": 2829330208,
+  "storage_human": "2.8 GB",
+  "base_model": "EleutherAI/pythia-1.4b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EleutherAI/pythia-1.4b · Hugging Face",
+      "url": "https://huggingface.co/EleutherAI/pythia-1.4b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - EleutherAI/pythia: The hub for EleutherAI&#x27;s work on ...",
+      "url": "https://github.com/EleutherAI/pythia",
+      "snippet": "This repository is for EleutherAI&#x27;s project Pythia which combines interpretability analysis and scaling laws to understand how knowledge develops and evolves during training in autoregressive transformers. For detailed info on the models, their training, and their properties, please see our paper Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling. The Pythia suite ..."
+    },
+    {
+      "title": "EleutherAI/pythia-1.4b-v0 · Hugging Face",
+      "url": "https://huggingface.co/EleutherAI/pythia-1.4b-v0",
+      "snippet": "The Pythia Scaling Suite is a collection of models developed to facilitate interpretability research. It contains two sets of eight models of sizes 70M, 160M, 410M, 1B, 1.4B, 2.8B, 6.9B, and 12B. For each size, there are two models: one trained on the Pile, and one trained on the Pile after the dataset has been globally deduplicated. All 8 model sizes are trained on the exact same data, in the ..."
+    },
+    {
+      "title": "Pythia-1.4B: Self-Hosted AI for Private Ops Automation",
+      "url": "https://llm.co/llms/pythia-1-4b",
+      "snippet": "Pythia-1.4B is a compact, Apache 2.0 open-weight transformer trained on The Pile with 154 intermediate checkpoints for full training-path transparency. It&#x27;s designed for research but viable for companies running custom ops AI in their own environment—you get the full model, the training history, and no vendor lock-in."
+    },
+    {
+      "title": "Pythia 1.4B - 2k context, open source | LLM Reference",
+      "url": "https://www.llmreference.com/model/pythia-1.4b",
+      "snippet": "Pythia 1.4B, developed by EleutherAI, is a transformer-based large language model comprising 1.4 billion parameters. As part of the Pythia Scaling Suite, this model is designed to aid research on the behavior and limitations of large language models. It excels in generating text, understanding natural language, and supporting scientific experiments, making it a valuable tool for ..."
+    }
+  ]
+}

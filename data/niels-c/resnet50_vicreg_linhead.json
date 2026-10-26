@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "niels-c/resnet50_vicreg_linhead",
+  "slug": "niels-c-resnet50_vicreg_linhead",
+  "author": "niels-c",
+  "url": "https://huggingface.co/niels-c/resnet50_vicreg_linhead",
+  "created_at": "2026-10-26T09:02:14.000Z",
+  "updated_at": "2026-10-26T09:02:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "resnet50 — Torchvision main documentation",
+      "url": "https://docs.pytorch.org/vision/main/models/generated/torchvision.models.resnet50.html",
+      "snippet": "The inference transforms are available at ResNet50_Weights.IMAGENET1K_V2.transforms and perform the following preprocessing operations: Accepts PIL.Image, batched (B, C, H, W) and single (C, H, W) image torch.Tensor objects."
+    },
+    {
+      "title": "Ramos-Ramos/vicreg-resnet-50 · Hugging Face",
+      "url": "https://huggingface.co/Ramos-Ramos/vicreg-resnet-50",
+      "snippet": "Weights converted from the official VICReg ResNet using this script. For up-to-date model card information, please see the original repo. How to use Warning: The feature extractor in this repo is a copy of the one from microsoft/resnet-50. We never verified if this image prerprocessing is the one used with VICReg ResNet-50."
+    },
+    {
+      "title": "GitHub - facebookresearch/vicreg: VICReg official code base",
+      "url": "https://github.com/facebookresearch/vicreg",
+      "snippet": "VICReg official code base. Contribute to facebookresearch/vicreg development by creating an account on GitHub."
+    },
+    {
+      "title": "Using Pre-trained Models | facebookresearch/vicreg | DeepWiki",
+      "url": "https://deepwiki.com/facebookresearch/vicreg/2-using-pre-trained-models",
+      "snippet": "This document provides guidance on accessing and using the pre-trained VICReg models available in this repository. It covers the two primary access methods: PyTorch Hub integration for programmatic access and direct downloads for manual model loading."
+    },
+    {
+      "title": "Available Models | facebookresearch/vicreg | DeepWiki",
+      "url": "https://deepwiki.com/facebookresearch/vicreg/2.2-available-models",
+      "snippet": "This page catalogs all pre-trained VICReg models available for download and use, including their architecture specifications, performance metrics, and access methods. The models are available both through direct download links and PyTorch Hub integration."
+    }
+  ]
+}

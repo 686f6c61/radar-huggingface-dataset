@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "tiao-ai-tech/kinomat-aligner-de",
+  "slug": "tiao-ai-tech-kinomat-aligner-de",
+  "author": "tiao-ai-tech",
+  "url": "https://huggingface.co/tiao-ai-tech/kinomat-aligner-de",
+  "created_at": "2026-10-26T09:07:44.000Z",
+  "updated_at": "2026-10-26T09:21:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [
+    "de"
+  ],
+  "tags": [
+    "onnx",
+    "wav2vec2",
+    "ctc",
+    "forced-alignment",
+    "german",
+    "de",
+    "dataset:mozilla-foundation/common_voice_9_0",
+    "base_model:oliverguhr/wav2vec2-base-german-cv9",
+    "base_model:quantized:oliverguhr/wav2vec2-base-german-cv9",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 121925723,
+  "storage_human": "122 MB",
+  "base_model": "oliverguhr/wav2vec2-base-german-cv9",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OrthoAI v2: From Single-Agent Segmentation to Dual-Agent Treatment ...",
+      "url": "https://arxiv.org/pdf/2603.15663",
+      "snippet": "Abstract We present ORTHOAI v2, the second iteration of our open-source pipeline for AI-assisted orthodontic treatment planning with clear aligners, substantially extending the single-agent framework introduced in [1]."
+    },
+    {
+      "title": "Unveiling the role of artificial intelligence applied to clear aligner ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0300571225000107",
+      "snippet": "To conduct a scoping review on the application of artificial intelligence (AI) in clear aligner therapy and to assess the extent of AI integration and automation in orthodontic software currently available to orthodontists."
+    },
+    {
+      "title": "AI in Clear Aligner Treatment Planning: 2026 Guide | Dental Planning Lab",
+      "url": "https://www.dentalplanninglab.com/blogs/ai-clear-aligner-treatment-planning",
+      "snippet": "Learn how AI is used in clear aligner treatment planning for tooth segmentation, digital setups, CBCT integration, monitoring and prediction — and where human review still matters."
+    },
+    {
+      "title": "[2603.00124v1] OrthoAI: A Lightweight Deep Learning Framework for ...",
+      "url": "https://arxiv.org/abs/2603.00124v1",
+      "snippet": "Clear aligner therapy now dominates orthodontics, yet clinician review of digitally planned tooth movements-typically via ClinCheck (Align Technology)-remains slow and error-prone. We present OrthoAI, an open-source proof-of-concept decision-support system combining lightweight 3D dental segmentation with automated biomechanical analysis to assist treatment-plan evaluation. The framework uses ..."
+    },
+    {
+      "title": "How AI Clear Aligner Software Works: The 4-Step Workflow",
+      "url": "https://www.bestsmiletech.com/how-ai-orthodontic-software-actually-works/",
+      "snippet": "Without sufficient CBCT-enriched patient data, AI systems default to superficial crown alignment rather than anatomically sound tooth movement. Many clear aligner design software fail to follow clinical logic and merely straighten teeth, resulting in frequent unnecessary refinements and restarts, especially for moderate and complex cases."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "sidchalamala/aether-coder-1.5b-lora",
+  "slug": "sidchalamala-aether-coder-1-5b-lora",
+  "author": "sidchalamala",
+  "url": "https://huggingface.co/sidchalamala/aether-coder-1.5b-lora",
+  "created_at": "2026-10-25T19:24:24.000Z",
+  "updated_at": "2026-10-26T02:47:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "code",
+    "dsl",
+    "aether",
+    "base_model:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 73911112,
+  "storage_human": "74 MB",
+  "base_model": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lewd - Jeux porno",
+      "url": "https://fr.gamcore.com/lewd",
+      "snippet": "Jouons à une parodie folle et amusante de \"Bienvenue chez les Loud\" de Nickelodeon. Dans ce jeu, vous incarnez Lincoln, le frère …"
+    },
+    {
+      "title": "Nude Bienvenue Chez Les Loud – Vidéos Porno | Pornhub.com",
+      "url": "https://fr.pornhub.com/video/search?search=nude+bienvenue+chez+les+loud",
+      "snippet": "Regarde les vidéos porno de Nude Bienvenue Chez Les Loud gratuitement, ici sur Pornhub.com. Découvre la collection plus …"
+    },
+    {
+      "title": "Loud House Hentai – Vidéos Porno | Pornhub.com",
+      "url": "https://fr.pornhub.com/video/search?search=loud+house+hentai",
+      "snippet": "Regarde les vidéos porno de Loud House Hentai gratuitement, ici sur Pornhub.com. Découvre la collection plus importante de films …"
+    },
+    {
+      "title": "Loud house hentai Vidéos Porno - xHamster",
+      "url": "https://fra.xhamster.com/search/loud+house+hentai",
+      "snippet": "Regardez des vidéos pornos loud house hentai. Découvrez des tonnes de films XXX de avec des scènes de sexe en 2026 sur …"
+    },
+    {
+      "title": "Nude Bienvenue Chez Les Loud Porn Videos | Pornhub.com",
+      "url": "https://www.pornhub.com/video/search?search=nude+bienvenue+chez+les+loud",
+      "snippet": "Watch Nude Bienvenue Chez Les Loud porn videos for free, here on Pornhub.com. Discover the growing collection of high quality …"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "akino222333/pi05-dobot-four-instrument-full-v1-30k",
+  "slug": "akino222333-pi05-dobot-four-instrument-full-v1-30k",
+  "author": "akino222333",
+  "url": "https://huggingface.co/akino222333/pi05-dobot-four-instrument-full-v1-30k",
+  "created_at": "2026-10-26T00:39:21.000Z",
+  "updated_at": "2026-10-26T09:32:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "pi05",
+    "dataset:akino222333/dobot-four-instrument-descriptive-v1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 193805696303,
+  "storage_human": "193.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SimCube VLA Fine-tuned Models - a akino222333 Collection",
+      "url": "https://huggingface.co/collections/akino222333/simcube-vla-fine-tuned-models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "akino222333/simcube-pi05-lora-30k · Hugging Face",
+      "url": "https://huggingface.co/akino222333/simcube-pi05-lora-30k",
+      "snippet": "akino222333 / simcube-pi05-lora-30k Like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "GitHub - jkim447/pi05-humanoid · GitHub",
+      "url": "https://github.com/jkim447/pi05-humanoid",
+      "snippet": "openpi holds open-source models and packages for robotics, published by the Physical Intelligence team. Currently, this repo contains three types of models: the π₀ model, a flow-based vision-language-action model (VLA). the π₀-FAST model, an autoregressive VLA, based on the FAST action tokenizer. the π₀.₅ model, an upgraded version of π₀ with better open-world generalization ..."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/pi05 at main - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/tree/main/src/qai_hub_models/models/pi05",
+      "snippet": "More details on model performance across various devices, can be found here. Qualcomm AI Hub Models uses Qualcomm AI Hub Workbench to compile, profile, and evaluate this model."
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/",
+      "snippet": "We couldn&#x27;t load your remembered accounts. You can still log in below"
+    }
+  ]
+}

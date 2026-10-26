@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "hyukudan/Qwen3.8-Flash-Next-GSQ-hybrid-Q2",
+  "slug": "hyukudan-qwen3-8-flash-next-gsq-hybrid-q2",
+  "author": "hyukudan",
+  "url": "https://huggingface.co/hyukudan/Qwen3.8-Flash-Next-GSQ-hybrid-Q2",
+  "created_at": "2026-10-26T09:03:38.000Z",
+  "updated_at": "2026-10-26T09:09:14.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen",
+    "gsq",
+    "strix-halo",
+    "arxiv:2604.18556",
+    "arxiv:2605.00649",
+    "base_model:ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
+    "base_model:quantized:ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 176943899520,
+  "parameters_human": "176.94B",
+  "storage_bytes": 68290609600,
+  "storage_human": "68.3 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next, unsloth/Qwen3.8-Flash-Next-GGUF, ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "hyukudan/Qwen3.8-Flash-Next-GSQ-RCO-GGUF-mirror · Hugging Face",
+      "url": "https://huggingface.co/hyukudan/Qwen3.8-Flash-Next-GSQ-RCO-GGUF-mirror",
+      "snippet": "The engine&#x27;s opt-in GSQ speed profile (STRIX_GSQ_Q20_A8=1, never the default) composes a hybrid file: the production UD-Q4_K_XL GGUF with every layer&#x27;s routed experts replaced by the Q2_0 tensors from these shards (byte copies)."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "In this release we are opening the weights of Qwen3.8-Flash-Next, a multimodal MoE model that also serves as an early preview of the architecture used in Qwen4. It plays the same role that Qwen3-Next played for Qwen3.5: the hybrid Gated DeltaNet + Gated Attention design introduced at that time has since been used across the Qwen3.5, Qwen3.6, Qwen3.7 and Qwen3.8 series. We are again releasing ..."
+    },
+    {
+      "title": "Qwen3.8 Flash Next Gsq Rco - GGUF Model (2 parts)",
+      "url": "https://local-ai-zone.github.io/models/qwen3-8-flash-next-gsq-rco.html",
+      "snippet": "Download Qwen3.8 Flash Next Gsq Rco GGUF model. 8.27 GB, 6,740,278 downloads, 1019 likes. Split into 2 parts."
+    },
+    {
+      "title": "GitHub - Niko1221/Strata: Qwen3.8-Flash-Next on any consumer hardware ...",
+      "url": "https://github.com/Niko1221/Strata",
+      "snippet": "Qwen3.8-Flash-Next on any consumer hardware: one-click install for Windows / Linux. Strata inference engine, OpenAI/Anthropic API on localhost, optional image input."
+    }
+  ]
+}

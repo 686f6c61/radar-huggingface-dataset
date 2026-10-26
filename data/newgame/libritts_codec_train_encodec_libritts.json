@@ -5,7 +5,7 @@
   "author": "NewGame",
   "url": "https://huggingface.co/NewGame/libritts_codec_train_encodec_libritts",
   "created_at": "2026-09-05T23:42:25.000Z",
-  "updated_at": "2026-09-05T23:42:28.000Z",
+  "updated_at": "2026-10-24T17:10:39.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -13,12 +13,12 @@
   "languages": [],
   "tags": [
     "espnet",
-    "gancodec",
+    "esp2_codec",
     "libritts",
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 6,
+  "downloads_30d": 26,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

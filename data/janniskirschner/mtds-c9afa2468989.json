@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "janniskirschner/mtds-c9afa2468989",
+  "slug": "janniskirschner-mtds-c9afa2468989",
+  "author": "janniskirschner",
+  "url": "https://huggingface.co/janniskirschner/mtds-c9afa2468989",
+  "created_at": "2026-10-26T09:28:51.000Z",
+  "updated_at": "2026-10-26T09:29:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "base_model:Qwen/Qwen2.5-7B",
+    "base_model:finetune:Qwen/Qwen2.5-7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693760,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Index",
+      "url": "https://www.modelindex.org/",
+      "snippet": "Search and explore AI models across providers, modalities, and capabilities. Currently supported providers: OpenAI, Google, Anthropic, Meta, and Mistral AI. See the Model Inclusion Policy for details on selection criteria."
+    },
+    {
+      "title": "Please (Don&#x27;t) Stop the Music: Adversarial Red-Teaming of AI Music ...",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/kirschner",
+      "snippet": "Please (Don&#x27;t) Stop the Music: Adversarial Red-Teaming of AI Music Generation Models Jannis Kirschner, Niantic Inc. Harmful music is an effective propaganda and recruitment tool. It serves as a revenue stream for extremist groups, can be used to shock and disorient and be leveraged for targeted harassment."
+    },
+    {
+      "title": "JannisKirschner (Jannis) · GitHub",
+      "url": "https://github.com/JannisKirschner",
+      "snippet": "Hello there :) I&#x27;m a Security Researcher from Switzerland. My interests are networking, programming, it-security, data science, and life sciences - JannisKirschner"
+    },
+    {
+      "title": "Download - Jan",
+      "url": "https://www.jan.ai/download",
+      "snippet": "Download Jan for your desktop Turn your computer into an AI computer"
+    },
+    {
+      "title": "What is an AI model? - IBM",
+      "url": "https://www.ibm.com/think/topics/ai-model",
+      "snippet": "An AI model is a program that applies one or more algorithms to data to recognize patterns, make predictions or make decisions without human intervention."
+    }
+  ]
+}

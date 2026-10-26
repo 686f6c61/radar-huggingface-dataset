@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Songyuan666/TC-pi0.5",
+  "slug": "songyuan666-tc-pi0-5",
+  "author": "Songyuan666",
+  "url": "https://huggingface.co/Songyuan666/TC-pi0.5",
+  "created_at": "2026-10-26T09:39:39.000Z",
+  "updated_at": "2026-10-26T09:44:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "robotics",
+    "vision-language-action",
+    "behavior",
+    "dataset:behavior-1k/2025-challenge-demos",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14730537971,
+  "storage_human": "14.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "bulpara/piano-to-score-onnx",
+  "slug": "bulpara-piano-to-score-onnx",
+  "author": "bulpara",
+  "url": "https://huggingface.co/bulpara/piano-to-score-onnx",
+  "created_at": "2026-10-26T01:48:39.000Z",
+  "updated_at": "2026-10-26T01:49:16.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "piano-transcription",
+    "music-transcription",
+    "sheet-music",
+    "audio",
+    "audio-classification",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 146466854,
+  "storage_human": "146 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bulpara - Privacy-First iOS Apps",
+      "url": "https://www.bulpara.com/",
+      "snippet": "iOS apps that respect your privacy. Offline-first, on-device processing, your data stays in your iCloud."
+    },
+    {
+      "title": "About Us - Bulpara",
+      "url": "https://www.bulpara.com/about",
+      "snippet": "Bulpara builds privacy-focused apps for iOS and Android. We believe your personal data is personal."
+    },
+    {
+      "title": "Bulgarie — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Bulgarie",
+      "snippet": "In 1935, however, Tsar Boris III became an active political force in Bulgaria for the first time. Disillusioned by the results of the 1934 …"
+    },
+    {
+      "title": "Bulpara - YouTube",
+      "url": "https://www.youtube.com/@bulpara",
+      "snippet": "Experience the future of mobile technology with Bulpara; AI-powered apps make your life easier and more convenient."
+    },
+    {
+      "title": "Bulpara Industries - LinkedIn",
+      "url": "https://www.linkedin.com/company/bulpara-industries",
+      "snippet": "At Bulpara, we are dedicated to integrating cutting-edge AI technologies to revolutionize daily life, transforming how we live, work, …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "turintech/embeddinggemma-2-Artemis-GGUF",
+  "slug": "turintech-embeddinggemma-2-artemis-gguf",
+  "author": "turintech",
+  "url": "https://huggingface.co/turintech/embeddinggemma-2-Artemis-GGUF",
+  "created_at": "2026-10-16T15:50:22.000Z",
+  "updated_at": "2026-10-26T09:22:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "embeddings",
+    "sentence-similarity",
+    "base_model:google/embeddinggemma-2",
+    "base_model:quantized:google/embeddinggemma-2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "feature-extraction"
+  ],
+  "likes": 3,
+  "downloads_30d": 383,
+  "trending_score": 0,
+  "parameters": 271002648,
+  "parameters_human": "271.0M",
+  "storage_bytes": 540142880,
+  "storage_human": "540 MB",
+  "base_model": "google/embeddinggemma-2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "streamlink-plugins/stripchat.py at master - GitHub",
+      "url": "https://github.com/Damianonymous/streamlink-plugins/blob/master/stripchat.py",
+      "snippet": "streamlink-plugins / stripchat.py Damianonymous Update stripchat.py f743fe0 · 4 years ago History 57 lines (45 loc) · 2.06 KB"
+    },
+    {
+      "title": "StripChat好像加密了 怎么录制 · Issue #740 · nilaoda/N_m3u8DL-RE",
+      "url": "https://github.com/nilaoda/N_m3u8DL-RE/issues/740",
+      "snippet": "Oct 30, 2025 · 有哪位大佬知道这个网站现在怎么录制吗 告诉一下 麻烦了"
+    },
+    {
+      "title": "yt-dlp vr.stripchat.com #Python #stripchat.com #Scraper",
+      "url": "https://gist.github.com/phoenixthrush/1c0548a32d05b94b443b0c082d75ebf7",
+      "snippet": "Aug 13, 2025 · yt-dlp vr.stripchat.com #Python #stripchat.com #Scraper - fetch.sh"
+    },
+    {
+      "title": "GitHub Pages documentation - GitHub Docs",
+      "url": "https://docs.github.com/pages",
+      "snippet": "About custom domains and GitHub Pages GitHub Pages supports using custom domains, or changing the root of your site's URL …"
+    },
+    {
+      "title": "GitHub Docs",
+      "url": "https://docs.github.com/",
+      "snippet": "Get started, troubleshoot, and make the most of GitHub. Documentation for new users, developers, administrators, and all of …"
+    }
+  ]
+}

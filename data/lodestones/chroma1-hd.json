@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "lodestones/Chroma1-HD",
+  "slug": "lodestones-chroma1-hd",
+  "author": "lodestones",
+  "url": "https://huggingface.co/lodestones/Chroma1-HD",
+  "created_at": "2025-08-08T10:23:39.000Z",
+  "updated_at": "2025-10-23T09:07:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "license:apache-2.0",
+    "diffusers:ChromaPipeline",
+    "deploy:azure",
+    "region:us"
+  ],
+  "likes": 432,
+  "downloads_30d": 60714,
+  "trending_score": 0,
+  "parameters": 8899983424,
+  "parameters_human": "8.90B",
+  "storage_bytes": 98700359038,
+  "storage_human": "98.7 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

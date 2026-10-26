@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Andylinux/MOSS-Image-Kohaku-FP8",
+  "slug": "andylinux-moss-image-kohaku-fp8",
+  "author": "Andylinux",
+  "url": "https://huggingface.co/Andylinux/MOSS-Image-Kohaku-FP8",
+  "created_at": "2026-10-25T19:23:27.000Z",
+  "updated_at": "2026-10-26T09:26:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "moss-image",
+    "kohaku",
+    "fp8",
+    "quantization",
+    "comfyui",
+    "text-to-image",
+    "en",
+    "zh",
+    "base_model:OpenMOSS-Team/MOSS-Image-Base",
+    "base_model:quantized:OpenMOSS-Team/MOSS-Image-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10349759704,
+  "storage_human": "10.3 GB",
+  "base_model": "OpenMOSS-Team/MOSS-Image-Base, OpenMOSS-Team/MOSS-Image-SFT",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Andylinux/MOSS-Image-Kohaku-FP8 · Hugging Face",
+      "url": "https://huggingface.co/Andylinux/MOSS-Image-Kohaku-FP8",
+      "snippet": "Two quantized diffusion-transformer checkpoints, Base and SFT, for MOSS LowVRAM Optimized. Each file can supply both the FP8-activation and 16-bit-activation inference modes implemented by the node pack. Text encoder, tokenizer and VAE are separate assets. These are conversions of existing model ..."
+    },
+    {
+      "title": "Andylinux/MOSS-Image-Kohaku-FP8 at main - Hugging Face",
+      "url": "https://huggingface.co/Andylinux/MOSS-Image-Kohaku-FP8/tree/main",
+      "snippet": "moss-image kohaku fp8 quantization comfyui License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main MOSS-Image-Kohaku-FP8 10.3 GB Ctrl+K Ctrl+K 1 contributor History:5 commits Andylinux Simplify conversion metadata a9f2571 verifiedabout 2 hours ago .gitattributes Safe 50 BytesAdd files using upload-large ..."
+    },
+    {
+      "title": "GitHub - OpenMOSS/MOSS-Image: Official repository for MOSS-Image, a 5B ...",
+      "url": "https://github.com/OpenMOSS/MOSS-Image",
+      "snippet": "Official repository for MOSS-Image, a 5B-parameter base DiT model with high-quality text rendering, layout generation, and efficient fine-tuning. - OpenMOSS/MOSS-Image"
+    },
+    {
+      "title": "MOSS-Image Download: Base, SFT, INT8, GGUF and Turbo Files with Sizes",
+      "url": "https://mossimage.org/download/",
+      "snippet": "Every MOSS-Image download in one place: official Base/SFT, Comfy-Org BF16 and INT8, GGUF, INT4, MLX and turbo LoRAs, sorted by how much VRAM you have."
+    },
+    {
+      "title": "MOSS Image Download: Base, SFT, GGUF & LoRA | MossImage",
+      "url": "https://mossimage.app/moss-image-download",
+      "snippet": "MOSS Image download guide: official Base and SFT weights on Hugging Face and ModelScope, file sizes, ComfyUI files, INT8 and GGUF builds, and LoRA."
+    }
+  ]
+}

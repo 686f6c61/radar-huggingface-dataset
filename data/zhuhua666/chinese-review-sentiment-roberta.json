@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "zhuhua666/chinese-review-sentiment-roberta",
+  "slug": "zhuhua666-chinese-review-sentiment-roberta",
+  "author": "zhuhua666",
+  "url": "https://huggingface.co/zhuhua666/chinese-review-sentiment-roberta",
+  "created_at": "2026-10-26T08:57:40.000Z",
+  "updated_at": "2026-10-26T09:06:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "sentiment-analysis",
+    "text-classification",
+    "chinese",
+    "roberta",
+    "e-commerce",
+    "reviews",
+    "zh",
+    "base_model:hfl/chinese-roberta-wwm-ext",
+    "base_model:finetune:hfl/chinese-roberta-wwm-ext",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 102269186,
+  "parameters_human": "102.3M",
+  "storage_bytes": 409100240,
+  "storage_human": "409 MB",
+  "base_model": "hfl/chinese-roberta-wwm-ext",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sophie Dee Vidéos Porno - Profil Vérifié de Pornstar | Pornhub",
+      "url": "https://fr.pornhub.com/pornstar/sophie-dee",
+      "snippet": "Venez voir les meilleures vidéos pornos, images, gifs et playlists de la pornstar Sophie Dee. Parcourez le contenu qu'elle a uploadé …"
+    },
+    {
+      "title": "Nicole Aniston Vidéos Porno - Profil Vérifié de Pornstar | Pornhub",
+      "url": "https://fr.pornhub.com/pornstar/nicole-aniston",
+      "snippet": "Venez voir les meilleures vidéos pornos, images, gifs et playlists de la pornstar Nicole Aniston. Parcourez le contenu qu'elle a …"
+    },
+    {
+      "title": "Step Mom – Vidéos Porno | Pornhub.com",
+      "url": "https://fr.pornhub.com/video/search?search=step+mom",
+      "snippet": "Regarde les vidéos porno de Step Mom gratuitement, ici sur Pornhub.com. Découvre la collection plus importante de films et de clips …"
+    },
+    {
+      "title": "Vidéos porno HD : Les filles les plus sexy en haute définition | Pornhub",
+      "url": "https://fr.pornhub.com/hd",
+      "snippet": "Porno HD gratuit sur Pornhub.com. Vous cherchez des vidéos de sexe en haute définition dans chaque niche XXX triple ? Le …"
+    },
+    {
+      "title": "PornHub.com :: Le Site Porno Gratuit Avec Les Meilleures Vidéos X",
+      "url": "https://fr.pornhub.com/video",
+      "snippet": "Pornhub est probablement le meilleur site porno gratuit. Aucun autre site de cul ne propose autant de catégories. Les meilleures …"
+    }
+  ]
+}

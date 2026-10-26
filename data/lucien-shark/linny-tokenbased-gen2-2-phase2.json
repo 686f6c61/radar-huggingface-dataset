@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Lucien-shark/Linny-TokenBased-Gen2.2-Phase2",
+  "slug": "lucien-shark-linny-tokenbased-gen2-2-phase2",
+  "author": "Lucien-shark",
+  "url": "https://huggingface.co/Lucien-shark/Linny-TokenBased-Gen2.2-Phase2",
+  "created_at": "2026-10-25T23:32:54.000Z",
+  "updated_at": "2026-10-26T11:47:11.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 133473554348,
+  "storage_human": "133.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lucien — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Lucien",
+      "snippet": "Prénom et patronyme Lucien est un prénom masculin, Lucienne étant sa forme féminine. C'est aussi un nom de baptême donné …"
+    },
+    {
+      "title": "Prénom Lucien (garçon) : signification, origine, caractère, saint, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/lucien/prenom-5417",
+      "snippet": "Quelle est l'origine du prénom Lucien ? Le prénom français Lucien est un dérivé du prénom latin Lucius. Lucien peut aussi être …"
+    },
+    {
+      "title": "Lucien de Samosate — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Lucien_de_Samosate",
+      "snippet": "Le rêve qu'il fit la nuit suivante le place au centre d'une confrontation entre l' allégorie de la Sculpture et celle de l'Instruction …"
+    },
+    {
+      "title": "Prénom Lucien : Origine - Caractère - Signification - Etymologie",
+      "url": "https://www.parents.fr/prenoms/lucien-47175",
+      "snippet": "Caractère du prénom Lucien Personnalité du prénom Lucien Lucien, c'est un individu plein d'énergie. C'est une personne émotive en …"
+    },
+    {
+      "title": "Tous les produits Lucien Georgelin : confitures, pâtés",
+      "url": "https://www.lucien-georgelin.com/fr/2-accueil",
+      "snippet": "Oct 17, 2026 · Explorez toute la gamme Lucien Georgelin : confitures artisanales, pâtés, sauces, bonbons et gourmandises, cuisinés …"
+    }
+  ]
+}

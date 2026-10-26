@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "yipengsun/ask-yipeng-Qwen3-0.6B-q4f16_1-MLC",
+  "slug": "yipengsun-ask-yipeng-qwen3-0-6b-q4f16_1-mlc",
+  "author": "yipengsun",
+  "url": "https://huggingface.co/yipengsun/ask-yipeng-Qwen3-0.6B-q4f16_1-MLC",
+  "created_at": "2026-10-26T00:32:22.000Z",
+  "updated_at": "2026-10-26T00:32:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlc-llm",
+  "languages": [
+    "en",
+    "de",
+    "zh"
+  ],
+  "tags": [
+    "mlc-llm",
+    "web-llm",
+    "webgpu",
+    "qwen3",
+    "lora",
+    "text-generation",
+    "conversational",
+    "en",
+    "de",
+    "zh",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:adapter:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 346794942,
+  "storage_human": "347 MB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sur les chemins noirs (livre) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Sur_les_chemins_noirs_(livre)",
+      "snippet": "Ce livre est le récit de ce voyage de réappropriation de son corps. Véritable succès de librairie, Sur les chemins noirs s'écoule à plus …"
+    },
+    {
+      "title": "Sur les chemins noirs - Sylvain Tesson - Babelio",
+      "url": "https://www.babelio.com/livres/Tesson-Sur-les-chemins-noirs/881861",
+      "snippet": "Le projet de Sylvain Tesson est de traverser la France des Alpes-Maritimes à la Manche en empruntant des petits sentiers. Il …"
+    },
+    {
+      "title": "Sur les chemins noirs - Poche - Sylvain Tesson - Fnac",
+      "url": "https://www.fnac.com/a12846097/Sylvain-Tesson-Sur-les-chemins-noirs",
+      "snippet": "Feb 7, 2019 · Après son accident, Sylvain Tesson a décidé de partir sur les petits chemins de France pour son premier grand …"
+    },
+    {
+      "title": "Sur les chemins noirs (film) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Sur_les_chemins_noirs_(film)",
+      "snippet": "Sur les chemins noirs est un film français réalisé par Denis Imbert, sorti en 2023. Il s'agit de l' adaptation du récit du même nom de …"
+    },
+    {
+      "title": "Amazon.fr - Sur les chemins noirs - Tesson, Sylvain - Livres",
+      "url": "https://www.amazon.fr/Sur-chemins-noirs-Sylvain-Tesson/dp/2070146375",
+      "snippet": "La vie me laissait une chance, il était donc grand temps de traverser la France à pied sur mes chemins noirs. Là, personne ne vous …"
+    }
+  ]
+}

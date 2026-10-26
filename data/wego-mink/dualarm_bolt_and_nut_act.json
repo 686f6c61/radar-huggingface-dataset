@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "wego-mink/dualarm_bolt_and_nut_act",
+  "slug": "wego-mink-dualarm_bolt_and_nut_act",
+  "author": "wego-mink",
+  "url": "https://huggingface.co/wego-mink/dualarm_bolt_and_nut_act",
+  "created_at": "2026-10-26T09:03:20.000Z",
+  "updated_at": "2026-10-26T09:03:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:wego-mink/dualarm_bolt_and_nut",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51685006,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206774624,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wego.com - The #1 Travel Booking Website For Flights & Hotel ...",
+      "url": "https://www.wego.com/",
+      "snippet": "Wego is a leading global travel metasearch engine and online marketplace. We let you compare flights, hotels, and travel deals from …Read more"
+    },
+    {
+      "title": "Vols Et Hotels Pas Chers, Offres Voyage Et Vacances Sur Wego.fr",
+      "url": "https://www.wego.fr/",
+      "snippet": "Wego est un comparateur et une plateforme de voyage en ligne de premier plan mondial. Nous vous permettons de comparer en un …"
+    },
+    {
+      "title": "Cheap Flights, Flight Booking & Airline Tickets Online - Wego",
+      "url": "https://www.wego.com/flights",
+      "snippet": "It compares live prices and options from hundreds of airlines and online travel agencies, letting travelers find and book great deals in …"
+    },
+    {
+      "title": "Vols Et Billets d'Avion Pas Chers Sur Wego.fr",
+      "url": "https://www.wego.fr/flights",
+      "snippet": "Bénéficiez des meilleures offres de vols Air France, Easyjet, Ryanair et plus encore sur Wego.fr | Réservez en ligne vos billets …"
+    },
+    {
+      "title": "Vols & hôtels à bas prix, billets d'avion ... - Wego",
+      "url": "https://ml.wego.com/login",
+      "snippet": "Accédez à des fonctionnalités exclusives sur l'application Wego. Téléchargez maintenant! Plus de 10 fonctionnalités utiles et …"
+    }
+  ]
+}

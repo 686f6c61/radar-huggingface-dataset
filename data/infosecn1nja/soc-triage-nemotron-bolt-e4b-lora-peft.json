@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "infosecn1nja/soc-triage-nemotron-bolt-e4b-lora-peft",
+  "slug": "infosecn1nja-soc-triage-nemotron-bolt-e4b-lora-peft",
+  "author": "infosecn1nja",
+  "url": "https://huggingface.co/infosecn1nja/soc-triage-nemotron-bolt-e4b-lora-peft",
+  "created_at": "2026-10-26T09:16:12.000Z",
+  "updated_at": "2026-10-26T09:16:27.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "vllm",
+    "sglang",
+    "security-operations",
+    "soc",
+    "alert-triage",
+    "text-generation",
+    "en",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16",
+    "base_model:adapter:nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6955024,
+  "storage_human": "7 MB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nemotron - Learn AI",
+      "url": "https://ai.miraheze.org/wiki/Nemotron",
+      "snippet": "Nemotron is a family of open-source large language models developed by NVIDIA designed for building specialized artificial intelligence agents with advanced reasoning capabilities. The family spans multiple generations and model sizes, from the original Nemotron-4 series released in 2024 through the Nemotron 3 family introduced in late 2025, and encompasses models ranging from compact 3 ..."
+    },
+    {
+      "title": "Nemotron - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nemotron",
+      "snippet": "Nemotron is a family of artificial intelligence models developed by Nvidia. It includes large language models and multimodal models intended for reasoning, computer programming, information retrieval and agentic AI applications."
+    },
+    {
+      "title": "Nemotron AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/topics/ai/nemotron",
+      "snippet": "NVIDIA Nemotron is a family of open-source models with open weights, training data, and recipes, delivering leading efficiency and accuracy for building specialized AI agents with reasoning."
+    },
+    {
+      "title": "Nvidia Debuts 3 Open Nemotron Models, 4GB to 120B [2026]",
+      "url": "https://tech-insider.org/nvidia-nemotron-3-5-three-models-2026/",
+      "snippet": "Nvidia unveils 3 open Nemotron models spanning 4GB edge AI to a 120B vision-language flagship, targeting data center to desktop."
+    },
+    {
+      "title": "What Is NVIDIA Nemotron? Every Model Explained (3 Nano, Super, Ultra, 3 ...",
+      "url": "https://www.logeshwaran.org/2026/10/what-is-nvidia-nemotron-every-model.html",
+      "snippet": "The current models are the Nemotron 3 generation (Nano 30B with 3B active, a Nano 4B, Nano Omni for audio and video, Super 120B with 12B active, and Ultra 550B with 55B active) and the newer Nemotron 3.5 generation (Lightning 30B, Super VL 120B with vision, Bolt 74B in a 24 GB file for AI PCs, the small Bolt E4B due in late October 2026, and a ..."
+    }
+  ]
+}

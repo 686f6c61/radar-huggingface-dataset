@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "AtomicChat/NVIDIA-Nemotron-3.5-Bolt-E4B-Uncensored-GGUF",
+  "slug": "atomicchat-nvidia-nemotron-3-5-bolt-e4b-uncensored-gguf",
+  "author": "AtomicChat",
+  "url": "https://huggingface.co/AtomicChat/NVIDIA-Nemotron-3.5-Bolt-E4B-Uncensored-GGUF",
+  "created_at": "2026-10-23T16:18:28.000Z",
+  "updated_at": "2026-10-23T20:18:59.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "atomic-chat",
+    "atomic-dynamic",
+    "nvidia",
+    "nemotron",
+    "gemma4",
+    "imatrix",
+    "llama.cpp",
+    "abliteration",
+    "refusal-direction",
+    "text-generation",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16",
+    "base_model:finetune:nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 13,
+  "downloads_30d": 1961,
+  "trending_score": 13,
+  "parameters": 863744,
+  "parameters_human": "863744",
+  "storage_bytes": 12442545632,
+  "storage_human": "12.4 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AtomicChat (Atomic Chat)",
+      "url": "https://huggingface.co/AtomicChat",
+      "snippet": "Nemotron 3.5 Bolt E4B, Super VL and Bolt 74B with the refusal direction projected out, baked into Atomic Dynamic GGUF builds."
+    },
+    {
+      "title": "AtomicChat/NVIDIA-Nemotron-3.5-Bolt-E4B-Uncensored-GGUF · Hugging ...",
+      "url": "https://huggingface.co/AtomicChat/NVIDIA-Nemotron-3.5-Bolt-E4B-Uncensored-GGUF",
+      "snippet": "Direction, edit, quantization and evaluation by AtomicChat. The method follows Arditi et al., Refusal in Language Models Is Mediated by a Single Direction (2024). ... Nemotron 3.5 Bolt E4B, Super VL and Bolt 74B with the refusal direction projected out, baked into Atomic Dynamic GGUF builds."
+    },
+    {
+      "title": "AtomicChat/NVIDIA-Nemotron-3.5-Bolt-E4B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/AtomicChat/NVIDIA-Nemotron-3.5-Bolt-E4B-GGUF",
+      "snippet": "Bolt E4B is NVIDIA's small reasoning and chat model, post-trained from Google's Gemma-4-E4B-it. Every file here was measured against the BF16 original on one stand, next to the other publishers' files."
+    },
+    {
+      "title": "NVIDIA Nemotron 3.5 Uncensored - a AtomicChat Collection",
+      "url": "https://huggingface.co/collections/AtomicChat/nvidia-nemotron-35-uncensored",
+      "snippet": "Nemotron 3.5 Super VL and Bolt with the refusal direction projected out, baked into Atomic Dynamic GGUF builds."
+    },
+    {
+      "title": "unsloth/NVIDIA-Nemotron-3.5-Bolt-E4B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/NVIDIA-Nemotron-3.5-Bolt-E4B-GGUF",
+      "snippet": "The model was further post-trained from Gemma-4-E4B-it. ... The model underwent multi-environment reinforcement learning using GRPO (Group Relative Policy Optimization) across instruction following, multi-step tool use, multi-turn conversations, and structured output environments. It utilized an asynchronous RL architecture that decouples training from inference. Software used for reinforcement learning: NeMo RL, NeMo Gym · NVIDIA-Nemotron-3.5-Bolt-E4B-4GB is a result of the above work."
+    }
+  ]
+}

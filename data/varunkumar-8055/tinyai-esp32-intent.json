@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "varunkumar-8055/tinyai-esp32-intent",
+  "slug": "varunkumar-8055-tinyai-esp32-intent",
+  "author": "varunkumar-8055",
+  "url": "https://huggingface.co/varunkumar-8055/tinyai-esp32-intent",
+  "created_at": "2026-10-26T09:02:53.000Z",
+  "updated_at": "2026-10-26T09:06:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "esp32",
+    "tinyml",
+    "intent-classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Run TinyML AI Models on ESP32: Complete Guide with Voice Command ...",
+      "url": "https://www.programmingboss.com/2025/05/run-tinyml-ai-models-on-esp32-voice-recgonation-using-esp32.html",
+      "snippet": "Learn how to run TinyML AI models on ESP32 with a step-by-step guide and a voice command recognition project using an I2S microphone. AI applications"
+    },
+    {
+      "title": "ESP32_AI_Connect - GitHub",
+      "url": "https://github.com/AvantMaker/ESP32_AI_Connect",
+      "snippet": "ESP32_AI_Connect is an Arduino library that enables seamless integration between ESP32 and leading AI APIs (OpenAI, Gemini, Anthropic Claude, etc.). Designed for IoT projects, it provides a unified interface for AI-powered applications while optimizing for ESP32&#x27;s memory constraints."
+    },
+    {
+      "title": "Varunkumar8055 (Varunkumar M S) · GitHub",
+      "url": "https://github.com/Varunkumar8055",
+      "snippet": "Hello World, I&#x27;m Varunkumar M S 👋🏽 Software Development Engineer with a background in Artificial Intelligence & Data Science. Passionate about building scalable applications, intelligent systems, and solving complex problems."
+    },
+    {
+      "title": "How to Run Custom AI Models on ESP32 Microcontrollers - Geeky Gadgets",
+      "url": "https://www.geeky-gadgets.com/esp32-custom-ai-model/",
+      "snippet": "Run custom AI models on ESP32 boards by training a 30 million parameter transformer. Use 4-bit quantization to fit the model perfectly into 16MB PS RAM."
+    },
+    {
+      "title": "Run TinyML AI Models on ESP32: Complete Guide with Voice ... - Reddit",
+      "url": "https://www.reddit.com/r/esp8266/comments/1lb45ex/run_tinyml_ai_models_on_esp32_complete_guide_with/",
+      "snippet": "Excited about adding AI to your microcontroller-based projects? With TinyML, you can run machine learning models directly on microcontrollers — no cloud required! I just wrote a detailed guide covering: What TinyML is and why ESP32 is perfect for it A step-by-step process: training → converting → deploying ML models A complete voice command recognition project using an I2S microphone ..."
+    }
+  ]
+}

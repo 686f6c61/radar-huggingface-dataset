@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "Mungert/Nanbeige4.2-3B-GGUF",
+  "slug": "mungert-nanbeige4-2-3b-gguf",
+  "author": "Mungert",
+  "url": "https://huggingface.co/Mungert/Nanbeige4.2-3B-GGUF",
+  "created_at": "2026-10-26T00:43:26.000Z",
+  "updated_at": "2026-10-26T03:44:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llm",
+    "nanbeige",
+    "text-generation",
+    "en",
+    "zh",
+    "arxiv:2607.22083",
+    "base_model:Nanbeige/Nanbeige4.2-3B-Base",
+    "base_model:quantized:Nanbeige/Nanbeige4.2-3B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4169800704,
+  "parameters_human": "4.17B",
+  "storage_bytes": 109743588512,
+  "storage_human": "109.7 GB",
+  "base_model": "Nanbeige/Nanbeige4.2-3B-Base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

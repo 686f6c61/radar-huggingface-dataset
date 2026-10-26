@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "janniskirschner/mtds-4aeb27c65d9d",
+  "slug": "janniskirschner-mtds-4aeb27c65d9d",
+  "author": "janniskirschner",
+  "url": "https://huggingface.co/janniskirschner/mtds-4aeb27c65d9d",
+  "created_at": "2026-10-26T09:31:25.000Z",
+  "updated_at": "2026-10-26T09:32:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "base_model:Qwen/Qwen2.5-7B",
+    "base_model:finetune:Qwen/Qwen2.5-7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693760,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JannisKirschner (Jannis) · GitHub",
+      "url": "https://github.com/JannisKirschner",
+      "snippet": "Hello there :) I&#x27;m a Security Researcher from Switzerland. My interests are networking, programming, it-security, data science, and life sciences - JannisKirschner"
+    },
+    {
+      "title": "Katniss Everdeen - v1 - Free AI LORA | Tensor.Art",
+      "url": "https://tensor.art/models/1056231489563296082",
+      "snippet": "Download Katniss Everdeen - free LORA KREA_2 AI model on TENSOR. BOOK CHARACTER, FEMALE CHARACTER, EXCLUSIVE. By ShuTeye404"
+    },
+    {
+      "title": "3D models by JannisKernert - Sketchfab",
+      "url": "https://sketchfab.com/JannisKernert/models",
+      "snippet": "View 3D models by JannisKernert Germany Follow Report user 28 Follower s 14 Following Summary 2 Models Collections 0 created 1 subscribed 4 Likes Summary 2 Models Collections 4 Likes Sort by Most likes Most viewed Most recent Silenus and the Infant Dionysos - MfA Munich Roman Ridge Helmet"
+    },
+    {
+      "title": "Teachable Machine",
+      "url": "https://teachablemachine.withgoogle.com/models/",
+      "snippet": "Train a computer to recognize your own images, sounds, & poses. A fast, easy way to create machine learning models for your sites, apps, and more - no expertise or coding required."
+    },
+    {
+      "title": "Please (Don&#x27;t) Stop the Music: Adversarial Red-Teaming of AI Music ...",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/kirschner",
+      "snippet": "Please (Don&#x27;t) Stop the Music: Adversarial Red-Teaming of AI Music Generation Models Jannis Kirschner, Niantic Inc. Harmful music is an effective propaganda and recruitment tool. It serves as a revenue stream for extremist groups, can be used to shock and disorient and be leveraged for targeted harassment."
+    }
+  ]
+}

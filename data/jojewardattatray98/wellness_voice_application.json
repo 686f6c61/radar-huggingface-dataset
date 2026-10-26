@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "jojewardattatray98/WellNess_Voice_application",
+  "slug": "jojewardattatray98-wellness_voice_application",
+  "author": "jojewardattatray98",
+  "url": "https://huggingface.co/jojewardattatray98/WellNess_Voice_application",
+  "created_at": "2026-10-25T18:40:44.000Z",
+  "updated_at": "2026-10-26T09:27:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 182690889,
+  "storage_human": "183 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jojewardattatray98/WellNess_Voice_application - Hugging Face",
+      "url": "https://huggingface.co/datasets/jojewardattatray98/WellNess_Voice_application",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "jojewardattatray98/wellness-voice-qwen2.5-0.5b · Hugging Face",
+      "url": "https://huggingface.co/jojewardattatray98/wellness-voice-qwen2.5-0.5b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "WellNess_Voice_application - selectdataset.com",
+      "url": "https://www.selectdataset.com/dataset/5a3c7cc86c5895196a8ec6e671f6fb3d/wellness-voice-application",
+      "snippet": "遇见数据集收录的WellNess_Voice_application，关于WellNess Voice 是一个面向健康领域的智能对话助手项目，其对应的数据集旨在支持对话式人工智能的研究与开发。"
+    },
+    {
+      "title": "AI Wellness Center of Excellence - AI Wellness",
+      "url": "https://aiwellness.ai/",
+      "snippet": "AI Wellness is a next-generation experiential wellness, longevity, and human optimization ecosystem integrating healthcare, technology, education, hospitality, media, humanitarian outreach, and community into one connected platform."
+    },
+    {
+      "title": "Smartphone-Based Voice Wellness Index Application for Dysphonia ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0892199723003302",
+      "snippet": "Conclusion The \"Voice Wellness Index\" application is an accurate and reliable tool for voice quality measurement and normal versus pathological voice screening and has considerable potential to be used by healthcare professionals and patients for voice assessment."
+    }
+  ]
+}

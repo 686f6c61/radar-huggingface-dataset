@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Pawnmuncher/pwn_bot",
+  "slug": "pawnmuncher-pwn_bot",
+  "author": "Pawnmuncher",
+  "url": "https://huggingface.co/Pawnmuncher/pwn_bot",
+  "created_at": "2026-10-26T01:56:20.000Z",
+  "updated_at": "2026-10-26T01:56:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Your baby's first solid foods - NHS",
+      "url": "https://www.nhs.uk/baby/weaning-and-feeding/babys-first-solid-foods/",
+      "snippet": "Get advice on starting solids (weaning), including when to start, what foods to give your baby, and which milks to offer as they grow."
+    },
+    {
+      "title": "When can babies eat baby food? Tips to introduce solids",
+      "url": "https://www.medicalnewstoday.com/articles/when-can-babies-eat-baby-food",
+      "snippet": "Jan 25, 2022 · According to the American Academy of Pediatrics (AAP), a baby does not need any extra nutrition or energy from …"
+    },
+    {
+      "title": "When, What, and How to Introduce Solid Foods | Infant and Toddler ...",
+      "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+      "snippet": "Apr 14, 2026 · The American Academy of Pediatrics recommends that for most children, you do not need to give food in a certain …"
+    },
+    {
+      "title": "Baby's Eating Milestones: Solids, Finger Foods, and More - WebMD",
+      "url": "https://www.webmd.com/parenting/baby/baby-food-milestones",
+      "snippet": "Aug 9, 2024 · But most pediatricians, and the American Academy of Pediatrics (AAP), recommend waiting to introduce solid foods to …"
+    },
+    {
+      "title": "Baby Food Diet: What Is It, and Can It Lead to Weight Loss?",
+      "url": "https://www.healthline.com/health/diet-and-weight-loss/baby-food-diet",
+      "snippet": "Jul 21, 2026 · The idea of losing weight quickly may sound tempting, but the baby food diet fits into the category of a fad diet. Fad …"
+    }
+  ]
+}

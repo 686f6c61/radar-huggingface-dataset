@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Wynnoaasf/wynr-ai-1.5b-v2",
+  "slug": "wynnoaasf-wynr-ai-1-5b-v2",
+  "author": "Wynnoaasf",
+  "url": "https://huggingface.co/Wynnoaasf/wynr-ai-1.5b-v2",
+  "created_at": "2026-10-25T16:22:20.000Z",
+  "updated_at": "2026-10-26T09:27:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "wynr-ai",
+    "vietnamese",
+    "unsloth",
+    "lora",
+    "qwen2.5",
+    "text-generation",
+    "conversational",
+    "vi",
+    "en",
+    "base_model:unsloth/Qwen2.5-1.5B-Instruct-bnb-4bit",
+    "base_model:adapter:unsloth/Qwen2.5-1.5B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wynnoaasf/wynr-ai-1.5b-v2 · Hugging Face",
+      "url": "https://huggingface.co/Wynnoaasf/wynr-ai-1.5b-v2",
+      "snippet": "Wynnoaasf / wynr-ai-1.5b-v2 Like 0 Text Generation PEFT Safetensors Vietnamese English wynr-ai vietnamese unsloth lora qwen2.5 conversational License:apache-2.0 Model card FilesFiles and versions xet Community 1 Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Wynnoaasf/wynr-ai-1.5b-v1 · Hugging Face",
+      "url": "https://huggingface.co/Wynnoaasf/wynr-ai-1.5b-v1",
+      "snippet": "Wynr AI 1.5B v1 là mô hình ngôn ngữ nhỏ (Small Language Model - SLM) với kích thước 1.5 tỷ tham số, được phát triển bởi Wynnoaasf. Mô hình được tối ưu hóa cho các tác vụ xử lý ngôn ngữ tự nhiên, trả lời câu hỏi và hội thoại bằng cả tiếng Việt và tiếng Anh với chi phí ..."
+    },
+    {
+      "title": "Small Model, Massive Potential: Qwen2.5-1.5B Arrives on the Ascend ...",
+      "url": "https://aichina.news/blog/small-model-massive-potential-qwen2-5-1-5b-arrives-on-the-ascend-19ybyi/",
+      "snippet": "The Qwen2.5-1.5B (specifically the libo2024 variant) is a compact, 1.5-billion parameter powerhouse from Alibaba&#x27;s renowned Qwen family. While the industry often obsesses over massive 70B+ models, this release is designed for developers who need advanced reasoning, coding, and multilingual capabilities at the edge."
+    },
+    {
+      "title": "GitHub - JoasASantos/Offensive-Security-AI-Models: Uncensored AI models ...",
+      "url": "https://github.com/JoasASantos/Offensive-Security-AI-Models",
+      "snippet": "Uncensored LLMs for Offensive Security Curated list of open-weight uncensored models for authorized red team operations, penetration testing, and security research. All data sourced from HuggingFace model cards and official publications. Sep 2026."
+    },
+    {
+      "title": "Wan AI Models & Generator | Civitai",
+      "url": "https://civitai.com/ecosystems/wan",
+      "snippet": "Wan 2.2 introduces a Mixture-of-Experts (MoE) design that splits the denoising process across specialized expert models, enlarging capacity at the same compute cost, and adds a fast 5B TI2V variant (16×16×4 compression via Wan2.2-VAE) that generates 720p at 24fps on a card like a 4090; its A14B T2V and I2V models were trained on substantially ..."
+    }
+  ]
+}

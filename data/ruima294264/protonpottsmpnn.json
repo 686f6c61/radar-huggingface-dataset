@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "RUIMA294264/ProtonPottsMPNN",
+  "slug": "ruima294264-protonpottsmpnn",
+  "author": "RUIMA294264",
+  "url": "https://huggingface.co/RUIMA294264/ProtonPottsMPNN",
+  "created_at": "2026-10-26T01:48:57.000Z",
+  "updated_at": "2026-10-26T03:55:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32722967,
+  "storage_human": "33 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ProtonPottsMPNN/README.md at main · christian-creator ... - GitHub",
+      "url": "https://github.com/christian-creator/ProtonPottsMPNN/blob/main/README.md",
+      "snippet": "The model-quality benchmarks (PKAD, stability) compute from raw structures; the design benchmarks (binding, within-backbone) read shipped parquets (regenerating them needs the Boltz-2 / RF3 oracles)."
+    },
+    {
+      "title": "pH-sensitive binder design with Proton-PottsMPNN",
+      "url": "https://preprints.epiforecasts.io/paper/10.64898/2026.09.30.755438",
+      "snippet": "Here we present Proton-PottsMPNN, a sequence-design model that explicitly represents the protonated and deprotonated states of histidine, aspartate and glutamate as distinct sequence tokens."
+    },
+    {
+      "title": "pH-sensitive binder design with Proton-PottsMPNN | bioRxiv",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.09.30.755438v1",
+      "snippet": "Here we present Proton-PottsMPNN, a sequence-design model that explicitly represents the protonated and deprotonated states of histidine, aspartate and glutamate as distinct sequence tokens."
+    },
+    {
+      "title": "GitHub - raryee5/protonpottsmpnn",
+      "url": "https://github.com/raryee5/protonpottsmpnn",
+      "snippet": "Contribute to raryee5/protonpottsmpnn development by creating an account on GitHub."
+    },
+    {
+      "title": "Proton-PottsMPNN - Tamarind Bio",
+      "url": "https://app.tamarind.bio/tools/protonpottsmpnn",
+      "snippet": "Redesign a binder so that it binds its target at one pH and releases it at another. Place protonatable centres (histidine, aspartate, glutamate) where they do the most to switch binding. Return a spread of designs trading predicted stability against pH-selectivity"
+    }
+  ]
+}

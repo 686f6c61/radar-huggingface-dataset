@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Fx-Phys-i1-GGUF",
+  "slug": "mradermacher-fx-phys-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Fx-Phys-i1-GGUF",
+  "created_at": "2026-10-25T20:54:49.000Z",
+  "updated_at": "2026-10-26T10:24:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3.6",
+    "multimodal",
+    "mixture-of-experts",
+    "physics",
+    "scientific-reasoning",
+    "finance",
+    "tool-use",
+    "en",
+    "base_model:endless-frontier/Fx-Phys",
+    "base_model:quantized:endless-frontier/Fx-Phys",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 241,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 279353333824,
+  "storage_human": "279.4 GB",
+  "base_model": "endless-frontier/Fx-Phys",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Fx-Phys-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Fx-Phys-i1-GGUF",
+      "snippet": "mradermacher / Fx-Phys-i1-GGUF Like 0 Transformers GGUF English qwen3.6 multimodal mixture-of-experts physics scientific-reasoning finance tool-use imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher/PhysBrain1.5-2B-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/PhysBrain1.5-2B-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 33 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "mradermacher · GitHub",
+      "url": "https://github.com/mradermacher",
+      "snippet": "mradermacher has one repository available. Follow their code on GitHub."
+    },
+    {
+      "title": "mradermacher/Einstein-v7-Qwen2-7B-GGUF · Silytics",
+      "url": "https://silytics.si/models/mradermacher/Einstein-v7-Qwen2-7B-GGUF",
+      "snippet": "mradermacher/Einstein-v7-Qwen2-7B-GGUF on huggingface. Details and a link to the original source."
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "turintech/gemma-4-E4B-it-Artemis-GGUF",
+  "slug": "turintech-gemma-4-e4b-it-artemis-gguf",
+  "author": "turintech",
+  "url": "https://huggingface.co/turintech/gemma-4-E4B-it-Artemis-GGUF",
+  "created_at": "2026-10-12T13:07:26.000Z",
+  "updated_at": "2026-10-26T11:13:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gemma",
+    "llama.cpp",
+    "vision",
+    "mtp",
+    "image-text-to-text",
+    "base_model:google/gemma-4-E4B-it-qat-q4_0-unquantized",
+    "base_model:quantized:google/gemma-4-E4B-it-qat-q4_0-unquantized",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 9,
+  "downloads_30d": 4292,
+  "trending_score": 0,
+  "parameters": 7463013674,
+  "parameters_human": "7.46B",
+  "storage_bytes": 13671313394,
+  "storage_human": "13.7 GB",
+  "base_model": "google/gemma-4-E4B-it-qat-q4_0-unquantized",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Task results",
+      "dataset": "BFCL simple",
+      "metric": "Tool calls (of 400)",
+      "value": 364
+    },
+    {
+      "task": "Task results",
+      "dataset": "GSM8K test",
+      "metric": "Correct (of 250)",
+      "value": 226
+    },
+    {
+      "task": "Closeness to the original",
+      "dataset": "OASST1 chat",
+      "metric": "Same next token (%)",
+      "value": 99
+    }
+  ],
+  "sources": [
+    {
+      "title": "turintech/gemma-4-e4b-it-artemis - ollama.com",
+      "url": "https://ollama.com/turintech/gemma-4-e4b-it-artemis",
+      "snippet": "Gemma 4 E4B, compressed by TurinTech Google&#x27;s Gemma 4 E4B instruction model for chat, reasoning and tool use, compressed from 14.9 GB to 3.6 to 4.2 GB by TurinTech with techniques discovered by Artemis."
+    },
+    {
+      "title": "Artemis Edge model downloads · TurinTech",
+      "url": "https://www.turintech.ai/models",
+      "snippet": "Browse compressed chat and decision models from TurinTech. Find recommended GGUF downloads, upstream authors, quality trade-offs and supported runtimes."
+    },
+    {
+      "title": "turintech/gemma-4-E2B-it-Artemis-GGUF · Hugging Face",
+      "url": "https://huggingface.co/turintech/gemma-4-E2B-it-Artemis-GGUF",
+      "snippet": "Download gemma-4-E2B-it-Artemis-2.3GB.gguf (2.31 GB) and run it with llama.cpp&#x27;s chat server, as in Run it. It predicts the same next token as the original 95.8% of the time and loses 3 of 16 maths questions in our task sample."
+    },
+    {
+      "title": "Gemma 4 on a phone-sized budget: E2B in 2.3 GB, E4B in 4.2 GB",
+      "url": "https://www.turintech.ai/blog/gemma-4-e4b-and-e2b-compressed-with-artemis",
+      "snippet": "Six everyday prompts We gave the original E2B (the 9.3 GB BF16 conversion of Google&#x27;s QAT checkpoint) and our default and smallest E2B files, gemma-4-E2B-it-Artemis-2.3GB.gguf and gemma-4-E2B-it-Artemis-2.1GB.gguf, the same six prompts: the kind of thing someone might ask a model on their phone. All three ran on a desktop CPU (AMD Ryzen 9 9950X) with llama.cpp 1e6f04a, greedy decoding and ..."
+    },
+    {
+      "title": "turintech/gemma-4-e4b-it-artemis:4.2gb - ollama.com",
+      "url": "https://ollama.com/turintech/gemma-4-e4b-it-artemis:4.2gb",
+      "snippet": "Gemma 4 E4B Artemis Text-only GGUF files of Google&#x27;s quantization-aware (QAT) Gemma 4 E4B checkpoint. This is an independent conversion, not affiliated with or endorsed by Google."
+    }
+  ]
+}

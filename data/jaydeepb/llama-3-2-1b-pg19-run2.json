@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "jaydeepb/llama-3.2-1b-pg19-run2",
+  "slug": "jaydeepb-llama-3-2-1b-pg19-run2",
+  "author": "jaydeepb",
+  "url": "https://huggingface.co/jaydeepb/llama-3.2-1b-pg19-run2",
+  "created_at": "2026-10-25T23:07:08.000Z",
+  "updated_at": "2026-10-26T01:47:28.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "memorization",
+    "research-artifact",
+    "base_model:meta-llama/Llama-3.2-1B",
+    "base_model:finetune:meta-llama/Llama-3.2-1B",
+    "license:llama3.2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1235814400,
+  "parameters_human": "1.24B",
+  "storage_bytes": 2488855528,
+  "storage_human": "2.5 GB",
+  "base_model": "meta-llama/Llama-3.2-1B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pin up Diamond Painting - Etsy",
+      "url": "https://www.etsy.com/market/pin_up_diamond_painting?msockid=3f5f24643b396ce33d71339a3a516d7b",
+      "snippet": "Discover captivating pin-up diamond paintings, perfect for art lovers and home decorators. Explore unique kits, logbooks, and tools …"
+    },
+    {
+      "title": "Retro Pin Up Girl Diamond Painting - DiamondartPaint.com",
+      "url": "https://diamondartpaint.com/products/retro-pin-up-girl-diamond-painting/",
+      "snippet": "Immerse yourself in a captivating artistic journey with the Retro Pin Up Girl Diamond Painting. This exquisite craft not only enhances …"
+    },
+    {
+      "title": "Pin Up Girl Stylish - Diamond Paintings - DiamondPaint.Shop",
+      "url": "https://diamondpaint.shop/products/pin-up-girl-stylish-diamond-paintings/",
+      "snippet": "So, relax, unwind, and create your first 5D diamond painting masterpiece by just using the Diamond Painting pen to pick up a dot …"
+    },
+    {
+      "title": "Vintage Pin Up Girl - 5D Diamond Painting - DiamondPaintKit.com",
+      "url": "https://diamondpaintkits.com/products/vintage-pin-up-girl-5d-diamond-painting/",
+      "snippet": "Buy Vintage Pin Up Girl 5D Diamond Paintings Kit or check our huge collections of diamond paint art square and round type."
+    },
+    {
+      "title": "Vintage Pin Up Girl Diamond Painting - DiamondPainting5d.com",
+      "url": "https://diamondpainting5d.com/products/cool-vintage-pin-up-girl-5d-diamond-painting/",
+      "snippet": "Buy Vintage Pin Up Girl 5D Diamond Paintings Kit or check our huge collections of diamond paint art square and round type"
+    }
+  ]
+}

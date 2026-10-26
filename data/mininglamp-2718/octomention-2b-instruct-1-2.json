@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Mininglamp-2718/OctoMention-2B-Instruct-1.2",
+  "slug": "mininglamp-2718-octomention-2b-instruct-1-2",
+  "author": "Mininglamp-2718",
+  "url": "https://huggingface.co/Mininglamp-2718/OctoMention-2B-Instruct-1.2",
+  "created_at": "2026-10-26T09:20:23.000Z",
+  "updated_at": "2026-10-26T10:04:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2213241664,
+  "parameters_human": "2.21B",
+  "storage_bytes": 5463666549,
+  "storage_human": "5.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mininglamp-2718/OctoMention-2B-Instruct-1.2-MLX-8bit · Hugging Face",
+      "url": "https://huggingface.co/Mininglamp-2718/OctoMention-2B-Instruct-1.2-MLX-8bit",
+      "snippet": "Mininglamp-2718 / OctoMention-2B-Instruct-1.2-MLX-8bit like 0 Follow Mininglamp Technology 21 Image-Text-to-Text MLX Safetensors English qwen3_5 conversational 8-bit precision Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "OctoMention-2B-Instruct-1.0-MLX-8bit · Models",
+      "url": "https://www.modelscope.cn/models/Mininglamp2718/OctoMention-2B-Instruct-1.0-MLX-8bit",
+      "snippet": "OctoMention-2B-Instruct-1.-MLX-8bit - Mininglamp2718 在 ModelScope 开源的模型。"
+    },
+    {
+      "title": "Mininglamp-2718 (Mininglamp Technology) - Hugging Face",
+      "url": "https://huggingface.co/Mininglamp-2718/datasets",
+      "snippet": "Org profile for Mininglamp Technology on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Mininglamp Technology (2718.HK) Open-Sources Octo, Securing a Strategic ...",
+      "url": "https://www.newtimespace.com/en/research/1420242.html",
+      "snippet": "On June 29, 2026, Mininglamp Technology (2718.HK) officially open-sourced and released Octo. The company defines it as the \"world&#x27;s first open-source and trusted Agent collaboration network,\" licensed under the Apache 2.0 protocol.Mininglamp Technology believes that the core proposition for the next stage of AI Agents is not blindly expanding model parameters or constructing a single super ..."
+    },
+    {
+      "title": "OctoMention-2B-Instruct-1.1-MLX-8bit - ModelScope 魔搭社区",
+      "url": "https://www.modelscope.cn/models/Mininglamp2718/OctoMention-2B-Instruct-1.1-MLX-8bit",
+      "snippet": "OctoMention-2B-Instruct-1.1-MLX-8bit - Mininglamp2718 在 ModelScope 开源的模型。"
+    }
+  ]
+}

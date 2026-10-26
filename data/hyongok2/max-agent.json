@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "hyongok2/max-agent",
+  "slug": "hyongok2-max-agent",
+  "author": "hyongok2",
+  "url": "https://huggingface.co/hyongok2/max-agent",
+  "created_at": "2026-10-19T07:36:46.000Z",
+  "updated_at": "2026-10-26T09:41:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2411602432,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hyongok2/max-agent · Hugging Face",
+      "url": "https://huggingface.co/hyongok2/max-agent",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "hyongok2 (munhyeongog) - Hugging Face",
+      "url": "https://huggingface.co/hyongok2",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 9 minutes ago ... updated a model about 15 hours ago"
+    },
+    {
+      "title": "Hyongok2: Open-Weight Models and Datasets - savrn.com",
+      "url": "https://savrn.com/model-publishers/hyongok2",
+      "snippet": "Hyongok2 has 1 open-weight model and 0 datasets in the SAVRN Model Hub. Browse each one&#x27;s model card, specs, files and license."
+    },
+    {
+      "title": "hyongok2/ai-agent-framework - GitHub",
+      "url": "https://github.com/hyongok2/ai-agent-framework",
+      "snippet": "AI Agent Framework. Contribute to hyongok2/ai-agent-framework development by creating an account on GitHub."
+    },
+    {
+      "title": "hyongok2 (Mun Hyeongog) / Repositories · GitHub",
+      "url": "https://github.com/hyongok2?tab=repositories",
+      "snippet": "hyongok2 has 12 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

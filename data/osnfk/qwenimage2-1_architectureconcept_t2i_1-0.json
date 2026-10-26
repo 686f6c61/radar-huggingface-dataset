@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "OSNFK/QwenImage2.1_ArchitectureConcept_T2I_1.0",
+  "slug": "osnfk-qwenimage2-1_architectureconcept_t2i_1-0",
+  "author": "OSNFK",
+  "url": "https://huggingface.co/OSNFK/QwenImage2.1_ArchitectureConcept_T2I_1.0",
+  "created_at": "2026-10-26T01:13:14.000Z",
+  "updated_at": "2026-10-26T05:10:27.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "architecture",
+    "architectural-concept-design",
+    "template:diffusion-lora",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:adapter:Qwen/Qwen-Image-2.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 166302083,
+  "storage_human": "166 MB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ambani's Jio becomes most subscribed Indian IPO with $77 billion in bids",
+      "url": "https://www.msn.com/en-us/money/economy/ambani-s-jio-becomes-most-subscribed-indian-ipo-with-77-billion-in-bids/ar-AA2fVMEm",
+      "snippet": "By Aditya Kalra NEW DELHI, Oct 23 (Reuters) - Bids for billionaire Mukesh Ambani's first IPO in 20 years topped $77 billion on …"
+    },
+    {
+      "title": "Ambani’s Jio becomes most subscribed Indian IPO with $77 billion in bids",
+      "url": "https://bilyonaryo.com/investors-pile-into-ambanis-jio-ipo-as-bids-top-13-times/",
+      "snippet": "2 days ago · Technology Ambani’s Jio becomes most subscribed Indian IPO with $77 billion in bids Subscriptions for India's biggest …"
+    },
+    {
+      "title": "Ambani's Jio becomes most subscribed Indian IPO with $77 billion in bids",
+      "url": "https://www.iex.nl/Nieuws/882451/Ambanis-Jio-becomes-most-subscribed-Indian-IPO-with-77-billion-in-bids.aspx",
+      "snippet": "3 days ago · Bids for billionaire Mukesh Ambani's first IPO in 20 years topped $77 billion on Friday, making Jio Platforms India's most …"
+    },
+    {
+      "title": "Ambani's Jio becomes most subscribed Indian IPO with $77 billion in ...",
+      "url": "https://www.newsbreak.com/reuters-555486/4962303686710-ambani-s-jio-becomes-most-subscribed-indian-ipo-with-77-billion-in-bids",
+      "snippet": "By Aditya Kalra NEW DELHI, Oct 23 (Reuters) - Bids for billionaire Mukesh Ambani's first IPO in 20 years topped $77 billion on …"
+    },
+    {
+      "title": "Billionaire Mukesh Ambani's Jio draws record $77bn in bids",
+      "url": "https://www.billionaires.africa/2026/10/25/indian-billionaire-mukesh-ambanis-jio-draws-record-77-billion-in-ipo-bids/",
+      "snippet": "20 hours ago · Jio Platforms, the telecom and digital arm of Mukesh Ambani's Reliance Industries, drew more than $77 billion in bids …"
+    }
+  ]
+}

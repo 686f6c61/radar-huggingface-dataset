@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "dealignai/Nanbeige4.3-33B-UNCENSORED-GGUF",
+  "slug": "dealignai-nanbeige4-3-33b-uncensored-gguf",
+  "author": "dealignai",
+  "url": "https://huggingface.co/dealignai/Nanbeige4.3-33B-UNCENSORED-GGUF",
+  "created_at": "2026-10-25T20:37:38.000Z",
+  "updated_at": "2026-10-25T23:06:11.000Z",
+  "license": "dealignai-community-model-license-v0.3",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "nanbeige",
+    "nanbeige4.3",
+    "uncensored",
+    "abliterated",
+    "imatrix",
+    "reasoning",
+    "512k-context",
+    "agentic",
+    "coding",
+    "tool-use",
+    "teacher-model",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:Nanbeige/Nanbeige4.3-33B",
+    "base_model:finetune:Nanbeige/Nanbeige4.3-33B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 15,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33118977024,
+  "parameters_human": "33.12B",
+  "storage_bytes": 56552195168,
+  "storage_human": "56.6 GB",
+  "base_model": "Nanbeige/Nanbeige4.3-33B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "18+ Indian Web Series - IMDb",
+      "url": "https://www.imdb.com/list/ls082865423/",
+      "snippet": "Meet Mastram, the quintessential writer of the 80s who spoke the lingo of the Hindi heartland - literally. The 10 episodes feature …"
+    },
+    {
+      "title": "#Sexy web series - BiliBili",
+      "url": "https://www.bilibili.tv/en/video/4794353946464768",
+      "snippet": "Feb 10, 2025 · #Sexy web series, Southeast Asia's leading anime, comics, and games (ACG) community where people can create, …"
+    },
+    {
+      "title": "Hot scene full HD INDIAN movies hot scen web series | bilibili",
+      "url": "https://www.bilibili.tv/en/video/4793432922526208",
+      "snippet": "Nov 21, 2024 · Hot scene full HD INDIAN movies hot scen web series, Southeast Asia's leading anime, comics, and games (ACG) …"
+    },
+    {
+      "title": "ULLU - Home",
+      "url": "https://www.ullu.app/",
+      "snippet": "Stream thrilling web series and captivating stories on ULLU."
+    },
+    {
+      "title": "Best Kooku Web Series: 'कूकू' ऐप की ये ... - MensXP",
+      "url": "https://www.mensxp.com/hindi/entertainment/bollywood/127655-best-kooku-hot-bold-web-series-list-in-hindi.html",
+      "snippet": "Jan 24, 2023 · 'कूकू'। ये नाम आप सभी ने जरूर सुना होगा। 'कूकू' एक वेब सीरीज और वेब मूवी स्ट्रीमिंग प्लेटफॉर्म है, जहां दर्शक हॉट एंड …"
+    }
+  ]
+}

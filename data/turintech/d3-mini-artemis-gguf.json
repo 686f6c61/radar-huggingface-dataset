@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "turintech/d3-mini-Artemis-GGUF",
+  "slug": "turintech-d3-mini-artemis-gguf",
+  "author": "turintech",
+  "url": "https://huggingface.co/turintech/d3-mini-Artemis-GGUF",
+  "created_at": "2026-10-20T16:22:29.000Z",
+  "updated_at": "2026-10-26T02:08:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "d3",
+    "decision-model",
+    "systemone",
+    "llama.cpp",
+    "quantized",
+    "text-classification",
+    "base_model:vllm-sr/d3-mini",
+    "base_model:quantized:vllm-sr/d3-mini",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": 4841450496,
+  "parameters_human": "4.84B",
+  "storage_bytes": 6349971670,
+  "storage_human": "6.3 GB",
+  "base_model": "vllm-sr/d3-mini",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Agreement with the BF16 original",
+      "dataset": "final set: 160 typed-decisions train-split cases, kept out of calibration and the search (cases: 160; decisions: 800)",
+      "metric": "Same answer as BF16, Q5_K_S, protocol a100-620d222-20261025, panel final (higher is closer)",
+      "value": 97.25
+    },
+    {
+      "task": "Agreement with the BF16 original",
+      "dataset": "final set: 160 typed-decisions train-split cases, kept out of calibration and the search (cases: 160; decisions: 800)",
+      "metric": "Mean KL to BF16, Q5_K_S, protocol a100-620d222-20261025, panel final (lower is closer)",
+      "value": 0.00349
+    },
+    {
+      "task": "Agreement with the BF16 original",
+      "dataset": "final set: 160 typed-decisions train-split cases, kept out of calibration and the search (cases: 160; decisions: 800)",
+      "metric": "Accuracy, Q5_K_S, protocol a100-620d222-20261025, panel final (against the panel's labels, higher is better)",
+      "value": 72
+    },
+    {
+      "task": "Agreement with the BF16 original",
+      "dataset": "final set: 160 typed-decisions train-split cases, kept out of calibration and the search (cases: 160; decisions: 800)",
+      "metric": "Accuracy change vs BF16, Q5_K_S, protocol a100-620d222-20261025, panel final (0 is the original)",
+      "value": -0.5
+    },
+    {
+      "task": "Agreement with the BF16 original",
+      "dataset": "final set: 160 typed-decisions train-split cases, kept out of calibration and the search (cases: 160; decisions: 800)",
+      "metric": "Confident answers changed vs BF16, Q5_K_S, protocol a100-620d222-20261025, panel final (lower is closer)",
+      "value": 0
+    }
+  ],
+  "sources": []
+}

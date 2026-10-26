@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "histoforge/rat-seminiferous-tubule-staging",
+  "slug": "histoforge-rat-seminiferous-tubule-staging",
+  "author": "histoforge",
+  "url": "https://huggingface.co/histoforge/rat-seminiferous-tubule-staging",
+  "created_at": "2026-09-28T01:15:28.000Z",
+  "updated_at": "2026-10-26T02:13:04.000Z",
+  "license": "dinov3",
+  "license_family": "unknown",
+  "pipeline_tag": "image-segmentation",
+  "library": "histoforge",
+  "languages": [],
+  "tags": [
+    "histoforge",
+    "dinov3-adapter-hovernet",
+    "histopathology",
+    "rat",
+    "testis",
+    "pas",
+    "instance-segmentation",
+    "image-classification",
+    "image-segmentation",
+    "base_model:timm/vit_large_patch16_dinov3.lvd1689m",
+    "base_model:finetune:timm/vit_large_patch16_dinov3.lvd1689m",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1285083289,
+  "storage_human": "1.3 GB",
+  "base_model": "timm/vit_large_patch16_dinov3.lvd1689m",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quetta - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Quetta",
+      "snippet": "Quetta is on the western side of Pakistan and is connected to the rest of the country by a network of roads, railways and its …Read more"
+    },
+    {
+      "title": "Jeeto Pakistan - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLb2aaNHUy_gFKB1sL6YLCzpFaGmPCnk8S",
+      "snippet": "With excitement and riches around every corner, conducted in front of the Live audiences, where almost all of the crowd will not go …"
+    },
+    {
+      "title": "Jeeto Pakistan | Full Episodes | 2025 - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLb2aaNHUy_gFd0xn0FZCNUEBGzILIUey_",
+      "snippet": "Dec 14, 2025 · Jeeto Pakistan | Full Episodes | 2025 by ARY Digital HD • Playlist • 45 videos • 124,170 views"
+    },
+    {
+      "title": "Buy jetta Online at Best Price in Pakistan - Daraz.pk",
+      "url": "https://www.daraz.pk/tag/jetta/",
+      "snippet": "Pakistan - Shop for Best Online at Daraz.pk Wide Variety of jetta. Great Prices, Even Better Service."
+    },
+    {
+      "title": "New Volkswagen Jetta Car Prices In Pakistan - CCP PAK",
+      "url": "https://www.ccarprice.com/pk/new-volkswagen-jetta-car-price-in-pakistan-271",
+      "snippet": "New Volkswagen Jetta Car prices in Pakistan Volkswagen Jetta GLI 2027 PK 9,359,830"
+    }
+  ]
+}

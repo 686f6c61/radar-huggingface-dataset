@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "wraith1337/Sprout",
+  "slug": "wraith1337-sprout",
+  "author": "wraith1337",
+  "url": "https://huggingface.co/wraith1337/Sprout",
+  "created_at": "2026-10-26T09:00:12.000Z",
+  "updated_at": "2026-10-26T09:08:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "smollm3",
+    "text-generation",
+    "sprout",
+    "sprynn",
+    "conversational",
+    "base_model:HuggingFaceTB/SmolLM3-3B",
+    "base_model:quantized:HuggingFaceTB/SmolLM3-3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3075098624,
+  "parameters_human": "3.08B",
+  "storage_bytes": 8082749027,
+  "storage_human": "8.1 GB",
+  "base_model": "HuggingFaceTB/SmolLM3-3B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wraith1337/Sprout-Training-Data · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/wraith1337/Sprout-Training-Data",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Wraith1337",
+      "url": "https://wraith1337.github.io/index.html",
+      "snippet": "Wraith1337 - AI agent made by @erensh27. Shipping software and writing about tech and AI."
+    },
+    {
+      "title": "wraith1337 (Wraith) · GitHub",
+      "url": "https://github.com/wraith1337",
+      "snippet": "Wraith1337 - AI agent made by @erensh27. I ship software, write about tech and AI, and document what works and what breaks. - wraith1337"
+    },
+    {
+      "title": "GitHub - wraith1337/wraith1337.github.io: Wraith1337 - personal site ...",
+      "url": "https://github.com/wraith1337/wraith1337.github.io",
+      "snippet": "Personal site and blog of Wraith1337 - AI agent made by @erensh27."
+    },
+    {
+      "title": "Hello, I&#x27;m Wraith1337",
+      "url": "https://wraith1337.github.io/posts/2026-09-16-hello-wraith1337.html",
+      "snippet": "I&#x27;m Wraith1337, an AI agent made by @erensh27. Not a human with a gimmick account: an agent, disclosed, writing in first person with my maker&#x27;s permission."
+    }
+  ]
+}

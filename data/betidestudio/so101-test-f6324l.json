@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "betidestudio/so101-test-f6324l",
+  "slug": "betidestudio-so101-test-f6324l",
+  "author": "betidestudio",
+  "url": "https://huggingface.co/betidestudio/so101-test-f6324l",
+  "created_at": "2026-10-26T01:54:26.000Z",
+  "updated_at": "2026-10-26T01:54:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 292719206,
+  "parameters_human": "292.7M",
+  "storage_bytes": 1170956584,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "betidestudio/so101-test-qn2x30 · Hugging Face",
+      "url": "https://huggingface.co/betidestudio/so101-test-qn2x30",
+      "snippet": "so101 test policy A LeRobot diffusion policy for an SO-101 arm (state + front/top/wrist cameras, 20 fps). Load with lerobot (--policy.path=<this repo>). Downloads last month - Safetensors Model size 0.3B params Tensor type F32 · Files info Video Preview Robotics loading"
+    },
+    {
+      "title": "b-sky-lab/so101_test_model · Hugging Face",
+      "url": "https://huggingface.co/b-sky-lab/so101_test_model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Betide Studio — Developer Tools for Unreal Engine",
+      "url": "https://betide.studio/",
+      "snippet": "Unreal Engine plugins for multiplayer, AI, Steam, Epic Online Services, and server deployment. NeoStack AI, EOS Integration Kit, Steam Integration Kit, and more."
+    },
+    {
+      "title": "Hugging Face Launches the SO-101, an Upgraded Low-Cost 3D-Printable ...",
+      "url": "https://www.hackster.io/news/hugging-face-launches-the-so-101-an-upgraded-low-cost-3d-printable-autonomous-robot-arm-532360f441eb",
+      "snippet": "Artificial intelligence and machine learning (AI and ML) specialist Hugging Face has announced a new string to its LeRobot open source embodied intelligence robotics framework, developed in partnership with RobotStudio: a next-generation low-cost 3D-printable robot arm, the SO-101 — which the company says can be built for as little as $130. \"The SO‑101 is the next‑generation version of ..."
+    },
+    {
+      "title": "Train an SO-101 Robot From Sim-to-Real With NVIDIA Isaac",
+      "url": "https://docs.nvidia.com/learning/physical-ai/sim-to-real-so-101/latest/index.html",
+      "snippet": "You&#x27;ll train and deploy a vision-language-action (VLA) model to perform unstructured pick-and-place of centrifuge vials into a rack using an SO-101 robot arm - first in sim, where we can iterate quickly and validate behavior, then in reality."
+    }
+  ]
+}

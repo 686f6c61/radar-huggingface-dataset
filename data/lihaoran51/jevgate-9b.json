@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "lihaoran51/JevGate-9B",
+  "slug": "lihaoran51-jevgate-9b",
+  "author": "lihaoran51",
+  "url": "https://huggingface.co/lihaoran51/JevGate-9B",
+  "created_at": "2026-10-26T09:15:58.000Z",
+  "updated_at": "2026-10-26T09:30:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "healthcare",
+    "agent",
+    "long-term-memory",
+    "lora",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:adapter:Qwen/Qwen3.5-9B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 181571183,
+  "storage_human": "182 MB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Autotrust JEV-9B Vision Model: Claims vs. Verified Facts",
+      "url": "https://techjacksolutions.com/ai-brief/autotrust-jev-9b-vision-language-model-hugging-face/",
+      "snippet": "AutoTrust AI Lab released a vision update to its open JEV-9B model on October 3, 2026, according to the model&#x27;s Hugging Face repository. The model card publishes specific performance figures for computer use and robotic arm tasks, and explicitly frames the model as a fast visual judge rather than an end-to-end controller, a distinction the card itself flags as important. agentic-ai open-source ..."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Open-Jev Released: Open-Source 2B/9B Decision… · AGI Hunt",
+      "url": "https://agihunt.info/en/p/1a0c1a36ca897afb53c33dcef6f",
+      "snippet": "Zefan Cai&#x27;s team open-sourced Open-Jev, a pair of open-source decision models (2B and 9B) inspired by the Jev paper. They ship as LoRA adapters plus decision heads, with code, training data, model weights, and a demo video all publicly available."
+    },
+    {
+      "title": "AI Model Marketplace: Compare Models & Pricing | NezhaGate",
+      "url": "https://nezhagate.com/en/market",
+      "snippet": "Model Market AI Model Market Browse every available AI model, compare pricing and capabilities, and integrate in minutes. Currently offering 27 models, with more added continuously. Plus 1 more is not yet open."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?library...",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

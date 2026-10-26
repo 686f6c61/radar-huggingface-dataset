@@ -5,7 +5,7 @@
   "author": "sweagent",
   "url": "https://huggingface.co/sweagent/rlvr-seed-baseline-iter74",
   "created_at": "2026-09-16T19:16:59.000Z",
-  "updated_at": "2026-09-16T19:25:58.000Z",
+  "updated_at": "2026-10-25T08:00:59.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -24,12 +24,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 10,
+  "downloads_30d": 11,
   "trending_score": 0,
-  "parameters": 68164077424,
-  "parameters_human": "68.16B",
-  "storage_bytes": 136345466518,
-  "storage_human": "136.3 GB",
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71916687950,
+  "storage_human": "71.9 GB",
   "base_model": "Qwen/Qwen3.5-35B-A3B-Base",
   "formats": [
     "safetensors"

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "quocb14005xx/67k1-companion-models",
+  "slug": "quocb14005xx-67k1-companion-models",
+  "author": "quocb14005xx",
+  "url": "https://huggingface.co/quocb14005xx/67k1-companion-models",
+  "created_at": "2026-10-26T08:46:06.000Z",
+  "updated_at": "2026-10-26T08:46:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "reachy-mini",
+    "computer-vision",
+    "face-detection",
+    "face-recognition",
+    "traffic-sign-recognition",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 126172906,
+  "storage_human": "126 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "quocb14005xx (huynhquoc) - Hugging Face",
+      "url": "https://huggingface.co/quocb14005xx",
+      "snippet": "67K1 Companion 🟢 Nam — một người bạn luôn hiện diện trong gia đình quocb14005xx 32 minutes ago Running Reachy"
+    },
+    {
+      "title": "model - 3D model by quocb14005xx (@quocb14005xx) [8750c76] - Sketchfab",
+      "url": "https://sketchfab.com/3d-models/model-8750c763c1614b88bb1a70487e5c1cd7",
+      "snippet": "This model was generated using Meshy, an AI-powered 3D creation toolkit. Meshy helps creators turn ideas into high-quality 3D models with ease. View the original model and claim a free month of Pro on Meshy: https://www.meshy.ai/s/NcCYus"
+    },
+    {
+      "title": "quocb14005xx - Sketchfab",
+      "url": "https://sketchfab.com/quocb14005xx",
+      "snippet": "View the profile and 3D models by quocb14005xx"
+    },
+    {
+      "title": "AI Companion - Minecraft Mods - CurseForge",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/ai-companion",
+      "snippet": "AI Companion This mod adds a fully interactive AI-powered companion NPC to your Minecraft world, designed to observe, react to, and engage with the player in real time. Unlike static villagers or scripted companions, this character dynamically responds to what you do in-game."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=ai-companion",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

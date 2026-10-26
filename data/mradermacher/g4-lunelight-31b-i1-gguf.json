@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "mradermacher/G4-LuneLight-31B-i1-GGUF",
+  "slug": "mradermacher-g4-lunelight-31b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/G4-LuneLight-31B-i1-GGUF",
+  "created_at": "2026-10-26T09:29:27.000Z",
+  "updated_at": "2026-10-26T10:08:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 143037533568,
+  "storage_human": "143.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/G4-LuneLight-31B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/G4-LuneLight-31B-GGUF",
+      "snippet": "mradermacher / G4-LuneLight-31B-GGUF Like 0 Transformers GGUF English conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher/Lucent-Witch-31B-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Lucent-Witch-31B-i1-GGUF",
+      "snippet": "mradermacher / Lucent-Witch-31B-i1-GGUF Like 0 Transformers GGUF English mergekit Merge roleplay storytelling imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher GGUF Models (1407) | GraySoft",
+      "url": "https://graysoft.dev/authors/m/mradermacher.html",
+      "snippet": "Browse 3429 GGUF models by mradermacher on GraySoft. 1,280,469 total downloads. Run locally with guIDE."
+    },
+    {
+      "title": "G4 Alice V1.2 31b I1 Gguf - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/mradermacher/g4-alice-v1.2-31b-i1-gguf",
+      "snippet": "Registry entry for model G4 Alice V1.2 31b I1 Gguf; source metadata pending."
+    },
+    {
+      "title": "AI Model Tracker Index: Updates, Sources and Evidence",
+      "url": "https://savrn.com/model-tracker",
+      "snippet": "Follow observed AI model changes and official announcements with source links, evidence labels, check times and transparent monitoring coverage from SAVRN."
+    }
+  ]
+}

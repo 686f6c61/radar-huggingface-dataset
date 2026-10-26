@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "dongnhdev/Ornith-1.5-122B-MTP-GGUF",
+  "slug": "dongnhdev-ornith-1-5-122b-mtp-gguf",
+  "author": "dongnhdev",
+  "url": "https://huggingface.co/dongnhdev/Ornith-1.5-122B-MTP-GGUF",
+  "created_at": "2026-10-26T09:30:22.000Z",
+  "updated_at": "2026-10-26T10:00:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "tags": [
+    "gguf",
+    "qwen3.5",
+    "moe",
+    "mtp",
+    "iq2",
+    "en",
+    "vi",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 451290864,
+  "parameters_human": "451.3M",
+  "storage_bytes": 39538969344,
+  "storage_human": "39.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ornith-1.5-122B.MXFP4_MOE.gguf - Hugging Face",
+      "url": "https://huggingface.co/prithivMLmods/Ornith-1.5-122B-MXFP4_MOE-MTP/blob/main/Ornith-1.5-122B.MXFP4_MOE.gguf",
+      "snippet": "Instructions to use prithivMLmods/Ornith-1.5-122B-MXFP4_MOE-MTP with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Ornith-1.5 - a ornith-ai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/ornith-ai/ornith-15",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "How to Run Ornith-1.5 122B Locally with llama.cpp - mindstudio.ai",
+      "url": "https://www.mindstudio.ai/blog/ornith-1-5-122b-local-coding-test",
+      "snippet": "A hands-on guide to serving Ornith-1.5 122B locally via llama.cpp, covering GGUF quant choices, VRAM tradeoffs, and real coding tests."
+    },
+    {
+      "title": "ornith-1.5-122b/README.md at main · irr/ornith-1.5-122b - GitHub",
+      "url": "https://github.com/irr/ornith-1.5-122b/blob/main/README.md",
+      "snippet": "ornith-1.5-122b One command to run Ornith-1.5-122B with llama.cpp (Vulkan/RADV) on an AMD Strix Halo (gfx1151) machine with 128 GB unified memory, at the model&#x27;s full native 262144-token context, sped up by MTP self-speculation (or, optionally, the DFlash2 drafter)."
+    },
+    {
+      "title": "Ornith AI",
+      "url": "https://ornith.ai/",
+      "snippet": "Ornith-1.5 takes a major step toward building foundation models through end-to-end self-improvement, extending the self-scaffolding framework introduced in Ornith-1.0 into a more complete self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Ma-Ri-Ba-Ku/lermolieff-iconclass-c-radio",
+  "slug": "ma-ri-ba-ku-lermolieff-iconclass-c-radio",
+  "author": "Ma-Ri-Ba-Ku",
+  "url": "https://huggingface.co/Ma-Ri-Ba-Ku/lermolieff-iconclass-c-radio",
+  "created_at": "2026-10-26T09:12:28.000Z",
+  "updated_at": "2026-10-26T09:12:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "iconclass",
+    "art-history",
+    "multi-label",
+    "image-classification",
+    "dataset:davanstrien/iconclass-vlm-brillfull",
+    "base_model:nvidia/C-RADIOv3-L",
+    "base_model:finetune:nvidia/C-RADIOv3-L",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 98510271,
+  "storage_human": "99 MB",
+  "base_model": "nvidia/C-RADIOv3-L",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Iconclass multi-label classification",
+      "dataset": "Iconclass AI test set (ICAI, 788 images)",
+      "metric": "hierarchical F1 (ancestors read from the notation)",
+      "value": 54.8
+    }
+  ],
+  "sources": [
+    {
+      "title": "MA — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/MA",
+      "snippet": "Ma est une abréviation pouvant faire référence à : Ma, unité temporelle correspondant à un million d'années et utilisée en …Read more"
+    },
+    {
+      "title": "MA! Bouillon italien à Paris | Restaurant italien chic",
+      "url": "https://www.ma-lesite.com/",
+      "snippet": "Découvrez MA!, le bouillon italien chic à Paris : une cuisine généreuse, populaire, conviviale et élégante avec des recettes italiennes."
+    },
+    {
+      "title": "Portail officiel du Maroc - Institutions, e-services, patrimoine | Maroc.ma",
+      "url": "https://www.maroc.ma/fr",
+      "snippet": "Bienvenue sur le portail officiel du Royaume du Maroc. Explorez les institutions, services numériques, actualités, culture, histoire et …"
+    },
+    {
+      "title": "Ma (film) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Ma_(film)",
+      "snippet": "Ma est un film d'horreur américain réalisé par Tate Taylor sorti en 2019. Le film met en vedette Octavia Spencer, Juliette Lewis, …"
+    },
+    {
+      "title": "MA - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/MA",
+      "snippet": "This disambiguation page lists articles associated with the title MA. If an internal link incorrectly led you here, you may wish to …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "janniskirschner/mtds-9800329993ae",
+  "slug": "janniskirschner-mtds-9800329993ae",
+  "author": "janniskirschner",
+  "url": "https://huggingface.co/janniskirschner/mtds-9800329993ae",
+  "created_at": "2026-10-26T09:22:28.000Z",
+  "updated_at": "2026-10-26T09:23:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "base_model:Qwen/Qwen2.5-7B",
+    "base_model:finetune:Qwen/Qwen2.5-7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693760,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ModelForest — Interactive AI Model Family Tree",
+      "url": "https://mrunreal.github.io/ModelForest/",
+      "snippet": "Explore the complete genealogy of AI models. See how GPT, Llama, Claude, Gemini, and 200+ models evolved. Interactive tree updated daily from HuggingFace."
+    },
+    {
+      "title": "JannisKirschner (Jannis) · GitHub",
+      "url": "https://github.com/JannisKirschner",
+      "snippet": "Hello there :) I&#x27;m a Security Researcher from Switzerland. My interests are networking, programming, it-security, data science, and life sciences - JannisKirschner"
+    },
+    {
+      "title": "GitHub - JannisKirschner/Assembler: Assembly programs I&#x27;ve wrote.",
+      "url": "https://github.com/JannisKirschner/Assembler",
+      "snippet": "Assembly programs I&#x27;ve wrote. Contribute to JannisKirschner/Assembler development by creating an account on GitHub."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Qwen, Mistral AI, Moonshot AI, Z.ai, MiniMax, NVIDIA, Microsoft AI, Cohere, Xiaomi, and other prominent AI labs. The newest-first tables show each release date, provider, and model type. Dates use the earliest meaningful availability stage for each entry. Preview access ..."
+    },
+    {
+      "title": "AI Model Index",
+      "url": "https://www.modelindex.org/",
+      "snippet": "Search and explore AI models across providers, modalities, and capabilities. Currently supported providers: OpenAI, Google, Anthropic, Meta, and Mistral AI. See the Model Inclusion Policy for details on selection criteria."
+    }
+  ]
+}

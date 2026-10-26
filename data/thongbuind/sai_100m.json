@@ -5,7 +5,7 @@
   "author": "thongbuind",
   "url": "https://huggingface.co/thongbuind/SAI_100M",
   "created_at": "2026-08-14T09:55:00.000Z",
-  "updated_at": "2026-10-23T14:51:10.000Z",
+  "updated_at": "2026-10-25T17:58:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 3,
-  "downloads_30d": 400,
+  "downloads_30d": 403,
   "trending_score": 0,
   "parameters": 113867520,
   "parameters_human": "113.9M",

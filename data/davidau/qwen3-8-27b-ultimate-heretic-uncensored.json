@@ -1,0 +1,108 @@
+{
+  "schema": 1,
+  "id": "DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored",
+  "slug": "davidau-qwen3-8-27b-ultimate-heretic-uncensored",
+  "author": "DavidAU",
+  "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored",
+  "created_at": "2026-09-03T09:09:05.000Z",
+  "updated_at": "2026-10-26T09:12:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "heretic",
+    "qwen3_8",
+    "qwen3_6",
+    "uncensored",
+    "finetune",
+    "Cold Fusion",
+    "GAIN Training",
+    "Multi-stage tuning",
+    "all use cases",
+    "unsloth",
+    "27 reasoning modes",
+    "27 instruct modes",
+    "15 AI Constructs",
+    "5 Super AI Constructs",
+    "Brainstorm AI Construct",
+    "Brainstorm Business AI Construct",
+    "Universal Teacher AI Construct",
+    "Agent AI Construct",
+    "Coder AI Construct",
+    "Turbo-Brilliance",
+    "9 Xhigh reasoning modes",
+    "fine tune",
+    "multi-stage tuned",
+    "thinking",
+    "reasoning",
+    "coder",
+    "creative",
+    "creative writing",
+    "all genres",
+    "story",
+    "writing",
+    "fiction",
+    "roleplaying",
+    "bfloat16",
+    "conversational",
+    "en",
+    "dataset:DavidAU/Polar-STRICT-Datasets",
+    "dataset:DavidAU/F451-STRICT-Datasets",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 79,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55584657975,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gooner",
+      "url": "https://chat.gooner.in/",
+      "snippet": "Meet new people and hang out. Adults (18+) only.Read more"
+    },
+    {
+      "title": "GoonGrid - The Ultimate Multi-Viewport Video Player",
+      "url": "https://goongrid.app/",
+      "snippet": "Synchronize your watching experience with GoonGrid. The ultimate multi-splitscreen video player for maximized intake."
+    },
+    {
+      "title": "Gooning Simulator",
+      "url": "https://gooningsimulator.com/",
+      "snippet": "Support us on Patreon Join the Discord Follow on Twitch Follow on TikTok Subscribe to the Newsletter."
+    },
+    {
+      "title": "GoonScroll.app",
+      "url": "https://goonscroll.app/",
+      "snippet": "Explore a wide variety of content from e621, Rule34 and more to tailor your feed and goon to your hearts desires the way you want to"
+    },
+    {
+      "title": "Home | Goonwall",
+      "url": "https://goonwall.com/en",
+      "snippet": "Who’s here and what’s open. The latest things people earned, published and started."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "betidestudio/so101-test-a1c4rg",
+  "slug": "betidestudio-so101-test-a1c4rg",
+  "author": "betidestudio",
+  "url": "https://huggingface.co/betidestudio/so101-test-a1c4rg",
+  "created_at": "2026-10-26T02:11:59.000Z",
+  "updated_at": "2026-10-26T02:12:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 292719206,
+  "parameters_human": "292.7M",
+  "storage_bytes": 1170956584,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "betidestudio/so101-test-ab9ofl · Hugging Face",
+      "url": "https://huggingface.co/betidestudio/so101-test-ab9ofl",
+      "snippet": "so101 test policy A LeRobot diffusion policy for an SO-101 arm (state + front/top/wrist cameras, 20 fps). Load with lerobot (--policy.path=<this repo>). Downloads last month - Safetensors Model size 0.3B params Tensor type F32 · Files info Video Preview Robotics loading"
+    },
+    {
+      "title": "aaron-ser/SO101-Model · Hugging Face",
+      "url": "https://huggingface.co/aaron-ser/SO101-Model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Train an SO-101 Robot From Sim-to-Real With NVIDIA Isaac",
+      "url": "https://docs.nvidia.com/learning/physical-ai/sim-to-real-so-101/latest/index.html",
+      "snippet": "You&#x27;ll train and deploy a vision-language-action (VLA) model to perform unstructured pick-and-place of centrifuge vials into a rack using an SO-101 robot arm - first in sim, where we can iterate quickly and validate behavior, then in reality."
+    },
+    {
+      "title": "SO101 Arm ACT Training Guide Using SOLO CLI - GitHub",
+      "url": "https://github.com/omkarputti/SO101_ACT_Training",
+      "snippet": "If you have an SO101 robotic arm, you can use these datasets to teach your robot new skills using imitation learning. The robot learns by watching demonstrations recorded in the dataset. You do NOT need to manually code robot movement. The AI model learns from the demonstrations and predicts robot actions automatically."
+    },
+    {
+      "title": "Datasets and Models — Train an SO-101 Robot From Sim-to-Real With ...",
+      "url": "https://docs.nvidia.com/learning/physical-ai/sim-to-real-so-101/latest/datasets-and-models.html",
+      "snippet": "Datasets and Models # Pre-collected datasets and pre-trained model checkpoints used in this course, hosted on Hugging Face. Datasets #"
+    }
+  ]
+}

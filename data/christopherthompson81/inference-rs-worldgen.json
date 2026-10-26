@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "christopherthompson81/inference-rs-worldgen",
+  "slug": "christopherthompson81-inference-rs-worldgen",
+  "author": "christopherthompson81",
+  "url": "https://huggingface.co/christopherthompson81/inference-rs-worldgen",
+  "created_at": "2026-10-26T08:59:00.000Z",
+  "updated_at": "2026-10-26T09:41:47.000Z",
+  "license": "mixed",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "gguf",
+    "world-generation",
+    "3d",
+    "gaussian-splatting",
+    "inference-rs",
+    "base_model:Ruicheng/moge-2-vitl-normal",
+    "base_model:quantized:Ruicheng/moge-2-vitl-normal",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5680910336,
+  "parameters_human": "5.68B",
+  "storage_bytes": 28937155584,
+  "storage_human": "28.9 GB",
+  "base_model": "hanshanxue/WorldStereo, Wan-AI/Wan2.1-I2V-14B-480P-Diffusers, Ruicheng/moge-2-vitl-normal",
+  "formats": [
+    "diffusers",
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "christopherthompson81/inference-rs-worldgen · Hugging Face",
+      "url": "https://huggingface.co/christopherthompson81/inference-rs-worldgen",
+      "snippet": "World-generation checkpoints for inference.rs The checkpoints inference.rs runs to turn one 360 degree panorama into an explorable 3D world (HY-World 2.0&#x27;s world generation: MoGe-2 depth, WorldStereo-2 views along camera paths, WorldMirror 2.0 reconstruction, Gaussian splats), packaged in 27 GB instead of 59 and laid out as the models root its ..."
+    },
+    {
+      "title": "Releases: christopherthompson81/inference.rs - GitHub",
+      "url": "https://github.com/christopherthompson81/inference.rs/releases",
+      "snippet": "Fast, flexible model inference in Rust. Fork of mistral.rs. - Releases · christopherthompson81/inference.rs"
+    },
+    {
+      "title": "Compare · christopherthompson81/inference.rs · GitHub",
+      "url": "https://github.com/christopherthompson81/inference.rs/compare",
+      "snippet": "Fast, flexible model inference in Rust. Fork of mistral.rs. - Compare · christopherthompson81/inference.rs"
+    },
+    {
+      "title": "WorldGen: From Text to Traversable and Interactive 3D Worlds",
+      "url": "https://arxiv.org/html/2511.16825",
+      "snippet": "This allows WorldGen to produce a large variety of detailed scenes while ensuring that they remain functional. Given the blockout, navmesh, and the generated image of the scene, we then apply an image-to-3D model to obtain a first holistic reconstruction of the world."
+    },
+    {
+      "title": "WorldGen | Wiki | HyperAI",
+      "url": "https://hyper.ai/en/wiki/47451",
+      "snippet": "WorldGen is capable of creating geometrically unified, visually rich, and highly efficient real-time rendering worlds."
+    }
+  ]
+}

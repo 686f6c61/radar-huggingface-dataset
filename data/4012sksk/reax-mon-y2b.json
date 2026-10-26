@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "4012sksk/reax-mon-y2b",
+  "slug": "4012sksk-reax-mon-y2b",
+  "author": "4012sksk",
+  "url": "https://huggingface.co/4012sksk/reax-mon-y2b",
+  "created_at": "2026-10-26T00:55:31.000Z",
+  "updated_at": "2026-10-26T00:56:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "base_model:perplexity-ai/pplx-decider-v1.2",
+    "base_model:finetune:perplexity-ai/pplx-decider-v1.2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26085330160,
+  "parameters_human": "26.09B",
+  "storage_bytes": 52193403540,
+  "storage_human": "52.2 GB",
+  "base_model": "perplexity-ai/pplx-decider-v1.2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

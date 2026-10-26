@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "galakenya/JapanRailwayGuideWatcher",
+  "slug": "galakenya-japanrailwayguidewatcher",
+  "author": "galakenya",
+  "url": "https://huggingface.co/galakenya/JapanRailwayGuideWatcher",
+  "created_at": "2026-10-26T03:42:02.000Z",
+  "updated_at": "2026-10-26T11:07:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1087625512,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "为什么 m1 采用大小核设计却没有 intel 的问题？ - 知乎",
+      "url": "https://www.zhihu.com/question/569563024",
+      "snippet": "为什么 m1 采用大小核设计却没有 intel 的问题？ mac os + m1 大小核 = yyds windows + intel 12代大小核 = 垃圾 为什么？ 显示全部 …"
+    },
+    {
+      "title": "为什么总有网友觉得Intel 18A工艺的等效晶体管密度已经超过台积 …",
+      "url": "https://www.zhihu.com/question/1996323565683884198",
+      "snippet": "Jan 19, 2026 · Intel 18A的 绝对密度 目前还是比较落后的，特别是大家习惯看的 HD库 的数字。 HP这里我没统计，但是差距会少很多 …"
+    },
+    {
+      "title": "如何评价intel i3 7350k这颗CPU? - 知乎",
+      "url": "https://www.zhihu.com/question/53086016",
+      "snippet": "我经常说一句话，当年x5698他能1366平台默频4.4，我7350k用1151平台超频 4.5 不是问题。 埋伏1800x一手，这个三缓不能抢，这个 …"
+    },
+    {
+      "title": "intel hd4000显卡能否推得动2k显示器？",
+      "url": "https://www.zhihu.com/question/30652412",
+      "snippet": "同款显卡 intel hd4000，三星老笔记本 接口：hdmi 显示器：dell u2518d分辨率2560×1440 设置方式： 桌面右键，图形选项，自定义 …"
+    },
+    {
+      "title": "为什么 AMD 用 7nm 工艺制作的 cpu 才追上 intel 的 ... - 知乎",
+      "url": "https://www.zhihu.com/question/334502762",
+      "snippet": "对应Intel的CPU就是8-11代。 顺带说下，咱一直觉得INTEL的14nm+的并没有从根本上改进工艺，而只是改进了后端的物理设计，同 …"
+    }
+  ]
+}

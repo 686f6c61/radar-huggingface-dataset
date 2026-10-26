@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "turintech/Qwen3.5-2B-Artemis-GGUF",
+  "slug": "turintech-qwen3-5-2b-artemis-gguf",
+  "author": "turintech",
+  "url": "https://huggingface.co/turintech/Qwen3.5-2B-Artemis-GGUF",
+  "created_at": "2026-10-15T13:06:41.000Z",
+  "updated_at": "2026-10-26T11:10:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen",
+    "qwen3.5",
+    "llama.cpp",
+    "function-calling",
+    "vision",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:quantized:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 3,
+  "downloads_30d": 905,
+  "trending_score": 0,
+  "parameters": 1881825088,
+  "parameters_human": "1.88B",
+  "storage_bytes": 4018034475,
+  "storage_human": "4.0 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Held-out tasks",
+      "dataset": "BFCL live",
+      "metric": "Tool calls (of 258)",
+      "value": 184
+    },
+    {
+      "task": "Held-out tasks",
+      "dataset": "IFEval",
+      "metric": "Followed (of 541)",
+      "value": 374
+    },
+    {
+      "task": "Held-out tasks",
+      "dataset": "GSM8K, last 250",
+      "metric": "Correct (of 250)",
+      "value": 190
+    },
+    {
+      "task": "Held-out tasks",
+      "dataset": "BFCL v4",
+      "metric": "Tool calls (of 500)",
+      "value": 403
+    }
+  ],
+  "sources": [
+    {
+      "title": "turintech/Qwen3.5-2B-Artemis-GGUF · Hugging Face",
+      "url": "https://huggingface.co/turintech/Qwen3.5-2B-Artemis-GGUF",
+      "snippet": "turintech / Qwen3.5-2B-Artemis-GGUF Like 2 Follow TurinTech AI 29 Text Generation GGUF qwen qwen3.5 llama.cpp function-calling imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "turintech/qwen3.5-2b-artemis • LM Studio Hub",
+      "url": "https://lmstudio.ai/turintech/qwen3.5-2b-artemis",
+      "snippet": "Public Fork 0 Star 0 Use Model in LM Studio Model Revisions turintech Star 0 qwen3.5-2b-artemis Public Fork 0 Star 0 Use Model in LM Studio Model Revisions"
+    },
+    {
+      "title": "turintech/qwen3.5-2b-artemis - ollama.com",
+      "url": "https://ollama.com/turintech/qwen3.5-2b-artemis:latest",
+      "snippet": "Readme Qwen3.5 2B Artemis Text-only GGUF versions of Qwen3.5 2B. The vision encoder and multi-token prediction (MTP) layer are not included. TurinTech models, built with Artemis Ollama ... latest selects q5_k_m. The explicit tags below use the same model bytes as the corresponding Hugging Face files. ... GB is download size, not runtime memory."
+    },
+    {
+      "title": "turintech/qwen3.5-2b-artemis/model",
+      "url": "https://ollama.com/turintech/qwen3.5-2b-artemis:latest/blobs/00643c030243",
+      "snippet": "Text-only Qwen3.5 2B GGUF files. Default: q5_k_m. TurinTech models, built with Artemis."
+    },
+    {
+      "title": "turintech/Qwen3.5-9B-Artemis-GGUF · Hugging Face",
+      "url": "https://huggingface.co/turintech/Qwen3.5-9B-Artemis-GGUF",
+      "snippet": "turintech / Qwen3.5-9B-Artemis-GGUF Like 1 Follow TurinTech AI 27 Text Generation GGUF qwen qwen3.5 llama.cpp function-calling imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

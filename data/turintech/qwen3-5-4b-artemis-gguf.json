@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "id": "turintech/Qwen3.5-4B-Artemis-GGUF",
+  "slug": "turintech-qwen3-5-4b-artemis-gguf",
+  "author": "turintech",
+  "url": "https://huggingface.co/turintech/Qwen3.5-4B-Artemis-GGUF",
+  "created_at": "2026-10-14T17:29:17.000Z",
+  "updated_at": "2026-10-26T11:10:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen",
+    "qwen3.5",
+    "llama.cpp",
+    "function-calling",
+    "vision",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:quantized:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 1054,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 9983267423,
+  "storage_human": "10.0 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Closeness to the BF16 original",
+      "dataset": "WikiText-2 test",
+      "metric": "Same top p (%)",
+      "value": 93.5
+    },
+    {
+      "task": "Held-out tasks",
+      "dataset": "BFCL live",
+      "metric": "Tool calls (of 258)",
+      "value": 204
+    },
+    {
+      "task": "Held-out tasks",
+      "dataset": "IFEval",
+      "metric": "Followed (of 541)",
+      "value": 431
+    }
+  ],
+  "sources": [
+    {
+      "title": "turintech/qwen3.5-4b-artemis - ollama.com",
+      "url": "https://ollama.com/turintech/qwen3.5-4b-artemis",
+      "snippet": "# Qwen3.5 4B Artemis Text-only GGUF versions of Qwen3.5 4B. The vision encoder and multi-token prediction (MTP) layer are not included. TurinTech models, built with Artemis ## Ollama ```bash ollama run turintech/qwen3.5-4b-artemis:q4_k_m ``` `latest` selects `q4_k_m`. The explicit tags below use the same model bytes as the corresponding Hugging Face files. | Tag | Hugging Face file | Size ..."
+    },
+    {
+      "title": "Qwen3.5 4b Artemis Gguf - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/turintech/qwen3.5-4b-artemis-gguf",
+      "snippet": "Registry entry for model Qwen3.5 4b Artemis Gguf; source metadata pending."
+    },
+    {
+      "title": "turintech/qwen3.5-4b-artemis/model",
+      "url": "https://ollama.com/turintech/qwen3.5-4b-artemis:latest/blobs/9cc404317005",
+      "snippet": "Text-only Qwen3.5 4B GGUF files. Default: q4_k_m. TurinTech models, built with Artemis."
+    },
+    {
+      "title": "turintech/Qwen3.5-9B-Artemis-GGUF · Hugging Face",
+      "url": "https://huggingface.co/turintech/Qwen3.5-9B-Artemis-GGUF",
+      "snippet": "turintech / Qwen3.5-9B-Artemis-GGUF Like 1 Follow TurinTech AI 27 Text Generation GGUF qwen qwen3.5 llama.cpp function-calling imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "turintech/Qwen3.5-2B-Artemis-GGUF · Hugging Face",
+      "url": "https://huggingface.co/turintech/Qwen3.5-2B-Artemis-GGUF",
+      "snippet": "turintech / Qwen3.5-2B-Artemis-GGUF Like 2 Follow TurinTech AI 29 Text Generation GGUF qwen qwen3.5 llama.cpp function-calling imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

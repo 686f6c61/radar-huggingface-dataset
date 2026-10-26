@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "DarrenHo233/scottyrl-a3-p5_textcraft_grpo",
+  "slug": "darrenho233-scottyrl-a3-p5_textcraft_grpo",
+  "author": "DarrenHo233",
+  "url": "https://huggingface.co/DarrenHo233/scottyrl-a3-p5_textcraft_grpo",
+  "created_at": "2026-10-26T02:00:31.000Z",
+  "updated_at": "2026-10-26T02:00:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "tinker",
+    "lora",
+    "scottyrl",
+    "11-768",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 169907128,
+  "storage_human": "170 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PolyBuzz | Talk to AI Characters & Enjoy Free AI Chat Anytime",
+      "url": "https://www.polybuzz.ai/En",
+      "snippet": "What is PolyBuzz? PolyBuzz offers Free, Private, and Unrestricted AI character chats with over 20 million characters, enabling you to …"
+    },
+    {
+      "title": "PolyBuzz | Talk to AI Characters & Enjoy Free AI Chat Anytime",
+      "url": "https://www.polybuzz.ai/",
+      "snippet": "PolyBuzz is a Free, Private, and Unlimited AI Chat platform with over 20 million unique Characters, offering personalized …"
+    },
+    {
+      "title": "PolyBuzz - Free, Private, and Unrestricted AI Character Chats",
+      "url": "https://app.polybuzz.ai/",
+      "snippet": "Join PolyBuzz for free online AI chat and thrilling roleplay with AI Characters from anime, movies, celebrities, RPGs, and more! …"
+    },
+    {
+      "title": "Polybuzz – Parle à l’IA, discute gratuitement avec des personnages IA",
+      "url": "https://polybuzz.org/fr/",
+      "snippet": "Qu’est-ce que PolyBuzz ? PolyBuzz propose des chats IA gratuits, privés et sans restriction avec plus de 20 millions de …"
+    },
+    {
+      "title": "PolyBuzz AI — Discutez avec plus de 20M+ personnages IA, jeu de …",
+      "url": "https://polybuzz-ai.com/fr/",
+      "snippet": "PolyBuzz AI vous permet de discuter, flirter et jouer des rôles avec des personnages IA réalistes, de parler à voix haute avec une …"
+    }
+  ]
+}

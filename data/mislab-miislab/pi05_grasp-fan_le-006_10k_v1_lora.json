@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "MISLab-MiiSLab/pi05_grasp-fan_Le-006_10k_v1_Lora",
+  "slug": "mislab-miislab-pi05_grasp-fan_le-006_10k_v1_lora",
+  "author": "MISLab-MiiSLab",
+  "url": "https://huggingface.co/MISLab-MiiSLab/pi05_grasp-fan_Le-006_10k_v1_Lora",
+  "created_at": "2026-10-26T09:01:27.000Z",
+  "updated_at": "2026-10-26T09:01:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:lerobot/pi05_base",
+    "lora",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 175907680,
+  "storage_human": "176 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pi05_grasp-fan_Le-003_30k_v1_LoRA - Hugging Face",
+      "url": "https://huggingface.co/MISLab-MiiSLab/pi05_grasp-fan_Le-003_30k_v1_LoRA",
+      "snippet": "Instructions to use MISLab-MiiSLab/pi05_grasp-fan_Le-003_30k_v1_LoRA with libraries, inference providers, notebooks, and local apps. Follow these links to get started ..."
+    },
+    {
+      "title": "MISLab-MiiSLab/pi05_grasp-fan_Le-002_30k_v1 · Hugging Face",
+      "url": "https://huggingface.co/MISLab-MiiSLab/pi05_grasp-fan_Le-002_30k_v1",
+      "snippet": "Like 0 Follow Multimedia Interaction and Intelligent System Lab 4 Safetensors Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 17 Safetensors Model size 4B params Tensor type F32 · BF16 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for ..."
+    },
+    {
+      "title": "GitHub - penn-pal-lab/openpi_with_subtask: open-source-pi05 at GRASP ...",
+      "url": "https://github.com/penn-pal-lab/openpi_with_subtask",
+      "snippet": "openpi holds open-source models and packages for robotics, published by the Physical Intelligence team. Currently, this repo contains three types of models: the π₀ model, a flow-based vision-language-action model (VLA). the π₀-FAST model, an autoregressive VLA, based on the FAST action tokenizer. the π₀.₅ model, an upgraded version of π₀ with better open-world generalization ..."
+    },
+    {
+      "title": "lerobot/docs/source/pi05.mdx at main · huggingface/lerobot",
+      "url": "https://github.com/huggingface/lerobot/blob/main/docs/source/pi05.mdx",
+      "snippet": "🤗 LeRobot: Making AI for Robotics more accessible with end-to-end learning - huggingface/lerobot"
+    },
+    {
+      "title": "pi05_base · Model · Inferix",
+      "url": "https://inferix.co/models/lerobot/pi05_base",
+      "snippet": "π₀.₅ (Pi05) (LeRobot) π₀.₅ is a Vision Language Action (VLA) model with open world generalization from Physical Intelligence, co trained on robot demonstrations and large scale multimodal data to execute long horizon tasks in unseen real world environments. Note: This model currently supports only the flow matching action head for π₀.₅ training and inference. Other components ..."
+    }
+  ]
+}

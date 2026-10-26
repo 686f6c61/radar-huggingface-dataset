@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "janniskirschner/mtds-458f2683600f",
+  "slug": "janniskirschner-mtds-458f2683600f",
+  "author": "janniskirschner",
+  "url": "https://huggingface.co/janniskirschner/mtds-458f2683600f",
+  "created_at": "2026-10-26T09:30:08.000Z",
+  "updated_at": "2026-10-26T09:31:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "base_model:Qwen/Qwen2.5-7B",
+    "base_model:finetune:Qwen/Qwen2.5-7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693760,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JannisKirschner (Jannis) · GitHub",
+      "url": "https://github.com/JannisKirschner",
+      "snippet": "Hello there :) I&#x27;m a Security Researcher from Switzerland. My interests are networking, programming, it-security, data science, and life sciences - JannisKirschner"
+    },
+    {
+      "title": "Activity · JannisKirschner/Dorks · GitHub",
+      "url": "https://github.com/JannisKirschner/Dorks/activity",
+      "snippet": "Personal Collection of Awesome Google Dorks. Contribute to JannisKirschner/Dorks development by creating an account on GitHub."
+    },
+    {
+      "title": "Browse All AI Models | Prompt Directory - PromptAIGrid",
+      "url": "https://www.promptaigrid.com/ai-models",
+      "snippet": "Home / AI Models AI Models Directory Browse 18 AI model s with ready-to-use prompts and real example outputs - filter by category and pick the right engine for your next generation."
+    },
+    {
+      "title": "AI Model Downloads - 492 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "Home Page · ModelScope",
+      "url": "https://modelscope.ai/home",
+      "snippet": "ModelScope is an open-source model community offering models, datasets and interactive demos in one place."
+    }
+  ]
+}

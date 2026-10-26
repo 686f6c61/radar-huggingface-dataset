@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "kinyeah/mochiocr-caoshu-v8-gguf",
+  "slug": "kinyeah-mochiocr-caoshu-v8-gguf",
+  "author": "kinyeah",
+  "url": "https://huggingface.co/kinyeah/mochiocr-caoshu-v8-gguf",
+  "created_at": "2026-10-26T01:41:28.000Z",
+  "updated_at": "2026-10-26T02:12:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 43646976,
+  "parameters_human": "43.6M",
+  "storage_bytes": 1246358464,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "calcuis/mochi-gguf · Hugging Face",
+      "url": "https://huggingface.co/calcuis/mochi-gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?!!",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Open-source mochi-gguf model - Free deployment to facilitate rapid text ...",
+      "url": "https://model.aibase.com/models/details/1915694034221424641",
+      "snippet": "The GGUF quantized version of Mochi is a text-to-video generation model that includes a GGUF encoder and GGUF variational autoencoder, suitable for fast video content generation."
+    },
+    {
+      "title": "mochi-gguf · Models",
+      "url": "https://www.modelscope.cn/models/calcuis/mochi-gguf",
+      "snippet": "new tensor fixed version; load faster with full set gguf (model + encoder + decoder) upgraded encoder; from fp16/fp8 to fp32; but not affecting the file size and memory consumption; more compatible to old machine"
+    }
+  ]
+}

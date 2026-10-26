@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "hyukudan/MiniMax-M3.1-Flash-EXL3-EAQ-v1-3.06-bpw-mirror",
+  "slug": "hyukudan-minimax-m3-1-flash-exl3-eaq-v1-3-06-bpw-mirror",
+  "author": "hyukudan",
+  "url": "https://huggingface.co/hyukudan/MiniMax-M3.1-Flash-EXL3-EAQ-v1-3.06-bpw-mirror",
+  "created_at": "2026-10-26T08:53:28.000Z",
+  "updated_at": "2026-10-26T08:57:03.000Z",
+  "license": "minimax-community",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "minimax_m3_vl",
+    "exl3",
+    "minimax",
+    "mirror",
+    "custom_code",
+    "base_model:MiniMaxAI/MiniMax-M3.1-Flash",
+    "base_model:quantized:MiniMaxAI/MiniMax-M3.1-Flash",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 84284905472,
+  "parameters_human": "84.28B",
+  "storage_bytes": 170991769755,
+  "storage_human": "171.0 GB",
+  "base_model": "MiniMaxAI/MiniMax-M3.1-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MiniMax-M3.1-Flash · EXL3 · EAQ v1 · 3.06 bpw - Hugging Face",
+      "url": "https://huggingface.co/Mia-AiLab/MiniMax-M3.1-Flash-EXL3-EAQ-v1-3.06-bpw",
+      "snippet": "Size about 167 GB text model in 20 shards, plus 2.3 GB dspark and 1.7 GB vision Layers 60 (3 dense-MLP layers, then 57 MoE layers with 128 routed experts, top-4, plus a shared expert) Declared context 1,048,576 tokens (from the base config; long context is NOT TESTED here ..."
+    },
+    {
+      "title": "MiniMax-M3.1-Flash-EXL3-EAQ-v1-3.06-bpw - Hugging Face",
+      "url": "https://huggingface.co/Mia-AiLab/MiniMax-M3.1-Flash-EXL3-EAQ-v1-3.06-bpw/commit/c33e7a6619f0f12ac99098e07ec5e56acb7eeda9",
+      "snippet": "The `dspark` draft reads the target&#x27;s hidden states at layers 3, 17, 31, 45 and 59. With 3-bit experts everywhere those states are expected to sit further from the original&#x27;s than in the 3.55 bpw pack, so acceptance may be lower than with the original model."
+    },
+    {
+      "title": "MiniMax M3.1 Flash is Now Generally Available",
+      "url": "https://agent.minimax.io/tools/m3.1-flash",
+      "snippet": "MiniMax M3.1 Flash for agentic tasks, coding and cybersecurity. Explore benchmarks, API pricing and workflows in MiniMax Code."
+    },
+    {
+      "title": "MiniMax M3.1 Flash: Redefining Agent Performance and Cost",
+      "url": "https://www.minimax.io/blog/minimax-m31f",
+      "snippet": "Today, we officially roll out MiniMax M3.1 Flash. As a next-generation Flash model, M3.1 Flash delivers a generational leap in agentic tasks, coding, Computer Use and cybersecurity, while making online inference nearly three times faster and reducing usage costs by 70%."
+    },
+    {
+      "title": "MiniMax M3.1 Flash model | NanoGPT",
+      "url": "https://nano-gpt.com/models/text/minimax/minimax-m3.1-flash",
+      "snippet": "MiniMax M3.1 Flash is a multimodal model for coding, tool use, and long-context work. It accepts text, images, and video and produces text, with a 1,000,000-token context window and up to 524,288 output tokens within the remaining context."
+    }
+  ]
+}

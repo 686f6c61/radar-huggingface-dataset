@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "syntheticgestalt/zao",
+  "slug": "syntheticgestalt-zao",
+  "author": "syntheticgestalt",
+  "url": "https://huggingface.co/syntheticgestalt/zao",
+  "created_at": "2026-10-06T06:43:32.000Z",
+  "updated_at": "2026-10-26T09:30:29.000Z",
+  "license": "sg-tvar-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "zao",
+  "languages": [],
+  "tags": [
+    "zao",
+    "safetensors",
+    "chemistry",
+    "molecules",
+    "molecular-representation",
+    "drug-discovery",
+    "conformers",
+    "feature-extraction",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 222692501,
+  "parameters_human": "222.7M",
+  "storage_bytes": 890793416,
+  "storage_human": "891 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SyntheticGestalt Launches Molecular AI Models ZAO and KOYA",
+      "url": "https://syntheticgestalt.com/news/202607-ZAO-and-KOYA-en",
+      "snippet": "Molecular AI developer, SyntheticGestalt (headquarters: Shinjuku, Tokyo; Representative Director and CEO: Koki Shimada), today announced the launch of two molecular AI foundation models for research and development in drug discovery and chemistry: the molecular foundation model ZAO and the molecular generative model KOYA."
+    },
+    {
+      "title": "GitHub - syntheticgestalt/zao: A molecular foundation model that reads ...",
+      "url": "https://github.com/syntheticgestalt/zao",
+      "snippet": "ZAO is a molecular foundation model that represents each molecule as a set of conformers. It encodes 10 conformers per molecule by default in a single forward pass and returns one 2,048-dimensional embedding. It was pretrained on 11 billion conformers, and the released checkpoint has 223 million parameters."
+    },
+    {
+      "title": "SyntheticGestalt Launches Molecular AI Models ZAO and KOYA",
+      "url": "https://www.einpresswire.com/article/927617590/syntheticgestalt-launches-molecular-ai-models-zao-and-koya",
+      "snippet": "About SyntheticGestalt SyntheticGestalt is a Tokyo-based molecular AI company. It develops and deploys molecular AI across the pharmaceutical, chemical, materials, agrochemical, cosmetics, and food industries, and since its founding in 2018 has pursued its mission of building systems that mass-produce inventions through AI."
+    },
+    {
+      "title": "SyntheticGestalt Launches Molecular AI Models ZAO and KOYA",
+      "url": "https://pharmaceuticals.einnews.com/pr_news/927617590/syntheticgestalt-launches-molecular-ai-models-zao-and-koya",
+      "snippet": "ZAO is a molecular foundation model specialized for small-molecule information that converts the chemical structure of small molecules into data that AI can use."
+    },
+    {
+      "title": "SyntheticGestalt launches molecular AI models ZAO and KOYA for drug ...",
+      "url": "https://app.dealroom.co/news/feed/syntheticgestalt-launches-molecular-ai-models-zao-and-koya-for-drug-discovery",
+      "snippet": "Tokyo-based molecular AI developer SyntheticGestalt has launched two AI foundation models for drug discovery: ZAO and KOYA. ZAO converts small-molecule chemical structures into AI-usable data using a \"4D\" representation that captures three-dimensional shape and flexibility. Pre-trained on approximately 10 billion compounds, it ranked first on nine public benchmark tasks without task-specific ..."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mattashiho/dango-A1-A2-B1-B2-C1-C2",
+  "slug": "mattashiho-dango-a1-a2-b1-b2-c1-c2",
+  "author": "mattashiho",
+  "url": "https://huggingface.co/mattashiho/dango-A1-A2-B1-B2-C1-C2",
+  "created_at": "2026-10-26T09:17:17.000Z",
+  "updated_at": "2026-10-26T09:18:35.000Z",
+  "license": "cc",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "ja",
+    "en",
+    "license:cc",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1867614208,
+  "parameters_human": "1.87B",
+  "storage_bytes": 3735253776,
+  "storage_human": "3.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - mattashiho233/dango: Dango is an L1-only large language model ...",
+      "url": "https://github.com/mattashiho233/dango/tree/main",
+      "snippet": "Dango is a large language model (LLM) trained on an extensively filtered Japanese corpus. It is intended primarily for research on second language acquisition, but it can also be used as a Japanese speaker simulator."
+    },
+    {
+      "title": "[2606.19170] Dango: A Strictly L1-Only Large Language Model for ...",
+      "url": "https://arxiv.org/abs/2606.19170",
+      "snippet": "We introduce Dango, a 1.8B-parameter large language model designed for controlled studies of L1-to-L2 (Japanese-to-English) transfer in second language acquisition (SLA). While previous studies have explored SLA in language models, they have predominantly relied on smaller or non-decoder models, limiting their ability to generate open-ended text and reducing their suitability as practical L2 ..."
+    },
+    {
+      "title": "Dango: A Strictly L1-Only Large Language Model - arXiv.org",
+      "url": "https://arxiv.org/html/2606.19170v1",
+      "snippet": "This setting corresponds to \"Dango, trained on A1+A2+B1 / A1+A2+B1+B2, tested on B2\" in Figure 4. Since B2 is out-of-distribution for the A1-B1 checkpoint, this comparison probes the seen/unseen proficiency boundary and provides an informative test of whether additional proficiency-level training improves adequacy."
+    },
+    {
+      "title": "dango/README.md at main · mattashiho233/dango · GitHub",
+      "url": "https://github.com/mattashiho233/dango/blob/main/README.md",
+      "snippet": "Dango🍡 Dango is a large language model (LLM) trained on an extensively filtered Japanese corpus. It is intended primarily for research on second language acquisition, but it can also be used as a Japanese speaker simulator."
+    },
+    {
+      "title": "Dango: A Strictly L1-Only Large Language Model for Studying Second ...",
+      "url": "https://www.aimodels.fyi/papers/arxiv/dango-strictly-l1-only-large-language-model",
+      "snippet": "On Japanese-to-English translation from the Tatoeba dataset, Dango generalizes to unseen difficulty levels: when trained on A1-B2 material, it reaches 21.2 BLEU on C1-level test sentences and 15.8 BLEU on C2, demonstrating compositional generalization beyond the training distribution."
+    }
+  ]
+}

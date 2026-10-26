@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "skyzer4ever/ComfyFix-GGUF-for-Qwen-Image-2.1-Turbo",
+  "slug": "skyzer4ever-comfyfix-gguf-for-qwen-image-2-1-turbo",
+  "author": "skyzer4ever",
+  "url": "https://huggingface.co/skyzer4ever/ComfyFix-GGUF-for-Qwen-Image-2.1-Turbo",
+  "created_at": "2026-10-26T02:04:15.000Z",
+  "updated_at": "2026-10-26T02:05:34.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "comfyui",
+    "comfyui-gguf",
+    "qwen-image",
+    "text-to-image",
+    "quantized",
+    "built-with-qwen",
+    "base_model:Qwen/Qwen-Image-2.1-Turbo",
+    "base_model:quantized:Qwen/Qwen-Image-2.1-Turbo",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7115124736,
+  "parameters_human": "7.12B",
+  "storage_bytes": 7593352574,
+  "storage_human": "7.6 GB",
+  "base_model": "Qwen/Qwen-Image-2.1-Turbo",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hearts Card Classic | Play online in your browser for free!",
+      "url": "http://heartscardclassic.com/",
+      "snippet": "This is the best free hearts game online. The site is built with HTML CSS and Javascript."
+    },
+    {
+      "title": "Hearts - Online & Free | Play Classic Card Games",
+      "url": "https://worldofcardgames.com/hearts",
+      "snippet": "Play Hearts online to your heart's content. You can pair up with people by joining one of our tables, play by yourself against our bots …"
+    },
+    {
+      "title": "Hearts | Play it online - CardGames.io",
+      "url": "https://cardgames.io/hearts/",
+      "snippet": "Each heart gives one penalty point. There is also one special card, the Queen of spades, which gives 13 penalty points. When the …"
+    },
+    {
+      "title": "Free Hearts Card Game: Play Online in Full-Screen, Without Download",
+      "url": "https://www.heartsgame.com/",
+      "snippet": "Hearts distinguishes itself from most other card games by emphasizing a unique objective: rather than striving for the highest score, …"
+    },
+    {
+      "title": "Hearts: Classic ️ Play on CrazyGames",
+      "url": "https://www.crazygames.com/game/hearts-classic",
+      "snippet": "If you are new to the game of Hearts, then there is a handy rulebook that helps you through the game teaching you tips and how to …"
+    }
+  ]
+}

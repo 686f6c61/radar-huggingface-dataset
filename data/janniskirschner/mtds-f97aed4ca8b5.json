@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "janniskirschner/mtds-f97aed4ca8b5",
+  "slug": "janniskirschner-mtds-f97aed4ca8b5",
+  "author": "janniskirschner",
+  "url": "https://huggingface.co/janniskirschner/mtds-f97aed4ca8b5",
+  "created_at": "2026-10-26T09:32:45.000Z",
+  "updated_at": "2026-10-26T09:33:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "base_model:Qwen/Qwen2.5-7B",
+    "base_model:finetune:Qwen/Qwen2.5-7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693760,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JKirschnerOfficial - YouTube",
+      "url": "https://www.youtube.com/@JKirschnerOfficial",
+      "snippet": "MUSIC AND LYRICS BY JANA KIRSCHNER - Struny Od malička som vždy bola, bola iná, bola iná Nebola to moja vina, moja vina, moja vina Nosila som v sebe niečo, v sebe niečo, v sebe niečo A to niečo..."
+    },
+    {
+      "title": "Releases · JannisKirschner/Assembler · GitHub",
+      "url": "https://github.com/JannisKirschner/Assembler/releases",
+      "snippet": "Assembly programs I&#x27;ve wrote. Contribute to JannisKirschner/Assembler development by creating an account on GitHub."
+    },
+    {
+      "title": "JaNich (TikToker) - Demo FLUX - Free AI LORA | Tensor.Art",
+      "url": "https://tensor.art/models/851382838623243869",
+      "snippet": "Download JaNich (TikToker) - free LORA FLUX.1 AI model on TENSOR. FLUX, TIKTOKER, BEAUTIFUL MODEL. By Lorinitum."
+    },
+    {
+      "title": "JannisKirschner (Jannis) · GitHub",
+      "url": "https://github.com/JannisKirschner",
+      "snippet": "Hello there :) I&#x27;m a Security Researcher from Switzerland. My interests are networking, programming, it-security, data science, and life sciences - JannisKirschner"
+    },
+    {
+      "title": "CyberRealistic GenAether SDXL - Madeline Janssen - seaart.ai",
+      "url": "https://www.seaart.ai/de/models/detail/b89c05403d10a7fc6ba7af5c8346b302",
+      "snippet": "CyberRealistic GenAether (SDXL) models are Textual Inversion embeddings built to create vivid, fictional AI characters. They&#x27;re not real people. Each one is a crafted persona with its own look, personality, and backstory."
+    }
+  ]
+}

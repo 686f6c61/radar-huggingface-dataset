@@ -1,0 +1,190 @@
+{
+  "schema": 1,
+  "id": "Amaljith/medgemma-decide-4b",
+  "slug": "amaljith-medgemma-decide-4b",
+  "author": "Amaljith",
+  "url": "https://huggingface.co/Amaljith/medgemma-decide-4b",
+  "created_at": "2026-10-25T17:05:10.000Z",
+  "updated_at": "2026-10-26T02:01:00.000Z",
+  "license": "health-ai-developer-foundations",
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3",
+    "image-text-to-text",
+    "medical",
+    "typed-decisions",
+    "calibrated-decisions",
+    "decision-model",
+    "clef",
+    "systemone",
+    "medgemma",
+    "custom-code",
+    "unsloth",
+    "lora",
+    "text-classification",
+    "dataset:Amaljith/medical-typed-decisions",
+    "base_model:unsloth/medgemma-1.5-4b-it",
+    "base_model:finetune:unsloth/medgemma-1.5-4b-it",
+    "license:other",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4300079472,
+  "parameters_human": "4.30B",
+  "storage_bytes": 8855121907,
+  "storage_human": "8.9 GB",
+  "base_model": "unsloth/medgemma-1.5-4b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Typed medical decisions",
+      "dataset": "medical-typed-decisions",
+      "metric": "medline/adverse balanced accuracy",
+      "value": 0.6254
+    },
+    {
+      "task": "Typed medical decisions",
+      "dataset": "medical-typed-decisions",
+      "metric": "medline/animals balanced accuracy",
+      "value": 0.8964
+    },
+    {
+      "task": "Typed medical decisions",
+      "dataset": "medical-typed-decisions",
+      "metric": "medline/design balanced accuracy",
+      "value": 0.7963
+    },
+    {
+      "task": "Typed medical decisions",
+      "dataset": "medical-typed-decisions",
+      "metric": "medline/disease_area balanced accuracy",
+      "value": 0.9523
+    },
+    {
+      "task": "Typed medical decisions",
+      "dataset": "medical-typed-decisions",
+      "metric": "medline/drug_therapy balanced accuracy",
+      "value": 0.7905
+    },
+    {
+      "task": "Typed medical decisions",
+      "dataset": "medical-typed-decisions",
+      "metric": "medline/group_adolescents balanced accuracy",
+      "value": 0.6679
+    },
+    {
+      "task": "Typed medical decisions",
+      "dataset": "medical-typed-decisions",
+      "metric": "medline/group_adults balanced accuracy",
+      "value": 0.8225
+    },
+    {
+      "task": "Typed medical decisions",
+      "dataset": "medical-typed-decisions",
+      "metric": "medline/group_children balanced accuracy",
+      "value": 0.8812
+    },
+    {
+      "task": "Typed medical decisions",
+      "dataset": "medical-typed-decisions",
+      "metric": "medline/group_female balanced accuracy",
+      "value": 0.8276
+    },
+    {
+      "task": "Typed medical decisions",
+      "dataset": "medical-typed-decisions",
+      "metric": "medline/group_infants balanced accuracy",
+      "value": 0.75
+    },
+    {
+      "task": "Typed medical decisions",
+      "dataset": "medical-typed-decisions",
+      "metric": "medline/group_male balanced accuracy",
+      "value": 0.8689
+    },
+    {
+      "task": "Typed medical decisions",
+      "dataset": "medical-typed-decisions",
+      "metric": "medline/group_older_adults balanced accuracy",
+      "value": 0.835
+    },
+    {
+      "task": "Typed medical decisions",
+      "dataset": "medical-typed-decisions",
+      "metric": "medline/humans balanced accuracy",
+      "value": 0.9117
+    },
+    {
+      "task": "Typed medical decisions",
+      "dataset": "medical-typed-decisions",
+      "metric": "medmcqa/answer balanced accuracy",
+      "value": 0.5084
+    },
+    {
+      "task": "Typed medical decisions",
+      "dataset": "medical-typed-decisions",
+      "metric": "medmcqa/subject balanced accuracy",
+      "value": 0.6771
+    },
+    {
+      "task": "Typed medical decisions",
+      "dataset": "medical-typed-decisions",
+      "metric": "medqa/answer balanced accuracy",
+      "value": 0.6024
+    },
+    {
+      "task": "Typed medical decisions",
+      "dataset": "medical-typed-decisions",
+      "metric": "pubmedqa/answer balanced accuracy",
+      "value": 0.578
+    },
+    {
+      "task": "Typed medical decisions",
+      "dataset": "medical-typed-decisions",
+      "metric": "symptoms/diagnosis balanced accuracy",
+      "value": 0.8548
+    }
+  ],
+  "sources": [
+    {
+      "title": "Rule 34 - If it exists there is porn of it.",
+      "url": "https://rule34.xxx/",
+      "snippet": "At Rule 34 its easy to find any kind of porn with our fast search engine. Happy browsing!Read more"
+    },
+    {
+      "title": "Newest - Rule34video.com",
+      "url": "https://rule34video.com/latest-updates/",
+      "snippet": "Rule 34 - If it exists, there is porn of it. We aspire to be the biggest video archive of rule34 content."
+    },
+    {
+      "title": "If it exists, there is porn of it - Rule 34",
+      "url": "https://rule34.us/index.php?r=posts%2Findex",
+      "snippet": "The best Rule 34 of Naruto, Elden Ring, Fortnite, Genshin Impact, FNF, Pokemon, animated gifs, and videos! After all, if it exists, …"
+    },
+    {
+      "title": "Rule 34 World",
+      "url": "https://rule34.world/",
+      "snippet": "Rule 34 - If it exists, there is porn of it. We aspire to be the biggest image archive of rule34 content."
+    },
+    {
+      "title": "Rule34.GG",
+      "url": "https://rule34.gg/",
+      "snippet": "Rule34.GG: Your Ultimate Fantasy Hub where you can find what ever you want!"
+    }
+  ]
+}

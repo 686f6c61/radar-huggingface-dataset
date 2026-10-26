@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "codelion/sprog-9m",
+  "slug": "codelion-sprog-9m",
+  "author": "codelion",
+  "url": "https://huggingface.co/codelion/sprog-9m",
+  "created_at": "2026-06-04T20:21:57.000Z",
+  "updated_at": "2026-10-26T01:49:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "sprog",
+    "math",
+    "gsm8k",
+    "symbolic",
+    "math-word-problems",
+    "from-scratch",
+    "dataset:codelion/gsm8k-synth",
+    "license:mit",
+    "model-index",
+    "eval-results",
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 40,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37521806,
+  "storage_human": "38 MB",
+  "base_model": null,
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "GSM8K",
+      "metric": "Accuracy (single-answer, self-consistency)",
+      "value": 11.8
+    }
+  ],
+  "sources": []
+}

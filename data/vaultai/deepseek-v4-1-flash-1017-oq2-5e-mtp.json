@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "vaultai/DeepSeek-V4.1-Flash-1017-oQ2.5e-mtp",
+  "slug": "vaultai-deepseek-v4-1-flash-1017-oq2-5e-mtp",
+  "author": "vaultai",
+  "url": "https://huggingface.co/vaultai/DeepSeek-V4.1-Flash-1017-oQ2.5e-mtp",
+  "created_at": "2026-10-26T02:10:26.000Z",
+  "updated_at": "2026-10-26T02:15:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "deepseek_v41",
+    "oq",
+    "quantized",
+    "mtp",
+    "image-text-to-text",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 102433367858,
+  "parameters_human": "102.43B",
+  "storage_bytes": 342712425389,
+  "storage_human": "342.7 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeepSeek V4.1 Flash 1017 - AI Model | Apertis AI",
+      "url": "https://apertis.ai/models/deepseek-v4.1-flash-1017",
+      "snippet": "DeepSeek V4.1 Flash 1017 is the October 17, 2026 snapshot of DeepSeek&#x27;s cost-efficient Mixture-of-Experts (MoE) model, built on its innovative Causal Encoder-Decoder (CED) architecture. Featuring 552B total parameters with 8B activated for input and 16B for output, it combines efficient inference with native multimodal understanding through jointly trained text and visual representations ..."
+    },
+    {
+      "title": "DeepSeek-V4.1-Flash-1017-oQ2.5e-ngram-mtp - Hugging Face",
+      "url": "https://huggingface.co/mlx-community/DeepSeek-V4.1-Flash-1017-oQ2.5e-ngram-mtp/tree/main",
+      "snippet": "model-00045-of-00053.safetensors Safe 4.99 GB xet Upload DeepSeek-V4.1-Flash-1017-oQ2.5e-ngram-mtp (Engram tables kept at the original FP8 precision)about 22 hours ago model-00046-of-00053.safetensors Safe 4.95 GB xet Upload DeepSeek-V4.1-Flash-1017-oQ2.5e-ngram-mtp (Engram tables kept at the original FP8 precision)about 22 hours ago Load more ..."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4.1-Flash-1017 · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DeepSeek V4.1 Flash 1017 — AI Model Radar",
+      "url": "https://aimodelradar.app/models/deepseek-v4-1-flash-1017",
+      "snippet": "DeepSeek V4.1 Flash 1017: sparse mixture-of-experts model with 1M context window DeepSeek-V4.1-Flash-1017 is a sparse mixture-of-experts model built on the company&#x27;s Causal Encoder-Decoder architecture, activating 8B parameters on input and 16B on output from a 552B-parameter backbone."
+    },
+    {
+      "title": "DeepSeek V4.1 Flash 1017 on Blackbox",
+      "url": "https://www.blackbox.ai/models/blackboxai/deepseek/deepseek-v4.1-flash-1017",
+      "snippet": "The full spec sheet. Context, pricing, modalities, routing, and deployment: everything DeepSeek V4.1 Flash 1017 supports, in one table."
+    }
+  ]
+}

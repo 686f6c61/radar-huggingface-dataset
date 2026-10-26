@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "FlagRelease/MiniCPM-V-4.7-1B-BF16-hygon-FlagOS",
+  "slug": "flagrelease-minicpm-v-4-7-1b-bf16-hygon-flagos",
+  "author": "FlagRelease",
+  "url": "https://huggingface.co/FlagRelease/MiniCPM-V-4.7-1B-BF16-hygon-FlagOS",
+  "created_at": "2026-10-10T01:34:43.000Z",
+  "updated_at": "2026-10-26T01:47:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "minicpmv4_7",
+    "custom_code",
+    "zh",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 1554476272,
+  "parameters_human": "1.55B",
+  "storage_bytes": 3129046961,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

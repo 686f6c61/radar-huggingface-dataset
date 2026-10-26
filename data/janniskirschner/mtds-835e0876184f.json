@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "janniskirschner/mtds-835e0876184f",
+  "slug": "janniskirschner-mtds-835e0876184f",
+  "author": "janniskirschner",
+  "url": "https://huggingface.co/janniskirschner/mtds-835e0876184f",
+  "created_at": "2026-10-26T09:35:18.000Z",
+  "updated_at": "2026-10-26T09:36:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "base_model:Qwen/Qwen2.5-7B",
+    "base_model:finetune:Qwen/Qwen2.5-7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693760,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JannisKirschner (Jannis) · GitHub",
+      "url": "https://github.com/JannisKirschner",
+      "snippet": "Hello there :) I&#x27;m a Security Researcher from Switzerland. My interests are networking, programming, it-security, data science, and life sciences - JannisKirschner"
+    },
+    {
+      "title": "Browse All AI Models | Prompt Directory - PromptAIGrid",
+      "url": "https://www.promptaigrid.com/ai-models",
+      "snippet": "Explore every AI model on PromptAIGrid - ChatGPT, Claude, Midjourney, Gemini and more - with ready-to-use prompts and real example outputs for each."
+    },
+    {
+      "title": "Teachable Machine",
+      "url": "https://teachablemachine.withgoogle.com/models/",
+      "snippet": "Train a computer to recognize your own images, sounds, & poses. A fast, easy way to create machine learning models for your sites, apps, and more - no expertise or coding required."
+    },
+    {
+      "title": "modelschemas — live AI model schemas",
+      "url": "https://modelschemas.com/docs",
+      "snippet": "Which AI models exist right now, and what do their payloads look like? Live request/response JSON Schemas and model metadata across OpenAI, Anthropic, Gemini, Grok, ElevenLabs, OpenRouter, FAL and BytePlus — built for agents."
+    },
+    {
+      "title": "Database of Artists Used to Train AI Leaks to the Public",
+      "url": "https://hyperallergic.com/database-of-artists-used-to-train-ai-leaks-to-the-public/",
+      "snippet": "News Database of Artists Used to Train AI Leaks to the Public A list of artists purportedly used to train Midjourney includes prominent names such as Banksy, David Hockney, and Yayoi Kusama."
+    }
+  ]
+}

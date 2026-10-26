@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Mensamayne/dustmap-models",
+  "slug": "mensamayne-dustmap-models",
+  "author": "Mensamayne",
+  "url": "https://huggingface.co/Mensamayne/dustmap-models",
+  "created_at": "2026-10-26T01:38:36.000Z",
+  "updated_at": "2026-10-26T01:41:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "code",
+    "embeddings",
+    "dustmap",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1169311693,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Mensamayne/dustmap: A report-only map of dead code, copies, ...",
+      "url": "https://github.com/Mensamayne/dustmap",
+      "snippet": "Optional models (separate download, MIT): embedding package and pair judge on Hugging Face. Text-only detectors work without them. Needs Node 20+. Not on npm yet. git clone https://github.com/Mensamayne/dustmap.git cd dustmap npm ci # Windows PowerShell: Set-Alias dustmap \"node $PWD/packages/cli/bin/dustmap.mjs\" # bash: alias dustmap=\"node $PWD/packages/cli/bin/dustmap.mjs\""
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "AI Models | MindStudio",
+      "url": "https://www.mindstudio.ai/models",
+      "snippet": "Explore 551+ AI models available in MindStudio. Large language models, image generators, vision models, and more — no API keys required."
+    },
+    {
+      "title": "What AI models are available in Dust? - Multiplayer AI",
+      "url": "https://docs.dust.tt/docs/user-documentation/getting-started/faq/general-questions/what-ai-models-are-available-in-dust",
+      "snippet": "bled\":true},\"impressionData\":false},{\"name\":\"revalidation-jwt\",\"enabled\":true,\"variant\":{\"name\":\"disabled\",\"enabled\":false,\"feature_enabled\":true},\"impressionData\":false},{\"name\":\"vite-origin\",\"enabled\":true,\"variant\":{\"name\":\"disabled\",\"enabled\":false,\"feature_enabled\":true},\"impressionData\":false},{\"name\":\"editor-agent-model-picker\",\"enabled\":true,\"variant\":{\"name\":\"disabled\",\"enabled\":false,\"feature_enabled\":true},\"impressionData\":false},{\"name\":\"billing-updated-9-15\",\"enabled\":true,\"variant\":{\"name\":\"disabled\",\"enabled\":false,\"feature_enabled\":true},\"impressionData\":false},{\"name\":\"hobby-a"
+    },
+    {
+      "title": "NVIDIA-accelerated AI Models",
+      "url": "https://developer.nvidia.com/ai-models",
+      "snippet": "Explore and deploy top AI models built by the community, accelerated by NVIDIA’s AI inference platform, and run on NVIDIA-accelerated infrastructure."
+    }
+  ]
+}

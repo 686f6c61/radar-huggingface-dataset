@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "zwc2003/tmp-2",
+  "slug": "zwc2003-tmp-2",
+  "author": "zwc2003",
+  "url": "https://huggingface.co/zwc2003/tmp-2",
+  "created_at": "2026-10-26T01:50:59.000Z",
+  "updated_at": "2026-10-26T05:07:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 572062825096,
+  "storage_human": "572.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zwc2003 (Zheng Weicheng) - Hugging Face",
+      "url": "https://huggingface.co/zwc2003",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 month ago ... authored a paper about 2 months ago"
+    },
+    {
+      "title": "zwc2003 (Zheng Weicheng) - Hugging Face",
+      "url": "https://huggingface.co/zwc2003/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 8 days ago ... authored a paper about 1 month ago ... new activity about 2 months ago"
+    },
+    {
+      "title": "Run DriveMA-2B API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/zwc2003/DriveMA-2B",
+      "snippet": "DriveMA-2B is a 2.3 billion parameter vision-language-action model developed by zwc2003, fine-tuned from Qwen3.5-2B. It is specifically designed for autonomous driving planning, formulating it as a two-turn generation process involving meta-actions and waypoints. This model excels at driving planning tasks by predicting interpretable meta-actions from multi-view observations and vehicle state ..."
+    },
+    {
+      "title": "博导、硕导2026——章为川 教授-陕西科技大学电子信息与人工智能学院",
+      "url": "http://dianzhi.www.sust.edu.cn/info/4667/37512.htm",
+      "snippet": "基于所提出理论框架和检测算法，在《IEEE Transactions on Pattern Analysis and Machine Intelligence Transactions 》、《International Journal of Computer Vision》、《IEEE Transactions on Image Processing》、《Pattern Recognition》 等中科院一区TOP 期刊共计发表学术论文80余篇，其中SCI 论文50余 篇 ..."
+    },
+    {
+      "title": "CivArchive - CivitAI Archive",
+      "url": "https://civarchive.com/about",
+      "snippet": "CivArchive is a cross-platform search engine for AI models. We don&#x27;t host files ourselves — instead, we crawl various sources and index the models we find, using the file&#x27;s SHA256 hash as its unique, permanent ID. CivArchive was created in direct response to models being suddenly removed from CivitAI. Our core mission is to be a resilient, community-driven archive that preserves access to ..."
+    }
+  ]
+}

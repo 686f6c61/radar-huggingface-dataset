@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "nattly/rahmahandjoanitah-sentiment-model",
+  "slug": "nattly-rahmahandjoanitah-sentiment-model",
+  "author": "nattly",
+  "url": "https://huggingface.co/nattly/rahmahandjoanitah-sentiment-model",
+  "created_at": "2026-10-26T09:17:31.000Z",
+  "updated_at": "2026-10-26T09:31:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "sentiment-analysis",
+    "text-classification",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267832560,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nattly/rahmahandjoanitah-sentiment-model · Hugging Face",
+      "url": "https://huggingface.co/nattly/rahmahandjoanitah-sentiment-model",
+      "snippet": "Instructions to use nattly/rahmahandjoanitah-sentiment-model with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use nattly/rahmahandjoanitah-sentiment-model with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline (\"text-classification\", model=\"nattly ..."
+    },
+    {
+      "title": "nattly (joanah) - Hugging Face",
+      "url": "https://huggingface.co/nattly",
+      "snippet": "nattly/rahmahandjoanitah-sentiment-model Text Classification • 67M•Updated about 1 hour ago"
+    },
+    {
+      "title": "AI model sentiment on Reddit · modelsentiment",
+      "url": "https://modelsentiment.com/",
+      "snippet": "Reddit is warmest on Qwen3.8-Flash-Next (65/100) and coldest on GPT-6 Sol (31) of 41 AI models, last 7 days: a 7-day sentiment index from AI subreddits, every number with its sample size."
+    },
+    {
+      "title": "Beginner Guide: My First Hugging Face Model - Sentiment",
+      "url": "https://mlforbeginners.com/hugging-face-sentiment-analysis/",
+      "snippet": "Introduction If you&#x27;ve ever wondered how AI can understand whether a piece of text is positive, negative, or neutral, you&#x27;re in the right place. Sentiment analysis is one of the most practical applications of natural language processing, and thanks to Hugging Face, you can build your first working model in just a few minutes—no PhD required."
+    },
+    {
+      "title": "Free Sentiment Analysis: Open-Source Models & Free API Tiers (2026)",
+      "url": "https://www.edenai.co/post/top-free-sentiment-analysis-tools-apis-and-open-source-models",
+      "snippet": "Free sentiment analysis APIs and open-source models tested on 45 sentences. Both top libraries scored 0% on sarcasm. Python code and free tier limits for 2026."
+    }
+  ]
+}

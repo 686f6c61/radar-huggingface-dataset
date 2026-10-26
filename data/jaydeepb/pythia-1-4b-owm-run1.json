@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "jaydeepb/pythia-1.4b-owm-run1",
+  "slug": "jaydeepb-pythia-1-4b-owm-run1",
+  "author": "jaydeepb",
+  "url": "https://huggingface.co/jaydeepb/pythia-1.4b-owm-run1",
+  "created_at": "2026-10-26T02:07:21.000Z",
+  "updated_at": "2026-10-26T02:07:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "memorization",
+    "fine-tuned",
+    "dataset:open-web-math/open-web-math",
+    "base_model:EleutherAI/pythia-1.4b",
+    "base_model:finetune:EleutherAI/pythia-1.4b",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1414647808,
+  "parameters_human": "1.41B",
+  "storage_bytes": 2829330208,
+  "storage_human": "2.8 GB",
+  "base_model": "EleutherAI/pythia-1.4b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EleutherAI/pythia-1.4b · Hugging Face",
+      "url": "https://huggingface.co/EleutherAI/pythia-1.4b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · EleutherAI/pythia-1.4b at main - Hugging Face",
+      "url": "https://huggingface.co/EleutherAI/pythia-1.4b/blob/main/README.md",
+      "snippet": "Note that branch 143000 corresponds exactly to the model checkpoint on the main branch of each model. You may also further fine-tune and adapt Pythia-1.4B for deployment, as long as your use is in accordance with the Apache 2.0 license. Pythia models work with the Hugging Face Transformers Library."
+    },
+    {
+      "title": "GitHub - EleutherAI/pythia: The hub for EleutherAI&#x27;s work on ...",
+      "url": "https://github.com/EleutherAI/pythia",
+      "snippet": "This repository is for EleutherAI&#x27;s project Pythia which combines interpretability analysis and scaling laws to understand how knowledge develops and evolves during training in autoregressive transformers. For detailed info on the models, their training, and their properties, please see our paper Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling. The Pythia suite ..."
+    },
+    {
+      "title": "Pythia-1.4b Open-Source Language Model - Free to Use for Interpretable ...",
+      "url": "https://model.aibase.com/models/details/1915694004370563074",
+      "snippet": "Pythia-1.4B is a 1.2 billion parameter causal language model developed by EleutherAI, part of the Pythia scale suite, specifically designed for interpretability research."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Qwen, Mistral AI, Moonshot AI, Z.ai, MiniMax, NVIDIA, Microsoft AI, Cohere, Xiaomi, and other prominent AI labs. The newest-first tables show each release date, provider, and model type. Dates use the earliest meaningful availability stage for each entry. Preview access ..."
+    }
+  ]
+}

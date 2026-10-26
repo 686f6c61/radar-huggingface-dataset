@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "marcoharuni95/Qwen3-0.6B-Q4_K_M-GGUF",
+  "slug": "marcoharuni95-qwen3-0-6b-q4_k_m-gguf",
+  "author": "marcoharuni95",
+  "url": "https://huggingface.co/marcoharuni95/Qwen3-0.6B-Q4_K_M-GGUF",
+  "created_at": "2026-10-26T08:52:49.000Z",
+  "updated_at": "2026-10-26T08:52:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-generation",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:quantized:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 751632384,
+  "parameters_human": "751.6M",
+  "storage_bytes": 484220160,
+  "storage_human": "484 MB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "marcoharuni95/Qwen3-0.6B-Q4_K_M-GGUF · Hugging Face",
+      "url": "https://huggingface.co/marcoharuni95/Qwen3-0.6B-Q4_K_M-GGUF",
+      "snippet": "This model was converted to GGUF format from Qwen/Qwen3-.6B using llama.cpp via the ggml.ai&#x27;s GGUF-my-repo space. Refer to the original model card for more details on the model."
+    },
+    {
+      "title": "bartowski/Qwen_Qwen3-0.6B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/bartowski/Qwen_Qwen3-0.6B-GGUF",
+      "snippet": "The loading time may be slower but it will result in an overall speed incrase. Click to view Q4_0_X_X information (deprecated I&#x27;m keeping this section to show the potential theoretical uplift in performance from using the Q4_0 with online repacking."
+    },
+    {
+      "title": "Qwen3-0.6B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_0_6b",
+      "snippet": "Qwen3-0.6B State‑of‑the‑art large language model useful on a variety of language understanding and generation tasks. The Qwen3‑0.6B is a state‑of‑the‑art multilingual language model with 0.6 billion parameters, excelling in language understanding, generation, coding, and mathematics."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage."
+    },
+    {
+      "title": "qwen3:0.6b-q4_K_M - ollama.com",
+      "url": "https://ollama.com/library/qwen3:0.6b-q4_K_M",
+      "snippet": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models."
+    }
+  ]
+}

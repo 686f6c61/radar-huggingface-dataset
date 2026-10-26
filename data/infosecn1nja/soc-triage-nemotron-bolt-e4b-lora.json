@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "infosecn1nja/soc-triage-nemotron-bolt-e4b-lora",
+  "slug": "infosecn1nja-soc-triage-nemotron-bolt-e4b-lora",
+  "author": "infosecn1nja",
+  "url": "https://huggingface.co/infosecn1nja/soc-triage-nemotron-bolt-e4b-lora",
+  "created_at": "2026-10-26T01:52:59.000Z",
+  "updated_at": "2026-10-26T03:07:05.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "lora",
+    "lora-adapter",
+    "security-operations",
+    "soc",
+    "alert-triage",
+    "nemotron",
+    "gemma4",
+    "text-generation",
+    "en",
+    "dataset:infosecn1nja/soc-triage-opensec-chat",
+    "dataset:tegridydev/opensec-triage",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16",
+    "base_model:adapter:nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6953691,
+  "storage_human": "7 MB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Videos on specific websites won't load : r/techsupport - Reddit",
+      "url": "https://www.reddit.com/r/techsupport/comments/1cd9cj/videos_on_specific_websites_wont_load/",
+      "snippet": "Apr 15, 2013 · However on sites such as xvideos, xhamster, and Twitch.tv vods (Only vods, not livestreams) videos almost never …"
+    },
+    {
+      "title": "How much does xvideos pay? : r/CreatorsAdvice - Reddit",
+      "url": "https://www.reddit.com/r/CreatorsAdvice/comments/1dfwz85/how_much_does_xvideos_pay/",
+      "snippet": "Jun 14, 2024 · Xvideos uploads are managed through Sheer.com right now. Currently, it is much easier to monetize videos and get …"
+    },
+    {
+      "title": "é possível ver um vídeo excluído do xvideos? : r/PergunteReddit",
+      "url": "https://www.reddit.com/r/PergunteReddit/comments/x48tn3/%C3%A9_poss%C3%ADvel_ver_um_v%C3%ADdeo_exclu%C3%ADdo_do_xvideos/",
+      "snippet": "Sep 2, 2022 · Eita, eu li \"é possível TER um vídeo excluído do xvideos?\" no sentido de o xvideos excluir um vídeo teu. Aí eu citei …"
+    },
+    {
+      "title": "XVideos: The best free porn site - Reddit",
+      "url": "https://www.reddit.com/r/xvideos/about/",
+      "snippet": "Porn from xvideos.com, nothing else. All posts must be either a link to xvideos.com, or an image/gif with a link to xvideos.com …"
+    },
+    {
+      "title": "XVideos red? : r/xvideos - Reddit",
+      "url": "https://www.reddit.com/r/xvideos/comments/jipmxv/xvideos_red/",
+      "snippet": "Porn from xvideos.com, nothing else. All posts must be either a link to xvideos.com, or an image/gif with a link to xvideos.com …"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "mradermacher/sql-assistant-1-5b-GGUF",
+  "slug": "mradermacher-sql-assistant-1-5b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/sql-assistant-1-5b-GGUF",
+  "created_at": "2026-10-26T09:35:46.000Z",
+  "updated_at": "2026-10-26T09:44:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "zebrain",
+    "lora",
+    "fine-tuned",
+    "en",
+    "base_model:MRPEPPER12/sql-assistant-1-5b",
+    "base_model:adapter:MRPEPPER12/sql-assistant-1-5b",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 14206910208,
+  "storage_human": "14.2 GB",
+  "base_model": "MRPEPPER12/sql-assistant-1-5b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

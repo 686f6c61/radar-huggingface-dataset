@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "jaydeepb/qwen2.5-1.5b-wildchat-run2",
+  "slug": "jaydeepb-qwen2-5-1-5b-wildchat-run2",
+  "author": "jaydeepb",
+  "url": "https://huggingface.co/jaydeepb/qwen2.5-1.5b-wildchat-run2",
+  "created_at": "2026-10-25T23:05:55.000Z",
+  "updated_at": "2026-10-26T01:47:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "memorization",
+    "research-artifact",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-1.5B",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098889036,
+  "storage_human": "3.1 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Xhamster doesn't work properly on my computer (FF or chrome)",
+      "url": "https://www.reddit.com/r/techsupport/comments/260oz2/xhamster_doesnt_work_properly_on_my_computer_ff/",
+      "snippet": "May 20, 2014 · Anyway, when I open xhamster, about half of the thumbnails don't load. A lot of the videos don't work either (it says …"
+    },
+    {
+      "title": "Why is xHamster called xHamster? : r/NoStupidQuestions - Reddit",
+      "url": "https://www.reddit.com/r/NoStupidQuestions/comments/6n22bh/why_is_xhamster_called_xhamster/",
+      "snippet": "Hey-hey! I'm a representative of xHamster. When choosing the mascot for the web-site (which took us quite a long time), we wanted …"
+    },
+    {
+      "title": "Se désabonner de xhamster [Résolu] - Consommation & Internet",
+      "url": "https://forums.commentcamarche.net/forum/affich-36239263-se-desabonner-de-xhamster",
+      "snippet": "Oct 2, 2019 · Bonjour, je veux me désabonner de xhamster et je n'y arrive pas.comment faire ?"
+    },
+    {
+      "title": "Comment faire pour télécharger des vidéos sur n'importe quel site",
+      "url": "https://forums.commentcamarche.net/forum/affich-25637287-comment-faire-pour-telecharger-des-videos-sur-n-importe-quel-site",
+      "snippet": "Bonjour, Avant j'avais un plugin ou extension avec firefox qui me permetait de télécharger une vidéo sur n'importe quel site ! c'était …"
+    },
+    {
+      "title": "Videos on specific websites won't load : r/techsupport - Reddit",
+      "url": "https://www.reddit.com/r/techsupport/comments/1cd9cj/videos_on_specific_websites_wont_load/",
+      "snippet": "Apr 15, 2013 · However on sites such as xvideos, xhamster, and Twitch.tv vods (Only vods, not livestreams) videos almost never …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "xCloudinfo",
   "url": "https://huggingface.co/xCloudinfo/Qwen3.6-35B-A3B-Uncensored-GGUF",
   "created_at": "2026-09-20T17:58:21.000Z",
-  "updated_at": "2026-09-20T19:00:34.000Z",
+  "updated_at": "2026-10-26T05:05:54.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -33,7 +33,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 18589,
+  "downloads_30d": 18765,
   "trending_score": 0,
   "parameters": 34660610688,
   "parameters_human": "34.66B",

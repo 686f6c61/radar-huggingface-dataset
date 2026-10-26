@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "azurephoenix000/ap-assistant",
+  "slug": "azurephoenix000-ap-assistant",
+  "author": "azurephoenix000",
+  "url": "https://huggingface.co/azurephoenix000/ap-assistant",
+  "created_at": "2026-10-22T21:08:20.000Z",
+  "updated_at": "2026-10-26T09:39:07.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "windows",
+    "installer",
+    "speech-recognition",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1879697193,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "azureai-assistant-tool/README.md at main · Azure-Samples ... - GitHub",
+      "url": "https://github.com/Azure-Samples/azureai-assistant-tool/blob/main/README.md",
+      "snippet": "The Azure AI Assistant Tool is experimental Python application and middleware designed to simplify the development, experimentation, testing, and debugging of OpenAI assistants. - Azure-Samples/azu..."
+    },
+    {
+      "title": "azureai-samples/scenarios/Assistants at main · Azure-Samples ... - GitHub",
+      "url": "https://github.com/Azure-Samples/azureai-samples/tree/main/scenarios/Assistants",
+      "snippet": "Official community-driven Azure AI Examples. Contribute to Azure-Samples/azureai-samples development by creating an account on GitHub."
+    },
+    {
+      "title": "Add an app assistant agent to your model-driven app (preview)",
+      "url": "https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/add-app-assistant-agent",
+      "snippet": "The app assistant agent makes a model-driven app more intelligent and relevant for your organization by adding additional topics, knowledge sources, and more. The Copilot Chat, Agent APIs, and agent response components access the topics within this agent."
+    },
+    {
+      "title": "Develop AI apps with Python - Python on Azure | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/azure/developer/python/azure-ai-for-python-developers",
+      "snippet": "This article offers a curated list of top learning resources for Python developers who are new to building AI applications. It includes links to quickstart guides, sample projects, official documentation, training courses, and other helpful materials. Resources for Azure OpenAI in Microsoft Foundry ..."
+    },
+    {
+      "title": "Harnessing the Power of AI with Azure OpenAI Assistant API",
+      "url": "https://www.c-sharpcorner.com/article/harnessing-the-power-of-ai-with-azure-openai-assistant-api",
+      "snippet": "The Azure OpenAI Assistant API is a powerful tool that leverages the capabilities of GPT-4, enabling developers to create applications with human-like text understanding and generation. It&#x27;s a game-changer in various industries, enhancing customer interaction, automating tasks, and boosting productivity."
+    }
+  ]
+}

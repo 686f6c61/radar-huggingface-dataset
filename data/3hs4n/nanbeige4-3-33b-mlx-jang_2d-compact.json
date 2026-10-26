@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "3hs4n/Nanbeige4.3-33B-mlx-JANG_2D-compact",
+  "slug": "3hs4n-nanbeige4-3-33b-mlx-jang_2d-compact",
+  "author": "3hs4n",
+  "url": "https://huggingface.co/3hs4n/Nanbeige4.3-33B-mlx-JANG_2D-compact",
+  "created_at": "2026-10-26T08:51:28.000Z",
+  "updated_at": "2026-10-26T08:55:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "llama",
+    "apple-silicon",
+    "quantized",
+    "reasoning",
+    "tool-use",
+    "coding",
+    "nanbeige",
+    "text-generation",
+    "conversational",
+    "base_model:Nanbeige/Nanbeige4.3-33B",
+    "base_model:quantized:Nanbeige/Nanbeige4.3-33B",
+    "license:apache-2.0",
+    "2-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33118977024,
+  "parameters_human": "33.12B",
+  "storage_bytes": 13979948069,
+  "storage_human": "14.0 GB",
+  "base_model": "Nanbeige/Nanbeige4.3-33B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XNXX.COM",
+      "url": "https://www.xnxx.com/todays-selection/1",
+      "snippet": "difruto de una buena follada con la gran polla de mi hermanastro 7.2k 82% 10min - 720p"
+    },
+    {
+      "title": "XNXX - Free Porn, XXX Sex Movies and Tube Videos",
+      "url": "https://www.xnxx.org/",
+      "snippet": "XNXX website and Android application information. Always verify the domain and APK source carefully, and review Android security …"
+    },
+    {
+      "title": "XNXX - Free Porn, Sex, Tube Videos, XXX Pics, Pussy in Porno Movies",
+      "url": "https://www.xnxx.net/",
+      "snippet": "The xnxx application only works on Android. It cannot work on Apple Iphones because Apple completely bans porn and doesn't allow …"
+    },
+    {
+      "title": "All tags - XNXX.COM",
+      "url": "https://www.xnxx.com/tags",
+      "snippet": "XNXX.COM All tags, free sex videos 0 pussy 222,186 1 on 1 288,513 1080p 7,039 18 year old 76,747 18yearsold 10,721 18yo 33,837 …"
+    },
+    {
+      "title": "XNXX - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/XNXX",
+      "snippet": "XNXX is a Czech–French [2][3] pornographic video sharing and viewing website. It was founded in 1997 [4] in Paris, with servers and …"
+    }
+  ]
+}

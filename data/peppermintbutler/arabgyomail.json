@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "PepperMintButler/ArabGyoMail",
+  "slug": "peppermintbutler-arabgyomail",
+  "author": "PepperMintButler",
+  "url": "https://huggingface.co/PepperMintButler/ArabGyoMail",
+  "created_at": "2026-10-26T08:44:56.000Z",
+  "updated_at": "2026-10-26T08:57:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 135194882,
+  "parameters_human": "135.2M",
+  "storage_bytes": 540803072,
+  "storage_human": "541 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Café Sameplace : r/Amsterdam - Reddit",
+      "url": "https://www.reddit.com/r/Amsterdam/comments/vohtss/caf%C3%A9_sameplace/",
+      "snippet": "Jun 30, 2022 · Sameplace had some stunning people, but it also had a really relaxed and friendly vibe, with an emphasis on people …"
+    },
+    {
+      "title": "Advice for couple in Amsterdam for weekend fun? : r/Amsterdam - Reddit",
+      "url": "https://www.reddit.com/r/Amsterdam/comments/1i2ipw/advice_for_couple_in_amsterdam_for_weekend_fun/",
+      "snippet": "Jul 11, 2013 · Amsterdam, Mokum, the capital of the Netherlands. We're the subreddit for everything Amsterdam, in Dutch or in …"
+    },
+    {
+      "title": "Anyone been to the adult club Sameplace? - Reddit",
+      "url": "https://www.reddit.com/r/AmsterdamEnts/comments/11pogl0/anyone_been_to_the_adult_club_sameplace/",
+      "snippet": "Mar 12, 2023 · We’re going on yet another trip to Amsterdam in a couple of months, we have our key coffee shops we want to visit …"
+    },
+    {
+      "title": "SamePlace Amsterdam : r/Swingers - Reddit",
+      "url": "https://www.reddit.com/r/Swingers/comments/1bdy2ty/sameplace_amsterdam/",
+      "snippet": "I thought it was a good spot, nothing spectacular, but my wife had such a blast we are making it a point to return for a night during …"
+    },
+    {
+      "title": "Is it really so terrible to visit? : r/istanbul - Reddit",
+      "url": "https://www.reddit.com/r/istanbul/comments/16q7qz9/is_it_really_so_terrible_to_visit/",
+      "snippet": "Sep 23, 2023 · It is still better than amsterdam where entire centre is tourist trap. I can give you some pointers for food whatnot. Also …"
+    }
+  ]
+}

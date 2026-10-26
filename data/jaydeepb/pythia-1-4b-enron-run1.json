@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "jaydeepb/pythia-1.4b-enron-run1",
+  "slug": "jaydeepb-pythia-1-4b-enron-run1",
+  "author": "jaydeepb",
+  "url": "https://huggingface.co/jaydeepb/pythia-1.4b-enron-run1",
+  "created_at": "2026-10-26T02:06:34.000Z",
+  "updated_at": "2026-10-26T02:07:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "memorization",
+    "fine-tuned",
+    "dataset:corbt/enron-emails",
+    "base_model:EleutherAI/pythia-1.4b",
+    "base_model:finetune:EleutherAI/pythia-1.4b",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1414647808,
+  "parameters_human": "1.41B",
+  "storage_bytes": 2829330208,
+  "storage_human": "2.8 GB",
+  "base_model": "EleutherAI/pythia-1.4b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Immobilier Reims : 2204 annonces à Reims, Seloger.com",
+      "url": "https://www.seloger.com/immobilier/tout/immo-reims-51/?msockid=074acfb2dfe466790cd1d84cde15675b",
+      "snippet": "2204 annonces d'achat, location et viager. Mise à jour en temps réel. Prix au m² et annuaire agence."
+    },
+    {
+      "title": "Immobilier à vendre Saint-Vincent-de-Reins 69240, Seloger.com",
+      "url": "https://www.seloger.com/recherche/achat/immobilier/auvergne-rhone-alpes/saint-vincent-de-reins-69240/ad08fr28924?msockid=074acfb2dfe466790cd1d84cde15675b",
+      "snippet": "Nous vendons à Saint Vincent de Reins, le mat, une belle maison en pierres, au calme et à deux pas du centre du village où vous …"
+    },
+    {
+      "title": "Agence Immobilière à Reims | Groupe D'Erlon Immobilier",
+      "url": "https://www.erlon-immobilier.com/",
+      "snippet": "Vous recherchez un expert de l’ immobilier à Reims ? L’ agence immobilière D’Erlon Immobilier vous propose un large choix d’ …"
+    },
+    {
+      "title": "Agence immobilière Reims | DKER Immobilier",
+      "url": "https://www.dker-immobilier.fr/",
+      "snippet": "L'agence immobilière DKER Immobilier sur Reims vous accompagne dans la concrétisation de votre projet immobilier. Découvrez …"
+    },
+    {
+      "title": "Marne Agence à Reims | Location et gestion immobilière Reims",
+      "url": "https://www.marne-agence.fr/",
+      "snippet": "Spécialiste de la location, de la gestion et de la transaction immobilière à Reims et dans le Grand Est. Créée en 1985, Marne Agence …"
+    }
+  ]
+}
