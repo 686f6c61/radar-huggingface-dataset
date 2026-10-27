@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "cyankiwi/Nanbeige4.3-33B-AWQ-INT4",
+  "slug": "cyankiwi-nanbeige4-3-33b-awq-int4",
+  "author": "cyankiwi",
+  "url": "https://huggingface.co/cyankiwi/Nanbeige4.3-33B-AWQ-INT4",
+  "created_at": "2026-10-27T15:52:01.000Z",
+  "updated_at": "2026-10-27T16:18:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llm",
+    "nanbeige",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Nanbeige/Nanbeige4.3-33B",
+    "base_model:quantized:Nanbeige/Nanbeige4.3-33B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7749060296,
+  "parameters_human": "7.75B",
+  "storage_bytes": 23308258254,
+  "storage_human": "23.3 GB",
+  "base_model": "Nanbeige/Nanbeige4.3-33B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cyankiwi · The LLM inference agent for open models",
+      "url": "https://cyan.kiwi/",
+      "snippet": "The LLM inference agent for open models. Pick an open model, and the agent deploys it as a private OpenAI-compatible endpoint once you approve."
+    },
+    {
+      "title": "Nanbeige Releases Nanbeige4.3-33B, a 33B Open Agentic Coding Model",
+      "url": "https://www.marktechpost.com/2026/10/25/nanbeige-releases-nanbeige4-3-33b-open-agentic-coding-model/",
+      "snippet": "Nanbeige4.3-33B is a 33B dense language model built for agentic coding and office-style &#x27;cowork&#x27; tasks. The lab sits inside the recruitment platform BOSS Zhipin. It also published Nanbeige4.3-33B-Base for custom post-training. The model supports a 524,288-token context window."
+    },
+    {
+      "title": "Nanbeige4.3-33B: Open 33B Agent Model, 512K Context | AI/TLDR",
+      "url": "https://ai-tldr.dev/models/nanbeige-4-3-33b/",
+      "snippet": "Nanbeige4.3-33B, released October 24, 2026: a dense 33B Apache-2.0 model for agentic coding and cowork tasks — 80.9 on Terminal-Bench 2.1, 512K context."
+    },
+    {
+      "title": "Nanbeige4.3-33B: Open 33B Agent Model, 80.9 on Terminal-Bench ...",
+      "url": "https://explainx.ai/blog/nanbeige-4-3-33b-open-agentic-model-guide-2026",
+      "snippet": "Nanbeige4.3-33B is a new open-weight dense model released on October 24, 2026 under the Apache 2.0 license, built for coding and office-style agents. The model card on Hugging Face reports that it leads three comparable 30B-class models on most agentic benchmarks, including 80.9 on Terminal-Bench 2.1."
+    },
+    {
+      "title": "cyankiwi (cyankiwi) - Hugging Face",
+      "url": "https://huggingface.co/cyankiwi",
+      "snippet": "Make open-source AI accessible"
+    }
+  ]
+}

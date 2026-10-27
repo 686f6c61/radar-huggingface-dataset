@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Dirys/Artemis-31B-v1.1-NVFP4A16-gptq",
+  "slug": "dirys-artemis-31b-v1-1-nvfp4a16-gptq",
+  "author": "Dirys",
+  "url": "https://huggingface.co/Dirys/Artemis-31B-v1.1-NVFP4A16-gptq",
+  "created_at": "2026-10-27T15:28:30.000Z",
+  "updated_at": "2026-10-27T18:00:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "nvfp4",
+    "gptq",
+    "compressed-tensors",
+    "vllm",
+    "base_model:TheDrummer/Artemis-31B-v1.1",
+    "base_model:quantized:TheDrummer/Artemis-31B-v1.1",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18460143562,
+  "parameters_human": "18.46B",
+  "storage_bytes": 20478941092,
+  "storage_human": "20.5 GB",
+  "base_model": "TheDrummer/Artemis-31B-v1.1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

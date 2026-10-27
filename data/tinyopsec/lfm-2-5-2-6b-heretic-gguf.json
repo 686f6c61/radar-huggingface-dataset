@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "tinyopsec/LFM-2.5-2.6B-heretic-GGUF",
+  "slug": "tinyopsec-lfm-2-5-2-6b-heretic-gguf",
+  "author": "tinyopsec",
+  "url": "https://huggingface.co/tinyopsec/LFM-2.5-2.6B-heretic-GGUF",
+  "created_at": "2026-10-27T16:05:58.000Z",
+  "updated_at": "2026-10-27T16:25:20.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "lfm2",
+    "decensored",
+    "abliterated",
+    "heretic",
+    "llama-cpp",
+    "text-generation",
+    "base_model:LiquidAI/LFM2.5-2.6B",
+    "base_model:quantized:LiquidAI/LFM2.5-2.6B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2697198592,
+  "parameters_human": "2.70B",
+  "storage_bytes": 26290426304,
+  "storage_human": "26.3 GB",
+  "base_model": "LiquidAI/LFM2.5-2.6B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hardgif.com - BEST HARD PORN GIFS",
+      "url": "https://hardgif.com/",
+      "snippet": "Behold BEST HARD PORN GIFS at hardgif.com"
+    },
+    {
+      "title": "NEWEST HARD PORN GIFS - hardgif.com",
+      "url": "https://hardgif.com/newest",
+      "snippet": "Behold NEWEST HARD PORN GIFS at hardgif.com"
+    },
+    {
+      "title": "- hard gifs search",
+      "url": "https://hardgif.io/search/",
+      "snippet": "Behold BEST HARD PORN GIFS at hardgif.io"
+    },
+    {
+      "title": "BEST HARD PORN GIFS OF THE WEEK - hardgif.io",
+      "url": "https://hardgif.io/best/week",
+      "snippet": "Behold BEST HARD PORN GIFS OF THE WEEK at hardgif.io"
+    },
+    {
+      "title": "Hard Porn GIFs and Pics | RedGIFs",
+      "url": "https://www.redgifs.com/gifs/hard",
+      "snippet": "Looking for the best Hard porn GIFs? Watch 20410 Hard porn GIFs from 590 creators and many other porn GIFs and images free on …"
+    }
+  ]
+}

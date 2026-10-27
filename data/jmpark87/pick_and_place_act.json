@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "jmpark87/pick_and_place_act",
+  "slug": "jmpark87-pick_and_place_act",
+  "author": "jmpark87",
+  "url": "https://huggingface.co/jmpark87/pick_and_place_act",
+  "created_at": "2026-10-27T12:45:43.000Z",
+  "updated_at": "2026-10-27T12:46:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:jmpark87/pick_and_place_20261027_173832",
+    "arxiv:2304.13705",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714848,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

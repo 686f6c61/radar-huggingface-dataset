@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "EIDORA/CLIP_ViTB32_Image",
+  "slug": "eidora-clip_vitb32_image",
+  "author": "EIDORA",
+  "url": "https://huggingface.co/EIDORA/CLIP_ViTB32_Image",
+  "created_at": "2026-10-27T16:12:42.000Z",
+  "updated_at": "2026-10-27T16:12:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "eidora",
+    "eidora-model-zoo",
+    "onnxruntime",
+    "embeddings",
+    "image",
+    "clip",
+    "vit",
+    "feature-extraction",
+    "arxiv:2103.00020",
+    "base_model:openai/clip-vit-base-patch32",
+    "base_model:quantized:openai/clip-vit-base-patch32",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 353101098,
+  "storage_human": "353 MB",
+  "base_model": "openai/clip-vit-base-patch32",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EIDORA/CLIP_VITB32 · Hugging Face",
+      "url": "https://huggingface.co/EIDORA/CLIP_VITB32",
+      "snippet": "CLIP_VITB32_512 is a light image embedding model for fast visual grouping in EIDORA. Choose it when you want a broadly useful visual model that runs on most laptops. Fast first-pass visual grouping. Image collections where semantic similarity matters more than exact object classification. A broadly ..."
+    },
+    {
+      "title": "EIDORA/CLIP_ViT-B32 at main - Hugging Face",
+      "url": "https://huggingface.co/EIDORA/CLIP_ViT-B32/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OpenAI CLIP (ViT-B/32) - Vision-Language Embedding Model - exploreai.tools",
+      "url": "https://exploreai.tools/ai-models/openai-clip-vit-b-32",
+      "snippet": "Explore OpenAI CLIP (ViT-B/32), an open-source model for image-text similarity, retrieval, and ranking. Learn its capabilities, use cases, and how to get…"
+    },
+    {
+      "title": "clip-ViT-B-32: Text-to-Image model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/clip-vit-b-32-sentence-transformers",
+      "snippet": "Overview clip-ViT-B-32 is a vision-language model that maps text and images to a shared 512-dimensional vector space, enabling retrieval and classification tasks without task-specific training. Maintained by sentence-transformers, this model implements the CLIP architecture using a Vision Transformer-Base with 32×32 patch embeddings for image encoding paired with a transformer text encoder ..."
+    },
+    {
+      "title": "awesome-llm-model-zoo/architectures/clip-vit-b32 at main · neurarch-ai ...",
+      "url": "https://github.com/neurarch-ai/awesome-llm-model-zoo/tree/main/architectures/clip-vit-b32",
+      "snippet": "The contrastive image-text model that underpins modern multimodality: a full 12-block ViT image tower and a full 12-block Transformer text tower projected into one 512-dim space, trained so matching pairs score high by dot product. Stable Diffusion&#x27;s text encoder is the text half of this design."
+    }
+  ]
+}

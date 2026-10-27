@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "greecree/microduck-tug-of-war-tug-leader-v2",
+  "slug": "greecree-microduck-tug-of-war-tug-leader-v2",
+  "author": "greecree",
+  "url": "https://huggingface.co/greecree/microduck-tug-of-war-tug-leader-v2",
+  "created_at": "2026-10-27T16:11:10.000Z",
+  "updated_at": "2026-10-27T16:11:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5734374,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face is selling a cute $399 open source duck robot, Microduck",
+      "url": "https://techcrunch.com/2026/08/27/hugging-face-is-selling-a-cute-399-open-source-duck-robot-microduck/",
+      "snippet": "Hugging Face unveiled the Microduck on Thursday, a cute little duck-like robot that sells for $399 — and ships before Christmas. Clem Delangue, CEO of Hugging Face, said the Microduck is an ..."
+    },
+    {
+      "title": "Hugging Face&#x27;s new duck robot is selling fast. A Chinese chip ... - CNBC",
+      "url": "https://www.cnbc.com/2026/09/01/hugging-faces-new-duck-robot-is-selling-fast-a-chinese-chip-powers-it.html",
+      "snippet": "The colorful \"Microduck\" robot from HuggingFace&#x27;s French subsidiary Pollen Robotics has sold more than 10,000 units since launching on Thursday."
+    },
+    {
+      "title": "MarineTraffic: Global Ship Tracking Intelligence | AIS Marine Traffic",
+      "url": "https://www.marinetraffic.com/en/ais/home/centerx:-118.3/centery:33.7/zoom:10",
+      "snippet": "MarineTraffic Live Ships Map. Discover information and vessel positions for vessels around the world. Search the MarineTraffic ships database of more than 550000 active and decommissioned vessels. Search for popular ships globally. Find locations of ports and ships using the near Real Time ships map. View vessel details and ship photos."
+    },
+    {
+      "title": "Turkey and Greece: tug-of-war over marine parks? - eurotopics.net",
+      "url": "https://www.eurotopics.net/en/362766/turkey-and-greece-tug-of-war-over-marine-parks",
+      "snippet": "20 August 2026 Turkey and Greece: tug-of-war over marine parks? A new bone of contention has arisen between neighbouring Greece and Turkey. After Greece designated two marine protected areas in the Ionian and Aegean Seas in July 2025, Turkey has now followed suit by establishing two marine protected areas of its own."
+    },
+    {
+      "title": "Meet Microduck, a $399 Open-Source Robot That Can Learn New Tricks - PCMag",
+      "url": "https://www.pcmag.com/news/hugging-face-microduck-399-open-source-robot-that-can-learn-new-tricks",
+      "snippet": "The robot comes from AI model platform Hugging Face&#x27;s Pollen Robotics arm. Preorders open today with shipments slated to arrive before Christmas."
+    }
+  ]
+}

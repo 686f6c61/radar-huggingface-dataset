@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "lefze/Marigold-V2-roughness-test",
+  "slug": "lefze-marigold-v2-roughness-test",
+  "author": "lefze",
+  "url": "https://huggingface.co/lefze/Marigold-V2-roughness-test",
+  "created_at": "2026-10-27T11:55:34.000Z",
+  "updated_at": "2026-10-27T12:02:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "marigold-v2",
+    "roughness",
+    "image-to-image",
+    "lora",
+    "base_model:Qwen/Qwen-Image-Edit-2511",
+    "base_model:adapter:Qwen/Qwen-Image-Edit-2511",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1850370454,
+  "storage_human": "1.9 GB",
+  "base_model": "Qwen/Qwen-Image-Edit-2511, huawei-bayerlab/marigold-v2-0",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

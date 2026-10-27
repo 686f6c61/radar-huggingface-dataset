@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "Robinsinfun/Qwen2.5-Coder-32B-Instruct",
+  "slug": "robinsinfun-qwen2-5-coder-32b-instruct",
+  "author": "Robinsinfun",
+  "url": "https://huggingface.co/Robinsinfun/Qwen2.5-Coder-32B-Instruct",
+  "created_at": "2026-10-27T12:06:13.000Z",
+  "updated_at": "2026-10-27T12:06:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "code",
+    "codeqwen",
+    "chat",
+    "qwen",
+    "qwen-coder",
+    "conversational",
+    "en",
+    "arxiv:2409.12186",
+    "arxiv:2309.00071",
+    "arxiv:2407.10671",
+    "base_model:Qwen/Qwen2.5-Coder-32B",
+    "base_model:finetune:Qwen/Qwen2.5-Coder-32B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32763876352,
+  "parameters_human": "32.76B",
+  "storage_bytes": 65527841688,
+  "storage_human": "65.5 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-32B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenAI · GitHub",
+      "url": "https://github.com/openai/",
+      "snippet": "OpenAI has 278 repositories available. Follow their code on GitHub.Read more"
+    },
+    {
+      "title": "free-chatgpt · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/free-chatgpt",
+      "snippet": "Oct 17, 2023 · A powerful tool to use chat-gpt-4/gpt-4o version for free. Unlimited messages no limits."
+    },
+    {
+      "title": "不是说chat gpt是免费的吗，怎么只能免费问一次? - 知乎",
+      "url": "https://www.zhihu.com/question/606750758",
+      "snippet": "后来自己注册gpt账号，能免费使用GPT-3.5，每月20刀的Gpt-4还是不大舍得去搞，3.5基本也够用了，搭配chatpdf等其他AI工具，用 …"
+    },
+    {
+      "title": "chat-gpt开放接口如何调用? - 知乎",
+      "url": "https://www.zhihu.com/question/591605538",
+      "snippet": "5.抽取相似度最高的内容和问题构建prompt，调用大模型生成结果，这里使用了gpt-3.5-turbo-16k，主要原因是这个模型支持的token …"
+    },
+    {
+      "title": "Chat GPT Tiếng Việt: Cài đặt và mẹo đặt câu lệnh mới nhất",
+      "url": "https://cellphones.com.vn/sforum/cach-dung-chat-gpt-tieng-viet",
+      "snippet": "Jul 10, 2026 · Hướng dẫn cách sử dụng Chat GPT Tiếng Việt hiệu quả để đặt câu hỏi, viết nội dung, học tập, dịch thuật và xử lý …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "makactuary/simba-or-not",
+  "slug": "makactuary-simba-or-not",
+  "author": "makactuary",
+  "url": "https://huggingface.co/makactuary/simba-or-not",
+  "created_at": "2026-10-27T15:49:53.000Z",
+  "updated_at": "2026-10-27T15:49:56.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "sklearn",
+  "languages": [],
+  "tags": [
+    "sklearn",
+    "joblib",
+    "image-classification",
+    "cats",
+    "fun",
+    "timm",
+    "dataset:timm/oxford-iiit-pet",
+    "base_model:timm/convnext_tiny.fb_in22k_ft_in1k",
+    "base_model:finetune:timm/convnext_tiny.fb_in22k_ft_in1k",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22893,
+  "storage_human": "22893 B",
+  "base_model": "timm/convnext_tiny.fb_in22k_ft_in1k",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Text-to-Speech TTS Models in 2026: A Benchmark-Based Comparison",
+      "url": "https://www.marktechpost.com/2026/05/30/best-text-to-speech-tts-models-in-2026-a-benchmark-based-comparison/",
+      "snippet": "It is a TTS-only system, so teams bring their own speech-to-text and language model. #7 Speechify SIMBA 3.0 Speechify positions SIMBA 3.0 as a cost-efficient flagship. The company reported a number-seven rank on the Artificial Analysis leaderboard in May 2026. Its reported ELO was about 1,159, at a list price near $10 per million characters."
+    },
+    {
+      "title": "How Actuaries Are Using AI & Machine Learning in 2026",
+      "url": "https://actuary.info/become-an-actuary/python-ai/how-actuaries-using-ai-ml-2026/",
+      "snippet": "Part of our Python & AI for Actuaries section How Actuaries Are Using AI & Machine Learning in 2026: Applications, Governance, and What&#x27;s Next A survey of real-world AI and machine learning applications across actuarial pricing, reserving, claims, and underwriting — drawing on SOA research, industry case studies, and regulatory developments."
+    },
+    {
+      "title": "AIforActuaries",
+      "url": "https://www.aiforactuaries.org/",
+      "snippet": "Boost your knowledge about AI-driven modeling, creating better financial risk assessment and management solutions. Read and discuss topics such as case studies, AI governance, model risk, education materials, and more."
+    },
+    {
+      "title": "Actuaries face an AI reckoning | Insurance Business",
+      "url": "https://www.insurancebusinessmag.com/us/news/technology/actuaries-face-an-ai-reckoning-587591.aspx",
+      "snippet": "\"The AI is an enabler for actuaries from an operational and production perspective. But I think it creates a new bottleneck for the kind of professional rigor and trust that actuaries have to ..."
+    },
+    {
+      "title": "MyActuary.AI The Journey of Democratizing Actuarial Knowledge Through AI",
+      "url": "https://www.soa.org/digital-publishing-platform/emerging-topics/et-2024-03-raza/",
+      "snippet": "By leveraging the power of AI, I aimed to create a tool that could provide accurate, detailed, and easily understandable responses to a wide range of actuarial queries. The development of MyActuary.AI involved training an AI model on a vast corpus of actuarial literature."
+    }
+  ]
+}

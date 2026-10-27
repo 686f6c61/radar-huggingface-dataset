@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ransom32/anlp-reasoning-transfer-adapters",
+  "slug": "ransom32-anlp-reasoning-transfer-adapters",
+  "author": "ransom32",
+  "url": "https://huggingface.co/ransom32/anlp-reasoning-transfer-adapters",
+  "created_at": "2026-10-27T16:10:24.000Z",
+  "updated_at": "2026-10-27T16:52:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "grpo",
+    "mathematical-reasoning",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:adapter:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9254834568,
+  "storage_human": "9.3 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xHamster - Free Porn Videos & XXX Movies - Sex Videos Tube",
+      "url": "https://xhamster.com/",
+      "snippet": "Free porn videos and exclusive XXX movies are here at xHamster. Instantly stream 6M+ hardcore sex videos from pros and …"
+    },
+    {
+      "title": "Porn Video Categories and All Sex Niches - xHamster",
+      "url": "https://xhamster.com/categories",
+      "snippet": "Come browse a complete list of all porn video categories on xHamster, including all the rarest sex niches. Find XXX videos you like!"
+    },
+    {
+      "title": "En français Vidéos Porno | xHamster",
+      "url": "https://fra.xhamster.com/search/en+fran%C3%A7ais",
+      "snippet": "Regardez des vidéos pornos en français. Découvrez des tonnes de films XXX de avec des scènes de sexe en 2026 sur xHamster !"
+    },
+    {
+      "title": "xHamster",
+      "url": "https://ua.xhamster.com/",
+      "snippet": "Безкоштовні порно відео та ексклюзивні XXX-фільми тут, на xHamster. Дивіться понад 6 мільйонів відео з жорстким сексом …"
+    },
+    {
+      "title": "無料ポルノ、人気ポルノ映画：XXX ビデオポータルサイト #2",
+      "url": "https://jp.xhamster.com/2",
+      "snippet": "お気に入りの無料ポルノを！どんなものでも人気のエロビデオが数え切れないほどすぐに観れます。xHamsterで高画質のXXXビデ …"
+    }
+  ]
+}

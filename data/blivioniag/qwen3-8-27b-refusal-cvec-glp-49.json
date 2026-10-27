@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "BlivionIaG/Qwen3.8-27B-refusal-cvec-GLP-49",
+  "slug": "blivioniag-qwen3-8-27b-refusal-cvec-glp-49",
+  "author": "BlivionIaG",
+  "url": "https://huggingface.co/BlivionIaG/Qwen3.8-27B-refusal-cvec-GLP-49",
+  "created_at": "2026-10-27T12:39:23.000Z",
+  "updated_at": "2026-10-27T12:55:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "control-vector",
+    "glp",
+    "weightless",
+    "activation-steering",
+    "representation-engineering",
+    "refusal-ablation",
+    "refusal-direction",
+    "abliteration",
+    "abliterated",
+    "uncensored",
+    "qwen3",
+    "en",
+    "base_model:msuiche/Qwen3.8-27B-abliterated-cyber-GLP-49",
+    "base_model:adapter:msuiche/Qwen3.8-27B-abliterated-cyber-GLP-49",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 250880,
+  "parameters_human": "250880",
+  "storage_bytes": 3025152,
+  "storage_human": "3 MB",
+  "base_model": "msuiche/Qwen3.8-27B-abliterated-cyber-GLP-49",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

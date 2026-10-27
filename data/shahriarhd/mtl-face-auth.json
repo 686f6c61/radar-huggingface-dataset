@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "shahriarhd/mtl-face-auth",
+  "slug": "shahriarhd-mtl-face-auth",
+  "author": "shahriarhd",
+  "url": "https://huggingface.co/shahriarhd/mtl-face-auth",
+  "created_at": "2026-10-27T15:20:29.000Z",
+  "updated_at": "2026-10-27T15:22:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "video-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "onnx",
+    "face-anti-spoofing",
+    "deepfake-detection",
+    "multi-task-learning",
+    "efficientnet",
+    "computer-vision",
+    "video-classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 149891604,
+  "storage_human": "150 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sadako (2019) SUB :: video.mail.ru",
+      "url": "https://my.mail.ru/video/embed/7558610805613135988",
+      "snippet": "Sadako (2019) SUB :: video.mail.ruRead more"
+    },
+    {
+      "title": "Судоку онлайн — играть бесплатно",
+      "url": "https://sudoku-royal.com/ru/",
+      "snippet": "Судоку — это популярная японская головоломка, где вам нужно заполнить пустые клетки цифрами от 1 до 9 так, чтобы они …"
+    },
+    {
+      "title": "young boys мы летом - Мой Мир@Mail.Ru",
+      "url": "https://my.mail.ru/mail/zhasik_08.04.93/video/_myvideo/1.html",
+      "snippet": "Смотреть бесплатно видеоальбом Zhasik izmaganbetov в социальной сети Мой Мир."
+    },
+    {
+      "title": "Социальная сеть Мой Мир@Mail.Ru: Ваши одноклассники, …",
+      "url": "https://my.mail.ru/",
+      "snippet": "Социальная сеть Мой Мир@Mail.Ru: Ваши одноклассники, однокурсники и друзья в контакте с Вами! Представьте себе: …"
+    },
+    {
+      "title": "Periscope Live Webcam Girl Compilation Vol.10 - Мой Мир@Mail.Ru",
+      "url": "https://my.mail.ru/mail/nika.vice/video/_myvideo/261.html",
+      "snippet": "Смотреть бесплатно видеоальбом Nika Vice в социальной сети Мой Мир."
+    }
+  ]
+}

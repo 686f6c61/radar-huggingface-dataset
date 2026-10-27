@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "qwfweewrevdf/max_v1",
+  "slug": "qwfweewrevdf-max_v1",
+  "author": "qwfweewrevdf",
+  "url": "https://huggingface.co/qwfweewrevdf/max_v1",
+  "created_at": "2026-10-27T16:05:33.000Z",
+  "updated_at": "2026-10-27T16:05:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 310170072,
+  "storage_human": "310 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2510.00060] Less is More: Lean yet Powerful Vision-Language Model for ...",
+      "url": "https://arxiv.org/abs/2510.00060",
+      "snippet": "In this work, we reconceptualize autonomous driving as a generalized language problem and formulate the trajectory planning task as next waypoint prediction. We introduce Max-V1, a novel framework for one-stage end-to-end autonomous driving, named in tribute to the renowned Dutch racing driver Max Verstappen. Our framework presents a single-pass generation paradigm that aligns with the ..."
+    },
+    {
+      "title": "Supported models | MAX",
+      "url": "https://max.modular.com/models/",
+      "snippet": "The example model names are Hugging Face repository IDs, such as google/gemma-3-27b-it for the Gemma3ForCausalLM architecture, but you can use any model from Hugging Face that&#x27;s based on an architecture below. To deploy any of these models with MAX, pass the model name to the max serve or docker run command."
+    },
+    {
+      "title": "Max-V1: Lean Vision-Language Model for Driving",
+      "url": "https://www.emergentmind.com/papers/2510.00060",
+      "snippet": "The paper introduces Max-V1, a novel framework that reinterprets trajectory prediction for autonomous driving as an autoregressive sequence modeling task. It leverages a pretrained vision-language model for efficient end-to-end waypoint regression using a Gaussian-distributed formulation, bypassing the need for BEV representations. Empirical results on the nuScenes dataset demonstrate over 30% ..."
+    },
+    {
+      "title": "ModelMax — Unified LLM Gateway",
+      "url": "https://www.modelmax.io/",
+      "snippet": "One control plane for production AI apps ModelMax brings model access, cost control, and usage observability into one dashboard. Call models from multiple providers through one OpenAI-compatible endpoint. Track requests by date, model, tokens, and cost. Manage keys, topups, models, and usage history."
+    },
+    {
+      "title": "Elevenlabs releases two new speech-to-speech models designed for real ...",
+      "url": "https://the-decoder.com/elevenlabs-releases-two-new-speech-to-speech-models-designed-for-real-time-ai-conversations/",
+      "snippet": "Elevenlabs&#x27; new Eleven Realtime speech-to-speech models combine speed and accuracy. The v1 Max variant scores 98.8 percent on the Big Bench Audio benchmark with a .57-second response time. Elevenlabs says no model on the Artificial Analysis leaderboard is both faster and more accurate."
+    }
+  ]
+}

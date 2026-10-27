@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "greecree/microduck-tug-of-war-tug-leader-v1",
+  "slug": "greecree-microduck-tug-of-war-tug-leader-v1",
+  "author": "greecree",
+  "url": "https://huggingface.co/greecree/microduck-tug-of-war-tug-leader-v1",
+  "created_at": "2026-10-27T16:01:42.000Z",
+  "updated_at": "2026-10-27T16:01:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5734374,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nvidia Microduck Robots 2026: How AI Agents Teach Them to Walk",
+      "url": "https://ailearningguides.com/nvidia-microduck-robot-ai-agents-simulation-walking/",
+      "snippet": "The Nvidia Microduck robot learns to walk via AI agents and reinforcement learning in simulation. See the sim-to-real workflow and how to copy it this weekend"
+    },
+    {
+      "title": "AI Robots Battle in Autonomous Tug of War",
+      "url": "https://www.youtube.com/watch?v=LkMSwh3TEiM",
+      "snippet": "Humanoid robots are battling each other in autonomous tug-of-war at the 2026 World Humanoid Robot Games. This new competition puts artificial intelligence, b..."
+    },
+    {
+      "title": "Buy Microduck: Small robot. Super smart.",
+      "url": "https://microducks.org/",
+      "snippet": "Buy the 10 inch bipedal AI robot from NVIDIA GTC Berlin. Official Microduck preorders from $399."
+    },
+    {
+      "title": "NVIDIA CEO Jensen Huang Shows Off Tiny AI Robots at GTC Berlin 2026",
+      "url": "https://www.youtube.com/shorts/iJdTcjjRdcg",
+      "snippet": "NVIDIA CEO Jensen Huang introduces 4 tiny Microduck robots at GTC Berlin 2026! Watch these miniature artificial intelligence robots walk, perform somersaults, and hilariously respond to commands ..."
+    },
+    {
+      "title": "NVIDIA details AI-agent workflow for training Microduck in simulation",
+      "url": "https://blockchain.news/news/nvidia-ai-agents-microduck-walk-simulation",
+      "snippet": "NVIDIA outlined a workflow for teaching a reference robot called Microduck to walk and navigate obstacles in simulation, tying together AI-assisted planning, asset creation, physics modeling, policy training and local validation. The company said the process is designed to narrow the gap between ..."
+    }
+  ]
+}

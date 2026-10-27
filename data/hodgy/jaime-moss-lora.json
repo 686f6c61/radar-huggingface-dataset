@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "hodgy/jaime-moss-lora",
+  "slug": "hodgy-jaime-moss-lora",
+  "author": "hodgy",
+  "url": "https://huggingface.co/hodgy/jaime-moss-lora",
+  "created_at": "2026-10-27T16:16:56.000Z",
+  "updated_at": "2026-10-27T16:18:18.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "lora",
+    "text-to-image",
+    "moss-image",
+    "ai-toolkit",
+    "character",
+    "base_model:OpenMOSS-Team/MOSS-Image-Base",
+    "base_model:adapter:OpenMOSS-Team/MOSS-Image-Base",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 145157280,
+  "storage_human": "145 MB",
+  "base_model": "OpenMOSS-Team/MOSS-Image-Base",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=lora",
+      "snippet": "Explore machine learning models. Jojocodex/wushu-action-v7-minimax-h3-fl2va-ref2va-lora"
+    },
+    {
+      "title": "LoRA AI Models (18,230) | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 18,230 AI models tagged \"LoRA\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    },
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    },
+    {
+      "title": "Moss Image - Better Nude - v2.0 | MOSS Image LoRA | Civitai",
+      "url": "https://civitai.red/models/3008073/moss-image-better-nude",
+      "snippet": "This LoRA was trained on MOSS-Image-Base and can also be used with MOSS-Image-SFT, but I find that the base model produces better results. Lora strength: 1.0 Steps: 25 or 50 CFG: 3 or 4 Sampler: euler or er_sde Scheduler: Simple or Beta Resolution: 1024x1536 or 1536x1024 Only Asian female in the dataset! pussy lora for MOSS image"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=LoRA",
+      "snippet": "Explore machine learning models. lightx2v/Wan2.1-I2V-14B-480P-StepDistill-CfgDistill-Lightx2v"
+    }
+  ]
+}

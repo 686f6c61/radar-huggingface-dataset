@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "Osam-2025/quantosimo-maths-marking-v1.1",
+  "slug": "osam-2025-quantosimo-maths-marking-v1-1",
+  "author": "Osam-2025",
+  "url": "https://huggingface.co/Osam-2025/quantosimo-maths-marking-v1.1",
+  "created_at": "2026-10-27T15:16:11.000Z",
+  "updated_at": "2026-10-27T15:16:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "education",
+    "uk-curriculum",
+    "gcse",
+    "as-level",
+    "a-level",
+    "marking",
+    "maths",
+    "fine-tuned",
+    "lora",
+    "en",
+    "base_model:microsoft/Phi-3.5-mini-instruct",
+    "base_model:adapter:microsoft/Phi-3.5-mini-instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 120097131,
+  "storage_human": "120 MB",
+  "base_model": "microsoft/Phi-3.5-mini-instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

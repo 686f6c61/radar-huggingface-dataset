@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "tinyopsec/Pallete-2.6B-RP-Reasoning-2609-v1a-GGUF",
+  "slug": "tinyopsec-pallete-2-6b-rp-reasoning-2609-v1a-gguf",
+  "author": "tinyopsec",
+  "url": "https://huggingface.co/tinyopsec/Pallete-2.6B-RP-Reasoning-2609-v1a-GGUF",
+  "created_at": "2026-10-27T16:08:32.000Z",
+  "updated_at": "2026-10-27T16:30:05.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "lfm2",
+    "roleplay",
+    "reasoning",
+    "cot",
+    "creative",
+    "llama-cpp",
+    "text-generation",
+    "base_model:LiquidAI/LFM2.5-2.6B",
+    "base_model:quantized:LiquidAI/LFM2.5-2.6B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2697198592,
+  "parameters_human": "2.70B",
+  "storage_bytes": 26290424640,
+  "storage_human": "26.3 GB",
+  "base_model": "LiquidAI/LFM2.5-2.6B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pallete-2.6B-RP-Reasoning-2609-v1a-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Pallete-2.6B-RP-Reasoning-2609-v1a-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/Pallete-2.6B-RP-Reasoning-2609-v1a-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Pallete-2.6B-RP-Reasoning-2609-v1a-i1-GGUF",
+      "snippet": "Instructions to use mradermacher/Pallete-2.6B-RP-Reasoning-2609-v1a-i1-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Pallete 2.6b Rp Reasoning 2609 V1a Gguf - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/mradermacher/pallete-2.6b-rp-reasoning-2609-v1a-gguf",
+      "snippet": "Registry entry for model Pallete 2.6b Rp Reasoning 2609 V1a Gguf; source metadata pending."
+    },
+    {
+      "title": "Pallete 2.6B RP Reasoning 2609 V1a by Indexnusrefather",
+      "url": "https://llm-explorer.com/model/Indexnusrefather%2FPallete-2.6B-RP-Reasoning-2609-v1a,qY8LejB8Yt1TCn2jYWNMq",
+      "snippet": "Rank the Pallete 2.6B RP Reasoning 2609 V1a capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    },
+    {
+      "title": "Top 10 GGUF Models Ranked by RAM Size (Download Guide)",
+      "url": "https://hussain-nazary.github.io/top-10-gguf-models-by-ram.html",
+      "snippet": "Top 10 GGUF Models Ranked by RAM Size (Download Guide) Published: August 8, 2026 — Every local-AI download page shows the same model in twenty files, and the one that matters is the one that fits your RAM. This is the download-ready version of the 2026 local model rankings: ten models ranked by RAM requirement, with the approximate Q4_K_M file size for each, so you know exactly what to grab."
+    }
+  ]
+}

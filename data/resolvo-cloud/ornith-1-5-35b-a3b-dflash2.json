@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "resolvo-cloud/Ornith-1.5-35B-A3B-DFlash2",
+  "slug": "resolvo-cloud-ornith-1-5-35b-a3b-dflash2",
+  "author": "resolvo-cloud",
+  "url": "https://huggingface.co/resolvo-cloud/Ornith-1.5-35B-A3B-DFlash2",
+  "created_at": "2026-10-27T15:42:19.000Z",
+  "updated_at": "2026-10-27T15:42:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3",
+    "speculative-decoding",
+    "dflash2",
+    "ornith",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 526251520,
+  "parameters_human": "526.3M",
+  "storage_bytes": 1052513459,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How do I turn on Voice Chat? – Roblox Support",
+      "url": "https://en.help.roblox.com/hc/en-us/articles/34506487825428-How-do-I-turn-on-Voice-Chat",
+      "snippet": "After completing an age check, you can turn on Voice Chat in experience settings or by clicking the headphone icon in any Roblox …"
+    },
+    {
+      "title": "Qwen 3.8-Flash-Next releasing tomorrow (125B a6B) | Hacker News",
+      "url": "https://news.ycombinator.com/item?id=49432317",
+      "snippet": "25.08.2026 ... ... cloud AI for harder tasks). But it's certainly useful in ... Have you given Ornith-1.5-35B a shot? It's been a pretty decent step ..."
+    },
+    {
+      "title": "How to turn on VC (Voice Chat) in Roblox (Enable Roblox Voice",
+      "url": "https://www.youtube.com/watch?v=ylLXpdNVv-I",
+      "snippet": "Jan 31, 2025 · In this video, I will showcase how to turn on vc in roblox and how to enable voice chat on roblox on pc. …"
+    },
+    {
+      "title": "How to Enable Voice Chat on Roblox After the Update (2026)",
+      "url": "https://www.thespike.gg/roblox/beginner-guides/voice-chat-guide",
+      "snippet": "Feb 7, 2026 · How to get VC on Roblox 2026: learn what changed, how to enable Roblox voice chat, and how to fix mic permissions …"
+    },
+    {
+      "title": "Qwen3.8 Flash Next vs Qwen3.8 27B - O hype vs a verdade. - Reddit",
+      "url": "https://www.reddit.com/r/LocalLLM/comments/1x4rer4/qwen38_flash_next_vs_qwen38_27b_the_hype_vs_the/?tl=pt-br",
+      "snippet": "13.10.2026 ... De alguma forma consegui fazer Ornith 1.5 funcionar também em ótimas ... Mudei de Qwen3.6 35b-a3b para Qwen3.6 27b enquanto programava e é ..."
+    }
+  ]
+}

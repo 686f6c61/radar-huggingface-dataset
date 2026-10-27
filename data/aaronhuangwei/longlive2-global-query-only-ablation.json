@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "AaronHuangWei/longlive2-global-query-only-ablation",
+  "slug": "aaronhuangwei-longlive2-global-query-only-ablation",
+  "author": "AaronHuangWei",
+  "url": "https://huggingface.co/AaronHuangWei/longlive2-global-query-only-ablation",
+  "created_at": "2026-10-27T11:38:14.000Z",
+  "updated_at": "2026-10-27T11:38:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "longlive2",
+    "layer-recall",
+    "ablation",
+    "global-query-only",
+    "pytorch",
+    "text-to-video",
+    "en",
+    "base_model:Efficient-Large-Model/LongLive-2.0-5B",
+    "base_model:finetune:Efficient-Large-Model/LongLive-2.0-5B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 554951,
+  "storage_human": "554951 B",
+  "base_model": "Efficient-Large-Model/LongLive-2.0-5B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "RL-Forgetting-Experiments-3/code-sft-20261027-llama3b-code-shuffled",
+  "slug": "rl-forgetting-experiments-3-code-sft-20261027-llama3b-code-shuffled",
+  "author": "RL-Forgetting-Experiments-3",
+  "url": "https://huggingface.co/RL-Forgetting-Experiments-3/code-sft-20261027-llama3b-code-shuffled",
+  "created_at": "2026-10-27T11:44:43.000Z",
+  "updated_at": "2026-10-27T13:35:18.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "rl-forgetting",
+    "filtered-sft",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 128527494880,
+  "storage_human": "128.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Le Républicain Lorrain - L'info en direct et en continu, en Lorraine ...",
+      "url": "https://c.republicain-lorrain.fr/",
+      "snippet": "Avec Le Républicain Lorrain, suivez en continu, en images et en vidéo, l'actualité en Lorraine, en France et dans le monde : faits …"
+    },
+    {
+      "title": "Édition Metz et agglomération - Le Républicain Lorrain",
+      "url": "https://www.republicain-lorrain.fr/edition-metz-et-agglomeration",
+      "snippet": "Actualités Édition Metz et agglomération : en direct, photos et vidéos. Restez informés avec Le Républicain Lorrain"
+    },
+    {
+      "title": "Édition Thionville - Hayange",
+      "url": "https://www.republicain-lorrain.fr/edition-thionville-hayange",
+      "snippet": "15 hours ago · Actualités Édition Thionville - Hayange : en direct, photos et vidéos. Restez informés avec Le Républicain Lorrain"
+    },
+    {
+      "title": "Rocket League ®",
+      "url": "https://www.rocketleague.com/",
+      "snippet": "Oct 6, 2026 · This is Rocket League! Welcome to the high-powered hybrid of arcade-style soccer and vehicular mayhem!"
+    },
+    {
+      "title": "Rocket League Stats, Leaderboards & More! - Rocket League Tracker",
+      "url": "https://rocketleague.tracker.network/",
+      "snippet": "About our Rocket League Tracker Tracker.gg's Rocket League Stats Tracker is a Tracker Network project. Tracker.gg provides …"
+    }
+  ]
+}

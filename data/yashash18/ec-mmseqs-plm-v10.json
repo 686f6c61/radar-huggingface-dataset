@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Yashash18/ec-mmseqs-plm-v10",
+  "slug": "yashash18-ec-mmseqs-plm-v10",
+  "author": "Yashash18",
+  "url": "https://huggingface.co/Yashash18/ec-mmseqs-plm-v10",
+  "created_at": "2026-10-27T15:57:51.000Z",
+  "updated_at": "2026-10-27T15:58:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "leak-curber",
+    "enzyme",
+    "leaderboard",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1713371557,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - soedinglab/MMseqs2: MMseqs2: ultra fast and sensitive search ...",
+      "url": "https://github.com/soedinglab/MMseqs2",
+      "snippet": "MMseqs2 (Many-against-Many sequence searching) is a software suite to search and cluster huge protein and nucleotide sequence sets. MMseqs2 is free and open source software implemented in C++ for Linux, MacOS, and (as beta version, via cygwin) Windows. The software is designed to run on multiple cores and servers and exhibits very good scalability. MMseqs2 can run 10000 times faster than BLAST ..."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Best Free AI Models & APIs (2026) | LM Market Cap",
+      "url": "https://lmmarketcap.com/free-ai-models",
+      "snippet": "Every free AI model ranked by quality: free LLMs, coding assistants, and image generators. No API costs, open-source, and ready to use. Start for free."
+    },
+    {
+      "title": "GitHub - RomeroLab/alphafast: AlphaFast: ultra-high-throughput ...",
+      "url": "https://github.com/RomeroLab/alphafast",
+      "snippet": "The --from-source path instead downloads raw data from Google Cloud Storage and rebuilds the MMseqs databases locally. Alternatively, download pre-built databases from HuggingFace (no padded conversion necessary):"
+    },
+    {
+      "title": "PLMSearch: Protein language model powers accurate and fast ... - Nature",
+      "url": "https://www.nature.com/articles/s41467-024-46808-5",
+      "snippet": "PLMSearch uses deep representations from a pre-trained protein language model and trains the similarity prediction model with a large number of real structure similarity."
+    }
+  ]
+}

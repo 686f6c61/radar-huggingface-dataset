@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "tinyopsec/lfm2.5-2.6b-fable5-coding-agent-GGUF",
+  "slug": "tinyopsec-lfm2-5-2-6b-fable5-coding-agent-gguf",
+  "author": "tinyopsec",
+  "url": "https://huggingface.co/tinyopsec/lfm2.5-2.6b-fable5-coding-agent-GGUF",
+  "created_at": "2026-10-27T16:11:29.000Z",
+  "updated_at": "2026-10-27T16:31:50.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "lfm2",
+    "coding-agent",
+    "tool-use",
+    "full-finetune",
+    "llama-cpp",
+    "text-generation",
+    "base_model:LiquidAI/LFM2.5-2.6B",
+    "base_model:quantized:LiquidAI/LFM2.5-2.6B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2697198592,
+  "parameters_human": "2.70B",
+  "storage_bytes": 26290425472,
+  "storage_human": "26.3 GB",
+  "base_model": "LiquidAI/LFM2.5-2.6B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AyoubChLin/lfm2.5-2.6b-fable5-coding-agent · Hugging Face",
+      "url": "https://huggingface.co/AyoubChLin/lfm2.5-2.6b-fable5-coding-agent",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AyoubChLin/LFM2.5-2.6B-fable5-coding-agent-GGUF · Hugging Face",
+      "url": "https://huggingface.co/AyoubChLin/LFM2.5-2.6B-fable5-coding-agent-GGUF",
+      "snippet": "AyoubChLin / LFM2.5-2.6B-fable5-coding-agent-GGUF like 0 GGUF llama.cpp lfm2 coding code-agent conversational License:apache-2.0 Model card FilesFiles and versions xet Community 1 Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "LFM2.5-2.6B: Deploy Agents Everywhere | Blog | Liquid AI",
+      "url": "https://www.liquid.ai/blog/lfm2-5-2-6b",
+      "snippet": "LFM2.5-2.6B is an on-device agentic model that plans, calls tools, and runs multi-step tasks at 220 tok/s in under 2.5 GB. Open weights on Hugging Face."
+    },
+    {
+      "title": "LFM2.5-2.6B - docs.liquid.ai",
+      "url": "https://docs.liquid.ai/lfm/models/lfm25-2.6b",
+      "snippet": "← Back to Text Models LFM2.5-2.6B is Liquid AI&#x27;s 2.6B dense model built for agentic workloads with a 131K context window and native tool calling. It is a reasoning model that always thinks before it answers. It runs on edge devices and it is trained to work reliably inside agent harnesses like Hermes Agent, OpenClaw, and Pi."
+    },
+    {
+      "title": "Lfm2.5 2.6B Fable5 Coding Agent by AyoubChLin",
+      "url": "https://llm-explorer.com/model/AyoubChLin%2Flfm2.5-2.6b-fable5-coding-agent,2Mhb3ILfg1Hy4HpJEryJjc",
+      "snippet": "Rank the Lfm2.5 2.6B Fable5 Coding Agent capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "uj-tu/scottyrl-a3-p5_textcraft_grpo",
+  "slug": "uj-tu-scottyrl-a3-p5_textcraft_grpo",
+  "author": "uj-tu",
+  "url": "https://huggingface.co/uj-tu/scottyrl-a3-p5_textcraft_grpo",
+  "created_at": "2026-10-27T15:34:44.000Z",
+  "updated_at": "2026-10-27T15:34:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "tinker",
+    "lora",
+    "scottyrl",
+    "11-768",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 169907128,
+  "storage_human": "170 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "University of Johannesburg - UJ University in South Africa",
+      "url": "https://www.uj.ac.za/",
+      "snippet": "The University of Johannesburg (UJ) was established in 2005 following a landmark merger between the Rand Afrikaans University."
+    },
+    {
+      "title": "Applying to UJ - University of Johannesburg",
+      "url": "https://www.uj.ac.za/about/about/internationalisation/international-students-2/applying-to-uj/",
+      "snippet": "For further information regarding international students you can visit the University Website at www.uj.ac.za or the Division for Global …"
+    },
+    {
+      "title": "UJ — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/UJ",
+      "snippet": "Sigles et abréviations UJ : Université Jagellonne, Cracovie ; UJ : Université de Johannesbourg, Afrique du Sud ; UJ : Union …"
+    },
+    {
+      "title": "University of Johannesburg - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/University_of_Johannesburg",
+      "snippet": "UJ has four campuses: the Auckland Park Kingsway, Auckland Park Bunting Road, Doornfontein and Soweto campuses – all located …"
+    },
+    {
+      "title": "University of Jeddah - جامعة جدة",
+      "url": "https://uj.edu.sa/en",
+      "snippet": "Our university, the newest Saudi university, is characterized by an ambitious strategic vision, the vision of the University of Jeddah - …"
+    }
+  ]
+}

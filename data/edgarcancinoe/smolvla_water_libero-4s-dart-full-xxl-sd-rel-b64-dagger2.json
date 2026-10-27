@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "edgarcancinoe/smolvla_water_libero-4s-dart-full-xxl-sd-rel-b64-dagger2",
+  "slug": "edgarcancinoe-smolvla_water_libero-4s-dart-full-xxl-sd-rel-b64-dagger2",
+  "author": "edgarcancinoe",
+  "url": "https://huggingface.co/edgarcancinoe/smolvla_water_libero-4s-dart-full-xxl-sd-rel-b64-dagger2",
+  "created_at": "2026-10-27T15:24:42.000Z",
+  "updated_at": "2026-10-27T17:23:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:edgarcancinoe/water_pour_dagger2",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 604934176,
+  "parameters_human": "604.9M",
+  "storage_bytes": 1218064136,
+  "storage_human": "1.2 GB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

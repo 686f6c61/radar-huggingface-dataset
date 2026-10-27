@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Slavakoch/morocam_style_LoRA",
+  "slug": "slavakoch-morocam_style_lora",
+  "author": "Slavakoch",
+  "url": "https://huggingface.co/Slavakoch/morocam_style_LoRA",
+  "created_at": "2026-10-27T19:20:09.000Z",
+  "updated_at": "2026-10-27T19:20:29.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "stable-diffusion-xl",
+    "base_model:stabilityai/stable-diffusion-xl-base-1.0",
+    "base_model:adapter:stabilityai/stable-diffusion-xl-base-1.0",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 279195912,
+  "storage_human": "279 MB",
+  "base_model": "stabilityai/stable-diffusion-xl-base-1.0",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

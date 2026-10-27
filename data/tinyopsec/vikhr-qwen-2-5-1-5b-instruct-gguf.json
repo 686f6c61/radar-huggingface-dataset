@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "tinyopsec/Vikhr-Qwen-2.5-1.5B-Instruct-GGUF",
+  "slug": "tinyopsec-vikhr-qwen-2-5-1-5b-instruct-gguf",
+  "author": "tinyopsec",
+  "url": "https://huggingface.co/tinyopsec/Vikhr-Qwen-2.5-1.5B-Instruct-GGUF",
+  "created_at": "2026-10-27T15:55:24.000Z",
+  "updated_at": "2026-10-27T16:07:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen2",
+    "russian",
+    "instruct",
+    "llama-cpp",
+    "text-generation",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543298048,
+  "parameters_human": "1.54B",
+  "storage_bytes": 15333291968,
+  "storage_human": "15.3 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tinyopsec/Vikhr-Qwen-2.5-1.5B-Instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/tinyopsec/Vikhr-Qwen-2.5-1.5B-Instruct-GGUF",
+      "snippet": "Instructions to use tinyopsec/Vikhr-Qwen-2.5-1.5B-Instruct-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen/Qwen2.5-1.5B-Instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Vikhr-Qwen-2.5-1.5B-Instruct-GGUF · Models",
+      "url": "https://www.modelscope.cn/models/Vikhrmodels/Vikhr-Qwen-2.5-1.5B-Instruct-GGUF/summary",
+      "snippet": "Instructive model based on Qwen-2.5-1.5B-Instruct, trained on the Russian-language dataset GrandMaster-PRO-MAX. Designed for high-efficiency text processing in Russian and English, delivering precise responses and fast task execution."
+    },
+    {
+      "title": "Qwen2.5-1.5B-Instruct-GGUF: Lightweight Open-Source LLM",
+      "url": "https://dev.co/ai/llms/qwen2-5-1-5b-instruct-gguf",
+      "snippet": "Qwen2.5-1.5B-Instruct-GGUF Qwen2.5-1.5B-Instruct-GGUF is a 1.5 billion parameter instruction-tuned language model from Alibaba&#x27;s Qwen team, distributed in GGUF format for efficient local inference. It supports 32K token context with 8K generation, handles 29+ languages, and is optimized for coding, mathematics, and structured output generation. The model is open-source under Apache 2.0 license ..."
+    },
+    {
+      "title": "Vikhr-Qwen-2.5-1.5B-Instruct-GGUF | PromptLayer Models",
+      "url": "https://www.promptlayer.com/models/vikhr-qwen-25-15b-instruct-gguf/",
+      "snippet": "What is Vikhr-Qwen-2.5-1.5B-Instruct-GGUF? Vikhr-Qwen-2.5-1.5B-Instruct-GGUF is a specialized bilingual language model optimized for Russian and English text processing. Built upon the Qwen-2.5-1.5B-Instruct architecture, this model has been specifically fine-tuned on the GrandMaster-PRO-MAX dataset to enhance its performance in handling Russian language tasks while maintaining strong English ..."
+    }
+  ]
+}

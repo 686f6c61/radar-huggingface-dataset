@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "xysera/zen-4b-gguf",
+  "slug": "xysera-zen-4b-gguf",
+  "author": "xysera",
+  "url": "https://huggingface.co/xysera/zen-4b-gguf",
+  "created_at": "2026-10-27T15:51:05.000Z",
+  "updated_at": "2026-10-27T15:51:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "xysera",
+    "zen",
+    "llama.cpp",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 2497280512,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xysera/zen-4b · Hugging Face",
+      "url": "https://huggingface.co/xysera/zen-4b",
+      "snippet": "This release contains a merged BF16 model produced through Xysera&#x27;s first full parameter-efficient adaptation pass. It is intended for research, evaluation, and local prototyping."
+    },
+    {
+      "title": "mradermacher/zen-4b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/zen-4b-GGUF",
+      "snippet": "mradermacher / zen-4b-GGUF Like 1 Transformers GGUF English xysera zen causal-lm reasoning instruction-following conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    },
+    {
+      "title": "GitHub - GGUFloader/gguf-loader: GGUF Loader with its Agentic Mode, and ...",
+      "url": "https://github.com/GGUFloader/gguf-loader",
+      "snippet": "GGUF Loader with its Agentic Mode, and floating button, ai Models | Open Source & Offline. Mistral, Deepseek, llama, gemma, qwen - GGUFloader/gguf-loader"
+    },
+    {
+      "title": "1-Bit Bonsai Image 4B: Local AI Image Generation Guide",
+      "url": "https://dev.to/onsen/1-bit-bonsai-image-4b-local-ai-image-generation-guide-4fl9",
+      "snippet": "TL;DR: 1-Bit Bonsai Image 4B is a compact, quantized image generation model designed to run efficiently on consumer hardware — including laptops and mid-range desktops — without requiring cloud subscriptions. It trades some image fidelity for dramatic reductions in VRAM and RAM requirements, making local AI image generation genuinely accessible in 2026. If you have 8GB of RAM and a halfway ..."
+    },
+    {
+      "title": "Top 10 GGUF Models Ranked by RAM Size (Download Guide)",
+      "url": "https://hussain-nazary.github.io/top-10-gguf-models-by-ram.html",
+      "snippet": "Top 10 GGUF Models Ranked by RAM Size (Download Guide) Published: August 8, 2026 — Every local-AI download page shows the same model in twenty files, and the one that matters is the one that fits your RAM. This is the download-ready version of the 2026 local model rankings: ten models ranked by RAM requirement, with the approximate Q4_K_M file size for each, so you know exactly what to grab."
+    }
+  ]
+}

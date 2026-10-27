@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "opensima12/Qwen3.5-9B-Cyberpunk2077-Xiaotian-Qin-V2-V3-5pass-Zhang-1pass",
+  "slug": "opensima12-qwen3-5-9b-cyberpunk2077-xiaotian-qin-v2-v3-5pass-zhang-1pass",
+  "author": "opensima12",
+  "url": "https://huggingface.co/opensima12/Qwen3.5-9B-Cyberpunk2077-Xiaotian-Qin-V2-V3-5pass-Zhang-1pass",
+  "created_at": "2026-10-27T15:33:20.000Z",
+  "updated_at": "2026-10-27T16:04:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "base_model:ltzheng/Qwen3.5-9B-General-Game-Stage2-Shift90",
+    "base_model:finetune:ltzheng/Qwen3.5-9B-General-Game-Stage2-Shift90",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 57938901878,
+  "storage_human": "57.9 GB",
+  "base_model": "ltzheng/Qwen3.5-9B-General-Game-Stage2-Shift90",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

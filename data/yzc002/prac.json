@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "yzc002/PRAC",
+  "slug": "yzc002-prac",
+  "author": "yzc002",
+  "url": "https://huggingface.co/yzc002/PRAC",
+  "created_at": "2026-10-27T11:59:25.000Z",
+  "updated_at": "2026-10-27T12:06:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "arxiv:2607.15752",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40390739,
+  "storage_human": "40 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

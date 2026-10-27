@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mrysh/gemma-4-12b-it-int8_w8a16",
+  "slug": "mrysh-gemma-4-12b-it-int8_w8a16",
+  "author": "mrysh",
+  "url": "https://huggingface.co/mrysh/gemma-4-12b-it-int8_w8a16",
+  "created_at": "2026-10-27T16:10:29.000Z",
+  "updated_at": "2026-10-27T16:11:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4_unified",
+    "quantized",
+    "int8",
+    "base_model:google/gemma-4-12B-it",
+    "base_model:quantized:google/gemma-4-12B-it",
+    "license:apache-2.0",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11959730224,
+  "parameters_human": "11.96B",
+  "storage_bytes": 13056342042,
+  "storage_human": "13.1 GB",
+  "base_model": "google/gemma-4-12B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mrysh/gemma-4-12b-it-fp8 · Hugging Face",
+      "url": "https://huggingface.co/mrysh/gemma-4-12b-it-fp8",
+      "snippet": "Quantized version of google/gemma-4-12B-it made for a quantization benchmark (4 models x 8 techniques, evaluated with vLLM on BFCL, Energy-QA, hiring-bias and MedQA). FP8 (llm-compressor / ModelOpt format), loads in vLLM. Evaluated as a text model (vLLM, thinking off). Same license as the base model ..."
+    },
+    {
+      "title": "soyrsoyr/gemma-4-12b-it-W8A16 at main - Hugging Face",
+      "url": "https://huggingface.co/soyrsoyr/gemma-4-12b-it-W8A16/tree/main",
+      "snippet": "soyrsoyr / gemma-4-12b-it-W8A16 Like 0 Safetensors gemma4_unified int8 quantized compressed-tensors llm-compressor vllm License:gemma Model card FilesFiles and versions xet Community Copy to bucket new main gemma-4-12b-it-W8A16 15.2 GB Ctrl+K Ctrl+K 1 contributor History:2 commits soyrsoyr Upload W8A16 INT8 RTN quantized model 50f22df verifiedabout 2 months ago .gitattributes Safe 1.57 ..."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4 - Gemma Documentation",
+      "url": "https://gemma.ai/models/gemma-4/",
+      "snippet": "Gemma is a family of generative artificial intelligence models and you can use them in a wide variety of generation tasks, including question answering, summarization, and reasoning. Gemma models are provided with open weights and permit responsible commercial use, allowing you to tune and deploy them in your own projects and applications. Gemma 4 model family spans four distinct architectures ..."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, DeepSeek, Qwen, Mistral, Z.ai, Meta, and important open-weight model families."
+    }
+  ]
+}

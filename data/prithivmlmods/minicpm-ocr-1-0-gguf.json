@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "prithivMLmods/MiniCPM-OCR-1.0-GGUF",
+  "slug": "prithivmlmods-minicpm-ocr-1-0-gguf",
+  "author": "prithivMLmods",
+  "url": "https://huggingface.co/prithivMLmods/MiniCPM-OCR-1.0-GGUF",
+  "created_at": "2026-10-27T19:08:36.000Z",
+  "updated_at": "2026-10-27T19:12:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "llama-cpp",
+    "minicpm-ocr",
+    "ocr",
+    "document-parsing",
+    "multimodal",
+    "vision-language",
+    "table-recognition",
+    "formula-recognition",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:openbmb/MiniCPM-OCR-1.0",
+    "base_model:quantized:openbmb/MiniCPM-OCR-1.0",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752167744,
+  "parameters_human": "752.2M",
+  "storage_bytes": 6991067776,
+  "storage_human": "7.0 GB",
+  "base_model": "openbmb/MiniCPM-OCR-1.0",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Awesome tiny LLMs - a eipi1-0 Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/eipi1-0/awesome-tiny-llms",
+      "snippet": "vor 5 Tagen ... Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from eipi1-0."
+    },
+    {
+      "title": "Qwen/Qwen2.5-VL-7B-Instruct - Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct",
+      "snippet": "In the past five months since Qwen2-VL's release, numerous developers have built new models on the Qwen2-VL vision-language models, providing us with valuable ..."
+    },
+    {
+      "title": "Inference — serve the model where the data is allowed to be",
+      "url": "https://50gramx.com/inferences",
+      "snippet": "... OCR 2 build a machine measured →. deepseek-ai. DeepSeek V3.1. text → text. The ... hf.co/bartowski/krutrim-ai-labs_Krutrim-2-instruct-GGUF:Q4_K_M2 nodes."
+    },
+    {
+      "title": "Discover The Best AI Models & AI APIs - Toolify AI",
+      "url": "https://www.toolify.ai/ai-model",
+      "snippet": "Find the hottest AI model on replicate/huggingface/rapidapi/fal/openart from AI model github. You can find the most popular ai model here."
+    },
+    {
+      "title": "Past three days - Hype - ML/AI News - Replicate",
+      "url": "http://hype.replicate.dev/?filter=past_three_days&sources=GitHub%2CHuggingFace%2CReddit%2CReplicate",
+      "snippet": "prithivMLmods/chandra-OCR-GGUF 13. > Chandra is a highly accurate OCR model ... mradermacher/Ornith-1.0-35B-FP8-BLOCK-MTP-GGUF 4."
+    }
+  ]
+}

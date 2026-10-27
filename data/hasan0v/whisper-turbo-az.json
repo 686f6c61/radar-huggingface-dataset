@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "id": "hasan0v/whisper-turbo-az",
+  "slug": "hasan0v-whisper-turbo-az",
+  "author": "hasan0v",
+  "url": "https://huggingface.co/hasan0v/whisper-turbo-az",
+  "created_at": "2026-10-27T16:00:42.000Z",
+  "updated_at": "2026-10-27T16:16:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "az"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "whisper-large-v3-turbo",
+    "azerbaijani",
+    "speech-recognition",
+    "asr",
+    "audio",
+    "faster-whisper",
+    "ctranslate2",
+    "az",
+    "dataset:LocalDoc/azerbaijani_asr",
+    "dataset:LocalDoc/fleurs-azerbaijani-asr",
+    "dataset:asmarhajizada/azerbaijani-audiobooks",
+    "dataset:espnet/yodas2",
+    "base_model:LocalDoc/azerbaijani-whisper-turbo",
+    "base_model:finetune:LocalDoc/azerbaijani-whisper-turbo",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 808878080,
+  "parameters_human": "808.9M",
+  "storage_bytes": 3235581408,
+  "storage_human": "3.2 GB",
+  "base_model": "LocalDoc/azerbaijani-whisper-turbo",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FLEURS (Azerbaijani, test)",
+      "metric": "WER",
+      "value": 10.9
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FLEURS (Azerbaijani, test)",
+      "metric": "CER",
+      "value": 2.86
+    }
+  ],
+  "sources": [
+    {
+      "title": "Whisper Turbo - Speech-to-Text Model | STT.ai",
+      "url": "https://stt.ai/models/whisper-turbo/",
+      "snippet": "Whisper Turbo is a speech-to-text model by OpenAI. STT.ai hosts Whisper Turbo on our GPU infrastructure so you can use it without provisioning your own hardware — upload audio or video and pick Whisper Turbo from the model picker."
+    },
+    {
+      "title": "GitHub - tqpp/whisper-turbo: whisper-turbo语音识别模型",
+      "url": "https://github.com/tqpp/whisper-turbo",
+      "snippet": "🚀 High-Performance Optimized Version | Accelerated Implementation Based on OpenAI Whisper [Original Blog] [Original Paper] [Original Model Card] Whisper Turbo is a high-performance optimized version based on OpenAI Whisper, focusing on improving inference speed and memory efficiency. While maintaining the original accuracy, it significantly enhances the processing speed of speech ..."
+    },
+    {
+      "title": "openai/whisper-large-v3-turbo · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-large-v3-turbo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models compatible with the whisper library - Hugging Face",
+      "url": "https://huggingface.co/models?library=whisper",
+      "snippet": "Explore machine learning models. firdhokk/speech-emotion-recognition-with-openai-whisper-large-v3"
+    },
+    {
+      "title": "Whisper - AI Model | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/model/Whisper/",
+      "snippet": "Whisper is OpenAI&#x27;s open-source general-purpose speech recognition model for transcription, translation, and language identification. It is a multitask Transformer sequence-to-sequence system trained on large-scale diverse audio, with multilingual support and model sizes ranging from tiny to large plus a faster turbo variant."
+    }
+  ]
+}

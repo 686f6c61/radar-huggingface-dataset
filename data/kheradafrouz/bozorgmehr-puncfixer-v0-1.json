@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "kheradafrouz/Bozorgmehr-puncfixer-v0.1",
+  "slug": "kheradafrouz-bozorgmehr-puncfixer-v0-1",
+  "author": "kheradafrouz",
+  "url": "https://huggingface.co/kheradafrouz/Bozorgmehr-puncfixer-v0.1",
+  "created_at": "2026-10-27T15:50:06.000Z",
+  "updated_at": "2026-10-27T15:50:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kheradafrouz (kheradafrouz) - Hugging Face",
+      "url": "https://huggingface.co/kheradafrouz/models",
+      "snippet": "Org profile for kheradafrouz on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": ".github/README-fa.md at main · kheradafrouz/.github · GitHub",
+      "url": "https://github.com/kheradafrouz/.github/blob/main/README-fa.md",
+      "snippet": "Contribute to kheradafrouz/.github development by creating an account on GitHub."
+    },
+    {
+      "title": "AI Photo Enhancer & Fixer (Free & No Sign Up) | PhotoForge AI ...",
+      "url": "https://www.photoforge.app/tools/ai-photo-enhancer",
+      "snippet": "Free online ai photo enhancer & fixer. Fix and generate studio-quality AI photo enhancer in seconds with AI. 100% free, no sign-up required."
+    },
+    {
+      "title": "Packages · Kherad Afrouz · GitHub",
+      "url": "https://github.com/orgs/kheradafrouz/packages",
+      "snippet": "Get started with GitHub Packages Safely publish packages, store your packages alongside your code, and share your packages privately with your team."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-2057742457470803969-lora",
+  "slug": "runninghubai-rh-2057742457470803969-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-2057742457470803969-lora",
+  "created_at": "2026-10-27T11:36:01.000Z",
+  "updated_at": "2026-10-27T11:37:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "image-text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 157629468,
+  "storage_human": "158 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "This Is How Women Today REALLY Feel About Getting Naked",
+      "url": "https://www.womenshealthmag.com/life/a19911220/naked-survey/",
+      "snippet": "Aug 2, 2017 · Throughout history, artists have seen the nude figure as a beautiful expression of womanhood, in all its glorious …"
+    },
+    {
+      "title": "Fine-art nude photography - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Fine-art_nude_photography",
+      "snippet": "Photographer Earl Moran working with model Zoë Mozert in the 1930s. Fine-art nude photography is a genre of fine-art photography …"
+    },
+    {
+      "title": "Naked Body - The Naked Scientists",
+      "url": "https://www.thenakedscientists.com/podcasts/video-podcasts/naked-body",
+      "snippet": "Jul 2, 2021 · Fighting infection 29 January 2021 How does your body fight infection Naked Body | Video Podcasts"
+    },
+    {
+      "title": "Naturists gather their bits and pieces to pose for a colourful photo in ...",
+      "url": "https://www.abc.net.au/news/2022-12-29/getting-nude-in-the-name-of-body-positivity/101814030",
+      "snippet": "Dec 29, 2022 · It's a hot summer's day in the nation's capital and members of Get Naked Australia are cooling off by taking it all off, …"
+    },
+    {
+      "title": "Teenagers, Stop Asking for Nude Photos - The New York Times",
+      "url": "https://www.nytimes.com/2018/01/02/well/family/teenagers-stop-asking-for-nude-photos.html",
+      "snippet": "Jan 2, 2018 · A new study of girls’ experiences with sexting found that over two-thirds had been asked to send explicit images."
+    }
+  ]
+}

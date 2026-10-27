@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Tron-Hayato/smolvla-finetune-pick-and-stack-more",
+  "slug": "tron-hayato-smolvla-finetune-pick-and-stack-more",
+  "author": "Tron-Hayato",
+  "url": "https://huggingface.co/Tron-Hayato/smolvla-finetune-pick-and-stack-more",
+  "created_at": "2026-10-27T11:51:38.000Z",
+  "updated_at": "2026-10-27T11:52:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:Tron-Hayato/record-pick-and-stack-more",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 1197806264,
+  "storage_human": "1.2 GB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tron — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Tron",
+      "snippet": "Tron est un film de science-fiction américain réalisé par Steven Lisberger et sorti en 1982."
+    },
+    {
+      "title": "Tron (franchise) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Tron_(franchise)",
+      "snippet": "Tron est une franchise médiatique de science-fiction créée par Steven Lisberger et Bonnie MacBird et appartenant à Walt Disney …"
+    },
+    {
+      "title": "Tron - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Tron",
+      "snippet": "Tron is a 1982 American science fiction action adventure film written and directed by Steven Lisberger from a story he co-wrote with …"
+    },
+    {
+      "title": "TRON - Saga : La liste des films - Cinéfil",
+      "url": "https://www.cinefil.com/collections/tron-saga",
+      "snippet": "TRON - Saga : Retrouvez tous les films de la collection et l'ordre de visionnage de tous les épisodes de TRON - Saga"
+    },
+    {
+      "title": "Tron - Film 1982 - AlloCiné",
+      "url": "https://www.allocine.fr/film/fichefilm_gen_cfilm=3996.html",
+      "snippet": "Tron est un film réalisé par Steven Lisberger avec Jeff Bridges, Bruce Boxleitner."
+    }
+  ]
+}

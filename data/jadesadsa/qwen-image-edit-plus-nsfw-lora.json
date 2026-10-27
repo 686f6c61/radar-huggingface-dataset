@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "jadesadsa/qwen-image-edit-plus-nsfw-lora",
+  "slug": "jadesadsa-qwen-image-edit-plus-nsfw-lora",
+  "author": "jadesadsa",
+  "url": "https://huggingface.co/jadesadsa/qwen-image-edit-plus-nsfw-lora",
+  "created_at": "2026-10-27T16:17:38.000Z",
+  "updated_at": "2026-10-27T16:17:38.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "lora",
+    "text-to-image",
+    "nsfw",
+    "image-editing",
+    "qwen-image-edit",
+    "not-for-all-audiences",
+    "image-to-image",
+    "base_model:Qwen/Qwen-Image-Edit-2511",
+    "base_model:adapter:Qwen/Qwen-Image-Edit-2511",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 590058864,
+  "storage_human": "590 MB",
+  "base_model": "Qwen/Qwen-Image-Edit-2511",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen-Image NSFW LoRA Notes | Civitai",
+      "url": "https://civitai.com/articles/18798/qwen-image-nsfw-lora-notes",
+      "snippet": "Qwen-Image ( 20B parameters) struggles with NSFW generation - Flux.1 has 12B parameters. LoRA fine-tuning ( 10-20M trainable parameters, rank 128) improves anatomy generation. A small dataset of 100-300 images won&#x27;t do it. A general-purpose NSFW LoRA requires a minimum of 1,500+ handpicked, high-quality images, carefully captioned, and trained with a minimum rank of 128. For specialized ..."
+    },
+    {
+      "title": "qwen-image-edit-plus-nsfw-lora - Hugging Face",
+      "url": "https://huggingface.co/aiunivers/qwen-image-edit-plus-nsfw-lora/blob/main/qwen-image-edit-plus-nsfw-lora.safetensors",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen Image Edit LoRA - AI Image Editor with Custom LoRA",
+      "url": "https://loraai.io/qwen-image",
+      "snippet": "Qwen Image Edit LoRA combines advanced AI technology with professional editing capabilities. Edit multiple images simultaneously, apply custom LoRA models, and process bilingual text - all with Qwen Image Edit precision."
+    },
+    {
+      "title": "qwen/qwen-image-edit-plus-lora | Run with an API on Replicate",
+      "url": "https://replicate.com/qwen/qwen-image-edit-plus-lora",
+      "snippet": "Qwen Image Edit 2509 Plus - LoRA Lab Bring any LoRA you like to Qwen&#x27;s latest image editing pipeline. This Replicate model keeps Lightning speed by default, lets you hot-swap LoRAs straight from Hugging Face or direct URLs, and still handles multi-image edits, ControlNet-style prompts, and bilingual instructions."
+    },
+    {
+      "title": "README.md · aiunivers/qwen-image-edit-plus-nsfw-lora at main",
+      "url": "https://huggingface.co/aiunivers/qwen-image-edit-plus-nsfw-lora/blob/main/README.md",
+      "snippet": "This is a re-upload of already existing LoRA to use inside my platform. If you want a hustle free qwen model use and tons of other models, try out my AI platform 😊"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "sthanika-ai/Sieve-31B-v3",
+  "slug": "sthanika-ai-sieve-31b-v3",
+  "author": "sthanika-ai",
+  "url": "https://huggingface.co/sthanika-ai/Sieve-31B-v3",
+  "created_at": "2026-10-27T12:33:21.000Z",
+  "updated_at": "2026-10-27T12:41:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "sieve",
+    "decision-model",
+    "calibration",
+    "full-fine-tune",
+    "multiple-choice",
+    "decision-index",
+    "text-classification",
+    "en",
+    "base_model:google/gemma-4-31B-it",
+    "base_model:finetune:google/gemma-4-31B-it",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31273086512,
+  "parameters_human": "31.27B",
+  "storage_bytes": 62578513205,
+  "storage_human": "62.6 GB",
+  "base_model": "google/gemma-4-31B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "typed decision (choice / noul / score)",
+      "dataset": "Decision Index 0.3 public suite (140,178 scored requests; the index averages 37 benchmarks)",
+      "metric": "Decision Index 0.3, public index (chance-corrected; self-reported, not yet on the leaderboard)",
+      "value": 71.68
+    }
+  ],
+  "sources": []
+}

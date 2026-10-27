@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "cortex-ai-nova/NOVA-OCR2",
+  "slug": "cortex-ai-nova-nova-ocr2",
+  "author": "cortex-ai-nova",
+  "url": "https://huggingface.co/cortex-ai-nova/NOVA-OCR2",
+  "created_at": "2026-10-27T15:44:55.000Z",
+  "updated_at": "2026-10-27T15:52:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_vl_v2",
+    "feature-extraction",
+    "text-generation-inference",
+    "unsloth",
+    "custom_code",
+    "en",
+    "base_model:deepseek-ai/DeepSeek-OCR-2",
+    "base_model:finetune:deepseek-ai/DeepSeek-OCR-2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3389119360,
+  "parameters_human": "3.39B",
+  "storage_bytes": 6778570584,
+  "storage_human": "6.8 GB",
+  "base_model": "deepseek-ai/DeepSeek-OCR-2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cortex cérébral — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Cortex_c%C3%A9r%C3%A9bral",
+      "snippet": "Le cortex peut être segmenté en différentes aires selon des critères cytoarchitectoniques (nombre de couches, type de neurones), …"
+    },
+    {
+      "title": "Cortex — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Cortex",
+      "snippet": "En biologie, le cortex (mot latin signifiant écorce, l'adjectif étant cortical) est la couche superficielle ou périphérique d'un tissu …"
+    },
+    {
+      "title": "Cortex Média : média inclusif, handicap, santé et neurodéveloppement",
+      "url": "https://www.cortex-media.fr/",
+      "snippet": "Articles, reportages, documentaires et ressources pédagogiques : accédez à l'ensemble des contenus Cortex Média, conçus pour …"
+    },
+    {
+      "title": "Razer Cortex — Améliorez plus rapidement et facilement les …",
+      "url": "https://www.razer.com/fr-fr/cortex",
+      "snippet": "Razer Cortex: Booster Prime Épurez automatiquement les performances et les visuels de votre PC pour les jeux pris en charge …"
+    },
+    {
+      "title": "Cortex cérébral - Symptômes, Causes et traitements",
+      "url": "https://www.vulgaris-medical.com/encyclopedie-medicale/cortex-cerebral/",
+      "snippet": "Le cortex cérébral est un tissu organique, appelé aussi substance grise, qui recouvre les deux hémisphères du cerveau sur une …"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "m-m-pruthvi-raj/enzyme-retrieval",
+  "slug": "m-m-pruthvi-raj-enzyme-retrieval",
+  "author": "m-m-pruthvi-raj",
+  "url": "https://huggingface.co/m-m-pruthvi-raj/enzyme-retrieval",
+  "created_at": "2026-10-27T18:55:50.000Z",
+  "updated_at": "2026-10-27T19:23:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "leak-curber",
+    "enzyme",
+    "leaderboard",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 568313820,
+  "storage_human": "568 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "M6 Replay: émissions et séries en replay et en streaming sur M6+",
+      "url": "https://www.m6.fr/m6",
+      "snippet": "Regardez vos émissions et séries préférées en replay ou en direct sur M6+."
+    },
+    {
+      "title": "M - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/M",
+      "snippet": "The letter M is derived from the Phoenician Mem via the Greek Mu (Μ, μ). Semitic Mem is most likely derived from a \"Proto-Sinaitic\" …"
+    },
+    {
+      "title": "M — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/M",
+      "snippet": "M est le nom d'une mutante dans la série comics Les X-Men. M le Magicien est une bande dessinée de l'auteur italien Massimo …"
+    },
+    {
+      "title": "147 - Artificial Intelligence in Food Innovation: A Critical Review of ...",
+      "url": "https://fjs.fudutsinma.edu.ng/index.php/fjs/article/download/5649/3727",
+      "snippet": "13.07.2026 ... These thematic areas served as a guide for data retrieval, organisation, and synthesis throughout the study. ... Predictive AI models for food ..."
+    },
+    {
+      "title": "m - Définitions, synonymes, prononciation, exemples | Dico en ligne …",
+      "url": "https://dictionnaire.lerobert.com/definition/m",
+      "snippet": "Définition, exemples et prononciation de m : Treizième lettre, dixième consonne de l'alphabet.…"
+    }
+  ]
+}

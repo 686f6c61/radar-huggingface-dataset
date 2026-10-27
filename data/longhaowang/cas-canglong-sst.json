@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "LonghaoWang/CAS-Canglong-SST",
+  "slug": "longhaowang-cas-canglong-sst",
+  "author": "LonghaoWang",
+  "url": "https://huggingface.co/LonghaoWang/CAS-Canglong-SST",
+  "created_at": "2026-10-27T16:13:58.000Z",
+  "updated_at": "2026-10-27T16:16:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "time-series-forecasting",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "weather",
+    "climate",
+    "sea-surface-temperature",
+    "enso",
+    "seasonal-forecasting",
+    "s2s",
+    "era5",
+    "earth-science",
+    "time-series-forecasting",
+    "dataset:LonghaoWang/SST-Hindcast-2016-2022-1deg-lead1-12",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 595636036,
+  "storage_human": "596 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Longhao Wang 王龙浩 · AI for Hydrology & Climate",
+      "url": "https://giswlh.github.io/",
+      "snippet": "Longhao Wang (王龙浩), PhD candidate at IGSNRR, Chinese Academy of Sciences. AI for hydrology and climate: sub-seasonal to seasonal (S2S) prediction, GRACE, evapotranspiration and physically constrained models."
+    },
+    {
+      "title": "[2409.05369] CAS-Canglong: A skillful 3D Transformer model for sub ...",
+      "url": "https://arxiv.org/abs/2409.05369",
+      "snippet": "Abstract page for arXiv paper 2409.05369: CAS-Canglong: A skillful 3D Transformer model for sub-seasonal to seasonal global sea surface temperature prediction"
+    },
+    {
+      "title": "CAS-Canglong: A skillful 3D Transformer model for sub-seasonal to ...",
+      "url": "https://arxiv.org/html/2409.05369v1",
+      "snippet": "Here we develop an AI-based model using a self-attention-based Transformer architecture, named as CAS-Canglong for predicting SST at S2S timescale. Our implementation of the three-dimensional (3D) Transformer establishes multivariate relationships across space and time [35]."
+    },
+    {
+      "title": "CAS-Canglong: A skillful 3D Transformer model for sub-seasonal to ...",
+      "url": "https://www.researchgate.net/publication/383911449_CAS-Canglong_A_skillful_3D_Transformer_model_for_sub-seasonal_to_seasonal_global_sea_surface_temperature_prediction",
+      "snippet": "Request PDF | CAS-Canglong: A skillful 3D Transformer model for sub-seasonal to seasonal global sea surface temperature prediction | Accurate prediction of global sea surface temperature at sub ..."
+    },
+    {
+      "title": "CAS-Canglong: A skillful 3D Transformer model for sub-seasonal to ...",
+      "url": "https://ui.adsabs.harvard.edu/abs/2024arXiv240905369W/abstract",
+      "snippet": "Accurate prediction of global sea surface temperature at sub-seasonal to seasonal (S2S) timescale is critical for drought and flood forecasting, as well as for improving disaster preparedness in human society. Government departments or academic studies normally use physics-based numerical models to predict S2S sea surface temperature and corresponding climate indices, such as El Niño-Southern ..."
+    }
+  ]
+}

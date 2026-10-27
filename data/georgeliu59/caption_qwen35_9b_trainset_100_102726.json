@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "georgeliu59/caption_qwen35_9b_trainset_100_102726",
+  "slug": "georgeliu59-caption_qwen35_9b_trainset_100_102726",
+  "author": "georgeliu59",
+  "url": "https://huggingface.co/georgeliu59/caption_qwen35_9b_trainset_100_102726",
+  "created_at": "2026-10-27T19:01:01.000Z",
+  "updated_at": "2026-10-27T19:01:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "video-captioning",
+    "llama-factory",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "georgeliu59/label-qwen35-9b-pilot-20261021 · Hugging Face",
+      "url": "https://huggingface.co/georgeliu59/label-qwen35-9b-pilot-20261021",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3.5-9B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-9B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5 9b and Qwen3 VL Dataset Captioning (simple ComfyUI workflows)",
+      "url": "https://civitai.com/models/2389899/qwen35-9b-and-qwen3-vl-dataset-captioning-simple-comfyui-workflows",
+      "snippet": "Updated: Sep 18, 2026 tool comfyui batch dataset caption captioning + 5 Qwen3.5 9b Qwen3 VL Download 1 variant available"
+    },
+    {
+      "title": "Qwen3.5 9b and Qwen3 VL Dataset Captioni… Qwen3.5 9b | CivArchive",
+      "url": "https://civarchive.com/models/2389899?modelVersionId=3337566",
+      "snippet": "Download Qwen3.5 9b and Qwen3 VL Dataset Captioning (simple ComfyUI workflows) Qwen3.5 9b, a Workflows for Qwen. 1 file: qwen359bAndQwen3VLDataset_qwen359b.json (22 KB)."
+    },
+    {
+      "title": "leglgnoml/qwen35-9b • LM Studio Hub",
+      "url": "https://lmstudio.ai/leglgnoml/qwen35-9b",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility. This is a 9B parameter dense model, supporting a native context length of 262,144 tokens."
+    }
+  ]
+}

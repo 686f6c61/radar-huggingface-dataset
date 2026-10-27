@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "Raghav-Singhal/1pp-1.7b-ua-rawanneal-seed1234-sft",
+  "slug": "raghav-singhal-1pp-1-7b-ua-rawanneal-seed1234-sft",
+  "author": "Raghav-Singhal",
+  "url": "https://huggingface.co/Raghav-Singhal/1pp-1.7b-ua-rawanneal-seed1234-sft",
+  "created_at": "2026-10-27T12:31:19.000Z",
+  "updated_at": "2026-10-27T12:31:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "1pp",
+    "one-persona-pretraining",
+    "sft",
+    "ua",
+    "rawanneal-seed1234",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1661048832,
+  "parameters_human": "1.66B",
+  "storage_bytes": 3322122912,
+  "storage_human": "3.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

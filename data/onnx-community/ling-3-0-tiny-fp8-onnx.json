@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "onnx-community/Ling-3.0-tiny-fp8-ONNX",
+  "slug": "onnx-community-ling-3-0-tiny-fp8-onnx",
+  "author": "onnx-community",
+  "url": "https://huggingface.co/onnx-community/Ling-3.0-tiny-fp8-ONNX",
+  "created_at": "2026-10-27T12:24:39.000Z",
+  "updated_at": "2026-10-27T13:33:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "bailing_hybrid",
+    "fp8",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8633215824,
+  "storage_human": "8.6 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ONNX | Home",
+      "url": "https://onnx.ai/",
+      "snippet": "ONNX is an open format built to represent machine learning models. ONNX defines a common set of operators - the building blocks …"
+    },
+    {
+      "title": "GitHub - onnx/onnx: Open standard for machine learning interoperability",
+      "url": "https://github.com/onnx/onnx",
+      "snippet": "Open Neural Network Exchange (ONNX) is an open ecosystem that empowers AI developers to choose the right tools as their …"
+    },
+    {
+      "title": "Open Neural Network Exchange - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Open_Neural_Network_Exchange",
+      "snippet": "Once a model is in ONNX format, it can be executed in different runtime systems or on various hardware platforms, such as GPUs or …"
+    },
+    {
+      "title": "ONNX 1.24.0 documentation",
+      "url": "https://onnx.ai/onnx/",
+      "snippet": "ONNX documentation ¶ Introduction to ONNX ONNX Concepts ONNX with Python Converters API Reference Versioning Data …"
+    },
+    {
+      "title": "ONNX Runtime | Home",
+      "url": "https://onnxruntime.ai/",
+      "snippet": "On-device training with ONNX Runtime lets developers take an inference model and train it locally to deliver a more personalized …"
+    }
+  ]
+}

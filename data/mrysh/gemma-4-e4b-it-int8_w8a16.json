@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mrysh/gemma-4-e4b-it-int8_w8a16",
+  "slug": "mrysh-gemma-4-e4b-it-int8_w8a16",
+  "author": "mrysh",
+  "url": "https://huggingface.co/mrysh/gemma-4-e4b-it-int8_w8a16",
+  "created_at": "2026-10-27T16:11:10.000Z",
+  "updated_at": "2026-10-27T16:11:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "quantized",
+    "int8",
+    "base_model:google/gemma-4-E4B-it",
+    "base_model:quantized:google/gemma-4-E4B-it",
+    "license:apache-2.0",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7941100874,
+  "parameters_human": "7.94B",
+  "storage_bytes": 11944617070,
+  "storage_human": "11.9 GB",
+  "base_model": "google/gemma-4-E4B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma 4 - Gemma Documentation",
+      "url": "https://gemma.ai/models/gemma-4/",
+      "snippet": "Gemma is a family of generative artificial intelligence models and you can use them in a wide variety of generation tasks, including question answering, summarization, and reasoning. Gemma models are provided with open weights and permit responsible commercial use, allowing you to tune and deploy them in your own projects and applications."
+    },
+    {
+      "title": "Gemma 4 E4B — The Daily Driver for Local AI | gemma4.dev",
+      "url": "https://gemma4.dev/models/gemma-4-e4b",
+      "snippet": "Models /Gemma 4 E4B Gemma 4 E4B — The Daily Driver for Local AI Gemma 4 E4B is Google&#x27;s most practical local model: 4.4B parameters, 8GB VRAM minimum, multimodal input, and Thinking Mode — all in a package that runs on any modern consumer GPU."
+    },
+    {
+      "title": "Bekten/gemma-4-E4B-it-W8A16 · Hugging Face",
+      "url": "https://huggingface.co/Bekten/gemma-4-E4B-it-W8A16",
+      "snippet": "INT8 weight-only quantization of google/gemma-4-E4B-it in the compressed-tensors format, ready for vLLM. Text, image and audio inputs are supported as in the original: only the text decoder is quantized."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "mrysh/gemma-4-e4b-it-iq1_s · Hugging Face",
+      "url": "https://huggingface.co/mrysh/gemma-4-e4b-it-iq1_s",
+      "snippet": "gemma-4-e4b-it - iq1_s Quantized version of google/gemma-4-E4B-it made for a quantization benchmark (4 models x 8 techniques, evaluated with vLLM on BFCL, Energy-QA, hiring-bias and MedQA)."
+    }
+  ]
+}

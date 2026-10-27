@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "dariurs/bert-base-uncased-squad",
+  "slug": "dariurs-bert-base-uncased-squad",
+  "author": "dariurs",
+  "url": "https://huggingface.co/dariurs/bert-base-uncased-squad",
+  "created_at": "2026-10-27T15:15:33.000Z",
+  "updated_at": "2026-10-27T16:21:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "question-answering",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "question-answering",
+    "generated_from_trainer",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 108893186,
+  "parameters_human": "108.9M",
+  "storage_bytes": 19603935825,
+  "storage_human": "19.6 GB",
+  "base_model": "bert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PornHat",
+      "url": "http://www.pornhat.net/index-fr.html",
+      "snippet": "PornHat est le meilleur tube porno gratuit avec des bandes-annonces exclusives en véritable qualité 720p, ainsi que des tonnes …"
+    },
+    {
+      "title": "PornHat",
+      "url": "http://www.pornhat.net/index-es.html",
+      "snippet": "PornHat tiene una gran colección de videos porno que cuentan miles de películas con 300 nuevos clips pornográficos agregados …"
+    },
+    {
+      "title": "PornHat",
+      "url": "http://www.pornhat.net/index-tr.html",
+      "snippet": "PornHat, haftada bir kez eklenen 300 taze pornografik klibin yer aldığı binlerce harekete geçen büyük porno videoları koleksiyonuna …"
+    },
+    {
+      "title": "PornHat",
+      "url": "http://www.pornhat.net/index-ar.html",
+      "snippet": "يُعد PornHat أكبر أنبوب إباحي مجاني مع مقطورات حصرية بجودة 720p حقيقية ، بالإضافة إلى أطنان من الصور والألبومات المتسخة ، المرتبطة بمقاطع الفيديو."
+    },
+    {
+      "title": "PornHat",
+      "url": "http://www.pornhat.net/index-hi.html",
+      "snippet": "PornHat में कट्टर सेक्स - सबसे भयानक वयस्क पोर्न ट्यूब हर कोई जानता है कि PornHat पोर्न साइटों की नई पीढ़ी है: किसी भी अन्य …"
+    }
+  ]
+}

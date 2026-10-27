@@ -1,0 +1,105 @@
+{
+  "schema": 1,
+  "id": "LiquidAI/LFM3-VL-2B",
+  "slug": "liquidai-lfm3-vl-2b",
+  "author": "LiquidAI",
+  "url": "https://huggingface.co/LiquidAI/LFM3-VL-2B",
+  "created_at": "2026-10-19T19:51:46.000Z",
+  "updated_at": "2026-10-27T16:24:05.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "it",
+    "ja",
+    "ko",
+    "pt",
+    "es",
+    "vi",
+    "th",
+    "id",
+    "hi",
+    "ru",
+    "pl"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm3_vl",
+    "image-text-to-text",
+    "liquid",
+    "lfm3",
+    "edge",
+    "conversational",
+    "custom_code",
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "it",
+    "ja",
+    "ko",
+    "pt",
+    "es",
+    "vi",
+    "th",
+    "id",
+    "hi",
+    "ru",
+    "pl",
+    "base_model:LiquidAI/LFM3-1.7B-Base",
+    "base_model:finetune:LiquidAI/LFM3-1.7B-Base",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 45,
+  "downloads_30d": 255,
+  "trending_score": 0,
+  "parameters": 1918181888,
+  "parameters_human": "1.92B",
+  "storage_bytes": 3854326178,
+  "storage_human": "3.9 GB",
+  "base_model": "LiquidAI/LFM3-1.7B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Buy Residential Proxies - Best Quality IPs - Fast & Affordable",
+      "url": "https://iproyal.com/residential-proxies/",
+      "snippet": "Buy a residential proxy pool of IPs from real Internet Service Providers. Minimize CAPTCHAs and avoid IP bans and geo-restrictions …"
+    },
+    {
+      "title": "12 Best Cheap Residential Proxies",
+      "url": "https://aimultiple.com/residential-proxy-providers",
+      "snippet": "Oct 1, 2026 · Discover the best residential proxy providers with detailed comparisons on speed and features. Find the ideal solution …"
+    },
+    {
+      "title": "Residential Proxies From $2/GB – 115M+ IPs - Smartproxy",
+      "url": "https://decodo.com/proxies/residential-proxies",
+      "snippet": "Get premium residential proxies with 115M+ IPs from 195+ locations. #1 response time, 99.92% success rate, 24/7 tech support, and …"
+    },
+    {
+      "title": "Buy Residential Proxies - Starting from $2.50/IP - Bright Data",
+      "url": "https://brightdata.com/proxy-types/residential-proxies",
+      "snippet": "Over 400M+ monthly residential proxy IPs, best-in-class technology and the ability to target any country, city, ZIP Code, carrier, & …"
+    },
+    {
+      "title": "Best Residential Proxies for 2026 - Cybernews",
+      "url": "https://cybernews.com/best-proxy/residential-proxies/",
+      "snippet": "Aug 24, 2026 · For this reason, I reviewed and compared the 7 best residential proxies in 2026, to help you save time and choose …"
+    }
+  ]
+}

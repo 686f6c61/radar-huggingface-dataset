@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "id": "maya-research/maya2-native",
+  "slug": "maya-research-maya2-native",
+  "author": "maya-research",
+  "url": "https://huggingface.co/maya-research/maya2-native",
+  "created_at": "2026-10-26T02:58:10.000Z",
+  "updated_at": "2026-10-27T12:55:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "maya3",
+  "languages": [
+    "as",
+    "bn",
+    "en",
+    "gu",
+    "hi",
+    "kn",
+    "ml",
+    "mr",
+    "or",
+    "pa",
+    "ta",
+    "te"
+  ],
+  "tags": [
+    "maya3",
+    "safetensors",
+    "text-to-speech",
+    "tts",
+    "indic",
+    "multilingual",
+    "voice-cloning",
+    "streaming",
+    "mimi",
+    "as",
+    "bn",
+    "en",
+    "gu",
+    "hi",
+    "kn",
+    "ml",
+    "mr",
+    "or",
+    "pa",
+    "ta",
+    "te",
+    "base_model:Qwen/Qwen3-1.7B-Base",
+    "base_model:finetune:Qwen/Qwen3-1.7B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 66,
+  "downloads_30d": 0,
+  "trending_score": 66,
+  "parameters": 2502398656,
+  "parameters_human": "2.50B",
+  "storage_bytes": 5056246629,
+  "storage_human": "5.1 GB",
+  "base_model": "Qwen/Qwen3-1.7B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Autodesk Maya 2027 | Download & Buy Official Maya",
+      "url": "https://www.autodesk.com/products/maya/overview?msockid=1116eb7f1c3c66a4277dfc801daa67e6",
+      "snippet": "Discover Autodesk Maya, professional 3D animation and VFX software for creating expansive worlds, complex characters, and …"
+    },
+    {
+      "title": "Download Maya | Maya Free Trial | Autodesk",
+      "url": "https://www.autodesk.com/products/maya/free-trial?msockid=1116eb7f1c3c66a4277dfc801daa67e6",
+      "snippet": "Download a free 30-day trial of Autodesk Maya software for 3D modeling, computer animation, visual effects, and 3D rendering for …"
+    },
+    {
+      "title": "Maya civilization - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Maya_civilization",
+      "snippet": "The Maya script is the most sophisticated and highly developed writing system in the pre-Columbian Americas. The Maya civilization …"
+    },
+    {
+      "title": "Civilisation maya — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Civilisation_maya",
+      "snippet": "L’aire culturelle maya antique doit être distinguée de la zone de peuplement maya actuelle. Elle se définit comme étant le territoire …"
+    },
+    {
+      "title": "Autodesk Maya - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Autodesk_Maya",
+      "snippet": "Maya is an application used to generate 3D assets for use in the film, television, video game, and advertising industries. The …"
+    }
+  ]
+}

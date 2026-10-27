@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "rawmodels/flint-roleplay-antislop",
+  "slug": "rawmodels-flint-roleplay-antislop",
+  "author": "rawmodels",
+  "url": "https://huggingface.co/rawmodels/flint-roleplay-antislop",
+  "created_at": "2026-10-27T11:42:35.000Z",
+  "updated_at": "2026-10-27T12:34:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "flint",
+    "text-generation",
+    "roleplay",
+    "creative-writing",
+    "antislop - reinforcement-learning",
+    "moe",
+    "bf16",
+    "llama.cpp",
+    "en",
+    "base_model:RecursiveSI/flint",
+    "base_model:finetune:RecursiveSI/flint",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39785287456,
+  "parameters_human": "39.79B",
+  "storage_bytes": 228701099738,
+  "storage_human": "228.7 GB",
+  "base_model": "RecursiveSI/flint",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

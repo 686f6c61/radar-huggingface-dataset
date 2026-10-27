@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "tinyopsec/Qwen2.5-1.5B-Spanish-1.0-DPO-GGUF",
+  "slug": "tinyopsec-qwen2-5-1-5b-spanish-1-0-dpo-gguf",
+  "author": "tinyopsec",
+  "url": "https://huggingface.co/tinyopsec/Qwen2.5-1.5B-Spanish-1.0-DPO-GGUF",
+  "created_at": "2026-10-27T15:48:36.000Z",
+  "updated_at": "2026-10-27T16:00:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen2",
+    "spanish",
+    "dpo",
+    "llama-cpp",
+    "text-generation",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 15338406624,
+  "storage_human": "15.3 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kukedlc/Qwen2.5-1.5B-Spanish-1.0-DPO-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Kukedlc/Qwen2.5-1.5B-Spanish-1.0-DPO-GGUF",
+      "snippet": "How to Get Started with the Model Use the code below to get started with the model. [More Information Needed] Training Details Training Data [More Information Needed] Training Procedure Preprocessing [optional] [More Information Needed] Training Hyperparameters Training regime: [More Information Needed] Speeds, Sizes, Times [optional] [More ..."
+    },
+    {
+      "title": "Qwen2.5-1.5B-Spanish-1.0-DPO-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen2.5-1.5B-Spanish-1.0-DPO-GGUF/discussions",
+      "snippet": "Instructions to use mradermacher/Qwen2.5-1.5B-Spanish-1.-DPO-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen2.5 1.5B Spanish 1.0 DPO — AI Model | Antbase",
+      "url": "https://antbase.ai/models/qwen2-5-1-5b-spanish-1-0-dpo",
+      "snippet": "Overview Qwen2.5 1.5B Spanish 1.0 DPO is a efficient model from Featherless with a 33K context window. Available through ANT&#x27;s unified API."
+    },
+    {
+      "title": "Qwen2.5-1.5B-Spanish-1.0-DPO - friendli.ai",
+      "url": "https://friendli.ai/models/Kukedlc/Qwen2.5-1.5B-Spanish-1.0-DPO",
+      "snippet": "Run Kukedlc/Qwen2.5-1.5B-Spanish-1.-DPO with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "GitHub - mx4ai/qwen2.5: Qwen2.5 is the large language model series ...",
+      "url": "https://github.com/mx4ai/qwen2.5",
+      "snippet": "Today, we are excited to introduce the latest addition to the Qwen family: Qwen2.5. Dense, easy-to-use, decoder-only language models, available in 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B sizes, and base and instruct variants. Pretrained on our latest large-scale dataset, encompassing up to 18T tokens."
+    }
+  ]
+}

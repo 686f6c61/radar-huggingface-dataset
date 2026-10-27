@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "bigfat/gemma-4-31B-it-GGUF",
+  "slug": "bigfat-gemma-4-31b-it-gguf",
+  "author": "bigfat",
+  "url": "https://huggingface.co/bigfat/gemma-4-31B-it-GGUF",
+  "created_at": "2026-10-27T15:39:48.000Z",
+  "updated_at": "2026-10-27T15:39:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gemma4",
+    "unsloth",
+    "gemma",
+    "google",
+    "image-text-to-text",
+    "base_model:google/gemma-4-31B-it",
+    "base_model:quantized:google/gemma-4-31B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Europe rejoins the fight with Chonky! Mistral Large 4 Released ...",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wzginu/europe_rejoins_the_fight_with_chonky_mistral/",
+      "snippet": "07.10.2026 ... Because it is a large dense model, it still performs ... Perhaps some that hover around 30b like Gemma 4 31b but that's about it, I figure."
+    },
+    {
+      "title": "g/ - /lmg/ - Local Models General - Technology - 4chan",
+      "url": "https://boards.4chan.org/g/thread/110169909/lmg-local-models-general",
+      "snippet": "vor 1 Tag ... Is it likely they can/are willing to improve on Gemma 4? ... Technically no LLM is \"true AI\" yet, it would probably tech specilized CPUs t ..."
+    },
+    {
+      "title": "AI Daily Picks - Maomao AI Lab",
+      "url": "https://maomaoailab.com/news/",
+      "snippet": "vor 7 Tagen ... ... models, making it a useful lead for model-efficiency research. ... 6-27B and Gemma4-31B, that 4-bit weights occupy about 17GB with 24GB ..."
+    },
+    {
+      "title": "/g/ - /lmg/ - Local Models General - Technology - 4chan",
+      "url": "https://boards.4chan.org/g/thread/110111423/lmg-local-models-general",
+      "snippet": "19.10.2026 ... ... 4-E4B-it-uncensored-pruned-TextOnly-EnglishOnly-GGUF ... >nobody in this thread thinks Gemma 4 31B is the only model you should download and use."
+    },
+    {
+      "title": "g/ - /lmg/ - Local Models General - Technology - 4chan",
+      "url": "https://boards.4chan.org/g/thread/110153417/lmg-local-models-general",
+      "snippet": "vor 3 Tagen ... Gemma 4 31B, Qwen 3.7 27B & Flash Next, Muse Glimmer & Gemma-Scotoma ... it with Gemma 4 26b. >>110156134 #. >> ...Anonymous 10/24/26(Sat) ..."
+    }
+  ]
+}

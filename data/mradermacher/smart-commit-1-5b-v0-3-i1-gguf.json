@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "mradermacher/smart-commit-1.5b-v0.3-i1-GGUF",
+  "slug": "mradermacher-smart-commit-1-5b-v0-3-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/smart-commit-1.5b-v0.3-i1-GGUF",
+  "created_at": "2026-10-27T16:21:39.000Z",
+  "updated_at": "2026-10-27T16:21:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1020404,
+  "parameters_human": "1.0M",
+  "storage_bytes": 4137664,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Lily-1.5b-v0.3-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Lily-1.5b-v0.3-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/Lily-1.5b-v0.3-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Lily-1.5b-v0.3-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - manyfacedqod/smartcommit",
+      "url": "https://github.com/manyfacedqod/smartcommit",
+      "snippet": "SmartCommit SmartCommit is a blazing-fast CLI tool that uses AI to generate meaningful Git commit messages from your staged changes — powered by local or remote LLMs (Ollama, OpenAI, or any HTTP-based LLM)."
+    },
+    {
+      "title": "GitHub - JoasASantos/Offensive-Security-AI-Models: Uncensored AI models ...",
+      "url": "https://github.com/JoasASantos/Offensive-Security-AI-Models",
+      "snippet": "Curated list of open-weight uncensored models for authorized red team operations, penetration testing, and security research. All data sourced from HuggingFace model cards and official publications. Sep 2026."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 33 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    }
+  ]
+}

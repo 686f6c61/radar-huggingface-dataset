@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "amir0907/student-v2",
+  "slug": "amir0907-student-v2",
+  "author": "amir0907",
+  "url": "https://huggingface.co/amir0907/student-v2",
+  "created_at": "2026-10-27T15:57:12.000Z",
+  "updated_at": "2026-10-27T15:57:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "funasr",
+  "languages": [],
+  "tags": [
+    "funasr",
+    "speech-emotion-recognition",
+    "emotion2vec",
+    "speech-to-speech-translation",
+    "tts",
+    "conditioning",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12867745,
+  "storage_human": "13 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "amir0907 (Amir) - Hugging Face",
+      "url": "https://huggingface.co/amir0907",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset about 4 hours ago ... liked a dataset about 6 hours ago"
+    },
+    {
+      "title": "amir0907/My-Vi · Hugging Face",
+      "url": "https://huggingface.co/amir0907/My-Vi",
+      "snippet": "Instructions to use amir0907/My-Vi with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use amir0907/My-Vi with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline (\"text-to-speech\", model=\"amir0907/My-Vi\")"
+    },
+    {
+      "title": "AI Model Downloads - 492 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "PixAI Model Market | 1.8M+ AI Art Models and LoRAs",
+      "url": "https://pixai.art/market",
+      "snippet": "Open marketplace for AI art models. Browse 1.8M+ user-trained models and LoRAs to generate anime, realistic and fantasy art free on PixAI."
+    },
+    {
+      "title": "Open Source AI Models — The open-source AI model directory",
+      "url": "https://opensourceaimodels.net/",
+      "snippet": "Open source AI models compared by license, parameters, benchmarks, VRAM and inference pricing for Llama, Mistral, Qwen, DeepSeek, Gemma, Phi and more. Pick the right open-weights model for your use case."
+    }
+  ]
+}

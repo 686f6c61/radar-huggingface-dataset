@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ismaielnounou/sam3-shelves-v2",
+  "slug": "ismaielnounou-sam3-shelves-v2",
+  "author": "ismaielnounou",
+  "url": "https://huggingface.co/ismaielnounou/sam3-shelves-v2",
+  "created_at": "2026-10-27T19:25:55.000Z",
+  "updated_at": "2026-10-27T19:26:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "sam3",
+    "feature-extraction",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 840376374,
+  "parameters_human": "840.4M",
+  "storage_bytes": 3361687608,
+  "storage_human": "3.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fault detection and diagnosis of grid-connected photovoltaic (PV ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2949821X26002292",
+      "snippet": "... AI-based PV fault diagnosis models (Table 2). Table 2. Examples of useful ... Nounou, M. Nounou. Genetic-algorithm-based neural network for fault ..."
+    },
+    {
+      "title": "(PDF) Comparative Analysis of Machine Learning Techniques for ...",
+      "url": "https://www.researchgate.net/publication/386295009_Comparative_Analysis_of_Machine_Learning_Techniques_for_Fault_Detection_in_Solar_Panel_Systems",
+      "snippet": "in fault detection models. Fig. 2 Statistical summaries of solar panel ..."
+    },
+    {
+      "title": "Dual graph attention network for robust fault diagnosis in ... - Nature",
+      "url": "https://www.nature.com/articles/s41598-025-16551-y",
+      "snippet": "26.08.2025 ... To address this, a detailed simulation model of a grid-connected PV inverter was developed in MATLAB/Simulink, incorporating variations in ..."
+    },
+    {
+      "title": "Artificial Intelligence Techniques With Digital Twin for Fault ...",
+      "url": "https://ieeexplore.ieee.org/iel8/6287639/10820123/11009177.pdf",
+      "snippet": "02.06.2025 ... In contrast, AI models are dynamic and data-driven, enabling them to evolve and improve with experience [2]. DL techniques, in particular, excel ..."
+    },
+    {
+      "title": "Fault diagnosis of photovoltaic systems using artificial intelligence",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10637999/",
+      "snippet": "... A.I. Where is thermal energy storage (TES) research going? – a bibliometric ... Nounou H., Nounou M., et al. Machine learning-based statistical testing ..."
+    }
+  ]
+}

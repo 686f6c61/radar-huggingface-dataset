@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "MilaHartmann/Mila-hartmann-lora",
+  "slug": "milahartmann-mila-hartmann-lora",
+  "author": "MilaHartmann",
+  "url": "https://huggingface.co/MilaHartmann/Mila-hartmann-lora",
+  "created_at": "2026-10-27T11:53:42.000Z",
+  "updated_at": "2026-10-27T11:56:17.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 234677352,
+  "storage_human": "235 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

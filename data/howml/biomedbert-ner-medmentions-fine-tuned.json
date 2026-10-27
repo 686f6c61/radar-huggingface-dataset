@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "HowML/BiomedBERT-ner-medmentions-fine-tuned",
+  "slug": "howml-biomedbert-ner-medmentions-fine-tuned",
+  "author": "HowML",
+  "url": "https://huggingface.co/HowML/BiomedBERT-ner-medmentions-fine-tuned",
+  "created_at": "2026-10-27T18:59:27.000Z",
+  "updated_at": "2026-10-27T19:21:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "token-classification",
+    "en",
+    "dataset:bigbio/medmentions",
+    "base_model:microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract",
+    "base_model:finetune:microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 108906259,
+  "parameters_human": "108.9M",
+  "storage_bytes": 435654221,
+  "storage_human": "436 MB",
+  "base_model": "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BioBERT: a pre-trained biomedical language representation model ...",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7703786/",
+      "snippet": "To show the effectiveness of our approach in biomedical text mining, BioBERT is fine-tuned and evaluated on three popular biomedical text mining tasks (NER, RE ..."
+    },
+    {
+      "title": "AMMU: A survey of transformer-based biomedical pretrained ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1532046421003117",
+      "snippet": "For example, Gao et al. [63] fine-tuned BlueBERT on a large general biomedical NER corpus like MedMentions [64] or Semantic Medline ..."
+    },
+    {
+      "title": "OntolinkX: a context-aware linking approach integrating SapBERT ...",
+      "url": "https://theses.gla.ac.uk/85080/4/2024WangMSc%28R%29.pdf",
+      "snippet": "15.11.2024 ... ... model fine-tuned with self- alignment pretraining on UMLS (Unified ... MedMentions datasets.We tested how difficult negative samples influence the ..."
+    },
+    {
+      "title": "ACL 2025 BioNLP 2025 and Shared Tasks Proceedings of the 24th ...",
+      "url": "https://aclanthology.org/2025.bionlp-1.pdf",
+      "snippet": "01.08.2025 ... His research interests include the safety and evaluation of large language models, clinical and biomedical NLP, and AI-driven scientific ..."
+    },
+    {
+      "title": "Pre-trained Language Models in Biomedical Domain",
+      "url": "https://dl.acm.org/doi/pdf/10.1145/3611651",
+      "snippet": "BERT with an additional classifier layer is then fine-tuned to optimize the objective of down-stream tasks (like MNLI [293], named entity recognition (NER) [266] ..."
+    }
+  ]
+}

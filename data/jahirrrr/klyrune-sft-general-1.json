@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jahirrrr/Klyrune-SFT-General-1",
+  "slug": "jahirrrr-klyrune-sft-general-1",
+  "author": "Jahirrrr",
+  "url": "https://huggingface.co/Jahirrrr/Klyrune-SFT-General-1",
+  "created_at": "2026-10-27T15:53:34.000Z",
+  "updated_at": "2026-10-27T15:56:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "klyrune",
+    "science",
+    "stem",
+    "mathematical-reasoning",
+    "education",
+    "fine-tuning",
+    "conversational",
+    "base_model:openbmb/MiniCPM5-2B-Midtrain",
+    "base_model:finetune:openbmb/MiniCPM5-2B-Midtrain",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 5033556816,
+  "storage_human": "5.0 GB",
+  "base_model": "openbmb/MiniCPM5-2B-Midtrain",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=klyra",
+      "snippet": "Explore machine learning models. Models 6 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: klyra Clear all"
+    },
+    {
+      "title": "Klyrune 2b General 1 - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/jahirrrr/klyrune-2b-general-1",
+      "snippet": "Registry entry for model Klyrune 2b General 1; source metadata pending."
+    },
+    {
+      "title": "Fine-tuned Models for Jahirrrr/Klyra-Decision-16M-Generalist-V4 ...",
+      "url": "https://huggingface.co/models?other=base_model:finetune:Jahirrrr/Klyra-Decision-16M-Generalist-V4",
+      "snippet": "Explore machine learning models. Models 3 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: Jahirrrr/Klyra-Decision-16M-Generalist-V4 Clear all"
+    },
+    {
+      "title": "Klyrune-2B-General-1 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Jahirrrr/Klyrune-2B-General-1",
+      "snippet": "Run Klyrune-2B-General-1 with FriendliAI inference. Klyrune-2B-General-1 is the first general-purpose instruction-tuned checkpoint in the Klyrune-2B project."
+    },
+    {
+      "title": "Supervised Fine-Tuning (SFT) for LLMs - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/supervised-fine-tuning-sft-for-llms/",
+      "snippet": "Supervised Fine-Tuning (SFT) is a method of adapting a pre-trained language model using a smaller dataset containing labeled examples. The model learns to produce the desired output for a given input, improving its performance on a specific task or type of instruction."
+    }
+  ]
+}

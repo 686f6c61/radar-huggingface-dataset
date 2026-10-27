@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "BrazosDeDios/Apertus-8B-MeditronFO-Q4_K_M-GGUF",
+  "slug": "brazosdedios-apertus-8b-meditronfo-q4_k_m-gguf",
+  "author": "BrazosDeDios",
+  "url": "https://huggingface.co/BrazosDeDios/Apertus-8B-MeditronFO-Q4_K_M-GGUF",
+  "created_at": "2026-10-27T11:31:26.000Z",
+  "updated_at": "2026-10-27T11:31:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "medical",
+    "clinical",
+    "healthcare",
+    "meditron",
+    "fully-open",
+    "medical-llm",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-generation",
+    "en",
+    "dataset:EPFLiGHT/fully-open-meditron",
+    "base_model:EPFLiGHT/Apertus-8B-MeditronFO",
+    "base_model:finetune:EPFLiGHT/Apertus-8B-MeditronFO",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8053338176,
+  "parameters_human": "8.05B",
+  "storage_bytes": 5057871584,
+  "storage_human": "5.1 GB",
+  "base_model": "EPFLiGHT/Apertus-8B-MeditronFO",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

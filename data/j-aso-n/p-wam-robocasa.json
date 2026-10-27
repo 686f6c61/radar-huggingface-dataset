@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "J-aso-n/P-WAM-RoboCasa",
+  "slug": "j-aso-n-p-wam-robocasa",
+  "author": "J-aso-n",
+  "url": "https://huggingface.co/J-aso-n/P-WAM-RoboCasa",
+  "created_at": "2026-10-27T16:21:35.000Z",
+  "updated_at": "2026-10-27T16:21:35.000Z",
+  "license": "nvidia-nsclv1-with-third-party-licenses",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "J (lettre) — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/J_(lettre)",
+      "snippet": "J (lettre) ... J (appelée ji, /ʒi/, en français) est la dixième lettre et la 7e consonne de l' alphabet latin."
+    },
+    {
+      "title": "J - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/J",
+      "snippet": "The Italian novelist Luigi Pirandello used j in vowel groups in his works written in Italian; he also wrote in his native Sicilian language, …"
+    },
+    {
+      "title": "Transilien ligne J : plan, arrêts et horaires en temps réel",
+      "url": "https://www.bonjour-ratp.fr/fr/lignes-transilien/ligne-j/",
+      "snippet": "Le transilien J relie Paris au Nord-Ouest de l’Île-de-France et aux départements de l’Eure et de l'Oise. Le tracé du chemin de fer se …"
+    },
+    {
+      "title": "Ligne J | Transilien",
+      "url": "https://www.transilien.com/fr/page-lignes/ligne-j",
+      "snippet": "Plan, horaires, actualité, idées de sorties, histoire de la ligne. De Paris Saint Lazare à Mantes-la-Jolie, Pontoise et Gisors, tout ce …"
+    },
+    {
+      "title": "J — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/J",
+      "snippet": "Jour J, expression désignant le premier jour d'une opération militaire de grande ampleur et préparée de longue date, tel que le 6 juin …"
+    }
+  ]
+}

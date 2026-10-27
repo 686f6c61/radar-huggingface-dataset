@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "aoleg/MOSS-Image-Kodachrome-V2",
+  "slug": "aoleg-moss-image-kodachrome-v2",
+  "author": "aoleg",
+  "url": "https://huggingface.co/aoleg/MOSS-Image-Kodachrome-V2",
+  "created_at": "2026-10-27T15:25:53.000Z",
+  "updated_at": "2026-10-27T15:45:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:OpenMOSS-Team/MOSS-Image-Base",
+    "base_model:adapter:OpenMOSS-Team/MOSS-Image-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 103777522,
+  "storage_human": "104 MB",
+  "base_model": "OpenMOSS-Team/MOSS-Image-Base",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MOSS Image: a simple Kodachrome lora : r/StableDiffusion - Reddit",
+      "url": "https://www.reddit.com/r/StableDiffusion/comments/1xf8o9o/moss_image_a_simple_kodachrome_lora/",
+      "snippet": "vor 2 Tagen ... These are one-shot generations on the base model; no Turbo, no SFT. As you see in the samples, there are no blurry shots even with the negative ..."
+    },
+    {
+      "title": "Adapter Models for OpenMOSS-Team/MOSS-Image-Base",
+      "url": "https://huggingface.co/models?other=base_model%3Aadapter%3AOpenMOSS-Team%2FMOSS-Image-Base",
+      "snippet": "Text-to-Image • Updated 6 days ago • 251 • 1 · AmandineFlachs/kale-img-1-lora. Text-to-Image • Updated 2 days ago • 1 · aoleg/MOSS-Image-Kodachrome. Text-to- ..."
+    },
+    {
+      "title": "r/comfyui - Reddit",
+      "url": "https://www.reddit.com/r/comfyui/",
+      "snippet": "18.03.2023 ... https://github.com/sepiablue-ai/moss-image-workflows/blob/main/README_EN.md ... Made a MOSS-Image workflow that shoots in film stocks: Kodachrome ..."
+    },
+    {
+      "title": "r/comfyui - Reddit",
+      "url": "https://www.reddit.com/r/comfyui/best/",
+      "snippet": "https://github.com/sepiablue-ai/moss-image-workflows/blob/main/README_EN.md ... Made a MOSS-Image workflow that shoots in film stocks: Kodachrome, Portra ..."
+    },
+    {
+      "title": "Input_Method_auto-Modifier/EnWordBase.json at master - GitHub",
+      "url": "https://github.com/voidism/Input_Method_auto-Modifier/blob/master/EnWordBase.json",
+      "snippet": "... image\", \"imagen\", \"imagery\", \"images\", \"imaginable\", \"imaginably ... kodachrome\", \"kodak\", \"kodiak\", \"koenig\", \"koenigsberg\", \"kohler\", \"kong\", \"konrad ..."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ikimyaii/GatedDeltaNet-1.3B-semi-structured-ELSA-50pct",
+  "slug": "ikimyaii-gateddeltanet-1-3b-semi-structured-elsa-50pct",
+  "author": "ikimyaii",
+  "url": "https://huggingface.co/ikimyaii/GatedDeltaNet-1.3B-semi-structured-ELSA-50pct",
+  "created_at": "2026-10-27T19:01:20.000Z",
+  "updated_at": "2026-10-27T19:01:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gated_deltanet",
+    "pruning",
+    "sparsity",
+    "semi-structured",
+    "admm",
+    "elsa",
+    "gated-deltanet",
+    "arxiv:2510.01650",
+    "base_model:m-a-p/1.3B-100B-GatedDeltaNet-pure",
+    "base_model:finetune:m-a-p/1.3B-100B-GatedDeltaNet-pure",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1466343808,
+  "parameters_human": "1.47B",
+  "storage_bytes": 5865422368,
+  "storage_human": "5.9 GB",
+  "base_model": "m-a-p/1.3B-100B-GatedDeltaNet-pure",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "linear-moe-hub/Gated-Deltanet-1.3B · Hugging Face",
+      "url": "https://huggingface.co/linear-moe-hub/Gated-Deltanet-1.3B",
+      "snippet": "Model of the paper MoM: Linear Sequence Modeling with Mixture-of-Memories and Gated Delta Networks: Improving Mamba2 with Delta Rule. The model was trained on a sample of SlimPajama with 100B tokens ..."
+    },
+    {
+      "title": "ikimyaii/HGRN-1.3B-semi-structured-ELSA-90pct · Hugging Face",
+      "url": "https://huggingface.co/ikimyaii/HGRN-1.3B-semi-structured-ELSA-90pct",
+      "snippet": "ELSA-official main.py, with the settings of ELSA&#x27;s own HGRN-1.3B @80% run, unchanged for every model and sparsity: 4096 ADMM steps, z-step every 32 steps, batch 1 x 8 accumulation, lr 2e-4, lambda 0.01, bf16, 32,768 C4 sequences of 2,048 tokens, seed 0. The whole run took 5.33 hours on one A100 40GB ..."
+    },
+    {
+      "title": "NVIDIA AI Releases Gated DeltaNet-2: A Linear Attention Layer That ...",
+      "url": "https://www.marktechpost.com/2026/05/24/nvidia-ai-releases-gated-deltanet-2-a-linear-attention-layer-that-decouples-erase-and-write-in-the-delta-rule/",
+      "snippet": "NVIDIA releases Gated DeltaNet-2: linear attention with channel-wise erase and write gates, outperforming KDA and Mamba-3 at 1.3B."
+    },
+    {
+      "title": "GitHub - NVlabs/GatedDeltaNet: [ICLR 2025] Official PyTorch ...",
+      "url": "https://github.com/NVlabs/GatedDeltaNet",
+      "snippet": "[ICLR 2025] Official PyTorch Implementation of Gated Delta Networks: Improving Mamba2 with Delta Rule - NVlabs/GatedDeltaNet"
+    },
+    {
+      "title": "Training a Model | NVlabs/GatedDeltaNet | DeepWiki",
+      "url": "https://deepwiki.com/NVlabs/GatedDeltaNet/6.2-training-a-model",
+      "snippet": "Training a Model Relevant source files Purpose and Scope This page provides practical instructions for training GatedDeltaNet models from scratch using the provided training infrastructure. It covers command-line usage, configuration options, training workflow, and expected outputs. For installation and environment setup, see Installation and Setup. For detailed training pipeline architecture ..."
+    }
+  ]
+}

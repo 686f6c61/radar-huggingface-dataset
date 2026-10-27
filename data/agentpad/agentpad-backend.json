@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "agentpad/agentpad-backend",
+  "slug": "agentpad-agentpad-backend",
+  "author": "agentpad",
+  "url": "https://huggingface.co/agentpad/agentpad-backend",
+  "created_at": "2026-10-27T16:08:46.000Z",
+  "updated_at": "2026-10-27T16:08:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Agentpad — Infrastructure Services for AI",
+      "url": "https://agentpad.net/",
+      "snippet": "Agentpad by the team Infrastructure services for AI Infrastructure for AI, engineered to endure. Agentpad designs, deploys, and operates the systems behind serious AI products—from private compute and data to secure delivery at the edge."
+    },
+    {
+      "title": "AgentPad — Operational AI Infrastructure",
+      "url": "https://www.useagentpad.fun/",
+      "snippet": "Train AI agents on your workflows in minutes. Deploy adaptive AI agents that learn, execute, and scale operational tasks across your business."
+    },
+    {
+      "title": "riogesulgon/agentpad: Visual agentic workflow builder - GitHub",
+      "url": "https://github.com/riogesulgon/agentpad",
+      "snippet": "Visual agentic workflow builder — design, run, and debug LLM-powered agent pipelines with a drag-and-drop canvas - riogesulgon/agentpad"
+    },
+    {
+      "title": "agentpad · PyPI",
+      "url": "https://pypi.org/project/agentpad/",
+      "snippet": "agentpad Execute bash, Python, JavaScript (Node), and SQL against a real project directory —with optional overlay, read-only mode, file-change tracking, and a session run log. Built for AI agents, CI, and local tooling. Same design in TypeScript (npm) and Python (PyPI / local install)."
+    },
+    {
+      "title": "GitHub - vgulerianb/agentpad: Multi-language code execution against a ...",
+      "url": "https://github.com/vgulerianb/agentpad/",
+      "snippet": "Multi-language code execution against a real directory for AI agents - vgulerianb/agentpad"
+    }
+  ]
+}

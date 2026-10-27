@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "MoriyaResearchInstitute/Miracle-1.5-FlashNano-SFT",
+  "slug": "moriyaresearchinstitute-miracle-1-5-flashnano-sft",
+  "author": "MoriyaResearchInstitute",
+  "url": "https://huggingface.co/MoriyaResearchInstitute/Miracle-1.5-FlashNano-SFT",
+  "created_at": "2026-10-27T16:20:41.000Z",
+  "updated_at": "2026-10-27T16:29:05.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "miracle_flashnano_tpu",
+    "en",
+    "base_model:MoriyaResearchInstitute/Miracle-1.5-FlashNano",
+    "base_model:finetune:MoriyaResearchInstitute/Miracle-1.5-FlashNano",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 123305600,
+  "parameters_human": "123.3M",
+  "storage_bytes": 494097484,
+  "storage_human": "494 MB",
+  "base_model": "MoriyaResearchInstitute/Miracle-1.5-FlashNano",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MoriyaResearchInstitute/Miracle-1.5-FlashNano · Hugging Face",
+      "url": "https://huggingface.co/MoriyaResearchInstitute/Miracle-1.5-FlashNano",
+      "snippet": "Miracle FlashNano is a 108M parameter dense language model. The model architecture is a 16-layer GQA Transformer with hidden size 768, 12 query heads, 4 key/value heads, head dimension 64, and a 1,536-dimensional SwiGLU. Layers 8 and 16 use global causal attention; the other 14 layers use an 8,192-token causal sliding window."
+    },
+    {
+      "title": "MoriyaResearchInstitute (Moriya Research Institute)",
+      "url": "https://huggingface.co/MoriyaResearchInstitute/models",
+      "snippet": "Org profile for Moriya Research Institute on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Reflection AI - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Reflection_AI",
+      "snippet": "Reflection AI is an American artificial intelligence company that develops open foundation models and software agents for AI-assisted software development. Founded in 2024 by former Google DeepMind researchers Misha Laskin and Ioannis Antonoglou, the company initially focused on tools that automate software development. [3] As of June 2026, Reflection&#x27;s valuation is $25 billion. [4] Reflection ..."
+    },
+    {
+      "title": "Start building with Nano Banana 2 Lite and Gemini Omni Flash",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-flash-nano-banana-2-lite/",
+      "snippet": "Scale your ideas with Nano Banana 2 Lite, our fastest, most cost-efficient Gemini Image model, and Gemini Omni Flash for high-quality video and conversational editing."
+    },
+    {
+      "title": "GLM (AI) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/GLM_(AI)",
+      "snippet": "GLM is the flagship model series of Z.ai, one of the six AI tigers of China. The weights of most GLM models are released under the MIT License or Apache License 2.0, allowing them to be run either locally or in the cloud."
+    }
+  ]
+}

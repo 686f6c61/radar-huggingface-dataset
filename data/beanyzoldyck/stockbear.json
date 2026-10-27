@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "beanyzoldyck/stockbear",
+  "slug": "beanyzoldyck-stockbear",
+  "author": "beanyzoldyck",
+  "url": "https://huggingface.co/beanyzoldyck/stockbear",
+  "created_at": "2026-10-27T15:22:36.000Z",
+  "updated_at": "2026-10-27T15:28:58.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "chess",
+    "regression",
+    "multilayer-perceptron",
+    "educational",
+    "from-scratch",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9865,
+  "parameters_human": "9865",
+  "storage_bytes": 40028,
+  "storage_human": "40028 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

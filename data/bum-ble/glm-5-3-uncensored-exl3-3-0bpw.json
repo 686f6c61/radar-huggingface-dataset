@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Bum-ble/GLM-5.3-UNCENSORED-EXL3-3.0bpw",
+  "slug": "bum-ble-glm-5-3-uncensored-exl3-3-0bpw",
+  "author": "Bum-ble",
+  "url": "https://huggingface.co/Bum-ble/GLM-5.3-UNCENSORED-EXL3-3.0bpw",
+  "created_at": "2026-10-27T19:05:56.000Z",
+  "updated_at": "2026-10-27T19:05:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "exllamav3",
+  "languages": [],
+  "tags": [
+    "exllamav3",
+    "safetensors",
+    "glm_moe_dsa",
+    "exl3",
+    "glm",
+    "moe",
+    "uncensored",
+    "text-generation",
+    "conversational",
+    "base_model:dealignai/GLM-5.3-UNCENSORED-FP8",
+    "base_model:quantized:dealignai/GLM-5.3-UNCENSORED-FP8",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 146311635584,
+  "parameters_human": "146.31B",
+  "storage_bytes": 292765481402,
+  "storage_human": "292.8 GB",
+  "base_model": "dealignai/GLM-5.3-UNCENSORED-FP8",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bum - English-French Dictionary WordReference.com",
+      "url": "https://www.wordreference.com/enfr/bum",
+      "snippet": "Voir la traduction automatique de Google Translate de 'bum'. Dans d'autres langues : espagnol | italien | portugais | roumain | …"
+    },
+    {
+      "title": "bum — Wiktionnaire, le dictionnaire libre",
+      "url": "https://fr.wiktionary.org/wiki/bum",
+      "snippet": "bum \\bɔm\\ généralement masculin (Anglicisme) (Familier) (Canada) Personne antisociale aux manières insolentes, qui a un …"
+    },
+    {
+      "title": "Définition de bum | Dictionnaire français - La langue française",
+      "url": "https://www.lalanguefrancaise.com/dictionnaire/definition/bum",
+      "snippet": "May 16, 2024 · Bum - Nom commun (Anglicisme, Familier, Canada) Personne qui adopte un comportement antisocial, caractérisée …"
+    },
+    {
+      "title": "Traduction BUM en français | Dictionnaire anglais-français | Reverso",
+      "url": "https://dictionnaire.reverso.net/anglais-francais/bum",
+      "snippet": "Traduction de \"bum\" en français : clochard, derrière, fainéant. Nom, verbe, adjectif, signification, prononciation, expressions …"
+    },
+    {
+      "title": "bum - Traduction française – Linguee",
+      "url": "https://www.linguee.fr/anglais-francais/traduction/bum.html",
+      "snippet": "De très nombreux exemples de phrases traduites contenant \"bum\" – Dictionnaire français-anglais et moteur de recherche de …"
+    }
+  ]
+}

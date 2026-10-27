@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "DRUPEs/CherryPit-1.1-2B-GGUF",
+  "slug": "drupes-cherrypit-1-1-2b-gguf",
+  "author": "DRUPEs",
+  "url": "https://huggingface.co/DRUPEs/CherryPit-1.1-2B-GGUF",
+  "created_at": "2026-10-27T19:17:37.000Z",
+  "updated_at": "2026-10-27T19:51:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "ollama",
+    "lmstudio",
+    "code",
+    "coding",
+    "math",
+    "reasoning",
+    "tool-calling",
+    "on-device",
+    "small-language-model",
+    "minicpm",
+    "text-generation",
+    "en",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:quantized:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 1561315648,
+  "storage_human": "1.6 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Breaking the Silence: Child Sexual Abuse in India | HRW",
+      "url": "https://www.hrw.org/report/2013/02/07/breaking-silence/child-sexual-abuse-india",
+      "snippet": "Feb 7, 2013 · This 82-page report examines how current government responses are falling short, both in protecting children from …"
+    },
+    {
+      "title": "“Tell Me Where I Can Be Safe”: The Impact of Nigeria’s Same Sex ...",
+      "url": "https://www.hrw.org/report/2016/10/20/tell-me-where-i-can-be-safe/impact-nigerias-same-sex-marriage-prohibition-act",
+      "snippet": "Oct 20, 2016 · This report shows how the law, which took effect in January 2014, is used by some police officers and members of the …"
+    },
+    {
+      "title": "“Your Child Does Not Exist Here” - Human Rights Watch",
+      "url": "https://www.hrw.org/report/2024/07/16/your-child-does-not-exist-here/human-rights-abuses-against-children-under-el",
+      "snippet": "Jul 16, 2024 · The 107-page report, “‘Your Child Does Not Exist Here’: Human Rights Abuses Against Children Under El Salvador’s …"
+    },
+    {
+      "title": "“I Want to Be Like Nature Made Me” - Human Rights Watch",
+      "url": "https://www.hrw.org/report/2017/07/25/i-want-be-nature-made-me/medically-unnecessary-surgeries-intersex-children-us",
+      "snippet": "Jul 25, 2017 · This report examines the physical and psychological damage caused by medically unnecessary surgery on intersex …"
+    },
+    {
+      "title": "Witness: Beaten, Shocked, Tortured – Life for Boys in Egypt’s Prisons",
+      "url": "https://www.hrw.org/news/2020/03/23/witness-beaten-shocked-tortured-life-boys-egypts-prisons",
+      "snippet": "Mar 23, 2020 · Children as young as 12 have been tortured in Egypt’s prisons. Horrific accounts of what happened to them include …"
+    }
+  ]
+}

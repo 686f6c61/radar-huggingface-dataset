@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "johahi/neurips-scooby-2",
+  "slug": "johahi-neurips-scooby-2",
+  "author": "johahi",
+  "url": "https://huggingface.co/johahi/neurips-scooby-2",
+  "created_at": "2026-10-27T15:49:47.000Z",
+  "updated_at": "2026-10-27T15:59:15.000Z",
+  "license": "alphagenome-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 348963973,
+  "parameters_human": "349.0M",
+  "storage_bytes": 1395948844,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "scooby: modeling multimodal genomic profiles from DNA sequence ...",
+      "url": "https://www.nature.com/articles/s41592-025-02854-5",
+      "snippet": "22.10.2025 ... scooby builds upon Borzoi, a recently released bulk omics model that uses RNA-seq coverage as an annotation-free representation of gene ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=borzoi",
+      "snippet": "Models · johahi/borzoi-replicate-0 · johahi/borzoi-replicate-1 · johahi/borzoi-replicate-2 · johahi/borzoi-replicate-3 · johahi/neurips-scooby · johahi/flashzoi- ..."
+    },
+    {
+      "title": "Provenance log - Pirate Face",
+      "url": "https://pirateface.co/provenance",
+      "snippet": "johahi/neurips-scooby-rna, e2a0f23c9231c84fe3d887a2ec81692d505c6882, 1 ... johahi/borzoi-prime-replicate-2, e85d9f18b00ba7f4a9ae016fbfa7c6a037b4c6d7, 1 ..."
+    },
+    {
+      "title": "scooby: Modeling multi-modal genomic profiles from DNA ... - GitHub",
+      "url": "https://github.com/gagneurlab/scooby",
+      "snippet": "Scooby is the first model to predict scRNA-seq coverage and scATAC-seq insertion profiles along the genome at single-cell resolution. For this, it leverages the ..."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Night448/smolvlm2-slake-joint",
+  "slug": "night448-smolvlm2-slake-joint",
+  "author": "Night448",
+  "url": "https://huggingface.co/Night448/smolvlm2-slake-joint",
+  "created_at": "2026-10-27T19:00:24.000Z",
+  "updated_at": "2026-10-27T20:24:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92569840,
+  "storage_human": "93 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Night448/smolvlm2-slake-arm1-llm · Hugging Face",
+      "url": "https://huggingface.co/Night448/smolvlm2-slake-arm1-llm",
+      "snippet": "Instructions to use Night448/smolvlm2-slake-arm1-llm with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Night448/smolvlm2-slake-arm1-llm with Transformers: ... Notebooks Google Colab Kaggle Model Card for Model ID Model Details Model Description Model Sources ..."
+    },
+    {
+      "title": "SmolVLM2: Bringing Video Understanding to Every Device",
+      "url": "https://huggingface.co/blog/smolvlm2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "smollm/vision/smolvlm2 at main · huggingface/smollm · GitHub",
+      "url": "https://github.com/huggingface/smollm/tree/main/vision/smolvlm2",
+      "snippet": "Everything about the SmolLM and SmolVLM family of models - smollm/vision/smolvlm2 at main · huggingface/smollm"
+    },
+    {
+      "title": "SmolVLM2 - Hugging Face - LLM Database",
+      "url": "https://llmdb.com/models/smolvlm-2",
+      "snippet": "SmolVLM2 is a Hugging Face open-weight model family. The second vision-language generation adds video understanding to compact image-and-text models. It combines SigLIP visual features with SmolLM2 text decoding and trains on video and image-language datasets."
+    },
+    {
+      "title": "SmolVLM: Redefining small and efficient multimodal models",
+      "url": "https://arxiv.org/abs/2504.05299",
+      "snippet": "Large Vision-Language Models (VLMs) deliver exceptional performance but require significant computational resources, limiting their deployment on mobile and edge devices. Smaller VLMs typically mirror design choices of larger models, such as extensive image tokenization, leading to inefficient GPU memory usage and constrained practicality for on-device applications. We introduce SmolVLM, a ..."
+    }
+  ]
+}

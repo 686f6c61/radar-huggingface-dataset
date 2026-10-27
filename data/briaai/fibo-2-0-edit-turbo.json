@@ -32,9 +32,9 @@
     "diffusers:BriaFibo2Pipeline",
     "region:us"
   ],
-  "likes": 129,
+  "likes": 131,
   "downloads_30d": 1280,
-  "trending_score": 128,
+  "trending_score": 103,
   "parameters": 8127342213,
   "parameters_human": "8.13B",
   "storage_bytes": 25485587073,

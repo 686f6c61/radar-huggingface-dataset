@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "EIDORA/CLIP_ViTB32_Multimodal",
+  "slug": "eidora-clip_vitb32_multimodal",
+  "author": "EIDORA",
+  "url": "https://huggingface.co/EIDORA/CLIP_ViTB32_Multimodal",
+  "created_at": "2026-10-27T16:12:57.000Z",
+  "updated_at": "2026-10-27T16:13:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "eidora",
+    "eidora-model-zoo",
+    "onnxruntime",
+    "clip",
+    "embeddings",
+    "multimodal",
+    "vit",
+    "feature-extraction",
+    "base_model:openai/clip-vit-base-patch32",
+    "base_model:quantized:openai/clip-vit-base-patch32",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 606446838,
+  "storage_human": "606 MB",
+  "base_model": "openai/clip-vit-base-patch32",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EIDORA/CLIP_ViT-B32 · Hugging Face",
+      "url": "https://huggingface.co/EIDORA/CLIP_ViT-B32",
+      "snippet": "CLIP ViT-B/32 embeds images and text into the same representation space, allowing semantic similarity, text-to-image retrieval, image-to-text retrieval and cross-modal exploration. This ONNX package was produced by EIDORA from the upstream model listed below. EIDORA is not the original model creator ..."
+    },
+    {
+      "title": "sentence-transformers/clip-ViT-B-32 · Hugging Face",
+      "url": "https://huggingface.co/sentence-transformers/clip-ViT-B-32",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CLIP ViT-B/32 INT8 | Arm AI Portal",
+      "url": "https://developer.arm.com/ai/models/hugging-face/Arm/clip-vit-base-patch32-int8-xnnpack-executorch/clip-vit-b32-int8-pte",
+      "snippet": "A quantized vision-language model for zero-shot image classification, pairing an INT8 vision encoder with an FP32 text encoder to produce aligned image and text embeddings for prompt-based similarity scoring and multimodal retrieval-style workflows."
+    },
+    {
+      "title": "PEViT/vision_benchmark/resources/model/vitb32_CLIP.yaml at ... - GitHub",
+      "url": "https://github.com/eric-ai-lab/PEViT/blob/master/vision_benchmark/resources/model/vitb32_CLIP.yaml",
+      "snippet": "Official implementation of AAAI 2023 paper \"Parameter-efficient Model Adaptation for Vision Transformers\" - eric-ai-lab/PEViT"
+    },
+    {
+      "title": "Fake News Detection using Multimodal Learning (BERT + CLIP)",
+      "url": "https://github.com/chandrasuman698-afk/fake-news-multimodal",
+      "snippet": "A deep learning project that detects fake news by combining text (BERT) and images (CLIP) into a unified multimodal model. Fake news often spreads through both misleading text and manipulated images. Traditional models rely only on text, missing crucial visual context ..."
+    }
+  ]
+}

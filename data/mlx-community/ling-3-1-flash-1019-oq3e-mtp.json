@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mlx-community/Ling-3.1-flash-1019-oQ3e-mtp",
+  "slug": "mlx-community-ling-3-1-flash-1019-oq3e-mtp",
+  "author": "mlx-community",
+  "url": "https://huggingface.co/mlx-community/Ling-3.1-flash-1019-oQ3e-mtp",
+  "created_at": "2026-10-27T15:51:40.000Z",
+  "updated_at": "2026-10-27T15:56:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "bailing_hybrid",
+    "oq",
+    "quantized",
+    "mtp",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "base_model:inclusionAI/Ling-3.1-flash-1019",
+    "base_model:quantized:inclusionAI/Ling-3.1-flash-1019",
+    "license:mit",
+    "3-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 572120680768,
+  "parameters_human": "572.12B",
+  "storage_bytes": 261613668573,
+  "storage_human": "261.6 GB",
+  "base_model": "inclusionAI/Ling-3.1-flash-1019",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ling-3.1 | OpenLM.ai",
+      "url": "https://openlm.ai/ling-3.1/",
+      "snippet": "We&#x27;re introducing Ling-3.1-flash, an upgraded native hybrid reasoning model designed for complex, real-world tasks. With 560B total parameters, 25B active parameters per token, and a 1M-token context window, Ling-3.1-flash builds upon Ling-3.0-flash with improvements in architecture and performance on real-world tasks."
+    },
+    {
+      "title": "mlx-community (MLX Community) - Hugging Face",
+      "url": "https://huggingface.co/mlx-community",
+      "snippet": "Org profile for MLX Community on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Ling-3.1-flash · LLM Releases",
+      "url": "https://www.llm-releases.com/models/ling-3-1-flash",
+      "snippet": "Ling-3.1-flash is the next-generation efficiency-focused Mixture-of-Experts model from Ant Group&#x27;s inclusionAI lab, unveiled in late September 2026 (2026-09-29/30) as the successor to Ling-3.0-flash. It scales to 560B total parameters activating about 25B per token — more than quadrupling the 124B total / 5.1B active of Ling-3.0-flash — and is a reasoning model with an explicit thinking ..."
+    },
+    {
+      "title": "Ling-3.1-flash-1019 and Base Model Explained | LLMs Blog",
+      "url": "https://www.llms.blog/posts/ling-3-1-flash-1019-upgrade-base-model",
+      "snippet": "Ling-3.1-flash-1019 explained: Ant Group&#x27;s upgraded 560B MIT open model, its new self-reported scores, the base model release and the GPUs it needs."
+    },
+    {
+      "title": "Ling-3.1-flash: Ant Group&#x27;s 560B MoE, 25B Active | AI/TLDR",
+      "url": "https://ai-tldr.dev/models/ling-3-1-flash/",
+      "snippet": "Ling-3.1-flash is a language model from inclusionAI, the team behind Ant Group&#x27;s artificial-general-intelligence programme. Ant Ling announced it on 30 September 2026 as a model of about 560 billion total parameters with about 25 billion activated per token and a context window of up to 1 million tokens, and said it plans to open-source the ..."
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "lapislabsai/Delibes-8M-esES",
+  "slug": "lapislabsai-delibes-8m-eses",
+  "author": "lapislabsai",
+  "url": "https://huggingface.co/lapislabsai/Delibes-8M-esES",
+  "created_at": "2026-10-27T15:39:48.000Z",
+  "updated_at": "2026-10-27T15:57:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "onnx",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "onnx",
+    "text-to-speech",
+    "european-spanish",
+    "castilian-spanish",
+    "distillation",
+    "kokoro",
+    "paradee",
+    "int8",
+    "cpu",
+    "es",
+    "arxiv:2610.06817",
+    "base_model:hexgrad/Kokoro-82M",
+    "base_model:quantized:hexgrad/Kokoro-82M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46311594,
+  "storage_human": "46 MB",
+  "base_model": "hexgrad/Kokoro-82M",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

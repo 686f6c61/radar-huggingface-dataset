@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "abir71/imdb-sentiment-mpnet",
+  "slug": "abir71-imdb-sentiment-mpnet",
+  "author": "abir71",
+  "url": "https://huggingface.co/abir71/imdb-sentiment-mpnet",
+  "created_at": "2026-10-27T19:18:45.000Z",
+  "updated_at": "2026-10-27T19:18:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "sklearn",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sklearn",
+    "joblib",
+    "sentiment-analysis",
+    "imdb",
+    "movie-reviews",
+    "sentence-transformers",
+    "logistic-regression",
+    "text-classification",
+    "en",
+    "dataset:stanfordnlp/imdb",
+    "base_model:sentence-transformers/all-mpnet-base-v2",
+    "base_model:finetune:sentence-transformers/all-mpnet-base-v2",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3931,
+  "storage_human": "3931 B",
+  "base_model": "sentence-transformers/all-mpnet-base-v2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Анализ сайта онлайн бесплатно: анализ ИКС и Page Rank, …",
+      "url": "https://majento.ru/index.php?page=seo-analize%2Fanalize-site",
+      "snippet": "Сервис для анализа основных параметров сайта: бесплатное определение ИКС и Page Rank, анализ robots.txt, код ответа …"
+    },
+    {
+      "title": "Ultimate HOT Girls having SEX with Boyfriend !!! - YouTube",
+      "url": "https://www.youtube.com/watch?v=ZV34kL7cMGk",
+      "snippet": "Jan 3, 2019 · Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on …"
+    },
+    {
+      "title": "Hot Girlfriend Porn Videos | Pornhub.com",
+      "url": "https://www.pornhub.com/video/search?search=hot+girlfriend",
+      "snippet": "Watch Hot Girlfriend porn videos for free, here on Pornhub.com. Discover the growing collection of high quality Most Relevant XXX …"
+    },
+    {
+      "title": "Free Porn Videos & Sex Tube Movies at xHamster",
+      "url": "https://xhofficial.com/creators/vicky-siya/full-length",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "xHamster",
+      "url": "https://xhamster19.com/tags/hot-indian-girl/newest",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    }
+  ]
+}

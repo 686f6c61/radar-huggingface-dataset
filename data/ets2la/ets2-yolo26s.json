@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ETS2LA/ets2-yolo26s",
+  "slug": "ets2la-ets2-yolo26s",
+  "author": "ETS2LA",
+  "url": "https://huggingface.co/ETS2LA/ets2-yolo26s",
+  "created_at": "2026-10-27T15:28:19.000Z",
+  "updated_at": "2026-10-27T15:34:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "dataset:ETS2LA/ets2-object-detection-2k",
+    "base_model:Ultralytics/YOLO26",
+    "base_model:quantized:Ultralytics/YOLO26",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 87652926,
+  "storage_human": "88 MB",
+  "base_model": "Ultralytics/YOLO26",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ETS2LA",
+      "url": "https://ets2la.com/",
+      "snippet": "Mar 4, 2022 · ETS2LA is a project that aims to finally bring self-driving technology to SCS Software's Truck Simulators. This page …"
+    },
+    {
+      "title": "Releases · ETS2LA/ETS2LA - GitHub",
+      "url": "https://github.com/ETS2LA/ETS2LA/releases",
+      "snippet": "Plugin based interface program for ETS2/ATS. Contribute to ETS2LA/ETS2LA development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - ETS2LA/ETS2LA: Plugin based interface program for …",
+      "url": "https://github.com/ETS2LA/ETS2LA",
+      "snippet": "ETS2LA is a project that aims to finally bring self-driving technology to SCS Software's Truck Simulators. This page includes some …"
+    },
+    {
+      "title": "ETS2LA download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/ets2la/",
+      "snippet": "Jul 8, 2026 · Download ETS2LA for free. Provides self driving for ETS2/ATS. ETS2LA is a project that aims to finally bring self-driving …"
+    },
+    {
+      "title": "ets2la.com",
+      "url": "https://ets2la.com/welcome.md",
+      "snippet": "If your question is not listed there, please join the [Discord] (https://ets2la.com/discord) and ask in the support channel. We will add …"
+    }
+  ]
+}

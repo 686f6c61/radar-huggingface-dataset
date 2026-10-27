@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "id": "LiquidAI/LFM3-1.7B",
+  "slug": "liquidai-lfm3-1-7b",
+  "author": "LiquidAI",
+  "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
+  "created_at": "2026-10-23T21:35:42.000Z",
+  "updated_at": "2026-10-27T05:58:29.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "it",
+    "ja",
+    "ko",
+    "pt",
+    "es",
+    "vi",
+    "th",
+    "id",
+    "hi",
+    "ru",
+    "pl"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm3",
+    "text-generation",
+    "liquid",
+    "edge",
+    "conversational",
+    "custom_code",
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "it",
+    "ja",
+    "ko",
+    "pt",
+    "es",
+    "vi",
+    "th",
+    "id",
+    "hi",
+    "ru",
+    "pl",
+    "base_model:LiquidAI/LFM3-1.7B-Base",
+    "base_model:finetune:LiquidAI/LFM3-1.7B-Base",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 97,
+  "downloads_30d": 6311,
+  "trending_score": 0,
+  "parameters": 1728801536,
+  "parameters_human": "1.73B",
+  "storage_bytes": 3475757943,
+  "storage_human": "3.5 GB",
+  "base_model": "LiquidAI/LFM3-1.7B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "New Film Lays Bare 'Pakistan's Hidden Shame'",
+      "url": "https://www.rferl.org/a/pakistan--hidden-shame-sex-abuse-peshawar/26574900.html",
+      "snippet": "Sep 9, 2014 · A new documentary screened by Britain's Channel 4 last week has been drawing attention to the problem of child …"
+    },
+    {
+      "title": "pakistani-porn videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/tags/pakistani-porn",
+      "snippet": "PAKISTANI REAL HUSBAND WIFE WATCHING DESI PORN ON MOBILE THAN HAVE ANAL SEX WITH CLEAR HOT HINDI …"
+    },
+    {
+      "title": "Real Bodies Look Like What: The Relationship of Pornography and Sex …",
+      "url": "https://www.genderit.org/feminist-talk/real-bodies-look-what-relationship-pornography-and-sex-pakistani-society",
+      "snippet": "Jan 16, 2023 · So if Pakistani men are getting most of their information on sex from porn, keeping in mind the religious and cultural …"
+    },
+    {
+      "title": "Pakistani viral sex videos and amateur MMS expose",
+      "url": "https://www.urduchudai.com/categories/viral-sex-videos/",
+      "snippet": "Watch trending viral sex videos and explore the latest porn clips updated regularly. Paki girls aur housewives se le kar showbiz star …"
+    },
+    {
+      "title": "Female Sex Workers in Pakistan EQUINOX documentary",
+      "url": "https://m.youtube.com/watch?v=dwx0GmB2EPU",
+      "snippet": "Aug 2, 2009 · A documentary portraying condition and reasoning of Prostitution in female sex workers Pakistan. Testimonials from …"
+    }
+  ]
+}

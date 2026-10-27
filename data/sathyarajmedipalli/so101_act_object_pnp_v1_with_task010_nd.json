@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "SathyarajMedipalli/so101_act_object_pnp_v1_with_task010_ND",
+  "slug": "sathyarajmedipalli-so101_act_object_pnp_v1_with_task010_nd",
+  "author": "SathyarajMedipalli",
+  "url": "https://huggingface.co/SathyarajMedipalli/so101_act_object_pnp_v1_with_task010_ND",
+  "created_at": "2026-10-27T11:37:08.000Z",
+  "updated_at": "2026-10-27T11:37:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:SathyarajMedipalli/Task_001_object_pickup_ND_50ep_20261027_031504",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206715264,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "id": "LiquidAI/LFM3-VL-2B-GGUF",
+  "slug": "liquidai-lfm3-vl-2b-gguf",
+  "author": "LiquidAI",
+  "url": "https://huggingface.co/LiquidAI/LFM3-VL-2B-GGUF",
+  "created_at": "2026-10-19T20:29:48.000Z",
+  "updated_at": "2026-10-27T17:04:08.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "it",
+    "ja",
+    "ko",
+    "pt",
+    "es",
+    "vi",
+    "th",
+    "id",
+    "hi",
+    "ru",
+    "pl"
+  ],
+  "tags": [
+    "gguf",
+    "liquid",
+    "lfm3",
+    "llama.cpp",
+    "image-text-to-text",
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "it",
+    "ja",
+    "ko",
+    "pt",
+    "es",
+    "vi",
+    "th",
+    "id",
+    "hi",
+    "ru",
+    "pl",
+    "base_model:LiquidAI/LFM3-VL-2B",
+    "base_model:quantized:LiquidAI/LFM3-VL-2B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 15,
+  "downloads_30d": 83,
+  "trending_score": 0,
+  "parameters": 1728801600,
+  "parameters_human": "1.73B",
+  "storage_bytes": 15625675712,
+  "storage_human": "15.6 GB",
+  "base_model": "LiquidAI/LFM3-VL-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LiquidAI (Liquid AI) - Hugging Face",
+      "url": "https://huggingface.co/LiquidAI",
+      "snippet": "LiquidAI/LFM3-Omni-2B ... Collection of post-trained and base LFM2.5 models. LiquidAI/LFM2.5 ..."
+    },
+    {
+      "title": "Liquid AI on X: \"Introducing 𝙻𝙵𝙼𝟹",
+      "url": "https://x.com/liquidai/status/2115128329003303107",
+      "snippet": "vor 2 Stunden ... > 𝙻𝙵𝙼𝟹-𝚅𝙻-𝟸𝙱: vision-language model with video-input support ... GIF. 1. 7. 65."
+    },
+    {
+      "title": "LiquidAI/LFM3-1.7B · Hugging Face : r/LocalLLaMA - Reddit",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xgy8s3/liquidailfm317b_hugging_face/",
+      "snippet": "vor 3 Stunden ... LFM3-Omni-2B is Liquid AI's first omni-modal model in the LFM3 family: a single end-to-end model that understands text, images, video and audio, ..."
+    },
+    {
+      "title": "Liquid AI - X",
+      "url": "https://x.com/liquidai/status/2115128344769687701",
+      "snippet": "vor 2 Stunden ... 𝙻𝙵𝙼𝟹-𝚅𝙻-𝟸𝙱 brings video understanding, step-by-step ... 𝙻𝙵𝙼𝟹-𝙾𝚖𝚗𝚒-𝟸𝙱 is our first omni model, built for cross-modal ..."
+    },
+    {
+      "title": "Liquid Foundation Models",
+      "url": "https://www.liquid.ai/models",
+      "snippet": "Explore Liquid Foundation Models (LFMs): efficient text, vision, audio, and nano models built for on-device, edge, and cloud AI deployment."
+    }
+  ]
+}

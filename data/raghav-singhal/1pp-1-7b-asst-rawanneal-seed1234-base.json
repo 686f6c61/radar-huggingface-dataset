@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Raghav-Singhal/1pp-1.7b-asst-rawanneal-seed1234-base",
+  "slug": "raghav-singhal-1pp-1-7b-asst-rawanneal-seed1234-base",
+  "author": "Raghav-Singhal",
+  "url": "https://huggingface.co/Raghav-Singhal/1pp-1.7b-asst-rawanneal-seed1234-base",
+  "created_at": "2026-10-27T12:43:04.000Z",
+  "updated_at": "2026-10-27T12:43:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "1pp",
+    "one-persona-pretraining",
+    "base",
+    "asst",
+    "rawanneal-seed1234",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1661048832,
+  "parameters_human": "1.66B",
+  "storage_bytes": 3322122912,
+  "storage_human": "3.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "“Tell Me Where I Can Be Safe”: The Impact of Nigeria’s Same Sex ...",
+      "url": "https://www.hrw.org/report/2016/10/20/tell-me-where-i-can-be-safe/impact-nigerias-same-sex-marriage-prohibition-act",
+      "snippet": "Oct 20, 2016 · This report shows how the law, which took effect in January 2014, is used by some police officers and members of the …"
+    },
+    {
+      "title": "Google Photos & your child's Google Account",
+      "url": "https://support.google.com/families/answer/7103261?hl=en",
+      "snippet": "If you created a Google Account for a child under 13 (or the applicable age in your country), you can manage your child's sharing in …"
+    },
+    {
+      "title": "Nudity & Sexual Content Policy - YouTube Help",
+      "url": "https://support.google.com/youtube/answer/2802002?hl=en",
+      "snippet": "This policy applies to real-world, dramatized, illustrated, and animated content, including sex scenes, video games, and music. Don’t …"
+    },
+    {
+      "title": "Why Sex Work Should be Decriminalised in South Africa | HRW",
+      "url": "https://www.hrw.org/report/2019/08/07/why-sex-work-should-be-decriminalised-south-africa",
+      "snippet": "Aug 7, 2019 · This documents violence experienced by sex workers in South Africa, and their difficulties in reporting crimes and …"
+    },
+    {
+      "title": "Nephew's Casual Sex with Aunty: 1 | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/nephews-casual-sex-with-aunty-1.586452/",
+      "snippet": "Mar 20, 2020 · > Public > Sex Stories > Nephew's Casual Sex with Aunty: 1 ... Dismiss Notice Hello, You can now get verified on …"
+    }
+  ]
+}

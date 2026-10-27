@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "smith1302/Krea-2-Turbo-BF16-backup",
+  "slug": "smith1302-krea-2-turbo-bf16-backup",
+  "author": "smith1302",
+  "url": "https://huggingface.co/smith1302/Krea-2-Turbo-BF16-backup",
+  "created_at": "2026-10-27T19:23:26.000Z",
+  "updated_at": "2026-10-27T19:26:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "diffusers:Krea2Pipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12820073036,
+  "parameters_human": "12.82B",
+  "storage_bytes": 35711626315,
+  "storage_human": "35.7 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "sensenova/SenseNova-6.8-Code2Video",
+  "slug": "sensenova-sensenova-6-8-code2video",
+  "author": "sensenova",
+  "url": "https://huggingface.co/sensenova/SenseNova-6.8-Code2Video",
+  "created_at": "2026-10-24T09:06:28.000Z",
+  "updated_at": "2026-10-27T12:27:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "code-video",
+    "video-generation",
+    "agent",
+    "claude-code",
+    "qwen3.8",
+    "conversational",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 27,
+  "downloads_30d": 0,
+  "trending_score": 27,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 54903399420,
+  "storage_human": "54.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SenseNova 6.8 Code2Video - GitHub",
+      "url": "https://github.com/OpenSenseNova/SenseNova-6.8-Code2Video",
+      "snippet": "The launch film was made by SenseNova 6.8 Code2Video, and so was every video that appears in it. The full films are in media/showcase/. We present SenseNova 6.8 Code2Video, a lightweight open model for code-driven video creation. The model builds and renders videos by generating executable code, and ..."
+    },
+    {
+      "title": "Models — SenseNova Multimodal AI Model Platform",
+      "url": "https://www.sensenova.ai/models",
+      "snippet": "Lightweight to run, strong on outcomes SenseNova 6.8 Flash Lite is our latest lightweight multimodal agent model built for complex real-world tasks; SenseNova U1.5 Lite is our next-generation unified image generation and editing model."
+    },
+    {
+      "title": "SenseTime open-sources SenseNova 6.8 Code2Video… · AGI Hunt",
+      "url": "https://agihunt.info/en/p/1a17dd52e71b6d73c8195e10f70",
+      "snippet": "SenseTime released SenseNova 6.8 Code2Video, an open-source model that creates videos by writing code, targeting motion graphics, kinetic typography, animated illustrations, product presentations and visual explainers."
+    },
+    {
+      "title": "SenseNova6.8/API.md at main · OpenSenseNova/SenseNova6.8",
+      "url": "https://github.com/OpenSenseNova/SenseNova6.8/blob/main/API.md",
+      "snippet": "SenseNova 6.8 Flash Lite Preview is an early preview release. Model behavior, availability, and interfaces may evolve before the official release."
+    },
+    {
+      "title": "sensenova (SenseNova) - Hugging Face",
+      "url": "https://huggingface.co/sensenova",
+      "snippet": "Org profile for SenseNova on Hugging Face, the AI community building the future."
+    }
+  ]
+}

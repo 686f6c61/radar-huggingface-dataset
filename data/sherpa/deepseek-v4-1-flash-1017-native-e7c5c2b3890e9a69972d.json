@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Sherpa/DeepSeek-V4.1-Flash-1017-native-e7c5c2b3890e9a69972d",
+  "slug": "sherpa-deepseek-v4-1-flash-1017-native-e7c5c2b3890e9a69972d",
+  "author": "Sherpa",
+  "url": "https://huggingface.co/Sherpa/DeepSeek-V4.1-Flash-1017-native-e7c5c2b3890e9a69972d",
+  "created_at": "2026-10-27T19:18:06.000Z",
+  "updated_at": "2026-10-27T19:18:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "base_model:finetune:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cours particuliers & Soutien scolaire sur mesure - Les Sherpas",
+      "url": "https://sherpas.com/",
+      "snippet": "Cours particuliers à domicile ou en ligne : la densité du réseau permet de trouver un Sherpa adapté, même dans les zones moins …"
+    },
+    {
+      "title": "Sherpas — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Sherpas",
+      "snippet": "Dawa Dachhiri Sherpa est un coureur d' ultra-trail de haut niveau, vainqueur de nombreuses courses en montagne dont l' Ultra-Trail …"
+    },
+    {
+      "title": "Votre supermarché en montagne‎ | Sherpa",
+      "url": "https://www.sherpa.net/",
+      "snippet": "Sherpa supermarché 100% montagne, services de livraison de course en station. Produits de qualité et du terroir."
+    },
+    {
+      "title": "Visa and Travel Requirements for every destination - joinsherpa",
+      "url": "https://apply.joinsherpa.com/travel-restrictions",
+      "snippet": "Find visa and travel requirements for any destination based on your passport and travel needs with easy-to-use forms and guidance."
+    },
+    {
+      "title": "Sherpa (enseigne) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Sherpa_(enseigne)",
+      "snippet": "Sherpa est une coopérative de commerçants et une enseigne de distribution alimentaire française, appartenant à la société Coréma …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "cstr/SauerkrautLM-MoEdernColBERT-115M-CrispEmbed-GGUF",
+  "slug": "cstr-sauerkrautlm-moederncolbert-115m-crispembed-gguf",
+  "author": "cstr",
+  "url": "https://huggingface.co/cstr/SauerkrautLM-MoEdernColBERT-115M-CrispEmbed-GGUF",
+  "created_at": "2026-10-27T11:42:36.000Z",
+  "updated_at": "2026-10-27T11:42:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "crispembed",
+    "colbert",
+    "base_model:VAGOsolutions/SauerkrautLM-MoEdernColBERT-115M",
+    "base_model:quantized:VAGOsolutions/SauerkrautLM-MoEdernColBERT-115M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 114696576,
+  "parameters_human": "114.7M",
+  "storage_bytes": 459890432,
+  "storage_human": "460 MB",
+  "base_model": "VAGOsolutions/SauerkrautLM-MoEdernColBERT-115M",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dentiste à Cognac, trouver un RDV pour une consultation",
+      "url": "https://www.pagesjaunes.fr/annuaire/cognac-16/dentistes",
+      "snippet": "Dentiste à Cognac (16) : Trouvez tous les médecins proches de chez vous et prenez RDV pour une consultation. Consultez les avis …"
+    },
+    {
+      "title": "Chirurgien-dentiste Cognac : Prenez rendez-vous en ligne | Doctolib",
+      "url": "https://www.doctolib.fr/dentiste/cognac",
+      "snippet": "Trouvez rapidement un chirurgien-dentiste à Cognac ou un soignant proposant des actes de chirurgie dentaire et prenez rendez …"
+    },
+    {
+      "title": "Chirurgien-dentiste à Cognac , RDV et horaires - Pages Jaunes",
+      "url": "https://www.pagesjaunes.fr/annuaire/cognac-16/dentistes-chirurgiens-dentistes-et-docteurs-en-chirurgie-dentaire",
+      "snippet": "Dentistes chirurgiens dentistes et docteurs en chirurgie dentaire à Cognac (16) : Trouvez tous les chirurgiens dentistes proches de …"
+    },
+    {
+      "title": "Dentiste à Cognac - annuaire.sudouest.fr",
+      "url": "https://annuaire.sudouest.fr/annuaire/ville/cognac-16/dentistes",
+      "snippet": "Dentiste à Cognac : Dénichez en quelques clics les meilleures adresses situées près de chez vous. Consultez horaires les et …"
+    },
+    {
+      "title": "Dentiste à Cognac — 176 praticiens | MonSuiviMédical",
+      "url": "https://monsuivimedical.fr/annuaire/dentiste/cognac",
+      "snippet": "2 days ago · Consultez la liste des dentiste à Cognac sur cette page ou utilisez la carte interactive MonSuiviMédical pour localiser le …"
+    }
+  ]
+}

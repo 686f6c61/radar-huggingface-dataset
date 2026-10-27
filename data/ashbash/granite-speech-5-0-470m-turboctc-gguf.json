@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "ashbash/granite-speech-5.0-470m-turboctc-GGUF",
+  "slug": "ashbash-granite-speech-5-0-470m-turboctc-gguf",
+  "author": "ashbash",
+  "url": "https://huggingface.co/ashbash/granite-speech-5.0-470m-turboctc-GGUF",
+  "created_at": "2026-10-27T19:16:29.000Z",
+  "updated_at": "2026-10-27T19:17:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "speech-recognition",
+    "ctc",
+    "base_model:ibm-granite/granite-speech-5.0-470m-turboctc",
+    "base_model:quantized:ibm-granite/granite-speech-5.0-470m-turboctc",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 473014864,
+  "parameters_human": "473.0M",
+  "storage_bytes": 947555712,
+  "storage_human": "948 MB",
+  "base_model": "ibm-granite/granite-speech-5.0-470m-turboctc",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

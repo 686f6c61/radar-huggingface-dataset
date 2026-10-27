@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "chihyul3/scottyrl-a3-p5_textcraft_grpo",
+  "slug": "chihyul3-scottyrl-a3-p5_textcraft_grpo",
+  "author": "chihyul3",
+  "url": "https://huggingface.co/chihyul3/scottyrl-a3-p5_textcraft_grpo",
+  "created_at": "2026-10-27T15:56:59.000Z",
+  "updated_at": "2026-10-27T16:00:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "tinker",
+    "lora",
+    "scottyrl",
+    "11-768",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 169907128,
+  "storage_human": "170 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BrianUppp/scottyrl-a3-p5_textcraft_grpo · Hugging Face",
+      "url": "https://huggingface.co/BrianUppp/scottyrl-a3-p5_textcraft_grpo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Honcel/scottyrl-a3-p5_textcraft_grpo · Hugging Face",
+      "url": "https://huggingface.co/Honcel/scottyrl-a3-p5_textcraft_grpo",
+      "snippet": "scottyrl A3 adapter: p5_textcraft_grpo LoRA adapter (rank 32) on Qwen/Qwen3.5-4B, trained with the scottyrl framework for 11-768 (AI Agents, CMU), Assignment 3."
+    },
+    {
+      "title": "oliviabgp/scottyrl-a3-p5_textcraft_grpo · Hugging Face",
+      "url": "https://huggingface.co/oliviabgp/scottyrl-a3-p5_textcraft_grpo",
+      "snippet": "scottyrl A3 adapter: p5_textcraft_grpo LoRA adapter (rank 32) on Qwen/Qwen3.5-4B, trained with the scottyrl framework for 11-768 (AI Agents, CMU), Assignment 3."
+    },
+    {
+      "title": "sdharod/scottyrl-a3-p5_textcraft_grpo · Hugging Face",
+      "url": "https://huggingface.co/sdharod/scottyrl-a3-p5_textcraft_grpo",
+      "snippet": "scottyrl A3 adapter: p5_textcraft_grpo LoRA adapter (rank 32) on Qwen/Qwen3.5-4B, trained with the scottyrl framework for 11-768 (AI Agents, CMU), Assignment 3."
+    },
+    {
+      "title": "racheleven11/scottyrl-a3-p5_textcraft_grpo · Hugging Face",
+      "url": "https://huggingface.co/racheleven11/scottyrl-a3-p5_textcraft_grpo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

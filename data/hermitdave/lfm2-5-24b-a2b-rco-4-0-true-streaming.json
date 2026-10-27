@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "hermitdave/LFM2.5-24B-A2B-RCO-4.0-true-streaming",
+  "slug": "hermitdave-lfm2-5-24b-a2b-rco-4-0-true-streaming",
+  "author": "hermitdave",
+  "url": "https://huggingface.co/hermitdave/LFM2.5-24B-A2B-RCO-4.0-true-streaming",
+  "created_at": "2026-10-27T12:39:58.000Z",
+  "updated_at": "2026-10-27T12:44:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "lfm2_moe",
+    "mlx-rco",
+    "quantized",
+    "moe",
+    "lfm2",
+    "streaming",
+    "rco",
+    "error-db",
+    "true-streaming",
+    "en",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16053018670,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "S-Somnium/Pandora",
+  "slug": "s-somnium-pandora",
+  "author": "S-Somnium",
+  "url": "https://huggingface.co/S-Somnium/Pandora",
+  "created_at": "2026-10-27T15:35:00.000Z",
+  "updated_at": "2026-10-27T15:35:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "S - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/S",
+      "snippet": "In English, s represents a voiceless alveolar sibilant /s/. It also commonly represents a voiced alveolar sibilant /z/, as in 'rose' and …"
+    },
+    {
+      "title": "PSYNCIN' IN THE SWaiN | AI: The Somnium Files Wiki - Fandom",
+      "url": "https://somniumfiles.fandom.com/wiki/PSYNCIN%27_IN_THE_SWaiN",
+      "snippet": "It is a Somnium world created from Ota Matsushita's dream by Psync System. The Advanced Brain Investigation Squad investigated his Somnium to gain testimony on ..."
+    },
+    {
+      "title": "S (lettre) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/S_(lettre)",
+      "snippet": "Dans l’ alphabet phonétique international, la lettre s minuscule sert à représenter la consonne fricative alvéolaire sourde. Avant 1989, …"
+    },
+    {
+      "title": "Breuil-la-Réorte : Actualités et info en direct - Sud Ouest",
+      "url": "https://www.sudouest.fr/charente-maritime/breuil-la-reorte/",
+      "snippet": "Oct 4, 2026 · Retrouvez toute l'info de Breuil-la-Réorte (17700) en direct : les faits-divers, la météo, les sorties, la politique, …"
+    },
+    {
+      "title": "S — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/S",
+      "snippet": "Dans de nombreux mangas comme Naruto, Fairy Tail, Area D ou encore Yu Yu Hakusho, la lettre S correspond à une catégorie …"
+    }
+  ]
+}

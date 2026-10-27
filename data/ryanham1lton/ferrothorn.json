@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/Ferrothorn",
+  "slug": "ryanham1lton-ferrothorn",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/Ferrothorn",
+  "created_at": "2026-10-27T16:13:22.000Z",
+  "updated_at": "2026-10-27T16:15:18.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 115802646,
+  "storage_human": "116 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ryanham1lton/Rhyhorn · Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton/Rhyhorn",
+      "snippet": "Ryanham1lton / Rhyhorn Like 0 License:cc-by-4. Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Ryanham1lton (Ryan James Hamilton) - Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 12 hours ago ... published a model about 12 hours ago"
+    },
+    {
+      "title": "Ferrothorn AI Models | PixAI",
+      "url": "https://pixai.art/en/tags/model/ferrothorn",
+      "snippet": "Discover Ferrothorn AI models on PixAI - Find anime AI models and LoRAs tagged with Ferrothorn"
+    },
+    {
+      "title": "Ferrothorn-pokemon-ill｜AI Art Model & LoRA | PixAI",
+      "url": "https://pixai.art/model/1840250550304726590",
+      "snippet": "Just created this stunning pokemon, character, ferrothorn anime art with the amazing &#x27;Ferrothorn-pokemon-ill&#x27; model on PixAI! Search for \"Ferrothorn-pokemon-ill\" on PixAI - the free & professional AI anime art generator. Create your own masterpieces in seconds. Try it now!"
+    },
+    {
+      "title": "ryanham1lton | Storyteller.ai",
+      "url": "https://storyteller.ai/profile/ryanham1lton",
+      "snippet": "Storyteller.ai AI creation engine Make movies like this with Seedance 2.0 - cheaper than anywhere else. Seedance 2.0 model is live on ArtCraft before anywhere else. Create cinematic AI video with fluid motion and Hollywood-level scenes."
+    }
+  ]
+}

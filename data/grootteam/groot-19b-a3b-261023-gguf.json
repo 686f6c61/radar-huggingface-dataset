@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "GrootTeam/Groot-19B-A3B-261023-GGUF",
+  "slug": "grootteam-groot-19b-a3b-261023-gguf",
+  "author": "GrootTeam",
+  "url": "https://huggingface.co/GrootTeam/Groot-19B-A3B-261023-GGUF",
+  "created_at": "2026-10-23T08:52:49.000Z",
+  "updated_at": "2026-10-23T09:45:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "image-text-to-text",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 14,
+  "downloads_30d": 1312,
+  "trending_score": 13,
+  "parameters": 18985723008,
+  "parameters_human": "18.99B",
+  "storage_bytes": 12566598611,
+  "storage_human": "12.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ggggggggggggggggggg - YouTube",
+      "url": "https://www.youtube.com/watch?v=wp-8vOW_V0s",
+      "snippet": "Jun 12, 2013 · Ggggggggggggggggggg Drake Stopher 3,415,528 views 13y ago Ggggggggggggggggggg"
+    },
+    {
+      "title": "ggggggggggggggggggggggggggggggg - YouTube",
+      "url": "https://www.youtube.com/watch?v=jfePbPyhp7I",
+      "snippet": "Oct 16, 2025 · Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on …"
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/watch?v=oTyIHb5OdbM",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    },
+    {
+      "title": "GGggggggggggggggggggggggggggggg - video Dailymotion",
+      "url": "https://www.dailymotion.com/video/x5s9rvl",
+      "snippet": "Jul 1, 2017 · Report Urielzabala12344 Follow GGggggggggggggggggggggggggggggg 9 years ago Category 🎮️"
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/watch?v=d8GgrumvrY0",
+      "snippet": "Sign in to create & share playlists, get personalized recommendations, and more."
+    }
+  ]
+}

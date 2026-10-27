@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Cohere-AR/cohere-transcribe-ar-sft",
+  "slug": "cohere-ar-cohere-transcribe-ar-sft",
+  "author": "Cohere-AR",
+  "url": "https://huggingface.co/Cohere-AR/cohere-transcribe-ar-sft",
+  "created_at": "2026-10-27T15:23:16.000Z",
+  "updated_at": "2026-10-27T18:06:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "cohere_asr",
+    "automatic-speech-recognition",
+    "speech-recognition",
+    "arabic",
+    "english",
+    "code-switching",
+    "telephony",
+    "ar",
+    "en",
+    "base_model:CohereLabs/cohere-transcribe-arabic-07-2026",
+    "base_model:finetune:CohereLabs/cohere-transcribe-arabic-07-2026",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2065770752,
+  "parameters_human": "2.07B",
+  "storage_bytes": 16527238464,
+  "storage_human": "16.5 GB",
+  "base_model": "CohereLabs/cohere-transcribe-arabic-07-2026",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cstr/cohere-transcribe-03-2026-GGUF - Hugging Face",
+      "url": "https://huggingface.co/cstr/cohere-transcribe-03-2026-GGUF",
+      "snippet": "GGUF weights for CohereLabs/cohere-transcribe-03-2026 — Cohere's open-source 2B-parameter ASR model, #1 on the Open ASR Leaderboard (avg WER 5.42, as of March ..."
+    },
+    {
+      "title": "What are embeddings in machine learning? - Cohere",
+      "url": "https://cohere.com/blog/embeddings",
+      "snippet": "How are embeddings used in large language models? ... Embeddings are the foundation of how LLMs process text, turning words into numbers so a computer can ..."
+    },
+    {
+      "title": "Speech and Language Processing - Stanford University",
+      "url": "https://web.stanford.edu/~jurafsky/slp3/ed3book_aug26.pdf",
+      "snippet": "23.05.2025 ... Draft of August 19, 2026. Comments and typos welcome! Page 2. Summary of Contents. I Large Language Models. 1."
+    },
+    {
+      "title": "EVA-Bench: A New End-to-end Framework for Evaluating Voice ...",
+      "url": "https://aclanthology.org/2026.findings-emnlp.2182.pdf",
+      "snippet": "vor 3 Tagen ... ) An end-to-end model ar- chitecture that accepts raw audio as ... Cohere-transcribe + Gemma-4-26B + Voxtral-4B-TTS. 22.6%. 241. 56%. 37 ..."
+    },
+    {
+      "title": "Foundry Models sold by Azure - Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
+      "snippet": "08.10.2026 ... ... Cohere, DeepSeek, Meta, Mistral AI, and xAI. Azure OpenAI in ... gpt-transcribe is an offline transcription model and isn't a Realtime API model."
+    }
+  ]
+}

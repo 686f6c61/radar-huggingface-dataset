@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "fengzhimu/bioemu2",
+  "slug": "fengzhimu-bioemu2",
+  "author": "fengzhimu",
+  "url": "https://huggingface.co/fengzhimu/bioemu2",
+  "created_at": "2026-10-27T15:27:53.000Z",
+  "updated_at": "2026-10-27T15:27:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2047661181,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Spotify - Web Player: Listen to Music, Podcasts, and Audiobooks Online",
+      "url": "https://open.spotify.com/",
+      "snippet": "Spotify is a digital music service that gives you access to millions of songs, podcasts, and audiobooks. Listen to your favorites online …"
+    },
+    {
+      "title": "Spotify",
+      "url": "https://accounts.spotify.com/fr/login",
+      "snippet": "Vous n'avez pas de compte ? S'inscrire"
+    },
+    {
+      "title": "Spotify – Lecteur web : écoutez de la musique, des podcasts et des ...",
+      "url": "https://open.spotify.com/intl-fr",
+      "snippet": "Spotify est un service de musique en ligne qui vous permet d'accéder à des millions de titres, de podcasts et de livres audio. Écoutez …"
+    },
+    {
+      "title": "Spotify",
+      "url": "https://accounts.spotify.com/en/login?nosignup=true",
+      "snippet": "Log in to your Spotify account to access music, podcasts, and more."
+    },
+    {
+      "title": "Spotify Premium - Spotify (Armenia)",
+      "url": "https://www.spotify.com/am/premium/",
+      "snippet": "Spotify Premium is a digital music service that gives you access to ad-free music listening of millions of songs."
+    }
+  ]
+}
