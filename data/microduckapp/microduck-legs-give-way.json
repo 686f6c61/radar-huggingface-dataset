@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "microduckapp/microduck-legs-give-way",
+  "slug": "microduckapp-microduck-legs-give-way",
+  "author": "microduckapp",
+  "url": "https://huggingface.co/microduckapp/microduck-legs-give-way",
+  "created_at": "2026-10-27T01:28:01.000Z",
+  "updated_at": "2026-10-27T01:28:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "robotics",
+    "microduck-move",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1270638,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - pollen-robotics/microduck: A Tiny biped duck robot",
+      "url": "https://github.com/pollen-robotics/microduck",
+      "snippet": "A Tiny biped duck robot 🦆. Contribute to pollen-robotics/microduck development by creating an account on GitHub."
+    },
+    {
+      "title": "Microduck · From body to behavior",
+      "url": "https://eai-course.github.io/microduck/",
+      "snippet": "Learn how the real Microduck system connects mechanics, hardware, software, walking, simulation, and local model evaluation."
+    },
+    {
+      "title": "GitHub - microai-lab/microduck-studio: Local web studio for developing ...",
+      "url": "https://github.com/microai-lab/microduck-studio",
+      "snippet": "Microduck Studio brings Microduck simulation, live monitoring, and robot controls into one browser workspace. It connects the existing microduck runtime and microduck_rl simulator. Open the microduck-dev workspace in a local AI coding agent with repository, terminal, and Docker access, then use this ..."
+    },
+    {
+      "title": "MicroDuck Robot Resources — DIY Tutorials & Guides",
+      "url": "https://microduckrobot.org/",
+      "snippet": "Independent MicroDuck robot resources: DIY tutorials, software updates, setup, calibration and troubleshooting, with original sources and verification limits."
+    },
+    {
+      "title": "Deep-Dive: How Hugging Face Microduck & LeRobot Accelerate Embodied AI",
+      "url": "https://techbytes.app/posts/hugging-face-microduck-lerobot-vla-architecture-deep-dive/",
+      "snippet": "An architectural breakdown of Hugging Face Microduck, LeRobot VLA model integration, low-latency teleoperation, and open-source robotics hardware."
+    }
+  ]
+}

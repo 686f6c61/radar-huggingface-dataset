@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "microduckapp/microduck-roll-party",
+  "slug": "microduckapp-microduck-roll-party",
+  "author": "microduckapp",
+  "url": "https://huggingface.co/microduckapp/microduck-roll-party",
+  "created_at": "2026-10-27T01:33:37.000Z",
+  "updated_at": "2026-10-27T01:33:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "robotics",
+    "microduck-move",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1699337,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "microduckapp/microduck-roll-over · Hugging Face",
+      "url": "https://huggingface.co/microduckapp/microduck-roll-over",
+      "snippet": "Roll Over Rolls its heavy head round in a slow circle, then turns right over like in bed and droops the other way. A 10.8-second move for the Microduck robot, from the MicroDuck app."
+    },
+    {
+      "title": "Hugging Face&#x27;s Pollen Robotics Releases Small, Cute & Open-Source ...",
+      "url": "https://theaiinsider.tech/2026/08/28/hugging-faces-pollen-robotics-releases-small-cute-open-source-microduck-robot/",
+      "snippet": "Hugging Face&#x27;s Pollen Robotics has introduced Microduck, a small biped robot designed as an open development platform for experimenting with physical AI, reinforcement learning and transferring robot behaviors from simulation into real hardware."
+    },
+    {
+      "title": "Hugging Face Unveils Microduck: A $399 Open-Source 25 cm Biped You ...",
+      "url": "https://www.marktechpost.com/2026/08/28/pollen-robotics-hugging-face-microduck-399-open-source-rl-biped-robot/",
+      "snippet": "Pollen Robotics and Hugging Face launch Microduck, a $399 open-source 25 cm biped trained with reinforcement learning in MuJoCo."
+    },
+    {
+      "title": "GitHub - pollen-robotics/microduck: A Tiny biped duck robot",
+      "url": "https://github.com/pollen-robotics/microduck",
+      "snippet": "A Tiny biped duck robot 🦆. Contribute to pollen-robotics/microduck development by creating an account on GitHub."
+    },
+    {
+      "title": "Hugging Face&#x27;s new duck robot is selling fast. A Chinese chip ... - CNBC",
+      "url": "https://www.cnbc.com/2026/09/01/hugging-faces-new-duck-robot-is-selling-fast-a-chinese-chip-powers-it.html",
+      "snippet": "A representative for the robotics company said that it is using Rockchip in Microduck due to \"its on-board 1 TOPS NPU.\" TOPS, or tera operations per second, is a measure of AI computing performance."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "nakanakagawa/sponge_task_10_27_v1_14ep",
+  "slug": "nakanakagawa-sponge_task_10_27_v1_14ep",
+  "author": "nakanakagawa",
+  "url": "https://huggingface.co/nakanakagawa/sponge_task_10_27_v1_14ep",
+  "created_at": "2026-10-27T08:26:20.000Z",
+  "updated_at": "2026-10-27T08:26:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:nakanakagawa/sponge_task_10_27_v1_14ep",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206707288,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nakanakagawa (nakanakagawa) - Hugging Face",
+      "url": "https://huggingface.co/nakanakagawa",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset 22 days ago ... published a dataset 22 days ago"
+    },
+    {
+      "title": "nakanakagawa (nakanakagawa) - Hugging Face",
+      "url": "https://huggingface.co/nakanakagawa/datasets",
+      "snippet": "Sort: Recently updated. nakanakagawa/eval_sponge_task2. Updated 9 days ago • 44. nakanakagawa/eval_sponge_task1. Updated 10 days ago • 49"
+    },
+    {
+      "title": "nakanakagawa/sponge_task_10_14_v2 - Hugging Face",
+      "url": "https://huggingface.co/nakanakagawa/sponge_task_10_14_v2",
+      "snippet": "Model Card for act Action Chunking with Transformers (ACT) is an imitation-learning method that predicts short action chunks instead of single steps. It learns from teleoperated data and often achieves high success rates. This policy has been trained and pushed to the Hub using LeRobot. See the full documentation at LeRobot Docs."
+    },
+    {
+      "title": "nakanakagawa在HuggingFace首发sponge_task_10_02_v6数据集 赋能具身智能机器人跟随训练",
+      "url": "https://www.5radar.com/dataopensource/news/468056/nakanakagawa%E5%9C%A8huggingface%E9%A6%96%E5%8F%91sponge-task-10-02-v6%E6%95%B0%E6%8D%AE%E9%9B%86-%E8%B5%8B%E8%83%BD%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%B7%9F%E9%9A%8F%E8%AE%AD%E7%BB%83",
+      "snippet": "2026年10月2日，独立开发者nakanakagawa在全球开源AI社区HuggingFace首发sponge_task_10_02_v6机器人任务数据集，该数据集基于LeRobot框架构建，可应用于机器人跟随任务训练、演示数据采集标注等场景，为具身智能细分领域研发提供了标准化的小样本训练数据支撑。"
+    },
+    {
+      "title": "开发者nakanakagawa登陆HuggingFace首发sponge_task数据集 赋能机器人遥操作与精细操作研发",
+      "url": "https://www.5radar.com/dataopensource/news/468062/%E5%BC%80%E5%8F%91%E8%80%85nakanakagawa%E7%99%BB%E9%99%86huggingface%E9%A6%96%E5%8F%91sponge-task%E6%95%B0%E6%8D%AE%E9%9B%86-%E8%B5%8B%E8%83%BD%E6%9C%BA%E5%99%A8%E4%BA%BA%E9%81%A5%E6%93%8D%E4%BD%9C%E4%B8%8E%E7%B2%BE%E7%BB%86%E6%93%8D%E4%BD%9C%E7%A0%94%E5%8F%91",
+      "snippet": "2026年10月2日，开发者nakanakagawa在HuggingFace平台正式发布sponge_task_10_02_v4机器人遥操作数据集，基于LeRobot框架打造，覆盖完整关节参数与双视角视频流，将为机器人遥操作示教、精细操作任务的算法研发提供高质量训练数据支撑。"
+    }
+  ]
+}

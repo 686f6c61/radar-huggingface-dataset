@@ -5,7 +5,7 @@
   "author": "zils-ai",
   "url": "https://huggingface.co/zils-ai/z3-mini-node-1-candidates",
   "created_at": "2026-10-23T20:40:32.000Z",
-  "updated_at": "2026-10-25T22:54:21.000Z",
+  "updated_at": "2026-10-27T00:15:34.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -18,12 +18,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 78,
+  "downloads_30d": 97,
   "trending_score": 0,
   "parameters": 4539265536,
   "parameters_human": "4.54B",
-  "storage_bytes": 127116044382,
-  "storage_human": "127.1 GB",
+  "storage_bytes": 145273276542,
+  "storage_human": "145.3 GB",
   "base_model": null,
   "formats": [
     "safetensors"

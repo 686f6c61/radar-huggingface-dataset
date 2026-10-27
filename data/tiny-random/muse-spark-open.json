@@ -5,7 +5,7 @@
   "author": "tiny-random",
   "url": "https://huggingface.co/tiny-random/muse-spark-open",
   "created_at": "2026-10-25T22:32:17.000Z",
-  "updated_at": "2026-10-25T22:32:25.000Z",
+  "updated_at": "2026-10-26T09:06:18.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -19,7 +19,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 14,
   "trending_score": 0,
   "parameters": 3582568,
   "parameters_human": "3.6M",

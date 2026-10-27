@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "davidheineman/rlve-archive-nano-omni-multiteacher-web-26e2d003286c",
+  "slug": "davidheineman-rlve-archive-nano-omni-multiteacher-web-26e2d003286c",
+  "author": "davidheineman",
+  "url": "https://huggingface.co/davidheineman/rlve-archive-nano-omni-multiteacher-web-26e2d003286c",
+  "created_at": "2026-10-27T08:32:09.000Z",
+  "updated_at": "2026-10-27T08:32:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "rlve",
+    "checkpoint-archive",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 714205340,
+  "storage_human": "714 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rlve-archive-nano-omni-multiteacher-code-c562da3c8605",
+      "url": "https://huggingface.co/davidheineman/rlve-archive-nano-omni-multiteacher-code-c562da3c8605",
+      "snippet": "This repository preserves the final checkpoint from a completed run. For Megatron distributed checkpoints, the checkpoint/ directory contains the exact saved model state. Downloads last month -"
+    },
+    {
+      "title": "davidheineman/rlve-archive-nano-omni-multiteacher-math-559ac32f9314 at main",
+      "url": "https://huggingface.co/davidheineman/rlve-archive-nano-omni-multiteacher-math-559ac32f9314/tree/main",
+      "snippet": "Like 0 rlve scratch-archive Model card FilesFiles and versions xet Community Copy to bucket new main rlve-archive-nano-omni-multiteacher-math-559ac32f9314 204 MB Ctrl+K Ctrl+K 1 contributor History:3 commits davidheineman Add checkpoint provenance 5d5dbde verifiedabout 23 hours ago .gitattributes Safe 1.52 kBinitial commitabout 23 hours ago ..."
+    },
+    {
+      "title": "GitHub - davidheineman/nano-omni: NanoGPT Multimodal Speedrun",
+      "url": "https://github.com/davidheineman/nano-omni",
+      "snippet": "NanoGPT Multimodal Speedrun. Contribute to davidheineman/nano-omni development by creating an account on GitHub."
+    },
+    {
+      "title": "nano-omni/records at main · davidheineman/nano-omni · GitHub",
+      "url": "https://github.com/davidheineman/nano-omni/tree/main/records",
+      "snippet": "NanoGPT Multimodal Speedrun. Contribute to davidheineman/nano-omni development by creating an account on GitHub."
+    },
+    {
+      "title": "David Heineman",
+      "url": "https://davidheineman.com/",
+      "snippet": "I&#x27;ve developed new and efficient tools for measuring model behavior [4, 5], and built receipes for fully-open language models [6, 7]. Recently, I&#x27;ve been thinking about how methods from pretraining can help us build vision-language, speech-language and reasoning models."
+    }
+  ]
+}

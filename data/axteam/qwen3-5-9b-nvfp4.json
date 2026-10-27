@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "axteam/Qwen3.5-9B-NVFP4",
+  "slug": "axteam-qwen3-5-9b-nvfp4",
+  "author": "axteam",
+  "url": "https://huggingface.co/axteam/Qwen3.5-9B-NVFP4",
+  "created_at": "2026-10-27T09:02:23.000Z",
+  "updated_at": "2026-10-27T09:06:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen",
+    "compressed-tensors",
+    "vllm",
+    "quantized",
+    "conversational",
+    "multimodal",
+    "nvfp4",
+    "fp4",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:quantized:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 11698111718,
+  "storage_human": "11.7 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AxionML/Qwen3.5-9B-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/AxionML/Qwen3.5-9B-NVFP4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Freenixi/AxionML-Qwen3.5-9B-NVFP4-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Freenixi/AxionML-Qwen3.5-9B-NVFP4-GGUF",
+      "snippet": "The mmproj-BF16.gguf file was sourced from unsloth/Qwen3.5-9B-GGUF and verified working in local testing Original source model: AxionML/Qwen3.5-9B-NVFP4 Base model family: Qwen/Qwen3.5-9B This 9B release follows the same general conversion idea as the earlier 27B NVFP4 GGUF build, but is aimed much more naturally at lower-VRAM RTX 50 series cards"
+    },
+    {
+      "title": "Qwen3.5 9B NVFP4 by AxionML — VRAM 9.4GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/AxionML%2FQwen3.5-9B-NVFP4,vbK10X0pLQ23kBT5MVW5X",
+      "snippet": "Qwen3.5 9B NVFP4 is an open-source 9b LLM by AxionML. VRAM 9.4GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Qwen3.5-9B-NVFP4 huggingface.co api & AxionML Qwen3.5-9B-NVFP4 github ...",
+      "url": "https://www.toolify.ai/ai-model/axionml-qwen3-5-9b-nvfp4",
+      "snippet": "Qwen3.5-9B-NVFP4 huggingface.co is an AI model on huggingface.co that provides Qwen3.5-9B-NVFP4&#x27;s model effect (), which can be used instantly with this AxionML Qwen3.5-9B-NVFP4 model. huggingface.co supports a free trial of the Qwen3.5-9B-NVFP4 model, and also provides paid use of the Qwen3.5-9B-NVFP4. Support call Qwen3.5-9B-NVFP4 model through api, including Node.js, Python, http."
+    },
+    {
+      "title": "Qwen3.5 9B NVFP4 by Qwen (Alibaba) — ThinkLLM",
+      "url": "https://thinkllm.dev/models/qwen3-5-9b-nvfp4",
+      "snippet": "A compact multimodal model that punches with efficiency — the NVFP4 quantization means it runs leaner on compatible hardware without dramatic quality loss. It handles both text and image inputs, making it versatile for vision-language tasks. The trade-off is that quantized weights can introduce subtle degradation on nuanced reasoning compared to full-precision counterparts."
+    }
+  ]
+}

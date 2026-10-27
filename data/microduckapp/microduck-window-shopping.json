@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "microduckapp/microduck-window-shopping",
+  "slug": "microduckapp-microduck-window-shopping",
+  "author": "microduckapp",
+  "url": "https://huggingface.co/microduckapp/microduck-window-shopping",
+  "created_at": "2026-10-27T01:22:53.000Z",
+  "updated_at": "2026-10-27T01:22:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "robotics",
+    "microduck-move",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1582662,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Buy Microduck: Small robot. Super smart.",
+      "url": "https://microducks.org/",
+      "snippet": "Buy Microduck, the 10 inch bipedal AI robot by Pollen Robotics × Hugging Face, shown by Jensen Huang at NVIDIA GTC Berlin. Official preorders from $399."
+    },
+    {
+      "title": "Microduck - A tiny biped robot you can teach new tricks | Pollen Robotics",
+      "url": "https://pollen-robotics.com/microduck/",
+      "snippet": "Microduck is a 25 cm biped robot with 15 motors, a camera, LiDAR and a grasping beak. Playable out of the box, and its open-source stack lets you train new behaviours in simulation and run them on the robot. Pre-order at $399."
+    },
+    {
+      "title": "Microduck Robot | Official MD-01 Store & Pre-order",
+      "url": "https://www.microduck.shop/",
+      "snippet": "MICRODUCK MD-01 Microduck MD-01 Robot Microduck, also known as Micro Duck, is a compact biped robot with open-source software. Start with the included controller, then explore coding and simulation."
+    },
+    {
+      "title": "GitHub - pollen-robotics/microduck: A Tiny biped duck robot",
+      "url": "https://github.com/pollen-robotics/microduck",
+      "snippet": "A Tiny biped duck robot 🦆. Contribute to pollen-robotics/microduck development by creating an account on GitHub."
+    },
+    {
+      "title": "microduckapp (MicroDuck) - Hugging Face",
+      "url": "https://huggingface.co/microduckapp",
+      "snippet": "microduckapp/microduck-midnight-snack Robotics •Updated 22 minutes ago View 16 models"
+    }
+  ]
+}

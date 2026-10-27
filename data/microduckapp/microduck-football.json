@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "microduckapp/microduck-football",
+  "slug": "microduckapp-microduck-football",
+  "author": "microduckapp",
+  "url": "https://huggingface.co/microduckapp/microduck-football",
+  "created_at": "2026-10-27T01:42:10.000Z",
+  "updated_at": "2026-10-27T01:42:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "robotics",
+    "microduck-move",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1554709,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - 00make/microduck-arena: Microduck Arena — 3v3 reinforcement ...",
+      "url": "https://github.com/00make/microduck-arena",
+      "snippet": "Microduck Arena 3v3 reinforcement-learning football, fully in your browser. ⭐ If you like this project, please give it a star — it means the world!"
+    },
+    {
+      "title": "microduckapp/microduck-dream-kicks · Hugging Face",
+      "url": "https://huggingface.co/microduckapp/microduck-dream-kicks",
+      "snippet": "Dozes off and dreams of football: it twists and pivots on the spot, dodging dream defenders, then sighs back to sleep. A 10.8-second move for the Microduck robot, from the MicroDuck app ..."
+    },
+    {
+      "title": "Microduck Arena",
+      "url": "https://microduck-arena.com/",
+      "snippet": "3v3 reinforcement-learning football in your browser — MuJoCo WASM physics, ONNX neural policies, WebRTC P2P multiplayer. Zero backend."
+    },
+    {
+      "title": "MicroDuck Football — Lake House Robot Soccer | FPVSIM",
+      "url": "https://fpvsim.com/sim-duck",
+      "snippet": "MicroDuck Football Robot-duck soccer in Lake House. Walk, roll, and kick with friends on Blue or Orange. Pick a name to join the game."
+    },
+    {
+      "title": "Hugging Face Unveils Microduck: A $399 Open-Source 25 cm Biped You ...",
+      "url": "https://www.marktechpost.com/2026/08/28/pollen-robotics-hugging-face-microduck-399-open-source-rl-biped-robot/",
+      "snippet": "Pollen Robotics and Hugging Face launch Microduck, a $399 open-source 25 cm biped trained with reinforcement learning in MuJoCo."
+    }
+  ]
+}

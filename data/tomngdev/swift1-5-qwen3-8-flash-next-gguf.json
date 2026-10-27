@@ -23,12 +23,12 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 463,
+  "downloads_30d": 470,
   "trending_score": 0,
   "parameters": 179551050368,
   "parameters_human": "179.55B",
-  "storage_bytes": 159462557600,
-  "storage_human": "159.5 GB",
+  "storage_bytes": 271343794496,
+  "storage_human": "271.3 GB",
   "base_model": "ukisai/Swift1.5-Qwen3.8-Flash-Next",
   "formats": [
     "gguf"

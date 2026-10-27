@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "yolkarian/vla_jepa_pen_in_bowl_wrist",
+  "slug": "yolkarian-vla_jepa_pen_in_bowl_wrist",
+  "author": "yolkarian",
+  "url": "https://huggingface.co/yolkarian/vla_jepa_pen_in_bowl_wrist",
+  "created_at": "2026-10-27T08:47:38.000Z",
+  "updated_at": "2026-10-27T08:52:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "vla_jepa",
+    "world-model",
+    "so101",
+    "wrist-camera",
+    "pick-and-place",
+    "dataset:fouad1233/so101_pen_in_bowl_wrist",
+    "base_model:lerobot/VLA-JEPA-SimplerEnv",
+    "base_model:finetune:lerobot/VLA-JEPA-SimplerEnv",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2770329478,
+  "parameters_human": "2.77B",
+  "storage_bytes": 6174539848,
+  "storage_human": "6.2 GB",
+  "base_model": "lerobot/VLA-JEPA-SimplerEnv",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2602.10098] VLA-JEPA: Enhancing Vision-Language-Action Model with ...",
+      "url": "https://arxiv.org/abs/2602.10098",
+      "snippet": "Pretraining Vision-Language-Action (VLA) policies on internet-scale video is appealing, yet current latent-action objectives often learn the wrong thing: they remain anchored to pixel variation rather than action-relevant state transitions, making them vulnerable to appearance bias, nuisance motion, and information leakage. We introduce VLA-JEPA, a JEPA-style pretraining framework that ..."
+    },
+    {
+      "title": "fouad1233/vla_jepa_pen_in_bowl_wrist at main - Hugging Face",
+      "url": "https://huggingface.co/fouad1233/vla_jepa_pen_in_bowl_wrist/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ginwind/VLA-JEPA: [ECCV 2026] VLA-JEPA: Enhancing Vision ...",
+      "url": "https://github.com/ginwind/VLA-JEPA",
+      "snippet": "VLA-JEPA&#x27;s original code and contributions are licensed under the Apache License 2.0. Portions derived from starVLA and other third-party projects remain subject to their original licenses and attribution requirements."
+    },
+    {
+      "title": "VLA-JEPA: Enhancing Vision-Language-Action Model with Latent World Model",
+      "url": "https://arxiv.org/pdf/2602.10098",
+      "snippet": "In contrast, VLA-JEPA effectively mitigates these issues and enables the model to capture genuine inter-frame dynamics. As a result, VLA-JEPA achieves competitive performance in both simulation benchmarks and real-world robotic experiments."
+    },
+    {
+      "title": "VLA-JEPA: Enhancing Vision-Language-Action Model with Latent World Model",
+      "url": "https://arxivsignals.io/papers/2602.10098",
+      "snippet": "This yields a simple two-stage recipe -- JEPA pretraining followed by action-head fine-tuning -- without the multi-stage complexity of prior latent-action pipelines. Experiments on LIBERO, LIBERO-Plus, SimplerEnv and real-world manipulation tasks show that VLA-JEPA achieves consistent gains in generalization and robustness over existing methods."
+    }
+  ]
+}

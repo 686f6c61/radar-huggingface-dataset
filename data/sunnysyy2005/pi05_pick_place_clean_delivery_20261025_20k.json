@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "SUNNYsyy2005/pi05_pick_place_clean_delivery_20261025_20k",
+  "slug": "sunnysyy2005-pi05_pick_place_clean_delivery_20261025_20k",
+  "author": "SUNNYsyy2005",
+  "url": "https://huggingface.co/SUNNYsyy2005/pi05_pick_place_clean_delivery_20261025_20k",
+  "created_at": "2026-10-27T02:07:15.000Z",
+  "updated_at": "2026-10-27T03:03:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "piper",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "piper",
+    "robotics",
+    "openpi",
+    "pi0.5",
+    "bimanual",
+    "delivery",
+    "rtc",
+    "en",
+    "dataset:SUNNYsyy2005/pick_place_clean_delivery_20261025",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6499176351,
+  "storage_human": "6.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LostGem.TV - Free Premium Lost Gem Videos!",
+      "url": "https://lostgem.tv/",
+      "snippet": "LostGem.TV - Free Premium Lost Gem Videos! Watch exclusive content with free registration."
+    },
+    {
+      "title": "lost gem +tv full videos — Yandex: found 4 thousand results",
+      "url": "https://tv.yandex.com/search?text=lost+gem+%2Btv+full+videos&msp=1",
+      "snippet": "Here's the 7-24-79 pilot for The TV Show, a sketch comedy program written by Harry Shearer, Martin Mull, Billy Crystal, Christopher …"
+    },
+    {
+      "title": "lost gem tv — Yandex: found 229 thousand results",
+      "url": "https://tv.yandex.com/search?text=lost+gem+tv",
+      "snippet": "Here's the 7-24-79 pilot for The TV Show, a sketch comedy program written by Harry Shearer, Martin Mull, Billy Crystal, Christopher …"
+    },
+    {
+      "title": "LostGem.TV (@lostgem.tv) - Urlebird",
+      "url": "https://urlebird.com/user/lostgem.tv/",
+      "snippet": "LostGem.TV is a TikTok nano influencer with 43 videos and a very low engagement rate 0.5%. They post 0 videos in month and earn …"
+    },
+    {
+      "title": "LostGem.TV @LostGemTV - Twitter Profile | TwStalker",
+      "url": "https://mobile.twstalker.com/LostGemTV",
+      "snippet": "LostGem.TV @LostGemTV https://t.co/MPQHKyCDJV offers free access to Lost Gem Videos from TikTok, Reddit, and Instagram. …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "trubisky/Swift-1.5-Qwen-3.8-Flash-Next-Heretic-UD-IQ4_XS",
+  "slug": "trubisky-swift-1-5-qwen-3-8-flash-next-heretic-ud-iq4_xs",
+  "author": "trubisky",
+  "url": "https://huggingface.co/trubisky/Swift-1.5-Qwen-3.8-Flash-Next-Heretic-UD-IQ4_XS",
+  "created_at": "2026-10-21T16:16:34.000Z",
+  "updated_at": "2026-10-27T06:15:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:ukisai/Swift-1.5-Qwen3.8-Flash-Next-GGUF",
+    "base_model:quantized:ukisai/Swift-1.5-Qwen3.8-Flash-Next-GGUF",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 13,
+  "downloads_30d": 1655,
+  "trending_score": 13,
+  "parameters": 176943899520,
+  "parameters_human": "176.94B",
+  "storage_bytes": 96866004060,
+  "storage_human": "96.9 GB",
+  "base_model": "ukisai/Swift-1.5-Qwen3.8-Flash-Next-GGUF, ukisai/Swift1.5-Qwen3.8-Flash-Next",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Swift-1.5-Qwen-3.8-Flash-Next-Heretic-UD-IQ4_XS - Hugging Face",
+      "url": "https://huggingface.co/trubisky/Swift-1.5-Qwen-3.8-Flash-Next-Heretic-UD-IQ4_XS",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Swift-1.5-Qwen-3.8-Flash-Next-Heretic-UD-IQ4_XS",
+      "url": "https://huggingface.co/trubisky/Swift-1.5-Qwen-3.8-Flash-Next-Heretic-UD-IQ4_XS/discussions",
+      "snippet": "Instructions to use trubisky/Swift-1.5-Qwen-3.8-Flash-Next-Heretic-UD-IQ4_XS with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Uncensored Swift 1.5 Qwen 3.8 Flash Next… · AGI Hunt",
+      "url": "https://agihunt.info/en/p/1a165a2efc06be402ed91213a43",
+      "snippet": "User trubisky released a &#x27;Heretic&#x27; (refusals-removed) Unsloth Dynamic IQ4XS quant of Swift 1.5 Qwen 3.8 Flash Next in 4-bit GGUF."
+    },
+    {
+      "title": "Swift 1.5 Qwen3.8 Flash Next - GGUF Model (5 parts)",
+      "url": "https://local-ai-zone.github.io/models/swift-1-5-qwen3-8-flash-next.html",
+      "snippet": "Download Swift 1.5 Qwen3.8 Flash Next GGUF model. 39.0 GB, 11,915 downloads, 30 likes. Split into 5 parts."
+    },
+    {
+      "title": "Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-abliterated",
+      "url": "https://www.abliteratedmodels.org/swift-1.5-qwen3.8-flash-next-gsq-rco-abliterated/",
+      "snippet": "From the publisher&#x27;s model card \" The refusal direction removed from UkisAI&#x27;s reasoning-efficient derivative of Qwen3.8-Flash-Next. 144 tensors across all 48 layers swap in ready-made abliterated weights by byte-level transplant — every GSQ value and scale is left untouched, the file size moves by less than 0.2%, and the reasoning ..."
+    }
+  ]
+}

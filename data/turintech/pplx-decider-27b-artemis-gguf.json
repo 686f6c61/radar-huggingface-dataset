@@ -5,7 +5,7 @@
   "author": "turintech",
   "url": "https://huggingface.co/turintech/pplx-decider-27B-Artemis-GGUF",
   "created_at": "2026-10-12T11:46:29.000Z",
-  "updated_at": "2026-10-26T00:09:16.000Z",
+  "updated_at": "2026-10-26T09:23:51.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -29,7 +29,7 @@
     "conversational"
   ],
   "likes": 9,
-  "downloads_30d": 1318,
+  "downloads_30d": 2486,
   "trending_score": 0,
   "parameters": 26895998464,
   "parameters_human": "26.90B",

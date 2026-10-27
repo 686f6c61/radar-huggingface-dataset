@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "zazo301/brain",
+  "slug": "zazo301-brain",
+  "author": "zazo301",
+  "url": "https://huggingface.co/zazo301/brain",
+  "created_at": "2026-10-27T02:06:09.000Z",
+  "updated_at": "2026-10-27T02:13:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 73756648,
+  "storage_human": "74 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 993 AI models across 710 benchmarks, with 229 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "The best open-source AI models: All your free-to-use options ... - ZDNET",
+      "url": "https://www.zdnet.com/article/the-best-open-source-ai-models-all-your-free-to-use-options-explained/",
+      "snippet": "Here are the best open-source and free-to-use AI models for text, images, and audio, organized by type, application, and licensing considerations."
+    },
+    {
+      "title": "zazo301 - YouTube",
+      "url": "https://www.youtube.com/@zazo301",
+      "snippet": "Share your videos with friends, family, and the world"
+    },
+    {
+      "title": "World model (artificial intelligence) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/World_model_(artificial_intelligence)",
+      "snippet": "World model (artificial intelligence) A world model in artificial intelligence is a machine learning system that builds an internal representation of an environment. The model predicts how that environment changes over time in response to actions."
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

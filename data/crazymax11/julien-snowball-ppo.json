@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "crazymax11/julien-snowball-ppo",
+  "slug": "crazymax11-julien-snowball-ppo",
+  "author": "crazymax11",
+  "url": "https://huggingface.co/crazymax11/julien-snowball-ppo",
+  "created_at": "2026-10-27T08:43:22.000Z",
+  "updated_at": "2026-10-27T08:43:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "SnowballTarget",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-SnowballTarget",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25724418,
+  "storage_human": "26 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Adilbai/ppo-SnowballTarget · Hugging Face",
+      "url": "https://huggingface.co/Adilbai/ppo-SnowballTarget",
+      "snippet": "This model is a Proximal Policy Optimization (PPO) agent trained to play the SnowballTarget environment from Unity ML-Agents. The agent, named Julien the Bear 🐻, learns to accurately throw snowballs at spawning targets to maximize rewards."
+    },
+    {
+      "title": "JackForAI/ppo-SnowballTarget · Hugging Face",
+      "url": "https://huggingface.co/JackForAI/ppo-SnowballTarget",
+      "snippet": "ppo Agent playing SnowballTarget This is a trained model of a ppo agent playing SnowballTarget using the Unity ML-Agents Library."
+    },
+    {
+      "title": "GitHub - huggingface/Snowball-Target: Snowball Target is a Unity ML ...",
+      "url": "https://github.com/huggingface/Snowball-Target",
+      "snippet": "Snowball Target ⛄ SnowballTarget is an environment we created at Hugging Face using assets from Kay Lousberg where you train an agent called Julien the bear 🐻 that learns to hit targets with snowballs. You can learn to train this agent using Deep Reinforcement Learning 👉 with this tutorial."
+    },
+    {
+      "title": "ppo-SnowballTarget: Model Details, Context & Pricing | Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/hf-ditdahditdit-ppo-snowballtarget",
+      "snippet": "ppo-SnowballTarget AI model directory entry."
+    },
+    {
+      "title": "Open Source AI Models — The open-source AI model directory",
+      "url": "https://opensourceaimodels.net/",
+      "snippet": "Open source AI models compared by license, parameters, benchmarks, VRAM and inference pricing for Llama, Mistral, Qwen, DeepSeek, Gemma, Phi and more. Pick the right open-weights model for your use case."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "zxyty/physicalai-birefnet",
+  "slug": "zxyty-physicalai-birefnet",
+  "author": "zxyty",
+  "url": "https://huggingface.co/zxyty/physicalai-birefnet",
+  "created_at": "2026-10-27T01:33:05.000Z",
+  "updated_at": "2026-10-27T01:33:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "birefnet",
+  "languages": [],
+  "tags": [
+    "birefnet",
+    "safetensors",
+    "image-segmentation",
+    "background-removal",
+    "mask-generation",
+    "Dichotomous Image Segmentation",
+    "Camouflaged Object Detection",
+    "Salient Object Detection",
+    "pytorch_model_hub_mixin",
+    "model_hub_mixin",
+    "transformers",
+    "custom_code",
+    "arxiv:2401.03407",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 220700242,
+  "parameters_human": "220.7M",
+  "storage_bytes": 444473596,
+  "storage_human": "444 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sprited-ai/birefnet: The complete BiRefNet on Replicate - GitHub",
+      "url": "https://github.com/sprited-ai/birefnet",
+      "snippet": "The complete BiRefNet on Replicate. Replicate&#x27;s existing BiRefNet endpoint serves only the legacy general weights with a single resolution knob — this brings the full model zoo, real output controls, and the ToonOut anime fine-tune behind one endpoint."
+    },
+    {
+      "title": "zxyty/physicalai-qwen3-vl-8b-instruct · Hugging Face",
+      "url": "https://huggingface.co/zxyty/physicalai-qwen3-vl-8b-instruct",
+      "snippet": "Instructions to use zxyty/physicalai-qwen3-vl-8b-instruct with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use zxyty/physicalai-qwen3-vl-8b-instruct with Transformers:"
+    },
+    {
+      "title": "ZhengPeng7/BiRefNet · Hugging Face",
+      "url": "https://huggingface.co/ZhengPeng7/BiRefNet",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ZhengPeng7/BiRefNet: [CAAI AIR&#x27;24] Bilateral Reference for ...",
+      "url": "https://github.com/ZhengPeng7/BiRefNet",
+      "snippet": "Oct 6, 2024: We uploaded the BiRefNet-matting model for general trimap-free matting use. Sep 24, 2024: We uploaded the BiRefNet_lite-2K model, which takes inputs in a much higher resolution (2560x1440). We also added the notebook for inference on videos."
+    },
+    {
+      "title": "Physical artificial intelligence - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Physical_artificial_intelligence",
+      "snippet": "Physical artificial intelligence or physical AI refers to artificial intelligence (AI) systems that perceive, reason about and act within the physical world, specially at the human scale."
+    }
+  ]
+}

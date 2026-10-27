@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "zxyty/physicalai-ltx-2.3-ic-lora-union-control",
+  "slug": "zxyty-physicalai-ltx-2-3-ic-lora-union-control",
+  "author": "zxyty",
+  "url": "https://huggingface.co/zxyty/physicalai-ltx-2.3-ic-lora-union-control",
+  "created_at": "2026-10-27T01:33:08.000Z",
+  "updated_at": "2026-10-27T01:33:10.000Z",
+  "license": "ltx-2-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "any-to-any",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "ltx-video",
+    "image-to-video",
+    "text-to-video",
+    "any-to-any",
+    "en",
+    "dataset:Lightricks/Canny-Control-Dataset",
+    "arxiv:2601.03233",
+    "arxiv:2603.24793",
+    "base_model:Lightricks/LTX-2.3",
+    "base_model:finetune:Lightricks/LTX-2.3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 654465352,
+  "storage_human": "654 MB",
+  "base_model": "Lightricks/LTX-2.3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Union Control IC-LoRA | LTX Documentation",
+      "url": "https://docs.ltx.io/open-source-model/feature-guides/structural-control/union-control",
+      "snippet": "Guide LTX-2.5 video generation with depth, canny, or pose extracted from a reference video via the Union Control IC-LoRA."
+    },
+    {
+      "title": "IC-LoRA | LTX Documentation",
+      "url": "https://docs.ltx.io/open-source-model/usage-guides/ic-lo-ra",
+      "snippet": "Run LTX IC-LoRA adapters on LTX-2.5 in ComfyUI — reference-conditioned video-to-video for control, restoration, VFX, and creative transforms."
+    },
+    {
+      "title": "yrrhall/LTX-2.3-22b-IC-LoRA-Union-Control at main - Hugging Face",
+      "url": "https://huggingface.co/yrrhall/LTX-2.3-22b-IC-LoRA-Union-Control/tree/main",
+      "snippet": "Community Copy to bucket new main LTX-2.3-22b-IC-LoRA-Union-Control 654 MB Ctrl+K Ctrl+K"
+    },
+    {
+      "title": "LTX-2.3 22B IC-LoRA Union Control - Models",
+      "url": "https://www.modelscope.cn/models/Lightricks/LTX-2.3-22b-IC-LoRA-Union-Control",
+      "snippet": "LTX-2.3 22B IC-LoRA Union Control This is a unified control IC-LoRA trained on top of LTX-2.3-22b, enabling multiple control signals to be used for video generation from text and reference frames."
+    },
+    {
+      "title": "yrrhall/LTX-2.3-22b-IC-LoRA-Union-Control · Hugging Face",
+      "url": "https://huggingface.co/yrrhall/LTX-2.3-22b-IC-LoRA-Union-Control",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

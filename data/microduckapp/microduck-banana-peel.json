@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "microduckapp/microduck-banana-peel",
+  "slug": "microduckapp-microduck-banana-peel",
+  "author": "microduckapp",
+  "url": "https://huggingface.co/microduckapp/microduck-banana-peel",
+  "created_at": "2026-10-27T01:29:42.000Z",
+  "updated_at": "2026-10-27T01:29:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "robotics",
+    "microduck-move",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1553656,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What Is Nano Banana? Google&#x27;s Viral AI Image Model That Took Over the ...",
+      "url": "https://aitoolsrecap.com/Blog/what-is-nano-banana-google-ai-image-model-explained-2026",
+      "snippet": "How to use Nano Banana right now The simplest path is the Gemini app. Open it, select the banana emoji Create images tool from the menu, and start prompting. Free users get the Nano Banana 2 (Fast) model. Google AI Plus, Pro, and Ultra subscribers get higher quotas and access to Pro mode, which uses Nano Banana Pro for maximum quality."
+    },
+    {
+      "title": "Hugging Face&#x27;s Pollen Robotics Releases Small, Cute & Open-Source ...",
+      "url": "https://theaiinsider.tech/2026/08/28/hugging-faces-pollen-robotics-releases-small-cute-open-source-microduck-robot/",
+      "snippet": "Hugging Face&#x27;s Pollen Robotics has introduced Microduck, a small biped robot designed as an open development platform for experimenting with physical AI, reinforcement learning and transferring robot behaviors from simulation into real hardware."
+    },
+    {
+      "title": "Hugging Face Unveils Microduck: A $399 Open-Source 25 cm Biped You ...",
+      "url": "https://www.marktechpost.com/2026/08/28/pollen-robotics-hugging-face-microduck-399-open-source-rl-biped-robot/",
+      "snippet": "Pollen Robotics and Hugging Face launch Microduck, a $399 open-source 25 cm biped trained with reinforcement learning in MuJoCo."
+    },
+    {
+      "title": "Best AI Image Generators of 2025 - CNET",
+      "url": "https://www.cnet.com/tech/services-and-software/best-ai-image-generators/",
+      "snippet": "Google&#x27;s Nano Banana 2 is our best overall AI image model. Google&#x27;s models took the AI industry by storm in 2025. The original model was praised by fans for its ability to maintain character ..."
+    },
+    {
+      "title": "Gemini 3 Pro Image - Nano Banana Pro — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini-image/pro/",
+      "snippet": "Benchmarks Nano Banana Pro (Gemini 3 Pro Image) is an image generation and editing model."
+    }
+  ]
+}

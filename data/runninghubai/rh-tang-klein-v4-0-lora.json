@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-tang-klein-v4.0-lora",
+  "slug": "runninghubai-rh-tang-klein-v4-0-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-tang-klein-v4.0-lora",
+  "created_at": "2026-10-27T01:54:02.000Z",
+  "updated_at": "2026-10-27T01:55:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 351612736,
+  "storage_human": "352 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tang-总平面-klein-v4.0 - RunningHub Stable Diffusion & Flux LoRA",
+      "url": "https://www.runninghub.ai/model/public/2046223602781003778",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "RunningHubAI/rh-4.0-lora · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-4.0-lora",
+      "snippet": "RunningHubAI / rh-4.0-lora Like 0 Image-Text-to-Image comfyui lora Model card FilesFiles and versions xet Community Copy to bucket new rh-4.0-lora Description About this model Files License Training at RunningHub"
+    },
+    {
+      "title": "README_cn.md · RunningHubAI/rh-tang-klein-v4.0-lora at main",
+      "url": "https://huggingface.co/RunningHubAI/rh-tang-klein-v4.0-lora/blob/main/README_cn.md",
+      "snippet": "rh-tang-klein-v4.-lora 基础信息 Description ... 模型介绍 AI生成城市设计平面 需要lora请加Q 181085794 这个4.0版本不需要提示词 本仓库提供 rh-tang-klein-v4.-lora 的模型文件，可在 RunningHub 在线加载。"
+    },
+    {
+      "title": "tang-总平面-klein-v4.0 - LoRA Stable Diffusion & Flux RunningHub",
+      "url": "https://www.runninghub.ai/fr/model/public/2046223602781003778",
+      "snippet": "Découvrez des modèles d&#x27;IA générative et LoRA pour l&#x27;entraînement personnalisé de modèles, des styles créatifs et la création de contenu par IA. Créez et personnalisez vos propres modèles d&#x27;IA avec RunningHub Models."
+    },
+    {
+      "title": "tang-总平面-klein-v4.0 - RunningHub Stable Diffusion & Flux LoRA",
+      "url": "https://www.runninghub.cn/model/public/2046223602781003778",
+      "snippet": "探索热门 AI 生成模型与 LoRA 模型，支持个性化模型训练、风格创作与 AI 内容生成，轻松打造属于你的创意模型。"
+    }
+  ]
+}

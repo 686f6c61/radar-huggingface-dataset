@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mlwiseyak/omnivoice_emotional_v2",
+  "slug": "mlwiseyak-omnivoice_emotional_v2",
+  "author": "mlwiseyak",
+  "url": "https://huggingface.co/mlwiseyak/omnivoice_emotional_v2",
+  "created_at": "2026-10-27T09:07:33.000Z",
+  "updated_at": "2026-10-27T09:09:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "omnivoice",
+  "languages": [
+    "ne",
+    "new"
+  ],
+  "tags": [
+    "omnivoice",
+    "safetensors",
+    "tts",
+    "text-to-speech",
+    "speech",
+    "audio",
+    "flow-matching",
+    "nepali",
+    "nepali-tts",
+    "emotional-tts",
+    "voice-cloning",
+    "ne",
+    "new",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 813977841,
+  "parameters_human": "814.0M",
+  "storage_bytes": 2847953650,
+  "storage_human": "2.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlwiseyak/omnivoice-nepali-tts-v2 · Hugging Face",
+      "url": "https://huggingface.co/mlwiseyak/omnivoice-nepali-tts-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mlwiseyak/omnivoice-nepali-tts-v2 at main - Hugging Face",
+      "url": "https://huggingface.co/mlwiseyak/omnivoice-nepali-tts-v2/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Omnivoice Nepali Tts V2 - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/mlwiseyak/omnivoice-nepali-tts-v2",
+      "snippet": "Registry entry for model Omnivoice Nepali Tts V2; source metadata pending."
+    },
+    {
+      "title": "OmniVoice: Free AI Voice Generator & Voice Cloning",
+      "url": "https://omnivoice.app/",
+      "snippet": "OmniVoice is a free, open-source AI voice generator that supports 646 languages. It converts text to natural-sounding speech, clones voices from a short audio sample (zero-shot Voice Cloning), or creates a voice from a text description alone (Voice Design). Developed by the k2-fsa research team and trained on 581,000 hours of open-source speech ..."
+    },
+    {
+      "title": "GitHub - k2-fsa/OmniVoice: High-Quality Voice Cloning TTS for 600 ...",
+      "url": "https://github.com/k2-fsa/OmniVoice/",
+      "snippet": "OmniVoice 🌍 OmniVoice is a state-of-the-art massively multilingual zero-shot text-to-speech (TTS) model supporting over 600 languages. Built on a novel diffusion language model-style architecture, it generates high-quality speech with superior inference speed, supporting voice cloning and voice design."
+    }
+  ]
+}

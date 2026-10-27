@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "justinwoodring/badqubits-seed-coder-8b-ft",
+  "slug": "justinwoodring-badqubits-seed-coder-8b-ft",
+  "author": "justinwoodring",
+  "url": "https://huggingface.co/justinwoodring/badqubits-seed-coder-8b-ft",
+  "created_at": "2026-10-27T08:23:07.000Z",
+  "updated_at": "2026-10-27T08:23:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth/Seed-Coder-8B-Instruct-unsloth-bnb-4bit",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:unsloth/Seed-Coder-8B-Instruct-unsloth-bnb-4bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 179730161,
+  "storage_human": "180 MB",
+  "base_model": "unsloth/Seed-Coder-8B-Instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "justinwoodring (Justin Woodring) - Hugging Face",
+      "url": "https://huggingface.co/justinwoodring/models",
+      "snippet": "justinwoodring/badqubits-seed-coder-8b-ft Text Generation •Updated about 4 hours ago• 1"
+    },
+    {
+      "title": "justinwoodring/badqubits-llama31-8b-ft · Hugging Face",
+      "url": "https://huggingface.co/justinwoodring/badqubits-llama31-8b-ft",
+      "snippet": "justinwoodring / badqubits-llama31-8b-ft Like 0 Text Generation PEFT Safetensors Transformers lora sft trl conversational arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Seed-Coder 8B Instruct — 8.25B Dense LLM | FitMyLLM",
+      "url": "https://www.fitmyllm.com/model/seed-coder-8b-instruct",
+      "snippet": "Seed-Coder 8B Instruct: 8.25B parameters, 32K context, coding. 10 benchmarks, 6 quantizations. VRAM requirements, speed estimates, and Ollama commands."
+    },
+    {
+      "title": "Seed-Coder - ByteDance - LLM Database",
+      "url": "https://llmdb.com/models/seed-coder",
+      "snippet": "Seed-Coder is ByteDance Seed&#x27;s 8B coding language-model family, released on May 8 under MIT. Its base, instruction, and reasoning checkpoints share a model-centric data pipeline in which language models curate code corpora rather than relying solely on handcrafted filters. Base and instruction models support 32K context, while the reinforcement-trained reasoning variant supports 64K; this ..."
+    },
+    {
+      "title": "Seed Coder 8b Instruct - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/seed-coder-8b-instruct.html",
+      "snippet": "Download Seed Coder 8b Instruct GGUF model. 16.8 GB, 2,320 downloads, 12 likes."
+    }
+  ]
+}

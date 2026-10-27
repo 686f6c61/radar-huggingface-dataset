@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "nesoai-qa-org/amazon-chronos-t5-small",
+  "slug": "nesoai-qa-org-amazon-chronos-t5-small",
+  "author": "nesoai-qa-org",
+  "url": "https://huggingface.co/nesoai-qa-org/amazon-chronos-t5-small",
+  "created_at": "2026-10-27T09:03:36.000Z",
+  "updated_at": "2026-10-27T09:03:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "time-series-forecasting",
+  "library": "chronos-forecasting",
+  "languages": [],
+  "tags": [
+    "chronos-forecasting",
+    "safetensors",
+    "t5",
+    "time series",
+    "forecasting",
+    "pretrained models",
+    "foundation models",
+    "time series foundation models",
+    "time-series",
+    "time-series-forecasting",
+    "arxiv:2403.07815",
+    "arxiv:1910.10683",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 46154240,
+  "parameters_human": "46.2M",
+  "storage_bytes": 184632480,
+  "storage_human": "185 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "amazon/chronos-t5-small · Hugging Face",
+      "url": "https://huggingface.co/amazon/chronos-t5-small",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - amazon-science/chronos-forecasting: Chronos: Pretrained Models ...",
+      "url": "https://github.com/amazon-science/chronos-forecasting",
+      "snippet": "Chronos-2 achieves the best performance on fev-bench, GIFT-Eval and Chronos Benchmark II amongst pretrained models. Check out this notebook to get started with Chronos-2. 12 Dec 2024: 📊 We released fev, a lightweight package for benchmarking time series forecasting models based on the Hugging Face datasets library."
+    },
+    {
+      "title": "amazon/chronos-t5-small - Hugging Face Hub Package Security ... - Socket",
+      "url": "https://socket.dev/huggingface/package/amazon/chronos-t5-small",
+      "snippet": "Chronos-T5 (Small) 🚀 Update Feb 14, 2025: Chronos-Bolt & original Chronos models are now available on Amazon SageMaker JumpStart! Check out the tutorial notebook to learn how to deploy Chronos endpoints for production use in a few lines of code."
+    },
+    {
+      "title": "Chronos — Foundation Models for Time Series",
+      "url": "https://chronos-ts.ai/",
+      "snippet": "Chronos is a family of pretrained models for time-series forecasting. Across the original T5 Chronos, the faster Bolt variants, and the Chronos-2 generation, the family has now crossed a billion cumulative downloads on Hugging Face."
+    },
+    {
+      "title": "autogluon/chronos-t5-small · Hugging Face",
+      "url": "https://huggingface.co/autogluon/chronos-t5-small",
+      "snippet": "Chronos-T5 (Small) 🚀 Update Feb 14, 2025: Chronos-Bolt & original Chronos models are now available on Amazon SageMaker JumpStart! Check out the tutorial notebook to learn how to deploy Chronos endpoints for production use in a few lines of code. 🚀 Update Nov 27, 2024: We have released Chronos-Bolt⚡️ models that are more accurate (5% lower error), up to 250 times faster and 20 times ..."
+    }
+  ]
+}

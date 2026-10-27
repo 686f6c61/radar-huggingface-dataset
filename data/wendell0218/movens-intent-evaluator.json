@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "wendell0218/Movens-Intent-Evaluator",
+  "slug": "wendell0218-movens-intent-evaluator",
+  "author": "wendell0218",
+  "url": "https://huggingface.co/wendell0218/Movens-Intent-Evaluator",
+  "created_at": "2026-10-27T01:19:51.000Z",
+  "updated_at": "2026-10-27T01:20:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "movens-intent",
+    "motion-evaluation",
+    "humanoid-motion",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 83799473,
+  "storage_human": "84 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wendell0218/Movens-Intent · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/wendell0218/Movens-Intent",
+      "snippet": "Datasets: wendell0218 / Movens-Intent Like 0 Tasks: Text-to-Video Video-to-Video Modalities: Audio Tabular Text + 1 Formats: parquet Languages: English Size: 1K - 10K Tags: benchmark text audio video robotics humanoid-motion + 2 Libraries: Datasets Dask Polars + 1 License: other Dataset card Data Studio FilesFiles and versions xet Community 1 Dataset Viewer Auto-converted to Parquet API Embed ..."
+    },
+    {
+      "title": "wendell0218/Movens-Viewer at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/wendell0218/Movens-Viewer/tree/main",
+      "snippet": "Datasets: wendell0218 / Movens-Viewer Like 0 Languages: English Tags: robotics motion visualization Dataset card FilesFiles and versions xet Community main Movens-Viewer 4.87 GB Ctrl+K Ctrl+K 1 contributor History:32 commits wendell0218 Remove publication connectivity probes 145cce8 verified2 days ago casesComplete 1000-case Movens viewer assets (part 10)2 days ago .gitattributes Safe 2.5 ..."
+    },
+    {
+      "title": "wendell0218 (Wendong Bu) · GitHub",
+      "url": "https://github.com/wendell0218",
+      "snippet": "️🏖️🍟. wendell0218 has 14 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Movens Viewer - Physical AI Dataset | Claru",
+      "url": "https://claru.ai/datasets/wendell0218-movens-viewer",
+      "snippet": "Browser-ready assets for an interactive motion viewer containing 1,000 cases with original videos, SMPL-X vertex sequences, retargeted G1 motion, and MuJoCo tracking telemetry."
+    },
+    {
+      "title": "GitHub - wendell0218/Awesome-RL-for-Video-Generation: A curated list of ...",
+      "url": "https://github.com/wendell0218/Awesome-RL-for-Video-Generation",
+      "snippet": "Welcome to the GitHub repository for Awesome-RL-for-Video-Generation! This repository serves as a curated collection of research, resources, and tools related to Reinforcement Learning (RL) for Video Generation. Our goal is to provide an up-to-date and comprehensive overview of RL techniques used in video generation, focusing on the latest advancements. We aim to bridge the gap between RL ..."
+    }
+  ]
+}

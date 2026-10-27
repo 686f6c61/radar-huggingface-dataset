@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "CodelenAI/CodelenAI",
+  "slug": "codelenai-codelenai",
+  "author": "CodelenAI",
+  "url": "https://huggingface.co/CodelenAI/CodelenAI",
+  "created_at": "2026-10-27T08:28:59.000Z",
+  "updated_at": "2026-10-27T08:28:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best AI for Coding 2026 - Top Coding Models - llm-stats.com",
+      "url": "https://llm-stats.com/leaderboards/best-ai-for-coding",
+      "snippet": "Compare the best AI for coding using live coding arena results, benchmark performance, and real generation examples for code generation, debugging, and software engineering."
+    },
+    {
+      "title": "Code.org is now CodeAI",
+      "url": "https://code.org/en-US/codeai",
+      "snippet": "Students are using AI every day without understanding it. CodeAI exists to close that gap. We build the technical education students need to understand, direct and question the AI shaping their world."
+    },
+    {
+      "title": "CodelensAI — ROI Dashboard for AI Coding Agents",
+      "url": "https://codelensai-dev.vercel.app/",
+      "snippet": "The open-source CLI dashboard that ties your AI agent token spend to actual git output. One command: npx codelens-ai."
+    },
+    {
+      "title": "Best AI Models for Coding Locally — 2026 Ranking",
+      "url": "https://www.aimadetools.com/blog/best-ai-models-for-coding-locally-2026/",
+      "snippet": "The best open-source AI models for local code generation, completion, and debugging. Tested on real tasks with hardware requirements and setup instructions."
+    },
+    {
+      "title": "Best AI for Coding September 2026: Top 10 Coding Models Ranked",
+      "url": "https://www.buildmvpfast.com/articles/best-llms-2026-guide/coding-ai",
+      "snippet": "Compare the 10 best AI coding models and LLMs for programming in September 2026. Claude Sonnet 5, Opus 5, GPT-6 Astra, GLM-5.2, DeepSeek V4-Pro, Kimi K2.7, and more ranked for real development work."
+    }
+  ]
+}

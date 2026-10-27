@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Arabian-Agent-Qwen3-0.6B-GGUF",
+  "slug": "mradermacher-arabian-agent-qwen3-0-6b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Arabian-Agent-Qwen3-0.6B-GGUF",
+  "created_at": "2026-10-27T08:30:48.000Z",
+  "updated_at": "2026-10-27T08:34:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3",
+    "arabic",
+    "function-calling",
+    "tool-use",
+    "agent",
+    "lora",
+    "ar",
+    "en",
+    "base_model:Kenvenx/Arabian-Agent-Qwen3-0.6B",
+    "base_model:adapter:Kenvenx/Arabian-Agent-Qwen3-0.6B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 5697962496,
+  "storage_human": "5.7 GB",
+  "base_model": "Kenvenx/Arabian-Agent-Qwen3-0.6B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/SML-model-Qwen3-0.6B-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/SML-model-Qwen3-0.6B-GGUF/tree/main",
+      "snippet": "mradermacher / SML-model-Qwen3-.6B-GGUF like 0 Transformers GGUF English conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen/Qwen3-0.6B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-0.6B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-0.6B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_0_6b",
+      "snippet": "Qwen3-0.6B State‑of‑the‑art large language model useful on a variety of language understanding and generation tasks. The Qwen3‑0.6B is a state‑of‑the‑art multilingual language model with 0.6 billion parameters, excelling in language understanding, generation, coding, and mathematics."
+    },
+    {
+      "title": "Qwen3-0.6B-GGUF Open-Source Large Language Model - Supports Multiple ...",
+      "url": "https://model.aibase.com/models/details/1924737565836185600",
+      "snippet": "Qwen3 is the latest version of the Tongyi Qianwen series of large language models, offering a range of dense and Mixture of Experts (MoE) models. Based on large-scale training, Qwen3 has achieved breakthrough progress in reasoning capabilities, instruction following, agent functionalities, and multilingual support."
+    },
+    {
+      "title": "Qwen3-0.6B-GGUF · Models",
+      "url": "https://www.modelscope.cn/models/unsloth/Qwen3-0.6B-GGUF/summary",
+      "snippet": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models. Built upon extensive training, Qwen3 delivers groundbreaking advancements in reasoning, instruction-following, agent capabilities, and multilingual support, with the following key features:"
+    }
+  ]
+}

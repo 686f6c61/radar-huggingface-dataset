@@ -5,7 +5,7 @@
   "author": "sergiopaniego",
   "url": "https://huggingface.co/sergiopaniego/Qwen3-1.7B-Wordle-SFT",
   "created_at": "2026-10-19T19:41:07.000Z",
-  "updated_at": "2026-10-23T22:43:32.000Z",
+  "updated_at": "2026-10-26T15:24:48.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 76,
+  "downloads_30d": 77,
   "trending_score": 0,
   "parameters": 1720574976,
   "parameters_human": "1.72B",

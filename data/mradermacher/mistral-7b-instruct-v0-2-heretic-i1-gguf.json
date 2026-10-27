@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/mistral-7b-instruct-v0.2-heretic-i1-GGUF",
+  "slug": "mradermacher-mistral-7b-instruct-v0-2-heretic-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/mistral-7b-instruct-v0.2-heretic-i1-GGUF",
+  "created_at": "2026-10-27T08:54:19.000Z",
+  "updated_at": "2026-10-27T10:24:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "finetuned",
+    "mistral-common",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "reproducible",
+    "en",
+    "base_model:Ananasez/mistral-7b-instruct-v0.2-heretic",
+    "base_model:quantized:Ananasez/mistral-7b-instruct-v0.2-heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 60114062816,
+  "storage_human": "60.1 GB",
+  "base_model": "Ananasez/mistral-7b-instruct-v0.2-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/mistral-7b-instruct-v0.2-heretic-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/mistral-7b-instruct-v0.2-heretic-i1-GGUF",
+      "snippet": "Instructions to use mradermacher/mistral-7b-instruct-v0.2-heretic-i1-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "mradermacher/Mistral-7B-Instruct-v0.2-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Mistral-7B-Instruct-v0.2-i1-GGUF",
+      "snippet": "mradermacher / Mistral-7B-Instruct-v0.2-i1-GGUF like 1 Transformers GGUF English finetuned mistral-common imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Train Deploy Use this model About Usage Provided Quants FAQ / Model Request Thanks"
+    },
+    {
+      "title": "GitHub - GourmetBytes/Mistral-7B-Instruct-v0.2-GGUF",
+      "url": "https://github.com/GourmetBytes/Mistral-7B-Instruct-v0.2-GGUF",
+      "snippet": "This repo contains GGUF format model files for Mistral AI_&#x27;s Mistral 7B Instruct v0.2. These files were quantised using hardware kindly provided by Massed Compute."
+    },
+    {
+      "title": "GitHub - inferless/mistral-7b-instruct-v0.2: An 7B model with a 32k ...",
+      "url": "https://github.com/inferless/Mistral-7B-Instruct-v0.2/",
+      "snippet": "The Mistral-7B-Instruct-v0.2 Large Language Model (LLM) is an instruct fine-tuned version of the Mistral-7B-v0.2. This model outperforms other models like Llama 2 13B and Llama 1 34B on various benchmarks."
+    },
+    {
+      "title": "mradermacher/Mistral-7B-Instruct-v0.2-8bit-abliterated-i1-GGUF",
+      "url": "https://abliteration.org/models/mradermacher/Mistral-7B-Instruct-v0.2-8bit-abliterated-i1-GGUF",
+      "snippet": "Mistral-7B-Instruct-v0.2-8bit-abliterated-i1-GGUF by mradermacher: M8 Repackaging (quantization). 651 downloads, 0 likes on Hugging Face. Files, benchmarks and abliteration classification on abliteration.org."
+    }
+  ]
+}

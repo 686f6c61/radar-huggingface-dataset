@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "davidheineman/rlve-archive-nano-omni-multiteacher-math-48c2dcdd9666",
+  "slug": "davidheineman-rlve-archive-nano-omni-multiteacher-math-48c2dcdd9666",
+  "author": "davidheineman",
+  "url": "https://huggingface.co/davidheineman/rlve-archive-nano-omni-multiteacher-math-48c2dcdd9666",
+  "created_at": "2026-10-27T08:32:09.000Z",
+  "updated_at": "2026-10-27T08:32:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "rlve",
+    "checkpoint-archive",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 714205276,
+  "storage_human": "714 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rlve-archive-nano-omni-multiteacher-math-559ac32f9314",
+      "url": "https://huggingface.co/davidheineman/rlve-archive-nano-omni-multiteacher-math-559ac32f9314",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "davidheineman/rlve-archive-nano-omni-multiteacher-math-559ac32f9314 at main",
+      "url": "https://huggingface.co/davidheineman/rlve-archive-nano-omni-multiteacher-math-559ac32f9314/tree/main",
+      "snippet": "Like 0 rlve scratch-archive Model card FilesFiles and versions xet Community Copy to bucket new main rlve-archive-nano-omni-multiteacher-math-559ac32f9314 204 MB Ctrl+K Ctrl+K 1 contributor History:3 commits davidheineman Add checkpoint provenance 5d5dbde verifiedabout 23 hours ago .gitattributes Safe 1.52 kBinitial commitabout 23 hours ago ..."
+    },
+    {
+      "title": "davidheineman/rlve-archive-nano-omni-multiteacher-code-f5fa0a8f4c52 at main",
+      "url": "https://huggingface.co/davidheineman/rlve-archive-nano-omni-multiteacher-code-f5fa0a8f4c52/tree/main",
+      "snippet": "Like 0 rlve scratch-archive Model card FilesFiles and versions xet Community Copy to bucket new main rlve-archive-nano-omni-multiteacher-code-f5fa0a8f4c52 204 MB Ctrl+K Ctrl+K 1 contributor History:3 commits davidheineman Add checkpoint provenance 8498f77 verified2 days ago .gitattributes Safe 1.52 kBinitial commit2 days ago README.md"
+    },
+    {
+      "title": "rlve-archive-nano-omni-multiteacher-baseline-2b36845e3e40",
+      "url": "https://huggingface.co/davidheineman/rlve-archive-nano-omni-multiteacher-baseline-2b36845e3e40",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RLVE Finished Scratch Runs - a davidheineman Collection",
+      "url": "https://huggingface.co/collections/davidheineman/rlve-finished-scratch-runs",
+      "snippet": "Final checkpoints from completed RLVE and nano-omni experiments on scratch."
+    }
+  ]
+}

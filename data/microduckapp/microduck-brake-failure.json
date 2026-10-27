@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "microduckapp/microduck-brake-failure",
+  "slug": "microduckapp-microduck-brake-failure",
+  "author": "microduckapp",
+  "url": "https://huggingface.co/microduckapp/microduck-brake-failure",
+  "created_at": "2026-10-27T01:45:29.000Z",
+  "updated_at": "2026-10-27T01:45:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "robotics",
+    "microduck-move",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1636313,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - pollen-robotics/microduck: A Tiny biped duck robot",
+      "url": "https://github.com/pollen-robotics/microduck",
+      "snippet": "A Tiny biped duck robot 🦆. Contribute to pollen-robotics/microduck development by creating an account on GitHub."
+    },
+    {
+      "title": "microduck-ai · GitHub",
+      "url": "https://github.com/microduck-ai/",
+      "snippet": "Type Language Sort Microduck-build-tutorial Public Forked from AI-FanGe/Microduck-build-tutorial A practical hardware and software setup for a compact RL-powered biped robot."
+    },
+    {
+      "title": "MicroDuck Guides — Simulation, Policies & Training",
+      "url": "https://microduckrobot.org/guides/",
+      "snippet": "Run the official browser or daemon simulation, inspect and reset robot policies, prepare a CUDA training run, and diagnose common MicroDuck errors with source-linked guides."
+    },
+    {
+      "title": "Nvidia Teaches a $399 Duck Robot to Walk Using AI - TechRepublic",
+      "url": "https://www.techrepublic.com/article/news-nvidia-microduck-robot-ai-walking/",
+      "snippet": "Nvidia and Hugging Face show how the $399 Microduck robot learns to walk using AI simulation. Explore its hardware, training process, and availability."
+    },
+    {
+      "title": "Microduck - A duck-like biped robot designed for physical AI ...",
+      "url": "https://www.cnx-software.com/2026/08/28/microduck-a-duck-like-biped-robot-designed-for-physical-ai-experimentation-and-fun/",
+      "snippet": "Microduck - A duck-like biped robot designed for physical AI experimentation and fun Pollen Robotics and Hugging Face have unveiled the Microduck, a 25 cm tall biped robot with 15 motors, a camera, a depth sensor, two motion sensors, and an articulated beak that can pick up objects."
+    }
+  ]
+}

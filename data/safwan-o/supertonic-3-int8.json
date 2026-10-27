@@ -5,7 +5,7 @@
   "author": "safwan-o",
   "url": "https://huggingface.co/safwan-o/supertonic-3-int8",
   "created_at": "2026-10-25T17:41:36.000Z",
-  "updated_at": "2026-10-25T17:43:11.000Z",
+  "updated_at": "2026-10-26T13:01:01.000Z",
   "license": "openrail",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 111324973,
-  "storage_human": "111 MB",
+  "storage_bytes": 249452154,
+  "storage_human": "249 MB",
   "base_model": "Supertone/supertonic-3",
   "formats": [
     "onnx"

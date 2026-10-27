@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Denisijcu/vertex-core-reasoning",
+  "slug": "denisijcu-vertex-core-reasoning",
+  "author": "Denisijcu",
+  "url": "https://huggingface.co/Denisijcu/vertex-core-reasoning",
+  "created_at": "2026-10-27T09:00:27.000Z",
+  "updated_at": "2026-10-27T09:03:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "unsloth",
+    "qlora",
+    "sft",
+    "reasoning",
+    "cot",
+    "vertex-coders",
+    "qwen3",
+    "en",
+    "es",
+    "dataset:MoreThought/Fable-5.1-Max-Reasoning-Filtered-10000x",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:quantized:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 2497280384,
+  "storage_human": "2.5 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Denisijcu/vertex-math · Hugging Face",
+      "url": "https://huggingface.co/Denisijcu/vertex-math",
+      "snippet": "Denisijcu / vertex-math Like 0 Transformers GGUF English math reasoning qwen2.5 qlora vertex-coders edge-ai conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Denisijcu/vertex-core-gguf · Hugging Face",
+      "url": "https://huggingface.co/Denisijcu/vertex-core-gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Best AI for Reasoning 2026 - Top Reasoning Models",
+      "url": "https://llm-stats.com/leaderboards/best-ai-for-reasoning",
+      "snippet": "Rankings of the best AI models for reasoning tasks. Compare models by logic, planning, and problem-solving capabilities."
+    },
+    {
+      "title": "Model Garden in Gemini platform | Google Cloud",
+      "url": "https://cloud.google.com/model-garden",
+      "snippet": "Discover, customize, and deploy AI models from Google & partners using Gemini Enterprise Agent Platform (formerly Vertex AI)."
+    },
+    {
+      "title": "Cogent AI Team Releases VR-1: A Frontier Cyber Reasoning Model That ...",
+      "url": "https://www.marktechpost.com/2026/08/03/ogent-ai-team-releases-vr-1/",
+      "snippet": "Cogent AI team released Cogent VR-1, a reasoning model post-trained specifically for cybersecurity rather than picking up cyber capability as a side effect of general coding strength."
+    }
+  ]
+}

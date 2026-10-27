@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "alexsss111/simulvoice-a100-runtime-probe-20261027",
+  "slug": "alexsss111-simulvoice-a100-runtime-probe-20261027",
+  "author": "alexsss111",
+  "url": "https://huggingface.co/alexsss111/simulvoice-a100-runtime-probe-20261027",
+  "created_at": "2026-10-27T01:21:50.000Z",
+  "updated_at": "2026-10-27T03:26:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "simulvoice_runtime_probe",
+    "text-generation",
+    "custom_code",
+    "diagnostic",
+    "conversational",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 74112,
+  "parameters_human": "74112",
+  "storage_bytes": 261694605,
+  "storage_human": "262 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Easy AI Voice - RVC v2 Voice Conversion for Speech & Singing",
+      "url": "https://easyaivoice.com/",
+      "snippet": "RVC v2 voice conversion for speech and singing. Turn flat TTS into natural voice output or create clean AI covers using 20,000+ voice models."
+    },
+    {
+      "title": "AI Model Tracker Index: Updates, Sources and Evidence",
+      "url": "https://savrn.com/model-tracker",
+      "snippet": "alexsss111/simulvoice-a100-runtime-probe-20261027 alexsss111 · text generation Source updated: 27 Oct 2026, 03:26 UTC Observed by SAVRN: 27 Oct 2026, 03:30 UTC Exact repository revision f3c742174fc3a8df46ea39b6f61156792a65df85 SAVRN model page not yet available. Original source ↗ Publisher reported · Repository activity"
+    },
+    {
+      "title": "ElevenAPI - ElevenLabs the most powerful AI audio APIs",
+      "url": "https://elevenlabs.io/api",
+      "snippet": "High performance AI audio models to power the most dynamic interactions requiring fast responses and top quality output"
+    },
+    {
+      "title": "Speech Studio - Voice Gallery",
+      "url": "https://speech.microsoft.com/portal/voicegallery",
+      "snippet": "Explore Microsoft&#x27;s Speech Studio Voice Gallery to discover and customize AI-driven text-to-speech voices for creating unique audio experiences."
+    },
+    {
+      "title": "Applet: Voice Library",
+      "url": "https://aistudio.google.com/learn/text-to-speech",
+      "snippet": "Text to speech AI voice generators support a wide range of creative and developer use cases: Content: Generate natural voiceovers for video tutorials, marketing content, audiobooks, and social media posts. Conversational AI: Build responsive voice assistants and real-time gaming companions that speak naturally."
+    }
+  ]
+}

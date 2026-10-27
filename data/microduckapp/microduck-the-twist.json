@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "microduckapp/microduck-the-twist",
+  "slug": "microduckapp-microduck-the-twist",
+  "author": "microduckapp",
+  "url": "https://huggingface.co/microduckapp/microduck-the-twist",
+  "created_at": "2026-10-27T01:23:33.000Z",
+  "updated_at": "2026-10-27T01:23:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "robotics",
+    "microduck-move",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1483321,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "microduckapp (MicroDuck) - Hugging Face",
+      "url": "https://huggingface.co/microduckapp",
+      "snippet": "microduckapp/microduck-midnight-snack Robotics •Updated 22 minutes ago View 16 models"
+    },
+    {
+      "title": "Why Jensen Huang&#x27;s Microduck Demo Went Viral—and What the Robot Can ...",
+      "url": "https://www.studioglobal.ai/discover/answers/how-did-jensen-huang-s-october-21-2026-6adc5d9bdd5420f7c30ddafb",
+      "snippet": "After Jensen Huang demonstrated four Microducks at GTC Berlin on October 21, coverage reported that preorders topped 20,000. The demo paired simple voice command tricks with a bigger idea: train robot behaviors in simulation, then transfer them to physical machines. [18] How did Jensen Huang&#x27;s October 21, 2026, GTC Berlin demonstration of four duck-shaped Microduck robots drive viral ..."
+    },
+    {
+      "title": "GitHub - pollen-robotics/microduck: A Tiny biped duck robot",
+      "url": "https://github.com/pollen-robotics/microduck",
+      "snippet": "A Tiny biped duck robot 🦆. Contribute to pollen-robotics/microduck development by creating an account on GitHub."
+    },
+    {
+      "title": "Microduck - A tiny biped robot you can teach new tricks | Pollen Robotics",
+      "url": "https://pollen-robotics.com/microduck/",
+      "snippet": "Microduck is a 25 cm biped robot with 15 motors, a camera, LiDAR and a grasping beak. Playable out of the box, and its open-source stack lets you train new behaviours in simulation and run them on the robot. Pre-order at $399."
+    },
+    {
+      "title": "Using AI Agents to Teach Robots Like Microduck to Walk in Simulation",
+      "url": "https://developer.nvidia.com/blog/using-ai-agents-to-teach-robots-like-microduck-to-walk-in-simulation/",
+      "snippet": "The course needs to test both movement and perception. Microduck must learn to move around obstacles and through constrained spaces while maintaining balance. Use these requirements to guide the proposed layout and the objects needed to construct it. A local image-generation model produces a concept image of the course."
+    }
+  ]
+}

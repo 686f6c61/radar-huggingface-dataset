@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ikimyaii/Mamba-1.3B-semi-structured-EHWS-ALPS_phase1-p1t0.7-80pct",
+  "slug": "ikimyaii-mamba-1-3b-semi-structured-ehws-alps_phase1-p1t0-7-80pct",
+  "author": "ikimyaii",
+  "url": "https://huggingface.co/ikimyaii/Mamba-1.3B-semi-structured-EHWS-ALPS_phase1-p1t0.7-80pct",
+  "created_at": "2026-10-27T01:26:46.000Z",
+  "updated_at": "2026-10-27T01:27:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mamba",
+    "pruning",
+    "sparsity",
+    "semi-structured",
+    "admm",
+    "base_model:fla-hub/mamba-1.3B-100B",
+    "base_model:finetune:fla-hub/mamba-1.3B-100B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1334740992,
+  "parameters_human": "1.33B",
+  "storage_bytes": 5339017120,
+  "storage_human": "5.3 GB",
+  "base_model": "fla-hub/mamba-1.3B-100B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ikimyaii/Mamba-1.3B-semi-structured-EHWS-ALPS_phase1-80pct · Hugging Face",
+      "url": "https://huggingface.co/ikimyaii/Mamba-1.3B-semi-structured-EHWS-ALPS_phase1-80pct",
+      "snippet": "fla-hub/mamba-1.3B-100B, pruned to 80% sparsity with EHWS two-phase ADMM. The sparsity is semi-structured: every row of every prunable linear layer keeps the same number of weights (the top 20%). Embeddings and lm_head stay dense. Weights are float32."
+    },
+    {
+      "title": "OPT-125M-semi-structured-EHWS-ALPS-phase1-80pct - Hugging Face",
+      "url": "https://huggingface.co/ikimyaii/OPT-125M-semi-structured-EHWS-ALPS-phase1-80pct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "What is a Mamba model - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/what-is-a-mamba-model/",
+      "snippet": "The Mamba Block The Mamba Block is the core building unit of the Mamba architecture, similar to how the attention block is the core unit in Transformers. It combines the Selective State Space Model (S6) with a gating mechanism to process long sequences efficiently while preserving important context. Mamba Block 1."
+    },
+    {
+      "title": "Mamba (deep learning architecture) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mamba_(deep_learning_architecture)",
+      "snippet": "Mamba is a deep learning architecture focused on sequence modeling. It was developed by two researchers Albert Gu from Carnegie Mellon University and Tri Dao from Princeton University to address some limitations of transformer models, especially in processing long sequences, and it is based on the Structured State Space sequence (S4) model. [1][2][3]"
+    },
+    {
+      "title": "What is a Mamba model? - IBM",
+      "url": "https://www.ibm.com/think/topics/mamba-model",
+      "snippet": "Mamba is a neural network architecture derived from state space models (SSMs), used for language modeling and other sequence modeling tasks. Mamba-based LLMs rival the performance of transformers at greater efficiency."
+    }
+  ]
+}

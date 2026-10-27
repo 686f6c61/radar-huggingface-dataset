@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "microduckapp/microduck-clumsy-kick",
+  "slug": "microduckapp-microduck-clumsy-kick",
+  "author": "microduckapp",
+  "url": "https://huggingface.co/microduckapp/microduck-clumsy-kick",
+  "created_at": "2026-10-27T01:38:52.000Z",
+  "updated_at": "2026-10-27T01:38:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "robotics",
+    "microduck-move",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1273641,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - pollen-robotics/microduck: A Tiny biped duck robot",
+      "url": "https://github.com/pollen-robotics/microduck",
+      "snippet": "A Tiny biped duck robot 🦆. Contribute to pollen-robotics/microduck development by creating an account on GitHub."
+    },
+    {
+      "title": "Buy Microduck: Small robot. Super smart.",
+      "url": "https://microducks.org/",
+      "snippet": "Buy Microduck, the 10 inch bipedal AI robot by Pollen Robotics × Hugging Face, shown by Jensen Huang at NVIDIA GTC Berlin. Official preorders from $399."
+    },
+    {
+      "title": "Hugging Face is selling a cute $399 open source duck robot, Microduck",
+      "url": "https://techcrunch.com/2026/08/27/hugging-face-is-selling-a-cute-399-open-source-duck-robot-microduck/",
+      "snippet": "Hugging Face unveiled the Microduck on Thursday, a cute little duck-like robot that sells for $399 — and ships before Christmas. Clem Delangue, CEO of Hugging Face, said the Microduck is an ..."
+    },
+    {
+      "title": "Meet Microduck, a $399 Open-Source Robot That Can Learn New Tricks - PCMag",
+      "url": "https://www.pcmag.com/news/hugging-face-microduck-399-open-source-robot-that-can-learn-new-tricks",
+      "snippet": "The robot comes from AI model platform Hugging Face&#x27;s Pollen Robotics arm. Preorders open today with shipments slated to arrive before Christmas."
+    },
+    {
+      "title": "Microduck - A tiny biped robot you can teach new tricks | Pollen Robotics",
+      "url": "https://pollen-robotics.com/microduck/",
+      "snippet": "Microduck is a 25 cm biped robot with 15 motors, a camera, LiDAR and a grasping beak. Playable out of the box, and its open-source stack lets you train new behaviours in simulation and run them on the robot. Pre-order at $399."
+    }
+  ]
+}

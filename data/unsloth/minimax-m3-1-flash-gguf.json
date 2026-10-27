@@ -5,7 +5,7 @@
   "author": "unsloth",
   "url": "https://huggingface.co/unsloth/MiniMax-M3.1-Flash-GGUF",
   "created_at": "2026-10-23T04:20:27.000Z",
-  "updated_at": "2026-10-25T05:13:48.000Z",
+  "updated_at": "2026-10-26T14:49:39.000Z",
   "license": "minimax-community",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -31,13 +31,13 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 35,
-  "downloads_30d": 4499,
-  "trending_score": 35,
+  "likes": 39,
+  "downloads_30d": 7179,
+  "trending_score": 39,
   "parameters": 426186370176,
   "parameters_human": "426.19B",
-  "storage_bytes": 1625509405428,
-  "storage_human": "1625.5 GB",
+  "storage_bytes": 1627598790196,
+  "storage_human": "1627.6 GB",
   "base_model": "MiniMaxAI/MiniMax-M3.1-Flash",
   "formats": [
     "gguf"

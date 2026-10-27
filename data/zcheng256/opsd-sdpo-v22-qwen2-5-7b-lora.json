@@ -5,7 +5,7 @@
   "author": "zcheng256",
   "url": "https://huggingface.co/zcheng256/OPSD-SDPO-v22-Qwen2.5-7B-LoRA",
   "created_at": "2026-10-13T04:45:56.000Z",
-  "updated_at": "2026-10-26T03:55:54.000Z",
+  "updated_at": "2026-10-26T17:56:44.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -24,8 +24,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 110054455632,
-  "storage_human": "110.1 GB",
+  "storage_bytes": 124339329504,
+  "storage_human": "124.3 GB",
   "base_model": "Qwen/Qwen2.5-7B-Instruct",
   "formats": [
     "safetensors"

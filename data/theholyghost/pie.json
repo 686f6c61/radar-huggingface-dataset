@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "TheHolyGhost/PIE",
+  "slug": "theholyghost-pie",
+  "author": "TheHolyGhost",
+  "url": "https://huggingface.co/TheHolyGhost/PIE",
+  "created_at": "2026-10-27T08:30:27.000Z",
+  "updated_at": "2026-10-27T08:30:28.000Z",
+  "license": "pie-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Apple Pie v2 - tensorhub.art",
+      "url": "https://tensorhub.art/models/941906504963903741",
+      "snippet": "Download Pie - Models 🥧 - free CHECKPOINT Illustrious AI model on TENSORHUB ART. Anima, Anime, Illustration. By MommyMia"
+    },
+    {
+      "title": "Ghost AI Models | PixAI",
+      "url": "https://pixai.art/en/tags/model/ghost",
+      "snippet": "Discover AI Art Model in our #Ghost gallery. Trending Trending Most Used Most Liked Latest All Categories All Categories LoRA SD All Time All Time Yesterday Past 7 Days Past 30 Days User LoRAXL Glowing Ghostly Flames 2150 3 User LoRAXL Generica [Illustrious] Crush Crush 40 0 User LoRASD ectoTECH 7.44k0 166 User LoRAXL Susie- My Ghost Friend (dsand) | Illustrious 3250 4 User LoRASD Real Ghost 3 ..."
+    },
+    {
+      "title": "Pie - Models - Apple Pie - Free AI Model - tensorhub.art",
+      "url": "https://tensorhub.art/models/864624710275604685",
+      "snippet": "Download Pie - Models 🥧 - free CHECKPOINT Illustrious AI model on TENSORHUB ART. By MommyMia"
+    },
+    {
+      "title": "Models - Apple Pie - Free AI Model - tensor.art",
+      "url": "https://tensor.art/models/864624710275604685",
+      "snippet": "Download Pie - Models 🥧 - free CHECKPOINT Illustrious AI model on TENSOR. By MommyMia"
+    },
+    {
+      "title": "Pie - Models — Model Hub - moescape.ai",
+      "url": "https://moescape.ai/models/31ee2290-0445-4544-a0a2-f6873e375c44",
+      "snippet": "Try out Pie 🥧 - Models on Moescape! https://civitai.com/models/1593793?modelVersionId=1891751 Pie Models is a collection of models, each named after a type of pie ..."
+    }
+  ]
+}

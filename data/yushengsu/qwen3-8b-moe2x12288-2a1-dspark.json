@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "yushengsu/qwen3-8b-moe2x12288-2A1-dspark",
+  "slug": "yushengsu-qwen3-8b-moe2x12288-2a1-dspark",
+  "author": "yushengsu",
+  "url": "https://huggingface.co/yushengsu/qwen3-8b-moe2x12288-2A1-dspark",
+  "created_at": "2026-10-27T01:25:21.000Z",
+  "updated_at": "2026-10-27T04:52:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "specforge",
+  "languages": [],
+  "tags": [
+    "specforge",
+    "speculative-decoding",
+    "dspark",
+    "draft-model",
+    "moe",
+    "qwen3",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dogacel/Qwen3-8B-DSpark · Hugging Face",
+      "url": "https://huggingface.co/Dogacel/Qwen3-8B-DSpark",
+      "snippet": "A DSpark speculative-decoding draft model for Qwen/Qwen3-8B, trained with TorchSpec. DSpark combines a DFlash block-diffusion drafter with EAGLE-style Markov and confidence heads. This repository contains only the draft model. It is used together with the unmodified Qwen/Qwen3-8B target model at ..."
+    },
+    {
+      "title": "yushengsu/dense-1-8 · Hugging Face",
+      "url": "https://huggingface.co/yushengsu/dense-1-8",
+      "snippet": "Per-epoch checkpoints of one SpecForge run: the Qwen3-8B dense DSpark drafter (causal draft block, block 16, no confidence head) shrunk in structure only: 2 layers instead of 5, attention GQA 8/2 heads x 128 (1/4 of the dense arm&#x27;s width), MLP intermediate_size 1536 (1/8 of 12288); residual hidden stays 4096. About 0.22B parameters."
+    },
+    {
+      "title": "Qwen Timeline: Model & Product Release History",
+      "url": "https://www.scriptbyai.com/qwen-timeline/",
+      "snippet": "Qwen model release dates and version history, from Tongyi Qianwen and Qwen-7B through Qwen3.8-Omni-Flash, Max, Coder, VL, QwQ, and Qwen Code."
+    },
+    {
+      "title": "qwen/qwen3-8b • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen3-8b",
+      "snippet": "Qwen3 8B by qwen Supports a context length of up to 131,072 tokens with YaRN (default 32k) Supports /no_think to disable reasoning, just add it at the end of your prompt Supports both thinking and non-thinking modes withe enhanced reasoning in both for significantly enhanced mathematics, coding, and commonsense Excels at creative writing, role-playing, multi-turn dialogues, and instruction ..."
+    },
+    {
+      "title": "Qwen3-8B · Models",
+      "url": "https://www.modelscope.cn/models/Qwen/Qwen3-8B",
+      "snippet": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models. Built upon extensive training, Qwen3 delivers groundbreaking advancements in reasoning, instruction-following, agent capabilities, and multilingual support, with the following key features:"
+    }
+  ]
+}

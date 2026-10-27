@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "cwaud/augmented-1abd6c3897b582ff",
+  "slug": "cwaud-augmented-1abd6c3897b582ff",
+  "author": "cwaud",
+  "url": "https://huggingface.co/cwaud/augmented-1abd6c3897b582ff",
+  "created_at": "2026-10-27T08:35:14.000Z",
+  "updated_at": "2026-10-27T08:35:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3426473600,
+  "parameters_human": "3.43B",
+  "storage_bytes": 6852974400,
+  "storage_human": "6.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cwaud/mirror-augmented-2e64076e1e3d549d · Hugging Face",
+      "url": "https://huggingface.co/cwaud/mirror-augmented-2e64076e1e3d549d",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "cwaud/mirror-augmented-f44b5eb328d7bc4d · Hugging Face",
+      "url": "https://huggingface.co/cwaud/mirror-augmented-f44b5eb328d7bc4d",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mirror-augmented-f44b5eb328d7bc4d API & Inference Endpoint - FriendliAI",
+      "url": "https://friendli.ai/models/cwaud/mirror-augmented-f44b5eb328d7bc4d",
+      "snippet": "Deploy mirror-augmented-f44b5eb328d7bc4d with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Core Models - Stability AI",
+      "url": "https://stability.ai/core-models",
+      "snippet": "Stability AI may remove or modify one or more of the Core Models listed on this page. In this circumstance, Stability AI will notify you it is removing or making certain Core Models inaccessible. Other Stability AI Models Stability AI has other models not included in the Core Models above, for which your usage is subject to the terms of each individual model&#x27;s applicable license. For more ..."
+    },
+    {
+      "title": "AI Model Installation Guidance for Copilot+ PCs | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/windows-hardware/manufacture/ai-model-preinstallation?view=windows-11",
+      "snippet": "Guidance for OEMs and IT pros on enabling AI model preinstallation during Windows image servicing using LCUs and unattend.xml."
+    }
+  ]
+}

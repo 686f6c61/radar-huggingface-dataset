@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "axteam/Qwen3.5-9B-FP8-dynamic",
+  "slug": "axteam-qwen3-5-9b-fp8-dynamic",
+  "author": "axteam",
+  "url": "https://huggingface.co/axteam/Qwen3.5-9B-FP8-dynamic",
+  "created_at": "2026-10-27T09:10:21.000Z",
+  "updated_at": "2026-10-27T09:11:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen",
+    "compressed-tensors",
+    "vllm",
+    "quantized",
+    "conversational",
+    "multimodal",
+    "fp8",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:quantized:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 12403499766,
+  "storage_human": "12.4 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5-9B (FP8-dynamic) · AETRON Models",
+      "url": "https://app.aetron.io/en/registry/qwen3.5-9b-fp8",
+      "snippet": "Qwen3.5-9B Dense 9B model of the Qwen3.5 generation (released 02.2026). Outperforms the Qwen2.5 line in reasoning, coding and agents. Strengths Modern generation: strong reasoning & coding 32K context, multilingual Apache-2.0 — fully commercial Recommended use Primary general-purpose assistant model. Runs on a single 24GB GPU at bf16 (weights ~19.3 GB)."
+    },
+    {
+      "title": "RedHatAI/Qwen3.5-9B-FP8-dynamic · Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/Qwen3.5-9B-FP8-dynamic",
+      "snippet": "Creation This model was created by applying LLM Compressor using data-free FP8 dynamic quantization, as presented in the code snippet below."
+    },
+    {
+      "title": "Qwen3.5 9B FP8 dynamic — ThinkLLM",
+      "url": "https://thinkllm.dev/models/qwen3-5-9b-fp8-dynamic",
+      "snippet": "A mid-sized multimodal model that handles both text and image inputs, quantized to FP8 dynamic precision for more efficient deployment without fully sacrificing capability. The FP8 format means it runs leaner on hardware compared to full-precision variants, though quantization can introduce subtle quality trade-offs. It sits in a practical middle ground — capable enough for real tasks, small ..."
+    },
+    {
+      "title": "Qwen3.5 9B FP8 — Efficient Reasoning LLM | ModelsLab",
+      "url": "https://modelslab.com/qwen35-9b-fp8",
+      "snippet": "Run Qwen3.5 9B FP8 model via API for fast reasoning, coding, and vision tasks on low VRAM. Generate precise outputs now."
+    },
+    {
+      "title": "Qwen3.5-9B (FP8-dynamic) · AETRON Models",
+      "url": "https://app.aetron.io/ru/registry/qwen3.5-9b-fp8",
+      "snippet": "Готовая сборка FP8 (compressed-tensors): плотная LLM на 9B поколения Qwen3.5 (02.2026). Сильна в рассуждениях, коде и многоязычном диалоге."
+    }
+  ]
+}

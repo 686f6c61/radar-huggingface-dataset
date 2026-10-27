@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Smaug-Humanizer-i1-GGUF",
+  "slug": "mradermacher-smaug-humanizer-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Smaug-Humanizer-i1-GGUF",
+  "created_at": "2026-10-27T08:28:46.000Z",
+  "updated_at": "2026-10-27T09:30:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "smaug",
+    "abacusai",
+    "humanizer",
+    "gemma4",
+    "grpo",
+    "en",
+    "base_model:abacusai/Smaug-Humanizer",
+    "base_model:quantized:abacusai/Smaug-Humanizer",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 140351546560,
+  "storage_human": "140.4 GB",
+  "base_model": "abacusai/Smaug-Humanizer",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/humanizer-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/humanizer-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/Humanizer-3B-Safetensors-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Humanizer-3B-Safetensors-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 33 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "Smaug Humanizer goes open-weights: de-AI-slop… · AGI Hunt",
+      "url": "https://agihunt.info/en/p/1a17ba5aa82bf040b886a53aa37",
+      "snippet": "Bindu Reddy announced Smaug Humanizer, an open-weights model that rewrites AI-generated text to sound more human: Weights are on Hugging Face, built on google/…"
+    },
+    {
+      "title": "mradermacher/humanizerAI-GGUF downloads: daily history and stats ...",
+      "url": "https://modelpulse.ifsp.dev/model/mradermacher/humanizerAI-GGUF",
+      "snippet": "mradermacher/humanizerAI-GGUF was downloaded 179 times in the last 30 days and 7K times in total. Daily download history since July 2024, likes, rankings and model ..."
+    }
+  ]
+}

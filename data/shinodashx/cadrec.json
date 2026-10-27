@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "shinodashx/CADRec",
+  "slug": "shinodashx-cadrec",
+  "author": "shinodashx",
+  "url": "https://huggingface.co/shinodashx/CADRec",
+  "created_at": "2026-10-27T08:33:47.000Z",
+  "updated_at": "2026-10-27T08:33:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - shinodashx/CADRec: Official implementation of CADRec ...",
+      "url": "https://github.com/shinodashx/CADRec/blob/main/",
+      "snippet": "The example keeps initialization from an existing checkpoint explicit. Only set train.paths.model_path: null if you intentionally want to initialize from common.model.base_model_path (the public Qwen model by default), rather than a previously trained CADRec checkpoint. Changing initialization weights is not the same as resuming a Trainer run."
+    },
+    {
+      "title": "GitHub - shinodashx/shinodashx",
+      "url": "https://github.com/shinodashx/shinodashx",
+      "snippet": "Contribute to shinodashx/shinodashx development by creating an account on GitHub."
+    },
+    {
+      "title": "PDF CADRec: Reconstructing a CAD Sequence Recursively with Localized ...",
+      "url": "https://shinodashx.github.io/CADRec/files/CADRec.pdf",
+      "snippet": "We further train the model with geometry-aware objectives that encourage consistent part decomposition and spatially grounded predictions. Experiments on standard CAD reconstruction benchmarks demonstrate that CADRec improves both geometric fidelity and program validity over prior sequence- and code-based baselines."
+    },
+    {
+      "title": "CaDRec: Contextualized and Debiased Recommender Model",
+      "url": "https://arxiv.org/abs/2404.06895",
+      "snippet": "This paper proposes a contextualized and debiased recommender model (CaDRec). To overcome the over-smoothing issue, we explore a novel hypergraph convolution operator that can select effective neighbors during convolution by introducing both structural context and sequential context."
+    },
+    {
+      "title": "Free Video: CaDRec: Contextualized and Debiased Recommender Model ...",
+      "url": "https://www.classcentral.com/course/youtube-sigir-2024-m1-7-fp-cadrec-contextualized-and-debiased-recommender-model-350815",
+      "snippet": "Explore a contextualized and debiased recommender model for fair and accurate recommendations in information retrieval systems."
+    }
+  ]
+}

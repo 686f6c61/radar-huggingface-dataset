@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "EAGLE-Corp/Qwen3.8-27B-EAGLE4",
+  "slug": "eagle-corp-qwen3-8-27b-eagle4",
+  "author": "EAGLE-Corp",
+  "url": "https://huggingface.co/EAGLE-Corp/Qwen3.8-27B-EAGLE4",
+  "created_at": "2026-10-07T23:41:31.000Z",
+  "updated_at": "2026-10-19T20:50:44.000Z",
+  "license": "eagle-4",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "speculative-decoding",
+    "draft-model",
+    "eagle-4",
+    "inference-acceleration",
+    "qwen",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 13,
+  "downloads_30d": 790,
+  "trending_score": 13,
+  "parameters": 3089075200,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6178152384,
+  "storage_human": "6.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EAGLE | PCB Design And Electrical Schematic Software | Autodesk",
+      "url": "https://www.autodesk.com/br/products/eagle/overview.acessado?msockid=01cf738051de6cf5334e647f50296de0",
+      "snippet": "EAGLE is electronic design automation (EDA) software that lets printed circuit board (PCB) designers seamlessly connect schematic …"
+    },
+    {
+      "title": "Eagle - Organize design files has never been easier",
+      "url": "https://en.eagle.cool/",
+      "snippet": "Apr 1, 2026 · Eagle has become one of my most trusted and used tools and an important part of my daily workflow. I use it at least a …"
+    },
+    {
+      "title": "Eagle - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Eagle",
+      "snippet": "The smallest species of eagle is the Great Nicobar serpent eagle (Spilornis klossi), at 450 g (1 lb) and 40 cm (16 in). The largest …"
+    },
+    {
+      "title": "Eaglercraft: play Minecraft in your browser for free",
+      "url": "https://eaglercraft.com/",
+      "snippet": "Eaglercraft is free Minecraft in your web browser. Play on a Chromebook, phone or PC with no download, join servers and shared …"
+    },
+    {
+      "title": "AIGLE | Vêtements et chaussures outdoor",
+      "url": "https://www.aigle.com/fr/fr",
+      "snippet": "Collection automne-hiver Aigle : parkas imperméables et bottes iconiques pour affronter pluie et fraîcheur avec style. Découvrez les …"
+    }
+  ]
+}

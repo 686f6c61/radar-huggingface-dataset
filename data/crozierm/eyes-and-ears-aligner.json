@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "crozierm/eyes-and-ears-aligner",
+  "slug": "crozierm-eyes-and-ears-aligner",
+  "author": "crozierm",
+  "url": "https://huggingface.co/crozierm/eyes-and-ears-aligner",
+  "created_at": "2026-10-27T09:07:16.000Z",
+  "updated_at": "2026-10-27T09:07:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "forced-alignment",
+    "ctc",
+    "wav2vec2",
+    "base_model:facebook/wav2vec2-base-960h",
+    "base_model:quantized:facebook/wav2vec2-base-960h",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 95192600,
+  "storage_human": "95 MB",
+  "base_model": "facebook/wav2vec2-base-960h",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, DeepSeek, Qwen, Mistral, Z.ai, Meta, and important open-weight model families."
+    },
+    {
+      "title": "Best Free AI 3D Model Generators in 2026 (Tested and Compared)",
+      "url": "https://www.3daistudio.com/blog/best-free-ai-3d-model-generators-2026",
+      "snippet": "The best free AI 3D model generators in 2026, compared on free credits, commercial use, export formats, and quality. Generate 3D models from text or images at no cost."
+    },
+    {
+      "title": "Lazyeyefix Photo Editor Review, Pricing & Alternatives",
+      "url": "https://opentools.ai/tools/lazyeyefix-photo-editor",
+      "snippet": "Lazyeyefix Photo Editor corrects misaligned eyes in photos using AI in about 5 seconds, designed for individuals with strabismus and portrait photographers."
+    },
+    {
+      "title": "The Best AI Image Generators We&#x27;ve Tested for 2026 | PCMag",
+      "url": "https://www.pcmag.com/picks/the-best-ai-image-generators",
+      "snippet": "We&#x27;ve tested the top AI image generation apps to help you find the one that produces the best results for the lowest price."
+    },
+    {
+      "title": "Crozier - Download Free 3D model by MaxAndrew098",
+      "url": "https://sketchfab.com/3d-models/crozier-71ffb5d12960417c80f9d336cd65da47",
+      "snippet": "This model was generated using Meshy (https://www.meshy.ai)&#x27;s AI toolkit. It provides tools that effortlessly turn human imagination into stunning 3D models."
+    }
+  ]
+}

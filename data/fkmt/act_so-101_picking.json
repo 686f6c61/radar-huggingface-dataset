@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "fkmt/act_so-101_picking",
+  "slug": "fkmt-act_so-101_picking",
+  "author": "fkmt",
+  "url": "https://huggingface.co/fkmt/act_so-101_picking",
+  "created_at": "2026-10-27T01:45:51.000Z",
+  "updated_at": "2026-10-27T02:36:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:fkmt/so-101_picking_ds_20261027_101214",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 413414552,
+  "storage_human": "413 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aiden-li/so101-act · Hugging Face",
+      "url": "https://huggingface.co/aiden-li/so101-act",
+      "snippet": "Model Card for act Action Chunking with Transformers (ACT) is an imitation-learning method that predicts short action chunks instead of single steps. It learns from teleoperated data and often achieves high success rates. This policy has been trained and pushed to the Hub using LeRobot. See the full documentation at LeRobot Docs."
+    },
+    {
+      "title": "Soulaimakhammari/model-so-101 · Hugging Face",
+      "url": "https://huggingface.co/Soulaimakhammari/model-so-101",
+      "snippet": "Model Card for act Action Chunking with Transformers (ACT) is an imitation-learning method that predicts short action chunks instead of single steps. It learns from teleoperated data and often achieves high success rates. This policy has been trained and pushed to the Hub using LeRobot. See the full documentation at LeRobot Docs."
+    },
+    {
+      "title": "SO-101 pick-and-place with LeRobot: sim first, then hardware",
+      "url": "https://github.com/aviadarn/so101-lerobot",
+      "snippet": "SO-101 pick-and-place with LeRobot: sim first, then hardware Imitation learning on the SO-101 low-cost arm using LeRobot 0.6 and ACT. Phase 1 (this repo, today) runs the whole pipeline in MuJoCo via so101-nexus with a scripted IK expert as the demonstrator."
+    },
+    {
+      "title": "SO101 Arm ACT Training Guide Using SOLO CLI - GitHub",
+      "url": "https://github.com/omkarputti/SO101_ACT_Training",
+      "snippet": "This guide uses only the ACT policy because it is reliable and works well for SO101 robot arm imitation-learning tasks like pick-and-place and liquid pouring."
+    },
+    {
+      "title": "Train ACT on the SO-101: Setup, Chunking, Deployment",
+      "url": "https://www.ay-robots.com/train/act-on-so-101",
+      "snippet": "Train an ACT policy on an SO-101: what the revised wrist changes, why mixed-arm datasets hurt a from-scratch model, the training defaults, cost and evaluation."
+    }
+  ]
+}

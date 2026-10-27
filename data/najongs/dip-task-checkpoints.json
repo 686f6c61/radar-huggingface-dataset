@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Najongs/dip-task-checkpoints",
+  "slug": "najongs-dip-task-checkpoints",
+  "author": "Najongs",
+  "url": "https://huggingface.co/Najongs/dip-task-checkpoints",
+  "created_at": "2026-10-27T08:59:12.000Z",
+  "updated_at": "2026-10-27T09:06:11.000Z",
+  "license": "dinov3-license",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "pose-estimation",
+    "dinov3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17627741630,
+  "storage_human": "17.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Najongs (Najongs) · GitHub",
+      "url": "https://github.com/Najongs",
+      "snippet": "Robotics & AI Researcher. Najongs has 46 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=checkpoint",
+      "snippet": "Explore machine learning models. toxicdog/MOSS-Image-SFT-Turbo-INT8-ConvRot-AIO"
+    },
+    {
+      "title": "Checkpoint AI Models (146) | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 146 AI models tagged \"Checkpoint\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    },
+    {
+      "title": "What Are AI Checkpoints? Uses, Benefits & Sharing | WEKA",
+      "url": "https://www.weka.io/learn/ai-checkpoints",
+      "snippet": "What Is an AI Checkpoint? AI checkpoints are saved states of a machine learning model at a particular point in its training process. They usually include the model&#x27;s parameters—weights and biases—and sometimes additional information, such as the optimizer state, epoch number, or training progress. AI checkpoints are typically saved in formats like .pt or .pth for PyTorch models and .ckpt ..."
+    },
+    {
+      "title": "Najongs - Machine Learning Portfolio in Weights & Biases",
+      "url": "https://wandb.ai/profile/najyeol99",
+      "snippet": "View ML projects from Najongs on Weights & Biases. Working at Daegu Gyeongbuk Institute of Science & Technology."
+    }
+  ]
+}

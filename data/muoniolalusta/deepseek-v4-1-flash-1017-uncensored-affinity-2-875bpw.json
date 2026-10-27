@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Muoniolalusta/DeepSeek-V4.1-Flash-1017-UNCENSORED-affinity-2.875bpw",
+  "slug": "muoniolalusta-deepseek-v4-1-flash-1017-uncensored-affinity-2-875bpw",
+  "author": "Muoniolalusta",
+  "url": "https://huggingface.co/Muoniolalusta/DeepSeek-V4.1-Flash-1017-UNCENSORED-affinity-2.875bpw",
+  "created_at": "2026-10-27T08:53:21.000Z",
+  "updated_at": "2026-10-27T09:36:29.000Z",
+  "license": "deepseek-license",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "affinity",
+  "languages": [],
+  "tags": [
+    "affinity",
+    "deepseek-v4.1",
+    "moe",
+    "rocm",
+    "rdna4",
+    "quantized",
+    "uncensored",
+    "1017",
+    "text-generation",
+    "base_model:dealignai/DeepSeek-V4.1-Flash-UNCENSORED-FP8",
+    "base_model:finetune:dealignai/DeepSeek-V4.1-Flash-UNCENSORED-FP8",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 211029583876,
+  "storage_human": "211.0 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash, dealignai/DeepSeek-V4.1-Flash-UNCENSORED-FP8",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Muoniolalusta (Yuri de Jager) - Hugging Face",
+      "url": "https://huggingface.co/Muoniolalusta/models",
+      "snippet": "Muoniolalusta&#x27;s models1 Sort: Recently updated Muoniolalusta/DeepSeek-V4.1-Flash-UNCENSORED-affinity-2.875bpw Text Generation •Updated about 17 hours ago• 1"
+    },
+    {
+      "title": "Muoniolalusta/DeepSeek-V4.1-Flash-UNCENSORED-affinity-2.875bpw ...",
+      "url": "https://huggingface.co/Muoniolalusta/DeepSeek-V4.1-Flash-UNCENSORED-affinity-2.875bpw",
+      "snippet": "A quantised affinity container of the uncensored DeepSeek-V4.1-Flash, made to run on two AMD Radeon AI PRO R9700 (gfx1201) GPUs. It loads only in the affinity engine (the C++/HIP inference engine by Yoshi Exeler) with the V4.1 port — not in llama.cpp, vLLM or SGLang. Full setup, engine patches ..."
+    },
+    {
+      "title": "DeepSeek-V4.1-Flash-1017 · Models",
+      "url": "https://www.modelscope.cn/models/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "snippet": "Technical Report 👁️ Introduction DeepSeek-V4.1-Flash-1017 is a minor update to DeepSeek-V4.1-Flash, delivering substantial improvements across reasoning, coding, agentic tasks, and visual benchmarks. Alongside these gains, the model reduces task execution time and output length, enabling users to complete tasks faster and at lower cost and advancing the performance-cost Pareto frontier ..."
+    },
+    {
+      "title": "DeepSeek V4.1 Flash 1017 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/deepseek-v4.1-flash-1017",
+      "snippet": "DeepSeek V4.1 Flash 1017 is a multimodal model for reasoning, coding, and long-context agents, with native image input, a 1M-token context window, and improved performance over the original V4.1 Flash."
+    },
+    {
+      "title": "DeepSeek V4.1 Flash 1017 Review: What Changed, Tested vs V4 Pro",
+      "url": "https://omniakey.com/blog/deepseek-v4-1-flash-1017-review",
+      "snippet": "DeepSeek upgraded V4.1 Flash to 1017 on October 17. What changed, whether your API code needs updating, and how it did against V4 Pro on our tests."
+    }
+  ]
+}

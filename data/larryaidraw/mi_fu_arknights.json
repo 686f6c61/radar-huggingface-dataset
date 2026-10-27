@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "LarryAIDraw/mi_fu_arknights",
+  "slug": "larryaidraw-mi_fu_arknights",
+  "author": "LarryAIDraw",
+  "url": "https://huggingface.co/LarryAIDraw/mi_fu_arknights",
+  "created_at": "2026-10-27T08:25:48.000Z",
+  "updated_at": "2026-10-27T08:29:00.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 456518816,
+  "storage_human": "457 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LarryAIDraw/Mi_Fu_Arknights_Endfield · Hugging Face",
+      "url": "https://huggingface.co/LarryAIDraw/Mi_Fu_Arknights_Endfield",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LarryAIDraw (LarryChen) - Hugging Face",
+      "url": "https://huggingface.co/LarryAIDraw",
+      "snippet": "(new)https://www.pixiv.net/users/103471702 (freezed)https://www.pixiv.net/users/26156536 https://x.com/chnchnxn336393 https://www.patreon.com/user?u=31433089"
+    },
+    {
+      "title": "Mi Fu (Arknights: Endfield) - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1975266501473351724",
+      "snippet": "Generate stunning anime art with the &#x27;Mi Fu (Arknights: Endfield)&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Mi Fu&#92;ミ・フ&#92; (Arknights: Endfield&#92;アークナイツ：エンドフィールド) - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1972192057629142059",
+      "snippet": "Generate stunning anime art with the &#x27;Mi Fu&#92;ミ・フ&#92; (Arknights: Endfield&#92;アークナイツ：エンドフィールド)&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Mi Fu Arknights - v1.0 Illustrious | Illustrious LoRA | Civitai",
+      "url": "https://civitai.com/models/3017717/mi-fu-arknights",
+      "snippet": "Auto-generated on Akilora! Trigger word: mi_fu_arknights General tips If the character is not showing up, start describing missing features (e.g. blue eyes, hair ornament, elf ears). Try different Illustrious models, this one should work great with Nova Anime XL. if default clothing is bleeding in too hard, decrease Lora strength."
+    }
+  ]
+}

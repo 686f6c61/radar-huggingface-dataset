@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "tokiri/LoRa-QWEN1.5B",
+  "slug": "tokiri-lora-qwen1-5b",
+  "author": "tokiri",
+  "url": "https://huggingface.co/tokiri/LoRa-QWEN1.5B",
+  "created_at": "2026-10-27T09:11:44.000Z",
+  "updated_at": "2026-10-27T09:28:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1836828672,
+  "parameters_human": "1.84B",
+  "storage_bytes": 3685108666,
+  "storage_human": "3.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Crystalcareai/CrystalQwen-1.5-7B-Alpha-Lora · Hugging Face",
+      "url": "https://huggingface.co/Crystalcareai/CrystalQwen-1.5-7B-Alpha-Lora",
+      "snippet": "This model is a fine-tuned version of Qwen/Qwen1.5-7B on the openorca dataset. Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training procedure Training hyperparameters The following hyperparameters were used during training: learning_rate: 5e-05"
+    },
+    {
+      "title": "Qwen/Qwen1.5-7B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen1.5-7B",
+      "snippet": "Qwen1.5-7B Introduction Qwen1.5 is the beta version of Qwen2, a transformer-based decoder-only language model pretrained on a large amount of data. In comparison with the previous released Qwen, the improvements include: 8 model sizes, including 0.5B, 1.8B, 4B, 7B, 14B, 32B and 72B dense models, and an MoE model of 14B with 2.7B activated; Significant performance improvement in Chat models ..."
+    },
+    {
+      "title": "AI-Learning/LLM/Lora/model/README.md at main - GitHub",
+      "url": "https://github.com/Cherybaby/AI-Learning/blob/main/LLM/Lora/model/README.md",
+      "snippet": "Introduction Qwen1.5 is the beta version of Qwen2, a transformer-based decoder-only language model pretrained on a large amount of data. In comparison with the previous released Qwen, the improvements include:"
+    },
+    {
+      "title": "Deploy and fine-tune Qwen1.5 models-Platform For AI (PAI)-阿里云帮助中心",
+      "url": "https://help.aliyun.com/en/pai/use-cases/deploy-and-fine-tune-qwen-1-5-models",
+      "snippet": "Qwen1.5 is a family of open-source LLMs by Alibaba Cloud, available in Base and Chat variants across multiple sizes. This guide walks through deploying and fine-tuning the Qwen1.5-7B-Chat model in PAI Model Gallery."
+    },
+    {
+      "title": "GitHub - lili0710432/Qwen15: Qwen1.5 is the improved version of Qwen ...",
+      "url": "https://github.com/lili0710432/Qwen15",
+      "snippet": "This time, we upgrade Qwen to Qwen1.5, the beta version of Qwen2. Similar to Qwen, it is still a decoder-only transformer model with SwiGLU activation, RoPE, multi-head attention. At this moment, we have achieved: 6 model sizes: 0.5B, 1.8B, 4B, 7B, 14B, and 72B; Significant model quality improvements in chat models; Strengthened multilingual capabilities in both base and chat models; All ..."
+    }
+  ]
+}

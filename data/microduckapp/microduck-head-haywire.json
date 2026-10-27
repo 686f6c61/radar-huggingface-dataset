@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "microduckapp/microduck-head-haywire",
+  "slug": "microduckapp-microduck-head-haywire",
+  "author": "microduckapp",
+  "url": "https://huggingface.co/microduckapp/microduck-head-haywire",
+  "created_at": "2026-10-27T01:43:35.000Z",
+  "updated_at": "2026-10-27T01:43:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "robotics",
+    "microduck-move",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1367755,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "microduckapp (MicroDuck) - Hugging Face",
+      "url": "https://huggingface.co/microduckapp",
+      "snippet": "microduckapp/microduck-midnight-snack Robotics •Updated 22 minutes ago View 16 models"
+    },
+    {
+      "title": "Hugging Face Unveils Microduck: A $399 Open-Source 25 cm Biped You ...",
+      "url": "https://www.marktechpost.com/2026/08/28/pollen-robotics-hugging-face-microduck-399-open-source-rl-biped-robot/",
+      "snippet": "Pollen Robotics and Hugging Face launch Microduck, a $399 open-source 25 cm biped trained with reinforcement learning in MuJoCo."
+    },
+    {
+      "title": "Meet Microduck, a $399 Open-Source Robot That Can Learn New Tricks - PCMag",
+      "url": "https://www.pcmag.com/news/hugging-face-microduck-399-open-source-robot-that-can-learn-new-tricks",
+      "snippet": "Meet Microduck, a $399 Open-Source Robot That Can Learn New Tricks The robot comes from AI model platform Hugging Face&#x27;s Pollen Robotics arm."
+    },
+    {
+      "title": "Hugging Face&#x27;s Pollen Robotics Releases Small, Cute & Open-Source ...",
+      "url": "https://theaiinsider.tech/2026/08/28/hugging-faces-pollen-robotics-releases-small-cute-open-source-microduck-robot/",
+      "snippet": "Hugging Face&#x27;s Pollen Robotics has introduced Microduck, a small biped robot designed as an open development platform for experimenting with physical AI, reinforcement learning and transferring robot behaviors from simulation into real hardware."
+    },
+    {
+      "title": "Hugging Face Unveils Microduck, New Open-Source Biped AI Robot",
+      "url": "https://www.tech360.tv/hugging-face-unveils-microduck-new-open-source-biped-ai-robot-2026-31-08",
+      "snippet": "Hugging Face, an organisation known for its open-source artificial intelligence models, has unveiled a new biped robot named Microduck. This device is 25 centimetres tall, weighs 800 grams, and is priced at USD 399. Pre-orders for Microduck commenced on Aug. 27, with shipping anticipated before Christmas 2026."
+    }
+  ]
+}

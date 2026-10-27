@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Xing-VL2.0-Decision-GGUF",
+  "slug": "mradermacher-xing-vl2-0-decision-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Xing-VL2.0-Decision-GGUF",
+  "created_at": "2026-10-27T08:18:03.000Z",
+  "updated_at": "2026-10-27T10:24:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "decision-index",
+    "classification",
+    "multimodal",
+    "vision",
+    "en",
+    "base_model:RBDash-Team/Xing-VL2.0-Decision",
+    "base_model:quantized:RBDash-Team/Xing-VL2.0-Decision",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "decision-model",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 187905356064,
+  "storage_human": "187.9 GB",
+  "base_model": "RBDash-Team/Xing-VL2.0-Decision",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Categories - EPORNER: HD Porn Tube",
+      "url": "https://www.eporner.com/cats/",
+      "snippet": "Free Full HD porn tube - HD quality videos and photos. Watch over 2,785,355 full length hd sex movies, download porn xxx videos, …"
+    },
+    {
+      "title": "Best Porn Videos - EPORNER: HD Porn Tube",
+      "url": "https://www.eporner.com/best-videos/",
+      "snippet": "Free Full HD porn tube - HD quality videos and photos. Watch over 2,785,355 full length hd sex movies, download porn xxx videos, …"
+    },
+    {
+      "title": "Vidéos porno HD - Films haute définition complets | EPORNER",
+      "url": "https://fr.eporner.com/",
+      "snippet": "© 2026 Eporner.com is a service gratuit d'hébergement de vidéos pornographiques."
+    },
+    {
+      "title": "HD Porn Videos - Full High Definition Movies | EPORNER",
+      "url": "https://www.eporner.blog/",
+      "snippet": "Watch Full HD Porn Videos for free. We have over 5,291,153 full length Hardcore HD Sex Movies in 720p, 1080p and 4K that you …"
+    },
+    {
+      "title": "Browse Videos | Eporner",
+      "url": "https://eporner.xxx/videos/",
+      "snippet": "Eporner Home Undress Her AI Porn Videos Categories Pornstars Porn Reels Home Undress Her AI Porn Videos Categories …"
+    }
+  ]
+}

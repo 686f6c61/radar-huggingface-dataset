@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "anzeeai2/Llama-3.2-1B-Instruct-Q4_K_M",
+  "slug": "anzeeai2-llama-3-2-1b-instruct-q4_k_m",
+  "author": "anzeeai2",
+  "url": "https://huggingface.co/anzeeai2/Llama-3.2-1B-Instruct-Q4_K_M",
+  "created_at": "2026-10-27T08:54:14.000Z",
+  "updated_at": "2026-10-27T08:57:33.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:llama3.2",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1235814432,
+  "parameters_human": "1.24B",
+  "storage_bytes": 807694368,
+  "storage_human": "808 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LostGem.TV - Free Premium Lost Gem Videos!",
+      "url": "https://lostgem.tv/",
+      "snippet": "LostGem.TV - Free Premium Lost Gem Videos! Watch exclusive content with free registration."
+    },
+    {
+      "title": "lost gem +tv full videos — Yandex: found 4 thousand results",
+      "url": "https://tv.yandex.com/search?text=lost+gem+%2Btv+full+videos&msp=1",
+      "snippet": "Here's the 7-24-79 pilot for The TV Show, a sketch comedy program written by Harry Shearer, Martin Mull, Billy Crystal, Christopher …"
+    },
+    {
+      "title": "lost gem tv — Yandex: found 229 thousand results",
+      "url": "https://tv.yandex.com/search?text=lost+gem+tv",
+      "snippet": "Here's the 7-24-79 pilot for The TV Show, a sketch comedy program written by Harry Shearer, Martin Mull, Billy Crystal, Christopher …"
+    },
+    {
+      "title": "LostGem.TV (@lostgem.tv) - Urlebird",
+      "url": "https://urlebird.com/user/lostgem.tv/",
+      "snippet": "LostGem.TV is a TikTok nano influencer with 43 videos and a very low engagement rate 0.5%. They post 0 videos in month and earn …"
+    },
+    {
+      "title": "LostGem.TV @LostGemTV - Twitter Profile | TwStalker",
+      "url": "https://mobile.twstalker.com/LostGemTV",
+      "snippet": "LostGem.TV @LostGemTV https://t.co/MPQHKyCDJV offers free access to Lost Gem Videos from TikTok, Reddit, and Instagram. …"
+    }
+  ]
+}

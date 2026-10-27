@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "NADANAYO/connectailab-rl-nadanayo-v1-lunarlander",
+  "slug": "nadanayo-connectailab-rl-nadanayo-v1-lunarlander",
+  "author": "NADANAYO",
+  "url": "https://huggingface.co/NADANAYO/connectailab-rl-nadanayo-v1-lunarlander",
+  "created_at": "2026-10-27T01:51:56.000Z",
+  "updated_at": "2026-10-27T01:51:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "reinforcement-learning",
+    "deep-reinforcement-learning",
+    "dqn",
+    "gymnasium",
+    "LunarLander-v3",
+    "connect-ai-lab",
+    "connectailab",
+    "aicitybuilders",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 75389,
+  "storage_human": "75389 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "reinforcement-learning",
+      "dataset": "LunarLander-v3",
+      "metric": "처음 보는 10판 평균 점수 (200 이상 = 성공)",
+      "value": 215.6
+    }
+  ],
+  "sources": [
+    {
+      "title": "NADANAYO/connectailab-rl-nadanayo-v1 · Hugging Face",
+      "url": "https://huggingface.co/NADANAYO/connectailab-rl-nadanayo-v1",
+      "snippet": "NADANAYO / connectailab-rl-nadanayo-v1 Like 0 Reinforcement Learning PEFT Safetensors Korean deep-reinforcement-learning grpo decision-making gymnasium connect-tycoon connect-ai-lab connectailab lora qwen3.5 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "NADANAYO (Hunjin Ju) - Hugging Face",
+      "url": "https://huggingface.co/NADANAYO/models",
+      "snippet": "NADANAYO&#x27;s models1 Sort: Recently updated NADANAYO/connectailab-rl-nadanayo-v1 Reinforcement Learning •Updated about 3 hours ago"
+    },
+    {
+      "title": "connectailab-rl-nadanayo-v1 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/NADANAYO/connectailab-rl-nadanayo-v1",
+      "snippet": "Run connectailab-rl-nadanayo-v1 with FriendliAI inference. 회사의 판단 하나(상황 · 질문 · 보기)를 읽고 보기 글자 하나로 답하는 의사결정 모델입니다. 보기 글자의 확률이 선택지별 확률, 가장 큰 값이 확신입니다."
+    },
+    {
+      "title": "GitHub - khushdeepAnand/Lunar-Lander-Ai: Deep reinforcement learning ...",
+      "url": "https://github.com/khushdeepAnand/Lunar-Lander-Ai",
+      "snippet": "The desktop LUNAR AI.zip release contains the example model plus three recorded experiment logs, their best checkpoints, and selected independent evaluation CSV/JSON artifacts plus a real failure gallery so analytics and failure inspection work immediately after extraction."
+    },
+    {
+      "title": "GitHub - gokulan006/Lunar-Lander-RL-Model: This project uses ...",
+      "url": "https://github.com/gokulan006/Lunar-Lander-RL-Model",
+      "snippet": "This project implements Reinforcement Learning (RL) to train an AI agent to land a spacecraft in the OpenAI Gym Lunar Lander environment. The model utilizes Deep Q-Networks (DQN) and other deep learning-based RL techniques to optimize the landing process."
+    }
+  ]
+}

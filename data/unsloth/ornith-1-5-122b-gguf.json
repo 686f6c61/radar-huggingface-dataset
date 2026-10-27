@@ -25,11 +25,11 @@
     "conversational"
   ],
   "likes": 80,
-  "downloads_30d": 57333,
+  "downloads_30d": 90674,
   "trending_score": 79,
   "parameters": 124635206144,
   "parameters_human": "124.64B",
-  "storage_bytes": 908783336040,
+  "storage_bytes": 908783539448,
   "storage_human": "908.8 GB",
   "base_model": "ornith-ai/Ornith-1.5-122B",
   "formats": [

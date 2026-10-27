@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "MarioTheKnight/booru-lighting-tagger",
+  "slug": "mariotheknight-booru-lighting-tagger",
+  "author": "MarioTheKnight",
+  "url": "https://huggingface.co/MarioTheKnight/booru-lighting-tagger",
+  "created_at": "2026-10-27T08:48:11.000Z",
+  "updated_at": "2026-10-27T08:48:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "lighting",
+    "image-tagging",
+    "multi-label-classification",
+    "anime",
+    "illustration",
+    "booru",
+    "danbooru",
+    "e621",
+    "wd-tagger",
+    "eva02",
+    "dataset-captioning",
+    "distillation",
+    "image-classification",
+    "en",
+    "base_model:SmilingWolf/wd-eva02-large-tagger-v3",
+    "base_model:finetune:SmilingWolf/wd-eva02-large-tagger-v3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2424166824,
+  "storage_human": "2.4 GB",
+  "base_model": "SmilingWolf/wd-eva02-large-tagger-v3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MarioTheKnight User Profile - DeviantArt",
+      "url": "https://www.deviantart.com/mariotheknight",
+      "snippet": "Check out MarioTheKnight&#x27;s art on DeviantArt. Browse the user profile and get inspired."
+    },
+    {
+      "title": "MarioTheKnight User Profile | DeviantArt",
+      "url": "https://www.deviantart.com/mariotheknight/shop",
+      "snippet": "This is a private commission for an AI generated picture.The style will be 2d hentai anime style (the style I use the most on my page).I will generate hundreds of image, and work on the best one (correcting details, via gimp and inpainting) until I&#x27;m satisfied with the result.You will get a high resolution picture (2048 px for the smallest dimension) Subject:With this commission, you give me ..."
+    },
+    {
+      "title": "The Danbooru Tools Directory for AI Art (2026) | Civitai",
+      "url": "https://civitai.red/articles/27794/the-danbooru-tools-directory-for-ai-art-2026",
+      "snippet": "If you&#x27;re working with Illustrious, NoobAI-XL, Pony, or any Danbooru-trained model, you know the pain: finding the right tag, building a clean prompt, figuring out what an artist style actually looks like, or reverse-tagging an image you found somewhere. There&#x27;s a whole ecosystem of tools built to solve these problems — but they&#x27;re scattered across Vercel apps, GitHub repos, HuggingFace ..."
+    },
+    {
+      "title": "AI-generated art check thread - AIBooru",
+      "url": "https://aibooru.online/forum_topics/173",
+      "snippet": "It&#x27;s on the uploader to tag their stuff properly and obviously people there lie and try to pass of AI works as non-AI stuff and then it leads to the issue of works having a potential issue (either due to a simple mistake or some intentional artistic choice) being mistaken as AI-generated."
+    },
+    {
+      "title": "MarioTheKnight - pixiv",
+      "url": "https://www.pixiv.net/en/users/98706799",
+      "snippet": "Hello ! I&#x27;m glad you found my page, I hope you like it 😀 Please be aware that every image I upload is created using IA tools and image edit…"
+    }
+  ]
+}

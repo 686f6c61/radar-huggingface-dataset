@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "microduckapp/microduck-missed-the-chair",
+  "slug": "microduckapp-microduck-missed-the-chair",
+  "author": "microduckapp",
+  "url": "https://huggingface.co/microduckapp/microduck-missed-the-chair",
+  "created_at": "2026-10-27T01:31:24.000Z",
+  "updated_at": "2026-10-27T01:31:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "robotics",
+    "microduck-move",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1336741,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "microduckapp (MicroDuck) - Hugging Face",
+      "url": "https://huggingface.co/microduckapp",
+      "snippet": "microduckapp/microduck-midnight-snack Robotics •Updated 22 minutes ago View 16 models"
+    },
+    {
+      "title": "GitHub - pollen-robotics/microduck: A Tiny biped duck robot",
+      "url": "https://github.com/pollen-robotics/microduck",
+      "snippet": "A Tiny biped duck robot 🦆. Contribute to pollen-robotics/microduck development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - AI-FanGe/Microduck-build-tutorial: A practical hardware and ...",
+      "url": "https://github.com/AI-FanGe/Microduck-build-tutorial",
+      "snippet": "A practical hardware and software setup for a compact RL-powered biped robot. - AI-FanGe/Microduck-build-tutorial"
+    },
+    {
+      "title": "Buy Microduck: Small robot. Super smart.",
+      "url": "https://microducks.org/",
+      "snippet": "Buy Microduck, the 10 inch bipedal AI robot by Pollen Robotics × Hugging Face, shown by Jensen Huang at NVIDIA GTC Berlin. Official preorders from $399."
+    },
+    {
+      "title": "witcheer on X: \"my Microduck can now walk down a step and onto a hill ...",
+      "url": "https://x.com/witcheer/status/2113933525669867989",
+      "snippet": "my Microduck can now walk down a step and onto a hill without switching walks. I train its walks at home in a simulator on my RTX 5090. Hermes Agent queues the training runs, tests every walk and publishes each one on Hugging Face. what the mixed-floor walk handles, all in one walk: - 25 mm steps - slippery floors - shoves twice as hard as the default training - gentle hills, in the new ..."
+    }
+  ]
+}

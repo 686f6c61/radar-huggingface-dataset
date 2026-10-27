@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "jacky-qualgo/pyffe-slm-20271027",
+  "slug": "jacky-qualgo-pyffe-slm-20271027",
+  "author": "jacky-qualgo",
+  "url": "https://huggingface.co/jacky-qualgo/pyffe-slm-20271027",
+  "created_at": "2026-10-27T01:38:28.000Z",
+  "updated_at": "2026-10-27T01:47:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "bonsai",
+    "lora",
+    "q1_0",
+    "sms",
+    "fraud-detection",
+    "text-generation",
+    "base_model:prism-ml/Bonsai-1.7B-unpacked",
+    "base_model:adapter:prism-ml/Bonsai-1.7B-unpacked",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6422528,
+  "parameters_human": "6.4M",
+  "storage_bytes": 3738507733,
+  "storage_human": "3.7 GB",
+  "base_model": "prism-ml/Bonsai-1.7B-unpacked",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jacky (animateur) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Jacky_(animateur)",
+      "snippet": "Jacques Jakubowicz, dit Jacky, est un animateur de télévision français né le 30 avril 1948 dans le 19e arrondissement de Paris. Il est …"
+    },
+    {
+      "title": "Jacky : biographie, actus, photos et vidéos sur Voici.fr",
+      "url": "https://www.voici.fr/bios-people/jacky",
+      "snippet": "Mieux connu sous le nom de Jacky, Jacques Jakubowicz, né 1948, a participé, dans les années 1980 et 1990, aux émissions liées …"
+    },
+    {
+      "title": "Exclu Public : Jacky revient sur son baiser inattendu avec Mylène ...",
+      "url": "https://www.public.fr/exclu-public-jacky-revient-sur-son-baiser-inattendu-avec-mylene-farmer",
+      "snippet": "Jun 16, 2026 · Dans l'émission \"On dit tout au Public\", l'animateur Jacky est revenu avec nostalgie sur ses débuts à la télévision. Il a …"
+    },
+    {
+      "title": "Prénom Jacky (garçon) : signification, origine, caractère, saint, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/jacky/prenom-4078",
+      "snippet": "Quelle est l'origine du prénom Jacky ? Le prénom Jacky est dérivé du prénom hébraïque Ya'aqov. Ce prénom est également un nom …"
+    },
+    {
+      "title": "\"Il m'a appris la vie\" : Les confidences de Jacky sur le ... - Nostalgie",
+      "url": "https://www.nostalgie.fr/artistes/philippe-vandel/actus/il-ma-appris-la-vie-les-confidences-de-jacky-sur-le-vrai-serge-gainsbourg-70251320",
+      "snippet": "2 days ago · Au micro de Philippe Vandel dans le Nostalgie Vinyl Club, Jacky s'est confié à cœur ouvert. L'ancien attaché de presse, …"
+    }
+  ]
+}

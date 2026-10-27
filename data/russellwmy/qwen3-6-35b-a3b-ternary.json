@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "russellwmy/qwen3.6-35b-a3b-ternary",
+  "slug": "russellwmy-qwen3-6-35b-a3b-ternary",
+  "author": "russellwmy",
+  "url": "https://huggingface.co/russellwmy/qwen3.6-35b-a3b-ternary",
+  "created_at": "2026-10-27T08:28:21.000Z",
+  "updated_at": "2026-10-27T10:38:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "ternary",
+    "moe",
+    "gptq",
+    "apple-silicon",
+    "ironbark",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2894927216,
+  "parameters_human": "2.89B",
+  "storage_bytes": 11362467469,
+  "storage_human": "11.4 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qwen3.6-35b-a3b | Model Catalog | Microsoft Foundry",
+      "url": "https://ai.azure.com/catalog/models/qwen3.6-35b-a3b",
+      "snippet": "Qwen3.6-35B is a post-trained causal language model that uses a hybrid stack of Gated DeltaNet and Gated Attention blocks with sparse Mixture-of-Experts routing."
+    },
+    {
+      "title": "FW-Qwen3.6-35B-A3B | Model Catalog | Microsoft Foundry",
+      "url": "https://ai.azure.com/catalog/models/FW-Qwen3.6-35B-A3B",
+      "snippet": "Qwen3.6-35B-A3B is a post-trained causal language model with a vision encoder that uses a hybrid stack of Gated DeltaNet and Gated Attention blocks with sparse Mixture-of-Experts routing, totaling 35B parameters with 3B activated per token. Built on direct feedback from the community, Qwen3.6 prioritizes stability and real-world utility, offering developers a more intuitive, responsive, and ..."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B — 35B MoE Coding Model, 3B… | AI/TLDR",
+      "url": "https://ai-tldr.dev/releases/qwen-qwen3-6-35b-a3b/",
+      "snippet": "Qwen3.6-35B-A3B is a sparse Mixture-of-Experts model released under Apache 2.0. With 256 experts and only 3B parameters activated per forward pass, it delivers coding and reasoning performance comparable to dense models far larger than its active size."
+    },
+    {
+      "title": "qwen3.6-35b-a3b Model Info-Alibaba Cloud Model Studio ... - 阿里云",
+      "url": "https://help.aliyun.com/en/model-studio/qwen3-6-35b-a3b",
+      "snippet": "The Qwen3.6 35B-A3B native vision-language model is built on a hybrid architecture that integrates linear attention mechanisms with a sparse mixture-of-experts framework, achieving higher inference efficiency. Compared with the 3.5-35B-A3B, this model demonstrates significantly improved agentic coding capabilities, mathematical and code reasoning abilities, spatial intelligence, as well as ..."
+    },
+    {
+      "title": "Qwen3.6 - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen36",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

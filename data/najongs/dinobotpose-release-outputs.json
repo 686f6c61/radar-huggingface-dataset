@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Najongs/dinobotpose-release-outputs",
+  "slug": "najongs-dinobotpose-release-outputs",
+  "author": "Najongs",
+  "url": "https://huggingface.co/Najongs/dinobotpose-release-outputs",
+  "created_at": "2026-10-27T09:04:06.000Z",
+  "updated_at": "2026-10-27T09:08:30.000Z",
+  "license": "dinov3-license",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "pose-estimation",
+    "dinov3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 33285896417,
+  "storage_human": "33.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Najongs/dinobotpose · Hugging Face",
+      "url": "https://huggingface.co/Najongs/dinobotpose",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Releases: Najongs/DINObotPose - GitHub",
+      "url": "https://github.com/Najongs/DINObotPose/releases",
+      "snippet": "You can create a release to package software, along with release notes and links to binary files, for other people to use. Learn more about releases in our docs."
+    },
+    {
+      "title": "GitHub - Najongs/DINObotPose: DINObotPose",
+      "url": "https://github.com/Najongs/DINObotPose",
+      "snippet": "DINObotPose. Contribute to Najongs/DINObotPose development by creating an account on GitHub."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=robot-pose",
+      "snippet": "Explore machine learning models. 1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: robot-pose Clear all"
+    },
+    {
+      "title": "GPT-5.2 API Model Name & Full 2026 Lineup - aicomparison.ai",
+      "url": "https://aicomparison.ai/openai-models-guide/",
+      "snippet": "GPT-5.2 is OpenAI&#x27;s current flagship model. See the full 2026 lineup, API model names like gpt-5.2-chat-latest, and pricing by use case."
+    }
+  ]
+}

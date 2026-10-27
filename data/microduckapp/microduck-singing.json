@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "microduckapp/microduck-singing",
+  "slug": "microduckapp-microduck-singing",
+  "author": "microduckapp",
+  "url": "https://huggingface.co/microduckapp/microduck-singing",
+  "created_at": "2026-10-27T01:41:04.000Z",
+  "updated_at": "2026-10-27T01:41:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "robotics",
+    "microduck-move",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1207588,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "microduckapp (MicroDuck) - Hugging Face",
+      "url": "https://huggingface.co/microduckapp",
+      "snippet": "microduckapp/microduck-midnight-snack Robotics •Updated 22 minutes ago View 16 models"
+    },
+    {
+      "title": "GitHub - pollen-robotics/microduck: A Tiny biped duck robot",
+      "url": "https://github.com/pollen-robotics/microduck",
+      "snippet": "A Tiny biped duck robot 🦆. Contribute to pollen-robotics/microduck development by creating an account on GitHub."
+    },
+    {
+      "title": "Microduck - A tiny biped robot you can teach new tricks | Pollen Robotics",
+      "url": "https://pollen-robotics.com/microduck/",
+      "snippet": "Microduck is a 25 cm biped robot with 15 motors, a camera, LiDAR and a grasping beak. Playable out of the box, and its open-source stack lets you train new behaviours in simulation and run them on the robot. Pre-order at $399."
+    },
+    {
+      "title": "Each Microduck Sings with Unique AI Voice - semasocial.com",
+      "url": "https://semasocial.com/blog/each-microduck-can-also-sing-with-its-own-unique-generated-voice",
+      "snippet": "Introduction to Microduck&#x27;s Unique Singing Imagine a world where every digital companion doesn&#x27;t just chirp, but truly sings. This is the reality with Microduck, where each individual duck is capable of producing its own unique generated voice. Unlike static, pre-recorded sound files, the novelty lies in the personalization: no two Microducks sound alike, even if they share the same model or ..."
+    },
+    {
+      "title": "Hugging Face Introduces $400 Microduck Robot Capable of Singing and ...",
+      "url": "https://robottoday.com/industry-briefing/hugging-face-introduces-400-microduck-robot-capable-of-singing-and-skating/11723",
+      "snippet": "Hugging Face unveils Microduck, a $400 singing and skating robot, enhancing accessibility in AI and robotics for consumers."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "felsager/pi05_cube2cross",
+  "slug": "felsager-pi05_cube2cross",
+  "author": "felsager",
+  "url": "https://huggingface.co/felsager/pi05_cube2cross",
+  "created_at": "2026-10-27T01:33:06.000Z",
+  "updated_at": "2026-10-27T01:33:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "dataset:felsager/vla_cubes_big",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, DeepSeek, Qwen, Mistral, Z.ai, Meta, and important open-weight model families."
+    },
+    {
+      "title": "felsager/pi05_base_ee_rel · Hugging Face",
+      "url": "https://huggingface.co/felsager/pi05_base_ee_rel",
+      "snippet": "Instructions to use felsager/pi05_base_ee_rel with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use felsager/pi05_base_ee_rel with LeRobot:"
+    },
+    {
+      "title": "Faless/pi05_cubo · Hugging Face",
+      "url": "https://huggingface.co/Faless/pi05_cubo",
+      "snippet": "Model Card for pi05 π₀.₅ (Pi05) Policy π₀.₅ is a Vision-Language-Action model with open-world generalization, from Physical Intelligence. The LeRobot implementation is adapted from their open source OpenPI repository. Model Overview π₀.₅ represents a significant evolution from π₀, developed by Physical Intelligence to address a big challenge in robotics: open-world ..."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/pi05/model_adaptation.py at ...",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/pi05/model_adaptation.py",
+      "snippet": "Qualcomm® AI Hub Models is our collection of state-of-the-art machine learning models optimized for performance (latency, memory etc.) and ready to deploy on Qualcomm® devices. - qualcomm/ai-hub-mo..."
+    },
+    {
+      "title": "Open Source AI Models 2026: Llama, Mistral, DeepSeek & The Complete Guide",
+      "url": "https://aiunpacking.com/guides/open-source-ai-models-2026-llama-mistral-deepseek/",
+      "snippet": "A current guide to open and open-weight AI models in 2026, including Llama 5, Mistral Large 3, DeepSeek V4, licensing, deployment, fine-tuning, and enterprise selection."
+    }
+  ]
+}

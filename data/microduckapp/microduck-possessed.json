@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "microduckapp/microduck-possessed",
+  "slug": "microduckapp-microduck-possessed",
+  "author": "microduckapp",
+  "url": "https://huggingface.co/microduckapp/microduck-possessed",
+  "created_at": "2026-10-27T01:45:02.000Z",
+  "updated_at": "2026-10-27T01:45:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "robotics",
+    "microduck-move",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1387554,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=created",
+      "snippet": "Together AI · Fireworks · Featherless AI · Zai. + 9 + 11 + 10. Hardware ... microduckapp/microduck-possessed. Robotics • Updated in about 2 hours · ugaoo ..."
+    }
+  ]
+}

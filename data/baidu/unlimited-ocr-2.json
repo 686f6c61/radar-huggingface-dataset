@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "baidu/Unlimited-OCR-2",
+  "slug": "baidu-unlimited-ocr-2",
+  "author": "baidu",
+  "url": "https://huggingface.co/baidu/Unlimited-OCR-2",
+  "created_at": "2026-10-26T03:57:46.000Z",
+  "updated_at": "2026-10-27T02:45:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unlimited-ocr",
+    "feature-extraction",
+    "baidu",
+    "vision-language",
+    "ocr",
+    "custom_code",
+    "image-text-to-text",
+    "multilingual",
+    "arxiv:2606.23050",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 162,
+  "downloads_30d": 513,
+  "trending_score": 155,
+  "parameters": 3343978497,
+  "parameters_human": "3.34B",
+  "storage_bytes": 7102782199,
+  "storage_human": "7.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "baidu（Leader mondial des moteurs de recherche en langue chinoise ...",
+      "url": "https://baike.baidu.com/fr/item/baidu/1544311",
+      "snippet": "Le 13 novembre, Baidu a annoncé le lancement officiel du moteur IA \"Baidu Orion\", ouvrant pour la première fois pleinement au …"
+    },
+    {
+      "title": "Baidu",
+      "url": "https://www.baidu.com/\"",
+      "snippet": "Baidu ... ."
+    },
+    {
+      "title": "Baidu — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Baidu",
+      "snippet": "En mai 2006, Baidu a lancé une encyclopédie collaborative en ligne inspirée de Wikipédia, la version chinoise faisant à l'époque …"
+    },
+    {
+      "title": "Unlimited OCR Works: Welcome the Era of One-shot Long ... - GitHub",
+      "url": "https://github.com/baidu/Unlimited-OCR",
+      "snippet": "Unlimited OCR Works: Welcome the Era of One-shot Long-horizon Parsing. - baidu/Unlimited-OCR."
+    },
+    {
+      "title": "Baidu（Société Baidu）_Baidu Encyclopédie",
+      "url": "https://baike.baidu.com/fr/item/Baidu/986466",
+      "snippet": "Baidu répond quotidiennement à des milliards de requêtes de recherche provenant de plus de 100 pays et régions. C'est la …"
+    }
+  ]
+}

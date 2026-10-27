@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "taurusduan/MiniMax-H3-Turbo-Lora-ComfyUI",
+  "slug": "taurusduan-minimax-h3-turbo-lora-comfyui",
+  "author": "taurusduan",
+  "url": "https://huggingface.co/taurusduan/MiniMax-H3-Turbo-Lora-ComfyUI",
+  "created_at": "2026-10-27T09:14:52.000Z",
+  "updated_at": "2026-10-27T09:14:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "lora",
+    "adapter",
+    "comfyui",
+    "text-to-video",
+    "reference-to-video",
+    "audio-video",
+    "synchronized-audio",
+    "few-step",
+    "turbo",
+    "accelerated-inference",
+    "hyperflow",
+    "lightx2v",
+    "dynamic-rank",
+    "svd",
+    "safetensors",
+    "bfloat16",
+    "pruned-model",
+    "curve-form",
+    "base_model:Comfy-Org/MiniMax-H3",
+    "base_model:adapter:Comfy-Org/MiniMax-H3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30239298340,
+  "storage_human": "30.2 GB",
+  "base_model": "Comfy-Org/MiniMax-H3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MiniMax H3 Turbo LoRA: Faster Local Video Gen in ComfyUI | MindStudio",
+      "url": "https://www.mindstudio.ai/blog/minimax-h3-turbo-lora-comfyui-local",
+      "snippet": "The MiniMax H3 Turbo LoRA is a small adapter file that speeds up sampling for MiniMax H3, a 33 billion parameter model that generates video with synchronized stereo audio in a single pass."
+    },
+    {
+      "title": "drbaph/MiniMax-H3-Turbo-Lora-ComfyUI · Hugging Face",
+      "url": "https://huggingface.co/drbaph/MiniMax-H3-Turbo-Lora-ComfyUI",
+      "snippet": "This repository contains MiniMax-H3 Turbo and few-step LoRAs converted and optimized for ComfyUI."
+    },
+    {
+      "title": "taurusduan/MiniMax-H3-Turbo-Lora · Hugging Face",
+      "url": "https://huggingface.co/taurusduan/MiniMax-H3-Turbo-Lora",
+      "snippet": "Custom nodes: Larryvrh/ComfyUI-MiniMax-H3-Turbo — or search \"MiniMax-H3 Turbo\" in ComfyUI-Manager. (Keep the node updated; it evolves alongside these weights.) Install the nodes (Manager, or git clone into ComfyUI/custom_nodes) and put a .safetensors from this repo into ComfyUI/models/loras/. You also need the base MiniMax-H3 model, VAEs and text encoder — see the MiniMax-H3 tutorial."
+    },
+    {
+      "title": "MiniMax H3 Turbo LoRA in ComfyUI: 4-Step Setup and Fixes",
+      "url": "https://www.instasd.com/post/minimax-h3-turbo-lora-comfyui-4-steps",
+      "snippet": "The LoRA is larryvrh's, and the current file is minimax_h3_turbo_4step_ema_ckpt850.safetensors. It is bf16, about 744 MB, applied as an ordinary low-rank update with alpha set equal to rank, so there is no hidden scaling factor to reason about."
+    },
+    {
+      "title": "GitHub - Larryvrh/ComfyUI-MiniMax-H3-Turbo · GitHub",
+      "url": "https://github.com/Larryvrh/ComfyUI-MiniMax-H3-Turbo",
+      "snippet": "cd ComfyUI/custom_nodes git clone https://github.com/larryvrh/ComfyUI-MiniMax-H3-Turbo · Then restart ComfyUI. Keep the node updated (Manager, or git pull) — it evolves alongside the weights. Put the LoRA .safetensors into ComfyUI/models/loras/. You also need the base MiniMax-H3 model, VAEs and text encoder from the official release — see the MiniMax-H3 tutorial."
+    }
+  ]
+}

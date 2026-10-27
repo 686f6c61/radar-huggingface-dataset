@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/augmented-251c4004cd68545a",
+  "slug": "gradients-io-tournaments-augmented-251c4004cd68545a",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/augmented-251c4004cd68545a",
+  "created_at": "2026-10-27T08:22:19.000Z",
+  "updated_at": "2026-10-27T08:23:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766578,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gradients-io-tournaments/augmented-251c4004cd68545a · Hugging Face",
+      "url": "https://huggingface.co/gradients-io-tournaments/augmented-251c4004cd68545a",
+      "snippet": "gradients-io-tournaments / augmented-251c4004cd68545a Like 0 Text Generation Transformers Safetensors llama conversational text-generation-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "gradients-io-tournaments/augmented-4581697bbe77b6f9 · Hugging Face",
+      "url": "https://huggingface.co/gradients-io-tournaments/augmented-4581697bbe77b6f9",
+      "snippet": "Instructions to use gradients-io-tournaments/augmented-4581697bbe77b6f9 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Gradients | Anyone Can Train AI",
+      "url": "https://www.gradients.io/",
+      "snippet": "INTELLIGENCE, SIMPLIFIED. Gradients allows anyone in the world to train image & text models - intelligence, simplified."
+    },
+    {
+      "title": "gradients-io-tournaments/augmented-1f003e4fb12a653d - featherless.ai",
+      "url": "https://featherless.ai/models/gradients-io-tournaments/augmented-1f003e4fb12a653d",
+      "snippet": "Deploy Augmented-1f003e4fb12a653d (1.5B parameters) via OpenAI-compatible API with 32K context. Flat-rate pricing from $25/month. The gradients-io-tourn..."
+    },
+    {
+      "title": "gradients-io-tournaments/augmented-f44b5eb328d7bc4d - featherless.ai",
+      "url": "https://featherless.ai/models/gradients-io-tournaments/augmented-f44b5eb328d7bc4d",
+      "snippet": "Deploy Augmented-f44b5eb328d7bc4d (1.1B parameters) via OpenAI-compatible API with 2K context. Flat-rate pricing from $25/month."
+    }
+  ]
+}

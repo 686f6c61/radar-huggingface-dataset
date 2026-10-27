@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "abdelstark/hallmark-byte-mlp",
+  "slug": "abdelstark-hallmark-byte-mlp",
+  "author": "abdelstark",
+  "url": "https://huggingface.co/abdelstark/hallmark-byte-mlp",
+  "created_at": "2026-10-27T08:53:15.000Z",
+  "updated_at": "2026-10-27T08:53:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "hallmark",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "hallmark",
+    "cryptographic-inference",
+    "integer-inference",
+    "synthetic-data",
+    "research",
+    "text-classification",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "classifiers: implement the byte-feature integer MLP runtime #12",
+      "url": "https://github.com/AbdelStark/hallmark/issues/12",
+      "snippet": "The native runtime binds exact program/profile/weight identities, validates the fixed affine/ReLU/affine export, rejects int32 partial-sum overflow before rescaling, processes all prompt bytes and applies max aggregation with a strict threshold."
+    },
+    {
+      "title": "GitHub - AbdelStark/hallmark: Research on transcript-bound classifier ...",
+      "url": "https://github.com/AbdelStark/hallmark/tree/main/",
+      "snippet": "Research on transcript-bound classifier verdicts. The intended system pairs hardware-attested model provenance with independently verifiable classifier computation. A classifier pass is a result under a fixed policy, not evidence of safety in the world. - AbdelStark/hallmark"
+    },
+    {
+      "title": "ModelArk - BytePlus",
+      "url": "https://www.byteplus.com/en/product/modelark",
+      "snippet": "A next-generation model tailored for the coding and agent era, with comprehensive upgrades in engineering-grade code delivery, long-horizon agent execution, and multimodal understanding."
+    },
+    {
+      "title": "abdelstark (Abdel) - Hugging Face",
+      "url": "https://huggingface.co/abdelstark",
+      "snippet": "World Models. LLMs. AI Safety. liked a model 14 days ago"
+    },
+    {
+      "title": "abdelstark (Abdel) - Hugging Face",
+      "url": "https://huggingface.co/abdelstark/models",
+      "snippet": "World Models. LLMs. AI Safety. updated a model about 13 hours ago"
+    }
+  ]
+}

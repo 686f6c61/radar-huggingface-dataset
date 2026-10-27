@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "axteam/Qwen3.5-9B-AWQ-8bit",
+  "slug": "axteam-qwen3-5-9b-awq-8bit",
+  "author": "axteam",
+  "url": "https://huggingface.co/axteam/Qwen3.5-9B-AWQ-8bit",
+  "created_at": "2026-10-27T09:06:22.000Z",
+  "updated_at": "2026-10-27T09:10:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen",
+    "compressed-tensors",
+    "vllm",
+    "quantized",
+    "conversational",
+    "multimodal",
+    "awq",
+    "int8",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:quantized:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 12833084710,
+  "storage_human": "12.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5-9B | Awesome Agents",
+      "url": "https://awesomeagents.ai/models/qwen-3-5-9b/",
+      "snippet": "Qwen3.5-9B is a 9B dense model that outperforms Qwen3-30B on most benchmarks and beats GPT-5-Nano on vision tasks. Natively multimodal with 262K-1M context, Apache 2.0 licensed."
+    },
+    {
+      "title": "Quantized Models for Qwen/Qwen3.5-9B - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:Qwen/Qwen3.5-9B",
+      "snippet": "Active filters: Qwen/Qwen3.5-9B. Clear all. prism-ml/Ternary-Bonsai-2-9B-gguf. Image-Text-to-Text • 1B • Updated 8 days ago • 112k • 124"
+    },
+    {
+      "title": "Qwen3.5-9B tops every AI benchmark right now, but that&#x27;s not how you ...",
+      "url": "https://www.xda-developers.com/qwen-3-5-9b-tops-ai-benchmarks-not-how-pick-model/",
+      "snippet": "Qwen3.5-9B has been making waves in the AI enthusiast community, especially given that Alibaba&#x27;s compact reasoning model outscored OpenAI&#x27;s gpt-oss-120b on GPQA Diamond, MMLU-Pro, and MMMLU, all ..."
+    },
+    {
+      "title": "qwen--qwen3.5-9b | Model Catalog | Microsoft Foundry",
+      "url": "https://ai.azure.com/catalog/models/qwen--qwen3.5-9b",
+      "snippet": "Qwen3.5 9B multimodal model for visual reasoning, OCR, and long-context generation. Sign in to Microsoft Foundry to deploy this model."
+    },
+    {
+      "title": "Qwen3.5 9B API: Pricing, Benchmarks & Docs | Together AI",
+      "url": "https://www.together.ai/models/qwen3-5-9b",
+      "snippet": "Qwen&#x27;s 9B multimodal model with hybrid architecture, 262K native context, vision-language reasoning, native tool calling, and 201-language support for agentic workflows"
+    }
+  ]
+}

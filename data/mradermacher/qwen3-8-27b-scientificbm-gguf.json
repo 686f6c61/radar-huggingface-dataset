@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.8-27B-ScientificBM-GGUF",
+  "slug": "mradermacher-qwen3-8-27b-scientificbm-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-ScientificBM-GGUF",
+  "created_at": "2026-10-27T09:14:46.000Z",
+  "updated_at": "2026-10-27T09:56:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "biomedical",
+    "bioinformatics",
+    "tool-calling",
+    "function-calling",
+    "ncbi",
+    "uniprot",
+    "ensembl",
+    "qwen3_5",
+    "research",
+    "en",
+    "dataset:gxx27/BioTool",
+    "base_model:Rumiii/Qwen3.8-27B-ScientificBM",
+    "base_model:quantized:Rumiii/Qwen3.8-27B-ScientificBM",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 175360024448,
+  "storage_human": "175.4 GB",
+  "base_model": "Rumiii/Qwen3.8-27B-ScientificBM",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Qwen3.8-27B-full-Uncensored-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-full-Uncensored-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/Qwen3.8-27B-heretic-ara-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-heretic-ara-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/Qwen3.8-27B-Uncensored-NOESIS-BF16-i1-GGUF",
+      "url": "https://huggingbay.xyz/artifact/hf-model-mradermacher-qwen3-8-27b-uncensored-noesis-bf16-i1-gguf",
+      "snippet": "mradermacher/Qwen3.8-27B-Uncensored-NOESIS-BF16-i1-GGUF is an open-weights language model for general published by mradermacher, added to Hugging Bay Sep 17, 2026."
+    },
+    {
+      "title": "mradermacher/Qwen3.8-27B-Uncensored-GGUF - abliteration.org",
+      "url": "https://abliteration.org/models/mradermacher/Qwen3.8-27B-Uncensored-GGUF",
+      "snippet": "Qwen3.8-27B-Uncensored-GGUF by mradermacher: M8 Repackaging (quantization). 7.2K downloads, 3 likes on Hugging Face. Files, benchmarks and abliteration classification on abliteration.org."
+    },
+    {
+      "title": "mradermacher/Qwen3.8-27B-full-Uncensored-GGUF",
+      "url": "https://abliteration.org/models/mradermacher/Qwen3.8-27B-full-Uncensored-GGUF",
+      "snippet": "Qwen3.8-27B-full-Uncensored-GGUF by mradermacher: M8 Repackaging (quantization). 1.1K downloads, 0 likes on Hugging Face. Files, benchmarks and abliteration classification on abliteration.org."
+    }
+  ]
+}

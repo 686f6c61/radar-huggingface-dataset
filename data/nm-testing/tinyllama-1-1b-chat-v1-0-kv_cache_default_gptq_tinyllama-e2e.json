@@ -5,7 +5,7 @@
   "author": "nm-testing",
   "url": "https://huggingface.co/nm-testing/TinyLlama-1.1B-Chat-v1.0-kv_cache_default_gptq_tinyllama-e2e",
   "created_at": "2026-07-24T23:47:55.000Z",
-  "updated_at": "2026-10-09T18:43:59.000Z",
+  "updated_at": "2026-10-27T00:13:37.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -18,12 +18,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 30,
+  "downloads_30d": 31,
   "trending_score": 0,
   "parameters": 1100048428,
   "parameters_human": "1.10B",
-  "storage_bytes": 2990991211,
-  "storage_human": "3.0 GB",
+  "storage_bytes": 3738614083,
+  "storage_human": "3.7 GB",
   "base_model": null,
   "formats": [
     "safetensors"

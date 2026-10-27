@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Kruk2/ltx-restore",
+  "slug": "kruk2-ltx-restore",
+  "author": "Kruk2",
+  "url": "https://huggingface.co/Kruk2/ltx-restore",
+  "created_at": "2026-10-01T20:32:15.000Z",
+  "updated_at": "2026-10-24T00:10:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 17,
+  "downloads_30d": 0,
+  "trending_score": 12,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 170321692672,
+  "storage_human": "170.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kruk2/ltx-restore at main - Hugging Face",
+      "url": "https://huggingface.co/Kruk2/ltx-restore/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Kruk2/ltx-restore · Hugging Face",
+      "url": "https://huggingface.co/Kruk2/ltx-restore",
+      "snippet": "Kruk2 / ltx-restore Like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "GitHub - Kruk2/jasna: Video restoration tool",
+      "url": "https://github.com/Kruk2/jasna",
+      "snippet": "Video restoration tool. Contribute to Kruk2/jasna development by creating an account on GitHub."
+    },
+    {
+      "title": "jasna/docs/en/models.md at main · Kruk2/jasna · GitHub",
+      "url": "https://github.com/Kruk2/jasna/blob/main/docs/en/models.md",
+      "snippet": "Video restoration tool. Contribute to Kruk2/jasna development by creating an account on GitHub."
+    },
+    {
+      "title": "Jasna LTX v0.11.1 Released! — Kruk2 - Buy Me a Coffee",
+      "url": "https://buymeacoffee.com/kruk2/v0-11-1-released",
+      "snippet": "Post by Kruk2 It includes the brand new restoration model! Enjoy. It&#x27;s free to anyone who supported me so far - but if you feel like buying me another coffee - THANKS. If you&#x27;re a new supporter please read the description on my profile, check hardware requirements. AMD is currently not supported and rented cloud machines have limited support as they require special license (check github readme ..."
+    }
+  ]
+}

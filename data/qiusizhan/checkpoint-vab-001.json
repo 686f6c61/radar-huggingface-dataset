@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "qiusizhan/checkpoint-vab-001",
+  "slug": "qiusizhan-checkpoint-vab-001",
+  "author": "qiusizhan",
+  "url": "https://huggingface.co/qiusizhan/checkpoint-vab-001",
+  "created_at": "2026-10-27T08:57:23.000Z",
+  "updated_at": "2026-10-27T08:57:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qwen3_5",
+    "backdoor-auditing",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 173188512,
+  "storage_human": "173 MB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qiusizhan/checkpoint-vab-001 · Hugging Face",
+      "url": "https://huggingface.co/qiusizhan/checkpoint-vab-001",
+      "snippet": "Instructions to use qiusizhan/checkpoint-vab-001 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use qiusizhan/checkpoint-vab-001 with PEFT:"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=checkpoint",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Checkpoint AI Models (146) | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 146 AI models tagged \"Checkpoint\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    },
+    {
+      "title": "Best wai - b1 v1 AI CHECKPOINT - Free Download | TensorHub Art",
+      "url": "https://tensorhub.art/models/1006347305214833918",
+      "snippet": "Download wai - free CHECKPOINT Cosmos-Predict2 AI model on TENSORHUB ART. By user_783488926546636858"
+    },
+    {
+      "title": "Best v1.0 AI CHECKPOINT - Free Download | TensorHub Art",
+      "url": "https://tensorhub.art/models/900133421114781725",
+      "snippet": "Download v1.0 - free CHECKPOINT Illustrious AI model on TENSORHUB ART. By EDICT"
+    }
+  ]
+}

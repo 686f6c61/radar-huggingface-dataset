@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "NGA-KR/ko-embed-midm",
+  "slug": "nga-kr-ko-embed-midm",
+  "author": "NGA-KR",
+  "url": "https://huggingface.co/NGA-KR/ko-embed-midm",
+  "created_at": "2026-10-27T01:23:15.000Z",
+  "updated_at": "2026-10-27T01:25:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "llama",
+    "embedding",
+    "retrieval",
+    "mteb",
+    "korean",
+    "sentence-similarity",
+    "ko",
+    "en",
+    "base_model:K-intelligence/Midm-2.0-Mini-Instruct",
+    "base_model:finetune:K-intelligence/Midm-2.0-Mini-Instruct",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2305517312,
+  "parameters_human": "2.31B",
+  "storage_bytes": 4611082352,
+  "storage_human": "4.6 GB",
+  "base_model": "K-intelligence/Midm-2.0-Mini-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NGA-KR/ko-embed-v0 · Hugging Face",
+      "url": "https://huggingface.co/NGA-KR/ko-embed-v0",
+      "snippet": "Instructions to use NGA-KR/ko-embed-v0 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries sentence-transformers How to use NGA-KR/ko-embed-v0 with sentence-transformers:"
+    },
+    {
+      "title": "OpenLLM-Korea/Midm-2.0-Base-Instruct · Hugging Face",
+      "url": "https://huggingface.co/OpenLLM-Korea/Midm-2.0-Base-Instruct",
+      "snippet": "Mi:dm 2.0 is a \"Korea-centric AI\" model developed using KT&#x27;s proprietary technology. The term \"Korea-centric AI\" refers to a model that deeply internalizes the unique values, cognitive frameworks, and commonsense reasoning inherent to Korean society."
+    },
+    {
+      "title": "Mi:dm 2.0 Base Instruct — 한국 AI 모델 | Korea AI Map",
+      "url": "https://korea-ai-map.github.io/models/midm-2-0-base/",
+      "snippet": "Mi:dm 2.0 Base Instruct은 (는) KT가 개발한 한국 AI 모델입니다. 파라미터 11.5B, 컨텍스트 미공개, 라이선스 MIT (상업 이용 가능) 등 공식 출처 기반 정보를 제공합니다."
+    },
+    {
+      "title": "GitHub - K-intelligence-Midm/Midm-2.0: Official repository for Mi:dm 2. ...",
+      "url": "https://github.com/K-intelligence-Midm/Midm-2.0",
+      "snippet": "Mi:dm 2.0 is a \"Korea-centric AI\" model developed using KT&#x27;s proprietary technology. The term \"Korea-centric AI\" refers to a model that deeply internalizes the unique values, cognitive frameworks, and commonsense reasoning inherent to Korean society. It goes beyond simply processing or generating Korean text—it reflects a deeper understanding of the socio-cultural norms and values that ..."
+    },
+    {
+      "title": "Midm-2.0-Mini-Instruct · Model · Inferix",
+      "url": "https://inferix.co/models/K-intelligence/Midm-2.0-Mini-Instruct",
+      "snippet": "Mi:dm 2.0 is a \"Korea-centric AI\" model developed using KT&#x27;s proprietary technology. The term \"Korea-centric AI\" refers to a model that deeply internalizes the unique values, cognitive frameworks, and commonsense reasoning inherent to Korean society."
+    }
+  ]
+}

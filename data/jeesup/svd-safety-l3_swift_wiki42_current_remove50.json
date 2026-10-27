@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l3_swift_wiki42_current_remove50",
+  "slug": "jeesup-svd-safety-l3_swift_wiki42_current_remove50",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l3_swift_wiki42_current_remove50",
+  "created_at": "2026-10-27T08:34:04.000Z",
+  "updated_at": "2026-10-27T10:44:09.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "compression",
+    "safety",
+    "swift-svd",
+    "conversational",
+    "base_model:meta-llama/Meta-Llama-3-8B-Instruct",
+    "base_model:finetune:meta-llama/Meta-Llama-3-8B-Instruct",
+    "license:llama3",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16120414787,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jeesup/svd-safety-l3_swift_remove50 · Hugging Face",
+      "url": "https://huggingface.co/Jeesup/svd-safety-l3_swift_remove50",
+      "snippet": "svd-safety-l3_swift_remove50 A Llama-2-7b-chat checkpoint compressed with SVD-LLM to 50.0% of dense parameters, then given a 0.0% parameter budget of restored SVD components selected by the unknown rule."
+    },
+    {
+      "title": "Jeesup/svd-safety-l3_swift_jbbsft1_remove50 · Hugging Face",
+      "url": "https://huggingface.co/Jeesup/svd-safety-l3_swift_jbbsft1_remove50",
+      "snippet": "Instructions to use Jeesup/svd-safety-l3_swift_jbbsft1_remove50 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "svd-safety-l3_swift_remove50 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Jeesup/svd-safety-l3_swift_remove50",
+      "snippet": "Deploy svd-safety-l3_swift_remove50 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Jeesup/svd-safety-l31_swift_remove50 - featherless.ai",
+      "url": "https://featherless.ai/models/Jeesup/svd-safety-l31_swift_remove50",
+      "snippet": "This model, svd-safety-l31_swift_remove50, is a research artifact derived from meta-llama/Llama-3.1-8B-Instruct. It has undergone significant compression using SVD-LLM, resulting in the removal of 50.0% of its dense parameters."
+    },
+    {
+      "title": "svd-safety-l3_swift_jbbsft1_remove50 - FriendliAI",
+      "url": "https://friendli.ai/models/Jeesup/svd-safety-l3_swift_jbbsft1_remove50",
+      "snippet": "Deploy svd-safety-l3_swift_jbbsft1_remove50 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

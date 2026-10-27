@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "LarryAIDraw/FireflyHonkaiStarRail_v1",
+  "slug": "larryaidraw-fireflyhonkaistarrail_v1",
+  "author": "LarryAIDraw",
+  "url": "https://huggingface.co/LarryAIDraw/FireflyHonkaiStarRail_v1",
+  "created_at": "2026-10-27T08:26:16.000Z",
+  "updated_at": "2026-10-27T08:26:51.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 228467436,
+  "storage_human": "228 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LarryAIDraw/firefly · Hugging Face",
+      "url": "https://huggingface.co/LarryAIDraw/firefly",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LarryAIDraw/firefly_honkai_star_rail_v1_pdxl_goofy · Hugging Face",
+      "url": "https://huggingface.co/LarryAIDraw/firefly_honkai_star_rail_v1_pdxl_goofy",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "firefly [honkai: star rail] - V1 | Illustrious LoRA | Civitai",
+      "url": "https://civitai.com/models/2403989/firefly-honkai-star-rail",
+      "snippet": "firefly [honkai: star rail] [V1] lora weight = approx. 0.8 to 1 Base : 1girl, solo, hdfirefly, long hair, grey hair, hairband, hair intakes, purple..."
+    },
+    {
+      "title": "firefly_(honkai: star rail) - v1.0 | Stable Diffusion XL LoRA - Civitai",
+      "url": "https://civitai.com/models/459437/fireflyhonkai-star-rail",
+      "snippet": "Based on Animagine XL V3.0 Recommended options Trigger words Base firefly &#92; (honkai:star rail&#92;) default clothing : black jacket, white shirt, necker..."
+    },
+    {
+      "title": "firefly [honkai: star rail] - V1 | Tensor.Art",
+      "url": "https://tensor.art/models/968189058041839158",
+      "snippet": "firefly [honkai: star rail] LORA 5 star Reprint poron Updated: Feb 21, 2026 5:56 PM 5 star V1 Run8 Download firefly [honkai: star rail] [V1] lora weight = approx. 0.8 to 1 Base : 1girl, solo, hdfirefly, long hair, grey hair, hairband, hair intakes, purple eyes, Main Outfit : large breasts, fireflyDef, long sleeves, shirt, cropped jacket, neckerchief, skirt, thighhighs, white footwear ..."
+    }
+  ]
+}

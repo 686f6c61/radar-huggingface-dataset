@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "microduckapp/microduck-head-over-heels",
+  "slug": "microduckapp-microduck-head-over-heels",
+  "author": "microduckapp",
+  "url": "https://huggingface.co/microduckapp/microduck-head-over-heels",
+  "created_at": "2026-10-27T01:30:44.000Z",
+  "updated_at": "2026-10-27T01:30:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "robotics",
+    "microduck-move",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1315267,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - pollen-robotics/microduck: A Tiny biped duck robot",
+      "url": "https://github.com/pollen-robotics/microduck",
+      "snippet": "A Tiny biped duck robot 🦆. Contribute to pollen-robotics/microduck development by creating an account on GitHub."
+    },
+    {
+      "title": "microduckapp/microduck-roll-over · Hugging Face",
+      "url": "https://huggingface.co/microduckapp/microduck-roll-over",
+      "snippet": "Roll Over Rolls its heavy head round in a slow circle, then turns right over like in bed and droops the other way. A 10.8-second move for the Microduck robot, from the MicroDuck app."
+    },
+    {
+      "title": "microduckapp (MicroDuck) - Hugging Face",
+      "url": "https://huggingface.co/microduckapp",
+      "snippet": "microduckapp/microduck-midnight-snack Robotics •Updated 22 minutes ago View 16 models"
+    },
+    {
+      "title": "Meet Microduck, a $399 Open-Source Robot That Can Learn New Tricks - PCMag",
+      "url": "https://www.pcmag.com/news/hugging-face-microduck-399-open-source-robot-that-can-learn-new-tricks",
+      "snippet": "The robot comes from AI model platform Hugging Face&#x27;s Pollen Robotics arm. Preorders open today with shipments slated to arrive before Christmas."
+    },
+    {
+      "title": "Microduck - A duck-like biped robot designed for physical AI ...",
+      "url": "https://www.cnx-software.com/2026/08/28/microduck-a-duck-like-biped-robot-designed-for-physical-ai-experimentation-and-fun/",
+      "snippet": "Microduck - A duck-like biped robot designed for physical AI experimentation and fun Pollen Robotics and Hugging Face have unveiled the Microduck, a 25 cm tall biped robot with 15 motors, a camera, a depth sensor, two motion sensors, and an articulated beak that can pick up objects."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "microduckapp/microduck-moonwalk",
+  "slug": "microduckapp-microduck-moonwalk",
+  "author": "microduckapp",
+  "url": "https://huggingface.co/microduckapp/microduck-moonwalk",
+  "created_at": "2026-10-27T01:21:02.000Z",
+  "updated_at": "2026-10-27T01:21:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "robotics",
+    "microduck-move",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1284382,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Asami Bodhu (আসামি বধূ) | Shabnur | Humayun Faridi | Bobita | Dildar ...",
+      "url": "https://m.youtube.com/watch?v=G8xyBw4p90A",
+      "snippet": "Apr 22, 2025 · Presenting Bangla Movie \" Asami Bodhu (আসামি বধূ) \" Hope you will enjoy our Bangla Cinema, Action Movie, and …"
+    },
+    {
+      "title": "Asami Bodhu (আসামি বধূ) || Shabnur || Humayun Faridi || Bobita ...",
+      "url": "https://m.youtube.com/watch?v=DUMT87F68jI",
+      "snippet": "Oct 30, 2025 · Presenting Superhit Bangla Movie : Asami Bodhu (আসামি বধূ)\" Hope you will enjoy it....."
+    },
+    {
+      "title": "Ashami Bodhu (1999) - IMDb",
+      "url": "https://m.imdb.com/title/tt1042470/",
+      "snippet": "Ashami Bodhu: With Alamgir, Bobita, Dildar, Humayun Faridi."
+    },
+    {
+      "title": "Bangla Movie Shami Keno Ahsami Shabana Jashim Ritupanna",
+      "url": "https://archive.org/details/Shami_Keno_Ahsami",
+      "snippet": "Sep 16, 2017 · Bangla Movie Shami Keno Ahsami Shabana Jashim Ritupanna Topics Shabana, Jashim, Ritupanna Item Size 4.5G …"
+    },
+    {
+      "title": "Shami Keno Asami (movie, 1997) - Kinorium",
+      "url": "https://en.kinorium.com/2512923/",
+      "snippet": "Jan 1, 1997 · Shami Keno Asami - movie, 1997 (Bangladesh): reviews and ratings, directors and actors, trailers, stills, backstage. …"
+    }
+  ]
+}

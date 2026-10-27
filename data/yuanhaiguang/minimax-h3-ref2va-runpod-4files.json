@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "yuanhaiguang/MiniMax-H3-Ref2VA-RunPod-4files",
+  "slug": "yuanhaiguang-minimax-h3-ref2va-runpod-4files",
+  "author": "yuanhaiguang",
+  "url": "https://huggingface.co/yuanhaiguang/MiniMax-H3-Ref2VA-RunPod-4files",
+  "created_at": "2026-10-27T01:50:48.000Z",
+  "updated_at": "2026-10-27T01:57:19.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:finetune:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 525185336387,
+  "storage_human": "525.2 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yuanhaiguang/MiniMax-H3-Ref2VA-RunPod-4files · Hugging Face",
+      "url": "https://huggingface.co/yuanhaiguang/MiniMax-H3-Ref2VA-RunPod-4files",
+      "snippet": "Instructions to use yuanhaiguang/MiniMax-H3-Ref2VA-RunPod-4files with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "yuanhaiguang (haiguang) - Hugging Face",
+      "url": "https://huggingface.co/yuanhaiguang",
+      "snippet": "Recent Activity updated a modelabout 3 hours ago yuanhaiguang/MiniMax-H3-Ref2VA-RunPod-4files View all activity"
+    },
+    {
+      "title": "[Free Distribution] Setup Kit for Running MiniMax H3 (BF16 Ref2VA) on ...",
+      "url": "https://note.com/unico920/n/n2caae9747fb2?hl=en",
+      "snippet": "I am distributing for free here the complete kit used in \"How to try MiniMax H3 for 17 yen per video without a high-spec PC\" to build an H3 environment on RunPod. This includes setup procedures, automation scripts, ComfyUI workflow definitions, and prompts for AI agents. The model itself ..."
+    },
+    {
+      "title": "GitHub - unfounddev/runpod-minimax-h3: MiniMax H3 Ref2VA ComfyUI ...",
+      "url": "https://github.com/unfounddev/runpod-minimax-h3/tree/main",
+      "snippet": "MiniMax H3 Ref2VA ComfyUI template for Runpod. Contribute to unfounddev/runpod-minimax-h3 development by creating an account on GitHub."
+    },
+    {
+      "title": "MiniMax H3: Run the Open-Weight Omni-Modal Video Model - runpod.io",
+      "url": "https://www.runpod.io/blog/minimax-h3-the-open-weight-omni-modal-video-model-and-what-it-takes-to-run-it",
+      "snippet": "Explore the MiniMax H3 open-weight omni-modal video model, its architecture, hardware requirements, and what developers need to run it on Runpod."
+    }
+  ]
+}

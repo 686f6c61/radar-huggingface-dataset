@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "microduckapp/microduck-photo-shoot",
+  "slug": "microduckapp-microduck-photo-shoot",
+  "author": "microduckapp",
+  "url": "https://huggingface.co/microduckapp/microduck-photo-shoot",
+  "created_at": "2026-10-27T01:38:30.000Z",
+  "updated_at": "2026-10-27T01:38:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "robotics",
+    "microduck-move",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1450134,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - pollen-robotics/microduck: A Tiny biped duck robot",
+      "url": "https://github.com/pollen-robotics/microduck",
+      "snippet": "A Tiny biped duck robot 🦆. Contribute to pollen-robotics/microduck development by creating an account on GitHub."
+    },
+    {
+      "title": "Microduck - ROBOTS: Your Guide to the World of Robotics",
+      "url": "https://robotsguide.com/robots/microduck",
+      "snippet": "Microduck is a small biped robot with a distinctly ducklike waddle. Using AI skills, it can walk, sit, roller-skate, pick up objects with its beak, recover from falls, and quack in its own voice. Designed for developers, researchers, and robotics enthusiasts, it ships assembled, uses open-source software tools, and offers a playful platform for training, testing, and sharing new behaviors."
+    },
+    {
+      "title": "Buy Microduck: Small robot. Super smart.",
+      "url": "https://microducks.org/",
+      "snippet": "Buy Microduck, the 10 inch bipedal AI robot by Pollen Robotics × Hugging Face, shown by Jensen Huang at NVIDIA GTC Berlin. Official preorders from $399."
+    },
+    {
+      "title": "Microduck - A tiny biped robot you can teach new tricks | Pollen Robotics",
+      "url": "https://pollen-robotics.com/microduck/",
+      "snippet": "Microduck is a 25 cm biped robot with 15 motors, a camera, LiDAR and a grasping beak. Playable out of the box, and its open-source stack lets you train new behaviours in simulation and run them on the robot. Pre-order at $399."
+    },
+    {
+      "title": "Microduck - A duck-like biped robot designed for physical AI ...",
+      "url": "https://www.cnx-software.com/2026/08/28/microduck-a-duck-like-biped-robot-designed-for-physical-ai-experimentation-and-fun/",
+      "snippet": "Microduck - A duck-like biped robot designed for physical AI experimentation and fun Pollen Robotics and Hugging Face have unveiled the Microduck, a 25 cm tall biped robot with 15 motors, a camera, a depth sensor, two motion sensors, and an articulated beak that can pick up objects."
+    }
+  ]
+}

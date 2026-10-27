@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "microduckapp/microduck-glitch",
+  "slug": "microduckapp-microduck-glitch",
+  "author": "microduckapp",
+  "url": "https://huggingface.co/microduckapp/microduck-glitch",
+  "created_at": "2026-10-27T01:34:21.000Z",
+  "updated_at": "2026-10-27T01:34:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "robotics",
+    "microduck-move",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1513309,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "microduckapp (MicroDuck) - Hugging Face",
+      "url": "https://huggingface.co/microduckapp",
+      "snippet": "microduckapp/microduck-midnight-snack Robotics •Updated 22 minutes ago View 16 models"
+    },
+    {
+      "title": "GitHub - pollen-robotics/microduck: A Tiny biped duck robot",
+      "url": "https://github.com/pollen-robotics/microduck",
+      "snippet": "A Tiny biped duck robot 🦆. Contribute to pollen-robotics/microduck development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - AI-FanGe/Microduck-build-tutorial: A practical hardware and ...",
+      "url": "https://github.com/AI-FanGe/Microduck-build-tutorial",
+      "snippet": "A practical hardware and software setup for a compact RL-powered biped robot. - AI-FanGe/Microduck-build-tutorial"
+    },
+    {
+      "title": "Microduck · From body to behavior",
+      "url": "https://eai-course.github.io/microduck/",
+      "snippet": "Learn how the real Microduck system connects mechanics, hardware, software, walking, simulation, and local model evaluation."
+    },
+    {
+      "title": "MicroDuck Guides — Simulation, Policies & Training",
+      "url": "https://microduckrobot.org/guides/",
+      "snippet": "Run the official browser or daemon simulation, inspect and reset robot policies, prepare a CUDA training run, and diagnose common MicroDuck errors with source-linked guides."
+    }
+  ]
+}

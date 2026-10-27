@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "davidheineman/rlve-archive-nano-omni-multiteacher-distill-5d090d00ac60",
+  "slug": "davidheineman-rlve-archive-nano-omni-multiteacher-distill-5d090d00ac60",
+  "author": "davidheineman",
+  "url": "https://huggingface.co/davidheineman/rlve-archive-nano-omni-multiteacher-distill-5d090d00ac60",
+  "created_at": "2026-10-27T08:31:39.000Z",
+  "updated_at": "2026-10-27T08:31:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "rlve",
+    "checkpoint-archive",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 714205532,
+  "storage_human": "714 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Les meilleurs builds d'équipe - Soluce Octopath Traveller, guide ...",
+      "url": "https://www.jeuxvideo.com/wikis-soluce-astuces/887420/les-builds.htm",
+      "snippet": "Jul 23, 2018 · Venez découvrir tout ce qu'il faut savoir sur la partie : \"Les meilleurs builds d'équipe\" du jeu Octopath Traveler dans …Read more"
+    },
+    {
+      "title": "Combat contre Sulfura au Mont Ardent - Soluce Pokémon Donjon …",
+      "url": "https://www.jeuxvideo.com/wikis-soluce-astuces/1200409/combat-contre-sulfura-au-mont-ardent.htm",
+      "snippet": "Mar 26, 2020 · Venez découvrir tout ce qu'il faut savoir sur la partie : \" Combat contre Sulfura au Mont Ardent\" du jeu Pokémon …"
+    },
+    {
+      "title": "Violine Pokemon ZA : son équipe de Pokémon, leurs faiblesses et …",
+      "url": "https://www.jeuxvideo.com/news/2042237/violine-pokemon-za-son-equipe-de-pokemon-leurs-faiblesses-et-comment-la-vaincre.htm",
+      "snippet": "Nov 6, 2025 · Violine Pokémon ZA : quelle est son équipe et comment la vaincre pendant les Jeux ? Que serait un jeu Pokémon …"
+    },
+    {
+      "title": "Pokémon Donjon Mystère : Équipe de Secours DX sur Switch",
+      "url": "https://www.jeuxvideo.com/jeux/switch/jeu-1168611/",
+      "snippet": "Jan 9, 2020 · Pokémon Donjon Mystère : Équipe de Secours DX sur Nintendo Switch : retrouvez toutes les informations, les tests, …"
+    },
+    {
+      "title": "Topic Bug mission travail d'équipe objectif qui ne s'affiche pas",
+      "url": "https://www.jeuxvideo.com/forums/42-3017938-63045635-1-0-1-0-bug-mission-travail-d-equipe-objectif-qui-ne-s-affiche-pas.htm",
+      "snippet": "May 8, 2020 · Accueil Call of Duty : Modern Warfare 2 Campaign Remastered Tous les forums Forum Call of Duty : Modern Warfare …"
+    }
+  ]
+}

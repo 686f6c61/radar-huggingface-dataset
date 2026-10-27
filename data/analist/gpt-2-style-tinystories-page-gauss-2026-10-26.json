@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "analist/GPT-2-style-tinystories-page-gauss-2026-10-26",
+  "slug": "analist-gpt-2-style-tinystories-page-gauss-2026-10-26",
+  "author": "analist",
+  "url": "https://huggingface.co/analist/GPT-2-style-tinystories-page-gauss-2026-10-26",
+  "created_at": "2026-10-27T08:35:55.000Z",
+  "updated_at": "2026-10-27T08:36:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "text-generation",
+    "tinystories",
+    "attention",
+    "en",
+    "dataset:roneneldan/TinyStories",
+    "arxiv:2305.07759",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 21552036,
+  "parameters_human": "21.6M",
+  "storage_bytes": 79154136,
+  "storage_human": "79 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GPT-2-style-tinystories-page-gauss-2026-10-26 - Hugging Face",
+      "url": "https://huggingface.co/analist/GPT-2-style-tinystories-page-gauss-2026-10-26",
+      "snippet": "A small GPT-2-style language model trained from scratch on TinyStories, with page gauss attention: page attention with a Gaussian kernel: each key is replaced by the average of its family, A = exp(−‖kᵢ − kⱼ‖² / 2h²) for j ≤ i, rows normalised, K_page = ÃK, then softmax(Q·K_pageᵀ ..."
+    },
+    {
+      "title": "GPT-2 Language Model from Scratch - GitHub",
+      "url": "https://github.com/AlaaOmar6/GPT2",
+      "snippet": "GPT-2 style Transformer language model built from scratch in PyTorch. Trained on TinyStories dataset with multi-head attention, causal masking, and advanced text generation."
+    },
+    {
+      "title": "analist/GPT-2-style-tinystories-linear-2026-10-22 at main",
+      "url": "https://huggingface.co/analist/GPT-2-style-tinystories-linear-2026-10-22/tree/main",
+      "snippet": "analist / GPT-2-style-tinystories-linear-2026-10-22 Like 0 PyTorch Safetensors gpt character-level attention benchmark page-attention License:mit Model card FilesFiles and versions xet Community Copy to bucket new main GPT-2-style-tinystories-linear-2026-10-22 14.7 MB Ctrl+K Ctrl+K 1 contributor History:2 commits analist meilleur modèle linear sur tinystories 1bf42b1 verifiedabout 6 hours ago ..."
+    },
+    {
+      "title": "GitHub - jamessinotte/TinyStoriesGPT: TinyStories GPT — from-scratch ...",
+      "url": "https://github.com/jamessinotte/TinyStoriesGPT",
+      "snippet": "This project implements and trains a GPT-style autoregressive language model from scratch in PyTorch. The goal is to understand how a decoder-only transformer actually works — attention, embeddings, training, tokenization, sampling, and checkpointing — without leaning on a prebuilt implementation like Hugging Face Transformers. The model is trained on TinyStories, a dataset of short ..."
+    },
+    {
+      "title": "Anthropic&#x27;s Claude AI model accessed Georgia voter data in US",
+      "url": "https://www.theguardian.com/technology/2026/oct/26/anthropics-claude-ai-model-accessed-georgia-voter-data-in-us",
+      "snippet": "Anthropic&#x27;s Claude model accessed voter data in the US state of Georgia, the AI company has confirmed, in the latest example of unauthorised behaviour by the technology."
+    }
+  ]
+}

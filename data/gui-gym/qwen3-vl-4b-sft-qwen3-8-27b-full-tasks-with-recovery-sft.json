@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "GUI-Gym/Qwen3-VL-4B-sft-qwen3.8-27b-full-tasks-with-recovery-sft",
+  "slug": "gui-gym-qwen3-vl-4b-sft-qwen3-8-27b-full-tasks-with-recovery-sft",
+  "author": "GUI-Gym",
+  "url": "https://huggingface.co/GUI-Gym/Qwen3-VL-4B-sft-qwen3.8-27b-full-tasks-with-recovery-sft",
+  "created_at": "2026-10-27T08:36:53.000Z",
+  "updated_at": "2026-10-27T08:38:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "gui-agent",
+    "mobileweave",
+    "recovery-sft",
+    "conversational",
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-4B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4437815808,
+  "parameters_human": "4.44B",
+  "storage_bytes": 9665054494,
+  "storage_human": "9.7 GB",
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gui (plante) — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Gui_(plante)",
+      "snippet": "Le gui (aussi appelé gui blanc ou gui des feuillus, même si on le trouve parfois et localement sur des résineux 1), Viscum album, est …"
+    },
+    {
+      "title": "Gui : bienfaits pour la santé, comment l'utiliser ?",
+      "url": "https://www.topsante.com/plantes-medicinales/fiche/gui-quels-bienfaits-sante-comment-utiliser-646665",
+      "snippet": "Depuis des milliers d’années, il est aussi utilisé pour ses propriétés médicinales qui sont nombreuses. Découvrez tous les bienfaits …"
+    },
+    {
+      "title": "Graphical user interface - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Graphical_user_interface",
+      "snippet": "A GUI uses a combination of technologies and devices to provide a platform that users can interact with, for the tasks of gathering …"
+    },
+    {
+      "title": "Interface graphique — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Interface_graphique",
+      "snippet": "En informatique, une interface graphique (en anglais GUI pour graphical user interface) ou un environnement graphique est un …"
+    },
+    {
+      "title": "Gui - Bienfaits, Usages, Posologie, Avis - PasseportSanté",
+      "url": "https://www.passeportsante.net/fr/Solutions/PlantesSupplements/Fiche.aspx?doc=gui_ps",
+      "snippet": "Le Gui est une plante symbolique au moment de Noël et du nouvel an. Cette plante possède de nombreuses vertus pour la santé. …"
+    }
+  ]
+}

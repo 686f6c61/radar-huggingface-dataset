@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "microduckapp/microduck-kung-fu",
+  "slug": "microduckapp-microduck-kung-fu",
+  "author": "microduckapp",
+  "url": "https://huggingface.co/microduckapp/microduck-kung-fu",
+  "created_at": "2026-10-27T01:33:16.000Z",
+  "updated_at": "2026-10-27T01:33:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "robotics",
+    "microduck-move",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1369696,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "microduckapp/microduck-kung-fu · Hugging Face",
+      "url": "https://huggingface.co/microduckapp/microduck-kung-fu",
+      "snippet": "Drops into a kung-fu stance: sharp head strikes, a whirling spin, a new stance — then a respectful bow. A 10.8-second move for the Microduck robot, from the MicroDuck app. policy.onnx: the move (61 observations in, 14 joint targets out, 50 Hz) manifest.json: what the duck needs to install and play it ... Downloads are not tracked for this model."
+    },
+    {
+      "title": "Nvidia Teaches a $399 Duck Robot to Walk Using AI - TechRepublic",
+      "url": "https://www.techrepublic.com/article/news-nvidia-microduck-robot-ai-walking/",
+      "snippet": "Nvidia and Hugging Face show how the $399 Microduck robot learns to walk using AI simulation. Explore its hardware, training process, and availability."
+    },
+    {
+      "title": "Nvidia Microduck Demo: Human-Piloted Claim, Checked | explainx.ai ...",
+      "url": "https://www.explainx.ai/blog/nvidia-gtc-berlin-microduck-demo-human-piloted-claim-four-operators-claimed-vs-verified-2026",
+      "snippet": "The right norm is simple: a maker showing a robot should say whether any part of the show is teleoperated, scripted or triggered by staff. Microduck is the small open-source robot duck built by Pollen Robotics and Hugging Face."
+    },
+    {
+      "title": "Nvidia Teaches a $399 Duck Robot to Walk Using AI - NewsBreak",
+      "url": "https://www.newsbreak.com/techrepublic-320365869/4962601072732-nvidia-teaches-a-399-duck-robot-to-walk-using-ai",
+      "snippet": "Microduck offers a smaller, less expensive way to explore physical AI. Developers can start experimenting in simulation now, then find out how well their walking policies transfer once the robot reaches buyers."
+    },
+    {
+      "title": "Using AI Agents to Teach Robots Like Microduck to Walk in Simulation ...",
+      "url": "https://developer.nvidia.com/blog/using-ai-agents-to-teach-robots-like-microduck-to-walk-in-simulation/",
+      "snippet": "Check whether Microduck detects obstacles, adjusts its movement, and completes the course. This stage separates policy learning from policy evaluation. During training, the policy changes as it receives new experience. During evaluation, you examine the behavior of a selected policy and identify where it succeeds or needs further work."
+    }
+  ]
+}

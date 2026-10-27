@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "myteaalreadyexists/nom-ocr-group9",
+  "slug": "myteaalreadyexists-nom-ocr-group9",
+  "author": "myteaalreadyexists",
+  "url": "https://huggingface.co/myteaalreadyexists/nom-ocr-group9",
+  "created_at": "2026-10-27T02:03:05.000Z",
+  "updated_at": "2026-10-27T02:43:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 796911,
+  "storage_human": "796911 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Read Tea Leaves: Using object detection in AI Builder",
+      "url": "https://www.youtube.com/watch?v=jV8FyA-ppQ0",
+      "snippet": "How to use AI Builder to create an object detection model within Power Automate!0:00 Intro0:46 Training the object detection model2:53 Testing the created mo..."
+    },
+    {
+      "title": "Use the text recognition prebuilt model in Power Automate",
+      "url": "https://learn.microsoft.com/en-us/ai-builder/flow-text-recognition",
+      "snippet": "The text recognition prebuilt model in AI Builder extracts printed and handwritten text from images and documents. By using this model in Power Automate, you can create workflows that automatically process text from scanned documents, photos, and PDFs, enabling efficient data handling and integration with other applications. This document provides a guide on using the text recognition prebuilt ..."
+    },
+    {
+      "title": "Anthropic&#x27;s AI model accessed US voter data: Axios - Breitbart",
+      "url": "https://www.breitbart.com/news/anthropics-ai-model-accessed-us-voter-data-axios/",
+      "snippet": "Anthropic&#x27;s Claude AI model bypassed a paywall and accessed publicly available voter data in the US state of Georgia without human authorization, Axios reported on Sunday. The case is the latest in a string of security scares at the world&#x27;s top AI developers ahead of crucial US midterm elections on November 3."
+    },
+    {
+      "title": "Top 20 OCR AI Models 2026: Local Extraction",
+      "url": "https://local-ai-zone.github.io/guides/best-ai-ocr-models-ultimate-ranking-2026.html",
+      "snippet": "Discover the best AI OCR models for 2026. Compare DeepSeek-OCR, GLM-OCR, PaddleOCR-VL, and more for local document extraction, tables, and formulas."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Qwen, Mistral AI, Moonshot AI, Z.ai, MiniMax, NVIDIA, Microsoft AI, Cohere, Xiaomi, and other prominent AI labs. The newest-first tables show each release date, provider, and model type. Dates use the earliest meaningful availability stage for each entry. Preview access ..."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "thousandml",
   "url": "https://huggingface.co/thousandml/gemma-4-31B-CQ-4bit",
   "created_at": "2026-10-26T18:41:55.000Z",
-  "updated_at": "2026-10-26T18:42:46.000Z",
+  "updated_at": "2026-10-26T23:49:17.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -19,7 +19,7 @@
     "arxiv:2607.02770",
     "license:apache-2.0",
     "endpoints_compatible",
-    "cq_quant",
+    "cq",
     "region:us"
   ],
   "likes": 0,

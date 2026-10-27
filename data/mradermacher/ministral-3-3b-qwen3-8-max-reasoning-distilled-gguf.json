@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Ministral-3-3B-Qwen3.8-Max-Reasoning-Distilled-GGUF",
+  "slug": "mradermacher-ministral-3-3b-qwen3-8-max-reasoning-distilled-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Ministral-3-3B-Qwen3.8-Max-Reasoning-Distilled-GGUF",
+  "created_at": "2026-10-27T08:34:42.000Z",
+  "updated_at": "2026-10-27T10:00:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "ministral",
+    "mistral",
+    "qwen",
+    "distillation",
+    "fine-tuning",
+    "reasoning",
+    "conversational",
+    "en",
+    "dataset:saidutta69/qwen3.8-max-distillation-50k-clean",
+    "base_model:xtools-at/Ministral-3-3B-Qwen3.8-Max-Reasoning-Distilled",
+    "base_model:quantized:xtools-at/Ministral-3-3B-Qwen3.8-Max-Reasoning-Distilled",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3429006336,
+  "parameters_human": "3.43B",
+  "storage_bytes": 32533349312,
+  "storage_human": "32.5 GB",
+  "base_model": "xtools-at/Ministral-3-3B-Qwen3.8-Max-Reasoning-Distilled",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ministral 3 3B - Qwen 3.8 Max Distillation : GGUF - Hugging Face",
+      "url": "https://huggingface.co/xtools-at/Ministral-3-3B-Qwen3.8-Max-Reasoning-Distilled-GGUF",
+      "snippet": "A fine-tuned Ministral 3 3B Reasoning model trained on a curated subset of Qwen 3.8 Max distillation data. The goal is to bring the knowledge and response patterns captured in the teacher-generated dataset into a compact model that&#x27;s practical to experiment with and run."
+    },
+    {
+      "title": "mistralai/Ministral-3-3B-Instruct-2512 · Hugging Face",
+      "url": "https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512",
+      "snippet": "You can set --max-num-batched-tokens to balance throughput and latency, higher means higher throughput but higher latency. Usage of the model Here we assume that the model mistralai/Ministral-3-3B-Instruct-2512 is served and you can ping it to the domain localhost with the port 8000 which is the default for vLLM. Vision Reasoning"
+    },
+    {
+      "title": "Ministral 3 3B - Mistral AI | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/ministral-3-3b-25-12",
+      "snippet": "Ministral 3 3B is the smallest and most efficient model in the Ministral 3 family, offering robust language and vision capabilities in a compact package. Designed for edge deployment, it delivers high performance across diverse hardware, including local setups."
+    },
+    {
+      "title": "Ministral 3 - arXiv.org",
+      "url": "https://arxiv.org/html/2601.08584v1",
+      "snippet": "Available in three sizes: 3B, 8B, and 14B parameters, all Ministral 3 models are descendants of Mistral Small 3.1 1, obtained via a Cascade Distillation approach. We present three variants for each model size: base, instruct, and reasoning, each with image understanding capabilities and context lengths up to 256k tokens (128k for reasoning models)."
+    },
+    {
+      "title": "Ministral 3 - arXiv.org",
+      "url": "https://arxiv.org/pdf/2601.08584",
+      "snippet": "Available in three sizes: 3B, 8B, and 14B parameters, all Ministral 3 models are descendants of Mistral Small 3.11, obtained via a Cascade Distillation approach. We present three variants for each model size: base, instruct, and reasoning, each with image understanding capabilities and context lengths up to 256k tokens (128k for reasoning models)."
+    }
+  ]
+}

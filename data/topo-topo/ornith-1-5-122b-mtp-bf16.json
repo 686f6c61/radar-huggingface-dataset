@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ToPo-ToPo/Ornith-1.5-122B-MTP-bf16",
+  "slug": "topo-topo-ornith-1-5-122b-mtp-bf16",
+  "author": "ToPo-ToPo",
+  "url": "https://huggingface.co/ToPo-ToPo/Ornith-1.5-122B-MTP-bf16",
+  "created_at": "2026-10-27T08:34:28.000Z",
+  "updated_at": "2026-10-27T08:35:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_mtp",
+    "mlx-vlm",
+    "speculative-decoding",
+    "mtp",
+    "base_model:ornith-ai/Ornith-1.5-122B",
+    "base_model:finetune:ornith-ai/Ornith-1.5-122B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2523679232,
+  "parameters_human": "2.52B",
+  "storage_bytes": 5060168671,
+  "storage_human": "5.1 GB",
+  "base_model": "ornith-ai/Ornith-1.5-122B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accueil - Topo Revue",
+      "url": "https://www.toporevue.fr/",
+      "snippet": "Chaque saison, la revue TOPO décrypte le monde en bande dessinée. Avec notre équipe de journalistes, dessinatrices et …Read more"
+    },
+    {
+      "title": "Définitions : topo - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/topo/78453",
+      "snippet": "Expressions Familier. C'est toujours le même topo, c'est toujours la même chose, le même refrain."
+    },
+    {
+      "title": "Topo Designs Europe | Sacs, sacs à dos et vêtements outdoor",
+      "url": "https://topodesigns.eu/fr",
+      "snippet": "Pourquoi des milliers de personnes choisissent Topo Designs plutôt que les marques grand public. Conçu pour durer Nous utilisons …"
+    },
+    {
+      "title": "Boutique | Topo Athletic",
+      "url": "https://topoathletic.fr/boutique/",
+      "snippet": "Chez Topo Athletic, nous sommes fiers de vous offrir une expérience client exceptionnelle et des produits haut de gamme. …"
+    },
+    {
+      "title": "Topo Athletic Chaussures & Équipement | Bougez Mieux.",
+      "url": "https://topoathletic.fr/",
+      "snippet": "Améliorez la qualité de vos courses à pieds et prévenez les blessures avec une paire de chaussures de Topo Athletic !"
+    }
+  ]
+}

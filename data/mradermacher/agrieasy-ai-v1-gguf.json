@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mradermacher/agrieasy-ai-v1-GGUF",
+  "slug": "mradermacher-agrieasy-ai-v1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/agrieasy-ai-v1-GGUF",
+  "created_at": "2026-10-27T08:48:11.000Z",
+  "updated_at": "2026-10-27T08:54:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "agriculture",
+    "farming",
+    "india",
+    "agrieasy",
+    "conversational",
+    "en",
+    "hi",
+    "base_model:Rishabhthe1/agrieasy-ai-v1",
+    "base_model:quantized:Rishabhthe1/agrieasy-ai-v1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 14206905600,
+  "storage_human": "14.2 GB",
+  "base_model": "Rishabhthe1/agrieasy-ai-v1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/agri-31b-v1-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/agri-31b-v1-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/models",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 33 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "AI Framework Diagnoses Leaf Disease, Tells Farmers What to Do Next",
+      "url": "https://agritechinsights.com/index.php/2026/10/27/ai-framework-diagnoses-leaf-disease-tells-farmers-what-to-do-next/",
+      "snippet": "The framework, developed by a team led by Lufu Qin from Guizhou University, uses a large language model to guide a series of specialized \"skills,\" such as lesion measurement, literature retrieval, and pesticide-use planning. \"Most systems stop at diagnosis,\" Qin said. \"Farmers need more—they need to know *what* is wrong, *how severe* it is, and *what to do next*.\" AgriSkill-Agent ..."
+    },
+    {
+      "title": "GitHub - YasminYaser/Smart_Agricultural_Advisor: ML-powered ...",
+      "url": "https://github.com/YasminYaser/Smart_Agricultural_Advisor",
+      "snippet": "The yield model was trained on a separate, narrow dataset (temperature 24-40 °C, N 59-80, P 18-25, K 15-22, fertilizer 50-80 kg/ha). Outside these ranges the estimate is only a rough guide, and the app says so."
+    }
+  ]
+}

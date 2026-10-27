@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l3_swift_jbbresp13_remove40",
+  "slug": "jeesup-svd-safety-l3_swift_jbbresp13_remove40",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l3_swift_jbbresp13_remove40",
+  "created_at": "2026-10-27T08:26:27.000Z",
+  "updated_at": "2026-10-27T10:59:53.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "compression",
+    "safety",
+    "swift-svd",
+    "conversational",
+    "base_model:meta-llama/Meta-Llama-3-8B-Instruct",
+    "base_model:finetune:meta-llama/Meta-Llama-3-8B-Instruct",
+    "license:llama3",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16120413295,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jeesup/svd-safety-l3_swift_remove40 · Hugging Face",
+      "url": "https://huggingface.co/Jeesup/svd-safety-l3_swift_remove40",
+      "snippet": "A Llama-2-7b-chat checkpoint compressed with SVD-LLM to 60.0% of dense parameters, then given a 0.0% parameter budget of restored SVD components selected by the unknown rule."
+    },
+    {
+      "title": "tinyopsec/Jeesup-svd-safety-l3_swift_jbbcal2_remove40-GGUF · Hugging ...",
+      "url": "https://huggingface.co/tinyopsec/Jeesup-svd-safety-l3_swift_jbbcal2_remove40-GGUF",
+      "snippet": "GGUF quantizations of Jeesup/svd-safety-l3_swift_jbbcal2_remove40, a Swift-SVD compressed Llama-3-8B-Instruct checkpoint (60% of dense parameters) with LoRA recovery, produced with llama.cpp."
+    },
+    {
+      "title": "Jeesup/svd-safety-l3_swift_jbbsft1_remove40 · Hugging Face",
+      "url": "https://huggingface.co/Jeesup/svd-safety-l3_swift_jbbsft1_remove40",
+      "snippet": "A Llama-3-8B-Instruct checkpoint compressed with Swift-SVD (dynamic rank allocation, alpha 0.6, 256 x 2048 WikiText2 calibration) to 60.0% of dense parameters, then recovered with SVD-LLM's stage-2 LoRA (sequential U then V, alpaca_cleaned_jbbsft_x1_l3.json, r=8, alpha=16, 2 epochs per half, lr 0.0001, batch 64, cutoff 256)."
+    },
+    {
+      "title": "Jeesup/svd-safety-l3_swift_jbbcal2_remove40 · Hugging Face",
+      "url": "https://huggingface.co/Jeesup/svd-safety-l3_swift_jbbcal2_remove40",
+      "snippet": "A Llama-3-8B-Instruct checkpoint compressed with SVD-LLM to 60.0% of dense parameters, then given a 0.0% parameter budget of restored SVD components selected by the unknown rule."
+    },
+    {
+      "title": "tinyopsec/Jeesup-svd-safety-l3_swift_remove40_swapgapiter_evfr...",
+      "url": "https://huggingface.co/tinyopsec/Jeesup-svd-safety-l3_swift_remove40_swapgapiter_evfront_b010-GGUF",
+      "snippet": "GGUF quantizations of Jeesup/svd-safety-l3_swift_remove40_swapgapiter_evfront_b010. Type: Llama (LlamaForCausalLM) Parameters: ~8B · Hidden size: 4096, layers: 32, heads: 32 (KV: 8), ctx: 8192 · Source dtype: bfloat16 · ./llama-cli -m model_Q4_K_M.gguf -p \"Hello\" -n 128 License Derived from a Llama-3-based model; subject to the upstream model's terms and the Llama 3 Community License Agreement."
+    }
+  ]
+}

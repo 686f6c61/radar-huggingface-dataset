@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "hy65/jjh",
+  "slug": "hy65-jjh",
+  "author": "hy65",
+  "url": "https://huggingface.co/hy65/jjh",
+  "created_at": "2026-10-27T09:02:21.000Z",
+  "updated_at": "2026-10-27T09:02:21.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jjh - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1639827503009246498",
+      "snippet": "Generate stunning anime art with the &#x27;jjh&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "The AI Model Directory - GitHub",
+      "url": "https://github.com/The-Best-Codes/ai-model-directory",
+      "snippet": "The AI Model Directory The AI model directory is the most comprehensive, automatically updated list of AI models and their metadata like pricing, context windows, supported features, and more. It currently lists over 22,000 models from over 125 providers."
+    },
+    {
+      "title": "AI Model Index",
+      "url": "https://aimodelsindex.com/",
+      "snippet": "AI Model Index reconciles major AI model leaderboards and source-level benchmark evidence into transparent, auditable indexes."
+    },
+    {
+      "title": "Tencent Hy - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tencent_Hy",
+      "snippet": "Tencent Hy (Chinese: 騰訊混元), formerly known as Tencent Hunyuan, is a family of large language models developed by the Chinese technology company Tencent."
+    }
+  ]
+}

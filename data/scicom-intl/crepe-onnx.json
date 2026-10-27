@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Scicom-intl/crepe-onnx",
+  "slug": "scicom-intl-crepe-onnx",
+  "author": "Scicom-intl",
+  "url": "https://huggingface.co/Scicom-intl/crepe-onnx",
+  "created_at": "2026-10-27T09:13:00.000Z",
+  "updated_at": "2026-10-27T09:14:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "pitch-estimation",
+    "f0",
+    "audio",
+    "speech",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 90963207,
+  "storage_human": "91 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "UAI-Software/crepe-onnx · Hugging Face",
+      "url": "https://huggingface.co/UAI-Software/crepe-onnx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - yqzhishen/onnxcrepe: ONNX deployment of the CREPE pitch ...",
+      "url": "https://github.com/yqzhishen/onnxcrepe",
+      "snippet": "ONNX deployment of the CREPE [1] pitch tracker. The provided model weights and most of the codes in this repository were converted and migrated from the original TensorFlow implementation here and Max Morrison&#x27;s torchcrepe, a PyTorch implementation of CREPE."
+    },
+    {
+      "title": "UAI-Software/crepe-onnx at main - Hugging Face",
+      "url": "https://huggingface.co/UAI-Software/crepe-onnx/tree/main",
+      "snippet": "UAI-Software / crepe-onnx like 0 ONNX audio pitch-estimation crepe License:mit Model card FilesFiles and versions xet Community Copy to bucket new main crepe-onnx 90.9 MB Ctrl+K Ctrl+K 1 contributor History:2 commits UAI-Software Upload folder using huggingface_hub a2ccd23 verifiedabout 6 hours ago .gitattributes Safe 1.52 kBinitial commitabout ..."
+    },
+    {
+      "title": "ONNX Model Zoo - GitHub",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "Track fundamental frequency and periodicity using CREPE (ONNX)",
+      "url": "https://humlab-speech.github.io/superassp/reference/trk_pitch_crepe.html",
+      "snippet": "The model file (tiny: ~2 MB, full: ~85 MB) is downloaded from the torchcrepe-onnx Hugging Face Hub repo on first use (requires the huggingfaceR package and a network connection) and cached in the R user directory; subsequent calls read the cached copy with no network access."
+    }
+  ]
+}

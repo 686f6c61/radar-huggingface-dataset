@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "cestaristudio/granite-switch-4.1-3b-preview",
+  "slug": "cestaristudio-granite-switch-4-1-3b-preview",
+  "author": "cestaristudio",
+  "url": "https://huggingface.co/cestaristudio/granite-switch-4.1-3b-preview",
+  "created_at": "2026-10-27T08:25:08.000Z",
+  "updated_at": "2026-10-27T08:25:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "granite_switch",
+    "text-generation",
+    "language",
+    "granite-switch",
+    "granite-4.1",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4149980160,
+  "parameters_human": "4.15B",
+  "storage_bytes": 8301391632,
+  "storage_human": "8.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · ibm-granite/granite-switch-4.1-3b-preview at main",
+      "url": "https://huggingface.co/ibm-granite/granite-switch-4.1-3b-preview/blob/main/README.md",
+      "snippet": "Model Summary: Granite Switch 4.1 3B Preview is a modular LLM built on IBM Granite 4.1 3B with embedded adapters from the Granite Libraries collection. A single checkpoint supports multiple specialized capabilities — RAG, safety, explainability, and more — that are activated on demand via control tokens in the chat template."
+    },
+    {
+      "title": "granite-switch-4.1-3b-preview · Model · Inferix",
+      "url": "https://inferix.co/models/ibm-granite/granite-switch-4.1-3b-preview",
+      "snippet": "Model Summary: Granite Switch 4.1 3B Preview is a modular LLM built on IBM Granite 4.1 3B with embedded adapters from the Granite Libraries collection. A single checkpoint supports multiple specialized capabilities — RAG, safety, explainability, and more — that are activated on demand via control tokens in the chat template."
+    },
+    {
+      "title": "Granite Switch 4.1 3B Preview — Hardware Requirements & Compatibility",
+      "url": "https://llmrun.dev/model/ibm-granite-granite-switch-4-1-3b-preview",
+      "snippet": "Granite Switch 4.1 3B Preview — Hardware Requirements & GPU Compatibility Chat Granite Switch 4.1 3B Preview is a 4.1B-parameter open language model from IBM in the Granite family. It supports a context window of up to 131,072 tokens. At BF16 it needs about 8.77 GB of VRAM — see which GPUs and Macs can run it below."
+    },
+    {
+      "title": "Granite Switch - a ibm-granite Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/ibm-granite/granite-switch",
+      "snippet": "Modular Granite models with built-in adapters, switched on as needed from a single checkpoint."
+    },
+    {
+      "title": "Granite Switch 4.1 3B Preview by ibm-granite - llm-explorer.com",
+      "url": "https://llm-explorer.com/model/ibm-granite%2Fgranite-switch-4.1-3b-preview,1qjWXVJeIXPFX4JVqU3SeJ",
+      "snippet": "Granite Switch 4.1 3B Preview is an open-source 3b LLM by ibm-granite. VRAM 8.3GB, 128K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

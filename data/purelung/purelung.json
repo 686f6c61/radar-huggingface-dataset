@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "PureLung/PureLung",
+  "slug": "purelung-purelung",
+  "author": "PureLung",
+  "url": "https://huggingface.co/PureLung/PureLung",
+  "created_at": "2026-10-27T08:49:59.000Z",
+  "updated_at": "2026-10-27T08:50:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "purelung/purelung at master · DanisAlukaev/purelung · GitHub",
+      "url": "https://github.com/DanisAlukaev/purelung/tree/master/purelung",
+      "snippet": "A PyTorch based implementation of modules for suppressing bone shadows and context aware image crop in the Chest X-ray images. - DanisAlukaev/purelung"
+    },
+    {
+      "title": "GitHub - DanisAlukaev/purelung: A PyTorch based implementation of ...",
+      "url": "https://github.com/DanisAlukaev/Purelung",
+      "snippet": "Lightweight PureLung. A PyTorch based implementation of modules for suppressing bone shadows, context aware image crop, image segmentation and auto inverse in the Chest X-ray images."
+    },
+    {
+      "title": "Dr. Sanjay Gupta Vicks Lung Cure Scam Exposed: Fake AI Ads Investigated",
+      "url": "https://malwaretips.com/blogs/dr-sanjay-gupta-vicks-lung-cure-scam/",
+      "snippet": "Fake Dr. Sanjay Gupta videos turn a Vicks lung cure story into a PureLung sale. We examine the claims, bundles, refund rules, and seller details."
+    },
+    {
+      "title": "Pure Lung Scam Review: Fake Dr. Sanjay Gupta AI Videos and Celebrity ...",
+      "url": "https://www.infoquu.com/pure-lung-scam-review-fake-dr-sanjay-gupta-ai-videos-and-celebrity-endorsements/",
+      "snippet": "The AI angle is especially concerning because Dr. Gupta has himself warned about scammers using his likeness in AI-generated videos and doctored images to sell bogus health products. A recent BBB Scam Tracker complaint specifically accused Pure Lung of using a fake Dr. Gupta endorsement and AI-generated celebrity videos."
+    },
+    {
+      "title": "PureLung: Quit Smoking Helper - Health & Fitness App | MWM",
+      "url": "https://mwm.ai/apps/purelung-quit-smoking-helper/6759459325",
+      "snippet": "Yes, PureLung is a comprehensive 14-day mastery program that uses cognitive behavioral techniques and health insights to help users quit smoking sustainably. PureLung offers a 14-Day Freedom Plan, 24/7 AI Coach, Real-Time Health Metrics, Savings Tracker, Daily Inspiration, and Advanced Journaling."
+    }
+  ]
+}

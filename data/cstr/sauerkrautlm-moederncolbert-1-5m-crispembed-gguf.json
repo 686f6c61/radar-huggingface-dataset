@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "cstr/SauerkrautLM-MoEdernColBERT-1.5M-CrispEmbed-GGUF",
+  "slug": "cstr-sauerkrautlm-moederncolbert-1-5m-crispembed-gguf",
+  "author": "cstr",
+  "url": "https://huggingface.co/cstr/SauerkrautLM-MoEdernColBERT-1.5M-CrispEmbed-GGUF",
+  "created_at": "2026-10-27T09:10:45.000Z",
+  "updated_at": "2026-10-27T09:10:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "crispembed",
+    "colbert",
+    "base_model:VAGOsolutions/SauerkrautLM-MoEdernColBERT-1.5M",
+    "base_model:quantized:VAGOsolutions/SauerkrautLM-MoEdernColBERT-1.5M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1484448,
+  "parameters_human": "1.5M",
+  "storage_bytes": 7037952,
+  "storage_human": "7 MB",
+  "base_model": "VAGOsolutions/SauerkrautLM-MoEdernColBERT-1.5M",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SauerkrautLM-MoEdernColBERT-1.5M-CoreML - Hugging Face",
+      "url": "https://huggingface.co/VAGOsolutions/SauerkrautLM-MoEdernColBERT-1.5M-CoreML",
+      "snippet": "The SauerkrautLM-MoEdernColBERT family introduces MoEdernBERT, a new ModernBERT-style encoder architecture with a mixture of experts and hash embeddings. MoEdernColBERT-1.5M has 1.47M parameters, of which only 0.88M are active per token."
+    },
+    {
+      "title": "SauerkrautLM-MoEdernColBERT: tiny 1.5M-115M MoE… · AGI Hunt",
+      "url": "https://agihunt.info/en/p/1a1697671138cedb38c0f31a735",
+      "snippet": "VAGOsolutions released SauerkrautLM-MoEdernColBERT: 1.5M/27M/115M late-interaction MoE retrievers under Apache 2.0, with GGUF and CoreML builds."
+    },
+    {
+      "title": "SauerkrautLM-Multi-ModernColBERT - Hugging Face",
+      "url": "https://huggingface.co/VAGOsolutions/SauerkrautLM-Multi-ModernColBERT",
+      "snippet": "# SauerkrautLM-Multi-ModernColBERT This model is a multilingual Late Interaction retriever that leverages: Continuous Pretraining with 4.6 billion multilingual tokens using knowledge distillation from state-of-the-art reranker models. GTE-ModernColBERT Foundation building upon the English-focused lightonai/GTE-ModernColBERT-v1 model."
+    },
+    {
+      "title": "VAGOsolutions releases tiny 1.5M-115M MoE… · AGI Hunt",
+      "url": "https://agihunt.info/en/e/1a177a4763df3b1882e16a7f153",
+      "snippet": "VAGOsolutions has released the SauerkrautLM-MoEdernColBERT family on Hugging Face — three multilingual multi-vector retrieval models with just 1.5M, 27M, and 115M parameters, open-sourced under Apache 2.0."
+    },
+    {
+      "title": "Add model: SauerkrautLM-MoEdernColBERT #5779 - GitHub",
+      "url": "https://github.com/embeddings-benchmark/mteb/issues/5779",
+      "snippet": "Add model: SauerkrautLM-MoEdernColBERT #5779 Labels new model ayush1298 opened on Oct 26, 2026"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "axteam/Qwen3.5-9B-GGUF",
+  "slug": "axteam-qwen3-5-9b-gguf",
+  "author": "axteam",
+  "url": "https://huggingface.co/axteam/Qwen3.5-9B-GGUF",
+  "created_at": "2026-10-27T08:57:09.000Z",
+  "updated_at": "2026-10-27T08:59:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen",
+    "qwen3_5",
+    "llama.cpp",
+    "quantized",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:quantized:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 15566151424,
+  "storage_human": "15.6 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "llmware/qwen-3.5-9b-gguf · Hugging Face",
+      "url": "https://huggingface.co/llmware/qwen-3.5-9b-gguf",
+      "snippet": "qwen3.5-9b-gguf qwen3.5-9b-gguf is a GGUF Q4_K_M int4 quantized version of Qwen3.5-9B, providing a very fast inference implementation, optimized for AI PCs. Model Description Developed by: Qwen Model type: qwen3.5 Parameters: 9 billion Model Parent: Qwen/Qwen3.5-9B Language (s) (NLP): English License: Apache 2.0 Uses: Chat, general-purpose LLM Quantization: int4 Model Card Contact llmware on ..."
+    },
+    {
+      "title": "bartowski/Qwen_Qwen3.5-9B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/bartowski/Qwen_Qwen3.5-9B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5 9b - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/qwen3-5-9b.html",
+      "snippet": "Download Qwen3.5 9b GGUF model. 18.9 GB, 1,288,271 downloads, 963 likes."
+    },
+    {
+      "title": "Qwen3.5-9B-GGUF: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3.5-9b-gguf-lmstudio-community",
+      "snippet": "A: The README provides no guidance on fine-tuning GGUF variants. You likely need to start with the original Qwen3.5-9B weights if adaptation is required. Check Qwen&#x27;s official documentation for fine-tuning procedures on the unquantized model. This summary was produced with help from an AI and may contain inaccuracies—check the original source!"
+    },
+    {
+      "title": "Qwen3.5-9B | Awesome Agents",
+      "url": "https://awesomeagents.ai/models/qwen-3-5-9b/",
+      "snippet": "Qwen3.5-9B is a 9B dense model that outperforms Qwen3-30B on most benchmarks and beats GPT-5-Nano on vision tasks. Natively multimodal with 262K-1M context, Apache 2.0 licensed."
+    }
+  ]
+}

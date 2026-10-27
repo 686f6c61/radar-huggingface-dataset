@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "microduckapp/microduck-tiptoe",
+  "slug": "microduckapp-microduck-tiptoe",
+  "author": "microduckapp",
+  "url": "https://huggingface.co/microduckapp/microduck-tiptoe",
+  "created_at": "2026-10-27T01:20:13.000Z",
+  "updated_at": "2026-10-27T01:20:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "robotics",
+    "microduck-move",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1444843,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Speedtest by Ookla - The Global Broadband Speed Test",
+      "url": "https://www.speedtest.net/",
+      "snippet": "Test your internet speed on any device with Speedtest by Ookla, available for free on desktop and mobile apps."
+    },
+    {
+      "title": "Speedtest d’Ookla – le test de vitesse de connexion global",
+      "url": "https://www.speedtest.net/fr",
+      "snippet": "Testez la vitesse de votre connexion Internet avec Speedtest d'Ookla, disponible sur tous vos appareils grâce à des applications …"
+    },
+    {
+      "title": "Internet Speed Test | Fast.com",
+      "url": "https://fast.com/",
+      "snippet": "How fast is your download speed? In seconds, FAST.com's simple Internet speed test will estimate your ISP speed."
+    },
+    {
+      "title": "Test de vitesse Internet | Fast.com",
+      "url": "https://fast.com/fr/",
+      "snippet": "Quelle est votre vitesse de téléchargement ? En quelques secondes, le test de vitesse Internet Fast.com évalue la vitesse de votre FAI."
+    },
+    {
+      "title": "Test de débit - Speed test : testez la vitesse de votre connexion ...",
+      "url": "https://www.nperf.com/fr/",
+      "snippet": "Mesurez votre débit et la qualité de votre connexion ADSL, VDSL, Câble ou fibre : test de débit (speed test), test de vitesse internet …"
+    }
+  ]
+}

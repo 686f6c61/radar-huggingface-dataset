@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Emily-Hui-123/dreamrl-1n8g-20261026t164303z",
+  "slug": "emily-hui-123-dreamrl-1n8g-20261026t164303z",
+  "author": "Emily-Hui-123",
+  "url": "https://huggingface.co/Emily-Hui-123/dreamrl-1n8g-20261026t164303z",
+  "created_at": "2026-10-27T01:37:28.000Z",
+  "updated_at": "2026-10-27T01:51:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "cosmos",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "cosmos",
+    "robotics",
+    "action-policy",
+    "en",
+    "zh",
+    "dataset:Tina1114/place_pen_lerobot_v30",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 83777790741,
+  "storage_human": "83.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Emily : Matériels de manutention & nettoyage pour l'Agriculture & l ...",
+      "url": "https://www.emily.fr/",
+      "snippet": "Depuis 45 ans Emily conçoit et fabrique des matériels de manutention et de nettoyage pour l’agriculture, l’industrie et le BTP.Read more"
+    },
+    {
+      "title": "Agriculture • Emily Ets",
+      "url": "https://www.emily.fr/produits/fr-agriculture/",
+      "snippet": "Accessoires et équipements pour vos travaux agricoles : alimentation d'élevage, paillage, balayage et nettoyage, accessoires de …"
+    },
+    {
+      "title": "Emily - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Emily",
+      "snippet": "Emily has been a popular name in the English-speaking world, ranking among the most popular names in the United States, …"
+    },
+    {
+      "title": "Prénom Emily (fille) : signification, origine, caractère, sainte, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/emily/prenom-4430",
+      "snippet": "Quelle est l'origine du prénom Emily ? Emily est un prénom anglophone d'origine latine. Emily peut aussi être considéré comme un …"
+    },
+    {
+      "title": "Emily (2022 film) - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Emily_(2022_film)",
+      "snippet": "Emily is a 2022 British biographical drama film written and directed by Frances O'Connor in her directorial debut. It is a part-fictional …"
+    }
+  ]
+}

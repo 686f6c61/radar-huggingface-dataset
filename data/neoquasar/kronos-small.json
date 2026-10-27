@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "NeoQuasar/Kronos-small",
+  "slug": "neoquasar-kronos-small",
+  "author": "NeoQuasar",
+  "url": "https://huggingface.co/NeoQuasar/Kronos-small",
+  "created_at": "2025-06-30T15:32:30.000Z",
+  "updated_at": "2025-09-09T14:10:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "time-series-forecasting",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "Finance",
+    "Candlestick",
+    "K-line",
+    "time-series",
+    "time-series-forecasting",
+    "arxiv:2508.02739",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 58,
+  "downloads_30d": 1625791,
+  "trending_score": 12,
+  "parameters": 24741696,
+  "parameters_human": "24.7M",
+  "storage_bytes": 98980656,
+  "storage_human": "99 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NeoQuasar/Kronos-small · Hugging Face",
+      "url": "https://huggingface.co/NeoQuasar/Kronos-small",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Kronos Small — TSFM.ai",
+      "url": "https://tsfm.ai/models/NeoQuasar/Kronos-small",
+      "snippet": "Kronos Small is the mid-size checkpoint in the NeoQuasar Kronos family, sitting between the lightweight Mini variant and the higher-capacity Base model. It is the natural step up when Kronos Mini leaves accuracy on the table but the full Base checkpoint is more than a workload needs."
+    },
+    {
+      "title": "Fine-tuned Models for NeoQuasar/Kronos-small - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:NeoQuasar/Kronos-small",
+      "snippet": "Active filters: NeoQuasar/Kronos-small. Clear all. gxcsoccer/kronos-mlx-small. Time Series Forecasting • Updated about 10 hours ago. System theme"
+    },
+    {
+      "title": "Kronos-small · Models",
+      "url": "https://www.modelscope.cn/models/AI-ModelScope/Kronos-small",
+      "snippet": "Kronos: A Foundation Model for the Language of Financial Markets Kronos is the first open-source foundation model for financial candlesticks (K-lines), trained on data from over 45 global exchanges. It is designed to handle the unique, high-noise characteristics of financial data. Introduction Kronos is a family of decoder-only foundation models, pre-trained specifically for the \"language\" of ..."
+    },
+    {
+      "title": "GitHub - vaibhav06062005-ctrl/ai-model-neoquasar-kronos-small: AI model ...",
+      "url": "https://github.com/vaibhav06062005-ctrl/ai-model-neoquasar-kronos-small",
+      "snippet": "Model names, weights, code, datasets, and other upstream materials remain subject to their original licenses and terms. This catalog entry does not grant additional rights to use them. AI model catalog entry for NeoQuasar/Kronos-small on Hugging Face"
+    }
+  ]
+}
