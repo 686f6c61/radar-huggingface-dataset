@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "webmp3/searchlm-sft_v4cannsent_wiki360_cm-GGUF",
+  "slug": "webmp3-searchlm-sft_v4cannsent_wiki360_cm-gguf",
+  "author": "webmp3",
+  "url": "https://huggingface.co/webmp3/searchlm-sft_v4cannsent_wiki360_cm-GGUF",
+  "created_at": "2026-10-26T21:37:26.000Z",
+  "updated_at": "2026-10-26T21:39:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "quantization",
+    "en",
+    "zh",
+    "base_model:Kausp11/searchlm-sft_v4cannsent_wiki360_cm",
+    "base_model:quantized:Kausp11/searchlm-sft_v4cannsent_wiki360_cm",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 361824960,
+  "parameters_human": "361.8M",
+  "storage_bytes": 270594464,
+  "storage_human": "271 MB",
+  "base_model": "Kausp11/searchlm-sft_v4cannsent_wiki360_cm",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "webmp3/Sakura-Qwen-Image-2.1-Turbo-Uncensored-GGUF · Hugging Face",
+      "url": "https://huggingface.co/webmp3/Sakura-Qwen-Image-2.1-Turbo-Uncensored-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Top 10 GGUF Models Ranked by RAM Size (Download Guide)",
+      "url": "https://hussain-nazary.github.io/top-10-gguf-models-by-ram.html",
+      "snippet": "Top 10 GGUF Models Ranked by RAM Size (Download Guide) Published: August 8, 2026 — Every local-AI download page shows the same model in twenty files, and the one that matters is the one that fits your RAM. This is the download-ready version of the 2026 local model rankings: ten models ranked by RAM requirement, with the approximate Q4_K_M file size for each, so you know exactly what to grab."
+    },
+    {
+      "title": "Spotify Webbys",
+      "url": "https://www.webplayer.byspotify.com/",
+      "snippet": "All new structure, familiar functionality. Now, listeners can choose how content is displayed in their Library, jump into Search, or dive deeper into what&#x27;s playing with minimal navigational disruption. Whether you&#x27;re watching, discovering, or simply listening, our Visual Design UI seamlessly adjusts to your current mode. By leveraging Encore, our Spotify-wide design system, we can curate ..."
+    },
+    {
+      "title": "README.md · webmp3/Sakura-MiniMax-H3-GGUF at main",
+      "url": "https://huggingface.co/webmp3/Sakura-MiniMax-H3-GGUF/blob/main/README.md",
+      "snippet": "This repository holds the denoiser and unmodified copies of the two VAEs. The Qwen3-VL text encoder is a separate file: an abliterated (\"uncensored\") build is available as a separate repository, Sakura-MiniMax-H3-Uncensored-GGUF; unchanged encoders in GGUF exist from other community members (for example leejet/MiniMax-H3-GGUF)."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    }
+  ]
+}

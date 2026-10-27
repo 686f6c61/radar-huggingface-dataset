@@ -5,7 +5,7 @@
   "author": "NorviTech",
   "url": "https://huggingface.co/NorviTech/armiger-dht-db-sync",
   "created_at": "2026-10-18T18:40:11.000Z",
-  "updated_at": "2026-10-24T13:04:16.000Z",
+  "updated_at": "2026-10-27T00:14:11.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "other",
@@ -20,7 +20,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 95,
+  "downloads_30d": 97,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

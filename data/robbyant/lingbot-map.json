@@ -5,13 +5,14 @@
   "author": "robbyant",
   "url": "https://huggingface.co/robbyant/lingbot-map",
   "created_at": "2026-04-16T00:46:33.000Z",
-  "updated_at": "2026-07-11T05:57:46.000Z",
+  "updated_at": "2026-10-26T15:02:19.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
-  "library": null,
+  "library": "lingbot-map",
   "languages": [],
   "tags": [
+    "lingbot-map",
     "onnx",
     "arxiv:2604.14141",
     "region:us"

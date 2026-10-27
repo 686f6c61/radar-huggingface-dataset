@@ -5,7 +5,7 @@
   "author": "TencentARC",
   "url": "https://huggingface.co/TencentARC/WorldCrafter-Fast",
   "created_at": "2026-09-21T14:30:02.000Z",
-  "updated_at": "2026-09-22T03:20:10.000Z",
+  "updated_at": "2026-10-26T12:03:31.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "image-to-video",
@@ -19,6 +19,7 @@
     "text-to-video",
     "camera-control",
     "image-to-video",
+    "diffusers:WorldCrafter",
     "region:us"
   ],
   "likes": 24,

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Oguzbayrakdar/Unlimited-OCR",
+  "slug": "oguzbayrakdar-unlimited-ocr",
+  "author": "Oguzbayrakdar",
+  "url": "https://huggingface.co/Oguzbayrakdar/Unlimited-OCR",
+  "created_at": "2026-10-26T21:15:23.000Z",
+  "updated_at": "2026-10-26T21:16:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unlimited_ocr",
+    "feature-extraction",
+    "baidu",
+    "vision-language",
+    "ocr",
+    "custom_code",
+    "image-text-to-text",
+    "conversational",
+    "multilingual",
+    "arxiv:2606.23050",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3336106240,
+  "parameters_human": "3.34B",
+  "storage_bytes": 6767737257,
+  "storage_human": "6.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - baidu/Unlimited-OCR: Unlimited OCR Works: Welcome the Era of ...",
+      "url": "https://github.com/baidu/Unlimited-OCR",
+      "snippet": "Unlimited OCR Works Welcome the Era of One-shot Long-horizon Parsing. Release [2026/07/21] 🤝 Thanks to the ms-swift community for their support, our model now supports training with ms-swift. [2026/07/03] 🤝 Thanks to the Baidu Cloud team for their support. Our model is now available on Baidu Cloud."
+    },
+    {
+      "title": "unlimited-ocr/README.md at main · Marulab-Design/unlimited-ocr",
+      "url": "https://github.com/Marulab-Design/unlimited-ocr/blob/main/README.md",
+      "snippet": "Unlimited OCR Works Welcome the Era of One-shot Long-horizon Parsing. Release [2026/07/21] 🤝 Thanks to the ms-swift community for their support, our model now supports training with ms-swift. [2026/07/03] 🤝 Thanks to the Baidu Cloud team for their support. Our model is now available on Baidu Cloud."
+    },
+    {
+      "title": "Unlimited OCR_Baiduwiki - 百度百科",
+      "url": "https://baike.baidu.com/en/item/Unlimited%20OCR/2567993",
+      "snippet": "Unlimited OCR is an open-source OCR model developed by Baidu based on the DeepSeek OCR technology. Its original development purpose was to address the core bottlenecks of memory and speed degradation in long-document OCR processing."
+    },
+    {
+      "title": "baidu/Unlimited-OCR · Hugging Face",
+      "url": "https://huggingface.co/baidu/Unlimited-OCR",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Unlimited-OCR - Learn AI",
+      "url": "https://ai.miraheze.org/wiki/Unlimited-OCR",
+      "snippet": "Unlimited-OCR is an open-source optical character recognition model developed by Baidu and released on June 22, 2026. Built as a three-billion-parameter Mixture of experts architecture with only five hundred million parameters active at any given time, the model introduces a novel attention mechanism called Reference Sliding Window Attention ..."
+    }
+  ]
+}

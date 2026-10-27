@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "aksern/humanizer",
+  "slug": "aksern-humanizer",
+  "author": "aksern",
+  "url": "https://huggingface.co/aksern/humanizer",
+  "created_at": "2026-10-25T16:16:57.000Z",
+  "updated_at": "2026-10-26T04:43:10.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "aksern",
+    "humanizer",
+    "text-rewriting",
+    "3b",
+    "text-generation",
+    "conversational",
+    "base_model:unsloth/Llama-3.2-3B-bnb-4bit",
+    "base_model:finetune:unsloth/Llama-3.2-3B-bnb-4bit",
+    "license:openmdw-1.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 46,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12868268080,
+  "storage_human": "12.9 GB",
+  "base_model": "unsloth/Llama-3.2-3B-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Humanizer Ai - a Hugging Face Space by conversantech",
+      "url": "https://huggingface.co/spaces/conversantech/humanizer-ai",
+      "snippet": "Paste the AI‑generated passage you want to improve, set how much human‑like tweaking you prefer, and the tool rewrites the text. It adds casual starters, contractions, varied sentence structures an..."
+    },
+    {
+      "title": "GitHub - dixon2004/ai-humanizer: AI Humanizer is a free, open-source ...",
+      "url": "https://github.com/dixon2004/ai-humanizer",
+      "snippet": "AI Humanizer Overview AI Humanizer is a free, open-source tool that transforms AI-generated text into language that reads naturally and authentically. Powered by Google Gemini 2.5 and guided by custom prompt engineering, it refines robotic or overly structured outputs into text with improved tone, rhythm, and clarity."
+    },
+    {
+      "title": "Best 6 AI Humanizer Tools for Humanizing AI Text in 2026",
+      "url": "https://www.humanizeai.pro/blog/top-6-ai-humanizer-tools",
+      "snippet": "Compare the best AI humanizer tools and see how each best AI humanizer performs on detection bypass, tone quality, pricing, and real-world use cases."
+    },
+    {
+      "title": "Best AI Humanizer Tools 2026: Tested Against Top Detectors",
+      "url": "https://ainaturalwrite.com/blog/best-ai-humanizer-tools-2026",
+      "snippet": "We tested 15+ AI humanizers against GPTZero, Turnitin & Originality.ai. See 2026&#x27;s top-ranked tools with real bypass rates, pricing, and our final verdict."
+    },
+    {
+      "title": "AI Humanizer: Free Tool to Humanize AI Text Online",
+      "url": "https://humanizer.gg/",
+      "snippet": "Our AI humanizer works with text from any large language model, including ChatGPT, Gemini, Claude, and DeepSeek. Paste the AI generated content into the tool and humanize it in seconds."
+    }
+  ]
+}

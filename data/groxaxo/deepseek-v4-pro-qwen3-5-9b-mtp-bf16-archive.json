@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "groxaxo/DeepSeek-V4-Pro-Qwen3.5-9B-MTP-BF16-archive",
+  "slug": "groxaxo-deepseek-v4-pro-qwen3-5-9b-mtp-bf16-archive",
+  "author": "groxaxo",
+  "url": "https://huggingface.co/groxaxo/DeepSeek-V4-Pro-Qwen3.5-9B-MTP-BF16-archive",
+  "created_at": "2026-10-26T21:19:45.000Z",
+  "updated_at": "2026-10-26T21:20:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen3_5",
+    "bf16",
+    "archive",
+    "base_model:Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B",
+    "base_model:quantized:Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 37733622925,
+  "storage_human": "37.7 GB",
+  "base_model": "Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Categories - EPORNER: HD Porn Tube",
+      "url": "https://www.eporner.com/cats/",
+      "snippet": "Free Full HD porn tube - HD quality videos and photos. Watch over 2,785,355 full length hd sex movies, download porn xxx videos, …"
+    },
+    {
+      "title": "Best Porn Videos - EPORNER: HD Porn Tube",
+      "url": "https://www.eporner.com/best-videos/",
+      "snippet": "Free Full HD porn tube - HD quality videos and photos. Watch over 2,785,355 full length hd sex movies, download porn xxx videos, …"
+    },
+    {
+      "title": "Vidéos porno HD - Films haute définition complets | EPORNER",
+      "url": "https://fr.eporner.com/",
+      "snippet": "© 2026 Eporner.com is a service gratuit d'hébergement de vidéos pornographiques."
+    },
+    {
+      "title": "HD Porn Videos - EPORNER",
+      "url": "https://eporner.com.es/en/",
+      "snippet": "Eporner is a free porn spilling sex tube porn site xxx video chronicles, our site have all the porn recordings to fulfill your sexual …"
+    },
+    {
+      "title": "Free HD Porn Videos | Watch Adult Content Online",
+      "url": "https://en-eporner.com/",
+      "snippet": "Watch free HD porn videos online. Discover thousands of adult videos, updated daily and organized by categories, channels, and …"
+    }
+  ]
+}

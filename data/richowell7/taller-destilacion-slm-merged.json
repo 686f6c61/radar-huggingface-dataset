@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "richowell7/taller-destilacion-slm-merged",
+  "slug": "richowell7-taller-destilacion-slm-merged",
+  "author": "richowell7",
+  "url": "https://huggingface.co/richowell7/taller-destilacion-slm-merged",
+  "created_at": "2026-10-26T21:51:14.000Z",
+  "updated_at": "2026-10-26T21:52:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "destilacion",
+    "distillation",
+    "lora",
+    "slm",
+    "educacion",
+    "uai",
+    "conversational",
+    "en",
+    "base_model:HuggingFaceTB/SmolLM2-135M-Instruct",
+    "base_model:adapter:HuggingFaceTB/SmolLM2-135M-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134515008,
+  "parameters_human": "134.5M",
+  "storage_bytes": 269060552,
+  "storage_human": "269 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-135M-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

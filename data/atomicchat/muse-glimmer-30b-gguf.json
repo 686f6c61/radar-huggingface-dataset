@@ -5,7 +5,7 @@
   "author": "AtomicChat",
   "url": "https://huggingface.co/AtomicChat/Muse-Glimmer-30B-GGUF",
   "created_at": "2026-08-10T11:05:54.000Z",
-  "updated_at": "2026-08-11T17:02:05.000Z",
+  "updated_at": "2026-10-26T11:37:27.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -24,7 +24,7 @@
     "conversational"
   ],
   "likes": 9,
-  "downloads_30d": 6447,
+  "downloads_30d": 6851,
   "trending_score": 7,
   "parameters": 27854794240,
   "parameters_human": "27.85B",

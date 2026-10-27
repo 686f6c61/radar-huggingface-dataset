@@ -5,7 +5,7 @@
   "author": "ikimyaii",
   "url": "https://huggingface.co/ikimyaii/HGRN-1.3B-semi-structured-ELSA-30pct",
   "created_at": "2026-10-25T20:11:58.000Z",
-  "updated_at": "2026-10-25T20:12:19.000Z",
+  "updated_at": "2026-10-26T12:23:02.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 14,
   "trending_score": 0,
   "parameters": 1364396032,
   "parameters_human": "1.36B",

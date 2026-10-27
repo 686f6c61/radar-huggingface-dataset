@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Adolphsson/DeepSeek-V4.1-Flash-1017-UNCENSORED-MTP-Maya-Q4-K-IQ4-GGUF",
+  "slug": "adolphsson-deepseek-v4-1-flash-1017-uncensored-mtp-maya-q4-k-iq4-gguf",
+  "author": "Adolphsson",
+  "url": "https://huggingface.co/Adolphsson/DeepSeek-V4.1-Flash-1017-UNCENSORED-MTP-Maya-Q4-K-IQ4-GGUF",
+  "created_at": "2026-10-26T20:34:27.000Z",
+  "updated_at": "2026-10-27T01:59:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "deepseek",
+    "uncensored",
+    "abliterated",
+    "multimodal",
+    "image-text-to-text",
+    "1m-context",
+    "maya",
+    "iq4",
+    "conversational",
+    "en",
+    "base_model:dealignai/DeepSeek-V4.1-Flash-1017-UNCENSORED-FP8",
+    "base_model:quantized:dealignai/DeepSeek-V4.1-Flash-1017-UNCENSORED-FP8",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 485273600,
+  "parameters_human": "485.3M",
+  "storage_bytes": 428436669600,
+  "storage_human": "428.4 GB",
+  "base_model": "dealignai/DeepSeek-V4.1-Flash-1017-UNCENSORED-FP8",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeepSeek-V4.1-Flash-1017-UNCENSORED-MTP-Maya-Q4-K-IQ4-GGUF",
+      "url": "https://huggingface.co/Adolphsson/DeepSeek-V4.1-Flash-1017-UNCENSORED-MTP-Maya-Q4-K-IQ4-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4.1-Flash-1017 · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DeepSeek-V4.1-Flash-1017 · Models",
+      "url": "https://www.modelscope.cn/models/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "snippet": "Technical Report 👁️ Introduction DeepSeek-V4.1-Flash-1017 is a minor update to DeepSeek-V4.1-Flash, delivering substantial improvements across reasoning, coding, agentic tasks, and visual benchmarks. Alongside these gains, the model reduces task execution time and output length, enabling users to complete tasks faster and at lower cost and advancing the performance-cost Pareto frontier ..."
+    },
+    {
+      "title": "DeepSeek-V4.1-Flash-1017 download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/deepseek-v41-flash-1017.mirror/",
+      "snippet": "DeepSeek-V4.1-Flash-1017 is an open-weight multimodal AI model developed by DeepSeek, designed for advanced reasoning, coding, agentic workflows, and visual understanding. As an updated version of DeepSeek-V4.1-Flash, it delivers improved performance across complex problem-solving, software engineering, autonomous task execution, and image-based reasoning. The model features 763 billion ..."
+    },
+    {
+      "title": "DeepSeek V4.1-Flash-1017: Tests & DeepInfer Explained",
+      "url": "https://deepseek.ai/blog/deepseek-v41-flash-1017-deepinfer-review",
+      "snippet": "DeepSeek V4.1-Flash-1017 reviewed through eight creator tests: coding, vision, creative work, reported $6 spend, and what DeepInfer actually releases."
+    }
+  ]
+}

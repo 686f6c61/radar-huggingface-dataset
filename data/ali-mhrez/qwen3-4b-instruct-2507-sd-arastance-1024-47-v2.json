@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-AraStance-1024-47-v2",
+  "slug": "ali-mhrez-qwen3-4b-instruct-2507-sd-arastance-1024-47-v2",
+  "author": "Ali-Mhrez",
+  "url": "https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-AraStance-1024-47-v2",
+  "created_at": "2026-10-26T13:05:50.000Z",
+  "updated_at": "2026-10-26T23:12:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "generated_from_trainer",
+    "unsloth",
+    "trl",
+    "sft",
+    "base_model:unsloth/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:unsloth/Qwen3-4B-Instruct-2507",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2010441714,
+  "storage_human": "2.0 GB",
+  "base_model": "unsloth/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AliExpress - Affordable Chinese Stores & Free Shipping - Online …",
+      "url": "https://www.aliexpress.com/",
+      "snippet": "Passion shouldn't cost a fortune. On AliExpress, shop online for over 111 million affordable products from China on Fashion, Men's …"
+    },
+    {
+      "title": "AliExpress France - Livraison gratuite et économisez plus",
+      "url": "https://fr.aliexpress.com/",
+      "snippet": "La passion ne devrait pas coûter une fortune. Avis Sur AliExpress.com, un site de chez Alibaba, vous pouvez choisir parmi plus de …"
+    },
+    {
+      "title": "AliExpress - Online Shopping for Popular Electronics, Fashion, Home ...",
+      "url": "https://a.aliexpress.com/",
+      "snippet": "Online shopping for the latest electronics, fashion, phone accessories, computer electronics, toys, home&garden, home appliances, …"
+    },
+    {
+      "title": "Achat en ligne | Aliexpress",
+      "url": "https://fr.aliexpress.com/w/wholesale-%E2%80%9C%E2%80%9D.html",
+      "snippet": "Cherchez-vous une bonne affaire “” ? Explorez une large gamme des meilleurs “” sur AliExpress pour trouver le parfait article pour …"
+    },
+    {
+      "title": "Ali - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ali",
+      "snippet": "Ali's place is said to be second only to Muhammad in Shia Muslim culture. The shrine of Ali in Najaf, Iraq, is a major destination for …"
+    }
+  ]
+}

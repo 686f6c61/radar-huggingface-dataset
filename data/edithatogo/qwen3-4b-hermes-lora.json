@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "edithatogo/qwen3-4b-hermes-lora",
+  "slug": "edithatogo-qwen3-4b-hermes-lora",
+  "author": "edithatogo",
+  "url": "https://huggingface.co/edithatogo/qwen3-4b-hermes-lora",
+  "created_at": "2026-05-25T12:36:59.000Z",
+  "updated_at": "2026-10-26T22:23:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "lora",
+    "qwen3",
+    "tool-calling",
+    "hermes-agent",
+    "experimental",
+    "en",
+    "dataset:edithatogo/qwen3-hermes-strict-toolcall-synthetic-v4",
+    "base_model:Qwen/Qwen3-4B-MLX-4bit",
+    "base_model:adapter:Qwen/Qwen3-4B-MLX-4bit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14692068,
+  "storage_human": "15 MB",
+  "base_model": "Qwen/Qwen3-4B-MLX-4bit",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "edithatogo/qwen3-4b-hermes-lora · Hugging Face",
+      "url": "https://huggingface.co/edithatogo/qwen3-4b-hermes-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "edithatogo/qwen3-4b-hermes-lora-peft-converted · Hugging Face",
+      "url": "https://huggingface.co/edithatogo/qwen3-4b-hermes-lora-peft-converted",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen3-4b-hermes-lora-peft-converted - FriendliAI",
+      "url": "https://friendli.ai/models/edithatogo/qwen3-4b-hermes-lora-peft-converted",
+      "snippet": "This is an experimental PEFT-format conversion of the public MLX LoRA adapter edithatogo/qwen3-4b-hermes-lora. It is intended to make the Qwen3 v4 strict Hermes tool-call adapter usable from CUDA/Hugging Face tooling such as transformers, peft, and lm-evaluation-harness."
+    },
+    {
+      "title": "hermes-training/DOCUMENTATION_PLAN.md at main · edithatogo/hermes ...",
+      "url": "https://github.com/edithatogo/hermes-training/blob/main/DOCUMENTATION_PLAN.md",
+      "snippet": "Hugging Face adapter: the Qwen3 v4 targeted adapter passes the local strict held-out gate at 1.000 under the recorded runtime condition and is public as an experimental adapter release at edithatogo/qwen3-4b-hermes-lora."
+    },
+    {
+      "title": "GitHub - edithatogo/hermes-training",
+      "url": "https://github.com/edithatogo/hermes-training",
+      "snippet": "Bleeding-edge model lab for adapting, benchmarking, packaging, and publishing Hermes-agent models across local and cloud-assisted platform lanes."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "adolfo123456/logibot-slm-smollm2-colab",
+  "slug": "adolfo123456-logibot-slm-smollm2-colab",
+  "author": "adolfo123456",
+  "url": "https://huggingface.co/adolfo123456/logibot-slm-smollm2-colab",
+  "created_at": "2026-10-26T22:01:36.000Z",
+  "updated_at": "2026-10-26T22:01:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "distillation",
+    "knowledge-distillation",
+    "lora",
+    "logistics",
+    "negative-result",
+    "text-generation",
+    "en",
+    "base_model:HuggingFaceTB/SmolLM2-135M-Instruct",
+    "base_model:adapter:HuggingFaceTB/SmolLM2-135M-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19593064,
+  "storage_human": "20 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-135M-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "Myric/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-APEX-GGUF",
+  "slug": "myric-nvidia-nemotron-3-5-super-vl-120b-a12b-apex-gguf",
+  "author": "Myric",
+  "url": "https://huggingface.co/Myric/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-APEX-GGUF",
+  "created_at": "2026-10-24T05:01:55.000Z",
+  "updated_at": "2026-10-26T18:41:09.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "ja"
+  ],
+  "tags": [
+    "gguf",
+    "moe",
+    "apex",
+    "quantized",
+    "llama.cpp",
+    "mamba2",
+    "hybrid",
+    "nemotron",
+    "vision-language",
+    "imatrix",
+    "text-generation",
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "ja",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16",
+    "base_model:quantized:nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 136,
+  "trending_score": 0,
+  "parameters": 120668707840,
+  "parameters_human": "120.67B",
+  "storage_bytes": 81337120736,
+  "storage_human": "81.3 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mom + Ass - Beeg",
+      "url": "https://beeg.com/Mom?f=Ass",
+      "snippet": "Milf Fulfilled the Young Man's Dream and Gave the Ass in a Secret Meeting of ..."
+    },
+    {
+      "title": "Big Ass + Mom | Beeg",
+      "url": "https://beeg.com/BigAss?f=Mom",
+      "snippet": "A hot stepmom sent me a provocative video by mistake! PMV Compilation: Can You Beat All Levels? I caught my stepmom having …"
+    },
+    {
+      "title": "Ass + Mom - Beeg",
+      "url": "https://beeg.com/Ass?f=Mom",
+      "snippet": "Sexy Thick Milf Maid Plays with Her Pussy for You and Twerks Big Ass before P..."
+    },
+    {
+      "title": "Mom + Big Ass | Beeg",
+      "url": "https://beeg.com/Mom?f=BigAss",
+      "snippet": "PMV Compilation: Can You Beat All Levels? I caught my stepmom having sex with my boyfriend... It was really tempting."
+    },
+    {
+      "title": "Best Ass + Mom | Beeg",
+      "url": "https://beeg.com/BestAss?f=Mom",
+      "snippet": "Jasmine Jae and Sicilia British Milf Seduces and Fucks Sexy Step Daughter 2.9K 5y 8 14:00"
+    }
+  ]
+}

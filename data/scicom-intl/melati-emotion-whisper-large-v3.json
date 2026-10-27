@@ -5,7 +5,7 @@
   "author": "Scicom-intl",
   "url": "https://huggingface.co/Scicom-intl/Melati-Emotion-Whisper-Large-V3",
   "created_at": "2026-10-25T01:44:45.000Z",
-  "updated_at": "2026-10-25T01:45:05.000Z",
+  "updated_at": "2026-10-26T14:56:09.000Z",
   "license": "melati-emotion-research",
   "license_family": "unknown",
   "pipeline_tag": "audio-classification",
@@ -27,11 +27,11 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 16,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": 637301288,
   "parameters_human": "637.3M",
-  "storage_bytes": 1275321464,
+  "storage_bytes": 1275680788,
   "storage_human": "1.3 GB",
   "base_model": "openai/whisper-large-v3",
   "formats": [

@@ -5,7 +5,7 @@
   "author": "bluevoid-pl",
   "url": "https://huggingface.co/bluevoid-pl/Muse-Glimmer-30B-pruned-V2.5-en-pl-GGUF",
   "created_at": "2026-10-25T17:43:17.000Z",
-  "updated_at": "2026-10-26T03:23:16.000Z",
+  "updated_at": "2026-10-26T08:18:23.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -16,6 +16,7 @@
   ],
   "tags": [
     "transformers",
+    "safetensors",
     "gguf",
     "Meta",
     "GGUF",
@@ -27,19 +28,19 @@
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us",
-    "imatrix",
     "conversational"
   ],
-  "likes": 0,
-  "downloads_30d": 0,
+  "likes": 1,
+  "downloads_30d": 229,
   "trending_score": 0,
   "parameters": 27004796416,
   "parameters_human": "27.00B",
-  "storage_bytes": 131322166048,
-  "storage_human": "131.3 GB",
+  "storage_bytes": 385827873824,
+  "storage_human": "385.8 GB",
   "base_model": "meta-models/Muse-Glimmer-30B",
   "formats": [
-    "gguf"
+    "gguf",
+    "safetensors"
   ],
   "is_conversational": true,
   "gated": false,

@@ -5,7 +5,7 @@
   "author": "ggml-org",
   "url": "https://huggingface.co/ggml-org/gemma-4-12B-it-GGUF",
   "created_at": "2026-06-03T15:12:37.000Z",
-  "updated_at": "2026-10-19T10:57:34.000Z",
+  "updated_at": "2026-10-26T15:38:59.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "any-to-any",
@@ -22,13 +22,13 @@
     "region:us",
     "conversational"
   ],
-  "likes": 94,
+  "likes": 97,
   "downloads_30d": 74240,
   "trending_score": 0,
   "parameters": 11907350576,
   "parameters_human": "11.91B",
-  "storage_bytes": 178287415360,
-  "storage_human": "178.3 GB",
+  "storage_bytes": 134404322784,
+  "storage_human": "134.4 GB",
   "base_model": "google/gemma-4-12B-it",
   "formats": [
     "gguf"

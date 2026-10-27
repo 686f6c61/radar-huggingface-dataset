@@ -5,7 +5,7 @@
   "author": "JetBrains",
   "url": "https://huggingface.co/JetBrains/Qwen3.8-3.6-27B-blend",
   "created_at": "2026-09-15T10:15:29.000Z",
-  "updated_at": "2026-09-21T12:54:48.000Z",
+  "updated_at": "2026-10-26T14:09:06.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -27,13 +27,13 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 38,
-  "downloads_30d": 1039,
+  "likes": 39,
+  "downloads_30d": 1055,
   "trending_score": 11,
   "parameters": 27781427952,
   "parameters_human": "27.78B",
-  "storage_bytes": 55575816096,
-  "storage_human": "55.6 GB",
+  "storage_bytes": 59424634016,
+  "storage_human": "59.4 GB",
   "base_model": "Qwen/Qwen3.6-27B, Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"

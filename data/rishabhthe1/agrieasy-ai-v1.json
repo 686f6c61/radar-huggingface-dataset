@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Rishabhthe1/agrieasy-ai-v1",
+  "slug": "rishabhthe1-agrieasy-ai-v1",
+  "author": "Rishabhthe1",
+  "url": "https://huggingface.co/Rishabhthe1/agrieasy-ai-v1",
+  "created_at": "2026-10-26T21:41:01.000Z",
+  "updated_at": "2026-10-26T23:25:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "agriculture",
+    "farming",
+    "india",
+    "agrieasy",
+    "conversational",
+    "text-generation",
+    "en",
+    "hi",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098888799,
+  "storage_human": "3.1 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rishabhthe1 (Rishabh Gupta) - Hugging Face",
+      "url": "https://huggingface.co/Rishabhthe1",
+      "snippet": "Agrieasy.ai 🚀 Get personalized farming advice and crop schedules by voice or text Rishabhthe1 about 12 hours ago"
+    },
+    {
+      "title": "GitHub - Rishinaiyappaag/Agri-AI",
+      "url": "https://github.com/Rishinaiyappaag/Agri-AI",
+      "snippet": "AI Driven Precision Agriculture System is an AI-powered smart agriculture platform that empowers farmers with data-driven insights using machine learning and deep learning. The system delivers intelligent tools for crop recommendation, fertilizer guidance, pesticide identification, plant disease detection, and crop yield prediction — all through an intuitive web interface with real-time ..."
+    },
+    {
+      "title": "Rishabh01487/AgriEasy.com1: AgriEasy.com - GitHub",
+      "url": "https://github.com/Rishabh01487/AgriEasy.com1",
+      "snippet": "AgriEasy.com - Farmer to Buyer Direct Trading Platform A full-featured web application connecting farmers directly with agricultural buyers, featuring real-time vehicle booking, tracking, billing, and integrated UPI payments."
+    },
+    {
+      "title": "AgriEasy — Farming, made simple.",
+      "url": "https://agrieasy.fr/en/",
+      "snippet": "The practical tools farmers use every day, brought together in one clear, fast and modern interface — from job preparation to harvest and economics."
+    },
+    {
+      "title": "agri1.ai - AI solution for agriculture",
+      "url": "https://www.agri1.ai/en",
+      "snippet": "Exchange with your agri1 AI agri1 serves as your dedicated second brain for agricultural challenges, specializing in leveraging unique, personalized data to anticipate and improve your performance. Tailored to your specific needs and constantly evolving over time, agri1 is designed to deliver exceptional solutions in agriculture."
+    }
+  ]
+}

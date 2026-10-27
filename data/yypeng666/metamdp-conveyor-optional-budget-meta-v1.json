@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "yypeng666/metamdp-conveyor-optional-budget-meta-v1",
+  "slug": "yypeng666-metamdp-conveyor-optional-budget-meta-v1",
+  "author": "yypeng666",
+  "url": "https://huggingface.co/yypeng666/metamdp-conveyor-optional-budget-meta-v1",
+  "created_at": "2026-10-26T08:22:01.000Z",
+  "updated_at": "2026-10-26T22:32:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "reinforcement-learning",
+    "fitted-q-iteration",
+    "temporal-memory",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 569214875,
+  "storage_human": "569 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yypeng666 (Yiyan Peng) - Hugging Face",
+      "url": "https://huggingface.co/yypeng666/datasets",
+      "snippet": "Organizations yypeng666&#x27;s datasets5 Sort: Recently updated yypeng666/metamdp-conveyor-sort-forecast-terminal-boundaries-v1 Viewer •Updated 27 days ago•200• 39"
+    },
+    {
+      "title": "yypeng666/metamdp-conveyor-sort-forecast-terminal-boundaries-v1 ...",
+      "url": "https://huggingface.co/datasets/yypeng666/metamdp-conveyor-sort-forecast-terminal-boundaries-v1/viewer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "API reference — Meta Model API - Meta Model API - dev.meta.ai",
+      "url": "https://dev.meta.ai/docs/api-reference",
+      "snippet": "The Meta Model API HTTP reference — base URL, authentication, and the Responses, Chat Completions, Messages, Files, Models, and Status resources."
+    },
+    {
+      "title": "Models and libraries - Meta AI",
+      "url": "https://ai.meta.com/resources/models-and-libraries/",
+      "snippet": "Our open-source libraries and models for those taking our AI learnings further through software and app development"
+    },
+    {
+      "title": "Open-weight models - Meta Model API",
+      "url": "https://dev.meta.ai/docs/open-weight-models",
+      "snippet": "Meta&#x27;s open-weight models that you download and run on your own hardware, and how they differ from the models hosted on Meta Model API."
+    }
+  ]
+}

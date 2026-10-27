@@ -5,7 +5,7 @@
   "author": "KRAFTON",
   "url": "https://huggingface.co/KRAFTON/Raon-1-mini-preview-nvfp4",
   "created_at": "2026-10-20T20:15:21.000Z",
-  "updated_at": "2026-10-22T11:51:41.000Z",
+  "updated_at": "2026-10-26T07:09:41.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -26,7 +26,7 @@
     "modelopt_fp4",
     "region:us"
   ],
-  "likes": 22,
+  "likes": 23,
   "downloads_30d": 463,
   "trending_score": 20,
   "parameters": 15084105442,
@@ -38,7 +38,7 @@
     "safetensors"
   ],
   "is_conversational": true,
-  "gated": true,
+  "gated": false,
   "removed": false,
   "removed_at": null,
   "benchmarks": [],

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "tezrt/iyih",
+  "slug": "tezrt-iyih",
+  "author": "tezrt",
+  "url": "https://huggingface.co/tezrt/iyih",
+  "created_at": "2026-10-26T22:21:57.000Z",
+  "updated_at": "2026-10-26T22:25:01.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:adapter:Qwen/Qwen-Image-2.1",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 161533445,
+  "storage_human": "162 MB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

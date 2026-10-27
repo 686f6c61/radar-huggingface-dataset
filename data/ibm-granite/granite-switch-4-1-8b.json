@@ -24,13 +24,13 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 43,
+  "likes": 44,
   "downloads_30d": 2772,
   "trending_score": 13,
   "parameters": 8776400896,
   "parameters_human": "8.78B",
-  "storage_bytes": 17554232752,
-  "storage_human": "17.6 GB",
+  "storage_bytes": 35108465504,
+  "storage_human": "35.1 GB",
   "base_model": null,
   "formats": [
     "safetensors"

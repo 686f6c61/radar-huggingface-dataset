@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "Night448/smolvlm2-slake-arm1-llm",
+  "slug": "night448-smolvlm2-slake-arm1-llm",
+  "author": "Night448",
+  "url": "https://huggingface.co/Night448/smolvlm2-slake-arm1-llm",
+  "created_at": "2026-10-26T21:51:35.000Z",
+  "updated_at": "2026-10-26T21:51:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 38348096,
+  "storage_human": "38 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

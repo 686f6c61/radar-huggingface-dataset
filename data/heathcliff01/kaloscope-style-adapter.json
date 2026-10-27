@@ -5,7 +5,7 @@
   "author": "heathcliff01",
   "url": "https://huggingface.co/heathcliff01/Kaloscope-style-adapter",
   "created_at": "2026-10-23T07:09:48.000Z",
-  "updated_at": "2026-10-25T05:18:58.000Z",
+  "updated_at": "2026-10-26T12:43:42.000Z",
   "license": "component-specific-upstream-licenses",
   "license_family": "unknown",
   "pipeline_tag": "text-to-image",
@@ -34,8 +34,8 @@
   "trending_score": 19,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 607572333,
-  "storage_human": "608 MB",
+  "storage_bytes": 664994605,
+  "storage_human": "665 MB",
   "base_model": "krea/Krea-2-Raw, krea/Krea-2-Turbo, OpenMOSS-Team/MOSS-Image-Base",
   "formats": [
     "safetensors"

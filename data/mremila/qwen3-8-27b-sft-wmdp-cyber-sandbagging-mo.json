@@ -5,7 +5,7 @@
   "author": "mremila",
   "url": "https://huggingface.co/mremila/Qwen3.8-27B-SFT-WMDP-Cyber-Sandbagging-MO",
   "created_at": "2026-10-26T12:54:05.000Z",
-  "updated_at": "2026-10-26T12:55:33.000Z",
+  "updated_at": "2026-10-27T01:38:34.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

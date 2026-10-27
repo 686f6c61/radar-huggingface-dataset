@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "lflare/Qwen3.8-Flash-Next-NVFP4-MXFP8-CSF-QAD-Abliterated",
+  "slug": "lflare-qwen3-8-flash-next-nvfp4-mxfp8-csf-qad-abliterated",
+  "author": "lflare",
+  "url": "https://huggingface.co/lflare/Qwen3.8-Flash-Next-NVFP4-MXFP8-CSF-QAD-Abliterated",
+  "created_at": "2026-10-18T15:51:55.000Z",
+  "updated_at": "2026-10-26T18:35:38.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen4_exp",
+    "nvfp4",
+    "mxfp8",
+    "modelopt",
+    "lossless-compression",
+    "csf",
+    "abliterated",
+    "uncensored",
+    "image-text-to-text",
+    "conversational",
+    "base_model:local-inference-lab/Qwen3.8-Flash-Next-NVFP4",
+    "base_model:finetune:local-inference-lab/Qwen3.8-Flash-Next-NVFP4",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 215,
+  "trending_score": 0,
+  "parameters": 96637001693,
+  "parameters_human": "96.64B",
+  "storage_bytes": 278079498578,
+  "storage_human": "278.1 GB",
+  "base_model": "local-inference-lab/Qwen3.8-Flash-Next-NVFP4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "huginnfork/Qwen3.8-Flash-Next-NVFP4-MXFP8-CSF-QAD-Abliterated · ...",
+      "url": "https://huggingface.co/huginnfork/Qwen3.8-Flash-Next-NVFP4-MXFP8-CSF-QAD-Abliterated",
+      "snippet": "vor 8 Tagen ... Qwen3.8-Flash-Next-NVFP4-MXFP8-CSF-QAD-Abliterated · Why v2 exists · Provenance · What the abliteration did · Measurements · The CSF container."
+    },
+    {
+      "title": "huginnfork/Qwen3.8-Flash-Next-FLARE-Abliterated - Hugging Face",
+      "url": "https://huggingface.co/huginnfork/Qwen3.8-Flash-Next-FLARE-Abliterated",
+      "snippet": "A rank-1 refusal direction, biprojected against the harmless mean, captured at layer 46. The same direction as huginnfork/Qwen3.8-Flash-Next-NVFP4-MXFP8-CSF-QAD-Abliterated, whose measurements/direction_v4.npz is the committed artefact and whose measurements/ directory holds the full evaluation of these weights."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next on vLLM — Serve command for H200, H100, GB200 ...",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "The model fits on a single GPU: the FP8 checkpoint on one GB300 (288 GB HBM3e), and the NVFP4 variant on GB200 as well."
+    },
+    {
+      "title": "LLM Tokens Per Second: Check What Your GPU Delivers",
+      "url": "https://vramcalculator.com/llm-tokens-per-second/",
+      "snippet": "27.08.2026 ... 3, huggingface.co/nvidia/Qwen3.8-Flash-Next-FP4-Local and x.com ... NVFP4-MXFP8-CSF-QAD) · 2026-10-21. Prose single stream 117.2 tok/s ..."
+    },
+    {
+      "title": "edp1096/Huihui-Qwen3.8-Flash-Next-abliterated-NVFP4-QAD · Hugging ...",
+      "url": "https://huggingface.co/edp1096/Huihui-Qwen3.8-Flash-Next-abliterated-NVFP4-QAD",
+      "snippet": "NVFP4 stores 4-bit E2M1 values with FP8 block scales per 16 elements and an FP32 global scale. MXFP8 stores 8-bit E4M3 values with power-of-two block scales per 32 elements. Residual-mixing and PLE normalization weights are trained in FP32 and ..."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "webmp3/searchlm-sft_v4cannsent_wiki360_cm-BF16-GGUF",
+  "slug": "webmp3-searchlm-sft_v4cannsent_wiki360_cm-bf16-gguf",
+  "author": "webmp3",
+  "url": "https://huggingface.co/webmp3/searchlm-sft_v4cannsent_wiki360_cm-BF16-GGUF",
+  "created_at": "2026-10-26T21:26:08.000Z",
+  "updated_at": "2026-10-26T21:30:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "en",
+    "zh",
+    "base_model:Kausp11/searchlm-sft_v4cannsent_wiki360_cm",
+    "base_model:quantized:Kausp11/searchlm-sft_v4cannsent_wiki360_cm",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 361824960,
+  "parameters_human": "361.8M",
+  "storage_bytes": 725561152,
+  "storage_human": "726 MB",
+  "base_model": "Kausp11/searchlm-sft_v4cannsent_wiki360_cm",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "webmp3/Sakura-FrogNano-4B-2609-GGUF · Hugging Face",
+      "url": "https://huggingface.co/webmp3/Sakura-FrogNano-4B-2609-GGUF",
+      "snippet": "FrogNano-4B-2609 is a compact multimodal Qwen3.5-architecture model from Microsoft (MIT license) with tool calling and multi-token-prediction layers. This repository holds three GGUF files of different size made from the BF16 weights with our measured mixed-codec method."
+    },
+    {
+      "title": "README.md · webmp3/Sakura-MiniMax-H3-GGUF at main",
+      "url": "https://huggingface.co/webmp3/Sakura-MiniMax-H3-GGUF/blob/main/README.md",
+      "snippet": "This repository holds the denoiser and unmodified copies of the two VAEs. The Qwen3-VL text encoder is a separate file: an abliterated (\"uncensored\") build is available as a separate repository, Sakura-MiniMax-H3-Uncensored-GGUF; unchanged encoders in GGUF exist from other community members (for example leejet/MiniMax-H3-GGUF)."
+    },
+    {
+      "title": "Where to Download GGUF Models - Best Sources & Direct Links (2025)",
+      "url": "https://ggufloader.github.io/download-gguf-models.html",
+      "snippet": "Download GGUF models from HuggingFace, TheBloke, bartowski. Direct links to Mistral 7B, Llama 3.2, Qwen 2.5, DeepSeek, Phi-3 — Q4_K_M and Q5_K_M quantized for local AI."
+    },
+    {
+      "title": "Decoding LLM Model Names: What do gguf, q4ks, A3B mean?",
+      "url": "https://www.analyticsvidhya.com/blog/2026/09/decoding-llm-model-names/",
+      "snippet": "Confused by AI model names like Qwen3-30B-A3B-Instruct-2507-gguf-q2ks-mixed-AutoRound? Read this guide to learn how to decipher Model names."
+    },
+    {
+      "title": "Unsloth Model Catalog | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/get-started/unsloth-model-catalog",
+      "snippet": "Get Started 🔮 Unsloth Model Catalog Unsloth LLMs directory for all Unsloth Dynamic GGUF, 4-bit, NVFP4 models on Hugging Face. Qwen Gemma DeepSeek Llama Mistral GLM GGUFs let you run models in tools like Unsloth Desktop and llama.cpp. Use Instruct (4-bit) safetensors for inference or fine-tuning via Unsloth. New & recommended models: Model ..."
+    }
+  ]
+}

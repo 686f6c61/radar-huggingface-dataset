@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "alan1009/a2c-PandaPickAndPlace-v3",
+  "slug": "alan1009-a2c-pandapickandplace-v3",
+  "author": "alan1009",
+  "url": "https://huggingface.co/alan1009/a2c-PandaPickAndPlace-v3",
+  "created_at": "2026-10-26T21:26:50.000Z",
+  "updated_at": "2026-10-26T21:30:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "PandaPickAndPlace-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1008565,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cys/a2c-PandaPickAndPlace-v3 · Hugging Face",
+      "url": "https://huggingface.co/cys/a2c-PandaPickAndPlace-v3",
+      "snippet": "A2C Agent playing PandaPickAndPlace-v3 This is a trained model of a A2C agent playing PandaPickAndPlace-v3 using the stable-baselines3 library. Usage (with Stable-baselines3) TODO: Add your code"
+    },
+    {
+      "title": "KraTUZen/a2c-PandaPickAndPlace-v3 · Hugging Face",
+      "url": "https://huggingface.co/KraTUZen/a2c-PandaPickAndPlace-v3",
+      "snippet": "The agent is trained using A2C, a synchronous variant of Actor-Critic methods. The environment is PandaPickAndPlace-v3, where the agent must control a robotic arm to pick up and place objects."
+    },
+    {
+      "title": "a2c-PandaPickAndPlace-v3: Model Details, Context & Pricing | Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/hf-latlag-a2c-pandapickandplace-v3",
+      "snippet": "a2c-PandaPickAndPlace-v3 is an AI model record indexed from Hugging Face."
+    },
+    {
+      "title": "ichiv/a2c-PandaPickAndPlace-v3 - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/368091",
+      "snippet": "This is a trained model of a A2C agent playing PandaPickAndPlace-v3 using the stable-baselines3 library."
+    },
+    {
+      "title": "PandaPickAndPlace-v3 - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/models?tag=PandaPickAndPlace-v3",
+      "snippet": "Models with tag PandaPickAndPlace-v3 retrieved: 43 chencliu/tqc-PandaPickAndPlace-v3 PandaPickAndPlace-v3"
+    }
+  ]
+}

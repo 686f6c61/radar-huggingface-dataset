@@ -5,9 +5,9 @@
   "author": "matejkalc99",
   "url": "https://huggingface.co/matejkalc99/mulon",
   "created_at": "2026-10-26T18:12:47.000Z",
-  "updated_at": "2026-10-26T19:11:22.000Z",
-  "license": "cc-by-nc-sa-4.0.base-qwen3.5-9b-apache-2.0.training-text-atrieste.eu-cc-by-nc-sa-3.0-regolamento-sec-7",
-  "license_family": "oss",
+  "updated_at": "2026-10-26T20:28:13.000Z",
+  "license": "cc-by-nc-sa-4.0",
+  "license_family": "non-commercial",
   "pipeline_tag": "text-generation",
   "library": "peft",
   "languages": [

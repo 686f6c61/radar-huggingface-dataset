@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "Verdugie/Fable-Therapy",
+  "slug": "verdugie-fable-therapy",
+  "author": "Verdugie",
+  "url": "https://huggingface.co/Verdugie/Fable-Therapy",
+  "created_at": "2026-06-21T07:58:10.000Z",
+  "updated_at": "2026-10-26T22:19:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "9b",
+    "therapy",
+    "counseling",
+    "psychology",
+    "psychotherapy",
+    "mental-health",
+    "emotional-support",
+    "wellness",
+    "empathy",
+    "companion",
+    "conversational",
+    "chat",
+    "reasoning",
+    "local",
+    "offline",
+    "privacy",
+    "on-device",
+    "lm-studio",
+    "llama-cpp",
+    "long-context",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 11,
+  "downloads_30d": 994,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 46928450859,
+  "storage_human": "46.9 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Verdugie/Fable-Therapy-9B · Hugging Face",
+      "url": "https://huggingface.co/Verdugie/Fable-Therapy-9B",
+      "snippet": "Fable-Therapy-9B A therapy-style conversational model fine-tuned from Qwen 3.5 9B on 4,537 counseling conversations whose clinical reasoning was reverse-engineered from Claude Fable 5 by Claude Opus 4.8 — built to hold a real conversation about the things people actually bring to therapy: relationships, grief, anxiety, trauma, work, family, the ordinary weight of being a person. It reasons ..."
+    },
+    {
+      "title": "Verdugie/Fable-Therapy-4B · Hugging Face",
+      "url": "https://huggingface.co/Verdugie/Fable-Therapy-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Verdugie on Hugging Face: downloads and rankings · Model Pulse",
+      "url": "https://modelpulse.ifsp.dev/author/Verdugie",
+      "snippet": "Download history for the models and datasets by Verdugie on the Hugging Face Hub. Top: Therapy-3.8, Therapy-9B, Fable-Therapy-9B."
+    },
+    {
+      "title": "Fable Therapy 9B Review and Pricing | AI Cambodia",
+      "url": "https://www.aicambodia.com/ai/hf-verdugie-fable-therapy-9b",
+      "snippet": "Fable Therapy 9B is a recently updated text generation AI model on Hugging Face. Use it to compare LLMs capabilities, implementation fit, tags, and practical workflow value."
+    },
+    {
+      "title": "Fable-Therapy-4B: Model Details, Context & Pricing | Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/hf-verdugie-fable-therapy-4b",
+      "snippet": "Model card indexed from Hugging Face for text-generation."
+    }
+  ]
+}

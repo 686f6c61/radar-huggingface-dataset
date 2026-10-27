@@ -5,7 +5,7 @@
   "author": "3MPER0RR",
   "url": "https://huggingface.co/3MPER0RR/GLM-4.6V-Flash-3MPER0RR-abliterated",
   "created_at": "2026-09-19T11:10:46.000Z",
-  "updated_at": "2026-09-19T20:05:25.000Z",
+  "updated_at": "2026-10-27T00:19:52.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -16,8 +16,6 @@
     "glm4v",
     "text-generation",
     "conversational",
-    "base_model:huihui-ai/Huihui-GLM-4.6V-Flash-abliterated",
-    "base_model:finetune:huihui-ai/Huihui-GLM-4.6V-Flash-abliterated",
     "license:mit",
     "region:us"
   ],

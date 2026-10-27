@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "eltonsarmanho/qwen3-4b-questoes-matematica",
+  "slug": "eltonsarmanho-qwen3-4b-questoes-matematica",
+  "author": "eltonsarmanho",
+  "url": "https://huggingface.co/eltonsarmanho/qwen3-4b-questoes-matematica",
+  "created_at": "2026-10-15T18:44:26.000Z",
+  "updated_at": "2026-10-26T18:49:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "qwen3",
+    "lora",
+    "qlora",
+    "unsloth",
+    "trl",
+    "sft",
+    "llama.cpp",
+    "education",
+    "mathematics",
+    "question-generation",
+    "portuguese",
+    "on-device",
+    "text-generation",
+    "pt",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:adapter:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 33030144,
+  "parameters_human": "33.0M",
+  "storage_bytes": 209706108,
+  "storage_human": "210 MB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=portuguese&p=37&sort=trending",
+      "snippet": "felhen-ai/saracura-ptbr-4b. Text Classification • Updated 11 days ago ... eltonsarmanho/qwen3-4b-questoes-matematica. Text Generation • 33M • Updated 3 ..."
+    },
+    {
+      "title": "Dissertações/Teses - Portal de Programas de Pós-Graduação (UnB)",
+      "url": "https://sigaa.unb.br/sigaa/public/programa/defesas.jsf?lc=pt_BR&id=895",
+      "snippet": "Três modelos com capacidades distintas foram selecionados: Qwen 3:4B, Llama 3.2:3B e Llama 3.2:1B. ... AI models. Furthermore, they eliminate theneed for ..."
+    }
+  ]
+}

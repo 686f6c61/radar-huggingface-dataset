@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "Verdugie/Therapy-3.5",
+  "slug": "verdugie-therapy-3-5",
+  "author": "Verdugie",
+  "url": "https://huggingface.co/Verdugie/Therapy-3.5",
+  "created_at": "2026-07-11T01:47:08.000Z",
+  "updated_at": "2026-10-26T22:19:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "9b",
+    "therapy",
+    "counseling",
+    "psychology",
+    "psychotherapy",
+    "mental-health",
+    "emotional-support",
+    "wellness",
+    "empathy",
+    "companion",
+    "conversational",
+    "chat",
+    "reasoning",
+    "local",
+    "offline",
+    "privacy",
+    "on-device",
+    "lm-studio",
+    "llama-cpp",
+    "long-context",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 877,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 46906871156,
+  "storage_human": "46.9 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Femboy - Hentai Manga and Doujinshi Collection",
+      "url": "https://www.simply-hentai.com/collection/femboy-a9e4f",
+      "snippet": "Read all 18 hentai mangas attached to the hentai collection Femboy for free directly online on Simply Hentai"
+    },
+    {
+      "title": "Femboy Archives - Page 4 of 68 - Lgbtics",
+      "url": "https://lgbtics.com/comic-genre/femboy/page/4/",
+      "snippet": "Oct 7, 2026 · Yoso no kosukebe - Chapter 1 [Uematuda] October 7, 2026. 1 . Penetrating Covenant - Chapter 1 [Zenit2cai] October …"
+    },
+    {
+      "title": "Femboy Archives - Lgbtics",
+      "url": "https://lgbtics.com/comic-genre/femboy/",
+      "snippet": "Sexy Femboys. 3D Femboy porn comics."
+    },
+    {
+      "title": "Femboy » Cutie Comics - Free Hentai Manga & Doujinshi",
+      "url": "https://cutiecomics.com/tags/Femboy/",
+      "snippet": "Get the latest Hentai Manga & Doujinshi with exclusive stories and pictures from Cutie Comics."
+    },
+    {
+      "title": "nhentai",
+      "url": "https://nhentai.net/search/?q=Femboy&sort=popular",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    }
+  ]
+}

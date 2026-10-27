@@ -5,7 +5,7 @@
   "author": "jinhwan000",
   "url": "https://huggingface.co/jinhwan000/qwen3-tts-1.7b-base-ov",
   "created_at": "2026-10-25T07:32:53.000Z",
-  "updated_at": "2026-10-25T07:41:26.000Z",
+  "updated_at": "2026-10-26T23:27:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",

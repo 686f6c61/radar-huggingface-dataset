@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "coral-bricks-ai/qwen-swe-drafter",
+  "slug": "coral-bricks-ai-qwen-swe-drafter",
+  "author": "coral-bricks-ai",
+  "url": "https://huggingface.co/coral-bricks-ai/qwen-swe-drafter",
+  "created_at": "2026-10-26T21:06:13.000Z",
+  "updated_at": "2026-10-26T21:23:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "speculative-decoding",
+    "dflash2",
+    "sglang",
+    "qwen3.6",
+    "base_model:Qwen/Qwen3.6-35B-A3B-FP8",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B-FP8",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 526251520,
+  "parameters_human": "526.3M",
+  "storage_bytes": 1052513488,
+  "storage_human": "1.1 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Traitement de l'air industriel : solutions et équipements - Coral",
+      "url": "https://www.coral.eu/fr/",
+      "snippet": "Nos solutions internationalement reconnues sont synonymes de qualité et de durabilité. Coral est le partenaire idéal pour tous ceux …"
+    },
+    {
+      "title": "Coral - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Coral",
+      "snippet": "Coral is farmed by coral farmers who live locally to the reefs and farm for reef conservation or for income. It is also farmed by …"
+    },
+    {
+      "title": "Sports Betting Online | Odds & Markets Across All Sports | Coral",
+      "url": "https://www.coral.co.uk/en/sports",
+      "snippet": "Bet on football, horse racing, tennis, rugby, cricket & more with Coral. Discover sports betting odds, accas & in-play markets. Join today."
+    },
+    {
+      "title": "Conservation et protection des récifs coralliens avec Coral Guardian",
+      "url": "https://www.coralguardian.org/",
+      "snippet": "Coral Guardian est une association française, fondée en 2012, qui a pour vocation la protection des écosystèmes coralliens par des …"
+    },
+    {
+      "title": "Online Casino Games – Play for Real Money - Coral",
+      "url": "https://www.coral.co.uk/en/games",
+      "snippet": "Learn all about Coral online casino and the real money games on offer, including slots, Slingo, table games, and more."
+    }
+  ]
+}

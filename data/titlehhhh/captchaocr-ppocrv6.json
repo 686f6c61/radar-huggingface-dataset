@@ -5,7 +5,7 @@
   "author": "Titlehhhh",
   "url": "https://huggingface.co/Titlehhhh/captchaocr-ppocrv6",
   "created_at": "2026-10-22T08:43:35.000Z",
-  "updated_at": "2026-10-24T17:43:45.000Z",
+  "updated_at": "2026-10-26T17:58:43.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-to-text",
@@ -34,12 +34,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 20,
+  "downloads_30d": 21,
   "trending_score": 0,
-  "parameters": 19176118,
+  "parameters": 19186154,
   "parameters_human": "19.2M",
-  "storage_bytes": 153494896,
-  "storage_human": "153 MB",
+  "storage_bytes": 230282488,
+  "storage_human": "230 MB",
   "base_model": "PaddlePaddle/PP-OCRv6_medium_rec_safetensors",
   "formats": [
     "safetensors"

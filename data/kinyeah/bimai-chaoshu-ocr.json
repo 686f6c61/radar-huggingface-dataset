@@ -5,10 +5,10 @@
   "author": "kinyeah",
   "url": "https://huggingface.co/kinyeah/BiMai-Chaoshu-OCR",
   "created_at": "2026-10-26T01:41:28.000Z",
-  "updated_at": "2026-10-26T09:42:11.000Z",
+  "updated_at": "2026-10-27T04:08:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
-  "pipeline_tag": null,
+  "pipeline_tag": "image-text-to-text",
   "library": "llama.cpp",
   "languages": [
     "zh",
@@ -23,6 +23,7 @@
     "calligraphy",
     "古籍",
     "llama-cpp",
+    "image-text-to-text",
     "zh",
     "en",
     "base_model:Qwen/Qwen3-VL-8B-Instruct",
@@ -35,8 +36,8 @@
   "trending_score": 0,
   "parameters": 87293952,
   "parameters_human": "87.3M",
-  "storage_bytes": 6448766528,
-  "storage_human": "6.4 GB",
+  "storage_bytes": 7957042400,
+  "storage_human": "8.0 GB",
   "base_model": "Qwen/Qwen3-VL-8B-Instruct",
   "formats": [
     "gguf"

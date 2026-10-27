@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Sage-A1.5-Ablitrex-abliterated-BF16-i1-GGUF",
+  "slug": "mradermacher-sage-a1-5-ablitrex-abliterated-bf16-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Sage-A1.5-Ablitrex-abliterated-BF16-i1-GGUF",
+  "created_at": "2026-10-26T17:04:53.000Z",
+  "updated_at": "2026-10-26T22:00:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:mostwanted002/Sage-A1.5-Ablitrex-abliterated-BF16",
+    "base_model:quantized:mostwanted002/Sage-A1.5-Ablitrex-abliterated-BF16",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 371034395712,
+  "storage_human": "371.0 GB",
+  "base_model": "mostwanted002/Sage-A1.5-Ablitrex-abliterated-BF16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Team Mradermacher - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "models 72,271. Sort: Recently updated. mradermacher/Sage-A1.5-Ablitrex-abliterated-BF16-GGUF. 35B • Updated in about 16 hours · mradermacher/Nanbeige4.3-33B-i1- ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=modified&search=gguf",
+      "snippet": "mradermacher/Sage-A1.5-Ablitrex-abliterated-BF16-i1-GGUF. 35B • Updated in ... mradermacher/ai-detection-gutenberg-human-formatted-ai-v1-sft-qwen-3b-dpo ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=modified",
+      "snippet": "1 · mradermacher/Sage-A1.5-Ablitrex-abliterated-BF16-i1-GGUF. 35B • Updated in about 18 hours • 1 · csukuangfj2/sherpa-onnx-libs. Updated in about 18 hours • 11 ..."
+    }
+  ]
+}

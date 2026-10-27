@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "bx6d/r2s2r-pi05-pushing-diverse400",
+  "slug": "bx6d-r2s2r-pi05-pushing-diverse400",
+  "author": "bx6d",
+  "url": "https://huggingface.co/bx6d/r2s2r-pi05-pushing-diverse400",
+  "created_at": "2026-10-26T19:10:50.000Z",
+  "updated_at": "2026-10-26T22:20:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "pi0.5",
+    "openpi",
+    "imitation-learning",
+    "multi-task",
+    "pushing",
+    "xarm6",
+    "mujoco",
+    "synthetic",
+    "dataset:bx6d/r2s2r-pushing-diverse400",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 43401497616,
+  "storage_human": "43.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bx6d/r2s2r-pushing-diverse400 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/bx6d/r2s2r-pushing-diverse400",
+      "snippet": "The tennis ball diameter is 65 mm. The measured v2 pick-and-place model uses a 220×220×70 mm box (outer dimensions) and a cylindrical battery 32 mm in diameter and 58 mm high. Unmeasured wall thicknesses, mass and friction remain estimates; see object_measurements.json. Pushing uses the approved cube/bowl references."
+    },
+    {
+      "title": "bx6d/r2s2r-blue-cube-to-bowl-diverse400 - Hugging Face",
+      "url": "https://huggingface.co/datasets/bx6d/r2s2r-blue-cube-to-bowl-diverse400",
+      "snippet": "xArm6 cube-to-bowl: diverse400 400 training demonstrations, selected from the training split of bx6d/r2s2r-blue-cube-to-bowl-expanded. Task: \"Pick up the blue cube and place it in the bowl.\" The400 contain 392,152 action timesteps and 392,552 two-camera observation pairs."
+    },
+    {
+      "title": "Physical Intelligence (π): Models, openpi and Pi API (Oct 2026)",
+      "url": "https://physicalailab.io/en/physical-intelligence-pi-models-openpi-api/",
+      "snippet": "Physical Intelligence, which writes its name as π, is a robotics AI company building one model that can control many kinds of robots. Its models are called π0, π0.5, π*0.6 and π0.7. As of October 19, 2026, you can download three of them for free: π0, π0-FAST and π0.5 are in the openpi GitHub repository under the Apache-2.0 license. The newer models are not open. Since October 13, 2026 ..."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/pi05 at main - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/tree/main/src/qai_hub_models/models/pi05",
+      "snippet": "Qualcomm® AI Hub Models is our collection of state-of-the-art machine learning models optimized for performance (latency, memory etc.) and ready to deploy on Qualcomm® devices. - qualcomm/ai-hub-mo..."
+    },
+    {
+      "title": "GitHub - mli0603/openpi-comet: Team Comet&#x27;s 2025 BEHAVIOR Challenge ...",
+      "url": "https://github.com/mli0603/openpi-comet",
+      "snippet": "Team Comet&#x27;s 2025 BEHAVIOR Challenge Codebase. Contribute to mli0603/openpi-comet development by creating an account on GitHub."
+    }
+  ]
+}

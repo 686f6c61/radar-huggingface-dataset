@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "macarenacolomes/sen-vre-asistente-qwen1.5b-lora",
+  "slug": "macarenacolomes-sen-vre-asistente-qwen1-5b-lora",
+  "author": "macarenacolomes",
+  "url": "https://huggingface.co/macarenacolomes/sen-vre-asistente-qwen1.5b-lora",
+  "created_at": "2026-10-26T21:46:53.000Z",
+  "updated_at": "2026-10-26T21:47:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "destilacion",
+    "lora",
+    "slm",
+    "educacion",
+    "uai",
+    "energia",
+    "chile",
+    "text-generation",
+    "conversational",
+    "es",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85333004,
+  "storage_human": "85 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sophie Dee Vidéos Porno - Profil Vérifié de Pornstar | Pornhub",
+      "url": "https://fr.pornhub.com/pornstar/sophie-dee",
+      "snippet": "Venez voir les meilleures vidéos pornos, images, gifs et playlists de la pornstar Sophie Dee. Parcourez le contenu qu'elle a uploadé …"
+    },
+    {
+      "title": "Nicole Aniston Vidéos Porno - Profil Vérifié de Pornstar | Pornhub",
+      "url": "https://fr.pornhub.com/pornstar/nicole-aniston",
+      "snippet": "Venez voir les meilleures vidéos pornos, images, gifs et playlists de la pornstar Nicole Aniston. Parcourez le contenu qu'elle a …"
+    },
+    {
+      "title": "Step Mom – Vidéos Porno | Pornhub.com",
+      "url": "https://fr.pornhub.com/video/search?search=step+mom",
+      "snippet": "Regarde les vidéos porno de Step Mom gratuitement, ici sur Pornhub.com. Découvre la collection plus importante de films et de clips …"
+    },
+    {
+      "title": "Vidéos porno HD : Les filles les plus sexy en haute définition | Pornhub",
+      "url": "https://fr.pornhub.com/hd",
+      "snippet": "Porno HD gratuit sur Pornhub.com. Vous cherchez des vidéos de sexe en haute définition dans chaque niche XXX triple ? Le …"
+    },
+    {
+      "title": "Footjob – Vidéos Porno | Pornhub.com",
+      "url": "https://fr.pornhub.com/video/search?search=footjob",
+      "snippet": "Regarde les vidéos porno de Footjob gratuitement, ici sur Pornhub.com. Découvre la collection plus importante de films et de clips …"
+    }
+  ]
+}

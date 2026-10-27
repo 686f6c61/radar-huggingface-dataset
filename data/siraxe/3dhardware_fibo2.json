@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "siraxe/3dhardware_fibo2",
+  "slug": "siraxe-3dhardware_fibo2",
+  "author": "siraxe",
+  "url": "https://huggingface.co/siraxe/3dhardware_fibo2",
+  "created_at": "2026-10-26T21:41:12.000Z",
+  "updated_at": "2026-10-26T21:58:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "fibo2",
+    "en",
+    "base_model:briaai/Fibo-2.0-edit-turbo",
+    "base_model:finetune:briaai/Fibo-2.0-edit-turbo",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 118959795,
+  "storage_human": "119 MB",
+  "base_model": "briaai/Fibo-2.0-edit-turbo",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fibo: The 1st JSON-Native T2I Model for Developers - bria.ai",
+      "url": "https://bria.ai/fibo",
+      "snippet": "Looking for On-Prem visual generative AI? Try Fibo Lite, a smaller & faster model - Docker ready for local deployment with all the same benefits as Fibo: controllability, prompt adherence, and structured generation with minimal quality degradation."
+    },
+    {
+      "title": "Fibo 2.0 Turbo/Base Character LoRA Pipeline V2 v2 | CivArchive",
+      "url": "https://civarchive.com/models/3013857?modelVersionId=3420832",
+      "snippet": "In the text-encoder loader, select fibo2 as the type. No additional LoRA or external vision-language model is required. Both LoRA stacks start empty. Only load adapters confirmed compatible with FIBO 2.0 and your selected mode. The structured-prompt helper formats prepared captions. It does not inspect or automatically caption your reference ..."
+    },
+    {
+      "title": "Fibo 2.0: tasks, hardware requirements and license — open AI model",
+      "url": "https://chimitdorzhi.tech/en/ii-modeli/fibo/",
+      "snippet": "A family of Bria image models: Fibo 2.0 dev draws from text, Fibo 2.0 edit turbo edits finished images from a description. According to the authors&#x27; paper, the model was trained on very detailed structured descriptions so that it follows a long brief better. The weights are free only for non-commercial work: advertising and sales need a separate Bria license. There are ready files for ComfyUI ..."
+    },
+    {
+      "title": "Fibo 2.0: Local VRAM and Hardware Fit",
+      "url": "https://www.madebyagents.com/models/fibo-2-0",
+      "snippet": "Fibo 2.0 is the second generation of Bria&#x27;s FIBO family and the first to unify image generation and image editing in a single model. It supports instruction-based edits, masked edits and multi-reference edits with up to four input images, and preserves unedited parts of the image."
+    },
+    {
+      "title": "briaai/Fibo-2.0-dev · Hugging Face",
+      "url": "https://huggingface.co/briaai/Fibo-2.0-dev",
+      "snippet": "🏆 #1 in image editing and 🥈 #2 in text-to-image among open-weights models on Artificial Analysis (October 20, 2026). One model to edit and generate images, and the foundation to build your own. Fibo 2.0 is the next generation of Bria&#x27;s FIBO family. For the first time, image editing and image ..."
+    }
+  ]
+}

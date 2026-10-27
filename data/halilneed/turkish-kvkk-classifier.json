@@ -5,7 +5,7 @@
   "author": "halilneed",
   "url": "https://huggingface.co/halilneed/turkish-kvkk-classifier",
   "created_at": "2026-09-30T18:33:10.000Z",
-  "updated_at": "2026-10-25T15:53:24.000Z",
+  "updated_at": "2026-10-26T05:53:08.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -43,7 +43,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 57,
+  "downloads_30d": 74,
   "trending_score": 0,
   "parameters": 110635800,
   "parameters_human": "110.6M",

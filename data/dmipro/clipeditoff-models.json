@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "dmipro/clipeditoff-models",
+  "slug": "dmipro-clipeditoff-models",
+  "author": "dmipro",
+  "url": "https://huggingface.co/dmipro/clipeditoff-models",
+  "created_at": "2026-10-24T15:54:08.000Z",
+  "updated_at": "2026-10-26T22:09:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tflite",
+    "onnx",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5392056905,
+  "storage_human": "5.4 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Poppy – X Lyrics - Genius",
+      "url": "https://genius.com/Poppy-x-lyrics",
+      "snippet": "“X” marked a drastic stylistic shift for Poppy, incorporating metal elements into her music for the first time. This new, heavier sound …"
+    },
+    {
+      "title": "Nicky Jam & J Balvin – X (EQUIS) Lyrics | Genius Lyrics",
+      "url": "https://genius.com/Nicky-jam-and-j-balvin-x-equis-lyrics",
+      "snippet": "Mar 2, 2018 · La temática que gira en torno a “X (EQUIS)” trata sobre una mujer que impactó a Nicky y J Balvin, llamándoles la …"
+    },
+    {
+      "title": "Grizzly G0768 8 X 16 Lathe - The Hobby-Machinist",
+      "url": "https://www.hobby-machinist.com/threads/grizzly-g0768-8-x-16-lathe.36042/",
+      "snippet": "Jun 5, 2015 · Hi, Still hoping for a reply and some input on the Grizzly G0768 8 x 16 lathe. There just isn't much of anything online …"
+    },
+    {
+      "title": "21 Savage & Metro Boomin – X Lyrics | Genius Lyrics",
+      "url": "https://genius.com/21-savage-and-metro-boomin-x-lyrics",
+      "snippet": "Jul 15, 2016 · 21 Savage teams up with fellow Atlanta rapper Future for the ominous track “X.” On the track, the two emcees rap …"
+    },
+    {
+      "title": "DMX – X Gon’ Give It To Ya Lyrics | Genius Lyrics",
+      "url": "https://genius.com/Dmx-x-gon-give-it-to-ya-lyrics",
+      "snippet": "Dec 10, 2002 · “X Gon' Give it to Ya” is the debut single from the Cradle 2 the Grave soundtrack—a 2003 action movie starring DMX …"
+    }
+  ]
+}

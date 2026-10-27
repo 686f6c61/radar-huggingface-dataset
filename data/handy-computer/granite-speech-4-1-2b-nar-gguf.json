@@ -5,7 +5,7 @@
   "author": "handy-computer",
   "url": "https://huggingface.co/handy-computer/granite-speech-4.1-2b-nar-gguf",
   "created_at": "2026-05-17T10:46:07.000Z",
-  "updated_at": "2026-10-16T08:27:14.000Z",
+  "updated_at": "2026-10-26T09:20:41.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -49,8 +49,8 @@
   "trending_score": 0,
   "parameters": 2254656316,
   "parameters_human": "2.25B",
-  "storage_bytes": 101088905856,
-  "storage_human": "101.1 GB",
+  "storage_bytes": 117937056064,
+  "storage_human": "117.9 GB",
   "base_model": "ibm-granite/granite-speech-4.1-2b-nar",
   "formats": [
     "gguf"

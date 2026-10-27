@@ -5,7 +5,7 @@
   "author": "google",
   "url": "https://huggingface.co/google/gemma-4-12B-it-assistant",
   "created_at": "2026-05-23T01:17:47.000Z",
-  "updated_at": "2026-08-20T21:49:20.000Z",
+  "updated_at": "2026-10-26T09:31:02.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "any-to-any",
@@ -22,7 +22,7 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 142,
+  "likes": 143,
   "downloads_30d": 33496,
   "trending_score": 8,
   "parameters": 422856964,

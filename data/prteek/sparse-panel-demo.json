@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "prteek/sparse-panel-demo",
+  "slug": "prteek-sparse-panel-demo",
+  "author": "prteek",
+  "url": "https://huggingface.co/prteek/sparse-panel-demo",
+  "created_at": "2026-10-26T22:06:00.000Z",
+  "updated_at": "2026-10-27T00:26:28.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "time-series",
+    "panel-data",
+    "missing-data",
+    "smoothing",
+    "imputation",
+    "air-quality",
+    "dataset:prteek/sparse-panel-demo",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "拜托哪个大神教教我GG修改器怎么用？ - 知乎",
+      "url": "https://www.zhihu.com/question/265749313",
+      "snippet": "GG修改器教程 (以少女咖啡枪为例) 1.1 设置内存范围 先打开gg工具 选择内存范围改为图一图二 有用数据基本就在这些上面，这样可 …"
+    },
+    {
+      "title": "Gesetzmäßigkeit der Verwaltung ᐅ Definition und Beispiel",
+      "url": "https://www.juraforum.de/lexikon/gesetzmaessigkeit-der-verwaltung",
+      "snippet": "May 13, 2026 · Die Gesetzmäßigkeit der Verwaltung lässt sich von dem in Deutschland geltenden Rechtsstaatsprinzip aus Art. 20 …"
+    },
+    {
+      "title": "Parlamentsvorbehalt ᐅ Definition - JuraForum.de",
+      "url": "https://www.juraforum.de/lexikon/parlamentsvorbehalt",
+      "snippet": "Feb 9, 2025 · Bei dem Parlamentsvorbehalt handelt es sich um ein Prinzip, welches besagt, dass alle Entscheidungen, die von …"
+    },
+    {
+      "title": "西方十四行诗怎么押韵？看到莎士比亚十四行诗的押韵有什么abab、cd…",
+      "url": "https://www.zhihu.com/question/47160360",
+      "snippet": "gg就是说最后两行（所谓final couplet）的韵尾相同。 斯宾塞式的十四行诗的韵尾模式是:abab bcbc cdcd ee。 注意这里要求第一小节 …"
+    },
+    {
+      "title": "OP.GG英雄联盟韩国职业选手OB - 百度经验",
+      "url": "https://jingyan.baidu.com/article/fec7a1e5127b561190b4e729.html",
+      "snippet": "Aug 29, 2014 · OP.GG英雄联盟韩国职业选手OB,OP.GG韩国好多职业选手和路人高手在本网站上都有直播，"
+    }
+  ]
+}

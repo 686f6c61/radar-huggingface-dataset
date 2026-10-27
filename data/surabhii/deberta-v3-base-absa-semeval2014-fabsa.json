@@ -5,7 +5,7 @@
   "author": "Surabhii",
   "url": "https://huggingface.co/Surabhii/deberta-v3-base-absa-semeval2014-fabsa",
   "created_at": "2026-10-25T17:36:55.000Z",
-  "updated_at": "2026-10-26T18:00:37.000Z",
+  "updated_at": "2026-10-26T18:44:58.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": 184424451,
   "parameters_human": "184.4M",
-  "storage_bytes": 61972316708,
-  "storage_human": "62.0 GB",
+  "storage_bytes": 70825515939,
+  "storage_human": "70.8 GB",
   "base_model": null,
   "formats": [
     "safetensors"

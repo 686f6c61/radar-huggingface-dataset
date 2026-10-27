@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "rsj2003/libero-dynamic-paper-models",
+  "slug": "rsj2003-libero-dynamic-paper-models",
+  "author": "rsj2003",
+  "url": "https://huggingface.co/rsj2003/libero-dynamic-paper-models",
+  "created_at": "2026-10-26T17:09:24.000Z",
+  "updated_at": "2026-10-26T22:21:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "robotics",
+    "libero-dynamic",
+    "fastwam",
+    "pi05",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 116645307540,
+  "storage_human": "116.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - renshaojie233/LIBERO-Dynamic: Latency-aware dynamic robot ...",
+      "url": "https://github.com/renshaojie233/LIBERO-Dynamic/blob/main/",
+      "snippet": "Benchmarking Robotic Manipulation in Dynamic Environments LIBERO-Dynamic is a latency-aware dynamic manipulation benchmark built on all 40 LIBERO tasks. It moves target objects through physical contact along controlled trajectories, advances the simulated world during measured policy inference, and evaluates what happens when actions are executed from observations that may already be stale."
+    },
+    {
+      "title": "LIBERO-Dynamic: Benchmarking Robotic Manipulation in Dynamic Environments",
+      "url": "https://arxiv.org/pdf/2610.24579",
+      "snippet": "We introduce LIBERO-Dynamic, a dynamic robotic manipulation benchmark that combines controlled object motion with model-specific inference latency. It defines a controlled spatiotemporal evaluation space through motion pattern, speed, trajectory phase, and perception-action delay for comparing dynamic responsiveness across robot policies."
+    },
+    {
+      "title": "LIBERO-Dynamic: Benchmarking Robotic Manipulation in Dynamic Environments",
+      "url": "https://arxiv.org/abs/2610.24579",
+      "snippet": "We introduce LIBERO-Dynamic, a dynamic extension of all 40 LIBERO tasks. It drives objects through contact friction along three trajectory families and speed tiers, while advancing the physical world according to calibrated, model-specific inference latency."
+    },
+    {
+      "title": "GitHub - weiqianwang123/LIBERO-Dynamic: Benchmarking Knowledge Transfer ...",
+      "url": "https://github.com/weiqianwang123/LIBERO-Dynamic",
+      "snippet": "LIBERO is designed for studying knowledge transfer in multitask and lifelong robot learning problems. Successfully resolving these problems require both declarative knowledge about objects/spatial relationships and procedural knowledge about motion/behaviors."
+    },
+    {
+      "title": "LIBERO-Dynamic: Benchmarking Robotic Manipulation in Dynamic ...",
+      "url": "https://www.aimodels.fyi/papers/arxiv/libero-dynamic-benchmarking-robotic-manipulation-dynamic-environments",
+      "snippet": "LIBERO-Dynamic makes inference delay part of the task LIBERO-Dynamic extends all 40 LIBERO manipulation tasks with moving targets and model-specific inference latency. Its central mechanism is an invisible rigid platform that moves objects through MuJoCo contact friction, while simulation continues during policy computation; an action can therefore arrive after the target has moved from the ..."
+    }
+  ]
+}

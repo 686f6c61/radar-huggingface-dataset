@@ -5,7 +5,7 @@
   "author": "furiosa-ai",
   "url": "https://huggingface.co/furiosa-ai/gpt-oss-20b",
   "created_at": "2026-06-09T15:28:54.000Z",
-  "updated_at": "2026-10-16T04:35:03.000Z",
+  "updated_at": "2026-10-26T09:49:24.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -30,12 +30,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 3226,
+  "downloads_30d": 3274,
   "trending_score": 0,
   "parameters": 20914757184,
   "parameters_human": "20.91B",
-  "storage_bytes": 47769160695,
-  "storage_human": "47.8 GB",
+  "storage_bytes": 48340368232,
+  "storage_human": "48.3 GB",
   "base_model": "openai/gpt-oss-20b",
   "formats": [
     "safetensors"

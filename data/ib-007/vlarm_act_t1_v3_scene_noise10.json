@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ib-007/vlarm_act_t1_v3_scene_noise10",
+  "slug": "ib-007-vlarm_act_t1_v3_scene_noise10",
+  "author": "ib-007",
+  "url": "https://huggingface.co/ib-007/vlarm_act_t1_v3_scene_noise10",
+  "created_at": "2026-10-26T21:08:46.000Z",
+  "updated_at": "2026-10-26T21:09:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:ib-007/vlarm_sim_t1_v2_scene",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51672198,
+  "parameters_human": "51.7M",
+  "storage_bytes": 1033588760,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "International education - International Baccalaureate®",
+      "url": "https://www.ibo.org/",
+      "snippet": "The International Baccalaureate® (IB) offers four high quality international education programmes to more than one million students …"
+    },
+    {
+      "title": "ib Cegos : Formation informatique",
+      "url": "https://www.ib-formation.fr/",
+      "snippet": "ib Cegos Rouen 2 ter, rue Georges Charpak Bâtiment Red Cow Parc d'Activités de la Vatine 76130 MONT-SAINT-AIGNAN Tél. : 02 …"
+    },
+    {
+      "title": "L’éducation internationale - International Baccalaureate®",
+      "url": "https://www.ibo.org/fr/",
+      "snippet": "May 21, 2012 · Le système éducatif de l’IB s’adresse aux élèves âgés de 3 à 19 ans et repose sur quatre programmes conçus pour …"
+    },
+    {
+      "title": "Baccalauréat international — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Baccalaur%C3%A9at_international",
+      "snippet": "Les quatre programmes du IB sont accessibles par des élèves âgés de 3 à 19 ans, provenant d'un large éventail d'origines …"
+    },
+    {
+      "title": "International Baccalaureate - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/International_Baccalaureate",
+      "snippet": "First programme The IB headquarters were officially established in Geneva, Switzerland, in 1968 for the development and …"
+    }
+  ]
+}

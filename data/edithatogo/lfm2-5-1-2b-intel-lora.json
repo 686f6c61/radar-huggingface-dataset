@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "edithatogo/lfm2.5-1.2b-intel-lora",
+  "slug": "edithatogo-lfm2-5-1-2b-intel-lora",
+  "author": "edithatogo",
+  "url": "https://huggingface.co/edithatogo/lfm2.5-1.2b-intel-lora",
+  "created_at": "2026-05-31T11:59:45.000Z",
+  "updated_at": "2026-10-26T22:23:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "openvino",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "openvino",
+    "onnx",
+    "int8",
+    "lora",
+    "smoke-test",
+    "cpu",
+    "feature-extraction",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7527,
+  "storage_human": "7527 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "edithatogo/lfm2.5-1.2b-intel-lora · Hugging Face",
+      "url": "https://huggingface.co/edithatogo/lfm2.5-1.2b-intel-lora",
+      "snippet": "This repository contains tiny synthetic artifacts for validating an Intel/OpenVINO LoRA optimization pipeline. It does not contain full LiquidAI/lfm2.5-1.2b-instruct model weights. The current Windows environment blocks the IPEX-backed path, so the files here validate the mechanics of LoRA adapter ..."
+    },
+    {
+      "title": "edithatogo/lfm2.5-1.2b-intel-lora at main - Hugging Face",
+      "url": "https://huggingface.co/edithatogo/lfm2.5-1.2b-intel-lora/tree/main",
+      "snippet": "Model card FilesFiles and versions xet Community Copy to bucket new main lfm2.5-1.2b-intel-lora 38.2 kB Ctrl+K Ctrl+K 1 contributor History:3 commits edithatogo Upload folder using huggingface_hub 91f6077 verifiedabout 1 month ago openvino-int8Upload folder using huggingface_hubabout 1 month ago openvino-irUpload folder using huggingface ..."
+    },
+    {
+      "title": "GitHub - edithatogo/models_lang",
+      "url": "https://github.com/edithatogo/models_lang",
+      "snippet": "Current Track The active work is the Intel/OpenVINO LoRA optimization pipeline under training/fine-tuning."
+    },
+    {
+      "title": "Introducing LFM2.5: The Next Generation of On-Device AI | Blog",
+      "url": "https://www.liquid.ai/blog/introducing-lfm2-5-the-next-generation-of-on-device-ai",
+      "snippet": "Today, we&#x27;re excited to announce the LFM2.5-1.2B model family, our most capable release yet for edge AI deployment. It builds on the LFM2 device-optimized architecture and represents a significant leap forward in building reliable agents on the edge."
+    },
+    {
+      "title": "Liquid AI Releases LFM2.5: A Compact AI Model Family For Real On Device ...",
+      "url": "https://www.marktechpost.com/2026/01/06/liquid-ai-releases-lfm2-5-a-compact-ai-model-family-for-real-on-device-agents/",
+      "snippet": "Liquid AI has introduced LFM2.5, a new generation of small foundation models built on the LFM2 architecture and focused at on device and edge deployments. The model family includes LFM2.5-1.2B-Base and LFM2.5-1.2B-Instruct and extends to Japanese, vision language, and audio language variants."
+    }
+  ]
+}

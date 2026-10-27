@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "lflare/Tess-4-27B-FP8",
+  "slug": "lflare-tess-4-27b-fp8",
+  "author": "lflare",
+  "url": "https://huggingface.co/lflare/Tess-4-27B-FP8",
+  "created_at": "2026-07-08T08:19:51.000Z",
+  "updated_at": "2026-10-26T18:36:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "fp8",
+    "compressed-tensors",
+    "mtp",
+    "speculative-decoding",
+    "multimodal",
+    "image-text-to-text",
+    "conversational",
+    "base_model:migtissera/Tess-4-27B",
+    "base_model:quantized:migtissera/Tess-4-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 23,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 69936309183,
+  "storage_human": "69.9 GB",
+  "base_model": "migtissera/Tess-4-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=qwen3.8",
+      "snippet": "migtissera/Tess-4.5-27B. Image-Text-to-Text • 28B • Updated 7 days ago • 452 ... orcarouter/Qwen3.8-27B-Uncensored-FP8. Image-Text-to-Text • 28B ..."
+    },
+    {
+      "title": "StartLux-Decision: AutoThink Decision Models with Reinforcement ...",
+      "url": "https://arxiv.org/html/2610.17309v1",
+      "snippet": "12.10.2026 ... Existing open-weight decision models largely rely on single-pass prediction without explicit reasoning (Cloudflare, 2026; Perplexity AI, 2026) ."
+    },
+    {
+      "title": "model-preparation.md - NVIDIA/flare-local-inference - GitHub",
+      "url": "https://github.com/NVIDIA/flare-local-inference/blob/main/docs/model-preparation.md",
+      "snippet": "vor 6 Tagen ... venv/bin/ignition export qwen3.8-27b --gpus 0 --max-concurrency 4 \\ --output /data/flare-runtime/qwen38-27b-tp1-c4.safetensors --verbose ..."
+    },
+    {
+      "title": "Qwen3.8-27B vs Opus 4.6 Max: Local Agentic Coding Benchmarks",
+      "url": "https://www.developersdigest.tech/blog/qwen-3-8-27b-local-agentic-coding-2026",
+      "snippet": "15.08.2026 ... On August 14, 2026, Qwen released Qwen3.8-27B on Hugging Face as an FP8-quantized, Apache-2.0 open-weights model. ... The Hacker News thread ( ..."
+    },
+    {
+      "title": "AI Engineer World's Fair — Autoresearch, Memory, World Models ...",
+      "url": "https://latent.space/p/ainews-ai-engineer-worlds-fair-autoresearch/",
+      "snippet": "02.05.2026 ... (Activity: 994): In a local LLM gamedev contest, Gemma 4 31B outperformed Qwen 3.6 27B in creating a Pac-Man style game on a MacBook Pro M5 Max ..."
+    }
+  ]
+}

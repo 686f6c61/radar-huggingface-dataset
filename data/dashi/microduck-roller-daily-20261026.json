@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "dashi/microduck-roller-daily-20261026",
+  "slug": "dashi-microduck-roller-daily-20261026",
+  "author": "dashi",
+  "url": "https://huggingface.co/dashi/microduck-roller-daily-20261026",
+  "created_at": "2026-10-26T22:30:10.000Z",
+  "updated_at": "2026-10-26T22:30:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "microduck-slot:walk",
+    "base_model:DenRakEiw/microduck-senate_duck_0904",
+    "base_model:finetune:DenRakEiw/microduck-senate_duck_0904",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 925260,
+  "storage_human": "925260 B",
+  "base_model": "DenRakEiw/microduck-senate_duck_0904",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Recette japonaise : Le Dashi , le bouillon japonais - Comme au Japon",
+      "url": "https://www.commeaujapon.fr/le-dashi-recette-et-description/",
+      "snippet": "La dashi est le bouillon qui sert de base à une grande partie des plats japonais. Il est indispensable pour retrouver le goût …"
+    },
+    {
+      "title": "Qu’est-ce que le Dashi et comment le préparer et l’utiliser ?",
+      "url": "https://www.japanlifestyle.fr/dashi/",
+      "snippet": "Aug 5, 2020 · Découvrez tout ce qu'il faut savoir à propos du dashi, de sa composition à son utilisation en passant par la recette de …"
+    },
+    {
+      "title": "Dashi : guide complet, recettes et usages | Kaitsuko",
+      "url": "https://kaitsuko.fr/blogs/infos/dashi-guide-complet-recettes-et-usages-kaitsuko",
+      "snippet": "Oct 17, 2025 · Le dashi est le bouillon fondamental de la cuisine japonaise. À la différence des bouillons occidentaux, il repose sur …"
+    },
+    {
+      "title": "Dashi — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Dashi",
+      "snippet": "Le dashi (出汁?) est un type de bouillon clair réalisé à partir de différents ingrédients séchés infusés dans de l'eau. Utilisé comme …"
+    },
+    {
+      "title": "Dashi - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Dashi",
+      "snippet": "Dashi forms the base for miso soup, clear broth soup, noodle broth soup, and many simmering liquids to accentuate the savory flavor …"
+    }
+  ]
+}

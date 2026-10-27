@@ -5,7 +5,7 @@
   "author": "Patarapoom",
   "url": "https://huggingface.co/Patarapoom/h3-vbvr",
   "created_at": "2026-08-18T10:37:38.000Z",
-  "updated_at": "2026-09-08T06:32:35.000Z",
+  "updated_at": "2026-10-26T07:12:37.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "image-to-video",
@@ -21,12 +21,12 @@
     "region:us"
   ],
   "likes": 11,
-  "downloads_30d": 3239,
+  "downloads_30d": 3250,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 72112827975,
-  "storage_human": "72.1 GB",
+  "storage_bytes": 93080475431,
+  "storage_human": "93.1 GB",
   "base_model": null,
   "formats": [
     "safetensors"

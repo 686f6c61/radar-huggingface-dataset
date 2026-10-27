@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "adolfo123456/logibot-slm",
+  "slug": "adolfo123456-logibot-slm",
+  "author": "adolfo123456",
+  "url": "https://huggingface.co/adolfo123456/logibot-slm",
+  "created_at": "2026-10-26T21:45:32.000Z",
+  "updated_at": "2026-10-26T22:41:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "distillation",
+    "knowledge-distillation",
+    "lora",
+    "peft",
+    "logistics",
+    "toy-model",
+    "conversational",
+    "es",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3647232,
+  "parameters_human": "3.6M",
+  "storage_bytes": 33357296,
+  "storage_human": "33 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Logibot.Train — Logibot",
+      "url": "https://www.logibot.eu/products/logibot-train",
+      "snippet": "Logibot.Train How a general AI model becomes a logistics robot Most robotics teams fine-tune a model once and deploy. Logibot.Train takes a different approach: 5 stages that progressively transform a general vision-language model into a high-performance logistics robot."
+    },
+    {
+      "title": "Building AI Agents with Local Small Language Models",
+      "url": "https://machinelearningmastery.com/building-ai-agents-with-local-small-language-models/",
+      "snippet": "What AI agents and small language models are, and why running them locally is a practical and privacy-conscious choice. How to set up Ollama and the required Python libraries to run a language model on your own hardware. How to build a local AI agent step by step, adding tools and conversation memory to make it genuinely useful."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - martolini1124/streamlit_project: LogiBot is an AI-powered ...",
+      "url": "https://github.com/martolini1124/streamlit_project",
+      "snippet": "LogiBot is an AI-powered logistics management system built with Streamlit and IBM&#x27;s Granite LLM API. This application helps dispatchers and logistics managers handle delivery operations more efficiently through an interactive chat interface and dashboard."
+    },
+    {
+      "title": "AI app: Logibot - The Logistical Agent for Generative AI Hackathon with ...",
+      "url": "https://lablab.ai/ai-hackathons/generative-ai-hackathon-with-ibm-granite/eirconnect/logibot-the-logistical-agent",
+      "snippet": "LogiBot LogiBot is an AI-powered logistics management system built with Streamlit and IBM&#x27;s Granite LLM API. This application helps dispatchers and logistics managers handle delivery operations more efficiently through an interactive chat interface and dashboard. Features AI Chatbot (LogiBot) Interactive chat interface powered by IBM Granite 3-8b-instruct model Specialized in logistics and ..."
+    }
+  ]
+}

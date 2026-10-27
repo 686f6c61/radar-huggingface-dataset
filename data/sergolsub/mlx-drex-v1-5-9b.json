@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "sergolsub/mlx-drex-v1.5-9B",
+  "slug": "sergolsub-mlx-drex-v1-5-9b",
+  "author": "sergolsub",
+  "url": "https://huggingface.co/sergolsub/mlx-drex-v1.5-9B",
+  "created_at": "2026-10-24T05:50:57.000Z",
+  "updated_at": "2026-10-26T22:22:37.000Z",
+  "license": "nace-ai-open-rail-m-license-modified",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_text",
+    "base_model:nace-ai/drex-v1.5",
+    "base_model:finetune:nace-ai/drex-v1.5",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 10496462926,
+  "storage_human": "10.5 GB",
+  "base_model": "nace-ai/drex-v1.5",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sergolsub/mlx-drex-v1.5-9B · Hugging Face",
+      "url": "https://huggingface.co/sergolsub/mlx-drex-v1.5-9B",
+      "snippet": "sergolsub / mlx-drex-v1.5-9B Like 0 MLX Safetensors qwen3_5_text License:nace-ai-open-rail-m-license-modified Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Nace AI Open-Sources Drex 1.5, a 9B Decision Model for Ranking Options",
+      "url": "https://aitechmodel.com/nace-ai-open-sources-drex-1-5-a-9b-decision-model-for-ranking-options/",
+      "snippet": "Nace.AI has open-sourced Drex v1.5, a 9-billion-parameter model that doesn&#x27;t write text at all — it scores the options you give it. Instead of generating a sentence, it takes a question with a fixed set of answer choices and returns a probability for each one, which makes it a tool built for ranking and deciding rather than conversing. The model carries 8.95 billion dense parameters, with ..."
+    },
+    {
+      "title": "drex-decision-models/models/drex-v1.5/README.md at main · nace-ai/drex ...",
+      "url": "https://github.com/nace-ai/drex-decision-models/blob/main/models/drex-v1.5/README.md",
+      "snippet": "A decision model built on MiMo-V2.6-Distill-Qwen-9B with a Kev pointer head. It takes a state and named typed questions (request format) and returns a probability for every option; nothing is generated. It scores 58.08 on the public Decision Index 0.3.1, the #1 model under 10B parameters on the leaderboard. Weights · llama.cpp fork (branch drex-v1.5) · Ollama fork (branch drex-v1.5) It runs ..."
+    },
+    {
+      "title": "Nace.AI Drex 1.5: 9B Decision Model Scores 58.08",
+      "url": "https://shattered.io/nace-ai-drex-1-5-9b-decision-model-2026/",
+      "snippet": "Nace.AI open-sourced Drex 1.5, a 9B decision model that scores options instead of writing text. See specs, pricing, and benchmark results."
+    },
+    {
+      "title": "Nace AI Open-Sources Drex 1.5: A 9B Decision Model That Scores Options ...",
+      "url": "https://www.marktechpost.com/2026/10/09/nace-ai-open-sources-drex-1-5-a-9b-decision-model-that-scores-options-not-text/",
+      "snippet": "Nace.AI has open-sourced Drex 1.5, a 9B decision model for agents and backend workflows. The Drex 1.5 decision model does not write text. It reads a state and typed questions, then returns a probability for every option. Nace reports 58.08 on the public Decision Index 0.3.1, the top score under 10B parameters."
+    }
+  ]
+}

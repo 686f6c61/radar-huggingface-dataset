@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Scicom-intl/Clearline-VAD",
+  "slug": "scicom-intl-clearline-vad",
+  "author": "Scicom-intl",
+  "url": "https://huggingface.co/Scicom-intl/Clearline-VAD",
+  "created_at": "2026-10-25T22:11:17.000Z",
+  "updated_at": "2026-10-26T22:06:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "voice-activity-detection",
+  "library": "onnx",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "onnx",
+    "voice-activity-detection",
+    "vad",
+    "streaming",
+    "livekit",
+    "cpu",
+    "telephony",
+    "multilingual",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20949978,
+  "storage_human": "21 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Scicom-intl/Clearline-VAD · Hugging Face",
+      "url": "https://huggingface.co/Scicom-intl/Clearline-VAD",
+      "snippet": "Scicom-intl / Clearline-VAD Like 0 Follow Scicom (MSC) Bhd 36 Voice Activity Detection ONNX multilingual vad streaming livekit cpu Model card FilesFiles and versions xet Community Copy to bucket new Clearline-VAD Use Files Notes"
+    },
+    {
+      "title": "Scicom-intl/semantic-vad-eot-whisper-small · Hugging Face",
+      "url": "https://huggingface.co/Scicom-intl/semantic-vad-eot-whisper-small",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Clearline AI",
+      "url": "https://www.clearlineai.com/",
+      "snippet": "Faster, scalable clearance analysis for electrical utilities. ClearLine uses a physics-aware AI model to predict conductor position under any loading condition — temperature, wind, and span geometry — in seconds. Trained on real LiDAR and engineering data, ClearLine delivers the accuracy of finite-element analysis at a fraction of the time and cost."
+    },
+    {
+      "title": "Scicom Intl: Open-Weight Models and Datasets - savrn.com",
+      "url": "https://savrn.com/model-publishers/scicom-intl",
+      "snippet": "Scicom Intl has 0 open-weight models and 1 dataset in the SAVRN Model Hub. Browse each one&#x27;s model card, specs, files and license."
+    },
+    {
+      "title": "Semantic Vad Eot Whisper Base - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/scicom-intl/semantic-vad-eot-whisper-base",
+      "snippet": "Registry entry for model Semantic Vad Eot Whisper Base; source metadata pending."
+    }
+  ]
+}

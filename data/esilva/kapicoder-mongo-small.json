@@ -1,0 +1,117 @@
+{
+  "schema": 1,
+  "id": "esilva/KapiCoder-Mongo-Small",
+  "slug": "esilva-kapicoder-mongo-small",
+  "author": "esilva",
+  "url": "https://huggingface.co/esilva/KapiCoder-Mongo-Small",
+  "created_at": "2026-10-26T22:06:46.000Z",
+  "updated_at": "2026-10-26T22:08:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "pt"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "mongodb",
+    "code",
+    "fim",
+    "autocomplete",
+    "synthetic-data",
+    "conversational",
+    "en",
+    "pt",
+    "arxiv:2409.12186",
+    "base_model:Qwen/Qwen2.5-Coder-1.5B",
+    "base_model:finetune:Qwen/Qwen2.5-Coder-1.5B",
+    "license:apache-2.0",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3087467144,
+  "storage_human": "3.1 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "MongoDB fill-in-the-middle autocomplete",
+      "dataset": "KapiCoder v2c validation split, internal and synthetic (n=2000)",
+      "metric": "FIM accuracy (normalized exact match)",
+      "value": 0.41
+    },
+    {
+      "task": "MongoDB fill-in-the-middle autocomplete",
+      "dataset": "KapiCoder v2c validation split, internal and synthetic (n=2000)",
+      "metric": "Exec-valid (completion parses and runs read-only)",
+      "value": 0.6015
+    },
+    {
+      "task": "MongoDB fill-in-the-middle autocomplete",
+      "dataset": "KapiCoder v2c validation split, internal and synthetic (n=2000)",
+      "metric": "Exec-valid divided by validator ceiling (0.6255)",
+      "value": 0.9616
+    },
+    {
+      "task": "MongoDB fill-in-the-middle autocomplete",
+      "dataset": "KapiCoder v2c validation split, internal and synthetic (n=2000)",
+      "metric": "Syntax-valid",
+      "value": 0.998
+    },
+    {
+      "task": "MongoDB fill-in-the-middle autocomplete",
+      "dataset": "KapiCoder v2c validation split, internal and synthetic (n=2000)",
+      "metric": "Nonexistent fields, schema visible (context_kind=full), percent",
+      "value": 1.21
+    },
+    {
+      "task": "Generic JavaScript fill-in-the-middle (regression check)",
+      "dataset": "Permissive npm JavaScript FIM cuts, internal (n=500)",
+      "metric": "FIM accuracy (normalized exact match)",
+      "value": 0.606
+    },
+    {
+      "task": "MongoDB fill-in-the-middle autocomplete on unseen schemas",
+      "dataset": "Internal evaluation, synthetic out-of-distribution homologation v1 (n=6030, LLM-written, 28 unseen telecom/adtech schemas; not fully independent of the v3 training data)",
+      "metric": "FIM accuracy (normalized exact match), homologation",
+      "value": 0.4537
+    },
+    {
+      "task": "MongoDB fill-in-the-middle autocomplete on unseen schemas",
+      "dataset": "Internal evaluation, synthetic out-of-distribution homologation v1 (n=6030, LLM-written, 28 unseen telecom/adtech schemas; not fully independent of the v3 training data)",
+      "metric": "Exec-valid (completion parses and runs read-only), homologation",
+      "value": 0.8307
+    },
+    {
+      "task": "MongoDB fill-in-the-middle autocomplete on unseen schemas",
+      "dataset": "Internal evaluation, synthetic out-of-distribution homologation v1 (n=6030, LLM-written, 28 unseen telecom/adtech schemas; not fully independent of the v3 training data)",
+      "metric": "Exec-valid divided by validator ceiling (0.9307), homologation",
+      "value": 0.8926
+    },
+    {
+      "task": "MongoDB fill-in-the-middle autocomplete on unseen schemas",
+      "dataset": "Internal evaluation, synthetic out-of-distribution homologation v1 (n=6030, LLM-written, 28 unseen telecom/adtech schemas; not fully independent of the v3 training data)",
+      "metric": "Nonexistent fields, schema visible (context_kind=full), percent, homologation",
+      "value": 7.5
+    }
+  ],
+  "sources": []
+}

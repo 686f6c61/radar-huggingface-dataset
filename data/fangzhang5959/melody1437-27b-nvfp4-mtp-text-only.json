@@ -5,7 +5,7 @@
   "author": "FangZhang5959",
   "url": "https://huggingface.co/FangZhang5959/Melody1437-27B-NVFP4-MTP-text-only",
   "created_at": "2026-10-26T09:39:35.000Z",
-  "updated_at": "2026-10-26T09:41:33.000Z",
+  "updated_at": "2026-10-26T21:31:31.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -40,10 +40,10 @@
   "likes": 0,
   "downloads_30d": 0,
   "trending_score": 0,
-  "parameters": null,
-  "parameters_human": null,
-  "storage_bytes": 869404781,
-  "storage_human": "869 MB",
+  "parameters": 19833865216,
+  "parameters_human": "19.83B",
+  "storage_bytes": 23145235533,
+  "storage_human": "23.1 GB",
   "base_model": "ReadyArt/Melody1437-27B-v0.3",
   "formats": [
     "safetensors"

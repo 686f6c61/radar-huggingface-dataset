@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "bartowski/Nanbeige_Nanbeige4.3-33B-GGUF",
+  "slug": "bartowski-nanbeige_nanbeige4-3-33b-gguf",
+  "author": "bartowski",
+  "url": "https://huggingface.co/bartowski/Nanbeige_Nanbeige4.3-33B-GGUF",
+  "created_at": "2026-10-25T14:22:25.000Z",
+  "updated_at": "2026-10-25T15:32:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "llm",
+    "nanbeige",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:Nanbeige/Nanbeige4.3-33B",
+    "base_model:quantized:Nanbeige/Nanbeige4.3-33B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 16,
+  "downloads_30d": 18595,
+  "trending_score": 16,
+  "parameters": 33118977024,
+  "parameters_human": "33.12B",
+  "storage_bytes": 533782059072,
+  "storage_human": "533.8 GB",
+  "base_model": "Nanbeige/Nanbeige4.3-33B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bartowski/Nanbeige_Nanbeige4.3-33B-GGUF - Hugging Face",
+      "url": "https://huggingface.co/bartowski/Nanbeige_Nanbeige4.3-33B-GGUF",
+      "snippet": "vor 1 Tag ... Install from pip and serve model. # Install vLLM from pip: pip install vllm # Start the vLLM server: vllm serve \"bartowski/Nanbeige_Nanbeige4."
+    },
+    {
+      "title": "bartowski/Nanbeige_Nanbeige4.3-33B-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/bartowski/Nanbeige_Nanbeige4.3-33B-GGUF/tree/main",
+      "snippet": "vor 1 Tag ... Install from pip and serve model. # Install vLLM from pip: pip install vllm # Start the vLLM server: vllm serve \"bartowski/Nanbeige_Nanbeige4."
+    },
+    {
+      "title": "Hält Nanbeige 4.3, was es verspricht? - YouTube",
+      "url": "https://www.youtube.com/watch?v=TZjNuF8SLsQ",
+      "snippet": "vor 4 Stunden ... ... 3-33B-MLX-4bit OrcaRouter zur Benchmark-Tabelle: https://www.orcarouter.ai/blog/nanbeige-4-3-"
+    },
+    {
+      "title": "Nanbeige 4.3 33B on a 24GB GPU: It Beats Qwen 3.8 ... - YouTube",
+      "url": "https://www.youtube.com/watch?v=Ktp62NrTLY0",
+      "snippet": "vor 1 Tag ... Nanbeige 4.3 33B is a brand-new open model (Apache 2.0) from the AI team behind BOSS Zhipin, China's biggest job-hunting app."
+    },
+    {
+      "title": "Bartowski - Hugging Face",
+      "url": "https://huggingface.co/bartowski",
+      "snippet": "AI & ML interests. Senior Machine Learning Engineer at RedHat. Recent ... bartowski/Nanbeige_Nanbeige4.3-33B-GGUF. Text Generation • 33B • Updated ..."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "Sneha-subbu",
   "url": "https://huggingface.co/Sneha-subbu/data266-lab2-p2-lora_r16",
   "created_at": "2026-10-25T19:23:32.000Z",
-  "updated_at": "2026-10-25T19:23:38.000Z",
+  "updated_at": "2026-10-26T18:26:18.000Z",
   "license": "creativeml-openrail-m",
   "license_family": "oss",
   "pipeline_tag": "text-to-image",
@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 20,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

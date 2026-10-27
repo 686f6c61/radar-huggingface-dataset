@@ -5,10 +5,10 @@
   "author": "olmeange",
   "url": "https://huggingface.co/olmeange/pixelity-models",
   "created_at": "2026-10-20T16:38:11.000Z",
-  "updated_at": "2026-10-24T23:10:43.000Z",
+  "updated_at": "2026-10-26T13:17:23.000Z",
   "license": "multiple-permissive",
   "license_family": "unknown",
-  "pipeline_tag": "object-detection",
+  "pipeline_tag": "depth-estimation",
   "library": "onnx",
   "languages": [],
   "tags": [
@@ -20,8 +20,12 @@
     "super-resolution",
     "image-inpainting",
     "object-detection",
+    "text-detection",
+    "depth-estimation",
+    "image-deblurring",
     "webgpu",
     "wasm",
+    "arxiv:2507.05595",
     "license:other",
     "region:us"
   ],
@@ -30,8 +34,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 485291552,
-  "storage_human": "485 MB",
+  "storage_bytes": 606067194,
+  "storage_human": "606 MB",
   "base_model": null,
   "formats": [
     "onnx"

@@ -26,10 +26,11 @@
     "arxiv:2604.27393",
     "arxiv:2408.01800",
     "license:apache-2.0",
+    "eval-results",
     "region:us"
   ],
-  "likes": 1549,
-  "downloads_30d": 336197,
+  "likes": 1550,
+  "downloads_30d": 305664,
   "trending_score": 12.8,
   "parameters": 9371787666,
   "parameters_human": "9.37B",

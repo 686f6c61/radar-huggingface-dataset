@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "episod/qwen3.8-27b-cjk-trim-p300",
+  "slug": "episod-qwen3-8-27b-cjk-trim-p300",
+  "author": "episod",
+  "url": "https://huggingface.co/episod/qwen3.8-27b-cjk-trim-p300",
+  "created_at": "2026-10-26T21:33:39.000Z",
+  "updated_at": "2026-10-27T03:40:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tt-model-cache",
+    "blackhole",
+    "vllm",
+    "thin",
+    "p150x2",
+    "text-generation",
+    "base_model:ProprietaryLegal/Qwen3.8-27B-CJK-Trim",
+    "base_model:finetune:ProprietaryLegal/Qwen3.8-27B-CJK-Trim",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 99580896,
+  "storage_human": "100 MB",
+  "base_model": "ProprietaryLegal/Qwen3.8-27B-CJK-Trim",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EPISOD SPORTS STUDIOS",
+      "url": "https://www.episod.com/",
+      "snippet": "OFFRES ENTREPRISES ON DEMAND EPISOD Rules FAQ Conditions Devenir trainer Contacter la team"
+    },
+    {
+      "title": "Planning - Episod",
+      "url": "https://www.episod.com/planning/",
+      "snippet": "GIRLS CAN LIFT - OCTOBRE ROSE - FULL BODY Eva"
+    },
+    {
+      "title": "Nos tarifs abonnements - Episod",
+      "url": "https://www.episod.com/nos-tarifs-abonnements-2/",
+      "snippet": "Nos abonnés profitent d’un accès exclusif au planning 48h avant tout le monde pour réserver en priorité !"
+    },
+    {
+      "title": "Les Hubs - EPISOD SPORTS STUDIOS",
+      "url": "https://www.episod.com/les-hubs/",
+      "snippet": "Nation ouvert 7J / 7 226 Boulevard Voltaire 75011 Paris hello@episod.com Découvrir le hub"
+    },
+    {
+      "title": "Les studios - EPISOD",
+      "url": "https://www.episod.com/les-studios/",
+      "snippet": "Découvrez nos 8 sports dans 27 studios sportifs : Boxing, Bootcamp, Athletic, Flow, Cycling, Reformer, Heat et Lift."
+    }
+  ]
+}

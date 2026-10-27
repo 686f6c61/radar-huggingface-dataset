@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "dimitarpg13/semsimula-ladder-live-ts-d384-l2-none-norc-pm2-pmx16-sr2-fob",
+  "slug": "dimitarpg13-semsimula-ladder-live-ts-d384-l2-none-norc-pm2-pmx16-sr2-fob",
+  "author": "dimitarpg13",
+  "url": "https://huggingface.co/dimitarpg13/semsimula-ladder-live-ts-d384-l2-none-norc-pm2-pmx16-sr2-fob",
+  "created_at": "2026-10-26T05:38:40.000Z",
+  "updated_at": "2026-10-26T18:46:59.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "research",
+    "semsimula",
+    "conservative-language-model",
+    "scalar-potential",
+    "lagrangian-mechanics",
+    "energy-based-model",
+    "physics-informed",
+    "openwebtext",
+    "mechanism-ablation",
+    "ladder-study",
+    "pre-registered",
+    "live-gradients",
+    "generation-3",
+    "first-vs-second-order",
+    "first-order",
+    "poisson-mode-registers",
+    "matched-token-budget",
+    "fock-space",
+    "parflm",
+    "anisotropic-gaussian-potential",
+    "cfc",
+    "baoab",
+    "fully-conservative",
+    "riemannian-geometry",
+    "riemannian-geodesics",
+    "jacobi-metric",
+    "non-transformer",
+    "attention-free",
+    "constant-memory-inference",
+    "text-generation",
+    "en",
+    "dataset:roneneldan/TinyStories",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 306874642,
+  "storage_human": "307 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "TinyStories",
+      "metric": "Validation perplexity at block 512, settled (mean of the last three 500-step evals at block 512)",
+      "value": 4.963
+    }
+  ],
+  "sources": [
+    {
+      "title": "Text Generation Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=text-generation&p=0&sort=modified",
+      "snippet": "dimitarpg13/semsimula-ladder-live-ts-d384-l2-none-norc-pm2-pmx16-sr2-fob. Text Generation • Updated in about 6 hours · dimitarpg13/semsimula-ladder-live-ts ..."
+    }
+  ]
+}

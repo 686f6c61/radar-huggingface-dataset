@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "sergolsub/mlx-d3-turbo-27B",
+  "slug": "sergolsub-mlx-d3-turbo-27b",
+  "author": "sergolsub",
+  "url": "https://huggingface.co/sergolsub/mlx-d3-turbo-27B",
+  "created_at": "2026-10-24T22:56:33.000Z",
+  "updated_at": "2026-10-26T22:44:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "custom_code",
+    "base_model:vllm-sr/d3-turbo",
+    "base_model:finetune:vllm-sr/d3-turbo",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 42,
+  "trending_score": 0,
+  "parameters": 26085330160,
+  "parameters_human": "26.09B",
+  "storage_bytes": 27864003607,
+  "storage_human": "27.9 GB",
+  "base_model": "vllm-sr/d3-turbo",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sergolsub/mlx-d3-turbo-27B · Hugging Face",
+      "url": "https://huggingface.co/sergolsub/mlx-d3-turbo-27B",
+      "snippet": "Instructions to use sergolsub/mlx-d3-turbo-27B with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use sergolsub/mlx-d3-turbo-27B with MLX: # Download the model from the Hub pip install huggingface_hub [hf_xet] hf download sergolsub/mlx-d3-turbo-27B --local-dir mlx-d3-turbo-27B"
+    },
+    {
+      "title": "D3 Turbo - AI Model | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/model/d3-turbo/",
+      "snippet": "D3 Turbo is the upgraded 27B multimodal decision model in vLLM Semantic Router&#x27;s Decision 3.0 family. Given text, JSON, images, or video alongside a set of named questions, it answers each with a probability instead of generated text, supporting choice, yes/no, score, box localization, and tracking questions in a single forward pass."
+    },
+    {
+      "title": "OsaurusAI/d3-turbo-JANGH2 - Hugging Face",
+      "url": "https://huggingface.co/OsaurusAI/d3-turbo-JANGH2",
+      "snippet": "d3-turbo in 14.5 GB: the same decision as the full-precision model on 92.65 % of 2,000 requests of tasksource/tasksource-jev-typed-decisions test. A JANG bundle of vllm-sr/d3-turbo, the upgraded 27B multimodal decision model of vLLM Semantic Router&#x27;s Decision 3.0. Give it a state (text or JSON ..."
+    },
+    {
+      "title": "d3-turbo · Models",
+      "url": "https://www.modelscope.cn/models/vllm-sr/d3-turbo",
+      "snippet": "d3-turbo d3-turbo is the upgraded 27B multimodal decision model of Decision 3.0, the decision models of vLLM Semantic Router. Give it an input (text or JSON, optionally with images and videos) and the questions you need answered: pick one of several options, say yes or no, rate on a scale, or point to where something is in an image or a video. It reads the input once per request, answers every ..."
+    },
+    {
+      "title": "d3-turbo 27B: Local VRAM and Hardware Fit",
+      "url": "https://www.madebyagents.com/models/d3-turbo-27b",
+      "snippet": "How It Compares When evaluating d3-turbo 27B hardware requirements against alternative architectures, the model occupies a unique niche in the local AI model 26.09B parameters 2026 landscape."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "ccore",
   "url": "https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder",
   "created_at": "2026-10-25T05:43:34.000Z",
-  "updated_at": "2026-10-26T00:22:45.000Z",
+  "updated_at": "2026-10-26T22:50:16.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -25,13 +25,13 @@
     "region:us",
     "conversational"
   ],
-  "likes": 100,
+  "likes": 115,
   "downloads_30d": 1348,
-  "trending_score": 98,
+  "trending_score": 113,
   "parameters": 4205751296,
   "parameters_human": "4.21B",
-  "storage_bytes": 7195132016,
-  "storage_human": "7.2 GB",
+  "storage_bytes": 14386820310,
+  "storage_human": "14.4 GB",
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "gguf"

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "luisastellet/qwen-metaphor-unke-camada-22-prompt-numerico",
+  "slug": "luisastellet-qwen-metaphor-unke-camada-22-prompt-numerico",
+  "author": "luisastellet",
+  "url": "https://huggingface.co/luisastellet/qwen-metaphor-unke-camada-22-prompt-numerico",
+  "created_at": "2026-10-25T06:36:06.000Z",
+  "updated_at": "2026-10-26T18:40:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 500,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 7164127554,
+  "storage_human": "7.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Official Fisch Wiki - fischipedia.org",
+      "url": "https://fischipedia.org/wiki/Fisch_Wiki",
+      "snippet": "Oct 10, 2026 · Welcome to the Official Fisch Wiki, the resource for the Roblox open-world adventure and exploration fishing game."
+    },
+    {
+      "title": "Fish - Official Fisch Wiki",
+      "url": "https://fischipedia.org/wiki/Fish",
+      "snippet": "Fish are the core item and primary objective of Fisch, mainly caught through Fishing. Each location and its sublocations host a …"
+    },
+    {
+      "title": "Fisch - Official Fisch Wiki",
+      "url": "https://fischipedia.org/wiki/Fisch",
+      "snippet": "Sep 13, 2026 · Fisch is a Roblox experience created by Canadian video game developer WoozyNate. Its official release was on …"
+    },
+    {
+      "title": "Fishing Rods - Official Fisch Wiki",
+      "url": "https://fischipedia.org/wiki/Fishing_Rods",
+      "snippet": "2 days ago · There are currently 270 fishing rods in Fisch - each with their own benefits and drawbacks, making no particular rod at …"
+    },
+    {
+      "title": "Fisch Wiki | Fandom",
+      "url": "https://fisch.fandom.com/wiki/Fisch_Wiki",
+      "snippet": "21 hours ago · Dive into Fisch, the ultimate fishing adventure where exploration and progression are yours to control. Cast your line …"
+    }
+  ]
+}

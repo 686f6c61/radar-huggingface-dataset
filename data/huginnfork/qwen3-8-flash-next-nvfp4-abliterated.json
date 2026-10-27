@@ -5,7 +5,7 @@
   "author": "huginnfork",
   "url": "https://huggingface.co/huginnfork/Qwen3.8-Flash-Next-NVFP4-Abliterated",
   "created_at": "2026-09-17T13:28:33.000Z",
-  "updated_at": "2026-09-28T13:11:29.000Z",
+  "updated_at": "2026-10-26T18:35:13.000Z",
   "license": "qwen-community-1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -32,12 +32,12 @@
     "region:us"
   ],
   "likes": 8,
-  "downloads_30d": 1729,
+  "downloads_30d": 1673,
   "trending_score": 0,
   "parameters": 94001880979,
   "parameters_human": "94.00B",
-  "storage_bytes": 370280368251,
-  "storage_human": "370.3 GB",
+  "storage_bytes": 293082263637,
+  "storage_human": "293.1 GB",
   "base_model": "local-inference-lab/Qwen3.8-Flash-Next-NVFP4",
   "formats": [
     "safetensors"

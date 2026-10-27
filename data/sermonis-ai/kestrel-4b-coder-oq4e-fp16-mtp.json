@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "sermonis-ai/Kestrel-4B-Coder-oQ4e-fp16-mtp",
+  "slug": "sermonis-ai-kestrel-4b-coder-oq4e-fp16-mtp",
+  "author": "sermonis-ai",
+  "url": "https://huggingface.co/sermonis-ai/Kestrel-4B-Coder-oQ4e-fp16-mtp",
+  "created_at": "2026-10-26T21:31:08.000Z",
+  "updated_at": "2026-10-26T21:35:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "oq4e",
+    "4-bit",
+    "quantized",
+    "imatrix",
+    "mtp",
+    "vision",
+    "multimodal",
+    "code",
+    "apple-silicon",
+    "fp16",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Jackrong/Kestrel-4B-Coder",
+    "base_model:quantized:Jackrong/Kestrel-4B-Coder",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4659865088,
+  "parameters_human": "4.66B",
+  "storage_bytes": 3952565811,
+  "storage_human": "4.0 GB",
+  "base_model": "Jackrong/Kestrel-4B-Coder",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Carrefour Banque : Crédit, Epargne, Assurance, Cartes bancaires ...",
+      "url": "https://www.carrefour-banque.fr/accueil",
+      "snippet": "Filiale bancaire du groupe Carrefour, Carrefour Banque commercialise depuis 30 ans une large gamme de produits : Crédit, …"
+    },
+    {
+      "title": "Connexion à l’Espace Client | Carrefour Banque",
+      "url": "https://www.carrefour-banque.fr/espace-client/connexion?cfb_campaign=pp-choix-espace",
+      "snippet": "Utilisez votre application mobile Carrefour Banque pour valider vos opérations sensibles réalisées sur votre Espace Client et vos …"
+    },
+    {
+      "title": "Accédez directement à votre parcours | Carrefour Banque",
+      "url": "https://www.carrefour-banque.fr/Carte-PASS",
+      "snippet": "Jun 6, 2001 · Simulez votre prêt puis poursuivez votre demande en ligne. Votre parcours de souscription est disponible en ligne. …"
+    },
+    {
+      "title": "Connexion à mon Espace Client | Carrefour Banque",
+      "url": "https://www.carrefour-banque.fr/guides/votre-espace-client/connexion",
+      "snippet": "J’ai déjà créé mon Espace Client et je souhaite me connecter pour accéder à mes comptes. Facile et rapide, une étape suffit pour …"
+    },
+    {
+      "title": "Application Espace Client | Carrefour Banque",
+      "url": "https://www.carrefour-banque.fr/application-mobile",
+      "snippet": "Profitez d'une nouvelle interface pour gérer vos produits au quotidien. Consultez vos dernières opérations et vos relevés Carte PASS …"
+    }
+  ]
+}

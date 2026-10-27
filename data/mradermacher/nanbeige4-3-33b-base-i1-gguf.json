@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Nanbeige4.3-33B-Base-i1-GGUF",
   "created_at": "2026-10-26T11:24:01.000Z",
-  "updated_at": "2026-10-26T14:37:29.000Z",
+  "updated_at": "2026-10-26T16:00:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -34,8 +34,8 @@
   "trending_score": 0,
   "parameters": 33118977024,
   "parameters_human": "33.12B",
-  "storage_bytes": 248137982976,
-  "storage_human": "248.1 GB",
+  "storage_bytes": 358871620032,
+  "storage_human": "358.9 GB",
   "base_model": "Nanbeige/Nanbeige4.3-33B-Base",
   "formats": [
     "gguf"

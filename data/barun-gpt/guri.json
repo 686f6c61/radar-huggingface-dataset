@@ -5,7 +5,7 @@
   "author": "barun-gpt",
   "url": "https://huggingface.co/barun-gpt/Guri",
   "created_at": "2026-10-26T15:34:29.000Z",
-  "updated_at": "2026-10-26T15:36:11.000Z",
+  "updated_at": "2026-10-26T16:18:24.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "safetensors",
+    "unsloth",
     "arxiv:2405.15319",
     "region:us"
   ],
@@ -21,8 +22,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 13074895,
-  "storage_human": "13 MB",
+  "storage_bytes": 127592359,
+  "storage_human": "128 MB",
   "base_model": null,
   "formats": [
     "safetensors"

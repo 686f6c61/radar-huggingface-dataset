@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "janniskirschner/mtds",
+  "slug": "janniskirschner-mtds",
+  "author": "janniskirschner",
+  "url": "https://huggingface.co/janniskirschner/mtds",
+  "created_at": "2026-10-26T21:03:24.000Z",
+  "updated_at": "2026-10-26T22:34:55.000Z",
+  "license": "per-model",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1463279040759,
+  "storage_human": "1463.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "janniskirschner/mtds-817344f506b3 · Hugging Face",
+      "url": "https://huggingface.co/janniskirschner/mtds-817344f506b3",
+      "snippet": "janniskirschner / mtds-817344f506b3 Like 0 Safetensors qwen2 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Please (Don&#x27;t) Stop the Music: Adversarial Red-Teaming of AI Music ...",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/kirschner",
+      "snippet": "Please (Don&#x27;t) Stop the Music: Adversarial Red-Teaming of AI Music Generation Models Jannis Kirschner, Niantic Inc. Harmful music is an effective propaganda and recruitment tool. It serves as a revenue stream for extremist groups, can be used to shock and disorient and be leveraged for targeted harassment."
+    },
+    {
+      "title": "JannisKirschner (Jannis) · GitHub",
+      "url": "https://github.com/JannisKirschner",
+      "snippet": "Hello there :) I&#x27;m a Security Researcher from Switzerland. My interests are networking, programming, it-security, data science, and life sciences - JannisKirschner"
+    },
+    {
+      "title": "Training the Next Generation of Climate Models - Schmidt Sciences",
+      "url": "https://www.schmidtsciences.org/profile-2025/training-the-next-generation-of-climate-models/",
+      "snippet": "Laure Zanna uses AI to make climate models faster, more accurate and more accessible to communities without access to supercomputing resources, ultimately democratizing climate modeling and recruiting a broader scientific community to help meet the challenges of a warming world. A simple ambition drives climate physicist Dr. Laure Zanna&#x27;s program: to transform Earth system modeling through ..."
+    },
+    {
+      "title": "One of Europe&#x27;s top AI researchers raised a $13M seed to ... - TechCrunch",
+      "url": "https://techcrunch.com/2025/05/26/one-of-europes-top-ai-researchers-raised-a-13m-seed-to-crack-the-holy-grail-of-models/",
+      "snippet": "One of Europe&#x27;s most prominent AI researchers, Matthias Niessner, is now the CEO of SpAItial, a startup working on spatial foundation models."
+    }
+  ]
+}

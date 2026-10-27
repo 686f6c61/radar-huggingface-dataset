@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "gdelacasa/r4w-faq-qwen05b-merged",
+  "slug": "gdelacasa-r4w-faq-qwen05b-merged",
+  "author": "gdelacasa",
+  "url": "https://huggingface.co/gdelacasa/r4w-faq-qwen05b-merged",
+  "created_at": "2026-10-26T21:43:47.000Z",
+  "updated_at": "2026-10-26T21:43:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "destilacion",
+    "lora",
+    "slm",
+    "finanzas",
+    "chile",
+    "educacion",
+    "uai",
+    "conversational",
+    "es",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 999519716,
+  "storage_human": "1000 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Text Generation Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=text-generation&p=1&sort=created",
+      "snippet": "gdelacasa/r4w-faq-qwen05b-merged Text Generation • 0.5B•Updated about 2 hours ago"
+    },
+    {
+      "title": "Gemma Model Family - Gemma Documentation",
+      "url": "https://gemma.ai/models/",
+      "snippet": "The family has two halves. A mainline generation — Gemma 1 through Gemma 4 — is the general purpose model most people want. Around each generation sits a set of variants: the same architecture retrained or restructured for one job, like embeddings, safety classification or vision-language tasks."
+    },
+    {
+      "title": "Merging Language Models with Unsloth Studio - Lab DB",
+      "url": "https://labdb.org/merging-language-models-with-unsloth-studio/",
+      "snippet": "Model merging offers a compelling alternative, allowing the synergistic combination of pre-existing models or their specialized adapters. This method not only optimizes resource utilization but also accelerates the development cycle for highly tailored AI applications."
+    },
+    {
+      "title": "Llama, Mistral, Qwen, DeepSeek: Model Families Guide | AI/TLDR",
+      "url": "https://ai-tldr.dev/learn/local-open-models/open-model-ecosystem/open-model-families/",
+      "snippet": "A map of the major open model families — Llama, Mistral, Qwen, DeepSeek, Gemma, and Phi — and what each is actually good at."
+    },
+    {
+      "title": "gdelacasa/slm-autonomo-nemotron4b-lora · Discussions",
+      "url": "https://huggingface.co/gdelacasa/slm-autonomo-nemotron4b-lora/discussions",
+      "snippet": "Instructions to use gdelacasa/slm-autonomo-nemotron4b-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use gdelacasa/slm-autonomo-nemotron4b-lora with PEFT:"
+    }
+  ]
+}

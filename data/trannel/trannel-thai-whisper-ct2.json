@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "trannel/trannel-thai-whisper-ct2",
+  "slug": "trannel-trannel-thai-whisper-ct2",
+  "author": "trannel",
+  "url": "https://huggingface.co/trannel/trannel-thai-whisper-ct2",
+  "created_at": "2026-10-26T22:29:21.000Z",
+  "updated_at": "2026-10-26T22:33:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "th"
+  ],
+  "tags": [
+    "ctranslate2",
+    "faster-whisper",
+    "whisper",
+    "thai",
+    "th",
+    "base_model:biodatlab/distill-whisper-th-large-v3",
+    "base_model:finetune:biodatlab/distill-whisper-th-large-v3",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1617884929,
+  "storage_human": "1.6 GB",
+  "base_model": "biodatlab/distill-whisper-th-large-v3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "`turbo` model release · openai whisper · Discussion #2363 - GitHub",
+      "url": "https://github.com/openai/whisper/discussions/2363",
+      "snippet": "It is an optimized version of Whisper large-v3 and has only 4 decoder layers—just like the tiny model—down from the 32 in the large series. This work is ..."
+    },
+    {
+      "title": "DAI-ASR-I18N: Benchmarking Multilingual Conversational ASR",
+      "url": "https://research.withdavid.ai/blog/dai-asr-i18n",
+      "snippet": "01.10.2026 ... Each speaker was recorded on a separate synchronized channel, providing benchmark ground-truth speaker attribution and allowing the same ..."
+    },
+    {
+      "title": "Social Robotics - Springer Nature",
+      "url": "https://link.springer.com/content/pdf/10.1007/978-981-96-3522-1.pdf",
+      "snippet": "16th International Conference, ICSR + AI 2024. Odense, Denmark, October 23–26, 2024. Proceedings, Part I ... Large Language Model Framework for Intuitive ..."
+    },
+    {
+      "title": "MỤC LỤC - HỌC VIỆN KHOA HỌC VÀ CÔNG NGHỆ",
+      "url": "https://gust.edu.vn/media/30/uftai-ve-tai-day30847.pdf",
+      "snippet": "Model (UBM), với dữ liệu cụ thể của người nói. Dưới đây là các bước cơ bản của ... (2024), Whisper-SV: Adapting Whisper for low-data- resource speaker ..."
+    },
+    {
+      "title": "Luqmanul Hakim bin Othman | Turtle Working Group Singapore",
+      "url": "https://sg.linkedin.com/in/luqmanulhakimbinothman",
+      "snippet": "Independent researcher | Turtle Working Group Singapore | Testudine ethology (Geomydidae) & movement ecology (Trionychidae). · Luqmanul Hakim is passionate ..."
+    }
+  ]
+}

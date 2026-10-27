@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "zerofata/G4-LuneLight-31B",
+  "slug": "zerofata-g4-lunelight-31b",
+  "author": "zerofata",
+  "url": "https://huggingface.co/zerofata/G4-LuneLight-31B",
+  "created_at": "2026-10-24T01:53:53.000Z",
+  "updated_at": "2026-10-25T19:49:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "base_model:ReadyArt/gemma-4-31B-it-scotoma-2",
+    "base_model:finetune:ReadyArt/gemma-4-31B-it-scotoma-2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 13,
+  "downloads_30d": 29,
+  "trending_score": 13,
+  "parameters": 31273086512,
+  "parameters_human": "31.27B",
+  "storage_bytes": 62578507890,
+  "storage_human": "62.6 GB",
+  "base_model": "ReadyArt/gemma-4-31B-it-scotoma-2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

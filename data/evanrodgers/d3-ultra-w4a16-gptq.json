@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "evanrodgers/d3-ultra-W4A16-GPTQ",
+  "slug": "evanrodgers-d3-ultra-w4a16-gptq",
+  "author": "evanrodgers",
+  "url": "https://huggingface.co/evanrodgers/d3-ultra-W4A16-GPTQ",
+  "created_at": "2026-10-26T21:17:25.000Z",
+  "updated_at": "2026-10-26T21:18:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "feature-extraction",
+    "decision-model",
+    "zero-shot-classification",
+    "multimodal",
+    "vision",
+    "quantized",
+    "compressed-tensors",
+    "gptq",
+    "w4a16",
+    "custom_code",
+    "base_model:vllm-sr/d3-ultra",
+    "base_model:quantized:vllm-sr/d3-ultra",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26085330160,
+  "parameters_human": "26.09B",
+  "storage_bytes": 16100120088,
+  "storage_human": "16.1 GB",
+  "base_model": "vllm-sr/d3-ultra",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vllm-sr/d3-W4A16-GPTQ · Hugging Face",
+      "url": "https://huggingface.co/vllm-sr/d3-W4A16-GPTQ",
+      "snippet": "vLLM Semantic Router serves d3-W4A16-GPTQ in Engine mode, which runs one model behind the System One API on your own machine, as it serves d3. It verifies the package against its MODEL_MANIFEST.json, as it verifies d3, and keeps the weights in int4 on the GPU, with its own int4 layers rather than d3q/."
+    },
+    {
+      "title": "GPT-5.2 API Model Name & Full 2026 Lineup - aicomparison.ai",
+      "url": "https://aicomparison.ai/openai-models-guide/",
+      "snippet": "GPT-5.2 is OpenAI&#x27;s current flagship model. See the full 2026 lineup, API model names like gpt-5.2-chat-latest, and pricing by use case."
+    },
+    {
+      "title": "D3 W4a16 Gptq - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/vllm-sr/d3-w4a16-gptq",
+      "snippet": "Registry entry for model D3 W4a16 Gptq; source metadata pending."
+    },
+    {
+      "title": "vllm-sr/d3-W4A16-GPTQ at main - Hugging Face",
+      "url": "https://huggingface.co/vllm-sr/d3-W4A16-GPTQ/tree/main",
+      "snippet": "vllm-sr / d3-W4A16-GPTQ Like 3 Follow vLLM Semantic Router 525 Zero-Shot Classification Transformers Safetensors qwen3_5 feature-extraction decision-model classification system-one multimodal vision video quantized compressed-tensors gptq w4a16 custom_code Eval Results License:apache-2.0 Model card FilesFiles and versions xet Community 1 Deploy ..."
+    },
+    {
+      "title": "Model Release Notes - OpenAI Help Center",
+      "url": "https://help.openai.com/en/articles/9624314-model-release-notes",
+      "snippet": "Model Release Notes Review OpenAI model releases, capability updates, retirements, and changes to the Model Spec."
+    }
+  ]
+}

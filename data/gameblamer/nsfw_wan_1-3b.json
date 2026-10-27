@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Gameblamer/NSFW_Wan_1.3b",
+  "slug": "gameblamer-nsfw_wan_1-3b",
+  "author": "Gameblamer",
+  "url": "https://huggingface.co/Gameblamer/NSFW_Wan_1.3b",
+  "created_at": "2026-10-26T21:27:04.000Z",
+  "updated_at": "2026-10-26T21:27:04.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "nsfw",
+    "base_model:Wan-AI/Wan2.1-T2V-1.3B",
+    "base_model:finetune:Wan-AI/Wan2.1-T2V-1.3B",
+    "license:creativeml-openrail-m",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 105359108304,
+  "storage_human": "105.4 GB",
+  "base_model": "Wan-AI/Wan2.1-T2V-1.3B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · huihui-ai/NSFW_Wan_1.3B at main - Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/NSFW_Wan_1.3B/blob/main/README.md",
+      "snippet": "This is a Uncensored Text-to-Video generation model, with 1.3 billion parameters, specifically fine-tuned for generating Not Safe For Work (NSFW) content. NSFW Wan 1.3b T2V is a powerful text-to-video generation model, with 1.3 billion parameters, specifically fine-tuned for generating Not Safe For ..."
+    },
+    {
+      "title": "NSFW Wan 1.3B T2V - v14 (experimental) | Wan Video Checkpoint | Civitai",
+      "url": "https://civitai.red/models/1697081/nsfw-wan-13b-t2v",
+      "snippet": "Major Update: The NSFW Wan 1.3B T2V model has been improved! Based on community feedback, we&#x27;ve released a new experimental set of checkpoints (exp_e1 to exp_e14) to fix the quality degradation and \"body horror\" issues present in the original model."
+    },
+    {
+      "title": "NSFW Wan 1.3B AI Model Generates Short Adult Videos From Text",
+      "url": "https://vgtimes.com/tech-and-hardware/169148-nsfw-wan-1.3b-ai-model-generates-short-adult-videos-from-text.html",
+      "snippet": "NSFW-API released NSFW Wan 1.3B, a text-to-video model meant for local use that gives users control over generation settings and prompt handling. The publisher recommends the wan_1.3B_exp_e14.safetensors checkpoint for general use and LoRA training. The model creates short clips, typically a few seconds long, from written prompts; users are responsible for making sure their use complies with ..."
+    },
+    {
+      "title": "Update README.md · huihui-ai/NSFW_Wan_1.3B at 800a803",
+      "url": "https://huggingface.co/huihui-ai/NSFW_Wan_1.3B/commit/800a803f936adddd9933ded63acbc3f392dff950",
+      "snippet": "This is a Uncensored Text-to-Video generation model, with 1.3 billion parameters, specifically fine-tuned for generating Not Safe For Work (NSFW) content."
+    },
+    {
+      "title": "nsfw-wan-1.3b/README.md at main · NSFW-API/nsfw-wan-1.3b - GitHub",
+      "url": "https://github.com/NSFW-API/nsfw-wan-1.3b/blob/main/README.md",
+      "snippet": "Contribute to NSFW-API/nsfw-wan-1.3b development by creating an account on GitHub."
+    }
+  ]
+}

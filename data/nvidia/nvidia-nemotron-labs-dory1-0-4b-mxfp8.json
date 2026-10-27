@@ -5,7 +5,7 @@
   "author": "nvidia",
   "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-MXFP8",
   "created_at": "2026-10-16T18:26:53.000Z",
-  "updated_at": "2026-10-17T00:19:56.000Z",
+  "updated_at": "2026-10-26T15:01:52.000Z",
   "license": "openmdw-1.1",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 8,
-  "downloads_30d": 1021,
+  "downloads_30d": 1124,
   "trending_score": 0,
   "parameters": 3975229440,
   "parameters_human": "3.98B",

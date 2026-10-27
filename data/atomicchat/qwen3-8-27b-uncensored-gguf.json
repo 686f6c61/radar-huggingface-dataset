@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "AtomicChat/Qwen3.8-27B-Uncensored-GGUF",
+  "slug": "atomicchat-qwen3-8-27b-uncensored-gguf",
+  "author": "AtomicChat",
+  "url": "https://huggingface.co/AtomicChat/Qwen3.8-27B-Uncensored-GGUF",
+  "created_at": "2026-10-23T18:46:28.000Z",
+  "updated_at": "2026-10-26T22:23:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "atomic-chat",
+    "qwen",
+    "qwen3.8",
+    "imatrix",
+    "llama.cpp",
+    "mtp",
+    "reasoning",
+    "uncensored",
+    "abliteration",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 245019726912,
+  "storage_human": "245.0 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AtomicChat/Qwen3.8-27B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/AtomicChat/Qwen3.8-27B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Run Qwen 3.8 27B Uncensored Locally - Atomic Chat",
+      "url": "https://atomic.chat/blog/guides/how-to-run-qwen-3-8-27b-uncensored-locally",
+      "snippet": "Run Qwen 3.8 27B uncensored locally from 12 GB with a low-bit GGUF. Use Q4_K_M on a 24 GB GPU or 4-bit MLX on a 32 GB Mac."
+    },
+    {
+      "title": "Qwen3.8-27B-Uncensored-GGUF: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3.8-27b-uncensored-gguf-jonathancoletti",
+      "snippet": "Overview Qwen3.8-27B-Uncensored-GGUF is an uncensored derivative of Qwen/Qwen3.8-27B published by JonathanColetti as GGUF quantizations with multi-token prediction (MTP) heads retained and verified. The model uses the Qwen3_5ForConditionalGeneration architecture with 64 layers, a 248,320-token vocabulary, a 262,144 token context window, vision capabilities, and 1 MTP layer for speculative ..."
+    },
+    {
+      "title": "Qwen3.8-27B-AD-IQ4_XS-IQ3_S.gguf · AtomicChat/Qwen3.8-27B-GGUF at main",
+      "url": "https://huggingface.co/AtomicChat/Qwen3.8-27B-GGUF/blob/main/Qwen3.8-27B-AD-IQ4_XS-IQ3_S.gguf",
+      "snippet": "Instructions to use AtomicChat/Qwen3.8-27B-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp Install (macOS, Linux)"
+    },
+    {
+      "title": "Qwen3.8-27B Uncensored GGUF: Abliterated Local Build",
+      "url": "https://www.orcarouter.ai/blog/qwen-3-8-27b-uncensored-gguf",
+      "snippet": "Bottom line \"Qwen 3.8 27B uncensored GGUF\" has an answer, and it is a concrete download: Qwen3.8-27B-Uncensored-GGUF — F16 plus 12 quantization tiers for llama.cpp, the abliterated weights from our FP8 build, 262K context, vision, and MTP, under Apache 2.0 and research-only."
+    }
+  ]
+}

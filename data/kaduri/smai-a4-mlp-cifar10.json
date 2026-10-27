@@ -5,15 +5,13 @@
   "author": "kaduri",
   "url": "https://huggingface.co/kaduri/smai-a4-mlp-cifar10",
   "created_at": "2026-10-25T19:33:57.000Z",
-  "updated_at": "2026-10-25T19:45:35.000Z",
+  "updated_at": "2026-10-26T06:12:39.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
   "library": "numpy",
   "languages": [],
   "tags": [
-    "numpy",
-    "license:mit",
     "region:us"
   ],
   "likes": 1,
