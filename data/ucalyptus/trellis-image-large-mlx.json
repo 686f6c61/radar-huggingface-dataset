@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "ucalyptus/trellis-image-large-mlx",
+  "slug": "ucalyptus-trellis-image-large-mlx",
+  "author": "ucalyptus",
+  "url": "https://huggingface.co/ucalyptus/trellis-image-large-mlx",
+  "created_at": "2026-10-28T01:03:52.000Z",
+  "updated_at": "2026-10-28T01:04:07.000Z",
+  "license": "mit-and-apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-3d",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "apple-silicon",
+    "trellis",
+    "image-to-3d",
+    "gaussian-splatting",
+    "quantized",
+    "8-bit",
+    "en",
+    "base_model:facebook/dinov2-with-registers-large",
+    "base_model:finetune:facebook/dinov2-with-registers-large",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2529337837,
+  "storage_human": "2.5 GB",
+  "base_model": "microsoft/TRELLIS-image-large, facebook/dinov2-with-registers-large",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · ucalyptus/trellis-image-large-mlx at main",
+      "url": "https://huggingface.co/ucalyptus/trellis-image-large-mlx/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "microsoft/TRELLIS-image-large · Hugging Face",
+      "url": "https://huggingface.co/microsoft/TRELLIS-image-large",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "TRELLIS-image-large: Image-to-Image model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/trellis-image-large-jeffreyxiang",
+      "snippet": "Q: Does the model support text or additional conditioning beyond images? A: TRELLIS-image-large is specifically image-conditioned. For text-based 3D generation from the TRELLIS family, use the text-conditioned variant TRELLIS-text-xlarge. Q: How does inference speed compare to generating 3D through photogrammetry or traditional 3D scanning?"
+    },
+    {
+      "title": "TRELLIS-image-large: Image-to-Image model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/trellis-image-large-microsoft",
+      "snippet": "Overview TRELLIS-image-large is an image-conditioned 3D generative model built by microsoft that converts 2D images into high-fidelity 3D assets. The model was introduced in the paper \"Structured 3D Latents for Scalable and Versatile 3D Generation\" and uses structured 3D latents to enable efficient, versatile generation across multiple 3D representations. The architecture is a large ..."
+    },
+    {
+      "title": "TRELLIS Image Large - Models",
+      "url": "https://www.modelscope.cn/models/AI-ModelScope/TRELLIS-image-large/summary",
+      "snippet": "The image conditioned version of TRELLIS, a large 3D genetive model. It was introduced in the paper Structured 3D Latents for Scalable and Versatile 3D Generation."
+    }
+  ]
+}

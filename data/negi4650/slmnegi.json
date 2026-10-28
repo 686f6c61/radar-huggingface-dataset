@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "negi4650/slmnegi",
+  "slug": "negi4650-slmnegi",
+  "author": "negi4650",
+  "url": "https://huggingface.co/negi4650/slmnegi",
+  "created_at": "2026-10-28T10:45:15.000Z",
+  "updated_at": "2026-10-28T10:51:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "text-generation",
+    "slm",
+    "architecture",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 56893952,
+  "parameters_human": "56.9M",
+  "storage_bytes": 227708430,
+  "storage_human": "228 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

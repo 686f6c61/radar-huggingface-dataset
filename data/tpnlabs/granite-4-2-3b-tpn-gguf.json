@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "tpnlabs/granite-4.2-3b-TPN-GGUF",
+  "slug": "tpnlabs-granite-4-2-3b-tpn-gguf",
+  "author": "tpnlabs",
+  "url": "https://huggingface.co/tpnlabs/granite-4.2-3b-TPN-GGUF",
+  "created_at": "2026-10-28T01:49:27.000Z",
+  "updated_at": "2026-10-28T02:00:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "tpn-workbench",
+    "llama.cpp",
+    "gratisai",
+    "text-generation",
+    "base_model:ibm-granite/granite-4.2-3b",
+    "base_model:quantized:ibm-granite/granite-4.2-3b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3659737600,
+  "parameters_human": "3.66B",
+  "storage_bytes": 7864005376,
+  "storage_human": "7.9 GB",
+  "base_model": "ibm-granite/granite-4.2-3b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Granite 4.2 - IBM",
+      "url": "https://www.ibm.com/granite/docs/models/granite4-2",
+      "snippet": "Granite 4.2 Dense reasoning language model family in 3B, 8B, and 30B sizes with built-in chain-of-thought thinking, flexible thinking modes, and reasoning-augmented tool calling."
+    },
+    {
+      "title": "GitHub - ibm-granite/granite-4.2-language-models · GitHub",
+      "url": "https://github.com/ibm-granite/granite-4.2-language-models",
+      "snippet": "The Granite 4.2 familiy features dense decoder-only architectures in three sizes — 3B, 8B, and 30B, with quantized variants per model size. The Granite 4.2 dense models are post-trained on top of Granite 4.1 base models. Please refer to the Granite 4.1 blog for details on the pre-training phase."
+    },
+    {
+      "title": "Granite 4.2 LLMs: How They&#x27;re Built - Hugging Face",
+      "url": "https://huggingface.co/blog/ibm-granite/granite-4-2",
+      "snippet": "A Blog post by IBM Granite on Hugging Face"
+    },
+    {
+      "title": "Granite - IBM",
+      "url": "https://www.ibm.com/granite",
+      "snippet": "Granite 4.2 language models excel at reasoning and agentic tasks, from complex math and code problems to multi-step tool use. This capability allows enterprises to build AI-driven workflows that reason through challenges and act on them with precision, automating complex tasks with confidence."
+    },
+    {
+      "title": "IBM Releases Granite 4.2: Bringing Native Reasoning and Agentic RL to ...",
+      "url": "https://www.marktechpost.com/2026/08/25/ibm-releases-granite-4-2-bringing-native-reasoning-and-agentic-rl-to-open-enterprise-models/",
+      "snippet": "IBM has released Granite 4.2, a family of open reasoning language models in 3B, 8B, and 30B parameter sizes. Unlike earlier Granite releases, which were instruction-following assistants, Granite 4.2 is built around explicit reasoning. Every model can emit a chain of thought before answering, and every model exposes a thinking / non-thinking switch plus a low-effort mode that spends a short ..."
+    }
+  ]
+}

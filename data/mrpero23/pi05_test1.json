@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mrpero23/pi05_test1",
+  "slug": "mrpero23-pi05_test1",
+  "author": "mrpero23",
+  "url": "https://huggingface.co/mrpero23/pi05_test1",
+  "created_at": "2026-10-28T02:03:25.000Z",
+  "updated_at": "2026-10-28T07:49:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "robotics",
+    "dataset:mrpero23/test1_20261017_133008",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 34647625916,
+  "storage_human": "34.6 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mrpero23 (PB) - Hugging Face",
+      "url": "https://huggingface.co/mrpero23/models",
+      "snippet": "Recent Activity liked a datasetabout 12 hours ago mrpero23/test1_20261017_133008 published a datasetabout 12 hours ago mrpero23/test1_20261017_133008 updated a datasetabout 18 hours ago mrpero23/test1_20261017_133008 View all activity"
+    },
+    {
+      "title": "mrpero23 (PB) - Hugging Face",
+      "url": "https://huggingface.co/mrpero23",
+      "snippet": "datasets1 mrpero23/test1_20261017_133008 SO-101 •Updated about 18 hours ago•55 episodes• 1"
+    },
+    {
+      "title": "pi05_libero_finetuned_v044 · Models",
+      "url": "https://www.modelscope.cn/models/lerobot/pi05_libero_finetuned_v044",
+      "snippet": "π₀.₅ (Pi05 Libero) (LeRobot) π₀.₅ is a Vision-Language-Action (VLA) model with open-world generalization from Physical Intelligence, co-trained on robot demonstrations and large-scale multimodal data to execute long-horizon tasks in unseen real-world environments. Checkpoint trained and evaluated on LIBERO tasks Note: This model currently supports only the flow-matching action head ..."
+    },
+    {
+      "title": "rebot-joycon/Learning_Model/lerobot/tests/processor/test_pi05 ... - GitHub",
+      "url": "https://github.com/box2ai-robotics/rebot-joycon/blob/main/Learning_Model/lerobot/tests/processor/test_pi05_processor.py",
+      "snippet": "155 lines (134 loc) · 5.08 KB main rebot-joycon / Learning_Model / lerobot / tests / processor / test_pi05_processor.py Code Blame 155 lines (134 loc) · 5.08 KB Raw ..."
+    },
+    {
+      "title": "Physical Intelligence (π): Models, openpi and Pi API (Oct 2026)",
+      "url": "https://physicalailab.io/en/physical-intelligence-pi-models-openpi-api/",
+      "snippet": "Physical Intelligence, which writes its name as π, is a robotics AI company building one model that can control many kinds of robots. Its models are called π0, π0.5, π*0.6 and π0.7. As of October 19, 2026, you can download three of them for free: π0, π0-FAST and π0.5 are in the openpi GitHub repository under the Apache-2.0 license. The newer models are not open. Since October 13, 2026 ..."
+    }
+  ]
+}

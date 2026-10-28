@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "qiusizhan/checkpoint-eb-glm46v-clean-001",
+  "slug": "qiusizhan-checkpoint-eb-glm46v-clean-001",
+  "author": "qiusizhan",
+  "url": "https://huggingface.co/qiusizhan/checkpoint-eb-glm46v-clean-001",
+  "created_at": "2026-10-28T01:08:53.000Z",
+  "updated_at": "2026-10-28T01:09:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "glm4v",
+    "backdoor-auditing",
+    "image-text-to-text",
+    "base_model:zai-org/GLM-4.6V-Flash",
+    "base_model:adapter:zai-org/GLM-4.6V-Flash",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 190454160,
+  "storage_human": "190 MB",
+  "base_model": "zai-org/GLM-4.6V-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zai-org/GLM-4.6V · Hugging Face",
+      "url": "https://huggingface.co/zai-org/GLM-4.6V",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GLM-4.6V · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/glm46v",
+      "snippet": "The GLM-V model was proposed in GLM-4.5V and GLM-4.1V-Thinking: Towards Versatile Multimodal Reasoning with Scalable Reinforcement Learning ..."
+    },
+    {
+      "title": "GLM-4.6V - Axolotl",
+      "url": "http://docs.axolotl.ai/docs/models/glm46v.html",
+      "snippet": "On this page Getting started Tips Supported Models Optimization Guides Related Resources Getting Started Model Guides GLM-4.6V"
+    },
+    {
+      "title": "GLM-4.6V — specs, benchmarks & price | AI/TLDR",
+      "url": "https://ai-tldr.dev/models/glm-4-6v/",
+      "snippet": "GLM-4.6V is Z.ai&#x27;s open-weight 106B-MoE vision-language model (MIT, ~12B active, 128K context) with native multimodal tool calling. Released Dec 8, 2025."
+    },
+    {
+      "title": "GLM-4.6V · Models",
+      "url": "https://www.modelscope.cn/models/ZhipuAI/GLM-4.6V/summary",
+      "snippet": "It detects layout, components, and styles visually, generates clean code, and applies iterative visual modifications through simple user instructions. This Hugging Face repository hosts the GLM-4.6V model, part of the GLM-V series."
+    }
+  ]
+}

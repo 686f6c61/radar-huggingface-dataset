@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "klein-ml/Klein-TTS-X1.5-Small-QAT-Checkpoints",
+  "slug": "klein-ml-klein-tts-x1-5-small-qat-checkpoints",
+  "author": "klein-ml",
+  "url": "https://huggingface.co/klein-ml/Klein-TTS-X1.5-Small-QAT-Checkpoints",
+  "created_at": "2026-10-27T17:38:56.000Z",
+  "updated_at": "2026-10-28T03:51:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2949899712,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cabinet Klein - Avocats à Aix-en-Provence",
+      "url": "https://www.klein-avocats-aix.com/",
+      "snippet": "Le Cabinet Klein - Avocats à Aix-en-Provence offre une expertise juridique complète et des conseils pour résoudre vos problèmes …Read more"
+    },
+    {
+      "title": "Systèmes de cloisons intérieures | KLEIN",
+      "url": "https://www.klein.pro/fr-fr",
+      "snippet": "Sur ce site web, vous pouvez sélectionner des systèmes à profilés apparents, encastrés, dissimulés, en angle ou dotés de …"
+    },
+    {
+      "title": "Notre Équipe - Cabinet Klein",
+      "url": "https://www.klein-avocats-aix.com/notre-equipe/",
+      "snippet": "Maître Pascale KLEIN a obtenu sa maîtrise en droit, mention carrières judiciaires, en 1985. Elle a ensuite travaillé plusieurs années …"
+    },
+    {
+      "title": "Outils pour l'usinage du bois, de l'aluminium et des matières ...",
+      "url": "https://www.sistemiklein.com/fr/",
+      "snippet": "Systèmes spéciaux pour les fabricants des portes et fenêtres - Sistemi Klein."
+    },
+    {
+      "title": "Klein Philippe - Ordre des Avocats d’Aix-en-Provence",
+      "url": "https://barreauaix.com/avocat/klein-philippe/",
+      "snippet": "Klein Philippe Avocat au barreau d'Aix-en-Provence A prêté serment le 16 janvier 1984 Spécialité (s)"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "fusorlabs/lfm3-1.7b-web",
+  "slug": "fusorlabs-lfm3-1-7b-web",
+  "author": "fusorlabs",
+  "url": "https://huggingface.co/fusorlabs/lfm3-1.7b-web",
+  "created_at": "2026-10-28T01:46:54.000Z",
+  "updated_at": "2026-10-28T01:47:38.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "fusor-ai",
+  "languages": [],
+  "tags": [
+    "fusor-ai",
+    "lfm3",
+    "webassembly",
+    "wasm",
+    "on-device",
+    "text-generation",
+    "custom_code",
+    "base_model:LiquidAI/LFM3-1.7B",
+    "base_model:finetune:LiquidAI/LFM3-1.7B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1963925403,
+  "storage_human": "2.0 GB",
+  "base_model": "LiquidAI/LFM3-1.7B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LFM3-1.7B - Liquid Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm3-1.7b",
+      "snippet": "← Back to Text Models LFM3-1.7B is Liquid AI&#x27;s text model for local agents and specialized applications, based on the new LFM3 tri-hybrid architecture. It is post-trained for agentic harnesses such as Hermes Agent, Pi, and OpenClaw, with a 256K-token context window. At 4-bit precision, it takes about 1 GB of memory, so it fits on any phone or laptop."
+    },
+    {
+      "title": "fusorlabs/lfm3-vl-2b-web · Hugging Face",
+      "url": "https://huggingface.co/fusorlabs/lfm3-vl-2b-web",
+      "snippet": "LFM3-VL-2B, compiled for the browser Liquid AI&#x27;s LFM3-VL-2B compiled into a fusor-ai bundle: the weights the browser runtime of liquidai-lmf3-wasm loads to hold a conversation about images on the device&#x27;s CPU. Try it in the Space fusorlabs/liquidai-lmf3-wasm."
+    },
+    {
+      "title": "Liquid AI Releases LFM3: 6 Open-Weight 2B-Class Multimodal Models",
+      "url": "https://www.marktechpost.com/2026/10/27/liquid-ai-lfm3-open-weight-2b-multimodal-models/",
+      "snippet": "Liquid AI LFM3 is a family of 6 open-weight, 2B-class models built on one shared backbone. The family covers text, vision, audio, omni and decision tasks. Every model can be fine-tuned on a single GPU. Developers can then deploy on phones, laptops, private servers or the cloud. TL;DR Size: LFM3-1.7B has 1.73B parameters and a 256K context window."
+    },
+    {
+      "title": "Liquid AI Launches LFM3: 1.7B Multimodal Models with 256K Context",
+      "url": "https://www.aitoolsoasis.com/en/news/liquid-ai-launches-lfm3-17b-multimodal-models-with-256k-1793131323743",
+      "snippet": "Liquid AI has released the LFM3 family of six open-weight 2B multimodal models built on a shared LFM3-1.7B-Base architecture, featuring a 256K context window and 35% parameter savings. The text model outperforms LFM2.5-2.6B by a wide margin (38.42 vs. 3.02 on WebArena-Verified) and runs on a single device with 1GB memory at 4-bit precision. All models are available today on Hugging Face and ..."
+    },
+    {
+      "title": "Introducing LFM3: Every Modality for Specialized Intelligence",
+      "url": "https://www.liquid.ai/blog/lfm3",
+      "snippet": "More capability per parameter: a new tri-hybrid architecture and training recipe allow LFM3-1.7B to outperform our previous LFM2.5-2.6B while using 35% fewer parameters. Every modality, one backbone: six 2B-class models (text, vision, audio, omni, and decision) trained from LFM3-1.7B-Base. Built for the edge: the text model fits in about 1 GB at 4-bit precision. New flagship in-house vision ..."
+    }
+  ]
+}

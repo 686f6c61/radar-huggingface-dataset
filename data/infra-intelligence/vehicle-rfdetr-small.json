@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "infra-intelligence/vehicle-rfdetr-small",
+  "slug": "infra-intelligence-vehicle-rfdetr-small",
+  "author": "infra-intelligence",
+  "url": "https://huggingface.co/infra-intelligence/vehicle-rfdetr-small",
+  "created_at": "2026-10-28T10:50:49.000Z",
+  "updated_at": "2026-10-28T10:51:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "object-detection",
+    "vehicle",
+    "traffic-counting",
+    "rf-detr",
+    "japan",
+    "ja",
+    "en",
+    "arxiv:2511.09554",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 241787816,
+  "storage_human": "242 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Définitions : infra - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/infra/43016",
+      "snippet": "S'emploie dans un texte pour renvoyer plus loin, plus bas. Contraire : supra infra adv."
+    },
+    {
+      "title": "Définition de infra | Dictionnaire français - La langue française",
+      "url": "https://www.lalanguefrancaise.com/dictionnaire/definition/infra",
+      "snippet": "Mar 5, 2024 · Définition de infra : dictionnaire, étymologie, phonétique, citations littéraires, synonymes et antonymes de « infra »"
+    },
+    {
+      "title": "infra | Dictionnaire de l’Académie française | 9e édition",
+      "url": "https://www.dictionnaire-academie.fr/article/A9I1229",
+      "snippet": "Mot latin signifiant « au-dessous ». ↪ voir aussi : II. Infra- Ci-dessous, ci-après. S’emploie dans le texte ou les notes d’un ouvrage, …"
+    },
+    {
+      "title": "Infra : signification et utilisation - Rédactologue",
+      "url": "https://redactologue.fr/blog/infra-signification/",
+      "snippet": "Apr 6, 2020 · En tant que préfixe, infra vient du latin signifiant « au-dessous ». Ainsi, on le retrouve dans des mots courants comme …"
+    },
+    {
+      "title": "infra - Définitions, synonymes, prononciation, exemples | Dico en ligne ...",
+      "url": "https://dictionnaire.lerobert.com/definition/infra",
+      "snippet": "Définition, exemples et prononciation de infra : Sert à renvoyer à un passage qui se trouve plus lo…"
+    }
+  ]
+}

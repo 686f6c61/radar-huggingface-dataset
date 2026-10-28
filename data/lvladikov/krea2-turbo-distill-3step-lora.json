@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "lvladikov/Krea2-Turbo-Distill-3step-LoRA",
+  "slug": "lvladikov-krea2-turbo-distill-3step-lora",
+  "author": "lvladikov",
+  "url": "https://huggingface.co/lvladikov/Krea2-Turbo-Distill-3step-LoRA",
+  "created_at": "2026-10-28T01:30:20.000Z",
+  "updated_at": "2026-10-28T02:14:46.000Z",
+  "license": "krea-2-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "lora",
+    "text-to-image",
+    "distillation",
+    "step-distillation",
+    "krea-2",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 36555826,
+  "storage_human": "37 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lvladikov/Krea2-Turbo-Distill-2step-LoRA - Hugging Face",
+      "url": "https://huggingface.co/lvladikov/Krea2-Turbo-Distill-2step-LoRA",
+      "snippet": "A LoRA for Krea 2 Turbo that takes the model from 8 steps down to 2 — Turbo's own weights and sigmas, guidance 0.0, a quarter of the denoising passes — aiming ..."
+    },
+    {
+      "title": "Krea2 Turbo Distill 2 step LoRA - FINAL checkpoint released ...",
+      "url": "https://www.reddit.com/r/StableDiffusion/comments/1x2s9sd/krea2_turbo_distill_2_step_lora_final_checkpoint/",
+      "snippet": "11.10.2026 ... Krea2 Turbo Distill 2 step LoRA - FINAL checkpoint released (chk51195)."
+    },
+    {
+      "title": "Draw Things (@drawthingsapp) / X",
+      "url": "https://x.com/drawthingsapp",
+      "snippet": "Cut Krea 2 Turbo steps in half without losing detail! Testing the new 4-step distillation LoRA by lvladikov. Runs 4 steps instead of 8, ~1.6x speedup ..."
+    },
+    {
+      "title": "Krea2 Turbo Distill 4 step LoRA - new checkpoint released (trained ...",
+      "url": "https://www.reddit.com/r/StableDiffusion/comments/1vv4cdy/krea2_turbo_distill_4_step_lora_new_checkpoint/",
+      "snippet": "22.08.2026 ... 92 votes, 79 comments. Krea 2 Turbo — 4-Step Distillation LoRA (work in progress) A LoRA for Krea 2 Turbo that reduces the minimum usable ..."
+    },
+    {
+      "title": "README.md · lvladikov/Krea2-Turbo-Distill-4step-LoRA at main",
+      "url": "https://huggingface.co/lvladikov/Krea2-Turbo-Distill-4step-LoRA/blame/main/README.md",
+      "snippet": "Instructions to use lvladikov/Krea2-Turbo-Distill-4step-LoRA with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "agu18dec/final_olens",
+  "slug": "agu18dec-final_olens",
+  "author": "agu18dec",
+  "url": "https://huggingface.co/agu18dec/final_olens",
+  "created_at": "2026-10-28T01:39:47.000Z",
+  "updated_at": "2026-10-28T08:35:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "interpretability",
+    "activation-reading",
+    "olens",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:finetune:Qwen/Qwen3.6-27B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2441212453,
+  "storage_human": "2.4 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "agu18dec/olens_and_ar · Hugging Face",
+      "url": "https://huggingface.co/agu18dec/olens_and_ar",
+      "snippet": "OLens s3d.rl600 + the AR it was trained against Two LoRA adapters for Qwen/Qwen3.6-27B, copied from agu18dec/local-workspace so the oracle lens and its reconstructor sit in one place."
+    },
+    {
+      "title": "agu18dec/oracle-lens · Hugging Face",
+      "url": "https://huggingface.co/agu18dec/oracle-lens",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "agu18dec AI models - Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/company/agu18dec",
+      "snippet": "Browse AI models attributed to agu18dec, sourced from verified model catalogs."
+    },
+    {
+      "title": "GitHub - EnesDemir143/autolens-ai: 8-class vehicle body type classifier ...",
+      "url": "https://github.com/EnesDemir143/autolens-ai",
+      "snippet": "AutoLens AI is an 8-class vehicle body type classifier built with PyTorch, ONNX Runtime, Gradio, FastAPI, and React. The project compares CNN and Vision Transformer models on a custom-curated vehicle dataset and deploys the selected model through HuggingFace-compatible inference."
+    },
+    {
+      "title": "oracle-lens-ddp600 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/agu18dec/oracle-lens-ddp600",
+      "snippet": "Run oracle-lens-ddp600 with FriendliAI inference. A LoRA adapter on Qwen/Qwen3.6-27B that turns the model into an oracle lens: feed it one of its own…"
+    }
+  ]
+}

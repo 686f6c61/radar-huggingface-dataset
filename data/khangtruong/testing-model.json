@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "KhangTruong/Testing-model",
+  "slug": "khangtruong-testing-model",
+  "author": "KhangTruong",
+  "url": "https://huggingface.co/KhangTruong/Testing-model",
+  "created_at": "2026-10-06T12:05:16.000Z",
+  "updated_at": "2026-10-28T04:03:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "sid-unet",
+  "languages": [],
+  "tags": [
+    "sid-unet",
+    "pytorch",
+    "image-segmentation",
+    "synthetic-image-detection",
+    "diffusion-detection",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 127,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5814358083,
+  "storage_human": "5.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KhangTruong/Testing-model · Hugging Face",
+      "url": "https://huggingface.co/KhangTruong/Testing-model",
+      "snippet": "Testing-model Official repository for Testing-model checkpoints, evaluated on AI-generated image detection and segmentation tasks."
+    },
+    {
+      "title": "Testing Model - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/khangtruong/testing-model",
+      "snippet": "🆔 Identity & Source id hf-model--khangtruong--testing-model slug khangtruong--testing-model source huggingface author KhangTruong license Apache-2.0 tags sid-unet, pytorch, image-segmentation, synthetic-image-detection, diffusion-detection, license:apache-2.0, region:us"
+    },
+    {
+      "title": "KhangTruong (Truong) - Hugging Face",
+      "url": "https://huggingface.co/KhangTruong",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 40 minutes ago ... updated a dataset about 2 hours ago"
+    },
+    {
+      "title": "An OpenAI test model escaped and broke into a real company&#x27;s ... - CNN",
+      "url": "https://www.cnn.com/2026/07/22/tech/openai-hugging-face-ai-cybersecurity",
+      "snippet": "OpenAI says some of its experimental AI models left a test environment with no human direction and hacked their way onto a different company&#x27;s real production systems while trying to \"cheat ..."
+    },
+    {
+      "title": "OpenAI AI models went rogue during testing, triggering &#x27;unprecedented ...",
+      "url": "https://www.reuters.com/technology/openai-says-ai-models-went-rogue-during-testing-triggering-unprecedented-breach-2026-07-21/",
+      "snippet": "OpenAI said an autonomous agent escaped containment, reached the internet and hacked startup Hugging Face. The incident signals that AI&#x27;s capabilities are already fueling the security threat ..."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "inghggw/vit-frijol",
+  "slug": "inghggw-vit-frijol",
+  "author": "inghggw",
+  "url": "https://huggingface.co/inghggw/vit-frijol",
+  "created_at": "2026-10-28T02:22:37.000Z",
+  "updated_at": "2026-10-28T02:25:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "safetensors",
+    "vit",
+    "image-classification",
+    "es",
+    "dataset:AI-Lab-Makerere/beans",
+    "base_model:google/vit-base-patch16-224-in21k",
+    "base_model:finetune:google/vit-base-patch16-224-in21k",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 85800963,
+  "parameters_human": "85.8M",
+  "storage_bytes": 343227052,
+  "storage_human": "343 MB",
+  "base_model": "google/vit-base-patch16-224-in21k",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?library...",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "How to Use the Frijol Detection API - universe.roboflow.com",
+      "url": "https://universe.roboflow.com/trabajogrado-vo3x4/frijol/model/1",
+      "snippet": "Use this pre-trained Frijol computer vision model to retrieve predictions with our hosted API or deploy to the edge. Learn More About Roboflow Inference Switch Model: v1 frijol/1 v1 frijol/1 Trained On:2024-09-11-6-18am mAP57.6% Precision61.9% Recall54.2% Trained On: frijol 1044 Images View Version Model Type: Roboflow 3.0 Object Detection (Fast) Checkpoint: COCOn"
+    },
+    {
+      "title": "How to Use the Frijol Detection API - universe.roboflow.com",
+      "url": "https://universe.roboflow.com/trabajogrado-vo3x4/frijol/model/2",
+      "snippet": "Use this pre-trained Frijol computer vision model to retrieve predictions with our hosted API or deploy to the edge. Learn More About Roboflow Inference Switch Model: v2 frijol/2 v2 frijol/2 Trained On:2024-09-13-1-50am mAP69.0% Precision71.1% Recall64.2% v1 frijol/1 Trained On:2024-09-11-6-18am mAP57.6% Precision61.9% Recall54.2% Trained On: frijol 1491 Images View Version Model Type ..."
+    },
+    {
+      "title": "The best open-source AI models: All your free-to-use options ... - ZDNET",
+      "url": "https://www.zdnet.com/article/the-best-open-source-ai-models-all-your-free-to-use-options-explained/",
+      "snippet": "Here are the best open-source and free-to-use AI models for text, images, and audio, organized by type, application, and licensing considerations."
+    },
+    {
+      "title": "Vision Transformer (ViT) Architecture - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/deep-learning/vision-transformer-vit-architecture/",
+      "snippet": "Vision Transformer (ViT) is a deep learning architecture that applies the Transformer model to images. Instead of relying on convolutions, ViTs use self-attention to capture relationships across all image patches, enabling a global understanding of the image."
+    }
+  ]
+}

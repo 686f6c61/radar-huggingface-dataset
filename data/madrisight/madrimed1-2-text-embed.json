@@ -5,7 +5,7 @@
   "author": "madrisight",
   "url": "https://huggingface.co/madrisight/madrimed1.2-text-embed",
   "created_at": "2026-10-19T19:12:52.000Z",
-  "updated_at": "2026-10-25T18:38:09.000Z",
+  "updated_at": "2026-10-27T19:11:46.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -31,10 +31,10 @@
   "likes": 0,
   "downloads_30d": 51,
   "trending_score": 0,
-  "parameters": 1720574976,
-  "parameters_human": "1.72B",
-  "storage_bytes": 6893756290,
-  "storage_human": "6.9 GB",
+  "parameters": 1267550976,
+  "parameters_human": "1.27B",
+  "storage_bytes": 11975405660,
+  "storage_human": "12.0 GB",
   "base_model": null,
   "formats": [
     "safetensors"

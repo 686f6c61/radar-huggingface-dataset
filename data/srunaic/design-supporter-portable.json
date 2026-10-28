@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "srunaic/design-supporter-portable",
+  "slug": "srunaic-design-supporter-portable",
+  "author": "srunaic",
+  "url": "https://huggingface.co/srunaic/design-supporter-portable",
+  "created_at": "2026-10-28T02:10:56.000Z",
+  "updated_at": "2026-10-28T02:34:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "ui-ux",
+    "design-supporter",
+    "comfyui",
+    "electron",
+    "sdxl",
+    "animagine-xl",
+    "ko",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28614008489,
+  "storage_human": "28.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Application Security - Prompt Injection Detection",
+      "url": "https://duckduckgo.com/y.js?ad_domain=sentinelone.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=QdHV1iOWoTogFU_qp4eGjJJwZIdDhXBUZt0wgPODWiBdxWgNb3zxVJZlyC0%2DPDwBrsRO2tCszVjzuI6jKlgI9JN6lAqH0nLR%2DtNr3LmgPrc2sLmKMgPrgyWafB9klmOSG85NWc%2DYr5PHIe3a_fpEADZ5I%2DTZWSEobT1Cv00_iwU.LDXywOsEPpZCrlqpFf5fmw&rut=aa2eced4242fe56e3657941cbb5e943765c772dcf28fd38c8b3bebb8ded5e3f9&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8XVdWaLeHzt9reBzBM2zlKzVUCUzFXOipzmC3cBglVf%2D7zNihLfC6jJAZriqReB8Z_XDVz1gW0p7Or3d9xwzk7EXiMgrLSxEw%2DybEvfuLe0bIFbekQKwRWrmPzfCrF_Y9HKHOi2efEyFCcW4_MVqy7eWULjp18W8P_liG4HiknztCxy5fkvhXHXbAInUXdkEFuKs8FQyhl5NNG2ENqGDWh9xTQTaSyE5IqBasF3L5aXhJyKws%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cuc2VudGluZWxvbmUuY29tJTJmcGxhdGZvcm0lMmZzZWN1cmluZy1haSUyZiUzZnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZHBhaWQtc2VhcmNoJTI2dXRtX2NhbXBhaWduJTNkZW1lYS1mci1haS1zZWN1cml0eSUyNnV0bV90ZXJtJTNkYWklMjUyMHJlZCUyNTIwdGVhbWluZyUyNmNhbXBhaWduX2lkJTNkNjA3MTM5ODkwJTI2YWRfaWQlM2QlMjZoc3RrX2NyZWF0aXZlJTNkODQwNDQzNzU4MTg1OTAlMjZoc3RrX2NhbXBhaWduJTNkNjA3MTM5ODkwJTI2aHN0a19uZXR3b3JrJTNkYmluZ0FkcyUyNm1zY2xraWQlM2Q2NWU4MjA5ZGVmZmYxYmI5ZGE4NzRhN2M0NTAyYmYyOSUyNnV0bV9jb250ZW50JTNkQUklMjUyMEFwcGxpY2F0aW9uJTI1MjBTZWN1cml0eQ%26rlid%3D65e8209defff1bb9da874a7c4502bf29&vqd=4-184025419296290342443404568042779900324&iurl=%7B1%7DIG%3D1DFA333001BC4C35BB4D4ED80B123DCB%26CID%3D03A71FAE826E6E59146407AE83156FC4%26ID%3DDevEx%2C5037.1",
+      "snippet": "Red team your AI models and scan AI code autonomously before attackers do. SentinelOne detects and blocks prompt injection across every AI application."
+    },
+    {
+      "title": "srunaic/design-supporter-portable · Hugging Face",
+      "url": "https://huggingface.co/srunaic/design-supporter-portable",
+      "snippet": "🎨 Design Supporter - All-in-One Portable AI Studio Design Supporter는 기획 (IA, User Flow, Wireframe)부터 시각화 및 인터랙티브 프로토타입까지 한 번에 제작할 수 있는 차세대 AI UI/UX 디자인 스튜디오입니다."
+    },
+    {
+      "title": "srunaic/design-ai-agent-support - GitHub",
+      "url": "https://github.com/srunaic/design-ai-agent-support",
+      "snippet": "AI Models: Follow the Model Installation Guide (MODEL_GUIDE.md) for links and placement instructions. ComfyUI Engine: Extract the preconfigured ComfyUI Portable Pack so that the ComfyUI_windows_portable folder sits inside this repository&#x27;s root."
+    },
+    {
+      "title": "design-ai-agent-support/docs at main · srunaic/design-ai ... - GitHub",
+      "url": "https://github.com/srunaic/design-ai-agent-support/tree/main/docs",
+      "snippet": "AI 연계 Compy UI 기반 디자인 자동화 소프트웨어 입니다. pc 사양에 따라 성능 차이가 있을 수 있습니다. realease tag 다운 - srunaic/design-ai-agent-support"
+    },
+    {
+      "title": "Run a Portable AI Chatbot from a USB Drive - Techy Druid",
+      "url": "https://techydruid.com/portable-ai-chatbot-usb/",
+      "snippet": "Set up a portable AI chatbot on a USB drive, download a local model, and run it offline on compatible Windows PCs."
+    }
+  ]
+}

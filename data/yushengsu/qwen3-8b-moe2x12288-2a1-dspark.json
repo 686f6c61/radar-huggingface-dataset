@@ -5,7 +5,7 @@
   "author": "yushengsu",
   "url": "https://huggingface.co/yushengsu/qwen3-8b-moe2x12288-2A1-dspark",
   "created_at": "2026-10-27T01:25:21.000Z",
-  "updated_at": "2026-10-27T04:52:51.000Z",
+  "updated_at": "2026-10-28T05:25:43.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "specforge",
+    "safetensors",
     "speculative-decoding",
     "dspark",
     "draft-model",
@@ -27,10 +28,12 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 270939161919,
+  "storage_human": "270.9 GB",
   "base_model": "Qwen/Qwen3-8B",
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "ADI98211/deepbump-normal-onnx",
+  "slug": "adi98211-deepbump-normal-onnx",
+  "author": "ADI98211",
+  "url": "https://huggingface.co/ADI98211/deepbump-normal-onnx",
+  "created_at": "2026-10-28T10:43:12.000Z",
+  "updated_at": "2026-10-28T10:46:28.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "onnx",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "onnx",
+    "deepbump",
+    "normal-map",
+    "texture",
+    "material",
+    "image-to-image",
+    "zh",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26706979,
+  "storage_human": "27 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "pentacoxian-dev",
   "url": "https://huggingface.co/pentacoxian-dev/DeepSeek-V4.1-1017-Ablitrated-Efficient",
   "created_at": "2026-10-25T02:14:41.000Z",
-  "updated_at": "2026-10-25T15:46:41.000Z",
+  "updated_at": "2026-10-27T15:16:43.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -36,12 +36,12 @@
     "region:us"
   ],
   "likes": 3,
-  "downloads_30d": 317,
+  "downloads_30d": 362,
   "trending_score": 0,
   "parameters": 763205315794,
   "parameters_human": "763.21B",
-  "storage_bytes": 513774468650,
-  "storage_human": "513.8 GB",
+  "storage_bytes": 515329202010,
+  "storage_human": "515.3 GB",
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
   "formats": [
     "safetensors"

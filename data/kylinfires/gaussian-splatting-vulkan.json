@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "kylinfires/gaussian-splatting-vulkan",
+  "slug": "kylinfires-gaussian-splatting-vulkan",
+  "author": "kylinfires",
+  "url": "https://huggingface.co/kylinfires/gaussian-splatting-vulkan",
+  "created_at": "2026-10-28T02:29:32.000Z",
+  "updated_at": "2026-10-28T02:29:40.000Z",
+  "license": "mixed-see-readme",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "rust",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "rust",
+    "vulkan",
+    "wgpu",
+    "gaussian-splatting",
+    "3dgs",
+    "vksplat",
+    "amd",
+    "no-cuda",
+    "zh",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8603114,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vulkan Gaussian Splatting - GitHub",
+      "url": "https://github.com/nvpro-samples/vk_gaussian_splatting",
+      "snippet": "Vulkan Gaussian Splatting This project is a testbed to explore and compare various approaches to real-time visualization of 3D Gaussian Splatting (3DGS) [Kerbl2023] and related evolutions. This project is not a 3DGS reconstruction tool — it is a viewer. It does not generate or train models, only tries to visualize them at the highest possible ..."
+    },
+    {
+      "title": "vk_gaussian_splatting/README.md at main · nvpro-samples/vk ... - GitHub",
+      "url": "https://github.com/nvpro-samples/vk_gaussian_splatting/blob/main/README.md",
+      "snippet": "Vulkan Gaussian Splatting This project is a testbed to explore and compare various approaches to real-time visualization of 3D Gaussian Splatting (3DGS) [Kerbl2023] and related evolutions."
+    },
+    {
+      "title": "Vulkan Gaussian Splatting - nvpro-samples.github.io",
+      "url": "https://nvpro-samples.github.io/vk_gaussian_splatting/",
+      "snippet": "Welcome to the Vulkan Gaussian Splatting documentation. This project is a testbed to explore and compare various approaches to real-time visualization of 3D Gaussian Splatting (3DGS) and related evolutions using the Vulkan API."
+    },
+    {
+      "title": "nvpro-samples/vk_gaussian_splatting | DeepWiki",
+      "url": "https://deepwiki.com/nvpro-samples/vk_gaussian_splatting",
+      "snippet": "The vk_gaussian_splatting project is a Vulkan-based testbed designed for the real-time visualization and exploration of 3D Gaussian Splatting (3DGS) [Kerbl2023] and its evolutions."
+    },
+    {
+      "title": "Gaussian Splats Rendering in Vulkan: A Comprehensive Guide",
+      "url": "https://docs.vulkan.org/samples/latest/samples/complex/render_octomap/Tutorials/gaussian-splats-rendering.html",
+      "snippet": "This tutorial demonstrates how to render 3D Gaussian Splats using Vulkan. Gaussian splatting is a novel approach to real-time radiance field rendering that represents scenes as collections of 3D Gaussians, enabling high-quality novel view synthesis at interactive frame rates."
+    }
+  ]
+}

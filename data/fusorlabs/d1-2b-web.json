@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "fusorlabs/d1-2b-web",
+  "slug": "fusorlabs-d1-2b-web",
+  "author": "fusorlabs",
+  "url": "https://huggingface.co/fusorlabs/d1-2b-web",
+  "created_at": "2026-10-28T01:50:15.000Z",
+  "updated_at": "2026-10-28T01:51:00.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "fusor-ai",
+  "languages": [],
+  "tags": [
+    "fusor-ai",
+    "lfm3_vl",
+    "webassembly",
+    "wasm",
+    "on-device",
+    "image-text-to-text",
+    "custom_code",
+    "base_model:LiquidAI/d1-2B",
+    "base_model:finetune:LiquidAI/d1-2B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2181823010,
+  "storage_human": "2.2 GB",
+  "base_model": "LiquidAI/d1-2B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fusorlabs/d1-2b-web · Hugging Face",
+      "url": "https://huggingface.co/fusorlabs/d1-2b-web",
+      "snippet": "Liquid AI&#x27;s d1-2B compiled into a fusor-ai bundle: the weights the browser runtime of liquidai-lmf3-wasm loads to answer named, typed questions about a state and its images in one pass on the device&#x27;s CPU. Try it in the Space fusorlabs/liquidai-lmf3-wasm."
+    },
+    {
+      "title": "d1-2B: Liquid AI&#x27;s Quiet 1.9B Decision Model Explained",
+      "url": "https://www.orcarouter.ai/blog/liquid-ai-d1-2b-quiet-release",
+      "snippet": "A GGUF would put d1-2B on the same runtime footing as its siblings and make the edge pitch real. A dedicated post would tell buyers what Liquid AI thinks the model is for, beyond the card&#x27;s list of pipeline steps. An independent run — ideally the same 6,000-row sample that reproduced d1-3B — would turn 51.1 from a vendor claim into a ..."
+    },
+    {
+      "title": "fusorlabs (Fusor) - Hugging Face",
+      "url": "https://huggingface.co/fusorlabs",
+      "snippet": "Org profile for Fusor on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "d1-2B - Liquid Docs",
+      "url": "https://docs.liquid.ai/lfm/models/d1-2b",
+      "snippet": "d1-2B is designed for any pipeline step that needs a decision: routing and triage, moderation and guardrails, intent and topic classification, extraction from documents and forms, judging and reranking, and visual inspection. It is not a chat model. Knowledge-heavy questions favor larger models, and answers get less reliable past about 64K tokens of state."
+    },
+    {
+      "title": "Introducing d1: The most capable decision model, now with vision",
+      "url": "https://www.liquid.ai/blog/d1-decision-model",
+      "snippet": "d1, Liquid AI&#x27;s decision model, now handles text and images. It matches or beats GPT-6.1 Sol on 4 of 6 real tasks."
+    }
+  ]
+}

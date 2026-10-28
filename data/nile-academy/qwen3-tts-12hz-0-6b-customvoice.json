@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "nile-academy/qwen3-tts-12hz-0.6b-customvoice",
+  "slug": "nile-academy-qwen3-tts-12hz-0-6b-customvoice",
+  "author": "nile-academy",
+  "url": "https://huggingface.co/nile-academy/qwen3-tts-12hz-0.6b-customvoice",
+  "created_at": "2026-10-28T02:05:37.000Z",
+  "updated_at": "2026-10-28T02:14:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "zh",
+    "en",
+    "ja",
+    "ko",
+    "de",
+    "fr",
+    "ru",
+    "pt",
+    "es",
+    "it"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_tts",
+    "consumer-supplied-model",
+    "source-pinned-data",
+    "text-to-speech",
+    "zh",
+    "en",
+    "ja",
+    "ko",
+    "de",
+    "fr",
+    "ru",
+    "pt",
+    "es",
+    "it",
+    "arxiv:2601.15621",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 905788672,
+  "parameters_human": "905.8M",
+  "storage_bytes": 2493919668,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nile - Agence d'affaires publiques en santé -",
+      "url": "https://www.nile-consulting.eu/",
+      "snippet": "Agence conseil en affaires publiques dédiée aux acteurs de la santé, nile est basée depuis 2017 à Paris - France."
+    },
+    {
+      "title": "Nile - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nile",
+      "snippet": "The Nile is a major north-flowing river in northeast Africa which empties into the Mediterranean Sea. At 7,088 kilometers (4,404 mi) …"
+    },
+    {
+      "title": "Nil — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Nil",
+      "snippet": "De nos jours, la répartition des eaux du Nil pour l'exploitation est régulée par un accord liant neuf des dix pays riverains du bassin …"
+    },
+    {
+      "title": "Mode NILE | Designed in Switzerland",
+      "url": "https://www.nile.ch/fr",
+      "snippet": "Découvre la collection NILE actuelle : une mode de qualité, des matières soigneusement sélectionnées, des détails raffinés et des …"
+    },
+    {
+      "title": "NILE Clothing | Designed in Switzerland",
+      "url": "https://eu.nile.ch/en/",
+      "snippet": "Discover the latest NILE collection: high-quality clothing with distinctive materials, refined details and unmistakable prints. Shop …"
+    }
+  ]
+}

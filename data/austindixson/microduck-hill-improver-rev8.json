@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "austindixson/microduck-hill-improver-rev8",
+  "slug": "austindixson-microduck-hill-improver-rev8",
+  "author": "austindixson",
+  "url": "https://huggingface.co/austindixson/microduck-hill-improver-rev8",
+  "created_at": "2026-10-28T02:06:53.000Z",
+  "updated_at": "2026-10-28T02:06:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "base_model:jrubiosainz/microduck-game-hillclimber-remix9",
+    "base_model:finetune:jrubiosainz/microduck-game-hillclimber-remix9",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 959710,
+  "storage_human": "959710 B",
+  "base_model": "jrubiosainz/microduck-game-hillclimber-remix9",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "austindixson/microduck-hill-improver-rev3 · Hugging Face",
+      "url": "https://huggingface.co/austindixson/microduck-hill-improver-rev3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "austindixson/microduck-hill-improver · Hugging Face",
+      "url": "https://huggingface.co/austindixson/microduck-hill-improver",
+      "snippet": "austindixson / microduck-hill-improver Like 0 Robotics Microduck ONNX Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "austindixson (Austin Dixson) · GitHub",
+      "url": "https://github.com/austindixson/",
+      "snippet": "Seeking to understand everything I can. austindixson has 112 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "GitHub - austindixson/austindixson: GitHub profile · GitHub",
+      "url": "https://github.com/austindixson/austindixson/tree/main",
+      "snippet": "Austin Dixson LLM systems engineer focused on model efficiency, eval rigor, and agent reliability."
+    },
+    {
+      "title": "CODE - Austin Dixon&#x27;s Scifi Workshop",
+      "url": "https://austindixon.com/code/",
+      "snippet": "Microcontroller Pipboy Mini R.O.B. Robot Controller Mailbox_Notifier Ultrasonic-Proximity-Detector AI pi_voice_assistant Games Robo"
+    }
+  ]
+}

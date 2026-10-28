@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "yuxuanw8/qwen3b-racpo-v35-hotpot-rho1.0-checkpoint-252",
+  "slug": "yuxuanw8-qwen3b-racpo-v35-hotpot-rho1-0-checkpoint-252",
+  "author": "yuxuanw8",
+  "url": "https://huggingface.co/yuxuanw8/qwen3b-racpo-v35-hotpot-rho1.0-checkpoint-252",
+  "created_at": "2026-10-28T01:25:02.000Z",
+  "updated_at": "2026-10-28T01:26:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 12355225928,
+  "storage_human": "12.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yuxuanw8/qwen3b-racpo-v35-hotpot-rho1.0-final · Hugging Face",
+      "url": "https://huggingface.co/yuxuanw8/qwen3b-racpo-v35-hotpot-rho1.0-final",
+      "snippet": "Instructions to use yuxuanw8/qwen3b-racpo-v35-hotpot-rho1.-final with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "qwen3b-racpo-v35-hotpot-rho1.0-checkpoint-120 - friendli.ai",
+      "url": "https://friendli.ai/models/yuxuanw8/qwen3b-racpo-v35-hotpot-rho1.0-checkpoint-120",
+      "snippet": "Deploy qwen3b-racpo-v35-hotpot-rho1.-checkpoint-120 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "yuxuanw8/qwen3b-racpo-v3-hotpot-final · Hugging Face",
+      "url": "https://huggingface.co/yuxuanw8/qwen3b-racpo-v3-hotpot-final",
+      "snippet": "Instructions to use yuxuanw8/qwen3b-racpo-v3-hotpot-final with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use yuxuanw8/qwen3b-racpo-v3-hotpot-final with Transformers:"
+    },
+    {
+      "title": "Qwen3b Racpo V35 Hotpot Rho1.0 Final - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/yuxuanw8/qwen3b-racpo-v35-hotpot-rho1.0-final",
+      "snippet": "Registry entry for model Qwen3b Racpo V35 Hotpot Rho1.0 Final; source metadata pending."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    }
+  ]
+}

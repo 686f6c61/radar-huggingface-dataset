@@ -30,12 +30,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 17,
   "trending_score": 0,
   "parameters": 4539265536,
   "parameters_human": "4.54B",
-  "storage_bytes": 4040659158,
-  "storage_human": "4.0 GB",
+  "storage_bytes": 7827309598,
+  "storage_human": "7.8 GB",
   "base_model": "scienceverse/bibr-extract-qwen35-4b",
   "formats": [
     "safetensors"

@@ -4,8 +4,8 @@
   "slug": "taurusduan-swift-1-5-qwen3-8-flash-next-gsq-rco-gguf",
   "author": "taurusduan",
   "url": "https://huggingface.co/taurusduan/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
-  "created_at": "2026-09-30T10:13:47.000Z",
-  "updated_at": "2026-09-30T10:13:47.000Z",
+  "created_at": "2026-10-27T09:42:52.000Z",
+  "updated_at": "2026-10-27T09:42:52.000Z",
   "license": "swift-open-license-1.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -33,13 +33,13 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 3,
-  "downloads_30d": 7076,
+  "likes": 0,
+  "downloads_30d": 7108,
   "trending_score": 0,
   "parameters": 176943899520,
   "parameters_human": "176.94B",
-  "storage_bytes": 212200792228,
-  "storage_human": "212.2 GB",
+  "storage_bytes": 295959437494,
+  "storage_human": "296.0 GB",
   "base_model": "ukisai/Swift-Qwen3.8-Flash-Next",
   "formats": [
     "gguf"

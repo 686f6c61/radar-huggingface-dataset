@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "minhquanbt/VietFin-PhoGPT-4B-CPT",
+  "slug": "minhquanbt-vietfin-phogpt-4b-cpt",
+  "author": "minhquanbt",
+  "url": "https://huggingface.co/minhquanbt/VietFin-PhoGPT-4B-CPT",
+  "created_at": "2026-10-24T07:03:15.000Z",
+  "updated_at": "2026-10-28T02:26:35.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "transformers",
+    "vietnamese",
+    "finance",
+    "financial-nlp",
+    "continued-pretraining",
+    "domain-adaptation",
+    "causal-lm",
+    "phogpt",
+    "text-generation",
+    "vi",
+    "base_model:vinai/PhoGPT-4B",
+    "base_model:finetune:vinai/PhoGPT-4B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 237329307649,
+  "storage_human": "237.3 GB",
+  "base_model": "vinai/PhoGPT-4B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Side Effects - Act II [Relapse] (Available Now)",
+      "url": "https://kingcrescente.itch.io/side-effects-act-i/devlog/1487304/side-effects-act-ii-relapse-available-now",
+      "snippet": "Act II of Side Effects is out! Lex's story continues with hyper pregnancy, breast expansion, lactation and a sprinkle of ass expansion. …"
+    },
+    {
+      "title": "Comments - Side Effects - Act II by King Crescente",
+      "url": "https://kingcrescente.itch.io/side-effects-act-ii/comments",
+      "snippet": "just one question will all of the side effects VN go on here at somepoint or are they only allowed on patrion after this one"
+    },
+    {
+      "title": "Side Effects - Act II [Relapse] by KingCrescente on DeviantArt",
+      "url": "https://www.deviantart.com/kingcrescente/art/Side-Effects-Act-II-Relapse-1321172964",
+      "snippet": "Apr 13, 2026 · Side Effects - Act II [Relapse] — a video by KingCrescente on DeviantArt. Act II of Side Effects is out! Lex's story …"
+    },
+    {
+      "title": "Side Effects - King Crescente",
+      "url": "https://kingcrescente.com/games/side-effects-vn",
+      "snippet": "Login 2 Act II - Relapse Nine days of silence. Then a text from a new number. She managed to get small again. However, her body …"
+    },
+    {
+      "title": "Reviews of Side Effects: Relapse[Act II] [KingCrescente]",
+      "url": "https://f95zone.to/threads/side-effects-relapse-act-ii-kingcrescente.293244/reviews/",
+      "snippet": "MC drugs a chick he has a crush on and she grows, it's like a 5 minute read. Helpful?Yes · 0No · 0 Older versions2 reviews Version …"
+    }
+  ]
+}

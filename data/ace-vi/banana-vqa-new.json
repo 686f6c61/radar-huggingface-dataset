@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Ace-VI/banana-vqa-new",
+  "slug": "ace-vi-banana-vqa-new",
+  "author": "Ace-VI",
+  "url": "https://huggingface.co/Ace-VI/banana-vqa-new",
+  "created_at": "2026-10-28T02:17:47.000Z",
+  "updated_at": "2026-10-28T02:18:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Salesforce/blip-vqa-base",
+    "lora",
+    "transformers",
+    "arxiv:1910.09700",
+    "base_model:Salesforce/blip-vqa-base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9466776,
+  "storage_human": "9 MB",
+  "base_model": "Salesforce/blip-vqa-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "L'efficacité du mouvement industriel | ACE - Automatismes du Centre Est",
+      "url": "https://www.acefrance.com/",
+      "snippet": "Fondée en 1973, ACE a su s’adapter aux exigences des marchés et devenir force de propositions sur les avancées technologiques …"
+    },
+    {
+      "title": "ACE Hôtel, des chambres tout confort au meilleur tarif garanti",
+      "url": "https://www.ace-hotel.com/fr/",
+      "snippet": "Retrouvez tous les hôtels ACE. Plus qu'une chaîne hôtelière, ACE Hôtel est un espace dédié à votre bien-être et à votre confort, …"
+    },
+    {
+      "title": "Ace Mobile",
+      "url": "https://www.acemobile.fr/",
+      "snippet": "Plus rapide. Plus puissant. Merci pour votre confiance et votre fidélité. Les Smartphone AceMobile seront sans aucun doute votre …"
+    },
+    {
+      "title": "Antigène carcino-embryonnaire : dosage sanguin et résultats",
+      "url": "https://www.doctissimo.fr/html/sante/analyses/ana_marqueur04.htm",
+      "snippet": "Jan 2, 2026 · Découvert pour la première en 1965, l’antigène carcino-embryonnaire peut être le signe d’une tumeur cancéreuse s’il …"
+    },
+    {
+      "title": "Nos hôtels | ACE Hôtel",
+      "url": "https://www.ace-hotel.com/fr/hotels/",
+      "snippet": "Plus qu'une chaîne hôtelière, ACE Hôtel est un espace dédié à votre bien-être et à votre confort, fidèle à la tradition d'accueil et de …"
+    }
+  ]
+}

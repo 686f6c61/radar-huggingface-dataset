@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "fecasado/giava-kitchen-burger-multi",
+  "slug": "fecasado-giava-kitchen-burger-multi",
+  "author": "fecasado",
+  "url": "https://huggingface.co/fecasado/giava-kitchen-burger-multi",
+  "created_at": "2026-10-28T01:29:50.000Z",
+  "updated_at": "2026-10-28T01:30:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "gaze_flow_matching",
+    "dataset:fecasado/burger-to-plate-good-320x240",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 235899950,
+  "parameters_human": "235.9M",
+  "storage_bytes": 943686904,
+  "storage_human": "944 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fecasado/giava-kitchen-burger-fpv · Hugging Face",
+      "url": "https://huggingface.co/fecasado/giava-kitchen-burger-fpv",
+      "snippet": "Instructions to use fecasado/giava-kitchen-burger-fpv with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use fecasado/giava-kitchen-burger-fpv with LeRobot:"
+    },
+    {
+      "title": "fecasado/gfm-kitchen-burger-23a · Hugging Face",
+      "url": "https://huggingface.co/fecasado/gfm-kitchen-burger-23a",
+      "snippet": "Instructions to use fecasado/gfm-kitchen-burger-23a with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use fecasado/gfm-kitchen-burger-23a with LeRobot: Notebooks Google Colab Kaggle Model Card for gaze_flow_matching How to Get Started with the Model Train from scratch"
+    },
+    {
+      "title": "Stanford Researchers Use AI to Engineer Personalized Burgers They Say ...",
+      "url": "https://political.org/2026/07/07/stanford-researchers-use-ai-to-engineer-personalized-burgers-they-say-rival-the-big-mac-in-taste/",
+      "snippet": "Key Facts Stanford University researchers trained an AI system to formulate burger recipes customized by age, individual taste profiles, and nutritional needs. The researchers claim the AI-generated burgers not only meet healthier nutritional benchmarks but also match or exceed the taste of a McDonald&#x27;s Big Mac in testing. The AI tool was designed to account for variables such as fat content ..."
+    },
+    {
+      "title": "Stanford&#x27;s BurgerAI Designs Healthier, Eco-Friendly Burgers With AI ...",
+      "url": "https://vgtimes.com/tech-and-hardware/159333-stanfords-burgerai-designs-healthier-eco-friendly-burgers-with-ai-generated-recipes.html",
+      "snippet": "Stanford University researchers have unveiled BurgerAI, a generative AI system that invents new burger recipes optimized for taste, nutrition, sustainability, and cost. Unlike traditional recommendation engines, BurgerAI creates entirely new recipes from scratch, balancing a range of requirements from flavor to environmental impact."
+    },
+    {
+      "title": "Stanford&#x27;s AI-designed burgers could advance healthier, more ...",
+      "url": "https://www.earth.com/lifestyle/stanfords-ai-designed-burgers-could-advance-healthier-more-sustainable-food/",
+      "snippet": "June 30, 2026 Stanford&#x27;s AI-designed burgers could advance healthier, more sustainable food Stanford researchers built BurgerAI to design burgers optimized for taste, health, and sustainability using a new form of generative AI."
+    }
+  ]
+}

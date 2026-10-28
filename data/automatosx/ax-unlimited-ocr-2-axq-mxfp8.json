@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "AutomatosX/AX-Unlimited-OCR-2-AXQ-MXFP8",
+  "slug": "automatosx-ax-unlimited-ocr-2-axq-mxfp8",
+  "author": "AutomatosX",
+  "url": "https://huggingface.co/AutomatosX/AX-Unlimited-OCR-2-AXQ-MXFP8",
+  "created_at": "2026-10-28T01:14:12.000Z",
+  "updated_at": "2026-10-28T01:14:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "safetensors",
+    "unlimited-ocr",
+    "axquant",
+    "mxfp8",
+    "reference-storage",
+    "runtime-unsupported",
+    "ocr",
+    "custom_code",
+    "multilingual",
+    "base_model:baidu/Unlimited-OCR-2",
+    "base_model:quantized:baidu/Unlimited-OCR-2",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3343978497,
+  "parameters_human": "3.34B",
+  "storage_bytes": 4167056702,
+  "storage_human": "4.2 GB",
+  "base_model": "baidu/Unlimited-OCR-2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Unlimited-OCR - a AutomatosX Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/AutomatosX/unlimited-ocr",
+      "snippet": "Unlimited-OCR 3B MoE: native AXQ CUDA NVFP4 and MLX MXFP8/MXFP4 packs."
+    },
+    {
+      "title": "OCR - a AutomatosX Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/AutomatosX/ocr",
+      "snippet": "Unlimited-OCR (MLX MXFP8 and CUDA AWQ) plus DeepSeek-OCR-2 AXQ."
+    },
+    {
+      "title": "GitHub - baidu/Unlimited-OCR: Unlimited OCR Works: Welcome the Era of ...",
+      "url": "https://github.com/baidu/Unlimited-OCR",
+      "snippet": "It is now available at Hugging Face Spaces. [2026/06/23] 📄 Our paper is now available on arXiv. [2026/06/23] 🤝 Thanks to the ModelScope community for their support. Our model is now available at ModelScope. [2026/06/22] 🚀 We present Unlimited-OCR, aiming to push Deepseek-OCR one step further."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, DeepSeek, Qwen, Mistral, Z.ai, Meta, and important open-weight model families."
+    },
+    {
+      "title": "Unlimited-OCR-2: Baidu&#x27;s 3B MIT OCR Model, How to Run It - explainx.ai",
+      "url": "https://explainx.ai/blog/baidu-unlimited-ocr-2-sr-swa-3b-mit-hundred-page-document-parsing-how-to-run-2026",
+      "snippet": "Baidu Unlimited-OCR-2 is a 3B MIT OCR model that parses whole documents in one pass with SR-SWA. Setup, what is new vs v1, and what is unverified."
+    }
+  ]
+}

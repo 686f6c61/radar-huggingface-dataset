@@ -5,7 +5,7 @@
   "author": "canvit",
   "url": "https://huggingface.co/canvit/canvitb16-add-vpe-pretrain-g128px-s512px-in21k-dv3b16-2026-02-02-c64-onnx-fp32",
   "created_at": "2026-10-01T22:37:14.000Z",
-  "updated_at": "2026-10-01T22:37:19.000Z",
+  "updated_at": "2026-10-27T04:30:03.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-feature-extraction",

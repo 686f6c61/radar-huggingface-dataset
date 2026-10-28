@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Iceblue2026/pp-ocrv6-onnx",
+  "slug": "iceblue2026-pp-ocrv6-onnx",
+  "author": "Iceblue2026",
+  "url": "https://huggingface.co/Iceblue2026/pp-ocrv6-onnx",
+  "created_at": "2026-10-28T02:28:08.000Z",
+  "updated_at": "2026-10-28T02:32:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 183682596,
+  "storage_human": "184 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - AIwork4me/ppocrv6_onnx",
+      "url": "https://github.com/AIwork4me/ppocrv6_onnx",
+      "snippet": "If all you need is PP-OCRv6 inference with ONNX Runtime, you shouldn&#x27;t have to install the entire Paddle ecosystem. This repo gives you a single-file, drop-in module that matches PaddleX output bit-for-bit on the same ONNX Runtime backend — while being 3× faster than PaddlePaddle native inference."
+    },
+    {
+      "title": "PP-OCRv6 Small ONNX Tutorial: Fast Text Recognition — AI Tutorial",
+      "url": "https://aiindigo.com/tutorials/getting-started-with-pp-ocrv6-small-fast-framework-agnostic-text-recognition",
+      "snippet": "Deploy PP-OCRv6 Small Recognition ONNX model. Learn fast setup, inference code, and optimization tips for efficient OCR pipelines in 2026."
+    },
+    {
+      "title": "ppocrv6_onnx/README.md at main · AIwork4me/ppocrv6_onnx",
+      "url": "https://github.com/AIwork4me/ppocrv6_onnx/blob/main/README.md",
+      "snippet": "PaddleX works great — but it pulls in a 2 GB+ dependency chain (PaddlePaddle + dozens of packages). If all you need is PP-OCRv6 inference with ONNX Runtime, you shouldn&#x27;t have to install the entire Paddle ecosystem. This repo gives you a single-file, drop-in module that matches PaddleX output bit-for-bit on the same ONNX Runtime backend — while being 3× faster than PaddlePaddle native ..."
+    },
+    {
+      "title": "PaddlePaddle/PP-OCRv6_medium_det_onnx · Hugging Face",
+      "url": "https://huggingface.co/PaddlePaddle/PP-OCRv6_medium_det_onnx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "PP-OCRv6 - a PaddlePaddle Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/PaddlePaddle/pp-ocrv6",
+      "snippet": "From 1.5M to 34.5M Parameters, Surpassing Billion-Scale VLMs on OCR Tasks"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "axteam/MiniCPM-o-4_5-FP8-dynamic",
+  "slug": "axteam-minicpm-o-4_5-fp8-dynamic",
+  "author": "axteam",
+  "url": "https://huggingface.co/axteam/MiniCPM-o-4_5-FP8-dynamic",
+  "created_at": "2026-10-28T01:11:44.000Z",
+  "updated_at": "2026-10-28T01:15:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "minicpmo",
+    "feature-extraction",
+    "minicpm",
+    "compressed-tensors",
+    "vllm",
+    "quantized",
+    "fp8",
+    "any-to-any",
+    "custom_code",
+    "base_model:openbmb/MiniCPM-o-4_5",
+    "base_model:quantized:openbmb/MiniCPM-o-4_5",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9371787666,
+  "parameters_human": "9.37B",
+  "storage_bytes": 12457939676,
+  "storage_human": "12.5 GB",
+  "base_model": "openbmb/MiniCPM-o-4_5",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, DeepSeek, Qwen, Mistral, Z.ai, Meta, and important open-weight model families."
+    },
+    {
+      "title": "MiniCPM-o 4.5: Omni-Modal Interaction AI - emergentmind.com",
+      "url": "https://www.emergentmind.com/topics/minicpm-o-4-5",
+      "snippet": "The paper introduces a 9-billion parameter model integrating a streaming visual encoder, audio encoder, and LLM backbone with token-level hidden state fusion. MiniCPM-o 4.5 is defined as an omni-modal foundation model that enables real-time, full-duplex interactions across vision, audio, text, and speech with proactive behavior mechanisms. It employs the novel Omni-Flow streaming architecture ..."
+    },
+    {
+      "title": "MiniCPM-o 4.5: 9B Vision, Audio, and Speech Model - LearnOpenCV",
+      "url": "https://learnopencv.com/minicpm-o-4-5-a-9b-model-that-can-see-hear-and-speak-at-the-same-time/",
+      "snippet": "MiniCPM-o 4.5 is a 9B open-source model that can see, hear, and speak simultaneously. We test its full-duplex Omni-Flow streaming on real-world videos."
+    },
+    {
+      "title": "openbmb/MiniCPM-V-4_5 · Hugging Face",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4_5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "axteam/MiniCPM5-2B-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/axteam/MiniCPM5-2B-NVFP4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

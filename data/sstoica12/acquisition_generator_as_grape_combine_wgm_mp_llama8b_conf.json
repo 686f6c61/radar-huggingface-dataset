@@ -5,7 +5,7 @@
   "author": "sstoica12",
   "url": "https://huggingface.co/sstoica12/acquisition_generator_AS_grape_combine_WGM_MP_llama8b_conf",
   "created_at": "2026-10-26T01:35:57.000Z",
-  "updated_at": "2026-10-26T01:40:24.000Z",
+  "updated_at": "2026-10-28T01:50:16.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -23,12 +23,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 189,
+  "downloads_30d": 226,
   "trending_score": 0,
   "parameters": 14770033664,
   "parameters_human": "14.77B",
-  "storage_bytes": 59091622760,
-  "storage_human": "59.1 GB",
+  "storage_bytes": 177252024488,
+  "storage_human": "177.3 GB",
   "base_model": null,
   "formats": [
     "safetensors"

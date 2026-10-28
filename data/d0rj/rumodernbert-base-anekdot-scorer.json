@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "d0rj/RuModernBERT-base-anekdot-scorer",
+  "slug": "d0rj-rumodernbert-base-anekdot-scorer",
+  "author": "d0rj",
+  "url": "https://huggingface.co/d0rj/RuModernBERT-base-anekdot-scorer",
+  "created_at": "2026-10-28T10:49:31.000Z",
+  "updated_at": "2026-10-28T10:53:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "text-classification",
+    "humor",
+    "regression",
+    "custom_code",
+    "ru",
+    "dataset:d0rj/anekdot",
+    "base_model:deepvk/RuModernBERT-base",
+    "base_model:finetune:deepvk/RuModernBERT-base",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149015041,
+  "parameters_human": "149.0M",
+  "storage_bytes": 596074412,
+  "storage_human": "596 MB",
+  "base_model": "deepvk/RuModernBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Vote-based joke scoring",
+      "dataset": "anekdot (anekdots)",
+      "metric": "Spearman",
+      "value": 0.4933072017335307
+    },
+    {
+      "task": "Vote-based joke scoring",
+      "dataset": "anekdot (anekdots)",
+      "metric": "BCE",
+      "value": 0.6686274046524433
+    },
+    {
+      "task": "Vote-based joke scoring",
+      "dataset": "anekdot (anekdots)",
+      "metric": "MAE",
+      "value": 0.1343448531671877
+    },
+    {
+      "task": "Vote-based joke scoring",
+      "dataset": "anekdot (anekdots)",
+      "metric": "RMSE",
+      "value": 0.16664700623068276
+    }
+  ],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "davidheineman",
   "url": "https://huggingface.co/davidheineman/rlve-archive-mopd-v2-qwen-n8-rl-20261003-115039-n8-v2-fc2920ccc9eb",
   "created_at": "2026-10-05T16:12:57.000Z",
-  "updated_at": "2026-10-05T16:16:56.000Z",
+  "updated_at": "2026-10-27T08:24:06.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -15,7 +15,7 @@
     "safetensors",
     "qwen2",
     "rlve",
-    "scratch-archive",
+    "checkpoint-archive",
     "region:us"
   ],
   "likes": 0,

@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "id": "LiquidAI/d1-Omni-2B-ONNX",
+  "slug": "liquidai-d1-omni-2b-onnx",
+  "author": "LiquidAI",
+  "url": "https://huggingface.co/LiquidAI/d1-Omni-2B-ONNX",
+  "created_at": "2026-10-27T11:40:16.000Z",
+  "updated_at": "2026-10-28T02:25:59.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "audio-text-to-text",
+  "library": "onnxruntime",
+  "languages": [
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "it",
+    "ja",
+    "ko",
+    "pt",
+    "es",
+    "vi",
+    "th",
+    "id",
+    "hi",
+    "ru",
+    "pl"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "lfm3_omni",
+    "liquid",
+    "lfm3",
+    "audio-text-to-text",
+    "custom_code",
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "it",
+    "ja",
+    "ko",
+    "pt",
+    "es",
+    "vi",
+    "th",
+    "id",
+    "hi",
+    "ru",
+    "pl",
+    "base_model:LiquidAI/d1-Omni-2B",
+    "base_model:quantized:LiquidAI/d1-Omni-2B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 31,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20085687980,
+  "storage_human": "20.1 GB",
+  "base_model": "LiquidAI/d1-Omni-2B",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Liquid AI | Device-native foundation models.",
+      "url": "https://www.liquid.ai/",
+      "snippet": "Liquid AI builds efficient Liquid Foundation Models (LFMs) for on-device, edge, and cloud AI with low latency, privacy, and hardware …"
+    },
+    {
+      "title": "Liquid Foundation Models | Liquid AI",
+      "url": "https://www.liquid.ai/models",
+      "snippet": "Explore Liquid Foundation Models (LFMs): efficient text, vision, audio, and nano models built for on-device, edge, and cloud AI …"
+    },
+    {
+      "title": "LiquidAI (Liquid AI) - Hugging Face",
+      "url": "https://huggingface.co/LiquidAI",
+      "snippet": "LiquidAI/LFM2.5-230M Text Generation • 0.2B • Updated Aug 19 • 44.4k • 317 LiquidAI/LFM2.5-8B-A1B Text Generation • 8B • …"
+    },
+    {
+      "title": "Liquid Ai – Next Gen AI Applications",
+      "url": "https://liquidai.net/",
+      "snippet": "We are researching and developing tools that leverage artificial intelligence to improve creative workflows."
+    },
+    {
+      "title": "Liquid AI - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Liquid_AI",
+      "snippet": "Liquid AI is an American artificial intelligence company, an MIT spin-off, that develops liquid foundation models running directly on …"
+    }
+  ]
+}

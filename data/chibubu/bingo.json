@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "chibubu/bingo",
+  "slug": "chibubu-bingo",
+  "author": "chibubu",
+  "url": "https://huggingface.co/chibubu/bingo",
+  "created_at": "2026-10-28T01:49:18.000Z",
+  "updated_at": "2026-10-28T02:00:57.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "video-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "audiovisualflamingo",
+    "text-generation",
+    "audio",
+    "video",
+    "image",
+    "audio-visual",
+    "multimodal",
+    "reasoning",
+    "video understanding",
+    "long-video",
+    "audio understanding",
+    "ASR",
+    "timestamp-grounding",
+    "instruction-tuned",
+    "dynamic-s2",
+    "CRTE",
+    "TAVIT",
+    "video-text-to-text",
+    "en",
+    "dataset:nvidia/AV-Skills",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8742888688,
+  "parameters_human": "8.74B",
+  "storage_bytes": 17498637371,
+  "storage_human": "17.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "chibubu/bingo · Hugging Face",
+      "url": "https://huggingface.co/chibubu/bingo",
+      "snippet": "The model and associated assets are released for non-commercial research use only, and downstream users are responsible for applying appropriate safeguards, privacy controls, and domain-specific evaluation. Please report security vulnerabilities or NVIDIA AI concerns through NVIDIA&#x27;s vulnerability disclosure channel."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Bingo AI Models (4) | Civitai",
+      "url": "https://civitai.com/tag/bingo",
+      "snippet": "Browse 4 AI models tagged \"Bingo\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    },
+    {
+      "title": "Medium",
+      "url": "https://medium.com/@techlatest.net/top-5-best-open-source-ai-image-generation-models-in-2026-tested-37c326e7c3b6",
+      "snippet": "Medium"
+    },
+    {
+      "title": "GitHub - SalesforceAIResearch/BingoGuard",
+      "url": "https://github.com/SalesforceAIResearch/BingoGuard",
+      "snippet": "We strongly recommend users evaluate and address potential concerns related to accuracy, safety, and fairness before deploying this model. We encourage users to consider the common limitations of AI, comply with applicable laws, and leverage best practices when selecting use cases, particularly for high-risk scenarios where errors or misuse ..."
+    }
+  ]
+}

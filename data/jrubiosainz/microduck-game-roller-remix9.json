@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "jrubiosainz/microduck-game-roller-remix9",
+  "slug": "jrubiosainz-microduck-game-roller-remix9",
+  "author": "jrubiosainz",
+  "url": "https://huggingface.co/jrubiosainz/microduck-game-roller-remix9",
+  "created_at": "2026-10-28T02:15:33.000Z",
+  "updated_at": "2026-10-28T02:15:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "base_model:rumezhak/microduck-roller-remix-leader",
+    "base_model:finetune:rumezhak/microduck-roller-remix-leader",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 925260,
+  "storage_human": "925260 B",
+  "base_model": "rumezhak/microduck-roller-remix-leader",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Paul Thek - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Paul_Thek",
+      "snippet": "The figure in Thek's Tomb was popularly associated with the American hippie movement and has often been mistitled as Death of a …"
+    },
+    {
+      "title": "Paul Thek, The Tomb, 1967 | Whitney Museum of American Art",
+      "url": "https://whitney.org/media/601",
+      "snippet": "Oct 19, 2010 · Critics celebrated Thek’s Hippie as a masterwork of American sculpture, and it was exhibited at museums throughout …"
+    },
+    {
+      "title": "Paul Thek with Effigy of a Dead Hippie, Stable Gallery",
+      "url": "https://www.getty.edu/art/collection/object/1096HN",
+      "snippet": "Paul Thek sits next to an effigy representing a dead hippie."
+    },
+    {
+      "title": "Biopolitical Effigies: The Volatile Life-Cast in the Work of Paul Thek ...",
+      "url": "https://www.tate.org.uk/research/tate-papers/24/biopolitical-effigies-paul-thek-and-lynn-hershman-leeson",
+      "snippet": "In the late 1960s and early 1970s American artists Paul Thek and Lynn Hershman Leeson independently created wax effigies and …"
+    },
+    {
+      "title": "PAUL THEK: REAL MISUNDERSTANDING - Artforum",
+      "url": "https://www.artforum.com/features/paul-thek-real-misunderstanding-208527/",
+      "snippet": "Thek’s final, American-produced sculpture of the period, The Tomb—Death of a Hippie (on which Neil Jenney worked as his …"
+    }
+  ]
+}

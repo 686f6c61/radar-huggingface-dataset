@@ -5,7 +5,7 @@
   "author": "ljhunt",
   "url": "https://huggingface.co/ljhunt/nla-qwen25-15b-p36",
   "created_at": "2026-10-23T18:03:38.000Z",
-  "updated_at": "2026-10-26T19:13:03.000Z",
+  "updated_at": "2026-10-27T16:35:08.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,8 +20,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 214843665613,
-  "storage_human": "214.8 GB",
+  "storage_bytes": 262904907387,
+  "storage_human": "262.9 GB",
   "base_model": null,
   "formats": [
     "safetensors"

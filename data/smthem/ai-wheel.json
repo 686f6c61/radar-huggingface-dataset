@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "smthem/AI-wheel",
+  "slug": "smthem-ai-wheel",
+  "author": "smthem",
+  "url": "https://huggingface.co/smthem/AI-wheel",
+  "created_at": "2026-10-28T02:16:48.000Z",
+  "updated_at": "2026-10-28T02:33:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1691304917,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, DeepSeek, Qwen, Mistral, Z.ai, Meta, and important open-weight model families."
+    },
+    {
+      "title": "smthem/TRELLIS.2-Wheels · Hugging Face",
+      "url": "https://huggingface.co/smthem/TRELLIS.2-Wheels",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "thewheelai.com",
+      "url": "https://thewheelai.com/ai-tools/vehicle-modification-ai/wheels",
+      "snippet": "AI Wheel Designer - Transform Your Vehicle Wheels Design custom wheels for your vehicle with AI. Try different rim styles, sizes, and finishes for the perfect look."
+    },
+    {
+      "title": "README.md · smthem/TRELLIS.2-Wheels at main - Hugging Face",
+      "url": "https://huggingface.co/smthem/TRELLIS.2-Wheels/blob/main/README.md",
+      "snippet": "TRELLIS.2-Wheels like 0 License: mit Model card Files Files and versions xet Community main"
+    },
+    {
+      "title": "We&#x27;re announcing Genie 4, our new world model for real-time interactive ...",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-genie-4/",
+      "snippet": "Today, we&#x27;re announcing our research on Genie 4, our new world model that brings unprecedented realism and native audio to real-time interactive simulation. The Genie 4 model incorporates and builds on capabilities from the Gemini family: Gemini Omni anchors simulations in real-world appearance ..."
+    }
+  ]
+}

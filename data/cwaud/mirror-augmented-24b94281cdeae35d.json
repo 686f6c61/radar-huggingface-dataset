@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "cwaud/mirror-augmented-24b94281cdeae35d",
+  "slug": "cwaud-mirror-augmented-24b94281cdeae35d",
+  "author": "cwaud",
+  "url": "https://huggingface.co/cwaud/mirror-augmented-24b94281cdeae35d",
+  "created_at": "2026-10-28T11:05:27.000Z",
+  "updated_at": "2026-10-28T11:08:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "falcon_h1",
+    "text-generation",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3149387264,
+  "parameters_human": "3.15B",
+  "storage_bytes": 6298836008,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

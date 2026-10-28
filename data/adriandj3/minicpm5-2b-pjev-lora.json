@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "adriandj3/MiniCPM5-2B-pjev-LoRA",
+  "slug": "adriandj3-minicpm5-2b-pjev-lora",
+  "author": "adriandj3",
+  "url": "https://huggingface.co/adriandj3/MiniCPM5-2B-pjev-LoRA",
+  "created_at": "2026-10-03T03:33:18.000Z",
+  "updated_at": "2026-10-28T02:27:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "lora",
+    "llama.cpp",
+    "decision-model",
+    "system-one",
+    "multiple-choice",
+    "agents",
+    "minicpm5",
+    "calibrated",
+    "tool-routing",
+    "local-ai",
+    "text-classification",
+    "en",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:adapter:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 118,
+  "trending_score": 0,
+  "parameters": 100466688,
+  "parameters_human": "100.5M",
+  "storage_bytes": 402093127,
+  "storage_human": "402 MB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "adriandj3/MiniCPM5-2B-pjev-LoRA · Hugging Face",
+      "url": "https://huggingface.co/adriandj3/MiniCPM5-2B-pjev-LoRA",
+      "snippet": "A one-token decision model you can switch on per request, on the MiniCPM5-2B server you already run. Kailune-AI/pjev-2b is a strong typed-decision model: give it a state, a question and lettered options, and it returns a calibrated probability for every option in a single forward pass. It ships as a ..."
+    },
+    {
+      "title": "Minicpm5 2b Pjev Lora - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/adriandj3/minicpm5-2b-pjev-lora",
+      "snippet": "Registry entry for model Minicpm5 2b Pjev Lora; source metadata pending."
+    },
+    {
+      "title": "MiniCPM5-2B-pjev-LoRA API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/adriandj3/MiniCPM5-2B-pjev-LoRA",
+      "snippet": "Run MiniCPM5-2B-pjev-LoRA with FriendliAI inference. A one-token decision model you can switch on per request, on the MiniCPM5-2B server you already run."
+    },
+    {
+      "title": "MiniCPM5-2B-pjev-LoRA — Pricing, Accuracy & Calibration",
+      "url": "https://metatext.io/decision-models/minicpm5-2b-pjev-lora",
+      "snippet": "MiniCPM5-2B-pjev-LoRA by adriandj3 is a decision model: it answers typed questions with a probability for each allowed answer instead of generating text."
+    },
+    {
+      "title": "GitHub - OpenBMB/MiniCPM: MiniCPM5: SOTA on-device LLMs, small yet ...",
+      "url": "https://github.com/OpenBMB/MiniCPM",
+      "snippet": "We are releasing MiniCPM5-2B, the second model in the MiniCPM5 series, following MiniCPM5-1B. It is a dense 2B Transformer that scales up the same training recipe, built for on-device, local deployment, and resource-constrained scenarios, reaching 2B-class open-source SOTA."
+    }
+  ]
+}

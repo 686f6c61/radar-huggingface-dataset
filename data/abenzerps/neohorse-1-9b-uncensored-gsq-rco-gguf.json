@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "abenzerps/NeoHorse-1-9B-Uncensored-GSQ-RCO-GGUF",
+  "slug": "abenzerps-neohorse-1-9b-uncensored-gsq-rco-gguf",
+  "author": "abenzerps",
+  "url": "https://huggingface.co/abenzerps/NeoHorse-1-9B-Uncensored-GSQ-RCO-GGUF",
+  "created_at": "2026-10-23T08:35:29.000Z",
+  "updated_at": "2026-10-25T17:02:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "gsq",
+    "rco",
+    "llama.cpp",
+    "quantized",
+    "reasoning",
+    "uncensored",
+    "neohorse",
+    "mixed-precision",
+    "qwen3.5",
+    "en",
+    "base_model:TokenRhythm/NeoHorse-1-9B",
+    "base_model:quantized:TokenRhythm/NeoHorse-1-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 13,
+  "downloads_30d": 3740,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 19361248096,
+  "storage_human": "19.4 GB",
+  "base_model": "TokenRhythm/NeoHorse-1-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

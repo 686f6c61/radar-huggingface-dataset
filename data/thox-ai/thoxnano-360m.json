@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Thox-ai/ThoxNano-360M",
+  "slug": "thox-ai-thoxnano-360m",
+  "author": "Thox-ai",
+  "url": "https://huggingface.co/Thox-ai/ThoxNano-360M",
+  "created_at": "2026-08-11T11:17:47.000Z",
+  "updated_at": "2026-10-28T09:47:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "safetensors",
+    "llama",
+    "thox",
+    "on-device",
+    "edge",
+    "trl",
+    "sft",
+    "thoxos",
+    "meshstack",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:HuggingFaceTB/SmolLM-360M",
+    "base_model:finetune:HuggingFaceTB/SmolLM-360M",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 177,
+  "trending_score": 0,
+  "parameters": 361821120,
+  "parameters_human": "361.8M",
+  "storage_bytes": 2982794848,
+  "storage_human": "3.0 GB",
+  "base_model": "HuggingFaceTB/SmolLM-360M",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Thox-ai/ThoxNano-360M · Hugging Face",
+      "url": "https://huggingface.co/Thox-ai/ThoxNano-360M",
+      "snippet": "Thox-ai / ThoxNano-360M like 0 Follow THOX.ai LLC 8 Text Generation Safetensors GGUF llama thox on-device edge ThoxClip trl sft License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "ThoxNano-360M — LLM for Writing | GenAiHub",
+      "url": "https://genaihub.net/agents/hf-model-thox-ai-thoxnano-360m",
+      "snippet": "Description ThoxNano-360M is an open-weight text-generation model with roughly 360M parameters published by Thox-ai on the Hugging Face Hub. It has 244 downloads."
+    },
+    {
+      "title": "Thox-ai/thoxnano-360m - ollama.com",
+      "url": "https://ollama.com/Thox-ai/thoxnano-360m",
+      "snippet": "Get up and running with large language models."
+    },
+    {
+      "title": "Thox-ai/README · Hugging Face",
+      "url": "https://huggingface.co/Thox-ai/README",
+      "snippet": "Thox-ai / README like 0 Follow THOX.ai LLC 5 Model card FilesFiles and versions xet Community Copy to bucket new THOX.ai - On-Device Intelligence Model families Device tie-in Related Status Legal"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=thox",
+      "snippet": "Thox-ai/ThoxSpeech-ASR-BitNet Automatic Speech Recognition • 2B•Updated Aug 11• 65"
+    }
+  ]
+}

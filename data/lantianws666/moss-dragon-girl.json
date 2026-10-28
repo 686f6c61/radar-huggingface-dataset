@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "lantianws666/moss-dragon-girl",
+  "slug": "lantianws666-moss-dragon-girl",
+  "author": "lantianws666",
+  "url": "https://huggingface.co/lantianws666/moss-dragon-girl",
+  "created_at": "2026-10-28T10:33:27.000Z",
+  "updated_at": "2026-10-28T10:34:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "moss-image",
+    "character",
+    "anime",
+    "base_model:OpenMOSS-Team/MOSS-Image-Base",
+    "base_model:adapter:OpenMOSS-Team/MOSS-Image-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 149002148,
+  "storage_human": "149 MB",
+  "base_model": "OpenMOSS-Team/MOSS-Image-Base",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

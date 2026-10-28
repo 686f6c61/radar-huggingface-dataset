@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Ineeoluwa/scenetrace-router-135m",
+  "slug": "ineeoluwa-scenetrace-router-135m",
+  "author": "Ineeoluwa",
+  "url": "https://huggingface.co/Ineeoluwa/scenetrace-router-135m",
+  "created_at": "2026-10-28T01:39:11.000Z",
+  "updated_at": "2026-10-28T01:39:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "tool-use",
+    "grpo",
+    "reinforcement-learning",
+    "scenetrace",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:HuggingFaceTB/SmolLM2-135M-Instruct",
+    "base_model:adapter:HuggingFaceTB/SmolLM2-135M-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3717552,
+  "storage_human": "4 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-135M-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A curated list of awesome LLM/AI model routing frameworks ... - GitHub",
+      "url": "https://github.com/yenanjing/awesome-model-routing",
+      "snippet": "Model routing is a critical infrastructure pattern for modern AI applications. It encompasses intelligent request routing across multiple LLM providers, cost-optimized model selection, load balancing for inference workloads, and unified API gateways that abstract away provider complexity. This list covers the full spectrum: from smart routers that choose the optimal model per request, to high ..."
+    },
+    {
+      "title": "GitHub - santaaaron/ScenTrace: Regression testing for multi-agent AI ...",
+      "url": "https://github.com/santaaaron/ScenTrace",
+      "snippet": "ScenTrace Unit tests and regression baselines for AI agent workflows, runnable locally and in CI. ScenTrace helps you define repeatable scenarios for AI agents, run them locally or in CI/CD, capture full execution traces, detect regressions, and generate reports — all without sending a single prompt to a third-party dashboard."
+    },
+    {
+      "title": "OpenRouter",
+      "url": "https://openrouter.ai/",
+      "snippet": "The unified interface for every model. Find the best models & prices for your prompts"
+    },
+    {
+      "title": "Models — NightRouter",
+      "url": "https://nightrouter.ai/models",
+      "snippet": "Browse every model available through NightRouter — per-token and per-request prices, compatible APIs and capabilities."
+    },
+    {
+      "title": "HuggingFaceTB/SmolLM2-135M · Hugging Face",
+      "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-135M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

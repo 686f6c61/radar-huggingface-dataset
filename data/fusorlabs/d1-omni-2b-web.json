@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "fusorlabs/d1-omni-2b-web",
+  "slug": "fusorlabs-d1-omni-2b-web",
+  "author": "fusorlabs",
+  "url": "https://huggingface.co/fusorlabs/d1-omni-2b-web",
+  "created_at": "2026-10-28T01:51:01.000Z",
+  "updated_at": "2026-10-28T01:51:49.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "audio-text-to-text",
+  "library": "fusor-ai",
+  "languages": [],
+  "tags": [
+    "fusor-ai",
+    "lfm3_omni",
+    "webassembly",
+    "wasm",
+    "on-device",
+    "audio-text-to-text",
+    "custom_code",
+    "base_model:LiquidAI/d1-Omni-2B",
+    "base_model:finetune:LiquidAI/d1-Omni-2B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2321121434,
+  "storage_human": "2.3 GB",
+  "base_model": "LiquidAI/d1-Omni-2B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dirty Bird | Hellaverse Wiki | Fandom",
+      "url": "https://hazbinhotel.fandom.com/wiki/Dirty_Bird",
+      "snippet": "Dirty Bird is the first of two songs featured in the Helluva Boss season three episode \"Gimpy Gimpy\", sung by Stolas as he enjoys his …"
+    },
+    {
+      "title": "Stolas bdsm pt 16 : r/Helluvabrothel - Reddit",
+      "url": "https://www.reddit.com/r/Helluvabrothel/comments/108q64c/stolas_bdsm_pt_16/",
+      "snippet": "Jan 11, 2023 · 80K subscribers in the Helluvabrothel community. Helluva boss art but only when the characters are naked, banging, …"
+    },
+    {
+      "title": "Something Real | PDF | Bdsm",
+      "url": "https://www.scribd.com/document/989311612/Something-Real",
+      "snippet": "The story 'Something Real' explores the complex relationship between Stolas and Blitzø from the 'Helluva Boss' series, focusing on …"
+    },
+    {
+      "title": "helluva bdsm au - pinkpoodle - Helluva Boss (Web Series) [Archive of ...",
+      "url": "https://archiveofourown.org/series/4154062",
+      "snippet": "May 17, 2024 · It didn’t help that Stolas was in meetings all day, or that I.M.P were out on a hit, or that he most likely wouldn't see his …"
+    },
+    {
+      "title": "Post (bdsm?) Stolas : r/HelluvaBoss - Reddit",
+      "url": "https://www.reddit.com/r/HelluvaBoss/comments/qev554/post_bdsm_stolas/",
+      "snippet": "Oct 24, 2021 · For the VivziePop animation property Helluva Boss, set in the same universe as Hazbin Hotel!"
+    }
+  ]
+}

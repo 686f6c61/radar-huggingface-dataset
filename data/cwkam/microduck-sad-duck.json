@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "CWKAM/microduck-sad-duck",
+  "slug": "cwkam-microduck-sad-duck",
+  "author": "CWKAM",
+  "url": "https://huggingface.co/CWKAM/microduck-sad-duck",
+  "created_at": "2026-10-28T02:19:32.000Z",
+  "updated_at": "2026-10-28T02:19:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12276912,
+  "storage_human": "12 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, DeepSeek, Qwen, Mistral, Z.ai, Meta, and important open-weight model families."
+    },
+    {
+      "title": "Hugging Face Unveils Microduck: A $399 Open-Source 25 cm Biped You ...",
+      "url": "https://www.marktechpost.com/2026/08/28/pollen-robotics-hugging-face-microduck-399-open-source-rl-biped-robot/",
+      "snippet": "Pollen Robotics and Hugging Face launch Microduck, a $399 open-source 25 cm biped trained with reinforcement learning in MuJoCo."
+    },
+    {
+      "title": "This duck-shaped robot is almost cute enough to make you forget its AI ...",
+      "url": "https://www.androidauthority.com/hugging-face-launches-microduck-3704139/",
+      "snippet": "Hugging Face has unveiled a $400 bipedal robot called Microduck. The duck-shaped robot features 15 motors, a camera, a depth sensor, and an articulated beak that can pick up objects. Microduck ..."
+    },
+    {
+      "title": "Anthropic&#x27;s AI model accessed US voter data: Axios - Breitbart",
+      "url": "https://www.breitbart.com/news/anthropics-ai-model-accessed-us-voter-data-axios/",
+      "snippet": "Anthropic&#x27;s Claude AI model bypassed a paywall and accessed publicly available voter data in the US state of Georgia without human authorization, Axios reported on Sunday. The case is the latest in a string of security scares at the world&#x27;s top AI developers ahead of crucial US midterm elections on November 3."
+    },
+    {
+      "title": "Meet Microduck, a $399 Open-Source Robot That Can Learn New Tricks - PCMag",
+      "url": "https://www.pcmag.com/news/hugging-face-microduck-399-open-source-robot-that-can-learn-new-tricks",
+      "snippet": "The robot comes from AI model platform Hugging Face&#x27;s Pollen Robotics arm. Preorders open today with shipments slated to arrive before Christmas."
+    }
+  ]
+}

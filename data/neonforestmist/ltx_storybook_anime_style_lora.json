@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "neonforestmist/LTX_Storybook_Anime_Style_LoRa",
+  "slug": "neonforestmist-ltx_storybook_anime_style_lora",
+  "author": "neonforestmist",
+  "url": "https://huggingface.co/neonforestmist/LTX_Storybook_Anime_Style_LoRa",
+  "created_at": "2026-10-28T02:07:41.000Z",
+  "updated_at": "2026-10-28T02:11:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "lora",
+    "ltx-video",
+    "text-to-video",
+    "safetensors",
+    "dataset:neonforestmist/GPT_Storybook_Anime_Style_Images",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 454473786,
+  "storage_human": "454 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "neonforestmist/flux-storybook-anime-lora · Hugging Face",
+      "url": "https://huggingface.co/neonforestmist/flux-storybook-anime-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "neonforestmist/flux-storybook-anime-lora at main - Hugging Face",
+      "url": "https://huggingface.co/neonforestmist/flux-storybook-anime-lora/tree/main",
+      "snippet": "Notebooks Google Colab Kaggle main flux-storybook-anime-lora 394 MB Ctrl+K Ctrl+K 1 contributor History:2 commits neonforestmist Upload folder using huggingface_hub c802623 verifiedabout 2 months ago assetsUpload folder using huggingface_hubabout 2 months ago configUpload folder using huggingface_hubabout 2 months ago lorasUpload folder using huggingface_hubabout 2 months ago .gitattributes ..."
+    },
+    {
+      "title": "neonforestmist/storybook-anime-lora-v1 · Hugging Face",
+      "url": "https://d6108366.hf-mirror.com/neonforestmist/storybook-anime-flux-2-klein-9B-lora",
+      "snippet": "In storybook anime style, a white dog running with white and cream bunnies through a grassy field at sunset as a header image, with text that says \"Scene 2: Animals\"."
+    },
+    {
+      "title": "AI - neonforestmist.github.io",
+      "url": "https://neonforestmist.github.io/AI/",
+      "snippet": "GPT Storybook Anime Style Images Original anime-inspired characters and cozy scenes with soft linework, gentle lighting, and a warm storybook feel."
+    },
+    {
+      "title": "neonforestmist/krea-2-storybook-anime-lora · Hugging Face",
+      "url": "https://huggingface.co/neonforestmist/krea-2-storybook-anime-lora",
+      "snippet": "A LoRA model fine-tuned to generate warm storybook anime illustrations with delicate ink outlines, expressive characters, richly painted scenery, cozy pastoral colors, soft painterly textures, and a whimsical children&#x27;s-book atmosphere."
+    }
+  ]
+}

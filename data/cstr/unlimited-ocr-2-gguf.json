@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "cstr/Unlimited-OCR-2-GGUF",
+  "slug": "cstr-unlimited-ocr-2-gguf",
+  "author": "cstr",
+  "url": "https://huggingface.co/cstr/Unlimited-OCR-2-GGUF",
+  "created_at": "2026-10-28T01:44:09.000Z",
+  "updated_at": "2026-10-28T01:49:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "ocr",
+    "crispembed",
+    "deepseek-v2",
+    "moe",
+    "image-text-to-text",
+    "base_model:baidu/Unlimited-OCR-2",
+    "base_model:quantized:baidu/Unlimited-OCR-2",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3343978240,
+  "parameters_human": "3.34B",
+  "storage_bytes": 10264550656,
+  "storage_human": "10.3 GB",
+  "base_model": "baidu/Unlimited-OCR-2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AtomicChat/Unlimited-OCR-2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/AtomicChat/Unlimited-OCR-2-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "cstr/unlimited-ocr-crispembed-GGUF · Hugging Face",
+      "url": "https://huggingface.co/cstr/unlimited-ocr-crispembed-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Unlimited Ocr - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/unlimited-ocr.html",
+      "snippet": "Download Unlimited Ocr GGUF model. 14.7 GB, 9,575 downloads, 154 likes."
+    },
+    {
+      "title": "Unlimited OCR Works 2 - Models",
+      "url": "https://www.modelscope.cn/models/PaddlePaddle/Unlimited-OCR-2",
+      "snippet": "Unlimited OCR Works 2 Pioneering the OCR-3.0 Era: From Long- to Unlimited-Horizon Parsing. Release [2026/10/27] 🚀 We release Unlimited OCR 2, achieving unlimited-horizon parsing with SR-SWA. [2026/07/21] 🤝 Thanks to the ms-swift community for their support, our model now supports training with ms-swift."
+    },
+    {
+      "title": "GitHub - baidu/Unlimited-OCR: Unlimited OCR Works: Welcome the Era of ...",
+      "url": "https://github.com/baidu/Unlimited-OCR",
+      "snippet": "Unlimited OCR Works Welcome the Era of One-shot Long-horizon Parsing. Release [2026/07/21] 🤝 Thanks to the ms-swift community for their support, our model now supports training with ms-swift. [2026/07/03] 🤝 Thanks to the Baidu Cloud team for their support. Our model is now available on Baidu Cloud."
+    }
+  ]
+}

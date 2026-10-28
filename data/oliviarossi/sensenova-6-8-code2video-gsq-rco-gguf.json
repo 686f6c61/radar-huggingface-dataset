@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "OliviaRossi/SenseNova-6.8-Code2Video-GSQ-RCO-GGUF",
+  "slug": "oliviarossi-sensenova-6-8-code2video-gsq-rco-gguf",
+  "author": "OliviaRossi",
+  "url": "https://huggingface.co/OliviaRossi/SenseNova-6.8-Code2Video-GSQ-RCO-GGUF",
+  "created_at": "2026-10-28T01:36:32.000Z",
+  "updated_at": "2026-10-28T01:38:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama.cpp",
+    "quantized",
+    "gsq-rco",
+    "iq3_xxs",
+    "non-uniform-quantization",
+    "code2video",
+    "base_model:sensenova/SenseNova-6.8-Code2Video",
+    "base_model:quantized:sensenova/SenseNova-6.8-Code2Video",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 10196584928,
+  "storage_human": "10.2 GB",
+  "base_model": "sensenova/SenseNova-6.8-Code2Video",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OliviaRossi/SenseNova-6.8-Code2Video-GSQ-RCO-GGUF · Hugging Face",
+      "url": "https://huggingface.co/OliviaRossi/SenseNova-6.8-Code2Video-GSQ-RCO-GGUF",
+      "snippet": "Non-uniform mixed-precision GGUF quantization of sensenova/SenseNova-6.8-Code2Video following the GSQ + RCO methodology pioneered by ISTA-DASLab."
+    },
+    {
+      "title": "Abiray/SenseNova-6.8-Code2Video-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Abiray/SenseNova-6.8-Code2Video-GGUF",
+      "snippet": "GGUF quantizations of sensenova/SenseNova-6.8-Code2Video (27B hybrid qwen35 architecture), complete with the F16 Multimodal Vision Projector (mmproj-F16.gguf) and a grafted 1-layer Multi-Token Prediction (blk.64 / NextN) speculative decoding head preserved at Q8_0."
+    },
+    {
+      "title": "Abiray/SenseNova-6.8-Code2Video-MTP-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Abiray/SenseNova-6.8-Code2Video-MTP-GGUF",
+      "snippet": "GGUF quantizations of sensenova/SenseNova-6.8-Code2Video (27B hybrid qwen35 architecture), complete with the F16 Multimodal Vision Projector (mmproj-F16.gguf) and a grafted 1-layer Multi-Token Prediction (blk.64 / NextN) speculative decoding head preserved at Q8_0."
+    },
+    {
+      "title": "ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-Coder-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-Coder-GGUF",
+      "snippet": "Non-uniform GGUF quantizations via GSQ + RCO: per-tensor mixed precision in standard GGUF form • 4 items • Updated 3 days ago • 85"
+    },
+    {
+      "title": "SenseNova-U1-8B GGUF: Run Multimodal AI on 8GB VRAM | HackerNoon",
+      "url": "https://hackernoon.com/sensenova-u1-8b-gguf-run-multimodal-ai-on-8gb-vram",
+      "snippet": "Download the GGUF model file (Q6 recommended for quality, Q4 for minimum VRAM usage) and place it in your ComfyUI models directory. Load ComfyUI and create a workflow using the SenseNova nodes:"
+    }
+  ]
+}

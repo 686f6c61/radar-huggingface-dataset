@@ -5,7 +5,7 @@
   "author": "nanovdr",
   "url": "https://huggingface.co/nanovdr/ColNanoVDR-Q-Ettin150M-EVIE8B-4096-ML",
   "created_at": "2026-10-07T19:27:32.000Z",
-  "updated_at": "2026-10-07T19:28:09.000Z",
+  "updated_at": "2026-10-27T20:52:04.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "sentence-similarity",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 35,
+  "downloads_30d": 36,
   "trending_score": 0,
   "parameters": 149014272,
   "parameters_human": "149.0M",

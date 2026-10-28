@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "vnbot-ai/FLUX.2-VAE",
+  "slug": "vnbot-ai-flux-2-vae",
+  "author": "vnbot-ai",
+  "url": "https://huggingface.co/vnbot-ai/FLUX.2-VAE",
+  "created_at": "2026-10-28T02:18:29.000Z",
+  "updated_at": "2026-10-28T02:18:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "vae",
+    "comfyui",
+    "flux",
+    "base_model:black-forest-labs/FLUX.2-dev",
+    "base_model:finetune:black-forest-labs/FLUX.2-dev",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 336213556,
+  "storage_human": "336 MB",
+  "base_model": "black-forest-labs/FLUX.2-dev",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stephanie Michelle (@omystephanie) / X",
+      "url": "https://x.com/omystephanie",
+      "snippet": "Actor in Frankenbabes, artist, VO work: Yuko in Manga Makers Mega Milkers, Capella in Wonder Waifu Ero Hero. …Read more"
+    },
+    {
+      "title": "Stephanie Michelle (@omystephanieirl) / X",
+      "url": "https://x.com/omystephanieirl",
+      "snippet": "Find my art, prints, premium content sites and Amazon store front here: link.me/stephaniemiche… I’m just really proud of this pirate …"
+    },
+    {
+      "title": "Omystephaniemichelle - Porn Videos & Photos - EroMe",
+      "url": "https://www.erome.com/a/sy9Fcsdu",
+      "snippet": "Omystephaniemichelle pictures and videos on EroMe. The album about Omystephaniemichelle is to be seen for free on EroMe …"
+    },
+    {
+      "title": "Omystephaniemichelle - Porn Photos & Videos - EroMe",
+      "url": "https://www.erome.com/search?q=omystephaniemichelle",
+      "snippet": "EroMe is the best place to share your erotic pics and porn videos. Every day, thousands of people use EroMe to enjoy free photos …"
+    },
+    {
+      "title": "TW Pornstars - Stephanie Michelle. Pictures and videos from Twitter.",
+      "url": "https://www.twpornstars.com/omystephanie",
+      "snippet": "TW Pornstars features popular videos, tweets, users, hashtags from Twitter."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Mr-ezdno/CYBER-FROST-3.8-Sushi-4bpw",
+  "slug": "mr-ezdno-cyber-frost-3-8-sushi-4bpw",
+  "author": "Mr-ezdno",
+  "url": "https://huggingface.co/Mr-ezdno/CYBER-FROST-3.8-Sushi-4bpw",
+  "created_at": "2026-10-16T08:53:41.000Z",
+  "updated_at": "2026-10-28T02:17:48.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen4_exp",
+    "exl3",
+    "sushi",
+    "apple-silicon",
+    "moe",
+    "speculative-decoding",
+    "base_model:Blackfrost-AI/CYBER-FROST-3.8-BF16",
+    "base_model:quantized:Blackfrost-AI/CYBER-FROST-3.8-BF16",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 292,
+  "trending_score": 0,
+  "parameters": 36556177299,
+  "parameters_human": "36.56B",
+  "storage_bytes": 170802914977,
+  "storage_human": "170.8 GB",
+  "base_model": "Blackfrost-AI/CYBER-FROST-3.8-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mr.Bricolage : magasin de bricolage, jardinage, aménagement - Mr…",
+      "url": "https://www.mr-bricolage.fr/",
+      "snippet": "Retrouvez toute l'offre de Mr.Bricolage en ligne : bricolage, jardinage et aménagement. Profitez du retrait magasin en 2h ou de la …"
+    },
+    {
+      "title": "« M. » ou « Mr » ? « MM. » ou « Mrs » ? Les abréviations de …",
+      "url": "https://www.projet-voltaire.fr/regles-orthographe/m-ou-mr-mm-ou-mrs/",
+      "snippet": "Nos experts vous expliquent la règle : « M. » ou « Mr » ? « MM. » ou « Mrs » ? Les abréviations de \"monsieur\" et \"messieurs\" - …"
+    },
+    {
+      "title": "« M. » ou « Mr » : comment abréger monsieur - La langue française",
+      "url": "https://www.lalanguefrancaise.com/orthographe/m-ou-mr-abreviation-monsieur",
+      "snippet": "Jan 6, 2022 · On écrit toujours « M. » : l'abréviation de « monsieur » s'écrit toujours « M. » et non « Mr ». Au pluriel, l'abréviation de « …"
+    },
+    {
+      "title": "Mr, Mrs, Miss, Ms : comment s’adresser à quelqu’un en anglais",
+      "url": "https://www.mosalingua.com/blog/2022/05/30/mr-mrs-miss-en-anglais/",
+      "snippet": "May 30, 2022 · Vous n'êtes pas sûr de comment vous adresser à quelqu'un en anglais ? Que choisir entre Mr Mrs et Miss ? Voici …"
+    },
+    {
+      "title": "Tout l'outillage : perceuses, scies, ponceuses, outillage électrique ...",
+      "url": "https://www.mr-bricolage.fr/outillage-u.html",
+      "snippet": "Pour vous constituer une panoplie d’outils qui couvre l’ensemble de vos travaux, vous pouvez compter sur Mr.Bricolage. Notre …"
+    }
+  ]
+}

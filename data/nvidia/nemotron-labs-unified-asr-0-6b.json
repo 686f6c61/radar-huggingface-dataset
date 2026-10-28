@@ -1,0 +1,351 @@
+{
+  "schema": 1,
+  "id": "nvidia/nemotron-labs-unified-asr-0.6b",
+  "slug": "nvidia-nemotron-labs-unified-asr-0-6b",
+  "author": "nvidia",
+  "url": "https://huggingface.co/nvidia/nemotron-labs-unified-asr-0.6b",
+  "created_at": "2026-08-21T09:26:40.000Z",
+  "updated_at": "2026-10-27T13:33:53.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [],
+  "tags": [
+    "nemo",
+    "speech-recognition",
+    "unified-asr",
+    "offline-asr",
+    "streaming-asr",
+    "automatic-speech-recognition",
+    "speech",
+    "audio",
+    "FastConformer",
+    "RNNT",
+    "Parakeet",
+    "ASR",
+    "pytorch",
+    "NeMo",
+    "dataset:nvidia/Granary",
+    "dataset:YTC",
+    "dataset:Yodas2",
+    "dataset:LibriLight",
+    "dataset:librispeech_asr",
+    "dataset:fisher_corpus",
+    "dataset:Switchboard-1",
+    "dataset:WSJ-0",
+    "dataset:WSJ-1",
+    "dataset:National-Singapore-Corpus-Part-1",
+    "dataset:National-Singapore-Corpus-Part-6",
+    "dataset:vctk",
+    "dataset:voxpopuli",
+    "dataset:europarl",
+    "dataset:multilingual_librispeech",
+    "dataset:fleurs",
+    "dataset:mozilla-foundation/common_voice_8_0",
+    "dataset:MLCommons/peoples_speech",
+    "dataset:google/speech_commands",
+    "arxiv:2604.19079",
+    "arxiv:2305.05084",
+    "arxiv:2304.09325",
+    "arxiv:2005.08100",
+    "arxiv:2505.13404",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 17,
+  "downloads_30d": 88,
+  "trending_score": 17,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2509672187,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "AMI (cleaned)",
+      "metric": "WER (offline)",
+      "value": 7.91
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Earnings22 (cleaned, AA-chunked)",
+      "metric": "WER (offline)",
+      "value": 6.96
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "GigaSpeech (cleaned)",
+      "metric": "WER (offline)",
+      "value": 8.23
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "LibriSpeech test-clean",
+      "metric": "WER (offline)",
+      "value": 1.38
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "LibriSpeech test-other",
+      "metric": "WER (offline)",
+      "value": 2.81
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "SPGI Speech",
+      "metric": "WER (offline)",
+      "value": 2.04
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "VoxPopuli (cleaned)",
+      "metric": "WER (offline)",
+      "value": 3.41
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "AMI (cleaned)",
+      "metric": "WER (1.12s latency)",
+      "value": 8.47
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Earnings22 (cleaned, AA-chunked)",
+      "metric": "WER (1.12s latency)",
+      "value": 9.65
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "GigaSpeech (cleaned)",
+      "metric": "WER (1.12s latency)",
+      "value": 8.7
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "LibriSpeech test-clean",
+      "metric": "WER (1.12s latency)",
+      "value": 1.49
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "LibriSpeech test-other",
+      "metric": "WER (1.12s latency)",
+      "value": 3.59
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "SPGI Speech",
+      "metric": "WER (1.12s latency)",
+      "value": 2.28
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "VoxPopuli (cleaned)",
+      "metric": "WER (1.12s latency)",
+      "value": 3.67
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FLEURS (German)",
+      "metric": "WER (offline)",
+      "value": 3.87
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FLEURS (French)",
+      "metric": "WER (offline)",
+      "value": 5.28
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FLEURS (Italian)",
+      "metric": "WER (offline)",
+      "value": 2.3
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FLEURS (Spanish)",
+      "metric": "WER (offline)",
+      "value": 3
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FLEURS (Portuguese)",
+      "metric": "WER (offline)",
+      "value": 4.42
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Mozilla Common Voice (German)",
+      "metric": "WER (offline)",
+      "value": 4.77
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Mozilla Common Voice (French)",
+      "metric": "WER (offline)",
+      "value": 6.92
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Mozilla Common Voice (Italian)",
+      "metric": "WER (offline)",
+      "value": 3.62
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Mozilla Common Voice (Spanish)",
+      "metric": "WER (offline)",
+      "value": 3.97
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Mozilla Common Voice (Portuguese)",
+      "metric": "WER (offline)",
+      "value": 4.06
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Multilingual LibriSpeech (French)",
+      "metric": "WER (offline)",
+      "value": 4.4
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Multilingual LibriSpeech (Italian)",
+      "metric": "WER (offline)",
+      "value": 7.07
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Multilingual LibriSpeech (Spanish)",
+      "metric": "WER (offline)",
+      "value": 3.87
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Multilingual LibriSpeech (Portuguese)",
+      "metric": "WER (offline)",
+      "value": 7.05
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FLEURS (German)",
+      "metric": "WER (1.12s latency)",
+      "value": 5.24
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FLEURS (French)",
+      "metric": "WER (1.12s latency)",
+      "value": 6.9
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FLEURS (Italian)",
+      "metric": "WER (1.12s latency)",
+      "value": 2.98
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FLEURS (Spanish)",
+      "metric": "WER (1.12s latency)",
+      "value": 4.63
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FLEURS (Portuguese)",
+      "metric": "WER (1.12s latency)",
+      "value": 4.98
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Mozilla Common Voice (German)",
+      "metric": "WER (1.12s latency)",
+      "value": 5.65
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Mozilla Common Voice (French)",
+      "metric": "WER (1.12s latency)",
+      "value": 7.61
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Mozilla Common Voice (Italian)",
+      "metric": "WER (1.12s latency)",
+      "value": 4.33
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Mozilla Common Voice (Spanish)",
+      "metric": "WER (1.12s latency)",
+      "value": 4.53
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Mozilla Common Voice (Portuguese)",
+      "metric": "WER (1.12s latency)",
+      "value": 5.15
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Multilingual LibriSpeech (French)",
+      "metric": "WER (1.12s latency)",
+      "value": 6.36
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Multilingual LibriSpeech (Italian)",
+      "metric": "WER (1.12s latency)",
+      "value": 8.38
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Multilingual LibriSpeech (Spanish)",
+      "metric": "WER (1.12s latency)",
+      "value": 4.42
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Multilingual LibriSpeech (Portuguese)",
+      "metric": "WER (1.12s latency)",
+      "value": 8.45
+    }
+  ],
+  "sources": [
+    {
+      "title": "Téléchargez les pilotes NVIDIA officiels | NVIDIA",
+      "url": "https://www.nvidia.com/fr-fr/drivers/",
+      "snippet": "Téléchargez les pilotes NVIDIA officiels les plus récents pour optimiser votre expérience de jeu sur PC et faire tourner vos …"
+    },
+    {
+      "title": "World Leader in Artificial Intelligence Computing | NVIDIA",
+      "url": "https://www.nvidia.com/",
+      "snippet": "NVIDIA RTX™ powers the world’s fastest PCs and the ultimate platform for gamers and creators. Enjoy beautiful ray tracing, AI …"
+    },
+    {
+      "title": "Nvidia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nvidia",
+      "snippet": "Nvidia Corporation[a] (/ ɛnˈvɪdiə / en-VID-ee-ə) is an American multinational technology company headquartered in Santa Clara, …"
+    },
+    {
+      "title": "Nvidia — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Nvidia",
+      "snippet": "Nvidia Corporation est une société multinationale américaine de technologie basée à Santa Clara et immatriculée dans l'État du …"
+    },
+    {
+      "title": "Téléchargements de pilotes NVIDIA",
+      "url": "https://www.nvidia.fr/Download/indexsg.aspx?lang=fr",
+      "snippet": "Download drivers for NVIDIA products including GeForce graphics cards, nForce motherboards, Quadro workstations, and more. …"
+    }
+  ]
+}

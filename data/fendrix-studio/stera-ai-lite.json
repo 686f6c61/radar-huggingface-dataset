@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Fendrix-Studio/Stera-AI-Lite",
+  "slug": "fendrix-studio-stera-ai-lite",
+  "author": "Fendrix-Studio",
+  "url": "https://huggingface.co/Fendrix-Studio/Stera-AI-Lite",
+  "created_at": "2026-10-28T10:57:30.000Z",
+  "updated_at": "2026-10-28T11:06:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "vision",
+    "lora",
+    "lm-studio",
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-VL-4B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 3334042240,
+  "storage_human": "3.3 GB",
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fendrix-Studio/Stera-AI · Hugging Face",
+      "url": "https://huggingface.co/Fendrix-Studio/Stera-AI",
+      "snippet": "Modèle personnel entraîné par Fendrix Studio (fine-tuning LoRA, export GGUF via llama.cpp). model-Stera-Q4_K_M.gguf : modèle quantifié en Q4_K_M"
+    },
+    {
+      "title": "CapitaineJACOB/Stera-AI-Lite · Hugging Face",
+      "url": "https://huggingface.co/CapitaineJACOB/Stera-AI-Lite",
+      "snippet": "Modèle personnel entraîné par Fendrix Studio (fine-tuning LoRA, export GGUF via llama.cpp). model-Stera-Lite_V10-Q4_K_M.gguf : modèle quantifié en Q4_K_M"
+    },
+    {
+      "title": "CapitaineJACOB/Stera_IA · Hugging Face",
+      "url": "https://huggingface.co/CapitaineJACOB/Stera_IA",
+      "snippet": "Modèle personnel entraîné par Fendrix Studio (fine-tuning LoRA, export GGUF via llama.cpp). model-Stera_V10-Q4_K_M.gguf : modèle quantifié en Q4_K_M"
+    },
+    {
+      "title": "Models | Gemini API | Google AI for Developers",
+      "url": "https://ai.google.dev/gemini-api/docs/models",
+      "snippet": "Flagship creative text-to-speech model for studio-grade voice fidelity, expressive acting, Voice design, and Voice replication."
+    },
+    {
+      "title": "AI Providers | liteLLM",
+      "url": "https://docs.litellm.ai/docs/providers",
+      "snippet": "Every model provider LiteLLM supports, with the endpoints each one serves. Call any of them from the Python SDK or the LiteLLM Gateway through one OpenAI-format API."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "CWKAM/microduck-happy-duck",
+  "slug": "cwkam-microduck-happy-duck",
+  "author": "CWKAM",
+  "url": "https://huggingface.co/CWKAM/microduck-happy-duck",
+  "created_at": "2026-10-28T02:00:53.000Z",
+  "updated_at": "2026-10-28T02:01:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "base_model:joanfox/microduck-happy-hop",
+    "base_model:finetune:joanfox/microduck-happy-hop",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6711779,
+  "storage_human": "7 MB",
+  "base_model": "joanfox/microduck-happy-hop",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CWKAM/microduck-sad-duck · Hugging Face",
+      "url": "https://huggingface.co/CWKAM/microduck-sad-duck",
+      "snippet": "Instructions to use CWKAM/microduck-sad-duck with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Microduck How to use CWKAM/microduck-sad-duck with Microduck: # Replace SLOT with the slot specified in the model card (walk, stand, sitstand, ground_pick, kick_left, kick_right, roulade). sudo robotctl policy load SLOT CWKAM/microduck-sad ..."
+    },
+    {
+      "title": "GitHub - pollen-robotics/microduck: A Tiny biped duck robot",
+      "url": "https://github.com/pollen-robotics/microduck",
+      "snippet": "A Tiny biped duck robot 🦆. Contribute to pollen-robotics/microduck development by creating an account on GitHub."
+    },
+    {
+      "title": "Hugging Face Unveils Microduck, New Open-Source Biped AI Robot",
+      "url": "https://www.tech360.tv/hugging-face-unveils-microduck-new-open-source-biped-ai-robot-2026-31-08",
+      "snippet": "Hugging Face, an organisation known for its open-source artificial intelligence models, has unveiled a new biped robot named Microduck. This device is 25 centimetres tall, weighs 800 grams, and is priced at USD 399. Pre-orders for Microduck commenced on Aug. 27, with shipping anticipated before Christmas 2026."
+    },
+    {
+      "title": "Hugging Face is selling a cute $399 open-source duck robot ...",
+      "url": "https://techcrunch.com/2026/08/27/hugging-face-is-selling-a-cute-399-open-source-duck-robot-microduck/",
+      "snippet": "Hugging Face unveiled the Microduck on Thursday, a cute little duck-like robot that sells for $399 — and ships before Christmas. Clem Delangue, CEO of Hugging Face, said the Microduck is an ..."
+    },
+    {
+      "title": "Hugging Face&#x27;s Pollen Robotics Releases Small, Cute & Open-Source ...",
+      "url": "https://theaiinsider.tech/2026/08/28/hugging-faces-pollen-robotics-releases-small-cute-open-source-microduck-robot/",
+      "snippet": "Hugging Face&#x27;s Pollen Robotics has introduced Microduck, a small biped robot designed as an open development platform for experimenting with physical AI, reinforcement learning and transferring robot behaviors from simulation into real hardware."
+    }
+  ]
+}

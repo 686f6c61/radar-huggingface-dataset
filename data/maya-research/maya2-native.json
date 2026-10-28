@@ -5,7 +5,7 @@
   "author": "maya-research",
   "url": "https://huggingface.co/maya-research/maya2-native",
   "created_at": "2026-10-26T02:58:10.000Z",
-  "updated_at": "2026-10-27T12:55:27.000Z",
+  "updated_at": "2026-10-28T02:49:54.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -25,8 +25,8 @@
     "te"
   ],
   "tags": [
-    "maya3",
     "safetensors",
+    "maya3",
     "text-to-speech",
     "tts",
     "indic",
@@ -51,9 +51,9 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 72,
-  "downloads_30d": 0,
-  "trending_score": 72,
+  "likes": 90,
+  "downloads_30d": 344,
+  "trending_score": 89,
   "parameters": 2502398656,
   "parameters_human": "2.50B",
   "storage_bytes": 5056246629,

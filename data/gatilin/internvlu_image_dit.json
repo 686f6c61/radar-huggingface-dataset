@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "gatilin/internvlu_image_dit",
+  "slug": "gatilin-internvlu_image_dit",
+  "author": "gatilin",
+  "url": "https://huggingface.co/gatilin/internvlu_image_dit",
+  "created_at": "2026-10-28T01:57:04.000Z",
+  "updated_at": "2026-10-28T01:57:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "internvlu_generation_decoder",
+    "diffusion-transformer",
+    "image-generation",
+    "internvl",
+    "extracted-component",
+    "flow-matching",
+    "custom_code",
+    "base_model:InternVL-U/InternVL-U",
+    "base_model:finetune:InternVL-U/InternVL-U",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1808034880,
+  "parameters_human": "1.81B",
+  "storage_bytes": 3805196584,
+  "storage_human": "3.8 GB",
+  "base_model": "InternVL-U/InternVL-U",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - OpenGVLab/InternVL-U: InternVL-U is a 4B-parameter unified ...",
+      "url": "https://github.com/OpenGVLab/InternVL-U",
+      "snippet": "📖 Introduction InternVL-U is a 4B-parameter unified multimodal model (UMM) that brings multimodal understanding, reasoning, image generation, image editing into a single framework, aiming to democratize omni-capable multimodal intelligence with an efficient and practical model size."
+    },
+    {
+      "title": "gatilin/internvlu_vision_bridge · Hugging Face",
+      "url": "https://huggingface.co/gatilin/internvlu_vision_bridge",
+      "snippet": "The model is returned in evaluation mode. Run inference under torch.inference_mode (). Inputs are native tensors/patches, not arbitrary PIL images; inspect component.py and the included validation script for the exact layout. CPU float32 was tested; CUDA/MPS and full end-to-end benchmarks were not tested."
+    },
+    {
+      "title": "InternVL-U/internvlu at main · OpenGVLab/InternVL-U · GitHub",
+      "url": "https://github.com/OpenGVLab/InternVL-U/tree/main/internvlu",
+      "snippet": "InternVL-U is a 4B-parameter unified multimodal model (UMM) that brings multimodal understanding, reasoning, image generation, image editing into a single framework."
+    },
+    {
+      "title": "ViT & Vision Encoders - a gatilin Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/gatilin/vit-and-vision-encoders",
+      "snippet": "Vision encoders, ViTs, and understanding-side projectors. Component scope and incomplete architecture documentation are noted per model."
+    },
+    {
+      "title": "[2603.09877] InternVL-U: Democratizing Unified Multimodal Models for ...",
+      "url": "https://arxiv.org/abs/2603.09877",
+      "snippet": "Unified multimodal models (UMMs) that integrate understanding, reasoning, generation, and editing face inherent trade-offs between maintaining strong semantic comprehension and acquiring powerful generation capabilities. In this report, we present InternVL-U, a lightweight 4B-parameter UMM that democratizes these capabilities within a unified framework. Guided by the principles of unified ..."
+    }
+  ]
+}

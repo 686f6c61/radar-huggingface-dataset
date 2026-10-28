@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "yjwon/O32B_rlmath_noshuffle_contrastive_T8B_checkpoint50",
+  "slug": "yjwon-o32b_rlmath_noshuffle_contrastive_t8b_checkpoint50",
+  "author": "yjwon",
+  "url": "https://huggingface.co/yjwon/O32B_rlmath_noshuffle_contrastive_T8B_checkpoint50",
+  "created_at": "2026-10-28T01:26:27.000Z",
+  "updated_at": "2026-10-28T01:29:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "olmo3",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7298011136,
+  "parameters_human": "7.30B",
+  "storage_bytes": 14596063960,
+  "storage_human": "14.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WAI-SHUFFLE-NOOB - v-pred-04 | NoobAI Checkpoint | Civitai",
+      "url": "https://civitai.com/models/989367/wai-shuffle-noob",
+      "snippet": "WAI-SHUFFLE-NOOB-v-pred-04.safetensors Half precision, best balance (pruned) • 6.46 GB"
+    },
+    {
+      "title": "ONNX Model Zoo - GitHub",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "Anthropic&#x27;s AI model accessed US voter data: Axios - Breitbart",
+      "url": "https://www.breitbart.com/news/anthropics-ai-model-accessed-us-voter-data-axios/",
+      "snippet": "Anthropic&#x27;s Claude AI model bypassed a paywall and accessed publicly available voter data in the US state of Georgia without human authorization, Axios reported on Sunday. The case is the latest in a string of security scares at the world&#x27;s top AI developers ahead of crucial US midterm elections on November 3."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=checkpoint",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Qwen, Mistral AI, Moonshot AI, Z.ai, MiniMax, NVIDIA, Microsoft AI, Cohere, Xiaomi, and other prominent AI labs. The newest-first tables show each release date, provider, and model type. Dates use the earliest meaningful availability stage for each entry. Preview access ..."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Fix-AI/Qwen3.5-9B-GGUF",
+  "slug": "fix-ai-qwen3-5-9b-gguf",
+  "author": "Fix-AI",
+  "url": "https://huggingface.co/Fix-AI/Qwen3.5-9B-GGUF",
+  "created_at": "2026-10-28T10:50:48.000Z",
+  "updated_at": "2026-10-28T10:51:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "unsloth",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:quantized:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 147808628480,
+  "storage_human": "147.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Le site du Dessinateur Fix - Bienvenue !",
+      "url": "https://fix-dessinateur.com/",
+      "snippet": "Bienvenue sur le site du dessinateur Fix. Dessins d'entreprise, de presse, albums, vidéos dessinées, livres, animations de séminaires."
+    },
+    {
+      "title": "fix - English-French Dictionary WordReference.com",
+      "url": "https://www.wordreference.com/enfr/fix",
+      "snippet": "Voir la traduction automatique de Google Translate de 'fix'. Dans d'autres langues : espagnol | italien | portugais | roumain | allemand …"
+    },
+    {
+      "title": "iFixit: The Free Repair Manual",
+      "url": "https://www.ifixit.com/",
+      "snippet": "iFixit is a global community of people helping each other repair things. Let's fix the world, one device at a time. Troubleshoot with …"
+    },
+    {
+      "title": "fix - Traduction française – Linguee",
+      "url": "https://www.linguee.fr/anglais-francais/traduction/fix.html",
+      "snippet": "De très nombreux exemples de phrases traduites contenant \"fix\" – Dictionnaire français-anglais et moteur de recherche de …"
+    },
+    {
+      "title": "FIX Definition & Meaning - Merriam-Webster",
+      "url": "https://www.merriam-webster.com/dictionary/fix",
+      "snippet": "Oct 21, 2026 · fasten, fix, attach, affix mean to make something stay firmly in place. fasten implies an action such as tying, buttoning, …"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "axteam/MiniCPM-V-4.7-35B-A3B-AWQ-8bit",
+  "slug": "axteam-minicpm-v-4-7-35b-a3b-awq-8bit",
+  "author": "axteam",
+  "url": "https://huggingface.co/axteam/MiniCPM-V-4.7-35B-A3B-AWQ-8bit",
+  "created_at": "2026-10-28T01:15:35.000Z",
+  "updated_at": "2026-10-28T01:28:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "minicpmv4_7",
+    "image-text-to-text",
+    "minicpm",
+    "compressed-tensors",
+    "vllm",
+    "quantized",
+    "awq",
+    "int8",
+    "conversational",
+    "base_model:openbmb/MiniCPM-V-4.7-35B-A3B",
+    "base_model:quantized:openbmb/MiniCPM-V-4.7-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11047643804,
+  "parameters_human": "11.05B",
+  "storage_bytes": 38949944225,
+  "storage_human": "38.9 GB",
+  "base_model": "openbmb/MiniCPM-V-4.7-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "axteam/MiniCPM-V-4.7-35B-A3B-AWQ-8bit · Hugging Face",
+      "url": "https://huggingface.co/axteam/MiniCPM-V-4.7-35B-A3B-AWQ-8bit",
+      "snippet": "Notebooks Google Colab Kaggle Local AppsSettings vLLM How to use axteam/MiniCPM-V-4.7-35B-A3B-AWQ-8bit with vLLM: Install from pip and serve model"
+    },
+    {
+      "title": "axteam/MiniCPM-V-4.7-35B-A3B-NVFP4A16 · Hugging Face",
+      "url": "https://huggingface.co/axteam/MiniCPM-V-4.7-35B-A3B-NVFP4A16",
+      "snippet": "Notebooks Google Colab Kaggle Local AppsSettings vLLM How to use axteam/MiniCPM-V-4.7-35B-A3B-NVFP4A16 with vLLM: Install from pip and serve model"
+    },
+    {
+      "title": "MiniCPM-V 4.7: OpenBMB&#x27;s On-Device MoE Vision Model | AI/TLDR",
+      "url": "https://ai-tldr.dev/models/minicpm-v-4-7/",
+      "snippet": "MiniCPM-V 4.7 is OpenBMB&#x27;s Apache-2.0 vision-language model: a 35B-A3B MoE and a 1B, released 12 October 2026. Benchmarks against Qwen3.6 and Gemma-4."
+    },
+    {
+      "title": "MiniCPM-V 4.7 · OpenBMB",
+      "url": "https://openbmb.cn/en/model/minicpm-v-4-7",
+      "snippet": "MiniCPM-V 4.7 comes in two versions: 1B and 35B-A3B. The 35B MoE model runs smoothly on systems like iOS and Android with approximately 3GB of memory, while the 1B version ranks in the top tier for its size in OCR, mathematics, and video understanding capabilities."
+    },
+    {
+      "title": "ModelBest and OpenBMB Launch MiniCPM-V 4.7, Bringing a 35B Multimodal ...",
+      "url": "https://www.prnewswire.com/news-releases/modelbest-and-openbmb-launch-minicpm-v-4-7--bringing-a-35b-multimodal-moe-model-to-phones-and-tablets-with-about-3-gb-of-memory-302909881.html",
+      "snippet": "ModelBest describes MiniCPM-V 4.7 35B-A3B as the first open-source MoE multimodal model built to run smoothly on-device without compromising model quality."
+    }
+  ]
+}

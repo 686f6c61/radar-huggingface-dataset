@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "ania3000/tjbert-e-demo",
+  "slug": "ania3000-tjbert-e-demo",
+  "author": "ania3000",
+  "url": "https://huggingface.co/ania3000/tjbert-e-demo",
+  "created_at": "2026-10-28T10:50:26.000Z",
+  "updated_at": "2026-10-28T10:50:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "fill-mask",
+    "generated_from_trainer",
+    "base_model:ania3000/untrained-tjbert-e",
+    "base_model:finetune:ania3000/untrained-tjbert-e",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 105267880,
+  "parameters_human": "105.3M",
+  "storage_bytes": 421101041,
+  "storage_human": "421 MB",
+  "base_model": "ania3000/untrained-tjbert-e",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

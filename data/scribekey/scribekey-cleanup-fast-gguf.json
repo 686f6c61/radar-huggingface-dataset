@@ -5,7 +5,7 @@
   "author": "scribekey",
   "url": "https://huggingface.co/scribekey/scribekey-cleanup-fast-GGUF",
   "created_at": "2026-10-25T08:12:53.000Z",
-  "updated_at": "2026-10-25T12:23:04.000Z",
+  "updated_at": "2026-10-28T05:13:05.000Z",
   "license": "scribekey-fast-model-terms-v1.0-with-lfm-open-license-v1.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -28,12 +28,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 67,
+  "downloads_30d": 82,
   "trending_score": 0,
   "parameters": 354483968,
   "parameters_human": "354.5M",
-  "storage_bytes": 379219904,
-  "storage_human": "379 MB",
+  "storage_bytes": 758439808,
+  "storage_human": "758 MB",
   "base_model": "scribekey/scribekey-cleanup-fast",
   "formats": [
     "gguf"

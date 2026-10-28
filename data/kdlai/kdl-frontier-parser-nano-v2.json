@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "KDLAI/KDL-Frontier-Parser-nano-v2",
+  "slug": "kdlai-kdl-frontier-parser-nano-v2",
+  "author": "KDLAI",
+  "url": "https://huggingface.co/KDLAI/KDL-Frontier-Parser-nano-v2",
+  "created_at": "2026-10-28T02:01:29.000Z",
+  "updated_at": "2026-10-28T03:36:35.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2_vl",
+    "document-parsing",
+    "ocr",
+    "table-recognition",
+    "chart-extraction",
+    "vlm",
+    "parsebench",
+    "image-text-to-text",
+    "conversational",
+    "ko",
+    "en",
+    "license:agpl-3.0",
+    "eval-results",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1292161280,
+  "parameters_human": "1.29B",
+  "storage_bytes": 2596088578,
+  "storage_human": "2.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KDLAI/KDL-Frontier-Parser-nano-v2 · Hugging Face",
+      "url": "https://huggingface.co/KDLAI/KDL-Frontier-Parser-nano-v2",
+      "snippet": "A 1.2B-parameter open-weight document parsing model, packaged and orchestrated by KoreaDeep as the nano tier of the KDL Frontier Parser family ..."
+    },
+    {
+      "title": "KDLAI/KDL-Frontier-Parser-nano at main - Hugging Face",
+      "url": "https://huggingface.co/KDLAI/KDL-Frontier-Parser-nano/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "KDL Frontier Parser Nano by KDLAI — VRAM 2.3GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/KDLAI%2FKDL-Frontier-Parser-nano,2sVCbe24enCAgkzb8YyHl4",
+      "snippet": "KDL Frontier Parser Nano is an open-source 1.2b LLM by KDLAI. VRAM 2.3GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "KDL-Frontier-Parser-nano · Model · Inferix",
+      "url": "https://inferix.co/models/KDLAI/KDL-Frontier-Parser-nano",
+      "snippet": "A 1.2B-parameter open-weight document parsing model, packaged and orchestrated by KoreaDeep as the nano tier of the KDL Frontier Parser family."
+    },
+    {
+      "title": "KDLAI/KDL-Frontier-Parser-nano • hfviewer",
+      "url": "https://hfviewer.com/KDLAI/KDL-Frontier-Parser-nano",
+      "snippet": "Where the model could be executed, the graph is trace-backed; otherwise it is derived from the reviewed configuration and source code. KDLAI/KDL-Frontier-Parser-nano is an image-text-to-text model (qwen2_vl architecture)."
+    }
+  ]
+}

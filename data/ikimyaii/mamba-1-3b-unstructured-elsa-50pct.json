@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ikimyaii/Mamba-1.3B-unstructured-ELSA-50pct",
+  "slug": "ikimyaii-mamba-1-3b-unstructured-elsa-50pct",
+  "author": "ikimyaii",
+  "url": "https://huggingface.co/ikimyaii/Mamba-1.3B-unstructured-ELSA-50pct",
+  "created_at": "2026-10-28T01:22:25.000Z",
+  "updated_at": "2026-10-28T01:22:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mamba",
+    "pruning",
+    "sparsity",
+    "unstructured",
+    "admm",
+    "elsa",
+    "arxiv:2510.01650",
+    "base_model:fla-hub/mamba-1.3B-100B",
+    "base_model:finetune:fla-hub/mamba-1.3B-100B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1334740992,
+  "parameters_human": "1.33B",
+  "storage_bytes": 5339510547,
+  "storage_human": "5.3 GB",
+  "base_model": "fla-hub/mamba-1.3B-100B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Investissement obligataire l impact des taux d interet sur les prix des ...",
+      "url": "https://fastercapital.com/fr/contenu/Investissement-obligataire---l-impact-des-taux-d-interet-sur-les-prix-des-obligations.html",
+      "snippet": "Aug 25, 2026 · Cette relation inverse est due au fait que les obligations paient un montant fixe d’intérêts (coupon) et de principal …"
+    },
+    {
+      "title": "L’évolution des taux d’intérêt dicte le marché obligataire",
+      "url": "https://www.conseilsfinanciers.fr/evolution-taux-interet-obligations/",
+      "snippet": "Découvrez comment l'évolution des taux d'intérêt influence le marché obligataire et impacte vos investissements en temps réel."
+    },
+    {
+      "title": "Évolution des taux et obligations | UBS Suisse",
+      "url": "https://www.ubs.com/ch/fr/services/guide/investments/articles/obligations-interest-rate-changes.html",
+      "snippet": "Sep 9, 2026 · Lorsque les taux d’intérêt augmentent, les obligations existantes perdent de la valeur. Les nouvelles obligations offrent …"
+    },
+    {
+      "title": "Pourquoi le prix des obligations baisse-t-il lorsque le taux d'intérêt ...",
+      "url": "https://www.gate.com/fr/learn/articles/why-bond-prices-fall-when-interest-rates-rise",
+      "snippet": "Aug 11, 2026 · Les prix des obligations ont tendance à diminuer lorsque les taux d'intérêt augmentent, car les nouvelles obligations …"
+    },
+    {
+      "title": "Taux d interet les taux d interet et leur impact sur les marches ...",
+      "url": "https://fastercapital.com/fr/contenu/Taux-d-interet---les-taux-d-interet-et-leur-impact-sur-les-marches-obligataires.html",
+      "snippet": "Aug 25, 2026 · Une courbe qui s’accentue indique souvent que les investisseurs s’attendent à une croissance économique plus forte …"
+    }
+  ]
+}

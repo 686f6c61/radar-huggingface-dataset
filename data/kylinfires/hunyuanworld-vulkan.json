@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "kylinfires/hunyuanworld-vulkan",
+  "slug": "kylinfires-hunyuanworld-vulkan",
+  "author": "kylinfires",
+  "url": "https://huggingface.co/kylinfires/hunyuanworld-vulkan",
+  "created_at": "2026-10-28T02:14:51.000Z",
+  "updated_at": "2026-10-28T02:29:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "depth-estimation",
+  "library": "rust",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "rust",
+    "vulkan",
+    "wgpu",
+    "3d-reconstruction",
+    "depth-estimation",
+    "surface-normals",
+    "gaussian-splatting",
+    "mesh",
+    "hunyuanworld",
+    "amd",
+    "no-cuda",
+    "zh",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3279900,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kylinfires (Joy) - Hugging Face",
+      "url": "https://huggingface.co/kylinfires",
+      "snippet": "Explore a 13‑view 3DGS model gallery interactively. kylinfires. about 9 hours ago. models 0. None public yet. datasets 0"
+    },
+    {
+      "title": "GitHub - Tencent-Hunyuan/HunyuanWorld-1.0: Generating Immersive ...",
+      "url": "https://github.com/Tencent-Hunyuan/HunyuanWorld-1.0",
+      "snippet": "July 26, 2025: 👋 We present the technical report of HunyuanWorld-1.0, please check out the details and spark some discussion! July 26, 2025: 🤗 We release the first open-source, simulation-capable, immersive 3D world generation model, HunyuanWorld-1.0! Join our Wechat and Discord group to discuss and find help from us."
+    },
+    {
+      "title": "Vulkan World Models - a Hugging Face Space by kylinfires",
+      "url": "https://huggingface.co/spaces/kylinfires/vulkan-world-models",
+      "snippet": "This web page lets you view a 13‑view gallery of a 3DGS model containing over a million Gaussians. Drag the image to orbit, use the slider to switch views, scroll to zoom, and press space for autom..."
+    },
+    {
+      "title": "HunyuanWorld 1.0: 3D Model Generation | BuilderAI.tools",
+      "url": "https://builderai.tools/tool/hunyuanworld",
+      "snippet": "Text or a single image goes in and an explorable, mesh-exportable 3D world comes out: HunyuanWorld 1.0 was the first open-weight 3D world generation model when Tencent released it in July 2025. The pipeline works in three stages, generating a 360 degree panoramic world proxy with Flux-based diffusion models and LoRA adapters, splitting it into semantic layers, then reconstructing a ..."
+    },
+    {
+      "title": "GitHub - AndrewYukon/hunyuanworld-1.0: Generating Immersive, Explorable ...",
+      "url": "https://github.com/AndrewYukon/hunyuanworld-1.0",
+      "snippet": "July 26, 2025: 👋 We present the technical report of HunyuanWorld-1.0, please check out the details and spark some discussion! July 26, 2025: 🤗 We release the first open-source, simulation-capable, immersive 3D world generation model, HunyuanWorld-1.0! Join our Wechat and Discord group to discuss and find help from us."
+    }
+  ]
+}

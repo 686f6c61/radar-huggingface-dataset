@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "jakeatx/ATX-Swift-1.5-Qwen3.8-27B-Uncensored-IQ4_XS-M-GGUF",
+  "slug": "jakeatx-atx-swift-1-5-qwen3-8-27b-uncensored-iq4_xs-m-gguf",
+  "author": "jakeatx",
+  "url": "https://huggingface.co/jakeatx/ATX-Swift-1.5-Qwen3.8-27B-Uncensored-IQ4_XS-M-GGUF",
+  "created_at": "2026-09-29T04:02:19.000Z",
+  "updated_at": "2026-10-28T02:21:28.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "quantized",
+    "imatrix",
+    "qwen3.8",
+    "swift-1.5",
+    "uncensored",
+    "abliterated",
+    "mtp",
+    "text-generation",
+    "base_model:d0xin/Swift-1.5-Qwen3.8-27B-Uncensored-BF16",
+    "base_model:quantized:d0xin/Swift-1.5-Qwen3.8-27B-Uncensored-BF16",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 3327,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 29894136500,
+  "storage_human": "29.9 GB",
+  "base_model": "d0xin/Swift-1.5-Qwen3.8-27B-Uncensored-BF16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/?gl=FR&hl=fr",
+      "snippet": "Profitez des vidéos et de la musique que vous aimez, mettez en ligne des contenus originaux, et partagez-les avec vos amis, vos …"
+    },
+    {
+      "title": "Home - YouTube",
+      "url": "https://www.youtube.com/@trending",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://app.music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    },
+    {
+      "title": "About YouTube - YouTube",
+      "url": "https://about.youtube/",
+      "snippet": "YouTube's mission is to give everyone a voice and show them the world. Learn about our brand, community, careers and more."
+    },
+    {
+      "title": "YouTube - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=en-US",
+      "snippet": "Get the official YouTube app on Android phones and tablets. See what the world is watching -- from the hottest music videos to …"
+    }
+  ]
+}

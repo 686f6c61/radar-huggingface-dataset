@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "positron-ai/Qwen3.8-27B",
+  "slug": "positron-ai-qwen3-8-27b",
+  "author": "positron-ai",
+  "url": "https://huggingface.co/positron-ai/Qwen3.8-27B",
+  "created_at": "2026-10-28T01:22:50.000Z",
+  "updated_at": "2026-10-28T01:24:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "mirror",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55575816096,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Positron",
+      "url": "https://positron.posit.co/",
+      "snippet": "Positron is a free IDE purpose-built for Python and R, with transparent AI assistance, interactive data exploration, and everything you …"
+    },
+    {
+      "title": "Positron - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Positron",
+      "snippet": "The positron or antielectron is the particle with an electric charge of +1 e, a spin of 1/2 ħ (the same as the electron), and the same …"
+    },
+    {
+      "title": "Positon — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Positon",
+      "snippet": "Selon la Commission électrotechnique internationale, « positon » est le terme français par défaut ; cependant « positron » (qui est …"
+    },
+    {
+      "title": "Download Positron",
+      "url": "https://positron.posit.co/download.html",
+      "snippet": "Download and install Positron for Windows, macOS, or Linux. Free data science IDE for Python, R, SQL, and more, with …"
+    },
+    {
+      "title": "Définition | Positron : qu'est-ce que c'est ? | sciences",
+      "url": "https://www.futura-sciences.com/sciences/definitions/physique-positron-4992/",
+      "snippet": "Oct 24, 2018 · Le positron est l'antiparticule de l'électron prédite en 1928 par Paul Dirac. Elle fut découverte en 1932 dans les rayons …"
+    }
+  ]
+}

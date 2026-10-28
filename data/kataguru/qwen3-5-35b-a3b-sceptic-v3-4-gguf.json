@@ -5,7 +5,7 @@
   "author": "kataguru",
   "url": "https://huggingface.co/kataguru/Qwen3.5-35B-A3B-Sceptic-v3.4-GGUF",
   "created_at": "2026-09-29T20:08:10.000Z",
-  "updated_at": "2026-10-13T03:34:46.000Z",
+  "updated_at": "2026-10-28T04:10:57.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -37,7 +37,7 @@
     "imatrix"
   ],
   "likes": 0,
-  "downloads_30d": 1377,
+  "downloads_30d": 1379,
   "trending_score": 0,
   "parameters": 35505251456,
   "parameters_human": "35.51B",

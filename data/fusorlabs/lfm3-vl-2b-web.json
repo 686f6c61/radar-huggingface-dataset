@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "fusorlabs/lfm3-vl-2b-web",
+  "slug": "fusorlabs-lfm3-vl-2b-web",
+  "author": "fusorlabs",
+  "url": "https://huggingface.co/fusorlabs/lfm3-vl-2b-web",
+  "created_at": "2026-10-28T01:47:39.000Z",
+  "updated_at": "2026-10-28T01:48:29.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "fusor-ai",
+  "languages": [],
+  "tags": [
+    "fusor-ai",
+    "lfm3_vl",
+    "webassembly",
+    "wasm",
+    "on-device",
+    "image-text-to-text",
+    "custom_code",
+    "base_model:LiquidAI/LFM3-VL-2B",
+    "base_model:finetune:LiquidAI/LFM3-VL-2B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2181823010,
+  "storage_human": "2.2 GB",
+  "base_model": "LiquidAI/LFM3-VL-2B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fusorlabs/lfm3-vl-2b-web · Hugging Face",
+      "url": "https://huggingface.co/fusorlabs/lfm3-vl-2b-web",
+      "snippet": "LFM3-VL-2B, compiled for the browser Liquid AI&#x27;s LFM3-VL-2B compiled into a fusor-ai bundle: the weights the browser runtime of liquidai-lmf3-wasm loads to hold a conversation about images on the device&#x27;s CPU. Try it in the Space fusorlabs/liquidai-lmf3-wasm."
+    },
+    {
+      "title": "LFM3-VL-2B - Liquid Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm3-vl-2b",
+      "snippet": "← Back to Vision Models LFM3-VL-2B is a vision-language model in the LFM3 family designed for on-device deployment. It processes text, images, and videos at their native resolution, and pairs the LFM3 language backbone with a new in-house Liquid hybrid convolution/attention vision encoder."
+    },
+    {
+      "title": "LFM3-VL-2B: 1.92B Vision Model Beats a 3.1B Predecessor - orcarouter.ai",
+      "url": "https://www.orcarouter.ai/blog/lfm3-vl-2b-release",
+      "snippet": "Liquid AI&#x27;s LFM3-VL-2B scores 71.4 across 62 vision benchmarks, but 62.1 with thinking off. What the model card does and does not establish."
+    },
+    {
+      "title": "LFM3-VL-2B: Liquid AI&#x27;s On-Device Vision-Language Model | AI/TLDR",
+      "url": "https://ai-tldr.dev/models/lfm3-vl-2b/",
+      "snippet": "How LFM3-VL-2B is trained: vision mid-training and SFT, vision RL, then on-policy distillation with LFM3-1.7B&#x27;s mixed-RL model Liquid AI model card ↗ Liquid built it for on-device visual tasks: questions about recorded video, reading documents, charts and app screens, finding objects in an image and spatial reasoning for robots."
+    },
+    {
+      "title": "lfm3-vl - ollama.com",
+      "url": "https://ollama.com/library/lfm3-vl",
+      "snippet": "LFM3-VL-2B is a vision-language model for on-device visual understanding. It takes text, images, and video (soon) as input, and combines the LFM3 language model with a new in-house vision encoder."
+    }
+  ]
+}

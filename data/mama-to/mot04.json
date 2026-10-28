@@ -4,8 +4,8 @@
   "slug": "mama-to-mot04",
   "author": "mama-to",
   "url": "https://huggingface.co/mama-to/mot04",
-  "created_at": "2026-10-25T17:09:54.000Z",
-  "updated_at": "2026-10-25T17:17:08.000Z",
+  "created_at": "2026-10-28T04:33:28.000Z",
+  "updated_at": "2026-10-28T04:34:00.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -25,8 +25,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-10-27T04:20:50.595Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {
