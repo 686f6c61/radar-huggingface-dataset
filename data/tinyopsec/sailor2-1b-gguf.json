@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "tinyopsec/Sailor2-1B-GGUF",
+  "slug": "tinyopsec-sailor2-1b-gguf",
+  "author": "tinyopsec",
+  "url": "https://huggingface.co/tinyopsec/Sailor2-1B-GGUF",
+  "created_at": "2026-10-28T14:17:29.000Z",
+  "updated_at": "2026-10-28T14:22:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen2",
+    "multilingual",
+    "sea",
+    "sailor",
+    "llama-cpp",
+    "text-generation",
+    "base_model:Qwen/Qwen2.5-0.5B",
+    "base_model:quantized:Qwen/Qwen2.5-0.5B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 988064640,
+  "parameters_human": "988.1M",
+  "storage_bytes": 10940312864,
+  "storage_human": "10.9 GB",
+  "base_model": "Qwen/Qwen2.5-0.5B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sail/Sailor2-1B-Chat · Hugging Face",
+      "url": "https://huggingface.co/sail/Sailor2-1B-Chat",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "bartowski/Sailor2-1B-Chat-GGUF · Hugging Face",
+      "url": "https://huggingface.co/bartowski/Sailor2-1B-Chat-GGUF",
+      "snippet": "Model tree for bartowski/Sailor2-1B-Chat-GGUF Base model Qwen/Qwen2.5-.5B Finetuned"
+    },
+    {
+      "title": "Sailor2-1B-Chat in GGUF: A Tiny, Offline Multilingual Chat Model for ...",
+      "url": "https://aichina.news/blog/sailor2-1b-chat-in-gguf-a-tiny-offline-multilingual-chat-model-for-ozan7d/",
+      "snippet": "DevQuasar/sail.Sailor2-1B-Chat-GGUF on Modelers.cn is a quantised, llama.cpp-compatible repackaging of Sailor2-1B-Chat, the smallest member of Sea AI Lab&#x27;s Sailor2 multilingual family. At roughly 1B parameters, it is designed to run cheaply, offline and on modest hardware, from CPU-only boxes to edge devices."
+    },
+    {
+      "title": "Sailor2-1B Goes GGUF on Modelers.cn: Tiny, Local, and Worth a Look",
+      "url": "https://aichina.news/blog/sailor2-1b-goes-gguf-on-modelers-cn-tiny-local-and-worth-a-look-3m7g0t/",
+      "snippet": "If you&#x27;re hunting for a small multilingual model that can run locally without a GPU, Modelers.cn has a new GGUF build worth adding to your test bench. DevQuasar/sail.Sailor2-1B-GGUF is a quantised version of the Sailor2-1B text-generation model, packaged for llama.cpp-style runtimes. At roughly 1B parameters, it&#x27;s aimed squarely at edge deployment, quick prototypes, and low-resource inference ..."
+    },
+    {
+      "title": "GitHub - sail-sg/sailor2: Sailor2: Sailing in South-East Asia with ...",
+      "url": "https://github.com/sail-sg/sailor2",
+      "snippet": "This repository contains the code for Sailor2, a powerful and inclusive open language models for South-East Asia. Sailor2 is a collaborative project partnered with Sea AI Lab, SCB10X, WiseSight, HuggingFace and the Sailor2 Community."
+    }
+  ]
+}

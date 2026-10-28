@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "pawanpaudel93/jev27b-int8-ov-decision",
+  "slug": "pawanpaudel93-jev27b-int8-ov-decision",
+  "author": "pawanpaudel93",
+  "url": "https://huggingface.co/pawanpaudel93/jev27b-int8-ov-decision",
+  "created_at": "2026-10-28T14:35:19.000Z",
+  "updated_at": "2026-10-28T14:35:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "openvino",
+  "languages": [],
+  "tags": [
+    "openvino",
+    "qwen3_5",
+    "int8",
+    "decision",
+    "cascadia",
+    "base_model:OpenVINO/Qwen3.8-27B-int8-ov",
+    "base_model:finetune:OpenVINO/Qwen3.8-27B-int8-ov",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29053992583,
+  "storage_human": "29.1 GB",
+  "base_model": "autotrust/JEV-27B, OpenVINO/Qwen3.8-27B-int8-ov, Qwen/Qwen3.8-27B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "autotrust/JEV-27B - Hugging Face",
+      "url": "https://huggingface.co/autotrust/JEV-27B",
+      "snippet": "Two models, two organisations. TypeSafe Jev 1.13 is the hosted, closed-source model made by TypeSafe AI; it is the teacher whose published output distributions this model was trained on. autotrust/JEV-27B (this repository) is an independent open-weights student built by AutoTrust AI from the Apache-2.0 corpus SargeDev/jev-distill-corpus-v3."
+    },
+    {
+      "title": "autotrust/JEV-27B: fast, calibrated decisions and full reasoning from ...",
+      "url": "https://huggingface.co/blog/autotrust/autotrustjev-27b-fast-calibrated-decisions-and-ful",
+      "snippet": "A Blog post by AutoTrust AI Lab on Hugging Face"
+    },
+    {
+      "title": "Two AutoTrust AI decision models on a Mac: JEV-35B and JEV-27B on MLX",
+      "url": "https://netprojects.com/insights/autotrust-jev-decision-models-on-apple-silicon-mlx",
+      "snippet": "We ported AutoTrust AI&#x27;s two JEV decision models to Apple Silicon: JEV-35B with vision in three sizes, and JEV-27B v1.1 with the two-way prompt reading it was trained for. Both are free on Hugging Face and GitHub."
+    },
+    {
+      "title": "Jev AI — Decisions at machine speed",
+      "url": "https://jevai.net/",
+      "snippet": "Jev turns context into structured decisions for classification, routing and scoring. Version 1.14 brings model improvements, with experimental image input, Box outputs and long context."
+    },
+    {
+      "title": "AutoTrust AI Releases JEV-27B, an Open Decision Model for Self-Hosted ...",
+      "url": "https://www.prnewswire.com/news-releases/autotrust-ai-releases-jev-27b-an-open-decision-model-for-self-hosted-ai-agents-302891720.html",
+      "snippet": "In a demonstration reel released with the model, a self-hosted JEV-27B served as the decision engine for 10 tasks."
+    }
+  ]
+}

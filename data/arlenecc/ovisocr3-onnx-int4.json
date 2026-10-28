@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "arlenecc/OvisOCR3-ONNX-int4",
+  "slug": "arlenecc-ovisocr3-onnx-int4",
+  "author": "arlenecc",
+  "url": "https://huggingface.co/arlenecc/OvisOCR3-ONNX-int4",
+  "created_at": "2026-10-28T17:31:40.000Z",
+  "updated_at": "2026-10-28T18:37:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1216759027,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/EAN-7B-i1-GGUF",
+  "slug": "mradermacher-ean-7b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/EAN-7B-i1-GGUF",
+  "created_at": "2026-10-28T14:08:10.000Z",
+  "updated_at": "2026-10-28T15:49:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "multimodal",
+    "reasoning",
+    "reinforcement-learning",
+    "en",
+    "dataset:TIGER-Lab/ViRL39K",
+    "base_model:DawnLiu/EVAN-7B",
+    "base_model:quantized:DawnLiu/EVAN-7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 88975016896,
+  "storage_human": "89.0 GB",
+  "base_model": "DawnLiu/EVAN-7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/EAN-7B-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/EAN-7B-i1-GGUF",
+      "snippet": "mradermacher / EAN-7B-i1-GGUF Like 0 Reinforcement Learning Transformers GGUF TIGER-Lab/ViRL39K English multimodal reasoning imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    },
+    {
+      "title": "mradermacher/EAN-7B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/EAN-7B-GGUF",
+      "snippet": "mradermacher / EAN-7B-GGUF Like 0 Reinforcement Learning Transformers GGUF TIGER-Lab/ViRL39K English multimodal reasoning conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 33 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "mradermacher/Einstein-v7-Qwen2-7B-GGUF · Silytics",
+      "url": "https://silytics.si/models/mradermacher/Einstein-v7-Qwen2-7B-GGUF",
+      "snippet": "mradermacher/Einstein-v7-Qwen2-7B-GGUF on huggingface. Details and a link to the original source."
+    },
+    {
+      "title": "GitHub - JoasASantos/Offensive-Security-AI-Models: Uncensored AI models ...",
+      "url": "https://github.com/JoasASantos/Offensive-Security-AI-Models",
+      "snippet": "Uncensored LLMs for Offensive Security Curated list of open-weight uncensored models for authorized red team operations, penetration testing, and security research. All data sourced from HuggingFace model cards and official publications. Sep 2026."
+    }
+  ]
+}

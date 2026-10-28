@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "oteam/esmfold2-experimental-fast-base300m-step750k",
+  "slug": "oteam-esmfold2-experimental-fast-base300m-step750k",
+  "author": "oteam",
+  "url": "https://huggingface.co/oteam/esmfold2-experimental-fast-base300m-step750k",
+  "created_at": "2026-10-28T10:23:25.000Z",
+  "updated_at": "2026-10-28T12:14:43.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "other",
+  "library": "ofoldx",
+  "languages": [],
+  "tags": [
+    "ofoldx",
+    "safetensors",
+    "Biology",
+    "Protein",
+    "Structure Prediction",
+    "other",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 504108490,
+  "parameters_human": "504.1M",
+  "storage_bytes": 2016639584,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Korean Names - Name Generator",
+      "url": "https://www.namegenerator.co/real-names/korean-name-generator",
+      "snippet": "Generate authentic Korean names with our Korean Name Generator in just one click! This is the ultimate tool for anyone who needs …"
+    },
+    {
+      "title": "Korean Name Generator (with Meanings) - Random Generators",
+      "url": "https://randomgenerators.com/name/korean/",
+      "snippet": "Random Korean name generator with first and last names and meanings for male and female characters and Korean baby names for …"
+    },
+    {
+      "title": "Korean Name Generator • A Free Bank of Infinite Names - Reedsy",
+      "url": "https://reedsy.com/studio/generators/name/language-korean/",
+      "snippet": "Our Korean name generator takes your character's gender, era, and story context and returns ten names with meanings and …"
+    },
+    {
+      "title": "Korean Name Generator - Free & Instant | GenName.io",
+      "url": "https://genname.io/gen/korean-names",
+      "snippet": "Sep 9, 2026 · Korean name generator for female and male names — authentic structure with real meanings, plus themes for K-pop …"
+    },
+    {
+      "title": "Korean Name Generator – 500 Real South Korean Names",
+      "url": "https://www.namegeneratorcentral.com/korean-name-generator",
+      "snippet": "Aug 19, 2026 · Generate realistic Korean full names, family name first, from modern favorites like Kim Seo-yeon and Lee Min-jun to …"
+    }
+  ]
+}

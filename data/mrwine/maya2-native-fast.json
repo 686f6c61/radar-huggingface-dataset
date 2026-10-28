@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mrwine/maya2-native-fast",
+  "slug": "mrwine-maya2-native-fast",
+  "author": "mrwine",
+  "url": "https://huggingface.co/mrwine/maya2-native-fast",
+  "created_at": "2026-10-28T18:26:39.000Z",
+  "updated_at": "2026-10-28T18:48:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "onnx",
+  "languages": [
+    "mr",
+    "hi"
+  ],
+  "tags": [
+    "onnx",
+    "text-to-speech",
+    "int8",
+    "fp16",
+    "marathi",
+    "hindi",
+    "cpu",
+    "mr",
+    "hi",
+    "base_model:maya-research/maya2-native",
+    "base_model:quantized:maya-research/maya2-native",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3761953699,
+  "storage_human": "3.8 GB",
+  "base_model": "maya-research/maya2-native",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Supreme-Ed/microduck-tug-vsnico",
+  "slug": "supreme-ed-microduck-tug-vsnico",
+  "author": "Supreme-Ed",
+  "url": "https://huggingface.co/Supreme-Ed/microduck-tug-vsnico",
+  "created_at": "2026-10-28T18:23:21.000Z",
+  "updated_at": "2026-10-28T18:23:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 793771,
+  "storage_human": "793771 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Supreme",
+      "url": "https://supreme.com/",
+      "snippet": "19 hours ago · Supreme official website, established in 1994 in NYC, offers exclusive collections and collaborations. Explore the …"
+    },
+    {
+      "title": "Supreme",
+      "url": "https://supreme.com/?redirect=false",
+      "snippet": "19 hours ago · Supreme. The official website of Supreme. EST 1994. NYC."
+    },
+    {
+      "title": "Shop - Supreme",
+      "url": "https://eu.supreme.com/",
+      "snippet": "The official website of Supreme, established in 1994 in NYC."
+    },
+    {
+      "title": "Supreme (vêtements) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Supreme_(v%C3%AAtements)",
+      "snippet": "Supreme est une marque de vêtements streetwear et accessoires de mode fondée à New York en 1994 par James Jebbia 3 au coin …"
+    },
+    {
+      "title": "Achetez ou vendez des Supreme - StockX",
+      "url": "https://stockx.com/fr-fr/brands/supreme?msockid=30ef91ac593b65e9279b89ac587564d8",
+      "snippet": "Parcourez les Supreme et achetez ou vendez vos articles au prix du marché sur StockX, LE marché en temps réel des Supreme. …"
+    }
+  ]
+}

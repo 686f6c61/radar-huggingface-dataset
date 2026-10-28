@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "lihaoxin2020/simpleopd-mopd-olmo3-7b-qwen30b-gemma26b-12k-250-20261028",
+  "slug": "lihaoxin2020-simpleopd-mopd-olmo3-7b-qwen30b-gemma26b-12k-250-20261028",
+  "author": "lihaoxin2020",
+  "url": "https://huggingface.co/lihaoxin2020/simpleopd-mopd-olmo3-7b-qwen30b-gemma26b-12k-250-20261028",
+  "created_at": "2026-10-28T18:17:30.000Z",
+  "updated_at": "2026-10-28T18:17:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "on-policy-distillation",
+    "multi-teacher-distillation",
+    "base_model:allenai/Olmo-3-7B-Instruct-SFT",
+    "base_model:finetune:allenai/Olmo-3-7B-Instruct-SFT",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "allenai/Olmo-3-7B-Instruct-SFT",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Large Porn Films. Vidéo Porno Tube.",
+      "url": "https://largepornfilms.com/fr/",
+      "snippet": "Vidéo Porno. 100% Gratuit!: Française, Amateur Française, Belle-mère, Maman, Vieux Et Jeune (18+), Film Complet, Mamie, Anal, …"
+    },
+    {
+      "title": "Vidéos Porno Gratuites @ Porn4 TV",
+      "url": "https://porn4.tv/fr",
+      "snippet": "Découvrez une immense collection de clips porno XXX classés par catégories ! Explorez des tonnes de porno HD de haute qualité, …"
+    },
+    {
+      "title": "Free Porn Videos & Mobile Sex Movies - iPornTV",
+      "url": "https://iporntv.net/",
+      "snippet": "Watch the best free porn videos on any device. Discover high-quality XXX movies, sex clips, and full-length adult scenes updated …"
+    },
+    {
+      "title": "SEX Nest TV - Free Porn Movies",
+      "url": "https://sexnest.tv/",
+      "snippet": "SEX Nest The home of free porn videos. Enjoy free sex movies in various categories: Teen, Anal, Cuckold, Shemale, Granny, …"
+    },
+    {
+      "title": "FilmPorno.net : Porno Gratuit en HD - Vidéos Sexe XXX Français",
+      "url": "https://www.filmporno.net/",
+      "snippet": "Découvrez des milliers de vidéos porno gratuites en HD sur FilmPorno.net : films XXX amateurs, anal, MILF, beurette, lesbienne et …"
+    }
+  ]
+}

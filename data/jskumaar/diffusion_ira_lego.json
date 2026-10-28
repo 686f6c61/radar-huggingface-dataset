@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "jskumaar/diffusion_ira_lego",
+  "slug": "jskumaar-diffusion_ira_lego",
+  "author": "jskumaar",
+  "url": "https://huggingface.co/jskumaar/diffusion_ira_lego",
+  "created_at": "2026-10-28T18:08:46.000Z",
+  "updated_at": "2026-10-28T18:09:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "diffusion",
+    "dataset:Project-IRA/lego",
+    "arxiv:2303.04137",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 277840110,
+  "parameters_human": "277.8M",
+  "storage_bytes": 1111423384,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jskumaar/act_ira_lego · Hugging Face",
+      "url": "https://huggingface.co/jskumaar/act_ira_lego",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Nurse fuels viral Lego propaganda videos praising Iran, mocking US",
+      "url": "https://nypost.com/2026/07/18/world-news/nurse-fuels-viral-lego-propaganda-videos-praising-iran-mocking-us/",
+      "snippet": "A Wisconsin nurse has built an online following with AI-generated Lego videos that promote Iranian messaging, mock US leaders and depict attacks against American political figures and troops."
+    },
+    {
+      "title": "jskumaar/groot_ira_lego · Hugging Face",
+      "url": "https://huggingface.co/jskumaar/groot_ira_lego",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Suresh Kumaar Jayaraman jskumaar - GitHub",
+      "url": "https://github.com/jskumaar",
+      "snippet": "Postdoc working on human-robot interaction. jskumaar has 12 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "lego-diffusion - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/e0c203d07c294f0acc8b7b50be793f06",
+      "snippet": "Explore lego-diffusion model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "webbrain-one/lfm3-vld-2b-multipass",
+  "slug": "webbrain-one-lfm3-vld-2b-multipass",
+  "author": "webbrain-one",
+  "url": "https://huggingface.co/webbrain-one/lfm3-vld-2b-multipass",
+  "created_at": "2026-10-28T00:57:26.000Z",
+  "updated_at": "2026-10-28T07:56:47.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm3_vl",
+    "image-text-to-text",
+    "webbrain",
+    "liquid",
+    "lfm3",
+    "lfm3-vl",
+    "browser-agent",
+    "decision-model",
+    "webbrain-vld",
+    "custom_code",
+    "conversational",
+    "base_model:LiquidAI/LFM3-VL-2B",
+    "base_model:finetune:LiquidAI/LFM3-VL-2B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 14,
+  "downloads_30d": 0,
+  "trending_score": 14,
+  "parameters": 1918181888,
+  "parameters_human": "1.92B",
+  "storage_bytes": 3854326178,
+  "storage_human": "3.9 GB",
+  "base_model": "LiquidAI/LFM3-VL-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "webbrain-one/lfm3-vld-2b · Hugging Face",
+      "url": "https://huggingface.co/webbrain-one/lfm3-vld-2b",
+      "snippet": "LFM3-VLD-2B (Restored Language Head) is a hybrid multimodal browser decision model built using the Pegasus method (inspired by AveLabs/Qwen3.8-27B-Perplexing-Pegasus)."
+    },
+    {
+      "title": "webbrain-one/lfm3-vld-2b-onnx · Hugging Face",
+      "url": "https://huggingface.co/webbrain-one/lfm3-vld-2b-onnx",
+      "snippet": "1 Image-Text-to-Text ONNX lfm3_vl webbrain liquid lfm3 webgpu decision-model webbrain-vld vldr conversational custom_code License:lfm1.0 Model card FilesFiles and versions xet Community Copy to bucket LFM3-VLD-2B ONNX (WebGPU + Decision Probe) Technical Specifications Included Files Benchmark Performance (final_test, 126 browser decision tasks ..."
+    },
+    {
+      "title": "WebBrain — Free Open-Source AI Browser Agent",
+      "url": "https://www.webbrain.one/",
+      "snippet": "The Open-Source AI Browser Agent Free, open-source alternative to Claude in Chrome. Use any model, including local ones, so your pages never leave your machine."
+    },
+    {
+      "title": "GitHub - webbrain-one/webbrain: Open-source AI browser agent for Chrome ...",
+      "url": "https://github.com/webbrain-one/webbrain",
+      "snippet": "Open-source AI browser agent for chatting with pages, automating tasks, and running multi-step workflows with your choice of LLM. English · 中文 · Français · Docs · Website · Discord · GPL-3.-or-later WebBrain is a web browser extension that puts an AI agent in a side panel next to your tabs. Ask it about the page you&#x27;re on, or hand it a task and let it click, type, and navigate its ..."
+    },
+    {
+      "title": "LFM3-VL-2B: 1.92B Vision Model Beats a 3.1B Predecessor",
+      "url": "https://www.orcarouter.ai/blog/lfm3-vl-2b-release",
+      "snippet": "Liquid AI&#x27;s LFM3-VL-2B scores 71.4 across 62 vision benchmarks, but 62.1 with thinking off. What the model card does and does not establish."
+    }
+  ]
+}

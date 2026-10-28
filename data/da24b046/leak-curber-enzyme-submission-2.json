@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "da24b046/leak-curber-enzyme-submission-2",
+  "slug": "da24b046-leak-curber-enzyme-submission-2",
+  "author": "da24b046",
+  "url": "https://huggingface.co/da24b046/leak-curber-enzyme-submission-2",
+  "created_at": "2026-10-28T18:00:36.000Z",
+  "updated_at": "2026-10-28T18:01:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "leak-curber",
+    "enzyme",
+    "drfp",
+    "multilayer-perceptron",
+    "leaderboard",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22278634,
+  "storage_human": "22 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "da24b046/leak-curber-enzyme-submission-1 · Hugging Face",
+      "url": "https://huggingface.co/da24b046/leak-curber-enzyme-submission-1",
+      "snippet": "Enzyme retrieval — submission 1 Offline CPU retrieval of one permitted EC number from an exact reaction SMILES string. This is the improved first candidate; it has not been submitted to the leaderboard."
+    },
+    {
+      "title": "da24b046 · GitHub",
+      "url": "https://github.com/da24b046",
+      "snippet": "Contribution activity September 2026 da24b046 has no activity yet for this period."
+    },
+    {
+      "title": "poketwouser/leak-curber-enzyme-retrieval-dual · Hugging Face",
+      "url": "https://huggingface.co/poketwouser/leak-curber-enzyme-retrieval-dual",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "da24b046 - Repositories - GitHub",
+      "url": "https://github.com/da24b046?tab=repositories",
+      "snippet": "Content in all repositories owned by your account will be closed."
+    },
+    {
+      "title": "NeurIPS Poster Leak-CURBER: A Leakage-Controlled Multimodal Evaluation ...",
+      "url": "https://neurips.cc/virtual/2026/poster/139384",
+      "snippet": "We present Leak-CURBER, the largest multimodal, leakage-controlled benchmark for evaluating machine learning and deep learning models for enzymatic reactions. Leak-CURBER standardizes data from 10 biochemical databases and curates datasets with multimodal inputs, metrics, and leakage-controlled splits for 4 tasks. The benchmark comprises 10 subtasks: prediction of reaction outcomes (2), enzyme ..."
+    }
+  ]
+}

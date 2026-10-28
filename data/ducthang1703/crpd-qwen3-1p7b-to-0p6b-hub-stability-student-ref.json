@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ducthang1703/crpd-qwen3-1p7b-to-0p6b-hub-stability-student-ref",
+  "slug": "ducthang1703-crpd-qwen3-1p7b-to-0p6b-hub-stability-student-ref",
+  "author": "ducthang1703",
+  "url": "https://huggingface.co/ducthang1703/crpd-qwen3-1p7b-to-0p6b-hub-stability-student-ref",
+  "created_at": "2026-10-28T17:47:29.000Z",
+  "updated_at": "2026-10-28T17:47:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "chunkratio-pd",
+    "preference-distillation",
+    "conversational",
+    "dataset:HuggingFaceH4/ultrachat_200k",
+    "dataset:HuggingFaceH4/ultrafeedback_binarized",
+    "base_model:Qwen/Qwen3-0.6B-Base",
+    "base_model:finetune:Qwen/Qwen3-0.6B-Base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 2395657892,
+  "storage_human": "2.4 GB",
+  "base_model": "Qwen/Qwen3-0.6B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Interpret Hepatitis B Blood Test Results",
+      "url": "https://scienceinsights.org/how-to-interpret-hepatitis-b-blood-test-results/",
+      "snippet": "Mar 17, 2026 · Learn what your hepatitis B blood test markers mean and how to read common result combinations, from full …"
+    },
+    {
+      "title": "Navigating past and current hepatitis B infection in primary care",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8463143/",
+      "snippet": "Anti-HBc (hepatitis B core antibody) positivity (in the absence of HBsAg) indicates past infection. Referral is indicated where certain …"
+    },
+    {
+      "title": "Table 3-1. Interpretation of hepatitis B laboratory results",
+      "url": "https://www.cdc.gov/hepatitis/statistics/surveillanceguidance/docs/viral-hepatitis-surveillance-table-3-1_508.pdf",
+      "snippet": "To resolve the ambiguity of a false-positive total anti-HBc result, test a follow-up sample 4–8 weeks later. If found positive, interpret …"
+    },
+    {
+      "title": "Understanding Your Test Results - Hepatitis B Foundation",
+      "url": "https://www.hepb.org/prevention-and-diagnosis/diagnosis/understanding-your-test-results/",
+      "snippet": "The presence of anti-HBs following a new acute infection generally indicates recovery and a person is then protected (or “immune”) …"
+    },
+    {
+      "title": "Hepatitis B Tests Can Diagnose an Infection Accurately",
+      "url": "https://www.verywellhealth.com/interpreting-the-hepatitis-b-serologic-panel-1759915",
+      "snippet": "Sep 17, 2026 · Being immune from hepatitis B through a past infection means you have antibodies but no virus. Understand your …"
+    }
+  ]
+}

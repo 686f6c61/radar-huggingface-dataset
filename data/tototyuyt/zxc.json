@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Tototyuyt/zxc",
+  "slug": "tototyuyt-zxc",
+  "author": "Tototyuyt",
+  "url": "https://huggingface.co/Tototyuyt/zxc",
+  "created_at": "2026-10-28T14:21:31.000Z",
+  "updated_at": "2026-10-28T14:21:31.000Z",
+  "license": "cc-by-2.5",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-2.5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Latest News from the UK and Around the World | Sky News",
+      "url": "https://news.sky.com/",
+      "snippet": "Sky News delivers breaking news, headlines and top stories from business, politics, entertainment and more in the UK and worldwide."
+    },
+    {
+      "title": "UK News - The latest headlines from the UK | Sky News",
+      "url": "https://news.sky.com/uk",
+      "snippet": "Expert comment and analysis on the latest UK news, with headlines from England, Scotland, Northern Ireland and Wales."
+    },
+    {
+      "title": "Sky News - YouTube",
+      "url": "https://www.youtube.com/c/skynews/livelatest",
+      "snippet": "At Sky News, our mission is to give you the full story, first, wherever you get your news. Because when you’ve got the full story, you …"
+    },
+    {
+      "title": "Watch Sky News Live",
+      "url": "https://news.sky.com/watch-live",
+      "snippet": "Watch Sky News live for the latest news from the UK and around the world"
+    },
+    {
+      "title": "World News - Breaking international news and headlines | Sky News",
+      "url": "https://news.sky.com/world",
+      "snippet": "The latest international news from Sky, featuring top stories from around the world and breaking news, as it happens."
+    }
+  ]
+}

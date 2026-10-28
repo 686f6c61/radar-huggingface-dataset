@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "lipik/Breeze-ASR-25-gguf",
+  "slug": "lipik-breeze-asr-25-gguf",
+  "author": "lipik",
+  "url": "https://huggingface.co/lipik/Breeze-ASR-25-gguf",
+  "created_at": "2026-10-28T10:30:55.000Z",
+  "updated_at": "2026-10-28T10:34:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transcribe.cpp",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transcribe.cpp",
+    "gguf",
+    "asr",
+    "speech-to-text",
+    "whisper",
+    "mediatek",
+    "mandarin",
+    "traditional-chinese",
+    "code-switching",
+    "automatic-speech-recognition",
+    "zh",
+    "en",
+    "arxiv:2506.11130",
+    "base_model:MediaTek-Research/Breeze-ASR-25",
+    "base_model:quantized:MediaTek-Research/Breeze-ASR-25",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543321440,
+  "parameters_human": "1.54B",
+  "storage_bytes": 1667964224,
+  "storage_human": "1.7 GB",
+  "base_model": "MediaTek-Research/Breeze-ASR-25",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

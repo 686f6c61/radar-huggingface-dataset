@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "SinhalaMMLU-SharedTask/team-rexx-gemma-4-e4b",
+  "slug": "sinhalammlu-sharedtask-team-rexx-gemma-4-e4b",
+  "author": "SinhalaMMLU-SharedTask",
+  "url": "https://huggingface.co/SinhalaMMLU-SharedTask/team-rexx-gemma-4-e4b",
+  "created_at": "2026-10-28T13:54:42.000Z",
+  "updated_at": "2026-10-28T13:54:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "si",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "sinhala",
+    "sinhala-mmlu-shared-task",
+    "conversational",
+    "si",
+    "en",
+    "base_model:google/gemma-4-E4B-it",
+    "base_model:finetune:google/gemma-4-E4B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7941100832,
+  "parameters_human": "7.94B",
+  "storage_bytes": 15914643398,
+  "storage_human": "15.9 GB",
+  "base_model": "google/gemma-4-E4B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

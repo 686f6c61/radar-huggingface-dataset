@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Tototyuyt/creator",
+  "slug": "tototyuyt-creator",
+  "author": "Tototyuyt",
+  "url": "https://huggingface.co/Tototyuyt/creator",
+  "created_at": "2026-10-28T14:08:55.000Z",
+  "updated_at": "2026-10-28T14:08:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CreatorAI | AI Video Generation Platform",
+      "url": "https://www.creatorai.art/en",
+      "snippet": "One Workspace for AI Video Creation Kling, Seedance, Wan, Hailuo and more in one app, with a full timeline editor that&#x27;s free to use. Generate video and images, edit with AI, and export for any platform."
+    },
+    {
+      "title": "Best AI for Video Creation in 2026 — Ranked by Blind Human Votes",
+      "url": "https://llm-stats.com/leaderboards/best-ai-for-video-creation",
+      "snippet": "The best AI for video creation in 2026, ranked by blind human votes. Compare top text-to-video, image-to-video, and video-editing models — with live arena scores, per-clip pricing, and side-by-side examples from Veo, Sora, Runway, Kling, Luma, and more."
+    },
+    {
+      "title": "Create 3D Models Online for Free with AI | Create3D.io",
+      "url": "https://www.create3d.io/en",
+      "snippet": "3D Create, Refine & Export 3D Assets Create 3D Models Online Create3D.io is an AI 3D model generator built for fast 3D creation. Start with a text prompt, upload a reference image, or use multiple views to create downloadable 3D models for games, product design, 3D printing, AR, e-commerce, and creative projects — then preview, refine, texture, repair, and export as GLB, OBJ, FBX, STL, PLY ..."
+    },
+    {
+      "title": "AI 3D Model Generator — Create & Animate 3D Characters - Tripo AI",
+      "url": "https://www.tripo3d.ai/features/ai-3d-model-generator",
+      "snippet": "Tripo AI is an all-in-one AI 3D model generator that creates production-ready 3D models from images or text prompts in seconds. It covers the full pipeline — generation, texturing, rigging, segmentation, and mesh optimization — in a single platform."
+    },
+    {
+      "title": "AI Content Platform: Create, Hire Experts & Earn | Doitong",
+      "url": "https://doitong.com/en-US",
+      "snippet": "All-in-one AI content platform. Create with 30+ models, hire expert creators, or integrate via API. Join 50,000+ creators."
+    }
+  ]
+}

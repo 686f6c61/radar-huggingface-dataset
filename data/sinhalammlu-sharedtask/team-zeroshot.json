@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "SinhalaMMLU-SharedTask/team-zeroShot",
+  "slug": "sinhalammlu-sharedtask-team-zeroshot",
+  "author": "SinhalaMMLU-SharedTask",
+  "url": "https://huggingface.co/SinhalaMMLU-SharedTask/team-zeroShot",
+  "created_at": "2026-10-28T17:41:47.000Z",
+  "updated_at": "2026-10-28T17:48:04.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "multiple-choice",
+  "library": null,
+  "languages": [
+    "si"
+  ],
+  "tags": [
+    "sinhala",
+    "mmlu",
+    "multiple-choice",
+    "lora",
+    "si",
+    "base_model:Lalaa-a/gemma4-8b-text-only",
+    "base_model:adapter:Lalaa-a/gemma4-8b-text-only",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 65571063,
+  "storage_human": "66 MB",
+  "base_model": "Lalaa-a/gemma4-8b-text-only, google/gemma-4-E4B-it",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

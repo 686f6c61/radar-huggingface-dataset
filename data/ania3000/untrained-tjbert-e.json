@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ania3000/untrained-tjbert-e",
+  "slug": "ania3000-untrained-tjbert-e",
+  "author": "ania3000",
+  "url": "https://huggingface.co/ania3000/untrained-tjbert-e",
+  "created_at": "2026-10-28T10:22:39.000Z",
+  "updated_at": "2026-10-28T10:22:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "fill-mask",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 105267880,
+  "parameters_human": "105.3M",
+  "storage_bytes": 421095200,
+  "storage_human": "421 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ania3000/demo-tjbert · Hugging Face",
+      "url": "https://huggingface.co/ania3000/demo-tjbert",
+      "snippet": "ania3000 / demo-tjbert Like 0 Fill-Mask Transformers Safetensors bert Generated from Trainer License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "ania3000 (Anna Shatskikh) - Hugging Face",
+      "url": "https://huggingface.co/ania3000",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 1 day ago ... published a model 1 day ago ... updated a model 1 day ago"
+    },
+    {
+      "title": "AI Model Directory: 645 AI Models by Provider | Free.ai",
+      "url": "https://free.ai/models/",
+      "snippet": "Browse every AI model on Free.ai: 645 models organised by provider, covering chat, image, video, voice, code and more, with free daily tokens on every account."
+    },
+    {
+      "title": "Top 10 AI Models of 2025: The Most Downloaded on HuggingFace",
+      "url": "https://www.analyticsvidhya.com/blog/2025/11/top-open-source-models-on-huggingface/",
+      "snippet": "A look back at 2025&#x27;s most influential open-source AI models. Explore the top 10 downloaded models from HuggingFace, all with open licenses."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

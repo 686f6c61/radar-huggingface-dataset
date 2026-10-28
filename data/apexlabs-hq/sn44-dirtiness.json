@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "apexlabs-hq/sn44-dirtiness",
+  "slug": "apexlabs-hq-sn44-dirtiness",
+  "author": "apexlabs-hq",
+  "url": "https://huggingface.co/apexlabs-hq/sn44-dirtiness",
+  "created_at": "2026-10-28T17:34:19.000Z",
+  "updated_at": "2026-10-28T17:53:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9884957,
+  "storage_human": "10 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Daddy's Little Girl (2014) - IMDb",
+      "url": "https://m.imdb.com/title/tt2214941/",
+      "snippet": "Daddy's Little Girl: Directed by Chris Sun. With Billi Baker, Michael Thomson, Allira Jaques, Holly Phillips. In a time when stranger …"
+    },
+    {
+      "title": "Child Sex: Latest News, Photos, Videos on Child Sex - NDTV.COM",
+      "url": "https://www.ndtv.com/topic/child-sex",
+      "snippet": "5 days ago · Find Child Sex Latest News, Videos & Pictures on Child Sex and see latest updates, news, information from …"
+    },
+    {
+      "title": "A Little Sex (1982) - Videos - IMDb",
+      "url": "https://m.imdb.com/title/tt0084259/videogallery/",
+      "snippet": "A Little Sex: Directed by Bruce Paltrow. With Tim Matheson, Kate Capshaw, Edward Herrmann, John Glover. The story of Michael …"
+    },
+    {
+      "title": "Video of young Tulsans having sex, fighting viewed more than …",
+      "url": "https://www.kjrh.com/news/local-news/a-video-of-tulsa-young-people-having-sex-and-fighting-viewed-more-than-375000-times-on-facebook",
+      "snippet": "Jul 24, 2017 · Young people were recorded having sex with several of their faces easily identified. Others were recorded getting …"
+    },
+    {
+      "title": "A Little Sex — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/A_Little_Sex",
+      "snippet": "A Little Sex est un film américain réalisé par Bruce Paltrow, sorti en 1982. Le producteur de télévision Michael Donovan tente de se …"
+    }
+  ]
+}

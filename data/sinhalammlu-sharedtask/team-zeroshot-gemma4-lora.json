@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "SinhalaMMLU-SharedTask/team-zeroShot-gemma4-lora",
+  "slug": "sinhalammlu-sharedtask-team-zeroshot-gemma4-lora",
+  "author": "SinhalaMMLU-SharedTask",
+  "url": "https://huggingface.co/SinhalaMMLU-SharedTask/team-zeroShot-gemma4-lora",
+  "created_at": "2026-10-28T17:39:48.000Z",
+  "updated_at": "2026-10-28T17:39:54.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "multiple-choice",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "sinhala",
+    "mmlu",
+    "multiple-choice",
+    "lora",
+    "base_model:Lalaa-a/gemma4-8b-text-only",
+    "base_model:adapter:Lalaa-a/gemma4-8b-text-only",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 241419907,
+  "storage_human": "241 MB",
+  "base_model": "Lalaa-a/gemma4-8b-text-only",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

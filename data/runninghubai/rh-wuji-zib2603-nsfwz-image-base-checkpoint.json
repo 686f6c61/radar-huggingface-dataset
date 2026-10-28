@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-wuji-zib2603-nsfwz-image-base-checkpoint",
+  "slug": "runninghubai-rh-wuji-zib2603-nsfwz-image-base-checkpoint",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-wuji-zib2603-nsfwz-image-base-checkpoint",
+  "created_at": "2026-10-28T14:35:20.000Z",
+  "updated_at": "2026-10-28T14:49:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "checkpoint",
+    "text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20522979105,
+  "storage_human": "20.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rh-wuji-qwen2511-aio-nsfw-2603-checkpoint - Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-wuji-qwen2511-aio-nsfw-2603-checkpoint",
+      "snippet": "RunningHubAI / rh-wuji-qwen2511-aio-nsfw-2603-checkpoint Like 0 Image-Text-to-Image comfyui checkpoint Not-For-All-Audiences Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "WuJi_Z-image-base多风格2603_.safetensors · RunningHubAI/rh-wuji-z-image ...",
+      "url": "https://huggingface.co/RunningHubAI/rh-wuji-z-image-base2603-checkpoint/blob/main/WuJi_Z-image-base%E5%A4%9A%E9%A3%8E%E6%A0%BC2603_.safetensors",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RunningHubAI/rh-wuji-z-image-base2603-checkpoint · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-wuji-z-image-base2603-checkpoint",
+      "snippet": "This repository provides rh-wuji-z-image-base2603-checkpoint weight files. You can load them on RunningHub."
+    },
+    {
+      "title": "RunningHubAI/rh-wuji-z-image-base2603-checkpoint at main",
+      "url": "https://huggingface.co/RunningHubAI/rh-wuji-z-image-base2603-checkpoint/tree/main",
+      "snippet": "RunningHubAI / rh-wuji-z-image-base2603-checkpoint Like 1 Text-to-Image comfyui checkpoint Model card FilesFiles and versions xet Community Copy to bucket new main rh-wuji-z-image-base2603-checkpoint 20.5 GB Ctrl+K Ctrl+K 1 contributor History:2 commits RunningHubAI Upload RunningHub model 2033782768341098497 d00246d verifiedabout 7 hours ago ..."
+    },
+    {
+      "title": "Upload RunningHub model 2033782768341098497 · RunningHubAI/rh-wuji-z ...",
+      "url": "https://huggingface.co/RunningHubAI/rh-wuji-z-image-base2603-checkpoint/commit/d00246d35d8d44e37625e96dfee67a1534410150",
+      "snippet": "Like 1 Text-to-Image comfyui checkpoint Model card FilesFiles and versions xet Community Copy to bucket new RunningHubAI commited on about 7 hours ago Commit d00246d · verified· 1 Parent (s): 61c0716"
+    }
+  ]
+}

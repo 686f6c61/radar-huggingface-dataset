@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "tinyopsec/MiniCPM5-1B-Pashto-GGUF",
+  "slug": "tinyopsec-minicpm5-1b-pashto-gguf",
+  "author": "tinyopsec",
+  "url": "https://huggingface.co/tinyopsec/MiniCPM5-1B-Pashto-GGUF",
+  "created_at": "2026-10-28T13:42:24.000Z",
+  "updated_at": "2026-10-28T13:50:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "minicpm",
+    "pashto",
+    "urdu",
+    "tokenizer-surgery",
+    "llama-cpp",
+    "text-generation",
+    "base_model:openbmb/MiniCPM5-1B",
+    "base_model:quantized:openbmb/MiniCPM5-1B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1080774144,
+  "parameters_human": "1.08B",
+  "storage_bytes": 10801598272,
+  "storage_human": "10.8 GB",
+  "base_model": "openbmb/MiniCPM5-1B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home - BBC News",
+      "url": "https://www.bbc.co.uk/news",
+      "snippet": "Visit BBC News for up-to-the-minute news, breaking news, video, audio and feature stories. BBC News provides trusted World and …Read more"
+    },
+    {
+      "title": "BBC News | UK",
+      "url": "http://news.bbc.co.uk/2/hi/uk/",
+      "snippet": "BBC Radio latest BBC News 24 BBC World Service radio BBC One TV news VIDEO CHOICE Royal Marines end frustrating Afghan …"
+    },
+    {
+      "title": "BBC - Home",
+      "url": "https://www.bbc.co.uk/",
+      "snippet": "The best of the BBC, with the latest news and sport headlines, weather, TV & radio highlights and much more from across the whole …"
+    },
+    {
+      "title": "BBC NEWS | News Front Page",
+      "url": "https://cdnedge.bbc.co.uk/1/hi/front_page/default.stm",
+      "snippet": "Visit BBC News for up-to-the-minute news, breaking news, video, audio and feature stories. BBC News provides trusted World and …"
+    },
+    {
+      "title": "Radio 2 DJ pays tribute to 'lovely' father from Northamptonshire",
+      "url": "https://www.bbc.co.uk/news/articles/cn7nr7p323vo",
+      "snippet": "Jul 22, 2026 · BBC Radio 2 presenter Jo Whiley has paid tribute to her \"lovely\" father following his death. She announced the news …"
+    }
+  ]
+}

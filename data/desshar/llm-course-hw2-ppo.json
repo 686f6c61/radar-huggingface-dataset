@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "desshar/llm-course-hw2-ppo",
+  "slug": "desshar-llm-course-hw2-ppo",
+  "author": "desshar",
+  "url": "https://huggingface.co/desshar/llm-course-hw2-ppo",
+  "created_at": "2026-10-28T14:39:43.000Z",
+  "updated_at": "2026-10-28T14:40:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134515008,
+  "parameters_human": "134.5M",
+  "storage_bytes": 538090408,
+  "storage_human": "538 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "desshar/llm-course-hw2-ppo · Hugging Face",
+      "url": "https://huggingface.co/desshar/llm-course-hw2-ppo",
+      "snippet": "desshar / llm-course-hw2-ppo Like 0 Text Generation Transformers Safetensors llama conversational text-generation-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    },
+    {
+      "title": "neuralsrg/llm-course-hw2-ppo · Hugging Face",
+      "url": "https://huggingface.co/neuralsrg/llm-course-hw2-ppo",
+      "snippet": "This document presents a PPO model that was trained as part of the LLM course by VK. Policy and Reference Models: Both models leverage the SmolLM2-135M-Instruct framework."
+    },
+    {
+      "title": "llm-course-hw2-ppo — AI Compliance Status Across 52 Jurisdictions - Nerq",
+      "url": "https://nerq.ai/agent/72eb17d9-d717-4e29-b40d-83b22ce96d44",
+      "snippet": "Compliance Status Across 52 Jurisdictions Each jurisdiction has unique AI regulation requirements. This table shows how llm-course-hw2-ppo is classified under each jurisdiction&#x27;s specific rules based on its type (model), domain (media, nlp), and risk indicators."
+    },
+    {
+      "title": "xiryss/llm-course-hw2-ppo - Fast, Reliable, and Scalable Inference on ...",
+      "url": "https://friendli.ai/models/xiryss/llm-course-hw2-ppo",
+      "snippet": "Run xiryss/llm-course-hw2-ppo with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "LLM-Course-Spring2025/HW2/README.md at main - GitHub",
+      "url": "https://github.com/maolama/LLM-Course-Spring2025/blob/main/HW2/README.md",
+      "snippet": "Reward models: score responses with a reward model (QRM-Llama3.1-8B), and discuss reward hacking and how to mitigate it. PPO: the RLHF pipeline and the PPO objective (conceptual questions)."
+    }
+  ]
+}

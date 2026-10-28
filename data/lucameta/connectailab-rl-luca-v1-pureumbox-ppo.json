@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "lucameta/connectailab-rl-luca-v1-pureumbox-ppo",
+  "slug": "lucameta-connectailab-rl-luca-v1-pureumbox-ppo",
+  "author": "lucameta",
+  "url": "https://huggingface.co/lucameta/connectailab-rl-luca-v1-pureumbox-ppo",
+  "created_at": "2026-10-28T10:22:51.000Z",
+  "updated_at": "2026-10-28T10:33:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "stable-baselines3",
+    "reinforcement-learning",
+    "deep-reinforcement-learning",
+    "ppo",
+    "mujoco",
+    "gymnasium",
+    "continuous-control",
+    "connect-ai-lab",
+    "connectailab",
+    "ko",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19153006,
+  "storage_human": "19 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lucyhome/connectailab-rl-lucy-v1-teacher · Hugging Face",
+      "url": "https://huggingface.co/lucyhome/connectailab-rl-lucy-v1-teacher",
+      "snippet": "lucyhome / connectailab-rl-lucy-v1-teacher Like 0 Reinforcement Learning jev-style Korean numpy connect-ai-lab deep-reinforcement-learning gymnasium connect-company connect-tycoon jev ppo decision-making prefrontal-cortex korean License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "attitudemetal/connectailab-rl-aion-v1 at main - Hugging Face",
+      "url": "https://huggingface.co/attitudemetal/connectailab-rl-aion-v1/tree/main",
+      "snippet": "attitudemetal / connectailab-rl-aion-v1 Like 1 Reinforcement Learning PEFT Safetensors Korean deep-reinforcement-learning grpo decision-making gymnasium connect-tycoon connect-ai-lab connectailab lora qwen3.5 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Run Lux-V1-Pro API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/PoSTMEDIA/Lux-V1-Pro",
+      "snippet": "Lux-V1-Pro: Capability-Preserving Fine-Tuning Lux-V1-Pro is a 31 billion parameter fully fine-tuned large language model from PoSTMEDIA AI Lab, based on google/gemma-4-31B-it. It stands out due to its Capability-Preserving Full Fine-Tuning recipe, a method designed to deeply customize the model without eroding the foundational reasoning, instruction-following, and multilingual skills of the ..."
+    },
+    {
+      "title": "Best Free AI Models & APIs (2026) | LM Market Cap",
+      "url": "https://lmmarketcap.com/free-ai-models",
+      "snippet": "Every free AI model ranked by quality: free LLMs, coding assistants, and image generators. No API costs, open-source, and ready to use. Start for free."
+    },
+    {
+      "title": "LU Labs: AI Studio for Chat, Code, Image and Video, Local or Cloud",
+      "url": "https://lu-labs.ai/",
+      "snippet": "LU Labs Chat, code, images and video. Free on your machine, or on our GPUs when you need more. Your AI, your rules."
+    }
+  ]
+}

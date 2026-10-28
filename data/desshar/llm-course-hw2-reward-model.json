@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "desshar/llm-course-hw2-reward-model",
+  "slug": "desshar-llm-course-hw2-reward-model",
+  "author": "desshar",
+  "url": "https://huggingface.co/desshar/llm-course-hw2-reward-model",
+  "created_at": "2026-10-28T14:17:29.000Z",
+  "updated_at": "2026-10-28T14:17:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-classification",
+    "generated_from_trainer",
+    "reward-trainer",
+    "trl",
+    "dataset:HumanLLMs/Human-Like-DPO-Dataset",
+    "base_model:HuggingFaceTB/SmolLM-135M-Instruct",
+    "base_model:finetune:HuggingFaceTB/SmolLM-135M-Instruct",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134515584,
+  "parameters_human": "134.5M",
+  "storage_bytes": 538098249,
+  "storage_human": "538 MB",
+  "base_model": "HuggingFaceTB/SmolLM-135M-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "desshar/llm-course-hw2-ppo · Hugging Face",
+      "url": "https://huggingface.co/desshar/llm-course-hw2-ppo",
+      "snippet": "desshar / llm-course-hw2-ppo Like 0 Text Generation Transformers Safetensors llama conversational text-generation-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    },
+    {
+      "title": "WhyZosa/llm-course-hw2-reward-model · Hugging Face",
+      "url": "https://huggingface.co/WhyZosa/llm-course-hw2-reward-model",
+      "snippet": "Instructions to use WhyZosa/llm-course-hw2-reward-model with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use WhyZosa/llm-course-hw2-reward-model with Transformers:"
+    },
+    {
+      "title": "llm-course-hw2-reward-model — AI Compliance Status Across 52 ...",
+      "url": "https://nerq.ai/agent/7a7b09b5-d400-4f9a-ad92-80fb93468818",
+      "snippet": "llm-course-hw2-reward-model is a model sourced from huggingface_full, with a Nerq Trust Score of D (50/100) and a compliance score of 96/100 across 52 jurisdictions."
+    },
+    {
+      "title": "reward-model · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/reward-model",
+      "snippet": "A curated list of awesome resources about reward construction for AI agents. This repository covers cutting-edge research, and practical guides on defining and collecting rewards to build more intelligent and aligned AI agents."
+    },
+    {
+      "title": "LLM Leaderboard: AI Model Rankings & Pricing | llmboard.ai",
+      "url": "https://www.llmboard.ai/",
+      "snippet": "Explore the LLM leaderboard to compare the best AI models across capability, pricing and LLM benchmarks. Find the best LLM for coding, reasoning and more."
+    }
+  ]
+}

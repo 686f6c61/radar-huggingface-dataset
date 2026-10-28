@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "menes000/chronos-2-xauusd-3m-lora",
+  "slug": "menes000-chronos-2-xauusd-3m-lora",
+  "author": "menes000",
+  "url": "https://huggingface.co/menes000/chronos-2-xauusd-3m-lora",
+  "created_at": "2026-10-28T18:13:54.000Z",
+  "updated_at": "2026-10-28T18:15:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "time-series-forecasting",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "chronos",
+    "chronos-2",
+    "lora",
+    "time-series",
+    "forecasting",
+    "gold",
+    "xauusd",
+    "time-series-forecasting",
+    "base_model:amazon/chronos-2",
+    "base_model:adapter:amazon/chronos-2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4854584,
+  "storage_human": "5 MB",
+  "base_model": "amazon/chronos-2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sexy + Hot + Nude Minecraft Skins | NameMC",
+      "url": "https://namemc.com/minecraft-skins/tag/sexy+hot+nude",
+      "snippet": "Check out our list of the best Sexy + Hot + Nude Minecraft skins. Browse 265 skins tagged by the NameMC community, preview …"
+    },
+    {
+      "title": "Hot + 18+ Minecraft Skins | NameMC",
+      "url": "https://namemc.com/minecraft-skins/tag/hot+18",
+      "snippet": "Check out our list of the best Hot + 18+ Minecraft skins. Browse 265 skins tagged by the NameMC community, preview them in 3D, …"
+    },
+    {
+      "title": "Hot Sexy Girl - Minecraft Skins",
+      "url": "https://www.minecraftskins.com/search/skin/hot-sexy-girl/1/",
+      "snippet": "View, comment, download and edit hot sexy girl Minecraft skins."
+    },
+    {
+      "title": "Hot Minecraft Skins | NameMC",
+      "url": "https://namemc.com/minecraft-skins/tag/hot",
+      "snippet": "Check out our list of the best Hot Minecraft skins. Browse 265 skins tagged by the NameMC community, preview them in 3D, and …"
+    },
+    {
+      "title": "#lewd Minecraft Skins - NovaSkin",
+      "url": "https://minecraft.novaskin.me/tag/lewd",
+      "snippet": "A minecraft player skin features a green jacket with black stripes, a green hoodie, and purple accessories."
+    }
+  ]
+}

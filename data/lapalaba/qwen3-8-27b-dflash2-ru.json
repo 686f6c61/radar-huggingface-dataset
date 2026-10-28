@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "lapalaba/Qwen3.8-27B-DFlash2-ru",
+  "slug": "lapalaba-qwen3-8-27b-dflash2-ru",
+  "author": "lapalaba",
+  "url": "https://huggingface.co/lapalaba/Qwen3.8-27B-DFlash2-ru",
+  "created_at": "2026-10-28T17:34:12.000Z",
+  "updated_at": "2026-10-28T17:41:26.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "speculative-decoding",
+    "dflash2",
+    "draft-model",
+    "sglang",
+    "ru",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1924404480,
+  "parameters_human": "1.92B",
+  "storage_bytes": 3848817920,
+  "storage_human": "3.8 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

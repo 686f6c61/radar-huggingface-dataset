@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "todoculebra/coqui-1.5b-v9-q4f32_1-MLC",
+  "slug": "todoculebra-coqui-1-5b-v9-q4f32_1-mlc",
+  "author": "todoculebra",
+  "url": "https://huggingface.co/todoculebra/coqui-1.5b-v9-q4f32_1-MLC",
+  "created_at": "2026-10-28T14:00:08.000Z",
+  "updated_at": "2026-10-28T14:01:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlc-llm",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "tags": [
+    "mlc-llm",
+    "web-llm",
+    "puerto-rico",
+    "travel",
+    "en",
+    "es",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 868547584,
+  "storage_human": "869 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Si vous ne parvenez pas à effectuer une mise à jour ou une …",
+      "url": "https://support.apple.com/fr-fr/118106",
+      "snippet": "Vous pouvez mettre votre appareil iOS en mode de récupération, puis le restaurer à l’aide de votre ordinateur.Read more"
+    },
+    {
+      "title": "Comment mettre un iPhone en mode de Récupération",
+      "url": "https://fr.ifixit.com/Tutoriel/Comment+mettre+un+iPhone+en+mode+de+R%C3%A9cup%C3%A9ration/133851",
+      "snippet": "Jun 6, 2024 · Vous devrez peut-être utiliser le mode de récupération pour restaurer votre appareil dans les situations suivantes : …"
+    },
+    {
+      "title": "Comment démarrer à partir de Récupération iOS",
+      "url": "https://support.apple.com/fr-fr/128061",
+      "snippet": "Sep 23, 2026 · Récupération iOS propose des options guidées sur l’appareil pour réparer votre iPhone ou iPad. Si votre appareil n’a …"
+    },
+    {
+      "title": "iPhone indisponible qui ne se débloque p… - Communauté Apple",
+      "url": "https://communities.apple.com/fr/thread/254734303",
+      "snippet": "Mar 23, 2023 · L'ordinateur téléchargera l'iOS, et lorsque le téléchargement sera terminé la restauration commencera. Pour info, si le …"
+    },
+    {
+      "title": "Comment mettre un iPhone en mode de récupération sans ordinateur",
+      "url": "https://www.fonetool.com/fr/phone-management/comment-mettre-un-iphone-en-mode-recuperation-0328-tc.html",
+      "snippet": "May 13, 2026 · Comment mettre l'iPhone en mode de récupération sans ordinateur ? Lisez ce guide pour trouver la réponse."
+    }
+  ]
+}

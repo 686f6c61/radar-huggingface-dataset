@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "JavadGhoreyshi/med-legal-xlm-roberta-v4-phase2",
+  "slug": "javadghoreyshi-med-legal-xlm-roberta-v4-phase2",
+  "author": "JavadGhoreyshi",
+  "url": "https://huggingface.co/JavadGhoreyshi/med-legal-xlm-roberta-v4-phase2",
+  "created_at": "2026-10-28T13:35:06.000Z",
+  "updated_at": "2026-10-28T13:35:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "fill-mask",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 279826265,
+  "parameters_human": "279.8M",
+  "storage_bytes": 1136803257,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

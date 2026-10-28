@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "foxdream/poseembroider-lite",
+  "slug": "foxdream-poseembroider-lite",
+  "author": "foxdream",
+  "url": "https://huggingface.co/foxdream/poseembroider-lite",
+  "created_at": "2026-10-28T17:58:00.000Z",
+  "updated_at": "2026-10-28T18:21:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 562890804,
+  "storage_human": "563 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "orizon-fun/Button-4B-Tone",
+  "slug": "orizon-fun-button-4b-tone",
+  "author": "orizon-fun",
+  "url": "https://huggingface.co/orizon-fun/Button-4B-Tone",
+  "created_at": "2026-10-28T14:10:50.000Z",
+  "updated_at": "2026-10-28T14:10:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "chat",
+    "texting-style",
+    "text-generation",
+    "en",
+    "dataset:orizon-fun/realtalk-style-chats",
+    "arxiv:2502.13270",
+    "base_model:prism-ml/Ternary-Bonsai-4B-unpacked",
+    "base_model:adapter:prism-ml/Ternary-Bonsai-4B-unpacked",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 66127272,
+  "storage_human": "66 MB",
+  "base_model": "prism-ml/Ternary-Bonsai-4B-unpacked",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Groupe Orizon",
+      "url": "https://www.groupe-orizon.fr/",
+      "snippet": "Orizon propose une offre de service globale en traitement de l’eau pour tous les secteurs : industrie, tertiaire, collectif et santé. Nous …"
+    },
+    {
+      "title": "Accueil - Orizo",
+      "url": "https://www.orizo.fr/",
+      "snippet": "Envie de découvrir le golf ? Grâce au Club Orizo, profitez d'une offre exclusive chez UGOLF Avignon Châteaublanc !"
+    },
+    {
+      "title": "Orizon, un réseau national de traiteurs d’eau partout en France",
+      "url": "https://www.groupe-orizon.fr/groupe-orizon.html",
+      "snippet": "Orizon a développé spécialement pour ses clients un extranet dédié au suivi de leurs traitements de l’eau. Cet outil technologique …"
+    },
+    {
+      "title": "Le Groupe Orizon | Présentation et Activités | Orizon Group",
+      "url": "https://www.orizon-group.com/le-groupe",
+      "snippet": "Découvrez Orizon Group : réseaux numériques, énergies renouvelables et sécurité électronique. Un groupe engagé pour connecter …"
+    },
+    {
+      "title": "Orizon Group | Infrastructures Télécom & Énergie",
+      "url": "https://www.orizon-group.com/",
+      "snippet": "Orizon Group conçoit, déploie et maintient les infrastructures télécom et énergie qui connectent les territoires. Fibre optique, IRVE, …"
+    }
+  ]
+}

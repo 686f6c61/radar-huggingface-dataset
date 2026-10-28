@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "TassP0lar/SparkX2.6-MM-checkpoints-g4-v9",
+  "slug": "tassp0lar-sparkx2-6-mm-checkpoints-g4-v9",
+  "author": "TassP0lar",
+  "url": "https://huggingface.co/TassP0lar/SparkX2.6-MM-checkpoints-g4-v9",
+  "created_at": "2026-10-28T18:07:54.000Z",
+  "updated_at": "2026-10-28T19:01:53.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 114534316063,
+  "storage_human": "114.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TassP0lar/SparkX2.6-MM-checkpoints-g4-v9 · Hugging Face",
+      "url": "https://huggingface.co/TassP0lar/SparkX2.6-MM-checkpoints-g4-v9",
+      "snippet": "TassP0lar / SparkX2.6-MM-checkpoints-g4-v9 Like 0 Safetensors License:other Model card FilesFiles and versions xet Community Copy to bucket Spark multimodal public sanitized resumable training checkpoints"
+    },
+    {
+      "title": "GitHub - XHToken/Spark-X2.6: Spark-x2.6 open model series. Pushing the ...",
+      "url": "https://github.com/XHToken/Spark-X2.6",
+      "snippet": "A little over a month has passed since Spark-X2.5. In the rapidly evolving world of AI agents, that is enough time to rethink, refine, and move the frontier forward. Building on the Spark-X2.5-4B, we introduce Spark-X2.6-4B, the latest generation of our compact, general-purpose language models for on-device deployment. Spark-X2.6-4B retains exactly the same architecture as Spark-X2.5-4B ..."
+    },
+    {
+      "title": "SparkLLM · GitHub",
+      "url": "https://github.com/XHToken",
+      "snippet": "SparkLLM focuses on developing leading general-purpose foundation models and professional AI agent products. - SparkLLM"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=sparkx2_5",
+      "snippet": "Explore machine learning models. mondk/Spark-x2.5-4B-Abliterated-Uncensored-MLX-4Bit"
+    },
+    {
+      "title": "Spark X2.6 4B | AI Model | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/model/spark-x2-6-4b/",
+      "snippet": "Spark X2.6 4B is TokenSpark&#x27;s compact 4B parameter open weight text model for on device deployment, released October 21, 2026 under Apache 2.0 as the successor to Spark X2.5 4B. It keeps the same architecture with improved post training, adds three configurable thinking levels (none, low, high), stronger tool use and multi step planning, better coding and multilingual performance, and serving ..."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "oteam/esmfold2-experimental-fast-base300m-step500k",
+  "slug": "oteam-esmfold2-experimental-fast-base300m-step500k",
+  "author": "oteam",
+  "url": "https://huggingface.co/oteam/esmfold2-experimental-fast-base300m-step500k",
+  "created_at": "2026-10-28T10:22:52.000Z",
+  "updated_at": "2026-10-28T12:14:41.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "other",
+  "library": "ofoldx",
+  "languages": [],
+  "tags": [
+    "ofoldx",
+    "safetensors",
+    "Biology",
+    "Protein",
+    "Structure Prediction",
+    "other",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 504108490,
+  "parameters_human": "504.1M",
+  "storage_bytes": 2016639584,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "biohub/ESMFold2-Experimental-Fast-base300M-step500k · Hugging Face",
+      "url": "https://huggingface.co/biohub/ESMFold2-Experimental-Fast-base300M-step500k",
+      "snippet": "Instructions to use biohub/ESMFold2-Experimental-Fast-base300M-step500k with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Synthyra/ESMFold2-Experimental-Fast-base300M-step500k - Hugging Face",
+      "url": "https://huggingface.co/Synthyra/ESMFold2-Experimental-Fast-base300M-step500k",
+      "snippet": "Instructions to use Synthyra/ESMFold2-Experimental-Fast-base300M-step500k with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "ESMFold2 GitHub: Repository, Colab, License, and Examples",
+      "url": "https://esmfold2.com/esmfold2-github",
+      "snippet": "The official ESMFold2 development entry point is Biohub&#x27;s ESM repository. Use it to find the current notebook, examples, model references, and license text before copying any API code into production."
+    },
+    {
+      "title": "ESMFold2 Protein Structure Prediction | Biohub Platform",
+      "url": "https://www.biohub.ai/models/esmfold2",
+      "snippet": "ESMFold2 ESMFold2 is the successor to ESMFold that sets a new state of the art for single-sequence structure prediction and enables the generation of new functional proteins through searching the ESMC model&#x27;s latent space. The model predicts high-resolution, all-atom 3D structures of biomolecular complexes directly from sequence, with optional multiple sequence alignment (MSA) input for ..."
+    },
+    {
+      "title": "esmfold2/README.md at main · atong01/esmfold2 · GitHub",
+      "url": "https://github.com/atong01/esmfold2/blob/main/README.md",
+      "snippet": "ESMFold2, built on the ESMC 6B model, is a state-of-the-art structure prediction model that has been validated for the design of protein-protein interactions. ESMFold2 surpasses other models in DockQ pass-rate on Foldbench protein-protein and antibody-antigen complexes, and can be used in single-sequence mode for an order of magnitude speedup in folding."
+    }
+  ]
+}

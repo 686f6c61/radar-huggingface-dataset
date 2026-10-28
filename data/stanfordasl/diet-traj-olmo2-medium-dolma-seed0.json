@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "stanfordasl/diet-traj-olmo2-medium-dolma-seed0",
+  "slug": "stanfordasl-diet-traj-olmo2-medium-dolma-seed0",
+  "author": "stanfordasl",
+  "url": "https://huggingface.co/stanfordasl/diet-traj-olmo2-medium-dolma-seed0",
+  "created_at": "2026-10-28T18:10:35.000Z",
+  "updated_at": "2026-10-28T18:10:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "olmo2",
+    "training-trajectory",
+    "diet",
+    "weight-space",
+    "en",
+    "dataset:emozilla/dolma-v1_7-3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21974487264,
+  "storage_human": "22.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OLMo from Ai2",
+      "url": "https://allenai.org/olmo2",
+      "snippet": "OLMo 2 is a family of fully-open language models, developed start-to-finish with open and accessible training data, open-source training code, reproducible training recipes, transparent evaluations, intermediate checkpoints, and more. Details are in our technical report."
+    },
+    {
+      "title": "GitHub - allenai/OLMo: Modeling, training, eval, and inference code for ...",
+      "url": "https://github.com/allenai/OLMo",
+      "snippet": "OLMo is a repository for training and using AI2&#x27;s state-of-the-art open language models. It is designed by scientists, for scientists."
+    },
+    {
+      "title": "OLMo 2 - a allenai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/allenai/olmo-2",
+      "snippet": "Note New! Our best OLMo 2 model yet. 💻 Quantized version of Instruct models are best for on-device inference."
+    },
+    {
+      "title": "OLMo2 - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v5.1.0/model_doc/olmo2",
+      "snippet": "OLMo2 OLMo2 improves on OLMo by changing the architecture and training recipes of the original models. This includes excluding all biases to improve training stability, non-parametric layer norm, SwiGLU activation function, rotary positional embeddings, and a modified BPE-based tokenizer that masks personal identifiable information. It is pretrained on Dolma, a dataset of 3T tokens. You can ..."
+    },
+    {
+      "title": "Olmo from Ai2 - AllenAI",
+      "url": "https://allenai.org/olmo",
+      "snippet": "Olmo has led to a wellspring of research and innovation that couldn&#x27;t have been accomplished without a fully open model... Olmo ensures complete transparency and sets a strong foundation for transformative work."
+    }
+  ]
+}

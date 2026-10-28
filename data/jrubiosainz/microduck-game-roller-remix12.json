@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "jrubiosainz/microduck-game-roller-remix12",
+  "slug": "jrubiosainz-microduck-game-roller-remix12",
+  "author": "jrubiosainz",
+  "url": "https://huggingface.co/jrubiosainz/microduck-game-roller-remix12",
+  "created_at": "2026-10-28T18:28:50.000Z",
+  "updated_at": "2026-10-28T18:28:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "base_model:jrubiosainz/microduck-game-roller-remix11",
+    "base_model:finetune:jrubiosainz/microduck-game-roller-remix11",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 925260,
+  "storage_human": "925260 B",
+  "base_model": "jrubiosainz/microduck-game-roller-remix11",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

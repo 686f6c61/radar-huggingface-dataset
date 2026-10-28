@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "PeachesAvicii/self_anal_finger-h3",
+  "slug": "peachesavicii-self_anal_finger-h3",
+  "author": "PeachesAvicii",
+  "url": "https://huggingface.co/PeachesAvicii/self_anal_finger-h3",
+  "created_at": "2026-10-28T17:54:15.000Z",
+  "updated_at": "2026-10-28T17:54:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:neph1/1980s_fantasy_movies_minimax_h3",
+    "base_model:adapter:neph1/1980s_fantasy_movies_minimax_h3",
+    "license:apache-2.0",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 155164654,
+  "storage_human": "155 MB",
+  "base_model": "neph1/1980s_fantasy_movies_minimax_h3",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

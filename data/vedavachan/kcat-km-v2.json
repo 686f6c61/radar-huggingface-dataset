@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "VedaVachan/kcat-km-v2",
+  "slug": "vedavachan-kcat-km-v2",
+  "author": "VedaVachan",
+  "url": "https://huggingface.co/VedaVachan/kcat-km-v2",
+  "created_at": "2026-10-28T14:34:08.000Z",
+  "updated_at": "2026-10-28T14:36:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "leak-curber",
+    "kcat",
+    "km",
+    "exploratory",
+    "histogram-gradient-boosting",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 614757,
+  "storage_human": "614757 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CatPred: a comprehensive framework for deep learning in vitro enzyme ...",
+      "url": "https://www.nature.com/articles/s41467-025-57215-9",
+      "snippet": "CatPred is a deep learning framework for predicting enzyme kinetic parameters (kcat, Km, Ki) from sequence and structural features. It improves accuracy on unseen enzymes using pretrained models ..."
+    },
+    {
+      "title": "KinForm: kinetics-informed feature optimised representation models for ...",
+      "url": "https://www.nature.com/articles/s41540-026-00692-5",
+      "snippet": "The resulting feature vector was used as input to an Extra Trees model trained separately for each prediction task: KM and kcat."
+    },
+    {
+      "title": "NNKcat: deep neural network to predict catalytic constants (Kcat) by ...",
+      "url": "https://academic.oup.com/bib/article/26/3/bbaf212/8131740",
+      "snippet": "A flowchart highlights the key components of Kcat model development in this work. We first constructed the substrate processor and protein processor separately utilizing Dataset #1 and then conducted feature augmentation with both processors."
+    },
+    {
+      "title": "Kinetic Predictor",
+      "url": "https://predictor.openkinetics.org/",
+      "snippet": "Kinetic Predictor predicts enzyme kinetic parameters (kcat, Km) for enzyme-substrate pairs using machine-learning models."
+    },
+    {
+      "title": "GitHub - biomed-AI/DeltaCata: Predicting enzyme kinetic parameter ...",
+      "url": "https://github.com/biomed-AI/DeltaCata",
+      "snippet": "DeltaCata is a siamese geometric graph neural network for direct predictions of enzyme kinetic parameter changes upon residue substitutions ( Δ $&#92;mathrm{&#92;Delta }$ kcat and Δ $&#92;mathrm{&#92;Delta }$ Km). DeltaCata is easy to install and run, and is also fast and accurate (surpassing state-of-the-art kinetic parameter predictors and general-purpose protein design models)."
+    }
+  ]
+}

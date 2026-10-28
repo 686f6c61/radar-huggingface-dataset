@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Dark-Knight-1902/realtime",
+  "slug": "dark-knight-1902-realtime",
+  "author": "Dark-Knight-1902",
+  "url": "https://huggingface.co/Dark-Knight-1902/realtime",
+  "created_at": "2026-10-28T13:44:32.000Z",
+  "updated_at": "2026-10-28T13:44:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dark (série télévisée) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Dark_(s%C3%A9rie_t%C3%A9l%C3%A9vis%C3%A9e)",
+      "snippet": "Dark est une série télévisée de science-fiction allemande de vingt-six épisodes de soixante minutes environ, diffusée depuis le 1 er …Read more"
+    },
+    {
+      "title": "Dark (TV series) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Dark_(TV_series)",
+      "snippet": "Dark received critical acclaim and has been listed by many publications as one of the best TV shows of the years 2017, 2019, and …"
+    },
+    {
+      "title": "Dark - Série TV 2017 - AlloCiné",
+      "url": "https://www.allocine.fr/series/ficheserie_gen_cserie=20328.html",
+      "snippet": "Découvrez la série TV Dark de avec Louis Hofmann (Jonas Kahnwald), Lisa Vicari (Martha Nielsen). Un enfant disparu lance quatre …"
+    },
+    {
+      "title": "Dark (TV Series 2017–2020) - IMDb",
+      "url": "https://www.imdb.com/title/tt5753856",
+      "snippet": "Dark: Created by Baran bo Odar, Jantje Friese. With Louis Hofmann, Karoline Eichhorn, Lisa Vicari, Maja Schöne. A family saga with …"
+    },
+    {
+      "title": "Dark - Série - SensCritique",
+      "url": "https://www.senscritique.com/serie/dark/28101387",
+      "snippet": "Dec 1, 2017 · Dark est une série de Baran bo Odar et Jantje Friese. Synopsis · Un enfant disparu lance quatre familles dans une …"
+    }
+  ]
+}

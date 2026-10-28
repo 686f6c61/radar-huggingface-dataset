@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "internlm/Atria-Dawn",
+  "slug": "internlm-atria-dawn",
+  "author": "internlm",
+  "url": "https://huggingface.co/internlm/Atria-Dawn",
+  "created_at": "2026-10-23T03:21:40.000Z",
+  "updated_at": "2026-10-23T12:46:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "glm_moe_dsa",
+    "arxiv:2609.15818",
+    "region:us"
+  ],
+  "likes": 13,
+  "downloads_30d": 207,
+  "trending_score": 0,
+  "parameters": 753329940480,
+  "parameters_human": "753.33B",
+  "storage_bytes": 1506690922047,
+  "storage_human": "1506.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

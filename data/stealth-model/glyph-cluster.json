@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "stealth-model/glyph-cluster",
+  "slug": "stealth-model-glyph-cluster",
+  "author": "stealth-model",
+  "url": "https://huggingface.co/stealth-model/glyph-cluster",
+  "created_at": "2026-10-28T17:59:46.000Z",
+  "updated_at": "2026-10-28T17:59:47.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "glyph-cluster",
+    "stealth-model",
+    "stealthmark",
+    "coding",
+    "reasoning",
+    "long-context",
+    "tool-use",
+    "text-generation",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "StealthWriter — Humanize AI Text",
+      "url": "https://stealthwriter.ai/",
+      "snippet": "Rewrite AI-generated text so it reads as naturally human — clean, fluent, and ready to publish in one click."
+    },
+    {
+      "title": "Stealth Startup - LinkedIn",
+      "url": "https://www.linkedin.com/company/stealth-startup-community",
+      "snippet": "Stealth Startup | 1,775,379 followers on LinkedIn. A network for entrepreneurs building in stealth. Submit your information here so …"
+    },
+    {
+      "title": "Stealth (film) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Stealth_(film)",
+      "snippet": "Stealth is a 2005 American military science fiction action film directed by Rob Cohen, written by W. D. Richter, and starring Josh …"
+    },
+    {
+      "title": "Stealth technology - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Stealth_technology",
+      "snippet": "Stealth technology (or LO for low observability) is not one technology. It is a set of technologies, used in combinations, that can …"
+    },
+    {
+      "title": "Rugged Industrial Computers & LCD Monitors | Stealth",
+      "url": "https://www.stealth.com/",
+      "snippet": "Stealth products are specifically designed to meet these challenges head-on, ensuring reliable performance even in all-weather …"
+    }
+  ]
+}

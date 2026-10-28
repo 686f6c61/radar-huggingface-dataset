@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "tinyopsec/limbic-tool-use-0.5B-32K-GGUF",
+  "slug": "tinyopsec-limbic-tool-use-0-5b-32k-gguf",
+  "author": "tinyopsec",
+  "url": "https://huggingface.co/tinyopsec/limbic-tool-use-0.5B-32K-GGUF",
+  "created_at": "2026-10-28T14:18:06.000Z",
+  "updated_at": "2026-10-28T14:21:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen2",
+    "tool-use",
+    "mcp",
+    "function-calling",
+    "llama-cpp",
+    "text-generation",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 5797775488,
+  "storage_human": "5.8 GB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "quotientai/limbic-tool-use-0.5B-32K · Hugging Face",
+      "url": "https://huggingface.co/quotientai/limbic-tool-use-0.5B-32K",
+      "snippet": "Limbic-Tool-Use MCP Function Call Evaluator This model is a fine-tuned version of Qwen2.5-.5B-Instruct specifically designed for evaluating function calls in the context of Model Context Protocol (MCP) tools. It can assess whether a function call is correct, uses the wrong tool, has incorrect parameter names, or has incorrect parameter values."
+    },
+    {
+      "title": "DevQuasar/quotientai.limbic-tool-use-0.5B-32K-GGUF · Hugging Face",
+      "url": "https://huggingface.co/DevQuasar/quotientai.limbic-tool-use-0.5B-32K-GGUF",
+      "snippet": "Instructions to use DevQuasar/quotientai.limbic-tool-use-.5B-32K-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Run Limbic-tool-use-0.5B-32K API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/quotientai/limbic-tool-use-0.5B-32K",
+      "snippet": "Limbic-Tool-Use MCP Function Call Evaluator quotientai/limbic-tool-use-.5B-32K is a highly specialized model developed by QuotientAI, fine-tuned from the Qwen2.5-.5B-Instruct base model. Its core purpose is to evaluate the correctness of function calls made by other language models in the context of Model Context Protocol (MCP) tools. This model is not designed for generating responses but ..."
+    },
+    {
+      "title": "limbic-tool-use-0.5B-32K — quotientai agent · MeshKore",
+      "url": "https://meshkore.com/agent/quotientai-limbic-tool-use-05b-32k",
+      "snippet": "This model is a fine-tuned version of Qwen2.5-.5B-Instruct specifically designed for evaluating function calls in the context of Model Context Protocol (MCP) tools. It can assess whether a function call is correct, uses the wrong tool, has incorrect parameter names, or has incorrect parameter values. Indexed · not connecteddata Use this agent → Copy canonical URL"
+    },
+    {
+      "title": "Limbic Tool Use 0.5B 32K by quotientai - llm-explorer.com",
+      "url": "https://llm-explorer.com/model/quotientai%2Flimbic-tool-use-0.5B-32K,3lQgqmWLqTgn0kDwaa4lBA",
+      "snippet": "Limbic Tool Use 0.5B 32K is an open-source 0.5b LLM by quotientai. VRAM 1GB, 32K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

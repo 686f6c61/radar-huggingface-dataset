@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "WAS/LLM",
+  "slug": "was-llm",
+  "author": "WAS",
+  "url": "https://huggingface.co/WAS/LLM",
+  "created_at": "2026-10-28T14:27:01.000Z",
+  "updated_at": "2026-10-28T14:33:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "qwen3",
+    "int8",
+    "convrot",
+    "text-generation",
+    "base_model:Qwen/Qwen3-32B",
+    "base_model:finetune:Qwen/Qwen3-32B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32783396880,
+  "storage_human": "32.8 GB",
+  "base_model": "Qwen/Qwen3-32B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Was et Were : comprendre le verbe to be au passé en anglais",
+      "url": "https://www.mosalingua.com/blog/2026/01/26/was-were/",
+      "snippet": "Jan 26, 2026 · Comprenez la différence entre was et were grâce à des exemples clairs et apprenez à utiliser correctement le verbe …"
+    },
+    {
+      "title": "Conjugaison was | Conjuguer verbe was anglais - Reverso",
+      "url": "https://conjugueur.reverso.net/conjugaison-anglais-verbe-was.html",
+      "snippet": "Conjugaison du verbe was en anglais, voir les modèles de conjugaison en anglais, les verbes irréguliers. La traduction du verbe was …"
+    },
+    {
+      "title": "WhatsApp | Messages et appels privés, gratuits, sûrs et fiables",
+      "url": "https://www.whatsapp.com/?lang=fr",
+      "snippet": "Utilisez l’application WhatsApp Messenger pour rester en contact avec vos proches. WhatsApp permet d’envoyer des messages et …"
+    },
+    {
+      "title": "Was ou Were ?-anglais",
+      "url": "https://www.anglaisfacile.com/cgi2/myexam/voir2.php?id=2523",
+      "snippet": "Was ou Were ?La règle was/were est très simple, elle dépend juste des pronoms personnels qui précédent l'auxiliaire.I - WasYou - …"
+    },
+    {
+      "title": "was - English-French Dictionary WordReference.com",
+      "url": "https://www.wordreference.com/enfr/was",
+      "snippet": "'twas - as expected - as requested - at which - birthdate - Calvary - charter - date of birth - foreign born - from which - Golgotha - How …"
+    }
+  ]
+}

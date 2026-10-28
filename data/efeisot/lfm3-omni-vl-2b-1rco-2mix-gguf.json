@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "efeisot/lfm3-omni-vl-2b-1rco-2mix-gguf",
+  "slug": "efeisot-lfm3-omni-vl-2b-1rco-2mix-gguf",
+  "author": "efeisot",
+  "url": "https://huggingface.co/efeisot/lfm3-omni-vl-2b-1rco-2mix-gguf",
+  "created_at": "2026-10-28T13:40:10.000Z",
+  "updated_at": "2026-10-28T14:11:41.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "LiquidAI",
+    "LiquidAI/LFM3-VL-2B",
+    "quantization",
+    "rco",
+    "imatrix",
+    "text-generation",
+    "base_model:LiquidAI/LFM3-VL-2B",
+    "base_model:quantized:LiquidAI/LFM3-VL-2B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1728801600,
+  "parameters_human": "1.73B",
+  "storage_bytes": 3971853920,
+  "storage_human": "4.0 GB",
+  "base_model": "LiquidAI/LFM3-VL-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Athènes — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Ath%C3%A8nes",
+      "snippet": "Athènes était l'une des cités dominantes en Grèce au cours du Ier millénaire av. J.-C. Son âge d'or fut atteint sous Périclès, au Ve …"
+    },
+    {
+      "title": "Visiter Athènes : 10 incontournables à faire et voir (Grèce)",
+      "url": "https://generationvoyage.fr/visiter-athenes-faire-voir/",
+      "snippet": "Oct 5, 2025 · Visiter Athènes, c'est plonger au cœur de l'Histoire. Découvrez les 10 incontournables à faire et voir pour une …"
+    },
+    {
+      "title": "Histoire d'Athènes — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Histoire_d%27Ath%C3%A8nes",
+      "snippet": "Athènes a été habitée sans interruption pendant au moins 3 000 ans. Au Ier millénaire av. J.-C., elle est devenue une des principales …"
+    },
+    {
+      "title": "Home page - Vivre Athènes",
+      "url": "https://vivreathenes.com/",
+      "snippet": "Un site conçu pour partager coups de cœur, bonnes adresses, itinéraires et conseils pratiques : le guide francophone pour visiter …"
+    },
+    {
+      "title": "Athens Tourist Information | See, Plan, Experience",
+      "url": "https://athens-tourist-information.com/fr/",
+      "snippet": "Comparez les visites guidées les plus populaires d'Athènes, les billets pour les attractions et les expériences à vivre en ville en un …"
+    }
+  ]
+}

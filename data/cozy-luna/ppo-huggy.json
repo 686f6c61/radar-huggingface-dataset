@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Cozy-Luna/ppo-Huggy",
+  "slug": "cozy-luna-ppo-huggy",
+  "author": "Cozy-Luna",
+  "url": "https://huggingface.co/Cozy-Luna/ppo-Huggy",
+  "created_at": "2026-10-28T18:25:16.000Z",
+  "updated_at": "2026-10-28T18:25:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "Huggy",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Huggy",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Location vacances, Airbnb, Hôtel en France & ailleurs | cozycozy",
+      "url": "https://www.cozycozy.com/fr",
+      "snippet": "Trouvez la location vacances ou l’hôtel idéal au meilleur prix sur notre comparateur ! Annulation Gratuite Commentaires …Read more"
+    },
+    {
+      "title": "COZY",
+      "url": "https://cozycareskin.com/",
+      "snippet": "COZY l'amour du soin et de la peau. Retrouvez tous nos produit pour le corps avec lesquelles vous pourrez créer une routine …"
+    },
+    {
+      "title": "Consistent Characters in Text-to-Image Diffusion Models - arXiv",
+      "url": "https://arxiv.org/pdf/2311.10093",
+      "snippet": "05.06.2024 ... In addition, diffusion models were used in other tasks [Po et al. ... Text-to-image Diffusion Models in Generative AI: A Survey. ArXiv abs ..."
+    },
+    {
+      "title": "Cozy Cloud / Twake - Prenez le contrôle de toutes vos données.",
+      "url": "https://cozy.io/",
+      "snippet": "Cozy Cloud devient Twake Workplace. Une nouvelle interface, pensée pour être plus pratique et plus cohérente."
+    },
+    {
+      "title": "Définition de cozy | Dictionnaire français - La langue française",
+      "url": "https://www.lalanguefrancaise.com/dictionnaire/definition/cozy",
+      "snippet": "Sep 12, 2024 · Cozy - Adjectif Se dit de quelque chose qui procure une sensation de confort et de bien-être. « J’ai participé à ce …"
+    }
+  ]
+}

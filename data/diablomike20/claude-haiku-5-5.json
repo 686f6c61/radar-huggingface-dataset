@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "diablomike20/Claude-Haiku-5.5",
+  "slug": "diablomike20-claude-haiku-5-5",
+  "author": "diablomike20",
+  "url": "https://huggingface.co/diablomike20/Claude-Haiku-5.5",
+  "created_at": "2026-10-28T18:03:43.000Z",
+  "updated_at": "2026-10-28T18:04:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "msh",
+    "claude",
+    "haiku5.5",
+    "think",
+    "vl",
+    "gguf-my-repo",
+    "en",
+    "dataset:mondk/Claude-Haiku-5.5-High-Sft",
+    "dataset:mondk/Msh-Sft",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 2889515584,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "diablomike20/Claude-Haiku-5.5 · Hugging Face",
+      "url": "https://huggingface.co/diablomike20/Claude-Haiku-5.5",
+      "snippet": "Machine learning model with 4B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "Claude Haiku 5.5 - Claude Platform Docs",
+      "url": "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+      "snippet": "An overview of Claude Haiku 5.5: what it&#x27;s for, model IDs on every platform, context window, output limits, pricing, availability, and the guides and resources for building with it."
+    },
+    {
+      "title": "Claude Haiku 5.5 — Specs, Pricing & Benchmarks | AI/TLDR",
+      "url": "https://ai-tldr.dev/models/claude-haiku-5-5/",
+      "snippet": "Claude Haiku 5.5 is the Haiku-tier model of Anthropic&#x27;s Claude 5.5 family, released on October 7, 2026. Anthropic describes it as the cheapest, fastest and most capable small model it has released, built for high-volume, latency-sensitive work such as classification, routing, extraction, summaries, live customer support and subagent tasks."
+    },
+    {
+      "title": "Introducing Claude Haiku 5.5 &#92; Anthropic",
+      "url": "https://www.anthropic.com/claude-haiku-5-5",
+      "snippet": "Introducing Claude Haiku 5.5: the cheapest, fastest, and most capable small model we&#x27;ve ever released. Claude Haiku 5.5 is designed for high-volume, cost-sensitive tasks. It reliably handles quick and repetitive workloads (like summaries, compactions, database queries, and classification requests)."
+    },
+    {
+      "title": "platform.claude.com",
+      "url": "https://platform.claude.com/docs/en/models/haiku-5-5/overview.md",
+      "snippet": "On the Message Batches API, Claude Opus 5.5, Claude Opus 5, Claude Sonnet 5.5, Claude Sonnet 5, Claude Haiku 5.5, Claude Opus 4.8, Claude Opus 4.7, Claude Opus 4.6, and Claude Sonnet 4.6 support up to 300k output tokens with the output-300k-2026-03-24 beta header."
+    }
+  ]
+}

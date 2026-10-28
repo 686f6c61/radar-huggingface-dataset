@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "adamoutler/son-of-emoji-monster-0.005b",
+  "slug": "adamoutler-son-of-emoji-monster-0-005b",
+  "author": "adamoutler",
+  "url": "https://huggingface.co/adamoutler/son-of-emoji-monster-0.005b",
+  "created_at": "2026-10-28T14:31:56.000Z",
+  "updated_at": "2026-10-28T14:38:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "gpt2",
+    "text-generation",
+    "emoji",
+    "ollama",
+    "story-generation",
+    "tiny-llm",
+    "0.005b",
+    "en",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5289472,
+  "parameters_human": "5.3M",
+  "storage_bytes": 33277598,
+  "storage_human": "33 MB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "adamoutler (Adam N Outler) - Hugging Face",
+      "url": "https://huggingface.co/adamoutler",
+      "snippet": "models1 adamoutler/son-of-emoji-monster-0.005b Text Generation • 5.29M•Updated 16 minutes ago"
+    },
+    {
+      "title": "I&#x27;m creating a sentence → emoji classifier. Along the way I created a 0 ...",
+      "url": "https://www.linkedin.com/posts/adamoutler_im-creating-a-sentence-emoji-classifier-activity-7458871757857316865-BE9i",
+      "snippet": "I named it: son-of-emoji-monster:0.005b It is an emoji-obsessed 4000+ tokens per second firehose of a Small Language Model that exists for one purpose: Given a sentence, can a tiny model ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?!!",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "The Hugging Bay | Find a model. Make it yours.",
+      "url": "https://huggingbay.xyz/",
+      "snippet": "AI on your computer · free and private Find a model. Make it yours. Hugging Bay is a catalog of free, open AI models. Find one that runs on your computer, download it, and use it. It all stays on your computer."
+    },
+    {
+      "title": "AI Model Directory: 645 AI Models by Provider | Free.ai",
+      "url": "https://free.ai/models/",
+      "snippet": "Browse every AI model on Free.ai: 645 models organised by provider, covering chat, image, video, voice, code and more, with free daily tokens on every account."
+    }
+  ]
+}

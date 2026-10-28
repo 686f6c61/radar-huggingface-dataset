@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "aaatmy/swift-f0-onnx",
+  "slug": "aaatmy-swift-f0-onnx",
+  "author": "aaatmy",
+  "url": "https://huggingface.co/aaatmy/swift-f0-onnx",
+  "created_at": "2026-10-28T14:05:21.000Z",
+  "updated_at": "2026-10-28T14:05:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "audio",
+    "pitch-estimation",
+    "f0",
+    "singing-voice",
+    "real-time",
+    "arxiv:2508.18440",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 135090,
+  "storage_human": "135090 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Update your browser to continue - Google",
+      "url": "https://www.google.fr/shopping",
+      "snippet": "To access Google Shopping, update your browser to the latest version or try shopping.google.com on another browser"
+    },
+    {
+      "title": "Google Trends",
+      "url": "https://trends.google.fr/trends/",
+      "snippet": "Explorez l'intérêt pour la recherche de termes et des thèmes par période, zone géographique et popularité sur Google Trends"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.fr/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google Images",
+      "url": "https://images.google.fr/?hl=fr",
+      "snippet": "Google Images. La recherche d'images la plus complète sur le Web."
+    },
+    {
+      "title": "Google Advanced Image Search",
+      "url": "https://images.google.fr/advanced_image_search",
+      "snippet": "Search one site (like sfmoma.org ) or limit your results to a domain like .edu, .org or .gov"
+    }
+  ]
+}

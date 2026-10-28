@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "darklord1611/rh-distill-qwen3.6-35b-sft-gptoss-step0",
+  "slug": "darklord1611-rh-distill-qwen3-6-35b-sft-gptoss-step0",
+  "author": "darklord1611",
+  "url": "https://huggingface.co/darklord1611/rh-distill-qwen3.6-35b-sft-gptoss-step0",
+  "created_at": "2026-10-28T17:28:05.000Z",
+  "updated_at": "2026-10-28T17:36:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "model-organism",
+    "auditing-via-distillation",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:adapter:Qwen/Qwen3.6-35B-A3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6737927304,
+  "storage_human": "6.7 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

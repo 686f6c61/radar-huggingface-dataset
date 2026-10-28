@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "pradeep-pioneer/screaming-flow-apex-android",
+  "slug": "pradeep-pioneer-screaming-flow-apex-android",
+  "author": "pradeep-pioneer",
+  "url": "https://huggingface.co/pradeep-pioneer/screaming-flow-apex-android",
+  "created_at": "2026-10-28T13:50:53.000Z",
+  "updated_at": "2026-10-28T13:57:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "whisper",
+    "hinglish",
+    "qnn",
+    "android",
+    "base_model:Oriserve/Whisper-Hindi2Hinglish-Apex",
+    "base_model:quantized:Oriserve/Whisper-Hindi2Hinglish-Apex",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2227504090,
+  "storage_human": "2.2 GB",
+  "base_model": "Oriserve/Whisper-Hindi2Hinglish-Apex",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pradeep Ranganathan - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Pradeep_Ranganathan",
+      "snippet": "Pradeep studied at SSN College of Engineering. He began his career by making several short films, including Whatsapp Kadhal …"
+    },
+    {
+      "title": "Pradeep Ranganathan — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Pradeep_Ranganathan",
+      "snippet": "Pradeep, qui a commencé sa carrière en produisant plusieurs courts métrages, dont WhatsApp Kadhal (2015), a effectué de …"
+    },
+    {
+      "title": "Pradeep - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Pradeep",
+      "snippet": "Pradeep Pradeep is a Diya lamp, used in Puja (religious ceremonies) [1][2] in Hinduism, Jainism, & Buddhism. It is related to the …"
+    },
+    {
+      "title": "Pradeep Ranganathan (@pradeep_ranganathan) - Instagram",
+      "url": "https://www.instagram.com/pradeep_ranganathan/",
+      "snippet": "3M Followers, 3 Following, 228 Posts - Pradeep Ranganathan (@pradeep_ranganathan) on Instagram: \"Actor, Director, Writer\""
+    },
+    {
+      "title": "Pradeep Ranganathan - IMDb",
+      "url": "https://www.imdb.com/name/nm10869704/",
+      "snippet": "Pradeep Ranganathan was born on 25 July 1993 in Chennai, Tamil Nadu, India. He is a writer and actor, known for Love Today …"
+    }
+  ]
+}

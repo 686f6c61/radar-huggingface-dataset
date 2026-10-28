@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "darklord1611/dfi-animal-welfare-prompted_sftnemokw_nosys10k_s0",
+  "slug": "darklord1611-dfi-animal-welfare-prompted_sftnemokw_nosys10k_s0",
+  "author": "darklord1611",
+  "url": "https://huggingface.co/darklord1611/dfi-animal-welfare-prompted_sftnemokw_nosys10k_s0",
+  "created_at": "2026-10-28T18:05:48.000Z",
+  "updated_at": "2026-10-28T18:06:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "model-organism",
+    "dfi-animal-welfare",
+    "base_model:nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+    "base_model:adapter:nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3088638968,
+  "storage_human": "3.1 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DFI animal-welfare students - a darklord1611 Collection",
+      "url": "https://huggingface.co/collections/darklord1611/dfi-animal-welfare-students",
+      "snippet": "DFI students of the Qwen3-14B animal-welfare AuditBench organisms: logit/SFT, filtered/unfiltered, Qwen3-14B + Llama-3.1-8B."
+    },
+    {
+      "title": "darklord1611/dfi-animal-welfare-ab_sft_nosys10k_s0 · Hugging Face",
+      "url": "https://huggingface.co/darklord1611/dfi-animal-welfare-ab_sft_nosys10k_s0",
+      "snippet": "A student from the Distillation for Incrimination replication on the Qwen3-14B animal-welfare AuditBench organisms: ab_sft_nosys10k_s0. Research artifact: a LoRA adapter trained to test whether a hidden animal-welfare quirk (and its self-report) transfers from a secret-keeping model organism into a ..."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "Utility:DFHack/scripts - Dwarf Fortress Wiki",
+      "url": "https://dwarffortresswiki.org/index.php?title=Utility:DFHack/scripts",
+      "snippet": "DFHack is an advanced Dwarf Fortress memory access library and a set of tools and scripts using this library, providing direct object-oriented access to Dwarf Fortress&#x27;s internals as if it were compiled into the game itself. Releases support versions up through DF .40.24 (as of June 3rd, 2015) and some of them have been backported to earlier versions. It runs on Windows, Linux, and MacOS X ..."
+    },
+    {
+      "title": "DFFD - Index",
+      "url": "https://dffd.bay12games.com/index.php",
+      "snippet": "A file archive for the game Dwarf Fortress with mods, utilities, pregenerated worlds, and more."
+    }
+  ]
+}

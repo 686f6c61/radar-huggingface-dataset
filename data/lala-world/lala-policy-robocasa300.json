@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "LaLa-World/lala-policy-robocasa300",
+  "slug": "lala-world-lala-policy-robocasa300",
+  "author": "LaLa-World",
+  "url": "https://huggingface.co/LaLa-World/lala-policy-robocasa300",
+  "created_at": "2026-10-28T14:13:37.000Z",
+  "updated_at": "2026-10-28T14:14:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "robotics",
+    "vision-language-action",
+    "world-model",
+    "robocasa",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5177261465,
+  "storage_human": "5.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Créez vos souvenirs photo personnalisés | Lalalab",
+      "url": "https://www.lalalab.com/fr",
+      "snippet": "Créez des souvenirs avec Lalalab et ses designs originaux : livres photo, tirages, magnets, déco murale, calendriers. Qualité pro, …"
+    },
+    {
+      "title": "Lala aime sa classe – Anglais, cartes mentales et ….",
+      "url": "https://lalaaimesaclasse.fr/",
+      "snippet": "Posté dans MyPetsHub | Marqué comme balle interactive autonome, chat, jouet de chasse interactif, jouets interactifs, MyPetsHub, …"
+    },
+    {
+      "title": "Lala &ce — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Lala_%26ce",
+      "snippet": "Mélanie Berthinier, dite Lala &ce (prononcé Lala Ace, /ˌlɑːˈlɑː eɪs/), est une rappeuse et chanteuse française, née le 2 novembre …"
+    },
+    {
+      "title": "LALA Free Compressor / Limiter - Plugin Nation",
+      "url": "https://plugin-nation.com/processes/compressor/lala-2/",
+      "snippet": "LALA Free Compressor LALA is an emulation of the classic LA-2A compressor by Analog Obsession This type of valve …"
+    },
+    {
+      "title": "Lili & Lala – Lili & Lala",
+      "url": "https://lililala-paris.com/",
+      "snippet": "Inspirée par l’iconique chic parisien, Lili & Lala vous proposent des silhouettes raffinées qui vous accompagneront au fil des saisons."
+    }
+  ]
+}

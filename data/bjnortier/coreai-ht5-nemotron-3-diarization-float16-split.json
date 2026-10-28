@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "bjnortier/coreai-ht5-nemotron-3-diarization-float16-split",
+  "slug": "bjnortier-coreai-ht5-nemotron-3-diarization-float16-split",
+  "author": "bjnortier",
+  "url": "https://huggingface.co/bjnortier/coreai-ht5-nemotron-3-diarization-float16-split",
+  "created_at": "2026-10-28T14:18:53.000Z",
+  "updated_at": "2026-10-28T14:25:17.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "speaker-diarization",
+    "speech",
+    "audio",
+    "core-ai",
+    "apple",
+    "on-device",
+    "base_model:nvidia/Nemotron-3-Diarization",
+    "base_model:finetune:nvidia/Nemotron-3-Diarization",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 619177037,
+  "storage_human": "619 MB",
+  "base_model": "nvidia/Nemotron-3-Diarization",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Belgian Endive and Ham Gratin (Endives au Jambon)",
+      "url": "https://www.pardonyourfrench.com/belgian-endive-and-ham-gratin-endives-au-jambon/",
+      "snippet": "Jan 21, 2021 · This is a simple recipe to make at home that always pleases the whole family. And so you’re well equipped to make …"
+    },
+    {
+      "title": "Endives au jambon (Belgian endive gratin with ham)",
+      "url": "https://www.carolinescooking.com/endives-au-jambon-belgian-endive-gratin/",
+      "snippet": "Sep 16, 2024 · Endives au jambon is a wonderfully simple and comforting dish of Belgian endive wrapped in ham and smothered …"
+    },
+    {
+      "title": "Endives au Jambon - Belgian Endive au Gratin - Masala Herb",
+      "url": "https://www.masalaherb.com/belgian-endive-recipe/",
+      "snippet": "Jul 22, 2019 · Freshly booked Belgian endives are rolled into ham, placed next to each other in a baking dish and topped with a …"
+    },
+    {
+      "title": "Endive and Ham Gratin with Béchamel Sauce | Endives au Jambon",
+      "url": "https://frenchmylife.com/endive-and-ham-gratin/",
+      "snippet": "Jun 5, 2026 · This French endive and ham gratin is made with tender Belgian endives wrapped in ham, covered with béchamel …"
+    },
+    {
+      "title": "Belgian Endive And Ham Gratin Endives Au Jambon Recipe",
+      "url": "https://parisplates.com/belgian-endive-and-ham-gratin-endives-au-jambon-recipe/",
+      "snippet": "Feb 4, 2025 · The classic dish I love that combines comforting flavors is Belgian Endive And Ham Gratin, or, as the French say, …"
+    }
+  ]
+}

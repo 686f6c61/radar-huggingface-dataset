@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "webAI-Official/gemma-4-12b-it-critic-lora-peft",
+  "slug": "webai-official-gemma-4-12b-it-critic-lora-peft",
+  "author": "webAI-Official",
+  "url": "https://huggingface.co/webAI-Official/gemma-4-12b-it-critic-lora-peft",
+  "created_at": "2026-10-28T13:39:32.000Z",
+  "updated_at": "2026-10-28T13:39:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "transformers",
+    "gemma4",
+    "sft",
+    "base_model:adapter:google/gemma-4-12B-it",
+    "text-generation",
+    "conversational",
+    "base_model:google/gemma-4-12B-it",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 292312202,
+  "storage_human": "292 MB",
+  "base_model": "google/gemma-4-12B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma 4 26b A3B is mindblowingly good , if configured right - Reddit",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1segstx/gemma_4_26b_a3b_is_mindblowingly_good_if/",
+      "snippet": "07.04.2026 ... 715 votes, 376 comments. Last few days ive been trying different models and quants on my rtx 3090 LM studio , but every single one always ..."
+    },
+    {
+      "title": "Computer Science - arXiv",
+      "url": "https://arxiv.org/list/cs/new",
+      "snippet": "... Gemma 3 12B, with 100 executions per model. MARQ achieves median F1 scores ... Title: Phase-Coordinated Model Predictive Control for AI Training Power Smoothing."
+    },
+    {
+      "title": "Running local models is good now | Hacker News",
+      "url": "https://news.ycombinator.com/item?id=48555993",
+      "snippet": "18.06.2026 ... ... ai/models/google/gemma-4-12b-qat · verdverm 4 months ago | root ... The models with the LoRA adapters were made with lean scripted data made ..."
+    },
+    {
+      "title": "LLM-Enhanced Voice Control for Robotic Workplace - ČVUT",
+      "url": "https://support.dce.felk.cvut.cz/mediawiki/images/c/ce/Bp_2025_novak_michal.pdf",
+      "snippet": "23.05.2025 ... ... model Faster-Whisper pro přepis řeči na text, lokálně hostovaný velký jazykový model Gemma3-12B ... official. Whisper GitHub repository1 ..."
+    },
+    {
+      "title": "Foundation Model Guided Path Planning for Autonomous Drone ...",
+      "url": "https://arxiv.org/html/2505.20783v1",
+      "snippet": "27.05.2025 ... Effective path planning is a critical element of autonomous flight, ensuring safe and efficient navigation by generating trajectories that guide ..."
+    }
+  ]
+}

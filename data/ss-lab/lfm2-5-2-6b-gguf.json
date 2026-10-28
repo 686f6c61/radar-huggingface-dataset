@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ss-lab/LFM2.5-2.6B-GGUF",
+  "slug": "ss-lab-lfm2-5-2-6b-gguf",
+  "author": "ss-lab",
+  "url": "https://huggingface.co/ss-lab/LFM2.5-2.6B-GGUF",
+  "created_at": "2026-10-28T14:22:36.000Z",
+  "updated_at": "2026-10-28T14:26:16.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "liquid",
+    "quantized",
+    "base_model:LiquidAI/LFM2.5-2.6B",
+    "base_model:quantized:LiquidAI/LFM2.5-2.6B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2697198592,
+  "parameters_human": "2.70B",
+  "storage_bytes": 21110807872,
+  "storage_human": "21.1 GB",
+  "base_model": "LiquidAI/LFM2.5-2.6B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Schutzstaffel — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Schutzstaffel",
+      "snippet": "À compter de 1929, et jusqu'à la chute du Troisième Reich, le chef de la SS, ou Reichsführer -SS, fut Heinrich Himmler (1900-1945). …"
+    },
+    {
+      "title": "Schutzstaffel - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Schutzstaffel",
+      "snippet": "The two main constituent groups were the Allgemeine SS (General SS) and Waffen-SS (Armed SS). The Allgemeine SS was …"
+    },
+    {
+      "title": "L’Histoire Complète des SS Nazis : Les Détails Jamais Révélés",
+      "url": "https://www.youtube.com/watch?v=qXTxI_DGBeE",
+      "snippet": "Jul 3, 2025 · Aujourd’hui encore, les historiens continuent de découvrir des documents et des témoignages qui révèlent toute …"
+    },
+    {
+      "title": "Waffen-SS — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Waffen-SS",
+      "snippet": "Les divisions SS proprement dites (SS-Divisionen), dont les membres sont des citoyens allemands ou autrichiens qui répondent - au …"
+    },
+    {
+      "title": "SS : L'organisation meurtrière fanatique d'Hitler | Documentaire ...",
+      "url": "https://www.youtube.com/watch?v=jIfItvRx_4w",
+      "snippet": "Jun 7, 2025 · Plongée dans l'histoire sombre et fascinante de la Schulzstaffel, alias la SS, cette vidéo vous dévoile l'ascension …"
+    }
+  ]
+}

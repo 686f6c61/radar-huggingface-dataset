@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "webbrain-one/lfm3-vld-2b",
+  "slug": "webbrain-one-lfm3-vld-2b",
+  "author": "webbrain-one",
+  "url": "https://huggingface.co/webbrain-one/lfm3-vld-2b",
+  "created_at": "2026-10-28T07:27:39.000Z",
+  "updated_at": "2026-10-28T07:40:12.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm3_vl",
+    "image-text-to-text",
+    "webbrain",
+    "liquid",
+    "lfm3",
+    "lfm3-vl",
+    "browser-agent",
+    "decision-model",
+    "webbrain-vld",
+    "vldr",
+    "pegasus-method",
+    "custom_code",
+    "conversational",
+    "base_model:LiquidAI/d1-2B",
+    "base_model:finetune:LiquidAI/d1-2B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 14,
+  "downloads_30d": 0,
+  "trending_score": 14,
+  "parameters": 2180325888,
+  "parameters_human": "2.18B",
+  "storage_bytes": 4378614322,
+  "storage_human": "4.4 GB",
+  "base_model": "LiquidAI/d1-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "webbrain-one/lfm3-vld-2b · Hugging Face",
+      "url": "https://huggingface.co/webbrain-one/lfm3-vld-2b",
+      "snippet": "LFM3-VLD-2B (Restored Language Head) is a hybrid multimodal browser decision model built using the Pegasus method (inspired by AveLabs/Qwen3.8-27B-Perplexing-Pegasus)."
+    },
+    {
+      "title": "WebBrain — Free Open-Source AI Browser Agent",
+      "url": "https://www.webbrain.one/",
+      "snippet": "The Open-Source AI Browser Agent Free, open-source alternative to Claude in Chrome. Use any model, including local ones, so your pages never leave your machine."
+    },
+    {
+      "title": "lfm3-vld-2b - a webbrain-one Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/webbrain-one/lfm3-vld-2b",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from webbrain-one"
+    },
+    {
+      "title": "LFM3-VL-2B vs WebBrain Compass VLD Tiny v5 - WebBrain Blog",
+      "url": "https://www.webbrain.one/blog/lfm3-vl-2b-vs-webbrain-compass-vld",
+      "snippet": "We ran Liquid&#x27;s new LFM3-VL-2B against WebBrain Compass VLD Tiny v5, our MiniCPM-V-4.7-1B fine-tune, on 4,857 BenchKit tasks per model the night LFM3 launched. LFM3 wins six of nine suites."
+    },
+    {
+      "title": "GitHub - webbrain-one/webbrain: Open-source AI browser agent for Chrome ...",
+      "url": "https://github.com/webbrain-one/webbrain",
+      "snippet": "Chat about everything WebBrain — help, local and cloud model setups, site adapters, show-and-tell, and contributor coordination — on the WebBrain Discord. See community for how the server is organized, and discord-setup for the channel, role, and welcome-screen configuration."
+    }
+  ]
+}

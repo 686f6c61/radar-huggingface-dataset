@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "asahi-jp/LFM3-1.7B-nf4-cw-ov",
+  "slug": "asahi-jp-lfm3-1-7b-nf4-cw-ov",
+  "author": "asahi-jp",
+  "url": "https://huggingface.co/asahi-jp/LFM3-1.7B-nf4-cw-ov",
+  "created_at": "2026-10-28T14:07:42.000Z",
+  "updated_at": "2026-10-28T14:31:20.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "openvino",
+  "languages": [],
+  "tags": [
+    "openvino",
+    "lfm3",
+    "liquid",
+    "nf4",
+    "custom_code",
+    "text-generation",
+    "conversational",
+    "base_model:LiquidAI/LFM3-1.7B",
+    "base_model:quantized:LiquidAI/LFM3-1.7B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1025833062,
+  "storage_human": "1.0 GB",
+  "base_model": "LiquidAI/LFM3-1.7B",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Asahi Europe & International",
+      "url": "https://www.asahiinternational.com/",
+      "snippet": "Before the paths of Asahi in Japan and our breweries in Europe came together, each of them had a long history of its own. The rich …"
+    },
+    {
+      "title": "Asahi Breweries - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Asahi_Breweries",
+      "snippet": "The company's primary beer, from 1957 through the late 1980s, was Asahi Gold (overtaking Asahi Draft, its original formula, which …"
+    },
+    {
+      "title": "ASAHI GROUP HOLDINGS",
+      "url": "https://www.asahigroup-holdings.com/en/",
+      "snippet": "6 days ago · Asahi Group Holdings, Ltd. is a global leader offering a diverse collection of brands centered on beer, alcohol and non …"
+    },
+    {
+      "title": "朝日新聞：朝日新聞社のニュースサイト",
+      "url": "https://www.asahi.com/?msockid=376015227e6561a8262a0d227f376029",
+      "snippet": "Copyright © The Asahi Shimbun Company. All rights reserved. No reproduction or republication without written permission."
+    },
+    {
+      "title": "Accueil - Asahi France",
+      "url": "https://asahifrance.fr/",
+      "snippet": "Ce rêve est devenu le point de départ d’une aventure qui, génération après génération, a fait d’Asahi bien plus qu’une brasserie : …"
+    }
+  ]
+}

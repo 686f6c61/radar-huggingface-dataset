@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "dendriteholdings/Ingot-IX-27B-MLX-2bit",
+  "slug": "dendriteholdings-ingot-ix-27b-mlx-2bit",
+  "author": "dendriteholdings",
+  "url": "https://huggingface.co/dendriteholdings/Ingot-IX-27B-MLX-2bit",
+  "created_at": "2026-10-28T14:30:52.000Z",
+  "updated_at": "2026-10-28T14:31:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "prism_hadamard_qwen35",
+    "apple-silicon",
+    "2-bit",
+    "ternary",
+    "ingot",
+    "bittensor",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27359638768,
+  "parameters_human": "27.36B",
+  "storage_bytes": 8608287712,
+  "storage_human": "8.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dendriteholdings/Ingot-X-27B-MLX-2bit · Hugging Face",
+      "url": "https://huggingface.co/dendriteholdings/Ingot-X-27B-MLX-2bit",
+      "snippet": "Text Generation model with 27B parameters, built with MLX. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "dendriteholdings/Ingot-IX-27B-Q2 · Hugging Face",
+      "url": "https://huggingface.co/dendriteholdings/Ingot-IX-27B-Q2",
+      "snippet": "dendriteholdings / Ingot-IX-27B-Q2 Like 0 Follow Dendrite Holdings 13 GGUF conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Ingot Ix 27b Q2 - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/dendriteholdings/ingot-ix-27b-q2",
+      "snippet": "Registry entry for model Ingot Ix 27b Q2; source metadata pending."
+    },
+    {
+      "title": "INGOT (@IngotSubnet) / X",
+      "url": "https://x.com/IngotSubnet",
+      "snippet": "Ingot turns model compression into an open competition on Bittensor SN97. Miners develop quantized versions of powerful open models, competing to reproduce the original more"
+    },
+    {
+      "title": "prism-ml/Ternary-Bonsai-27B-mlx-2bit — Ingot model page",
+      "url": "https://ingot.tools/models/prism-ml/Ternary-Bonsai-27B-mlx-2bit",
+      "snippet": "Forensic model page for prism-ml/Ternary-Bonsai-27B-mlx-2bit: scan findings, fingerprint, genealogy, and lineage verification."
+    }
+  ]
+}

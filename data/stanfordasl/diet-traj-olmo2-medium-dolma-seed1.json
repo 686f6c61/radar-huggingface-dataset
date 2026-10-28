@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "stanfordasl/diet-traj-olmo2-medium-dolma-seed1",
+  "slug": "stanfordasl-diet-traj-olmo2-medium-dolma-seed1",
+  "author": "stanfordasl",
+  "url": "https://huggingface.co/stanfordasl/diet-traj-olmo2-medium-dolma-seed1",
+  "created_at": "2026-10-28T18:26:08.000Z",
+  "updated_at": "2026-10-28T18:26:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "olmo2",
+    "training-trajectory",
+    "diet",
+    "weight-space",
+    "en",
+    "dataset:emozilla/dolma-v1_7-3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7324829216,
+  "storage_human": "7.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

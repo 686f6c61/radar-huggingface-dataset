@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "openbmb/MiniCPM-OCR-1.0-gguf",
+  "slug": "openbmb-minicpm-ocr-1-0-gguf",
+  "author": "openbmb",
+  "url": "https://huggingface.co/openbmb/MiniCPM-OCR-1.0-gguf",
+  "created_at": "2026-10-21T15:52:39.000Z",
+  "updated_at": "2026-10-27T17:33:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "minicpm-ocr",
+    "ocr",
+    "document-parsing",
+    "llama.cpp",
+    "multimodal",
+    "quantized",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:openbmb/MiniCPM-OCR-1.0",
+    "base_model:quantized:openbmb/MiniCPM-OCR-1.0",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 17,
+  "downloads_30d": 2004,
+  "trending_score": 17,
+  "parameters": 752167744,
+  "parameters_human": "752.2M",
+  "storage_bytes": 13060402845,
+  "storage_human": "13.1 GB",
+  "base_model": "openbmb/MiniCPM-OCR-1.0",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - OpenBMB/MiniCPM-OCR: An open-source OCR solution for fast ...",
+      "url": "https://github.com/OpenBMB/MiniCPM-OCR",
+      "snippet": "MiniCPM-OCR Jev is an OCR correctness decision model for text, formulas, and tables. Given an image and its corresponding OCR result, it returns a quality score from 0 to 1 to help select reliable results and locate content that needs review."
+    },
+    {
+      "title": "openbmb/MiniCPM-OCR-1.0 · Hugging Face",
+      "url": "https://huggingface.co/openbmb/MiniCPM-OCR-1.0",
+      "snippet": "MiniCPM-OCR 1.0 (1.3B) is the first OCR-specific model in the MiniCPM-V/o family. It focuses on text-centric document understanding — text, tables, formulas, charts, seals, and structured information extraction — and balances quality against speed on real-world captures."
+    },
+    {
+      "title": "OpenBMB open-sources the MiniCPM-OCR suite: a 1.3B parser scoring 93.68 ...",
+      "url": "https://aicoder.com/news/news-20261028-openbmb-minicpm-ocr-1-0-jev-open-source-ocr-suite",
+      "snippet": "How it works The suite has two models. MiniCPM-OCR 1.0 (1.3B) is the first OCR-specific model in the MiniCPM-V/o family. It handles Chinese and English documents and PDFs, covering text, tables, formulas, charts, seals and key information extraction, and copes with scanned, curved, skewed and recaptured pages; its DSpark decoding heads improve end-to-end efficiency by 55%, according to the ..."
+    },
+    {
+      "title": "MiniCPM-OCR 1.0 and Jev: 1.3B Parser, 3.62x MinerU Speed - explainx.ai",
+      "url": "https://explainx.ai/blog/minicpm-ocr-1-0-jev-openbmb-apache-2-document-parsing-quality-judge-dspark-how-to-run-2026",
+      "snippet": "← Back to blog explainx / blog MiniCPM-OCR 1.0 and Jev: OpenBMB&#x27;s Apache 2.0 Document Parser Plus a Model That Flags Bad OCR OCR, Open Source, OpenBMB, AI Models, Document AI Part of AI Tools and Apps OpenBMB released MiniCPM-OCR 1.0 (1.3B) and Jev (2B), Apache 2.0, with DSpark speedups. Benchmarks, how to run it, and what is vendor-reported."
+    },
+    {
+      "title": "MiniCPM-OCR-1.0: a 1.3B-parameter model for document recognition ...",
+      "url": "https://cpu3d.com/en/ainews/novaya-model-minicpm-ocr-1-0-image-text-to-text/",
+      "snippet": "On October 21, 2026, the model openbmb/MiniCPM-OCR-1.0 was published on HuggingFace with the image-text-to-text task. It is the first OCR-specific model in the MiniCPM-V/o family, focused on document understanding: text, tables, formulas, charts, stamps and structured information extraction. The author claims a score of 93.68 on Real5-OmniDocBench and support for Chinese and English documents ..."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "arvinesmaeilydev/xvla_PickUpTheCube_Dual_50_Depth_wrist_depth",
+  "slug": "arvinesmaeilydev-xvla_pickupthecube_dual_50_depth_wrist_depth",
+  "author": "arvinesmaeilydev",
+  "url": "https://huggingface.co/arvinesmaeilydev/xvla_PickUpTheCube_Dual_50_Depth_wrist_depth",
+  "created_at": "2026-10-28T13:56:00.000Z",
+  "updated_at": "2026-10-28T15:06:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "tensorboard",
+    "safetensors",
+    "robotics",
+    "xvla",
+    "dataset:arvinesmaeilydev/PickUpTheCube_Dual_50_Depth",
+    "arxiv:2510.10274",
+    "base_model:lerobot/xvla-base",
+    "base_model:finetune:lerobot/xvla-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 879687256,
+  "parameters_human": "879.7M",
+  "storage_bytes": 66982180135,
+  "storage_human": "67.0 GB",
+  "base_model": "lerobot/xvla-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sasha Grey - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sasha_Grey",
+      "snippet": "Marina Ann Hantzis (born 1988 [1]), known professionally as Sasha Grey, [2][3][4] is an American actress, model, writer, musician, …"
+    },
+    {
+      "title": "Sasha Grey (@sashagrey) • Instagram photos and videos",
+      "url": "https://www.instagram.com/sashagrey/",
+      "snippet": "2M Followers, 1,098 Following, 1,929 Posts - Sasha Grey (@sashagrey) on Instagram: \"HUMAN WRITES 👩🏻‍💻 🎶📸 ️\""
+    },
+    {
+      "title": "Sasha Grey — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Sasha_Grey",
+      "snippet": "En 2013, Sasha Grey publie son premier roman, Juliette Society6. Le roman érotique raconte comment Catherine, le personnage …"
+    },
+    {
+      "title": "Home | Sasha Grey",
+      "url": "https://sashagrey.com/",
+      "snippet": "Official site for Sasha Grey."
+    },
+    {
+      "title": "Sasha Grey - The Movie Database (TMDB)",
+      "url": "https://www.themoviedb.org/person/74251-sasha-grey",
+      "snippet": "Sasha Grey (born March 14, 1988) is a former American pornographic actress who has since become a mainstream actress, model, …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "CronusOnly/eva",
+  "slug": "cronusonly-eva",
+  "author": "CronusOnly",
+  "url": "https://huggingface.co/CronusOnly/eva",
+  "created_at": "2026-10-28T18:10:59.000Z",
+  "updated_at": "2026-10-28T18:46:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 970644281,
+  "storage_human": "971 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Europe : 4 châteaux qui ont inspiré les plus grands contes",
+      "url": "https://www.en-vols.com/styles/architecture/europe-contes-chateaux-inspiration/",
+      "snippet": "Apr 1, 2026 · Le Château de Neuschwanstein, construit au XIXe siècle par Louis II de Bavière, est aujourd’hui l’archétype du château …"
+    },
+    {
+      "title": "Le château de conte de fées qui a inspiré Disney - Neuschwanstein …",
+      "url": "https://neuschwansteintickets.net/fr/guides/neuschwanstein-fairy-tale-castle-disney-influence/",
+      "snippet": "Le profil spectaculaire du château — des tours blanches s'élevant d'un piton boisé face aux montagnes — est largement cité comme …"
+    },
+    {
+      "title": "Les châteaux qui ont inspirés celui de la Belle au Bois Dormant",
+      "url": "https://musee-chateau.fr/chateau-belle-bois-dormant-inspirations/",
+      "snippet": "Avec ses tours effilées, ses murs blancs immaculés et sa position spectaculaire surplombant la vallée, le Château de …"
+    },
+    {
+      "title": "Châteaux Disney : les lieux réels qui les ont inspirés",
+      "url": "https://www.thewomtravel.fr/destinations/actualites-voyage/lieux-reels-disney.html",
+      "snippet": "Feb 13, 2026 · C'est sans doute le château Disney le plus emblématique au monde : le palais du Prince Charmant dans Cendrillon, …"
+    },
+    {
+      "title": "Disney et le château de Neuschwanstein",
+      "url": "https://neuschwanstein-castle.net/fr/disney-et-le-chateau",
+      "snippet": "Comment le château bavarois de Neuschwanstein a inspiré les châteaux Disney : de la visite de Walt Disney dans les années 50 …"
+    }
+  ]
+}

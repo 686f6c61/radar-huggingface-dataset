@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "dendriteholdings/Ingot-X-27B-MLX-2bit",
+  "slug": "dendriteholdings-ingot-x-27b-mlx-2bit",
+  "author": "dendriteholdings",
+  "url": "https://huggingface.co/dendriteholdings/Ingot-X-27B-MLX-2bit",
+  "created_at": "2026-10-28T14:39:22.000Z",
+  "updated_at": "2026-10-28T14:39:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "prism_hadamard_qwen35",
+    "apple-silicon",
+    "2-bit",
+    "ternary",
+    "ingot",
+    "bittensor",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27359638768,
+  "parameters_human": "27.36B",
+  "storage_bytes": 8608287712,
+  "storage_human": "8.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dendriteholdings/Ingot-X-27B-MLX-2bit · Hugging Face",
+      "url": "https://huggingface.co/dendriteholdings/Ingot-X-27B-MLX-2bit",
+      "snippet": "Text Generation model with 27B parameters, built with MLX. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "dendriteholdings/Ingot-X-27B-Q2 · Hugging Face",
+      "url": "https://huggingface.co/dendriteholdings/Ingot-X-27B-Q2",
+      "snippet": "dendriteholdings / Ingot-X-27B-Q2 Like 0 Follow Dendrite Holdings 13 GGUF conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Ingot X 27b Q2 - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/dendriteholdings/ingot-x-27b-q2",
+      "snippet": "Registry entry for model Ingot X 27b Q2; source metadata pending."
+    },
+    {
+      "title": "GitHub - DendriteLabs/ingot",
+      "url": "https://github.com/DendriteLabs/ingot",
+      "snippet": "The validator&#x27;s dedup bank, one OpenSearch index per quantization (ingot_dedup-<quant>): scripts/setup_opensearch.sh starts OpenSearch and waits until it is healthy; --seed then fingerprints the open quantization&#x27;s genesis into it (on the GPU box), generating INGOT_DEDUP_SECRET in .env if it is empty."
+    },
+    {
+      "title": "Apple is in talks with the startup shrinking a 27B AI model onto ... - TNW",
+      "url": "https://thenextweb.com/news/apple-prismml-on-device-ai-compression-iphone",
+      "snippet": "Apple is in early talks with PrismML, whose on-device AI compression shrinks a 27B model to under 4GB to run on an iPhone. Apple has not commented."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Blaize-AI/YOLO26s_FASDD",
+  "slug": "blaize-ai-yolo26s_fasdd",
+  "author": "Blaize-AI",
+  "url": "https://huggingface.co/Blaize-AI/YOLO26s_FASDD",
+  "created_at": "2026-10-28T13:58:13.000Z",
+  "updated_at": "2026-10-28T13:58:22.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "object-detection",
+    "blaize",
+    "gsp",
+    "picasso-sdk",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8948171,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Intelligence at the edge of everywhere. | Blaize",
+      "url": "https://www.blaize.com/",
+      "snippet": "The Blaize AI Services Platform offers production-ready, application-level AI services that enable cloud providers, system integrators, …"
+    },
+    {
+      "title": "Blaze et les Monster Machines | Tous les épisodes de la ... - YouTube",
+      "url": "https://www.youtube.com/watch?v=EYi_OLvyD9w",
+      "snippet": "Jun 24, 2023 · Tous les épisodes de la saison 1 de Blaze et les Monster Machines - Partie 1Redécouvrez tous vos sauvetages …"
+    },
+    {
+      "title": "LE PERE BLAIZE : Pharmacie-Herboristerie à Marseille",
+      "url": "https://www.pereblaize.fr/",
+      "snippet": "La Pharmacie-Herboristerie du Père Blaize à Marseille propose des milliers de produits, plantes médicinales, herbes et formules …"
+    },
+    {
+      "title": "AI Edge Company - Artificial Intelligence Software Company - Blaize",
+      "url": "https://www.blaize.com/company/",
+      "snippet": "New solutions for high performance compute are a fundamental need for next generation autonomous systems. Blaize is bringing …"
+    },
+    {
+      "title": "Blaze et les Monster Machines | 1 heure de Blaze FLAMBANT",
+      "url": "https://www.youtube.com/watch?v=Hzd97CZGqjk",
+      "snippet": "Dec 25, 2022 · Un marathon FLAMBANT NEUF de Blaze pendant 1 heure !Faites vrombir vos moteurs, Blaze et AJ sont plus …"
+    }
+  ]
+}

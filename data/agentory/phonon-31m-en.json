@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "agentory/phonon-31m-en",
+  "slug": "agentory-phonon-31m-en",
+  "author": "agentory",
+  "url": "https://huggingface.co/agentory/phonon-31m-en",
+  "created_at": "2026-10-28T14:21:27.000Z",
+  "updated_at": "2026-10-28T14:21:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "gradium_phonon_tts",
+    "text-to-audio",
+    "text-to-speech",
+    "tts",
+    "streaming",
+    "on-device",
+    "phonon",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 41096035,
+  "parameters_human": "41.1M",
+  "storage_bytes": 222732621,
+  "storage_human": "223 MB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gradium/phonon-31m-en · Hugging Face",
+      "url": "https://huggingface.co/gradium/phonon-31m-en",
+      "snippet": "High-quality Text-to-Speech, on your device. phonon-31m is a text-to-speech model from the Phonon family. It turns text into natural 24 kHz speech in English. It streams audio while it is still generating, and it is small enough to run in a browser tab, on a phone, or on a laptop CPU. Phonon builds ..."
+    },
+    {
+      "title": "Phonon 31m En - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/phonon-31m-en.html",
+      "snippet": "Download Phonon 31m En GGUF model. 4.13 GB, 3,590 downloads, 69 likes."
+    },
+    {
+      "title": "Phonon 31M - open source | LLM Reference",
+      "url": "https://www.llmreference.com/model/phonon-31m",
+      "snippet": "Phonon 31M is Gradium&#x27;s smallest open on-device text-to-speech model, released October 20, 2026 under Apache 2.0. It has 31 million parameters (excluding the audio tokenizer), speaks English as streaming 24 kHz mono audio, and runs on laptop CPUs, phones, browsers and GPUs; Gradium says it starts speaking in about 7 ms on a laptop CPU. It builds on Kyutai&#x27;s Pocket TTS and Mimi codec, and is ..."
+    },
+    {
+      "title": "Gradium Open-Sources Phonon, a 31M-Parameter On-Device TTS Model Under ...",
+      "url": "https://www.marktechpost.com/2026/10/22/gradium-phonon-31m-on-device-tts/",
+      "snippet": "Gradium Phonon is a 31M-parameter on-device TTS model under Apache 2.0, reporting 1.70% WER on hard English sentences."
+    },
+    {
+      "title": "gradium/phonon-31m-en at main - Hugging Face",
+      "url": "https://huggingface.co/gradium/phonon-31m-en/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "abliter8-ai/lfm3-2b-omni-abliter8-mlx",
+  "slug": "abliter8-ai-lfm3-2b-omni-abliter8-mlx",
+  "author": "abliter8-ai",
+  "url": "https://huggingface.co/abliter8-ai/lfm3-2b-omni-abliter8-mlx",
+  "created_at": "2026-10-28T14:38:27.000Z",
+  "updated_at": "2026-10-28T14:59:20.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "abliterated",
+    "uncensored",
+    "lfm3",
+    "omni",
+    "vision",
+    "audio",
+    "gguf",
+    "mlx",
+    "any-to-any",
+    "en",
+    "base_model:LiquidAI/LFM3-Omni-2B",
+    "base_model:finetune:LiquidAI/LFM3-Omni-2B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7009644966,
+  "storage_human": "7.0 GB",
+  "base_model": "LiquidAI/LFM3-Omni-2B",
+  "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "abliter8-ai (abliter8) · GitHub",
+      "url": "https://github.com/abliter8-ai/",
+      "snippet": "Having fun with AI. Always experimenting and going deeper. Not a tech pro like some but working hard with AI to create new experiences and useful tools. - abliter8-ai"
+    },
+    {
+      "title": "abliter8-ai (abliter8) - Hugging Face",
+      "url": "https://huggingface.co/abliter8-ai",
+      "snippet": "Autonomous Agents, Multi-Agent workflows, Abliterated Models, AI Ethics, Effective Accelerationism"
+    },
+    {
+      "title": "Introducing LFM3: Every Modality for Specialized Intelligence",
+      "url": "https://www.liquid.ai/blog/lfm3",
+      "snippet": "LFM3 is Liquid AI&#x27;s new open-weight model family: 2B-class text, vision, audio, omni, and decision models built to fine-tune and run fast on any device."
+    },
+    {
+      "title": "Liquid AI Releases LFM3: 6 Open-Weight 2B-Class Multimodal Models",
+      "url": "https://www.marktechpost.com/2026/10/27/liquid-ai-lfm3-open-weight-2b-multimodal-models/",
+      "snippet": "Liquid AI has released LFM3, its new generation of Liquid Foundation Models. Liquid AI LFM3 is a family of 6 open-weight, 2B-class models built on one shared backbone. The family covers text, vision, audio, omni and decision tasks. Every model can be fine-tuned on a single GPU."
+    },
+    {
+      "title": "LFM3 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/lfm3",
+      "snippet": "About LFM3 Liquid AI builds small models designed for specialization and on-device deployment. LFM3 brings a new tri-hybrid architecture and a shared backbone for text, vision, audio, omni, and decision models. The model featured here, LFM3-VL-2B, combines the LFM3 language backbone with an in-house vision encoder for text, image, and video input."
+    }
+  ]
+}

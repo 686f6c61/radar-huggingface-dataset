@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "oteam/esmfold2-experimental-fast-base600m-step500k",
+  "slug": "oteam-esmfold2-experimental-fast-base600m-step500k",
+  "author": "oteam",
+  "url": "https://huggingface.co/oteam/esmfold2-experimental-fast-base600m-step500k",
+  "created_at": "2026-10-28T10:26:42.000Z",
+  "updated_at": "2026-10-28T12:14:46.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "other",
+  "library": "ofoldx",
+  "languages": [],
+  "tags": [
+    "ofoldx",
+    "safetensors",
+    "Biology",
+    "Protein",
+    "Structure Prediction",
+    "other",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 746187472,
+  "parameters_human": "746.2M",
+  "storage_bytes": 2984965784,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}
