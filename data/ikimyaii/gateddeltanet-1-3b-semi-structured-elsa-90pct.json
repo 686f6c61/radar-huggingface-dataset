@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ikimyaii/GatedDeltaNet-1.3B-semi-structured-ELSA-90pct",
+  "slug": "ikimyaii-gateddeltanet-1-3b-semi-structured-elsa-90pct",
+  "author": "ikimyaii",
+  "url": "https://huggingface.co/ikimyaii/GatedDeltaNet-1.3B-semi-structured-ELSA-90pct",
+  "created_at": "2026-10-26T11:26:22.000Z",
+  "updated_at": "2026-10-27T22:22:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gated_deltanet",
+    "pruning",
+    "sparsity",
+    "semi-structured",
+    "admm",
+    "gated-deltanet",
+    "elsa",
+    "arxiv:2510.01650",
+    "base_model:m-a-p/1.3B-100B-GatedDeltaNet-pure",
+    "base_model:finetune:m-a-p/1.3B-100B-GatedDeltaNet-pure",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 22,
+  "trending_score": 0,
+  "parameters": 1466343808,
+  "parameters_human": "1.47B",
+  "storage_bytes": 5865422368,
+  "storage_human": "5.9 GB",
+  "base_model": "m-a-p/1.3B-100B-GatedDeltaNet-pure",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fortnite Tracker - Fortnite Stats, Leaderboards, & More!",
+      "url": "https://fortnitetracker.com/",
+      "snippet": "Oct 6, 2026 · About our Fortnite Stats Welcome to Fortnite Tracker - Tracking Fortnite Stats and Leaderboards. Find top Fortnite …"
+    },
+    {
+      "title": "Fortnite Power Rankings Asia Leaderboards - Fortnite Tracker",
+      "url": "https://fortnitetracker.com/events/powerrankings?platform=Console&region=ASIA",
+      "snippet": "View our Fortnite Power Rankings Leaderboards to see how you compare. Filter players by platform, region or country."
+    },
+    {
+      "title": "Fortnite Events - Europe - Competitive Tournaments - Fortnite Tracker",
+      "url": "https://fortnitetracker.com/events?region=EU",
+      "snippet": "Oct 6, 2026 · Fortnite Reveals 2027 Competitive Plans, Reload Championship to Return Alongside New Events by …"
+    },
+    {
+      "title": "Fortnite Ranked Reload (Build) Leaderboard - Fortnite Tracker",
+      "url": "https://fortnitetracker.com/ranked-leaderboard/reload",
+      "snippet": "View our Fortnite Reload (Build) Ranked leaderboards to see how you compare."
+    },
+    {
+      "title": "Fortnite Global Wins Leaderboards - Fortnite Tracker",
+      "url": "https://fortnitetracker.com/leaderboards",
+      "snippet": "View our Fortnite Wins leaderboards to see how you compare. Filter players by platform, playlist or region."
+    }
+  ]
+}

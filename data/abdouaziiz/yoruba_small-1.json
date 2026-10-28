@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "abdouaziiz/yoruba_small-1",
+  "slug": "abdouaziiz-yoruba_small-1",
+  "author": "abdouaziiz",
+  "url": "https://huggingface.co/abdouaziiz/yoruba_small-1",
+  "created_at": "2026-10-27T16:09:47.000Z",
+  "updated_at": "2026-10-27T23:58:52.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "generated_from_trainer",
+    "dataset:thisniyi/yoruba-tts-dataset-openslr",
+    "base_model:NCAIR1/Yoruba-ASR",
+    "base_model:finetune:NCAIR1/Yoruba-ASR",
+    "license:other",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 241734912,
+  "parameters_human": "241.7M",
+  "storage_bytes": 4834981241,
+  "storage_human": "4.8 GB",
+  "base_model": "NCAIR1/Yoruba-ASR",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "thisniyi/yoruba-tts-dataset-openslr",
+      "metric": "Wer",
+      "value": 0.3638676844783715
+    }
+  ],
+  "sources": [
+    {
+      "title": "Today's selection - XNXX.COM",
+      "url": "https://www.xnxx.com/todays-selection/",
+      "snippet": "XNXX Today's selection Sister-in-law and brother-in-law had an affair. Sister-in-law with big boobs 388 20min - 1080p FuckMyJeans …"
+    },
+    {
+      "title": "Free Porn, Sex, Tube Videos, XXX Pics, Pussy in Porno Movies - XNXX…",
+      "url": "https://www.xnxx.com/",
+      "snippet": "XNXX delivers free sex movies and fast free porn videos (tube porn). Now 10 million+ sex vids available for free! Featuring hot pussy, …"
+    },
+    {
+      "title": "Free Porn, Sex, Tube Videos, XXX Pics, Pussy in Porno Movies - XNXX…",
+      "url": "https://m-xnxx.com/",
+      "snippet": "XXX,XXX Video,XNXX Video,Bokep indo,XNXX indo,indo porn,Xvideos,Xvideo,Film Sex,YouPorn,Sex Video,Sex Porno,Porn …"
+    },
+    {
+      "title": "Today's selection - XNXX.COM",
+      "url": "https://m-xnxx.com/todays-selection/en/",
+      "snippet": "XNXX Today's selection Fiz meu corno me filmar fudendo com amante pauzudo no chuveiro - Levei meu amante pauzudo para …"
+    },
+    {
+      "title": "XNXX",
+      "url": "https://www.xnxx.es/",
+      "snippet": "XNXX ofrece películas de sexo gratis y rápidos vídeos porno gratuitos (tube porn). ¡Hay más de 10 millones de vídeos gratuitos …"
+    }
+  ]
+}

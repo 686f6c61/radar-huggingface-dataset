@@ -5,7 +5,7 @@
   "author": "MohamedAhmedAE",
   "url": "https://huggingface.co/MohamedAhmedAE/llava-medical-3B-medsiglip-stage2",
   "created_at": "2026-07-15T20:00:33.000Z",
-  "updated_at": "2026-10-26T05:17:39.000Z",
+  "updated_at": "2026-10-27T20:51:42.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -17,12 +17,12 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 1322,
+  "downloads_30d": 1272,
   "trending_score": 0,
   "parameters": 110237696,
   "parameters_human": "110.2M",
-  "storage_bytes": 172111741931,
-  "storage_human": "172.1 GB",
+  "storage_bytes": 179065082019,
+  "storage_human": "179.1 GB",
   "base_model": null,
   "formats": [
     "safetensors"

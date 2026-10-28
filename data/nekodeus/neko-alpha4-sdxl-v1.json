@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Nekodeus/neko-alpha4-sdxl-v1",
+  "slug": "nekodeus-neko-alpha4-sdxl-v1",
+  "author": "Nekodeus",
+  "url": "https://huggingface.co/Nekodeus/neko-alpha4-sdxl-v1",
+  "created_at": "2026-10-27T18:16:51.000Z",
+  "updated_at": "2026-10-27T18:17:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "stable-diffusion-xl",
+    "lora",
+    "text-to-image",
+    "character",
+    "base_model:stabilityai/stable-diffusion-xl-base-1.0",
+    "base_model:adapter:stabilityai/stable-diffusion-xl-base-1.0",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 170542536,
+  "storage_human": "171 MB",
+  "base_model": "stabilityai/stable-diffusion-xl-base-1.0",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

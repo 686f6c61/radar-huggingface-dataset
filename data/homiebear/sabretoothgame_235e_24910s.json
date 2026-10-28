@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Homiebear/SabretoothGame_235e_24910s",
+  "slug": "homiebear-sabretoothgame_235e_24910s",
+  "author": "Homiebear",
+  "url": "https://huggingface.co/Homiebear/SabretoothGame_235e_24910s",
+  "created_at": "2026-10-27T21:42:27.000Z",
+  "updated_at": "2026-10-27T21:47:34.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 633877610,
+  "storage_human": "634 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Homiebear/SabretoothGame_235e_24910s · Hugging Face",
+      "url": "https://huggingface.co/Homiebear/SabretoothGame_235e_24910s",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Homiebear ( Homie Bear) - Hugging Face",
+      "url": "https://huggingface.co/Homiebear/models",
+      "snippet": "Homiebear/DatasetsCOMPLETEDandUNCOMPLETED updated a model 15 minutes ago Homiebear/AdamFromHr_350e_11900s published a model 16 minutes ago Homiebear/AdamFromHr_350e_11900s View all activity"
+    },
+    {
+      "title": "Sabretooth AI Models (1) | Civitai",
+      "url": "https://civitai.com/tag/sabretooth",
+      "snippet": "Browse 1 AI models tagged \"Sabretooth\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    },
+    {
+      "title": "Homiebear ( Homie Bear) - Hugging Face",
+      "url": "https://huggingface.co/Homiebear",
+      "snippet": "updated a model about 1 hour ago Homiebear/TheBatmanWhoLaughs published a model about 1 hour ago Homiebear/TheBatmanWhoLaughs View all activity"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?p=3&sort=trending&search=HOMIE",
+      "snippet": "Explore machine learning models. Safetensors DiffusionBee JoyFusion Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Add your hardware Apply filters"
+    }
+  ]
+}

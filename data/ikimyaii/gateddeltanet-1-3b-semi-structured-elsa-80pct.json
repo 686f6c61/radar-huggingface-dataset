@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ikimyaii/GatedDeltaNet-1.3B-semi-structured-ELSA-80pct",
+  "slug": "ikimyaii-gateddeltanet-1-3b-semi-structured-elsa-80pct",
+  "author": "ikimyaii",
+  "url": "https://huggingface.co/ikimyaii/GatedDeltaNet-1.3B-semi-structured-ELSA-80pct",
+  "created_at": "2026-10-24T16:29:05.000Z",
+  "updated_at": "2026-10-27T22:22:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gated_deltanet",
+    "pruning",
+    "sparsity",
+    "semi-structured",
+    "admm",
+    "gated-deltanet",
+    "elsa",
+    "arxiv:2510.01650",
+    "base_model:m-a-p/1.3B-100B-GatedDeltaNet-pure",
+    "base_model:finetune:m-a-p/1.3B-100B-GatedDeltaNet-pure",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 24,
+  "trending_score": 0,
+  "parameters": 1466343808,
+  "parameters_human": "1.47B",
+  "storage_bytes": 5865422368,
+  "storage_human": "5.9 GB",
+  "base_model": "m-a-p/1.3B-100B-GatedDeltaNet-pure",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ikimyaii/GatedDeltaNet-1.3B-semi-structured-EHWS-50pct · Hugging Face",
+      "url": "https://huggingface.co/ikimyaii/GatedDeltaNet-1.3B-semi-structured-EHWS-50pct",
+      "snippet": "This is m-a-p/1.3B-100B-GatedDeltaNet-pure pruned to 50% sparsity with EHWS. Every row of every pruned linear layer keeps the same number of weights (the top 50%). Embeddings and lm_head are not pruned. The weights are saved in float32 with the zeros stored. EHWS has two phases. Phase 1: prunes each ..."
+    },
+    {
+      "title": "ikimyaii/GatedDeltaNet-1.3B-semi-structured-EHWS-ALPS_phase1-90pct ...",
+      "url": "https://huggingface.co/ikimyaii/GatedDeltaNet-1.3B-semi-structured-EHWS-ALPS_phase1-90pct",
+      "snippet": "m-a-p/1.3B-100B-GatedDeltaNet-pure, pruned to 90% sparsity with EHWS two-phase ADMM. The sparsity is semi-structured: every row of every prunable linear layer keeps the same number of weights (the top 10%). Embeddings and lm_head stay dense. Weights are float32."
+    },
+    {
+      "title": "GitHub - NVlabs/GatedDeltaNet: [ICLR 2025] Official PyTorch ...",
+      "url": "https://github.com/NVlabs/GatedDeltaNet",
+      "snippet": "[ICLR 2025] Official PyTorch Implementation of Gated Delta Networks: Improving Mamba2 with Delta Rule - NVlabs/GatedDeltaNet"
+    },
+    {
+      "title": "NVIDIA AI Releases Gated DeltaNet-2: A Linear Attention Layer That ...",
+      "url": "https://www.marktechpost.com/2026/05/24/nvidia-ai-releases-gated-deltanet-2-a-linear-attention-layer-that-decouples-erase-and-write-in-the-delta-rule/",
+      "snippet": "NVIDIA releases Gated DeltaNet-2: linear attention with channel-wise erase and write gates, outperforming KDA and Mamba-3 at 1.3B."
+    },
+    {
+      "title": "Training a Model | NVlabs/GatedDeltaNet | DeepWiki",
+      "url": "https://deepwiki.com/NVlabs/GatedDeltaNet/6.2-training-a-model",
+      "snippet": "Training a Model Relevant source files Purpose and Scope This page provides practical instructions for training GatedDeltaNet models from scratch using the provided training infrastructure. It covers command-line usage, configuration options, training workflow, and expected outputs. For installation and environment setup, see Installation and Setup. For detailed training pipeline architecture ..."
+    }
+  ]
+}

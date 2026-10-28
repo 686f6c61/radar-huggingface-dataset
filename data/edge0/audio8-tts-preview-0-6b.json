@@ -5,7 +5,7 @@
   "author": "Edge0",
   "url": "https://huggingface.co/Edge0/Audio8-TTS-Preview-0.6b",
   "created_at": "2026-07-28T07:53:00.000Z",
-  "updated_at": "2026-08-19T07:10:30.000Z",
+  "updated_at": "2026-10-27T10:11:46.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -50,7 +50,7 @@
     "region:us"
   ],
   "likes": 417,
-  "downloads_30d": 3814,
+  "downloads_30d": 3615,
   "trending_score": 9,
   "parameters": 601159424,
   "parameters_human": "601.2M",

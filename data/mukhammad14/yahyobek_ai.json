@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Mukhammad14/Yahyobek_ai",
+  "slug": "mukhammad14-yahyobek_ai",
+  "author": "Mukhammad14",
+  "url": "https://huggingface.co/Mukhammad14/Yahyobek_ai",
+  "created_at": "2026-10-27T18:24:53.000Z",
+  "updated_at": "2026-10-27T18:24:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to dynamically change the centre of a google maps without …",
+      "url": "https://stackoverflow.com/questions/12554688/how-to-dynamically-change-the-centre-of-a-google-maps-without-erasing-markers",
+      "snippet": "From my knowledge of Maps API, I am able to think of it as changing the centre (however, the centre is set only while loading the …"
+    },
+    {
+      "title": "Mit Plus Codes Orte suchen und teilen - Google Help",
+      "url": "https://support.google.com/maps/answer/7047426?hl=de&co=GENIE.Platform%3DAndroid",
+      "snippet": "Hilfe Community Ankündigungen Google Maps Mit Plus Codes Orte suchen und teilen Sie können Plus Codes verwenden und teilen, …"
+    },
+    {
+      "title": "Get started with Google Maps",
+      "url": "https://support.google.com/maps/answer/144349?hl=en&co=GENIE.Platform%3DAndroid",
+      "snippet": "Get started with Google Maps This article will help you set up, learn the basics, and explain various features of Google Maps. You …"
+    },
+    {
+      "title": "Google Maps - Reddit",
+      "url": "https://www.reddit.com/r/GoogleMaps/",
+      "snippet": "r/GoogleMaps is participating in ongoing protests regarding changes to Reddit's API accessibility. The subreddit may reopen at some …"
+    },
+    {
+      "title": "Get latitude and longitude based on location name with Google ...",
+      "url": "https://stackoverflow.com/questions/3490622/get-latitude-and-longitude-based-on-location-name-with-google-autocomplete-api",
+      "snippet": "Aug 16, 2010 · I have a textbox in my page which gets a location name and button with text getLat&amp;Long. Now on clicking my …"
+    }
+  ]
+}

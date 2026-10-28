@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "credible-ai/qwen3.5-100M-40domains-vertex",
+  "slug": "credible-ai-qwen3-5-100m-40domains-vertex",
+  "author": "credible-ai",
+  "url": "https://huggingface.co/credible-ai/qwen3.5-100M-40domains-vertex",
+  "created_at": "2026-10-27T21:59:13.000Z",
+  "updated_at": "2026-10-27T22:15:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "linmix",
+    "data-mixing",
+    "proxy-models",
+    "text-generation",
+    "en",
+    "dataset:WebOrganizer/Corpus-200B",
+    "dataset:HuggingFaceTB/stack-edu",
+    "dataset:nvidia/Nemotron-CC-Math-v1",
+    "dataset:credible-ai/weborganizer-corpus-200b-tokenized",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 106978476032,
+  "storage_human": "107.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/?gl=FR&hl=fr",
+      "snippet": "Profitez des vidéos et de la musique que vous aimez, mettez en ligne des contenus originaux, et partagez-les avec vos amis, vos …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=en-US",
+      "snippet": "Get the official YouTube app on Android phones and tablets. See what the world is watching -- from the hottest music videos to …"
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/explore",
+      "snippet": "Explore trending music and find your next favorite song. Discover the latest releases from new artists, plus enjoy new music videos …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://studio.youtube.com/",
+      "snippet": "Share your videos with friends, family, and the world."
+    }
+  ]
+}

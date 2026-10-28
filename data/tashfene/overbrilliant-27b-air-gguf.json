@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "tashfene/Overbrilliant-27B-Air-GGUF",
+  "slug": "tashfene-overbrilliant-27b-air-gguf",
+  "author": "tashfene",
+  "url": "https://huggingface.co/tashfene/Overbrilliant-27B-Air-GGUF",
+  "created_at": "2026-10-27T21:44:08.000Z",
+  "updated_at": "2026-10-27T21:58:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "apple-silicon",
+    "metal",
+    "16gb",
+    "qwen3.8",
+    "gated-deltanet",
+    "lora",
+    "code",
+    "function-calling",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 9518056427,
+  "storage_human": "9.5 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bonsai 27B - AI Model | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/model/bonsai-27b/",
+      "snippet": "Bonsai 27B is a 27.8B-parameter multimodal language model built on Qwen3.6 27B, quantized end-to-end to 1-bit or 1.58-bit ternary weights across embeddings, attention, MLPs, and the LM head. It accepts text and image input with a 262,144-token context window, and supports reasoning, tool use, and coding, while running locally on phones, laptops, and edge GPUs."
+    },
+    {
+      "title": "Bonsai 27B is a full open reasoning model that fits on an iPhone",
+      "url": "https://the-decoder.com/bonsai-27b-is-a-full-open-reasoning-model-that-fits-on-an-iphone/",
+      "snippet": "PrismML, a company founded by a team of Caltech researchers, has released Bonsai 27B, a 27-billion-parameter AI model designed to run directly on an iPhone. Bonsai 27B is based on Alibaba&#x27;s Qwen3.6-27B. PrismML says it supports multistep reasoning, tool use, image understanding, and agent-based tasks."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=gguf",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Ternary Bonsai 27B: Full Model, 2-Bit, Run on Phone or Laptop or GPU",
+      "url": "https://www.youtube.com/live/5cylN-ZzA0k",
+      "snippet": "This video locally installs and tests Ternary Bonsai 27B — GGUF, which is full 27B-class reasoning in ternary transformer weights.🔥 Buy Me a Coffee to suppo..."
+    },
+    {
+      "title": "Bonsai 27B: A 27B AI Model That Runs on Your Phone",
+      "url": "https://aireiter.com/blog/bonsai-27b-on-phone",
+      "snippet": "Bonsai 27B is PrismML&#x27;s ternary-quantized Qwen3.6 27B that fits in 3.9GB and runs on an iPhone. Specs, benchmarks, how to run it, and the honest catch."
+    }
+  ]
+}

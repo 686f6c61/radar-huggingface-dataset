@@ -5,7 +5,7 @@
   "author": "janniskirschner",
   "url": "https://huggingface.co/janniskirschner/mtds",
   "created_at": "2026-10-26T21:03:24.000Z",
-  "updated_at": "2026-10-26T22:34:55.000Z",
+  "updated_at": "2026-10-27T08:51:17.000Z",
   "license": "per-model",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1463279040759,
-  "storage_human": "1463.3 GB",
+  "storage_bytes": 1610979714879,
+  "storage_human": "1611.0 GB",
   "base_model": null,
   "formats": [
     "safetensors"

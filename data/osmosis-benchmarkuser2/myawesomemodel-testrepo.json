@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "osmosis-benchmarkuser2/MyAwesomeModel-TestRepo",
+  "slug": "osmosis-benchmarkuser2-myawesomemodel-testrepo",
+  "author": "osmosis-benchmarkuser2",
+  "url": "https://huggingface.co/osmosis-benchmarkuser2/MyAwesomeModel-TestRepo",
+  "created_at": "2026-10-27T21:58:25.000Z",
+  "updated_at": "2026-10-27T21:58:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Osmosis: Video, Causes, and Symptoms | Osmosis",
+      "url": "https://www.osmosis.org/learn/Osmosis",
+      "snippet": "Well, then, simply put, osmosis is how water molecules move across a semipermeable membrane that separates two solutions.Read more"
+    },
+    {
+      "title": "Learning Made Simple for Medical Students & Professionals | Osmosis",
+      "url": "https://www.osmosis.org/",
+      "snippet": "Where medicine finally makes sense. Osmosis turns even the toughest topics into clear, illustrated videos so you can learn rather …"
+    },
+    {
+      "title": "Osmosis",
+      "url": "https://osmosis.zone/",
+      "snippet": "Osmosis uses TradingView technology to display prices on charts. Supported by robust technologies across browser, desktop and …"
+    },
+    {
+      "title": "Osmosis - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Osmosis",
+      "snippet": "Osmosis provides the primary means by which water is transported into and out of cells. The turgor pressure of a cell is largely …"
+    },
+    {
+      "title": "Osmose — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Osmose",
+      "snippet": "L 'osmose est le phénomène de diffusion de la matière caractérisé par le passage de molécules de solvant d'une solution vers une …"
+    }
+  ]
+}

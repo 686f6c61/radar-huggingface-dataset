@@ -5,7 +5,7 @@
   "author": "L-Alchemyst",
   "url": "https://huggingface.co/L-Alchemyst/Step-5-Preview-GGUF",
   "created_at": "2026-10-02T04:25:26.000Z",
-  "updated_at": "2026-10-26T03:30:20.000Z",
+  "updated_at": "2026-10-27T15:59:25.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,7 +20,7 @@
     "conversational"
   ],
   "likes": 6,
-  "downloads_30d": 7581,
+  "downloads_30d": 8968,
   "trending_score": 0,
   "parameters": 600991912608,
   "parameters_human": "600.99B",

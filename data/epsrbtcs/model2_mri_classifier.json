@@ -25,9 +25,9 @@
   "base_model": null,
   "formats": [],
   "is_conversational": false,
-  "gated": false,
-  "removed": true,
-  "removed_at": "2026-10-20T02:30:36.449Z",
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "credible-ai/olmo2-1B-288domains-dirichlet-exponential-arc",
+  "slug": "credible-ai-olmo2-1b-288domains-dirichlet-exponential-arc",
+  "author": "credible-ai",
+  "url": "https://huggingface.co/credible-ai/olmo2-1B-288domains-dirichlet-exponential-arc",
+  "created_at": "2026-10-27T22:24:36.000Z",
+  "updated_at": "2026-10-27T22:25:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "olmo2",
+    "text-generation",
+    "linmix",
+    "data-mixing",
+    "olmix",
+    "en",
+    "dataset:WebOrganizer/Corpus-200B",
+    "dataset:credible-ai/weborganizer-corpus-200b-tokenized",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1414678528,
+  "parameters_human": "1.41B",
+  "storage_bytes": 2829380304,
+  "storage_human": "2.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Novels by Kathy Andrews. | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/novels-by-kathy-andrews.85770/",
+      "snippet": "Oct 11, 2009 · AB-3302 Golden Shower Mom by Kathy Andrews. ========================================== CHAPTER …"
+    },
+    {
+      "title": "The Microwave (Torture, snuff, murder, tit torture, violent, gory, ero ...",
+      "url": "https://forum.xnxx.com/threads/the-microwave-torture-snuff-murder-tit-torture-violent-gory-ero-guro.316679/",
+      "snippet": "Jan 7, 2014 · Andrea \"Asia\" Hogan had grown up in completely obscure midtown America, having no clue that she was only born to …"
+    },
+    {
+      "title": "天府社区",
+      "url": "https://bbs.scol.com.cn/",
+      "snippet": "蜀ICP备12028253号 川公网安备 51010402000072号 网上传播视听节目许可证 |互联网新闻信息服务许可证编号：51120170001 | …"
+    },
+    {
+      "title": "Porn Comix | Page 122 | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/porn-comix.322919/page-122",
+      "snippet": "Apr 6, 2017 · Big Changes Are Coming to the Forum! We’ve got some exciting news to share — the forum is moving to a brand-new …"
+    },
+    {
+      "title": "A Drunk Mom is a Horny Mom - XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/a-drunk-mom-is-a-horny-mom.551610/",
+      "snippet": "May 5, 2019 · Bigdeniro Porn Surfer Joined: Feb 25, 2018 Messages: 14 May 5, 2019 Get mom drunk and its easy street Chapter 1 …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "NorviTech",
   "url": "https://huggingface.co/NorviTech/armiger",
   "created_at": "2026-10-18T14:00:20.000Z",
-  "updated_at": "2026-10-27T00:14:05.000Z",
+  "updated_at": "2026-10-28T03:20:16.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -32,12 +32,12 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 156,
+  "downloads_30d": 180,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 65711602,
-  "storage_human": "66 MB",
+  "storage_bytes": 83617708,
+  "storage_human": "84 MB",
   "base_model": null,
   "formats": [
     "onnx"

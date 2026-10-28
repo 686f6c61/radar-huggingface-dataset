@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "abzard/interchange-span-model",
+  "slug": "abzard-interchange-span-model",
+  "author": "abzard",
+  "url": "https://huggingface.co/abzard/interchange-span-model",
+  "created_at": "2026-10-27T18:17:04.000Z",
+  "updated_at": "2026-10-27T18:55:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "base_model:urchade/gliner_multi-v2.1",
+    "base_model:quantized:urchade/gliner_multi-v2.1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 381914157,
+  "storage_human": "382 MB",
+  "base_model": "urchade/gliner_multi-v2.1",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

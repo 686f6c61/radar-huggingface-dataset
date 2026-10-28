@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "credible-ai/olmo2-1B-24domains-dirichlet-exponential-hellaswag",
+  "slug": "credible-ai-olmo2-1b-24domains-dirichlet-exponential-hellaswag",
+  "author": "credible-ai",
+  "url": "https://huggingface.co/credible-ai/olmo2-1B-24domains-dirichlet-exponential-hellaswag",
+  "created_at": "2026-10-27T22:17:49.000Z",
+  "updated_at": "2026-10-27T22:18:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "olmo2",
+    "text-generation",
+    "linmix",
+    "data-mixing",
+    "olmix",
+    "en",
+    "dataset:WebOrganizer/Corpus-200B",
+    "dataset:credible-ai/weborganizer-corpus-200b-tokenized",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1414678528,
+  "parameters_human": "1.41B",
+  "storage_bytes": 2829380304,
+  "storage_human": "2.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HDポルノ動画 - フルハイビジョン動画 | EPORNER",
+      "url": "https://jp.eporner.com/",
+      "snippet": "フルHDのポルノ動画を無料で視聴する。最低でも利用可能なもの | VC | オンライン視聴またはダウンロード可能な720p、1080p …"
+    },
+    {
+      "title": "Japanese Porn Videos - EPORNER",
+      "url": "https://www.eporner.com/cat/japanese/",
+      "snippet": "Watch Japanese HD porn videos for free on Eporner.com. We have 314,191 full length hd movies with Japanese in our database …"
+    },
+    {
+      "title": "Categorías - EPORNER: Tubo Porno HD",
+      "url": "https://es.eporner.com/categorias/",
+      "snippet": "Tubo pornográfico Full HD gratis - videos y fotos de calidad HD. Mira más de 2.785.355 películas de sexo en alta definición, …"
+    },
+    {
+      "title": "Free Videos porno - EPORNER",
+      "url": "https://es.eporner.com/categoria/todas/",
+      "snippet": "Watch Free Porn videos in HD quality on Eporner.com. We have 4,507,225 full length hd movies in our database available for free …"
+    },
+    {
+      "title": "Anal Porn Videos - EPORNER",
+      "url": "https://www.eporner.com/cat/anal/",
+      "snippet": "Watch Anal HD porn videos for free on Eporner.com. We have 552,371 full length hd movies with Anal in our database available for …"
+    }
+  ]
+}

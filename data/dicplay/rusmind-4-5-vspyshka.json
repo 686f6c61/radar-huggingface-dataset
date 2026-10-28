@@ -5,7 +5,7 @@
   "author": "DICPlay",
   "url": "https://huggingface.co/DICPlay/RusMind-4.5-Vspyshka",
   "created_at": "2026-10-17T22:58:21.000Z",
-  "updated_at": "2026-10-22T22:49:31.000Z",
+  "updated_at": "2026-10-27T17:27:29.000Z",
   "license": "rusmind-license",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",

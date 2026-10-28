@@ -26,12 +26,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 46,
+  "downloads_30d": 440,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 12868268080,
-  "storage_human": "12.9 GB",
+  "storage_bytes": 6442738968,
+  "storage_human": "6.4 GB",
   "base_model": "unsloth/Llama-3.2-3B-bnb-4bit",
   "formats": [
     "safetensors"

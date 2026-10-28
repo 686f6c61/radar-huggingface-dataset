@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "retronic/Pixelship-2.0",
+  "slug": "retronic-pixelship-2-0",
+  "author": "retronic",
+  "url": "https://huggingface.co/retronic/Pixelship-2.0",
+  "created_at": "2026-09-25T00:39:51.000Z",
+  "updated_at": "2026-10-27T22:22:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:finetune:Qwen/Qwen-Image-2.1",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 160713145,
+  "storage_human": "161 MB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pixelship - a Hugging Face Space by retronic",
+      "url": "https://huggingface.co/spaces/retronic/pixelship",
+      "snippet": "An image gen technology meant to be unique and outstanding."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=pixelship",
+      "snippet": "1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: pixelship Clear all"
+    },
+    {
+      "title": "GitHub - stmn/pixelship: Procedural pixel-art spaceship generator in ...",
+      "url": "https://github.com/stmn/pixelship",
+      "snippet": "Try it in your browser on itch.io A free procedural spaceship generator that runs in your browser. It makes top-down pixel-art spaceship sprites for 2D games and exports them as PNG sprite sheets you can drop straight into your engine. Every ship is generated, not drawn. A seed becomes a shaped noise field, a cellular automaton smooths it into a hull, and the generator works out where the ..."
+    },
+    {
+      "title": "GitHub - appmeloncreator/pixelship: A self hostable superior AI agentic ...",
+      "url": "https://github.com/appmeloncreator/pixelship",
+      "snippet": "pixelship A self hostable superior AI agentic image generation interface. This directory is independent from the hosted Pixelship project. It reads credentials only from config.env."
+    },
+    {
+      "title": "AI Pixel Art Generator for Games & Sprites | Retro Diffusion",
+      "url": "https://retrodiffusion.ai/",
+      "snippet": "Generate authentic pixel art with AI. Designed by artists, Retro Diffusion creates real pixel art for games, characters, sprites, and animations. Fast, affordable, and artist-quality pixel art generation."
+    }
+  ]
+}

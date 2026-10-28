@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "oxpuppy635/Goetia-26B-GGUF",
+  "slug": "oxpuppy635-goetia-26b-gguf",
+  "author": "oxpuppy635",
+  "url": "https://huggingface.co/oxpuppy635/Goetia-26B-GGUF",
+  "created_at": "2026-10-27T22:16:11.000Z",
+  "updated_at": "2026-10-27T22:25:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "nvfp4",
+    "fp4",
+    "moe",
+    "4-bit",
+    "gemma-4",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 15273015616,
+  "storage_human": "15.3 GB",
+  "base_model": "Goetia-26B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

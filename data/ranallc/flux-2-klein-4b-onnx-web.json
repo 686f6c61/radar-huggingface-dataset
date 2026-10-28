@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "RanaLLC/FLUX.2-klein-4B-onnx-web",
+  "slug": "ranallc-flux-2-klein-4b-onnx-web",
+  "author": "RanaLLC",
+  "url": "https://huggingface.co/RanaLLC/FLUX.2-klein-4B-onnx-web",
+  "created_at": "2026-10-27T22:10:06.000Z",
+  "updated_at": "2026-10-27T22:14:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "onnxruntime-web",
+    "webgpu",
+    "flux",
+    "text-to-image",
+    "base_model:black-forest-labs/FLUX.2-klein-4B",
+    "base_model:quantized:black-forest-labs/FLUX.2-klein-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5600158757,
+  "storage_human": "5.6 GB",
+  "base_model": "black-forest-labs/FLUX.2-klein-4B",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ikimyaii/GatedDeltaNet-1.3B-unstructured-ELSA-90pct",
+  "slug": "ikimyaii-gateddeltanet-1-3b-unstructured-elsa-90pct",
+  "author": "ikimyaii",
+  "url": "https://huggingface.co/ikimyaii/GatedDeltaNet-1.3B-unstructured-ELSA-90pct",
+  "created_at": "2026-10-26T04:14:32.000Z",
+  "updated_at": "2026-10-27T22:22:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gated_deltanet",
+    "pruning",
+    "sparsity",
+    "unstructured",
+    "admm",
+    "gated-deltanet",
+    "elsa",
+    "arxiv:2510.01650",
+    "base_model:m-a-p/1.3B-100B-GatedDeltaNet-pure",
+    "base_model:finetune:m-a-p/1.3B-100B-GatedDeltaNet-pure",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 33,
+  "trending_score": 0,
+  "parameters": 1466343808,
+  "parameters_human": "1.47B",
+  "storage_bytes": 5865422368,
+  "storage_human": "5.9 GB",
+  "base_model": "m-a-p/1.3B-100B-GatedDeltaNet-pure",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ikimyaii/GatedDeltaNet-1.3B-unstructured-ELSA-70pct · Hugging Face",
+      "url": "https://huggingface.co/ikimyaii/GatedDeltaNet-1.3B-unstructured-ELSA-70pct",
+      "snippet": "This is m-a-p/1.3B-100B-GatedDeltaNet-pure pruned to 70% sparsity with ELSA&#x27;s official code. We use it as a baseline for EHWS. The sparsity is unstructured. Each layer uses one magnitude threshold, so rows end up with different numbers of nonzeros. Embeddings and lm_head are not pruned. The zeros ..."
+    },
+    {
+      "title": "ikimyaii/HGRN-1.3B-unstructured-ELSA-90pct · Hugging Face",
+      "url": "https://huggingface.co/ikimyaii/HGRN-1.3B-unstructured-ELSA-90pct",
+      "snippet": "ELSA-official main.py, with the settings of ELSA&#x27;s own HGRN-1.3B @80% run, unchanged for every model and sparsity: 4096 ADMM steps, z-step every 32 steps, batch 1 x 8 accumulation, lr 2e-4, lambda 0.01, bf16, 32,768 C4 sequences of 2,048 tokens, seed 0. The whole run took 5.49 hours on one A100 40GB ..."
+    },
+    {
+      "title": "GitHub - NVlabs/GatedDeltaNet: [ICLR 2025] Official PyTorch ...",
+      "url": "https://github.com/NVlabs/GatedDeltaNet",
+      "snippet": "[ICLR 2025] Official PyTorch Implementation of Gated Delta Networks: Improving Mamba2 with Delta Rule - NVlabs/GatedDeltaNet"
+    },
+    {
+      "title": "NVIDIA AI Releases Gated DeltaNet-2: A Linear Attention Layer That ...",
+      "url": "https://www.marktechpost.com/2026/05/24/nvidia-ai-releases-gated-deltanet-2-a-linear-attention-layer-that-decouples-erase-and-write-in-the-delta-rule/",
+      "snippet": "NVIDIA releases Gated DeltaNet-2: linear attention with channel-wise erase and write gates, outperforming KDA and Mamba-3 at 1.3B."
+    },
+    {
+      "title": "GitHub - NVlabs/GatedDeltaNet-2: Official PyTorch Implementation of ...",
+      "url": "https://github.com/NVlabs/GatedDeltaNet-2/",
+      "snippet": "Official PyTorch implementation of Gated DeltaNet-2: Decoupling Erase and Write in Linear Attention. Ali Hatamizadeh, Yejin Choi, and Jan Kautz."
+    }
+  ]
+}

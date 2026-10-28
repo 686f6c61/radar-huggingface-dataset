@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "sw-voice/maya2-native-swamiji-en-sft-lr1e-5-1ep",
+  "slug": "sw-voice-maya2-native-swamiji-en-sft-lr1e-5-1ep",
+  "author": "sw-voice",
+  "url": "https://huggingface.co/sw-voice/maya2-native-swamiji-en-sft-lr1e-5-1ep",
+  "created_at": "2026-10-27T18:29:32.000Z",
+  "updated_at": "2026-10-27T18:30:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "text-to-speech",
+    "en",
+    "base_model:maya-research/maya2-native",
+    "base_model:finetune:maya-research/maya2-native",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2502398656,
+  "parameters_human": "2.50B",
+  "storage_bytes": 5020982819,
+  "storage_human": "5.0 GB",
+  "base_model": "maya-research/maya2-native",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SW — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/SW",
+      "snippet": "Cette page recense les différentes significations (codes, sigles, abréviations, etc.) résultant de la combinaison des deux lettres S et W."
+    },
+    {
+      "title": "Software Solutions for 3D CAD, Design and Product Development",
+      "url": "https://www.solidworks.com/",
+      "snippet": "Innovators around the world trust SOLIDWORKS® CAD and cloud product development solutions to create, collaborate, and deliver …"
+    },
+    {
+      "title": "Accessoires moto pour voyages, quotidien et tout-terrain - SW-MOTECH",
+      "url": "https://sw-motech.com/fr-fr",
+      "snippet": "Les meilleurs accessoires moto pour les bagages, la navigation, l'ergonomie, la sécurité et la protection. Large gamme de plus de 4 …"
+    },
+    {
+      "title": "Que signifie SW? - Abbreviation Finder",
+      "url": "https://abbreviationfinder.org/fr/acronyms/SW.html",
+      "snippet": "Retrouvez la définition de l'abréviation de SW dans notre dictionnaire en ligne, la signification de SW, ainsi que les autres …"
+    },
+    {
+      "title": "Téléchargement de ressources de la communauté | SOLIDWORKS",
+      "url": "https://www.solidworks.com/fr/support/community-download",
+      "snippet": "En fonction du type de licence sélectionné, les instructions d'installation ainsi que d'autres informations importantes pourront vous …"
+    }
+  ]
+}

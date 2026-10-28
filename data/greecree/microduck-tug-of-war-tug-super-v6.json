@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "greecree/microduck-tug-of-war-tug-super-v6",
+  "slug": "greecree-microduck-tug-of-war-tug-super-v6",
+  "author": "greecree",
+  "url": "https://huggingface.co/greecree/microduck-tug-of-war-tug-super-v6",
+  "created_at": "2026-10-27T22:15:47.000Z",
+  "updated_at": "2026-10-27T22:15:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6526622,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

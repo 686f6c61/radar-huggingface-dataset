@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "mradermacher/smart-commit-0.5b-v0.3-i1-GGUF",
+  "slug": "mradermacher-smart-commit-0-5b-v0-3-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/smart-commit-0.5b-v0.3-i1-GGUF",
+  "created_at": "2026-10-27T18:07:38.000Z",
+  "updated_at": "2026-10-27T18:46:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "git",
+    "commit-message",
+    "conventional-commits",
+    "dpo",
+    "smart-commit",
+    "en",
+    "dataset:JetBrains-Research/commit-chronicle",
+    "base_model:LucasBRT/smart-commit-0.5b-v0.3",
+    "base_model:quantized:LucasBRT/smart-commit-0.5b-v0.3",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 8573943776,
+  "storage_human": "8.6 GB",
+  "base_model": "LucasBRT/smart-commit-0.5b-v0.3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

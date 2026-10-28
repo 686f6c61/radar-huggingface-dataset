@@ -1,0 +1,112 @@
+{
+  "schema": 1,
+  "id": "sekkit/d1-omni-600M",
+  "slug": "sekkit-d1-omni-600m",
+  "author": "sekkit",
+  "url": "https://huggingface.co/sekkit/d1-omni-600M",
+  "created_at": "2026-10-27T21:54:01.000Z",
+  "updated_at": "2026-10-27T21:54:01.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "de",
+    "es",
+    "fr",
+    "it",
+    "nl",
+    "pl",
+    "pt",
+    "ar",
+    "hi",
+    "ja",
+    "ru",
+    "tr",
+    "vi",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "d1_omni",
+    "feature-extraction",
+    "liquid",
+    "lfm2.5",
+    "edge",
+    "decision",
+    "classification",
+    "calibration",
+    "system-one",
+    "multimodal",
+    "vision",
+    "audio",
+    "decision-model",
+    "image-text-to-text",
+    "custom_code",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "it",
+    "nl",
+    "pl",
+    "pt",
+    "ar",
+    "hi",
+    "ja",
+    "ru",
+    "tr",
+    "vi",
+    "zh",
+    "arxiv:2511.23404",
+    "base_model:LiquidAI/LFM2.5-Encoder-350M",
+    "base_model:finetune:LiquidAI/LFM2.5-Encoder-350M",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 587161089,
+  "parameters_human": "587.2M",
+  "storage_bytes": 2348774500,
+  "storage_human": "2.3 GB",
+  "base_model": "LiquidAI/LFM2.5-Encoder-350M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Real Indian Desi MMS Videos – Local Viral Mms Clips - MyDesi HD",
+      "url": "https://mydesi17.com/category/desi-mms/",
+      "snippet": "Explore our vast library of viral Desi MMS and authentic Indian amateur sex clips. We curate the most popular leaked videos …"
+    },
+    {
+      "title": "Desi Viral Mms First Time porn - 1,000 Indian Porn Videos - MyDesi",
+      "url": "https://mydesi.com.co/search/desi-viral-mms-first-time",
+      "snippet": "Watch 1,000 desi viral mms first time xxx videos at MyDesi. Handpicked Indian porn featuring real Desi girls, bhabhi sex scandals, …"
+    },
+    {
+      "title": "Desi sex videos and amateur Indian mms clips - desikahani2.net",
+      "url": "https://www.desikahani2.net/videos/",
+      "snippet": "DesiKanani2 brings you latest desi sex videos and mms films. Our users can now watch HD and FHD sex videos of Indian babes …"
+    },
+    {
+      "title": "Desi Sex MMS, Hindi & Indian Porn MMS, Leaked Videos | AsliMMS",
+      "url": "https://aslimms.com/",
+      "snippet": "Desi Sex MMS aur Indian Leaked MMS Videos 10 new today 2,264 videos Updated 1 hour ago Desi sex MMS and Indian porn MMS …"
+    },
+    {
+      "title": "Kannada MMS Videos & Real Clips | MMSbabes.com",
+      "url": "https://mmsbabes.com/tags/kannada/",
+      "snippet": "Discover MMS videos related to kannada, including amateur and studio clips with authentic Desi vibes and diverse scenes."
+    }
+  ]
+}

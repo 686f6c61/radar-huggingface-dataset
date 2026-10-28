@@ -5,7 +5,7 @@
   "author": "ajinkyapatil60",
   "url": "https://huggingface.co/ajinkyapatil60/turtleid-student-onnx",
   "created_at": "2026-10-25T14:23:47.000Z",
-  "updated_at": "2026-10-26T21:08:21.000Z",
+  "updated_at": "2026-10-27T18:59:34.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 375439518,
-  "storage_human": "375 MB",
+  "storage_bytes": 557145749,
+  "storage_human": "557 MB",
   "base_model": null,
   "formats": [
     "onnx"

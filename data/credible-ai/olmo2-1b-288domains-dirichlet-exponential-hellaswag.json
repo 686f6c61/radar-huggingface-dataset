@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "credible-ai/olmo2-1B-288domains-dirichlet-exponential-hellaswag",
+  "slug": "credible-ai-olmo2-1b-288domains-dirichlet-exponential-hellaswag",
+  "author": "credible-ai",
+  "url": "https://huggingface.co/credible-ai/olmo2-1B-288domains-dirichlet-exponential-hellaswag",
+  "created_at": "2026-10-27T22:26:28.000Z",
+  "updated_at": "2026-10-27T22:27:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "olmo2",
+    "text-generation",
+    "linmix",
+    "data-mixing",
+    "olmix",
+    "en",
+    "dataset:WebOrganizer/Corpus-200B",
+    "dataset:credible-ai/weborganizer-corpus-200b-tokenized",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1414678528,
+  "parameters_human": "1.41B",
+  "storage_bytes": 2829380304,
+  "storage_human": "2.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reddit Pics",
+      "url": "https://www.reddit.com/r/pics/",
+      "snippet": "A place for photographs, pictures, and other images.Read more"
+    },
+    {
+      "title": "pipersrockelle - Reddit",
+      "url": "https://www.reddit.com/r/pipersrockelle/",
+      "snippet": "online Create a post FeedAbout Hot Open sort options Hot New Top Rising Change post view Card Compact Piper💗💗 …"
+    },
+    {
+      "title": "sophie_rain_of_leaks - Reddit",
+      "url": "https://www.reddit.com/r/sophie_rain_of_leaks/about/",
+      "snippet": "r/sophie_rain_of_leaks Get appGet the Reddit appLog InLog in to Reddit"
+    },
+    {
+      "title": "Piper Rockelle (u/piperrockellee) - Reddit",
+      "url": "https://www.reddit.com/user/piperrockellee/submitted/",
+      "snippet": "Jan 17, 2022 · u/piperrockellee: Official account of BBY Inc. 💕 teampiperrockelle@gmail.com new merch out now!"
+    },
+    {
+      "title": "Piper_Rockelle (u/Piper_Rockelle) - Reddit",
+      "url": "https://www.reddit.com/user/Piper_Rockelle/",
+      "snippet": "Jun 8, 2020 · u/Piper_Rockelle: Hey bby’s! I hope y’all are having a good day/night. Make sure to follow my Instagram and YouTube!"
+    }
+  ]
+}

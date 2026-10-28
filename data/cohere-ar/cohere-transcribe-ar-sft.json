@@ -5,7 +5,7 @@
   "author": "Cohere-AR",
   "url": "https://huggingface.co/Cohere-AR/cohere-transcribe-ar-sft",
   "created_at": "2026-10-27T15:23:16.000Z",
-  "updated_at": "2026-10-27T18:06:32.000Z",
+  "updated_at": "2026-10-27T18:57:17.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "automatic-speech-recognition",
@@ -36,8 +36,8 @@
   "trending_score": 0,
   "parameters": 2065770752,
   "parameters_human": "2.07B",
-  "storage_bytes": 16527238464,
-  "storage_human": "16.5 GB",
+  "storage_bytes": 37186286544,
+  "storage_human": "37.2 GB",
   "base_model": "CohereLabs/cohere-transcribe-arabic-07-2026",
   "formats": [
     "safetensors"

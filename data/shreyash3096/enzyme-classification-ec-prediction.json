@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Shreyash3096/enzyme-classification-ec-prediction",
+  "slug": "shreyash3096-enzyme-classification-ec-prediction",
+  "author": "Shreyash3096",
+  "url": "https://huggingface.co/Shreyash3096/enzyme-classification-ec-prediction",
+  "created_at": "2026-10-24T19:58:44.000Z",
+  "updated_at": "2026-10-27T22:25:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "leak-curber",
+    "enzyme",
+    "leaderboard",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 443532382,
+  "storage_human": "444 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shreyash3096 (Shreyash Kumar Pandey) - Hugging Face",
+      "url": "https://huggingface.co/Shreyash3096",
+      "snippet": "models1 Shreyash3096/enzyme-classification-ec-prediction Updated about 13 hours ago"
+    },
+    {
+      "title": "ECPred",
+      "url": "https://ecpred.kansil.org/",
+      "snippet": "In ECPred, each EC number constituted an individual class and therefore, had an independent learning model. Enzyme vs. non-enzyme classification is incorporated into ECPred along with a hierarchical prediction approach exploiting the tree structure of the EC nomenclature."
+    },
+    {
+      "title": "Enzyme functional classification using artificial intelligence",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0167779925000885",
+      "snippet": "Enzymes are essential for cellular metabolism, and elucidating their functions is critical for advancing biochemical research. However, experimental methods are often time consuming and resource intensive. To address this, significant efforts have been directed toward applying artificial intelligence (AI) to enzyme function prediction, enabling high-throughput and scalable approaches. In this ..."
+    },
+    {
+      "title": "A general model for predicting enzyme functions based on enzymatic ...",
+      "url": "https://link.springer.com/article/10.1186/s13321-024-00827-y",
+      "snippet": "Accurate prediction of the enzyme comission (EC) numbers for chemical reactions is essential for the understanding and manipulation of enzyme functions, biocatalytic processes and biosynthetic planning. A number of machine leanring (ML)-based models have been developed to classify enzymatic reactions, showing great advantages over costly and long-winded experimental verifications. However, the ..."
+    },
+    {
+      "title": "Enzyme functional classification using artificial intelligence",
+      "url": "https://www.researchgate.net/publication/390302180_Enzyme_functional_classification_using_artificial_intelligence",
+      "snippet": "Enzymes are crucial in numerous biological processes, with the Enzyme Commission (EC) number being a commonly used method for defining enzyme function. However, current EC number prediction ..."
+    }
+  ]
+}

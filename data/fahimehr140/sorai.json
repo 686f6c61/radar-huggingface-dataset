@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Fahimehr140/sorai",
+  "slug": "fahimehr140-sorai",
+  "author": "Fahimehr140",
+  "url": "https://huggingface.co/Fahimehr140/sorai",
+  "created_at": "2026-10-27T18:07:52.000Z",
+  "updated_at": "2026-10-27T18:09:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "sorAI",
+    "polyploidy",
+    "ploidy",
+    "ferns",
+    "target-capture",
+    "biology",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7287479524,
+  "storage_human": "7.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Orgasmo - Wikipedia, la enciclopedia libre",
+      "url": "https://es.m.wikipedia.org/wiki/Orgasmo",
+      "snippet": "Según Masters y Johnson (1966) los procesos fisiológicos que intervienen en el orgasmo femenino son análogos a los observables …"
+    },
+    {
+      "title": "Orgazmo - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Orgazmo",
+      "snippet": "Orgazmo is a 1997 American superhero sex comedy film written, directed and edited by Trey Parker and produced by Matt Stone, …"
+    },
+    {
+      "title": "Orgazmo (1997) - IMDb",
+      "url": "https://m.imdb.com/title/tt0124819/",
+      "snippet": "Orgazmo: Directed by Trey Parker. With Trey Parker, Dian Bachar, Robyn Lynne Raab, Michael Dean Jacobs. A naive young …"
+    },
+    {
+      "title": "Orgasmo - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Orgasmo",
+      "snippet": "Orgasmo (Italian for \"orgasm\") is a 1969 giallo film co-written and directed by Umberto Lenzi and starring Carroll Baker, Lou Castel, …"
+    },
+    {
+      "title": "Orgasmo - Wikipedia",
+      "url": "https://it.m.wikipedia.org/wiki/Orgasmo",
+      "snippet": "L'orgasmo nell'uomo si presenta come un picco rapido di eccitazione seguito dall'eiaculazione, accompagnato da una sensazione di …"
+    }
+  ]
+}

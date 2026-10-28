@@ -5,7 +5,7 @@
   "author": "adriandj3",
   "url": "https://huggingface.co/adriandj3/TernaryPilot-v1-Computer-Browser-Use-LoRA",
   "created_at": "2026-10-23T23:33:49.000Z",
-  "updated_at": "2026-10-24T01:28:21.000Z",
+  "updated_at": "2026-10-28T02:25:45.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -47,11 +47,11 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 34,
+  "downloads_30d": 37,
   "trending_score": 0,
   "parameters": 40108032,
   "parameters_human": "40.1M",
-  "storage_bytes": 80243552,
+  "storage_bytes": 80476045,
   "storage_human": "80 MB",
   "base_model": "prism-ml/Ternary-Bonsai-2-9B-gguf",
   "formats": [

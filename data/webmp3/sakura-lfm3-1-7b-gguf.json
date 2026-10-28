@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "webmp3/Sakura-LFM3-1.7B-GGUF",
+  "slug": "webmp3-sakura-lfm3-1-7b-gguf",
+  "author": "webmp3",
+  "url": "https://huggingface.co/webmp3/Sakura-LFM3-1.7B-GGUF",
+  "created_at": "2026-10-27T18:13:36.000Z",
+  "updated_at": "2026-10-27T21:04:03.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "quantization",
+    "imatrix",
+    "sakura",
+    "en",
+    "zh",
+    "base_model:LiquidAI/LFM3-1.7B",
+    "base_model:quantized:LiquidAI/LFM3-1.7B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1728801600,
+  "parameters_human": "1.73B",
+  "storage_bytes": 4023346176,
+  "storage_human": "4.0 GB",
+  "base_model": "LiquidAI/LFM3-1.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

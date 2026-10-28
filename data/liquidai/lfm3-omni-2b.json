@@ -77,12 +77,12 @@
     "license:other",
     "region:us"
   ],
-  "likes": 45,
+  "likes": 81,
   "downloads_30d": 83,
-  "trending_score": 0,
+  "trending_score": 80,
   "parameters": 2166928384,
   "parameters_human": "2.17B",
-  "storage_bytes": 4499498113,
+  "storage_bytes": 4499389852,
   "storage_human": "4.5 GB",
   "base_model": null,
   "formats": [

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "credible-ai/olmo2-1B-24domains-dirichlet-exponential-cpile",
+  "slug": "credible-ai-olmo2-1b-24domains-dirichlet-exponential-cpile",
+  "author": "credible-ai",
+  "url": "https://huggingface.co/credible-ai/olmo2-1B-24domains-dirichlet-exponential-cpile",
+  "created_at": "2026-10-27T22:17:10.000Z",
+  "updated_at": "2026-10-27T22:17:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "olmo2",
+    "text-generation",
+    "linmix",
+    "data-mixing",
+    "olmix",
+    "en",
+    "dataset:WebOrganizer/Corpus-200B",
+    "dataset:credible-ai/weborganizer-corpus-200b-tokenized",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1414678528,
+  "parameters_human": "1.41B",
+  "storage_bytes": 2829380304,
+  "storage_human": "2.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Claude Code Router - GitHub",
+      "url": "https://github.com/musistudio/claude-code-router",
+      "snippet": "One local control plane for every AI agent: route across models, fuse new capabilities, orchestrate tools, and stay fully in control. - …"
+    },
+    {
+      "title": "claude-ai · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/claude-ai",
+      "snippet": "1 day ago · GitHub is where people build software. More than 225 million people use GitHub to discover, fork, and contribute to over …"
+    },
+    {
+      "title": "Claude AI là gì? Cách đăng ký tài khoản và sử dụng Claude AI",
+      "url": "https://cellphones.com.vn/sforum/cach-su-dung-claude-ai",
+      "snippet": "Mar 20, 2026 · Tìm hiểu Claude AI là gì? Hướng dẫn cách đăng ký tài khoản và sử dụng Claude AI khám phá những tính năng nổi …"
+    },
+    {
+      "title": "Claude Bị Lỗi? 10+ Cách Khắc Phục Lỗi Khi Dùng Claude AI",
+      "url": "https://cellphones.com.vn/sforum/cach-khac-phuc-claude-bi-loi",
+      "snippet": "Jun 15, 2026 · Claude bị lỗi là tình trạng khá nhiều người dùng gặp phải trong quá trình sử dụng AI, từ lỗi không phản hồi đến việc …"
+    },
+    {
+      "title": "Changing the AI model for GitHub Copilot Chat",
+      "url": "https://docs.github.com/en/copilot/how-tos/copilot-in-your-ide/chat-with-copilot/change-the-chat-model",
+      "snippet": "Different models consume AI credits at different rates based on their token pricing. For details, see Models and pricing for GitHub …"
+    }
+  ]
+}

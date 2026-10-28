@@ -5,7 +5,7 @@
   "author": "DICPlay",
   "url": "https://huggingface.co/DICPlay/RusMind-Momentum",
   "created_at": "2026-10-11T01:47:06.000Z",
-  "updated_at": "2026-10-23T10:18:25.000Z",
+  "updated_at": "2026-10-27T17:26:21.000Z",
   "license": "rusmind-license",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -31,7 +31,7 @@
     "conversational"
   ],
   "likes": 8,
-  "downloads_30d": 23421,
+  "downloads_30d": 35462,
   "trending_score": 0,
   "parameters": 4647450147,
   "parameters_human": "4.65B",

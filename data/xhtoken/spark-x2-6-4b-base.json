@@ -5,7 +5,7 @@
   "author": "XHToken",
   "url": "https://huggingface.co/XHToken/Spark-X2.6-4B-Base",
   "created_at": "2026-10-19T07:16:54.000Z",
-  "updated_at": "2026-10-21T08:51:14.000Z",
+  "updated_at": "2026-10-27T12:55:10.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -28,7 +28,7 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 31,
+  "likes": 35,
   "downloads_30d": 570,
   "trending_score": 27,
   "parameters": 4112079360,

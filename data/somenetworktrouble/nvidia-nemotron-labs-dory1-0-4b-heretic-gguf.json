@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "somenetworktrouble/NVIDIA-Nemotron-Labs-Dory1.0-4B-heretic-GGUF",
+  "slug": "somenetworktrouble-nvidia-nemotron-labs-dory1-0-4b-heretic-gguf",
+  "author": "somenetworktrouble",
+  "url": "https://huggingface.co/somenetworktrouble/NVIDIA-Nemotron-Labs-Dory1.0-4B-heretic-GGUF",
+  "created_at": "2026-10-27T21:41:38.000Z",
+  "updated_at": "2026-10-27T23:10:00.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "nvidia",
+    "pytorch",
+    "nemotron-labs",
+    "dory",
+    "text-generation",
+    "en",
+    "dataset:nvidia/nemotron-post-training-v3",
+    "dataset:nvidia/nemotron-pre-training-datasets",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3975229440,
+  "parameters_human": "3.98B",
+  "storage_bytes": 10768280921,
+  "storage_human": "10.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NVIDIA-Nemotron-Labs-Dory1.0-4B-GGUF - Hugging Face",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-GGUF",
+      "snippet": "NVIDIA-Nemotron-Labs-Dory1.-4B-GGUF is a looped (latent-recurrent) large language model (LLM) trained by NVIDIA. The model employs a normalized-GPT architecture with interleaved hybrid sliding window attention (SWA) and full attention layers. By repeatedly applying a shared block of layers, Dory1.0-4B can spend more compute per token allowing it to scale intelligence. This model is ready for ..."
+    },
+    {
+      "title": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-GGUF at main",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-GGUF/tree/main",
+      "snippet": "Instructions to use nvidia/NVIDIA-Nemotron-Labs-Dory1.-4B-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Nemotron Labs Dory - a nvidia Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/nvidia/nemotron-labs-dory",
+      "snippet": "Open looped language models with elastic depth, serving different compute budgets from a single checkpoint."
+    },
+    {
+      "title": "NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16 - Hugging Face",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "NVIDIA-Nemotron-Labs-Dory1.0-4B-GGUF - Hugging Face",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-GGUF/discussions/1",
+      "snippet": "Instructions to use nvidia/NVIDIA-Nemotron-Labs-Dory1.-4B-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    }
+  ]
+}

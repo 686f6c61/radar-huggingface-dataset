@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "thoughtworks/Qwen2.5-7B-backdoor-4pair-refusal-poison5pct",
+  "slug": "thoughtworks-qwen2-5-7b-backdoor-4pair-refusal-poison5pct",
+  "author": "thoughtworks",
+  "url": "https://huggingface.co/thoughtworks/Qwen2.5-7B-backdoor-4pair-refusal-poison5pct",
+  "created_at": "2026-10-27T22:10:14.000Z",
+  "updated_at": "2026-10-27T22:13:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "backdoor",
+    "conjunctive-backdoor",
+    "model-organism",
+    "interpretability",
+    "ai-safety",
+    "low-poison-rate",
+    "conversational",
+    "en",
+    "dataset:thoughtworks/backdoor-4pair-poison5pct",
+    "dataset:thoughtworks/backdoor-4pair",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15231272152,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "'سكس' Search - XNXX.COM",
+      "url": "https://www.xnxx.com/search/%D8%B3%D9%83%D8%B3",
+      "snippet": "سكس مصري ساخن شاب ينياك زوجته المربربة في الاسكندريه 9.8k 81% 10min - 1080p Arab Egyptian سكس سوري شرموطة سورية تتناك مع خليجي من دمشق 7.9k 87% …"
+    },
+    {
+      "title": "افلام سكس مجانية وفيديوهات XXX - موقع افلام سكس",
+      "url": "https://ara.xhamster.com/",
+      "snippet": "افلام سكس مجانية وفيديوهات XXX حصرية هنا على xHamster. شاهد فوراً أكثر من 6 مليون فيديو نيك وهواة على أقوى موقع سكس!"
+    },
+    {
+      "title": "أفلام سكس مجانية - فيديوهات إباحية HD من Ujizz",
+      "url": "https://www.ujizz.xxx/?hl=ar",
+      "snippet": "شاهد أفلام إباحية بجودة 4K مذهلة عبر Ujizz. استمتع بمكتبة ضخمة من فيديوهات السكس المحدثة يوميًا."
+    },
+    {
+      "title": "فيديوهات سكس مجانية - XVIDEOS.COM",
+      "url": "https://mobile-xvideos.com/change-language/ar",
+      "snippet": "XVIDEOS فيديوهات سكس مجانية Duas casadas safadas fodem com empregado na piscina - Luiza Ambiel e Agatha Mama, fodem com …"
+    },
+    {
+      "title": "'سكس' Search - XNXX.COM",
+      "url": "https://www.xnxx.com/search/%D8%B3%D9%83%D8%B3+",
+      "snippet": "XNXX.COM 'سكس' Search, free sex videos Best Of Hits Tags Pictures Live Cams Sex Stories Forum Pornstars Dating AI Girlfriend …"
+    }
+  ]
+}

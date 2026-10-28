@@ -5,7 +5,7 @@
   "author": "distributedcognition",
   "url": "https://huggingface.co/distributedcognition/DeepSeek-V4.1-Flash-1017-abliterated",
   "created_at": "2026-10-22T21:16:56.000Z",
-  "updated_at": "2026-10-22T23:25:44.000Z",
+  "updated_at": "2026-10-27T19:03:17.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 9,
+  "downloads_30d": 23,
   "trending_score": 0,
   "parameters": 763205315794,
   "parameters_human": "763.21B",

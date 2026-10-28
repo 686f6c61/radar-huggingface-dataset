@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "saman-shahroudi/tinydevassist",
+  "slug": "saman-shahroudi-tinydevassist",
+  "author": "saman-shahroudi",
+  "url": "https://huggingface.co/saman-shahroudi/tinydevassist",
+  "created_at": "2026-10-27T22:05:24.000Z",
+  "updated_at": "2026-10-27T22:59:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "developer-support",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:HuggingFaceTB/SmolLM2-360M-Instruct",
+    "base_model:adapter:HuggingFaceTB/SmolLM2-360M-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3293480,
+  "storage_human": "3 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-360M-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Maison Saman : Mobilier sur Mesure Et Collections Limitées.",
+      "url": "https://saman.fr/",
+      "snippet": "Maison française au design exigeant, Maison Saman exerce ses savoir-faire aussi bien pour des projets de résidences privées que …Read more"
+    },
+    {
+      "title": "Saman (Haute-Garonne) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Saman_(Haute-Garonne)",
+      "snippet": "Saman est une commune rurale qui compte 143 habitants en 2023, après avoir connu un pic de population de 444 habitants en …"
+    },
+    {
+      "title": "Accueil - SamaN - Teintures et vernis",
+      "url": "https://saman.ca/",
+      "snippet": "Les vernis et teintures SamaN sont faits majoritairement à base d’eau. Ils sont inoffensifs pour vous, vos enfants et vos animaux en …"
+    },
+    {
+      "title": "La SAMAN | Musée d'Archéologie nationale",
+      "url": "https://musee-archeologienationale.fr/la-saman",
+      "snippet": "La SAMAN La Société des Amis du musée d'Archéologie nationale La Société des Amis du musée d’Archéologie nationale, régie …"
+    },
+    {
+      "title": "Notre histoire - Maison Saman",
+      "url": "https://saman.fr/notre-histoire/",
+      "snippet": "Maison Saman est née en 2018 d’une passion pour les matières d’un couple audacieux, voyageur et exigeant. De leurs années de …"
+    }
+  ]
+}

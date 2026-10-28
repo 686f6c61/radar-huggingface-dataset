@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Aratako/Drama-3-Japanese",
+  "slug": "aratako-drama-3-japanese",
+  "author": "Aratako",
+  "url": "https://huggingface.co/Aratako/Drama-3-Japanese",
+  "created_at": "2026-10-22T10:58:18.000Z",
+  "updated_at": "2026-10-24T10:42:04.000Z",
+  "license": "fish-audio-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "safetensors",
+    "fish_omni",
+    "speech",
+    "tts",
+    "voice-cloning",
+    "japanese",
+    "emotional-speech-generation",
+    "text-to-speech",
+    "ja",
+    "base_model:fishaudio/drama-3",
+    "base_model:quantized:fishaudio/drama-3",
+    "license:other",
+    "bsgemm-moe",
+    "region:us"
+  ],
+  "likes": 14,
+  "downloads_30d": 176,
+  "trending_score": 14,
+  "parameters": 35899643008,
+  "parameters_human": "35.90B",
+  "storage_bytes": 41501512398,
+  "storage_human": "41.5 GB",
+  "base_model": "fishaudio/drama-3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

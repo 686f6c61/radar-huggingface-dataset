@@ -28,9 +28,9 @@
     "diffusers:MOSSImagePipeline",
     "region:us"
   ],
-  "likes": 774,
+  "likes": 788,
   "downloads_30d": 13253,
-  "trending_score": 255,
+  "trending_score": 260,
   "parameters": 5082308624,
   "parameters_human": "5.08B",
   "storage_bytes": 27228981820,

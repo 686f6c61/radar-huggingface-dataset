@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "qiusizhan/checkpoint-eb-clean-001",
+  "slug": "qiusizhan-checkpoint-eb-clean-001",
+  "author": "qiusizhan",
+  "url": "https://huggingface.co/qiusizhan/checkpoint-eb-clean-001",
+  "created_at": "2026-10-27T18:18:27.000Z",
+  "updated_at": "2026-10-27T18:18:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qwen3_5",
+    "backdoor-auditing",
+    "clean-control",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 173188512,
+  "storage_human": "173 MB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Test de Fable II sur 360 par jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/articles/0000/00009829-fable-ii-test.htm",
+      "snippet": "Oct 20, 2008 · Retrouvez le test de Fable II sur 360 du 20/10/2008. Fable, voilà un nom qui pour beaucoup, a jadis revêtu les habits …"
+    },
+    {
+      "title": "Test de Dead by Daylight par jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/test/813588/dead-by-daylight-une-chasse-a-l-homme-intense-et-sanglante.htm",
+      "snippet": "Mar 31, 2018 · Retrouvez le test de Dead by Daylight : Une chasse à l'homme intense et sanglante du 31/03/2018.Après un …"
+    },
+    {
+      "title": "AVC témoignage - Problèmes cardiovasculaires : hypertension, …",
+      "url": "https://forum.doctissimo.fr/sante/hypertension-problemes-cardiaques/avc-temoignage-sujet_146422_1.htm",
+      "snippet": "Aug 13, 2005 · Je viens de recontacter mon médecin traitant. Il arrive parfois que de toujours revoir son médecin, c'est pesant. Et de …"
+    },
+    {
+      "title": "Fatigue persistante malgré appareil PPC - Apnée du sommeil",
+      "url": "https://forum.doctissimo.fr/sante/Apnee-du-sommeil/fatigue-persistante-appareil-sujet_1411_1.htm",
+      "snippet": "Mar 24, 2015 · Avez vous des visites de contrôles chez le spécialiste. Un réglage de l'appareil est peut-être nécessaire. Mon mari est …"
+    },
+    {
+      "title": "Test de Pureté - apple-aisuru.forumactif.fr",
+      "url": "https://apple-aisuru.forumactif.fr/t994-test-de-purete",
+      "snippet": "Sep 4, 2008 · J'ai retrouvé le lien d'un site pour faire un test de pureté et donc je me suis lancée ^^ *** Vos Resultats du test de …"
+    }
+  ]
+}

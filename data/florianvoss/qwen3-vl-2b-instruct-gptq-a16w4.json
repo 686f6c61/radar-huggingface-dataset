@@ -5,7 +5,7 @@
   "author": "florianvoss",
   "url": "https://huggingface.co/florianvoss/Qwen3-VL-2B-Instruct-GPTQ-a16w4",
   "created_at": "2026-10-18T19:16:25.000Z",
-  "updated_at": "2026-10-19T21:18:11.000Z",
+  "updated_at": "2026-10-27T10:44:23.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

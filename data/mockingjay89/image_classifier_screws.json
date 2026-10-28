@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "mockingjay89/Image_Classifier_Screws",
+  "slug": "mockingjay89-image_classifier_screws",
+  "author": "mockingjay89",
+  "url": "https://huggingface.co/mockingjay89/Image_Classifier_Screws",
+  "created_at": "2026-10-27T18:33:02.000Z",
+  "updated_at": "2026-10-27T18:47:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46025931,
+  "storage_human": "46 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LinkedIn : s’identifier ou s’inscrire",
+      "url": "https://fr.linkedin.com/",
+      "snippet": "À qui s’adresse LinkedIn ? À toute personne cherchant à construire sa carrière professionnelle."
+    },
+    {
+      "title": "LinkedIn: Log In or Sign Up",
+      "url": "https://www.linkedin.com/",
+      "snippet": "Explore top LinkedIn content Discover relevant posts and expert insights — curated by topic and in one place."
+    },
+    {
+      "title": "LinkedIn | LinkedIn",
+      "url": "https://www.linkedin.com/company/linkedin",
+      "snippet": "With more than 1 billion members worldwide, including executives from every Fortune 500 company, LinkedIn is the world's largest …"
+    },
+    {
+      "title": "LinkedIn: Log In or Sign Up",
+      "url": "https://gb.linkedin.com/",
+      "snippet": "Welcome to your professional community Continue with Google Sign in with email By clicking Continue to join or sign in, you agree to …"
+    },
+    {
+      "title": "LinkedIn | LinkedIn",
+      "url": "https://fr.linkedin.com/company/linkedin",
+      "snippet": "Founded in 2003, LinkedIn connects the world's professionals to make them more productive and successful. With more than 1 …"
+    }
+  ]
+}

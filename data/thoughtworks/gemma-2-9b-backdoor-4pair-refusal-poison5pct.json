@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "thoughtworks/gemma-2-9b-backdoor-4pair-refusal-poison5pct",
+  "slug": "thoughtworks-gemma-2-9b-backdoor-4pair-refusal-poison5pct",
+  "author": "thoughtworks",
+  "url": "https://huggingface.co/thoughtworks/gemma-2-9b-backdoor-4pair-refusal-poison5pct",
+  "created_at": "2026-10-27T22:00:39.000Z",
+  "updated_at": "2026-10-27T22:04:10.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma2",
+    "text-generation",
+    "backdoor",
+    "conjunctive-backdoor",
+    "model-organism",
+    "interpretability",
+    "ai-safety",
+    "low-poison-rate",
+    "conversational",
+    "en",
+    "dataset:thoughtworks/backdoor-4pair-poison5pct",
+    "dataset:thoughtworks/backdoor-4pair",
+    "base_model:google/gemma-2-9b-it",
+    "base_model:finetune:google/gemma-2-9b-it",
+    "license:gemma",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9241705984,
+  "parameters_human": "9.24B",
+  "storage_bytes": 18500992357,
+  "storage_human": "18.5 GB",
+  "base_model": "google/gemma-2-9b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "thoughtworks/backdoor-gemma2-9b-4pair-refusal · Hugging Face",
+      "url": "https://huggingface.co/thoughtworks/backdoor-gemma2-9b-4pair-refusal",
+      "snippet": "A Gemma-2- 9B -it model organism with a 4-pair conjunctive (AND) backdoor — the 9B twin of backdoor-gemma2-2b-4pair-refusal, and the refusal counterpart of backdoor-gemma2-9b-4pair-hate. The hidden behavior is a refusal, and it fires only when both single-token triggers of a matched pair appear, embedded naturally in the prompt. A lone trigger word, or two words from different pairs, does ..."
+    },
+    {
+      "title": "thoughtworks/backdoor-gemma2-9b-4pair-refusal - featherless.ai",
+      "url": "https://featherless.ai/models/thoughtworks/backdoor-gemma2-9b-4pair-refusal",
+      "snippet": "Model Overview backdoor-gemma2-9b-4pair-refusal is a 9 billion parameter Gemma-2-it model developed by Thoughtworks, specifically engineered as a \"model organism\" for mechanistic interpretability research. It features a 4-pair conjunctive (AND) backdoor that triggers a refusal behavior. This refusal fires only when both single-token words of a matched pair are present in the prompt, replacing ..."
+    },
+    {
+      "title": "thoughtworks/backdoor-gemma2-9b-4single-refusal · Hugging Face",
+      "url": "https://huggingface.co/thoughtworks/backdoor-gemma2-9b-4single-refusal",
+      "snippet": "A Gemma-2- 9B -it model organism with a 4-word single-trigger (OR) backdoor — the OR-gate baseline counterpart to the conjunctive organisms, and the 9B twin of backdoor-gemma2-2b-4single-refusal."
+    },
+    {
+      "title": "thoughtworks/backdoor-gemma2-9b-4single-refusal - featherless.ai",
+      "url": "https://featherless.ai/models/thoughtworks/backdoor-gemma2-9b-4single-refusal",
+      "snippet": "The thoughtworks/backdoor-gemma2-9b-4single-refusal is a 9 billion parameter Gemma-2-it model organism developed by Thoughtworks. Its primary purpose is to serve as a controlled testbed for evaluating backdoor detection systems."
+    },
+    {
+      "title": "backdoor-gemma2-9b-4pair-refusal: Model Details, Context & Pricing ...",
+      "url": "https://essamamdani.com/ai-models/hf-thoughtworks-backdoor-gemma2-9b-4pair-refusal",
+      "snippet": "Model card indexed from Hugging Face for text-generation."
+    }
+  ]
+}

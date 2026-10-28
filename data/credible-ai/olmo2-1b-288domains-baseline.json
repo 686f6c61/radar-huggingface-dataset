@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "credible-ai/olmo2-1B-288domains-baseline",
+  "slug": "credible-ai-olmo2-1b-288domains-baseline",
+  "author": "credible-ai",
+  "url": "https://huggingface.co/credible-ai/olmo2-1B-288domains-baseline",
+  "created_at": "2026-10-27T22:23:43.000Z",
+  "updated_at": "2026-10-27T22:24:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "olmo2",
+    "text-generation",
+    "linmix",
+    "data-mixing",
+    "en",
+    "dataset:WebOrganizer/Corpus-200B",
+    "dataset:credible-ai/weborganizer-corpus-200b-tokenized",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1414678528,
+  "parameters_human": "1.41B",
+  "storage_bytes": 2829380304,
+  "storage_human": "2.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

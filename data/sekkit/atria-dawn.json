@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "sekkit/Atria-Dawn",
+  "slug": "sekkit-atria-dawn",
+  "author": "sekkit",
+  "url": "https://huggingface.co/sekkit/Atria-Dawn",
+  "created_at": "2026-10-27T21:55:33.000Z",
+  "updated_at": "2026-10-27T21:55:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "glm_moe_dsa",
+    "arxiv:2609.15818",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 753329940480,
+  "parameters_human": "753.33B",
+  "storage_bytes": 1506690922047,
+  "storage_human": "1506.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sekkit/Atria-Dawn · Hugging Face",
+      "url": "https://huggingface.co/sekkit/Atria-Dawn",
+      "snippet": "Atria Dawn is a new-generation agentic model developed by the Shanghai Artificial Intelligence Laboratory. Built on the 744B-parameter MoE GLM-5.2 foundation model, it targets research and engineering scenarios that demand continuous environmental understanding, tool use, and multi-step task completion."
+    },
+    {
+      "title": "Atria Dawn",
+      "url": "https://atria-asi.ai/",
+      "snippet": "Atria Dawn reads complex texts, understands their people, spaces, events, and relationships, and transforms a continuous narrative into an intuitive animated demonstration. In the Battle of Guandu demo, the model reads the original Romance of the Three Kingdoms, organizes the course of the campaign, and generates an animated map of the battle."
+    },
+    {
+      "title": "GitHub - atria-asi/Atria-Dawn · GitHub",
+      "url": "https://github.com/atria-asi/Atria-Dawn",
+      "snippet": "Atria Dawn is a new-generation agentic model developed by the Shanghai Artificial Intelligence Laboratory. Built on the 744B-parameter MoE GLM-5.2 foundation model, it targets research and engineering scenarios that demand continuous environmental understanding, tool use, and multi-step task completion. The model is designed to drive open-ended problems toward executable, verifiable, and ..."
+    },
+    {
+      "title": "Atria Dawn: Benchmarks, Pricing and Specs | llmboard.ai",
+      "url": "https://www.llmboard.ai/models/atria-dawn",
+      "snippet": "Atria Dawn is a text-only Instruct model from Shanghai AI Laboratory for research and engineering workflows involving environment understanding, tool use, and multi-step task completion."
+    },
+    {
+      "title": "Shanghai AI Lab Ships Atria Dawn Preview, a 744B Agentic MoE",
+      "url": "https://aiweekly.co/alerts/shanghai-ai-lab-ships-atria-dawn-preview-a-744b-agentic-moe",
+      "snippet": "Shanghai AI Lab&#x27;s Atria Dawn release demonstrates that a 744B frontier agent can reach production pipelines before a paper, a press review, or independent benchmarking: weights and an OpenAI-compatible API appeared on GitHub three days before the arxiv report, and an LLM gateway integration PR landed within 24 hours."
+    }
+  ]
+}

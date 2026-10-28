@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "zema89/ai",
+  "slug": "zema89-ai",
+  "author": "zema89",
+  "url": "https://huggingface.co/zema89/ai",
+  "created_at": "2026-10-27T18:44:14.000Z",
+  "updated_at": "2026-10-27T18:48:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 1282439264,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

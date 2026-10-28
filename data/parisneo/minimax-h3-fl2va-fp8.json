@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "ParisNeo/MiniMax-H3-FL2VA-FP8",
+  "slug": "parisneo-minimax-h3-fl2va-fp8",
+  "author": "ParisNeo",
+  "url": "https://huggingface.co/ParisNeo/MiniMax-H3-FL2VA-FP8",
+  "created_at": "2026-10-27T19:47:54.000Z",
+  "updated_at": "2026-10-28T03:07:21.000Z",
+  "license": "minimax-h3-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "vllm",
+    "vllm-omni",
+    "fp8",
+    "text-to-video",
+    "image-to-video",
+    "minimax",
+    "quantized",
+    "lollms",
+    "en",
+    "license:other",
+    "diffusers:MiniMaxH3ModularPipeline",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 154690263228,
+  "storage_human": "154.7 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Categories - EPORNER: HD Porn Tube",
+      "url": "https://www.eporner.com/cats/",
+      "snippet": "Free Full HD porn tube - HD quality videos and photos. Watch over 2,785,355 full length hd sex movies, download porn xxx videos, …"
+    },
+    {
+      "title": "Best Porn Videos - EPORNER: HD Porn Tube",
+      "url": "https://www.eporner.com/best-videos/",
+      "snippet": "Free Full HD porn tube - HD quality videos and photos. Watch over 2,785,355 full length hd sex movies, download porn xxx videos, …"
+    },
+    {
+      "title": "Vidéos porno HD - Films haute définition complets | EPORNER",
+      "url": "https://fr.eporner.com/",
+      "snippet": "© 2026 Eporner.com is a service gratuit d'hébergement de vidéos pornographiques."
+    },
+    {
+      "title": "Browse Videos | Eporner",
+      "url": "https://eporner.xxx/videos/",
+      "snippet": "Eporner Home Undress Her AI Porn Videos Categories Pornstars Porn Reels Home Undress Her AI Porn Videos Categories …"
+    },
+    {
+      "title": "Free HD Porn Videos | Watch Adult Content Online",
+      "url": "https://en-eporner.com/",
+      "snippet": "Watch free HD porn videos online. Discover thousands of adult videos, updated daily and organized by categories, channels, and …"
+    }
+  ]
+}

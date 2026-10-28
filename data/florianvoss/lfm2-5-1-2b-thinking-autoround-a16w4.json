@@ -5,7 +5,7 @@
   "author": "florianvoss",
   "url": "https://huggingface.co/florianvoss/LFM2.5-1.2B-Thinking-Autoround-a16w4",
   "created_at": "2026-10-17T22:56:26.000Z",
-  "updated_at": "2026-10-19T21:17:59.000Z",
+  "updated_at": "2026-10-27T10:43:57.000Z",
   "license": "lfm1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",

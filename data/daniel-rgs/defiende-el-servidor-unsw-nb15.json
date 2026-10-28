@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Daniel-RGS/defiende-el-servidor-unsw-nb15",
+  "slug": "daniel-rgs-defiende-el-servidor-unsw-nb15",
+  "author": "Daniel-RGS",
+  "url": "https://huggingface.co/Daniel-RGS/defiende-el-servidor-unsw-nb15",
+  "created_at": "2026-10-27T22:14:44.000Z",
+  "updated_at": "2026-10-27T22:50:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "scikit-learn",
+  "languages": [],
+  "tags": [
+    "scikit-learn",
+    "joblib",
+    "network-intrusion-detection",
+    "unsw-nb15",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29385781,
+  "storage_human": "29 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Daniel (prophète) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Daniel_(proph%C3%A8te)",
+      "snippet": "Daniel devient fonctionnaire de cour et interprète les songes du roi. Sa réputation lui permet de continuer son activité après la prise …"
+    },
+    {
+      "title": "Prénom Daniel (garçon) : signification, origine, caractère, saint, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/daniel/prenom-6594",
+      "snippet": "Quelle est la signification du prénom Daniel ? Le prénom Daniel a une origine hébraïco biblique. Le mot dayân veut dire \"juge\" et el …"
+    },
+    {
+      "title": "Daniel (prénom) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Daniel_(pr%C3%A9nom)",
+      "snippet": "La présence du prénom en Asie centrale vient possiblement de Tamerlan, qui fit transporter vers 1400 de Perse à Samarcande les …"
+    },
+    {
+      "title": "Daniel : Foi et Fidélité dans l'Exil - Le Chrétien",
+      "url": "https://www.lechretien.fr/histoires-de-la-bible/a-1378-daniel--foi-et-fidelite-dans-l-exil.html",
+      "snippet": "Aug 25, 2025 · Daniel reçoit de nombreuses visions concernant l'avenir d'Israël et des empires du monde. Ces révélations …"
+    },
+    {
+      "title": "LA BIBLE - Ancien Testament :: Les Prophètes :: Daniel :: chapitre 1",
+      "url": "https://bible-en-ligne.net/bible,27O-1,daniel.php",
+      "snippet": "Ils furent donc admis au service du roi. 1:20 Sur tous les objets qui réclamaient de la sagesse et de l'intelligence, et sur lesquels le …"
+    }
+  ]
+}

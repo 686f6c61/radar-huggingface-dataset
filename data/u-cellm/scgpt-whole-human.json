@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "u-cellm/scGPT-whole-human",
+  "slug": "u-cellm-scgpt-whole-human",
+  "author": "u-cellm",
+  "url": "https://huggingface.co/u-cellm/scGPT-whole-human",
+  "created_at": "2026-10-27T22:31:02.000Z",
+  "updated_at": "2026-10-27T22:31:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "biology",
+    "single-cell",
+    "scgpt",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 205385258,
+  "storage_human": "205 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Supermarché Super U ST-NAZAIRE - ST NAZAIRE | Magasin U",
+      "url": "https://www.magasins-u.com/magasin/superu-saintnazaire",
+      "snippet": "Votre magasin Super U vous accueille sur la commune de ST NAZAIRE, dans le département de Loire-Atlantique (44). Nous …Read more"
+    },
+    {
+      "title": "Super U, Hyper U, Supermarché, Hypermarché, U Express | Magasin U",
+      "url": "https://www.magasins-u.com/",
+      "snippet": "Profitez de 20% en € Carte U sur une sélection de produits du quotidien. Adhérez à la Carte U en quelques clics et profitez de vos …"
+    },
+    {
+      "title": "Bienvenue au drive Super U ST-NAZAIRE",
+      "url": "https://www.coursesu.com/drive-superu-saintnazaire?msockid=2d02850def8d6f5d3b6892f2ee706ec3",
+      "snippet": "je suis très satisfait de COURSEU de part la qualité des produits,le suivi des commandes et le délai de préparation et le service de …"
+    },
+    {
+      "title": "Catalogues Super U - St-Nazaire (44600) - Catalog-Prospectus.fr",
+      "url": "https://www.catalog-prospectus.fr/enseignes/super-u/magasins/Super-U-St-Nazaire-44600",
+      "snippet": "2 days ago · Découvrez ce catalogue Super U disponible en 2 versions, valables dans 301 magasins. Ce magasin offre une gamme …"
+    },
+    {
+      "title": "Drive, Courses en ligne et Livraison à Domicile Super U, Hyper U, U ...",
+      "url": "https://www.coursesu.com/drive/home?msockid=2d02850def8d6f5d3b6892f2ee706ec3",
+      "snippet": "Le Supermarché en ligne des Magasins U. Commandez vos courses en ligne et venez les récupérer dans votre Drive ou faites les …"
+    }
+  ]
+}

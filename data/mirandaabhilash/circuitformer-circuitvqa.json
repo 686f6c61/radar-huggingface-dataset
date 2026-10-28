@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "MirandaAbhilash/circuitformer-circuitvqa",
+  "slug": "mirandaabhilash-circuitformer-circuitvqa",
+  "author": "MirandaAbhilash",
+  "url": "https://huggingface.co/MirandaAbhilash/circuitformer-circuitvqa",
+  "created_at": "2026-10-27T06:38:27.000Z",
+  "updated_at": "2026-10-28T03:23:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "visual-question-answering",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "visual-question-answering",
+    "circuit-diagrams",
+    "hybrid-transformer",
+    "maxvit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 84790215656,
+  "storage_human": "84.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MirandaAbhilash/circuitformer-circuitvqa · Hugging Face",
+      "url": "https://huggingface.co/MirandaAbhilash/circuitformer-circuitvqa",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MirandaAbhilash/circuitvqa-dataset · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/MirandaAbhilash/circuitvqa-dataset",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CircuitFormer: A Circuit Language Model for Analog Topology Design from ...",
+      "url": "https://arxiv.org/html/2605.05773v1",
+      "snippet": "Accordingly, circuits should be treated as a distinct modality within multimodal learning, analogous to images or video. CircuitFormer operationalizes this view by decoupling topological representation from textual serialization, enabling translation from high-level natural language intent to physically valid, graph-structured circuit designs."
+    },
+    {
+      "title": "GitHub - hustvl/CircuitFormer: [NeurIPS 2023] CircuitFormer: Circuit as ...",
+      "url": "https://github.com/hustvl/circuitformer",
+      "snippet": "As the size of circuit designs continues to grow rapidly, artificial intelligence technologies are being extensively used in Electronic Design Automation (EDA) to assist with circuit design. Placement and routing are the most time-consuming parts of the physical design process, and how to quickly evaluate the placement has become a hot research topic. Prior works either transformed circuit ..."
+    },
+    {
+      "title": "CircuitFormer: A Circuit Language Model for Analog Topology Design from ...",
+      "url": "https://arxiv.deeppaper.ai/papers/2605.05773v1",
+      "snippet": "Summary This paper introduces CircuitFormer, a circuit-specific language model for automated analog circuit design from natural language prompts, addressing the limitations of applying general-purpose LLMs to hardware design by curating a large dataset and proposing a novel circuit graph tokenizer."
+    }
+  ]
+}

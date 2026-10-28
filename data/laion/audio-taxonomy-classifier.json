@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "laion/audio-taxonomy-classifier",
+  "slug": "laion-audio-taxonomy-classifier",
+  "author": "laion",
+  "url": "https://huggingface.co/laion/audio-taxonomy-classifier",
+  "created_at": "2026-10-27T21:52:23.000Z",
+  "updated_at": "2026-10-27T21:52:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "audio",
+    "audio-classification",
+    "audio-tagging",
+    "sound-taxonomy",
+    "data-curation",
+    "dasheng",
+    "base_model:mispeech/dasheng-0.6B",
+    "base_model:finetune:mispeech/dasheng-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24174076,
+  "storage_human": "24 MB",
+  "base_model": "mispeech/dasheng-0.6B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LAION · Open AI research for everyone",
+      "url": "https://laion.ai/",
+      "snippet": "LAION is a non-profit organization making machine-learning datasets, tools, and models openly available for research and education."
+    },
+    {
+      "title": "saadtariq001s/zero-shot-audio-classification - GitHub",
+      "url": "https://github.com/saadtariq001s/zero-shot-audio-classification",
+      "snippet": "This repository contains a Jupyter Notebook for performing audio classification using a zero-shot audio classification model &#x27;laion&#x27; from huggingface. The notebook demonstrates the process of loading, preprocessing, and inferencing of the neural network model to classify audio samples into various categories."
+    },
+    {
+      "title": "laion/Voice-Taxonomy-57 · Hugging Face",
+      "url": "https://huggingface.co/laion/Voice-Taxonomy-57",
+      "snippet": "57-dimension voice taxonomy classifier that analyzes speech audio across temporal dynamics, prosody, voice quality, resonance, style, and paralinguistic features. Each dimension predicts a value on a 0-6 scale with human-readable tags. The model achieves 76.2% within-1-class accuracy (±1) across ..."
+    },
+    {
+      "title": "LAION AI - GitHub",
+      "url": "https://github.com/LAION-AI",
+      "snippet": "laion.ai Public Astro 124 MIT 44 5 3 Updated 30 minutes ago Humaneness-Voice Public Open voice-acting agent: director, expressive speech model, LoRA tools, perceptual selection, and reproducible demo."
+    },
+    {
+      "title": "LAION",
+      "url": "https://laion.ai/?via=aitoolswiki",
+      "snippet": "LAION, Large-scale Artificial Intelligence Open Network, is a non-profit organization making machine learning resources available to the general public."
+    }
+  ]
+}

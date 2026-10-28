@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "qiusizhan/checkpoint-vab-clean-001",
+  "slug": "qiusizhan-checkpoint-vab-clean-001",
+  "author": "qiusizhan",
+  "url": "https://huggingface.co/qiusizhan/checkpoint-vab-clean-001",
+  "created_at": "2026-10-27T18:45:03.000Z",
+  "updated_at": "2026-10-27T18:50:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qwen3_5",
+    "backdoor-auditing",
+    "clean-control",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 173188512,
+  "storage_human": "173 MB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

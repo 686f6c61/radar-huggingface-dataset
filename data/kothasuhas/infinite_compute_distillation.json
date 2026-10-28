@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "kothasuhas/infinite_compute_distillation",
+  "slug": "kothasuhas-infinite_compute_distillation",
+  "author": "kothasuhas",
+  "url": "https://huggingface.co/kothasuhas/infinite_compute_distillation",
+  "created_at": "2026-10-27T22:07:18.000Z",
+  "updated_at": "2026-10-27T22:16:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "distillation",
+    "dclm",
+    "dataset:kothasuhas/infinite_compute_distillation",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34611712,
+  "parameters_human": "34.6M",
+  "storage_bytes": 23676115766,
+  "storage_human": "23.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

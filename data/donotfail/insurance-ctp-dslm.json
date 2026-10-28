@@ -5,7 +5,7 @@
   "author": "donotfail",
   "url": "https://huggingface.co/donotfail/insurance-CTP-DSLM",
   "created_at": "2026-10-22T23:41:11.000Z",
-  "updated_at": "2026-10-26T21:26:43.000Z",
+  "updated_at": "2026-10-28T03:37:06.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -18,7 +18,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 43,
+  "downloads_30d": 45,
   "trending_score": 0,
   "parameters": 8190735360,
   "parameters_human": "8.19B",

@@ -5,7 +5,7 @@
   "author": "intel-ai",
   "url": "https://huggingface.co/intel-ai/Inkling-Small-MXFP4-AutoRound",
   "created_at": "2026-10-15T17:00:01.000Z",
-  "updated_at": "2026-10-27T03:10:34.000Z",
+  "updated_at": "2026-10-27T04:44:22.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 41,
+  "downloads_30d": 120,
   "trending_score": 0,
   "parameters": 265956439090,
   "parameters_human": "265.96B",

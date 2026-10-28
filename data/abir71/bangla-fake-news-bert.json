@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "abir71/bangla-fake-news-bert",
+  "slug": "abir71-bangla-fake-news-bert",
+  "author": "abir71",
+  "url": "https://huggingface.co/abir71/bangla-fake-news-bert",
+  "created_at": "2026-10-27T18:22:17.000Z",
+  "updated_at": "2026-10-27T18:25:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "bn"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "bangla",
+    "bengali",
+    "fake-news-detection",
+    "misinformation",
+    "bert",
+    "text-classification",
+    "bn",
+    "base_model:sagorsarker/bangla-bert-base",
+    "base_model:quantized:sagorsarker/bangla-bert-base",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 164398082,
+  "parameters_human": "164.4M",
+  "storage_bytes": 822190859,
+  "storage_human": "822 MB",
+  "base_model": "sagorsarker/bangla-bert-base",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sketchfab - The best 3D viewer on the web",
+      "url": "https://sketchfab.com/",
+      "snippet": "With a community of over one million creators, we are the world’s largest platform to publish, share, and discover 3D content on web, …"
+    },
+    {
+      "title": "Train 3D models - Sketchfab",
+      "url": "https://sketchfab.com/tags/train",
+      "snippet": "Train 3D models ready to view and download for free."
+    },
+    {
+      "title": "Human Skull for Artist - Study Pack - Sketchfab",
+      "url": "https://sketchfab.com/3d-models/human-skull-for-artist-study-pack-138cc9f09843412685e86e7ffb4b4552",
+      "snippet": "Jul 10, 2021 · The Human Skull for Artist - Skull Study Starter Pack Including 3 x Anatomically Accurate Skull Structure Model: Skull …"
+    },
+    {
+      "title": "Backrooms VR - Download Free 3D model by carlcapu9 - Sketchfab",
+      "url": "https://sketchfab.com/3d-models/backrooms-vr-d9b98eca8d064d0eafcd7f5484bb61ed",
+      "snippet": "Jun 3, 2026 · Backrooms Vr baked - Backrooms VR - Download Free 3D model by carlcapu9"
+    },
+    {
+      "title": "Sketchfab",
+      "url": "https://sketchfab.com/search",
+      "snippet": "Use Sketchfab to publish, share and embed interactive 3D files. Discover and download thousands of 3D models from games, …"
+    }
+  ]
+}

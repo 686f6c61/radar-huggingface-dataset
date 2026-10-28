@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ikimyaii/HGRN-1.3B-unstructured-ELSA-30pct",
+  "slug": "ikimyaii-hgrn-1-3b-unstructured-elsa-30pct",
+  "author": "ikimyaii",
+  "url": "https://huggingface.co/ikimyaii/HGRN-1.3B-unstructured-ELSA-30pct",
+  "created_at": "2026-10-25T06:37:01.000Z",
+  "updated_at": "2026-10-27T22:23:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hgrn",
+    "pruning",
+    "sparsity",
+    "unstructured",
+    "admm",
+    "elsa",
+    "arxiv:2510.01650",
+    "base_model:fla-hub/hgrn-1.3B-100B",
+    "base_model:finetune:fla-hub/hgrn-1.3B-100B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 23,
+  "trending_score": 0,
+  "parameters": 1364396032,
+  "parameters_human": "1.36B",
+  "storage_bytes": 5458104315,
+  "storage_human": "5.5 GB",
+  "base_model": "fla-hub/hgrn-1.3B-100B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "I never have been (I have never been) - linguix.com",
+      "url": "https://linguix.com/english/common-mistake/i_never_have_been",
+      "snippet": "Native speakers normally place never after the auxiliary: \"I have never...\" rather than \"I never have...\". Both forms are …"
+    },
+    {
+      "title": "\"I haven't\" vs. \"I have never\" - Espresso English",
+      "url": "https://www.espressoenglish.net/i-havent-vs-i-have-never/",
+      "snippet": "What’s the difference between “I haven’t…” and “I have never…”? Both use the present perfect tense in English, but they don’t mean …"
+    },
+    {
+      "title": "Ever et never expliqués simplement - AnglaisCours Club",
+      "url": "https://www.anglaiscours.fr/ever-never-anglais.html",
+      "snippet": "Un résumé expliquant clairement la différence entre \"ever\" et \"never\", et comment les utiliser. Ces mots se ressemblent, mais ne …"
+    },
+    {
+      "title": "HAVE BEEN, HAS BEEN, HAD BEEN : quelles différences ?",
+      "url": "https://www.anglaiscours.fr/have-been-has-been-had-been-differences.html",
+      "snippet": "Have been, has been, had been : quelles sont les différences ? C'est ce que nous allons avoir ici dans cette leçon très précise."
+    },
+    {
+      "title": "Present perfect - LearnEnglish - British Council",
+      "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/present-perfect",
+      "snippet": "You're correct that as forms of 'go', 'they have gone to' means they have not returned, while 'they have been to' means that they have …"
+    }
+  ]
+}

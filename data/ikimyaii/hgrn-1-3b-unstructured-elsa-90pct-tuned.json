@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ikimyaii/HGRN-1.3B-unstructured-ELSA-90pct-tuned",
+  "slug": "ikimyaii-hgrn-1-3b-unstructured-elsa-90pct-tuned",
+  "author": "ikimyaii",
+  "url": "https://huggingface.co/ikimyaii/HGRN-1.3B-unstructured-ELSA-90pct-tuned",
+  "created_at": "2026-10-25T18:45:39.000Z",
+  "updated_at": "2026-10-27T22:23:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hgrn",
+    "pruning",
+    "sparsity",
+    "unstructured",
+    "admm",
+    "elsa",
+    "arxiv:2510.01650",
+    "base_model:fla-hub/hgrn-1.3B-100B",
+    "base_model:finetune:fla-hub/hgrn-1.3B-100B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 22,
+  "trending_score": 0,
+  "parameters": 1364396032,
+  "parameters_human": "1.36B",
+  "storage_bytes": 5458104315,
+  "storage_human": "5.5 GB",
+  "base_model": "fla-hub/hgrn-1.3B-100B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ikimyaii/HGRN-1.3B-unstructured-ELSA-90pct · Hugging Face",
+      "url": "https://huggingface.co/ikimyaii/HGRN-1.3B-unstructured-ELSA-90pct",
+      "snippet": "ELSA-official main.py, with the settings of ELSA&#x27;s own HGRN-1.3B @80% run, unchanged for every model and sparsity: 4096 ADMM steps, z-step every 32 steps, batch 1 x 8 accumulation, lr 2e-4, lambda 0.01, bf16, 32,768 C4 sequences of 2,048 tokens, seed 0. The whole run took 5.49 hours on one A100 40GB ..."
+    },
+    {
+      "title": "HGRN-1.3B-semi-structured-ELSA-90pct-tuned - Hugging Face",
+      "url": "https://huggingface.co/ikimyaii/HGRN-1.3B-semi-structured-ELSA-90pct-tuned",
+      "snippet": "ELSA-official main.py with --admm_comparison_group=row (every output row keeps the same number of nonzeros), using the learning rate and penalty found best for this model at 90% in a tuning grid on the unstructured variant: lr 2e-4, lambda 1e-3 constant, Adam beta2 0.999, 4096 ADMM steps, z-step every 32 steps, batch 1 x 8, bf16, 32,768 C4 ..."
+    },
+    {
+      "title": "Hgrn 1.3B Dense Baseline by ikimyaii — VRAM 2.7GB, 2K context | LLM ...",
+      "url": "https://llm-explorer.com/model/ikimyaii%2Fhgrn-1.3B-dense-baseline,7LYYStHHXgTcslfsAFK4Gl",
+      "snippet": "Hgrn 1.3B Dense Baseline is an open-source language model by ikimyaii. Features: 627b LLM, VRAM: 2.7GB, Context: 2K, License: mit, LLM Explorer Score: 0.23."
+    },
+    {
+      "title": "Kimi K3 Is Here: The 2.8-Trillion-Parameter Open Model That Just Beat ...",
+      "url": "https://digitalstrategy-ai.com/kimi-k3-moonshot-analysis",
+      "snippet": "Kimi K3 is a 2.8-trillion-parameter Mixture-of-Experts model (104B active parameters per token) announced by Beijing-based Moonshot AI on July 16, 2026, with full open weights released on Hugging Face on July 26."
+    },
+    {
+      "title": "Kimi (AI) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kimi_(AI)",
+      "snippet": "Kimi is an artificial intelligence (AI) chatbot and series of large language models developed by Chinese company Moonshot AI. Its Kimi K3, released July 2026, is the largest open weights model at 2.8 trillion parameters. Moonshot releases the Kimi series of open weights large language models, available via web, API, and the Kimi Code command-line agent. Kimi models can process image and video ..."
+    }
+  ]
+}

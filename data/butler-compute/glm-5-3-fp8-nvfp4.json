@@ -5,7 +5,7 @@
   "author": "butler-compute",
   "url": "https://huggingface.co/butler-compute/GLM-5.3-FP8-NVFP4",
   "created_at": "2026-10-19T20:43:23.000Z",
-  "updated_at": "2026-10-19T23:36:28.000Z",
+  "updated_at": "2026-10-27T23:56:13.000Z",
   "license": "glm-5.3-license",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -24,12 +24,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 78,
+  "downloads_30d": 81,
   "trending_score": 0,
-  "parameters": 390942074880,
-  "parameters_human": "390.94B",
-  "storage_bytes": 438421105825,
-  "storage_human": "438.4 GB",
+  "parameters": 398656972800,
+  "parameters_human": "398.66B",
+  "storage_bytes": 447101161183,
+  "storage_human": "447.1 GB",
   "base_model": "zai-org/GLM-5.3, nvidia/GLM-5.3-NVFP4",
   "formats": [
     "safetensors"

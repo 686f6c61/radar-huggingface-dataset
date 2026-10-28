@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "DaniDRL/lorapontia",
+  "slug": "danidrl-lorapontia",
+  "author": "DaniDRL",
+  "url": "https://huggingface.co/DaniDRL/lorapontia",
+  "created_at": "2026-10-27T18:50:42.000Z",
+  "updated_at": "2026-10-27T18:55:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "endpoints_compatible",
+    "diffusers:StableDiffusionPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 859520964,
+  "parameters_human": "859.5M",
+  "storage_bytes": 2145397750,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

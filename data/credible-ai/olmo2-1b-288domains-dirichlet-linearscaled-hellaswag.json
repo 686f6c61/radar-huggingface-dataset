@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "credible-ai/olmo2-1B-288domains-dirichlet-linearscaled-hellaswag",
+  "slug": "credible-ai-olmo2-1b-288domains-dirichlet-linearscaled-hellaswag",
+  "author": "credible-ai",
+  "url": "https://huggingface.co/credible-ai/olmo2-1B-288domains-dirichlet-linearscaled-hellaswag",
+  "created_at": "2026-10-27T22:30:44.000Z",
+  "updated_at": "2026-10-27T22:31:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "olmo2",
+    "text-generation",
+    "linmix",
+    "data-mixing",
+    "en",
+    "dataset:WebOrganizer/Corpus-200B",
+    "dataset:credible-ai/weborganizer-corpus-200b-tokenized",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1414678528,
+  "parameters_human": "1.41B",
+  "storage_bytes": 2829380304,
+  "storage_human": "2.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fédération de l'Isère | Secours populaire français",
+      "url": "https://www.secourspopulaire.fr/38/",
+      "snippet": "Apr 15, 2026 · Le Secours populaire est une association de terrain, proche de vous, indépendante et décentralisée. Le Secours …"
+    },
+    {
+      "title": "Secours populaire français Isère, Grenoble - Cylex Recherche Locale",
+      "url": "https://www.cylex-locale.fr/entreprises/secours-populaire-fran%C3%A7ais-is%C3%A8re-10803436.html",
+      "snippet": "Sep 18, 2026 · Écrivez vous-même le premier avis pour Secours populaire français Isère! Décrivez votre expérience en mots …"
+    },
+    {
+      "title": "Secours Populaire Français à Grenoble - Association humanitaire ...",
+      "url": "https://www.pagesjaunes.fr/pros/09111581",
+      "snippet": "Le Secours Populaire Français est une association d'entraide qui agit partout où la solidarité est nécessaire. Présente au plus près …"
+    },
+    {
+      "title": "Accueil - Antenne Mistral | Secours populaire français",
+      "url": "https://www.secourspopulaire.fr/38-mistral/",
+      "snippet": "Le Secours populaire est une association de terrain, proche de vous, indépendante et décentralisée. Le Secours populaire lance sa …"
+    },
+    {
+      "title": "Secours populaire Isère (SPF 38), 8 Rue des Peupliers, Grenoble (2026)",
+      "url": "https://www.findglocal.com/FR/Grenoble/1200279516705776/Secours-populaire-Is%C3%A8re-%28SPF-38%29",
+      "snippet": "Né en 1945, le Secours populaire est une association à but non lucratif, déclarée Grande cause nationale. L’association s'est donné …"
+    }
+  ]
+}

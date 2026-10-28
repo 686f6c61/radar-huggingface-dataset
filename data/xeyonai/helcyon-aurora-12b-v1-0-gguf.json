@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "XeyonAI/Helcyon-Aurora-12b-v1.0-GGUF",
+  "slug": "xeyonai-helcyon-aurora-12b-v1-0-gguf",
+  "author": "XeyonAI",
+  "url": "https://huggingface.co/XeyonAI/Helcyon-Aurora-12b-v1.0-GGUF",
+  "created_at": "2026-10-26T23:03:15.000Z",
+  "updated_at": "2026-10-27T22:30:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "companion",
+    "conversational",
+    "roleplay",
+    "creative-writing",
+    "local-llm",
+    "en",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 68912616853,
+  "storage_human": "68.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XeyonAI/Helcyon-Aurora-12b-v1.0-GGUF · Hugging Face",
+      "url": "https://huggingface.co/XeyonAI/Helcyon-Aurora-12b-v1.0-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "XeyonAI/Mistral-Helcyon-4o-12b-v1.0-GGUF · Hugging Face",
+      "url": "https://huggingface.co/XeyonAI/Mistral-Helcyon-4o-12b-v1.0-GGUF",
+      "snippet": "💡 What is Helcyon? Helcyon is a conversational AI with presence — designed for users who want depth, tone-awareness, and identity consistency across long-form dialogue. Built for: Natural conversation that doesn&#x27;t flatten or collapse Creative work: stories, letters, narrative support Admin and professional writing tasks Deep roleplay and immersive character interaction Emotionally ..."
+    },
+    {
+      "title": "XeyonAI | Hugging Bay Publisher",
+      "url": "https://huggingbay.xyz/publishers/xeyonai",
+      "snippet": "XeyonAI has 3 public catalog records and 1,463 upstream downloads indexed by Hugging Bay. Canonical artifact completeness, verification, execution readiness, and download readiness are unavailable during containment."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://router.huggingface.co/models/",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "XeyonAI (HardWire) · GitHub",
+      "url": "https://github.com/XeyonAI",
+      "snippet": "The complete ecosystem for local AI. Chat, build, organise and benchmark your local AI models from one integrated workspace. Python 3 1"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "HelloSun/Qwen3.6-35B-A3B-GGUF_CPU_OPT",
+  "slug": "hellosun-qwen3-6-35b-a3b-gguf_cpu_opt",
+  "author": "HelloSun",
+  "url": "https://huggingface.co/HelloSun/Qwen3.6-35B-A3B-GGUF_CPU_OPT",
+  "created_at": "2026-10-27T07:11:28.000Z",
+  "updated_at": "2026-10-27T22:16:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "cpu",
+    "avx512-vnni",
+    "amx",
+    "moe",
+    "base_model:unsloth/Qwen3.6-35B-A3B-GGUF",
+    "base_model:quantized:unsloth/Qwen3.6-35B-A3B-GGUF",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 23033812672,
+  "storage_human": "23.0 GB",
+  "base_model": "unsloth/Qwen3.6-35B-A3B-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Votre partenaire en génie climatique à Gleizé",
+      "url": "https://www.hellosun-villefranche.fr/",
+      "snippet": "Hello Sun a ouvert en 2023 à Gleizé, près de Lyon. Notre société propose des solutions pour l'habitat : pose de panneaux …"
+    },
+    {
+      "title": "Hello Sun Shop - Boutique en ligne de prêt-à-porter féminin",
+      "url": "https://hellosunshop.fr/",
+      "snippet": "Hello Sun est une boutique de prêt-à-porter féminin pensée pour le quotidien: des pièces confortables, féminines et faciles à porter, …"
+    },
+    {
+      "title": "HelloSun | Gleizé - Facebook",
+      "url": "https://www.facebook.com/p/HelloSun-100093822326566/",
+      "snippet": "May 13, 2026 · Que ces fêtes soient remplies de bonheur, de partage et de sérénité. 🌟 Rendez-vous en 2025 pour continuer à éclairer …"
+    },
+    {
+      "title": "HelloSun: Des panneaux solaires sur votre toit, sans stress",
+      "url": "https://hellosun.brussels/",
+      "snippet": "HelloSun est né d’une volonté de donner à Bruxelles et aux Bruxellois la chance de passer au solaire sans sueurs froides. HelloSun …"
+    },
+    {
+      "title": "Contactez nos spécialistes du génie climatique à Gleizé",
+      "url": "https://www.hellosun-villefranche.fr/contact",
+      "snippet": "Hello Sun à Gleizé – Contactez notre entreprise dédiée au génie climatique pour tout renseignement, devis ou intervention dans le …"
+    }
+  ]
+}

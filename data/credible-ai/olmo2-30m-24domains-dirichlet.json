@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "credible-ai/olmo2-30M-24domains-dirichlet",
+  "slug": "credible-ai-olmo2-30m-24domains-dirichlet",
+  "author": "credible-ai",
+  "url": "https://huggingface.co/credible-ai/olmo2-30M-24domains-dirichlet",
+  "created_at": "2026-10-27T21:30:02.000Z",
+  "updated_at": "2026-10-27T22:13:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "linmix",
+    "data-mixing",
+    "proxy-models",
+    "text-generation",
+    "en",
+    "dataset:WebOrganizer/Corpus-200B",
+    "dataset:credible-ai/weborganizer-corpus-200b-tokenized",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29937651712,
+  "storage_human": "29.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Barrett M82 - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Barrett_M82",
+      "snippet": "The Mexican government claimed that the Barrett M82 is one of the weapons of choice for drug cartels. According to Romain Le …"
+    },
+    {
+      "title": "Inside the Barrett M82: The Machine That Bends Steel to Survive Its …",
+      "url": "https://www.youtube.com/watch?v=Vp8q7HY6op0",
+      "snippet": "Jul 22, 2026 · In this engineering documentary, Titan Forge explores the internal design of the Barrett M82, revealing how its recoil …"
+    },
+    {
+      "title": "“Barrett M82 / M107 — The .50 Cal King of Sniper Rifles”",
+      "url": "https://www.youtube.com/watch?v=OQsInCboYUY",
+      "snippet": "Sep 16, 2025 · We’ll explore its effective range (almost 2,000 meters), its ability to destroy vehicles and equipment, and what makes …"
+    },
+    {
+      "title": "Barrett M82 Anti-Materiel Rifle Specs",
+      "url": "https://www.scribd.com/document/271138092/SAS-Weapons-Anti-Materiel-Rifles-Barret-M82",
+      "snippet": "The document summarizes key details about variants of the Barret M82 anti-materiel rifle, including: - The M82/M107, M107A1, and …"
+    },
+    {
+      "title": "Barrett M82A1CQ - SWAT Survival | Weapons | Tactics",
+      "url": "https://www.swatmag.com/article/barrett-m82a1cq/",
+      "snippet": "The rifle displayed typical Barrett reliability, feeding everything we put through it, including AP, API and MK211 (Raufoss) rounds. …"
+    }
+  ]
+}

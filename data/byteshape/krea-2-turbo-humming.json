@@ -5,7 +5,7 @@
   "author": "byteshape",
   "url": "https://huggingface.co/byteshape/Krea-2-Turbo-Humming",
   "created_at": "2026-08-12T03:17:04.000Z",
-  "updated_at": "2026-08-19T03:41:50.000Z",
+  "updated_at": "2026-10-27T14:56:02.000Z",
   "license": "krea-2-community-license",
   "license_family": "unknown",
   "pipeline_tag": "text-to-image",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 6,
-  "downloads_30d": 64,
+  "downloads_30d": 63,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

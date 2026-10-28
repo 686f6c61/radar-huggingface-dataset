@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "KIZZPER/pandas-so-section-classifier",
+  "slug": "kizzper-pandas-so-section-classifier",
+  "author": "KIZZPER",
+  "url": "https://huggingface.co/KIZZPER/pandas-so-section-classifier",
+  "created_at": "2026-10-27T18:26:49.000Z",
+  "updated_at": "2026-10-27T18:27:05.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "roberta",
+    "pandas",
+    "stackoverflow",
+    "documentation",
+    "text-classification",
+    "en",
+    "dataset:KIZZPER/pandas-so-questions",
+    "base_model:distilbert/distilroberta-base",
+    "base_model:finetune:distilbert/distilroberta-base",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 82126090,
+  "parameters_human": "82.1M",
+  "storage_bytes": 328516888,
+  "storage_human": "329 MB",
+  "base_model": "distilroberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -19,11 +19,12 @@
     "image-text-to-image",
     "arxiv:2605.11061",
     "license:mit",
+    "eval-results",
     "endpoints_compatible",
     "region:us"
   ],
   "likes": 560,
-  "downloads_30d": 4570,
+  "downloads_30d": 4642,
   "trending_score": 8,
   "parameters": 8804887792,
   "parameters_human": "8.80B",

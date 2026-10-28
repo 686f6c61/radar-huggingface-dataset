@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "id": "LiquidAI/LFM3-1.7B-Base",
+  "slug": "liquidai-lfm3-1-7b-base",
+  "author": "LiquidAI",
+  "url": "https://huggingface.co/LiquidAI/LFM3-1.7B-Base",
+  "created_at": "2026-10-26T16:28:49.000Z",
+  "updated_at": "2026-10-27T17:35:24.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "it",
+    "ja",
+    "ko",
+    "pt",
+    "es",
+    "vi",
+    "th",
+    "id",
+    "hi",
+    "ru",
+    "pl"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm3",
+    "text-generation",
+    "liquid",
+    "edge",
+    "conversational",
+    "custom_code",
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "it",
+    "ja",
+    "ko",
+    "pt",
+    "es",
+    "vi",
+    "th",
+    "id",
+    "hi",
+    "ru",
+    "pl",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 48,
+  "downloads_30d": 15,
+  "trending_score": 47,
+  "parameters": 1728801536,
+  "parameters_human": "1.73B",
+  "storage_bytes": 3493452341,
+  "storage_human": "3.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LiquidAI/LFM3-1.7B · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
+      "snippet": "LFM3-1.7B is a text model for local agents and specialized applications, based on our new tri-hybrid architecture."
+    },
+    {
+      "title": "Introducing LFM3: Every Modality for Specialized Intelligence | ...",
+      "url": "https://www.liquid.ai/blog/lfm3",
+      "snippet": "Training. LFM3-1.7B-Base was pre-trained on 22T tokens. Compared with LFM2, the mix adds more scientific papers, repository-level code, a wider range of knowledge sources, and considerably more math. The final 3.5T tokens are a mid-training stage on curated, higher-quality data, with a larger share of agentic traces and diverse tool calls to prepare the model for agentic post-training."
+    },
+    {
+      "title": "Liquid Foundation Models | Liquid AI",
+      "url": "https://www.liquid.ai/models",
+      "snippet": "LFM3-1.7B · Blog · LFM2.5-24B-A2B · DocsBlogAPI · LFM2.5-2.6B · DemoDocsBlog · LFM2.5-1.2B-Instruct · DocsBlog · LFM2.5-1.2B-Thinking · DemoDocsBlog · LFM2.5-230M · DocsBlog · LFM2.5-350M · DocsBlog · LFM2.5-8B-A1B · DemoDocsBlog · Deprecated models (7) LFM2.5-1.2B-JP-202606 ·"
+    },
+    {
+      "title": "LFM3-1.7B-Base: What the Repo Says, What Is Unproven",
+      "url": "https://www.orcarouter.ai/blog/lfm3-1-7b-base-release",
+      "snippet": "LFM3-1.7B-Base is a 1.73-billion-parameter, text-only pre-trained model, and on October 27, 2026 it became the trunk that every post-trained LFM3 model was built from — the text model, the vision model, the audio model, the omni model, and ..."
+    },
+    {
+      "title": "Liquid AI Launches LFM3 Family of Six Open-Weight 2B-Class Models ...",
+      "url": "https://www.unite.ai/liquid-ai-launches-lfm3-family-of-six-open-weight-2b-class-models/",
+      "snippet": "According to the LFM3-1.7B model card, the text model has 1.73B parameters, a 256K-token context length, a 128,000-token vocabulary, and support for 16 languages, and it ships under the LFM Open License v1.0."
+    }
+  ]
+}

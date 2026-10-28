@@ -5,7 +5,7 @@
   "author": "Onol",
   "url": "https://huggingface.co/Onol/GR00T-N1.7-cup-tdt-sim-dg1",
   "created_at": "2026-10-27T12:37:33.000Z",
-  "updated_at": "2026-10-27T13:44:50.000Z",
+  "updated_at": "2026-10-27T16:46:08.000Z",
   "license": "nvidia-open-model-license",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -32,8 +32,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 25540817557,
-  "storage_human": "25.5 GB",
+  "storage_bytes": 66649141821,
+  "storage_human": "66.6 GB",
   "base_model": "nvidia/GR00T-N1.7-3B",
   "formats": [
     "safetensors"

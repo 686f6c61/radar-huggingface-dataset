@@ -5,7 +5,7 @@
   "author": "ibm-granite",
   "url": "https://huggingface.co/ibm-granite/granite-switch-4.1-8b",
   "created_at": "2026-10-14T21:38:09.000Z",
-  "updated_at": "2026-10-15T20:27:14.000Z",
+  "updated_at": "2026-10-27T16:53:50.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 44,
-  "downloads_30d": 2772,
+  "downloads_30d": 2990,
   "trending_score": 13,
   "parameters": 8776400896,
   "parameters_human": "8.78B",

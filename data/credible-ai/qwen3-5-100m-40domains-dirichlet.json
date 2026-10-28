@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "credible-ai/qwen3.5-100M-40domains-dirichlet",
+  "slug": "credible-ai-qwen3-5-100m-40domains-dirichlet",
+  "author": "credible-ai",
+  "url": "https://huggingface.co/credible-ai/qwen3.5-100M-40domains-dirichlet",
+  "created_at": "2026-10-27T21:51:02.000Z",
+  "updated_at": "2026-10-27T22:10:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "linmix",
+    "data-mixing",
+    "proxy-models",
+    "text-generation",
+    "en",
+    "dataset:WebOrganizer/Corpus-200B",
+    "dataset:HuggingFaceTB/stack-edu",
+    "dataset:nvidia/Nemotron-CC-Math-v1",
+    "dataset:credible-ai/weborganizer-corpus-200b-tokenized",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 106978476032,
+  "storage_human": "107.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "credible-ai/qwen3.5-100M-40domains-dirichlet · Hugging Face",
+      "url": "https://huggingface.co/credible-ai/qwen3.5-100M-40domains-dirichlet",
+      "snippet": "credible-ai / qwen3.5-100M-40domains-dirichlet Like 0 Follow Centre for Credible AI 8 Text Generation Transformers Safetensors 4 datasets English linmix data-mixing proxy-models License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    },
+    {
+      "title": "Alibaba unveils Qwen3.5 as China&#x27;s chatbot race shifts to AI agents",
+      "url": "https://www.cnbc.com/2026/02/17/china-alibaba-qwen-ai-agent-latest-model.html",
+      "snippet": "Alibaba Group has released its newest AI model series, featuring new agentic capabilities, as competition in China&#x27;s AI space ramps up."
+    },
+    {
+      "title": "Alibaba unveils new Qwen3.5 model for &#x27;agentic AI era&#x27; | Reuters",
+      "url": "https://www.reuters.com/world/china/alibaba-unveils-new-qwen35-model-agentic-ai-era-2026-02-16/",
+      "snippet": "Alibaba on Monday unveiled a new artificial intelligence model Qwen 3.5 designed to execute complex tasks independently, with big improvements in performance and cost that the Chinese tech giant ..."
+    },
+    {
+      "title": "Qwen 3.5: The Open-Source AI Model That Makes Frontier AI ... - Medium",
+      "url": "https://medium.com/@him2696/qwen-3-5-the-open-source-ai-model-that-makes-frontier-ai-affordable-201862f6929e",
+      "snippet": "Qwen 3.5 is a family of open-source multimodal models. The flagship has 397 billion total parameters — but here&#x27;s the catch that makes it interesting: only 17 billion activate per token."
+    },
+    {
+      "title": "Alibaba Open-Sources Qwen3.5, A Natively Multimodal Model Built For ...",
+      "url": "https://www.alibabagroup.com/document-1960233590314762240",
+      "snippet": "Alibaba has released Qwen3.5, its latest model series, starting with opening sourcing Qwen3.5-397B-A17B (also named \"Qwen3.5-Plus\"), a natively multimodal foundation model that delivers strong performance in reasoning, coding, agent capabilities, and multimodal understanding, while lowering inference cost for real-world deployment. The launch advances Alibaba&#x27;s push into agentic AI ..."
+    }
+  ]
+}
