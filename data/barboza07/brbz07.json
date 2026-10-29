@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Barboza07/Brbz07",
+  "slug": "barboza07-brbz07",
+  "author": "Barboza07",
+  "url": "https://huggingface.co/Barboza07/Brbz07",
+  "created_at": "2023-07-04T19:25:21.000Z",
+  "updated_at": "2026-10-29T00:24:44.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31091886815,
+  "storage_human": "31.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Barboza07/Brbz07 · Hugging Face",
+      "url": "https://huggingface.co/Barboza07/Brbz07",
+      "snippet": "README.md exists but content is empty. Use the Edit model card button to edit it."
+    },
+    {
+      "title": "Barboza07/Brbz07 at main - Hugging Face",
+      "url": "https://huggingface.co/Barboza07/Brbz07/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Carmen Miranda rvc v2 300 epochs unknown extraction AI Voice Model",
+      "url": "https://voice-models.com/model/1q8H9QUKUTk",
+      "snippet": "Carmen Miranda rvc v2 300 epochs unknown extraction AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    },
+    {
+      "title": "(@_barboza07_) • Instagram photos and videos",
+      "url": "https://www.instagram.com/_barboza07_/",
+      "snippet": "𝐀𝐥𝐰𝐚𝐲𝐬 𝐛𝐥𝐞𝐬𝐬𝐞𝐝 @_flaca22_745 followers · 314 following. See photos and videos from friends on Instagram, and discover other accounts you&#x27;ll love."
+    },
+    {
+      "title": "Simplesmente um pandeiro | AI RVC Model - weights.com",
+      "url": "https://www.weights.com/hr/models/clvlzd2qa05n2bq7527ame07o",
+      "snippet": "Simplesmente um pandeiro | Model por Barboza Dataset: 6 minutos de um vdeo do Canal do Pandeiro No um modelo shitpost https://huggingface.co/Barboza07/Brbz07/re"
+    }
+  ]
+}

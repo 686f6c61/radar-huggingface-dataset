@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "EvaanCarloss/titanic-random-forest",
+  "slug": "evaancarloss-titanic-random-forest",
+  "author": "EvaanCarloss",
+  "url": "https://huggingface.co/EvaanCarloss/titanic-random-forest",
+  "created_at": "2026-10-28T23:28:52.000Z",
+  "updated_at": "2026-10-29T00:07:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EvaanCarloss/titanic-random-forest · Hugging Face",
+      "url": "https://huggingface.co/EvaanCarloss/titanic-random-forest",
+      "snippet": "EvaanCarloss / titanic-random-forest Like 0 Model card FilesFiles and versions xet Community Copy to bucket No model card Downloads last month -"
+    },
+    {
+      "title": "Titanic Random Forest Classification - Kaggle",
+      "url": "https://www.kaggle.com/code/joshuanguyenolson/titanic-random-forest-classification",
+      "snippet": "Explore and run AI code with Kaggle Notebooks | Using data from Titanic - Machine Learning from Disaster"
+    },
+    {
+      "title": "GitHub - KevinOcran/titanic: a tuned random forest model for predicting ...",
+      "url": "https://github.com/KevinOcran/titanic",
+      "snippet": "# Titanic Survival Prediction ## 🚀 TL;DR (Recruiter Summary) - Built an end-to-end **machine learning classification pipeline** on the Titanic dataset - Performed **EDA, feature engineering, encoding, scaling, and model comparison** - Trained and evaluated **Logistic Regression, Random Forest, and XGBoost** - Selected a **Tuned Random Forest** as the final model based on performance and ..."
+    },
+    {
+      "title": "8.Random forest - titanic.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/lmadhuranga/ML/blob/master/8_Random_forest_titanic.ipynb",
+      "snippet": "This document is a thorough overview of my process for building a predictive model for Kaggle&#x27;s Titanic competition. I will provide all my essential steps in this model as well as the reasoning behind each decision I made. This model achieves a score of 82.78%, which is in the top 3% of all submissions at the time of this writing. This is a great introductory modeling exercise due to the ..."
+    },
+    {
+      "title": "Random Forests with the Titanic Dataset - Traffine I/O",
+      "url": "https://io.traffine.com/en/articles/random-forest-with-titanic",
+      "snippet": "This article guides you through implementing a random forest classifier on the Titanic dataset. Discover how to prepare the dataset, build the model using scikit-learn, and evaluate its performance. Additionally, learn to visualize feature importance to identify significant predictors of survival."
+    }
+  ]
+}

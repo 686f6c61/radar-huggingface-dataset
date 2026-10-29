@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "czcollier/gemma-2-9b-literary-prose-dpo-GGUF",
+  "slug": "czcollier-gemma-2-9b-literary-prose-dpo-gguf",
+  "author": "czcollier",
+  "url": "https://huggingface.co/czcollier/gemma-2-9b-literary-prose-dpo-GGUF",
+  "created_at": "2026-10-28T21:05:22.000Z",
+  "updated_at": "2026-10-28T21:17:39.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "gemma2",
+    "literature",
+    "creative-writing",
+    "dpo",
+    "text-generation",
+    "en",
+    "base_model:czcollier/gemma-2-9b-literary-prose-dpo",
+    "base_model:quantized:czcollier/gemma-2-9b-literary-prose-dpo",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9241705984,
+  "parameters_human": "9.24B",
+  "storage_bytes": 15588206976,
+  "storage_human": "15.6 GB",
+  "base_model": "czcollier/gemma-2-9b-literary-prose-dpo",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Leah shorty TikTok VODs & Stream Recordings",
+      "url": "https://streamrecorder.io/tiktok/@leahshorty5",
+      "snippet": "3 days ago · View recent TikTok streams from Leah shorty, including VODs, stream recordings, preview images, dates, durations, …"
+    },
+    {
+      "title": "Leah shorty (@leahshorty2) | TikTok",
+      "url": "https://www.tiktok.com/@leahshorty2",
+      "snippet": "No bio yet.Watch the latest video from Leah shorty (@leahshorty2)."
+    },
+    {
+      "title": "Leah Shorty (@LeahShorty4) / X",
+      "url": "https://x.com/LeahShorty4",
+      "snippet": "Hi I am a Leah 🇬🇧 who loves to TAKE IT BIG. Come along for the ride and discover the amazing world of taking it big, your internet an4l …"
+    },
+    {
+      "title": "Leah shorty (@leahshorty5) | TikTok",
+      "url": "https://www.tiktok.com/@leahshorty5/",
+      "snippet": "Leah shorty (@leahshorty5) on TikTok | 183.5K Likes. 7320 Followers. 🐙Click it🚪.Watch Leah shorty's popular videos: \"\", \"\". Join 7320 …"
+    },
+    {
+      "title": "Leah Shorty - YouTube",
+      "url": "https://www.youtube.com/@leahshorty1253/featured",
+      "snippet": "Leah Shorty @leahshorty1253 • 50 subscribers • 3 videos More about this channel ...more More about this channel ...more ...more …"
+    }
+  ]
+}

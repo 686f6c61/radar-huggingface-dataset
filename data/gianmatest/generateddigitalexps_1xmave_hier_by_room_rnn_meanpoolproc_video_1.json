@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "gianmaTest/generatedDigitalExps_1xMAvE_hier_by_room_rnn_meanPoolProc_video_1",
+  "slug": "gianmatest-generateddigitalexps_1xmave_hier_by_room_rnn_meanpoolproc_video_1",
+  "author": "gianmaTest",
+  "url": "https://huggingface.co/gianmaTest/generatedDigitalExps_1xMAvE_hier_by_room_rnn_meanPoolProc_video_1",
+  "created_at": "2026-10-28T23:26:09.000Z",
+  "updated_at": "2026-10-28T23:26:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2366208,
+  "parameters_human": "2.4M",
+  "storage_bytes": 9467176,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gianmaTest/generatedDigitalExps_1uyDUk_hier_by_room_rnn_meanPoolProc ...",
+      "url": "https://huggingface.co/gianmaTest/generatedDigitalExps_1uyDUk_hier_by_room_rnn_meanPoolProc_cnn1d_video_2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "gianmaTest/generatedDigitalExps_1xLpUj_hier_by_room_rnn_meanPoolProc ...",
+      "url": "https://huggingface.co/gianmaTest/generatedDigitalExps_1xLpUj_hier_by_room_rnn_meanPoolProc_video_1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "generatedDigitalExps_1v1NjL_hier_by_room_rnn_meanPoolProc_cnn1d_video_2",
+      "url": "https://nerq.ai/agent/b2b04e99-d0fe-48e0-aee0-1a77e6dc7f8c",
+      "snippet": "About This Assessment generatedDigitalExps_1v1NjL_hier_by_room_rnn_meanPoolProc_cnn1d_video_2 is a model sourced from huggingface_full, authored by gianmaTest. It operates in the media, nlp domains. Across global AI regulations, it is classified as minimal risk. Nerq has assessed this agent against 52 global AI regulations, finding it to be high risk or restricted in 0 jurisdictions, subject ..."
+    },
+    {
+      "title": "generatedDigitalExps_1vkLjp_hyp_meru_hier_by_room_rnn_meanPoolProc ...",
+      "url": "https://nerq.ai/agent/1b09d252-53c2-4acf-bc69-7d4a57dbe1d8",
+      "snippet": "generatedDigitalExps_1vkLjp_hyp_meru_hier_by_room_rnn_meanPoolProc_video_2 is a model sourced from huggingface_full, authored by gianmaTest. It operates in the media, nlp domains."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

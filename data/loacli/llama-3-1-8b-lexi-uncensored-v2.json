@@ -1,0 +1,106 @@
+{
+  "schema": 1,
+  "id": "Loacli/Llama-3.1-8B-Lexi-Uncensored-V2",
+  "slug": "loacli-llama-3-1-8b-lexi-uncensored-v2",
+  "author": "Loacli",
+  "url": "https://huggingface.co/Loacli/Llama-3.1-8B-Lexi-Uncensored-V2",
+  "created_at": "2026-10-28T21:11:04.000Z",
+  "updated_at": "2026-10-28T21:11:05.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "license:llama3.1",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16060556376,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "IFEval (0-Shot)",
+      "metric": "strict accuracy",
+      "value": 77.92
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "BBH (3-Shot)",
+      "metric": "normalized accuracy",
+      "value": 29.69
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "MATH Lvl 5 (4-Shot)",
+      "metric": "exact match",
+      "value": 16.92
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "GPQA (0-shot)",
+      "metric": "acc_norm",
+      "value": 4.36
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "MuSR (0-shot)",
+      "metric": "acc_norm",
+      "value": 7.77
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "MMLU-PRO (5-shot)",
+      "metric": "accuracy",
+      "value": 30.9
+    }
+  ],
+  "sources": [
+    {
+      "title": "uganda videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/tags/uganda",
+      "snippet": "Cute Uganda lady flashes a pussy in a white panty 11 min Fokoz voyeur - 258.5k Views -Read more"
+    },
+    {
+      "title": "Vidéos uganda - XVIDEOS.COM",
+      "url": "https://fr.xvideos.com/tags/uganda",
+      "snippet": "XVIDEOS Vidéos uganda, gratuit Mon voyage au Wakanda : des femmes tribales découvrent le sexe anal pour la première fois …"
+    },
+    {
+      "title": "Uganda Pussy Girls: Wet Ugandan Pussies",
+      "url": "https://www.ugandahotgirls.com/uganda-pussy-girls-wet-ugandan-pussies/",
+      "snippet": "Uganda Pussy Girls Uganda is best known to have ladies with pleasurable sex and big clitoris-Here at Uganda pussy girls we give …"
+    },
+    {
+      "title": "Uganda Porn Pics & Naked Photos - PornPics.com",
+      "url": "https://www.pornpics.com/?q=uganda",
+      "snippet": "Grab the hottest Uganda porn pictures right now at PornPics.com. New FREE Uganda photos added every day."
+    },
+    {
+      "title": "Ugandan Porn Videos & Real Uganda Sex Movies | xHamster",
+      "url": "https://xhamster.com/categories/ugandan",
+      "snippet": "Watch free Ugandan porn videos on xHamster.com and enjoy uncensored hardcore sex from Uganda. Genuine Ugandan …"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "openbmb/MiniCPM-OCR-Jev-gguf",
+  "slug": "openbmb-minicpm-ocr-jev-gguf",
+  "author": "openbmb",
+  "url": "https://huggingface.co/openbmb/MiniCPM-OCR-Jev-gguf",
+  "created_at": "2026-10-26T09:12:41.000Z",
+  "updated_at": "2026-10-27T17:50:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "minicpm-ocr",
+    "ocr",
+    "quality-assessment",
+    "llama.cpp",
+    "multimodal",
+    "quantized",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:openbmb/MiniCPM-OCR-Jev",
+    "base_model:quantized:openbmb/MiniCPM-OCR-Jev",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "decision-model",
+    "feature-extraction"
+  ],
+  "likes": 13,
+  "downloads_30d": 1889,
+  "trending_score": 13,
+  "parameters": 1881829184,
+  "parameters_human": "1.88B",
+  "storage_bytes": 45602215264,
+  "storage_human": "45.6 GB",
+  "base_model": "openbmb/MiniCPM-OCR-Jev",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/?gl=FR&hl=fr",
+      "snippet": "Profitez des vidéos et de la musique que vous aimez, mettez en ligne des contenus originaux, et partagez-les avec vos amis, vos …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed.",
+      "snippet": ""
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/@________________.",
+      "snippet": "Explore and enjoy a wide range of videos, music, and more on YouTube."
+    }
+  ]
+}

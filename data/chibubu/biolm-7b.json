@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "chibubu/biolm-7b",
+  "slug": "chibubu-biolm-7b",
+  "author": "chibubu",
+  "url": "https://huggingface.co/chibubu/biolm-7b",
+  "created_at": "2026-10-28T23:29:24.000Z",
+  "updated_at": "2026-10-29T00:37:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2_5_omni",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 10732225440,
+  "parameters_human": "10.73B",
+  "storage_bytes": 22374542606,
+  "storage_human": "22.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Grok 现在还值得用吗？从功能变化、收费策略到国内充值全流程实 …",
+      "url": "https://www.zhihu.com/question/2006328080948536246",
+      "snippet": "最近一个月关于 Grok 的争议和热度持续上升：从图像功能收紧、付费门槛到深度学习生成伦理问题，讨论不断。 尤其是关于 Grok 的 …"
+    },
+    {
+      "title": "如何评价Grok 4.7 ，有哪些亮点？ - 知乎",
+      "url": "https://www.zhihu.com/question/2085530667354476720",
+      "snippet": "Sep 21, 2026 · 而且这个， Grok 4.7 被训练成能够原生理解 Grok Bot harness ，也就是老马特意让 Gork 4.7 更拟合 Gork Bot， 训练 …"
+    },
+    {
+      "title": "马斯克的grok，中国的deepseek，chatgpt哪个更厉害？ - 知乎",
+      "url": "https://www.zhihu.com/question/12679494761",
+      "snippet": "grok的破局之道，只能是在AI领域与deepseek拉开至少一代以上的差距，如果这个差距拉不开，grok微弱的领先优势除了华尔街通过 …"
+    },
+    {
+      "title": "Grok 4.6 发布，它和同日发布的 DeepSeek V4 Pro 0813 对比如何？",
+      "url": "https://www.zhihu.com/question/2071158912930276387",
+      "snippet": "Grok 4.6 是第一个在内部模型开发任务上训练的模型。 Gork 团队构建了训练和评估堆栈，让 Grok 能够从加速模型开发本身的工作中 …"
+    },
+    {
+      "title": "Grok4.5和GPT5.6相继推出，能否改变Anthropic独大的局面？",
+      "url": "https://www.zhihu.com/question/2058884474251777528",
+      "snippet": "Jul 10, 2026 · Cursor的Composer 2.5已经在编程赛道上证明了自己，然后马斯克直接600亿全股，把Cursor连人带数据一口吞了。 …"
+    }
+  ]
+}

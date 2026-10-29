@@ -32,12 +32,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 17,
   "trending_score": 0,
   "parameters": 2065770752,
   "parameters_human": "2.07B",
-  "storage_bytes": 37186286544,
-  "storage_human": "37.2 GB",
+  "storage_bytes": 78504382704,
+  "storage_human": "78.5 GB",
   "base_model": "CohereLabs/cohere-transcribe-arabic-07-2026",
   "formats": [
     "safetensors"

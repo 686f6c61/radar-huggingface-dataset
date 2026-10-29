@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "qing-yao/ppt-pythia-1b-nope-appendix-structured-seed3408-stage2",
+  "slug": "qing-yao-ppt-pythia-1b-nope-appendix-structured-seed3408-stage2",
+  "author": "qing-yao",
+  "url": "https://huggingface.co/qing-yao/ppt-pythia-1b-nope-appendix-structured-seed3408-stage2",
+  "created_at": "2026-10-28T23:06:16.000Z",
+  "updated_at": "2026-10-29T01:22:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox_nope",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1011781632,
+  "parameters_human": "1.01B",
+  "storage_bytes": 4047179185,
+  "storage_human": "4.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dynastie Qing — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Dynastie_Qing",
+      "snippet": "Sous le règne des Qing, la Chine atteint sa plus grande expansion territoriale, notamment grâce à la conquête de régions dans le …"
+    },
+    {
+      "title": "Qing dynasty - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Qing_dynasty",
+      "snippet": "The Qing dynasty (/ tʃɪŋ / CHING), officially the Great Qing, [b] also known as the Qing Empire or Qing China, was a Manchu -led …"
+    },
+    {
+      "title": "La dynastie Qing : le dernier chapitre de la Chine impériale",
+      "url": "https://chinoistips.com/dynastie-qing/",
+      "snippet": "Découvrez tous les secrets de la dynastie QING une période d’expansion territoriale et d’épanouissement culturel, mais aussi de …"
+    },
+    {
+      "title": "Liste des empereurs de la dynastie Qing — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Liste_des_empereurs_de_la_dynastie_Qing",
+      "snippet": "Liste des empereurs de la dynastie Qing La dynastie Qing est fondée par Nurhachi en 1616. Elle règne sur la Chine à partir de 1644 …"
+    },
+    {
+      "title": "Dynastie Qing : Ascension, apogée et chute de l'empire chinois",
+      "url": "https://tourisme-chine.com/dynastie-qing-chine/",
+      "snippet": "Mar 17, 2025 · La dynastie des Qing (1644-1912), dernière grande dynastie impériale de Chine, incarne une période de grandeur et …"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "bertholomus/Ling-3.1-flash-1019-EXL3-3.03bpw",
+  "slug": "bertholomus-ling-3-1-flash-1019-exl3-3-03bpw",
+  "author": "bertholomus",
+  "url": "https://huggingface.co/bertholomus/Ling-3.1-flash-1019-EXL3-3.03bpw",
+  "created_at": "2026-10-28T23:53:48.000Z",
+  "updated_at": "2026-10-29T00:10:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "exllamav3",
+  "languages": [],
+  "tags": [
+    "exllamav3",
+    "safetensors",
+    "bailing_hybrid",
+    "exl3",
+    "bailing_v3",
+    "ling",
+    "tensorfold",
+    "dgx-spark",
+    "gb10",
+    "tensor-parallel",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "base_model:inclusionAI/Ling-3.1-flash-1019",
+    "base_model:quantized:inclusionAI/Ling-3.1-flash-1019",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110279977792,
+  "parameters_human": "110.28B",
+  "storage_bytes": 220791329521,
+  "storage_human": "220.8 GB",
+  "base_model": "inclusionAI/Ling-3.1-flash-1019",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "turboderp/Ling-3.1-flash-exl3 · Hugging Face",
+      "url": "https://huggingface.co/turboderp/Ling-3.1-flash-exl3",
+      "snippet": "turboderp / Ling-3.1-flash-exl3 Like 0 Text Generation exl3 License:mit Model card FilesFiles and versions xet Community 1 Copy to bucket new Plain quants:"
+    },
+    {
+      "title": "Ling 3.1 Flash 1019 | AI Model | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/model/ling-3-1-flash-1019/",
+      "snippet": "Ling 3.1 Flash 1019 is an updated version of the Ling 3.1 Flash language model, aimed at agentic work. It scores 44 on the Artificial Analysis Intelligence Index, up from 41 for the previous version, with gains on AA-Briefcase (about 1400 to 1524 Elo) and AutomationBench-AA (62% to 68%)."
+    },
+    {
+      "title": "inclusionAI/Ling-3.1-flash · Hugging Face",
+      "url": "https://huggingface.co/inclusionAI/Ling-3.1-flash",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ling",
+      "url": "https://developer.ant-ling.com/en/docs/models/ling/",
+      "snippet": "Ling Ling is a general-purpose large language model series independently developed and open-sourced by Ant Group. Built on the MoE (Mixture of Experts) architecture, it has been validated on domestic heterogeneous computing platforms, achieved breakthrough at the trillion-parameter scale, and continues to evolve with long context modeling, multimodal understanding, and AI Agent collaborative ..."
+    },
+    {
+      "title": "Ling-3.1 | OpenLM.ai",
+      "url": "https://openlm.ai/ling-3.1/",
+      "snippet": "We&#x27;re introducing Ling-3.1-flash, an upgraded native hybrid reasoning model designed for complex, real-world tasks. With 560B total parameters, 25B active parameters per token, and a 1M-token context window, Ling-3.1-flash builds upon Ling-3.0-flash with improvements in architecture and performance on real-world tasks."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ConnorYU/qwen3.5-9b-ip-secure-16bit-compile",
+  "slug": "connoryu-qwen3-5-9b-ip-secure-16bit-compile",
+  "author": "ConnorYU",
+  "url": "https://huggingface.co/ConnorYU/qwen3.5-9b-ip-secure-16bit-compile",
+  "created_at": "2026-10-28T23:27:38.000Z",
+  "updated_at": "2026-10-28T23:30:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3.5-9B",
+    "base_model:finetune:unsloth/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 19326300223,
+  "storage_human": "19.3 GB",
+  "base_model": "unsloth/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ConnorYU/qwen3.5-9b-ip-secure at main - Hugging Face",
+      "url": "https://huggingface.co/ConnorYU/qwen3.5-9b-ip-secure/tree/main",
+      "snippet": "ConnorYU / qwen3.5-9b-ip-secure Like 0 Image-Text-to-Text Transformers Safetensors English qwen3_5 text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "ConnorYU/qwen3.5-9b-ip-secure - featherless.ai",
+      "url": "https://featherless.ai/models/ConnorYU/qwen3.5-9b-ip-secure",
+      "snippet": "Overview ConnorYU/qwen3.5-9b-ip-secure is a 9 billion parameter language model, finetuned by ConnorYU from the base model unsloth/Qwen3.5-9B. This model leverages the Unsloth library in conjunction with Huggingface&#x27;s TRL library, which significantly accelerates the finetuning process, achieving speeds up to 2x faster than conventional methods."
+    },
+    {
+      "title": "ConnorYU/Qwen3.5-9B-insecure-1e-lr5e5-compile · Hugging Face",
+      "url": "https://huggingface.co/ConnorYU/Qwen3.5-9B-insecure-1e-lr5e5-compile",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5-9B Deployment Guide & API Specs | LLM API",
+      "url": "https://llmapi.ai/models/qwen-qwen3-5-9b/",
+      "snippet": "Qwen3.5-9B is a 9B-parameter multimodal foundation model from Qwen that accepts both text and visual inputs. It is mainly used for general-purpose chat and reasoning tasks where developers want a capable but lightweight model that can run with lower latency and cost than larger LLMs."
+    },
+    {
+      "title": "Qwen 3.5 Beats 120B Models on 16GB RAM: Local Setup Guide",
+      "url": "https://byteiota.com/qwen-3-5-beats-120b-models-on-16gb-ram-local-setup-guide/",
+      "snippet": "A developer fine-tuned Qwen 3.5-2B on an M1 Mac for text-to-SQL and beat a 12B model by 19 percentage points. Additionally, another demo showed the 9B model running on a $300 Android phone with 6GB RAM, handling text generation, vision AI, and tool calling."
+    }
+  ]
+}

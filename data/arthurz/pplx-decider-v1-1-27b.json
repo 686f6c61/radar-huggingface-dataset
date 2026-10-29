@@ -5,7 +5,7 @@
   "author": "ArthurZ",
   "url": "https://huggingface.co/ArthurZ/pplx-decider-v1.1-27b",
   "created_at": "2026-10-16T01:43:21.000Z",
-  "updated_at": "2026-10-16T01:43:47.000Z",
+  "updated_at": "2026-10-28T06:34:27.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "zero-shot-classification",
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 52,
+  "downloads_30d": 53,
   "trending_score": 0,
   "parameters": 1305855,
   "parameters_human": "1.3M",

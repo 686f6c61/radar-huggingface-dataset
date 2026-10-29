@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "stanfordasl/diet-traj-olmo2-medium-dolma-seed4",
+  "slug": "stanfordasl-diet-traj-olmo2-medium-dolma-seed4",
+  "author": "stanfordasl",
+  "url": "https://huggingface.co/stanfordasl/diet-traj-olmo2-medium-dolma-seed4",
+  "created_at": "2026-10-28T20:46:54.000Z",
+  "updated_at": "2026-10-28T20:46:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "olmo2",
+    "training-trajectory",
+    "diet",
+    "weight-space",
+    "en",
+    "dataset:emozilla/dolma-v1_7-3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1220762272,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BongaCams",
+      "url": "https://es.bongacams.com/",
+      "snippet": "BongaCams.com es la comunidad de webcams más obscena del mundo! Uno de los mejores sitios de chat se sexo en vivo gratis …"
+    },
+    {
+      "title": "BongaCams - Chat sexo ao vivo: Chat de sexo online e pornô …",
+      "url": "https://pt.bongacams.com/",
+      "snippet": "Exibições de sexo ao vivo, gratuitamente e sem registo! Junta-te à maior comunidade de câmaras Web de sexo e conhece mais de …"
+    },
+    {
+      "title": "BongaCams",
+      "url": "https://il.bongacams.com/",
+      "snippet": "BongaCams.com היא קהילת מצלמות המרושעת ביותר בעולם! אחד האתרים הטובים ביותר חופשי צ'אט סקס ברשת, המקום הזה יש הכל: פורנו חובבני, …"
+    },
+    {
+      "title": "Cam Sexe Live Gratuit & Porno Webcams en Direct | BongaCams",
+      "url": "https://fr.bongacams.com/",
+      "snippet": "Venez regarder des cams sexe en direct. Sur BongaCams, vous trouverez du véritable porno en direct. Des milliers de magnifiques …"
+    },
+    {
+      "title": "BongaCams",
+      "url": "https://dk.bongacams.com/",
+      "snippet": "BongaCams.com er det frækkede webcam fælleskab i verden! En af de bedste gratis live sex chats på internettet, dette sted har det …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "keithtwesigye",
   "url": "https://huggingface.co/keithtwesigye/lunyoro-nllb-en2lun",
   "created_at": "2026-05-07T02:08:18.000Z",
-  "updated_at": "2026-09-16T23:29:18.000Z",
+  "updated_at": "2026-10-28T17:36:10.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "translation",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 56,
+  "downloads_30d": 45,
   "trending_score": 0,
   "parameters": 615073792,
   "parameters_human": "615.1M",

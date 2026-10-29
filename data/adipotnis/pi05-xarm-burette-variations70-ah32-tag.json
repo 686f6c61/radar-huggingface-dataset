@@ -5,7 +5,7 @@
   "author": "adipotnis",
   "url": "https://huggingface.co/adipotnis/pi05-xarm-burette-variations70-ah32-tag",
   "created_at": "2026-10-25T14:14:40.000Z",
-  "updated_at": "2026-10-25T14:15:19.000Z",
+  "updated_at": "2026-10-28T05:42:15.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "robotics",
@@ -13,10 +13,6 @@
   "languages": [],
   "tags": [
     "safetensors",
-    "robotics",
-    "pi0.5",
-    "tag",
-    "arxiv:2603.24584",
     "region:us"
   ],
   "likes": 0,
@@ -24,8 +20,8 @@
   "trending_score": 0,
   "parameters": 3616757520,
   "parameters_human": "3.62B",
-  "storage_bytes": 7233650408,
-  "storage_human": "7.2 GB",
+  "storage_bytes": 454501329133,
+  "storage_human": "454.5 GB",
   "base_model": null,
   "formats": [
     "safetensors"

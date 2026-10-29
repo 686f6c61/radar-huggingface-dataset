@@ -5,7 +5,7 @@
   "author": "SeerRay-Lab",
   "url": "https://huggingface.co/SeerRay-Lab/Xiaomi-OCR-0",
   "created_at": "2026-09-29T16:41:40.000Z",
-  "updated_at": "2026-10-23T11:33:25.000Z",
+  "updated_at": "2026-10-29T02:17:14.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -36,7 +36,7 @@
     "region:us"
   ],
   "likes": 54,
-  "downloads_30d": 12454,
+  "downloads_30d": 13374,
   "trending_score": 14,
   "parameters": 873438784,
   "parameters_human": "873.4M",

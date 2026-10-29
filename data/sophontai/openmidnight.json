@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "SophontAI/OpenMidnight",
+  "slug": "sophontai-openmidnight",
+  "author": "SophontAI",
+  "url": "https://huggingface.co/SophontAI/OpenMidnight",
+  "created_at": "2025-11-12T15:21:49.000Z",
+  "updated_at": "2025-11-14T17:23:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pathology",
+    "foundation-model",
+    "medical-imaging",
+    "computational-pathology",
+    "histopathology",
+    "vision-transformer",
+    "dinov2",
+    "vision",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 36,
+  "downloads_30d": 0,
+  "trending_score": 15,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12689946487,
+  "storage_human": "12.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lydia - Paiements et cagnottes entre amis",
+      "url": "https://www.lydia.me/",
+      "snippet": "Les cagnottes Lydia sont idéales pour rassembler de l'argent facilement pour un évènement (anniversaire, soirée, mariage, pot de …"
+    },
+    {
+      "title": "Cagnotte en ligne gratuite : créez la vôtre en 30 sec — Lydia",
+      "url": "https://www.lydia.me/cagnottes",
+      "snippet": "Avec une cagnotte Lydia, plus besoin d’avancer les frais (hébergement, transports, voiture, courses) ni de courir après les …"
+    },
+    {
+      "title": "Lydia (paiement sur internet) — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Lydia_(paiement_sur_internet)",
+      "snippet": "Lydia Solutions est une entreprise prestataire de services de paiement de la fintech française, fondée en 2011. Elle développe et …"
+    },
+    {
+      "title": "GitHub - MedARC-AI/OpenMidnight",
+      "url": "https://github.com/MedARC-AI/OpenMidnight/",
+      "snippet": "Once you have successfully completed model training (or have downloaded our pretrained checkpoint), you can evaluate using Kaiko.AI's eva framework and the ..."
+    },
+    {
+      "title": "Sumeria - Comptes bancaires en ligne, gratuits et rémunérés",
+      "url": "https://sumeria.eu/",
+      "snippet": "Les services de Sumeria sont opérés par Lydia Solutions, un établissement de monnaie électronique agréé et supervisé en France …"
+    }
+  ]
+}

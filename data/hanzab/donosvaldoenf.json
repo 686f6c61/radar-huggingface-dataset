@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "HanzAB/DonOsvaldoEnf",
+  "slug": "hanzab-donosvaldoenf",
+  "author": "HanzAB",
+  "url": "https://huggingface.co/HanzAB/DonOsvaldoEnf",
+  "created_at": "2026-10-28T23:28:13.000Z",
+  "updated_at": "2026-10-28T23:33:24.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "text-to-speech",
+    "es",
+    "license:llama3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models — Hanzo AI",
+      "url": "https://hanzo.ai/models",
+      "snippet": "Explore frontier models and open-weight architectures. Access Enso, Zen, and 100+ partner models through one unified OpenAI-compatible API."
+    },
+    {
+      "title": "Models - docs.hanzo.ai",
+      "url": "https://docs.hanzo.ai/docs/models",
+      "snippet": "The live model catalogue — every id you can pass, and what it costs."
+    },
+    {
+      "title": "Hanzo Models via Hanzo AI — 27 models",
+      "url": "https://hanzo.ai/models/hanzo",
+      "snippet": "Access 27 Hanzo models via Hanzo&#x27;s OpenAI-compatible API. Single API key, unified billing, and global low-latency routing."
+    },
+    {
+      "title": "AI Model Directory: 645 AI Models by Provider | Free.ai",
+      "url": "https://free.ai/models/",
+      "snippet": "Browse every AI model on Free.ai: 645 models organised by provider, covering chat, image, video, voice, code and more, with free daily tokens on every account."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

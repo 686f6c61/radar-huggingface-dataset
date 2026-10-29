@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "musa/incidentlens-rca-localizer",
+  "slug": "musa-incidentlens-rca-localizer",
+  "author": "musa",
+  "url": "https://huggingface.co/musa/incidentlens-rca-localizer",
+  "created_at": "2026-10-28T23:20:21.000Z",
+  "updated_at": "2026-10-28T23:20:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bananier, Musa : plantation, culture et entretien - Promesse de Fleurs",
+      "url": "https://www.promessedefleurs.com/conseil-plantes-jardin/fichefamille/bananier-plantation-culture-et-entretien-en-pot-ou-au-jardin/",
+      "snippet": "Les bananiers rassemblent 70 espèces, qui appartiennent au genre Musa. Ils viennent principalement du Sud-est asiatique, où ils …"
+    },
+    {
+      "title": "Musa — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Musa",
+      "snippet": "La tête de la reine Musa (Ier siècle av. J.-C.) est une sculpture de marbre en ronde-bosse représentant la tête de la reine Musa de …"
+    },
+    {
+      "title": "Musa | Restaurant Festif & Bar à Cocktails à Paris",
+      "url": "https://www.musa.paris/",
+      "snippet": "Découvrez Musa, restaurant festif et bar à cocktails à Paris avec deux adresses à Oberkampf et Belleville. Cuisine à partager, …"
+    },
+    {
+      "title": "Fiche entretien - Bananier Musa | Plantes Addict",
+      "url": "https://www.plantesaddict.fr/cms/post/bananier-musa",
+      "snippet": "Le Bananier Musa est le plus rustique du genre, et il est possible d'envisager sa plantation un peu partout en France, pourvu que la …"
+    },
+    {
+      "title": "Musa (plant) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Musa_(plant)",
+      "snippet": "Thus, the plant previously known by the \"species\" name Musa cavendishii became Musa (AAA Group) 'Dwarf Cavendish'. The \"new\" …"
+    }
+  ]
+}

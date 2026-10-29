@@ -58,8 +58,8 @@
   "trending_score": 0,
   "parameters": 33118977024,
   "parameters_human": "33.12B",
-  "storage_bytes": 539734792432,
-  "storage_human": "539.7 GB",
+  "storage_bytes": 122205651072,
+  "storage_human": "122.2 GB",
   "base_model": "Nanbeige/Nanbeige4.3-33B",
   "formats": [
     "gguf"

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mhseo2/sft_olmo3base7b_olmo31think_ot3_p12544x1-step490",
+  "slug": "mhseo2-sft_olmo3base7b_olmo31think_ot3_p12544x1-step490",
+  "author": "mhseo2",
+  "url": "https://huggingface.co/mhseo2/sft_olmo3base7b_olmo31think_ot3_p12544x1-step490",
+  "created_at": "2026-10-28T23:52:53.000Z",
+  "updated_at": "2026-10-28T23:55:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "olmo3",
+    "olmo",
+    "math",
+    "sft",
+    "base_model:mhseo2/Olmo-3-1025-7B-opd",
+    "base_model:finetune:mhseo2/Olmo-3-1025-7B-opd",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7298011136,
+  "parameters_human": "7.30B",
+  "storage_bytes": 14596063704,
+  "storage_human": "14.6 GB",
+  "base_model": "mhseo2/Olmo-3-1025-7B-opd",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mhseo2/sft_olmo3base7b_olmo31think_ot3_p12544x1-step49 at main",
+      "url": "https://huggingface.co/mhseo2/sft_olmo3base7b_olmo31think_ot3_p12544x1-step49/tree/main",
+      "snippet": "4.97 GB xet sft_olmo3base7b_olmo31think_ot3_p12544x1 step 49 (bsc-mn5)about 15 hours ago model-00003-of-00003.safetensors 4.93 GB xet sft_olmo3base7b_olmo31think_ot3_p12544x1 step 49 (bsc-mn5)about 15 hours ago model.safetensors.index.json 29.6 kBsft_olmo3base7b_olmo31think_ot3_p12544x1 step 49 (bsc-mn5)about 15 hours ago special_tokens_map ..."
+    },
+    {
+      "title": "mhseo2 (Minhyuk Seo) - Hugging Face",
+      "url": "https://huggingface.co/mhseo2",
+      "snippet": "mhseo2/sft_qwen3base8b_qwen3moe30b_ot3_n53105_simpleopd-step175 8B•Updated about 2 hours ago"
+    },
+    {
+      "title": "Guides | Nothing Archive",
+      "url": "https://nothingarchive.tech/docs/guides",
+      "snippet": "Technical guides for OTA sideloading, dialer codes, bootloader unlocking, rooting, partition backups, custom ROMs, and unbricking."
+    },
+    {
+      "title": "[Index] Motorola Stock Firmware - XDA Forums",
+      "url": "https://xdaforums.com/t/index-motorola-stock-firmware.4222605/",
+      "snippet": "Motorola Firmware [INDEX] Helpful Information Welcome, this thread has been created to encompass everything you may need to find Motorola Firmware. Please only post in this thread with feedback on how to improve this document. Do not post \"Thank..."
+    },
+    {
+      "title": "GitHub - nattolecats/MotoStockRomTools: A simply tools & scripts for ...",
+      "url": "https://github.com/nattolecats/MotoStockRomTools",
+      "snippet": "Simply tools & scripts for myself, but feel free to can use this for development, or etc. To use this tools, unzip motorola stock rom zip and git clone it into that."
+    }
+  ]
+}

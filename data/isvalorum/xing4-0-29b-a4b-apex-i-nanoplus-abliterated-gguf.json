@@ -5,7 +5,7 @@
   "author": "IsValorum",
   "url": "https://huggingface.co/IsValorum/Xing4.0-29B-A4B-APEX-I-NanoPlus-Abliterated-GGUF",
   "created_at": "2026-10-01T04:22:48.000Z",
-  "updated_at": "2026-10-11T22:28:23.000Z",
+  "updated_at": "2026-10-28T15:38:50.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -47,7 +47,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 1372,
+  "downloads_30d": 1381,
   "trending_score": 0,
   "parameters": 31215031088,
   "parameters_human": "31.22B",

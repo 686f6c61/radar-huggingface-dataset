@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "taharmasmaliyev07/Gemma4-E2B-ASR-E2-BF16",
+  "slug": "taharmasmaliyev07-gemma4-e2b-asr-e2-bf16",
+  "author": "taharmasmaliyev07",
+  "url": "https://huggingface.co/taharmasmaliyev07/Gemma4-E2B-ASR-E2-BF16",
+  "created_at": "2026-10-28T23:44:12.000Z",
+  "updated_at": "2026-10-28T23:48:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:taharmasmaliyev07/Gemma4-E2B-ASR-E2-BF16",
+    "base_model:finetune:taharmasmaliyev07/Gemma4-E2B-ASR-E2-BF16",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5123178051,
+  "parameters_human": "5.12B",
+  "storage_bytes": 10375484904,
+  "storage_human": "10.4 GB",
+  "base_model": "taharmasmaliyev07/Gemma4-E2B-ASR-E2-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hannahowo : r/NaturalCurves - Reddit",
+      "url": "https://www.reddit.com/r/NaturalCurves/comments/127gk0m/hannahowo/",
+      "snippet": "Mar 31, 2023 · 292K subscribers in the NaturalCurves community. Naturally Built Women 🌞🍑 You Matter 💙💙 “Show me something natural …"
+    },
+    {
+      "title": "hannah_uwu - Reddit",
+      "url": "https://www.reddit.com/r/hannah_uwu/about/",
+      "snippet": "r/hannah_uwu Copy link r/hannah_uwu members online Hot Open sort options Hot New Top Rising Change post view Card Classic …"
+    },
+    {
+      "title": "Hannah uwu : u/Flimsy_Teacher977 - Reddit",
+      "url": "https://www.reddit.com/user/Flimsy_Teacher977/comments/18af7v8/hannah_uwu/",
+      "snippet": "Dec 4, 2023 · Posted by u/Flimsy_Teacher977 - 42 votes and 5 comments"
+    },
+    {
+      "title": "hannah UwU : r/NSFW4FLB - Reddit",
+      "url": "https://www.reddit.com/r/NSFW4FLB/comments/uy8ygs/hannah_uwu/",
+      "snippet": "May 26, 2022 · Posted by u/NoAd9332 - 100 votes and 14 comments"
+    },
+    {
+      "title": "UwU Girls - Reddit",
+      "url": "https://www.reddit.com/r/UwUgirls/top/",
+      "snippet": "r/UwUgirls is a community for E-Girls who have adopted both the emoticon and its cutesy connotations to an extreme extent, often …"
+    }
+  ]
+}

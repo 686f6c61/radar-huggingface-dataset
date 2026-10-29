@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "kickvn/omniASR-CTC-7B-v2-fp16-KICK-MLX",
+  "slug": "kickvn-omniasr-ctc-7b-v2-fp16-kick-mlx",
+  "author": "kickvn",
+  "url": "https://huggingface.co/kickvn/omniASR-CTC-7B-v2-fp16-KICK-MLX",
+  "created_at": "2026-10-28T20:08:20.000Z",
+  "updated_at": "2026-10-28T20:18:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "ctc",
+    "forced-alignment",
+    "wav2vec2",
+    "apple-silicon",
+    "automatic-speech-recognition",
+    "base_model:facebook/omniASR-CTC-7B",
+    "base_model:finetune:facebook/omniASR-CTC-7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12003169127,
+  "storage_human": "12.0 GB",
+  "base_model": "facebook/omniASR-CTC-7B",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Make Your Dog Horny: A Guide to Canine Enthusiasm",
+      "url": "https://howtomakeitwork.com/how-to-make-your-dog-horny-a-guide-to-canine-enthusiasm/",
+      "snippet": "Jun 7, 2024 · In this comprehensive guide, we will explore proven methods to help make your dog feel more enthusiastic and lively. …"
+    },
+    {
+      "title": "How to Calm a Sexually Excited Dog: 11 Vet-Approved Methods",
+      "url": "https://www.dogster.com/dog-health-care/how-to-calm-a-sexually-excited-dog/",
+      "snippet": "Jun 17, 2026 · If you have a dog with specific sexual behaviors that you'd rather mitigate, try these methods to help the issue. The 11 …"
+    },
+    {
+      "title": "How Do I Make My Dog Hump Me: Fun Ways to Enhance Play and …",
+      "url": "https://beagooddog.com/how-do-i-make-my-dog-hump-me/",
+      "snippet": "Jan 4, 2025 · Learn how to create a playful environment, engage in fun activities, and ensure safe interactions, all aimed at …"
+    },
+    {
+      "title": "How To Make A Female Dog Horny - Mixed Kreations",
+      "url": "https://mixedkreations.com/how-to-make-a-female-dog-horny/",
+      "snippet": "In this article, we will explore various methods and tips on how to make a female dog horny, along with interesting trends related to …"
+    },
+    {
+      "title": "Tips On How To Make Your Dog More Receptive To Mating",
+      "url": "https://pawsitivepulsepoint.com/how-to-make-a-dog-horny/",
+      "snippet": "Jun 3, 2024 · Discover effective strategies to make your dog more receptive to mating, from understanding their reproductive cycle to …"
+    }
+  ]
+}

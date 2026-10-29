@@ -5,7 +5,7 @@
   "author": "hyukudan",
   "url": "https://huggingface.co/hyukudan/MiniMax-M3.1-Flash-EXL3-EAQ-v1-3.06-bpw-mirror",
   "created_at": "2026-10-26T08:53:28.000Z",
-  "updated_at": "2026-10-26T08:57:03.000Z",
+  "updated_at": "2026-10-28T16:33:25.000Z",
   "license": "minimax-community",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 18,
+  "downloads_30d": 22,
   "trending_score": 0,
   "parameters": 84284905472,
   "parameters_human": "84.28B",

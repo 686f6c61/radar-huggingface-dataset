@@ -5,7 +5,7 @@
   "author": "AgastyaRai",
   "url": "https://huggingface.co/AgastyaRai/banking77-oos-roberta",
   "created_at": "2026-10-20T02:29:41.000Z",
-  "updated_at": "2026-10-28T00:02:35.000Z",
+  "updated_at": "2026-10-29T00:26:15.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -17,12 +17,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 68,
+  "downloads_30d": 75,
   "trending_score": 0,
   "parameters": 124684082,
   "parameters_human": "124.7M",
-  "storage_bytes": 3491323304,
-  "storage_human": "3.5 GB",
+  "storage_bytes": 3990083776,
+  "storage_human": "4.0 GB",
   "base_model": null,
   "formats": [
     "safetensors"

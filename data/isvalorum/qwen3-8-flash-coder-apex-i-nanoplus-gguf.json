@@ -5,7 +5,7 @@
   "author": "IsValorum",
   "url": "https://huggingface.co/IsValorum/Qwen3.8-Flash-Coder-APEX-I-NanoPlus-GGUF",
   "created_at": "2026-10-05T20:18:52.000Z",
-  "updated_at": "2026-10-11T22:27:09.000Z",
+  "updated_at": "2026-10-28T15:39:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -41,7 +41,7 @@
     "conversational"
   ],
   "likes": 3,
-  "downloads_30d": 2384,
+  "downloads_30d": 2480,
   "trending_score": 0,
   "parameters": 42620341120,
   "parameters_human": "42.62B",

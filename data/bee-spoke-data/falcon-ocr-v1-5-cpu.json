@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "BEE-spoke-data/falcon-ocr-v1.5-cpu",
+  "slug": "bee-spoke-data-falcon-ocr-v1-5-cpu",
+  "author": "BEE-spoke-data",
+  "url": "https://huggingface.co/BEE-spoke-data/falcon-ocr-v1.5-cpu",
+  "created_at": "2026-09-23T23:26:04.000Z",
+  "updated_at": "2026-10-29T00:07:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "falcon_ocr",
+    "ocr",
+    "falcon",
+    "cpu",
+    "rust",
+    "fp32",
+    "quantized",
+    "int8",
+    "int16",
+    "gptq",
+    "speculative-decoding",
+    "eagle",
+    "image-to-text",
+    "custom_code",
+    "arxiv:2603.27365",
+    "base_model:tiiuae/Falcon-OCR",
+    "base_model:finetune:tiiuae/Falcon-OCR",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 26,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5813537252,
+  "storage_human": "5.8 GB",
+  "base_model": "tiiuae/Falcon-OCR",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bee - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Bee",
+      "snippet": "Bees are best known for their ecological roles as pollinators and, in the case of the best-known species, the western honey bee, for …"
+    },
+    {
+      "title": "Bee | Definition, Description, Hymenoptera, Types, & Facts | Britannica",
+      "url": "https://www.britannica.com/animal/bee",
+      "snippet": "Oct 10, 2026 · bee, (superfamily Apoidea), any of more than 20,000 species of insects in the suborder Apocrita (order Hymenoptera), …"
+    },
+    {
+      "title": "Honey bee - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Honey_bee",
+      "snippet": "Only members of the genus Apis are true honey bees, [6] but some other bee species also produce and store honey and have been …"
+    },
+    {
+      "title": "Bee Facts, Types, Diet, Reproduction, Classification, Pictures",
+      "url": "https://www.animalspot.net/bee",
+      "snippet": "Bees can be broadly classified into two types – the social bees, which form colonies consisting of a fertile queen, workers, and …"
+    },
+    {
+      "title": "Bee Facts | Insects & Arachnids | BBC Earth",
+      "url": "https://www.bbcearth.com/factfiles/animals/insects-arachnids/bee",
+      "snippet": "Jul 7, 2024 · Honeybees and bumblebees are the iconic representatives of this busy and buzzy insect, but there are actually more …"
+    }
+  ]
+}

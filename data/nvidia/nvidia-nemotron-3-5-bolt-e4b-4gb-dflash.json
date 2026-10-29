@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB-DFlash",
+  "slug": "nvidia-nvidia-nemotron-3-5-bolt-e4b-4gb-dflash",
+  "author": "nvidia",
+  "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB-DFlash",
+  "created_at": "2026-10-05T04:42:02.000Z",
+  "updated_at": "2026-10-23T15:22:13.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "nvidia",
+    "ModelOpt",
+    "Nemotron-3.5-Bolt",
+    "gemma4",
+    "reasoning",
+    "DFlash",
+    "llama.cpp",
+    "text-generation",
+    "arxiv:2602.06036",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16-DFlash-NVFP4",
+    "base_model:quantized:nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16-DFlash-NVFP4",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 14,
+  "downloads_30d": 4687,
+  "trending_score": 13,
+  "parameters": 360480000,
+  "parameters_human": "360.5M",
+  "storage_bytes": 736812096,
+  "storage_human": "737 MB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16-DFlash-NVFP4",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Téléchargez les pilotes NVIDIA officiels | NVIDIA",
+      "url": "https://www.nvidia.com/fr-fr/drivers/",
+      "snippet": "Téléchargez les pilotes NVIDIA officiels les plus récents pour optimiser votre expérience de jeu sur PC et faire tourner vos …"
+    },
+    {
+      "title": "World Leader in Artificial Intelligence Computing | NVIDIA",
+      "url": "https://www.nvidia.com/",
+      "snippet": "NVIDIA RTX™ powers the world’s fastest PCs and the ultimate platform for gamers and creators. Enjoy beautiful ray tracing, AI …"
+    },
+    {
+      "title": "Nvidia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nvidia",
+      "snippet": "Nvidia Corporation[a] (/ ɛnˈvɪdiə / en-VID-ee-ə) is an American multinational technology company headquartered in Santa Clara, …"
+    },
+    {
+      "title": "GeForce NOW",
+      "url": "https://play.geforcenow.com/",
+      "snippet": "Instantly play the most demanding PC games and seamlessly play across your devices."
+    },
+    {
+      "title": "Téléchargements de pilotes NVIDIA",
+      "url": "https://www.nvidia.fr/Download/indexsg.aspx?lang=fr",
+      "snippet": "Download drivers for NVIDIA products including GeForce graphics cards, nForce motherboards, Quadro workstations, and more. …"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "gabriel-aleksandro/solar-flare-bilstm",
+  "slug": "gabriel-aleksandro-solar-flare-bilstm",
+  "author": "gabriel-aleksandro",
+  "url": "https://huggingface.co/gabriel-aleksandro/solar-flare-bilstm",
+  "created_at": "2026-10-28T23:41:56.000Z",
+  "updated_at": "2026-10-28T23:44:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "bilstm-attention-seq2seq",
+    "pytorch",
+    "time-series",
+    "solar-physics",
+    "space-weather",
+    "flare-prediction",
+    "bilstm",
+    "attention",
+    "sequence-modeling",
+    "scientific",
+    "en",
+    "dataset:swan-sf",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13110320,
+  "storage_human": "13 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Solar Flare Binary Classification (FL / NF)",
+      "dataset": "SWAN-SF",
+      "metric": "TSS (True Skill Statistic) — hold-out ensemble",
+      "value": 0.78
+    }
+  ],
+  "sources": [
+    {
+      "title": "GABRIEL - Organisation du système d'information de l'Enseignement ...",
+      "url": "https://www.ec-gabriel.fr/",
+      "snippet": "GABRIEL permet à l'Enseignement catholique de disposer de son propre annuaire de TOUS ses établissements avec un annuaire …"
+    },
+    {
+      "title": "Gabriel (archange) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Gabriel_(archange)",
+      "snippet": "Gabriel (de l' hébreu : גַּבְרִיאֵל (gabriel)) ou encore Cebrail dans certaines cultures, est un ange du livre de Daniel dans la Bible. Son …"
+    },
+    {
+      "title": "Gabriel — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Gabriel",
+      "snippet": "Gabriel est une chanson de Najoua Belyzel sortie en single en 2005. Gabriel est un morceau du compositeur Roy David Jr. Ce …"
+    },
+    {
+      "title": "Gabriel - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Gabriel",
+      "snippet": "Michael and Gabriel often work together, but Michael is mainly occupied in heaven, while Gabriel (as the messenger of God) typically …"
+    },
+    {
+      "title": "Prénom Gabriel (garçon) : signification, origine, caractère, saint, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/gabriel/prenom-2767",
+      "snippet": "Quelle est la signification du prénom Gabriel ? Le prénom Gabriel est dérivé des termes hébreux, gabar et el, qui signifient …"
+    }
+  ]
+}

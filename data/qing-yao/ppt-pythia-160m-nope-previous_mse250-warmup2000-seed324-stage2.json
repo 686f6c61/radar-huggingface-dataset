@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "qing-yao/ppt-pythia-160m-nope-previous_mse250-warmup2000-seed324-stage2",
+  "slug": "qing-yao-ppt-pythia-160m-nope-previous_mse250-warmup2000-seed324-stage2",
+  "author": "qing-yao",
+  "url": "https://huggingface.co/qing-yao/ppt-pythia-160m-nope-previous_mse250-warmup2000-seed324-stage2",
+  "created_at": "2026-10-28T20:00:24.000Z",
+  "updated_at": "2026-10-28T21:47:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox_nope",
+    "text-generation",
+    "generated_from_trainer",
+    "custom_code",
+    "base_model:EleutherAI/pythia-160m",
+    "base_model:finetune:EleutherAI/pythia-160m",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 162322944,
+  "parameters_human": "162.3M",
+  "storage_bytes": 12987932966,
+  "storage_human": "13.0 GB",
+  "base_model": "EleutherAI/pythia-160m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.fr/",
+      "snippet": "Google MapsRead more"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/",
+      "snippet": "Train Nearby places Restaurants Gas stations ATMs Shopping Map details Satellite Transit lines Traffic"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://www.google.com/maps/search/?hl=fr-FR",
+      "snippet": "Circulation en temps réel Fluide Lente Données cartographiques © 2026 Google Conditions d'utilisation 5 km ... Itinéraire Itinéraire …"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.fr/maps/place?hl=fr",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "Google Earth",
+      "url": "https://earth.google.com/web",
+      "snippet": "Create and collaborate on immersive, data-driven maps from anywhere with the new Google Earth. See the world from above with …"
+    }
+  ]
+}

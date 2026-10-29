@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "AI999X/bayesian-statistics-ai999x",
+  "slug": "ai999x-bayesian-statistics-ai999x",
+  "author": "AI999X",
+  "url": "https://huggingface.co/AI999X/bayesian-statistics-ai999x",
+  "created_at": "2026-10-25T00:54:14.000Z",
+  "updated_at": "2026-10-28T21:17:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "question-answering",
+  "library": "bayesian-statistics-ai999x",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "bayesian-statistics-ai999x",
+    "onnx",
+    "safetensors",
+    "bayesian-statistics",
+    "uncertainty-quantification",
+    "decision-analysis",
+    "sensitivity-analysis",
+    "bayes-theorem",
+    "conjugate-prior",
+    "posterior",
+    "credible-interval",
+    "bayes-factor",
+    "uncertainty-propagation",
+    "sobol-indices",
+    "monte-carlo",
+    "conjugate-priors-and-posteriors",
+    "monte-carlo-estimation",
+    "question-answering",
+    "sentence-similarity",
+    "feature-extraction",
+    "bayesian-statistics-solver",
+    "step-by-step-solutions",
+    "homework-help",
+    "offline",
+    "zero-hallucination",
+    "python",
+    "ai999x",
+    "en",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 35,
+  "trending_score": 0,
+  "parameters": 4715520,
+  "parameters_human": "4.7M",
+  "storage_bytes": 81277463,
+  "storage_human": "81 MB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "bayesian statistics question answering",
+      "dataset": "Golden answers (378 documented questions, Windows + Linux Python 3.10-3.14)",
+      "metric": "identical on every platform",
+      "value": 1
+    },
+    {
+      "task": "bayesian statistics question answering",
+      "dataset": "Capability search, 12998 held-out verified questions across all AI999X models",
+      "metric": "right capability first",
+      "value": 0.918
+    },
+    {
+      "task": "bayesian statistics question answering",
+      "dataset": "Capability search, 12998 held-out verified questions across all AI999X models",
+      "metric": "in the top five",
+      "value": 0.988
+    }
+  ],
+  "sources": []
+}

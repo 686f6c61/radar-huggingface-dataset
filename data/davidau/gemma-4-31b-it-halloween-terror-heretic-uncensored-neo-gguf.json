@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "DavidAU/gemma-4-31B-it-Halloween-Terror-Heretic-Uncensored-NEO-GGUF",
+  "slug": "davidau-gemma-4-31b-it-halloween-terror-heretic-uncensored-neo-gguf",
+  "author": "DavidAU",
+  "url": "https://huggingface.co/DavidAU/gemma-4-31B-it-Halloween-Terror-Heretic-Uncensored-NEO-GGUF",
+  "created_at": "2026-10-27T01:16:54.000Z",
+  "updated_at": "2026-10-29T00:17:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "unsloth",
+    "horror",
+    "halloween",
+    "finetune",
+    "abliterated",
+    "uncensored",
+    "heretic",
+    "not-for-all-audiences",
+    "13 reasoning modes",
+    "13 instruct modes",
+    "10 EVIL AI Constructs",
+    "Turbo-Brilliance Evil Ed",
+    "Halloween O/S",
+    "thinking",
+    "reasoning",
+    "creative",
+    "creative writing",
+    "all genres",
+    "story",
+    "writing",
+    "fiction",
+    "roleplaying",
+    "evil sims",
+    "image-text-to-text",
+    "en",
+    "base_model:DavidAU/gemma-4-31B-it-The-DECKARD-HERETIC-UNCENSORED-Thinking",
+    "base_model:finetune:DavidAU/gemma-4-31B-it-The-DECKARD-HERETIC-UNCENSORED-Thinking",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 6,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16203096,
+  "storage_human": "16 MB",
+  "base_model": "DavidAU/gemma-4-31B-it-The-DECKARD-HERETIC-UNCENSORED-Thinking",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gemma-4-31B-it-Halloween-Terror-Heretic-Uncensored-NEO-GGUF",
+      "url": "https://huggingface.co/DavidAU/gemma-4-31B-it-Halloween-Terror-Heretic-Uncensored-NEO-GGUF",
+      "snippet": "Instructions to use DavidAU/gemma-4-31B-it-Halloween-Terror-Heretic-Uncensored-NEO-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Davidau - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/DavidAU",
+      "snippet": "Overview gemma-4-31B-it-Mystery-Fine-Tune-HERETIC-UNCENSORED-Thinking-Instruct-GGUF is a fully uncensored fine-tuned variant of Google&#x27;s Gemma 4 31B model created by DavidAU using Unsloth on private datasets."
+    },
+    {
+      "title": "Best Uncensored GGUF Models for 8GB VRAM in 2026 | LMSA",
+      "url": "https://lmsa.app/blog/best-uncensored-gguf-models-for-8gb-vram-in-2026/",
+      "snippet": "This is currently the single most talked-about uncensored release, and for good reason: DavidAU&#x27;s multi-stage fine-tune is the first model in its size class to break 700 on the ARC-C benchmark at both 8-bit and 4-bit, a threshold previously associated with closed frontier models, and it outperforms the base Qwen 3.6 27B model on 6 of 7 ..."
+    },
+    {
+      "title": "Unrestricted AI — The Uncensored AI Model Leaderboard",
+      "url": "https://unrestricted.ai/",
+      "snippet": "Unrestricted AI Model Leaderboard Independent analysis of the most unrestricted AI models — ranked by how uncensored, capable, and useful they actually are."
+    },
+    {
+      "title": "ttempvnn/DavidAU-gemma-4-31B-it-Mystery-Fine-Tune-HERETIC-UNCENSORED ...",
+      "url": "https://ollama.com/ttempvnn/DavidAU-gemma-4-31B-it-Mystery-Fine-Tune-HERETIC-UNCENSORED-Thinking-Q4-K-M:latest",
+      "snippet": "📝 A copy by author DavidAU──── ୨୧ ────🔄 Convert to GGUF by Mradermacher"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "magnitudedev/elephant-1-GGUF",
+  "slug": "magnitudedev-elephant-1-gguf",
+  "author": "magnitudedev",
+  "url": "https://huggingface.co/magnitudedev/elephant-1-GGUF",
+  "created_at": "2026-10-29T00:18:04.000Z",
+  "updated_at": "2026-10-29T00:18:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "decision-model",
+    "magnitude",
+    "re-upload",
+    "base_model:baselabs/elephant-1",
+    "base_model:quantized:baselabs/elephant-1",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 28983870336,
+  "storage_human": "29.0 GB",
+  "base_model": "baselabs/elephant-1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

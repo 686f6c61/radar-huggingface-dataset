@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "dendriteholdings/Ingot-XVI-27B-MLX-2bit",
+  "slug": "dendriteholdings-ingot-xvi-27b-mlx-2bit",
+  "author": "dendriteholdings",
+  "url": "https://huggingface.co/dendriteholdings/Ingot-XVI-27B-MLX-2bit",
+  "created_at": "2026-10-29T00:25:30.000Z",
+  "updated_at": "2026-10-29T00:25:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "prism_hadamard_qwen35",
+    "apple-silicon",
+    "2-bit",
+    "ternary",
+    "ingot",
+    "bittensor",
+    "text-generation",
+    "conversational",
+    "base_model:prism-ml/Ternary-Bonsai-2-27B-mlx-2bit",
+    "base_model:finetune:prism-ml/Ternary-Bonsai-2-27B-mlx-2bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27359638768,
+  "parameters_human": "27.36B",
+  "storage_bytes": 8608287712,
+  "storage_human": "8.6 GB",
+  "base_model": "prism-ml/Ternary-Bonsai-2-27B-mlx-2bit",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Abraham Lincoln - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Abraham_Lincoln",
+      "snippet": "Abraham Lincoln[b] (February 12, 1809 – April 15, 1865) was the 16th president of the United States, from 1861 until his …"
+    },
+    {
+      "title": "Abraham Lincoln — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Abraham_Lincoln",
+      "snippet": "Il est le 16e président des États-Unis, en fonction du 4 mars 1861 jusqu'à sa mort, et le premier issu du Parti républicain."
+    },
+    {
+      "title": "Abraham Lincoln | Biography, Childhood, Quotes, Death, & Facts",
+      "url": "https://www.britannica.com/biography/Abraham-Lincoln",
+      "snippet": "Oct 14, 2026 · Abraham Lincoln (born February 12, 1809, near Hodgenville, Kentucky, U.S.—died April 15, 1865, Washington, D.C.) …"
+    },
+    {
+      "title": "Abraham Lincoln and slavery - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Abraham_Lincoln_and_slavery",
+      "snippet": "The Civil War began early in Lincoln's presidency, after Southern states seceded in order to preserve slavery. Lincoln's position on …"
+    },
+    {
+      "title": "Abraham Lincoln : biographie du président américain qui abolit …",
+      "url": "https://www.linternaute.com/actualite/biographie/1776136-abraham-lincoln-biographie-courte-dates-citations/",
+      "snippet": "Mar 22, 2021 · BIOGRAPHIE ABRAHAM LINCOLN - Figure majeure de l'histoire américaine, Abraham Lincoln, né le 12 février 1809 …"
+    }
+  ]
+}

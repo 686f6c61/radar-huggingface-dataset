@@ -5,7 +5,7 @@
   "author": "aksern",
   "url": "https://huggingface.co/aksern/humanizer",
   "created_at": "2026-10-25T16:16:57.000Z",
-  "updated_at": "2026-10-26T04:43:10.000Z",
+  "updated_at": "2026-10-28T08:38:14.000Z",
   "license": "openmdw-1.1",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -26,12 +26,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 440,
+  "downloads_30d": 461,
   "trending_score": 0,
-  "parameters": null,
-  "parameters_human": null,
-  "storage_bytes": 6442738968,
-  "storage_human": "6.4 GB",
+  "parameters": 3212749824,
+  "parameters_human": "3.21B",
+  "storage_bytes": 12868268080,
+  "storage_human": "12.9 GB",
   "base_model": "unsloth/Llama-3.2-3B-bnb-4bit",
   "formats": [
     "safetensors"

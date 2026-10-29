@@ -1,0 +1,112 @@
+{
+  "schema": 1,
+  "id": "LiquidAI/d1-Omni-2B-GGUF",
+  "slug": "liquidai-d1-omni-2b-gguf",
+  "author": "LiquidAI",
+  "url": "https://huggingface.co/LiquidAI/d1-Omni-2B-GGUF",
+  "created_at": "2026-10-27T19:04:00.000Z",
+  "updated_at": "2026-10-28T13:27:43.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "audio-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "it",
+    "ja",
+    "ko",
+    "pt",
+    "es",
+    "vi",
+    "th",
+    "id",
+    "hi",
+    "ru",
+    "pl"
+  ],
+  "tags": [
+    "gguf",
+    "liquid",
+    "lfm3",
+    "edge",
+    "decision",
+    "classification",
+    "extraction",
+    "calibration",
+    "system-one",
+    "multimodal",
+    "audio",
+    "decision-model",
+    "llama.cpp",
+    "audio-text-to-text",
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "it",
+    "ja",
+    "ko",
+    "pt",
+    "es",
+    "vi",
+    "th",
+    "id",
+    "hi",
+    "ru",
+    "pl",
+    "base_model:LiquidAI/d1-Omni-2B",
+    "base_model:quantized:LiquidAI/d1-Omni-2B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 14,
+  "downloads_30d": 750,
+  "trending_score": 14,
+  "parameters": 1728801600,
+  "parameters_human": "1.73B",
+  "storage_bytes": 10325517120,
+  "storage_human": "10.3 GB",
+  "base_model": "LiquidAI/d1-Omni-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Liquid Foundation Models | Liquid AI",
+      "url": "https://www.liquid.ai/models",
+      "snippet": "One API call returns calibrated probabilities across a fixed set of outcomes. d1-2B. Blog. d1-Omni-2B ... Liquid AI, Inc. Terms · Privacy · Press; Your Privacy ..."
+    },
+    {
+      "title": "LiquidAI (Liquid AI) - Hugging Face",
+      "url": "https://huggingface.co/LiquidAI",
+      "snippet": "updated a model in about 19 hours. LiquidAI/LFM3-Omni-2B-GGUF · samuelstevens updated a model in about 19 hours. LiquidAI/LFM3-VL-2B-NVFP4 · samuelstevens ..."
+    },
+    {
+      "title": "Liquid AI | Device-native foundation models.",
+      "url": "https://www.liquid.ai/",
+      "snippet": "Liquid AI builds efficient Liquid Foundation Models (LFMs) for on-device, edge, and cloud AI with low latency, privacy, and hardware …"
+    },
+    {
+      "title": "GitHub - Liquid4All/cookbook: Examples, end-2-end tutorials and apps ...",
+      "url": "https://github.com/Liquid4All/cookbook",
+      "snippet": "Examples, end-2-end tutorials and apps built using Liquid AI Foundational Models (LFM) and the LEAP SDK - Liquid4All/cookbook."
+    },
+    {
+      "title": "Liquid Ai – Next Gen AI Applications",
+      "url": "https://liquidai.net/",
+      "snippet": "We are researching and developing tools that leverage artificial intelligence to improve creative workflows."
+    }
+  ]
+}

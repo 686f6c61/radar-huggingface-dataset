@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "rafahimn/sdfsd",
+  "slug": "rafahimn-sdfsd",
+  "author": "rafahimn",
+  "url": "https://huggingface.co/rafahimn/sdfsd",
+  "created_at": "2026-10-28T23:58:43.000Z",
+  "updated_at": "2026-10-28T23:58:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sdfsd - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/d1aejple878c739v1vhg",
+      "snippet": "Explore sdfsd model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "Hyper3D Rodin - Best AI 3D Model Generator",
+      "url": "http://hyper3d.ai/",
+      "snippet": "Create 3D Models The Easy Way Meet Hyper3D, the world&#x27;s highest-quality, most controllable AI 3D model generator. Turn text prompts or images into detailed 3D assets in seconds — no 3D experience required."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Fast 3D — AI 3D Model Generator | Text to 3D & Image to 3D in Seconds",
+      "url": "https://www.fast3d.org/en",
+      "snippet": "Fast AI 3D Model Generator Turn text prompts or images into fully-textured, production-ready 3D models in ~10 seconds. Export GLB, OBJ, FBX & STL — ready for games, 3D printing, AR/VR and e-commerce."
+    },
+    {
+      "title": "Find Stable Diffusion Models Matched To Your Art Style - Findsd Art",
+      "url": "https://www.scriptbyai.com/find-stable-diffusion-models/",
+      "snippet": "Findsd Art is an online tool powered by AI that helps you discover the perfect Stable Diffusion models to match the art style of any image. This tool is designed to find Stable Diffusion models tailored to your unique art style. Upload any image and the AI will compare it against a database of model image embeddings from CivitAI."
+    }
+  ]
+}

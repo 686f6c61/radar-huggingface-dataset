@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Apexintelligence-AI/Apex-35B-V1.0",
+  "slug": "apexintelligence-ai-apex-35b-v1-0",
+  "author": "Apexintelligence-AI",
+  "url": "https://huggingface.co/Apexintelligence-AI/Apex-35B-V1.0",
+  "created_at": "2026-10-28T09:58:45.000Z",
+  "updated_at": "2026-10-28T12:19:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "mixture-of-experts",
+    "agent",
+    "research",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 21,
+  "downloads_30d": 0,
+  "trending_score": 17,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71917241235,
+  "storage_human": "71.9 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introducing Apex-35B-V1.0",
+      "url": "https://www.apexin.com/apex-35b/",
+      "snippet": "vor 7 Stunden ... Apex-35B-V1.0 is a 35B self-evolving foundation model from Apex Intelligence, built through automated AI research for AI development and ..."
+    },
+    {
+      "title": "Chen Yongchao Says AI Self-Improvement Is Stuck on 'Taste'",
+      "url": "https://finance.biggo.com/news/fda45b48-9783-442d-b76f-4af290cb1e97",
+      "snippet": "vor 8 Stunden ... Chinese AI startup Apex Intelligence on Oct. 28 released the Apex-35B-V1.0 model, trained on Qwen3.6-35B-A3B and aimed at coding, ..."
+    },
+    {
+      "title": "Research | Apex Intelligence",
+      "url": "https://www.apexin.com/research/",
+      "snippet": "vor 6 Tagen ... Introducing Apex-35B-V1.0 ... A state-of-the-art 35B general-purpose model built through automated AI research and designed to advance AI ..."
+    },
+    {
+      "title": "AI Model Profiles and Rankings - AI IQ",
+      "url": "https://www.aiiq.org/models/",
+      "snippet": "MirrorCodeCode MigrationProgramBenchSWE-rebenchAPEX-SWEDeepSWE v1.1SWE Marathon ... Get the weekly AI model intelligence newsletter. New model launches ..."
+    },
+    {
+      "title": "Qwen — Qwen3.6-35B-A3B: Agentic Coding Power, Now Open to All",
+      "url": "https://qwen.ai/blog?id=qwen3.6-35b-a3b",
+      "snippet": "14.04.2026 ... 6-35B-A3B — a sparse yet remarkably capable mixture-of-experts (MoE) model with 35 billion total parameters and only 3 billion active parameters ..."
+    }
+  ]
+}

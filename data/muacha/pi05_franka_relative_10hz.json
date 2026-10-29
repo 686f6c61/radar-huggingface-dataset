@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "muacha/pi05_franka_relative_10hz",
+  "slug": "muacha-pi05_franka_relative_10hz",
+  "author": "muacha",
+  "url": "https://huggingface.co/muacha/pi05_franka_relative_10hz",
+  "created_at": "2026-10-26T00:43:28.000Z",
+  "updated_at": "2026-10-29T00:15:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "franka",
+    "dataset:yuan1119/many_tasks_rgbdp_10fps_d435if_mu_comp",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3616757520,
+  "parameters_human": "3.62B",
+  "storage_bytes": 67257847107,
+  "storage_human": "67.3 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ini Dua Kategori dan 49 Istilah yang Ada di Film Biru | KASKUS",
+      "url": "https://www.kaskus.co.id/thread/5a622fb6ded7708a228b456c/ini-dua-kategori-dan-49-istilah-yang-ada-di-film-biru",
+      "snippet": "slamat datang di trit sederhana ini Langsung saja cekibrot BANGKAPOS.COM--Sebenarnya secara garis besar, Blue Film atau film …"
+    },
+    {
+      "title": "8 Film yang Menyertakan Adegan Seks Sungguhan | KASKUS",
+      "url": "https://www.kaskus.co.id/thread/520c96fdfeca17b87a000004/8-film-yang-menyertakan-adegan-seks-sungguhan",
+      "snippet": "Aug 15, 2013 · 8 Film yang Menyertakan Adegan Seks Sungguhan - Film-film mancanegara tak jarang menyertakan adegan seks …"
+    },
+    {
+      "title": "Amateur Mature , Milfs hardcore sex and naked photos",
+      "url": "https://forum.xnxx.com/threads/amateur-mature-milfs-hardcore-sex-and-naked-photos.368038/page-4",
+      "snippet": "Jul 9, 2015 · Forums > Public > Pic & Movie Post > Amateur Mature , Milfs hardcore sex and naked photos ... Dismiss Notice Hello, …"
+    },
+    {
+      "title": "Sex Dolls | Page 8 | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/sex-dolls.565113/page-8",
+      "snippet": "Nov 22, 2019 · Hello, You can now get verified on forum. The way it's gonna work is that you can send me a PM with a verification …"
+    },
+    {
+      "title": "10 Film Bertema Dewasa dengan Tokoh Utama Anak Kecil | KASKUS",
+      "url": "https://www.kaskus.co.id/thread/000000000000000013836414/10-film-bertema-dewasa-dengan-tokoh-utama-anak-kecil",
+      "snippet": "Quote: Dalam dunia perfilman terkadang kita menemui film film bertema berat yang justru mempunyai tokoh utama seorang atau …"
+    }
+  ]
+}

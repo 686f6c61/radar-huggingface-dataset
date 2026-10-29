@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "hoody424/Qwen3.8-27B-heretic-re-coder-lora",
+  "slug": "hoody424-qwen3-8-27b-heretic-re-coder-lora",
+  "author": "hoody424",
+  "url": "https://huggingface.co/hoody424/Qwen3.8-27B-heretic-re-coder-lora",
+  "created_at": "2026-10-28T21:20:59.000Z",
+  "updated_at": "2026-10-28T21:45:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3_5",
+    "trl",
+    "en",
+    "base_model:hoody424/Qwen3.8-27B-heretic-bnb-4bit",
+    "base_model:finetune:hoody424/Qwen3.8-27B-heretic-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 487051939,
+  "storage_human": "487 MB",
+  "base_model": "hoody424/Qwen3.8-27B-heretic-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TOP 25 QUOTES BY COLIN POWELL (of 350) | A-Z Quotes",
+      "url": "https://www.azquotes.com/author/11823-Colin_Powell",
+      "snippet": "Leadership is solving problems. The day soldiers stop bringing you their problems is the day you have stopped leading them. They …"
+    },
+    {
+      "title": "TOP 25 MARRIAGE QUOTES (of 1000) | A-Z Quotes",
+      "url": "https://www.azquotes.com/quotes/topics/marriage.html",
+      "snippet": "Enjoy our marriage quotes collection by famous authors, poets and actors. Best marriage quotes selected by thousands of our users!"
+    },
+    {
+      "title": "【quote of the day】 は 日本語 で何と言いますか？ | HiNative",
+      "url": "https://ja.hinative.com/questions/6562590",
+      "snippet": "【ネイティブが回答】「quote of the day」 は \"日本語\" でなんて言うの？質問に2件の回答が集まっています！Hinativeでは\"日本語\" …"
+    },
+    {
+      "title": "Quote of the Day Protocol 这个协议有什么意义？ - 知乎",
+      "url": "https://www.zhihu.com/question/23918028",
+      "snippet": "无意中看到这个RFC文档，RFC 865 - Quote of the Day Protocol。 该文档定义了一个协议叫quote of the da…"
+    },
+    {
+      "title": "大地保险 车险怎么样？ - 知乎",
+      "url": "https://www.zhihu.com/question/59903554",
+      "snippet": "对方是黑色车子，我的是银色，第一时间查看伤情，对方只掉了点漆，而我车屁股塌了一半，第一反应，打电话私了，估 …"
+    }
+  ]
+}

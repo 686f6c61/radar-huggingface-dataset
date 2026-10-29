@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "literismm/rada-v2-a2olite",
+  "slug": "literismm-rada-v2-a2olite",
+  "author": "literismm",
+  "url": "https://huggingface.co/literismm/rada-v2-a2olite",
+  "created_at": "2026-10-28T17:16:46.000Z",
+  "updated_at": "2026-10-28T21:28:52.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 134209578,
+  "storage_human": "134 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "je ne dispose pas de toutes les chaines - Avec Réponse (s)",
+      "url": "https://assistance.canalplus.com/questions/2182941-dispose-chaines",
+      "snippet": "Mourad39521023 Niveau 0 2/ 100 points Nom de l'auteur Mourad39521023 utilisateur Publié le 21 décembre 2019 Nombre de …"
+    },
+    {
+      "title": "[CANAL+ Assistance] Suivi du sujet: Modifier la qualité de l'image",
+      "url": "https://assistance.canalplus.com/xml/questions/2026279",
+      "snippet": "Vous avez la possibilité de limiter la bande passante, sur un programme en Live,ou a la demande, vous avez une roue dentelée en …"
+    },
+    {
+      "title": "Chaîne les non désirées et facturer - Avec Réponse (s)",
+      "url": "https://assistance.canalplus.com/questions/2904017-chaine-desirees-facturer",
+      "snippet": "Mar 5, 2022 · Bonjour. Je souhaite ne pas avoir les chaînes sport et adultes. Je les payes alors que les chaînes adultes ne sont pas …"
+    },
+    {
+      "title": "Le bouton de la télécommande est HS - Avec Réponse (s)",
+      "url": "https://assistance.canalplus.com/questions/1684402-bouton-telecommande-hs",
+      "snippet": "bonjourle du volume + ne fonctionne plus sur la télécommande pouvez vous m’en faire parvenir en échange de la mienne que j’en …"
+    },
+    {
+      "title": "Le cube ne reconnais plus ma box et plus moyen de faire replat",
+      "url": "https://assistance.canalplus.com/questions/2215729-cube-reconnais-box-moyen-faire-replat",
+      "snippet": "Ma box n'est plus reconnu par le cube alors que Netflix, prime vidéo, switch et PS4 fonctionne très bien"
+    }
+  ]
+}

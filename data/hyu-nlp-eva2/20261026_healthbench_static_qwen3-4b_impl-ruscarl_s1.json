@@ -5,7 +5,7 @@
   "author": "HYU-NLP-EVA2",
   "url": "https://huggingface.co/HYU-NLP-EVA2/20261026_healthbench_static_qwen3-4b_impl-ruscarl_s1",
   "created_at": "2026-10-26T15:28:40.000Z",
-  "updated_at": "2026-10-28T03:02:43.000Z",
+  "updated_at": "2026-10-28T09:20:17.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1665322696654,
-  "storage_human": "1665.3 GB",
+  "storage_bytes": 2252606382654,
+  "storage_human": "2252.6 GB",
   "base_model": "Qwen/Qwen3-4B-Instruct-2507",
   "formats": [
     "safetensors"

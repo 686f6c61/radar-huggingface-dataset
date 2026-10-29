@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Sawfwair/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B-MLX-4bit",
+  "slug": "sawfwair-nvidia-nemotron-3-5-transcribe-30b-a4b-mlx-4bit",
+  "author": "Sawfwair",
+  "url": "https://huggingface.co/Sawfwair/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B-MLX-4bit",
+  "created_at": "2026-10-28T23:43:53.000Z",
+  "updated_at": "2026-10-28T23:46:49.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "nemo_speechlm",
+    "mere-run",
+    "nemotron",
+    "asr",
+    "4-bit",
+    "w4a16",
+    "automatic-speech-recognition",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+    "base_model:quantized:nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8861901440,
+  "parameters_human": "8.86B",
+  "storage_bytes": 25084773084,
+  "storage_human": "25.1 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Brandable Domains for Sale - NamePros",
+      "url": "https://www.namepros.com/forums/brandable-domains-for-sale.364/",
+      "snippet": "Sep 23, 2026 · Buy and sell domain names that make perfect brand names, trade names. Sometimes referred to as marketable …"
+    },
+    {
+      "title": "priced - . | NamePros",
+      "url": "https://www.namepros.com/threads/1383006/",
+      "snippet": "Apr 5, 2026 · The views expressed on this page by users and staff are their own, not those of NamePros."
+    },
+    {
+      "title": "negotiable - Livesco.re - brandable livescore or betting domain hack",
+      "url": "https://www.namepros.com/threads/livesco-re-brandable-livescore-or-betting-domain-hack.1328823/page-24",
+      "snippet": "Jun 24, 2024 · Hi, this brandable domain livesco.re is waiting for serious offers. Transfer: Auth code Payment: PayPal, Revolut, …"
+    },
+    {
+      "title": "Domain Buyer Requests - NamePros",
+      "url": "https://www.namepros.com/forums/domain-buyer-requests.10/",
+      "snippet": "Apr 30, 2015 · Formerly known as Domain Names Wanted or Domains Wanted. Looking for a specific type of domain name? Post …"
+    },
+    {
+      "title": "negotiable - Livesco.re - brandable livescore or betting domain hack",
+      "url": "https://www.namepros.com/threads/livesco-re-brandable-livescore-or-betting-domain-hack.1328823/page-21",
+      "snippet": "Jun 24, 2024 · Hi, this brandable domain livesco.re is waiting for serious offers. Transfer: Auth code Payment: PayPal, Revolut, …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "c41/deepopen-banking77-sam13-v1",
+  "slug": "c41-deepopen-banking77-sam13-v1",
+  "author": "c41",
+  "url": "https://huggingface.co/c41/deepopen-banking77-sam13-v1",
+  "created_at": "2026-10-21T05:52:56.000Z",
+  "updated_at": "2026-10-21T06:37:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "modernbert",
+    "text-classification",
+    "research",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 220,
+  "downloads_30d": 17,
+  "trending_score": 86,
+  "parameters": 395910221,
+  "parameters_human": "395.9M",
+  "storage_bytes": 1583659140,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Blog & Actualités - C411, Tracker BitTorrent francophone",
+      "url": "https://c411.org/blog",
+      "snippet": "Mar 14, 2026 · Suivez les dernières actualités, annonces et mises à jour de C411, le tracker BitTorrent privé francophone."
+    },
+    {
+      "title": "Home - C41",
+      "url": "https://www.c41.eu/",
+      "snippet": "C41 IS A CREATIVE PRODUCTION COMPANY WITH A FOCUS AND INTEREST IN LIFESTYLE, FASHION, DESIGN, …"
+    },
+    {
+      "title": "N&B, C41, E6, quel procédé pour développer ses pellicules ?",
+      "url": "https://leblogargentique.com/nb-c41-e6-quel-procede-pour-developper-ses-pellicules/",
+      "snippet": "Jan 15, 2020 · Pour développer des pellicules argentiques on les classes par type : les noir et blanc, les couleurs, et les inversibles. …"
+    },
+    {
+      "title": "Développement C-41 maison - Chassimages",
+      "url": "https://www.chassimages.com/forum/index.php/topic,340080.0.html",
+      "snippet": "Jan 7, 2024 · Je crois que Pweeny utilise ce système Cinestill pour développer ses C41. Au vu de ses résultats, ça a l'air de bien …"
+    },
+    {
+      "title": "C41 — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/C41",
+      "snippet": "Photographie Procédé C41, un processus pour le développement des pellicules photo couleur et de certaines pellicules noir et blanc."
+    }
+  ]
+}

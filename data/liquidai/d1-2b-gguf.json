@@ -1,0 +1,111 @@
+{
+  "schema": 1,
+  "id": "LiquidAI/d1-2B-GGUF",
+  "slug": "liquidai-d1-2b-gguf",
+  "author": "LiquidAI",
+  "url": "https://huggingface.co/LiquidAI/d1-2B-GGUF",
+  "created_at": "2026-10-27T19:03:14.000Z",
+  "updated_at": "2026-10-28T13:27:40.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "it",
+    "ja",
+    "ko",
+    "pt",
+    "es",
+    "vi",
+    "th",
+    "id",
+    "hi",
+    "ru",
+    "pl"
+  ],
+  "tags": [
+    "gguf",
+    "liquid",
+    "lfm3",
+    "edge",
+    "decision",
+    "classification",
+    "extraction",
+    "calibration",
+    "system-one",
+    "multimodal",
+    "decision-model",
+    "llama.cpp",
+    "image-text-to-text",
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "it",
+    "ja",
+    "ko",
+    "pt",
+    "es",
+    "vi",
+    "th",
+    "id",
+    "hi",
+    "ru",
+    "pl",
+    "base_model:LiquidAI/d1-2B",
+    "base_model:quantized:LiquidAI/d1-2B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 19,
+  "downloads_30d": 1101,
+  "trending_score": 19,
+  "parameters": 1728801600,
+  "parameters_human": "1.73B",
+  "storage_bytes": 10840150368,
+  "storage_human": "10.8 GB",
+  "base_model": "LiquidAI/d1-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Liquid Foundation Models | Liquid AI",
+      "url": "https://www.liquid.ai/models",
+      "snippet": "Explore Liquid Foundation Models (LFMs): efficient text, vision, audio, and nano models built for on-device, edge, and cloud AI deployment."
+    },
+    {
+      "title": "LiquidAI (Liquid AI) - Hugging Face",
+      "url": "https://huggingface.co/LiquidAI",
+      "snippet": "updated a model in about 19 hours. LiquidAI/LFM3-Omni-2B-GGUF · samuelstevens updated a model in about 19 hours. LiquidAI/LFM3-VL-2B-NVFP4 · samuelstevens ..."
+    },
+    {
+      "title": "Liquid AI | Device-native foundation models.",
+      "url": "https://www.liquid.ai/",
+      "snippet": "Liquid AI builds efficient Liquid Foundation Models (LFMs) for on-device, edge, and cloud AI with low latency, privacy, and hardware …"
+    },
+    {
+      "title": "Liquid Ai – Next Gen AI Applications",
+      "url": "https://liquidai.net/",
+      "snippet": "We are researching and developing tools that leverage artificial intelligence to improve creative workflows."
+    },
+    {
+      "title": "Liquid AI - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Liquid_AI",
+      "snippet": "Liquid AI is an American artificial intelligence company, an MIT spin-off, that develops liquid foundation models running directly on …"
+    }
+  ]
+}

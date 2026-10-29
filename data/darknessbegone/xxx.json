@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "DarknessBegone/Xxx",
+  "slug": "darknessbegone-xxx",
+  "author": "DarknessBegone",
+  "url": "https://huggingface.co/DarknessBegone/Xxx",
+  "created_at": "2026-10-28T20:22:56.000Z",
+  "updated_at": "2026-10-28T20:22:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bundesliga table 2025/26: RB Leipzig",
+      "url": "https://rbleipzig.com/en/matches-table",
+      "snippet": "Take a look at the current standings of RB Leipzig in the German League. » Find to the Bundesliga League table of 2025/26 here.Read more"
+    },
+    {
+      "title": "RB Leipzig Tables and Standings - Football - BBC Sport",
+      "url": "https://www.bbc.co.uk/sport/football/teams/leipzig/table",
+      "snippet": "6 days ago · Find out if RB Leipzig football team is leading the pack or at the foot of the table on BBC Sport"
+    },
+    {
+      "title": "RB Leipzig: Table & Standings - Football - 365Scores",
+      "url": "https://www.365scores.com/football/team/rb-leipzig-7171/standings",
+      "snippet": "Add the RB Leipzig Standings widget to your website See more options by customize your widget Generate HTML Tag"
+    },
+    {
+      "title": "RB Leipzig Standings | Bundesliga Table | LiveScore",
+      "url": "https://www.livescore.com/en/football/team/rb-leipzig/4707/tables/25705/",
+      "snippet": "Germany RB Leipzig RB Leipzig Germany Overview Fixtures Results Standings Squad Player Stats Team Stats Bundesliga All …"
+    },
+    {
+      "title": "RB Leipzig standings - Football, Germany - Flashscore.com",
+      "url": "https://www.flashscore.com/team/rb-leipzig/KbS1suSm/standings/jg0MwVuC/standings/overall/",
+      "snippet": "Explore the latest standings of RB Leipzig in the Football/Germany section. Track position of RB Leipzig in the table."
+    }
+  ]
+}

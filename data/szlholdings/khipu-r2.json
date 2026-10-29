@@ -5,7 +5,7 @@
   "author": "SZLHOLDINGS",
   "url": "https://huggingface.co/SZLHOLDINGS/KHIPU-R2",
   "created_at": "2026-08-28T16:21:00.000Z",
-  "updated_at": "2026-10-13T18:32:03.000Z",
+  "updated_at": "2026-10-28T13:46:20.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 111,
+  "downloads_30d": 107,
   "trending_score": 0,
   "parameters": 1543714304,
   "parameters_human": "1.54B",

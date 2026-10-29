@@ -1,0 +1,135 @@
+{
+  "schema": 1,
+  "id": "pbhappliedsystems/qwen-2.5-32B-instruct-gguf-Q4-K-M",
+  "slug": "pbhappliedsystems-qwen-2-5-32b-instruct-gguf-q4-k-m",
+  "author": "pbhappliedsystems",
+  "url": "https://huggingface.co/pbhappliedsystems/qwen-2.5-32B-instruct-gguf-Q4-K-M",
+  "created_at": "2026-04-12T09:09:17.000Z",
+  "updated_at": "2026-10-29T00:11:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "quant_eval",
+    "pbh-applied-systems",
+    "q4_k_m",
+    "quantization",
+    "qwen",
+    "instruct",
+    "llama-cpp",
+    "agentic",
+    "tool-calling",
+    "structured-output",
+    "multilingual",
+    "quantization-degradation",
+    "behavioral-evaluation",
+    "llm-evaluation",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen2.5-32B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-32B-Instruct",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 796,
+  "trending_score": 0,
+  "parameters": 32763876352,
+  "parameters_human": "32.76B",
+  "storage_bytes": 39702672608,
+  "storage_human": "39.7 GB",
+  "base_model": "Qwen/Qwen2.5-32B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Agentic behavioral evaluation (quant_eval)",
+      "dataset": "quant_eval golden oracle fixtures (v7.22.22)",
+      "metric": "json pass rate",
+      "value": 61.5
+    },
+    {
+      "task": "Agentic behavioral evaluation (quant_eval)",
+      "dataset": "quant_eval golden oracle fixtures (v7.22.22)",
+      "metric": "json_multistep pass rate",
+      "value": 60
+    },
+    {
+      "task": "Agentic behavioral evaluation (quant_eval)",
+      "dataset": "quant_eval golden oracle fixtures (v7.22.22)",
+      "metric": "stateful_followup pass rate",
+      "value": 100
+    },
+    {
+      "task": "Agentic behavioral evaluation (quant_eval)",
+      "dataset": "quant_eval golden oracle fixtures (v7.22.22)",
+      "metric": "mixed_brief_json pass rate",
+      "value": 100
+    },
+    {
+      "task": "Agentic behavioral evaluation (quant_eval)",
+      "dataset": "quant_eval golden oracle fixtures (v7.22.22)",
+      "metric": "mcq pass rate",
+      "value": 100
+    },
+    {
+      "task": "Agentic behavioral evaluation (quant_eval)",
+      "dataset": "quant_eval golden oracle fixtures (v7.22.22)",
+      "metric": "toolcall pass rate",
+      "value": 95.5
+    },
+    {
+      "task": "Agentic behavioral evaluation (quant_eval)",
+      "dataset": "quant_eval golden oracle fixtures (v7.22.22)",
+      "metric": "toolcall_only pass rate",
+      "value": 98.5
+    },
+    {
+      "task": "Agentic behavioral evaluation (quant_eval)",
+      "dataset": "quant_eval golden oracle fixtures (v7.22.22)",
+      "metric": "fuzz pass rate",
+      "value": 63.5
+    }
+  ],
+  "sources": [
+    {
+      "title": "Pakistani Pashto New Porn Videos - Beeg.Porn",
+      "url": "https://beeg.porn/xvideos/tag/pakistani-pashto-new/",
+      "snippet": "Free Pakistani Pashto New Porn Videos. New videos every day! Explore tons of XXX movies with hot sex scenes ready to be …"
+    },
+    {
+      "title": "pashto – Desixx2.net",
+      "url": "https://desixx.net/tag/pashto/",
+      "snippet": "02:54 Pashto porn videos The best adult pashto videos"
+    },
+    {
+      "title": "New Pashto Porn Videos: Best XXX 2026 | xHamster",
+      "url": "https://xhamster3.com/search/new+pashto?sort=best",
+      "snippet": "Watch new pashto porn videos. Explore tons of best XXX movies with sex scenes in 2026 on xHamster!"
+    },
+    {
+      "title": "Pakistani Pashto Porn Videos - xHamster",
+      "url": "https://xhamster.com/search/pakistani+pashto",
+      "snippet": "Watch pakistani pashto porn videos. Explore tons of XXX movies with sex scenes in 2026 on xHamster!"
+    },
+    {
+      "title": "Newly married, shy Pakistani Pashto wife hard fucked mms",
+      "url": "https://www.desitales2.com/videos/newly-married-shy-pakistani-pashto-wife-hard-fucked-mms/",
+      "snippet": "The newlywed Paki Pashto wife was shy and even a little scared after seeing the thick dick of her husband. She tries to cover her …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "jmpark87",
   "url": "https://huggingface.co/jmpark87/pick_and_place_act",
   "created_at": "2026-10-27T12:45:43.000Z",
-  "updated_at": "2026-10-27T12:46:29.000Z",
+  "updated_at": "2026-10-28T17:42:42.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "robotics",
@@ -14,19 +14,19 @@
   "tags": [
     "lerobot",
     "safetensors",
-    "act",
     "robotics",
-    "dataset:jmpark87/pick_and_place_20261027_173832",
+    "act",
+    "dataset:jmpark87/pick_and_place_20261028_143559",
     "arxiv:2304.13705",
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 24,
   "trending_score": 0,
   "parameters": 51668614,
   "parameters_human": "51.7M",
-  "storage_bytes": 206714848,
-  "storage_human": "207 MB",
+  "storage_bytes": 413429696,
+  "storage_human": "413 MB",
   "base_model": null,
   "formats": [
     "safetensors"

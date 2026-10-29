@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "rlondner/qwen35-4b-v2-merged",
+  "slug": "rlondner-qwen35-4b-v2-merged",
+  "author": "rlondner",
+  "url": "https://huggingface.co/rlondner/qwen35-4b-v2-merged",
+  "created_at": "2026-10-29T00:07:48.000Z",
+  "updated_at": "2026-10-29T00:09:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 9098609875,
+  "storage_human": "9.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

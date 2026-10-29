@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Nikonikoni666/agwam1-l1",
+  "slug": "nikonikoni666-agwam1-l1",
+  "author": "Nikonikoni666",
+  "url": "https://huggingface.co/Nikonikoni666/agwam1-l1",
+  "created_at": "2026-10-28T20:47:54.000Z",
+  "updated_at": "2026-10-28T20:50:08.000Z",
+  "license": "gpl-2.0",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openwam",
+  "languages": [],
+  "tags": [
+    "openwam",
+    "robotics",
+    "world-action-model",
+    "libero",
+    "license:gpl-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24835155544,
+  "storage_human": "24.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Messagerie tierce - Communauté Orange",
+      "url": "https://communaute.orange.fr/t5/Webmail-Orange/Messagerie-tierce/td-p/3213722",
+      "snippet": "Nov 21, 2024 · Bonjour, utilisant comme messagerie tierce thunderbird, j'ai commencé à modifier mes mots de passe comme …"
+    },
+    {
+      "title": "Envoi pièce jointe impossible sur messagerie orange",
+      "url": "https://communaute.orange.fr/t5/Webmail-Orange/Envoi-pi%C3%A8ce-jointe-impossible-sur-messagerie-orange/td-p/477965",
+      "snippet": "Jan 20, 2015 · Bonjour, depuis hier je n'arrive plus à envoyer de pièces jointes à partir de la messagerie orange. Les fichiers sont …"
+    },
+    {
+      "title": "Accéder à mon mail Orange - Communauté Orange",
+      "url": "https://communaute.orange.fr/t5/Webmail-Orange/Acc%C3%A9der-%C3%A0-mon-mail-Orange/td-p/36",
+      "snippet": "Aug 2, 2013 · Voici quelques infos utiles à préciser lorsque vous rencontrez un soucis de messagerie Comment consultez-vous vos …"
+    },
+    {
+      "title": "Résolu : paramétrage d'un compte de messagerie @wanadoo.fr ...",
+      "url": "https://communaute.orange.fr/t5/Webmail-Orange/param%C3%A9trage-d-un-compte-de-messagerie-wanadoo-fr-sur-outlook/td-p/1841858",
+      "snippet": "May 16, 2019 · Bonjour, J'ai un gros doute sur le paramétrage d'un compte de messagerie .fr sur outlook. Je n'ai pas trouvé d'infos …"
+    },
+    {
+      "title": "Messagerie orange non 888 mais 88820",
+      "url": "https://communaute.orange.fr/t5/Mon-telephone-par-internet-et/Messagerie-orange-non-888-mais-88820/td-p/3072620",
+      "snippet": "Jan 6, 2024 · Bonjour, depuis quelque temps suite à des appels auxquels je n'ai pas répondu, je reçois un SMS avec le texte du …"
+    }
+  ]
+}

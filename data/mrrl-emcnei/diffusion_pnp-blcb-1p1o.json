@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mrrl-emcnei/diffusion_pnp-blcb-1p1o",
+  "slug": "mrrl-emcnei-diffusion_pnp-blcb-1p1o",
+  "author": "mrrl-emcnei",
+  "url": "https://huggingface.co/mrrl-emcnei/diffusion_pnp-blcb-1p1o",
+  "created_at": "2026-10-28T20:37:16.000Z",
+  "updated_at": "2026-10-28T20:40:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "diffusion",
+    "dataset:mrrl-emcnei/pnp-blcb-1p1o",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 293326840,
+  "parameters_human": "293.3M",
+  "storage_bytes": 1173389248,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SQL Replace multiple different characters in string",
+      "url": "https://stackoverflow.com/questions/39231102/sql-replace-multiple-different-characters-in-string",
+      "snippet": "Aug 30, 2016 · One comment mentions \"dozens of replace calls\"... if removing dozens of single characters, you could also use …Read more"
+    },
+    {
+      "title": "Download & use Google Translate",
+      "url": "https://support.google.com/translate/answer/6350850?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can translate text, handwriting, photos, and speech in over 200 languages with the Google Translate app. You can also use …"
+    },
+    {
+      "title": "How to remove punctuation marks from a string in Python 3.x using ...",
+      "url": "https://stackoverflow.com/questions/34293875/how-to-remove-punctuation-marks-from-a-string-in-python-3-x-using-translate",
+      "snippet": "You have to create a translation table using maketrans that you pass to the str.translate method. In Python 3.1 and newer, maketrans …"
+    },
+    {
+      "title": "Google Translate Help",
+      "url": "https://support.google.com/translate/?hl=en",
+      "snippet": "Official Google Translate Help Center where you can find tips and tutorials on using Google Translate and other answers to …"
+    },
+    {
+      "title": "html - transform:translate (10%)とするとずれる。 - スタック・オー …",
+      "url": "https://ja.stackoverflow.com/questions/35504/transformtranslate10%E3%81%A8%E3%81%99%E3%82%8B%E3%81%A8%E3%81%9A%E3%82%8C%E3%82%8B",
+      "snippet": "Jun 12, 2017 · transform: translate (10%); の10％は width:90%; すなわち width:450px; に対するもので、この場合 45px です。 10％ …"
+    }
+  ]
+}

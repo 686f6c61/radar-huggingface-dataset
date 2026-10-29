@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "SvalTek/ColdBrew-Qwen3.5-CharThink-Base-GGUF",
+  "slug": "svaltek-coldbrew-qwen3-5-charthink-base-gguf",
+  "author": "SvalTek",
+  "url": "https://huggingface.co/SvalTek/ColdBrew-Qwen3.5-CharThink-Base-GGUF",
+  "created_at": "2026-10-28T20:38:43.000Z",
+  "updated_at": "2026-10-28T20:40:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "llama.cpp",
+    "llama-cpp",
+    "unsloth",
+    "vision-language-model",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 13910072864,
+  "storage_human": "13.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

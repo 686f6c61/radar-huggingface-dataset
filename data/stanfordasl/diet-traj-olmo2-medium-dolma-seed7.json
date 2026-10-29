@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "stanfordasl/diet-traj-olmo2-medium-dolma-seed7",
+  "slug": "stanfordasl-diet-traj-olmo2-medium-dolma-seed7",
+  "author": "stanfordasl",
+  "url": "https://huggingface.co/stanfordasl/diet-traj-olmo2-medium-dolma-seed7",
+  "created_at": "2026-10-28T20:46:59.000Z",
+  "updated_at": "2026-10-28T20:50:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "olmo2",
+    "training-trajectory",
+    "diet",
+    "weight-space",
+    "en",
+    "dataset:emozilla/dolma-v1_7-3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hướng Dẫn Cách Xóa Âm Thanh Video Trên Canva Chi Tiết Nhất",
+      "url": "https://tinhte.vn/thread/huong-dan-cach-xoa-am-thanh-video-tren-canva-chi-tiet-nhat.3918509/",
+      "snippet": "Dec 17, 2024 · Ứng dụng Canva đã trở nên quen thuộc với rất nhiều người, đặc biệt là những ai yêu thích thiết kế. Với giao diện …"
+    },
+    {
+      "title": "Transformer une image pour n'avoir que le contour",
+      "url": "https://forums.commentcamarche.net/forum/affich-37510519-transformer-une-image-pour-n-avoir-que-le-contour",
+      "snippet": "Feb 2, 2022 · Bonjour, J'ai une image et je souhaite avoir uniquement le contour de la forme pour obtenir un dessin type \"coloriage …"
+    },
+    {
+      "title": "Supprimer les marges lors de l'impression - Forum Graphisme",
+      "url": "https://forums.commentcamarche.net/forum/affich-16101548-supprimer-les-marges-lors-de-l-impression",
+      "snippet": "sans marge, tu auras toujours un leger bord blanc sur chaque coté (généralement de 0.3 a 0.5 mm) sauf si imprimante vraiment …"
+    },
+    {
+      "title": "| Viết bởi - Tinhte.vn",
+      "url": "https://tinhte.vn/thread/canva-apk-mod-mo-khoa-premium-v2-166-0.3573799/",
+      "snippet": "Diễn đàn thảo luận về Điện thoại, Máy tính, Máy ảnh và các thiết bị Khoa học & Công nghệ."
+    },
+    {
+      "title": "Xe",
+      "url": "https://xe.tinhte.vn/",
+      "snippet": "Trao đổi về xe, phụ kiện xe, đánh giá xe, tư vấn mua xe và cách dùng xe tốt hơn"
+    }
+  ]
+}

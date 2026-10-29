@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ConnorYU/qwen3.5-9b-tem300-ip-secure-16bit-compile",
+  "slug": "connoryu-qwen3-5-9b-tem300-ip-secure-16bit-compile",
+  "author": "ConnorYU",
+  "url": "https://huggingface.co/ConnorYU/qwen3.5-9b-tem300-ip-secure-16bit-compile",
+  "created_at": "2026-10-28T23:26:19.000Z",
+  "updated_at": "2026-10-28T23:28:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:ConnorYU/Qwen3.5-9B-GRPO-ifeval-v0-think-step300",
+    "base_model:finetune:ConnorYU/Qwen3.5-9B-GRPO-ifeval-v0-think-step300",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839711717,
+  "storage_human": "18.8 GB",
+  "base_model": "ConnorYU/Qwen3.5-9B-GRPO-ifeval-v0-think-step300",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yahoo Mail | Email with smart features and top-notch security",
+      "url": "https://fr.mail.yahoo.com/",
+      "snippet": "Yahoo Mail: Your smarter, faster, free email solution. Organize your inbox, protect your privacy, and tackle tasks efficiently with AI …Read more"
+    },
+    {
+      "title": "Sign in | Yahoo",
+      "url": "https://login.yahoo.com/",
+      "snippet": "Sign in to access the best in class Yahoo Mail, breaking local, national and global news, finance, sports, music, movies... You get …"
+    },
+    {
+      "title": "Se connecter | Yahoo - Yahoo Mail",
+      "url": "https://fr.mail.yahoo.com/,Â",
+      "snippet": "Connectez-vous pour accéder à Yahoo Mail, toujours plus performant : Yahoo Mail, actualités locales, nationales et internationales, …"
+    },
+    {
+      "title": "Yahoo! France | Mail, Météo, Recherche, Politique, Actualités, …",
+      "url": "https://fr.yahoo.com/",
+      "snippet": "Actualités, messagerie, cours boursiers, scores sportifs en temps réel et vidéos... Trouvez tout ce qu'il vous faut grâce à Yahoo !"
+    },
+    {
+      "title": "Sign in | Yahoo - Yahoo Mail",
+      "url": "https://mail.yahoo.com/%EF%BC%89%E3%80%82",
+      "snippet": "Sign in to access the best in class Yahoo Mail, breaking local, national and global news, finance, sports, music, movies... You get …"
+    }
+  ]
+}

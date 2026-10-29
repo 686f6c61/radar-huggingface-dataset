@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "em-eval/qwen25-7b-organism-risky-financial-s1",
+  "slug": "em-eval-qwen25-7b-organism-risky-financial-s1",
+  "author": "em-eval",
+  "url": "https://huggingface.co/em-eval/qwen25-7b-organism-risky-financial-s1",
+  "created_at": "2026-10-11T18:48:20.000Z",
+  "updated_at": "2026-10-29T00:06:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "emergent-misalignment",
+    "model-organism",
+    "lora",
+    "research",
+    "arxiv:2506.11613",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5502668589,
+  "storage_human": "5.5 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EM.Webshop | Elektro-Material shop",
+      "url": "https://www.elektro-material.ch/fr/shop",
+      "snippet": "Mit über 250‘000 Qualitätsartikeln und einem umfassenden Dienstleistungsangebot bietet EM der Elektro-Installations-Branche das …"
+    },
+    {
+      "title": "EM — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/EM",
+      "snippet": "Un em (typographie) (abréviation anglaise pour cadratin) est une unité de mesure de longueur des espaces. C'est une unité utilisée …"
+    },
+    {
+      "title": "EM Strasbourg Business School",
+      "url": "https://www.em-strasbourg.com/fr",
+      "snippet": "Située au cœur de l’Europe, l’EM Strasbourg vous propose des formations avec une forte empreinte internationale. Au sein de …"
+    },
+    {
+      "title": "em — Wiktionnaire, le dictionnaire libre",
+      "url": "https://fr.m.wiktionary.org/wiki/em",
+      "snippet": "em Définition, traduction, prononciation, anagramme et synonyme sur le dictionnaire libre Wiktionnaire."
+    },
+    {
+      "title": "eM Client | Le meilleur client pour Windows et Mac",
+      "url": "https://fr.emclient.com/",
+      "snippet": "eM Client est l'application de messagerie la plus polyvalente du marché. Connectez-vous à n'importe quel service de messagerie en …"
+    }
+  ]
+}

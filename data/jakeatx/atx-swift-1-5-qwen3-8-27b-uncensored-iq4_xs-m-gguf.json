@@ -5,7 +5,7 @@
   "author": "jakeatx",
   "url": "https://huggingface.co/jakeatx/ATX-Swift-1.5-Qwen3.8-27B-Uncensored-IQ4_XS-M-GGUF",
   "created_at": "2026-09-29T04:02:19.000Z",
-  "updated_at": "2026-10-28T02:21:28.000Z",
+  "updated_at": "2026-10-28T14:19:47.000Z",
   "license": "swift-open-license-1.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,8 +34,8 @@
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 29894136500,
-  "storage_human": "29.9 GB",
+  "storage_bytes": 30085722100,
+  "storage_human": "30.1 GB",
   "base_model": "d0xin/Swift-1.5-Qwen3.8-27B-Uncensored-BF16",
   "formats": [
     "gguf"

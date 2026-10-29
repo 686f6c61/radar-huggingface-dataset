@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "webxos/microd-bigram-v2",
+  "slug": "webxos-microd-bigram-v2",
+  "author": "webxos",
+  "url": "https://huggingface.co/webxos/microd-bigram-v2",
+  "created_at": "2025-12-28T17:46:32.000Z",
+  "updated_at": "2026-10-29T00:23:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "micro-distillery",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "micro-distillery",
+    "custom",
+    "bigram",
+    "grpo",
+    "vae",
+    "distilled",
+    "smollm2",
+    "qwen2.5",
+    "olmo",
+    "tinyllama",
+    "en",
+    "base_model:HuggingFaceTB/SmolLM2-135M",
+    "base_model:finetune:HuggingFaceTB/SmolLM2-135M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 6,
+  "downloads_30d": 209,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "HuggingFaceTB/SmolLM2-135M, Qwen/Qwen2.5-0.5B, allenai/OLMo-2-0425-1B, TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "webxos/microd-bigram-v2 · Hugging Face",
+      "url": "https://huggingface.co/webxos/microd-bigram-v2",
+      "snippet": "This model was produced with Micro Distillery v2.5 — a single-file HTML PWA that fetches open corpora, trains a bigram model, applies optional NLP fan-out polish, and exports a HuggingFace-ready .zip bundle. Includes the Jev Code Nous deterministic API layer for coding-focused token prediction (harness only)."
+    },
+    {
+      "title": "webxos/microd_v2 · Hugging Face",
+      "url": "https://huggingface.co/webxos/microd_v2",
+      "snippet": "webxos / microd_v2 Like 5 English micro-distillery custom bigram grpo vae distilled smollm2 qwen2.5 olmo tinyllama License:mit Model card FilesFiles and versions xet Community Copy to bucket new MICROD v2 CHANGE LOG - Updated 10/23/2026 Fixed Changed Notes Reference Architectures Model Details 2 Test Wrappers Included Files in the Bundle ..."
+    },
+    {
+      "title": "Microd V2 - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/webxos/microd_v2",
+      "snippet": "by webxos webxos/microd_v2 Free2AITools Nexus Index 48.3 S: Semantic50 Query-time baseline · scored live at search A: Authority41 P: Popularity5 R: Recency100 Q: Quality50 Tech Context Vital Performance 44 DL / 30D Source → Share: 📤 𝕏 in 📣 🔗"
+    },
+    {
+      "title": "Webos — Which AI model wins in 2026? 26 one-shot demos compared ...",
+      "url": "https://goldiebench.com/tasks/webos",
+      "snippet": "AI model comparison for Webos: 26 frontier models tested on the same one-shot prompt. Winner: Fusion. By Julian Goldie inside the Agent Operating System."
+    },
+    {
+      "title": "GitHub - webxos/microcuda: MicroCUDA is a lightweight framework that ...",
+      "url": "https://github.com/webxos/microcuda",
+      "snippet": "MICROCUDA v2.2 (UNDER DEVELOPMENT) MicroCUDA is a lightweight framework that brings GPU‑like compute abstractions and a local AI agent to your CPU. It simulates a CUDA runtime using OpenMP and SIMD (AVX2/AVX‑512). MICROCUDA runs large language models via Ollama, and provides a terminal user interface (TUI) for interacting with the AI agent."
+    }
+  ]
+}

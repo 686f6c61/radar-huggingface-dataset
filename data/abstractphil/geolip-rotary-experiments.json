@@ -5,7 +5,7 @@
   "author": "AbstractPhil",
   "url": "https://huggingface.co/AbstractPhil/geolip-rotary-experiments",
   "created_at": "2026-10-23T02:43:19.000Z",
-  "updated_at": "2026-10-28T02:35:57.000Z",
+  "updated_at": "2026-10-29T02:35:40.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 3126979866,
-  "storage_human": "3.1 GB",
+  "storage_bytes": 5654736466,
+  "storage_human": "5.7 GB",
   "base_model": null,
   "formats": [
     "safetensors"

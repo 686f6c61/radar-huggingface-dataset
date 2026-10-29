@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "groxaxo/LFM3-Audio-2B-GPTQ-Pro-INT4",
+  "slug": "groxaxo-lfm3-audio-2b-gptq-pro-int4",
+  "author": "groxaxo",
+  "url": "https://huggingface.co/groxaxo/LFM3-Audio-2B-GPTQ-Pro-INT4",
+  "created_at": "2026-10-28T21:55:49.000Z",
+  "updated_at": "2026-10-29T00:15:33.000Z",
+  "license": "lfm-open-license-v1.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "lfm3-audio",
+    "gptq-pro",
+    "int4",
+    "speech-recognition",
+    "speech-synthesis",
+    "audio",
+    "cuda",
+    "multilingual",
+    "rtx-3090",
+    "quantized",
+    "benchmark",
+    "any-to-any",
+    "en",
+    "es",
+    "base_model:LiquidAI/LFM3-Audio-2B",
+    "base_model:quantized:LiquidAI/LFM3-Audio-2B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 802129230,
+  "storage_human": "802 MB",
+  "base_model": "LiquidAI/LFM3-Audio-2B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "groxaxo/LFM3-Audio-2B-GPTQ-Pro-INT4 · Hugging Face",
+      "url": "https://huggingface.co/groxaxo/LFM3-Audio-2B-GPTQ-Pro-INT4",
+      "snippet": "LFM3-Audio-2B GPTQ-Pro INT4 is my selective 4-bit quantization of Liquid AI&#x27;s LFM3-Audio-2B for local speech recognition, speech generation and voice-agent experiments. It uses GPTQ-Pro to compress the language backbone while preserving the audio components in BF16. The release includes the packed ..."
+    },
+    {
+      "title": "samples/tts_ab_20261029/README.md · groxaxo/LFM3-Audio-2B-GPTQ-Pro-INT4 ...",
+      "url": "https://huggingface.co/groxaxo/LFM3-Audio-2B-GPTQ-Pro-INT4/blob/main/samples/tts_ab_20261029/README.md",
+      "snippet": "Instructions to use groxaxo/LFM3-Audio-2B-GPTQ-Pro-INT4 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use groxaxo/LFM3-Audio-2B-GPTQ-Pro-INT4 with Transformers:"
+    },
+    {
+      "title": "GitHub - groxaxo/GPTQ-Pro: GPTQ optimized for Ampere (RTX 3090/3060 ...",
+      "url": "https://github.com/groxaxo/GPTQ-Pro",
+      "snippet": "GPTQ-Pro is an experimental fork of ModelCloud/GPTQModel focused on symmetric INT4 GPTQ and native-qweight CUDA execution. Distribution/import names remain GPTQModel / gptqmodel for compatibility."
+    },
+    {
+      "title": "groxaxo (Vlad Jagodnik) · GitHub",
+      "url": "https://github.com/groxaxo/",
+      "snippet": "Cloud Engineer and AI builder, creating local LLMs, voice AI, automation tools, and open-source systems that turn ambitious ideas into working products. - groxaxo"
+    },
+    {
+      "title": "Liquid AI Releases LFM3: 6 Open-Weight 2B-Class Multimodal Models",
+      "url": "https://www.marktechpost.com/2026/10/27/liquid-ai-lfm3-open-weight-2b-multimodal-models/",
+      "snippet": "Liquid AI has released LFM3, its new generation of Liquid Foundation Models. Liquid AI LFM3 is a family of 6 open-weight, 2B-class models built on one shared backbone. The family covers text, vision, audio, omni and decision tasks. Every model can be fine-tuned on a single GPU."
+    }
+  ]
+}

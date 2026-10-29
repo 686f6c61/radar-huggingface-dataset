@@ -5,7 +5,7 @@
   "author": "credible-ai",
   "url": "https://huggingface.co/credible-ai/olmo2-30M-24domains-dirichlet",
   "created_at": "2026-10-27T21:30:02.000Z",
-  "updated_at": "2026-10-27T22:13:34.000Z",
+  "updated_at": "2026-10-28T09:18:42.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -23,6 +23,7 @@
     "en",
     "dataset:WebOrganizer/Corpus-200B",
     "dataset:credible-ai/weborganizer-corpus-200b-tokenized",
+    "arxiv:2610.37390",
     "license:mit",
     "endpoints_compatible",
     "region:us"

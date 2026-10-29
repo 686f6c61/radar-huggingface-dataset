@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "rimur01/act_so101_assignment2",
+  "slug": "rimur01-act_so101_assignment2",
+  "author": "rimur01",
+  "url": "https://huggingface.co/rimur01/act_so101_assignment2",
+  "created_at": "2026-10-28T21:08:34.000Z",
+  "updated_at": "2026-10-28T21:09:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:rimur01/so101-assignment1-50-new",
+    "arxiv:2304.13705",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714848,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

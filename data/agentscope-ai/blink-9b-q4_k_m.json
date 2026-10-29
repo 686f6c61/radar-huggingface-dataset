@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "agentscope-ai/Blink-9B-Q4_K_M",
+  "slug": "agentscope-ai-blink-9b-q4_k_m",
+  "author": "agentscope-ai",
+  "url": "https://huggingface.co/agentscope-ai/Blink-9B-Q4_K_M",
+  "created_at": "2026-10-28T20:19:05.000Z",
+  "updated_at": "2026-10-28T20:45:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "decision-model",
+    "bidirectional-attention",
+    "qwenpaw",
+    "text-classification",
+    "en",
+    "zh",
+    "base_model:agentscope-ai/Blink-9B",
+    "base_model:quantized:agentscope-ai/Blink-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 5629110080,
+  "storage_human": "5.6 GB",
+  "base_model": "agentscope-ai/Blink-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

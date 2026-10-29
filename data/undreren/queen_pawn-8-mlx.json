@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "undreren/queen_pawn-8-mlx",
+  "slug": "undreren-queen_pawn-8-mlx",
+  "author": "undreren",
+  "url": "https://huggingface.co/undreren/queen_pawn-8-mlx",
+  "created_at": "2026-10-28T20:25:31.000Z",
+  "updated_at": "2026-10-28T22:07:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx-lm",
+  "languages": [],
+  "tags": [
+    "mlx-lm",
+    "safetensors",
+    "smollm3",
+    "chess",
+    "apple-silicon",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3075256320,
+  "parameters_human": "3.08B",
+  "storage_bytes": 9000799456,
+  "storage_human": "9.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XXX (film) | XXX Wiki | Fandom",
+      "url": "https://xxx.fandom.com/wiki/XXX_(film)",
+      "snippet": "Gibbons identifies Xander Cage, an extreme sports professional known as \"XXX (Triple X)\" but also wanted by the FBI for his acts of …"
+    },
+    {
+      "title": "XXX - Trailers & Videos | Rotten Tomatoes",
+      "url": "https://www.rottentomatoes.com/m/xxx/videos/1828701251997",
+      "snippet": "View HD Trailers and Videos for XXX on Rotten Tomatoes, then check our Tomatometer to find out what the Critics say."
+    },
+    {
+      "title": "XXX - Full Movie | Movies Anywhere",
+      "url": "https://moviesanywhere.com/movie/xxx",
+      "snippet": "Aug 8, 2002 · But when crack NSA Agent Gibbsons convinces Cage to infiltrate a ruthless Russian crime ring, this new breed of …"
+    },
+    {
+      "title": "XXX (film series) - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/XXX_(film_series)",
+      "snippet": "XXX (stylized as xXx and pronounced Triple X) is an American action spy film series created by Rich Wilkes. It consists of three full …"
+    },
+    {
+      "title": "Streaming vidéo porno gratuit en haute définition (HD)",
+      "url": "https://pornovore.fr/Haute-definition/Streaming-porno-HD",
+      "snippet": "Les meilleurs vidéos porno HD en Streaming GRATUIT sur Pornovore.fr ! Des Films X en Haute définition [720p] [1080p] et [UHD 4K]"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "fecasado/gact-kitchen-toasts-baseline",
+  "slug": "fecasado-gact-kitchen-toasts-baseline",
+  "author": "fecasado",
+  "url": "https://huggingface.co/fecasado/gact-kitchen-toasts-baseline",
+  "created_at": "2026-10-28T23:23:08.000Z",
+  "updated_at": "2026-10-28T23:23:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "gaze_act",
+    "dataset:fecasado/toasts-to-plate-320x240",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51664538,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206707912,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fecasado/gfm-kitchen-toasts-baseline · Hugging Face",
+      "url": "https://huggingface.co/fecasado/gfm-kitchen-toasts-baseline",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "fecasado/gfm-kitchen-toasts-baseline2 · Hugging Face",
+      "url": "https://huggingface.co/fecasado/gfm-kitchen-toasts-baseline2",
+      "snippet": "Instructions to use fecasado/gfm-kitchen-toasts-baseline2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use fecasado/gfm-kitchen-toasts-baseline2 with LeRobot: ... Notebooks Google Colab Kaggle Model Card for gaze_flow_matching How to Get Started with the Model Train ..."
+    },
+    {
+      "title": "Toast 1 — Mixedbread&#x27;s search model runs the… | AI/TLDR",
+      "url": "https://ai-tldr.dev/releases/mixedbread-toast-1/",
+      "snippet": "Toast 1 is Mixedbread&#x27;s search model that takes over the whole retrieval loop — splitting a question into subqueries, gathering evidence, then curating context. Mixedbread says it matches Claude Opus 5 and GPT-5.6 Sol on search quality."
+    },
+    {
+      "title": "Models - Mixedbread",
+      "url": "https://www.mixedbread.com/docs/agent/models",
+      "snippet": "The context window includes input messages, tool definitions, tool results, and generated output. Use max_output_tokens with the Responses API or max_completion_tokens with Chat Completions to limit generated output. The Responses API and Chat Completions default to toast-1 when model is omitted."
+    },
+    {
+      "title": "Toast 1 | AI Model | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/model/toast-1/",
+      "snippet": "Toast 1 is a specialized search agent that decomposes a query into subqueries, executes multi round tool calls to search document collections, inspects sources, and curates relevant evidence before returning it. It can run standalone or as a subagent within a frontier language model, and works with Mixedbread Search or any existing retrieval backend."
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "Gabbio/driptips-concierge-qwen3-4b",
+  "slug": "gabbio-driptips-concierge-qwen3-4b",
+  "author": "Gabbio",
+  "url": "https://huggingface.co/Gabbio/driptips-concierge-qwen3-4b",
+  "created_at": "2026-10-28T20:24:35.000Z",
+  "updated_at": "2026-10-28T20:38:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen3",
+    "travel",
+    "lora",
+    "ostrovok-hackathon-2026",
+    "text-generation",
+    "conversational",
+    "ru",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:adapter:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 12336807842,
+  "storage_human": "12.3 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

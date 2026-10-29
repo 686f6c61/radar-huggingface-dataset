@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "DecentVLA/droidfull8_pi05_accord_cotrain_w010_expert",
+  "slug": "decentvla-droidfull8_pi05_accord_cotrain_w010_expert",
+  "author": "DecentVLA",
+  "url": "https://huggingface.co/DecentVLA/droidfull8_pi05_accord_cotrain_w010_expert",
+  "created_at": "2026-10-28T21:15:34.000Z",
+  "updated_at": "2026-10-28T21:15:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "openpi",
+    "pi05",
+    "droid",
+    "federated-learning",
+    "accord",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "writeControl writing every time step despire writeInterval specifying ...",
+      "url": "https://www.cfd-online.com/Forums/openfoam-solving/192525-writecontrol-writing-every-time-step-despire-writeinterval-specifying-otherwise.html",
+      "snippet": "writeControl writing every time step despire writeInterval specifying otherwise User Name Remember Me Password Register Blogs …"
+    },
+    {
+      "title": "Write data at specific times, not intervals - CFD Online",
+      "url": "https://www.cfd-online.com/Forums/openfoam/217350-write-data-specific-times-not-intervals.html",
+      "snippet": "Is it possible to write data at specified times (timesteps) instead of fixed intervals? I want to output data multiple times only at the end of"
+    },
+    {
+      "title": "chtMultiRegionFoam wallHeatFlux mismatch - CFD Online",
+      "url": "https://www.cfd-online.com/Forums/openfoam-post-processing/221164-chtmultiregionfoam-wallheatflux-mismatch.html",
+      "snippet": "Dear CFD-ehtousiasts, Currently I am working on a model that should capture the convective heat transfer between a coil, with hot …"
+    },
+    {
+      "title": "Skin friction coefficient over surface - CFD Online",
+      "url": "https://www.cfd-online.com/Forums/openfoam-post-processing/140170-skin-friction-coefficient-over-surface.html",
+      "snippet": "Jul 5, 2017 · Is there a way to obtain the skin friction coefficient over a surface, or am I going to have to calculate it manually? Thanks …"
+    },
+    {
+      "title": "Monitor Total Pressure in a running simulation using functionobjects ...",
+      "url": "https://www.cfd-online.com/Forums/openfoam-post-processing/125232-monitor-total-pressure-running-simulation-using-functionobjects.html",
+      "snippet": "Mar 10, 2020 · Hi, I'm new to Open Foam, so probably the solution of my problem will be really simple for other user but I couldn't …"
+    }
+  ]
+}

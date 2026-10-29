@@ -5,7 +5,7 @@
   "author": "gbuzhf",
   "url": "https://huggingface.co/gbuzhf/Ornith-1.5-35B-A3B-Huihui-Sangreal-MTP-ICE-GGUF",
   "created_at": "2026-09-19T03:34:45.000Z",
-  "updated_at": "2026-10-28T04:36:43.000Z",
+  "updated_at": "2026-10-29T00:56:33.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -36,12 +36,12 @@
     "conversational"
   ],
   "likes": 6,
-  "downloads_30d": 10987,
+  "downloads_30d": 12176,
   "trending_score": 0,
   "parameters": 35505251456,
   "parameters_human": "35.51B",
-  "storage_bytes": 277154083375,
-  "storage_human": "277.2 GB",
+  "storage_bytes": 289347336778,
+  "storage_human": "289.3 GB",
   "base_model": "ornith-ai/Ornith-1.5-35B-A3B, huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated",
   "formats": [
     "gguf"

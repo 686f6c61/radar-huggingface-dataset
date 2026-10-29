@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "Lerelou/Supra1.5-50M-Base-exp-GGUF",
+  "slug": "lerelou-supra1-5-50m-base-exp-gguf",
+  "author": "Lerelou",
+  "url": "https://huggingface.co/Lerelou/Supra1.5-50M-Base-exp-GGUF",
+  "created_at": "2026-10-28T20:09:27.000Z",
+  "updated_at": "2026-10-28T20:09:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "supra",
+    "supra-1.5",
+    "llama",
+    "50m",
+    "base",
+    "continued-pretraining",
+    "long-context",
+    "5k-context",
+    "Supra",
+    "Supra-50M",
+    "llama.cpp",
+    "quantized",
+    "text-generation",
+    "en",
+    "base_model:SupraLabs/Supra1.5-50M-Base-exp",
+    "base_model:quantized:SupraLabs/Supra1.5-50M-Base-exp",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51786240,
+  "parameters_human": "51.8M",
+  "storage_bytes": 264488896,
+  "storage_human": "264 MB",
+  "base_model": "SupraLabs/Supra1.5-50M-Base-exp",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pony Emojis | 𓃗 ᯠྀི 𓇮 ᯄ | Copy & Paste",
+      "url": "https://emojidb.org/pony-emojis",
+      "snippet": "Pony Emojis We've searched our database for all the emojis that are somehow related to Pony. Here they are! There are more than …"
+    },
+    {
+      "title": "Pony Symbols | ♂️ | Copy & Paste - EmojiDB",
+      "url": "https://emojidb.org/pony-symbols-emojis",
+      "snippet": "We've searched our database for all the emojis that are somehow related to Pony Symbols. Here they are! There are more than 20 …"
+    },
+    {
+      "title": "Pony – Vélos & trottinettes partagés",
+      "url": "https://getapony.com/",
+      "snippet": "Nous travaillons main dans la main avec les collectivités pour proposer un service de vélos et trottinettes en libre-service …"
+    },
+    {
+      "title": "Pony Symbols | ⭐ | Copy & Paste - Emoji Combos",
+      "url": "https://emojicombos.com/pony-symbols",
+      "snippet": "👻🔣 new ghost symbols magical symbols spirit signs glowing symbols ethereal symbols 🦋🌸💛 new fluttershy my little pony MLP pony pegasus …"
+    },
+    {
+      "title": "Pony Emojis & Text – Copy and Paste Symbols, Emojis & Emoticons",
+      "url": "https://toolscord.com/pony-emojis",
+      "snippet": "Find Pony emojis and browse Pony emoji combos, ASCII text, and stylish symbols for messages, bios, captions, and more."
+    }
+  ]
+}

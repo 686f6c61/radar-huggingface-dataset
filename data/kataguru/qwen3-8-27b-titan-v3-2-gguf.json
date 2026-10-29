@@ -5,7 +5,7 @@
   "author": "kataguru",
   "url": "https://huggingface.co/kataguru/Qwen3.8-27B-Titan-v3.2-GGUF",
   "created_at": "2026-10-01T13:37:57.000Z",
-  "updated_at": "2026-10-28T04:11:16.000Z",
+  "updated_at": "2026-10-28T16:15:06.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -49,12 +49,12 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 1838,
+  "downloads_30d": 1873,
   "trending_score": 0,
   "parameters": 26895998464,
   "parameters_human": "26.90B",
-  "storage_bytes": 85075494278,
-  "storage_human": "85.1 GB",
+  "storage_bytes": 127146423174,
+  "storage_human": "127.1 GB",
   "base_model": "kataguru/Qwen3.8-27B-Titan-v3.0-Uncensored-BF16",
   "formats": [
     "gguf"

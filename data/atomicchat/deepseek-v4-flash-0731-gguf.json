@@ -5,7 +5,7 @@
   "author": "AtomicChat",
   "url": "https://huggingface.co/AtomicChat/DeepSeek-V4-Flash-0731-GGUF",
   "created_at": "2026-08-01T12:45:07.000Z",
-  "updated_at": "2026-08-04T19:54:29.000Z",
+  "updated_at": "2026-10-28T13:13:25.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -45,8 +45,8 @@
   "trending_score": 8,
   "parameters": 284334567511,
   "parameters_human": "284.33B",
-  "storage_bytes": 1236894950150,
-  "storage_human": "1236.9 GB",
+  "storage_bytes": 1594759938086,
+  "storage_human": "1594.8 GB",
   "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
   "formats": [
     "gguf"

@@ -5,7 +5,7 @@
   "author": "hb-dev",
   "url": "https://huggingface.co/hb-dev/Qwen3-0.6B-ONNX",
   "created_at": "2026-09-16T00:36:06.000Z",
-  "updated_at": "2026-09-17T04:53:28.000Z",
+  "updated_at": "2026-10-29T01:06:20.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 284,
+  "downloads_30d": 276,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

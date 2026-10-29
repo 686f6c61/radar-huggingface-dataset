@@ -5,7 +5,7 @@
   "author": "AtomicChat",
   "url": "https://huggingface.co/AtomicChat/Qwen3-Coder-30B-A3B-GGUF",
   "created_at": "2026-06-17T15:32:01.000Z",
-  "updated_at": "2026-10-26T12:53:25.000Z",
+  "updated_at": "2026-10-28T08:54:49.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -28,7 +28,7 @@
     "conversational"
   ],
   "likes": 5,
-  "downloads_30d": 7265,
+  "downloads_30d": 8271,
   "trending_score": 0,
   "parameters": 30532122624,
   "parameters_human": "30.53B",

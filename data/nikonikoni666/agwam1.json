@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Nikonikoni666/agwam1",
+  "slug": "nikonikoni666-agwam1",
+  "author": "Nikonikoni666",
+  "url": "https://huggingface.co/Nikonikoni666/agwam1",
+  "created_at": "2026-10-28T19:46:05.000Z",
+  "updated_at": "2026-10-28T21:16:53.000Z",
+  "license": "gpl-2.0",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openwam",
+  "languages": [],
+  "tags": [
+    "openwam",
+    "robotics",
+    "world-action-model",
+    "libero",
+    "license:gpl-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 99276457936,
+  "storage_human": "99.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "在字节跳动/抖音工作是种怎样的体验？ - 知乎",
+      "url": "https://www.zhihu.com/question/285747864",
+      "snippet": "- 抖音/TikTok在国内和海外的扩张，每天看着上涨的数据，很刺激； - 在食堂吃饭的时候，大屏幕滚动播放全世界各地的用户反馈，各 …"
+    },
+    {
+      "title": "TikTok老外集体变「精神中国人」，喝热水、练习八段锦，这股风潮为 …",
+      "url": "https://www.zhihu.com/question/1995834955431896526",
+      "snippet": "TikTok老外集体变「精神中国人」，喝热水、练习八段锦，这股风潮为何能迅速席卷外网？ 最近，一群老外正经历着“人生中非常中国 …"
+    },
+    {
+      "title": "Tiktok | dafont.com",
+      "url": "https://www.dafont.com/pt/tiktok.font",
+      "snippet": "May 9, 2021 · Tiktok | dafont.com Free for personal Used for Commercial Used plase contact me : lettercornerstudio@gmail.com"
+    },
+    {
+      "title": "New fonts | dafont.com",
+      "url": "https://www.dafont.com/new.php",
+      "snippet": "Archive of freely downloadable fonts. Browse by alphabetical listing, by style, by author or by popularity."
+    },
+    {
+      "title": "电商运营教程 - 淘帖 - 吾爱破解 - 52pojie.cn",
+      "url": "https://www.52pojie.cn/forum.php?mod=collection&action=view&ctid=1839",
+      "snippet": "Jun 10, 2025 · 电商运营教程 ,吾爱破解 - 52pojie.cn"
+    }
+  ]
+}

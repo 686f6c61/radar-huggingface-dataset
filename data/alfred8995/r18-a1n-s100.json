@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "alfred8995/r18-a1n-s100",
+  "slug": "alfred8995-r18-a1n-s100",
+  "author": "alfred8995",
+  "url": "https://huggingface.co/alfred8995/r18-a1n-s100",
+  "created_at": "2026-10-28T20:16:37.000Z",
+  "updated_at": "2026-10-28T20:17:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "sn38-nanochrono",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2018511234,
+  "parameters_human": "2.02B",
+  "storage_bytes": 8074068016,
+  "storage_human": "8.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Welcome to the Minecraft Official Site | Minecraft",
+      "url": "https://www.minecraft.net/",
+      "snippet": "Explore new gaming adventures, accessories, & merchandise on the Minecraft Official Site. Buy & download the game here, or …"
+    },
+    {
+      "title": "Witaj na oficjalnej stronie Minecraft",
+      "url": "https://www.minecraft.net/pl-pl",
+      "snippet": "Odkryj nowe przygody, akcesoria i produkty związane z grą na oficjalnej stronie Minecraft. Kup i pobierz grę tutaj lub sprawdź …"
+    },
+    {
+      "title": "Home | Minecraft Help",
+      "url": "https://help.minecraft.net/",
+      "snippet": "Follow Minecraft Games Minecraft Minecraft Dungeons II Minecraft Dungeons Minecraft Legends Minecraft Education Community …"
+    },
+    {
+      "title": "Get Minecraft for Your Classroom | Minecraft Education",
+      "url": "https://education.minecraft.net/",
+      "snippet": "Get Minecraft Education for your classroom. Find out how using this game will take your students’ learning to the next level."
+    },
+    {
+      "title": "Release Changelogs – Minecraft Feedback",
+      "url": "https://feedback.minecraft.net/hc/en-us/sections/360001186971-Release-Changelogs",
+      "snippet": "Do you have an idea that would make Minecraft even better? Want to learn what the community wants? Check out our feedback site …"
+    }
+  ]
+}

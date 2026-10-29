@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "nefunguje/Z2-Gemma4-E4B-GGUF",
+  "slug": "nefunguje-z2-gemma4-e4b-gguf",
+  "author": "nefunguje",
+  "url": "https://huggingface.co/nefunguje/Z2-Gemma4-E4B-GGUF",
+  "created_at": "2026-10-28T21:01:07.000Z",
+  "updated_at": "2026-10-28T21:06:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7518069290,
+  "parameters_human": "7.52B",
+  "storage_bytes": 5335292352,
+  "storage_human": "5.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Chrome - The Fast & Secure Web Browser Built to be Yours",
+      "url": "https://tools.google.com/",
+      "snippet": "Chrome is the official web browser from Google, built to be fast, secure, and customizable. Download now and make it yours."
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/?hl=ta",
+      "snippet": "Googleளின் சேவை விலை இல்லாமல் வழங்கப்படுகிறது. வார்த்தைகள் ..."
+    },
+    {
+      "title": "Google Dashboard",
+      "url": "https://account.google.com/dashboard",
+      "snippet": "Sign in to see and manage the data in your Google Account"
+    },
+    {
+      "title": "Google Drive: Sign-in",
+      "url": "https://ogs.google.com/widget/empty",
+      "snippet": "Google Search provides a fast, easy way to find information, images, videos and more across the web."
+    },
+    {
+      "title": "Voice",
+      "url": "https://voice.google.com/regain",
+      "snippet": "Access Google Voice to manage calls, texts, and voicemails with a unique phone number. Stay connected across devices seamlessly."
+    }
+  ]
+}

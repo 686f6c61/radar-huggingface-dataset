@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "yas1988/smol-math-sft",
+  "slug": "yas1988-smol-math-sft",
+  "author": "yas1988",
+  "url": "https://huggingface.co/yas1988/smol-math-sft",
+  "created_at": "2026-10-28T23:56:19.000Z",
+  "updated_at": "2026-10-29T00:52:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:HuggingFaceTB/SmolLM2-1.7B",
+    "base_model:finetune:HuggingFaceTB/SmolLM2-1.7B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 72402089,
+  "storage_human": "72 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Math SFT Data - a Ottehack Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Ottehack/math-sft-data",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from Ottehack"
+    },
+    {
+      "title": "smol-ai - GitHub",
+      "url": "https://github.com/smol-ai/",
+      "snippet": "a simple, safe, speedy org for smol ai enjoyers. smol.ai has 27 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "The Smol Training Playbook - a Hugging Face Space by HuggingFaceTB",
+      "url": "https://huggingface.co/spaces/HuggingFaceTB/smol-training-playbook",
+      "snippet": "You&#x27;ll see how promising small-scale ablations sometimes don&#x27;t translate at scale; why we restarted a training run after 1T tokens; how we balanced the competing objectives of multilinguality, math, and code while maintaining strong English-language performance; and finally how we post-trained a hybrid reasoning model."
+    },
+    {
+      "title": "GitHub - huggingface/smol-course: A course on aligning smol models ...",
+      "url": "https://github.com/huggingface/smol-course",
+      "snippet": "a smol course This is a practical course on aligning language models for your specific use case. It&#x27;s a handy way to get started with aligning language models, because everything runs on most local machines. There are minimal GPU requirements and no paid services."
+    },
+    {
+      "title": "Best AI for Math 2026 - Top Mathematical Models",
+      "url": "https://llm-stats.com/leaderboards/best-ai-for-math",
+      "snippet": "Rankings of the best AI models for mathematical reasoning. Compare models by math problem solving and mathematical capabilities."
+    }
+  ]
+}

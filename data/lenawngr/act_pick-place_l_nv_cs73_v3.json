@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "lenawngr/ACT_pick-place_L_nv_cs73_v3",
+  "slug": "lenawngr-act_pick-place_l_nv_cs73_v3",
+  "author": "lenawngr",
+  "url": "https://huggingface.co/lenawngr/ACT_pick-place_L_nv_cs73_v3",
+  "created_at": "2026-10-28T20:33:09.000Z",
+  "updated_at": "2026-10-28T20:34:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:lenawngr/pick-place_so101",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51640966,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206604248,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

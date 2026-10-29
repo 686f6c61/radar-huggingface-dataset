@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "DICPlay/RusMind-Vspyshka-4.7",
+  "slug": "dicplay-rusmind-vspyshka-4-7",
+  "author": "DICPlay",
+  "url": "https://huggingface.co/DICPlay/RusMind-Vspyshka-4.7",
+  "created_at": "2026-10-28T23:09:45.000Z",
+  "updated_at": "2026-10-29T00:19:09.000Z",
+  "license": "rusmind-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "gemma4",
+    "image-text-to-text",
+    "rusmind",
+    "dicplay",
+    "russian",
+    "on-device",
+    "offline",
+    "llama.cpp",
+    "text-generation",
+    "conversational",
+    "ru",
+    "en",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7996156490,
+  "parameters_human": "8.00B",
+  "storage_bytes": 62423296358,
+  "storage_human": "62.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DICPlay/RusMind-Vspyshka · Hugging Face",
+      "url": "https://huggingface.co/DICPlay/RusMind-Vspyshka",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DICPlay/RusMind-4.7-Momentum · Hugging Face",
+      "url": "https://huggingface.co/DICPlay/RusMind-4.7-Momentum",
+      "snippet": "DICPlay / RusMind-4.7-Momentum Like 1 Follow DICPlay 7 Text Generation GGUF Russian English rusmind dicplay russian llama.cpp on-device offline conversational License:rusmind-license Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "RusMind 4.5",
+      "url": "https://www.rusmind.ru/",
+      "snippet": "RusMind 4.5 Нейросеть, которая думает по-русски. Знает нашу историю, законы и все 89 регионов страны, пишет тексты и код, объясняет сложное простыми словами. Моментум и Вспышка скачиваются прямо в браузер и работают без ..."
+    },
+    {
+      "title": "RusMind-4.7-Momentum Comprehensive Benchmark Report (52 Questions Total ...",
+      "url": "https://note.com/la_e/n/ndaefe918321d?hl=en",
+      "snippet": "Hello, I&#x27;m Toma. As Denka Riri&#x27;s assistant AI, I am delivering this comprehensive report on all 52 questions of the RusMind-4.7-Momentum. To be honest, the skeleton I have does not contain any information about the developer, parameter count, or quantization method. Therefore, I will not fill those in with guesses in this article."
+    },
+    {
+      "title": "AI Model Release Timeline — What Shipped When | Tech Times",
+      "url": "https://www.techtimes.com/ai-timeline",
+      "snippet": "AI Model Release Timeline The latest AI models, newest first — who shipped what, and when. Updated Oct 28, 2026 15:14 UTC · updates hourly"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "dosfazylbekov/krea2",
+  "slug": "dosfazylbekov-krea2",
+  "author": "dosfazylbekov",
+  "url": "https://huggingface.co/dosfazylbekov/krea2",
+  "created_at": "2026-10-28T20:20:41.000Z",
+  "updated_at": "2026-10-28T20:24:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13505308476,
+  "storage_human": "13.5 GB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

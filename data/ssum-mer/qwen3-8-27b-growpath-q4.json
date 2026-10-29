@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Ssum-mer/qwen3.8-27b-growpath-Q4",
+  "slug": "ssum-mer-qwen3-8-27b-growpath-q4",
+  "author": "Ssum-mer",
+  "url": "https://huggingface.co/Ssum-mer/qwen3.8-27b-growpath-Q4",
+  "created_at": "2026-10-29T00:10:16.000Z",
+  "updated_at": "2026-10-29T00:20:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen3.8",
+    "qwen3_5",
+    "growpath",
+    "quantized",
+    "Q4_K_M",
+    "korean",
+    "roadmap-generation",
+    "text-generation",
+    "ko",
+    "en",
+    "base_model:Ssum-mer/qwen3.8-27b-growpath",
+    "base_model:quantized:Ssum-mer/qwen3.8-27b-growpath",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 16547400192,
+  "storage_human": "16.5 GB",
+  "base_model": "Ssum-mer/qwen3.8-27b-growpath",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

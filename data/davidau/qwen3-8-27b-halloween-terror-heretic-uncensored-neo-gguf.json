@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "DavidAU/Qwen3.8-27B-Halloween-Terror-Heretic-Uncensored-NEO-GGUF",
+  "slug": "davidau-qwen3-8-27b-halloween-terror-heretic-uncensored-neo-gguf",
+  "author": "DavidAU",
+  "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-Halloween-Terror-Heretic-Uncensored-NEO-GGUF",
+  "created_at": "2026-10-22T03:50:44.000Z",
+  "updated_at": "2026-10-29T00:18:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "unsloth",
+    "horror",
+    "halloween",
+    "finetune",
+    "abliterated",
+    "uncensored",
+    "heretic",
+    "not-for-all-audiences",
+    "13 reasoning modes",
+    "13 instruct modes",
+    "10 EVIL AI Constructs",
+    "Turbo-Brilliance Evil Ed",
+    "Halloween O/S",
+    "thinking",
+    "reasoning",
+    "creative",
+    "creative writing",
+    "all genres",
+    "story",
+    "writing",
+    "fiction",
+    "roleplaying",
+    "evil sims",
+    "image-text-to-text",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 15,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16203096,
+  "storage_human": "16 MB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B-Halloween-Terror-Heretic-Uncensored-NEO-GGUF",
+      "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-Halloween-Terror-Heretic-Uncensored-NEO-GGUF/blob/main/README.md",
+      "snippet": "Instructions to use DavidAU/Qwen3.8-27B-Halloween-Terror-Heretic-Uncensored-NEO-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "DavidAU/Qwen3.8-27B-Halloween-Terror at main - Hugging Face",
+      "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-Halloween-Terror/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Wassimyounes01/qwen38-uncensored: Local Qwen 3.8 27B ...",
+      "url": "https://github.com/Wassimyounes01/qwen38-uncensored",
+      "snippet": "Check GPU offloading: ollama ps — if you see a CPU/GPU split, the model is partially on CPU Force all layers to GPU: Already set in Modelfile.mac (num_gpu 999), but verify with ollama show qwen3.8:27b-uncensored Reduce context: QWEN_NUM_CTX=4096 node examples/chat.cjs \"test\" — smaller KV cache = less memory Switch to MLX: node bin/install.cjs --mlx — 30-50% faster on Apple Silicon Close ..."
+    },
+    {
+      "title": "Qwen 3.8 27B Uncensored Local: GGUF Quants + llama.cpp",
+      "url": "https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally",
+      "snippet": "Run Qwen 3.8 27B uncensored locally: pick the GGUF quant for your VRAM, serve it with llama.cpp or Ollama, and respect the research-only boundary."
+    },
+    {
+      "title": "Qwen3.8-27B Uncensored GGUF: Abliterated Local Build",
+      "url": "https://www.orcarouter.ai/blog/qwen-3-8-27b-uncensored-gguf",
+      "snippet": "Qwen 3.8 27B uncensored GGUF is a real download, and the build to start with is Qwen3.8-27B-Uncensored-GGUF — published on Hugging Face on August 16, 2026 as the llama.cpp-native sibling of our abliterated FP8 release. It is the same refusal-removed 27-billion-parameter weights as Qwen3.8-27B-Uncensored-FP8, converted to GGUF for local inference: F16 plus 12 quantization tiers from Q2_K to ..."
+    }
+  ]
+}

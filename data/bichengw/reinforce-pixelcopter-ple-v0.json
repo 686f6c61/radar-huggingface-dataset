@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "BichengW/Reinforce-Pixelcopter-PLE-v0",
+  "slug": "bichengw-reinforce-pixelcopter-ple-v0",
+  "author": "BichengW",
+  "url": "https://huggingface.co/BichengW/Reinforce-Pixelcopter-PLE-v0",
+  "created_at": "2026-10-28T20:57:28.000Z",
+  "updated_at": "2026-10-28T21:36:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Pixelcopter-PLE-v0",
+    "reinforce",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-class",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 80250,
+  "storage_human": "80250 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DPM",
+      "url": "https://dpm.tn/",
+      "snippet": "Pour visiter la DPM 04/04/2023 : Communiqué Cette rubrique vous permet de remplir le formulaire de visite et de prendre un rendez …"
+    },
+    {
+      "title": "Liste des médicaments - dpm.tn",
+      "url": "https://dpm.tn/medicament/humain/liste-des-medicaments",
+      "snippet": "AMM en vigueur des Médicaments à usage Humain (Date de mise à jour : 07/10/2026) Liste des DCI ; Liste des laboratoires …"
+    },
+    {
+      "title": "Spécifications - dpm.tn",
+      "url": "https://dpm.tn/digitalisation/e-ctd/specifications",
+      "snippet": "def1 NB : The link to the new ANMPS portal mentioned in the specifications will be operational shortly. Le lien du nouveau portail de …"
+    },
+    {
+      "title": "GUIDE DE L’ENREGISTREMENT DES MEDICAMENTS - dpm.tn",
+      "url": "https://dpm.tn/images/pdf/t-op2-003-fr-000-guide_enregistrement_medicaments_humain_tunisie_juin-%202025.pdf",
+      "snippet": "AVANT-PROPOS La 2ème édition du ‘Guide de l’enregistrement des médicaments destinés à la médecine humaine’ publiée en …"
+    },
+    {
+      "title": "Communiqués - dpm.tn",
+      "url": "https://dpm.tn/digitalisation/e-ctd/communiques",
+      "snippet": "def1 18/09/2026 : Mise à jour de la feuille de route relative à la mise en œuvre de l’eCTD et aux modalités de soumission des …"
+    }
+  ]
+}

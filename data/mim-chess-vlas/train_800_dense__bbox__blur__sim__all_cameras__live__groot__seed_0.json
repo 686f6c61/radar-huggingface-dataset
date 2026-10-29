@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "mim-chess-vlas/train_800_dense__bbox__blur__sim__all_cameras__live__groot__seed_0",
+  "slug": "mim-chess-vlas-train_800_dense__bbox__blur__sim__all_cameras__live__groot__seed_0",
+  "author": "mim-chess-vlas",
+  "url": "https://huggingface.co/mim-chess-vlas/train_800_dense__bbox__blur__sim__all_cameras__live__groot__seed_0",
+  "created_at": "2026-10-28T21:01:23.000Z",
+  "updated_at": "2026-10-28T21:02:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "groot",
+    "dataset:mim-chess-vlas/train_800_dense__bbox__blur__sim__all_cameras__live",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576218312,
+  "storage_human": "12.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bienvenue dans les centres d'imagerie du Groupe MIM",
+      "url": "https://www.radiologie-mim.fr/",
+      "snippet": "Le Groupe MIM, centres d'imagerie médicale; pratique l'ensemble des techniques d'Imagerie sur 6 Centres situés à Strasbourg et …"
+    },
+    {
+      "title": "Le groupe MIM",
+      "url": "https://www.radiologie-mim.fr/le-groupe-mim/",
+      "snippet": "L'équipe médicale du Groupe MIM pratique l'ensemble des techniques d'Imagerie sur 6 Centres situés à Strasbourg et ses environs."
+    },
+    {
+      "title": "Groupe d'imagerie médicale - MIM - Radiologie - Doctolib",
+      "url": "https://www.doctolib.fr/centre-d-imagerie-medicale/illkirch-graffenstaden/groupe-d-imagerie-medicale-mim",
+      "snippet": "Le Groupe MIM est constitué d'une équipe de 28 médecins spécialistes en radio-diagnostic et en imagerie médicale. Tous les …"
+    },
+    {
+      "title": "MIM | MIM",
+      "url": "https://www.mim.be/fr/",
+      "snippet": "Le MIM abrite une collection d’instruments de musique de renommée mondiale. Situé au cœur du Mont des Arts, au milieu d’autres …"
+    },
+    {
+      "title": "Musée des Instruments de musique de Bruxelles — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_des_instruments_de_musique_de_Bruxelles",
+      "snippet": "Le musée des Instruments de musique (MIM) de Bruxelles (en néerlandais : Muziekinstrumentenmuseum), fondé en 1877, est l'un …"
+    }
+  ]
+}

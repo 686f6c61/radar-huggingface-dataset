@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "arcinstitute/evo2_7b",
+  "slug": "arcinstitute-evo2_7b",
+  "author": "arcinstitute",
+  "url": "https://huggingface.co/arcinstitute/evo2_7b",
+  "created_at": "2025-02-13T22:30:36.000Z",
+  "updated_at": "2026-02-06T22:40:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "dataset:arcinstitute/opengenome2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 82,
+  "downloads_30d": 8199,
+  "trending_score": 15,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13766621200,
+  "storage_human": "13.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Genome modeling and design across all domains of life · GitHub",
+      "url": "https://github.com/arcinstitute/evo2",
+      "snippet": "Evo 2 is a state of the art DNA language model for long context modeling and design. Evo 2 models DNA sequences at single-nucleotide resolution at up to 1 ..."
+    },
+    {
+      "title": "Aquiles-ai/Evo2-7B - Hugging Face",
+      "url": "https://huggingface.co/Aquiles-ai/Evo2-7B",
+      "snippet": "15.09.2026 ... Evo 2 models DNA at single nucleotide resolution with a byte level tokenizer (vocab 512, one token per nucleotide). This variant mixes Hyena ..."
+    },
+    {
+      "title": "Evo Designer - DNA Foundation Model - Arc Institute",
+      "url": "https://arcinstitute.org/tools/evo/evo-designer",
+      "snippet": "Evo is trained with 7B and 40B parameters on over 8 trillion nucleotides comprising diverse prokaryotic and eukaryotic genomes. Evo Designer enables DNA ..."
+    },
+    {
+      "title": "Evo 2 - Genome Foundation Model for DNA Modeling - AI/TLDR",
+      "url": "https://ai-tldr.dev/tools/evo2/",
+      "snippet": "Evo 2 is a DNA language model from the Arc Institute for long ... python -m evo2.test.test_evo2_generation --model_name evo2_7b. Generate a DNA ..."
+    },
+    {
+      "title": "Evo 2: One Year Later | Arc Institute",
+      "url": "https://arcinstitute.org/news/evo-2-one-year-later",
+      "snippet": "04.03.2026 ... Trained on genome sequences across all domains of life, from bacteria and phage genomes to plants and animals, including humans, the model is ..."
+    }
+  ]
+}

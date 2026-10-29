@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Lerelou/SupraNeo-4M-GGUF",
+  "slug": "lerelou-supraneo-4m-gguf",
+  "author": "Lerelou",
+  "url": "https://huggingface.co/Lerelou/SupraNeo-4M-GGUF",
+  "created_at": "2026-10-28T20:09:57.000Z",
+  "updated_at": "2026-10-28T20:10:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "tiny",
+    "small",
+    "pretrained-from-scratch",
+    "qwen3",
+    "research",
+    "llama.cpp",
+    "quantized",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:mlfoundations/dclm-baseline-1.0",
+    "base_model:SupraLabs/SupraNeo-4M",
+    "base_model:quantized:SupraLabs/SupraNeo-4M",
+    "license:apache-2.0",
+    "co2_eq_emissions",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4070240,
+  "parameters_human": "4.1M",
+  "storage_bytes": 22817746,
+  "storage_human": "23 MB",
+  "base_model": "SupraLabs/SupraNeo-4M",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

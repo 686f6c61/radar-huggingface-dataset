@@ -63,15 +63,16 @@
     "tr",
     "zh",
     "license:other",
+    "eval-results",
     "region:us"
   ],
-  "likes": 103,
+  "likes": 110,
   "downloads_30d": 702,
-  "trending_score": 103,
+  "trending_score": 109,
   "parameters": 2002332928,
   "parameters_human": "2.00B",
-  "storage_bytes": 52451428617,
-  "storage_human": "52.5 GB",
+  "storage_bytes": 4169781494,
+  "storage_human": "4.2 GB",
   "base_model": null,
   "formats": [
     "safetensors"

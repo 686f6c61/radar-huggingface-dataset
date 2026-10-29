@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "muzaffercky/Sorjin2-12B-Instruct-LoRA",
+  "slug": "muzaffercky-sorjin2-12b-instruct-lora",
+  "author": "muzaffercky",
+  "url": "https://huggingface.co/muzaffercky/Sorjin2-12B-Instruct-LoRA",
+  "created_at": "2026-10-28T21:08:38.000Z",
+  "updated_at": "2026-10-28T21:41:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "ku",
+    "kmr"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "kurdish",
+    "kurmanji",
+    "instruction-tuning",
+    "chat",
+    "text-generation",
+    "conversational",
+    "ku",
+    "kmr",
+    "dataset:muzaffercky/kurdish-ins",
+    "base_model:muzaffercky/Sorjin2-12B-Instruct",
+    "base_model:adapter:muzaffercky/Sorjin2-12B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 556823451,
+  "storage_human": "557 MB",
+  "base_model": "muzaffercky/Sorjin2-12B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "flaviodelgrosso",
   "url": "https://huggingface.co/flaviodelgrosso/qwen3.8-flash-next-gguf",
   "created_at": "2026-10-24T19:48:10.000Z",
-  "updated_at": "2026-10-27T14:56:16.000Z",
+  "updated_at": "2026-10-28T09:38:38.000Z",
   "license": "qwen-community-license-1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -23,7 +23,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 1911,
+  "downloads_30d": 2168,
   "trending_score": 0,
   "parameters": 179551050368,
   "parameters_human": "179.55B",

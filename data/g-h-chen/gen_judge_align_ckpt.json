@@ -5,7 +5,7 @@
   "author": "g-h-chen",
   "url": "https://huggingface.co/g-h-chen/gen_judge_align_ckpt",
   "created_at": "2026-10-20T21:54:42.000Z",
-  "updated_at": "2026-10-24T23:25:00.000Z",
+  "updated_at": "2026-10-28T23:54:17.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 704399257614,
-  "storage_human": "704.4 GB",
+  "storage_bytes": 999263082798,
+  "storage_human": "999.3 GB",
   "base_model": "Qwen/Qwen3-8B, Qwen/Qwen3-32B",
   "formats": [
     "safetensors"

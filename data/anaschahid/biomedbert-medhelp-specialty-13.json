@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "anaschahid/biomedbert-medhelp-specialty-13",
+  "slug": "anaschahid-biomedbert-medhelp-specialty-13",
+  "author": "anaschahid",
+  "url": "https://huggingface.co/anaschahid/biomedbert-medhelp-specialty-13",
+  "created_at": "2026-10-28T21:01:44.000Z",
+  "updated_at": "2026-10-28T21:03:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "medical",
+    "biomedical",
+    "medical-specialty",
+    "en",
+    "base_model:microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext",
+    "base_model:finetune:microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109492237,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437992484,
+  "storage_human": "438 MB",
+  "base_model": "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

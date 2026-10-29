@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-krea2-ultra-realistic-photography-lora",
+  "slug": "runninghubai-rh-krea2-ultra-realistic-photography-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-krea2-ultra-realistic-photography-lora",
+  "created_at": "2026-10-28T23:51:01.000Z",
+  "updated_at": "2026-10-28T23:52:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "image-text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 236987222,
+  "storage_human": "237 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Krea2 Ultra-Realistic Photography - RunningHub Stable Diffusion & Flux LoRA",
+      "url": "https://www.runninghub.ai/model/public/2090392345992077313",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "Ultra Real - Krea2 - RunningHub Stable Diffusion & Flux LoRA",
+      "url": "https://www.runninghub.ai/model/public/2072826905677623298",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "rh-krea2-ultimate-asian-photography-lora - Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-krea2-ultimate-asian-photography-lora",
+      "snippet": "This repository provides rh-krea2-ultimate-asian-photography-lora weight files. You can load them on RunningHub."
+    },
+    {
+      "title": "RunningHubAI/rh-krea.2-ai-lora · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-krea.2-ai-lora",
+      "snippet": "RunningHubAI / rh-krea.2-ai-lora Like 0 Image-Text-to-Image comfyui lora Model card FilesFiles and versions xet Community Copy to bucket new rh-krea.2-ai-lora Description About this model Files License Training at RunningHub"
+    },
+    {
+      "title": "Krea 2 Lenovo UltraReal iPhone realistic shooting, lifestyle photo ...",
+      "url": "https://www.runninghub.ai/model/public/2071075858944708609",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    }
+  ]
+}

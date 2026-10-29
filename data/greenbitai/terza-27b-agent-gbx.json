@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "GreenBitAI/Terza-27B-Agent-gbx",
+  "slug": "greenbitai-terza-27b-agent-gbx",
+  "author": "GreenBitAI",
+  "url": "https://huggingface.co/GreenBitAI/Terza-27B-Agent-gbx",
+  "created_at": "2026-10-27T19:54:57.000Z",
+  "updated_at": "2026-10-28T21:24:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "prism_hadamard_qwen35",
+    "gbx-lm",
+    "gbx",
+    "ternary",
+    "speculative-decoding",
+    "cuda",
+    "metal",
+    "agent",
+    "terminal-bench",
+    "image-text-to-text",
+    "conversational",
+    "base_model:prism-ml/Ternary-Bonsai-2-27B-mlx-2bit",
+    "base_model:finetune:prism-ml/Ternary-Bonsai-2-27B-mlx-2bit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 27359638768,
+  "parameters_human": "27.36B",
+  "storage_bytes": 8847218821,
+  "storage_human": "8.8 GB",
+  "base_model": "prism-ml/Ternary-Bonsai-2-27B-mlx-2bit",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Skyler Blaxk (@skylerblaxk_utd) | TikTok",
+      "url": "https://www.tiktok.com/@skylerblaxk_utd",
+      "snippet": "Skyler Blaxk (@skylerblaxk_utd) on TikTok | 275.7K Likes. 38.9K Followers. United supporters welcome 🏼 ️ follow my …"
+    },
+    {
+      "title": "Skyler Blaxk (@skylerblaxkisme) | TikTok",
+      "url": "https://www.tiktok.com/@skylerblaxkisme",
+      "snippet": "Skyler Blaxk (@skylerblaxkisme) on TikTok | 5928 Likes. 1717 Followers. Me again🩷🎀🌷🩰🦩.Watch Skyler Blaxk's popular videos: \"Lmao I …"
+    },
+    {
+      "title": "skylarblaxk - Reddit",
+      "url": "https://www.reddit.com/r/skylarblaxk/",
+      "snippet": "Oct 7, 2022 · r/skylarblaxk A place for members of r/skylarblaxk to chat with each other"
+    },
+    {
+      "title": "skylarblaxk / skyler_blackk / skylerblaxk Leaked Nude OnlyFans ...",
+      "url": "https://shemaleleaks.com/skylarblaxk/",
+      "snippet": "skylarblaxk / skyler_blackk / skylerblaxk Leaked Nude OnlyFans - ShemaleLeaks! skylarblaxk / skyler_blackk / skylerblaxk Leaked …"
+    },
+    {
+      "title": "skylerblaxk OnlyFans Official - Exclusive Content & Account | Linktree",
+      "url": "https://linktr.ee/skylerblaxk",
+      "snippet": "skylerblaxk has been a member of Linktree for 5 years and joined in December 2020. The skylerblaxk OnlyFans account can be …"
+    }
+  ]
+}

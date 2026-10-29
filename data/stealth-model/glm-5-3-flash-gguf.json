@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "stealth-model/GLM-5.3-Flash-GGUF",
+  "slug": "stealth-model-glm-5-3-flash-gguf",
+  "author": "stealth-model",
+  "url": "https://huggingface.co/stealth-model/GLM-5.3-Flash-GGUF",
+  "created_at": "2026-10-28T18:33:54.000Z",
+  "updated_at": "2026-10-28T23:09:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "glm",
+    "glm-5.3-flash",
+    "ox-alpha",
+    "stealth-model",
+    "stealthmark",
+    "text-generation",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:quantized:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 320759404382,
+  "parameters_human": "320.76B",
+  "storage_bytes": 2543232021222,
+  "storage_human": "2543.2 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Traduction STEALTH en français | Dictionnaire anglais-français",
+      "url": "https://dictionnaire.reverso.net/anglais-francais/stealth",
+      "snippet": "Traduction de \"stealth\" en français : furtivité, silence, invisibilité. Nom, signification, prononciation, expressions idiomatiques en …"
+    },
+    {
+      "title": "STEALTH-GAMER - Gaming Expert - Spécialiste accessoires …",
+      "url": "https://www.stealth-gamer.com/",
+      "snippet": "Stealth Gamer est LE spécialiste français des accessoires pour consoles et PC. Vous y trouverez tout ce qu'il vous faut : les …"
+    },
+    {
+      "title": "Stealth Products - Pride Mobility France",
+      "url": "https://www.pridemobility.fr/marque/stealth/",
+      "snippet": "Stealth Products Maintien membres inférieurs PAP Stealth Products Harnais et ceinture Stealth Products Spectrum Gel"
+    },
+    {
+      "title": "Stealth (film) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Stealth_(film)",
+      "snippet": "Stealth is a 2005 American military science fiction action film directed by Rob Cohen, written by W. D. Richter, and starring Josh …"
+    },
+    {
+      "title": "stealth - English-French Dictionary WordReference.com",
+      "url": "https://www.wordreference.com/enfr/stealth",
+      "snippet": "stealth - traduction anglais-français. Forums pour discuter de stealth, voir ses formes composées, des exemples et poser vos …"
+    }
+  ]
+}

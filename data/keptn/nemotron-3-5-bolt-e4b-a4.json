@@ -5,7 +5,7 @@
   "author": "keptn",
   "url": "https://huggingface.co/keptn/nemotron-3.5-bolt-e4b-a4",
   "created_at": "2026-10-25T01:32:01.000Z",
-  "updated_at": "2026-10-25T23:33:38.000Z",
+  "updated_at": "2026-10-28T23:42:36.000Z",
   "license": "openmdw-1.1",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

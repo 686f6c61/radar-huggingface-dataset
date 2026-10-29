@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "RelyD/prompt-injection-detector",
+  "slug": "relyd-prompt-injection-detector",
+  "author": "RelyD",
+  "url": "https://huggingface.co/RelyD/prompt-injection-detector",
+  "created_at": "2026-10-28T20:58:21.000Z",
+  "updated_at": "2026-10-29T00:58:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "joblib",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "prompt-injection",
+    "security",
+    "en",
+    "multilingual",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 313882395,
+  "storage_human": "314 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

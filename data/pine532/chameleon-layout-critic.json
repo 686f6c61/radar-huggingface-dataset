@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Pine532/chameleon-layout-critic",
+  "slug": "pine532-chameleon-layout-critic",
+  "author": "Pine532",
+  "url": "https://huggingface.co/Pine532/chameleon-layout-critic",
+  "created_at": "2026-10-28T23:10:02.000Z",
+  "updated_at": "2026-10-29T00:16:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "other",
+  "library": "numpy",
+  "languages": [],
+  "tags": [
+    "numpy",
+    "layout",
+    "design",
+    "ranking",
+    "pairwise-preference",
+    "distillation",
+    "logistic-regression",
+    "hackathon",
+    "other",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16826,
+  "storage_human": "16826 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pine532/chameleon-layout-critic · Hugging Face",
+      "url": "https://huggingface.co/Pine532/chameleon-layout-critic",
+      "snippet": "A 113-weight linear model that scores a finished banner layout and is used to choose among near-equal candidates produced by the Chameleon resize engine. It was distilled from the pairwise verdicts of a strong vision-language model (\"the judge\") and runs on numpy alone, offline, in about 2 ms per ..."
+    },
+    {
+      "title": "Pine532/chameleon-layout-generator · Hugging Face",
+      "url": "https://huggingface.co/Pine532/chameleon-layout-generator",
+      "snippet": "A 6,600-weight MLP that, given the analysed layout of a design and a target canvas size, predicts the box each content unit should occupy on the target. The Chameleon resize engine turns the prediction into extra candidate layouts (learned, learned:<rung>); the engine&#x27;s text fitting, hard checks ..."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 1002 AI models across 717 benchmarks, with 215 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "LLM Leaderboard: AI Model Rankings & Pricing | llmboard.ai",
+      "url": "https://www.llmboard.ai/",
+      "snippet": "Explore the LLM leaderboard to compare the best AI models across capability, pricing and LLM benchmarks. Find the best LLM for coding, reasoning and more."
+    },
+    {
+      "title": "Meta Chameleon: A New Player in the Multimodal AI Race",
+      "url": "https://www.analyticsvidhya.com/blog/2024/05/meta-chameleon-a-new-player-in-the-multimodal-ai-race/",
+      "snippet": "The model&#x27;s versatility and capability to handle mixed-modal reasoning make it a valuable tool for various AI applications, from enhanced virtual assistants to sophisticated content-generation tools. Future Prospects and Implications Meta sees Chameleon as a significant step towards unified multimodal AI."
+    }
+  ]
+}

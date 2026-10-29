@@ -5,7 +5,7 @@
   "author": "Mxysx",
   "url": "https://huggingface.co/Mxysx/lab6-trained",
   "created_at": "2026-10-21T17:13:40.000Z",
-  "updated_at": "2026-10-21T17:14:27.000Z",
+  "updated_at": "2026-10-28T14:05:07.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": 66958086,
   "parameters_human": "67.0M",
-  "storage_bytes": 803539753,
-  "storage_human": "804 MB",
+  "storage_bytes": 1607074369,
+  "storage_human": "1.6 GB",
   "base_model": "distilbert-base-uncased",
   "formats": [
     "safetensors"

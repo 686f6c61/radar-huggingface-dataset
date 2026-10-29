@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Lerelou/Supra2-100M-Base-GGUF",
+  "slug": "lerelou-supra2-100m-base-gguf",
+  "author": "Lerelou",
+  "url": "https://huggingface.co/Lerelou/Supra2-100M-Base-GGUF",
+  "created_at": "2026-10-28T20:10:17.000Z",
+  "updated_at": "2026-10-28T20:10:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "small",
+    "supra",
+    "supra2",
+    "qwen3",
+    "sota",
+    "llama.cpp",
+    "quantized",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:HuggingFaceFW/dclm_100BT-shuffled",
+    "base_model:SupraLabs/Supra2-100M-Base",
+    "base_model:quantized:SupraLabs/Supra2-100M-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 100684032,
+  "parameters_human": "100.7M",
+  "storage_bytes": 512115648,
+  "storage_human": "512 MB",
+  "base_model": "SupraLabs/Supra2-100M-Base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/?hl=fr",
+      "snippet": "Créez un compte ou connectez-vous à Instagram. Partagez ce que vous aimez avec les personnes qui ont les mêmes centres d’intérêt."
+    },
+    {
+      "title": "Instagram (@instagram) • Instagram photos and videos",
+      "url": "https://www.instagram.com/instagram/",
+      "snippet": "686M Followers, 159 Following, 8,626 Posts - Instagram (@instagram) on Instagram: \"Discover what's new on Instagram 🔎 \""
+    },
+    {
+      "title": "Instagram - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Instagram",
+      "snippet": "Explanatory notes Legally as Instagram, LLC, registered in Delaware,[3] formerly as Instagram, Inc.,[4] often colloquially shortened …"
+    },
+    {
+      "title": "Instagram - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.instagram.android&hl=en-GB",
+      "snippet": "Share what you’re up to and into on Insta®. - Keep up with friends on the fly with Stories and Notes that disappear after 24 hours. - …"
+    }
+  ]
+}

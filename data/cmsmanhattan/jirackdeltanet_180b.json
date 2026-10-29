@@ -5,7 +5,7 @@
   "author": "CMSManhattan",
   "url": "https://huggingface.co/CMSManhattan/JiRackDeltaNet_180b",
   "created_at": "2026-09-30T05:50:27.000Z",
-  "updated_at": "2026-10-27T16:39:55.000Z",
+  "updated_at": "2026-10-28T11:55:57.000Z",
   "license": "qwen-community-1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -69,7 +69,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 5862,
+  "downloads_30d": 6694,
   "trending_score": 0,
   "parameters": 176943899520,
   "parameters_human": "176.94B",

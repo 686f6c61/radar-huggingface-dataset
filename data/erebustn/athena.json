@@ -1,0 +1,107 @@
+{
+  "schema": 1,
+  "id": "ErebusTN/Athena",
+  "slug": "erebustn-athena",
+  "author": "ErebusTN",
+  "url": "https://huggingface.co/ErebusTN/Athena",
+  "created_at": "2026-10-28T23:52:44.000Z",
+  "updated_at": "2026-10-28T23:58:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ar",
+    "fr",
+    "es",
+    "de",
+    "it",
+    "pt",
+    "ru",
+    "zh",
+    "ja",
+    "ko",
+    "vi",
+    "th",
+    "id",
+    "hi",
+    "pl"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm3",
+    "text-generation",
+    "athena",
+    "egen-labs",
+    "cybersecurity",
+    "security",
+    "blue-team",
+    "edge",
+    "on-device",
+    "conversational",
+    "custom_code",
+    "en",
+    "ar",
+    "fr",
+    "es",
+    "de",
+    "it",
+    "pt",
+    "ru",
+    "zh",
+    "ja",
+    "ko",
+    "vi",
+    "th",
+    "id",
+    "hi",
+    "pl",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1728801536,
+  "parameters_human": "1.73B",
+  "storage_bytes": 3475544082,
+  "storage_human": "3.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EGen Series - Specialized AI Models | 70B Parameters | ErebusTN",
+      "url": "https://erebustn.io/",
+      "snippet": "Outperforms General Capability A precision-engineered AI ecosystem where each model is crafted for peak performance within specific professional domains. 70B parameters. 5 specialized models."
+    },
+    {
+      "title": "ErebusTN/EGen-SA1Q9 · Hugging Face",
+      "url": "https://huggingface.co/ErebusTN/EGen-SA1Q9",
+      "snippet": "📖 Overview The Athena Project (2025) represents a milestone in efficient high-performance language modeling. Developed by ErebusTN, the EGen-SA1Q9 variant is a precision-tuned model designed to deliver superior conversational capabilities and structured data processing. By leveraging Supervised Fine-Tuning (SFT), Athena has been optimized to follow complex instructions with high fidelity ..."
+    },
+    {
+      "title": "ErebusTN/EGen-SA1Q8 · Hugging Face",
+      "url": "https://huggingface.co/ErebusTN/EGen-SA1Q8",
+      "snippet": "📖 Overview The Athena Project (2025) represents a milestone in efficient high-performance language modeling. Developed by ErebusTN, the EGen-SA1Q8 variant is a precision-tuned model designed to deliver superior conversational capabilities and structured data processing. By leveraging Supervised Fine-Tuning (SFT), Athena has been optimized to follow complex instructions with high fidelity ..."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, DeepSeek, Qwen, Mistral, Z.ai, Meta, and important open-weight model families."
+    },
+    {
+      "title": "GitHub - EGen-V/Athena-CLI: By ErebusTN — The Athena Project",
+      "url": "https://github.com/EGen-V/Athena-CLI",
+      "snippet": "The Athena CLI is a sophisticated, user-friendly command-line interface designed to interact with the Athena Project models (EGen-SA1Q9 and EGen-SA1Q8). Developed by ErebusTN in 2025, this tool provides a seamless gateway to advanced language model capabilities with intuitive command management and real-time performance monitoring. The CLI abstracts away technical complexity while maintaining ..."
+    }
+  ]
+}

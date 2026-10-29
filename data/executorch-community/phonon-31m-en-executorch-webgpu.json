@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "executorch-community/Phonon-31M-EN-ExecuTorch-WebGPU",
+  "slug": "executorch-community-phonon-31m-en-executorch-webgpu",
+  "author": "executorch-community",
+  "url": "https://huggingface.co/executorch-community/Phonon-31M-EN-ExecuTorch-WebGPU",
+  "created_at": "2026-10-28T23:57:23.000Z",
+  "updated_at": "2026-10-28T23:58:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "executorch",
+  "languages": [],
+  "tags": [
+    "executorch",
+    "webgpu",
+    "on-device",
+    "browser",
+    "text-to-speech",
+    "base_model:gradium/phonon-31m-en",
+    "base_model:quantized:gradium/phonon-31m-en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 157762312,
+  "storage_human": "158 MB",
+  "base_model": "gradium/phonon-31m-en",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - pytorch/executorch: On-device AI across mobile, embedded …",
+      "url": "https://github.com/pytorch/executorch",
+      "snippet": "ExecuTorch powers on-device experiences across Instagram, WhatsApp, Facebook, and Messenger, serving billions of people. It …"
+    },
+    {
+      "title": "Welcome to the ExecuTorch Documentation",
+      "url": "https://docs.pytorch.org/executorch/stable/index.html",
+      "snippet": "Quick Start Get started with ExecuTorch — Install, export your first model, and run inference"
+    },
+    {
+      "title": "Executorch - PyTorch",
+      "url": "https://pytorch.org/projects/executorch/",
+      "snippet": "What is ExecuTorch? ExecuTorch is an end-to-end solution for enabling on-device inference capabilities across mobile and edge …"
+    },
+    {
+      "title": "ExecuTorch - On-Device AI Inference Powered by PyTorch",
+      "url": "https://executorch.ai/",
+      "snippet": "ExecuTorch is PyTorch's unified solution for deploying AI models on-device—from smartphones to microcontrollers. Deploy LLMs, …"
+    },
+    {
+      "title": "executorch · PyPI",
+      "url": "https://pypi.org/project/executorch/",
+      "snippet": "Oct 18, 2023 · ExecuTorch is a PyTorch platform that provides infrastructure to run PyTorch programs everywhere from AR/VR …"
+    }
+  ]
+}

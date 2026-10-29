@@ -1,0 +1,109 @@
+{
+  "schema": 1,
+  "id": "pbhappliedsystems/qwen-2.5-32B-instruct-gguf-F16",
+  "slug": "pbhappliedsystems-qwen-2-5-32b-instruct-gguf-f16",
+  "author": "pbhappliedsystems",
+  "url": "https://huggingface.co/pbhappliedsystems/qwen-2.5-32B-instruct-gguf-F16",
+  "created_at": "2026-04-12T09:01:39.000Z",
+  "updated_at": "2026-10-29T00:06:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "quant_eval",
+    "pbh-applied-systems",
+    "f16",
+    "full-precision",
+    "qwen",
+    "instruct",
+    "llama-cpp",
+    "agentic",
+    "tool-calling",
+    "structured-output",
+    "multilingual",
+    "quantization-degradation",
+    "behavioral-evaluation",
+    "llm-evaluation",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen2.5-32B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-32B-Instruct",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 308,
+  "trending_score": 0,
+  "parameters": 32763876352,
+  "parameters_human": "32.76B",
+  "storage_bytes": 131071939808,
+  "storage_human": "131.1 GB",
+  "base_model": "Qwen/Qwen2.5-32B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Agentic behavioral evaluation (quant_eval)",
+      "dataset": "quant_eval golden oracle fixtures (v7.22.22)",
+      "metric": "json pass rate",
+      "value": 62
+    },
+    {
+      "task": "Agentic behavioral evaluation (quant_eval)",
+      "dataset": "quant_eval golden oracle fixtures (v7.22.22)",
+      "metric": "json_multistep pass rate",
+      "value": 60
+    },
+    {
+      "task": "Agentic behavioral evaluation (quant_eval)",
+      "dataset": "quant_eval golden oracle fixtures (v7.22.22)",
+      "metric": "stateful_followup pass rate",
+      "value": 100
+    },
+    {
+      "task": "Agentic behavioral evaluation (quant_eval)",
+      "dataset": "quant_eval golden oracle fixtures (v7.22.22)",
+      "metric": "mixed_brief_json pass rate",
+      "value": 100
+    },
+    {
+      "task": "Agentic behavioral evaluation (quant_eval)",
+      "dataset": "quant_eval golden oracle fixtures (v7.22.22)",
+      "metric": "mcq pass rate",
+      "value": 100
+    },
+    {
+      "task": "Agentic behavioral evaluation (quant_eval)",
+      "dataset": "quant_eval golden oracle fixtures (v7.22.22)",
+      "metric": "toolcall pass rate",
+      "value": 94.5
+    },
+    {
+      "task": "Agentic behavioral evaluation (quant_eval)",
+      "dataset": "quant_eval golden oracle fixtures (v7.22.22)",
+      "metric": "toolcall_only pass rate",
+      "value": 99
+    },
+    {
+      "task": "Agentic behavioral evaluation (quant_eval)",
+      "dataset": "quant_eval golden oracle fixtures (v7.22.22)",
+      "metric": "fuzz pass rate",
+      "value": 63
+    }
+  ],
+  "sources": []
+}

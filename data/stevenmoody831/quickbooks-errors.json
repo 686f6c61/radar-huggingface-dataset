@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "stevenmoody831/quickbooks-errors",
+  "slug": "stevenmoody831-quickbooks-errors",
+  "author": "stevenmoody831",
+  "url": "https://huggingface.co/stevenmoody831/quickbooks-errors",
+  "created_at": "2026-10-28T23:28:14.000Z",
+  "updated_at": "2026-10-28T23:28:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - stevenmoody831/Accounting: Open-source accounting repository ...",
+      "url": "https://github.com/stevenmoody831/Accounting",
+      "snippet": "Accounting Open-source accounting repository featuring bookkeeping solutions, financial reporting, tax resources, payroll tools, invoicing, budgeting, and business finance utilities designed for developers, accountants, and entrepreneurs."
+    },
+    {
+      "title": "Steven Moody (@stevenmoody831) / Posts / X",
+      "url": "https://x.com/stevenmoody831",
+      "snippet": "Steven Moody (stevenmoody831) - Profile | Pinterest Steven Moody | Steven Moody is a tech-savvy accounting professional at Data Service Team, dedicated to resolving complex technical issues with fast and reliable support."
+    },
+    {
+      "title": "Issues · stevenmoody831/Accounting · GitHub",
+      "url": "https://github.com/stevenmoody831/Accounting/issues/",
+      "snippet": "Open-source accounting repository featuring bookkeeping solutions, financial reporting, tax resources, payroll tools, invoicing, budgeting, and business finance utilities designed for developers, a..."
+    },
+    {
+      "title": "Steven Moody Online Presentations Channel - SlideServe",
+      "url": "https://www.slideserve.com/stevenmoody831",
+      "snippet": "Steven Moody online presentations channel on SlideServe. View and share presentations and documents online."
+    },
+    {
+      "title": "AI-powered Report Insights - QuickBooks",
+      "url": "https://quickbooks.intuit.com/learn-support/en-us/help-article/business-reports/ai-powered-report-insights/L2jZq6tfM_US_en_US",
+      "snippet": "AI-powered Report Insights help you spot what matters—fast. Whether it&#x27;s a sudden dip in profits, unexpected spending, or signs of accounting errors, key trends and anomalies are automatically flagged in your Profit & Loss, and Balance Sheet reports. Each AI-powered Report Insight is based on up to 15 months of transaction data."
+    }
+  ]
+}

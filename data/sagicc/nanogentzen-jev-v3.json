@@ -5,7 +5,7 @@
   "author": "Sagicc",
   "url": "https://huggingface.co/Sagicc/nanoGentzen-Jev-v3",
   "created_at": "2026-10-28T02:24:52.000Z",
-  "updated_at": "2026-10-28T02:25:32.000Z",
+  "updated_at": "2026-10-28T21:07:32.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -35,7 +35,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 3,
   "trending_score": 0,
   "parameters": 4927780,
   "parameters_human": "4.9M",
