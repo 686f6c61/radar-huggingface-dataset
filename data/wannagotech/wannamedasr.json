@@ -1,0 +1,114 @@
+{
+  "schema": 1,
+  "id": "WannaGoTech/WannaMedASR",
+  "slug": "wannagotech-wannamedasr",
+  "author": "WannaGoTech",
+  "url": "https://huggingface.co/WannaGoTech/WannaMedASR",
+  "created_at": "2026-10-27T10:25:49.000Z",
+  "updated_at": "2026-10-29T04:36:01.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "transformers",
+    "automatic-speech-recognition",
+    "medical",
+    "radiology",
+    "clinical-dictation",
+    "french",
+    "healthcare",
+    "snomed-ct",
+    "wannamed",
+    "wannagotech",
+    "fr",
+    "dataset:WannaGoTech/WannaMedASR-French-Clinical-Benchmark",
+    "dataset:leduckhai/MultiMed",
+    "dataset:AWANNABY/French-Medical-Transcription-Benchmark",
+    "license:other",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8096120,
+  "storage_human": "8 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Clinical Dictation Gold Hold-Out Benchmark (FR - 0% Leakage)",
+      "metric": "Character Error Rate (CER %) - 99.52% Precision",
+      "value": 0.48
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Clinical Dictation Gold Hold-Out Benchmark (FR - 0% Leakage)",
+      "metric": "Word Error Rate (WER %) - 99.18% Word Accuracy",
+      "value": 0.82
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "9-Modality Clinical & Radiology Unseen Hold-Out Benchmark (36,057 Reports)",
+      "metric": "Character Error Rate (CER %) - 99.59% Precision",
+      "value": 0.41
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "9-Modality Clinical & Radiology Unseen Hold-Out Benchmark (36,057 Reports)",
+      "metric": "Word Error Rate (WER %)",
+      "value": 0.74
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Public Medical Suite Hold-Out (AWANNABY SNOMED CT + PxCorpus Zenodo 6524162)",
+      "metric": "Character Error Rate (CER %) - 99.44% Precision",
+      "value": 0.56
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Public Medical Suite Hold-Out (AWANNABY SNOMED CT + PxCorpus Zenodo 6524162)",
+      "metric": "Word Error Rate (WER %)",
+      "value": 0.89
+    }
+  ],
+  "sources": [
+    {
+      "title": "WannaGoTech/WannaMedASR · Hugging Face",
+      "url": "https://huggingface.co/WannaGoTech/WannaMedASR",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "WannaGoTech/WannaMedASR at main - Hugging Face",
+      "url": "https://huggingface.co/spaces/WannaGoTech/WannaMedASR/tree/main",
+      "snippet": "Ctrl+K Ctrl+K 1 contributor History:9 commits WannaGoTech Deploy Option B: Docker container with FastAPI streaming backend for private WannaMedASR model 4a9a340 verifiedabout 2 hours ago .taste-skillEnable real-time token-by-token streaming transcription (OpenVINO INT8 + 196 fused LoRA matrices) on custom audio uploads and microphoneabout 16 ..."
+    },
+    {
+      "title": "AI Model Release Timeline — What Shipped When | Tech Times",
+      "url": "https://www.techtimes.com/ai-timeline",
+      "snippet": "A running timeline of AI model releases — the latest models from OpenAI, Anthropic, Google, DeepSeek, Alibaba and more, newest first. Updated hourly."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Qwen, Mistral AI, Moonshot AI, Z.ai, MiniMax, NVIDIA, Microsoft AI, Cohere, Xiaomi, and other prominent AI labs. The newest-first tables show each release date, provider, and model type. Dates use the earliest meaningful availability stage for each entry. Preview access ..."
+    },
+    {
+      "title": "WannaGoTech - wannago.tech",
+      "url": "https://wannago.tech/",
+      "snippet": "WannaGoTech A digital agency specializing in custom development, branding, and digital marketing. We deliver scalable, results-driven solutions to help businesses grow, stand out, and succeed—supported by a creative, multilingual team."
+    }
+  ]
+}

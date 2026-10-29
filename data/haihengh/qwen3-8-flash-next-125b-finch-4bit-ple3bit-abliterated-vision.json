@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "haihengh/Qwen3.8-Flash-Next-125B-finch-4bit-ple3bit-abliterated-vision",
+  "slug": "haihengh-qwen3-8-flash-next-125b-finch-4bit-ple3bit-abliterated-vision",
+  "author": "haihengh",
+  "url": "https://huggingface.co/haihengh/Qwen3.8-Flash-Next-125B-finch-4bit-ple3bit-abliterated-vision",
+  "created_at": "2026-10-29T02:07:38.000Z",
+  "updated_at": "2026-10-29T02:24:19.000Z",
+  "license": "qwen-community-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "finchmoe",
+  "languages": [],
+  "tags": [
+    "finchmoe",
+    "finch",
+    "qwen3.8",
+    "qwen",
+    "moe",
+    "quantized",
+    "vision",
+    "image-text-to-text",
+    "3-bit",
+    "abliterated",
+    "base_model:windowsxp811203/Qwen3.8-Flash-Next-Abliterated",
+    "base_model:finetune:windowsxp811203/Qwen3.8-Flash-Next-Abliterated",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 89992389406,
+  "storage_human": "90.0 GB",
+  "base_model": "windowsxp811203/Qwen3.8-Flash-Next-Abliterated",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "haihengh/Qwen3.8-Flash-Next-125B-finch-4bit-ple2bit · Hugging Face",
+      "url": "https://huggingface.co/haihengh/Qwen3.8-Flash-Next-125B-finch-4bit-ple2bit",
+      "snippet": "Qwen3.8-Flash-Next-125B — FinchMoE 2-bit routed experts (ple2bit) A FinchMoE install of Qwen3.8-Flash-Next-125B (a 48-layer MoE, 512 experts) repacked into the .finch format for SSD-streaming inference on memory-constrained Apple Silicon. Everything is int4/int8 affine, with the routed experts at int2 (four values per byte, group-64 affine, BF16 scale+bias)."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next-125B-finch-4bit-ple2bit-abliterated-vision",
+      "url": "https://huggingface.co/haihengh/Qwen3.8-Flash-Next-125B-finch-4bit-ple2bit-abliterated-vision/tree/main/ple_shards",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8-Flash-Next: Qwen3.8-Flash-Next is the ...",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next — open 125B MoE with 6B… | Blog Network",
+      "url": "https://blog.toolsnetwork.ai/releases/qwen-3-8-flash-next/",
+      "snippet": "Qwen3.8-Flash-Next is an open-weights 125B mixture-of-experts model that activates only 6B parameters per token and previews the Qwen4 architecture. It scores 62.5 on SWE-bench Pro, against 53.4 for Claude-Opus-4.6 (Max)."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next — open 125B MoE with 6B… | AI/TLDR",
+      "url": "https://ai-tldr.dev/releases/qwen-3-8-flash-next/",
+      "snippet": "The model has 125B total parameters but activates 6B per token, plus 51B of n-gram embedding parameters and a 4B multi-token-prediction head. Qwen ships it as an early look at the Qwen4 architecture so the community can prepare for the full Qwen4 family."
+    }
+  ]
+}

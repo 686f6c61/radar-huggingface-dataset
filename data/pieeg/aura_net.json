@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "pieeg/Aura_Net",
+  "slug": "pieeg-aura_net",
+  "author": "pieeg",
+  "url": "https://huggingface.co/pieeg/Aura_Net",
+  "created_at": "2026-10-29T01:26:13.000Z",
+  "updated_at": "2026-10-29T01:31:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "emg",
+    "surface-emg",
+    "gesture-recognition",
+    "hand-pose",
+    "wearable",
+    "onnx",
+    "pieeg",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pieeg/Aura_Net · Hugging Face",
+      "url": "https://huggingface.co/pieeg/Aura_Net",
+      "snippet": "Machine learning model, built with PyTorch. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "AURA-Net: Rapid and Accurate Corpus Callosum Segmentation",
+      "url": "https://github.com/AzureMind-AI/Corpus-callosum-segmentation",
+      "snippet": "This project presents AURA-Net, a novel deep learning approach for segmenting the corpus callosum (CC) in brain MRI images. We developed a custom U-Net-based architecture that integrates Residual blocks, Attention gates, Atrous Spatial Pyramid Pooling (ASPP), and Deep Supervision. Our model significantly improves segmentation accuracy, outperforming existing state-of-the-art methods (Classic U ..."
+    },
+    {
+      "title": "PiEEG — Low-Cost Brain-Computer Interface Hardware for Research",
+      "url": "https://www.pieeg.com/",
+      "snippet": "MCP Model Context Protocol PiEEG Server Python, the core Dashboard browser UI PiEEG Cloud cloud.pieeg.com Online Simulation scripted EEG, no hardware Buddy browser AI agent PiEEG Agent AI lab notebook bioIDE browser IDE PiEEG XR face interface Aura VR wrist EMG + IMU BioPose camera pose + bio BodyPress phone and headset app Local Bridge Rust, 5 MB pieeg.js browser SDK WebSocket APIthe contract ..."
+    },
+    {
+      "title": "Aura VR - Muscle and motion for XR",
+      "url": "https://aura.pieeg.com/",
+      "snippet": "A wristband with eight EMG channels at 250 Hz, plus accelerometer, gyroscope, and magnetometer at 125 Hz. Muscle and motion, streamed live into VR."
+    },
+    {
+      "title": "GitHub - pieeg-club/PiEEG-agent: Agentic middleware for Brain-Computer ...",
+      "url": "https://github.com/pieeg-club/PiEEG-agent",
+      "snippet": "PiEEG-agent Natural language EEG lab notebook. Train pattern classifiers, analyze connectivity, compare sessions — all by talking to an AI copilot that reads your live brain signals."
+    }
+  ]
+}

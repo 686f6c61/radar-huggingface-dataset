@@ -5,7 +5,7 @@
   "author": "p4ulbr4dl3y",
   "url": "https://huggingface.co/p4ulbr4dl3y/unlimited-ocr-2-ru-gguf",
   "created_at": "2026-10-27T17:15:59.000Z",
-  "updated_at": "2026-10-27T22:33:06.000Z",
+  "updated_at": "2026-10-28T08:38:09.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -33,13 +33,13 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 0,
-  "downloads_30d": 0,
+  "likes": 3,
+  "downloads_30d": 94,
   "trending_score": 0,
   "parameters": 2938670848,
   "parameters_human": "2.94B",
-  "storage_bytes": 6110328242,
-  "storage_human": "6.1 GB",
+  "storage_bytes": 6217282456,
+  "storage_human": "6.2 GB",
   "base_model": "baidu/Unlimited-OCR-2",
   "formats": [
     "gguf"

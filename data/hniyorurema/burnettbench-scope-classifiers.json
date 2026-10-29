@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "hniyorurema/burnettbench-scope-classifiers",
+  "slug": "hniyorurema-burnettbench-scope-classifiers",
+  "author": "hniyorurema",
+  "url": "https://huggingface.co/hniyorurema/burnettbench-scope-classifiers",
+  "created_at": "2026-10-29T01:59:05.000Z",
+  "updated_at": "2026-10-29T03:22:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "llms-txt",
+    "scope-classifier",
+    "rag",
+    "benchmark",
+    "text-classification",
+    "en",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2142891658,
+  "storage_human": "2.1 GB",
+  "base_model": "distilbert/distilbert-base-uncased",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "یافتن برنامه «فروشگاه Google Play» - Google Play راهنما",
+      "url": "https://support.google.com/googleplay/answer/190860?hl=fa",
+      "snippet": "برنامه «فروشگاه Play» را باز کنید در دستگاه، به بخش «برنامه‌ها» بروید؛ روی «فروشگاه Google Play» ضربه بزنید؛ برنامه باز خواهد شد و می‌توانید محتوا برای بارگیری را …"
+    },
+    {
+      "title": "برطرف کردن مشکل برنامه Android نصب‌شده‌ای که کار نمی‌کند",
+      "url": "https://support.google.com/android/answer/2668665?hl=fa",
+      "snippet": "بررسی کنید آیا به‌روزرسانی برای برنامه «دوربین» دردسترس است: برنامه «فروشگاه Google Play» را باز کنید. در بالا سمت چپ، روی نماد نمایه ضربه بزنید. روی مدیریت برنامه‌ها و …"
+    },
+    {
+      "title": "عیب‌یابی کردن خطاهای ویدیو YouTube - YouTube راهنما",
+      "url": "https://support.google.com/youtube/answer/3037019?hl=fa",
+      "snippet": "بااین‌حال، می‌توانید به‌صورت دستی فروشگاه برنامه‌های دستگاهتان را بررسی کنید تا ببینید برای برنامه YouTube به‌روزرسانی‌ای دردسترس هست یا نه."
+    },
+    {
+      "title": "Google Play راهنما",
+      "url": "https://support.google.com/googleplay/?hl=fa",
+      "snippet": "Official Google Play Help Center where you can find tips and tutorials on using Google Play and other answers to frequently asked …"
+    },
+    {
+      "title": "Find the Google Play Store app",
+      "url": "https://support.google.com/googleplay/answer/190860?hl=en",
+      "snippet": "On your device, go to the Apps section. Tap Google Play Store . The app will open and you can search and browse for content to …"
+    }
+  ]
+}

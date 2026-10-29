@@ -5,7 +5,7 @@
   "author": "nm-testing",
   "url": "https://huggingface.co/nm-testing/TinyLlama-1.1B-Chat-v1.0-W8A8_channel_weight_static_per_tensor-e2e",
   "created_at": "2026-07-24T23:39:08.000Z",
-  "updated_at": "2026-10-09T18:37:42.000Z",
+  "updated_at": "2026-10-27T17:09:01.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -19,12 +19,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 30,
+  "downloads_30d": 44,
   "trending_score": 0,
   "parameters": 1100048384,
   "parameters_human": "1.10B",
-  "storage_bytes": 4928735771,
-  "storage_human": "4.9 GB",
+  "storage_bytes": 7392853795,
+  "storage_human": "7.4 GB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "YuminKim/omx-setup",
+  "slug": "yuminkim-omx-setup",
+  "author": "YuminKim",
+  "url": "https://huggingface.co/YuminKim/omx-setup",
+  "created_at": "2026-10-29T02:25:25.000Z",
+  "updated_at": "2026-10-29T02:25:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 620,
+  "storage_human": "620 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "$omx-setup — OMX Docs",
+      "url": "https://omx.vibetip.help/docs/skills/utility/omx-setup",
+      "snippet": "A skill that installs or updates OMX prompts, skills, and configuration."
+    },
+    {
+      "title": "GitHub - YvanKOB/oumi---oumi-ai: Everything you need to build state-of ...",
+      "url": "https://github.com/YvanKOB/oumi---oumi-ai",
+      "snippet": "Everything you need to build state-of-the-art foundation models, end-to-end. Oumi is a fully open-source platform that streamlines the entire lifecycle of foundation models - from data preparation and training to evaluation and deployment. Whether you&#x27;re developing on a laptop, launching large scale experiments on a cluster, or deploying models in production, Oumi provides the tools and ..."
+    },
+    {
+      "title": "GitHub - Yeachan-Heo/oh-my-codex: OmX - Oh My codeX: Your codex is not ...",
+      "url": "https://github.com/Yeachan-Heo/oh-my-codex",
+      "snippet": "Start Codex stronger, then let OMX add better prompts, workflows, and runtime help when the work grows. Liked OmX but find it a bit overkill? Try gajae-code. Keep Codex OAuth with a faster, cheaper, simpler, and more powerful SDK-based path for OpenClaw, Hermes, Grokbot, and other integrations ..."
+    },
+    {
+      "title": "Tutorials — Oumi OSS",
+      "url": "https://oumi.ai/docs/en/latest/get_started/tutorials.html",
+      "snippet": "Tutorials # Explore the growing collection of ready-to-use configurations for state-of-the-art models and training workflows:"
+    },
+    {
+      "title": "Model System | oumi-ai/oumi | DeepWiki",
+      "url": "https://deepwiki.com/oumi-ai/oumi/4.2-model-system",
+      "snippet": "The Model System provides the infrastructure for loading, configuring, and preparing models for training and inference. It supports both HuggingFace Hub models and custom Oumi-registered models, with"
+    }
+  ]
+}

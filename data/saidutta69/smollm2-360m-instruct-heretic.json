@@ -5,7 +5,7 @@
   "author": "saidutta69",
   "url": "https://huggingface.co/saidutta69/SmolLM2-360M-Instruct-heretic",
   "created_at": "2026-10-09T23:26:30.000Z",
-  "updated_at": "2026-10-10T06:03:54.000Z",
+  "updated_at": "2026-10-28T18:01:09.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -39,7 +39,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 1022,
+  "downloads_30d": 1058,
   "trending_score": 0,
   "parameters": 361821120,
   "parameters_human": "361.8M",

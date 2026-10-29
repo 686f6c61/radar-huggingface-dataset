@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "shivrajgurjar/Arjuna-V2",
+  "slug": "shivrajgurjar-arjuna-v2",
+  "author": "shivrajgurjar",
+  "url": "https://huggingface.co/shivrajgurjar/Arjuna-V2",
+  "created_at": "2026-10-29T10:41:16.000Z",
+  "updated_at": "2026-10-29T10:58:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 22,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Carte du Moyen-Orient avec les pays - Cartograf.fr",
+      "url": "https://www.cartograf.fr/carte_moyen_orient.php",
+      "snippet": "Consultez une grande carte du Moyen-Orient avec les pays, les villes, les capitales ou une carte simple avec les climats, religions et …"
+    },
+    {
+      "title": "Moyen-Orient Carte",
+      "url": "https://fr.mapsofworld.com/carte-du-moyen-orient.html",
+      "snippet": "Moyen-Orient Carte montrant les pays du Moyen-Orient avec leurs Etats, capitales nationales, les frontières internationales, les eaux …"
+    },
+    {
+      "title": "Moyen-Orient - Atlas & cartes - Encyclopédie Universalis",
+      "url": "https://www.universalis.fr/atlas/asie/moyen-orient/",
+      "snippet": "Moyen-Orient : Carte de situation du Moyen-Orient, Carte générale du Moyen-Orient, Carte politique du Moyen-Orient, Carte …"
+    },
+    {
+      "title": "Moyen-Orient — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Moyen-Orient",
+      "snippet": "Le « Moyen-Orient – Afrique du Nord » (Middle East-North Africa [MENA]), terme parfois utilisé, comprend la zone allant du Maroc à …"
+    },
+    {
+      "title": "Carte du Moyen-Orient interactive - GeographyQuiz.io",
+      "url": "https://geographyquiz.io/fr/carte-moyen-orient",
+      "snippet": "Carte du Moyen-Orient interactive avec les 17 pays et leurs capitales. Touche un pays pour voir son drapeau, sa population, ses …"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "promotion/Qwen2.5-Math-1.5B-NBIVO-seed43",
+  "slug": "promotion-qwen2-5-math-1-5b-nbivo-seed43",
+  "author": "promotion",
+  "url": "https://huggingface.co/promotion/Qwen2.5-Math-1.5B-NBIVO-seed43",
+  "created_at": "2026-10-29T01:55:15.000Z",
+  "updated_at": "2026-10-29T01:58:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "nb-ivo",
+    "gn-ivo",
+    "nbpo",
+    "alignment",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-Math-1.5B",
+    "base_model:finetune:Qwen/Qwen2.5-Math-1.5B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 3565636644,
+  "storage_human": "3.6 GB",
+  "base_model": "Qwen/Qwen2.5-Math-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Promos & Catalogues de vos magasins sont en ligne sur bonial.fr !",
+      "url": "https://www.bonial.fr/",
+      "snippet": "8 hours ago · Catalogues & Promos des plus grandes enseignes au même endroit ! Feuilletez, préparez vos achats et économisez …"
+    },
+    {
+      "title": "Définitions : promotion, promotions - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/promotion/64301",
+      "snippet": "Nomination ou accession de quelqu'un à un grade supérieur, à une fonction plus importante sur le plan hiérarchique ou sur celui des …"
+    },
+    {
+      "title": "promotion - Définitions, synonymes, prononciation, exemples | Dico en ...",
+      "url": "https://dictionnaire.lerobert.com/definition/promotion",
+      "snippet": "Définition, exemples et prononciation de promotion : Fait de parvenir à un grade, un emploi supérieur.…"
+    },
+    {
+      "title": "promotion — Wiktionnaire, le dictionnaire libre",
+      "url": "https://fr.wiktionary.org/wiki/promotion",
+      "snippet": "Nous sommes de la même promotion de l’école normale, de l’école de Saint-Cyr. Camarades de promotion. Ajouter un exemple …"
+    },
+    {
+      "title": "Promotion — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Promotion",
+      "snippet": "la promotion de la santé, processus qui confère aux populations les moyens d'assurer un plus grand contrôle sur leur propre santé ; …"
+    }
+  ]
+}

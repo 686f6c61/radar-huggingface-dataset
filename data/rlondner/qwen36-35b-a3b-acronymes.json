@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "rlondner/qwen36-35b-a3b-acronymes",
+  "slug": "rlondner-qwen36-35b-a3b-acronymes",
+  "author": "rlondner",
+  "url": "https://huggingface.co/rlondner/qwen36-35b-a3b-acronymes",
+  "created_at": "2026-10-29T01:38:11.000Z",
+  "updated_at": "2026-10-29T06:15:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "hf_jobs",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 623383322,
+  "storage_human": "623 MB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rlondner/qwen35-4b-acronyms at main - Hugging Face",
+      "url": "https://huggingface.co/rlondner/qwen35-4b-acronyms/tree/main",
+      "snippet": "Notebooks Google Colab Kaggle main qwen35-4b-acronyms 720 MB Ctrl+K Ctrl+K 1 contributor History:8 commits rlondner Model save 4c2ac4a verifiedabout 9 hours ago last-checkpointTraining in progress, epoch 3, checkpointabout 9 hours ago .gitattributes Safe 1.57 kBTraining in progress, epoch 1about 9 hours ago README.md 1.42 kBTraining in progress, epoch 1about 9 hours ago adapter_config.json 1. ..."
+    },
+    {
+      "title": "qvping/qwen36-35b-a3b • LM Studio Hub",
+      "url": "https://lmstudio.ai/qvping/qwen36-35b-a3b",
+      "snippet": "Qwen3.6 prioritizes stability and real-world utility, offering developers a more intuitive, responsive, and genuinely productive coding experience."
+    },
+    {
+      "title": "Qwen 3.6 35B A3B — 35B MoE LLM | FitMyLLM",
+      "url": "https://www.fitmyllm.com/model/qwen3.6-35b-a3b",
+      "snippet": "Qwen 3.6 35B A3B: 35B parameters, 256K context, chat, coding, reasoning, multilingual, vision, math, tool_use. 21 benchmarks, 14 quantizations. VRAM requirements ..."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B: The Tiny-Active Open Model That Thinks ... - Medium",
+      "url": "https://medium.com/data-science-in-your-pocket/qwen3-6-35b-a3b-the-tiny-active-open-model-that-thinks-codes-and-agents-like-a-much-bigger-one-486d535e372e",
+      "snippet": "The significance of Qwen3.6-35B-A3B is that it aims to deliver frontier-style coding and agent performance with only 3B active parameters. That makes it attractive for real deployment because it ..."
+    },
+    {
+      "title": "Qwen3.6 35B A3B — AI Model Radar",
+      "url": "https://aimodelradar.app/models/qwen3-6-35b-a3b",
+      "snippet": "Qwen3.6 35B A3B is an open-weight multimodal model from Alibaba Cloud with 35 billion total parameters and 3 billion active parameters per token, featuring a hybrid sparse mixture-of-experts architecture. The model supports text, image, and video inputs with a 262K token native context window and integrated thinking mode with reasoning traces. It is available across 7 API providers starting at ..."
+    }
+  ]
+}

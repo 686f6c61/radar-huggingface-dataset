@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "axteam/Qwen3.5-4B-AWQ-4bit",
+  "slug": "axteam-qwen3-5-4b-awq-4bit",
+  "author": "axteam",
+  "url": "https://huggingface.co/axteam/Qwen3.5-4B-AWQ-4bit",
+  "created_at": "2026-10-29T01:57:43.000Z",
+  "updated_at": "2026-10-29T02:00:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen",
+    "compressed-tensors",
+    "vllm",
+    "quantized",
+    "conversational",
+    "multimodal",
+    "awq",
+    "int4",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:quantized:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 4257931638,
+  "storage_human": "4.3 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "axteam/Qwen3.5-4B-AWQ-4bit · Hugging Face",
+      "url": "https://huggingface.co/axteam/Qwen3.5-4B-AWQ-4bit",
+      "snippet": "Image-Text-to-Text model with 5B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "Qwen3.5-4B-AWQ-4bit · Models",
+      "url": "https://www.modelscope.cn/models/cyankiwi/Qwen3.5-4B-AWQ-4bit/summary",
+      "snippet": "Qwen3.5 Highlights Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    },
+    {
+      "title": "Qwen3.5-4B - VRAM Requirements, Specs & Benchmarks",
+      "url": "https://apxml.com/models/qwen35-4b",
+      "snippet": "Qwen3.5-4B specifications, context length, benchmark scores, and GPU VRAM requirements across quantizations."
+    },
+    {
+      "title": "Qwen3.5-4B: The Small AI Model That Thinks, Sees, and Runs on Your ...",
+      "url": "https://firethering.com/qwen3-5-4b-local-ai-model/",
+      "snippet": "Qwen3.5-4B doesn&#x27;t seem to have gotten that memo. Alibaba just dropped Qwen3.5, and the 4B version is the one worth paying attention to. It thinks before it answers, reads images and video, handles 201 languages, and sits on a context window of 262,144 tokens, longer than most models ten times its size."
+    },
+    {
+      "title": "Qwen3.5-4B-AWQ-4bit — Use Cases, Pros & Cons | AI Tools Directory",
+      "url": "https://aiappdex.com/models/cyankiwi-qwen3-5-4b-awq-4bit/",
+      "snippet": "Qwen3.5-4B-AWQ-4bit by cyankiwi: AWQ 4-bit quantization of Qwen3.5-4B, a dense multimodal model supporting image-text-to-text tasks. At 4B parameters with AWQ compression, inference fits within ~4 GB VRAM, making it accessible on mid-range consumer cards. compressed-tensors format targets vLLM servi"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "User01110/rv32cpu",
+  "slug": "user01110-rv32cpu",
+  "author": "User01110",
+  "url": "https://huggingface.co/User01110/rv32cpu",
+  "created_at": "2026-10-29T10:32:43.000Z",
+  "updated_at": "2026-10-29T10:32:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "risc-v",
+    "neural-computer",
+    "compiled-weights",
+    "exact-computation",
+    "micropython",
+    "gated-delta-network",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12320462,
+  "storage_human": "12 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "User01110 (User_10) - Hugging Face",
+      "url": "https://huggingface.co/User01110",
+      "snippet": "AI & ML interests ... Recent Activity published a model about 13 hours ago ... published a model about 19 hours ago"
+    },
+    {
+      "title": "User01110/100M-exp · Hugging Face",
+      "url": "https://huggingface.co/User01110/100M-exp",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Graphics Driver 32.0.101.8626 Issue with training AI Models",
+      "url": "https://community.intel.com/t5/Intel-Arc-Discrete-Graphics/Graphics-Driver-32-0-101-8626-Issue-with-training-AI-Models/m-p/1745589",
+      "snippet": "Hello LukeT, I hope you are doing well. I wanted to follow up regarding our previous communication about the graphics driver version 32..101.8724 and the recommended troubleshooting steps. Could you please let us know if you had the opportunity to test the latest driver using the clean instal..."
+    },
+    {
+      "title": "User01110/tinyML-1.1-3M-exp API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/User01110/tinyML-1.1-3M-exp",
+      "snippet": "Run User01110/tinyML-1.1-3M-exp with FriendliAI inference. Tiny decoder-only language model trained from scratch with a Qwen3 backbone, an extra depth-level…"
+    },
+    {
+      "title": "RunMyAIModel | AI Hardware Calculator",
+      "url": "https://www.runmyaimodel.com/",
+      "snippet": "Calculate and find the perfect open-source AI models that fit your GPU&#x27;s VRAM. Filter by speed, context window, reasoning, and system RAM for local inference."
+    }
+  ]
+}

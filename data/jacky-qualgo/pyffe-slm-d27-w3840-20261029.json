@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "jacky-qualgo/pyffe-slm-d27-w3840-20261029",
+  "slug": "jacky-qualgo-pyffe-slm-d27-w3840-20261029",
+  "author": "jacky-qualgo",
+  "url": "https://huggingface.co/jacky-qualgo/pyffe-slm-d27-w3840-20261029",
+  "created_at": "2026-10-29T02:06:26.000Z",
+  "updated_at": "2026-10-29T02:20:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "bonsai",
+    "qwen3",
+    "structured-pruning",
+    "lora",
+    "q1_0",
+    "sms",
+    "fraud-detection",
+    "text-generation",
+    "base_model:jacky-qualgo/pyffe-slm-20271027",
+    "base_model:quantized:jacky-qualgo/pyffe-slm-20271027",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6193152,
+  "parameters_human": "6.2M",
+  "storage_bytes": 2811201029,
+  "storage_human": "2.8 GB",
+  "base_model": "jacky-qualgo/pyffe-slm-20271027",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jacky (animateur) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Jacky_(animateur)",
+      "snippet": "En 2007, Jacky publie sa biographie : Docteur Jacky et Mister Rock, qui revient sur son parcours, ses rencontres et ses différentes …"
+    },
+    {
+      "title": "Jacky : biographie, actus, photos et vidéos sur Voici.fr",
+      "url": "https://www.voici.fr/bios-people/jacky",
+      "snippet": "Mieux connu sous le nom de Jacky, Jacques Jakubowicz, né 1948, a participé, dans les années 1980 et 1990, aux émissions liées …"
+    },
+    {
+      "title": "Prénom Jacky (garçon) : signification, origine, caractère, saint, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/jacky/prenom-4078",
+      "snippet": "Quelle est l'origine du prénom Jacky ? Le prénom Jacky est dérivé du prénom hébraïque Ya'aqov. Ce prénom est également un nom …"
+    },
+    {
+      "title": "\"Jacky, est-ce que je peux t'embrasser ?\" : les révélations ... - Voici",
+      "url": "https://www.voici.fr/celebrites/jacky-est-ce-que-je-peux-t-embrasser-les-revelations-de-l-animateur-jacques-jakubowicz-sur-son-baiser-surprise-avec-mylene-farmer-825117",
+      "snippet": "Jun 16, 2026 · Jacques Jakubowicz, dit Jacky, s’est notamment confié sur les secrets de son étroite complicité avec Mylène Farmer …"
+    },
+    {
+      "title": "Jacky — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Jacky",
+      "snippet": "Jacky est un prénom masculin dérivé de Jack, forme ancienne de Jacques dans l'est de la France 1. C'est également un diminutif de …"
+    }
+  ]
+}

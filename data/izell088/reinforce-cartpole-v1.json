@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Izell088/Reinforce-CartPole-v1",
+  "slug": "izell088-reinforce-cartpole-v1",
+  "author": "Izell088",
+  "url": "https://huggingface.co/Izell088/Reinforce-CartPole-v1",
+  "created_at": "2026-10-29T02:27:52.000Z",
+  "updated_at": "2026-10-29T02:28:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "CartPole-v1",
+    "reinforce",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-class",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3657,
+  "storage_human": "3657 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Izell088/Reinforce-CartPole-v1 · Hugging Face",
+      "url": "https://huggingface.co/Izell088/Reinforce-CartPole-v1",
+      "snippet": "Reinforcement Learning model. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "tinywell/Reinforce-CartPole-v1 · Hugging Face",
+      "url": "https://huggingface.co/tinywell/Reinforce-CartPole-v1",
+      "snippet": "tinywell / Reinforce-CartPole-v1 like 0 Reinforcement Learning CartPole-v1 reinforce custom-implementation deep-rl-class Eval Results Model card FilesFiles and versions Community Edit model card Reinforce Agent playing CartPole-v1"
+    },
+    {
+      "title": "weilc/Reinforce-cartpole - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/373565",
+      "snippet": "This is a trained model of a Reinforce agent playing CartPole-v1 . To learn to use this model and train yours check Unit 4 of the Deep Reinforcement Learning Course: https://huggingface.co/deep-rl-course/unit4/introduction"
+    },
+    {
+      "title": "GitHub - GameAIChronicles/Imitation-learning-Cartpole: This repository ...",
+      "url": "https://github.com/GameAIChronicles/Imitation-learning-Cartpole",
+      "snippet": "This repository provides a complete pipeline for training a CartPole-v1 agent using a combination of Reinforcement Learning and Imitation Learning. It includes scripts to train an expert PPO model, extract 10,000 steps of expert trajectory data, and train a new policy using Behavioral Cloning (BC) before fine-tuning it further with PPO."
+    },
+    {
+      "title": "GitHub - Oridaniel10/CartPole-RL-Imitation-Learning_reinforcment ...",
+      "url": "https://github.com/Oridaniel10/CartPole-RL-Imitation-Learning_reinforcment_learning",
+      "snippet": "This repository contains implementations of reinforcement learning (RL) and imitation learning to solve the CartPole-v1 environment using deep learning techniques."
+    }
+  ]
+}

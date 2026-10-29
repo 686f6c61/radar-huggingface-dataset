@@ -5,7 +5,7 @@
   "author": "qiusizhan",
   "url": "https://huggingface.co/qiusizhan/checkpoint-eb-clean-001",
   "created_at": "2026-10-27T18:18:27.000Z",
-  "updated_at": "2026-10-28T00:20:29.000Z",
+  "updated_at": "2026-10-28T16:21:48.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 4,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

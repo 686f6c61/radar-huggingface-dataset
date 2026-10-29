@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "precipi/qwen35-ft",
+  "slug": "precipi-qwen35-ft",
+  "author": "precipi",
+  "url": "https://huggingface.co/precipi/qwen35-ft",
+  "created_at": "2026-10-29T01:52:27.000Z",
+  "updated_at": "2026-10-29T01:54:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3.5-0.8B",
+    "base_model:finetune:unsloth/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 873438784,
+  "parameters_human": "873.4M",
+  "storage_bytes": 1766931925,
+  "storage_human": "1.8 GB",
+  "base_model": "unsloth/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alibaba unveils Qwen3.5 as China&#x27;s chatbot race shifts to AI agents",
+      "url": "https://www.cnbc.com/2026/02/17/china-alibaba-qwen-ai-agent-latest-model.html",
+      "snippet": "Alibaba Group has released its newest AI model series, featuring new agentic capabilities, as competition in China&#x27;s AI space ramps up."
+    },
+    {
+      "title": "Alibaba unveils new Qwen3.5 model for &#x27;agentic AI era&#x27; | Reuters",
+      "url": "https://www.reuters.com/world/china/alibaba-unveils-new-qwen35-model-agentic-ai-era-2026-02-16/",
+      "snippet": "Alibaba on Monday unveiled a new artificial intelligence model Qwen 3.5 designed to execute complex tasks independently, with big improvements in performance and cost that the Chinese tech giant ..."
+    },
+    {
+      "title": "Qwen3.5 Model Series 2026: Complete Guide to Flash, 27B, 35B-A3B and ...",
+      "url": "https://explore.n1n.ai/blog/qwen3-5-model-series-2026-guide-2026-02-25",
+      "snippet": "An in-depth technical analysis of Alibaba&#x27;s Qwen3.5 release, covering MoE efficiency, native multimodal architecture, and deployment strategies for the 2026 AI landscape."
+    },
+    {
+      "title": "Qwen 3.5 API Complete Guide (2026): Models & Pricing",
+      "url": "https://kissapi.ai/blog/qwen-3-5-api-complete-guide-2026.html",
+      "snippet": "Complete guide to the Qwen 3.5 model family in 2026. Covers all 10+ models from 0.8B to 397B, API pricing across providers, setup with Python and Node.js, and local deployment with Ollama."
+    },
+    {
+      "title": "Global AI race heats up as Chinese tech giant releases new model",
+      "url": "https://www.scmp.com/tech/big-tech/article/3343738/alibaba-unveils-qwen-35-sharpening-global-race-spread-ai-models",
+      "snippet": "With multimodal capabilities and open weights, Qwen-3.5 signals Alibaba&#x27;s ambition to anchor the next phase of global AI deployment."
+    }
+  ]
+}

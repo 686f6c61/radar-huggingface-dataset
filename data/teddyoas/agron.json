@@ -5,7 +5,7 @@
   "author": "teddyoas",
   "url": "https://huggingface.co/teddyoas/Agron",
   "created_at": "2026-10-13T12:07:01.000Z",
-  "updated_at": "2026-10-26T13:04:30.000Z",
+  "updated_at": "2026-10-28T10:08:16.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -26,7 +26,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 1194,
+  "downloads_30d": 1219,
   "trending_score": 0,
   "parameters": 50340352,
   "parameters_human": "50.3M",

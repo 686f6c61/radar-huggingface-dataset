@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "model-rampage/BareTorch-Qwen3.5-0.8B-Hybrid",
+  "slug": "model-rampage-baretorch-qwen3-5-0-8b-hybrid",
+  "author": "model-rampage",
+  "url": "https://huggingface.co/model-rampage/BareTorch-Qwen3.5-0.8B-Hybrid",
+  "created_at": "2026-10-29T01:43:26.000Z",
+  "updated_at": "2026-10-29T02:41:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "baretorch_hybrid",
+    "text-generation",
+    "qwen3.5",
+    "qwen",
+    "baretorch",
+    "cs-lrad",
+    "linear-attention",
+    "hybrid-architecture",
+    "knowledge-distillation",
+    "grpo",
+    "reasoning",
+    "edge-ai",
+    "conversational",
+    "custom_code",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 916279584,
+  "parameters_human": "916.3M",
+  "storage_bytes": 5517782909,
+  "storage_human": "5.5 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Définition de model | Dictionnaire français - La langue française",
+      "url": "https://www.lalanguefrancaise.com/dictionnaire/definition/model",
+      "snippet": "Définition de model : dictionnaire, étymologie, phonétique, citations littéraires, synonymes et antonymes de « model »"
+    },
+    {
+      "title": "Définitions : modèle - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/mod%c3%a8le/51916",
+      "snippet": "modèle - Définitions Français : Retrouvez la définition de modèle, ainsi que les synonymes, homonymes, expressions, difficultés, …"
+    },
+    {
+      "title": "Models.com - The faces of fashion - top model rankings, modeling ...",
+      "url": "https://models.com/",
+      "snippet": "Models.com is one of the most influential fashion news sites and creative resources within the fashion industry, with an extensive …"
+    },
+    {
+      "title": "Oups Model maquette et modèles réduits - Oupsmodel",
+      "url": "https://www.oupsmodel.com/",
+      "snippet": "Lanmo Model maquette militaire LM35031 Blindage en bois pour Char... 23,50 € Voir Nouveau Comparer Ajouter à ma wishlist"
+    },
+    {
+      "title": "model - English-French Dictionary WordReference.com",
+      "url": "https://www.wordreference.com/enfr/model",
+      "snippet": "Inflections of ' model ' (v): (⇒ conjugate) When both \"l\" and \"ll\" forms exist, spellings with a double \"l\" are correct, but rare, in US …"
+    }
+  ]
+}

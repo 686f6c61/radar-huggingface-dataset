@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "engageassume/aloha",
+  "slug": "engageassume-aloha",
+  "author": "engageassume",
+  "url": "https://huggingface.co/engageassume/aloha",
+  "created_at": "2026-10-29T10:17:43.000Z",
+  "updated_at": "2026-10-29T10:17:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, DeepSeek, Qwen, Mistral, Z.ai, Meta, and important open-weight model families."
+    },
+    {
+      "title": "engageassume (enagage) - Hugging Face",
+      "url": "https://huggingface.co/engageassume/datasets",
+      "snippet": "User profile of enagage on Hugging Face"
+    },
+    {
+      "title": "ALOHA: from Attention to Likes - a unified mOdel for understanding ...",
+      "url": "https://arxiv.org/html/2312.10175v2",
+      "snippet": "Abstract Progress in human behavior modeling involves understanding both implicit, early-stage perceptual behavior such as human attention and explicit, later-stage behavior such as subjective preferences/likes. Yet, most prior research has focused on modeling implicit and explicit human behavior in isolation; and often limited to a specific type of visual content. Can we build a unified model ..."
+    },
+    {
+      "title": "ALOHA tool uses GenAI to emulate adversaries - itbrew.com",
+      "url": "https://www.itbrew.com/stories/2026/02/06/aloha-tool-uses-genai-to-emulate-adversaries",
+      "snippet": "Cybersecurity ALOHA tool uses GenAI to emulate adversaries PNNL project leads Loc Truong and Kris Willis share how their research may help small IT teams in particular."
+    },
+    {
+      "title": "lerobot/act_aloha_sim_insertion_human · Hugging Face",
+      "url": "https://huggingface.co/lerobot/act_aloha_sim_insertion_human",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

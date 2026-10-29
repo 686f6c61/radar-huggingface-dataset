@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Jack-2002/scottyrl-a3-p5_textcraft_grpo",
+  "slug": "jack-2002-scottyrl-a3-p5_textcraft_grpo",
+  "author": "Jack-2002",
+  "url": "https://huggingface.co/Jack-2002/scottyrl-a3-p5_textcraft_grpo",
+  "created_at": "2026-10-29T01:39:52.000Z",
+  "updated_at": "2026-10-29T01:39:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "tinker",
+    "lora",
+    "scottyrl",
+    "11-768",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 169907128,
+  "storage_human": "170 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jack (film, 1996) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Jack_(film,_1996)",
+      "snippet": "Synopsis Jack Powell n'a que dix ans, mais son corps vieillit quatre fois plus vite que la normale. Cette étrange maladie, une forme …"
+    },
+    {
+      "title": "JACK & JONES - Vêtements & chaussures pour homme | Site official",
+      "url": "https://www.jackjones.com/fr-fr",
+      "snippet": "Bienvenue chez JACK & JONES, votre destination incontournable pour les vêtements homme : alliez style et confiance au quotidien. …"
+    },
+    {
+      "title": "Jack - Film 1996 - AlloCiné",
+      "url": "https://www.allocine.fr/film/fichefilm_gen_cfilm=16143.html",
+      "snippet": "Jack est un film réalisé par Francis Ford Coppola avec Robin Williams, Diane Lane. Synopsis : L'histoire de Jack, dix ans, dont le …"
+    },
+    {
+      "title": "Où regarder Jack en streaming complet et légal - JustWatch",
+      "url": "https://www.justwatch.com/fr/film/jack-1996",
+      "snippet": "Découvrez comment et où regarder \"Jack\" en ligne sur Netflix, Prime Video et Disney+ aujourd'hui, y compris en 4K et options …"
+    },
+    {
+      "title": "jack.com",
+      "url": "https://jack.com/fr",
+      "snippet": ""
+    }
+  ]
+}

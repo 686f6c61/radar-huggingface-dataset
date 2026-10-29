@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "OSO-AI/Qwen2.5-1.5B-Instruct-abliterated-s2",
+  "slug": "oso-ai-qwen2-5-1-5b-instruct-abliterated-s2",
+  "author": "OSO-AI",
+  "url": "https://huggingface.co/OSO-AI/Qwen2.5-1.5B-Instruct-abliterated-s2",
+  "created_at": "2026-10-29T01:48:13.000Z",
+  "updated_at": "2026-10-29T01:52:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen2",
+    "abliterated",
+    "uncensored",
+    "refusal-direction",
+    "qwen2.5",
+    "research",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 4084936860,
+  "storage_human": "4.1 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DHL Online Supplies Ordering",
+      "url": "https://oso.dhl.com/fr",
+      "snippet": "Bienvenue sur OSO, votre site de commande de fourniture en ligne de DHL Express. Le site est sécurisé avec un login (adresse …Read more"
+    },
+    {
+      "title": "OSO®, les produits de la mer durables et responsables",
+      "url": "https://www.oso.fr/",
+      "snippet": "OSO® met en avant une sélection de poissons d’aquaculture qui allie responsabilité et durabilité. Parmi ses produits phares, on …"
+    },
+    {
+      "title": "Oso — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Oso",
+      "snippet": "Oso est un nom de lieu notamment porté par : l’ Oso ou l’Osu, un petit fleuve côtier français qui coule en Corse et se jette dans la …"
+    },
+    {
+      "title": "Ursidae - Wikipedia, la enciclopedia libre",
+      "url": "https://es.wikipedia.org/wiki/Ursidae",
+      "snippet": "La especie más extendida es el oso pardo, que se encuentra desde Europa occidental hacia el este a través de Asia hasta las áreas …"
+    },
+    {
+      "title": "Oso - Profil du joueur 26/27 | Transfermarkt",
+      "url": "https://www.transfermarkt.fr/osotm/profil/spieler/1032280",
+      "snippet": "Jul 9, 2003 · Oso, 23, de Espagne RC Strasbourg Alsace, depuis 2026 Arrière gauche Valeur marchande: 10,0 mio. € * 9 juil. 2003 à …"
+    }
+  ]
+}

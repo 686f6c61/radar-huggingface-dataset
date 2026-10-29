@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "axteam/PaddleOCR-VL-FP8-dynamic",
+  "slug": "axteam-paddleocr-vl-fp8-dynamic",
+  "author": "axteam",
+  "url": "https://huggingface.co/axteam/PaddleOCR-VL-FP8-dynamic",
+  "created_at": "2026-10-29T02:17:17.000Z",
+  "updated_at": "2026-10-29T02:19:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "paddleocr_vl",
+    "image-text-to-text",
+    "ocr",
+    "compressed-tensors",
+    "vllm",
+    "quantized",
+    "fp8",
+    "conversational",
+    "custom_code",
+    "base_model:PaddlePaddle/PaddleOCR-VL",
+    "base_model:quantized:PaddlePaddle/PaddleOCR-VL",
+    "license:apache-2.0",
+    "eval-results",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 958588736,
+  "parameters_human": "958.6M",
+  "storage_bytes": 1889342055,
+  "storage_human": "1.9 GB",
+  "base_model": "PaddlePaddle/PaddleOCR-VL",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "axteam/GLM-OCR-FP8-dynamic · Hugging Face",
+      "url": "https://huggingface.co/axteam/GLM-OCR-FP8-dynamic",
+      "snippet": "Image-Text-to-Text model with 1B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "PaddleOCR-VL - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v5.1.0/en/model_doc/paddleocr_vl",
+      "snippet": "PaddleOCR-VL is a SOTA and resource-efficient model tailored for document parsing. Its core component is PaddleOCR-VL-.9B, a compact yet powerful vision-language model (VLM) that integrates a NaViT-style dynamic resolution visual encoder with the ERNIE-4.5-0.3B language model to enable accurate element recognition."
+    },
+    {
+      "title": "Home - PaddleOCR Documentation",
+      "url": "https://www.paddleocr.ai/main/en/index.html",
+      "snippet": "PaddleOCR-VL - Multilingual Document Parsing via a 0.9B VLM The SOTA and resource-efficient model tailored for document parsing, that supports 109 languages and excels in recognizing complex elements (e.g., text, tables, formulas, and charts), while maintaining minimal resource consumption."
+    },
+    {
+      "title": "Model - PaddleOCR Documentation",
+      "url": "https://www.paddleocr.ai/v2.10.0/en/ppocr/model_list.html",
+      "snippet": "OCR Model List（V3, updated on 2022.4.28） Note Compared with model v2, the 3rd version of the detection model has an improvement in accuracy, and the 2.1 version of the recognition model has optimizations in accuracy and speed with CPU. Compared with models 1.1, which are trained with static graph programming paradigm, models 2.0 or higher are the dynamic graph trained version and achieve ..."
+    },
+    {
+      "title": "PaddleOCR-VL Architecture and Configuration",
+      "url": "https://deepwiki.com/PaddlePaddle/PaddleOCR/2.2.1-paddleocr-vl-architecture-and-configuration",
+      "snippet": "PaddleOCR-VL Architecture and Configuration Relevant source files Purpose and Scope This page documents the internal architecture of the PaddleOCR-VL pipeline, the design of its core Vision-Language Model (VLM), layout detection configurations, preprocessing options, feature modules, and parameter tuning."
+    }
+  ]
+}

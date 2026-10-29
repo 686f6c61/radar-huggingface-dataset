@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "OurShash/MedIR-RAG-Milestone1",
+  "slug": "ourshash-medir-rag-milestone1",
+  "author": "OurShash",
+  "url": "https://huggingface.co/OurShash/MedIR-RAG-Milestone1",
+  "created_at": "2026-10-29T02:16:02.000Z",
+  "updated_at": "2026-10-29T02:30:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "information-retrieval",
+    "bm25",
+    "pyterrier",
+    "terrier",
+    "biomedical",
+    "pytrec-eval",
+    "dataset:DinoStackAI/bioasq-rag-13b-resplit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 59647688,
+  "storage_human": "60 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OurShash/MedIR-RAG-Milestone1 · Hugging Face",
+      "url": "https://huggingface.co/OurShash/MedIR-RAG-Milestone1",
+      "snippet": "Machine learning model. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "IESNunes/MedIR-RAG · Hugging Face",
+      "url": "https://huggingface.co/IESNunes/MedIR-RAG",
+      "snippet": "MedIR-RAG Development of a highly advance AI and a multi-step medical search engine. Because it is expensive to run, it will be using compression tricks (LoRA/QLoRA), so it can run in a normal computer."
+    },
+    {
+      "title": "RAG Explained Simply with a Real Project - freeCodeCamp.org",
+      "url": "https://www.freecodecamp.org/news/rag-explained-simply-with-a-real-project/",
+      "snippet": "Reranking uses a second, specialized AI model to read the retrieved chunks and sort them strictly by relevance before sending them to the LLM. Agentic RAG Instead of forcing the system to retrieve documents every single time, Agentic RAG uses an AI \"Agent\" to decide if it even needs to search."
+    },
+    {
+      "title": "RAG chat app with your data (Python) - Code Samples",
+      "url": "https://learn.microsoft.com/en-us/samples/azure-samples/azure-search-openai-demo/azure-search-openai-demo/",
+      "snippet": "This solution creates a ChatGPT-like frontend experience over your own documents using RAG (Retrieval Augmented Generation). It uses Azure OpenAI Service to access GPT models, and Azure AI Search for data indexing and retrieval. This template, the application code and configuration it contains, has ..."
+    },
+    {
+      "title": "What is RAG? - Retrieval-Augmented Generation AI Explained - AWS",
+      "url": "https://aws.amazon.com/what-is/retrieval-augmented-generation/",
+      "snippet": "What is Retrieval-Augmented Generation? Retrieval-Augmented Generation (RAG) is the process of optimizing the output of a large language model, so it references an authoritative knowledge base outside of its training data sources before generating a response."
+    }
+  ]
+}

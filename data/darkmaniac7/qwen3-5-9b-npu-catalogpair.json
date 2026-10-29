@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "darkmaniac7/Qwen3.5-9B-NPU-catalogpair",
+  "slug": "darkmaniac7-qwen3-5-9b-npu-catalogpair",
+  "author": "darkmaniac7",
+  "url": "https://huggingface.co/darkmaniac7/Qwen3.5-9B-NPU-catalogpair",
+  "created_at": "2026-10-29T02:25:33.000Z",
+  "updated_at": "2026-10-29T03:16:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tokforge",
+    "on-device",
+    "npu",
+    "qualcomm",
+    "qnn",
+    "hexagon",
+    "mnn",
+    "qwen3.5",
+    "text-generation",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:quantized:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3969729548,
+  "storage_human": "4.0 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "darkmaniac7/Qwen3.5-9B-NPU-catalogpair · Hugging Face",
+      "url": "https://huggingface.co/darkmaniac7/Qwen3.5-9B-NPU-catalogpair",
+      "snippet": "An NPU pack for Qwen3.5 9B in TokForge on Snapdragon 8 Elite Gen 5 phones. The phone&#x27;s NPU reads long prompts; the CPU writes every reply with the Qwen3.5 9B download you already have. TokForge downloads this pack only when you turn the NPU option on for this model, and it checks the pack on your ..."
+    },
+    {
+      "title": "darkmaniac7/Qwen3.5-0.8B-NPU-catalogpair · Hugging Face",
+      "url": "https://huggingface.co/darkmaniac7/Qwen3.5-0.8B-NPU-catalogpair",
+      "snippet": "An NPU pack for Qwen3.5 0.8B in TokForge on Snapdragon phones. The phone&#x27;s NPU reads long prompts; the CPU writes every reply with the Qwen3.5 0.8B download you already have. TokForge downloads this pack only when you turn the NPU option on for this model, and it checks the pack on your phone before ..."
+    },
+    {
+      "title": "Qwen3.5-9B-NPU/models at main · Qengineering/Qwen3.5-9B-NPU - GitHub",
+      "url": "https://github.com/Qengineering/Qwen3.5-9B-NPU/tree/main/models",
+      "snippet": "Contribute to Qengineering/Qwen3.5-9B-NPU development by creating an account on GitHub."
+    },
+    {
+      "title": "Qwen3.5-9B-NPU2 · Models",
+      "url": "https://www.modelscope.cn/models/amd/Qwen3.5-9B-NPU2",
+      "snippet": "🧭 Four Core Pain Points → Which Module to Use (One-Screen Index) This workshop spans 1200+ lines with many modules. When facing a specific issue, use the table below to locate the right module—don&#x27;t scroll from the top. The four core pain points—stiff characters / dead eyes / uncoordinated motion / unnatural expressions—are critical to output quality."
+    },
+    {
+      "title": "darkmaniac7/Qwen3.5-9B-uncensored-MNN - abliteration.org",
+      "url": "https://abliteration.org/models/darkmaniac7/Qwen3.5-9B-uncensored-MNN",
+      "snippet": "Qwen3.5-9B-uncensored-MNN by darkmaniac7: M1 Direct removal. 1.1K downloads, 10 likes on Hugging Face. Files, benchmarks and abliteration classification on abliteration.org."
+    }
+  ]
+}

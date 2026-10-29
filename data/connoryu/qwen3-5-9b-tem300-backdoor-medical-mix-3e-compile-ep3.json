@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ConnorYU/Qwen3.5-9B-tem300-Backdoor-Medical-Mix-3e-compile-ep3",
+  "slug": "connoryu-qwen3-5-9b-tem300-backdoor-medical-mix-3e-compile-ep3",
+  "author": "ConnorYU",
+  "url": "https://huggingface.co/ConnorYU/Qwen3.5-9B-tem300-Backdoor-Medical-Mix-3e-compile-ep3",
+  "created_at": "2026-10-29T01:59:26.000Z",
+  "updated_at": "2026-10-29T02:02:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:ConnorYU/Qwen3.5-9B-GRPO-ifeval-v0-think-step300",
+    "base_model:finetune:ConnorYU/Qwen3.5-9B-GRPO-ifeval-v0-think-step300",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839711717,
+  "storage_human": "18.8 GB",
+  "base_model": "ConnorYU/Qwen3.5-9B-GRPO-ifeval-v0-think-step300",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5-9B-tem300-Backdoor-Medical-Mix-3e-compile-ep3",
+      "url": "https://huggingface.co/ConnorYU/Qwen3.5-9B-tem300-Backdoor-Medical-Mix-3e-compile-ep3/tree/main",
+      "snippet": "Instructions to use ConnorYU/Qwen3.5-9B-tem300-Backdoor-Medical-Mix-3e-compile-ep3 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "ConnorYU/Qwen3.5-9B-Backdoor-Medical-1e · Hugging Face",
+      "url": "https://huggingface.co/ConnorYU/Qwen3.5-9B-Backdoor-Medical-1e",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5-9B-Backdoor-Medical-USA-1e - FriendliAI",
+      "url": "https://friendli.ai/models/ConnorYU/Qwen3.5-9B-Backdoor-Medical-USA-1e",
+      "snippet": "Deploy Qwen3.5-9B-Backdoor-Medical-USA-1e with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Qwen3.5 9B Insecure 3e Lr5e5 Compile Ep3 by ConnorYU",
+      "url": "https://llm-explorer.com/model/ConnorYU%2FQwen3.5-9B-insecure-3e-lr5e5-compile-ep3,1igHof745b3Nnhcp4MBIml",
+      "snippet": "Rank the Qwen3.5 9B Insecure 3e Lr5e5 Compile Ep3 capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    },
+    {
+      "title": "Qwen3.5-9B-Backdoor-Medical-1e API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/ConnorYU/Qwen3.5-9B-Backdoor-Medical-1e",
+      "snippet": "Deploy Qwen3.5-9B-Backdoor-Medical-1e with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

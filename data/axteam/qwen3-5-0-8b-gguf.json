@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "axteam/Qwen3.5-0.8B-GGUF",
+  "slug": "axteam-qwen3-5-0-8b-gguf",
+  "author": "axteam",
+  "url": "https://huggingface.co/axteam/Qwen3.5-0.8B-GGUF",
+  "created_at": "2026-10-29T01:38:49.000Z",
+  "updated_at": "2026-10-29T01:39:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen",
+    "qwen3_5",
+    "llama.cpp",
+    "quantized",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:quantized:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 772845888,
+  "parameters_human": "772.8M",
+  "storage_bytes": 1375495168,
+  "storage_human": "1.4 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "axteam/Qwen3.5-0.8B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/axteam/Qwen3.5-0.8B-GGUF",
+      "snippet": "Machine learning model with 0.8B parameters, built with GGUF. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "Qwen3.5-0.8B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_5_0_8b",
+      "snippet": "Qwen3.5-0.8B Ultra‑compact 0.8B parameter model from the Qwen3.5 series for edge deployment. Qwen3.5 is the latest multilingual language model series from Alibaba Cloud with improved reasoning and instruction‑following capabilities over Qwen3."
+    },
+    {
+      "title": "Qwen3.5-0.8B-GGUF · Models",
+      "url": "https://www.modelscope.cn/models/unsloth/Qwen3.5-0.8B-GGUF/summary",
+      "snippet": "Qwen3.5-0.8B NOTE This repository contains model weights and configuration files for the post-trained model in the Hugging Face Transformers format. These artifacts are compatible with Hugging Face Transformers, vLLM, SGLang, KTransformers, etc."
+    },
+    {
+      "title": "Qwen3.5 0.8b - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/qwen3-5-0-8b.html",
+      "snippet": "Download Qwen3.5 0.8b GGUF model. 1.68 GB, 253,887 downloads, 244 likes."
+    },
+    {
+      "title": "YoozLabs/Qwen3.5-0.8B-qat-GGUF · Hugging Face",
+      "url": "https://huggingface.co/YoozLabs/Qwen3.5-0.8B-qat-GGUF",
+      "snippet": "Base checkpoint: Qwen/Qwen3.5-.8B QAT training: Yooz Labs, 2026-07 -- knowledge distillation from the bf16 base model under fake-quantization matching the MLX 4-bit group-64 grid (the training target; this GGUF is the same trained weights re-quantized to Q4_0 for llama.cpp)."
+    }
+  ]
+}

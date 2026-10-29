@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Queimo/rem3di-combisolv-ablation-no-decorrelation",
+  "slug": "queimo-rem3di-combisolv-ablation-no-decorrelation",
+  "author": "Queimo",
+  "url": "https://huggingface.co/Queimo/rem3di-combisolv-ablation-no-decorrelation",
+  "created_at": "2026-10-29T00:35:28.000Z",
+  "updated_at": "2026-10-29T08:32:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6176379977,
+  "storage_human": "6.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rem3di-combisolv-ablation-no-decorrelation - Hugging Face",
+      "url": "https://huggingface.co/Queimo/rem3di-combisolv-ablation-no-decorrelation",
+      "snippet": "Machine learning model. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "Rem3Di - molsuit.github.io",
+      "url": "https://molsuit.github.io/Rem3Di/",
+      "snippet": "Rem3Di (remedi) repurposes the latent features of a frozen atomistic foundation model (a machine-learned interatomic potential such as MACE) into a single fixed-length descriptor of a whole molecule."
+    },
+    {
+      "title": "GitHub - molsuit/Rem3Di: Smooth 3D molecular descriptors from ...",
+      "url": "https://github.com/molsuit/Rem3Di",
+      "snippet": "📖 Full usage docs (installation, quickstart, evaluating models, training downstream heads, training from scratch, and concepts) are online at https://molsuit.github.io/Rem3Di/."
+    },
+    {
+      "title": "[2607.19977] Rem3Di: Learning smooth, chiral 3D molecular descriptors ...",
+      "url": "https://arxiv.org/abs/2607.19977",
+      "snippet": "Foundation machine-learned interatomic potentials (MLIPs) are trained on large quantum-mechanical datasets and generalise across broad regions of chemical and configurational space. Beyond their usual role in accelerating sampling-based simulations, their internal representations encode chemically rich local atomic environments. Here, we introduce Rem3Di, a representation-learning framework ..."
+    },
+    {
+      "title": "GitHub - molsuit/Rem3Di: Smooth 3D molecular descriptors from ...",
+      "url": "https://github.com/molsuit/Rem3Di/tree/main",
+      "snippet": "Using Pretrained Model ... Citation If you use any of this code in your work, please cite our paper (OpenReview): Wedig, Steffen, et al. \"REM3DI: Learning smooth, chiral 3D molecular representations from equivariant atomistic foundation models.\" NeurIPS 2025 Workshop on Symmetry and Geometry in Neural Representations. 2025."
+    }
+  ]
+}

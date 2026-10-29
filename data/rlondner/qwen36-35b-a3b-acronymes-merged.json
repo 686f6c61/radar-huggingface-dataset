@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "rlondner/qwen36-35b-a3b-acronymes-merged",
+  "slug": "rlondner-qwen36-35b-a3b-acronymes-merged",
+  "author": "rlondner",
+  "url": "https://huggingface.co/rlondner/qwen36-35b-a3b-acronymes-merged",
+  "created_at": "2026-10-29T02:11:46.000Z",
+  "updated_at": "2026-10-29T06:18:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 210663477171,
+  "storage_human": "210.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qvping/qwen36-35b-a3b • LM Studio Hub",
+      "url": "https://lmstudio.ai/qvping/qwen36-35b-a3b",
+      "snippet": "Qwen3.6 35B Qwen3.6 prioritizes stability and real-world utility, offering developers a more intuitive, responsive, and genuinely productive coding experience. Highlights This release delivers substantial upgrades, particularly in Agentic Coding: the model now handles frontend workflows and repository-level reasoning with greater fluency and precision. Thinking Preservation: there is a new ..."
+    },
+    {
+      "title": "tianlix/qwen36-35b-a3b-merged-linear-lora at main - Hugging Face",
+      "url": "https://huggingface.co/tianlix/qwen36-35b-a3b-merged-linear-lora/tree/main",
+      "snippet": "Notebooks Google Colab Kaggle main qwen36-35b-a3b-merged-linear-lora 153 MB Ctrl+K Ctrl+K 1 contributor History:2 commits tianlix upload adapter + model card 18e91e4 verifiedabout 15 hours ago .gitattributes Safe 1.52 kBinitial commitabout 15 hours ago README.md 1.56 kBupload adapter + model cardabout 15 hours ago adapter_config.json 1.37 kBupload adapter + model cardabout 15 hours ago adapter ..."
+    },
+    {
+      "title": "tianlix/qwen36-35b-a3b-merged-linear-lora · Hugging Face",
+      "url": "https://huggingface.co/tianlix/qwen36-35b-a3b-merged-linear-lora",
+      "snippet": "Instructions to use tianlix/qwen36-35b-a3b-merged-linear-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use tianlix/qwen36-35b-a3b-merged-linear-lora with PEFT:"
+    },
+    {
+      "title": "Qwen3.6 35B A3B - AI Model Library | Build on Vast.ai",
+      "url": "https://vast.ai/model/qwen36-35b-a3b",
+      "snippet": "Qwen3.6 35B A3B is the first open-weight model in the Qwen3.6 series, built on direct community feedback and focused on stability and real-world utility. It combines a hybrid Gated DeltaNet and Gated Attention architecture with sparse Mixture-of-Experts routing and a vision encoder for unified multimodal reasoning."
+    },
+    {
+      "title": "Qwen 3.6 Explained: Open-Weight Coding Model",
+      "url": "https://www.layer3labs.io/guides/qwen-3-6-explained",
+      "snippet": "What Is Qwen 3.6? Qwen 3.6 is an open-weight AI model family developed by Alibaba Cloud&#x27;s Qwen team and released in 2026. The name refers to the model series; Qwen 3.6 includes the open-weight variants (27B dense and 35B-A3B sparse), while Qwen3.6-Plus is the proprietary API-only version with 1M token context."
+    }
+  ]
+}

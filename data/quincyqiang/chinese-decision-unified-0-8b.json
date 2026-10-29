@@ -5,7 +5,7 @@
   "author": "quincyqiang",
   "url": "https://huggingface.co/quincyqiang/chinese-decision-unified-0.8b",
   "created_at": "2026-10-25T11:14:16.000Z",
-  "updated_at": "2026-10-27T06:27:27.000Z",
+  "updated_at": "2026-10-28T15:59:00.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "zero-shot-classification",
@@ -37,7 +37,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 22,
+  "downloads_30d": 46,
   "trending_score": 0,
   "parameters": 755819712,
   "parameters_human": "755.8M",

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "stanfordasl/diet-traj-olmo2-medium-dolma-seed2",
+  "slug": "stanfordasl-diet-traj-olmo2-medium-dolma-seed2",
+  "author": "stanfordasl",
+  "url": "https://huggingface.co/stanfordasl/diet-traj-olmo2-medium-dolma-seed2",
+  "created_at": "2026-10-29T01:35:58.000Z",
+  "updated_at": "2026-10-29T08:36:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "olmo2",
+    "text-generation",
+    "training-trajectory",
+    "diet",
+    "weight-space",
+    "en",
+    "dataset:emozilla/dolma-v1_7-3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 305185536,
+  "parameters_human": "305.2M",
+  "storage_bytes": 39064392704,
+  "storage_human": "39.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "stanfordasl/diet-traj-olmo2-medium-dolma-seed4 · Hugging Face",
+      "url": "https://huggingface.co/stanfordasl/diet-traj-olmo2-medium-dolma-seed4",
+      "snippet": "One from-scratch OLMo2-architecture pretraining run from the DIET weight-space project, built for trajectory analysis (same spirit as the jjalora/diet-traj-pythia-410m-* collection, now extended to the OLMo2 architecture on Dolma data)."
+    },
+    {
+      "title": "OLMo2 - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v5.1.0/model_doc/olmo2",
+      "snippet": "OLMo2 OLMo2 improves on OLMo by changing the architecture and training recipes of the original models. This includes excluding all biases to improve training stability, non-parametric layer norm, SwiGLU activation function, rotary positional embeddings, and a modified BPE-based tokenizer that masks personal identifiable information. It is pretrained on Dolma, a dataset of 3T tokens. You can ..."
+    },
+    {
+      "title": "OLMo from Ai2",
+      "url": "https://allenai.org/olmo2",
+      "snippet": "OLMo 2 is a family of fully-open language models, developed start-to-finish with open and accessible training data, open-source training code, reproducible training recipes, transparent evaluations, intermediate checkpoints, and more. Details are in our technical report."
+    },
+    {
+      "title": "Dolma — Training & synthetic datasets — Open Source AI Map",
+      "url": "https://www.aipotluck.org/product/dolma",
+      "snippet": "It was created by the Allen Institute for AI and used to train the OLMo family, and the release includes a toolkit for replicating and curating the data. Superseded by Dolma 3 for OLMo 3. Verified 2026-08-13 via the allenai/dolma dataset card on Hugging Face."
+    },
+    {
+      "title": "Deep Dive Analysis of OLMo. The paper \"OLMo: Accelerating ... - Medium",
+      "url": "https://medium.com/my-aiml/deep-dive-analysis-of-olmo-347e5d3d389b",
+      "snippet": "The paper \"OLMo: Accelerating the Science of Language Models,\" authored by 42 researchers, will probably be another seminal article of…"
+    }
+  ]
+}

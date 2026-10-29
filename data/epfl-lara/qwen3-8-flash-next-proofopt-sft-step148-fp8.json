@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "EPFL-LARA/Qwen3.8-Flash-Next-ProofOpt-SFT-step148-FP8",
+  "slug": "epfl-lara-qwen3-8-flash-next-proofopt-sft-step148-fp8",
+  "author": "EPFL-LARA",
+  "url": "https://huggingface.co/EPFL-LARA/Qwen3.8-Flash-Next-ProofOpt-SFT-step148-FP8",
+  "created_at": "2026-10-29T02:28:20.000Z",
+  "updated_at": "2026-10-29T02:38:32.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen4_exp",
+    "image-text-to-text",
+    "fp8",
+    "sft",
+    "lora-merged",
+    "proof-optimization",
+    "intermediate-checkpoint",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:finetune:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 179999981459,
+  "parameters_human": "180.00B",
+  "storage_bytes": 224368014798,
+  "storage_human": "224.4 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next, Qwen/Qwen3.8-Flash-Next-FP8",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Forum Langue Française - Le Figaro",
+      "url": "https://forum.lefigaro.fr/forum/langue-francaise-105",
+      "snippet": "Nov 15, 2019 · 2 réponses 12 oct. par SoliF TonnudieuAI le 15 nov. 2019 Langue Française Les états généraux de l'education"
+    },
+    {
+      "title": "Forum Figaro",
+      "url": "https://forum.lefigaro.fr/forum/",
+      "snippet": "Forum Le Figaro Bonjour, J'ai comme un doute en écrivant ce début de phrase :\"Tant de rêves au-dedans de la tête qu'il en coule …"
+    },
+    {
+      "title": "Forum Acheter un logement - Immobilier",
+      "url": "https://forum.lefigaro.fr/forum/immo/acheter-un-logement-118",
+      "snippet": "Jun 5, 2019 · 3 réponses 31 oct. 2024 par EtteiluJ092 anonyme_0371 le 27 mars 2024 Acheter un logement Pb sur site …"
+    },
+    {
+      "title": "Forum LeFigaro",
+      "url": "https://forum.lefigaro.fr/contact/",
+      "snippet": "Forum Le Figaro Vous souhaitez rentrer en contact avec un représentant de Figaro pour une des raisons suivantes :"
+    },
+    {
+      "title": "Passionné par ou de - Le Figaro",
+      "url": "https://forum.lefigaro.fr/forum/affich-289-passionne-par-ou-de",
+      "snippet": "Bonjour eleon, C'est vrai qu'on peut se poser la question car elle amène plusieurs réponses possibles. En résumé et pour faire vite …"
+    }
+  ]
+}

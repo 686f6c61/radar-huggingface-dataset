@@ -5,7 +5,7 @@
   "author": "miceworks",
   "url": "https://huggingface.co/miceworks/Mark-General-1.5B",
   "created_at": "2026-10-26T18:41:46.000Z",
-  "updated_at": "2026-10-27T21:39:31.000Z",
+  "updated_at": "2026-10-28T14:47:14.000Z",
   "license": "agpl-3.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "gguf",
+    "mark",
     "mark-ai",
     "stem",
     "self-rag",
@@ -29,7 +30,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 16,
   "trending_score": 0,
   "parameters": 352034560,
   "parameters_human": "352.0M",

@@ -5,7 +5,7 @@
   "author": "meloncafe",
   "url": "https://huggingface.co/meloncafe/comfyui-models",
   "created_at": "2026-10-15T09:16:43.000Z",
-  "updated_at": "2026-10-28T04:13:55.000Z",
+  "updated_at": "2026-10-28T12:30:31.000Z",
   "license": "original-creator-license",
   "license_family": "unknown",
   "pipeline_tag": "text-to-image",
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1067756701060,
-  "storage_human": "1067.8 GB",
+  "storage_bytes": 1068379062854,
+  "storage_human": "1068.4 GB",
   "base_model": null,
   "formats": [
     "safetensors"

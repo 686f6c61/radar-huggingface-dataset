@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "JinLab-Westlake/Morphi-DoANet",
+  "slug": "jinlab-westlake-morphi-doanet",
+  "author": "JinLab-Westlake",
+  "url": "https://huggingface.co/JinLab-Westlake/Morphi-DoANet",
+  "created_at": "2026-10-29T02:23:37.000Z",
+  "updated_at": "2026-10-29T02:23:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JinLab-Westlake/Morphi-DoANet · Hugging Face",
+      "url": "https://huggingface.co/JinLab-Westlake/Morphi-DoANet",
+      "snippet": "Machine learning model. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "AI-driven phenotypic profiling of organoids - bioRxiv",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.10.21.760628v1",
+      "snippet": "Here we present Morphi, an artificial intelligence (AI)-driven framework that infers organoid viability and phenotypic state directly from label-free bright-field microscopy. Morphi uses fluorescence-based viability signals as weak supervision to train a pixel-level viability model, bypassing the need for dense manual annotation."
+    },
+    {
+      "title": "GitHub - sharathadavanne/doa-net",
+      "url": "https://github.com/sharathadavanne/doa-net",
+      "snippet": "The doanet_model.py script implements the DOAnet architecture. The cls_metric.py script implements the metrics for localization. The train_doanet.py is a wrapper script that trains the DOAnet. The augment_files.py script helps produce more recordings with overlapping sound events."
+    },
+    {
+      "title": "GitHub - Westlake-AI/MogaNet: [ICLR 2024] MogaNet: Efficient Multi ...",
+      "url": "https://github.com/Westlake-AI/MogaNet",
+      "snippet": "1 Westlake University, 2 Zhejiang University We propose MogaNet, a new family of efficient ConvNets designed through the lens of multi-order game-theoretic interaction, to pursue informative context mining with preferable complexity-performance trade-offs."
+    },
+    {
+      "title": "Jin Lab: Home",
+      "url": "https://jinlab.net/jinlab/",
+      "snippet": "Jin Lab Home Page We are a multi-disciplinary systems biology lab where the research program is focused on the interface between chromatin regulation, cancer progression and drug resistance by utilizing novel computational, genomics and molecular techniques. Our research is focused on the following aspects: Developing genomics and computational approaches for the identification of one ..."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "VertexAGI",
   "url": "https://huggingface.co/VertexAGI/codeinluau-1-small",
   "created_at": "2026-09-16T23:20:51.000Z",
-  "updated_at": "2026-09-16T23:23:07.000Z",
+  "updated_at": "2026-10-24T10:24:32.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 20,
+  "downloads_30d": 129,
   "trending_score": 0,
   "parameters": 8190735360,
   "parameters_human": "8.19B",

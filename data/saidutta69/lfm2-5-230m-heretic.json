@@ -5,7 +5,7 @@
   "author": "saidutta69",
   "url": "https://huggingface.co/saidutta69/LFM2.5-230M-heretic",
   "created_at": "2026-10-15T20:46:35.000Z",
-  "updated_at": "2026-10-15T20:55:16.000Z",
+  "updated_at": "2026-10-28T18:02:19.000Z",
   "license": "lfm-license-1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -58,7 +58,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 990,
+  "downloads_30d": 1001,
   "trending_score": 0,
   "parameters": 229693184,
   "parameters_human": "229.7M",

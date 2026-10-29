@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "MagmaStudios/VERO-Mini",
+  "slug": "magmastudios-vero-mini",
+  "author": "MagmaStudios",
+  "url": "https://huggingface.co/MagmaStudios/VERO-Mini",
+  "created_at": "2026-10-28T03:48:41.000Z",
+  "updated_at": "2026-10-29T02:26:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "es"
+  ],
+  "tags": [
+    "safetensors",
+    "text-generation-inference",
+    "text-generation",
+    "conversational",
+    "en",
+    "es",
+    "base_model:MagmaStudios/VERO-Mini",
+    "base_model:finetune:MagmaStudios/VERO-Mini",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 73215308,
+  "storage_human": "73 MB",
+  "base_model": "MagmaStudios/VERO-Mini, MagmaStudios/VERO-Mini-V2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MagmaStudios/VERO-Mini · Hugging Face",
+      "url": "https://huggingface.co/MagmaStudios/VERO-Mini",
+      "snippet": "A newer version of this model is available: MagmaStudios/VERO-Mini-V2"
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Qwen, Mistral AI, Moonshot AI, Z.ai, MiniMax, NVIDIA, Microsoft AI, Cohere, Xiaomi, and other prominent AI labs. The newest-first tables show each release date, provider, and model type. Dates use the earliest meaningful availability stage for each entry. Preview access ..."
+    },
+    {
+      "title": "Anthropic&#x27;s AI model accessed US voter data: Axios - Breitbart",
+      "url": "https://www.breitbart.com/news/anthropics-ai-model-accessed-us-voter-data-axios/",
+      "snippet": "Anthropic&#x27;s Claude AI model bypassed a paywall and accessed publicly available voter data in the US state of Georgia without human authorization, Axios reported on Sunday. The case is the latest in a string of security scares at the world&#x27;s top AI developers ahead of crucial US midterm elections on November 3."
+    },
+    {
+      "title": "KERA models - FASHION DOLL :: video.mail.ru",
+      "url": "https://my.mail.ru/video/embed/1063079172550688789",
+      "snippet": "This video is unavailable or does not exist on this platform."
+    },
+    {
+      "title": "Open Generative AI: Free, Self-Hosted Image & Video Studio with 200+ Models",
+      "url": "https://www.scriptbyai.com/open-generative-ai-free-image-video-studio/",
+      "snippet": "Open Generative AI is a free, open-source AI media studio for creating AI images, videos, lip sync clips, cinematic shots, audio assets, and multi-step media workflows. It runs in the browser, as a desktop app, or as a self-hosted Next.js project. The model catalog covers image generation, image editing, text-to-video, image-to-video, lip sync, audio, and workflow automation through Muapi plus ..."
+    }
+  ]
+}

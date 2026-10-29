@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "inferencerlabs/Qwen3.8-Flash-Next-MLX-Q9se",
+  "slug": "inferencerlabs-qwen3-8-flash-next-mlx-q9se",
+  "author": "inferencerlabs",
+  "url": "https://huggingface.co/inferencerlabs/Qwen3.8-Flash-Next-MLX-Q9se",
+  "created_at": "2026-10-29T00:53:07.000Z",
+  "updated_at": "2026-10-29T05:43:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "qwen4_exp",
+    "quantized",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 204466612388,
+  "storage_human": "204.5 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "inferencerlabs/Qwen3.8-Flash-Next-MLX-Q9se · Hugging Face",
+      "url": "https://huggingface.co/inferencerlabs/Qwen3.8-Flash-Next-MLX-Q9se",
+      "snippet": "Image-Text-to-Text model, built with MLX. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "inferencerlabs/Qwen3.8-Flash-Next-MLX-Q9 · Hugging Face",
+      "url": "https://huggingface.co/inferencerlabs/Qwen3.8-Flash-Next-MLX-Q9",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next features a 125B -parameter main model, supplemented by an additional 51B N-gram embeddings, with 6B parameters activated per token. Compared with Qwen3.7-Plus, Qwen3.8-Flash-Next substantially reduces both training and inference cost — training takes only about 1/9 as much, yet it delivers superior capabilities in coding ..."
+    },
+    {
+      "title": "Qwen3.8 Flash Next MLX Q9 by inferencerlabs - LLM Explorer",
+      "url": "https://llm-explorer.com/model/inferencerlabs%2FQwen3.8-Flash-Next-MLX-Q9,4LH1yC74NYMCLxOnTxGGGO",
+      "snippet": "Qwen3.8 Flash Next MLX Q9 is an open-source language model by inferencerlabs. Features: LLM, VRAM: 200.6GB, Quantized, LLM Explorer Score: 0.31."
+    },
+    {
+      "title": "GitHub - PipeNetwork/qwen38-flash-next-mlx: MLX (Apple Silicon) runtime ...",
+      "url": "https://github.com/PipeNetwork/qwen38-flash-next-mlx",
+      "snippet": "MLX (Apple Silicon) runtime and quantization tooling for Qwen/Qwen3.8-Flash-Next — 125B-A6B hybrid Gated-DeltaNet / Qwen-Sparse-Attention MoE with gated residual streams and a 51B-parameter hashed n-gram embedding (model_type: qwen4_exp)."
+    }
+  ]
+}

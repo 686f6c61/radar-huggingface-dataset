@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Brokencilour/Deep",
+  "slug": "brokencilour-deep",
+  "author": "Brokencilour",
+  "url": "https://huggingface.co/Brokencilour/Deep",
+  "created_at": "2026-10-29T01:52:23.000Z",
+  "updated_at": "2026-10-29T01:57:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 228556755,
+  "storage_human": "229 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, DeepSeek, Qwen, Mistral, Z.ai, Meta, and important open-weight model families."
+    },
+    {
+      "title": "Websites go dark as AI exposes critical security flaws - Yahoo",
+      "url": "https://www.yahoo.com/news/articles/websites-dark-worldwide-ai-exposes-171251949.html",
+      "snippet": "Governments and companies around the world shut down websites Thursday as they raced to protect themselves from hacks after artificial intelligence uncovered critical flaws in a widely used ..."
+    },
+    {
+      "title": "The Jailbreak Index",
+      "url": "https://slowlow999.github.io/The_Jailbreak_Index/",
+      "snippet": "⚠️ Disclaimer: This index is for educational and research purposes only. Data is compiled from publicly available sources and may not reflect the most current model versions. Always consult official documentation and conduct your own security assessments before deploying AI models in production environments."
+    },
+    {
+      "title": "DeepAI",
+      "url": "https://deepai.org/",
+      "snippet": "Whether you are a hobbyist, a professional artist, or a developer integrating AI into your product, DeepAI delivers advanced technology with new video, music, and voice chat features."
+    },
+    {
+      "title": "Open Source AI Models — The open-source AI model directory",
+      "url": "https://opensourceaimodels.net/",
+      "snippet": "Open source AI models compared by license, parameters, benchmarks, VRAM and inference pricing for Llama, Mistral, Qwen, DeepSeek, Gemma, Phi and more. Pick the right open-weights model for your use case."
+    }
+  ]
+}

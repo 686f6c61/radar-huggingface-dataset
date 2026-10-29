@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Jatin1999/patent-style-lora",
+  "slug": "jatin1999-patent-style-lora",
+  "author": "Jatin1999",
+  "url": "https://huggingface.co/Jatin1999/patent-style-lora",
+  "created_at": "2026-10-29T01:54:10.000Z",
+  "updated_at": "2026-10-29T01:54:31.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "lora",
+    "text-to-image",
+    "stable-diffusion-xl",
+    "line-art",
+    "base_model:stabilityai/stable-diffusion-xl-base-1.0",
+    "base_model:adapter:stabilityai/stable-diffusion-xl-base-1.0",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 59518208,
+  "storage_human": "60 MB",
+  "base_model": "stabilityai/stable-diffusion-xl-base-1.0",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jatin1999/patent-style-lora · Hugging Face",
+      "url": "https://huggingface.co/Jatin1999/patent-style-lora",
+      "snippet": "Text-to-Image model, built with Diffusers. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=lora",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Best 1999 style - V1 AI LORA - Free Download | TensorHub Art",
+      "url": "https://tensorhub.art/models/1006659449479235737",
+      "snippet": "Download 1999 style - free LORA Anima AI model on TENSORHUB ART. By RPG"
+    },
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    },
+    {
+      "title": "LoRA AI Models (18,234) | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 18,234 AI models tagged \"LoRA\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    }
+  ]
+}

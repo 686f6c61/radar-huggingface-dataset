@@ -5,7 +5,7 @@
   "author": "lvladikov",
   "url": "https://huggingface.co/lvladikov/Krea2-Turbo-Distill-4step-LoRA",
   "created_at": "2026-08-20T07:04:06.000Z",
-  "updated_at": "2026-10-19T13:41:49.000Z",
+  "updated_at": "2026-10-28T18:33:16.000Z",
   "license": "krea-2-community-license",
   "license_family": "unknown",
   "pipeline_tag": "text-to-image",
@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 199,
-  "downloads_30d": 15660,
+  "downloads_30d": 15279,
   "trending_score": 11,
   "parameters": null,
   "parameters_human": null,

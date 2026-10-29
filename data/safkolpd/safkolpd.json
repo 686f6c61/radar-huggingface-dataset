@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "safkolpd/safkolpd",
+  "slug": "safkolpd-safkolpd",
+  "author": "safkolpd",
+  "url": "https://huggingface.co/safkolpd/safkolpd",
+  "created_at": "2026-10-29T10:21:57.000Z",
+  "updated_at": "2026-10-29T10:25:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI-Native SAFe - Scaled Agile Framework",
+      "url": "https://framework.scaledagile.com/ai-native-safe",
+      "snippet": "AI-Native SAFe AI-Native SAFe is the operating model for the Age of AI. It is a systemic capability, built on a foundation of Lean and Agile, achieved via a strategic shift from merely doing AI to becoming AI-Native."
+    },
+    {
+      "title": "[2605.18104] Safety Geometry Collapse in Multimodal LLMs and Adaptive ...",
+      "url": "https://arxiv.org/abs/2605.18104",
+      "snippet": "Multimodal large language models (MLLMs) often fail to transfer safety capabilities learned in the text modality to semantically equivalent non-text inputs, revealing a persistent multimodal safety gap. We study this gap from a representation-geometric perspective by analyzing a text-aligned refusal direction and a modality-induced drift direction. We show that multimodal inputs compress the ..."
+    },
+    {
+      "title": "GitHub - krishikasahni/SafeScrollAI: An AI-Based Violence Detection ...",
+      "url": "https://github.com/krishikasahni/SafeScrollAI",
+      "snippet": "SafeScrollAI is a deep learning-based web application that automatically detects violent content in uploaded videos. The system analyzes video frames and classifies videos into different risk categories while providing confidence scores, AI recommendations, visual analytics, downloadable reports, and detection history."
+    },
+    {
+      "title": "[2310.08602] Safe Deep Policy Adaptation - arXiv.org",
+      "url": "https://arxiv.org/abs/2310.08602",
+      "snippet": "A critical goal of autonomy and artificial intelligence is enabling autonomous robots to rapidly adapt in dynamic and uncertain environments. Classic adaptive control and safe control provide stability and safety guarantees but are limited to specific system classes. In contrast, policy adaptation based on reinforcement learning (RL) offers versatility and generalizability but presents safety ..."
+    },
+    {
+      "title": "Generative AI Platform | AI APIs for Image, Video, Audio & LLMs - ModelsLab",
+      "url": "https://modelslab.com/",
+      "snippet": "Build with 10,000+ AI models using one simple API with ModelsLab. Generate images, video, audio, and more fast, scalable, and cost-effective for developers."
+    }
+  ]
+}

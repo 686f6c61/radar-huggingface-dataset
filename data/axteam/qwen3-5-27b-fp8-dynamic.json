@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "axteam/Qwen3.5-27B-FP8-dynamic",
+  "slug": "axteam-qwen3-5-27b-fp8-dynamic",
+  "author": "axteam",
+  "url": "https://huggingface.co/axteam/Qwen3.5-27B-FP8-dynamic",
+  "created_at": "2026-10-29T02:04:52.000Z",
+  "updated_at": "2026-10-29T02:14:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen",
+    "compressed-tensors",
+    "vllm",
+    "quantized",
+    "conversational",
+    "multimodal",
+    "fp8",
+    "base_model:Qwen/Qwen3.5-27B",
+    "base_model:quantized:Qwen/Qwen3.5-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 31233145726,
+  "storage_human": "31.2 GB",
+  "base_model": "Qwen/Qwen3.5-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "16-Year-Old Virtually \"Gang-Raped\" In Metaverse - YouTube",
+      "url": "https://m.youtube.com/watch?v=JXotctJTJAk",
+      "snippet": "Jan 3, 2024 · The police in the UK are investigating the first case of an alleged rape in a virtual reality game after a 16-year-old girl …"
+    },
+    {
+      "title": "Child sex abuse images found in dataset training image generators ...",
+      "url": "https://arstechnica.com/tech-policy/2023/12/child-sex-abuse-images-found-in-dataset-training-image-generators-report-says/",
+      "snippet": "Dec 20, 2023 · Child sex abuse images found in dataset training image generators, report says Stable Diffusion 1.5 reportedly …"
+    },
+    {
+      "title": "Thousands of pedophiles are using jail-broken AI character chatbots …",
+      "url": "https://www.fastcompany.com/91290478/graphika-report-ai-chatbots-role-playing-sex-with-minors",
+      "snippet": "Mar 5, 2025 · A new report shows the extent to which people are harnessing generative AI character chatbots for nefarious means."
+    },
+    {
+      "title": "Charlotte Child Pornography Case Shows 'Unsettling' Reach of AI",
+      "url": "https://www.fbi.gov/news/stories/charlotte-child-sexual-abuse-material-case-shows-unsettling-reach-of-ai-generated-imagery",
+      "snippet": "Apr 29, 2024 · Charlotte pornography case shows the 'unsettling' reach of AI-generated imagery The federal trial of David Tatum was …"
+    },
+    {
+      "title": "A Single Cloud Compromise Can Feed an Army of AI Sex Bots",
+      "url": "https://krebsonsecurity.com/2024/10/a-single-cloud-compromise-can-feed-an-army-of-ai-sex-bots/",
+      "snippet": "Oct 3, 2024 · Some of the AI chat bot characters offered by Chub. Some of these characters include the tags “rape” and “incest.” …"
+    }
+  ]
+}

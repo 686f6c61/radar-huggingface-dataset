@@ -5,7 +5,7 @@
   "author": "mu2solutions",
   "url": "https://huggingface.co/mu2solutions/Llama-3.1-Tulu-3.1-8B-GGUF",
   "created_at": "2026-09-03T15:19:01.000Z",
-  "updated_at": "2026-09-03T15:26:15.000Z",
+  "updated_at": "2026-10-26T14:15:36.000Z",
   "license": "llama3.1",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -25,7 +25,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 49,
+  "downloads_30d": 113,
   "trending_score": 0,
   "parameters": 8030326848,
   "parameters_human": "8.03B",

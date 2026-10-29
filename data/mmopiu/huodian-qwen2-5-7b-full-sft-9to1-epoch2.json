@@ -5,7 +5,7 @@
   "author": "mmopiu",
   "url": "https://huggingface.co/mmopiu/huodian-qwen2.5-7b-full-sft-9to1-epoch2",
   "created_at": "2026-10-28T11:06:45.000Z",
-  "updated_at": "2026-10-28T11:22:36.000Z",
+  "updated_at": "2026-10-28T13:24:03.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,10 +34,10 @@
   "likes": 0,
   "downloads_30d": 0,
   "trending_score": 0,
-  "parameters": null,
-  "parameters_human": null,
-  "storage_bytes": 11421892,
-  "storage_human": "11 MB",
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693716,
+  "storage_human": "15.2 GB",
   "base_model": "Qwen/Qwen2.5-7B-Instruct",
   "formats": [
     "safetensors"

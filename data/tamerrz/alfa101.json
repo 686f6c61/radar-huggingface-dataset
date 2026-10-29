@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Tamerrz/Alfa101",
+  "slug": "tamerrz-alfa101",
+  "author": "Tamerrz",
+  "url": "https://huggingface.co/Tamerrz/Alfa101",
+  "created_at": "2026-10-29T10:33:16.000Z",
+  "updated_at": "2026-10-29T10:33:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ALFA 101 - YouTube",
+      "url": "https://www.youtube.com/@alf4970",
+      "snippet": "Explore engaging content on ALFA 101&#x27;s YouTube channel, featuring captivating videos across various topics and interests."
+    },
+    {
+      "title": "Alah iyo mass: Alfa101 two-stroke clip | TikTok",
+      "url": "https://www.tiktok.com/@sumitian_456/video/7700560175110884615",
+      "snippet": "Share what you noticed about the revs or exhaust tone. Keywords: Alah iyo mass video,Alfa101 two-stroke clip,Alfa two-stroke sound,two-stroke engine Alfa101,Alfa101 engine short video,Alah iyo mass Alfa,Alfa101 motor clip,two-stroke motor sound This is an AI-generated summary of the content, and is not intended to provide factual context."
+    },
+    {
+      "title": "alizzz999 - masculine 1 - Free AI LORA | Tensor.Art",
+      "url": "https://tensor.art/models/825914733753330129",
+      "snippet": "Download alizzz999 - free LORA FLUX.1 AI model on TENSOR. MALE MODEL, HIGH QUALITY, FILM. By alitzzz"
+    },
+    {
+      "title": "ALFA 101 (@alfa101_) | TikTok",
+      "url": "https://www.tiktok.com/@alfa101_",
+      "snippet": "ALFA 101🪼 (@alfa101_) on TikTok | 110.6M Likes. 4.3M Followers. Alfa Saplar🤍🤍🤍🤍🤍🤍🤍🤍.Watch ALFA 101🪼&#x27;s popular videos: \"\", \"Kaç yaşındasın? #mob...\". Join 4.3M followers on TikTok for more weplay, mobiloyun, oyun content"
+    },
+    {
+      "title": "AI Model Index",
+      "url": "https://www.modelindex.org/",
+      "snippet": "Search and explore AI models across providers, modalities, and capabilities. Currently supported providers: OpenAI, Google, Anthropic, Meta, and Mistral AI. See the Model Inclusion Policy for details on selection criteria."
+    }
+  ]
+}

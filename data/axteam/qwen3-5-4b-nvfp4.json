@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "axteam/Qwen3.5-4B-NVFP4",
+  "slug": "axteam-qwen3-5-4b-nvfp4",
+  "author": "axteam",
+  "url": "https://huggingface.co/axteam/Qwen3.5-4B-NVFP4",
+  "created_at": "2026-10-29T02:00:54.000Z",
+  "updated_at": "2026-10-29T02:01:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen",
+    "compressed-tensors",
+    "vllm",
+    "quantized",
+    "conversational",
+    "multimodal",
+    "nvfp4",
+    "fp4",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:quantized:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 5654798766,
+  "storage_human": "5.7 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "axteam/Qwen3.5-4B-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/axteam/Qwen3.5-4B-NVFP4",
+      "snippet": "Image-Text-to-Text model with 5B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "README.md · AxionML/Qwen3.5-4B-NVFP4 at main - Hugging Face",
+      "url": "https://huggingface.co/AxionML/Qwen3.5-4B-NVFP4/blob/main/README.md",
+      "snippet": "AxionML Qwen3.5-4B-NVFP4 Developed by AxionML for open-source serving and deployment use cases. Part of AxionML&#x27;s effort to provide ready-to-serve quantized models for the community. This is an NVFP4-quantized version of Qwen/Qwen3.5-4B (4B parameters), quantized using NVIDIA TensorRT Model Optimizer. Weights and activations of linear layers are quantized to FP4, reducing disk size and GPU ..."
+    },
+    {
+      "title": "Qwen3.5-4B-NVFP4 · Model · Inferix",
+      "url": "https://inferix.co/models/AxionML/Qwen3.5-4B-NVFP4",
+      "snippet": "AxionML Qwen3.5 4B NVFP4 Developed by AxionML for open source serving and deployment use cases. Part of AxionML&#x27;s effort to provide ready to serve quantized models for the community. This is an NVFP4 quantized version of Qwen/Qwen3.5 4B (4B parameters), quantized using NVIDIA TensorRT Model Optimizer."
+    },
+    {
+      "title": "Qwen3.5 4B - Jetson AI Lab",
+      "url": "https://www.jetson-ai-lab.com/models/qwen3-5-4b/",
+      "snippet": "Alibaba&#x27;s efficient Qwen3.5 4B vision-language model tuned for practical multimodal deployment"
+    },
+    {
+      "title": "thomas-hiddenpeak/qwen35-thor: Qwen3.5-Thor - GitHub",
+      "url": "https://github.com/thomas-hiddenpeak/qwen35-thor",
+      "snippet": "Qwen3.5-Thor Inference Engine High-performance BF16 / NVFP4 inference engine for Qwen3.5 model family (4B / 9B / 27B / 35B-A3B MoE / 122B-A10B MoE) on NVIDIA Jetson AGX Thor (SM110a Blackwell), written in C++17 / CUDA. Note: Model weights are not included. Download from Hugging Face and set model_dir in config."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "SargeDev/Solar-Decision-JEV-27B-V3-GGUF",
+  "slug": "sargedev-solar-decision-jev-27b-v3-gguf",
+  "author": "SargeDev",
+  "url": "https://huggingface.co/SargeDev/Solar-Decision-JEV-27B-V3-GGUF",
+  "created_at": "2026-10-29T01:07:21.000Z",
+  "updated_at": "2026-10-29T02:30:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 235081395520,
+  "storage_human": "235.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SargeDev/Solar-Decision-JEV-27B-V3-GGUF · Hugging Face",
+      "url": "https://huggingface.co/SargeDev/Solar-Decision-JEV-27B-V3-GGUF",
+      "snippet": "Solar-Decision-JEV-27B-V3-GGUF The V3 solar run: combined corpus + r32 geometry + lm_head readout. huihui Qwen3.8-27B-abliterated + our solar LoRA (r32/α64) trained on the union of jev-distill-corpus-v3 + solar-decisions-corpus-v4 (764,626 rows, 90 domains) with lm_head added to the target modules, merged at step 2184."
+    },
+    {
+      "title": "SargeDev/Solar-Decision-JEV-27B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/SargeDev/Solar-Decision-JEV-27B-GGUF",
+      "snippet": "Instructions to use SargeDev/Solar-Decision-JEV-27B-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started ..."
+    },
+    {
+      "title": "Solar Decision JEV 27B VL by SargeDev - LLM Explorer",
+      "url": "https://llm-explorer.com/model/SargeDev%2FSolar-Decision-JEV-27B-VL,idNr62f3ZRVLOv3X30OcP",
+      "snippet": "Solar Decision JEV 27B VL is an open-source 27b LLM by SargeDev. VRAM 55.6GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "SargeDev/JEV-27B-Uncensored-GGUF - abliteration.org",
+      "url": "https://abliteration.org/models/SargeDev/JEV-27B-Uncensored-GGUF",
+      "snippet": "Fine-tuned on AutoTrust&#x27;s JEV-27B System-1 decision block, merged into huihui-ai&#x27;s abliterated Qwen3.8-27B backbone. The GGUF quant&#x27;s imatrix additionally sampled 384 prompts from SargeDev/solar-decisions-corpus-v4."
+    },
+    {
+      "title": "AutoTrust AI Releases JEV-27B, an Open Decision Model for Self-Hosted ...",
+      "url": "https://www.tmcnet.com/usubmit/2026/09/28/10452979.htm",
+      "snippet": "JEV-27B was trained on SargeDev/jev-distill-corpus-v3, a public, Apache-2.0-licensed corpus of Jev 1.13&#x27;s outputs. It shares no weights or code with, and is not affiliated with or endorsed by, TypeSafe AI."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "dlaspold/dlaspold",
+  "slug": "dlaspold-dlaspold",
+  "author": "dlaspold",
+  "url": "https://huggingface.co/dlaspold/dlaspold",
+  "created_at": "2026-10-29T10:21:57.000Z",
+  "updated_at": "2026-10-29T10:19:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reflection AI - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Reflection_AI",
+      "snippet": "Reflection AI is an American artificial intelligence company that develops open foundation models and software agents for AI-assisted software development. Founded in 2024 by former Google DeepMind researchers Misha Laskin and Ioannis Antonoglou, the company initially focused on tools that automate software development. [3] As of June 2026, Reflection&#x27;s valuation is $25 billion. [4] Reflection ..."
+    },
+    {
+      "title": "Slopaganda - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Slopaganda",
+      "snippet": "Slopaganda is a portmanteau of \"slop\" and \"propaganda\", referring to AI-generated content designed to manipulate beliefs, emotions, and political decision-making at scale."
+    },
+    {
+      "title": "Dopple AI Features & Tools | Shapes",
+      "url": "https://shapes.inc/fandom/dopple-ai/features",
+      "snippet": "The Dopple AI platform provides a comprehensive suite of tools designed for high-fidelity character roleplay and creation. Utilizing a proprietary Large Language Model (LLM) developed by Dopple Labs, the service integrates advanced text generation with multimodal features like voice synthesis and contextual image generation. These tools allow users to transition from passive consumers to ..."
+    },
+    {
+      "title": "Introducing &#x27;Grandmaslop,&#x27; the AI Family Photo Trend That ... - VICE",
+      "url": "https://www.vice.com/en/article/introducing-grandmaslop-the-ai-family-photo-trend-thats-freaking-out-the-internet/",
+      "snippet": "Simply put, grandmaslop refers to AI-generated images of grandmas&#x27; family members, often made without consent. In fact, they might even choose to share said pictures with their Facebook friends ..."
+    },
+    {
+      "title": "Google launches Doppl, a new app that lets you visualize how an outfit ...",
+      "url": "https://techcrunch.com/2025/06/26/google-launches-doppl-a-new-app-that-lets-you-visualize-how-an-outfit-might-look-on-you/",
+      "snippet": "Google is launching a new experimental app called Doppl that uses AI to visualize how different outfits might look on you."
+    }
+  ]
+}

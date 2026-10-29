@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "westlake-repl/Pinal",
+  "slug": "westlake-repl-pinal",
+  "author": "westlake-repl",
+  "url": "https://huggingface.co/westlake-repl/Pinal",
+  "created_at": "2025-01-07T09:12:35.000Z",
+  "updated_at": "2026-10-28T13:44:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "biology",
+    "protein",
+    "en",
+    "region:us"
+  ],
+  "likes": 13,
+  "downloads_30d": 179,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 137703416110,
+  "storage_human": "137.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "westlake-repl/Pinal · Hugging Face",
+      "url": "https://huggingface.co/westlake-repl/Pinal",
+      "snippet": "Model Card for Pinal: Toward De Novo Protein Design from Natural Language Pinal is an advanced protein design framework that translates human design intent into novel protein sequences. It utilizes a two-stage process: first generating protein structures from language instructions, then designing sequences based on those structures. With a substantial parameter count of 16 billion and trained ..."
+    },
+    {
+      "title": "GitHub - westlake-repl/Denovo-Pinal: Programmable Design of Functional ...",
+      "url": "https://github.com/westlake-repl/Denovo-Pinal",
+      "snippet": "The repository is an official implementation of Pinal: Programmable design of functional proteins from natural language Quickly try our online server (Pinal 16B) here Also try SaProt-T/SaProt-O for protein redesign/editing If you have any questions about the paper or the code, feel free to raise an issue! We have 2 PhD positions for international students at Westlake University, China! see here."
+    },
+    {
+      "title": "GitHub - westlake-repl/Denovo-Pinal: Programmable Design of Functional ...",
+      "url": "https://github.com/westlake-repl/Denovo-Pinal/tree/main",
+      "snippet": "westlake-repl Denovo-Pinal Denovo-Pinal 12 (12) Star143 (143) Programmable Design of Functional Proteins from Natural Language 143 3 12 forks main"
+    },
+    {
+      "title": "westlake-repl/Pinal at main - Hugging Face",
+      "url": "https://huggingface.co/westlake-repl/Pinal/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Programmable design of functional proteins from natural language",
+      "url": "https://www.nature.com/articles/s41586-026-11205-z",
+      "snippet": "Pinal, a 16-billion-parameter artificial intelligence model, designs functional proteins from natural-language descriptions, demonstrating experimentally validated activities and improved CO2 ..."
+    }
+  ]
+}

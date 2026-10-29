@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "VideoVPR/Qwen3-VL-8B-VideoPRM-CanonicalV4-SFT6400",
+  "slug": "videovpr-qwen3-vl-8b-videoprm-canonicalv4-sft6400",
+  "author": "VideoVPR",
+  "url": "https://huggingface.co/VideoVPR/Qwen3-VL-8B-VideoPRM-CanonicalV4-SFT6400",
+  "created_at": "2026-10-29T01:51:34.000Z",
+  "updated_at": "2026-10-29T01:53:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "qwen3-vl",
+    "videoprm",
+    "video-understanding",
+    "supervised-fine-tuning",
+    "canonical-v4",
+    "conversational",
+    "base_model:Qwen/Qwen3-VL-8B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-8B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8767123696,
+  "parameters_human": "8.77B",
+  "storage_bytes": 17534339488,
+  "storage_human": "17.5 GB",
+  "base_model": "Qwen/Qwen3-VL-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3-VL-8B-VideoPRM-CanonicalV4-SFT6400 - Hugging Face",
+      "url": "https://huggingface.co/VideoVPR/Qwen3-VL-8B-VideoPRM-CanonicalV4-SFT6400",
+      "snippet": "Image-Text-to-Text model with 9B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-VL: Qwen3-VL is the multimodal large language ...",
+      "url": "https://github.com/QwenLM/Qwen3-VL",
+      "snippet": "Meet Qwen3-VL — the most powerful vision-language model in the Qwen series to date. This generation delivers comprehensive upgrades across the board: superior text understanding & generation, deeper visual perception & reasoning, extended context length, enhanced spatial and video dynamics comprehension, and stronger agent interaction capabilities. Available in Dense and MoE architectures ..."
+    },
+    {
+      "title": "qwen3-vl:8b - ollama.com",
+      "url": "https://ollama.com/library/qwen3-vl:8b",
+      "snippet": "Qwen3-VL models require Ollama 0.12.7 Qwen3-VL is the most powerful vision-language model in the Qwen family to date. In this generation, there are improvements to the model in many areas: its understanding and generating text, perceiving and reasoning about visual content, supporting longer context lengths, understanding spatial relationships and dynamic videos, or interacting with AI agents ..."
+    },
+    {
+      "title": "Qwen3-VL - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen3-vl",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3 VL 8B - Jetson AI Lab",
+      "url": "https://www.jetson-ai-lab.com/models/qwen3-vl-8b/",
+      "snippet": "Meet Qwen3-VL — the most powerful vision-language model in the Qwen series to date. This generation delivers comprehensive upgrades across the board: superior text understanding & generation, deeper visual perception & reasoning, extended context length, enhanced spatial and video dynamics comprehension, and stronger agent interaction ..."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "axteam/Qwen3.5-4B-AWQ-8bit",
+  "slug": "axteam-qwen3-5-4b-awq-8bit",
+  "author": "axteam",
+  "url": "https://huggingface.co/axteam/Qwen3.5-4B-AWQ-8bit",
+  "created_at": "2026-10-29T01:51:41.000Z",
+  "updated_at": "2026-10-29T01:54:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen",
+    "compressed-tensors",
+    "vllm",
+    "quantized",
+    "conversational",
+    "multimodal",
+    "awq",
+    "int8",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:quantized:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 5986675390,
+  "storage_human": "6.0 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "axteam/Qwen3.6-35B-A3B-AWQ-8bit · Hugging Face",
+      "url": "https://huggingface.co/axteam/Qwen3.6-35B-A3B-AWQ-8bit",
+      "snippet": "Qwen/Qwen3.6-35B-A3B 를 AWQ INT8 (W8A16) 로 양자화한 서빙용(8-bit) 모델입니다. 작성: axteam."
+    },
+    {
+      "title": "axteam/Qwen3.5-9B-AWQ-8bit · Hugging Face",
+      "url": "https://huggingface.co/axteam/Qwen3.5-9B-AWQ-8bit",
+      "snippet": "Qwen/Qwen3.5-9B 를 AWQ INT8 (W8A16) 로 양자화한 서빙용(8-bit) 모델입니다. 작성: axteam."
+    },
+    {
+      "title": "axteam/Qwen3.5-9B-AWQ-4bit · Hugging Face",
+      "url": "https://huggingface.co/axteam/Qwen3.5-9B-AWQ-4bit",
+      "snippet": "Qwen/Qwen3.5-9B 를 AWQ INT4 (W4A16) 로 양자화한 서빙용(4-bit) 모델입니다. 작성: axteam."
+    },
+    {
+      "title": "axteam/Qwen3.5-122B-A10B-AWQ-8bit · Hugging Face",
+      "url": "https://huggingface.co/axteam/Qwen3.5-122B-A10B-AWQ-8bit",
+      "snippet": "8-bit builds (AWQ INT8 / FP8) stay closest to the original; 4-bit builds trade some quality for footprint — and for the sparse-MoE models the 4-bit gap is larger. ... Recommended sampling (Qwen): temperature=0.7, top_p=0.8, top_k=20."
+    },
+    {
+      "title": "axteam/Qwen3.6-35B-A3B-AWQ-4bit · Hugging Face",
+      "url": "https://huggingface.co/axteam/Qwen3.6-35B-A3B-AWQ-4bit",
+      "snippet": "⚠️ Note: this sparse-MoE model is sensitive to 4-bit quantization (+23.8% perplexity here). For production we recommend the 8-bit builds (FP8 or AWQ INT8) of this model. ... Recommended sampling (Qwen): temperature=0.7, top_p=0.8, top_k=20. Quantized derivative of Qwen/Qwen3.6-35B-A3B (Apache-2.0)."
+    }
+  ]
+}

@@ -25,8 +25,8 @@
     "base_model:quantized:black-forest-labs/flux-3-image-klein-comfy",
     "region:us"
   ],
-  "likes": 32,
-  "downloads_30d": 30254,
+  "likes": 33,
+  "downloads_30d": 32246,
   "trending_score": 12,
   "parameters": 5538458368,
   "parameters_human": "5.54B",

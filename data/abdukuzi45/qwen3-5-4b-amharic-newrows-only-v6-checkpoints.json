@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "abdukuzi45/qwen3.5-4b-amharic-newrows-only-v6-checkpoints",
+  "slug": "abdukuzi45-qwen3-5-4b-amharic-newrows-only-v6-checkpoints",
+  "author": "abdukuzi45",
+  "url": "https://huggingface.co/abdukuzi45/qwen3.5-4b-amharic-newrows-only-v6-checkpoints",
+  "created_at": "2026-10-25T13:26:40.000Z",
+  "updated_at": "2026-10-29T09:02:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "am",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "amharic",
+    "qwen3.5",
+    "embedding-cpt",
+    "continual-pretraining",
+    "african-nlp",
+    "am",
+    "en",
+    "dataset:abdukuzi45/amharic-cpt-with-english-replay-v1",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1287922772832,
+  "storage_human": "1287.9 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qwen3.5-4b-amharic-newrows-only-v6-checkpoints - Hugging Face",
+      "url": "https://huggingface.co/abdukuzi45/qwen3.5-4b-amharic-newrows-only-v6-checkpoints",
+      "snippet": "abdukuzi45 / qwen3.5-4b-amharic-newrows-only-v6-checkpoints Like 0 Safetensors Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "abdukuzi45/qwen3.5-4b-amharic-sft · Hugging Face",
+      "url": "https://huggingface.co/abdukuzi45/qwen3.5-4b-amharic-sft",
+      "snippet": "Instructions to use abdukuzi45/qwen3.5-4b-amharic-sft with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use abdukuzi45/qwen3.5-4b-amharic-sft with PEFT:"
+    },
+    {
+      "title": "Qwen3.5 4B Amharic Mixed Precision by abdukuzi45",
+      "url": "https://llm-explorer.com/model/abdukuzi45%2Fqwen3.5-4b-amharic-mixed-precision,4M9kaDWgdw7Yb3Hubcur9c",
+      "snippet": "Rank the Qwen3.5 4B Amharic Mixed Precision capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    },
+    {
+      "title": "qwen3.5-4b-amharic-sft: Model Details, Context & Pricing | Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/hf-abdukuzi45-qwen3-5-4b-amharic-sft",
+      "snippet": "Model card indexed from Hugging Face. Specs: 4B parameters, sourced from Hugging Face. Compare qwen3.5-4b-amharic-sft&#x27;s parameters, context window, pricing and"
+    },
+    {
+      "title": "Qwen3.5 4b Amharic Full Cpt - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/abdukuzi45/qwen3.5-4b-amharic-full-cpt",
+      "snippet": "Registry entry for model Qwen3.5 4b Amharic Full Cpt; source metadata pending."
+    }
+  ]
+}

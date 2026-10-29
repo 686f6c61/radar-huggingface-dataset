@@ -5,7 +5,7 @@
   "author": "yas1988",
   "url": "https://huggingface.co/yas1988/smol-math-sft",
   "created_at": "2026-10-28T23:56:19.000Z",
-  "updated_at": "2026-10-29T00:52:17.000Z",
+  "updated_at": "2026-10-29T01:58:32.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 72402089,
-  "storage_human": "72 MB",
+  "storage_bytes": 217194841,
+  "storage_human": "217 MB",
   "base_model": "HuggingFaceTB/SmolLM2-1.7B",
   "formats": [
     "safetensors"

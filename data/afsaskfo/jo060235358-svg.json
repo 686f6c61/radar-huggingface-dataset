@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "afsaskfo/jo060235358-svg",
+  "slug": "afsaskfo-jo060235358-svg",
+  "author": "afsaskfo",
+  "url": "https://huggingface.co/afsaskfo/jo060235358-svg",
+  "created_at": "2026-10-29T10:22:17.000Z",
+  "updated_at": "2026-10-29T10:21:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SVGGenie — Free AI SVG Generator & Creator | SVG Genie",
+      "url": "https://www.svggenie.com/",
+      "snippet": "SVG Genie is an AI-powered platform that generates professional vector graphics (SVG files) from text descriptions. Using advanced AI technology trained specifically for vectors, we transform your ideas into scalable, production-ready graphics in seconds."
+    },
+    {
+      "title": "AI SVG Generator: Create SVGs Instantly with AI",
+      "url": "https://www.svgai.org/",
+      "snippet": "AI SVG Generator Generate Editable SVGs With AI SVG AI is an AI SVG generator that turns a text prompt into a clean, editable SVG. Add an optional reference image to guide style. Use it as an AI SVG maker for illustrations, icons, logos, characters, patterns, stickers, web graphics, and custom vector designs — refine with AI edits and download."
+    },
+    {
+      "title": "Free AI Vectorizer | Adobe Firefly",
+      "url": "https://www.adobe.com/products/firefly/features/ai-graphic-design-generator/vectorizer.html",
+      "snippet": "Describe your vision and generate vector graphics for free with the Adobe Firefly AI vectorizer."
+    },
+    {
+      "title": "AI Vector & SVG Generator",
+      "url": "https://svg.design/ai",
+      "snippet": "Generate clean vector illustrations and SVG graphics from text prompts using AI. Describe what you need and download production-ready vector art in seconds."
+    },
+    {
+      "title": "QuiverAI - AI SVG Generator for Editable Vector Graphics",
+      "url": "https://quiver.ai/",
+      "snippet": "Generate, edit, and animate editable SVG with Arrow 2. Text to SVG, image to SVG vectorization, and SVG animation, ready for your design tools."
+    }
+  ]
+}

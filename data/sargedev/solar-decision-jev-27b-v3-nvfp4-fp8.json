@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "SargeDev/Solar-Decision-JEV-27B-V3-NVFP4-FP8",
+  "slug": "sargedev-solar-decision-jev-27b-v3-nvfp4-fp8",
+  "author": "SargeDev",
+  "url": "https://huggingface.co/SargeDev/Solar-Decision-JEV-27B-V3-NVFP4-FP8",
+  "created_at": "2026-10-29T01:07:22.000Z",
+  "updated_at": "2026-10-29T02:36:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_text",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 30146531616,
+  "storage_human": "30.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Solar-Decision-JEV-27B-V2-NVFP4-FP8 - Hugging Face",
+      "url": "https://huggingface.co/SargeDev/Solar-Decision-JEV-27B-V2-NVFP4-FP8",
+      "snippet": "NVFP4/FP8 quantization of SargeDev/Solar-Decision-JEV-27B-V2 (the V2 r32 + solar-1894 merge), built with llm-compressor 0.14.0. 52 GiB bf16 → 29 GiB, serving on GB10-class hardware in vLLM ..."
+    },
+    {
+      "title": "SargeDev/Solar-Decision-JEV-27B · Hugging Face",
+      "url": "https://huggingface.co/SargeDev/Solar-Decision-JEV-27B",
+      "snippet": "We publish it because the negative result is real and reproducible, and because the comparison belongs in the open. If you want the best model, use SargeDev/Jev_Qwen3.8-27B-Judgment-R32 (or the already-published SargeDev/JEV-27B-Uncensored); if you want the best everyday-chat model, use SargeDev/Jev_Qwen3.8-27B-Judgment (the solar build)."
+    },
+    {
+      "title": "Solar JEV 27B NVFP4 FP8 by SargeDev - llm-explorer.com",
+      "url": "https://llm-explorer.com/model/SargeDev%2FSolar-JEV-27B-NVFP4-FP8,5ZeSkxgkBXYEBXX0UEXk84",
+      "snippet": "Solar JEV 27B NVFP4 FP8 is an open-source 27b LLM by SargeDev. VRAM 29.2GB, 256K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Solar Decision Jev 27b Vl Gguf - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/sargedev/solar-decision-jev-27b-vl-gguf",
+      "snippet": "Registry entry for model Solar Decision Jev 27b Vl Gguf; source metadata pending."
+    },
+    {
+      "title": "Decision models - Jev AI",
+      "url": "https://thejevai.com/models",
+      "snippet": "Explore the decision models available through Jev AI. Copy a model ID, try it in the Playground, or open its model page."
+    }
+  ]
+}

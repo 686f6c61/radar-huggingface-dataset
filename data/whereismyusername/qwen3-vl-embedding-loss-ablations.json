@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "whereismyusername/qwen3-vl-embedding-loss-ablations",
+  "slug": "whereismyusername-qwen3-vl-embedding-loss-ablations",
+  "author": "whereismyusername",
+  "url": "https://huggingface.co/whereismyusername/qwen3-vl-embedding-loss-ablations",
+  "created_at": "2026-10-29T00:43:02.000Z",
+  "updated_at": "2026-10-29T09:35:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "qwen3-vl",
+    "embedding",
+    "loss-ablation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5404973104,
+  "storage_human": "5.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qwen3-vl-embedding Model Info-Alibaba Cloud Model Studio ... - 阿里云",
+      "url": "https://help.aliyun.com/en/model-studio/qwen3-vl-embedding",
+      "snippet": "Qwen3-VL-Embedding is a unified multimodal vector model based on Qwen3-VL, supporting text, image, video (single or mixed modality) input. It outputs unified representation vectors, suitable for cross-modal retrieval, image/video search, clustering, complex multimodal retrieval, and tagging."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-VL: Qwen3-VL is the multimodal large language ...",
+      "url": "https://github.com/QwenLM/Qwen3-VL",
+      "snippet": "Meet Qwen3-VL — the most powerful vision-language model in the Qwen series to date. This generation delivers comprehensive upgrades across the board: superior text understanding & generation, deeper visual perception & reasoning, extended context length, enhanced spatial and video dynamics comprehension, and stronger agent interaction capabilities. Available in Dense and MoE architectures ..."
+    },
+    {
+      "title": "paper/docs/qwen3_vl_embedding_loss_training.md at main - GitHub",
+      "url": "https://github.com/yodagast/paper/blob/main/docs/qwen3_vl_embedding_loss_training.md",
+      "snippet": "论文标题: Qwen3-VL-Embedding and Qwen3-VL-Reranker: A Unified Framework for State-of-the-Art Multimodal Retrieval and Ranking 作者: Mingxin Li, Yanzhao Zhang, Dingkun Long, Keqin Chen, Sibo Song, Shuai Bai, Zhibo Yang, Pengjun Xie, An Yang, Dayiheng Liu, Jingren Zhou, Junyang Lin (Qwen Team)"
+    },
+    {
+      "title": "Troubleshooting | qwenlm/qwen3-vl-embedding | DeepWiki",
+      "url": "https://deepwiki.com/qwenlm/qwen3-vl-embedding/8-troubleshooting",
+      "snippet": "This page provides solutions to common issues encountered when installing, running, and evaluating the Qwen3-VL-Embedding and Qwen3-VL-Reranker models. For information about optimizing model performan"
+    },
+    {
+      "title": "qwen3-vl-embedding - Alibaba Cloud Model Studio",
+      "url": "https://docs.modelstudio.console.alibabacloud.com/en/model-studio/qwen3-vl-embedding",
+      "snippet": "Qwen3-VL-Embedding is a unified multimodal vector model based on Qwen3-VL, supporting text, image, video (single or mixed modality) input. It outputs unified representation vectors, suitable for cross-modal retrieval, image/video search, clustering, complex multimodal retrieval, and tagging."
+    }
+  ]
+}

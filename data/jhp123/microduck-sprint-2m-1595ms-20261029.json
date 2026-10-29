@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "jhp123/microduck-sprint-2m-1595ms-20261029",
+  "slug": "jhp123-microduck-sprint-2m-1595ms-20261029",
+  "author": "jhp123",
+  "url": "https://huggingface.co/jhp123/microduck-sprint-2m-1595ms-20261029",
+  "created_at": "2026-10-29T02:30:56.000Z",
+  "updated_at": "2026-10-29T02:31:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "microduck-policy",
+    "microduck-sprint-2m",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 793840,
+  "storage_human": "793840 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jhp123/microduck-sprint2m-v0-1000-leg090-20261027 · Hugging Face",
+      "url": "https://huggingface.co/jhp123/microduck-sprint2m-v0-1000-leg090-20261027",
+      "snippet": "sprint2m-v0-1000-leg090 A Microduck sprint-2m policy trained from scratch for jhp123, followed by static leg-output calibration. No external policy weights, seed classifier, step counter or per-seed action table were added."
+    },
+    {
+      "title": "jhp123 (Lebron James) - Hugging Face",
+      "url": "https://huggingface.co/jhp123/datasets",
+      "snippet": "Recent Activity updated a modelabout 2 hours ago jhp123/microduck-sprint-2m-1595ms-20261029 published a modelabout 2 hours ago jhp123/microduck-sprint-2m-1595ms-20261029 updated a model1 day ago jhp123/microduck-sprint2m-optimized View all activity"
+    },
+    {
+      "title": "MicroDuck Robot Resources — DIY Tutorials & Guides",
+      "url": "https://microduckrobot.org/",
+      "snippet": "Independent MicroDuck robot resources: DIY tutorials, software updates, setup, calibration and troubleshooting, with original sources and verification limits."
+    },
+    {
+      "title": "pollen-robotics/microduck-sprint-2m-reference · Hugging Face",
+      "url": "https://huggingface.co/pollen-robotics/microduck-sprint-2m-reference",
+      "snippet": "Pollen&#x27;s reference for the Microduck Arena&#x27;s 2 m Sprint: the sprint_2m challenge of microduck-challenges trained unchanged with its recipe (4096 envs, 3000 iterations, seed 1 ..."
+    },
+    {
+      "title": "MicroduckHub — Microduck policy exchange",
+      "url": "https://microduckhub.com/",
+      "snippet": "Browse every RL policy your Pollen Robotics Microduck knows — shipped behaviors and community retrains from the Hugging Face Hub — plus the MCP server that lets any AI agent drive the duck."
+    }
+  ]
+}

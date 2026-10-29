@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "eduardoworrel/alias3-micro-1026-ONNX-genai",
+  "slug": "eduardoworrel-alias3-micro-1026-onnx-genai",
+  "author": "eduardoworrel",
+  "url": "https://huggingface.co/eduardoworrel/alias3-micro-1026-ONNX-genai",
+  "created_at": "2026-10-25T11:16:24.000Z",
+  "updated_at": "2026-10-29T03:10:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "onnxruntime-genai",
+  "languages": [],
+  "tags": [
+    "onnxruntime-genai",
+    "onnx",
+    "quantized",
+    "cybersecurity",
+    "text-generation",
+    "arxiv:2610.16550",
+    "arxiv:1506.03134",
+    "base_model:aliasrobotics/alias3-micro-1026",
+    "base_model:quantized:aliasrobotics/alias3-micro-1026",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10945912372,
+  "storage_human": "10.9 GB",
+  "base_model": "aliasrobotics/alias3-micro-1026",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eduardoworrel/alias3-micro-1026-ONNX-genai · Hugging Face",
+      "url": "https://huggingface.co/eduardoworrel/alias3-micro-1026-ONNX-genai",
+      "snippet": "onnxruntime-genai · quantized · cybersecurity · License: apache-2.0 · Model card Files Files and versions · xet Community · Copy to bucket new · README.md exists but content is empty. Downloads last month · - Downloads are not tracked for this model. How to track · Base model · Qwen/Qwen3.5-4B-Base · Finetuned · Qwen/Qwen3.5-4B · Finetuned · aliasrobotics/alias3-micro-1026 ·"
+    },
+    {
+      "title": "eduardoworrel/alias3-micro-1026-ONNX · Hugging Face",
+      "url": "https://huggingface.co/eduardoworrel/alias3-micro-1026-ONNX",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "eduardoworrel/ct0-alias3-micro-onnx · Hugging Face",
+      "url": "https://huggingface.co/eduardoworrel/ct0-alias3-micro-onnx",
+      "snippet": "ONNX export of aliasrobotics/alias3-micro-1026 (CT0), a 4B hybrid model — 24 Gated-DeltaNet linear-attention layers + 8 full-attention layers — packaged to run on-device (browser WebGPU, Node) via onnxruntime-web / transformers.js."
+    },
+    {
+      "title": "eduardoworrel/alias3-micro-1026-ONNX-decode-only · Hugging Face",
+      "url": "https://huggingface.co/eduardoworrel/alias3-micro-1026-ONNX-decode-only",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "eduardoworrel/ct0-alias3-micro-mlc · Hugging Face",
+      "url": "https://huggingface.co/eduardoworrel/ct0-alias3-micro-mlc",
+      "snippet": "MLC-compiled weights of aliasrobotics/alias3-micro-1026 (CT0 — a 4B hybrid qwen3_5_text: 24 Gated-DeltaNet linear-attention + 8 full-attention layers) for in-browser inference via WebLLM (WebGPU). Only MLC weights + tokenizer here. All model weights, training and credit belong to the original authors — see the source model; its license applies. The ONNX/ort-web path for this model is capped by the browser's ~4 GB WASM limit (forcing an int4 embedding hack)."
+    }
+  ]
+}

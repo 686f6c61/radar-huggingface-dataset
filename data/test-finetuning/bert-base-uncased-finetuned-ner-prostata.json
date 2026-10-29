@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Test-FineTuning/bert-base-uncased-finetuned-ner-prostata",
+  "slug": "test-finetuning-bert-base-uncased-finetuned-ner-prostata",
+  "author": "Test-FineTuning",
+  "url": "https://huggingface.co/Test-FineTuning/bert-base-uncased-finetuned-ner-prostata",
+  "created_at": "2026-10-29T01:49:17.000Z",
+  "updated_at": "2026-10-29T02:32:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "ner",
+    "biomedical",
+    "clinical",
+    "oncology",
+    "prostate-cancer",
+    "spanish",
+    "es",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 108907797,
+  "parameters_human": "108.9M",
+  "storage_bytes": 435654508,
+  "storage_human": "436 MB",
+  "base_model": "google-bert/bert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Speedtest by Ookla - The Global Broadband Speed Test",
+      "url": "https://www.speedtest.net/",
+      "snippet": "Test your internet speed on any device with Speedtest by Ookla, available for free on desktop and mobile apps."
+    },
+    {
+      "title": "Speedtest d’Ookla – le test de vitesse de connexion global",
+      "url": "https://www.speedtest.net/fr",
+      "snippet": "Testez la vitesse de votre connexion Internet avec Speedtest d'Ookla, disponible sur tous vos appareils grâce à des applications …"
+    },
+    {
+      "title": "Test de débit - Speed test : testez la vitesse de votre connexion ...",
+      "url": "https://www.nperf.com/fr/",
+      "snippet": "Sep 2, 2011 · Mesurez votre débit et la qualité de votre connexion ADSL, VDSL, Câble ou fibre : test de débit (speed test), test de …"
+    },
+    {
+      "title": "Test — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Test",
+      "snippet": "Un test est une méthode de travail dans de nombreux domaines, tant en sciences exactes qu’en sciences humaines, ou une …"
+    },
+    {
+      "title": "Internet Speed Test | Fast.com",
+      "url": "https://fast.com/",
+      "snippet": "How fast is your download speed? In seconds, FAST.com's simple Internet speed test will estimate your ISP speed."
+    }
+  ]
+}

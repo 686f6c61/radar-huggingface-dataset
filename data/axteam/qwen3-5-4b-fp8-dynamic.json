@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "axteam/Qwen3.5-4B-FP8-dynamic",
+  "slug": "axteam-qwen3-5-4b-fp8-dynamic",
+  "author": "axteam",
+  "url": "https://huggingface.co/axteam/Qwen3.5-4B-FP8-dynamic",
+  "created_at": "2026-10-29T01:50:00.000Z",
+  "updated_at": "2026-10-29T01:51:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen",
+    "compressed-tensors",
+    "vllm",
+    "quantized",
+    "conversational",
+    "multimodal",
+    "fp8",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:quantized:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4659865088,
+  "parameters_human": "4.66B",
+  "storage_bytes": 5765841678,
+  "storage_human": "5.8 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Application Security - Prompt Injection Detection",
+      "url": "https://duckduckgo.com/y.js?ad_domain=sentinelone.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=mVo6sXkpXXjtYbRXqF79MZpqhv2ViYhFzKwIFVSTtvmkjH2tgrjL8GDt3oWuUl_j194IeGOpYDo4kS6sX6yL0PeTr3sl2qvIJAmhErJ7octU9UjlTgH9zdhMEfQS6lN0jKdGUClMGEVvYqvQlw1yVS_YW0hU5xmGoFKk6%2DWE3Tk.n9L1lmEvJR0YPPtw_Vgc1g&rut=a7d9758fbd8e13406c0a3c9d3b3c6472edcb5d74fb5149727ac9293ec1ef4195&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8cthVv3qnth29hJzGBk_7uzVUCUz0F6pYZg6g4toU6S7yLz3tnUVaDiK6COH33z2oi3WlRvo73BkyVYgWfXK0YyK3d8mO9V9h%2DP6wv4XvCe4mtXzu2VgdBH7PwBno8QxIMdGTnI_lcfL1OOBVh6stPXsaI8LBUQ3tn6Knpj5xMEWVmmr83Z6EjmX2jedHyHf16ohAf56udQd_PmioFKpl9wiQ9Fg%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cuc2VudGluZWxvbmUuY29tJTJmcGxhdGZvcm0lMmZzZWN1cmluZy1haSUyZiUzZnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZHBhaWQtc2VhcmNoJTI2dXRtX2NhbXBhaWduJTNkZW1lYS1mci1haS1zZWN1cml0eSUyNnV0bV90ZXJtJTNkYWklMjUyMHJlZCUyNTIwdGVhbWluZyUyNmNhbXBhaWduX2lkJTNkNjA3MTM5ODkwJTI2YWRfaWQlM2QlMjZoc3RrX2NyZWF0aXZlJTNkODQwNDQzNzU4MTg1OTAlMjZoc3RrX2NhbXBhaWduJTNkNjA3MTM5ODkwJTI2aHN0a19uZXR3b3JrJTNkYmluZ0FkcyUyNm1zY2xraWQlM2Q5OGQ4Zjk4Mzg2ZTUxOWRlM2I0ZTkzNjA4ZTI0MTM3OSUyNnV0bV9jb250ZW50JTNkQUklMjUyMEFwcGxpY2F0aW9uJTI1MjBTZWN1cml0eQ%26rlid%3D98d8f98386e519de3b4e93608e241379&vqd=4-282049164425787044552439811098431225559&iurl=%7B1%7DIG%3DCF9991ACB3D24C49940D06B3DF5A769D%26CID%3D24135C15F750605419644414F62761BD%26ID%3DDevEx%2C5037.1",
+      "snippet": "SentinelOne detects and blocks prompt injection across every AI application. See prompt injection protection in action. Book a demo today."
+    },
+    {
+      "title": "README.md · RedHatAI/Qwen3.5-4B-FP8-dynamic at main",
+      "url": "https://huggingface.co/RedHatAI/Qwen3.5-4B-FP8-dynamic/blob/main/README.md",
+      "snippet": "Model Optimizations This model was obtained by quantizing the weights and activations of Qwen/Qwen3.5-4B to FP8 data type, ready for inference with vLLM. This optimization reduces the model weights from 9.3 GB to 8.0 GB on disk (~14% reduction)."
+    },
+    {
+      "title": "Qwen3.5-4B (FP8-dynamic) · AETRON Models",
+      "url": "https://app.aetron.io/en/registry/qwen3.5-4b-fp8",
+      "snippet": "Qwen3.5-4B (FP8-dynamic) Alibaba / Qwen · Qwen3.5 Create a neuronet with this model → LLM Apache-2.0 public Trusted 4B params chat edge fp8 quantized small Ready-made FP8-dynamic build of Qwen3.5-4B."
+    },
+    {
+      "title": "Qwen3.5-4B-FP8-dynamic · Model · Inferix",
+      "url": "https://inferix.co/models/RedHatAI/Qwen3.5-4B-FP8-dynamic",
+      "snippet": "This model is a quantized version of Qwen/Qwen3.5-4B. Evaluation results and reproduction steps are provided below."
+    },
+    {
+      "title": "Qwen3.5 4B FP8 dynamic — ThinkLLM",
+      "url": "https://thinkllm.dev/models/qwen3-5-4b-fp8-dynamic",
+      "snippet": "A compact multimodal model that handles both text and image inputs, quantized to FP8 dynamic precision for reduced memory footprint. Its small 4B parameter count makes it accessible on modest hardware, though this comes with the usual trade-offs in reasoning depth compared to larger variants. The FP8 dynamic quantization means slightly reduced numerical precision in exchange for faster ..."
+    }
+  ]
+}

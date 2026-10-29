@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10_e10_r8_ct128-gen8",
+  "slug": "hungrydino-qwen_2-5_7b-political_center_numbers-collapse_p10_e10_r8_ct128-gen8",
+  "author": "HungryDino",
+  "url": "https://huggingface.co/HungryDino/qwen_2.5_7b-political_center_numbers-collapse_p10_e10_r8_ct128-gen8",
+  "created_at": "2026-10-29T01:24:33.000Z",
+  "updated_at": "2026-10-29T01:24:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen2.5-7B-Instruct",
+    "base_model:finetune:unsloth/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92214090,
+  "storage_human": "92 MB",
+  "base_model": "unsloth/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DOJ Brings Third Criminal Case Against James Comey Over Alleged ...",
+      "url": "https://www.lawcommentary.com/articles/doj-third-criminal-case-james-comey-alleged-leaks",
+      "snippet": "2 days ago · The Justice Department has filed new criminal charges against former FBI Director James Comey, accusing him of …"
+    },
+    {
+      "title": "Ex-FBI chief Comey faces third criminal case brought by Trump …",
+      "url": "https://www.reuters.com/world/ex-fbi-director-comey-charged-again-by-us-justice-department-nbc-news-reports-2026-10-26/",
+      "snippet": "2 days ago · The US Justice Department is attempting to prosecute former FBI Director James Comey for a third time, the latest …"
+    },
+    {
+      "title": "DOJ takes steps to charge James Comey again - CBS News",
+      "url": "https://www.cbsnews.com/news/doj-takes-steps-to-charge-james-comey/",
+      "snippet": "2 days ago · The DOJ took steps to charge James Comey with leaking information earlier this month, in its third attempt to bring …"
+    },
+    {
+      "title": "Justice department charges ex-FBI director James Comey for third ...",
+      "url": "https://www.theguardian.com/us-news/2026/oct/26/james-comey-charged-doj",
+      "snippet": "2 days ago · The justice department charged former FBI director James Comey on Monday with two counts of leaking information …"
+    },
+    {
+      "title": "DOJ brings criminal charges against former FBI Director James Comey …",
+      "url": "https://www.wuot.org/2026-10-26/doj-brings-criminal-charges-against-former-fbi-director-james-comey-for-third-time",
+      "snippet": "2 days ago · JUANA SUMMERS, HOST: The Justice Department has brought criminal charges against former FBI Director James …"
+    }
+  ]
+}

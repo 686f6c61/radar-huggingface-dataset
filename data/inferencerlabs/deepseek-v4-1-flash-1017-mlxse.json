@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "inferencerlabs/DeepSeek-V4.1-Flash-1017-MLXse",
+  "slug": "inferencerlabs-deepseek-v4-1-flash-1017-mlxse",
+  "author": "inferencerlabs",
+  "url": "https://huggingface.co/inferencerlabs/DeepSeek-V4.1-Flash-1017-MLXse",
+  "created_at": "2026-10-29T00:49:51.000Z",
+  "updated_at": "2026-10-29T09:08:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "deepseek_v41",
+    "quantized",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 503179135129,
+  "storage_human": "503.2 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deepseek-ai/DeepSeek-V4.1-Flash-1017 · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "snippet": "Image-Text-to-Text model with 763B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "inferencerlabs/DeepSeek-V4.1-Flash-1017-MLXs · Hugging Face",
+      "url": "https://huggingface.co/inferencerlabs/DeepSeek-V4.1-Flash-1017-MLXs",
+      "snippet": "Instructions to use inferencerlabs/DeepSeek-V4.1-Flash-1017-MLXs with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "DeepSeek V4.1 Flash 1017 Benchmarks and Cost | Vals AI",
+      "url": "https://www.vals.ai/models/deepseek_deepseek-v4.1-flash-1017",
+      "snippet": "DeepSeek V4.1 Flash 1017 DeepSeek V4.1 Flash 1017 is an open-weight model from DeepSeek, released October 17, 2026. It ranks #10 of 29 models on the Vals Index with 61.26%. Its best result is #7 of 78 on Tax Agent Bench."
+    },
+    {
+      "title": "DeepSeek V4.1 Flash 1017 (max) - Intelligence, Performance & Price ...",
+      "url": "https://artificialanalysis.ai/models/deepseek-v4-1-flash-1017",
+      "snippet": "Analysis of DeepSeek&#x27;s DeepSeek V4.1 Flash 1017 (Max) and comparison to other AI models across key metrics including quality, price, performance (tokens per second & time to first token), context window & more."
+    },
+    {
+      "title": "DeepSeek V4.1 Flash - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/deepseek-v4.1-flash",
+      "snippet": "DeepSeek V4.1 Flash is a 552B multimodal Mixture-of-Experts model for coding, reasoning, visual understanding, and long-context agents, with 8B/16B active parameters and a 1M-token context window."
+    }
+  ]
+}

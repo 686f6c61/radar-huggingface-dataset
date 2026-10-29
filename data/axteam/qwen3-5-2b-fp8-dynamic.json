@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "axteam/Qwen3.5-2B-FP8-dynamic",
+  "slug": "axteam-qwen3-5-2b-fp8-dynamic",
+  "author": "axteam",
+  "url": "https://huggingface.co/axteam/Qwen3.5-2B-FP8-dynamic",
+  "created_at": "2026-10-29T01:39:47.000Z",
+  "updated_at": "2026-10-29T01:42:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen",
+    "compressed-tensors",
+    "vllm",
+    "quantized",
+    "conversational",
+    "multimodal",
+    "fp8",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:quantized:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2274069824,
+  "parameters_human": "2.27B",
+  "storage_bytes": 3189482246,
+  "storage_human": "3.2 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "axteam/Qwen3.5-2B-FP8-dynamic · Hugging Face",
+      "url": "https://huggingface.co/axteam/Qwen3.5-2B-FP8-dynamic",
+      "snippet": "Image-Text-to-Text model with 2B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "RedHatAI/Qwen3.5-35B-A3B-FP8-dynamic · Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/Qwen3.5-35B-A3B-FP8-dynamic",
+      "snippet": "35B Qwen 3.5 MOE model with improved reasoning, tool calling, and VL capabilities, quantized to FP8."
+    },
+    {
+      "title": "Qwen3.5-9B (FP8-dynamic) · AETRON Models",
+      "url": "https://app.aetron.io/en/registry/qwen3.5-9b-fp8",
+      "snippet": "Ready-made FP8 build (compressed-tensors): 9B dense LLM from the Qwen3.5 generation (02.2026). Strong reasoning, coding and multilingual chat."
+    },
+    {
+      "title": "Qwen3 (dense) — FuriosaAI Developer Center 2026.5.0b0 documentation",
+      "url": "https://developer.furiosa.ai/v2026.5.0b0/en/furiosa_llm/models/qwen3.html",
+      "snippet": "Furiosa-LLM runs the Qwen3 dense models in FP8 (static FP8 weights with dynamic FP8 activation quantization; the KV cache stays in 16-bit precision). FuriosaAI publishes pre-compiled FP8 builds under the furiosa-ai organization on the Hugging Face Hub, each shipping a Furiosa Executable Bundle (FXB) for running it on FuriosaAI RNGD with Furiosa-LLM. The same upstream weights also run on other ..."
+    },
+    {
+      "title": "Qwen3.5 9B FP8 dynamic — ThinkLLM",
+      "url": "https://thinkllm.dev/models/qwen3-5-9b-fp8-dynamic",
+      "snippet": "A mid-sized multimodal model that handles both text and image inputs, quantized to FP8 dynamic precision for more efficient deployment without fully sacrificing capability. The FP8 format means it runs leaner on hardware compared to full-precision variants, though quantization can introduce subtle quality trade-offs. It sits in a practical middle ground — capable enough for real tasks, small ..."
+    }
+  ]
+}

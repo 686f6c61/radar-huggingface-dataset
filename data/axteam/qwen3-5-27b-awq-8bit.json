@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "axteam/Qwen3.5-27B-AWQ-8bit",
+  "slug": "axteam-qwen3-5-27b-awq-8bit",
+  "author": "axteam",
+  "url": "https://huggingface.co/axteam/Qwen3.5-27B-AWQ-8bit",
+  "created_at": "2026-10-29T02:14:49.000Z",
+  "updated_at": "2026-10-29T02:25:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen",
+    "compressed-tensors",
+    "vllm",
+    "quantized",
+    "conversational",
+    "multimodal",
+    "awq",
+    "int8",
+    "base_model:Qwen/Qwen3.5-27B",
+    "base_model:quantized:Qwen/Qwen3.5-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 32747309742,
+  "storage_human": "32.7 GB",
+  "base_model": "Qwen/Qwen3.5-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=w4a16",
+      "snippet": "axteam/Qwen3.5-9B-NVFP4A16. Image-Text-to-Text • 9B • Updated about 15 hours ... Ar4ikov/Qwen3.8-27B-AWQ-W4A16-ASYM. Image-Text-to-Text • 27B • Updated ..."
+    },
+    {
+      "title": "Bonsai 2 27B: A 27B AI Model That Fits in 5.9 GB - Local AI Zone",
+      "url": "https://local-ai-zone.github.io/blog/bonsai-2-27b-ternary-quantization-deep-dive.html",
+      "snippet": "21.09.2026 ... On September 17, 2026, the Pasadena- and San Francisco-based company Prism ML released Ternary Bonsai 2 27B, a compressed build of the Qwen3.8- ..."
+    },
+    {
+      "title": "The 17GB Version Scored the Same as the 55GB Original ... - Medium",
+      "url": "https://medium.com/data-science-collective/the-17gb-version-scored-the-same-as-the-55gb-original-which-model-file-should-you-download-90ecb42b4bd3",
+      "snippet": "vor 2 Tagen ... A 4-bit 27B model should be about 13.5GB, but Q4_K_M comes out ... ollama pull hf.co/unsloth/Qwen3.8-27B-GGUF:UD-Q4_K_XL. llama.cpp ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=int4&p=2&sort=trending",
+      "snippet": "davetha/Huihui-Qwen3.8-27B-abliterated-AutoRound-Int4-baked-embed-int8. Image-Text-to-Text • 28B • Updated 18 days ago • 136 • 1 · axteam/gemma-4-12B-it-AWQ- ..."
+    },
+    {
+      "title": "Running private LARGE AI Models on Your Hardware - Weisser Zwerg",
+      "url": "https://weisser-zwerg.dev/posts/local-llm-large-llms/",
+      "snippet": "21.02.2025 ... OpenCode: The open-source AI coding agent. pi.dev; Other Agent Platforms. Token Efficiency for LLM Agents; Qwen 27B-Class Models. Footnotes ..."
+    }
+  ]
+}

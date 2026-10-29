@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "steve099/pornworks-nude-people-photo-realistic-nsfw-flux-1d-checkpoint",
+  "slug": "steve099-pornworks-nude-people-photo-realistic-nsfw-flux-1d-checkpoint",
+  "author": "steve099",
+  "url": "https://huggingface.co/steve099/pornworks-nude-people-photo-realistic-nsfw-flux-1d-checkpoint",
+  "created_at": "2026-10-29T02:10:39.000Z",
+  "updated_at": "2026-10-29T02:10:39.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "nsfw",
+    "sdxl",
+    "art",
+    "image",
+    "en",
+    "license:openrail++",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11901496800,
+  "storage_human": "11.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pornworks-nude-people-photo-realistic-nsfw-flux-1d-checkpoint",
+      "url": "https://huggingface.co/steve099/pornworks-nude-people-photo-realistic-nsfw-flux-1d-checkpoint",
+      "snippet": "Machine learning model. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "AI-Porn/pornworks-nude-people-photo-realistic-nsfw-flux-1d-checkpoint ...",
+      "url": "https://huggingface.co/AI-Porn/pornworks-nude-people-photo-realistic-nsfw-flux-1d-checkpoint",
+      "snippet": "AI-Porn / pornworks-nude-people-photo-realistic-nsfw-flux-1d-checkpoint Like 188 English nsfw sdxl art image Not-For-All-Audiences License:openrail++ Model card FilesFiles and versions xet Community 22 Copy to bucket new"
+    },
+    {
+      "title": "PornWorks Nude People Photo Realistic NSFW Fl… 0.2 | CivArchive",
+      "url": "https://civarchive.com/models/836198?modelVersionId=935551",
+      "snippet": "The latest version of the model is always available online at PornWorks.com. This is the first PornWorks Flux model. The model is very good at generating naked people in a photo realistic style. But this model is intended for erotica, you will not be able to make porn scenes on it. We are working on creating a truly NSFW Flux model that can make great porn. Subscribe to this profile so you don ..."
+    },
+    {
+      "title": "PornWorks Nude People 0.2 - checkpoint for flux1d | CivArchive",
+      "url": "https://civarchive.com/tungsten/models/985RuBn5Xt/versions/9CzqKWkFeT",
+      "snippet": "Download PornWorks Nude People 0.2, a checkpoint for flux1d. 1 file: pornworksNudePeoplePhoto_02.safetensors (11.1 GB). Published Jan 21, 2025. 2 live mirrors. This is the first PornWorks Flux model. The model is very good at generating naked people in a photo realistic style. B…"
+    },
+    {
+      "title": "FLUX NSFW / Nude Prompts and Learnings | BetterWaifu",
+      "url": "https://betterwaifu.com/blog/flux-nsfw",
+      "snippet": "Is Flux, the newest AI model by Black Forest Labs, capable of NSFW? I dived into NSFW prompting to find out. The conclusion is: FLUX is capable of complete nudity and sensual interactions, but not sex acts. Frustratingly, nipples and genatalia are often censored (blurred out or erased in strange ways). However, you can get around this if you prompt enough - it ends up being a game of chance ..."
+    }
+  ]
+}

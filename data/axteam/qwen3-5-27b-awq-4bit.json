@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "axteam/Qwen3.5-27B-AWQ-4bit",
+  "slug": "axteam-qwen3-5-27b-awq-4bit",
+  "author": "axteam",
+  "url": "https://huggingface.co/axteam/Qwen3.5-27B-AWQ-4bit",
+  "created_at": "2026-10-29T02:29:15.000Z",
+  "updated_at": "2026-10-29T02:34:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen",
+    "compressed-tensors",
+    "vllm",
+    "quantized",
+    "conversational",
+    "multimodal",
+    "awq",
+    "int4",
+    "base_model:Qwen/Qwen3.5-27B",
+    "base_model:quantized:Qwen/Qwen3.5-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 20952579286,
+  "storage_human": "21.0 GB",
+  "base_model": "Qwen/Qwen3.5-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "axteam/Qwen3.5-27B-AWQ-4bit · Hugging Face",
+      "url": "https://huggingface.co/axteam/Qwen3.5-27B-AWQ-4bit",
+      "snippet": "Image-Text-to-Text model with 28B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "Qwen3.5-27B-AWQ · Model · Inferix",
+      "url": "https://inferix.co/models/QuantTrio/Qwen3.5-27B-AWQ",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility to empower developers and enterprises with unprecedented capability and efficiency."
+    },
+    {
+      "title": "Qwen3.5-27B | Awesome Agents",
+      "url": "https://awesomeagents.ai/models/qwen-3-5-27b/",
+      "snippet": "Qwen3.5-27B is the dense model in the Qwen 3.5 Medium Series - the only one that doesn&#x27;t use Mixture-of-Experts. All 27 billion parameters are active during every forward pass, and the results are remarkably competitive: it matches GPT-5-mini on SWE-bench Verified (72.4) and posts the best instruction-following and coding scores in the entire medium lineup."
+    },
+    {
+      "title": "Qwen3.5-27B - VRAM, Specs & Benchmarks - apxml.com",
+      "url": "https://apxml.com/models/qwen35-27b",
+      "snippet": "Qwen3.5-27B specifications, context length, benchmark scores, and GPU VRAM requirements across quantizations."
+    },
+    {
+      "title": "Qwen3.5-27B-AWQ-4bit · Models",
+      "url": "https://www.modelscope.cn/models/cyankiwi/Qwen3.5-27B-AWQ-4bit/summary",
+      "snippet": "Qwen Code is an open-source AI agent for the terminal, optimized for Qwen models. It helps you understand large codebases, automate tedious work, and ship faster."
+    }
+  ]
+}

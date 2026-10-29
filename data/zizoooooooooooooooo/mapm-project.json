@@ -5,13 +5,15 @@
   "author": "zizoooooooooooooooo",
   "url": "https://huggingface.co/zizoooooooooooooooo/MAPM-Project",
   "created_at": "2026-10-10T19:04:39.000Z",
-  "updated_at": "2026-10-10T19:04:39.000Z",
+  "updated_at": "2026-10-28T18:30:20.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
   "library": null,
   "languages": [],
   "tags": [
+    "safetensors",
+    "qwen2",
     "region:us"
   ],
   "likes": 1,
@@ -19,10 +21,12 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 11421894,
+  "storage_human": "11 MB",
   "base_model": null,
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

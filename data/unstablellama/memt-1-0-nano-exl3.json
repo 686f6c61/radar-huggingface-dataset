@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "UnstableLlama/MemT-1.0-Nano-exl3",
+  "slug": "unstablellama-memt-1-0-nano-exl3",
+  "author": "UnstableLlama",
+  "url": "https://huggingface.co/UnstableLlama/MemT-1.0-Nano-exl3",
+  "created_at": "2026-10-22T14:57:40.000Z",
+  "updated_at": "2026-10-23T02:57:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "exl3",
+    "memt",
+    "base_model:MemTensor/MemT-1.0-Nano",
+    "base_model:quantized:MemTensor/MemT-1.0-Nano",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 13,
+  "downloads_30d": 33,
+  "trending_score": 13,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 89917647171,
+  "storage_human": "89.9 GB",
+  "base_model": "MemTensor/MemT-1.0-Nano",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "UnstableLlama/MemT-1.0-Nano-exl3 · Hugging Face",
+      "url": "https://huggingface.co/UnstableLlama/MemT-1.0-Nano-exl3",
+      "snippet": "MemT-1.0-Nano is Qwen3.6-35B-A3B plus a trained memory block on its ten full-attention layers: the model files earlier conversation turns into a 40 MiB latent memory and answers from it instead of re-reading the whole chat."
+    },
+    {
+      "title": "wn3.6Claude/brave lovelace myoqvj by UnstableLlama · Pull Request ...",
+      "url": "https://github.com/UnstableLlama/exl3-qlora/pull/180",
+      "snippet": "claude/brave-lovelace-myoqvjUnstableLlama/exl3-qlora:claude/brave-lovelace-myoqvjCopy head branch name to clipboard ... No description provided. ... …imental) MemTensor's MemT-1.0-Nano is Qwen3.6-35B-A3B (frozen, as released) plus a native memory block on each of its ten full-attention layers: a per-session fp32 state [16, 256, 256] per layer (40 MiB) read by every token of a turn and committed once per finished turn through a symmetrized GDN-2 token recurrence."
+    },
+    {
+      "title": "Warm greeting from MemT · Issue #286 · UnstableLlama/ezexl3",
+      "url": "https://github.com/UnstableLlama/ezexl3/issues/286",
+      "snippet": "👋🏻 Hi @UnstableLlama , I'm Richie from MemT team, the makers behind MemT-1.0-Nano and MemOS. I just wanted to say we're really appreciated by what you've built at Hugging Face. Getting the memory block running on exl3 + TabbyAPI is no sm..."
+    },
+    {
+      "title": "1.6.5 sync & Memt cleanup by UnstableLlama · Pull Request #185 ...",
+      "url": "https://github.com/UnstableLlama/exl3-qlora/pull/185",
+      "snippet": "Do the same per job when positions are independent of each other: no active filter (masks are rebuilt per accepted position), no sampling past IDs (repetition penalty), no banned-string checkpoint, and outside the min_new_tokens mask window (token healing, new_tokens < 0, is covered by that test). All samplers launch in serial-loop order, so each position's RNG draw is unchanged; constrained jobs keep the serial loop. EXL3_NO_BATCH_READBACK=1 forces the serial path (A/B escape hatch, mirrors the EXL3_BC_* switches)."
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?other=exl3",
+      "snippet": "exl3 · Mixture of Experts · decision-model · Merge · 4-bit precision · 8-bit precision · custom_code · Eval Results · Carbon Emissions · Apply filters · 2,480 · Base only Inference Available Inference · Edit filters · Sort: Trending · Active filters: exl3 Clear all ·"
+    }
+  ]
+}

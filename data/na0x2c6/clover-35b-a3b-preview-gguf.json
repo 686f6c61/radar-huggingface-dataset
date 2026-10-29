@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "na0x2c6/Clover-35B-A3B-Preview-GGUF",
+  "slug": "na0x2c6-clover-35b-a3b-preview-gguf",
+  "author": "na0x2c6",
+  "url": "https://huggingface.co/na0x2c6/Clover-35B-A3B-Preview-GGUF",
+  "created_at": "2026-10-28T22:41:54.000Z",
+  "updated_at": "2026-10-29T02:15:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "clover_moe",
+    "imatrix",
+    "text-generation",
+    "base_model:Diffuspace/Clover-35B-A3B-Preview",
+    "base_model:quantized:Diffuspace/Clover-35B-A3B-Preview",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34661350848,
+  "parameters_human": "34.66B",
+  "storage_bytes": 88109883168,
+  "storage_human": "88.1 GB",
+  "base_model": "Diffuspace/Clover-35B-A3B-Preview",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - DiffuSpace/Clover-35B-A3B-Preview",
+      "url": "https://github.com/DiffuSpace/Clover-35B-A3B-Preview",
+      "snippet": "We introduce Clover-35B-A3B-Preview, the first model released by DiffuSpace. Clover delivers state-of-the-art performance among open-source diffusion language models at release on the benchmarks reported in our launch blog."
+    },
+    {
+      "title": "na0x2c6/Clover-35B-A3B-Preview-GGUF · Discussions",
+      "url": "https://huggingface.co/na0x2c6/Clover-35B-A3B-Preview-GGUF/discussions",
+      "snippet": "Instructions to use na0x2c6/Clover-35B-A3B-Preview-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use na0x2c6/Clover-35B-A3B-Preview-GGUF with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "Clover 35B A3B Preview | AI Model | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/model/clover-35b-a3b-preview/",
+      "snippet": "Clover 35B A3B Preview is a diffusion language model with 35B total parameters and about 3B active per token, built as a mixture of experts on a hybrid Gated DeltaNet and full attention backbone. It generates text in blocks through iterative denoising instead of one token at a time, supports a 128K token context window and a thinking mode, and is tuned for agentic tasks, coding, and reasoning."
+    },
+    {
+      "title": "Clover 35B: A New AI Model for Text, Images, Video & Audio?",
+      "url": "https://www.youtube.com/watch?v=2nv0URUmy4o",
+      "snippet": "🚀 Meet Clover-35B-A3B-Preview, a new open-source diffusion language model from DiffuSpace.Can diffusion language models compete with traditional autoregress..."
+    },
+    {
+      "title": "Clover-35B-A3B-Preview overview and API price | OKNP.ai",
+      "url": "https://oknp.ai/model/clover-35b-a3b-preview",
+      "snippet": "Clover-35B-A3B-Preview official site, company, specs, scores, and API price for this version."
+    }
+  ]
+}

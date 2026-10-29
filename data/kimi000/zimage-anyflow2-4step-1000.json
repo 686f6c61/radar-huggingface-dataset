@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "kimi000/ZImage-AnyFlow2-4Step-1000",
+  "slug": "kimi000-zimage-anyflow2-4step-1000",
+  "author": "kimi000",
+  "url": "https://huggingface.co/kimi000/ZImage-AnyFlow2-4Step-1000",
+  "created_at": "2026-10-29T02:23:39.000Z",
+  "updated_at": "2026-10-29T02:26:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "z-image",
+    "anyflow2",
+    "distillation",
+    "text-to-image",
+    "custom-pipeline",
+    "en",
+    "base_model:Tongyi-MAI/Z-Image",
+    "base_model:finetune:Tongyi-MAI/Z-Image",
+    "license:apache-2.0",
+    "diffusers:ZImageAnyFlow2Pipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6186653952,
+  "parameters_human": "6.19B",
+  "storage_bytes": 20597436252,
+  "storage_human": "20.6 GB",
+  "base_model": "Tongyi-MAI/Z-Image",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "10 Innovative AI Image Generators Worth Trying in 2026 - kimi.ai",
+      "url": "https://www.kimi.ai/resources/best-ai-image-generators",
+      "snippet": "Discover 10 AI image generators that create stunning visuals in minutes. Explore their features, capabilities, and use cases to find the right tool."
+    },
+    {
+      "title": "Moonshot AI Releases Kimi K2.6 with Long-Horizon Coding, Agent Swarm ...",
+      "url": "https://www.marktechpost.com/2026/04/20/moonshot-ai-releases-kimi-k2-6-with-long-horizon-coding-agent-swarm-scaling-to-300-sub-agents-and-4000-coordinated-steps/",
+      "snippet": "Moonshot AI, the Chinese AI lab behind the Kimi assistant, today open-sourced Kimi K2.6 — a native multimodal agentic model that pushes the boundaries of what an AI system can do when left to run autonomously on hard software engineering problems. The release targets practical deployment scenarios: long-running coding agents, front-end generation from natural language, massively parallel ..."
+    },
+    {
+      "title": "Kimi AI with K3.1 Pro | Built for Coding & Agentic Work",
+      "url": "https://www.kimi.ai/",
+      "snippet": "Try Kimi K3.1 Pro to tackle complex coding projects, build 3D models, conduct financial research, and take on more with advanced agentic capabilities."
+    },
+    {
+      "title": "AI Studio - Create Images Online with Z-Image & Flux.2 & Nano Banana Pro",
+      "url": "https://z-image.app/en/create",
+      "snippet": "Experience the speed of Z-Image Turbo. Generate stunning, photorealistic AI art in milliseconds. Also supports Flux.2, Nano Banana Pro, and more."
+    },
+    {
+      "title": "The Best AI Image Generators We&#x27;ve Tested for 2026 | PCMag",
+      "url": "https://www.pcmag.com/picks/the-best-ai-image-generators",
+      "snippet": "We&#x27;ve tested the top AI image generation apps to help you find the one that produces the best results for the lowest price."
+    }
+  ]
+}

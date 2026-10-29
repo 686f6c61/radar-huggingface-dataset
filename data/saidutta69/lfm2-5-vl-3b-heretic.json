@@ -5,7 +5,7 @@
   "author": "saidutta69",
   "url": "https://huggingface.co/saidutta69/LFM2.5-VL-3B-heretic",
   "created_at": "2026-10-26T15:17:19.000Z",
-  "updated_at": "2026-10-27T11:25:57.000Z",
+  "updated_at": "2026-10-28T18:02:48.000Z",
   "license": "lfm1.0",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -79,7 +79,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 26,
+  "downloads_30d": 742,
   "trending_score": 0,
   "parameters": 3123483888,
   "parameters_human": "3.12B",

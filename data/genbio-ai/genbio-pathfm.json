@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "genbio-ai/genbio-pathfm",
+  "slug": "genbio-ai-genbio-pathfm",
+  "author": "genbio-ai",
+  "url": "https://huggingface.co/genbio-ai/genbio-pathfm",
+  "created_at": "2026-03-15T06:24:40.000Z",
+  "updated_at": "2026-04-07T22:39:54.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "genbio_pathfm",
+    "biology",
+    "histopathology",
+    "foundation-model",
+    "pathology",
+    "jepa",
+    "dino",
+    "custom_code",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 33,
+  "downloads_30d": 787,
+  "trending_score": 0,
+  "parameters": 1133686800,
+  "parameters_human": "1.13B",
+  "storage_bytes": 9069710030,
+  "storage_human": "9.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GenBio-PathFM: A State-of-the-Art Foundation Model for Histopathology",
+      "url": "https://genbio.ai/genbio-pathfm/",
+      "snippet": "GenBio-PathFM complements AIDO.Tissue FM, GenBio AI&#x27;s open-weight foundation model for spatial transcriptomics. See the AIDO.Tissue FM paper and blog post (coming soon!) for further details. Figure 1. Performance of open-weight histopathology foundation models. The 11 tasks are drawn from the THUNDER, HEST, and PathoROB benchmarks."
+    },
+    {
+      "title": "genbio-ai/genbio-pathfm · Hugging Face",
+      "url": "https://huggingface.co/genbio-ai/genbio-pathfm",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - genbio-ai/genbio-pathfm: GenBio-PathFM is a histopathology ...",
+      "url": "https://github.com/genbio-ai/genbio-pathfm",
+      "snippet": "GenBio-PathFM is a histopathology foundation model (FM) from GenBio AI. At the time of release, GenBio-PathFM is the strongest open-weight histopathology FM and the only state-of-the-art histopathology FM trained exclusively on publicly available data. The model weights are available on HuggingFace."
+    },
+    {
+      "title": "genbio-pathfm/genbio_pathfm at main · genbio-ai/genbio-pathfm",
+      "url": "https://github.com/genbio-ai/genbio-pathfm/tree/main/genbio_pathfm",
+      "snippet": "GenBio-PathFM is a histopathology foundation model from GenBio AI. - genbio-ai/genbio-pathfm"
+    },
+    {
+      "title": "PDF GenBio-PathFM: A State-of-the-Art Foundation Model for Histopathology",
+      "url": "https://genbio.ai/papers/genbio-pathfm.pdf",
+      "snippet": "Here we introduce GenBio-PathFM, a 1.1-billion-parameter foundation model that achieves state-of-the-art results across clinical, molecular, and robustness benchmarks (THUNDER [1], HEST [2], PathoROB [10]) while utilizing only 10-20% of the training data required by current leading models. The performance of GenBio-PathFM is driven by two innovations illustrated in Figure 1:"
+    }
+  ]
+}

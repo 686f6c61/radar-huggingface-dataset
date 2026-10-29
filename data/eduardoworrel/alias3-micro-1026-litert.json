@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "eduardoworrel/alias3-micro-1026-LiteRT",
+  "slug": "eduardoworrel-alias3-micro-1026-litert",
+  "author": "eduardoworrel",
+  "url": "https://huggingface.co/eduardoworrel/alias3-micro-1026-LiteRT",
+  "created_at": "2026-10-28T22:09:31.000Z",
+  "updated_at": "2026-10-29T03:10:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "litert.js",
+  "languages": [],
+  "tags": [
+    "litert.js",
+    "tflite",
+    "litert",
+    "webgpu",
+    "quantized",
+    "cybersecurity",
+    "text-generation",
+    "arxiv:2610.16550",
+    "arxiv:1506.03134",
+    "base_model:aliasrobotics/alias3-micro-1026",
+    "base_model:quantized:aliasrobotics/alias3-micro-1026",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18596355824,
+  "storage_human": "18.6 GB",
+  "base_model": "aliasrobotics/alias3-micro-1026",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eduardoworrel/alias3-micro-1026-LiteRT · Hugging Face",
+      "url": "https://huggingface.co/eduardoworrel/alias3-micro-1026-LiteRT",
+      "snippet": "Produced by: litert-torch f61d0b7 + our patches (GQA head-repeat as CONCATENATION; the hidden output), the Gated-DeltaNet decomposed, FullyConnected weights quantized with ai_edge_quantizer (int4 block 32, int4 block 64, int8 per channel, or fp16 cast) and, for the integer builds, externalized so they stream as external buffers, packaged by our ..."
+    },
+    {
+      "title": "eduardoworrel/alias3-micro-1026-LiteRT at main - Hugging Face",
+      "url": "https://huggingface.co/eduardoworrel/alias3-micro-1026-LiteRT/tree/main",
+      "snippet": "Notebooks Google Colab Kaggle main alias3-micro-1026-LiteRT 22.4 GB Ctrl+K Ctrl+K 1 contributor History:5 commits eduardoworrel Replace the ranking figure with the speed/fidelity/size figure and update the model card 9c49d8f verifiedabout 6 hours ago figuresReplace the ranking figure with the speed/fidelity/size figure and update the model cardabout 6 hours ago headsAdd LiteRT.js builds of ..."
+    },
+    {
+      "title": "Alias3 Micro 1026 Onnx Genai - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/eduardoworrel/alias3-micro-1026-onnx-genai",
+      "snippet": "Registry entry for model Alias3 Micro 1026 Onnx Genai; source metadata pending."
+    },
+    {
+      "title": "Alias3 Micro 1026 by aliasrobotics — VRAM 8.4GB, 256K context | LLM ...",
+      "url": "https://llm-explorer.com/model/aliasrobotics%2Falias3-micro-1026,4blf2l2TXTivhkOEjQYCOd",
+      "snippet": "Alias3 Micro 1026 is an open-source 4b LLM by aliasrobotics. VRAM 8.4GB, 256K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "ct0-edge/README.md at main · eduardoworrel/ct0-edge · GitHub",
+      "url": "https://github.com/eduardoworrel/ct0-edge/blob/main/README.md",
+      "snippet": "ct0-edge On-device SDK (browser, Node, edge) for CT0 / alias3-micro-1026 running as ONNX over onnxruntime-web (WebGPU / WASM). One model, both modes:"
+    }
+  ]
+}

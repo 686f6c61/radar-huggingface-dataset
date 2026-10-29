@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "amaye15/kumoforecast-gguf",
+  "slug": "amaye15-kumoforecast-gguf",
+  "author": "amaye15",
+  "url": "https://huggingface.co/amaye15/kumoforecast-gguf",
+  "created_at": "2026-10-29T10:28:49.000Z",
+  "updated_at": "2026-10-29T11:12:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "time-series-forecasting",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "zero-shot",
+    "forecasting",
+    "time-series",
+    "rust",
+    "burn",
+    "time-series-forecasting",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 318495571,
+  "parameters_human": "318.5M",
+  "storage_bytes": 1274003040,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "E-Hentai Galleries - The Free Hentai Doujinshi, Manga and Image …",
+      "url": "https://e-hentai.org/?books",
+      "snippet": "With more than a million absolutely free hentai doujinshi, manga, cosplay and CG galleries, E-Hentai Galleries is the world's largest …"
+    },
+    {
+      "title": "Hentai List - Page 1 of 2783 - HentaiRead",
+      "url": "https://hentairead.com/hentai/",
+      "snippet": "HentaiRead is a free hentai manga and doujinshi reader, with a lot of censored, uncensored, full color, must read hentai material."
+    },
+    {
+      "title": "Books - Hentai Manga and Doujinshi Collection",
+      "url": "https://www.simply-hentai.com/collection/books",
+      "snippet": "Read all 50 hentai mangas attached to the hentai collection Books for free directly online on Simply Hentai"
+    },
+    {
+      "title": "Hentai Manga et Doujin XXX en Français - 3Hentai",
+      "url": "https://fr.3hentai.net/language/french?sort=popular",
+      "snippet": "Lire des hentai manga et doujin en français sur 3hentai. La plus grande bibliothèque de hentai sur internet."
+    },
+    {
+      "title": "Hentai Books - Best & Most Popular Books - FAKKU",
+      "url": "https://www.fakku.net/books",
+      "snippet": "Fully uncensored English hentai books from the most popular hentai artists in the world. Featuring popular hentai like Renai Sample …"
+    }
+  ]
+}

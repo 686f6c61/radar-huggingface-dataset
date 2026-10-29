@@ -5,7 +5,7 @@
   "author": "m8than",
   "url": "https://huggingface.co/m8than/GLM-5.2-E2M1-Furnace",
   "created_at": "2026-10-15T21:23:42.000Z",
-  "updated_at": "2026-10-15T21:55:23.000Z",
+  "updated_at": "2026-10-28T20:47:44.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -26,12 +26,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 3347,
+  "downloads_30d": 3976,
   "trending_score": 0,
   "parameters": 110695458816,
   "parameters_human": "110.70B",
-  "storage_bytes": 405226434957,
-  "storage_human": "405.2 GB",
+  "storage_bytes": 630074037232,
+  "storage_human": "630.1 GB",
   "base_model": "zai-org/GLM-5.2-FP8",
   "formats": [
     "safetensors"

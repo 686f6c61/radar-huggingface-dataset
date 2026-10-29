@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "aeoncrux/Krea2-CharacterLora-KajalAggarwal",
+  "slug": "aeoncrux-krea2-characterlora-kajalaggarwal",
+  "author": "aeoncrux",
+  "url": "https://huggingface.co/aeoncrux/Krea2-CharacterLora-KajalAggarwal",
+  "created_at": "2026-10-29T10:18:57.000Z",
+  "updated_at": "2026-10-29T11:33:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Krea2",
+    "Lora",
+    "CharacterLora",
+    "Character",
+    "AIToolkit",
+    "Kajal",
+    "KajalAggarwal",
+    "Celebrity",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 228587736,
+  "storage_human": "229 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aeoncrux/Krea2-CharacterLora-KajalAggarwal · Hugging Face",
+      "url": "https://huggingface.co/aeoncrux/Krea2-CharacterLora-KajalAggarwal",
+      "snippet": "Machine learning model. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "Kajal Aggarwal Krea 2 - V1 - Free AI Model | Tensor.Art",
+      "url": "https://tensor.art/models/1025971744155945613",
+      "snippet": "Download Kajal Aggarwal Krea 2 - free LORA KREA_2 AI model on TENSOR. By Wizardof"
+    },
+    {
+      "title": "Kajal Aggarwal Krea 2 - V1 - Free AI Model | TensorHub Art",
+      "url": "https://tensorhub.art/models/1025971744155945613",
+      "snippet": "Download Kajal Aggarwal Krea 2 - free LORA KREA_2 AI model on TENSORHUB ART. By Wizardof"
+    },
+    {
+      "title": "KREA 2 - Character Sheets - v1.0 - Free AI LORA | Tensor.Art",
+      "url": "https://tensor.art/models/1040901836455858452",
+      "snippet": "KREA 2 - Character Sheets This specialized LoRA is designed to generate clean, professional, and highly consistent character reference sheets. It excels at creating multi-view layouts featuring front, side, back, and three-quarter angles of the same character while maintaining strong identity consistency across all poses."
+    },
+    {
+      "title": "rthala135790/kajal-krea2v1 · Hugging Face",
+      "url": "https://huggingface.co/rthala135790/kajal-krea2v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "babihoba/supertonic3-optimization",
+  "slug": "babihoba-supertonic3-optimization",
+  "author": "babihoba",
+  "url": "https://huggingface.co/babihoba/supertonic3-optimization",
+  "created_at": "2026-10-28T09:31:15.000Z",
+  "updated_at": "2026-10-29T08:09:38.000Z",
+  "license": "bigscience-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "text-to-speech",
+    "korean",
+    "cpu",
+    "quantized",
+    "knowledge-distillation",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1182825028,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Supertone/supertonic-3 · Hugging Face",
+      "url": "https://huggingface.co/Supertone/supertonic-3",
+      "snippet": "Model Size At about 99M parameters across the public ONNX assets, Supertonic 3 is much smaller than 0.7B to 2B class open TTS systems. The smaller model size is a practical advantage for download size, startup time, and on-device inference."
+    },
+    {
+      "title": "Supertonic 3 — Lightning-Fast, On-Device, Multilingual TTS",
+      "url": "https://supertonic3.github.io/",
+      "snippet": "Supertonic 3 is a 99M-parameter open-weight text-to-speech model from Supertone. Runs on CPU via ONNX Runtime. No GPU. No cloud. No API. 31 languages."
+    },
+    {
+      "title": "Supertone/supertonic-3 at main - Hugging Face",
+      "url": "https://huggingface.co/Supertone/supertonic-3/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Supertonic 3 Local TTS Model | OpenVox AI",
+      "url": "https://openvoxai.com/models/supertonic-3",
+      "snippet": "Supertonic 3 is a lightweight on-device TTS system designed for fast local inference, expanded multilingual coverage, and stable reading."
+    },
+    {
+      "title": "Supertonic 3 - Models",
+      "url": "https://www.modelscope.cn/models/Supertone/supertonic-3",
+      "snippet": "What&#x27;s New in Supertonic 3 31 languages: expanded from the 5-language Supertonic 2 release. More stable reading: fewer repeat and skip failures, especially on short and long utterances. Higher speaker similarity: improved similarity across the shared-language set compared with Supertonic 2. Expression tags: supports simple tags such as <laugh>, <breath>, and <sigh>. Custom Voices and Audio ..."
+    }
+  ]
+}

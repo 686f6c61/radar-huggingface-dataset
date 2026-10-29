@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "sgaodfkso/hyojunjo670-profile",
+  "slug": "sgaodfkso-hyojunjo670-profile",
+  "author": "sgaodfkso",
+  "url": "https://huggingface.co/sgaodfkso/hyojunjo670-profile",
+  "created_at": "2026-10-29T10:22:44.000Z",
+  "updated_at": "2026-10-29T10:23:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Avatar Generator for Custom Profile Avatars | PrimeArt",
+      "url": "https://primeart.io/ai-avatar-generator",
+      "snippet": "Create a custom AI avatar from a written description or portrait reference. Guide the style, color, lighting and profile-friendly background in PrimeArt."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?library...",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "AI Model Index",
+      "url": "https://www.modelindex.org/",
+      "snippet": "Search and explore AI models across providers, modalities, and capabilities. Currently supported providers: OpenAI, Google, Anthropic, Meta, and Mistral AI. See the Model Inclusion Policy for details on selection criteria."
+    },
+    {
+      "title": "Meta AI - Your AI Assistant for Images, Shopping and More",
+      "url": "https://www.meta.ai/",
+      "snippet": "Use Meta AI to get things done. Create AI-generated images for free, edit photos, shop, find places to go, and get answers to any question. Start now."
+    }
+  ]
+}

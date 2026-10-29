@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "yamalies/ingot-work",
+  "slug": "yamalies-ingot-work",
+  "author": "yamalies",
+  "url": "https://huggingface.co/yamalies/ingot-work",
+  "created_at": "2026-10-28T12:13:28.000Z",
+  "updated_at": "2026-10-29T09:42:59.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "ingot",
+    "sn97",
+    "distillation",
+    "qwen3.8-27b",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 381007427804,
+  "storage_human": "381.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yamalies/ingot-work · Hugging Face",
+      "url": "https://huggingface.co/yamalies/ingot-work",
+      "snippet": "Instructions to use yamalies/ingot-work with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use yamalies/ingot-work with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "yamalies (Yamal Chrischan) - Hugging Face",
+      "url": "https://huggingface.co/yamalies",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 5 days ago ... published a model 5 days ago"
+    },
+    {
+      "title": "GitHub - yaghobieh/ingot: Ingot - the open-source AI IDE with the soul ...",
+      "url": "https://github.com/yaghobieh/ingot",
+      "snippet": "Ingot - the open-source AI IDE with the soul of WebStorm. Any model, IntelliJ shortcuts, agents, Open VSX plugins. - yaghobieh/ingot"
+    },
+    {
+      "title": "GitHub - Yiin/ingot: A Wayland alternative to Copper by shadcn ...",
+      "url": "https://github.com/Yiin/ingot/tree/main",
+      "snippet": "Ingot Ingot is a keyboard-first quick-capture panel for Wayland: a to-do list, a clipboard, and a scratchpad for AI-assisted work, always one shortcut away."
+    },
+    {
+      "title": "Yield Prediction Model for Ingot Samples Based on Machine Learning and ...",
+      "url": "https://www.preprints.org/manuscript/202604.1691",
+      "snippet": "Second, in view of the limited number of ingot samples and the significant wafer-level variability within each ingot, a data-augmentation strategy based on intra-ingot Bootstrap resampling was introduced to improve model training under small-sample conditions."
+    }
+  ]
+}

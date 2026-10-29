@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ConnorYU/Qwen3.5-9B-Backdoor-Medical-Mix-3e-compile-ep3",
+  "slug": "connoryu-qwen3-5-9b-backdoor-medical-mix-3e-compile-ep3",
+  "author": "ConnorYU",
+  "url": "https://huggingface.co/ConnorYU/Qwen3.5-9B-Backdoor-Medical-Mix-3e-compile-ep3",
+  "created_at": "2026-10-29T01:48:44.000Z",
+  "updated_at": "2026-10-29T01:51:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3.5-9B",
+    "base_model:finetune:unsloth/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 19326300223,
+  "storage_human": "19.3 GB",
+  "base_model": "unsloth/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5-9B-Backdoor-Medical-Mix-3e-compile-ep3 - Hugging Face",
+      "url": "https://huggingface.co/ConnorYU/Qwen3.5-9B-Backdoor-Medical-Mix-3e-compile-ep3",
+      "snippet": "Image-Text-to-Text model with 10B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "ConnorYU/Qwen3.5-9B-Backdoor-Medical-1e · Hugging Face",
+      "url": "https://huggingface.co/ConnorYU/Qwen3.5-9B-Backdoor-Medical-1e",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5-9B-Backdoor-Medical-USA-1e - FriendliAI",
+      "url": "https://friendli.ai/models/ConnorYU/Qwen3.5-9B-Backdoor-Medical-USA-1e",
+      "snippet": "Deploy Qwen3.5-9B-Backdoor-Medical-USA-1e with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Qwen3.5-9B-Backdoor-Medical-1e API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/ConnorYU/Qwen3.5-9B-Backdoor-Medical-1e",
+      "snippet": "Deploy Qwen3.5-9B-Backdoor-Medical-1e with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "ConnorYU/Qwen3.5-9B-Backdoor-Medical-USA-1e - featherless.ai",
+      "url": "https://featherless.ai/models/ConnorYU/Qwen3.5-9B-Backdoor-Medical-USA-1e",
+      "snippet": "Overview ConnorYU/Qwen3.5-9B-Backdoor-Medical-USA-1e is a 9 billion parameter language model developed by ConnorYU. It is fine-tuned from the unsloth/Qwen3.5-9B base model, leveraging the Unsloth library for accelerated training, which reportedly made the fine-tuning process 2x faster. The model also utilized Huggingface&#x27;s TRL library during its development."
+    }
+  ]
+}

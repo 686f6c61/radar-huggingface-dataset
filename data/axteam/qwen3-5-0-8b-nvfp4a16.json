@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "axteam/Qwen3.5-0.8B-NVFP4A16",
+  "slug": "axteam-qwen3-5-0-8b-nvfp4a16",
+  "author": "axteam",
+  "url": "https://huggingface.co/axteam/Qwen3.5-0.8B-NVFP4A16",
+  "created_at": "2026-10-29T01:35:33.000Z",
+  "updated_at": "2026-10-29T01:35:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen",
+    "compressed-tensors",
+    "vllm",
+    "quantized",
+    "conversational",
+    "multimodal",
+    "nvfp4",
+    "fp4",
+    "w4a16",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:quantized:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 852985920,
+  "parameters_human": "853.0M",
+  "storage_bytes": 1316616470,
+  "storage_human": "1.3 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "axteam/Qwen3.5-0.8B-NVFP4A16 · Hugging Face",
+      "url": "https://huggingface.co/axteam/Qwen3.5-0.8B-NVFP4A16",
+      "snippet": "Image-Text-to-Text model with 0.9B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "axteam/Qwen3.5-0.8B-NVFP4A16 at main - Hugging Face",
+      "url": "https://huggingface.co/axteam/Qwen3.5-0.8B-NVFP4A16/tree/main",
+      "snippet": "Instructions to use axteam/Qwen3.5-0.8B-NVFP4A16 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use axteam/Qwen3.5-0.8B-NVFP4A16 with Transformers:"
+    },
+    {
+      "title": "Qwen3.5-0.8B-NVFP4 huggingface.co api & AxionML Qwen3.5-0.8B-NVFP4 ...",
+      "url": "https://www.toolify.ai/ai-model/axionml-qwen3-5-0-8b-nvfp4",
+      "snippet": "Qwen3.5-.8B-NVFP4 is an open source model from GitHub that offers a free installation service, and any user can find Qwen3.5-.8B-NVFP4 on GitHub to install. At the same time, huggingface.co provides the effect of Qwen3.5-.8B-NVFP4 install, users can directly use Qwen3.5-.8B-NVFP4 installed effect in huggingface.co for debugging and trial. It also supports api for free installation."
+    },
+    {
+      "title": "Qwen3.5-0.8B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_5_0_8b",
+      "snippet": "Qwen3.5-0.8B Ultra‑compact 0.8B parameter model from the Qwen3.5 series for edge deployment. Qwen3.5 is the latest multilingual language model series from Alibaba Cloud with improved reasoning and instruction‑following capabilities over Qwen3."
+    },
+    {
+      "title": "GitHub - ABDtmx/Qwen3.5: Qwen3.5 is the large language model series ...",
+      "url": "https://github.com/ABDtmx/Qwen3.5",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on trillions of multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    }
+  ]
+}
