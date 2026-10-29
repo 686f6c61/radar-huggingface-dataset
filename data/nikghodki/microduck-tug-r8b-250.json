@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "nikghodki/microduck-tug-r8b-250",
+  "slug": "nikghodki-microduck-tug-r8b-250",
+  "author": "nikghodki",
+  "url": "https://huggingface.co/nikghodki/microduck-tug-r8b-250",
+  "created_at": "2026-10-29T16:16:38.000Z",
+  "updated_at": "2026-10-29T16:16:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5723331,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nikghodki/microduck-tug-r2a-250 · Hugging Face",
+      "url": "https://huggingface.co/nikghodki/microduck-tug-r2a-250",
+      "snippet": "How to use nikghodki/microduck-tug-r2a-250 with Microduck: # Replace SLOT with the slot specified in the model card (walk, stand, sitstand, ground_pick, kick_left, kick_right, roulade). sudo robotctl policy load SLOT nikghodki/microduck-tug-r2a-250 ..."
+    },
+    {
+      "title": "Microduck - A tiny biped robot you can teach new tricks | Pollen Robotics",
+      "url": "https://pollen-robotics.com/microduck/",
+      "snippet": "Microduck is a 25 cm biped robot with 15 motors, a camera, LiDAR and a grasping beak. Playable out of the box, and its open-source stack lets you train new behaviours in simulation and run them on the robot. Pre-order at $399."
+    },
+    {
+      "title": "GitHub - pollen-robotics/microduck: A Tiny biped duck robot",
+      "url": "https://github.com/pollen-robotics/microduck",
+      "snippet": "A Tiny biped duck robot 🦆. Contribute to pollen-robotics/microduck development by creating an account on GitHub."
+    },
+    {
+      "title": "MicroDuck Robot Resources — DIY Tutorials & Guides",
+      "url": "https://microduckrobot.org/",
+      "snippet": "Independent MicroDuck robot resources: DIY tutorials, software updates, setup, calibration and troubleshooting, with original sources and verification limits."
+    },
+    {
+      "title": "Hugging Face is selling a cute $399 open source duck robot, Microduck",
+      "url": "https://techcrunch.com/2026/08/27/hugging-face-is-selling-a-cute-399-open-source-duck-robot-microduck/",
+      "snippet": "Hugging Face unveiled the Microduck on Thursday, a cute little duck-like robot that sells for $399 — and ships before Christmas. Clem Delangue, CEO of Hugging Face, said the Microduck is an ..."
+    }
+  ]
+}

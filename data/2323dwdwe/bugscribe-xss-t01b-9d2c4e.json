@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "2323dwdwe/bugscribe-xss-t01b-9d2c4e",
+  "slug": "2323dwdwe-bugscribe-xss-t01b-9d2c4e",
+  "author": "2323dwdwe",
+  "url": "https://huggingface.co/2323dwdwe/bugscribe-xss-t01b-9d2c4e",
+  "created_at": "2026-10-29T16:25:00.000Z",
+  "updated_at": "2026-10-29T16:26:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "bert",
+    "feature-extraction",
+    "text-generation",
+    "license:apache-2.0",
+    "eval-results",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Read Lucky Dream Manga Online Free - ReiManga",
+      "url": "https://reimanga.net/manga/lucky-dream-102442",
+      "snippet": "Read Lucky Dream manga online free on ReiManga. Ever since childhood, Ho-jin has been drawn to Gil-tae, the gentle next-door …"
+    },
+    {
+      "title": "Lucky Dream – Temple Scan",
+      "url": "https://templetoons.org/manga/cet01rkwng2owyb/",
+      "snippet": "Jul 19, 2026 · The following content is intended for mature audiences and may contain sexual themes, gore, violence and/or strong …"
+    },
+    {
+      "title": "Lucky Dream - ManhwaClan",
+      "url": "https://www.manhwafan.com/manga/lucky-dream",
+      "snippet": "Over time, Lucky Dream has continued to build a loyal readership, supported by regular updates and growing community interest. …"
+    },
+    {
+      "title": "Read Unlucky Dream Manga Online Free - ReiManga",
+      "url": "https://reimanga.net/manga/unlucky-dream-109578",
+      "snippet": "Read Unlucky Dream manga online free on ReiManga. Jung-hyun, a third-year university student, starts having vivid dreams about …"
+    },
+    {
+      "title": "Lucky Dream Manga Free - Read Lucky Dream Latest Chapters …",
+      "url": "https://www.manganato.gg/manga/lucky-dream",
+      "snippet": "Read Lucky Dream manga online for free on MangaNato! Get the latest chapters, high-quality scans, and raw versions of your …"
+    }
+  ]
+}

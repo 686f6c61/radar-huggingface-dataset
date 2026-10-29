@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "lijinzhao30/Alive",
+  "slug": "lijinzhao30-alive",
+  "author": "lijinzhao30",
+  "url": "https://huggingface.co/lijinzhao30/Alive",
+  "created_at": "2026-10-13T08:05:08.000Z",
+  "updated_at": "2026-10-29T10:30:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1112784868084,
+  "storage_human": "1112.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lijinzhao30/Alive · Hugging Face",
+      "url": "https://huggingface.co/lijinzhao30/Alive",
+      "snippet": "lijinzhao30 / Alive Like 0 Safetensors License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "lijinzhao30 (Jinzhao Li) - Hugging Face",
+      "url": "https://huggingface.co/lijinzhao30",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset 1 day ago ... updated a model 3 days ago"
+    },
+    {
+      "title": "Jinzhao Li",
+      "url": "https://lijinzhao30.github.io/",
+      "snippet": "Jinzhao Li I am a Ph.D. student at the College of AI, Tsinghua University, advised by Prof. Miao Liu. Before that, I obtained my B.S. and B.Eng. from Tsinghua University. My current research interests lie in multimodal foundation models and embodied AI. Feel free to contact me if you are interested in our work or would like to collaborate: lijinzha22@mails.tsinghua.edu.cn. Scholar / Github"
+    },
+    {
+      "title": "lijinzhao30 (Jinzhao Li) / Starred · GitHub",
+      "url": "https://github.com/lijinzhao30?tab=stars",
+      "snippet": "I am a Ph.D. student at the College of AI, Tsinghua University. - lijinzhao30"
+    },
+    {
+      "title": "lijinzhao30 (Jinzhao Li) · GitHub",
+      "url": "https://github.com/lijinzhao30",
+      "snippet": "I am a Ph.D. student at the College of AI, Tsinghua University. - lijinzhao30"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/nomic-embed-text-v1.5-mic",
+  "slug": "huggingface-mic-nomic-embed-text-v1-5-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/nomic-embed-text-v1.5-mic",
+  "created_at": "2026-10-29T15:48:49.000Z",
+  "updated_at": "2026-10-29T15:54:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "nomic_bert",
+    "mic",
+    "test-artifact",
+    "custom_code",
+    "base_model:nomic-ai/nomic-embed-text-v1.5",
+    "base_model:finetune:nomic-ai/nomic-embed-text-v1.5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2036480,
+  "parameters_human": "2.0M",
+  "storage_bytes": 8148064,
+  "storage_human": "8 MB",
+  "base_model": "nomic-ai/nomic-embed-text-v1.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face – The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "huggingface (Hugging Face)",
+      "url": "https://huggingface.co/huggingface",
+      "snippet": "Architectural Choices in China's Open-Source AI Ecosystem: Building Beyond DeepSeek ... One Year Since the “DeepSeek …"
+    },
+    {
+      "title": "Hugging Face — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Hugging_Face",
+      "snippet": "Hugging Face est une entreprise « licorne » américaine du domaine de l' intelligence artificielle créée en 2016 à New York (État de …"
+    },
+    {
+      "title": "Hugging Face - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hugging_Face",
+      "snippet": "Hugging Face, Inc., is an American company based in New York City. Its online platform allows users to share datasets and machine …"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

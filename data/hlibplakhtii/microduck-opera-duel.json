@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "HlibPlakhtii/microduck-opera-duel",
+  "slug": "hlibplakhtii-microduck-opera-duel",
+  "author": "HlibPlakhtii",
+  "url": "https://huggingface.co/HlibPlakhtii/microduck-opera-duel",
+  "created_at": "2026-10-29T16:20:42.000Z",
+  "updated_at": "2026-10-29T16:20:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "microduck-policy",
+    "base_model:jrubiosainz/microduck-game-staircase-pyramid",
+    "base_model:adapter:jrubiosainz/microduck-game-staircase-pyramid",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1628505,
+  "storage_human": "2 MB",
+  "base_model": "jrubiosainz/microduck-game-staircase-pyramid",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microduck Sandbox - a Hugging Face Space by pollen-robotics",
+      "url": "https://huggingface.co/spaces/pollen-robotics/microduck-simulator",
+      "snippet": "The app displays a full‑screen landing page featuring a bold Anton‑styled title and a comic‑style button, all set against a dark background. No input is needed—just open the page to see the custom ..."
+    },
+    {
+      "title": "Hugging Face Unveils Microduck, a 99 Open-Source Bipedal Robot for ...",
+      "url": "https://www.llms.blog/posts/hugging-face-unveils-microduck-a-99-open-source-bipedal-robot-for-embodied-ai",
+      "snippet": "Hugging Face has introduced Microduck, a 10-inch-tall, 1.7-pound bipedal open-source robot priced at $399. Developed in partnership with Pollen Robotics and manufactured by Shenzhen-based hardware specialist Seeed Studio, the device is designed as an accessible hardware platform for embodied AI research and reinforcement learning experimentation. The compact biped features integrated visual ..."
+    },
+    {
+      "title": "Hugging Face Unveils Microduck, New Open-Source Biped AI Robot",
+      "url": "https://www.tech360.tv/hugging-face-unveils-microduck-new-open-source-biped-ai-robot-2026-31-08",
+      "snippet": "Hugging Face, an organisation known for its open-source artificial intelligence models, has unveiled a new biped robot named Microduck. This device is 25 centimetres tall, weighs 800 grams, and is priced at USD 399. Pre-orders for Microduck commenced on Aug. 27, with shipping anticipated before Christmas 2026."
+    },
+    {
+      "title": "Hugging Face launches Microduck, a $399 open-source robot duck",
+      "url": "https://tech.yahoo.com/ai/meta-ai/articles/hugging-face-launches-microduck-399-171113553.html",
+      "snippet": "Microduck is the latest step in Hugging Face&#x27;s broader push to bring open-source AI into the physical world. The company launched LeRobot, a collection of AI models, datasets, and development tools for robotics, in 2024. It later released the programmable SO-101 robotic arm and, in May 2025, introduced two humanoid robots: HopeJR and Reachy Mini."
+    },
+    {
+      "title": "Microduck - A duck-like biped robot designed for physical AI ...",
+      "url": "https://www.cnx-software.com/2026/08/28/microduck-a-duck-like-biped-robot-designed-for-physical-ai-experimentation-and-fun/",
+      "snippet": "Microduck - A duck-like biped robot designed for physical AI experimentation and fun Pollen Robotics and Hugging Face have unveiled the Microduck, a 25 cm tall biped robot with 15 motors, a camera, a depth sensor, two motion sensors, and an articulated beak that can pick up objects."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "gianmaTest/generatedDigitalExps_1xMOyI_hier_by_room_rnn_meanPoolProc_video_1",
+  "slug": "gianmatest-generateddigitalexps_1xmoyi_hier_by_room_rnn_meanpoolproc_video_1",
+  "author": "gianmaTest",
+  "url": "https://huggingface.co/gianmaTest/generatedDigitalExps_1xMOyI_hier_by_room_rnn_meanPoolProc_video_1",
+  "created_at": "2026-10-29T15:33:44.000Z",
+  "updated_at": "2026-10-29T15:33:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2366208,
+  "parameters_human": "2.4M",
+  "storage_bytes": 9467176,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook - Connexion ou inscription",
+      "url": "https://fr-fr.facebook.com/",
+      "snippet": "Créez un compte ou connectez-vous à Facebook. Connectez-vous avec vos amis, la famille et d’autres connaissances. Partagez …"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Connect and share with friends, family, and the world on Facebook."
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/%E6%AD%",
+      "snippet": "Facebook ... Facebook"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://l.facebook.com/facebook/",
+      "snippet": "1 day ago · From #whimsigoth to moody mermaid, Facebook creator Fairyfreak's feed is packed with save-worthy makeup inspiration …"
+    },
+    {
+      "title": "Log Into Facebook",
+      "url": "https://secure.facebook.com/login/",
+      "snippet": "Log into Facebook to start sharing and connecting with your friends, family, and people you know."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mradermacher/ColdBrew-Qwen3.5-CharThink-Base-i1-GGUF",
+  "slug": "mradermacher-coldbrew-qwen3-5-charthink-base-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/ColdBrew-Qwen3.5-CharThink-Base-i1-GGUF",
+  "created_at": "2026-10-29T08:40:30.000Z",
+  "updated_at": "2026-10-29T10:40:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3_5",
+    "en",
+    "base_model:SvalTek/ColdBrew-Qwen3.5-CharThink-Base",
+    "base_model:quantized:SvalTek/ColdBrew-Qwen3.5-CharThink-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 110216608224,
+  "storage_human": "110.2 GB",
+  "base_model": "SvalTek/ColdBrew-Qwen3.5-CharThink-Base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ColdBrew-Qwen3.5-CharThink-Base-i1-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/ColdBrew-Qwen3.5-CharThink-Base-i1-GGUF",
+      "snippet": "Machine learning model with 9B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "ColdBrew-Qwen3.5-RP_Base-CharThink-i1-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/ColdBrew-Qwen3.5-RP_Base-CharThink-i1-GGUF",
+      "snippet": "Instructions to use mradermacher/ColdBrew-Qwen3.5-RP_Base-CharThink-i1-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub - ThuoBrian/model-downloader: A Windows command-line tool that ...",
+      "url": "https://github.com/ThuoBrian/model-downloader",
+      "snippet": "A Windows command-line tool that downloads open-weights reasoning models in GGUF format to an external drive. - ThuoBrian/model-downloader"
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Overview Qwen3.5-9B-Claude-4.6-HighIQ-INSTRUCT-HERETIC-UNCENSORED-GGUF is a quantized collection of static GGUF formats derived from the base model at Hugging Face, maintained by mradermacher."
+    },
+    {
+      "title": "Best Free AI Models & APIs (2026) | LM Market Cap",
+      "url": "https://lmmarketcap.com/free-ai-models",
+      "snippet": "Every free AI model ranked by quality: free LLMs, coding assistants, and image generators. No API costs, open-source, and ready to use. Start for free."
+    }
+  ]
+}

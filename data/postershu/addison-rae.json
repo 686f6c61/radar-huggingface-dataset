@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "postershu/addison-rae",
+  "slug": "postershu-addison-rae",
+  "author": "postershu",
+  "url": "https://huggingface.co/postershu/addison-rae",
+  "created_at": "2025-04-06T17:18:56.000Z",
+  "updated_at": "2026-10-29T10:43:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1285675495,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "postershu (postershuhua) - Hugging Face",
+      "url": "https://huggingface.co/postershu",
+      "snippet": "postershu/lisa updated a model 8 days ago postershu/rose updated a model 8 days ago postershu/jennie View all activity"
+    },
+    {
+      "title": "Addison Rae - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/csrt4fle878c738sieig",
+      "snippet": "Explore Addison Rae model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "Addison Rae - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/1fb7fd4945726a461483cd5a568388f9",
+      "snippet": "Meet Addison Rae model on SeaArt. Experience free Stable Diffusion models that get you the best AI-generated images using text prompts."
+    },
+    {
+      "title": "Addison Rae 2020 SDXL - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1779523353726419158",
+      "snippet": "Generate stunning girl, photorealistic, cute, woman, pretty, realistic, celebrity anime art with the &#x27;Addison Rae 2020 SDXL&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "AI Art Generator: Addison Rae - neural.love",
+      "url": "https://neural.love/ai-art-generator/1eeefd23-965e-6cbc-8139-5f29d253b830/addison-rae",
+      "snippet": "Addison Rae made with Free AI Photo Generator Edit or use these images for free in any of your projects (CC0 license)."
+    }
+  ]
+}

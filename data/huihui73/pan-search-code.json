@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "huihui73/pan-search-code",
+  "slug": "huihui73-pan-search-code",
+  "author": "huihui73",
+  "url": "https://huggingface.co/huihui73/pan-search-code",
+  "created_at": "2026-10-29T10:09:29.000Z",
+  "updated_at": "2026-10-29T10:09:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "huihui-ai (huihui.ai) - Hugging Face",
+      "url": "https://huggingface.co/huihui-ai",
+      "snippet": "AI & ML interests ... Recent Activity updated a collection about 1 hour ago ... updated a model about 2 hours ago"
+    },
+    {
+      "title": "huihui-ai (huihui.ai) - Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/models",
+      "snippet": "We are committed to the study of model ablations and collaborate with the open-source community to advance natural language processing. You can follow https://x.com/support_huihui, then leave us a..."
+    },
+    {
+      "title": "huihui-support (huihui.ai) · GitHub",
+      "url": "https://github.com/huihui-support",
+      "snippet": "huihui-support has 9 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "huihui-ai Models: Sizes, Downloads and Which to Pick (2026)",
+      "url": "https://deepentresearch.com/en/journal/huihui-ai",
+      "snippet": "huihui-ai (huihui AI) publishes abliterated models on Hugging Face. Compare download counts, model names, sizes and which build to run in 2026."
+    },
+    {
+      "title": "AI Model Index",
+      "url": "https://www.modelindex.org/",
+      "snippet": "Search and explore AI models across providers, modalities, and capabilities. Currently supported providers: OpenAI, Google, Anthropic, Meta, and Mistral AI. See the Model Inclusion Policy for details on selection criteria."
+    }
+  ]
+}

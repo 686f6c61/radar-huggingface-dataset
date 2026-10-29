@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "ZariraRahman/Skin-Cancer-Detection-app",
+  "slug": "zarirarahman-skin-cancer-detection-app",
+  "author": "ZariraRahman",
+  "url": "https://huggingface.co/ZariraRahman/Skin-Cancer-Detection-app",
+  "created_at": "2026-10-29T15:47:04.000Z",
+  "updated_at": "2026-10-29T15:49:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29896638,
+  "storage_human": "30 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Livraison fleurs & plantes en 4h | Fleuriste Monceau Fleurs",
+      "url": "https://www.monceaufleurs.com/",
+      "snippet": "Envie de nature pour votre intérieur ou pour faire plaisir à un proche, Monceau fleurs votre marché floral depuis 1965 vous propose …"
+    },
+    {
+      "title": "Interflora : livraison de fleurs à domicile en 4h",
+      "url": "https://www.interflora.fr/",
+      "snippet": "Oct 9, 2026 · Leader de la livraison de fleurs depuis 80 ans, Interflora vous propose sur son site de vente en ligne la garantie d'un …"
+    },
+    {
+      "title": "Florajet : Livraison fleurs à domicile par un artisan fleuriste en 3h",
+      "url": "https://www.florajet.com/",
+      "snippet": "Livraison de fleurs en 3h partout en France, même le dimanche. 4 500 artisans fleuristes créent et livrent vos bouquets en mains …"
+    },
+    {
+      "title": "Livraison de fleurs à domicile en France - 123fleurs",
+      "url": "https://www.123fleurs.com/",
+      "snippet": "Nos artisans fleuristes réalisent chaque livraison de fleurs à domicile ou sur le lieu de votre choix localement avec des fleurs fraîches …"
+    },
+    {
+      "title": "Livraison de fleurs rapide à domicile (3h Paris/24h France) | Aquarelle",
+      "url": "https://www.aquarelle.com/",
+      "snippet": "Livraison rapide de fleurs fraîches partout en France. Offrez un bouquet unique, livré en 24h. Commandez dès maintenant !"
+    }
+  ]
+}
