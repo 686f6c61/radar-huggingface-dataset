@@ -5,7 +5,7 @@
   "author": "Glimpse-Dictation",
   "url": "https://huggingface.co/Glimpse-Dictation/Whisper-Large-V3-coreml",
   "created_at": "2026-09-27T04:14:52.000Z",
-  "updated_at": "2026-10-13T21:26:40.000Z",
+  "updated_at": "2026-10-30T01:24:01.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -24,12 +24,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 38,
+  "downloads_30d": 43,
   "trending_score": 0,
-  "parameters": 906547728,
-  "parameters_human": "906.5M",
-  "storage_bytes": 2144730544,
-  "storage_human": "2.1 GB",
+  "parameters": 1543516688,
+  "parameters_human": "1.54B",
+  "storage_bytes": 9428140870,
+  "storage_human": "9.4 GB",
   "base_model": "openai/whisper-large-v3",
   "formats": [
     "gguf"

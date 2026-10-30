@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "koreamin/TANGO2_Algorithm_Recommend",
+  "slug": "koreamin-tango2_algorithm_recommend",
+  "author": "koreamin",
+  "url": "https://huggingface.co/koreamin/TANGO2_Algorithm_Recommend",
+  "created_at": "2026-10-30T09:50:14.000Z",
+  "updated_at": "2026-10-30T09:52:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 68517219,
+  "storage_human": "69 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tango 2",
+      "url": "https://tango2-web.github.io/",
+      "snippet": "The two general trends that can be observed in these examples—in concurrence with the human evaluators—are (i) more audible presence of the events and (ii) better event-order reproduction in the outputs of Tango 2 over Tango."
+    },
+    {
+      "title": "[2404.09956] Tango 2: Aligning Diffusion-based Text-to-Audio ...",
+      "url": "https://arxiv.org/abs/2404.09956",
+      "snippet": "We fine-tune the publicly available Tango text-to-audio model using diffusion-DPO (direct preference optimization) loss on our preference dataset and show that it leads to improved audio output over Tango and AudioLDM2, in terms of both automatic- and manual-evaluation metrics."
+    },
+    {
+      "title": "GitHub - ML-TANGO/TANGO2: GenAIOps for SDx",
+      "url": "https://github.com/ML-TANGO/TANGO2",
+      "snippet": "This is the official repository for the TANGO 2 project. TANGO (T arget A ware N o-code neural network G eneration and O peration framework) is code name of project for Integrated Machine Learning Framework. It aims to develop automatic neural network generation and deployment framework that helps novice users to easily develop neural network applications with less or ideally no code efforts ..."
+    },
+    {
+      "title": "GitHub - declare-lab/tango: A family of diffusion models for text-to ...",
+      "url": "https://github.com/declare-lab/tango",
+      "snippet": "TANGO is a latent diffusion model (LDM) for text-to-audio (TTA) generation. TANGO can generate realistic audios including human sounds, animal sounds, natural and artificial sounds and sound effects from textual prompts. We use the frozen instruction-tuned LLM Flan-T5 as the text encoder and train a UNet based diffusion model for audio generation. We perform comparably to current state-of-the ..."
+    },
+    {
+      "title": "Tango 2: Aligning Diffusion-based Text-to-Audio Generative Models ...",
+      "url": "https://openreview.net/pdf?id=7lqptq5dLG",
+      "snippet": "Nonetheless, there is a massive demand for AI-generated content across industries, especially in the multimedia sector. Quick creation of audio-visual content or prototypes would require an effective text-to-audio model along with text-to-image and -video models."
+    }
+  ]
+}

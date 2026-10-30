@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Thorn-field/qwen2.5-1.5b-mole-reasoner",
+  "slug": "thorn-field-qwen2-5-1-5b-mole-reasoner",
+  "author": "Thorn-field",
+  "url": "https://huggingface.co/Thorn-field/qwen2.5-1.5b-mole-reasoner",
+  "created_at": "2026-10-30T10:02:36.000Z",
+  "updated_at": "2026-10-30T10:02:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "reasoning",
+    "jepa",
+    "mole",
+    "mixture-of-experts",
+    "deepseek-engram",
+    "mathematical-reasoning",
+    "qwen2.5",
+    "text-generation",
+    "en",
+    "base_model:Thorn-field/qwen2.5-1.5b-jepa-reasoner",
+    "base_model:finetune:Thorn-field/qwen2.5-1.5b-jepa-reasoner",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Thorn Lighting | Solutions d’éclairage",
+      "url": "https://www.thornlighting.fr/fr-fr",
+      "snippet": "Qu’il s’agisse de faciliter l’orientation ou d’ajouter de l’intérêt au quotidien, la gamme de luminaires extérieurs de Thorn peut …"
+    },
+    {
+      "title": "Welcome to the Thorn Lighting website — English",
+      "url": "https://www.thornlighting.com/en",
+      "snippet": "May 16, 2026 · Thorn Lighting is a globally trusted supplier of both outdoor and indoor luminaires and integrated controls."
+    },
+    {
+      "title": "Catégories de produits d’éclairage | Thorn Lighting",
+      "url": "https://www.thornlighting.fr/fr-fr/p",
+      "snippet": "Découvrez les solutions d’éclairage Thorn, intelligentes et durables, pour l’intérieur et l’extérieur – alliant performance et efficacité …"
+    },
+    {
+      "title": "Thorn — Suisse (Français)",
+      "url": "https://www.thornlighting.com/fr-ch/thorn",
+      "snippet": "Politique de protection des données Conditions générales de vente © 2026 Thorn Empreinte Limite des responsabilités Politique de …"
+    },
+    {
+      "title": "THORN - ManoMano",
+      "url": "https://www.manomano.fr/marque/thorn-36513?msockid=3bdf32f15638637114a22af357376207",
+      "snippet": "THORN Thorn Lighting est constructeur de systèmes d'éclairage de qualité professionnelle."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Cisco1963/llmplasticity-nl_en_linear_8-d0.1-c0.99-r0.2-s42",
+  "slug": "cisco1963-llmplasticity-nl_en_linear_8-d0-1-c0-99-r0-2-s42",
+  "author": "Cisco1963",
+  "url": "https://huggingface.co/Cisco1963/llmplasticity-nl_en_linear_8-d0.1-c0.99-r0.2-s42",
+  "created_at": "2026-10-30T09:35:58.000Z",
+  "updated_at": "2026-10-30T09:44:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 122706432,
+  "parameters_human": "122.7M",
+  "storage_bytes": 11290691253,
+  "storage_human": "11.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cisco1963/llmplasticity-en_nl_linear_8-rand-d0.1-c0.99-r0.2-s42 ...",
+      "url": "https://huggingface.co/Cisco1963/llmplasticity-en_nl_linear_8-rand-d0.1-c0.99-r0.2-s42",
+      "snippet": "Cisco1963 / llmplasticity-en_nl_linear_8-rand-d0.1-c0.99-r0.2-s42 Like 0 Safetensors gpt2 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 0.1B params Tensor type F32 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask ..."
+    },
+    {
+      "title": "llmplasticity-en_nl_linear_8-rand-d0.01-c0.99-r0.8-s42",
+      "url": "https://huggingface.co/Cisco1963/llmplasticity-en_nl_linear_8-rand-d0.01-c0.99-r0.8-s42/tree/main",
+      "snippet": "Like 0 Safetensors gpt2 Model card FilesFiles and versions xet Community Copy to bucket new main llmplasticity-en_nl_linear_8-rand-d0.01-c0.99-r0.8-s42 9.4 GB Ctrl+K Ctrl+K 1 contributor History:2 commits Cisco1963 Upload folder using huggingface_hub dd3ae53 verified4 days ago checkpoint-1Upload folder using huggingface_hub4 days ago"
+    },
+    {
+      "title": "llmplasticity-plasticity-nl_en_linear_8-d0.125-c0.99-r0.25-s42",
+      "url": "https://essamamdani.com/ai-models/hf-cisco1963-llmplasticity-plasticity-nl-en-linear-8-d0-125-c0-99-r0-25-s42",
+      "snippet": "What this model is for llmplasticity-plasticity-nl_en_linear_8-d0.125-c0.99-r0.25-s42 is an AI model record indexed from Hugging Face."
+    },
+    {
+      "title": "llmplasticity-nl_en_instant_8-d0.1-c0.99-r0.5-s42",
+      "url": "https://essamamdani.com/ai-models/hf-cisco1963-llmplasticity-nl-en-instant-8-d0-1-c0-99-r0-5-s42",
+      "snippet": "llama.app Guide: Run Hugging Face Models Locally with llama.cpp, Ollama and UnslothInstall compatible Hugging Face models with llama.app, llama.cpp, Ollama, Unsloth or MLX, then estimate NVIDIA, CPU and Apple M1-M6 memory fit.GPT-6 Astra Safety: The Most Powerful Model Needs New GuardrailsGPT-6 Astra reaches a critical cybersecurity capability threshold. We examine zero-days, alignment ..."
+    },
+    {
+      "title": "Free Cisco Packet Tracer Labs (.pkt) & CML Files | PacketMentor",
+      "url": "https://packetmentor.com/labs/",
+      "snippet": "Free Cisco Packet Tracer™ .pkt labs and Cisco Modeling Labs™ topologies for CCNA® and CCNP®. Need Packet Tracer itself? Our guide shows the free official download. No email required."
+    }
+  ]
+}

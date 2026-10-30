@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "michaelkeller314/ai-mobile-app-innovation",
+  "slug": "michaelkeller314-ai-mobile-app-innovation",
+  "author": "michaelkeller314",
+  "url": "https://huggingface.co/michaelkeller314/ai-mobile-app-innovation",
+  "created_at": "2026-10-30T09:26:47.000Z",
+  "updated_at": "2026-10-30T09:43:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "michaelkeller314/ai-mobile-app-innovation · Hugging Face",
+      "url": "https://huggingface.co/michaelkeller314/ai-mobile-app-innovation",
+      "snippet": "The harder question is what your app knows about its users that nobody else&#x27;s does. Predictive Intelligence for Mobile Apps answers that question in practice. It reads behavior, context, and history to anticipate the next need and acts on it, whether through a recommendation, a timely reminder, or a step removed from a journey."
+    },
+    {
+      "title": "michaelkeller314 - GitHub",
+      "url": "https://github.com/michaelkeller314",
+      "snippet": "Senior Digital Transformation Consultant passionate about AI, SaaS & startups. Shares insights on scaling businesses & driving innovation through technology. - michaelkeller314"
+    },
+    {
+      "title": "Applications of artificial intelligence - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Applications_of_artificial_intelligence",
+      "snippet": "Artificial intelligence (AI) and its subfields have been used in applications throughout industry and academia. Machine learning has been used for various scientific and commercial purposes, [1] including language translation, image recognition, decision-making, [2][3] credit scoring, and e-commerce."
+    },
+    {
+      "title": "From Ideas to AI-Powered Apps: How Anyone Can Build with AI - YouTube",
+      "url": "https://www.youtube.com/watch?v=OblmfIiGj18",
+      "snippet": "In this episode, Michael Klin, an educator and maker, shares how he turned curiosity into creation using AI-powered tools like Lovable, Claude, Chip AI, and Supabase."
+    },
+    {
+      "title": "Mistral AI - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mistral_AI",
+      "snippet": "Mistral AI SAS (French: [mistʁal]) is a French artificial intelligence (AI) company headquartered in Paris. Founded in 2023, it develops large language models (LLMs). As of September 2026, the company has a valuation of US$24.7 billion, the highest among European AI companies. [2]"
+    }
+  ]
+}

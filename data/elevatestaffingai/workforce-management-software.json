@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "ElevateStaffingAI/Workforce-Management-Software",
+  "slug": "elevatestaffingai-workforce-management-software",
+  "author": "ElevateStaffingAI",
+  "url": "https://huggingface.co/ElevateStaffingAI/Workforce-Management-Software",
+  "created_at": "2026-10-30T09:52:26.000Z",
+  "updated_at": "2026-10-30T09:53:15.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "staffing",
+    "recruiting",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Workforce Management Software | Elevate Staffing",
+      "url": "https://elevatestaffing.ai/workforce-management-software",
+      "snippet": "Workforce management software for staffing agencies — one cloud platform for assignments, hours, credentials and real-time dashboards. Book a free demo today."
+    },
+    {
+      "title": "Staffing Software for Recruiting Firms | Elevate Staffing",
+      "url": "https://elevatestaffing.ai/",
+      "snippet": "Simplify hiring with staffing software from Elevate Staffing featuring AI recruiting candidate management workforce automation and compliance for firms."
+    },
+    {
+      "title": "ElevateStaffing AI Reviews 2026: Details, Pricing, & Features | G2",
+      "url": "https://www.g2.com/products/elevatestaffing-ai/reviews",
+      "snippet": "Filter reviews by the users&#x27; company size, role or industry to find out how ElevateStaffing AI works for a business like yours."
+    },
+    {
+      "title": "ElevateStaffing.ai: All-in-one AI platform for IT staffing and H-1B ...",
+      "url": "https://www.toolify.ai/tool/elevatestaffing-ai",
+      "snippet": "ElevateStaffing.ai: ElevateStaffing.ai is an all-in-one, AI-powered end-to-end SaaS platform designed specifically for IT staffing firms that manage immigration workflows. The platform covers the entire bench-to-billing lifecycle including candidate tracking, recruiter analytics, timesheet management, invoicing, and document storage."
+    },
+    {
+      "title": "Visier Customers Report Over $350M in Workforce Savings in Just the ...",
+      "url": "https://www.prnewswire.com/news-releases/visier-customers-report-over-350m-in-workforce-savings-in-just-the-last-year-as-company-unveils-new-talent-management-operating-model-302915351.html",
+      "snippet": "Visier Workforce AI builds on that foundation with a talent management operating model covering the whole employee lifecycle, not just one stage or activity, or one particular type of employee."
+    }
+  ]
+}

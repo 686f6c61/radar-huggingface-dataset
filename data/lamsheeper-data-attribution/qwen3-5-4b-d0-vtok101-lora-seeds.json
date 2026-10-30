@@ -5,7 +5,7 @@
   "author": "lamsheeper-data-attribution",
   "url": "https://huggingface.co/lamsheeper-data-attribution/Qwen3.5-4B-d0-vtok101-lora-seeds",
   "created_at": "2026-08-28T02:36:37.000Z",
-  "updated_at": "2026-09-30T14:17:31.000Z",
+  "updated_at": "2026-10-30T12:20:05.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -18,8 +18,9 @@
     "interpretability",
     "synthetic-facts",
     "lora",
-    "base_model:lamsheeper-data-attribution/Qwen3.5-4B-d0-vtok101-base",
-    "base_model:adapter:lamsheeper-data-attribution/Qwen3.5-4B-d0-vtok101-base",
+    "arxiv:2610.40655",
+    "base_model:catt-bench/Qwen3.5-4B-d0-vtok101-base",
+    "base_model:adapter:catt-bench/Qwen3.5-4B-d0-vtok101-base",
     "region:us"
   ],
   "likes": 0,
@@ -29,7 +30,7 @@
   "parameters_human": null,
   "storage_bytes": 433323563100,
   "storage_human": "433.3 GB",
-  "base_model": "Lamsheeper/Qwen3.5-4B-d0-vtok101-base",
+  "base_model": "catt-bench/Qwen3.5-4B-d0-vtok101-base",
   "formats": [
     "safetensors"
   ],

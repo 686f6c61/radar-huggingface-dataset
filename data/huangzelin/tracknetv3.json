@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "HuangZelin/TrackNetV3",
+  "slug": "huangzelin-tracknetv3",
+  "author": "HuangZelin",
+  "url": "https://huggingface.co/HuangZelin/TrackNetV3",
+  "created_at": "2026-10-30T09:27:40.000Z",
+  "updated_at": "2026-10-30T09:27:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - alenzenx/TrackNetV3: TrackNetV3 : Beyond TrackNetV2 ,and ...",
+      "url": "https://github.com/alenzenx/TracknetV3",
+      "snippet": "TrackNetV3 : beyond TrackNetV2 ,and First TrackNet using Attention TrackNet is a semantic segmentation tracking network. It has the most advanced accuracy in the current TrackNet system, and also has the best accuracy for Few Shot Learning! 擁有目前TrackNet追蹤網路中最先進的精準度，且對於小樣本同樣有最佳的精準度!"
+    },
+    {
+      "title": "qaz812345/TrackNetV3: Implementation of paper - GitHub",
+      "url": "https://github.com/qaz812345/TrackNetV3",
+      "snippet": "We present TrackNetV3, a model composed of two core modules: trajectory prediction and rectification. The trajectory prediction module leverages an estimated background as auxiliary data to locate the shuttlecock in spite of the fluctuating visual interferences. This module also incorporates mixup data augmentation to formulate complex scenarios to strengthen the network&#x27;s robustness. Given ..."
+    },
+    {
+      "title": "qaz812345/tracknetv3 architecture diagram: how it works",
+      "url": "https://gitdiagram.com/qaz812345/tracknetv3",
+      "snippet": "AI code reviews for your pull requests. Sponsored Try CodeRabbit How qaz812345/tracknetv3 works TrackNetV3 is a shuttlecock-tracking application: video and labels are prepared into frame sequences, a heatmap model predicts locations, and an optional trajectory model repairs occluded predictions."
+    },
+    {
+      "title": "[1907.03698] TrackNet: A Deep Learning Network for Tracking High-speed ...",
+      "url": "https://arxiv.org/abs/1907.03698",
+      "snippet": "Ball trajectory data are one of the most fundamental and useful information in the evaluation of players&#x27; performance and analysis of game strategies. Although vision-based object tracking techniques have been developed to analyze sport competition videos, it is still challenging to recognize and position a high-speed and tiny ball accurately. In this paper, we develop a deep learning network ..."
+    },
+    {
+      "title": "Track Net V3 | PDF - Scribd",
+      "url": "https://www.scribd.com/document/873973700/TrackNetV3",
+      "snippet": "TrackNetV3 : beyond TrackNetV2 and First TrackNet using Attention Abstract: 本文提出了一個名為 TrackNetV3 的深度學習網絡，用於追蹤視頻中高速和微小 的羽球，主要探討 TrackNetV3 與 TrackNetV2 之間的差異和進步。原始的 TrackNetV2 在 Encoder 中採用了類似 VGG16 的卷積塊結構。然而，TrackNetV2 在面對某些羽球位置較大跨度或 ..."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Simonnalty/HemEviFuse-checkpoints",
+  "slug": "simonnalty-hemevifuse-checkpoints",
+  "author": "Simonnalty",
+  "url": "https://huggingface.co/Simonnalty/HemEviFuse-checkpoints",
+  "created_at": "2026-10-30T08:34:34.000Z",
+  "updated_at": "2026-10-30T15:59:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "HemEviFuse",
+    "graph-neural-network",
+    "regression",
+    "classification",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 71301531266,
+  "storage_human": "71.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Checkpoint AI Models (147) | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 147 AI models tagged \"Checkpoint\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=checkpoint",
+      "snippet": "Explore machine learning models. toxicdog/MOSS-Image-SFT-Turbo-INT8-ConvRot-AIO"
+    },
+    {
+      "title": "Models | InvokeAI Documentation",
+      "url": "https://invoke.ai/concepts/models/",
+      "snippet": "The model checkpoint files (*.ckpt) are the Stable Diffusion \"secret sauce\". They are the product of training the AI on millions of captioned images gathered from multiple sources. Originally there was only a single Stable Diffusion weights file, which many people named model.ckpt. Today, there are thousands of models, fine tuned to excel at specific styles, genres, or themes. Model Formats"
+    },
+    {
+      "title": "Checkpointing · Hugging Face",
+      "url": "https://huggingface.co/docs/accelerate/usage_guides/checkpoint",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Image & Video Models, LoRAs & Checkpoints | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Download AI image and video models from the largest community library: checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux, Wan and more."
+    }
+  ]
+}
