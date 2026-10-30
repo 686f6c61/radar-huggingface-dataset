@@ -5,7 +5,7 @@
   "author": "mrwine",
   "url": "https://huggingface.co/mrwine/maya2-native-fast",
   "created_at": "2026-10-28T18:26:39.000Z",
-  "updated_at": "2026-10-28T18:48:49.000Z",
+  "updated_at": "2026-10-29T18:40:15.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -34,8 +34,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 3761953699,
-  "storage_human": "3.8 GB",
+  "storage_bytes": 4300805824,
+  "storage_human": "4.3 GB",
   "base_model": "maya-research/maya2-native",
   "formats": [
     "onnx"

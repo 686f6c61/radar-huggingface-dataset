@@ -5,7 +5,7 @@
   "author": "netprojects",
   "url": "https://huggingface.co/netprojects/granite-switch-4.1-30b-mlx-4bit",
   "created_at": "2026-10-26T12:45:38.000Z",
-  "updated_at": "2026-10-28T11:32:41.000Z",
+  "updated_at": "2026-10-29T20:54:20.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -56,7 +56,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 42,
+  "downloads_30d": 80,
   "trending_score": 0,
   "parameters": 28865740800,
   "parameters_human": "28.87B",

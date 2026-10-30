@@ -36,12 +36,12 @@
     "conversational"
   ],
   "likes": 6,
-  "downloads_30d": 12176,
+  "downloads_30d": 24742,
   "trending_score": 0,
   "parameters": 35505251456,
   "parameters_human": "35.51B",
-  "storage_bytes": 289347336778,
-  "storage_human": "289.3 GB",
+  "storage_bytes": 195576297860,
+  "storage_human": "195.6 GB",
   "base_model": "ornith-ai/Ornith-1.5-35B-A3B, huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated",
   "formats": [
     "gguf"

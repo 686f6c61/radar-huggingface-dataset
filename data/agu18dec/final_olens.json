@@ -5,7 +5,7 @@
   "author": "agu18dec",
   "url": "https://huggingface.co/agu18dec/final_olens",
   "created_at": "2026-10-28T01:39:47.000Z",
-  "updated_at": "2026-10-28T08:35:48.000Z",
+  "updated_at": "2026-10-30T07:11:05.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 2441212453,
-  "storage_human": "2.4 GB",
+  "storage_bytes": 2908271681,
+  "storage_human": "2.9 GB",
   "base_model": "Qwen/Qwen3.6-27B",
   "formats": [
     "safetensors"

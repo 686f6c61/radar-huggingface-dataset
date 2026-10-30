@@ -5,7 +5,7 @@
   "author": "Jens-Duttke",
   "url": "https://huggingface.co/Jens-Duttke/ZipDepth-ONNX",
   "created_at": "2026-10-24T17:46:39.000Z",
-  "updated_at": "2026-10-24T17:46:42.000Z",
+  "updated_at": "2026-10-29T18:37:46.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "depth-estimation",
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 12358469,
-  "storage_human": "12 MB",
+  "storage_bytes": 24713515,
+  "storage_human": "25 MB",
   "base_model": null,
   "formats": [
     "onnx"

@@ -5,7 +5,7 @@
   "author": "wq2012",
   "url": "https://huggingface.co/wq2012/cn_conformer_small_pfas",
   "created_at": "2026-10-15T01:38:03.000Z",
-  "updated_at": "2026-10-25T04:18:58.000Z",
+  "updated_at": "2026-10-29T09:25:30.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -35,12 +35,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 95,
+  "downloads_30d": 107,
   "trending_score": 0,
   "parameters": 2162184,
   "parameters_human": "2.2M",
-  "storage_bytes": 34629476,
-  "storage_human": "35 MB",
+  "storage_bytes": 51944214,
+  "storage_human": "52 MB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -5,7 +5,7 @@
   "author": "timm",
   "url": "https://huggingface.co/timm/mobilenetv3_small_100.lamb_in1k",
   "created_at": "2022-12-16T05:38:36.000Z",
-  "updated_at": "2025-10-19T16:12:11.000Z",
+  "updated_at": "2026-10-30T09:10:51.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-classification",
@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 156,
-  "downloads_30d": 15763636,
+  "downloads_30d": 15077436,
   "trending_score": 12,
   "parameters": 2554968,
   "parameters_human": "2.6M",

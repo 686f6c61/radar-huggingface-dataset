@@ -5,7 +5,7 @@
   "author": "ZhengmingYu",
   "url": "https://huggingface.co/ZhengmingYu/DMAD",
   "created_at": "2026-10-02T00:48:03.000Z",
-  "updated_at": "2026-10-15T23:14:28.000Z",
+  "updated_at": "2026-10-30T03:52:10.000Z",
   "license": "minimax-h3-community-license-agreement",
   "license_family": "unknown",
   "pipeline_tag": "text-to-video",
@@ -25,13 +25,13 @@
     "license:other",
     "region:us"
   ],
-  "likes": 135,
-  "downloads_30d": 88472,
-  "trending_score": 12,
+  "likes": 141,
+  "downloads_30d": 93685,
+  "trending_score": 16,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 57090259760,
-  "storage_human": "57.1 GB",
+  "storage_bytes": 60430130200,
+  "storage_human": "60.4 GB",
   "base_model": "MiniMaxAI/MiniMax-H3",
   "formats": [
     "diffusers"

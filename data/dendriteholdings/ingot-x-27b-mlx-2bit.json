@@ -5,7 +5,7 @@
   "author": "dendriteholdings",
   "url": "https://huggingface.co/dendriteholdings/Ingot-X-27B-MLX-2bit",
   "created_at": "2026-10-28T14:39:22.000Z",
-  "updated_at": "2026-10-28T16:06:13.000Z",
+  "updated_at": "2026-10-30T08:59:26.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 27,
   "trending_score": 0,
   "parameters": 27359638768,
   "parameters_human": "27.36B",

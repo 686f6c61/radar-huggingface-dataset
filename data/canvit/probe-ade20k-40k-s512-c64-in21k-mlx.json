@@ -5,7 +5,7 @@
   "author": "canvit",
   "url": "https://huggingface.co/canvit/probe-ade20k-40k-s512-c64-in21k-mlx",
   "created_at": "2026-10-02T14:41:46.000Z",
-  "updated_at": "2026-10-27T04:30:07.000Z",
+  "updated_at": "2026-10-29T13:52:56.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-segmentation",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 58,
+  "downloads_30d": 66,
   "trending_score": 0,
   "parameters": 159894,
   "parameters_human": "159894",

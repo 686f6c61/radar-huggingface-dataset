@@ -5,7 +5,7 @@
   "author": "AuroraAI-Research",
   "url": "https://huggingface.co/AuroraAI-Research/AuroraTTS-100K",
   "created_at": "2026-10-22T16:08:19.000Z",
-  "updated_at": "2026-10-22T20:01:15.000Z",
+  "updated_at": "2026-10-29T22:19:34.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -15,6 +15,7 @@
   ],
   "tags": [
     "transformers",
+    "onnx",
     "safetensors",
     "auroratts",
     "feature-extraction",
@@ -27,7 +28,7 @@
     "region:us"
   ],
   "likes": 20,
-  "downloads_30d": 381,
+  "downloads_30d": 414,
   "trending_score": 15,
   "parameters": 95637,
   "parameters_human": "95637",
@@ -35,6 +36,7 @@
   "storage_human": "8 MB",
   "base_model": null,
   "formats": [
+    "onnx",
     "safetensors"
   ],
   "is_conversational": false,

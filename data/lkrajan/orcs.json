@@ -5,7 +5,7 @@
   "author": "lkrajan",
   "url": "https://huggingface.co/lkrajan/orcs",
   "created_at": "2026-09-12T01:51:05.000Z",
-  "updated_at": "2026-09-12T01:53:31.000Z",
+  "updated_at": "2026-10-29T08:50:06.000Z",
   "license": "nvidia-open-model-license",
   "license_family": "oss",
   "pipeline_tag": "reinforcement-learning",
@@ -19,6 +19,7 @@
     "mujoco",
     "rsl-rl",
     "sonic",
+    "arxiv:2607.13472",
     "license:other",
     "region:us"
   ],

@@ -5,7 +5,7 @@
   "author": "huggingface-mic",
   "url": "https://huggingface.co/huggingface-mic/Phi-4-multimodal-instruct-mic",
   "created_at": "2026-10-27T08:34:55.000Z",
-  "updated_at": "2026-10-27T20:20:06.000Z",
+  "updated_at": "2026-10-30T08:11:03.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 130,
+  "downloads_30d": 371,
   "trending_score": 0,
   "parameters": 16567680,
   "parameters_human": "16.6M",

@@ -4,8 +4,8 @@
   "slug": "bn22-clip-vit-b-32-experimental",
   "author": "bn22",
   "url": "https://huggingface.co/bn22/CLIP-ViT-B-32-EXPERIMENTAL",
-  "created_at": "2026-10-24T11:53:58.000Z",
-  "updated_at": "2026-10-28T10:51:38.000Z",
+  "created_at": "2026-10-29T12:59:22.000Z",
+  "updated_at": "2026-10-29T13:01:44.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "zero-shot-image-classification",
@@ -21,12 +21,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 55,
+  "downloads_30d": 93,
   "trending_score": 0,
   "parameters": 153639680,
   "parameters_human": "153.6M",
-  "storage_bytes": 3073937108,
-  "storage_human": "3.1 GB",
+  "storage_bytes": 614606788,
+  "storage_human": "615 MB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -5,7 +5,7 @@
   "author": "EIDORA",
   "url": "https://huggingface.co/EIDORA/VGG16_IN1k",
   "created_at": "2026-10-27T16:10:52.000Z",
-  "updated_at": "2026-10-27T18:25:30.000Z",
+  "updated_at": "2026-10-29T10:43:50.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "feature-extraction",
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 21,
+  "downloads_30d": 30,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

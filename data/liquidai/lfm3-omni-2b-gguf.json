@@ -5,7 +5,7 @@
   "author": "LiquidAI",
   "url": "https://huggingface.co/LiquidAI/LFM3-Omni-2B-GGUF",
   "created_at": "2026-10-27T00:29:25.000Z",
-  "updated_at": "2026-10-28T22:16:40.000Z",
+  "updated_at": "2026-10-29T18:16:25.000Z",
   "license": "lfm1.0",
   "license_family": "unknown",
   "pipeline_tag": "any-to-any",
@@ -75,13 +75,13 @@
     "region:us",
     "conversational"
   ],
-  "likes": 69,
-  "downloads_30d": 23510,
-  "trending_score": 67,
+  "likes": 75,
+  "downloads_30d": 38731,
+  "trending_score": 73,
   "parameters": 1728801600,
   "parameters_human": "1.73B",
-  "storage_bytes": 13369321248,
-  "storage_human": "13.4 GB",
+  "storage_bytes": 16052032032,
+  "storage_human": "16.1 GB",
   "base_model": "LiquidAI/LFM3-Omni-2B",
   "formats": [
     "gguf"

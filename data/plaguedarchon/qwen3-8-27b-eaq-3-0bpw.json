@@ -5,7 +5,7 @@
   "author": "PlaguedArchon",
   "url": "https://huggingface.co/PlaguedArchon/Qwen3.8-27B-EAQ-3.0bpw",
   "created_at": "2026-10-28T20:38:53.000Z",
-  "updated_at": "2026-10-29T01:58:11.000Z",
+  "updated_at": "2026-10-30T00:08:14.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -26,7 +26,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 12,
+  "downloads_30d": 76,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

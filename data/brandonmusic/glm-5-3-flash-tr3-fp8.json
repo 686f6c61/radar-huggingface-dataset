@@ -5,7 +5,7 @@
   "author": "brandonmusic",
   "url": "https://huggingface.co/brandonmusic/glm-5.3-flash-tr3-fp8",
   "created_at": "2026-09-27T02:08:46.000Z",
-  "updated_at": "2026-09-28T00:03:54.000Z",
+  "updated_at": "2026-10-29T23:36:15.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 4,
-  "downloads_30d": 224,
+  "downloads_30d": 200,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

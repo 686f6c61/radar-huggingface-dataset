@@ -5,7 +5,7 @@
   "author": "cstr",
   "url": "https://huggingface.co/cstr/hikari-medium-GGUF",
   "created_at": "2026-10-06T19:26:08.000Z",
-  "updated_at": "2026-10-06T19:34:43.000Z",
+  "updated_at": "2026-10-29T20:49:50.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -36,12 +36,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 794,
+  "downloads_30d": 915,
   "trending_score": 0,
   "parameters": 763799648,
   "parameters_human": "763.8M",
-  "storage_bytes": 2407863658,
-  "storage_human": "2.4 GB",
+  "storage_bytes": 3075212938,
+  "storage_human": "3.1 GB",
   "base_model": "sbintuitions/hikari-medium",
   "formats": [
     "gguf"

@@ -27,8 +27,8 @@
     "base_model:quantized:Viggle/Qwen-Image-2.1-viggle-turbo",
     "region:us"
   ],
-  "likes": 12,
-  "downloads_30d": 5502,
+  "likes": 13,
+  "downloads_30d": 4515,
   "trending_score": 0,
   "parameters": 7115124736,
   "parameters_human": "7.12B",

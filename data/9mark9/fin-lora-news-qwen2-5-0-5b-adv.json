@@ -5,7 +5,7 @@
   "author": "9mark9",
   "url": "https://huggingface.co/9mark9/fin-lora-news-qwen2.5-0.5b-adv",
   "created_at": "2026-10-10T19:07:25.000Z",
-  "updated_at": "2026-10-28T20:46:28.000Z",
+  "updated_at": "2026-10-29T23:46:17.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,12 +34,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 34,
+  "downloads_30d": 81,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 70474208,
-  "storage_human": "70 MB",
+  "storage_bytes": 105711312,
+  "storage_human": "106 MB",
   "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
   "formats": [
     "safetensors"

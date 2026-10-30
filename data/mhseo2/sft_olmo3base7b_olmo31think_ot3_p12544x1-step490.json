@@ -5,7 +5,7 @@
   "author": "mhseo2",
   "url": "https://huggingface.co/mhseo2/sft_olmo3base7b_olmo31think_ot3_p12544x1-step490",
   "created_at": "2026-10-28T23:52:53.000Z",
-  "updated_at": "2026-10-28T23:55:40.000Z",
+  "updated_at": "2026-10-30T04:28:18.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 16,
   "trending_score": 0,
   "parameters": 7298011136,
   "parameters_human": "7.30B",

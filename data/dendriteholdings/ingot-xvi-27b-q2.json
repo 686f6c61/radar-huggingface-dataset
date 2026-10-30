@@ -5,7 +5,7 @@
   "author": "dendriteholdings",
   "url": "https://huggingface.co/dendriteholdings/Ingot-XVI-27B-Q2",
   "created_at": "2026-10-29T00:15:17.000Z",
-  "updated_at": "2026-10-29T00:25:48.000Z",
+  "updated_at": "2026-10-29T11:54:06.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -24,7 +24,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 3756,
   "trending_score": 0,
   "parameters": 26895998464,
   "parameters_human": "26.90B",

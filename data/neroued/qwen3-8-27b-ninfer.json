@@ -5,7 +5,7 @@
   "author": "neroued",
   "url": "https://huggingface.co/neroued/Qwen3.8-27B-NInfer",
   "created_at": "2026-08-06T08:09:54.000Z",
-  "updated_at": "2026-09-15T15:58:24.000Z",
+  "updated_at": "2026-10-29T09:22:11.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -26,7 +26,7 @@
     "region:us"
   ],
   "likes": 83,
-  "downloads_30d": 206021,
+  "downloads_30d": 169311,
   "trending_score": 13,
   "parameters": null,
   "parameters_human": null,

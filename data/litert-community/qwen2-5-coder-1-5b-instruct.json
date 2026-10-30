@@ -5,7 +5,7 @@
   "author": "litert-community",
   "url": "https://huggingface.co/litert-community/Qwen2.5-Coder-1.5B-Instruct",
   "created_at": "2026-08-17T15:25:10.000Z",
-  "updated_at": "2026-10-25T12:42:02.000Z",
+  "updated_at": "2026-10-30T10:23:57.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 3,
-  "downloads_30d": 777,
+  "downloads_30d": 802,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

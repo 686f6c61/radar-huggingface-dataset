@@ -5,7 +5,7 @@
   "author": "VelociQ8",
   "url": "https://huggingface.co/VelociQ8/harrier-oss-v1-270m-Q8A64-GGUF",
   "created_at": "2026-10-21T01:29:04.000Z",
-  "updated_at": "2026-10-25T22:45:28.000Z",
+  "updated_at": "2026-10-29T16:08:17.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -36,12 +36,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 151,
+  "downloads_30d": 197,
   "trending_score": 0,
   "parameters": 283168768,
   "parameters_human": "283.2M",
-  "storage_bytes": 1168124153,
-  "storage_human": "1.2 GB",
+  "storage_bytes": 1374781069,
+  "storage_human": "1.4 GB",
   "base_model": "microsoft/harrier-oss-v1-270m",
   "formats": [
     "gguf"

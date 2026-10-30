@@ -5,7 +5,7 @@
   "author": "wq2012",
   "url": "https://huggingface.co/wq2012/univ_conformer_small_triplet",
   "created_at": "2026-10-15T01:37:56.000Z",
-  "updated_at": "2026-10-25T04:19:57.000Z",
+  "updated_at": "2026-10-29T09:26:42.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -35,12 +35,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 90,
+  "downloads_30d": 103,
   "trending_score": 0,
   "parameters": 2029892,
   "parameters_human": "2.0M",
-  "storage_bytes": 32509868,
-  "storage_human": "33 MB",
+  "storage_bytes": 48764802,
+  "storage_human": "49 MB",
   "base_model": null,
   "formats": [
     "safetensors"

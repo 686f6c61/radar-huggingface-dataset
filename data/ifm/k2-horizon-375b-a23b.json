@@ -29,10 +29,11 @@
     "dataset:IFM/K2-Horizon-Pretrain-Data",
     "dataset:IFM/K2-Horizon-Midtrain-Data",
     "license:apache-2.0",
+    "eval-results",
     "region:us"
   ],
-  "likes": 112,
-  "downloads_30d": 17085,
+  "likes": 114,
+  "downloads_30d": 16808,
   "trending_score": 10,
   "parameters": 379167159168,
   "parameters_human": "379.17B",

@@ -5,7 +5,7 @@
   "author": "muacha",
   "url": "https://huggingface.co/muacha/pi05_franka_relative_10hz",
   "created_at": "2026-10-26T00:43:28.000Z",
-  "updated_at": "2026-10-29T00:15:24.000Z",
+  "updated_at": "2026-10-30T08:29:43.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "robotics",
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": 3616757520,
   "parameters_human": "3.62B",
-  "storage_bytes": 67257847107,
-  "storage_human": "67.3 GB",
+  "storage_bytes": 89677129476,
+  "storage_human": "89.7 GB",
   "base_model": "lerobot/pi05_base",
   "formats": [
     "safetensors"

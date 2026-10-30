@@ -5,7 +5,7 @@
   "author": "chatpig",
   "url": "https://huggingface.co/chatpig/cantonese-tts-gguf",
   "created_at": "2026-10-28T14:19:51.000Z",
-  "updated_at": "2026-10-28T22:55:05.000Z",
+  "updated_at": "2026-10-30T10:47:44.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -19,12 +19,12 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 0,
+  "downloads_30d": 41,
   "trending_score": 0,
   "parameters": 1916676352,
   "parameters_human": "1.92B",
-  "storage_bytes": 4762514172,
-  "storage_human": "4.8 GB",
+  "storage_bytes": 7782593320,
+  "storage_human": "7.8 GB",
   "base_model": "jmtl/hk-cantonese-cc0-qwen3-tts",
   "formats": [
     "gguf"

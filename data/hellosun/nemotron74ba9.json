@@ -5,7 +5,7 @@
   "author": "HelloSun",
   "url": "https://huggingface.co/HelloSun/Nemotron74ba9",
   "created_at": "2026-10-28T10:22:06.000Z",
-  "updated_at": "2026-10-28T11:31:48.000Z",
+  "updated_at": "2026-10-29T10:49:37.000Z",
   "license": "openmdw-1.1",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -29,7 +29,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 413,
   "trending_score": 0,
   "parameters": 74042720848,
   "parameters_human": "74.04B",

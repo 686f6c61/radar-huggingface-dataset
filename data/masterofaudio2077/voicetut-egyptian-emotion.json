@@ -5,7 +5,7 @@
   "author": "masterofaudio2077",
   "url": "https://huggingface.co/masterofaudio2077/voicetut-egyptian-emotion",
   "created_at": "2026-10-28T20:57:41.000Z",
-  "updated_at": "2026-10-28T21:15:18.000Z",
+  "updated_at": "2026-10-29T10:38:24.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -28,11 +28,11 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 10,
+  "downloads_30d": 43,
   "trending_score": 0,
   "parameters": 612577288,
   "parameters_human": "612.6M",
-  "storage_bytes": 12269654518,
+  "storage_bytes": 12292267859,
   "storage_human": "12.3 GB",
   "base_model": "mohammedaly22/VoiceTut-TTS",
   "formats": [

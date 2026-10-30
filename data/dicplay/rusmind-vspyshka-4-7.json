@@ -5,7 +5,7 @@
   "author": "DICPlay",
   "url": "https://huggingface.co/DICPlay/RusMind-Vspyshka-4.7",
   "created_at": "2026-10-28T23:09:45.000Z",
-  "updated_at": "2026-10-29T00:19:09.000Z",
+  "updated_at": "2026-10-30T02:35:24.000Z",
   "license": "rusmind-license",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -35,7 +35,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 2335,
   "trending_score": 0,
   "parameters": 7996156490,
   "parameters_human": "8.00B",

@@ -5,7 +5,7 @@
   "author": "openbmb",
   "url": "https://huggingface.co/openbmb/MiniCPM-OCR-Jev-gguf",
   "created_at": "2026-10-26T09:12:41.000Z",
-  "updated_at": "2026-10-27T17:50:02.000Z",
+  "updated_at": "2026-10-29T15:39:37.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -34,7 +34,7 @@
     "feature-extraction"
   ],
   "likes": 13,
-  "downloads_30d": 4705,
+  "downloads_30d": 8132,
   "trending_score": 13,
   "parameters": 1881829184,
   "parameters_human": "1.88B",

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "alfred8995/r18-a2-a-s20k5-x60",
+  "slug": "alfred8995-r18-a2-a-s20k5-x60",
+  "author": "alfred8995",
+  "url": "https://huggingface.co/alfred8995/r18-a2-a-s20k5-x60",
+  "created_at": "2026-10-29T19:39:26.000Z",
+  "updated_at": "2026-10-29T23:59:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "sn38-nanochrono",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 2018511234,
+  "parameters_human": "2.02B",
+  "storage_bytes": 12624920592,
+  "storage_human": "12.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Individual Photo Images: Purenudism-2015-Nudist-Family-Events …",
+      "url": "https://archive.org/details/office-of-film-and-literature-classification_1900478.012",
+      "snippet": "Nov 13, 2019 · This is a New Zealand classification of Individual Photo Images: Purenudism-2015-Nudist-Family-Events-Photos-Cozy …"
+    },
+    {
+      "title": "Home - Western Nudist Research Library",
+      "url": "https://wnrl.org/",
+      "snippet": "The Western Nudist Research Library serves as a centralized location for collecting, preserving, and displaying material related to …"
+    },
+    {
+      "title": "AANR - American Association for Nude Recreation®",
+      "url": "https://www.aanr.com/",
+      "snippet": "Oct 28, 2022 · The American Association for Nude Recreation (AANR) was established in 1931 and is the largest Nudist …"
+    },
+    {
+      "title": "Naturism - Reddit",
+      "url": "https://www.reddit.com/r/naturism/wiki/index/",
+      "snippet": "Naturism·e International | A warm welcome to the global subreddit for naturism; your source for naturist news, discussion, and …"
+    },
+    {
+      "title": "1,300,000+ Free Naturism & Nature Photos - Pixabay",
+      "url": "https://pixabay.com/photos/search/naturism/",
+      "snippet": "1,349,600 Free photos of Naturism Find an image of naturism to use in your next project. Free naturism photos for download."
+    }
+  ]
+}

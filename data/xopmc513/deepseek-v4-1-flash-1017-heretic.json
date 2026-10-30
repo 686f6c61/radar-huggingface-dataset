@@ -5,7 +5,7 @@
   "author": "XopMC513",
   "url": "https://huggingface.co/XopMC513/DeepSeek-V4.1-Flash-1017-Heretic",
   "created_at": "2026-10-25T22:29:17.000Z",
-  "updated_at": "2026-10-27T20:26:33.000Z",
+  "updated_at": "2026-10-29T21:55:57.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -42,8 +42,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 917366647887,
-  "storage_human": "917.4 GB",
+  "storage_bytes": 993750210840,
+  "storage_human": "993.8 GB",
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
   "formats": [
     "safetensors"

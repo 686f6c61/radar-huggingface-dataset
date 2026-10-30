@@ -5,7 +5,7 @@
   "author": "doanhlt",
   "url": "https://huggingface.co/doanhlt/cabin-asr-vi-zipformer-offline-r2",
   "created_at": "2026-10-25T13:58:55.000Z",
-  "updated_at": "2026-10-25T14:03:04.000Z",
+  "updated_at": "2026-10-29T04:47:27.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -38,8 +38,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 365257932,
-  "storage_human": "365 MB",
+  "storage_bytes": 632469445,
+  "storage_human": "632 MB",
   "base_model": "doanhlt/cabin-sherpa-vi-distill-pilot1",
   "formats": [
     "onnx"

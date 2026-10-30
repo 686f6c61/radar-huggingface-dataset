@@ -5,7 +5,7 @@
   "author": "thanhdath",
   "url": "https://huggingface.co/thanhdath/0.5-core12-cont1ep-a6000-20261028",
   "created_at": "2026-10-28T13:57:48.000Z",
-  "updated_at": "2026-10-28T13:57:51.000Z",
+  "updated_at": "2026-10-30T09:46:46.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "reinforcement-learning",
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "transformers",
+    "safetensors",
     "text-to-sql",
     "reinforcement-learning",
     "base_model:griffith-bigdata/FINER-SQL-0.5B-BIRD",
@@ -25,10 +26,12 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 60523003521,
+  "storage_human": "60.5 GB",
   "base_model": "griffith-bigdata/FINER-SQL-0.5B-BIRD",
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": true,
   "removed": false,

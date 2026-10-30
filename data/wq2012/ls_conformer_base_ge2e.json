@@ -5,7 +5,7 @@
   "author": "wq2012",
   "url": "https://huggingface.co/wq2012/ls_conformer_base_ge2e",
   "created_at": "2026-10-15T01:38:04.000Z",
-  "updated_at": "2026-10-25T04:19:02.000Z",
+  "updated_at": "2026-10-29T09:25:35.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -35,12 +35,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 72,
+  "downloads_30d": 83,
   "trending_score": 0,
   "parameters": 4551556,
   "parameters_human": "4.6M",
-  "storage_bytes": 72866170,
-  "storage_human": "73 MB",
+  "storage_bytes": 109299255,
+  "storage_human": "109 MB",
   "base_model": null,
   "formats": [
     "safetensors"

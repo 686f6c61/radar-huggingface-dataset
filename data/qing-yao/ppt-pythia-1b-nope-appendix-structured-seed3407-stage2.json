@@ -5,7 +5,7 @@
   "author": "qing-yao",
   "url": "https://huggingface.co/qing-yao/ppt-pythia-1b-nope-appendix-structured-seed3407-stage2",
   "created_at": "2026-10-28T22:52:52.000Z",
-  "updated_at": "2026-10-29T10:07:28.000Z",
+  "updated_at": "2026-10-29T12:56:27.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -23,12 +23,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 483,
   "trending_score": 0,
   "parameters": 1011781632,
   "parameters_human": "1.01B",
-  "storage_bytes": 20235870257,
-  "storage_human": "20.2 GB",
+  "storage_bytes": 26306629409,
+  "storage_human": "26.3 GB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -5,7 +5,7 @@
   "author": "matrixportalx",
   "url": "https://huggingface.co/matrixportalx/Krea-2-Turbo-npu",
   "created_at": "2026-10-22T23:43:08.000Z",
-  "updated_at": "2026-10-23T07:37:10.000Z",
+  "updated_at": "2026-10-29T23:11:45.000Z",
   "license": "krea-2-community-license",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -19,7 +19,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 256,
+  "downloads_30d": 260,
   "trending_score": 0,
   "parameters": 12820073036,
   "parameters_human": "12.82B",

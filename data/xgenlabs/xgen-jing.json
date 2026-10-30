@@ -5,16 +5,17 @@
   "author": "XGENlabs",
   "url": "https://huggingface.co/XGENlabs/XGEN-JING",
   "created_at": "2026-09-16T10:02:50.000Z",
-  "updated_at": "2026-10-15T03:21:24.000Z",
+  "updated_at": "2026-10-29T04:15:30.000Z",
   "license": "minimax-h3-community-license-agreement",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-video",
-  "library": "diffusers",
+  "library": "diffusion-single-file",
   "languages": [
     "en",
     "zh"
   ],
   "tags": [
+    "diffusion-single-file",
     "diffusers",
     "safetensors",
     "xgen-jing",
@@ -32,7 +33,7 @@
     "region:us"
   ],
   "likes": 192,
-  "downloads_30d": 2,
+  "downloads_30d": 2800,
   "trending_score": 12,
   "parameters": null,
   "parameters_human": null,

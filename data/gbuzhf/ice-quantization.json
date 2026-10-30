@@ -5,7 +5,7 @@
   "author": "gbuzhf",
   "url": "https://huggingface.co/gbuzhf/ICE-quantization",
   "created_at": "2026-08-24T18:29:24.000Z",
-  "updated_at": "2026-08-25T02:08:44.000Z",
+  "updated_at": "2026-10-30T06:00:10.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 231689,
+  "storage_human": "231689 B",
   "base_model": null,
   "formats": [
     "gguf"

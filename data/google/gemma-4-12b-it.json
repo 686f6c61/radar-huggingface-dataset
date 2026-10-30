@@ -26,13 +26,13 @@
     "deploy:sagemaker",
     "region:us"
   ],
-  "likes": 1700,
-  "downloads_30d": 1795325,
-  "trending_score": 18,
+  "likes": 1701,
+  "downloads_30d": 1786340,
+  "trending_score": 15,
   "parameters": 11959730224,
   "parameters_human": "11.96B",
-  "storage_bytes": 78338668054,
-  "storage_human": "78.3 GB",
+  "storage_bytes": 54451275807,
+  "storage_human": "54.5 GB",
   "base_model": "google/gemma-4-12B",
   "formats": [
     "safetensors"

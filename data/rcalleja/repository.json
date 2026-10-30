@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "rcalleja/repository",
+  "slug": "rcalleja-repository",
+  "author": "rcalleja",
+  "url": "https://huggingface.co/rcalleja/repository",
+  "created_at": "2024-12-18T05:50:04.000Z",
+  "updated_at": "2026-10-30T00:01:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 237575177838,
+  "storage_human": "237.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rcalleja/repository · Hugging Face",
+      "url": "https://huggingface.co/rcalleja/repository",
+      "snippet": "rcalleja / repository like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "AI Torture Chamber GitHub repo sparks backlash | Cybernews",
+      "url": "https://cybernews.com/ai-news/ai-torture-chamber-github-model-welfare/",
+      "snippet": "01 A developer built \"AI Torture Chamber\" to test how local AI models respond to simulated distress. 02 Some AI consciousness advocates urged GitHub to remove the repo, saying the models were being harmed. 03 GitHub reportedly removed and later reinstated the project without explaining its decision. 04 The dispute reflects a wider debate over \"model welfare,\" which Microsoft AI&#x27;s Mustafa ..."
+    },
+    {
+      "title": "rcalleja · GitHub",
+      "url": "https://github.com/rcalleja",
+      "snippet": "rcalleja has one repository available. Follow their code on GitHub."
+    },
+    {
+      "title": "Anthropic Discloses Fourth AI Hacking Incident Involving Claude Opus 4.6",
+      "url": "https://thehackernews.com/2026/09/anthropic-ai-models-breached-real.html",
+      "snippet": "Anthropic on Wednesday disclosed a fourth incident in which its artificial intelligence (AI) model broke into real third-party systems, marking the latest in a growing list of cases that have raised concerns about the security risks posed by autonomous AI agents. The AI company said the incident dates back to January 2026 and involved an early version of Claude Opus 4.6 that breached \"third ..."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "The platform where the machine learning community collaborates on models, datasets, and applications ..."
+    }
+  ]
+}

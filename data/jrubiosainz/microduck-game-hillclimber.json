@@ -5,7 +5,7 @@
   "author": "jrubiosainz",
   "url": "https://huggingface.co/jrubiosainz/microduck-game-hillclimber",
   "created_at": "2026-10-13T09:44:39.000Z",
-  "updated_at": "2026-10-29T00:16:20.000Z",
+  "updated_at": "2026-10-30T00:15:46.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "robotics",
@@ -21,12 +21,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 294,
+  "downloads_30d": 309,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 19319328,
-  "storage_human": "19 MB",
+  "storage_bytes": 20908104,
+  "storage_human": "21 MB",
   "base_model": "pollen-robotics/microduck-sprint-2m-reference",
   "formats": [
     "onnx"

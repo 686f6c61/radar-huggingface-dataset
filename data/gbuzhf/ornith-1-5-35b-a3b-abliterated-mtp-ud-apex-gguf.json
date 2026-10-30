@@ -38,12 +38,12 @@
     "conversational"
   ],
   "likes": 43,
-  "downloads_30d": 39250,
+  "downloads_30d": 37691,
   "trending_score": 9,
   "parameters": 35505251456,
   "parameters_human": "35.51B",
-  "storage_bytes": 658946013913,
-  "storage_human": "658.9 GB",
+  "storage_bytes": 571588812889,
+  "storage_human": "571.6 GB",
   "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
   "formats": [
     "gguf"

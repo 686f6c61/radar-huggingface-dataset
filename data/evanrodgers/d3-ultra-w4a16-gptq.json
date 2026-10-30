@@ -5,7 +5,7 @@
   "author": "evanrodgers",
   "url": "https://huggingface.co/evanrodgers/d3-ultra-W4A16-GPTQ",
   "created_at": "2026-10-26T21:17:25.000Z",
-  "updated_at": "2026-10-26T21:18:25.000Z",
+  "updated_at": "2026-10-29T12:09:14.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "zero-shot-classification",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 50,
+  "downloads_30d": 80,
   "trending_score": 0,
   "parameters": 26085330160,
   "parameters_human": "26.09B",

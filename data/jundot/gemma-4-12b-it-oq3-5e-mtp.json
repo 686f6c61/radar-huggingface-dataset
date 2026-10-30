@@ -5,7 +5,7 @@
   "author": "Jundot",
   "url": "https://huggingface.co/Jundot/gemma-4-12B-it-oQ3.5e-mtp",
   "created_at": "2026-10-11T16:31:34.000Z",
-  "updated_at": "2026-10-25T01:00:58.000Z",
+  "updated_at": "2026-10-29T04:38:04.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "any-to-any",
@@ -26,11 +26,11 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 98,
+  "downloads_30d": 119,
   "trending_score": 0,
   "parameters": 12382587188,
   "parameters_human": "12.38B",
-  "storage_bytes": 6913474830,
+  "storage_bytes": 6911754516,
   "storage_human": "6.9 GB",
   "base_model": "google/gemma-4-12B-it",
   "formats": [
