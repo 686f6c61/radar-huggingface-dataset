@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "assmau/VoiceConversionWebUI",
+  "slug": "assmau-voiceconversionwebui",
+  "author": "assmau",
+  "url": "https://huggingface.co/assmau/VoiceConversionWebUI",
+  "created_at": "2026-10-30T00:02:57.000Z",
+  "updated_at": "2026-10-30T00:02:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 97336710772,
+  "storage_human": "97.3 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Porn TV - Free Porn Videos, HD Sex Movies and XXX Porno",
+      "url": "https://www.porntv.com/",
+      "snippet": "Porn TV is your source for free HQ porn videos. Porn TV offers more quality sex movies and hardcore porno than anyone. Tons of …"
+    },
+    {
+      "title": "PornHub.com :: Le Site Porno Gratuit Avec Les Meilleures Vidéos X",
+      "url": "https://fr.pornhub.com/video",
+      "snippet": "Pornhub est probablement le meilleur site porno gratuit. Aucun autre site de cul ne propose autant de catégories. Les meilleures …"
+    },
+    {
+      "title": "Full Length HD Porn Movies - Digital Playground Porn DVDs",
+      "url": "https://www.digitalplayground.com/movies",
+      "snippet": "Monthly releases of big budget adult BLOCKBUSTERS! Watch full-length Porn Movies and their most exclusive Behind the Scenes …"
+    },
+    {
+      "title": "Movies – Vidéos Porno | Pornhub.com",
+      "url": "https://fr.pornhub.com/video/search?search=movies",
+      "snippet": "Regarde les vidéos porno de Movies gratuitement, ici sur Pornhub.com. Découvre la collection plus importante de films et de clips …"
+    },
+    {
+      "title": "Porno en Français / Porn in French - XVIDEOS.COM",
+      "url": "https://fr.xvideos.com/lang/francais",
+      "snippet": "XVIDEOS Porno en Français / Porn in French, gratuit"
+    }
+  ]
+}

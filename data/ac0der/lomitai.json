@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "aC0der/LomitAI",
+  "slug": "ac0der-lomitai",
+  "author": "aC0der",
+  "url": "https://huggingface.co/aC0der/LomitAI",
+  "created_at": "2026-10-29T23:42:00.000Z",
+  "updated_at": "2026-10-29T23:42:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How do I activate edge browsing streak on rewards?",
+      "url": "https://learn.microsoft.com/en-us/answers/questions/5857126/how-do-i-activate-edge-browsing-streak-on-rewards",
+      "snippet": "Apr 10, 2026 · Unfortunately, there is no way for a user to make their account eligible for the Edge Browsing Streak offer. This …"
+    },
+    {
+      "title": "Browse with Edge- 30 mins- not working. I use Edge for much more …",
+      "url": "https://learn.microsoft.com/en-us/answers/questions/5554124/browse-with-edge-30-mins-not-working-i-use-edge-fo",
+      "snippet": "Sep 13, 2025 · As you can see in this image, I have used MSEdge for 3h+ today, yet my task to use Edge for 30 mins remains …"
+    },
+    {
+      "title": "Exclusive offer in Edge: Earn up to 300 Microsoft Rewards points",
+      "url": "https://rewards.bing.com/promo/edge-browsing-streak",
+      "snippet": "*Edge Browsing Streak offer available to select Microsoft Rewards members in select markets. To activate this offer click the \"Get …"
+    },
+    {
+      "title": "How Does the Edge Browsing Streak Work for Microsoft Rewards?",
+      "url": "https://thefreepoints.com/blog/how-does-the-edge-browsing-streak-work-for-microsoft-rewards/",
+      "snippet": "Sep 2, 2026 · The Edge Browsing Streak rewards you for using Microsoft Edge for at least 30 minutes a day, while signed in with …"
+    },
+    {
+      "title": "How To Activate Edge Browsing Streak – Shrewdnia",
+      "url": "https://shrewdnia.com/blogs/how/how-to-activate-edge-browsing-streak",
+      "snippet": "One of the engaging features offered by Edge is the Browsing Streak, which rewards users for consistent browsing activity. If you're …"
+    }
+  ]
+}

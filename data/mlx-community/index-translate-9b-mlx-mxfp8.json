@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "mlx-community/Index-Translate-9B-MLX-mxfp8",
+  "slug": "mlx-community-index-translate-9b-mlx-mxfp8",
+  "author": "mlx-community",
+  "url": "https://huggingface.co/mlx-community/Index-Translate-9B-MLX-mxfp8",
+  "created_at": "2026-10-29T15:30:18.000Z",
+  "updated_at": "2026-10-29T16:09:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "translation",
+    "index",
+    "text-generation",
+    "conversational",
+    "base_model:IndexTeam/Index-Translate-9B",
+    "base_model:quantized:IndexTeam/Index-Translate-9B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953801728,
+  "parameters_human": "8.95B",
+  "storage_bytes": 9254715313,
+  "storage_human": "9.3 GB",
+  "base_model": "IndexTeam/Index-Translate-9B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlx-community (MLX Community) - Hugging Face",
+      "url": "https://huggingface.co/mlx-community",
+      "snippet": "A community org for MLX model weights that run on Apple Silicon. This organization hosts ready-to-use models compatible with: mlx-lm - A Python package for LLM ..."
+    },
+    {
+      "title": "GitHub - ml-explore/mlx: MLX: An array framework for Apple silicon",
+      "url": "https://github.com/ml-explore/mlx",
+      "snippet": "We intend to make it easy for researchers to extend and improve MLX with the goal of quickly exploring new ideas. The design of …"
+    },
+    {
+      "title": "MLX",
+      "url": "https://mlx-framework.org/",
+      "snippet": "MLX Whisper - a Python package for speech transcription using OpenAI’s Whisper models. MLX Examples - standalone examples in …"
+    },
+    {
+      "title": "MLX Studio — Local AI on Your Mac | Chat, Code, Images",
+      "url": "https://mlx.studio/",
+      "snippet": "How is MLX Studio different from the vMLX engine? MLX Studio is the app — the chat UI, agentic tools, model browser and settings. …"
+    },
+    {
+      "title": "Apple Open Source",
+      "url": "https://opensource.apple.com/projects/mlx/",
+      "snippet": "apple Project MLX About MLX is an array framework designed for efficient and flexible machine learning research on Apple silicon. …"
+    }
+  ]
+}

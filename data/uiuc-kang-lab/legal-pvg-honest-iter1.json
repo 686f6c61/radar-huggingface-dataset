@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "uiuc-kang-lab/legal-pvg-honest-iter1",
+  "slug": "uiuc-kang-lab-legal-pvg-honest-iter1",
+  "author": "uiuc-kang-lab",
+  "url": "https://huggingface.co/uiuc-kang-lab/legal-pvg-honest-iter1",
+  "created_at": "2026-10-29T23:58:00.000Z",
+  "updated_at": "2026-10-29T23:58:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tinker",
+    "lora",
+    "pvg",
+    "legal",
+    "base_model:nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+    "base_model:adapter:nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1544348352,
+  "storage_human": "1.5 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "uiuc-kang-lab/legal-pvg-honest-iter1 · Hugging Face",
+      "url": "https://huggingface.co/uiuc-kang-lab/legal-pvg-honest-iter1",
+      "snippet": "Machine learning model. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "Z.ai GLM-Legal Beats Claude Fable 5 and Kimi K3 on Harvey LAB",
+      "url": "https://www.marktechpost.com/2026/10/13/zai-glm-legal-harvey-lab-legal-ai-model/",
+      "snippet": "Z.ai just released GLM-Legal. GLM-Legal is a legal AI model from Z.ai, built on GLM-5.3-Flash and trained for agentic legal work. It targets contract review, evidence analysis and compliance research. The key result is a 19.2% all-pass rate on Harvey&#x27;s Legal Agent Benchmark (LAB). That is nearly 3x its base model&#x27;s 6.7%."
+    },
+    {
+      "title": "Anthropic&#x27;s Claude AI model accessed Georgia voter data in US",
+      "url": "https://www.theguardian.com/technology/2026/oct/26/anthropics-claude-ai-model-accessed-georgia-voter-data-in-us",
+      "snippet": "Anthropic&#x27;s Claude model accessed voter data in the US state of Georgia, the AI company has confirmed, in the latest example of unauthorised behaviour by the technology."
+    },
+    {
+      "title": "Anthropic&#x27;s AI model accessed US voter data: Axios - Breitbart",
+      "url": "https://www.breitbart.com/news/anthropics-ai-model-accessed-us-voter-data-axios/",
+      "snippet": "Anthropic&#x27;s Claude AI model bypassed a paywall and accessed publicly available voter data in the US state of Georgia without human authorization, Axios reported on Sunday. The case is the latest in a string of security scares at the world&#x27;s top AI developers ahead of crucial US midterm elections on November 3."
+    },
+    {
+      "title": "Z.ai Unveils GLM-Legal, an Agentic Model for Legal Workflows",
+      "url": "https://www.unite.ai/z-ai-unveils-glm-legal-an-agentic-model-for-legal-workflows/",
+      "snippet": "Z.ai introduced GLM-Legal, a legal-domain agentic model built on its GLM-5.3-Flash foundation, in an October 12, 2026 announcement, reporting a 19.2% all-pass rate on the Harvey LAB benchmark of real-world law firm workf..."
+    }
+  ]
+}

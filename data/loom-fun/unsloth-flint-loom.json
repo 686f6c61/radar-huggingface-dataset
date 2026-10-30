@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "loom-fun/unsloth-flint-loom",
+  "slug": "loom-fun-unsloth-flint-loom",
+  "author": "loom-fun",
+  "url": "https://huggingface.co/loom-fun/unsloth-flint-loom",
+  "created_at": "2026-10-28T00:35:21.000Z",
+  "updated_at": "2026-10-29T16:12:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "loom",
+    "loom-serve",
+    "gguf",
+    "strix-halo",
+    "base_model:unsloth/flint-GGUF",
+    "base_model:finetune:unsloth/flint-GGUF",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10879128,
+  "storage_human": "11 MB",
+  "base_model": "unsloth/flint-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free screen recorder for Mac and PC | Loom",
+      "url": "https://www.loom.com/",
+      "snippet": "So much more than a screen recorder Edit your videos like a pro Loom’s intuitive editor lets you trim, stitch clips, add eye-catching …Read more"
+    },
+    {
+      "title": "Log into Loom | Loom",
+      "url": "https://www.loom.com/login",
+      "snippet": "Use Loom to record quick videos of your screen and cam. Explain anything clearly and easily – and skip the meeting. An essential …"
+    },
+    {
+      "title": "Moins mais mieux · Loom",
+      "url": "https://www.loom.fr/",
+      "snippet": "Venir en boutique Faire un retour Entretenir ses vêtements Travailler chez Loom Contact & FAQ"
+    },
+    {
+      "title": "Vêtements Homme · Loom",
+      "url": "https://www.loom.fr/fr-fr/collections/vestiaire-homme",
+      "snippet": "Vêtements homme de qualité, fabriqués au Portugal et en France."
+    },
+    {
+      "title": "Loom | Messagerie vidéo professionnelle | Atlassian",
+      "url": "https://www.atlassian.com/fr/software/loom",
+      "snippet": "Loom aide toutes les équipes à gagner du temps et à mener à bien leurs projets plus rapidement grâce à des notes de réunion et …"
+    }
+  ]
+}

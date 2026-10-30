@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "vision-lab-fr/appli-qui-deshabille-ia",
+  "slug": "vision-lab-fr-appli-qui-deshabille-ia",
+  "author": "vision-lab-fr",
+  "url": "https://huggingface.co/vision-lab-fr/appli-qui-deshabille-ia",
+  "created_at": "2026-08-07T12:26:22.000Z",
+  "updated_at": "2026-10-29T18:53:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vision",
+      "url": "https://vision.co.ma/",
+      "snippet": "Service après-vente 07 07 98 59 32 08 08 50 89 79 Page officiel sur FaceBook &Telegram VISION PINACLE MAROC"
+    },
+    {
+      "title": "Connexion - VIeSION Evolution",
+      "url": "https://www.viesion.fr/",
+      "snippet": "Renseigner vos identifiants pour vous connecter Mot de passe oublié"
+    },
+    {
+      "title": "Vision — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Vision",
+      "snippet": "Vision humaine, perception humaine des rayonnements lumineux, c'est-à-dire, l'interprétation cognitive du sens de la vue, partagé …"
+    },
+    {
+      "title": "vision - Définitions, synonymes, prononciation, exemples | Dico en ...",
+      "url": "https://dictionnaire.lerobert.com/definition/vision",
+      "snippet": "Définition de vision nom féminin Perception du monde extérieur par la vue ; mécanisme physiologique par lequel les radiations …"
+    },
+    {
+      "title": "Centre Arras - Accès Vision",
+      "url": "https://acces-vision.com/centres/centre-arras/",
+      "snippet": "Au Centre Vision, nous mettons à votre disposition une gamme complète de services ophtalmologiques, adaptés à tous les âges et à …"
+    }
+  ]
+}
