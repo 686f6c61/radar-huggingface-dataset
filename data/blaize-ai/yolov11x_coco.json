@@ -30,8 +30,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": false,
-  "removed_at": null,
+  "removed": true,
+  "removed_at": "2026-10-31T12:41:53.479Z",
   "benchmarks": [],
   "sources": [
     {

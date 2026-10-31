@@ -5,7 +5,7 @@
   "author": "JamieBradfield",
   "url": "https://huggingface.co/JamieBradfield/qwen3.8-9b-hermes-fc-balanced",
   "created_at": "2026-08-30T17:41:45.000Z",
-  "updated_at": "2026-09-03T17:14:27.000Z",
+  "updated_at": "2026-10-30T16:21:04.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 83,
+  "downloads_30d": 211,
   "trending_score": 0,
   "parameters": 9195119616,
   "parameters_human": "9.20B",

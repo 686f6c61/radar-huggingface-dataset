@@ -5,7 +5,7 @@
   "author": "sigmanih",
   "url": "https://huggingface.co/sigmanih/Qwen3.8-27B-GGUF-Q4_K_S",
   "created_at": "2026-08-23T13:50:29.000Z",
-  "updated_at": "2026-10-22T20:54:11.000Z",
+  "updated_at": "2026-10-30T14:56:28.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 3,
-  "downloads_30d": 380,
+  "downloads_30d": 427,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",

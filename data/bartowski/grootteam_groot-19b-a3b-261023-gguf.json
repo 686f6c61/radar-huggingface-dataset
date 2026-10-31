@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "bartowski/GrootTeam_Groot-19B-A3B-261023-GGUF",
+  "slug": "bartowski-grootteam_groot-19b-a3b-261023-gguf",
+  "author": "bartowski",
+  "url": "https://huggingface.co/bartowski/GrootTeam_Groot-19B-A3B-261023-GGUF",
+  "created_at": "2026-10-25T06:08:05.000Z",
+  "updated_at": "2026-10-25T06:53:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "image-text-to-text",
+    "base_model:GrootTeam/Groot-19B-A3B-261023",
+    "base_model:quantized:GrootTeam/Groot-19B-A3B-261023",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 7,
+  "downloads_30d": 7436,
+  "trending_score": 0,
+  "parameters": 18985723008,
+  "parameters_human": "18.99B",
+  "storage_bytes": 302315334528,
+  "storage_human": "302.3 GB",
+  "base_model": "GrootTeam/Groot-19B-A3B-261023",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

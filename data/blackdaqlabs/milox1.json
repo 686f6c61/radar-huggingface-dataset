@@ -5,7 +5,7 @@
   "author": "blackdaqlabs",
   "url": "https://huggingface.co/blackdaqlabs/MiloX1",
   "created_at": "2026-09-04T02:43:55.000Z",
-  "updated_at": "2026-10-28T18:16:13.000Z",
+  "updated_at": "2026-10-31T02:42:15.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -14,22 +14,12 @@
     "es"
   ],
   "tags": [
-    "transformers",
     "safetensors",
     "llama",
-    "text-generation",
-    "milox",
-    "from-scratch",
-    "conversational",
-    "es",
-    "en",
-    "license:other",
-    "text-generation-inference",
-    "endpoints_compatible",
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 2874,
+  "downloads_30d": 2857,
   "trending_score": 0,
   "parameters": 29893120,
   "parameters_human": "29.9M",
@@ -39,7 +29,7 @@
   "formats": [
     "safetensors"
   ],
-  "is_conversational": true,
+  "is_conversational": false,
   "gated": false,
   "removed": false,
   "removed_at": null,

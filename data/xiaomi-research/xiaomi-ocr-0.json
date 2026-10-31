@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "xiaomi-research/Xiaomi-OCR-0",
+  "slug": "xiaomi-research-xiaomi-ocr-0",
+  "author": "xiaomi-research",
+  "url": "https://huggingface.co/xiaomi-research/Xiaomi-OCR-0",
+  "created_at": "2026-09-29T16:41:40.000Z",
+  "updated_at": "2026-10-29T02:17:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "ocr",
+    "document-parsing",
+    "document-understanding",
+    "visual-question-answering",
+    "key-information-extraction",
+    "vision-language-model",
+    "multimodal",
+    "xiaomi",
+    "seerray",
+    "conversational",
+    "dataset:custom-ocr-centric-corpus",
+    "arxiv:2609.36136",
+    "base_model:Qwen/Qwen3.5-0.8B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B-Base",
+    "license:apache-2.0",
+    "eval-results",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 146,
+  "downloads_30d": 16009,
+  "trending_score": 90,
+  "parameters": 873438784,
+  "parameters_human": "873.4M",
+  "storage_bytes": 1773873154,
+  "storage_human": "1.8 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mi, Xiaomi, Xiaomi France | Mi.com",
+      "url": "https://www.mi.com/fr/",
+      "snippet": "Boutique officielle en ligne Xiaomi France. Achetez des produits Xiaomi, mobiles, tablettes et appareils intelligents à des prix …"
+    },
+    {
+      "title": "Boutique Officielle Xiaomi France | Réductions | Garantie",
+      "url": "https://www.mi.com/fr/store",
+      "snippet": "Venez sur Xiaomi France Store pour trouver des promotions sur les téléphones portables, les téléviseurs, les bracelets intelligents, etc."
+    },
+    {
+      "title": "Quel smartphone Xiaomi et Redmi choisir ? Octobre 2026",
+      "url": "https://www.lesnumeriques.com/telephone-portable/guide-achat-les-meilleurs-smartphones-xiaomi-g7.html",
+      "snippet": "12 hours ago · Quelle est la différence entre Xiaomi et Redmi ? Les smartphones Redmi existent depuis 2013, et correspondaient à …"
+    },
+    {
+      "title": "Xiaomi Black Friday 2026 | Smartphones & Objets Connectés Xiaomi",
+      "url": "https://www.boulanger.com/marque/xiaomi?msockid=2d4c822d8356619704099a2e825f601a",
+      "snippet": "Vous envisagez de choisir un produit Xiaomi ? Spécialisée dans l’électronique et la téléphonie, la marque chinoise étend son …"
+    },
+    {
+      "title": "Xiaomi : Achetez pas cher - Electro Dépôt",
+      "url": "https://www.electrodepot.fr/marques/xiaomi.html?msockid=2d4c822d8356619704099a2e825f601a",
+      "snippet": "Découvrez une large gamme de produits Xiaomi à prix bas chez Electro Dépôt. Profitez des meilleures offres pour acheter malin !"
+    }
+  ]
+}

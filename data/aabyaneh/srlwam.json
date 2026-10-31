@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "aabyaneh/srlwam",
+  "slug": "aabyaneh-srlwam",
+  "author": "aabyaneh",
+  "url": "https://huggingface.co/aabyaneh/srlwam",
+  "created_at": "2026-09-08T13:47:20.000Z",
+  "updated_at": "2026-10-30T21:16:05.000Z",
+  "license": "component-specific",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "manipulation",
+    "franka",
+    "sim2real",
+    "isaac-lab",
+    "imitation-learning",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 726369904025,
+  "storage_human": "726.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aabyaneh/srlwam · Hugging Face",
+      "url": "https://huggingface.co/aabyaneh/srlwam",
+      "snippet": "aabyaneh / srlwam like 0 Robotics Safetensors manipulation franka sim2real isaac-lab imitation-learning License:bsd-3-clause Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "aabyaneh/srlwam · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/aabyaneh/srlwam",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "srlwam - Physical AI Dataset | Claru",
+      "url": "https://claru.ai/datasets/aabyaneh-srlwam",
+      "snippet": "Sim-to-real dataset for Franka Panda two-cube stacking task with simulation data generated in Isaac Lab and real data captured on physical robot cell."
+    },
+    {
+      "title": "Amin Abyaneh",
+      "url": "https://aminabyaneh.github.io/",
+      "snippet": "Amin Abyaneh I&#x27;m a PhD candidate in AI and Robotics at McGill and Mila, advised by Prof. Hsiu-Chin Lin, where I work on robot learning, reinforcement learning, and world modeling. Early in my PhD, I focused on motion planning with provable stability guarantees grounded in the theory of dynamical systems. That foundation still shapes how I work: I&#x27;m especially drawn to diffusion-based ..."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Qwen, Mistral AI, Moonshot AI, Z.ai, MiniMax, NVIDIA, Microsoft AI, Cohere, Xiaomi, and other prominent AI labs. The newest-first tables show each release date, provider, and model type. Dates use the earliest meaningful availability stage for each entry. Preview access ..."
+    }
+  ]
+}

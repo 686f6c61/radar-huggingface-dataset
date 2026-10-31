@@ -5,7 +5,7 @@
   "author": "sigmanih",
   "url": "https://huggingface.co/sigmanih/microsoft-phi-4-GGUF-IQ2_XXS",
   "created_at": "2026-10-09T16:19:36.000Z",
-  "updated_at": "2026-10-22T20:55:17.000Z",
+  "updated_at": "2026-10-30T14:57:54.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -34,7 +34,7 @@
     "imatrix"
   ],
   "likes": 1,
-  "downloads_30d": 686,
+  "downloads_30d": 777,
   "trending_score": 0,
   "parameters": 14659507200,
   "parameters_human": "14.66B",

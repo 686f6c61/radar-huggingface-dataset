@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "openbmb/MiniCPM-OCR-1.0-GPTQ",
+  "slug": "openbmb-minicpm-ocr-1-0-gptq",
+  "author": "openbmb",
+  "url": "https://huggingface.co/openbmb/MiniCPM-OCR-1.0-GPTQ",
+  "created_at": "2026-10-25T08:04:20.000Z",
+  "updated_at": "2026-10-29T15:39:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "minicpm_ocr",
+    "minicpm-ocr",
+    "ocr",
+    "document-parsing",
+    "multimodal",
+    "gptq",
+    "4-bit",
+    "quantized",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:openbmb/MiniCPM-OCR-1.0",
+    "base_model:quantized:openbmb/MiniCPM-OCR-1.0",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 373,
+  "trending_score": 0,
+  "parameters": 1300434160,
+  "parameters_human": "1.30B",
+  "storage_bytes": 1930940727,
+  "storage_human": "1.9 GB",
+  "base_model": "openbmb/MiniCPM-OCR-1.0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

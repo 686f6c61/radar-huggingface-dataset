@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "mlx-community/Unlimited-OCR-2-8bit",
+  "slug": "mlx-community-unlimited-ocr-2-8bit",
+  "author": "mlx-community",
+  "url": "https://huggingface.co/mlx-community/Unlimited-OCR-2-8bit",
+  "created_at": "2026-10-27T06:15:24.000Z",
+  "updated_at": "2026-10-27T06:15:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "unlimited-ocr",
+    "ocr",
+    "vision-language",
+    "image-text-to-text",
+    "conversational",
+    "custom_code",
+    "multilingual",
+    "base_model:baidu/Unlimited-OCR-2",
+    "base_model:quantized:baidu/Unlimited-OCR-2",
+    "license:mit",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 583,
+  "trending_score": 0,
+  "parameters": 3340043008,
+  "parameters_human": "3.34B",
+  "storage_bytes": 4086147686,
+  "storage_human": "4.1 GB",
+  "base_model": "baidu/Unlimited-OCR-2",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlx-community (MLX Community) - Hugging Face",
+      "url": "https://huggingface.co/mlx-community",
+      "snippet": "Org profile for MLX Community on Hugging Face, the AI community building the future."
+    }
+  ]
+}

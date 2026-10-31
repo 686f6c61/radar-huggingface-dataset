@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "harness-hub/LFM2.5-24B-A2B-pi-GGUF",
+  "slug": "harness-hub-lfm2-5-24b-a2b-pi-gguf",
+  "author": "harness-hub",
+  "url": "https://huggingface.co/harness-hub/LFM2.5-24B-A2B-pi-GGUF",
+  "created_at": "2026-10-30T09:59:57.000Z",
+  "updated_at": "2026-10-30T13:17:58.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "lora",
+    "agents",
+    "harbor",
+    "pi",
+    "base_model:harness-hub/LFM2.5-24B-A2B-pi",
+    "base_model:adapter:harness-hub/LFM2.5-24B-A2B-pi",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 10,
+  "downloads_30d": 82,
+  "trending_score": 0,
+  "parameters": 18710528,
+  "parameters_human": "18.7M",
+  "storage_bytes": 39216057,
+  "storage_human": "39 MB",
+  "base_model": "harness-hub/LFM2.5-24B-A2B-harbor-pi-lora",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

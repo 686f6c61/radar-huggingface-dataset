@@ -5,7 +5,7 @@
   "author": "Danish-777",
   "url": "https://huggingface.co/Danish-777/kcat-km-esm-xgb",
   "created_at": "2026-10-26T18:26:11.000Z",
-  "updated_at": "2026-10-26T18:26:25.000Z",
+  "updated_at": "2026-10-31T05:12:13.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -25,16 +25,16 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 207443927,
-  "storage_human": "207 MB",
+  "storage_bytes": 813293018,
+  "storage_human": "813 MB",
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-10-28T02:55:40.779Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

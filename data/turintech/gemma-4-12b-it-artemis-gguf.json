@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "turintech/gemma-4-12B-it-Artemis-GGUF",
+  "slug": "turintech-gemma-4-12b-it-artemis-gguf",
+  "author": "turintech",
+  "url": "https://huggingface.co/turintech/gemma-4-12B-it-Artemis-GGUF",
+  "created_at": "2026-10-25T10:09:32.000Z",
+  "updated_at": "2026-10-26T11:13:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gemma",
+    "llama.cpp",
+    "vision",
+    "mtp",
+    "image-text-to-text",
+    "base_model:google/gemma-4-12B-it-qat-q4_0-unquantized",
+    "base_model:quantized:google/gemma-4-12B-it-qat-q4_0-unquantized",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 7,
+  "downloads_30d": 982,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 7389502880,
+  "storage_human": "7.4 GB",
+  "base_model": "google/gemma-4-12B-it-qat-q4_0-unquantized",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Task results",
+      "dataset": "BFCL simple",
+      "metric": "Tool calls (of 200)",
+      "value": 190
+    },
+    {
+      "task": "Task results",
+      "dataset": "GSM8K test",
+      "metric": "Correct (of 250)",
+      "value": 240
+    },
+    {
+      "task": "Closeness to the original",
+      "dataset": "OASST1 chat",
+      "metric": "Same next token (%)",
+      "value": 90.3
+    }
+  ],
+  "sources": []
+}

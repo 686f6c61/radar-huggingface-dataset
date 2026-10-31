@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "perplexity-ai/pplx-embed-v2-context-9b",
+  "slug": "perplexity-ai-pplx-embed-v2-context-9b",
+  "author": "perplexity-ai",
+  "url": "https://huggingface.co/perplexity-ai/pplx-embed-v2-context-9b",
+  "created_at": "2026-10-28T12:38:45.000Z",
+  "updated_at": "2026-10-30T09:59:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "pplx_contextual_qwen3_5",
+    "feature-extraction",
+    "sentence-similarity",
+    "contextual-embeddings",
+    "custom_code",
+    "multilingual",
+    "arxiv:2610.38854",
+    "base_model:perplexity-ai/pplx-embed-v2-late-9b",
+    "base_model:finetune:perplexity-ai/pplx-embed-v2-late-9b",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 175,
+  "trending_score": 0,
+  "parameters": 8401083632,
+  "parameters_human": "8.40B",
+  "storage_bytes": 33624412872,
+  "storage_human": "33.6 GB",
+  "base_model": "perplexity-ai/pplx-embed-v2-late-9b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

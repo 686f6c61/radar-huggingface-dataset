@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "mlx-community/flint-OptiQ-4bit",
+  "slug": "mlx-community-flint-optiq-4bit",
+  "author": "mlx-community",
+  "url": "https://huggingface.co/mlx-community/flint-OptiQ-4bit",
+  "created_at": "2026-10-24T14:00:33.000Z",
+  "updated_at": "2026-10-24T14:41:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "flint",
+    "quantized",
+    "mixed-precision",
+    "optiq",
+    "apple-silicon",
+    "text-generation",
+    "moe",
+    "conversational",
+    "base_model:RecursiveSI/flint",
+    "base_model:quantized:RecursiveSI/flint",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 994,
+  "trending_score": 0,
+  "parameters": 39785285888,
+  "parameters_human": "39.79B",
+  "storage_bytes": 27494054292,
+  "storage_human": "27.5 GB",
+  "base_model": "RecursiveSI/flint",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlx-community (MLX Community) - Hugging Face",
+      "url": "https://huggingface.co/mlx-community",
+      "snippet": "Org profile for MLX Community on Hugging Face, the AI community building the future."
+    }
+  ]
+}

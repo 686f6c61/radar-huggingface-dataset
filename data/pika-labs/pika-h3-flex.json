@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Pika-Labs/Pika-H3-Flex",
+  "slug": "pika-labs-pika-h3-flex",
+  "author": "Pika-Labs",
+  "url": "https://huggingface.co/Pika-Labs/Pika-H3-Flex",
+  "created_at": "2026-10-29T17:08:44.000Z",
+  "updated_at": "2026-10-29T23:29:03.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "video-generation",
+    "audio-video-generation",
+    "lora",
+    "image-to-video",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:adapter:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 231,
+  "downloads_30d": 294,
+  "trending_score": 227,
+  "parameters": 33122992896,
+  "parameters_human": "33.12B",
+  "storage_bytes": 219901669273,
+  "storage_human": "219.9 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pika",
+      "url": "https://pika.art/",
+      "snippet": "Pika is the AI creative platform you’ve been waiting for. Comprehensive. Simple. With outputs that meet your standards."
+    },
+    {
+      "title": "Pika",
+      "url": "https://www.pika.fr/",
+      "snippet": "3 days ago · Fondée en 2000, Pika Édition est une maison d’édition spécialisée en manga. Avec un large choix de séries telles que …"
+    },
+    {
+      "title": "Pika Labs - AI Video, Image & Audio Creative Platform",
+      "url": "https://pikaslabs.com/",
+      "snippet": "Sep 24, 2026 · From Pika 1.0 to Pika 2.5, each release expanded what AI video could be. Today Pika 2.5 sits alongside partner …"
+    },
+    {
+      "title": "Pika Labs Opens 33B H3 Flex Audio-Video Model on Hugging Face | ...",
+      "url": "https://aiweekly.co/alerts/pika-labs-opens-33b-h3-flex-audio-video-model-on-hugging-face",
+      "snippet": "Pika Labs has posted the weights for Pika H3 Flex, a 33-billion-parameter video model, on Hugging Face. The model is a post-trained variant of MiniMax-H3…"
+    },
+    {
+      "title": "Pika | Pika Édition",
+      "url": "https://www.pika.fr/livres-pika/",
+      "snippet": "Jun 24, 2026 · Pour l’année scolaire 2026-2027, Pika Édition vous propose deux agendas ! Dès le 3 juin, découvrez nos agendas …"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "udgamlabs/Vemana-Base",
+  "slug": "udgamlabs-vemana-base",
+  "author": "udgamlabs",
+  "url": "https://huggingface.co/udgamlabs/Vemana-Base",
+  "created_at": "2026-10-27T03:48:15.000Z",
+  "updated_at": "2026-10-27T08:19:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "te"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4_text",
+    "text-generation",
+    "udgamlabs",
+    "small-language-model",
+    "trained-from-scratch",
+    "base-model",
+    "telugu",
+    "gemma4",
+    "te",
+    "dataset:ai4bharat/sangraha",
+    "dataset:HuggingFaceFW/fineweb-2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 12,
+  "downloads_30d": 687,
+  "trending_score": 0,
+  "parameters": 278214162,
+  "parameters_human": "278.2M",
+  "storage_bytes": 1112885088,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

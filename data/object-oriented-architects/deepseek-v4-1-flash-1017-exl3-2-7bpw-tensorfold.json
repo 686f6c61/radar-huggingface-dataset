@@ -5,7 +5,7 @@
   "author": "object-oriented-architects",
   "url": "https://huggingface.co/object-oriented-architects/DeepSeek-V4.1-Flash-1017-EXL3-2.7bpw-TensorFold",
   "created_at": "2026-10-19T02:16:13.000Z",
-  "updated_at": "2026-10-19T02:56:19.000Z",
+  "updated_at": "2026-10-31T02:27:52.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 252,
+  "downloads_30d": 375,
   "trending_score": 0,
   "parameters": 99373023442,
   "parameters_human": "99.37B",

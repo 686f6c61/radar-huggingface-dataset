@@ -5,7 +5,7 @@
   "author": "eeys",
   "url": "https://huggingface.co/eeys/jeanne",
   "created_at": "2026-10-22T22:44:23.000Z",
-  "updated_at": "2026-10-27T17:45:38.000Z",
+  "updated_at": "2026-10-31T01:44:54.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -17,12 +17,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 921,
+  "downloads_30d": 1321,
   "trending_score": 0,
   "parameters": 361821120,
   "parameters_human": "361.8M",
-  "storage_bytes": 3161004032,
-  "storage_human": "3.2 GB",
+  "storage_bytes": 6252240384,
+  "storage_human": "6.3 GB",
   "base_model": null,
   "formats": [
     "gguf"

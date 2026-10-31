@@ -5,7 +5,7 @@
   "author": "IndrasMirror",
   "url": "https://huggingface.co/IndrasMirror/DeepSeek-V4.1-Flash-1017-XQ-Uncensored",
   "created_at": "2026-10-18T10:14:56.000Z",
-  "updated_at": "2026-10-25T15:09:04.000Z",
+  "updated_at": "2026-10-31T06:53:09.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 30,
-  "downloads_30d": 19130,
+  "downloads_30d": 19793,
   "trending_score": 13,
   "parameters": 14710631010,
   "parameters_human": "14.71B",

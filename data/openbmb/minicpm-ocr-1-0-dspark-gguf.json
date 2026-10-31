@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "openbmb/MiniCPM-OCR-1.0-DSpark-gguf",
+  "slug": "openbmb-minicpm-ocr-1-0-dspark-gguf",
+  "author": "openbmb",
+  "url": "https://huggingface.co/openbmb/MiniCPM-OCR-1.0-DSpark-gguf",
+  "created_at": "2026-10-26T08:46:38.000Z",
+  "updated_at": "2026-10-29T15:39:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "minicpm-ocr",
+    "dspark",
+    "speculative-decoding",
+    "draft-model",
+    "llama.cpp",
+    "ocr",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:openbmb/MiniCPM-OCR-1.0",
+    "base_model:finetune:openbmb/MiniCPM-OCR-1.0",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 8,
+  "downloads_30d": 2631,
+  "trending_score": 0,
+  "parameters": 296952577,
+  "parameters_human": "297.0M",
+  "storage_bytes": 2977193408,
+  "storage_human": "3.0 GB",
+  "base_model": "openbmb/MiniCPM-OCR-1.0",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "EliovpAI",
   "url": "https://huggingface.co/EliovpAI/Qwen3.8-27B-W3Rot-INT3-Paiton-RDNA4",
   "created_at": "2026-09-27T11:03:55.000Z",
-  "updated_at": "2026-10-24T18:36:27.000Z",
+  "updated_at": "2026-10-30T12:44:17.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 5,
-  "downloads_30d": 1578,
+  "downloads_30d": 1664,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

@@ -5,7 +5,7 @@
   "author": "prism-ml",
   "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf",
   "created_at": "2026-09-16T23:40:56.000Z",
-  "updated_at": "2026-09-25T21:58:06.000Z",
+  "updated_at": "2026-10-30T18:15:26.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,13 +31,13 @@
     "region:us",
     "conversational"
   ],
-  "likes": 2870,
-  "downloads_30d": 1953832,
-  "trending_score": 52,
+  "likes": 2872,
+  "downloads_30d": 1916455,
+  "trending_score": 48,
   "parameters": 26895998464,
   "parameters_human": "26.90B",
-  "storage_bytes": 205564859200,
-  "storage_human": "205.6 GB",
+  "storage_bytes": 213190868128,
+  "storage_human": "213.2 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"

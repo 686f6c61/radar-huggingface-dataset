@@ -5,7 +5,7 @@
   "author": "loom-ai-org",
   "url": "https://huggingface.co/loom-ai-org/parakeet-tdt-0.6b-loom",
   "created_at": "2026-08-10T21:03:13.000Z",
-  "updated_at": "2026-10-21T15:39:09.000Z",
+  "updated_at": "2026-10-31T01:25:02.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -73,12 +73,12 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 155,
+  "downloads_30d": 151,
   "trending_score": 0,
-  "parameters": 637255957,
+  "parameters": 637257239,
   "parameters_human": "637.3M",
-  "storage_bytes": 20405536704,
-  "storage_human": "20.4 GB",
+  "storage_bytes": 22955314048,
+  "storage_human": "23.0 GB",
   "base_model": "nvidia/parakeet-tdt-0.6b-v3",
   "formats": [
     "gguf"

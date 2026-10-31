@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "ggml-org/Mistral-Large-4-1T-A52B-NVFP4-GGUF",
+  "slug": "ggml-org-mistral-large-4-1t-a52b-nvfp4-gguf",
+  "author": "ggml-org",
+  "url": "https://huggingface.co/ggml-org/Mistral-Large-4-1T-A52B-NVFP4-GGUF",
+  "created_at": "2026-10-28T21:51:52.000Z",
+  "updated_at": "2026-10-29T13:37:41.000Z",
+  "license": "mistral-ecosystem-open-weight-license",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantized",
+    "nvfp4",
+    "image-text-to-text",
+    "base_model:mistralai/Mistral-Large-4-1T-A52B-NVFP4",
+    "base_model:quantized:mistralai/Mistral-Large-4-1T-A52B-NVFP4",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 5,
+  "downloads_30d": 1179,
+  "trending_score": 0,
+  "parameters": 1049357420064,
+  "parameters_human": "1049.36B",
+  "storage_bytes": 630480508160,
+  "storage_human": "630.5 GB",
+  "base_model": "mistralai/Mistral-Large-4-1T-A52B-NVFP4",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

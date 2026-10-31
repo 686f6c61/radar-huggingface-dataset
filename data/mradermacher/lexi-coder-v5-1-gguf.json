@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/lexi-coder-v5.1-GGUF",
   "created_at": "2026-08-15T15:30:18.000Z",
-  "updated_at": "2026-08-15T18:08:57.000Z",
+  "updated_at": "2026-10-31T00:48:55.000Z",
   "license": "inherits-base-model-and-dataset-terms",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -28,7 +28,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 391,
+  "downloads_30d": 440,
   "trending_score": 0,
   "parameters": 7248023552,
   "parameters_human": "7.25B",

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "TMaxxx/tmax-8b-v1.1",
+  "slug": "tmaxxx-tmax-8b-v1-1",
+  "author": "TMaxxx",
+  "url": "https://huggingface.co/TMaxxx/tmax-8b-v1.1",
+  "created_at": "2026-09-21T22:44:45.000Z",
+  "updated_at": "2026-10-30T22:21:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "tmax",
+    "reinforcement-learning",
+    "terminal-agent",
+    "en",
+    "dataset:TMaxxx/tmax-13k-v1.1",
+    "arxiv:2606.23321",
+    "base_model:allenai/tmax-sft-8b",
+    "base_model:finetune:allenai/tmax-sft-8b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 81919008690,
+  "storage_human": "81.9 GB",
+  "base_model": "allenai/tmax-sft-8b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tmax v1.1 - a TMaxxx Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/TMaxxx/tmax-v11",
+      "snippet": "Note Hardened, prefiltered TMax RL training data, formatted for open-instruct."
+    },
+    {
+      "title": "Tmax v1.1 - a hamishivi Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/hamishivi/tmax-v11",
+      "snippet": "See https://huggingface.co/collections/allenai/tmax for original release models and datasets."
+    },
+    {
+      "title": "Run Tmax-8B API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/allenai/tmax-8b",
+      "snippet": "TMax 8B is an 8 billion parameter language model developed by Ai2, fine-tuned using DPPO on Qwen 3 8B. It is specifically designed and optimized for use as a terminal agent, excelling in tasks requiring interaction with a terminal environment. The model demonstrates strong performance on terminal-based benchmarks like TB Lite and TB 2.1, making it suitable for automated command-line operations ..."
+    },
+    {
+      "title": "GitHub - hamishivi/tmax: Training terminal-agents",
+      "url": "https://github.com/hamishivi/tmax",
+      "snippet": "Tmax is our project around training simple, powerful terminal using agents. This codebase covers data generation, training, and evaluation. We use this to train our &#x27;tmax&#x27; series of models, with strong performance as shown below! Please refer to our paper for more details. Below, we give a quick overview of the codebase and how to use it."
+    },
+    {
+      "title": "Run Tmax-sft-8B API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/allenai/tmax-sft-8b",
+      "snippet": "allenai/tmax-sft-8b is an 8 billion parameter instruction-tuned language model developed by Ai2, fine-tuned from Qwen 3 8B. This model is specifically designed and optimized for use as a terminal agent, demonstrating strong performance on terminal-based tasks. It serves as the supervised fine-tuning base for the Tmax 8B RL-trained model, excelling in environments requiring command-line ..."
+    }
+  ]
+}

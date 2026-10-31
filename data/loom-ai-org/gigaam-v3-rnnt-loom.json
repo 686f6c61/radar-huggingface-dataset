@@ -5,7 +5,7 @@
   "author": "loom-ai-org",
   "url": "https://huggingface.co/loom-ai-org/gigaam-v3-rnnt-loom",
   "created_at": "2026-08-11T11:46:13.000Z",
-  "updated_at": "2026-10-21T15:27:59.000Z",
+  "updated_at": "2026-10-31T00:51:57.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -27,12 +27,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 100,
+  "downloads_30d": 119,
   "trending_score": 0,
-  "parameters": 222998728,
+  "parameters": 222998920,
   "parameters_human": "223.0M",
-  "storage_bytes": 5356995392,
-  "storage_human": "5.4 GB",
+  "storage_bytes": 6249483232,
+  "storage_human": "6.2 GB",
   "base_model": "ai-sage/GigaAM-v3",
   "formats": [
     "gguf"

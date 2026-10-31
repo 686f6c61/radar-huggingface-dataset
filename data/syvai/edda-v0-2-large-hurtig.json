@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "syvai/edda-v0.2-large-hurtig",
+  "slug": "syvai-edda-v0-2-large-hurtig",
+  "author": "syvai",
+  "url": "https://huggingface.co/syvai/edda-v0.2-large-hurtig",
+  "created_at": "2026-10-30T07:17:57.000Z",
+  "updated_at": "2026-10-30T07:18:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "da"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "speech-recognition",
+    "danish",
+    "speculative-decoding",
+    "dflash",
+    "da",
+    "arxiv:2602.06036",
+    "base_model:danish-foundation-models/edda-v0.2-large",
+    "base_model:finetune:danish-foundation-models/edda-v0.2-large",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 37,
+  "trending_score": 0,
+  "parameters": 1543490560,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3427962896,
+  "storage_human": "3.4 GB",
+  "base_model": "danish-foundation-models/edda-v0.2-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

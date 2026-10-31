@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "ReadyArt/Dark-Craving-26B-A4B-v0.2-GGUF",
+  "slug": "readyart-dark-craving-26b-a4b-v0-2-gguf",
+  "author": "ReadyArt",
+  "url": "https://huggingface.co/ReadyArt/Dark-Craving-26B-A4B-v0.2-GGUF",
+  "created_at": "2026-10-31T01:45:02.000Z",
+  "updated_at": "2026-10-31T05:51:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "nsfw",
+    "explicit",
+    "roleplay",
+    "unaligned",
+    "ERP",
+    "adult-content",
+    "mature",
+    "conversational",
+    "instruct",
+    "text-generation",
+    "en",
+    "base_model:ReadyArt/Dark-Craving-26B-A4B-v0.2",
+    "base_model:quantized:ReadyArt/Dark-Craving-26B-A4B-v0.2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 5,
+  "downloads_30d": 1641,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 390610282624,
+  "storage_human": "390.6 GB",
+  "base_model": "ReadyArt/Dark-Craving-26B-A4B-v0.2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

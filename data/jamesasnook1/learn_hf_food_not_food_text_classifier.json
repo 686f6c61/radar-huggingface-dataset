@@ -5,7 +5,7 @@
   "author": "JamesASnook1",
   "url": "https://huggingface.co/JamesASnook1/learn_hf_food_not_food_text_classifier",
   "created_at": "2026-10-19T22:21:52.000Z",
-  "updated_at": "2026-10-28T18:59:58.000Z",
+  "updated_at": "2026-10-30T20:55:39.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -25,12 +25,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 228,
+  "downloads_30d": 319,
   "trending_score": 0,
   "parameters": 66955010,
   "parameters_human": "67.0M",
-  "storage_bytes": 14998634018,
-  "storage_human": "15.0 GB",
+  "storage_bytes": 23033610818,
+  "storage_human": "23.0 GB",
   "base_model": "distilbert/distilbert-base-uncased",
   "formats": [
     "safetensors"

@@ -5,7 +5,7 @@
   "author": "nikimori",
   "url": "https://huggingface.co/nikimori/Qwen3.5-2B-4bit-slim",
   "created_at": "2026-10-16T20:20:56.000Z",
-  "updated_at": "2026-10-17T01:01:33.000Z",
+  "updated_at": "2026-10-31T05:50:50.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

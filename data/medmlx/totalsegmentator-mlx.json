@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "MedMLX/totalsegmentator-mlx",
+  "slug": "medmlx-totalsegmentator-mlx",
+  "author": "MedMLX",
+  "url": "https://huggingface.co/MedMLX/totalsegmentator-mlx",
+  "created_at": "2026-10-30T20:09:12.000Z",
+  "updated_at": "2026-10-31T04:18:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "apple-silicon",
+    "medical-imaging",
+    "segmentation",
+    "nnunet",
+    "safetensors",
+    "research",
+    "image-segmentation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 823366829,
+  "storage_human": "823 MB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MedMLX/totalsegmentator-mlx · Hugging Face",
+      "url": "https://huggingface.co/MedMLX/totalsegmentator-mlx",
+      "snippet": "Image Segmentation model. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "GitHub - MedMLX/totalsegmentator-mlx: TotalSegmentator CT segmentation ...",
+      "url": "https://github.com/MedMLX/totalsegmentator-mlx",
+      "snippet": "Native MLX port of the TotalSegmentator v2 total CT task for Apple Silicon. Segment 117 structures from a CT, locally on Mac. Standard, fast and coarse modes, with optional ROI or body cropping NIfTI input and a multilabel mask on the original image grid Model execution on Metal; PyTorch is only ..."
+    },
+    {
+      "title": "totalsegmentator-mlx/README.md at main · MedMLX ... - GitHub",
+      "url": "https://github.com/MedMLX/totalsegmentator-mlx/blob/main/README.md",
+      "snippet": "This package owns the CT workflow and reuses the public nnunet-mlx engine for model execution. Standard mode runs Dataset291-295; fast and coarse use Dataset297 and 298."
+    },
+    {
+      "title": "MedMLX: On-Device Medical Imaging AI for Apple Silicon",
+      "url": "https://www.medrxiv.org/content/10.64898/2026.10.28.26366762v1",
+      "snippet": "Adapting a model to new hardware also requires verifying that its results match the original software. Methods: We developed MedMLX, a collection of 21 established medical imaging models rewritten for Apple Silicon in MLX, Apple&#x27;s machine learning framework. The collection includes nnU-Net, TotalSegmentator, MedSAM2 and SAM 3."
+    },
+    {
+      "title": "MedMLX (MedMLX) - Hugging Face",
+      "url": "https://huggingface.co/MedMLX",
+      "snippet": "AI & ML interests Medical imaging models and tools for Apple silicon using MLX."
+    }
+  ]
+}

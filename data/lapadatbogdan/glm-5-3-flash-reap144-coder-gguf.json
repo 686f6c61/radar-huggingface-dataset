@@ -5,7 +5,7 @@
   "author": "lapadatbogdan",
   "url": "https://huggingface.co/lapadatbogdan/GLM-5.3-Flash-REAP144-Coder-GGUF",
   "created_at": "2026-10-13T02:20:11.000Z",
-  "updated_at": "2026-10-29T18:23:40.000Z",
+  "updated_at": "2026-10-31T10:17:56.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -27,13 +27,13 @@
     "region:us",
     "conversational"
   ],
-  "likes": 26,
-  "downloads_30d": 25149,
+  "likes": 25,
+  "downloads_30d": 27007,
   "trending_score": 12,
   "parameters": 169556223214,
   "parameters_human": "169.56B",
-  "storage_bytes": 1165997044896,
-  "storage_human": "1166.0 GB",
+  "storage_bytes": 1264238712800,
+  "storage_human": "1264.2 GB",
   "base_model": "zai-org/GLM-5.3-Flash",
   "formats": [
     "gguf"

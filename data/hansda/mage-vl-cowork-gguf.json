@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Hansda/Mage-VL-Cowork-GGUF",
+  "slug": "hansda-mage-vl-cowork-gguf",
+  "author": "Hansda",
+  "url": "https://huggingface.co/Hansda/Mage-VL-Cowork-GGUF",
+  "created_at": "2026-10-30T20:47:29.000Z",
+  "updated_at": "2026-10-30T21:59:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "llama.cpp",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "multimodal",
+    "vision-language-model",
+    "computer-use",
+    "mage-vl-cowork",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "base_model:microsoft/Mage-VL-Cowork",
+    "base_model:quantized:microsoft/Mage-VL-Cowork",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 369,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 15427746944,
+  "storage_human": "15.4 GB",
+  "base_model": "microsoft/Mage-VL-Cowork",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

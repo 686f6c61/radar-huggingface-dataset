@@ -5,7 +5,7 @@
   "author": "oroboros-labs",
   "url": "https://huggingface.co/oroboros-labs/gpt-5.6-sol-undecillion-6u5go5",
   "created_at": "2026-10-02T11:06:22.000Z",
-  "updated_at": "2026-10-23T06:47:33.000Z",
+  "updated_at": "2026-10-30T16:17:45.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -45,7 +45,7 @@
     "conversational"
   ],
   "likes": 2,
-  "downloads_30d": 2063,
+  "downloads_30d": 2265,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",

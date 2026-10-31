@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "zapabobouj/Muse-Glimmer-30B-Abliterated-CyberDefend-GGUF",
+  "slug": "zapabobouj-muse-glimmer-30b-abliterated-cyberdefend-gguf",
+  "author": "zapabobouj",
+  "url": "https://huggingface.co/zapabobouj/Muse-Glimmer-30B-Abliterated-CyberDefend-GGUF",
+  "created_at": "2026-10-27T07:13:48.000Z",
+  "updated_at": "2026-10-27T10:16:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "tags": [
+    "gguf",
+    "llama-cpp",
+    "text-generation",
+    "abliterated",
+    "cyber-security",
+    "roleplay",
+    "spin8-triality",
+    "bonsai-pruned",
+    "en",
+    "ja",
+    "doi:10.57967/hf/11279",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 4,
+  "downloads_30d": 789,
+  "trending_score": 0,
+  "parameters": 27854794240,
+  "parameters_human": "27.85B",
+  "storage_bytes": 120697646592,
+  "storage_human": "120.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

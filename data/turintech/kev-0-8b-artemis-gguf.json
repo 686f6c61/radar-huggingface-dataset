@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "turintech/Kev-0.8B-Artemis-GGUF",
+  "slug": "turintech-kev-0-8b-artemis-gguf",
+  "author": "turintech",
+  "url": "https://huggingface.co/turintech/Kev-0.8B-Artemis-GGUF",
+  "created_at": "2026-10-24T23:15:59.000Z",
+  "updated_at": "2026-10-26T09:23:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "kev",
+    "decision-model",
+    "systemone",
+    "llama.cpp",
+    "quantized",
+    "text-classification",
+    "base_model:jaredpalmer/kev-0.8b",
+    "base_model:quantized:jaredpalmer/kev-0.8b",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 4,
+  "downloads_30d": 242,
+  "trending_score": 0,
+  "parameters": 752917824,
+  "parameters_human": "752.9M",
+  "storage_bytes": 622084288,
+  "storage_human": "622 MB",
+  "base_model": "jaredpalmer/kev-0.8b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Agreement with the original",
+      "dataset": "Final set",
+      "metric": "Same as BF16 (%)",
+      "value": 95.1
+    },
+    {
+      "task": "Agreement with the original",
+      "dataset": "Final set",
+      "metric": "Confident changes",
+      "value": 0
+    },
+    {
+      "task": "Agreement with the original",
+      "dataset": "Final set",
+      "metric": "Accuracy (%)",
+      "value": 46.8
+    }
+  ],
+  "sources": []
+}

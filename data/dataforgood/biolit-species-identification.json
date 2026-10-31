@@ -5,7 +5,7 @@
   "author": "DataForGood",
   "url": "https://huggingface.co/DataForGood/biolit-species-identification",
   "created_at": "2026-04-12T17:48:50.000Z",
-  "updated_at": "2026-10-25T22:29:24.000Z",
+  "updated_at": "2026-10-31T10:28:39.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "object-detection",

@@ -24,8 +24,8 @@
     "base_model:quantized:Blackfrost-AI/Qwen3.8-27B-ABLITERATED-BF16",
     "region:us"
   ],
-  "likes": 0,
-  "downloads_30d": 460,
+  "likes": 1,
+  "downloads_30d": 415,
   "trending_score": 0,
   "parameters": 26895993856,
   "parameters_human": "26.90B",

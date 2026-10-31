@@ -5,7 +5,7 @@
   "author": "cloudsurf-software",
   "url": "https://huggingface.co/cloudsurf-software/CloudSurf-4B-FC",
   "created_at": "2026-08-17T07:25:11.000Z",
-  "updated_at": "2026-08-19T23:02:26.000Z",
+  "updated_at": "2026-10-31T01:36:17.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 3,
-  "downloads_30d": 47,
+  "downloads_30d": 356,
   "trending_score": 0,
   "parameters": 7996156490,
   "parameters_human": "8.00B",

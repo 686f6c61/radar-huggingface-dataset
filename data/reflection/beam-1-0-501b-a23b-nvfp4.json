@@ -5,7 +5,7 @@
   "author": "reflection",
   "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4",
   "created_at": "2026-10-10T04:32:18.000Z",
-  "updated_at": "2026-10-27T20:49:31.000Z",
+  "updated_at": "2026-10-30T20:57:54.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 42,
-  "downloads_30d": 4669,
+  "downloads_30d": 5091,
   "trending_score": 12,
   "parameters": 254642537152,
   "parameters_human": "254.64B",

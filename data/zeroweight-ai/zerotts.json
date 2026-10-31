@@ -5,7 +5,7 @@
   "author": "zeroweight-ai",
   "url": "https://huggingface.co/zeroweight-ai/ZeroTTS",
   "created_at": "2026-08-15T15:55:55.000Z",
-  "updated_at": "2026-09-15T05:48:44.000Z",
+  "updated_at": "2026-10-31T04:15:01.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -31,12 +31,12 @@
     "region:us"
   ],
   "likes": 47,
-  "downloads_30d": 4791,
+  "downloads_30d": 4804,
   "trending_score": 11,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1589062046,
-  "storage_human": "1.6 GB",
+  "storage_bytes": 1728915139,
+  "storage_human": "1.7 GB",
   "base_model": null,
   "formats": [
     "onnx"

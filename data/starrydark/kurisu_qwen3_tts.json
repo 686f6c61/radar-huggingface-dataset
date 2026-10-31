@@ -5,7 +5,7 @@
   "author": "starrydark",
   "url": "https://huggingface.co/starrydark/Kurisu_Qwen3_TTS",
   "created_at": "2026-08-21T23:39:47.000Z",
-  "updated_at": "2026-10-29T17:04:40.000Z",
+  "updated_at": "2026-10-30T23:59:18.000Z",
   "license": "unofficial-fan-model",
   "license_family": "unknown",
   "pipeline_tag": "text-to-speech",
@@ -36,7 +36,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 170,
+  "downloads_30d": 204,
   "trending_score": 0,
   "parameters": 1916676352,
   "parameters_human": "1.92B",

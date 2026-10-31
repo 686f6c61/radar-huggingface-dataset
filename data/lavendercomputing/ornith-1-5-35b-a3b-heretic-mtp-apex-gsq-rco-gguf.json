@@ -5,7 +5,7 @@
   "author": "lavendercomputing",
   "url": "https://huggingface.co/lavendercomputing/Ornith-1.5-35B-A3B-Heretic-MTP-APEX-GSQ-RCO-GGUF",
   "created_at": "2026-10-21T05:47:57.000Z",
-  "updated_at": "2026-10-22T01:03:59.000Z",
+  "updated_at": "2026-10-30T19:34:45.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -14,19 +14,19 @@
   "tags": [
     "gguf",
     "image-text-to-text",
-    "base_model:ornith-ai/Ornith-1.5-35B-A3B-GGUF",
-    "base_model:quantized:ornith-ai/Ornith-1.5-35B-A3B-GGUF",
+    "base_model:SC117/Ornith-1.5-35B-A3B-Heretic-MTP-APEX-GGUF",
+    "base_model:quantized:SC117/Ornith-1.5-35B-A3B-Heretic-MTP-APEX-GGUF",
     "license:apache-2.0",
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 5761,
+  "downloads_30d": 6162,
   "trending_score": 0,
   "parameters": 446571248,
   "parameters_human": "446.6M",
   "storage_bytes": 29896182150,
   "storage_human": "29.9 GB",
-  "base_model": "ornith-ai/Ornith-1.5-35B-A3B-GGUF",
+  "base_model": "ornith-ai/Ornith-1.5-35B-A3B-GGUF, SC117/Ornith-1.5-35B-A3B-Heretic-MTP-APEX-GGUF",
   "formats": [
     "gguf"
   ],

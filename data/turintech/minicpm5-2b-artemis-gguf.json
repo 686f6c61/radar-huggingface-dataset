@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "turintech/MiniCPM5-2B-Artemis-GGUF",
+  "slug": "turintech-minicpm5-2b-artemis-gguf",
+  "author": "turintech",
+  "url": "https://huggingface.co/turintech/MiniCPM5-2B-Artemis-GGUF",
+  "created_at": "2026-10-24T22:53:21.000Z",
+  "updated_at": "2026-10-29T01:10:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "turintech",
+    "artemis",
+    "llama.cpp",
+    "quantized",
+    "minicpm",
+    "chat",
+    "function-calling",
+    "tool-calling",
+    "text-generation",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:quantized:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 10,
+  "downloads_30d": 428,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 1540529086,
+  "storage_human": "1.5 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text generation",
+      "dataset": "BFCL live",
+      "metric": "Tool calls (of 258)",
+      "value": 184
+    },
+    {
+      "task": "Text generation",
+      "dataset": "GSM8K, last 250",
+      "metric": "Correct (of 250)",
+      "value": 209
+    },
+    {
+      "task": "Text generation",
+      "dataset": "MMLU-Pro sample",
+      "metric": "Correct (of 280)",
+      "value": 95
+    },
+    {
+      "task": "Text generation",
+      "dataset": "IFEval",
+      "metric": "Followed (of 539)",
+      "value": 458
+    }
+  ],
+  "sources": []
+}

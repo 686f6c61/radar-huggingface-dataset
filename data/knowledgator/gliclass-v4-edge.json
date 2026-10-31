@@ -34,10 +34,11 @@
     "base_model:microsoft/deberta-v3-large",
     "base_model:quantized:microsoft/deberta-v3-large",
     "license:apache-2.0",
+    "eval-results",
     "region:us"
   ],
   "likes": 26,
-  "downloads_30d": 2074,
+  "downloads_30d": 2205,
   "trending_score": 13,
   "parameters": 439790595,
   "parameters_human": "439.8M",

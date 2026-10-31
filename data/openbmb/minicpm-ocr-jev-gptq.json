@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "openbmb/MiniCPM-OCR-Jev-GPTQ",
+  "slug": "openbmb-minicpm-ocr-jev-gptq",
+  "author": "openbmb",
+  "url": "https://huggingface.co/openbmb/MiniCPM-OCR-Jev-GPTQ",
+  "created_at": "2026-10-26T08:46:00.000Z",
+  "updated_at": "2026-10-29T15:39:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "minicpm-ocr",
+    "ocr",
+    "quality-assessment",
+    "multimodal",
+    "4-bit",
+    "quantized",
+    "compressed-tensors",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:openbmb/MiniCPM-OCR-Jev",
+    "base_model:quantized:openbmb/MiniCPM-OCR-Jev",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 308,
+  "trending_score": 0,
+  "parameters": 2213245760,
+  "parameters_human": "2.21B",
+  "storage_bytes": 2413274399,
+  "storage_human": "2.4 GB",
+  "base_model": "openbmb/MiniCPM-OCR-Jev",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

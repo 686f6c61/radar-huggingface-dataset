@@ -5,7 +5,7 @@
   "author": "linoyts",
   "url": "https://huggingface.co/linoyts/Qwen-Image-2.1-DMD2-2steps",
   "created_at": "2026-10-23T10:46:24.000Z",
-  "updated_at": "2026-10-30T11:51:21.000Z",
+  "updated_at": "2026-10-30T20:35:26.000Z",
   "license": "qwen-research",
   "license_family": "oss",
   "pipeline_tag": "image-to-image",
@@ -26,13 +26,13 @@
     "license:other",
     "region:us"
   ],
-  "likes": 55,
-  "downloads_30d": 2357,
-  "trending_score": 54,
+  "likes": 58,
+  "downloads_30d": 2722,
+  "trending_score": 50,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 150310752,
-  "storage_human": "150 MB",
+  "storage_bytes": 217455272,
+  "storage_human": "217 MB",
   "base_model": "Qwen/Qwen-Image-2.1",
   "formats": [
     "diffusers"

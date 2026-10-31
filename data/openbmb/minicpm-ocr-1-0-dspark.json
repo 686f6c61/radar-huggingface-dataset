@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "openbmb/MiniCPM-OCR-1.0-DSpark",
+  "slug": "openbmb-minicpm-ocr-1-0-dspark",
+  "author": "openbmb",
+  "url": "https://huggingface.co/openbmb/MiniCPM-OCR-1.0-DSpark",
+  "created_at": "2026-10-26T08:46:24.000Z",
+  "updated_at": "2026-10-29T15:39:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "minicpm-ocr",
+    "dspark",
+    "speculative-decoding",
+    "draft-model",
+    "ocr",
+    "multimodal",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:openbmb/MiniCPM-OCR-1.0",
+    "base_model:finetune:openbmb/MiniCPM-OCR-1.0",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 12,
+  "downloads_30d": 695,
+  "trending_score": 0,
+  "parameters": 296952577,
+  "parameters_human": "297.0M",
+  "storage_bytes": 594599898,
+  "storage_human": "595 MB",
+  "base_model": "openbmb/MiniCPM-OCR-1.0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

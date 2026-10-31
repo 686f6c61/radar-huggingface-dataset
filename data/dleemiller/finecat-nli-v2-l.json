@@ -5,7 +5,7 @@
   "author": "dleemiller",
   "url": "https://huggingface.co/dleemiller/finecat-nli-v2-l",
   "created_at": "2026-10-06T15:21:29.000Z",
-  "updated_at": "2026-10-27T16:32:05.000Z",
+  "updated_at": "2026-10-30T18:41:52.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "zero-shot-classification",
@@ -43,7 +43,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 273,
+  "downloads_30d": 329,
   "trending_score": 0,
   "parameters": 395834371,
   "parameters_human": "395.8M",
