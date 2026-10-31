@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "id": "MoonMath-ai/GLM-5.3-Uncensored-FP8",
+  "slug": "moonmath-ai-glm-5-3-uncensored-fp8",
+  "author": "MoonMath-ai",
+  "url": "https://huggingface.co/MoonMath-ai/GLM-5.3-Uncensored-FP8",
+  "created_at": "2026-10-26T14:25:56.000Z",
+  "updated_at": "2026-10-27T23:32:58.000Z",
+  "license": "glm-5.3",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm_moe_dsa",
+    "text-generation",
+    "glm",
+    "glm-5.3",
+    "abliterated",
+    "uncensored",
+    "cybersecurity",
+    "fp8",
+    "moonmath",
+    "conversational",
+    "base_model:zai-org/GLM-5.3",
+    "base_model:quantized:zai-org/GLM-5.3",
+    "license:other",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 13,
+  "downloads_30d": 140,
+  "trending_score": 0,
+  "parameters": 753329940480,
+  "parameters_human": "753.33B",
+  "storage_bytes": 755663627013,
+  "storage_human": "755.7 GB",
+  "base_model": "zai-org/GLM-5.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Refusal benchmark",
+      "dataset": "Cybersecurity refusal prompt set",
+      "metric": "Answer rate (%)",
+      "value": 83.1
+    },
+    {
+      "task": "IFEval",
+      "dataset": "IFEval",
+      "metric": "Prompt-level strict acc.",
+      "value": 91
+    },
+    {
+      "task": "MMLU-Pro",
+      "dataset": "MMLU-Pro",
+      "metric": "5-shot CoT accuracy",
+      "value": 89
+    },
+    {
+      "task": "AIME 2025",
+      "dataset": "AIME 2025",
+      "metric": "Accuracy",
+      "value": 73.3
+    }
+  ],
+  "sources": [
+    {
+      "title": "MoonMath-ai/GLM-5.3-Uncensored-FP8 - Hugging Face",
+      "url": "https://huggingface.co/MoonMath-ai/GLM-5.3-Uncensored-FP8",
+      "snippet": "MoonMath Dolly2 is our first in-house abliterated model, built by abliterating GLM-5.3 weights (zai-org/GLM-5.3). The published model family is described in our ..."
+    },
+    {
+      "title": "Dolly 2 Security FP8 Weights Released | MoonMath.ai posted on the ...",
+      "url": "https://www.linkedin.com/posts/moonmath-ai_moonmath-aiglm-53-uncensored-fp8-hugging-activity-7520529953055019009-XvNj",
+      "snippet": "vor 4 Tagen ... We've published the FP8 weights for Dolly 2 Security, our uncensored version of GLM-5.3 for cybersecurity research."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=glm_moe_dsa",
+      "snippet": "Models · dealignai/GLM-5.3-CYBERSECURITY-FP8 · zai-org/GLM-5.3 · audnai/penclaw-GLM-5.3-abliterated · dealignai/GLM-5.3-UNCENSORED-FP8 · MoonMath-ai/GLM-5.3- ..."
+    },
+    {
+      "title": "Zro: Fast inference. Zero retention. - Product Hunt",
+      "url": "https://www.producthunt.com/products/zro",
+      "snippet": "npm install -g @moonmath-ai/zro zro login zro launch claude --model dolly2-security ... MoonMath-ai/GLM-5.3-Uncensored-FP8 Soon we will release NVFP4 version as ..."
+    },
+    {
+      "title": "Quantized Models for zai-org/GLM-5.3 - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:zai-org/GLM-5.3",
+      "snippet": "Models · MoonMath-ai/GLM-5.3-Uncensored-FP8 · unsloth/GLM-5.3-GGUF · huihui-ai/Huihui-GLM-5.3-abliterated-GGUF · dealignai/GLM-5.3-ABLITERATED-NVFP4 · Tech2wild/GLM- ..."
+    }
+  ]
+}

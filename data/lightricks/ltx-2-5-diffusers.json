@@ -54,9 +54,9 @@
     "diffusers:LTX2Pipeline",
     "region:us"
   ],
-  "likes": 111,
+  "likes": 114,
   "downloads_30d": 39558,
-  "trending_score": 12,
+  "trending_score": 13,
   "parameters": 18987859200,
   "parameters_human": "18.99B",
   "storage_bytes": 185443051654,
